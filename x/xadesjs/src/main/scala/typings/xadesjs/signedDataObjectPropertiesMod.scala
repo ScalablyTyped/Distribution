@@ -7,11 +7,12 @@ import typings.xmlCore.mod.XmlCollection
 import typings.xmlCore.mod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs/build/types/xml/signed_data_object_properties", JSImport.Namespace)
 @js.native
 object signedDataObjectPropertiesMod extends js.Object {
+  
   @js.native
   class AllDataObjectsTimeStamp () extends XAdESTimeStamp
   
@@ -32,12 +33,15 @@ object signedDataObjectPropertiesMod extends js.Object {
   
   @js.native
   class SignedDataObjectProperties () extends XmlObject {
+    
     var AllDataObjectsTimeStamps: AllDataObjectsTimeStampCollection = js.native
+    
     var CommitmentTypeIndications: CommitmentTypeIndicationCollection = js.native
+    
     var DataObjectFormats: DataObjectFormatCollection = js.native
+    
     var Id: String = js.native
+    
     var IndividualDataObjectsTimeStamps: IndividualDataObjectsTimeStampCollection = js.native
   }
-  
 }
-

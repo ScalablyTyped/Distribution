@@ -5,33 +5,29 @@ import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisResolve
 import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesDescribeStreamInputMod.DescribeStreamInput
 import typings.awsSdkClientKinesisBrowser.typesDescribeStreamOutputMod.DescribeStreamOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kinesis-browser/commands/DescribeStreamCommand", JSImport.Namespace)
 @js.native
 object describeStreamCommandMod extends js.Object {
+  
   @js.native
   class DescribeStreamCommand protected () extends Command[
           InputTypesUnion, 
           DescribeStreamInput, 
           OutputTypesUnion, 
           DescribeStreamOutput, 
-          KinesisResolvedConfiguration, 
-          Blob
+          KinesisResolvedConfiguration
         ] {
     def this(input: DescribeStreamInput) = this()
-    val middlewareStack: MiddlewareStack[DescribeStreamInput, DescribeStreamOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[DescribeStreamInput, DescribeStreamOutput] = js.native
   }
-  
 }
-

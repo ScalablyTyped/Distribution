@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/sns", "TopicSubscription")
 @js.native
@@ -23,11 +23,11 @@ class TopicSubscription protected ()
   def this(name: String, args: TopicSubscriptionArgs) = this()
   def this(name: String, args: TopicSubscriptionArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/sns", "TopicSubscription")
 @js.native
 object TopicSubscription extends js.Object {
+  
   /**
     * Get an existing TopicSubscription resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object TopicSubscription extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.topicSubscriptionMod.TopicSubscription = js.native
   def get(name: String, id: Input[ID], state: TopicSubscriptionState): typings.pulumiAws.topicSubscriptionMod.TopicSubscription = js.native
   def get(name: String, id: Input[ID], state: TopicSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.topicSubscriptionMod.TopicSubscription = js.native
+  
   /**
     * Returns true if the given object is an instance of TopicSubscription.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean = js.native
 }
-

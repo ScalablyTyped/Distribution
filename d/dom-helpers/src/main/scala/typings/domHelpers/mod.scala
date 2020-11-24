@@ -119,16 +119,18 @@ import typings.std.SVGElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dom-helpers", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val requestAnimationFrame: js.Function1[/* callback */ FrameRequestCallback, Double] = js.native
+  
   def activeElement(): Element | Null = js.native
   def activeElement(doc: Document): Element | Null = js.native
+  
   def addClass(element: Element, className: String): Unit = js.native
   def addClass(element: SVGElement, className: String): Unit = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort]): Unit = js.native
   @JSName("addEventListener")
@@ -1318,6 +1320,7 @@ object mod extends js.Object {
     handler: TaggedEventHandler[wheel],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   def animate(node: HTMLElement, properties: AnimateProperties, duration: Double): Cancel = js.native
   def animate(options: Options): Cancel = js.native
   @JSName("animate")
@@ -1335,10 +1338,14 @@ object mod extends js.Object {
     easing: String,
     callback: EventHandler[transitionend]
   ): Cancel = js.native
+  
   def cancelAnimationFrame(id: Double): Unit = js.native
+  
   def closest(node: Element, selector: String): Element | Null = js.native
   def closest(node: Element, selector: String, stopAt: Element): Element | Null = js.native
+  
   def contains(context: Element, node: Element): js.UndefOr[Boolean] = js.native
+  
   @JSName("filter")
   def filter_abort(selector: String, handler: EventHandler[abort]): EventHandler[abort] = js.native
   @JSName("filter")
@@ -1523,12 +1530,16 @@ object mod extends js.Object {
   def filter_waiting(selector: String, handler: EventHandler[waiting]): EventHandler[waiting] = js.native
   @JSName("filter")
   def filter_wheel(selector: String, handler: EventHandler[wheel]): EventHandler[wheel] = js.native
+  
   def getComputedStyle(node: HTMLElement): CSSStyleDeclaration = js.native
   def getComputedStyle(node: HTMLElement, psuedoElement: String): CSSStyleDeclaration = js.native
+  
   def hasClass(element: Element, className: String): Boolean = js.native
   def hasClass(element: SVGElement, className: String): Boolean = js.native
+  
   def height(node: HTMLElement): Double = js.native
   def height(node: HTMLElement, client: Boolean): Double = js.native
+  
   @JSName("listen")
   def listen_abort(node: HTMLElement, eventName: abort, handler: EventHandler[abort]): js.Function0[Unit] = js.native
   @JSName("listen")
@@ -2595,19 +2606,28 @@ object mod extends js.Object {
     handler: EventHandler[wheel],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = js.native
+  
   def matches(node: Element, selector: String): Boolean = js.native
+  
   def offset(node: HTMLElement): Height = js.native
+  
   def offsetParent(node: HTMLElement): HTMLElement = js.native
+  
   def ownerDocument(): Document = js.native
   def ownerDocument(node: Element): Document = js.native
+  
   def ownerWindow(): Window = js.native
   def ownerWindow(node: Element): Window = js.native
+  
   def position(node: HTMLElement): Height = js.native
   def position(node: HTMLElement, offsetParent: HTMLElement): Height = js.native
+  
   def querySelectorAll(element: Document, selector: String): js.Array[HTMLElement] = js.native
   def querySelectorAll(element: HTMLElement, selector: String): js.Array[HTMLElement] = js.native
+  
   def removeClass(element: Element, className: String): Unit = js.native
   def removeClass(element: SVGElement, className: String): Unit = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_abort(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort]): Unit = js.native
   @JSName("removeEventListener")
@@ -3789,105 +3809,56 @@ object mod extends js.Object {
     handler: TaggedEventHandler[wheel],
     options: EventListenerOptions
   ): Unit = js.native
+  
+  val requestAnimationFrame: js.Function1[/* callback */ FrameRequestCallback, Double] = js.native
+  
   def scrollLeft(node: Element): Double = js.native
   def scrollLeft(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
+  
   def scrollParent(element: HTMLElement): Document | HTMLElement = js.native
   def scrollParent(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = js.native
+  
   def scrollTo(selected: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
   def scrollTo(selected: HTMLElement, scrollParent: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
+  
   def scrollTop(node: Element): Double = js.native
   def scrollTop(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
+  
   def scrollbarSize(): Double = js.native
   def scrollbarSize(recalc: Boolean): Double = js.native
+  
   def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
-  def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = js.native
+  def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
   @JSName("style")
-  def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = js.native
+  def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
+  
   def toggleClass(element: Element, className: String): Unit = js.native
   def toggleClass(element: SVGElement, className: String): Unit = js.native
+  
   def transitionEnd(element: HTMLElement, handler: Listener): js.Function0[Unit] = js.native
+  def transitionEnd(element: HTMLElement, handler: Listener, duration: js.UndefOr[scala.Nothing], padding: Double): js.Function0[Unit] = js.native
   def transitionEnd(element: HTMLElement, handler: Listener, duration: Double): js.Function0[Unit] = js.native
+  def transitionEnd(element: HTMLElement, handler: Listener, duration: Double, padding: Double): js.Function0[Unit] = js.native
+  def transitionEnd(element: HTMLElement, handler: Listener, duration: Null, padding: Double): js.Function0[Unit] = js.native
+  
   def width(node: HTMLElement): Double = js.native
   def width(node: HTMLElement, client: Boolean): Double = js.native
+  
   @js.native
   object default extends js.Object {
-    @JSName("activeElement")
-    var activeElement_Original: js.Function1[/* doc */ js.UndefOr[Document], Element | Null] = js.native
-    @JSName("addClass")
-    var addClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
-    @JSName("addEventListener")
-    var addEventListener_Original: FnCallNodeEventNameHandlerOptions = js.native
-    @JSName("animate")
-    var animate_Original: FnCallNodePropertiesDurationEasingCallback = js.native
-    @JSName("closest")
-    var closest_Original: js.Function3[
-        /* node */ Element, 
-        /* selector */ String, 
-        /* stopAt */ js.UndefOr[Element], 
-        Element | Null
-      ] = js.native
-    @JSName("contains")
-    var contains_Original: js.Function2[/* context */ Element, /* node */ Element, js.UndefOr[Boolean]] = js.native
-    @JSName("filter")
-    var filter_Original: FnCallSelectorHandler = js.native
-    @JSName("getComputedStyle")
-    var getComputedStyle_Original: js.Function2[/* node */ HTMLElement, /* psuedoElement */ js.UndefOr[String], CSSStyleDeclaration] = js.native
-    @JSName("hasClass")
-    var hasClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Boolean] = js.native
-    @JSName("height")
-    var height_Original: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double] = js.native
-    @JSName("listen")
-    var listen_Original: Fn1 = js.native
-    @JSName("matches")
-    var matches_Original: js.Function2[/* node */ Element, /* selector */ String, Boolean] = js.native
-    @JSName("offsetParent")
-    var offsetParent_Original: js.Function1[/* node */ HTMLElement, HTMLElement] = js.native
-    @JSName("offset")
-    var offset_Original: js.Function1[/* node */ HTMLElement, Height] = js.native
-    @JSName("ownerDocument")
-    var ownerDocument_Original: js.Function1[/* node */ js.UndefOr[Element], Document] = js.native
-    @JSName("ownerWindow")
-    var ownerWindow_Original: js.Function1[/* node */ js.UndefOr[Element], Window] = js.native
-    @JSName("position")
-    var position_Original: js.Function2[/* node */ HTMLElement, /* offsetParent */ js.UndefOr[HTMLElement], Height] = js.native
-    @JSName("querySelectorAll")
-    var querySelectorAll_Original: js.Function2[/* element */ HTMLElement | Document, /* selector */ String, js.Array[HTMLElement]] = js.native
-    @JSName("removeClass")
-    var removeClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
-    @JSName("removeEventListener")
-    var removeEventListener_Original: Fn0 = js.native
-    var requestAnimationFrame: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.requestAnimationFrame */ js.Any = js.native
-    @JSName("scrollParent")
-    var scrollParent_Original: js.Function2[
-        /* element */ HTMLElement, 
-        /* firstPossible */ js.UndefOr[Boolean], 
-        Document | HTMLElement
-      ] = js.native
-    @JSName("scrollTo")
-    var scrollTo_Original: js.Function2[
-        /* selected */ HTMLElement, 
-        /* scrollParent */ js.UndefOr[HTMLElement], 
-        js.UndefOr[js.Function0[Unit]]
-      ] = js.native
-    @JSName("scrollbarSize")
-    var scrollbarSize_Original: js.Function1[/* recalc */ js.UndefOr[Boolean], Double] = js.native
-    @JSName("style")
-    var style_Original: FnCallNodeProperty = js.native
-    @JSName("toggleClass")
-    var toggleClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
-    @JSName("transitionEnd")
-    var transitionEnd_Original: js.Function3[
-        /* element */ HTMLElement, 
-        /* handler */ Listener, 
-        /* duration */ js.UndefOr[Double], 
-        js.Function0[Unit]
-      ] = js.native
-    @JSName("width")
-    var width_Original: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double] = js.native
+    
     def activeElement(): Element | Null = js.native
     def activeElement(doc: Document): Element | Null = js.native
+    @JSName("activeElement")
+    var activeElement_Original: js.Function1[/* doc */ js.UndefOr[Document], Element | Null] = js.native
+    
     def addClass(element: Element, className: String): Unit = js.native
     def addClass(element: SVGElement, className: String): Unit = js.native
+    @JSName("addClass")
+    var addClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
+    
+    @JSName("addEventListener")
+    var addEventListener_Original: FnCallNodeEventNameHandlerOptions = js.native
     @JSName("addEventListener")
     def addEventListener_abort(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort]): Unit = js.native
     @JSName("addEventListener")
@@ -5074,8 +5045,11 @@ object mod extends js.Object {
       handler: TaggedEventHandler[wheel],
       options: AddEventListenerOptions
     ): Unit = js.native
+    
     def animate(node: HTMLElement, properties: AnimateProperties, duration: Double): Cancel = js.native
     def animate(options: Options): Cancel = js.native
+    @JSName("animate")
+    var animate_Original: FnCallNodePropertiesDurationEasingCallback = js.native
     @JSName("animate")
     def animate_transitionend(
       node: HTMLElement,
@@ -5091,10 +5065,25 @@ object mod extends js.Object {
       easing: String,
       callback: EventHandler[transitionend]
     ): Cancel = js.native
+    
     def cancelAnimationFrame(id: Double): Unit = js.native
+    
     def closest(node: Element, selector: String): Element | Null = js.native
     def closest(node: Element, selector: String, stopAt: Element): Element | Null = js.native
+    @JSName("closest")
+    var closest_Original: js.Function3[
+        /* node */ Element, 
+        /* selector */ String, 
+        /* stopAt */ js.UndefOr[Element], 
+        Element | Null
+      ] = js.native
+    
     def contains(context: Element, node: Element): js.UndefOr[Boolean] = js.native
+    @JSName("contains")
+    var contains_Original: js.Function2[/* context */ Element, /* node */ Element, js.UndefOr[Boolean]] = js.native
+    
+    @JSName("filter")
+    var filter_Original: FnCallSelectorHandler = js.native
     @JSName("filter")
     def filter_abort(selector: String, handler: EventHandler[abort]): EventHandler[abort] = js.native
     @JSName("filter")
@@ -5279,12 +5268,24 @@ object mod extends js.Object {
     def filter_waiting(selector: String, handler: EventHandler[waiting]): EventHandler[waiting] = js.native
     @JSName("filter")
     def filter_wheel(selector: String, handler: EventHandler[wheel]): EventHandler[wheel] = js.native
+    
     def getComputedStyle(node: HTMLElement): CSSStyleDeclaration = js.native
     def getComputedStyle(node: HTMLElement, psuedoElement: String): CSSStyleDeclaration = js.native
+    @JSName("getComputedStyle")
+    var getComputedStyle_Original: js.Function2[/* node */ HTMLElement, /* psuedoElement */ js.UndefOr[String], CSSStyleDeclaration] = js.native
+    
     def hasClass(element: Element, className: String): Boolean = js.native
     def hasClass(element: SVGElement, className: String): Boolean = js.native
+    @JSName("hasClass")
+    var hasClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Boolean] = js.native
+    
     def height(node: HTMLElement): Double = js.native
     def height(node: HTMLElement, client: Boolean): Double = js.native
+    @JSName("height")
+    var height_Original: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double] = js.native
+    
+    @JSName("listen")
+    var listen_Original: Fn1 = js.native
     @JSName("listen")
     def listen_abort(node: HTMLElement, eventName: abort, handler: EventHandler[abort]): js.Function0[Unit] = js.native
     @JSName("listen")
@@ -6351,19 +6352,47 @@ object mod extends js.Object {
       handler: EventHandler[wheel],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
+    
     def matches(node: Element, selector: String): Boolean = js.native
+    @JSName("matches")
+    var matches_Original: js.Function2[/* node */ Element, /* selector */ String, Boolean] = js.native
+    
     def offset(node: HTMLElement): Height = js.native
+    
     def offsetParent(node: HTMLElement): HTMLElement = js.native
+    @JSName("offsetParent")
+    var offsetParent_Original: js.Function1[/* node */ HTMLElement, HTMLElement] = js.native
+    
+    @JSName("offset")
+    var offset_Original: js.Function1[/* node */ HTMLElement, Height] = js.native
+    
     def ownerDocument(): Document = js.native
     def ownerDocument(node: Element): Document = js.native
+    @JSName("ownerDocument")
+    var ownerDocument_Original: js.Function1[/* node */ js.UndefOr[Element], Document] = js.native
+    
     def ownerWindow(): Window = js.native
     def ownerWindow(node: Element): Window = js.native
+    @JSName("ownerWindow")
+    var ownerWindow_Original: js.Function1[/* node */ js.UndefOr[Element], Window] = js.native
+    
     def position(node: HTMLElement): Height = js.native
     def position(node: HTMLElement, offsetParent: HTMLElement): Height = js.native
+    @JSName("position")
+    var position_Original: js.Function2[/* node */ HTMLElement, /* offsetParent */ js.UndefOr[HTMLElement], Height] = js.native
+    
     def querySelectorAll(element: Document, selector: String): js.Array[HTMLElement] = js.native
     def querySelectorAll(element: HTMLElement, selector: String): js.Array[HTMLElement] = js.native
+    @JSName("querySelectorAll")
+    var querySelectorAll_Original: js.Function2[/* element */ HTMLElement | Document, /* selector */ String, js.Array[HTMLElement]] = js.native
+    
     def removeClass(element: Element, className: String): Unit = js.native
     def removeClass(element: SVGElement, className: String): Unit = js.native
+    @JSName("removeClass")
+    var removeClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
+    
+    @JSName("removeEventListener")
+    var removeEventListener_Original: Fn0 = js.native
     @JSName("removeEventListener")
     def removeEventListener_abort(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort]): Unit = js.native
     @JSName("removeEventListener")
@@ -7545,27 +7574,67 @@ object mod extends js.Object {
       handler: TaggedEventHandler[wheel],
       options: EventListenerOptions
     ): Unit = js.native
+    
+    var requestAnimationFrame: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.requestAnimationFrame */ js.Any = js.native
+    
     def scrollLeft(node: Element): Double = js.native
     def scrollLeft(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
+    
     def scrollParent(element: HTMLElement): Document | HTMLElement = js.native
     def scrollParent(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = js.native
+    @JSName("scrollParent")
+    var scrollParent_Original: js.Function2[
+        /* element */ HTMLElement, 
+        /* firstPossible */ js.UndefOr[Boolean], 
+        Document | HTMLElement
+      ] = js.native
+    
     def scrollTo(selected: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
     def scrollTo(selected: HTMLElement, scrollParent: HTMLElement): js.UndefOr[js.Function0[Unit]] = js.native
+    @JSName("scrollTo")
+    var scrollTo_Original: js.Function2[
+        /* selected */ HTMLElement, 
+        /* scrollParent */ js.UndefOr[HTMLElement], 
+        js.UndefOr[js.Function0[Unit]]
+      ] = js.native
+    
     def scrollTop(node: Element): Double = js.native
     def scrollTop(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
+    
     def scrollbarSize(): Double = js.native
     def scrollbarSize(recalc: Boolean): Double = js.native
+    @JSName("scrollbarSize")
+    var scrollbarSize_Original: js.Function1[/* recalc */ js.UndefOr[Boolean], Double] = js.native
+    
     def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
-    def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = js.native
+    def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
     @JSName("style")
-    def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = js.native
+    var style_Original: FnCallNodeProperty = js.native
+    @JSName("style")
+    def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
+    
     def toggleClass(element: Element, className: String): Unit = js.native
     def toggleClass(element: SVGElement, className: String): Unit = js.native
+    @JSName("toggleClass")
+    var toggleClass_Original: js.Function2[/* element */ Element | SVGElement, /* className */ String, Unit] = js.native
+    
     def transitionEnd(element: HTMLElement, handler: Listener): js.Function0[Unit] = js.native
+    def transitionEnd(element: HTMLElement, handler: Listener, duration: js.UndefOr[scala.Nothing], padding: Double): js.Function0[Unit] = js.native
     def transitionEnd(element: HTMLElement, handler: Listener, duration: Double): js.Function0[Unit] = js.native
+    def transitionEnd(element: HTMLElement, handler: Listener, duration: Double, padding: Double): js.Function0[Unit] = js.native
+    def transitionEnd(element: HTMLElement, handler: Listener, duration: Null, padding: Double): js.Function0[Unit] = js.native
+    @JSName("transitionEnd")
+    var transitionEnd_Original: js.Function4[
+        /* element */ HTMLElement, 
+        /* handler */ Listener, 
+        /* duration */ js.UndefOr[Double | Null], 
+        /* padding */ js.UndefOr[Double], 
+        js.Function0[Unit]
+      ] = js.native
+    
     def width(node: HTMLElement): Double = js.native
     def width(node: HTMLElement, client: Boolean): Double = js.native
+    @JSName("width")
+    var width_Original: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double] = js.native
   }
-  
 }
-

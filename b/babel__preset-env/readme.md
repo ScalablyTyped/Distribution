@@ -10,9 +10,9 @@ A Babel preset for each environment.
 | ------------------ | :-------------: |
 | Full name          | @babel/preset-env |
 | Keywords           | - |
-| # releases         | 53 |
-| # dependents       | 4771 |
-| # downloads        | 385154961 |
+| # releases         | 44 |
+| # dependents       | 6219 |
+| # downloads        | 592813732 |
 | # stars            | 9 |
 
 ## Links

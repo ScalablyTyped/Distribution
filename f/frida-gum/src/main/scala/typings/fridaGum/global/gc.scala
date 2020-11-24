@@ -2,11 +2,12 @@ package typings.fridaGum.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("gc")
 @js.native
 object gc extends js.Object {
+  
   /**
     * Forces garbage collection.
     *
@@ -16,4 +17,3 @@ object gc extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

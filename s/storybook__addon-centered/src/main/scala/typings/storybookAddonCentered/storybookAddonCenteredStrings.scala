@@ -2,9 +2,31 @@ package typings.storybookAddonCentered
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookAddonCenteredStrings {
+  
+  @scala.inline
+  def `0`: `0` = "0".asInstanceOf[`0`]
+  
+  @scala.inline
+  def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def centered: centered = "centered".asInstanceOf[centered]
+  
+  @scala.inline
+  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @scala.inline
+  def flex: flex = "flex".asInstanceOf[flex]
+  
   @js.native
   sealed trait `0` extends js.Object
   
@@ -25,20 +47,4 @@ object storybookAddonCenteredStrings {
   
   @js.native
   sealed trait flex extends js.Object
-  
-  @scala.inline
-  def `0`: `0` = "0".asInstanceOf[`0`]
-  @scala.inline
-  def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def centered: centered = "centered".asInstanceOf[centered]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
 }
-

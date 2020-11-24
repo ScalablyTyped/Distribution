@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AnimationEffect extends js.Object
-
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffect")
 @js.native
 object AnimationEffect extends js.Object {
+  
   @js.native
   sealed trait addToGrid extends AnimationEffect
   
@@ -117,6 +117,4 @@ object AnimationEffect extends js.Object {
   
   @js.native
   sealed trait updateBadge extends AnimationEffect
-  
 }
-

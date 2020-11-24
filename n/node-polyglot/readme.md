@@ -10,9 +10,9 @@ Give your JavaScript the ability to speak many languages.
 | ------------------ | :-------------: |
 | Full name          | node-polyglot |
 | Keywords           | i18n, internationalization, internationalisation, translation, interpolation, translate, polyglot |
-| # releases         | 4 |
-| # dependents       | 149 |
-| # downloads        | 3872094 |
+| # releases         | 2 |
+| # dependents       | 167 |
+| # downloads        | 5815702 |
 | # stars            | 14 |
 
 ## Links

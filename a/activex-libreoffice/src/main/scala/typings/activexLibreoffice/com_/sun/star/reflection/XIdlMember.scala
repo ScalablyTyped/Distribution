@@ -4,34 +4,38 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Base interface for XIdlField2s and XIdlMethods. */
 @js.native
 trait XIdlMember extends XInterface {
+  
   /**
     * Returns the declaring type of this field, i.e. the type having the member declared (interface, enum, struct, exception).
     * @returns declaring type
     */
   val DeclaringClass: XIdlClass[_] = js.native
+  
   /**
     * Returns the fully-qualified name of the member.
     * @returns fully-qualified name of the member
     */
   val Name: String = js.native
+  
   /**
     * Returns the declaring type of this field, i.e. the type having the member declared (interface, enum, struct, exception).
     * @returns declaring type
     */
   def getDeclaringClass(): XIdlClass[_] = js.native
+  
   /**
     * Returns the fully-qualified name of the member.
     * @returns fully-qualified name of the member
     */
   def getName(): String = js.native
 }
-
 object XIdlMember {
+  
   @scala.inline
   def apply(
     DeclaringClass: XIdlClass[_],
@@ -45,26 +49,32 @@ object XIdlMember {
     val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDeclaringClass = js.Any.fromFunction0(getDeclaringClass), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XIdlMember]
   }
+  
   @scala.inline
   implicit class XIdlMemberOps[Self <: XIdlMember] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDeclaringClass(value: XIdlClass[_]): Self = this.set("DeclaringClass", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetDeclaringClass(value: () => XIdlClass[_]): Self = this.set("getDeclaringClass", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
   }
-  
 }
-

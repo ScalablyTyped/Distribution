@@ -11,7 +11,7 @@ import typings.activexWord.activexWordNumbers.`-8`
 import typings.activexWord.activexWordNumbers.`-9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`-6`
@@ -25,25 +25,32 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`-3`
 */
 trait WdMailMergeActiveRecord extends js.Object
-
 object WdMailMergeActiveRecord {
+  
   @scala.inline
   def wdFirstDataSourceRecord: `-6` = -6.asInstanceOf[`-6`]
+  
   @scala.inline
   def wdFirstRecord: `-4` = -4.asInstanceOf[`-4`]
+  
   @scala.inline
   def wdLastDataSourceRecord: `-7` = -7.asInstanceOf[`-7`]
+  
   @scala.inline
   def wdLastRecord: `-5` = -5.asInstanceOf[`-5`]
+  
   @scala.inline
   def wdNextDataSourceRecord: `-8` = -8.asInstanceOf[`-8`]
+  
   @scala.inline
   def wdNextRecord: `-2` = -2.asInstanceOf[`-2`]
+  
   @scala.inline
   def wdNoActiveRecord: `-1` = -1.asInstanceOf[`-1`]
+  
   @scala.inline
   def wdPreviousDataSourceRecord: `-9` = -9.asInstanceOf[`-9`]
+  
   @scala.inline
   def wdPreviousRecord: `-3` = -3.asInstanceOf[`-3`]
 }
-

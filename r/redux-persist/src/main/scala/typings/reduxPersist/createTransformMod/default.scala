@@ -5,11 +5,12 @@ import typings.reduxPersist.typesMod.TransformInbound
 import typings.reduxPersist.typesMod.TransformOutbound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-persist/es/createTransform", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[HSS, ESS, S, RS](): Transform[HSS, ESS, S, RS] = js.native
   def apply[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: js.UndefOr[scala.Nothing], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
   def apply[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
@@ -37,4 +38,3 @@ object default extends js.Object {
     config: TransformConfig
   ): Transform[HSS, ESS, S, RS] = js.native
 }
-

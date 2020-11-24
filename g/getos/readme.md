@@ -9,10 +9,10 @@ Get the OS/Distribution name of the environment you are working on
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | getos |
-| Keywords           | OS, Distribution, Platform |
-| # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 28934489 |
+| Keywords           | OS, Distribution, Platform, Version |
+| # releases         | 8 |
+| # dependents       | 69 |
+| # downloads        | 55843777 |
 | # stars            | 2 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor
 import typings.codemirror.mod.Editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.addCommand")
 @js.native
 object addCommand extends js.Object {
+  
   /**
     * Add a command to CodeMirror.
     *
@@ -17,4 +18,3 @@ object addCommand extends js.Object {
     */
   def apply(name: String, command: js.Function1[/* cm */ Editor, Unit]): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ A standalone module that suggests a right domain when your users misspell it in 
 | Full name          | mailcheck |
 | Keywords           | form, email, spell check |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 1766217 |
+| # dependents       | 19 |
+| # downloads        | 1945710 |
 | # stars            | 5 |
 
 ## Links

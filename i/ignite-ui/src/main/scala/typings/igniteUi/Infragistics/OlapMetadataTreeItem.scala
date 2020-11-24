@@ -2,22 +2,26 @@ package typings.igniteUi.Infragistics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OlapMetadataTreeItem extends js.Object {
+  
   /**
     * Returns the caption text that should be displayed for this tree item.
     */
   def caption(): String = js.native
+  
   /**
     * Returns the children ot this tree item.
     */
   def children(): js.Object = js.native
+  
   /**
     * Returns the OLAP metadata item that this tree item represents which is an object of type $.ig.Cube, $.ig.Dimension, $.ig.Hierarchy, $.ig.Measure, $.ig.Level.
     */
   def item(): js.Object = js.native
+  
   /**
     * Returns the metadata tree item type which is a value from the $.ig.MetadataTreeItemType enumeration.
     *
@@ -59,34 +63,40 @@ trait OlapMetadataTreeItem extends js.Object {
     */
   def `type`(): Double = js.native
 }
-
 object OlapMetadataTreeItem {
+  
   @scala.inline
   def apply(caption: () => String, children: () => js.Object, item: () => js.Object, `type`: () => Double): OlapMetadataTreeItem = {
     val __obj = js.Dynamic.literal(caption = js.Any.fromFunction0(caption), children = js.Any.fromFunction0(children), item = js.Any.fromFunction0(item))
     __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[OlapMetadataTreeItem]
   }
+  
   @scala.inline
   implicit class OlapMetadataTreeItemOps[Self <: OlapMetadataTreeItem] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCaption(value: () => String): Self = this.set("caption", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setChildren(value: () => js.Object): Self = this.set("children", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setItem(value: () => js.Object): Self = this.set("item", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setType(value: () => Double): Self = this.set("type", js.Any.fromFunction0(value))
   }
-  
 }
-

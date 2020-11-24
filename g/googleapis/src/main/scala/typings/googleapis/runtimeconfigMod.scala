@@ -12,32 +12,27 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/runtimeconfig", JSImport.Namespace)
 @js.native
 object runtimeconfigMod extends js.Object {
+  
   def runtimeconfig(options: Options): Runtimeconfig = js.native
   def runtimeconfig(options: typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Options): typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig = js.native
   @JSName("runtimeconfig")
   def runtimeconfig_v1(version: v1): Runtimeconfig = js.native
   @JSName("runtimeconfig")
   def runtimeconfig_v1beta1(version: v1beta1): typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Runtimeconfig {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta1 protected ()
-      extends typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -49,6 +44,12 @@ object runtimeconfigMod extends js.Object {
             ]
     
     @js.native
+    class v1beta1 protected ()
+      extends typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta1
       extends TopLevel[
               Instantiable2[
@@ -57,11 +58,11 @@ object runtimeconfigMod extends js.Object {
                 typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,8 +90,5 @@ object runtimeconfigMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

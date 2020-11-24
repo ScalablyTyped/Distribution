@@ -2,17 +2,14 @@ package typings.jug.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents one node of a graph.
   */
 @js.native
 trait Vertex extends js.Object {
-  /**
-    * Initial vertex data.
-    */
-  var internal: VertexStructure = js.native
+  
   /**
     * Get node data.
     */
@@ -22,6 +19,7 @@ trait Vertex extends js.Object {
     * @param obj - data to be set.
     */
   def data(obj: VertexData): Vertex = js.native
+  
   /**
     * Get edge count.
     */
@@ -31,6 +29,7 @@ trait Vertex extends js.Object {
     * @param index - edge index.
     */
   def edge(index: Double): Vertex = js.native
+  
   /**
     * Find a node.
     * @param {string} type - object type.
@@ -38,41 +37,54 @@ trait Vertex extends js.Object {
     */
   def find(`type`: String, query: js.Object): js.Array[VertexData] = js.native
   def find(`type`: Unit, query: js.Object): js.Array[VertexData] = js.native
+  
   /**
     * Getting childs of an specified edge.
     * @param egde - target vertex;
     */
   def getChildsOf(egde: Double): js.Array[VertexData] = js.native
+  
   /**
     * Getting parents of an specified level and edge.
     * @param {number} level - max level.
     * @param {number} edge - edge index.
     */
   def getParentsFrom(level: Double, edge: Double): js.Array[VertexData] = js.native
+  
   /**
     * Getting the length of childs of an specified edge.
     * @param {number} edge - edge index.
     */
   def getScopeOf(edge: Double): Double = js.native
+  
   /**
     * Get siblings of specified edge.
     * @param {number} index - edge index.
     */
   def getSiblingsOf(index: Double): js.Array[VertexData] = js.native
+  
+  /**
+    * Initial vertex data.
+    */
+  var internal: VertexStructure = js.native
+  
   /**
     * Verify if the current node is the root.
     */
   def isRoot(): Boolean = js.native
+  
   /**
     * Verify the level.
     */
   def level(): Double = js.native
+  
   /**
     * Get distance between nodes.
     * @param from
     * @param to
     */
   def proximity(from: String, to: String): js.Array[Double] = js.native
+  
   /**
     * Seed node.
     * @param [data] - created vertex UserData.
@@ -80,4 +92,3 @@ trait Vertex extends js.Object {
   def seed(): Vertex = js.native
   def seed(data: VertexData): Vertex = js.native
 }
-

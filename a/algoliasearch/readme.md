@@ -1,24 +1,24 @@
 
 # Scala.js typings for algoliasearch
 
-Typings are for version 4.3.1
+Typings are for version 4.8.0
 
 ## Library description:
-AlgoliaSearch API JavaScript client
+A fully-featured and blazing-fast JavaScript API client to interact with Algolia API.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | algoliasearch |
-| Keywords           | algolia, search, search api, instant search, realtime, autocomplete |
-| # releases         | 28 |
-| # dependents       | 176 |
-| # downloads        | 13117683 |
+| Keywords           | - |
+| # releases         | 33 |
+| # dependents       | 246 |
+| # downloads        | 21865256 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](https://www.algolia.com/doc/api-client/javascript/)
-- [Bugs](https://github.com/algolia/algoliasearch-client-js/issues)
-- [Repository](https://github.com/algolia/algoliasearch-client-js)
+- [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)
+- [Bugs](https://github.com/algolia/algoliasearch-client-javascript/issues)
+- [Repository](https://github.com/algolia/algoliasearch-client-javascript)
 - [Npm](https://www.npmjs.com/package/algoliasearch)
     
 

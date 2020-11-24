@@ -2,17 +2,17 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SelectionMode extends js.Object
-
 /**
   * Specifies whether to select (highlight) the location to navigate to (when using the {@link Office.Document | Document}.goToByIdAsync method).
   */
 @JSGlobal("Office.SelectionMode")
 @js.native
 object SelectionMode extends js.Object {
+  
   @js.native
   sealed trait Default extends SelectionMode
   
@@ -27,6 +27,4 @@ object SelectionMode extends js.Object {
     */
   @js.native
   sealed trait Selected extends SelectionMode
-  
 }
-

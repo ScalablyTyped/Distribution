@@ -10,9 +10,9 @@ Sticky header and body for Reactabular
 | ------------------ | :-------------: |
 | Full name          | reactabular-sticky |
 | Keywords           | react, reactjs, table, tables, reactabular |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 93835 |
+| # downloads        | 89342 |
 | # stars            | 0 |
 
 ## Links

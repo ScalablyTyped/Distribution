@@ -2,9 +2,10 @@ package typings.reactTransitionGroup
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object transitionGroupMod {
+  
   /**
     * The `<TransitionGroup>` component manages a set of `<Transition>` components
     * in a list. Like with the `<Transition>` component, `<TransitionGroup>`, is a
@@ -67,5 +68,6 @@ package object transitionGroupMod {
     js.Object, 
     js.Any
   ]
+  
   type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, V /* <: typings.react.mod.ReactType[_] */] = (typings.reactTransitionGroup.transitionGroupMod.IntrinsicTransitionGroupProps[T] with (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (typings.reactTransitionGroup.transitionGroupMod.ComponentTransitionGroupProps[V] with typings.reactTransitionGroup.anon.Dictprop)
 }

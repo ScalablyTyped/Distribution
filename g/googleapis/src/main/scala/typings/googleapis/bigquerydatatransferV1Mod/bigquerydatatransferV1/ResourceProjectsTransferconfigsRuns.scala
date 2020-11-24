@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Transferconfigs$Runs")
 @js.native
 class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var transferLogs: ResourceProjectsTransferconfigsRunsTransferlogs = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.runs.delete
     * @desc Deletes the specified transfer run.
@@ -45,6 +46,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.runs.get
     * @desc Returns information about the particular transfer run.
@@ -76,6 +78,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransferRun]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.runs.list
     * @desc Returns information about running and completed jobs.
@@ -111,5 +114,6 @@ class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTransferRunsResponse]
   ): Unit = js.native
+  
+  var transferLogs: ResourceProjectsTransferconfigsRunsTransferlogs = js.native
 }
-

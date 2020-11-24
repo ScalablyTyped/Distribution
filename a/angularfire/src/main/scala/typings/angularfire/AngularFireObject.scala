@@ -5,13 +5,14 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates and maintains a synchronized object, with 2-way bindings between Angular and Firebase.
   */
 @js.native
 trait AngularFireObject extends AngularFireSimpleObject {
+  
   /**
     * Creates a 3-way data sync between this object, the Firebase server, and a
     * scope variable. This means that any changes made to the scope variable are
@@ -30,12 +31,14 @@ trait AngularFireObject extends AngularFireSimpleObject {
     */
   @JSName("$bindTo")
   def $bindTo(scope: IScope, varName: String): IPromise[_] = js.native
+  
   /**
     * Informs $firebase to stop sending events and clears memory being used
     * by this object (delete's its local content).
     */
   @JSName("$destroy")
   def $destroy(): Unit = js.native
+  
   /**
     * The loaded method is invoked after the initial batch of data arrives from the server.
     * When this resolves, all data which existed prior to calling $asObject() is now cached
@@ -59,11 +62,13 @@ trait AngularFireObject extends AngularFireSimpleObject {
     resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit],
     reject: js.Function1[/* err */ js.Any, _]
   ): IPromise[AngularFireObject] = js.native
+  
   /**
     * @returns {Firebase} the original Firebase instance used to create this object.
     */
   @JSName("$ref")
   def $ref(): js.Any = js.native
+  
   /**
     * Removes all keys from the FirebaseObject and also removes
     * the remote data from the server.
@@ -74,6 +79,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   def $remove(): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
+  
   /**
     * Saves all data on the FirebaseObject back to Firebase.
     * @returns a promise which will resolve after the save is completed.
@@ -82,6 +88,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   def $save(): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
+  
   /**
     * Listeners passed into this method are notified whenever a new change is received
     * from the server. Each invocation is sent an object containing
@@ -98,4 +105,3 @@ trait AngularFireObject extends AngularFireSimpleObject {
   @JSName("$watch")
   def $watch(callback: js.Function, context: js.Any): js.Function = js.native
 }
-

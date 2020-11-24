@@ -4,18 +4,18 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Globalization.Language
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to view data about another app and the device it is running on. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutDataView")
 @js.native
 abstract class AllJoynAboutDataView ()
   extends typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAboutDataView
-
 /* static members */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutDataView")
 @js.native
 object AllJoynAboutDataView extends js.Object {
+  
   /**
     * Gets the About data for a session.
     * @param uniqueName The unique name.
@@ -43,4 +43,3 @@ object AllJoynAboutDataView extends js.Object {
     language: Language
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAboutDataView] = js.native
 }
-

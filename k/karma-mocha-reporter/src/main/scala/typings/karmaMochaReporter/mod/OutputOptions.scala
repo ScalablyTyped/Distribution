@@ -2,7 +2,7 @@ package typings.karmaMochaReporter.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.karmaMochaReporter.karmaMochaReporterStrings.full
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures
 */
 trait OutputOptions extends js.Object
-
 object OutputOptions {
+  
   @scala.inline
   def autowatch: typings.karmaMochaReporter.karmaMochaReporterStrings.autowatch = "autowatch".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.autowatch]
+  
   @scala.inline
   def full: typings.karmaMochaReporter.karmaMochaReporterStrings.full = "full".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.full]
+  
   @scala.inline
   def minimal: typings.karmaMochaReporter.karmaMochaReporterStrings.minimal = "minimal".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.minimal]
+  
   @scala.inline
   def noFailures: typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures = "noFailures".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures]
 }
-

@@ -2,7 +2,7 @@ package typings.mockFs.filesystemMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-fs/lib/filesystem", JSImport.Namespace)
 @js.native
@@ -18,10 +18,10 @@ import scala.scalajs.js.annotation._
 class ^ () extends FileSystem {
   def this(options: Options) = this()
 }
-
 @JSImport("mock-fs/lib/filesystem", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Configure a mock file system.
     *
@@ -37,6 +37,7 @@ object ^ extends js.Object {
   def create(paths: js.UndefOr[scala.Nothing], options: Options): FileSystem = js.native
   def create(paths: DirectoryItems): FileSystem = js.native
   def create(paths: DirectoryItems, options: Options): FileSystem = js.native
+  
   /**
     * Generate a factory for new symbolic links.
     *
@@ -45,6 +46,7 @@ object ^ extends js.Object {
     */
   def directory(): js.Function0[this.type] = js.native
   def directory(config: DirectoryOptions): js.Function0[this.type] = js.native
+  
   /**
     * Generate a factory for new files.
     *
@@ -53,6 +55,7 @@ object ^ extends js.Object {
     */
   def file(): js.Function0[this.type] = js.native
   def file(config: FileOptions): js.Function0[this.type] = js.native
+  
   /**
     * Generate a factory for new directories.
     *
@@ -61,4 +64,3 @@ object ^ extends js.Object {
     */
   def symlink(config: SymlinkOptions): js.Function0[this.type] = js.native
 }
-

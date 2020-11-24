@@ -8,35 +8,18 @@ import typings.flux.fluxStoreMod.^
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("flux/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
-  /**
-    * This is the basic building block of a Flux application. All of your stores
-    * should extend this class.
-    */
-  @js.native
-  abstract class ReduceStore[TState, TPayload] () extends FluxReduceStore[TState, TPayload]
-  
-  /**
-    * This class represents the most basic functionality for a FluxStore. Do not
-    * extend this store directly; instead extend FluxReduceStore when creating a
-    * new store.
-    */
-  @js.native
-  abstract class Store[TPayload] protected () extends ^[TPayload] {
-    /**
-      * Constructs and registers an instance of this store with the given dispatcher.
-      */
-    def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
-  }
   
   @js.native
   object Container extends js.Object {
+    
     def create[TProps](base: Component[TProps, _, _]): Component[TProps, _, _] = js.native
     def create[TProps](base: Component[TProps, _, _], options: RealOptions): Component[TProps, _, _] = js.native
+    
     def createFunctional[TProps, TState](
       viewFn: js.Function1[/* props */ TState, ReactElement],
       getStores: js.Function2[
@@ -66,6 +49,7 @@ object utilsMod extends js.Object {
         ],
       options: RealOptions
     ): Component[TProps, TState, _] = js.native
+    
     @JSName("create")
     def create_TPropsTState[TProps, TState](base: Component[TProps, TState, _]): Component[TProps, TState, _] = js.native
     @JSName("create")
@@ -82,6 +66,7 @@ object utilsMod extends js.Object {
   
   @js.native
   object Mixin extends js.Object {
+    
     /**
       * `FluxContainer` should be preferred over this mixin, but it requires using
       * react with classes. So this mixin is provided where it is not yet possible
@@ -101,5 +86,23 @@ object utilsMod extends js.Object {
     def apply(stores: js.Array[^[_]], options: Options): js.Any = js.native
   }
   
+  /**
+    * This is the basic building block of a Flux application. All of your stores
+    * should extend this class.
+    */
+  @js.native
+  abstract class ReduceStore[TState, TPayload] () extends FluxReduceStore[TState, TPayload]
+  
+  /**
+    * This class represents the most basic functionality for a FluxStore. Do not
+    * extend this store directly; instead extend FluxReduceStore when creating a
+    * new store.
+    */
+  @js.native
+  abstract class Store[TPayload] protected () extends ^[TPayload] {
+    /**
+      * Constructs and registers an instance of this store with the given dispatcher.
+      */
+    def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
+  }
 }
-

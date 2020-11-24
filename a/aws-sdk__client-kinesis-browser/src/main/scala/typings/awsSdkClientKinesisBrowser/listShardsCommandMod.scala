@@ -5,33 +5,29 @@ import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisResolve
 import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesListShardsInputMod.ListShardsInput
 import typings.awsSdkClientKinesisBrowser.typesListShardsOutputMod.ListShardsOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kinesis-browser/commands/ListShardsCommand", JSImport.Namespace)
 @js.native
 object listShardsCommandMod extends js.Object {
+  
   @js.native
   class ListShardsCommand protected () extends Command[
           InputTypesUnion, 
           ListShardsInput, 
           OutputTypesUnion, 
           ListShardsOutput, 
-          KinesisResolvedConfiguration, 
-          Blob
+          KinesisResolvedConfiguration
         ] {
     def this(input: ListShardsInput) = this()
-    val middlewareStack: MiddlewareStack[ListShardsInput, ListShardsOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[ListShardsInput, ListShardsOutput] = js.native
   }
-  
 }
-

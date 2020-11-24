@@ -5,7 +5,7 @@ import typings.ejWebAll.ej.datavisualization.Overview.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.datavisualization.Overview")
 @js.native
@@ -16,12 +16,12 @@ class Overview protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-
 /* static members */
 @JSGlobal("ej.datavisualization.Overview")
 @js.native
 object Overview extends js.Object {
+  
   var Locale: js.Any = js.native
+  
   var fn: typings.ejWebAll.ej.datavisualization.Overview = js.native
 }
-

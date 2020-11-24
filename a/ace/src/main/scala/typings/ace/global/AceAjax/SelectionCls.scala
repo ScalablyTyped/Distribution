@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import typings.ace.AceAjax.IEditSession
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.Selection")
 @js.native
@@ -15,4 +15,3 @@ class SelectionCls protected ()
     **/
   def this(session: IEditSession) = this()
 }
-

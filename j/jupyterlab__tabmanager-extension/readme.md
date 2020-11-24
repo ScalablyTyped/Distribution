@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__tabmanager-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Tab Manager Extension
@@ -10,9 +10,9 @@ JupyterLab - Tab Manager Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/tabmanager-extension |
 | Keywords           | - |
-| # releases         | 62 |
+| # releases         | 98 |
 | # dependents       | 2 |
-| # downloads        | 713758 |
+| # downloads        | 1251382 |
 | # stars            | 0 |
 
 ## Links

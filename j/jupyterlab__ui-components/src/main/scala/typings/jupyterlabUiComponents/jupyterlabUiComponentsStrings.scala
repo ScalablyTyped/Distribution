@@ -5,9 +5,112 @@ import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IPosition
 import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.ISize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabUiComponentsStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
+  
+  @scala.inline
+  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
+  
+  @scala.inline
+  def breadCrumb: breadCrumb = "breadCrumb".asInstanceOf[breadCrumb]
+  
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def commandPaletteHeader: commandPaletteHeader = "commandPaletteHeader".asInstanceOf[commandPaletteHeader]
+  
+  @scala.inline
+  def commandPaletteItem: commandPaletteItem = "commandPaletteItem".asInstanceOf[commandPaletteItem]
+  
+  @scala.inline
+  def div: div = "div".asInstanceOf[div]
+  
+  @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  
+  @scala.inline
+  def launcherCard: launcherCard = "launcherCard".asInstanceOf[launcherCard]
+  
+  @scala.inline
+  def launcherSection: launcherSection = "launcherSection".asInstanceOf[launcherSection]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def listing: listing = "listing".asInstanceOf[listing]
+  
+  @scala.inline
+  def listingHeaderItem: listingHeaderItem = "listingHeaderItem".asInstanceOf[listingHeaderItem]
+  
+  @scala.inline
+  def mainAreaTab: mainAreaTab = "mainAreaTab".asInstanceOf[mainAreaTab]
+  
+  @scala.inline
+  def menuItem: menuItem = "menuItem".asInstanceOf[menuItem]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def runningItem: runningItem = "runningItem".asInstanceOf[runningItem]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def settingsEditor: settingsEditor = "settingsEditor".asInstanceOf[settingsEditor]
+  
+  @scala.inline
+  def sideBar: sideBar = "sideBar".asInstanceOf[sideBar]
+  
+  @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  
+  @scala.inline
+  def span: span = "span".asInstanceOf[span]
+  
+  @scala.inline
+  def splash: splash = "splash".asInstanceOf[splash]
+  
+  @scala.inline
+  def statusBar: statusBar = "statusBar".asInstanceOf[statusBar]
+  
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
+  
+  @scala.inline
+  def toolbarButton: toolbarButton = "toolbarButton".asInstanceOf[toolbarButton]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
+  
+  @scala.inline
+  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
+  
+  @scala.inline
+  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  
   @js.native
   sealed trait bottom extends IPosition
   
@@ -109,74 +212,4 @@ object jupyterlabUiComponentsStrings {
   
   @js.native
   sealed trait xlarge extends ISize
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
-  @scala.inline
-  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
-  @scala.inline
-  def breadCrumb: breadCrumb = "breadCrumb".asInstanceOf[breadCrumb]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def commandPaletteHeader: commandPaletteHeader = "commandPaletteHeader".asInstanceOf[commandPaletteHeader]
-  @scala.inline
-  def commandPaletteItem: commandPaletteItem = "commandPaletteItem".asInstanceOf[commandPaletteItem]
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def launcherCard: launcherCard = "launcherCard".asInstanceOf[launcherCard]
-  @scala.inline
-  def launcherSection: launcherSection = "launcherSection".asInstanceOf[launcherSection]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def listing: listing = "listing".asInstanceOf[listing]
-  @scala.inline
-  def listingHeaderItem: listingHeaderItem = "listingHeaderItem".asInstanceOf[listingHeaderItem]
-  @scala.inline
-  def mainAreaTab: mainAreaTab = "mainAreaTab".asInstanceOf[mainAreaTab]
-  @scala.inline
-  def menuItem: menuItem = "menuItem".asInstanceOf[menuItem]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def runningItem: runningItem = "runningItem".asInstanceOf[runningItem]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def settingsEditor: settingsEditor = "settingsEditor".asInstanceOf[settingsEditor]
-  @scala.inline
-  def sideBar: sideBar = "sideBar".asInstanceOf[sideBar]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
-  @scala.inline
-  def splash: splash = "splash".asInstanceOf[splash]
-  @scala.inline
-  def statusBar: statusBar = "statusBar".asInstanceOf[statusBar]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def toolbarButton: toolbarButton = "toolbarButton".asInstanceOf[toolbarButton]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
-  @scala.inline
-  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
 }
-

@@ -14,42 +14,40 @@ import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "FileTools")
 @js.native
 class FileTools ()
   extends typings.babylonjs.legacyMod.FileTools
-
 /* static members */
 @JSImport("babylonjs", "FileTools")
 @js.native
 object FileTools extends js.Object {
+  
   /**
     * Gets or sets the base URL to use to load assets
     */
   var BaseUrl: String = js.native
+  
   /**
     * Default behaviour for cors in the application.
     * It can be a string if the expected behavior is identical in the entire app.
     * Or a callback to be able to set it per url or on a group of them (in case of Video source for instance)
     */
   var CorsBehavior: String | (js.Function1[/* url */ String | js.Array[String], String]) = js.native
-  /**
-    * Removes unwanted characters from an url
-    * @param url defines the url to clean
-    * @returns the cleaned url
-    */
-  var _CleanUrl: js.Any = js.native
+  
   /**
     * Gets or sets the retry strategy to apply when an error happens while loading an asset
     */
   def DefaultRetryStrategy(url: String, request: typings.babylonjs.webRequestMod.WebRequest, retryIndex: Double): Double = js.native
+  
   /**
     * Checks if the loaded document was accessed via `file:`-Protocol.
     * @returns boolean
     */
   def IsFileURL(): Boolean = js.native
+  
   /**
     * Loads a file from a url
     * @param url url to load
@@ -67,13 +65,124 @@ object FileTools extends js.Object {
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean,
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
   ): IFileRequest = js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider
+  ): IFileRequest = js.native
+  def LoadFile(
+    url: String,
+    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function2[
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      Unit
+    ]
   ): IFileRequest = js.native
   def LoadFile(
     url: String,
@@ -94,6 +203,7 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  
   /**
     * Loads an image as an HTMLImageElement.
     * @param input url string, ArrayBuffer, or Blob to load
@@ -155,10 +265,12 @@ object FileTools extends js.Object {
     offlineProvider: Nullable[IOfflineProvider],
     mimeType: String
   ): Nullable[HTMLImageElement] = js.native
+  
   /**
     * Gets or sets a function used to pre-process url before using them to load assets
     */
   def PreprocessUrl(url: String): String = js.native
+  
   /**
     * Reads a file from a File object
     * @param file defines the file to load
@@ -172,7 +284,34 @@ object FileTools extends js.Object {
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  ): IFileRequest = js.native
+  def ReadFile(
+    file: File,
+    onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def ReadFile(
+    file: File,
+    onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onProgress: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  ): IFileRequest = js.native
+  def ReadFile(
+    file: File,
+    onSuccess: js.Function1[/* data */ js.Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _]
+  ): IFileRequest = js.native
+  def ReadFile(
+    file: File,
+    onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = js.native
   def ReadFile(
     file: File,
@@ -187,6 +326,7 @@ object FileTools extends js.Object {
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = js.native
+  
   /**
     * Loads a file
     * @param url url to load
@@ -212,7 +352,278 @@ object FileTools extends js.Object {
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
       Unit
     ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean,
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.UndefOr[scala.Nothing],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: js.UndefOr[scala.Nothing],
+    useArrayBuffer: Boolean,
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
   def RequestFile(
     url: String,
@@ -233,7 +644,58 @@ object FileTools extends js.Object {
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
+  ): IFileRequest = js.native
+  def RequestFile(
+    url: String,
+    onSuccess: js.Function2[
+      /* data */ String | ArrayBuffer, 
+      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      Unit
+    ],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+    offlineProvider: IOfflineProvider,
+    useArrayBuffer: Boolean,
+    onError: js.UndefOr[scala.Nothing],
+    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
   def RequestFile(
     url: String,
@@ -260,6 +722,7 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  
   /**
     * Sets the cors behavior on a dom element. This will add the required Tools.CorsBehavior to the element.
     * @param url define the url we are trying
@@ -267,5 +730,11 @@ object FileTools extends js.Object {
     */
   def SetCorsBehavior(url: String, element: CrossOrigin): Unit = js.native
   def SetCorsBehavior(url: js.Array[String], element: CrossOrigin): Unit = js.native
+  
+  /**
+    * Removes unwanted characters from an url
+    * @param url defines the url to clean
+    * @returns the cleaned url
+    */
+  var _CleanUrl: js.Any = js.native
 }
-

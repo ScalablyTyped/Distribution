@@ -5,7 +5,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Rendering/index", "DepthRenderer")
 @js.native
@@ -20,15 +20,21 @@ class DepthRenderer protected ()
     */
   def this(scene: Scene) = this()
   def this(scene: Scene, `type`: Double) = this()
+  def this(scene: Scene, `type`: js.UndefOr[scala.Nothing], camera: Nullable[Camera]) = this()
   def this(scene: Scene, `type`: Double, camera: Nullable[Camera]) = this()
-  def this(scene: Scene, `type`: Double, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
+  def this(
+    scene: Scene,
+    `type`: js.UndefOr[scala.Nothing],
+    camera: js.UndefOr[Nullable[Camera]],
+    storeNonLinearDepth: Boolean
+  ) = this()
+  def this(scene: Scene, `type`: Double, camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Rendering/index", "DepthRenderer")
 @js.native
 object DepthRenderer extends js.Object {
+  
   /** @hidden */
   def _SceneComponentInitialization(scene: Scene): Unit = js.native
 }
-

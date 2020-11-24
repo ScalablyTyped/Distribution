@@ -3,12 +3,11 @@ package typings.chaiSpies.ChaiSpies
 import typings.chaiSpies.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Always extends js.Object {
-  @JSName("with")
-  var with_Original: AlwaysWith = js.native
+  
   /**
     * ####.always.with
     * Assert that every time the spy has been called the argument list contained the given arguments.
@@ -32,5 +31,6 @@ trait Always extends js.Object {
     i: js.UndefOr[js.Any],
     j: js.UndefOr[js.Any]
   ): Assertion = js.native
+  @JSName("with")
+  var with_Original: AlwaysWith = js.native
 }
-

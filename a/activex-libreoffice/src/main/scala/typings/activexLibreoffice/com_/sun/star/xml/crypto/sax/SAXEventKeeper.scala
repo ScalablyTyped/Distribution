@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link SAXEventKeeper} */
 @js.native
@@ -19,8 +19,8 @@ trait SAXEventKeeper
      with XSAXEventKeeperStatusChangeBroadcaster
      with XDocumentHandler
      with XInitialization
-
 object SAXEventKeeper {
+  
   @scala.inline
   def apply(
     CurrentBlockingNode: XXMLElementWrapper,
@@ -57,4 +57,3 @@ object SAXEventKeeper {
     __obj.asInstanceOf[SAXEventKeeper]
   }
 }
-

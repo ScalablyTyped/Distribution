@@ -2,9 +2,67 @@ package typings.kafkaNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kafkaNodeStrings {
+  
+  @scala.inline
+  def brokersChanged: brokersChanged = "brokersChanged".asInstanceOf[brokersChanged]
+  
+  @scala.inline
+  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def earliest: earliest = "earliest".asInstanceOf[earliest]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def latest: latest = "latest".asInstanceOf[latest]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def offsetOutOfRange: offsetOutOfRange = "offsetOutOfRange".asInstanceOf[offsetOutOfRange]
+  
+  @scala.inline
+  def range: range = "range".asInstanceOf[range]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def rebalanced: rebalanced = "rebalanced".asInstanceOf[rebalanced]
+  
+  @scala.inline
+  def rebalancing: rebalancing = "rebalancing".asInstanceOf[rebalancing]
+  
+  @scala.inline
+  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  
+  @scala.inline
+  def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
+  
+  @scala.inline
+  def socket_error: socket_error = "socket_error".asInstanceOf[socket_error]
+  
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @scala.inline
+  def zkReconnect: zkReconnect = "zkReconnect".asInstanceOf[zkReconnect]
+  
   @js.native
   sealed trait brokersChanged extends js.Object
   
@@ -61,44 +119,4 @@ object kafkaNodeStrings {
   
   @js.native
   sealed trait zkReconnect extends js.Object
-  
-  @scala.inline
-  def brokersChanged: brokersChanged = "brokersChanged".asInstanceOf[brokersChanged]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def earliest: earliest = "earliest".asInstanceOf[earliest]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def latest: latest = "latest".asInstanceOf[latest]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def offsetOutOfRange: offsetOutOfRange = "offsetOutOfRange".asInstanceOf[offsetOutOfRange]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def rebalanced: rebalanced = "rebalanced".asInstanceOf[rebalanced]
-  @scala.inline
-  def rebalancing: rebalancing = "rebalancing".asInstanceOf[rebalancing]
-  @scala.inline
-  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
-  @scala.inline
-  def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
-  @scala.inline
-  def socket_error: socket_error = "socket_error".asInstanceOf[socket_error]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
-  @scala.inline
-  def zkReconnect: zkReconnect = "zkReconnect".asInstanceOf[zkReconnect]
 }
-

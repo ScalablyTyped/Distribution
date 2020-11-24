@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Alerts")
 @js.native
 class ResourceAlerts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.alerts.delete
     * @desc Dismiss (delete) the specified alert from the publisher's AdSense
@@ -38,6 +40,7 @@ class ResourceAlerts protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceAlertsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAlertsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * adsense.alerts.list
     * @desc List the alerts for this AdSense account.
@@ -67,4 +70,3 @@ class ResourceAlerts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAlerts]
   ): Unit = js.native
 }
-

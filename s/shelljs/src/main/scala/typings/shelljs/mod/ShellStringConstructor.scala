@@ -3,7 +3,7 @@ package typings.shelljs.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShellStringConstructor
@@ -29,6 +29,7 @@ trait ShellStringConstructor
   * @return                A string-like object with special methods.
   */
 Instantiable1[(/* value */ js.Array[String]) | (/* value */ String), ShellArray | ShellString] {
+  
   /**
     * Wraps a string (or array) value. This has all the string (or array) methods,
     * but also exposes extra methods: `.to()`, `.toEnd()`, and all the pipe-able
@@ -46,4 +47,3 @@ Instantiable1[(/* value */ js.Array[String]) | (/* value */ String), ShellArray 
   def apply(value: String): ShellString = js.native
   def apply(value: js.Array[String]): ShellArray = js.native
 }
-

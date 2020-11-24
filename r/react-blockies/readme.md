@@ -12,7 +12,7 @@ Ethereum Style Identicons for React
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 13 |
-| # downloads        | 157357 |
+| # downloads        | 147139 |
 | # stars            | 0 |
 
 ## Links

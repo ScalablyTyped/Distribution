@@ -4,7 +4,7 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.WindowsStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input stream backed by a Windows file handle.
@@ -24,4 +24,3 @@ class Win32InputStream protected ()
   def this(handle: NativePointerValue) = this()
   def this(handle: NativePointerValue, options: WindowsStreamOptions) = this()
 }
-

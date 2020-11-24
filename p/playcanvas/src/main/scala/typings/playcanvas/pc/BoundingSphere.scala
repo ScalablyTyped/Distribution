@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new bounding sphere.
@@ -14,12 +14,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BoundingSphere extends js.Object {
+  
   /**
     * Test if a Bounding Sphere is overlapping, enveloping, or inside this Bounding Sphere.
     * @param sphere - Bounding Sphere to test.
     * @returns True if the Bounding Sphere is overlapping, enveloping, or inside this Bounding Sphere and false otherwise.
     */
   def intersectsBoundingSphere(sphere: BoundingSphere): Boolean = js.native
+  
   /**
     * Test if a ray intersects with the sphere.
     * @param ray - Ray to test against (direction must be normalized).
@@ -29,4 +31,3 @@ trait BoundingSphere extends js.Object {
   def intersectsRay(ray: Ray): Boolean = js.native
   def intersectsRay(ray: Ray, point: Vec3): Boolean = js.native
 }
-

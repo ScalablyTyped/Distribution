@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base mesh class.
@@ -45,11 +45,11 @@ class Mesh protected ()
     drawMode: Double
   ) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Mesh")
 @js.native
 object Mesh extends js.Object {
+  
   /**
     * The maximum number of vertices to consider batchable. Generally, the complexity
     * of the geometry.
@@ -59,4 +59,3 @@ object Mesh extends js.Object {
     */
   var BATCHABLE_SIZE: Double = js.native
 }
-

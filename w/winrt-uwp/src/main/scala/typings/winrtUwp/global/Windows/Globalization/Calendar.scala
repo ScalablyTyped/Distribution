@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Globalization
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manipulates the representation of a date and time within a given calendar and clock. */
 @JSGlobal("Windows.Globalization.Calendar")
@@ -32,4 +32,3 @@ class Calendar ()
     */
   def this(languages: IIterable[String], calendar: String, clock: String, timeZoneId: String) = this()
 }
-

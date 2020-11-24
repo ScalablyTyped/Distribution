@@ -15,35 +15,42 @@ import typings.devtoolsProtocol.mod.Protocol.Fetch.TakeResponseBodyAsStreamReque
 import typings.devtoolsProtocol.mod.Protocol.Fetch.TakeResponseBodyAsStreamResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FetchApi extends js.Object {
+  
   /**
     * Continues the request, optionally modifying some of its parameters.
     */
   def continueRequest(params: ContinueRequestRequest): js.Promise[Unit] = js.native
+  
   /**
     * Continues a request supplying authChallengeResponse following authRequired event.
     */
   def continueWithAuth(params: ContinueWithAuthRequest): js.Promise[Unit] = js.native
+  
   /**
     * Disables the fetch domain.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables issuing of requestPaused events. A request will be paused until client
     * calls one of failRequest, fulfillRequest or continueRequest/continueWithAuth.
     */
   def enable(params: EnableRequest): js.Promise[Unit] = js.native
+  
   /**
     * Causes the request to fail with specified reason.
     */
   def failRequest(params: FailRequestRequest): js.Promise[Unit] = js.native
+  
   /**
     * Provides response to the request.
     */
   def fulfillRequest(params: FulfillRequestRequest): js.Promise[Unit] = js.native
+  
   /**
     * Causes the body of the response to be received from the server and
     * returned as a single string. May only be issued for a request that
@@ -53,6 +60,7 @@ trait FetchApi extends js.Object {
     * results in an undefined behavior.
     */
   def getResponseBody(params: GetResponseBodyRequest): js.Promise[GetResponseBodyResponse] = js.native
+  
   /**
     * Issued when the domain is enabled with handleAuthRequests set to true.
     * The request is paused until client responds with continueWithAuth.
@@ -69,6 +77,7 @@ trait FetchApi extends js.Object {
     */
   @JSName("on")
   def on_requestPaused(event: requestPaused, listener: js.Function1[/* params */ RequestPausedEvent, Unit]): Unit = js.native
+  
   /**
     * Returns a handle to the stream representing the response body.
     * The request must be paused in the HeadersReceived stage.
@@ -83,4 +92,3 @@ trait FetchApi extends js.Object {
     */
   def takeResponseBodyAsStream(params: TakeResponseBodyAsStreamRequest): js.Promise[TakeResponseBodyAsStreamResponse] = js.native
 }
-

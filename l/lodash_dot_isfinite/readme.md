@@ -11,8 +11,8 @@ The lodash method `_.isFinite` exported as a module.
 | Full name          | lodash.isfinite |
 | Keywords           | lodash-modularized, isfinite |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 22361672 |
+| # dependents       | 49 |
+| # downloads        | 29690366 |
 | # stars            | 0 |
 
 ## Links

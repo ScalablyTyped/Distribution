@@ -4,11 +4,12 @@ import typings.std.ArrayBuffer
 import typings.wechatMiniprogram.ICloud.ICDNFilePathSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ICloud")
 @js.native
 object ICloud extends js.Object {
+  
   // === end ===
   // === API: CDN ===
   @js.native
@@ -26,6 +27,4 @@ object ICloud extends js.Object {
     extends typings.wechatMiniprogram.ICloud.CloudID {
     def this(cloudID: String) = this()
   }
-  
 }
-

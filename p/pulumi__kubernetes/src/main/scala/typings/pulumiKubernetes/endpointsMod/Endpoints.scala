@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/core/v1/endpoints", "Endpoints")
 @js.native
@@ -26,28 +26,32 @@ class Endpoints protected () extends CustomResource {
   def this(name: String, args: EndpointsArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: EndpointsArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[v1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints] = js.native
+  
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * The set of all endpoints is the union of all subsets. Addresses are placed into subsets according to the IPs they share. A single address with multiple ports, some of which are ready and some of which are not (because they come from different containers) will result in the address being displayed in different subsets for the different ports. No address will appear in both Addresses and NotReadyAddresses in the same subset. Sets of addresses and ports that comprise a service.
     */
   val subsets: Output_[js.Array[EndpointSubset]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/core/v1/endpoints", "Endpoints")
 @js.native
 object Endpoints extends js.Object {
+  
   /**
     * Get an existing Endpoints resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object Endpoints extends js.Object {
     */
   def get(name: String, id: Input[ID]): Endpoints = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): Endpoints = js.native
+  
   /**
     * Returns true if the given object is an instance of Endpoints.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/endpoints.Endpoints */ Boolean = js.native
 }
-

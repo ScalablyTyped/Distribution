@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.form.XFormsSupplier
 import typings.activexLibreoffice.com_.sun.star.view.PaperOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies a page for the actual draw pages to contain the drawings.
@@ -22,8 +22,8 @@ trait DrawPage
   extends GenericDrawPage
      with XMasterPageTarget
      with XFormsSupplier
-
 object DrawPage {
+  
   @scala.inline
   def apply(
     BorderBottom: Double,
@@ -75,4 +75,3 @@ object DrawPage {
     __obj.asInstanceOf[DrawPage]
   }
 }
-

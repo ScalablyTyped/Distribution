@@ -13,40 +13,12 @@ import typings.mangopay2NodejsSdk.mod.refund.CreatePayInRefund
 import typings.mangopay2NodejsSdk.mod.refund.RefundData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "PayIns")
 @js.native
 class PayIns () extends js.Object {
-  /**
-    * Create refund for pay-in object
-    * @param payInId
-    * @param refundData
-    * @param options
-    */
-  @JSName("createRefund")
-  var createRefund_Original: TwoArgsMethodOverload[String, CreatePayInRefund, RefundData] = js.native
-  /**
-    * Create new pay-in
-    * @param payIn
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: (MethodOverload[CreateCardDirectPayIn, CardDirectPayInData]) with (MethodOverload[CreateCardPreAuthorizedPayIn, CardPreAuthorizedPayInData]) with (MethodOverload[CreateCardWebPayIn, CardWebPayInData]) with (MethodOverload[CreateBankWireDirectPayIn, BankWireDirectPayInData]) = js.native
-  /**
-    * Gets list of Refunds for a PayIn
-    * @param payInId
-    * @param options
-    */
-  @JSName("getRefunds")
-  var getRefunds_Original: MethodOverload[String, js.Array[RefundData]] = js.native
-  /**
-    * Get pay-in
-    * @param payInId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, PayInData] = js.native
+  
   /**
     * Create new pay-in
     * @param payIn
@@ -186,6 +158,7 @@ class PayIns () extends js.Object {
     */
   def create(data: CreateCardWebPayIn, options: MethodOptionWithResponse): js.Promise[WithResponse[CardWebPayInData]] = js.native
   def create(data: CreateCardWebPayIn, options: MethodOptionWithoutResponse): js.Promise[CardWebPayInData] = js.native
+  
   /**
     * Create refund for pay-in object
     * @param payInId
@@ -225,6 +198,23 @@ class PayIns () extends js.Object {
   def createRefund(data: String, extra: CreatePayInRefund, options: MethodOptionWithResponse): js.Promise[WithResponse[RefundData]] = js.native
   def createRefund(data: String, extra: CreatePayInRefund, options: MethodOptionWithoutResponse): js.Promise[RefundData] = js.native
   /**
+    * Create refund for pay-in object
+    * @param payInId
+    * @param refundData
+    * @param options
+    */
+  @JSName("createRefund")
+  var createRefund_Original: TwoArgsMethodOverload[String, CreatePayInRefund, RefundData] = js.native
+  
+  /**
+    * Create new pay-in
+    * @param payIn
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: (MethodOverload[CreateCardDirectPayIn, CardDirectPayInData]) with (MethodOverload[CreateCardPreAuthorizedPayIn, CardPreAuthorizedPayInData]) with (MethodOverload[CreateCardWebPayIn, CardWebPayInData]) with (MethodOverload[CreateBankWireDirectPayIn, BankWireDirectPayInData]) = js.native
+  
+  /**
     * Get pay-in
     * @param payInId
     * @param options
@@ -258,6 +248,7 @@ class PayIns () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[PayInData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[PayInData] = js.native
+  
   /**
     * Gets list of Refunds for a PayIn
     * @param payInId
@@ -292,5 +283,19 @@ class PayIns () extends js.Object {
     */
   def getRefunds(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[RefundData]]] = js.native
   def getRefunds(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[RefundData]] = js.native
+  /**
+    * Gets list of Refunds for a PayIn
+    * @param payInId
+    * @param options
+    */
+  @JSName("getRefunds")
+  var getRefunds_Original: MethodOverload[String, js.Array[RefundData]] = js.native
+  
+  /**
+    * Get pay-in
+    * @param payInId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, PayInData] = js.native
 }
-

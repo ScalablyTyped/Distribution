@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.collapseMod.CollapseProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Collapse")
+@JSImport("reactstrap/lib", "Collapse")
 @js.native
-class Collapse[T] ()
+class Collapse ()
   extends Component[CollapseProps, js.Object, js.Any]
-

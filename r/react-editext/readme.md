@@ -10,9 +10,9 @@ Editable Text Component for React Applications
 | ------------------ | :-------------: |
 | Full name          | react-editext |
 | Keywords           | react, editable, editable text, editable content, contenteditable, content editable, inline edit |
-| # releases         | 35 |
+| # releases         | 45 |
 | # dependents       | 0 |
-| # downloads        | 15082 |
+| # downloads        | 51364 |
 | # stars            | 0 |
 
 ## Links

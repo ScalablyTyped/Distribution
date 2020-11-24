@@ -12,16 +12,19 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SketchViewModelRedoEvent extends js.Object {
+  
   var graphics: js.Array[Graphic] = js.native
+  
   var tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape = js.native
+  
   var `type`: redo = js.native
 }
-
 object SketchViewModelRedoEvent {
+  
   @scala.inline
   def apply(
     graphics: js.Array[Graphic],
@@ -32,26 +35,32 @@ object SketchViewModelRedoEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelRedoEvent]
   }
+  
   @scala.inline
   implicit class SketchViewModelRedoEventOps[Self <: SketchViewModelRedoEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGraphicsVarargs(value: Graphic*): Self = this.set("graphics", js.Array(value :_*))
+    
     @scala.inline
     def setGraphics(value: js.Array[Graphic]): Self = this.set("graphics", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTool(value: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape): Self = this.set("tool", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: redo): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

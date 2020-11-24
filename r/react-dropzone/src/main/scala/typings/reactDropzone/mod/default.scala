@@ -4,11 +4,11 @@ import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dropzone", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply(props: DropzoneProps with RefAttributes[DropzoneRef]): Element = js.native
 }
-

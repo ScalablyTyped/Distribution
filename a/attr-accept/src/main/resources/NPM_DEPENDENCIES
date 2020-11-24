@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "attr-accept" : "2.2.0"
+      "attr-accept" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "attr-accept" : "2.2.0"
+      "attr-accept" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

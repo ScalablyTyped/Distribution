@@ -6,12 +6,14 @@ import typings.braintreeWeb.coreMod.callback
 import typings.googlepay.google.payments.api.PaymentDataRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GooglePayment extends js.Object {
+  
   def create(options: GoogleMerchantId): Unit = js.native
-  def create(options: GoogleMerchantId, callback: callback): Unit = js.native
+  def create(options: GoogleMerchantId, callback: callback[_]): Unit = js.native
+  
   /**
     * Create a configuration object for use in the `loadPaymentData` method.
     *
@@ -87,6 +89,7 @@ trait GooglePayment extends js.Object {
     */
   def createPaymentDataRequest(): js.Promise[PaymentDataRequest] = js.native
   def createPaymentDataRequest(overrides: EmailRequired): js.Promise[PaymentDataRequest] = js.native
+  
   /**
     * // include https://pay.google.com/gp/p/js/pay.js in a script tag
     * // on your page to load the `google.payments.api.PaymentsClient` global object.
@@ -191,8 +194,9 @@ trait GooglePayment extends js.Object {
     */
   @JSName("create")
   def create_Promise(options: GoogleMerchantId): js.Promise[GooglePayment] = js.native
+  
   def parseResponse(response: js.Any): Unit = js.native
-  def parseResponse(response: js.Any, callback: callback): Unit = js.native
+  def parseResponse(response: js.Any, callback: callback[_]): Unit = js.native
   /**
     * Parse the response from the tokenization.
     * @example with callback
@@ -224,4 +228,3 @@ trait GooglePayment extends js.Object {
   @JSName("parseResponse")
   def parseResponse_Promise(response: js.Any): js.Promise[GooglePaymentTokenizePayload] = js.native
 }
-

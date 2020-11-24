@@ -2,9 +2,10 @@ package typings.expressRouters
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object expressRoutersMod {
+  
   type RouteConfigAlternative = org.scalablytyped.runtime.StringDictionary[
     (typings.express.mod.RequestHandler[
       typings.expressServeStaticCore.mod.ParamsDictionary, 

@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjRecord used for accessing and manipulating record objects.
@@ -21,6 +21,7 @@ trait nlobjRecord_
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * Commit the current line in a sublist.
     *
@@ -35,6 +36,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def commitLineItem(group: String): js.Any = js.native
+  
   /**
     * Return line number for 1st occurence of field value in a sublist column.
     *
@@ -55,6 +57,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def findLineItemMatrixValue(group: String, fldnam: String, column: js.Any, value: String): js.Any = js.native
+  
   /**
     * Return line number for 1st occurence of field value in a sublist column.
     *
@@ -73,6 +76,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def findLineItemValue(group: String, fldnam: String, value: String): js.Any = js.native
+  
   /**
     * Return an Array of all field names on the record.
     *
@@ -84,6 +88,7 @@ Instantiable0[js.Any] {
     * @since 2008.1
     */
   def getAllFields(): js.Array[String] = js.native
+  
   /**
     * Return an Array of all field names on a record for a particular sublist.
     *
@@ -97,6 +102,7 @@ Instantiable0[js.Any] {
     * @param group
     */
   def getAllLineItemFields(group: String): Unit = js.native
+  
   /**
     * Return the current value of a sublist field.
     *
@@ -115,6 +121,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getCurrentLineItemDateTimeValue(group: String, name: String, timezone: String): String = js.native
+  
   /**
     * Return the current value of a sublist matrix field.
     *
@@ -133,6 +140,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getCurrentLineItemMatrixValue(group: String, name: String, column: js.Any): String = js.native
+  
   /**
     * Return the current display value of a sublist field.
     *
@@ -149,6 +157,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getCurrentLineItemText(group: String, name: String): String = js.native
+  
   /**
     * Return the current value of a sublist field.
     *
@@ -165,6 +174,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getCurrentLineItemValue(group: String, name: String): String = js.native
+  
   /**
     * Return the value of a field on the current record on a page.
     * @restriction supported in client and user event scripts only.
@@ -178,6 +188,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getDateTimeValue(fldnam: String, timezone: String): String = js.native
+  
   /**
     * Return field metadata for field.
     *
@@ -192,6 +203,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getField(fldnam: String): js.Function0[Unit] = js.native
+  
   /**
     * Return the display value for a select field.
     * @restriction only supported for select fields
@@ -207,6 +219,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getFieldText(name: String): String = js.native
+  
   /**
     * Return the selected display values of a multi-select field as an Array.
     * @restriction only supported for multi-select fields
@@ -221,6 +234,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getFieldTexts(name: String): Unit = js.native
+  
   /**
     * Return the value of a field.
     *
@@ -235,6 +249,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getFieldValue(name: String): String = js.native
+  
   /**
     * Return the selected values of a multi-select field as an Array.
     *
@@ -248,6 +263,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getFieldValues(name: String): js.Array[String] = js.native
+  
   /**
     * Return the internalId of the record or NULL for new records.
     *
@@ -260,6 +276,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getId(): String | Double = js.native
+  
   /**
     * Return the number of lines in a sublist.
     *
@@ -272,6 +289,7 @@ Instantiable0[js.Any] {
     * @param group
     */
   def getLineItemCount(group: String): String | Double = js.native
+  
   /**
     * Return the value of a sublist field.
     *
@@ -290,6 +308,7 @@ Instantiable0[js.Any] {
     * @param timezone
     */
   def getLineItemDateTimeValue(group: String, name: String, line: js.Any, timezone: String): Unit = js.native
+  
   /**
     * Return metadata for sublist field.
     *
@@ -309,6 +328,7 @@ Instantiable0[js.Any] {
     */
   def getLineItemField(`type`: String, fldnam: String): js.Function0[Unit] = js.native
   def getLineItemField(`type`: String, fldnam: String, linenum: js.Any): js.Function0[Unit] = js.native
+  
   /**
     * Return metadata for sublist field.
     *
@@ -329,6 +349,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getLineItemMatrixField(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): js.Function0[Unit] = js.native
+  
   /**
     * Return the text value of a sublist field.
     *
@@ -347,6 +368,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getLineItemText(group: String, name: String, line: js.Any): String = js.native
+  
   /**
     * Return the value of a sublist field.
     *
@@ -363,6 +385,7 @@ Instantiable0[js.Any] {
     * @param line
     */
   def getLineItemValue(group: String, name: String, line: js.Any): String = js.native
+  
   /**
     * Return the number of columns for a matrix field.
     *
@@ -379,6 +402,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getMatrixCount(group: String, name: String): js.Any = js.native
+  
   /**
     * Return field metadata for field.
     *
@@ -397,6 +421,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getMatrixField(`type`: String, fldnam: String, column: js.Any): js.Function0[Unit] = js.native
+  
   /**
     * Get the value of a matrix header field.
     *
@@ -415,6 +440,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getMatrixValue(`type`: String, name: String, column: js.Any): String = js.native
+  
   /**
     * Return the recordType corresponding to this record.
     *
@@ -427,6 +453,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getRecordType(): String = js.native
+  
   /**
     * Return sublist metadata for sublist.
     *
@@ -441,6 +468,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getSubList(`type`: String): js.Function0[Unit] = js.native
+  
   /**
     * Insert a new line into a sublist.
     *
@@ -456,6 +484,7 @@ Instantiable0[js.Any] {
     */
   def insertLineItem(group: String): Unit = js.native
   def insertLineItem(group: String, line: js.Any): Unit = js.native
+  
   /**
     * Remove an existing line from a sublist.
     *
@@ -471,6 +500,7 @@ Instantiable0[js.Any] {
     */
   def removeLineItem(group: String): Unit = js.native
   def removeLineItem(group: String, line: js.Any): Unit = js.native
+  
   /**
     * Select an existing line in a sublist.
     *
@@ -487,6 +517,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def selectLineItem(group: String, line: js.Any): js.Any = js.native
+  
   /**
     * Insert and select a new line in a sublist.
     *
@@ -501,6 +532,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def selectNewLineItem(group: String): js.Any = js.native
+  
   /**
     * Set the current value of a sublist field.
     * @param {string}    group sublist name
@@ -520,6 +552,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setCurrentLineItemDateTimeValue(group: String, name: String, value: String, timezone: String): js.Any = js.native
+  
   /**
     * Set the current value of a sublist matrix field.
     *
@@ -540,6 +573,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setCurrentLineItemMatrixValue(group: String, name: String, column: js.Any, value: String): js.Any = js.native
+  
   def setCurrentLineItemText(group: String, name: String, value: String): Unit = js.native
   def setCurrentLineItemText(
     group: String,
@@ -560,6 +594,7 @@ Instantiable0[js.Any] {
   ): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  
   /**
     * Set the current value of a sublist field.
     * @param {string}    group sublist name
@@ -596,6 +631,7 @@ Instantiable0[js.Any] {
   ): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  
   /**
     * set the value of a field.
     *
@@ -613,6 +649,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setDateTimeValue(name: String, value: String, timezone: String): js.Any = js.native
+  
   /**
     * Set the value (via display value) of a select field.
     * @restriction only supported for select fields
@@ -630,6 +667,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setFieldText(name: String, text: String): js.Any = js.native
+  
   /**
     * Set the values (via display values) of a multi-select field.
     * @restriction only supported for multi-select fields
@@ -647,6 +685,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setFieldTexts(name: String, texts: js.Any): js.Any = js.native
+  
   /**
     * Set the value of a field.
     *
@@ -664,6 +703,7 @@ Instantiable0[js.Any] {
     */
   def setFieldValue(name: String, value: String): js.Any = js.native
   def setFieldValue(name: String, value: Double): js.Any = js.native
+  
   /**
     * Set the values of a multi-select field.
     *
@@ -678,6 +718,7 @@ Instantiable0[js.Any] {
     * @param values
     */
   def setFieldValues(name: String, values: js.Any): Unit = js.native
+  
   /**
     * Set the value of a sublist field.
     *
@@ -698,6 +739,7 @@ Instantiable0[js.Any] {
     * @param timezone
     */
   def setLineItemDateTimeValue(group: String, name: String, line: js.Any, value: js.Any, timezone: String): Unit = js.native
+  
   /**
     * Set the value of a sublist field.
     *
@@ -716,6 +758,7 @@ Instantiable0[js.Any] {
     * @param value
     */
   def setLineItemValue(group: String, name: String, line: js.Any, value: String): Unit = js.native
+  
   /**
     * Set the value of a matrix header field.
     *
@@ -737,4 +780,3 @@ Instantiable0[js.Any] {
     */
   def setMatrixValue(`type`: String, name: String, column: js.Any, value: String): js.Any = js.native
 }
-

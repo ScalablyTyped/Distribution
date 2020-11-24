@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MemPriority is similar to Priority node, but when a child returns a
@@ -21,4 +21,3 @@ class MemPriority ()
   extends typings.behavior3.b3.MemPriority {
   def this(hasChildren: `0`) = this()
 }
-

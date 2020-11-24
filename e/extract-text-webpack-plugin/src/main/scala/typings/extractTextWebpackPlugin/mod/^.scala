@@ -2,7 +2,7 @@ package typings.extractTextWebpackPlugin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use an `ExtractTextPlugin` instance and a loader returned by `extract` in concert to write files to disk instead of loading them into others.
@@ -15,10 +15,10 @@ class ^ protected () extends ExtractTextPlugin {
   def this(options: String) = this()
   def this(options: PluginOptions) = this()
 }
-
 @JSImport("extract-text-webpack-plugin", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Creates an extracting loader from an existing loader (static).
     * Use the resulting loader in `module.rules`/`module.loaders`.
@@ -40,4 +40,3 @@ object ^ extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
   ] = js.native
 }
-

@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging", JSImport.Namespace)
 @js.native
 object loggingMod extends js.Object {
+  
   def logging(options: Options): Logging = js.native
   def logging(options: typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Options): typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging = js.native
   @JSName("logging")
   def logging_v2(version: v2): Logging = js.native
   @JSName("logging")
   def logging_v2beta1(version: v2beta1): typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v2 protected () extends Logging {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v2
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Logging]
+            ]
     
     @js.native
     class v2beta1 protected ()
@@ -37,13 +45,6 @@ object loggingMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v2
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Logging]
-            ]
-    
     @js.native
     object v2beta1
       extends TopLevel[
@@ -53,11 +54,11 @@ object loggingMod extends js.Object {
                 typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object loggingMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

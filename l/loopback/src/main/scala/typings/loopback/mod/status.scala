@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("loopback", "status")
 @js.native
 object status extends js.Object {
+  
   /**
     * Return HTTP response with basic application status information:
     * date the application was started and uptime, in JSON format. For example:
@@ -22,4 +23,3 @@ object status extends js.Object {
     */
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

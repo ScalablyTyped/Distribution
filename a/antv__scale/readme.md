@@ -1,18 +1,18 @@
 
 # Scala.js typings for antv__scale
 
-Typings are for version 0.1.4
+Typings are for version 0.3.4
 
 ## Library description:
-The scale module for G2, F2.
+The scale module for G2
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @antv/scale |
-| Keywords           | antv, scale, g2, f2 |
-| # releases         | 33 |
-| # dependents       | 11 |
-| # downloads        | 1401597 |
+| Keywords           | - |
+| # releases         | 21 |
+| # dependents       | 14 |
+| # downloads        | 2458923 |
 | # stars            | 0 |
 
 ## Links

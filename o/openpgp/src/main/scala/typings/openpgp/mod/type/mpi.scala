@@ -4,7 +4,7 @@ import typings.openpgp.mod.Integer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implementation of type MPI ( {@link https://tools.ietf.org/html/rfc4880#section-3.2|RFC4880 3.2})
@@ -18,8 +18,10 @@ import scala.scalajs.js.annotation._
 @JSImport("openpgp", "type.mpi")
 @js.native
 object mpi extends js.Object {
+  
   @js.native
   class MPI () extends js.Object {
+    
     /**
       * Parsing function for a MPI ( {@link https://tools.ietf.org/html/rfc4880#section-3.2|RFC 4880 3.2}).
       * @param input Payload of MPI data
@@ -27,6 +29,7 @@ object mpi extends js.Object {
       * @returns Length of data read
       */
     def read(input: Uint8Array, endian: String): Integer = js.native
+    
     /**
       * Converts the mpi object to a bytes as specified in
       * {@link https://tools.ietf.org/html/rfc4880#section-3.2|RFC4880 3.2}
@@ -36,6 +39,4 @@ object mpi extends js.Object {
       */
     def write(endian: String, length: Integer): Uint8Array = js.native
   }
-  
 }
-

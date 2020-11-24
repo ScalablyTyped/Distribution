@@ -11,8 +11,8 @@ An Observable push stream
 | Full name          | zen-push |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 15509 |
+| # dependents       | 5 |
+| # downloads        | 1285302 |
 | # stars            | 0 |
 
 ## Links

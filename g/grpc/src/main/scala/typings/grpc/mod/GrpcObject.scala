@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GrpcObject
@@ -16,12 +16,11 @@ trait GrpcObject
         Client
       ]) | ProtobufMessage
     ]
-
 object GrpcObject {
+  
   @scala.inline
   def apply(): GrpcObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrpcObject]
   }
 }
-

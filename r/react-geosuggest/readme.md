@@ -10,9 +10,9 @@ A React autosuggest for the Google Maps Places API.
 | ------------------ | :-------------: |
 | Full name          | react-geosuggest |
 | Keywords           | react, react-component, google, autosuggest, places |
-| # releases         | 7 |
-| # dependents       | 31 |
-| # downloads        | 1655230 |
+| # releases         | 9 |
+| # dependents       | 34 |
+| # downloads        | 2093959 |
 | # stars            | 6 |
 
 ## Links

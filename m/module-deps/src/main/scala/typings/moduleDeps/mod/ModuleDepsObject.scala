@@ -15,20 +15,26 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ModuleDepsObject
   extends ReadableStream
      with WritableStream {
+  
   def _flush(): Unit = js.native
+  
   def _isTopLevel(file: String): Boolean = js.native
+  
   def _transform(row: String, enc: String, next: js.Function0[Unit]): Unit = js.native
   def _transform(row: InputRow, enc: String, next: js.Function0[Unit]): Unit = js.native
   def _transform(row: InputTransform, enc: String, next: js.Function0[Unit]): Unit = js.native
+  
   def getTransforms(file: String, pkg: PackageObject): ReadWriteStream = js.native
   def getTransforms(file: String, pkg: PackageObject, opts: Builtin): ReadWriteStream = js.native
+  
   def lookupPackage(file: String, cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], _]): Unit = js.native
+  
   /**
     * Every time a file is read, this event fires with the file path.
     */
@@ -49,11 +55,14 @@ trait ModuleDepsObject
     */
   @JSName("on")
   def on_transform(event: transform, listener: js.Function2[/* tr */ js.Any, /* file */ String, _]): this.type = js.native
+  
   def parseDeps(file: String, src: String, cb: js.Any): js.Array[_] = js.native
+  
   def readFile(file: String): ReadableStream = js.native
   def readFile(file: String, id: js.UndefOr[scala.Nothing], pkg: PackageObject): ReadableStream = js.native
   def readFile(file: String, id: js.Any): ReadableStream = js.native
   def readFile(file: String, id: js.Any, pkg: PackageObject): ReadableStream = js.native
+  
   def resolve(
     id: String,
     parent: Id,
@@ -65,6 +74,7 @@ trait ModuleDepsObject
       _
     ]
   ): js.Any = js.native
+  
   def walk(
     id: String,
     parent: Modules,
@@ -76,4 +86,3 @@ trait ModuleDepsObject
     cb: js.Function2[/* err */ Error | Null, /* file */ js.UndefOr[String], Unit]
   ): Unit = js.native
 }
-

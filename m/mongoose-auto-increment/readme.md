@@ -10,9 +10,9 @@ This plugin allows you to auto-increment any field on any mongoose schema that y
 | ------------------ | :-------------: |
 | Full name          | mongoose-auto-increment |
 | Keywords           | mongoose, plugin, auto-increment, auto, increment, automatic, autoincrement, auto_increment, autoinc, auto-inc, auto_inc, pureautoinc, mongoose-pureautoinc |
-| # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 376039 |
+| # releases         | 0 |
+| # dependents       | 52 |
+| # downloads        | 413735 |
 | # stars            | 28 |
 
 ## Links

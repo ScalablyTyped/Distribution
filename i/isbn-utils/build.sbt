@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "isbn-utils"
-version := "1.1-dt-20200515Z-ffd36c"
+version := "1.1-dt-20200515Z-f2c43b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,19 +2,19 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SelectionMode extends js.Object
-
 /**
   * This enum sets where the cursor (insertion point) in the document is after a selection.
-  * 
+  *
   * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.SelectionMode")
 @js.native
 object SelectionMode extends js.Object {
+  
   /**
     * The cursor is at the end of the selection (just after the end of the selected range).
     */
@@ -32,6 +32,4 @@ object SelectionMode extends js.Object {
     */
   @js.native
   sealed trait start extends SelectionMode
-  
 }
-

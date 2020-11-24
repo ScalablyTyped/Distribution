@@ -7,11 +7,12 @@ import typings.typescript.mod.WatchOfConfigFile
 import typings.typescript.mod.WatchOfFilesAndCompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createWatchProgram")
 @js.native
 object createWatchProgram extends js.Object {
+  
   /**
     * Creates the watch from the host for config file
     */
@@ -21,4 +22,3 @@ object createWatchProgram extends js.Object {
     */
   def apply[T /* <: BuilderProgram */](host: WatchCompilerHostOfFilesAndCompilerOptions[T]): WatchOfFilesAndCompilerOptions[T] = js.native
 }
-

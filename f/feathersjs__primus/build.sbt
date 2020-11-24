@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "feathersjs__primus"
-version := "3.0-dt-20200515Z-517872"
+version := "3.0-dt-20200925Z-631d90"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,13 +10,13 @@ Redux DevTools with hot reloading and time travel
 | ------------------ | :-------------: |
 | Full name          | redux-devtools |
 | Keywords           | redux, devtools, flux, hot reloading, time travel, live edit |
-| # releases         | 4 |
-| # dependents       | 173 |
-| # downloads        | 5739909 |
+| # releases         | 5 |
+| # dependents       | 180 |
+| # downloads        | 6558933 |
 | # stars            | 32 |
 
 ## Links
-- [Homepage](https://github.com/reduxjs/redux-devtools)
+- [Homepage](https://github.com/reduxjs/redux-devtools/tree/master/packages/redux-devtools)
 - [Bugs](https://github.com/reduxjs/redux-devtools/issues)
 - [Repository](https://github.com/reduxjs/redux-devtools)
 - [Npm](https://www.npmjs.com/package/redux-devtools)

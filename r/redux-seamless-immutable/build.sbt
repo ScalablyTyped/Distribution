@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-seamless-immutable"
-version := "0.4-dt-20200515Z-993428"
+version := "0.4-dt-20200515Z-fa0330"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.5-fccb0f",
-  "org.scalablytyped" %%% "seamless-immutable" % "7.1-dt-20200515Z-66c231",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "redux" % "4.0.5-1401a8",
+  "org.scalablytyped" %%% "seamless-immutable" % "7.1-dt-20201103Z-6a6fbe",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Graphics object is a way to draw primitive shapes to your game. Primitives include forms of geometry, such as
@@ -59,14 +59,13 @@ class Graphics protected ()
   def this(scene: Scene) = this()
   def this(scene: Scene, options: Options) = this()
 }
-
 /* static members */
 @JSImport("phaser", "GameObjects.Graphics")
 @js.native
 object Graphics extends js.Object {
+  
   /**
     * A Camera used specifically by the Graphics system for rendering to textures.
     */
   var TargetCamera: Camera = js.native
 }
-

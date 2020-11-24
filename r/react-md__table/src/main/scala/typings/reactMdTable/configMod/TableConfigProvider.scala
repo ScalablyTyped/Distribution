@@ -5,9 +5,8 @@ import typings.react.mod.Provider
 import typings.reactMdTable.anon.RequiredTableConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/table/types/config", "TableConfigProvider")
 @js.native
 object TableConfigProvider extends TopLevel[Provider[RequiredTableConfig]]
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-badge"
-version := "0.8-dt-20200515Z-4d3e88"
+version := "0.8-dt-20200515Z-d06729"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

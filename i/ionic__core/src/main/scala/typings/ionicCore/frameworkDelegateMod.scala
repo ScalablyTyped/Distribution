@@ -7,11 +7,12 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/utils/framework-delegate", JSImport.Namespace)
 @js.native
 object frameworkDelegateMod extends js.Object {
+  
   def attachComponent(delegate: js.UndefOr[scala.Nothing], container: Element, component: ComponentRef): js.Promise[HTMLElement] = js.native
   def attachComponent(
     delegate: js.UndefOr[scala.Nothing],
@@ -54,9 +55,9 @@ object frameworkDelegateMod extends js.Object {
     cssClasses: js.Array[String],
     componentProps: StringDictionary[js.Any]
   ): js.Promise[HTMLElement] = js.native
+  
   def detachComponent(): js.Promise[Unit] = js.native
   def detachComponent(delegate: js.UndefOr[scala.Nothing], element: HTMLElement): js.Promise[Unit] = js.native
   def detachComponent(delegate: FrameworkDelegate): js.Promise[Unit] = js.native
   def detachComponent(delegate: FrameworkDelegate, element: HTMLElement): js.Promise[Unit] = js.native
 }
-

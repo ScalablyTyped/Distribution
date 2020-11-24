@@ -3,7 +3,7 @@ package typings.angularMeteor.mod.meteor
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that connects a Meteor Object to an AngularJS scope variable.
@@ -17,15 +17,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AngularMeteorObject[T] extends js.Object {
+  
   /**
     * Returns a copy of the AngularMeteorObject with all the AngularMeteor-specific internal properties removed.
     * The returned object is then safe to use as a parameter for method calls, or anywhere else where the data needs to be converted to JSON.
     */
   def getRawObject(): T = js.native
+  
   /**
     * Reset the current value of the object to the one in the server.
     */
   def reset(): Unit = js.native
+  
   /**
     * @param [doc] - The doc to save to the Meteor Object. If nothing is passed, the method saves everything in the AngularMeteorObject as is.
     *              - Unchanged properties will be overridden with their existing values, which may trigger hooks.
@@ -35,6 +38,7 @@ trait AngularMeteorObject[T] extends js.Object {
     */
   def save(): IPromise[Double] = js.native
   def save(doc: T): IPromise[Double] = js.native
+  
   /**
     * A shorten (Syntactic sugar) function for the $meteor.subscribe function.
     * Takes only one parameter and not returns a promise like $meteor.subscribe does.
@@ -43,4 +47,3 @@ trait AngularMeteorObject[T] extends js.Object {
     */
   def subscribe(subscriptionName: String): AngularMeteorObject[T] = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.atlassianConnectJs.AP.navigator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NavigatorTargetConfluence extends js.Object
-
 @JSGlobal("AP.navigator.NavigatorTargetConfluence")
 @js.native
 object NavigatorTargetConfluence extends js.Object {
+  
   /**
     * The module page within a specific add-on. Takes an `addonKey` and a `moduleKey` to identify the correct module.
     */
@@ -63,6 +63,4 @@ object NavigatorTargetConfluence extends js.Object {
     */
   @js.native
   sealed trait userProfile extends NavigatorTargetConfluence
-  
 }
-

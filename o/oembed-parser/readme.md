@@ -1,7 +1,7 @@
 
 # Scala.js typings for oembed-parser
 
-Typings are for version 1.3.9
+Typings are for version 1.4.3
 
 ## Library description:
 Get oEmbed data from given URL.
@@ -11,8 +11,8 @@ Get oEmbed data from given URL.
 | Full name          | oembed-parser |
 | Keywords           | oembed, extractor, parser, util |
 | # releases         | 16 |
-| # dependents       | 9 |
-| # downloads        | 206019 |
+| # dependents       | 10 |
+| # downloads        | 333470 |
 | # stars            | 0 |
 
 ## Links

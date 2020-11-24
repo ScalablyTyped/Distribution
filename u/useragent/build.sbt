@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "useragent"
-version := "v2.1-dt-20200515Z-4003dd"
+version := "2.3-dt-20201109Z-e6498d"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

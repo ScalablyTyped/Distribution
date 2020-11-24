@@ -1,7 +1,7 @@
 
 # Scala.js typings for ink-spinner
 
-Typings are for version 3.1.0
+Typings are for version 3.0
 
 ## Library description:
 Spinner component for Ink
@@ -10,9 +10,9 @@ Spinner component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-spinner |
 | Keywords           | ink, progress, spinner, loader, loading, component, jsx, react |
-| # releases         | 4 |
-| # dependents       | 93 |
-| # downloads        | 5690685 |
+| # releases         | 7 |
+| # dependents       | 140 |
+| # downloads        | 14786322 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ Spinner component for Ink
 
 
 ## Note
-This library has been generated from typescript code from first party type definitions.
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

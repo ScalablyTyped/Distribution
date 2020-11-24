@@ -2,11 +2,12 @@ package typings.nuclearJs.mod.Immutable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nuclear-js", "Immutable.update")
 @js.native
 object update extends js.Object {
+  
   def apply[V](collection: js.Array[V], key: Double, updater: js.Function1[/* value */ V, V]): js.Array[V] = js.native
   def apply[V, NSV](
     collection: js.Array[V],
@@ -32,4 +33,3 @@ object update extends js.Object {
     ]
   ): C = js.native
 }
-

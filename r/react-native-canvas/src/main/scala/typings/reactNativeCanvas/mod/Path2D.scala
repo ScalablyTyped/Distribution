@@ -3,7 +3,7 @@ package typings.reactNativeCanvas.mod
 import typings.reactNativeCanvas.anon.A
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-canvas", "Path2D")
 @js.native
@@ -12,6 +12,10 @@ class Path2D protected () extends js.Object {
     canvas: Canvas,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ) = this()
+  
+  def addPath(path: Path2D): Unit = js.native
+  def addPath(path: Path2D, transform: A): Unit = js.native
+  
   var arc: js.Function6[
     /* x */ Double, 
     /* y */ Double, 
@@ -21,7 +25,9 @@ class Path2D protected () extends js.Object {
     /* counterClockwise */ js.UndefOr[Boolean], 
     Unit
   ] = js.native
+  
   var arcTo: js.Function5[/* x1 */ Double, /* y1 */ Double, /* x2 */ Double, /* y2 */ Double, /* r */ Double, Unit] = js.native
+  
   var bezierCurveTo: js.Function6[
     /* cp1x */ Double, 
     /* cp1y */ Double, 
@@ -31,7 +37,9 @@ class Path2D protected () extends js.Object {
     /* y */ Double, 
     Unit
   ] = js.native
+  
   var closePath: js.Function0[Unit] = js.native
+  
   var ellipse: js.Function8[
     /* x */ Double, 
     /* y */ Double, 
@@ -43,11 +51,12 @@ class Path2D protected () extends js.Object {
     /* anticlockwise */ js.UndefOr[Boolean], 
     Unit
   ] = js.native
+  
   var lineTo: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  
   var moveTo: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  
   var quadraticCurveTo: js.Function4[/* cpx */ Double, /* cpy */ Double, /* x */ Double, /* y */ Double, Unit] = js.native
+  
   var rect: js.Function4[/* x */ Double, /* y */ Double, /* width */ Double, /* height */ Double, Unit] = js.native
-  def addPath(path: Path2D): Unit = js.native
-  def addPath(path: Path2D, transform: A): Unit = js.native
 }
-

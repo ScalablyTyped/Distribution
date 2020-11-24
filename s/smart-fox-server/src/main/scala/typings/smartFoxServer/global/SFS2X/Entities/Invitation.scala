@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Entities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Invitation
@@ -10,9 +10,20 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SFS2X.Entities.Invitation")
 @js.native
 object Invitation extends js.Object {
+  
   @js.native
   class InvitationReply ()
     extends typings.smartFoxServer.SFS2X.Entities.Invitation.InvitationReply
+  /* static members */
+  @js.native
+  object InvitationReply extends js.Object {
+    
+    /** @type {number} Invitation is accepted. */
+    var ACCEPT: Double = js.native
+    
+    /** @type {number} Invitation is refused. */
+    var REFUSE: Double = js.native
+  }
   
   @js.native
   class SFSInvitation protected ()
@@ -31,15 +42,4 @@ object Invitation extends js.Object {
       params: js.Object
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object InvitationReply extends js.Object {
-    /** @type {number} Invitation is accepted. */
-    var ACCEPT: Double = js.native
-    /** @type {number} Invitation is refused. */
-    var REFUSE: Double = js.native
-  }
-  
 }
-

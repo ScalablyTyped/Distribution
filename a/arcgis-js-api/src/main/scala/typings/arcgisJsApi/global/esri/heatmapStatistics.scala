@@ -5,7 +5,7 @@ import typings.arcgisJsApi.esri.HeatmapStatisticsResult
 import typings.arcgisJsApi.esri.heatmapStatisticsHeatmapStatisticsParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.heatmapStatistics")
 @js.native
@@ -16,4 +16,3 @@ object heatmapStatistics
         js.Promise[HeatmapStatisticsResult]
       ]
     ]
-

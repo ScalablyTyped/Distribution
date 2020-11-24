@@ -12,32 +12,27 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/texttospeech", JSImport.Namespace)
 @js.native
 object texttospeechMod extends js.Object {
+  
   def texttospeech(options: Options): Texttospeech = js.native
   def texttospeech(options: typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Options): typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech = js.native
   @JSName("texttospeech")
   def texttospeech_v1(version: v1): Texttospeech = js.native
   @JSName("texttospeech")
   def texttospeech_v1beta1(version: v1beta1): typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Texttospeech {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta1 protected ()
-      extends typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -49,6 +44,12 @@ object texttospeechMod extends js.Object {
             ]
     
     @js.native
+    class v1beta1 protected ()
+      extends typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta1
       extends TopLevel[
               Instantiable2[
@@ -57,11 +58,11 @@ object texttospeechMod extends js.Object {
                 typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,8 +90,5 @@ object texttospeechMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

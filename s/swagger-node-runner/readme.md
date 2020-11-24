@@ -11,8 +11,8 @@ Swagger loader and middleware utilities
 | Full name          | swagger-node-runner |
 | Keywords           | swagger, api, apis, swagger-connect, swagger-express, swagger-restify, swagger-hapi, swagger-sails |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 669563 |
+| # dependents       | 13 |
+| # downloads        | 644269 |
 | # stars            | 1 |
 
 ## Links

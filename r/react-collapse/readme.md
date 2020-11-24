@@ -10,9 +10,9 @@ Component-wrapper for collapse animation for elements with variable (and dynamic
 | ------------------ | :-------------: |
 | Full name          | react-collapse |
 | Keywords           | component, react-component, react, collapse, slide-down, slide-up |
-| # releases         | 4 |
-| # dependents       | 64 |
-| # downloads        | 3241926 |
+| # releases         | 2 |
+| # dependents       | 87 |
+| # downloads        | 3709019 |
 | # stars            | 8 |
 
 ## Links

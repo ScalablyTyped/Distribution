@@ -4,19 +4,19 @@
 Typings are for version 10.0.27
 
 ## Library description:
-a function to serialize css and object styless
+The Next Generation of CSS-in-JS.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @emotion/css |
-| Keywords           | - |
-| # releases         | 56 |
-| # dependents       | 36 |
-| # downloads        | 52545208 |
+| Keywords           | styles, emotion, react, css, css-in-js |
+| # releases         | 30 |
+| # dependents       | 68 |
+| # downloads        | 129670339 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://emotion.sh)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
 - [Repository](https://github.com/emotion-js/emotion)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fcss)

@@ -2,7 +2,7 @@ package typings.tstl.tstlModuleMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "Stack")
 @js.native
@@ -18,4 +18,3 @@ class Stack[T] ()
     */
   def this(obj: typings.tstl.stackMod.Stack[T]) = this()
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects$Operations")
 @js.native
 class ResourceProjectsOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * ml.projects.operations.cancel
     * @desc Starts asynchronous cancellation on a long-running operation.  The
@@ -52,6 +52,9 @@ class ResourceProjectsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * ml.projects.operations.get
     * @desc Gets the latest state of a long-running operation.  Clients can use
@@ -85,6 +88,7 @@ class ResourceProjectsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * ml.projects.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -128,4 +132,3 @@ class ResourceProjectsOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleLongrunningListOperationsResponse]
   ): Unit = js.native
 }
-

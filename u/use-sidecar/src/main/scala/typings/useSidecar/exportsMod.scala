@@ -5,11 +5,11 @@ import typings.useSidecar.typesMod.SideCarComponent
 import typings.useSidecar.typesMod.SideCarMedium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("use-sidecar/dist/es5/exports", JSImport.Namespace)
 @js.native
 object exportsMod extends js.Object {
+  
   def exportSidecar[T](medium: SideCarMedium, exported: ComponentType[T]): SideCarComponent[T] = js.native
 }
-

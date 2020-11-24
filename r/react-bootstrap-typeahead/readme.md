@@ -10,13 +10,13 @@ React typeahead with Bootstrap styling
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-typeahead |
 | Keywords           | auto complete, auto suggest, auto-complete, auto-suggest, autocomplete, autosuggest, bootstrap, bootstrap tokenizer, bootstrap typeahead, bootstrap-tokenizer, bootstrap-typeahead, react, react autocomplete, react autosuggest, react tokenizer, react typeahead, react-autocomplete, react-autosuggest, react-bootstrap, react-bootstrap-tokenizer, react-bootstrap-typeahead, react-tokenizer, react-typeahead, tokenizer, typeahead |
-| # releases         | 55 |
-| # dependents       | 65 |
-| # downloads        | 2380634 |
+| # releases         | 42 |
+| # dependents       | 75 |
+| # downloads        | 3427314 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/ericgio/react-bootstrap-typeahead#readme)
+- [Homepage](http://ericgio.github.io/react-bootstrap-typeahead/)
 - [Bugs](https://github.com/ericgio/react-bootstrap-typeahead/issues)
 - [Repository](https://github.com/ericgio/react-bootstrap-typeahead)
 - [Npm](https://www.npmjs.com/package/react-bootstrap-typeahead)

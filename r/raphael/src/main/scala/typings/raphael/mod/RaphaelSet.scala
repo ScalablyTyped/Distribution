@@ -3,7 +3,7 @@ package typings.raphael.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
@@ -14,10 +14,12 @@ trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
       ]
     ]
      with RaphaelBaseElement[TTechnology] {
+  
   /**
     * Removes all elements from the set
     */
   def clear(): Unit = js.native
+  
   /**
     * Removes given element from the set
     * @param element An element to remove from the set.
@@ -29,6 +31,7 @@ trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ]
   ): Boolean = js.native
+  
   /**
     * Executes given function for each element in the set.
     *
@@ -60,6 +63,7 @@ trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
     ],
     thisArg: ThisContext
   ): this.type = js.native
+  
   /**
     * Removes last element and returns it.
     * @return The last element in this set, if any.
@@ -70,6 +74,7 @@ trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ]
   ] = js.native
+  
   /**
     * Adds each argument to the current set.
     * @return this set for chaining.
@@ -80,6 +85,7 @@ trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ])*
   ): this.type = js.native
+  
   /**
     * Removes given element from the set.
     * @param index Position of the deletion
@@ -96,4 +102,3 @@ trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
     ])*
   ): RaphaelSet[TTechnology] = js.native
 }
-

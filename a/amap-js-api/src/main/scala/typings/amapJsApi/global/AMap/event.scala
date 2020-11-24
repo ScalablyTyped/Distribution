@@ -5,11 +5,12 @@ import typings.amapJsApi.amapJsApiNumbers.`0`
 import typings.amapJsApi.amapJsApiNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.event")
 @js.native
 object event extends js.Object {
+  
   /**
     * 注册DOM对象事件
     * @param instance 需注册事件的DOM对象
@@ -38,6 +39,7 @@ object event extends js.Object {
     ],
     context: C
   ): EventListener[`0`] = js.native
+  
   /**
     * 给对象注册事件
     * @param instance 需注册事件的对象
@@ -58,6 +60,7 @@ object event extends js.Object {
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
     context: C
   ): EventListener[`1`] = js.native
+  
   /**
     * 给对象注册一次性事件
     * @param instance 需注册事件的对象
@@ -78,11 +81,13 @@ object event extends js.Object {
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
     context: C
   ): EventListener[`1`] = js.native
+  
   /**
     * 删除事件
     * @param listener 侦听器
     */
   def removeListener(listener: EventListener[`0` | `1`]): Unit = js.native
+  
   /**
     * 触发非DOM事件
     * @param instance 触发对象
@@ -92,4 +97,3 @@ object event extends js.Object {
   def trigger(instance: typings.amapJsApi.AMap.EventEmitter, eventName: String): Unit = js.native
   def trigger(instance: typings.amapJsApi.AMap.EventEmitter, eventName: String, data: js.Any): Unit = js.native
 }
-

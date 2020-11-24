@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Timeseries")
 @js.native
 class ResourceProjectsTimeseries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.timeSeries.create
     * @desc Creates or adds data to one or more time series. The response is
@@ -92,6 +94,7 @@ class ResourceProjectsTimeseries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.timeSeries.list
     * @desc Lists time series that match a filter. This method does not require
@@ -189,4 +192,3 @@ class ResourceProjectsTimeseries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListTimeSeriesResponse]
   ): Unit = js.native
 }
-

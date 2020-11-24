@@ -10,9 +10,9 @@ HTTP Accept-* headers parsing
 | ------------------ | :-------------: |
 | Full name          | @hapi/accept |
 | Keywords           | HTTP, header, accept, accept-encoding |
-| # releases         | 6 |
-| # dependents       | 9 |
-| # downloads        | 3057972 |
+| # releases         | 11 |
+| # dependents       | 15 |
+| # downloads        | 10554996 |
 | # stars            | 0 |
 
 ## Links

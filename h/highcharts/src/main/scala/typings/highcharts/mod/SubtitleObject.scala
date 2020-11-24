@@ -2,10 +2,11 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SubtitleObject extends SVGElement {
+  
   /**
     * Modify options for the subtitle.
     *
@@ -20,4 +21,3 @@ trait SubtitleObject extends SVGElement {
   def update(subtitleOptions: SubtitleOptions): Unit = js.native
   def update(subtitleOptions: SubtitleOptions, redraw: Boolean): Unit = js.native
 }
-

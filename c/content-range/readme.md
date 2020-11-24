@@ -10,15 +10,15 @@ Content-range header formatter.
 | ------------------ | :-------------: |
 | Full name          | content-range |
 | Keywords           | content-range, header, formatter, parser |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 82671 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 176290 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/neoziro/content-range)
-- [Bugs](https://github.com/neoziro/content-range/issues)
-- [Repository](https://github.com/neoziro/content-range)
+- [Homepage](https://github.com/gregberge/react-merge-refs#readme)
+- [Bugs](https://github.com/gregberge/react-merge-refs/issues)
+- [Repository](https://github.com/gregberge/react-merge-refs)
 - [Npm](https://www.npmjs.com/package/content-range)
     
 

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects$Jobs")
 @js.native
 class ResourceProjectsJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * ml.projects.jobs.cancel
     * @desc Cancels a running job.
@@ -45,6 +45,9 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * ml.projects.jobs.create
     * @desc Creates a training or a batch prediction job.
@@ -74,6 +77,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Job]
   ): Unit = js.native
+  
   /**
     * ml.projects.jobs.get
     * @desc Describes a job.
@@ -102,6 +106,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Job]
   ): Unit = js.native
+  
   /**
     * ml.projects.jobs.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -134,6 +139,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * ml.projects.jobs.list
     * @desc Lists the jobs in the project.  If there are no jobs that match the
@@ -169,6 +175,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListJobsResponse]
   ): Unit = js.native
+  
   /**
     * ml.projects.jobs.patch
     * @desc Updates a specific job resource.  Currently the only supported
@@ -200,6 +207,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Job]
   ): Unit = js.native
+  
   /**
     * ml.projects.jobs.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -233,6 +241,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * ml.projects.jobs.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -270,4 +279,3 @@ class ResourceProjectsJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleIamV1TestIamPermissionsResponse]
   ): Unit = js.native
 }
-

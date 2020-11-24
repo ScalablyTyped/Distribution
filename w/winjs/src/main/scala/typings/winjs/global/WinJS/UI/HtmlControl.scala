@@ -3,7 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
@@ -23,11 +23,11 @@ class HtmlControl ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.HtmlControl")
 @js.native
 object HtmlControl extends js.Object {
+  
   //#endregion Constructors
   //#region Properties
   /**
@@ -35,4 +35,3 @@ object HtmlControl extends js.Object {
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

@@ -2,17 +2,11 @@ package typings.activexWord.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TablesOfAuthorities extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  var Format: WdToaFormat = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.TablesOfAuthorities_typekey")
-  var WordDotTablesOfAuthorities_typekey: TablesOfAuthorities = js.native
+  
   def Add(
     Range: Range,
     Category: js.UndefOr[js.Any],
@@ -26,7 +20,17 @@ trait TablesOfAuthorities extends js.Object {
     IncludeCategoryHeader: js.UndefOr[js.Any],
     PageNumberSeparator: js.UndefOr[js.Any]
   ): TableOfAuthorities = js.native
+  
+  val Application: typings.activexWord.Word.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  var Format: WdToaFormat = js.native
+  
   def Item(Index: Double): TableOfAuthorities = js.native
+  
   def MarkAllCitations(ShortCitation: String): Unit = js.native
   def MarkAllCitations(
     ShortCitation: String,
@@ -50,6 +54,7 @@ trait TablesOfAuthorities extends js.Object {
   ): Unit = js.native
   def MarkAllCitations(ShortCitation: String, LongCitation: js.Any, LongCitationAutoText: js.Any): Unit = js.native
   def MarkAllCitations(ShortCitation: String, LongCitation: js.Any, LongCitationAutoText: js.Any, Category: js.Any): Unit = js.native
+  
   def MarkCitation(Range: Range, ShortCitation: String): Field = js.native
   def MarkCitation(
     Range: Range,
@@ -87,6 +92,11 @@ trait TablesOfAuthorities extends js.Object {
     LongCitationAutoText: js.Any,
     Category: js.Any
   ): Field = js.native
+  
   def NextCitation(ShortCitation: String): Unit = js.native
+  
+  val Parent: js.Any = js.native
+  
+  @JSName("Word.TablesOfAuthorities_typekey")
+  var WordDotTablesOfAuthorities_typekey: TablesOfAuthorities = js.native
 }
-

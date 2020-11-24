@@ -2,13 +2,14 @@ package typings.rcEasyui.mod.TimeSpinner.propTypes
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "TimeSpinner.propTypes.textFormatter")
 @js.native
 object textFormatter extends js.Object {
+  
+  def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+  
   // Circular reference from rc_easyui.TimeSpinner.propTypes.textFormatter
   val isRequired: js.Any = js.native
-  def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
 }
-

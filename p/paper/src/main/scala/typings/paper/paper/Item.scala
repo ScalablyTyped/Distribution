@@ -3,7 +3,7 @@ package typings.paper.paper
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Item type allows you to access and modify the items in
@@ -15,367 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Item extends js.Object {
-  /** 
-    * Controls whether the transformations applied to the item (e.g. through
-    * {@link #transform}, {@link #rotate},
-    * {@link #scale}, etc.) are stored in its {@link #matrix} property,
-    * or whether they are directly applied to its contents or children (passed
-    * on to the segments in {@link Path} items, the children of {@link Group}
-    * items, etc.).
-    */
-  var applyMatrix: Boolean = js.native
-  /** 
-    * The blend mode with which the item is composited onto the canvas. Both
-    * the standard canvas compositing modes, as well as the new CSS blend modes
-    * are supported. If blend-modes cannot be rendered natively, they are
-    * emulated. Be aware that emulation can have an impact on performance.
-    */
-  var blendMode: String = js.native
-  /** 
-    * The bounding rectangle of the item excluding stroke width.
-    */
-  var bounds: Rectangle = js.native
-  /** 
-    * The children items contained within this item. Items that define a
-    * {@link #name} can also be accessed by name.
-    * 
-    * <b>Please note:</b> The children array should not be modified directly
-    * using array functions. To remove single items from the children list, use
-    * {@link Item#remove}, to remove all items from the children list, use
-    * {@link Item#removeChildren}. To add items to the children list, use
-    * {@link Item#addChild} or {@link Item#insertChild}.
-    */
-  var children: js.Array[Item] = js.native
-  /** 
-    * The class name of the item as a string.
-    */
-  var className: String = js.native
-  /** 
-    * Specifies whether the item defines a clip mask. This can only be set on
-    * paths and compound paths, and only if the item is already contained
-    * within a clipping group.
-    */
-  var clipMask: Boolean = js.native
-  /** 
-    * Specifies an array containing the dash and gap lengths of the stroke.
-    */
-  var dashArray: js.Array[Double] = js.native
-  /** 
-    * The dash offset of the stroke.
-    */
-  var dashOffset: Double = js.native
-  /** 
-    * A plain javascript object which can be used to store
-    * arbitrary data on the item.
-    */
-  var data: js.Any = js.native
-  /** 
-    * The fill color of the item.
-    */
-  var fillColor: Color | Null = js.native
-  /** 
-    * The fill-rule with which the shape gets filled. Please note that only
-    * modern browsers support fill-rules other than `'nonzero'`.
-    */
-  var fillRule: String = js.native
-  /** 
-    * The first item contained within this item. This is a shortcut for
-    * accessing `item.children[0]`.
-    */
-  val firstChild: Item = js.native
-  /** 
-    * The item's global transformation matrix in relation to the global project
-    * coordinate space. Note that the view's transformations resulting from
-    * zooming and panning are not factored in.
-    */
-  val globalMatrix: Matrix = js.native
-  /** 
-    * The bounding rectangle of the item including handles.
-    */
-  var handleBounds: Rectangle = js.native
-  /** 
-    * The unique id of the item.
-    */
-  val id: Double = js.native
-  /** 
-    * The index of this item within the list of its parent's children.
-    */
-  val index: Double = js.native
-  /** 
-    * The bounding rectangle of the item without any matrix transformations.
-    * 
-    * Typical use case would be drawing a frame around the object where you
-    * want to draw something of the same size, position, rotation, and scaling,
-    * like a selection frame.
-    */
-  var internalBounds: Rectangle = js.native
-  /** 
-    * The last item contained within this item.This is a shortcut for
-    * accessing `item.children[item.children.length - 1]`.
-    */
-  val lastChild: Item = js.native
-  /** 
-    * The layer that this item is contained within.
-    */
-  val layer: Layer = js.native
-  /** 
-    * Specifies whether the item is locked. When set to `true`, item
-    * interactions with the mouse are disabled.
-    */
-  var locked: Boolean = js.native
-  /** 
-    * The item's transformation matrix, defining position and dimensions in
-    * relation to its parent item in which it is contained.
-    */
-  var matrix: Matrix = js.native
-  /** 
-    * The miter limit of the stroke.
-    * When two line segments meet at a sharp angle and miter joins have been
-    * specified for {@link Item#strokeJoin}, it is possible for the miter to
-    * extend far beyond the {@link Item#strokeWidth} of the path. The
-    * miterLimit imposes a limit on the ratio of the miter length to the
-    * {@link Item#strokeWidth}.
-    */
-  var miterLimit: Double = js.native
-  /** 
-    * The name of the item. If the item has a name, it can be accessed by name
-    * through its parent's children list.
-    */
-  var name: String = js.native
-  /** 
-    * The next item on the same level as this item.
-    */
-  val nextSibling: Item = js.native
-  /** 
-    * The function to be called when the mouse clicks on the item. The function
-    * receives a {@link MouseEvent} object which contains information about the
-    * mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onClick
-    */
-  var onClick: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse double clicks on the item. The
-    * function receives a {@link MouseEvent} object which contains information
-    * about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onDoubleClick
-    */
-  var onDoubleClick: js.Function | Null = js.native
-  /** 
-    * Item level handler function to be called on each frame of an animation.
-    * The function receives an event object which contains information about
-    * the frame event:
-    * 
-    * @see View#onFrame
-    * 
-    * @option event.count {Number} the number of times the frame event was
-    *     fired
-    * @option event.time {Number} the total amount of time passed since the
-    *     first frame event in seconds
-    * @option event.delta {Number} the time passed in seconds since the last
-    *     frame event
-    */
-  var onFrame: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse button is pushed down on the
-    * item. The function receives a {@link MouseEvent} object which contains
-    * information about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onMouseDown
-    */
-  var onMouseDown: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse position changes while the mouse
-    * is being dragged over the item. The function receives a {@link
-    * MouseEvent} object which contains information about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onMouseDrag
-    */
-  var onMouseDrag: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse moves over the item. This
-    * function will only be called again, once the mouse moved outside of the
-    * item first. The function receives a {@link MouseEvent} object which
-    * contains information about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onMouseEnter
-    */
-  var onMouseEnter: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse moves out of the item.
-    * The function receives a {@link MouseEvent} object which contains
-    * information about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onMouseLeave
-    */
-  var onMouseLeave: js.Function | Null = js.native
-  /** 
-    * The function to be called repeatedly while the mouse moves over the item.
-    * The function receives a {@link MouseEvent} object which contains
-    * information about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onMouseMove
-    */
-  var onMouseMove: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse button is released over the item.
-    * The function receives a {@link MouseEvent} object which contains
-    * information about the mouse event.
-    * Note that such mouse events bubble up the scene graph hierarchy and will
-    * reach the view, unless they are stopped with {@link
-    * Event#stopPropagation()} or by returning `false` from the handler.
-    * 
-    * @see View#onMouseUp
-    */
-  var onMouseUp: js.Function | Null = js.native
-  /** 
-    * The opacity of the item as a value between `0` and `1`.
-    */
-  var opacity: Double = js.native
-  /** 
-    * The item that this item is contained within.
-    */
-  var parent: Item = js.native
-  /** 
-    * The item's pivot point specified in the item coordinate system, defining
-    * the point around which all transformations are hinging. This is also the
-    * reference point for {@link #position}. By default, it is set to `null`,
-    * meaning the {@link Rectangle#center} of the item's {@link #bounds}
-    * rectangle is used as pivot.
-    */
-  var pivot: Point = js.native
-  /** 
-    * The item's position within the parent item's coordinate system. By
-    * default, this is the {@link Rectangle#center} of the item's
-    * {@link #bounds} rectangle.
-    */
-  var position: Point = js.native
-  /** 
-    * The previous item on the same level as this item.
-    */
-  val previousSibling: Item = js.native
-  /** 
-    * The project that this item belongs to.
-    */
-  val project: Project = js.native
-  /** 
-    * The current rotation angle of the item, as described by its
-    * {@link #matrix}.
-    * Please note that this only returns meaningful values for items with
-    * {@link #applyMatrix} set to `false`, meaning they do not directly bake
-    * transformations into their content.
-    */
-  var rotation: Double = js.native
-  /** 
-    * The current scale factor of the item, as described by its
-    * {@link #matrix}.
-    * Please note that this only returns meaningful values for items with
-    * {@link #applyMatrix} set to `false`, meaning they do not directly bake
-    * transformations into their content.
-    */
-  var scaling: Point = js.native
-  /** 
-    * Specifies whether the item is selected. This will also return `true` for
-    * {@link Group} items if they are partially selected, e.g. groups
-    * containing selected or partially selected paths.
-    * 
-    * Paper.js draws the visual outlines of selected items on top of your
-    * project. This can be useful for debugging, as it allows you to see the
-    * construction of paths, position of path curves, individual segment points
-    * and bounding boxes of symbol and raster items.
-    * 
-    * @see Project#selectedItems
-    * @see Segment#selected
-    * @see Curve#selected
-    * @see Point#selected
-    */
-  var selected: Boolean = js.native
-  /** 
-    * The color the item is highlighted with when selected. If the item does
-    * not specify its own color, the color defined by its layer is used instead.
-    */
-  var selectedColor: Color | Null = js.native
-  /** 
-    * The shadow's blur radius.
-    */
-  var shadowBlur: Double = js.native
-  /** 
-    * The shadow color.
-    */
-  var shadowColor: Color | Null = js.native
-  /** 
-    * The shadow's offset.
-    */
-  var shadowOffset: Point = js.native
-  /** 
-    * The bounding rectangle of the item including stroke width.
-    */
-  var strokeBounds: Rectangle = js.native
-  /** 
-    * The shape to be used at the beginning and end of open {@link Path} items,
-    * when they have a stroke.
-    */
-  var strokeCap: String = js.native
-  /** 
-    * The color of the stroke.
-    */
-  var strokeColor: Color | Null = js.native
-  /** 
-    * The shape to be used at the segments and corners of {@link Path} items
-    * when they have a stroke.
-    */
-  var strokeJoin: String = js.native
-  /** 
-    * Specifies whether the stroke is to be drawn taking the current affine
-    * transformation into account (the default behavior), or whether it should
-    * appear as a non-scaling stroke.
-    */
-  var strokeScaling: Boolean = js.native
-  /** 
-    * The width of the stroke.
-    */
-  var strokeWidth: Double = js.native
-  /** 
-    * The path style of the item.
-    */
-  var style: Style = js.native
-  /** 
-    * The view that this item belongs to.
-    */
-  val view: View = js.native
-  /** 
-    * The item's global matrix in relation to the view coordinate space. This
-    * means that the view's transformations resulting from zooming and panning
-    * are factored in.
-    */
-  val viewMatrix: Matrix = js.native
-  /** 
-    * Specifies whether the item is visible. When set to `false`, the item
-    * won't be drawn.
-    */
-  var visible: Boolean = js.native
+  
   /** 
     * Adds the specified item as a child of this item at the end of the its
     * {@link #children}  list. You can use this function for groups, compound
@@ -386,6 +26,7 @@ trait Item extends js.Object {
     * @return the added item, or `null` if adding was not possible
     */
   def addChild(item: Item): Item = js.native
+  
   /** 
     * Adds the specified items as children of this item at the end of the its
     * children list. You can use this function for groups, compound paths and
@@ -396,6 +37,7 @@ trait Item extends js.Object {
     * @return the added items, or `null` if adding was not possible
     */
   def addChildren(items: js.Array[Item]): js.Array[Item] = js.native
+  
   def addTo(owner: CompoundPath): this.type = js.native
   def addTo(owner: Group): this.type = js.native
   def addTo(owner: Layer): this.type = js.native
@@ -409,17 +51,68 @@ trait Item extends js.Object {
     * @return the item itself, if it was successfully added
     */
   def addTo(owner: Project): this.type = js.native
+  
+  /** 
+    * Controls whether the transformations applied to the item (e.g. through
+    * {@link #transform}, {@link #rotate},
+    * {@link #scale}, etc.) are stored in its {@link #matrix} property,
+    * or whether they are directly applied to its contents or children (passed
+    * on to the segments in {@link Path} items, the children of {@link Group}
+    * items, etc.).
+    */
+  var applyMatrix: Boolean = js.native
+  
+  /** 
+    * The blend mode with which the item is composited onto the canvas. Both
+    * the standard canvas compositing modes, as well as the new CSS blend modes
+    * are supported. If blend-modes cannot be rendered natively, they are
+    * emulated. Be aware that emulation can have an impact on performance.
+    */
+  var blendMode: String = js.native
+  
+  /** 
+    * The bounding rectangle of the item excluding stroke width.
+    */
+  var bounds: Rectangle = js.native
+  
   /** 
     * Brings this item to the front of all other items within the same parent.
     */
   def bringToFront(): Unit = js.native
+  
+  /** 
+    * The children items contained within this item. Items that define a
+    * {@link #name} can also be accessed by name.
+    * 
+    * <b>Please note:</b> The children array should not be modified directly
+    * using array functions. To remove single items from the children list, use
+    * {@link Item#remove}, to remove all items from the children list, use
+    * {@link Item#removeChildren}. To add items to the children list, use
+    * {@link Item#addChild} or {@link Item#insertChild}.
+    */
+  var children: js.Array[Item] = js.native
+  
+  /** 
+    * The class name of the item as a string.
+    */
+  var className: String = js.native
+  
+  /** 
+    * Specifies whether the item defines a clip mask. This can only be set on
+    * paths and compound paths, and only if the item is already contained
+    * within a clipping group.
+    */
+  var clipMask: Boolean = js.native
+  
   def clone(options: js.Object): this.type = js.native
+  
   /** 
     * Checks whether the item's geometry contains the given point.
     * 
     * @param point - the point to check for
     */
   def contains(point: Point): Boolean = js.native
+  
   /** 
     * Copies all attributes of the specified item over to this item. This
     * includes its style, visibility, matrix, pivot, blend-mode, opacity,
@@ -430,12 +123,14 @@ trait Item extends js.Object {
     * matrix when copying all attributes
     */
   def copyAttributes(source: Item, excludeMatrix: Boolean): Unit = js.native
+  
   /** 
     * Copies the content of the specified item over to this item.
     * 
     * @param source - the item to copy the content from
     */
   def copyContent(source: Item): Unit = js.native
+  
   def copyTo(owner: CompoundPath): this.type = js.native
   def copyTo(owner: Group): this.type = js.native
   def copyTo(owner: Layer): this.type = js.native
@@ -449,6 +144,23 @@ trait Item extends js.Object {
     * @return the new copy of the item, if it was successfully added
     */
   def copyTo(owner: Project): this.type = js.native
+  
+  /** 
+    * Specifies an array containing the dash and gap lengths of the stroke.
+    */
+  var dashArray: js.Array[Double] = js.native
+  
+  /** 
+    * The dash offset of the stroke.
+    */
+  var dashOffset: Double = js.native
+  
+  /** 
+    * A plain javascript object which can be used to store
+    * arbitrary data on the item.
+    */
+  var data: js.Any = js.native
+  
   /** 
     * Emit an event on the item.
     * 
@@ -461,6 +173,7 @@ trait Item extends js.Object {
     * @return true if the event had listeners
     */
   def emit(`type`: String, event: js.Object): Boolean = js.native
+  
   /** 
     * Exports (serializes) the item with its content and child items to a JSON
     * data string.
@@ -476,6 +189,7 @@ trait Item extends js.Object {
     */
   def exportJSON(): String = js.native
   def exportJSON(options: js.Object): String = js.native
+  
   /** 
     * Exports the item with its content and child items as an SVG DOM.
     * 
@@ -505,12 +219,31 @@ trait Item extends js.Object {
     */
   def exportSVG(): SVGElement | String = js.native
   def exportSVG(options: js.Object): SVGElement | String = js.native
+  
+  /** 
+    * The fill color of the item.
+    */
+  var fillColor: Color | Null = js.native
+  
+  /** 
+    * The fill-rule with which the shape gets filled. Please note that only
+    * modern browsers support fill-rules other than `'nonzero'`.
+    */
+  var fillRule: String = js.native
+  
+  /** 
+    * The first item contained within this item. This is a shortcut for
+    * accessing `item.children[0]`.
+    */
+  val firstChild: Item = js.native
+  
   /** 
     * Transform the item so that its {@link #bounds} fit within the specified
     * rectangle, without changing its aspect ratio.
     */
   def fitBounds(rectangle: Rectangle): Unit = js.native
   def fitBounds(rectangle: Rectangle, fill: Boolean): Unit = js.native
+  
   def getItem(options: js.Function): Item = js.native
   /** 
     * Fetch the first descendant (child or child of child) of this item
@@ -530,6 +263,7 @@ trait Item extends js.Object {
     * @return the first descendant item matching the given criteria
     */
   def getItem(options: js.Object): Item = js.native
+  
   def getItems(options: js.Function): js.Array[Item] = js.native
   /** 
     * Fetch the descendants (children or children of children) of this item
@@ -567,6 +301,14 @@ trait Item extends js.Object {
     * @return the list of matching descendant items
     */
   def getItems(options: js.Object): js.Array[Item] = js.native
+  
+  /** 
+    * The item's global transformation matrix in relation to the global project
+    * coordinate space. Note that the view's transformations resulting from
+    * zooming and panning are not factored in.
+    */
+  val globalMatrix: Matrix = js.native
+  
   /** 
     * Converts the specified point from global project coordinate space to the
     * item's own local coordinate space.
@@ -576,30 +318,40 @@ trait Item extends js.Object {
     * @return the transformed point as a new instance
     */
   def globalToLocal(point: Point): Point = js.native
+  
+  /** 
+    * The bounding rectangle of the item including handles.
+    */
+  var handleBounds: Rectangle = js.native
+  
   /** 
     * Checks if the item contains any children items.
     * 
     * @return true it has one or more children
     */
   def hasChildren(): Boolean = js.native
+  
   /** 
     * Checks whether the item has a fill.
     * 
     * @return true if the item has a fill
     */
   def hasFill(): Boolean = js.native
+  
   /** 
     * Checks whether the item has a shadow.
     * 
     * @return true if the item has a shadow
     */
   def hasShadow(): Boolean = js.native
+  
   /** 
     * Checks whether the item has a stroke.
     * 
     * @return true if the item has a stroke
     */
   def hasStroke(): Boolean = js.native
+  
   /** 
     * Performs a hit-test on the item and its children (if it is a {@link
     * Group} or {@link Layer}) at the location of the specified point,
@@ -647,6 +399,7 @@ trait Item extends js.Object {
     */
   def hitTest(point: Point): HitResult = js.native
   def hitTest(point: Point, options: js.Object): HitResult = js.native
+  
   /** 
     * Performs a hit-test on the item and its children (if it is a {@link
     * Group} or {@link Layer}) at the location of the specified point,
@@ -665,6 +418,12 @@ trait Item extends js.Object {
     */
   def hitTestAll(point: Point): js.Array[HitResult] = js.native
   def hitTestAll(point: Point, options: js.Object): js.Array[HitResult] = js.native
+  
+  /** 
+    * The unique id of the item.
+    */
+  val id: Double = js.native
+  
   /** 
     * Imports (deserializes) the stored JSON data into this item. If the data
     * describes an item of the same class or a parent class of the item, the
@@ -675,6 +434,7 @@ trait Item extends js.Object {
     * @param json - the JSON data to import from
     */
   def importJSON(json: String): Item = js.native
+  
   def importSVG(svg: String): Item = js.native
   def importSVG(svg: String, onLoad: js.Function): Item = js.native
   def importSVG(svg: String, options: js.Object): Item = js.native
@@ -723,6 +483,12 @@ trait Item extends js.Object {
     */
   def importSVG(svg: SVGElement, onLoad: js.Function): Item = js.native
   def importSVG(svg: SVGElement, options: js.Object): Item = js.native
+  
+  /** 
+    * The index of this item within the list of its parent's children.
+    */
+  val index: Double = js.native
+  
   /** 
     * Inserts this item above the specified item.
     * 
@@ -731,6 +497,7 @@ trait Item extends js.Object {
     * @return the inserted item, or `null` if inserting was not possible
     */
   def insertAbove(item: Item): Item = js.native
+  
   /** 
     * Inserts this item below the specified item.
     * 
@@ -739,6 +506,7 @@ trait Item extends js.Object {
     * @return the inserted item, or `null` if inserting was not possible
     */
   def insertBelow(item: Item): Item = js.native
+  
   /** 
     * Inserts the specified item as a child of this item at the specified index
     * in its {@link #children} list. You can use this function for groups,
@@ -750,6 +518,7 @@ trait Item extends js.Object {
     * @return the inserted item, or `null` if inserting was not possible
     */
   def insertChild(index: Double, item: Item): Item = js.native
+  
   /** 
     * Inserts the specified items as children of this item at the specified
     * index in its {@link #children} list. You can use this function for
@@ -761,10 +530,21 @@ trait Item extends js.Object {
     *     possible
     */
   def insertChildren(index: Double, items: js.Array[Item]): js.Array[Item] = js.native
+  
+  /** 
+    * The bounding rectangle of the item without any matrix transformations.
+    * 
+    * Typical use case would be drawing a frame around the object where you
+    * want to draw something of the same size, position, rotation, and scaling,
+    * like a selection frame.
+    */
+  var internalBounds: Rectangle = js.native
+  
   /** 
     * @param item - the item to check against
     */
   def intersects(item: Item): Boolean = js.native
+  
   /** 
     * Checks if this item is above the specified item in the stacking order
     * of the project.
@@ -774,6 +554,7 @@ trait Item extends js.Object {
     * @return true if it is above the specified item
     */
   def isAbove(item: Item): Boolean = js.native
+  
   /** 
     * Checks if the item is an ancestor of the specified item.
     * 
@@ -783,6 +564,7 @@ trait Item extends js.Object {
     * item
     */
   def isAncestor(item: Item): Boolean = js.native
+  
   /** 
     * Checks if the item is below the specified item in the stacking order of
     * the project.
@@ -792,6 +574,7 @@ trait Item extends js.Object {
     * @return true if it is below the specified item
     */
   def isBelow(item: Item): Boolean = js.native
+  
   /** 
     * Checks whether the specified item is a child of the item.
     * 
@@ -800,6 +583,7 @@ trait Item extends js.Object {
     * @return true it is a child of the item
     */
   def isChild(item: Item): Boolean = js.native
+  
   /** 
     * Checks if the item is contained within the specified item.
     * 
@@ -808,6 +592,7 @@ trait Item extends js.Object {
     * @return true if it is inside the specified item
     */
   def isDescendant(item: Item): Boolean = js.native
+  
   /** 
     * Specifies whether the item has any content or not. The meaning of what
     * content is differs from type to type. For example, a {@link Group} with
@@ -819,12 +604,14 @@ trait Item extends js.Object {
     */
   def isEmpty(): Boolean = js.native
   def isEmpty(recursively: Boolean): Boolean = js.native
+  
   /** 
     * Checks whether the item is grouped with the specified item.
     * 
     * @return true if the items are grouped together
     */
   def isGroupedWith(item: Item): Boolean = js.native
+  
   /** 
     * Checks whether the item and all its parents are inserted into scene graph
     * or not.
@@ -832,10 +619,12 @@ trait Item extends js.Object {
     * @return true if the item is inserted into the scene graph
     */
   def isInserted(): Boolean = js.native
+  
   /** 
     * @param rect - the rectangle to check against
     */
   def isInside(rect: Rectangle): Boolean = js.native
+  
   /** 
     * Checks whether the specified item is the parent of the item.
     * 
@@ -844,6 +633,7 @@ trait Item extends js.Object {
     * @return true if it is the parent of the item
     */
   def isParent(item: Item): Boolean = js.native
+  
   /** 
     * Checks if the item is an a sibling of the specified item.
     * 
@@ -852,6 +642,18 @@ trait Item extends js.Object {
     * @return true if the item is aa sibling of the specified item
     */
   def isSibling(item: Item): Boolean = js.native
+  
+  /** 
+    * The last item contained within this item.This is a shortcut for
+    * accessing `item.children[item.children.length - 1]`.
+    */
+  val lastChild: Item = js.native
+  
+  /** 
+    * The layer that this item is contained within.
+    */
+  val layer: Layer = js.native
+  
   /** 
     * Converts the specified point from the item's own local coordinate space
     * to the global project coordinate space.
@@ -861,6 +663,7 @@ trait Item extends js.Object {
     * @return the transformed point as a new instance
     */
   def localToGlobal(point: Point): Point = js.native
+  
   /** 
     * Converts the specified point from the item's own local coordinate space
     * to the parent's coordinate space.
@@ -870,6 +673,13 @@ trait Item extends js.Object {
     * @return the transformed point as a new instance
     */
   def localToParent(point: Point): Point = js.native
+  
+  /** 
+    * Specifies whether the item is locked. When set to `true`, item
+    * interactions with the mouse are disabled.
+    */
+  var locked: Boolean = js.native
+  
   /** 
     * Checks whether the item matches the given criteria. Extended matching is
     * possible by providing a compare function or a regular expression.
@@ -906,6 +716,34 @@ trait Item extends js.Object {
     * @return true if the item matches all the criteria
     */
   def matches(options: js.Object): Boolean = js.native
+  
+  /** 
+    * The item's transformation matrix, defining position and dimensions in
+    * relation to its parent item in which it is contained.
+    */
+  var matrix: Matrix = js.native
+  
+  /** 
+    * The miter limit of the stroke.
+    * When two line segments meet at a sharp angle and miter joins have been
+    * specified for {@link Item#strokeJoin}, it is possible for the miter to
+    * extend far beyond the {@link Item#strokeWidth} of the path. The
+    * miterLimit imposes a limit on the ratio of the miter length to the
+    * {@link Item#strokeWidth}.
+    */
+  var miterLimit: Double = js.native
+  
+  /** 
+    * The name of the item. If the item has a name, it can be accessed by name
+    * through its parent's children list.
+    */
+  var name: String = js.native
+  
+  /** 
+    * The next item on the same level as this item.
+    */
+  val nextSibling: Item = js.native
+  
   /** 
     * Detach one or more event handlers to the item.
     * 
@@ -927,6 +765,7 @@ trait Item extends js.Object {
     * @return this item itself, so calls can be chained
     */
   def off(`type`: String, callback: js.Function): this.type = js.native
+  
   /** 
     * Attaches one or more event handlers to the item.
     * 
@@ -950,6 +789,130 @@ trait Item extends js.Object {
     * @return this item itself, so calls can be chained
     */
   def on(`type`: String, callback: js.Function): this.type = js.native
+  
+  /** 
+    * The function to be called when the mouse clicks on the item. The function
+    * receives a {@link MouseEvent} object which contains information about the
+    * mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onClick
+    */
+  var onClick: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse double clicks on the item. The
+    * function receives a {@link MouseEvent} object which contains information
+    * about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onDoubleClick
+    */
+  var onDoubleClick: js.Function | Null = js.native
+  
+  /** 
+    * Item level handler function to be called on each frame of an animation.
+    * The function receives an event object which contains information about
+    * the frame event:
+    * 
+    * @see View#onFrame
+    * 
+    * @option event.count {Number} the number of times the frame event was
+    *     fired
+    * @option event.time {Number} the total amount of time passed since the
+    *     first frame event in seconds
+    * @option event.delta {Number} the time passed in seconds since the last
+    *     frame event
+    */
+  var onFrame: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse button is pushed down on the
+    * item. The function receives a {@link MouseEvent} object which contains
+    * information about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onMouseDown
+    */
+  var onMouseDown: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse position changes while the mouse
+    * is being dragged over the item. The function receives a {@link
+    * MouseEvent} object which contains information about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onMouseDrag
+    */
+  var onMouseDrag: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse moves over the item. This
+    * function will only be called again, once the mouse moved outside of the
+    * item first. The function receives a {@link MouseEvent} object which
+    * contains information about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onMouseEnter
+    */
+  var onMouseEnter: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse moves out of the item.
+    * The function receives a {@link MouseEvent} object which contains
+    * information about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onMouseLeave
+    */
+  var onMouseLeave: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called repeatedly while the mouse moves over the item.
+    * The function receives a {@link MouseEvent} object which contains
+    * information about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onMouseMove
+    */
+  var onMouseMove: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse button is released over the item.
+    * The function receives a {@link MouseEvent} object which contains
+    * information about the mouse event.
+    * Note that such mouse events bubble up the scene graph hierarchy and will
+    * reach the view, unless they are stopped with {@link
+    * Event#stopPropagation()} or by returning `false` from the handler.
+    * 
+    * @see View#onMouseUp
+    */
+  var onMouseUp: js.Function | Null = js.native
+  
+  /** 
+    * The opacity of the item as a value between `0` and `1`.
+    */
+  var opacity: Double = js.native
+  
+  /** 
+    * The item that this item is contained within.
+    */
+  var parent: Item = js.native
+  
   /** 
     * Converts the specified point from the parent's coordinate space to
     * item's own local coordinate space.
@@ -959,6 +922,33 @@ trait Item extends js.Object {
     * @return the transformed point as a new instance
     */
   def parentToLocal(point: Point): Point = js.native
+  
+  /** 
+    * The item's pivot point specified in the item coordinate system, defining
+    * the point around which all transformations are hinging. This is also the
+    * reference point for {@link #position}. By default, it is set to `null`,
+    * meaning the {@link Rectangle#center} of the item's {@link #bounds}
+    * rectangle is used as pivot.
+    */
+  var pivot: Point = js.native
+  
+  /** 
+    * The item's position within the parent item's coordinate system. By
+    * default, this is the {@link Rectangle#center} of the item's
+    * {@link #bounds} rectangle.
+    */
+  var position: Point = js.native
+  
+  /** 
+    * The previous item on the same level as this item.
+    */
+  val previousSibling: Item = js.native
+  
+  /** 
+    * The project that this item belongs to.
+    */
+  val project: Project = js.native
+  
   /** 
     * Rasterizes the item into a newly created Raster object. The item itself
     * is not removed after rasterization.
@@ -976,6 +966,7 @@ trait Item extends js.Object {
   def rasterize(resolution: js.UndefOr[scala.Nothing], insert: Boolean): Raster = js.native
   def rasterize(resolution: Double): Raster = js.native
   def rasterize(resolution: Double, insert: Boolean): Raster = js.native
+  
   /** 
     * If this is a group, layer or compound-path with only one child-item,
     * the child-item is moved outside and the parent is erased. Otherwise, the
@@ -984,6 +975,7 @@ trait Item extends js.Object {
     * @return the reduced item
     */
   def reduce(options: js.Any): Item = js.native
+  
   /** 
     * Removes the item and all its children from the project. The item is not
     * destroyed and can be inserted again after removal.
@@ -991,6 +983,7 @@ trait Item extends js.Object {
     * @return true if the item was removed
     */
   def remove(): Boolean = js.native
+  
   /** 
     * Removes all of the item's {@link #children} (if any).
     * 
@@ -1008,6 +1001,7 @@ trait Item extends js.Object {
     */
   def removeChildren(start: Double): js.Array[Item] = js.native
   def removeChildren(start: Double, end: Double): js.Array[Item] = js.native
+  
   /** 
     * Removes the item when the events specified in the passed options object
     * occur.
@@ -1022,22 +1016,27 @@ trait Item extends js.Object {
     *     Tool#onMouseUp} event is fired.
     */
   def removeOn(options: js.Object): Unit = js.native
+  
   /** 
     * Removes the item when the next {@link Tool#onMouseDown} event is fired.
     */
   def removeOnDown(): Unit = js.native
+  
   /** 
     * Removes the item when the next {@link Tool#onMouseDrag} event is fired.
     */
   def removeOnDrag(): Unit = js.native
+  
   /** 
     * Removes the item when the next {@link Tool#onMouseMove} event is fired.
     */
   def removeOnMove(): Unit = js.native
+  
   /** 
     * Removes the item when the next {@link Tool#onMouseUp} event is fired.
     */
   def removeOnUp(): Unit = js.native
+  
   /** 
     * Replaces this item with the provided new item which will takes its place
     * in the project hierarchy instead.
@@ -1047,6 +1046,7 @@ trait Item extends js.Object {
     * @return true if the item was replaced
     */
   def replaceWith(item: Item): Boolean = js.native
+  
   /** 
     * Check if the item has one or more event handlers of the specified type.
     * 
@@ -1058,10 +1058,12 @@ trait Item extends js.Object {
     * the specified type
     */
   def responds(`type`: String): Boolean = js.native
+  
   /** 
     * Reverses the order of the item's children
     */
   def reverseChildren(): Unit = js.native
+  
   /** 
     * Rotates the item by a given angle around the given center point.
     * 
@@ -1073,6 +1075,16 @@ trait Item extends js.Object {
     */
   def rotate(angle: Double): Unit = js.native
   def rotate(angle: Double, center: Point): Unit = js.native
+  
+  /** 
+    * The current rotation angle of the item, as described by its
+    * {@link #matrix}.
+    * Please note that this only returns meaningful values for items with
+    * {@link #applyMatrix} set to `false`, meaning they do not directly bake
+    * transformations into their content.
+    */
+  var rotation: Double = js.native
+  
   /** 
     * Scales the item by the given values from its center point, or optionally
     * from a supplied point.
@@ -1090,10 +1102,44 @@ trait Item extends js.Object {
     */
   def scale(scale: Double): Unit = js.native
   def scale(scale: Double, center: Point): Unit = js.native
+  
+  /** 
+    * The current scale factor of the item, as described by its
+    * {@link #matrix}.
+    * Please note that this only returns meaningful values for items with
+    * {@link #applyMatrix} set to `false`, meaning they do not directly bake
+    * transformations into their content.
+    */
+  var scaling: Point = js.native
+  
+  /** 
+    * Specifies whether the item is selected. This will also return `true` for
+    * {@link Group} items if they are partially selected, e.g. groups
+    * containing selected or partially selected paths.
+    * 
+    * Paper.js draws the visual outlines of selected items on top of your
+    * project. This can be useful for debugging, as it allows you to see the
+    * construction of paths, position of path curves, individual segment points
+    * and bounding boxes of symbol and raster items.
+    * 
+    * @see Project#selectedItems
+    * @see Segment#selected
+    * @see Curve#selected
+    * @see Point#selected
+    */
+  var selected: Boolean = js.native
+  
+  /** 
+    * The color the item is highlighted with when selected. If the item does
+    * not specify its own color, the color defined by its layer is used instead.
+    */
+  var selectedColor: Color | Null = js.native
+  
   /** 
     * Sends this item to the back of all other items within the same parent.
     */
   def sendToBack(): Unit = js.native
+  
   /** 
     * Sets the properties of the passed object literal on this item to the
     * values defined in the object literal, if the item has property of the
@@ -1102,6 +1148,22 @@ trait Item extends js.Object {
     * @return the item itself
     */
   def set(props: js.Object): this.type = js.native
+  
+  /** 
+    * The shadow's blur radius.
+    */
+  var shadowBlur: Double = js.native
+  
+  /** 
+    * The shadow color.
+    */
+  var shadowColor: Color | Null = js.native
+  
+  /** 
+    * The shadow's offset.
+    */
+  var shadowOffset: Point = js.native
+  
   /** 
     * Shears the item by the given values from its center point, or optionally
     * by a supplied point.
@@ -1123,6 +1185,7 @@ trait Item extends js.Object {
     */
   def shear(shear: Point): Unit = js.native
   def shear(shear: Point, center: Point): Unit = js.native
+  
   /** 
     * Skews the item by the given angles from its center point, or optionally
     * by a supplied point.
@@ -1144,18 +1207,60 @@ trait Item extends js.Object {
     */
   def skew(skew: Point): Unit = js.native
   def skew(skew: Point, center: Point): Unit = js.native
+  
+  /** 
+    * The bounding rectangle of the item including stroke width.
+    */
+  var strokeBounds: Rectangle = js.native
+  
+  /** 
+    * The shape to be used at the beginning and end of open {@link Path} items,
+    * when they have a stroke.
+    */
+  var strokeCap: String = js.native
+  
+  /** 
+    * The color of the stroke.
+    */
+  var strokeColor: Color | Null = js.native
+  
+  /** 
+    * The shape to be used at the segments and corners of {@link Path} items
+    * when they have a stroke.
+    */
+  var strokeJoin: String = js.native
+  
+  /** 
+    * Specifies whether the stroke is to be drawn taking the current affine
+    * transformation into account (the default behavior), or whether it should
+    * appear as a non-scaling stroke.
+    */
+  var strokeScaling: Boolean = js.native
+  
+  /** 
+    * The width of the stroke.
+    */
+  var strokeWidth: Double = js.native
+  
+  /** 
+    * The path style of the item.
+    */
+  var style: Style = js.native
+  
   /** 
     * Transform the item.
     * 
     * @param matrix - the matrix by which the item shall be transformed
     */
   def transform(matrix: Matrix): Unit = js.native
+  
   /** 
     * Translates (moves) the item by the given offset views.
     * 
     * @param delta - the offset to translate the item by
     */
   def translate(delta: Point): Unit = js.native
+  
   /** 
     * Tween item between two states.
     * 
@@ -1192,6 +1297,7 @@ trait Item extends js.Object {
     */
   def tween(to: js.Object, options: js.Object): Tween = js.native
   def tween(to: js.Object, options: Double): Tween = js.native
+  
   /** 
     * Tween item from a state to its state before the tweening.
     * 
@@ -1202,6 +1308,7 @@ trait Item extends js.Object {
     */
   def tweenFrom(from: js.Object, options: js.Object): Tween = js.native
   def tweenFrom(from: js.Object, options: Double): Tween = js.native
+  
   /** 
     * Tween item to a state.
     * 
@@ -1212,5 +1319,22 @@ trait Item extends js.Object {
     */
   def tweenTo(to: js.Object, options: js.Object): Tween = js.native
   def tweenTo(to: js.Object, options: Double): Tween = js.native
+  
+  /** 
+    * The view that this item belongs to.
+    */
+  val view: View = js.native
+  
+  /** 
+    * The item's global matrix in relation to the view coordinate space. This
+    * means that the view's transformations resulting from zooming and panning
+    * are factored in.
+    */
+  val viewMatrix: Matrix = js.native
+  
+  /** 
+    * Specifies whether the item is visible. When set to `false`, the item
+    * won't be drawn.
+    */
+  var visible: Boolean = js.native
 }
-

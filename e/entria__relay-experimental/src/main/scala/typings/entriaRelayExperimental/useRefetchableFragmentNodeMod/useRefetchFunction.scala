@@ -3,11 +3,12 @@ package typings.entriaRelayExperimental.useRefetchableFragmentNodeMod
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@entria/relay-experimental/lib/useRefetchableFragmentNode", "useRefetchFunction")
 @js.native
 object useRefetchFunction extends js.Object {
+  
   def apply[TQuery /* <: OperationType */](
     fragmentNode: js.Any,
     parentFragmentRef: js.Any,
@@ -21,4 +22,3 @@ object useRefetchFunction extends js.Object {
   ): // tslint:disable-next-line:no-unnecessary-generics
   RefetchFn[TQuery, InternalOptions] = js.native
 }
-

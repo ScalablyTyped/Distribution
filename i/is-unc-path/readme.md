@@ -12,7 +12,7 @@ Returns true if a filepath is a windows UNC file path.
 | Keywords           | absolute, expression, file, filepath, is, match, matching, path, regex, regexp, regular, unc, win, windows |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 110596428 |
+| # downloads        | 136935377 |
 | # stars            | 0 |
 
 ## Links

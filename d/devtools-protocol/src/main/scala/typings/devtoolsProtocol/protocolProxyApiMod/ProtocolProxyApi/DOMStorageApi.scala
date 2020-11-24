@@ -15,20 +15,25 @@ import typings.devtoolsProtocol.mod.Protocol.DOMStorage.RemoveDOMStorageItemRequ
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.SetDOMStorageItemRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DOMStorageApi extends js.Object {
+  
   def clear(params: ClearRequest): js.Promise[Unit] = js.native
+  
   /**
     * Disables storage tracking, prevents storage events from being sent to the client.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables storage tracking, storage events will now be delivered to the client.
     */
   def enable(): js.Promise[Unit] = js.native
+  
   def getDOMStorageItems(params: GetDOMStorageItemsRequest): js.Promise[GetDOMStorageItemsResponse] = js.native
+  
   @JSName("on")
   def on_domStorageItemAdded(event: domStorageItemAdded, listener: js.Function1[/* params */ DomStorageItemAddedEvent, Unit]): Unit = js.native
   @JSName("on")
@@ -46,7 +51,8 @@ trait DOMStorageApi extends js.Object {
     event: domStorageItemsCleared,
     listener: js.Function1[/* params */ DomStorageItemsClearedEvent, Unit]
   ): Unit = js.native
+  
   def removeDOMStorageItem(params: RemoveDOMStorageItemRequest): js.Promise[Unit] = js.native
+  
   def setDOMStorageItem(params: SetDOMStorageItemRequest): js.Promise[Unit] = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CaptureSceneMode extends js.Object
-
 /** Defines the possible capture scene modes. */
 @JSGlobal("Windows.Media.Devices.CaptureSceneMode")
 @js.native
 object CaptureSceneMode extends js.Object {
+  
   /** Indicates that the best settings and exposure optimization are automatically performed. */
   @js.native
   sealed trait auto extends CaptureSceneMode
@@ -62,6 +62,4 @@ object CaptureSceneMode extends js.Object {
   /** Indicates that the captured framed is optimized for sunset photos. */
   @js.native
   sealed trait sunset extends CaptureSceneMode
-  
 }
-

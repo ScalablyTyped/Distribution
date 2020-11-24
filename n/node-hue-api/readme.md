@@ -10,9 +10,9 @@ Philips Hue API Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | node-hue-api |
 | Keywords           | philips, hue, api, living, color, colour, automation, light, lighting, bridge |
-| # releases         | 33 |
-| # dependents       | 65 |
-| # downloads        | 90674 |
+| # releases         | 42 |
+| # dependents       | 68 |
+| # downloads        | 128905 |
 | # stars            | 12 |
 
 ## Links

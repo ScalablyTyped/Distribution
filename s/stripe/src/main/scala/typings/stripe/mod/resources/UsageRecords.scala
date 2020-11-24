@@ -7,11 +7,12 @@ import typings.stripe.mod.usageRecords.IUsageRecord
 import typings.stripe.mod.usageRecords.IUsageRecordCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.UsageRecords")
 @js.native
 class UsageRecords () extends StripeResource {
+  
   def create(subscription: String, data: IUsageRecordCreationOptions): js.Promise[IUsageRecord] = js.native
   /**
     * Creates a usage record for a specified subscription item and date, and fills it with a quantity.
@@ -25,4 +26,3 @@ class UsageRecords () extends StripeResource {
   ): js.Promise[IUsageRecord] = js.native
   def create(subscription: String, data: IUsageRecordCreationOptions, response: IResponseFn[IUsageRecord]): js.Promise[IUsageRecord] = js.native
 }
-

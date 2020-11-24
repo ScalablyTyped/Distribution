@@ -2,7 +2,7 @@ package typings.solidityParserAntlr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.solidityParserAntlr.mod.ElementaryTypeName
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   - typings.solidityParserAntlr.mod.FunctionTypeName
 */
 trait TypeName extends ASTNode
-
 object TypeName {
+  
   @scala.inline
   def Mapping(
     keyType: ElementaryTypeName,
@@ -24,6 +24,7 @@ object TypeName {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeName]
   }
+  
   @scala.inline
   def FunctionTypeName(
     parameterTypes: js.Array[TypeName],
@@ -36,12 +37,14 @@ object TypeName {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeName]
   }
+  
   @scala.inline
   def ElementaryTypeName(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName): TypeName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeName]
   }
+  
   @scala.inline
   def UserDefinedTypeName(
     namePath: String,
@@ -51,6 +54,7 @@ object TypeName {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeName]
   }
+  
   @scala.inline
   def ArrayTypeName(
     baseTypeName: TypeName,
@@ -61,4 +65,3 @@ object TypeName {
     __obj.asInstanceOf[TypeName]
   }
 }
-

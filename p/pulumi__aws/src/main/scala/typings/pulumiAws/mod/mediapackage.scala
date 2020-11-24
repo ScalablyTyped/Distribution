@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "mediapackage")
 @js.native
 object mediapackage extends js.Object {
+  
   @js.native
   class Channel protected ()
     extends typings.pulumiAws.mediapackageMod.Channel {
@@ -25,10 +26,10 @@ object mediapackage extends js.Object {
     def this(name: String, args: ChannelArgs) = this()
     def this(name: String, args: ChannelArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object Channel extends js.Object {
+    
     /**
       * Get an existing Channel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,12 +43,11 @@ object mediapackage extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.channelMod.Channel = js.native
     def get(name: String, id: Input[ID], state: ChannelState): typings.pulumiAws.channelMod.Channel = js.native
     def get(name: String, id: Input[ID], state: ChannelState, opts: CustomResourceOptions): typings.pulumiAws.channelMod.Channel = js.native
+    
     /**
       * Returns true if the given object is an instance of Channel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediapackage/channel.Channel */ Boolean = js.native
   }
-  
 }
-

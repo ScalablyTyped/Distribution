@@ -2,7 +2,7 @@ package typings.heremaps.global.H.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This namespace contains basic UI elements from which the UI controls are built.
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("H.ui.base")
 @js.native
 object base extends js.Object {
+  
   @js.native
   /**
     * Constructor
@@ -56,6 +57,4 @@ object base extends js.Object {
     def this(opt_elementType: js.UndefOr[scala.Nothing], opt_className: String) = this()
     def this(opt_elementType: String, opt_className: String) = this()
   }
-  
 }
-

@@ -5,11 +5,12 @@ import typings.expressValidator.contextMod.Context
 import typings.expressValidator.selectFieldsMod.SelectFields_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-validator/src/chain", JSImport.Namespace)
 @js.native
 object chainMod extends js.Object {
+  
   @js.native
   class ContextHandlerImpl[Chain] protected ()
     extends typings.expressValidator.contextHandlerImplMod.ContextHandlerImpl[Chain] {
@@ -36,6 +37,4 @@ object chainMod extends js.Object {
     extends typings.expressValidator.validatorsImplMod.ValidatorsImpl[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
   }
-  
 }
-

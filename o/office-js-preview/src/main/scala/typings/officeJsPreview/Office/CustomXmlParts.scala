@@ -2,7 +2,7 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a collection of CustomXmlPart objects.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomXmlParts extends js.Object {
+  
   /**
     * Asynchronously adds a new custom XML part to a file.
     *
@@ -38,6 +39,7 @@ trait CustomXmlParts extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously gets the specified custom XML part by its id.
     *
@@ -64,6 +66,7 @@ trait CustomXmlParts extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously gets the specified custom XML part(s) by its namespace.
     *
@@ -90,4 +93,3 @@ trait CustomXmlParts extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlPart]], Unit]
   ): Unit = js.native
 }
-

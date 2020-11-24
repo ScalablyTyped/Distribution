@@ -4,11 +4,20 @@ import typings.signalsJs.ioncesignalMod.IOnceSignal
 import typings.signalsJs.islotMod.ISlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("signals.js", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  var IOnceSignal: js.Symbol = js.native
+  
+  var IPrioritySignal: js.Symbol = js.native
+  
+  var ISignal: js.Symbol = js.native
+  
+  var ISlot: js.Symbol = js.native
+  
   @js.native
   class DeluxeSignal protected ()
     extends typings.signalsJs.deluxeSignalMod.DeluxeSignal {
@@ -134,19 +143,13 @@ object mod extends js.Object {
     def this(head: ISlot) = this()
     def this(head: ISlot, tail: typings.signalsJs.slotListMod.SlotList) = this()
   }
-  
-  var IOnceSignal: js.Symbol = js.native
-  var IPrioritySignal: js.Symbol = js.native
-  var ISignal: js.Symbol = js.native
-  var ISlot: js.Symbol = js.native
   /* static members */
   @js.native
   object SlotList extends js.Object {
+    
     /**
       * Represents an empty list. Used as the list terminator.
       */
     var NIL: typings.signalsJs.slotListMod.SlotList = js.native
   }
-  
 }
-

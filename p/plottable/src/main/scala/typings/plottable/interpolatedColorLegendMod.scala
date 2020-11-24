@@ -5,11 +5,12 @@ import typings.plottable.formattersMod.Formatter
 import typings.plottable.scalesMod.InterpolatedColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/interpolatedColorLegend", JSImport.Namespace)
 @js.native
 object interpolatedColorLegendMod extends js.Object {
+  
   @js.native
   class InterpolatedColorLegend protected () extends Component {
     /**
@@ -23,21 +24,37 @@ object interpolatedColorLegendMod extends js.Object {
       * @param {Scales.InterpolatedColor} interpolatedColorScale
       */
     def this(interpolatedColorScale: InterpolatedColor) = this()
+    
     var _expands: js.Any = js.native
+    
     var _formatter: js.Any = js.native
-    var _lowerLabel: js.Any = js.native
-    var _measurer: js.Any = js.native
-    var _orientation: js.Any = js.native
-    var _redrawCallback: js.Any = js.native
-    var _scale: js.Any = js.native
-    var _swatchBoundingBox: js.Any = js.native
-    var _swatchContainer: js.Any = js.native
-    var _textPadding: js.Any = js.native
-    var _upperLabel: js.Any = js.native
-    var _wrapper: js.Any = js.native
-    var _writer: js.Any = js.native
+    
     /* private */ def _generateTicks(numSwatches: js.Any): js.Any = js.native
+    
     /* private */ def _isVertical(): js.Any = js.native
+    
+    var _lowerLabel: js.Any = js.native
+    
+    var _measurer: js.Any = js.native
+    
+    var _orientation: js.Any = js.native
+    
+    var _redrawCallback: js.Any = js.native
+    
+    var _scale: js.Any = js.native
+    
+    var _swatchBoundingBox: js.Any = js.native
+    
+    var _swatchContainer: js.Any = js.native
+    
+    var _textPadding: js.Any = js.native
+    
+    var _upperLabel: js.Any = js.native
+    
+    var _wrapper: js.Any = js.native
+    
+    var _writer: js.Any = js.native
+    
     /**
       * Gets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
       */
@@ -49,6 +66,7 @@ object interpolatedColorLegendMod extends js.Object {
       * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
       */
     def expands(expands: Boolean): this.type = js.native
+    
     /**
       * Gets the Formatter for the labels. The domain ticks will be passed through the formatter
       * before being displayed.
@@ -62,6 +80,7 @@ object interpolatedColorLegendMod extends js.Object {
       * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
       */
     def formatter(formatter: Formatter): this.type = js.native
+    
     /**
       * Gets the orientation.
       */
@@ -74,17 +93,17 @@ object interpolatedColorLegendMod extends js.Object {
       */
     def orientation(orientation: String): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object InterpolatedColorLegend extends js.Object {
+    
     /**
       * The css class applied to the legend labels.
       */
     var LEGEND_LABEL_CLASS: String = js.native
+    
     var _DEFAULT_NUM_SWATCHES: js.Any = js.native
+    
     /* private */ def _ensureOrientation(orientation: js.Any): js.Any = js.native
   }
-  
 }
-

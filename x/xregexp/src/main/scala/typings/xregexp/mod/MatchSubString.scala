@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A matched substring, including named capture groups as properties, or the `groups` property
@@ -18,10 +18,10 @@ trait MatchSubString
   * feature is not installed.
   */
 /* propName */ StringDictionary[js.Any] {
+  
   /**
     * This is only present if the the `namespacing` feature is installed
     * using the `XRegExp.install` method.
     */
   var groups: js.UndefOr[NamedGroupsArray] = js.native
 }
-

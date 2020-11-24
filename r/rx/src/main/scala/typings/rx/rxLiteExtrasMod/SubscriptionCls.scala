@@ -2,7 +2,7 @@ package typings.rx.rxLiteExtrasMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.lite.extras", "Subscription")
 @js.native
@@ -18,4 +18,3 @@ class SubscriptionCls protected ()
   def this(subscribeAt: Double) = this()
   def this(subscribeAt: Double, unsubscribeAt: Double) = this()
 }
-

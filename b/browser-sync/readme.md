@@ -10,10 +10,10 @@ Live CSS Reload & Browser Syncing
 | ------------------ | :-------------: |
 | Full name          | browser-sync |
 | Keywords           | browser sync, css, live reload, sync |
-| # releases         | 33 |
-| # dependents       | 1426 |
-| # downloads        | 19309692 |
-| # stars            | 434 |
+| # releases         | 9 |
+| # dependents       | 1660 |
+| # downloads        | 24823492 |
+| # stars            | 435 |
 
 ## Links
 - [Homepage](https://browsersync.io/)

@@ -3,11 +3,12 @@ package typings.vscodeLanguageclient.clientMod
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "LocationLink")
 @js.native
 object LocationLink extends js.Object {
+  
   /**
     * Creates a LocationLink literal.
     * @param targetUri The definition's uri.
@@ -26,9 +27,9 @@ object LocationLink extends js.Object {
     targetSelectionRange: typings.vscodeLanguageserverTypes.mod.Range,
     originSelectionRange: typings.vscodeLanguageserverTypes.mod.Range
   ): typings.vscodeLanguageserverTypes.mod.LocationLink = js.native
+  
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = js.native
 }
-

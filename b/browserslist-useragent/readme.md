@@ -10,9 +10,9 @@ A utility to match a browselist query to browser user agents
 | ------------------ | :-------------: |
 | Full name          | browserslist-useragent |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 10 |
-| # downloads        | 1342523 |
+| # releases         | 5 |
+| # dependents       | 14 |
+| # downloads        | 2318685 |
 | # stars            | 0 |
 
 ## Links

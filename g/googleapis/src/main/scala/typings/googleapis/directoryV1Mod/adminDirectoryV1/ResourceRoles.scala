@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Roles")
 @js.native
 class ResourceRoles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.roles.delete
     * @desc Deletes a role.
@@ -38,6 +40,7 @@ class ResourceRoles protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceRolesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRolesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.roles.get
     * @desc Retrieves a role.
@@ -63,6 +66,7 @@ class ResourceRoles protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceRolesGet, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  
   /**
     * directory.roles.insert
     * @desc Creates a role.
@@ -92,6 +96,7 @@ class ResourceRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
+  
   /**
     * directory.roles.list
     * @desc Retrieves a paginated list of all the roles in a domain.
@@ -122,6 +127,7 @@ class ResourceRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoles]
   ): Unit = js.native
+  
   /**
     * directory.roles.patch
     * @desc Updates a role. This method supports patch semantics.
@@ -152,6 +158,7 @@ class ResourceRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
+  
   /**
     * directory.roles.update
     * @desc Updates a role.
@@ -183,4 +190,3 @@ class ResourceRoles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
 }
-

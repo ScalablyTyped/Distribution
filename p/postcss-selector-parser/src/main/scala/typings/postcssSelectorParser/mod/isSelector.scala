@@ -2,11 +2,11 @@ package typings.postcssSelectorParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss-selector-parser", "isSelector")
 @js.native
 object isSelector extends js.Object {
+  
   def apply(node: js.Any): /* is postcss-selector-parser.postcss-selector-parser.Selector */ Boolean = js.native
 }
-

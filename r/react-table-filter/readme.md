@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | react-table-filter |
 | Keywords           | react, reactjs, react-table, react-table-filter, tablefilter, react-component, react-filter-table |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 6222 |
+| # downloads        | 14429 |
 | # stars            | 1 |
 
 ## Links

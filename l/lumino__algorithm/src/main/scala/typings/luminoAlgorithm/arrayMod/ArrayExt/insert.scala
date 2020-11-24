@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.insert")
 @js.native
 object insert extends js.Object {
+  
   /**
     * Insert a value into an array at a specific index.
     *
@@ -36,4 +37,3 @@ object insert extends js.Object {
     */
   def apply[T](array: js.Array[T], index: Double, value: T): Unit = js.native
 }
-

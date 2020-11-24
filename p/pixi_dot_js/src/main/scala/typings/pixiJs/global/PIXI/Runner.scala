@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Runner is a highly performant and simple alternative to signals. Best used in situations
@@ -55,4 +55,3 @@ class Runner protected ()
   extends typings.pixiJs.PIXI.Runner {
   def this(name: String) = this()
 }
-

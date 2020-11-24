@@ -5,33 +5,29 @@ import typings.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSResolvedConfigurati
 import typings.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesDeleteAliasInputMod.DeleteAliasInput
 import typings.awsSdkClientKmsBrowser.typesDeleteAliasOutputMod.DeleteAliasOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/commands/DeleteAliasCommand", JSImport.Namespace)
 @js.native
 object deleteAliasCommandMod extends js.Object {
+  
   @js.native
   class DeleteAliasCommand protected () extends Command[
           InputTypesUnion, 
           DeleteAliasInput, 
           OutputTypesUnion, 
           DeleteAliasOutput, 
-          KMSResolvedConfiguration, 
-          Blob
+          KMSResolvedConfiguration
         ] {
     def this(input: DeleteAliasInput) = this()
-    val middlewareStack: MiddlewareStack[DeleteAliasInput, DeleteAliasOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[DeleteAliasInput, DeleteAliasOutput] = js.native
   }
-  
 }
-

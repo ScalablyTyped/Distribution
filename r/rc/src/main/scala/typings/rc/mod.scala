@@ -3,11 +3,12 @@ package typings.rc
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(name: String): StringDictionary[js.Any] = js.native
   def apply(
     name: String,
@@ -119,4 +120,3 @@ object mod extends js.Object {
   parse: js.Function1[/* content */ String, StringDictionary[_]]
   ): StringDictionary[js.Any] = js.native
 }
-

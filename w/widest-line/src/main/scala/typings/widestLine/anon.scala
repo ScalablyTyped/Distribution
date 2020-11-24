@@ -2,13 +2,15 @@ package typings.widestLine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Get the visual width of the widest line in a string - the number of columns required to display it.
     	@example
@@ -20,6 +22,4 @@ object anon extends js.Object {
     	*/
     def apply(input: String): Double = js.native
   }
-  
 }
-

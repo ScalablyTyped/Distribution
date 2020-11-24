@@ -2,7 +2,7 @@ package typings.tablesorter.coreThemeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.tablesorter.tablesorterStrings.default
@@ -18,29 +18,38 @@ import scala.scalajs.js.annotation._
   - typings.tablesorter.tablesorterStrings.ice
 */
 trait CoreTheme extends js.Object
-
 object CoreTheme {
+  
   @scala.inline
   def blackice: typings.tablesorter.tablesorterStrings.blackice = "blackice".asInstanceOf[typings.tablesorter.tablesorterStrings.blackice]
+  
   @scala.inline
   def blue: typings.tablesorter.tablesorterStrings.blue = "blue".asInstanceOf[typings.tablesorter.tablesorterStrings.blue]
+  
   @scala.inline
   def bootstrap: typings.tablesorter.tablesorterStrings.bootstrap = "bootstrap".asInstanceOf[typings.tablesorter.tablesorterStrings.bootstrap]
+  
   @scala.inline
   def dark: typings.tablesorter.tablesorterStrings.dark = "dark".asInstanceOf[typings.tablesorter.tablesorterStrings.dark]
+  
   @scala.inline
   def default: typings.tablesorter.tablesorterStrings.default = "default".asInstanceOf[typings.tablesorter.tablesorterStrings.default]
+  
   @scala.inline
   def dropbox: typings.tablesorter.tablesorterStrings.dropbox = "dropbox".asInstanceOf[typings.tablesorter.tablesorterStrings.dropbox]
+  
   @scala.inline
   def green: typings.tablesorter.tablesorterStrings.green = "green".asInstanceOf[typings.tablesorter.tablesorterStrings.green]
+  
   @scala.inline
   def grey: typings.tablesorter.tablesorterStrings.grey = "grey".asInstanceOf[typings.tablesorter.tablesorterStrings.grey]
+  
   @scala.inline
   def ice: typings.tablesorter.tablesorterStrings.ice = "ice".asInstanceOf[typings.tablesorter.tablesorterStrings.ice]
+  
   @scala.inline
   def jui: typings.tablesorter.tablesorterStrings.jui = "jui".asInstanceOf[typings.tablesorter.tablesorterStrings.jui]
+  
   @scala.inline
   def `metro-dark`: typings.tablesorter.tablesorterStrings.`metro-dark` = "metro-dark".asInstanceOf[typings.tablesorter.tablesorterStrings.`metro-dark`]
 }
-

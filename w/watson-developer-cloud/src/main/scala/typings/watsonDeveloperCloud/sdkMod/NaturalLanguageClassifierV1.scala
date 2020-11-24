@@ -4,7 +4,7 @@ import typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod.Opti
 import typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Natural Language Classifier uses machine learning algorithms to return the top matching predefined classes for short text input. You create and train a classifier to connect predefined classes to example texts so that the service can apply those classes to new inputs.
@@ -30,11 +30,10 @@ class NaturalLanguageClassifierV1 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-
 /* static members */
 @JSImport("watson-developer-cloud/sdk", "NaturalLanguageClassifierV1")
 @js.native
 object NaturalLanguageClassifierV1 extends js.Object {
+  
   var URL: String = js.native
 }
-

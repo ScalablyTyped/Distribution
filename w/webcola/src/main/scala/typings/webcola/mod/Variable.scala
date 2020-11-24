@@ -2,7 +2,7 @@ package typings.webcola.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Variable")
 @js.native
@@ -13,4 +13,3 @@ class Variable protected ()
   def this(desiredPosition: Double, weight: js.UndefOr[scala.Nothing], scale: Double) = this()
   def this(desiredPosition: Double, weight: Double, scale: Double) = this()
 }
-

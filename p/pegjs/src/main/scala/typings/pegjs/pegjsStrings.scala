@@ -2,9 +2,37 @@ package typings.pegjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pegjsStrings {
+  
+  @scala.inline
+  def amd: amd = "amd".asInstanceOf[amd]
+  
+  @scala.inline
+  def bare: bare = "bare".asInstanceOf[bare]
+  
+  @scala.inline
+  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
+  
+  @scala.inline
+  def globals: globals = "globals".asInstanceOf[globals]
+  
+  @scala.inline
+  def parser: parser = "parser".asInstanceOf[parser]
+  
+  @scala.inline
+  def size: size = "size".asInstanceOf[size]
+  
+  @scala.inline
+  def source: source = "source".asInstanceOf[source]
+  
+  @scala.inline
+  def speed: speed = "speed".asInstanceOf[speed]
+  
+  @scala.inline
+  def umd: umd = "umd".asInstanceOf[umd]
+  
   @js.native
   sealed trait amd extends js.Object
   
@@ -31,24 +59,4 @@ object pegjsStrings {
   
   @js.native
   sealed trait umd extends js.Object
-  
-  @scala.inline
-  def amd: amd = "amd".asInstanceOf[amd]
-  @scala.inline
-  def bare: bare = "bare".asInstanceOf[bare]
-  @scala.inline
-  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
-  @scala.inline
-  def globals: globals = "globals".asInstanceOf[globals]
-  @scala.inline
-  def parser: parser = "parser".asInstanceOf[parser]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
-  @scala.inline
-  def speed: speed = "speed".asInstanceOf[speed]
-  @scala.inline
-  def umd: umd = "umd".asInstanceOf[umd]
 }
-

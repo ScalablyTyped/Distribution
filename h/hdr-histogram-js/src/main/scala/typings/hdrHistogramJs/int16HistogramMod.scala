@@ -4,14 +4,17 @@ import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import typings.std.Uint16Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/Int16Histogram", JSImport.Namespace)
 @js.native
 object int16HistogramMod extends js.Object {
+  
   @js.native
   trait Int16Histogram extends AbstractHistogram {
+    
     var counts: Uint16Array = js.native
+    
     var totalCount: Double = js.native
   }
   
@@ -23,6 +26,4 @@ object int16HistogramMod extends js.Object {
       numberOfSignificantValueDigits: Double
     ) = this()
   }
-  
 }
-

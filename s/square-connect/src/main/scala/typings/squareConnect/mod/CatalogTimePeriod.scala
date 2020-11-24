@@ -2,11 +2,12 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogTimePeriod")
 @js.native
 class CatalogTimePeriod () extends js.Object {
+  
   /**
     * An iCalendar (RFC5545) [event](https://tools.ietf.org/html/rfc5545#section-3.6.1), which specifies the name,
     * timing, duration and recurrence of this time period.
@@ -17,4 +18,3 @@ class CatalogTimePeriod () extends js.Object {
     */
   var event: js.UndefOr[String] = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShowAsCalculation extends js.Object
-
 /**
   *
   * The ShowAs Calculation function for the Data Pivot Field.
@@ -16,6 +15,7 @@ sealed trait ShowAsCalculation extends js.Object
 @JSGlobal("Excel.ShowAsCalculation")
 @js.native
 object ShowAsCalculation extends js.Object {
+  
   /**
     * Difference from the specified Base Field and Base Item.
     *
@@ -128,6 +128,4 @@ object ShowAsCalculation extends js.Object {
     */
   @js.native
   sealed trait unknown extends ShowAsCalculation
-  
 }
-

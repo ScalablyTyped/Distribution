@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a user, document, site, tag, or link to be inserted in a new post.
   The SocialPostCreationData class defines the content text that contains substitution strings.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class SocialDataItem ()
   extends typings.sharepoint.SP.Social.SocialDataItem
-

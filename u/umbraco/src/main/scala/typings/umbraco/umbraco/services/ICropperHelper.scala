@@ -2,7 +2,7 @@ package typings.umbraco.umbraco.services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ICropperHelper extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.cropperHelper#configuration
@@ -22,27 +23,30 @@ trait ICropperHelper extends js.Object {
     */
   def configuration(mediaTypeAlias: String): js.Any = js.native
 }
-
 object ICropperHelper {
+  
   @scala.inline
   def apply(configuration: String => js.Any): ICropperHelper = {
     val __obj = js.Dynamic.literal(configuration = js.Any.fromFunction1(configuration))
     __obj.asInstanceOf[ICropperHelper]
   }
+  
   @scala.inline
   implicit class ICropperHelperOps[Self <: ICropperHelper] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConfiguration(value: String => js.Any): Self = this.set("configuration", js.Any.fromFunction1(value))
   }
-  
 }
-

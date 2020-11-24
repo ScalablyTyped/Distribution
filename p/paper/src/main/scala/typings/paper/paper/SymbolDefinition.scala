@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * Symbols allow you to place multiple instances of an item in your
@@ -13,20 +13,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SymbolDefinition extends js.Object {
-  /** 
-    * The item used as the symbol's definition.
-    */
-  var item: Item = js.native
-  /** 
-    * The project that this symbol belongs to.
-    */
-  val project: Project = js.native
+  
   /** 
     * Checks whether the symbol's definition is equal to the supplied symbol.
     * 
     * @return true if they are equal
     */
   def equals(symbol: SymbolDefinition): Boolean = js.native
+  
+  /** 
+    * The item used as the symbol's definition.
+    */
+  var item: Item = js.native
+  
   /** 
     * Places in instance of the symbol in the project.
     * 
@@ -34,5 +33,9 @@ trait SymbolDefinition extends js.Object {
     */
   def place(): SymbolItem = js.native
   def place(position: Point): SymbolItem = js.native
+  
+  /** 
+    * The project that this symbol belongs to.
+    */
+  val project: Project = js.native
 }
-

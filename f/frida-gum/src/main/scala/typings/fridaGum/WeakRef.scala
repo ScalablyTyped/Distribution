@@ -2,7 +2,7 @@ package typings.fridaGum
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Monitors the lifetime of a heap-allocated JavaScript value.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WeakRef")
 @js.native
 object WeakRef extends js.Object
-

@@ -2,10 +2,11 @@ package typings.macosRelease.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
+  
   /**
   	Get the name and version of a macOS release from the Darwin version.
   	@param release - By default, the current operating system is used, but you can supply a custom [Darwin kernel version](https://en.wikipedia.org/wiki/Darwin_%28operating_system%29#Release_history), which is the output of [`os.release()`](https://nodejs.org/api/os.html#os_os_release).
@@ -30,4 +31,3 @@ trait Call extends js.Object {
   def apply(): Name = js.native
   def apply(release: String): Name = js.native
 }
-

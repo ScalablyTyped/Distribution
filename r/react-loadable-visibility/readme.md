@@ -10,9 +10,9 @@ A wrapper around react-loadable for elements that are visible on the page
 | ------------------ | :-------------: |
 | Full name          | react-loadable-visibility |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 3 |
-| # downloads        | 129078 |
+| # downloads        | 156939 |
 | # stars            | 0 |
 
 ## Links

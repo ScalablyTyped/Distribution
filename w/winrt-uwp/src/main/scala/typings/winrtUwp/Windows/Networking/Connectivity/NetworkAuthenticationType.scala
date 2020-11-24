@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NetworkAuthenticationType extends js.Object
-
 /** Defines values that indicate the type of authentication used by the network. */
 @JSGlobal("Windows.Networking.Connectivity.NetworkAuthenticationType")
 @js.native
 object NetworkAuthenticationType extends js.Object {
+  
   /** Specifies an authentication type defined by an independent hardware vendor (IHV). */
   @js.native
   sealed trait ihv extends NetworkAuthenticationType
@@ -50,6 +50,4 @@ object NetworkAuthenticationType extends js.Object {
   /** Specifies a Wi-Fi Protected Access (WPA) algorithm that uses pre-shared keys (PSK). IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a pre-shared key that is used on both the supplicant and authenticator. */
   @js.native
   sealed trait wpaPsk extends NetworkAuthenticationType
-  
 }
-

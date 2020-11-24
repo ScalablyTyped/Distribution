@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapEvent
 import typings.openlayers.mod.olx.control.RotateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -29,11 +29,11 @@ import scala.scalajs.js.annotation._
 class Rotate () extends Control {
   def this(opt_options: RotateOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "control.Rotate")
 @js.native
 object Rotate extends js.Object {
+  
   /**
     * Update the rotate control element.
     * @param mapEvent Map event.
@@ -41,4 +41,3 @@ object Rotate extends js.Object {
     */
   def render(mapEvent: MapEvent): Unit = js.native
 }
-

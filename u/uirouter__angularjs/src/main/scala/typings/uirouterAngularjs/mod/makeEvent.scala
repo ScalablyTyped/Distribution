@@ -3,11 +3,12 @@ package typings.uirouterAngularjs.mod
 import typings.uirouterCore.transitionInterfaceMod.IHookRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "makeEvent")
 @js.native
 object makeEvent extends js.Object {
+  
   def apply(
     registry: IHookRegistry,
     transitionService: typings.uirouterCore.transitionServiceMod.TransitionService,
@@ -19,4 +20,3 @@ object makeEvent extends js.Object {
     _
   ] = js.native
 }
-

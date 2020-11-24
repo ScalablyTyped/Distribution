@@ -10,13 +10,15 @@ import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/operations", JSImport.Namespace)
 @js.native
 object libOperationsMod extends js.Object {
+  
   @js.native
   trait ApplianceDefinitions extends js.Object {
+    
     /**
       * Creates a new appliance definition.
       *
@@ -117,6 +119,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinition]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -209,6 +212,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinition]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -274,6 +278,7 @@ object libOperationsMod extends js.Object {
       */
     def beginCreateOrUpdateByIdWithHttpOperationResponse(applianceDefinitionId: String, parameters: ApplianceDefinition): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
     def beginCreateOrUpdateByIdWithHttpOperationResponse(applianceDefinitionId: String, parameters: ApplianceDefinition, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -345,6 +350,7 @@ object libOperationsMod extends js.Object {
       parameters: ApplianceDefinition,
       options: CustomHeaders
     ): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -383,6 +389,7 @@ object libOperationsMod extends js.Object {
     def beginDeleteById(applianceDefinitionId: String, callback: ServiceCallback[Unit]): Unit = js.native
     def beginDeleteById(applianceDefinitionId: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def beginDeleteById(applianceDefinitionId: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -404,6 +411,7 @@ object libOperationsMod extends js.Object {
       */
     def beginDeleteByIdWithHttpOperationResponse(applianceDefinitionId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def beginDeleteByIdWithHttpOperationResponse(applianceDefinitionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -448,6 +456,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -470,6 +479,7 @@ object libOperationsMod extends js.Object {
       */
     def beginDeleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceDefinitionName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def beginDeleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -570,6 +580,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinition]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -662,6 +673,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinition]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -727,6 +739,7 @@ object libOperationsMod extends js.Object {
       */
     def createOrUpdateByIdWithHttpOperationResponse(applianceDefinitionId: String, parameters: ApplianceDefinition): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
     def createOrUpdateByIdWithHttpOperationResponse(applianceDefinitionId: String, parameters: ApplianceDefinition, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
+    
     /**
       * Creates a new appliance definition.
       *
@@ -798,6 +811,7 @@ object libOperationsMod extends js.Object {
       parameters: ApplianceDefinition,
       options: CustomHeaders
     ): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -836,6 +850,7 @@ object libOperationsMod extends js.Object {
     def deleteById(applianceDefinitionId: String, callback: ServiceCallback[Unit]): Unit = js.native
     def deleteById(applianceDefinitionId: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def deleteById(applianceDefinitionId: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -857,6 +872,7 @@ object libOperationsMod extends js.Object {
       */
     def deleteByIdWithHttpOperationResponse(applianceDefinitionId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteByIdWithHttpOperationResponse(applianceDefinitionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -901,6 +917,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
+    
     /**
       * Deletes the appliance definition.
       *
@@ -923,6 +940,7 @@ object libOperationsMod extends js.Object {
       */
     def deleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceDefinitionName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Gets the appliance definition.
       *
@@ -972,6 +990,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinition]
     ): Unit = js.native
+    
     /**
       * Gets the appliance definition.
       *
@@ -1015,6 +1034,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinition]
     ): Unit = js.native
+    
     /**
       * Gets the appliance definition.
       *
@@ -1036,6 +1056,7 @@ object libOperationsMod extends js.Object {
       */
     def getByIdWithHttpOperationResponse(applianceDefinitionId: String): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
     def getByIdWithHttpOperationResponse(applianceDefinitionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
+    
     /**
       * Gets the appliance definition.
       *
@@ -1058,6 +1079,7 @@ object libOperationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(resourceGroupName: String, applianceDefinitionName: String): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
     def getWithHttpOperationResponse(resourceGroupName: String, applianceDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceDefinition]] = js.native
+    
     /**
       * Lists the appliance definitions in a resource group.
       *
@@ -1100,6 +1122,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * Lists the appliance definitions in a resource group.
       *
@@ -1142,6 +1165,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[ApplianceDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * Lists the appliance definitions in a resource group.
       *
@@ -1161,6 +1185,7 @@ object libOperationsMod extends js.Object {
       */
     def listByResourceGroupNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ApplianceDefinitionListResult]] = js.native
     def listByResourceGroupNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceDefinitionListResult]] = js.native
+    
     /**
       * Lists the appliance definitions in a resource group.
       *
@@ -1184,6 +1209,7 @@ object libOperationsMod extends js.Object {
   
   @js.native
   trait Appliances extends js.Object {
+    
     /**
       * Creates a new appliance.
       *
@@ -1286,6 +1312,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1382,6 +1409,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1455,6 +1483,7 @@ object libOperationsMod extends js.Object {
       */
     def beginCreateOrUpdateByIdWithHttpOperationResponse(applianceId: String, parameters: Appliance): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def beginCreateOrUpdateByIdWithHttpOperationResponse(applianceId: String, parameters: Appliance, options: CustomHeaders): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1528,6 +1557,7 @@ object libOperationsMod extends js.Object {
       */
     def beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, parameters: Appliance): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, parameters: Appliance, options: CustomHeaders): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -1566,6 +1596,7 @@ object libOperationsMod extends js.Object {
     def beginDeleteById(applianceId: String, callback: ServiceCallback[Unit]): Unit = js.native
     def beginDeleteById(applianceId: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def beginDeleteById(applianceId: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -1587,6 +1618,7 @@ object libOperationsMod extends js.Object {
       */
     def beginDeleteByIdWithHttpOperationResponse(applianceId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def beginDeleteByIdWithHttpOperationResponse(applianceId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -1630,6 +1662,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -1651,6 +1684,7 @@ object libOperationsMod extends js.Object {
       */
     def beginDeleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def beginDeleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1753,6 +1787,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1849,6 +1884,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1922,6 +1958,7 @@ object libOperationsMod extends js.Object {
       */
     def createOrUpdateByIdWithHttpOperationResponse(applianceId: String, parameters: Appliance): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def createOrUpdateByIdWithHttpOperationResponse(applianceId: String, parameters: Appliance, options: CustomHeaders): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Creates a new appliance.
       *
@@ -1995,6 +2032,7 @@ object libOperationsMod extends js.Object {
       */
     def createOrUpdateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, parameters: Appliance): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def createOrUpdateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, parameters: Appliance, options: CustomHeaders): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -2033,6 +2071,7 @@ object libOperationsMod extends js.Object {
     def deleteById(applianceId: String, callback: ServiceCallback[Unit]): Unit = js.native
     def deleteById(applianceId: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def deleteById(applianceId: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -2054,6 +2093,7 @@ object libOperationsMod extends js.Object {
       */
     def deleteByIdWithHttpOperationResponse(applianceId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteByIdWithHttpOperationResponse(applianceId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -2097,6 +2137,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
+    
     /**
       * Deletes the appliance.
       *
@@ -2118,6 +2159,7 @@ object libOperationsMod extends js.Object {
       */
     def deleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteMethodWithHttpOperationResponse(resourceGroupName: String, applianceName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * Gets the appliance.
       *
@@ -2162,6 +2204,7 @@ object libOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
+    
     /**
       * Gets the appliance.
       *
@@ -2201,6 +2244,7 @@ object libOperationsMod extends js.Object {
     def getById(applianceId: String, callback: ServiceCallback[Appliance]): Unit = js.native
     def getById(applianceId: String, options: CustomHeaders): js.Promise[Appliance] = js.native
     def getById(applianceId: String, options: CustomHeaders, callback: ServiceCallback[Appliance]): Unit = js.native
+    
     /**
       * Gets the appliance.
       *
@@ -2222,6 +2266,7 @@ object libOperationsMod extends js.Object {
       */
     def getByIdWithHttpOperationResponse(applianceId: String): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def getByIdWithHttpOperationResponse(applianceId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Gets the appliance.
       *
@@ -2243,6 +2288,7 @@ object libOperationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(resourceGroupName: String, applianceName: String): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def getWithHttpOperationResponse(resourceGroupName: String, applianceName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Gets all the appliances within a resource group.
       *
@@ -2280,6 +2326,7 @@ object libOperationsMod extends js.Object {
     def listByResourceGroup(resourceGroupName: String, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
     def listByResourceGroup(resourceGroupName: String, options: CustomHeaders): js.Promise[ApplianceListResult] = js.native
     def listByResourceGroup(resourceGroupName: String, options: CustomHeaders, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
+    
     /**
       * Gets all the appliances within a resource group.
       *
@@ -2317,6 +2364,7 @@ object libOperationsMod extends js.Object {
     def listByResourceGroupNext(nextPageLink: String, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
     def listByResourceGroupNext(nextPageLink: String, options: CustomHeaders): js.Promise[ApplianceListResult] = js.native
     def listByResourceGroupNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
+    
     /**
       * Gets all the appliances within a resource group.
       *
@@ -2336,6 +2384,7 @@ object libOperationsMod extends js.Object {
       */
     def listByResourceGroupNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
     def listByResourceGroupNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
+    
     /**
       * Gets all the appliances within a resource group.
       *
@@ -2355,6 +2404,7 @@ object libOperationsMod extends js.Object {
       */
     def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
     def listByResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
+    
     /**
       * Gets all the appliances within a subscription.
       *
@@ -2389,6 +2439,7 @@ object libOperationsMod extends js.Object {
     def listBySubscription(callback: ServiceCallback[ApplianceListResult]): Unit = js.native
     def listBySubscription(options: CustomHeaders): js.Promise[ApplianceListResult] = js.native
     def listBySubscription(options: CustomHeaders, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
+    
     /**
       * Gets all the appliances within a subscription.
       *
@@ -2426,6 +2477,7 @@ object libOperationsMod extends js.Object {
     def listBySubscriptionNext(nextPageLink: String, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
     def listBySubscriptionNext(nextPageLink: String, options: CustomHeaders): js.Promise[ApplianceListResult] = js.native
     def listBySubscriptionNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ApplianceListResult]): Unit = js.native
+    
     /**
       * Gets all the appliances within a subscription.
       *
@@ -2445,6 +2497,7 @@ object libOperationsMod extends js.Object {
       */
     def listBySubscriptionNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
     def listBySubscriptionNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
+    
     /**
       * Gets all the appliances within a subscription.
       *
@@ -2461,6 +2514,7 @@ object libOperationsMod extends js.Object {
       */
     def listBySubscriptionWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
     def listBySubscriptionWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[ApplianceListResult]] = js.native
+    
     /**
       * Updates an existing appliance. The only value that can be updated via PATCH
       * currently is the tags.
@@ -2559,6 +2613,7 @@ object libOperationsMod extends js.Object {
       options: Parameters,
       callback: ServiceCallback[Appliance]
     ): Unit = js.native
+    
     /**
       * Updates an existing appliance. The only value that can be updated via PATCH
       * currently is the tags.
@@ -2652,6 +2707,7 @@ object libOperationsMod extends js.Object {
     def updateById(applianceId: String, callback: ServiceCallback[Appliance]): Unit = js.native
     def updateById(applianceId: String, options: Parameters): js.Promise[Appliance] = js.native
     def updateById(applianceId: String, options: Parameters, callback: ServiceCallback[Appliance]): Unit = js.native
+    
     /**
       * Updates an existing appliance. The only value that can be updated via PATCH
       * currently is the tags.
@@ -2727,6 +2783,7 @@ object libOperationsMod extends js.Object {
       */
     def updateByIdWithHttpOperationResponse(applianceId: String): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def updateByIdWithHttpOperationResponse(applianceId: String, options: Parameters): js.Promise[HttpOperationResponse[Appliance]] = js.native
+    
     /**
       * Updates an existing appliance. The only value that can be updated via PATCH
       * currently is the tags.
@@ -2803,6 +2860,4 @@ object libOperationsMod extends js.Object {
     def updateWithHttpOperationResponse(resourceGroupName: String, applianceName: String): js.Promise[HttpOperationResponse[Appliance]] = js.native
     def updateWithHttpOperationResponse(resourceGroupName: String, applianceName: String, options: Parameters): js.Promise[HttpOperationResponse[Appliance]] = js.native
   }
-  
 }
-

@@ -5,14 +5,17 @@ import typings.meteor.Blaze.TemplateStatic
 import typings.meteor.Blaze.ViewStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Blaze")
 @js.native
 object ^ extends js.Object {
+  
   var Template: TemplateStatic = js.native
+  
   var TemplateInstance: TemplateInstanceStatic = js.native
+  
   var View: ViewStatic = js.native
+  
   var currentView: typings.meteor.Blaze.View = js.native
 }
-

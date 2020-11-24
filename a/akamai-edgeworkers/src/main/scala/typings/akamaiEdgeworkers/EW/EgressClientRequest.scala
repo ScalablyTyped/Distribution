@@ -2,7 +2,7 @@ package typings.akamaiEdgeworkers.EW
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // onClientResponse
 @js.native
@@ -11,8 +11,8 @@ trait EgressClientRequest
      with ReadsVariables
      with Request
      with MutatesVariables
-
 object EgressClientRequest {
+  
   @scala.inline
   def apply(
     cpCode: Double,
@@ -30,4 +30,3 @@ object EgressClientRequest {
     __obj.asInstanceOf[EgressClientRequest]
   }
 }
-

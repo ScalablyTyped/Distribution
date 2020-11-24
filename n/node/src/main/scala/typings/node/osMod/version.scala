@@ -2,11 +2,12 @@ package typings.node.osMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("os", "version")
 @js.native
 object version extends js.Object {
+  
   /**
     * Returns a string identifying the kernel version.
     * On POSIX systems, the operating system release is determined by calling
@@ -16,4 +17,3 @@ object version extends js.Object {
     */
   def apply(): String = js.native
 }
-

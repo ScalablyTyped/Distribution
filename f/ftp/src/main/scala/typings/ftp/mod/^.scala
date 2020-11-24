@@ -2,7 +2,7 @@ package typings.ftp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FTP client.
@@ -21,4 +21,3 @@ import scala.scalajs.js.annotation._
   * Creates and returns a new FTP client instance.
   */
 class ^ () extends Client
-

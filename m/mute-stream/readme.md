@@ -10,9 +10,9 @@ Bytes go in, but they don't come out (when muted).
 | ------------------ | :-------------: |
 | Full name          | mute-stream |
 | Keywords           | mute, stream, pipe |
-| # releases         | 2 |
-| # dependents       | 106 |
-| # downloads        | 606093375 |
+| # releases         | 1 |
+| # dependents       | 127 |
+| # downloads        | 748459844 |
 | # stars            | 2 |
 
 ## Links

@@ -14,7 +14,7 @@ import typings.phaser.Phaser.Physics.Arcade.Components.Size
 import typings.phaser.Phaser.Physics.Arcade.Components.Velocity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Arcade Physics Image is an Image with an Arcade Physics body and related components.
@@ -39,6 +39,7 @@ trait Image
      with Mass
      with Size
      with Velocity {
+  
   /**
     * **DEPRECATED**: Please use `setBodySize` instead.
     * 
@@ -50,4 +51,3 @@ trait Image
   /* InferMemberOverrides */
   override def setSize(width: Double, height: Double): this.type = js.native
 }
-

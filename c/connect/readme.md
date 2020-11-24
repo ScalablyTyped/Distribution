@@ -10,9 +10,9 @@ High performance middleware framework
 | ------------------ | :-------------: |
 | Full name          | connect |
 | Keywords           | framework, web, middleware, connect, rack |
-| # releases         | 4 |
-| # dependents       | 2014 |
-| # downloads        | 134300023 |
+| # releases         | 3 |
+| # dependents       | 2100 |
+| # downloads        | 169742621 |
 | # stars            | 246 |
 
 ## Links

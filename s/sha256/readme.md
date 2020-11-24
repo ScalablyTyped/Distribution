@@ -10,9 +10,9 @@ Compute SHA256 of bytes or strings.
 | ------------------ | :-------------: |
 | Full name          | sha256 |
 | Keywords           | string, strings, sha256, bytes, cryptography |
-| # releases         | 1 |
-| # dependents       | 213 |
-| # downloads        | 854539 |
+| # releases         | 0 |
+| # dependents       | 256 |
+| # downloads        | 1145678 |
 | # stars            | 9 |
 
 ## Links

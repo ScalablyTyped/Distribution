@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2/routeTableAssociation", "RouteTableAssociation")
 @js.native
@@ -21,24 +21,27 @@ class RouteTableAssociation protected () extends CustomResource {
     */
   def this(name: String, args: RouteTableAssociationArgs) = this()
   def this(name: String, args: RouteTableAssociationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The gateway ID to create an association. Conflicts with `subnetId`.
     */
   val gatewayId: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The ID of the routing table to associate with.
     */
   val routeTableId: Output_[String] = js.native
+  
   /**
     * The subnet ID to create an association. Conflicts with `gatewayId`.
     */
   val subnetId: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2/routeTableAssociation", "RouteTableAssociation")
 @js.native
 object RouteTableAssociation extends js.Object {
+  
   /**
     * Get an existing RouteTableAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +55,10 @@ object RouteTableAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RouteTableAssociation = js.native
   def get(name: String, id: Input[ID], state: RouteTableAssociationState): RouteTableAssociation = js.native
   def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): RouteTableAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ Boolean = js.native
 }
-

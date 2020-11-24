@@ -3,7 +3,7 @@ package typings.jpm.contextMenuMod
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.jpm.contextMenuMod.Item
@@ -11,13 +11,14 @@ import scala.scalajs.js.annotation._
   - typings.jpm.contextMenuMod.Separator
 */
 trait ItemMenuSeparator extends js.Object
-
 object ItemMenuSeparator {
+  
   @scala.inline
   def Item(context: ItemContext, data: js.Any, destroy: () => Unit, image: String | URL, label: String): ItemMenuSeparator = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), image = image.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemMenuSeparator]
   }
+  
   @scala.inline
   def Menu(
     addItem: ItemMenuSeparator => Unit,
@@ -33,10 +34,10 @@ object ItemMenuSeparator {
     val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction1(addItem), contentScript = contentScript.asInstanceOf[js.Any], contentScriptFile = contentScriptFile.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), image = image.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], removeItem = js.Any.fromFunction1(removeItem))
     __obj.asInstanceOf[ItemMenuSeparator]
   }
+  
   @scala.inline
   def Separator(destroy: () => Unit, parentMenu: Menu): ItemMenuSeparator = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), parentMenu = parentMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemMenuSeparator]
   }
 }
-

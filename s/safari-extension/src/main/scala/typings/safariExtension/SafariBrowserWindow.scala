@@ -2,16 +2,19 @@ package typings.safariExtension
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SafariBrowserWindow extends SafariEventTarget {
-  var activeTab: SafariBrowserTab = js.native
-  var tabs: js.Array[SafariBrowserTab] = js.native
-  var visible: Boolean = js.native
+  
   def activate(): Unit = js.native
+  
+  var activeTab: SafariBrowserTab = js.native
+  
   def close(): Unit = js.native
+  
   def insertTab(tab: SafariBrowserTab, index: Double): SafariBrowserTab = js.native
+  
   /**
     * Opens a new tab in the window.
     * Available in Safari 5.0 and later.
@@ -23,5 +26,8 @@ trait SafariBrowserWindow extends SafariEventTarget {
   def openTab(visibility: js.UndefOr[scala.Nothing], index: Double): SafariBrowserTab = js.native
   def openTab(visibility: String): SafariBrowserTab = js.native
   def openTab(visibility: String, index: Double): SafariBrowserTab = js.native
+  
+  var tabs: js.Array[SafariBrowserTab] = js.native
+  
+  var visible: Boolean = js.native
 }
-

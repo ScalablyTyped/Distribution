@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Permissions")
 @js.native
 class ResourceAccountsPermissions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.permissions.create
     * @desc Creates a user's Account & Container Permissions.
@@ -42,6 +44,7 @@ class ResourceAccountsPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserAccess]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.permissions.delete
     * @desc Removes a user from the account, revoking access to it and all of
@@ -72,6 +75,7 @@ class ResourceAccountsPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.permissions.get
     * @desc Gets a user's Account & Container Permissions.
@@ -101,6 +105,7 @@ class ResourceAccountsPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserAccess]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.permissions.list
     * @desc List all users that have access to the account along with Account
@@ -133,6 +138,7 @@ class ResourceAccountsPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAccountUsersResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.permissions.update
     * @desc Updates a user's Account & Container Permissions.
@@ -164,4 +170,3 @@ class ResourceAccountsPermissions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUserAccess]
   ): Unit = js.native
 }
-

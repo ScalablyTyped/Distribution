@@ -3,10 +3,11 @@ package typings.awsIotDeviceSdk.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait job extends js.Object {
+  
   /**
     * The JSON document describing details of the job to be executed eg.
     * {
@@ -16,17 +17,7 @@ trait job extends js.Object {
     * }
     */
   var document: jobDocument = js.native
-  /** Object that contains job execution information and functions for updating job execution status. */
-  /** Returns the job id. */
-  var id: String = js.native
-  /**
-    * Returns the job operation from the job document. Eg. 'install', 'reboot', etc.
-    */
-  var operation: String = js.native
-  /**
-    * Returns the current job status according to AWS Orchestra.
-    */
-  var status: jobStatus = js.native
+  
   /**
     * Update the status of the job execution to be FAILED for the thing associated with the job.
     *
@@ -37,6 +28,11 @@ trait job extends js.Object {
   def failed(statusDetails: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def failed(statusDetails: statusDetails): Unit = js.native
   def failed(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /** Object that contains job execution information and functions for updating job execution status. */
+  /** Returns the job id. */
+  var id: String = js.native
+  
   /**
     * Update the status of the job execution to be IN_PROGRESS for the thing associated with the job.
     *
@@ -47,6 +43,17 @@ trait job extends js.Object {
   def inProgress(statusDetails: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def inProgress(statusDetails: statusDetails): Unit = js.native
   def inProgress(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /**
+    * Returns the job operation from the job document. Eg. 'install', 'reboot', etc.
+    */
+  var operation: String = js.native
+  
+  /**
+    * Returns the current job status according to AWS Orchestra.
+    */
+  var status: jobStatus = js.native
+  
   /**
     * Update the status of the job execution to be SUCCESS for the thing associated with the job.
     *
@@ -58,4 +65,3 @@ trait job extends js.Object {
   def succeeded(statusDetails: statusDetails): Unit = js.native
   def succeeded(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

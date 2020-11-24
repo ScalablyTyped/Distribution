@@ -12,7 +12,7 @@ Better spy fake calls for Jasmine
 | Keywords           | jasmine, spy, fake, mock |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3741 |
+| # downloads        | 3667 |
 | # stars            | 0 |
 
 ## Links

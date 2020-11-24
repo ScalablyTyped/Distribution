@@ -2,9 +2,10 @@ package typings.cors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type CorsOptionsDelegate = js.Function2[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
@@ -19,6 +20,7 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
   type CustomOrigin = js.Function2[
     /* requestOrigin */ js.UndefOr[java.lang.String], 
     /* callback */ js.Function2[

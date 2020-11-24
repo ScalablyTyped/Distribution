@@ -2,7 +2,7 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stored map from non-relative module name to a table: directory -> result of module lookup in this directory
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NonRelativeModuleNameResolutionCache extends js.Object {
+  
   def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String): PerModuleNameCache = js.native
   def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String, redirectedReference: ResolvedProjectReference): PerModuleNameCache = js.native
 }
-

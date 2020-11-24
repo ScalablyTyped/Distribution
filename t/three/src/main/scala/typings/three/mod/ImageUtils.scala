@@ -2,13 +2,16 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "ImageUtils")
 @js.native
 object ImageUtils extends js.Object {
+  
   var crossOrigin: String = js.native
+  
   def getDataURL(image: js.Any): String = js.native
+  
   def loadTexture(url: String): typings.three.textureMod.Texture = js.native
   def loadTexture(
     url: String,
@@ -45,6 +48,7 @@ object ImageUtils extends js.Object {
     onLoad: js.Function1[/* texture */ typings.three.textureMod.Texture, Unit],
     onError: js.Function1[/* message */ String, Unit]
   ): typings.three.textureMod.Texture = js.native
+  
   def loadTextureCube(array: js.Array[String]): typings.three.textureMod.Texture = js.native
   def loadTextureCube(
     array: js.Array[String],
@@ -82,4 +86,3 @@ object ImageUtils extends js.Object {
     onError: js.Function1[/* message */ String, Unit]
   ): typings.three.textureMod.Texture = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.node.Buffer
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.grpcGrpcJs.serverCallMod.ServerDuplexStream because var conflicts: _writev, destroyed, readable. Inlined cancelled, metadata, getPeer, sendMetadata */ @JSImport("@grpc/grpc-js/build/src/server-call", "ServerDuplexStreamImpl")
@@ -19,17 +19,24 @@ class ServerDuplexStreamImpl[RequestType, ResponseType] protected () extends Dup
     serialize: Serialize[ResponseType],
     deserialize: Deserialize[RequestType]
   ) = this()
+  
   var call: js.Any = js.native
+  
   var cancelled: Boolean = js.native
+  
+  def deserialize(bytes: Buffer): RequestType = js.native
   @JSName("deserialize")
   var deserialize_Original: Deserialize[RequestType] = js.native
+  
+  def getPeer(): String = js.native
+  
   var metadata: Metadata = js.native
+  
+  def sendMetadata(responseMetadata: Metadata): Unit = js.native
+  
+  def serialize(value: ResponseType): Buffer = js.native
   @JSName("serialize")
   var serialize_Original: Serialize[ResponseType] = js.native
+  
   var trailingMetadata: js.Any = js.native
-  def deserialize(bytes: Buffer): RequestType = js.native
-  def getPeer(): String = js.native
-  def sendMetadata(responseMetadata: Metadata): Unit = js.native
-  def serialize(value: ResponseType): Buffer = js.native
 }
-

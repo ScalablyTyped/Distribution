@@ -2,11 +2,12 @@ package typings.webix.global.webix.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("webix.ui.datafilter")
 @js.native
 object datafilter extends js.Object {
+  
   @js.native
   class columnGroup ()
     extends typings.webix.webix.ui.datafilter.textFilter
@@ -62,6 +63,4 @@ object datafilter extends js.Object {
   @js.native
   class textFilter ()
     extends typings.webix.webix.ui.datafilter.textFilter
-  
 }
-

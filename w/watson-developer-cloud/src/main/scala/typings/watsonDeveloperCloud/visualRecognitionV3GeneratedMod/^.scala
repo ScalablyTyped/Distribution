@@ -2,7 +2,7 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Visual Recognition service uses deep learning algorithms to identify scenes, objects, and faces  in images you upload to the service. You can create and train a custom classifier to identify subjects that suit your needs.
@@ -28,10 +28,9 @@ class ^ protected () extends VisualRecognitionV3 {
     */
   def this(options: Options) = this()
 }
-
 @JSImport("watson-developer-cloud/visual-recognition/v3-generated", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var URL: String = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Point object represents a point in the two dimensional space
@@ -41,11 +41,11 @@ class Point protected ()
     */
   def this(x: Double, y: Double) = this()
 }
-
 /* static members */
 @JSGlobal("paper.Point")
 @js.native
 object Point extends js.Object {
+  
   /** 
     * Returns a new point object with the largest {@link #x} and
     * {@link #y} of the supplied points.
@@ -53,6 +53,7 @@ object Point extends js.Object {
     * @return the newly created point object
     */
   def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
+  
   /** 
     * Returns a new point object with the smallest {@link #x} and
     * {@link #y} of the supplied points.
@@ -60,6 +61,7 @@ object Point extends js.Object {
     * @return the newly created point object
     */
   def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
+  
   /** 
     * Returns a point object with random {@link #x} and {@link #y} values
     * between `0` and `1`.
@@ -68,4 +70,3 @@ object Point extends js.Object {
     */
   def random(): typings.paper.paper.Point = js.native
 }
-

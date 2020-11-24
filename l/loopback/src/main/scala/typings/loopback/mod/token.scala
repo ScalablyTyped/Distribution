@@ -6,11 +6,12 @@ import typings.expressServeStaticCore.mod.Query
 import typings.loopback.anon.Cookies
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("loopback", "token")
 @js.native
 object token extends js.Object {
+  
   /**
     * Check for an access token in cookies, headers, and query string parameters.
     * This function always checks for the following
@@ -45,4 +46,3 @@ object token extends js.Object {
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(options: Cookies): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.npmRegistryFetch.mod
 import typings.nodeFetch.mod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("npm-registry-fetch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Performs a request to a given URL.
     *
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(url: String): js.Promise[Response] = js.native
   def apply(url: String, opts: Options): js.Promise[Response] = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.std.Date
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.Signature")
 @js.native
@@ -20,21 +20,25 @@ class Signature protected () extends js.Object {
     * @param date the creation date of the signature
     */
   def this(date: Date) = this()
+  
   /**
     * Returns the expiration time of the signature or Infinity if signature does not expire
     * @returns expiration time
     */
   def getExpirationTime(): Date = js.native
+  
   /**
     * Verifies signature expiration date
     * @param date (optional) use the given date for verification instead of the current time
     * @returns true if expired
     */
   def isExpired(date: Date): Boolean = js.native
+  
   /**
     * Fix custom types after cloning
     */
   def postCloneTypeFix(): Unit = js.native
+  
   /**
     * parsing function for a signature packet (tag 2).
     * @param bytes payload of a tag 2 packet
@@ -43,6 +47,7 @@ class Signature protected () extends js.Object {
     * @returns object representation
     */
   def read(bytes: String, position: Integer, len: Integer): Signature = js.native
+  
   /**
     * Signs provided data. This needs to be done prior to serialization.
     * @param key private key used to sign the message.
@@ -50,6 +55,7 @@ class Signature protected () extends js.Object {
     * @returns
     */
   def sign(key: SecretKey, data: js.Object): js.Promise[Boolean] = js.native
+  
   def verify(key: PublicKey, signatureType: signature, data: String): js.Promise[Boolean] = js.native
   def verify(key: PublicKey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
   /**
@@ -65,15 +71,16 @@ class Signature protected () extends js.Object {
   def verify(key: SecretKey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
   def verify(key: SecretSubkey, signatureType: signature, data: String): js.Promise[Boolean] = js.native
   def verify(key: SecretSubkey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
+  
   /**
     * Creates Uint8Array of bytes of all subpacket data except Issuer and Embedded Signature subpackets
     * @returns subpacket data
     */
   def write_hashed_sub_packets(): Uint8Array = js.native
+  
   /**
     * Creates Uint8Array of bytes of Issuer and Embedded Signature subpackets
     * @returns subpacket data
     */
   def write_unhashed_sub_packets(): Uint8Array = js.native
 }
-

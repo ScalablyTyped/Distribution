@@ -3,13 +3,13 @@ package typings.d3Collection.mod
 import typings.d3Collection.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NestedMap[Datum, RollupType]
   extends Map_[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
-
 object NestedMap {
+  
   @scala.inline
   def apply[Datum, RollupType](
     clear: () => Unit,
@@ -33,4 +33,3 @@ object NestedMap {
     __obj.asInstanceOf[NestedMap[Datum, RollupType]]
   }
 }
-

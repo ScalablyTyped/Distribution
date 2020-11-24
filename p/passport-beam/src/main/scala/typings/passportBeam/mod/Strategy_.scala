@@ -7,7 +7,7 @@ import typings.passportBeam.mod.Strategy.IStrategyOption
 import typings.passportBeam.mod.Strategy.Profile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-beam", "Strategy")
 @js.native
@@ -23,8 +23,9 @@ class Strategy_ protected ()
         Unit
       ]
   ) = this()
+  
+  def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+  
   @JSName("name")
   var name_Strategy_ : String = js.native
-  def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
 }
-

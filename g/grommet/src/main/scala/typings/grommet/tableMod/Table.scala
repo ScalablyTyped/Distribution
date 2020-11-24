@@ -7,13 +7,12 @@ import typings.react.mod.TableHTMLAttributes
 import typings.std.HTMLTableElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Table", "Table")
+@JSImport("grommet/components/Table", "Table")
 @js.native
 object Table extends TopLevel[
       FC[
         TableProps with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
       ]
     ]
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/core" : "3.1.1"
+      "@octokit/core" : "3.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/core" : "3.1.1"
+      "@octokit/core" : "3.2.1"
     }
   ],
   "compile-devDependencies" : [

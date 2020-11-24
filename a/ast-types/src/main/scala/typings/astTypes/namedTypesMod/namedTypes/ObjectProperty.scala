@@ -1,31 +1,42 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
+import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.PrintableKind
+import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/namedTypes.namedTypes.Node, 'type'> ]: ast-types.ast-types/gen/namedTypes.namedTypes.Node[P]} */ trait ObjectProperty
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Node, 'type'> */
+@js.native
+trait ObjectProperty
   extends ASTNode
      with NodeKind
      with PrintableKind {
-  var accessibility: js.UndefOr[LiteralKind | Null] = js.undefined
-  var computed: js.UndefOr[Boolean] = js.undefined
-  var key: LiteralKind | IdentifierKind | ExpressionKind
-  var shorthand: js.UndefOr[Boolean] = js.undefined
-  var `type`: typings.astTypes.astTypesStrings.ObjectProperty
-  var value: ExpressionKind | PatternKind
+  
+  var accessibility: js.UndefOr[LiteralKind | Null] = js.native
+  
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  
+  var computed: js.UndefOr[Boolean] = js.native
+  
+  var key: LiteralKind | IdentifierKind | ExpressionKind = js.native
+  
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  
+  var shorthand: js.UndefOr[Boolean] = js.native
+  
+  var `type`: typings.astTypes.astTypesStrings.ObjectProperty = js.native
+  
+  var value: ExpressionKind | PatternKind = js.native
 }
-
 @JSImport("ast-types/gen/namedTypes", "namedTypes.ObjectProperty")
 @js.native
 object ObjectProperty extends TopLevel[Type[ObjectProperty]]
-

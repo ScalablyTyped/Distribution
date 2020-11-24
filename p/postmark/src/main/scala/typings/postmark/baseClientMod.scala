@@ -10,27 +10,47 @@ import typings.postmark.modelsMod.ClientOptions.Configuration
 import typings.postmark.modelsMod.FilteringParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/BaseClient", JSImport.Namespace)
 @js.native
 object baseClientMod extends js.Object {
+  
   @js.native
   trait BaseClient extends js.Object {
+    
     val authHeader: js.Any = js.native
+    
     /**
       * Create http client instance with default settings.
       *
       * @return {AxiosInstance}
       */
     var buildDefaultHttpClient: js.Any = js.native
+    
     var clientOptions: js.Any = js.native
+    
     var clientVersion: String = js.native
+    
     var errorHandler: ErrorHandler = js.native
+    
     var getBaseHttpRequestURL: js.Any = js.native
+    
+    def getClientOptions(): Configuration = js.native
+    
+    /**
+      * JSON object with default headers sent by HTTP request.
+      */
+    def getComposedHttpRequestHeaders(): js.Object = js.native
+    
     var getRequestTimeoutInSeconds: js.Any = js.native
+    
+    def httpClient(config: AxiosRequestConfig): AxiosPromise[_] = js.native
+    def httpClient(url: String): AxiosPromise[_] = js.native
+    def httpClient(url: String, config: AxiosRequestConfig): AxiosPromise[_] = js.native
     @JSName("httpClient")
     val httpClient_Original: AxiosInstance = js.native
+    
     /**
       * Process http request.
       *
@@ -40,6 +60,7 @@ object baseClientMod extends js.Object {
       * @param body - Data sent with http request.
       */
     var httpRequest: js.Any = js.native
+    
     /**
       * Process callback function for HTTP request.
       *
@@ -47,6 +68,7 @@ object baseClientMod extends js.Object {
       * @param callback - callback function to be executed.
       */
     var processCallbackRequest: js.Any = js.native
+    
     /**
       * Process HTTP request.
       *
@@ -58,6 +80,7 @@ object baseClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     var processHttpRequest: js.Any = js.native
+    
     /**
       * Process request for Postmark ClientOptions.
       *
@@ -70,21 +93,7 @@ object baseClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     var processRequest: js.Any = js.native
-    val token: js.Any = js.native
-    /**
-      * Token can't be empty.
-      *
-      * @param {string} token - HTTP request token
-      */
-    var verifyToken: js.Any = js.native
-    def getClientOptions(): Configuration = js.native
-    /**
-      * JSON object with default headers sent by HTTP request.
-      */
-    def getComposedHttpRequestHeaders(): js.Object = js.native
-    def httpClient(config: AxiosRequestConfig): AxiosPromise[_] = js.native
-    def httpClient(url: String): AxiosPromise[_] = js.native
-    def httpClient(url: String, config: AxiosRequestConfig): AxiosPromise[_] = js.native
+    
     /**
       * Process http request with sending body - data.
       *
@@ -94,6 +103,7 @@ object baseClientMod extends js.Object {
     /* protected */ def processRequestWithBody[T](method: HttpMethod, path: String, body: js.Object): js.Promise[T] = js.native
     /* protected */ def processRequestWithBody[T](method: HttpMethod, path: String, body: js.Object, callback: Callback[T]): js.Promise[T] = js.native
     /* protected */ def processRequestWithBody[T](method: HttpMethod, path: String, body: Null, callback: Callback[T]): js.Promise[T] = js.native
+    
     /**
       * Process http request without sending body - data.
       *
@@ -108,11 +118,22 @@ object baseClientMod extends js.Object {
     ): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object, callback: Callback[T]): js.Promise[T] = js.native
+    
     def setClientOptions(configOptions: Configuration): Unit = js.native
+    
     /**
       * Set default values for count and offset when doing filtering with API requests if they are not specified by filter.
       */
     /* protected */ def setDefaultPaginationValues(filter: FilteringParameters): Unit = js.native
+    
+    val token: js.Any = js.native
+    
+    /**
+      * Token can't be empty.
+      *
+      * @param {string} token - HTTP request token
+      */
+    var verifyToken: js.Any = js.native
   }
   
   @js.native
@@ -120,10 +141,10 @@ object baseClientMod extends js.Object {
     protected def this(token: String, authHeader: String) = this()
     protected def this(token: String, authHeader: String, configOptions: Configuration) = this()
   }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     /**
       * Client connection configuration options.
       * You may modify these values and new clients will use them.
@@ -131,6 +152,4 @@ object baseClientMod extends js.Object {
       */
     var DefaultOptions: Configuration = js.native
   }
-  
 }
-

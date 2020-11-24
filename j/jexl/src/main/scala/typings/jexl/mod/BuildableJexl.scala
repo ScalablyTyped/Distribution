@@ -3,7 +3,7 @@ package typings.jexl.mod
 import typings.jexl.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Jexl is the Javascript Expression Language, capable of parsing and
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BuildableJexl extends Jexl {
+  
   var Jexl: Instantiable = js.native
 }
-

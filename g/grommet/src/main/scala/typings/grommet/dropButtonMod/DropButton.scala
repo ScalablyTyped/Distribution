@@ -12,9 +12,9 @@ import typings.react.mod.DetailedHTMLProps
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/DropButton", "DropButton")
+@JSImport("grommet/components/DropButton", "DropButton")
 @js.native
 class DropButton protected ()
   extends Component[
@@ -37,8 +37,7 @@ class DropButton protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6/components/DropButton", "DropButton")
+@JSImport("grommet/components/DropButton", "DropButton")
 @js.native
 object DropButton extends TopLevel[
       ComponentClass[
@@ -49,4 +48,3 @@ object DropButton extends TopLevel[
         ComponentState
       ]
     ]
-

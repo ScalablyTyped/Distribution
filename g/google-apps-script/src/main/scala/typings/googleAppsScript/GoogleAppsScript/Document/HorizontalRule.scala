@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing an horizontal rule. A HorizontalRule can be contained within a
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HorizontalRule extends Element
-
 object HorizontalRule {
+  
   @scala.inline
   def apply(
     asBody: () => Body,
@@ -50,4 +50,3 @@ object HorizontalRule {
     __obj.asInstanceOf[HorizontalRule]
   }
 }
-

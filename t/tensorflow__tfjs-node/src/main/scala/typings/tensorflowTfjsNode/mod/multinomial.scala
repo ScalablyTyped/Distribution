@@ -1,12 +1,12 @@
 package typings.tensorflowTfjsNode.mod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor1D
-import typings.tensorflowTfjsCore.tensorMod.Tensor2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "multinomial")
 @js.native
@@ -20,4 +20,3 @@ object multinomial
         Tensor1D | Tensor2D
       ]
     ]
-

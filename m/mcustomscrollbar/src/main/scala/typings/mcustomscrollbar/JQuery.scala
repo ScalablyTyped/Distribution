@@ -4,10 +4,11 @@ import typings.mcustomscrollbar.MCustomScrollbar.CustomScrollbarOptions
 import typings.mcustomscrollbar.MCustomScrollbar.ScrollToParameterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Creates a new mCustomScrollbar with the specified or default options
     *
@@ -31,4 +32,3 @@ trait JQuery extends js.Object {
   def mCustomScrollbar(scrollTo: String, parameter: js.Any): JQuery = js.native
   def mCustomScrollbar(scrollTo: String, parameter: js.Any, options: ScrollToParameterOptions): JQuery = js.native
 }
-

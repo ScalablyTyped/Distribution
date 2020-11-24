@@ -2,11 +2,12 @@ package typings.openjscad.OpenJsCad
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ILog extends js.Object {
-  var prevLogTime: js.UndefOr[Double] = js.native
+  
   def apply(x: String): Unit = js.native
+  
+  var prevLogTime: js.UndefOr[Double] = js.native
 }
-

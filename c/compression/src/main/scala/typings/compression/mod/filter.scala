@@ -6,11 +6,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("compression", "filter")
 @js.native
 object filter extends js.Object {
+  
   /**
     * The default `filter` function. This is used to construct a custom filter function that is an extension of the default function.
     *
@@ -36,4 +37,3 @@ object filter extends js.Object {
     */
   def apply(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Boolean = js.native
 }
-

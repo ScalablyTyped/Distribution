@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch/logDestination", "LogDestination")
 @js.native
@@ -21,28 +21,32 @@ class LogDestination protected () extends CustomResource {
     */
   def this(name: String, args: LogDestinationArgs) = this()
   def this(name: String, args: LogDestinationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The Amazon Resource Name (ARN) specifying the log destination.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * A name for the log destination
     */
   val name: Output_[String] = js.native
+  
   /**
     * The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to put data into the target
     */
   val roleArn: Output_[String] = js.native
+  
   /**
     * The ARN of the target Amazon Kinesis stream resource for the destination
     */
   val targetArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cloudwatch/logDestination", "LogDestination")
 @js.native
 object LogDestination extends js.Object {
+  
   /**
     * Get an existing LogDestination resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object LogDestination extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogDestination = js.native
   def get(name: String, id: Input[ID], state: LogDestinationState): LogDestination = js.native
   def get(name: String, id: Input[ID], state: LogDestinationState, opts: CustomResourceOptions): LogDestination = js.native
+  
   /**
     * Returns true if the given object is an instance of LogDestination.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestination.LogDestination */ Boolean = js.native
 }
-

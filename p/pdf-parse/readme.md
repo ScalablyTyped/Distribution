@@ -11,8 +11,8 @@ Pure javascript cross-platform module to extract text from PDFs.
 | Full name          | pdf-parse |
 | Keywords           | pdf-parse, pdf-crawler, xpdf, pdf.js, pdfreader, pdf-extractor, pdf2json, j-pdfjson, pdf-parser, pdf-extract, pdf-extractor, pdf-to-text, pdf-text-extract, pdfjs, server side PDF parsing, pdf metadata |
 | # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 816519 |
+| # dependents       | 29 |
+| # downloads        | 1181577 |
 | # stars            | 2 |
 
 ## Links

@@ -10,13 +10,14 @@ import typings.koaMorgan.koaMorganStrings.short
 import typings.koaMorgan.koaMorganStrings.tiny
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Public interface of morgan logger
   */
 @js.native
 trait KoaMorgan extends js.Object {
+  
   /**
     * Create a new morgan logger middleware function using the given format and options. The
     * format argument may be a string of a predefined name (see below for the names),
@@ -61,10 +62,12 @@ trait KoaMorgan extends js.Object {
     */
   def apply(format: FormatFn): Middleware[DefaultState, DefaultContext] = js.native
   def apply(format: FormatFn, options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  
   /**
     * Compile a format string in token notation into a format function
     */
   def compile(format: String): FormatFn = js.native
+  
   /**
     * Define a named custom format by specifying a format string in token notation
     */
@@ -73,9 +76,9 @@ trait KoaMorgan extends js.Object {
     * Define a named custom format by specifying a format function
     */
   def format(name: String, fmt: FormatFn): KoaMorgan = js.native
+  
   /**
     * Define a custom token which can be used in custom morgan logging formats.
     */
   def token(name: String, callback: TokenCallbackFn): KoaMorgan = js.native
 }
-

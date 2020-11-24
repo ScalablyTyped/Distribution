@@ -2,9 +2,10 @@ package typings.luminoDatagrid.jsonmodelMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object JSONModel {
+  
   /**
     * A type alias for a data source for a JSON data model.
     *

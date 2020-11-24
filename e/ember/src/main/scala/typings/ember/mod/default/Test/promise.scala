@@ -2,11 +2,12 @@ package typings.ember.mod.default.Test
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember", "Test.promise")
 @js.native
 object promise extends js.Object {
+  
   /**
     * This returns a thenable tailored for testing.  It catches failed
     * `onSuccess` callbacks and invokes the `Ember.Test.adapter.exception`
@@ -28,4 +29,3 @@ object promise extends js.Object {
     label: String
   ): typings.ember.mod.Ember.Test.Promise_[T] = js.native
 }
-

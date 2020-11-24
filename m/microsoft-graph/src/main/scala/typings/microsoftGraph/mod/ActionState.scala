@@ -4,7 +4,7 @@ import typings.microsoftGraph.microsoftGraphStrings.failed_
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.none_
@@ -16,21 +16,26 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.notSupported
 */
 trait ActionState extends js.Object
-
 object ActionState {
+  
   @scala.inline
   def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  
   @scala.inline
   def canceled: typings.microsoftGraph.microsoftGraphStrings.canceled = "canceled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.canceled]
+  
   @scala.inline
   def done: typings.microsoftGraph.microsoftGraphStrings.done = "done".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.done]
+  
   @scala.inline
   def failed: failed_ = "failed".asInstanceOf[failed_]
+  
   @scala.inline
   def none: none_ = "none".asInstanceOf[none_]
+  
   @scala.inline
   def notSupported: typings.microsoftGraph.microsoftGraphStrings.notSupported = "notSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSupported]
+  
   @scala.inline
   def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
 }
-

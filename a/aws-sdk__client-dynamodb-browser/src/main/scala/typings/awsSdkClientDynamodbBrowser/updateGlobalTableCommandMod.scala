@@ -5,33 +5,29 @@ import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput
 import typings.awsSdkClientDynamodbBrowser.typesUpdateGlobalTableOutputMod.UpdateGlobalTableOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-browser/commands/UpdateGlobalTableCommand", JSImport.Namespace)
 @js.native
 object updateGlobalTableCommandMod extends js.Object {
+  
   @js.native
   class UpdateGlobalTableCommand protected () extends Command[
           InputTypesUnion, 
           UpdateGlobalTableInput, 
           OutputTypesUnion, 
           UpdateGlobalTableOutput, 
-          DynamoDBResolvedConfiguration, 
-          Blob
+          DynamoDBResolvedConfiguration
         ] {
     def this(input: UpdateGlobalTableInput) = this()
-    val middlewareStack: MiddlewareStack[UpdateGlobalTableInput, UpdateGlobalTableOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[UpdateGlobalTableInput, UpdateGlobalTableOutput] = js.native
   }
-  
 }
-

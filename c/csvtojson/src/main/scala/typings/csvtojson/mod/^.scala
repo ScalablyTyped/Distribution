@@ -2,11 +2,12 @@ package typings.csvtojson.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("csvtojson", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Factory function which creates an instance of a Converter object.
     * @param options       converter options
@@ -18,4 +19,3 @@ object ^ extends js.Object {
   def apply(options: ConverterOptions): Converter = js.native
   def apply(options: ConverterOptions, streamOptions: StreamOptions): Converter = js.native
 }
-

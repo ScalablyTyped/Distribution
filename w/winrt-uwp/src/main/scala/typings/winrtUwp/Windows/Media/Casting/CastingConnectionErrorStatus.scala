@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Casting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CastingConnectionErrorStatus extends js.Object
-
 /** Indicates the error status when starting or ending a casting connection. */
 @JSGlobal("Windows.Media.Casting.CastingConnectionErrorStatus")
 @js.native
 object CastingConnectionErrorStatus extends js.Object {
+  
   /** The device did not respond to the attempt to start or end theconnection. */
   @js.native
   sealed trait deviceDidNotRespond extends CastingConnectionErrorStatus
@@ -38,6 +38,4 @@ object CastingConnectionErrorStatus extends js.Object {
   /** An unknown error occurred when attempting to start or end the connection. */
   @js.native
   sealed trait unknown extends CastingConnectionErrorStatus
-  
 }
-

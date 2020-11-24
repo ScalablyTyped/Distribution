@@ -2,7 +2,7 @@ package typings.fridaGum.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper used internally for source map parsing in order to provide helpful
@@ -19,4 +19,3 @@ class SourceMap protected ()
     */
   def this(json: String) = this()
 }
-

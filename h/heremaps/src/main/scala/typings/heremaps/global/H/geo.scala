@@ -8,18 +8,43 @@ import typings.heremaps.H.geo.Latitude
 import typings.heremaps.H.geo.Longitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** geo *****/
 @JSGlobal("H.geo")
 @js.native
 object geo extends js.Object {
+  
   /**
     * The base class for all geometry types.
     */
   @js.native
   class AbstractGeometry ()
     extends typings.heremaps.H.geo.AbstractGeometry
+  
+  /**
+    * Contexts for altitudes to specify the contextual origin of an altitude's value
+    */
+  @js.native
+  object AltitudeContext extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.geo.AltitudeContext with Double] = js.native
+    
+    /* 1 */ val GL: typings.heremaps.H.geo.AltitudeContext.GL with Double = js.native
+    
+    /* 2 */ val OL: typings.heremaps.H.geo.AltitudeContext.OL with Double = js.native
+    
+    /* 4 */ val SB: typings.heremaps.H.geo.AltitudeContext.SB with Double = js.native
+    
+    /* 3 */ val SL: typings.heremaps.H.geo.AltitudeContext.SL with Double = js.native
+    
+    /* 5 */ val WE: typings.heremaps.H.geo.AltitudeContext.WE with Double = js.native
+    
+    /* 6 */ val WG: typings.heremaps.H.geo.AltitudeContext.WG with Double = js.native
+    
+    /* 0 */ val undefined: typings.heremaps.H.geo.AltitudeContext.undefined with Double = js.native
+  }
   
   @js.native
   /**
@@ -33,6 +58,26 @@ object geo extends js.Object {
     def this(opt_latLngAlts: js.Array[Double]) = this()
     def this(opt_latLngAlts: js.UndefOr[scala.Nothing], opt_ctx: AltitudeContext) = this()
     def this(opt_latLngAlts: js.Array[Double], opt_ctx: AltitudeContext) = this()
+  }
+  /* static members */
+  @js.native
+  object LineString extends js.Object {
+    
+    /**
+      * This method initializes a new LineString with an array of lat, lng values. Arrays are expected to have an even length with the format [lat, lng, lat, lng, ...].
+      * @param latLngs {number[]} - the array of lat, lng value.
+      * @return {H.geo.LineString} - The LineString containing the lat, lng values
+      * @throws {H.lang.InvalidArgumentError} - throws an error in case the latLngs array has an odd length
+      */
+    def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = js.native
+    
+    /**
+      * To obtain whether a leg (formed by the given two longitudes) crosses the International Date Line.
+      * @param lng1 {H.geo.Longitude} - The start longitude of the leg
+      * @param lng2 {H.geo.Longitude} - The end longitude of the leg
+      * @return {boolean}
+      */
+    def isDBC(lng1: Longitude, lng2: Longitude): Boolean = js.native
   }
   
   @js.native
@@ -109,6 +154,30 @@ object geo extends js.Object {
     def this(lat: Latitude, lng: Longitude, opt_alt: js.UndefOr[scala.Nothing], opt_ctx: AltitudeContext) = this()
     def this(lat: Latitude, lng: Longitude, opt_alt: Altitude, opt_ctx: AltitudeContext) = this()
   }
+  /* static members */
+  @js.native
+  object Point extends js.Object {
+    
+    /**
+      * This method creates a Point instance from a given IPoint object.
+      * @param iPoint {H.geo.IPoint} - The IPoint object to use
+      * @returns {H.geo.Point} - the created Point instance
+      */
+    def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = js.native
+    
+    /**
+      * This method validates the given IPoint. It checks, if lat, lng, alt and ctx have valid types. Additionally the value of the lat property is clamped into a range of -90 ... +90
+      * and the value of the lng property is modulo into a range of -180 ... +180 plus validates the values of the alt and ctx properties
+      * @param point {H.geo.IPoint} - The point to validate
+      * @param opt_caller {Function=} - The caller to use for InvalidArgumentError. If omitted no error is thrown
+      * @param opt_argNr {number=} - The argument number to use for InvalidArgumentError.
+      * @returns {boolean} - if the given point could validate
+      */
+    def validate(point: IPoint): Boolean = js.native
+    def validate(point: IPoint, opt_caller: js.UndefOr[scala.Nothing], opt_argNr: Double): Boolean = js.native
+    def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = js.native
+    def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = js.native
+  }
   
   /**
     * @link https://developer.here.com/documentation/maps/api_reference/H.geo.Polygon.html
@@ -138,68 +207,10 @@ object geo extends js.Object {
       */
     def this(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude) = this()
   }
-  
-  /**
-    * Contexts for altitudes to specify the contextual origin of an altitude's value
-    */
-  @js.native
-  object AltitudeContext extends js.Object {
-    /* 1 */ val GL: typings.heremaps.H.geo.AltitudeContext.GL with Double = js.native
-    /* 2 */ val OL: typings.heremaps.H.geo.AltitudeContext.OL with Double = js.native
-    /* 4 */ val SB: typings.heremaps.H.geo.AltitudeContext.SB with Double = js.native
-    /* 3 */ val SL: typings.heremaps.H.geo.AltitudeContext.SL with Double = js.native
-    /* 5 */ val WE: typings.heremaps.H.geo.AltitudeContext.WE with Double = js.native
-    /* 6 */ val WG: typings.heremaps.H.geo.AltitudeContext.WG with Double = js.native
-    /* 0 */ val undefined: typings.heremaps.H.geo.AltitudeContext.undefined with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.geo.AltitudeContext with Double] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object LineString extends js.Object {
-    /**
-      * This method initializes a new LineString with an array of lat, lng values. Arrays are expected to have an even length with the format [lat, lng, lat, lng, ...].
-      * @param latLngs {number[]} - the array of lat, lng value.
-      * @return {H.geo.LineString} - The LineString containing the lat, lng values
-      * @throws {H.lang.InvalidArgumentError} - throws an error in case the latLngs array has an odd length
-      */
-    def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = js.native
-    /**
-      * To obtain whether a leg (formed by the given two longitudes) crosses the International Date Line.
-      * @param lng1 {H.geo.Longitude} - The start longitude of the leg
-      * @param lng2 {H.geo.Longitude} - The end longitude of the leg
-      * @return {boolean}
-      */
-    def isDBC(lng1: Longitude, lng2: Longitude): Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Point extends js.Object {
-    /**
-      * This method creates a Point instance from a given IPoint object.
-      * @param iPoint {H.geo.IPoint} - The IPoint object to use
-      * @returns {H.geo.Point} - the created Point instance
-      */
-    def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = js.native
-    /**
-      * This method validates the given IPoint. It checks, if lat, lng, alt and ctx have valid types. Additionally the value of the lat property is clamped into a range of -90 ... +90
-      * and the value of the lng property is modulo into a range of -180 ... +180 plus validates the values of the alt and ctx properties
-      * @param point {H.geo.IPoint} - The point to validate
-      * @param opt_caller {Function=} - The caller to use for InvalidArgumentError. If omitted no error is thrown
-      * @param opt_argNr {number=} - The argument number to use for InvalidArgumentError.
-      * @returns {boolean} - if the given point could validate
-      */
-    def validate(point: IPoint): Boolean = js.native
-    def validate(point: IPoint, opt_caller: js.UndefOr[scala.Nothing], opt_argNr: Double): Boolean = js.native
-    def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = js.native
-    def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object Rect extends js.Object {
+    
     /**
       * This method creates the minimum rectangular area covering all of the coordinates in the argument array.
       * @param latLngAltArray {Array<number>} - the array of coordinates to cover
@@ -208,6 +219,7 @@ object geo extends js.Object {
       */
     def coverLatLngAlts(latLngAltArray: js.Array[Double]): typings.heremaps.H.geo.Rect | Unit = js.native
     def coverLatLngAlts(latLngAltArray: js.Array[Double], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = js.native
+    
     /**
       * This method creates the minimum rectangular area covering all of the points in the argument array.
       * @param pointArray {Array<H.geo.IPoint>} - the array of points to cover
@@ -216,6 +228,7 @@ object geo extends js.Object {
       */
     def coverPoints(pointArray: js.Array[IPoint]): typings.heremaps.H.geo.Rect = js.native
     def coverPoints(pointArray: js.Array[IPoint], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = js.native
+    
     /**
       * This method creates the minimum rectangular area covering all of the rectangular areas in the argument array.
       * @param rectArray {Array<H.geo.Rect>} - the array of points to cover
@@ -224,6 +237,7 @@ object geo extends js.Object {
       */
     def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect]): typings.heremaps.H.geo.Rect | Unit = js.native
     def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = js.native
+    
     /**
       * This method creates a rectangular area from a top-left and bottom-right point pair.
       * @param topLeft {H.geo.IPoint} - the top-left corner of the area
@@ -233,6 +247,7 @@ object geo extends js.Object {
       */
     def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.geo.Rect = js.native
     def fromPoints(topLeft: IPoint, bottomRight: IPoint, opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = js.native
+    
     /**
       * This method merges two rects by their values. The result of the merge is a bounding rect which covers all provided rect bounds.
       * @param topA {H.geo.Latitude} - the northern-most latitude
@@ -268,6 +283,4 @@ object geo extends js.Object {
       opt_out: typings.heremaps.H.geo.Rect
     ): typings.heremaps.H.geo.Rect = js.native
   }
-  
 }
-

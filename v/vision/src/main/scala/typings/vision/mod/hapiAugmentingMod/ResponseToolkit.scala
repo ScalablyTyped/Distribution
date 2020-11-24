@@ -4,10 +4,11 @@ import typings.hapi.mod.ResponseObject
 import typings.vision.mod.ViewHandlerOrReplyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResponseToolkit extends js.Object {
+  
   /**
     * Concludes the handler activity by returning control over to the router with a templatized view response
     * Returns a response object. The generated response will have the variety property set to view.
@@ -23,4 +24,3 @@ trait ResponseToolkit extends js.Object {
   def view(templatePath: String, context: js.Any): ResponseObject = js.native
   def view(templatePath: String, context: js.Any, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
 }
-

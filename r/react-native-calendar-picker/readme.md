@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-calendar-picker
 
-Typings are for version 6.1
+Typings are for version 7.0
 
 ## Library description:
 Calendar Picker Component for React Native
@@ -10,9 +10,9 @@ Calendar Picker Component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-calendar-picker |
 | Keywords           | calendar, picker, calendar, picker, date, picker, day, picker |
-| # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 72565 |
+| # releases         | 15 |
+| # dependents       | 4 |
+| # downloads        | 108630 |
 | # stars            | 2 |
 
 ## Links

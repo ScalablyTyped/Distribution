@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "opsworks.HaproxyLayer")
 @js.native
@@ -23,11 +23,11 @@ class HaproxyLayer protected ()
   def this(name: String, args: HaproxyLayerArgs) = this()
   def this(name: String, args: HaproxyLayerArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "opsworks.HaproxyLayer")
 @js.native
 object HaproxyLayer extends js.Object {
+  
   /**
     * Get an existing HaproxyLayer resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object HaproxyLayer extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.haproxyLayerMod.HaproxyLayer = js.native
   def get(name: String, id: Input[ID], state: HaproxyLayerState): typings.pulumiAws.haproxyLayerMod.HaproxyLayer = js.native
   def get(name: String, id: Input[ID], state: HaproxyLayerState, opts: CustomResourceOptions): typings.pulumiAws.haproxyLayerMod.HaproxyLayer = js.native
+  
   /**
     * Returns true if the given object is an instance of HaproxyLayer.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/haproxyLayer.HaproxyLayer */ Boolean = js.native
 }
-

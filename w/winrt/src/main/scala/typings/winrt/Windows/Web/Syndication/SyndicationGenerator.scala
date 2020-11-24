@@ -5,14 +5,14 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SyndicationGenerator
   extends ISyndicationGenerator
      with ISyndicationNode
-
 object SyndicationGenerator {
+  
   @scala.inline
   def apply(
     attributeExtensions: IVector[SyndicationAttribute],
@@ -31,4 +31,3 @@ object SyndicationGenerator {
     __obj.asInstanceOf[SyndicationGenerator]
   }
 }
-

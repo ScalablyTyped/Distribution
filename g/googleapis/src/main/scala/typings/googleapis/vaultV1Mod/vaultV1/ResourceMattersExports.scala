@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters$Exports")
 @js.native
 class ResourceMattersExports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * vault.matters.exports.create
     * @desc Creates an Export.
@@ -42,6 +44,7 @@ class ResourceMattersExports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExport]
   ): Unit = js.native
+  
   /**
     * vault.matters.exports.delete
     * @desc Deletes an Export.
@@ -71,6 +74,7 @@ class ResourceMattersExports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vault.matters.exports.get
     * @desc Gets an Export.
@@ -100,6 +104,7 @@ class ResourceMattersExports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExport]
   ): Unit = js.native
+  
   /**
     * vault.matters.exports.list
     * @desc Lists Exports.
@@ -134,4 +139,3 @@ class ResourceMattersExports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListExportsResponse]
   ): Unit = js.native
 }
-

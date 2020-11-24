@@ -5,7 +5,7 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import typings.googleAppsScript.GoogleAppsScript.Base.DateConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Date2")
 @js.native
@@ -228,7 +228,6 @@ class Date2 () extends Date {
     ms: Double
   ) = this()
 }
-
 // The name `Date` conflicts with lib.es5.d.ts.
 // - We cannot include lib.es5.d.ts with Apps Script though because Apps Script is ES3
 //   and doesn't include all ES5+ features.
@@ -237,4 +236,3 @@ class Date2 () extends Date {
 @JSGlobal("Date2")
 @js.native
 object Date2 extends TopLevel[DateConstructor]
-

@@ -13,11 +13,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz/crypto", "randomFill")
 @js.native
 object randomFill extends js.Object {
+  
   def apply(buffer: DataView, callback: js.Function2[/* err */ Error | Null, /* buf */ DataView, Unit]): Unit = js.native
   def apply(
     buffer: DataView,
@@ -142,4 +143,3 @@ object randomFill extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8ClampedArray, Unit]
   ): Unit = js.native
 }
-

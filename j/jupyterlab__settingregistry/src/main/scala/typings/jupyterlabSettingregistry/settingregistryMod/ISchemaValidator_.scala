@@ -4,10 +4,11 @@ import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator.IEr
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISchemaValidator_ extends js.Object {
+  
   /**
     * Validate a plugin's schema and user data; populate the `composite` data.
     *
@@ -23,4 +24,3 @@ trait ISchemaValidator_ extends js.Object {
   def validateData(plugin: IPlugin): js.Array[IError] | Null = js.native
   def validateData(plugin: IPlugin, populate: Boolean): js.Array[IError] | Null = js.native
 }
-

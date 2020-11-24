@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A threshold for the Pedometer sensor. When the threshold conditions are met, the sensor trigger will activate. */
 @JSGlobal("Windows.Devices.Sensors.PedometerDataThreshold")
@@ -16,4 +16,3 @@ class PedometerDataThreshold protected ()
     */
   def this(sensor: typings.winrtUwp.Windows.Devices.Sensors.Pedometer, stepGoal: Double) = this()
 }
-

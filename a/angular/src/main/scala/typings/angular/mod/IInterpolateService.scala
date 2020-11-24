@@ -2,7 +2,7 @@ package typings.angular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // InterpolateService
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IInterpolateService extends js.Object {
+  
   def apply(text: String): IInterpolationFunction = js.native
   def apply(
     text: String,
@@ -34,7 +35,8 @@ trait IInterpolateService extends js.Object {
   ): IInterpolationFunction = js.native
   def apply(text: String, mustHaveExpression: Boolean, trustedContext: String): IInterpolationFunction = js.native
   def apply(text: String, mustHaveExpression: Boolean, trustedContext: String, allOrNothing: Boolean): IInterpolationFunction = js.native
+  
   def endSymbol(): String = js.native
+  
   def startSymbol(): String = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.storybookApi.shortcutsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookApi.storybookApiStrings.fullScreen
@@ -25,4 +25,3 @@ import scala.scalajs.js.annotation._
   - typings.storybookApi.storybookApiStrings.expandAll
 */
 trait Action extends js.Object
-

@@ -3,16 +3,16 @@ package typings.senchaTouch.global.Ext
 import typings.senchaTouch.Ext.Version
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Version")
 @js.native
 class Version_ () extends Version
-
 /* static members */
 @JSGlobal("Ext.Version")
 @js.native
 object Version_ extends js.Object {
+  
   /** [Method] Compare 2 specified versions starting from left to right
     * @param current String The current version to compare to.
     * @param target String The target version to compare to.
@@ -22,6 +22,7 @@ object Version_ extends js.Object {
   def compare(current: js.UndefOr[scala.Nothing], target: java.lang.String): Double = js.native
   def compare(current: java.lang.String): Double = js.native
   def compare(current: java.lang.String, target: java.lang.String): Double = js.native
+  
   /** [Method] Converts a version component to a comparable value
     * @param value Object The value to convert
     * @returns Object
@@ -29,4 +30,3 @@ object Version_ extends js.Object {
   def getComponentValue(): js.Any = js.native
   def getComponentValue(value: js.Any): js.Any = js.native
 }
-

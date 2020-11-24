@@ -11,8 +11,8 @@ The lodash method `_.unzipWith` exported as a module.
 | Full name          | lodash.unzipwith |
 | Keywords           | lodash-modularized, unzipwith |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 975 |
+| # dependents       | 2 |
+| # downloads        | 1086 |
 | # stars            | 0 |
 
 ## Links

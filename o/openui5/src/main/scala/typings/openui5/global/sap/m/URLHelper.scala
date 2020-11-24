@@ -2,11 +2,12 @@ package typings.openui5.global.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.URLHelper")
 @js.native
 object URLHelper extends js.Object {
+  
   /**
     * Adds an event registration for redirect.
     * @param fnFunction The function to call, when the event occurs.
@@ -15,6 +16,7 @@ object URLHelper extends js.Object {
     */
   def attachRedirect(fnFunction: js.Any): js.Any = js.native
   def attachRedirect(fnFunction: js.Any, oListener: js.Any): js.Any = js.native
+  
   /**
     * Detach already registered redirect event.
     * @param fnFunction The function to call, when the event occurs.
@@ -23,6 +25,7 @@ object URLHelper extends js.Object {
     */
   def detachRedirect(fnFunction: js.Any): js.Any = js.native
   def detachRedirect(fnFunction: js.Any, oListener: js.Any): js.Any = js.native
+  
   /**
     * Builds Email URI from given parameter.Trims spaces from email addresses.
     * @param sEmail Destination email address
@@ -72,18 +75,21 @@ object URLHelper extends js.Object {
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: js.UndefOr[scala.Nothing], sBCC: String): String = js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: String): String = js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: String, sBCC: String): String = js.native
+  
   /**
     * Sanitizes the given telephone number and returns SMS URI scheme.
     * @param sTel Telephone number
     * @returns SMS URI scheme
     */
   def normalizeSms(sTel: String): String = js.native
+  
   /**
     * Sanitizes the given telephone number and returns a telephone URI scheme.
     * @param sTel Telephone number
     * @returns Telephone URI scheme
     */
   def normalizeTel(sTel: String): String = js.native
+  
   /**
     * Redirects to the given URL.This method fires "redirect" event before opening the URL.
     * @param sURL Uniform resource locator
@@ -95,6 +101,7 @@ object URLHelper extends js.Object {
     */
   def redirect(sURL: String): Unit = js.native
   def redirect(sURL: String, bNewWindow: Boolean): Unit = js.native
+  
   /**
     * Trigger email application to send email.Trims spaces from email addresses.
     * @param sEmail Destination email address
@@ -143,15 +150,16 @@ object URLHelper extends js.Object {
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: js.UndefOr[scala.Nothing], sBCC: String): Unit = js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: String): Unit = js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: String, sBCC: String): Unit = js.native
+  
   /**
     * Trigger SMS application to send SMS to given telephone number.
     * @param sTel Telephone number
     */
   def triggerSms(sTel: String): Unit = js.native
+  
   /**
     * Trigger telephone to call given telephone number.
     * @param sTel Telephone number
     */
   def triggerTel(sTel: String): Unit = js.native
 }
-

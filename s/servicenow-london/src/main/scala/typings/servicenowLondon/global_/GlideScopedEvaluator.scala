@@ -2,7 +2,7 @@ package typings.servicenowLondon.global_
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GlideScopedEvaluator")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 class GlideScopedEvaluator ()
   extends typings.servicenowLondon.GlideScopedEvaluator
-

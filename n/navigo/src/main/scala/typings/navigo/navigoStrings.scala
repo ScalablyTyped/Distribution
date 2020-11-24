@@ -2,13 +2,12 @@ package typings.navigo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigoStrings {
-  @js.native
-  sealed trait State extends js.Object
   
   @scala.inline
   def State: State = "State".asInstanceOf[State]
+  @js.native
+  sealed trait State extends js.Object
 }
-

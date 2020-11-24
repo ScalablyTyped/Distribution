@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("notp", "hotp")
 @js.native
 object hotp extends js.Object {
+  
   /**
     * Generate a counter based One Time Password.
     * @param key Key for the one time password. This should be unique and secret
@@ -21,6 +22,7 @@ object hotp extends js.Object {
   def gen(key: Buffer, opt: HOTPGenOpt): String = js.native
   def gen(key: Uint8Array): String = js.native
   def gen(key: Uint8Array, opt: HOTPGenOpt): String = js.native
+  
   /**
     * Check a One Time Password based on a counter.
     * @param token Passcode to validate.
@@ -35,4 +37,3 @@ object hotp extends js.Object {
   def verify(token: String, key: Uint8Array): VerifyResult | Null = js.native
   def verify(token: String, key: Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = js.native
 }
-

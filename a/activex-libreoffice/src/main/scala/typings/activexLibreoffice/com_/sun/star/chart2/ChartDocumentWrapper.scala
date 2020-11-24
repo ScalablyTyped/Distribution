@@ -18,7 +18,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A component that implements the {@link com.sun.star.chart.ChartDocument} service and is initialized with a {@link com.sun.star.chart2.ChartDocument}
@@ -28,8 +28,8 @@ import scala.scalajs.js.annotation._
 trait ChartDocumentWrapper
   extends typings.activexLibreoffice.com_.sun.star.chart.ChartDocument
      with XAggregation
-
 object ChartDocumentWrapper {
+  
   @scala.inline
   def apply(
     Area: XPropertySet,
@@ -88,4 +88,3 @@ object ChartDocumentWrapper {
     __obj.asInstanceOf[ChartDocumentWrapper]
   }
 }
-

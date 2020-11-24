@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a template that can be used to create new EmailIrmInfo objects. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailIrmTemplate")
@@ -18,4 +18,3 @@ class EmailIrmTemplate ()
     */
   def this(id: String, name: String, description: String) = this()
 }
-

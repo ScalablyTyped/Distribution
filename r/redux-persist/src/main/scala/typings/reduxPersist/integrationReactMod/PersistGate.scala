@@ -3,7 +3,7 @@ package typings.reduxPersist.integrationReactMod
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entry point of your react application to allow it persist a given store @see Persistor and its configuration.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class PersistGate ()
   extends Component[PersistGateProps, PersistorGateState, js.Any]
-

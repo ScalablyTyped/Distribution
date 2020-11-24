@@ -7,11 +7,12 @@ import typings.plottable.interfacesMod.IRangeProjector
 import typings.plottable.xyPlotMod.XYPlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots/rectanglePlot", JSImport.Namespace)
 @js.native
 object rectanglePlotMod extends js.Object {
+  
   @js.native
   /**
     * A Rectangle Plot displays rectangles based on the data.
@@ -25,12 +26,19 @@ object rectanglePlotMod extends js.Object {
     * @param {Scale.Scale} yScale
     */
   class Rectangle[X, Y] () extends XYPlot[X, Y] {
-    var _label: js.Any = js.native
-    var _labelsEnabled: js.Any = js.native
+    
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
+    
     /* private */ def _drawLabel(dataToDraw: js.Any, dataset: js.Any, datasetIndex: js.Any): js.Any = js.native
+    
     /* private */ def _drawLabels(): js.Any = js.native
+    
     /* private */ def _entityBBox(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
+    
+    var _label: js.Any = js.native
+    
+    var _labelsEnabled: js.Any = js.native
+    
     /* private */ def _overlayLabel(
       labelXRange: js.Any,
       labelYRange: js.Any,
@@ -38,7 +46,9 @@ object rectanglePlotMod extends js.Object {
       datasetIndex: js.Any,
       dataToDraw: js.Any
     ): js.Any = js.native
+    
     /* private */ def _rectangleWidth(scale: js.Any): js.Any = js.native
+    
     /**
       * Gets the accessor for labels.
       *
@@ -52,6 +62,7 @@ object rectanglePlotMod extends js.Object {
       * @returns {Plots.Rectangle} The calling Rectangle Plot.
       */
     def label(label: IAccessor[String]): this.type = js.native
+    
     /**
       * Gets whether labels are enabled.
       *
@@ -66,6 +77,7 @@ object rectanglePlotMod extends js.Object {
       * @returns {Rectangle} The calling Rectangle Plot.
       */
     def labelsEnabled(enabled: Boolean): this.type = js.native
+    
     /**
       * Gets the AccessorScaleBinding for X2.
       */
@@ -83,6 +95,7 @@ object rectanglePlotMod extends js.Object {
     def x2(x2: Double, postScale: IRangeProjector[Double]): this.type = js.native
     def x2(x2: IAccessor[Double | X]): this.type = js.native
     def x2(x2: IAccessor[Double | X], postScale: IRangeProjector[Double]): this.type = js.native
+    
     /**
       * Gets the AccessorScaleBinding for Y2.
       */
@@ -101,13 +114,12 @@ object rectanglePlotMod extends js.Object {
     def y2(y2: IAccessor[Double | Y]): this.type = js.native
     def y2(y2: IAccessor[Double | Y], postScale: IRangeProjector[Double]): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object Rectangle extends js.Object {
+    
     var _X2_KEY: js.Any = js.native
+    
     var _Y2_KEY: js.Any = js.native
   }
-  
 }
-

@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a controller which can be used to browse and modify properties of form controls.
@@ -38,6 +38,7 @@ trait PropertyBrowserController
      with XPropertySet
      with XFastPropertySet
      with XMultiPropertySet {
+  
   /**
     * controls the actually visible page.
     *
@@ -49,18 +50,21 @@ trait PropertyBrowserController
     * Valid values are (this list may be extended in the future): GenericDataEvents
     */
   var CurrentPage: String = js.native
+  
   /**
     * contains the object to inspect.
     *
     * Changing this property from outside causes the controller to update its view with the data of the new object
     */
   var IntrospectedObject: XPropertySet = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object to which this interface belongs. NULL is returned if the obj
     * @see XPropertySet.getPropertySetInfo
     */
   /* InferMemberOverrides */
   override val PropertySetInfo: XPropertySetInfo = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -68,8 +72,8 @@ trait PropertyBrowserController
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-
 object PropertyBrowserController {
+  
   @scala.inline
   def apply(
     CurrentPage: String,
@@ -109,26 +113,32 @@ object PropertyBrowserController {
     val __obj = js.Dynamic.literal(CurrentPage = CurrentPage.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], IntrospectedObject = IntrospectedObject.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), restoreViewData = js.Any.fromFunction1(restoreViewData), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), suspend = js.Any.fromFunction1(suspend))
     __obj.asInstanceOf[PropertyBrowserController]
   }
+  
   @scala.inline
   implicit class PropertyBrowserControllerOps[Self <: PropertyBrowserController] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCurrentPage(value: String): Self = this.set("CurrentPage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIntrospectedObject(value: XPropertySet): Self = this.set("IntrospectedObject", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
   }
-  
 }
-

@@ -1,14 +1,16 @@
 package typings.mendixmodelsdk.microflowsMod.microflows
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.importmappingsMod.importmappings.IImportMapping
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.21.0: deleted
@@ -22,28 +24,28 @@ class ImportMappingJavaActionParameterValue protected () extends JavaActionParam
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FImportMappingJavaActionParameterValue: IModel = js.native
+  
   def importMapping: IImportMapping | Null = js.native
+  
   def importMappingQualifiedName: String | Null = js.native
+  
   def importMapping_=(newValue: IImportMapping | Null): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ImportMappingJavaActionParameterValue")
 @js.native
 object ImportMappingJavaActionParameterValue extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new ImportMappingJavaActionParameterValue instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): ImportMappingJavaActionParameterValue = js.native
+  
   /**
     * Creates and returns a new ImportMappingJavaActionParameterValue instance in the SDK and on the server.
     * The new ImportMappingJavaActionParameterValue will be automatically stored in the 'value' property
@@ -53,5 +55,8 @@ object ImportMappingJavaActionParameterValue extends js.Object {
     *  7.2.0 to 7.20.0
     */
   def createIn(container: JavaActionParameterMapping): ImportMappingJavaActionParameterValue = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

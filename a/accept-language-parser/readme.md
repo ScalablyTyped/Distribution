@@ -10,9 +10,9 @@ Parse the accept-language header from a HTTP request
 | ------------------ | :-------------: |
 | Full name          | accept-language-parser |
 | Keywords           | accept-language, i18n, parser |
-| # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 1587430 |
+| # releases         | 0 |
+| # dependents       | 67 |
+| # downloads        | 3446380 |
 | # stars            | 1 |
 
 ## Links

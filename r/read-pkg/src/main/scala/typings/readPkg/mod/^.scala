@@ -2,11 +2,12 @@ package typings.readPkg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("read-pkg", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	@returns The parsed JSON.
   	@example
@@ -23,6 +24,7 @@ object ^ extends js.Object {
   def apply(): js.Promise[NormalizedPackageJson] = js.native
   def apply(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = js.native
   def apply(options: Options): js.Promise[PackageJson] = js.native
+  
   /**
   	@returns The parsed JSON.
   	@example
@@ -38,4 +40,3 @@ object ^ extends js.Object {
   def sync(options: NormalizeOptions): NormalizedPackageJson = js.native
   def sync(options: Options): PackageJson = js.native
 }
-

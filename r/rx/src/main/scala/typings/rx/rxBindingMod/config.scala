@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.rx.Rx.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.binding", "config")
 @js.native
 object config extends js.Object {
+  
   @js.native
   class Promise[T] protected () extends IPromise[T] {
     def this(resolver: js.Function2[
@@ -17,7 +18,6 @@ object config extends js.Object {
             Unit
           ]) = this()
   }
-  
   @js.native
   object Promise
     extends Instantiable1[
@@ -28,6 +28,4 @@ object config extends js.Object {
           ], 
           IPromise[js.Object]
         ]
-  
 }
-

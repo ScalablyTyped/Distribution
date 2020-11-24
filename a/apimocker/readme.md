@@ -10,9 +10,9 @@ Simple HTTP server that returns mock service API responses to your front end.
 | ------------------ | :-------------: |
 | Full name          | apimocker |
 | Keywords           | express, mock, stub, REST, SOAP, testing, functional, api, grunt, gulp |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 2 |
-| # downloads        | 49102 |
+| # downloads        | 54052 |
 | # stars            | 6 |
 
 ## Links

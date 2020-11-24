@@ -2,11 +2,12 @@ package typings.xmldsigjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs/build/types/xml/transforms", JSImport.Namespace)
 @js.native
 object transformsMod extends js.Object {
+  
   @js.native
   class XmlDsigBase64Transform ()
     extends typings.xmldsigjs.base64Mod.XmlDsigBase64Transform
@@ -34,6 +35,4 @@ object transformsMod extends js.Object {
   @js.native
   class XmlDsigXPathTransform ()
     extends typings.xmldsigjs.xpathMod.XmlDsigXPathTransform
-  
 }
-

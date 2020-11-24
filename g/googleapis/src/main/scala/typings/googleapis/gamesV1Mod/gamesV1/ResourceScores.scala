@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Scores")
 @js.native
 class ResourceScores protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.scores.get
     * @desc Get high scores, and optionally ranks, in leaderboards for the
@@ -54,6 +56,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayerLeaderboardScoreListResponse]
   ): Unit = js.native
+  
   /**
     * games.scores.list
     * @desc Lists the scores in a leaderboard, starting from the top.
@@ -87,6 +90,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboardScores]
   ): Unit = js.native
+  
   /**
     * games.scores.listWindow
     * @desc Lists the scores in a leaderboard around (and including) a player's
@@ -123,6 +127,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboardScores]
   ): Unit = js.native
+  
   /**
     * games.scores.submit
     * @desc Submits a score to the specified leaderboard.
@@ -154,6 +159,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayerScoreResponse]
   ): Unit = js.native
+  
   /**
     * games.scores.submitMultiple
     * @desc Submits multiple scores to leaderboards.
@@ -187,4 +193,3 @@ class ResourceScores protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlayerScoreListResponse]
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Detects what package manager executes the process
 | Full name          | which-pm-runs |
 | Keywords           | npm, pnpm, yarn |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 34343888 |
+| # dependents       | 28 |
+| # downloads        | 97241617 |
 | # stars            | 0 |
 
 ## Links

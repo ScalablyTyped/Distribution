@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Security.Cryptography.Certificates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents signer information for a signed CMS message which contains a set of properties. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CmsSignerInfo")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 /** Creates a new instance of the CmsSignerInfo class. */
 class CmsSignerInfo ()
   extends typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsSignerInfo
-

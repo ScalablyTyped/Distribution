@@ -10,9 +10,9 @@ Style elements when they are focused or contain a focused element
 | ------------------ | :-------------: |
 | Full name          | focus-within |
 | Keywords           | postcss, css, postcss-plugin, javascript, js, polyfill, focus, within, pseudos, selectors, accessibility, a11y, descendants, ancestors |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 148453 |
+| # releases         | 4 |
+| # dependents       | 9 |
+| # downloads        | 189457 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Customers$Devices")
 @js.native
 class ResourceCustomersDevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.customers.devices.applyConfiguration
     * @desc Applies a Configuration to the device to register the device for
@@ -48,6 +48,9 @@ class ResourceCustomersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.customers.devices.get
     * @desc Gets the details of a device.
@@ -76,6 +79,7 @@ class ResourceCustomersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.devices.list
     * @desc Lists a customer's devices.
@@ -109,6 +113,7 @@ class ResourceCustomersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomerListDevicesResponse]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.devices.removeConfiguration
     * @desc Removes a configuration from device.
@@ -141,6 +146,7 @@ class ResourceCustomersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.devices.unclaim
     * @desc Unclaims a device from a customer and removes it from zero-touch
@@ -173,4 +179,3 @@ class ResourceCustomersDevices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

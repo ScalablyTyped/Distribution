@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__ui-components-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - UI component plugins
@@ -10,9 +10,9 @@ JupyterLab - UI component plugins
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/ui-components-extension |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 91 |
 | # dependents       | 1 |
-| # downloads        | 225420 |
+| # downloads        | 1252613 |
 | # stars            | 0 |
 
 ## Links

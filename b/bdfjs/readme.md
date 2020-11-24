@@ -12,7 +12,7 @@ Simple library for reading Adobe Glyph Bitmap Distribution font Data
 | Keywords           | adobe, bdf, font, bitmap |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 942 |
+| # downloads        | 613 |
 | # stars            | 0 |
 
 ## Links

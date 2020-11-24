@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a service for area diagrams. */
 @js.native
@@ -24,8 +24,8 @@ trait AreaDiagram
      with ChartAxisZSupplier
      with Dim3DDiagram
      with StackableDiagram
-
 object AreaDiagram {
+  
   @scala.inline
   def apply(
     AutomaticPosition: Boolean,
@@ -145,4 +145,3 @@ object AreaDiagram {
     __obj.asInstanceOf[AreaDiagram]
   }
 }
-

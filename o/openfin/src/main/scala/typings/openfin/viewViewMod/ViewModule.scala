@@ -4,11 +4,11 @@ import typings.openfin.baseMod.Base
 import typings.openfin.identityMod.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewModule extends Base {
-  var onmessage: js.Any = js.native
+  
   /**
     * Creates a new View.
     * @param { View~options } options - View creation options
@@ -18,6 +18,7 @@ trait ViewModule extends Base {
     * @static
     */
   def create(options: ViewCreationOptions): js.Promise[View] = js.native
+  
   /**
     * Asynchronously returns a View object that represents the current view
     * @return {Promise.<View>}
@@ -26,6 +27,7 @@ trait ViewModule extends Base {
     * @static
     */
   def getCurrent(): js.Promise[View] = js.native
+  
   /**
     * Synchronously returns a View object that represents the current view
     * @return {View}
@@ -34,6 +36,9 @@ trait ViewModule extends Base {
     * @static
     */
   def getCurrentSync(): View = js.native
+  
+  var onmessage: js.Any = js.native
+  
   /**
     * Asynchronously returns a View object that represents an existing view.
     * @param { Identity } identity
@@ -43,6 +48,7 @@ trait ViewModule extends Base {
     * @static
     */
   def wrap(identity: Identity): js.Promise[View] = js.native
+  
   /**
     * Synchronously returns a View object that represents an existing view.
     * @param { Identity } identity
@@ -53,4 +59,3 @@ trait ViewModule extends Base {
     */
   def wrapSync(identity: Identity): View = js.native
 }
-

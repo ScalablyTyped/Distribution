@@ -4,21 +4,21 @@
 Typings are for version 4.3
 
 ## Library description:
-The awesome jQuery step wizard plugin with Bootstrap support
+The awesome jQuery step wizard plugin
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | smartwizard |
-| Keywords           | bootstrap, wizard, step, ui, jquery-plugin, tabs, jquery |
-| # releases         | 2 |
+| Keywords           | jQuery, Wizard, Tabs, Steps, Bootstrap, Plugin, Step, ui, jquery-plugin, Tabs |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 58778 |
+| # downloads        | 132788 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](http://techlaboratory.net/smartwizard)
-- [Bugs](https://github.com/techlab/SmartWizard/issues)
-- [Repository](https://github.com/techlab/SmartWizard)
+- [Homepage](http://techlaboratory.net/jquery-smartwizard)
+- [Bugs](https://github.com/techlab/jquery-smartwizard/issues)
+- [Repository](https://github.com/techlab/jquery-smartwizard)
 - [Npm](https://www.npmjs.com/package/smartwizard)
     
 

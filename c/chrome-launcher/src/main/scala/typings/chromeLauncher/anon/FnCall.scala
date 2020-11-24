@@ -10,10 +10,11 @@ import typings.node.childProcessMod.StdioNull
 import typings.node.childProcessMod.StdioPipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(command: String): ChildProcessWithoutNullStreams = js.native
   def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def apply(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
@@ -31,4 +32,3 @@ trait FnCall extends js.Object {
   ): ChildProcessByStdio[Null, Null, Null] = js.native
   def apply(command: String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
 }
-

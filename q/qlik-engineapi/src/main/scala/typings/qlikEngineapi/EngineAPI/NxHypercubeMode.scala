@@ -2,7 +2,7 @@ package typings.qlikEngineapi.EngineAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -18,15 +18,17 @@ import scala.scalajs.js.annotation._
   - typings.qlikEngineapi.qlikEngineapiStrings.T
 */
 trait NxHypercubeMode extends js.Object
-
 object NxHypercubeMode {
+  
   @scala.inline
   def K: typings.qlikEngineapi.qlikEngineapiStrings.K = "K".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.K]
+  
   @scala.inline
   def P: typings.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.P]
+  
   @scala.inline
   def S: typings.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.S]
+  
   @scala.inline
   def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
 }
-

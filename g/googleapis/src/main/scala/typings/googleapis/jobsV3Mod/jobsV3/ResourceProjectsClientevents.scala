@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v3", "jobs_v3.Resource$Projects$Clientevents")
 @js.native
 class ResourceProjectsClientevents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * jobs.projects.clientEvents.create
     * @desc Report events issued when end user interacts with customer's
@@ -51,4 +53,3 @@ class ResourceProjectsClientevents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaClientEvent]
   ): Unit = js.native
 }
-

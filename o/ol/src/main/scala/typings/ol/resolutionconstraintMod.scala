@@ -4,11 +4,12 @@ import typings.ol.extentMod.Extent
 import typings.ol.sizeMod.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/resolutionconstraint", JSImport.Namespace)
 @js.native
 object resolutionconstraintMod extends js.Object {
+  
   def createMinMaxResolution(maxResolution: Double, minResolution: Double): Type = js.native
   def createMinMaxResolution(
     maxResolution: Double,
@@ -46,6 +47,7 @@ object resolutionconstraintMod extends js.Object {
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = js.native
+  
   def createSnapToPower(power: Double, maxResolution: Double): Type = js.native
   def createSnapToPower(
     power: Double,
@@ -147,6 +149,7 @@ object resolutionconstraintMod extends js.Object {
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = js.native
+  
   def createSnapToResolutions(resolutions: js.Array[Double]): Type = js.native
   def createSnapToResolutions(
     resolutions: js.Array[Double],
@@ -175,12 +178,12 @@ object resolutionconstraintMod extends js.Object {
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = js.native
+  
   type Type = js.Function4[
     /* p0 */ js.UndefOr[Double], 
     /* p1 */ Double, 
     /* p2 */ Size, 
     /* p3 */ js.UndefOr[Boolean], 
-    Double
+    js.UndefOr[Double]
   ]
 }
-

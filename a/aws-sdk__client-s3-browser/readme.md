@@ -12,7 +12,7 @@ Browser SDK for Amazon Simple Storage Service
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 745 |
+| # downloads        | 5071 |
 | # stars            | 0 |
 
 ## Links

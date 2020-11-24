@@ -2,8 +2,9 @@ package typings.supportsColor.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object supportsColor {
-  type SupportsColor = scala.Boolean with typings.supportsColor.mod.supportsColor.Level
+  
+  type SupportsColor = typings.supportsColor.supportsColorBooleans.`false` with typings.supportsColor.mod.supportsColor.Level
 }

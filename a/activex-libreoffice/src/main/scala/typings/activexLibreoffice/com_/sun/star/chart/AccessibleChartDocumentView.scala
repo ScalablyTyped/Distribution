@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AccessibleChartDocumentView} service is supported by a Component that represents the view of a Chart document to provide an entry point to
@@ -29,8 +29,8 @@ trait AccessibleChartDocumentView
   extends XAccessible
      with XAccessibleContext
      with XAccessibleComponent
-
 object AccessibleChartDocumentView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -77,4 +77,3 @@ object AccessibleChartDocumentView {
     __obj.asInstanceOf[AccessibleChartDocumentView]
   }
 }
-

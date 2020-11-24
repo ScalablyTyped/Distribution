@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHeapGraphEdge extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,6 +22,27 @@ trait ClassHeapGraphEdge extends ClassObject {
     * @type String
     */
   var description: String = js.native
+  
+  /**
+    * 
+    * @brief 获取HeapGraphEdge的上游HeapGraphNode节点
+    * @return 返回源HeapGraphNode节点
+    * 
+    * 
+    * 
+    */
+  def getFromNode(): ClassHeapGraphNode = js.native
+  
+  /**
+    * 
+    * @brief 获取HeapGraphEdge的下游HeapGraphNode节点
+    * @return 返回目的HeapGraphNode节点
+    * 
+    * 
+    * 
+    */
+  def getToNode(): ClassHeapGraphNode = js.native
+  
   /**
     * class prop 
     *
@@ -31,6 +53,7 @@ trait ClassHeapGraphEdge extends ClassObject {
     * @type String
     */
   var name: String = js.native
+  
   /**
     * class prop 
     *
@@ -49,23 +72,4 @@ trait ClassHeapGraphEdge extends ClassObject {
     * @type Integer
     */
   var `type`: Double = js.native
-  /**
-    * 
-    * @brief 获取HeapGraphEdge的上游HeapGraphNode节点
-    * @return 返回源HeapGraphNode节点
-    * 
-    * 
-    * 
-    */
-  def getFromNode(): ClassHeapGraphNode = js.native
-  /**
-    * 
-    * @brief 获取HeapGraphEdge的下游HeapGraphNode节点
-    * @return 返回目的HeapGraphNode节点
-    * 
-    * 
-    * 
-    */
-  def getToNode(): ClassHeapGraphNode = js.native
 }
-

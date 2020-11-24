@@ -2,13 +2,14 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for leasing tasks using LeaseTasks.
   */
 @js.native
 trait SchemaLeaseTasksRequest extends js.Object {
+  
   /**
     * `filter` can be used to specify a subset of tasks to lease.  When
     * `filter` is set to `tag=&lt;my-tag&gt;` then the response will contain
@@ -27,6 +28,7 @@ trait SchemaLeaseTasksRequest extends js.Object {
     * be displayed as empty in Cloud Tasks.
     */
   var filter: js.UndefOr[String] = js.native
+  
   /**
     *  After the worker has successfully finished the work associated with the
     * task, the worker must call via AcknowledgeTask before the schedule_time.
@@ -35,6 +37,7 @@ trait SchemaLeaseTasksRequest extends js.Object {
     * `lease_duration` will be truncated to the nearest second.
     */
   var leaseDuration: js.UndefOr[String] = js.native
+  
   /**
     * The maximum number of tasks to lease.  The system will make a best effort
     * to return as close to as `max_tasks` as possible.  The largest that
@@ -43,6 +46,7 @@ trait SchemaLeaseTasksRequest extends js.Object {
     * limit, fewer tasks than requested are returned.
     */
   var maxTasks: js.UndefOr[Double] = js.native
+  
   /**
     * The response_view specifies which subset of the Task will be returned. By
     * default response_view is BASIC; not all information is retrieved by
@@ -54,41 +58,51 @@ trait SchemaLeaseTasksRequest extends js.Object {
     */
   var responseView: js.UndefOr[String] = js.native
 }
-
 object SchemaLeaseTasksRequest {
+  
   @scala.inline
   def apply(): SchemaLeaseTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLeaseTasksRequest]
   }
+  
   @scala.inline
   implicit class SchemaLeaseTasksRequestOps[Self <: SchemaLeaseTasksRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setLeaseDuration(value: String): Self = this.set("leaseDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeaseDuration: Self = this.set("leaseDuration", js.undefined)
+    
     @scala.inline
     def setMaxTasks(value: Double): Self = this.set("maxTasks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxTasks: Self = this.set("maxTasks", js.undefined)
+    
     @scala.inline
     def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResponseView: Self = this.set("responseView", js.undefined)
   }
-  
 }
-

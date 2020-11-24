@@ -11,8 +11,8 @@ Sort array of semver string even which is exist in a strings.
 | Full name          | semver-sort |
 | Keywords           | sort, semver, sort semver |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 177747 |
+| # dependents       | 33 |
+| # downloads        | 286670 |
 | # stars            | 0 |
 
 ## Links

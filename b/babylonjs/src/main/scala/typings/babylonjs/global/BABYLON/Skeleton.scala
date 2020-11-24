@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Skeleton")
 @js.native
@@ -22,17 +22,26 @@ class Skeleton protected ()
   id: String,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.Skeleton")
 @js.native
 object Skeleton extends js.Object {
+  
+  def MakeAnimationAdditive(
+    skeleton: typings.babylonjs.BABYLON.Skeleton,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String
+  ): Nullable[typings.babylonjs.BABYLON.Skeleton] = js.native
+  /**
+    * Convert the keyframes for a range of animation on a skeleton to be relative to a given reference frame.
+    * @param skeleton defines the Skeleton containing the animation range to convert
+    * @param referenceFrame defines the frame that keyframes in the range will be relative to
+    * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
+    * @returns the original skeleton
+    */
+  def MakeAnimationAdditive(skeleton: typings.babylonjs.BABYLON.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.BABYLON.Skeleton] = js.native
+  
   /**
     * Creates a new skeleton from serialized data
     * @param parsedSkeleton defines the serialized data
@@ -41,4 +50,3 @@ object Skeleton extends js.Object {
     */
   def Parse(parsedSkeleton: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Skeleton = js.native
 }
-

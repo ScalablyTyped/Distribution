@@ -12,7 +12,7 @@ A barcode scanner for Honeywell handheld devices like Honeywell Dolphin CT50
 | Keywords           | honeywell, barcode, scanner |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 14526 |
+| # downloads        | 4368 |
 | # stars            | 0 |
 
 ## Links

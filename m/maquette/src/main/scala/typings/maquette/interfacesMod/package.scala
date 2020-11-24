@@ -2,9 +2,10 @@ package typings.maquette
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object interfacesMod {
+  
   type EventHandlerInterceptor = js.Function4[
     /* propertyName */ java.lang.String, 
     /* eventHandler */ js.Function, 
@@ -12,11 +13,13 @@ package object interfacesMod {
     /* properties */ typings.maquette.interfacesMod.VNodeProperties, 
     js.UndefOr[js.Function]
   ]
+  
   type ProjectorPerformanceLogger = js.Function2[
     /* eventType */ typings.maquette.interfacesMod.PerformanceLoggerEvent, 
     /* trigger */ js.UndefOr[typings.std.Event], 
     scala.Unit
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.maquette.interfacesMod.VNode

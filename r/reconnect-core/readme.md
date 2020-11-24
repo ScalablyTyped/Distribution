@@ -11,8 +11,8 @@ Generic stream reconnection module.
 | Full name          | reconnect-core |
 | Keywords           | reconnect, core |
 | # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 1831522 |
+| # dependents       | 45 |
+| # downloads        | 2335505 |
 | # stars            | 4 |
 
 ## Links

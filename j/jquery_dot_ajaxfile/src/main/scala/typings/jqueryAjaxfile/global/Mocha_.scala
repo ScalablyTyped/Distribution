@@ -6,20 +6,21 @@ import typings.jqueryAjaxfile.anon.Bail
 import typings.jqueryAjaxfile.anon.Close
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Mocha")
 @js.native
 class Mocha_ () extends Mocha {
   def this(options: Bail) = this()
 }
-
 // merge the Mocha class declaration with a module
 @JSGlobal("Mocha")
 @js.native
 object Mocha_ extends js.Object {
+  
   @js.native
   object reporters extends js.Object {
+    
     @js.native
     class Base protected ()
       extends typings.jqueryAjaxfile.Mocha.reporters.Base {
@@ -101,8 +102,5 @@ object Mocha_ extends js.Object {
       def this(runner: IRunner) = this()
       def this(runner: IRunner, options: js.Any) = this()
     }
-    
   }
-  
 }
-

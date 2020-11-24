@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1", "pubsub_v1.Resource$Projects$Snapshots")
 @js.native
 class ResourceProjectsSnapshots protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * pubsub.projects.snapshots.create
     * @desc Creates a snapshot from the requested subscription. Snapshots are
@@ -57,6 +59,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.delete
     * @desc Removes an existing snapshot. Snapshots are used in <a
@@ -94,6 +97,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.get
     * @desc Gets the configuration details of a snapshot. Snapshots are used in
@@ -126,6 +130,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -208,6 +213,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.list
     * @desc Lists the existing snapshots. Snapshots are used in <a
@@ -245,6 +251,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSnapshotsResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.patch
     * @desc Updates an existing snapshot. Snapshots are used in <a
@@ -278,6 +285,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -365,6 +373,7 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.snapshots.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -460,4 +469,3 @@ class ResourceProjectsSnapshots protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

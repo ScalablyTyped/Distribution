@@ -3,7 +3,7 @@ package typings.typescriptCollections.heapMod
 import typings.typescriptCollections.utilMod.ICompareFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/Heap", JSImport.Default)
 @js.native
@@ -53,4 +53,3 @@ import scala.scalajs.js.annotation._
 class default[T] () extends Heap[T] {
   def this(compareFunction: ICompareFunction[T]) = this()
 }
-

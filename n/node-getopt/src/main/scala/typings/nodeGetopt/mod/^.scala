@@ -2,7 +2,7 @@ package typings.nodeGetopt.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-getopt", JSImport.Namespace)
 @js.native
@@ -20,20 +20,25 @@ class ^ protected () extends Getopt {
     */
   def this(options: js.Array[_]) = this()
 }
-
 @JSImport("node-getopt", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var HAS_ARGUMENT: Boolean = js.native
+  
   var MULTI_SUPPORTED: Boolean = js.native
+  
   var NO_ARGUMENT: Boolean = js.native
+  
   var SINGLE_ONLY: Boolean = js.native
+  
   var VERSION: String = js.native
+  
   /**
     * equals new Getopt(options)
     * @param options
     */
   def create(options: js.Array[js.Array[String]]): Getopt = js.native
+  
   def getVersion(): String = js.native
 }
-

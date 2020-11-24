@@ -5,22 +5,26 @@ import typings.bootstrapV3Datetimepicker.bootstrapV3DatetimepickerStrings.dpDotc
 import typings.bootstrapV3Datetimepicker.bootstrapV3DatetimepickerStrings.dpDotupdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait JQuery extends js.Object {
-    @JSName("datetimepicker")
-    var datetimepicker_Original: Datetimepicker = js.native
+    
     @JSName("data")
     def data_DateTimePicker(key: DateTimePicker): Datetimepicker = js.native
+    
     /**
       * JQuery plugin function.
       */
     def datetimepicker(): JQuery = js.native
     def datetimepicker(options: DatetimepickerOptions): JQuery = js.native
+    @JSName("datetimepicker")
+    var datetimepicker_Original: Datetimepicker = js.native
+    
     def off(events: EventName): JQuery = js.native
     def off(events: EventName, handler: js.Function1[/* eventobject */ Event, _]): JQuery = js.native
     def off(
@@ -58,6 +62,7 @@ object global extends js.Object {
     def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
     @JSName("off")
     def off_dpupdate(events: dpDotupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
+    
     def on(events: EventName, handler: js.Function1[/* eventObject */ Event, _]): JQuery = js.native
     def on(events: EventName, selector: String, data: js.Any): JQuery = js.native
     def on(
@@ -94,6 +99,4 @@ object global extends js.Object {
     @JSName("on")
     def on_dpupdate(events: dpDotupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
   }
-  
 }
-

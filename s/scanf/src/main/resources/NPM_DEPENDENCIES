@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "scanf" : "1.1.1"
+      "scanf" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "scanf" : "1.1.1"
+      "scanf" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

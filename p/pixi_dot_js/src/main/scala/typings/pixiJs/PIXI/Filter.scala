@@ -3,7 +3,7 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.systems.FilterSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter is a special type of WebGL shader that is applied to the screen.
@@ -143,52 +143,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Filter extends Shader {
-  /**
-    * If enabled, PixiJS will fit the filter area into boundaries for better performance.
-    * Switch it off if it does not work for specific shader.
-    *
-    * @member {boolean} PIXI.Filter#autoFit
-    */
-  var autoFit: Boolean = js.native
-  /**
-    * Sets the blendmode of the filter
-    *
-    * @member {number}
-    * @default PIXI.BLEND_MODES.NORMAL
-    */
-  var blendMode: Double = js.native
-  /**
-    * If enabled is true the filter is applied, if false it will not.
-    *
-    * @member {boolean} PIXI.Filter#enabled
-    */
-  var enabled: Boolean = js.native
-  /**
-    * Legacy filters use position and uvs from attributes
-    * @member {boolean} PIXI.Filter#legacy
-    * @readonly
-    */
-  val legacy: Boolean = js.native
-  /**
-    * The padding of the filter. Some filters require extra space to breath such as a blur.
-    * Increasing this will add extra width and height to the bounds of the object that the
-    * filter is applied to.
-    *
-    * @member {number} PIXI.Filter#padding
-    */
-  var padding: Double = js.native
-  /**
-    * The resolution of the filter. Setting this to be lower will lower the quality but
-    * increase the performance of the filter.
-    *
-    * @member {number} PIXI.Filter#resolution
-    */
-  var resolution: Double = js.native
-  /**
-    * The WebGL state the filter requires to render
-    * @member {PIXI.State} PIXI.Filter#state
-    */
-  var state: State = js.native
+  
   /**
     * Applies the filter
     *
@@ -210,5 +165,57 @@ trait Filter extends Shader {
     clearMode: CLEAR_MODES,
     currentState: js.Any
   ): Unit = js.native
+  
+  /**
+    * If enabled, PixiJS will fit the filter area into boundaries for better performance.
+    * Switch it off if it does not work for specific shader.
+    *
+    * @member {boolean} PIXI.Filter#autoFit
+    */
+  var autoFit: Boolean = js.native
+  
+  /**
+    * Sets the blendmode of the filter
+    *
+    * @member {number}
+    * @default PIXI.BLEND_MODES.NORMAL
+    */
+  var blendMode: Double = js.native
+  
+  /**
+    * If enabled is true the filter is applied, if false it will not.
+    *
+    * @member {boolean} PIXI.Filter#enabled
+    */
+  var enabled: Boolean = js.native
+  
+  /**
+    * Legacy filters use position and uvs from attributes
+    * @member {boolean} PIXI.Filter#legacy
+    * @readonly
+    */
+  val legacy: Boolean = js.native
+  
+  /**
+    * The padding of the filter. Some filters require extra space to breath such as a blur.
+    * Increasing this will add extra width and height to the bounds of the object that the
+    * filter is applied to.
+    *
+    * @member {number} PIXI.Filter#padding
+    */
+  var padding: Double = js.native
+  
+  /**
+    * The resolution of the filter. Setting this to be lower will lower the quality but
+    * increase the performance of the filter.
+    *
+    * @member {number} PIXI.Filter#resolution
+    */
+  var resolution: Double = js.native
+  
+  /**
+    * The WebGL state the filter requires to render
+    * @member {PIXI.State} PIXI.Filter#state
+    */
+  var state: State = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.ToXY")
 @js.native
 object ToXY extends js.Object {
+  
   /**
     * Returns a Vector2 containing the x and y position of the given index in a `width` x `height` sized grid.
     * 
@@ -22,4 +23,3 @@ object ToXY extends js.Object {
   def apply(index: integer, width: integer, height: integer): typings.phaser.Phaser.Math.Vector2 = js.native
   def apply(index: integer, width: integer, height: integer, out: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = js.native
 }
-

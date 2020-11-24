@@ -1,7 +1,7 @@
 
 # Scala.js typings for brainhubeu__react-carousel
 
-Typings are for version 1.15
+Typings are for version 2.0
 
 ## Library description:
 Carousel component for React
@@ -10,9 +10,9 @@ Carousel component for React
 | ------------------ | :-------------: |
 | Full name          | @brainhubeu/react-carousel |
 | Keywords           | react, carousel, react-carousel, react-component, component, image, image-gallery, image-slider, responsive, gallery, rwd |
-| # releases         | 64 |
-| # dependents       | 6 |
-| # downloads        | 112623 |
+| # releases         | 345 |
+| # dependents       | 9 |
+| # downloads        | 676591 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.com_.sun.star.frame.XController2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to be notified of events happening in an {@link OfficeDocument} , and to cause notification of such events.
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDocumentEventBroadcaster extends js.Object {
+  
   /**
     * registers a listener which is notified about document events
     * @param Listener the listener to register. The behavior of the method is undefined this listener is `NULL` .
     */
   def addDocumentEventListener(Listener: XDocumentEventListener): Unit = js.native
+  
   /**
     * causes the broadcaster to notify all registered listeners of the given event
     *
@@ -37,14 +39,15 @@ trait XDocumentEventBroadcaster extends js.Object {
     * @throws com::sun::star::lang::NoSupportException if the broadcaster implementation does not supported broadcasting events induced externally. This is usu
     */
   def notifyDocumentEvent(EventName: String, ViewController: XController2, Supplement: js.Any): Unit = js.native
+  
   /**
     * revokes a listener which has previously been registered to be notified about document events.
     * @param Listener the listener to revoke. The behavior of the method is undefined this listener is `NULL` .
     */
   def removeDocumentEventListener(Listener: XDocumentEventListener): Unit = js.native
 }
-
 object XDocumentEventBroadcaster {
+  
   @scala.inline
   def apply(
     addDocumentEventListener: XDocumentEventListener => Unit,
@@ -54,24 +57,29 @@ object XDocumentEventBroadcaster {
     val __obj = js.Dynamic.literal(addDocumentEventListener = js.Any.fromFunction1(addDocumentEventListener), notifyDocumentEvent = js.Any.fromFunction3(notifyDocumentEvent), removeDocumentEventListener = js.Any.fromFunction1(removeDocumentEventListener))
     __obj.asInstanceOf[XDocumentEventBroadcaster]
   }
+  
   @scala.inline
   implicit class XDocumentEventBroadcasterOps[Self <: XDocumentEventBroadcaster] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddDocumentEventListener(value: XDocumentEventListener => Unit): Self = this.set("addDocumentEventListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setNotifyDocumentEvent(value: (String, XController2, js.Any) => Unit): Self = this.set("notifyDocumentEvent", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setRemoveDocumentEventListener(value: XDocumentEventListener => Unit): Self = this.set("removeDocumentEventListener", js.Any.fromFunction1(value))
   }
-  
 }
-

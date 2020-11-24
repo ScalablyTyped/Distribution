@@ -9,20 +9,30 @@ import typings.dropboxjs.anon.Scope
 import typings.std.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Dropbox.AuthDriver")
 @js.native
 class AuthDriver ()
   extends typings.dropboxjs.Dropbox.AuthDriver
-
 @JSGlobal("Dropbox.AuthDriver")
 @js.native
 object AuthDriver extends js.Object {
+  
   @js.native
   class BrowserBase protected ()
     extends typings.dropboxjs.Dropbox.AuthDriver.BrowserBase {
     def this(options: RememberUser) = this()
+  }
+  /* static members */
+  @js.native
+  object BrowserBase extends js.Object {
+    
+    def cleanupLocation(): Unit = js.native
+    
+    def currentLocation(): String = js.native
+    
+    def localStorage(): Storage = js.native
   }
   
   @js.native
@@ -36,11 +46,23 @@ object AuthDriver extends js.Object {
     extends typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
     def this(options: ReceiverPath) = this()
   }
+  /* static members */
+  @js.native
+  object ChromeExtension extends js.Object {
+    
+    def oauthReceiver(): Unit = js.native
+  }
   
   @js.native
   class Cordova ()
     extends typings.dropboxjs.Dropbox.AuthDriver.Cordova {
     def this(options: ReceiverPath) = this()
+  }
+  /* static members */
+  @js.native
+  object Cordova extends js.Object {
+    
+    def oauthReceiver(): Unit = js.native
   }
   
   /** Do not use class! TypeScript definition implementation detail : https://github.com/Microsoft/TypeScript/issues/371 */
@@ -59,39 +81,18 @@ object AuthDriver extends js.Object {
     extends typings.dropboxjs.Dropbox.AuthDriver.Popup {
     def this(options: RedirectOptions) = this()
   }
+  /* static members */
+  @js.native
+  object Popup extends js.Object {
+    
+    def locationOrigin(location: String): String = js.native
+    
+    def oauthReceiver(): Unit = js.native
+  }
   
   @js.native
   class Redirect ()
     extends typings.dropboxjs.Dropbox.AuthDriver.Redirect {
     def this(options: RedirectFile) = this()
   }
-  
-  /* static members */
-  @js.native
-  object BrowserBase extends js.Object {
-    def cleanupLocation(): Unit = js.native
-    def currentLocation(): String = js.native
-    def localStorage(): Storage = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ChromeExtension extends js.Object {
-    def oauthReceiver(): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Cordova extends js.Object {
-    def oauthReceiver(): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Popup extends js.Object {
-    def locationOrigin(location: String): String = js.native
-    def oauthReceiver(): Unit = js.native
-  }
-  
 }
-

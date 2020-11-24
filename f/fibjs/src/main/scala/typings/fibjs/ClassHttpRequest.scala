@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassHttpRequest extends ClassHttpMessage {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassHttpRequest extends ClassHttpMessage {
     * @type String
     */
   var address: String = js.native
+  
   /**
     * class prop 
     *
@@ -26,6 +28,7 @@ trait ClassHttpRequest extends ClassHttpMessage {
     * @type HttpCollection
     */
   var cookies: ClassHttpCollection = js.native
+  
   /**
     * class prop 
     *
@@ -36,6 +39,7 @@ trait ClassHttpRequest extends ClassHttpMessage {
     * @type HttpCollection
     */
   var form: ClassHttpCollection = js.native
+  
   /**
     * class prop 
     *
@@ -46,6 +50,7 @@ trait ClassHttpRequest extends ClassHttpMessage {
     * @type String
     */
   var method: String = js.native
+  
   /**
     * class prop 
     *
@@ -56,6 +61,7 @@ trait ClassHttpRequest extends ClassHttpMessage {
     * @type HttpCollection
     */
   var query: ClassHttpCollection = js.native
+  
   /**
     * class prop 
     *
@@ -66,6 +72,7 @@ trait ClassHttpRequest extends ClassHttpMessage {
     * @type String
     */
   var queryString: String = js.native
+  
   /**
     * class prop 
     *
@@ -77,4 +84,3 @@ trait ClassHttpRequest extends ClassHttpMessage {
     */
   var response: ClassHttpResponse = js.native
 }
-

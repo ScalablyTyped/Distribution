@@ -9,10 +9,10 @@ Convert object keys to camel case
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | camelcase-keys |
-| Keywords           | map, obj, object, key, keys, value, values, val, iterate, camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, deep, recurse, recursive |
-| # releases         | 9 |
-| # dependents       | 176 |
-| # downloads        | 373985811 |
+| Keywords           | map, obj, object, key, keys, value, values, val, iterate, camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, pascalcase, pascal-case, deep, recurse, recursive |
+| # releases         | 13 |
+| # dependents       | 255 |
+| # downloads        | 498212372 |
 | # stars            | 6 |
 
 ## Links

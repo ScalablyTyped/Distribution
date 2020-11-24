@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.SpreadsheetOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSpreadsheet
   extends Instantiable1[/* element */ Element, Spreadsheet]
      with Instantiable2[/* element */ Element, /* options */ SpreadsheetOptions, Spreadsheet] {
-  var fn: Spreadsheet = js.native
+  
   def extend(proto: js.Object): Spreadsheet = js.native
+  
+  var fn: Spreadsheet = js.native
 }
-

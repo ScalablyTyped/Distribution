@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jdenticon" : "3.0.0"
+      "jdenticon" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jdenticon" : "3.0.0"
+      "jdenticon" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

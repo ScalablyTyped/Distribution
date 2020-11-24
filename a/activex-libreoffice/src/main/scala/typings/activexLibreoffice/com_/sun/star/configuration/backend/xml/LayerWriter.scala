@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * can be used to parse a stream of configuration layer XML.
@@ -23,8 +23,8 @@ trait LayerWriter
   extends XLayerHandler
      with XActiveDataSource
      with XInitialization
-
 object LayerWriter {
+  
   @scala.inline
   def apply(
     OutputStream: XOutputStream,
@@ -52,4 +52,3 @@ object LayerWriter {
     __obj.asInstanceOf[LayerWriter]
   }
 }
-

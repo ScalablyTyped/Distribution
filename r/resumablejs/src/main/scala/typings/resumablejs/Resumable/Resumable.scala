@@ -22,61 +22,64 @@ import typings.std.Element
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Resumable extends js.Object {
-  var events: js.Array[_] = js.native
-  /**
-    * An array of ResumableFile file objects added by the user (see full docs for this object type below).
-    **/
-  var files: js.Array[ResumableFile] = js.native
-  /**
-    * A hash object of the configuration of the Resumable.js instance.
-    **/
-  var opts: ConfigurationHash = js.native
-  /**
-    * A boolean value indicator whether or not Resumable.js is supported by the current browser.
-    **/
-  var support: Boolean = js.native
-  var version: Double = js.native
-  var void: js.Any = js.native
+  
   /**
     * Add a HTML5 File object to the list of files.
     **/
   def addFile(file: File): Unit = js.native
+  
   /**
     * Add an Array of HTML5 File objects to the list of files.
     **/
   def addFiles(files: js.Array[File]): Unit = js.native
+  
   def assignBrowse(domNodes: js.Array[Element], isDirectory: Boolean): Unit = js.native
   /**
     * Assign a browse action to one or more DOM nodes. Pass in true to allow directories to be selected (Chrome only).
     **/
   def assignBrowse(domNode: Element, isDirectory: Boolean): Unit = js.native
+  
   def assignDrop(domNodes: js.Array[Element]): Unit = js.native
   /**
     * Assign one or more DOM nodes as a drop target.
     **/
   def assignDrop(domNode: Element): Unit = js.native
+  
   /**
     * Cancel upload of all ResumableFile objects and remove them from the list.
     **/
   def cancel(): Unit = js.native
+  
+  var events: js.Array[_] = js.native
+  
+  /**
+    * An array of ResumableFile file objects added by the user (see full docs for this object type below).
+    **/
+  var files: js.Array[ResumableFile] = js.native
+  
   def fire(): Unit = js.native
+  
   /**
     * Look up a ResumableFile object by its unique identifier.
     **/
   def getFromUniqueIdentifier(uniqueIdentifier: String): Unit = js.native
+  
   def getOpt(o: String): js.Any = js.native
+  
   /**
     * Returns the total size of the upload in bytes.
     **/
   def getSize(): Unit = js.native
+  
   /**
     * Returns a boolean indicating whether or not the instance is currently uploading anything.
     **/
   def isUploading(): Boolean = js.native
+  
   // Events
   /**
     * Listen for event from Resumable.js (see below)
@@ -170,24 +173,43 @@ trait Resumable extends js.Object {
     **/
   @JSName("on")
   def on_uploadStart(event: uploadStart, callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * A hash object of the configuration of the Resumable.js instance.
+    **/
+  var opts: ConfigurationHash = js.native
+  
   /**
     * Pause uploading.
     **/
   def pause(): Unit = js.native
+  
   /**
     * Returns a float between 0 and 1 indicating the current upload progress of all files.
     **/
   def progress(): Double = js.native
+  
   /**
     * Cancel upload of a specific ResumableFile object on the list from the list.
     **/
   def removeFile(file: ResumableFile): Unit = js.native
+  
+  /**
+    * A boolean value indicator whether or not Resumable.js is supported by the current browser.
+    **/
+  var support: Boolean = js.native
+  
   def unAssignDrop(domNodes: js.Array[Element]): Unit = js.native
   def unAssignDrop(domNode: Element): Unit = js.native
+  
   /**
     * Start or resume uploading.
     **/
   def upload(): Unit = js.native
+  
   def uploadNextChunk(): Unit = js.native
+  
+  var version: Double = js.native
+  
+  var void: js.Any = js.native
 }
-

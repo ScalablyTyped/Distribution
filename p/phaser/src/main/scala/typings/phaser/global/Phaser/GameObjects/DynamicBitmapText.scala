@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BitmapText objects work by taking a texture file and an XML or JSON file that describes the font structure.
@@ -100,4 +100,3 @@ class DynamicBitmapText protected ()
     align: integer
   ) = this()
 }
-

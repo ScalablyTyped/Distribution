@@ -4,7 +4,7 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-state", "AllSelection")
 @js.native
@@ -14,4 +14,3 @@ class AllSelection[S /* <: Schema[_, _] */] protected () extends Selection[S] {
     */
   def this(doc: Node[S]) = this()
 }
-

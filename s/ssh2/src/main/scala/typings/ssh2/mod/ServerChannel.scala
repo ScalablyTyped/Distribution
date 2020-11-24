@@ -5,16 +5,11 @@ import typings.ssh2.ssh2Booleans.`true`
 import typings.ssh2.ssh2Strings.close
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerChannel extends Channel {
-  /** Indicates whether this is a server or client channel. */
-  @JSName("server")
-  var server_ServerChannel: `true` = js.native
-  /** Standard error for the Channel. */
-  @JSName("stderr")
-  var stderr_ServerChannel: Writable = js.native
+  
   /**
     * Sends an exit status code to the client.
     *
@@ -27,6 +22,7 @@ trait ServerChannel extends Channel {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def exit(name: String, coreDumped: Boolean, msg: String): Boolean = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
@@ -34,5 +30,12 @@ trait ServerChannel extends Channel {
     */
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+  
+  /** Indicates whether this is a server or client channel. */
+  @JSName("server")
+  var server_ServerChannel: `true` = js.native
+  
+  /** Standard error for the Channel. */
+  @JSName("stderr")
+  var stderr_ServerChannel: Writable = js.native
 }
-

@@ -12,7 +12,7 @@ A marshaller for the body portion of AWS's JSON and REST-JSON protocols
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 324 |
-| # downloads        | 26329 |
+| # downloads        | 133060 |
 | # stars            | 0 |
 
 ## Links

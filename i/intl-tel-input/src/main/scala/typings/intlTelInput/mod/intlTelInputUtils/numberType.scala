@@ -2,14 +2,14 @@ package typings.intlTelInput.mod.intlTelInputUtils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait numberType extends js.Object
-
 @JSImport("intl-tel-input", "intlTelInputUtils.numberType")
 @js.native
 object numberType extends js.Object {
+  
   @js.native
   sealed trait FIXED_LINE extends numberType
   
@@ -45,6 +45,4 @@ object numberType extends js.Object {
   
   @js.native
   sealed trait VOIP extends numberType
-  
 }
-

@@ -2,7 +2,7 @@ package typings.navigation.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("navigation", "HTML5HistoryManager")
 @js.native
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 class HTML5HistoryManager () extends HistoryManager {
   def this(applicationPath: String) = this()
+  
   /**
     * Sets the browser Url to the url using pushState
     * @param url The current url
@@ -19,10 +20,10 @@ class HTML5HistoryManager () extends HistoryManager {
     * browser history entry
     */
   def addHistory(url: String, replace: Boolean): Unit = js.native
+  
   /**
     * Registers a listener for the popstate event
     * @param navigateHistory The history navigation event handler
     */
   def init(navigateHistory: js.Function0[Unit]): Unit = js.native
 }
-

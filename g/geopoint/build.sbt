@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geopoint"
-version := "1.0-dt-20200520Z-303690"
+version := "1.0-dt-20200520Z-141262"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

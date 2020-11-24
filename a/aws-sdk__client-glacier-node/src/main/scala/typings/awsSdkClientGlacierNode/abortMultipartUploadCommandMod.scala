@@ -5,33 +5,29 @@ import typings.awsSdkClientGlacierNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientGlacierNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientGlacierNode.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput
 import typings.awsSdkClientGlacierNode.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-glacier-node/commands/AbortMultipartUploadCommand", JSImport.Namespace)
 @js.native
 object abortMultipartUploadCommandMod extends js.Object {
+  
   @js.native
   class AbortMultipartUploadCommand protected () extends Command[
           InputTypesUnion, 
           AbortMultipartUploadInput, 
           OutputTypesUnion, 
           AbortMultipartUploadOutput, 
-          GlacierResolvedConfiguration, 
-          Readable
+          GlacierResolvedConfiguration
         ] {
     def this(input: AbortMultipartUploadInput) = this()
-    val middlewareStack: MiddlewareStack[AbortMultipartUploadInput, AbortMultipartUploadOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[AbortMultipartUploadInput, AbortMultipartUploadOutput] = js.native
   }
-  
 }
-

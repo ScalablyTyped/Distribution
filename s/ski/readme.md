@@ -10,9 +10,9 @@ eponymous functions from the SKI calculus
 | ------------------ | :-------------: |
 | Full name          | ski |
 | Keywords           | identity, constant, SKI, combinator |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 116511 |
+| # downloads        | 80943 |
 | # stars            | 1 |
 
 ## Links

@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface provides character conversions like case folding or Hiragana to Katakana.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XExtendedTransliteration extends XTransliteration {
+  
   /**
     * Transliterate a character to a character.
     *
@@ -26,11 +27,13 @@ trait XExtendedTransliteration extends XTransliteration {
     * @param cChar The input character.
     */
   def transliterateChar2Char(cChar: String): String = js.native
+  
   /**
     * Transliterate a character to a string.
     * @param cChar The input character.
     */
   def transliterateChar2String(cChar: String): String = js.native
+  
   /**
     * Transliterate a substring. The functionality is the same as {@link com.sun.star.i18n.XTransliteration.transliterate()} but omits the offset parameter
     * to improve performance.
@@ -40,8 +43,8 @@ trait XExtendedTransliteration extends XTransliteration {
     */
   def transliterateString2String(aStr: String, nStartPos: Double, nCount: Double): String = js.native
 }
-
 object XExtendedTransliteration {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -69,24 +72,29 @@ object XExtendedTransliteration {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), compareString = js.Any.fromFunction2(compareString), compareSubstring = js.Any.fromFunction6(compareSubstring), equals = js.Any.fromFunction8(equals), folding = js.Any.fromFunction4(folding), getAvailableModules = js.Any.fromFunction2(getAvailableModules), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), loadModule = js.Any.fromFunction2(loadModule), loadModuleByImplName = js.Any.fromFunction2(loadModuleByImplName), loadModuleNew = js.Any.fromFunction2(loadModuleNew), loadModulesByImplNames = js.Any.fromFunction2(loadModulesByImplNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), transliterate = js.Any.fromFunction4(transliterate), transliterateChar2Char = js.Any.fromFunction1(transliterateChar2Char), transliterateChar2String = js.Any.fromFunction1(transliterateChar2String), transliterateRange = js.Any.fromFunction2(transliterateRange), transliterateString2String = js.Any.fromFunction3(transliterateString2String))
     __obj.asInstanceOf[XExtendedTransliteration]
   }
+  
   @scala.inline
   implicit class XExtendedTransliterationOps[Self <: XExtendedTransliteration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setTransliterateChar2Char(value: String => String): Self = this.set("transliterateChar2Char", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setTransliterateChar2String(value: String => String): Self = this.set("transliterateChar2String", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setTransliterateString2String(value: (String, Double, Double) => String): Self = this.set("transliterateString2String", js.Any.fromFunction3(value))
   }
-  
 }
-

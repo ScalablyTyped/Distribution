@@ -4,11 +4,11 @@ import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
 import typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/utilities/lib/customizations/mergeCustomizations", JSImport.Namespace)
 @js.native
 object mergeCustomizationsMod extends js.Object {
+  
   def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = js.native
 }
-

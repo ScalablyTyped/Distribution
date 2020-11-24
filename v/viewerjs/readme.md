@@ -1,7 +1,7 @@
 
 # Scala.js typings for viewerjs
 
-Typings are for version 1.6.1
+Typings are for version 1.8.0
 
 ## Library description:
 JavaScript image viewer.
@@ -10,9 +10,9 @@ JavaScript image viewer.
 | ------------------ | :-------------: |
 | Full name          | viewerjs |
 | Keywords           | image, viewer, viewerjs, viewer.js, html, css, javascript, front-end, web |
-| # releases         | 19 |
-| # dependents       | 114 |
-| # downloads        | 560914 |
+| # releases         | 14 |
+| # dependents       | 199 |
+| # downloads        | 958703 |
 | # stars            | 5 |
 
 ## Links

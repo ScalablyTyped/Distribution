@@ -15,11 +15,12 @@ import typings.makerJs.MakerJs.IWalkPathBooleanCallback
 import typings.makerJs.MakerJs.measure.Atlas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.model")
 @js.native
 object model extends js.Object {
+  
   /**
     * Break a model's paths everywhere they intersect with another path.
     *
@@ -28,12 +29,14 @@ object model extends js.Object {
     */
   def breakPathsAtIntersections(modelToBreak: IModel): Unit = js.native
   def breakPathsAtIntersections(modelToBreak: IModel, modelToIntersect: IModel): Unit = js.native
+  
   /**
     * Center a model at [0, 0].
     *
     * @param modelToCenter The model to center.
     */
   def center(modelToCenter: IModel): IModel = js.native
+  
   /**
     * Combine 2 models.
     *
@@ -291,6 +294,7 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  
   /**
     * Combine 2 models, resulting in a intersection.
     *
@@ -298,6 +302,7 @@ object model extends js.Object {
     * @param modelB Second model to combine.
     */
   def combineIntersection(modelA: IModel, modelB: IModel): Unit = js.native
+  
   /**
     * Combine 2 models, resulting in a subtraction of B from A.
     *
@@ -305,6 +310,7 @@ object model extends js.Object {
     * @param modelB Second model to combine.
     */
   def combineSubtraction(modelA: IModel, modelB: IModel): Unit = js.native
+  
   /**
     * Combine 2 models, resulting in a union.
     *
@@ -312,6 +318,7 @@ object model extends js.Object {
     * @param modelB Second model to combine.
     */
   def combineUnion(modelA: IModel, modelB: IModel): Unit = js.native
+  
   /**
     * Convert a model to match a different unit system.
     *
@@ -320,6 +327,7 @@ object model extends js.Object {
     * @returns The scaled model (for cascading).
     */
   def convertUnits(modeltoConvert: IModel, destUnitType: String): IModel = js.native
+  
   /**
     * Count the number of child models within a given model.
     *
@@ -327,12 +335,14 @@ object model extends js.Object {
     * @returns Number of child models.
     */
   def countChildModels(modelContext: IModel): Double = js.native
+  
   /**
     * Remove all paths in a loop model from the model(s) which contained them.
     *
     * @param loopToDetach The model to search for loops.
     */
   def detachLoop(loopToDetach: IModel): Unit = js.native
+  
   /**
     * Expand all paths in a model, then combine the resulting expansions.
     *
@@ -350,6 +360,7 @@ object model extends js.Object {
   ): IModel = js.native
   def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = js.native
   def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = js.native
+  
   /**
     * Find paths that have common endpoints and form chains.
     *
@@ -358,6 +369,7 @@ object model extends js.Object {
     */
   def findChains(modelContext: IModel, callback: IChainCallback): Unit = js.native
   def findChains(modelContext: IModel, callback: IChainCallback, options: IFindChainsOptions): Unit = js.native
+  
   /**
     * Find paths that have common endpoints and form loops.
     *
@@ -367,6 +379,7 @@ object model extends js.Object {
     */
   def findLoops(modelContext: IModel): IModel = js.native
   def findLoops(modelContext: IModel, options: IFindLoopsOptions): IModel = js.native
+  
   /**
     * Find a single chain within a model, across all layers. Shorthand of findChains; useful when you know there is only one chain to find in your model.
     *
@@ -374,6 +387,7 @@ object model extends js.Object {
     * @returns A chain object or null if chains were not found.
     */
   def findSingleChain(modelContext: IModel): IChain = js.native
+  
   /**
     * Get an unused id in the models map with the same prefix.
     *
@@ -381,6 +395,7 @@ object model extends js.Object {
     * @param modelId The id to use directly (if unused), or as a prefix.
     */
   def getSimilarModelId(modelContext: IModel, modelId: String): String = js.native
+  
   /**
     * Get an unused id in the paths map with the same prefix.
     *
@@ -388,6 +403,7 @@ object model extends js.Object {
     * @param pathId The id to use directly (if unused), or as a prefix.
     */
   def getSimilarPathId(modelContext: IModel, pathId: String): String = js.native
+  
   /**
     * Check to see if a path is inside of a model.
     *
@@ -428,6 +444,7 @@ object model extends js.Object {
     farPoint: IPoint,
     measureAtlas: Atlas
   ): Boolean = js.native
+  
   /**
     * Create a clone of a model, mirrored on either or both x and y axes.
     *
@@ -437,6 +454,7 @@ object model extends js.Object {
     * @returns Mirrored model.
     */
   def mirror(modelToMirror: IModel, mirrorX: Boolean, mirrorY: Boolean): IModel = js.native
+  
   /**
     * Move a model to an absolute point. Note that this is also accomplished by directly setting the origin property. This function exists for cascading.
     *
@@ -445,6 +463,7 @@ object model extends js.Object {
     * @returns The original model (for cascading).
     */
   def move(modelToMove: IModel, origin: IPoint): IModel = js.native
+  
   /**
     * Move a model's origin by a relative amount.
     *
@@ -453,6 +472,7 @@ object model extends js.Object {
     * @returns The original model (for cascading).
     */
   def moveRelative(modelToMove: IModel, delta: IPoint): IModel = js.native
+  
   /**
     * Moves all of a model's children (models and paths, recursively) in reference to a single common origin. Useful when points between children need to connect to each other.
     *
@@ -461,6 +481,7 @@ object model extends js.Object {
     */
   def originate(modelToOriginate: IModel): IModel = js.native
   def originate(modelToOriginate: IModel, origin: IPoint): IModel = js.native
+  
   /**
     * Outline a model by a specified distance. Useful for accommodating for kerf.
     *
@@ -474,6 +495,7 @@ object model extends js.Object {
   def outline(modelToOutline: IModel, distance: Double, joints: js.UndefOr[scala.Nothing], inside: Boolean): IModel = js.native
   def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = js.native
   def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = js.native
+  
   /**
     * Prefix the ids of paths in a model.
     *
@@ -482,6 +504,7 @@ object model extends js.Object {
     * @returns The original model (for cascading).
     */
   def prefixPathIds(modelToPrefix: IModel, prefix: String): IModel = js.native
+  
   /**
     * Remove paths from a model which have endpoints that do not connect to other paths.
     *
@@ -497,6 +520,7 @@ object model extends js.Object {
   ): IModel = js.native
   def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = js.native
   def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = js.native
+  
   /**
     * Rotate a model.
     *
@@ -507,6 +531,7 @@ object model extends js.Object {
     */
   def rotate(modelToRotate: IModel, angleInDegrees: Double): IModel = js.native
   def rotate(modelToRotate: IModel, angleInDegrees: Double, rotationOrigin: IPoint): IModel = js.native
+  
   /**
     * Scale a model.
     *
@@ -517,6 +542,7 @@ object model extends js.Object {
     */
   def scale(modelToScale: IModel, scaleValue: Double): IModel = js.native
   def scale(modelToScale: IModel, scaleValue: Double, scaleOrigin: Boolean): IModel = js.native
+  
   /**
     * Simplify a model's paths by reducing redundancy: combine multiple overlapping paths into a single path. The model must be originated.
     *
@@ -526,6 +552,7 @@ object model extends js.Object {
     */
   def simplify(modelToSimplify: IModel): IModel = js.native
   def simplify(modelToSimplify: IModel, options: ISimplifyOptions): IModel = js.native
+  
   /**
     * Recursively walk through all paths for a given model.
     *
@@ -535,6 +562,7 @@ object model extends js.Object {
     * @param modelCallbackAfterWalk Callback for each model after recursion.
     */
   def walk(modelContext: IModel, options: IWalkOptions): Unit = js.native
+  
   /**
     * Recursively walk through all paths for a given model.
     *
@@ -542,6 +570,7 @@ object model extends js.Object {
     * @param callback Callback for each path.
     */
   def walkPaths(modelContext: IModel, callback: IModelPathCallback): Unit = js.native
+  
   /**
     * Move a model so its bounding box begins at [0, 0].
     *
@@ -549,4 +578,3 @@ object model extends js.Object {
     */
   def zero(modelToZero: IModel): IModel = js.native
 }
-

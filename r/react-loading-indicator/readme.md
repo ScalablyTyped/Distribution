@@ -12,7 +12,7 @@ A loading indicator written purely in React that uses SVG and no images
 | Keywords           | react, component, loading-indicator |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 7491 |
+| # downloads        | 7794 |
 | # stars            | 1 |
 
 ## Links

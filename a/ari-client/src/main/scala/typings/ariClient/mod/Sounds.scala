@@ -5,10 +5,11 @@ import typings.ariClient.anon.SoundId
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sounds extends js.Object {
+  
   /**
     * Get a sounds details.
     *
@@ -21,6 +22,7 @@ trait Sounds extends js.Object {
     * @param params.soundId - Sounds id.
     */
   def get(params: SoundId, callback: js.Function2[/* err */ Error, /* sound */ Sound, Unit]): Unit = js.native
+  
   /**
     * List all sounds.
     *
@@ -41,4 +43,3 @@ trait Sounds extends js.Object {
     */
   def list(params: FormatLang, callback: js.Function2[/* err */ Error, /* sounds */ js.Array[Sound], Unit]): Unit = js.native
 }
-

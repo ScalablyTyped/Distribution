@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapEvent
 import typings.openlayers.mod.olx.control.ZoomSliderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,11 +33,11 @@ import scala.scalajs.js.annotation._
 class ZoomSlider () extends Control {
   def this(opt_options: ZoomSliderOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "control.ZoomSlider")
 @js.native
 object ZoomSlider extends js.Object {
+  
   /**
     * Update the zoomslider element.
     * @param mapEvent Map event.
@@ -45,4 +45,3 @@ object ZoomSlider extends js.Object {
     */
   def render(mapEvent: MapEvent): Unit = js.native
 }
-

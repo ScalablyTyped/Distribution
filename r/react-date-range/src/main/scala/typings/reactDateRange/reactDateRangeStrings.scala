@@ -4,9 +4,49 @@ import typings.reactDateRange.mod.DateRangeIndex
 import typings.reactDateRange.mod.LanguageType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactDateRangeStrings {
+  
+  @scala.inline
+  def `Last 30 Days`: `Last 30 Days` = ("Last 30 Days").asInstanceOf[`Last 30 Days`]
+  
+  @scala.inline
+  def `Last 7 Days`: `Last 7 Days` = ("Last 7 Days").asInstanceOf[`Last 7 Days`]
+  
+  @scala.inline
+  def Today: Today = "Today".asInstanceOf[Today]
+  
+  @scala.inline
+  def Yesterday: Yesterday = "Yesterday".asInstanceOf[Yesterday]
+  
+  @scala.inline
+  def cn: cn = "cn".asInstanceOf[cn]
+  
+  @scala.inline
+  def de: de = "de".asInstanceOf[de]
+  
+  @scala.inline
+  def es: es = "es".asInstanceOf[es]
+  
+  @scala.inline
+  def fr: fr = "fr".asInstanceOf[fr]
+  
+  @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  
+  @scala.inline
+  def jp: jp = "jp".asInstanceOf[jp]
+  
+  @scala.inline
+  def ko: ko = "ko".asInstanceOf[ko]
+  
+  @scala.inline
+  def ru: ru = "ru".asInstanceOf[ru]
+  
+  @scala.inline
+  def tr: tr = "tr".asInstanceOf[tr]
+  
   @js.native
   sealed trait `Last 30 Days` extends DateRangeIndex
   
@@ -45,32 +85,4 @@ object reactDateRangeStrings {
   
   @js.native
   sealed trait tr extends LanguageType
-  
-  @scala.inline
-  def `Last 30 Days`: `Last 30 Days` = ("Last 30 Days").asInstanceOf[`Last 30 Days`]
-  @scala.inline
-  def `Last 7 Days`: `Last 7 Days` = ("Last 7 Days").asInstanceOf[`Last 7 Days`]
-  @scala.inline
-  def Today: Today = "Today".asInstanceOf[Today]
-  @scala.inline
-  def Yesterday: Yesterday = "Yesterday".asInstanceOf[Yesterday]
-  @scala.inline
-  def cn: cn = "cn".asInstanceOf[cn]
-  @scala.inline
-  def de: de = "de".asInstanceOf[de]
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
-  @scala.inline
-  def it: it = "it".asInstanceOf[it]
-  @scala.inline
-  def jp: jp = "jp".asInstanceOf[jp]
-  @scala.inline
-  def ko: ko = "ko".asInstanceOf[ko]
-  @scala.inline
-  def ru: ru = "ru".asInstanceOf[ru]
-  @scala.inline
-  def tr: tr = "tr".asInstanceOf[tr]
 }
-

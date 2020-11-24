@@ -1,0 +1,98 @@
+package typings.octokitTypes.endpointsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait CodeScanningUploadSarifEndpoint extends js.Object {
+  
+  /**
+    * The base directory used in the analysis, as it appears in the SARIF file.
+    * This property is used to convert file paths from absolute to relative, so that alerts can be mapped to their correct location in the repository.
+    */
+  var checkout_uri: js.UndefOr[String] = js.native
+  
+  /**
+    * The commit SHA of the code scanning analysis file.
+    */
+  var commit_sha: String = js.native
+  
+  var owner: String = js.native
+  
+  /**
+    * The full Git reference of the code scanning analysis file, formatted as `refs/heads/<branch name>`.
+    */
+  var ref: String = js.native
+  
+  var repo: String = js.native
+  
+  /**
+    * A Base64 string representing the SARIF file to upload. You must first compress your SARIF file using [`gzip`](http://www.gnu.org/software/gzip/manual/gzip.html) and then translate the contents of the file into a Base64 encoding string.
+    */
+  var sarif: String = js.native
+  
+  /**
+    * The time that the analysis run began. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    */
+  var started_at: js.UndefOr[String] = js.native
+  
+  /**
+    * The name of the tool used to generate the code scanning analysis alert.
+    */
+  var tool_name: String = js.native
+}
+object CodeScanningUploadSarifEndpoint {
+  
+  @scala.inline
+  def apply(commit_sha: String, owner: String, ref: String, repo: String, sarif: String, tool_name: String): CodeScanningUploadSarifEndpoint = {
+    val __obj = js.Dynamic.literal(commit_sha = commit_sha.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sarif = sarif.asInstanceOf[js.Any], tool_name = tool_name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CodeScanningUploadSarifEndpoint]
+  }
+  
+  @scala.inline
+  implicit class CodeScanningUploadSarifEndpointOps[Self <: CodeScanningUploadSarifEndpoint] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCommit_sha(value: String): Self = this.set("commit_sha", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSarif(value: String): Self = this.set("sarif", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTool_name(value: String): Self = this.set("tool_name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCheckout_uri(value: String): Self = this.set("checkout_uri", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCheckout_uri: Self = this.set("checkout_uri", js.undefined)
+    
+    @scala.inline
+    def setStarted_at(value: String): Self = this.set("started_at", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStarted_at: Self = this.set("started_at", js.undefined)
+  }
+}

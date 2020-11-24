@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object xml {
+  
   /**
     * This service describes a container for XML attributes.
     *
@@ -13,11 +14,13 @@ package object xml {
     * use a prefix.
     */
   type AttributeContainer = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+  
   /**
     * describes an import filter for XML-based file formats.
     * @since OOo 1.1.2
     */
   type ImportFilter = typings.activexLibreoffice.com_.sun.star.xml.XImportFilter
+  
   /**
     * This service describes a container for XML namespaces.
     *
@@ -25,6 +28,7 @@ package object xml {
     * @see com.sun.star.xforms.Binding
     */
   type NamespaceContainer = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+  
   /**
     * describes an export filter for XML-based file formats.
     *

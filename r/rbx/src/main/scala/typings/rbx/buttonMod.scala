@@ -61,20 +61,15 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/elements/button", JSImport.Namespace)
 @js.native
 object buttonMod extends js.Object {
+  
   @js.native
   object Button extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Group: ForwardRefAsExoticComponent[ButtonGroupProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ButtonModifierProps with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ButtonModifierProps with (Pick[
           ComponentProps[TAsComponent], 
@@ -84,7 +79,16 @@ object buttonMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Group: ForwardRefAsExoticComponent[ButtonGroupProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ButtonModifierProps with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
-  
 }
-

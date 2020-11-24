@@ -6,17 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var jobs: ResourceProjectsJobs = js.native
-  var locations: ResourceProjectsLocations = js.native
-  var models: ResourceProjectsModels = js.native
-  var operations: ResourceProjectsOperations = js.native
+  
   /**
     * ml.projects.getConfig
     * @desc Get the service account information associated with your project.
@@ -52,6 +50,15 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1GetConfigResponse]
   ): Unit = js.native
+  
+  var jobs: ResourceProjectsJobs = js.native
+  
+  var locations: ResourceProjectsLocations = js.native
+  
+  var models: ResourceProjectsModels = js.native
+  
+  var operations: ResourceProjectsOperations = js.native
+  
   /**
     * ml.projects.predict
     * @desc Performs prediction on the data in the request. Cloud ML Engine
@@ -85,4 +92,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleApiHttpBody]
   ): Unit = js.native
 }
-

@@ -5,11 +5,11 @@ import typings.ionic.definitionsMod.NpmClient
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/utils/npm", "pkgFromRegistry")
 @js.native
 object pkgFromRegistry extends js.Object {
+  
   def apply(npmClient: NpmClient, options: PartialPkgManagerOptions): js.Promise[js.UndefOr[PackageJson]] = js.native
 }
-

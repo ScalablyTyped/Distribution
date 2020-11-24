@@ -6,17 +6,18 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/state/stateBuilder", JSImport.Namespace)
 @js.native
 object stateBuilderMod extends js.Object {
+  
+  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = js.native
+  
   @js.native
   class StateBuilder protected () extends js.Object {
     def this(matcher: StateMatcher, urlMatcherFactory: UrlMatcherFactory) = this()
-    /** An object that contains all the BuilderFunctions registered, key'd by the name of the State property they build */
-    var builders: js.Any = js.native
-    var matcher: js.Any = js.native
+    
     /**
       * Builds all of the properties on an essentially blank State object, returning a State object which has all its
       * properties and API built.
@@ -25,6 +26,7 @@ object stateBuilderMod extends js.Object {
       * @returns the built State object
       */
     def build(state: StateObject): StateObject = js.native
+    
     /**
       * Gets the registered builder functions for a given property of [[StateObject]].
       *
@@ -44,11 +46,17 @@ object stateBuilderMod extends js.Object {
       * @returns a function which deregisters the BuilderFunction
       */
     def builder(property: String, fn: BuilderFunction): js.Function = js.native
+    
+    /** An object that contains all the BuilderFunctions registered, key'd by the name of the State property they build */
+    var builders: js.Any = js.native
+    
+    var matcher: js.Any = js.native
+    
     def name(state: StateObject): String = js.native
+    
     def parentName(state: StateObject): String = js.native
   }
   
-  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = js.native
   type BuilderFunction = js.Function2[
     /* state */ StateObject, 
     /* parent */ js.UndefOr[
@@ -57,4 +65,3 @@ object stateBuilderMod extends js.Object {
     js.Any
   ]
 }
-

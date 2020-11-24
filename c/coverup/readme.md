@@ -12,7 +12,7 @@ Conceal a string with asterisks
 | Keywords           | coverup, conceal, concealed, mask, masked, obfuscate, obfuscated, hide, hidden, password, asterisk, asterisks, pad |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6013 |
+| # downloads        | 9975 |
 | # stars            | 1 |
 
 ## Links

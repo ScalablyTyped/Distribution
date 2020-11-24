@@ -3,7 +3,7 @@ package typings.node.tlsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default value of the maxVersion option of
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @JSImport("tls", "DEFAULT_MAX_VERSION")
 @js.native
 object DEFAULT_MAX_VERSION extends TopLevel[SecureVersion]
-

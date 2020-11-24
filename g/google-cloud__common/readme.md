@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__common
 
-Typings are for version 3.3.2
+Typings are for version 3.5.0
 
 ## Library description:
 Common components for Cloud APIs Node.js Client Libraries
@@ -10,9 +10,9 @@ Common components for Cloud APIs Node.js Client Libraries
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/common |
 | Keywords           | - |
-| # releases         | 59 |
+| # releases         | 40 |
 | # dependents       | 31 |
-| # downloads        | 69114100 |
+| # downloads        | 96820080 |
 | # stars            | 0 |
 
 ## Links

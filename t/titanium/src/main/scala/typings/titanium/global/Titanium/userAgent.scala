@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User-agent string used by Titanium.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.userAgent")
 @js.native
 object userAgent extends TopLevel[String]
-

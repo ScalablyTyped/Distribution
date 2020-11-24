@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-visibility-sensor
 
-Typings are for version 5.0
+Typings are for version 5.1.1
 
 ## Library description:
 Sensor component for React that notifies you when it goes in or out of the window viewport.
@@ -10,9 +10,9 @@ Sensor component for React that notifies you when it goes in or out of the windo
 | ------------------ | :-------------: |
 | Full name          | react-visibility-sensor |
 | Keywords           | react, react-component, visibility |
-| # releases         | 17 |
-| # dependents       | 82 |
-| # downloads        | 4434220 |
+| # releases         | 10 |
+| # dependents       | 105 |
+| # downloads        | 7311495 |
 | # stars            | 4 |
 
 ## Links
@@ -24,7 +24,7 @@ Sensor component for React that notifies you when it goes in or out of the windo
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

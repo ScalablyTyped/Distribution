@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-compose
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 JSS plugin for classes composition
@@ -10,9 +10,9 @@ JSS plugin for classes composition
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-compose |
 | Keywords           | cssinnjs, css-in-js, css in js, jss, plugin, compose, composition |
-| # releases         | 33 |
-| # dependents       | 6 |
-| # downloads        | 593302 |
+| # releases         | 40 |
+| # dependents       | 4 |
+| # downloads        | 5165388 |
 | # stars            | 0 |
 
 ## Links

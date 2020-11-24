@@ -10,15 +10,17 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", JSImport.Namespace)
 @js.native
 object userMod extends js.Object {
+  
   @js.native
   class Access protected () extends js.Object {
     /** @hidden */
     def this(user: GoogleActionsV2User) = this()
+    
     /**
       * Unique Oauth2 token. Only available with account linking.
       * @public
@@ -30,6 +32,7 @@ object userMod extends js.Object {
   class Last protected () extends js.Object {
     /** @hidden */
     def this(user: GoogleActionsV2User) = this()
+    
     /**
       * Timestamp for the last access from the user.
       * Undefined if never seen.
@@ -42,16 +45,19 @@ object userMod extends js.Object {
   class Name protected () extends js.Object {
     /** @hidden */
     def this(profile: GoogleActionsV2UserProfile) = this()
+    
     /**
       * User's display name.
       * @public
       */
     var display: js.UndefOr[String] = js.native
+    
     /**
       * User's family name.
       * @public
       */
     var family: js.UndefOr[String] = js.native
+    
     /**
       * User's given name.
       * @public
@@ -63,6 +69,10 @@ object userMod extends js.Object {
   class Profile protected () extends js.Object {
     /** @hidden */
     def this(user: GoogleActionsV2User) = this()
+    
+    /** @hidden */
+    def _verify(client: OAuth2Client, id: String): js.Promise[js.UndefOr[TokenPayload]] = js.native
+    
     /**
       * Gets the Profile Payload object encoded in {@link Profile#token|conv.user.profile.token}.
       * Only retrievable with "Google Sign In" linking type set up for account linking in the console.
@@ -113,14 +123,13 @@ object userMod extends js.Object {
       * @public
       */
     var payload: js.UndefOr[TokenPayload] = js.native
+    
     /**
       * The `user.idToken` retrieved from account linking.
       * Only retrievable with "Google Sign In" linking type set up for account linking in the console.
       * @public
       */
     var token: js.UndefOr[String] = js.native
-    /** @hidden */
-    def _verify(client: OAuth2Client, id: String): js.Promise[js.UndefOr[TokenPayload]] = js.native
   }
   
   @js.native
@@ -129,10 +138,19 @@ object userMod extends js.Object {
     def this(raw: GoogleActionsV2User) = this()
     def this(raw: js.UndefOr[scala.Nothing], initial: TUserStorage) = this()
     def this(raw: GoogleActionsV2User, initial: TUserStorage) = this()
+    
     /** @hidden */
     var _id: String = js.native
+    
+    /** @hidden */
+    def _serialize(): String = js.native
+    
+    /** @hidden */
+    def _verifyProfile(client: OAuth2Client, id: String): js.Promise[js.UndefOr[TokenPayload]] = js.native
+    
     /** @public */
     var access: Access = js.native
+    
     /**
       * Gets the user profile email.
       * Only retrievable with "Google Sign In" linking type set up for account linking in the console.
@@ -183,6 +201,7 @@ object userMod extends js.Object {
       * @public
       */
     var email: js.UndefOr[String] = js.native
+    
     /**
       * The list of all digital goods that your user purchased from
       * your published Android apps. To enable this feature, see the instructions
@@ -190,14 +209,17 @@ object userMod extends js.Object {
       * @public
       */
     var entitlements: js.Array[GoogleActionsV2PackageEntitlement] = js.native
+    
     /**
       * Random string ID for Google user.
       * @deprecated Use {@link User#storage|conv.user.storage} instead.
       * @public
       */
     var id: String = js.native
+    
     /** @public */
     var last: Last = js.native
+    
     /**
       * The user locale. String represents the regional language
       * information of the user set in their Assistant settings.
@@ -205,17 +227,22 @@ object userMod extends js.Object {
       * @public
       */
     var locale: String = js.native
+    
     /**
       * User's permissioned name info.
       * Properties will be undefined if not request with {@link Permission|conv.ask(new Permission)}
       * @public
       */
     var name: Name = js.native
+    
     /** @public */
     var permissions: js.Array[GoogleActionsV2UserPermissions] = js.native
+    
     /** @public */
     var profile: Profile = js.native
+    
     var raw: GoogleActionsV2User = js.native
+    
     /**
       * The data persistent across sessions in JSON format.
       * It exists in the same context as `conv.user.id`
@@ -237,16 +264,11 @@ object userMod extends js.Object {
       * @public
       */
     var storage: TUserStorage = js.native
+    
     /**
       * Determine if the user is 'GUEST' or 'VERIFIED'
       * @public
       */
     var verification: js.UndefOr[GoogleActionsV2UserUserVerificationStatus] = js.native
-    /** @hidden */
-    def _serialize(): String = js.native
-    /** @hidden */
-    def _verifyProfile(client: OAuth2Client, id: String): js.Promise[js.UndefOr[TokenPayload]] = js.native
   }
-  
 }
-

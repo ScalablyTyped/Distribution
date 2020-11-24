@@ -2,28 +2,32 @@ package typings.es6Shim
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NumberConstructor extends js.Object {
+  
   /**
     * The value of Number.EPSILON is the difference between 1 and the smallest value greater than 1
     * that is representable as a Number value, which is approximately:
     * 2.2204460492503130808472633361816 x 10‍−‍16.
     */
   var EPSILON: Double = js.native
+  
   /**
     * The value of the largest integer n such that n and n + 1 are both exactly representable as
     * a Number value.
     * The value of Number.MIN_SAFE_INTEGER is 9007199254740991 2^53 − 1.
     */
   var MAX_SAFE_INTEGER: Double = js.native
+  
   /**
     * The value of the smallest integer n such that n and n − 1 are both exactly representable as
     * a Number value.
     * The value of Number.MIN_SAFE_INTEGER is −9007199254740991 (−(2^53 − 1)).
     */
   var MIN_SAFE_INTEGER: Double = js.native
+  
   /**
     * Returns true if passed value is finite.
     * Unlike the global isFininte, Number.isFinite doesn't forcibly convert the parameter to a
@@ -31,11 +35,13 @@ trait NumberConstructor extends js.Object {
     * @param number A numeric value.
     */
   def isFinite(number: Double): Boolean = js.native
+  
   /**
     * Returns true if the value passed is an integer, false otherwise.
     * @param number A numeric value.
     */
   def isInteger(number: Double): Boolean = js.native
+  
   /**
     * Returns a Boolean value that indicates whether a value is the reserved value NaN (not a
     * number). Unlike the global isNaN(), Number.isNaN() doesn't forcefully convert the parameter
@@ -43,16 +49,19 @@ trait NumberConstructor extends js.Object {
     * @param number A numeric value.
     */
   def isNaN(number: Double): Boolean = js.native
+  
   /**
     * Returns true if the value passed is a safe integer.
     * @param number A numeric value.
     */
   def isSafeInteger(number: Double): Boolean = js.native
+  
   /**
     * Converts a string to a floating-point number.
     * @param string A string that contains a floating-point number.
     */
   def parseFloat(string: java.lang.String): Double = js.native
+  
   /**
     * Converts A string to an integer.
     * @param s A string to convert into a number.
@@ -63,4 +72,3 @@ trait NumberConstructor extends js.Object {
   def parseInt(string: java.lang.String): Double = js.native
   def parseInt(string: java.lang.String, radix: Double): Double = js.native
 }
-

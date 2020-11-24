@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.UniformBuffer")
 @js.native
@@ -23,14 +23,15 @@ class UniformBuffer protected ()
     */
   def this(engine: typings.babylonjs.BABYLON.Engine) = this()
   def this(engine: typings.babylonjs.BABYLON.Engine, data: js.Array[Double]) = this()
+  def this(engine: typings.babylonjs.BABYLON.Engine, data: js.UndefOr[scala.Nothing], dynamic: Boolean) = this()
   def this(engine: typings.babylonjs.BABYLON.Engine, data: js.Array[Double], dynamic: Boolean) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.UniformBuffer")
 @js.native
 object UniformBuffer extends js.Object {
+  
   var _MAX_UNIFORM_SIZE: js.Any = js.native
+  
   var _tempBuffer: js.Any = js.native
 }
-

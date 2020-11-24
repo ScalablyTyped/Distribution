@@ -3,11 +3,12 @@ package typings.parsimmon.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parsimmon", "bitSeqObj")
 @js.native
 object bitSeqObj extends js.Object {
+  
   /**
     * Works like Parsimmon.bitSeq except each item in the array is either a number of
     * bits or pair (array with length = 2) of name and bits. The bits are parsed in order
@@ -20,4 +21,3 @@ object bitSeqObj extends js.Object {
     */ typings.parsimmon.parsimmonStrings.bitSeqObj with TopLevel[js.Any]
   ] = js.native
 }
-

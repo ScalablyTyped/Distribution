@@ -4,11 +4,12 @@ import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui/svg-icons/av/volume-up", JSImport.Namespace)
 @js.native
 object volumeUpMod extends js.Object {
+  
   @js.native
   class AvVolumeUp ()
     extends Component[SvgIconProps, js.Object, js.Any]
@@ -16,6 +17,4 @@ object volumeUpMod extends js.Object {
   @js.native
   class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
-  
 }
-

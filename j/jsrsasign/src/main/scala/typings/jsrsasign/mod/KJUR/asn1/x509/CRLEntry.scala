@@ -3,7 +3,7 @@ package typings.jsrsasign.mod.KJUR.asn1.x509
 import typings.jsrsasign.anon.Sn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ASN.1 CRLEntry structure class for CRL
@@ -23,4 +23,3 @@ class CRLEntry ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLEntry {
   def this(params: Sn) = this()
 }
-

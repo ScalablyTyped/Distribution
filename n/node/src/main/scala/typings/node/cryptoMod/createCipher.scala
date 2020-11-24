@@ -3,11 +3,12 @@ package typings.node.cryptoMod
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "createCipher")
 @js.native
 object createCipher extends js.Object {
+  
   /** @deprecated since v10.0.0 use `createCipheriv()` */
   def apply(algorithm: String, password: BinaryLike): Cipher = js.native
   def apply(algorithm: String, password: BinaryLike, options: TransformOptions): Cipher = js.native
@@ -17,4 +18,3 @@ object createCipher extends js.Object {
   def apply(algorithm: CipherGCMTypes, password: BinaryLike): CipherGCM = js.native
   def apply(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): CipherGCM = js.native
 }
-

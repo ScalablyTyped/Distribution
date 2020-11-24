@@ -4,7 +4,7 @@ import typings.fineUploader.coreMod.FineUploaderBasic
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fine-uploader", "FineUploader")
 @js.native
@@ -13,12 +13,14 @@ import scala.scalajs.js.annotation._
   */
 class FineUploader () extends FineUploaderBasic {
   def this(fineuploaderOptions: UIOptions) = this()
+  
   /**
     * Mark `element` as a drop zone
     *
     * @param HTMLElement element : The element to mark as a drop zone
     */
   def addExtraDropzone(element: HTMLElement): Unit = js.native
+  
   /**
     * Returns the (drop zone) element where the file was dropped. Undefined if drop event was not involved
     *
@@ -26,6 +28,7 @@ class FineUploader () extends FineUploaderBasic {
     * @returns HTMLElement : The drop zone element where the file was dropped
     */
   def getDropTarget(id: Double): HTMLElement = js.native
+  
   /**
     * Returns the file `id` associated with an `HTMLElement`
     *
@@ -33,6 +36,7 @@ class FineUploader () extends FineUploaderBasic {
     * @returns number : the id of the file
     */
   def getId(element: HTMLElement): Double = js.native
+  
   /**
     * Returns the `HTMLElement` associated with the file id
     *
@@ -40,6 +44,7 @@ class FineUploader () extends FineUploaderBasic {
     * @returns HTMLElement : The `HTMLElement` that is associated with the file id
     */
   def getItemByFileId(id: Double): HTMLElement = js.native
+  
   /**
     * Used to un-mark an `element` as a drop zone
     *
@@ -47,4 +52,3 @@ class FineUploader () extends FineUploaderBasic {
     */
   def removeExtraDropzone(element: HTMLElement): Unit = js.native
 }
-

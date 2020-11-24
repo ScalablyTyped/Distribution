@@ -9,9 +9,9 @@ Insanely lightweight module for converting times to milliseconds.
 | ------------------ | :-------------: |
 | Full name          | milliseconds |
 | Keywords           | time, conversion, milliseconds |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 93777 |
+| # downloads        | 170840 |
 | # stars            | 3 |
 
 ## Links

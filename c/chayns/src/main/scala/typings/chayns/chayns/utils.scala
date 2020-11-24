@@ -2,7 +2,7 @@ package typings.chayns.chayns
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Utility Functions
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chayns.utils")
 @js.native
 object utils extends js.Object {
+  
   /**
     * Utility Functions
     * Local Storage
@@ -18,6 +19,4 @@ object utils extends js.Object {
     */
   @js.native
   object ls extends js.Object
-  
 }
-

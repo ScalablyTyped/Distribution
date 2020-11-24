@@ -1,46 +1,98 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Content extends js.Object {
-  var content: String = js.native
-  var created_at: String = js.native
-  var id: Double = js.native
-  var node_id: String = js.native
-  var user: Avatarurl = js.native
+trait Content
+  extends /**
+  * Any additional parameter will be passed as follows
+  * 1. URL parameter if `':parameter'` or `{parameter}` is part of `url`
+  * 2. Query parameter if `method` is `'GET'` or `'HEAD'`
+  * 3. Request body if `parameter` is `'data'`
+  * 4. JSON in the request body in the form of `body[parameter]` unless `parameter` key is `'data'`
+  */
+/* parameter */ StringDictionary[js.Any] {
+  
+  var content: js.UndefOr[String] = js.native
+  
+  var filename: js.UndefOr[String] = js.native
+  
+  var language: js.UndefOr[String] = js.native
+  
+  var raw_url: js.UndefOr[String] = js.native
+  
+  var size: js.UndefOr[Double] = js.native
+  
+  var truncated: js.UndefOr[Boolean] = js.native
+  
+  var `type`: js.UndefOr[String] = js.native
 }
-
 object Content {
+  
   @scala.inline
-  def apply(content: String, created_at: String, id: Double, node_id: String, user: Avatarurl): Content = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+  def apply(): Content = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Content]
   }
+  
   @scala.inline
   implicit class ContentOps[Self <: Content] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def deleteContent: Self = this.set("content", js.undefined)
+    
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    
     @scala.inline
-    def setUser(value: Avatarurl): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    
+    @scala.inline
+    def setRaw_url(value: String): Self = this.set("raw_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRaw_url: Self = this.set("raw_url", js.undefined)
+    
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    
+    @scala.inline
+    def setTruncated(value: Boolean): Self = this.set("truncated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTruncated: Self = this.set("truncated", js.undefined)
+    
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

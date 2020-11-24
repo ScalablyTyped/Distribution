@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.continuationLocalStorage.mod.Namespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sequelize methods available only for the static class ( basically this is the constructor and some extends )
@@ -75,18 +75,21 @@ Instantiable3[
       /* options */ Options, 
       Sequelize
     ] {
+  
   /**
     * Export sequelize static on the instance for `import Sequelize from 'sequelize';` kind of imports
     */
   var Sequelize: SequelizeStatic = js.native
+  
   /**
     * Provide access to continuation-local-storage (http://docs.sequelizejs.com/en/latest/api/sequelize/#transactionoptions-promise)
     */
   var cls: js.Any = js.native
+  
   /**
     * Default export for `import Sequelize from 'sequelize';` kind of imports
     */
   var default: SequelizeStatic = js.native
+  
   def useCLS(namespace: Namespace): Sequelize = js.native
 }
-

@@ -29,7 +29,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a TabPage control.
@@ -45,8 +45,8 @@ trait UnoControlTabPage
      with XUnoControlContainer
      with XControlContainer
      with XContainer
-
 object UnoControlTabPage {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -114,4 +114,3 @@ object UnoControlTabPage {
     __obj.asInstanceOf[UnoControlTabPage]
   }
 }
-

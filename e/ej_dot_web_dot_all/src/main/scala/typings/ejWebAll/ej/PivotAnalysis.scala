@@ -2,22 +2,17 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.PivotAnalysis")
 @js.native
 object PivotAnalysis extends js.Object {
+  
   @js.native
   sealed trait FilterType extends js.Object
-  
-  @js.native
-  sealed trait SortOrder extends js.Object
-  
-  @js.native
-  sealed trait SummaryType extends js.Object
-  
   @js.native
   object FilterType extends js.Object {
+    
     //Excludes the specified values among the members of the field.
     @js.native
     sealed trait Exclude extends FilterType
@@ -25,11 +20,13 @@ object PivotAnalysis extends js.Object {
     //Includes the specified values alone among the members of the field.
     @js.native
     sealed trait Include extends FilterType
-    
   }
   
   @js.native
+  sealed trait SortOrder extends js.Object
+  @js.native
   object SortOrder extends js.Object {
+    
     //Sorts the members of the field in ascending order.
     @js.native
     sealed trait Ascending extends SortOrder
@@ -41,11 +38,13 @@ object PivotAnalysis extends js.Object {
     //Displays the members without sorting in default order.
     @js.native
     sealed trait None extends SortOrder
-    
   }
   
   @js.native
+  sealed trait SummaryType extends js.Object
+  @js.native
   object SummaryType extends js.Object {
+    
     //Displays the average of all values as the summaries.
     @js.native
     sealed trait Average extends SummaryType
@@ -65,8 +64,5 @@ object PivotAnalysis extends js.Object {
     //Calculates the summary as the total of all values.
     @js.native
     sealed trait Sum extends SummaryType
-    
   }
-  
 }
-

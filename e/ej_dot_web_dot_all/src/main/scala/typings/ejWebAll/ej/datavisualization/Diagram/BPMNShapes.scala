@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BPMNShapes extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BPMNShapes")
 @js.native
 object BPMNShapes extends js.Object {
+  
   //Used to specify node Shape as Activity
   @js.native
   sealed trait Activity extends BPMNShapes
@@ -37,6 +37,4 @@ object BPMNShapes extends js.Object {
   //Used to specify node Shape as Message
   @js.native
   sealed trait Message extends BPMNShapes
-  
 }
-

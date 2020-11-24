@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18next-express-middleware", "addRoute")
 @js.native
 object addRoute extends js.Object {
+  
   def apply(
     i18next: I18next,
     route: String,
@@ -26,4 +27,3 @@ object addRoute extends js.Object {
     fc: RequestHandler[ParamsDictionary, _, _, Query]
   ): Unit = js.native
 }
-

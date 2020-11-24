@@ -2,67 +2,73 @@ package typings.canvaskitWasm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkSurface extends SkObject[SkSurface] {
+trait SkSurface extends EmbindObject[SkSurface] {
+  
+  /**
+    * Call the given callback and save the result of that draw to a SkPicture with the
+    * same dimensions as this surface. The SkPicture will be returned.
+    * @param drawFrame - callback in which the client should draw something.
+    */
   def captureFrameAsSkPicture(drawFrame: js.Function1[/* canvas */ SkCanvas, Unit]): SkPicture = js.native
+  
+  /**
+    * Clean up the surface and any extra memory.
+    * [Deprecated]: In the future, calls to delete() will be sufficient to clean up the memory.
+    */
   def dispose(): Unit = js.native
+  
+  /**
+    * Make sure any queued draws are sent to the screen or the GPU.
+    */
   def flush(): Unit = js.native
+  
+  /**
+    * Return a canvas that is backed by this surface. Any draws to the canvas will (eventually)
+    * show up on the surface. The returned canvas is owned by the surface and does NOT need to
+    * be cleaned up by the client.
+    */
   def getCanvas(): SkCanvas = js.native
+  
+  /**
+    * Returns the height of this surface in pixels.
+    */
   def height(): Double = js.native
+  
+  /**
+    * Returns the ImageInfo associated with this surface.
+    */
+  def imageInfo(): SkImageInfo = js.native
+  
+  /**
+    * Returns current contents of the surface as an SkImage. This image will be optimized to be
+    * drawn to another surface of the same type. For example, if this surface is backed by the
+    * GPU, the returned SkImage will be backed by a GPU texture.
+    */
   def makeImageSnapshot(): SkImage = js.native
+  def makeImageSnapshot(bounds: InputIRect): SkImage = js.native
+  
+  /**
+    * Returns a compatible SkSurface, haring the same raster or GPU properties of the original.
+    * The pixels are not shared.
+    * @param info - width, height, etc of the SkSurface.
+    */
   def makeSurface(info: SkImageInfo): SkSurface = js.native
+  
+  /**
+    * Returns if this Surface is a GPU-backed surface or not.
+    */
+  def reportBackendTypeIsGPU(): Boolean = js.native
+  
+  /**
+    * If this surface is GPU-backed, return the sample count of the surface.
+    */
+  def sampleCnt(): Double = js.native
+  
+  /**
+    * Returns the width of this surface in pixels.
+    */
   def width(): Double = js.native
 }
-
-object SkSurface {
-  @scala.inline
-  def apply(
-    captureFrameAsSkPicture: js.Function1[/* canvas */ SkCanvas, Unit] => SkPicture,
-    delete: () => Unit,
-    deleteAfter: () => Unit,
-    dispose: () => Unit,
-    flush: () => Unit,
-    getCanvas: () => SkCanvas,
-    height: () => Double,
-    isAliasOf: js.Any => Boolean,
-    isDeleted: () => Boolean,
-    makeImageSnapshot: () => SkImage,
-    makeSurface: SkImageInfo => SkSurface,
-    width: () => Double
-  ): SkSurface = {
-    val __obj = js.Dynamic.literal(captureFrameAsSkPicture = js.Any.fromFunction1(captureFrameAsSkPicture), delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), dispose = js.Any.fromFunction0(dispose), flush = js.Any.fromFunction0(flush), getCanvas = js.Any.fromFunction0(getCanvas), height = js.Any.fromFunction0(height), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), makeImageSnapshot = js.Any.fromFunction0(makeImageSnapshot), makeSurface = js.Any.fromFunction1(makeSurface), width = js.Any.fromFunction0(width))
-    __obj.asInstanceOf[SkSurface]
-  }
-  @scala.inline
-  implicit class SkSurfaceOps[Self <: SkSurface] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setCaptureFrameAsSkPicture(value: js.Function1[/* canvas */ SkCanvas, Unit] => SkPicture): Self = this.set("captureFrameAsSkPicture", js.Any.fromFunction1(value))
-    @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
-    @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetCanvas(value: () => SkCanvas): Self = this.set("getCanvas", js.Any.fromFunction0(value))
-    @scala.inline
-    def setHeight(value: () => Double): Self = this.set("height", js.Any.fromFunction0(value))
-    @scala.inline
-    def setMakeImageSnapshot(value: () => SkImage): Self = this.set("makeImageSnapshot", js.Any.fromFunction0(value))
-    @scala.inline
-    def setMakeSurface(value: SkImageInfo => SkSurface): Self = this.set("makeSurface", js.Any.fromFunction1(value))
-    @scala.inline
-    def setWidth(value: () => Double): Self = this.set("width", js.Any.fromFunction0(value))
-  }
-  
-}
-

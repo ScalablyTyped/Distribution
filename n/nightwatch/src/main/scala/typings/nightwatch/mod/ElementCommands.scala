@@ -4,23 +4,11 @@ import typings.nightwatch.anon.Height
 import typings.nightwatch.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ElementCommands extends js.Object {
-  /**
-    * Alias for `setValue`.
-    * @see setValue
-    */
-  @JSName("sendKeys")
-  var sendKeys_Original: js.Function3[
-    /* selector */ String, 
-    /* inputValue */ String | js.Array[String], 
-    /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-    ], 
-    this.type
-  ] = js.native
+  
   /**
     * Clear a textarea or a text input element's value. Uses `elementIdValue` protocol action internally.
     *
@@ -36,6 +24,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
+  
   /**
     * Simulates a click event on the given DOM element. Uses `elementIdClick` protocol action internally.
     *
@@ -54,6 +43,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the value of an attribute for a given DOM element. Uses `elementIdAttribute` protocol command.
     *
@@ -74,6 +64,7 @@ trait ElementCommands extends js.Object {
     attribute: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the value of a css property for a given DOM element. Uses `elementIdCssProperty` protocol command.
     *
@@ -94,6 +85,7 @@ trait ElementCommands extends js.Object {
     cssProperty: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Determine an element's size in pixels. Uses `elementIdSize` protocol command.
     *
@@ -114,6 +106,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Height], Unit]
   ): this.type = js.native
+  
   /**
     * Determine an element's location on the page. The point (0, 0) refers to the upper-left corner of the page.
     *
@@ -136,6 +129,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
+  
   /**
     * Determine an element's location on the screen once it has been scrolled into view. Uses `elementIdLocationInView` protocol command.
     *
@@ -156,6 +150,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
+  
   /**
     * Query for an element's tag name. Uses `elementIdName` protocol command.
     *
@@ -175,6 +170,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Returns the visible text for the element. Uses `elementIdText` protocol command.
     *
@@ -194,6 +190,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Returns a form element current value. Uses `elementIdValue` protocol command.
     *
@@ -213,6 +210,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Determine if an element is currently displayed. Uses `elementIdDisplayed` protocol command.
     *
@@ -232,6 +230,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
   ): this.type = js.native
+  
   /**
     * Move the mouse by an offset of the specified element. If an element is provided but no offset, the mouse will be moved to the center of the element.
     * If the element is not visible, it will be scrolled into view.
@@ -250,6 +249,7 @@ trait ElementCommands extends js.Object {
     yoffset: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Alias for `setValue`.
     * @see setValue
@@ -266,6 +266,20 @@ trait ElementCommands extends js.Object {
     inputValue: js.Array[String],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  /**
+    * Alias for `setValue`.
+    * @see setValue
+    */
+  @JSName("sendKeys")
+  var sendKeys_Original: js.Function3[
+    /* selector */ String, 
+    /* inputValue */ String | js.Array[String], 
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+    ], 
+    this.type
+  ] = js.native
+  
   /**
     * Sends some text to an element. Can be used to set the value of a form element or to send a sequence of key strokes to an element. Any UTF-8 character may be specified.
     *
@@ -299,6 +313,7 @@ trait ElementCommands extends js.Object {
     inputValue: js.Array[String],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Submit a FORM element. The submit command may also be applied to any element that is a descendant of a FORM element. Uses `submit` protocol command.
     *
@@ -314,6 +329,7 @@ trait ElementCommands extends js.Object {
     selector: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Opposite of `waitForElementPresent`. Waits a given time in milliseconds for an element to be not present (i.e. removed)
     * in the page before performing any other commands or assertions.
@@ -416,6 +432,7 @@ trait ElementCommands extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
     message: String
   ): this.type = js.native
+  
   /**
     * Opposite of `waitForElementVisible`. Waits a given time in milliseconds for an element to be not visible (i.e. hidden but existing)
     * in the page before performing any other commands or assertions.
@@ -518,6 +535,7 @@ trait ElementCommands extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
     message: String
   ): this.type = js.native
+  
   /**
     * Waits a given time in milliseconds for an element to be present in the page before performing any other commands or assertions.
     *
@@ -626,6 +644,7 @@ trait ElementCommands extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
     message: String
   ): this.type = js.native
+  
   /**
     * Waits a given time in milliseconds for an element to be visible in the page before performing any other commands or assertions.
     *
@@ -735,4 +754,3 @@ trait ElementCommands extends js.Object {
     message: String
   ): this.type = js.native
 }
-

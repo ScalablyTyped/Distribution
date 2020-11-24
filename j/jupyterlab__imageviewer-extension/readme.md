@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__imageviewer-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Image Widget Extension
@@ -10,9 +10,9 @@ JupyterLab - Image Widget Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/imageviewer-extension |
 | Keywords           | - |
-| # releases         | 63 |
+| # releases         | 113 |
 | # dependents       | 1 |
-| # downloads        | 751313 |
+| # downloads        | 1349942 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.mermaid.mermaidAPIMod.mermaidAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LogLevel extends js.Object
-
 @JSImport("mermaid/mermaidAPI", "mermaidAPI.LogLevel")
 @js.native
 object LogLevel extends js.Object {
+  
   @js.native
   sealed trait Debug extends LogLevel
   
@@ -24,6 +24,4 @@ object LogLevel extends js.Object {
   
   @js.native
   sealed trait Warn extends LogLevel
-  
 }
-

@@ -2,12 +2,13 @@ package typings.reactTable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-table", "useExpanded")
 @js.native
 object useExpanded extends js.Object {
-  val pluginName: /* "useExpanded" */ String = js.native
+  
   def apply[D /* <: js.Object */](hooks: Hooks[D]): Unit = js.native
+  
+  val pluginName: /* "useExpanded" */ String = js.native
 }
-

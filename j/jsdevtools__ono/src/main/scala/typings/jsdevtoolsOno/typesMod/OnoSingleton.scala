@@ -9,24 +9,11 @@ import typings.std.TypeError
 import typings.std.URIError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OnoSingleton extends Ono[Error] {
-  @JSName("error")
-  var error_Original: Ono[Error] = js.native
-  @JSName("eval")
-  var eval_Original: Ono[EvalError] = js.native
-  @JSName("range")
-  var range_Original: Ono[RangeError] = js.native
-  @JSName("reference")
-  var reference_Original: Ono[ReferenceError] = js.native
-  @JSName("syntax")
-  var syntax_Original: Ono[SyntaxError] = js.native
-  @JSName("type")
-  var type_Original: Ono[TypeError] = js.native
-  @JSName("uri")
-  var uri_Original: Ono[URIError] = js.native
+  
   def error(error: ErrorPOJO): Error with ErrorPOJO with (OnoError[Error with ErrorPOJO]) = js.native
   def error(error: ErrorPOJO, message: String, params: js.Any*): Error with ErrorPOJO with (OnoError[Error with ErrorPOJO]) = js.native
   /**
@@ -84,6 +71,9 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def error[P /* <: js.Object */](props: P, message: String, params: js.Any*): Error with P with (OnoError[Error with P]) = js.native
+  @JSName("error")
+  var error_Original: Ono[Error] = js.native
+  
   def eval(error: ErrorPOJO): EvalError with ErrorPOJO with (OnoError[EvalError with ErrorPOJO]) = js.native
   def eval(error: ErrorPOJO, message: String, params: js.Any*): EvalError with ErrorPOJO with (OnoError[EvalError with ErrorPOJO]) = js.native
   /**
@@ -141,6 +131,9 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def eval[P /* <: js.Object */](props: P, message: String, params: js.Any*): EvalError with P with (OnoError[EvalError with P]) = js.native
+  @JSName("eval")
+  var eval_Original: Ono[EvalError] = js.native
+  
   def range(error: ErrorPOJO): RangeError with ErrorPOJO with (OnoError[RangeError with ErrorPOJO]) = js.native
   def range(error: ErrorPOJO, message: String, params: js.Any*): RangeError with ErrorPOJO with (OnoError[RangeError with ErrorPOJO]) = js.native
   /**
@@ -198,6 +191,9 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def range[P /* <: js.Object */](props: P, message: String, params: js.Any*): RangeError with P with (OnoError[RangeError with P]) = js.native
+  @JSName("range")
+  var range_Original: Ono[RangeError] = js.native
+  
   def reference(error: ErrorPOJO): ReferenceError with ErrorPOJO with (OnoError[ReferenceError with ErrorPOJO]) = js.native
   def reference(error: ErrorPOJO, message: String, params: js.Any*): ReferenceError with ErrorPOJO with (OnoError[ReferenceError with ErrorPOJO]) = js.native
   /**
@@ -255,6 +251,9 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def reference[P /* <: js.Object */](props: P, message: String, params: js.Any*): ReferenceError with P with (OnoError[ReferenceError with P]) = js.native
+  @JSName("reference")
+  var reference_Original: Ono[ReferenceError] = js.native
+  
   def syntax(error: ErrorPOJO): SyntaxError with ErrorPOJO with (OnoError[SyntaxError with ErrorPOJO]) = js.native
   def syntax(error: ErrorPOJO, message: String, params: js.Any*): SyntaxError with ErrorPOJO with (OnoError[SyntaxError with ErrorPOJO]) = js.native
   /**
@@ -312,6 +311,9 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def syntax[P /* <: js.Object */](props: P, message: String, params: js.Any*): SyntaxError with P with (OnoError[SyntaxError with P]) = js.native
+  @JSName("syntax")
+  var syntax_Original: Ono[SyntaxError] = js.native
+  
   def `type`(error: ErrorPOJO): TypeError with ErrorPOJO with (OnoError[TypeError with ErrorPOJO]) = js.native
   def `type`(error: ErrorPOJO, message: String, params: js.Any*): TypeError with ErrorPOJO with (OnoError[TypeError with ErrorPOJO]) = js.native
   /**
@@ -369,6 +371,9 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def `type`[P /* <: js.Object */](props: P, message: String, params: js.Any*): TypeError with P with (OnoError[TypeError with P]) = js.native
+  @JSName("type")
+  var type_Original: Ono[TypeError] = js.native
+  
   def uri(error: ErrorPOJO): URIError with ErrorPOJO with (OnoError[URIError with ErrorPOJO]) = js.native
   def uri(error: ErrorPOJO, message: String, params: js.Any*): URIError with ErrorPOJO with (OnoError[URIError with ErrorPOJO]) = js.native
   /**
@@ -426,5 +431,6 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def uri[P /* <: js.Object */](props: P, message: String, params: js.Any*): URIError with P with (OnoError[URIError with P]) = js.native
+  @JSName("uri")
+  var uri_Original: Ono[URIError] = js.native
 }
-

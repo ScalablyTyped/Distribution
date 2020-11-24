@@ -2,9 +2,256 @@ package typings.semanticUiApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticUiApiStrings {
+  
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
+  
+  @scala.inline
+  def action: action = "action".asInstanceOf[action]
+  
+  @scala.inline
+  def `add url data`: `add url data` = ("add url data").asInstanceOf[`add url data`]
+  
+  @scala.inline
+  def api: api = "api".asInstanceOf[api]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def beforeSend: beforeSend = "beforeSend".asInstanceOf[beforeSend]
+  
+  @scala.inline
+  def beforeXHR: beforeXHR = "beforeXHR".asInstanceOf[beforeXHR]
+  
+  @scala.inline
+  def cache: cache = "cache".asInstanceOf[cache]
+  
+  @scala.inline
+  def className: className = "className".asInstanceOf[className]
+  
+  @scala.inline
+  def `create cache`: `create cache` = ("create cache").asInstanceOf[`create cache`]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def dataType: dataType = "dataType".asInstanceOf[dataType]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def defaultData: defaultData = "defaultData".asInstanceOf[defaultData]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def encodeParameters: encodeParameters = "encodeParameters".asInstanceOf[encodeParameters]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def errorDuration: errorDuration = "errorDuration".asInstanceOf[errorDuration]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def `get event`: `get event` = ("get event").asInstanceOf[`get event`]
+  
+  @scala.inline
+  def `get request`: `get request` = ("get request").asInstanceOf[`get request`]
+  
+  @scala.inline
+  def `get url encoded value`: `get url encoded value` = ("get url encoded value").asInstanceOf[`get url encoded value`]
+  
+  @scala.inline
+  def head: head = "head".asInstanceOf[head]
+  
+  @scala.inline
+  def hideError: hideError = "hideError".asInstanceOf[hideError]
+  
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  
+  @scala.inline
+  def interruptRequests: interruptRequests = "interruptRequests".asInstanceOf[interruptRequests]
+  
+  @scala.inline
+  def `is disabled`: `is disabled` = ("is disabled").asInstanceOf[`is disabled`]
+  
+  @scala.inline
+  def `is loading`: `is loading` = ("is loading").asInstanceOf[`is loading`]
+  
+  @scala.inline
+  def `is mocked`: `is mocked` = ("is mocked").asInstanceOf[`is mocked`]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
+  
+  @scala.inline
+  def loadingDuration: loadingDuration = "loadingDuration".asInstanceOf[loadingDuration]
+  
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @scala.inline
+  def method: method = "method".asInstanceOf[method]
+  
+  @scala.inline
+  def mockResponse: mockResponse = "mockResponse".asInstanceOf[mockResponse]
+  
+  @scala.inline
+  def mockResponseAsync: mockResponseAsync = "mockResponseAsync".asInstanceOf[mockResponseAsync]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def namespace: namespace = "namespace".asInstanceOf[namespace]
+  
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  
+  @scala.inline
+  def onAbort: onAbort = "onAbort".asInstanceOf[onAbort]
+  
+  @scala.inline
+  def onComplete: onComplete = "onComplete".asInstanceOf[onComplete]
+  
+  @scala.inline
+  def onError: onError = "onError".asInstanceOf[onError]
+  
+  @scala.inline
+  def onFailure: onFailure = "onFailure".asInstanceOf[onFailure]
+  
+  @scala.inline
+  def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
+  
+  @scala.inline
+  def onResponse: onResponse = "onResponse".asInstanceOf[onResponse]
+  
+  @scala.inline
+  def onSuccess: onSuccess = "onSuccess".asInstanceOf[onSuccess]
+  
+  @scala.inline
+  def options: options = "options".asInstanceOf[options]
+  
+  @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
+  
+  @scala.inline
+  def performance: performance = "performance".asInstanceOf[performance]
+  
+  @scala.inline
+  def post: post = "post".asInstanceOf[post]
+  
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
+  
+  @scala.inline
+  def query: query = "query".asInstanceOf[query]
+  
+  @scala.inline
+  def `read cached response`: `read cached response` = ("read cached response").asInstanceOf[`read cached response`]
+  
+  @scala.inline
+  def regExp: regExp = "regExp".asInstanceOf[regExp]
+  
+  @scala.inline
+  def `remove error`: `remove error` = ("remove error").asInstanceOf[`remove error`]
+  
+  @scala.inline
+  def `remove loading`: `remove loading` = ("remove loading").asInstanceOf[`remove loading`]
+  
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
+  
+  @scala.inline
+  def responseAsync: responseAsync = "responseAsync".asInstanceOf[responseAsync]
+  
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
+  
+  @scala.inline
+  def selector: selector = "selector".asInstanceOf[selector]
+  
+  @scala.inline
+  def serializeForm: serializeForm = "serializeForm".asInstanceOf[serializeForm]
+  
+  @scala.inline
+  def `set error`: `set error` = ("set error").asInstanceOf[`set error`]
+  
+  @scala.inline
+  def `set loading`: `set loading` = ("set loading").asInstanceOf[`set loading`]
+  
+  @scala.inline
+  def setting: setting = "setting".asInstanceOf[setting]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def stateContext: stateContext = "stateContext".asInstanceOf[stateContext]
+  
+  @scala.inline
+  def successTest: successTest = "successTest".asInstanceOf[successTest]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def throttle: throttle = "throttle".asInstanceOf[throttle]
+  
+  @scala.inline
+  def throttleFirstRequest: throttleFirstRequest = "throttleFirstRequest".asInstanceOf[throttleFirstRequest]
+  
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  
+  @scala.inline
+  def urlData: urlData = "urlData".asInstanceOf[urlData]
+  
+  @scala.inline
+  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  
+  @scala.inline
+  def `was cancelled`: `was cancelled` = ("was cancelled").asInstanceOf[`was cancelled`]
+  
+  @scala.inline
+  def `was complete`: `was complete` = ("was complete").asInstanceOf[`was complete`]
+  
+  @scala.inline
+  def `was failure`: `was failure` = ("was failure").asInstanceOf[`was failure`]
+  
+  @scala.inline
+  def `was successful`: `was successful` = ("was successful").asInstanceOf[`was successful`]
+  
+  @scala.inline
+  def `write cached response`: `write cached response` = ("write cached response").asInstanceOf[`write cached response`]
+  
+  @scala.inline
+  def xml: xml = "xml".asInstanceOf[xml]
+  
   @js.native
   sealed trait abort extends js.Object
   
@@ -250,170 +497,4 @@ object semanticUiApiStrings {
   
   @js.native
   sealed trait xml extends js.Object
-  
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def `add url data`: `add url data` = ("add url data").asInstanceOf[`add url data`]
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def beforeSend: beforeSend = "beforeSend".asInstanceOf[beforeSend]
-  @scala.inline
-  def beforeXHR: beforeXHR = "beforeXHR".asInstanceOf[beforeXHR]
-  @scala.inline
-  def cache: cache = "cache".asInstanceOf[cache]
-  @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def `create cache`: `create cache` = ("create cache").asInstanceOf[`create cache`]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def dataType: dataType = "dataType".asInstanceOf[dataType]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def defaultData: defaultData = "defaultData".asInstanceOf[defaultData]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def encodeParameters: encodeParameters = "encodeParameters".asInstanceOf[encodeParameters]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def errorDuration: errorDuration = "errorDuration".asInstanceOf[errorDuration]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def `get event`: `get event` = ("get event").asInstanceOf[`get event`]
-  @scala.inline
-  def `get request`: `get request` = ("get request").asInstanceOf[`get request`]
-  @scala.inline
-  def `get url encoded value`: `get url encoded value` = ("get url encoded value").asInstanceOf[`get url encoded value`]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def hideError: hideError = "hideError".asInstanceOf[hideError]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def interruptRequests: interruptRequests = "interruptRequests".asInstanceOf[interruptRequests]
-  @scala.inline
-  def `is disabled`: `is disabled` = ("is disabled").asInstanceOf[`is disabled`]
-  @scala.inline
-  def `is loading`: `is loading` = ("is loading").asInstanceOf[`is loading`]
-  @scala.inline
-  def `is mocked`: `is mocked` = ("is mocked").asInstanceOf[`is mocked`]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
-  @scala.inline
-  def loadingDuration: loadingDuration = "loadingDuration".asInstanceOf[loadingDuration]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
-  def mockResponse: mockResponse = "mockResponse".asInstanceOf[mockResponse]
-  @scala.inline
-  def mockResponseAsync: mockResponseAsync = "mockResponseAsync".asInstanceOf[mockResponseAsync]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def onAbort: onAbort = "onAbort".asInstanceOf[onAbort]
-  @scala.inline
-  def onComplete: onComplete = "onComplete".asInstanceOf[onComplete]
-  @scala.inline
-  def onError: onError = "onError".asInstanceOf[onError]
-  @scala.inline
-  def onFailure: onFailure = "onFailure".asInstanceOf[onFailure]
-  @scala.inline
-  def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
-  @scala.inline
-  def onResponse: onResponse = "onResponse".asInstanceOf[onResponse]
-  @scala.inline
-  def onSuccess: onSuccess = "onSuccess".asInstanceOf[onSuccess]
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def performance: performance = "performance".asInstanceOf[performance]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def `read cached response`: `read cached response` = ("read cached response").asInstanceOf[`read cached response`]
-  @scala.inline
-  def regExp: regExp = "regExp".asInstanceOf[regExp]
-  @scala.inline
-  def `remove error`: `remove error` = ("remove error").asInstanceOf[`remove error`]
-  @scala.inline
-  def `remove loading`: `remove loading` = ("remove loading").asInstanceOf[`remove loading`]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def responseAsync: responseAsync = "responseAsync".asInstanceOf[responseAsync]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def selector: selector = "selector".asInstanceOf[selector]
-  @scala.inline
-  def serializeForm: serializeForm = "serializeForm".asInstanceOf[serializeForm]
-  @scala.inline
-  def `set error`: `set error` = ("set error").asInstanceOf[`set error`]
-  @scala.inline
-  def `set loading`: `set loading` = ("set loading").asInstanceOf[`set loading`]
-  @scala.inline
-  def setting: setting = "setting".asInstanceOf[setting]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def stateContext: stateContext = "stateContext".asInstanceOf[stateContext]
-  @scala.inline
-  def successTest: successTest = "successTest".asInstanceOf[successTest]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def throttle: throttle = "throttle".asInstanceOf[throttle]
-  @scala.inline
-  def throttleFirstRequest: throttleFirstRequest = "throttleFirstRequest".asInstanceOf[throttleFirstRequest]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def urlData: urlData = "urlData".asInstanceOf[urlData]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def `was cancelled`: `was cancelled` = ("was cancelled").asInstanceOf[`was cancelled`]
-  @scala.inline
-  def `was complete`: `was complete` = ("was complete").asInstanceOf[`was complete`]
-  @scala.inline
-  def `was failure`: `was failure` = ("was failure").asInstanceOf[`was failure`]
-  @scala.inline
-  def `was successful`: `was successful` = ("was successful").asInstanceOf[`was successful`]
-  @scala.inline
-  def `write cached response`: `write cached response` = ("write cached response").asInstanceOf[`write cached response`]
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
 }
-

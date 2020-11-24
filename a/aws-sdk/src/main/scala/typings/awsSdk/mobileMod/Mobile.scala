@@ -1,17 +1,19 @@
 package typings.awsSdk.mobileMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mobile extends Service {
+  
   @JSName("config")
   var config_Mobile: ConfigBase with ClientConfiguration = js.native
+  
   /**
     *  Creates an AWS Mobile Hub project. 
     */
@@ -25,6 +27,7 @@ trait Mobile extends Service {
     params: CreateProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResult, Unit]
   ): Request[CreateProjectResult, AWSError] = js.native
+  
   /**
     *  Delets a project in AWS Mobile Hub. 
     */
@@ -38,6 +41,7 @@ trait Mobile extends Service {
     params: DeleteProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResult, Unit]
   ): Request[DeleteProjectResult, AWSError] = js.native
+  
   /**
     *  Get the bundle details for the requested bundle id. 
     */
@@ -51,6 +55,7 @@ trait Mobile extends Service {
     params: DescribeBundleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBundleResult, Unit]
   ): Request[DescribeBundleResult, AWSError] = js.native
+  
   /**
     *  Gets details about a project in AWS Mobile Hub. 
     */
@@ -64,6 +69,7 @@ trait Mobile extends Service {
     params: DescribeProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProjectResult, Unit]
   ): Request[DescribeProjectResult, AWSError] = js.native
+  
   /**
     *  Generates customized software development kit (SDK) and or tool packages used to integrate mobile web or mobile app clients with backend AWS resources. 
     */
@@ -77,6 +83,7 @@ trait Mobile extends Service {
     params: ExportBundleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportBundleResult, Unit]
   ): Request[ExportBundleResult, AWSError] = js.native
+  
   /**
     *  Exports project configuration to a snapshot which can be downloaded and shared. Note that mobile app push credentials are encrypted in exported projects, so they can only be shared successfully within the same AWS account. 
     */
@@ -90,6 +97,7 @@ trait Mobile extends Service {
     params: ExportProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportProjectResult, Unit]
   ): Request[ExportProjectResult, AWSError] = js.native
+  
   /**
     *  List all available bundles. 
     */
@@ -103,6 +111,7 @@ trait Mobile extends Service {
     params: ListBundlesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBundlesResult, Unit]
   ): Request[ListBundlesResult, AWSError] = js.native
+  
   /**
     *  Lists projects in AWS Mobile Hub. 
     */
@@ -116,6 +125,7 @@ trait Mobile extends Service {
     params: ListProjectsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsResult, Unit]
   ): Request[ListProjectsResult, AWSError] = js.native
+  
   /**
     *  Update an existing project. 
     */
@@ -130,4 +140,3 @@ trait Mobile extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectResult, Unit]
   ): Request[UpdateProjectResult, AWSError] = js.native
 }
-

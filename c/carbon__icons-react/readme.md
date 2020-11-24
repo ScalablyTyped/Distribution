@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbon__icons-react
 
-Typings are for version 10.11
+Typings are for version 10.21
 
 ## Library description:
 React components for icons in digital and software products using the Carbon Design System
@@ -10,9 +10,9 @@ React components for icons in digital and software products using the Carbon Des
 | ------------------ | :-------------: |
 | Full name          | @carbon/icons-react |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 124 |
-| # dependents       | 13 |
-| # downloads        | 802124 |
+| # releases         | 160 |
+| # dependents       | 31 |
+| # downloads        | 2105218 |
 | # stars            | 0 |
 
 ## Links

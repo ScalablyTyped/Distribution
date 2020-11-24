@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Regionalinventory")
 @js.native
 class ResourceRegionalinventory protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.regionalinventory.custombatch
     * @desc Updates regional inventory for multiple products or regions in a
@@ -45,6 +47,7 @@ class ResourceRegionalinventory protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegionalinventoryCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.regionalinventory.insert
     * @desc Update the regional inventory of a product in your Merchant Center
@@ -81,4 +84,3 @@ class ResourceRegionalinventory protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRegionalInventory]
   ): Unit = js.native
 }
-

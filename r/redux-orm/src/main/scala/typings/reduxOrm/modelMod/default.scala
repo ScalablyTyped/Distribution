@@ -15,7 +15,7 @@ import typings.reduxOrm.tableMod.TableOpts
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm/Model", JSImport.Default)
 @js.native
@@ -27,67 +27,26 @@ class default[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMa
     */
   def this(props: Fields) = this()
 }
-
 /* static members */
 @JSImport("redux-orm/Model", JSImport.Default)
 @js.native
 object default extends js.Object {
-  /**
-    * Model field descriptors.
-    * @see {@link Attribute}
-    * @see {@link OneToOne}
-    * @see {@link ForeignKey}
-    * @see {@link ManyToMany}
-    */
-  var fields: FieldSpecMap = js.native
-  /**
-    * The key of Model's identifier property
-    */
-  val idAttribute: String = js.native
-  /**
-    * A string constant identifying specific Model, necessary to retain the shape of state and relations through transpilation steps
-    */
-  var modelName: String = js.native
-  /**
-    * Returns the options object passed to the database for the table that represents
-    * this Model class.
-    *
-    * Returns an empty object by default, which means the database
-    * will use default options. You can either override this function to return the options
-    * you want to use, or assign the options object as a static property of the same name to the
-    * Model class.
-    *
-    * @return the options object passed to the database for the table
-    *                  representing this Model class.
-    */
-  var options: js.Function0[TableOpts] | TableOpts = js.native
-  /**
-    * @see {@link Model.getQuerySet}
-    */
-  val query: typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
-  /**
-    * {@link QuerySet} class associated with this Model class.
-    *
-    * Defaults to base {@link QuerySet}
-    */
-  var querySetClass: (Instantiable3[
-    /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
-    /* clauses */ js.Array[QueryClause[js.Object]], 
-    /* opts */ js.UndefOr[js.Object], 
-    typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
-  ]) with TypeofQuerySet = js.native
+  
   /**
     * @see {@link QuerySet.all}
     */
   def all(): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+  
   /**
     * @see {@link QuerySet.at}
     */
   def at(index: Double): js.UndefOr[SessionBoundModel[_, js.Object]] = js.native
+  
   /**
     * @see {@link QuerySet.count}
     */
   def count(): Double = js.native
+  
   /**
     * Creates a new record in the database, instantiates a {@link Model} and returns it.
     *
@@ -104,14 +63,17 @@ object default extends js.Object {
     FieldSpecKeys[M, AttributeWithDefault], 
     (/* keyof redux-orm.redux-orm/helpers.PickByValue<redux-orm.redux-orm/Model.ModelFields<M>, redux-orm.redux-orm/QuerySet.MutableQuerySet<any, {}>> */ String) | OptionalKeys[ModelFields[M]] | (FieldSpecKeys[M, AttributeWithDefault]) | IdKeyOpt[M]
   ] */](userProps: TProps): SessionBoundModel[M, TProps] = js.native
+  
   /**
     * @see {@link QuerySet.delete}
     */
   def delete(): Unit = js.native
+  
   /**
     * @see {@link QuerySet.exclude}
     */
   def exclude(props: LookupSpec[Model[Instantiable0[AnyModel], _]]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+  
   /**
     * Returns a boolean indicating if an entity
     * with the given props exists in the state.
@@ -120,14 +82,26 @@ object default extends js.Object {
     * @return a boolean indicating if entity with `props` exists in the state
     */
   def exists(props: Partial[Ref[Model[Instantiable0[AnyModel], _]]]): Boolean = js.native
+  
+  /**
+    * Model field descriptors.
+    * @see {@link Attribute}
+    * @see {@link OneToOne}
+    * @see {@link ForeignKey}
+    * @see {@link ManyToMany}
+    */
+  var fields: FieldSpecMap = js.native
+  
   /**
     * @see {@link QuerySet.filter}
     */
   def filter(props: LookupSpec[Model[Instantiable0[AnyModel], _]]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+  
   /**
     * @see {@link QuerySet.first}
     */
   def first(): js.UndefOr[SessionBoundModel[_, js.Object]] = js.native
+  
   /**
     * Gets the {@link Model} instance that matches properties in `lookupObj`.
     * Throws an error if {@link Model} if multiple records match
@@ -138,6 +112,7 @@ object default extends js.Object {
     * @return a {@link SessionBoundModel} instance that matches the properties in `lookupObj`.
     */
   def get[M /* <: AnyModel */](lookupObj: LookupSpec[M]): (SessionBoundModel[M, js.Object]) | Null = js.native
+  
   /**
     * Returns an instance of the model's `querySetClass` field.
     * By default, this will be an empty {@link QuerySet}.
@@ -145,6 +120,12 @@ object default extends js.Object {
     * @return An instance of the model's `querySetClass`.
     */
   def getQuerySet(): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+  
+  /**
+    * The key of Model's identifier property
+    */
+  val idAttribute: String = js.native
+  
   /**
     * Returns a boolean indicating if an entity
     * with the id `id` exists in the state.
@@ -156,10 +137,12 @@ object default extends js.Object {
     */
   def idExists(id: String): Boolean = js.native
   def idExists(id: Double): Boolean = js.native
+  
   /**
     * @see {@link QuerySet.last}
     */
   def last(): js.UndefOr[SessionBoundModel[_, js.Object]] = js.native
+  
   /**
     * Manually mark individual instances as accessed.
     * This allows invalidating selector memoization within mutable sessions.
@@ -167,17 +150,56 @@ object default extends js.Object {
     * @param ids - Array of primary key values
     */
   def markAccessed(ids: js.Array[String | Double]): Unit = js.native
+  
   /**
     * Manually mark this model's table as scanned.
     * This allows invalidating selector memoization within mutable sessions.
     *
     */
   def markFullTableScanned(): Unit = js.native
+  
+  /**
+    * A string constant identifying specific Model, necessary to retain the shape of state and relations through transpilation steps
+    */
+  var modelName: String = js.native
+  
+  /**
+    * Returns the options object passed to the database for the table that represents
+    * this Model class.
+    *
+    * Returns an empty object by default, which means the database
+    * will use default options. You can either override this function to return the options
+    * you want to use, or assign the options object as a static property of the same name to the
+    * Model class.
+    *
+    * @return the options object passed to the database for the table
+    *                  representing this Model class.
+    */
+  var options: js.Function0[TableOpts] | TableOpts = js.native
+  
   /**
     * @see {@link QuerySet.orderBy}
     */
   def orderBy(iteratees: js.Array[SortIteratee[Model[Instantiable0[AnyModel], _]]]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
   def orderBy(iteratees: js.Array[SortIteratee[Model[Instantiable0[AnyModel], _]]], orders: js.Array[SortOrder]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+  
+  /**
+    * @see {@link Model.getQuerySet}
+    */
+  val query: typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+  
+  /**
+    * {@link QuerySet} class associated with this Model class.
+    *
+    * Defaults to base {@link QuerySet}
+    */
+  var querySetClass: (Instantiable3[
+    /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
+    /* clauses */ js.Array[QueryClause[js.Object]], 
+    /* opts */ js.UndefOr[js.Object], 
+    typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
+  ]) with TypeofQuerySet = js.native
+  
   /**
     * Model specific reducer function.
     *
@@ -191,10 +213,12 @@ object default extends js.Object {
     * @param session - an optional parameter, can be used for querying other Models (mutations are not supported)
     */
   def reducer(action: js.Any, modelType: ModelType[_], session: OrmSession[_]): Unit = js.native
+  
   /**
     * @see {@link QuerySet.update}
     */
   def update(props: UpdateProps[Model[Instantiable0[AnyModel], _]]): Unit = js.native
+  
   /**
     * Creates a new or update existing record in the database, instantiates a {@link Model} and returns it.
     *
@@ -205,6 +229,7 @@ object default extends js.Object {
     * @return a {@link SessionBoundModel} instance.
     */
   def upsert[M /* <: AnyModel */, TProps /* <: UpsertProps[M] */](userProps: TProps): SessionBoundModel[M, TProps] = js.native
+  
   /**
     * Returns a {@link Model} instance for the object with id `id`.
     * Returns `null` if the model has no instance with id `id`.
@@ -216,4 +241,3 @@ object default extends js.Object {
     */
   def withId[M /* <: AnyModel */](id: IdType[M]): (SessionBoundModel[M, js.Object]) | Null = js.native
 }
-

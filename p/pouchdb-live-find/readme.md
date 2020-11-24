@@ -11,8 +11,8 @@ Live PouchDB queries that update automatically as changes come in!
 | Full name          | pouchdb-live-find |
 | Keywords           | pouch, pouchdb, plugin, find, mango, query, couch, couchdb, live, flux, redux, real-time |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 7189 |
+| # dependents       | 7 |
+| # downloads        | 12177 |
 | # stars            | 1 |
 
 ## Links

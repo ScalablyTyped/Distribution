@@ -9,15 +9,31 @@ import typings.three.constantsMod.TextureFilter
 import typings.three.constantsMod.Wrapping
 import typings.three.polyfillsMod.TypedArray
 import typings.three.textureMod.Texture
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/textures/DataTexture", JSImport.Namespace)
 @js.native
 object dataTextureMod extends js.Object {
+  
   @js.native
   class DataTexture protected () extends Texture {
+    /**
+    	 * @param data
+    	 * @param width
+    	 * @param height
+    	 * @param [format=THREE.RGBAFormat]
+    	 * @param [type=THREE.UnsignedByteType]
+    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+    	 * @param [magFilter=THREE.NearestFilter]
+    	 * @param [minFilter=THREE.NearestFilter]
+    	 * @param [anisotropy=1]
+    	 * @param [encoding=THREE.LinearEncoding]
+    	 */
     def this(
       data: TypedArray,
       width: Double,
@@ -32,9 +48,10 @@ object dataTextureMod extends js.Object {
       anisotropy: js.UndefOr[Double],
       encoding: js.UndefOr[TextureEncoding]
     ) = this()
+    
     @JSName("image")
     var image_DataTexture: ImageData = js.native
+    
+    val isDataTexture: `true` = js.native
   }
-  
 }
-

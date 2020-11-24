@@ -6,16 +6,19 @@ import typings.braintreeWeb.anon.Token
 import typings.braintreeWeb.coreMod.callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplePay extends js.Object {
+  
   /**
     * @description The current version of the SDK, i.e. `3.0.2`.
     */
   var VERSION: String = js.native
+  
   def create(options: Client): Unit = js.native
-  def create(options: Client, callback: callback): Unit = js.native
+  def create(options: Client, callback: callback[_]): Unit = js.native
+  
   /**
     * Merges a payment request with Braintree defaults
     * The following properties are assigned to `paymentRequest` if not already defined
@@ -38,8 +41,10 @@ trait ApplePay extends js.Object {
     *
     */
   def createPaymentRequest(paymentRequest: ApplePayPaymentRequest): ApplePayPaymentRequest = js.native
+  
   @JSName("create")
   def create_Promise(options: Client): js.Promise[_] = js.native
+  
   /**
     * Validates the merchant website, as required by ApplePaySession before payment can be authorized.     * - The canonical name for your store.
     * - The system may display this name to the user.
@@ -70,7 +75,8 @@ trait ApplePay extends js.Object {
     *   };
     * });
     */
-  def performValidation(options: DisplayName, callback: callback): Unit = js.native
+  def performValidation(options: DisplayName, callback: callback[_]): Unit = js.native
+  
   /**
     * Tokenizes an Apple Pay payment.     * @example
     * var applePay = require('braintree-web/apple-pay');
@@ -93,6 +99,5 @@ trait ApplePay extends js.Object {
     *  };
     * });
     */
-  def tokenize(options: Token, callback: callback): Unit = js.native
+  def tokenize(options: Token, callback: callback[_]): Unit = js.native
 }
-

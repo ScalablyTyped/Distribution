@@ -3,7 +3,7 @@ package typings.emittery.mod
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	Async event emitter.
@@ -21,19 +21,23 @@ import scala.scalajs.js.annotation._
 @JSImport("emittery", "Typed")
 @js.native
 class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: EventName */] () extends Emittery {
+  
   def emit[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
   def emit[Name /* <: EventNameFromDataMap[EventDataMap] */](
     eventName: Name,
     eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ): js.Promise[Unit] = js.native
+  
   def emitSerial[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
   def emitSerial[Name /* <: EventNameFromDataMap[EventDataMap] */](
     eventName: Name,
     eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ): js.Promise[Unit] = js.native
+  
   def events[Name /* <: EventNameFromDataMap[EventDataMap] */](eventName: Name): AsyncIterableIterator[
     /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ] = js.native
+  
   def off[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[Unit]): Unit = js.native
   def off[Name /* <: EventNameFromDataMap[EventDataMap] */](
     eventName: Name,
@@ -42,6 +46,7 @@ class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: EventName */] () ext
       Unit
     ]
   ): Unit = js.native
+  
   def on[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[Unit]): UnsubscribeFn = js.native
   def on[Name /* <: EventNameFromDataMap[EventDataMap] */](
     eventName: Name,
@@ -50,10 +55,10 @@ class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: EventName */] () ext
       Unit
     ]
   ): UnsubscribeFn = js.native
-  def once[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
-  @JSName("once")
-  def once_Name_EventNameFromDataMapEventDataMap[Name /* <: EventNameFromDataMap[EventDataMap] */](eventName: Name): js.Promise[
+  
+  def once[Name /* <: EventNameFromDataMap[EventDataMap] */](eventName: Name): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ] = js.native
+  @JSName("once")
+  def once_Name_EmptyEvents[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.minimatch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("minimatch", "match")
 @js.native
 object `match` extends js.Object {
+  
   /**
     * Match against the list of files, in the style of fnmatch or glob.
     * If nothing is matched, and options.nonull is set,
@@ -15,4 +16,3 @@ object `match` extends js.Object {
   def apply(list: js.Array[String], pattern: String): js.Array[String] = js.native
   def apply(list: js.Array[String], pattern: String, options: IOptions): js.Array[String] = js.native
 }
-

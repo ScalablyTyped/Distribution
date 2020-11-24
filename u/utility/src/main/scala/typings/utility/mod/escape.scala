@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "escape")
 @js.native
 object escape extends js.Object {
+  
   /**
     * ------------------0_0----------------------
     * @description Defines For Web Methods
@@ -22,4 +23,3 @@ object escape extends js.Object {
     */
   def apply(test: String): String = js.native
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "workbox-navigation-preload"
-version := "4.3-dt-20200515Z-d24a83"
+version := "4.3-dt-20200515Z-000080"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,9 +2,46 @@ package typings.icheck
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object icheckStrings {
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def check: check = "check".asInstanceOf[check]
+  
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def determinate: determinate = "determinate".asInstanceOf[determinate]
+  
+  @scala.inline
+  def disable: disable = "disable".asInstanceOf[disable]
+  
+  @scala.inline
+  def enable: enable = "enable".asInstanceOf[enable]
+  
+  @scala.inline
+  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
+  
+  @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
+  
+  @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @scala.inline
+  def uncheck: uncheck = "uncheck".asInstanceOf[uncheck]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
   @js.native
   sealed trait _empty extends js.Object
   
@@ -40,30 +77,4 @@ object icheckStrings {
   
   @js.native
   sealed trait update extends js.Object
-  
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def check: check = "check".asInstanceOf[check]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def determinate: determinate = "determinate".asInstanceOf[determinate]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def uncheck: uncheck = "uncheck".asInstanceOf[uncheck]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
 }
-

@@ -2,7 +2,7 @@ package typings.naverWhale.global.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Extension
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.extension")
 @js.native
 object extension extends js.Object
-

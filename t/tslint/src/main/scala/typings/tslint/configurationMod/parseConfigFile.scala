@@ -2,11 +2,12 @@ package typings.tslint.configurationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tslint/lib/configuration", "parseConfigFile")
 @js.native
 object parseConfigFile extends js.Object {
+  
   def apply(configFile: RawConfigFile): IConfigurationFile = js.native
   def apply(
     configFile: RawConfigFile,
@@ -20,4 +21,3 @@ object parseConfigFile extends js.Object {
     readConfig: js.Function1[/* path */ String, RawConfigFile]
   ): IConfigurationFile = js.native
 }
-

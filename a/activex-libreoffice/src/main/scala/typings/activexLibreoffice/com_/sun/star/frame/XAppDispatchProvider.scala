@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.2 */
 @js.native
 trait XAppDispatchProvider
   extends XDispatchInformationProvider
      with XDispatchProvider
-
 object XAppDispatchProvider {
+  
   @scala.inline
   def apply(
     SupportedCommandGroups: SafeArray[Double],
@@ -30,4 +30,3 @@ object XAppDispatchProvider {
     __obj.asInstanceOf[XAppDispatchProvider]
   }
 }
-

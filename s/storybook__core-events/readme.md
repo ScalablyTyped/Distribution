@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__core-events
 
-Typings are for version 5.3.19
+Typings are for version 6.1.2
 
 ## Library description:
 Event names used in storybook core
@@ -10,9 +10,9 @@ Event names used in storybook core
 | ------------------ | :-------------: |
 | Full name          | @storybook/core-events |
 | Keywords           | storybook |
-| # releases         | 399 |
-| # dependents       | 80 |
-| # downloads        | 46359876 |
+| # releases         | 574 |
+| # dependents       | 113 |
+| # downloads        | 105681816 |
 | # stars            | 0 |
 
 ## Links

@@ -7,7 +7,7 @@ import typings.encodingDown.mod.EncodingDown.Constructor
 import typings.levelCodec.mod.CodecOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("encoding-down", JSImport.Default)
 @js.native
@@ -16,8 +16,6 @@ class ^[K, V] protected () extends EncodingDown[K, V] {
   def this(db: AbstractLevelDOWN[_, _]) = this()
   def this(db: AbstractLevelDOWN[_, _], options: CodecOptions) = this()
 }
-
 @JSImport("encoding-down", JSImport.Default)
 @js.native
 object ^ extends TopLevel[Constructor]
-

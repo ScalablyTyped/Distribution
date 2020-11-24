@@ -3,10 +3,11 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SelfDecorator extends Instantiable0[Self] {
+  
   /**
     * Parameter decorator to be used on constructor parameters,
     * which tells the DI framework to start dependency resolution from the local injector.
@@ -29,4 +30,3 @@ trait SelfDecorator extends Instantiable0[Self] {
     */
   def apply(): js.Any = js.native
 }
-

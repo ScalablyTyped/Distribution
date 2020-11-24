@@ -12,7 +12,7 @@ A polyfill for the motion sensors based on the W3C Generic Sensor API
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1870 |
+| # downloads        | 5154 |
 | # stars            | 1 |
 
 ## Links

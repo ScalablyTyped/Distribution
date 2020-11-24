@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new ScrollbarComponent.
@@ -27,4 +27,3 @@ class ScrollbarComponent protected ()
   extends typings.playcanvas.pc.ScrollbarComponent {
   def this(system: typings.playcanvas.pc.ScrollbarComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

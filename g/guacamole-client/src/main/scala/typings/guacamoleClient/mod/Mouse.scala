@@ -4,7 +4,7 @@ import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Mouse")
 @js.native
@@ -16,10 +16,10 @@ class Mouse protected ()
   def this(element: HTMLDocument) = this()
   def this(element: HTMLElement) = this()
 }
-
 @JSImport("guacamole-client", "Mouse")
 @js.native
 object Mouse extends js.Object {
+  
   @js.native
   class GuacTouchDevice protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.GuacTouchDevice {
@@ -51,6 +51,4 @@ object Mouse extends js.Object {
   @js.native
   class Touchscreen ()
     extends typings.guacamoleClient.mouseMod.Mouse.Touchscreen
-  
 }
-

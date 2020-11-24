@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XSpinField
 import typings.activexLibreoffice.com_.sun.star.form.XBoundControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a control which can be used for inputting values with a arbitrary formatting, and can (but not necessarily has to) be bound to a database
@@ -24,4 +24,3 @@ trait FormattedField
   extends UnoControlEdit
      with XSpinField
      with XBoundControl
-

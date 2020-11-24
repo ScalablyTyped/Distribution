@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-dispatch
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Register named callbacks and call them with arguments.
@@ -11,8 +11,8 @@ Register named callbacks and call them with arguments.
 | Full name          | d3-dispatch |
 | Keywords           | d3, d3-module, event, listener, dispatch |
 | # releases         | 4 |
-| # dependents       | 88 |
-| # downloads        | 29682615 |
+| # dependents       | 103 |
+| # downloads        | 45985691 |
 | # stars            | 1 |
 
 ## Links

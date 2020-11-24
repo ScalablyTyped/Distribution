@@ -2,7 +2,7 @@ package typings.xstyledSystem.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GridsProps
@@ -18,12 +18,11 @@ trait GridsProps
      with GridTemplateRowsProps[StyledSystemLength]
      with GridTemplateAreasProps
      with GridAreaProps
-
 object GridsProps {
+  
   @scala.inline
   def apply(): GridsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridsProps]
   }
 }
-

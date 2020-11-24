@@ -10,9 +10,9 @@ Fork a writable stream into several parallel writable streams.
 | ------------------ | :-------------: |
 | Full name          | stream-fork |
 | Keywords           | stream, chain |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 3373 |
+| # releases         | 2 |
+| # dependents       | 1 |
+| # downloads        | 12356 |
 | # stars            | 0 |
 
 ## Links

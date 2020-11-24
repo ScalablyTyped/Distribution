@@ -2,7 +2,7 @@ package typings.keycloakJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.keycloakJs.keycloakJsStrings.standard
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.keycloakJs.keycloakJsStrings.hybrid
 */
 trait KeycloakFlow extends js.Object
-
 object KeycloakFlow {
+  
   @scala.inline
   def hybrid: typings.keycloakJs.keycloakJsStrings.hybrid = "hybrid".asInstanceOf[typings.keycloakJs.keycloakJsStrings.hybrid]
+  
   @scala.inline
   def `implicit`: typings.keycloakJs.keycloakJsStrings.`implicit` = "implicit".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`implicit`]
+  
   @scala.inline
   def standard: typings.keycloakJs.keycloakJsStrings.standard = "standard".asInstanceOf[typings.keycloakJs.keycloakJsStrings.standard]
 }
-

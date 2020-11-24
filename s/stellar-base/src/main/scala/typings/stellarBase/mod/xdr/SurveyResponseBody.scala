@@ -6,17 +6,17 @@ import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-base", "xdr.SurveyResponseBody")
 @js.native
 class SurveyResponseBody ()
   extends typings.stellarBase.xdrMod.default.SurveyResponseBody
-
 /* static members */
 @JSImport("stellar-base", "xdr.SurveyResponseBody")
 @js.native
 object SurveyResponseBody extends js.Object {
+  
   def fromXDR(input: Buffer): typings.stellarBase.xdrMod.xdr.SurveyResponseBody = js.native
   @JSName("fromXDR")
   def fromXDR_base64(input: String, format: base64): typings.stellarBase.xdrMod.xdr.SurveyResponseBody = js.native
@@ -24,10 +24,22 @@ object SurveyResponseBody extends js.Object {
   def fromXDR_hex(input: String, format: hex): typings.stellarBase.xdrMod.xdr.SurveyResponseBody = js.native
   @JSName("fromXDR")
   def fromXDR_raw(input: Buffer, format: raw): typings.stellarBase.xdrMod.xdr.SurveyResponseBody = js.native
+  
   def isValid(value: typings.stellarBase.xdrMod.xdr.SurveyResponseBody): Boolean = js.native
+  
   def read(io: Buffer): typings.stellarBase.xdrMod.xdr.SurveyResponseBody = js.native
+  
   def surveyTopology(value: typings.stellarBase.xdrMod.xdr.TopologyResponseBody): typings.stellarBase.xdrMod.xdr.SurveyResponseBody = js.native
+  
   def toXDR(value: typings.stellarBase.xdrMod.xdr.SurveyResponseBody): Buffer = js.native
+  
+  def validateXDR(input: Buffer): Boolean = js.native
+  @JSName("validateXDR")
+  def validateXDR_base64(input: String, format: base64): Boolean = js.native
+  @JSName("validateXDR")
+  def validateXDR_hex(input: String, format: hex): Boolean = js.native
+  @JSName("validateXDR")
+  def validateXDR_raw(input: Buffer, format: raw): Boolean = js.native
+  
   def write(value: typings.stellarBase.xdrMod.xdr.SurveyResponseBody, io: Buffer): Unit = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.openlayers.mod.olx.source.TileImageOptions
 import typings.openlayers.mod.tilegrid.TileGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -27,12 +27,14 @@ class TileImage protected () extends UrlTile {
     * @api
     */
   def this(options: TileImageOptions) = this()
+  
   /**
     * Sets whether to render reprojection edges or not (usually for debugging).
     * @param render Render the edges.
     * @api
     */
   def setRenderReprojectionEdges(render: Boolean): Unit = js.native
+  
   /**
     * Sets the tile grid to use when reprojecting the tiles to the given
     * projection instead of the default tile grid for the projection.
@@ -47,4 +49,3 @@ class TileImage protected () extends UrlTile {
     */
   def setTileGridForProjection(projection: ProjectionLike, tilegrid: TileGrid): Unit = js.native
 }
-

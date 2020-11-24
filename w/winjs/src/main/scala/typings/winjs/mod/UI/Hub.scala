@@ -5,7 +5,7 @@ import typings.winjs.anon.Complete
 import typings.winjs.anon.ContentTransition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
@@ -25,22 +25,23 @@ class Hub ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.Hub")
 @js.native
 object Hub extends js.Object {
+  
   /**
     * Specifies whether the Hub animation is an entrance animation or a transition animation.
     **/
   var AnimationType: ContentTransition = js.native
+  
   /**
     * Gets the current loading state of the Hub.
     **/
   var LoadingState: Complete = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

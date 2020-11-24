@@ -3,22 +3,27 @@ package typings.openpgp.mod.enums
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait signature extends js.Object
-
 /**
   * One pass signature packet type
   */
 @JSImport("openpgp", "enums.signature")
 @js.native
 object signature extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[signature with Double] = js.native
+  
   /**
     * 0x00: Signature of a binary document.
     */
   @js.native
   sealed trait binary extends signature
+  /* 0 */ @js.native
+  object binary extends TopLevel[binary with Double]
   
   /**
     * 0x12: Casual certification of a User ID and Public-Key packet.
@@ -27,6 +32,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_casual extends signature
+  /* 18 */ @js.native
+  object cert_casual extends TopLevel[cert_casual with Double]
   
   /**
     * 0x10: Generic certification of a User ID and Public-Key packet.
@@ -36,6 +43,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_generic extends signature
+  /* 16 */ @js.native
+  object cert_generic extends TopLevel[cert_generic with Double]
   
   /**
     * 0x11: Persona certification of a User ID and Public-Key packet.
@@ -44,6 +53,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_persona extends signature
+  /* 17 */ @js.native
+  object cert_persona extends TopLevel[cert_persona with Double]
   
   /**
     * 0x13: Positive certification of a User ID and Public-Key packet.
@@ -55,6 +66,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_positive extends signature
+  /* 19 */ @js.native
+  object cert_positive extends TopLevel[cert_positive with Double]
   
   /**
     * 0x30: Certification revocation signature
@@ -68,6 +81,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_revocation extends signature
+  /* 48 */ @js.native
+  object cert_revocation extends TopLevel[cert_revocation with Double]
   
   /**
     * 0x1F: Signature directly on a key
@@ -81,6 +96,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait key extends signature
+  /* 31 */ @js.native
+  object key extends TopLevel[key with Double]
   
   /**
     * 0x19: Primary Key Binding Signature
@@ -98,6 +115,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait key_binding extends signature
+  /* 25 */ @js.native
+  object key_binding extends TopLevel[key_binding with Double]
   
   /**
     * 0x20: Key revocation signature
@@ -108,6 +127,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait key_revocation extends signature
+  /* 32 */ @js.native
+  object key_revocation extends TopLevel[key_revocation with Double]
   
   /**
     * 0x02: Standalone signature.
@@ -118,6 +139,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait standalone extends signature
+  /* 2 */ @js.native
+  object standalone extends TopLevel[standalone with Double]
   
   /**
     * 0x18: Subkey Binding Signature
@@ -131,6 +154,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait subkey_binding extends signature
+  /* 24 */ @js.native
+  object subkey_binding extends TopLevel[subkey_binding with Double]
   
   /**
     * 0x28: Subkey revocation signature
@@ -144,6 +169,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait subkey_revocation extends signature
+  /* 40 */ @js.native
+  object subkey_revocation extends TopLevel[subkey_revocation with Double]
   
   /**
     * 0x01: Signature of a canonical text document.
@@ -151,6 +178,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait text extends signature
+  /* 1 */ @js.native
+  object text extends TopLevel[text with Double]
   
   /**
     * 0x50: Third-Party Confirmation signature.
@@ -164,6 +193,8 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait third_party extends signature
+  /* 80 */ @js.native
+  object third_party extends TopLevel[third_party with Double]
   
   /**
     * 0x40: Timestamp signature.
@@ -172,53 +203,6 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait timestamp extends signature
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[signature with Double] = js.native
-  /* 0 */ @js.native
-  object binary extends TopLevel[binary with Double]
-  
-  /* 18 */ @js.native
-  object cert_casual extends TopLevel[cert_casual with Double]
-  
-  /* 16 */ @js.native
-  object cert_generic extends TopLevel[cert_generic with Double]
-  
-  /* 17 */ @js.native
-  object cert_persona extends TopLevel[cert_persona with Double]
-  
-  /* 19 */ @js.native
-  object cert_positive extends TopLevel[cert_positive with Double]
-  
-  /* 48 */ @js.native
-  object cert_revocation extends TopLevel[cert_revocation with Double]
-  
-  /* 31 */ @js.native
-  object key extends TopLevel[key with Double]
-  
-  /* 25 */ @js.native
-  object key_binding extends TopLevel[key_binding with Double]
-  
-  /* 32 */ @js.native
-  object key_revocation extends TopLevel[key_revocation with Double]
-  
-  /* 2 */ @js.native
-  object standalone extends TopLevel[standalone with Double]
-  
-  /* 24 */ @js.native
-  object subkey_binding extends TopLevel[subkey_binding with Double]
-  
-  /* 40 */ @js.native
-  object subkey_revocation extends TopLevel[subkey_revocation with Double]
-  
-  /* 1 */ @js.native
-  object text extends TopLevel[text with Double]
-  
-  /* 80 */ @js.native
-  object third_party extends TopLevel[third_party with Double]
-  
   /* 64 */ @js.native
   object timestamp extends TopLevel[timestamp with Double]
-  
 }
-

@@ -10,9 +10,9 @@ A Jest package for mocking mongoose models
 | ------------------ | :-------------: |
 | Full name          | mockingoose |
 | Keywords           | jest, mock, mongoose |
-| # releases         | 18 |
-| # dependents       | 0 |
-| # downloads        | 281912 |
+| # releases         | 6 |
+| # dependents       | 1 |
+| # downloads        | 397450 |
 | # stars            | 3 |
 
 ## Links

@@ -4,10 +4,11 @@ import typings.trtcJsSdk.trtcJsSdkStrings.auxiliary
 import typings.trtcJsSdk.trtcJsSdkStrings.main
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RemoteStream extends Stream {
+  
   /**
     * 获取远端流类型,主要用于判断一个远端流是主音视频流还是辅路视频流，辅路视频流通常是一个屏幕分享流。
     * @returns 远端流类型
@@ -16,4 +17,3 @@ trait RemoteStream extends Stream {
     */
   def getType(): main | auxiliary = js.native
 }
-

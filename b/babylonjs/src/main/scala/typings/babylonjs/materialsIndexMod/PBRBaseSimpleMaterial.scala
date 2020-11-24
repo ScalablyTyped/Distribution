@@ -3,12 +3,12 @@ package typings.babylonjs.materialsIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "PBRBaseSimpleMaterial")
 @js.native
 abstract class PBRBaseSimpleMaterial protected ()
-  extends typings.babylonjs.pbrIndexMod.PBRBaseSimpleMaterial {
+  extends typings.babylonjs.materialsPbrIndexMod.PBRBaseSimpleMaterial {
   /**
     * Instantiates a new PBRMaterial instance.
     *
@@ -17,4 +17,3 @@ abstract class PBRBaseSimpleMaterial protected ()
     */
   def this(name: String, scene: Scene) = this()
 }
-

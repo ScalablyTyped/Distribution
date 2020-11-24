@@ -12,7 +12,7 @@ A ES6-compatible node.js promise library for harmony with support for typescript
 | Keywords           | promises, harmony, generators |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 393 |
+| # downloads        | 536 |
 | # stars            | 0 |
 
 ## Links

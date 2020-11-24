@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.model
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CompositeType extends SimpleType {
+  
   /**
     * Format the given set of values in model representation to an output value in the giveninternal type.
     * This happens according to the format options, if target type is 'string'.If aValues is not defined
@@ -15,6 +16,7 @@ trait CompositeType extends SimpleType {
     * @returns the formatted output value
     */
   def formatValue(aValues: js.Array[_], sInternalType: String): js.Any = js.native
+  
   /**
     * Validate whether a given value in model representation is valid and meets thedefined constraints (if
     * any).
@@ -22,4 +24,3 @@ trait CompositeType extends SimpleType {
     */
   def validateValue(aValues: js.Array[_]): Unit = js.native
 }
-

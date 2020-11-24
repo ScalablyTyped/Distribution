@@ -5,10 +5,11 @@ import typings.lodash.mod.List
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashDifferenceWith extends LodashConvertible {
+trait LodashDifferenceWith extends js.Object {
+  
   def apply[T1](comparator: __): LodashDifferenceWith1x2[T1] = js.native
   def apply[T1](comparator: __, array: List[T1]): LodashDifferenceWith1x2[T1] = js.native
   def apply[T2](comparator: __, array: __, values: List[T2]): LodashDifferenceWith1x4[T2] = js.native
@@ -22,4 +23,3 @@ trait LodashDifferenceWith extends LodashConvertible {
   def apply[T1, T2](comparator: __, array: Null, values: List[T2]): LodashDifferenceWith1x6[T1, T2] = js.native
   def apply[T1, T2](comparator: __, array: List[T1], values: List[T2]): LodashDifferenceWith1x6[T1, T2] = js.native
 }
-

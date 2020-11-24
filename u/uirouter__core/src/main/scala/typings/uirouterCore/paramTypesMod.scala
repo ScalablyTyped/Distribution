@@ -3,19 +3,23 @@ package typings.uirouterCore
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/params/paramTypes", JSImport.Namespace)
 @js.native
 object paramTypesMod extends js.Object {
+  
   @js.native
   class ParamTypes () extends js.Object {
-    var defaultTypes: js.Any = js.native
-    var enqueue: Boolean = js.native
-    var typeQueue: js.Array[_] = js.native
-    var types: js.Any = js.native
+    
     def _flushTypeQueue(): Unit = js.native
+    
+    var defaultTypes: js.Any = js.native
+    
     def dispose(): Unit = js.native
+    
+    var enqueue: Boolean = js.native
+    
     /**
       * Registers a parameter type
       *
@@ -29,11 +33,15 @@ object paramTypesMod extends js.Object {
     ): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
+    
+    var typeQueue: js.Array[_] = js.native
+    
+    var types: js.Any = js.native
   }
-  
   /* static members */
   @js.native
   object ParamTypes extends js.Object {
+    
     /**
       * Built-in parameter type: `any`
       *
@@ -57,6 +65,7 @@ object paramTypesMod extends js.Object {
       * ```
       */
     var any: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `bool`
       *
@@ -78,6 +87,7 @@ object paramTypesMod extends js.Object {
       * Conversely, if the url is `/inbox?unread=0`, the value of the `unread` parameter will be a `false`.
       */
     var bool: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `date`
       *
@@ -103,6 +113,7 @@ object paramTypesMod extends js.Object {
       * - `date.getDate() === 25`
       */
     var date: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `hash`
       *
@@ -110,6 +121,7 @@ object paramTypesMod extends js.Object {
       * It behaves the same as the [[string]] parameter type.
       */
     var hash: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `int`
       *
@@ -131,6 +143,7 @@ object paramTypesMod extends js.Object {
       * When the parameter value is read, it will be the `number` `1298547`, not the string `"1298547"`.
       */
     var int: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `json`
       *
@@ -151,6 +164,7 @@ object paramTypesMod extends js.Object {
       * The URL will serialize to: `/map/%7B%22x%22%3A10399.2%2C%22y%22%3A49071%7D`
       */
     var json: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `path`
       *
@@ -167,6 +181,7 @@ object paramTypesMod extends js.Object {
       * For more details about this angular 1 behavior, see: https://github.com/angular-ui/ui-router/issues/2598
       */
     var path: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `query`
       *
@@ -178,6 +193,7 @@ object paramTypesMod extends js.Object {
       * - `/bar?param2`: a query parameter
       */
     var query: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `string`
       *
@@ -186,6 +202,4 @@ object paramTypesMod extends js.Object {
       */
     var string: ParamTypeDefinition = js.native
   }
-  
 }
-

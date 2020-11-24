@@ -10,11 +10,15 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "acmpca")
 @js.native
 object acmpca extends js.Object {
+  
+  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = js.native
+  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = js.native
+  
   @js.native
   class CertificateAuthority protected ()
     extends typings.pulumiAws.acmpcaMod.CertificateAuthority {
@@ -28,12 +32,10 @@ object acmpca extends js.Object {
     def this(name: String, args: CertificateAuthorityArgs) = this()
     def this(name: String, args: CertificateAuthorityArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = js.native
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = js.native
   /* static members */
   @js.native
   object CertificateAuthority extends js.Object {
+    
     /**
       * Get an existing CertificateAuthority resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,12 +49,11 @@ object acmpca extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
     def get(name: String, id: Input[ID], state: CertificateAuthorityState): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
     def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
+    
     /**
       * Returns true if the given object is an instance of CertificateAuthority.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = js.native
   }
-  
 }
-

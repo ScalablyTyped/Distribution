@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "servicecatalog")
 @js.native
 object servicecatalog extends js.Object {
+  
   @js.native
   class Portfolio protected ()
     extends typings.pulumiAws.servicecatalogMod.Portfolio {
@@ -27,10 +28,10 @@ object servicecatalog extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: PortfolioArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object Portfolio extends js.Object {
+    
     /**
       * Get an existing Portfolio resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,12 +45,11 @@ object servicecatalog extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.portfolioMod.Portfolio = js.native
     def get(name: String, id: Input[ID], state: PortfolioState): typings.pulumiAws.portfolioMod.Portfolio = js.native
     def get(name: String, id: Input[ID], state: PortfolioState, opts: CustomResourceOptions): typings.pulumiAws.portfolioMod.Portfolio = js.native
+    
     /**
       * Returns true if the given object is an instance of Portfolio.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean = js.native
   }
-  
 }
-

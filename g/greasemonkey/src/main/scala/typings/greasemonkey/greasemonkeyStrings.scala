@@ -2,9 +2,46 @@ package typings.greasemonkey
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object greasemonkeyStrings {
+  
+  @scala.inline
+  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  
+  @scala.inline
+  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @scala.inline
+  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def idle: idle = "idle".asInstanceOf[idle]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
   @js.native
   sealed trait CONNECT extends js.Object
   
@@ -40,30 +77,4 @@ object greasemonkeyStrings {
   
   @js.native
   sealed trait start extends js.Object
-  
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def idle: idle = "idle".asInstanceOf[idle]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
 }
-

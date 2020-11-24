@@ -12,11 +12,12 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("koa-morgan", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Create a new morgan logger middleware function using the given format and options. The format argument may be a
     * custom format function which adheres to the signature.
@@ -60,4 +61,3 @@ object ^ extends js.Object {
   def apply(format: tiny): Middleware[DefaultState, DefaultContext] = js.native
   def apply(format: tiny, options: Options): Middleware[DefaultState, DefaultContext] = js.native
 }
-

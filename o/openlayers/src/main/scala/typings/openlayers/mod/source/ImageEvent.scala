@@ -3,7 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -25,10 +25,10 @@ class ImageEvent protected () extends Event {
     * @param image The image.
     */
   def this(`type`: String, image: typings.openlayers.mod.Image) = this()
+  
   /**
     * The image related to the event.
     * @api
     */
   var image: typings.openlayers.mod.Image = js.native
 }
-

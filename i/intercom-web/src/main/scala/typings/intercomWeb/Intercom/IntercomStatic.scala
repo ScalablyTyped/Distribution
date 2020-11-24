@@ -11,15 +11,16 @@ import typings.intercomWeb.intercomWebStrings.show
 import typings.intercomWeb.intercomWebStrings.showMessages
 import typings.intercomWeb.intercomWebStrings.showNewMessage
 import typings.intercomWeb.intercomWebStrings.shutdown
+import typings.intercomWeb.intercomWebStrings.startTour
 import typings.intercomWeb.intercomWebStrings.trackEvent
 import typings.intercomWeb.intercomWebStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IntercomStatic extends js.Object {
-  var booted: Boolean = js.native
+  
   def apply(command: IntercomCommand): Unit = js.native
   def apply(command: IntercomCommand, param1: js.UndefOr[scala.Nothing], param2: js.Any): Unit = js.native
   def apply(command: IntercomCommand, param1: js.Any): Unit = js.native
@@ -39,11 +40,13 @@ trait IntercomStatic extends js.Object {
   def apply(command: showNewMessage): Unit = js.native
   def apply(command: showNewMessage, param: String): Unit = js.native
   def apply(command: shutdown): Unit = js.native
+  def apply(command: startTour, tourId: Double): Unit = js.native
   def apply(command: trackEvent): Unit = js.native
   def apply(command: trackEvent, tag: js.UndefOr[scala.Nothing], metadata: js.Any): Unit = js.native
   def apply(command: trackEvent, tag: String): Unit = js.native
   def apply(command: trackEvent, tag: String, metadata: js.Any): Unit = js.native
   def apply(command: update): Unit = js.native
   def apply(command: update, param: IntercomSettings): Unit = js.native
+  
+  var booted: Boolean = js.native
 }
-

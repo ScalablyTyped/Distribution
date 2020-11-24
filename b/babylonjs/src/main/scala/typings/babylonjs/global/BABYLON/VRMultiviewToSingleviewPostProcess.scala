@@ -2,12 +2,12 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.VRMultiviewToSingleviewPostProcess")
 @js.native
 class VRMultiviewToSingleviewPostProcess protected ()
-  extends typings.babylonjs.BABYLON.PostProcess {
+  extends typings.babylonjs.BABYLON.VRMultiviewToSingleviewPostProcess {
   /**
     * Initializes a VRMultiviewToSingleview
     * @param name name of the post process
@@ -16,4 +16,3 @@ class VRMultiviewToSingleviewPostProcess protected ()
     */
   def this(name: String, camera: typings.babylonjs.BABYLON.Camera, scaleFactor: Double) = this()
 }
-

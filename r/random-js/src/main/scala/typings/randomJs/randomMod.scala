@@ -5,11 +5,12 @@ import typings.std.ArrayLike
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("random-js/dist/Random", JSImport.Namespace)
 @js.native
 object randomMod extends js.Object {
+  
   @js.native
   /**
     * Creates a new Random wrapper
@@ -17,7 +18,7 @@ object randomMod extends js.Object {
     */
   class Random () extends js.Object {
     def this(engine: Engine) = this()
-    val engine: js.Any = js.native
+    
     /**
       * Returns a boolean with 50% probability of being true or false
       */
@@ -33,23 +34,29 @@ object randomMod extends js.Object {
       * @param percentage A number within [0, 1] of how often the result should be `true`
       */
     def bool(percentage: Double): Boolean = js.native
+    
     /**
       * Returns a random `Date` within the inclusive range of [`start`, `end`].
       * @param start The minimum `Date`
       * @param end The maximum `Date`
       */
     def date(start: Date, end: Date): Date = js.native
+    
     /**
       * Returns an array of length `dieCount` of values within [1, sideCount]
       * @param sideCount The number of sides of each die
       * @param dieCount The number of dice
       */
     def dice(sideCount: Double, dieCount: Double): js.Array[Double] = js.native
+    
     /**
       * Returns a value within [1, sideCount]
       * @param sideCount The number of sides of the die
       */
     def die(sideCount: Double): Double = js.native
+    
+    val engine: js.Any = js.native
+    
     /**
       * Returns a random string comprised of numbers or the characters `abcdef`
       * (or `ABCDEF`) of length `length`.
@@ -58,24 +65,29 @@ object randomMod extends js.Object {
       */
     def hex(length: Double): String = js.native
     def hex(length: Double, uppercase: Boolean): String = js.native
+    
     /**
       * Returns a value within [-0x80000000, 0x7fffffff]
       */
     def int32(): Double = js.native
+    
     /**
       * Returns a value within [-0x20000000000000, 0x1fffffffffffff]
       */
     def int53(): Double = js.native
+    
     /**
       * Returns a value within [-0x20000000000000, 0x20000000000000]
       */
     def int53Full(): Double = js.native
+    
     /**
       * Returns a value within [min, max]
       * @param min The minimum integer value, inclusive. No less than -0x20000000000000.
       * @param max The maximum integer value, inclusive. No greater than 0x20000000000000.
       */
     def integer(min: Double, max: Double): Double = js.native
+    
     /**
       * Return a random value within the provided `source` within the sliced
       * bounds of `begin` and `end`.
@@ -87,6 +99,7 @@ object randomMod extends js.Object {
     def pick[T](source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): T = js.native
     def pick[T](source: ArrayLike[T], begin: Double): T = js.native
     def pick[T](source: ArrayLike[T], begin: Double, end: Double): T = js.native
+    
     /**
       * Returns a floating-point value within [min, max) or [min, max]
       * @param min The minimum floating-point value, inclusive.
@@ -95,14 +108,17 @@ object randomMod extends js.Object {
       */
     def real(min: Double, max: Double): Double = js.native
     def real(min: Double, max: Double, inclusive: Boolean): Double = js.native
+    
     /**
       * Returns a floating-point value within [0.0, 1.0)
       */
     def realZeroToOneExclusive(): Double = js.native
+    
     /**
       * Returns a floating-point value within [0.0, 1.0]
       */
     def realZeroToOneInclusive(): Double = js.native
+    
     /**
       * From the population array, returns an array with sampleSize elements that
       * are randomly chosen without repeats.
@@ -110,11 +126,13 @@ object randomMod extends js.Object {
       * @param sampleSize The size of the result array
       */
     def sample[T](population: ArrayLike[T], sampleSize: Double): js.Array[T] = js.native
+    
     /**
       * Shuffles an array in-place
       * @param array The array to shuffle
       */
     def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
+    
     /**
       * Returns a random string using numbers, uppercase and lowercase letters,
       * `_`, and `-` of length `length`.
@@ -127,18 +145,22 @@ object randomMod extends js.Object {
       * @param length Length of the result string
       */
     def string(length: Double, pool: String): String = js.native
+    
     /**
       * Returns a value within [0, 0xffffffff]
       */
     def uint32(): Double = js.native
+    
     /**
       * Returns a value within [0, 0x1fffffffffffff]
       */
     def uint53(): Double = js.native
+    
     /**
       * Returns a value within [0, 0x20000000000000]
       */
     def uint53Full(): Double = js.native
+    
     /**
       * Returns a Universally Unique Identifier Version 4.
       *
@@ -146,6 +168,4 @@ object randomMod extends js.Object {
       */
     def uuid4(): String = js.native
   }
-  
 }
-

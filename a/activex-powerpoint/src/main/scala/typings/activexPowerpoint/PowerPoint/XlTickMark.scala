@@ -6,7 +6,7 @@ import typings.activexPowerpoint.activexPowerpointNumbers.`3`
 import typings.activexPowerpoint.activexPowerpointNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexPowerpoint.activexPowerpointNumbers.`4`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexPowerpoint.activexPowerpointNumbers.`3`
 */
 trait XlTickMark extends js.Object
-
 object XlTickMark {
+  
   @scala.inline
   def xlTickMarkCross: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def xlTickMarkInside: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def xlTickMarkNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  
   @scala.inline
   def xlTickMarkOutside: `3` = 3.asInstanceOf[`3`]
 }
-

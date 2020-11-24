@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "AssetsProgressEvent")
 @js.native
@@ -20,4 +20,3 @@ class AssetsProgressEvent protected ()
     task: typings.babylonjs.assetsManagerMod.AbstractAssetTask
   ) = this()
 }
-

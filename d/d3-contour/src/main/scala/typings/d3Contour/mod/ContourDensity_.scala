@@ -4,10 +4,11 @@ import typings.d3Array.mod.ThresholdCountGenerator
 import typings.d3Array.mod.ThresholdNumberArrayGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContourDensity_[Datum] extends js.Object {
+  
   /**
     * Estimates the density contours for the given array of data, returning an array of GeoJSON MultiPolygon geometry objects.
     * Each geometry object represents the area where the estimated number of points per square pixel is greater than or equal to
@@ -21,6 +22,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * @param data Array of input data.
     */
   def apply(data: js.Array[Datum]): js.Array[ContourMultiPolygon] = js.native
+  
   /**
     * Returns the current bandwidth, which defaults to 20.4939….
     */
@@ -32,6 +34,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * The specified bandwidth is currently rounded to the nearest supported value by this implementation, and must be nonnegative.
     */
   def bandwidth(bandwidth: Double): this.type = js.native
+  
   /**
     * Returns the current cell size, which defaults to 4.
     */
@@ -44,6 +47,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * @param cellSize Cell size, a positive integer.
     */
   def cellSize(cellSize: Double): this.type = js.native
+  
   /**
     * Returns the current size, which defaults to [960, 500].
     */
@@ -54,6 +58,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * @param size The size is specified as an array [width, height], where width is the maximum x-value and height is the maximum y-value.
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current threshold generator, which by default generates about twenty nicely-rounded density thresholds.
     */
@@ -90,6 +95,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * @param thresholds Array of thresholds to use.
     */
   def thresholds(thresholds: js.Array[Double]): this.type = js.native
+  
   /**
     * Returns the current point weight accessor.
     */
@@ -100,6 +106,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * @param weight A point weight accessor function.
     */
   def weight(weight: js.Function1[/* d */ Datum, Double]): this.type = js.native
+  
   /**
     * Returns the current x-coordinate accessor.
     * The default x-coordinate accessor is a functions which accepts as input a two-element array of numbers
@@ -113,6 +120,7 @@ trait ContourDensity_[Datum] extends js.Object {
     * x-coordinate.
     */
   def x(x: js.Function1[/* d */ Datum, Double]): this.type = js.native
+  
   /**
     * Returns the current y-coordinate accessor.
     * The default y-coordinate accessor is a functions which accepts as input a two-element array of numbers
@@ -127,4 +135,3 @@ trait ContourDensity_[Datum] extends js.Object {
     */
   def y(y: js.Function1[/* d */ Datum, Double]): this.type = js.native
 }
-

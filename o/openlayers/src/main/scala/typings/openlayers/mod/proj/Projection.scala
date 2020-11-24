@@ -5,7 +5,7 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.olx.ProjectionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -69,18 +69,21 @@ class Projection protected () extends js.Object {
     * @api stable
     */
   def this(options: ProjectionOptions) = this()
+  
   /**
     * Get the code for this projection, e.g. 'EPSG:4326'.
     * @return Code.
     * @api stable
     */
   def getCode(): String = js.native
+  
   /**
     * Get the validity extent for this projection.
     * @return Extent.
     * @api stable
     */
   def getExtent(): Extent_ = js.native
+  
   /**
     * Get the amount of meters per unit of this projection.  If the projection is
     * not configured with `metersPerUnit` or a units identifier, the return is
@@ -89,6 +92,7 @@ class Projection protected () extends js.Object {
     * @api stable
     */
   def getMetersPerUnit(): Double = js.native
+  
   /**
     * Get the resolution of the point in degrees or distance units.
     * For projections with degrees as the unit this will simply return the
@@ -105,42 +109,49 @@ class Projection protected () extends js.Object {
     * @api
     */
   def getPointResolution(resolution: Double, point: Coordinate_): Double = js.native
+  
   /**
     * Get the units of this projection.
     * @return Units.
     * @api stable
     */
   def getUnits(): Units = js.native
+  
   /**
     * Get the world extent for this projection.
     * @return Extent.
     * @api
     */
   def getWorldExtent(): Extent_ = js.native
+  
   /**
     * Is this projection a global projection which spans the whole world?
     * @return Whether the projection is global.
     * @api stable
     */
   def isGlobal(): Boolean = js.native
+  
   /**
     * Set the validity extent for this projection.
     * @param extent Extent.
     * @api stable
     */
   def setExtent(extent: Extent_): Unit = js.native
+  
   /**
     * Set the getPointResolution function for this projection.
     * @param func Function
     * @api
     */
   def setGetPointResolution(func: js.Function2[/* resolution */ Double, /* coords */ Coordinate_, Double]): Unit = js.native
+  
   /**
     * Set if the projection is a global projection which spans the whole world
     * @param global Whether the projection is global.
     * @api stable
     */
   def setGlobal(global: Boolean): Unit = js.native
+  
   /**
     * Set the world extent for this projection.
     * @param worldExtent World extent
@@ -149,4 +160,3 @@ class Projection protected () extends js.Object {
     */
   def setWorldExtent(worldExtent: Extent_): Unit = js.native
 }
-

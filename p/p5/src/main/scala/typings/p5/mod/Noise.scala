@@ -2,10 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Noise extends Oscillator {
+  
   /**
     *   Set type of noise to 'white', 'pink' or 'brown'.
     *   White is the default.
@@ -13,4 +14,3 @@ trait Noise extends Oscillator {
     */
   def setType(): Unit = js.native
 }
-

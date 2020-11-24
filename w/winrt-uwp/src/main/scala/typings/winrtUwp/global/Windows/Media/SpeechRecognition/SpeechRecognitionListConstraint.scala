@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.SpeechRecognition
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A constraint for a SpeechRecognizer object based on a list of words or phrases. When initialized, this object is added to the Constraints collection. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint")
@@ -22,4 +22,3 @@ class SpeechRecognitionListConstraint protected ()
     */
   def this(commands: IIterable[String], tag: String) = this()
 }
-

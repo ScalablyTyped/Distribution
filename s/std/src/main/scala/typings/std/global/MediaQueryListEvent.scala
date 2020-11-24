@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.MediaQueryListEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaQueryListEvent")
 @js.native
@@ -14,7 +14,6 @@ class MediaQueryListEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: MediaQueryListEventInit) = this()
 }
-
 @JSGlobal("MediaQueryListEvent")
 @js.native
 object MediaQueryListEvent
@@ -24,4 +23,3 @@ object MediaQueryListEvent
       /* eventInitDict */ MediaQueryListEventInit, 
       typings.std.MediaQueryListEvent
     ]
-

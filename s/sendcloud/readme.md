@@ -12,7 +12,7 @@ Node for sendcloud. send email quickly and simply.
 | Keywords           | email, sendcloud, mail |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 8339 |
+| # downloads        | 6264 |
 | # stars            | 0 |
 
 ## Links

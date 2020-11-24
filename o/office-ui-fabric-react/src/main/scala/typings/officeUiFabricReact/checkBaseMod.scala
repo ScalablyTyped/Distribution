@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.checkTypesMod.ICheckProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/Check/Check.base", JSImport.Namespace)
 @js.native
 object checkBaseMod extends js.Object {
+  
   val CheckBase: FunctionComponent[ICheckProps] = js.native
 }
-

@@ -3,15 +3,17 @@ package typings.openui5.sap.ui.core.mvc
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSView extends View {
+  
   /**
     * Flag for feature detection of asynchronous loading/rendering
     * @since 1.30
     */
   var asyncSupport: js.Any = js.native
+  
   /**
     * A method to be implemented by JSViews, returning the View UI.While for declarative View types like
     * XMLView or JSONView the user interface definition is declared in a separate file,JSViews
@@ -21,6 +23,7 @@ trait JSView extends View {
     * @returns a control or (typically) tree of controls representing the View user interface
     */
   def createContent(): Control = js.native
+  
   /**
     * A method to be implemented by JSViews, returning the flag whether to prefixthe IDs of controls
     * automatically or not if the controls are created insidethe {@link
@@ -31,4 +34,3 @@ trait JSView extends View {
     */
   def getAutoPrefixId(): Boolean = js.native
 }
-

@@ -4,25 +4,48 @@ import typings.pulumiPulumi.anon.Id
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi/runtime/mocks", JSImport.Namespace)
 @js.native
 object mocksMod extends js.Object {
+  
+  def setMocks(mocks: Mocks): Unit = js.native
+  def setMocks(
+    mocks: Mocks,
+    project: js.UndefOr[scala.Nothing],
+    stack: js.UndefOr[scala.Nothing],
+    preview: Boolean
+  ): Unit = js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
+  def setMocks(mocks: Mocks, project: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
+  
   @js.native
   class MockMonitor protected () extends js.Object {
     def this(mocks: Mocks) = this()
-    var mocks: Mocks = js.native
-    var newUrn: js.Any = js.native
+    
     def invoke(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): js.Promise[Unit] = js.native
+    
+    var mocks: Mocks = js.native
+    
+    var newUrn: js.Any = js.native
+    
     def readResource(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innterResponse */ js.Any, Unit]): js.Promise[Unit] = js.native
+    
     def registerResource(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): js.Promise[Unit] = js.native
+    
     def registerResourceOutputs(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): Unit = js.native
+    
     def supportsFeature(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): Unit = js.native
   }
   
   @js.native
   trait Mocks extends js.Object {
+    
     /**
       * call mocks provider-implemented function calls (e.g. aws.get_availability_zones).
       *
@@ -32,6 +55,7 @@ object mocksMod extends js.Object {
       */
     def call(token: String, args: js.Any): Record[String, _] = js.native
     def call(token: String, args: js.Any, provider: String): Record[String, _] = js.native
+    
     /**
       * new_resource mocks resource construction calls. This function should return the physical identifier and the output properties
       * for the resource being constructed.
@@ -47,19 +71,4 @@ object mocksMod extends js.Object {
     def newResource(`type`: String, name: String, inputs: js.Any, provider: String): Id = js.native
     def newResource(`type`: String, name: String, inputs: js.Any, provider: String, id: String): Id = js.native
   }
-  
-  def setMocks(mocks: Mocks): Unit = js.native
-  def setMocks(
-    mocks: Mocks,
-    project: js.UndefOr[scala.Nothing],
-    stack: js.UndefOr[scala.Nothing],
-    preview: Boolean
-  ): Unit = js.native
-  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
-  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
-  def setMocks(mocks: Mocks, project: String): Unit = js.native
-  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
-  def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
-  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
 }
-

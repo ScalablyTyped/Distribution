@@ -10,8 +10,8 @@ Deep object merge utility.
 | Full name          | tea-merge |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 347398 |
+| # dependents       | 5 |
+| # downloads        | 37003 |
 | # stars            | 0 |
 
 ## Links

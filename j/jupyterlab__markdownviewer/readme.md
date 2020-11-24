@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__markdownviewer
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Markdown viewer Widget
@@ -10,9 +10,9 @@ JupyterLab - Markdown viewer Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/markdownviewer |
 | Keywords           | - |
-| # releases         | 45 |
-| # dependents       | 6 |
-| # downloads        | 367395 |
+| # releases         | 114 |
+| # dependents       | 7 |
+| # downloads        | 1309882 |
 | # stars            | 0 |
 
 ## Links

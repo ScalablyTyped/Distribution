@@ -3,9 +3,19 @@ package typings.feedparser
 import typings.feedparser.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedparserStrings {
+  
+  @scala.inline
+  def atom: atom = "atom".asInstanceOf[atom]
+  
+  @scala.inline
+  def rdf: rdf = "rdf".asInstanceOf[rdf]
+  
+  @scala.inline
+  def rss: rss = "rss".asInstanceOf[rss]
+  
   @js.native
   sealed trait atom extends Type
   
@@ -14,12 +24,4 @@ object feedparserStrings {
   
   @js.native
   sealed trait rss extends Type
-  
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
-  @scala.inline
-  def rdf: rdf = "rdf".asInstanceOf[rdf]
-  @scala.inline
-  def rss: rss = "rss".asInstanceOf[rss]
 }
-

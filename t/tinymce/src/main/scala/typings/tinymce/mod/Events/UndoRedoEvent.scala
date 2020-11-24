@@ -2,12 +2,12 @@ package typings.tinymce.mod.Events
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UndoRedoEvent extends Event
-
 object UndoRedoEvent {
+  
   @scala.inline
   def apply(
     isDefaultPrevented: () => Boolean,
@@ -24,4 +24,3 @@ object UndoRedoEvent {
     __obj.asInstanceOf[UndoRedoEvent]
   }
 }
-

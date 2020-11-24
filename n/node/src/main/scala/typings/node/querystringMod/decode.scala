@@ -3,7 +3,7 @@ package typings.node.querystringMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The querystring.decode() function is an alias for querystring.parse().
@@ -20,4 +20,3 @@ object decode
         ParsedUrlQuery
       ]
     ]
-

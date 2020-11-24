@@ -10,9 +10,9 @@ Class-based validation with Typescript / ES6 / ES5 using decorators or validatio
 | ------------------ | :-------------: |
 | Full name          | class-validator |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 362 |
-| # downloads        | 6871536 |
+| # releases         | 18 |
+| # dependents       | 663 |
+| # downloads        | 16506773 |
 | # stars            | 5 |
 
 ## Links

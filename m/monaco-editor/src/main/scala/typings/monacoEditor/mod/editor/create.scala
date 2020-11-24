@@ -3,11 +3,12 @@ package typings.monacoEditor.mod.editor
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "editor.create")
 @js.native
 object create extends js.Object {
+  
   def apply(domElement: HTMLElement): IStandaloneCodeEditor = js.native
   def apply(domElement: HTMLElement, options: js.UndefOr[scala.Nothing], `override`: IEditorOverrideServices): IStandaloneCodeEditor = js.native
   def apply(domElement: HTMLElement, options: IStandaloneEditorConstructionOptions): IStandaloneCodeEditor = js.native
@@ -17,4 +18,3 @@ object create extends js.Object {
     `override`: IEditorOverrideServices
   ): IStandaloneCodeEditor = js.native
 }
-

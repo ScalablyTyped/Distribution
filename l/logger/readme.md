@@ -11,8 +11,8 @@ A simple logging library that combines the simple APIs of Ruby's logger.rb and b
 | Full name          | logger |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 221179 |
+| # dependents       | 44 |
+| # downloads        | 398142 |
 | # stars            | 0 |
 
 ## Links

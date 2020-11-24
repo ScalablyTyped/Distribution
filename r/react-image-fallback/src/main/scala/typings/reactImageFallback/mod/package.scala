@@ -2,9 +2,10 @@ package typings.reactImageFallback
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type ReactImageFallback = typings.react.mod.Component[
     typings.reactImageFallback.mod.ReactImageFallbackProps with (typings.react.mod.DetailedHTMLProps[
       typings.react.mod.ImgHTMLAttributes[typings.std.HTMLImageElement], 

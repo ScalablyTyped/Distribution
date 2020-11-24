@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Achievements")
 @js.native
 class ResourceAchievements protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.achievements.reset
     * @desc Resets the achievement with the given ID for the currently
@@ -46,6 +48,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementResetResponse]
   ): Unit = js.native
+  
   /**
     * gamesManagement.achievements.resetAll
     * @desc Resets all achievements for the currently authenticated player for
@@ -78,6 +81,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementResetAllResponse]
   ): Unit = js.native
+  
   /**
     * gamesManagement.achievements.resetAllForAllPlayers
     * @desc Resets all draft achievements for all players. This method is only
@@ -106,6 +110,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.achievements.resetForAllPlayers
     * @desc Resets the achievement with the given ID for all players. This
@@ -136,6 +141,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.achievements.resetMultipleForAllPlayers
     * @desc Resets achievements with the given IDs for all players. This method
@@ -167,4 +173,3 @@ class ResourceAchievements protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

@@ -9,10 +9,11 @@ import typings.hexo.mod.Locals.Page
 import typings.hexo.mod.Locals.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Locals_ extends js.Object {
+  
   /**
     * Get a Variable
     */
@@ -25,21 +26,24 @@ trait Locals_ extends js.Object {
   def get_posts(`type`: posts): Model[typings.hexo.mod.Locals.Post] = js.native
   @JSName("get")
   def get_tags(`type`: tags): Model[Tag] = js.native
+  
   /**
     * Invalidate the cache
     */
   def invalidate(): this.type = js.native
+  
   /**
     * Remove a Variable
     */
   def remove(`type`: String): this.type = js.native
+  
   /**
     * Set a Variable
     */
   def set(`type`: String, fn: js.Function0[_]): this.type = js.native
+  
   /**
     * Get All Variable
     */
   def toObject(): js.Any = js.native
 }
-

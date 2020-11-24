@@ -3,7 +3,7 @@ package typings.typesettable.mod
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "SvgContext")
 @js.native
@@ -14,11 +14,10 @@ class SvgContext protected ()
   def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
   def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
 }
-
 /* static members */
 @JSImport("typesettable", "SvgContext")
 @js.native
 object SvgContext extends js.Object {
+  
   var AnchorMap: js.Any = js.native
 }
-

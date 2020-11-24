@@ -10,9 +10,9 @@ A Vue wrapper component for cropperjs
 | ------------------ | :-------------: |
 | Full name          | vue-cropperjs |
 | Keywords           | vue, vuejs, cropper, cropperjs, component |
-| # releases         | 7 |
-| # dependents       | 30 |
-| # downloads        | 547854 |
+| # releases         | 5 |
+| # dependents       | 37 |
+| # downloads        | 786180 |
 | # stars            | 1 |
 
 ## Links

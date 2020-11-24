@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Userprofiles$Guardianinvitations")
 @js.native
 class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.userProfiles.guardianInvitations.create
     * @desc Creates a guardian invitation, and sends an email to the guardian
@@ -68,6 +70,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGuardianInvitation]
   ): Unit = js.native
+  
   /**
     * classroom.userProfiles.guardianInvitations.get
     * @desc Returns a specific guardian invitation.  This method returns the
@@ -110,6 +113,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGuardianInvitation]
   ): Unit = js.native
+  
   /**
     * classroom.userProfiles.guardianInvitations.list
     * @desc Returns a list of guardian invitations that the requesting user is
@@ -157,6 +161,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListGuardianInvitationsResponse]
   ): Unit = js.native
+  
   /**
     * classroom.userProfiles.guardianInvitations.patch
     * @desc Modifies a guardian invitation.  Currently, the only valid
@@ -205,4 +210,3 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGuardianInvitation]
   ): Unit = js.native
 }
-

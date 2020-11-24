@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintErrorType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintErrorType")
 @js.native
 object PrintErrorType extends js.Object {
+  
   @js.native
   sealed trait asDisplayed extends PrintErrorType
   
@@ -24,6 +24,4 @@ object PrintErrorType extends js.Object {
   
   @js.native
   sealed trait notAvailable extends PrintErrorType
-  
 }
-

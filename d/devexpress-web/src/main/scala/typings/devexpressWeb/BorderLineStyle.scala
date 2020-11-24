@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BorderLineStyle extends js.Object
-
 /**
   * Lists values to specify the line styles for table cell borders.
   */
 @JSGlobal("BorderLineStyle")
 @js.native
 object BorderLineStyle extends js.Object {
+  
   /**
     * Apples Art Border
     */
@@ -1158,6 +1158,4 @@ object BorderLineStyle extends js.Object {
     */
   @js.native
   sealed trait ZigZagStitch extends BorderLineStyle
-  
 }
-

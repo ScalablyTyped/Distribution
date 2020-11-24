@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.Dialog.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDialog
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Dialog]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Dialog] {
+  
   var Locale: js.Any = js.native
+  
   var fn: Dialog = js.native
 }
-

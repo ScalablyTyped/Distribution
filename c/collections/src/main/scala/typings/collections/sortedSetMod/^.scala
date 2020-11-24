@@ -3,7 +3,7 @@ package typings.collections.sortedSetMod
 import typings.collections.sortedSetMod.internal.SortedSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("collections/sorted-set", JSImport.Namespace)
 @js.native
@@ -80,4 +80,3 @@ class ^[T] () extends SortedSet[T] {
     getDefault: js.Any
   ) = this()
 }
-

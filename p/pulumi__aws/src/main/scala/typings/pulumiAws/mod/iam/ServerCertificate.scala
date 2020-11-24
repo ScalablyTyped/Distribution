@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "iam.ServerCertificate")
 @js.native
@@ -23,11 +23,11 @@ class ServerCertificate protected ()
   def this(name: String, args: ServerCertificateArgs) = this()
   def this(name: String, args: ServerCertificateArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "iam.ServerCertificate")
 @js.native
 object ServerCertificate extends js.Object {
+  
   /**
     * Get an existing ServerCertificate resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object ServerCertificate extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serverCertificateMod.ServerCertificate = js.native
   def get(name: String, id: Input[ID], state: ServerCertificateState): typings.pulumiAws.serverCertificateMod.ServerCertificate = js.native
   def get(name: String, id: Input[ID], state: ServerCertificateState, opts: CustomResourceOptions): typings.pulumiAws.serverCertificateMod.ServerCertificate = js.native
+  
   /**
     * Returns true if the given object is an instance of ServerCertificate.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serverCertificate.ServerCertificate */ Boolean = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Data Loss Prevention (DLP) API
@@ -30,4 +30,3 @@ class Dlp protected ()
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
 }
-

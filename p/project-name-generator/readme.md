@@ -11,8 +11,8 @@ Generate a random, unique, heroku-like name for your app/project/server etc. e.g
 | Full name          | project-name-generator |
 | Keywords           | heroku, project, server, app, name, generate, unique, random, generator, generater |
 | # releases         | 3 |
-| # dependents       | 38 |
-| # downloads        | 453709 |
+| # dependents       | 40 |
+| # downloads        | 514012 |
 | # stars            | 6 |
 
 ## Links

@@ -8,13 +8,14 @@ import typings.chui.anon.Selected
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for jQuery
   */
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Display a busy indicator. Posible options: {size: "100px", color: "#ff0000", position: "align-flush", duration: "2s"}.
     *
@@ -26,12 +27,14 @@ trait JQuery extends js.Object {
     */
   def UIBusy(): Unit = js.native
   def UIBusy(options: Color): Unit = js.native
+  
   /**
     * Center an element to the screen.
     *
     * @return void
     */
   def UICenter(): Unit = js.native
+  
   /**
     * Make a list editable. This can be enabling changing the order of list items, or deleting them, or both. Options: {editLabel: "Edit", doneLabel: "Done",
     * deleteLabel: "Delete", callback: function() {alert('Bye bye!');}, deletable: true, movable: true}.
@@ -40,6 +43,7 @@ trait JQuery extends js.Object {
     */
   def UIEditList(): Unit = js.native
   def UIEditList(options: Deletable): Unit = js.native
+  
   /**
     * This method allows the user to use a segmented control to toggle a set of panels. It is executed on the segmented control.
     * The options id is the contain of the panels. The options callback is to execute when the user toggles a panel.
@@ -47,18 +51,21 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UIPanelToggle(panelsContainer: String, callback: js.Function0[_]): Unit = js.native
+  
   /**
     * Close the currently displayed Popup. This is executed on the popup: $('#myPopup').UIPopupClose().
     *
     * @return void
     */
   def UIPopupClose(): Unit = js.native
+  
   /**
     * Execute this on a range control to initialize it.
     *
     * @return void
     */
   def UIRange(): Unit = js.native
+  
   /**
     * Initialize a segmented control. Options: {selected: 2, callback: function() {console.log('Blah');}}
     *
@@ -66,6 +73,7 @@ trait JQuery extends js.Object {
     */
   def UISegmented(): Unit = js.native
   def UISegmented(options: Selected): Unit = js.native
+  
   /**
     * Convert a simple list into a selection list. This converts the list into a radio button group, meaning only one can be selected at any time.
     * You can name the radios buttons using the options name. Options: {name: "selectedNamesGroup", selected: 2, callback: function() {alert('hi');}}
@@ -74,18 +82,21 @@ trait JQuery extends js.Object {
     */
   def UISelectList(): Unit = js.native
   def UISelectList(options: Name): Unit = js.native
+  
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *
     * @return void
     */
   def UIStepper(options: DefaultValue): Unit = js.native
+  
   /**
     * Initialize any existing switch controls: $('.switch').UISwitch();
     *
     * @return void
     */
   def UISwitch(): Unit = js.native
+  
   /**
     * Attach a handler to an event for the elements.
     *
@@ -131,6 +142,7 @@ trait JQuery extends js.Object {
   def bind(eventType: ChUIEventInterface, eventData: js.Any, preventBubble: Boolean): JQuery = js.native
   def bind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   def bind(eventType: ChUIEventInterface, preventBubble: Boolean): JQuery = js.native
+  
   def delegate(
     selector: js.Any,
     eventType: String,
@@ -149,6 +161,7 @@ trait JQuery extends js.Object {
     eventType: ChUIEventInterface,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
+  
   /**
     * Iterate over an Array object, executing a function for each matched element.
     *
@@ -156,6 +169,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def forEach(callback: js.Function2[/* ctx */ HTMLElement, /* idx */ Double, _]): JQuery = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
     *
@@ -170,6 +184,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def haz(selector: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that have the given attribute.
     *
@@ -177,6 +192,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazAttr(attributeName: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that have the given class.
     *
@@ -184,6 +200,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazClass(className: String): JQuery = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that does not match the selector or DOM element.
     *
@@ -198,6 +215,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def haznt(selector: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that do not have the given attribute.
     *
@@ -205,6 +223,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazntAttr(attributeName: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that do not have the given class.
     *
@@ -212,6 +231,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazntClass(className: String): JQuery = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -228,6 +248,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def iz(selector: String): JQuery = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -244,6 +265,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def iznt(selector: String): JQuery = js.native
+  
   /**
     * Remove an event handler.
     *
@@ -281,6 +303,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
+  
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
@@ -353,6 +376,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
+  
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -411,6 +435,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
+  
   /**
     * Execute all handlers and behaviors attached to the matched elements for the given event type.
     *
@@ -424,6 +449,7 @@ trait JQuery extends js.Object {
   def trigger(eventType: ChUIEventInterface): JQuery = js.native
   def trigger(eventType: ChUIEventInterface, extraParameters: js.Array[_]): JQuery = js.native
   def trigger(eventType: ChUIEventInterface, extraParameters: js.Object): JQuery = js.native
+  
   /**
     * Execute all handlers attached to an element for an event.
     *
@@ -433,6 +459,7 @@ trait JQuery extends js.Object {
     */
   def triggerHandler(eventType: String, extraParameters: js.Any*): js.Object = js.native
   def triggerHandler(eventType: ChUIEventInterface, extraParameters: js.Any*): js.Object = js.native
+  
   /**
     * Remove a previously-attached event handler from the elements.
     *
@@ -458,6 +485,7 @@ trait JQuery extends js.Object {
   def unbind(eventType: ChUIEventInterface): JQuery = js.native
   def unbind(eventType: ChUIEventInterface, fls: Boolean): JQuery = js.native
   def unbind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     *
@@ -484,4 +512,3 @@ trait JQuery extends js.Object {
   ): JQuery = js.native
   def undelegate(selector: ChUIEventInterface, events: js.Object): JQuery = js.native
 }
-

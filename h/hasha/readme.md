@@ -1,7 +1,7 @@
 
 # Scala.js typings for hasha
 
-Typings are for version 5.2.0
+Typings are for version 5.2.2
 
 ## Library description:
 Hashing made simple. Get the hash of a buffer/string/stream/file.
@@ -11,8 +11,8 @@ Hashing made simple. Get the hash of a buffer/string/stream/file.
 | Full name          | hasha |
 | Keywords           | hash, hashing, crypto, hex, base64, md5, sha1, sha256, sha512, sum, stream, file, fs, buffer, string, text, rev, revving, simple, easy |
 | # releases         | 5 |
-| # dependents       | 229 |
-| # downloads        | 59547020 |
+| # dependents       | 299 |
+| # downloads        | 99332120 |
 | # stars            | 16 |
 
 ## Links

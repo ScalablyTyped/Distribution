@@ -4,10 +4,11 @@ import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.base.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RenderManager extends Object {
+  
   /**
     * Adds a class to the class collection if the name is not empty or null.The class collection is
     * flushed if it is written to the buffer using {@link #writeClasses}
@@ -15,6 +16,7 @@ trait RenderManager extends Object {
     * @returns this render manager instance to allow chaining
     */
   def addClass(sName: String): RenderManager = js.native
+  
   /**
     * Adds a style property to the style collection if the value is not empty or nullThe style collection
     * is flushed if it is written to the buffer using {@link #writeStyle}
@@ -24,6 +26,7 @@ trait RenderManager extends Object {
     */
   def addStyle(sName: String, value: String): RenderManager = js.native
   def addStyle(sName: String, value: Double): RenderManager = js.native
+  
   /**
     * Cleans up the rendering state of the given control with rendering it.A control is responsible for
     * the rendering of all its child controls.But in some cases it makes sense that a control does not
@@ -45,6 +48,7 @@ trait RenderManager extends Object {
     * @param oControl the control that should be cleaned up
     */
   def cleanupControlWithoutRendering(oControl: Control): Unit = js.native
+  
   /**
     * Creates the ID to be used for the invisible Placeholder DOM element.This method can be used to get
     * direct access to the placeholder DOM element.Also statically available as
@@ -53,12 +57,14 @@ trait RenderManager extends Object {
     * @returns The ID used for the invisible Placeholder of this element
     */
   def createInvisiblePlaceholderId(oElement: Element): String = js.native
+  
   /**
     * Searches "to-be-preserved" nodes for the given control id.
     * @param sId control id to search content for.
     * @returns a jQuery collection representing the found content
     */
   def findPreservedContent(sId: String): JQueryStatic = js.native
+  
   /**
     * Renders the content of the rendering buffer into the provided DOMNode.This function must not be
     * called within control renderers.Usage:<pre>// Create a new instance of the RenderManagervar rm =
@@ -73,11 +79,13 @@ trait RenderManager extends Object {
     */
   def flush(oTargetDomNode: Element, bDoNotPreserve: Boolean, vInsert: Boolean): Unit = js.native
   def flush(oTargetDomNode: Element, bDoNotPreserve: Boolean, vInsert: Double): Unit = js.native
+  
   /**
     * Returns the configuration objectShortcut for <code>sap.ui.getCore().getConfiguration()</code>
     * @returns the configuration object
     */
   def getConfiguration(): Configuration = js.native
+  
   /**
     * Renders the given {@link sap.ui.core.Control} and finally returnsthe content of the rendering
     * buffer.Ensures the buffer is restored to the state before calling this method.
@@ -85,11 +93,13 @@ trait RenderManager extends Object {
     * @returns the resulting HTML of the provided control
     */
   def getHTML(oControl: Control): String = js.native
+  
   /**
     * Returns the hidden area reference belonging to this window instance.
     * @returns the hidden area reference belonging to this core instance.
     */
   def getPreserveAreaRef(): Element = js.native
+  
   /**
     * Returns the renderer class for a given control instance
     * @param oControl the control that should be rendered
@@ -102,6 +112,7 @@ trait RenderManager extends Object {
     */
   @JSName("getRenderer")
   def getRenderer_Unit(oControl: Control): Unit = js.native
+  
   /**
     * Collects descendants of the given root node that need to be preserved before the root nodeis wiped
     * out. The "to-be-preserved" nodes are moved to a special, hidden 'preserve' area.A node is declared
@@ -119,6 +130,7 @@ trait RenderManager extends Object {
   def preserveContent(oRootNode: Element, bPreserveRoot: js.UndefOr[scala.Nothing], bPreserveNodesWithId: Boolean): Unit = js.native
   def preserveContent(oRootNode: Element, bPreserveRoot: Boolean): Unit = js.native
   def preserveContent(oRootNode: Element, bPreserveRoot: Boolean, bPreserveNodesWithId: Boolean): Unit = js.native
+  
   /**
     * Renders the given control to the provided DOMNode.If the control is already rendered in the provided
     * DOMNode the DOM of the control is replaced. If the controlis already rendered somewhere else the
@@ -128,6 +140,7 @@ trait RenderManager extends Object {
     * @param oTargetDomNode The node in the DOM where the result of the rendering should be inserted.
     */
   def render(oControl: Control, oTargetDomNode: Element): Unit = js.native
+  
   /**
     * Turns the given control into its HTML representation and appends it to therendering buffer.If the
     * given control is undefined or null, then nothing is rendered.
@@ -135,10 +148,12 @@ trait RenderManager extends Object {
     * @returns this render manager instance to allow chaining
     */
   def renderControl(oControl: Control): RenderManager = js.native
+  
   /**
     * @param sKey undefined
     */
   def translate(sKey: String): Unit = js.native
+  
   /**
     * Write the given texts to the buffer
     * @param sText (can be a number too)
@@ -146,10 +161,12 @@ trait RenderManager extends Object {
     */
   def write(sText: String): RenderManager = js.native
   def write(sText: Double): RenderManager = js.native
+  
   /**
     * @returns this render manager instance to allow chaining
     */
   def writeAcceleratorKey(): RenderManager = js.native
+  
   /**
     * Writes the accessibility state (see WAI-ARIA specification) of the provided element into the
     * HTMLbased on the element's properties and associations.The ARIA properties are only written when the
@@ -188,6 +205,7 @@ trait RenderManager extends Object {
     */
   def writeAccessibilityState(oElement: Element): RenderManager = js.native
   def writeAccessibilityState(oElement: Element, mProps: js.Any): RenderManager = js.native
+  
   /**
     * Writes the attribute and its value into the HTML
     * @param sName the name of the attribute
@@ -197,6 +215,7 @@ trait RenderManager extends Object {
   def writeAttribute(sName: String, value: String): RenderManager = js.native
   def writeAttribute(sName: String, value: Boolean): RenderManager = js.native
   def writeAttribute(sName: String, value: Double): RenderManager = js.native
+  
   /**
     * Writes the attribute and its value into the HTMLThe value is properly escaped to avoid XSS attacks.
     * @param sName the name of the attribute
@@ -204,6 +223,7 @@ trait RenderManager extends Object {
     * @returns this render manager instance to allow chaining
     */
   def writeAttributeEscaped(sName: String, vValue: js.Any): RenderManager = js.native
+  
   def writeClasses(oElement: Boolean): RenderManager = js.native
   /**
     * Writes and flushes the class collection (all CSS classes added by "addClass()" since the last
@@ -216,18 +236,21 @@ trait RenderManager extends Object {
     * @returns this render manager instance to allow chaining
     */
   def writeClasses(oElement: Element): RenderManager = js.native
+  
   /**
     * Writes the controls data into the HTML.Control Data consists at least of the id of a control
     * @param oControl the control whose identifying information should be written to the buffer
     * @returns this render manager instance to allow chaining
     */
   def writeControlData(oControl: Control): RenderManager = js.native
+  
   /**
     * Writes the elements data into the HTML.Element Data consists at least of the id of a element
     * @param oElement the element whose identifying information should be written to the buffer
     * @returns this render manager instance to allow chaining
     */
   def writeElementData(oElement: Element): RenderManager = js.native
+  
   /**
     * Escape text for HTML and write it to the buffer
     * @param sText undefined
@@ -235,6 +258,7 @@ trait RenderManager extends Object {
     * @returns this render manager instance to allow chaining
     */
   def writeEscaped(sText: String, bLineBreaks: Boolean): RenderManager = js.native
+  
   /**
     * Writes necessary invisible control/element placeholder data into the HTML.Controls should only use
     * this method if they can't live with the standard 'visible=false' implementation of the RenderManager
@@ -248,10 +272,10 @@ trait RenderManager extends Object {
     * @returns this render manager instance to allow chaining
     */
   def writeInvisiblePlaceholderData(oElement: Element): RenderManager = js.native
+  
   /**
     * Writes and flushes the style collection
     * @returns this render manager instance to allow chaining
     */
   def writeStyles(): RenderManager = js.native
 }
-

@@ -9,9 +9,9 @@ Override HTTP verbs
 | ------------------ | :-------------: |
 | Full name          | method-override |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 871 |
-| # downloads        | 21610174 |
+| # releases         | 1 |
+| # dependents       | 914 |
+| # downloads        | 24162708 |
 | # stars            | 93 |
 
 ## Links

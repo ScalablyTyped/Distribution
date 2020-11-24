@@ -2,12 +2,13 @@ package typings.winrtUwp.global.Windows.ApplicationModel.DataTransfer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the classes and events that a target app uses to complete share operations and create shortcuts, called QuickLinks, that the system can use to streamline future sharing operations to the app. */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget")
 @js.native
 object ShareTarget extends js.Object {
+  
   /** Represents shortcuts that help users share content with the apps they use most. */
   @js.native
   /** Creates a new instance of a QuickLink object. */
@@ -18,6 +19,4 @@ object ShareTarget extends js.Object {
   @js.native
   abstract class ShareOperation ()
     extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
-  
 }
-

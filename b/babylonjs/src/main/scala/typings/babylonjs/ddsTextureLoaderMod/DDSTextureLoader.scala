@@ -5,11 +5,12 @@ import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/Loaders/ddsTextureLoader", "_DDSTextureLoader")
 @js.native
 class DDSTextureLoader () extends IInternalTextureLoader {
+  
   /**
     * Uploads the 2D texture data to the WebGL texture. It has already been bound once in the callback.
     * @param data contains the texture data
@@ -29,4 +30,3 @@ class DDSTextureLoader () extends IInternalTextureLoader {
     ]
   ): Unit = js.native
 }
-

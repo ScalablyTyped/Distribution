@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-preset-default
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 Default preset for JSS with selected plugins.
@@ -10,9 +10,9 @@ Default preset for JSS with selected plugins.
 | ------------------ | :-------------: |
 | Full name          | jss-preset-default |
 | Keywords           | jss, preset, default |
-| # releases         | 37 |
-| # dependents       | 141 |
-| # downloads        | 9142171 |
+| # releases         | 39 |
+| # dependents       | 171 |
+| # downloads        | 8873605 |
 | # stars            | 2 |
 
 ## Links

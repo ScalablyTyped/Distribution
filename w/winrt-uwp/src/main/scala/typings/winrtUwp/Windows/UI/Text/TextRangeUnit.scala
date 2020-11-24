@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextRangeUnit extends js.Object
-
 /** Specifies the units to use when navigating a text range. */
 @JSGlobal("Windows.UI.Text.TextRangeUnit")
 @js.native
 object TextRangeUnit extends js.Object {
+  
   /** Text in all uppercase. */
   @js.native
   sealed trait allCaps extends TextRangeUnit
@@ -138,6 +138,4 @@ object TextRangeUnit extends js.Object {
   /** A span of alphanumeric characters, an end of paragraph, or punctuation that includes any blanks that follow. */
   @js.native
   sealed trait word extends TextRangeUnit
-  
 }
-

@@ -2,7 +2,7 @@ package typings.nodemailer.relaxedBodyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streams through a message body and calculates relaxed body hash
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends RelaxedBody {
   def this(options: Options) = this()
 }
-

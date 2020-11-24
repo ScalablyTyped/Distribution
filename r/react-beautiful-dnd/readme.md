@@ -10,9 +10,9 @@ Beautiful and accessible drag and drop for lists with React
 | ------------------ | :-------------: |
 | Full name          | react-beautiful-dnd |
 | Keywords           | drag and drop, dnd, sortable, reorder, reorderable, react, react.js, natural, beautiful, accessible |
-| # releases         | 66 |
-| # dependents       | 209 |
-| # downloads        | 11049370 |
+| # releases         | 44 |
+| # dependents       | 346 |
+| # downloads        | 20782314 |
 | # stars            | 9 |
 
 ## Links

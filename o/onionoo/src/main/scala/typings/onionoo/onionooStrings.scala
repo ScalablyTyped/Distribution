@@ -2,9 +2,49 @@ package typings.onionoo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onionooStrings {
+  
+  @scala.inline
+  def bandwidth: bandwidth = "bandwidth".asInstanceOf[bandwidth]
+  
+  @scala.inline
+  def bridge: bridge = "bridge".asInstanceOf[bridge]
+  
+  @scala.inline
+  def clients: clients = "clients".asInstanceOf[clients]
+  
+  @scala.inline
+  def details: details = "details".asInstanceOf[details]
+  
+  @scala.inline
+  def experimental: experimental = "experimental".asInstanceOf[experimental]
+  
+  @scala.inline
+  def `new in series`: `new in series` = ("new in series").asInstanceOf[`new in series`]
+  
+  @scala.inline
+  def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
+  
+  @scala.inline
+  def recommended: recommended = "recommended".asInstanceOf[recommended]
+  
+  @scala.inline
+  def relay: relay = "relay".asInstanceOf[relay]
+  
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
+  
+  @scala.inline
+  def unrecommended: unrecommended = "unrecommended".asInstanceOf[unrecommended]
+  
+  @scala.inline
+  def uptime: uptime = "uptime".asInstanceOf[uptime]
+  
+  @scala.inline
+  def weights: weights = "weights".asInstanceOf[weights]
+  
   @js.native
   sealed trait bandwidth extends js.Object
   
@@ -43,32 +83,4 @@ object onionooStrings {
   
   @js.native
   sealed trait weights extends js.Object
-  
-  @scala.inline
-  def bandwidth: bandwidth = "bandwidth".asInstanceOf[bandwidth]
-  @scala.inline
-  def bridge: bridge = "bridge".asInstanceOf[bridge]
-  @scala.inline
-  def clients: clients = "clients".asInstanceOf[clients]
-  @scala.inline
-  def details: details = "details".asInstanceOf[details]
-  @scala.inline
-  def experimental: experimental = "experimental".asInstanceOf[experimental]
-  @scala.inline
-  def `new in series`: `new in series` = ("new in series").asInstanceOf[`new in series`]
-  @scala.inline
-  def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
-  @scala.inline
-  def recommended: recommended = "recommended".asInstanceOf[recommended]
-  @scala.inline
-  def relay: relay = "relay".asInstanceOf[relay]
-  @scala.inline
-  def summary: summary = "summary".asInstanceOf[summary]
-  @scala.inline
-  def unrecommended: unrecommended = "unrecommended".asInstanceOf[unrecommended]
-  @scala.inline
-  def uptime: uptime = "uptime".asInstanceOf[uptime]
-  @scala.inline
-  def weights: weights = "weights".asInstanceOf[weights]
 }
-

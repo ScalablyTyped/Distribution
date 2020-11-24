@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a control for displaying an image. */
 @js.native
@@ -17,8 +17,8 @@ trait UnoControlImageControl
      with XView
      with XAccessible
      with XLayoutConstrains
-
 object UnoControlImageControl {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -78,4 +78,3 @@ object UnoControlImageControl {
     __obj.asInstanceOf[UnoControlImageControl]
   }
 }
-

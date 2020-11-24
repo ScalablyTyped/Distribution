@@ -7,7 +7,7 @@ import typings.std.NotificationPermission
 import typings.std.NotificationPermissionCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Notification")
 @js.native
@@ -16,7 +16,6 @@ class Notification protected ()
   def this(title: java.lang.String) = this()
   def this(title: java.lang.String, options: NotificationOptions) = this()
 }
-
 @JSGlobal("Notification")
 @js.native
 object Notification
@@ -26,9 +25,11 @@ object Notification
       /* options */ NotificationOptions, 
       typings.std.Notification
     ] {
+  
   val maxActions: Double = js.native
+  
   val permission: NotificationPermission = js.native
+  
   def requestPermission(): js.Promise[NotificationPermission] = js.native
   def requestPermission(deprecatedCallback: NotificationPermissionCallback): js.Promise[NotificationPermission] = js.native
 }
-

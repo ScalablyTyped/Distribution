@@ -12,7 +12,7 @@ Sticky is a jQuery plugin that gives you the ability to make any element on your
 | Keywords           | dom, jquery-plugin, ui |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 356350 |
+| # downloads        | 546568 |
 | # stars            | 4 |
 
 ## Links

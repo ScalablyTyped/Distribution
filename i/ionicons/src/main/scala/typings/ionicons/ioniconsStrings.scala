@@ -3,9 +3,139 @@ package typings.ionicons
 import typings.ionicons.stencilPublicRuntimeMod.ListenTargetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioniconsStrings {
+  
+  @scala.inline
+  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @scala.inline
+  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  
+  @scala.inline
+  def async: async = "async".asInstanceOf[async]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @scala.inline
+  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  
+  @scala.inline
+  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  
+  @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
+  
+  @scala.inline
+  def central: central = "central".asInstanceOf[central]
+  
+  @scala.inline
+  def document: document = "document".asInstanceOf[document]
+  
+  @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  
+  @scala.inline
+  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  
+  @scala.inline
+  def `false`: `false` = "false".asInstanceOf[`false`]
+  
+  @scala.inline
+  def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  
+  @scala.inline
+  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
+  
+  @scala.inline
+  def isolated: isolated = "isolated".asInstanceOf[isolated]
+  
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @scala.inline
+  def `linear-rGB`: `linear-rGB` = "linear-rGB".asInstanceOf[`linear-rGB`]
+  
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  
+  @scala.inline
+  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  
+  @scala.inline
+  def medial: medial = "medial".asInstanceOf[medial]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def miter: miter = "miter".asInstanceOf[miter]
+  
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
+  
+  @scala.inline
+  def parent: parent = "parent".asInstanceOf[parent]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  
+  @scala.inline
+  def `s-rGB`: `s-rGB` = "s-rGB".asInstanceOf[`s-rGB`]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
+  @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
+  
+  @scala.inline
+  def terminal: terminal = "terminal".asInstanceOf[terminal]
+  
+  @scala.inline
+  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  
+  @scala.inline
+  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  
+  @scala.inline
+  def `true`: `true` = "true".asInstanceOf[`true`]
+  
+  @scala.inline
+  def window: window = "window".asInstanceOf[window]
+  
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
+  
   @js.native
   sealed trait `after-edge` extends js.Object
   
@@ -134,92 +264,4 @@ object ioniconsStrings {
   
   @js.native
   sealed trait yes extends js.Object
-  
-  @scala.inline
-  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
-  @scala.inline
-  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
-  @scala.inline
-  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def central: central = "central".asInstanceOf[central]
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
-  @scala.inline
-  def eager: eager = "eager".asInstanceOf[eager]
-  @scala.inline
-  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def hanging: hanging = "hanging".asInstanceOf[hanging]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def isolated: isolated = "isolated".asInstanceOf[isolated]
-  @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
-  @scala.inline
-  def `linear-rGB`: `linear-rGB` = "linear-rGB".asInstanceOf[`linear-rGB`]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
-  @scala.inline
-  def medial: medial = "medial".asInstanceOf[medial]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def `s-rGB`: `s-rGB` = "s-rGB".asInstanceOf[`s-rGB`]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
-  @scala.inline
-  def terminal: terminal = "terminal".asInstanceOf[terminal]
-  @scala.inline
-  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
-  @scala.inline
-  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
 }
-

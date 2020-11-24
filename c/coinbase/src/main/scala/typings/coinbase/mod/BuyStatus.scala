@@ -2,7 +2,7 @@ package typings.coinbase.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.coinbase.coinbaseStrings.created
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.coinbase.coinbaseStrings.canceled
 */
 trait BuyStatus extends js.Object
-
 object BuyStatus {
+  
   @scala.inline
   def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
+  
   @scala.inline
   def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
+  
   @scala.inline
   def created: typings.coinbase.coinbaseStrings.created = "created".asInstanceOf[typings.coinbase.coinbaseStrings.created]
 }
-

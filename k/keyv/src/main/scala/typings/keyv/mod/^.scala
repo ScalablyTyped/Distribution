@@ -2,7 +2,7 @@ package typings.keyv.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("keyv", JSImport.Namespace)
 @js.native
@@ -15,4 +15,3 @@ class ^[TValue] () extends Keyv[TValue] {
   def this(uri: js.UndefOr[scala.Nothing], opts: Options[TValue]) = this()
   def this(uri: String, opts: Options[TValue]) = this()
 }
-

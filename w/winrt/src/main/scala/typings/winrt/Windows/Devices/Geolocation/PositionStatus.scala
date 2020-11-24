@@ -2,14 +2,14 @@ package typings.winrt.Windows.Devices.Geolocation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PositionStatus extends js.Object
-
 @JSGlobal("Windows.Devices.Geolocation.PositionStatus")
 @js.native
 object PositionStatus extends js.Object {
+  
   @js.native
   sealed trait disabled extends PositionStatus
   
@@ -27,6 +27,4 @@ object PositionStatus extends js.Object {
   
   @js.native
   sealed trait ready extends PositionStatus
-  
 }
-

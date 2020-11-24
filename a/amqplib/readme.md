@@ -10,10 +10,10 @@ An AMQP 0-9-1 (e.g., RabbitMQ) library and client.
 | ------------------ | :-------------: |
 | Full name          | amqplib |
 | Keywords           | AMQP, AMQP 0-9-1, RabbitMQ |
-| # releases         | 4 |
-| # dependents       | 1236 |
-| # downloads        | 41064209 |
-| # stars            | 63 |
+| # releases         | 6 |
+| # dependents       | 1483 |
+| # downloads        | 36803473 |
+| # stars            | 62 |
 
 ## Links
 - [Homepage](http://squaremo.github.io/amqp.node/)

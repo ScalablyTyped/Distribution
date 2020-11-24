@@ -2,7 +2,7 @@ package typings.guacamoleClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "HTTPTunnel")
 @js.native
@@ -21,4 +21,3 @@ class HTTPTunnel protected ()
   def this(tunnelURL: String, crossDomain: js.UndefOr[scala.Nothing], extraTunnelHeaders: Boolean) = this()
   def this(tunnelURL: String, crossDomain: Boolean, extraTunnelHeaders: Boolean) = this()
 }
-

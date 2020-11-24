@@ -4,13 +4,15 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/websetting", JSImport.Namespace)
 @js.native
 object websettingMod extends js.Object {
+  
   @js.native
   trait WebSettingManager extends js.Object {
+    
     /**
       * Sets the custom user agent string for your Web application.
       * The Web view in your Web application can store cookies like a browser.
@@ -26,6 +28,7 @@ object websettingMod extends js.Object {
     def removeAllCookies(successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
     def removeAllCookies(successCallback: SuccessCallback): Unit = js.native
     def removeAllCookies(successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+    
     /**
       * Sets the custom user agent string for your Web application.
       * This method allows the user to set the user agent string of the Web view in the Web application.
@@ -43,6 +46,4 @@ object websettingMod extends js.Object {
     def setUserAgentString(userAgent: String, successCallback: SuccessCallback): Unit = js.native
     def setUserAgentString(userAgent: String, successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
   }
-  
 }
-

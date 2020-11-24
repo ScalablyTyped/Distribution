@@ -2,7 +2,7 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define a keyboard navigation handler for use with a
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait KeyboardNavigationHandler extends js.Object
-

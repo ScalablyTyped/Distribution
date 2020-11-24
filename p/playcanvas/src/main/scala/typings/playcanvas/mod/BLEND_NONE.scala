@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Disable blending.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BLEND_NONE")
 @js.native
 object BLEND_NONE extends TopLevel[Double]
-

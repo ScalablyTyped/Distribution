@@ -9,11 +9,12 @@ import typings.botvs.botvsStrings.sha256
 import typings.botvs.botvsStrings.sha512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Hash")
 @js.native
 object Hash extends js.Object {
+  
   def apply(Algo: md5, OutputAlgo: base64, Data: String): String = js.native
   /**
     * 支持 md5/sha256/sha512/sha1 的哈希计算, 只支持实盘
@@ -39,4 +40,3 @@ object Hash extends js.Object {
   def apply(Algo: sha512, OutputAlgo: hex, Data: String): String = js.native
   def apply(Algo: sha512, OutputAlgo: raw, Data: String): String = js.native
 }
-

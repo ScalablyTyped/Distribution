@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a {@link TextField} which is not specified by itself, but dependent on a {@link TextFieldMaster} .
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 trait DependentTextField
   extends TextField_
      with XDependentTextField
-
 object DependentTextField {
+  
   @scala.inline
   def apply(
     Anchor: XTextRange,
@@ -54,4 +54,3 @@ object DependentTextField {
     __obj.asInstanceOf[DependentTextField]
   }
 }
-

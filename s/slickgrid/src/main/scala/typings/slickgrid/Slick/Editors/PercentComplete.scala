@@ -4,14 +4,14 @@ import typings.slickgrid.Slick.SlickData
 import typings.slickgrid.Slick.ValidateResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PercentComplete[T /* <: SlickData */] extends Editor[T]
-
 object PercentComplete {
+  
   @scala.inline
-  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
+  def apply[T /* <: SlickData */](
     applyValue: (T, String) => Unit,
     destroy: () => Unit,
     focus: () => Unit,
@@ -25,4 +25,3 @@ object PercentComplete {
     __obj.asInstanceOf[PercentComplete[T]]
   }
 }
-

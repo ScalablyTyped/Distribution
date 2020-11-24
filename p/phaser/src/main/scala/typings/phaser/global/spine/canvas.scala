@@ -4,11 +4,12 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.canvas")
 @js.native
 object canvas extends js.Object {
+  
   @js.native
   class AssetManager ()
     extends typings.phaser.spine.AssetManager {
@@ -26,13 +27,12 @@ object canvas extends js.Object {
     extends typings.phaser.spine.canvas.SkeletonRenderer {
     def this(context: CanvasRenderingContext2D) = this()
   }
-  
   /* static members */
   @js.native
   object SkeletonRenderer extends js.Object {
+    
     var QUAD_TRIANGLES: js.Array[Double] = js.native
+    
     var VERTEX_SIZE: Double = js.native
   }
-  
 }
-

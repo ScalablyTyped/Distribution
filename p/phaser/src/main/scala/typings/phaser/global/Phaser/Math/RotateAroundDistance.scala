@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.RotateAroundDistance")
 @js.native
 object RotateAroundDistance extends js.Object {
+  
   /**
     * Rotate a `point` around `x` and `y` by the given `angle` and `distance`.
     * 
@@ -20,4 +21,3 @@ object RotateAroundDistance extends js.Object {
     */
   def apply[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double, distance: Double): T = js.native
 }
-

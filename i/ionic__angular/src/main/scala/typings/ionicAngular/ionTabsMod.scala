@@ -8,24 +8,31 @@ import typings.ionicAngular.proxiesMod.IonTabBar
 import typings.ionicAngular.stackUtilsMod.StackEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/directives/navigation/ion-tabs", JSImport.Namespace)
 @js.native
 object ionTabsMod extends js.Object {
+  
   @js.native
   class IonTabs protected () extends js.Object {
     def this(navCtrl: NavController) = this()
-    var ionTabsDidChange: EventEmitter[Tab] = js.native
-    var ionTabsWillChange: EventEmitter[Tab] = js.native
-    var navCtrl: js.Any = js.native
-    var outlet: IonRouterOutlet = js.native
-    var tabBar: js.UndefOr[IonTabBar] = js.native
+    
     def getSelected(): js.UndefOr[String] = js.native
+    
+    var ionTabsDidChange: EventEmitter[Tab] = js.native
+    
+    var ionTabsWillChange: EventEmitter[Tab] = js.native
+    
+    var navCtrl: js.Any = js.native
+    
     /**
       * @internal
       */
     def onPageSelected(detail: StackEvent): Unit = js.native
+    
+    var outlet: IonRouterOutlet = js.native
+    
     /**
       * When a tab button is clicked, there are several scenarios:
       * 1. If the selected tab is currently active (the tab button has been clicked
@@ -47,7 +54,7 @@ object ionTabsMod extends js.Object {
       *      to the default tabRootUrl
       */
     def select(tab: String): js.Promise[Boolean] = js.native
+    
+    var tabBar: js.UndefOr[IonTabBar] = js.native
   }
-  
 }
-

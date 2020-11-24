@@ -1,7 +1,7 @@
 
 # Scala.js typings for clone
 
-Typings are for version 0.1.11
+Typings are for version 2.1
 
 ## Library description:
 deep cloning of objects and arrays
@@ -10,9 +10,9 @@ deep cloning of objects and arrays
 | ------------------ | :-------------: |
 | Full name          | clone |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1788 |
-| # downloads        | 457364701 |
+| # releases         | 0 |
+| # dependents       | 1939 |
+| # downloads        | 568380876 |
 | # stars            | 71 |
 
 ## Links

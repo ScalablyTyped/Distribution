@@ -3,7 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows users to select time values.
@@ -23,19 +23,19 @@ class TimePicker ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.TimePicker")
 @js.native
 object TimePicker extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+  
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
   def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = js.native
   def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = js.native
+  
+  /**
+    * Indicates that the object is compatibile with declarative processing.
+    **/
+  var supportedForProcessing: Boolean = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta2", "storage_v1beta2.Resource$Objectaccesscontrols")
 @js.native
 class ResourceObjectaccesscontrols protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.objectAccessControls.delete
     * @desc Permanently deletes the ACL entry for the specified entity on the
@@ -45,6 +47,7 @@ class ResourceObjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * storage.objectAccessControls.get
     * @desc Returns the ACL entry for the specified entity on the specified
@@ -80,6 +83,7 @@ class ResourceObjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.objectAccessControls.insert
     * @desc Creates a new ACL entry on the specified object.
@@ -114,6 +118,7 @@ class ResourceObjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.objectAccessControls.list
     * @desc Retrieves ACL entries on the specified object.
@@ -147,6 +152,7 @@ class ResourceObjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControls]
   ): Unit = js.native
+  
   /**
     * storage.objectAccessControls.patch
     * @desc Updates an ACL entry on the specified object. This method supports
@@ -183,6 +189,7 @@ class ResourceObjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.objectAccessControls.update
     * @desc Updates an ACL entry on the specified object.
@@ -219,4 +226,3 @@ class ResourceObjectaccesscontrols protected () extends js.Object {
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
 }
-

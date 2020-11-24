@@ -5,12 +5,12 @@ import typings.sharepoint.anon.BDelayInit
 import typings.sharepoint.anon.DataValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MultiValuePropType extends IMultiValuePropertyType
-
 object MultiValuePropType {
+  
   @scala.inline
   def apply(
     BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
@@ -27,4 +27,3 @@ object MultiValuePropType {
     __obj.asInstanceOf[MultiValuePropType]
   }
 }
-

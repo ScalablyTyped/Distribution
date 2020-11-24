@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gtoken" : "5.0.3"
+      "gtoken" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gtoken" : "5.0.3"
+      "gtoken" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

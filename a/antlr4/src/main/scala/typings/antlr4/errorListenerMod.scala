@@ -4,16 +4,18 @@ import typings.antlr4.recognizerMod.Recognizer
 import typings.antlr4.tokenMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antlr4/error/ErrorListener", JSImport.Namespace)
 @js.native
 object errorListenerMod extends js.Object {
+  
   @js.native
   class ConsoleErrorListener () extends ErrorListener
   
   @js.native
   class ErrorListener () extends js.Object {
+    
     def reportAmbiguity(
       recognizer: Recognizer,
       dfa: js.Any,
@@ -23,6 +25,7 @@ object errorListenerMod extends js.Object {
       ambigAlts: js.Any,
       configs: js.Any
     ): Unit = js.native
+    
     def reportAttemptingFullContext(
       recognizer: Recognizer,
       dfa: js.Any,
@@ -31,6 +34,7 @@ object errorListenerMod extends js.Object {
       conflictingAlts: js.Any,
       configs: js.Any
     ): Unit = js.native
+    
     def reportContextSensitivity(
       recognizer: Recognizer,
       dfa: js.Any,
@@ -39,6 +43,7 @@ object errorListenerMod extends js.Object {
       conflictingAlts: js.Any,
       configs: js.Any
     ): Unit = js.native
+    
     def syntaxError(
       recognizer: Recognizer,
       offendingSymbol: Token,
@@ -51,6 +56,4 @@ object errorListenerMod extends js.Object {
   
   @js.native
   class ProxyErrorListener () extends ErrorListener
-  
 }
-

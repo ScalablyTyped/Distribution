@@ -11,8 +11,8 @@ The lodash method `_.reject` exported as a module.
 | Full name          | lodash.reject |
 | Keywords           | lodash-modularized, reject |
 | # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 33772866 |
+| # dependents       | 30 |
+| # downloads        | 41738148 |
 | # stars            | 0 |
 
 ## Links

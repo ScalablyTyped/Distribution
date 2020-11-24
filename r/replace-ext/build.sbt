@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "replace-ext"
-version := "0.0.1-dt-20200515Z-7591e2"
+version := "2.0-dt-20200930Z-825dce"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

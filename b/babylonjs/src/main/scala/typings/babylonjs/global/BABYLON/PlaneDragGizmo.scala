@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PlaneDragGizmo")
 @js.native
@@ -19,8 +19,31 @@ class PlaneDragGizmo protected ()
   def this(dragPlaneNormal: typings.babylonjs.BABYLON.Vector3, color: typings.babylonjs.BABYLON.Color3) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.BABYLON.Vector3,
+    color: js.UndefOr[scala.Nothing],
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.BABYLON.Vector3,
     color: typings.babylonjs.BABYLON.Color3,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.BABYLON.Vector3,
+    color: js.UndefOr[scala.Nothing],
+    gizmoLayer: js.UndefOr[scala.Nothing],
+    parent: Nullable[typings.babylonjs.BABYLON.PositionGizmo]
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.BABYLON.Vector3,
+    color: js.UndefOr[scala.Nothing],
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.BABYLON.PositionGizmo]
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.BABYLON.Vector3,
+    color: typings.babylonjs.BABYLON.Color3,
+    gizmoLayer: js.UndefOr[scala.Nothing],
+    parent: Nullable[typings.babylonjs.BABYLON.PositionGizmo]
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.BABYLON.Vector3,
@@ -28,20 +51,12 @@ class PlaneDragGizmo protected ()
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     parent: Nullable[typings.babylonjs.BABYLON.PositionGizmo]
   ) = this()
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.PlaneDragGizmo")
 @js.native
 object PlaneDragGizmo extends js.Object {
-  /** @hidden */
-  def _CreateArrowInstance(scene: typings.babylonjs.BABYLON.Scene, arrow: typings.babylonjs.BABYLON.TransformNode): typings.babylonjs.BABYLON.TransformNode = js.native
+  
   /** @hidden */
   def _CreatePlane(scene: typings.babylonjs.BABYLON.Scene, material: typings.babylonjs.BABYLON.StandardMaterial): typings.babylonjs.BABYLON.TransformNode = js.native
 }
-

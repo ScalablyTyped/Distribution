@@ -6,7 +6,7 @@ import typings.heremaps.H.mapevents.Pointer.Button
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Class representing pointer on the map surface. A pointer in platform specific definition would mean either mouse, touch, pen or any pointing device which can trigger browser events.
@@ -20,26 +20,33 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Pointer extends js.Object {
+  
   var button: Button = js.native
+  
   var dragTarget: Object | Map_ = js.native
+  
   var id: Double = js.native
+  
   var target: Object | Map_ = js.native
+  
   var `type`: String = js.native
+  
   var viewportX: Double = js.native
+  
   var viewportY: Double = js.native
 }
-
 @JSGlobal("H.mapevents.Pointer")
 @js.native
 object Pointer extends js.Object {
+  
   @js.native
   sealed trait Button extends js.Object
-  
   /**
     * Types of a button
     */
   @js.native
   object Button extends js.Object {
+    
     /** Left mouse button or touch contact or pen contact */
     @js.native
     sealed trait LEFT extends Button
@@ -55,7 +62,6 @@ object Pointer extends js.Object {
     /** Right mouse button or Pen barrel button */
     @js.native
     sealed trait RIGHT extends Button
-    
   }
   
   /**
@@ -69,4 +75,3 @@ object Pointer extends js.Object {
   // TODO not sure this is the right interpretation of the docs
   type Buttons = BitMask
 }
-

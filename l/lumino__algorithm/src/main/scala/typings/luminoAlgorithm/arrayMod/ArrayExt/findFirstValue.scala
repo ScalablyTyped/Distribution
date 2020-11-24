@@ -3,11 +3,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.findFirstValue")
 @js.native
 object findFirstValue extends js.Object {
+  
   /**
     * Find the first value which matches a predicate.
     *
@@ -67,4 +68,3 @@ object findFirstValue extends js.Object {
     stop: Double
   ): js.UndefOr[T] = js.native
 }
-

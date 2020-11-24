@@ -3,13 +3,14 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An {@link AudioTrack} {@link MenuItem}
   */
 @js.native
 trait AudioTrackMenuItem extends MenuItem {
+  
   /**
     * Handle any {@link AudioTrack} change.
     *
@@ -20,4 +21,3 @@ trait AudioTrackMenuItem extends MenuItem {
     */
   def handleTracksChange(event: Event): Unit = js.native
 }
-

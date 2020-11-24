@@ -4,11 +4,12 @@ import typings.fsExtra.mod.ReadOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-extra-promise", "readJSON")
 @js.native
 object readJSON_ extends js.Object {
+  
   def apply(file: String): js.Promise[_] = js.native
   def apply(file: String, callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]): Unit = js.native
   def apply(file: String, options: ReadOptions): js.Promise[_] = js.native
@@ -18,4 +19,3 @@ object readJSON_ extends js.Object {
     callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.microsoftGraph.mod
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.none_
@@ -12,15 +12,17 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
 trait RejectReason extends js.Object
-
 object RejectReason {
+  
   @scala.inline
   def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
+  
   @scala.inline
   def forbidden: typings.microsoftGraph.microsoftGraphStrings.forbidden = "forbidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forbidden]
+  
   @scala.inline
   def none: none_ = "none".asInstanceOf[none_]
+  
   @scala.inline
   def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
-

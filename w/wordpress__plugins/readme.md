@@ -9,10 +9,10 @@ Plugins module for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/plugins |
-| Keywords           | wordpress, plugins |
-| # releases         | 37 |
-| # dependents       | 7 |
-| # downloads        | 155766 |
+| Keywords           | wordpress, gutenberg, plugins |
+| # releases         | 35 |
+| # dependents       | 8 |
+| # downloads        | 396849 |
 | # stars            | 0 |
 
 ## Links

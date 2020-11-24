@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.Icon.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Icon")
 @js.native
@@ -15,4 +15,3 @@ class Icon ()
   extends typings.amapJsApi.AMap.Icon {
   def this(options: Options) = this()
 }
-

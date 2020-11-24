@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dragscroll"
-version := "0.0-dt-20190307Z-4424e0"
+version := "0.0-dt-20190307Z-e074ba"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

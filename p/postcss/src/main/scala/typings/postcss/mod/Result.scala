@@ -2,21 +2,24 @@ package typings.postcss.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the result of the PostCSS transformations.
   */
 @js.native
 trait Result extends js.Object {
+  
   /**
     * Alias for css property to use with syntaxes that generate non-CSS output.
     */
   var content: String = js.native
+  
   /**
     * A CSS string representing this Result's Root instance.
     */
   var css: String = js.native
+  
   /**
     * An instance of the SourceMapGenerator class from the source-map library,
     * representing changes to the Result's Root instance.
@@ -28,25 +31,30 @@ trait Result extends js.Object {
     * an external input source map.
     */
   var map: ResultMap = js.native
+  
   /**
     * Contains messages from plugins (e.g., warnings or custom messages).
     * Add a warning using Result#warn() and get all warnings
     * using the Result#warnings() method.
     */
   var messages: js.Array[ResultMessage] = js.native
+  
   /**
     * Options from the Processor#process(css, opts) or Root#toResult(opts) call
     * that produced this Result instance.
     */
   var opts: js.UndefOr[ResultOptions] = js.native
+  
   /**
     * The Processor instance used for this transformation.
     */
   var processor: js.UndefOr[Processor] = js.native
+  
   /**
     * Contains the Root node after all transformations.
     */
   var root: js.UndefOr[Root_] = js.native
+  
   /**
     * Creates an instance of Warning and adds it to messages.
     * @param message Used in the text property of the message object.
@@ -54,9 +62,9 @@ trait Result extends js.Object {
     */
   def warn(message: String): Unit = js.native
   def warn(message: String, options: WarningOptions): Unit = js.native
+  
   /**
     * @returns Warnings from plugins, filtered from messages.
     */
   def warnings(): js.Array[Warning] = js.native
 }
-

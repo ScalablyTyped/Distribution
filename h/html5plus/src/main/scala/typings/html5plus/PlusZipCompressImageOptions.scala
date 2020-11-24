@@ -11,7 +11,7 @@ import typings.html5plus.html5plusStrings.jpg
 import typings.html5plus.html5plusStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，配置图片压缩转换的参数
@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusZipCompressImageOptions extends js.Object {
+  
   /**
     * 裁剪图片的区域
     * 值参考ClipImageOptions定义，若设置clip属性值不合法，则不对图片进行裁剪操作。
@@ -31,6 +32,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var clip: js.UndefOr[PlusZipClipImageOptions] = js.native
+  
   /**
     * 压缩转换目标图片的路径
     * 支持以下图片路径：
@@ -45,6 +47,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var dst: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.native
+  
   /**
     * 压缩转换后的图片格式
     * 支持"jpg"、"png",如果未指定则使用源图片的格式。
@@ -54,6 +57,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var format: js.UndefOr[jpg | png] = js.native
+  
   /**
     * 缩放图片的高度
     * 支持像素值（如"100px"）、百分比（如"50%"）、自动计算（如"auto"，即根据width与源图宽的缩放比例计算，若未设置width则使用源图高度）；
@@ -63,6 +67,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var height: js.UndefOr[String] = js.native
+  
   /**
     * 覆盖生成新文件
     * 仅在dst制定的路径文件存在时有效：
@@ -73,6 +78,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var overwrite: js.UndefOr[Boolean] = js.native
+  
   /**
     * 压缩图片的质量
     * 取值范围为1-100，1表示使用最低的图片质量（转换后的图片文件最小）、100表示使用最高的图片质量（转换后的图片文件最大）；
@@ -81,6 +87,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var quality: js.UndefOr[Double] = js.native
+  
   /**
     * 旋转图片的角度
     * 支持值：90-表示旋转90度；180-表示旋转180度；270-表示旋转270度。
@@ -92,6 +99,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var rotate: js.UndefOr[`90` | `180` | `270`] = js.native
+  
   /**
     * 压缩转换原始图片的路径
     * 支持以下图片路径：
@@ -107,6 +115,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var src: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.native
+  
   /**
     * 缩放图片的宽度
     * 支持像素值（如"100px"）、百分比（如"50%"）、自动计算（如"auto"，即根据height与源图高的缩放比例计算，若未设置height则使用源图高度）；
@@ -117,61 +126,81 @@ trait PlusZipCompressImageOptions extends js.Object {
     */
   var width: js.UndefOr[String] = js.native
 }
-
 object PlusZipCompressImageOptions {
+  
   @scala.inline
   def apply(): PlusZipCompressImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusZipCompressImageOptions]
   }
+  
   @scala.inline
   implicit class PlusZipCompressImageOptionsOps[Self <: PlusZipCompressImageOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClip(value: PlusZipClipImageOptions): Self = this.set("clip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClip: Self = this.set("clip", js.undefined)
+    
     @scala.inline
     def setDst(value: _docSlash | _documentsSlash | _downloadsSlash): Self = this.set("dst", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDst: Self = this.set("dst", js.undefined)
+    
     @scala.inline
     def setFormat(value: jpg | png): Self = this.set("format", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFormat: Self = this.set("format", js.undefined)
+    
     @scala.inline
     def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    
     @scala.inline
     def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuality: Self = this.set("quality", js.undefined)
+    
     @scala.inline
     def setRotate(value: `90` | `180` | `270`): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRotate: Self = this.set("rotate", js.undefined)
+    
     @scala.inline
     def setSrc(value: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash): Self = this.set("src", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSrc: Self = this.set("src", js.undefined)
+    
     @scala.inline
     def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }
-  
 }
-

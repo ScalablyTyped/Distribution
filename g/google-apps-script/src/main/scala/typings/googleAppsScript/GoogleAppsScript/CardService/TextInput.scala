@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A input field widget that accepts text input.
@@ -14,17 +14,25 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextInput extends js.Object {
+  
   def setFieldName(fieldName: String): TextInput = js.native
+  
   def setHint(hint: String): TextInput = js.native
+  
   def setMultiline(multiline: Boolean): TextInput = js.native
+  
   def setOnChangeAction(action: Action): TextInput = js.native
+  
   def setSuggestions(suggestions: Suggestions): TextInput = js.native
+  
   def setSuggestionsAction(suggestionsAction: Action): TextInput = js.native
+  
   def setTitle(title: String): TextInput = js.native
+  
   def setValue(value: String): TextInput = js.native
 }
-
 object TextInput {
+  
   @scala.inline
   def apply(
     setFieldName: String => TextInput,
@@ -39,34 +47,44 @@ object TextInput {
     val __obj = js.Dynamic.literal(setFieldName = js.Any.fromFunction1(setFieldName), setHint = js.Any.fromFunction1(setHint), setMultiline = js.Any.fromFunction1(setMultiline), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setSuggestions = js.Any.fromFunction1(setSuggestions), setSuggestionsAction = js.Any.fromFunction1(setSuggestionsAction), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[TextInput]
   }
+  
   @scala.inline
   implicit class TextInputOps[Self <: TextInput] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSetFieldName(value: String => TextInput): Self = this.set("setFieldName", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetHint(value: String => TextInput): Self = this.set("setHint", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetMultiline(value: Boolean => TextInput): Self = this.set("setMultiline", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetOnChangeAction(value: Action => TextInput): Self = this.set("setOnChangeAction", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetSuggestions(value: Suggestions => TextInput): Self = this.set("setSuggestions", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetSuggestionsAction(value: Action => TextInput): Self = this.set("setSuggestionsAction", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetTitle(value: String => TextInput): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetValue(value: String => TextInput): Self = this.set("setValue", js.Any.fromFunction1(value))
   }
-  
 }
-

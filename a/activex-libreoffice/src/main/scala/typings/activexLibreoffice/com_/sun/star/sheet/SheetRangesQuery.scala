@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides interfaces to find cells with specific properties. */
 @js.native
 trait SheetRangesQuery
   extends XCellRangesQuery
      with XFormulaQuery
-
 object SheetRangesQuery {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -33,4 +33,3 @@ object SheetRangesQuery {
     __obj.asInstanceOf[SheetRangesQuery]
   }
 }
-

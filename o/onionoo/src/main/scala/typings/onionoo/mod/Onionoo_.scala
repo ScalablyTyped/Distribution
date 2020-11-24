@@ -9,7 +9,7 @@ import typings.onionoo.mod.Onionoo.Options
 import typings.onionoo.mod.Onionoo.OptionsWithEndpoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Onionoo_
@@ -18,4 +18,3 @@ trait Onionoo_
       (/* options */ Options) | (/* options */ OptionsWithEndpoints), 
       (Instance with Endpoints) | InstancePartialEndpoints
     ]
-

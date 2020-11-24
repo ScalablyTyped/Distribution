@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "commander" : "6.0.0"
+      "commander" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "commander" : "6.0.0"
+      "commander" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

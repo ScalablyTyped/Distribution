@@ -12,7 +12,7 @@ Simple environment-based application settings
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 494799 |
+| # downloads        | 181463 |
 | # stars            | 1 |
 
 ## Links

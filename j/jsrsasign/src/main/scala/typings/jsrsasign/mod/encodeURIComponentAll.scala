@@ -2,11 +2,12 @@ package typings.jsrsasign.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "encodeURIComponentAll")
 @js.native
 object encodeURIComponentAll extends js.Object {
+  
   /**
     * convert UTFa hexadecimal string to a URLComponent string such like "%67%68".
     * Note that these "<code>0-9A-Za-z!'()*-._~</code>" characters will not
@@ -18,4 +19,3 @@ object encodeURIComponentAll extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

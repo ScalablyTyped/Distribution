@@ -2,10 +2,11 @@ package typings.d3Geo.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoConicProjection extends GeoProjection_ {
+  
   /**
     * Return the standard parallels for the conic projection in degrees.
     */
@@ -17,4 +18,3 @@ trait GeoConicProjection extends GeoProjection_ {
     */
   def parallels(value: js.Tuple2[Double, Double]): this.type = js.native
 }
-

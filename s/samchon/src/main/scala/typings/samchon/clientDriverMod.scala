@@ -4,11 +4,12 @@ import typings.samchon.communicatorMod.Communicator
 import typings.samchon.iprotocolMod.IProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/client_driver/ClientDriver", JSImport.Namespace)
 @js.native
 object clientDriverMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -18,6 +19,7 @@ object clientDriverMod extends js.Object {
       * Construct from a socket.
       */
     def this(socket: js.Any) = this()
+    
     /**
       * @inheritdoc
       */
@@ -33,6 +35,4 @@ object clientDriverMod extends js.Object {
       */
     def listen(listener: IProtocol): Unit = js.native
   }
-  
 }
-

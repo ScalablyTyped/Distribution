@@ -2,7 +2,7 @@ package typings.lokijs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resultset class allowing chainable queries.  Intended to be instanced internally.
@@ -25,4 +25,3 @@ class Resultset[E /* <: js.Object */] protected ()
   def this(collection: typings.lokijs.Collection[E]) = this()
   def this(collection: typings.lokijs.Collection[E], options: js.Any) = this()
 }
-

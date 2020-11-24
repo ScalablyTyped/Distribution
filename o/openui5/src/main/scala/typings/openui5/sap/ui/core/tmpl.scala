@@ -4,23 +4,27 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.mvc.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.tmpl")
 @js.native
 object tmpl extends js.Object {
+  
   @js.native
   trait DOMAttribute extends Element {
+    
     /**
       * Gets current value of property <code>name</code>.Name of the DOM attribute
       * @returns Value of property <code>name</code>
       */
     def getName(): String = js.native
+    
     /**
       * Gets current value of property <code>value</code>.Value of the DOM attribute
       * @returns Value of property <code>value</code>
       */
     def getValue(): String = js.native
+    
     /**
       * Sets a new value for property <code>name</code>.Name of the DOM attributeWhen called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -28,6 +32,7 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setName(sName: String): DOMAttribute = js.native
+    
     /**
       * Sets a new value for property <code>value</code>.Value of the DOM attributeWhen called with a value
       * of <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -39,18 +44,21 @@ object tmpl extends js.Object {
   
   @js.native
   trait DOMElement extends Control {
+    
     /**
       * Adds some attribute to the aggregation <code>attributes</code>.
       * @param oAttribute the attribute to add; if empty, nothing is inserted
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def addAttribute(oAttribute: DOMAttribute): DOMElement = js.native
+    
     /**
       * Adds some element to the aggregation <code>elements</code>.
       * @param oElement the element to add; if empty, nothing is inserted
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def addElement(oElement: DOMElement): DOMElement = js.native
+    
     /**
       * Returns the value of a DOM attribute if available or undefined if the DOM attribute is not available
       * when using this method with the parameter name only.When using the method with the parameter name
@@ -63,37 +71,44 @@ object tmpl extends js.Object {
       * @returns value of attribute or <code>this</code> when called as a setter
       */
     def attr(sName: String, sValue: String): js.Any = js.native
+    
     /**
       * Destroys all the attributes in the aggregation <code>attributes</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyAttributes(): DOMElement = js.native
+    
     /**
       * Destroys all the elements in the aggregation <code>elements</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyElements(): DOMElement = js.native
+    
     /**
       * Gets content of aggregation <code>attributes</code>.DOM attributes which are rendered as part of the
       * DOM element and bindable
       */
     def getAttributes(): js.Array[DOMAttribute] = js.native
+    
     /**
       * Gets content of aggregation <code>elements</code>.Nested DOM elements to support nested bindable
       * structures
       */
     def getElements(): js.Array[DOMElement] = js.native
+    
     /**
       * Gets current value of property <code>tag</code>.The HTML-tag of the DOM element which contains the
       * textDefault value is <code>span</code>.
       * @returns Value of property <code>tag</code>
       */
     def getTag(): String = js.native
+    
     /**
       * Gets current value of property <code>text</code>.The text content of the DOM element
       * @returns Value of property <code>text</code>
       */
     def getText(): String = js.native
+    
     /**
       * Checks for the provided <code>sap.ui.core.tmpl.DOMAttribute</code> in the aggregation
       * <code>attributes</code>.and returns its index if found or -1 otherwise.
@@ -101,6 +116,7 @@ object tmpl extends js.Object {
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
     def indexOfAttribute(oAttribute: DOMAttribute): Double = js.native
+    
     /**
       * Checks for the provided <code>sap.ui.core.tmpl.DOMElement</code> in the aggregation
       * <code>elements</code>.and returns its index if found or -1 otherwise.
@@ -108,6 +124,7 @@ object tmpl extends js.Object {
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
     def indexOfElement(oElement: DOMElement): Double = js.native
+    
     /**
       * Inserts a attribute into the aggregation <code>attributes</code>.
       * @param oAttribute the attribute to insert; if empty, nothing is inserted
@@ -118,6 +135,7 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def insertAttribute(oAttribute: DOMAttribute, iIndex: Double): DOMElement = js.native
+    
     /**
       * Inserts a element into the aggregation <code>elements</code>.
       * @param oElement the element to insert; if empty, nothing is inserted
@@ -128,24 +146,28 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def insertElement(oElement: DOMElement, iIndex: Double): DOMElement = js.native
+    
     /**
       * Removes all the controls from the aggregation <code>attributes</code>.Additionally, it unregisters
       * them from the hosting UIArea.
       * @returns An array of the removed elements (might be empty)
       */
     def removeAllAttributes(): js.Array[DOMAttribute] = js.native
+    
     /**
       * Removes all the controls from the aggregation <code>elements</code>.Additionally, it unregisters
       * them from the hosting UIArea.
       * @returns An array of the removed elements (might be empty)
       */
     def removeAllElements(): js.Array[DOMElement] = js.native
+    
     /**
       * Removes the DOM attribute for the given name and returns the reference to this DOM element to
       * support method chaining.
       * @param sName The name of the DOM attribute.
       */
     def removeAttr(sName: String): DOMElement = js.native
+    
     def removeAttribute(vAttribute: String): DOMAttribute = js.native
     /**
       * Removes a attribute from the aggregation <code>attributes</code>.
@@ -154,6 +176,7 @@ object tmpl extends js.Object {
       */
     def removeAttribute(vAttribute: Double): DOMAttribute = js.native
     def removeAttribute(vAttribute: DOMAttribute): DOMAttribute = js.native
+    
     def removeElement(vElement: String): DOMElement = js.native
     /**
       * Removes a element from the aggregation <code>elements</code>.
@@ -162,6 +185,7 @@ object tmpl extends js.Object {
       */
     def removeElement(vElement: Double): DOMElement = js.native
     def removeElement(vElement: DOMElement): DOMElement = js.native
+    
     /**
       * Sets a new value for property <code>tag</code>.The HTML-tag of the DOM element which contains the
       * textWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -170,6 +194,7 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setTag(sTag: String): DOMElement = js.native
+    
     /**
       * Sets a new value for property <code>text</code>.The text content of the DOM elementWhen called with
       * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -185,12 +210,14 @@ object tmpl extends js.Object {
   
   @js.native
   trait Template extends ManagedObject {
+    
     /**
       * Returns the registered template for the given id, if any.
       * @param sId undefined
       * @returns the template for the given id
       */
     def byId(sId: String): js.Any = js.native
+    
     /**
       * Creates an anonymous TemplateControl for the Template.
       * @param sId the control ID
@@ -199,6 +226,7 @@ object tmpl extends js.Object {
       * @returns the created control instance
       */
     def createControl(sId: String, oContext: js.Any, oView: View): TemplateControl = js.native
+    
     /**
       * Declares a new control based on this template and returns the createdclass / constructor function.
       * The class is based on the information comingfrom the abstract functions <code>createMetadata</code>
@@ -207,17 +235,20 @@ object tmpl extends js.Object {
       * @returns the created class / constructor function
       */
     def declareControl(sControl: String): js.Any = js.native
+    
     /**
       * Gets current value of property <code>content</code>.The Template definition as a String.
       * @returns Value of property <code>content</code>
       */
     def getContent(): String = js.native
+    
     /**
       * parses the given path and extracts the model and path
       * @param sPath the path
       * @returns the model and the path
       */
     def parsePath(sPath: String): js.Any = js.native
+    
     /**
       * Creates an anonymous TemplateControl for the Template and places the controlinto the specified DOM
       * element.
@@ -232,6 +263,7 @@ object tmpl extends js.Object {
     def placeAt(oRef: String, oContext: js.Any, vPosition: Double, bInline: Boolean): TemplateControl = js.native
     def placeAt(oRef: js.Any, oContext: js.Any, vPosition: String, bInline: Boolean): TemplateControl = js.native
     def placeAt(oRef: js.Any, oContext: js.Any, vPosition: Double, bInline: Boolean): TemplateControl = js.native
+    
     /**
       * Sets a new value for property <code>content</code>.The Template definition as a String.When called
       * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -244,6 +276,7 @@ object tmpl extends js.Object {
   
   @js.native
   trait TemplateControl extends Control {
+    
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>afterRendering</code> event of this
       * <code>sap.ui.core.tmpl.TemplateControl</code>.When called, the context of the event handler (its
@@ -259,6 +292,7 @@ object tmpl extends js.Object {
       */
     def attachAfterRendering(oData: js.Any, fnFunction: js.Any): TemplateControl = js.native
     def attachAfterRendering(oData: js.Any, fnFunction: js.Any, oListener: js.Any): TemplateControl = js.native
+    
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>beforeRendering</code> event of this
       * <code>sap.ui.core.tmpl.TemplateControl</code>.When called, the context of the event handler (its
@@ -274,6 +308,7 @@ object tmpl extends js.Object {
       */
     def attachBeforeRendering(oData: js.Any, fnFunction: js.Any): TemplateControl = js.native
     def attachBeforeRendering(oData: js.Any, fnFunction: js.Any, oListener: js.Any): TemplateControl = js.native
+    
     /**
       * Creates a pseudo binding for a aggregation to get notified once the propertychanges to invalidate
       * the control and trigger a re-rendering.
@@ -281,6 +316,7 @@ object tmpl extends js.Object {
       * @returns the value of the path
       */
     def bindList(sPath: String): js.Any = js.native
+    
     /**
       * Creates a pseudo binding for a property to get notified once the propertychanges to invalidate the
       * control and trigger a re-rendering.
@@ -288,6 +324,7 @@ object tmpl extends js.Object {
       * @returns the value of the path
       */
     def bindProp(sPath: String): js.Any = js.native
+    
     /**
       * compiles (creates and registers) a new control
       * @param mSettings the settings for the new control
@@ -297,6 +334,7 @@ object tmpl extends js.Object {
       * @returns new control instance
       */
     def createControl(mSettings: js.Any, sParentPath: String, bDoNotAdd: Boolean, oView: View): Control = js.native
+    
     /**
       * compiles (creates and registers) a new DOM element
       * @param mSettings the settings for the new DOM element
@@ -308,6 +346,7 @@ object tmpl extends js.Object {
     def createDOMElement(mSettings: js.Any, sParentPath: js.UndefOr[scala.Nothing], bDoNotAdd: Boolean): Control = js.native
     def createDOMElement(mSettings: js.Any, sParentPath: String): Control = js.native
     def createDOMElement(mSettings: js.Any, sParentPath: String, bDoNotAdd: Boolean): Control = js.native
+    
     /**
       * Detaches event handler <code>fnFunction</code> from the <code>afterRendering</code> event of this
       * <code>sap.ui.core.tmpl.TemplateControl</code>.The passed function and listener object must match the
@@ -317,6 +356,7 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def detachAfterRendering(fnFunction: js.Any, oListener: js.Any): TemplateControl = js.native
+    
     /**
       * Detaches event handler <code>fnFunction</code> from the <code>beforeRendering</code> event of this
       * <code>sap.ui.core.tmpl.TemplateControl</code>.The passed function and listener object must match the
@@ -326,18 +366,21 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def detachBeforeRendering(fnFunction: js.Any, oListener: js.Any): TemplateControl = js.native
+    
     /**
       * Fires event <code>afterRendering</code> to attached listeners.
       * @param mArguments The arguments to pass along with the event
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def fireAfterRendering(mArguments: js.Any): TemplateControl = js.native
+    
     /**
       * Fires event <code>beforeRendering</code> to attached listeners.
       * @param mArguments The arguments to pass along with the event
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def fireBeforeRendering(mArguments: js.Any): TemplateControl = js.native
+    
     /**
       * Gets current value of property <code>context</code>.The context is a data object. It can be used for
       * default template expressions. A change of the context object leads to a re-rendering whereas a
@@ -346,21 +389,25 @@ object tmpl extends js.Object {
       * @returns Value of property <code>context</code>
       */
     def getContext(): js.Any = js.native
+    
     /**
       * ID of the element which is the current target of the association <code>template</code>, or
       * <code>null</code>.
       */
     def getTemplate(): js.Any = js.native
+    
     /**
       * Returns the instance specific renderer for an anonymous template control.
       * @returns the instance specific renderer function
       */
     def getTemplateRenderer(): js.Any = js.native
+    
     /**
       * checks whether the control is inline or not
       * @returns flag, whether to control is inline or not
       */
     def isInline(): Boolean = js.native
+    
     /**
       * Sets a new value for property <code>context</code>.The context is a data object. It can be used for
       * default template expressions. A change of the context object leads to a re-rendering whereas a
@@ -371,6 +418,7 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setContext(oContext: js.Any): TemplateControl = js.native
+    
     /**
       * Sets the associated <code>template</code>.
       * @param oTemplate ID of an element which becomes the new target of this template association;
@@ -378,6 +426,7 @@ object tmpl extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setTemplate(oTemplate: js.Any): TemplateControl = js.native
+    
     /**
       * Sets the instance specific renderer for an anonymous template control.
       * @param fnRenderer the instance specific renderer function
@@ -385,6 +434,4 @@ object tmpl extends js.Object {
       */
     def setTemplateRenderer(fnRenderer: js.Any): js.Any = js.native
   }
-  
 }
-

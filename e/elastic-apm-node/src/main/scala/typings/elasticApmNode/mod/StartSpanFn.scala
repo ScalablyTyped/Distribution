@@ -2,10 +2,11 @@ package typings.elasticApmNode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StartSpanFn extends js.Object {
+  
   def startSpan(): Span | Null = js.native
   def startSpan(name: js.UndefOr[scala.Nothing], options: SpanOptions): Span | Null = js.native
   def startSpan(name: String): Span | Null = js.native
@@ -54,4 +55,3 @@ trait StartSpanFn extends js.Object {
   def startSpan(name: Null, `type`: Null, subtype: Null, action: Null, options: SpanOptions): Span | Null = js.native
   def startSpan(name: Null, `type`: Null, subtype: Null, options: SpanOptions): Span | Null = js.native
 }
-

@@ -6,16 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/securitycenter/v1", "securitycenter_v1.Resource$Organizations")
 @js.native
 class ResourceOrganizations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var assets: ResourceOrganizationsAssets = js.native
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceOrganizationsOperations = js.native
-  var sources: ResourceOrganizationsSources = js.native
+  
   /**
     * securitycenter.organizations.getOrganizationSettings
     * @desc Gets the settings for an organization.
@@ -47,6 +48,11 @@ class ResourceOrganizations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrganizationSettings]
   ): Unit = js.native
+  
+  var operations: ResourceOrganizationsOperations = js.native
+  
+  var sources: ResourceOrganizationsSources = js.native
+  
   /**
     * securitycenter.organizations.updateOrganizationSettings
     * @desc Updates an organization's settings.
@@ -81,4 +87,3 @@ class ResourceOrganizations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrganizationSettings]
   ): Unit = js.native
 }
-

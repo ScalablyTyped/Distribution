@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*----------------------
   PathObserver
@@ -24,4 +24,3 @@ Instantiable2[/* receiver */ js.Any, /* path */ String, PathObserverInstance]
       /* defaultValue */ js.Any, 
       PathObserverInstance
     ]
-

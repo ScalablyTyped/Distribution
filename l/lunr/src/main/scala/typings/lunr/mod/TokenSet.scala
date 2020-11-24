@@ -2,7 +2,7 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A token set is used to store the unique list of all tokens
@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("lunr", "TokenSet")
 @js.native
 class TokenSet () extends js.Object {
+  
   /**
     * Creates a TokenSet instance from the given sorted array of words.
     *
@@ -33,6 +34,7 @@ class TokenSet () extends js.Object {
     * @throws Will throw an error if the input array is not sorted.
     */
   def fromArray(arr: js.Array[String]): TokenSet = js.native
+  
   /**
     * Creates a token set representing a single string with a specified
     * edit distance.
@@ -48,6 +50,7 @@ class TokenSet () extends js.Object {
     * @param editDistance - The allowed edit distance to match.
     */
   def fromFuzzyString(str: String, editDistance: Double): Vector = js.native
+  
   /**
     * Creates a TokenSet from a string.
     *
@@ -58,6 +61,7 @@ class TokenSet () extends js.Object {
     * @param str - The string to create a TokenSet from.
     */
   def fromString(str: String): TokenSet = js.native
+  
   /**
     * Returns a new TokenSet that is the intersection of
     * this TokenSet and the passed TokenSet.
@@ -68,6 +72,7 @@ class TokenSet () extends js.Object {
     * @param b - An other TokenSet to intersect with.
     */
   def intersect(b: TokenSet): TokenSet = js.native
+  
   /**
     * Converts this TokenSet into an array of strings
     * contained within the TokenSet.
@@ -75,4 +80,3 @@ class TokenSet () extends js.Object {
     */
   def toArray(): js.Array[String] = js.native
 }
-

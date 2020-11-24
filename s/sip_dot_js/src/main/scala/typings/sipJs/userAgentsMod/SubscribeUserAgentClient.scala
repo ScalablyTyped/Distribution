@@ -5,7 +5,7 @@ import typings.sipJs.subscribeMod.OutgoingSubscribeRequestDelegate
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/user-agents", "SubscribeUserAgentClient")
 @js.native
@@ -14,4 +14,3 @@ class SubscribeUserAgentClient protected ()
   def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
   def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingSubscribeRequestDelegate) = this()
 }
-

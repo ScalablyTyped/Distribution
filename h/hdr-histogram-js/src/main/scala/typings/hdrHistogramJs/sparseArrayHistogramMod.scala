@@ -3,14 +3,17 @@ package typings.hdrHistogramJs
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/SparseArrayHistogram", JSImport.Namespace)
 @js.native
 object sparseArrayHistogramMod extends js.Object {
+  
   @js.native
   trait SparseArrayHistogram extends AbstractHistogram {
+    
     var counts: js.Array[Double] = js.native
+    
     var totalCount: Double = js.native
   }
   
@@ -22,6 +25,4 @@ object sparseArrayHistogramMod extends js.Object {
       numberOfSignificantValueDigits: Double
     ) = this()
   }
-  
 }
-

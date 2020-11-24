@@ -4,7 +4,7 @@ import typings.regexpp.regexppStrings.lookahead
 import typings.regexpp.regexppStrings.lookbehind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.RegExpLiteral
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.regexpp.astMod.CharacterClassRange
 */
 trait BranchNode extends Node
-
 object BranchNode {
+  
   @scala.inline
   def CharacterClassRange(
     end: Double,
@@ -34,6 +34,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def RegExpLiteral(
     end: Double,
@@ -48,6 +49,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def Quantifier(
     element: QuantifiableElement,
@@ -64,6 +66,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def LookaheadAssertion(
     alternatives: js.Array[Alternative],
@@ -79,6 +82,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def CapturingGroup(
     alternatives: js.Array[Alternative],
@@ -93,6 +97,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def Pattern(
     alternatives: js.Array[Alternative],
@@ -105,6 +110,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def LookbehindAssertion(
     alternatives: js.Array[Alternative],
@@ -120,6 +126,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def CharacterClass(
     elements: js.Array[CharacterClassElement],
@@ -134,6 +141,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def Group(
     alternatives: js.Array[Alternative],
@@ -147,6 +155,7 @@ object BranchNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
+  
   @scala.inline
   def Alternative(
     elements: js.Array[Element],
@@ -161,4 +170,3 @@ object BranchNode {
     __obj.asInstanceOf[BranchNode]
   }
 }
-

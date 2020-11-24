@@ -3,11 +3,12 @@ package typings.angularHttp
 import typings.angularHttp.mod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/http/testing/testing", JSImport.Namespace)
 @js.native
 object testingTestingMod extends js.Object {
+  
   @js.native
   class MockBackend ()
     extends typings.angularHttp.indexMod.MockBackend
@@ -17,6 +18,4 @@ object testingTestingMod extends js.Object {
     extends typings.angularHttp.indexMod.MockConnection {
     def this(req: Request) = this()
   }
-  
 }
-

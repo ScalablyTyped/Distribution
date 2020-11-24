@@ -34,11 +34,23 @@ import typings.std.Record
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.http.ClientRequest & {  headers :std.Record<string, string>} */
 @js.native
 trait ClientRequestheadersRecor extends js.Object {
+  
+  def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
+  def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
+  def _write(
+    chunk: js.Any,
+    encoding: BufferEncoding,
+    callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Unit = js.native
+  
   var _writev: js.UndefOr[
     js.Function2[
       /* chunks */ js.Array[Chunk], 
@@ -46,39 +58,11 @@ trait ClientRequestheadersRecor extends js.Object {
       Unit
     ]
   ] = js.native
-  var aborted: Double = js.native
-  var chunkedEncoding: Boolean = js.native
-  var connection: Socket = js.native
-  var destroyed: Boolean = js.native
-  /**
-    * @deprecated Use `writableEnded` instead.
-    */
-  var finished: Boolean = js.native
-  var headers: Record[String, String] = js.native
-  var headersSent: Boolean = js.native
-  var method: String = js.native
-  var path: String = js.native
-  var sendDate: Boolean = js.native
-  var shouldKeepAlive: Boolean = js.native
-  var socket: Socket = js.native
-  var upgrading: Boolean = js.native
-  var useChunkedEncodingByDefault: Boolean = js.native
-  val writable: Boolean = js.native
-  val writableCorked: Double = js.native
-  val writableEnded: Boolean = js.native
-  val writableFinished: Boolean = js.native
-  val writableHighWaterMark: Double = js.native
-  val writableLength: Double = js.native
-  val writableObjectMode: Boolean = js.native
-  def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _write(
-    chunk: js.Any,
-    encoding: BufferEncoding,
-    callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): Unit = js.native
+  
   def abort(): Unit = js.native
+  
+  var aborted: Boolean = js.native
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("addListener")
@@ -115,11 +99,24 @@ trait ClientRequestheadersRecor extends js.Object {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
   def addTrailers(headers: js.Array[js.Tuple2[String, String]]): Unit = js.native
   def addTrailers(headers: OutgoingHttpHeaders): Unit = js.native
+  
+  var chunkedEncoding: Boolean = js.native
+  
+  /**
+    * @deprecate Use `socket` instead.
+    */
+  var connection: Socket | Null = js.native
+  
   def cork(): Unit = js.native
+  
   def destroy(): Unit = js.native
   def destroy(error: Error): Unit = js.native
+  
+  var destroyed: Boolean = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   @JSName("emit")
@@ -134,6 +131,7 @@ trait ClientRequestheadersRecor extends js.Object {
   def emit_pipe(event: pipe, src: Readable): Boolean = js.native
   @JSName("emit")
   def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+  
   def end(): Unit = js.native
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
@@ -147,22 +145,48 @@ trait ClientRequestheadersRecor extends js.Object {
   def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+  
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
+  /**
+    * @deprecated Use `writableEnded` instead.
+    */
+  var finished: Boolean = js.native
+  
   def flushHeaders(): Unit = js.native
+  
   def getHeader(name: String): js.UndefOr[Double | String | js.Array[String]] = js.native
+  
   def getHeaderNames(): js.Array[String] = js.native
+  
   def getHeaders(): OutgoingHttpHeaders = js.native
+  
   def getMaxListeners(): Double = js.native
+  
   def hasHeader(name: String): Boolean = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listenerCount(`type`: js.Symbol): Double = js.native
+  
+  var headers: Record[String, String] = js.native
+  
+  var headersSent: Boolean = js.native
+  
+  var host: String = js.native
+  
+  def listenerCount(event: String): Double = js.native
+  def listenerCount(event: js.Symbol): Double = js.native
+  
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
+  var method: String = js.native
+  
   def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def onSocket(socket: Socket): Unit = js.native
+  
   @JSName("on")
   def on_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -197,6 +221,7 @@ trait ClientRequestheadersRecor extends js.Object {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
@@ -233,8 +258,12 @@ trait ClientRequestheadersRecor extends js.Object {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
+  var path: String = js.native
+  
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -271,6 +300,7 @@ trait ClientRequestheadersRecor extends js.Object {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -307,12 +337,18 @@ trait ClientRequestheadersRecor extends js.Object {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
+  var protocol: String = js.native
+  
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   def removeHeader(name: String): Unit = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -327,20 +363,52 @@ trait ClientRequestheadersRecor extends js.Object {
   def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
+  var sendDate: Boolean = js.native
+  
   def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
+  
   def setHeader(name: String, value: String): Unit = js.native
   def setHeader(name: String, value: js.Array[String]): Unit = js.native
   def setHeader(name: String, value: Double): Unit = js.native
+  
   def setMaxListeners(n: Double): this.type = js.native
+  
   def setNoDelay(): Unit = js.native
   def setNoDelay(noDelay: Boolean): Unit = js.native
+  
   def setSocketKeepAlive(): Unit = js.native
   def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
   def setSocketKeepAlive(enable: Boolean): Unit = js.native
   def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
+  
   def setTimeout(timeout: Double): this.type = js.native
   def setTimeout(timeout: Double, callback: js.Function0[Unit]): this.type = js.native
+  
+  var shouldKeepAlive: Boolean = js.native
+  
+  var socket: Socket | Null = js.native
+  
   def uncork(): Unit = js.native
+  
+  var upgrading: Boolean = js.native
+  
+  var useChunkedEncodingByDefault: Boolean = js.native
+  
+  val writable: Boolean = js.native
+  
+  val writableCorked: Double = js.native
+  
+  val writableEnded: Boolean = js.native
+  
+  val writableFinished: Boolean = js.native
+  
+  val writableHighWaterMark: Double = js.native
+  
+  val writableLength: Double = js.native
+  
+  val writableObjectMode: Boolean = js.native
+  
   def write(buffer: String): Boolean = js.native
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(buffer: Uint8Array): Boolean = js.native
@@ -361,4 +429,3 @@ trait ClientRequestheadersRecor extends js.Object {
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
-

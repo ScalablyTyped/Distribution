@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v2alpha1", "genomics_v2alpha1.Resource$Pipelines")
 @js.native
 class ResourcePipelines protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * genomics.pipelines.run
     * @desc Runs a pipeline.  **Note:** Before you can use this method, the
@@ -49,4 +51,3 @@ class ResourcePipelines protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

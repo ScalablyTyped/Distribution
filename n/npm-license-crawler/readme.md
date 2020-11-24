@@ -10,9 +10,9 @@ Analyzes license information for multiple node.js modules (package.json files) a
 | ------------------ | :-------------: |
 | Full name          | npm-license-crawler |
 | Keywords           | license, npm, checker, crawler |
-| # releases         | 7 |
+| # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 315121 |
+| # downloads        | 441494 |
 | # stars            | 2 |
 
 ## Links

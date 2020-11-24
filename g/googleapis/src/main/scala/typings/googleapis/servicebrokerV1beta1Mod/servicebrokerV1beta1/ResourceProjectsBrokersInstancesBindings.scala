@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1beta1", "servicebroker_v1beta1.Resource$Projects$Brokers$Instances$Bindings")
 @js.native
 class ResourceProjectsBrokersInstancesBindings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicebroker.projects.brokers.instances.bindings.getLast_operation
     * @desc Returns the state of the last operation for the binding. Only last
@@ -49,6 +51,7 @@ class ResourceProjectsBrokersInstancesBindings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Operation]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.instances.bindings.list
     * @desc Lists all the bindings in the instance.
@@ -83,4 +86,3 @@ class ResourceProjectsBrokersInstancesBindings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse]
   ): Unit = js.native
 }
-

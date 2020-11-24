@@ -2,15 +2,12 @@ package typings.boxen.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("boxen", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /**
-  	Border styles from [`cli-boxes`](https://github.com/sindresorhus/cli-boxes).
-  	*/
-  var BorderStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderStyle */ js.Any = js.native
+  
   /**
   	Creates a box in the terminal.
   	@param text - The text inside the box.
@@ -36,5 +33,9 @@ object ^ extends js.Object {
   	*/
   def apply(text: String): String = js.native
   def apply(text: String, options: Options): String = js.native
+  
+  /**
+  	Border styles from [`cli-boxes`](https://github.com/sindresorhus/cli-boxes).
+  	*/
+  var BorderStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderStyle */ js.Any = js.native
 }
-

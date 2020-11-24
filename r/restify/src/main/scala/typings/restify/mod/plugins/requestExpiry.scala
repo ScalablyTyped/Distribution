@@ -3,11 +3,12 @@ package typings.restify.mod.plugins
 import typings.restify.mod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("restify", "plugins.requestExpiry")
 @js.native
 object requestExpiry extends js.Object {
+  
   /**
     * A request expiry will use headers to tell if the incoming request has expired or not.
     *
@@ -23,4 +24,3 @@ object requestExpiry extends js.Object {
   def apply(): RequestHandler = js.native
   def apply(options: RequestExpiryOptions): RequestHandler = js.native
 }
-

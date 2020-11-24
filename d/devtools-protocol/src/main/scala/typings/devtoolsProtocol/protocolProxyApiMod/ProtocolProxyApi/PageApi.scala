@@ -97,120 +97,150 @@ import typings.devtoolsProtocol.mod.Protocol.Page.StartScreencastRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.WindowOpenEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PageApi extends js.Object {
+  
   /**
     * Seeds compilation cache for given url. Compilation cache does not survive
     * cross-process navigation.
     */
   def addCompilationCache(params: AddCompilationCacheRequest): js.Promise[Unit] = js.native
+  
   /**
     * Deprecated, please use addScriptToEvaluateOnNewDocument instead.
     */
   def addScriptToEvaluateOnLoad(params: AddScriptToEvaluateOnLoadRequest): js.Promise[AddScriptToEvaluateOnLoadResponse] = js.native
+  
   /**
     * Evaluates given script in every frame upon creation (before loading frame's scripts).
     */
   def addScriptToEvaluateOnNewDocument(params: AddScriptToEvaluateOnNewDocumentRequest): js.Promise[AddScriptToEvaluateOnNewDocumentResponse] = js.native
+  
   /**
     * Brings page to front (activates tab).
     */
   def bringToFront(): js.Promise[Unit] = js.native
+  
   /**
     * Capture page screenshot.
     */
   def captureScreenshot(params: CaptureScreenshotRequest): js.Promise[CaptureScreenshotResponse] = js.native
+  
   /**
     * Returns a snapshot of the page as a string. For MHTML format, the serialization includes
     * iframes, shadow DOM, external resources, and element-inline styles.
     */
   def captureSnapshot(params: CaptureSnapshotRequest): js.Promise[CaptureSnapshotResponse] = js.native
+  
   /**
     * Clears seeded compilation cache.
     */
   def clearCompilationCache(): js.Promise[Unit] = js.native
+  
   /**
     * Clears the overriden device metrics.
     */
   def clearDeviceMetricsOverride(): js.Promise[Unit] = js.native
+  
   /**
     * Clears the overridden Device Orientation.
     */
   def clearDeviceOrientationOverride(): js.Promise[Unit] = js.native
+  
   /**
     * Clears the overriden Geolocation Position and Error.
     */
   def clearGeolocationOverride(): js.Promise[Unit] = js.native
+  
   /**
     * Tries to close page, running its beforeunload hooks, if any.
     */
   def close(): js.Promise[Unit] = js.native
+  
   /**
     * Crashes renderer on the IO thread, generates minidumps.
     */
   def crash(): js.Promise[Unit] = js.native
+  
   /**
     * Creates an isolated world for the given frame.
     */
   def createIsolatedWorld(params: CreateIsolatedWorldRequest): js.Promise[CreateIsolatedWorldResponse] = js.native
+  
   /**
     * Deletes browser cookie with given name, domain and path.
     */
   def deleteCookie(params: DeleteCookieRequest): js.Promise[Unit] = js.native
+  
   /**
     * Disables page domain notifications.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables page domain notifications.
     */
   def enable(): js.Promise[Unit] = js.native
+  
   /**
     * Generates a report for testing.
     */
   def generateTestReport(params: GenerateTestReportRequest): js.Promise[Unit] = js.native
+  
   def getAppManifest(): js.Promise[GetAppManifestResponse] = js.native
+  
   /**
     * Returns all browser cookies. Depending on the backend support, will return detailed cookie
     * information in the `cookies` field.
     */
   def getCookies(): js.Promise[GetCookiesResponse] = js.native
+  
   /**
     * Returns present frame tree structure.
     */
   def getFrameTree(): js.Promise[GetFrameTreeResponse] = js.native
+  
   def getInstallabilityErrors(): js.Promise[GetInstallabilityErrorsResponse] = js.native
+  
   /**
     * Returns metrics relating to the layouting of the page, such as viewport bounds/scale.
     */
   def getLayoutMetrics(): js.Promise[GetLayoutMetricsResponse] = js.native
+  
   def getManifestIcons(): js.Promise[GetManifestIconsResponse] = js.native
+  
   /**
     * Returns navigation history for the current page.
     */
   def getNavigationHistory(): js.Promise[GetNavigationHistoryResponse] = js.native
+  
   /**
     * Returns content of the given resource.
     */
   def getResourceContent(params: GetResourceContentRequest): js.Promise[GetResourceContentResponse] = js.native
+  
   /**
     * Returns present frame / resource tree structure.
     */
   def getResourceTree(): js.Promise[GetResourceTreeResponse] = js.native
+  
   /**
     * Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
     */
   def handleJavaScriptDialog(params: HandleJavaScriptDialogRequest): js.Promise[Unit] = js.native
+  
   /**
     * Navigates current page to the given URL.
     */
   def navigate(params: NavigateRequest): js.Promise[NavigateResponse] = js.native
+  
   /**
     * Navigates current page to the given history entry.
     */
   def navigateToHistoryEntry(params: NavigateToHistoryEntryRequest): js.Promise[Unit] = js.native
+  
   /**
     * Issued for every compilation cache generated. Is only available
     * if Page.setGenerateCompilationCache is enabled.
@@ -351,112 +381,136 @@ trait PageApi extends js.Object {
     */
   @JSName("on")
   def on_windowOpen(event: windowOpen, listener: js.Function1[/* params */ WindowOpenEvent, Unit]): Unit = js.native
+  
   /**
     * Print page as PDF.
     */
   def printToPDF(params: PrintToPDFRequest): js.Promise[PrintToPDFResponse] = js.native
+  
   /**
     * Reloads given page optionally ignoring the cache.
     */
   def reload(params: ReloadRequest): js.Promise[Unit] = js.native
+  
   /**
     * Deprecated, please use removeScriptToEvaluateOnNewDocument instead.
     */
   def removeScriptToEvaluateOnLoad(params: RemoveScriptToEvaluateOnLoadRequest): js.Promise[Unit] = js.native
+  
   /**
     * Removes given script from the list.
     */
   def removeScriptToEvaluateOnNewDocument(params: RemoveScriptToEvaluateOnNewDocumentRequest): js.Promise[Unit] = js.native
+  
   /**
     * Resets navigation history for the current page.
     */
   def resetNavigationHistory(): js.Promise[Unit] = js.native
+  
   /**
     * Acknowledges that a screencast frame has been received by the frontend.
     */
   def screencastFrameAck(params: ScreencastFrameAckRequest): js.Promise[Unit] = js.native
+  
   /**
     * Searches for given string in resource content.
     */
   def searchInResource(params: SearchInResourceRequest): js.Promise[SearchInResourceResponse] = js.native
+  
   /**
     * Enable Chrome's experimental ad filter on all sites.
     */
   def setAdBlockingEnabled(params: SetAdBlockingEnabledRequest): js.Promise[Unit] = js.native
+  
   /**
     * Enable page Content Security Policy by-passing.
     */
   def setBypassCSP(params: SetBypassCSPRequest): js.Promise[Unit] = js.native
+  
   /**
     * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
     * window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media
     * query results).
     */
   def setDeviceMetricsOverride(params: SetDeviceMetricsOverrideRequest): js.Promise[Unit] = js.native
+  
   /**
     * Overrides the Device Orientation.
     */
   def setDeviceOrientationOverride(params: SetDeviceOrientationOverrideRequest): js.Promise[Unit] = js.native
+  
   /**
     * Sets given markup as the document's HTML.
     */
   def setDocumentContent(params: SetDocumentContentRequest): js.Promise[Unit] = js.native
+  
   /**
     * Set the behavior when downloading a file.
     */
   def setDownloadBehavior(params: SetDownloadBehaviorRequest): js.Promise[Unit] = js.native
+  
   /**
     * Set generic font families.
     */
   def setFontFamilies(params: SetFontFamiliesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Set default font sizes.
     */
   def setFontSizes(params: SetFontSizesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
     * unavailable.
     */
   def setGeolocationOverride(params: SetGeolocationOverrideRequest): js.Promise[Unit] = js.native
+  
   /**
     * Intercept file chooser requests and transfer control to protocol clients.
     * When file chooser interception is enabled, native file chooser dialog is not shown.
     * Instead, a protocol event `Page.fileChooserOpened` is emitted.
     */
   def setInterceptFileChooserDialog(params: SetInterceptFileChooserDialogRequest): js.Promise[Unit] = js.native
+  
   /**
     * Controls whether page will emit lifecycle events.
     */
   def setLifecycleEventsEnabled(params: SetLifecycleEventsEnabledRequest): js.Promise[Unit] = js.native
+  
   /**
     * Forces compilation cache to be generated for every subresource script.
     */
   def setProduceCompilationCache(params: SetProduceCompilationCacheRequest): js.Promise[Unit] = js.native
+  
   /**
     * Toggles mouse event-based touch event emulation.
     */
   def setTouchEmulationEnabled(params: SetTouchEmulationEnabledRequest): js.Promise[Unit] = js.native
+  
   /**
     * Tries to update the web lifecycle state of the page.
     * It will transition the page to the given state according to:
     * https://github.com/WICG/web-lifecycle/
     */
   def setWebLifecycleState(params: SetWebLifecycleStateRequest): js.Promise[Unit] = js.native
+  
   /**
     * Starts sending each frame using the `screencastFrame` event.
     */
   def startScreencast(params: StartScreencastRequest): js.Promise[Unit] = js.native
+  
   /**
     * Force the page stop all navigations and pending resource fetches.
     */
   def stopLoading(): js.Promise[Unit] = js.native
+  
   /**
     * Stops sending each frame in the `screencastFrame`.
     */
   def stopScreencast(): js.Promise[Unit] = js.native
+  
   /**
     * Pauses page execution. Can be resumed using generic Runtime.runIfWaitingForDebugger.
     */
   def waitForDebugger(): js.Promise[Unit] = js.native
 }
-

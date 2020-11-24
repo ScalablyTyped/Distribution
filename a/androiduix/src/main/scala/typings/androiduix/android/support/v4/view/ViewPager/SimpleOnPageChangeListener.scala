@@ -2,12 +2,12 @@ package typings.androiduix.android.support.v4.view.ViewPager
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleOnPageChangeListener extends OnPageChangeListener
-
 object SimpleOnPageChangeListener {
+  
   @scala.inline
   def apply(
     onPageScrollStateChanged: Double => Unit,
@@ -18,4 +18,3 @@ object SimpleOnPageChangeListener {
     __obj.asInstanceOf[SimpleOnPageChangeListener]
   }
 }
-

@@ -10,9 +10,9 @@ These are the official TypeScript definitions for the Bing Maps V8 SDK. These ca
 | ------------------ | :-------------: |
 | Full name          | bingmaps |
 | Keywords           | Microsoft, Bing Maps, Maps, GIS, TypeScript, V8, Web, Map, Geospatial, JavaScript |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 173337 |
+| # downloads        | 199385 |
 | # stars            | 0 |
 
 ## Links

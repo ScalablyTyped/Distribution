@@ -4,7 +4,7 @@ import typings.postcss.anon.Fast
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Containers can store any content. If you write a rule inside a rule,
@@ -12,18 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ContainerBase extends NodeBase {
-  /**
-    * @returns The container's first child.
-    */
-  var first: js.UndefOr[ChildNode] = js.native
-  /**
-    * @returns The container's last child.
-    */
-  var last: js.UndefOr[ChildNode] = js.native
-  /**
-    * Contains the container's children.
-    */
-  var nodes: js.UndefOr[js.Array[ChildNode]] = js.native
+  
   /**
     * Inserts new nodes to the end of the container.
     * Because each node class is identifiable by unique properties, use the
@@ -40,6 +29,7 @@ trait ContainerBase extends NodeBase {
     * @returns This container for chaining.
     */
   def append(nodes: (Node | js.Object | String)*): this.type = js.native
+  
   def each(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Boolean]): Boolean = js.native
   /**
     * Iterates through the container's immediate children, calling the
@@ -54,6 +44,7 @@ trait ContainerBase extends NodeBase {
     */
   @JSName("each")
   def each_Unit(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Unit]): Unit = js.native
+  
   /**
     * Determines whether all child nodes satisfy the specified test.
     * @param callback A function that accepts up to three arguments. The
@@ -65,12 +56,19 @@ trait ContainerBase extends NodeBase {
   def every(
     callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], Boolean]
   ): Boolean = js.native
+  
+  /**
+    * @returns The container's first child.
+    */
+  var first: js.UndefOr[ChildNode] = js.native
+  
   def index(child: Double): Double = js.native
   /**
     * @param child Child of the current container.
     * @returns The child's index within the container's "nodes" array.
     */
   def index(child: ChildNode): Double = js.native
+  
   def insertAfter(oldNode: Double, newNode: String): this.type = js.native
   def insertAfter(oldNode: Double, newNode: js.Object): this.type = js.native
   def insertAfter(oldNode: Double, newNode: ChildNode): this.type = js.native
@@ -82,6 +80,7 @@ trait ContainerBase extends NodeBase {
     * @returns This container for chaining.
     */
   def insertAfter(oldNode: ChildNode, newNode: ChildNode): this.type = js.native
+  
   def insertBefore(oldNode: Double, newNode: String): this.type = js.native
   def insertBefore(oldNode: Double, newNode: js.Object): this.type = js.native
   def insertBefore(oldNode: Double, newNode: ChildNode): this.type = js.native
@@ -93,6 +92,17 @@ trait ContainerBase extends NodeBase {
     * @returns This container for chaining.
     */
   def insertBefore(oldNode: ChildNode, newNode: ChildNode): this.type = js.native
+  
+  /**
+    * @returns The container's last child.
+    */
+  var last: js.UndefOr[ChildNode] = js.native
+  
+  /**
+    * Contains the container's children.
+    */
+  var nodes: js.UndefOr[js.Array[ChildNode]] = js.native
+  
   /**
     * Inserts new nodes to the beginning of the container.
     * Because each node class is identifiable by unique properties, use the
@@ -109,12 +119,14 @@ trait ContainerBase extends NodeBase {
     * @returns This container for chaining.
     */
   def prepend(nodes: (Node | js.Object | String)*): this.type = js.native
+  
   /**
     * Removes all children from the container and cleans their parent
     * properties.
     * @returns This container for chaining.
     */
   def removeAll(): this.type = js.native
+  
   def removeChild(child: Double): this.type = js.native
   /**
     * Removes child from the container and cleans the parent properties
@@ -123,6 +135,7 @@ trait ContainerBase extends NodeBase {
     * @returns This container for chaining.
     */
   def removeChild(child: ChildNode): this.type = js.native
+  
   def replaceValues(pattern: String, callbackOrReplaceValue: String): this.type = js.native
   def replaceValues(
     pattern: String,
@@ -156,6 +169,7 @@ trait ContainerBase extends NodeBase {
     options: Fast,
     callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
   ): this.type = js.native
+  
   /**
     * Determines whether the specified callback returns true for any child node.
     * @param callback A function that accepts up to three arguments. The some
@@ -167,7 +181,9 @@ trait ContainerBase extends NodeBase {
   def some(
     callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], Boolean]
   ): Boolean = js.native
+  
   def walk(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Boolean]): Boolean = js.native
+  
   def walkAtRules(callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Boolean]): Boolean = js.native
   def walkAtRules(nameFilter: String, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Boolean]): Boolean = js.native
   def walkAtRules(nameFilter: RegExp, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Boolean]): Boolean = js.native
@@ -186,6 +202,7 @@ trait ContainerBase extends NodeBase {
   def walkAtRules_Unit(nameFilter: String, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Unit]): Unit = js.native
   @JSName("walkAtRules")
   def walkAtRules_Unit(nameFilter: RegExp, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Unit]): Unit = js.native
+  
   def walkComments(callback: js.Function2[/* comment */ Comment_, /* indexed */ Double, Boolean]): Boolean = js.native
   /**
     * Traverses the container's descendant nodes, calling `callback` for each
@@ -195,6 +212,7 @@ trait ContainerBase extends NodeBase {
     */
   @JSName("walkComments")
   def walkComments_Unit(callback: js.Function2[/* comment */ Comment_, /* indexed */ Double, Unit]): Unit = js.native
+  
   def walkDecls(callback: js.Function2[/* decl */ Declaration, /* index */ Double, Boolean]): Boolean = js.native
   def walkDecls(propFilter: String, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Boolean]): Boolean = js.native
   def walkDecls(propFilter: RegExp, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Boolean]): Boolean = js.native
@@ -212,6 +230,7 @@ trait ContainerBase extends NodeBase {
   def walkDecls_Unit(propFilter: String, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Unit]): Unit = js.native
   @JSName("walkDecls")
   def walkDecls_Unit(propFilter: RegExp, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Unit]): Unit = js.native
+  
   def walkRules(callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Boolean]): Boolean = js.native
   def walkRules(selectorFilter: String, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Boolean]): Boolean = js.native
   def walkRules(selectorFilter: RegExp, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Boolean]): Boolean = js.native
@@ -230,6 +249,7 @@ trait ContainerBase extends NodeBase {
   def walkRules_Unit(selectorFilter: String, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Unit]): Unit = js.native
   @JSName("walkRules")
   def walkRules_Unit(selectorFilter: RegExp, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Unit]): Unit = js.native
+  
   /**
     * Traverses the container's descendant nodes, calling `callback` for each
     * node. Like container.each(), this method is safe to use if you are
@@ -240,4 +260,3 @@ trait ContainerBase extends NodeBase {
   @JSName("walk")
   def walk_Unit(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Unit]): Unit = js.native
 }
-

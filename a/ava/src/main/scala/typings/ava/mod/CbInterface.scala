@@ -2,17 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CbInterface[Context] extends js.Object {
-  /** Declare a test that is expected to fail. */
-  @JSName("failing")
-  var failing_Original: CbFailingInterface[Context] = js.native
-  @JSName("only")
-  var only_Original: CbOnlyInterface[Context] = js.native
-  @JSName("skip")
-  var skip_Original: CbSkipInterface[Context] = js.native
+  
   /** Declare a test that must call `t.end()` when it's done. */
   def apply(title: String, implementation: CbImplementation[Context]): Unit = js.native
   /**
@@ -32,6 +26,7 @@ trait CbInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  
   /** Declare a test that must call `t.end()` when it's done. The test is expected to fail. */
   /** Declare a test that is expected to fail. */
   def failing(title: String, implementation: CbImplementation[Context]): Unit = js.native
@@ -54,6 +49,10 @@ trait CbInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  /** Declare a test that is expected to fail. */
+  @JSName("failing")
+  var failing_Original: CbFailingInterface[Context] = js.native
+  
   /**
   	 * Declare a test that must call `t.end()` when it's done. Only this test and others declared with `.only()` are run.
   	 */
@@ -75,6 +74,9 @@ trait CbInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("only")
+  var only_Original: CbOnlyInterface[Context] = js.native
+  
   /** Skip this test. */
   def skip(title: String, implementation: CbImplementation[Context]): Unit = js.native
   /** Skip this test. */
@@ -88,5 +90,6 @@ trait CbInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("skip")
+  var skip_Original: CbSkipInterface[Context] = js.native
 }
-

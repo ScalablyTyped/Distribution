@@ -3,18 +3,18 @@ package typings.angularRouter.mod
 import typings.angularCore.mod.ModuleWithProviders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterModule")
 @js.native
 class RouterModule protected () extends js.Object {
   def this(guard: js.Any, router: Router) = this()
 }
-
 /* static members */
 @JSImport("@angular/router", "RouterModule")
 @js.native
 object RouterModule extends js.Object {
+  
   /**
     * Creates a module with all the router directives and a provider registering routes,
     * without creating a new Router service.
@@ -32,6 +32,7 @@ object RouterModule extends js.Object {
     *
     */
   def forChild(routes: Routes): ModuleWithProviders[RouterModule] = js.native
+  
   /**
     * Creates and configures a module with all the router providers and directives.
     * Optionally sets up an application listener to perform an initial navigation.
@@ -53,4 +54,3 @@ object RouterModule extends js.Object {
   def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = js.native
   def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = js.native
 }
-

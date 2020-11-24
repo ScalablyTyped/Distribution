@@ -5,11 +5,12 @@ import typings.std.MouseEvent
 import typings.std.TextMetrics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table/lib/esm/common/utils", "Utils")
 @js.native
 object Utils extends js.Object {
+  
   /**
     * Takes an array of numbers, returns an array of numbers of the same length in which each
     * value is the sum of current and previous values in the input array.
@@ -18,6 +19,7 @@ object Utils extends js.Object {
     *         output: [10, 30, 80]
     */
   def accumulate(numbers: js.Array[Double]): js.Array[Double] = js.native
+  
   /**
     * Returns a copy of the array that will have a length of the supplied parameter.
     * If the array is too long, it will be truncated. If it is too short, it will be
@@ -28,6 +30,7 @@ object Utils extends js.Object {
     * @param fillValue - the value to add to the array if it is too short
     */
   def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = js.native
+  
   /**
     * Takes in one full array of values and one sparse array of the same
     * length and type. Returns a copy of the `defaults` array, where each
@@ -38,6 +41,7 @@ object Utils extends js.Object {
     * @param sparseOverrides - the sparse array of override values
     */
   def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[T_2]): js.Array[T_2] = js.native
+  
   /**
     * Performs the binary search algorithm to find the index of the `value`
     * parameter in a sorted list of numbers. If `value` is not in the list, the
@@ -57,6 +61,7 @@ object Utils extends js.Object {
     * @param lookup - returns the number from the list at the supplied index
     */
   def binarySearch(value: Double, high: Double, lookup: js.Function1[/* index */ Double, Double]): Double = js.native
+  
   /**
     * Given a number, returns a value that is clamped within a
     * minimum/maximum bounded range. The minimum and maximum are optional. If
@@ -68,6 +73,7 @@ object Utils extends js.Object {
   def clamp(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def clamp(value: Double, min: Double): Double = js.native
   def clamp(value: Double, min: Double, max: Double): Double = js.native
+  
   def getApproxCellHeight(
     cellText: String,
     columnWidth: Double,
@@ -76,6 +82,7 @@ object Utils extends js.Object {
     horizontalPadding: Double,
     numBufferLines: Double
   ): Double = js.native
+  
   /**
     * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
     * at the absolute index in the original ordering but emit the new index in the reordered list.
@@ -108,16 +115,19 @@ object Utils extends js.Object {
     * The return value will then be 2, the left-most index of the columns in the new ordering.
     */
   def guideIndexToReorderedIndex(oldIndex: Double, newIndex: Double, length: Double): Double = js.native
+  
   /**
     * Returns true if the mouse event was triggered by the left mouse button.
     */
   def isLeftClick(event: MouseEvent): Boolean = js.native
+  
   /**
     * Measures the bounds of supplied element's textContent.
     * We use the computed font from the supplied element and a non-DOM canvas
     * context to measure the text.
     */
   def measureElementTextContent(element: Element): TextMetrics = js.native
+  
   /**
     * Returns a copy of the provided array with the `length` contiguous elements starting at the
     * `from` index reordered to start at the `to` index.
@@ -127,6 +137,7 @@ object Utils extends js.Object {
     */
   def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.Array[T_3] = js.native
   def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.Array[T_3] = js.native
+  
   /**
     * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
     * at the absolute index in the original ordering but emit the new index in the reordered list.
@@ -141,11 +152,13 @@ object Utils extends js.Object {
     * the original ordering.
     */
   def reorderedIndexToGuideIndex(oldIndex: Double, newIndex: Double, length: Double): Double = js.native
+  
   /**
     * Invokes the callback `n` times, collecting the results in an array, which
     * is the return value. Similar to _.times
     */
   def times[T](n: Double, callback: js.Function1[/* i */ Double, T]): js.Array[T] = js.native
+  
   /**
     * Returns traditional spreadsheet-style column names
     * e.g. (A, B, ..., Z, AA, AB, ..., ZZ, AAA, AAB, ...).
@@ -154,10 +167,10 @@ object Utils extends js.Object {
     * there is no zero element.
     */
   def toBase26Alpha(num: Double): String = js.native
+  
   /**
     * Returns traditional spreadsheet-style cell names
     * e.g. (A1, B2, ..., Z44, AA1) with rows 1-indexed.
     */
   def toBase26CellName(rowIndex: Double, columnIndex: Double): String = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Structure representing a rectangle._
@@ -26,4 +26,3 @@ class Rect protected ()
     */
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
-

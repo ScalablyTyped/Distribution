@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OverflowToolbarLayoutData extends ToolbarLayoutData {
+  
   /**
     * Gets current value of property <code>closeOverflowOnInteraction</code>.Defines whether the overflow
     * area is automatically closed when interacting with a control in itDefault value is
@@ -14,6 +15,7 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Value of property <code>closeOverflowOnInteraction</code>
     */
   def getCloseOverflowOnInteraction(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>group</code>.Defines OverflowToolbar items group number.Default
     * value is 0, which means that the control does not belong to any group.Elements that belong to a
@@ -24,12 +26,14 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Value of property <code>group</code>
     */
   def getGroup(): Double = js.native
+  
   /**
     * Gets current value of property <code>moveToOverflow</code>.The OverflowToolbar item can or cannot
     * move to the overflow areaDefault value is <code>true</code>.
     * @returns Value of property <code>moveToOverflow</code>
     */
   def getMoveToOverflow(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>priority</code>.Defines OverflowToolbar items priority,
     * Available priorities ate NeverOverflow, High, Low, Disappear and AlwaysOverflowDefault value is
@@ -38,12 +42,14 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Value of property <code>priority</code>
     */
   def getPriority(): OverflowToolbarPriority = js.native
+  
   /**
     * Gets current value of property <code>stayInOverflow</code>.The OverflowToolbar item can or cannot
     * stay in the overflow areaDefault value is <code>false</code>.
     * @returns Value of property <code>stayInOverflow</code>
     */
   def getStayInOverflow(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>closeOverflowOnInteraction</code>.Defines whether the overflow
     * area is automatically closed when interacting with a control in itWhen called with a value of
@@ -54,6 +60,7 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCloseOverflowOnInteraction(bCloseOverflowOnInteraction: Boolean): OverflowToolbarLayoutData = js.native
+  
   /**
     * Sets a new value for property <code>group</code>.Defines OverflowToolbar items group number.Default
     * value is 0, which means that the control does not belong to any group.Elements that belong to a
@@ -66,6 +73,7 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGroup(iGroup: Double): OverflowToolbarLayoutData = js.native
+  
   /**
     * Sets a new value for property <code>moveToOverflow</code>.The OverflowToolbar item can or cannot
     * move to the overflow areaWhen called with a value of <code>null</code> or <code>undefined</code>,
@@ -74,6 +82,7 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMoveToOverflow(bMoveToOverflow: Boolean): OverflowToolbarLayoutData = js.native
+  
   /**
     * Sets a new value for property <code>priority</code>.Defines OverflowToolbar items priority,
     * Available priorities ate NeverOverflow, High, Low, Disappear and AlwaysOverflowWhen called with a
@@ -84,6 +93,7 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPriority(sPriority: OverflowToolbarPriority): OverflowToolbarLayoutData = js.native
+  
   /**
     * Sets a new value for property <code>stayInOverflow</code>.The OverflowToolbar item can or cannot
     * stay in the overflow areaWhen called with a value of <code>null</code> or <code>undefined</code>,
@@ -93,4 +103,3 @@ trait OverflowToolbarLayoutData extends ToolbarLayoutData {
     */
   def setStayInOverflow(bStayInOverflow: Boolean): OverflowToolbarLayoutData = js.native
 }
-

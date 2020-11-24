@@ -3,7 +3,7 @@ package typings.screeps
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RoomTerrainConstructor
@@ -13,4 +13,3 @@ trait RoomTerrainConstructor
   * @param roomName String name of the room.
   */
 Instantiable1[/* roomName */ String, RoomTerrain]
-

@@ -2,10 +2,12 @@ package typings.gulpInject
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type ITagFunction = js.Function2[/* targetExt */ java.lang.String, /* sourceExt */ java.lang.String, java.lang.String]
+  
   type ITransformFunction = js.Function5[
     /* filepath */ java.lang.String, 
     /* file */ js.UndefOr[typings.vinyl.mod.File], 

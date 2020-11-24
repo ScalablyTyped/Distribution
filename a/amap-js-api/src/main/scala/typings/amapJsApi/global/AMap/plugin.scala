@@ -3,11 +3,12 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.anon.TypeofAMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.plugin")
 @js.native
 object plugin extends js.Object {
+  
   /**
     * 加载插件，
     * @param name 插件名称
@@ -16,4 +17,3 @@ object plugin extends js.Object {
   def apply(plugin: String, callback: js.Function0[Unit]): TypeofAMap = js.native
   def apply(plugin: js.Array[String], callback: js.Function0[Unit]): TypeofAMap = js.native
 }
-

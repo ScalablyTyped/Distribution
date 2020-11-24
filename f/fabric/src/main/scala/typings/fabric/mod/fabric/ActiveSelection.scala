@@ -3,7 +3,7 @@ package typings.fabric.mod.fabric
 import typings.fabric.fabricImplMod.IObjectOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.ActiveSelection")
 @js.native
@@ -18,11 +18,11 @@ class ActiveSelection ()
   def this(objects: js.UndefOr[scala.Nothing], options: IObjectOptions) = this()
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object], options: IObjectOptions) = this()
 }
-
 /* static members */
 @JSImport("fabric", "fabric.ActiveSelection")
 @js.native
 object ActiveSelection extends js.Object {
+  
   /**
     * Returns {@link fabric.ActiveSelection} instance from an object representation
     * @memberOf fabric.ActiveSelection
@@ -31,4 +31,3 @@ object ActiveSelection extends js.Object {
     */
   def fromObject(`object`: js.Any, callback: js.Function): Unit = js.native
 }
-

@@ -3,15 +3,11 @@ package typings.cordovaPluginContacts
 import typings.cordovaPluginContacts.anon.Addresses
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Contacts extends js.Object {
-  /**
-    * This allows us to use an enumeration when setting the desired fields for the ContactFindOptions.
-    * The values will correspond to the type of string literals in ContactFieldType.
-    */
-  var fieldType: Addresses = js.native
+  
   /**
     * The navigator.contacts.create method is synchronous, and returns a new Contact object.
     * This method does not retain the Contact object in the device contacts database,
@@ -20,6 +16,13 @@ trait Contacts extends js.Object {
     */
   def create(): Contact = js.native
   def create(properties: ContactProperties): Contact = js.native
+  
+  /**
+    * This allows us to use an enumeration when setting the desired fields for the ContactFindOptions.
+    * The values will correspond to the type of string literals in ContactFieldType.
+    */
+  var fieldType: Addresses = js.native
+  
   /**
     * The navigator.contacts.find method executes asynchronously, querying the device contacts database
     * and returning an array of Contact objects. The resulting objects are passed to the onSuccess
@@ -49,6 +52,7 @@ trait Contacts extends js.Object {
     onError: js.Function1[/* error */ ContactError, Unit],
     options: ContactFindOptions
   ): Unit = js.native
+  
   /**
     * The navigator.contacts.pickContact method launches the Contact Picker to select a single contact.
     * The resulting object is passed to the contactSuccess callback function specified by the contactSuccess parameter.
@@ -60,4 +64,3 @@ trait Contacts extends js.Object {
     onError: js.Function1[/* error */ ContactError, Unit]
   ): Unit = js.native
 }
-

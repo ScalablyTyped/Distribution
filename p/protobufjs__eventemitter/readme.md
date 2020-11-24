@@ -11,8 +11,8 @@ A minimal event emitter.
 | Full name          | @protobufjs/eventemitter |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 56945734 |
+| # dependents       | 35 |
+| # downloads        | 111310480 |
 | # stars            | 0 |
 
 ## Links

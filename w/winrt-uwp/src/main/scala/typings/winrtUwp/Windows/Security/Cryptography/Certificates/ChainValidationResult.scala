@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChainValidationResult extends js.Object
-
 /** Describes the result of a certificate chain verification operation. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.ChainValidationResult")
 @js.native
 object ChainValidationResult extends js.Object {
+  
   /** The basic constraint extension of a certificate in the chain has not been observed. */
   @js.native
   sealed trait basicConstraintsError extends ChainValidationResult
@@ -66,6 +66,4 @@ object ChainValidationResult extends js.Object {
   /** A certificate in the chain is being used for a purpose other than one specified by its CA. */
   @js.native
   sealed trait wrongUsage extends ChainValidationResult
-  
 }
-

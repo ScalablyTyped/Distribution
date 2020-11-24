@@ -13,7 +13,7 @@ import typings.phaser.Phaser.Physics.Matter.Components.Static
 import typings.phaser.Phaser.Physics.Matter.Components.Velocity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Matter Physics Sprite Game Object.
@@ -43,10 +43,7 @@ trait Sprite
      with Sleep
      with Static
      with Velocity {
-  /**
-    * A reference to the Matter.World instance that this body belongs to.
-    */
-  var world: World = js.native
+  
   /**
     * Setting fixed rotation sets the Body inertia to Infinity, which stops it
     * from being able to rotate when forces are applied to it.
@@ -56,5 +53,9 @@ trait Sprite
     * from being able to rotate when forces are applied to it.
     */
   def setFixedRotation(): this.type = js.native
+  
+  /**
+    * A reference to the Matter.World instance that this body belongs to.
+    */
+  var world: World = js.native
 }
-

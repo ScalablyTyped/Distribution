@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectMarker extends Control {
+  
   /**
     * Fires event <code>press</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePress(mArguments: js.Any): ObjectMarker = js.native
+  
   /**
     * Gets current value of property <code>type</code>.Sets one of the predefined types.<br><b>Note</b>:
     * If the <code>visibility</code> property is not specified explicitly, every <code>type</code> comes
@@ -24,6 +26,7 @@ trait ObjectMarker extends Control {
     * @returns Value of property <code>type</code>
     */
   def getType(): ObjectMarkerType = js.native
+  
   /**
     * Gets current value of property <code>visibility</code>.Sets one of the visibility states.Visibility
     * states are as follows:<ul>                <li><code>IconOnly</code> - displays only icon, regardless
@@ -34,4 +37,3 @@ trait ObjectMarker extends Control {
     */
   def getVisibility(): ObjectMarkerVisibility = js.native
 }
-

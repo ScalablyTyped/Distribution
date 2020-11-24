@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ResponseType extends js.Object
-
 /**
   * Specifies the type of response to a meeting invitation.
   *
@@ -17,6 +16,7 @@ sealed trait ResponseType extends js.Object
 @JSGlobal("Office.MailboxEnums.ResponseType")
 @js.native
 object ResponseType extends js.Object {
+  
   /**
     * The meeting request was accepted by the attendee.
     */
@@ -46,6 +46,4 @@ object ResponseType extends js.Object {
     */
   @js.native
   sealed trait Tentative extends ResponseType
-  
 }
-

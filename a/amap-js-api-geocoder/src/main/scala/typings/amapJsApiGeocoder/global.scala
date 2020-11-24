@@ -3,13 +3,15 @@ package typings.amapJsApiGeocoder
 import typings.amapJsApiGeocoder.AMap.Geocoder.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object AMap extends js.Object {
+    
     @js.native
     /**
       * 地理编码与逆地理编码
@@ -19,8 +21,5 @@ object global extends js.Object {
       extends typings.amapJsApiGeocoder.AMap.Geocoder {
       def this(options: Options) = this()
     }
-    
   }
-  
 }
-

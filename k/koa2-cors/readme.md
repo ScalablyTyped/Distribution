@@ -10,9 +10,9 @@ cors middleware for koa2
 | ------------------ | :-------------: |
 | Full name          | koa2-cors |
 | Keywords           | koa2, cors, middleware |
-| # releases         | 2 |
-| # dependents       | 94 |
-| # downloads        | 480952 |
+| # releases         | 0 |
+| # dependents       | 113 |
+| # downloads        | 604063 |
 | # stars            | 2 |
 
 ## Links

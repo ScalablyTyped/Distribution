@@ -12,7 +12,7 @@ ES2015 Math.sign() ponyfill
 | Keywords           | es2015, ponyfill, polyfill, shim, number, math, sign, positive, negative, sgn, signum, real |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10851 |
+| # downloads        | 29529 |
 | # stars            | 0 |
 
 ## Links

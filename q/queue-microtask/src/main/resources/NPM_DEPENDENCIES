@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "queue-microtask" : "1.1.4"
+      "queue-microtask" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "queue-microtask" : "1.1.4"
+      "queue-microtask" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

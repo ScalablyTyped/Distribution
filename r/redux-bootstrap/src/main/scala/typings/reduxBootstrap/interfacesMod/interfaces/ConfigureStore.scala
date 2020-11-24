@@ -6,15 +6,15 @@ import typings.redux.mod.Middleware
 import typings.redux.mod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConfigureStore
   extends js.Function {
+  
   def apply(
     middlewares: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]],
     rootReducer: js.Object,
     initialState: js.Any
   ): Store[_, AnyAction] = js.native
 }
-

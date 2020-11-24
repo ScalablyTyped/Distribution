@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intrinsic-scale"
-version := "3.0-dt-20200515Z-d89923"
+version := "3.0-dt-20200515Z-e76660"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

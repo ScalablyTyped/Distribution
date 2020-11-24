@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("npm-name", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var InvalidNameError: Instantiable0[InvalidNameErrorClass] = js.native
+  
   /**
   	Check whether a package/organization name is available (not registered) on npm.
   	An organization name should start with `@` and should not be a scoped package.
@@ -40,6 +40,9 @@ object ^ extends js.Object {
   	*/
   def apply(name: String): js.Promise[Boolean] = js.native
   def apply(name: String, options: Options): js.Promise[Boolean] = js.native
+  
+  var InvalidNameError: Instantiable0[InvalidNameErrorClass] = js.native
+  
   /**
   	Check whether multiple package/organization names are available (not registered) on npm.
   	An organization name should start with `@` and should not be a scoped package.
@@ -62,4 +65,3 @@ object ^ extends js.Object {
   def many[NameType /* <: String */](names: js.Array[NameType]): js.Promise[Map[NameType, Boolean]] = js.native
   def many[NameType /* <: String */](names: js.Array[NameType], options: Options): js.Promise[Map[NameType, Boolean]] = js.native
 }
-

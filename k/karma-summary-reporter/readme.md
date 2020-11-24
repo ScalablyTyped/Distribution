@@ -12,7 +12,7 @@ Displays a summary of tested browsers and failed testcases after a test run.
 | Keywords           | karma-plugin, karma-reporter |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 305653 |
+| # downloads        | 333434 |
 | # stars            | 2 |
 
 ## Links

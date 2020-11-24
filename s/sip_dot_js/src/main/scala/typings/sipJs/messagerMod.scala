@@ -6,11 +6,12 @@ import typings.sipJs.messagerOptionsMod.MessagerOptions
 import typings.sipJs.userAgentMod.UserAgent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/api/messager", JSImport.Namespace)
 @js.native
 object messagerMod extends js.Object {
+  
   @js.native
   class Messager protected () extends js.Object {
     /**
@@ -37,15 +38,17 @@ object messagerMod extends js.Object {
       contentType: String,
       options: MessagerOptions
     ) = this()
+    
     var logger: js.Any = js.native
-    var request: js.Any = js.native
-    var userAgent: js.Any = js.native
+    
     /**
       * Send the message.
       */
     def message(): js.Promise[Unit] = js.native
     def message(options: MessagerMessageOptions): js.Promise[Unit] = js.native
+    
+    var request: js.Any = js.native
+    
+    var userAgent: js.Any = js.native
   }
-  
 }
-

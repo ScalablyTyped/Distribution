@@ -1,7 +1,7 @@
 
 # Scala.js typings for gapi_dot_client_dot_doubleclickbidmanager
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 
 

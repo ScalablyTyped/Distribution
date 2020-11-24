@@ -2,15 +2,15 @@ package typings.prettyFormat.typesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.prettyFormat.typesMod.NewPlugin
   - typings.prettyFormat.typesMod.OldPlugin
 */
 trait Plugin extends js.Object
-
 object Plugin {
+  
   @scala.inline
   def NewPlugin(
     serialize: (js.Any, Config, String, Double, Refs, Printer) => String,
@@ -19,6 +19,7 @@ object Plugin {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction6(serialize), test = js.Any.fromFunction1(test))
     __obj.asInstanceOf[Plugin]
   }
+  
   @scala.inline
   def OldPlugin(
     print: (js.Any, Print, Indent, PluginOptions, Colors) => String,
@@ -28,4 +29,3 @@ object Plugin {
     __obj.asInstanceOf[Plugin]
   }
 }
-

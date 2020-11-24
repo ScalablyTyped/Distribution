@@ -2,11 +2,12 @@ package typings.baconjs.typesFlatmapMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baconjs/types/flatmap_", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[In, Out](spawner: EventSpawner[In, Out], src: typings.baconjs.observableMod.default[In]): typings.baconjs.observableMod.default[Out] = js.native
   def apply[In, Out](
     spawner: EventSpawner[In, Out],
@@ -14,4 +15,3 @@ object default extends js.Object {
     params: FlatMapParams
   ): typings.baconjs.observableMod.default[Out] = js.native
 }
-

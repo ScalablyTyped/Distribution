@@ -12,7 +12,7 @@ create a fully functional bunyan logger that doesn't output anything anywhere
 | Keywords           | bunyan, empty, logger, noop, blackhole, /dev/null |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 69036 |
+| # downloads        | 201764 |
 | # stars            | 0 |
 
 ## Links

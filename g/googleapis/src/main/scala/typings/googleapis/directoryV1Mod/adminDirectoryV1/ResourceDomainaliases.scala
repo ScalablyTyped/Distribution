@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Domainaliases")
 @js.native
 class ResourceDomainaliases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.domainAliases.delete
     * @desc Deletes a Domain Alias of the customer.
@@ -42,6 +44,7 @@ class ResourceDomainaliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.domainAliases.get
     * @desc Retrieves a domain alias of the customer.
@@ -71,6 +74,7 @@ class ResourceDomainaliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainAlias]
   ): Unit = js.native
+  
   /**
     * directory.domainAliases.insert
     * @desc Inserts a Domain alias of the customer.
@@ -100,6 +104,7 @@ class ResourceDomainaliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainAlias]
   ): Unit = js.native
+  
   /**
     * directory.domainAliases.list
     * @desc Lists the domain aliases of the customer.
@@ -130,4 +135,3 @@ class ResourceDomainaliases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDomainAliases]
   ): Unit = js.native
 }
-

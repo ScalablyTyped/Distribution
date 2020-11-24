@@ -5,18 +5,18 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables Windows Store apps to place content properties in the system index. */
 @js.native
 trait ContentIndexer extends js.Object {
-  /** Gets the version of the ContentIndexer . */
-  var revision: Double = js.native
+  
   /**
     * Adds app-defined items with properties and content to the system index.
     * @param indexableContent The content properties to index.
     */
   def addAsync(indexableContent: IIndexableContent): js.Any = js.native
+  
   /**
     * Builds a query with the specified search filter and identifies which properties to retrieve.
     * @param searchFilter The AQS filter to apply.
@@ -46,20 +46,24 @@ trait ContentIndexer extends js.Object {
     sortOrder: IIterable[SortEntry],
     searchFilterLanguage: String
   ): ContentIndexerQuery = js.native
+  
   /**
     * Removes all app-defined items from the ContentIndexer .
     */
   def deleteAllAsync(): js.Any = js.native
+  
    /* unmapped return type */ /**
     * Removes the specified app-defined item from the ContentIndexer .
     * @param contentId The identifier of the item to remove.
     */
   def deleteAsync(contentId: String): js.Any = js.native
+  
    /* unmapped return type */ /**
     * Removes the specified app-defined items from the ContentIndexer .
     * @param contentIds The identifier of the item to remove.
     */
   def deleteMultipleAsync(contentIds: IIterable[String]): js.Any = js.native
+  
    /* unmapped return type */ /**
     * Gets content properties based on the given content identifier.
     * @param contentId The identifier for the content properties.
@@ -67,10 +71,13 @@ trait ContentIndexer extends js.Object {
     * @return When this method completes, it returns the retrieved properties as a map of key-value pairs.
     */
   def retrievePropertiesAsync(contentId: String, propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+  
+  /** Gets the version of the ContentIndexer . */
+  var revision: Double = js.native
+  
   /**
     * Updates app content and properties in the ContentIndexer .
     * @param indexableContent The content properties to update.
     */
   def updateAsync(indexableContent: IIndexableContent): js.Any = js.native
 }
-

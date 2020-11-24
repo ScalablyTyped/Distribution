@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "timezoned-date"
-version := "3.0-dt-20190710Z-565075"
+version := "3.0-dt-20190710Z-8926cd"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

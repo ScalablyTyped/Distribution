@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FloatingObjectHorizontalPositionType extends js.Object
-
 /**
   * Lists values specifying to what element the horizontal position of a floating object is relative.
   */
 @JSGlobal("FloatingObjectHorizontalPositionType")
 @js.native
 object FloatingObjectHorizontalPositionType extends js.Object {
+  
   /**
     * Relative to character.
     */
@@ -60,6 +60,4 @@ object FloatingObjectHorizontalPositionType extends js.Object {
     */
   @js.native
   sealed trait RightMargin extends FloatingObjectHorizontalPositionType
-  
 }
-

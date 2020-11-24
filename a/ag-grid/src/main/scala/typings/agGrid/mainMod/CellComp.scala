@@ -3,7 +3,7 @@ package typings.agGrid.mainMod
 import typings.agGrid.beansMod.Beans
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/main", "CellComp")
 @js.native
@@ -18,11 +18,10 @@ class CellComp protected ()
     autoHeightCell: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("ag-grid/dist/lib/main", "CellComp")
 @js.native
 object CellComp extends js.Object {
+  
   var DOM_DATA_KEY_CELL_COMP: String = js.native
 }
-

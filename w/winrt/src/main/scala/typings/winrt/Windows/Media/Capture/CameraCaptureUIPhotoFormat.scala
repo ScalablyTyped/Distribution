@@ -2,14 +2,14 @@ package typings.winrt.Windows.Media.Capture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CameraCaptureUIPhotoFormat extends js.Object
-
 @JSGlobal("Windows.Media.Capture.CameraCaptureUIPhotoFormat")
 @js.native
 object CameraCaptureUIPhotoFormat extends js.Object {
+  
   @js.native
   sealed trait jpeg extends CameraCaptureUIPhotoFormat
   
@@ -18,6 +18,4 @@ object CameraCaptureUIPhotoFormat extends js.Object {
   
   @js.native
   sealed trait png extends CameraCaptureUIPhotoFormat
-  
 }
-

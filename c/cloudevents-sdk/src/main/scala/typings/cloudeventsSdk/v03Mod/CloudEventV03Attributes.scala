@@ -5,7 +5,7 @@ import typings.cloudeventsSdk.cloudeventMod.CE
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CloudEventV03Attributes
@@ -14,6 +14,7 @@ trait CloudEventV03Attributes
   */
 /* key */ StringDictionary[js.Any]
      with CE {
+  
   /**
     * [OPTIONAL] The event payload. This specification does not place any restriction
     * on the type of this information. It is encoded into a media format which is
@@ -21,6 +22,7 @@ trait CloudEventV03Attributes
     * to the dataschema format when those respective attributes are present.
     */
   var data: js.UndefOr[js.Any | String | Double | Boolean | Null] = js.native
+  
   /**
     * The following fields are optional.
     */
@@ -32,6 +34,7 @@ trait CloudEventV03Attributes
     * MUST NOT be set and MUST be ignored when set.
     */
   var dataContentEncoding: js.UndefOr[String] = js.native
+  
   /**
     * [OPTIONAL] Content type of `data` value. This attribute enables `data` to
     * carry any type of content, whereby format and encoding might differ from that
@@ -44,12 +47,14 @@ trait CloudEventV03Attributes
     * [section 3.1](./json-format.md#31-handling-of-data).
     */
   var dataContentType: js.UndefOr[String] = js.native
+  
   /**
     * [OPTIONAL] A link to the schema that the data attribute adheres to.
     * Incompatible changes to the schema SHOULD be reflected by a different URL.
     * If present, MUST be a non-empty URI.
     */
   var schemaURL: js.UndefOr[String] = js.native
+  
   /**
     * [REQUIRED] Identifies the context in which an event happened. Often this
     * will include information such as the type of the event source, the
@@ -66,6 +71,7 @@ trait CloudEventV03Attributes
     * @required Non-empty URI-reference
     */
   var source: String = js.native
+  
   /**
     * [OPTIONAL] This describes the subject of the event in the context of the
     * event producer (identified by `source`). In publish-subscribe scenarios, a
@@ -86,6 +92,7 @@ trait CloudEventV03Attributes
     * @example "mynewfile.jpg"
     */
   var subject: js.UndefOr[String] = js.native
+  
   /**
     * [OPTIONAL] Timestamp of when the occurrence happened. If the time of the
     * occurrence cannot be determined then this attribute MAY be set to some other
@@ -96,6 +103,7 @@ trait CloudEventV03Attributes
     * @example "2020-08-08T14:48:09.769Z"
     */
   var time: js.UndefOr[Date | String] = js.native
+  
   /**
     * [REQUIRED] This attribute contains a value describing the type of event
     * related to the originating occurrence. Often this attribute is used for
@@ -112,56 +120,73 @@ trait CloudEventV03Attributes
     */
   var `type`: String = js.native
 }
-
 object CloudEventV03Attributes {
+  
   @scala.inline
   def apply(source: String, `type`: String): CloudEventV03Attributes = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudEventV03Attributes]
   }
+  
   @scala.inline
   implicit class CloudEventV03AttributesOps[Self <: CloudEventV03Attributes] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setData(value: js.Any | String | Double | Boolean): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDataNull: Self = this.set("data", null)
+    
     @scala.inline
     def setDataContentEncoding(value: String): Self = this.set("dataContentEncoding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDataContentEncoding: Self = this.set("dataContentEncoding", js.undefined)
+    
     @scala.inline
     def setDataContentType(value: String): Self = this.set("dataContentType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDataContentType: Self = this.set("dataContentType", js.undefined)
+    
     @scala.inline
     def setSchemaURL(value: String): Self = this.set("schemaURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSchemaURL: Self = this.set("schemaURL", js.undefined)
+    
     @scala.inline
     def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubject: Self = this.set("subject", js.undefined)
+    
     @scala.inline
     def setTime(value: Date | String): Self = this.set("time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTime: Self = this.set("time", js.undefined)
   }
-  
 }
-

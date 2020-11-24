@@ -3,7 +3,7 @@ package typings.highland
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Describes a constructor for a particular promise library
 @js.native
@@ -16,4 +16,3 @@ trait PConstructor[T, P /* <: js.Thenable[T] */]
       ], 
       P
     ]
-

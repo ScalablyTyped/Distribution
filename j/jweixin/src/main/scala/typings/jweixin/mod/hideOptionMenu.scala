@@ -2,11 +2,12 @@ package typings.jweixin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jweixin", "hideOptionMenu")
 @js.native
 object hideOptionMenu extends js.Object {
+  
   /*=============================摇一摇周边================================*/
   /*=============================界面操作================================*/
   /**
@@ -14,4 +15,3 @@ object hideOptionMenu extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

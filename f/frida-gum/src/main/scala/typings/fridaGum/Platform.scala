@@ -2,7 +2,7 @@ package typings.fridaGum
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.fridaGum.fridaGumStrings.windows
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.fridaGum.fridaGumStrings.qnx
 */
 trait Platform extends js.Object
-
 object Platform {
+  
   @scala.inline
   def darwin: typings.fridaGum.fridaGumStrings.darwin = "darwin".asInstanceOf[typings.fridaGum.fridaGumStrings.darwin]
+  
   @scala.inline
   def linux: typings.fridaGum.fridaGumStrings.linux = "linux".asInstanceOf[typings.fridaGum.fridaGumStrings.linux]
+  
   @scala.inline
   def qnx: typings.fridaGum.fridaGumStrings.qnx = "qnx".asInstanceOf[typings.fridaGum.fridaGumStrings.qnx]
+  
   @scala.inline
   def windows: typings.fridaGum.fridaGumStrings.windows = "windows".asInstanceOf[typings.fridaGum.fridaGumStrings.windows]
 }
-

@@ -24,7 +24,7 @@ import typings.agoraRtcSdk.anon.LighteningContrastLevel
 import typings.agoraRtcSdk.anon.SoundId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Stream interface provides methods that define the behaviors of a Stream object, such as the playback control and video encoder configurations.
@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Stream extends js.Object {
+  
   /**
     * Adds the Audio or Video Track
     *
@@ -57,12 +58,14 @@ trait Stream extends js.Object {
     * - A Stream object can have only one audio track and one video track at most.
     */
   def addTrack(track: MediaStreamTrack): Unit = js.native
+  
   /**
     * Adjusts Audio Mixing Volume
     *
     * @param level The volume of the mixing audio. The value ranges between 0 and 100 (default).
     */
   def adjustAudioMixingVolume(level: Double): Unit = js.native
+  
   /**
     * Closes the Audio/Video Stream
     *
@@ -71,6 +74,7 @@ trait Stream extends js.Object {
     * After calling this method, the camera and microphone authorizations are reset.
     */
   def close(): Unit = js.native
+  
   /**
     * Disables the Audio
     *
@@ -81,6 +85,7 @@ trait Stream extends js.Object {
     * It works only when the audio flag is `true` in the stream.
     */
   def disableAudio(): Unit = js.native
+  
   /**
     * Disables the Video
     *
@@ -91,6 +96,7 @@ trait Stream extends js.Object {
     * It works only when the video flag is `true` in the stream.
     */
   def disableVideo(): Unit = js.native
+  
   /**
     * Enables the Audio
     *
@@ -103,6 +109,7 @@ trait Stream extends js.Object {
     * By default the audio track is enabled. If you call {@link disableAudio}, call this method to enable audio.
     */
   def enableAudio(): Unit = js.native
+  
   /**
     * Enables the Video
     *
@@ -116,6 +123,7 @@ trait Stream extends js.Object {
     *
     */
   def enableVideo(): Unit = js.native
+  
   /**
     * Retrieves the Current Audio Level
     *
@@ -140,6 +148,7 @@ trait Stream extends js.Object {
     * @returns The audio level. The value range is [0,1].
     */
   def getAudioLevel(): js.UndefOr[Double] = js.native
+  
   /**
     * Retrieves the Current Position of the Audio Mixing
     *
@@ -148,12 +157,14 @@ trait Stream extends js.Object {
     * @returns Returns the current position of the audio mixing if successful.
     */
   def getAudioMixingCurrentPosition(): Double | Unit = js.native
+  
   /**
     * Retrieves Audio Mixing Duration
     *
     * @returns Returns the audio mixing duration (ms) if successful.
     */
   def getAudioMixingDuration(): Double | Unit = js.native
+  
   /**
     * Retrieves the Audio Track
     *
@@ -161,6 +172,7 @@ trait Stream extends js.Object {
     * @returns If the stream contains an audio track, it will be returned in a `MediaStreamTrack` object.
     */
   def getAudioTrack(): js.UndefOr[MediaStreamTrack] = js.native
+  
   /**
     * Gets the volume of the audio effects.
     *
@@ -178,6 +190,7 @@ trait Stream extends js.Object {
     * ```
     */
   def getEffectsVolume(): js.Array[SoundId] = js.native
+  
   /**
     * Retrieves the Stream ID
     *
@@ -185,6 +198,7 @@ trait Stream extends js.Object {
     * @example `stream.getId()`
     */
   def getId(): Double | String = js.native
+  
   /**
     * Gets Connection Statistics
     *
@@ -237,6 +251,7 @@ trait Stream extends js.Object {
     * ```
     */
   def getStats(callback: js.Function1[/* stats */ LocalStreamStats | RemoteStreamStats, Unit]): Unit = js.native
+  
   /**
     * Retrieves the Video Track
     *
@@ -244,6 +259,7 @@ trait Stream extends js.Object {
     * @returns If the stream contains a video track, it will be returned in a `MediaStreamTrack` object.
     */
   def getVideoTrack(): js.UndefOr[MediaStreamTrack] = js.native
+  
   /**
     * Retrieves the Audio Flag
     *
@@ -253,6 +269,7 @@ trait Stream extends js.Object {
     * - false: The stream does not contain audio data.
     */
   def hasAudio(): Boolean = js.native
+  
   /**
     * Retrieves the Video Flag
     *
@@ -262,6 +279,7 @@ trait Stream extends js.Object {
     * - false: The stream does not contain video data.
     */
   def hasVideo(): Boolean = js.native
+  
   /**
     * Initializes the Stream Object
     *
@@ -304,6 +322,7 @@ trait Stream extends js.Object {
   def init(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
   def init(onSuccess: js.Function0[Unit]): Unit = js.native
   def init(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
+  
   /**
     * Returns Whether the Stream is Playing
     *
@@ -312,6 +331,7 @@ trait Stream extends js.Object {
     * - `false`: The stream is neither being rendered nor playing on the page.
     */
   def isPlaying(): Boolean = js.native
+  
   /**
     * Disables the Audio
     *
@@ -326,6 +346,7 @@ trait Stream extends js.Object {
     * - `false`: Failure. Possible reasons include no audio, stream not initialized, and audio track already disabled.
     */
   def muteAudio(): Unit = js.native
+  
   /**
     * Disables the Video
     *
@@ -340,6 +361,7 @@ trait Stream extends js.Object {
     * - `false`: Failure. Possible reasons include no video, stream not initialized, and video track already disabled.
     */
   def muteVideo(): Unit = js.native
+  
   /** Occurs when the user gives access to the camera and microphone. */
   @JSName("on")
   def on_accessAllowed(event: accessAllowed, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
@@ -417,6 +439,7 @@ trait Stream extends js.Object {
     */
   @JSName("on")
   def on_videoTrackEnded(event: videoTrackEnded, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Pauses all audio effects.
     *
@@ -433,12 +456,14 @@ trait Stream extends js.Object {
     */
   def pauseAllEffects(): Unit = js.native
   def pauseAllEffects(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Pauses Audio Mixing
     *
     */
   def pauseAudioMixing(): Unit = js.native
   def pauseAudioMixing(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Pauses a specified audio effect.
     *
@@ -457,6 +482,7 @@ trait Stream extends js.Object {
     */
   def pauseEffect(soundId: Double): Unit = js.native
   def pauseEffect(soundId: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Plays the Audio/Video Stream
     *
@@ -490,6 +516,7 @@ trait Stream extends js.Object {
   ): Unit = js.native
   def play(HTMLElementID: String, option: Fit): Unit = js.native
   def play(HTMLElementID: String, option: Fit, callback: js.Function1[/* err */ Null | StreamPlayError, Unit]): Unit = js.native
+  
   /**
     * Plays a specified audio effect.
     *
@@ -536,6 +563,7 @@ trait Stream extends js.Object {
     */
   def playEffect(options: Cycle): Unit = js.native
   def playEffect(options: Cycle, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Preloads a specified audio effect file into the memory.
     *
@@ -557,6 +585,7 @@ trait Stream extends js.Object {
     */
   def preloadEffect(soundId: Double, filePath: String): Unit = js.native
   def preloadEffect(soundId: Double, filePath: String, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Removes the Audio or Video Track
     *
@@ -579,6 +608,7 @@ trait Stream extends js.Object {
     * @param track The track can be retrieved from the `mediaStream` method.
     */
   def removeTrack(track: MediaStreamTrack): Unit = js.native
+  
   /**
     * Replaces the Audio/Video Track
     *
@@ -630,6 +660,7 @@ trait Stream extends js.Object {
     onSuccess: js.Function0[Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Resumes the Audio/Video Stream Playback
     *
@@ -638,6 +669,7 @@ trait Stream extends js.Object {
     * This method needs to be triggered by a user gesture. See [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes) for more information.
     */
   def resume(): js.Promise[_] = js.native
+  
   /**
     * Resumes playing all audio effects.
     *
@@ -654,6 +686,7 @@ trait Stream extends js.Object {
     */
   def resumeAllEffects(): Unit = js.native
   def resumeAllEffects(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Resumes Audio Mixing
     *
@@ -661,6 +694,7 @@ trait Stream extends js.Object {
     */
   def resumeAudioMixing(): Unit = js.native
   def resumeAudioMixing(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Resumes playing a specified audio effect.
     *
@@ -679,6 +713,7 @@ trait Stream extends js.Object {
     */
   def resumeEffect(soundId: Double): Unit = js.native
   def resumeEffect(soundId: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Sets the Audio Mixing Position
     *
@@ -688,6 +723,7 @@ trait Stream extends js.Object {
     */
   def setAudioMixingPosition(position: Double): Unit = js.native
   def setAudioMixingPosition(position: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Sets the Audio Output
     *
@@ -708,6 +744,7 @@ trait Stream extends js.Object {
   ): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   @JSName("setAudioProfile")
   def setAudioProfile_highquality(profile: high_quality): Unit = js.native
   @JSName("setAudioProfile")
@@ -743,6 +780,7 @@ trait Stream extends js.Object {
   def setAudioProfile_speechstandard(profile: speech_standard): Unit = js.native
   @JSName("setAudioProfile")
   def setAudioProfile_standardstereo(profile: standard_stereo): Unit = js.native
+  
   /**
     * Sets the Volume
     *
@@ -753,6 +791,7 @@ trait Stream extends js.Object {
     * @param volume Ranges from 0 (muted) to 100 (loudest).
     */
   def setAudioVolume(volume: Double): Unit = js.native
+  
   /**
     * Enables/Disables image enhancement and sets the options.
     *
@@ -795,6 +834,7 @@ trait Stream extends js.Object {
     * ```
     */
   def setBeautyEffectOptions(enabled: Boolean, options: LighteningContrastLevel): Unit = js.native
+  
   /**
     * Sets the volume of the audio effects.
     *
@@ -812,6 +852,7 @@ trait Stream extends js.Object {
     */
   def setEffectsVolume(volume: Double): Unit = js.native
   def setEffectsVolume(volume: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Sets the Screen Profile
     *
@@ -825,6 +866,7 @@ trait Stream extends js.Object {
     * [[include:ScreenProfileDefinition.md]]
     */
   def setScreenProfile(profile: String): Unit = js.native
+  
   /**
     * Customizes the Video Encoder Configuration
     *
@@ -865,6 +907,7 @@ trait Stream extends js.Object {
     *
     */
   def setVideoEncoderConfiguration(config: VideoEncoderConfiguration): Unit = js.native
+  
   /**
     * Sets the Video Profile
     *
@@ -885,6 +928,7 @@ trait Stream extends js.Object {
     * [[include:VideoProfileDefinition.md]]
     */
   def setVideoProfile(profile: String): Unit = js.native
+  
   /**
     * Sets the volume of a specified audio effect.
     *
@@ -904,6 +948,7 @@ trait Stream extends js.Object {
     */
   def setVolumeOfEffect(soundId: Double, volume: Double): Unit = js.native
   def setVolumeOfEffect(soundId: Double, volume: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Starts Audio Mixing
     *
@@ -956,12 +1001,14 @@ trait Stream extends js.Object {
     */
   def startAudioMixing(options: CacheResource): Unit = js.native
   def startAudioMixing(options: CacheResource, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Stops the Audio/Video Stream Playback
     *
     * Call this method to stop playing the stream set by {@link Stream.play}.
     */
   def stop(): Unit = js.native
+  
   /**
     * Stops playing all audio effects.
     *
@@ -978,6 +1025,7 @@ trait Stream extends js.Object {
     */
   def stopAllEffects(): Unit = js.native
   def stopAllEffects(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Stops Audio Mixing
     *
@@ -985,6 +1033,7 @@ trait Stream extends js.Object {
     */
   def stopAudioMixing(): Unit = js.native
   def stopAudioMixing(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Stops playing a specified audio effect.
     *
@@ -1003,6 +1052,7 @@ trait Stream extends js.Object {
     */
   def stopEffect(soundId: Double): Unit = js.native
   def stopEffect(soundId: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Switches the Media Input Device
     *
@@ -1065,6 +1115,7 @@ trait Stream extends js.Object {
     onSuccess: js.Function0[Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Releases a specified preloaded audio effect from the memory.
     *
@@ -1084,6 +1135,7 @@ trait Stream extends js.Object {
     */
   def unloadEffect(soundId: Double): Unit = js.native
   def unloadEffect(soundId: Double, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  
   /**
     * Enables the Audio
     *
@@ -1099,6 +1151,7 @@ trait Stream extends js.Object {
     * - `false`: Failure. Possible reasons include no audio, stream not initialized, and audio track already enabled.
     */
   def unmuteAudio(): Unit = js.native
+  
   /**
     * Enables the Video
     *
@@ -1115,4 +1168,3 @@ trait Stream extends js.Object {
     */
   def unmuteVideo(): Unit = js.native
 }
-

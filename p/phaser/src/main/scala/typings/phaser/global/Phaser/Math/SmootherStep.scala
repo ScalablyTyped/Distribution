@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.SmootherStep")
 @js.native
 object SmootherStep extends js.Object {
+  
   /**
     * Calculate a smoother interpolation percentage of `x` between `min` and `max`.
     * 
@@ -21,4 +22,3 @@ object SmootherStep extends js.Object {
     */
   def apply(x: Double, min: Double, max: Double): Double = js.native
 }
-

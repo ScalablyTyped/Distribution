@@ -2,45 +2,53 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxObjectContainer control.
   */
 @js.native
 trait ASPxClientObjectContainer extends ASPxClientControl {
-  /**
-    * Occurs on the client side when the FSCommand action is called within the associated flash object's action script.
-    */
-  var FlashScriptCommand: ASPxClientEvent[ASPxClientFlashScriptCommandEventHandler[ASPxClientObjectContainer]] = js.native
+  
   /**
     * Play the Flash movie backwards.
     */
   def Back(): Unit = js.native
+  
+  /**
+    * Occurs on the client side when the FSCommand action is called within the associated flash object's action script.
+    */
+  var FlashScriptCommand: ASPxClientEvent[ASPxClientFlashScriptCommandEventHandler[ASPxClientObjectContainer]] = js.native
+  
   /**
     * Play the Flash movie forwards.
     */
   def Forward(): Unit = js.native
+  
   /**
     * Returns the value of the Flash variable specified. A string value that represents the Flash variable's value.
     * @param name A string value that specifies the Flash variable.
     */
   def GetVariable(name: String): String = js.native
+  
   /**
     * Activates the specified frame in the Flash movie.
     * @param frameNumber An integer value that specifies the requested frame.
     */
   def GotoFrame(frameNumber: Double): Unit = js.native
+  
   /**
     * Indicates whether the Flash movie is currently playing.
     */
   def IsPlaying(): Boolean = js.native
+  
   /**
     * Loads the Flash movie to the specified layer.
     * @param layerNumber An integer value that identifies a layer in which to load the movie.
     * @param url A string value that specifies the movie's URL.
     */
   def LoadMovie(layerNumber: Double, url: String): Unit = js.native
+  
   /**
     * Pans a zoomed-in Flash movie to the specified coordinates.
     * @param x An integer value that specifies the X-coordinate.
@@ -48,41 +56,50 @@ trait ASPxClientObjectContainer extends ASPxClientControl {
     * @param mode 0 the coordinates are pixels; 1 the coordinates are a percentage of the window.
     */
   def Pan(x: Double, y: Double, mode: Double): Unit = js.native
+  
   /**
     * Returns the percent of the Flash Player movie that has streamed into the browser so far.
     */
   def PercentLoaded(): String = js.native
+  
   /**
     * Starts playing media files.
     */
   def Play(): Unit = js.native
+  
   /**
     * Starts playing a Quick Time movie.
     */
   def QTPlay(): Unit = js.native
+  
   /**
     * Rewinds a Quick Time movie to the first frame.
     */
   def QTRewind(): Unit = js.native
+  
   /**
     * Steps through a Quick Time video stream by a specified number of frames.
     * @param count An integer value that specifies the number of frames to step.
     */
   def QTStep(count: Double): Unit = js.native
+  
   /**
     * Stops playing a Quick Time movie.
     */
   def QTStopPlay(): Unit = js.native
+  
   /**
     * Rewinds the Flash movie to the first frame.
     */
   def Rewind(): Unit = js.native
+  
   /**
     * Sets the value of the specified Flash variable.
     * @param name A string value that specifies the Flash variable.
     * @param value A string value that represents a new value.
     */
   def SetVariable(name: String, value: String): Unit = js.native
+  
   /**
     * Zooms in on the specified rectangular area of the Flash movie.
     * @param left An integer value that specifies the x-coordinate of the rectangle's left side, in twips.
@@ -91,22 +108,25 @@ trait ASPxClientObjectContainer extends ASPxClientControl {
     * @param bottom An integer value that specifies the y-coordinate of the rectangle's bottom side, in twips.
     */
   def SetZoomRect(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
+  
   /**
     * Stops playing the Flash movie.
     */
   def StopPlay(): Unit = js.native
+  
   /**
     * Returns the total number of frames in the Flash movie.
     */
   def TotalFrames(): Double = js.native
+  
   /**
     * Zooms the Flash view by a relative scale factor.
     * @param percent An integer value that specifies the relative scale factor, as a  percentage.
     */
   def Zoom(percent: Double): Unit = js.native
 }
-
 object ASPxClientObjectContainer {
+  
   @scala.inline
   def apply(
     AdjustControl: () => Unit,
@@ -148,58 +168,80 @@ object ASPxClientObjectContainer {
     val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Back = js.Any.fromFunction0(Back), FlashScriptCommand = FlashScriptCommand.asInstanceOf[js.Any], Forward = js.Any.fromFunction0(Forward), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVariable = js.Any.fromFunction1(GetVariable), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), GotoFrame = js.Any.fromFunction1(GotoFrame), InCallback = js.Any.fromFunction0(InCallback), Init = Init.asInstanceOf[js.Any], IsPlaying = js.Any.fromFunction0(IsPlaying), LoadMovie = js.Any.fromFunction2(LoadMovie), Pan = js.Any.fromFunction3(Pan), PercentLoaded = js.Any.fromFunction0(PercentLoaded), Play = js.Any.fromFunction0(Play), QTPlay = js.Any.fromFunction0(QTPlay), QTRewind = js.Any.fromFunction0(QTRewind), QTStep = js.Any.fromFunction1(QTStep), QTStopPlay = js.Any.fromFunction0(QTStopPlay), Rewind = js.Any.fromFunction0(Rewind), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVariable = js.Any.fromFunction2(SetVariable), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), SetZoomRect = js.Any.fromFunction4(SetZoomRect), StopPlay = js.Any.fromFunction0(StopPlay), TotalFrames = js.Any.fromFunction0(TotalFrames), Zoom = js.Any.fromFunction1(Zoom), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientObjectContainer]
   }
+  
   @scala.inline
   implicit class ASPxClientObjectContainerOps[Self <: ASPxClientObjectContainer] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBack(value: () => Unit): Self = this.set("Back", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setFlashScriptCommand(value: ASPxClientEvent[ASPxClientFlashScriptCommandEventHandler[ASPxClientObjectContainer]]): Self = this.set("FlashScriptCommand", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setForward(value: () => Unit): Self = this.set("Forward", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetVariable(value: String => String): Self = this.set("GetVariable", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGotoFrame(value: Double => Unit): Self = this.set("GotoFrame", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsPlaying(value: () => Boolean): Self = this.set("IsPlaying", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setLoadMovie(value: (Double, String) => Unit): Self = this.set("LoadMovie", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setPan(value: (Double, Double, Double) => Unit): Self = this.set("Pan", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setPercentLoaded(value: () => String): Self = this.set("PercentLoaded", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setPlay(value: () => Unit): Self = this.set("Play", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setQTPlay(value: () => Unit): Self = this.set("QTPlay", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setQTRewind(value: () => Unit): Self = this.set("QTRewind", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setQTStep(value: Double => Unit): Self = this.set("QTStep", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setQTStopPlay(value: () => Unit): Self = this.set("QTStopPlay", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRewind(value: () => Unit): Self = this.set("Rewind", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetVariable(value: (String, String) => Unit): Self = this.set("SetVariable", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetZoomRect(value: (Double, Double, Double, Double) => Unit): Self = this.set("SetZoomRect", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setStopPlay(value: () => Unit): Self = this.set("StopPlay", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setTotalFrames(value: () => Double): Self = this.set("TotalFrames", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setZoom(value: Double => Unit): Self = this.set("Zoom", js.Any.fromFunction1(value))
   }
-  
 }
-

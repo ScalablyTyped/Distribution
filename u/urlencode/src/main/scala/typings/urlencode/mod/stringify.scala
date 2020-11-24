@@ -2,11 +2,12 @@ package typings.urlencode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("urlencode", "stringify")
 @js.native
 object stringify extends js.Object {
+  
   /**
     * Stringify object
     * @param obj Query Object
@@ -17,4 +18,3 @@ object stringify extends js.Object {
   def apply(obj: js.Any, prefix: charsetParam): String = js.native
   def apply(obj: js.Any, prefix: charsetParam, charsetParam: charsetParam): String = js.native
 }
-

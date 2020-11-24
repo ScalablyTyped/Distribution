@@ -4,7 +4,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("simplesmtp", "SimpleServer")
 @js.native
@@ -16,7 +16,7 @@ class SimpleServer () extends EventEmitter {
     callback: js.Function1[/* connection */ SimpleServerConnection, Unit]
   ) = this()
   def this(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
-  var server: SMTPServer = js.native
+  
   /**
     * Server starts listening on defined port and hostname
     *
@@ -26,5 +26,6 @@ class SimpleServer () extends EventEmitter {
     */
   def listen(port: Double, host: String): Unit = js.native
   def listen(port: Double, host: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
+  var server: SMTPServer = js.native
 }
-

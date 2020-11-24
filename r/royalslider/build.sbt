@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "royalslider"
-version := "9.4-dt-20200515Z-c5a28f"
+version := "9.4-dt-20201002Z-fea01c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

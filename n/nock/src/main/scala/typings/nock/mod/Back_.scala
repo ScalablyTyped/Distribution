@@ -3,12 +3,11 @@ package typings.nock.mod
 import typings.nock.anon.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Back_ extends js.Object {
-  var currentMode: BackMode = js.native
-  var fixtures: String = js.native
+  
   def apply(fixtureName: String): js.Promise[Context] = js.native
   def apply(fixtureName: String, nockedFn: js.Function1[/* nockDone */ js.Function0[Unit], Unit]): Unit = js.native
   def apply(fixtureName: String, options: BackOptions): js.Promise[Context] = js.native
@@ -17,6 +16,10 @@ trait Back_ extends js.Object {
     options: BackOptions,
     nockedFn: js.Function1[/* nockDone */ js.Function0[Unit], Unit]
   ): Unit = js.native
+  
+  var currentMode: BackMode = js.native
+  
+  var fixtures: String = js.native
+  
   def setMode(mode: BackMode): Unit = js.native
 }
-

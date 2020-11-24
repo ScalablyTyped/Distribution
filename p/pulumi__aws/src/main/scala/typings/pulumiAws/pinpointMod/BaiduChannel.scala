@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/pinpoint", "BaiduChannel")
 @js.native
@@ -23,11 +23,11 @@ class BaiduChannel protected ()
   def this(name: String, args: BaiduChannelArgs) = this()
   def this(name: String, args: BaiduChannelArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/pinpoint", "BaiduChannel")
 @js.native
 object BaiduChannel extends js.Object {
+  
   /**
     * Get an existing BaiduChannel resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object BaiduChannel extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.baiduChannelMod.BaiduChannel = js.native
   def get(name: String, id: Input[ID], state: BaiduChannelState): typings.pulumiAws.baiduChannelMod.BaiduChannel = js.native
   def get(name: String, id: Input[ID], state: BaiduChannelState, opts: CustomResourceOptions): typings.pulumiAws.baiduChannelMod.BaiduChannel = js.native
+  
   /**
     * Returns true if the given object is an instance of BaiduChannel.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ Boolean = js.native
 }
-

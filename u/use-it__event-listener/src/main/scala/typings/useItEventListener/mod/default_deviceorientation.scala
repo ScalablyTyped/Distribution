@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.deviceorientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_deviceorientation extends js.Object {
+  
   def apply(eventName: deviceorientation, handler: DeviceOrientationEvent): Unit = js.native
   def apply(
     eventName: deviceorientation,
@@ -20,4 +21,3 @@ object default_deviceorientation extends js.Object {
   def apply(eventName: deviceorientation, handler: DeviceOrientationEvent, element: Window): Unit = js.native
   def apply(eventName: deviceorientation, handler: DeviceOrientationEvent, element: Window, options: Options): Unit = js.native
 }
-

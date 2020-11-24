@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FilterCompareOperator extends js.Object
-
 @JSGlobal("Microsoft.Maps.SpatialDataService.FilterCompareOperator")
 @js.native
 object FilterCompareOperator extends js.Object {
+  
   /** Determines if a string value ends with a specified string value. */
   @js.native
   sealed trait endsWith extends FilterCompareOperator
@@ -53,6 +53,4 @@ object FilterCompareOperator extends js.Object {
   /** Determines if a string value starts with a specified string value. */
   @js.native
   sealed trait startsWith extends FilterCompareOperator
-  
 }
-

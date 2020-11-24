@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides modifying access to a fragment of the configuration hierarchy.
@@ -32,6 +32,7 @@ trait ConfigurationUpdateAccess
   extends ConfigurationAccess
      with SetUpdate
      with XChangesBatch {
+  
   /**
     * retrieve information about the hierarchy of properties
     * @returns the {@link XHierarchicalPropertySetInfo} interface, which describes the property hierarchy of the object which supplies this interface.
@@ -39,12 +40,14 @@ trait ConfigurationUpdateAccess
     */
   /* InferMemberOverrides */
   override def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
     */
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
+  
   /**
     * @param aPropertyName contains the sequence of property names.
     * @returns a sequence of the states of the properties which are specified by their names.  The order of the states is correlating to the order of the given
@@ -53,4 +56,3 @@ trait ConfigurationUpdateAccess
   /* InferMemberOverrides */
   override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
 }
-

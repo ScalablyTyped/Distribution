@@ -2,10 +2,12 @@ package typings.typescriptCompare.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Compare {
+  
   type Options = typings.typescriptCompare.mod.Compare.Options_
+  
   type Strict[A, B, Options /* <: typings.typescriptCompare.mod.Compare.Options */] = typings.typescriptLogic.mod.If[
     typings.typescriptCompare.mod.Extends[A, B], 
     typings.typescriptLogic.mod.If[

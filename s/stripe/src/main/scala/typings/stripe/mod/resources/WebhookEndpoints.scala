@@ -12,11 +12,12 @@ import typings.stripe.mod.webhookEndpoints.IWebhookEndpoint
 import typings.stripe.mod.webhookEndpoints.IWebhookUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.WebhookEndpoints")
 @js.native
 class WebhookEndpoints () extends js.Object {
+  
   def create(data: IWebhookCreateOptions): js.Promise[IWebhookEndpoint] = js.native
   /**
     * Creates a new Webhook Endpoint
@@ -24,6 +25,7 @@ class WebhookEndpoints () extends js.Object {
   def create(data: IWebhookCreateOptions, options: HeaderOptions): js.Promise[IWebhookEndpoint] = js.native
   def create(data: IWebhookCreateOptions, options: HeaderOptions, response: IResponseFn[IWebhookEndpoint]): js.Promise[IWebhookEndpoint] = js.native
   def create(data: IWebhookCreateOptions, response: IResponseFn[IWebhookEndpoint]): js.Promise[IWebhookEndpoint] = js.native
+  
   def del(webhookId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * Deletes a webhook endpoint.
@@ -33,6 +35,7 @@ class WebhookEndpoints () extends js.Object {
   def del(webhookId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def del(webhookId: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def del(webhookId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[IWebhookEndpoint] = js.native
   def list(data: IListOptions): IListPromise[IWebhookEndpoint] = js.native
   /**
@@ -44,6 +47,7 @@ class WebhookEndpoints () extends js.Object {
   def list(options: HeaderOptions): IListPromise[IWebhookEndpoint] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IWebhookEndpoint]]): IListPromise[IWebhookEndpoint] = js.native
   def list(response: IResponseFn[IList[IWebhookEndpoint]]): IListPromise[IWebhookEndpoint] = js.native
+  
   def retrieve(webhookId: String): js.Promise[IWebhookEndpoint] = js.native
   def retrieve(webhookId: String, data: IDataOptions): js.Promise[IWebhookEndpoint] = js.native
   /**
@@ -60,6 +64,7 @@ class WebhookEndpoints () extends js.Object {
   def retrieve(webhookId: String, options: HeaderOptions): js.Promise[IWebhookEndpoint] = js.native
   def retrieve(webhookId: String, options: HeaderOptions, response: IResponseFn[IWebhookEndpoint]): js.Promise[IWebhookEndpoint] = js.native
   def retrieve(webhookId: String, response: IResponseFn[IWebhookEndpoint]): js.Promise[IWebhookEndpoint] = js.native
+  
   def update(webhookId: String, data: IWebhookUpdateOptions): js.Promise[IWebhookEndpoint] = js.native
   /**
     * Updates the specific webhook endpoint by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -75,4 +80,3 @@ class WebhookEndpoints () extends js.Object {
   ): js.Promise[IWebhookEndpoint] = js.native
   def update(webhookId: String, data: IWebhookUpdateOptions, response: IResponseFn[IWebhookEndpoint]): js.Promise[IWebhookEndpoint] = js.native
 }
-

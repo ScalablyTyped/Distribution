@@ -2,11 +2,12 @@ package typings.winrt.global.Windows.ApplicationModel.DataTransfer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget")
 @js.native
 object ShareTarget extends js.Object {
+  
   @js.native
   class QuickLink ()
     extends typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink
@@ -14,6 +15,4 @@ object ShareTarget extends js.Object {
   @js.native
   class ShareOperation ()
     extends typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
-  
 }
-

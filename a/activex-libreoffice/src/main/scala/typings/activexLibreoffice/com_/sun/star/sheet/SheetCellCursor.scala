@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.com_.sun.star.table.XCellCursor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a cursor in a spreadsheet.
@@ -16,8 +16,8 @@ trait SheetCellCursor
      with XCellCursor
      with XSheetCellCursor
      with XUsedAreaCursor
-
 object SheetCellCursor {
+  
   @scala.inline
   def apply(
     SheetCellRange: SheetCellRange,
@@ -33,4 +33,3 @@ object SheetCellCursor {
     __obj.asInstanceOf[SheetCellCursor]
   }
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.forOwn` exported as a module.
 | Full name          | lodash.forown |
 | Keywords           | lodash-modularized, forown |
 | # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 8184771 |
+| # dependents       | 75 |
+| # downloads        | 8009075 |
 | # stars            | 0 |
 
 ## Links

@@ -6,11 +6,12 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.menuMod.Menu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/mainmenu", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class EditMenu protected ()
     extends typings.jupyterlabMainmenu.editMod.EditMenu {
@@ -34,6 +35,10 @@ object mod extends js.Object {
       */
     def this(options: IOptions) = this()
   }
+  
+  @js.native
+  object IMainMenu
+    extends TopLevel[Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu]]
   
   @js.native
   class JupyterLabMenu protected ()
@@ -103,10 +108,4 @@ object mod extends js.Object {
       */
     def this(options: IOptions) = this()
   }
-  
-  @js.native
-  object IMainMenu
-    extends TopLevel[Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu]]
-  
 }
-

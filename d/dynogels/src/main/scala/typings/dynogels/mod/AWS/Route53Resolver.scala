@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.route53resolverMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Route53Resolver")
 @js.native
@@ -14,4 +14,3 @@ class Route53Resolver ()
   extends typings.awsSdk.mod.Route53Resolver {
   def this(options: ClientConfiguration) = this()
 }
-

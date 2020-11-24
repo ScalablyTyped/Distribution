@@ -5,16 +5,18 @@ import typings.react.mod.SetStateAction
 import typings.uifabricFoundation.controlledMod.IControlledStateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/foundation/lib/hooks", JSImport.Namespace)
 @js.native
 object hooksMod extends js.Object {
+  
   def getControlledDerivedProps[TProps, TProp /* <: /* keyof TProps */ String */](
     props: TProps,
     propName: TProp,
     derivedValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
   ): /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any = js.native
+  
   def useControlledState[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
@@ -36,4 +38,3 @@ object hooksMod extends js.Object {
     ]
   ] = js.native
 }
-

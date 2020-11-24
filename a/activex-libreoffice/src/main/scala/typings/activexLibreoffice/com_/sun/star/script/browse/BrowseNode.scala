@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.script.XInvocation
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service provides access to the Macros and Macro containers via the {@link XBrowseNode} interface. {@link XInvocation} is an optional interface
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 trait BrowseNode
   extends XBrowseNode
      with XInvocation
-
 object BrowseNode {
+  
   @scala.inline
   def apply(
     ChildNodes: SafeArray[XBrowseNode],
@@ -44,4 +44,3 @@ object BrowseNode {
     __obj.asInstanceOf[BrowseNode]
   }
 }
-

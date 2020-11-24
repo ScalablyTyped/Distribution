@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BUFFER_BITS extends js.Object
-
 /**
   * Bitwise OR of masks that indicate the buffers to be cleared.
   *
@@ -21,6 +20,7 @@ sealed trait BUFFER_BITS extends js.Object
 @JSGlobal("PIXI.BUFFER_BITS")
 @js.native
 object BUFFER_BITS extends js.Object {
+  
   @js.native
   sealed trait COLOR extends BUFFER_BITS
   
@@ -29,6 +29,4 @@ object BUFFER_BITS extends js.Object {
   
   @js.native
   sealed trait STENCIL extends BUFFER_BITS
-  
 }
-

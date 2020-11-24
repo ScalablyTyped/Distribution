@@ -2,11 +2,12 @@ package typings.canvasjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("canvasjs", "formatNumber")
 @js.native
 object formatNumber extends js.Object {
+  
   /**
     * Formats number according to the given formatString(optional) & culture(optional).
     * @param number Number to format.
@@ -18,4 +19,3 @@ object formatNumber extends js.Object {
   def apply(number: Double, formatString: String): String = js.native
   def apply(number: Double, formatString: String, culture: String): String = js.native
 }
-

@@ -11,11 +11,12 @@ import typings.stripe.mod.issuing.cards.IIssuingCardListOptions
 import typings.stripe.mod.issuing.cards.IIssuingCardUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.IssuingCards")
 @js.native
 class IssuingCards () extends StripeResource {
+  
   def create(data: IIssuingCardCreateOptions): js.Promise[IIssuingCard] = js.native
   /**
     * Creates an Issuing Card object.
@@ -23,6 +24,7 @@ class IssuingCards () extends StripeResource {
   def create(data: IIssuingCardCreateOptions, options: HeaderOptions): js.Promise[IIssuingCard] = js.native
   def create(data: IIssuingCardCreateOptions, options: HeaderOptions, response: IResponseFn[IIssuingCard]): js.Promise[IIssuingCard] = js.native
   def create(data: IIssuingCardCreateOptions, response: IResponseFn[IIssuingCard]): js.Promise[IIssuingCard] = js.native
+  
   def list(): js.Promise[IList[IIssuingCard]] = js.native
   def list(data: IIssuingCardListOptions): js.Promise[IList[IIssuingCard]] = js.native
   /**
@@ -34,6 +36,7 @@ class IssuingCards () extends StripeResource {
   def list(options: HeaderOptions): js.Promise[IList[IIssuingCard]] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IIssuingCard]]): js.Promise[IList[IIssuingCard]] = js.native
   def list(response: IResponseFn[IList[IIssuingCard]]): js.Promise[IList[IIssuingCard]] = js.native
+  
   def retrieve(id: String): js.Promise[IIssuingCard] = js.native
   /**
     * Retrieves an Issuing Card object.
@@ -41,6 +44,7 @@ class IssuingCards () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IIssuingCard] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IIssuingCard]): js.Promise[IIssuingCard] = js.native
   def retrieve(id: String, response: IResponseFn[IIssuingCard]): js.Promise[IIssuingCard] = js.native
+  
   def retrieveDetails(id: String): js.Promise[IIssuingCardDetails] = js.native
   /**
     * For virtual cards only. Retrieves an Issuing card_details object that contains the sensitive details of a virtual card.
@@ -48,6 +52,7 @@ class IssuingCards () extends StripeResource {
   def retrieveDetails(id: String, options: HeaderOptions): js.Promise[IIssuingCardDetails] = js.native
   def retrieveDetails(id: String, options: HeaderOptions, response: IResponseFn[IIssuingCardDetails]): js.Promise[IIssuingCardDetails] = js.native
   def retrieveDetails(id: String, response: IResponseFn[IIssuingCardDetails]): js.Promise[IIssuingCardDetails] = js.native
+  
   def update(id: String, data: IIssuingCardUpdateOptions): js.Promise[IIssuingCard] = js.native
   /**
     * Updates the specified Issuing Card object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -61,4 +66,3 @@ class IssuingCards () extends StripeResource {
   ): js.Promise[IIssuingCard] = js.native
   def update(id: String, data: IIssuingCardUpdateOptions, response: IResponseFn[IIssuingCard]): js.Promise[IIssuingCard] = js.native
 }
-

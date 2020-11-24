@@ -3,7 +3,7 @@ package typings.rxDom.mod
 import typings.rx.Rx.Comparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx-dom", "HistoricalSchedulerCls")
 @js.native
@@ -17,4 +17,3 @@ class HistoricalSchedulerCls protected ()
     */
   def this(initialClock: Double, comparer: Comparer[Double, Double]) = this()
 }
-

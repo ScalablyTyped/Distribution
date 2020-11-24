@@ -14,7 +14,7 @@ import typings.phaser.Phaser.Physics.Arcade.Components.Size
 import typings.phaser.Phaser.Physics.Arcade.Components.Velocity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Arcade Physics Sprite is a Sprite with an Arcade Physics body and related components.
@@ -40,6 +40,7 @@ trait Sprite
      with Mass
      with Size
      with Velocity {
+  
   /**
     * **DEPRECATED**: Please use `setBodySize` instead.
     * 
@@ -51,4 +52,3 @@ trait Sprite
   /* InferMemberOverrides */
   override def setSize(width: Double, height: Double): this.type = js.native
 }
-

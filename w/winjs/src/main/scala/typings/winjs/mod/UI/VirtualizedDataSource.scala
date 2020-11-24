@@ -3,7 +3,7 @@ package typings.winjs.mod.UI
 import typings.winjs.WinJS.UI.IListDataAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base class for a custom IListDataSource.
@@ -22,11 +22,11 @@ class VirtualizedDataSource[T] protected ()
   def this(listDataAdapter: IListDataAdapter[T]) = this()
   def this(listDataAdapter: IListDataAdapter[T], options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.VirtualizedDataSource")
 @js.native
 object VirtualizedDataSource extends js.Object {
+  
   //#endregion Methods
   //#region Properties
   /**
@@ -34,4 +34,3 @@ object VirtualizedDataSource extends js.Object {
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

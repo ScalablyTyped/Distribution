@@ -10,9 +10,9 @@ Finds countries by various country codes
 | ------------------ | :-------------: |
 | Full name          | country-code-lookup |
 | Keywords           | fips, iso, country, code, countries |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 8 |
-| # downloads        | 243752 |
+| # downloads        | 345550 |
 | # stars            | 2 |
 
 ## Links

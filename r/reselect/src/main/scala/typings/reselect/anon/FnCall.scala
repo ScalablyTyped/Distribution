@@ -6,13 +6,13 @@ import typings.reselect.mod.ParametricSelector
 import typings.reselect.mod.Selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply[S1, R1, T](selector1: Selector[S1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
   def apply[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
-  def apply[S1, P1, R1, T](selector1: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
   def apply[S, R1, R2, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
@@ -22,6 +22,7 @@ trait FnCall extends js.Object {
     selectors: js.Tuple2[Selector[S, R1], Selector[S, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputSelector[S, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
+  def apply[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
   def apply[S, P, R1, R2, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
@@ -866,4 +867,3 @@ trait FnCall extends js.Object {
     ]
   ] = js.native
 }
-

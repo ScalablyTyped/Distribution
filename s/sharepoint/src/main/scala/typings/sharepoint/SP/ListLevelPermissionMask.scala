@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListLevelPermissionMask extends js.Object
-
 @JSGlobal("SP.ListLevelPermissionMask")
 @js.native
 object ListLevelPermissionMask extends js.Object {
+  
    // : 16,
   @js.native
   sealed trait approveItems extends ListLevelPermissionMask
@@ -52,6 +52,4 @@ object ListLevelPermissionMask extends js.Object {
    // : 64,
   @js.native
   sealed trait viewVersions extends ListLevelPermissionMask
-  
 }
-

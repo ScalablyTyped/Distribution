@@ -10,9 +10,9 @@ six koa
 | ------------------ | :-------------: |
 | Full name          | six-runtime |
 | Keywords           | six, koa |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 97 |
+| # downloads        | 70 |
 | # stars            | 0 |
 
 ## Links

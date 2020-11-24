@@ -9,9 +9,9 @@ A language as a library borrowing concepts from Lisp, Haskell and Scala. JFP con
 | ------------------ | :-------------: |
 | Full name          | jfp |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 241838 |
+| # downloads        | 184298 |
 | # stars            | 1 |
 
 ## Links

@@ -9,9 +9,9 @@ Flexible router which can be used in multiple environments
 | ------------------ | :-------------: |
 | Full name          | crossroads |
 | Keywords           | routes, event, observer, routing, router |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 42 |
-| # downloads        | 305844 |
+| # downloads        | 382667 |
 | # stars            | 7 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Trendlines extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: Double): Trendline = js.native
+  
   /** @param Type [Type=-4132] */
   def Add(
     Type: js.UndefOr[XlTrendlineType],
@@ -23,8 +21,17 @@ trait Trendlines extends js.Object {
     DisplayRSquared: js.UndefOr[Boolean],
     Name: js.UndefOr[String]
   ): Trendline = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: Double): Trendline = js.native
+  
+  val Parent: js.Any = js.native
+  
   def _Default(): Trendline = js.native
   def _Default(Index: js.Any): Trendline = js.native
 }
-

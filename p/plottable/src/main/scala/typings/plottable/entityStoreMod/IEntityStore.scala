@@ -5,10 +5,11 @@ import typings.plottable.interfacesMod.IEntityBounds
 import typings.plottable.interfacesMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
+  
   /**
     * Adds all of the supplied entities to the store.
     *
@@ -29,18 +30,21 @@ trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
     entityBoundsFactory: js.Function1[/* entity */ T, IEntityBounds],
     bounds: Bounds
   ): Unit = js.native
+  
   /**
     * Returns the current internal array of all entities.
     *
     * @returns {T[]} the current internal array of entities.
     */
   def entities(): js.Array[T] = js.native
+  
   /**
     * Returns the entites whose bounding boxes overlap the parameter.
     *
     * @param {IEntityBounds} [bounds] The query bounding box.
     */
   def entitiesInBounds(bounds: IEntityBounds): js.Array[T] = js.native
+  
   /**
     * Returns the entites whose bounding boxes overlap the parameter on the
     * x-axis.
@@ -48,6 +52,7 @@ trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
     * @param {IEntityBounds} [bounds] The query bounding box.
     */
   def entitiesInXBounds(bounds: IEntityBounds): js.Array[T] = js.native
+  
   /**
     * Returns the entites whose bounding boxes overlap the parameter on the
     * y-axis.
@@ -55,6 +60,7 @@ trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
     * @param {IEntityBounds} [bounds] The query bounding box.
     */
   def entitiesInYBounds(bounds: IEntityBounds): js.Array[T] = js.native
+  
   /**
     * Returns the entity closest to a given {Point}
     *
@@ -65,6 +71,7 @@ trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
     * @returns {T} Will return the nearest entity or undefined if none are found
     */
   def entityNearest(point: Point): T = js.native
+  
   /**
     * Returns the entity closest to a given {Point} in the x-dimension. Ties are
     * broken with a sort in the y-dimension.
@@ -73,6 +80,7 @@ trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
     * @returns {T} Will return the nearest entity or undefined if none are found
     */
   def entityNearestX(point: Point): T = js.native
+  
   /**
     * Returns the entity closest to a given {Point} in the y-dimension. Ties are
     * broken with a sort in the x-dimension.
@@ -82,4 +90,3 @@ trait IEntityStore[T /* <: IPositionedEntity */] extends js.Object {
     */
   def entityNearestY(point: Point): T = js.native
 }
-

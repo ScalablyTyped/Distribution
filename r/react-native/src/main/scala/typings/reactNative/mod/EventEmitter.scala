@@ -2,10 +2,11 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventEmitter extends js.Object {
+  
   /**
     * Adds a listener to be invoked when events of the specified type are
     * emitted. An optional calling context may be provided. The data arguments
@@ -19,6 +20,7 @@ trait EventEmitter extends js.Object {
     */
   def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, _]): EmitterSubscription = js.native
   def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, _], context: js.Any): EmitterSubscription = js.native
+  
   /**
     * Emits an event of the given type with the given data. All handlers of that
     * particular type will be notified.
@@ -34,6 +36,7 @@ trait EventEmitter extends js.Object {
     *   emitter.emit('someEvent', 'abc'); // logs 'abc'
     */
   def emit(eventType: String, params: js.Any*): Unit = js.native
+  
   /**
     * Returns an array of listeners that are currently registered for the given
     * event.
@@ -41,6 +44,7 @@ trait EventEmitter extends js.Object {
     * @param eventType - Name of the event to query
     */
   def listeners(eventType: String): js.Array[EmitterSubscription] = js.native
+  
   /**
     * Similar to addListener, except that the listener is removed after it is
     * invoked once.
@@ -52,6 +56,7 @@ trait EventEmitter extends js.Object {
     *   listener
     */
   def once(eventType: String, listener: js.Function1[/* repeated */ js.Any, _], context: js.Any): EmitterSubscription = js.native
+  
   /**
     * Removes all of the registered listeners, including those registered as
     * listener maps.
@@ -61,6 +66,7 @@ trait EventEmitter extends js.Object {
     */
   def removeAllListeners(): Unit = js.native
   def removeAllListeners(eventType: String): Unit = js.native
+  
   /**
     * Provides an API that can be called during an eventing cycle to remove the
     * last listener that was invoked. This allows a developer to provide an event
@@ -83,6 +89,7 @@ trait EventEmitter extends js.Object {
     *   emitter.emit('someEvent', 'def'); // does not log anything
     */
   def removeCurrentListener(): Unit = js.native
+  
   /**
     * Removes the given listener for event of specific type.
     *
@@ -97,10 +104,10 @@ trait EventEmitter extends js.Object {
     *
     */
   def removeListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  
   /**
     * Removes a specific subscription. Called by the `remove()` method of the
     * subscription itself to ensure any necessary cleanup is performed.
     */
   def removeSubscription(subscription: EmitterSubscription): Unit = js.native
 }
-

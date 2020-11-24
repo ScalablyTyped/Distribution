@@ -2,9 +2,28 @@ package typings.tstl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tstlStrings {
+  
+  @scala.inline
+  def divides: divides = "divides".asInstanceOf[divides]
+  
+  @scala.inline
+  def minus: minus = "minus".asInstanceOf[minus]
+  
+  @scala.inline
+  def modules: modules = "modules".asInstanceOf[modules]
+  
+  @scala.inline
+  def multiplies: multiplies = "multiplies".asInstanceOf[multiplies]
+  
+  @scala.inline
+  def negate: negate = "negate".asInstanceOf[negate]
+  
+  @scala.inline
+  def plus: plus = "plus".asInstanceOf[plus]
+  
   @js.native
   sealed trait divides extends js.Object
   
@@ -22,18 +41,4 @@ object tstlStrings {
   
   @js.native
   sealed trait plus extends js.Object
-  
-  @scala.inline
-  def divides: divides = "divides".asInstanceOf[divides]
-  @scala.inline
-  def minus: minus = "minus".asInstanceOf[minus]
-  @scala.inline
-  def modules: modules = "modules".asInstanceOf[modules]
-  @scala.inline
-  def multiplies: multiplies = "multiplies".asInstanceOf[multiplies]
-  @scala.inline
-  def negate: negate = "negate".asInstanceOf[negate]
-  @scala.inline
-  def plus: plus = "plus".asInstanceOf[plus]
 }
-

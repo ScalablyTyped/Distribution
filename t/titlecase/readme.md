@@ -11,8 +11,8 @@ Intelligently converting strings to title case (an enhanced fork of David Gouch'
 | Full name          | titlecase |
 | Keywords           | title-case, title, case, gouch, to-title-case |
 | # releases         | 2 |
-| # dependents       | 44 |
-| # downloads        | 1265115 |
+| # dependents       | 46 |
+| # downloads        | 1400172 |
 | # stars            | 4 |
 
 ## Links

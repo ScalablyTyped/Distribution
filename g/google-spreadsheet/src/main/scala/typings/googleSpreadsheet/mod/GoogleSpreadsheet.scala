@@ -3,7 +3,7 @@ package typings.googleSpreadsheet.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheet")
 @js.native
@@ -15,82 +15,7 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     * @param sheetId document ID from the URL of the Spreadsheet
     */
   def this(sheetId: String) = this()
-  /**
-    * @description
-    * when volatile functions should be recalculated
-    */
-  @JSName("autoRecalc")
-  var autoRecalc_GoogleSpreadsheet: RecalculationInterval = js.native
-  /**
-    * @description
-    * default format for all cells in all worksheets of the document
-    */
-  @JSName("defaultFormat")
-  var defaultFormat_GoogleSpreadsheet: CellFormat = js.native
-  /**
-    * @description
-    * how circular dependencies are resolved with iterative calculations
-    */
-  @JSName("iterativeCalculationSettings")
-  var iterativeCalculationSettings_GoogleSpreadsheet: IterativeCalculationSetting = js.native
-  /**
-    * @description
-    * document locale/language
-    * - ISO code format
-    * - ex: "en", "en_US"
-    */
-  @JSName("locale")
-  var locale_GoogleSpreadsheet: String = js.native
-  /**
-    * @description
-    * count of child worksheets
-    * - shorthand for spreadsheetDoc.sheetsByIndex.length
-    */
-  val sheetCount: Double = js.native
-  /**
-    * @description
-    * object of child worksheets
-    * - keyed by the worksheet sheetId
-    */
-  val sheetsById: StringDictionary[GoogleSpreadsheetWorksheet] = js.native
-  /**
-    * @description
-    * array of child worksheets as displayed in the UI
-    * - ordered by their tab index
-    */
-  val sheetsByIndex: js.Array[GoogleSpreadsheetWorksheet] = js.native
-  // #endregion
-  // #region NON-BASIC PROPERTIES added here
-  /**
-    * @description
-    * document ID
-    * - from the Spreadsheet document URL
-    */
-  // in docs as "basic property" but can not be updated
-  // moved here so it does not appear as an option in methods that use basic properties
-  val spreadsheetId: String = js.native
-  /**
-    * @description
-    * theme applied to all worksheets of the document
-    */
-  @JSName("spreadsheetTheme")
-  var spreadsheetTheme_GoogleSpreadsheet: SpreadsheetTheme = js.native
-  /**
-    * @description
-    * document timezone
-    * - CLDR format
-    * - ex: "America/New_York", "GMT-07:00"
-    */
-  @JSName("timeZone")
-  var timeZone_GoogleSpreadsheet: String = js.native
-  // #region BASIC PROPERTIES
-  // These properties should reflect the ones in the SpreadsheetBasicProperties interface
-  /**
-    * @description
-    * document title
-    */
-  @JSName("title")
-  var title_GoogleSpreadsheet: String = js.native
+  
   /**
     * @description
     * add a new named range to the Spreadsheet Document
@@ -107,6 +32,7 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
   def addNamedRange(name: String, range: String, rangeId: String): js.Promise[Unit] = js.native
   def addNamedRange(name: String, range: WorksheetGridRange): js.Promise[Unit] = js.native
   def addNamedRange(name: String, range: WorksheetGridRange, rangeId: String): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * add a new worksheet to the Spreadsheet document
@@ -116,6 +42,7 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     */
   def addSheet(): js.Promise[GoogleSpreadsheetWorksheet] = js.native
   def addSheet(worksheetProperties: WorksheetBasicProperties): js.Promise[GoogleSpreadsheetWorksheet] = js.native
+  
   /**
     * @description
     * add a new worksheet to the Spreadsheet document
@@ -125,6 +52,21 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     */
   def addWorksheet(): js.Promise[GoogleSpreadsheetWorksheet] = js.native
   def addWorksheet(worksheetProperties: WorksheetBasicProperties): js.Promise[GoogleSpreadsheetWorksheet] = js.native
+  
+  /**
+    * @description
+    * when volatile functions should be recalculated
+    */
+  @JSName("autoRecalc")
+  var autoRecalc_GoogleSpreadsheet: RecalculationInterval = js.native
+  
+  /**
+    * @description
+    * default format for all cells in all worksheets of the document
+    */
+  @JSName("defaultFormat")
+  var defaultFormat_GoogleSpreadsheet: CellFormat = js.native
+  
   /**
     * @description
     * delete a named range from the Spreadsheet document
@@ -132,6 +74,7 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     * @param rangeId unique ID of the range to delete
     */
   def deleteNamedRange(rangeId: String): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * delete a worksheet from the Spreadsheet document
@@ -140,17 +83,100 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     * @param sheetId ID of the worksheet to delete
     */
   def deleteSheet(sheetId: String): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
+    * how circular dependencies are resolved with iterative calculations
+    */
+  @JSName("iterativeCalculationSettings")
+  var iterativeCalculationSettings_GoogleSpreadsheet: IterativeCalculationSetting = js.native
+  
   /**
     * @description
     * load basic Spreadsheet document properties and child worksheets
     */
   def loadInfo(): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
+    * document locale/language
+    * - ISO code format
+    * - ex: "en", "en_US"
+    */
+  @JSName("locale")
+  var locale_GoogleSpreadsheet: String = js.native
+  
   /**
     * @description
     * clear local cache of properties and child worksheets
     * - note: you must call loadInfo() again to re-load the cache
     */
   def resetLocalCache(): Unit = js.native
+  
+  /**
+    * @description
+    * count of child worksheets
+    * - shorthand for spreadsheetDoc.sheetsByIndex.length
+    */
+  val sheetCount: Double = js.native
+  
+  /**
+    * @description
+    * object of child worksheets
+    * - keyed by the worksheet sheetId
+    */
+  val sheetsById: StringDictionary[GoogleSpreadsheetWorksheet] = js.native
+  
+  /**
+    * @description
+    * array of child worksheets as displayed in the UI
+    * - ordered by their tab index
+    */
+  val sheetsByIndex: js.Array[GoogleSpreadsheetWorksheet] = js.native
+  
+  /**
+    * @description
+    * object of child worksheets
+    * - keyed by the worksheet title
+    */
+  val sheetsByTitle: StringDictionary[GoogleSpreadsheetWorksheet] = js.native
+  
+  // #endregion
+  // #region NON-BASIC PROPERTIES added here
+  /**
+    * @description
+    * document ID
+    * - from the Spreadsheet document URL
+    */
+  // in docs as "basic property" but can not be updated
+  // moved here so it does not appear as an option in methods that use basic properties
+  val spreadsheetId: String = js.native
+  
+  /**
+    * @description
+    * theme applied to all worksheets of the document
+    */
+  @JSName("spreadsheetTheme")
+  var spreadsheetTheme_GoogleSpreadsheet: SpreadsheetTheme = js.native
+  
+  /**
+    * @description
+    * document timezone
+    * - CLDR format
+    * - ex: "America/New_York", "GMT-07:00"
+    */
+  @JSName("timeZone")
+  var timeZone_GoogleSpreadsheet: String = js.native
+  
+  // #region BASIC PROPERTIES
+  // These properties should reflect the ones in the SpreadsheetBasicProperties interface
+  /**
+    * @description
+    * document title
+    */
+  @JSName("title")
+  var title_GoogleSpreadsheet: String = js.native
+  
   /**
     * @description
     * update basic Spreadsheet document properties
@@ -158,6 +184,7 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     * @param properties basic Spreadsheet document properties to update
     */
   def updateProperties(properties: SpreadsheetBasicProperties): js.Promise[Unit] = js.native
+  
   // #endregion
   // #region SYNCHRONOUS METHODS
   /**
@@ -169,12 +196,14 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     * @param key API key for your Google project
     */
   def useApiKey(key: String): Unit = js.native
+  
   /**
     * @description
     * Set an access token to use for externally managed auth
     * - this method assumes you are creating and managing/refreshing the token yourself
     */
   def useRawAccessToken(token: String): Unit = js.native
+  
   // #endregion
   // #region ASYNCHRONOUS METHODS
   /**
@@ -200,4 +229,3 @@ class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
     */
   def useServiceAccountAuth(credentials: ServiceAccountCredentials): js.Promise[Unit] = js.native
 }
-

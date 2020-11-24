@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CoreAcceleratorKeyEventType extends js.Object
-
 @JSGlobal("Windows.UI.Core.CoreAcceleratorKeyEventType")
 @js.native
 object CoreAcceleratorKeyEventType extends js.Object {
+  
   @js.native
   sealed trait character extends CoreAcceleratorKeyEventType
   
@@ -36,6 +36,4 @@ object CoreAcceleratorKeyEventType extends js.Object {
   
   @js.native
   sealed trait unicodeCharacter extends CoreAcceleratorKeyEventType
-  
 }
-

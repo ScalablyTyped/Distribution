@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "reactstrap" : "8.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "reactstrap" : "8.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

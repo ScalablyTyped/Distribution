@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Name of event fired when a key is released.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "EVENT_KEYUP")
 @js.native
 object EVENT_KEYUP extends TopLevel[String]
-

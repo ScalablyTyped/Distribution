@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The View object wraps an HTML element and handles drawing and user
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class View ()
   extends typings.paper.paper.View
-

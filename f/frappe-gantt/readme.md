@@ -10,9 +10,9 @@ A simple, modern, interactive gantt library for the web
 | ------------------ | :-------------: |
 | Full name          | frappe-gantt |
 | Keywords           | gantt, svg, simple gantt, project timeline, interactive gantt, project management |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 114288 |
+| # releases         | 4 |
+| # dependents       | 7 |
+| # downloads        | 172250 |
 | # stars            | 1 |
 
 ## Links

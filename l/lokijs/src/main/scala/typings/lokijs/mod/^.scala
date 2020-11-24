@@ -4,7 +4,7 @@ import typings.lokijs.Loki
 import typings.lokijs.anon.PartialLokiConstructorOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LokiJS
@@ -17,10 +17,9 @@ class ^ protected () extends Loki {
   def this(filename: String) = this()
   def this(filename: String, options: PartialLokiConstructorOpt) = this()
 }
-
 @JSImport("lokijs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var LokiOps: typings.lokijs.LokiOps = js.native
 }
-

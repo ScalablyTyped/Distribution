@@ -10,9 +10,9 @@ High quality image resize in browser.
 | ------------------ | :-------------: |
 | Full name          | pica |
 | Keywords           | resize, scale, image, lanczos, canvas |
-| # releases         | 8 |
-| # dependents       | 30 |
-| # downloads        | 709296 |
+| # releases         | 9 |
+| # dependents       | 32 |
+| # downloads        | 766466 |
 | # stars            | 5 |
 
 ## Links

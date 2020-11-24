@@ -31,49 +31,82 @@ import typings.agGrid.valueFormatterServiceMod.ValueFormatterService
 import typings.agGrid.valueServiceMod.ValueService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/rendering/beans", JSImport.Namespace)
 @js.native
 object beansMod extends js.Object {
+  
   @js.native
   class Beans () extends js.Object {
+    
     @JSName("$compile")
     var $compile: js.Any = js.native
+    
     var cellEditorFactory: CellEditorFactory = js.native
+    
     var cellRendererFactory: CellRendererFactory = js.native
+    
     var cellRendererService: CellRendererService = js.native
+    
     var columnAnimationService: ColumnAnimationService = js.native
+    
     var columnApi: ColumnApi = js.native
+    
     var columnController: ColumnController = js.native
+    
     var columnHoverService: ColumnHoverService = js.native
+    
     var componentResolver: ComponentResolver = js.native
+    
     var context: Context = js.native
+    
     var contextMenuFactory: IContextMenuFactory = js.native
+    
     var doingMasterDetail: Boolean = js.native
+    
     var dragAndDropService: DragAndDropService = js.native
+    
     var enterprise: Boolean = js.native
+    
     var eventService: EventService = js.native
+    
     var expressionService: ExpressionService = js.native
+    
     var filterManager: FilterManager = js.native
+    
     var focusedCellController: FocusedCellController = js.native
+    
     var gridApi: GridApi = js.native
+    
     var gridOptionsWrapper: GridOptionsWrapper = js.native
+    
     var gridPanel: GridPanel = js.native
+    
     var heightScaler: HeightScaler = js.native
+    
     var paginationProxy: PaginationProxy = js.native
+    
     var popupService: PopupService = js.native
-    var rangeController: IRangeController = js.native
-    var rowRenderer: RowRenderer = js.native
-    var sortController: SortController = js.native
-    var stylingService: StylingService = js.native
-    var taskQueue: AnimationFrameService = js.native
-    var templateService: TemplateService = js.native
-    var valueFormatterService: ValueFormatterService = js.native
-    var valueService: ValueService = js.native
+    
     /* private */ def postConstruct(): js.Any = js.native
+    
+    var rangeController: IRangeController = js.native
+    
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
+    
+    var rowRenderer: RowRenderer = js.native
+    
+    var sortController: SortController = js.native
+    
+    var stylingService: StylingService = js.native
+    
+    var taskQueue: AnimationFrameService = js.native
+    
+    var templateService: TemplateService = js.native
+    
+    var valueFormatterService: ValueFormatterService = js.native
+    
+    var valueService: ValueService = js.native
   }
-  
 }
-

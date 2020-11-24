@@ -2,11 +2,12 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.between")
 @js.native
 object between extends js.Object {
+  
   /**
     * Creates a `<PropertyIsBetween>` comparison operator to test whether an expression
     * value lies within a range given by a lower and upper bound (inclusive).
@@ -19,4 +20,3 @@ object between extends js.Object {
     */
   def apply(propertyName: String, lowerBoundary: Double, upperBoundary: Double): IsBetween = js.native
 }
-

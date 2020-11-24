@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used for executing a static SQL statement and obtaining the results produced by it.
@@ -30,6 +30,7 @@ trait Statement
      with XBatchExecution
      with XWarningsSupplier
      with XMultipleResults {
+  
   /**
     * defines the SQL cursor name that will be used by subsequent {@link Statement}`execute` methods.
     *
@@ -42,21 +43,25 @@ trait Statement
     * ResultSet} being used for positioning. Also, cursor names must be unique within a connection.
     */
   var CursorName: String = js.native
+  
   /**
     * returns if escape processing is on or off. If escape scanning is on (the default), the driver will do escape substitution before sending the SQL to
     * the database.
     */
   var EscapeProcessing: Boolean = js.native
+  
   /**
     * retrieves the direction for fetching rows from database tables that is the default for result sets generated from this `Statement` object. ;  If this
     * `Statement` object has not set a fetch direction, the return value is implementation-specific.
     */
   var FetchDirection: Double = js.native
+  
   /**
     * retrieves the number of result set rows that is the default fetch size for result sets generated from this `Statement` object. ;  If this `Statement`
     * object has not set a fetch size, the return value is implementation-specific.
     */
   var FetchSize: Double = js.native
+  
   /**
     * returns the maximum number of bytes allowed for any column value.
     *
@@ -66,29 +71,33 @@ trait Statement
     * limit is exceeded, the excess data is silently discarded. ;  There is no limitation, if set to zero.
     */
   var MaxFieldSize: Double = js.native
+  
   /**
     * retrieves the maximum number of rows that a {@link ResultSet} can contain. If the limit is exceeded, the excess rows are silently dropped. ;  There is
     * no limitation, if set to zero.
     */
   var MaxRows: Double = js.native
+  
   /**
     * retrieves the number of seconds the driver will wait for a {@link Statement} to execute. If the limit is exceeded, a {@link SQLException} is thrown.
     * There is no limitation, if set to zero.
     */
   var QueryTimeOut: Double = js.native
+  
   /**
     * retrieves the result set concurrency.
     * @see com.sun.star.sdbc.ResultSetConcurrency
     */
   var ResultSetConcurrency: Double = js.native
+  
   /**
     * determine the result set type.
     * @see com.sun.star.sdbc.ResultSetType
     */
   var ResultSetType: Double = js.native
 }
-
 object Statement {
+  
   @scala.inline
   def apply(
     Connection: XConnection,
@@ -137,36 +146,47 @@ object Statement {
     val __obj = js.Dynamic.literal(Connection = Connection.asInstanceOf[js.Any], CursorName = CursorName.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], FetchDirection = FetchDirection.asInstanceOf[js.Any], FetchSize = FetchSize.asInstanceOf[js.Any], MaxFieldSize = MaxFieldSize.asInstanceOf[js.Any], MaxRows = MaxRows.asInstanceOf[js.Any], MoreResults = MoreResults.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], QueryTimeOut = QueryTimeOut.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], ResultSetConcurrency = ResultSetConcurrency.asInstanceOf[js.Any], ResultSetType = ResultSetType.asInstanceOf[js.Any], UpdateCount = UpdateCount.asInstanceOf[js.Any], Warnings = Warnings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addBatch = js.Any.fromFunction1(addBatch), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), cancel = js.Any.fromFunction0(cancel), clearBatch = js.Any.fromFunction0(clearBatch), clearWarnings = js.Any.fromFunction0(clearWarnings), close = js.Any.fromFunction0(close), dispose = js.Any.fromFunction0(dispose), execute = js.Any.fromFunction1(execute), executeBatch = js.Any.fromFunction0(executeBatch), executeQuery = js.Any.fromFunction1(executeQuery), executeUpdate = js.Any.fromFunction1(executeUpdate), getConnection = js.Any.fromFunction0(getConnection), getMoreResults = js.Any.fromFunction0(getMoreResults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getResultSet = js.Any.fromFunction0(getResultSet), getUpdateCount = js.Any.fromFunction0(getUpdateCount), getWarnings = js.Any.fromFunction0(getWarnings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[Statement]
   }
+  
   @scala.inline
   implicit class StatementOps[Self <: Statement] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCursorName(value: String): Self = this.set("CursorName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFetchDirection(value: Double): Self = this.set("FetchDirection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFetchSize(value: Double): Self = this.set("FetchSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxFieldSize(value: Double): Self = this.set("MaxFieldSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxRows(value: Double): Self = this.set("MaxRows", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQueryTimeOut(value: Double): Self = this.set("QueryTimeOut", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResultSetConcurrency(value: Double): Self = this.set("ResultSetConcurrency", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResultSetType(value: Double): Self = this.set("ResultSetType", value.asInstanceOf[js.Any])
   }
-  
 }
-

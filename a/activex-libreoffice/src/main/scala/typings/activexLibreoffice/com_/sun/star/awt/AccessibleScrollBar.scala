@@ -15,7 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a scroll bar.
@@ -28,8 +28,8 @@ trait AccessibleScrollBar
      with XAccessibleEventBroadcaster
      with XAccessibleAction
      with XAccessibleValue
-
 object AccessibleScrollBar {
+  
   @scala.inline
   def apply(
     AccessibleActionCount: Double,
@@ -94,4 +94,3 @@ object AccessibleScrollBar {
     __obj.asInstanceOf[AccessibleScrollBar]
   }
 }
-

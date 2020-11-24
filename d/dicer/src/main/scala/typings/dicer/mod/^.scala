@@ -2,7 +2,7 @@ package typings.dicer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable:unified-signatures
 /**
@@ -25,4 +25,3 @@ class ^ protected () extends Dicer {
     */
   def this(config: Config) = this()
 }
-

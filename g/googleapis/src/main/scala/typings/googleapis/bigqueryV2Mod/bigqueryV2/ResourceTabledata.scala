@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Tabledata")
 @js.native
 class ResourceTabledata protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigquery.tabledata.insertAll
     * @desc Streams data into BigQuery one record at a time without needing to
@@ -111,6 +113,7 @@ class ResourceTabledata protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTableDataInsertAllResponse]
   ): Unit = js.native
+  
   /**
     * bigquery.tabledata.list
     * @desc Retrieves table data from a specified set of rows. Requires the
@@ -219,4 +222,3 @@ class ResourceTabledata protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTableDataList]
   ): Unit = js.native
 }
-

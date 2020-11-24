@@ -3,7 +3,7 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `ModalDialog` displays over the video and its controls, which blocks
@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ModalDialog extends Component {
-  var closeable_ : Boolean = js.native
-  @JSName("options_")
-  var options__ModalDialog: ModalDialogOptions = js.native
+  
   /**
     * Closes the modal, does nothing if the `ModalDialog` is
     * not open.
@@ -25,6 +23,7 @@ trait ModalDialog extends Component {
     * @fires ModalDialog#modalclose
     */
   def close(): Unit = js.native
+  
   /**
     * Check to see if the `ModalDialog` is closeable via the UI.
     *
@@ -34,6 +33,9 @@ trait ModalDialog extends Component {
     * @return Returns the final value of the closable option.
     */
   def closeable(value: Boolean): Boolean = js.native
+  
+  var closeable_ : Boolean = js.native
+  
   /**
     * Gets or sets the modal content, which gets normalized before being
     * rendered into the DOM.
@@ -50,6 +52,7 @@ trait ModalDialog extends Component {
     */
   def content(): js.Any = js.native
   def content(value: Content): js.Any = js.native
+  
   /**
     * Returns the description string for this modal. Primarily used for
     * accessibility.
@@ -57,6 +60,7 @@ trait ModalDialog extends Component {
     * @return The localized or raw description of this modal.
     */
   def description(): String = js.native
+  
   /**
     * Empties the content element. This happens anytime the modal is filled.
     *
@@ -64,11 +68,13 @@ trait ModalDialog extends Component {
     * @fires ModalDialog#modalempty
     */
   def empty(): Unit = js.native
+  
   /**
     * Fill the modal's content element with the modal's "content" option.
     * The content element will be emptied before this change takes place.
     */
   def fill(): Unit = js.native
+  
   /**
     * Fill the modal's content element with arbitrary content.
     * The content element will be emptied before this change takes place.
@@ -81,12 +87,14 @@ trait ModalDialog extends Component {
     */
   def fillWith(): Unit = js.native
   def fillWith(content: Content): Unit = js.native
+  
   /**
     * Keydown handler. Attached when modal is focused.
     *
     * @listens keydown
     */
   def handleKeyDown(): Unit = js.native
+  
   /**
     * Handles `keydown` events on the document, looking for ESC, which closes
     * the modal.
@@ -97,12 +105,14 @@ trait ModalDialog extends Component {
     * @listens keydown
     */
   def handleKeyPress(e: Event): Unit = js.native
+  
   /**
     * Returns the label string for this modal. Primarily used for accessibility.
     *
     * @return the localized or raw label of this modal.
     */
   def label(): String = js.native
+  
   /**
     * Opens the modal.
     *
@@ -110,6 +120,7 @@ trait ModalDialog extends Component {
     * @fires ModalDialog#modalopen
     */
   def open(): Unit = js.native
+  
   /**
     * If the `ModalDialog` is currently open or closed.
     *
@@ -120,5 +131,7 @@ trait ModalDialog extends Component {
     */
   def opened(): Boolean = js.native
   def opened(value: Boolean): Boolean = js.native
+  
+  @JSName("options_")
+  var options__ModalDialog: ModalDialogOptions = js.native
 }
-

@@ -56,15 +56,20 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   val ADD: typings.p5.mod.ADD = js.native
+  
   val ALT: Double = js.native
+  
   val ARROW: typings.p5.mod.ARROW = js.native
+  
   val AUDIO: typings.p5.mod.AUDIO = js.native
+  
   /**
     *   AUTO allows us to automatically set the width or
     *   height of an element (but not both), based on the
@@ -73,30 +78,52 @@ object global extends js.Object {
     *   AUTO, at a time.
     */
   val AUTO: typings.p5.mod.AUTO = js.native
+  
   val AXES: typings.p5.mod.AXES = js.native
+  
   val BACKSPACE: Double = js.native
+  
   val BASELINE: typings.p5.mod.BASELINE = js.native
+  
   val BEVEL: typings.p5.mod.BEVEL = js.native
+  
   @JSName("BEZIER")
   val BEZIER_ : BEZIER = js.native
+  
   @JSName("BLEND")
   val BLEND_ : BLEND = js.native
+  
   val BLUR: typings.p5.mod.BLUR = js.native
+  
   val BOLD: typings.p5.mod.BOLD = js.native
+  
   val BOLDITALIC: typings.p5.mod.BOLDITALIC = js.native
+  
   val BOTTOM: typings.p5.mod.BOTTOM = js.native
+  
   val BURN: typings.p5.mod.BURN = js.native
+  
   val CENTER: typings.p5.mod.CENTER = js.native
+  
   val CHORD: typings.p5.mod.CHORD = js.native
+  
   val CLAMP: typings.p5.mod.CLAMP = js.native
+  
   val CLOSE: typings.p5.mod.CLOSE = js.native
+  
   val CONTROL: Double = js.native
+  
   val CORNER: typings.p5.mod.CORNER = js.native
+  
   val CORNERS: typings.p5.mod.CORNERS = js.native
+  
   val CROSS: typings.p5.mod.CROSS = js.native
+  
   @JSName("CURVE")
   val CURVE_ : CURVE = js.native
+  
   val DARKEST: typings.p5.mod.DARKEST = js.native
+  
   /**
     *   Constant to be used with angleMode() function, to
     *   set the mode which p5.js interprates and
@@ -104,19 +131,32 @@ object global extends js.Object {
     */
   @JSName("DEGREES")
   val DEGREES_ : DEGREES = js.native
+  
   val DELETE: Double = js.native
+  
   val DIFFERENCE: typings.p5.mod.DIFFERENCE = js.native
+  
   val DILATE: typings.p5.mod.DILATE = js.native
+  
   val DODGE: typings.p5.mod.DODGE = js.native
+  
   val DOWN_ARROW: Double = js.native
+  
   val ENTER: Double = js.native
+  
   val ERODE: typings.p5.mod.ERODE = js.native
+  
   val ESCAPE: Double = js.native
+  
   val EXCLUSION: typings.p5.mod.EXCLUSION = js.native
+  
   @JSName("FILL")
   val FILL_ : FILL = js.native
+  
   val GRAY: typings.p5.mod.GRAY = js.native
+  
   val GRID: typings.p5.mod.GRID = js.native
+  
   /**
     *   HALF_PI is a mathematical constant with the value
     *   1.57079632679489661923. It is half the ratio of
@@ -125,37 +165,65 @@ object global extends js.Object {
     *   functions sin() and cos().
     */
   val HALF_PI: Double = js.native
+  
   val HAND: typings.p5.mod.HAND = js.native
+  
   val HARD_LIGHT: typings.p5.mod.HARD_LIGHT = js.native
+  
   val HSB: typings.p5.mod.HSB = js.native
+  
   val HSL: typings.p5.mod.HSL = js.native
+  
   @JSName("IMAGE")
   val IMAGE_ : typings.p5.mod.IMAGE_ = js.native
+  
   val IMMEDIATE: typings.p5.mod.IMMEDIATE = js.native
+  
   val INVERT: typings.p5.mod.INVERT = js.native
+  
   val ITALIC: typings.p5.mod.ITALIC = js.native
+  
   val LANDSCAPE: typings.p5.mod.LANDSCAPE = js.native
+  
   val LEFT: typings.p5.mod.LEFT = js.native
+  
   val LEFT_ARROW: Double = js.native
+  
   val LIGHTEST: typings.p5.mod.LIGHTEST = js.native
+  
   val LINEAR: typings.p5.mod.LINEAR = js.native
+  
   val LINES: typings.p5.mod.LINES = js.native
+  
   val LINE_LOOP: typings.p5.mod.LINE_LOOP = js.native
+  
   val LINE_STRIP: typings.p5.mod.LINE_STRIP = js.native
+  
   val MIRROR: typings.p5.mod.MIRROR = js.native
+  
   val MITER: typings.p5.mod.MITER = js.native
+  
   val MOVE: typings.p5.mod.MOVE = js.native
+  
   val MULTIPLY: typings.p5.mod.MULTIPLY = js.native
+  
   val NEAREST: typings.p5.mod.NEAREST = js.native
+  
   val NORMAL: typings.p5.mod.NORMAL = js.native
+  
   val OPAQUE: typings.p5.mod.OPAQUE = js.native
+  
   val OPEN: typings.p5.mod.OPEN = js.native
+  
   val OPTION: Double = js.native
+  
   val OVERLAY: typings.p5.mod.OVERLAY = js.native
+  
   /**
     *   The default, two-dimensional renderer.
     */
   val P2D: typings.p5.mod.P2D = js.native
+  
   /**
     *   PI is a mathematical constant with the value
     *   3.14159265358979323846. It is the ratio of the
@@ -164,14 +232,23 @@ object global extends js.Object {
     *   functions sin() and cos().
     */
   val PI: Double = js.native
+  
   val PIE: typings.p5.mod.PIE = js.native
+  
   val POINTS: typings.p5.mod.POINTS = js.native
+  
   val PORTRAIT: typings.p5.mod.PORTRAIT = js.native
+  
   val POSTERIZE: typings.p5.mod.POSTERIZE = js.native
+  
   val PROJECT: typings.p5.mod.PROJECT = js.native
+  
   val QUADRATIC: typings.p5.mod.QUADRATIC = js.native
+  
   val QUADS: typings.p5.mod.QUADS = js.native
+  
   val QUAD_STRIP: typings.p5.mod.QUAD_STRIP = js.native
+  
   /**
     *   QUARTER_PI is a mathematical constant with the
     *   value 0.7853982. It is one quarter the ratio of
@@ -180,6 +257,7 @@ object global extends js.Object {
     *   functions sin() and cos().
     */
   val QUARTER_PI: Double = js.native
+  
   /**
     *   Constant to be used with angleMode() function, to
     *   set the mode which p5.js interprates and
@@ -187,24 +265,40 @@ object global extends js.Object {
     */
   @JSName("RADIANS")
   val RADIANS_ : RADIANS = js.native
+  
   val RADIUS: typings.p5.mod.RADIUS = js.native
+  
   val REPEAT: typings.p5.mod.REPEAT = js.native
+  
   val REPLACE: typings.p5.mod.REPLACE = js.native
+  
   val RETURN: Double = js.native
+  
   val RGB: typings.p5.mod.RGB = js.native
+  
   val RIGHT: typings.p5.mod.RIGHT = js.native
+  
   val RIGHT_ARROW: Double = js.native
+  
   @JSName("ROUND")
   val ROUND_ : ROUND = js.native
+  
   val SCREEN: typings.p5.mod.SCREEN = js.native
+  
   val SHIFT: Double = js.native
+  
   val SOFT_LIGHT: typings.p5.mod.SOFT_LIGHT = js.native
+  
   @JSName("SQUARE")
   val SQUARE_ : SQUARE = js.native
+  
   @JSName("STROKE")
   val STROKE_ : STROKE = js.native
+  
   val SUBTRACT: typings.p5.mod.SUBTRACT = js.native
+  
   val TAB: Double = js.native
+  
   /**
     *   TAU is an alias for TWO_PI, a mathematical
     *   constant with the value 6.28318530717958647693. It
@@ -214,15 +308,23 @@ object global extends js.Object {
     *   and cos().
     */
   val TAU: Double = js.native
+  
   @JSName("TEXTURE")
   val TEXTURE_ : TEXTURE = js.native
+  
   @JSName("TEXT")
   val TEXT_ : TEXT = js.native
+  
   val THRESHOLD: typings.p5.mod.THRESHOLD = js.native
+  
   val TOP: typings.p5.mod.TOP = js.native
+  
   val TRIANGLES: typings.p5.mod.TRIANGLES = js.native
+  
   val TRIANGLE_FAN: typings.p5.mod.TRIANGLE_FAN = js.native
+  
   val TRIANGLE_STRIP: typings.p5.mod.TRIANGLE_STRIP = js.native
+  
   /**
     *   TWO_PI is a mathematical constant with the value
     *   6.28318530717958647693. It is twice the ratio of
@@ -231,364 +333,20 @@ object global extends js.Object {
     *   functions sin() and cos().
     */
   val TWO_PI: Double = js.native
+  
   val UP_ARROW: Double = js.native
+  
   val VIDEO: typings.p5.mod.VIDEO = js.native
+  
   val WAIT: typings.p5.mod.WAIT = js.native
+  
   /**
     *   One of the two render modes in p5.js: P2D (default
     *   renderer) and WEBGL Enables 3D render by
     *   introducing the third dimension: Z
     */
   val WEBGL: typings.p5.mod.WEBGL = js.native
-  /**
-    *   The system variable accelerationX always contains
-    *   the acceleration of the device along the x axis.
-    *   Value is represented as meters per second squared.
-    */
-  var accelerationX: Double = js.native
-  /**
-    *   The system variable accelerationY always contains
-    *   the acceleration of the device along the y axis.
-    *   Value is represented as meters per second squared.
-    */
-  var accelerationY: Double = js.native
-  /**
-    *   The system variable accelerationZ always contains
-    *   the acceleration of the device along the z axis.
-    *   Value is represented as meters per second squared.
-    */
-  var accelerationZ: Double = js.native
-  /**
-    *   The system variable deltaTime contains the time
-    *   difference between the beginning of the previous
-    *   frame and the beginning of the current frame in
-    *   milliseconds.  This variable is useful for
-    *   creating time sensitive animation or physics
-    *   calculation that should stay constant regardless
-    *   of frame rate.
-    */
-  var deltaTime: Double = js.native
-  /**
-    *   The system variable deviceOrientation always
-    *   contains the orientation of the device. The value
-    *   of this variable will either be set 'landscape' or
-    *   'portrait'. If no data is available it will be set
-    *   to 'undefined'. either LANDSCAPE or PORTRAIT.
-    */
-  var deviceOrientation: UNKNOWN_P5_CONSTANT = js.native
-  /**
-    *   System variable that stores the height of the
-    *   screen display according to The default
-    *   pixelDensity. This is used to run a full-screen
-    *   program on any display size. To return actual
-    *   screen size, multiply this by pixelDensity.
-    */
-  var displayHeight: Double = js.native
-  /**
-    *   System variable that stores the width of the
-    *   screen display according to The default
-    *   pixelDensity. This is used to run a full-screen
-    *   program on any display size. To return actual
-    *   screen size, multiply this by pixelDensity.
-    */
-  var displayWidth: Double = js.native
-  /**
-    *   Confirms if the window a p5.js program is in is
-    *   "focused," meaning that the sketch will accept
-    *   mouse or keyboard input. This variable is "true"
-    *   if the window is focused and "false" if not.
-    */
-  var focused: Boolean = js.native
-  /**
-    *   The system variable frameCount contains the number
-    *   of frames that have been displayed since the
-    *   program started. Inside setup() the value is 0,
-    *   after the first iteration of draw it is 1, etc.
-    */
-  var frameCount: Double = js.native
-  /**
-    *   System variable that stores the height of the
-    *   drawing canvas. This value is set by the second
-    *   parameter of the createCanvas() function. For
-    *   example, the function call createCanvas(320, 240)
-    *   sets the height variable to the value 240. The
-    *   value of height defaults to 100 if createCanvas()
-    *   is not used in a program.
-    */
-  var height: Double = js.native
-  /**
-    *   The system variable key always contains the value
-    *   of the most recent key on the keyboard that was
-    *   typed. To get the proper capitalization, it is
-    *   best to use it within keyTyped(). For non-ASCII
-    *   keys, use the keyCode variable.
-    */
-  var key: String = js.native
-  /**
-    *   The variable keyCode is used to detect special
-    *   keys such as BACKSPACE, DELETE, ENTER, RETURN,
-    *   TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT,
-    *   UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. You
-    *   can also check for custom keys by looking up the
-    *   keyCode of any key on a site like this:
-    *   keycode.info.
-    */
-  var keyCode: Double = js.native
-  /**
-    *   The boolean system variable keyIsPressed is true
-    *   if any key is pressed and false if no keys are
-    *   pressed.
-    */
-  var keyIsPressed: Boolean = js.native
-  /**
-    *   Processing automatically tracks if the mouse
-    *   button is pressed and which button is pressed. The
-    *   value of the system variable mouseButton is either
-    *   LEFT, RIGHT, or CENTER depending on which button
-    *   was pressed last. Warning: different browsers may
-    *   track mouseButton differently.
-    */
-  var mouseButton: UNKNOWN_P5_CONSTANT = js.native
-  /**
-    *   The boolean system variable mouseIsPressed is true
-    *   if the mouse is pressed and false if not.
-    */
-  var mouseIsPressed: Boolean = js.native
-  /**
-    *   The system variable mouseX always contains the
-    *   current horizontal position of the mouse, relative
-    *   to (0, 0) of the canvas. The value at the top-left
-    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
-    *   for WebGL. If touch is used instead of mouse
-    *   input, mouseX will hold the x value of the most
-    *   recent touch point.
-    */
-  var mouseX: Double = js.native
-  /**
-    *   The system variable mouseY always contains the
-    *   current vertical position of the mouse, relative
-    *   to (0, 0) of the canvas. The value at the top-left
-    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
-    *   for WebGL. If touch is used instead of mouse
-    *   input, mouseY will hold the y value of the most
-    *   recent touch point.
-    */
-  var mouseY: Double = js.native
-  /**
-    *   The system variable pAccelerationX always contains
-    *   the acceleration of the device along the x axis in
-    *   the frame previous to the current frame. Value is
-    *   represented as meters per second squared.
-    */
-  var pAccelerationX: Double = js.native
-  /**
-    *   The system variable pAccelerationY always contains
-    *   the acceleration of the device along the y axis in
-    *   the frame previous to the current frame. Value is
-    *   represented as meters per second squared.
-    */
-  var pAccelerationY: Double = js.native
-  /**
-    *   The system variable pAccelerationZ always contains
-    *   the acceleration of the device along the z axis in
-    *   the frame previous to the current frame. Value is
-    *   represented as meters per second squared.
-    */
-  var pAccelerationZ: Double = js.native
-  /**
-    *   The system variable pRotationX always contains the
-    *   rotation of the device along the x axis in the
-    *   frame previous to the current frame. Value is
-    *   represented as 0 to +/-180 degrees.  pRotationX
-    *   can also be used with rotationX to determine the
-    *   rotate direction of the device along the X-axis.
-    */
-  var pRotationX: Double = js.native
-  /**
-    *   The system variable pRotationY always contains the
-    *   rotation of the device along the y axis in the
-    *   frame previous to the current frame. Value is
-    *   represented as 0 to +/-90 degrees.  pRotationY can
-    *   also be used with rotationY to determine the
-    *   rotate direction of the device along the Y-axis.
-    */
-  var pRotationY: Double = js.native
-  /**
-    *   The system variable pRotationZ always contains the
-    *   rotation of the device along the z axis in the
-    *   frame previous to the current frame. Value is
-    *   represented as 0 to 359 degrees.  pRotationZ can
-    *   also be used with rotationZ to determine the
-    *   rotate direction of the device along the Z-axis.
-    */
-  var pRotationZ: Double = js.native
-  /**
-    *   Uint8ClampedArray containing the values for all
-    *   the pixels in the display window. These values are
-    *   numbers. This array is the size (include an
-    *   appropriate factor for pixelDensity) of the
-    *   display window x4, representing the R, G, B, A
-    *   values in order for each pixel, moving from left
-    *   to right across each row, then down each column.
-    *   Retina and other high density displays will have
-    *   more pixels[] (by a factor of pixelDensity^2). For
-    *   example, if the image is 100x100 pixels, there
-    *   will be 40,000. On a retina display, there will be
-    *   160,000.  The first four values (indices 0-3) in
-    *   the array will be the R, G, B, A values of the
-    *   pixel at (0, 0). The second four values (indices
-    *   4-7) will contain the R, G, B, A values of the
-    *   pixel at (1, 0). More generally, to set values for
-    *   a pixel at (x, y):
-    *
-    *   let d = pixelDensity(); for (let i = 0; i < d;
-    *   i++) { for (let j = 0; j < d; j++) { // loop over
-    *   index = 4 * ((y * d + j) * width * d + (x * d +
-    *   i)); pixels[index] = r; pixels[index+1] = g;
-    *   pixels[index+2] = b; pixels[index+3] = a; } }
-    *
-    *   While the above method is complex, it is flexible
-    *   enough to work with any pixelDensity. Note that
-    *   set() will automatically take care of setting all
-    *   the appropriate values in pixels[] for a given (x,
-    *   y) at any pixelDensity, but the performance may
-    *   not be as fast when lots of modifications are made
-    *   to the pixel array.
-    *
-    *
-    *   Before accessing this array, the data must loaded
-    *   with the loadPixels() function. After the array
-    *   data has been modified, the updatePixels()
-    *   function must be run to update the changes.
-    *
-    *
-    *   Note that this is not a standard javascript array.
-    *   This means that standard javascript functions such
-    *   as slice() or arrayCopy() do not work.
-    */
-  var pixels: js.Array[Double] = js.native
-  /**
-    *   The system variable pmouseX always contains the
-    *   horizontal position of the mouse or finger in the
-    *   frame previous to the current frame, relative to
-    *   (0, 0) of the canvas. The value at the top-left
-    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
-    *   for WebGL. Note: pmouseX will be reset to the
-    *   current mouseX value at the start of each touch
-    *   event.
-    */
-  var pmouseX: Double = js.native
-  /**
-    *   The system variable pmouseY always contains the
-    *   vertical position of the mouse or finger in the
-    *   frame previous to the current frame, relative to
-    *   (0, 0) of the canvas. The value at the top-left
-    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
-    *   for WebGL. Note: pmouseY will be reset to the
-    *   current mouseY value at the start of each touch
-    *   event.
-    */
-  var pmouseY: Double = js.native
-  /**
-    *   The system variable pwinMouseX always contains the
-    *   horizontal position of the mouse in the frame
-    *   previous to the current frame, relative to (0, 0)
-    *   of the window. Note: pwinMouseX will be reset to
-    *   the current winMouseX value at the start of each
-    *   touch event.
-    */
-  var pwinMouseX: Double = js.native
-  /**
-    *   The system variable pwinMouseY always contains the
-    *   vertical position of the mouse in the frame
-    *   previous to the current frame, relative to (0, 0)
-    *   of the window. Note: pwinMouseY will be reset to
-    *   the current winMouseY value at the start of each
-    *   touch event.
-    */
-  var pwinMouseY: Double = js.native
-  /**
-    *   The system variable rotationX always contains the
-    *   rotation of the device along the x axis. Value is
-    *   represented as 0 to +/-180 degrees.  Note: The
-    *   order the rotations are called is important, ie.
-    *   if used together, it must be called in the order
-    *   Z-X-Y or there might be unexpected behaviour.
-    */
-  var rotationX: Double = js.native
-  /**
-    *   The system variable rotationY always contains the
-    *   rotation of the device along the y axis. Value is
-    *   represented as 0 to +/-90 degrees.  Note: The
-    *   order the rotations are called is important, ie.
-    *   if used together, it must be called in the order
-    *   Z-X-Y or there might be unexpected behaviour.
-    */
-  var rotationY: Double = js.native
-  /**
-    *   The system variable rotationZ always contains the
-    *   rotation of the device along the z axis. Value is
-    *   represented as 0 to 359 degrees.  Unlike rotationX
-    *   and rotationY, this variable is available for
-    *   devices with a built-in compass only.
-    *
-    *
-    *   Note: The order the rotations are called is
-    *   important, ie. if used together, it must be called
-    *   in the order Z-X-Y or there might be unexpected
-    *   behaviour.
-    */
-  var rotationZ: Double = js.native
-  /**
-    *   The system variable touches[] contains an array of
-    *   the positions of all current touch points,
-    *   relative to (0, 0) of the canvas, and IDs
-    *   identifying a unique touch as it moves. Each
-    *   element in the array is an object with x, y, and
-    *   id properties. The touches[] array is not
-    *   supported on Safari and IE on touch-based desktops
-    *   (laptops).
-    */
-  var touches: js.Array[js.Object] = js.native
-  /**
-    *   When a device is rotated, the axis that triggers
-    *   the deviceTurned() method is stored in the
-    *   turnAxis variable. The turnAxis variable is only
-    *   defined within the scope of deviceTurned().
-    */
-  var turnAxis: String = js.native
-  /**
-    *   System variable that stores the width of the
-    *   drawing canvas. This value is set by the first
-    *   parameter of the createCanvas() function. For
-    *   example, the function call createCanvas(320, 240)
-    *   sets the width variable to the value 320. The
-    *   value of width defaults to 100 if createCanvas()
-    *   is not used in a program.
-    */
-  var width: Double = js.native
-  /**
-    *   The system variable winMouseX always contains the
-    *   current horizontal position of the mouse, relative
-    *   to (0, 0) of the window.
-    */
-  var winMouseX: Double = js.native
-  /**
-    *   The system variable winMouseY always contains the
-    *   current vertical position of the mouse, relative
-    *   to (0, 0) of the window.
-    */
-  var winMouseY: Double = js.native
-  /**
-    *   System variable that stores the height of the
-    *   inner window, it maps to window.innerHeight.
-    */
-  var windowHeight: Double = js.native
-  /**
-    *   System variable that stores the width of the inner
-    *   window, it maps to window.innerWidth.
-    */
-  var windowWidth: Double = js.native
+  
   /**
     *   Calculates the absolute value (magnitude) of a
     *   number. Maps to Math.abs(). The absolute value of
@@ -597,6 +355,28 @@ object global extends js.Object {
     *   @return absolute value of given number
     */
   def abs(n: Double): Double = js.native
+  
+  /**
+    *   The system variable accelerationX always contains
+    *   the acceleration of the device along the x axis.
+    *   Value is represented as meters per second squared.
+    */
+  var accelerationX: Double = js.native
+  
+  /**
+    *   The system variable accelerationY always contains
+    *   the acceleration of the device along the y axis.
+    *   Value is represented as meters per second squared.
+    */
+  var accelerationY: Double = js.native
+  
+  /**
+    *   The system variable accelerationZ always contains
+    *   the acceleration of the device along the z axis.
+    *   Value is represented as meters per second squared.
+    */
+  var accelerationZ: Double = js.native
+  
   /**
     *   The inverse of cos(), returns the arc cosine of a
     *   value. This function expects the values in the
@@ -607,6 +387,7 @@ object global extends js.Object {
     *   @return the arc cosine of the given value
     */
   def acos(value: Double): Double = js.native
+  
   def alpha(color: String): Double = js.native
   def alpha(color: js.Array[Double]): Double = js.native
   /**
@@ -617,6 +398,7 @@ object global extends js.Object {
     *   @return the alpha value
     */
   def alpha(color: Color): Double = js.native
+  
   /**
     *   Creates an ambient light with a color
     *   @param color the ambient light color
@@ -657,6 +439,7 @@ object global extends js.Object {
     *   @chainable
     */
   def ambientLight(values: js.Array[Double]): ^ = js.native
+  
   def ambientMaterial(color: String): ^ = js.native
   /**
     *   Ambient material for geometry with a given color.
@@ -687,12 +470,14 @@ object global extends js.Object {
   def ambientMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double): ^ = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
+  
   /**
     *   Sets the current mode of p5 to given mode. Default
     *   mode is RADIANS.
     *   @param mode either RADIANS or DEGREES
     */
   def angleMode(mode: ANGLE_MODE): Unit = js.native
+  
   /**
     *   Adds a value to the end of an array. Extends the
     *   length of the array by one. Maps to Array.push().
@@ -701,6 +486,7 @@ object global extends js.Object {
     *   @return the array that was appended to
     */
   def append(array: js.Array[_], value: js.Any): js.Array[_] = js.native
+  
   /**
     *   Multiplies the current matrix by the one specified
     *   through the parameters. This is a powerful
@@ -726,6 +512,7 @@ object global extends js.Object {
     *   @chainable
     */
   def applyMatrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): ^ = js.native
+  
   /**
     *   Draw an arc to the screen. If called with only x,
     *   y, w, h, start, and stop, the arc will be drawn
@@ -770,6 +557,7 @@ object global extends js.Object {
     detail: Double
   ): ^ = js.native
   def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): ^ = js.native
+  
   /**
     *   Copies an array (or part of an array) to another
     *   array. The src array is copied to the dst array,
@@ -825,6 +613,7 @@ object global extends js.Object {
     *   copied
     */
   def arrayCopy(src: js.Array[_], srcPosition: Double, dst: js.Array[_], dstPosition: Double, length: Double): Unit = js.native
+  
   /**
     *   The inverse of sin(), returns the arc sine of a
     *   value. This function expects the values in the
@@ -835,6 +624,7 @@ object global extends js.Object {
     *   @return the arc sine of the given value
     */
   def asin(value: Double): Double = js.native
+  
   /**
     *   The inverse of tan(), returns the arc tangent of a
     *   value. This function expects the values in the
@@ -845,6 +635,7 @@ object global extends js.Object {
     *   @return the arc tangent of the given value
     */
   def atan(value: Double): Double = js.native
+  
   /**
     *   Calculates the angle (in radians) from a specified
     *   point to the coordinate origin as measured from
@@ -860,6 +651,7 @@ object global extends js.Object {
     *   @return the arc tangent of the given point
     */
   def atan2(y: Double, x: Double): Double = js.native
+  
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -1082,6 +874,7 @@ object global extends js.Object {
     *   @chainable
     */
   def background(values: js.Array[Double]): ^ = js.native
+  
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -1102,6 +895,7 @@ object global extends js.Object {
     *   @chainable
     */
   def beginContour(): ^ = js.native
+  
   /**
     *   Using the beginShape() and endShape() functions
     *   allow creating more complex forms. beginShape()
@@ -1130,6 +924,7 @@ object global extends js.Object {
     */
   def beginShape(): ^ = js.native
   def beginShape(kind: BEGIN_KIND): ^ = js.native
+  
   /**
     *   Draws a cubic Bezier curve on the screen. These
     *   curves are defined by a series of anchor and
@@ -1202,6 +997,7 @@ object global extends js.Object {
     y4: Double,
     z4: Double
   ): ^ = js.native
+  
   /**
     *   Sets the resolution at which Beziers display. The
     *   default value is 20.
@@ -1213,6 +1009,7 @@ object global extends js.Object {
     *   @chainable
     */
   def bezierDetail(detail: Double): ^ = js.native
+  
   /**
     *   Evaluates the Bezier at position t for points a,
     *   b, c, d. The parameters a and d are the first and
@@ -1230,6 +1027,7 @@ object global extends js.Object {
     *   @return the value of the Bezier at position t
     */
   def bezierPoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+  
   /**
     *   Evaluates the tangent to the Bezier at position t
     *   for points a, b, c, d. The parameters a and d are
@@ -1244,6 +1042,7 @@ object global extends js.Object {
     *   @return the tangent at position t
     */
   def bezierTangent(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+  
   /**
     *   Specifies vertex coordinates for Bezier curves.
     *   Each call to bezierVertex() defines the position
@@ -1312,6 +1111,7 @@ object global extends js.Object {
     y4: Double,
     z4: Double
   ): ^ = js.native
+  
   /**
     *   Copies a region of pixels from one image to
     *   another, using a specified blend mode to do the
@@ -1378,6 +1178,7 @@ object global extends js.Object {
     dh: Double,
     blendMode: UNKNOWN_P5_CONSTANT
   ): Unit = js.native
+  
   /**
     *   Blends the pixels in the display window according
     *   to the defined mode. There is a choice of the
@@ -1426,6 +1227,7 @@ object global extends js.Object {
     *   SOFT_LIGHT, DODGE, BURN, ADD, or SUBTRACT
     */
   def blendMode(mode: BLEND_MODE): Unit = js.native
+  
   def blue(color: String): Double = js.native
   def blue(color: js.Array[Double]): Double = js.native
   /**
@@ -1436,6 +1238,7 @@ object global extends js.Object {
     *   @return the blue value
     */
   def blue(color: Color): Double = js.native
+  
   /**
     *   Converts a number or string to its boolean
     *   representation. For a number, any non-zero value
@@ -1452,6 +1255,7 @@ object global extends js.Object {
   def boolean(n: js.Array[_]): Boolean = js.native
   def boolean(n: Boolean): Boolean = js.native
   def boolean(n: Double): Boolean = js.native
+  
   /**
     *   Draw a box with given width, height and depth
     *   @param [width] width of the box
@@ -1581,6 +1385,7 @@ object global extends js.Object {
   def box(width: Double, Height: Double, depth: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def box(width: Double, Height: Double, depth: Double, detailX: Double): ^ = js.native
   def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = js.native
+  
   def brightness(color: String): Double = js.native
   def brightness(color: js.Array[Double]): Double = js.native
   /**
@@ -1591,6 +1396,7 @@ object global extends js.Object {
     *   @return the brightness value
     */
   def brightness(color: Color): Double = js.native
+  
   /**
     *   Converts a number, string representation of a
     *   number, or boolean to its byte representation. A
@@ -1619,6 +1425,7 @@ object global extends js.Object {
     *   @return array of byte representation of values
     */
   def byte(ns: js.Array[_]): js.Array[Double] = js.native
+  
   /**
     *   Sets the camera position for a 3D sketch.
     *   Parameters for this function define the position
@@ -1656,6 +1463,7 @@ object global extends js.Object {
     upY: js.UndefOr[Double],
     upZ: js.UndefOr[Double]
   ): ^ = js.native
+  
   /**
     *   Calculates the closest int value that is greater
     *   than or equal to the value of the parameter. Maps
@@ -1665,6 +1473,7 @@ object global extends js.Object {
     *   @return rounded up number
     */
   def ceil(n: Double): Double = js.native
+  
   /**
     *   The .changed() function is called when the value
     *   of an element changes. This can be used to attach
@@ -1677,6 +1486,7 @@ object global extends js.Object {
     */
   def changed(fxn: js.Function1[/* repeated */ js.Any, _]): ^ = js.native
   def changed(fxn: Boolean): ^ = js.native
+  
   /**
     *   Converts a number or string to its corresponding
     *   single-character string representation. If a
@@ -1704,6 +1514,7 @@ object global extends js.Object {
     *   @return array of string representation of values
     */
   def char(ns: js.Array[_]): js.Array[String] = js.native
+  
   /**
     *   Draws a circle to the screen. A circle is a simple
     *   closed shape. It is the set of all points in a
@@ -1721,6 +1532,7 @@ object global extends js.Object {
     *   @chainable
     */
   def circle(x: Double, y: Double, d: Double): ^ = js.native
+  
   /**
     *   Clears the pixels within a buffer. This function
     *   only clears the canvas. It will not clear objects
@@ -1733,11 +1545,13 @@ object global extends js.Object {
     *   @chainable
     */
   def clear(): ^ = js.native
+  
   /**
     *   Clears all local storage items set with
     *   storeItem() for the current domain.
     */
   def clearStorage(): Unit = js.native
+  
   /**
     *   Creates colors for storing in variables of the
     *   color datatype. The parameters are interpreted as
@@ -1871,6 +1685,7 @@ object global extends js.Object {
     *   red,green,blue & and alpha components of the color
     */
   def color(values: js.Array[Double]): Color = js.native
+  
   /**
     *   colorMode() changes the way p5.js interprets color
     *   data. By default, the parameters for fill(),
@@ -1920,6 +1735,7 @@ object global extends js.Object {
     */
   def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double): ^ = js.native
   def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double, maxA: Double): ^ = js.native
+  
   /**
     *   Concatenates two arrays, maps to Array.concat().
     *   Does not modify the input arrays.
@@ -1928,6 +1744,7 @@ object global extends js.Object {
     *   @return concatenated array
     */
   def concat(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
+  
   /**
     *   Draw a cone with given radius and height
     *   @param [radius] radius of the bottom surface
@@ -2057,6 +1874,7 @@ object global extends js.Object {
   def cone(radius: Double, height: Double, detailX: Double, detailY: js.UndefOr[scala.Nothing], cap: Boolean): ^ = js.native
   def cone(radius: Double, height: Double, detailX: Double, detailY: Double): ^ = js.native
   def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
+  
   /**
     *   Constrains a value between a minimum and maximum
     *   value.
@@ -2066,6 +1884,7 @@ object global extends js.Object {
     *   @return constrained number
     */
   def constrain(n: Double, low: Double, high: Double): Double = js.native
+  
   def copy(
     srcImage: Element,
     sx: Double,
@@ -2132,6 +1951,7 @@ object global extends js.Object {
     *   @param dh destination image height
     */
   def copy(sx: Double, sy: Double, sw: Double, sh: Double, dx: Double, dy: Double, dw: Double, dh: Double): Unit = js.native
+  
   /**
     *   Calculates the cosine of an angle. This function
     *   takes into account the current angleMode. Values
@@ -2140,6 +1960,7 @@ object global extends js.Object {
     *   @return the cosine of the angle
     */
   def cos(angle: Double): Double = js.native
+  
   /**
     *   Creates an <a></a> element in the DOM for
     *   including a hyperlink. Appends to the container
@@ -2153,6 +1974,7 @@ object global extends js.Object {
     */
   def createA(href: String, html: String): Element = js.native
   def createA(href: String, html: String, target: String): Element = js.native
+  
   /**
     *   Creates a hidden HTML5 <audio> element in the DOM
     *   for simple audio playback. Appends to the
@@ -2180,6 +2002,7 @@ object global extends js.Object {
   def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
   def createAudio(src: js.Array[String]): MediaElement = js.native
   def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  
   /**
     *   Creates a <button></button> element in the DOM.
     *   Use .size() to set the display size of the button.
@@ -2192,6 +2015,7 @@ object global extends js.Object {
     */
   def createButton(label: String): Element = js.native
   def createButton(label: String, value: String): Element = js.native
+  
   /**
     *   Creates a new p5.Camera object and tells the
     *   renderer to use that camera. Returns the p5.Camera
@@ -2199,6 +2023,7 @@ object global extends js.Object {
     *   @return The newly created camera object.
     */
   def createCamera(): Camera = js.native
+  
   /**
     *   Creates a canvas element in the document, and sets
     *   the dimensions of it in pixels. This method should
@@ -2221,6 +2046,7 @@ object global extends js.Object {
     */
   def createCanvas(w: Double, h: Double): Renderer = js.native
   def createCanvas(w: Double, h: Double, renderer: RENDERER_): Renderer = js.native
+  
   /**
     *   Creates a new HTML5 <video> element that contains
     *   the audio/video feed from a webcam. The element is
@@ -2252,6 +2078,7 @@ object global extends js.Object {
   def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def createCapture(`type`: TYPE): Element = js.native
   def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  
   /**
     *   Creates a checkbox <input></input> element in the
     *   DOM. Calling .checked() on a checkbox returns if
@@ -2265,6 +2092,7 @@ object global extends js.Object {
   def createCheckbox(label: js.UndefOr[scala.Nothing], value: Boolean): Element = js.native
   def createCheckbox(label: String): Element = js.native
   def createCheckbox(label: String, value: Boolean): Element = js.native
+  
   /**
     *   Creates a colorPicker element in the DOM for color
     *   input. The .value() method will return a hex
@@ -2277,6 +2105,7 @@ object global extends js.Object {
   def createColorPicker(): Element = js.native
   def createColorPicker(value: String): Element = js.native
   def createColorPicker(value: Color): Element = js.native
+  
   /**
     *   Creates a <div></div> element in the DOM with
     *   given inner HTML. Appends to the container node if
@@ -2286,6 +2115,7 @@ object global extends js.Object {
     */
   def createDiv(): Element = js.native
   def createDiv(html: String): Element = js.native
+  
   /**
     *   Creates element with given tag in the DOM with
     *   given content. Appends to the container node if
@@ -2297,6 +2127,7 @@ object global extends js.Object {
     */
   def createElement(tag: String): Element = js.native
   def createElement(tag: String, content: String): Element = js.native
+  
   /**
     *   Creates an <input></input> element in the DOM of
     *   type 'file'. This allows users to select local
@@ -2312,6 +2143,7 @@ object global extends js.Object {
   def createFileInput(callback: js.UndefOr[scala.Nothing], multiple: String): Element = js.native
   def createFileInput(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def createFileInput(callback: js.Function1[/* repeated */ js.Any, _], multiple: String): Element = js.native
+  
   /**
     *   Creates and returns a new p5.Renderer object. Use
     *   this class if you need to draw into an off-screen
@@ -2325,6 +2157,7 @@ object global extends js.Object {
     */
   def createGraphics(w: Double, h: Double): Graphics = js.native
   def createGraphics(w: Double, h: Double, renderer: RENDERER_): Graphics = js.native
+  
   /**
     *   Creates a new p5.Image (the datatype for storing
     *   images). This provides a fresh buffer of pixels to
@@ -2351,6 +2184,7 @@ object global extends js.Object {
     *   @return the p5.Image object
     */
   def createImage(width: Double, height: Double): Image = js.native
+  
   /**
     *   Creates an <img> element in the DOM with given src
     *   and alternate text. Appends to the container node
@@ -2379,6 +2213,7 @@ object global extends js.Object {
     *   image data is loaded
     */
   def createImg(src: String, successCallback: js.Function1[/* repeated */ js.Any, _]): js.Object | Element = js.native
+  
   /**
     *   Creates an <input></input> element in the DOM for
     *   text input. Use .size() to set the display length
@@ -2393,6 +2228,7 @@ object global extends js.Object {
   def createInput(value: js.UndefOr[scala.Nothing], `type`: String): Element = js.native
   def createInput(value: String): Element = js.native
   def createInput(value: String, `type`: String): Element = js.native
+  
   /**
     *   Creates a new instance of p5.NumberDict using the
     *   key-value pair or object you provide.
@@ -2404,6 +2240,7 @@ object global extends js.Object {
     *   @param object object
     */
   def createNumberDict(`object`: js.Object): NumberDict = js.native
+  
   /**
     *   Creates a <p></p> element in the DOM with given
     *   inner HTML. Used for paragraph length text.
@@ -2414,6 +2251,7 @@ object global extends js.Object {
     */
   def createP(): Element = js.native
   def createP(html: String): Element = js.native
+  
   /**
     *   Creates a radio button <input></input> element in
     *   the DOM. The .option() method can be used to set
@@ -2426,6 +2264,7 @@ object global extends js.Object {
     */
   def createRadio(): Element = js.native
   def createRadio(divId: String): Element = js.native
+  
   /**
     *   Creates a dropdown menu <select></select> element
     *   in the DOM. It also helps to assign select-box
@@ -2444,7 +2283,9 @@ object global extends js.Object {
     */
   def createSelect(existing: js.Object): Element = js.native
   def createSelect(multiple: Boolean): Element = js.native
+  
   def createShader(vertSrc: String, fragSrc: String): Shader = js.native
+  
   /**
     *   Creates a slider <input></input> element in the
     *   DOM. Use .size() to set the display length of the
@@ -2463,6 +2304,7 @@ object global extends js.Object {
   def createSlider(min: Double, max: Double, value: js.UndefOr[scala.Nothing], step: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double, step: Double): Element = js.native
+  
   /**
     *   Creates a <span></span> element in the DOM with
     *   given inner HTML. Appends to the container node if
@@ -2472,6 +2314,7 @@ object global extends js.Object {
     */
   def createSpan(): Element = js.native
   def createSpan(html: String): Element = js.native
+  
   /**
     *   Creates a new instance of p5.StringDict using the
     *   key-value pair or the object you provide.
@@ -2483,6 +2326,7 @@ object global extends js.Object {
     *   @param object object
     */
   def createStringDict(`object`: js.Object): StringDict = js.native
+  
   /**
     *   Creates a new p5.Vector (the datatype for storing
     *   vectors). This provides a two or three dimensional
@@ -2501,6 +2345,7 @@ object global extends js.Object {
   def createVector(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def createVector(x: Double, y: Double): Vector = js.native
   def createVector(x: Double, y: Double, z: Double): Vector = js.native
+  
   /**
     *   Creates an HTML5 <video> element in the DOM for
     *   simple playback of audio/video. Shown by default,
@@ -2528,8 +2373,10 @@ object global extends js.Object {
   def createVideo(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
   def createVideo(src: js.Array[String]): MediaElement = js.native
   def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  
   def createWriter(name: String): PrintWriter = js.native
   def createWriter(name: String, extension: String): PrintWriter = js.native
+  
   /**
     *   Sets the cursor to a predefined symbol or an
     *   image, or makes it visible if already hidden. If
@@ -2557,6 +2404,7 @@ object global extends js.Object {
   def cursor(`type`: CURSOR_TYPE, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE, x: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = js.native
+  
   /**
     *   Draws a curved line on the screen between two
     *   points, given as the middle four parameters. The
@@ -2632,6 +2480,7 @@ object global extends js.Object {
     y4: Double,
     z4: Double
   ): ^ = js.native
+  
   /**
     *   Sets the resolution at which curves display. The
     *   default value is 20 while the minimum value is 3.
@@ -2643,6 +2492,7 @@ object global extends js.Object {
     *   @chainable
     */
   def curveDetail(resolution: Double): ^ = js.native
+  
   /**
     *   Evaluates the curve at position t for points a, b,
     *   c, d. The parameter t varies between 0 and 1, a
@@ -2660,6 +2510,7 @@ object global extends js.Object {
     *   @return bezier value at position t
     */
   def curvePoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+  
   /**
     *   Evaluates the tangent to the curve at position t
     *   for points a, b, c, d. The parameter t varies
@@ -2673,6 +2524,7 @@ object global extends js.Object {
     *   @return the tangent at position t
     */
   def curveTangent(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+  
   /**
     *   Modifies the quality of forms created with curve()
     *   and curveVertex(). The parameter tightness
@@ -2690,6 +2542,7 @@ object global extends js.Object {
     *   @chainable
     */
   def curveTightness(amount: Double): ^ = js.native
+  
   /**
     *   Specifies vertex coordinates for curves. This
     *   function may only be used between beginShape() and
@@ -2734,6 +2587,7 @@ object global extends js.Object {
     */
   def curveVertex(x: Double, y: Double): ^ = js.native
   def curveVertex(x: Double, y: Double, z: Double): ^ = js.native
+  
   /**
     *   Draw a cylinder with given radius and height
     *   @param [radius] radius of the surface
@@ -2757,6 +2611,7 @@ object global extends js.Object {
     bottomCap: js.UndefOr[Boolean],
     topCap: js.UndefOr[Boolean]
   ): ^ = js.native
+  
   /**
     *   p5.js communicates with the clock on your
     *   computer. The day() function returns the current
@@ -2764,6 +2619,7 @@ object global extends js.Object {
     *   @return the current day
     */
   def day(): Double = js.native
+  
   /**
     *   debugMode() helps visualize 3D space by adding a
     *   grid to indicate where the ‘ground’ is in a sketch
@@ -3105,6 +2961,7 @@ object global extends js.Object {
     yOff: Double,
     zOff: Double
   ): Unit = js.native
+  
   /**
     *   Converts a radian measurement to its corresponding
     *   value in degrees. Radians and degrees are two ways
@@ -3117,6 +2974,18 @@ object global extends js.Object {
     *   @return the converted angle
     */
   def degrees(radians: Double): Double = js.native
+  
+  /**
+    *   The system variable deltaTime contains the time
+    *   difference between the beginning of the previous
+    *   frame and the beginning of the current frame in
+    *   milliseconds.  This variable is useful for
+    *   creating time sensitive animation or physics
+    *   calculation that should stay constant regardless
+    *   of frame rate.
+    */
+  var deltaTime: Double = js.native
+  
   /**
     *   The deviceMoved() function is called when the
     *   device is moved by more than the threshold value
@@ -3125,6 +2994,16 @@ object global extends js.Object {
     *   setMoveThreshold().
     */
   def deviceMoved(): Unit = js.native
+  
+  /**
+    *   The system variable deviceOrientation always
+    *   contains the orientation of the device. The value
+    *   of this variable will either be set 'landscape' or
+    *   'portrait'. If no data is available it will be set
+    *   to 'undefined'. either LANDSCAPE or PORTRAIT.
+    */
+  var deviceOrientation: UNKNOWN_P5_CONSTANT = js.native
+  
   /**
     *   The deviceShaken() function is called when the
     *   device total acceleration changes of accelerationX
@@ -3134,6 +3013,7 @@ object global extends js.Object {
     *   setShakeThreshold().
     */
   def deviceShaken(): Unit = js.native
+  
   /**
     *   The deviceTurned() function is called when the
     *   device rotates by more than 90 degrees
@@ -3144,6 +3024,7 @@ object global extends js.Object {
     *   turnAxis variable to 'X', 'Y' or 'Z'.
     */
   def deviceTurned(): Unit = js.native
+  
   def directionalLight(color: String, position: Vector): ^ = js.native
   def directionalLight(color: String, x: Double, y: Double, z: Double): ^ = js.native
   /**
@@ -3192,12 +3073,32 @@ object global extends js.Object {
     *   @chainable
     */
   def directionalLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): ^ = js.native
+  
   /**
     *   Returns the pixel density of the current display
     *   the sketch is running on.
     *   @return current pixel density of the display
     */
   def displayDensity(): Double = js.native
+  
+  /**
+    *   System variable that stores the height of the
+    *   screen display according to The default
+    *   pixelDensity. This is used to run a full-screen
+    *   program on any display size. To return actual
+    *   screen size, multiply this by pixelDensity.
+    */
+  var displayHeight: Double = js.native
+  
+  /**
+    *   System variable that stores the width of the
+    *   screen display according to The default
+    *   pixelDensity. This is used to run a full-screen
+    *   program on any display size. To return actual
+    *   screen size, multiply this by pixelDensity.
+    */
+  var displayWidth: Double = js.native
+  
   /**
     *   Calculates the distance between two points, in
     *   either two or three dimensions.
@@ -3220,6 +3121,7 @@ object global extends js.Object {
     *   @return distance between the two points
     */
   def dist(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): Double = js.native
+  
   /**
     *   The doubleClicked() function is executed every
     *   time a event listener has detected a dblclick
@@ -3235,6 +3137,7 @@ object global extends js.Object {
     */
   def doubleClicked(): Unit = js.native
   def doubleClicked(event: js.Object): Unit = js.native
+  
   /**
     *   Draws an ellipse (oval) to the screen. An ellipse
     *   with equal width and height is a circle. By
@@ -3271,6 +3174,7 @@ object global extends js.Object {
     *   (for WebGL mode)
     */
   def ellipse(x: Double, y: Double, w: Double, h: Double, detail: Double): Unit = js.native
+  
   /**
     *   Modifies the location from which ellipses are
     *   drawn by changing the way in which parameters
@@ -3307,6 +3211,7 @@ object global extends js.Object {
     *   @chainable
     */
   def ellipseMode(mode: ELLIPSE_MODE): ^ = js.native
+  
   /**
     *   Draw an ellipsoid with given radius
     *   @param [radiusx] x-radius of ellipsoid
@@ -3464,6 +3369,7 @@ object global extends js.Object {
   ): ^ = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): ^ = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): ^ = js.native
+  
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -3484,6 +3390,7 @@ object global extends js.Object {
     *   @chainable
     */
   def endContour(): ^ = js.native
+  
   /**
     *   The endShape() function is the companion to
     *   beginShape() and may only be called after
@@ -3498,6 +3405,7 @@ object global extends js.Object {
     */
   def endShape(): ^ = js.native
   def endShape(mode: END_MODE): ^ = js.native
+  
   /**
     *   Returns Euler's number e (2.71828...) raised to
     *   the power of the n parameter. Maps to Math.exp().
@@ -3505,6 +3413,7 @@ object global extends js.Object {
     *   @return e^n
     */
   def exp(n: Double): Double = js.native
+  
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all shapes drawn
@@ -3623,6 +3532,7 @@ object global extends js.Object {
     *   @chainable
     */
   def fill(values: js.Array[Double]): ^ = js.native
+  
   /**
     *   Applies a filter to the canvas.
     *
@@ -3684,6 +3594,7 @@ object global extends js.Object {
     */
   def filter(filterType: FILTER_TYPE): Unit = js.native
   def filter(filterType: FILTER_TYPE, filterParam: Double): Unit = js.native
+  
   /**
     *   Converts a string to its floating point
     *   representation. The contents of a string must
@@ -3696,6 +3607,7 @@ object global extends js.Object {
     *   @return floating point representation of string
     */
   def float(str: String): Double = js.native
+  
   /**
     *   Calculates the closest int value that is less than
     *   or equal to the value of the parameter. Maps to
@@ -3704,6 +3616,23 @@ object global extends js.Object {
     *   @return rounded down number
     */
   def floor(n: Double): Double = js.native
+  
+  /**
+    *   Confirms if the window a p5.js program is in is
+    *   "focused," meaning that the sketch will accept
+    *   mouse or keyboard input. This variable is "true"
+    *   if the window is focused and "false" if not.
+    */
+  var focused: Boolean = js.native
+  
+  /**
+    *   The system variable frameCount contains the number
+    *   of frames that have been displayed since the
+    *   program started. Inside setup() the value is 0,
+    *   after the first iteration of draw it is 1, etc.
+    */
+  var frameCount: Double = js.native
+  
   /**
     *   Specifies the number of frames to be displayed
     *   every second. For example, the function call
@@ -3758,6 +3687,7 @@ object global extends js.Object {
     *   @chainable
     */
   def frameRate(fps: Double): ^ = js.native
+  
   /**
     *   Returns the closest MIDI note value for a given
     *   frequency.
@@ -3766,6 +3696,7 @@ object global extends js.Object {
     *   @return MIDI note value
     */
   def freqToMidi(frequency: Double): Double = js.native
+  
   /**
     *   If argument is given, sets the sketch to
     *   fullscreen or not based on the value of the
@@ -3780,6 +3711,7 @@ object global extends js.Object {
     */
   def fullscreen(): Boolean = js.native
   def fullscreen(`val`: Boolean): Boolean = js.native
+  
   /**
     *   Get a region of pixels, or a single pixel, from
     *   the canvas. Returns an array of [R,G,B,A] values
@@ -3901,6 +3833,7 @@ object global extends js.Object {
     *   @return the rectangle p5.Image
     */
   def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
+  
   /**
     *   Returns the value of an item that was stored in
     *   local storage using storeItem()
@@ -3909,21 +3842,25 @@ object global extends js.Object {
     *   @return Value of stored item
     */
   def getItem(key: String): Double | js.Object | String | Boolean | Color = js.native
+  
   /**
     *   Gets the current URL.
     *   @return url
     */
   def getURL(): String = js.native
+  
   /**
     *   Gets the current URL params as an Object.
     *   @return URL params
     */
   def getURLParams(): js.Object = js.native
+  
   /**
     *   Gets the current URL path as an array.
     *   @return path components
     */
   def getURLPath(): js.Array[String] = js.native
+  
   def green(color: String): Double = js.native
   def green(color: js.Array[Double]): Double = js.native
   /**
@@ -3934,6 +3871,18 @@ object global extends js.Object {
     *   @return the green value
     */
   def green(color: Color): Double = js.native
+  
+  /**
+    *   System variable that stores the height of the
+    *   drawing canvas. This value is set by the second
+    *   parameter of the createCanvas() function. For
+    *   example, the function call createCanvas(320, 240)
+    *   sets the height variable to the value 240. The
+    *   value of height defaults to 100 if createCanvas()
+    *   is not used in a program.
+    */
+  var height: Double = js.native
+  
   /**
     *   Converts a number to a string in its equivalent
     *   hexadecimal notation. If a second parameter is
@@ -3961,6 +3910,7 @@ object global extends js.Object {
     */
   def hex(ns: js.Array[Double]): js.Array[String] = js.native
   def hex(ns: js.Array[Double], digits: Double): js.Array[String] = js.native
+  
   /**
     *   p5.js communicates with the clock on your
     *   computer. The hour() function returns the current
@@ -3968,6 +3918,7 @@ object global extends js.Object {
     *   @return the current hour
     */
   def hour(): Double = js.native
+  
   /**
     *   Method for executing an HTTP request. If data type
     *   is not specified, p5 will try to guess based on
@@ -4225,6 +4176,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
+  
   /**
     *   Method for executing an HTTP GET request. If data
     *   type is not specified, p5 will try to guess based
@@ -4433,6 +4385,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
+  
   /**
     *   Method for executing an HTTP POST request. If data
     *   type is not specified, p5 will try to guess based
@@ -4629,6 +4582,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
+  
   def hue(color: String): Double = js.native
   def hue(color: js.Array[Double]): Double = js.native
   /**
@@ -4646,6 +4600,7 @@ object global extends js.Object {
     *   @return the hue
     */
   def hue(color: Color): Double = js.native
+  
   def image(img: Element, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = js.native
   def image(
     img: Element,
@@ -4786,6 +4741,7 @@ object global extends js.Object {
   def image(img: Image, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def image(img: Image, x: Double, y: Double, width: Double): Unit = js.native
   def image(img: Image, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  
   /**
     *   Set image mode. Modifies the location from which
     *   images are drawn by changing the way in which
@@ -4808,6 +4764,7 @@ object global extends js.Object {
     *   @param mode either CORNER, CORNERS, or CENTER
     */
   def imageMode(mode: IMAGE_MODE): Unit = js.native
+  
   /**
     *   The .input() function is called when any user
     *   input is detected with an element. The input event
@@ -4823,6 +4780,7 @@ object global extends js.Object {
     */
   def input(fxn: js.Function1[/* repeated */ js.Any, _]): ^ = js.native
   def input(fxn: Boolean): ^ = js.native
+  
   /**
     *   Converts a boolean, string, or float to its
     *   integer representation. When an array of values is
@@ -4848,6 +4806,7 @@ object global extends js.Object {
     *   @return integer representation of values
     */
   def int(ns: js.Array[_]): js.Array[Double] = js.native
+  
   /**
     *   Combines an array of Strings into one String, each
     *   separated by the character(s) used for the
@@ -4860,6 +4819,27 @@ object global extends js.Object {
     *   @return joined String
     */
   def join(list: js.Array[_], separator: String): String = js.native
+  
+  /**
+    *   The system variable key always contains the value
+    *   of the most recent key on the keyboard that was
+    *   typed. To get the proper capitalization, it is
+    *   best to use it within keyTyped(). For non-ASCII
+    *   keys, use the keyCode variable.
+    */
+  var key: String = js.native
+  
+  /**
+    *   The variable keyCode is used to detect special
+    *   keys such as BACKSPACE, DELETE, ENTER, RETURN,
+    *   TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT,
+    *   UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. You
+    *   can also check for custom keys by looking up the
+    *   keyCode of any key on a site like this:
+    *   keycode.info.
+    */
+  var keyCode: Double = js.native
+  
   /**
     *   The keyIsDown() function checks if the key is
     *   currently down, i.e. pressed. It can be used if
@@ -4873,6 +4853,14 @@ object global extends js.Object {
     *   @return whether key is down or not
     */
   def keyIsDown(code: Double): Boolean = js.native
+  
+  /**
+    *   The boolean system variable keyIsPressed is true
+    *   if any key is pressed and false if no keys are
+    *   pressed.
+    */
+  var keyIsPressed: Boolean = js.native
+  
   /**
     *   The keyPressed() function is called once every
     *   time a key is pressed. The keyCode for the key
@@ -4905,6 +4893,7 @@ object global extends js.Object {
     *   false" to the end of the method.
     */
   def keyPressed(): Unit = js.native
+  
   /**
     *   The keyReleased() function is called once every
     *   time a key is released. See key and keyCode for
@@ -4914,6 +4903,7 @@ object global extends js.Object {
     *   add "return false" to the end of the method.
     */
   def keyReleased(): Unit = js.native
+  
   /**
     *   The keyTyped() function is called once every time
     *   a key is pressed, but action keys such as
@@ -4935,6 +4925,7 @@ object global extends js.Object {
     *   false" to the end of the method.
     */
   def keyTyped(): Unit = js.native
+  
   /**
     *   Calculates a number between two numbers at a
     *   specific increment. The amt parameter is the
@@ -4953,6 +4944,7 @@ object global extends js.Object {
     *   @return lerped value
     */
   def lerp(start: Double, stop: Double, amt: Double): Double = js.native
+  
   /**
     *   Blends two colors to find a third color somewhere
     *   between them. The amt parameter is the amount to
@@ -4972,6 +4964,7 @@ object global extends js.Object {
     *   @return interpolated color
     */
   def lerpColor(c1: Color, c2: Color, amt: Double): Color = js.native
+  
   /**
     *   Sets the falloff rates for point lights. It
     *   affects only the elements which are created after
@@ -4991,6 +4984,7 @@ object global extends js.Object {
     *   @chainable
     */
   def lightFalloff(constant: Double, linear: Double, quadratic: Double): ^ = js.native
+  
   def lightness(color: String): Double = js.native
   def lightness(color: js.Array[Double]): Double = js.native
   /**
@@ -5001,6 +4995,7 @@ object global extends js.Object {
     *   @return the lightness
     */
   def lightness(color: Color): Double = js.native
+  
   /**
     *   Sets the default ambient and directional light.
     *   The defaults are ambientLight(128, 128, 128) and
@@ -5013,6 +5008,7 @@ object global extends js.Object {
     *   @chainable
     */
   def lights(): ^ = js.native
+  
   /**
     *   Draws a line (a direct path between two points) to
     *   the screen. The version of line() with four
@@ -5047,6 +5043,7 @@ object global extends js.Object {
     *   @chainable
     */
   def line(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): ^ = js.native
+  
   /**
     *   This method is suitable for fetching files up to
     *   size of 64MB.
@@ -5070,6 +5067,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Object = js.native
+  
   /**
     *   Loads an opentype font file (.otf, .ttf) from a
     *   file or a URL, and returns a PFont Object. This
@@ -5094,6 +5092,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     onError: js.Function1[/* repeated */ js.Any, _]
   ): Font = js.native
+  
   /**
     *   Loads an image from a path and creates a p5.Image
     *   from it.  The image may not be immediately
@@ -5128,6 +5127,7 @@ object global extends js.Object {
     successCallback: js.Function1[/* p1 */ Image, _],
     failureCallback: js.Function1[/* p1 */ Event, _]
   ): Image = js.native
+  
   /**
     *   Loads a JSON file from a file or a URL, and
     *   returns an Object. Note that even if the JSON file
@@ -5303,6 +5303,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Object | js.Array[_] = js.native
+  
   /**
     *   Load a 3d model from an OBJ or STL file.  One of
     *   the limitations of the OBJ and STL format is that
@@ -5377,6 +5378,7 @@ object global extends js.Object {
     successCallback: js.Function1[/* p1 */ Geometry, _],
     failureCallback: js.Function1[/* p1 */ Event, _]
   ): Geometry = js.native
+  
   /**
     *   Loads the pixel data for the display window into
     *   the pixels[] array. This function must always be
@@ -5385,6 +5387,7 @@ object global extends js.Object {
     *   manipulation of pixels[] will occur.
     */
   def loadPixels(): Unit = js.native
+  
   /**
     *   Loads a custom shader from the provided vertex and
     *   fragment shader paths. The shader files are loaded
@@ -5421,6 +5424,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): Shader = js.native
+  
   /**
     *   Reads the contents of a file and creates a String
     *   array of its individual lines. If the name of the
@@ -5461,6 +5465,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Array[String] = js.native
+  
   /**
     *   Reads the contents of a file or URL and creates a
     *   p5.Table object with its values. If a file is
@@ -5583,6 +5588,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Object = js.native
+  
   /**
     *   Reads the contents of a file and creates an XML
     *   object with its values. If the name of the file is
@@ -5627,6 +5633,7 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Object = js.native
+  
   /**
     *   Calculates the natural logarithm (the base-e
     *   logarithm) of a number. This function expects the
@@ -5636,6 +5643,7 @@ object global extends js.Object {
     *   @return natural logarithm of n
     */
   def log(n: Double): Double = js.native
+  
   /**
     *   By default, p5.js loops through draw()
     *   continuously, executing the code within it.
@@ -5645,6 +5653,7 @@ object global extends js.Object {
     *   inside setup().
     */
   def loop(): Unit = js.native
+  
   /**
     *   Calculates the magnitude (or length) of a vector.
     *   A vector is a direction in space commonly used in
@@ -5658,6 +5667,7 @@ object global extends js.Object {
     *   @return magnitude of vector from (0,0) to (a,b)
     */
   def mag(a: Double, b: Double): Double = js.native
+  
   /**
     *   Re-maps a number from one range to another.  In
     *   the first example above, the number 25 is
@@ -5679,6 +5689,7 @@ object global extends js.Object {
     */
   def map(value: Double, start1: Double, stop1: Double, start2: Double, stop2: Double): Double = js.native
   def map(value: Double, start1: Double, stop1: Double, start2: Double, stop2: Double, withinBounds: Boolean): Double = js.native
+  
   /**
     *   This function is used to apply a regular
     *   expression to a piece of text, and return matching
@@ -5706,6 +5717,7 @@ object global extends js.Object {
     *   @return Array of Strings found
     */
   def `match`(str: String, regexp: String): js.Array[String] = js.native
+  
   /**
     *   This function is used to apply a regular
     *   expression to a piece of text, and return a list
@@ -5735,6 +5747,7 @@ object global extends js.Object {
     *   @return 2d Array of Strings found
     */
   def matchAll(str: String, regexp: String): js.Array[String] = js.native
+  
   /**
     *   Determines the largest value in a sequence of
     *   numbers, and then returns that value. max()
@@ -5753,6 +5766,7 @@ object global extends js.Object {
     *   @param nums Numbers to compare
     */
   def max(nums: js.Array[Double]): Double = js.native
+  
   /**
     *   Returns the frequency value of a MIDI note value.
     *   General MIDI treats notes as integers where middle
@@ -5762,6 +5776,7 @@ object global extends js.Object {
     *   @return Frequency value of the given MIDI note
     */
   def midiToFreq(midiNote: Double): Double = js.native
+  
   /**
     *   Returns the number of milliseconds (thousandths of
     *   a second) since starting the program. This
@@ -5771,6 +5786,7 @@ object global extends js.Object {
     *   the program
     */
   def millis(): Double = js.native
+  
   /**
     *   Determines the smallest value in a sequence of
     *   numbers, and then returns that value. min()
@@ -5789,6 +5805,7 @@ object global extends js.Object {
     *   @param nums Numbers to compare
     */
   def min(nums: js.Array[Double]): Double = js.native
+  
   /**
     *   p5.js communicates with the clock on your
     *   computer. The minute() function returns the
@@ -5796,11 +5813,13 @@ object global extends js.Object {
     *   @return the current minute
     */
   def minute(): Double = js.native
+  
   /**
     *   Render a 3d model to the screen.
     *   @param model Loaded 3d model to be rendered
     */
   def model(model: Geometry): Unit = js.native
+  
   /**
     *   p5.js communicates with the clock on your
     *   computer. The month() function returns the current
@@ -5808,6 +5827,17 @@ object global extends js.Object {
     *   @return the current month
     */
   def month(): Double = js.native
+  
+  /**
+    *   Processing automatically tracks if the mouse
+    *   button is pressed and which button is pressed. The
+    *   value of the system variable mouseButton is either
+    *   LEFT, RIGHT, or CENTER depending on which button
+    *   was pressed last. Warning: different browsers may
+    *   track mouseButton differently.
+    */
+  var mouseButton: UNKNOWN_P5_CONSTANT = js.native
+  
   /**
     *   The mouseClicked() function is called once after a
     *   mouse button has been pressed and then released.
@@ -5827,6 +5857,7 @@ object global extends js.Object {
     */
   def mouseClicked(): Unit = js.native
   def mouseClicked(event: js.Object): Unit = js.native
+  
   /**
     *   The mouseDragged() function is called once every
     *   time the mouse moves and a mouse button is
@@ -5842,6 +5873,13 @@ object global extends js.Object {
     */
   def mouseDragged(): Unit = js.native
   def mouseDragged(event: js.Object): Unit = js.native
+  
+  /**
+    *   The boolean system variable mouseIsPressed is true
+    *   if the mouse is pressed and false if not.
+    */
+  var mouseIsPressed: Boolean = js.native
+  
   /**
     *   The mouseMoved() function is called every time the
     *   mouse moves and a mouse button is not pressed.
@@ -5854,6 +5892,7 @@ object global extends js.Object {
     */
   def mouseMoved(): Unit = js.native
   def mouseMoved(event: js.Object): Unit = js.native
+  
   /**
     *   The mousePressed() function is called once after
     *   every time a mouse button is pressed. The
@@ -5871,6 +5910,7 @@ object global extends js.Object {
     */
   def mousePressed(): Unit = js.native
   def mousePressed(event: js.Object): Unit = js.native
+  
   /**
     *   The mouseReleased() function is called every time
     *   a mouse button is released. If no mouseReleased()
@@ -5885,6 +5925,7 @@ object global extends js.Object {
     */
   def mouseReleased(): Unit = js.native
   def mouseReleased(event: js.Object): Unit = js.native
+  
   /**
     *   The function mouseWheel() is executed every time a
     *   vertical mouse wheel event is detected either
@@ -5910,6 +5951,29 @@ object global extends js.Object {
     */
   def mouseWheel(): Unit = js.native
   def mouseWheel(event: js.Object): Unit = js.native
+  
+  /**
+    *   The system variable mouseX always contains the
+    *   current horizontal position of the mouse, relative
+    *   to (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. If touch is used instead of mouse
+    *   input, mouseX will hold the x value of the most
+    *   recent touch point.
+    */
+  var mouseX: Double = js.native
+  
+  /**
+    *   The system variable mouseY always contains the
+    *   current vertical position of the mouse, relative
+    *   to (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. If touch is used instead of mouse
+    *   input, mouseY will hold the y value of the most
+    *   recent touch point.
+    */
+  var mouseY: Double = js.native
+  
   def nf(num: String): String = js.native
   def nf(num: String, left: js.UndefOr[scala.Nothing], right: String): String = js.native
   def nf(num: String, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
@@ -5979,6 +6043,7 @@ object global extends js.Object {
   def nf(nums: js.Array[_], left: Double): js.Array[String] = js.native
   def nf(nums: js.Array[_], left: Double, right: String): js.Array[String] = js.native
   def nf(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
+  
   def nfc(num: String): String = js.native
   def nfc(num: String, right: String): String = js.native
   def nfc(num: String, right: Double): String = js.native
@@ -6012,6 +6077,7 @@ object global extends js.Object {
   def nfc(nums: js.Array[_]): js.Array[String] = js.native
   def nfc(nums: js.Array[_], right: String): js.Array[String] = js.native
   def nfc(nums: js.Array[_], right: Double): js.Array[String] = js.native
+  
   /**
     *   Utility function for formatting numbers into
     *   strings. Similar to nf() but puts a "+" in front
@@ -6050,6 +6116,7 @@ object global extends js.Object {
   def nfp(nums: js.Array[Double], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
   def nfp(nums: js.Array[Double], left: Double): js.Array[String] = js.native
   def nfp(nums: js.Array[Double], left: Double, right: Double): js.Array[String] = js.native
+  
   /**
     *   Utility function for formatting numbers into
     *   strings. Similar to nf() but puts an additional
@@ -6118,19 +6185,23 @@ object global extends js.Object {
   def nfs(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
   def nfs(nums: js.Array[_], left: Double): js.Array[String] = js.native
   def nfs(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
+  
   /**
     *   Removes the default canvas for a p5 sketch that
     *   doesn't require a canvas
     */
   def noCanvas(): Unit = js.native
+  
   /**
     *   Hides the cursor from view.
     */
   def noCursor(): Unit = js.native
+  
   /**
     *   Turns off debugMode() in a 3D sketch.
     */
   def noDebugMode(): Unit = js.native
+  
   /**
     *   Disables filling geometry. If both noStroke() and
     *   noFill() are called, nothing will be drawn to the
@@ -6138,6 +6209,7 @@ object global extends js.Object {
     *   @chainable
     */
   def noFill(): ^ = js.native
+  
   /**
     *   Stops p5.js from continuously executing the code
     *   within draw(). If loop() is called, the code in
@@ -6160,6 +6232,7 @@ object global extends js.Object {
     *   would enter an odd state until loop() was called.
     */
   def noLoop(): Unit = js.native
+  
   /**
     *   Draws all geometry with jagged (aliased) edges.
     *   Note that smooth() is active by default in 2D
@@ -6171,6 +6244,7 @@ object global extends js.Object {
     *   @chainable
     */
   def noSmooth(): ^ = js.native
+  
   /**
     *   Disables drawing the stroke (outline). If both
     *   noStroke() and noFill() are called, nothing will
@@ -6178,12 +6252,14 @@ object global extends js.Object {
     *   @chainable
     */
   def noStroke(): ^ = js.native
+  
   /**
     *   Removes the current fill value for displaying
     *   images and reverts to displaying images with their
     *   original hues.
     */
   def noTint(): Unit = js.native
+  
   /**
     *   Returns the Perlin noise value at specified
     *   coordinates. Perlin noise is a random sequence
@@ -6235,6 +6311,7 @@ object global extends js.Object {
   def noise(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
   def noise(x: Double, y: Double): Double = js.native
   def noise(x: Double, y: Double, z: Double): Double = js.native
+  
   /**
     *   Adjusts the character and level of detail produced
     *   by the Perlin noise function. Similar to harmonics
@@ -6264,6 +6341,7 @@ object global extends js.Object {
     *   @param falloff falloff factor for each octave
     */
   def noiseDetail(lod: Double, falloff: Double): Unit = js.native
+  
   /**
     *   Sets the seed value for noise(). By default,
     *   noise() produces different results each time the
@@ -6273,6 +6351,7 @@ object global extends js.Object {
     *   @param seed the seed value
     */
   def noiseSeed(seed: Double): Unit = js.native
+  
   /**
     *   Normalizes a number from another range into a
     *   value between 0 and 1. Identical to map(value,
@@ -6288,12 +6367,14 @@ object global extends js.Object {
     *   @return normalized number
     */
   def norm(value: Double, start: Double, stop: Double): Double = js.native
+  
   /**
     *   Normal material for geometry. You can view all
     *   possible materials in this example.
     *   @chainable
     */
   def normalMaterial(): ^ = js.native
+  
   /**
     *   Allows movement around a 3D sketch using a mouse
     *   or trackpad. Left-clicking and dragging will
@@ -6319,6 +6400,7 @@ object global extends js.Object {
   def orbitControl(sensitivityX: js.UndefOr[scala.Nothing], sensitivityY: Double): ^ = js.native
   def orbitControl(sensitivityX: Double): ^ = js.native
   def orbitControl(sensitivityX: Double, sensitivityY: Double): ^ = js.native
+  
   /**
     *   Sets an orthographic projection for the camera in
     *   a 3D sketch and defines a box-shaped viewing
@@ -6349,6 +6431,61 @@ object global extends js.Object {
     near: js.UndefOr[Double],
     far: js.UndefOr[Double]
   ): ^ = js.native
+  
+  /**
+    *   The system variable pAccelerationX always contains
+    *   the acceleration of the device along the x axis in
+    *   the frame previous to the current frame. Value is
+    *   represented as meters per second squared.
+    */
+  var pAccelerationX: Double = js.native
+  
+  /**
+    *   The system variable pAccelerationY always contains
+    *   the acceleration of the device along the y axis in
+    *   the frame previous to the current frame. Value is
+    *   represented as meters per second squared.
+    */
+  var pAccelerationY: Double = js.native
+  
+  /**
+    *   The system variable pAccelerationZ always contains
+    *   the acceleration of the device along the z axis in
+    *   the frame previous to the current frame. Value is
+    *   represented as meters per second squared.
+    */
+  var pAccelerationZ: Double = js.native
+  
+  /**
+    *   The system variable pRotationX always contains the
+    *   rotation of the device along the x axis in the
+    *   frame previous to the current frame. Value is
+    *   represented as 0 to +/-180 degrees.  pRotationX
+    *   can also be used with rotationX to determine the
+    *   rotate direction of the device along the X-axis.
+    */
+  var pRotationX: Double = js.native
+  
+  /**
+    *   The system variable pRotationY always contains the
+    *   rotation of the device along the y axis in the
+    *   frame previous to the current frame. Value is
+    *   represented as 0 to +/-90 degrees.  pRotationY can
+    *   also be used with rotationY to determine the
+    *   rotate direction of the device along the Y-axis.
+    */
+  var pRotationY: Double = js.native
+  
+  /**
+    *   The system variable pRotationZ always contains the
+    *   rotation of the device along the z axis in the
+    *   frame previous to the current frame. Value is
+    *   represented as 0 to 359 degrees.  pRotationZ can
+    *   also be used with rotationZ to determine the
+    *   rotate direction of the device along the Z-axis.
+    */
+  var pRotationZ: Double = js.native
+  
   /**
     *   Sets a perspective projection for the camera in a
     *   3D sketch. This projection represents depth
@@ -6393,6 +6530,7 @@ object global extends js.Object {
   def perspective(fovy: Double, aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
   def perspective(fovy: Double, aspect: Double, near: Double): ^ = js.native
   def perspective(fovy: Double, aspect: Double, near: Double, far: Double): ^ = js.native
+  
   /**
     *   Sets the pixel scaling for high pixel density
     *   displays. By default pixel density is set to match
@@ -6413,6 +6551,53 @@ object global extends js.Object {
     *   @chainable
     */
   def pixelDensity(`val`: Double): ^ = js.native
+  
+  /**
+    *   Uint8ClampedArray containing the values for all
+    *   the pixels in the display window. These values are
+    *   numbers. This array is the size (include an
+    *   appropriate factor for pixelDensity) of the
+    *   display window x4, representing the R, G, B, A
+    *   values in order for each pixel, moving from left
+    *   to right across each row, then down each column.
+    *   Retina and other high density displays will have
+    *   more pixels[] (by a factor of pixelDensity^2). For
+    *   example, if the image is 100x100 pixels, there
+    *   will be 40,000. On a retina display, there will be
+    *   160,000.  The first four values (indices 0-3) in
+    *   the array will be the R, G, B, A values of the
+    *   pixel at (0, 0). The second four values (indices
+    *   4-7) will contain the R, G, B, A values of the
+    *   pixel at (1, 0). More generally, to set values for
+    *   a pixel at (x, y):
+    *
+    *   let d = pixelDensity(); for (let i = 0; i < d;
+    *   i++) { for (let j = 0; j < d; j++) { // loop over
+    *   index = 4 * ((y * d + j) * width * d + (x * d +
+    *   i)); pixels[index] = r; pixels[index+1] = g;
+    *   pixels[index+2] = b; pixels[index+3] = a; } }
+    *
+    *   While the above method is complex, it is flexible
+    *   enough to work with any pixelDensity. Note that
+    *   set() will automatically take care of setting all
+    *   the appropriate values in pixels[] for a given (x,
+    *   y) at any pixelDensity, but the performance may
+    *   not be as fast when lots of modifications are made
+    *   to the pixel array.
+    *
+    *
+    *   Before accessing this array, the data must loaded
+    *   with the loadPixels() function. After the array
+    *   data has been modified, the updatePixels()
+    *   function must be run to update the changes.
+    *
+    *
+    *   Note that this is not a standard javascript array.
+    *   This means that standard javascript functions such
+    *   as slice() or arrayCopy() do not work.
+    */
+  var pixels: js.Array[Double] = js.native
+  
   /**
     *   Draw a plane with given a width and height
     *   @param [width] width of the plane
@@ -6459,6 +6644,31 @@ object global extends js.Object {
   def plane(width: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def plane(width: Double, height: Double, detailX: Double): ^ = js.native
   def plane(width: Double, height: Double, detailX: Double, detailY: Double): ^ = js.native
+  
+  /**
+    *   The system variable pmouseX always contains the
+    *   horizontal position of the mouse or finger in the
+    *   frame previous to the current frame, relative to
+    *   (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. Note: pmouseX will be reset to the
+    *   current mouseX value at the start of each touch
+    *   event.
+    */
+  var pmouseX: Double = js.native
+  
+  /**
+    *   The system variable pmouseY always contains the
+    *   vertical position of the mouse or finger in the
+    *   frame previous to the current frame, relative to
+    *   (0, 0) of the canvas. The value at the top-left
+    *   corner is (0, 0) for 2-D and (-width/2, -height/2)
+    *   for WebGL. Note: pmouseY will be reset to the
+    *   current mouseY value at the start of each touch
+    *   event.
+    */
+  var pmouseY: Double = js.native
+  
   /**
     *   Draws a point, a coordinate in space at the
     *   dimension of one pixel. The first parameter is the
@@ -6472,6 +6682,7 @@ object global extends js.Object {
     */
   def point(x: Double, y: Double): ^ = js.native
   def point(x: Double, y: Double, z: Double): ^ = js.native
+  
   def pointLight(color: String, position: Vector): ^ = js.native
   def pointLight(color: String, x: Double, y: Double, z: Double): ^ = js.native
   /**
@@ -6520,6 +6731,7 @@ object global extends js.Object {
     *   @chainable
     */
   def pointLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): ^ = js.native
+  
   /**
     *   The push() function saves the current drawing
     *   style settings and transformations, while pop()
@@ -6549,6 +6761,7 @@ object global extends js.Object {
     *   and shader().
     */
   def pop(): Unit = js.native
+  
   /**
     *   Facilitates exponential expressions. The pow()
     *   function is an efficient way of multiplying
@@ -6561,6 +6774,7 @@ object global extends js.Object {
     *   @return n^e
     */
   def pow(n: Double, e: Double): Double = js.native
+  
   /**
     *   The print() function writes to the console area of
     *   your browser. This function is often helpful for
@@ -6577,6 +6791,7 @@ object global extends js.Object {
     *   Object, Boolean, Array to print
     */
   def print(contents: js.Any): Unit = js.native
+  
   /**
     *   The push() function saves the current drawing
     *   style settings and transformations, while pop()
@@ -6606,6 +6821,27 @@ object global extends js.Object {
     *   and shader().
     */
   def push(): Unit = js.native
+  
+  /**
+    *   The system variable pwinMouseX always contains the
+    *   horizontal position of the mouse in the frame
+    *   previous to the current frame, relative to (0, 0)
+    *   of the window. Note: pwinMouseX will be reset to
+    *   the current winMouseX value at the start of each
+    *   touch event.
+    */
+  var pwinMouseX: Double = js.native
+  
+  /**
+    *   The system variable pwinMouseY always contains the
+    *   vertical position of the mouse in the frame
+    *   previous to the current frame, relative to (0, 0)
+    *   of the window. Note: pwinMouseY will be reset to
+    *   the current winMouseY value at the start of each
+    *   touch event.
+    */
+  var pwinMouseY: Double = js.native
+  
   /**
     *   Draw a quad. A quad is a quadrilateral, a four
     *   sided polygon. It is similar to a rectangle, but
@@ -6665,6 +6901,7 @@ object global extends js.Object {
     y4: Double,
     z4: Double
   ): ^ = js.native
+  
   /**
     *   Specifies vertex coordinates for quadratic Bezier
     *   curves. Each call to quadraticVertex() defines the
@@ -6713,6 +6950,7 @@ object global extends js.Object {
     *   @chainable
     */
   def quadraticVertex(cx: Double, cy: Double, x3: Double, y3: Double): ^ = js.native
+  
   /**
     *   Converts a degree measurement to its corresponding
     *   value in radians. Radians and degrees are two ways
@@ -6725,6 +6963,7 @@ object global extends js.Object {
     *   @return the converted angle
     */
   def radians(degrees: Double): Double = js.native
+  
   /**
     *   Return a random floating-point number. Takes
     *   either 0, 1 or 2 arguments.
@@ -6771,6 +7010,7 @@ object global extends js.Object {
   def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
+  
   /**
     *   Returns a random number fitting a Gaussian, or
     *   normal, distribution. There is theoretically no
@@ -6794,6 +7034,7 @@ object global extends js.Object {
     *   @return the random number
     */
   def randomGaussian(mean: Double, sd: Double): Double = js.native
+  
   /**
     *   Sets the seed value for random(). By default,
     *   random() produces different results each time the
@@ -6803,6 +7044,7 @@ object global extends js.Object {
     *   @param seed the seed value
     */
   def randomSeed(seed: Double): Unit = js.native
+  
   /**
     *   Draws a rectangle to the screen. A rectangle is a
     *   four-sided shape with every angle at ninety
@@ -6939,6 +7181,7 @@ object global extends js.Object {
   ): ^ = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): ^ = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = js.native
+  
   /**
     *   Modifies the location from which rectangles are
     *   drawn by changing the way in which parameters
@@ -6974,6 +7217,7 @@ object global extends js.Object {
     *   @chainable
     */
   def rectMode(mode: RECT_MODE): ^ = js.native
+  
   def red(color: String): Double = js.native
   def red(color: js.Array[Double]): Double = js.native
   /**
@@ -6984,6 +7228,7 @@ object global extends js.Object {
     *   @return the red value
     */
   def red(color: Color): Double = js.native
+  
   /**
     *   Executes the code within draw() one time. This
     *   functions allows the program to update the display
@@ -7009,6 +7254,7 @@ object global extends js.Object {
     */
   def redraw(): Unit = js.native
   def redraw(n: Double): Unit = js.native
+  
   /**
     *   Removes all elements created by p5, except any
     *   canvas / graphics elements created by createCanvas
@@ -7016,16 +7262,19 @@ object global extends js.Object {
     *   element is removed from the DOM.
     */
   def removeElements(): Unit = js.native
+  
   /**
     *   Removes an item that was stored with storeItem()
     */
   def removeItem(key: String): Unit = js.native
+  
   /**
     *   Replaces the current matrix with the identity
     *   matrix.
     *   @chainable
     */
   def resetMatrix(): ^ = js.native
+  
   /**
     *   This function restores the default shaders in
     *   WEBGL mode. Code that runs after resetShader()
@@ -7034,6 +7283,7 @@ object global extends js.Object {
     *   @chainable
     */
   def resetShader(): ^ = js.native
+  
   /**
     *   Resizes the canvas to given width and height. The
     *   canvas will be cleared and draw will be called
@@ -7046,6 +7296,7 @@ object global extends js.Object {
     */
   def resizeCanvas(w: Double, h: Double): Unit = js.native
   def resizeCanvas(w: Double, h: Double, noRedraw: Boolean): Unit = js.native
+  
   /**
     *   Reverses the order of an array, maps to
     *   Array.reverse()
@@ -7053,6 +7304,7 @@ object global extends js.Object {
     *   @return the reversed list
     */
   def reverse(list: js.Array[_]): js.Array[_] = js.native
+  
   /**
     *   Rotates a shape the amount specified by the angle
     *   parameter. This function accounts for angleMode,
@@ -7080,6 +7332,7 @@ object global extends js.Object {
   def rotate(angle: Double): ^ = js.native
   def rotate(angle: Double, axis: js.Array[Double]): ^ = js.native
   def rotate(angle: Double, axis: Vector): ^ = js.native
+  
   /**
     *   Rotates around X axis.
     *   @param angle the angle of rotation, specified in
@@ -7087,6 +7340,7 @@ object global extends js.Object {
     *   @chainable
     */
   def rotateX(angle: Double): ^ = js.native
+  
   /**
     *   Rotates around Y axis.
     *   @param angle the angle of rotation, specified in
@@ -7094,6 +7348,7 @@ object global extends js.Object {
     *   @chainable
     */
   def rotateY(angle: Double): ^ = js.native
+  
   /**
     *   Rotates around Z axis. Webgl mode only.
     *   @param angle the angle of rotation, specified in
@@ -7101,6 +7356,42 @@ object global extends js.Object {
     *   @chainable
     */
   def rotateZ(angle: Double): ^ = js.native
+  
+  /**
+    *   The system variable rotationX always contains the
+    *   rotation of the device along the x axis. Value is
+    *   represented as 0 to +/-180 degrees.  Note: The
+    *   order the rotations are called is important, ie.
+    *   if used together, it must be called in the order
+    *   Z-X-Y or there might be unexpected behaviour.
+    */
+  var rotationX: Double = js.native
+  
+  /**
+    *   The system variable rotationY always contains the
+    *   rotation of the device along the y axis. Value is
+    *   represented as 0 to +/-90 degrees.  Note: The
+    *   order the rotations are called is important, ie.
+    *   if used together, it must be called in the order
+    *   Z-X-Y or there might be unexpected behaviour.
+    */
+  var rotationY: Double = js.native
+  
+  /**
+    *   The system variable rotationZ always contains the
+    *   rotation of the device along the z axis. Value is
+    *   represented as 0 to 359 degrees.  Unlike rotationX
+    *   and rotationY, this variable is available for
+    *   devices with a built-in compass only.
+    *
+    *
+    *   Note: The order the rotations are called is
+    *   important, ie. if used together, it must be called
+    *   in the order Z-X-Y or there might be unexpected
+    *   behaviour.
+    */
+  var rotationZ: Double = js.native
+  
   /**
     *   Calculates the integer closest to the n parameter.
     *   For example, round(133.8) returns the value 134.
@@ -7109,6 +7400,7 @@ object global extends js.Object {
     *   @return rounded number
     */
   def round(n: Double): Double = js.native
+  
   /**
     *   Returns a number representing the sample rate, in
     *   samples per second, of all sound objects in this
@@ -7119,6 +7411,7 @@ object global extends js.Object {
     *   @return samplerate samples per second
     */
   def sampleRate(): Double = js.native
+  
   def saturation(color: String): Double = js.native
   def saturation(color: js.Array[Double]): Double = js.native
   /**
@@ -7134,6 +7427,7 @@ object global extends js.Object {
     *   @return the saturation value
     */
   def saturation(color: Color): Double = js.native
+  
   /**
     *   Save an image, text, json, csv, wav, or html.
     *   Prompts download to the client's computer. Note
@@ -7208,6 +7502,7 @@ object global extends js.Object {
   def save(objectOrFilename: js.Object, filename: String): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String, options: String): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String, options: Boolean): Unit = js.native
+  
   /**
     *   Save the current canvas as an image. The browser
     *   will either save the file immediately, or prompt
@@ -7234,6 +7529,7 @@ object global extends js.Object {
   def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String, extension: String): Unit = js.native
+  
   /**
     *   Capture a sequence of frames that can be used to
     *   create a movie. Accepts a callback. For example,
@@ -7269,6 +7565,7 @@ object global extends js.Object {
     framerate: Double,
     callback: js.Function1[/* p1 */ js.Array[_], _]
   ): Unit = js.native
+  
   /**
     *   Writes the contents of an Array or a JSON object
     *   to a .json file. The file saving process and
@@ -7282,6 +7579,7 @@ object global extends js.Object {
   def saveJSON(json: js.Array[_], filename: String, optimize: Boolean): Unit = js.native
   def saveJSON(json: js.Object, filename: String): Unit = js.native
   def saveJSON(json: js.Object, filename: String, optimize: Boolean): Unit = js.native
+  
   /**
     *   Save a p5.SoundFile as a .wav file. The browser
     *   will prompt the user to download the file to their
@@ -7292,6 +7590,7 @@ object global extends js.Object {
     *   @param fileName name of the resulting .wav file.
     */
   def saveSound(soundFile: SoundFile, fileName: String): Unit = js.native
+  
   /**
     *   Writes an array of Strings to a text file, one
     *   line per String. The file saving process and
@@ -7303,6 +7602,7 @@ object global extends js.Object {
     */
   def saveStrings(list: js.Array[String], filename: String): Unit = js.native
   def saveStrings(list: js.Array[String], filename: String, extension: String): Unit = js.native
+  
   /**
     *   Writes the contents of a Table object to a file.
     *   Defaults to a text file with
@@ -7318,6 +7618,7 @@ object global extends js.Object {
     */
   def saveTable(Table: Table, filename: String): Unit = js.native
   def saveTable(Table: Table, filename: String, options: String): Unit = js.native
+  
   def scale(s: js.Array[Double]): ^ = js.native
   def scale(s: js.Array[Double], y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
   def scale(s: js.Array[Double], y: Double): ^ = js.native
@@ -7381,6 +7682,7 @@ object global extends js.Object {
   def scale(s: Vector, y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
   def scale(s: Vector, y: Double): ^ = js.native
   def scale(s: Vector, y: Double, z: Double): ^ = js.native
+  
   /**
     *   p5.js communicates with the clock on your
     *   computer. The second() function returns the
@@ -7388,6 +7690,7 @@ object global extends js.Object {
     *   @return the current second
     */
   def second(): Double = js.native
+  
   /**
     *   Searches the page for an element with the given
     *   ID, class, or tag name (using the '#' or '.'
@@ -7408,6 +7711,7 @@ object global extends js.Object {
   def select(name: String, container: String): Element | Null = js.native
   def select(name: String, container: Element): Element | Null = js.native
   def select(name: String, container: HTMLElement): Element | Null = js.native
+  
   /**
     *   Searches the page for elements with the given
     *   class or tag name (using the '.' prefix to specify
@@ -7425,6 +7729,7 @@ object global extends js.Object {
     */
   def selectAll(name: String): js.Array[Element] = js.native
   def selectAll(name: String, container: String): js.Array[Element] = js.native
+  
   def set(x: Double, y: Double, c: js.Array[Double]): Unit = js.native
   def set(x: Double, y: Double, c: js.Object): Unit = js.native
   /**
@@ -7460,6 +7765,7 @@ object global extends js.Object {
     *   | a p5.Color object | a p5.Image to copy
     */
   def set(x: Double, y: Double, c: Double): Unit = js.native
+  
   /**
     *   Set attributes for the WebGL Drawing context. This
     *   is a way of adjusting how the WebGL renderer works
@@ -7559,12 +7865,14 @@ object global extends js.Object {
     *   @param obj object with key-value pairs
     */
   def setAttributes(obj: js.Object): Unit = js.native
+  
   /**
     *   Sets rendererGL's current camera to a p5.Camera
     *   object. Allows switching between multiple cameras.
     *   @param cam p5.Camera object
     */
   def setCamera(cam: Camera): Unit = js.native
+  
   /**
     *   The setMoveThreshold() function is used to set the
     *   movement threshold for the deviceMoved() function.
@@ -7572,6 +7880,7 @@ object global extends js.Object {
     *   @param value The threshold value
     */
   def setMoveThreshold(value: Double): Unit = js.native
+  
   /**
     *   The setShakeThreshold() function is used to set
     *   the movement threshold for the deviceShaken()
@@ -7579,6 +7888,7 @@ object global extends js.Object {
     *   @param value The threshold value
     */
   def setShakeThreshold(value: Double): Unit = js.native
+  
   /**
     *   The shader() function lets the user provide a
     *   custom shader to fill in shapes in WEBGL mode.
@@ -7590,6 +7900,7 @@ object global extends js.Object {
     */
   def shader(): ^ = js.native
   def shader(s: Shader): ^ = js.native
+  
   /**
     *   Shears a shape around the x-axis the amount
     *   specified by the angle parameter. Angles should be
@@ -7615,6 +7926,7 @@ object global extends js.Object {
     *   @chainable
     */
   def shearX(angle: Double): ^ = js.native
+  
   /**
     *   Shears a shape around the y-axis the amount
     *   specified by the angle parameter. Angles should be
@@ -7640,6 +7952,7 @@ object global extends js.Object {
     *   @chainable
     */
   def shearY(angle: Double): ^ = js.native
+  
   /**
     *   Sets the amount of gloss in the surface of shapes.
     *   Used in combination with specularMaterial() in
@@ -7649,6 +7962,7 @@ object global extends js.Object {
     *   @chainable
     */
   def shininess(shine: Double): ^ = js.native
+  
   /**
     *   Decreases an array by one element and returns the
     *   shortened array, maps to Array.pop().
@@ -7656,6 +7970,7 @@ object global extends js.Object {
     *   @return shortened Array
     */
   def shorten(list: js.Array[_]): js.Array[_] = js.native
+  
   /**
     *   Randomizes the order of the elements of an array.
     *   Implements  Fisher-Yates Shuffle Algorithm.
@@ -7665,6 +7980,7 @@ object global extends js.Object {
     */
   def shuffle(array: js.Array[_]): js.Array[_] = js.native
   def shuffle(array: js.Array[_], bool: Boolean): js.Array[_] = js.native
+  
   /**
     *   Calculates the sine of an angle. This function
     *   takes into account the current angleMode. Values
@@ -7673,6 +7989,7 @@ object global extends js.Object {
     *   @return the sine of the angle
     */
   def sin(angle: Double): Double = js.native
+  
   /**
     *   Draws all geometry with smooth (anti-aliased)
     *   edges. smooth() will also improve image quality of
@@ -7685,6 +8002,7 @@ object global extends js.Object {
     *   @chainable
     */
   def smooth(): ^ = js.native
+  
   /**
     *   Sorts an array of numbers from smallest to
     *   largest, or puts an array of words in alphabetical
@@ -7701,6 +8019,7 @@ object global extends js.Object {
     */
   def sort(list: js.Array[_]): js.Array[_] = js.native
   def sort(list: js.Array[_], count: Double): js.Array[_] = js.native
+  
   /**
     *   List the SoundFile formats that you will include.
     *   LoadSound will search your directory for these
@@ -7711,6 +8030,7 @@ object global extends js.Object {
     */
   def soundFormats(): Unit = js.native
   def soundFormats(formats: String): Unit = js.native
+  
   def specularMaterial(color: String): ^ = js.native
   /**
     *   Specular material for geometry with a given color.
@@ -7740,6 +8060,7 @@ object global extends js.Object {
   def specularMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
   def specularMaterial(v1: Double, v2: Double, v3: Double): ^ = js.native
   def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
+  
   /**
     *   Draw a sphere with given radius
     *   @param [radius] radius of circle
@@ -7757,6 +8078,7 @@ object global extends js.Object {
   def sphere(radius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def sphere(radius: Double, detailX: Double): ^ = js.native
   def sphere(radius: Double, detailX: Double, detailY: Double): ^ = js.native
+  
   /**
     *   Inserts a value or an array of values into an
     *   existing array. The first parameter specifies the
@@ -7774,6 +8096,7 @@ object global extends js.Object {
     *   @return the list
     */
   def splice(list: js.Array[_], value: js.Any, position: Double): js.Array[_] = js.native
+  
   /**
     *   The split() function maps to String.split(), it
     *   breaks a String into pieces using a character or
@@ -7790,6 +8113,7 @@ object global extends js.Object {
     *   @return Array of Strings
     */
   def split(value: String, delim: String): js.Array[String] = js.native
+  
   /**
     *   The splitTokens() function splits a String at one
     *   or many character delimiters or "tokens." The
@@ -7806,6 +8130,7 @@ object global extends js.Object {
     */
   def splitTokens(value: String): js.Array[String] = js.native
   def splitTokens(value: String, delim: String): js.Array[String] = js.native
+  
   /**
     *   Squares a number (multiplies a number by itself).
     *   The result is always a positive number, as
@@ -7815,6 +8140,7 @@ object global extends js.Object {
     *   @return squared number
     */
   def sq(n: Double): Double = js.native
+  
   /**
     *   Calculates the square root of a number. The square
     *   root of a number is always positive, even though
@@ -7825,6 +8151,7 @@ object global extends js.Object {
     *   @return square root of number
     */
   def sqrt(n: Double): Double = js.native
+  
   /**
     *   Draws a square to the screen. A square is a
     *   four-sided shape with every angle at ninety
@@ -7908,6 +8235,7 @@ object global extends js.Object {
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: js.UndefOr[scala.Nothing], bl: Double): ^ = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): ^ = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = js.native
+  
   /**
     *   Stores a value in local storage under the key
     *   name. Local storage is saved in the browser and
@@ -7923,6 +8251,7 @@ object global extends js.Object {
   def storeItem(key: String, value: Boolean): Unit = js.native
   def storeItem(key: String, value: Double): Unit = js.native
   def storeItem(key: String, value: Color): Unit = js.native
+  
   /**
     *   Converts a boolean, string or number to its string
     *   representation. When an array of values is passed
@@ -7935,6 +8264,7 @@ object global extends js.Object {
   def str(n: js.Array[_]): String = js.native
   def str(n: Boolean): String = js.native
   def str(n: Double): String = js.native
+  
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -8043,6 +8373,7 @@ object global extends js.Object {
     *   @chainable
     */
   def stroke(values: js.Array[Double]): ^ = js.native
+  
   /**
     *   Sets the style for rendering line endings. These
     *   ends are either squared, extended, or rounded,
@@ -8053,6 +8384,7 @@ object global extends js.Object {
     *   @chainable
     */
   def strokeCap(cap: STROKE_CAP): ^ = js.native
+  
   /**
     *   Sets the style of the joints which connect line
     *   segments. These joints are either mitered,
@@ -8063,6 +8395,7 @@ object global extends js.Object {
     *   @chainable
     */
   def strokeJoin(join: STROKE_JOIN): ^ = js.native
+  
   /**
     *   Sets the width of the stroke used for lines,
     *   points, and the border around shapes. All widths
@@ -8071,6 +8404,7 @@ object global extends js.Object {
     *   @chainable
     */
   def strokeWeight(weight: Double): ^ = js.native
+  
   /**
     *   Extracts an array of elements from an existing
     *   array. The list parameter defines the array from
@@ -8088,6 +8422,7 @@ object global extends js.Object {
     */
   def subset(list: js.Array[_], start: Double): js.Array[_] = js.native
   def subset(list: js.Array[_], start: Double, count: Double): js.Array[_] = js.native
+  
   /**
     *   Calculates the tangent of an angle. This function
     *   takes into account the current angleMode. Values
@@ -8096,6 +8431,7 @@ object global extends js.Object {
     *   @return the tangent of the angle
     */
   def tan(angle: Double): Double = js.native
+  
   /**
     *   Draws text to the screen. Displays the information
     *   specified in the first parameter on the screen in
@@ -8157,6 +8493,7 @@ object global extends js.Object {
   def text(str: Double, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
   def text(str: Double, x: Double, y: Double, x2: Double): ^ = js.native
   def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
+  
   /**
     *   Sets the current alignment for drawing text.
     *   Accepts two arguments: horizAlign (LEFT, CENTER,
@@ -8197,6 +8534,7 @@ object global extends js.Object {
     */
   def textAlign(horizAlign: HORIZ_ALIGN): ^ = js.native
   def textAlign(horizAlign: HORIZ_ALIGN, vertAlign: VERT_ALIGN): ^ = js.native
+  
   /**
     *   Returns the ascent of the current font at its
     *   current size. The ascent represents the distance,
@@ -8204,6 +8542,7 @@ object global extends js.Object {
     *   baseline.
     */
   def textAscent(): Double = js.native
+  
   /**
     *   Returns the descent of the current font at its
     *   current size. The descent represents the distance,
@@ -8211,6 +8550,7 @@ object global extends js.Object {
     *   descender below the baseline.
     */
   def textDescent(): Double = js.native
+  
   /**
     *   Sets the current font that will be drawn with the
     *   text() function.  WEBGL: Only fonts loaded via
@@ -8232,6 +8572,7 @@ object global extends js.Object {
     */
   def textFont(font: js.Object): ^ = js.native
   def textFont(font: js.Object, size: Double): ^ = js.native
+  
   /**
     *   Sets/gets the spacing, in pixels, between lines of
     *   text. This setting will be used in all subsequent
@@ -8247,6 +8588,7 @@ object global extends js.Object {
     *   @chainable
     */
   def textLeading(leading: Double): ^ = js.native
+  
   /**
     *   Sets/gets the current font size. This size will be
     *   used in all subsequent calls to the text()
@@ -8262,6 +8604,7 @@ object global extends js.Object {
     *   @chainable
     */
   def textSize(theSize: Double): ^ = js.native
+  
   /**
     *   Sets/gets the style of the text for system fonts
     *   to NORMAL, ITALIC, BOLD or BOLDITALIC. Note: this
@@ -8281,12 +8624,14 @@ object global extends js.Object {
     *   @chainable
     */
   def textStyle(theStyle: THE_STYLE): ^ = js.native
+  
   /**
     *   Calculates and returns the width of any character
     *   or text string.
     *   @param theText the String of characters to measure
     */
   def textWidth(theText: String): Double = js.native
+  
   def texture(tex: Graphics): ^ = js.native
   /**
     *   Texture for geometry. You can view other possible
@@ -8297,6 +8642,7 @@ object global extends js.Object {
     */
   def texture(tex: Image): ^ = js.native
   def texture(tex: MediaElement): ^ = js.native
+  
   /**
     *   Sets the coordinate space for texture mapping. The
     *   default mode is IMAGE which refers to the actual
@@ -8311,6 +8657,7 @@ object global extends js.Object {
     *   @param mode either IMAGE or NORMAL
     */
   def textureMode(mode: TEXTURE_MODE): Unit = js.native
+  
   /**
     *   Sets the global texture wrapping mode. This
     *   controls how textures behave when their uv's go
@@ -8337,6 +8684,7 @@ object global extends js.Object {
     */
   def textureWrap(wrapX: WRAP_X): Unit = js.native
   def textureWrap(wrapX: WRAP_X, wrapY: WRAP_Y): Unit = js.native
+  
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
@@ -8435,6 +8783,7 @@ object global extends js.Object {
     *   red,green,blue & and alpha components of the color
     */
   def tint(values: js.Array[Double]): Unit = js.native
+  
   /**
     *   Draw a torus with given radius and tube radius
     *   @param [radius] radius of the whole ring
@@ -8483,6 +8832,7 @@ object global extends js.Object {
   def torus(radius: Double, tubeRadius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def torus(radius: Double, tubeRadius: Double, detailX: Double): ^ = js.native
   def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): ^ = js.native
+  
   /**
     *   The touchEnded() function is called every time a
     *   touch ends. If no touchEnded() function is
@@ -8497,6 +8847,7 @@ object global extends js.Object {
     */
   def touchEnded(): Unit = js.native
   def touchEnded(event: js.Object): Unit = js.native
+  
   /**
     *   The touchMoved() function is called every time a
     *   touch move is registered. If no touchMoved()
@@ -8511,6 +8862,7 @@ object global extends js.Object {
     */
   def touchMoved(): Unit = js.native
   def touchMoved(event: js.Object): Unit = js.native
+  
   /**
     *   The touchStarted() function is called once after
     *   every time a touch is registered. If no
@@ -8525,6 +8877,19 @@ object global extends js.Object {
     */
   def touchStarted(): Unit = js.native
   def touchStarted(event: js.Object): Unit = js.native
+  
+  /**
+    *   The system variable touches[] contains an array of
+    *   the positions of all current touch points,
+    *   relative to (0, 0) of the canvas, and IDs
+    *   identifying a unique touch as it moves. Each
+    *   element in the array is an object with x, y, and
+    *   id properties. The touches[] array is not
+    *   supported on Safari and IE on touch-based desktops
+    *   (laptops).
+    */
+  var touches: js.Array[js.Object] = js.native
+  
   /**
     *   Specifies an amount to displace objects within the
     *   display window. The x parameter specifies
@@ -8563,6 +8928,7 @@ object global extends js.Object {
     */
   def translate(x: Double, y: Double): ^ = js.native
   def translate(x: Double, y: Double, z: Double): ^ = js.native
+  
   /**
     *   A triangle is a plane created by connecting three
     *   points. The first two arguments specify the first
@@ -8578,6 +8944,7 @@ object global extends js.Object {
     *   @chainable
     */
   def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): ^ = js.native
+  
   /**
     *   Removes whitespace characters from the beginning
     *   and end of a String. In addition to standard
@@ -8598,6 +8965,15 @@ object global extends js.Object {
     *   @return an Array of trimmed Strings
     */
   def trim(strs: js.Array[_]): js.Array[String] = js.native
+  
+  /**
+    *   When a device is rotated, the axis that triggers
+    *   the deviceTurned() method is stored in the
+    *   turnAxis variable. The turnAxis variable is only
+    *   defined within the scope of deviceTurned().
+    */
+  var turnAxis: String = js.native
+  
   /**
     *   Converts a single-character string to its
     *   corresponding integer representation. When an
@@ -8618,6 +8994,7 @@ object global extends js.Object {
     *   @return integer representation of values
     */
   def unchar(ns: js.Array[_]): js.Array[Double] = js.native
+  
   /**
     *   Converts a string representation of a hexadecimal
     *   number to its equivalent integer value. When an
@@ -8640,6 +9017,7 @@ object global extends js.Object {
     *   value
     */
   def unhex(ns: js.Array[_]): js.Array[Double] = js.native
+  
   /**
     *   Updates the display window with the data in the
     *   pixels[] array. Use in conjunction with
@@ -8678,6 +9056,7 @@ object global extends js.Object {
   def updatePixels(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
   def updatePixels(x: Double, y: Double, w: Double): Unit = js.native
   def updatePixels(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  
   /**
     *   All shapes are constructed by connecting a series
     *   of vertices. vertex() is used to specify the
@@ -8706,6 +9085,38 @@ object global extends js.Object {
   def vertex(x: Double, y: Double, z: Double, u: js.UndefOr[scala.Nothing], v: Double): ^ = js.native
   def vertex(x: Double, y: Double, z: Double, u: Double): ^ = js.native
   def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): ^ = js.native
+  
+  /**
+    *   System variable that stores the width of the
+    *   drawing canvas. This value is set by the first
+    *   parameter of the createCanvas() function. For
+    *   example, the function call createCanvas(320, 240)
+    *   sets the width variable to the value 320. The
+    *   value of width defaults to 100 if createCanvas()
+    *   is not used in a program.
+    */
+  var width: Double = js.native
+  
+  /**
+    *   The system variable winMouseX always contains the
+    *   current horizontal position of the mouse, relative
+    *   to (0, 0) of the window.
+    */
+  var winMouseX: Double = js.native
+  
+  /**
+    *   The system variable winMouseY always contains the
+    *   current vertical position of the mouse, relative
+    *   to (0, 0) of the window.
+    */
+  var winMouseY: Double = js.native
+  
+  /**
+    *   System variable that stores the height of the
+    *   inner window, it maps to window.innerHeight.
+    */
+  var windowHeight: Double = js.native
+  
   /**
     *   The windowResized() function is called once every
     *   time the browser window is resized. This is a good
@@ -8713,6 +9124,13 @@ object global extends js.Object {
     *   adjustments to accommodate the new window size.
     */
   def windowResized(): Unit = js.native
+  
+  /**
+    *   System variable that stores the width of the inner
+    *   window, it maps to window.innerWidth.
+    */
+  var windowWidth: Double = js.native
+  
   /**
     *   p5.js communicates with the clock on your
     *   computer. The year() function returns the current
@@ -8721,4 +9139,3 @@ object global extends js.Object {
     */
   def year(): Double = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.namespace")
 @js.native
 object namespace extends js.Object {
+  
   /**
     * Ensures that a given a namespace or hierarchy of nested namespaces exists in thecurrent
     * <code>window</code>.
@@ -15,4 +16,3 @@ object namespace extends js.Object {
     */
   def apply(sNamespace: String): js.Any = js.native
 }
-

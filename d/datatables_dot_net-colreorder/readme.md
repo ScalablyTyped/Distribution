@@ -10,9 +10,9 @@ ColReorder for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-colreorder |
 | Keywords           | reorder, DataTables, jQuery, table, DataTables |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 912155 |
+| # releases         | 2 |
+| # dependents       | 21 |
+| # downloads        | 1605267 |
 | # stars            | 0 |
 
 ## Links

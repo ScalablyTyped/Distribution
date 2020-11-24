@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-packager
 
-Typings are for version 15.0.0
+Typings are for version 15.1.0
 
 ## Library description:
 Customize and package your Electron app with OS-specific bundles (.app, .exe, etc.) via JS or CLI
@@ -10,10 +10,10 @@ Customize and package your Electron app with OS-specific bundles (.app, .exe, et
 | ------------------ | :-------------: |
 | Full name          | electron-packager |
 | Keywords           | electron, packager, bundler, app |
-| # releases         | 26 |
-| # dependents       | 119 |
-| # downloads        | 1963361 |
-| # stars            | 104 |
+| # releases         | 19 |
+| # dependents       | 130 |
+| # downloads        | 2337921 |
+| # stars            | 105 |
 
 ## Links
 - [Homepage](https://github.com/electron/electron-packager)

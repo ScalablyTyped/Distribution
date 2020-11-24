@@ -23,7 +23,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TileSprite is a Sprite that has a repeating texture.
@@ -64,68 +64,63 @@ trait TileSprite
      with Tint
      with Transform
      with Visible {
+  
   /**
     * The Canvas element that the TileSprite renders its fill pattern in to.
     * Only used in Canvas mode.
     */
   var canvas: HTMLCanvasElement = js.native
+  
   /**
     * The Context of the Canvas element that the TileSprite renders its fill pattern in to.
     * Only used in Canvas mode.
     */
   var context: CanvasRenderingContext2D = js.native
+  
   /**
     * Whether the Tile Sprite has changed in some way, requiring an re-render of its tile texture.
     * 
     * Such changes include the texture frame and scroll position of the Tile Sprite.
     */
   var dirty: Boolean = js.native
+  
   /**
     * The Canvas that the TileSprites texture is rendered to.
     * This is used to create a WebGL texture from.
     */
   var fillCanvas: HTMLCanvasElement = js.native
+  
   /**
     * The Canvas Context used to render the TileSprites texture.
     */
   var fillContext: CanvasRenderingContext2D = js.native
+  
   /**
     * The texture that the Tile Sprite is rendered to, which is then rendered to a Scene.
     * In WebGL this is a WebGLTexture. In Canvas it's a Canvas Fill Pattern.
     */
   var fillPattern: WebGLTexture | CanvasPattern = js.native
+  
   /**
     * The next power of two value from the height of the Fill Pattern frame.
     */
   var potHeight: integer = js.native
+  
   /**
     * The next power of two value from the width of the Fill Pattern frame.
     */
   var potWidth: integer = js.native
-  /**
-    * The renderer in use by this Tile Sprite.
-    */
-  var renderer: CanvasRenderer | WebGLRenderer = js.native
-  /**
-    * The horizontal scroll position of the Tile Sprite.
-    */
-  var tilePositionX: Double = js.native
-  /**
-    * The vertical scroll position of the Tile Sprite.
-    */
-  var tilePositionY: Double = js.native
-  /**
-    * The horizontal scale of the Tile Sprite texture.
-    */
-  var tileScaleX: Double = js.native
-  /**
-    * The vertical scale of the Tile Sprite texture.
-    */
-  var tileScaleY: Double = js.native
+  
   /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
+  
+  /**
+    * The renderer in use by this Tile Sprite.
+    */
+  var renderer: CanvasRenderer | WebGLRenderer = js.native
+  
   /**
     * Sets the frame this Game Object will use to render with.
     * 
@@ -136,6 +131,7 @@ trait TileSprite
     */
   def setFrame(frame: String): this.type = js.native
   def setFrame(frame: integer): this.type = js.native
+  
   /**
     * Sets the texture and frame this Game Object will use to render with.
     * 
@@ -146,6 +142,7 @@ trait TileSprite
   def setTexture(key: String): this.type = js.native
   def setTexture(key: String, frame: String): this.type = js.native
   def setTexture(key: String, frame: integer): this.type = js.native
+  
   /**
     * Sets {@link Phaser.GameObjects.TileSprite#tilePositionX} and {@link Phaser.GameObjects.TileSprite#tilePositionY}.
     * @param x The x position of this sprite's tiling texture.
@@ -155,6 +152,7 @@ trait TileSprite
   def setTilePosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setTilePosition(x: Double): this.type = js.native
   def setTilePosition(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets {@link Phaser.GameObjects.TileSprite#tileScaleX} and {@link Phaser.GameObjects.TileSprite#tileScaleY}.
     * @param x The horizontal scale of the tiling texture. If not given it will use the current `tileScaleX` value.
@@ -164,5 +162,24 @@ trait TileSprite
   def setTileScale(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setTileScale(x: Double): this.type = js.native
   def setTileScale(x: Double, y: Double): this.type = js.native
+  
+  /**
+    * The horizontal scroll position of the Tile Sprite.
+    */
+  var tilePositionX: Double = js.native
+  
+  /**
+    * The vertical scroll position of the Tile Sprite.
+    */
+  var tilePositionY: Double = js.native
+  
+  /**
+    * The horizontal scale of the Tile Sprite texture.
+    */
+  var tileScaleX: Double = js.native
+  
+  /**
+    * The vertical scale of the Tile Sprite texture.
+    */
+  var tileScaleY: Double = js.native
 }
-

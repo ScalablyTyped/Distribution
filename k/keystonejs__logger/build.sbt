@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keystonejs__logger"
-version := "5.0-dt-20191115Z-f7313a"
+version := "5.0-dt-20191115Z-91c5ee"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

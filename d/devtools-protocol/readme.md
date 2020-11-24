@@ -1,7 +1,7 @@
 
 # Scala.js typings for devtools-protocol
 
-Typings are for version 0.0.781568
+Typings are for version 0.0.818844
 
 ## Library description:
 The Chrome DevTools Protocol JSON
@@ -10,9 +10,9 @@ The Chrome DevTools Protocol JSON
 | ------------------ | :-------------: |
 | Full name          | devtools-protocol |
 | Keywords           | - |
-| # releases         | 364 |
-| # dependents       | 15 |
-| # downloads        | 1092640 |
+| # releases         | 386 |
+| # dependents       | 19 |
+| # downloads        | 8704482 |
 | # stars            | 0 |
 
 ## Links

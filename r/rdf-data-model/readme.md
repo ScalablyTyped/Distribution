@@ -11,8 +11,8 @@ A basic implementation of the RDFJS Data Model
 | Full name          | rdf-data-model |
 | Keywords           | rdf, rdfjs, rdf-ext, data-model |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 10295 |
+| # dependents       | 3 |
+| # downloads        | 11233 |
 | # stars            | 0 |
 
 ## Links

@@ -4,10 +4,11 @@ import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PopDirFunction extends js.Object {
+  
   /**
     * When no arguments are given, popd removes the top directory from the stack
     * and performs a `cd` to the new top directory.
@@ -97,4 +98,3 @@ trait PopDirFunction extends js.Object {
     */
   def apply(options: String, dir: `-N`): ShellArray = js.native
 }
-

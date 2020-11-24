@@ -11,8 +11,8 @@ The lodash method `_.uniqBy` exported as a module.
 | Full name          | lodash.uniqby |
 | Keywords           | lodash-modularized, uniqby |
 | # releases         | 0 |
-| # dependents       | 168 |
-| # downloads        | 16359097 |
+| # dependents       | 204 |
+| # downloads        | 26282161 |
 | # stars            | 0 |
 
 ## Links

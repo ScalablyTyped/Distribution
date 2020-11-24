@@ -14,17 +14,24 @@ import typings.dragula.dragulaStrings.shadow
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Drake extends js.Object {
-  var containers: js.Array[Element] = js.native
-  var dragging: Boolean = js.native
+  
   def canMove(item: Element): Boolean = js.native
+  
   def cancel(): Unit = js.native
   def cancel(revert: Boolean): Unit = js.native
+  
+  var containers: js.Array[Element] = js.native
+  
   def destroy(): Unit = js.native
+  
+  var dragging: Boolean = js.native
+  
   def end(): Unit = js.native
+  
   def on(
     event: cloned,
     listener: js.Function3[/* clone */ Element, /* original */ Element, /* type */ mirror | copy, Unit]
@@ -69,7 +76,8 @@ trait Drake extends js.Object {
     event: shadow,
     listener: js.Function3[/* el */ Element, /* container */ Element, /* source */ Element, Unit]
   ): Drake = js.native
+  
   def remove(): Unit = js.native
+  
   def start(item: Element): Unit = js.native
 }
-

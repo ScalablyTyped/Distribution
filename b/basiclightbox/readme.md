@@ -10,9 +10,9 @@ The lightest lightbox ever made
 | ------------------ | :-------------: |
 | Full name          | basiclightbox |
 | Keywords           | lightbox, popup, modal, window, dialog, gallery, photo, responsive, mobile |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 63195 |
+| # downloads        | 87604 |
 | # stars            | 2 |
 
 ## Links

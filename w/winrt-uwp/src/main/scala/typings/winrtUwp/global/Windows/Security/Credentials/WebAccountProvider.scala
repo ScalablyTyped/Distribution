@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Security.Credentials
 import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a web account authentication provider. */
 @JSGlobal("Windows.Security.Credentials.WebAccountProvider")
@@ -18,4 +18,3 @@ class WebAccountProvider protected ()
     */
   def this(id: String, displayName: String, iconUri: Uri) = this()
 }
-

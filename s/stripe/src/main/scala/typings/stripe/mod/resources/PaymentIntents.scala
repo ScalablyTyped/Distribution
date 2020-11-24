@@ -15,11 +15,12 @@ import typings.stripe.mod.paymentIntents.IPaymentIntentRetrieveOptions
 import typings.stripe.mod.paymentIntents.IPaymentIntentUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.PaymentIntents")
 @js.native
 class PaymentIntents () extends StripeResource {
+  
   def cancel(paymentIntentId: String): js.Promise[IPaymentIntent] = js.native
   def cancel(paymentIntentId: String, data: Cancellationreason): js.Promise[IPaymentIntent] = js.native
   /**
@@ -39,6 +40,7 @@ class PaymentIntents () extends StripeResource {
   def cancel(paymentIntentId: String, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def cancel(paymentIntentId: String, options: HeaderOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def cancel(paymentIntentId: String, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
+  
   def capture(paymentIntentId: String): js.Promise[IPaymentIntent] = js.native
   def capture(paymentIntentId: String, data: IPaymentIntentCaptureOptions): js.Promise[IPaymentIntent] = js.native
   /**
@@ -58,6 +60,7 @@ class PaymentIntents () extends StripeResource {
   def capture(paymentIntentId: String, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def capture(paymentIntentId: String, options: HeaderOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def capture(paymentIntentId: String, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
+  
   def confirm(paymentIntentId: String): js.Promise[IPaymentIntent] = js.native
   def confirm(paymentIntentId: String, data: IPaymentIntentConfirmOptions): js.Promise[IPaymentIntent] = js.native
   /**
@@ -78,6 +81,7 @@ class PaymentIntents () extends StripeResource {
   def confirm(paymentIntentId: String, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def confirm(paymentIntentId: String, options: HeaderOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def confirm(paymentIntentId: String, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
+  
   def create(data: IPaymentIntentCreationOptions): js.Promise[IPaymentIntent] = js.native
   /**
     * Creates a PaymentIntent object.
@@ -85,6 +89,7 @@ class PaymentIntents () extends StripeResource {
   def create(data: IPaymentIntentCreationOptions, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def create(data: IPaymentIntentCreationOptions, options: HeaderOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def create(data: IPaymentIntentCreationOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
+  
   def list(): IListPromise[IPaymentIntent] = js.native
   def list(data: IPaymentIntentListOptions): IListPromise[IPaymentIntent] = js.native
   /**
@@ -102,6 +107,7 @@ class PaymentIntents () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IPaymentIntent] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IPaymentIntent]]): IListPromise[IPaymentIntent] = js.native
   def list(response: IResponseFn[IList[IPaymentIntent]]): IListPromise[IPaymentIntent] = js.native
+  
   def retrieve(id: String): js.Promise[IPaymentIntent] = js.native
   def retrieve(id: String, data: IPaymentIntentRetrieveOptions): js.Promise[IPaymentIntent] = js.native
   /**
@@ -120,6 +126,7 @@ class PaymentIntents () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def retrieve(id: String, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
+  
   def update(id: String, data: IPaymentIntentUpdateOptions): js.Promise[IPaymentIntent] = js.native
   /**
     * Updates a PaymentIntent object.
@@ -133,4 +140,3 @@ class PaymentIntents () extends StripeResource {
   ): js.Promise[IPaymentIntent] = js.native
   def update(id: String, data: IPaymentIntentUpdateOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
 }
-

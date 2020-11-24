@@ -2,15 +2,19 @@ package typings.consola
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type BrowserReporterOptions = js.Object
+  
   type ConsolaMock = js.Function1[/* args */ js.Any, scala.Unit]
+  
   type ConsolaMockFn = js.Function2[
-    /* type */ java.lang.String, 
+    /* type */ typings.consola.mod.logType, 
     /* defaults */ typings.consola.mod.ConsolaLogObject, 
     typings.consola.mod.ConsolaMock
   ]
+  
   type Winston = js.Any
 }

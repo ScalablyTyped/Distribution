@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a stream which allows reading the data of persistent objects.
@@ -24,8 +24,8 @@ trait ObjectInputStream
      with XActiveDataSink
      with XConnectable
      with XMarkableStream
-
 object ObjectInputStream {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -65,4 +65,3 @@ object ObjectInputStream {
     __obj.asInstanceOf[ObjectInputStream]
   }
 }
-

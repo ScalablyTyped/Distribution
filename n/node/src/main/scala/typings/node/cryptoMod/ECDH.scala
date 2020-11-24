@@ -10,11 +10,12 @@ import typings.node.nodeStrings.latin1
 import typings.node.nodeStrings.uncompressed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "ECDH")
 @js.native
 class ECDH protected () extends js.Object {
+  
   def computeSecret(other_public_key: String, input_encoding: HexBase64Latin1Encoding): Buffer = js.native
   def computeSecret(
     other_public_key: String,
@@ -23,22 +24,26 @@ class ECDH protected () extends js.Object {
   ): String = js.native
   def computeSecret(other_public_key: ArrayBufferView): Buffer = js.native
   def computeSecret(other_public_key: ArrayBufferView, output_encoding: HexBase64Latin1Encoding): String = js.native
+  
   def generateKeys(): Buffer = js.native
   def generateKeys(encoding: HexBase64Latin1Encoding): String = js.native
   def generateKeys(encoding: HexBase64Latin1Encoding, format: ECDHKeyFormat): String = js.native
+  
   def getPrivateKey(): Buffer = js.native
   def getPrivateKey(encoding: HexBase64Latin1Encoding): String = js.native
+  
   def getPublicKey(): Buffer = js.native
   def getPublicKey(encoding: HexBase64Latin1Encoding): String = js.native
   def getPublicKey(encoding: HexBase64Latin1Encoding, format: ECDHKeyFormat): String = js.native
+  
   def setPrivateKey(private_key: String, encoding: HexBase64Latin1Encoding): Unit = js.native
   def setPrivateKey(private_key: ArrayBufferView): Unit = js.native
 }
-
 /* static members */
 @JSImport("crypto", "ECDH")
 @js.native
 object ECDH extends js.Object {
+  
   def convertKey(key: BinaryLike, curve: String): Buffer | String = js.native
   def convertKey(
     key: BinaryLike,
@@ -228,4 +233,3 @@ object ECDH extends js.Object {
     format: uncompressed
   ): Buffer | String = js.native
 }
-

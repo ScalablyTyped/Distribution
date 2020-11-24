@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Switch extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.27.0
@@ -15,6 +16,7 @@ trait Switch extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): Switch = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): Switch = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>change</code> event of this
     * <code>sap.m.Switch</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -29,6 +31,7 @@ trait Switch extends Control {
     */
   def attachChange(oData: js.Any, fnFunction: js.Any): Switch = js.native
   def attachChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Switch = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>change</code> event of this
     * <code>sap.m.Switch</code>.The passed function and listener object must match the ones used for event
@@ -38,6 +41,7 @@ trait Switch extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChange(fnFunction: js.Any, oListener: js.Any): Switch = js.native
+  
   /**
     * Fires event <code>change</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>state</code> of type <code>boolean</code>The new state of the
@@ -46,12 +50,14 @@ trait Switch extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChange(mArguments: js.Any): Switch = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     * @since 1.27.0
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>customTextOff</code>.Custom text for the "OFF" state."OFF"
     * translated to the current language is the default value.Beware that the given text will be cut off
@@ -59,6 +65,7 @@ trait Switch extends Control {
     * @returns Value of property <code>customTextOff</code>
     */
   def getCustomTextOff(): String = js.native
+  
   /**
     * Gets current value of property <code>customTextOn</code>.Custom text for the "ON" state."ON"
     * translated to the current language is the default value.Beware that the given text will be cut off
@@ -66,36 +73,42 @@ trait Switch extends Control {
     * @returns Value of property <code>customTextOn</code>
     */
   def getCustomTextOn(): String = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Whether the switch is enabled.Default value is
     * <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>name</code>.The name to be used in the HTML code for the switch
     * (e.g. for HTML forms that send data to the server via submit).Default value is <code></code>.
     * @returns Value of property <code>name</code>
     */
   def getName(): String = js.native
+  
   /**
     * Gets current value of property <code>state</code>.A boolean value indicating whether the switch is
     * on or off.Default value is <code>false</code>.
     * @returns Value of property <code>state</code>
     */
   def getState(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>type</code>.Type of a Switch. Possibles values "Default",
     * "AcceptReject".Default value is <code>Default</code>.
     * @returns Value of property <code>type</code>
     */
   def getType(): SwitchType = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.27.0
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -105,6 +118,7 @@ trait Switch extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>customTextOff</code>.Custom text for the "OFF" state."OFF"
     * translated to the current language is the default value.Beware that the given text will be cut off
@@ -114,6 +128,7 @@ trait Switch extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCustomTextOff(sCustomTextOff: String): Switch = js.native
+  
   /**
     * Sets a new value for property <code>customTextOn</code>.Custom text for the "ON" state."ON"
     * translated to the current language is the default value.Beware that the given text will be cut off
@@ -123,6 +138,7 @@ trait Switch extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCustomTextOn(sCustomTextOn: String): Switch = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Whether the switch is enabled.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -131,6 +147,7 @@ trait Switch extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): Switch = js.native
+  
   /**
     * Sets a new value for property <code>name</code>.The name to be used in the HTML code for the switch
     * (e.g. for HTML forms that send data to the server via submit).When called with a value of
@@ -140,12 +157,14 @@ trait Switch extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setName(sName: String): Switch = js.native
+  
   /**
     * Change the switch state between on and off.
     * @param bState undefined
     * @returns <code>this</code> to allow method chaining.
     */
   def setState(bState: Boolean): Switch = js.native
+  
   /**
     * Sets a new value for property <code>type</code>.Type of a Switch. Possibles values "Default",
     * "AcceptReject".When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -155,4 +174,3 @@ trait Switch extends Control {
     */
   def setType(sType: SwitchType): Switch = js.native
 }
-

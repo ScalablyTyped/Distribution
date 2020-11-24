@@ -2,25 +2,38 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query extends js.Object {
+  
   def addParams(key: String, value: String): Query = js.native
+  
   def execute(dataManager: DataManager, done: js.Any): js.Any = js.native
   def execute(dataManager: DataManager, done: js.Any, fail: js.UndefOr[scala.Nothing], always: String): js.Any = js.native
   def execute(dataManager: DataManager, done: js.Any, fail: String): js.Any = js.native
   def execute(dataManager: DataManager, done: js.Any, fail: String, always: String): js.Any = js.native
+  
   def executeLocal(dataManager: DataManager): DataManager = js.native
+  
   def expand(tables: js.Any): Query = js.native
+  
   def foreignKey(key: String): Query = js.native
+  
   def from(tableName: js.Any): Query = js.native
+  
   def group(fieldName: String): Query = js.native
+  
   def hierarchy(query: Query, selectorFn: js.Any): Query = js.native
+  
   def key(field: String): Query = js.native
+  
   def page(pageIndex: Double, pageSize: Double): Query = js.native
+  
   def range(start: Double, end: Double): Query = js.native
+  
   def requiresCount(): Query = js.native
+  
   def search(searchKey: js.Any): Query = js.native
   def search(
     searchKey: js.Any,
@@ -90,15 +103,22 @@ trait Query extends js.Object {
     ignoreCase: Boolean,
     ignoreAccent: Boolean
   ): Query = js.native
+  
   def select(fieldNames: js.Any): Query = js.native
+  
   def skip(nos: Double): Query = js.native
+  
   def sortBy(fieldName: String): Query = js.native
   def sortBy(fieldName: String, comparer: js.UndefOr[scala.Nothing], isFromGroup: Boolean): Query = js.native
   def sortBy(fieldName: String, comparer: SortOrder_): Query = js.native
   def sortBy(fieldName: String, comparer: SortOrder_, isFromGroup: Boolean): Query = js.native
+  
   def sortByDesc(fieldName: String): Query = js.native
+  
   def take(nos: Double): Query = js.native
+  
   def using(dataManager: DataManager): Query = js.native
+  
   def where(fieldName: String, operator: FilterOperators, value: js.Any): Query = js.native
   def where(
     fieldName: String,
@@ -117,4 +137,3 @@ trait Query extends js.Object {
   ): Query = js.native
   def where(predicate: Predicate): Query = js.native
 }
-

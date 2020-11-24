@@ -7,10 +7,9 @@ import typings.foundationSites.FoundationSites.Magellan
 import typings.foundationSites.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableMagellan
   extends Instantiable1[/* element */ JQuery, Magellan]
      with Instantiable2[/* element */ JQuery, /* options */ IMagellanOptions, Magellan]
-

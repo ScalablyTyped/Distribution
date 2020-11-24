@@ -12,7 +12,7 @@ A Fancy, Higher-Level Wrapper for Telegram Bot API
 | Keywords           | telegram, bot, api |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 9502 |
+| # downloads        | 9302 |
 | # stars            | 0 |
 
 ## Links

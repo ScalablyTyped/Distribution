@@ -2,17 +2,17 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ScrollBarAction extends js.Object
-
 /**
   * Actions are: Click on track, button, drag of thumb, or mouse wheel click
   */
 @JSGlobal("sap.ui.core.ScrollBarAction")
 @js.native
 object ScrollBarAction extends js.Object {
+  
   @js.native
   sealed trait Drag extends ScrollBarAction
   
@@ -24,6 +24,4 @@ object ScrollBarAction extends js.Object {
   
   @js.native
   sealed trait Step extends ScrollBarAction
-  
 }
-

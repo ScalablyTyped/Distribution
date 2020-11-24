@@ -3,7 +3,7 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.RECTANGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RectangleNode
@@ -18,6 +18,6 @@ trait RectangleNode
      with ConstraintMixin
      with CornerMixin
      with RectangleCornerMixin {
+  
   val `type`: RECTANGLE = js.native
 }
-

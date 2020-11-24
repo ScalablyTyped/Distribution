@@ -2,9 +2,196 @@ package typings.cordovaPluginsDiagnostic
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaPluginsDiagnosticStrings {
+  
+  @scala.inline
+  def ACCESS_BACKGROUND_LOCATION: ACCESS_BACKGROUND_LOCATION = "ACCESS_BACKGROUND_LOCATION".asInstanceOf[ACCESS_BACKGROUND_LOCATION]
+  
+  @scala.inline
+  def ACCESS_COARSE_LOCATION: ACCESS_COARSE_LOCATION = "ACCESS_COARSE_LOCATION".asInstanceOf[ACCESS_COARSE_LOCATION]
+  
+  @scala.inline
+  def ACCESS_FINE_LOCATION: ACCESS_FINE_LOCATION = "ACCESS_FINE_LOCATION".asInstanceOf[ACCESS_FINE_LOCATION]
+  
+  @scala.inline
+  def ADD_VOICEMAIL: ADD_VOICEMAIL = "ADD_VOICEMAIL".asInstanceOf[ADD_VOICEMAIL]
+  
+  @scala.inline
+  def ARMv6: ARMv6 = "ARMv6".asInstanceOf[ARMv6]
+  
+  @scala.inline
+  def ARMv7: ARMv7 = "ARMv7".asInstanceOf[ARMv7]
+  
+  @scala.inline
+  def ARMv8: ARMv8 = "ARMv8".asInstanceOf[ARMv8]
+  
+  @scala.inline
+  def BODY_SENSORS: BODY_SENSORS = "BODY_SENSORS".asInstanceOf[BODY_SENSORS]
+  
+  @scala.inline
+  def CALL_PHONE: CALL_PHONE = "CALL_PHONE".asInstanceOf[CALL_PHONE]
+  
+  @scala.inline
+  def CAMERA: CAMERA = "CAMERA".asInstanceOf[CAMERA]
+  
+  @scala.inline
+  def DENIED_ALWAYS: DENIED_ALWAYS = "DENIED_ALWAYS".asInstanceOf[DENIED_ALWAYS]
+  
+  @scala.inline
+  def DENIED_ONCE: DENIED_ONCE = "DENIED_ONCE".asInstanceOf[DENIED_ONCE]
+  
+  @scala.inline
+  def GET_ACCOUNTS: GET_ACCOUNTS = "GET_ACCOUNTS".asInstanceOf[GET_ACCOUNTS]
+  
+  @scala.inline
+  def GRANTED: GRANTED = "GRANTED".asInstanceOf[GRANTED]
+  
+  @scala.inline
+  def MIPS: MIPS = "MIPS".asInstanceOf[MIPS]
+  
+  @scala.inline
+  def MIPS_64: MIPS_64 = "MIPS_64".asInstanceOf[MIPS_64]
+  
+  @scala.inline
+  def NOT_REQUESTED: NOT_REQUESTED = "NOT_REQUESTED".asInstanceOf[NOT_REQUESTED]
+  
+  @scala.inline
+  def PROCESS_OUTGOING_CALLS: PROCESS_OUTGOING_CALLS = "PROCESS_OUTGOING_CALLS".asInstanceOf[PROCESS_OUTGOING_CALLS]
+  
+  @scala.inline
+  def READ_CALENDAR: READ_CALENDAR = "READ_CALENDAR".asInstanceOf[READ_CALENDAR]
+  
+  @scala.inline
+  def READ_CALL_LOG: READ_CALL_LOG = "READ_CALL_LOG".asInstanceOf[READ_CALL_LOG]
+  
+  @scala.inline
+  def READ_CONTACTS: READ_CONTACTS = "READ_CONTACTS".asInstanceOf[READ_CONTACTS]
+  
+  @scala.inline
+  def READ_EXTERNAL_STORAGE: READ_EXTERNAL_STORAGE = "READ_EXTERNAL_STORAGE".asInstanceOf[READ_EXTERNAL_STORAGE]
+  
+  @scala.inline
+  def READ_PHONE_STATE: READ_PHONE_STATE = "READ_PHONE_STATE".asInstanceOf[READ_PHONE_STATE]
+  
+  @scala.inline
+  def READ_SMS: READ_SMS = "READ_SMS".asInstanceOf[READ_SMS]
+  
+  @scala.inline
+  def RECEIVE_MMS: RECEIVE_MMS = "RECEIVE_MMS".asInstanceOf[RECEIVE_MMS]
+  
+  @scala.inline
+  def RECEIVE_SMS: RECEIVE_SMS = "RECEIVE_SMS".asInstanceOf[RECEIVE_SMS]
+  
+  @scala.inline
+  def RECEIVE_WAP_PUSH: RECEIVE_WAP_PUSH = "RECEIVE_WAP_PUSH".asInstanceOf[RECEIVE_WAP_PUSH]
+  
+  @scala.inline
+  def RECORD_AUDIO: RECORD_AUDIO = "RECORD_AUDIO".asInstanceOf[RECORD_AUDIO]
+  
+  @scala.inline
+  def SEND_SMS: SEND_SMS = "SEND_SMS".asInstanceOf[SEND_SMS]
+  
+  @scala.inline
+  def USE_SIP: USE_SIP = "USE_SIP".asInstanceOf[USE_SIP]
+  
+  @scala.inline
+  def WRITE_CALENDAR: WRITE_CALENDAR = "WRITE_CALENDAR".asInstanceOf[WRITE_CALENDAR]
+  
+  @scala.inline
+  def WRITE_CALL_LOG: WRITE_CALL_LOG = "WRITE_CALL_LOG".asInstanceOf[WRITE_CALL_LOG]
+  
+  @scala.inline
+  def WRITE_CONTACTS: WRITE_CONTACTS = "WRITE_CONTACTS".asInstanceOf[WRITE_CONTACTS]
+  
+  @scala.inline
+  def WRITE_EXTERNAL_STORAGE: WRITE_EXTERNAL_STORAGE = "WRITE_EXTERNAL_STORAGE".asInstanceOf[WRITE_EXTERNAL_STORAGE]
+  
+  @scala.inline
+  def X86: X86 = "X86".asInstanceOf[X86]
+  
+  @scala.inline
+  def X86_64: X86_64 = "X86_64".asInstanceOf[X86_64]
+  
+  @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def authorized: authorized = "authorized".asInstanceOf[authorized]
+  
+  @scala.inline
+  def authorized_when_in_use: authorized_when_in_use = "authorized_when_in_use".asInstanceOf[authorized_when_in_use]
+  
+  @scala.inline
+  def badge: badge = "badge".asInstanceOf[badge]
+  
+  @scala.inline
+  def battery_saving: battery_saving = "battery_saving".asInstanceOf[battery_saving]
+  
+  @scala.inline
+  def denied_always_ : denied_always_ = "denied_always".asInstanceOf[denied_always_]
+  
+  @scala.inline
+  def device_only: device_only = "device_only".asInstanceOf[device_only]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
+  @scala.inline
+  def high_accuracy: high_accuracy = "high_accuracy".asInstanceOf[high_accuracy]
+  
+  @scala.inline
+  def location_off: location_off = "location_off".asInstanceOf[location_off]
+  
+  @scala.inline
+  def not_available: not_available = "not_available".asInstanceOf[not_available]
+  
+  @scala.inline
+  def not_determined: not_determined = "not_determined".asInstanceOf[not_determined]
+  
+  @scala.inline
+  def not_requested_ : not_requested_ = "not_requested".asInstanceOf[not_requested_]
+  
+  @scala.inline
+  def powered_off: powered_off = "powered_off".asInstanceOf[powered_off]
+  
+  @scala.inline
+  def powered_on: powered_on = "powered_on".asInstanceOf[powered_on]
+  
+  @scala.inline
+  def powering_off: powering_off = "powering_off".asInstanceOf[powering_off]
+  
+  @scala.inline
+  def powering_on: powering_on = "powering_on".asInstanceOf[powering_on]
+  
+  @scala.inline
+  def reduced: reduced = "reduced".asInstanceOf[reduced]
+  
+  @scala.inline
+  def resetting: resetting = "resetting".asInstanceOf[resetting]
+  
+  @scala.inline
+  def restricted: restricted = "restricted".asInstanceOf[restricted]
+  
+  @scala.inline
+  def sound: sound = "sound".asInstanceOf[sound]
+  
+  @scala.inline
+  def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def unsupported: unsupported = "unsupported".asInstanceOf[unsupported]
+  
+  @scala.inline
+  def when_in_use: when_in_use = "when_in_use".asInstanceOf[when_in_use]
+  
   @js.native
   sealed trait ACCESS_BACKGROUND_LOCATION extends js.Object
   
@@ -190,130 +377,4 @@ object cordovaPluginsDiagnosticStrings {
   
   @js.native
   sealed trait when_in_use extends js.Object
-  
-  @scala.inline
-  def ACCESS_BACKGROUND_LOCATION: ACCESS_BACKGROUND_LOCATION = "ACCESS_BACKGROUND_LOCATION".asInstanceOf[ACCESS_BACKGROUND_LOCATION]
-  @scala.inline
-  def ACCESS_COARSE_LOCATION: ACCESS_COARSE_LOCATION = "ACCESS_COARSE_LOCATION".asInstanceOf[ACCESS_COARSE_LOCATION]
-  @scala.inline
-  def ACCESS_FINE_LOCATION: ACCESS_FINE_LOCATION = "ACCESS_FINE_LOCATION".asInstanceOf[ACCESS_FINE_LOCATION]
-  @scala.inline
-  def ADD_VOICEMAIL: ADD_VOICEMAIL = "ADD_VOICEMAIL".asInstanceOf[ADD_VOICEMAIL]
-  @scala.inline
-  def ARMv6: ARMv6 = "ARMv6".asInstanceOf[ARMv6]
-  @scala.inline
-  def ARMv7: ARMv7 = "ARMv7".asInstanceOf[ARMv7]
-  @scala.inline
-  def ARMv8: ARMv8 = "ARMv8".asInstanceOf[ARMv8]
-  @scala.inline
-  def BODY_SENSORS: BODY_SENSORS = "BODY_SENSORS".asInstanceOf[BODY_SENSORS]
-  @scala.inline
-  def CALL_PHONE: CALL_PHONE = "CALL_PHONE".asInstanceOf[CALL_PHONE]
-  @scala.inline
-  def CAMERA: CAMERA = "CAMERA".asInstanceOf[CAMERA]
-  @scala.inline
-  def DENIED_ALWAYS: DENIED_ALWAYS = "DENIED_ALWAYS".asInstanceOf[DENIED_ALWAYS]
-  @scala.inline
-  def DENIED_ONCE: DENIED_ONCE = "DENIED_ONCE".asInstanceOf[DENIED_ONCE]
-  @scala.inline
-  def GET_ACCOUNTS: GET_ACCOUNTS = "GET_ACCOUNTS".asInstanceOf[GET_ACCOUNTS]
-  @scala.inline
-  def GRANTED: GRANTED = "GRANTED".asInstanceOf[GRANTED]
-  @scala.inline
-  def MIPS: MIPS = "MIPS".asInstanceOf[MIPS]
-  @scala.inline
-  def MIPS_64: MIPS_64 = "MIPS_64".asInstanceOf[MIPS_64]
-  @scala.inline
-  def NOT_REQUESTED: NOT_REQUESTED = "NOT_REQUESTED".asInstanceOf[NOT_REQUESTED]
-  @scala.inline
-  def PROCESS_OUTGOING_CALLS: PROCESS_OUTGOING_CALLS = "PROCESS_OUTGOING_CALLS".asInstanceOf[PROCESS_OUTGOING_CALLS]
-  @scala.inline
-  def READ_CALENDAR: READ_CALENDAR = "READ_CALENDAR".asInstanceOf[READ_CALENDAR]
-  @scala.inline
-  def READ_CALL_LOG: READ_CALL_LOG = "READ_CALL_LOG".asInstanceOf[READ_CALL_LOG]
-  @scala.inline
-  def READ_CONTACTS: READ_CONTACTS = "READ_CONTACTS".asInstanceOf[READ_CONTACTS]
-  @scala.inline
-  def READ_EXTERNAL_STORAGE: READ_EXTERNAL_STORAGE = "READ_EXTERNAL_STORAGE".asInstanceOf[READ_EXTERNAL_STORAGE]
-  @scala.inline
-  def READ_PHONE_STATE: READ_PHONE_STATE = "READ_PHONE_STATE".asInstanceOf[READ_PHONE_STATE]
-  @scala.inline
-  def READ_SMS: READ_SMS = "READ_SMS".asInstanceOf[READ_SMS]
-  @scala.inline
-  def RECEIVE_MMS: RECEIVE_MMS = "RECEIVE_MMS".asInstanceOf[RECEIVE_MMS]
-  @scala.inline
-  def RECEIVE_SMS: RECEIVE_SMS = "RECEIVE_SMS".asInstanceOf[RECEIVE_SMS]
-  @scala.inline
-  def RECEIVE_WAP_PUSH: RECEIVE_WAP_PUSH = "RECEIVE_WAP_PUSH".asInstanceOf[RECEIVE_WAP_PUSH]
-  @scala.inline
-  def RECORD_AUDIO: RECORD_AUDIO = "RECORD_AUDIO".asInstanceOf[RECORD_AUDIO]
-  @scala.inline
-  def SEND_SMS: SEND_SMS = "SEND_SMS".asInstanceOf[SEND_SMS]
-  @scala.inline
-  def USE_SIP: USE_SIP = "USE_SIP".asInstanceOf[USE_SIP]
-  @scala.inline
-  def WRITE_CALENDAR: WRITE_CALENDAR = "WRITE_CALENDAR".asInstanceOf[WRITE_CALENDAR]
-  @scala.inline
-  def WRITE_CALL_LOG: WRITE_CALL_LOG = "WRITE_CALL_LOG".asInstanceOf[WRITE_CALL_LOG]
-  @scala.inline
-  def WRITE_CONTACTS: WRITE_CONTACTS = "WRITE_CONTACTS".asInstanceOf[WRITE_CONTACTS]
-  @scala.inline
-  def WRITE_EXTERNAL_STORAGE: WRITE_EXTERNAL_STORAGE = "WRITE_EXTERNAL_STORAGE".asInstanceOf[WRITE_EXTERNAL_STORAGE]
-  @scala.inline
-  def X86: X86 = "X86".asInstanceOf[X86]
-  @scala.inline
-  def X86_64: X86_64 = "X86_64".asInstanceOf[X86_64]
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def authorized: authorized = "authorized".asInstanceOf[authorized]
-  @scala.inline
-  def authorized_when_in_use: authorized_when_in_use = "authorized_when_in_use".asInstanceOf[authorized_when_in_use]
-  @scala.inline
-  def badge: badge = "badge".asInstanceOf[badge]
-  @scala.inline
-  def battery_saving: battery_saving = "battery_saving".asInstanceOf[battery_saving]
-  @scala.inline
-  def denied_always_ : denied_always_ = "denied_always".asInstanceOf[denied_always_]
-  @scala.inline
-  def device_only: device_only = "device_only".asInstanceOf[device_only]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def high_accuracy: high_accuracy = "high_accuracy".asInstanceOf[high_accuracy]
-  @scala.inline
-  def location_off: location_off = "location_off".asInstanceOf[location_off]
-  @scala.inline
-  def not_available: not_available = "not_available".asInstanceOf[not_available]
-  @scala.inline
-  def not_determined: not_determined = "not_determined".asInstanceOf[not_determined]
-  @scala.inline
-  def not_requested_ : not_requested_ = "not_requested".asInstanceOf[not_requested_]
-  @scala.inline
-  def powered_off: powered_off = "powered_off".asInstanceOf[powered_off]
-  @scala.inline
-  def powered_on: powered_on = "powered_on".asInstanceOf[powered_on]
-  @scala.inline
-  def powering_off: powering_off = "powering_off".asInstanceOf[powering_off]
-  @scala.inline
-  def powering_on: powering_on = "powering_on".asInstanceOf[powering_on]
-  @scala.inline
-  def reduced: reduced = "reduced".asInstanceOf[reduced]
-  @scala.inline
-  def resetting: resetting = "resetting".asInstanceOf[resetting]
-  @scala.inline
-  def restricted: restricted = "restricted".asInstanceOf[restricted]
-  @scala.inline
-  def sound: sound = "sound".asInstanceOf[sound]
-  @scala.inline
-  def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def unsupported: unsupported = "unsupported".asInstanceOf[unsupported]
-  @scala.inline
-  def when_in_use: when_in_use = "when_in_use".asInstanceOf[when_in_use]
 }
-

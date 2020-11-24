@@ -6,11 +6,12 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "buildColumns")
 @js.native
 object buildColumns extends js.Object {
+  
   def apply(
     items: js.Array[_],
     canResizeColumns: js.UndefOr[Boolean],
@@ -23,4 +24,3 @@ object buildColumns extends js.Object {
     isMultiline: js.UndefOr[Boolean]
   ): js.Array[IColumn] = js.native
 }
-

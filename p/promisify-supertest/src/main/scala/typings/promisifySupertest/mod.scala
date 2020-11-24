@@ -6,13 +6,20 @@ import typings.superagent.mod.SuperAgent
 import typings.superagent.mod.SuperAgentRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promisify-supertest", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def apply(app: Express): SuperTest = js.native
+  
+  def agent(): SuperTest = js.native
+  def agent(app: js.Any): SuperTest = js.native
+  
   @js.native
   trait Test extends SuperAgentRequest {
+    
     def expect(body: String): this.type = js.native
     def expect(body: String, callback: CallbackHandler): this.type = js.native
     def expect(body: js.Object): this.type = js.native
@@ -28,14 +35,13 @@ object mod extends js.Object {
     def expect(status: Double, body: String): this.type = js.native
     def expect(status: Double, body: String, callback: CallbackHandler): this.type = js.native
     def expect(status: Double, callback: CallbackHandler): this.type = js.native
+    
     def serverAddress(app: js.Any, path: String): String = js.native
   }
   
-  def apply(app: Express): SuperTest = js.native
-  def agent(): SuperTest = js.native
-  def agent(app: js.Any): SuperTest = js.native
   type CallbackHandler = js.Function2[/* err */ js.Any, /* res */ Response, Unit]
+  
   type Response = typings.superagent.mod.Response
+  
   type SuperTest = SuperAgent[Test]
 }
-

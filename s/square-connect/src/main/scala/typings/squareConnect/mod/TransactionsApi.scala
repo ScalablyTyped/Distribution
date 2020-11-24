@@ -2,7 +2,7 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "TransactionsApi")
 @js.native
@@ -12,11 +12,13 @@ import scala.scalajs.js.annotation._
   */
 class TransactionsApi () extends js.Object {
   def this(apiClient: ApiClient) = this()
+  
   /**
     * Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.
     * See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe for more information.
     */
   def captureTransaction(locationId: String, transactionId: String): js.Promise[CaptureTransactionResponse] = js.native
+  
   /**
     * Charges a card represented by a card nonce or a customer's card on file.
     * @deprecated recommend using [CreatePayment](#endpoint-payments-createpayment) Your request to this endpoint must
@@ -27,6 +29,7 @@ class TransactionsApi () extends js.Object {
     * See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
     */
   def charge(locationId: String, body: ChargeRequest): js.Promise[ChargeResponse] = js.native
+  
   /**
     * Initiates a refund for a previously charged tender.
     * @deprecated recommend using [RefundPayment](#endpoint-refunds-refundpayment) You must issue a refund within 120
@@ -36,6 +39,7 @@ class TransactionsApi () extends js.Object {
     * Interac transactions must refunded in-person (e.g., dipping the card using POS app).
     */
   def createRefund(locationId: String, transactionId: String, body: CreateRefundRequest): js.Promise[CreateRefundResponse] = js.native
+  
   /**
     * Lists refunds for one of a business's locations.
     * @deprecated recommend using [SearchOrders](#endpoint-orders-searchorders) In addition to full or partial tender
@@ -44,6 +48,7 @@ class TransactionsApi () extends js.Object {
     * Max results per [page](#paginatingresults): 50.
     */
   def listRefunds(locationId: String, params: ListRefundsRequest): js.Promise[ListRefundsResponse] = js.native
+  
   /**
     * Lists transactions for a particular location.
     * @deprecated recommend using [SearchOrders](#endpoint-orders-searchorders) Transactions include payment information
@@ -51,11 +56,13 @@ class TransactionsApi () extends js.Object {
     * Max results per [page](#paginatingresults): 50.
     */
   def listTransactions(locationId: String, params: ListTransactionsRequest): js.Promise[ListTransactionsResponse] = js.native
+  
   /**
     * Retrieves details for a single transaction.
     * @deprecated recommend using [BatchRetrieveOrders](#endpoint-batchretrieveorders).
     */
   def retrieveTransaction(locationId: String, transactionId: String): js.Promise[RetrieveTransactionResponse] = js.native
+  
   /**
     * Cancels a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a
     * `delay_capture` value of `true`. See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe
@@ -63,4 +70,3 @@ class TransactionsApi () extends js.Object {
     */
   def voidTransaction(locationId: String, transactionId: String): js.Promise[VoidTransactionResponse] = js.native
 }
-

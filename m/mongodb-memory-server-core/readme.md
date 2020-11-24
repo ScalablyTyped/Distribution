@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongodb-memory-server-core
 
-Typings are for version 6.6.3
+Typings are for version 6.9.2
 
 ## Library description:
 MongoDB Server for testing (core package, without autodownload). The server will allow you to connect your favourite ODM or client library to the MongoDB Server and run parallel integration tests isolated from each other.
@@ -10,9 +10,9 @@ MongoDB Server for testing (core package, without autodownload). The server will
 | ------------------ | :-------------: |
 | Full name          | mongodb-memory-server-core |
 | Keywords           | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
-| # releases         | 33 |
-| # dependents       | 1 |
-| # downloads        | 1636208 |
+| # releases         | 64 |
+| # dependents       | 9 |
+| # downloads        | 5722255 |
 | # stars            | 0 |
 
 ## Links

@@ -2,9 +2,49 @@ package typings.webtorrent
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webtorrentStrings {
+  
+  @scala.inline
+  def dht: dht = "dht".asInstanceOf[dht]
+  
+  @scala.inline
+  def done: done = "done".asInstanceOf[done]
+  
+  @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def infoHash: infoHash = "infoHash".asInstanceOf[infoHash]
+  
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @scala.inline
+  def noPeers: noPeers = "noPeers".asInstanceOf[noPeers]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def torrent: torrent = "torrent".asInstanceOf[torrent]
+  
+  @scala.inline
+  def tracker: tracker = "tracker".asInstanceOf[tracker]
+  
+  @scala.inline
+  def upload: upload = "upload".asInstanceOf[upload]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
+  @scala.inline
+  def wire: wire = "wire".asInstanceOf[wire]
+  
   @js.native
   sealed trait dht extends js.Object
   
@@ -43,32 +83,4 @@ object webtorrentStrings {
   
   @js.native
   sealed trait wire extends js.Object
-  
-  @scala.inline
-  def dht: dht = "dht".asInstanceOf[dht]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def infoHash: infoHash = "infoHash".asInstanceOf[infoHash]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def noPeers: noPeers = "noPeers".asInstanceOf[noPeers]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def torrent: torrent = "torrent".asInstanceOf[torrent]
-  @scala.inline
-  def tracker: tracker = "tracker".asInstanceOf[tracker]
-  @scala.inline
-  def upload: upload = "upload".asInstanceOf[upload]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def wire: wire = "wire".asInstanceOf[wire]
 }
-

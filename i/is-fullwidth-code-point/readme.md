@@ -11,8 +11,8 @@ Check if the character represented by a given Unicode code point is fullwidth
 | Full name          | is-fullwidth-code-point |
 | Keywords           | fullwidth, full-width, full, width, unicode, character, string, codepoint, code, point, is, detect, check |
 | # releases         | 2 |
-| # dependents       | 92 |
-| # downloads        | 995861286 |
+| # dependents       | 141 |
+| # downloads        | 1641168245 |
 | # stars            | 0 |
 
 ## Links

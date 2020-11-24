@@ -2,11 +2,12 @@ package typings.isReachable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("is-reachable", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Check if servers are reachable.
   The Node.js version will do a TCP handshake with the target's port. It attempts to detect cases where a router redirects the request to itself.
@@ -29,4 +30,3 @@ object ^ extends js.Object {
   def apply(targets: js.Array[String]): js.Promise[Boolean] = js.native
   def apply(targets: js.Array[String], options: Options): js.Promise[Boolean] = js.native
 }
-

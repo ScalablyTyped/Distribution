@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.ReadonlyMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("irregular-plurals", JSImport.Namespace)
 @js.native
@@ -15,4 +15,3 @@ object mod
         String
       ]
     ]
-

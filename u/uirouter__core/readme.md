@@ -10,9 +10,9 @@ UI-Router Core: Framework agnostic, State-based routing for JavaScript Single Pa
 | ------------------ | :-------------: |
 | Full name          | @uirouter/core |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 11 |
-| # downloads        | 4270218 |
+| # releases         | 13 |
+| # dependents       | 26 |
+| # downloads        | 5151964 |
 | # stars            | 0 |
 
 ## Links

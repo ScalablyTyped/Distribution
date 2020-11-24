@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Defaultobjectaccesscontrols")
 @js.native
 class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.defaultObjectAccessControls.delete
     * @desc Permanently deletes the default object ACL entry for the specified
@@ -99,6 +101,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * storage.defaultObjectAccessControls.get
     * @desc Returns the default object ACL entry for the specified entity on
@@ -189,6 +192,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.defaultObjectAccessControls.insert
     * @desc Creates a new default object ACL entry on the specified bucket.
@@ -277,6 +281,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.defaultObjectAccessControls.list
     * @desc Retrieves default object ACL entries on the specified bucket.
@@ -362,6 +367,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControls]
   ): Unit = js.native
+  
   /**
     * storage.defaultObjectAccessControls.patch
     * @desc Patches a default object ACL entry on the specified bucket.
@@ -458,6 +464,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.defaultObjectAccessControls.update
     * @desc Updates a default object ACL entry on the specified bucket.
@@ -555,4 +562,3 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
 }
-

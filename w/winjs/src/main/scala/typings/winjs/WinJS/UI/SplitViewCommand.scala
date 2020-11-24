@@ -4,31 +4,14 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a command in the SplitView Pane.
   **/
 @js.native
 trait SplitViewCommand extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets the HTML element that hosts this SplitViewCommand.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets or sets the command's icon.
-    **/
-  var icon: String = js.native
-  /**
-    * Gets or sets the label of the command.
-    **/
-  var label: String = js.native
-  /**
-    * Gets or sets the tooltip of the command.
-    **/
-  var tooltip: String = js.native
+  
   //#endregion Events
   //#region Methods
   /**
@@ -39,6 +22,7 @@ trait SplitViewCommand extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -46,10 +30,29 @@ trait SplitViewCommand extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Releases resources held by this SplitViewCommand. Call this method when the SplitViewCommand is no longer needed. After calling this method, the SplitViewCommand becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets the HTML element that hosts this SplitViewCommand.
+    **/
+  var element: HTMLElement = js.native
+  
+  /**
+    * Gets or sets the command's icon.
+    **/
+  var icon: String = js.native
+  
+  /**
+    * Gets or sets the label of the command.
+    **/
+  var label: String = js.native
+  
   //#endregion Constructors
   //# region Events
   /**
@@ -57,6 +60,7 @@ trait SplitViewCommand extends js.Object {
     * @param eventInfo An object that contains information about the event.
     **/
   def oninvoked(eventInfo: CustomEvent[_]): Unit = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -65,5 +69,9 @@ trait SplitViewCommand extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets the tooltip of the command.
+    **/
+  var tooltip: String = js.native
 }
-

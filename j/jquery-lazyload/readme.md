@@ -12,7 +12,7 @@ Lazyload images with jQuery
 | Keywords           | jquery-plugin, ecosystem:jquery |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 643776 |
+| # downloads        | 690127 |
 | # stars            | 6 |
 
 ## Links

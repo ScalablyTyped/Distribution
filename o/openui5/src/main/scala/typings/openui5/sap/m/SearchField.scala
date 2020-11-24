@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchField extends Control {
+  
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -14,6 +15,7 @@ trait SearchField extends Control {
     */
   def addAriaDescribedBy(vAriaDescribedBy: js.Any): SearchField = js.native
   def addAriaDescribedBy(vAriaDescribedBy: Control): SearchField = js.native
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -21,6 +23,7 @@ trait SearchField extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): SearchField = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): SearchField = js.native
+  
   /**
     * Adds some suggestionItem to the aggregation <code>suggestionItems</code>.
     * @since 1.34
@@ -28,6 +31,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addSuggestionItem(oSuggestionItem: SuggestionItem): SearchField = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>liveChange</code> event of this
     * <code>sap.m.SearchField</code>.When called, the context of the event handler (its <code>this</code>)
@@ -45,6 +49,7 @@ trait SearchField extends Control {
     */
   def attachLiveChange(oData: js.Any, fnFunction: js.Any): SearchField = js.native
   def attachLiveChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SearchField = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>search</code> event of this
     * <code>sap.m.SearchField</code>.When called, the context of the event handler (its <code>this</code>)
@@ -59,6 +64,7 @@ trait SearchField extends Control {
     */
   def attachSearch(oData: js.Any, fnFunction: js.Any): SearchField = js.native
   def attachSearch(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SearchField = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>suggest</code> event of this
     * <code>sap.m.SearchField</code>.When called, the context of the event handler (its <code>this</code>)
@@ -76,6 +82,7 @@ trait SearchField extends Control {
     */
   def attachSuggest(oData: js.Any, fnFunction: js.Any): SearchField = js.native
   def attachSuggest(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SearchField = js.native
+  
   /**
     * Binds property <code>value</code> to model data.See {@link sap.ui.base.ManagedObject#bindProperty
     * ManagedObject.bindProperty} for a detailed description of the possible properties of
@@ -84,12 +91,14 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindValue(oBindingInfo: js.Any): SearchField = js.native
+  
   /**
     * Destroys all the suggestionItems in the aggregation <code>suggestionItems</code>.
     * @since 1.34
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySuggestionItems(): SearchField = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>liveChange</code> event of this
     * <code>sap.m.SearchField</code>.The passed function and listener object must match the ones used for
@@ -100,6 +109,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachLiveChange(fnFunction: js.Any, oListener: js.Any): SearchField = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>search</code> event of this
     * <code>sap.m.SearchField</code>.The passed function and listener object must match the ones used for
@@ -109,6 +119,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSearch(fnFunction: js.Any, oListener: js.Any): SearchField = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>suggest</code> event of this
     * <code>sap.m.SearchField</code>.The passed function and listener object must match the ones used for
@@ -119,6 +130,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSuggest(fnFunction: js.Any, oListener: js.Any): SearchField = js.native
+  
   /**
     * Fires event <code>liveChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>newValue</code> of type <code>string</code>Current search string.</li></ul>
@@ -127,6 +139,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireLiveChange(mArguments: js.Any): SearchField = js.native
+  
   /**
     * Fires event <code>search</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>query</code> of type <code>string</code>The search query
@@ -139,6 +152,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSearch(mArguments: js.Any): SearchField = js.native
+  
   /**
     * Fires event <code>suggest</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>suggestValue</code> of type <code>string</code>Current search string of the
@@ -148,16 +162,19 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSuggest(mArguments: js.Any): SearchField = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
   def getAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>enableSuggestions</code>.If true, a <code>suggest</code> event
     * is fired when user types in the input and when the input is focused.On a phone device, a full screen
@@ -167,30 +184,35 @@ trait SearchField extends Control {
     * @returns Value of property <code>enableSuggestions</code>
     */
   def getEnableSuggestions(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Boolean property to enable the control (default
     * is true).Default value is <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>maxLength</code>.Maximum number of characters. Value '0' means
     * the feature is switched off.Default value is <code>0</code>.
     * @returns Value of property <code>maxLength</code>
     */
   def getMaxLength(): Double = js.native
+  
   /**
     * Gets current value of property <code>placeholder</code>.Text shown when no value available. Default
     * placeholder text is the word "Search" in the current local language (if supported) or in English.
     * @returns Value of property <code>placeholder</code>
     */
   def getPlaceholder(): String = js.native
+  
   /**
     * Function returns DOM element which acts as reference point for the opening suggestion menu
     * @since 1.34
     * @returns the DOM element at which to open the suggestion list
     */
   def getPopupAnchorDomRef(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>refreshButtonTooltip</code>.Tooltip text of the refresh button.
     * If it is not set, the tooltip of the SearchField (if any) is displayed. Tooltips are not displayed
@@ -199,6 +221,7 @@ trait SearchField extends Control {
     * @returns Value of property <code>refreshButtonTooltip</code>
     */
   def getRefreshButtonTooltip(): String = js.native
+  
   /**
     * Gets current value of property <code>selectOnFocus</code>.Normally, search text is selected for copy
     * when the SearchField is focused by keyboard navigation. If an application re-renders the SearchField
@@ -208,12 +231,14 @@ trait SearchField extends Control {
     * @returns Value of property <code>selectOnFocus</code>
     */
   def getSelectOnFocus(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showMagnifier</code>.Set to false to hide the magnifier
     * icon.Default value is <code>true</code>.
     * @returns Value of property <code>showMagnifier</code>
     */
   def getShowMagnifier(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showRefreshButton</code>.Set to true to display a refresh
     * button in place of the search icon. By pressing the refresh button or F5 key on keyboard, the user
@@ -222,6 +247,7 @@ trait SearchField extends Control {
     * @returns Value of property <code>showRefreshButton</code>
     */
   def getShowRefreshButton(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSearchButton</code>.Set to true to show the search button
     * with the magnifier icon.If false, both the search and refresh buttons are not displayed even if the
@@ -230,6 +256,7 @@ trait SearchField extends Control {
     * @returns Value of property <code>showSearchButton</code>
     */
   def getShowSearchButton(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>suggestionItems</code>.<code>SuggestionItems</code> are the items
     * which will be shown in the suggestions list.The following properties can be
@@ -240,17 +267,20 @@ trait SearchField extends Control {
     * @since 1.34
     */
   def getSuggestionItems(): js.Array[SuggestionItem] = js.native
+  
   /**
     * Gets current value of property <code>value</code>.Input Value.
     * @returns Value of property <code>value</code>
     */
   def getValue(): String = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Defines the CSS width of the input. If not set,
     * width is 100%.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.m.SuggestionItem</code> in the aggregation
     * <code>suggestionItems</code>.and returns its index if found or -1 otherwise.
@@ -259,6 +289,7 @@ trait SearchField extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSuggestionItem(oSuggestionItem: SuggestionItem): Double = js.native
+  
   /**
     * Inserts a suggestionItem into the aggregation <code>suggestionItems</code>.
     * @since 1.34
@@ -270,16 +301,19 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSuggestionItem(oSuggestionItem: SuggestionItem, iIndex: Double): SearchField = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>suggestionItems</code>.Additionally, it
     * unregisters them from the hosting UIArea.
@@ -287,6 +321,7 @@ trait SearchField extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSuggestionItems(): js.Array[SuggestionItem] = js.native
+  
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaDescribedBy from the association named <code>ariaDescribedBy</code>.
@@ -295,6 +330,7 @@ trait SearchField extends Control {
     */
   def removeAriaDescribedBy(vAriaDescribedBy: Double): js.Any = js.native
   def removeAriaDescribedBy(vAriaDescribedBy: Control): js.Any = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -303,6 +339,7 @@ trait SearchField extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeSuggestionItem(vSuggestionItem: String): SuggestionItem = js.native
   /**
     * Removes a suggestionItem from the aggregation <code>suggestionItems</code>.
@@ -312,6 +349,7 @@ trait SearchField extends Control {
     */
   def removeSuggestionItem(vSuggestionItem: Double): SuggestionItem = js.native
   def removeSuggestionItem(vSuggestionItem: SuggestionItem): SuggestionItem = js.native
+  
   /**
     * Sets a new value for property <code>enableSuggestions</code>.If true, a <code>suggest</code> event
     * is fired when user types in the input and when the input is focused.On a phone device, a full screen
@@ -323,6 +361,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnableSuggestions(bEnableSuggestions: Boolean): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Boolean property to enable the control (default
     * is true).When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -331,6 +370,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>maxLength</code>.Maximum number of characters. Value '0' means
     * the feature is switched off.When called with a value of <code>null</code> or <code>undefined</code>,
@@ -339,6 +379,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxLength(iMaxLength: Double): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>placeholder</code>.Text shown when no value available. Default
     * placeholder text is the word "Search" in the current local language (if supported) or in
@@ -348,6 +389,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPlaceholder(sPlaceholder: String): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>refreshButtonTooltip</code>.Tooltip text of the refresh button.
     * If it is not set, the tooltip of the SearchField (if any) is displayed. Tooltips are not displayed
@@ -358,6 +400,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRefreshButtonTooltip(sRefreshButtonTooltip: String): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>selectOnFocus</code>.Normally, search text is selected for copy
     * when the SearchField is focused by keyboard navigation. If an application re-renders the SearchField
@@ -369,6 +412,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSelectOnFocus(bSelectOnFocus: Boolean): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>showMagnifier</code>.Set to false to hide the magnifier
     * icon.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -377,6 +421,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowMagnifier(bShowMagnifier: Boolean): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>showRefreshButton</code>.Set to true to display a refresh button
     * in place of the search icon. By pressing the refresh button or F5 key on keyboard, the user can
@@ -388,6 +433,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowRefreshButton(bShowRefreshButton: Boolean): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>showSearchButton</code>.Set to true to show the search button
     * with the magnifier icon.If false, both the search and refresh buttons are not displayed even if the
@@ -399,6 +445,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSearchButton(bShowSearchButton: Boolean): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>value</code>.Input Value.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -406,6 +453,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValue(sValue: String): SearchField = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Defines the CSS width of the input. If not set,
     * width is 100%.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -414,6 +462,7 @@ trait SearchField extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): SearchField = js.native
+  
   def suggest(bShow: js.Any): SearchField = js.native
   /**
     * Toggle visibility of the suggestion list.
@@ -425,10 +474,10 @@ trait SearchField extends Control {
     * @returns <code>this</code> to allow method chaining
     */
   def suggest(bShow: Boolean): SearchField = js.native
+  
   /**
     * Unbinds property <code>value</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindValue(): SearchField = js.native
 }
-

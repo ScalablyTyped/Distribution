@@ -2,7 +2,7 @@ package typings.documentdbServer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stored procedures and triggers are registered for a particular collection. The Collection object supports create, read, update and delete (CRUD) and query operations on documents and attachments in the current collection.
@@ -12,8 +12,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ICollection extends IQueryAPI {
+  
   /** Opening call to start a chained query. Should be used in conjunction with the closing value call to perform chained queries. */
   def chain(): IQueryResponse = js.native
+  
   /**
     * Create an attachment for the document.
     * @param documentLink resource link of the collection under which the document will be created
@@ -55,6 +57,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Create a document under the collection.
     * @param collectionLink resource link of the collection under which the document will be created
@@ -96,6 +99,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Delete an attachment.
     * @param attachmentLink resource link of the attachment to be deleted
@@ -133,6 +137,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Delete a document.
     * @param documentLink resource link of the document to delete
@@ -170,10 +175,13 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /** Get alt link (name-based link) of current collection. */
   def getAltLink(): String = js.native
+  
   /** Get self link of current collection. */
   def getSelfLink(): String = js.native
+  
   /**
     * Execute a SQL query on the attachments for the document.
     * @param documentLink resource link of the document whose attachments are being queried
@@ -249,6 +257,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Execute a SQL query on the documents of the collection.
     * @param collectionLink resource link of the collection whose documents are being queried
@@ -402,6 +411,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Read an Attachment.
     * @param attachmenLink resource link of the attachment to read
@@ -439,6 +449,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Get all attachments for the document.
     * @param documentLink resource link of the document whose attachments are being read
@@ -476,6 +487,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Read a document.
     * @param documentLink resource link of the document to read
@@ -539,6 +551,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Get all documents for the collection.
     * @param collectionLink resource link of the collection whose documents are being read
@@ -602,6 +615,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Replace an attachment.
     * @param attachmentLink resource link of the attachment to be replaced
@@ -643,6 +657,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Replace a document.
     * @param documentLink resource link of the document
@@ -684,6 +699,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Upsert an attachment for the document.
     * @param documentLink resource link of the document under which the attachment will be upserted
@@ -725,6 +741,7 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * Upsert a document under the collection.
     * @param collectionLink resource link of the collection under which the document will be upserted
@@ -767,4 +784,3 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
 }
-

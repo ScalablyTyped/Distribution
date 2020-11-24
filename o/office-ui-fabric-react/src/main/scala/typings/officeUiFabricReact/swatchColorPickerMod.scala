@@ -6,34 +6,35 @@ import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerP
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker", JSImport.Namespace)
 @js.native
 object swatchColorPickerMod extends js.Object {
+  
+  val ColorPickerGridCell: FunctionComponent[IColorPickerGridCellProps] = js.native
+  
+  val SwatchColorPicker: FunctionComponent[ISwatchColorPickerProps] = js.native
+  
   @js.native
   class ColorPickerGridCellBase ()
     extends typings.officeUiFabricReact.colorPickerGridCellBaseMod.ColorPickerGridCellBase
+  /* static members */
+  @js.native
+  object ColorPickerGridCellBase extends js.Object {
+    
+    var defaultProps: PartialIColorPickerGridCe = js.native
+  }
   
   @js.native
   class SwatchColorPickerBase protected ()
     extends typings.officeUiFabricReact.swatchColorPickerBaseMod.SwatchColorPickerBase {
     def this(props: ISwatchColorPickerProps) = this()
   }
-  
-  val ColorPickerGridCell: FunctionComponent[IColorPickerGridCellProps] = js.native
-  val SwatchColorPicker: FunctionComponent[ISwatchColorPickerProps] = js.native
-  /* static members */
-  @js.native
-  object ColorPickerGridCellBase extends js.Object {
-    var defaultProps: PartialIColorPickerGridCe = js.native
-  }
-  
   /* static members */
   @js.native
   object SwatchColorPickerBase extends js.Object {
+    
     var defaultProps: ISwatchColorPickerProps = js.native
   }
-  
 }
-

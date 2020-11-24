@@ -3,9 +3,34 @@ package typings.expoWebBrowser
 import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoWebBrowserStrings {
+  
+  @scala.inline
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
+  
+  @scala.inline
+  def done: done = "done".asInstanceOf[done]
+  
+  @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  
+  @scala.inline
+  def locked: locked = "locked".asInstanceOf[locked]
+  
+  @scala.inline
+  def opened: opened = "opened".asInstanceOf[opened]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
   @js.native
   sealed trait cancel extends WebBrowserResultType
   
@@ -22,24 +47,11 @@ object expoWebBrowserStrings {
   sealed trait failed extends js.Object
   
   @js.native
+  sealed trait locked extends WebBrowserResultType
+  
+  @js.native
   sealed trait opened extends WebBrowserResultType
   
   @js.native
   sealed trait success extends js.Object
-  
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def opened: opened = "opened".asInstanceOf[opened]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
 }
-

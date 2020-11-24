@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/libraryagent", JSImport.Namespace)
 @js.native
 object libraryagentMod extends js.Object {
+  
   def libraryagent(options: Options): Libraryagent = js.native
   @JSName("libraryagent")
   def libraryagent_v1(version: v1): Libraryagent = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Libraryagent {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -36,11 +38,11 @@ object libraryagentMod extends js.Object {
                 Libraryagent
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object libraryagentMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

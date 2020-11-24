@@ -19,21 +19,19 @@ import typings.uws.uwsStrings.ping
 import typings.uws.uwsStrings.pong
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebSocket extends EventEmitter {
+  
   var CLOSED: Double = js.native
+  
   var CLOSING: Double = js.native
+  
   var CONNECTING: Double = js.native
+  
   var OPEN: Double = js.native
-  var bytesReceived: Double = js.native
-  var protocol: String = js.native
-  var protocolVersion: String = js.native
-  var readyState: Double = js.native
-  var supports: js.Any = js.native
-  var upgradeReq: IncomingMessage = js.native
-  var url: String = js.native
+  
   def addEventListener(method: String): Unit = js.native
   def addEventListener(method: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   @JSName("addEventListener")
@@ -53,6 +51,7 @@ trait WebSocket extends EventEmitter {
   def addEventListener_open(method: open): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(method: open, cb: js.Function1[/* event */ `0`, Unit]): Unit = js.native
+  
   @JSName("addListener")
   def addListener_close(event: close, cb: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
   @JSName("addListener")
@@ -65,10 +64,14 @@ trait WebSocket extends EventEmitter {
   def addListener_ping(event: ping, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_pong(event: pong, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
+  
+  var bytesReceived: Double = js.native
+  
   def close(): Unit = js.native
   def close(code: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, data: js.Any): Unit = js.native
+  
   def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_close(
@@ -95,11 +98,17 @@ trait WebSocket extends EventEmitter {
     event: pong,
     cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
   ): this.type = js.native
+  
   def onclose(event: Code): Unit = js.native
+  
   def onerror(err: Error): Unit = js.native
+  
   def onmessage(event: Data): Unit = js.native
+  
   def onopen(event: Target): Unit = js.native
+  
   def pause(): Unit = js.native
+  
   def ping(): Unit = js.native
   def ping(data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
   def ping(data: js.UndefOr[scala.Nothing], options: Binary): Unit = js.native
@@ -108,6 +117,7 @@ trait WebSocket extends EventEmitter {
   def ping(data: js.Any, options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
   def ping(data: js.Any, options: Binary): Unit = js.native
   def ping(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
+  
   def pong(): Unit = js.native
   def pong(data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
   def pong(data: js.UndefOr[scala.Nothing], options: Binary): Unit = js.native
@@ -116,15 +126,30 @@ trait WebSocket extends EventEmitter {
   def pong(data: js.Any, options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
   def pong(data: js.Any, options: Binary): Unit = js.native
   def pong(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
+  
+  var protocol: String = js.native
+  
+  var protocolVersion: String = js.native
+  
+  var readyState: Double = js.native
+  
   def resume(): Unit = js.native
+  
   def send(data: js.Any): Unit = js.native
   def send(data: js.Any, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def send(data: js.Any, options: Binary): Unit = js.native
   def send(data: js.Any, options: Binary, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   def stream(): Unit = js.native
   def stream(cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
   def stream(options: Binary): Unit = js.native
   def stream(options: Binary, cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
+  
+  var supports: js.Any = js.native
+  
   def terminate(): Unit = js.native
+  
+  var upgradeReq: IncomingMessage = js.native
+  
+  var url: String = js.native
 }
-

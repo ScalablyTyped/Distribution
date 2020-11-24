@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This enumeration represents a tristate value.
@@ -18,16 +18,17 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait TriState extends js.Object
-
 object TriState {
+  
   /** The value is indeterminate. */
   @scala.inline
   def INDETERMINATE: `2` = 2.asInstanceOf[`2`]
+  
   /** The value is equivalent to `FALSE` . */
   @scala.inline
   def NO: `0` = 0.asInstanceOf[`0`]
+  
   /** The value is equivalent to `TRUE` . */
   @scala.inline
   def YES: `1` = 1.asInstanceOf[`1`]
 }
-

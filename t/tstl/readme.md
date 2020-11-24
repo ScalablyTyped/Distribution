@@ -1,7 +1,7 @@
 
 # Scala.js typings for tstl
 
-Typings are for version 2.4.10
+Typings are for version 2.4.12
 
 ## Library description:
 TypeScript-STL (Standard Template Library, migrated from C++)
@@ -9,10 +9,10 @@ TypeScript-STL (Standard Template Library, migrated from C++)
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tstl |
-| Keywords           | tstl, typescript stl, typescript standard template library, container, iterator, algorithm, functor, exception, functional, utility, thread, numeric, special_math, vector, deque, list, forward_list, stack, queue, priority_queue, set, multiset, unordered_set, unordered_multiset, map, multimap, unordered_map, unordered_multimap, TreeSet, TreeMultiSet, HashSet, HashMultiSet, TreeMap, TreeMultiMap, HashMap, HashMultiMap, mutex, shared_mutex, timed_mutex, shared_timed_mutex, unique_lock, shared_lock, semaphore, timed_semaphore, latch, barrier, flex_barrier |
-| # releases         | 229 |
-| # dependents       | 11 |
-| # downloads        | 47166 |
+| Keywords           | tstl, typecript, c++, cpp, stl, standard template library, algorithm, container, exception, functional, iterator, numeric, ranges, thread, utility, base, experimental, internal, Vector, Deque, List, VectorBoolean, ForwardList, Stack, Queue, PriorityQueue, FlatMap, FlatMultiMap, FlatMultiSet, FlatSet, HashMap, HashMultiMap, HashMultiSet, HashSet, TreeMap, TreeMultiMap, TreeMultiSet, TreeSet, ConditionVariable, Semaphore, Latch, Barrier, FlexBarrier, Mutex, TimedMutex, SharedMutex, SharedTimedMutex, SharedLock, UniqueLock |
+| # releases         | 117 |
+| # dependents       | 15 |
+| # downloads        | 89312 |
 | # stars            | 1 |
 
 ## Links

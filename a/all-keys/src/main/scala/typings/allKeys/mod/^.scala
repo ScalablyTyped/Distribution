@@ -5,18 +5,12 @@ import typings.std.Set
 import typings.typeFest.literalUnionMod.LiteralUnion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("all-keys", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function allKeys<ObjectType extends {[key: string]: any}>(
-  // 	object: ObjectType,
-  // 	options?: allKeys.Options
-  // ): Set<LiteralUnion<keyof ObjectType, string | number | symbol>>;
-  // export = allKeys;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof allKeys */ js.Any = js.native
+  
   /**
   	Get all property keys of an object including non-enumerable and inherited ones. Like [Reflect.ownKeys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys) but traverses up the prototype-chain.
   	@returns All property names from `object`.
@@ -52,5 +46,12 @@ object ^ extends js.Object {
   	*/
   def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]] = js.native
   def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType, options: Options): Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function allKeys<ObjectType extends {[key: string]: any}>(
+  // 	object: ObjectType,
+  // 	options?: allKeys.Options
+  // ): Set<LiteralUnion<keyof ObjectType, string | number | symbol>>;
+  // export = allKeys;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof allKeys */ js.Any = js.native
 }
-

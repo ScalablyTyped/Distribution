@@ -12,7 +12,7 @@ React component for Nepal Map
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 261 |
+| # downloads        | 330 |
 | # stars            | 0 |
 
 ## Links

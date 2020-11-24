@@ -2,15 +2,17 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ViewContainerRef")
 @js.native
 abstract class ViewContainerRef () extends js.Object {
+  
   /**
     * Destroys all views in this container.
     */
   def clear(): Unit = js.native
+  
   /**
     * Instantiates a single component and inserts its host view into this container.
     *
@@ -108,6 +110,7 @@ abstract class ViewContainerRef () extends js.Object {
     projectableNodes: js.Array[js.Array[_]],
     ngModule: NgModuleRef[_]
   ): ComponentRef[C] = js.native
+  
   /**
     * Instantiates an embedded view and inserts it
     * into this container.
@@ -121,6 +124,7 @@ abstract class ViewContainerRef () extends js.Object {
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: C): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: C, index: Double): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: js.UndefOr[scala.Nothing], index: Double): EmbeddedViewRef[C] = js.native
+  
   /**
     * Detaches a view from this container without destroying it.
     * Use along with `insert()` to move a view within the current container.
@@ -129,6 +133,7 @@ abstract class ViewContainerRef () extends js.Object {
     */
   def detach(): ViewRef | Null = js.native
   def detach(index: Double): ViewRef | Null = js.native
+  
   /**
     * Anchor element that specifies the location of this container in the containing view.
     * Each view container can have only one anchor element, and each anchor element
@@ -143,12 +148,14 @@ abstract class ViewContainerRef () extends js.Object {
     * <!-- TODO: rename to anchorElement -->
     */
   def element: ElementRef[_] = js.native
+  
   /**
     * Retrieves a view from this container.
     * @param index The 0-based index of the view to retrieve.
     * @returns The `ViewRef` instance, or null if the index is out of range.
     */
   def get(index: Double): ViewRef | Null = js.native
+  
   /**
     * Returns the index of a view within the current container.
     * @param viewRef The view to query.
@@ -156,10 +163,12 @@ abstract class ViewContainerRef () extends js.Object {
     * or `-1` if this container doesn't contain the view.
     */
   def indexOf(viewRef: ViewRef): Double = js.native
+  
   /**
     * The [dependency injector](guide/glossary#injector) for this view container.
     */
   def injector: Injector = js.native
+  
   /**
     * Inserts a view into this container.
     * @param viewRef The view to insert.
@@ -170,11 +179,13 @@ abstract class ViewContainerRef () extends js.Object {
     */
   def insert(viewRef: ViewRef): ViewRef = js.native
   def insert(viewRef: ViewRef, index: Double): ViewRef = js.native
+  
   /**
     * Reports how many views are currently attached to this container.
     * @returns The number of views.
     */
   def length: Double = js.native
+  
   /**
     * Moves a view to a new location in this container.
     * @param viewRef The view to move.
@@ -182,8 +193,10 @@ abstract class ViewContainerRef () extends js.Object {
     * @returns The moved `ViewRef` instance.
     */
   def move(viewRef: ViewRef, currentIndex: Double): ViewRef = js.native
+  
   /** @deprecated No replacement */
   def parentInjector: Injector = js.native
+  
   /**
     * Destroys a view attached to this container
     * @param index The 0-based index of the view to destroy.
@@ -192,4 +205,3 @@ abstract class ViewContainerRef () extends js.Object {
   def remove(): Unit = js.native
   def remove(index: Double): Unit = js.native
 }
-

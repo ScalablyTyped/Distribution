@@ -2,11 +2,12 @@ package typings.officeJs.global.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Office.useShortNamespace")
 @js.native
 object useShortNamespace extends js.Object {
+  
   /**
     * Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     * 
@@ -34,4 +35,3 @@ object useShortNamespace extends js.Object {
     */
   def apply(useShortNamespace: Boolean): Unit = js.native
 }
-

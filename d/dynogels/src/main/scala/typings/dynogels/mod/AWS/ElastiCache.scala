@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.elasticacheMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ElastiCache")
 @js.native
@@ -14,4 +14,3 @@ class ElastiCache ()
   extends typings.awsSdk.mod.ElastiCache {
   def this(options: ClientConfiguration) = this()
 }
-

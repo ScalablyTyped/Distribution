@@ -3,12 +3,23 @@ package typings.three.mod
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "VideoTexture")
 @js.native
 class VideoTexture protected ()
   extends typings.three.videoTextureMod.VideoTexture {
+  /**
+  	 * @param video
+  	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+  	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+  	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+  	 * @param [magFilter=THREE.LinearFilter]
+  	 * @param [minFilter=THREE.LinearFilter]
+  	 * @param [format=THREE.RGBFormat]
+  	 * @param [type=THREE.UnsignedByteType]
+  	 * @param [anisotropy=1]
+  	 */
   def this(
     video: HTMLVideoElement,
     mapping: js.UndefOr[typings.three.constantsMod.Mapping],
@@ -21,4 +32,3 @@ class VideoTexture protected ()
     anisotropy: js.UndefOr[Double]
   ) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Newer particles are drawn first. CPU only.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "PARTICLESORT_NEWER_FIRST")
 @js.native
 object PARTICLESORT_NEWER_FIRST extends TopLevel[Double]
-

@@ -2,12 +2,13 @@ package typings.winrtUwp.global.Windows.Media.Capture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for the capture of variable photo sequences. */
 @JSGlobal("Windows.Media.Capture.Core")
 @js.native
 object Core extends js.Object {
+  
   /** Provides data for the PhotoCaptured event. */
   @js.native
   abstract class VariablePhotoCapturedEventArgs ()
@@ -17,6 +18,4 @@ object Core extends js.Object {
   @js.native
   abstract class VariablePhotoSequenceCapture ()
     extends typings.winrtUwp.Windows.Media.Capture.Core.VariablePhotoSequenceCapture
-  
 }
-

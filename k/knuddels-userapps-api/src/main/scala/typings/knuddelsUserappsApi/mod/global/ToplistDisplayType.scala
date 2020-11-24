@@ -2,7 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html
@@ -10,26 +10,28 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ToplistDisplayType")
 @js.native
 class ToplistDisplayType () extends js.Object
-
 /* static members */
 @JSGlobal("ToplistDisplayType")
 @js.native
 object ToplistDisplayType extends js.Object {
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_Label
   		 */
   val Label: ToplistDisplayType = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_LabelAndRank
   		 */
   val LabelAndRank: ToplistDisplayType = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_Value
   		 */
   val Value: ToplistDisplayType = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_ValueAndRank
   		 */
   val ValueAndRank: ToplistDisplayType = js.native
 }
-

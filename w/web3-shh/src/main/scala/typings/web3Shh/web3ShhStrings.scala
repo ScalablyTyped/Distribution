@@ -2,9 +2,19 @@ package typings.web3Shh
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object web3ShhStrings {
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def messages: messages = "messages".asInstanceOf[messages]
+  
   @js.native
   sealed trait data extends js.Object
   
@@ -13,12 +23,4 @@ object web3ShhStrings {
   
   @js.native
   sealed trait messages extends js.Object
-  
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def messages: messages = "messages".asInstanceOf[messages]
 }
-

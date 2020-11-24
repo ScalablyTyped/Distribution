@@ -2,7 +2,7 @@ package typings.easeljs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.DisplayProps")
 @js.native
@@ -150,4 +150,3 @@ class DisplayProps ()
   ) = this()
   def this(visible: Double, alpha: Double, shadow: Double, compositeOperation: Double, matrix: Double) = this()
 }
-

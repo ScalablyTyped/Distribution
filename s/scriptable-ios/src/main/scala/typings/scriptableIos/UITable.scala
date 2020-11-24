@@ -2,7 +2,7 @@ package typings.scriptableIos
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Renders a table._
@@ -12,13 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UITable extends js.Object {
-  /**
-    * _Whether to show separators._
-    *
-    * Whether to show separators between rows. Defaults to false.
-    * @see https://docs.scriptable.app/uitable/#showseparators
-    */
-  var showSeparators: Boolean = js.native
+  
   /**
     * _Adds a row._
     *
@@ -27,6 +21,7 @@ trait UITable extends js.Object {
     * @see https://docs.scriptable.app/uitable/#-addrow
     */
   def addRow(row: UITableRow): Unit = js.native
+  
   /**
     * _Presents the table._
     * @param fullscreen - Optional. Set to true to present the web view in fullscreen. This only has an effect when used within the app. Defaults to false.
@@ -34,6 +29,7 @@ trait UITable extends js.Object {
     */
   def present(): js.Promise[Unit] = js.native
   def present(fullscreen: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * _Reloads the table._
     *
@@ -41,6 +37,7 @@ trait UITable extends js.Object {
     * @see https://docs.scriptable.app/uitable/#-reload
     */
   def reload(): Unit = js.native
+  
   /**
     * _Removes all rows._
     *
@@ -48,6 +45,7 @@ trait UITable extends js.Object {
     * @see https://docs.scriptable.app/uitable/#-removeallrows
     */
   def removeAllRows(): Unit = js.native
+  
   /**
     * _Removes a row._
     *
@@ -56,5 +54,12 @@ trait UITable extends js.Object {
     * @see https://docs.scriptable.app/uitable/#-removerow
     */
   def removeRow(row: UITableRow): Unit = js.native
+  
+  /**
+    * _Whether to show separators._
+    *
+    * Whether to show separators between rows. Defaults to false.
+    * @see https://docs.scriptable.app/uitable/#showseparators
+    */
+  var showSeparators: Boolean = js.native
 }
-

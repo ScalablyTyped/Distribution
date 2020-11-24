@@ -10,9 +10,9 @@ A React-Native Bridge for the Google Dialogflow SDK
 | ------------------ | :-------------: |
 | Full name          | react-native-dialogflow |
 | Keywords           | ai, api, api-ai, api.ai, apiai, dialogflow, google, react-native, speak, text-recognition, voice |
-| # releases         | 13 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 6274 |
+| # downloads        | 9241 |
 | # stars            | 0 |
 
 ## Links

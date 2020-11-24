@@ -11,8 +11,8 @@ Clean an input string into a usable git ref
 | Full name          | clean-git-ref |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 824323 |
+| # dependents       | 7 |
+| # downloads        | 1690611 |
 | # stars            | 0 |
 
 ## Links

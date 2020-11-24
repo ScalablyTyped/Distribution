@@ -15,7 +15,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.worker_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.xml
@@ -33,33 +33,44 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 */
 trait LogEntrySource extends js.Object
-
 object LogEntrySource {
+  
   @scala.inline
   def Appcache: appcache = "appcache".asInstanceOf[appcache]
+  
   @scala.inline
   def Deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
+  
   @scala.inline
   def Intervention: intervention = "intervention".asInstanceOf[intervention]
+  
   @scala.inline
   def Javascript: javascript_ = "javascript".asInstanceOf[javascript_]
+  
   @scala.inline
   def Network: network = "network".asInstanceOf[network]
+  
   @scala.inline
   def Other: other_ = "other".asInstanceOf[other_]
+  
   @scala.inline
   def Recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
+  
   @scala.inline
   def Rendering: rendering = "rendering".asInstanceOf[rendering]
+  
   @scala.inline
   def Security: security = "security".asInstanceOf[security]
+  
   @scala.inline
   def Storage: storage = "storage".asInstanceOf[storage]
+  
   @scala.inline
   def Violation: violation = "violation".asInstanceOf[violation]
+  
   @scala.inline
   def Worker: worker_ = "worker".asInstanceOf[worker_]
+  
   @scala.inline
   def XML: xml = "xml".asInstanceOf[xml]
 }
-

@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TableWidthUnitType extends js.Object
-
 /**
   * Lists values that specify unit types for the table width.
   */
 @JSGlobal("TableWidthUnitType")
 @js.native
 object TableWidthUnitType extends js.Object {
+  
   /**
     * Automatically determined width.
     */
@@ -36,6 +36,4 @@ object TableWidthUnitType extends js.Object {
     */
   @js.native
   sealed trait Nil extends TableWidthUnitType
-  
 }
-

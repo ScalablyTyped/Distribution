@@ -2,17 +2,14 @@ package typings.jupyterlabApputils.windowresolverMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/windowresolver", "WindowResolver")
 @js.native
 class WindowResolver () extends IWindowResolver {
+  
   var _name: js.Any = js.native
-  /**
-    * A window name to use as a handle among shared resources.
-    */
-  /* CompleteClass */
-  override val name: String = js.native
+  
   /**
     * The resolved window name.
     *
@@ -21,6 +18,7 @@ class WindowResolver () extends IWindowResolver {
     */
   @JSName("name")
   def name_MWindowResolver: String = js.native
+  
   /**
     * Resolve a window name to use as a handle among shared resources.
     *
@@ -35,4 +33,3 @@ class WindowResolver () extends IWindowResolver {
     */
   def resolve(candidate: String): js.Promise[Unit] = js.native
 }
-

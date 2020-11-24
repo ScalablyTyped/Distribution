@@ -9,11 +9,12 @@ import typings.ol.styleStyleMod.StyleFunction
 import typings.std.ImageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/render/canvas/hitdetet", JSImport.Namespace)
 @js.native
 object hitdetetMod extends js.Object {
+  
   def createHitDetectionImageData(
     size: Size,
     transforms: js.Array[Transform],
@@ -32,6 +33,6 @@ object hitdetetMod extends js.Object {
     resolution: Double,
     rotation: Double
   ): ImageData = js.native
+  
   def hitDetect(pixel: Pixel, features: js.Array[FeatureLike], imageData: ImageData): js.Array[FeatureLike] = js.native
 }
-

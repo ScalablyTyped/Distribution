@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.SketchViewModel
 import typings.arcgisJsApi.esri.SketchViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/Sketch/SketchViewModel", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends SketchViewModel {
   def this(properties: SketchViewModelProperties) = this()
 }
-

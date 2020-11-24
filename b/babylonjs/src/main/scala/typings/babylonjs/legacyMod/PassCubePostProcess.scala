@@ -4,7 +4,7 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PassCubePostProcess")
 @js.native
@@ -23,17 +23,7 @@ class PassCubePostProcess protected ()
     */
   def this(
     name: String,
-    options: Double,
-    camera: js.UndefOr[Nullable[typings.babylonjs.cameraMod.Camera]],
-    samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
-    reusable: js.UndefOr[Boolean],
-    textureType: js.UndefOr[Double],
-    blockCompilation: js.UndefOr[Boolean]
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
+    options: Double | PostProcessOptions,
     camera: js.UndefOr[Nullable[typings.babylonjs.cameraMod.Camera]],
     samplingMode: js.UndefOr[Double],
     engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
@@ -42,4 +32,16 @@ class PassCubePostProcess protected ()
     blockCompilation: js.UndefOr[Boolean]
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/Legacy/legacy", "PassCubePostProcess")
+@js.native
+object PassCubePostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.cameraMod.Camera,
+    scene: typings.babylonjs.sceneMod.Scene,
+    rootUrl: String
+  ): typings.babylonjs.passPostProcessMod.PassCubePostProcess = js.native
+}

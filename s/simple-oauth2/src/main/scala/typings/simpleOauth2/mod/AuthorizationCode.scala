@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.simpleOauth2.anon.Redirecturi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("simple-oauth2", "AuthorizationCode")
 @js.native
 class AuthorizationCode[ClientIdName /* <: String */] protected () extends js.Object {
   def this(options: ModuleOptions[ClientIdName]) = this()
+  
   /**
     * Get a valid redirect URL used to redirect users to an authorization page
     *
@@ -24,11 +25,13 @@ class AuthorizationCode[ClientIdName /* <: String */] protected () extends js.Ob
   def authorizeURL(
     params: typings.simpleOauth2.simpleOauth2Strings.AuthorizationCode with TopLevel[js.Any] with Redirecturi
   ): String = js.native
+  
   /**
     * Creates a new access token by providing a token object as specified by RFC6750.
     * @param token
     */
   def createToken(token: Token): AccessToken = js.native
+  
   /**
     * Requests and returns an access token from the authorization server
     *
@@ -41,4 +44,3 @@ class AuthorizationCode[ClientIdName /* <: String */] protected () extends js.Ob
   def getToken(params: AuthorizationTokenConfig): js.Promise[AccessToken] = js.native
   def getToken(params: AuthorizationTokenConfig, httpOptions: WreckHttpOptions): js.Promise[AccessToken] = js.native
 }
-

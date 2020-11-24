@@ -3,7 +3,7 @@ package typings.poly2tri.mod
 import typings.poly2tri.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("poly2tri", "SweepContext")
 @js.native
@@ -31,6 +31,7 @@ class SweepContext protected () extends js.Object {
     */
   def this(contour: js.Array[XY]) = this()
   def this(contour: js.Array[XY], options: SweepContextOptions) = this()
+  
   /**
     * Add a hole to the constraints
     * @example
@@ -48,6 +49,7 @@ class SweepContext protected () extends js.Object {
     * @param polyline - array of "Point like" objects with {x,y}
     */
   def addHole(polyline: js.Array[XY]): SweepContext = js.native
+  
   /**
     * Add several holes to the constraints.
     * @example
@@ -68,6 +70,7 @@ class SweepContext protected () extends js.Object {
     * @param holes - array of array of "Point like" objects with {x,y}
     */
   def addHoles(holes: js.Array[js.Array[XY]]): SweepContext = js.native
+  
   /**
     * Add a Steiner point to the constraints
     * @example
@@ -81,6 +84,7 @@ class SweepContext protected () extends js.Object {
     * @param point - any "Point like" object with {x,y}
     */
   def addPoint(point: XY): SweepContext = js.native
+  
   /**
     * Add several Steiner points to the constraints
     * @example
@@ -98,6 +102,7 @@ class SweepContext protected () extends js.Object {
     * @param points - array of "Point like" object with {x,y}
     */
   def addPoints(point: js.Array[XY]): SweepContext = js.native
+  
   /**
     * Get the bounding box of the provided constraints (contour, holes and
     * Steinter points). Warning : these values are not available if the triangulation
@@ -106,6 +111,7 @@ class SweepContext protected () extends js.Object {
     * @returns object with 'min' and 'max' Point
     */
   def getBoundingBox(): Max = js.native
+  
   /**
     * Get result of triangulation.
     * The output triangles have vertices which are references
@@ -127,6 +133,7 @@ class SweepContext protected () extends js.Object {
     * @returns array of triangles
     */
   def getTriangles(): js.Array[Triangle] = js.native
+  
   /**
     * Triangulate the polygon with holes and Steiner points.
     * Do this AFTER you've added the polyline, holes, and Steiner points
@@ -137,4 +144,3 @@ class SweepContext protected () extends js.Object {
     */
   def triangulate(): SweepContext = js.native
 }
-

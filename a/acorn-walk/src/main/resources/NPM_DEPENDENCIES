@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "acorn-walk" : "7.2.0"
+      "acorn-walk" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "acorn-walk" : "7.2.0"
+      "acorn-walk" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

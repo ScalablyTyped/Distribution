@@ -5,17 +5,23 @@ import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/infinite-scroll-content/infinite-scroll-content", JSImport.Namespace)
 @js.native
 object infiniteScrollContentMod extends js.Object {
+  
   @js.native
   class InfiniteScrollContent () extends ComponentInterface {
+    
+    @JSName("componentDidLoad")
+    def componentDidLoad_MInfiniteScrollContent(): Unit = js.native
+    
     /**
       * An animated SVG spinner that shows while loading.
       */
     var loadingSpinner: js.UndefOr[SpinnerTypes | Null] = js.native
+    
     /**
       * Optional text to display while loading.
       * `loadingText` can accept either plaintext or HTML as a string.
@@ -26,11 +32,8 @@ object infiniteScrollContentMod extends js.Object {
       * For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
       */
     var loadingText: js.UndefOr[String | IonicSafeString] = js.native
-    @JSName("componentDidLoad")
-    def componentDidLoad_MInfiniteScrollContent(): Unit = js.native
+    
     @JSName("render")
     def render_MInfiniteScrollContent(): js.Any = js.native
   }
-  
 }
-

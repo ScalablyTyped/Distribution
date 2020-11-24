@@ -2,7 +2,7 @@ package typings.chrome.chrome.cast.media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @namespace
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.cast.media.timeout")
 @js.native
 object timeout extends js.Object
-

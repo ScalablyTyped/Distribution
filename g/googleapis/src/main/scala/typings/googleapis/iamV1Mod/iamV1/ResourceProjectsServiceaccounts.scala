@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Projects$Serviceaccounts")
 @js.native
 class ResourceProjectsServiceaccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var keys: ResourceProjectsServiceaccountsKeys = js.native
+  
   /**
     * iam.projects.serviceAccounts.create
     * @desc Creates a ServiceAccount and returns it.
@@ -46,6 +47,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccount]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.delete
     * @desc Deletes a ServiceAccount.
@@ -74,6 +76,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.disable
     * @desc Disables a ServiceAccount. The API is currently in alpha phase.
@@ -103,6 +106,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.enable
     * @desc Enables a ServiceAccount.  The API is currently in alpha phase.
@@ -132,6 +136,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.get
     * @desc Gets a ServiceAccount.
@@ -163,6 +168,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccount]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.getIamPolicy
     * @desc Returns the Cloud IAM access control policy for a ServiceAccount.
@@ -204,6 +210,9 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var keys: ResourceProjectsServiceaccountsKeys = js.native
+  
   /**
     * iam.projects.serviceAccounts.list
     * @desc Lists ServiceAccounts for a project.
@@ -237,6 +246,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServiceAccountsResponse]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.patch
     * @desc Patches a ServiceAccount.  Currently, only the following fields are
@@ -272,6 +282,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccount]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.setIamPolicy
     * @desc Sets the Cloud IAM access control policy for a ServiceAccount.
@@ -315,6 +326,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.signBlob
     * @desc **Note**: This method is in the process of being deprecated. Call
@@ -351,6 +363,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSignBlobResponse]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.signJwt
     * @desc **Note**: This method is in the process of being deprecated. Call
@@ -390,6 +403,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSignJwtResponse]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.testIamPermissions
     * @desc Tests the specified permissions against the IAM access control
@@ -423,6 +437,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.undelete
     * @desc Restores a deleted ServiceAccount. This is to be used as an action
@@ -456,6 +471,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUndeleteServiceAccountResponse]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.update
     * @desc Note: This method is in the process of being deprecated. Use
@@ -492,4 +508,3 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaServiceAccount]
   ): Unit = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.setRoot")
 @js.native
 object setRoot extends js.Object {
+  
   /**
     * Displays the control tree with the given root inside the area of the givenDOM reference (or inside
     * the DOM node with the given ID) or in the given Control.Example:<pre>  &lt;div
@@ -28,4 +29,3 @@ object setRoot extends js.Object {
   def apply(oDomRef: Element, oControl: Interface): Unit = js.native
   def apply(oDomRef: Element, oControl: Control): Unit = js.native
 }
-

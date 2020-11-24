@@ -2,45 +2,51 @@ package typings.titanium.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when the user stops tracking the slider.
   */
 @js.native
 trait SliderStopEvent extends SliderBaseEvent {
+  
   /**
     * False. This event does not bubble.
     */
   var bubbles: Boolean = js.native
+  
   /**
     * Current value of the slider.
     */
   var value: Double = js.native
 }
-
 object SliderStopEvent {
+  
   @scala.inline
   def apply(bubbles: Boolean, source: Slider, value: Double): SliderStopEvent = {
     val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderStopEvent]
   }
+  
   @scala.inline
   implicit class SliderStopEventOps[Self <: SliderStopEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
   }
-  
 }
-

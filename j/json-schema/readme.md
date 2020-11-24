@@ -11,8 +11,8 @@ JSON Schema validation and specifications
 | Full name          | json-schema |
 | Keywords           | json, schema |
 | # releases         | 3 |
-| # dependents       | 173 |
-| # downloads        | 518871130 |
+| # dependents       | 240 |
+| # downloads        | 672238690 |
 | # stars            | 10 |
 
 ## Links

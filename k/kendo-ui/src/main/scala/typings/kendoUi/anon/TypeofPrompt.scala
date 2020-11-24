@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.PromptOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPrompt
   extends Instantiable1[/* element */ Element, Prompt]
      with Instantiable2[/* element */ Element, /* options */ PromptOptions, Prompt] {
-  var fn: Prompt = js.native
+  
   def extend(proto: js.Object): Prompt = js.native
+  
+  var fn: Prompt = js.native
 }
-

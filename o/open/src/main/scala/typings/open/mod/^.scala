@@ -3,11 +3,12 @@ package typings.open.mod
 import typings.node.childProcessMod.ChildProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("open", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Open stuff like URLs, files, executables. Cross-platform.
   Uses the command `open` on OS X, `start` on Windows and `xdg-open` on other platforms.
@@ -33,4 +34,3 @@ object ^ extends js.Object {
   def apply(target: String): js.Promise[ChildProcess] = js.native
   def apply(target: String, options: Options): js.Promise[ChildProcess] = js.native
 }
-

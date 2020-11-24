@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.mobile.ui.LayoutOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofLayout
   extends Instantiable1[/* element */ Element, Layout]
      with Instantiable2[/* element */ Element, /* options */ LayoutOptions, Layout] {
-  var fn: Layout = js.native
+  
   def extend(proto: js.Object): Layout = js.native
+  
+  var fn: Layout = js.native
 }
-

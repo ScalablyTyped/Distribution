@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Unsampledreports")
 @js.native
 class ResourceManagementUnsampledreports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.unsampledReports.delete
     * @desc Deletes an unsampled report.
@@ -44,6 +46,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.unsampledReports.get
     * @desc Returns a single unsampled report.
@@ -78,6 +81,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUnsampledReport]
   ): Unit = js.native
+  
   /**
     * analytics.management.unsampledReports.insert
     * @desc Create a new unsampled report.
@@ -112,6 +116,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUnsampledReport]
   ): Unit = js.native
+  
   /**
     * analytics.management.unsampledReports.list
     * @desc Lists unsampled reports to which the user has access.
@@ -148,4 +153,3 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUnsampledReports]
   ): Unit = js.native
 }
-

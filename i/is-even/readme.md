@@ -10,9 +10,9 @@ Return true if the given number is even.
 | ------------------ | :-------------: |
 | Full name          | is-even |
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
-| # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 2481782 |
+| # releases         | 0 |
+| # dependents       | 14 |
+| # downloads        | 4815306 |
 | # stars            | 1 |
 
 ## Links

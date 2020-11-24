@@ -10,15 +10,15 @@ Image analysis and comparison with HTML5
 | ------------------ | :-------------: |
 | Full name          | resemblejs |
 | Keywords           | comparison, visual, image, diff, compare, html5 |
-| # releases         | 18 |
-| # dependents       | 39 |
-| # downloads        | 604864 |
+| # releases         | 11 |
+| # dependents       | 44 |
+| # downloads        | 1209531 |
 | # stars            | 7 |
 
 ## Links
-- [Homepage](https://github.com/Huddle/Resemble.js)
-- [Bugs](https://github.com/Huddle/Resemble.js/issues)
-- [Repository](https://github.com/Huddle/Resemble.js)
+- [Homepage](https://github.com/rsmbl/Resemble.js)
+- [Bugs](https://github.com/rsmbl/Resemble.js/issues)
+- [Repository](https://github.com/rsmbl/Resemble.js)
 - [Npm](https://www.npmjs.com/package/resemblejs)
     
 

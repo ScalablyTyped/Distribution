@@ -2,11 +2,12 @@ package typings.openlayers.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "events")
 @js.native
 object events extends js.Object {
+  
   /**
     * @classdesc
     * Stripped down implementation of the W3C DOM Level 2 Event interface.
@@ -34,26 +35,30 @@ object events extends js.Object {
       * @param type Type.
       */
     def this(`type`: String) = this()
-    /**
-      * The event target.
-      * @api stable
-      */
-    var target: GlobalObject = js.native
-    /**
-      * The event type.
-      * @api stable
-      */
-    var `type`: String = js.native
+    
     /**
       * Stop event propagation.
       * @api stable
       */
     def preventDefault(): Unit = js.native
+    
     /**
       * Stop event propagation.
       * @api stable
       */
     def stopPropagation(): Unit = js.native
+    
+    /**
+      * The event target.
+      * @api stable
+      */
+    var target: GlobalObject = js.native
+    
+    /**
+      * The event type.
+      * @api stable
+      */
+    var `type`: String = js.native
   }
   
   /**
@@ -93,6 +98,7 @@ object events extends js.Object {
   
   @js.native
   object condition extends js.Object {
+    
     /**
       * Return `true` if only the alt-key is pressed, `false` otherwise (e.g. when
       * additionally the shift-key is pressed).
@@ -102,6 +108,7 @@ object events extends js.Object {
       * @api stable
       */
     def altKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if only the alt-key and shift-key is pressed, `false` otherwise
       * (e.g. when additionally the platform-modifier-key is pressed).
@@ -111,6 +118,7 @@ object events extends js.Object {
       * @api stable
       */
     def altShiftKeysOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return always true.
       *
@@ -119,6 +127,7 @@ object events extends js.Object {
       * @api stable
       */
     def always(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the event is a `click` event, `false` otherwise.
       *
@@ -127,6 +136,7 @@ object events extends js.Object {
       * @api stable
       */
     def click(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the event is a map `dblclick` event, `false` otherwise.
       *
@@ -135,6 +145,7 @@ object events extends js.Object {
       * @api stable
       */
     def doubleClick(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the event originates from a mouse device.
       *
@@ -143,6 +154,7 @@ object events extends js.Object {
       * @api stable
       */
     def mouseOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return always false.
       *
@@ -151,6 +163,7 @@ object events extends js.Object {
       * @api stable
       */
     def never(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if no modifier key (alt-, shift- or platform-modifier-key) is
       * pressed.
@@ -160,6 +173,7 @@ object events extends js.Object {
       * @api stable
       */
     def noModifierKeys(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if only the platform-modifier-key (the meta-key on Mac,
       * ctrl-key otherwise) is pressed, `false` otherwise (e.g. when additionally
@@ -170,6 +184,7 @@ object events extends js.Object {
       * @api stable
       */
     def platformModifierKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the browser event is a `pointermove` event, `false`
       * otherwise.
@@ -179,6 +194,7 @@ object events extends js.Object {
       * @api
       */
     def pointerMove(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the event originates from a primary pointer in
       * contact with the surface or if the left mouse button is pressed.
@@ -189,6 +205,7 @@ object events extends js.Object {
       * @api
       */
     def primaryAction(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if only the shift-key is pressed, `false` otherwise (e.g. when
       * additionally the alt-key is pressed).
@@ -198,6 +215,7 @@ object events extends js.Object {
       * @api stable
       */
     def shiftKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the event is a map `singleclick` event, `false` otherwise.
       *
@@ -206,6 +224,7 @@ object events extends js.Object {
       * @api stable
       */
     def singleClick(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    
     /**
       * Return `true` if the target element is not editable, i.e. not a `<input>`-,
       * `<select>`- or `<textarea>`-element, `false` otherwise.
@@ -216,6 +235,4 @@ object events extends js.Object {
       */
     def targetNotEditable(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
   }
-  
 }
-

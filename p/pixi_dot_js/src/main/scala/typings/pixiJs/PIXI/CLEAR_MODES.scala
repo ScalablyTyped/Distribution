@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CLEAR_MODES extends js.Object
-
 /**
   * How to clear renderTextures in filter
   *
@@ -24,6 +23,7 @@ sealed trait CLEAR_MODES extends js.Object
 @JSGlobal("PIXI.CLEAR_MODES")
 @js.native
 object CLEAR_MODES extends js.Object {
+  
   @js.native
   sealed trait AUTO extends CLEAR_MODES
   
@@ -41,6 +41,4 @@ object CLEAR_MODES extends js.Object {
   
   @js.native
   sealed trait YES extends CLEAR_MODES
-  
 }
-

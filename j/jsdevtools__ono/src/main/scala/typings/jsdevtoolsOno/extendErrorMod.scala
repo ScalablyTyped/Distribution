@@ -6,11 +6,12 @@ import typings.jsdevtoolsOno.typesMod.OnoError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jsdevtools/ono/esm/extend-error", JSImport.Namespace)
 @js.native
 object extendErrorMod extends js.Object {
+  
   def extendError[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO): ErrorPOJO with E with P with (OnoError[ErrorPOJO with E with P]) = js.native
   def extendError[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO, originalError: E): ErrorPOJO with E with P with (OnoError[ErrorPOJO with E with P]) = js.native
   def extendError[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO, originalError: E, props: P): ErrorPOJO with E with P with (OnoError[ErrorPOJO with E with P]) = js.native
@@ -20,4 +21,3 @@ object extendErrorMod extends js.Object {
   def extendError[E /* <: ErrorLike */, P /* <: js.Object */](error: Error, originalError: E, props: P): Error with E with P with (OnoError[Error with E with P]) = js.native
   def extendError[E /* <: ErrorLike */, P /* <: js.Object */](error: Error, originalError: js.UndefOr[scala.Nothing], props: P): Error with E with P with (OnoError[Error with E with P]) = js.native
 }
-

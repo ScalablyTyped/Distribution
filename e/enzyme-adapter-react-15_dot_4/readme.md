@@ -10,15 +10,15 @@ JavaScript Testing utilities for React
 | ------------------ | :-------------: |
 | Full name          | enzyme-adapter-react-15.4 |
 | Keywords           | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, mocha |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 433612 |
+| # downloads        | 326726 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://airbnb.io/enzyme/)
-- [Bugs](https://github.com/airbnb/enzyme/issues)
-- [Repository](https://github.com/airbnb/enzyme)
+- [Homepage](https://enzymejs.github.io/enzyme/)
+- [Bugs](https://github.com/enzymejs/enzyme/issues)
+- [Repository](https://github.com/enzymejs/enzyme)
 - [Npm](https://www.npmjs.com/package/enzyme-adapter-react-15.4)
     
 

@@ -2,7 +2,7 @@ package typings.reactNativeFbsdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview
 */
 trait ShareDialogModeIOS extends js.Object
-
 object ShareDialogModeIOS {
+  
   @scala.inline
   def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
+  
   @scala.inline
   def browser: typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser = "browser".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser]
+  
   @scala.inline
   def webview: typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview = "webview".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview]
 }
-

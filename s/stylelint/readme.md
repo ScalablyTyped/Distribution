@@ -9,11 +9,11 @@ A mighty, modern CSS linter.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stylelint |
-| Keywords           | css, less, sass, scss, sugarss, lint, linter, stylelint |
-| # releases         | 25 |
-| # dependents       | 967 |
-| # downloads        | 53427418 |
-| # stars            | 68 |
+| Keywords           | css-in-js, css, less, lint, linter, markdown, sass, scss, stylelint, sugarss |
+| # releases         | 27 |
+| # dependents       | 1278 |
+| # downloads        | 87836041 |
+| # stars            | 69 |
 
 ## Links
 - [Homepage](https://stylelint.io)

@@ -2,17 +2,26 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object route53domainsMod {
+  
   type AccountId = java.lang.String
+  
   type AddressLine = java.lang.String
+  
   type BillingRecords = js.Array[typings.awsSdk.route53domainsMod.BillingRecord]
+  
   type Boolean = scala.Boolean
+  
   type City = java.lang.String
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.route53domainsMod.ClientApiVersions
+  
   type ContactName = java.lang.String
+  
   type ContactNumber = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PERSON
     - typings.awsSdk.awsSdkStrings.COMPANY
@@ -22,6 +31,7 @@ package object route53domainsMod {
     - java.lang.String
   */
   type ContactType = typings.awsSdk.route53domainsMod._ContactType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AD
     - typings.awsSdk.awsSdkStrings.AE
@@ -255,9 +265,13 @@ package object route53domainsMod {
     - java.lang.String
   */
   type CountryCode = typings.awsSdk.route53domainsMod._CountryCode | java.lang.String
+  
   type CurrentExpiryYear = scala.Double
+  
   type DNSSec = java.lang.String
+  
   type DomainAuthCode = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AVAILABLE
     - typings.awsSdk.awsSdkStrings.AVAILABLE_RESERVED
@@ -270,15 +284,25 @@ package object route53domainsMod {
     - java.lang.String
   */
   type DomainAvailability = typings.awsSdk.route53domainsMod._DomainAvailability | java.lang.String
+  
   type DomainName = java.lang.String
+  
   type DomainStatus = java.lang.String
+  
   type DomainStatusList = js.Array[typings.awsSdk.route53domainsMod.DomainStatus]
+  
   type DomainSuggestionsList = js.Array[typings.awsSdk.route53domainsMod.DomainSuggestion]
+  
   type DomainSummaryList = js.Array[typings.awsSdk.route53domainsMod.DomainSummary]
+  
   type DurationInYears = scala.Double
+  
   type Email = java.lang.String
+  
   type ErrorMessage = java.lang.String
+  
   type ExtraParamList = js.Array[typings.awsSdk.route53domainsMod.ExtraParam]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DUNS_NUMBER
     - typings.awsSdk.awsSdkStrings.BRAND_NUMBER
@@ -312,16 +336,27 @@ package object route53domainsMod {
     - java.lang.String
   */
   type ExtraParamName = typings.awsSdk.route53domainsMod._ExtraParamName | java.lang.String
+  
   type ExtraParamValue = java.lang.String
+  
   type FIAuthKey = java.lang.String
+  
   type GlueIp = java.lang.String
+  
   type GlueIpList = js.Array[typings.awsSdk.route53domainsMod.GlueIp]
+  
   type HostName = java.lang.String
+  
   type Integer = scala.Double
+  
   type InvoiceId = java.lang.String
+  
   type LangCode = java.lang.String
+  
   type NameserverList = js.Array[typings.awsSdk.route53domainsMod.Nameserver]
+  
   type OperationId = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SUBMITTED
     - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -331,7 +366,9 @@ package object route53domainsMod {
     - java.lang.String
   */
   type OperationStatus = typings.awsSdk.route53domainsMod._OperationStatus | java.lang.String
+  
   type OperationSummaryList = js.Array[typings.awsSdk.route53domainsMod.OperationSummary]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.REGISTER_DOMAIN
     - typings.awsSdk.awsSdkStrings.DELETE_DOMAIN
@@ -354,9 +391,13 @@ package object route53domainsMod {
     - java.lang.String
   */
   type OperationType = typings.awsSdk.route53domainsMod._OperationType | java.lang.String
+  
   type PageMarker = java.lang.String
+  
   type PageMaxItems = scala.Double
+  
   type Price = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING
     - typings.awsSdk.awsSdkStrings.DONE
@@ -364,18 +405,31 @@ package object route53domainsMod {
     - java.lang.String
   */
   type ReachabilityStatus = typings.awsSdk.route53domainsMod._ReachabilityStatus | java.lang.String
+  
   type RegistrarName = java.lang.String
+  
   type RegistrarUrl = java.lang.String
+  
   type RegistrarWhoIsServer = java.lang.String
+  
   type RegistryDomainId = java.lang.String
+  
   type Reseller = java.lang.String
+  
   type State = java.lang.String
+  
   type String = java.lang.String
+  
   type TagKey = java.lang.String
+  
   type TagKeyList = js.Array[typings.awsSdk.route53domainsMod.TagKey]
+  
   type TagList = js.Array[typings.awsSdk.route53domainsMod.Tag]
+  
   type TagValue = java.lang.String
+  
   type Timestamp = typings.std.Date
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TRANSFERABLE
     - typings.awsSdk.awsSdkStrings.UNTRANSFERABLE
@@ -383,7 +437,9 @@ package object route53domainsMod {
     - java.lang.String
   */
   type Transferable = typings.awsSdk.route53domainsMod._Transferable | java.lang.String
+  
   type ZipCode = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2014-05-15`
     - typings.awsSdk.awsSdkStrings.latest_

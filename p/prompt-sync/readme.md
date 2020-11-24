@@ -10,9 +10,9 @@ a synchronous prompt for node.js
 | ------------------ | :-------------: |
 | Full name          | prompt-sync |
 | Keywords           | prompt, sync, blocking, readline, input, getline, repl, history |
-| # releases         | 4 |
-| # dependents       | 144 |
-| # downloads        | 710768 |
+| # releases         | 3 |
+| # dependents       | 189 |
+| # downloads        | 954694 |
 | # stars            | 9 |
 
 ## Links

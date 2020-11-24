@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission")
 @js.native
@@ -22,28 +22,37 @@ class EventPermission protected () extends CustomResource {
     */
   def this(name: String, args: EventPermissionArgs) = this()
   def this(name: String, args: EventPermissionArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The action that you are enabling the other account to perform. Defaults to `events:PutEvents`.
     */
   val action: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
     */
   val condition: Output_[js.UndefOr[EventPermissionCondition]] = js.native
+  
+  /**
+    * The event bus to set the permissions on. If you omit this, the permissions are set on the `default` event bus.
+    */
+  val eventBusName: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
     */
   val principal: Output_[String] = js.native
+  
   /**
     * An identifier string for the external account that you are granting permissions to.
     */
   val statementId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission")
 @js.native
 object EventPermission extends js.Object {
+  
   /**
     * Get an existing EventPermission resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -57,10 +66,10 @@ object EventPermission extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventPermission = js.native
   def get(name: String, id: Input[ID], state: EventPermissionState): EventPermission = js.native
   def get(name: String, id: Input[ID], state: EventPermissionState, opts: CustomResourceOptions): EventPermission = js.native
+  
   /**
     * Returns true if the given object is an instance of EventPermission.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean = js.native
 }
-

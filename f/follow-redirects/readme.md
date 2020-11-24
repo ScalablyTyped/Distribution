@@ -1,7 +1,7 @@
 
 # Scala.js typings for follow-redirects
 
-Typings are for version 1.8
+Typings are for version 1.13
 
 ## Library description:
 HTTP and HTTPS modules that follow redirects.
@@ -10,9 +10,9 @@ HTTP and HTTPS modules that follow redirects.
 | ------------------ | :-------------: |
 | Full name          | follow-redirects |
 | Keywords           | http, https, url, redirect, client, location, utility |
-| # releases         | 21 |
-| # dependents       | 389 |
-| # downloads        | 425258404 |
+| # releases         | 15 |
+| # dependents       | 467 |
+| # downloads        | 671487692 |
 | # stars            | 9 |
 
 ## Links

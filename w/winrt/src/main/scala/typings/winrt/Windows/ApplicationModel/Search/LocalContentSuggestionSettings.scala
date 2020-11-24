@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Storage.StorageFolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalContentSuggestionSettings extends ILocalContentSuggestionSettings
-
 object LocalContentSuggestionSettings {
+  
   @scala.inline
   def apply(
     aqsFilter: String,
@@ -21,4 +21,3 @@ object LocalContentSuggestionSettings {
     __obj.asInstanceOf[LocalContentSuggestionSettings]
   }
 }
-

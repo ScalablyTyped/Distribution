@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents all possible types of a key.
@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait RegistryKeyType extends js.Object
-
 object RegistryKeyType {
+  
   @scala.inline
   def KEY: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def LINK: `1` = 1.asInstanceOf[`1`]
 }
-

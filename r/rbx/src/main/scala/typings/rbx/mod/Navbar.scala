@@ -62,25 +62,12 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx", "Navbar")
 @js.native
 object Navbar extends js.Object {
-  var Brand: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  var Burger: ForwardRefAsExoticComponent[NavbarBurgerProps, ElementType[_]] = js.native
-  var Container: TypeofNavbarContainer = js.native
-  var Context: typings.react.mod.Context[NavbarContextValue] = js.native
-  var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
-  var Dropdown: ForwardRefAsExoticComponent[NavbarDropdownProps, ElementType[_]] = js.native
-  var Item: NoneTAsComponentextendsElContainer = js.native
-  var Link: ForwardRefAsExoticComponent[NavbarLinkProps, ElementType[_]] = js.native
-  var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  var Segment: ForwardRefAsExoticComponent[NavbarSegmentProps, ElementType[_]] = js.native
-  var defaultProps: AsElementType with (Partial[PickNavbarContainerPropsf with (Pick[_, String | Double | js.Symbol])]) = js.native
-  var displayName: js.UndefOr[String] = js.native
+  
   def apply[TAsComponent /* <: ElementType[_] */](
     props: `6`[TAsComponent] with PickNavbarContainerPropsf with (Pick[
       ComponentProps[TAsComponent], 
@@ -90,5 +77,31 @@ object Navbar extends js.Object {
       ]
     ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
   ): Element | Null = js.native
+  
+  var Brand: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  var Burger: ForwardRefAsExoticComponent[NavbarBurgerProps, ElementType[_]] = js.native
+  
+  var Container: TypeofNavbarContainer = js.native
+  
+  var Context: typings.react.mod.Context[NavbarContextValue] = js.native
+  
+  var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  @JSName("$$typeof")
+  var DollarDollartypeof: js.Symbol = js.native
+  
+  var Dropdown: ForwardRefAsExoticComponent[NavbarDropdownProps, ElementType[_]] = js.native
+  
+  var Item: NoneTAsComponentextendsElContainer = js.native
+  
+  var Link: ForwardRefAsExoticComponent[NavbarLinkProps, ElementType[_]] = js.native
+  
+  var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  var Segment: ForwardRefAsExoticComponent[NavbarSegmentProps, ElementType[_]] = js.native
+  
+  var defaultProps: AsElementType with (Partial[PickNavbarContainerPropsf with (Pick[_, String | Double | js.Symbol])]) = js.native
+  
+  var displayName: js.UndefOr[String] = js.native
 }
-

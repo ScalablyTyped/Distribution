@@ -2,7 +2,7 @@ package typings.cloudeventsSdk.receiverStructuredMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import("../../cloudevent")} CloudEvent */
 /**
@@ -21,4 +21,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends StructuredHTTPReceiver {
   def this(version: String) = this()
 }
-

@@ -2,80 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassSocket extends ClassStream {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前 Socket 对象的地址集
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var family: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前连接的本地地址
-    * 
-    * @readonly
-    * @type String
-    */
-  var localAddress: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前连接的本地端口
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var localPort: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前连接的对方地址
-    * 
-    * @readonly
-    * @type String
-    */
-  var remoteAddress: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前连接的对方端口
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var remotePort: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置超时时间 单位毫秒
-    * 
-    * 
-    * @type Integer
-    */
-  var timeout: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前 Socket 对象的协议族
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var `type`: Double = js.native
+  
   /**
     * 
     * @brief 等待并接受一个连接
@@ -85,6 +16,7 @@ trait ClassSocket extends ClassStream {
     * @async
     */
   def accept(): ClassSocket = js.native
+  
   /**
     * 
     * @brief 将当前 Socket 绑定至指定地址的指定端口
@@ -108,6 +40,7 @@ trait ClassSocket extends ClassStream {
     */
   def bind(port: Double): Unit = js.native
   def bind(port: Double, allowIPv4: Boolean): Unit = js.native
+  
   /**
     * 
     * @brief 建立一个 tcp 连接
@@ -118,6 +51,18 @@ trait ClassSocket extends ClassStream {
     * @async
     */
   def connect(host: String, port: Double): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前 Socket 对象的地址集
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var family: Double = js.native
+  
   /**
     * 
     * @brief 开始监听连接请求
@@ -128,6 +73,29 @@ trait ClassSocket extends ClassStream {
     */
   def listen(): Unit = js.native
   def listen(backlog: Double): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前连接的本地地址
+    * 
+    * @readonly
+    * @type String
+    */
+  var localAddress: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前连接的本地端口
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var localPort: Double = js.native
+  
   /**
     * 
     * @brief 从连接读取指定大小的数据，不同于 read 方法，recv 并不保证读完要求的数据，而是在读取到数据后立即返回
@@ -139,6 +107,7 @@ trait ClassSocket extends ClassStream {
     */
   def recv(): ClassBuffer = js.native
   def recv(bytes: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 读取一个 UDP 包
@@ -154,6 +123,29 @@ trait ClassSocket extends ClassStream {
     */
   def recvfrom(): js.Any = js.native
   def recvfrom(bytes: Double): js.Any = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前连接的对方地址
+    * 
+    * @readonly
+    * @type String
+    */
+  var remoteAddress: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前连接的对方端口
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var remotePort: Double = js.native
+  
   /**
     * 
     * @brief 将给定的数据写入连接，此方法等效于 write 方法
@@ -163,6 +155,7 @@ trait ClassSocket extends ClassStream {
     * @async
     */
   def send(data: ClassBuffer): Unit = js.native
+  
   /**
     * 
     * @brief 向给定 ip:port 发送一个 UDP 包
@@ -174,5 +167,26 @@ trait ClassSocket extends ClassStream {
     * @async
     */
   def sendto(data: ClassBuffer, host: String, port: Double): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置超时时间 单位毫秒
+    * 
+    * 
+    * @type Integer
+    */
+  var timeout: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前 Socket 对象的协议族
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var `type`: Double = js.native
 }
-

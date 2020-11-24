@@ -15,27 +15,31 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the standard model of an {@link UnoControlListBox} . */
 @js.native
 trait UnoControlListBoxModel
   extends UnoControlModel
      with XItemList {
+  
   /**
     * specifies the horizontal alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
   var Align: Double = js.native
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Color = js.native
+  
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
   var Border: Double = js.native
+  
   /**
     * specifies the color of the border, if present
     *
@@ -43,20 +47,28 @@ trait UnoControlListBoxModel
     * @since OOo 2.0
     */
   var BorderColor: Double = js.native
+  
   /** specifies if the control has a drop down button. */
   var Dropdown: Boolean = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /** specifies the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
   var FontEmphasisMark: Double = js.native
+  
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
   var FontRelief: Double = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /**
     * specifies where an item separator - a horizontal line - is drawn.
     *
@@ -64,8 +76,10 @@ trait UnoControlListBoxModel
     * @since OOo 3.3
     */
   var ItemSeparatorPos: Double = js.native
+  
   /** specifies the maximum line count displayed in the drop down box. */
   var LineCount: Double = js.native
+  
   /**
     * defines how the mouse wheel can be used to scroll through the control's content.
     *
@@ -73,22 +87,31 @@ trait UnoControlListBoxModel
     * control under which circumstances this is possible.
     */
   var MouseWheelBehavior: Double = js.native
+  
   /** specifies if more than one entry can be selected. */
   var MultiSelection: Boolean = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** specifies that the content of the control cannot be modified by the user. */
   var ReadOnly: Boolean = js.native
+  
   /** specifies the sequence of selected items, identified by the position. */
   var SelectedItems: SafeArray[Double] = js.native
+  
   /** specifies the list of items. */
   var StringItemList: SafeArray[String] = js.native
+  
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: Boolean = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /** specifies the text line color (RGB) of the control. */
   var TextLineColor: Color = js.native
+  
   /**
     * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
     *
@@ -96,6 +119,7 @@ trait UnoControlListBoxModel
     * @since OOo 3.1
     */
   var WritingMode: Double = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -103,8 +127,8 @@ trait UnoControlListBoxModel
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-
 object UnoControlListBoxModel {
+  
   @scala.inline
   def apply(
     Align: Double,
@@ -185,66 +209,92 @@ object UnoControlListBoxModel {
     val __obj = js.Dynamic.literal(Align = Align.asInstanceOf[js.Any], AllItems = AllItems.asInstanceOf[js.Any], BackgroundColor = BackgroundColor.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Dropdown = Dropdown.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FontDescriptor = FontDescriptor.asInstanceOf[js.Any], FontEmphasisMark = FontEmphasisMark.asInstanceOf[js.Any], FontRelief = FontRelief.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], ItemCount = ItemCount.asInstanceOf[js.Any], ItemSeparatorPos = ItemSeparatorPos.asInstanceOf[js.Any], LineCount = LineCount.asInstanceOf[js.Any], MouseWheelBehavior = MouseWheelBehavior.asInstanceOf[js.Any], MultiSelection = MultiSelection.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], SelectedItems = SelectedItems.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], StringItemList = StringItemList.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tabstop = Tabstop.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TextColor = TextColor.asInstanceOf[js.Any], TextLineColor = TextLineColor.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], WritingMode = WritingMode.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addItemListListener = js.Any.fromFunction1(addItemListListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getAllItems = js.Any.fromFunction0(getAllItems), getItemData = js.Any.fromFunction1(getItemData), getItemImage = js.Any.fromFunction1(getItemImage), getItemText = js.Any.fromFunction1(getItemText), getItemTextAndImage = js.Any.fromFunction1(getItemTextAndImage), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), insertItem = js.Any.fromFunction3(insertItem), insertItemImage = js.Any.fromFunction2(insertItemImage), insertItemText = js.Any.fromFunction2(insertItemText), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeAllItems = js.Any.fromFunction0(removeAllItems), removeEventListener = js.Any.fromFunction1(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), removeItemListListener = js.Any.fromFunction1(removeItemListListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setItemData = js.Any.fromFunction2(setItemData), setItemImage = js.Any.fromFunction2(setItemImage), setItemText = js.Any.fromFunction2(setItemText), setItemTextAndImage = js.Any.fromFunction3(setItemTextAndImage), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[UnoControlListBoxModel]
   }
+  
   @scala.inline
   implicit class UnoControlListBoxModelOps[Self <: UnoControlListBoxModel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: Double): Self = this.set("Align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropdown(value: Boolean): Self = this.set("Dropdown", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontEmphasisMark(value: Double): Self = this.set("FontEmphasisMark", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontRelief(value: Double): Self = this.set("FontRelief", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemSeparatorPos(value: Double): Self = this.set("ItemSeparatorPos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineCount(value: Double): Self = this.set("LineCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMouseWheelBehavior(value: Double): Self = this.set("MouseWheelBehavior", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMultiSelection(value: Boolean): Self = this.set("MultiSelection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelectedItems(value: SafeArray[Double]): Self = this.set("SelectedItems", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStringItemList(value: SafeArray[String]): Self = this.set("StringItemList", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextColor(value: Color): Self = this.set("TextColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextLineColor(value: Color): Self = this.set("TextLineColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWritingMode(value: Double): Self = this.set("WritingMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
   }
-  
 }
-

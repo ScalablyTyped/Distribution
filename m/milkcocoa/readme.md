@@ -11,8 +11,8 @@ milkcocoa client for Node.js.
 | Full name          | milkcocoa |
 | Keywords           | milkcocoa, realtime |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 14518 |
+| # dependents       | 4 |
+| # downloads        | 7892 |
 | # stars            | 2 |
 
 ## Links

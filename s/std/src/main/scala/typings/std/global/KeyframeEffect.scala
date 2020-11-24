@@ -9,7 +9,7 @@ import typings.std.KeyframeEffectOptions
 import typings.std.PropertyIndexedKeyframes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("KeyframeEffect")
 @js.native
@@ -34,7 +34,6 @@ class KeyframeEffect ()
   def this(target: typings.std.Element, keyframes: PropertyIndexedKeyframes, options: Double) = this()
   def this(target: typings.std.Element, keyframes: PropertyIndexedKeyframes, options: KeyframeEffectOptions) = this()
 }
-
 @JSGlobal("KeyframeEffect")
 @js.native
 object KeyframeEffect
@@ -54,4 +53,3 @@ object KeyframeEffect
       (/* options */ Double) | (/* options */ KeyframeEffectOptions), 
       typings.std.KeyframeEffect
     ]
-

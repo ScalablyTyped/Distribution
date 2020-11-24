@@ -3,7 +3,7 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.IMouseConstraintDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.MouseConstraint` module contains methods for creating mouse constraints.
@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class MouseConstraint ()
   extends typings.phaser.MatterJS.MouseConstraint
-
 /* static members */
 @JSImport("matter", "MouseConstraint")
 @js.native
 object MouseConstraint extends js.Object {
+  
   /**
     * Creates a new mouse constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -34,4 +34,3 @@ object MouseConstraint extends js.Object {
   def create(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.MouseConstraint = js.native
   def create(engine: typings.phaser.MatterJS.Engine, options: IMouseConstraintDefinition): typings.phaser.MatterJS.MouseConstraint = js.native
 }
-

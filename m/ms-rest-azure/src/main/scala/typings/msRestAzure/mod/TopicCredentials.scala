@@ -3,7 +3,7 @@ package typings.msRestAzure.mod
 import typings.msRest.mod.ApiKeyCredentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "TopicCredentials")
 @js.native
@@ -16,4 +16,3 @@ class TopicCredentials protected () extends ApiKeyCredentials {
     */
   def this(topicKey: String) = this()
 }
-

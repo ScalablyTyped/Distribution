@@ -3,11 +3,12 @@ package typings.winjs.mod.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("winjs", "UI.scopedSelect")
 @js.native
 object scopedSelect extends js.Object {
+  
   /**
     * Walks the DOM tree from the given element to the root of the document. Whenever a selector scope is encountered, this method performs a lookup within that scope for the specified selector string. The first matching element is returned.
     * @param selector The selector string.
@@ -16,4 +17,3 @@ object scopedSelect extends js.Object {
     **/
   def apply(selector: String, element: HTMLElement): HTMLElement = js.native
 }
-

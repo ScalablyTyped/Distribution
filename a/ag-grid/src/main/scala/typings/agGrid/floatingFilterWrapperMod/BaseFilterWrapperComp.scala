@@ -8,24 +8,34 @@ import typings.agGrid.utilsMod.Promise
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/filter/floatingFilterWrapper", "BaseFilterWrapperComp")
 @js.native
 abstract class BaseFilterWrapperComp[M, F /* <: FloatingFilterChange */, PC /* <: IFloatingFilterParams[M, F] */, P /* <: IFloatingFilterWrapperParams[M, F, PC] */] ()
   extends Component
      with IFloatingFilterWrapper[M] {
-  var beans: js.Any = js.native
-  var column: Column = js.native
-  var columnHoverService: js.Any = js.native
-  var context: js.Any = js.native
-  var eventService: js.Any = js.native
+  
   /* private */ def addColumnHoverListener(): js.Any = js.native
+  
+  var beans: js.Any = js.native
+  
+  var column: Column = js.native
+  
+  var columnHoverService: js.Any = js.native
+  
+  var context: js.Any = js.native
+  
   def enrichBody(body: HTMLElement): Unit = js.native
+  
+  var eventService: js.Any = js.native
+  
   @JSName("init")
   def init_MBaseFilterWrapperComp(params: P): Unit | Promise[Unit] = js.native
+  
   /* private */ def onColumnHover(): js.Any = js.native
+  
   /* private */ def onColumnWidthChanged(): js.Any = js.native
+  
   /* private */ def setupWidth(): js.Any = js.native
 }
-

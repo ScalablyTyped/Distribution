@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operator/withLatestFrom", JSImport.Namespace)
 @js.native
 object operatorWithLatestFromMod extends js.Object {
+  
   def withLatestFrom[T, R](
     array: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ _
@@ -78,4 +79,3 @@ object operatorWithLatestFromMod extends js.Object {
     project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
   ): js.Any = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/datatransfer_v1", "admin_datatransfer_v1.Resource$Transfers")
 @js.native
 class ResourceTransfers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * datatransfer.transfers.get
     * @desc Retrieves a data transfer request by its resource ID.
@@ -41,6 +43,7 @@ class ResourceTransfers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataTransfer]
   ): Unit = js.native
+  
   /**
     * datatransfer.transfers.insert
     * @desc Inserts a data transfer request.
@@ -69,6 +72,7 @@ class ResourceTransfers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataTransfer]
   ): Unit = js.native
+  
   /**
     * datatransfer.transfers.list
     * @desc Lists the transfers for a customer by source user, destination
@@ -107,4 +111,3 @@ class ResourceTransfers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDataTransfersListResponse]
   ): Unit = js.native
 }
-

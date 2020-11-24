@@ -11,8 +11,8 @@ A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and nat
 | Full name          | @bang88/react-native-drawer-layout |
 | Keywords           | react, react-native, ios, android, drawer, layout, menu |
 | # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 73963 |
+| # dependents       | 4 |
+| # downloads        | 116775 |
 | # stars            | 0 |
 
 ## Links

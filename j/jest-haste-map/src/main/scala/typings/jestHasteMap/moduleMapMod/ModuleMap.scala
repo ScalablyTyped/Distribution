@@ -5,11 +5,13 @@ import typings.jestHasteMap.typesMod.RawModuleMap
 import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ModuleMap extends js.Object {
+  
   var _assertNoDuplicates: js.Any = js.native
+  
   /**
     * When looking up a module's data, we walk through each eligible platform for
     * the query. For each platform, we want to check if there are known
@@ -19,9 +21,11 @@ trait ModuleMap extends js.Object {
     * `map`, this would be a bug.
     */
   var _getModuleMetadata: js.Any = js.native
+  
   val _raw: js.Any = js.native
-  var json: js.Any = js.native
+  
   def getMockModule(name: String): js.UndefOr[Path] = js.native
+  
   def getModule(name: String): Path | Null = js.native
   def getModule(
     name: String,
@@ -61,12 +65,16 @@ trait ModuleMap extends js.Object {
   def getModule(name: String, platform: Null, supportsNativePlatform: Boolean): Path | Null = js.native
   def getModule(name: String, platform: Null, supportsNativePlatform: Boolean, `type`: HTypeValue): Path | Null = js.native
   def getModule(name: String, platform: Null, supportsNativePlatform: Null, `type`: HTypeValue): Path | Null = js.native
+  
   def getPackage(name: String): Path | Null = js.native
   def getPackage(name: String, platform: js.UndefOr[scala.Nothing], _supportsNativePlatform: Boolean): Path | Null = js.native
   def getPackage(name: String, platform: String): Path | Null = js.native
   def getPackage(name: String, platform: String, _supportsNativePlatform: Boolean): Path | Null = js.native
   def getPackage(name: String, platform: Null, _supportsNativePlatform: Boolean): Path | Null = js.native
+  
   def getRawModuleMap(): RawModuleMap = js.native
+  
+  var json: js.Any = js.native
+  
   def toJSON(): SerializableModuleMap = js.native
 }
-

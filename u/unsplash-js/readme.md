@@ -1,18 +1,18 @@
 
 # Scala.js typings for unsplash-js
 
-Typings are for version 6.0
+Typings are for version 6.3
 
 ## Library description:
-A Universal JavaScript wrapper for the Unsplash API
+A JavaScript wrapper for the Unsplash API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unsplash-js |
 | Keywords           | unsplash, photos, api, images, splash, free |
 | # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 459872 |
+| # dependents       | 17 |
+| # downloads        | 1142124 |
 | # stars            | 6 |
 
 ## Links

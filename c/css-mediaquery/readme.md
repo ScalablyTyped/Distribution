@@ -11,8 +11,8 @@ Parses and determines if a given CSS Media Query matches a set of values.
 | Full name          | css-mediaquery |
 | Keywords           | css, media, query, mediaquery, mobile, parse, match |
 | # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 8773200 |
+| # dependents       | 76 |
+| # downloads        | 13095491 |
 | # stars            | 0 |
 
 ## Links

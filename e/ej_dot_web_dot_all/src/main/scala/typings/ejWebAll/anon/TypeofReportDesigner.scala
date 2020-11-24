@@ -8,7 +8,7 @@ import typings.ejWebAll.ej.ReportDesigner.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofReportDesigner
@@ -18,7 +18,8 @@ trait TypeofReportDesigner
       /* options */ Model, 
       ReportDesigner
     ] {
+  
   var Locale: js.Any = js.native
+  
   var fn: ReportDesigner = js.native
 }
-

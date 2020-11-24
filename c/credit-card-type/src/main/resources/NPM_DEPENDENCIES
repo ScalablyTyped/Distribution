@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "credit-card-type" : "9.0.1"
+      "credit-card-type" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "credit-card-type" : "9.0.1"
+      "credit-card-type" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

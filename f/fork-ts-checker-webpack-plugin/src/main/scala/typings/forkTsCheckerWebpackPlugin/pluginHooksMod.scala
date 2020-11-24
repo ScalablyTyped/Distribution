@@ -4,14 +4,15 @@ import typings.forkTsCheckerWebpackPlugin.anon.Canceled
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fork-ts-checker-webpack-plugin/lib/hooks/pluginHooks", JSImport.Namespace)
 @js.native
 object pluginHooksMod extends js.Object {
+  
   def getForkTsCheckerWebpackPluginHooks(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.MultiCompiler */ js.Any
   ): Canceled = js.native
+  
   type ForkTsCheckerWebpackPluginHooks = ReturnType[js.Function0[Canceled]]
 }
-

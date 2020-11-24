@@ -4,11 +4,12 @@ import typings.asn1js.anon.Offset
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "fromBER")
 @js.native
 object fromBER extends js.Object {
+  
   /**
     * Major function for decoding ASN.1 BER array into internal library structuries
     * 
@@ -17,4 +18,3 @@ object fromBER extends js.Object {
     */
   def apply(inputBuffer: ArrayBuffer): Offset = js.native
 }
-

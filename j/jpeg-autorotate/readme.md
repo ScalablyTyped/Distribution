@@ -12,7 +12,7 @@ Rotates JPEG images based on EXIF orientation
 | Keywords           | jpeg, rotate, autorotate, orientation, exif, thumbnail, cli |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 128382 |
+| # downloads        | 200374 |
 | # stars            | 1 |
 
 ## Links

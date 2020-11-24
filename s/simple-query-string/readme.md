@@ -12,7 +12,7 @@ Fast and simple way to parse and stringify URL query strings
 | Keywords           | decode, encode, stringify, parse, uri, url, parameter, param, qs, query, querystring, query-string, simple-helpers |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 26798 |
+| # downloads        | 38578 |
 | # stars            | 1 |
 
 ## Links

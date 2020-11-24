@@ -3,13 +3,14 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 import typings.ibmCloudSdkCore.mod.BaseService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Analyze various features of text content at scale. Provide text, raw HTML, or a public URL and IBM Watson Natural Language Understanding will give you results for the features you request. The service cleans HTML content before analysis by default, so the results can ignore most advertisements and other unwanted content.  You can create [custom models](https://cloud.ibm.com/docs/services/natural-language-understanding/customizing.html) with Watson Knowledge Studio to detect custom entities, relations, and categories in Natural Language Understanding.
   */
 @js.native
 trait NaturalLanguageUnderstandingV1 extends BaseService {
+  
   /*************************
     * analyze
     ************************/
@@ -57,6 +58,7 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
     */
   def analyze(params: AnalyzeParams): js.Promise[_] | Unit = js.native
   def analyze(params: AnalyzeParams, callback: Callback[AnalysisResults]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * manageModels
     ************************/
@@ -73,6 +75,7 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
     */
   def deleteModel(params: DeleteModelParams): js.Promise[_] | Unit = js.native
   def deleteModel(params: DeleteModelParams, callback: Callback[DeleteModelResults]): js.Promise[_] | Unit = js.native
+  
   /**
     * List models.
     *
@@ -90,4 +93,3 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
   def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams, callback: Callback[ListModelsResults]): js.Promise[_] | Unit = js.native
 }
-

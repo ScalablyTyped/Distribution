@@ -3,11 +3,12 @@ package typings.luminoDomutils.elementMod.ElementExt
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/domutils/types/element", "ElementExt.sizeLimits")
 @js.native
 object sizeLimits extends js.Object {
+  
   /**
     * Compute the size limits for an element.
     *
@@ -17,4 +18,3 @@ object sizeLimits extends js.Object {
     */
   def apply(element: Element): ISizeLimits = js.native
 }
-

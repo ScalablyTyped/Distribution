@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassXmlText extends ClassXmlCharacterData {
+  
   /**
     * 
     * @brief 按照指定的 offset 把文本节点分割为两个节点
@@ -21,4 +22,3 @@ trait ClassXmlText extends ClassXmlCharacterData {
     */
   def splitText(offset: Double): ClassXmlText = js.native
 }
-

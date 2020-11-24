@@ -3,7 +3,7 @@ package typings.officeJsPreview.Office
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Time` object is returned as the start or end property of an appointment in compose mode.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Time extends js.Object {
+  
   /**
     * Gets the start or end time of an appointment.
     *
@@ -56,6 +57,7 @@ trait Time extends js.Object {
     *                  of type `Office.AsyncResult`. The `value` property of the result is a `Date` object.
     */
   def getAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Date], Unit]): Unit = js.native
+  
   /**
     * Sets the start or end time of an appointment.
     *
@@ -63,6 +65,8 @@ trait Time extends js.Object {
     * previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.
     *
     * The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.
+    *
+    * **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.
     *
     * [Api set: Mailbox 1.1]
     *
@@ -83,7 +87,6 @@ trait Time extends js.Object {
     *               type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.
     */
   def setAsync(dateTime: Date): Unit = js.native
-  def setAsync(dateTime: Date, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(
     dateTime: Date,
     options: js.UndefOr[scala.Nothing],
@@ -96,4 +99,3 @@ trait Time extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

@@ -11,12 +11,14 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vue-clickaway", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   val directive: DirectiveOptions = js.native
+  
   val mixin: (ComponentOptions[
     Vue, 
     DefaultData[Vue], 
@@ -26,4 +28,3 @@ object mod extends js.Object {
     DefaultProps
   ]) | VueConstructor[Vue] = js.native
 }
-

@@ -12,7 +12,7 @@ React Native Wrapper for ZSSRichTextEditor
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9785 |
+| # downloads        | 6404 |
 | # stars            | 0 |
 
 ## Links

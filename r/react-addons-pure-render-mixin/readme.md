@@ -10,9 +10,9 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-pure-render-mixin |
 | Keywords           | react, react-addon |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 220 |
-| # downloads        | 3875026 |
+| # downloads        | 4573210 |
 | # stars            | 13 |
 
 ## Links

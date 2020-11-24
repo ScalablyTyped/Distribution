@@ -3,74 +3,39 @@ package typings.screeps
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main global game object containing all the gameplay information.
   */
 @js.native
 trait Game extends js.Object {
+  
   /**
     * A hash containing all your construction sites with their id as hash keys.
     */
   var constructionSites: StringDictionary[ConstructionSite[BuildableStructureConstant]] = js.native
+  
   /**
     * An object containing information about your CPU usage.
     */
   var cpu: CPU = js.native
+  
   /**
     * A hash containing all your creeps with creep names as hash keys.
     */
   var creeps: StringDictionary[Creep] = js.native
+  
   /**
     * A hash containing all your flags with flag names as hash keys.
     */
   var flags: StringDictionary[Flag] = js.native
+  
   /**
     * Your Global Control Level.
     */
   var gcl: GlobalControlLevel = js.native
-  /**
-    * Your clobal Power Level
-    */
-  var gpl: GlobalPowerLevel = js.native
-  /**
-    * A global object representing world GameMap.
-    */
-  var map: GameMap = js.native
-  /**
-    * A global object representing the in-game market.
-    */
-  var market: Market = js.native
-  /**
-    * A hash containing all your power creeps with their names as hash keys. Even power creeps not spawned in the world can be accessed here.
-    */
-  var powerCreeps: StringDictionary[PowerCreep] = js.native
-  /**
-    * An object with your global resources that are bound to the account, like pixels or cpu unlocks. Each object key is a resource constant, values are resources amounts.
-    */
-  var resources: StringDictionary[js.Any] = js.native
-  /**
-    * A hash containing all the rooms available to you with room names as hash keys.
-    * A room is visible if you have a creep or an owned structure in it.
-    */
-  var rooms: StringDictionary[Room] = js.native
-  /**
-    * An object describing the world shard where your script is currently being executed in.
-    */
-  var shard: Shard = js.native
-  /**
-    * A hash containing all your spawns with spawn names as hash keys.
-    */
-  var spawns: StringDictionary[StructureSpawn] = js.native
-  /**
-    * A hash containing all your structures with structure id as hash keys.
-    */
-  var structures: StringDictionary[Structure[StructureConstant]] = js.native
-  /**
-    * System game tick counter. It is automatically incremented on every tick.
-    */
-  var time: Double = js.native
+  
   /**
     * Get an object with the specified unique ID. It may be a game object of any type. Only objects from the rooms which are visible to you can be accessed.
     * @param id The unique identifier.
@@ -84,6 +49,22 @@ trait Game extends js.Object {
     */
   // tslint:disable-next-line:unified-signatures
   def getObjectById[T](id: Id[T] | String): T | Null = js.native
+  
+  /**
+    * Your clobal Power Level
+    */
+  var gpl: GlobalPowerLevel = js.native
+  
+  /**
+    * A global object representing world GameMap.
+    */
+  var map: GameMap = js.native
+  
+  /**
+    * A global object representing the in-game market.
+    */
+  var market: Market = js.native
+  
   /**
     * Send a custom message at your profile email.
     *
@@ -96,5 +77,40 @@ trait Game extends js.Object {
     */
   def notify(message: String): js.UndefOr[scala.Nothing] = js.native
   def notify(message: String, groupInterval: Double): js.UndefOr[scala.Nothing] = js.native
+  
+  /**
+    * A hash containing all your power creeps with their names as hash keys. Even power creeps not spawned in the world can be accessed here.
+    */
+  var powerCreeps: StringDictionary[PowerCreep] = js.native
+  
+  /**
+    * An object with your global resources that are bound to the account, like pixels or cpu unlocks. Each object key is a resource constant, values are resources amounts.
+    */
+  var resources: StringDictionary[js.Any] = js.native
+  
+  /**
+    * A hash containing all the rooms available to you with room names as hash keys.
+    * A room is visible if you have a creep or an owned structure in it.
+    */
+  var rooms: StringDictionary[Room] = js.native
+  
+  /**
+    * An object describing the world shard where your script is currently being executed in.
+    */
+  var shard: Shard = js.native
+  
+  /**
+    * A hash containing all your spawns with spawn names as hash keys.
+    */
+  var spawns: StringDictionary[StructureSpawn] = js.native
+  
+  /**
+    * A hash containing all your structures with structure id as hash keys.
+    */
+  var structures: StringDictionary[Structure[StructureConstant]] = js.native
+  
+  /**
+    * System game tick counter. It is automatically incremented on every tick.
+    */
+  var time: Double = js.native
 }
-

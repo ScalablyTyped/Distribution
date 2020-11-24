@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1alpha1", "containeranalysis_v1alpha1.Resource$Projects$Occurrences")
 @js.native
 class ResourceProjectsOccurrences protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * containeranalysis.projects.occurrences.create
     * @desc Creates a new `Occurrence`. Use this method to create `Occurrences`
@@ -44,6 +46,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOccurrence]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.delete
     * @desc Deletes the given `Occurrence` from the system. Use this when an
@@ -73,6 +76,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.get
     * @desc Returns the requested `Occurrence`.
@@ -101,6 +105,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOccurrence]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.getIamPolicy
     * @desc Gets the access control policy for a note or an `Occurrence`
@@ -143,6 +148,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.getNotes
     * @desc Gets the `Note` attached to the given `Occurrence`.
@@ -171,6 +177,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.getVulnerabilitySummary
     * @desc Gets a summary of the number and severity of occurrences.
@@ -203,6 +210,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetVulnzOccurrencesSummaryResponse]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.list
     * @desc Lists active `Occurrences` for a given project matching the
@@ -240,6 +248,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOccurrencesResponse]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.patch
     * @desc Updates an existing occurrence.
@@ -270,6 +279,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOccurrence]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.setIamPolicy
     * @desc Sets the access control policy on the specified `Note` or
@@ -313,6 +323,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.testIamPermissions
     * @desc Returns the permissions that a caller has on the specified note or
@@ -354,4 +365,3 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

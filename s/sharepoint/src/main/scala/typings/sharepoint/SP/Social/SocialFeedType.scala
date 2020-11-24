@@ -2,15 +2,15 @@ package typings.sharepoint.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocialFeedType extends js.Object
-
 /** Identifies the kind of post to be retrieved.  */
 @JSGlobal("SP.Social.SocialFeedType")
 @js.native
 object SocialFeedType extends js.Object {
+  
   @js.native
   sealed trait everyone extends SocialFeedType
   
@@ -25,6 +25,4 @@ object SocialFeedType extends js.Object {
   
   @js.native
   sealed trait timeline extends SocialFeedType
-  
 }
-

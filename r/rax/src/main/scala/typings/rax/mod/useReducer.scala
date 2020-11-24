@@ -2,11 +2,12 @@ package typings.rax.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rax", "useReducer")
 @js.native
 object useReducer extends js.Object {
+  
   /**
     * An alternative to `useState`.
     *
@@ -39,4 +40,3 @@ object useReducer extends js.Object {
     initializer: js.Function1[(/* arg */ I with ReducerState[R]) | (/* arg */ I), ReducerState[R]]
   ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
 }
-

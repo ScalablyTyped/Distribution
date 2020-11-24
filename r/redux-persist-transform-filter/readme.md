@@ -10,9 +10,9 @@ Filter transformator for redux-persist
 | ------------------ | :-------------: |
 | Full name          | redux-persist-transform-filter |
 | Keywords           | react, redux, redux-persist, redux-persist-transform, transform, filter |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 932558 |
+| # downloads        | 1045601 |
 | # stars            | 2 |
 
 ## Links

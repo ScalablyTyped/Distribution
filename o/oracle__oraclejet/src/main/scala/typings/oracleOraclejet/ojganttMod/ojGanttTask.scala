@@ -151,51 +151,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
-  var baseline: End = js.native
-  var borderRadius: String = js.native
-  var end: String = js.native
-  var height: Double | Null = js.native
-  var label: String = js.native
-  var labelPosition: start | innerCenter | innerStart | innerEnd | end | none = js.native
-  var labelStyle: js.Object = js.native
-  var onBaselineChanged: (js.Function1[/* event */ JetElementCustomEvent[End], _]) | Null = js.native
-  var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onLabelPositionChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[start | innerCenter | innerStart | innerEnd | end | none], 
-    _
-  ]) | Null = js.native
-  var onLabelStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onProgressChanged: (js.Function1[/* event */ JetElementCustomEvent[Value], _]) | Null = js.native
-  var onRowIdChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[_]], _]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[normal | milestone | summary | auto], _]) | Null = js.native
-  var progress: Value = js.native
-  var rowId: js.UndefOr[js.Any] = js.native
-  var shortDesc: String | Null = js.native
-  var start: String = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object = js.native
-  var `type`: normal | milestone | summary | auto = js.native
+  
   def addEventListener(
     `type`: labelPositionChanged,
     listener: js.ThisFunction1[
@@ -1157,6 +1117,13 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var baseline: End = js.native
+  
+  var borderRadius: String = js.native
+  
+  var end: String = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_baseline(property: baseline): End = js.native
@@ -1186,7 +1153,62 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): normal | milestone | summary | auto = js.native
+  
+  var height: Double | Null = js.native
+  
+  var label: String = js.native
+  
+  var labelPosition: start | innerCenter | innerStart | innerEnd | end | none = js.native
+  
+  var labelStyle: js.Object = js.native
+  
+  var onBaselineChanged: (js.Function1[/* event */ JetElementCustomEvent[End], _]) | Null = js.native
+  
+  var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onLabelPositionChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[start | innerCenter | innerStart | innerEnd | end | none], 
+    _
+  ]) | Null = js.native
+  
+  var onLabelStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onProgressChanged: (js.Function1[/* event */ JetElementCustomEvent[Value], _]) | Null = js.native
+  
+  var onRowIdChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[_]], _]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  
+  var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[normal | milestone | summary | auto], _]) | Null = js.native
+  
+  var progress: Value = js.native
+  
+  var rowId: js.UndefOr[js.Any] = js.native
+  
   def setProperties(properties: ojGanttTaskSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: `type`, value: auto): Unit = js.native
   def setProperty(property: `type`, value: milestone): Unit = js.native
   def setProperty(property: `type`, value: normal): Unit = js.native
@@ -1228,5 +1250,14 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   def setProperty_svgClassName(property: svgClassName, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
+  
+  var shortDesc: String | Null = js.native
+  
+  var start: String = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object = js.native
+  
+  var `type`: normal | milestone | summary | auto = js.native
 }
-

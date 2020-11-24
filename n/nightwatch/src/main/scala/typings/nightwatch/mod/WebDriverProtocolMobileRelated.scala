@@ -4,10 +4,11 @@ import typings.nightwatch.nightwatchStrings.LANDSCAPE
 import typings.nightwatch.nightwatchStrings.PORTRAIT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolMobileRelated extends js.Object {
+  
   /**
     * Get a list of the available contexts.
     *
@@ -17,6 +18,7 @@ trait WebDriverProtocolMobileRelated extends js.Object {
   def contexts(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[_], Unit]
   ): this.type = js.native
+  
   /**
     * Get current context.
     */
@@ -24,6 +26,7 @@ trait WebDriverProtocolMobileRelated extends js.Object {
   def currentContext(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[_], Unit]
   ): this.type = js.native
+  
   /**
     * Get the current browser orientation.
     */
@@ -35,11 +38,13 @@ trait WebDriverProtocolMobileRelated extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Sets the context.
     */
   def setContext(context: String): this.type = js.native
   def setContext(context: String, callback: js.Function0[Unit]): this.type = js.native
+  
   /**
     * Sets the browser orientation.
     */
@@ -58,4 +63,3 @@ trait WebDriverProtocolMobileRelated extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

@@ -4,21 +4,24 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.ValueState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileUploader extends Control {
+  
   /**
     * Aborts the currently running upload.
     * @since 1.24.0
     */
   def abort(): Unit = js.native
+  
   /**
     * Adds some headerParameter to the aggregation <code>headerParameters</code>.
     * @param oHeaderParameter the headerParameter to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addHeaderParameter(oHeaderParameter: FileUploaderParameter): FileUploader = js.native
+  
   /**
     * Adds some parameter to the aggregation <code>parameters</code>.
     * @since 1.12.2
@@ -26,6 +29,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addParameter(oParameter: FileUploaderParameter): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>change</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -41,6 +45,7 @@ trait FileUploader extends Control {
     */
   def attachChange(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>fileAllowed</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -56,6 +61,7 @@ trait FileUploader extends Control {
     */
   def attachFileAllowed(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachFileAllowed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>fileSizeExceed</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -72,6 +78,7 @@ trait FileUploader extends Control {
     */
   def attachFileSizeExceed(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachFileSizeExceed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>filenameLengthExceed</code> event of
     * this <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -88,6 +95,7 @@ trait FileUploader extends Control {
     */
   def attachFilenameLengthExceed(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachFilenameLengthExceed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>typeMissmatch</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -103,6 +111,7 @@ trait FileUploader extends Control {
     */
   def attachTypeMissmatch(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachTypeMissmatch(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>uploadAborted</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -120,6 +129,7 @@ trait FileUploader extends Control {
     */
   def attachUploadAborted(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachUploadAborted(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>uploadComplete</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -138,6 +148,7 @@ trait FileUploader extends Control {
     */
   def attachUploadComplete(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachUploadComplete(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>uploadProgress</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -157,6 +168,7 @@ trait FileUploader extends Control {
     */
   def attachUploadProgress(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachUploadProgress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>uploadStart</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.When called, the context of the event handler (its
@@ -172,22 +184,26 @@ trait FileUploader extends Control {
     */
   def attachUploadStart(oData: js.Any, fnFunction: js.Any): FileUploader = js.native
   def attachUploadStart(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Clears the content of the FileUploader. The attached additional data however is retained.
     * @since 1.25.0
     */
   def clear(): Unit = js.native
+  
   /**
     * Destroys all the headerParameters in the aggregation <code>headerParameters</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyHeaderParameters(): FileUploader = js.native
+  
   /**
     * Destroys all the parameters in the aggregation <code>parameters</code>.
     * @since 1.12.2
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyParameters(): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>change</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -197,6 +213,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChange(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>fileAllowed</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -206,6 +223,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFileAllowed(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>fileSizeExceed</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -215,6 +233,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFileSizeExceed(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>filenameLengthExceed</code> event of
     * this <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the
@@ -225,6 +244,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFilenameLengthExceed(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>typeMissmatch</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -234,6 +254,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachTypeMissmatch(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>uploadAborted</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -244,6 +265,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUploadAborted(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>uploadComplete</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -253,6 +275,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUploadComplete(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>uploadProgress</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -263,6 +286,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUploadProgress(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>uploadStart</code> event of this
     * <code>sap.ui.unified.FileUploader</code>.The passed function and listener object must match the ones
@@ -273,6 +297,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUploadStart(fnFunction: js.Any, oListener: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>change</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>newValue</code> of type <code>string</code>New file path
@@ -281,12 +306,14 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChange(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>fileAllowed</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFileAllowed(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>fileSizeExceed</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>The name of a file to be
@@ -296,6 +323,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFileSizeExceed(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>filenameLengthExceed</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>The filename, which is longer
@@ -305,6 +333,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFilenameLengthExceed(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>typeMissmatch</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>The name of a file to be
@@ -315,6 +344,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireTypeMissmatch(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>uploadAborted</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>The name of a file to be
@@ -326,6 +356,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUploadAborted(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>uploadComplete</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>The name of a file to be
@@ -351,6 +382,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUploadComplete(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>uploadProgress</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>lengthComputable</code> of type <code>boolean</code>Indicates whether or
@@ -366,6 +398,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUploadProgress(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Fires event <code>uploadStart</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>The name of a file to be
@@ -377,6 +410,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUploadStart(mArguments: js.Any): FileUploader = js.native
+  
   /**
     * Gets current value of property <code>additionalData</code>.Additional data that is sent to the back
     * end service. Data will be transmitted as value of a hidden input where the name is derived from the
@@ -384,24 +418,28 @@ trait FileUploader extends Control {
     * @returns Value of property <code>additionalData</code>
     */
   def getAdditionalData(): String = js.native
+  
   /**
     * Gets current value of property <code>buttonOnly</code>.If set to "true", the FileUploader will be
     * rendered as Button only, without showing the InputField.Default value is <code>false</code>.
     * @returns Value of property <code>buttonOnly</code>
     */
   def getButtonOnly(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>buttonText</code>.The Button text can be overwritten using this
     * property.
     * @returns Value of property <code>buttonText</code>
     */
   def getButtonText(): String = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Disabled controls have different colors,
     * depending on customer settings.Default value is <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>fileType</code>.The chosen files will be checked against an
     * array of file types. If at least one file does not fit the file type restriction the upload is
@@ -409,12 +447,14 @@ trait FileUploader extends Control {
     * @returns Value of property <code>fileType</code>
     */
   def getFileType(): js.Array[String] = js.native
+  
   /**
     * Gets content of aggregation <code>headerParameters</code>.The header parameters for the FileUploader
     * which are only submitted with XHR requests. Header parameters are not supported by Internet Explorer
     * 9.
     */
   def getHeaderParameters(): js.Array[FileUploaderParameter] = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.Icon to be displayed as graphical element within
     * the button.This can be an URI to an image or an icon font URI.Default value is <code></code>.
@@ -422,6 +462,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconFirst</code>.If set to true (default), the display sequence
     * is 1. icon 2. control text.Default value is <code>true</code>.
@@ -429,6 +470,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>iconFirst</code>
     */
   def getIconFirst(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>iconHovered</code>.Icon to be displayed as graphical element
     * within the button when it is hovered (only if also a base icon was specified). If not specified the
@@ -438,6 +480,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>iconHovered</code>
     */
   def getIconHovered(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconOnly</code>.If set to true, the button is displayed without
     * any text.Default value is <code>false</code>.
@@ -445,6 +488,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>iconOnly</code>
     */
   def getIconOnly(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>iconSelected</code>.Icon to be displayed as graphical element
     * within the button when it is selected (only if also a base icon was specified). If not specified the
@@ -454,6 +498,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>iconSelected</code>
     */
   def getIconSelected(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>maximumFileSize</code>.A file size limit in megabytes which
     * prevents the upload if at least one file exceeds it. This property is not supported by Internet
@@ -461,6 +506,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>maximumFileSize</code>
     */
   def getMaximumFileSize(): Double = js.native
+  
   /**
     * Gets current value of property <code>maximumFilenameLength</code>.The maximum length of a filename
     * which the FileUploader will accept. If the maximum filename length is exceeded, the corresponding
@@ -469,6 +515,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>maximumFilenameLength</code>
     */
   def getMaximumFilenameLength(): Double = js.native
+  
   /**
     * Gets current value of property <code>mimeType</code>.The chosen files will be checked against an
     * array of mime types. If at least one file does not fit the mime type restriction the upload is
@@ -477,6 +524,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>mimeType</code>
     */
   def getMimeType(): js.Array[String] = js.native
+  
   /**
     * Gets current value of property <code>multiple</code>.Allows multiple files to be chosen and uploaded
     * from the same folder. This property is not supported by Internet Explorer 9.Default value is
@@ -484,23 +532,27 @@ trait FileUploader extends Control {
     * @returns Value of property <code>multiple</code>
     */
   def getMultiple(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>name</code>.Unique control name for identification on the
     * server side after sending data to the server.
     * @returns Value of property <code>name</code>
     */
   def getName(): String = js.native
+  
   /**
     * Gets content of aggregation <code>parameters</code>.The parameters for the FileUploader which are
     * rendered as a hidden inputfield.
     * @since 1.12.2
     */
   def getParameters(): js.Array[FileUploaderParameter] = js.native
+  
   /**
     * Gets current value of property <code>placeholder</code>.Placeholder for the text field.
     * @returns Value of property <code>placeholder</code>
     */
   def getPlaceholder(): String = js.native
+  
   /**
     * Gets current value of property <code>sameFilenameAllowed</code>.If the FileUploader is configured to
     * upload the file directly after the file is selected it is not allowed to upload a file with the same
@@ -510,6 +562,7 @@ trait FileUploader extends Control {
     * @returns Value of property <code>sameFilenameAllowed</code>
     */
   def getSameFilenameAllowed(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>sendXHR</code>.If set to "true", the request will be sent as
     * XHR request instead of a form submit. This property is not supported by Internet Explorer 9.Default
@@ -517,12 +570,14 @@ trait FileUploader extends Control {
     * @returns Value of property <code>sendXHR</code>
     */
   def getSendXHR(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>style</code>.Style of the button. "Transparent, "Accept",
     * "Reject", or "Emphasized" is allowed.
     * @returns Value of property <code>style</code>
     */
   def getStyle(): String = js.native
+  
   /**
     * Gets current value of property <code>uploadOnChange</code>.If set to "true", the upload immediately
     * starts after file selection. With the default setting, the upload needs to be explicitly
@@ -530,12 +585,14 @@ trait FileUploader extends Control {
     * @returns Value of property <code>uploadOnChange</code>
     */
   def getUploadOnChange(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>uploadUrl</code>.Used when URL address is on a remote
     * server.Default value is <code></code>.
     * @returns Value of property <code>uploadUrl</code>
     */
   def getUploadUrl(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>useMultipart</code>.If set to "false", the request will be sent
     * as file only request instead of a multipart/form-data request. Only one file could be uploaded using
@@ -544,12 +601,14 @@ trait FileUploader extends Control {
     * @returns Value of property <code>useMultipart</code>
     */
   def getUseMultipart(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>value</code>.Value of the path for file upload.Default value is
     * <code></code>.
     * @returns Value of property <code>value</code>
     */
   def getValue(): String = js.native
+  
   /**
     * Gets current value of property <code>valueState</code>.Visualizes warnings or errors related to the
     * text field. Possible values: Warning, Error, Success, None.Default value is <code>None</code>.
@@ -557,12 +616,14 @@ trait FileUploader extends Control {
     * @returns Value of property <code>valueState</code>
     */
   def getValueState(): ValueState = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Specifies the displayed control width.Default
     * value is <code></code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.FileUploaderParameter</code> in the aggregation
     * <code>headerParameters</code>.and returns its index if found or -1 otherwise.
@@ -570,6 +631,7 @@ trait FileUploader extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfHeaderParameter(oHeaderParameter: FileUploaderParameter): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.FileUploaderParameter</code> in the aggregation
     * <code>parameters</code>.and returns its index if found or -1 otherwise.
@@ -578,6 +640,7 @@ trait FileUploader extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfParameter(oParameter: FileUploaderParameter): Double = js.native
+  
   /**
     * Inserts a headerParameter into the aggregation <code>headerParameters</code>.
     * @param oHeaderParameter the headerParameter to insert; if empty, nothing is inserted
@@ -588,6 +651,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertHeaderParameter(oHeaderParameter: FileUploaderParameter, iIndex: Double): FileUploader = js.native
+  
   /**
     * Inserts a parameter into the aggregation <code>parameters</code>.
     * @since 1.12.2
@@ -599,12 +663,14 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertParameter(oParameter: FileUploaderParameter, iIndex: Double): FileUploader = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>headerParameters</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllHeaderParameters(): js.Array[FileUploaderParameter] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>parameters</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -612,6 +678,7 @@ trait FileUploader extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllParameters(): js.Array[FileUploaderParameter] = js.native
+  
   def removeHeaderParameter(vHeaderParameter: String): FileUploaderParameter = js.native
   /**
     * Removes a headerParameter from the aggregation <code>headerParameters</code>.
@@ -620,6 +687,7 @@ trait FileUploader extends Control {
     */
   def removeHeaderParameter(vHeaderParameter: Double): FileUploaderParameter = js.native
   def removeHeaderParameter(vHeaderParameter: FileUploaderParameter): FileUploaderParameter = js.native
+  
   def removeParameter(vParameter: String): FileUploaderParameter = js.native
   /**
     * Removes a parameter from the aggregation <code>parameters</code>.
@@ -629,6 +697,7 @@ trait FileUploader extends Control {
     */
   def removeParameter(vParameter: Double): FileUploaderParameter = js.native
   def removeParameter(vParameter: FileUploaderParameter): FileUploaderParameter = js.native
+  
   /**
     * Sets a new value for property <code>additionalData</code>.Additional data that is sent to the back
     * end service. Data will be transmitted as value of a hidden input where the name is derived from the
@@ -638,6 +707,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAdditionalData(sAdditionalData: String): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>buttonOnly</code>.If set to "true", the FileUploader will be
     * rendered as Button only, without showing the InputField.When called with a value of
@@ -647,6 +717,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setButtonOnly(bButtonOnly: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>buttonText</code>.The Button text can be overwritten using this
     * property.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -655,6 +726,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setButtonText(sButtonText: String): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Disabled controls have different colors,
     * depending on customer settings.When called with a value of <code>null</code> or
@@ -664,6 +736,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>fileType</code>.The chosen files will be checked against an
     * array of file types. If at least one file does not fit the file type restriction the upload is
@@ -673,6 +746,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFileType(sFileType: js.Array[String]): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.Icon to be displayed as graphical element within the
     * button.This can be an URI to an image or an icon font URI.When called with a value of
@@ -683,6 +757,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>iconFirst</code>.If set to true (default), the display sequence
     * is 1. icon 2. control text.When called with a value of <code>null</code> or <code>undefined</code>,
@@ -692,6 +767,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconFirst(bIconFirst: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>iconHovered</code>.Icon to be displayed as graphical element
     * within the button when it is hovered (only if also a base icon was specified). If not specified the
@@ -703,6 +779,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconHovered(sIconHovered: js.Any): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>iconOnly</code>.If set to true, the button is displayed without
     * any text.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -712,6 +789,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconOnly(bIconOnly: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>iconSelected</code>.Icon to be displayed as graphical element
     * within the button when it is selected (only if also a base icon was specified). If not specified the
@@ -723,6 +801,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconSelected(sIconSelected: js.Any): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>maximumFileSize</code>.A file size limit in megabytes which
     * prevents the upload if at least one file exceeds it. This property is not supported by Internet
@@ -732,6 +811,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaximumFileSize(fMaximumFileSize: Double): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>maximumFilenameLength</code>.The maximum length of a filename
     * which the FileUploader will accept. If the maximum filename length is exceeded, the corresponding
@@ -742,6 +822,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaximumFilenameLength(iMaximumFilenameLength: Double): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>mimeType</code>.The chosen files will be checked against an
     * array of mime types. If at least one file does not fit the mime type restriction the upload is
@@ -752,6 +833,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMimeType(sMimeType: js.Array[String]): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>multiple</code>.Allows multiple files to be chosen and uploaded
     * from the same folder. This property is not supported by Internet Explorer 9.When called with a value
@@ -761,6 +843,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMultiple(bMultiple: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>name</code>.Unique control name for identification on the server
     * side after sending data to the server.When called with a value of <code>null</code> or
@@ -769,6 +852,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setName(sName: String): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>placeholder</code>.Placeholder for the text field.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -777,6 +861,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPlaceholder(sPlaceholder: String): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>sameFilenameAllowed</code>.If the FileUploader is configured to
     * upload the file directly after the file is selected it is not allowed to upload a file with the same
@@ -788,6 +873,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSameFilenameAllowed(bSameFilenameAllowed: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>sendXHR</code>.If set to "true", the request will be sent as XHR
     * request instead of a form submit. This property is not supported by Internet Explorer 9.When called
@@ -797,6 +883,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSendXHR(bSendXHR: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>style</code>.Style of the button. "Transparent, "Accept",
     * "Reject", or "Emphasized" is allowed.When called with a value of <code>null</code> or
@@ -805,6 +892,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setStyle(sStyle: String): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>uploadOnChange</code>.If set to "true", the upload immediately
     * starts after file selection. With the default setting, the upload needs to be explicitly
@@ -814,6 +902,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUploadOnChange(bUploadOnChange: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>uploadUrl</code>.Used when URL address is on a remote
     * server.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -822,6 +911,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUploadUrl(sUploadUrl: js.Any): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>useMultipart</code>.If set to "false", the request will be sent
     * as file only request instead of a multipart/form-data request. Only one file could be uploaded using
@@ -833,6 +923,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUseMultipart(bUseMultipart: Boolean): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>value</code>.Value of the path for file upload.When called with
     * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -841,6 +932,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValue(sValue: String): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>valueState</code>.Visualizes warnings or errors related to the
     * text field. Possible values: Warning, Error, Success, None.When called with a value of
@@ -851,6 +943,7 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueState(sValueState: ValueState): FileUploader = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Specifies the displayed control width.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -859,9 +952,9 @@ trait FileUploader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): FileUploader = js.native
+  
   /**
     * Starts the upload (as defined by uploadUrl)
     */
   def upload(): Unit = js.native
 }
-

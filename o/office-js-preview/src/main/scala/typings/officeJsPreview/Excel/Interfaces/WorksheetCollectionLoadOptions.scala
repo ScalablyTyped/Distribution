@@ -2,7 +2,7 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -12,11 +12,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WorksheetCollectionLoadOptions extends js.Object {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet.
@@ -24,6 +26,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
@@ -31,6 +34,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var charts: js.UndefOr[ChartCollectionLoadOptions] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Determines if Excel should recalculate the worksheet when necessary.
@@ -39,6 +43,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var enableCalculation: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
@@ -46,6 +51,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: The display name of the worksheet.
@@ -53,6 +59,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Gets the PageLayout object of the worksheet.
@@ -60,6 +67,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
@@ -67,6 +75,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var position: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
@@ -74,6 +83,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.2]
     */
   var protection: js.UndefOr[WorksheetProtectionLoadOptions] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Specifies if gridlines are visible to the user.
@@ -81,6 +91,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var showGridlines: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Specifies if headings are visible to the user.
@@ -88,6 +99,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in points.
@@ -95,6 +107,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var standardHeight: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Specifies the standard (default) width of all the columns in the worksheet.
@@ -103,6 +116,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var standardWidth: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: The tab color of the worksheet.
@@ -112,6 +126,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var tabColor: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
@@ -119,6 +134,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var tables: js.UndefOr[TableCollectionLoadOptions] = js.native
+  
   /**
     *
     * For EACH ITEM in the collection: The Visibility of the worksheet.
@@ -127,89 +143,123 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     */
   var visibility: js.UndefOr[Boolean] = js.native
 }
-
 object WorksheetCollectionLoadOptions {
+  
   @scala.inline
   def apply(): WorksheetCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetCollectionLoadOptions]
   }
+  
   @scala.inline
   implicit class WorksheetCollectionLoadOptionsOps[Self <: WorksheetCollectionLoadOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def delete$all: Self = this.set("$all", js.undefined)
+    
     @scala.inline
     def setAutoFilter(value: AutoFilterLoadOptions): Self = this.set("autoFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoFilter: Self = this.set("autoFilter", js.undefined)
+    
     @scala.inline
     def setCharts(value: ChartCollectionLoadOptions): Self = this.set("charts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCharts: Self = this.set("charts", js.undefined)
+    
     @scala.inline
     def setEnableCalculation(value: Boolean): Self = this.set("enableCalculation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnableCalculation: Self = this.set("enableCalculation", js.undefined)
+    
     @scala.inline
     def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setPageLayout(value: PageLayoutLoadOptions): Self = this.set("pageLayout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageLayout: Self = this.set("pageLayout", js.undefined)
+    
     @scala.inline
     def setPosition(value: Boolean): Self = this.set("position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePosition: Self = this.set("position", js.undefined)
+    
     @scala.inline
     def setProtection(value: WorksheetProtectionLoadOptions): Self = this.set("protection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProtection: Self = this.set("protection", js.undefined)
+    
     @scala.inline
     def setShowGridlines(value: Boolean): Self = this.set("showGridlines", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowGridlines: Self = this.set("showGridlines", js.undefined)
+    
     @scala.inline
     def setShowHeadings(value: Boolean): Self = this.set("showHeadings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowHeadings: Self = this.set("showHeadings", js.undefined)
+    
     @scala.inline
     def setStandardHeight(value: Boolean): Self = this.set("standardHeight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStandardHeight: Self = this.set("standardHeight", js.undefined)
+    
     @scala.inline
     def setStandardWidth(value: Boolean): Self = this.set("standardWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStandardWidth: Self = this.set("standardWidth", js.undefined)
+    
     @scala.inline
     def setTabColor(value: Boolean): Self = this.set("tabColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTabColor: Self = this.set("tabColor", js.undefined)
+    
     @scala.inline
     def setTables(value: TableCollectionLoadOptions): Self = this.set("tables", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTables: Self = this.set("tables", js.undefined)
+    
     @scala.inline
     def setVisibility(value: Boolean): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVisibility: Self = this.set("visibility", js.undefined)
   }
-  
 }
-

@@ -2,15 +2,22 @@ package typings.vegaTypings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object transformMod {
+  
   type ContourTransform = typings.vegaTypings.anon.Bandwidth with (typings.vegaTypings.anon.Nice | typings.vegaTypings.anon.Thresholds)
+  
   type DataName = java.lang.String
+  
   type ExprString = java.lang.String
+  
   type FieldRef = java.lang.String | typings.vegaTypings.transformMod.TransformField
+  
   type ProjectionName = java.lang.String
+  
   type SignalName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.transformMod.AggregateTransform
     - typings.vegaTypings.transformMod.BinTransform

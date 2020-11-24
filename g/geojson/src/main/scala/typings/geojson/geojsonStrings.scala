@@ -4,9 +4,37 @@ import typings.geojson.mod.GeoJsonGeometryTypes
 import typings.geojson.mod.GeoJsonTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geojsonStrings {
+  
+  @scala.inline
+  def Feature: Feature = "Feature".asInstanceOf[Feature]
+  
+  @scala.inline
+  def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
+  
+  @scala.inline
+  def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
+  
+  @scala.inline
+  def LineString: LineString = "LineString".asInstanceOf[LineString]
+  
+  @scala.inline
+  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
+  
+  @scala.inline
+  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
+  
+  @scala.inline
+  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
+  
+  @scala.inline
+  def Point: Point = "Point".asInstanceOf[Point]
+  
+  @scala.inline
+  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
+  
   @js.native
   sealed trait Feature extends GeoJsonTypes
   
@@ -47,24 +75,4 @@ object geojsonStrings {
   sealed trait Polygon
     extends GeoJsonGeometryTypes
        with GeoJsonTypes
-  
-  @scala.inline
-  def Feature: Feature = "Feature".asInstanceOf[Feature]
-  @scala.inline
-  def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
-  @scala.inline
-  def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
-  @scala.inline
-  def LineString: LineString = "LineString".asInstanceOf[LineString]
-  @scala.inline
-  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
-  @scala.inline
-  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
-  @scala.inline
-  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
-  @scala.inline
-  def Point: Point = "Point".asInstanceOf[Point]
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
 }
-

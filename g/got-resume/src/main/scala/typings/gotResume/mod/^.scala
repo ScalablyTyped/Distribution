@@ -2,11 +2,12 @@ package typings.gotResume.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("got-resume", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(options: TransferOptions): TransferStream = js.native
   /**
     * Fetch URL with retries if failure.
@@ -18,4 +19,3 @@ object ^ extends js.Object {
   def apply(url: String): TransferStream = js.native
   def apply(url: String, options: TransferOptions): TransferStream = js.native
 }
-

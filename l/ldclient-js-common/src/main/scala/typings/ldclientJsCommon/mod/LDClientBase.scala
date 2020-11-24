@@ -3,10 +3,11 @@ package typings.ldclientJsCommon.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LDClientBase extends js.Object {
+  
   /**
     * Returns a map of all available flags to the current user's values.
     *
@@ -16,6 +17,7 @@ trait LDClientBase extends js.Object {
     *   [[variation]], so any flag that cannot be evaluated will have a null value.
     */
   def allFlags(): LDFlagSet = js.native
+  
   /**
     * Shuts down the client and releases its resources, after delivering any pending analytics
     * events. After the client is closed, all calls to [[variation]] will return default values,
@@ -31,6 +33,7 @@ trait LDClientBase extends js.Object {
     */
   def close(): js.Promise[Unit] = js.native
   def close(onDone: js.Function0[Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Flushes all pending analytics events.
     *
@@ -48,6 +51,7 @@ trait LDClientBase extends js.Object {
     */
   def flush(): js.Promise[Unit] = js.native
   def flush(onDone: js.Function0[Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Returns the client's current user.
     *
@@ -55,6 +59,7 @@ trait LDClientBase extends js.Object {
     * been called, the initial user specified when the client was created.
     */
   def getUser(): LDUser = js.native
+  
   /**
     * Identifies a user to LaunchDarkly.
     *
@@ -92,6 +97,7 @@ trait LDClientBase extends js.Object {
     hash: String,
     onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
   ): js.Promise[LDFlagSet] = js.native
+  
   /**
     * Deregisters an event listener. See [[on]] for the available event types.
     *
@@ -104,6 +110,7 @@ trait LDClientBase extends js.Object {
     */
   def off(key: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def off(key: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): Unit = js.native
+  
   /**
     * Registers an event listener.
     *
@@ -144,6 +151,7 @@ trait LDClientBase extends js.Object {
     */
   def on(key: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def on(key: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): Unit = js.native
+  
   /**
     * Specifies whether or not to open a streaming connection to LaunchDarkly for live flag updates.
     *
@@ -155,6 +163,7 @@ trait LDClientBase extends js.Object {
     */
   def setStreaming(): Unit = js.native
   def setStreaming(value: Boolean): Unit = js.native
+  
   /**
     * Track page events to use in goals or A/B tests.
     *
@@ -169,6 +178,7 @@ trait LDClientBase extends js.Object {
     */
   def track(key: String): Unit = js.native
   def track(key: String, data: js.Any): Unit = js.native
+  
   /**
     * Determines the variation of a feature flag for the current user.
     *
@@ -184,6 +194,7 @@ trait LDClientBase extends js.Object {
     */
   def variation(key: String): LDFlagValue = js.native
   def variation(key: String, defaultValue: LDFlagValue): LDFlagValue = js.native
+  
   /**
     * Determines the variation of a feature flag for a user, along with information about how it was
     * calculated.
@@ -206,6 +217,7 @@ trait LDClientBase extends js.Object {
     */
   def variationDetail(key: String): LDEvaluationDetail = js.native
   def variationDetail(key: String, defaultValue: LDFlagValue): LDEvaluationDetail = js.native
+  
   /**
     * Returns a Promise that tracks the client's initialization state.
     *
@@ -220,6 +232,7 @@ trait LDClientBase extends js.Object {
     *   fails.
     */
   def waitForInitialization(): js.Promise[Unit] = js.native
+  
   /**
     * Returns a Promise that tracks the client's initialization state.
     *
@@ -237,4 +250,3 @@ trait LDClientBase extends js.Object {
     */
   def waitUntilReady(): js.Promise[Unit] = js.native
 }
-

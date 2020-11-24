@@ -10,9 +10,9 @@ Atlassian Connect JavaScript bridge
 | ------------------ | :-------------: |
 | Full name          | atlassian-connect-js |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 48 |
 | # dependents       | 0 |
-| # downloads        | 54784 |
+| # downloads        | 47846 |
 | # stars            | 0 |
 
 ## Links

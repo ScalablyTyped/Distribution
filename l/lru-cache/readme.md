@@ -10,9 +10,9 @@ A cache object that deletes the least-recently-used items.
 | ------------------ | :-------------: |
 | Full name          | lru-cache |
 | Keywords           | mru, lru, cache |
-| # releases         | 9 |
-| # dependents       | 1959 |
-| # downloads        | 890210495 |
+| # releases         | 8 |
+| # dependents       | 2364 |
+| # downloads        | 1269670818 |
 | # stars            | 123 |
 
 ## Links

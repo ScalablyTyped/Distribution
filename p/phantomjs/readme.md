@@ -11,8 +11,8 @@ Headless WebKit with JS API
 | Full name          | phantomjs |
 | Keywords           | phantomjs, headless, webkit |
 | # releases         | 1 |
-| # dependents       | 478 |
-| # downloads        | 4606713 |
+| # dependents       | 476 |
+| # downloads        | 4143322 |
 | # stars            | 138 |
 
 ## Links

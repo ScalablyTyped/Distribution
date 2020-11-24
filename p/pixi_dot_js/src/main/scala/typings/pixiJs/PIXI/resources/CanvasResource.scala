@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for HTMLCanvasElement.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CanvasResource extends BaseImageResource
-

@@ -4,11 +4,12 @@ import typings.typescript.mod.JSDocParameterTag
 import typings.typescript.mod.ParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.getJSDocParameterTags")
 @js.native
 object getJSDocParameterTags extends js.Object {
+  
   /**
     * Gets the JSDoc parameter tags for the node if present.
     *
@@ -23,4 +24,3 @@ object getJSDocParameterTags extends js.Object {
     */
   def apply(param: ParameterDeclaration): js.Array[JSDocParameterTag] = js.native
 }
-

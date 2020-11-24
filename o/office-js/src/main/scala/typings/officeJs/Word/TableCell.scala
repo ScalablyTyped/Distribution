@@ -28,7 +28,7 @@ import typings.officeJs.officeJsStrings.Top
 import typings.officeJs.officeJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -38,6 +38,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TableCell extends ClientObject {
+  
   /**
     *
     * Gets the body object of the cell. Read-only.
@@ -45,6 +46,7 @@ trait TableCell extends ClientObject {
     * [Api set: WordApi 1.3]
     */
   val body: Body = js.native
+  
   /**
     *
     * Gets the index of the cell in its row. Read-only.
@@ -52,6 +54,7 @@ trait TableCell extends ClientObject {
     * [Api set: WordApi 1.3]
     */
   val cellIndex: Double = js.native
+  
   /**
     *
     * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
@@ -59,77 +62,25 @@ trait TableCell extends ClientObject {
     * [Api set: WordApi 1.3]
     */
   var columnWidth: Double = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableCell: RequestContext = js.native
-  /**
-    *
-    * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
-  /**
-    *
-    * Gets the parent row of the cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentRow: TableRow = js.native
-  /**
-    *
-    * Gets the parent table of the cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentTable: Table = js.native
-  /**
-    *
-    * Gets the index of the cell's row in the table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val rowIndex: Double = js.native
-  /**
-    *
-    * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var shadingColor: String = js.native
-  /**
-    *
-    * Gets and sets the text of the cell.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var value: String = js.native
-  /**
-    *
-    * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = js.native
-  /**
-    *
-    * Gets the width of the cell in points. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val width: Double = js.native
+  
   /**
     * Deletes the column containing this cell. This is applicable to uniform tables.
     *
     * [Api set: WordApi 1.3]
     */
   def deleteColumn(): Unit = js.native
+  
   /**
     * Deletes the row containing this cell.
     *
     * [Api set: WordApi 1.3]
     */
   def deleteRow(): Unit = js.native
+  
   /**
     * Gets the border style for the specified border.
     *
@@ -163,6 +114,7 @@ trait TableCell extends ClientObject {
     */
   @JSName("getBorder")
   def getBorder_Top(borderLocation: Top): TableBorder = js.native
+  
   /**
     * Gets cell padding in points.
     *
@@ -186,18 +138,29 @@ trait TableCell extends ClientObject {
     */
   @JSName("getCellPadding")
   def getCellPadding_Top(cellPaddingLocation: Top): ClientResult[Double] = js.native
+  
   /**
     * Gets the next cell. Throws an error if this cell is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNext(): TableCell = js.native
+  
   /**
     * Gets the next cell. Returns a null object if this cell is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): TableCell = js.native
+  
+  /**
+    *
+    * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  var horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
+  
   /**
     * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
     *
@@ -238,6 +201,7 @@ trait TableCell extends ClientObject {
   def insertColumns_Start(insertLocation: Start, columnCount: Double): Unit = js.native
   @JSName("insertColumns")
   def insertColumns_Start(insertLocation: Start, columnCount: Double, values: js.Array[js.Array[String]]): Unit = js.native
+  
   /**
     * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows.
     *
@@ -278,6 +242,7 @@ trait TableCell extends ClientObject {
   def insertRows_Start(insertLocation: Start, rowCount: Double): TableRowCollection = js.native
   @JSName("insertRows")
   def insertRows_Start(insertLocation: Start, rowCount: Double, values: js.Array[js.Array[String]]): TableRowCollection = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -288,6 +253,31 @@ trait TableCell extends ClientObject {
   def load(propertyNamesAndPaths: Expand): TableCell = js.native
   def load(propertyNames: String): TableCell = js.native
   def load(propertyNames: js.Array[String]): TableCell = js.native
+  
+  /**
+    *
+    * Gets the parent row of the cell. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentRow: TableRow = js.native
+  
+  /**
+    *
+    * Gets the parent table of the cell. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentTable: Table = js.native
+  
+  /**
+    *
+    * Gets the index of the cell's row in the table. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val rowIndex: Double = js.native
+  
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -303,6 +293,7 @@ trait TableCell extends ClientObject {
   def set(properties: TableCellUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: TableCell): Unit = js.native
+  
   /**
     * Sets cell padding in points.
     *
@@ -328,18 +319,52 @@ trait TableCell extends ClientObject {
     */
   @JSName("setCellPadding")
   def setCellPadding_Top(cellPaddingLocation: Top, cellPadding: Double): Unit = js.native
+  
+  /**
+    *
+    * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  var shadingColor: String = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Word.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): TableCellData = js.native
+  
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): TableCell = js.native
+  
   /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): TableCell = js.native
+  
+  /**
+    *
+    * Gets and sets the text of the cell.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  var value: String = js.native
+  
+  /**
+    *
+    * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  var verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = js.native
+  
+  /**
+    *
+    * Gets the width of the cell in points. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val width: Double = js.native
 }
-

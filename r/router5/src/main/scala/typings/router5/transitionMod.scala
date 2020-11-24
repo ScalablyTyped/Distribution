@@ -7,11 +7,12 @@ import typings.router5.routerMod.DefaultDependencies
 import typings.router5.routerMod.Router
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("router5/dist/transition", JSImport.Namespace)
 @js.native
 object transitionMod extends js.Object {
+  
   def default(
     router: Router[DefaultDependencies],
     toState: State,
@@ -27,4 +28,3 @@ object transitionMod extends js.Object {
     callback: DoneFn
   ): js.Function0[Unit] = js.native
 }
-

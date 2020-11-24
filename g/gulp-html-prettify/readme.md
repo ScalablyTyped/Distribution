@@ -12,7 +12,7 @@ HTML Prettify Plugin for Gulp
 | Keywords           | gulpplugin |
 | # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 87564 |
+| # downloads        | 138143 |
 | # stars            | 8 |
 
 ## Links

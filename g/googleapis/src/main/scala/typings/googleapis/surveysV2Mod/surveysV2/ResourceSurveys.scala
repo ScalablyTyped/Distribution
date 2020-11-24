@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/surveys/v2", "surveys_v2.Resource$Surveys")
 @js.native
 class ResourceSurveys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * surveys.surveys.delete
     * @desc Removes a survey from view in all user GET requests.
@@ -41,6 +43,7 @@ class ResourceSurveys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSurveysDeleteResponse]
   ): Unit = js.native
+  
   /**
     * surveys.surveys.get
     * @desc Retrieves information about the specified survey.
@@ -69,6 +72,7 @@ class ResourceSurveys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSurvey]
   ): Unit = js.native
+  
   /**
     * surveys.surveys.insert
     * @desc Creates a survey.
@@ -97,6 +101,7 @@ class ResourceSurveys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSurvey]
   ): Unit = js.native
+  
   /**
     * surveys.surveys.list
     * @desc Lists the surveys owned by the authenticated user.
@@ -127,6 +132,7 @@ class ResourceSurveys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSurveysListResponse]
   ): Unit = js.native
+  
   /**
     * surveys.surveys.start
     * @desc Begins running a survey.
@@ -156,6 +162,7 @@ class ResourceSurveys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSurveysStartResponse]
   ): Unit = js.native
+  
   /**
     * surveys.surveys.stop
     * @desc Stops a running survey.
@@ -184,6 +191,7 @@ class ResourceSurveys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSurveysStopResponse]
   ): Unit = js.native
+  
   /**
     * surveys.surveys.update
     * @desc Updates a survey. Currently the only property that can be updated
@@ -215,4 +223,3 @@ class ResourceSurveys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSurvey]
   ): Unit = js.native
 }
-

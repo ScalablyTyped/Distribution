@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-popper" : "2.2.3"
+      "react-popper" : "2.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-popper" : "2.2.3"
+      "react-popper" : "2.2.4"
     }
   ],
   "compile-devDependencies" : [

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LineType extends js.Object
-
 /**
   * The line types.
   *
@@ -17,6 +16,7 @@ sealed trait LineType extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.LineType")
 @js.native
 object LineType extends js.Object {
+  
   @js.native
   sealed trait BENT_CONNECTOR_2 extends LineType
   
@@ -49,6 +49,4 @@ object LineType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends LineType
-  
 }
-

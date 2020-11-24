@@ -3,7 +3,7 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolverHost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "StaticSymbolResolver")
 @js.native
@@ -21,4 +21,3 @@ class StaticSymbolResolver protected ()
     errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
   ) = this()
 }
-

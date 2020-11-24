@@ -3,7 +3,7 @@ package typings.fibers.mod
 import typings.fibers.futureMod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fibers", JSImport.Namespace)
 @js.native
@@ -21,4 +21,3 @@ class Class protected () extends Fiber {
     */
   def this(fn: Function) = this()
 }
-

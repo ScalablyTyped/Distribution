@@ -2,11 +2,12 @@ package typings.videoJs.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "getPlayer")
 @js.native
 object getPlayer extends js.Object {
+  
   /**
     * Get a single player based on an ID or DOM element.
     *
@@ -22,4 +23,3 @@ object getPlayer extends js.Object {
     */
   def apply(id: String): typings.videoJs.mod.videojs.Player = js.native
 }
-

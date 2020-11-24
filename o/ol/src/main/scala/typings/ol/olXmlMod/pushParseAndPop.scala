@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/xml", "pushParseAndPop")
 @js.native
 object pushParseAndPop extends js.Object {
+  
   def apply[T](
     `object`: T,
     parsersNS: StringDictionary[StringDictionary[Parser]],
@@ -23,4 +24,3 @@ object pushParseAndPop extends js.Object {
     opt_this: js.Any
   ): T = js.native
 }
-

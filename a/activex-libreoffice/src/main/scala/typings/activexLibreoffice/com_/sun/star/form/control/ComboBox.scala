@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XComboBox
 import typings.activexLibreoffice.com_.sun.star.form.XBoundControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a combo box control.
@@ -19,4 +19,3 @@ trait ComboBox
   extends UnoControlEdit
      with XComboBox
      with XBoundControl
-

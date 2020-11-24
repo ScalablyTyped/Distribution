@@ -2,28 +2,40 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FactorGradient")
 @js.native
-class FactorGradient ()
+class FactorGradient protected ()
   extends typings.babylonjs.BABYLON.FactorGradient {
   /**
-    * Gets or sets first associated factor
+    * Creates a new factor gradient
+    * @param gradient gets or sets the gradient value (between 0 and 1)
+    * @param factor1 gets or sets first associated factor
+    * @param factor2 gets or sets second associated factor
     */
-  /* CompleteClass */
-  override var factor1: Double = js.native
-  /**
+  def this(
+    /**
     * Gets or sets the gradient value (between 0 and 1)
     */
-  /* CompleteClass */
-  override var gradient: Double = js.native
-  /**
-    * Will get a number picked randomly between factor1 and factor2.
-    * If factor2 is undefined then factor1 will be used
-    * @returns the picked number
+  gradient: Double,
+    /**
+    * Gets or sets first associated factor
     */
-  /* CompleteClass */
-  override def getFactor(): Double = js.native
+  factor1: Double
+  ) = this()
+  def this(
+    /**
+    * Gets or sets the gradient value (between 0 and 1)
+    */
+  gradient: Double,
+    /**
+    * Gets or sets first associated factor
+    */
+  factor1: Double,
+    /**
+    * Gets or sets second associated factor
+    */
+  factor2: Double
+  ) = this()
 }
-

@@ -4,7 +4,7 @@ import typings.babylonjs.anon.BSphereRadiusFactor
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Particles/index", "SolidParticleSystem")
 @js.native
@@ -29,4 +29,3 @@ class SolidParticleSystem protected ()
   def this(name: String, scene: Scene) = this()
   def this(name: String, scene: Scene, options: BSphereRadiusFactor) = this()
 }
-

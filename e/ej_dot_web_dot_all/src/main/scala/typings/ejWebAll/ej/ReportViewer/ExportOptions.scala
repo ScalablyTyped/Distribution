@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.ReportViewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ExportOptions extends js.Object
-
 @JSGlobal("ej.ReportViewer.ExportOptions")
 @js.native
 object ExportOptions extends js.Object {
+  
   ///Specifies the All property in ExportOptions to get all available options.
   @js.native
   sealed trait All extends ExportOptions
@@ -41,6 +41,4 @@ object ExportOptions extends js.Object {
   ///Specifies the Word property in ExportOptions to get Word option.
   @js.native
   sealed trait Word extends ExportOptions
-  
 }
-

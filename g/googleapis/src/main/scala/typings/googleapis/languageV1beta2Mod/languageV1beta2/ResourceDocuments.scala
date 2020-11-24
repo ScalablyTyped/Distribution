@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/language/v1beta2", "language_v1beta2.Resource$Documents")
 @js.native
 class ResourceDocuments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * language.documents.analyzeEntities
     * @desc Finds named entities (currently proper names and common nouns) in
@@ -46,6 +46,7 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnalyzeEntitiesResponse]
   ): Unit = js.native
+  
   /**
     * language.documents.analyzeEntitySentiment
     * @desc Finds entities, similar to AnalyzeEntities in the text and analyzes
@@ -78,6 +79,7 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnalyzeEntitySentimentResponse]
   ): Unit = js.native
+  
   /**
     * language.documents.analyzeSentiment
     * @desc Analyzes the sentiment of the provided text.
@@ -109,6 +111,7 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnalyzeSentimentResponse]
   ): Unit = js.native
+  
   /**
     * language.documents.analyzeSyntax
     * @desc Analyzes the syntax of the text and provides sentence boundaries
@@ -142,6 +145,7 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnalyzeSyntaxResponse]
   ): Unit = js.native
+  
   /**
     * language.documents.annotateText
     * @desc A convenience method that provides all syntax, sentiment, entity,
@@ -174,6 +178,7 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotateTextResponse]
   ): Unit = js.native
+  
   /**
     * language.documents.classifyText
     * @desc Classifies a document into categories.
@@ -205,5 +210,6 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClassifyTextResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

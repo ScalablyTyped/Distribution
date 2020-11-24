@@ -4,11 +4,12 @@ import typings.std.Transport
 import typings.twilioNotifications.configurationMod.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-notifications/lib/registrar.connector", JSImport.Namespace)
 @js.native
 object registrarConnectorMod extends js.Object {
+  
   @js.native
   abstract class Connector protected ()
     extends typings.twilioNotifications.connectorMod.Connector {
@@ -31,13 +32,17 @@ object registrarConnectorMod extends js.Object {
       * @param Array messageTypes
       */
     def this(channelType: String, context: js.Any, transport: Transport, config: Configuration) = this()
+    
     val channelType: js.Any = js.native
+    
     val context: js.Any = js.native
+    
     var persistedToken: js.Any = js.native
+    
     var register: js.Any = js.native
+    
     var registrationId: js.Any = js.native
+    
     val transport: js.Any = js.native
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.webcola.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Vert")
 @js.native
@@ -13,4 +13,3 @@ class Vert protected ()
   def this(id: Double, x: Double, y: Double, node: js.UndefOr[scala.Nothing], line: js.Any) = this()
   def this(id: Double, x: Double, y: Double, node: typings.webcola.gridrouterMod.NodeWrapper, line: js.Any) = this()
 }
-

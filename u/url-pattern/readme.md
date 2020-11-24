@@ -10,9 +10,9 @@ easier than regex string matching patterns for urls and other strings. turn stri
 | ------------------ | :-------------: |
 | Full name          | url-pattern |
 | Keywords           | url, string, matching, pattern, matching, routing, route, regex, match, segment, parsing, parser, parse, combinator, combinators, custom, customizable, filepath, path, domain, separator, stringify, generate, text, processing |
-| # releases         | 1 |
-| # dependents       | 223 |
-| # downloads        | 2524007 |
+| # releases         | 0 |
+| # dependents       | 263 |
+| # downloads        | 3667875 |
 | # stars            | 20 |
 
 ## Links

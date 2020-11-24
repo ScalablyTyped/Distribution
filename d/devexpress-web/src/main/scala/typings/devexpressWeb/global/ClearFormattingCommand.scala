@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to reset the selected text's formatting to default.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClearFormattingCommand ()
   extends typings.devexpressWeb.ClearFormattingCommand
-

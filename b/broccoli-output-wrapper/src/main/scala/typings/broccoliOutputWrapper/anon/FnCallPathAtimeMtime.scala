@@ -4,10 +4,11 @@ import typings.node.fsMod.PathLike
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallPathAtimeMtime extends js.Object {
+  
   def apply(path: PathLike, atime: String, mtime: String): Unit = js.native
   def apply(path: PathLike, atime: String, mtime: Double): Unit = js.native
   def apply(path: PathLike, atime: String, mtime: Date): Unit = js.native
@@ -18,4 +19,3 @@ trait FnCallPathAtimeMtime extends js.Object {
   def apply(path: PathLike, atime: Date, mtime: Double): Unit = js.native
   def apply(path: PathLike, atime: Date, mtime: Date): Unit = js.native
 }
-

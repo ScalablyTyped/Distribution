@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Teachers")
 @js.native
 class ResourceCoursesTeachers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.courses.teachers.create
     * @desc Creates a teacher of a course.  This method returns the following
@@ -50,6 +52,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTeacher]
   ): Unit = js.native
+  
   /**
     * classroom.courses.teachers.delete
     * @desc Deletes a teacher of a course.  This method returns the following
@@ -84,6 +87,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.teachers.get
     * @desc Returns a teacher of a course.  This method returns the following
@@ -117,6 +121,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTeacher]
   ): Unit = js.native
+  
   /**
     * classroom.courses.teachers.list
     * @desc Returns a list of teachers of this course that the requester is
@@ -154,4 +159,3 @@ class ResourceCoursesTeachers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListTeachersResponse]
   ): Unit = js.native
 }
-

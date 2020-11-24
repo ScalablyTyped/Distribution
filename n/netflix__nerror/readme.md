@@ -12,7 +12,7 @@ Rich errors
 | Keywords           | nerror, error, multierror, verror |
 | # releases         | 7 |
 | # dependents       | 2 |
-| # downloads        | 1823040 |
+| # downloads        | 2130611 |
 | # stars            | 0 |
 
 ## Links

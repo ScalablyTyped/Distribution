@@ -11,8 +11,8 @@ The lodash method `_.uniqueId` exported as a module.
 | Full name          | lodash.uniqueid |
 | Keywords           | lodash-modularized, uniqueid |
 | # releases         | 0 |
-| # dependents       | 100 |
-| # downloads        | 7286130 |
+| # dependents       | 120 |
+| # downloads        | 6923759 |
 | # stars            | 1 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react
 
-Typings are for version 16.9
+Typings are for version 17.0
 
 ## Library description:
 React is a JavaScript library for building user interfaces.
@@ -10,10 +10,10 @@ React is a JavaScript library for building user interfaces.
 | ------------------ | :-------------: |
 | Full name          | react |
 | Keywords           | react |
-| # releases         | 110 |
-| # dependents       | 35113 |
-| # downloads        | 278269585 |
-| # stars            | 746 |
+| # releases         | 131 |
+| # dependents       | 44204 |
+| # downloads        | 365498687 |
+| # stars            | 757 |
 
 ## Links
 - [Homepage](https://reactjs.org/)

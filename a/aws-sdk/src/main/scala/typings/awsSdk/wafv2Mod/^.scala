@@ -2,7 +2,7 @@ package typings.awsSdk.wafv2Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/wafv2", JSImport.Namespace)
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends WAFV2 {
   def this(options: ClientConfiguration) = this()
 }
-

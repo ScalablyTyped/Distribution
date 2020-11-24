@@ -11,7 +11,7 @@ AngularJS wrapper for bootbox.js
 | Keywords           | angularjs, bootbox, directive, service, alert, confirm, dialog, modal |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 29566 |
+| # downloads        | 33206 |
 | # stars            | 2 |
 
 ## Links

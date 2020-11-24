@@ -11,14 +11,23 @@ import typings.openui5.sap.ui.model.Sorter
 import typings.openui5.sap.ui.model.odata.`type`.ODataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.v4")
 @js.native
 object v4 extends js.Object {
+  
   @js.native
   trait Context
     extends typings.openui5.sap.ui.model.Context {
+    
+    /**
+      * Returns the binding this context belongs to.
+      * @since 1.39.0
+      * @returns The context's binding
+      */
+    def getBinding(): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding | typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    
     /**
       * Returns the "canonical path" of the entity for this context.According to "4.3.1 Canonical URL" of
       * the specification "OData Version 4.0 Part 2: URLConventions", this is the "name of the entity set
@@ -28,6 +37,17 @@ object v4 extends js.Object {
       * @since 1.39.0
       */
     var getCanonicalPath: js.Any = js.native
+    
+    /**
+      * Returns the context's index within the binding's collection.
+      * @since 1.39.0
+      * @returns The context's index within the binding's collection or <code>undefined</code> if the 
+      * context does not belong to a list binding.
+      */
+    def getIndex(): Double = js.native
+    
+    def getProperty(sPath: String, bExternalFormat: Boolean): js.Any = js.native
+    
     /**
       * Returns a promise for the "canonical path" of the entity for this context.According to "4.3.1
       * Canonical URL" of the specification "OData Version 4.0 Part 2: URLConventions", this is the "name of
@@ -37,20 +57,7 @@ object v4 extends js.Object {
       * @since 1.39.0
       */
     var requestCanonicalPath: js.Any = js.native
-    /**
-      * Returns the binding this context belongs to.
-      * @since 1.39.0
-      * @returns The context's binding
-      */
-    def getBinding(): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding | typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
-    /**
-      * Returns the context's index within the binding's collection.
-      * @since 1.39.0
-      * @returns The context's index within the binding's collection or <code>undefined</code> if the 
-      * context does not belong to a list binding.
-      */
-    def getIndex(): Double = js.native
-    def getProperty(sPath: String, bExternalFormat: Boolean): js.Any = js.native
+    
     /**
       * Returns a promise on the value for the given path relative to this context. The functionallows
       * access to the complete data the context points to (when <code>sPath</code> is "") orany part
@@ -63,6 +70,7 @@ object v4 extends js.Object {
       * @returns A promise on the requested value
       */
     def requestObject(sPath: String): JQueryPromise[_] = js.native
+    
     /**
       * Returns a promise on the property value for the given path relative to this context. The pathis
       * expected to point to a structural property with primitive type.
@@ -79,11 +87,7 @@ object v4 extends js.Object {
   
   @js.native
   trait ODataContextBinding extends ContextBinding {
-    /**
-      * Returns the bound context.
-      * @since 1.39.0
-      */
-    var getBoundContext: js.Any = js.native
+    
     /**
       * Calls the OData operation that corresponds to this operation binding.Parameters for the operation
       * must be set via {@link #setParameter} beforehand.The value of this binding is the result of the
@@ -99,6 +103,13 @@ object v4 extends js.Object {
       * with an instance of <code>Error</code> in case of failure.
       */
     def execute(sGroupId: String): JQueryPromise[_] = js.native
+    
+    /**
+      * Returns the bound context.
+      * @since 1.39.0
+      */
+    var getBoundContext: js.Any = js.native
+    
     /**
       * Returns <code>true</code> if the binding has pending changes, meaning updates via two-waybinding
       * that have not yet been sent to the server.
@@ -106,12 +117,14 @@ object v4 extends js.Object {
       * @returns <code>true</code> if the binding has pending changes
       */
     def hasPendingChanges(): Boolean = js.native
+    
     /**
       * Resets all pending property changes of this binding, meaning updates via two-way binding thathave
       * not yet been sent to the server.
       * @since 1.40.1
       */
     def resetChanges(): Unit = js.native
+    
     /**
       * Sets a parameter for an operation call.
       * @since 1.37.0
@@ -124,6 +137,7 @@ object v4 extends js.Object {
   
   @js.native
   trait ODataListBinding extends ListBinding {
+    
     def filter(vFilters: js.Array[typings.openui5.sap.ui.model.Filter]): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     /**
       * Filters the list with the given filters.If there are pending changes an error is thrown. Use {@link
@@ -141,8 +155,10 @@ object v4 extends js.Object {
       */
     def filter(vFilters: typings.openui5.sap.ui.model.Filter): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def filter(vFilters: typings.openui5.sap.ui.model.Filter, sFilterType: TypeofFilterType): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    
     def getContexts(iStart: Double, iLength: js.UndefOr[scala.Nothing], iMaximumPrefetchSize: Double): js.Array[Context] = js.native
     def getContexts(iStart: Double, iLength: Double, iMaximumPrefetchSize: Double): js.Array[Context] = js.native
+    
     /**
       * Returns <code>true</code> if the binding has pending changes, meaning updates via two-waybinding
       * that have not yet been sent to the server.
@@ -150,6 +166,7 @@ object v4 extends js.Object {
       * @returns <code>true</code> if the binding has pending changes
       */
     def hasPendingChanges(): Boolean = js.native
+    
     /**
       * Resets all pending property changes of this binding, meaning updates via two-way binding thathave
       * not yet been sent to the server.
@@ -160,6 +177,7 @@ object v4 extends js.Object {
   
   @js.native
   trait ODataMetaModel extends MetaModel {
+    
     def bindList(
       sPath: String,
       oContext: js.UndefOr[scala.Nothing],
@@ -210,6 +228,7 @@ object v4 extends js.Object {
       aSorters: Sorter,
       aFilters: typings.openui5.sap.ui.model.Filter
     ): ListBinding = js.native
+    
     /**
       * Returns the OData meta data model context corresponding to the given OData data model path.
       * @since 1.37.0
@@ -219,16 +238,20 @@ object v4 extends js.Object {
       * meta data path "/EMPLOYEES/ENTRYDATE"
       */
     def getMetaContext(sPath: String): typings.openui5.sap.ui.model.Context = js.native
+    
     def getObject(sPath: String, oContext: typings.openui5.sap.ui.model.Context): js.Any = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def getOriginalProperty(): Unit = js.native
+    
     /**
       * @since 1.37.0
       */
     def getProperty(): Unit = js.native
+    
     /**
       * Returns the UI5 type for the given property path that formats and parses corresponding tothe
       * property's EDM type and constraints. The property's type must be a primitive type. Use{@link
@@ -240,16 +263,19 @@ object v4 extends js.Object {
       * is logged and <code>sap.ui.model.odata.type.Raw</code> is used
       */
     def getUI5Type(sPath: String): ODataType = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def isList(): Unit = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def refresh(): Unit = js.native
+    
     /**
       * Requests the meta data value for the given path relative to the given context (see{@link #resolve
       * resolve} on how this resolution happens and how slashes are inserted as aseparator). Returns a
@@ -355,6 +381,7 @@ object v4 extends js.Object {
       */
     def requestObject(sPath: String): JQueryPromise[_] = js.native
     def requestObject(sPath: String, oContext: typings.openui5.sap.ui.model.Context): JQueryPromise[_] = js.native
+    
     /**
       * Requests the UI5 type for the given property path that formats and parses corresponding tothe
       * property's EDM type and constraints. The property's type must be a primitive type. Use{@link
@@ -366,6 +393,7 @@ object v4 extends js.Object {
       * determined, a warning is logged and <code>sap.ui.model.odata.type.Raw</code> is used
       */
     def requestUI5Type(sPath: String): JQueryPromise[_] = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
@@ -375,8 +403,10 @@ object v4 extends js.Object {
   
   @js.native
   trait ODataModel extends Model {
+    
     def bindContext(sPath: String, oContext: Context): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding = js.native
     def bindContext(sPath: String, oContext: Context, mParameters: js.Any): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding = js.native
+    
     def bindList(
       sPath: String,
       oContext: js.UndefOr[scala.Nothing],
@@ -534,39 +564,47 @@ object v4 extends js.Object {
       vFilters: typings.openui5.sap.ui.model.Filter,
       mParameters: js.Any
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    
     def bindProperty(sPath: String, oContext: Context): typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding = js.native
     def bindProperty(sPath: String, oContext: Context, mParameters: js.Any): typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def destroyBindingContext(): Unit = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def getObject(): Unit = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def getOriginalProperty(): Unit = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def getProperty(): Unit = js.native
+    
     /**
       * Returns <code>true</code> if there are pending changes that would be reset by{@link #refresh}.
       * @since 1.39.0
       * @returns <code>true</code> if there are pending changes
       */
     def hasPendingChanges(): Boolean = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def isList(): Unit = js.native
+    
     /**
       * Returns a promise for the "canonical path" of the entity for the given context.According to "4.3.1
       * Canonical URL" of the specification "OData Version 4.0 Part 2: URLConventions", this is the "name of
@@ -580,6 +618,7 @@ object v4 extends js.Object {
       * context does not point to an entity
       */
     def requestCanonicalPath(oEntityContext: Context): JQueryPromise[_] = js.native
+    
     /**
       * Resets all property changes associated with the given application group ID which have notyet been
       * submitted via {@link #submitBatch}.
@@ -590,11 +629,13 @@ object v4 extends js.Object {
       * <code>updateGroupId</code> is "$auto", which is invalid here.
       */
     def resetChanges(sGroupId: String): Unit = js.native
+    
     /**
       * Method not supported
       * @since 1.37.0
       */
     def setLegacySyntax(): Unit = js.native
+    
     /**
       * Submits the requests associated with the given application group ID in one batch request.
       * @since 1.37.0
@@ -608,6 +649,7 @@ object v4 extends js.Object {
   
   @js.native
   trait ODataPropertyBinding extends PropertyBinding {
+    
     /**
       * Returns <code>true</code> if the binding has pending changes, that is updates via two-waybinding
       * that have not yet been sent to the server.
@@ -615,8 +657,7 @@ object v4 extends js.Object {
       * @returns <code>true</code> if the binding has pending changes
       */
     def hasPendingChanges(): Boolean = js.native
+    
     def setValue(vValue: js.Any, sGroupId: String): Unit = js.native
   }
-  
 }
-

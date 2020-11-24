@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nFilterPanel extends P13nPanel {
+  
   /**
     * Adds some filterItem to the aggregation <code>filterItems</code>.
     * @since 1.26
@@ -13,6 +14,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addFilterItem(oFilterItem: P13nFilterItem): P13nFilterPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>addFilterItem</code> event of this
     * <code>sap.m.P13nFilterPanel</code>.When called, the context of the event handler (its
@@ -28,6 +30,7 @@ trait P13nFilterPanel extends P13nPanel {
     */
   def attachAddFilterItem(oData: js.Any, fnFunction: js.Any): P13nFilterPanel = js.native
   def attachAddFilterItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>removeFilterItem</code> event of this
     * <code>sap.m.P13nFilterPanel</code>.When called, the context of the event handler (its
@@ -43,6 +46,7 @@ trait P13nFilterPanel extends P13nPanel {
     */
   def attachRemoveFilterItem(oData: js.Any, fnFunction: js.Any): P13nFilterPanel = js.native
   def attachRemoveFilterItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>updateFilterItem</code> event of this
     * <code>sap.m.P13nFilterPanel</code>.When called, the context of the event handler (its
@@ -58,6 +62,7 @@ trait P13nFilterPanel extends P13nPanel {
     */
   def attachUpdateFilterItem(oData: js.Any, fnFunction: js.Any): P13nFilterPanel = js.native
   def attachUpdateFilterItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Binds aggregation <code>filterItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -67,12 +72,14 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindFilterItems(oBindingInfo: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Destroys all the filterItems in the aggregation <code>filterItems</code>.
     * @since 1.26
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyFilterItems(): P13nFilterPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>addFilterItem</code> event of this
     * <code>sap.m.P13nFilterPanel</code>.The passed function and listener object must match the ones used
@@ -83,6 +90,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAddFilterItem(fnFunction: js.Any, oListener: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>removeFilterItem</code> event of this
     * <code>sap.m.P13nFilterPanel</code>.The passed function and listener object must match the ones used
@@ -93,6 +101,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachRemoveFilterItem(fnFunction: js.Any, oListener: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>updateFilterItem</code> event of this
     * <code>sap.m.P13nFilterPanel</code>.The passed function and listener object must match the ones used
@@ -103,6 +112,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUpdateFilterItem(fnFunction: js.Any, oListener: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Fires event <code>addFilterItem</code> to attached listeners.
     * @since 1.26
@@ -110,6 +120,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAddFilterItem(mArguments: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Fires event <code>removeFilterItem</code> to attached listeners.
     * @since 1.26
@@ -117,6 +128,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireRemoveFilterItem(mArguments: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Fires event <code>updateFilterItem</code> to attached listeners.
     * @since 1.26
@@ -124,11 +136,13 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUpdateFilterItem(mArguments: js.Any): P13nFilterPanel = js.native
+  
   /**
     * Returns the array of conditions.
     * @since 1.26
     */
   def getConditions(): Unit = js.native
+  
   /**
     * Gets current value of property <code>containerQuery</code>.Defines if the <code>mediaQuery</code> or
     * a <code>ContainerResize</code> is used for layout update. If the<code>ConditionPanel</code> is used
@@ -137,6 +151,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Value of property <code>containerQuery</code>
     */
   def getContainerQuery(): Boolean = js.native
+  
   /**
     * Getter for the exclude operations.
     * @since 1.26
@@ -145,11 +160,13 @@ trait P13nFilterPanel extends P13nPanel {
     * <code>sap.m.P13nConditionOperation.EQ</code>]
     */
   def getExcludeOperations(the: String): js.Array[_] = js.native
+  
   /**
     * Gets content of aggregation <code>filterItems</code>.Defines filter items.
     * @since 1.26
     */
   def getFilterItems(): js.Array[P13nFilterItem] = js.native
+  
   /**
     * Getter for the include operations.
     * @since 1.26
@@ -158,6 +175,7 @@ trait P13nFilterPanel extends P13nPanel {
     * <code>sap.m.P13nConditionOperation.EQ</code>]
     */
   def getIncludeOperations(the: String): js.Any = js.native
+  
   /**
     * Gets current value of property <code>layoutMode</code>.Can be used to control the layout behavior.
     * Default is "" which will automatically change the layout. With "Desktop", "Table"or"Phone" you can
@@ -166,6 +184,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Value of property <code>layoutMode</code>
     */
   def getLayoutMode(): String = js.native
+  
   /**
     * Gets current value of property <code>maxExcludes</code>.Defines the maximum number of exclude
     * filters.Default value is <code>-1</code>.
@@ -173,6 +192,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Value of property <code>maxExcludes</code>
     */
   def getMaxExcludes(): String = js.native
+  
   /**
     * Gets current value of property <code>maxIncludes</code>.Defines the maximum number of include
     * filters.Default value is <code>-1</code>.
@@ -180,6 +200,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Value of property <code>maxIncludes</code>
     */
   def getMaxIncludes(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.m.P13nFilterItem</code> in the aggregation
     * <code>filterItems</code>.and returns its index if found or -1 otherwise.
@@ -188,6 +209,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfFilterItem(oFilterItem: P13nFilterItem): Double = js.native
+  
   /**
     * Inserts a filterItem into the aggregation <code>filterItems</code>.
     * @since 1.26
@@ -199,6 +221,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertFilterItem(oFilterItem: P13nFilterItem, iIndex: Double): P13nFilterPanel = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>filterItems</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -206,6 +229,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllFilterItems(): js.Array[P13nFilterItem] = js.native
+  
   def removeFilterItem(vFilterItem: String): P13nFilterItem = js.native
   /**
     * Removes a filterItem from the aggregation <code>filterItems</code>.
@@ -215,16 +239,19 @@ trait P13nFilterPanel extends P13nPanel {
     */
   def removeFilterItem(vFilterItem: Double): P13nFilterItem = js.native
   def removeFilterItem(vFilterItem: P13nFilterItem): P13nFilterItem = js.native
+  
   /**
     * Removes all invalid conditions.
     * @since 1.28
     */
   def removeInvalidConditions(): Unit = js.native
+  
   /**
     * Removes all errors and warnings states from of all filter conditions.
     * @since 1.28
     */
   def removeValidationErrors(): Unit = js.native
+  
   /**
     * Sets the array of conditions.
     * @since 1.26
@@ -232,6 +259,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns this for chaining
     */
   def setConditions(aConditions: js.Array[_]): P13nFilterPanel = js.native
+  
   /**
     * Sets a new value for property <code>containerQuery</code>.Defines if the <code>mediaQuery</code> or
     * a <code>ContainerResize</code> is used for layout update. If the<code>ConditionPanel</code> is used
@@ -243,6 +271,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContainerQuery(bContainerQuery: Boolean): P13nFilterPanel = js.native
+  
   /**
     * Setter for the supported exclude operations array.
     * @since 1.26
@@ -251,6 +280,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @param the type for which the operations are defined
     */
   def setExcludeOperations(array: js.Array[_], the: String): Unit = js.native
+  
   /**
     * Setter for the supported Include operations array.
     * @since 1.26
@@ -259,6 +289,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @param the type for which the operations are defined
     */
   def setIncludeOperations(array: js.Array[_], the: String): Unit = js.native
+  
   /**
     * Sets a new value for property <code>layoutMode</code>.Can be used to control the layout behavior.
     * Default is "" which will automatically change the layout. With "Desktop", "Table"or"Phone" you can
@@ -269,6 +300,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLayoutMode(sLayoutMode: String): P13nFilterPanel = js.native
+  
   /**
     * Sets a new value for property <code>maxExcludes</code>.Defines the maximum number of exclude
     * filters.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -278,6 +310,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxExcludes(sMaxExcludes: String): P13nFilterPanel = js.native
+  
   /**
     * Sets a new value for property <code>maxIncludes</code>.Defines the maximum number of include
     * filters.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -287,12 +320,14 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxIncludes(sMaxIncludes: String): P13nFilterPanel = js.native
+  
   /**
     * Unbinds aggregation <code>filterItems</code> from model data.
     * @since 1.26
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindFilterItems(): P13nFilterPanel = js.native
+  
   /**
     * Checks if the entered and modified conditions are correct, marks invalid fields in yellow (warning).
     * @since 1.26
@@ -300,4 +335,3 @@ trait P13nFilterPanel extends P13nPanel {
     */
   def validateConditions(): Boolean = js.native
 }
-

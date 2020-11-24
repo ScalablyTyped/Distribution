@@ -11,7 +11,7 @@ A simple way to extract out all the contents of a .gitconfig file and return as 
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 145 |
-| # downloads        | 259705 |
+| # downloads        | 266556 |
 | # stars            | 0 |
 
 ## Links

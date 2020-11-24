@@ -2,14 +2,14 @@ package typings.winrt.Windows.Foundation.Metadata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GCPressureAmount extends js.Object
-
 @JSGlobal("Windows.Foundation.Metadata.GCPressureAmount")
 @js.native
 object GCPressureAmount extends js.Object {
+  
   @js.native
   sealed trait high extends GCPressureAmount
   
@@ -18,6 +18,4 @@ object GCPressureAmount extends js.Object {
   
   @js.native
   sealed trait medium extends GCPressureAmount
-  
 }
-

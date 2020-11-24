@@ -7,11 +7,12 @@ import typings.topojsonSpecification.mod.Properties
 import typings.topojsonSpecification.mod.Topology
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("topojson", "meshArcs")
 @js.native
 object meshArcs extends js.Object {
+  
   def apply(topology: Topology[Objects[Properties]]): MultiLineString[js.Object] = js.native
   def apply(
     topology: Topology[Objects[Properties]],
@@ -25,4 +26,3 @@ object meshArcs extends js.Object {
     filter: js.Function2[/* a */ GeometryObject[js.Object], /* b */ GeometryObject[js.Object], Boolean]
   ): MultiLineString[js.Object] = js.native
 }
-

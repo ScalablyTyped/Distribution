@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.ZoomProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.Zoom")
 @js.native
@@ -16,4 +16,3 @@ class ZoomCls ()
   extends typings.arcgisJsApi.esri.Zoom {
   def this(properties: ZoomProperties) = this()
 }
-

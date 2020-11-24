@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjSearchFilter filter objects used to define search criteria.
@@ -38,6 +38,7 @@ Instantiable5[
       /* value2 */ String, 
       js.Any
     ] {
+  
   /**
     * Return the join id for this search filter.
     * @return {string}
@@ -49,6 +50,7 @@ Instantiable5[
     * @return
     */
   def getJoin(): String = js.native
+  
   /**
     * Return the name of this search filter.
     * @return {string}
@@ -60,6 +62,7 @@ Instantiable5[
     * @return
     */
   def getName(): String = js.native
+  
   /**
     * Return the filter operator used.
     * @return {string}
@@ -72,4 +75,3 @@ Instantiable5[
     */
   def getOperator(): String = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/RenderPipeline/index", "SSAORenderingPipeline")
 @js.native
@@ -20,4 +20,3 @@ class SSAORenderingPipeline protected ()
   def this(name: String, scene: Scene, ratio: js.Any) = this()
   def this(name: String, scene: Scene, ratio: js.Any, cameras: js.Array[Camera]) = this()
 }
-

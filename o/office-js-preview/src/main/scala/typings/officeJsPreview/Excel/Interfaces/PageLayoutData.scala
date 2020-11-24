@@ -61,11 +61,12 @@ import typings.officeJsPreview.officeJsPreviewStrings.Tabloid
 import typings.officeJsPreview.officeJsPreviewStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pageLayout.toJSON()`. */
 @js.native
 trait PageLayoutData extends js.Object {
+  
   /**
     *
     * The worksheet's black and white print option.
@@ -73,6 +74,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var blackAndWhite: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * The worksheet's bottom page margin to use for printing in points.
@@ -80,6 +82,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var bottomMargin: js.UndefOr[Double] = js.native
+  
   /**
     *
     * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
@@ -87,6 +90,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var centerHorizontally: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
@@ -94,6 +98,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var centerVertically: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * The worksheet's draft mode option. If true the sheet will be printed without graphics.
@@ -101,6 +106,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var draftMode: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * The worksheet's first page number to print. Null value represents "auto" page numbering.
@@ -108,6 +114,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var firstPageNumber: js.UndefOr[Double | _empty] = js.native
+  
   /**
     *
     * The worksheet's footer margin, in points, for use when printing.
@@ -115,6 +122,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var footerMargin: js.UndefOr[Double] = js.native
+  
   /**
     *
     * The worksheet's header margin, in points, for use when printing.
@@ -122,6 +130,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var headerMargin: js.UndefOr[Double] = js.native
+  
   /**
     *
     * Header and footer configuration for the worksheet.
@@ -129,6 +138,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var headersFooters: js.UndefOr[HeaderFooterGroupData] = js.native
+  
   /**
     *
     * The worksheet's left margin, in points, for use when printing.
@@ -136,6 +146,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var leftMargin: js.UndefOr[Double] = js.native
+  
   /**
     *
     * The worksheet's orientation of the page.
@@ -143,6 +154,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var orientation: js.UndefOr[PageOrientation | Portrait | Landscape] = js.native
+  
   /**
     *
     * The worksheet's paper size of the page.
@@ -152,6 +164,7 @@ trait PageLayoutData extends js.Object {
   var paperSize: js.UndefOr[
     PaperType | Letter | LetterSmall | Tabloid | Ledger | Legal | Statement | Executive | A3 | A4 | A4Small | A5 | B4 | B5 | Folio | Quatro | Paper10x14 | Paper11x17 | Note | Envelope9 | Envelope10 | Envelope11 | Envelope12 | Envelope14 | Csheet | Dsheet | Esheet | EnvelopeDL | EnvelopeC5 | EnvelopeC3 | EnvelopeC4 | EnvelopeC6 | EnvelopeC65 | EnvelopeB4 | EnvelopeB5 | EnvelopeB6 | EnvelopeItaly | EnvelopeMonarch | EnvelopePersonal | FanfoldUS | FanfoldStdGerman | FanfoldLegalGerman
   ] = js.native
+  
   /**
     *
     * Specifies if the worksheet's comments should be displayed when printing.
@@ -159,6 +172,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var printComments: js.UndefOr[PrintComments | NoComments | EndSheet | InPlace] = js.native
+  
   /**
     *
     * The worksheet's print errors option.
@@ -166,6 +180,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var printErrors: js.UndefOr[PrintErrorType | AsDisplayed | Blank | Dash | NotAvailable] = js.native
+  
   /**
     *
     * Specifies if the worksheet's gridlines will be printed.
@@ -173,6 +188,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var printGridlines: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * Specifies if the worksheet's headings will be printed.
@@ -180,6 +196,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var printHeadings: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
@@ -187,6 +204,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var printOrder: js.UndefOr[PrintOrder | DownThenOver | OverThenDown] = js.native
+  
   /**
     *
     * The worksheet's right margin, in points, for use when printing.
@@ -194,6 +212,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var rightMargin: js.UndefOr[Double] = js.native
+  
   /**
     *
     * The worksheet's top margin, in points, for use when printing.
@@ -201,6 +220,7 @@ trait PageLayoutData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var topMargin: js.UndefOr[Double] = js.native
+  
   /**
     *
     * The worksheet's print zoom options.
@@ -210,107 +230,149 @@ trait PageLayoutData extends js.Object {
     */
   var zoom: js.UndefOr[PageLayoutZoomOptions] = js.native
 }
-
 object PageLayoutData {
+  
   @scala.inline
   def apply(): PageLayoutData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageLayoutData]
   }
+  
   @scala.inline
   implicit class PageLayoutDataOps[Self <: PageLayoutData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBlackAndWhite(value: Boolean): Self = this.set("blackAndWhite", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBlackAndWhite: Self = this.set("blackAndWhite", js.undefined)
+    
     @scala.inline
     def setBottomMargin(value: Double): Self = this.set("bottomMargin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBottomMargin: Self = this.set("bottomMargin", js.undefined)
+    
     @scala.inline
     def setCenterHorizontally(value: Boolean): Self = this.set("centerHorizontally", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCenterHorizontally: Self = this.set("centerHorizontally", js.undefined)
+    
     @scala.inline
     def setCenterVertically(value: Boolean): Self = this.set("centerVertically", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCenterVertically: Self = this.set("centerVertically", js.undefined)
+    
     @scala.inline
     def setDraftMode(value: Boolean): Self = this.set("draftMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDraftMode: Self = this.set("draftMode", js.undefined)
+    
     @scala.inline
     def setFirstPageNumber(value: Double | _empty): Self = this.set("firstPageNumber", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFirstPageNumber: Self = this.set("firstPageNumber", js.undefined)
+    
     @scala.inline
     def setFooterMargin(value: Double): Self = this.set("footerMargin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFooterMargin: Self = this.set("footerMargin", js.undefined)
+    
     @scala.inline
     def setHeaderMargin(value: Double): Self = this.set("headerMargin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeaderMargin: Self = this.set("headerMargin", js.undefined)
+    
     @scala.inline
     def setHeadersFooters(value: HeaderFooterGroupData): Self = this.set("headersFooters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeadersFooters: Self = this.set("headersFooters", js.undefined)
+    
     @scala.inline
     def setLeftMargin(value: Double): Self = this.set("leftMargin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeftMargin: Self = this.set("leftMargin", js.undefined)
+    
     @scala.inline
     def setOrientation(value: PageOrientation | Portrait | Landscape): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrientation: Self = this.set("orientation", js.undefined)
+    
     @scala.inline
     def setPaperSize(
       value: PaperType | Letter | LetterSmall | Tabloid | Ledger | Legal | Statement | Executive | A3 | A4 | A4Small | A5 | B4 | B5 | Folio | Quatro | Paper10x14 | Paper11x17 | Note | Envelope9 | Envelope10 | Envelope11 | Envelope12 | Envelope14 | Csheet | Dsheet | Esheet | EnvelopeDL | EnvelopeC5 | EnvelopeC3 | EnvelopeC4 | EnvelopeC6 | EnvelopeC65 | EnvelopeB4 | EnvelopeB5 | EnvelopeB6 | EnvelopeItaly | EnvelopeMonarch | EnvelopePersonal | FanfoldUS | FanfoldStdGerman | FanfoldLegalGerman
     ): Self = this.set("paperSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePaperSize: Self = this.set("paperSize", js.undefined)
+    
     @scala.inline
     def setPrintComments(value: PrintComments | NoComments | EndSheet | InPlace): Self = this.set("printComments", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrintComments: Self = this.set("printComments", js.undefined)
+    
     @scala.inline
     def setPrintErrors(value: PrintErrorType | AsDisplayed | Blank | Dash | NotAvailable): Self = this.set("printErrors", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrintErrors: Self = this.set("printErrors", js.undefined)
+    
     @scala.inline
     def setPrintGridlines(value: Boolean): Self = this.set("printGridlines", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrintGridlines: Self = this.set("printGridlines", js.undefined)
+    
     @scala.inline
     def setPrintHeadings(value: Boolean): Self = this.set("printHeadings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrintHeadings: Self = this.set("printHeadings", js.undefined)
+    
     @scala.inline
     def setPrintOrder(value: PrintOrder | DownThenOver | OverThenDown): Self = this.set("printOrder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrintOrder: Self = this.set("printOrder", js.undefined)
+    
     @scala.inline
     def setRightMargin(value: Double): Self = this.set("rightMargin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRightMargin: Self = this.set("rightMargin", js.undefined)
+    
     @scala.inline
     def setTopMargin(value: Double): Self = this.set("topMargin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTopMargin: Self = this.set("topMargin", js.undefined)
+    
     @scala.inline
     def setZoom(value: PageLayoutZoomOptions): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZoom: Self = this.set("zoom", js.undefined)
   }
-  
 }
-

@@ -7,11 +7,12 @@ import typings.node.urlMod.URL_
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify-express-utils/dts/results", JSImport.Namespace)
 @js.native
 object resultsMod extends js.Object {
+  
   @js.native
   class BadRequestErrorMessageResult protected () extends default {
     def this(message: String, apiController: BaseHttpController) = this()
@@ -90,6 +91,4 @@ object resultsMod extends js.Object {
     extends typings.inversifyExpressUtils.statusCodeResultMod.default {
     def this(statusCode: Double, apiController: BaseHttpController) = this()
   }
-  
 }
-

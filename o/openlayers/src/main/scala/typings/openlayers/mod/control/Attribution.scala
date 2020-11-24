@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapEvent
 import typings.openlayers.mod.olx.control.AttributionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   */
 class Attribution () extends Control {
   def this(opt_options: AttributionOptions) = this()
+  
   /**
     * Return `true` when the attribution is currently collapsed or `false`
     * otherwise.
@@ -37,12 +38,14 @@ class Attribution () extends Control {
     * @api stable
     */
   def getCollapsed(): Boolean = js.native
+  
   /**
     * Return `true` if the attribution is collapsible, `false` otherwise.
     * @return True if the widget is collapsible.
     * @api stable
     */
   def getCollapsible(): Boolean = js.native
+  
   /**
     * Collapse or expand the attribution according to the passed parameter. Will
     * not do anything if the attribution isn't collapsible or if the current
@@ -51,6 +54,7 @@ class Attribution () extends Control {
     * @api stable
     */
   def setCollapsed(collapsed: Boolean): Unit = js.native
+  
   /**
     * Set whether the attribution should be collapsible.
     * @param collapsible True if the widget is collapsible.
@@ -58,11 +62,11 @@ class Attribution () extends Control {
     */
   def setCollapsible(collapsible: Boolean): Unit = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "control.Attribution")
 @js.native
 object Attribution extends js.Object {
+  
   /**
     * Update the attribution element.
     * @param mapEvent Map event.
@@ -70,4 +74,3 @@ object Attribution extends js.Object {
     */
   def render(mapEvent: MapEvent): Unit = js.native
 }
-

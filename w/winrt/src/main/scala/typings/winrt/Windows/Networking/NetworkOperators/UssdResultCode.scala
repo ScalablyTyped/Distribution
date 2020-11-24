@@ -2,14 +2,14 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UssdResultCode extends js.Object
-
 @JSGlobal("Windows.Networking.NetworkOperators.UssdResultCode")
 @js.native
 object UssdResultCode extends js.Object {
+  
   @js.native
   sealed trait actionRequired extends UssdResultCode
   
@@ -27,6 +27,4 @@ object UssdResultCode extends js.Object {
   
   @js.native
   sealed trait terminated extends UssdResultCode
-  
 }
-

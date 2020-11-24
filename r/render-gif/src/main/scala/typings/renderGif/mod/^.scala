@@ -3,11 +3,12 @@ package typings.renderGif.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("render-gif", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Render a gif and provide frames to draw.
   @param data The gif data. Can be anything array-like such as a Buffer, Array or Uint8Array.
@@ -27,4 +28,3 @@ object ^ extends js.Object {
     options: Options
   ): ReturnValue = js.native
 }
-

@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.text.TextDocument
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * this is a simple interface to load components by an URL into a frame environment
@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XComponentLoader extends XInterface {
+  
   /**
     * loads a component specified by an URL into the specified new or existing frame.
     * @param URL specifies the URL of the document to load  To create new documents, use "private:factory/scalc", "private:factory/swriter", etc. Other specia
@@ -64,4 +65,3 @@ trait XComponentLoader extends XInterface {
     Arguments: SeqEquiv[PropertyValue]
   ): TextDocument = js.native
 }
-

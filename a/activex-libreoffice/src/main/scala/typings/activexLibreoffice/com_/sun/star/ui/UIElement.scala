@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a user interface element.
@@ -25,8 +25,8 @@ trait UIElement
      with XInitialization
      with XUpdatable
      with XComponent
-
 object UIElement {
+  
   @scala.inline
   def apply(
     Frame: XFrame,
@@ -47,4 +47,3 @@ object UIElement {
     __obj.asInstanceOf[UIElement]
   }
 }
-

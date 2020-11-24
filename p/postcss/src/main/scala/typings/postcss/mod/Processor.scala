@@ -2,7 +2,7 @@ package typings.postcss.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Processor instance contains plugins to process CSS. Create one
@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Processor extends _AcceptedPlugin {
+  
   /**
     * Contains plugins added to this processor.
     */
   var plugins: js.Array[Plugin_[_]] = js.native
-  /**
-    * Contains the current version of PostCSS (e.g., "4.0.5").
-    */
-  var version: String = js.native
+  
   def process(css: LazyResult): LazyResult = js.native
   def process(css: LazyResult, options: ProcessOptions): LazyResult = js.native
   /**
@@ -35,10 +33,15 @@ trait Processor extends _AcceptedPlugin {
   def process(css: Result, options: ProcessOptions): LazyResult = js.native
   def process(css: Root_): LazyResult = js.native
   def process(css: Root_, options: ProcessOptions): LazyResult = js.native
+  
   /**
     * Adds a plugin to be used as a CSS processor. Plugins can also be
     * added by passing them as arguments when creating a postcss instance.
     */
   def use(plugin: AcceptedPlugin): Processor = js.native
+  
+  /**
+    * Contains the current version of PostCSS (e.g., "4.0.5").
+    */
+  var version: String = js.native
 }
-

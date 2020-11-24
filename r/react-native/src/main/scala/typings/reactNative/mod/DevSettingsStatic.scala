@@ -2,10 +2,11 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DevSettingsStatic extends NativeEventEmitter {
+  
   /**
     * Adds a custom menu item to the developer menu.
     *
@@ -13,6 +14,7 @@ trait DevSettingsStatic extends NativeEventEmitter {
     * @param handler - The callback invoked when pressing the menu item.
     */
   def addMenuItem(title: String, handler: js.Function0[_]): Unit = js.native
+  
   /**
     * Reload the application.
     *
@@ -21,4 +23,3 @@ trait DevSettingsStatic extends NativeEventEmitter {
   def reload(): Unit = js.native
   def reload(reason: String): Unit = js.native
 }
-

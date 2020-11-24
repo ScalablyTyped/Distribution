@@ -10,13 +10,13 @@ Compound File Binary File Format extractor
 | ------------------ | :-------------: |
 | Full name          | cfb |
 | Keywords           | cfb, compression, office |
-| # releases         | 12 |
-| # dependents       | 120 |
-| # downloads        | 17934469 |
+| # releases         | 6 |
+| # dependents       | 173 |
+| # downloads        | 31704394 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](http://sheetjs.com/opensource)
+- [Homepage](http://sheetjs.com/)
 - [Bugs](https://github.com/SheetJS/js-cfb/issues)
 - [Repository](https://github.com/SheetJS/js-cfb)
 - [Npm](https://www.npmjs.com/package/cfb)

@@ -9,14 +9,16 @@ import typings.openfin.shapesMod.Bounds
 import typings.openfin.windowWindowMod.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/external-window/external-window", JSImport.Namespace)
 @js.native
 object externalWindowExternalWindowMod extends js.Object {
+  
   @js.native
   class ExternalWindow protected () extends EmitterBase[ExternalWindowEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
+    
     /**
       * Brings the external window to the front of the window stack.
       * @return {Promise.<void>}
@@ -24,6 +26,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.bringToFront
       */
     def bringToFront(): js.Promise[Unit] = js.native
+    
     /**
       * Closes the external window.
       * @return {Promise.<void>}
@@ -31,6 +34,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.close
       */
     def close(): js.Promise[Unit] = js.native
+    
     /**
       * Flashes the external window’s frame and taskbar icon until stopFlashing is called.
       * @return {Promise.<void>}
@@ -38,6 +42,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.flash
       */
     def flash(): js.Promise[Unit] = js.native
+    
     /**
       * Gives focus to the external window.
       * @return {Promise.<void>}
@@ -46,6 +51,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.focus
       */
     def focus(): js.Promise[Unit] = js.native
+    
     /**
       * Gets the current bounds (top, left, etc.) of the external window.
       * @return {Promise.<Bounds>}
@@ -53,6 +59,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.getBounds
       */
     def getBounds(): js.Promise[Bounds] = js.native
+    
     /**
       * Retrieves an array containing wrapped external windows that are grouped
       * with this external window. If a window is not in a group an empty array
@@ -62,6 +69,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.getGroup
       */
     def getGroup(): js.Promise[js.Array[ExternalWindow | Window]] = js.native
+    
     /**
       * Gets an information object for the window.
       * @return {Promise.<any>}
@@ -69,6 +77,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.getInfo
       */
     def getInfo(): js.Promise[_] = js.native
+    
     /**
       * Gets an external window's options.
       * @return {Promise.<any>}
@@ -76,6 +85,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.getOptions
       */
     def getOptions(): js.Promise[_] = js.native
+    
     /**
       * Gets the current state ("minimized", "maximized", or "restored") of
       * the external window.
@@ -84,6 +94,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.getState
       */
     def getState(): js.Promise[String] = js.native
+    
     /**
       * Hides the external window.
       * @return {Promise.<void>}
@@ -91,6 +102,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.hide
       */
     def hide(): js.Promise[Unit] = js.native
+    
     /**
       * Determines if the external window is currently showing.
       * @return {Promise.<boolean>}
@@ -98,6 +110,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.isShowing
       */
     def isShowing(): js.Promise[Boolean] = js.native
+    
     /**
       * Joins the same window group as the specified window. Currently unsupported (method will nack).
       * @param { _Window | ExternalWindow } target The window whose group is to be joined
@@ -107,6 +120,7 @@ object externalWindowExternalWindowMod extends js.Object {
       */
     def joinGroup(target: ExternalWindow): js.Promise[Unit] = js.native
     def joinGroup(target: Window): js.Promise[Unit] = js.native
+    
     /**
       * Leaves the current window group so that the window can be moved
       * independently of those in the group.
@@ -115,6 +129,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.leaveGroup
       */
     def leaveGroup(): js.Promise[Unit] = js.native
+    
     /**
       * Maximizes the external window.
       * @return {Promise.<void>}
@@ -122,6 +137,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.maximize
       */
     def maximize(): js.Promise[Unit] = js.native
+    
     /**
       * Merges the instance's window group with the same window group as the specified window
       * @param { _Window | ExternalWindow } target The window whose group is to be merged with
@@ -131,6 +147,7 @@ object externalWindowExternalWindowMod extends js.Object {
       */
     def mergeGroups(target: ExternalWindow): js.Promise[Unit] = js.native
     def mergeGroups(target: Window): js.Promise[Unit] = js.native
+    
     /**
       * Minimizes the external window.
       * @return {Promise.<void>}
@@ -138,6 +155,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.minimize
       */
     def minimize(): js.Promise[Unit] = js.native
+    
     /**
       * Moves the external window by a specified amount.
       * @param { number } deltaLeft The change in the left position of the window
@@ -147,6 +165,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.moveBy
       */
     def moveBy(deltaLeft: Double, deltaTop: Double): js.Promise[Unit] = js.native
+    
     /**
       * Moves the external window to a specified location.
       * @param { number } left The left position of the window
@@ -156,6 +175,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.moveTo
       */
     def moveTo(left: Double, top: Double): js.Promise[Unit] = js.native
+    
     /**
       * Resizes the external window by a specified amount.
       * @param { number } deltaWidth The change in the width of the window
@@ -168,6 +188,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.resizeBy
       */
     def resizeBy(deltaWidth: Double, deltaHeight: Double, anchor: AnchorType): js.Promise[Unit] = js.native
+    
     /**
       * Resizes the external window to the specified dimensions.
       * @param { number } width The change in the width of the window
@@ -180,6 +201,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.resizeTo
       */
     def resizeTo(width: Double, height: Double, anchor: AnchorType): js.Promise[Unit] = js.native
+    
     /**
       * Restores the external window to its normal state (i.e. unminimized, unmaximized).
       * @return {Promise.<void>}
@@ -187,6 +209,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.restore
       */
     def restore(): js.Promise[Unit] = js.native
+    
     /**
       * Will bring the external window to the front of the entire stack and
       * give it focus.
@@ -195,6 +218,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.setAsForeground
       */
     def setAsForeground(): js.Promise[Unit] = js.native
+    
     /**
       * Sets the external window's size and position.
       * @property { Bounds } bounds
@@ -203,6 +227,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.setBounds
       */
     def setBounds(bounds: Bounds): js.Promise[Unit] = js.native
+    
     /**
       * Shows the external window if it is hidden.
       * @return {Promise.<void>}
@@ -210,6 +235,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.show
       */
     def show(): js.Promise[Unit] = js.native
+    
     /**
       * Shows the external window, if it is hidden, at the specified location.
       * If the toggle parameter is set to true, the external window will
@@ -221,6 +247,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.showAt
       */
     def showAt(left: Double, top: Double): js.Promise[Unit] = js.native
+    
     /**
       * Stops the taskbar icon from flashing.
       * @return {Promise.<void>}
@@ -228,6 +255,7 @@ object externalWindowExternalWindowMod extends js.Object {
       * @tutorial Window.stopFlashing
       */
     def stopFlashing(): js.Promise[Unit] = js.native
+    
     /**
       * Updates the external window using the passed options
       * @param {*} options Changes an external window's options
@@ -240,6 +268,7 @@ object externalWindowExternalWindowMod extends js.Object {
   
   @js.native
   trait ExternalWindowModule extends Base {
+    
     /**
       * Asynchronously returns an external window object that represents
       * an existing external window.<br>
@@ -256,6 +285,4 @@ object externalWindowExternalWindowMod extends js.Object {
   
   @js.native
   class default () extends ExternalWindowModule
-  
 }
-

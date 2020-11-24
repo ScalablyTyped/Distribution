@@ -10,13 +10,15 @@ import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/management/operations", JSImport.Namespace)
 @js.native
 object managementOperationsMod extends js.Object {
+  
   @js.native
   trait ManagementGroups extends js.Object {
+    
     /**
       * Get the details of the management group.
       *
@@ -61,6 +63,7 @@ object managementOperationsMod extends js.Object {
     def get(callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
     def get(options: Expand): js.Promise[ManagementGroupWithHierarchy] = js.native
     def get(options: Expand, callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
+    
     /**
       * Get the details of the management group.
       *
@@ -86,6 +89,7 @@ object managementOperationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
     def getWithHttpOperationResponse(options: Expand): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
+    
     /**
       * List management groups for the authenticated user.
       *
@@ -129,6 +133,7 @@ object managementOperationsMod extends js.Object {
     def list(callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
     def list(options: Skiptoken): js.Promise[ManagementGroupListResult] = js.native
     def list(options: Skiptoken, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
+    
     /**
       * List management groups for the authenticated user.
       *
@@ -168,6 +173,7 @@ object managementOperationsMod extends js.Object {
     def listNext(nextPageLink: String, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
     def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[ManagementGroupListResult] = js.native
     def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
+    
     /**
       * List management groups for the authenticated user.
       *
@@ -188,6 +194,7 @@ object managementOperationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
+    
     /**
       * List management groups for the authenticated user.
       *
@@ -216,6 +223,7 @@ object managementOperationsMod extends js.Object {
   
   @js.native
   trait Operations extends js.Object {
+    
     /**
       * Lists all of the available management REST API operations.
       *
@@ -250,6 +258,7 @@ object managementOperationsMod extends js.Object {
     def list(callback: ServiceCallback[OperationListResult]): Unit = js.native
     def list(options: CustomHeaders): js.Promise[OperationListResult] = js.native
     def list(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    
     /**
       * Lists all of the available management REST API operations.
       *
@@ -287,6 +296,7 @@ object managementOperationsMod extends js.Object {
     def listNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
     def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
     def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    
     /**
       * Lists all of the available management REST API operations.
       *
@@ -306,6 +316,7 @@ object managementOperationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    
     /**
       * Lists all of the available management REST API operations.
       *
@@ -323,6 +334,4 @@ object managementOperationsMod extends js.Object {
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
   }
-  
 }
-

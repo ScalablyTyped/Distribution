@@ -1,18 +1,18 @@
 
 # Scala.js typings for react-native-screens
 
-Typings are for version 1.0.0-alpha.23
+Typings are for version 2.15.0
 
 ## Library description:
-First incomplete navigation solution for your react-native app.
+Native navigation primitives for your React Native app.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-screens |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 28 |
-| # downloads        | 8247188 |
+| # releases         | 71 |
+| # dependents       | 187 |
+| # downloads        | 15152243 |
 | # stars            | 0 |
 
 ## Links

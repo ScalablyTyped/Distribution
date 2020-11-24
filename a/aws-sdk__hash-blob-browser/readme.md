@@ -1,20 +1,24 @@
 
 # Scala.js typings for aws-sdk__hash-blob-browser
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 1.0.0-rc.7
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/hash-blob-browser/rc.svg)](https://www.npmjs.com/package/@aws-sdk/hash-blob-browser) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/hash-blob-browser.svg)](https://www.npmjs.com/package/@aws-
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-blob-browser |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 34 |
 | # dependents       | 2 |
-| # downloads        | 1131 |
+| # downloads        | 2442497 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/hash-blob-browser)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fhash-blob-browser)
     
 

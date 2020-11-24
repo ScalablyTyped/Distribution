@@ -3,7 +3,7 @@ package typings.jupyterlabServices.mod
 import typings.jupyterlabServices.configMod.ConfigWithDefaults.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services", "ConfigWithDefaults")
 @js.native
@@ -14,4 +14,3 @@ class ConfigWithDefaults protected ()
     */
   def this(options: IOptions) = this()
 }
-

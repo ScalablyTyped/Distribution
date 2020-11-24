@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-big-scheduler"
-version := "0.2-dt-20200515Z-c27428"
+version := "0.2-dt-20201117Z-436dec"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "moment" % "2.27.0-2a4db1",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "moment" % "2.29.1-01272f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

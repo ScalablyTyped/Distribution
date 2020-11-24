@@ -2,7 +2,7 @@ package typings.aqb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PartialStatement
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PartialStatement extends js.Object {
+  
   /**
     * COLLECT
     *
@@ -50,6 +51,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def collect(varname: js.Any, expr: js.Any): CollectExpression = js.native
+  
   /**
     * COLLECT
     *
@@ -83,6 +85,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def collectWithCountInto(varname: js.Any): CollectWithCountIntoExpression = js.native
+  
   /**
     * FILTER expression
     *
@@ -94,6 +97,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def filter(varname: js.Any): FilterExpression = js.native
+  
   /**
     * FOR expression IN collection
     *
@@ -105,6 +109,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def `for`(varname: js.Any): ForRet = js.native
+  
   /**
     * INSERT
     *
@@ -125,6 +130,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def insert(expr: js.Any): InsertRet = js.native
+  
   /**
     * LET varname = expression
     *
@@ -140,6 +146,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def let(varname: js.Object, expr: js.Any): LetExpression = js.native
+  
   /**
     * LIMIT offset, count
     *
@@ -154,6 +161,7 @@ trait PartialStatement extends js.Object {
     */
   def limit(offset: js.Any): LimitExpression = js.native
   def limit(offset: js.Any, count: js.Any): LimitExpression = js.native
+  
   /**
     * REMOVE
     *
@@ -174,6 +182,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def remove(expr: js.Any): RemoveRet = js.native
+  
   /**
     * REPLACE
     *
@@ -202,6 +211,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def replace(expr: js.Any): ReplaceRetWithRet = js.native
+  
   /**
     * RETURN expression
     *
@@ -214,6 +224,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def `return`(x: js.Any): ReturnExpression = js.native
+  
   /**
     * RETURN DISTINCT expression
     *
@@ -225,6 +236,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def returnDistinct(x: js.Any): ReturnExpression = js.native
+  
   /**
     * SORT ...args
     *
@@ -236,6 +248,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def sort(args: js.Any*): SortExpression = js.native
+  
   /**
     * UPDATE
     *
@@ -266,6 +279,7 @@ trait PartialStatement extends js.Object {
     *
     */
   def update(expr: js.Any): UpdateRetWithRet = js.native
+  
   /**
     * UPSERT
     *
@@ -291,4 +305,3 @@ trait PartialStatement extends js.Object {
     */
   def upsert(expr: js.Any): UpsertRet = js.native
 }
-

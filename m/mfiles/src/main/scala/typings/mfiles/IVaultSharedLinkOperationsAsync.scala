@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultSharedLinkOperationsAsync extends js.Object {
+  
   def CreateSharedLink(SharedLinkCreationInfo: ISharedLinkInfo): Unit = js.native
   def CreateSharedLink(
     SharedLinkCreationInfo: ISharedLinkInfo,
@@ -45,6 +46,7 @@ trait IVaultSharedLinkOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DeleteSharedLink(AccessKey: String): Unit = js.native
   def DeleteSharedLink(
     AccessKey: String,
@@ -81,6 +83,7 @@ trait IVaultSharedLinkOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetSharedLink(AccessKey: String): Unit = js.native
   def GetSharedLink(
     AccessKey: String,
@@ -117,6 +120,7 @@ trait IVaultSharedLinkOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetSharedLinks(CreatedByUser: Double): Unit = js.native
   def GetSharedLinks(
     CreatedByUser: Double,
@@ -153,6 +157,7 @@ trait IVaultSharedLinkOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetSharedLinksByObject(ObjID: IObjID): Unit = js.native
   def GetSharedLinksByObject(
     ObjID: IObjID,
@@ -190,4 +195,3 @@ trait IVaultSharedLinkOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

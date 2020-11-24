@@ -9,11 +9,12 @@ import typings.botvs.botvsStrings.sha256
 import typings.botvs.botvsStrings.sha512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("HMAC")
 @js.native
 object HMAC extends js.Object {
+  
   def apply(Algo: md5, OutputAlgo: base64, Data: String, password: String): String = js.native
   /**
     * 支持 md5/sha256/sha512/sha1 的HMAC加密计算, 只支持实盘
@@ -40,4 +41,3 @@ object HMAC extends js.Object {
   def apply(Algo: sha512, OutputAlgo: hex, Data: String, password: String): String = js.native
   def apply(Algo: sha512, OutputAlgo: raw, Data: String, password: String): String = js.native
 }
-

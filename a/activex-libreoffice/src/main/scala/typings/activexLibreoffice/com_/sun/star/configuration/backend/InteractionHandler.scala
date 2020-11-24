@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interaction request handler that lets the user handle a number of well known requests via GUI dialogs.
@@ -27,8 +27,8 @@ import scala.scalajs.js.annotation._
 trait InteractionHandler
   extends XInteractionHandler
      with XInitialization
-
 object InteractionHandler {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -41,4 +41,3 @@ object InteractionHandler {
     __obj.asInstanceOf[InteractionHandler]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.dbJs.DbJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DistinctQuery[T]
@@ -13,4 +13,3 @@ trait DistinctQuery[T]
      with ModifiableQuery[T]
      with MappableQuery[T]
      with CountableQuery[T]
-

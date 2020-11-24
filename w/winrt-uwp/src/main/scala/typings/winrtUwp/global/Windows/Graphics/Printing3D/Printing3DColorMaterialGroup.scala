@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Graphics.Printing3D
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of color materials used in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DColorMaterialGroup")
@@ -15,4 +15,3 @@ class Printing3DColorMaterialGroup protected ()
     */
   def this(MaterialGroupId: Double) = this()
 }
-

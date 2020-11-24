@@ -6,7 +6,7 @@ import typings.kiiCloudSdk.anon.`2`
 import typings.kiiCloudSdk.anon.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Thing object
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiThing ()
   extends typings.kiiCloudSdk.KiiCloud.KiiThing
-
 /* static members */
 @JSGlobal("KiiCloud.KiiThing")
 @js.native
 object KiiThing extends js.Object {
+  
   /**
     * Load thing with thing id given by Kii Cloud.
     * <br>This API is authorized by owner of thing.
@@ -66,6 +66,7 @@ object KiiThing extends js.Object {
     */
   def loadWithThingID(thingID: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
   def loadWithThingID(thingID: String, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
+  
   /**
     * Load thing with given vendor thing id.
     * <br>This API is authorized by owner of thing.
@@ -110,6 +111,7 @@ object KiiThing extends js.Object {
     */
   def loadWithVendorThingID(vendorThingID: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
   def loadWithVendorThingID(vendorThingID: String, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
+  
   /**
     * Register thing in KiiCloud.<br>
     * This API doesnt require users login Anonymous user can register thing.
@@ -188,6 +190,7 @@ object KiiThing extends js.Object {
     */
   def register(fields: KiiThingFields): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
   def register(fields: KiiThingFields, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
+  
   def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
   def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup, callbacks: `3`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
   /**
@@ -242,6 +245,7 @@ object KiiThing extends js.Object {
     */
   def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser, callbacks: `2`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup, callbacks: `3`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
   /**
@@ -296,4 +300,3 @@ object KiiThing extends js.Object {
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser, callbacks: `2`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
 }
-

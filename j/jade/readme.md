@@ -9,13 +9,13 @@ A clean, whitespace-sensitive template language for writing HTML
 | ------------------ | :-------------: |
 | Full name          | jade |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 2821 |
-| # downloads        | 30918714 |
+| # releases         | 0 |
+| # dependents       | 2850 |
+| # downloads        | 36517289 |
 | # stars            | 297 |
 
 ## Links
-- [Homepage](http://jade-lang.com)
+- [Homepage](https://github.com/jadejs/jade#readme)
 - [Bugs](https://github.com/jadejs/jade/issues)
 - [Repository](https://github.com/jadejs/jade)
 - [Npm](https://www.npmjs.com/package/jade)

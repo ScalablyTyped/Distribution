@@ -8,11 +8,12 @@ import typings.sawtoothSdk.protobufMod.ISetting
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "Setting")
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Creates a new Setting instance using the specified properties.
     * @param [properties] Properties to set
@@ -20,6 +21,7 @@ object ^ extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.Setting = js.native
   def create(properties: ISetting): typings.sawtoothSdk.protobufMod.Setting = js.native
+  
   /**
     * Decodes a Setting message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -32,6 +34,7 @@ object ^ extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Setting = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Setting = js.native
+  
   /**
     * Decodes a Setting message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -41,6 +44,7 @@ object ^ extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Setting = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting = js.native
+  
   /**
     * Encodes the specified Setting message. Does not implicitly {@link Setting.verify|verify} messages.
     * @param message Setting message or plain object to encode
@@ -49,6 +53,7 @@ object ^ extends js.Object {
     */
   def encode(message: ISetting): Writer = js.native
   def encode(message: ISetting, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified Setting message, length delimited. Does not implicitly {@link Setting.verify|verify} messages.
     * @param message Setting message or plain object to encode
@@ -57,12 +62,14 @@ object ^ extends js.Object {
     */
   def encodeDelimited(message: ISetting): Writer = js.native
   def encodeDelimited(message: ISetting, writer: Writer): Writer = js.native
+  
   /**
     * Creates a Setting message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Setting
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Setting = js.native
+  
   /**
     * Creates a plain object from a Setting message. Also converts values to other types if specified.
     * @param message Setting
@@ -71,6 +78,7 @@ object ^ extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.Setting): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.Setting, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a Setting message.
     * @param message Plain object to verify
@@ -78,4 +86,3 @@ object ^ extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

@@ -1,10 +1,10 @@
 package typings.sequelize.mod
 
 import typings.sequelize.anon.Query
-import typings.sequelize.anon.`1`
+import typings.sequelize.anon.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the main class, the entry point to sequelize. To use it, you just need to
@@ -22,18 +22,12 @@ import scala.scalajs.js.annotation._
 trait Sequelize
   extends SequelizeStaticAndInstance
      with Hooks[js.Any] {
+  
   /**
     * A reference to Sequelize constructor from sequelize. Useful for accessing DataTypes, Errors etc.
     */
   var Sequelize: SequelizeStatic = js.native
-  /**
-    * Defined models.
-    */
-  var models: ModelsHashInterface = js.native
-  /**
-    * Defined options.
-    */
-  var options: Options = js.native
+  
   /**
     * Test the connection by trying to authenticate
     *
@@ -41,6 +35,7 @@ trait Sequelize
     */
   def authenticate(): typings.bluebird.mod.^[Unit] = js.native
   def authenticate(options: QueryOptions): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Close all connections used by this sequelize instance, and free all references so the instance can be
     * garbage collected.
@@ -49,6 +44,7 @@ trait Sequelize
     * instances, and want to garbage collect some of them.
     */
   def close(): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Create a new database schema.
     *
@@ -60,11 +56,13 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def createSchema(schema: String, options: `1`): typings.bluebird.mod.^[_] = js.native
+  def createSchema(schema: String, options: `2`): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Returns the database version
     */
   def databaseVersion(): typings.bluebird.mod.^[String] = js.native
+  
   /**
     * Define a new model, representing a table in the DB.
     *
@@ -123,6 +121,7 @@ trait Sequelize
     attributes: DefineModelAttributes[TCreationAttributes],
     options: DefineOptions[TInstance]
   ): Model[TInstance, TAttributes, TCreationAttributes] = js.native
+  
   /**
     * Drop all tables defined through this sequelize instance. This is done by calling Model.drop on each model
     * @see {Model#drop} for options
@@ -131,6 +130,7 @@ trait Sequelize
     */
   def drop(): typings.bluebird.mod.^[_] = js.native
   def drop(options: DropOptions): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Drop all schemas
     *
@@ -141,7 +141,8 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropAllSchemas(options: `1`): typings.bluebird.mod.^[_] = js.native
+  def dropAllSchemas(options: `2`): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Drop a single schema
     *
@@ -153,21 +154,25 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropSchema(schema: String, options: `1`): typings.bluebird.mod.^[_] = js.native
+  def dropSchema(schema: String, options: `2`): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Escape value.
     *
     * @param value Value that needs to be escaped
     */
   def escape(value: String): String = js.native
+  
   /**
     * Returns the specified dialect.
     */
   def getDialect(): String = js.native
+  
   /**
     * Returns an instance of QueryInterface.
     */
   def getQueryInterface(): QueryInterface = js.native
+  
   /**
     * Imports a model defined in another file
     *
@@ -193,18 +198,31 @@ trait Sequelize
       Model[TInstance, TAttributes, TAttributes]
     ]
   ): Model[TInstance, TAttributes, TAttributes] = js.native
+  
   /**
     * Checks whether a model with the given name is defined
     *
     * @param modelName The name of a model defined with Sequelize.define
     */
   def isDefined(modelName: String): Boolean = js.native
+  
   /**
     * Fetch a Model which is already defined
     *
     * @param modelName The name of a model defined with Sequelize.define
     */
   def model[TInstance, TAttributes](modelName: String): Model[TInstance, TAttributes, TAttributes] = js.native
+  
+  /**
+    * Defined models.
+    */
+  var models: ModelsHashInterface = js.native
+  
+  /**
+    * Defined options.
+    */
+  var options: Options = js.native
+  
   /**
     * Execute a query on the DB, with the posibility to bypass all the sequelize goodness.
     *
@@ -231,10 +249,12 @@ trait Sequelize
   def query(sql: String, options: QueryOptions): typings.bluebird.mod.^[_] = js.native
   def query(sql: Query): typings.bluebird.mod.^[_] = js.native
   def query(sql: Query, options: QueryOptions): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Get the fn for random based on the dialect
     */
   def random(): fn = js.native
+  
   /**
     * Execute a query which would set an environment or user variable. The variables are set per connection,
     * so this function needs a transaction.
@@ -245,6 +265,7 @@ trait Sequelize
     * @param options Query options.
     */
   def set(variables: js.Object, options: QueryOptionsTransactionRequired): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Show all defined schemas
     *
@@ -255,7 +276,8 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def showAllSchemas(options: `1`): typings.bluebird.mod.^[_] = js.native
+  def showAllSchemas(options: `2`): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Sync all defined models to the DB.
     *
@@ -263,6 +285,7 @@ trait Sequelize
     */
   def sync(): typings.bluebird.mod.^[_] = js.native
   def sync(options: SyncOptions): typings.bluebird.mod.^[_] = js.native
+  
   def transaction(): typings.bluebird.mod.^[Transaction] = js.native
   def transaction(options: TransactionOptions): typings.bluebird.mod.^[Transaction] = js.native
   def transaction[T](autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): typings.bluebird.mod.^[T] = js.native
@@ -312,6 +335,7 @@ trait Sequelize
     * @param autoCallback Callback for the transaction
     */
   def transaction[T](options: TransactionOptions, autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): typings.bluebird.mod.^[T] = js.native
+  
   /**
     * Truncate all tables defined through the sequelize models. This is done
     * by calling Model.truncate() on each model.
@@ -322,7 +346,7 @@ trait Sequelize
     */
   def truncate(): typings.bluebird.mod.^[_] = js.native
   def truncate(options: DestroyOptions): typings.bluebird.mod.^[_] = js.native
+  
   def validate(): typings.bluebird.mod.^[ValidationError] = js.native
   def validate(options: QueryOptions): typings.bluebird.mod.^[ValidationError] = js.native
 }
-

@@ -11,8 +11,8 @@ Escape regular expression special characters
 | Full name          | escape-regexp |
 | Keywords           | escape, regexp, utility |
 | # releases         | 0 |
-| # dependents       | 101 |
-| # downloads        | 16487255 |
+| # dependents       | 103 |
+| # downloads        | 22372465 |
 | # stars            | 2 |
 
 ## Links

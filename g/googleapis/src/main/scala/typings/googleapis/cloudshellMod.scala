@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudshell", JSImport.Namespace)
 @js.native
 object cloudshellMod extends js.Object {
+  
   def cloudshell(options: Options): Cloudshell = js.native
   def cloudshell(options: typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Options): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = js.native
   @JSName("cloudshell")
   def cloudshell_v1(version: v1): Cloudshell = js.native
   @JSName("cloudshell")
   def cloudshell_v1alpha1(version: v1alpha1): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Cloudshell {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudshell]
+            ]
     
     @js.native
     class v1alpha1 protected ()
@@ -37,13 +45,6 @@ object cloudshellMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudshell]
-            ]
-    
     @js.native
     object v1alpha1
       extends TopLevel[
@@ -53,11 +54,11 @@ object cloudshellMod extends js.Object {
                 typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object cloudshellMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

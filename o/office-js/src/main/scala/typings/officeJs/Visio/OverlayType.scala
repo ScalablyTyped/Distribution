@@ -2,11 +2,10 @@ package typings.officeJs.Visio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait OverlayType extends js.Object
-
 /**
   *
   * Represents the type of the overlay.
@@ -16,6 +15,7 @@ sealed trait OverlayType extends js.Object
 @JSGlobal("Visio.OverlayType")
 @js.native
 object OverlayType extends js.Object {
+  
   /**
     *
     * html
@@ -39,6 +39,4 @@ object OverlayType extends js.Object {
     */
   @js.native
   sealed trait text extends OverlayType
-  
 }
-

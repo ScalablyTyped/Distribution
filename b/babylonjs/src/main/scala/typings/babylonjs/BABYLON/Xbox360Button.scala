@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Xbox360Button extends js.Object
-
 @JSGlobal("BABYLON.Xbox360Button")
 @js.native
 object Xbox360Button extends js.Object {
+  
   /** A */
   @js.native
   sealed trait A extends Xbox360Button
@@ -49,6 +49,4 @@ object Xbox360Button extends js.Object {
   /** Y */
   @js.native
   sealed trait Y extends Xbox360Button
-  
 }
-

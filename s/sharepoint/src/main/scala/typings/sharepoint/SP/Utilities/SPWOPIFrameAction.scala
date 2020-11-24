@@ -2,14 +2,14 @@ package typings.sharepoint.SP.Utilities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SPWOPIFrameAction extends js.Object
-
 @JSGlobal("SP.Utilities.SPWOPIFrameAction")
 @js.native
 object SPWOPIFrameAction extends js.Object {
+  
   @js.native
   sealed trait edit extends SPWOPIFrameAction
   
@@ -21,6 +21,4 @@ object SPWOPIFrameAction extends js.Object {
   
   @js.native
   sealed trait view extends SPWOPIFrameAction
-  
 }
-

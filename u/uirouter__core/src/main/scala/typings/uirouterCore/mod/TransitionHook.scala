@@ -9,7 +9,7 @@ import typings.uirouterCore.transitionInterfaceMod.HookResult
 import typings.uirouterCore.transitionInterfaceMod.TransitionHookOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "TransitionHook")
 @js.native
@@ -22,50 +22,55 @@ class TransitionHook protected ()
     options: TransitionHookOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("@uirouter/core", "TransitionHook")
 @js.native
 object TransitionHook extends js.Object {
-  /**
-    * These GetResultHandler(s) are used by [[invokeHook]] below
-    * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
-    */
-  @JSName("HANDLE_RESULT")
-  var HANDLE_RESULT_Original: GetResultHandler = js.native
-  /**
-    * These GetErrorHandler(s) are used by [[invokeHook]] below
-    * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
-    */
-  @JSName("LOG_ERROR")
-  var LOG_ERROR_Original: GetErrorHandler = js.native
-  /**
-    * If the result is a promise rejection, log it.
-    * Otherwise, ignore the result.
-    */
-  @JSName("LOG_REJECTED_RESULT")
-  var LOG_REJECTED_RESULT_Original: GetResultHandler = js.native
-  @JSName("REJECT_ERROR")
-  var REJECT_ERROR_Original: GetErrorHandler = js.native
-  @JSName("THROW_ERROR")
-  var THROW_ERROR_Original: GetErrorHandler = js.native
+  
   /**
     * These GetResultHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
     */
   def HANDLE_RESULT(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = js.native
   /**
+    * These GetResultHandler(s) are used by [[invokeHook]] below
+    * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
+    */
+  @JSName("HANDLE_RESULT")
+  var HANDLE_RESULT_Original: GetResultHandler = js.native
+  
+  /**
     * These GetErrorHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
     */
   def LOG_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
   /**
+    * These GetErrorHandler(s) are used by [[invokeHook]] below
+    * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
+    */
+  @JSName("LOG_ERROR")
+  var LOG_ERROR_Original: GetErrorHandler = js.native
+  
+  /**
     * If the result is a promise rejection, log it.
     * Otherwise, ignore the result.
     */
   def LOG_REJECTED_RESULT(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = js.native
+  /**
+    * If the result is a promise rejection, log it.
+    * Otherwise, ignore the result.
+    */
+  @JSName("LOG_REJECTED_RESULT")
+  var LOG_REJECTED_RESULT_Original: GetResultHandler = js.native
+  
   def REJECT_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+  @JSName("REJECT_ERROR")
+  var REJECT_ERROR_Original: GetErrorHandler = js.native
+  
   def THROW_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+  @JSName("THROW_ERROR")
+  var THROW_ERROR_Original: GetErrorHandler = js.native
+  
   /**
     * Chains together an array of TransitionHooks.
     *
@@ -86,6 +91,7 @@ object TransitionHook extends js.Object {
     */
   def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): js.Promise[_] = js.native
   def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook], waitFor: js.Promise[_]): js.Promise[_] = js.native
+  
   /**
     * Invokes all the provided TransitionHooks, in order.
     * Each hook's return value is checked.
@@ -101,9 +107,9 @@ object TransitionHook extends js.Object {
     hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook],
     doneCallback: js.Function1[/* result */ js.UndefOr[HookResult], T]
   ): js.Promise[_] | T = js.native
+  
   /**
     * Run all TransitionHooks, ignoring their return value.
     */
   def runAllHooks(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): Unit = js.native
 }
-

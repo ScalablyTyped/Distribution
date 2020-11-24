@@ -11,8 +11,8 @@ X-Repsonse-Time middleware for koa
 | Full name          | koa-response-time |
 | Keywords           | koa, middleware, response, duration |
 | # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 244556 |
+| # dependents       | 69 |
+| # downloads        | 317213 |
 | # stars            | 2 |
 
 ## Links

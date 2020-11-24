@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.RangeNavigator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RangePadding extends js.Object
-
 @JSGlobal("ej.datavisualization.RangeNavigator.RangePadding")
 @js.native
 object RangePadding extends js.Object {
+  
   //string
   @js.native
   sealed trait Additional extends RangePadding
@@ -25,6 +25,4 @@ object RangePadding extends js.Object {
   //string
   @js.native
   sealed trait Round extends RangePadding
-  
 }
-

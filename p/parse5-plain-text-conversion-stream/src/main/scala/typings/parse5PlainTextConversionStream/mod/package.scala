@@ -2,9 +2,10 @@ package typings.parse5PlainTextConversionStream
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Converts plain text files into HTML document as required by [HTML specification](https://html.spec.whatwg.org/#read-text).
     * A [writable stream](https://nodejs.org/api/stream.html#stream_class_stream_writable).

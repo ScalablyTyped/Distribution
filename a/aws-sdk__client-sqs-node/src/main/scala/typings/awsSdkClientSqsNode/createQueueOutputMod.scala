@@ -1,13 +1,12 @@
 package typings.awsSdkClientSqsNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-sqs-node/model/CreateQueueOutput", JSImport.Namespace)
 @js.native
 object createQueueOutputMod extends js.Object {
-  val CreateQueueOutput: Structure = js.native
+  
+  val CreateQueueOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

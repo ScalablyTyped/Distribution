@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.auto
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.std.stdStrings.rtl
 */
 trait NotificationDirection extends js.Object
-
 object NotificationDirection {
+  
   @scala.inline
   def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
+  
   @scala.inline
   def ltr: typings.std.stdStrings.ltr = "ltr".asInstanceOf[typings.std.stdStrings.ltr]
+  
   @scala.inline
   def rtl: typings.std.stdStrings.rtl = "rtl".asInstanceOf[typings.std.stdStrings.rtl]
 }
-

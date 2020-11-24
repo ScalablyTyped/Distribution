@@ -2,13 +2,12 @@ package typings.pkgConf.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkg-conf", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pkgConf */ js.Any = js.native
+  
   /**
   	It [walks up](https://github.com/sindresorhus/find-up) parent directories until a `package.json` can be found, reads it, and returns the user specified namespace or an empty object if not found.
   	@param namespace - The `package.json` namespace you want.
@@ -32,11 +31,16 @@ object ^ extends js.Object {
   	*/
   def apply[ConfigType /* <: Config */](namespace: String): js.Promise[ConfigType with Config] = js.native
   def apply[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): js.Promise[ConfigType with Config] = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pkgConf */ js.Any = js.native
+  
   /**
   	@param config - The `config` returned from any of the above methods.
   	@returns The filepath to the `package.json` file or `null` when not found.
   	*/
   def filepath(config: Config): String | Null = js.native
+  
   /**
   	Same as `pkgConf()`, but runs synchronously.
   	@param namespace - The `package.json` namespace you want.
@@ -45,4 +49,3 @@ object ^ extends js.Object {
   def sync[ConfigType /* <: Config */](namespace: String): ConfigType with Config = js.native
   def sync[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): ConfigType with Config = js.native
 }
-

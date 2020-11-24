@@ -3,7 +3,7 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "InvokeFunctionExpr")
 @js.native
@@ -69,8 +69,10 @@ class InvokeFunctionExpr protected () extends Expression {
     sourceSpan: ParseSourceSpan,
     pure: Boolean
   ) = this()
+  
   var args: js.Array[Expression] = js.native
+  
   var fn: Expression = js.native
+  
   var pure: Boolean = js.native
 }
-

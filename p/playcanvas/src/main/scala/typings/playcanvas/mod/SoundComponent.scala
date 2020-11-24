@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Sound Component.
@@ -39,4 +39,3 @@ class SoundComponent protected ()
   extends typings.playcanvas.pc.SoundComponent {
   def this(system: typings.playcanvas.pc.SoundComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

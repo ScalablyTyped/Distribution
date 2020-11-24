@@ -2,13 +2,12 @@ package typings.sindresorhusToMilliseconds.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@sindresorhus/to-milliseconds", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: remove this for next major version
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toMilliseconds */ js.Any = js.native
+  
   /**
   	Convert an object of time properties to milliseconds: `{seconds: 2}` → `2000`.
   	@example
@@ -28,5 +27,7 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(timeDescriptor: TimeDescriptor): Double = js.native
+  
+  // TODO: remove this for next major version
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toMilliseconds */ js.Any = js.native
 }
-

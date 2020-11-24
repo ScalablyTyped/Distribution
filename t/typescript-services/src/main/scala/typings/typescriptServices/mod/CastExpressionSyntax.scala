@@ -5,7 +5,7 @@ import typings.typescriptServices.TypeScript.ITypeSyntax
 import typings.typescriptServices.TypeScript.IUnaryExpressionSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "CastExpressionSyntax")
 @js.native
@@ -19,11 +19,10 @@ class CastExpressionSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "CastExpressionSyntax")
 @js.native
 object CastExpressionSyntax extends js.Object {
+  
   def create1(`type`: ITypeSyntax, expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.CastExpressionSyntax = js.native
 }
-

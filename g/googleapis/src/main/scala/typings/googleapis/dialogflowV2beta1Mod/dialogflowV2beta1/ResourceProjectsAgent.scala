@@ -6,18 +6,19 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent")
 @js.native
 class ResourceProjectsAgent protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var entityTypes: ResourceProjectsAgentEntitytypes = js.native
+  
   var environments: ResourceProjectsAgentEnvironments = js.native
-  var intents: ResourceProjectsAgentIntents = js.native
-  var knowledgeBases: ResourceProjectsAgentKnowledgebases = js.native
-  var sessions: ResourceProjectsAgentSessions = js.native
+  
   /**
     * dialogflow.projects.agent.export
     * @desc Exports the specified agent to a ZIP file.   Operation <response:
@@ -51,6 +52,7 @@ class ResourceProjectsAgent protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.import
     * @desc Imports the specified agent from a ZIP file.  Uploads new intents and
@@ -86,6 +88,11 @@ class ResourceProjectsAgent protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
+  var intents: ResourceProjectsAgentIntents = js.native
+  
+  var knowledgeBases: ResourceProjectsAgentKnowledgebases = js.native
+  
   /**
     * dialogflow.projects.agent.restore
     * @desc Restores the specified agent from a ZIP file.  Replaces the current agent version with a new one. All the intents and entity types in the older version are deleted.   Operation <response: google.protobuf.Empty>
@@ -118,6 +125,7 @@ class ResourceProjectsAgent protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.search
     * @desc Returns the list of agents.  Since there is at most one
@@ -155,6 +163,9 @@ class ResourceProjectsAgent protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SearchAgentsResponse]
   ): Unit = js.native
+  
+  var sessions: ResourceProjectsAgentSessions = js.native
+  
   /**
     * dialogflow.projects.agent.train
     * @desc Trains the specified agent.   Operation <response:
@@ -189,4 +200,3 @@ class ResourceProjectsAgent protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
 }
-

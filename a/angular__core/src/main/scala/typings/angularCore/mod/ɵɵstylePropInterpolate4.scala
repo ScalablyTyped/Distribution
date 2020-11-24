@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275\u0275stylePropInterpolate4")
 @js.native
 object ɵɵstylePropInterpolate4 extends js.Object {
+  
   def apply(
     prop: String,
     prefix: String,
@@ -59,4 +60,3 @@ object ɵɵstylePropInterpolate4 extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any
   ] = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PngFilterMode extends js.Object
-
 @JSGlobal("Windows.Graphics.Imaging.PngFilterMode")
 @js.native
 object PngFilterMode extends js.Object {
+  
   @js.native
   sealed trait adaptive extends PngFilterMode
   
@@ -30,6 +30,4 @@ object PngFilterMode extends js.Object {
   
   @js.native
   sealed trait up extends PngFilterMode
-  
 }
-

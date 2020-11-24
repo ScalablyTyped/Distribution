@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides read access to a static or dynamically changing {@link ContentResultSet} .
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait CachedDynamicResultSetStub
   extends XDynamicResultSet
      with XSourceInitialization
-
 object CachedDynamicResultSetStub {
+  
   @scala.inline
   def apply(
     Capabilities: Double,
@@ -39,4 +39,3 @@ object CachedDynamicResultSetStub {
     __obj.asInstanceOf[CachedDynamicResultSetStub]
   }
 }
-

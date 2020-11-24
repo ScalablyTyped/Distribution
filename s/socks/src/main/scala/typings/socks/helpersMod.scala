@@ -4,16 +4,18 @@ import typings.socks.constantsMod.SocksClientChainOptions
 import typings.socks.constantsMod.SocksClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("socks/typings/common/helpers", JSImport.Namespace)
 @js.native
 object helpersMod extends js.Object {
+  
   /**
     * Validates the SocksClientChainOptions
     * @param options { SocksClientChainOptions }
     */
   def validateSocksClientChainOptions(options: SocksClientChainOptions): Unit = js.native
+  
   /**
     * Validates the provided SocksClientOptions
     * @param options { SocksClientOptions }
@@ -22,4 +24,3 @@ object helpersMod extends js.Object {
   def validateSocksClientOptions(options: SocksClientOptions): Unit = js.native
   def validateSocksClientOptions(options: SocksClientOptions, acceptedCommands: js.Array[String]): Unit = js.native
 }
-

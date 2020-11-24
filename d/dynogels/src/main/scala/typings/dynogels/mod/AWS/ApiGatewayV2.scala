@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.apigatewayv2Mod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ApiGatewayV2")
 @js.native
@@ -14,4 +14,3 @@ class ApiGatewayV2 ()
   extends typings.awsSdk.mod.ApiGatewayV2 {
   def this(options: ClientConfiguration) = this()
 }
-

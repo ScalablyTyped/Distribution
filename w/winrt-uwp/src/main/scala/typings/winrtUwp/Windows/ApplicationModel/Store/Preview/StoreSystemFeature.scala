@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait StoreSystemFeature extends js.Object
-
 /** Defines values that represent hardware features that can be queried for the current device by using the FilterUnsupportedSystemFeaturesAsync method. */
 @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreSystemFeature")
 @js.native
 object StoreSystemFeature extends js.Object {
+  
   /** The device chipset uses the ARM CPU architecture. */
   @js.native
   sealed trait architectureArm extends StoreSystemFeature
@@ -106,6 +106,4 @@ object StoreSystemFeature extends js.Object {
   /** The display resolution is WXGA or 720p. */
   @js.native
   sealed trait resolutionWxgaOr720P extends StoreSystemFeature
-  
 }
-

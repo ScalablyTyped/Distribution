@@ -3,13 +3,15 @@ package typings.pkgVersions
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Get the version numbers of a package from the npm registry.
     	@returns The version numbers.
@@ -24,6 +26,4 @@ object anon extends js.Object {
     	*/
     def apply(packageName: String): js.Promise[Set[String]] = js.native
   }
-  
 }
-

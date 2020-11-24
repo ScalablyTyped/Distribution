@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,15 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassTcpServer extends ClassObject {
+  
+  /**
+    * 
+    * @brief 异步运行服务器并开始接收和分发连接，调用后立即返回，服务器在后台运行
+    * 
+    * 
+    */
+  def asyncRun(): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -21,6 +30,15 @@ trait ClassTcpServer extends ClassObject {
     * @type Handler
     */
   var handler: ClassHandler = js.native
+  
+  /**
+    * 
+    * @brief 运行服务器并开始接收和分发连接，此函数不会返回
+    * 
+    * @async
+    */
+  def run(): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -31,6 +49,7 @@ trait ClassTcpServer extends ClassObject {
     * @type Socket
     */
   var socket: ClassSocket = js.native
+  
   /**
     * class prop 
     *
@@ -52,20 +71,7 @@ trait ClassTcpServer extends ClassObject {
     * @type Stats
     */
   var stats: ClassStats = js.native
-  /**
-    * 
-    * @brief 异步运行服务器并开始接收和分发连接，调用后立即返回，服务器在后台运行
-    * 
-    * 
-    */
-  def asyncRun(): Unit = js.native
-  /**
-    * 
-    * @brief 运行服务器并开始接收和分发连接，此函数不会返回
-    * 
-    * @async
-    */
-  def run(): Unit = js.native
+  
   /**
     * 
     * @brief 关闭 socket中止正在运行的服务器
@@ -74,4 +80,3 @@ trait ClassTcpServer extends ClassObject {
     */
   def stop(): Unit = js.native
 }
-

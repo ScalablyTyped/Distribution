@@ -2,9 +2,40 @@ package typings.acmeClient
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acmeClientStrings {
+  
+  @scala.inline
+  def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
+  
+  @scala.inline
+  def `dns-01`: `dns-01` = "dns-01".asInstanceOf[`dns-01`]
+  
+  @scala.inline
+  def expired: expired = "expired".asInstanceOf[expired]
+  
+  @scala.inline
+  def `http-01`: `http-01` = "http-01".asInstanceOf[`http-01`]
+  
+  @scala.inline
+  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
+  
+  @scala.inline
+  def processing: processing = "processing".asInstanceOf[processing]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def revoked: revoked = "revoked".asInstanceOf[revoked]
+  
+  @scala.inline
+  def valid: valid = "valid".asInstanceOf[valid]
+  
   @js.native
   sealed trait deactivated extends js.Object
   
@@ -34,26 +65,4 @@ object acmeClientStrings {
   
   @js.native
   sealed trait valid extends js.Object
-  
-  @scala.inline
-  def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
-  @scala.inline
-  def `dns-01`: `dns-01` = "dns-01".asInstanceOf[`dns-01`]
-  @scala.inline
-  def expired: expired = "expired".asInstanceOf[expired]
-  @scala.inline
-  def `http-01`: `http-01` = "http-01".asInstanceOf[`http-01`]
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def processing: processing = "processing".asInstanceOf[processing]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def revoked: revoked = "revoked".asInstanceOf[revoked]
-  @scala.inline
-  def valid: valid = "valid".asInstanceOf[valid]
 }
-

@@ -2,7 +2,7 @@ package typings.webcola.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Node3D")
 @js.native
@@ -16,4 +16,3 @@ class Node3D ()
   def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
 }
-

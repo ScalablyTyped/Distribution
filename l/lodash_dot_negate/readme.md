@@ -12,7 +12,7 @@ The lodash method `_.negate` exported as a module.
 | Keywords           | lodash-modularized, negate |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 150898 |
+| # downloads        | 215693 |
 | # stars            | 0 |
 
 ## Links

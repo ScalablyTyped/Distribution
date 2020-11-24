@@ -81,13 +81,15 @@ import typings.awsSdkClientCodecommitNode.typesUpdateRepositoryNameInputMod.Upda
 import typings.awsSdkClientCodecommitNode.typesUpdateRepositoryNameOutputMod.UpdateRepositoryNameOutput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/CodeCommit", JSImport.Namespace)
 @js.native
 object codeCommitMod extends js.Object {
+  
   @js.native
   class CodeCommit () extends CodeCommitClient {
+    
     /**
       * <p>Returns information about one or more repositories.</p> <note> <p>The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page.</p> </note>
       *
@@ -107,6 +109,7 @@ object codeCommitMod extends js.Object {
       args: BatchGetRepositoriesInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[BatchGetRepositoriesOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Creates a new branch in a repository and points the branch to a commit.</p> <note> <p>Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation.</p> </note>
       *
@@ -132,6 +135,7 @@ object codeCommitMod extends js.Object {
       args: CreateBranchInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateBranchOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Creates a pull request in the specified repository.</p>
       *
@@ -168,6 +172,7 @@ object codeCommitMod extends js.Object {
       args: CreatePullRequestInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreatePullRequestOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Creates a new, empty repository.</p>
       *
@@ -189,6 +194,7 @@ object codeCommitMod extends js.Object {
       args: CreateRepositoryInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateRepositoryOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes a branch from a repository, unless that branch is the default branch for the repository. </p>
       *
@@ -211,6 +217,7 @@ object codeCommitMod extends js.Object {
       args: DeleteBranchInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBranchOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the content of a comment made on a change, file, or commit in a repository.</p>
       *
@@ -226,6 +233,7 @@ object codeCommitMod extends js.Object {
       args: DeleteCommentContentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteCommentContentOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file will still exist in the commits prior to the commit that contains the deletion.</p>
       *
@@ -259,6 +267,7 @@ object codeCommitMod extends js.Object {
       args: DeleteFileInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteFileOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes a repository. If a specified repository was already deleted, a null repository ID will be returned.</p> <important> <p>Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository will fail.</p> </important>
       *
@@ -277,6 +286,7 @@ object codeCommitMod extends js.Object {
       args: DeleteRepositoryInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteRepositoryOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns information about one or more pull request events.</p>
       *
@@ -301,6 +311,7 @@ object codeCommitMod extends js.Object {
       args: DescribePullRequestEventsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribePullRequestEventsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the base-64 encoded content of an individual blob within a repository.</p>
       *
@@ -321,6 +332,7 @@ object codeCommitMod extends js.Object {
       */
     def getBlob(args: GetBlobInput): js.Promise[GetBlobOutput] = js.native
     def getBlob(args: GetBlobInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBlobOutput], Unit]): Unit = js.native
+    
     /**
       * <p>Returns information about a repository branch, including its name and the last commit ID.</p>
       *
@@ -343,6 +355,7 @@ object codeCommitMod extends js.Object {
       args: GetBranchInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBranchOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the content of a comment made on a change, file, or commit in a repository.</p>
       *
@@ -358,6 +371,7 @@ object codeCommitMod extends js.Object {
       args: GetCommentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommentOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns information about comments made on the comparison between two commits.</p>
       *
@@ -382,6 +396,7 @@ object codeCommitMod extends js.Object {
       args: GetCommentsForComparedCommitInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommentsForComparedCommitOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns comments made on a pull request.</p>
       *
@@ -410,6 +425,7 @@ object codeCommitMod extends js.Object {
       args: GetCommentsForPullRequestInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommentsForPullRequestOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns information about a commit, including commit message and committer information.</p>
       *
@@ -432,6 +448,7 @@ object codeCommitMod extends js.Object {
       args: GetCommitInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommitOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID or other fully qualified reference). Results can be limited to a specified path.</p>
       *
@@ -459,6 +476,7 @@ object codeCommitMod extends js.Object {
       args: GetDifferencesInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetDifferencesOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the base-64 encoded contents of a specified file and its metadata.</p>
       *
@@ -481,6 +499,7 @@ object codeCommitMod extends js.Object {
       */
     def getFile(args: GetFileInput): js.Promise[GetFileOutput] = js.native
     def getFile(args: GetFileInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetFileOutput], Unit]): Unit = js.native
+    
     /**
       * <p>Returns the contents of a specified folder in a repository.</p>
       *
@@ -505,6 +524,7 @@ object codeCommitMod extends js.Object {
       args: GetFolderInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetFolderOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.</p>
       *
@@ -532,6 +552,7 @@ object codeCommitMod extends js.Object {
       args: GetMergeConflictsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetMergeConflictsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Gets information about a pull request in a specified repository.</p>
       *
@@ -551,6 +572,7 @@ object codeCommitMod extends js.Object {
       args: GetPullRequestInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetPullRequestOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns information about a repository.</p> <note> <p>The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page.</p> </note>
       *
@@ -570,6 +592,7 @@ object codeCommitMod extends js.Object {
       args: GetRepositoryInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetRepositoryOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Gets information about triggers configured for a repository.</p>
       *
@@ -589,6 +612,7 @@ object codeCommitMod extends js.Object {
       args: GetRepositoryTriggersInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetRepositoryTriggersOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Gets information about one or more branches in a repository.</p>
       *
@@ -609,6 +633,7 @@ object codeCommitMod extends js.Object {
       args: ListBranchesInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBranchesOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns a list of pull requests for a specified repository. The return list can be refined by pull request status or pull request author ARN.</p>
       *
@@ -633,6 +658,7 @@ object codeCommitMod extends js.Object {
       args: ListPullRequestsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListPullRequestsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Gets information about one or more repositories.</p>
       *
@@ -647,6 +673,7 @@ object codeCommitMod extends js.Object {
       args: ListRepositoriesInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListRepositoriesOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge option.</p>
       *
@@ -674,6 +701,7 @@ object codeCommitMod extends js.Object {
       args: MergePullRequestByFastForwardInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[MergePullRequestByFastForwardOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Posts a comment on the comparison between two commits.</p>
       *
@@ -708,6 +736,7 @@ object codeCommitMod extends js.Object {
       args: PostCommentForComparedCommitInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PostCommentForComparedCommitOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Posts a comment on a pull request.</p>
       *
@@ -747,6 +776,7 @@ object codeCommitMod extends js.Object {
       args: PostCommentForPullRequestInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PostCommentForPullRequestOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Posts a comment in reply to an existing comment on a comparison between commits or a pull request.</p>
       *
@@ -766,6 +796,7 @@ object codeCommitMod extends js.Object {
       args: PostCommentReplyInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PostCommentReplyOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Adds or updates a file in a branch in an AWS CodeCommit repository, and generates a commit for the addition in the specified branch.</p>
       *
@@ -802,6 +833,7 @@ object codeCommitMod extends js.Object {
       */
     def putFile(args: PutFileInput): js.Promise[PutFileOutput] = js.native
     def putFile(args: PutFileInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutFileOutput], Unit]): Unit = js.native
+    
     /**
       * <p>Replaces all triggers for a repository. This can be used to create or delete triggers.</p>
       *
@@ -834,6 +866,7 @@ object codeCommitMod extends js.Object {
       args: PutRepositoryTriggersInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutRepositoryTriggersOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test will send data from the last commit. If no data is available, sample data will be generated.</p>
       *
@@ -866,6 +899,7 @@ object codeCommitMod extends js.Object {
       args: TestRepositoryTriggersInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[TestRepositoryTriggersOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Replaces the contents of a comment.</p>
       *
@@ -884,6 +918,7 @@ object codeCommitMod extends js.Object {
       args: UpdateCommentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateCommentOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets or changes the default branch name for the specified repository.</p> <note> <p>If you use this operation to change the default branch name to the current default branch name, a success message is returned even though the default branch did not change.</p> </note>
       *
@@ -906,6 +941,7 @@ object codeCommitMod extends js.Object {
       args: UpdateDefaultBranchInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateDefaultBranchOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Replaces the contents of the description of a pull request.</p>
       *
@@ -922,6 +958,7 @@ object codeCommitMod extends js.Object {
       args: UpdatePullRequestDescriptionInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdatePullRequestDescriptionOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Updates the status of a pull request. </p>
       *
@@ -944,6 +981,7 @@ object codeCommitMod extends js.Object {
       args: UpdatePullRequestStatusInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdatePullRequestStatusOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Replaces the title of a pull request.</p>
       *
@@ -961,6 +999,7 @@ object codeCommitMod extends js.Object {
       args: UpdatePullRequestTitleInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdatePullRequestTitleOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets or changes the comment or description for a repository.</p> <note> <p>The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page.</p> </note>
       *
@@ -981,6 +1020,7 @@ object codeCommitMod extends js.Object {
       args: UpdateRepositoryDescriptionInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateRepositoryDescriptionOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Renames a repository. The repository name must be unique across the calling AWS account. In addition, repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix ".git" is prohibited. For a full description of the limits on repository names, see <a href="http://docs.aws.amazon.com/codecommit/latest/userguide/limits.html">Limits</a> in the AWS CodeCommit User Guide.</p>
       *
@@ -997,6 +1037,4 @@ object codeCommitMod extends js.Object {
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateRepositoryNameOutput], Unit]
     ): Unit = js.native
   }
-  
 }
-

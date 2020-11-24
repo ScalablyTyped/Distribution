@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.logging
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * assembles the complete information about a to-be-logged event
@@ -12,36 +12,44 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LogRecord extends js.Object {
+  
   /**
     * specifies the level of the log event
     * @see LogLevel
     */
   var Level: Double = js.native
+  
   var LogTime: DateTime = js.native
+  
   var LoggerName: String = js.native
+  
   var Message: String = js.native
+  
   /**
     * specifies the number of the log event.
     *
     * Subsequent events get assigned increasing sequence numbers by the {@link XLogger} at which they're logged.
     */
   var SequenceNumber: Double = js.native
+  
   /**
     * specifies the name of the class, in which the record was logged.
     *
     * This name might be empty, in case the caller to one of the various `log` methods of {@link XLogger} did not specify it.
     */
   var SourceClassName: String = js.native
+  
   /**
     * specifies the name of the method, in which the record was logged.
     *
     * This name might be empty, in case the caller to one of the various `log` methods of {@link XLogger} did not specify it.
     */
   var SourceMethodName: String = js.native
+  
   var ThreadID: String = js.native
 }
-
 object LogRecord {
+  
   @scala.inline
   def apply(
     Level: Double,
@@ -56,34 +64,44 @@ object LogRecord {
     val __obj = js.Dynamic.literal(Level = Level.asInstanceOf[js.Any], LogTime = LogTime.asInstanceOf[js.Any], LoggerName = LoggerName.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any], SourceClassName = SourceClassName.asInstanceOf[js.Any], SourceMethodName = SourceMethodName.asInstanceOf[js.Any], ThreadID = ThreadID.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogRecord]
   }
+  
   @scala.inline
   implicit class LogRecordOps[Self <: LogRecord] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLevel(value: Double): Self = this.set("Level", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLogTime(value: DateTime): Self = this.set("LogTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLoggerName(value: String): Self = this.set("LoggerName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSequenceNumber(value: Double): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSourceClassName(value: String): Self = this.set("SourceClassName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSourceMethodName(value: String): Self = this.set("SourceMethodName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setThreadID(value: String): Self = this.set("ThreadID", value.asInstanceOf[js.Any])
   }
-  
 }
-

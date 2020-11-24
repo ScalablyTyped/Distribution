@@ -4,7 +4,7 @@ import typings.sipJs.coreMod.URI
 import typings.sipJs.subscriberOptionsMod.SubscriberOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/api", "Subscriber")
 @js.native
@@ -25,4 +25,3 @@ class Subscriber protected ()
     options: SubscriberOptions
   ) = this()
 }
-

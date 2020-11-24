@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylelint-webpack-plugin
 
-Typings are for version 2.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 A Stylelint plugin for webpack
@@ -10,9 +10,9 @@ A Stylelint plugin for webpack
 | ------------------ | :-------------: |
 | Full name          | stylelint-webpack-plugin |
 | Keywords           | stylelint, lint, linter, plugin, webpack |
-| # releases         | 13 |
-| # dependents       | 175 |
-| # downloads        | 4650735 |
+| # releases         | 15 |
+| # dependents       | 209 |
+| # downloads        | 7297310 |
 | # stars            | 6 |
 
 ## Links

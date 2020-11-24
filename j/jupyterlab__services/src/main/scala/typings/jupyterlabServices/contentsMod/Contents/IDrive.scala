@@ -7,7 +7,7 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for a network drive that can be mounted
@@ -15,24 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IDrive extends IDisposable {
-  /**
-    * A signal emitted when a file operation takes place.
-    */
-  var fileChanged: ISignal[IDrive, IChangedArgs] = js.native
-  /**
-    * An optional ModelDB.IFactory instance for the
-    * drive.
-    */
-  val modelDBFactory: js.UndefOr[IFactory] = js.native
-  /**
-    * The name of the drive, which is used at the leading
-    * component of file paths.
-    */
-  val name: String = js.native
-  /**
-    * The server settings of the manager.
-    */
-  val serverSettings: ISettings = js.native
+  
   /**
     * Copy a file into a given directory.
     *
@@ -44,6 +27,7 @@ trait IDrive extends IDisposable {
     *  file is copied.
     */
   def copy(localPath: String, toLocalDir: String): js.Promise[IModel] = js.native
+  
   /**
     * Create a checkpoint for a file.
     *
@@ -53,6 +37,7 @@ trait IDrive extends IDisposable {
     *   checkpoint is created.
     */
   def createCheckpoint(localPath: String): js.Promise[ICheckpointModel] = js.native
+  
   /**
     * Delete a file.
     *
@@ -61,6 +46,7 @@ trait IDrive extends IDisposable {
     * @returns A promise which resolves when the file is deleted.
     */
   def delete(localPath: String): js.Promise[Unit] = js.native
+  
   /**
     * Delete a checkpoint for a file.
     *
@@ -71,6 +57,12 @@ trait IDrive extends IDisposable {
     * @returns A promise which resolves when the checkpoint is deleted.
     */
   def deleteCheckpoint(localPath: String, checkpointID: String): js.Promise[Unit] = js.native
+  
+  /**
+    * A signal emitted when a file operation takes place.
+    */
+  var fileChanged: ISignal[IDrive, IChangedArgs] = js.native
+  
   /**
     * Get a file or directory.
     *
@@ -82,6 +74,7 @@ trait IDrive extends IDisposable {
     */
   def get(localPath: String): js.Promise[IModel] = js.native
   def get(localPath: String, options: IFetchOptions): js.Promise[IModel] = js.native
+  
   /**
     * Get an encoded download url given a file path.
     *
@@ -92,6 +85,7 @@ trait IDrive extends IDisposable {
     * The returned URL may include a query parameter.
     */
   def getDownloadUrl(localPath: String): js.Promise[String] = js.native
+  
   /**
     * List available checkpoints for a file.
     *
@@ -101,6 +95,19 @@ trait IDrive extends IDisposable {
     *    the file.
     */
   def listCheckpoints(localPath: String): js.Promise[js.Array[ICheckpointModel]] = js.native
+  
+  /**
+    * An optional ModelDB.IFactory instance for the
+    * drive.
+    */
+  val modelDBFactory: js.UndefOr[IFactory] = js.native
+  
+  /**
+    * The name of the drive, which is used at the leading
+    * component of file paths.
+    */
+  val name: String = js.native
+  
   /**
     * Create a new untitled file or directory in the specified directory path.
     *
@@ -111,6 +118,7 @@ trait IDrive extends IDisposable {
     */
   def newUntitled(): js.Promise[IModel] = js.native
   def newUntitled(options: ICreateOptions): js.Promise[IModel] = js.native
+  
   /**
     * Rename a file or directory.
     *
@@ -122,6 +130,7 @@ trait IDrive extends IDisposable {
     *   file is renamed.
     */
   def rename(oldLocalPath: String, newLocalPath: String): js.Promise[IModel] = js.native
+  
   /**
     * Restore a file to a known checkpoint state.
     *
@@ -132,6 +141,7 @@ trait IDrive extends IDisposable {
     * @returns A promise which resolves when the checkpoint is restored.
     */
   def restoreCheckpoint(localPath: String, checkpointID: String): js.Promise[Unit] = js.native
+  
   /**
     * Save a file.
     *
@@ -144,5 +154,9 @@ trait IDrive extends IDisposable {
     */
   def save(localPath: String): js.Promise[IModel] = js.native
   def save(localPath: String, options: PartialIModel): js.Promise[IModel] = js.native
+  
+  /**
+    * The server settings of the manager.
+    */
+  val serverSettings: ISettings = js.native
 }
-

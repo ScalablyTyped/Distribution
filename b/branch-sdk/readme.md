@@ -10,9 +10,9 @@ Branch Metrics Deep Linking/Smart Banner Web SDK
 | ------------------ | :-------------: |
 | Full name          | branch-sdk |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 6 |
-| # downloads        | 648957 |
+| # releases         | 31 |
+| # dependents       | 5 |
+| # downloads        | 563650 |
 | # stars            | 0 |
 
 ## Links

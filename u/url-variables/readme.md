@@ -10,9 +10,9 @@ URLVariables class for TypeScript
 | ------------------ | :-------------: |
 | Full name          | url-variables |
 | Keywords           | URLVariables, url, variables, encode, decode |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 3766 |
+| # downloads        | 32070 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Urlcrawlerrorscounts")
 @js.native
 class ResourceUrlcrawlerrorscounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * webmasters.urlcrawlerrorscounts.query
     * @desc Retrieves a time series of the number of URL crawl errors per error
@@ -49,4 +51,3 @@ class ResourceUrlcrawlerrorscounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUrlCrawlErrorsCountsQueryResponse]
   ): Unit = js.native
 }
-

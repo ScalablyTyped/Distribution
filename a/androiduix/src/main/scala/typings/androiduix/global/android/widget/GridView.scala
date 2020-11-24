@@ -5,7 +5,7 @@ import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.widget.GridView")
 @js.native
@@ -14,15 +14,18 @@ class GridView protected ()
   def this(context: Context, attrs: HTMLElement) = this()
   def this(context: Context, attrs: HTMLElement, defStyle: Map[String, String]) = this()
 }
-
 /* static members */
 @JSGlobal("android.widget.GridView")
 @js.native
 object GridView extends js.Object {
+  
   var AUTO_FIT: Double = js.native
+  
   var NO_STRETCH: Double = js.native
+  
   var STRETCH_COLUMN_WIDTH: Double = js.native
+  
   var STRETCH_SPACING: Double = js.native
+  
   var STRETCH_SPACING_UNIFORM: Double = js.native
 }
-

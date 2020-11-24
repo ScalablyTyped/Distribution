@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.Slider_.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSlider
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Slider_]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Slider_] {
+  
   var Locale: js.Any = js.native
+  
   var fn: Slider_ = js.native
 }
-

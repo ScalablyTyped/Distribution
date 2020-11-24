@@ -10,9 +10,9 @@ Simple, fast, powerful parser toolkit for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | nearley |
 | Keywords           | parser, parse, generator, compiler, compile, grammar, language |
-| # releases         | 13 |
-| # dependents       | 131 |
-| # downloads        | 91174991 |
+| # releases         | 10 |
+| # dependents       | 183 |
+| # downloads        | 112017475 |
 | # stars            | 14 |
 
 ## Links

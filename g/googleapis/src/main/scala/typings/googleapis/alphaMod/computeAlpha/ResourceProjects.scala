@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.projects.disableXpnHost
     * @desc Disable this project as a shared VPC host project.
@@ -42,6 +44,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.disableXpnResource
     * @desc Disable a serivce resource (a.k.a service project) associated with
@@ -73,6 +76,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.enableXpnHost
     * @desc Enable this project as a shared VPC host project.
@@ -102,6 +106,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.enableXpnResource
     * @desc Enable service resource (a.k.a service project) for a host project,
@@ -134,6 +139,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.get
     * @desc Returns the specified Project resource.
@@ -162,6 +168,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
+  
   /**
     * compute.projects.getXpnHost
     * @desc Gets the shared VPC host project that this project links to. May be
@@ -191,6 +198,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
+  
   /**
     * compute.projects.getXpnResources
     * @desc Gets service resources (a.k.a service project) associated with this
@@ -227,6 +235,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProjectsGetXpnResources]
   ): Unit = js.native
+  
   /**
     * compute.projects.listXpnHosts
     * @desc Lists all shared VPC host projects visible to the user in an
@@ -261,6 +270,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaXpnHostList]
   ): Unit = js.native
+  
   /**
     * compute.projects.moveDisk
     * @desc Moves a persistent disk from one zone to another.
@@ -291,6 +301,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.moveInstance
     * @desc Moves an instance and its attached persistent disks from one zone
@@ -322,6 +333,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.setCommonInstanceMetadata
     * @desc Sets metadata common to all instances within the specified project
@@ -356,6 +368,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.setDefaultNetworkTier
     * @desc Sets the default network tier of the project. The default network
@@ -391,6 +404,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.setDefaultServiceAccount
     * @desc Sets the default service account of the project. The default
@@ -426,6 +440,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.projects.setUsageExportBucket
     * @desc Enables the usage export feature and sets the usage export bucket
@@ -462,4 +477,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Method")
 @js.native
@@ -24,32 +24,40 @@ class Method protected () extends ReflectionObject {
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
-    responseStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
-    options: js.UndefOr[StringDictionary[js.Any]],
+    requestStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
+    options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]],
     comment: js.UndefOr[String]
   ) = this()
+  
   /** Whether requests are streamed or not. */
   var requestStream: js.UndefOr[Boolean] = js.native
+  
   /** Request type. */
   var requestType: String = js.native
+  
   /** Resolved request type. */
   var resolvedRequestType: Type | Null = js.native
+  
   /** Resolved response type. */
   var resolvedResponseType: Type | Null = js.native
+  
   /** Whether responses are streamed or not. */
   var responseStream: js.UndefOr[Boolean] = js.native
+  
   /** Response type. */
   var responseType: String = js.native
+  
+  def toJSON(toJSONOptions: IToJSONOptions): IMethod = js.native
+  
   /** Method type. */
   var `type`: String = js.native
-  def toJSON(toJSONOptions: IToJSONOptions): IMethod = js.native
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs", "Method")
 @js.native
 object Method extends js.Object {
+  
   /**
     * Constructs a method from a method descriptor.
     * @param name Method name
@@ -59,4 +67,3 @@ object Method extends js.Object {
     */
   def fromJSON(name: String, json: IMethod): Method = js.native
 }
-

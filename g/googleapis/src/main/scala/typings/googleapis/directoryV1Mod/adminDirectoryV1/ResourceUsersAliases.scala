@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Users$Aliases")
 @js.native
 class ResourceUsersAliases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.users.aliases.delete
     * @desc Remove a alias for the user
@@ -42,6 +44,7 @@ class ResourceUsersAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.users.aliases.insert
     * @desc Add a alias for the user
@@ -71,6 +74,7 @@ class ResourceUsersAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAlias]
   ): Unit = js.native
+  
   /**
     * directory.users.aliases.list
     * @desc List all aliases for a user
@@ -100,6 +104,7 @@ class ResourceUsersAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAliases]
   ): Unit = js.native
+  
   /**
     * directory.users.aliases.watch
     * @desc Watch for changes in user aliases list
@@ -131,4 +136,3 @@ class ResourceUsersAliases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

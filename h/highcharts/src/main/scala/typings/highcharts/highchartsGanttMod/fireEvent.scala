@@ -5,11 +5,12 @@ import typings.highcharts.mod.EventCallbackFunction
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highcharts-gantt", "fireEvent")
 @js.native
 object fireEvent extends js.Object {
+  
   def apply[T](el: T, `type`: String): Unit = js.native
   def apply[T](el: T, `type`: String, eventArguments: js.UndefOr[scala.Nothing], defaultFunction: js.Function): Unit = js.native
   def apply[T](
@@ -25,4 +26,3 @@ object fireEvent extends js.Object {
   def apply[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
   def apply[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
 }
-

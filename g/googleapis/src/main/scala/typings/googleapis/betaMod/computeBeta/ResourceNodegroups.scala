@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Nodegroups")
 @js.native
 class ResourceNodegroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.nodeGroups.addNodes
     * @desc Adds specified number of nodes to the node group.
@@ -45,6 +45,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.aggregatedList
     * @desc Retrieves an aggregated list of node groups. Note: use
@@ -81,6 +82,9 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeGroupAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.nodeGroups.delete
     * @desc Deletes the specified NodeGroup resource.
@@ -112,6 +116,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.deleteNodes
     * @desc Deletes specified nodes from the node group.
@@ -144,6 +149,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.get
     * @desc Returns the specified NodeGroup. Get a list of available NodeGroups
@@ -176,6 +182,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeGroup]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -207,6 +214,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.insert
     * @desc Creates a NodeGroup resource in the specified project using the
@@ -240,6 +248,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.list
     * @desc Retrieves a list of node groups available to the specified project.
@@ -274,6 +283,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeGroupList]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.listNodes
     * @desc Lists nodes in the node group.
@@ -311,6 +321,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeGroupsListNodes]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -343,6 +354,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.setNodeTemplate
     * @desc Updates the node template of the node group.
@@ -375,6 +387,7 @@ class ResourceNodegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeGroups.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -410,4 +423,3 @@ class ResourceNodegroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

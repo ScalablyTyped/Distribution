@@ -2,14 +2,14 @@ package typings.sharepoint.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PaneId extends js.Object
-
 @JSGlobal("SP.JsGrid.PaneId")
 @js.native
 object PaneId extends js.Object {
+  
   @js.native
   sealed trait Gantt extends PaneId
   
@@ -20,6 +20,4 @@ object PaneId extends js.Object {
    // 1,
   @js.native
   sealed trait PivotedGrid extends PaneId
-  
 }
-

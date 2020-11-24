@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VpnIPProtocol extends js.Object
-
 /** Specifies the IP protocols (numeric values). */
 @JSGlobal("Windows.Networking.Vpn.VpnIPProtocol")
 @js.native
 object VpnIPProtocol extends js.Object {
+  
   /** Internet Control Message Protocol (ICMP) */
   @js.native
   sealed trait icmp extends VpnIPProtocol
@@ -38,6 +38,4 @@ object VpnIPProtocol extends js.Object {
   /** User Datagram Protocol (UDP) */
   @js.native
   sealed trait udp extends VpnIPProtocol
-  
 }
-

@@ -2,11 +2,12 @@ package typings.babylonjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/animationEvent", JSImport.Namespace)
 @js.native
 object animationEventMod extends js.Object {
+  
   @js.native
   class AnimationEvent protected () extends js.Object {
     /**
@@ -29,19 +30,22 @@ object animationEventMod extends js.Object {
       /** Specifies if the event should be triggered only once**/
     onlyOnce: Boolean
     ) = this()
+    
+    /** @hidden */
+    def _clone(): AnimationEvent = js.native
+    
+    /** The event to perform when triggered **/
+    def action(currentFrame: Double): Unit = js.native
+    
     /** The frame for which the event is triggered **/
     var frame: Double = js.native
+    
     /**
       * Specifies if the animation event is done
       */
     var isDone: Boolean = js.native
+    
     /** Specifies if the event should be triggered only once**/
     var onlyOnce: js.UndefOr[Boolean] = js.native
-    /** @hidden */
-    def _clone(): AnimationEvent = js.native
-    /** The event to perform when triggered **/
-    def action(currentFrame: Double): Unit = js.native
   }
-  
 }
-

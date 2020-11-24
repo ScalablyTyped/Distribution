@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Service")
 @js.native
@@ -21,11 +21,11 @@ class ClassService protected ()
   def this(name: String, worker: js.Function) = this()
   def this(name: String, worker: js.Function, event: js.Object) = this()
 }
-
 /* static members */
 @JSGlobal("Class_Service")
 @js.native
 object ClassService extends js.Object {
+  
   /**
     * 
     * @brief 安装服务到系统
@@ -41,6 +41,7 @@ object ClassService extends js.Object {
   def install(name: String, cmd: String, displayName: js.UndefOr[scala.Nothing], description: String): Unit = js.native
   def install(name: String, cmd: String, displayName: String): Unit = js.native
   def install(name: String, cmd: String, displayName: String, description: String): Unit = js.native
+  
   /**
     * 
     * @brief 检测服务是否安装
@@ -51,6 +52,7 @@ object ClassService extends js.Object {
     * 
     */
   def isInstalled(name: String): Boolean = js.native
+  
   /**
     * 
     * @brief 检测服务是否运行
@@ -61,6 +63,7 @@ object ClassService extends js.Object {
     * 
     */
   def isRunning(name: String): Boolean = js.native
+  
   /**
     * 
     * @brief 从系统中卸载服务
@@ -70,6 +73,7 @@ object ClassService extends js.Object {
     * 
     */
   def remove(name: String): Unit = js.native
+  
   /**
     * 
     * @brief 重启服务
@@ -79,6 +83,7 @@ object ClassService extends js.Object {
     * 
     */
   def restart(name: String): Unit = js.native
+  
   /**
     * 
     * @brief 启动服务
@@ -88,6 +93,7 @@ object ClassService extends js.Object {
     * 
     */
   def start(name: String): Unit = js.native
+  
   /**
     * 
     * @brief 停止服务
@@ -98,4 +104,3 @@ object ClassService extends js.Object {
     */
   def stop(name: String): Unit = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.strftime.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strftime", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Format a local time/date according to locale settings
     * @param {string} format A format.
@@ -22,4 +23,3 @@ object ^ extends js.Object {
     */
   def apply(format: String, date: Date): String = js.native
 }
-

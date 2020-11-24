@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch", "LogStream")
 @js.native
@@ -23,11 +23,11 @@ class LogStream protected ()
   def this(name: String, args: LogStreamArgs) = this()
   def this(name: String, args: LogStreamArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cloudwatch", "LogStream")
 @js.native
 object LogStream extends js.Object {
+  
   /**
     * Get an existing LogStream resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object LogStream extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.logStreamMod.LogStream = js.native
   def get(name: String, id: Input[ID], state: LogStreamState): typings.pulumiAws.logStreamMod.LogStream = js.native
   def get(name: String, id: Input[ID], state: LogStreamState, opts: CustomResourceOptions): typings.pulumiAws.logStreamMod.LogStream = js.native
+  
   /**
     * Returns true if the given object is an instance of LogStream.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean = js.native
 }
-

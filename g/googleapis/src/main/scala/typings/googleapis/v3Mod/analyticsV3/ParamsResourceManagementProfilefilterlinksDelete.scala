@@ -6,70 +6,87 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceManagementProfilefilterlinksDelete extends StandardParameters {
+  
   /**
     * Account ID to which the profile filter link belongs.
     */
   var accountId: js.UndefOr[String] = js.native
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * ID of the profile filter link to delete.
     */
   var linkId: js.UndefOr[String] = js.native
+  
   /**
     * Profile ID to which the filter link belongs.
     */
   var profileId: js.UndefOr[String] = js.native
+  
   /**
     * Web property Id to which the profile filter link belongs.
     */
   var webPropertyId: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceManagementProfilefilterlinksDelete {
+  
   @scala.inline
   def apply(): ParamsResourceManagementProfilefilterlinksDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceManagementProfilefilterlinksDelete]
   }
+  
   @scala.inline
   implicit class ParamsResourceManagementProfilefilterlinksDeleteOps[Self <: ParamsResourceManagementProfilefilterlinksDelete] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAccountId: Self = this.set("accountId", js.undefined)
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setLinkId(value: String): Self = this.set("linkId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLinkId: Self = this.set("linkId", js.undefined)
+    
     @scala.inline
     def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProfileId: Self = this.set("profileId", js.undefined)
+    
     @scala.inline
     def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
   }
-  
 }
-

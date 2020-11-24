@@ -2,11 +2,10 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Animation extends js.Object
-
 /**
   * Animations that can be played on a marker. Use the
   * {@link Marker#setAnimation setAnimation} method on Marker or the
@@ -16,6 +15,7 @@ sealed trait Animation extends js.Object
 @JSGlobal("google.maps.Animation")
 @js.native
 object Animation extends js.Object {
+  
   /**
     * Marker bounces until animation is stopped.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Animation.BOUNCE Maps JavaScript API}
@@ -29,6 +29,4 @@ object Animation extends js.Object {
     */
   @js.native
   sealed trait DROP extends Animation
-  
 }
-

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/lightsail/staticIpAttachment", "StaticIpAttachment")
 @js.native
@@ -21,24 +21,27 @@ class StaticIpAttachment protected () extends CustomResource {
     */
   def this(name: String, args: StaticIpAttachmentArgs) = this()
   def this(name: String, args: StaticIpAttachmentArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The name of the Lightsail instance to attach the IP to
     */
   val instanceName: Output_[String] = js.native
+  
   /**
     * The allocated static IP address
     */
   val ipAddress: Output_[String] = js.native
+  
   /**
     * The name of the allocated static IP
     */
   val staticIpName: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/lightsail/staticIpAttachment", "StaticIpAttachment")
 @js.native
 object StaticIpAttachment extends js.Object {
+  
   /**
     * Get an existing StaticIpAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +55,10 @@ object StaticIpAttachment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StaticIpAttachment = js.native
   def get(name: String, id: Input[ID], state: StaticIpAttachmentState): StaticIpAttachment = js.native
   def get(name: String, id: Input[ID], state: StaticIpAttachmentState, opts: CustomResourceOptions): StaticIpAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of StaticIpAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean = js.native
 }
-

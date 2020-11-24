@@ -2,67 +2,165 @@ package typings.instagramPrivateApi.igtvSearchResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IgtvSearchResponseUser extends js.Object {
-  var biography: js.UndefOr[String] = js.undefined
-  var biography_with_entities: js.UndefOr[IgtvSearchResponseBiographyWithEntities] = js.undefined
-  var external_lynx_url: js.UndefOr[String] = js.undefined
-  var external_url: js.UndefOr[String] = js.undefined
-  var friendship_status: js.UndefOr[IgtvSearchResponseFriendshipStatus] = js.undefined
-  var full_name: js.UndefOr[String] = js.undefined
-  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
-  var has_biography_translation: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[Double] = js.undefined
-  var is_private: js.UndefOr[Boolean] = js.undefined
-  var is_verified: js.UndefOr[Boolean] = js.undefined
-  var latest_reel_media: js.UndefOr[Double] = js.undefined
-  var mutual_followers_count: js.UndefOr[Double] = js.undefined
-  var pk: js.UndefOr[Double] = js.undefined
-  var profile_pic_id: js.UndefOr[String] = js.undefined
-  var profile_pic_url: js.UndefOr[String] = js.undefined
-  var username: String
+  
+  var biography: js.UndefOr[String] = js.native
+  
+  var biography_with_entities: js.UndefOr[IgtvSearchResponseBiographyWithEntities] = js.native
+  
+  var external_lynx_url: js.UndefOr[String] = js.native
+  
+  var external_url: js.UndefOr[String] = js.native
+  
+  var friendship_status: js.UndefOr[IgtvSearchResponseFriendshipStatus] = js.native
+  
+  var full_name: js.UndefOr[String] = js.native
+  
+  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+  
+  var has_biography_translation: js.UndefOr[Boolean] = js.native
+  
+  var id: js.UndefOr[Double] = js.native
+  
+  var is_private: js.UndefOr[Boolean] = js.native
+  
+  var is_verified: js.UndefOr[Boolean] = js.native
+  
+  var latest_reel_media: js.UndefOr[Double] = js.native
+  
+  var mutual_followers_count: js.UndefOr[Double] = js.native
+  
+  var pk: js.UndefOr[Double] = js.native
+  
+  var profile_pic_id: js.UndefOr[String] = js.native
+  
+  var profile_pic_url: js.UndefOr[String] = js.native
+  
+  var username: String = js.native
 }
-
 object IgtvSearchResponseUser {
+  
   @scala.inline
-  def apply(
-    username: String,
-    biography: String = null,
-    biography_with_entities: IgtvSearchResponseBiographyWithEntities = null,
-    external_lynx_url: String = null,
-    external_url: String = null,
-    friendship_status: IgtvSearchResponseFriendshipStatus = null,
-    full_name: String = null,
-    has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined,
-    has_biography_translation: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Double] = js.undefined,
-    is_private: js.UndefOr[Boolean] = js.undefined,
-    is_verified: js.UndefOr[Boolean] = js.undefined,
-    latest_reel_media: js.UndefOr[Double] = js.undefined,
-    mutual_followers_count: js.UndefOr[Double] = js.undefined,
-    pk: js.UndefOr[Double] = js.undefined,
-    profile_pic_id: String = null,
-    profile_pic_url: String = null
-  ): IgtvSearchResponseUser = {
+  def apply(username: String): IgtvSearchResponseUser = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-    if (biography != null) __obj.updateDynamic("biography")(biography.asInstanceOf[js.Any])
-    if (biography_with_entities != null) __obj.updateDynamic("biography_with_entities")(biography_with_entities.asInstanceOf[js.Any])
-    if (external_lynx_url != null) __obj.updateDynamic("external_lynx_url")(external_lynx_url.asInstanceOf[js.Any])
-    if (external_url != null) __obj.updateDynamic("external_url")(external_url.asInstanceOf[js.Any])
-    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status.asInstanceOf[js.Any])
-    if (full_name != null) __obj.updateDynamic("full_name")(full_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_biography_translation)) __obj.updateDynamic("has_biography_translation")(has_biography_translation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_verified)) __obj.updateDynamic("is_verified")(is_verified.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latest_reel_media)) __obj.updateDynamic("latest_reel_media")(latest_reel_media.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutual_followers_count)) __obj.updateDynamic("mutual_followers_count")(mutual_followers_count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pk)) __obj.updateDynamic("pk")(pk.get.asInstanceOf[js.Any])
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
-    if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvSearchResponseUser]
   }
+  
+  @scala.inline
+  implicit class IgtvSearchResponseUserOps[Self <: IgtvSearchResponseUser] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBiography(value: String): Self = this.set("biography", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBiography: Self = this.set("biography", js.undefined)
+    
+    @scala.inline
+    def setBiography_with_entities(value: IgtvSearchResponseBiographyWithEntities): Self = this.set("biography_with_entities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBiography_with_entities: Self = this.set("biography_with_entities", js.undefined)
+    
+    @scala.inline
+    def setExternal_lynx_url(value: String): Self = this.set("external_lynx_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteExternal_lynx_url: Self = this.set("external_lynx_url", js.undefined)
+    
+    @scala.inline
+    def setExternal_url(value: String): Self = this.set("external_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteExternal_url: Self = this.set("external_url", js.undefined)
+    
+    @scala.inline
+    def setFriendship_status(value: IgtvSearchResponseFriendshipStatus): Self = this.set("friendship_status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFriendship_status: Self = this.set("friendship_status", js.undefined)
+    
+    @scala.inline
+    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFull_name: Self = this.set("full_name", js.undefined)
+    
+    @scala.inline
+    def setHas_anonymous_profile_picture(value: Boolean): Self = this.set("has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHas_anonymous_profile_picture: Self = this.set("has_anonymous_profile_picture", js.undefined)
+    
+    @scala.inline
+    def setHas_biography_translation(value: Boolean): Self = this.set("has_biography_translation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHas_biography_translation: Self = this.set("has_biography_translation", js.undefined)
+    
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    
+    @scala.inline
+    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIs_private: Self = this.set("is_private", js.undefined)
+    
+    @scala.inline
+    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIs_verified: Self = this.set("is_verified", js.undefined)
+    
+    @scala.inline
+    def setLatest_reel_media(value: Double): Self = this.set("latest_reel_media", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLatest_reel_media: Self = this.set("latest_reel_media", js.undefined)
+    
+    @scala.inline
+    def setMutual_followers_count(value: Double): Self = this.set("mutual_followers_count", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMutual_followers_count: Self = this.set("mutual_followers_count", js.undefined)
+    
+    @scala.inline
+    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePk: Self = this.set("pk", js.undefined)
+    
+    @scala.inline
+    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_pic_id: Self = this.set("profile_pic_id", js.undefined)
+    
+    @scala.inline
+    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_pic_url: Self = this.set("profile_pic_url", js.undefined)
+  }
 }
-

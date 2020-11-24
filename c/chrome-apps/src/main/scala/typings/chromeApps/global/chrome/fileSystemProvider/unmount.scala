@@ -3,11 +3,12 @@ package typings.chromeApps.global.chrome.fileSystemProvider
 import typings.chromeApps.chrome.fileSystemProvider.UnmountOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.fileSystemProvider.unmount")
 @js.native
 object unmount extends js.Object {
+  
   /**
     * Unmounts a file system with the given fileSystemId.
     * It must be called after onUnmountRequested is invoked.
@@ -21,4 +22,3 @@ object unmount extends js.Object {
   def apply(options: UnmountOptions): Unit = js.native
   def apply(options: UnmountOptions, callback: js.Function0[Unit]): Unit = js.native
 }
-

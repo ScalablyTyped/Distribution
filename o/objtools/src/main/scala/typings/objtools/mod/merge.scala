@@ -2,11 +2,12 @@ package typings.objtools.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("objtools", "merge")
 @js.native
 object merge extends js.Object {
+  
   def apply(args: js.Any*): js.Any = js.native
   def apply[TTarget, TSource](target: TTarget, source: TSource): TTarget with TSource = js.native
   def apply[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget with TSource = js.native
@@ -30,4 +31,3 @@ object merge extends js.Object {
     customizer: MergeCustomizer
   ): TTarget with TSource1 with TSource2 with TSource3 with TSource4 = js.native
 }
-

@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait prng
@@ -19,10 +19,14 @@ trait prng
       /* callback */ js.Any, 
       prng
     ] {
+  
   def apply(): Double = js.native
+  
   def double(): Double = js.native
+  
   def int32(): Double = js.native
+  
   def quick(): Double = js.native
+  
   def state(): State = js.native
 }
-

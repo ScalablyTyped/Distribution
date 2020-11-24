@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.vrdisplaypointerunrestricted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_vrdisplaypointerunrestricted extends js.Object {
+  
   def apply(eventName: vrdisplaypointerunrestricted, handler: Event): Unit = js.native
   def apply(
     eventName: vrdisplaypointerunrestricted,
@@ -20,4 +21,3 @@ object default_vrdisplaypointerunrestricted extends js.Object {
   def apply(eventName: vrdisplaypointerunrestricted, handler: Event, element: Window): Unit = js.native
   def apply(eventName: vrdisplaypointerunrestricted, handler: Event, element: Window, options: Options): Unit = js.native
 }
-

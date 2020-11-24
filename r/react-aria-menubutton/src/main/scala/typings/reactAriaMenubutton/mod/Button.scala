@@ -1,13 +1,12 @@
 package typings.reactAriaMenubutton.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ForwardRefExoticComponent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-aria-menubutton", "Button")
 @js.native
-class Button ()
-  extends Component[ButtonProps[HTMLElement], js.Object, js.Any]
-
+object Button extends TopLevel[ForwardRefExoticComponent[ButtonProps[HTMLElement]]]

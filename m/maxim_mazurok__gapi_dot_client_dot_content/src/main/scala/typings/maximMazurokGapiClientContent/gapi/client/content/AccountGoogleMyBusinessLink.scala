@@ -1,0 +1,63 @@
+package typings.maximMazurokGapiClientContent.gapi.client.content
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait AccountGoogleMyBusinessLink extends js.Object {
+  
+  /** The ID of the GMB account. If this is provided, then `gmbEmail` is ignored. The value of this field should match the `accountId` used by the GMB API. */
+  var gmbAccountId: js.UndefOr[String] = js.native
+  
+  /**
+    * The GMB email address of which a specific account within a GMB account. A sample account within a GMB account could be a business account with set of locations, managed under the
+    * GMB account.
+    */
+  var gmbEmail: js.UndefOr[String] = js.native
+  
+  /** Status of the link between this Merchant Center account and the GMB account. Acceptable values are: - "`active`" - "`pending`" */
+  var status: js.UndefOr[String] = js.native
+}
+object AccountGoogleMyBusinessLink {
+  
+  @scala.inline
+  def apply(): AccountGoogleMyBusinessLink = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[AccountGoogleMyBusinessLink]
+  }
+  
+  @scala.inline
+  implicit class AccountGoogleMyBusinessLinkOps[Self <: AccountGoogleMyBusinessLink] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setGmbAccountId(value: String): Self = this.set("gmbAccountId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteGmbAccountId: Self = this.set("gmbAccountId", js.undefined)
+    
+    @scala.inline
+    def setGmbEmail(value: String): Self = this.set("gmbEmail", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteGmbEmail: Self = this.set("gmbEmail", js.undefined)
+    
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+}

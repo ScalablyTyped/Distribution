@@ -10,13 +10,13 @@ Interactive navigable audio visualization using Web Audio and Canvas
 | ------------------ | :-------------: |
 | Full name          | wavesurfer.js |
 | Keywords           | waveform, audio, music, player, webaudio, microphone, visualization |
-| # releases         | 14 |
-| # dependents       | 21 |
-| # downloads        | 691274 |
+| # releases         | 18 |
+| # dependents       | 33 |
+| # downloads        | 1255627 |
 | # stars            | 5 |
 
 ## Links
-- [Homepage](https://github.com/katspaugh/wavesurfer.js)
+- [Homepage](https://wavesurfer-js.org)
 - [Bugs](https://github.com/katspaugh/wavesurfer.js/issues)
 - [Repository](https://github.com/katspaugh/wavesurfer.js)
 - [Npm](https://www.npmjs.com/package/wavesurfer.js)

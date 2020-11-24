@@ -3,11 +3,12 @@ package typings.babylonjs
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Navigation/Plugins/index", JSImport.Namespace)
 @js.native
 object navigationPluginsIndexMod extends js.Object {
+  
   @js.native
   class RecastJSCrowd protected ()
     extends typings.babylonjs.recastJSPluginMod.RecastJSCrowd {
@@ -36,6 +37,4 @@ object navigationPluginsIndexMod extends js.Object {
     extends typings.babylonjs.recastJSPluginMod.RecastJSPlugin {
     def this(recastInjection: js.Any) = this()
   }
-  
 }
-

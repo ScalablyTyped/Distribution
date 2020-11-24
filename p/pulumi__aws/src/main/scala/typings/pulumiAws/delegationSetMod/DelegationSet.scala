@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet")
 @js.native
@@ -23,22 +23,24 @@ class DelegationSet protected () extends CustomResource {
   def this(name: String, args: DelegationSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DelegationSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * A list of authoritative name servers for the hosted zone
     * (effectively a list of NS records).
     */
   val nameServers: Output_[js.Array[String]] = js.native
+  
   /**
     * This is a reference name used in Caller Reference
     * (helpful for identifying single delegation set amongst others)
     */
   val referenceName: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet")
 @js.native
 object DelegationSet extends js.Object {
+  
   /**
     * Get an existing DelegationSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +54,10 @@ object DelegationSet extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DelegationSet = js.native
   def get(name: String, id: Input[ID], state: DelegationSetState): DelegationSet = js.native
   def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): DelegationSet = js.native
+  
   /**
     * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.dynogels.mod.AWS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.EnvironmentCredentials")
 @js.native
@@ -14,4 +14,3 @@ class EnvironmentCredentials protected ()
     */
   def this(envPrefix: String) = this()
 }
-

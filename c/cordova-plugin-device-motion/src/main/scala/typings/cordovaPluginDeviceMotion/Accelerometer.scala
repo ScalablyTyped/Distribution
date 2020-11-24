@@ -2,7 +2,7 @@ package typings.cordovaPluginDeviceMotion
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin provides access to the device's accelerometer. The accelerometer is a motion sensor
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Accelerometer extends js.Object {
+  
   /**
     * Stop watching the Acceleration referenced by the watchID parameter.
     * @param watchID The ID returned by navigator.accelerometer.watchAcceleration.
     */
   def clearWatch(watchID: WatchHandle): Unit = js.native
+  
   /**
     * Get the current acceleration along the x, y, and z axes.
     * These acceleration values are returned to the accelerometerSuccess callback function.
@@ -26,6 +28,7 @@ trait Accelerometer extends js.Object {
     accelerometerSuccess: js.Function1[/* acceleration */ Acceleration, Unit],
     accelerometerError: js.Function0[Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the device's current Acceleration at a regular interval, executing the
     * accelerometerSuccess callback function each time. Specify the interval in milliseconds
@@ -46,4 +49,3 @@ trait Accelerometer extends js.Object {
     accelerometerOptions: AccelerometerOptions
   ): WatchHandle = js.native
 }
-

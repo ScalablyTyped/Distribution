@@ -12,7 +12,7 @@ vector tile mapreduce
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 1420 |
+| # downloads        | 868 |
 | # stars            | 0 |
 
 ## Links

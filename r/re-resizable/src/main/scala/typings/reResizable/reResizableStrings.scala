@@ -3,9 +3,52 @@ package typings.reResizable
 import typings.reResizable.resizerMod.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reResizableStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  
+  @scala.inline
+  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  
+  @scala.inline
+  def column: column = "column".asInstanceOf[column]
+  
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def parent: parent = "parent".asInstanceOf[parent]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def row: row = "row".asInstanceOf[row]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  
+  @scala.inline
+  def topRight: topRight = "topRight".asInstanceOf[topRight]
+  
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  
+  @scala.inline
+  def window: window = "window".asInstanceOf[window]
+  
   @js.native
   sealed trait bottom extends Direction
   
@@ -47,34 +90,4 @@ object reResizableStrings {
   
   @js.native
   sealed trait window extends js.Object
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
 }
-

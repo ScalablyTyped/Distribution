@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.reactSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-spinners", "MoonLoader")
 @js.native
@@ -16,8 +16,6 @@ class MoonLoader protected ()
   def this(props: LoaderSizeProps) = this()
   def this(props: LoaderSizeProps, context: js.Any) = this()
 }
-
 @JSImport("react-spinners", "MoonLoader")
 @js.native
 object MoonLoader extends TopLevel[ComponentClass[LoaderSizeProps, ComponentState]]
-

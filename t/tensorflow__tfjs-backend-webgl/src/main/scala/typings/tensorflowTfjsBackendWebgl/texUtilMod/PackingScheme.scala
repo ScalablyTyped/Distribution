@@ -3,14 +3,17 @@ package typings.tensorflowTfjsBackendWebgl.texUtilMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PackingScheme extends js.Object
-
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "PackingScheme")
 @js.native
 object PackingScheme extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[PackingScheme with Double] = js.native
+  
   /**
     * All values in a single texel are densely packed without any constraints.
     *
@@ -28,6 +31,8 @@ object PackingScheme extends js.Object {
     */
   @js.native
   sealed trait DENSE extends PackingScheme
+  /* 0 */ @js.native
+  object DENSE extends TopLevel[DENSE with Double]
   
   /**
     * Single texels contain only values from the same batch, and from adjacent
@@ -47,14 +52,6 @@ object PackingScheme extends js.Object {
     */
   @js.native
   sealed trait SHARED_BATCH extends PackingScheme
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PackingScheme with Double] = js.native
-  /* 0 */ @js.native
-  object DENSE extends TopLevel[DENSE with Double]
-  
   /* 1 */ @js.native
   object SHARED_BATCH extends TopLevel[SHARED_BATCH with Double]
-  
 }
-

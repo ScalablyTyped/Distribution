@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/athena/workgroup", "Workgroup")
 @js.native
@@ -25,40 +25,47 @@ class Workgroup protected () extends CustomResource {
   def this(name: String, args: WorkgroupArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: WorkgroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Amazon Resource Name (ARN) of the workgroup
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Configuration block with various settings for the workgroup. Documented below.
     */
   val configuration: Output_[js.UndefOr[WorkgroupConfiguration]] = js.native
+  
   /**
     * Description of the workgroup.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
     */
   val forceDestroy: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * Name of the workgroup.
     */
   val name: Output_[String] = js.native
+  
   /**
     * State of the workgroup. Valid values are `DISABLED` or `ENABLED`. Defaults to `ENABLED`.
     */
   val state: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * Key-value map of resource tags for the workgroup.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/athena/workgroup", "Workgroup")
 @js.native
 object Workgroup extends js.Object {
+  
   /**
     * Get an existing Workgroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -72,10 +79,10 @@ object Workgroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Workgroup = js.native
   def get(name: String, id: Input[ID], state: WorkgroupState): Workgroup = js.native
   def get(name: String, id: Input[ID], state: WorkgroupState, opts: CustomResourceOptions): Workgroup = js.native
+  
   /**
     * Returns true if the given object is an instance of Workgroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/workgroup.Workgroup */ Boolean = js.native
 }
-

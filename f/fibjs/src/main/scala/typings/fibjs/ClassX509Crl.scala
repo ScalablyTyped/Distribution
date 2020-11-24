@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassX509Crl extends ClassObject {
+  
   /**
     * 
     * @brief 清空已经加载的撤销证书
@@ -19,6 +20,7 @@ trait ClassX509Crl extends ClassObject {
     * 
     */
   def clear(): Unit = js.native
+  
   /**
     * 
     * @brief 导出已经加载的撤销证书
@@ -28,6 +30,7 @@ trait ClassX509Crl extends ClassObject {
     * 
     */
   def dump(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 加载一个 DER 格式的撤销证书，可多次调用
@@ -46,6 +49,7 @@ trait ClassX509Crl extends ClassObject {
     * 
     */
   def load(pemCrl: String): Unit = js.native
+  
   /**
     * 
     * @brief 加载一个 PEM/DER 格式的撤销证书，可多次调用
@@ -56,4 +60,3 @@ trait ClassX509Crl extends ClassObject {
     */
   def loadFile(filename: String): Unit = js.native
 }
-

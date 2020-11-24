@@ -9,9 +9,9 @@ DOM assertions for the Chai assertion library using vanilla JavaScript
 | ------------------ | :-------------: |
 | Full name          | chai-dom |
 | Keywords           | test, assertion, assert, testing, chai-plugin, browser, vendor, dom, no-jquery |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 924033 |
+| # releases         | 3 |
+| # dependents       | 17 |
+| # downloads        | 1448802 |
 | # stars            | 0 |
 
 ## Links

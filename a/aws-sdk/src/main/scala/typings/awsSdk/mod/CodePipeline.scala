@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.codepipelineMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CodePipeline")
 @js.native
@@ -14,4 +14,3 @@ class CodePipeline ()
   extends typings.awsSdk.allMod.CodePipeline {
   def this(options: ClientConfiguration) = this()
 }
-

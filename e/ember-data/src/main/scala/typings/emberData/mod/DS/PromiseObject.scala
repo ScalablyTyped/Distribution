@@ -5,7 +5,7 @@ import typings.emberObject.proxyMod.ObjectProxy
 import typings.emberObject.proxyMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `PromiseObject` is an object that acts like both an `Ember.Object`
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 class PromiseObject[T] ()
   extends PromiseProxyMixin[T with default[js.Object]]
      with ObjectProxy[T]
-

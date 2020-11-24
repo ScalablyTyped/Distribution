@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Task")
 @js.native
 class ResourceTask protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fusiontables.task.delete
     * @desc Deletes a specific task by its ID, unless that task has already
@@ -39,6 +41,7 @@ class ResourceTask protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTaskDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTaskDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * fusiontables.task.get
     * @desc Retrieves a specific task by its ID.
@@ -64,6 +67,7 @@ class ResourceTask protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceTaskGet, options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceTaskGet, options: MethodOptions, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  
   /**
     * fusiontables.task.list
     * @desc Retrieves a list of tasks.
@@ -96,4 +100,3 @@ class ResourceTask protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTaskList]
   ): Unit = js.native
 }
-

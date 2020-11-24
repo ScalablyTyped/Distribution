@@ -4,13 +4,15 @@ import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/AudioRecorder", JSImport.Namespace)
 @js.native
 object audioRecorderMod extends js.Object {
+  
   @js.native
   class AudioRecorder () extends js.Object {
+    
     /**
       * Callback which is invoked when the audio recording process has stopped
       * and the underlying Guacamole stream has been closed normally. Audio will
@@ -20,6 +22,7 @@ object audioRecorderMod extends js.Object {
       * @event
       */
     var onclose: Null | js.Function0[Unit] = js.native
+    
     /**
       * Callback which is invoked when the audio recording process cannot
       * continue due to an error, if it has started at all. The underlying
@@ -31,10 +34,10 @@ object audioRecorderMod extends js.Object {
       */
     var onerror: Null | js.Function0[Unit] = js.native
   }
-  
   /* static members */
   @js.native
   object AudioRecorder extends js.Object {
+    
     /**
       * Returns an instance of Guacamole.AudioRecorder providing support for the
       * given audio format. If support for the given audio format is not available,
@@ -47,6 +50,7 @@ object audioRecorderMod extends js.Object {
       * writing to the given stream, or null if support for the given mimetype is absent.
       */
     def getInstance(stream: OutputStream, mimetype: Mimetype): AudioRecorder | Null = js.native
+    
     /**
       * Returns a list of all mimetypes supported by any built-in
       * Guacamole.AudioRecorder, in rough order of priority. Beware that only the
@@ -60,6 +64,7 @@ object audioRecorderMod extends js.Object {
       * Guacamole.AudioRecorder, excluding any parameters.
       */
     def getSupportedTypes(): js.Array[String] = js.native
+    
     /**
       * Determines whether the given mimetype is supported by any built-in
       * implementation of Guacamole.AudioRecorder, and thus will be properly handled
@@ -71,6 +76,4 @@ object audioRecorderMod extends js.Object {
       */
     def isSupportedType(mimetype: Mimetype): Boolean = js.native
   }
-  
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Grid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SummaryType extends js.Object
-
 @JSGlobal("ej.Grid.SummaryType")
 @js.native
 object SummaryType extends js.Object {
+  
   ///Summary type is average.
   @js.native
   sealed trait Average extends SummaryType
@@ -41,6 +41,4 @@ object SummaryType extends js.Object {
   ///Summary type is true count.
   @js.native
   sealed trait TrueCount extends SummaryType
-  
 }
-

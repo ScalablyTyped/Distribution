@@ -11,8 +11,8 @@ A replacement for process.exit that ensures stdio are fully drained before exiti
 | Full name          | exit |
 | Keywords           | exit, process, stdio, stdout, stderr, drain, flush, 3584 |
 | # releases         | 0 |
-| # dependents       | 224 |
-| # downloads        | 238784683 |
+| # dependents       | 267 |
+| # downloads        | 365441419 |
 | # stars            | 9 |
 
 ## Links

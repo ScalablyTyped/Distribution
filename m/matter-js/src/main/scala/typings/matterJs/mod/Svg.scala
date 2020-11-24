@@ -3,16 +3,16 @@ package typings.matterJs.mod
 import typings.std.SVGPathElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Svg")
 @js.native
 class Svg () extends js.Object
-
 /* static members */
 @JSImport("matter-js", "Svg")
 @js.native
 object Svg extends js.Object {
+  
   /**
     * Converts an SVG path into an array of vector points.
     * If the input path forms a concave shape, you must decompose the result into convex parts before use.
@@ -25,4 +25,3 @@ object Svg extends js.Object {
     */
   def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = js.native
 }
-

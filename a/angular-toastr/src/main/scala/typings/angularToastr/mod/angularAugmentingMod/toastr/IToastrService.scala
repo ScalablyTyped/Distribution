@@ -2,14 +2,16 @@ package typings.angularToastr.mod.angularAugmentingMod.toastr
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IToastrService extends js.Object {
+  
   /**
     * Return the number of active toasts in screen.
     */
   def active(): Double = js.native
+  
   /**
     * Remove toast from screen. If no toast is passed in, all toasts will be closed.
     *
@@ -17,6 +19,7 @@ trait IToastrService extends js.Object {
     */
   def clear(): Unit = js.native
   def clear(toast: IToast): Unit = js.native
+  
   /**
     * Create error toast notification message.
     *
@@ -28,6 +31,7 @@ trait IToastrService extends js.Object {
   def error(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def error(message: String, title: String): IToast = js.native
   def error(message: String, title: String, options: IToastOptions): IToast = js.native
+  
   /**
     * Create info toast notification message.
     *
@@ -39,6 +43,7 @@ trait IToastrService extends js.Object {
   def info(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def info(message: String, title: String): IToast = js.native
   def info(message: String, title: String, options: IToastOptions): IToast = js.native
+  
   /**
     * Create success toast notification message.
     *
@@ -50,6 +55,7 @@ trait IToastrService extends js.Object {
   def success(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def success(message: String, title: String): IToast = js.native
   def success(message: String, title: String, options: IToastOptions): IToast = js.native
+  
   /**
     * Create warning toast notification message.
     *
@@ -62,4 +68,3 @@ trait IToastrService extends js.Object {
   def warning(message: String, title: String): IToast = js.native
   def warning(message: String, title: String, options: IToastOptions): IToast = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.winjs.mod.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
@@ -23,14 +23,13 @@ class Rating ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.Rating")
 @js.native
 object Rating extends js.Object {
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

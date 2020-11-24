@@ -2,11 +2,12 @@ package typings.meteor.checkMod.Match
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/check", "Match.OneOf")
 @js.native
 object OneOf extends js.Object {
+  
   def apply[T /* <: js.Array[Pattern] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param patterns because its type T is not an array type */ patterns: T
   ): Matcher[
@@ -15,4 +16,3 @@ object OneOf extends js.Object {
     ]
   ] = js.native
 }
-

@@ -12,7 +12,7 @@ base64topdf
 | Keywords           | base64, pdf, pdf, conversion, rtf, plain text, text, plain, encoding, decoding, string, stringtobase64, base64tostring, rtftobase64, base64tortf |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 70835 |
+| # downloads        | 78883 |
 | # stars            | 0 |
 
 ## Links

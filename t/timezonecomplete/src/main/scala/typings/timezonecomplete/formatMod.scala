@@ -5,11 +5,12 @@ import typings.timezonecomplete.localeMod.PartialLocale
 import typings.timezonecomplete.timezoneMod.TimeZone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete/dist/lib/format", JSImport.Namespace)
 @js.native
 object formatMod extends js.Object {
+  
   def format(
     dateTime: TimeStruct,
     utcTime: TimeStruct,
@@ -40,4 +41,3 @@ object formatMod extends js.Object {
     locale: PartialLocale
   ): String = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an interface for controls, which are suitable as items for the sap.m.IconTabBar.The
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IconTab extends js.Object
-

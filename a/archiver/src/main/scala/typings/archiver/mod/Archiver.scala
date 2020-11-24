@@ -18,11 +18,13 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Archiver extends Transform {
+  
   def abort(): this.type = js.native
+  
   def append(source: String): this.type = js.native
   def append(source: String, data: EntryData | TarEntryData): this.type = js.native
   def append(source: String, data: ZipEntryData): this.type = js.native
@@ -32,6 +34,7 @@ trait Archiver extends Transform {
   def append(source: Readable): this.type = js.native
   def append(source: Readable, data: EntryData | TarEntryData): this.type = js.native
   def append(source: Readable, data: ZipEntryData): this.type = js.native
+  
   def directory(dirpath: String, destpath: String): this.type = js.native
   def directory(dirpath: String, destpath: String, data: PartialEntryData): this.type = js.native
   def directory(dirpath: String, destpath: String, data: EntryDataFunction): this.type = js.native
@@ -42,15 +45,18 @@ trait Archiver extends Transform {
   def directory_false(dirpath: String, destpath: `false`, data: PartialEntryData): this.type = js.native
   @JSName("directory")
   def directory_false(dirpath: String, destpath: `false`, data: EntryDataFunction): this.type = js.native
+  
   def file(filename: String, data: EntryData): this.type = js.native
+  
   def glob(pattern: String): this.type = js.native
   def glob(pattern: String, options: js.UndefOr[scala.Nothing], data: PartialEntryData): this.type = js.native
   def glob(pattern: String, options: IOptions): this.type = js.native
   def glob(pattern: String, options: IOptions, data: PartialEntryData): this.type = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_data(event: data, listener: js.Function1[/* data */ EntryData, Unit]): this.type = js.native
+  def on_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
   @JSName("on")
   def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -67,10 +73,15 @@ trait Archiver extends Transform {
   def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("on")
   def on_warning(event: warning, listener: js.Function1[/* error */ ArchiverError, Unit]): this.type = js.native
+  
   def pointer(): Double = js.native
+  
   def setFormat(format: String): this.type = js.native
+  
   def setModule(module: js.Function): this.type = js.native
+  
   def symlink(filepath: String, target: String): this.type = js.native
+  def symlink(filepath: String, target: String, mode: Double): this.type = js.native
+  
   def use(plugin: js.Function): this.type = js.native
 }
-

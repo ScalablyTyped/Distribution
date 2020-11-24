@@ -2,7 +2,7 @@ package typings.preloadjs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.LoadQueue")
 @js.native
@@ -20,4 +20,3 @@ class LoadQueue ()
   def this(preferXHR: Boolean, basePath: String, crossOrigin: String) = this()
   def this(preferXHR: Boolean, basePath: String, crossOrigin: Boolean) = this()
 }
-

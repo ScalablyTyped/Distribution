@@ -3,13 +3,14 @@ package typings.googleapis.cloudprofilerV2Mod.cloudprofilerV2
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deployment contains the deployment identification information.
   */
 @js.native
 trait SchemaDeployment extends js.Object {
+  
   /**
     * Labels identify the deployment within the user universe and same target.
     * Validation regex for label names: `^[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?$`.
@@ -25,11 +26,13 @@ trait SchemaDeployment extends js.Object {
     * &quot;us-central1&quot; or &quot;us-central&quot;.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Project ID is the ID of a cloud project. Validation regex:
     * `^a-z{4,61}[a-z0-9]$`.
     */
   var projectId: js.UndefOr[String] = js.native
+  
   /**
     * Target is the service name used to group related deployments: * Service
     * name for GAE Flex / Standard. * Cluster and container name for GKE. *
@@ -38,37 +41,45 @@ trait SchemaDeployment extends js.Object {
     */
   var target: js.UndefOr[String] = js.native
 }
-
 object SchemaDeployment {
+  
   @scala.inline
   def apply(): SchemaDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeployment]
   }
+  
   @scala.inline
   implicit class SchemaDeploymentOps[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProjectId: Self = this.set("projectId", js.undefined)
+    
     @scala.inline
     def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTarget: Self = this.set("target", js.undefined)
   }
-  
 }
-

@@ -12,7 +12,7 @@ Shared TypeScript definitions for Minecraft Bedrock Edition's scripting engine
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 1231 |
+| # downloads        | 1015 |
 | # stars            | 0 |
 
 ## Links

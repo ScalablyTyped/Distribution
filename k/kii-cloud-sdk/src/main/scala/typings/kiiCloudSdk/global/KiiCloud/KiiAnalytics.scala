@@ -3,7 +3,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 import typings.kiiCloudSdk.anon.`19`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main SDK class
@@ -12,23 +12,25 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiAnalytics ()
   extends typings.kiiCloudSdk.KiiCloud.KiiAnalytics
-
 /* static members */
 @JSGlobal("KiiCloud.KiiAnalytics")
 @js.native
 object KiiAnalytics extends js.Object {
+  
   /**
     * Retrieve the current app ID
     *
     * @return The current app ID
     */
   def getAppID(): String = js.native
+  
   /**
     * Retrieve the current app key
     *
     * @return The current app key
     */
   def getAppKey(): String = js.native
+  
   /**
     * Get the deviceId. If deviceId has not specified while initialization, it returns SDK generated deviceId.It is recommended to retrieve the deviceId and store it to identify the device
     * properly.
@@ -36,6 +38,7 @@ object KiiAnalytics extends js.Object {
     * @return deviceId.
     */
   def getDeviceId(): String = js.native
+  
   /**
     *
     *
@@ -44,6 +47,7 @@ object KiiAnalytics extends js.Object {
     * @return current version number of the SDK
     */
   def getSDKVersion(): String = js.native
+  
   /**
     *
     *
@@ -63,6 +67,7 @@ object KiiAnalytics extends js.Object {
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
   def initialize(appID: String, appKey: String, deviceid: String): Unit = js.native
+  
   /**
     *
     *
@@ -88,12 +93,14 @@ object KiiAnalytics extends js.Object {
     site: typings.kiiCloudSdk.KiiCloud.KiiAnalyticsSite,
     deviceid: String
   ): Unit = js.native
+  
   /**
     * Is the SDK printing logs to the console?
     *
     * @return True if printing logs, false otherwise
     */
   def isLogging(): Boolean = js.native
+  
   /**
     * Utilize the KiiAnalytics logger to track SDK-specific actions
     *
@@ -105,6 +112,7 @@ object KiiAnalytics extends js.Object {
     *         KiiAnalytics.logger("My message");
     */
   def logger(message: String): Unit = js.native
+  
   /**
     *
     *
@@ -113,6 +121,7 @@ object KiiAnalytics extends js.Object {
     * @param url A string containing the desired endpoint
     */
   def setBaseURL(url: String): Unit = js.native
+  
   /**
     * Set the logging status of the SDK
     *
@@ -124,6 +133,7 @@ object KiiAnalytics extends js.Object {
     *         KiiAnalytics.setLogging(true);
     */
   def setLogging(True: Boolean): Unit = js.native
+  
   /**
     * Log a single event to be uploaded to KiiAnalytics
     *
@@ -142,6 +152,7 @@ object KiiAnalytics extends js.Object {
     *     </ul>
     */
   def trackEvent(eventName: String): js.Promise[Unit] = js.native
+  
   /**
     * Log a single event to be uploaded to KiiAnalytics
     *
@@ -164,6 +175,7 @@ object KiiAnalytics extends js.Object {
     *     </ul>
     */
   def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
+  
   /**
     * Log a single event to be uploaded to KiiAnalytics
     *
@@ -189,4 +201,3 @@ object KiiAnalytics extends js.Object {
   def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
   def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = js.native
 }
-

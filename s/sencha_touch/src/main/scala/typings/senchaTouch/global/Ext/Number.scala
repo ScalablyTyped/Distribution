@@ -2,17 +2,17 @@ package typings.senchaTouch.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Number")
 @js.native
 class Number ()
   extends typings.senchaTouch.Ext.Number
-
 /* static members */
 @JSGlobal("Ext.Number")
 @js.native
 object Number extends js.Object {
+  
   /** [Method] Checks whether or not the passed number is within a desired range
     * @param number Number The number to check
     * @param min Number The minimum number in the range
@@ -27,6 +27,7 @@ object Number extends js.Object {
   def constrain(number: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def constrain(number: Double, min: Double): Double = js.native
   def constrain(number: Double, min: Double, max: Double): Double = js.native
+  
   /** [Method] Validate that a value is numeric and convert it to a number if necessary
     * @param value Object
     * @param defaultValue Number The value to return if the original value is non-numeric
@@ -36,6 +37,7 @@ object Number extends js.Object {
   def from(value: js.UndefOr[scala.Nothing], defaultValue: Double): Double = js.native
   def from(value: js.Any): Double = js.native
   def from(value: js.Any, defaultValue: Double): Double = js.native
+  
   /** [Method] Snaps the passed number between stopping points based upon a passed increment value
     * @param value Number The unsnapped value.
     * @param increment Number The increment by which the value must move.
@@ -79,6 +81,7 @@ object Number extends js.Object {
   def snap(value: Double, increment: Double, minValue: js.UndefOr[scala.Nothing], maxValue: Double): Double = js.native
   def snap(value: Double, increment: Double, minValue: Double): Double = js.native
   def snap(value: Double, increment: Double, minValue: Double, maxValue: Double): Double = js.native
+  
   /** [Method] Formats a number using fixed point notation
     * @param value Number The number to format
     * @param precision Number The number of digits to show after the decimal point
@@ -88,4 +91,3 @@ object Number extends js.Object {
   def toFixed(value: Double): Unit = js.native
   def toFixed(value: Double, precision: Double): Unit = js.native
 }
-

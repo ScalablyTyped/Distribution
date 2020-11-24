@@ -10,9 +10,9 @@ Wrapper library for directory and file watching.
 | ------------------ | :-------------: |
 | Full name          | watchpack |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 109 |
-| # downloads        | 284109145 |
+| # releases         | 25 |
+| # dependents       | 149 |
+| # downloads        | 483492683 |
 | # stars            | 2 |
 
 ## Links

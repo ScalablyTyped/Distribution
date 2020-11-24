@@ -2,10 +2,11 @@ package typings.nightwatch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NightwatchSeleniumOptions extends js.Object {
+  
   /**
     * List of cli arguments to be passed to the Selenium process. Here you can set various options for browser drivers, such as:
     *
@@ -23,33 +24,39 @@ trait NightwatchSeleniumOptions extends js.Object {
     * name in the desiredCapabilities object.
     */
   var cli_args: js.Any = js.native
+  
   /**
     * Usually not required and only used if start_process is true. Specify the IP address you wish Selenium to listen on.
     */
   var host: String = js.native
+  
   /**
     * The location where the selenium Selenium-debug.log file will be placed. Defaults to current directory. To disable Selenium logging, set this to false
     */
   var log_path: String | Boolean = js.native
+  
   /**
     * The port number Selenium will listen on.
     */
   var port: Double = js.native
+  
   /**
     * The location of the selenium jar file. This needs to be specified if start_process is enabled.E.g.: lib/selenium-server-standalone-2.43.0.jar
     */
   var server_path: String = js.native
+  
   /**
     * Whether or not to manage the selenium process automatically.
     */
   var start_process: Boolean = js.native
+  
   /**
     * Whether or not to automatically start the Selenium session.
     */
   var start_session: Boolean = js.native
 }
-
 object NightwatchSeleniumOptions {
+  
   @scala.inline
   def apply(
     cli_args: js.Any,
@@ -63,32 +70,41 @@ object NightwatchSeleniumOptions {
     val __obj = js.Dynamic.literal(cli_args = cli_args.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], log_path = log_path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], server_path = server_path.asInstanceOf[js.Any], start_process = start_process.asInstanceOf[js.Any], start_session = start_session.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchSeleniumOptions]
   }
+  
   @scala.inline
   implicit class NightwatchSeleniumOptionsOps[Self <: NightwatchSeleniumOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCli_args(value: js.Any): Self = this.set("cli_args", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLog_path(value: String | Boolean): Self = this.set("log_path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setServer_path(value: String): Self = this.set("server_path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStart_process(value: Boolean): Self = this.set("start_process", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStart_session(value: Boolean): Self = this.set("start_session", value.asInstanceOf[js.Any])
   }
-  
 }
-

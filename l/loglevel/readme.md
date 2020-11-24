@@ -1,7 +1,7 @@
 
 # Scala.js typings for loglevel
 
-Typings are for version 1.6.8
+Typings are for version 1.7.0
 
 ## Library description:
 Minimal lightweight logging for JavaScript, adding reliable log level methods to any available console.log methods
@@ -11,8 +11,8 @@ Minimal lightweight logging for JavaScript, adding reliable log level methods to
 | Full name          | loglevel |
 | Keywords           | log, logger, logging, browser |
 | # releases         | 7 |
-| # dependents       | 627 |
-| # downloads        | 233204097 |
+| # dependents       | 777 |
+| # downloads        | 332114037 |
 | # stars            | 15 |
 
 ## Links

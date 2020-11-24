@@ -6,25 +6,29 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.util")
 @js.native
 object util extends js.Object {
+  
   @js.native
   trait Export extends Control {
+    
     /**
       * Adds some column to the aggregation <code>columns</code>.
       * @param oColumn the column to add; if empty, nothing is inserted
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def addColumn(oColumn: ExportColumn): Export = js.native
+    
     /**
       * Adds some row to the aggregation <code>rows</code>.
       * @param oRow the row to add; if empty, nothing is inserted
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def addRow(oRow: ExportRow): Export = js.native
+    
     /**
       * Binds aggregation <code>columns</code> to model data.See {@link
       * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -33,6 +37,7 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def bindColumns(oBindingInfo: js.Any): Export = js.native
+    
     /**
       * Binds aggregation <code>rows</code> to model data.See {@link
       * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -41,21 +46,25 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def bindRows(oBindingInfo: js.Any): Export = js.native
+    
     /**
       * Destroys all the columns in the aggregation <code>columns</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyColumns(): Export = js.native
+    
     /**
       * Destroys the exportType in the aggregation <code>exportType</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyExportType(): Export = js.native
+    
     /**
       * Destroys all the rows in the aggregation <code>rows</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyRows(): Export = js.native
+    
     /**
       * Generates the file content and returns a Promisewith the instance as context (this).<br>The promise
       * will be resolved with the generated contentas a string.<p><b>Please note: The return value was
@@ -65,18 +74,22 @@ object util extends js.Object {
       * @returns Promise object
       */
     def generate(): JQueryPromise[_] = js.native
+    
     /**
       * Gets content of aggregation <code>columns</code>.Columns for the Export.
       */
     def getColumns(): js.Array[ExportColumn] = js.native
+    
     /**
       * Gets content of aggregation <code>exportType</code>.Type that generates the content.
       */
     def getExportType(): ExportType = js.native
+    
     /**
       * Gets content of aggregation <code>rows</code>.Rows of the Export.
       */
     def getRows(): js.Array[ExportRow] = js.native
+    
     /**
       * Checks for the provided <code>sap.ui.core.util.ExportColumn</code> in the aggregation
       * <code>columns</code>.and returns its index if found or -1 otherwise.
@@ -84,6 +97,7 @@ object util extends js.Object {
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
     def indexOfColumn(oColumn: ExportColumn): Double = js.native
+    
     /**
       * Checks for the provided <code>sap.ui.core.util.ExportRow</code> in the aggregation
       * <code>rows</code>.and returns its index if found or -1 otherwise.
@@ -91,6 +105,7 @@ object util extends js.Object {
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
     def indexOfRow(oRow: ExportRow): Double = js.native
+    
     /**
       * Inserts a column into the aggregation <code>columns</code>.
       * @param oColumn the column to insert; if empty, nothing is inserted
@@ -101,6 +116,7 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def insertColumn(oColumn: ExportColumn, iIndex: Double): Export = js.native
+    
     /**
       * Inserts a row into the aggregation <code>rows</code>.
       * @param oRow the row to insert; if empty, nothing is inserted
@@ -111,18 +127,21 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def insertRow(oRow: ExportRow, iIndex: Double): Export = js.native
+    
     /**
       * Removes all the controls from the aggregation <code>columns</code>.Additionally, it unregisters them
       * from the hosting UIArea.
       * @returns An array of the removed elements (might be empty)
       */
     def removeAllColumns(): js.Array[ExportColumn] = js.native
+    
     /**
       * Removes all the controls from the aggregation <code>rows</code>.Additionally, it unregisters them
       * from the hosting UIArea.
       * @returns An array of the removed elements (might be empty)
       */
     def removeAllRows(): js.Array[ExportRow] = js.native
+    
     def removeColumn(vColumn: String): ExportColumn = js.native
     /**
       * Removes a column from the aggregation <code>columns</code>.
@@ -131,6 +150,7 @@ object util extends js.Object {
       */
     def removeColumn(vColumn: Double): ExportColumn = js.native
     def removeColumn(vColumn: ExportColumn): ExportColumn = js.native
+    
     def removeRow(vRow: String): ExportRow = js.native
     /**
       * Removes a row from the aggregation <code>rows</code>.
@@ -139,6 +159,7 @@ object util extends js.Object {
       */
     def removeRow(vRow: Double): ExportRow = js.native
     def removeRow(vRow: ExportRow): ExportRow = js.native
+    
     /**
       * Generates the file content, triggers a download / save action andreturns a Promise with the instance
       * as context (this).<br>The promise will be resolved with the generated contentas a string.<p><b>For
@@ -150,17 +171,20 @@ object util extends js.Object {
       * @returns Promise object
       */
     def saveFile(sFileName: String): JQueryPromise[_] = js.native
+    
     /**
       * Sets the aggregated <code>exportType</code>.
       * @param oExportType The exportType to set
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setExportType(oExportType: ExportType): Export = js.native
+    
     /**
       * Unbinds aggregation <code>columns</code> from model data.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def unbindColumns(): Export = js.native
+    
     /**
       * Unbinds aggregation <code>rows</code> from model data.
       * @returns Reference to <code>this</code> in order to allow method chaining
@@ -170,11 +194,13 @@ object util extends js.Object {
   
   @js.native
   trait ExportCell extends Element {
+    
     /**
       * Gets current value of property <code>content</code>.Cell content.
       * @returns Value of property <code>content</code>
       */
     def getContent(): String = js.native
+    
     /**
       * Sets a new value for property <code>content</code>.Cell content.When called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -186,20 +212,24 @@ object util extends js.Object {
   
   @js.native
   trait ExportColumn extends ManagedObject {
+    
     /**
       * Destroys the template in the aggregation <code>template</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyTemplate(): ExportColumn = js.native
+    
     /**
       * Gets current value of property <code>name</code>.Column name.
       * @returns Value of property <code>name</code>
       */
     def getName(): String = js.native
+    
     /**
       * Gets content of aggregation <code>template</code>.Cell template for column.
       */
     def getTemplate(): ExportCell = js.native
+    
     /**
       * Sets a new value for property <code>name</code>.Column name.When called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -207,6 +237,7 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setName(sName: String): ExportColumn = js.native
+    
     /**
       * Sets the aggregated <code>template</code>.
       * @param oTemplate The template to set
@@ -217,21 +248,25 @@ object util extends js.Object {
   
   @js.native
   trait ExportRow extends ManagedObject {
+    
     /**
       * Adds some cell to the aggregation <code>cells</code>.
       * @param oCell the cell to add; if empty, nothing is inserted
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def addCell(oCell: ExportCell): ExportRow = js.native
+    
     /**
       * Destroys all the cells in the aggregation <code>cells</code>.
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def destroyCells(): ExportRow = js.native
+    
     /**
       * Gets content of aggregation <code>cells</code>.Cells for the Export.
       */
     def getCells(): js.Array[ExportCell] = js.native
+    
     /**
       * Checks for the provided <code>sap.ui.core.util.ExportCell</code> in the aggregation
       * <code>cells</code>.and returns its index if found or -1 otherwise.
@@ -239,6 +274,7 @@ object util extends js.Object {
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
     def indexOfCell(oCell: ExportCell): Double = js.native
+    
     /**
       * Inserts a cell into the aggregation <code>cells</code>.
       * @param oCell the cell to insert; if empty, nothing is inserted
@@ -249,12 +285,14 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def insertCell(oCell: ExportCell, iIndex: Double): ExportRow = js.native
+    
     /**
       * Removes all the controls from the aggregation <code>cells</code>.Additionally, it unregisters them
       * from the hosting UIArea.
       * @returns An array of the removed elements (might be empty)
       */
     def removeAllCells(): js.Array[ExportCell] = js.native
+    
     def removeCell(vCell: String): ExportCell = js.native
     /**
       * Removes a cell from the aggregation <code>cells</code>.
@@ -267,57 +305,68 @@ object util extends js.Object {
   
   @js.native
   trait ExportType extends ManagedObject {
+    
     /**
       * Handles the generation process of the file.<br>
       * @param oExport export instance
       * @returns content
       */
     def _generate(oExport: Export): String = js.native
+    
     /**
       * Creates a cell "generator" (inspired by ES6 Generators)
       * @returns generator
       */
     def cellGenerator(): js.Any = js.native
+    
     /**
       * Creates a column "generator" (inspired by ES6 Generators)
       * @returns generator
       */
     def columnGenerator(): js.Any = js.native
+    
     /**
       * Generates the file content.<br>Should be implemented by the individual types!
       * @returns content
       */
     def generate(): String = js.native
+    
     /**
       * Gets current value of property <code>charset</code>.Charset.
       * @returns Value of property <code>charset</code>
       */
     def getCharset(): String = js.native
+    
     /**
       * Returns the number of columns.
       * @returns count
       */
     def getColumnCount(): Double = js.native
+    
     /**
       * Gets current value of property <code>fileExtension</code>.File extension.
       * @returns Value of property <code>fileExtension</code>
       */
     def getFileExtension(): String = js.native
+    
     /**
       * Gets current value of property <code>mimeType</code>.MIME type.
       * @returns Value of property <code>mimeType</code>
       */
     def getMimeType(): String = js.native
+    
     /**
       * Returns the number of rows.
       * @returns count
       */
     def getRowCount(): Double = js.native
+    
     /**
       * Creates a row "generator" (inspired by ES6 Generators)
       * @returns generator
       */
     def rowGenerator(): js.Any = js.native
+    
     /**
       * Sets a new value for property <code>charset</code>.Charset.When called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -325,6 +374,7 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setCharset(sCharset: String): ExportType = js.native
+    
     /**
       * Sets a new value for property <code>fileExtension</code>.File extension.When called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -332,6 +382,7 @@ object util extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setFileExtension(sFileExtension: String): ExportType = js.native
+    
     /**
       * Sets a new value for property <code>mimeType</code>.MIME type.When called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -343,12 +394,14 @@ object util extends js.Object {
   
   @js.native
   trait ExportTypeCSV extends ExportType {
+    
     /**
       * Gets current value of property <code>separatorChar</code>.Separator char.Value needs to be exactly
       * one character or empty for default.Default value is <code>,</code>.
       * @returns Value of property <code>separatorChar</code>
       */
     def getSeparatorChar(): String = js.native
+    
     /**
       * Setter for property <code>separatorChar</code>.Value needs to be exactly one character or empty for
       * default. Default value is ','.
@@ -360,10 +413,12 @@ object util extends js.Object {
   
   @js.native
   trait MockServer extends ManagedObject {
+    
     /**
       * Enum for the method.
       */
     var HTTPMETHOD: js.Any = js.native
+    
     /**
       * Attaches an event handler to be called after the built-in request processing of the mock server
       * @param event type according to HTTP Method
@@ -375,6 +430,7 @@ object util extends js.Object {
       * @param sEntitySet (optional) the name of the entity set
       */
     def attachAfter(event: String, fnCallback: js.Any, sEntitySet: String): Unit = js.native
+    
     /**
       * Attaches an event handler to be called before the built-in request processing of the mock server
       * @param event type according to HTTP Method
@@ -386,6 +442,7 @@ object util extends js.Object {
       * @param sEntitySet (optional) the name of the entity set
       */
     def attachBefore(event: String, fnCallback: js.Any, sEntitySet: String): Unit = js.native
+    
     /**
       * Removes a previously attached event handler
       * @param event type according to HTTP Method
@@ -393,6 +450,7 @@ object util extends js.Object {
       * @param sEntitySet (optional) the name of the entity set
       */
     def detachAfter(event: String, fnCallback: js.Any, sEntitySet: String): Unit = js.native
+    
     /**
       * Removes a previously attached event handler
       * @param event type according to HTTP Method
@@ -400,33 +458,39 @@ object util extends js.Object {
       * @param sEntitySet (optional) the name of the entity set
       */
     def detachBefore(event: String, fnCallback: js.Any, sEntitySet: String): Unit = js.native
+    
     /**
       * Returns the data model of the given EntitySet name.
       * @param sEntitySetName EntitySet name
       * @returns data model of the given EntitySet
       */
     def getEntitySetData(sEntitySetName: js.Any): js.Array[_] = js.native
+    
     /**
       * Getter for property <code>requests</code>.Default value is <code>[]</code>
       * @returns the value of property <code>rootUri</code>
       */
     def getRequests(): js.Array[_] = js.native
+    
     /**
       * Getter for property <code>rootUri</code>.Default value is empty/<code>undefined</code>
       * @returns the value of property <code>rootUri</code>
       */
     def getRootUri(): String = js.native
+    
     /**
       * Returns whether the server is started or not.
       * @returns whether the server is started or not.
       */
     def isStarted(): Boolean = js.native
+    
     /**
       * Sets the data of the given EntitySet name with the given array.
       * @param sEntitySetName EntitySet name
       * @param aData undefined
       */
     def setEntitySetData(sEntitySetName: js.Any, aData: js.Any): Unit = js.native
+    
     /**
       * Setter for property <code>requests</code>.Default value is is <code>[]</code>Each array entry should
       * consist of an array with the following properties / values:<ul><li><b>method <string>:
@@ -445,12 +509,14 @@ object util extends js.Object {
       * @param requests new value for property <code>requests</code>
       */
     def setRequests(requests: js.Array[_]): Unit = js.native
+    
     /**
       * Setter for property <code>rootUri</code>. All request path URI are prefixed with this root URI if
       * set.Default value is empty/<code>undefined</code>
       * @param rootUri new value for property <code>rootUri</code>
       */
     def setRootUri(rootUri: String): Unit = js.native
+    
     /**
       * Simulates an existing OData service by sepcifiying the metadata URL and the base URL for the
       * mockdata. The serverconfigures the request handlers depending on the service metadata. The mockdata
@@ -467,10 +533,12 @@ object util extends js.Object {
     def simulate(sMetadataUrl: String): Unit = js.native
     def simulate(sMetadataUrl: String, vMockdataSettings: String): Unit = js.native
     def simulate(sMetadataUrl: String, vMockdataSettings: js.Any): Unit = js.native
+    
     /**
       * Starts the server.
       */
     def start(): Unit = js.native
+    
     /**
       * Stops the server.
       */
@@ -479,6 +547,7 @@ object util extends js.Object {
   
   @js.native
   object XMLPreprocessor extends js.Object {
+    
     /**
       * Context interface provided by XML template processing as an additional firstargument to any
       * formatter function which opts in to this mechanism. Candidates forsuch formatter functions are all
@@ -518,6 +587,7 @@ object util extends js.Object {
       */
     @js.native
     trait IContext extends js.Object {
+      
       /**
         * Returns a context interface for the indicated part in case of the root formatterof a composite
         * binding. The new interface provides access to the originalsettings, but only to the model and path
@@ -537,6 +607,7 @@ object util extends js.Object {
         */
       def getInterface(iPart: Double): IContext = js.native
       def getInterface(iPart: Double, sPath: String): IContext = js.native
+      
       /**
         * Returns the model related to the current formatter call.
         * @param iPart index of part in case of the root formatter of a composite binding  (since 1.31.0)
@@ -545,6 +616,7 @@ object util extends js.Object {
         * range
         */
       def getModel(iPart: Double): Model = js.native
+      
       /**
         * Returns the absolute path related to the current formatter call.
         * @param iPart index of part in case of the root formatter of a composite binding  (since 1.31.0)
@@ -553,6 +625,7 @@ object util extends js.Object {
         * <code>iPart</code> is out of range
         */
       def getPath(iPart: Double): String = js.native
+      
       /**
         * Returns the value of the setting with the given name which was provided to theXML template
         * processing.
@@ -561,11 +634,11 @@ object util extends js.Object {
         */
       def getSetting(sName: String): js.Any = js.native
     }
-    
   }
   
   @js.native
   object serializer extends js.Object {
+    
     @js.native
     trait HTMLViewSerializer extends EventProvider
     
@@ -580,6 +653,7 @@ object util extends js.Object {
     
     @js.native
     object delegate extends js.Object {
+      
       @js.native
       trait Delegate extends EventProvider
       
@@ -588,10 +662,6 @@ object util extends js.Object {
       
       @js.native
       trait XML extends Delegate
-      
     }
-    
   }
-  
 }
-

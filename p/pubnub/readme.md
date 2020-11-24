@@ -10,9 +10,9 @@ Publish & Subscribe Real-time Messaging with PubNub
 | ------------------ | :-------------: |
 | Full name          | pubnub |
 | Keywords           | cloud, publish, subscribe, websockets, comet, bosh, xmpp, real-time, messaging |
-| # releases         | 28 |
-| # dependents       | 108 |
-| # downloads        | 2324998 |
+| # releases         | 38 |
+| # dependents       | 120 |
+| # downloads        | 3285509 |
 | # stars            | 9 |
 
 ## Links

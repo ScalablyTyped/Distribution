@@ -3,11 +3,12 @@ package typings.browserPack.mod
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browser-pack", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Pack node-style source files from a json stream into a browser bundle.
     * Source objects are written to browser-pack using 'write(row)'. browser-pack uses these properties of each row:
@@ -22,4 +23,3 @@ object ^ extends js.Object {
   def apply(): ReadWriteStream = js.native
   def apply(opts: Options): ReadWriteStream = js.native
 }
-

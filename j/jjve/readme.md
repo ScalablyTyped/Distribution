@@ -11,8 +11,8 @@ Render JJV errors
 | Full name          | jjve |
 | Keywords           | jjv, json, schema, jsonschema, errors |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 44899 |
+| # dependents       | 6 |
+| # downloads        | 29960 |
 | # stars            | 0 |
 
 ## Links

@@ -135,11 +135,12 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qunit-dom/dist/helpers/node-list", JSImport.Namespace)
 @js.native
 object nodeListMod extends js.Object {
+  
   def toArray(list: NodeList): js.Array[Node] = js.native
   def toArray(
     selectors: NodeListOf[
@@ -149,4 +150,3 @@ object nodeListMod extends js.Object {
   @JSName("toArray")
   def toArray_E_Element[E /* <: Element */](selectors: NodeListOf[E]): js.Array[E] = js.native
 }
-

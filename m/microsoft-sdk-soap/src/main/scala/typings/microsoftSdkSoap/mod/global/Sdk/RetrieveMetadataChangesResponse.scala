@@ -3,7 +3,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.IEntityMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to RetrieveMetadataChangesRequest.
@@ -13,17 +13,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class RetrieveMetadataChangesResponse protected () extends js.Object {
   def this(responseXml: java.lang.String) = this()
+  
   /***
     *
     */
   def getDeletedMetadata(): js.Any = js.native
+  
   /***
     *
     */
   def getEntityMetadata(): js.Array[IEntityMetadata] = js.native
+  
   /***
     *
     */
   def getServerVersionStamp(): java.lang.String = js.native
 }
-

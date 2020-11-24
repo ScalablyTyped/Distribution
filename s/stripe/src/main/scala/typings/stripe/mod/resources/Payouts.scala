@@ -11,11 +11,12 @@ import typings.stripe.mod.payouts.IPayoutCreationOptions
 import typings.stripe.mod.payouts.IPayoutListOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Payouts")
 @js.native
 class Payouts () extends StripeResource {
+  
   def cancel(payoutId: String): js.Promise[IPayout] = js.native
   /**
     * A previously created payout can be canceled if it has not yet been paid out. Funds will be refunded to your available balance, and the fees you were originally charged on the payout will be refunded.
@@ -24,6 +25,7 @@ class Payouts () extends StripeResource {
   def cancel(payoutId: String, options: HeaderOptions): js.Promise[IPayout] = js.native
   def cancel(payoutId: String, options: HeaderOptions, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
   def cancel(payoutId: String, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
+  
   def create(data: IPayoutCreationOptions): js.Promise[IPayout] = js.native
   /**
     * To send funds to your own bank account, you create a new payout object. Your Stripe balance must be able to cover the payout amount, or you’ll receive an “Insufficient Funds” error.
@@ -37,6 +39,7 @@ class Payouts () extends StripeResource {
   def create(data: IPayoutCreationOptions, options: HeaderOptions): js.Promise[IPayout] = js.native
   def create(data: IPayoutCreationOptions, options: HeaderOptions, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
   def create(data: IPayoutCreationOptions, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
+  
   def list(): IListPromise[IPayout] = js.native
   def list(data: IPayoutListOptions): IListPromise[IPayout] = js.native
   /**
@@ -48,6 +51,7 @@ class Payouts () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IPayout] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IPayout]]): IListPromise[IPayout] = js.native
   def list(response: IResponseFn[IList[IPayout]]): IListPromise[IPayout] = js.native
+  
   def retrieve(payoutId: String): js.Promise[IPayout] = js.native
   /**
     * Retrieves the details of an existing payout. Supply the unique payout ID from either a payout creation request or the payout list, and Stripe will return the corresponding payout information.
@@ -55,6 +59,7 @@ class Payouts () extends StripeResource {
   def retrieve(payoutId: String, options: HeaderOptions): js.Promise[IPayout] = js.native
   def retrieve(payoutId: String, options: HeaderOptions, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
   def retrieve(payoutId: String, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
+  
   def update(payoutId: String, data: IDataOptionsWithMetadata): js.Promise[IPayout] = js.native
   /**
     * Updates the specified payout by setting the values of the parameters passed. Any parameters not provided will be left unchanged. This request accepts only the metadata as arguments.
@@ -68,4 +73,3 @@ class Payouts () extends StripeResource {
   ): js.Promise[IPayout] = js.native
   def update(payoutId: String, data: IDataOptionsWithMetadata, response: IResponseFn[IPayout]): js.Promise[IPayout] = js.native
 }
-

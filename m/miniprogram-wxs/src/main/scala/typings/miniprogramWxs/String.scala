@@ -4,28 +4,30 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.miniprogramWxs.Intl.CollatorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait String
   extends /* index */ NumberDictionary[java.lang.String] {
-  /** Returns the length of a String object. */
-  val length: Double = js.native
+  
   /**
     * Returns the character at the specified index.
     * @param pos The zero-based index of the desired character.
     */
   def charAt(pos: Double): java.lang.String = js.native
+  
   /**
     * Returns the Unicode value of the character at the specified location.
     * @param index The zero-based index of the desired character. If there is no character at the specified index, NaN is returned.
     */
   def charCodeAt(index: Double): Double = js.native
+  
   /**
     * Returns a string that contains the concatenation of two or more strings.
     * @param strings The strings to append to the end of the string.
     */
   def concat(strings: java.lang.String*): java.lang.String = js.native
+  
   /**
     * Returns the position of the first occurrence of a substring.
     * @param searchString The substring to search for in the string
@@ -33,6 +35,7 @@ trait String
     */
   def indexOf(searchString: java.lang.String): Double = js.native
   def indexOf(searchString: java.lang.String, position: Double): Double = js.native
+  
   /**
     * Returns the last occurrence of a substring in the string.
     * @param searchString The substring to search for.
@@ -40,6 +43,10 @@ trait String
     */
   def lastIndexOf(searchString: java.lang.String): Double = js.native
   def lastIndexOf(searchString: java.lang.String, position: Double): Double = js.native
+  
+  /** Returns the length of a String object. */
+  val length: Double = js.native
+  
   /**
     * Determines whether two strings are equivalent in the current locale.
     * @param that String to compare to target string
@@ -50,12 +57,14 @@ trait String
   def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String], options: CollatorOptions): Double = js.native
+  
   /**
     * Matches a string with a regular expression, and returns an array containing the results of that search.
     * @param regexp A variable name or string literal containing the regular expression pattern and flags.
     */
   def `match`(regexp: java.lang.String): RegExpMatchArray | Null = js.native
   def `match`(regexp: RegExp): RegExpMatchArray | Null = js.native
+  
   /**
     * Replaces text in a string, using a regular expression or search string.
     * @param searchValue A string to search for.
@@ -76,12 +85,14 @@ trait String
     searchValue: RegExp,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
+  
   /**
     * Finds the first substring match in a regular expression search.
     * @param regexp The regular expression pattern and applicable flags.
     */
   def search(regexp: java.lang.String): Double = js.native
   def search(regexp: RegExp): Double = js.native
+  
   /**
     * Returns a section of a string.
     * @param start The index to the beginning of the specified portion of stringObj.
@@ -92,6 +103,7 @@ trait String
   def slice(start: js.UndefOr[scala.Nothing], end: Double): java.lang.String = js.native
   def slice(start: Double): java.lang.String = js.native
   def slice(start: Double, end: Double): java.lang.String = js.native
+  
   /**
     * Split a string into substrings using the specified separator and return them as an array.
     * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
@@ -101,6 +113,7 @@ trait String
   def split(separator: java.lang.String, limit: Double): Array[java.lang.String] = js.native
   def split(separator: RegExp): Array[java.lang.String] = js.native
   def split(separator: RegExp, limit: Double): Array[java.lang.String] = js.native
+  
   // IE extensions
   /**
     * Gets a substring beginning at the specified location and having the specified length.
@@ -109,6 +122,7 @@ trait String
     */
   def substr(from: Double): java.lang.String = js.native
   def substr(from: Double, length: Double): java.lang.String = js.native
+  
   /**
     * Returns the substring at the specified location within a String object.
     * @param start The zero-based index number indicating the beginning of the substring.
@@ -117,15 +131,19 @@ trait String
     */
   def substring(start: Double): java.lang.String = js.native
   def substring(start: Double, end: Double): java.lang.String = js.native
+  
   /** Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. */
   def toLocaleLowerCase(): java.lang.String = js.native
+  
   /** Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. */
   def toLocaleUpperCase(): java.lang.String = js.native
+  
   /** Converts all the alphabetic characters in a string to lowercase. */
   def toLowerCase(): java.lang.String = js.native
+  
   /** Converts all the alphabetic characters in a string to uppercase. */
   def toUpperCase(): java.lang.String = js.native
+  
   /** Removes the leading and trailing white space and line terminator characters from a string. */
   def trim(): java.lang.String = js.native
 }
-

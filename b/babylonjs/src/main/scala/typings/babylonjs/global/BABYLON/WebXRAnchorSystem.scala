@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRAnchorSystemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRAnchorSystem")
 @js.native
@@ -19,21 +19,17 @@ class WebXRAnchorSystem protected ()
     _xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager,
     _options: IWebXRAnchorSystemOptions
   ) = this()
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.WebXRAnchorSystem")
 @js.native
 object WebXRAnchorSystem extends js.Object {
+  
   /**
     * The module's name
     */
   val Name: String = js.native
+  
   /**
     * The (Babylon) version of this module.
     * This is an integer representing the implementation version.
@@ -41,4 +37,3 @@ object WebXRAnchorSystem extends js.Object {
     */
   val Version: Double = js.native
 }
-

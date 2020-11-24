@@ -4,18 +4,29 @@ import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxRangeSelector extends BaseWidget {
-  /** @name DataHelperMixin.getDataSource() */
+  
+  /**
+    * [descr:DataHelperMixin.getDataSource()]
+    */
   def getDataSource(): DataSource = js.native
-  /** @name dxRangeSelector.getValue() */
+  
+  /**
+    * [descr:dxRangeSelector.getValue()]
+    */
   def getValue(): js.Array[Double | String | Date] = js.native
-  /** @name dxRangeSelector.render(skipChartAnimation) */
+  
+  /**
+    * [descr:dxRangeSelector.render(skipChartAnimation)]
+    */
   def render(skipChartAnimation: Boolean): Unit = js.native
-  /** @name dxRangeSelector.setValue(value) */
+  
+  /**
+    * [descr:dxRangeSelector.setValue(value)]
+    */
   def setValue(value: js.Array[Double | String | Date]): Unit = js.native
   def setValue(value: VizRange): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Serializes http.ClientRequest as curl(1) command string
 | Full name          | request-as-curl |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 203485 |
+| # dependents       | 4 |
+| # downloads        | 319186 |
 | # stars            | 1 |
 
 ## Links

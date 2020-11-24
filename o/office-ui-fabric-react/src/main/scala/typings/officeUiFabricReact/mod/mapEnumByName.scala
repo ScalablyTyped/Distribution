@@ -2,11 +2,12 @@ package typings.officeUiFabricReact.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "mapEnumByName")
 @js.native
 object mapEnumByName extends js.Object {
+  
   def apply[T](
     theEnum: js.Any,
     callback: js.Function2[
@@ -16,4 +17,3 @@ object mapEnumByName extends js.Object {
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
 }
-

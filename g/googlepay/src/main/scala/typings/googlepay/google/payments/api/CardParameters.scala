@@ -4,7 +4,7 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for [[PaymentMethodType|`PaymentMethodType.CARD`]].
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CardParameters extends js.Object {
+  
   /**
     * Whether a credit card may be used for this transaction.
     *
@@ -24,6 +25,7 @@ trait CardParameters extends js.Object {
     * @default true
     */
   var allowCreditCards: js.UndefOr[`false` | `true`] = js.native
+  
   /**
     * Whether a prepaid card may be used for this transaction.
     *
@@ -32,6 +34,7 @@ trait CardParameters extends js.Object {
     * @default true
     */
   var allowPrepaidCards: js.UndefOr[`false` | `true`] = js.native
+  
   /**
     * Allowed authentication methods.
     *
@@ -49,6 +52,7 @@ trait CardParameters extends js.Object {
     * This field is required.
     */
   var allowedAuthMethods: js.Array[CardAuthMethod] = js.native
+  
   /**
     * Allowed card networks.
     *
@@ -71,6 +75,7 @@ trait CardParameters extends js.Object {
     * This field is required.
     */
   var allowedCardNetworks: js.Array[CardNetwork] = js.native
+  
   /**
     * Optional billing address parameters.
     *
@@ -79,6 +84,7 @@ trait CardParameters extends js.Object {
     * assumed.
     */
   var billingAddressParameters: js.UndefOr[BillingAddressParameters] = js.native
+  
   /**
     * Whether a billing address is required from the buyer.
     *
@@ -92,6 +98,7 @@ trait CardParameters extends js.Object {
     * @default false
     */
   var billingAddressRequired: js.UndefOr[`false` | `true`] = js.native
+  
   /**
     * List of card network parameters.
     *
@@ -100,55 +107,72 @@ trait CardParameters extends js.Object {
     */
   var cardNetworkParameters: js.UndefOr[js.Array[CardNetworkParameters]] = js.native
 }
-
 object CardParameters {
+  
   @scala.inline
   def apply(allowedAuthMethods: js.Array[CardAuthMethod], allowedCardNetworks: js.Array[CardNetwork]): CardParameters = {
     val __obj = js.Dynamic.literal(allowedAuthMethods = allowedAuthMethods.asInstanceOf[js.Any], allowedCardNetworks = allowedCardNetworks.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardParameters]
   }
+  
   @scala.inline
   implicit class CardParametersOps[Self <: CardParameters] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllowedAuthMethodsVarargs(value: CardAuthMethod*): Self = this.set("allowedAuthMethods", js.Array(value :_*))
+    
     @scala.inline
     def setAllowedAuthMethods(value: js.Array[CardAuthMethod]): Self = this.set("allowedAuthMethods", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAllowedCardNetworksVarargs(value: CardNetwork*): Self = this.set("allowedCardNetworks", js.Array(value :_*))
+    
     @scala.inline
     def setAllowedCardNetworks(value: js.Array[CardNetwork]): Self = this.set("allowedCardNetworks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAllowCreditCards(value: `false` | `true`): Self = this.set("allowCreditCards", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowCreditCards: Self = this.set("allowCreditCards", js.undefined)
+    
     @scala.inline
     def setAllowPrepaidCards(value: `false` | `true`): Self = this.set("allowPrepaidCards", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowPrepaidCards: Self = this.set("allowPrepaidCards", js.undefined)
+    
     @scala.inline
     def setBillingAddressParameters(value: BillingAddressParameters): Self = this.set("billingAddressParameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBillingAddressParameters: Self = this.set("billingAddressParameters", js.undefined)
+    
     @scala.inline
     def setBillingAddressRequired(value: `false` | `true`): Self = this.set("billingAddressRequired", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBillingAddressRequired: Self = this.set("billingAddressRequired", js.undefined)
+    
     @scala.inline
     def setCardNetworkParametersVarargs(value: CardNetworkParameters*): Self = this.set("cardNetworkParameters", js.Array(value :_*))
+    
     @scala.inline
     def setCardNetworkParameters(value: js.Array[CardNetworkParameters]): Self = this.set("cardNetworkParameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCardNetworkParameters: Self = this.set("cardNetworkParameters", js.undefined)
   }
-  
 }
-

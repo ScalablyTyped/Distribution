@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaPlaybackType extends js.Object
-
 /** Defines values for the types of media playback. */
 @JSGlobal("Windows.Media.MediaPlaybackType")
 @js.native
 object MediaPlaybackType extends js.Object {
+  
   /** The media type is an image. */
   @js.native
   sealed trait image extends MediaPlaybackType
@@ -26,6 +26,4 @@ object MediaPlaybackType extends js.Object {
   /** The media type is video. */
   @js.native
   sealed trait video extends MediaPlaybackType
-  
 }
-

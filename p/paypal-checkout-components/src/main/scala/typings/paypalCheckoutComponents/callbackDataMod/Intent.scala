@@ -3,19 +3,24 @@ package typings.paypalCheckoutComponents.callbackDataMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Intent extends js.Object
-
 @JSImport("paypal-checkout-components/modules/callback-data", "Intent")
 @js.native
 object Intent extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[Intent with String] = js.native
+  
   /**
     * Submits the transaction for authorization but not settlement.
     */
   @js.native
   sealed trait Authorize extends Intent
+  /* "authorize" */ @js.native
+  object Authorize extends TopLevel[Authorize with String]
   
   /**
     * Payment will be immediately submitted for settlement upon creating a transaction.
@@ -23,6 +28,8 @@ object Intent extends js.Object {
     */
   @js.native
   sealed trait Capture extends Intent
+  /* "capture" */ @js.native
+  object Capture extends TopLevel[Capture with String]
   
   /**
     * Validates the transaction without an authorization (i.e. without holding funds).
@@ -31,17 +38,6 @@ object Intent extends js.Object {
     */
   @js.native
   sealed trait Order extends Intent
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Intent with String] = js.native
-  /* "authorize" */ @js.native
-  object Authorize extends TopLevel[Authorize with String]
-  
-  /* "capture" */ @js.native
-  object Capture extends TopLevel[Capture with String]
-  
   /* "order" */ @js.native
   object Order extends TopLevel[Order with String]
-  
 }
-

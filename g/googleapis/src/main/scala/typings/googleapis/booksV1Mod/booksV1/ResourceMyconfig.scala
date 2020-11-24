@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Myconfig")
 @js.native
 class ResourceMyconfig protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.myconfig.getUserSettings
     * @desc Gets the current settings for the user.
@@ -40,6 +42,7 @@ class ResourceMyconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUsersettings]
   ): Unit = js.native
+  
   /**
     * books.myconfig.releaseDownloadAccess
     * @desc Release downloaded content access restriction.
@@ -74,6 +77,7 @@ class ResourceMyconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDownloadAccesses]
   ): Unit = js.native
+  
   /**
     * books.myconfig.requestAccess
     * @desc Request concurrent and download access restrictions.
@@ -107,6 +111,7 @@ class ResourceMyconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRequestAccess]
   ): Unit = js.native
+  
   /**
     * books.myconfig.syncVolumeLicenses
     * @desc Request downloaded content access for specified volumes on the My
@@ -143,6 +148,7 @@ class ResourceMyconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVolumes]
   ): Unit = js.native
+  
   /**
     * books.myconfig.updateUserSettings
     * @desc Sets the settings for the user. If a sub-object is specified, it
@@ -177,4 +183,3 @@ class ResourceMyconfig protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUsersettings]
   ): Unit = js.native
 }
-

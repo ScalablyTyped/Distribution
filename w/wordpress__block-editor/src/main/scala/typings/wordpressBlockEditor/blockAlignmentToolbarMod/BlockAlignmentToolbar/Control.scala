@@ -2,7 +2,7 @@ package typings.wordpressBlockEditor.blockAlignmentToolbarMod.BlockAlignmentTool
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.wordpressBlockEditor.wordpressBlockEditorStrings.center
@@ -12,17 +12,20 @@ import scala.scalajs.js.annotation._
   - typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide
 */
 trait Control extends js.Object
-
 object Control {
+  
   @scala.inline
   def center: typings.wordpressBlockEditor.wordpressBlockEditorStrings.center = "center".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.center]
+  
   @scala.inline
   def full: typings.wordpressBlockEditor.wordpressBlockEditorStrings.full = "full".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.full]
+  
   @scala.inline
   def left: typings.wordpressBlockEditor.wordpressBlockEditorStrings.left = "left".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.left]
+  
   @scala.inline
   def right: typings.wordpressBlockEditor.wordpressBlockEditorStrings.right = "right".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.right]
+  
   @scala.inline
   def wide: typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide = "wide".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide]
 }
-

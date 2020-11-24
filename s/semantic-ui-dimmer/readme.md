@@ -10,9 +10,9 @@ Single component release of dimmer
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-dimmer |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 48454 |
+| # downloads        | 38693 |
 | # stars            | 0 |
 
 ## Links

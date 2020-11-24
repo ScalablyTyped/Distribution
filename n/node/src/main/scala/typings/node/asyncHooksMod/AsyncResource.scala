@@ -2,7 +2,7 @@ package typings.node.asyncHooksMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The class AsyncResource was designed to be extended by the embedder's async resources.
@@ -23,14 +23,23 @@ class AsyncResource protected () extends js.Object {
   def this(`type`: String) = this()
   def this(`type`: String, triggerAsyncId: Double) = this()
   def this(`type`: String, triggerAsyncId: AsyncResourceOptions) = this()
+  
   /**
     * @return the unique ID assigned to this AsyncResource instance.
     */
   def asyncId(): Double = js.native
+  
+  /**
+    * Binds the given function to execute to this `AsyncResource`'s scope.
+    * @param fn The function to bind to the current `AsyncResource`.
+    */
+  def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func): Func with typings.node.anon.AsyncResource = js.native
+  
   /**
     * Call AsyncHooks destroy callbacks.
     */
   def emitDestroy(): Unit = js.native
+  
   /**
     * Call the provided function with the provided arguments in the
     * execution context of the async resource. This will establish the
@@ -48,9 +57,22 @@ class AsyncResource protected () extends js.Object {
     thisArg: js.UndefOr[scala.Nothing],
     args: js.Any*
   ): Result = js.native
+  
   /**
     * @return the trigger ID for this AsyncResource instance.
     */
   def triggerAsyncId(): Double = js.native
 }
-
+/* static members */
+@JSImport("async_hooks", "AsyncResource")
+@js.native
+object AsyncResource extends js.Object {
+  
+  /**
+    * Binds the given function to the current execution context.
+    * @param fn The function to bind to the current execution context.
+    * @param type An optional name to associate with the underlying `AsyncResource`.
+    */
+  def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func): Func with typings.node.anon.AsyncResource = js.native
+  def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func, `type`: String): Func with typings.node.anon.AsyncResource = js.native
+}

@@ -1,20 +1,26 @@
 package typings.babylonjs
 
 import typings.babylonjs.actionManagerMod.ActionManager
+import typings.babylonjs.animatableInterfaceMod.IAnimatable
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.spriteManagerMod.ISpriteManager
+import typings.babylonjs.spriteManagerMod.SpriteManager
+import typings.babylonjs.thinSpriteMod.ThinSprite
 import typings.babylonjs.typesMod.Nullable
-import typings.std.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Sprites/sprite", JSImport.Namespace)
 @js.native
 object spriteMod extends js.Object {
+  
   @js.native
-  class Sprite protected () extends js.Object {
+  class Sprite protected ()
+    extends ThinSprite
+       with IAnimatable {
     /**
       * Creates a new Sprite
       * @param name defines the name
@@ -22,53 +28,56 @@ object spriteMod extends js.Object {
       */
     def this(/** defines the name */
     name: String, manager: ISpriteManager) = this()
-    var _animationStarted: js.Any = js.native
-    var _delay: js.Any = js.native
-    var _direction: js.Any = js.native
-    var _fromIndex: js.Any = js.native
-    var _loopAnimation: js.Any = js.native
+    
+    var _endAnimation: js.Any = js.native
+    
     var _manager: js.Any = js.native
+    
     var _onAnimationEnd: js.Any = js.native
-    var _time: js.Any = js.native
-    var _toIndex: js.Any = js.native
+    
     /**
       * Gets or sets the associated action manager
       */
     var actionManager: Nullable[ActionManager] = js.native
-    /** Gets or sets rotation angle */
-    var angle: Double = js.native
-    /** Gets the list of attached animations */
-    var animations: js.Array[Animation] = js.native
-    /** Gets or sets the cell index in the sprite sheet */
-    var cellIndex: Double = js.native
-    /** Gets or sets the cell reference in the sprite sheet, uses sprite's filename when added to sprite sheet */
-    var cellRef: String = js.native
+    
     /** Gets or sets the main color */
-    var color: Color4 = js.native
-    /** Gets or sets a boolean indicating that this sprite should be disposed after animation ends */
-    var disposeWhenFinishedAnimating: Boolean = js.native
-    /** Gets or sets the height */
-    var height: Double = js.native
-    /** Gets or sets a boolean indicating if UV coordinates should be inverted in U axis */
-    var invertU: Double = js.native
-    /** Gets or sets a boolean indicating if UV coordinates should be inverted in B axis */
-    var invertV: Double = js.native
-    /** Gets or sets a boolean indicating if the sprite can be picked */
-    var isPickable: Boolean = js.native
-    /**
-      * Gets or sets a boolean indicating if the sprite is visible (renderable). Default is true
-      */
-    var isVisible: Boolean = js.native
-    /** defines the name */
-    var name: String = js.native
-    /** Gets or sets the current world position */
-    var position: Vector3 = js.native
-    /** Gets or sets the width */
-    var width: Double = js.native
-    /** @hidden */
-    def _animate(deltaTime: Double): Unit = js.native
+    @JSName("color")
+    var color_Sprite: Color4 = js.native
+    
+    def delay_=(value: Double): Unit = js.native
+    
     /** Release associated resources */
     def dispose(): Unit = js.native
+    
+    /** Gets or sets a boolean indicating that this sprite should be disposed after animation ends */
+    var disposeWhenFinishedAnimating: Boolean = js.native
+    
+    def fromIndex_=(value: Double): Unit = js.native
+    
+    /**
+      * Returns the string "Sprite"
+      * @returns "Sprite"
+      */
+    def getClassName(): String = js.native
+    
+    /** Gets or sets a boolean indicating if the sprite can be picked */
+    var isPickable: Boolean = js.native
+    
+    def loopAnimation_=(value: Boolean): Unit = js.native
+    
+    /**
+      * Gets the manager of this sprite
+      */
+    def manager: ISpriteManager = js.native
+    
+    /** defines the name */
+    var name: String = js.native
+    
+    /**
+      * An event triggered when the control has been disposed
+      */
+    var onDisposeObservable: Observable[Sprite] = js.native
+    
     /**
       * Starts an animation
       * @param from defines the initial key
@@ -77,15 +86,44 @@ object spriteMod extends js.Object {
       * @param delay defines the start delay (in ms)
       * @param onAnimationEnd defines a callback to call when animation ends
       */
-    def playAnimation(from: Double, to: Double, loop: Boolean, delay: Double, onAnimationEnd: js.Function0[Unit]): Unit = js.native
+    def playAnimation(from: Double, to: Double, loop: Boolean, delay: Double): Unit = js.native
+    
+    /** Gets or sets the current world position */
+    @JSName("position")
+    var position_Sprite: Vector3 = js.native
+    
+    /**
+      * Serializes the sprite to a JSON object
+      * @returns the JSON object
+      */
+    def serialize(): js.Any = js.native
+    
     /**
       * Gets or sets the sprite size
       */
     def size: Double = js.native
-    def size(value: Double): js.Any = js.native
-    /** Stops current animation (if any) */
-    def stopAnimation(): Unit = js.native
+    def size_=(value: Double): Unit = js.native
+    
+    def toIndex_=(value: Double): Unit = js.native
+    
+    /**
+      * Gets or sets the unique id of the sprite
+      */
+    var uniqueId: Double = js.native
+    
+    /** Gets or sets a boolean indicating that sprite texture alpha will be used for precise picking (false by default) */
+    var useAlphaForPicking: Boolean = js.native
   }
-  
+  /* static members */
+  @js.native
+  object Sprite extends js.Object {
+    
+    /**
+      * Parses a JSON object to create a new sprite
+      * @param parsedSprite The JSON object to parse
+      * @param manager defines the hosting manager
+      * @returns the new sprite
+      */
+    def Parse(parsedSprite: js.Any, manager: SpriteManager): Sprite = js.native
+  }
 }
-

@@ -10,9 +10,9 @@ React Native bindings for React Router
 | ------------------ | :-------------: |
 | Full name          | react-router-native |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 26 |
-| # downloads        | 781135 |
+| # releases         | 24 |
+| # dependents       | 40 |
+| # downloads        | 1162758 |
 | # stars            | 9 |
 
 ## Links

@@ -5,9 +5,37 @@ import typings.webmidi.WebMidi.MIDIPortDeviceState
 import typings.webmidi.WebMidi.MIDIPortType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webmidiStrings {
+  
+  @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  
+  @scala.inline
+  def midimessage: midimessage = "midimessage".asInstanceOf[midimessage]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def output: output = "output".asInstanceOf[output]
+  
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
+  
+  @scala.inline
+  def statechange: statechange = "statechange".asInstanceOf[statechange]
+  
   @js.native
   sealed trait closed extends MIDIPortConnectionState
   
@@ -34,24 +62,4 @@ object webmidiStrings {
   
   @js.native
   sealed trait statechange extends js.Object
-  
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def midimessage: midimessage = "midimessage".asInstanceOf[midimessage]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def output: output = "output".asInstanceOf[output]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def statechange: statechange = "statechange".asInstanceOf[statechange]
 }
-

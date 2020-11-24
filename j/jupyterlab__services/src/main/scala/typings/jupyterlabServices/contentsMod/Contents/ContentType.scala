@@ -2,7 +2,7 @@ package typings.jupyterlabServices.contentsMod.Contents
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A contents file type.
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.jupyterlabServices.jupyterlabServicesStrings.directory
 */
 trait ContentType extends js.Object
-
 object ContentType {
+  
   @scala.inline
   def directory: typings.jupyterlabServices.jupyterlabServicesStrings.directory = "directory".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.directory]
+  
   @scala.inline
   def file: typings.jupyterlabServices.jupyterlabServicesStrings.file = "file".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.file]
+  
   @scala.inline
   def notebook: typings.jupyterlabServices.jupyterlabServicesStrings.notebook = "notebook".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.notebook]
 }
-

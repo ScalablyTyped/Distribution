@@ -31,59 +31,76 @@ import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.ui._format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Currency extends _format {
+  
   var currency: js.UndefOr[String] = js.native
+  
   var formatter: js.UndefOr[js.Function1[/* value */ Double | typings.std.Date, String]] = js.native
+  
   var parser: js.UndefOr[js.Function1[/* value */ String, Double | typings.std.Date]] = js.native
+  
   var precision: js.UndefOr[Double] = js.native
+  
   var `type`: js.UndefOr[
     billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
   ] = js.native
 }
-
 object Currency {
+  
   @scala.inline
   def apply(): Currency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Currency]
   }
+  
   @scala.inline
   implicit class CurrencyOps[Self <: Currency] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCurrency: Self = this.set("currency", js.undefined)
+    
     @scala.inline
     def setFormatter(value: /* value */ Double | typings.std.Date => String): Self = this.set("formatter", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteFormatter: Self = this.set("formatter", js.undefined)
+    
     @scala.inline
     def setParser(value: /* value */ String => Double | typings.std.Date): Self = this.set("parser", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteParser: Self = this.set("parser", js.undefined)
+    
     @scala.inline
     def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrecision: Self = this.set("precision", js.undefined)
+    
     @scala.inline
     def setType(
       value: billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
     ): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

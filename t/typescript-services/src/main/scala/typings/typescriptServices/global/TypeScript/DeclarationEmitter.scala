@@ -2,7 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.DeclarationEmitter")
 @js.native
@@ -16,11 +16,10 @@ class DeclarationEmitter protected ()
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.DeclarationEmitter")
 @js.native
 object DeclarationEmitter extends js.Object {
+  
   def getEnclosingContainer(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.AST = js.native
 }
-

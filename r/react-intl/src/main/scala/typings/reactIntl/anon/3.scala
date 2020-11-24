@@ -1,24 +1,51 @@
 package typings.reactIntl.anon
 
 import typings.react.mod.ReactElement
-import typings.std.Intl.NumberFormatPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait `3` extends js.Object {
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts ? : react-intl.react-intl.FormatNumberOptions): string>[0] */ js.Any
-  def children(`val`: js.Array[NumberFormatPart]): ReactElement | Null
+  
+  var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.native
+  
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl.anon.FnCallCode>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any = js.native
 }
-
 object `3` {
+  
   @scala.inline
   def apply(
-    children: js.Array[NumberFormatPart] => ReactElement | Null,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts ? : react-intl.react-intl.FormatNumberOptions): string>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl.anon.FnCallCode>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any
   ): `3` = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
+  
+  @scala.inline
+  implicit class `3Ops`[Self <: `3`] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setValue(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl.anon.FnCallCode>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any
+    ): Self = this.set("value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChildren(value: /* val */ String => ReactElement | Null): Self = this.set("children", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+  }
 }
-

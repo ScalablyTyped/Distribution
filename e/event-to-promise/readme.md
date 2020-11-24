@@ -12,7 +12,7 @@ Create a promise waiting for an event
 | Keywords           | event, promise |
 | # releases         | 0 |
 | # dependents       | 55 |
-| # downloads        | 732370 |
+| # downloads        | 1615389 |
 | # stars            | 1 |
 
 ## Links

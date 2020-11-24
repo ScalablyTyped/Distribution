@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.TopLevel
 import typings.nwJs.mod.global.NWJSHelpers.clip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Clipboard extends js.Object {
+  
   /**
     * Get the clipboard object.
     *
@@ -15,8 +16,6 @@ trait Clipboard extends js.Object {
     */
   def get(): clip = js.native
 }
-
 @JSGlobal("nw.Clipboard")
 @js.native
 object Clipboard extends TopLevel[Clipboard]
-

@@ -4,7 +4,7 @@ import typings.angularCompiler.srcUtilMod.Console
 import typings.angularCompiler.templateAstMod.TemplateAstVisitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "TemplateParser")
 @js.native
@@ -29,4 +29,3 @@ class TemplateParser protected ()
     transforms: js.Array[TemplateAstVisitor]
   ) = this()
 }
-

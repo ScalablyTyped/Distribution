@@ -2,38 +2,45 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageProcessingPostProcess extends PostProcess {
-  /**
-    * Defines cache preventing GC.
-    */
-  var _defines: js.Any = js.native
-  var _fromLinearSpace: js.Any = js.native
-  /**
-    * Default configuration related to image processing available in the PBR Material.
-    */
-  var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
-  /**
-    * Keep track of the image processing observer to allow dispose and replace.
-    */
-  var _imageProcessingObserver: js.Any = js.native
+  
   /**
     * Attaches a new image processing configuration to the PBR Material.
     * @param configuration
     */
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration], doNotBuild: Boolean): Unit = js.native
-  /* protected */ def _updateParameters(): Unit = js.native
+  
+  /**
+    * Defines cache preventing GC.
+    */
+  var _defines: js.Any = js.native
+  
+  var _fromLinearSpace: js.Any = js.native
+  
+  /**
+    * Default configuration related to image processing available in the PBR Material.
+    */
+  var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+  
+  /**
+    * Keep track of the image processing observer to allow dispose and replace.
+    */
+  var _imageProcessingObserver: js.Any = js.native
+  
+  /**
+    * @hidden
+    */
+  def _updateParameters(): Unit = js.native
+  
   /**
     * Gets Color curves setup used in the effect if colorCurvesEnabled is set to true .
     */
   def colorCurves: Nullable[ColorCurves] = js.native
-  /**
-    * Sets Color curves setup used in the effect if colorCurvesEnabled is set to true .
-    */
-  def colorCurves(value: Nullable[ColorCurves]): js.Any = js.native
+  
   /**
     * Gets wether the color curves effect is enabled.
     */
@@ -41,7 +48,13 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets wether the color curves effect is enabled.
     */
-  def colorCurvesEnabled(value: Boolean): js.Any = js.native
+  def colorCurvesEnabled_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Sets Color curves setup used in the effect if colorCurvesEnabled is set to true .
+    */
+  def colorCurves_=(value: Nullable[ColorCurves]): Unit = js.native
+  
   /**
     * Gets wether the color grading effect is enabled.
     */
@@ -49,7 +62,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Gets wether the color grading effect is enabled.
     */
-  def colorGradingEnabled(value: Boolean): js.Any = js.native
+  def colorGradingEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets Color grading LUT texture used in the effect if colorGradingEnabled is set to true.
     */
@@ -57,7 +71,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets Color grading LUT texture used in the effect if colorGradingEnabled is set to true.
     */
-  def colorGradingTexture(value: Nullable[BaseTexture]): js.Any = js.native
+  def colorGradingTexture_=(value: Nullable[BaseTexture]): Unit = js.native
+  
   /**
     * Gets contrast used in the effect.
     */
@@ -65,7 +80,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets contrast used in the effect.
     */
-  def contrast(value: Double): js.Any = js.native
+  def contrast_=(value: Double): Unit = js.native
+  
   /**
     * Gets exposure used in the effect.
     */
@@ -73,7 +89,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets exposure used in the effect.
     */
-  def exposure(value: Double): js.Any = js.native
+  def exposure_=(value: Double): Unit = js.native
+  
   /**
     * Gets wether the input of the processing is in Gamma or Linear Space.
     */
@@ -81,7 +98,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets wether the input of the processing is in Gamma or Linear Space.
     */
-  def fromLinearSpace(value: Boolean): js.Any = js.native
+  def fromLinearSpace_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets the image processing configuration used either in this material.
     */
@@ -91,7 +109,8 @@ trait ImageProcessingPostProcess extends PostProcess {
     *
     * If sets to null, the scene one is in use.
     */
-  def imageProcessingConfiguration(value: ImageProcessingConfiguration): js.Any = js.native
+  def imageProcessingConfiguration_=(value: ImageProcessingConfiguration): Unit = js.native
+  
   /**
     * Gets wether tonemapping is enabled or not.
     */
@@ -99,7 +118,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets wether tonemapping is enabled or not
     */
-  def toneMappingEnabled(value: Boolean): js.Any = js.native
+  def toneMappingEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets the type of tone mapping effect.
     */
@@ -107,7 +127,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets the type of tone mapping effect.
     */
-  def toneMappingType(value: Double): js.Any = js.native
+  def toneMappingType_=(value: Double): Unit = js.native
+  
   /**
     * Gets the vignette blend mode allowing different kind of effect.
     */
@@ -115,7 +136,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets the vignette blend mode allowing different kind of effect.
     */
-  def vignetteBlendMode(value: Double): js.Any = js.native
+  def vignetteBlendMode_=(value: Double): Unit = js.native
+  
   /**
     * Gets Camera field of view used by the Vignette effect.
     */
@@ -123,7 +145,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets Camera field of view used by the Vignette effect.
     */
-  def vignetteCameraFov(value: Double): js.Any = js.native
+  def vignetteCameraFov_=(value: Double): Unit = js.native
+  
   /**
     * Gets Vignette centre X Offset.
     */
@@ -131,7 +154,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets Vignette centre X Offset.
     */
-  def vignetteCentreX(value: Double): js.Any = js.native
+  def vignetteCentreX_=(value: Double): Unit = js.native
+  
   /**
     * Gets Vignette centre Y Offset.
     */
@@ -139,7 +163,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets Vignette centre Y Offset.
     */
-  def vignetteCentreY(value: Double): js.Any = js.native
+  def vignetteCentreY_=(value: Double): Unit = js.native
+  
   /**
     * Gets Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)
     * if vignetteEnabled is set to true.
@@ -149,7 +174,8 @@ trait ImageProcessingPostProcess extends PostProcess {
     * Sets Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)
     * if vignetteEnabled is set to true.
     */
-  def vignetteColor(value: Color4): js.Any = js.native
+  def vignetteColor_=(value: Color4): Unit = js.native
+  
   /**
     * Gets wether the vignette effect is enabled.
     */
@@ -157,7 +183,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets wether the vignette effect is enabled.
     */
-  def vignetteEnabled(value: Boolean): js.Any = js.native
+  def vignetteEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets Vignette stretch size.
     */
@@ -165,7 +192,8 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets Vignette stretch size.
     */
-  def vignetteStretch(value: Double): js.Any = js.native
+  def vignetteStretch_=(value: Double): Unit = js.native
+  
   /**
     * Gets Vignette weight or intensity of the vignette effect.
     */
@@ -173,6 +201,5 @@ trait ImageProcessingPostProcess extends PostProcess {
   /**
     * Sets Vignette weight or intensity of the vignette effect.
     */
-  def vignetteWeight(value: Double): js.Any = js.native
+  def vignetteWeight_=(value: Double): Unit = js.native
 }
-

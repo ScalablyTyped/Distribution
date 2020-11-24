@@ -5,20 +5,23 @@ import typings.highcharts.highchartsStrings.flap
 import typings.highcharts.highchartsStrings.ortho
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ZAxisTitleOptions extends AxisTitleOptions {
+  
   /**
     * (Highcharts) Alignment of the title relative to the axis values. Possible
     * values are "low", "middle" or "high".
     */
   var align: js.UndefOr[AxisTitleAlignValue] = js.native
+  
   /**
     * (Highcharts) The pixel distance between the axis labels or line and the
     * title. Defaults to 0 for horizontal axes, 10 for vertical
     */
   var margin: js.UndefOr[Double] = js.native
+  
   /**
     * (Highcharts) The distance of the axis title from the axis line. By
     * default, this distance is computed from the offset width of the labels,
@@ -26,6 +29,7 @@ trait ZAxisTitleOptions extends AxisTitleOptions {
     * the offset option is set, it overrides all this.
     */
   var offset: js.UndefOr[Double] = js.native
+  
   /**
     * (Highcharts) Defines how the title is repositioned according to the 3D
     * chart orientation.
@@ -48,16 +52,19 @@ trait ZAxisTitleOptions extends AxisTitleOptions {
     * - `undefined`: Will use the config from `labels.position3d`
     */
   var position3d: js.UndefOr[chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho | Null] = js.native
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to reserve space for the title
     * when laying out the axis.
     */
   var reserveSpace: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts) The rotation of the text in degrees. 0 is horizontal, 270 is
     * vertical reading from bottom to top.
     */
   var rotation: js.UndefOr[Double] = js.native
+  
   /**
     * (Highcharts) If enabled, the axis title will skewed to follow the
     * perspective.
@@ -70,6 +77,7 @@ trait ZAxisTitleOptions extends AxisTitleOptions {
     * A `null` value will use the config from `labels.skew3d`.
     */
   var skew3d: js.UndefOr[Boolean | Null] = js.native
+  
   /**
     * (Highcharts) CSS styles for the title. If the title text is longer than
     * the axis length, it will wrap to multiple lines by default. This can be
@@ -80,11 +88,13 @@ trait ZAxisTitleOptions extends AxisTitleOptions {
     * class.
     */
   var style: js.UndefOr[CSSObject] = js.native
+  
   /**
     * (Highcharts) The actual text of the axis title. It can contain basic HTML
     * tags like `b`, `i` and `span` with style.
     */
   var text: js.UndefOr[String | Null] = js.native
+  
   /**
     * (Highcharts) Alignment of the text, can be `"left"`, `"right"` or
     * `"center"`. Default alignment depends on the title.align:
@@ -114,99 +124,133 @@ trait ZAxisTitleOptions extends AxisTitleOptions {
     * `right`
     */
   var textAlign: js.UndefOr[AlignValue] = js.native
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to use HTML to render the axis
     * title.
     */
   var useHTML: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Gantt) Horizontal pixel offset of the title
     * position.
     */
   var x: js.UndefOr[Double] = js.native
+  
   /**
     * (Highcharts, Highstock, Gantt) Vertical pixel offset of the title
     * position.
     */
   var y: js.UndefOr[Double] = js.native
 }
-
 object ZAxisTitleOptions {
+  
   @scala.inline
   def apply(): ZAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZAxisTitleOptions]
   }
+  
   @scala.inline
   implicit class ZAxisTitleOptionsOps[Self <: ZAxisTitleOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: AxisTitleAlignValue): Self = this.set("align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlign: Self = this.set("align", js.undefined)
+    
     @scala.inline
     def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMargin: Self = this.set("margin", js.undefined)
+    
     @scala.inline
     def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOffset: Self = this.set("offset", js.undefined)
+    
     @scala.inline
     def setPosition3d(value: chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho): Self = this.set("position3d", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePosition3d: Self = this.set("position3d", js.undefined)
+    
     @scala.inline
     def setPosition3dNull: Self = this.set("position3d", null)
+    
     @scala.inline
     def setReserveSpace(value: Boolean): Self = this.set("reserveSpace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReserveSpace: Self = this.set("reserveSpace", js.undefined)
+    
     @scala.inline
     def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRotation: Self = this.set("rotation", js.undefined)
+    
     @scala.inline
     def setSkew3d(value: Boolean): Self = this.set("skew3d", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSkew3d: Self = this.set("skew3d", js.undefined)
+    
     @scala.inline
     def setSkew3dNull: Self = this.set("skew3d", null)
+    
     @scala.inline
     def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
+    
     @scala.inline
     def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteText: Self = this.set("text", js.undefined)
+    
     @scala.inline
     def setTextNull: Self = this.set("text", null)
+    
     @scala.inline
     def setTextAlign(value: AlignValue): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    
     @scala.inline
     def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    
     @scala.inline
     def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteX: Self = this.set("x", js.undefined)
+    
     @scala.inline
     def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteY: Self = this.set("y", js.undefined)
   }
-  
 }
-

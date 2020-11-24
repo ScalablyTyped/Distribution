@@ -3,7 +3,7 @@ package typings.msRestAzure.mod
 import typings.msRestAzure.msRestAzureStrings.`2017-09-01`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "MSIAppServiceTokenCredentials")
 @js.native
@@ -16,16 +16,19 @@ import scala.scalajs.js.annotation._
   */
 class MSIAppServiceTokenCredentials () extends MSITokenCredentials {
   def this(options: MSIAppServiceOptions) = this()
+  
   /**
     * @property {string} [msiApiVersion] The api-version of the local MSI agent. Default value is "2017-09-01".
     */
   var msiApiVersion: js.UndefOr[`2017-09-01`] = js.native
+  
   /**
     * @property {string} msiEndpoint - The local URL from which your app can request tokens.
     * Either provide this parameter or set the environment varaible `MSI_ENDPOINT`.
     * For example: `MSI_ENDPOINT="http://127.0.0.1:41741/MSI/token/"`
     */
   var msiEndpoint: js.UndefOr[String] = js.native
+  
   /**
     * @property {string} msiSecret - The secret used in communication between your code and the local MSI agent.
     * Either provide this parameter or set the environment varaible `MSI_SECRET`.
@@ -33,4 +36,3 @@ class MSIAppServiceTokenCredentials () extends MSITokenCredentials {
     */
   var msiSecret: js.UndefOr[String] = js.native
 }
-

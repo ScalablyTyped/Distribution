@@ -4,33 +4,15 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.tstl.icontainerMod.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/collections", "ListCollection")
 @js.native
 class ListCollection[T] ()
   extends typings.ecol.listCollectionMod.ListCollection[T]
-
 @JSImport("samchon/collections", "ListCollection")
 @js.native
 object ListCollection extends js.Object {
-  /**
-    * Iterator of {@link List}
-    *
-    * @author Jeongho Nam - https://github.com/samchon
-    */
-  @js.native
-  class Iterator[T] protected ()
-    extends typings.ecol.mod.ListCollection.Iterator[T]
-  
-  /**
-    * Reverse iterator of {@link List}
-    *
-    * @author Jeongho Nam - https://github.com/samchon
-    */
-  @js.native
-  class ReverseIterator[T] ()
-    extends typings.ecol.listCollectionMod.ListCollection.ReverseIterator[T]
   
   val Event: Instantiable3[
     /* type */ String, 
@@ -61,5 +43,22 @@ object ListCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
+  /**
+    * Iterator of {@link List}
+    *
+    * @author Jeongho Nam - https://github.com/samchon
+    */
+  @js.native
+  class Iterator[T] protected ()
+    extends typings.ecol.mod.ListCollection.Iterator[T]
+  
+  /**
+    * Reverse iterator of {@link List}
+    *
+    * @author Jeongho Nam - https://github.com/samchon
+    */
+  @js.native
+  class ReverseIterator[T] ()
+    extends typings.ecol.listCollectionMod.ListCollection.ReverseIterator[T]
 }
-

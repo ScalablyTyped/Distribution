@@ -11,7 +11,7 @@ Lets you interface with Steam without running an actual Steam client
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 26 |
-| # downloads        | 30887 |
+| # downloads        | 241393 |
 | # stars            | 11 |
 
 ## Links

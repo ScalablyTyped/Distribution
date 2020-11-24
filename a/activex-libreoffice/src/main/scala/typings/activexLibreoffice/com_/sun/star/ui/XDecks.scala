@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to Decks of a Sidebar.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait XDecks
   extends XIndexAccess
      with XNameAccess
-
 object XDecks {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -38,4 +38,3 @@ object XDecks {
     __obj.asInstanceOf[XDecks]
   }
 }
-

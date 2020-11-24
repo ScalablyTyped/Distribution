@@ -6,8 +6,7 @@ import typings.athenajs.mod.Effect
 import typings.athenajs.mod.EffectOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableEffect extends Instantiable2[/* options */ EffectOptions, /* display */ Display, Effect]
-

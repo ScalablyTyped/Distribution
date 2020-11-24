@@ -2,11 +2,12 @@ package typings.tress.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tress", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Creates queue object that will store jobs and process them with worker function
     * in parallel (up to the concurrency limit)
@@ -27,4 +28,3 @@ object ^ extends js.Object {
     concurrency: Double
   ): TressStatic = js.native
 }
-

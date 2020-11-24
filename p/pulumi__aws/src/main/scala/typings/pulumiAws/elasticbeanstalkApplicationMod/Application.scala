@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application")
 @js.native
@@ -25,29 +25,34 @@ class Application protected () extends CustomResource {
   def this(name: String, args: ApplicationArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ApplicationArgs, opts: CustomResourceOptions) = this()
+  
   val appversionLifecycle: Output_[js.UndefOr[ApplicationAppversionLifecycle]] = js.native
+  
   /**
     * The ARN assigned by AWS for this Elastic Beanstalk Application.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Short description of the application
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the application, must be unique within your account
     */
   val name: Output_[String] = js.native
+  
   /**
     * Key-value map of tags for the Elastic Beanstalk Application.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application")
 @js.native
 object Application extends js.Object {
+  
   /**
     * Get an existing Application resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -61,10 +66,10 @@ object Application extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Application = js.native
   def get(name: String, id: Input[ID], state: ApplicationState): Application = js.native
   def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = js.native
+  
   /**
     * Returns true if the given object is an instance of Application.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean = js.native
 }
-

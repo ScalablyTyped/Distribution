@@ -2,14 +2,14 @@ package typings.amapJsApiTransfer.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TransferPolicy extends js.Object
-
 @JSGlobal("AMap.TransferPolicy")
 @js.native
 object TransferPolicy extends js.Object {
+  
   /**
     * 最经济模式
     */
@@ -45,6 +45,4 @@ object TransferPolicy extends js.Object {
     */
   @js.native
   sealed trait NO_SUBWAY extends TransferPolicy
-  
 }
-

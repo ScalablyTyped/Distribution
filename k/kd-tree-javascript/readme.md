@@ -11,8 +11,8 @@ A basic but super fast JavaScript implementation of the k-dimensional tree data 
 | Full name          | kd-tree-javascript |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 26679 |
+| # dependents       | 5 |
+| # downloads        | 40417 |
 | # stars            | 0 |
 
 ## Links

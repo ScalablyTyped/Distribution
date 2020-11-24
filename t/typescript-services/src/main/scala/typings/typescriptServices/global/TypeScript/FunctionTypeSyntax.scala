@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.ISyntaxToken
 import typings.typescriptServices.TypeScript.ITypeSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.FunctionTypeSyntax")
 @js.native
@@ -18,16 +18,16 @@ class FunctionTypeSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.FunctionTypeSyntax")
 @js.native
 object FunctionTypeSyntax extends js.Object {
+  
   def create(
     parameterList: typings.typescriptServices.TypeScript.ParameterListSyntax,
     equalsGreaterThanToken: ISyntaxToken,
     `type`: ITypeSyntax
   ): typings.typescriptServices.TypeScript.FunctionTypeSyntax = js.native
+  
   def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.FunctionTypeSyntax = js.native
 }
-

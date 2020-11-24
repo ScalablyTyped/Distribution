@@ -6,7 +6,7 @@ import typings.luminoWidgets.stackedpanelMod.StackedPanel.IOptions
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/stackedpanel", "StackedPanel")
 @js.native
@@ -17,10 +17,11 @@ import scala.scalajs.js.annotation._
   */
 class StackedPanel_ () extends Panel {
   def this(options: IOptions) = this()
+  
   var _widgetRemoved: js.Any = js.native
+  
   /**
     * A signal emitted when a widget is removed from a stacked panel.
     */
   val widgetRemoved: ISignal[this.type, Widget] = js.native
 }
-

@@ -3,10 +3,11 @@ package typings.officeUiFabricReact.overflowSetTypesMod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IOverflowSet extends js.Object {
+  
   /**
     * Sets focus to the first tabbable item in the zone.
     * @param forceIntoFirstElement - If true, focus will be forced into the first element, even if
@@ -15,6 +16,7 @@ trait IOverflowSet extends js.Object {
     */
   def focus(): Boolean = js.native
   def focus(forceIntoFirstElement: Boolean): Boolean = js.native
+  
   /**
     * Sets focus to a specific child element within the zone. This can be used in conjunction with
     * shouldReceiveFocus to created delayed focus scenarios (like animate the scroll position to the correct
@@ -25,4 +27,3 @@ trait IOverflowSet extends js.Object {
   def focusElement(): Boolean = js.native
   def focusElement(childElement: HTMLElement): Boolean = js.native
 }
-

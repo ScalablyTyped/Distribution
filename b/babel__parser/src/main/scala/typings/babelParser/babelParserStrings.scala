@@ -3,11 +3,150 @@ package typings.babelParser
 import typings.babelParser.mod._ParserPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babelParserStrings {
+  
+  @scala.inline
+  def asyncGenerators: asyncGenerators = "asyncGenerators".asInstanceOf[asyncGenerators]
+  
+  @scala.inline
+  def bar: bar = "bar".asInstanceOf[bar]
+  
+  @scala.inline
+  def bigInt: bigInt = "bigInt".asInstanceOf[bigInt]
+  
+  @scala.inline
+  def classPrivateMethods: classPrivateMethods = "classPrivateMethods".asInstanceOf[classPrivateMethods]
+  
+  @scala.inline
+  def classPrivateProperties: classPrivateProperties = "classPrivateProperties".asInstanceOf[classPrivateProperties]
+  
+  @scala.inline
+  def classProperties: classProperties = "classProperties".asInstanceOf[classProperties]
+  
+  @scala.inline
+  def classStaticBlock: classStaticBlock = "classStaticBlock".asInstanceOf[classStaticBlock]
+  
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @scala.inline
+  def decorators: decorators = "decorators".asInstanceOf[decorators]
+  
+  @scala.inline
+  def `decorators-legacy`: `decorators-legacy` = "decorators-legacy".asInstanceOf[`decorators-legacy`]
+  
+  @scala.inline
+  def doExpressions: doExpressions = "doExpressions".asInstanceOf[doExpressions]
+  
+  @scala.inline
+  def dynamicImport: dynamicImport = "dynamicImport".asInstanceOf[dynamicImport]
+  
+  @scala.inline
+  def estree: estree = "estree".asInstanceOf[estree]
+  
+  @scala.inline
+  def exportDefaultFrom: exportDefaultFrom = "exportDefaultFrom".asInstanceOf[exportDefaultFrom]
+  
+  @scala.inline
+  def exportNamespaceFrom: exportNamespaceFrom = "exportNamespaceFrom".asInstanceOf[exportNamespaceFrom]
+  
+  @scala.inline
+  def flow: flow = "flow".asInstanceOf[flow]
+  
+  @scala.inline
+  def flowComments: flowComments = "flowComments".asInstanceOf[flowComments]
+  
+  @scala.inline
+  def fsharp: fsharp = "fsharp".asInstanceOf[fsharp]
+  
+  @scala.inline
+  def functionBind: functionBind = "functionBind".asInstanceOf[functionBind]
+  
+  @scala.inline
+  def functionSent: functionSent = "functionSent".asInstanceOf[functionSent]
+  
+  @scala.inline
+  def hash: hash = "hash".asInstanceOf[hash]
+  
+  @scala.inline
+  def importAssertions: importAssertions = "importAssertions".asInstanceOf[importAssertions]
+  
+  @scala.inline
+  def importMeta: importMeta = "importMeta".asInstanceOf[importMeta]
+  
+  @scala.inline
+  def jsx: jsx = "jsx".asInstanceOf[jsx]
+  
+  @scala.inline
+  def logicalAssignment: logicalAssignment = "logicalAssignment".asInstanceOf[logicalAssignment]
+  
+  @scala.inline
+  def minimal: minimal = "minimal".asInstanceOf[minimal]
+  
+  @scala.inline
+  def module: module = "module".asInstanceOf[module]
+  
+  @scala.inline
+  def moduleStringNames: moduleStringNames = "moduleStringNames".asInstanceOf[moduleStringNames]
+  
+  @scala.inline
+  def nullishCoalescingOperator: nullishCoalescingOperator = "nullishCoalescingOperator".asInstanceOf[nullishCoalescingOperator]
+  
+  @scala.inline
+  def numericSeparator: numericSeparator = "numericSeparator".asInstanceOf[numericSeparator]
+  
+  @scala.inline
+  def objectRestSpread: objectRestSpread = "objectRestSpread".asInstanceOf[objectRestSpread]
+  
+  @scala.inline
+  def optionalCatchBinding: optionalCatchBinding = "optionalCatchBinding".asInstanceOf[optionalCatchBinding]
+  
+  @scala.inline
+  def optionalChaining: optionalChaining = "optionalChaining".asInstanceOf[optionalChaining]
+  
+  @scala.inline
+  def partialApplication: partialApplication = "partialApplication".asInstanceOf[partialApplication]
+  
+  @scala.inline
+  def pipelineOperator: pipelineOperator = "pipelineOperator".asInstanceOf[pipelineOperator]
+  
+  @scala.inline
+  def placeholders: placeholders = "placeholders".asInstanceOf[placeholders]
+  
+  @scala.inline
+  def privateIn: privateIn = "privateIn".asInstanceOf[privateIn]
+  
+  @scala.inline
+  def recordAndTuple: recordAndTuple = "recordAndTuple".asInstanceOf[recordAndTuple]
+  
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
+  
+  @scala.inline
+  def smart: smart = "smart".asInstanceOf[smart]
+  
+  @scala.inline
+  def throwExpressions: throwExpressions = "throwExpressions".asInstanceOf[throwExpressions]
+  
+  @scala.inline
+  def topLevelAwait: topLevelAwait = "topLevelAwait".asInstanceOf[topLevelAwait]
+  
+  @scala.inline
+  def typescript: typescript = "typescript".asInstanceOf[typescript]
+  
+  @scala.inline
+  def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
+  
+  @scala.inline
+  def v8intrinsic: v8intrinsic = "v8intrinsic".asInstanceOf[v8intrinsic]
+  
   @js.native
   sealed trait asyncGenerators extends _ParserPlugin
+  
+  @js.native
+  sealed trait bar extends js.Object
   
   @js.native
   sealed trait bigInt extends _ParserPlugin
@@ -20,6 +159,9 @@ object babelParserStrings {
   
   @js.native
   sealed trait classProperties extends _ParserPlugin
+  
+  @js.native
+  sealed trait classStaticBlock extends _ParserPlugin
   
   @js.native
   sealed trait decimal extends _ParserPlugin
@@ -52,10 +194,19 @@ object babelParserStrings {
   sealed trait flowComments extends _ParserPlugin
   
   @js.native
+  sealed trait fsharp extends js.Object
+  
+  @js.native
   sealed trait functionBind extends _ParserPlugin
   
   @js.native
   sealed trait functionSent extends _ParserPlugin
+  
+  @js.native
+  sealed trait hash extends js.Object
+  
+  @js.native
+  sealed trait importAssertions extends _ParserPlugin
   
   @js.native
   sealed trait importMeta extends _ParserPlugin
@@ -73,7 +224,7 @@ object babelParserStrings {
   sealed trait module extends js.Object
   
   @js.native
-  sealed trait moduleAttributes extends _ParserPlugin
+  sealed trait moduleStringNames extends _ParserPlugin
   
   @js.native
   sealed trait nullishCoalescingOperator extends _ParserPlugin
@@ -103,6 +254,9 @@ object babelParserStrings {
   sealed trait privateIn extends _ParserPlugin
   
   @js.native
+  sealed trait recordAndTuple extends js.Object
+  
+  @js.native
   sealed trait script extends js.Object
   
   @js.native
@@ -122,84 +276,4 @@ object babelParserStrings {
   
   @js.native
   sealed trait v8intrinsic extends _ParserPlugin
-  
-  @scala.inline
-  def asyncGenerators: asyncGenerators = "asyncGenerators".asInstanceOf[asyncGenerators]
-  @scala.inline
-  def bigInt: bigInt = "bigInt".asInstanceOf[bigInt]
-  @scala.inline
-  def classPrivateMethods: classPrivateMethods = "classPrivateMethods".asInstanceOf[classPrivateMethods]
-  @scala.inline
-  def classPrivateProperties: classPrivateProperties = "classPrivateProperties".asInstanceOf[classPrivateProperties]
-  @scala.inline
-  def classProperties: classProperties = "classProperties".asInstanceOf[classProperties]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def decorators: decorators = "decorators".asInstanceOf[decorators]
-  @scala.inline
-  def `decorators-legacy`: `decorators-legacy` = "decorators-legacy".asInstanceOf[`decorators-legacy`]
-  @scala.inline
-  def doExpressions: doExpressions = "doExpressions".asInstanceOf[doExpressions]
-  @scala.inline
-  def dynamicImport: dynamicImport = "dynamicImport".asInstanceOf[dynamicImport]
-  @scala.inline
-  def estree: estree = "estree".asInstanceOf[estree]
-  @scala.inline
-  def exportDefaultFrom: exportDefaultFrom = "exportDefaultFrom".asInstanceOf[exportDefaultFrom]
-  @scala.inline
-  def exportNamespaceFrom: exportNamespaceFrom = "exportNamespaceFrom".asInstanceOf[exportNamespaceFrom]
-  @scala.inline
-  def flow: flow = "flow".asInstanceOf[flow]
-  @scala.inline
-  def flowComments: flowComments = "flowComments".asInstanceOf[flowComments]
-  @scala.inline
-  def functionBind: functionBind = "functionBind".asInstanceOf[functionBind]
-  @scala.inline
-  def functionSent: functionSent = "functionSent".asInstanceOf[functionSent]
-  @scala.inline
-  def importMeta: importMeta = "importMeta".asInstanceOf[importMeta]
-  @scala.inline
-  def jsx: jsx = "jsx".asInstanceOf[jsx]
-  @scala.inline
-  def logicalAssignment: logicalAssignment = "logicalAssignment".asInstanceOf[logicalAssignment]
-  @scala.inline
-  def minimal: minimal = "minimal".asInstanceOf[minimal]
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
-  @scala.inline
-  def moduleAttributes: moduleAttributes = "moduleAttributes".asInstanceOf[moduleAttributes]
-  @scala.inline
-  def nullishCoalescingOperator: nullishCoalescingOperator = "nullishCoalescingOperator".asInstanceOf[nullishCoalescingOperator]
-  @scala.inline
-  def numericSeparator: numericSeparator = "numericSeparator".asInstanceOf[numericSeparator]
-  @scala.inline
-  def objectRestSpread: objectRestSpread = "objectRestSpread".asInstanceOf[objectRestSpread]
-  @scala.inline
-  def optionalCatchBinding: optionalCatchBinding = "optionalCatchBinding".asInstanceOf[optionalCatchBinding]
-  @scala.inline
-  def optionalChaining: optionalChaining = "optionalChaining".asInstanceOf[optionalChaining]
-  @scala.inline
-  def partialApplication: partialApplication = "partialApplication".asInstanceOf[partialApplication]
-  @scala.inline
-  def pipelineOperator: pipelineOperator = "pipelineOperator".asInstanceOf[pipelineOperator]
-  @scala.inline
-  def placeholders: placeholders = "placeholders".asInstanceOf[placeholders]
-  @scala.inline
-  def privateIn: privateIn = "privateIn".asInstanceOf[privateIn]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
-  @scala.inline
-  def throwExpressions: throwExpressions = "throwExpressions".asInstanceOf[throwExpressions]
-  @scala.inline
-  def topLevelAwait: topLevelAwait = "topLevelAwait".asInstanceOf[topLevelAwait]
-  @scala.inline
-  def typescript: typescript = "typescript".asInstanceOf[typescript]
-  @scala.inline
-  def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
-  @scala.inline
-  def v8intrinsic: v8intrinsic = "v8intrinsic".asInstanceOf[v8intrinsic]
 }
-

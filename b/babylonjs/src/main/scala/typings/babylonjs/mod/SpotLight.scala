@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SpotLight")
 @js.native
@@ -28,4 +28,12 @@ class SpotLight protected ()
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs", "SpotLight")
+@js.native
+object SpotLight extends js.Object {
+  
+  var _IsProceduralTexture: js.Any = js.native
+  
+  var _IsTexture: js.Any = js.native
+}

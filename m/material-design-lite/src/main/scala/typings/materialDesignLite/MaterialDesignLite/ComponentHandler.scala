@@ -6,10 +6,11 @@ import typings.std.Node
 import typings.std.NodeList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentHandler extends js.Object {
+  
   /**
     * Downgrade either a given node, an array of nodes, or a NodeList.
     *
@@ -28,12 +29,14 @@ trait ComponentHandler extends js.Object {
     * @param {!NodeList} nodes The list of nodes.
     */
   def downgradeElements(nodes: NodeList): Unit = js.native
+  
   /**
     * Registers a class for future use and attempts to upgrade existing DOM.
     *
     * @param {componentHandler.ComponentConfigPublic} config the registration configuration
     */
   def register(config: ComponentConfigPublic): Unit = js.native
+  
   /**
     * Allows user to be alerted to any upgrades that are performed for a given
     * component type
@@ -45,11 +48,13 @@ trait ComponentHandler extends js.Object {
     * got upgraded.
     */
   def registerUpgradedCallback(jsClass: String, callback: js.Function1[/* element */ HTMLElement, _]): Unit = js.native
+  
   /**
     * Upgrades all registered components found in the current DOM. This is
     * automatically called on window load.
     */
   def upgradeAllRegistered(): Unit = js.native
+  
   /**
     * Searches existing DOM for elements of our component type and upgrades them
     * if they have not already been upgraded.
@@ -73,6 +78,7 @@ trait ComponentHandler extends js.Object {
     * type will have.
     */
   def upgradeDom(jsClass: String, cssClass: String): Unit = js.native
+  
   /**
     * Upgrades a specific element rather than all in the DOM.
     *
@@ -87,6 +93,7 @@ trait ComponentHandler extends js.Object {
     * the element to.
     */
   def upgradeElement(element: HTMLElement, jsClass: String): Unit = js.native
+  
   /**
     * Upgrades a specific list of elements rather than all in the DOM.
     *
@@ -116,4 +123,3 @@ trait ComponentHandler extends js.Object {
     */
   def upgradeElements(elements: NodeList): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionStringConfig")
 @js.native
 class CatalogCustomAttributeDefinitionStringConfig () extends js.Object {
+  
   /**
     * If true, each Custom Attribute instance associated with this Custom Attribute Definition must have a unique value
     * within the seller's catalog. For example, this may be used for a value like a SKU that should not be duplicated
@@ -14,4 +15,3 @@ class CatalogCustomAttributeDefinitionStringConfig () extends js.Object {
     */
   var enforce_uniqueness: js.UndefOr[Boolean] = js.native
 }
-

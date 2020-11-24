@@ -2,7 +2,7 @@ package typings.babylonjs.renderPipelineIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/RenderPipeline/index", "PostProcessRenderPipelineManager")
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 class PostProcessRenderPipelineManager ()
   extends typings.babylonjs.postProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager
-

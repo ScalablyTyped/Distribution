@@ -10,9 +10,9 @@ Typings are for version 1.3
 | ------------------ | :-------------: |
 | Full name          | system-service |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 491 |
+| # downloads        | 546 |
 | # stars            | 0 |
 
 ## Links

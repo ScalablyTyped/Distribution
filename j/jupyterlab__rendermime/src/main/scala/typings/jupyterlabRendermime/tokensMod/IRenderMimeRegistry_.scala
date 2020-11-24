@@ -14,30 +14,11 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRenderMimeRegistry_ extends js.Object {
-  /**
-    * The LaTeX typesetter for the rendermime.
-    */
-  val latexTypesetter: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter | Null = js.native
-  /**
-    * The object used to handle path opening links.
-    */
-  val linkHandler: ILinkHandler | Null = js.native
-  /**
-    * The ordered list of mimeTypes.
-    */
-  val mimeTypes: js.Array[String] = js.native
-  /**
-    * The object used to resolve relative urls for the rendermime instance.
-    */
-  val resolver: IResolver | Null = js.native
-  /**
-    * The sanitizer used by the rendermime instance.
-    */
-  val sanitizer: ISanitizer = js.native
+  
   /**
     * Add a renderer factory to the rendermime.
     *
@@ -54,7 +35,9 @@ trait IRenderMimeRegistry_ extends js.Object {
     */
   def addFactory(factory: IRendererFactory): Unit = js.native
   def addFactory(factory: IRendererFactory, rank: Double): Unit = js.native
+  
   def clone(options: ICloneOptions): IRenderMimeRegistry = js.native
+  
   /**
     * Create a new mime model.  This is a convenience method.
     *
@@ -64,6 +47,7 @@ trait IRenderMimeRegistry_ extends js.Object {
     */
   def createModel(): MimeModel = js.native
   def createModel(options: IOptions): MimeModel = js.native
+  
   /**
     * Create a renderer for a mime type.
     *
@@ -74,6 +58,7 @@ trait IRenderMimeRegistry_ extends js.Object {
     * @throws An error if no factory exists for the mime type.
     */
   def createRenderer(mimeType: String): IRenderer = js.native
+  
   /**
     * Get the renderer factory registered for a mime type.
     *
@@ -82,6 +67,7 @@ trait IRenderMimeRegistry_ extends js.Object {
     * @returns The factory for the mime type, or `undefined`.
     */
   def getFactory(mimeType: String): js.UndefOr[IRendererFactory] = js.native
+  
   /**
     * Get the rank for a given mime type.
     *
@@ -90,6 +76,22 @@ trait IRenderMimeRegistry_ extends js.Object {
     * @returns The rank of the mime type or undefined.
     */
   def getRank(mimeType: String): js.UndefOr[Double] = js.native
+  
+  /**
+    * The LaTeX typesetter for the rendermime.
+    */
+  val latexTypesetter: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter | Null = js.native
+  
+  /**
+    * The object used to handle path opening links.
+    */
+  val linkHandler: ILinkHandler | Null = js.native
+  
+  /**
+    * The ordered list of mimeTypes.
+    */
+  val mimeTypes: js.Array[String] = js.native
+  
   /**
     * Find the preferred mime type for a mime bundle.
     *
@@ -110,12 +112,24 @@ trait IRenderMimeRegistry_ extends js.Object {
   def preferredMimeType_ensure(bundle: ReadonlyPartialJSONObject, safe: ensure): js.UndefOr[String] = js.native
   @JSName("preferredMimeType")
   def preferredMimeType_prefer(bundle: ReadonlyPartialJSONObject, safe: prefer): js.UndefOr[String] = js.native
+  
   /**
     * Remove a mime type.
     *
     * @param mimeType - The mime type of interest.
     */
   def removeMimeType(mimeType: String): Unit = js.native
+  
+  /**
+    * The object used to resolve relative urls for the rendermime instance.
+    */
+  val resolver: IResolver | Null = js.native
+  
+  /**
+    * The sanitizer used by the rendermime instance.
+    */
+  val sanitizer: ISanitizer = js.native
+  
   /**
     * Set the rank of a given mime type.
     *
@@ -128,4 +142,3 @@ trait IRenderMimeRegistry_ extends js.Object {
     */
   def setRank(mimeType: String, rank: Double): Unit = js.native
 }
-

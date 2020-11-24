@@ -10,9 +10,9 @@ Tag cloud/Wordle presentation on 2D canvas or HTML
 | ------------------ | :-------------: |
 | Full name          | wordcloud |
 | Keywords           | cloud, canvas, 2D, html, Wordle, presentation, tag |
-| # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 88165 |
+| # releases         | 2 |
+| # dependents       | 7 |
+| # downloads        | 141384 |
 | # stars            | 5 |
 
 ## Links

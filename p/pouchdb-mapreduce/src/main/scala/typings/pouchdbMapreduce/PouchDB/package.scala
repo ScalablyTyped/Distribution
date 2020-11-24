@@ -2,9 +2,10 @@ package typings.pouchdbMapreduce
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object PouchDB {
+  
   /**
     * CouchDB-style Map function
     *
@@ -15,6 +16,7 @@ package object PouchDB {
     /* emit */ js.UndefOr[js.Function2[/* key */ js.Any, /* value */ Content | Result, scala.Unit]], 
     scala.Unit
   ]
+  
   /**
     * CouchDB-style Reduction function
     *

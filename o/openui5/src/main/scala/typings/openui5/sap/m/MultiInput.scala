@@ -2,22 +2,25 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MultiInput extends Input {
+  
   /**
     * Adds some token to the aggregation <code>tokens</code>.
     * @param oToken the token to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addToken(oToken: Token): MultiInput = js.native
+  
   /**
     * Function adds an validation callback called before any new token gets added to the tokens
     * aggregation
     * @param fValidator undefined
     */
   def addValidator(fValidator: js.Any): Unit = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>tokenChange</code> event of this
     * <code>sap.m.MultiInput</code>.When called, the context of the event handler (its <code>this</code>)
@@ -32,16 +35,19 @@ trait MultiInput extends Input {
     */
   def attachTokenChange(oData: js.Any, fnFunction: js.Any): MultiInput = js.native
   def attachTokenChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MultiInput = js.native
+  
   /**
     * Close multi-line MultiInput in multi-line mode
     * @since 1.28
     */
   def closeMultiLine(): Unit = js.native
+  
   /**
     * Destroys all the tokens in the aggregation <code>tokens</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyTokens(): MultiInput = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>tokenChange</code> event of this
     * <code>sap.m.MultiInput</code>.The passed function and listener object must match the ones used for
@@ -51,6 +57,7 @@ trait MultiInput extends Input {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachTokenChange(fnFunction: js.Any, oListener: js.Any): MultiInput = js.native
+  
   /**
     * Fires event <code>tokenChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>type</code> of type <code>string</code>Type of tokenChange event.There are
@@ -69,6 +76,7 @@ trait MultiInput extends Input {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireTokenChange(mArguments: js.Any): MultiInput = js.native
+  
   /**
     * Gets current value of property <code>enableMultiLineMode</code>.If set to true, the MultiInput will
     * be displayed in multi-line display mode.In multi-line display mode, all tokens can be fully viewed
@@ -77,6 +85,7 @@ trait MultiInput extends Input {
     * @returns Value of property <code>enableMultiLineMode</code>
     */
   def getEnableMultiLineMode(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>maxTokens</code>.The max number of tokens that is allowed in
     * MultiInput.
@@ -84,15 +93,18 @@ trait MultiInput extends Input {
     * @returns Value of property <code>maxTokens</code>
     */
   def getMaxTokens(): Double = js.native
+  
   /**
     * Function returns domref which acts as reference point for the opening suggestion menu
     * @returns the domref at which to open the suggestion menu
     */
   def getPopupAnchorDomRef(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>tokens</code>.The currently displayed tokens
     */
   def getTokens(): js.Array[Token] = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Token</code> in the aggregation <code>tokens</code>.and returns
     * its index if found or -1 otherwise.
@@ -100,6 +112,7 @@ trait MultiInput extends Input {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfToken(oToken: Token): Double = js.native
+  
   /**
     * Inserts a token into the aggregation <code>tokens</code>.
     * @param oToken the token to insert; if empty, nothing is inserted
@@ -110,31 +123,37 @@ trait MultiInput extends Input {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertToken(oToken: Token, iIndex: Double): MultiInput = js.native
+  
   /**
     * Focus is on MultiInput
     * @param oEvent undefined
     */
   def onfocusin(oEvent: js.Any): Unit = js.native
+  
   /**
     * When press ESC, deselect all tokens and all texts
     * @param oEvent undefined
     */
   def onsapescape(oEvent: js.Any): Unit = js.native
+  
   /**
     * Expand multi-line MultiInput in multi-line mode
     * @since 1.28
     */
   def openMultiLine(): Unit = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>tokens</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllTokens(): js.Array[Token] = js.native
+  
   /**
     * Function removes all validation callbacks
     */
   def removeAllValidators(): Unit = js.native
+  
   def removeToken(vToken: String): Token = js.native
   /**
     * Removes a token from the aggregation <code>tokens</code>.
@@ -143,16 +162,19 @@ trait MultiInput extends Input {
     */
   def removeToken(vToken: Double): Token = js.native
   def removeToken(vToken: Token): Token = js.native
+  
   /**
     * Function removes an validation callback
     * @param fValidator undefined
     */
   def removeValidator(fValidator: js.Any): Unit = js.native
+  
   /**
     * Setter for property <code>enableMultiLineMode</code>.
     * @since 1.28
     */
   def setEnableMultiLineMode(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>maxTokens</code>.The max number of tokens that is allowed in
     * MultiInput.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -162,10 +184,10 @@ trait MultiInput extends Input {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxTokens(iMaxTokens: Double): MultiInput = js.native
+  
   /**
     * Function sets an array of tokens, existing tokens will get overridden
     * @param aTokens the new token set
     */
   def setTokens(aTokens: js.Array[Token]): Unit = js.native
 }
-

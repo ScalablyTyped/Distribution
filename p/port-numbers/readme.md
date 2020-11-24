@@ -10,9 +10,9 @@ Get information on network port numbers and services, based on IANA's public lis
 | ------------------ | :-------------: |
 | Full name          | port-numbers |
 | Keywords           | port, port-numbers, numbers, tcp, udp, network, networking, iana, well-known |
-| # releases         | 39 |
+| # releases         | 30 |
 | # dependents       | 7 |
-| # downloads        | 1990014 |
+| # downloads        | 1555119 |
 | # stars            | 1 |
 
 ## Links

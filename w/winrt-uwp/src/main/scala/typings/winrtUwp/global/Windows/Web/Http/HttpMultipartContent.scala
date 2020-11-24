@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Web.Http
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses the multipart/ * MIME type. */
 @JSGlobal("Windows.Web.Http.HttpMultipartContent")
@@ -22,4 +22,3 @@ class HttpMultipartContent ()
     */
   def this(subtype: String, boundary: String) = this()
 }
-

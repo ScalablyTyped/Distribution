@@ -16,14 +16,13 @@ import typings.plotlyJs.plotlyJsStrings.pixel
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
-import typings.plotlyJs.plotlyJsStrings.x
-import typings.plotlyJs.plotlyJsStrings.y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Annotations extends Label {
+  
   /**
     * Sets the horizontal alignment of the `text` within the box.
     * Has an effect only if `text` spans more two or more lines
@@ -31,19 +30,25 @@ trait Annotations extends Label {
     * explicit width is set to override the text width.
     */
   var align: left | center | right = js.native
+  
   /** Sets the color of the annotation arrow. */
   var arrowcolor: String = js.native
+  
   /** Sets the end annotation arrow head style. */
   var arrowhead: Double = js.native
+  
   /** Sets the annotation arrow head position. */
   var arrowside: end | start = js.native
+  
   /**
     * Sets the size of the end annotation arrow head, relative to `arrowwidth`.
     * A value of 1 (default) gives a head about 3x as wide as the line.
     */
   var arrowsize: Double = js.native
+  
   /** Sets the width (in px) of annotation arrow line. */
   var arrowwidth: Double = js.native
+  
   /**
     * Sets the x component of the arrow tail about the arrow head.
     * If `axref` is `pixel`, a positive (negative)
@@ -53,6 +58,7 @@ trait Annotations extends Label {
     * like `x`, NOT a relative value.
     */
   var ax: Double = js.native
+  
   /**
     * Indicates in what terms the tail of the annotation (ax,ay)
     * is specified. If `pixel`, `ax` is a relative offset in pixels
@@ -61,7 +67,8 @@ trait Annotations extends Label {
     * for trendline annotations which should continue to indicate
     * the correct trend when zoomed.
     */
-  var axref: pixel = js.native
+  var axref: pixel | XAxisName = js.native
+  
   /**
     * Sets the y component of the arrow tail about the arrow head.
     * If `ayref` is `pixel`, a positive (negative)
@@ -71,6 +78,7 @@ trait Annotations extends Label {
     * like `y`, NOT a relative value.
     */
   var ay: Double = js.native
+  
   /**
     * Indicates in what terms the tail of the annotation (ax,ay)
     * is specified. If `pixel`, `ay` is a relative offset in pixels
@@ -79,11 +87,14 @@ trait Annotations extends Label {
     * for trendline annotations which should continue to indicate
     * the correct trend when zoomed.
     */
-  var ayref: pixel = js.native
+  var ayref: pixel | YAxisName = js.native
+  
   /** Sets the padding (in px) between the `text` and the enclosing border. */
   var borderpad: Double = js.native
+  
   /** Sets the width (in px) of the border enclosing the annotation `text`. */
   var borderwidth: Double = js.native
+  
   /**
     * Determines whether the annotation text box captures mouse move and click events,
     * or allows those events to pass through to data points in the plot that may be
@@ -92,6 +103,7 @@ trait Annotations extends Label {
     * you must explicitly enable `captureevents`.
     */
   var captureevents: Boolean = js.native
+  
   /**
     * Makes this annotation respond to clicks on the plot.
     * If you click a data point that exactly matches the `x` and `y` values of this annotation,
@@ -103,25 +115,31 @@ trait Annotations extends Label {
     * the side of a bar. To label markers though, `standoff` is preferred over `xclick` and `yclick`.
     */
   var clicktoshow: `false` | onoff | onout = js.native
+  
   /**
     * Sets an explicit height for the text box. null (default) lets the
     * text set the box height. Taller text will be clipped.
     */
   var height: Double = js.native
+  
   var hoverlabel: PartialHoverLabel = js.native
+  
   /**
     * Sets text to appear when hovering over this annotation.
     * If omitted or blank, no hover label will appear.
     */
   var hovertext: String = js.native
+  
   /** Sets the opacity of the annotation (text + arrow). */
   var opacity: Double = js.native
+  
   /**
     * Determines whether or not the annotation is drawn with an arrow.
     * If *true*, `text` is placed near the arrow's tail.
     * If *false*, `text` lines up with the `x` and `y` provided.
     */
   var showarrow: Boolean = js.native
+  
   /**
     * Sets a distance, in pixels, to move the end arrowhead away from the
     * position it is pointing at, for example to point at the edge of
@@ -130,13 +148,16 @@ trait Annotations extends Label {
     * which moves everything by this amount.
     */
   var standoff: Double = js.native
+  
   /** Sets the start annotation arrow head style. */
   var startarrowhead: Double = js.native
+  
   /**
     * Sets the size of the start annotation arrow head, relative to `arrowwidth`.
     * A value of 1 (default) gives a head about 3x as wide as the line.
     */
   var startarrowsize: Double = js.native
+  
   /**
     * Sets a distance, in pixels, to move the start arrowhead away from the
     * position it is pointing at, for example to point at the edge of
@@ -145,6 +166,7 @@ trait Annotations extends Label {
     * which moves everything by this amount.
     */
   var startstandoff: Double = js.native
+  
   /**
     * Sets the text associated with this annotation.
     * Plotly uses a subset of HTML tags to do things like
@@ -153,21 +175,26 @@ trait Annotations extends Label {
     * <span> are also supported.
     */
   var text: String = js.native
+  
   /** Sets the angle at which the `text` is drawn with respect to the horizontal. */
   var textangle: String = js.native
+  
   /**
     * Sets the vertical alignment of the `text` within the box.
     * Has an effect only if an explicit height is set to override the text height.
     */
   var valign: top | middle | bottom = js.native
+  
   /** Determines whether or not this annotation is visible. */
   var visible: Boolean = js.native
+  
   /**
     * Sets an explicit width for the text box. null (default) lets the
     * text set the box width. Wider text will be clipped.
     * There is no automatic wrapping; use <br> to start a new line.
     */
   var width: Double = js.native
+  
   /**
     * Sets the annotation's x position.
     * If the axis `type` is *log*, then you must take the log of your desired range.
@@ -177,6 +204,7 @@ trait Annotations extends Label {
     * category is assigned a serial number from zero in the order it appears.
     */
   var x: Double | String = js.native
+  
   /**
     * Sets the text box's horizontal position anchor
     * This anchor binds the `x` position to the *left*, *center* or *right* of the annotation.
@@ -186,11 +214,13 @@ trait Annotations extends Label {
     * is an arrow, whereas for paper-referenced with no arrow, the anchor picked corresponds to the closest side.
     */
   var xanchor: auto | left | center | right = js.native
+  
   /**
     * Toggle this annotation when clicking a data point whose `x` value
     * is `xclick` rather than the annotation's `x` value.
     */
   var xclick: js.Any = js.native
+  
   /**
     * Sets the annotation's x coordinate axis.
     * If set to an x axis id (e.g. *x* or *x2*), the `x` position refers to an x coordinate
@@ -198,12 +228,14 @@ trait Annotations extends Label {
     * the left side of the plotting area in normalized coordinates
     * where 0 (1) corresponds to the left (right) side.
     */
-  var xref: paper | x = js.native
+  var xref: paper | XAxisName = js.native
+  
   /**
     * Shifts the position of the whole annotation and arrow to the
     * right (positive) or left (negative) by this many pixels.
     */
   var xshift: Double = js.native
+  
   /**
     * Sets the annotation's y position.
     * If the axis `type` is *log*, then you must take the log of your desired range.
@@ -213,6 +245,7 @@ trait Annotations extends Label {
     * category is assigned a serial number from zero in the order it appears.
     */
   var y: Double | String = js.native
+  
   /**
     * Sets the text box's vertical position anchor
     * This anchor binds the `y` position to the *top*, *middle* or *bottom* of the annotation.
@@ -223,11 +256,13 @@ trait Annotations extends Label {
     * corresponds to the closest side.
     */
   var yanchor: auto | top | middle | bottom = js.native
+  
   /**
     * Toggle this annotation when clicking a data point whose `y` value
     * is `yclick` rather than the annotation's `y` value.
     */
   var yclick: js.Any = js.native
+  
   /**
     * Sets the annotation's y coordinate axis.
     * If set to an y axis id (e.g. *y* or *y2*), the `y` position refers to an y coordinate
@@ -235,15 +270,16 @@ trait Annotations extends Label {
     * the bottom of the plotting area in normalized coordinates
     * where 0 (1) corresponds to the bottom (top).
     */
-  var yref: paper | y = js.native
+  var yref: paper | YAxisName = js.native
+  
   /**
     * Shifts the position of the whole annotation and arrow up
     * (positive) or down (negative) by this many pixels.
     */
   var yshift: Double = js.native
 }
-
 object Annotations {
+  
   @scala.inline
   def apply(
     align: left | center | right,
@@ -253,9 +289,9 @@ object Annotations {
     arrowsize: Double,
     arrowwidth: Double,
     ax: Double,
-    axref: pixel,
+    axref: pixel | XAxisName,
     ay: Double,
-    ayref: pixel,
+    ayref: pixel | YAxisName,
     bgcolor: String,
     bordercolor: String,
     borderpad: Double,
@@ -280,105 +316,145 @@ object Annotations {
     x: Double | String,
     xanchor: auto | left | center | right,
     xclick: js.Any,
-    xref: paper | x,
+    xref: paper | XAxisName,
     xshift: Double,
     y: Double | String,
     yanchor: auto | top | middle | bottom,
     yclick: js.Any,
-    yref: paper | y,
+    yref: paper | YAxisName,
     yshift: Double
   ): Annotations = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], arrowcolor = arrowcolor.asInstanceOf[js.Any], arrowhead = arrowhead.asInstanceOf[js.Any], arrowside = arrowside.asInstanceOf[js.Any], arrowsize = arrowsize.asInstanceOf[js.Any], arrowwidth = arrowwidth.asInstanceOf[js.Any], ax = ax.asInstanceOf[js.Any], axref = axref.asInstanceOf[js.Any], ay = ay.asInstanceOf[js.Any], ayref = ayref.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderpad = borderpad.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], captureevents = captureevents.asInstanceOf[js.Any], clicktoshow = clicktoshow.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], showarrow = showarrow.asInstanceOf[js.Any], standoff = standoff.asInstanceOf[js.Any], startarrowhead = startarrowhead.asInstanceOf[js.Any], startarrowsize = startarrowsize.asInstanceOf[js.Any], startstandoff = startstandoff.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textangle = textangle.asInstanceOf[js.Any], valign = valign.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xclick = xclick.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], xshift = xshift.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yclick = yclick.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any], yshift = yshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotations]
   }
+  
   @scala.inline
   implicit class AnnotationsOps[Self <: Annotations] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrowcolor(value: String): Self = this.set("arrowcolor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrowhead(value: Double): Self = this.set("arrowhead", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrowside(value: end | start): Self = this.set("arrowside", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrowsize(value: Double): Self = this.set("arrowsize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrowwidth(value: Double): Self = this.set("arrowwidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAx(value: Double): Self = this.set("ax", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setAxref(value: pixel): Self = this.set("axref", value.asInstanceOf[js.Any])
+    def setAxref(value: pixel | XAxisName): Self = this.set("axref", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAy(value: Double): Self = this.set("ay", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setAyref(value: pixel): Self = this.set("ayref", value.asInstanceOf[js.Any])
+    def setAyref(value: pixel | YAxisName): Self = this.set("ayref", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBorderpad(value: Double): Self = this.set("borderpad", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBorderwidth(value: Double): Self = this.set("borderwidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCaptureevents(value: Boolean): Self = this.set("captureevents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClicktoshow(value: `false` | onoff | onout): Self = this.set("clicktoshow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHoverlabel(value: PartialHoverLabel): Self = this.set("hoverlabel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHovertext(value: String): Self = this.set("hovertext", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShowarrow(value: Boolean): Self = this.set("showarrow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStandoff(value: Double): Self = this.set("standoff", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartarrowhead(value: Double): Self = this.set("startarrowhead", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartarrowsize(value: Double): Self = this.set("startarrowsize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartstandoff(value: Double): Self = this.set("startstandoff", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextangle(value: String): Self = this.set("textangle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValign(value: top | middle | bottom): Self = this.set("valign", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setXanchor(value: auto | left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setXclick(value: js.Any): Self = this.set("xclick", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setXref(value: paper | typings.plotlyJs.plotlyJsStrings.x): Self = this.set("xref", value.asInstanceOf[js.Any])
+    def setXref(value: paper | XAxisName): Self = this.set("xref", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setXshift(value: Double): Self = this.set("xshift", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setYanchor(value: auto | top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setYclick(value: js.Any): Self = this.set("yclick", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setYref(value: paper | y): Self = this.set("yref", value.asInstanceOf[js.Any])
+    def setYref(value: paper | YAxisName): Self = this.set("yref", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setYshift(value: Double): Self = this.set("yshift", value.asInstanceOf[js.Any])
   }
-  
 }
-

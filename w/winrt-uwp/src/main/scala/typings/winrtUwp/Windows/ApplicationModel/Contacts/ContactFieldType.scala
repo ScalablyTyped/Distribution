@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactFieldType extends js.Object
-
 /** Defines the type of contact data. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldType")
 @js.native
 object ContactFieldType extends js.Object {
+  
   /** The contact's address. Supported on Windows Phone. */
   @js.native
   sealed trait address extends ContactFieldType
@@ -58,6 +58,4 @@ object ContactFieldType extends js.Object {
   /** The contact's Web site. */
   @js.native
   sealed trait website extends ContactFieldType
-  
 }
-

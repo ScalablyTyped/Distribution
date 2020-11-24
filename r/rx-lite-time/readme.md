@@ -12,7 +12,7 @@ Lightweight library with time-based functions for composing asynchronous and eve
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 967 |
+| # downloads        | 783 |
 | # stars            | 0 |
 
 ## Links

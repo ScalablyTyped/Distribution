@@ -1,12 +1,12 @@
 package typings.tensorflowTfjsLayers.mod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers", "LayerVariable")
 @js.native
@@ -90,4 +90,3 @@ class LayerVariable protected ()
   ) = this()
   def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
 }
-

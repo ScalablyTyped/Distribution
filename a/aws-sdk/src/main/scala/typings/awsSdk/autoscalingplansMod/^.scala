@@ -2,7 +2,7 @@ package typings.awsSdk.autoscalingplansMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/autoscalingplans", JSImport.Namespace)
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends AutoScalingPlans {
   def this(options: ClientConfiguration) = this()
 }
-

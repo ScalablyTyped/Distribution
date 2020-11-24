@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Metricdescriptors")
 @js.native
 class ResourceProjectsMetricdescriptors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.metricDescriptors.create
     * @desc Creates a new metric descriptor. User-created metric descriptors
@@ -90,6 +92,7 @@ class ResourceProjectsMetricdescriptors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMetricDescriptor]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.metricDescriptors.delete
     * @desc Deletes a metric descriptor. Only user-created custom metrics can
@@ -166,6 +169,7 @@ class ResourceProjectsMetricdescriptors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.metricDescriptors.get
     * @desc Gets a single metric descriptor. This method does not require a
@@ -245,6 +249,7 @@ class ResourceProjectsMetricdescriptors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMetricDescriptor]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.metricDescriptors.list
     * @desc Lists metric descriptors that match a filter. This method does not
@@ -334,4 +339,3 @@ class ResourceProjectsMetricdescriptors protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListMetricDescriptorsResponse]
   ): Unit = js.native
 }
-

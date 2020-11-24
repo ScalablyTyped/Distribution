@@ -10,9 +10,9 @@ Compress images in the browser
 | ------------------ | :-------------: |
 | Full name          | browser-image-compression |
 | Keywords           | image compression, browser, image processing, reduce resolution, reduce size |
-| # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 264384 |
+| # releases         | 16 |
+| # dependents       | 11 |
+| # downloads        | 840733 |
 | # stars            | 2 |
 
 ## Links

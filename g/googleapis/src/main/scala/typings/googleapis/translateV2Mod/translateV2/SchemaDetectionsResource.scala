@@ -2,7 +2,7 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An array of languages which we detect for the given text The most likely
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaDetectionsResource extends js.Object
-

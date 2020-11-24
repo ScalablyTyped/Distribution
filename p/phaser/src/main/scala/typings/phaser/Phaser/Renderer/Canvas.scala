@@ -15,68 +15,23 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Renderer.Canvas")
 @js.native
 object Canvas extends js.Object {
+  
   /**
     * The Canvas Renderer is responsible for managing 2D canvas rendering contexts, including the one used by the Game's canvas. It tracks the internal state of a given context and can renderer textured Game Objects to it, taking into account alpha, blending, and scaling.
     */
   @js.native
   trait CanvasRenderer extends js.Object {
+    
     /**
       * Should the Canvas use Image Smoothing or not when drawing Sprites?
       */
     var antialias: Boolean = js.native
-    /**
-      * The blend modes supported by the Canvas Renderer.
-      * 
-      * This object maps the {@link Phaser.BlendModes} to canvas compositing operations.
-      */
-    var blendModes: js.Array[_] = js.native
-    /**
-      * The local configuration settings of the CanvasRenderer.
-      */
-    var config: js.Object = js.native
-    /**
-      * The canvas context currently used by the CanvasRenderer for all rendering operations.
-      */
-    var currentContext: CanvasRenderingContext2D = js.native
-    /**
-      * The total number of Game Objects which were rendered in a frame.
-      */
-    var drawCount: Double = js.native
-    /**
-      * The Phaser Game instance that owns this renderer.
-      */
-    var game: Game = js.native
-    /**
-      * The canvas element which the Game uses.
-      */
-    var gameCanvas: HTMLCanvasElement = js.native
-    /**
-      * The canvas context used to render all Cameras in all Scenes during the game loop.
-      */
-    var gameContext: CanvasRenderingContext2D = js.native
-    /**
-      * The height of the canvas being rendered to.
-      */
-    var height: integer = js.native
-    /**
-      * Details about the currently scheduled snapshot.
-      * 
-      * If a non-null `callback` is set in this object, a snapshot of the canvas will be taken after the current frame is fully rendered.
-      */
-    var snapshotState: SnapshotState = js.native
-    /**
-      * A constant which allows the renderer to be easily identified as a Canvas Renderer.
-      */
-    var `type`: integer = js.native
-    /**
-      * The width of the canvas being rendered to.
-      */
-    var width: integer = js.native
+    
     /**
       * Takes a Sprite Game Object, or any object that extends it, and draws it to the current context.
       * @param sprite The texture based Game Object to draw.
@@ -86,14 +41,59 @@ object Canvas extends js.Object {
       */
     def batchSprite(sprite: GameObject, frame: Frame, camera: Camera): Unit = js.native
     def batchSprite(sprite: GameObject, frame: Frame, camera: Camera, parentTransformMatrix: TransformMatrix): Unit = js.native
+    
+    /**
+      * The blend modes supported by the Canvas Renderer.
+      * 
+      * This object maps the {@link Phaser.BlendModes} to canvas compositing operations.
+      */
+    var blendModes: js.Array[_] = js.native
+    
+    /**
+      * The local configuration settings of the CanvasRenderer.
+      */
+    var config: js.Object = js.native
+    
+    /**
+      * The canvas context currently used by the CanvasRenderer for all rendering operations.
+      */
+    var currentContext: CanvasRenderingContext2D = js.native
+    
     /**
       * Destroys all object references in the Canvas Renderer.
       */
     def destroy(): Unit = js.native
+    
+    /**
+      * The total number of Game Objects which were rendered in a frame.
+      */
+    var drawCount: Double = js.native
+    
+    /**
+      * The Phaser Game instance that owns this renderer.
+      */
+    var game: Game = js.native
+    
+    /**
+      * The canvas element which the Game uses.
+      */
+    var gameCanvas: HTMLCanvasElement = js.native
+    
+    /**
+      * The canvas context used to render all Cameras in all Scenes during the game loop.
+      */
+    var gameContext: CanvasRenderingContext2D = js.native
+    
+    /**
+      * The height of the canvas being rendered to.
+      */
+    var height: integer = js.native
+    
     /**
       * Prepares the game canvas for rendering.
       */
     def init(): Unit = js.native
+    
     /**
       * The event handler that manages the `resize` event dispatched by the Scale Manager.
       * @param gameSize The default Game Size object. This is the un-modified game dimensions.
@@ -103,16 +103,19 @@ object Canvas extends js.Object {
       */
     def onResize(gameSize: Size, baseSize: Size, displaySize: Size): Unit = js.native
     def onResize(gameSize: Size, baseSize: Size, displaySize: Size, resolution: Double): Unit = js.native
+    
     /**
       * Restores the game context's global settings and takes a snapshot if one is scheduled.
       * 
       * The post-render step happens after all Cameras in all Scenes have been rendered.
       */
     def postRender(): Unit = js.native
+    
     /**
       * Called at the start of the render loop.
       */
     def preRender(): Unit = js.native
+    
     /**
       * Renders the Scene to the given Camera.
       * @param scene The Scene to render.
@@ -121,10 +124,12 @@ object Canvas extends js.Object {
       * @param camera The Scene Camera to render with.
       */
     def render(scene: Scene, children: DisplayList, interpolationPercentage: Double, camera: Camera): Unit = js.native
+    
     /**
       * Resets the transformation matrix of the current context to the identity matrix, thus resetting any transformation.
       */
     def resetTransform(): Unit = js.native
+    
     /**
       * Resize the main game canvas.
       * @param width The new width of the renderer.
@@ -134,22 +139,26 @@ object Canvas extends js.Object {
     def resize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def resize(width: Double): Unit = js.native
     def resize(width: Double, height: Double): Unit = js.native
+    
     /**
       * Sets the global alpha of the current context.
       * @param alpha The new alpha to use, where 0 is fully transparent and 1 is fully opaque.
       */
     def setAlpha(alpha: Double): this.type = js.native
+    
     /**
       * Sets the blend mode (compositing operation) of the current context.
       * @param blendMode The new blend mode which should be used.
       */
     def setBlendMode(blendMode: String): this.type = js.native
+    
     /**
       * Changes the Canvas Rendering Context that all draw operations are performed against.
       * @param ctx The new Canvas Rendering Context to draw everything to. Leave empty to reset to the Game Canvas.
       */
     def setContext(): this.type = js.native
     def setContext(ctx: CanvasRenderingContext2D): this.type = js.native
+    
     /**
       * Schedules a snapshot of the entire game viewport to be taken after the current frame is rendered.
       * 
@@ -168,6 +177,7 @@ object Canvas extends js.Object {
     def snapshot(callback: SnapshotCallback, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): this.type = js.native
     def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
     def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
+    
     /**
       * Schedules a snapshot of the given area of the game viewport to be taken after the current frame is rendered.
       * 
@@ -213,6 +223,7 @@ object Canvas extends js.Object {
       `type`: String,
       encoderOptions: Double
     ): this.type = js.native
+    
     /**
       * Takes a snapshot of the given area of the given canvas.
       * 
@@ -241,6 +252,7 @@ object Canvas extends js.Object {
       `type`: js.UndefOr[String],
       encoderOptions: js.UndefOr[Double]
     ): this.type = js.native
+    
     /**
       * Schedules a snapshot of the given pixel from the game viewport to be taken after the current frame is rendered.
       * 
@@ -257,7 +269,22 @@ object Canvas extends js.Object {
       * @param callback The Function to invoke after the snapshot pixel data is extracted.
       */
     def snapshotPixel(x: integer, y: integer, callback: SnapshotCallback): this.type = js.native
+    
+    /**
+      * Details about the currently scheduled snapshot.
+      * 
+      * If a non-null `callback` is set in this object, a snapshot of the canvas will be taken after the current frame is fully rendered.
+      */
+    var snapshotState: SnapshotState = js.native
+    
+    /**
+      * A constant which allows the renderer to be easily identified as a Canvas Renderer.
+      */
+    var `type`: integer = js.native
+    
+    /**
+      * The width of the canvas being rendered to.
+      */
+    var width: integer = js.native
   }
-  
 }
-

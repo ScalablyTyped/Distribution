@@ -5,7 +5,7 @@ import typings.heremaps.H.util.EventTarget
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is an abstract class representing a render engine. Render engines are used to render the geographical position from a view model on the
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RenderEngine extends EventTarget {
+  
   /**
     * This method adds a listener for a specific event.
     * Note that to prevent potential memory leaks, you must either call removeEventListener or dispose on the given object when you no longer need it.
@@ -37,7 +38,9 @@ trait RenderEngine extends EventTarget {
     opt_capture: Boolean,
     opt_scope: js.Object
   ): Unit = js.native
+  
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
+  
   /**
     * This method removes a previously added listener from the EventTarget instance.
     * @param type {string} - The name of the event
@@ -60,18 +63,18 @@ trait RenderEngine extends EventTarget {
     opt_scope: js.Object
   ): Unit = js.native
 }
-
 @JSGlobal("H.map.render.RenderEngine")
 @js.native
 object RenderEngine extends js.Object {
+  
   @js.native
   sealed trait InteractionModifiers extends js.Object
-  
   /**
     * This object defines the modifiers to use for H.map.ViewPort#startInteraction.
     */
   @js.native
   object InteractionModifiers extends js.Object {
+    
     /** changes incline angle during the interaction */
     @js.native
     sealed trait COORD extends InteractionModifiers
@@ -91,7 +94,6 @@ object RenderEngine extends js.Object {
     /** changes zoom level during the interaction */
     @js.native
     sealed trait ZOOM extends InteractionModifiers
-    
   }
   
   /**
@@ -99,4 +101,3 @@ object RenderEngine extends js.Object {
     */
   type Options = StringDictionary[String]
 }
-

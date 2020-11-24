@@ -5,11 +5,12 @@ import typings.azdata.mod.IConnectionProfile
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azdata", "connection.openConnectionDialog")
 @js.native
 object openConnectionDialog extends js.Object {
+  
   def apply(): Thenable[Connection] = js.native
   def apply(
     providers: js.UndefOr[scala.Nothing],
@@ -35,4 +36,3 @@ object openConnectionDialog extends js.Object {
     connectionCompletionOptions: IConnectionCompletionOptions
   ): Thenable[Connection] = js.native
 }
-

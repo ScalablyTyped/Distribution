@@ -7,21 +7,11 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetAllCommonlyUsed extends js.Object {
-  @JSName("getAllCommonlyUsed")
-  var getAllCommonlyUsed_Original: `202` = js.native
-  /**
-    * This method returns the contents of the repository's license file, if one is detected.
-    *
-    * Similar to [Get repository content](https://developer.github.com/v3/repos/contents/#get-repository-content), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
-    */
-  @JSName("getForRepo")
-  var getForRepo_Original: `203` = js.native
-  @JSName("get")
-  var get_Original: `201` = js.native
+  
   def get(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /licenses/:license']['response'] */ js.Any
   ] = js.native
@@ -33,6 +23,7 @@ trait GetAllCommonlyUsed extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /licenses/:license']['response'] */ js.Any
   ] = js.native
+  
   def getAllCommonlyUsed(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /licenses']['response'] */ js.Any
   ] = js.native
@@ -44,6 +35,9 @@ trait GetAllCommonlyUsed extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /licenses']['response'] */ js.Any
   ] = js.native
+  @JSName("getAllCommonlyUsed")
+  var getAllCommonlyUsed_Original: `205` = js.native
+  
   /**
     * This method returns the contents of the repository's license file, if one is detected.
     *
@@ -60,5 +54,14 @@ trait GetAllCommonlyUsed extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/license']['response'] */ js.Any
   ] = js.native
+  /**
+    * This method returns the contents of the repository's license file, if one is detected.
+    *
+    * Similar to [Get repository content](https://developer.github.com/v3/repos/contents/#get-repository-content), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
+    */
+  @JSName("getForRepo")
+  var getForRepo_Original: `206` = js.native
+  
+  @JSName("get")
+  var get_Original: `204` = js.native
 }
-

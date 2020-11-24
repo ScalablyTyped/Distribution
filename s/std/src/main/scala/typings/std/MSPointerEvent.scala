@@ -2,24 +2,21 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MSPointerEvent extends MouseEvent {
+  
   val currentPoint: js.Any = js.native
-  val height: Double = js.native
-  val hwTimestamp: Double = js.native
-  val intermediatePoints: js.Any = js.native
-  val isPrimary: scala.Boolean = js.native
-  val pointerId: Double = js.native
-  val pointerType: js.Any = js.native
-  val pressure: Double = js.native
-  val rotation: Double = js.native
-  val tiltX: Double = js.native
-  val tiltY: Double = js.native
-  val width: Double = js.native
+  
   def getCurrentPoint(element: Element): Unit = js.native
+  
   def getIntermediatePoints(element: Element): Unit = js.native
+  
+  val height: Double = js.native
+  
+  val hwTimestamp: Double = js.native
+  
   def initPointerEvent(
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
@@ -49,5 +46,22 @@ trait MSPointerEvent extends MouseEvent {
     hwTimestampArg: Double,
     isPrimary: scala.Boolean
   ): Unit = js.native
+  
+  val intermediatePoints: js.Any = js.native
+  
+  val isPrimary: scala.Boolean = js.native
+  
+  val pointerId: Double = js.native
+  
+  val pointerType: js.Any = js.native
+  
+  val pressure: Double = js.native
+  
+  val rotation: Double = js.native
+  
+  val tiltX: Double = js.native
+  
+  val tiltY: Double = js.native
+  
+  val width: Double = js.native
 }
-

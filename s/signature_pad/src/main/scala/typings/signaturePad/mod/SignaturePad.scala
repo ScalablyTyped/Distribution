@@ -1,109 +1,127 @@
 package typings.signaturePad.mod
 
-import typings.signaturePad.anon.Callback
-import typings.signaturePad.anon.Color
-import typings.signaturePad.anon.Curve
-import typings.signaturePad.anon.End
-import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
+import typings.signaturePad.anon.Height
+import typings.std.Event
 import typings.std.MouseEvent
-import typings.std.TouchEvent
+import typings.std.Touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SignaturePad extends js.Object {
-  var _ctx: CanvasRenderingContext2D = js.native
-  var _data: js.Array[Color] = js.native
-  var _isEmpty: Boolean = js.native
-  var _lastVelocity: Double = js.native
-  var _lastWidth: Double = js.native
-  var _mouseButtonDown: Boolean = js.native
-  var _points: js.Array[Point] = js.native
+  
+  var _addPoint: js.Any = js.native
+  
+  var _calculateCurveWidths: js.Any = js.native
+  
+  var _createPoint: js.Any = js.native
+  
+  var _ctx: js.Any = js.native
+  
+  var _data: js.Any = js.native
+  
+  var _drawCurve: js.Any = js.native
+  
+  var _drawCurveSegment: js.Any = js.native
+  
+  var _drawDot: js.Any = js.native
+  
+  var _fromData: js.Any = js.native
+  
+  var _handleMouseDown: js.Any = js.native
+  
+  var _handleMouseEvents: js.Any = js.native
+  
+  var _handleMouseMove: js.Any = js.native
+  
+  var _handleMouseUp: js.Any = js.native
+  
+  var _handlePointerEvents: js.Any = js.native
+  
+  var _handleTouchEnd: js.Any = js.native
+  
+  var _handleTouchEvents: js.Any = js.native
+  
+  var _handleTouchMove: js.Any = js.native
+  
+  var _handleTouchStart: js.Any = js.native
+  
+  var _isEmpty: js.Any = js.native
+  
+  var _lastPoints: js.Any = js.native
+  
+  var _lastVelocity: js.Any = js.native
+  
+  var _lastWidth: js.Any = js.native
+  
+  var _mouseButtonDown: js.Any = js.native
+  
+  var _reset: js.Any = js.native
+  
+  var _strokeBegin: js.Any = js.native
+  
+  var _strokeEnd: js.Any = js.native
+  
+  var _strokeMoveUpdate: js.Any = js.native
+  
+  var _strokeUpdate: js.Any = js.native
+  
+  var _strokeWidth: js.Any = js.native
+  
+  var _toSVG: js.Any = js.native
+  
   var backgroundColor: String = js.native
-  var canvas: HTMLCanvasElement = js.native
-  var dotSize: Double | js.Function0[Double] = js.native
-  var maxWidth: Double = js.native
-  var minDistance: Double = js.native
-  var minWidth: Double = js.native
-  var options: SignaturePadOptions = js.native
-  var penColor: String = js.native
-  var throttle: Double = js.native
-  var velocityFilterWeight: Double = js.native
-  def _addPoint(point: Point): Bezier | Null = js.native
-  def _calculateCurveWidths(startPoint: Point, endPoint: Point): End = js.native
-  def _createPoint(x: Double, y: Double): Point = js.native
-  def _drawCurve(_a: Curve): Unit = js.native
-  def _drawCurveSegment(x: Double, y: Double, width: Double): Unit = js.native
-  def _drawDot(_a: typings.signaturePad.anon.Point): Unit = js.native
-  def _fromData(
-    pointGroups: js.Array[js.Array[Point]],
-    drawCurve: js.Function1[/* _a */ Curve, Unit],
-    drawDot: js.Function1[/* _a */ typings.signaturePad.anon.Point, Unit]
-  ): Unit = js.native
-  /**
-    * Privates
-    */
-  def _handleMouseDown(event: MouseEvent): Unit = js.native
-  def _handleMouseEvents(event: MouseEvent): Unit = js.native
-  def _handleMouseMove(event: MouseEvent): Unit = js.native
-  def _handleMouseUp(event: MouseEvent): Unit = js.native
-  def _handleTouchEnd(event: MouseEvent): Unit = js.native
-  def _handleTouchEvents(event: TouchEvent): Unit = js.native
-  def _handleTouchMove(event: MouseEvent): Unit = js.native
-  def _handleTouchStart(event: MouseEvent): Unit = js.native
-  def _reset(): Unit = js.native
-  def _strokeBegin(event: MouseEvent): Unit = js.native
-  def _strokeEnd(event: MouseEvent): Unit = js.native
-  def _strokeMoveUpdate(): Unit = js.native
-  def _strokeUpdate(event: MouseEvent): Unit = js.native
-  def _strokeWidth(velocity: Double): Double = js.native
-  def _toSVG(): String = js.native
-  /**
-    *   Clears the canvas
-    */
+  
+  var canvas: js.Any = js.native
+  
   def clear(): Unit = js.native
-  /**
-    *   Draws signature image from array of signature point groups
-    */
-  def fromData(pointGroups: js.Array[js.Array[Point]]): Unit = js.native
-  /**
-    *   Draws signature image from data URL
-    */
+  
+  var dotSize: Double | js.Function0[Double] = js.native
+  
+  def fromData(pointGroups: js.Array[PointGroup]): Unit = js.native
+  
   def fromDataURL(dataUrl: String): Unit = js.native
-  def fromDataURL(dataUrl: String, options: Callback): Unit = js.native
-  /**
-    *   Returns true if canvas is empty, otherwise returns false
-    */
+  def fromDataURL(
+    dataUrl: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ js.UndefOr[String | Event], Unit]
+  ): Unit = js.native
+  def fromDataURL(dataUrl: String, options: Height): Unit = js.native
+  def fromDataURL(
+    dataUrl: String,
+    options: Height,
+    callback: js.Function1[/* error */ js.UndefOr[String | Event], Unit]
+  ): Unit = js.native
+  
   def isEmpty(): Boolean = js.native
-  /**
-    *   Unbinds all event handlers
-    */
+  
+  var maxWidth: Double = js.native
+  
+  var minDistance: Double = js.native
+  
+  var minWidth: Double = js.native
+  
   def off(): Unit = js.native
-  /**
-    *   Rebinds all event handlers
-    */
+  
   def on(): Unit = js.native
-  /**
-    * Callback when stroke begin
-    */
-  def onBegin(event: MouseEvent): Unit = js.native
-  /**
-    * Callback when stroke end.
-    */
-  def onEnd(event: MouseEvent): Unit = js.native
-  /**
-    *   Returns array of signature point groups
-    */
-  def toData(): js.Array[js.Array[Point]] = js.native
-  /**
-    *   Returns signature image as data URL.
-    *   If 'type' parameter is ommitted, PNG dataUrl is returned.
-    */
+  
+  var onBegin: js.UndefOr[js.Function1[/* event */ MouseEvent | Touch, Unit]] = js.native
+  
+  var onEnd: js.UndefOr[js.Function1[/* event */ MouseEvent | Touch, Unit]] = js.native
+  
+  var options: js.Any = js.native
+  
+  var penColor: String = js.native
+  
+  var throttle: Double = js.native
+  
+  def toData(): js.Array[PointGroup] = js.native
+  
   def toDataURL(): String = js.native
-  def toDataURL(`type`: js.UndefOr[scala.Nothing], encoderOptions: js.Any): String = js.native
+  def toDataURL(`type`: js.UndefOr[scala.Nothing], encoderOptions: Double): String = js.native
   def toDataURL(`type`: String): String = js.native
-  def toDataURL(`type`: String, encoderOptions: js.Any): String = js.native
+  def toDataURL(`type`: String, encoderOptions: Double): String = js.native
+  
+  var velocityFilterWeight: Double = js.native
 }
-

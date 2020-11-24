@@ -2,7 +2,7 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Normalized bounding polygon for text (that might not be aligned with axis).
@@ -16,36 +16,42 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly extends js.Object {
+  
   /**
     * Normalized vertices of the bounding polygon.
     */
   var vertices: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1NormalizedVertex]] = js.native
 }
-
 object SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly {
+  
   @scala.inline
   def apply(): SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly]
   }
+  
   @scala.inline
   implicit class SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPolyOps[Self <: SchemaGoogleCloudVideointelligenceV1NormalizedBoundingPoly] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setVerticesVarargs(value: SchemaGoogleCloudVideointelligenceV1NormalizedVertex*): Self = this.set("vertices", js.Array(value :_*))
+    
     @scala.inline
     def setVertices(value: js.Array[SchemaGoogleCloudVideointelligenceV1NormalizedVertex]): Self = this.set("vertices", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVertices: Self = this.set("vertices", js.undefined)
   }
-  
 }
-

@@ -2,13 +2,15 @@ package typings.tsNameof
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object nameof extends js.Object {
+    
     /**
       * Gets a string representation of the last identifier of the given expression.
       *
@@ -21,6 +23,7 @@ object global extends js.Object {
     def apply(obj: js.Any): String = js.native
     def apply[T](): String = js.native
     def apply[T](func: js.Function1[/* obj */ T, _]): String = js.native
+    
     /**
       * Gets the string representation of the entire given expression.
       *
@@ -65,6 +68,7 @@ object global extends js.Object {
     def full[T](func: js.Function1[/* obj */ T, _]): String = js.native
     def full[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): String = js.native
     def full[T](periodIndex: Double): String = js.native
+    
     /**
       * Embeds an expression into the string representation of the result of nameof.full.
       *
@@ -73,6 +77,7 @@ object global extends js.Object {
       * @param value The value to interpolate.
       */
     def interpolate[T](value: T): T = js.native
+    
     /**
       * Gets an array of strings where each element is a subsequent part of the expression provided.
       *
@@ -102,6 +107,7 @@ object global extends js.Object {
     // tslint:disable-next-line no-unnecessary-generics
     def split[T](func: js.Function1[/* obj */ T, _]): js.Array[String] = js.native
     def split[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): js.Array[String] = js.native
+    
     /**
       * Gets an array containing the string representation of each expression in the arguments.
       *
@@ -122,6 +128,4 @@ object global extends js.Object {
     // tslint:disable-next-line no-unnecessary-generics
     def toArray[T](func: js.Function1[/* obj */ T, js.Array[_]]): js.Array[String] = js.native
   }
-  
 }
-

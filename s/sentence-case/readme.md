@@ -11,8 +11,8 @@ Transform into a lower case with spaces between words, then capitalize the strin
 | Full name          | sentence-case |
 | Keywords           | sentence, case, lower, capitalize, convert, transform |
 | # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 44259019 |
+| # dependents       | 28 |
+| # downloads        | 66210879 |
 | # stars            | 0 |
 
 ## Links

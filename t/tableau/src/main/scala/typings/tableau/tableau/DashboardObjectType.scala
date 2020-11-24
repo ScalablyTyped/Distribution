@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DashboardObjectType extends js.Object
-
 @JSGlobal("tableau.DashboardObjectType")
 @js.native
 object DashboardObjectType extends js.Object {
+  
   @js.native
   sealed trait ADDIN extends DashboardObjectType
   
@@ -42,6 +42,4 @@ object DashboardObjectType extends js.Object {
   
   @js.native
   sealed trait WORKSHEET extends DashboardObjectType
-  
 }
-

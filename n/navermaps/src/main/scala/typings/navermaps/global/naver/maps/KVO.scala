@@ -2,7 +2,7 @@ package typings.navermaps.global.naver.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Classes
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class KVO ()
   extends typings.navermaps.naver.maps.KVO
-

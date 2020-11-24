@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WwanDataClass extends js.Object
-
 /** Defines values used to indicate the class of data service provided by a WWAN network connection. */
 @JSGlobal("Windows.Networking.Connectivity.WwanDataClass")
 @js.native
 object WwanDataClass extends js.Object {
+  
   /** This network provides CDMA Evolution-Data Optimized (originally Data Only, 1xEDVO, also known as CDMA2000 1x EV-DO, or 1x EVDO) data service. */
   @js.native
   sealed trait cdma1xEvdo extends WwanDataClass
@@ -70,6 +70,4 @@ object WwanDataClass extends js.Object {
   /** The network provides Universal Mobile Telecommunications System (UMTS) data service. */
   @js.native
   sealed trait umts extends WwanDataClass
-  
 }
-

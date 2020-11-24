@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel")
 @js.native
@@ -21,28 +21,32 @@ class BaiduChannel protected () extends CustomResource {
     */
   def this(name: String, args: BaiduChannelArgs) = this()
   def this(name: String, args: BaiduChannelArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Platform credential API key from Baidu.
     */
   val apiKey: Output_[String] = js.native
+  
   /**
     * The application ID.
     */
   val applicationId: Output_[String] = js.native
+  
   /**
     * Specifies whether to enable the channel. Defaults to `true`.
     */
   val enabled: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * Platform credential Secret key from Baidu.
     */
   val secretKey: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel")
 @js.native
 object BaiduChannel extends js.Object {
+  
   /**
     * Get an existing BaiduChannel resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object BaiduChannel extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BaiduChannel = js.native
   def get(name: String, id: Input[ID], state: BaiduChannelState): BaiduChannel = js.native
   def get(name: String, id: Input[ID], state: BaiduChannelState, opts: CustomResourceOptions): BaiduChannel = js.native
+  
   /**
     * Returns true if the given object is an instance of BaiduChannel.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ Boolean = js.native
 }
-

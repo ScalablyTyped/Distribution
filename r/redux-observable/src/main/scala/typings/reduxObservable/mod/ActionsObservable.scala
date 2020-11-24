@@ -8,26 +8,29 @@ import typings.rxjs.typesMod.SchedulerLike
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-observable", "ActionsObservable")
 @js.native
 class ActionsObservable[T /* <: Action[_] */] protected () extends Observable_[T] {
   def this(input$: Observable_[T]) = this()
+  
   @JSName("lift")
   def lift_R_ActionWildcard_ActionsObservable[R /* <: Action[_] */](operator: Operator[T, R]): ActionsObservable[R] = js.native
+  
   @JSName("ofType")
   def ofType_type[R /* <: T */](key: (/* import warning: importer.ImportType#apply Failed type conversion: R['type'] */ js.Any)*): ActionsObservable[R] = js.native
 }
-
 /* static members */
 @JSImport("redux-observable", "ActionsObservable")
 @js.native
 object ActionsObservable extends js.Object {
+  
   def from[T /* <: Action[_] */](ish: ObservableInput[T]): ActionsObservable[T] = js.native
   def from[T /* <: Action[_] */](ish: ObservableInput[T], scheduler: SchedulerLike): ActionsObservable[T] = js.native
   def from[T /* <: Action[_] */, R /* <: Action[_] */](ish: ArrayLike[T]): ActionsObservable[R] = js.native
   def from[T /* <: Action[_] */, R /* <: Action[_] */](ish: ArrayLike[T], scheduler: SchedulerLike): ActionsObservable[R] = js.native
+  
   def of[T /* <: Action[_] */](array: (T | SchedulerLike)*): ActionsObservable[T] = js.native
   /**
     * Just like RxJS itself, we can't actually make this method always type-safe
@@ -49,4 +52,3 @@ object ActionsObservable extends js.Object {
   def of[T /* <: Action[_] */](item1: T, item2: T, scheduler: SchedulerLike): ActionsObservable[T] = js.native
   def of[T /* <: Action[_] */](item1: T, scheduler: SchedulerLike): ActionsObservable[T] = js.native
 }
-

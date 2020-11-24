@@ -10,9 +10,9 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-shallow-compare |
 | Keywords           | react, react-addon |
-| # releases         | 1 |
-| # dependents       | 354 |
-| # downloads        | 17822497 |
+| # releases         | 0 |
+| # dependents       | 371 |
+| # downloads        | 21033261 |
 | # stars            | 6 |
 
 ## Links

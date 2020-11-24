@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents the collection of AutoFormats.
@@ -20,8 +20,8 @@ trait TableAutoFormats
   extends XNameContainer
      with XIndexAccess
      with XEnumerationAccess
-
 object TableAutoFormats {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -46,4 +46,3 @@ object TableAutoFormats {
     __obj.asInstanceOf[TableAutoFormats]
   }
 }
-

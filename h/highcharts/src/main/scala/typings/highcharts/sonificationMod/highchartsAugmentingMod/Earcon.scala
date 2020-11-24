@@ -2,7 +2,7 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Earcon class. Earcon objects represent a certain sound consisting of
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Earcon extends js.Object {
+  
   /**
     * Cancel any current sonification of the Earcon. Calls onEnd functions.
     *
@@ -19,6 +20,7 @@ trait Earcon extends js.Object {
     */
   def cancelSonify(): Unit = js.native
   def cancelSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * Play the earcon, optionally overriding init options.
     *
@@ -27,4 +29,3 @@ trait Earcon extends js.Object {
     */
   def sonify(options: EarconOptionsObject): Unit = js.native
 }
-

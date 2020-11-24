@@ -3,7 +3,7 @@ package typings.observeJs.mod.observejs
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArrayObserverStatic
@@ -12,6 +12,7 @@ trait ArrayObserverStatic
   * @param receiver the target for observation
   */
 Instantiable1[/* receiver */ js.Array[js.Any], ArrayObserverInstance] {
+  
   /**
     * transforms a copy of an old state of an array into a copy of its current state.
     * @param previous array of old state
@@ -20,4 +21,3 @@ Instantiable1[/* receiver */ js.Array[js.Any], ArrayObserverInstance] {
     */
   def applySplices(previous: js.Array[_], current: js.Array[_], splices: js.Array[splice]): Unit = js.native
 }
-

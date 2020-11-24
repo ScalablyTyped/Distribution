@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextTrackDisplayMode extends js.Object
-
 @JSGlobal("PlayerFramework.TextTrackDisplayMode")
 @js.native
 object TextTrackDisplayMode extends js.Object {
+  
   /**
     * Indicates tracks should be displayed using both custom and native UI. This is useful for debugging.
     */
@@ -33,6 +33,4 @@ object TextTrackDisplayMode extends js.Object {
     */
   @js.native
   sealed trait none extends TextTrackDisplayMode
-  
 }
-

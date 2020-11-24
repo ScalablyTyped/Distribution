@@ -3,11 +3,12 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.BlendIndices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("pc.createMesh")
 @js.native
 object createMesh extends js.Object {
+  
   /**
     * Creates a new mesh object from the supplied vertex information and topology.
     * @example
@@ -36,4 +37,3 @@ object createMesh extends js.Object {
   def apply(device: typings.playcanvas.pc.GraphicsDevice, positions: js.Array[Double]): typings.playcanvas.pc.Mesh = js.native
   def apply(device: typings.playcanvas.pc.GraphicsDevice, positions: js.Array[Double], opts: BlendIndices): typings.playcanvas.pc.Mesh = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.blueprintjsSelect.queryListMod
 import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "getFirstEnabledItem")
 @js.native
 object getFirstEnabledItem extends js.Object {
+  
   def apply[T](items: js.Array[T]): T | ICreateNewItem | Null = js.native
   def apply[T](
     items: js.Array[T],
@@ -45,4 +46,3 @@ object getFirstEnabledItem extends js.Object {
     startIndex: Double
   ): T | ICreateNewItem | Null = js.native
 }
-

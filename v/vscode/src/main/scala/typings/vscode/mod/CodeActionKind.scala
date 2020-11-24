@@ -2,22 +2,20 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CodeActionKind")
 @js.native
 class CodeActionKind protected () extends js.Object {
   protected def this(value: String) = this()
-  /**
-    * String value of the kind, e.g. `"refactor.extract.function"`.
-    */
-  val value: String = js.native
+  
   /**
     * Create a new kind by appending a more specific selector to the current kind.
     *
     * Does not modify the current kind.
     */
   def append(parts: String): CodeActionKind = js.native
+  
   /**
     * Checks if `other` is a sub-kind of this `CodeActionKind`.
     *
@@ -27,6 +25,7 @@ class CodeActionKind protected () extends js.Object {
     * @param other Kind to check.
     */
   def contains(other: CodeActionKind): Boolean = js.native
+  
   /**
     * Checks if this code action kind intersects `other`.
     *
@@ -36,28 +35,36 @@ class CodeActionKind protected () extends js.Object {
     * @param other Kind to check.
     */
   def intersects(other: CodeActionKind): Boolean = js.native
+  
+  /**
+    * String value of the kind, e.g. `"refactor.extract.function"`.
+    */
+  val value: String = js.native
 }
-
 /* static members */
 @JSImport("vscode", "CodeActionKind")
 @js.native
 object CodeActionKind extends js.Object {
+  
   /**
     * Empty kind.
     */
   val Empty: CodeActionKind = js.native
+  
   /**
     * Base kind for quickfix actions: `quickfix`.
     *
     * Quick fix actions address a problem in the code and are shown in the normal code action context menu.
     */
   val QuickFix: CodeActionKind = js.native
+  
   /**
     * Base kind for refactoring actions: `refactor`
     *
     * Refactoring actions are shown in the refactoring context menu.
     */
   val Refactor: CodeActionKind = js.native
+  
   /**
     * Base kind for refactoring extraction actions: `refactor.extract`
     *
@@ -70,6 +77,7 @@ object CodeActionKind extends js.Object {
     * - ...
     */
   val RefactorExtract: CodeActionKind = js.native
+  
   /**
     * Base kind for refactoring inline actions: `refactor.inline`
     *
@@ -81,6 +89,7 @@ object CodeActionKind extends js.Object {
     * - ...
     */
   val RefactorInline: CodeActionKind = js.native
+  
   /**
     * Base kind for refactoring rewrite actions: `refactor.rewrite`
     *
@@ -94,6 +103,7 @@ object CodeActionKind extends js.Object {
     * - ...
     */
   val RefactorRewrite: CodeActionKind = js.native
+  
   /**
     * Base kind for source actions: `source`
     *
@@ -102,6 +112,7 @@ object CodeActionKind extends js.Object {
     * can be run on save using `editor.codeActionsOnSave` and are also shown in the `source` context menu.
     */
   val Source: CodeActionKind = js.native
+  
   /**
     * Base kind for auto-fix source actions: `source.fixAll`.
     *
@@ -109,9 +120,9 @@ object CodeActionKind extends js.Object {
     * They should not suppress errors or perform unsafe fixes such as generating new types or classes.
     */
   val SourceFixAll: CodeActionKind = js.native
+  
   /**
     * Base kind for an organize imports source action: `source.organizeImports`.
     */
   val SourceOrganizeImports: CodeActionKind = js.native
 }
-

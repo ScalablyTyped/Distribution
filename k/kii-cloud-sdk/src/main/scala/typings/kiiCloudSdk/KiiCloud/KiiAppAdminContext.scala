@@ -8,7 +8,7 @@ import typings.kiiCloudSdk.anon.`3`
 import typings.kiiCloudSdk.anon.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents the app admin context
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait KiiAppAdminContext extends js.Object {
+  
   /**
     * Creates a reference to a bucket operated by app admin.
     *     <br><br>The bucket will be created/accessed within this app's scope
@@ -42,6 +43,7 @@ trait KiiAppAdminContext extends js.Object {
     *         });
     */
   def bucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Creates a reference to a encrypted bucket operated by app admin.
     *     <br><br>The bucket will be created/accessed within this app's scope
@@ -62,6 +64,7 @@ trait KiiAppAdminContext extends js.Object {
     *         });
     */
   def encryptedBucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Find registered KiiUser with the email.<br>
     * If there are no user registers with the specified email or if there are but not verified email yet,
@@ -136,6 +139,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def findUserByEmail(email: String): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
   def findUserByEmail(email: String, callbacks: `0`): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
+  
   /**
     * Find registered KiiUser with the phone.<br>
     * If there are no user registers with the specified phone or if there are but not verified phone yet,
@@ -210,6 +214,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def findUserByPhone(phone: String): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
   def findUserByPhone(phone: String, callbacks: `0`): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
+  
   /**
     * Find registered KiiUser with the user name.<br>
     * If there are no user registers with the specified user name, callbacks.failure or reject callback of promise will be called.<br>
@@ -282,6 +287,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def findUserByUsername(username: String): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
   def findUserByUsername(username: String, callbacks: `0`): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
+  
   /**
     * Creates a reference to a group operated by app admin using group's ID.
     *     <br><br>
@@ -308,6 +314,7 @@ trait KiiAppAdminContext extends js.Object {
     *         });
     */
   def groupWithID(group: String): KiiGroup = js.native
+  
   /**
     * Creates a reference to a group operated by app admin.
     *     <br><br>
@@ -331,6 +338,7 @@ trait KiiAppAdminContext extends js.Object {
     *         });
     */
   def groupWithName(group: String): KiiGroup = js.native
+  
   /**
     * Creates a reference to a group operated by app admin using group's URI.
     *     <br><br>
@@ -357,6 +365,7 @@ trait KiiAppAdminContext extends js.Object {
     *         });
     */
   def groupWithURI(group: String): KiiGroup = js.native
+  
   /**
     * Gets a list of topics in app scope
     *
@@ -427,6 +436,7 @@ trait KiiAppAdminContext extends js.Object {
   def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  
   /**
     * Load thing with thing ID by app admin.
     * Method interface is same as {@link KiiThing#loadWithThingID()}.
@@ -474,6 +484,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def loadThingWithThingID(thingID: String): js.Promise[KiiThing] = js.native
   def loadThingWithThingID(thingID: String, callbacks: `1`): js.Promise[KiiThing] = js.native
+  
   /**
     * Load thing with vendor thing ID by app admin.
     * Method interface is same as {@link KiiThing#loadWithVendorThingID()}.
@@ -521,6 +532,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def loadThingWithVendorThingID(vendorThingID: String): js.Promise[KiiThing] = js.native
   def loadThingWithVendorThingID(vendorThingID: String, callbacks: `1`): js.Promise[KiiThing] = js.native
+  
   /**
     * Creates a reference to an object operated by app admin using object`s URI.
     *
@@ -531,6 +543,7 @@ trait KiiAppAdminContext extends js.Object {
     * @throws If the URI is null, empty or does not have correct format.
     */
   def objectWithURI(`object`: String): KiiObject = js.native
+  
   /**
     * Register new group own by specified user on Kii Cloud with specified ID.
     * This method can be used only by app admin.
@@ -595,6 +608,7 @@ trait KiiAppAdminContext extends js.Object {
     members: js.Array[KiiUser],
     callbacks: FailureSuccess
   ): js.Promise[KiiAppAdminContext] = js.native
+  
   def registerOwnerWithThingID(thingID: String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
   def registerOwnerWithThingID(thingID: String, owner: KiiGroup, callbacks: `3`): js.Promise[KiiGroup] = js.native
   /**
@@ -650,6 +664,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def registerOwnerWithThingID(thingID: String, owner: KiiUser): js.Promise[KiiUser] = js.native
   def registerOwnerWithThingID(thingID: String, owner: KiiUser, callbacks: `2`): js.Promise[KiiUser] = js.native
+  
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiGroup, callbacks: `3`): js.Promise[KiiGroup] = js.native
   /**
@@ -704,6 +719,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser): js.Promise[KiiUser] = js.native
   def registerOwnerWithVendorThingID(vendorThingID: String, owner: KiiUser, callbacks: `2`): js.Promise[KiiUser] = js.native
+  
   /**
     * Register thing by app admin.
     * Method interface is same as {@link KiiThing#register()}.
@@ -774,6 +790,7 @@ trait KiiAppAdminContext extends js.Object {
     */
   def registerThing(fields: KiiThingFields): js.Promise[KiiThing] = js.native
   def registerThing(fields: KiiThingFields, callbacks: `1`): js.Promise[KiiThing] = js.native
+  
   /**
     * Creates a reference to a thing operated by app admin.
     *
@@ -786,6 +803,7 @@ trait KiiAppAdminContext extends js.Object {
     *         adminContext.thingWithID(thingID);
     */
   def thingWithID(thing: String): KiiThing = js.native
+  
   /**
     * Creates a reference to a topic operated by app admin
     *
@@ -794,6 +812,7 @@ trait KiiAppAdminContext extends js.Object {
     * @return topic instance.
     */
   def topicWithName(topicName: String): KiiTopic = js.native
+  
   /**
     * Creates a reference to a user operated by app admin.
     *
@@ -814,4 +833,3 @@ trait KiiAppAdminContext extends js.Object {
     */
   def userWithID(user: String): KiiUser = js.native
 }
-

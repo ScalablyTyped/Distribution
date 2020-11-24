@@ -4,10 +4,11 @@ import typings.jquery.JQueryDeferred
 import typings.jquery.JQueryXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsonRpcClient extends js.Object {
+  
   /**
     * Make a batch-call by using a callback.
     *
@@ -29,6 +30,7 @@ trait JsonRpcClient extends js.Object {
     allDoneCb: js.Function1[/* result */ js.Any, Unit],
     errorCb: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
+  
   def call(
     method: String,
     params: js.Array[_],
@@ -52,6 +54,7 @@ trait JsonRpcClient extends js.Object {
     successCb: js.Function1[/* result */ js.Any, Unit],
     errorCb: js.Function1[/* result */ js.Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
+  
   def notify(method: String, params: js.Array[_]): JQueryDeferred[JQueryXHR] = js.native
   /**
     * Notify sends a command to the server that won't need a response.  In http, there is probably
@@ -69,4 +72,3 @@ trait JsonRpcClient extends js.Object {
     */
   def notify(method: String, params: js.Object): JQueryDeferred[JQueryXHR] = js.native
 }
-

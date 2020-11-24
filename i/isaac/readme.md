@@ -11,8 +11,8 @@ ISAAC is a CSPRNG designed by Robert J. Jenkins Jr. in 1996 and based on RC4. It
 | Full name          | isaac |
 | Keywords           | prng, cprng, csprng, isaac |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 14859 |
+| # dependents       | 3 |
+| # downloads        | 11419 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CausalityTraceLevel extends js.Object
-
 /** Specifies a logging level that listeners can use for trace filtering. */
 @JSGlobal("Windows.Foundation.Diagnostics.CausalityTraceLevel")
 @js.native
 object CausalityTraceLevel extends js.Object {
+  
   /** Tracks operations that are not necessary to construct a causality chain but are interesting for developers. */
   @js.native
   sealed trait important extends CausalityTraceLevel
@@ -22,6 +22,4 @@ object CausalityTraceLevel extends js.Object {
   /** Indicates operations that influence causality but are likely to be less interesting for developers, including actions like registering progress delegates. */
   @js.native
   sealed trait verbose extends CausalityTraceLevel
-  
 }
-

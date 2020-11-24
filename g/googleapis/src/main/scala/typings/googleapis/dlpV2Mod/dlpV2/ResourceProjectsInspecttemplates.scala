@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Inspecttemplates")
 @js.native
 class ResourceProjectsInspecttemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.inspectTemplates.create
     * @desc Creates an InspectTemplate for re-using frequently used
@@ -47,6 +49,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]
   ): Unit = js.native
+  
   /**
     * dlp.projects.inspectTemplates.delete
     * @desc Deletes an InspectTemplate. See
@@ -79,6 +82,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dlp.projects.inspectTemplates.get
     * @desc Gets an InspectTemplate. See
@@ -111,6 +115,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]
   ): Unit = js.native
+  
   /**
     * dlp.projects.inspectTemplates.list
     * @desc Lists InspectTemplates. See
@@ -146,6 +151,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse]
   ): Unit = js.native
+  
   /**
     * dlp.projects.inspectTemplates.patch
     * @desc Updates the InspectTemplate. See
@@ -180,4 +186,3 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]
   ): Unit = js.native
 }
-

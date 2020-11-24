@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a generic interface to a bitmap.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XBitmap extends XInterface {
+  
   /**
     * Query the size of the bitmap.
     *
@@ -24,6 +25,7 @@ trait XBitmap extends XInterface {
     * @returns the bitmap size in pixel.
     */
   val Size: IntegerSize2D = js.native
+  
   /**
     * Query a scaled copy of the original bitmap.
     * @param newSize Requested size of the new bitmap. Both of the two size components must be greater than zero.
@@ -33,6 +35,7 @@ trait XBitmap extends XInterface {
     * @throws VolatileContentDestroyedException if the contents of a volatile bitmap have been destroyed, and thus cannot be read to generate the scaled bitmap.
     */
   def getScaledBitmap(newSize: RealSize2D, beFast: Boolean): XBitmap = js.native
+  
   /**
     * Query the size of the bitmap.
     *
@@ -40,6 +43,7 @@ trait XBitmap extends XInterface {
     * @returns the bitmap size in pixel.
     */
   def getSize(): IntegerSize2D = js.native
+  
   /**
     * Query transparency status of the bitmap.
     *
@@ -49,8 +53,8 @@ trait XBitmap extends XInterface {
     */
   def hasAlpha(): Boolean = js.native
 }
-
 object XBitmap {
+  
   @scala.inline
   def apply(
     Size: IntegerSize2D,
@@ -64,26 +68,32 @@ object XBitmap {
     val __obj = js.Dynamic.literal(Size = Size.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getScaledBitmap = js.Any.fromFunction2(getScaledBitmap), getSize = js.Any.fromFunction0(getSize), hasAlpha = js.Any.fromFunction0(hasAlpha), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XBitmap]
   }
+  
   @scala.inline
   implicit class XBitmapOps[Self <: XBitmap] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSize(value: IntegerSize2D): Self = this.set("Size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetScaledBitmap(value: (RealSize2D, Boolean) => XBitmap): Self = this.set("getScaledBitmap", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetSize(value: () => IntegerSize2D): Self = this.set("getSize", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setHasAlpha(value: () => Boolean): Self = this.set("hasAlpha", js.Any.fromFunction0(value))
   }
-  
 }
-

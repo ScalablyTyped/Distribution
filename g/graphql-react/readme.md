@@ -4,15 +4,15 @@
 Typings are for version 8.1
 
 ## Library description:
-A GraphQL client for React using modern context and hooks APIs that is lightweight (< 2.5 KB size limited) but powerful; the first Relay and Apollo alternative with server side rendering.
+A GraphQL client for React using modern context and hooks APIs that is lightweight (< 3.5 KB size limited) but powerful; the first Relay and Apollo alternative with server side rendering.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | graphql-react |
 | Keywords           | graphql, client, query, mutation, file, upload, multipart, react, hooks, ssr, esm, mjs |
-| # releases         | 32 |
+| # releases         | 28 |
 | # dependents       | 2 |
-| # downloads        | 10970 |
+| # downloads        | 32469 |
 | # stars            | 0 |
 
 ## Links

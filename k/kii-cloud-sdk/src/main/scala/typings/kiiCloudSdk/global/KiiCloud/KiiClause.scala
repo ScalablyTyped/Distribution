@@ -2,7 +2,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiClause expression object
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiClause ()
   extends typings.kiiCloudSdk.KiiCloud.KiiClause
-
 /* static members */
 @JSGlobal("KiiCloud.KiiClause")
 @js.native
 object KiiClause extends js.Object {
+  
   /**
     * Create a KiiClause with the AND operator concatenating multiple KiiClause objects
     *
@@ -25,6 +25,7 @@ object KiiClause extends js.Object {
     *     KiiClause clause = KiiClause.and(clause1, clause2, clause3, . . .)
     */
   def and(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key == value)
     *
@@ -32,6 +33,7 @@ object KiiClause extends js.Object {
     * @param value the value to compare
     */
   def equals(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create a clause of geo box. This clause inquires objects in the specified rectangle.
     *     Rectangle would be placed parallel to the equator with specified coordinates of the corner.
@@ -50,6 +52,7 @@ object KiiClause extends js.Object {
     northEast: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint,
     southWest: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint
   ): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create a clause of geo distance. This clause inquires objects in the specified circle.
     *
@@ -97,6 +100,7 @@ object KiiClause extends js.Object {
     radius: Double,
     putDistanceInto: String
   ): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key > value)
     *
@@ -104,6 +108,7 @@ object KiiClause extends js.Object {
     * @param value the value to compare
     */
   def greaterThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key >= value)
     *
@@ -111,6 +116,7 @@ object KiiClause extends js.Object {
     * @param value the value to compare
     */
   def greaterThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression to returns all entities that have a specified field and type.
     *
@@ -118,6 +124,7 @@ object KiiClause extends js.Object {
     * @param fieldType The type of the content of the field. The type of the content of the field must be provided, possible values are "STRING", "INTEGER", "DECIMAL" and "BOOLEAN".
     */
   def hasField(key: String, fieldType: String): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key in values)
     *
@@ -125,6 +132,7 @@ object KiiClause extends js.Object {
     * @param values to compare
     */
   def inClause(key: String, values: js.Array[_]): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key < value)
     *
@@ -132,6 +140,7 @@ object KiiClause extends js.Object {
     * @param value the value to compare
     */
   def lessThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key <= value)
     *
@@ -139,6 +148,7 @@ object KiiClause extends js.Object {
     * @param value the value to compare
     */
   def lessThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create a KiiClause with the NOT operator concatenating a KiiClause object
     * <br><br>
@@ -148,6 +158,7 @@ object KiiClause extends js.Object {
     * @param clause KiiClause object to negate
     */
   def not(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key != value)
     *
@@ -155,6 +166,7 @@ object KiiClause extends js.Object {
     * @param value the value to compare
     */
   def notEquals(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create a KiiClause with the OR operator concatenating multiple KiiClause objects
     * <br><br>
@@ -167,6 +179,7 @@ object KiiClause extends js.Object {
     *     KiiClause clause = KiiClause.or(clause1, clause2, clause3, . . .)
     */
   def or(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  
   /**
     * Create an expression of the form (key STARTS WITH value)
     *
@@ -175,4 +188,3 @@ object KiiClause extends js.Object {
     */
   def startsWith(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
 }
-

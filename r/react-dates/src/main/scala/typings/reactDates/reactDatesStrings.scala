@@ -4,15 +4,62 @@ import typings.reactDates.mod.AnchorDirectionShape
 import typings.reactDates.mod.CalendarInfoPositionShape
 import typings.reactDates.mod.FocusedInputShape
 import typings.reactDates.mod.IconPositionShape
+import typings.reactDates.mod.NavPositionShape
 import typings.reactDates.mod.OpenDirectionShape
 import typings.reactDates.mod.OrientationShape
 import typings.reactDates.mod.ScrollableOrientationShape
 import typings.reactDates.mod._DisabledShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactDatesStrings {
+  
+  @scala.inline
+  def after: after = "after".asInstanceOf[after]
+  
+  @scala.inline
+  def before: before = "before".asInstanceOf[before]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def endDate: endDate = "endDate".asInstanceOf[endDate]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def navPositionBottom: navPositionBottom = "navPositionBottom".asInstanceOf[navPositionBottom]
+  
+  @scala.inline
+  def navPositionTop: navPositionTop = "navPositionTop".asInstanceOf[navPositionTop]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def startDate: startDate = "startDate".asInstanceOf[startDate]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def verticalScrollable: verticalScrollable = "verticalScrollable".asInstanceOf[verticalScrollable]
+  
   @js.native
   sealed trait after
     extends CalendarInfoPositionShape
@@ -43,6 +90,12 @@ object reactDatesStrings {
   sealed trait left extends AnchorDirectionShape
   
   @js.native
+  sealed trait navPositionBottom extends NavPositionShape
+  
+  @js.native
+  sealed trait navPositionTop extends NavPositionShape
+  
+  @js.native
   sealed trait right extends AnchorDirectionShape
   
   @js.native
@@ -63,32 +116,4 @@ object reactDatesStrings {
   
   @js.native
   sealed trait verticalScrollable extends ScrollableOrientationShape
-  
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def endDate: endDate = "endDate".asInstanceOf[endDate]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def startDate: startDate = "startDate".asInstanceOf[startDate]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def verticalScrollable: verticalScrollable = "verticalScrollable".asInstanceOf[verticalScrollable]
 }
-

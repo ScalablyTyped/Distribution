@@ -3,7 +3,7 @@ package typings.heredatalens.H.datalens
 import typings.heredatalens.H.datalens.HeatmapLayer.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides functionality of value-based heat map with density alpha mask.
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HeatmapLayer_ extends RasterLayer {
+  
   /**
     * @param zoom - zoom level
     */
   def getOptionsPerZoom(zoom: Double): Options = js.native
 }
-

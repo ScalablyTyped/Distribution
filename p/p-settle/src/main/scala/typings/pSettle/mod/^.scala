@@ -3,11 +3,12 @@ package typings.pSettle.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-settle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Settle promises concurrently and get their fulfillment value or rejection reason.
   @param array - Can contain a mix of any value, promise, and async function. Promises are awaited. Async functions are executed and awaited. The `concurrency` option only works for elements that are async functions.
@@ -48,4 +49,3 @@ object ^ extends js.Object {
     */ typings.pSettle.pSettleStrings.^  with TopLevel[ValueType]
   ] = js.native
 }
-

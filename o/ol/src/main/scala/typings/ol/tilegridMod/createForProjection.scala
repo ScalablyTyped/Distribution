@@ -6,11 +6,12 @@ import typings.ol.sizeMod.Size
 import typings.ol.tilegridTileGridMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/tilegrid", "createForProjection")
 @js.native
 object createForProjection extends js.Object {
+  
   def apply(projection: ProjectionLike): default = js.native
   def apply(
     projection: ProjectionLike,
@@ -44,4 +45,3 @@ object createForProjection extends js.Object {
   def apply(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Size): default = js.native
   def apply(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Size, opt_corner: Corner): default = js.native
 }
-

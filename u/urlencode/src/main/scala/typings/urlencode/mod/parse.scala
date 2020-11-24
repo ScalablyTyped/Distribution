@@ -2,11 +2,12 @@ package typings.urlencode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("urlencode", "parse")
 @js.native
 object parse extends js.Object {
+  
   /**
     * Parse querystring
     * @param queryString Querystring
@@ -14,4 +15,3 @@ object parse extends js.Object {
     */
   def apply(queryString: String, charsetParam: charsetParam): js.Any = js.native
 }
-

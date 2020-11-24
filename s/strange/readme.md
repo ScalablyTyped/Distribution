@@ -12,7 +12,7 @@ Range aka interval object. Supports exclusive and infinite ranges. Comes with an
 | Keywords           | range, ranges, interval, interval-tree, bst, integer, integers, sort, bounds, math |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 83047 |
+| # downloads        | 122384 |
 | # stars            | 1 |
 
 ## Links

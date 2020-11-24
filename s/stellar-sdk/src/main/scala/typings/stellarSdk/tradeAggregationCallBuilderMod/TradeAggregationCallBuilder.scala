@@ -5,7 +5,7 @@ import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-sdk/lib/trade_aggregation_call_builder", "TradeAggregationCallBuilder")
 @js.native
@@ -19,7 +19,8 @@ class TradeAggregationCallBuilder protected () extends CallBuilder[CollectionPag
     resolution: Double,
     offset: Double
   ) = this()
+  
   var isValidOffset: js.Any = js.native
+  
   var isValidResolution: js.Any = js.native
 }
-

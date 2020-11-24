@@ -11,8 +11,8 @@ Library for interacting with OAuth 1.0, 1.0A, 2 and Echo.  Provides simplified c
 | Full name          | oauth |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 594 |
-| # downloads        | 15669287 |
+| # dependents       | 633 |
+| # downloads        | 18365182 |
 | # stars            | 76 |
 
 ## Links

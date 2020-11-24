@@ -10,11 +10,12 @@ import typings.stripe.mod.events.IEvent
 import typings.stripe.mod.events.IEventListOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Events")
 @js.native
 class Events () extends StripeResource {
+  
   def list(): IListPromise[IEvent] = js.native
   def list(data: IEventListOptions): IListPromise[IEvent] = js.native
   /**
@@ -26,6 +27,7 @@ class Events () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IEvent] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IEvent]]): IListPromise[IEvent] = js.native
   def list(response: IResponseFn[IList[IEvent]]): IListPromise[IEvent] = js.native
+  
   def retrieve(id: String): js.Promise[IEvent] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[IEvent] = js.native
   /**
@@ -39,4 +41,3 @@ class Events () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IEvent]): js.Promise[IEvent] = js.native
   def retrieve(id: String, response: IResponseFn[IEvent]): js.Promise[IEvent] = js.native
 }
-

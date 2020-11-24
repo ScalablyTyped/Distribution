@@ -3,10 +3,11 @@ package typings.wordpressShortcode.anon
 import typings.wordpressShortcode.mod.ShortcodeAttrs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
+  
   /**
     * Parse shortcode attributes.
     *
@@ -26,9 +27,9 @@ trait Call extends js.Object {
     * @returns Parsed shortcode attributes.
     */
   def apply(text: String): ShortcodeAttrs = js.native
+  
   /**
     * Used to clear the memoized cache of this function.
     */
   def clear(): Unit = js.native
 }
-

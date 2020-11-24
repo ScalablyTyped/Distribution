@@ -10,9 +10,9 @@ Bringing Material Design to React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-material-kit |
 | Keywords           | react, native, react-component, react-native, react-native-component, ios, android, material design, MaterialKit |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 63658 |
+| # downloads        | 58386 |
 | # stars            | 6 |
 
 ## Links

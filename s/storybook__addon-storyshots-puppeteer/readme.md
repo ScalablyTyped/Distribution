@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-storyshots-puppeteer
 
-Typings are for version 5.3.19
+Typings are for version 6.1.2
 
 ## Library description:
 Image snapshots addition to StoryShots based on puppeteer
@@ -10,9 +10,9 @@ Image snapshots addition to StoryShots based on puppeteer
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-storyshots-puppeteer |
 | Keywords           | addon, storybook |
-| # releases         | 393 |
-| # dependents       | 3 |
-| # downloads        | 676224 |
+| # releases         | 572 |
+| # dependents       | 7 |
+| # downloads        | 2249960 |
 | # stars            | 0 |
 
 ## Links

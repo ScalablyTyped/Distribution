@@ -1,10 +1,9 @@
 package typings.jupyterlabCells.inputareaMod.InputArea
 
-import typings.jupyterlabCells.inputareaMod.IInputPrompt
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Default implementation of `IContentFactory`.
@@ -18,24 +17,12 @@ import scala.scalajs.js.annotation._
   */
 class ContentFactory_ () extends IContentFactory {
   def this(options: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions) = this()
+  
   var _editor: js.Any = js.native
-  /**
-    * The editor factory we need to include in `CodeEditorWratter.IOptions`.
-    *
-    * This is a separate readonly attribute rather than a factory method as we need
-    * to pass it around.
-    */
-  /* CompleteClass */
-  override val editorFactory: Factory = js.native
-  /**
-    * Create an input prompt.
-    */
-  /* CompleteClass */
-  override def createInputPrompt(): IInputPrompt = js.native
+  
   /**
     * Return the `CodeEditor.Factory` being used.
     */
   @JSName("editorFactory")
   def editorFactory_MContentFactory_ : Factory = js.native
 }
-

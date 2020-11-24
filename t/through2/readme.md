@@ -10,9 +10,9 @@ A tiny wrapper around Node.js streams.Transform (Streams2/3) to avoid explicit s
 | ------------------ | :-------------: |
 | Full name          | through2 |
 | Keywords           | stream, streams2, through, transform |
-| # releases         | 5 |
-| # dependents       | 9758 |
-| # downloads        | 674627954 |
+| # releases         | 9 |
+| # dependents       | 10133 |
+| # downloads        | 921034890 |
 | # stars            | 205 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for antd-mobile
 
-Typings are for version 2.3.3
+Typings are for version 2.3.4
 
 ## Library description:
 基于 React 的移动设计规范实现
@@ -10,9 +10,9 @@ Typings are for version 2.3.3
 | ------------------ | :-------------: |
 | Full name          | antd-mobile |
 | Keywords           | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
-| # releases         | 31 |
-| # dependents       | 241 |
-| # downloads        | 787716 |
+| # releases         | 16 |
+| # dependents       | 288 |
+| # downloads        | 999494 |
 | # stars            | 6 |
 
 ## Links

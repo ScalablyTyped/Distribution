@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Midi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies a system reset. */
 @JSGlobal("Windows.Devices.Midi.MidiSystemResetMessage")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 /** Creates a new MidiSystemResetMessage object. */
 class MidiSystemResetMessage ()
   extends typings.winrtUwp.Windows.Devices.Midi.MidiSystemResetMessage
-

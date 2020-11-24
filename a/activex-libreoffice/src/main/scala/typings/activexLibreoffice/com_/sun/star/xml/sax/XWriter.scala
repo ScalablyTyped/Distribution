@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XActiveDataSource
 import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style {@link Writer} service to implement.
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait XWriter
   extends XExtendedDocumentHandler
      with XActiveDataSource
-
 object XWriter {
+  
   @scala.inline
   def apply(
     OutputStream: XOutputStream,
@@ -43,4 +43,3 @@ object XWriter {
     __obj.asInstanceOf[XWriter]
   }
 }
-

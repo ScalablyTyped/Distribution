@@ -10,7 +10,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Mention
 import typings.officeJsPreview.officeJsPreviewStrings.Plain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -20,11 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CommentReplyCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_CommentReplyCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[CommentReply] = js.native
+  
   def add(content: String): CommentReply = js.native
   def add(content: String, contentType: ContentType): CommentReply = js.native
   /**
@@ -45,12 +41,18 @@ trait CommentReplyCollection extends ClientObject {
   def add_Plain(content: String, contentType: Plain): CommentReply = js.native
   @JSName("add")
   def add_Plain(content: CommentRichContent, contentType: Plain): CommentReply = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_CommentReplyCollection: RequestContext = js.native
+  
   /**
     * Gets the number of comment replies in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Returns a comment reply identified by its ID.
     *
@@ -59,6 +61,7 @@ trait CommentReplyCollection extends ClientObject {
     * @param commentReplyId The identifier for the comment reply.
     */
   def getItem(commentReplyId: String): CommentReply = js.native
+  
   /**
     * Gets a comment reply based on its position in the collection.
     *
@@ -67,6 +70,10 @@ trait CommentReplyCollection extends ClientObject {
     * @param index The index value of the comment reply to be retrieved. The collection uses zero-based indexing.
     */
   def getItemAt(index: Double): CommentReply = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[CommentReply] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -77,10 +84,10 @@ trait CommentReplyCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): CommentReplyCollection = js.native
   def load(propertyNames: String): CommentReplyCollection = js.native
   def load(propertyNames: js.Array[String]): CommentReplyCollection = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): CommentReplyCollectionData = js.native
 }
-

@@ -12,7 +12,7 @@ Get a random key from an object
 | Keywords           | random, randomize, math, object, key, pick, select, choice |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 416 |
+| # downloads        | 433 |
 | # stars            | 1 |
 
 ## Links

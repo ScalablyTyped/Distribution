@@ -6,12 +6,15 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.endCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapBinaryImage extends BootstrapClientEdit {
+  
   def clear(): Unit = js.native
+  
   def getUploadedFileName(): String = js.native
+  
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")
@@ -40,6 +43,7 @@ trait BootstrapBinaryImage extends BootstrapClientEdit {
     eventName: endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_beginCallback(
     eventName: beginCallback,
@@ -60,6 +64,7 @@ trait BootstrapBinaryImage extends BootstrapClientEdit {
     eventName: endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_beginCallback(
     eventName: beginCallback,
@@ -80,8 +85,9 @@ trait BootstrapBinaryImage extends BootstrapClientEdit {
     eventName: endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
+  
   def performCallback(data: js.Any): js.Promise[Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  
   def setSize(width: Double, height: Double): Unit = js.native
 }
-

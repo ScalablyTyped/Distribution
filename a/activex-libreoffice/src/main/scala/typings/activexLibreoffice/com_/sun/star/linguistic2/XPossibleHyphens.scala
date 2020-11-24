@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Gives information about a word's possible hyphenation points.
@@ -18,31 +18,39 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPossibleHyphens extends XInterface {
+  
   /** @returns an ascending sequence of numbers where each number is an offset within the original word which denotes a hyphenation position corresponding to on */
   val HyphenationPositions: SafeArray[Double] = js.native
+  
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
     */
   val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  
   /** @returns a string depicting the word with all hyphen positions which are represented by "=" characters. If there are any alternative spellings, the word w */
   val PossibleHyphens: String = js.native
+  
   /** @returns the word for which the information of possible hyphenation points was obtained. */
   val Word: String = js.native
+  
   /** @returns an ascending sequence of numbers where each number is an offset within the original word which denotes a hyphenation position corresponding to on */
   def getHyphenationPositions(): SafeArray[Double] = js.native
+  
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
     */
   def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  
   /** @returns a string depicting the word with all hyphen positions which are represented by "=" characters. If there are any alternative spellings, the word w */
   def getPossibleHyphens(): String = js.native
+  
   /** @returns the word for which the information of possible hyphenation points was obtained. */
   def getWord(): String = js.native
 }
-
 object XPossibleHyphens {
+  
   @scala.inline
   def apply(
     HyphenationPositions: SafeArray[Double],
@@ -60,34 +68,44 @@ object XPossibleHyphens {
     val __obj = js.Dynamic.literal(HyphenationPositions = HyphenationPositions.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], PossibleHyphens = PossibleHyphens.asInstanceOf[js.Any], Word = Word.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getHyphenationPositions = js.Any.fromFunction0(getHyphenationPositions), getLocale = js.Any.fromFunction0(getLocale), getPossibleHyphens = js.Any.fromFunction0(getPossibleHyphens), getWord = js.Any.fromFunction0(getWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XPossibleHyphens]
   }
+  
   @scala.inline
   implicit class XPossibleHyphensOps[Self <: XPossibleHyphens] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHyphenationPositions(value: SafeArray[Double]): Self = this.set("HyphenationPositions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPossibleHyphens(value: String): Self = this.set("PossibleHyphens", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWord(value: String): Self = this.set("Word", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetHyphenationPositions(value: () => SafeArray[Double]): Self = this.set("getHyphenationPositions", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetLocale(value: () => Locale): Self = this.set("getLocale", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPossibleHyphens(value: () => String): Self = this.set("getPossibleHyphens", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetWord(value: () => String): Self = this.set("getWord", js.Any.fromFunction0(value))
   }
-  
 }
-

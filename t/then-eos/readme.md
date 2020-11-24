@@ -12,7 +12,7 @@ Promise-based end-of-stream.
 | Keywords           | end, eos, promise, stream |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 458 |
+| # downloads        | 644 |
 | # stars            | 0 |
 
 ## Links

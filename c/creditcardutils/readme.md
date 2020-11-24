@@ -12,7 +12,7 @@ A general purpose javascript library for credit card number validation and forma
 | Keywords           | payment, form, cc, card, credit card, formatting, validation, jquery-plugin, ecosystem:react, ecosystem:react-native |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 182769 |
+| # downloads        | 179235 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ Analyse Japanese Furigana from key input history
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 38483 |
+| # downloads        | 87413 |
 | # stars            | 0 |
 
 ## Links

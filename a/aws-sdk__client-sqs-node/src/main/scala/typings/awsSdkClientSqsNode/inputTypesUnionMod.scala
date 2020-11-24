@@ -2,11 +2,12 @@ package typings.awsSdkClientSqsNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-sqs-node/types/InputTypesUnion", JSImport.Namespace)
 @js.native
 object inputTypesUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientSqsNode.typesAddPermissionInputMod.AddPermissionInput
     - typings.awsSdkClientSqsNode.typesChangeMessageVisibilityInputMod.ChangeMessageVisibilityInput
@@ -30,6 +31,4 @@ object inputTypesUnionMod extends js.Object {
     - typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput
   */
   trait InputTypesUnion extends js.Object
-  
 }
-

@@ -2,17 +2,17 @@ package typings.amazonConnectStreams.global.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("connect.Endpoint")
 @js.native
 class Endpoint ()
   extends typings.amazonConnectStreams.connect.Endpoint
-
 /* static members */
 @JSGlobal("connect.Endpoint")
 @js.native
 object Endpoint extends js.Object {
+  
   /**
     * Creates an endpoint from a E.164 phone number.
     *
@@ -20,4 +20,3 @@ object Endpoint extends js.Object {
     */
   def byPhoneNumber(phoneNumber: String): typings.amazonConnectStreams.connect.Endpoint = js.native
 }
-

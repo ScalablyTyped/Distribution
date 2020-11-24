@@ -5,12 +5,12 @@ import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Transaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-tables", "fixTables")
 @js.native
 object fixTables extends js.Object {
+  
   def apply[S /* <: Schema[_, _] */](state: EditorState[S]): Null | Transaction[S] = js.native
   def apply[S /* <: Schema[_, _] */](state: EditorState[S], oldState: EditorState[S]): Null | Transaction[S] = js.native
 }
-

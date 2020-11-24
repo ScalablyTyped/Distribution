@@ -6,7 +6,7 @@ import typings.pulumiPulumi.mod.ComponentResource
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/lambda/lambdaMixins", "EventSubscription")
 @js.native
@@ -14,7 +14,8 @@ class EventSubscription protected ()
   extends ComponentResource[js.Any] {
   def this(`type`: String, name: String) = this()
   def this(`type`: String, name: String, opts: ComponentResourceOptions) = this()
+  
   var func: Function = js.native
+  
   var permission: Permission = js.native
 }
-

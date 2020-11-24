@@ -11,8 +11,8 @@ Merge objects using descriptors
 | Full name          | merge-descriptors |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 286 |
-| # downloads        | 397866725 |
+| # dependents       | 305 |
+| # downloads        | 541903273 |
 | # stars            | 18 |
 
 ## Links

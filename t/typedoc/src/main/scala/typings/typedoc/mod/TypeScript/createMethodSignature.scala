@@ -8,11 +8,12 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createMethodSignature")
 @js.native
 object createMethodSignature extends js.Object {
+  
   def apply(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
@@ -91,6 +92,7 @@ object createMethodSignature extends js.Object {
     name: PropertyName,
     questionToken: QuestionToken
   ): MethodSignature = js.native
+  /** @deprecated Use `factory.createMethodSignature` or the factory supplied by your transformation context instead. */
   def apply(
     typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
@@ -118,4 +120,3 @@ object createMethodSignature extends js.Object {
     questionToken: QuestionToken
   ): MethodSignature = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,26 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassX509Req extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的公钥
-    * 
-    * @readonly
-    * @type PKey
-    */
-  var publicKey: ClassPKey = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的主题可分辨名称
-    * 
-    * @readonly
-    * @type String
-    */
-  var subject: String = js.native
+  
   /**
     * 
     * @brief 返回当前证书请求的 DER 格式编码
@@ -40,6 +21,7 @@ trait ClassX509Req extends ClassObject {
     * 
     */
   def exportDer(): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 返回当前证书请求的 PEM 格式编码
@@ -49,6 +31,7 @@ trait ClassX509Req extends ClassObject {
     * 
     */
   def exportPem(): String = js.native
+  
   /**
     * 
     * @brief 加载一个 DER 格式的证书请求
@@ -67,6 +50,7 @@ trait ClassX509Req extends ClassObject {
     * 
     */
   def load(pemReq: String): Unit = js.native
+  
   /**
     * 
     * @brief 加载一个 PEM/DER 格式的证书请求，可多次调用
@@ -76,6 +60,18 @@ trait ClassX509Req extends ClassObject {
     * 
     */
   def loadFile(filename: String): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的公钥
+    * 
+    * @readonly
+    * @type PKey
+    */
+  var publicKey: ClassPKey = js.native
+  
   /**
     * 
     * @brief 签名当前证书请求为正式证书
@@ -101,5 +97,15 @@ trait ClassX509Req extends ClassObject {
     */
   def sign(issuer: String, key: ClassPKey): ClassX509Cert = js.native
   def sign(issuer: String, key: ClassPKey, opts: js.Object): ClassX509Cert = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的主题可分辨名称
+    * 
+    * @readonly
+    * @type String
+    */
+  var subject: String = js.native
 }
-

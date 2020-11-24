@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jsonata" : "1.8.3"
+      "jsonata" : "1.8.4"
     }
   ],
   "test-dependencies" : [
     {
-      "jsonata" : "1.8.3"
+      "jsonata" : "1.8.4"
     }
   ],
   "compile-devDependencies" : [

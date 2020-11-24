@@ -4,11 +4,11 @@ import typings.std.SVGFETurbulenceElement
 import typings.superfine.superfineStrings.feTurbulence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superfine", "patch")
 @js.native
 object patch_feTurbulence extends js.Object {
+  
   def apply(rootElement: SVGFETurbulenceElement, vNode: VNode[feTurbulence]): Unit = js.native
 }
-

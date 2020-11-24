@@ -10,9 +10,9 @@ Microsoft ASP.NET SignalR JavaScript Client
 | ------------------ | :-------------: |
 | Full name          | signalr |
 | Keywords           | signalr, microsoft, asp.net, javascript, jquery, realtime |
-| # releases         | 7 |
-| # dependents       | 27 |
-| # downloads        | 749941 |
+| # releases         | 4 |
+| # dependents       | 30 |
+| # downloads        | 902906 |
 | # stars            | 3 |
 
 ## Links

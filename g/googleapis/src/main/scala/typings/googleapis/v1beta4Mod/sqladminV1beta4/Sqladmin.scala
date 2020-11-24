@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud SQL Admin API
@@ -28,14 +28,22 @@ import scala.scalajs.js.annotation._
 class Sqladmin protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var backupRuns: ResourceBackupruns = js.native
+  
   var context: APIRequestContext = js.native
+  
   var databases: ResourceDatabases = js.native
+  
   var flags: ResourceFlags = js.native
+  
   var instances: ResourceInstances = js.native
+  
   var operations: ResourceOperations = js.native
+  
   var sslCerts: ResourceSslcerts = js.native
+  
   var tiers: ResourceTiers = js.native
+  
   var users: ResourceUsers = js.native
 }
-

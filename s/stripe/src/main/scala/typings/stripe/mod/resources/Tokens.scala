@@ -12,11 +12,12 @@ import typings.stripe.mod.tokens.IPiiTokenCreationOptions
 import typings.stripe.mod.tokens.IToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Tokens")
 @js.native
 class Tokens () extends StripeResource {
+  
   def create(data: IBankAccountTokenCreationOptions): js.Promise[IBankAccountToken] = js.native
   /**
     * Creates a single use token that wraps the details of a bank account. This token can be used
@@ -48,6 +49,7 @@ class Tokens () extends StripeResource {
   def create(data: IPiiTokenCreationOptions, options: HeaderOptions): js.Promise[IToken] = js.native
   def create(data: IPiiTokenCreationOptions, options: HeaderOptions, response: IResponseFn[IToken]): js.Promise[IToken] = js.native
   def create(data: IPiiTokenCreationOptions, response: IResponseFn[IToken]): js.Promise[IToken] = js.native
+  
   def retrieve(tokenId: String): js.Promise[IToken] = js.native
   def retrieve(tokenId: String, data: IDataOptions): js.Promise[IToken] = js.native
   /**
@@ -60,4 +62,3 @@ class Tokens () extends StripeResource {
   def retrieve(tokenId: String, options: HeaderOptions, response: IResponseFn[IToken]): js.Promise[IToken] = js.native
   def retrieve(tokenId: String, response: IResponseFn[IToken]): js.Promise[IToken] = js.native
 }
-

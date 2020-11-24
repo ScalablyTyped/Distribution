@@ -2,11 +2,12 @@ package typings.parseGitConfig.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse-git-config", "sync")
 @js.native
 object sync extends js.Object {
+  
   /**
     * Synchronously parse a `.git/config` file. If no arguments are passed,
     * the `.git/config` file relative to `process.cwd()` is used.
@@ -22,4 +23,3 @@ object sync extends js.Object {
   def apply(options: String): Config = js.native
   def apply(options: Options): Config = js.native
 }
-

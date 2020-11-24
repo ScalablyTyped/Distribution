@@ -10,15 +10,15 @@ A Handlebars view engine for Express which doesn't suck.
 | ------------------ | :-------------: |
 | Full name          | express-handlebars |
 | Keywords           | express, express3, handlebars, view, layout, partials, templates |
-| # releases         | 4 |
-| # dependents       | 320 |
-| # downloads        | 4814976 |
+| # releases         | 14 |
+| # dependents       | 371 |
+| # downloads        | 6204828 |
 | # stars            | 83 |
 
 ## Links
-- [Homepage](https://github.com/ericf/express-handlebars)
-- [Bugs](https://github.com/ericf/express-handlebars/issues)
-- [Repository](https://github.com/ericf/express-handlebars)
+- [Homepage](https://github.com/express-handlebars/express-handlebars)
+- [Bugs](https://github.com/express-handlebars/express-handlebars/issues)
+- [Repository](https://github.com/express-handlebars/express-handlebars)
 - [Npm](https://www.npmjs.com/package/express-handlebars)
     
 

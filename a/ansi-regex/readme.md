@@ -11,8 +11,8 @@ Regular expression for matching ANSI escape codes
 | Full name          | ansi-regex |
 | Keywords           | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, command-line, text, regex, regexp, re, match, test, find, pattern |
 | # releases         | 4 |
-| # dependents       | 262 |
-| # downloads        | 1406459227 |
+| # dependents       | 313 |
+| # downloads        | 2229509237 |
 | # stars            | 8 |
 
 ## Links

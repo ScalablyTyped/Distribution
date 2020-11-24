@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Keys extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.Keys")
 @js.native
 object Keys extends js.Object {
+  
   //The A key.
   @js.native
   sealed trait A extends Keys
@@ -189,6 +189,4 @@ object Keys extends js.Object {
   //The Z key.
   @js.native
   sealed trait Z extends Keys
-  
 }
-

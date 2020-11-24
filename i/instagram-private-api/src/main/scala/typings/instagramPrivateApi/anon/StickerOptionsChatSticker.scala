@@ -1,90 +1,224 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined instagram-private-api.instagram-private-api/dist/sticker-builder/sticker-builder.StickerOptions<instagram-private-api.instagram-private-api/dist/sticker-builder/stickers.ChatSticker> */
+@js.native
 trait StickerOptionsChatSticker extends js.Object {
-  var additionalConfigureProperties: js.UndefOr[js.Function0[_]] = js.undefined
-  var bottom: js.UndefOr[js.Function0[this.type]] = js.undefined
-  var center: js.UndefOr[js.Function0[this.type]] = js.undefined
-  var endBackgroundColor: js.UndefOr[String] = js.undefined
-  var hasStartedChat: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[js.Function0[String]] = js.undefined
-  var isSticker: js.UndefOr[Boolean] = js.undefined
-  var key: js.UndefOr[js.Function0[String]] = js.undefined
-  var left: js.UndefOr[js.Function0[this.type]] = js.undefined
-  var moveBackwards: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.undefined
-  var moveForward: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.undefined
-  var right: js.UndefOr[js.Function0[this.type]] = js.undefined
-  var rotateDeg: js.UndefOr[js.Function1[/* deg */ Double, this.type]] = js.undefined
-  var rotation: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[js.Function1[/* factor */ Double, this.type]] = js.undefined
-  var startBackgroundColor: js.UndefOr[String] = js.undefined
-  var text: String
-  var toJSON: js.UndefOr[js.Function0[_]] = js.undefined
-  var top: js.UndefOr[js.Function0[this.type]] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var x: js.UndefOr[Double] = js.undefined
-  var y: js.UndefOr[Double] = js.undefined
-  var z: js.UndefOr[Double] = js.undefined
+  
+  var additionalConfigureProperties: js.UndefOr[js.Function0[_]] = js.native
+  
+  var bottom: js.UndefOr[js.Function0[this.type]] = js.native
+  
+  var center: js.UndefOr[js.Function0[this.type]] = js.native
+  
+  var endBackgroundColor: js.UndefOr[String] = js.native
+  
+  var hasStartedChat: js.UndefOr[Boolean] = js.native
+  
+  var height: js.UndefOr[Double] = js.native
+  
+  var id: js.UndefOr[js.Function0[String]] = js.native
+  
+  var isSticker: js.UndefOr[Boolean] = js.native
+  
+  var key: js.UndefOr[js.Function0[String]] = js.native
+  
+  var left: js.UndefOr[js.Function0[this.type]] = js.native
+  
+  var moveBackwards: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.native
+  
+  var moveForward: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.native
+  
+  var right: js.UndefOr[js.Function0[this.type]] = js.native
+  
+  var rotateDeg: js.UndefOr[js.Function1[/* deg */ Double, this.type]] = js.native
+  
+  var rotation: js.UndefOr[Double] = js.native
+  
+  var scale: js.UndefOr[js.Function1[/* factor */ Double, this.type]] = js.native
+  
+  var startBackgroundColor: js.UndefOr[String] = js.native
+  
+  var text: String = js.native
+  
+  var toJSON: js.UndefOr[js.Function0[StringDictionary[_]]] = js.native
+  
+  var top: js.UndefOr[js.Function0[this.type]] = js.native
+  
+  var width: js.UndefOr[Double] = js.native
+  
+  var x: js.UndefOr[Double] = js.native
+  
+  var y: js.UndefOr[Double] = js.native
+  
+  var z: js.UndefOr[Double] = js.native
 }
-
 object StickerOptionsChatSticker {
+  
   @scala.inline
-  def apply(
-    text: String,
-    additionalConfigureProperties: () => _ = null,
-    bottom: () => StickerOptionsChatSticker = null,
-    center: () => StickerOptionsChatSticker = null,
-    endBackgroundColor: String = null,
-    hasStartedChat: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    id: () => String = null,
-    isSticker: js.UndefOr[Boolean] = js.undefined,
-    key: () => String = null,
-    left: () => StickerOptionsChatSticker = null,
-    moveBackwards: /* layers */ js.UndefOr[Double] => StickerOptionsChatSticker = null,
-    moveForward: /* layers */ js.UndefOr[Double] => StickerOptionsChatSticker = null,
-    right: () => StickerOptionsChatSticker = null,
-    rotateDeg: /* deg */ Double => StickerOptionsChatSticker = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    scale: /* factor */ Double => StickerOptionsChatSticker = null,
-    startBackgroundColor: String = null,
-    toJSON: () => _ = null,
-    top: () => StickerOptionsChatSticker = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined,
-    z: js.UndefOr[Double] = js.undefined
-  ): StickerOptionsChatSticker = {
+  def apply(text: String): StickerOptionsChatSticker = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (additionalConfigureProperties != null) __obj.updateDynamic("additionalConfigureProperties")(js.Any.fromFunction0(additionalConfigureProperties))
-    if (bottom != null) __obj.updateDynamic("bottom")(js.Any.fromFunction0(bottom))
-    if (center != null) __obj.updateDynamic("center")(js.Any.fromFunction0(center))
-    if (endBackgroundColor != null) __obj.updateDynamic("endBackgroundColor")(endBackgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasStartedChat)) __obj.updateDynamic("hasStartedChat")(hasStartedChat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(js.Any.fromFunction0(id))
-    if (!js.isUndefined(isSticker)) __obj.updateDynamic("isSticker")(isSticker.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(js.Any.fromFunction0(key))
-    if (left != null) __obj.updateDynamic("left")(js.Any.fromFunction0(left))
-    if (moveBackwards != null) __obj.updateDynamic("moveBackwards")(js.Any.fromFunction1(moveBackwards))
-    if (moveForward != null) __obj.updateDynamic("moveForward")(js.Any.fromFunction1(moveForward))
-    if (right != null) __obj.updateDynamic("right")(js.Any.fromFunction0(right))
-    if (rotateDeg != null) __obj.updateDynamic("rotateDeg")(js.Any.fromFunction1(rotateDeg))
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(js.Any.fromFunction1(scale))
-    if (startBackgroundColor != null) __obj.updateDynamic("startBackgroundColor")(startBackgroundColor.asInstanceOf[js.Any])
-    if (toJSON != null) __obj.updateDynamic("toJSON")(js.Any.fromFunction0(toJSON))
-    if (top != null) __obj.updateDynamic("top")(js.Any.fromFunction0(top))
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickerOptionsChatSticker]
   }
+  
+  @scala.inline
+  implicit class StickerOptionsChatStickerOps[Self <: StickerOptionsChatSticker] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAdditionalConfigureProperties(value: () => _): Self = this.set("additionalConfigureProperties", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteAdditionalConfigureProperties: Self = this.set("additionalConfigureProperties", js.undefined)
+    
+    @scala.inline
+    def setBottom(value: () => StickerOptionsChatSticker): Self = this.set("bottom", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    
+    @scala.inline
+    def setCenter(value: () => StickerOptionsChatSticker): Self = this.set("center", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    
+    @scala.inline
+    def setEndBackgroundColor(value: String): Self = this.set("endBackgroundColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEndBackgroundColor: Self = this.set("endBackgroundColor", js.undefined)
+    
+    @scala.inline
+    def setHasStartedChat(value: Boolean): Self = this.set("hasStartedChat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHasStartedChat: Self = this.set("hasStartedChat", js.undefined)
+    
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    
+    @scala.inline
+    def setId(value: () => String): Self = this.set("id", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    
+    @scala.inline
+    def setIsSticker(value: Boolean): Self = this.set("isSticker", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsSticker: Self = this.set("isSticker", js.undefined)
+    
+    @scala.inline
+    def setKey(value: () => String): Self = this.set("key", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    
+    @scala.inline
+    def setLeft(value: () => StickerOptionsChatSticker): Self = this.set("left", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    
+    @scala.inline
+    def setMoveBackwards(value: /* layers */ js.UndefOr[Double] => StickerOptionsChatSticker): Self = this.set("moveBackwards", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteMoveBackwards: Self = this.set("moveBackwards", js.undefined)
+    
+    @scala.inline
+    def setMoveForward(value: /* layers */ js.UndefOr[Double] => StickerOptionsChatSticker): Self = this.set("moveForward", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteMoveForward: Self = this.set("moveForward", js.undefined)
+    
+    @scala.inline
+    def setRight(value: () => StickerOptionsChatSticker): Self = this.set("right", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    
+    @scala.inline
+    def setRotateDeg(value: /* deg */ Double => StickerOptionsChatSticker): Self = this.set("rotateDeg", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteRotateDeg: Self = this.set("rotateDeg", js.undefined)
+    
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    
+    @scala.inline
+    def setScale(value: /* factor */ Double => StickerOptionsChatSticker): Self = this.set("scale", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    
+    @scala.inline
+    def setStartBackgroundColor(value: String): Self = this.set("startBackgroundColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStartBackgroundColor: Self = this.set("startBackgroundColor", js.undefined)
+    
+    @scala.inline
+    def setToJSON(value: () => StringDictionary[_]): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteToJSON: Self = this.set("toJSON", js.undefined)
+    
+    @scala.inline
+    def setTop(value: () => StickerOptionsChatSticker): Self = this.set("top", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+  }
 }
-

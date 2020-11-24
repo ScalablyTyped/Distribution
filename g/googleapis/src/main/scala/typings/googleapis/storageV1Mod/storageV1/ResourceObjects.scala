@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Objects")
 @js.native
 class ResourceObjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * storage.objects.compose
     * @desc Concatenates a list of existing objects into a new object in the
@@ -113,6 +113,9 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * storage.objects.copy
     * @desc Copies a source object to a destination object. Optionally
@@ -234,6 +237,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.delete
     * @desc Deletes an object and its metadata. Deletions are permanent if
@@ -322,6 +326,7 @@ class ResourceObjects protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceObjectsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceObjectsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * storage.objects.get
     * @desc Retrieves an object or its metadata.
@@ -420,6 +425,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.getIamPolicy
     * @desc Returns an IAM policy for the specified object.
@@ -509,6 +515,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * storage.objects.insert
     * @desc Stores a new object and metadata.
@@ -617,6 +624,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.list
     * @desc Retrieves a list of objects matching the criteria.
@@ -719,6 +727,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjects]
   ): Unit = js.native
+  
   /**
     * storage.objects.patch
     * @desc Patches an object's metadata.
@@ -821,6 +830,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.rewrite
     * @desc Rewrites a source object to a destination object. Optionally
@@ -945,6 +955,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRewriteResponse]
   ): Unit = js.native
+  
   /**
     * storage.objects.setIamPolicy
     * @desc Updates an IAM policy for the specified object.
@@ -1041,6 +1052,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * storage.objects.testIamPermissions
     * @desc Tests a set of permissions on the given object to see which, if
@@ -1138,6 +1150,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * storage.objects.update
     * @desc Updates an object's metadata.
@@ -1240,6 +1253,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.watchAll
     * @desc Watch for changes on all objects in a bucket.
@@ -1335,4 +1349,3 @@ class ResourceObjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

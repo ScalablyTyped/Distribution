@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nosleep_dot_js"
-version := "0.9-dt-20200127Z-201212"
+version := "0.9-dt-20200127Z-693375"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

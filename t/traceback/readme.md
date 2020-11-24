@@ -12,7 +12,7 @@ Easy access to the call stack, written in pure JavaScript
 | Keywords           | call, stack, trace, stacktrace, traceback, debug, line |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 27414 |
+| # downloads        | 28221 |
 | # stars            | 5 |
 
 ## Links

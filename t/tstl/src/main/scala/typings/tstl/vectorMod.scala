@@ -11,11 +11,12 @@ import typings.tstl.vectorMod.Vector.Iterator
 import typings.tstl.vectorMod.Vector.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/Vector", JSImport.Namespace)
 @js.native
 object vectorMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -63,6 +64,7 @@ object vectorMod extends js.Object {
       * @param val Value to fill.
       */
     def this(n: Double, `val`: T) = this()
+    
     /**
       * Range Assigner.
       *
@@ -71,11 +73,13 @@ object vectorMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -93,6 +97,7 @@ object vectorMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: Iterator[T]): Iterator[T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -103,6 +108,7 @@ object vectorMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def front(`val`: T): Unit = js.native
+    
     /**
       * Swap elements.
       *
@@ -110,6 +116,7 @@ object vectorMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: Vector[T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -118,10 +125,10 @@ object vectorMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   /* static members */
   @js.native
   object Vector extends js.Object {
+    
     val Iterator: Instantiable0[
         ArrayIterator[
           js.Object, 
@@ -141,6 +148,7 @@ object vectorMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         ArrayReverseIterator[
           js.Object, 
@@ -160,6 +168,7 @@ object vectorMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     /**
       * Wrap an array into a vector.
       *
@@ -167,15 +176,15 @@ object vectorMod extends js.Object {
       * @return A vector wrapping the parametric array.
       */
     def wrap[T](data: js.Array[T]): Vector[T] = js.native
+    
     /**
       * Iterator of {@link Vector}
       */
     type Iterator[T] = ArrayIterator[T, Vector[T]]
+    
     /**
       * Reverse iterator of {@link Vector}
       */
     type ReverseIterator[T] = ArrayReverseIterator[T, Vector[T]]
   }
-  
 }
-

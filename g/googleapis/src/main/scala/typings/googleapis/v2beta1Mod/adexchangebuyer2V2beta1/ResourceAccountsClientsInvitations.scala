@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Clients$Invitations")
 @js.native
 class ResourceAccountsClientsInvitations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.invitations.create
     * @desc Creates and sends out an email invitation to access an Ad Exchange
@@ -47,6 +49,7 @@ class ResourceAccountsClientsInvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClientUserInvitation]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.invitations.get
     * @desc Retrieves an existing client user invitation.
@@ -80,6 +83,7 @@ class ResourceAccountsClientsInvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClientUserInvitation]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.invitations.list
     * @desc Lists all the client users invitations for a client with a given
@@ -116,4 +120,3 @@ class ResourceAccountsClientsInvitations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListClientUserInvitationsResponse]
   ): Unit = js.native
 }
-

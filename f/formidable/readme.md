@@ -10,15 +10,15 @@ A node.js module for parsing form data, especially file uploads.
 | ------------------ | :-------------: |
 | Full name          | formidable |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 861 |
-| # downloads        | 121106375 |
-| # stars            | 244 |
+| # releases         | 16 |
+| # dependents       | 972 |
+| # downloads        | 164788641 |
+| # stars            | 245 |
 
 ## Links
-- [Homepage](https://github.com/felixge/node-formidable)
-- [Bugs](http://github.com/felixge/node-formidable/issues)
-- [Repository](https://github.com/felixge/node-formidable)
+- [Homepage](https://github.com/node-formidable/formidable)
+- [Bugs](https://github.com/node-formidable/formidable/issues)
+- [Repository](https://github.com/node-formidable/formidable)
 - [Npm](https://www.npmjs.com/package/formidable)
     
 

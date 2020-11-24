@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.dataviz.ui.ArcGaugeOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofArcGauge
   extends Instantiable1[/* element */ Element, ArcGauge]
      with Instantiable2[/* element */ Element, /* options */ ArcGaugeOptions, ArcGauge] {
-  var fn: ArcGauge = js.native
+  
   def extend(proto: js.Object): ArcGauge = js.native
+  
+  var fn: ArcGauge = js.native
 }
-

@@ -11,8 +11,8 @@ Predefined color schemes for Chart.js
 | Full name          | chartjs-plugin-colorschemes |
 | Keywords           | chart.js, plugin, color, scheme, palette, brewer, office, tableau |
 | # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 132024 |
+| # dependents       | 8 |
+| # downloads        | 232205 |
 | # stars            | 0 |
 
 ## Links

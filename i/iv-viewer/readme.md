@@ -11,8 +11,8 @@ A zooming and panning plugin inspired by google photos for your web images.
 | Full name          | iv-viewer |
 | Keywords           | image, zooming, panning, google, photos |
 | # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 73480 |
+| # dependents       | 4 |
+| # downloads        | 118686 |
 | # stars            | 0 |
 
 ## Links

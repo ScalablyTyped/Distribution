@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represent the delivery info about a chat recipient. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatRecipientDeliveryInfo")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 /** Initializes a new instance of the ChatRecipientDeliveryInfo class. */
 class ChatRecipientDeliveryInfo ()
   extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatRecipientDeliveryInfo
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Asps")
 @js.native
 class ResourceAsps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.asps.delete
     * @desc Delete an ASP issued by a user.
@@ -38,6 +40,7 @@ class ResourceAsps protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceAspsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAspsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.asps.get
     * @desc Get information about an ASP issued by a user.
@@ -63,6 +66,7 @@ class ResourceAsps protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceAspsGet, options: MethodOptions): GaxiosPromise[SchemaAsp] = js.native
   def get(params: ParamsResourceAspsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaAsp]): Unit = js.native
+  
   /**
     * directory.asps.list
     * @desc List the ASPs issued by a user.
@@ -88,4 +92,3 @@ class ResourceAsps protected () extends js.Object {
   def list(params: ParamsResourceAspsList, options: MethodOptions): GaxiosPromise[SchemaAsps] = js.native
   def list(params: ParamsResourceAspsList, options: MethodOptions, callback: BodyResponseCallback[SchemaAsps]): Unit = js.native
 }
-

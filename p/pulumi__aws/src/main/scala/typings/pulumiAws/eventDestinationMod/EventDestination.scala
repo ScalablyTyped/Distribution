@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")
 @js.native
@@ -24,40 +24,47 @@ class EventDestination protected () extends CustomResource {
     */
   def this(name: String, args: EventDestinationArgs) = this()
   def this(name: String, args: EventDestinationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * CloudWatch destination for the events
     */
   val cloudwatchDestinations: Output_[js.UndefOr[js.Array[EventDestinationCloudwatchDestination]]] = js.native
+  
   /**
     * The name of the configuration set
     */
   val configurationSetName: Output_[String] = js.native
+  
   /**
     * If true, the event destination will be enabled
     */
   val enabled: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * Send the events to a kinesis firehose destination
     */
   val kinesisDestination: Output_[js.UndefOr[EventDestinationKinesisDestination]] = js.native
+  
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
   val matchingTypes: Output_[js.Array[String]] = js.native
+  
   /**
     * The name of the event destination
     */
   val name: Output_[String] = js.native
+  
   /**
     * Send the events to an SNS Topic destination
     */
   val snsDestination: Output_[js.UndefOr[EventDestinationSnsDestination]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")
 @js.native
 object EventDestination extends js.Object {
+  
   /**
     * Get an existing EventDestination resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -71,10 +78,10 @@ object EventDestination extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventDestination = js.native
   def get(name: String, id: Input[ID], state: EventDestinationState): EventDestination = js.native
   def get(name: String, id: Input[ID], state: EventDestinationState, opts: CustomResourceOptions): EventDestination = js.native
+  
   /**
     * Returns true if the given object is an instance of EventDestination.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean = js.native
 }
-

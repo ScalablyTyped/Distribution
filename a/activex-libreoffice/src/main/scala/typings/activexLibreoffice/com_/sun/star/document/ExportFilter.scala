@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * filter for exports
@@ -23,8 +23,8 @@ trait ExportFilter
      with XFilter
      with XInitialization
      with XNamed
-
 object ExportFilter {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -42,4 +42,3 @@ object ExportFilter {
     __obj.asInstanceOf[ExportFilter]
   }
 }
-

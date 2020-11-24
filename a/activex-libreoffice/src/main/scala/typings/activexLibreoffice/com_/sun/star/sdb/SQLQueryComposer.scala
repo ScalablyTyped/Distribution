@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XTablesSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a tool for composing SQL select statements.
@@ -22,8 +22,8 @@ trait SQLQueryComposer
   extends XSQLQueryComposer
      with XTablesSupplier
      with XColumnsSupplier
-
 object SQLQueryComposer {
+  
   @scala.inline
   def apply(
     Columns: XNameAccess,
@@ -53,4 +53,3 @@ object SQLQueryComposer {
     __obj.asInstanceOf[SQLQueryComposer]
   }
 }
-

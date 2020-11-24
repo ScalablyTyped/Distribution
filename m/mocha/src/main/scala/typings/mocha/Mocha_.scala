@@ -4,39 +4,44 @@ import typings.mocha.Mocha.Interface
 import typings.mocha.Mocha.MochaInstanceOptions
 import typings.mocha.Mocha.Reporter
 import typings.mocha.Mocha.ReporterConstructor
+import typings.mocha.Mocha.RootHookObject
 import typings.mocha.Mocha.Runner
 import typings.mocha.Mocha.Suite
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mocha_ extends js.Object {
+  
   var _growl: js.Any = js.native
+  
   var _reporter: js.Any = js.native
+  
   var _ui: js.Any = js.native
-  var files: js.Array[String] = js.native
-  var options: MochaInstanceOptions = js.native
-  var suite: Suite = js.native
+  
   /**
     * Add test `file`.
     *
     * @see https://mochajs.org/api/mocha#addFile
     */
   def addFile(file: String): this.type = js.native
+  
   /**
     * Enable uncaught errors to propagate (in browser).
     *
     * @see https://mochajs.org/api/mocha#allowUncaught
     */
   def allowUncaught(): Boolean = js.native
+  
   /**
     * Makes all tests async (accepting a callback)
     *
     * @see https://mochajs.org/api/mocha#asyncOnly.
     */
   def asyncOnly(): this.type = js.native
+  
   /**
     * Enable or disable bailing on the first failure.
     *
@@ -44,42 +49,59 @@ trait Mocha_ extends js.Object {
     */
   def bail(): this.type = js.native
   def bail(bail: Boolean): this.type = js.native
+  
   /**
     * Enable global leak checking.
     *
     * @see https://mochajs.org/api/mocha#checkLeaks
     */
   def checkLeaks(): this.type = js.native
+  
   /**
     * Delay root suite execution.
     *
     * @see https://mochajs.org/api/mocha#delay
     */
   def delay(): Boolean = js.native
+  
+  /**
+    * Manually dispose this mocha instance. Mark this instance as `disposed` and unable to run more tests.
+    * It also removes function references to tests functions and hooks, so variables trapped in closures can be cleaned by the garbage collector.
+    *
+    * @see https://mochajs.org/api/mocha#dispose
+    */
+  def dispose(): Unit = js.native
+  
   /**
     * Escape string and add it to grep as a RegExp.
     *
     * @see https://mochajs.org/api/mocha#fgrep
     */
   def fgrep(str: String): this.type = js.native
+  
+  var files: js.Array[String] = js.native
+  
   /**
     * Tests marked only fail the suite
     *
     * @see https://mochajs.org/api/mocha#forbidOnly
     */
   def forbidOnly(): Boolean = js.native
+  
   /**
     * Pending tests and tests marked skip fail the suite
     *
     * @see https://mochajs.org/api/mocha#forbidPending
     */
   def forbidPending(): Boolean = js.native
+  
   /**
     * Display long stack-trace on failing
     *
     * @see https://mochajs.org/api/mocha#fullTrace
     */
   def fullTrace(): this.type = js.native
+  
   /**
     * Ignore `globals` array or string.
     *
@@ -87,6 +109,7 @@ trait Mocha_ extends js.Object {
     */
   def globals(globals: String): this.type = js.native
   def globals(globals: js.Array[String]): this.type = js.native
+  
   /**
     * Add regexp to grep, if `re` is a string it is escaped.
     *
@@ -94,18 +117,21 @@ trait Mocha_ extends js.Object {
     */
   def grep(re: String): this.type = js.native
   def grep(re: RegExp): this.type = js.native
+  
   /**
     * Enable growl support.
     *
     * @see https://mochajs.org/api/mocha#growl
     */
   def growl(): this.type = js.native
+  
   /**
     * Invert `.grep()` matches.
     *
     * @see https://mochajs.org/api/mocha#invert
     */
   def invert(): this.type = js.native
+  
   /**
     * Load registered files.
     *
@@ -113,18 +139,23 @@ trait Mocha_ extends js.Object {
     */
   /* protected */ def loadFiles(): Unit = js.native
   /* protected */ def loadFiles(fn: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Loads ESM (and CJS) test files asynchronously.
     *
     * @see https://mochajs.org/api/mocha#loadFilesAsync
     */
   def loadFilesAsync(): js.Promise[Unit] = js.native
+  
   /**
     * Disable syntax highlighting (in browser).
     *
     * @see https://mochajs.org/api/mocha#noHighlighting
     */
   def noHighlighting(): this.type = js.native
+  
+  var options: MochaInstanceOptions = js.native
+  
   /**
     * Toggles parallel mode.
     *
@@ -135,6 +166,7 @@ trait Mocha_ extends js.Object {
     */
   def parallelMode(): this.type = js.native
   def parallelMode(enabled: Boolean): this.type = js.native
+  
   /**
     * Set reporter to the provided constructor, one of the built-in reporters, or loads a reporter
     * from a module path. Defaults to `"spec"`.
@@ -154,12 +186,21 @@ trait Mocha_ extends js.Object {
   def reporter(reporter: ReporterConstructor): this.type = js.native
   def reporter(reporter: ReporterConstructor, reporterOptions: js.Any): this.type = js.native
   def reporter(reporter: Reporter, reporterOptions: js.Any): this.type = js.native
+  
   /**
     * Set the number of times to retry failed tests.
     *
     * @see https://mochajs.org/api/mocha#retries
     */
   def retries(n: Double): this.type = js.native
+  
+  /**
+    * Assigns hooks to the root suite.
+    *
+    * @see https://mochajs.org/api/mocha#rootHooks
+    */
+  def rootHooks(hooks: RootHookObject): this.type = js.native
+  
   /**
     * Run tests and invoke `fn()` when complete.
     *
@@ -175,6 +216,7 @@ trait Mocha_ extends js.Object {
     */
   def run(): Runner = js.native
   def run(fn: js.Function1[/* failures */ Double, Unit]): Runner = js.native
+  
   /**
     * Set slowness threshold in milliseconds.
     *
@@ -182,6 +224,9 @@ trait Mocha_ extends js.Object {
     */
   def slow(slow: String): this.type = js.native
   def slow(slow: Double): this.type = js.native
+  
+  var suite: Suite = js.native
+  
   /**
     * Set the timeout in milliseconds.
     *
@@ -189,6 +234,7 @@ trait Mocha_ extends js.Object {
     */
   def timeout(timeout: String): this.type = js.native
   def timeout(timeout: Double): this.type = js.native
+  
   /**
     * Set test UI to one of the built-in test interfaces or loads a test interface from a module
     * path. Defaults to `"bdd"`.
@@ -203,6 +249,7 @@ trait Mocha_ extends js.Object {
     * @see https://mochajs.org/api/mocha#ui
     */
   def ui(name: Interface): this.type = js.native
+  
   /**
     * Unloads `files` from Node's `require` cache.
     *
@@ -212,4 +259,3 @@ trait Mocha_ extends js.Object {
     */
   def unloadFiles(): this.type = js.native
 }
-

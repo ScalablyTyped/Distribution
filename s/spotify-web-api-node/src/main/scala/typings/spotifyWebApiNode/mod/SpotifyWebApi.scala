@@ -1,5 +1,6 @@
 package typings.spotifyWebApiNode.mod
 
+import typings.spotifyApi.SpotifyApi.AddToQueueResponse
 import typings.spotifyApi.SpotifyApi.AddTracksToPlaylistResponse
 import typings.spotifyApi.SpotifyApi.AlbumTracksResponse
 import typings.spotifyApi.SpotifyApi.ArtistsAlbumsResponse
@@ -53,10 +54,11 @@ import typings.spotifyApi.SpotifyApi.UsersTopArtistsResponse
 import typings.spotifyApi.SpotifyApi.UsersTopTracksResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpotifyWebApi extends js.Object {
+  
   def addToMySavedAlbums(albumIds: js.Array[String]): js.Promise[Response[SaveAlbumsForUserResponse]] = js.native
   /**
     * Add an album from the authenticated user's Your Music library.
@@ -65,6 +67,7 @@ trait SpotifyWebApi extends js.Object {
     * @returns A promise that if successful returns null, otherwise an error. Not returned if a callback is given.
     */
   def addToMySavedAlbums(albumIds: js.Array[String], callback: Callback[SaveAlbumsForUserResponse]): Unit = js.native
+  
   def addToMySavedTracks(trackIds: js.Array[String]): js.Promise[Response[SaveTracksForUserResponse]] = js.native
   /**
     * Add a track from the authenticated user's Your Music library.
@@ -73,6 +76,16 @@ trait SpotifyWebApi extends js.Object {
     * @returns A promise that if successful returns null, otherwise an error. Not returned if a callback is given.
     */
   def addToMySavedTracks(trackIds: js.Array[String], callback: Callback[SaveTracksForUserResponse]): Unit = js.native
+  
+  /**
+    * Add track or episode to device queue
+    * @param uri URI of the track or episode to add
+    * @param options Options, being device_id.
+    * @returns A promise that if successful returns null, otherwise an error.
+    */
+  def addToQueue(uri: String): js.Promise[Response[AddToQueueResponse]] = js.native
+  def addToQueue(uri: String, options: DeviceOptions): js.Promise[Response[AddToQueueResponse]] = js.native
+  
   def addTracksToPlaylist(playlistId: String, tracks: js.Array[String]): js.Promise[Response[AddTracksToPlaylistResponse]] = js.native
   def addTracksToPlaylist(playlistId: String, tracks: js.Array[String], options: PositionOptions): js.Promise[Response[AddTracksToPlaylistResponse]] = js.native
   /**
@@ -91,6 +104,7 @@ trait SpotifyWebApi extends js.Object {
     options: PositionOptions,
     callback: Callback[AddTracksToPlaylistResponse]
   ): Unit = js.native
+  
   def areFollowingPlaylist(userId: String, playlistId: String, followerIds: js.Array[String]): js.Promise[Response[UsersFollowPlaylistReponse]] = js.native
   /**
     * Check if users are following a playlist.
@@ -107,6 +121,7 @@ trait SpotifyWebApi extends js.Object {
     followerIds: js.Array[String],
     callback: Callback[UsersFollowPlaylistReponse]
   ): Unit = js.native
+  
   def authorizationCodeGrant(code: String): js.Promise[Response[AuthorizationCodeGrantResponse]] = js.native
   /**
     * Request an access token using the Authorization Code flow.
@@ -118,6 +133,7 @@ trait SpotifyWebApi extends js.Object {
     *          Not returned if a callback is given.
     */
   def authorizationCodeGrant(code: String, callback: Callback[AuthorizationCodeGrantResponse]): Unit = js.native
+  
   def changePlaylistDetails(playlistId: String): js.Promise[Response[ChangePlaylistDetailsReponse]] = js.native
   def changePlaylistDetails(playlistId: String, options: ChangePlaylistOptions): js.Promise[Response[ChangePlaylistDetailsReponse]] = js.native
   /**
@@ -134,6 +150,7 @@ trait SpotifyWebApi extends js.Object {
     options: ChangePlaylistOptions,
     callback: Callback[ChangePlaylistDetailsReponse]
   ): Unit = js.native
+  
   def clientCredentialsGrant(): js.Promise[Response[ClientCredentialsGrantResponse]] = js.native
   def clientCredentialsGrant(options: js.Object): js.Promise[Response[ClientCredentialsGrantResponse]] = js.native
   /**
@@ -145,6 +162,7 @@ trait SpotifyWebApi extends js.Object {
     *          token type and time to expiration. If rejected, it contains an error object. Not returned if a callback is given.
     */
   def clientCredentialsGrant(options: js.Object, callback: Callback[ClientCredentialsGrantResponse]): Unit = js.native
+  
   def containsMySavedAlbums(albumIds: js.Array[String]): js.Promise[Response[CheckUserSavedAlbumsResponse]] = js.native
   /**
     * Check if one or more albums is already saved in the current Spotify user’s “Your Music” library.
@@ -156,6 +174,7 @@ trait SpotifyWebApi extends js.Object {
     * Not returned if a callback is given.
     */
   def containsMySavedAlbums(albumIds: js.Array[String], callback: Callback[CheckUserSavedAlbumsResponse]): Unit = js.native
+  
   def containsMySavedTracks(trackIds: js.Array[String]): js.Promise[Response[CheckUsersSavedTracksResponse]] = js.native
   /**
     * Check if one or more tracks is already saved in the current Spotify user’s “Your Music” library.
@@ -167,6 +186,7 @@ trait SpotifyWebApi extends js.Object {
     * Not returned if a callback is given.
     */
   def containsMySavedTracks(trackIds: js.Array[String], callback: Callback[CheckUsersSavedTracksResponse]): Unit = js.native
+  
   /**
     * Retrieve a URL where the user can give the application permissions.
     * @param scopes The scopes corresponding to the permissions the application needs.
@@ -176,6 +196,7 @@ trait SpotifyWebApi extends js.Object {
     */
   def createAuthorizeURL(scopes: js.Array[String], state: String): String = js.native
   def createAuthorizeURL(scopes: js.Array[String], state: String, showDialog: Boolean): String = js.native
+  
   def createPlaylist(userId: String, playlistName: String): js.Promise[Response[CreatePlaylistResponse]] = js.native
   def createPlaylist(userId: String, playlistName: String, options: PlaylistDetailsOptions): js.Promise[Response[CreatePlaylistResponse]] = js.native
   /**
@@ -194,6 +215,7 @@ trait SpotifyWebApi extends js.Object {
     options: PlaylistDetailsOptions,
     callback: Callback[CreatePlaylistResponse]
   ): Unit = js.native
+  
   def followArtists(artistIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
   /**
     * Add the current user as a follower of one or more artists.
@@ -204,6 +226,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def followArtists(artistIds: js.Array[String], callback: Callback[Unit]): Unit = js.native
+  
   def followPlaylist(playlistId: String): js.Promise[Response[FollowPlaylistReponse]] = js.native
   def followPlaylist(playlistId: String, options: PublicOptions): js.Promise[Response[FollowPlaylistReponse]] = js.native
   /**
@@ -215,6 +238,7 @@ trait SpotifyWebApi extends js.Object {
     * it contains an error object. Not returned if a callback is given.
     */
   def followPlaylist(playlistId: String, options: PublicOptions, callback: Callback[FollowPlaylistReponse]): Unit = js.native
+  
   def followUsers(userIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
   /**
     * Add the current user as a follower of one or more other Spotify users.
@@ -225,7 +249,9 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def followUsers(userIds: js.Array[String], callback: Callback[Unit]): Unit = js.native
+  
   def getAccessToken(): js.UndefOr[String] = js.native
+  
   def getAlbum(albumId: String): js.Promise[Response[SingleAlbumResponse]] = js.native
   def getAlbum(albumId: String, options: MarketOptions): js.Promise[Response[SingleAlbumResponse]] = js.native
   /**
@@ -238,6 +264,7 @@ trait SpotifyWebApi extends js.Object {
     *          about the album. Not returned if a callback is given.
     */
   def getAlbum(albumId: String, options: MarketOptions, callback: Callback[SingleAlbumResponse]): Unit = js.native
+  
   def getAlbumTracks(albumId: String): js.Promise[Response[AlbumTracksResponse]] = js.native
   def getAlbumTracks(albumId: String, options: PaginationMarketOptions): js.Promise[Response[AlbumTracksResponse]] = js.native
   /**
@@ -251,6 +278,7 @@ trait SpotifyWebApi extends js.Object {
     *                    it contains an error object. Not returned if a callback is given.
     */
   def getAlbumTracks(albumId: String, options: PaginationMarketOptions, callback: Callback[AlbumTracksResponse]): Unit = js.native
+  
   def getAlbums(albumIds: js.Array[String]): js.Promise[Response[MultipleAlbumsResponse]] = js.native
   def getAlbums(albumIds: js.Array[String], options: MarketOptions): js.Promise[Response[MultipleAlbumsResponse]] = js.native
   /**
@@ -263,6 +291,7 @@ trait SpotifyWebApi extends js.Object {
     *          about the albums. Not returned if a callback is given.
     */
   def getAlbums(albumIds: js.Array[String], options: MarketOptions, callback: Callback[MultipleAlbumsResponse]): Unit = js.native
+  
   def getArtist(artistId: String): js.Promise[Response[SingleArtistResponse]] = js.native
   /**
     * Look up an artist.
@@ -273,6 +302,7 @@ trait SpotifyWebApi extends js.Object {
     *          about the artist. Not returned if a callback is given.
     */
   def getArtist(artistId: String, callback: Callback[SingleArtistResponse]): Unit = js.native
+  
   def getArtistAlbums(artistId: String): js.Promise[Response[ArtistsAlbumsResponse]] = js.native
   def getArtistAlbums(artistId: String, options: GetArtistAlbumsOptions): js.Promise[Response[ArtistsAlbumsResponse]] = js.native
   /**
@@ -286,6 +316,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def getArtistAlbums(artistId: String, options: GetArtistAlbumsOptions, callback: Callback[ArtistsAlbumsResponse]): Unit = js.native
+  
   def getArtistRelatedArtists(artistId: String): js.Promise[Response[ArtistsRelatedArtistsResponse]] = js.native
   /**
     * Get related artists.
@@ -296,6 +327,7 @@ trait SpotifyWebApi extends js.Object {
     *          related artists. If the promise is rejected, it contains an error object. Not returned if a callback is given.
     */
   def getArtistRelatedArtists(artistId: String, callback: Callback[ArtistsRelatedArtistsResponse]): Unit = js.native
+  
   def getArtistTopTracks(artistId: String, country: String): js.Promise[Response[ArtistsTopTracksResponse]] = js.native
   /**
     * Get an artist's top tracks.
@@ -308,6 +340,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def getArtistTopTracks(artistId: String, country: String, callback: Callback[ArtistsTopTracksResponse]): Unit = js.native
+  
   def getArtists(artistIds: js.Array[String]): js.Promise[Response[MultipleArtistsResponse]] = js.native
   /**
     * Look up several artists.
@@ -318,6 +351,7 @@ trait SpotifyWebApi extends js.Object {
     *          about the artists. Not returned if a callback is given.
     */
   def getArtists(artistIds: js.Array[String], callback: Callback[MultipleArtistsResponse]): Unit = js.native
+  
   def getAudioAnalysisForTrack(trackId: String): js.Promise[Response[AudioAnalysisResponse]] = js.native
   /**
     * Get audio analysis for a single track identified by its unique Spotify ID.
@@ -329,6 +363,7 @@ trait SpotifyWebApi extends js.Object {
     *          rejected, it contains an error object. Not returned if a callback is given.
     */
   def getAudioAnalysisForTrack(trackId: String, callback: Callback[AudioAnalysisResponse]): Unit = js.native
+  
   def getAudioFeaturesForTrack(trackId: String): js.Promise[Response[AudioFeaturesResponse]] = js.native
   /**
     * Get audio features for a single track identified by its unique Spotify ID.
@@ -340,6 +375,7 @@ trait SpotifyWebApi extends js.Object {
     *          rejected, it contains an error object. Not returned if a callback is given.
     */
   def getAudioFeaturesForTrack(trackId: String, callback: Callback[AudioFeaturesResponse]): Unit = js.native
+  
   def getAudioFeaturesForTracks(trackIds: js.Array[String]): js.Promise[Response[MultipleAudioFeaturesResponse]] = js.native
   /**
     * Get audio features for multiple tracks identified by their unique Spotify ID.
@@ -351,6 +387,7 @@ trait SpotifyWebApi extends js.Object {
     *          rejected, it contains an error object. Not returned if a callback is given.
     */
   def getAudioFeaturesForTracks(trackIds: js.Array[String], callback: Callback[MultipleAudioFeaturesResponse]): Unit = js.native
+  
   def getCategories(): js.Promise[Response[MultipleCategoriesResponse]] = js.native
   def getCategories(options: PaginationLocaleOptions): js.Promise[Response[MultipleCategoriesResponse]] = js.native
   /**
@@ -361,6 +398,7 @@ trait SpotifyWebApi extends js.Object {
     * Not returned if a callback is given.
     */
   def getCategories(options: PaginationLocaleOptions, callback: Callback[MultipleCategoriesResponse]): Unit = js.native
+  
   def getCategory(categoryId: String): js.Promise[Response[SingleCategoryResponse]] = js.native
   def getCategory(categoryId: String, options: LocaleOptions): js.Promise[Response[SingleCategoryResponse]] = js.native
   /**
@@ -372,9 +410,13 @@ trait SpotifyWebApi extends js.Object {
     * Not returned if a callback is given.
     */
   def getCategory(categoryId: String, options: LocaleOptions, callback: Callback[SingleCategoryResponse]): Unit = js.native
+  
   def getClientId(): js.UndefOr[String] = js.native
+  
   def getClientSecret(): js.UndefOr[String] = js.native
+  
   def getCredentials(): Credentials = js.native
+  
   def getFeaturedPlaylists(): js.Promise[Response[ListOfFeaturedPlaylistsResponse]] = js.native
   def getFeaturedPlaylists(options: GetFeaturedPlaylistsOptions): js.Promise[Response[ListOfFeaturedPlaylistsResponse]] = js.native
   /**
@@ -385,6 +427,7 @@ trait SpotifyWebApi extends js.Object {
     * featured playlists. Not returned if a callback is given.
     */
   def getFeaturedPlaylists(options: GetFeaturedPlaylistsOptions, callback: Callback[ListOfFeaturedPlaylistsResponse]): Unit = js.native
+  
   def getFollowedArtists(): js.Promise[Response[UsersFollowedArtistsResponse]] = js.native
   def getFollowedArtists(options: AfterOptions): js.Promise[Response[UsersFollowedArtistsResponse]] = js.native
   /**
@@ -395,6 +438,7 @@ trait SpotifyWebApi extends js.Object {
     * album objects. Not returned if a callback is given.
     */
   def getFollowedArtists(options: AfterOptions, callback: Callback[UsersFollowedArtistsResponse]): Unit = js.native
+  
   def getMe(): js.Promise[Response[CurrentUsersProfileResponse]] = js.native
   /**
     * Get information about the user that has signed in (the current user).
@@ -406,6 +450,7 @@ trait SpotifyWebApi extends js.Object {
     *          rejected, it contains an error object. Not returned if a callback is given.
     */
   def getMe(callback: Callback[CurrentUsersProfileResponse]): Unit = js.native
+  
   def getMyCurrentPlaybackState(): js.Promise[Response[CurrentPlaybackResponse]] = js.native
   def getMyCurrentPlaybackState(options: MarketOptions): js.Promise[Response[CurrentPlaybackResponse]] = js.native
   /**
@@ -416,6 +461,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def getMyCurrentPlaybackState(options: MarketOptions, callback: Callback[CurrentPlaybackResponse]): Unit = js.native
+  
   def getMyCurrentPlayingTrack(): js.Promise[Response[CurrentlyPlayingResponse]] = js.native
   def getMyCurrentPlayingTrack(options: MarketOptions): js.Promise[Response[CurrentlyPlayingResponse]] = js.native
   /**
@@ -426,6 +472,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def getMyCurrentPlayingTrack(options: MarketOptions, callback: Callback[CurrentlyPlayingResponse]): Unit = js.native
+  
   def getMyDevices(): js.Promise[Response[UserDevicesResponse]] = js.native
   /**
     * Get the Current User's Connect Devices
@@ -434,6 +481,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def getMyDevices(callback: Callback[UserDevicesResponse]): Unit = js.native
+  
   def getMyRecentlyPlayedTracks(): js.Promise[Response[UsersRecentlyPlayedTracksResponse]] = js.native
   def getMyRecentlyPlayedTracks(options: AfterOptions): js.Promise[Response[UsersRecentlyPlayedTracksResponse]] = js.native
   def getMyRecentlyPlayedTracks(options: AfterOptions, callback: Callback[UsersRecentlyPlayedTracksResponse]): Unit = js.native
@@ -446,6 +494,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def getMyRecentlyPlayedTracks(options: BeforeOptions, callback: Callback[UsersRecentlyPlayedTracksResponse]): Unit = js.native
+  
   def getMySavedAlbums(): js.Promise[Response[UsersSavedAlbumsResponse]] = js.native
   def getMySavedAlbums(options: PaginationMarketOptions): js.Promise[Response[UsersSavedAlbumsResponse]] = js.native
   /**
@@ -456,6 +505,7 @@ trait SpotifyWebApi extends js.Object {
     *          playlist album objects. Not returned if a callback is given.
     */
   def getMySavedAlbums(options: PaginationMarketOptions, callback: Callback[UsersSavedAlbumsResponse]): Unit = js.native
+  
   def getMySavedTracks(): js.Promise[Response[UsersSavedTracksResponse]] = js.native
   def getMySavedTracks(options: PaginationMarketOptions): js.Promise[Response[UsersSavedTracksResponse]] = js.native
   /**
@@ -466,6 +516,7 @@ trait SpotifyWebApi extends js.Object {
     *          playlist track objects. Not returned if a callback is given.
     */
   def getMySavedTracks(options: PaginationMarketOptions, callback: Callback[UsersSavedTracksResponse]): Unit = js.native
+  
   def getMyTopArtists(): js.Promise[Response[UsersTopArtistsResponse]] = js.native
   def getMyTopArtists(options: GetTopOptions): js.Promise[Response[UsersTopArtistsResponse]] = js.native
   /**
@@ -476,6 +527,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def getMyTopArtists(options: GetTopOptions, callback: Callback[UsersTopArtistsResponse]): Unit = js.native
+  
   def getMyTopTracks(): js.Promise[Response[UsersTopTracksResponse]] = js.native
   def getMyTopTracks(options: GetTopOptions): js.Promise[Response[UsersTopTracksResponse]] = js.native
   /**
@@ -486,6 +538,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def getMyTopTracks(options: GetTopOptions, callback: Callback[UsersTopTracksResponse]): Unit = js.native
+  
   def getNewReleases(): js.Promise[Response[ListOfNewReleasesResponse]] = js.native
   def getNewReleases(options: PaginationCountryOptions): js.Promise[Response[ListOfNewReleasesResponse]] = js.native
   /**
@@ -496,6 +549,7 @@ trait SpotifyWebApi extends js.Object {
     * album objects. Not returned if a callback is given.
     */
   def getNewReleases(options: PaginationCountryOptions, callback: Callback[ListOfNewReleasesResponse]): Unit = js.native
+  
   def getPlaylist(playlistId: String): js.Promise[Response[SinglePlaylistResponse]] = js.native
   def getPlaylist(playlistId: String, options: GetPlaylistOptions): js.Promise[Response[SinglePlaylistResponse]] = js.native
   /**
@@ -508,6 +562,7 @@ trait SpotifyWebApi extends js.Object {
     *          the playlist. If rejected, it contains an error object. Not returned if a callback is given.
     */
   def getPlaylist(playlistId: String, options: GetPlaylistOptions, callback: Callback[SinglePlaylistResponse]): Unit = js.native
+  
   def getPlaylistTracks(playlistId: String): js.Promise[Response[PlaylistTrackResponse]] = js.native
   def getPlaylistTracks(playlistId: String, options: GetPlaylistTracksOptions): js.Promise[Response[PlaylistTrackResponse]] = js.native
   /**
@@ -520,6 +575,7 @@ trait SpotifyWebApi extends js.Object {
     * the tracks in the playlist. If rejected, it contains an error object. Not returned if a callback is given.
     */
   def getPlaylistTracks(playlistId: String, options: GetPlaylistTracksOptions, callback: Callback[PlaylistTrackResponse]): Unit = js.native
+  
   def getPlaylistsForCategory(categoryId: String): js.Promise[Response[CategoryPlaylistsReponse]] = js.native
   def getPlaylistsForCategory(categoryId: String, options: PaginationCountryOptions): js.Promise[Response[CategoryPlaylistsReponse]] = js.native
   /**
@@ -535,6 +591,7 @@ trait SpotifyWebApi extends js.Object {
     options: PaginationCountryOptions,
     callback: Callback[CategoryPlaylistsReponse]
   ): Unit = js.native
+  
   def getRecommendations(): js.Promise[Response[RecommendationsFromSeedsResponse]] = js.native
   def getRecommendations(options: GetRecommendationsOptions): js.Promise[Response[RecommendationsFromSeedsResponse]] = js.native
   /**
@@ -546,8 +603,11 @@ trait SpotifyWebApi extends js.Object {
     *          a list of tracks and a list of seeds. If rejected, it contains an error object. Not returned if a callback is given.
     */
   def getRecommendations(options: GetRecommendationsOptions, callback: Callback[RecommendationsFromSeedsResponse]): Unit = js.native
+  
   def getRedirectURI(): js.UndefOr[String] = js.native
+  
   def getRefreshToken(): js.UndefOr[String] = js.native
+  
   def getTrack(trackId: String): js.Promise[Response[SingleTrackResponse]] = js.native
   def getTrack(trackId: String, options: MarketOptions): js.Promise[Response[SingleTrackResponse]] = js.native
   /**
@@ -560,6 +620,7 @@ trait SpotifyWebApi extends js.Object {
     *          about the track. Not returned if a callback is given.
     */
   def getTrack(trackId: String, options: MarketOptions, callback: Callback[SingleTrackResponse]): Unit = js.native
+  
   def getTracks(trackIds: js.Array[String]): js.Promise[Response[MultipleTracksResponse]] = js.native
   def getTracks(trackIds: js.Array[String], options: MarketOptions): js.Promise[Response[MultipleTracksResponse]] = js.native
   /**
@@ -572,6 +633,7 @@ trait SpotifyWebApi extends js.Object {
     *          about the artists. Not returned if a callback is given.
     */
   def getTracks(trackIds: js.Array[String], options: MarketOptions, callback: Callback[MultipleTracksResponse]): Unit = js.native
+  
   def getUser(userId: String): js.Promise[Response[UserProfileResponse]] = js.native
   /**
     * Get information about a user.
@@ -583,6 +645,7 @@ trait SpotifyWebApi extends js.Object {
     *          rejected, it contains an error object. Not returned if a callback is given.
     */
   def getUser(userId: String, callback: Callback[UserProfileResponse]): Unit = js.native
+  
   def getUserPlaylists(): js.Promise[Response[ListOfUsersPlaylistsResponse]] = js.native
   def getUserPlaylists(options: PaginationOptions): js.Promise[Response[ListOfUsersPlaylistsResponse]] = js.native
   def getUserPlaylists(options: PaginationOptions, callback: Callback[ListOfUsersPlaylistsResponse]): Unit = js.native
@@ -600,6 +663,7 @@ trait SpotifyWebApi extends js.Object {
     *          a list of playlists. If rejected, it contains an error object. Not returned if a callback is given.
     */
   def getUserPlaylists(userId: String, options: PaginationOptions, callback: Callback[ListOfUsersPlaylistsResponse]): Unit = js.native
+  
   def isFollowingArtists(artistIds: js.Array[String]): js.Promise[Response[UserFollowsUsersOrArtistsResponse]] = js.native
   /**
     * Check to see if the current user is following one or more artists.
@@ -612,6 +676,7 @@ trait SpotifyWebApi extends js.Object {
     *          Not returned if a callback is given.
     */
   def isFollowingArtists(artistIds: js.Array[String], callback: Callback[UserFollowsUsersOrArtistsResponse]): Unit = js.native
+  
   def isFollowingUsers(userIds: js.Array[String]): js.Promise[Response[UserFollowsUsersOrArtistsResponse]] = js.native
   /**
     * Check to see if the current user is following one or more other Spotify users.
@@ -624,6 +689,7 @@ trait SpotifyWebApi extends js.Object {
     *          Not returned if a callback is given.
     */
   def isFollowingUsers(userIds: js.Array[String], callback: Callback[UserFollowsUsersOrArtistsResponse]): Unit = js.native
+  
   def pause(): js.Promise[Response[Unit]] = js.native
   def pause(options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -635,6 +701,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def pause(options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
+  
   def play(): js.Promise[Response[Unit]] = js.native
   def play(options: PlayOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -646,6 +713,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def play(options: PlayOptions, callback: Callback[Unit]): Unit = js.native
+  
   def refreshAccessToken(): js.Promise[Response[RefreshAccessTokenResponse]] = js.native
   /**
     * Refresh the access token given that it hasn't expired.
@@ -656,6 +724,7 @@ trait SpotifyWebApi extends js.Object {
     *          Not returned if a callback is given.
     */
   def refreshAccessToken(callback: Callback[RefreshAccessTokenResponse]): Unit = js.native
+  
   def removeFromMySavedAlbums(albumIds: js.Array[String]): js.Promise[Response[RemoveAlbumsForUserResponse]] = js.native
   /**
     * Remove an album from the authenticated user's Your Music library.
@@ -665,6 +734,7 @@ trait SpotifyWebApi extends js.Object {
     * Not returned if a callback is given.
     */
   def removeFromMySavedAlbums(albumIds: js.Array[String], callback: Callback[RemoveAlbumsForUserResponse]): Unit = js.native
+  
   def removeFromMySavedTracks(trackIds: js.Array[String]): js.Promise[Response[RemoveUsersSavedTracksResponse]] = js.native
   /**
     * Remove a track from the authenticated user's Your Music library.
@@ -674,6 +744,7 @@ trait SpotifyWebApi extends js.Object {
     * Not returned if a callback is given.
     */
   def removeFromMySavedTracks(trackIds: js.Array[String], callback: Callback[RemoveUsersSavedTracksResponse]): Unit = js.native
+  
   def removeTracksFromPlaylist(playlistId: String, tracks: js.Array[Track]): js.Promise[Response[RemoveTracksFromPlaylistResponse]] = js.native
   def removeTracksFromPlaylist(playlistId: String, tracks: js.Array[Track], options: SnapshotOptions): js.Promise[Response[RemoveTracksFromPlaylistResponse]] = js.native
   /**
@@ -692,6 +763,7 @@ trait SpotifyWebApi extends js.Object {
     options: SnapshotOptions,
     callback: Callback[RemoveTracksFromPlaylistResponse]
   ): Unit = js.native
+  
   def removeTracksFromPlaylistByPosition(playlistId: String, positions: js.Array[Double], snapshotId: String): js.Promise[Response[RemoveTracksFromPlaylistResponse]] = js.native
   /**
     * Remove tracks from a playlist by position instead of specifying the tracks' URIs.
@@ -708,6 +780,7 @@ trait SpotifyWebApi extends js.Object {
     snapshotId: String,
     callback: Callback[RemoveTracksFromPlaylistResponse]
   ): Unit = js.native
+  
   def reorderTracksInPlaylist(playlistId: String, rangeStart: Double, insertBefore: Double): js.Promise[Response[ReorderPlaylistTracksResponse]] = js.native
   def reorderTracksInPlaylist(
     playlistId: String,
@@ -732,6 +805,7 @@ trait SpotifyWebApi extends js.Object {
     options: ReorderPlaylistTracksOptions,
     callback: Callback[ReorderPlaylistTracksResponse]
   ): Unit = js.native
+  
   def replaceTracksInPlaylist(playlistId: String, uris: js.Array[String]): js.Promise[Response[ReplacePlaylistTracksResponse]] = js.native
   /**
     * Replace tracks in a playlist.
@@ -742,12 +816,19 @@ trait SpotifyWebApi extends js.Object {
     * it contains an error object. Not returned if a callback is given.
     */
   def replaceTracksInPlaylist(playlistId: String, uris: js.Array[String], callback: Callback[ReplacePlaylistTracksResponse]): Unit = js.native
+  
   def resetAccessToken(): Unit = js.native
+  
   def resetClientId(): Unit = js.native
+  
   def resetClientSecret(): Unit = js.native
+  
   def resetCredentials(): Unit = js.native
+  
   def resetRedirectURI(): Unit = js.native
+  
   def resetRefreshToken(): Unit = js.native
+  
   def search(query: String, types: js.Array[SearchType]): js.Promise[Response[SearchResponse]] = js.native
   def search(query: String, types: js.Array[SearchType], options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
   /**
@@ -768,6 +849,7 @@ trait SpotifyWebApi extends js.Object {
     options: SearchOptions,
     callback: Callback[SearchResponse]
   ): Unit = js.native
+  
   def searchAlbums(query: String): js.Promise[Response[SearchResponse]] = js.native
   def searchAlbums(query: String, options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
   /**
@@ -781,6 +863,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def searchAlbums(query: String, options: SearchOptions, callback: Callback[SearchResponse]): Unit = js.native
+  
   def searchArtists(query: String): js.Promise[Response[SearchResponse]] = js.native
   def searchArtists(query: String, options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
   /**
@@ -794,6 +877,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def searchArtists(query: String, options: SearchOptions, callback: Callback[SearchResponse]): Unit = js.native
+  
   def searchPlaylists(query: String): js.Promise[Response[SearchResponse]] = js.native
   def searchPlaylists(query: String, options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
   /**
@@ -807,6 +891,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def searchPlaylists(query: String, options: SearchOptions, callback: Callback[SearchResponse]): Unit = js.native
+  
   def searchTracks(query: String): js.Promise[Response[SearchResponse]] = js.native
   def searchTracks(query: String, options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
   /**
@@ -820,6 +905,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def searchTracks(query: String, options: SearchOptions, callback: Callback[SearchResponse]): Unit = js.native
+  
   def seek(positionMs: Double): js.Promise[Response[Unit]] = js.native
   def seek(positionMs: Double, options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -832,12 +918,19 @@ trait SpotifyWebApi extends js.Object {
     * @returns Null if a callback is provided, a Promise otherwise
     */
   def seek(positionMs: Double, options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
+  
   def setAccessToken(accessToken: String): Unit = js.native
+  
   def setClientId(clientId: String): Unit = js.native
+  
   def setClientSecret(clientSecret: String): Unit = js.native
+  
   def setCredentials(credentials: Credentials): Unit = js.native
+  
   def setRedirectURI(redirectUri: String): Unit = js.native
+  
   def setRefreshToken(refreshToken: String): Unit = js.native
+  
   def setRepeat(): js.Promise[Response[Unit]] = js.native
   def setRepeat(options: RepeatOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -849,6 +942,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def setRepeat(options: RepeatOptions, callback: Callback[Unit]): Unit = js.native
+  
   def setShuffle(): js.Promise[Response[Unit]] = js.native
   def setShuffle(options: ShuffleOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -860,6 +954,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def setShuffle(options: ShuffleOptions, callback: Callback[Unit]): Unit = js.native
+  
   def setVolume(volumePercent: Double): js.Promise[Response[Unit]] = js.native
   def setVolume(volumePercent: Double, options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -872,6 +967,7 @@ trait SpotifyWebApi extends js.Object {
     * @returns nothing if callback is provided, a Promise otherwise
     */
   def setVolume(volumePercent: Double, options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
+  
   def skipToNext(): js.Promise[Response[Unit]] = js.native
   /**
     * Skip the Current User's Playback To Next Track
@@ -881,6 +977,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def skipToNext(callback: Callback[Unit]): Unit = js.native
+  
   def skipToPrevious(): js.Promise[Response[Unit]] = js.native
   /**
     * Skip the Current User's Playback To Previous Track
@@ -890,6 +987,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def skipToPrevious(callback: Callback[Unit]): Unit = js.native
+  
   def transferMyPlayback(): js.Promise[Response[Unit]] = js.native
   def transferMyPlayback(options: TransferPlaybackOptions): js.Promise[Response[Unit]] = js.native
   /**
@@ -900,6 +998,7 @@ trait SpotifyWebApi extends js.Object {
     *          otherwise an error. Not returned if a callback is given.
     */
   def transferMyPlayback(options: TransferPlaybackOptions, callback: Callback[Unit]): Unit = js.native
+  
   def unfollowArtists(artistIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
   /**
     * Remove the current user as a follower of one or more artists.
@@ -910,6 +1009,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def unfollowArtists(artistIds: js.Array[String], callback: Callback[Unit]): Unit = js.native
+  
   def unfollowPlaylist(playlistId: String): js.Promise[Response[UnfollowPlaylistReponse]] = js.native
   /**
     * Unfollow a playlist.
@@ -920,6 +1020,7 @@ trait SpotifyWebApi extends js.Object {
     * it contains an error object. Not returned if a callback is given.
     */
   def unfollowPlaylist(playlistId: String, callback: Callback[UnfollowPlaylistReponse]): Unit = js.native
+  
   def unfollowUsers(userIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
   /**
     * Remove the current user as a follower of one or more other Spotify users.
@@ -930,6 +1031,7 @@ trait SpotifyWebApi extends js.Object {
     *          it contains an error object. Not returned if a callback is given.
     */
   def unfollowUsers(userIds: js.Array[String], callback: Callback[Unit]): Unit = js.native
+  
   def uploadCustomPlaylistCoverImage(playlistId: String, base64URI: String): js.Promise[Response[UploadCustomPlaylistCoverImageReponse]] = js.native
   /**
     * Replace the image used to represent a specific playlist.
@@ -942,4 +1044,3 @@ trait SpotifyWebApi extends js.Object {
     */
   def uploadCustomPlaylistCoverImage(playlistId: String, base64URI: String, callback: Callback[UploadCustomPlaylistCoverImageReponse]): Unit = js.native
 }
-

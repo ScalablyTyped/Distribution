@@ -12,7 +12,7 @@ Give users a great experience best suited to their device and network constraint
 | Keywords           | react-hooks, hooks, react, performance |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 9116 |
+| # downloads        | 87461 |
 | # stars            | 0 |
 
 ## Links

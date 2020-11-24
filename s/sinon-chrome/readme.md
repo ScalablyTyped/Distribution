@@ -10,9 +10,9 @@ Mock of chrome extensions API for unit testing under nodejs
 | ------------------ | :-------------: |
 | Full name          | sinon-chrome |
 | Keywords           | chrome, firefox, extensions, apps, test, tdd, webextensions, chrome api, sinon |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 194244 |
+| # downloads        | 305763 |
 | # stars            | 4 |
 
 ## Links

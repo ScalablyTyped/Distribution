@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__snackbar
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the web snackbar component
@@ -10,9 +10,9 @@ The Material Components for the web snackbar component
 | ------------------ | :-------------: |
 | Full name          | @material/snackbar |
 | Keywords           | material components, material design, snackbar |
-| # releases         | 159 |
-| # dependents       | 44 |
-| # downloads        | 1302733 |
+| # releases         | 617 |
+| # dependents       | 48 |
+| # downloads        | 1832625 |
 | # stars            | 0 |
 
 ## Links

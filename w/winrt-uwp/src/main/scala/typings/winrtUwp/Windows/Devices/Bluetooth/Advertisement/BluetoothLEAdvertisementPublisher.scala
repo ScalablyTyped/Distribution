@@ -6,21 +6,12 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statuschanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object to send Bluetooth Low Energy (LE) advertisements. */
 @js.native
 trait BluetoothLEAdvertisementPublisher extends js.Object {
-  /** Gets a copy of the Bluetooth LE advertisement to publish. */
-  var advertisement: BluetoothLEAdvertisement = js.native
-  /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
-  @JSName("onstatuschanged")
-  var onstatuschanged_Original: TypedEventHandler[
-    BluetoothLEAdvertisementPublisher, 
-    BluetoothLEAdvertisementPublisherStatusChangedEventArgs
-  ] = js.native
-  /** Gets the current status of the BluetoothLEAdvertisementPublisher . */
-  var status: BluetoothLEAdvertisementPublisherStatus = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statuschanged(
@@ -30,10 +21,21 @@ trait BluetoothLEAdvertisementPublisher extends js.Object {
       BluetoothLEAdvertisementPublisherStatusChangedEventArgs
     ]
   ): Unit = js.native
+  
+  /** Gets a copy of the Bluetooth LE advertisement to publish. */
+  var advertisement: BluetoothLEAdvertisement = js.native
+  
   /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
   def onstatuschanged(
     ev: BluetoothLEAdvertisementPublisherStatusChangedEventArgs with WinRTEvent[BluetoothLEAdvertisementPublisher]
   ): Unit = js.native
+  /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
+  @JSName("onstatuschanged")
+  var onstatuschanged_Original: TypedEventHandler[
+    BluetoothLEAdvertisementPublisher, 
+    BluetoothLEAdvertisementPublisherStatusChangedEventArgs
+  ] = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statuschanged(
@@ -43,9 +45,13 @@ trait BluetoothLEAdvertisementPublisher extends js.Object {
       BluetoothLEAdvertisementPublisherStatusChangedEventArgs
     ]
   ): Unit = js.native
+  
   /** Start advertising a Bluetooth LE advertisement payload. */
   def start(): Unit = js.native
+  
+  /** Gets the current status of the BluetoothLEAdvertisementPublisher . */
+  var status: BluetoothLEAdvertisementPublisherStatus = js.native
+  
   /** Stop the publisher and stop advertising a Bluetooth LE advertisement payload. */
   def stop(): Unit = js.native
 }
-

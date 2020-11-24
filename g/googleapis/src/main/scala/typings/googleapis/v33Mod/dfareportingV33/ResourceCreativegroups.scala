@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Creativegroups")
 @js.native
 class ResourceCreativegroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.creativeGroups.get
     * @desc Gets one creative group by ID.
@@ -42,6 +44,7 @@ class ResourceCreativegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeGroups.insert
     * @desc Inserts a new creative group.
@@ -71,6 +74,7 @@ class ResourceCreativegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeGroups.list
     * @desc Retrieves a list of creative groups, possibly filtered. This method
@@ -111,6 +115,7 @@ class ResourceCreativegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroupsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeGroups.patch
     * @desc Updates an existing creative group. This method supports patch
@@ -142,6 +147,7 @@ class ResourceCreativegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeGroups.update
     * @desc Updates an existing creative group.
@@ -172,4 +178,3 @@ class ResourceCreativegroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
 }
-

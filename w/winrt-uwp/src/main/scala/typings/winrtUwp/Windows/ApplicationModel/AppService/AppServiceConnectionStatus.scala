@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.AppService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppServiceConnectionStatus extends js.Object
-
 /** Describes the status for the attempt that an app makes to open a connection to an app service by calling the AppServiceConnection.OpenAsync method. */
 @JSGlobal("Windows.ApplicationModel.AppService.AppServiceConnectionStatus")
 @js.native
 object AppServiceConnectionStatus extends js.Object {
+  
   /** The package for the app service to which a connection was attempted is not installed on the device. Check that the package is installed before trying to open a connection to the app service. */
   @js.native
   sealed trait appNotInstalled extends AppServiceConnectionStatus
@@ -30,6 +30,4 @@ object AppServiceConnectionStatus extends js.Object {
   /** An unknown error occurred. */
   @js.native
   sealed trait unknown extends AppServiceConnectionStatus
-  
 }
-

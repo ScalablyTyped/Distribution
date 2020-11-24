@@ -10,9 +10,9 @@ SMTP Server and Web Interface for reading and testing emails during development
 | ------------------ | :-------------: |
 | Full name          | maildev |
 | Keywords           | email, e-mail, mail, maildev, mailcatcher, testing, development, smtp |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 7 |
-| # downloads        | 435375 |
+| # downloads        | 915596 |
 | # stars            | 20 |
 
 ## Links

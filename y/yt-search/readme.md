@@ -1,7 +1,7 @@
 
 # Scala.js typings for yt-search
 
-Typings are for version 2.0
+Typings are for version 2.3
 
 ## Library description:
 search youtube
@@ -10,9 +10,9 @@ search youtube
 | ------------------ | :-------------: |
 | Full name          | yt-search |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 7 |
-| # downloads        | 74807 |
+| # releases         | 39 |
+| # dependents       | 17 |
+| # downloads        | 246376 |
 | # stars            | 0 |
 
 ## Links

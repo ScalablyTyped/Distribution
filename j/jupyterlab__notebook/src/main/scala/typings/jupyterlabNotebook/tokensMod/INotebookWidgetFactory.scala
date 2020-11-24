@@ -5,9 +5,8 @@ import typings.jupyterlabNotebook.widgetfactoryMod.NotebookWidgetFactory.IFactor
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/notebook/lib/tokens", "INotebookWidgetFactory")
 @js.native
 object INotebookWidgetFactory extends TopLevel[Token[IFactory]]
-

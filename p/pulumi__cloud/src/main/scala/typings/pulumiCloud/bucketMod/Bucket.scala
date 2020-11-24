@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Bucket extends js.Object {
+  
   /**
     * Delete a blob from the bucket.
     *
@@ -15,6 +16,7 @@ trait Bucket extends js.Object {
     * @returns A promise for the success or failure of the delete.
     */
   def delete(key: String): js.Promise[Unit] = js.native
+  
   /**
     * Get a blob from the bucket.
     *
@@ -22,6 +24,7 @@ trait Bucket extends js.Object {
     * @returns A promise for the success or failure of the get.
     */
   def get(key: String): js.Promise[Buffer] = js.native
+  
   /**
     * Registers a handler to be notified when blobs are deleted from the bucket.
     *
@@ -31,6 +34,7 @@ trait Bucket extends js.Object {
     */
   def onDelete(name: String, handler: BucketHandler): Unit = js.native
   def onDelete(name: String, handler: BucketHandler, filter: BucketFilter): Unit = js.native
+  
   /**
     * Registers a handler to be notified when blobs are put into the bucket (created or updated).
     *
@@ -40,6 +44,7 @@ trait Bucket extends js.Object {
     */
   def onPut(name: String, handler: BucketHandler): Unit = js.native
   def onPut(name: String, handler: BucketHandler, filter: BucketFilter): Unit = js.native
+  
   /**
     * Insert a blob into the bucket.
     *
@@ -48,8 +53,6 @@ trait Bucket extends js.Object {
     */
   def put(key: String, contents: Buffer): js.Promise[Unit] = js.native
 }
-
 @JSImport("@pulumi/cloud/bucket", "Bucket")
 @js.native
 object Bucket extends TopLevel[BucketConstructor]
-

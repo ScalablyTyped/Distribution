@@ -3,14 +3,14 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.data.Manager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPanoramaConnectionMarker
   extends IPanoramaConnection
      with IPanoramaMarker
-
 object IPanoramaConnectionMarker {
+  
   @scala.inline
   def apply(
     getConnectedPanorama: () => js.Promise[IPanorama],
@@ -23,4 +23,3 @@ object IPanoramaConnectionMarker {
     __obj.asInstanceOf[IPanoramaConnectionMarker]
   }
 }
-

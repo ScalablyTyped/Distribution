@@ -11,10 +11,11 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GotEmitter extends js.Object {
+  
   @JSName("addListener")
   def addListener_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
   @JSName("addListener")
@@ -42,6 +43,7 @@ trait GotEmitter extends js.Object {
   def addListener_response(event: response, listener: js.Function1[/* res */ IncomingMessage, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_uploadProgress(event: uploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
+  
   @JSName("on")
   def on_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
   @JSName("on")
@@ -69,6 +71,7 @@ trait GotEmitter extends js.Object {
   def on_response(event: response, listener: js.Function1[/* res */ IncomingMessage, Unit]): this.type = js.native
   @JSName("on")
   def on_uploadProgress(event: uploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
   @JSName("once")
@@ -96,6 +99,7 @@ trait GotEmitter extends js.Object {
   def once_response(event: response, listener: js.Function1[/* res */ IncomingMessage, Unit]): this.type = js.native
   @JSName("once")
   def once_uploadProgress(event: uploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -123,6 +127,7 @@ trait GotEmitter extends js.Object {
   def prependListener_response(event: response, listener: js.Function1[/* res */ IncomingMessage, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_uploadProgress(event: uploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -150,6 +155,7 @@ trait GotEmitter extends js.Object {
   def prependOnceListener_response(event: response, listener: js.Function1[/* res */ IncomingMessage, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_uploadProgress(event: uploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -178,4 +184,3 @@ trait GotEmitter extends js.Object {
   @JSName("removeListener")
   def removeListener_uploadProgress(event: uploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/notebook-extension" : "2.1.2"
+      "@jupyterlab/notebook-extension" : "2.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/notebook-extension" : "2.1.2"
+      "@jupyterlab/notebook-extension" : "2.2.7"
     }
   ],
   "compile-devDependencies" : [

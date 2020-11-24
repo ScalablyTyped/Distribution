@@ -11,8 +11,8 @@ Escape and stringify an array of arguments to be executed on the shell
 | Full name          | shell-escape |
 | Keywords           | shell, escape, bash, escapeshellarg |
 | # releases         | 0 |
-| # dependents       | 154 |
-| # downloads        | 3356866 |
+| # dependents       | 171 |
+| # downloads        | 3870612 |
 | # stars            | 4 |
 
 ## Links

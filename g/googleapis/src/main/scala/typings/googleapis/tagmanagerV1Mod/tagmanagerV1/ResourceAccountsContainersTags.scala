@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Tags")
 @js.native
 class ResourceAccountsContainersTags protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.tags.create
     * @desc Creates a GTM Tag.
@@ -43,6 +45,7 @@ class ResourceAccountsContainersTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTag]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.tags.delete
     * @desc Deletes a GTM Tag.
@@ -73,6 +76,7 @@ class ResourceAccountsContainersTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.tags.get
     * @desc Gets a GTM Tag.
@@ -103,6 +107,7 @@ class ResourceAccountsContainersTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTag]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.tags.list
     * @desc Lists all GTM Tags of a Container.
@@ -135,6 +140,7 @@ class ResourceAccountsContainersTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTagsResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.tags.update
     * @desc Updates a GTM Tag.
@@ -168,4 +174,3 @@ class ResourceAccountsContainersTags protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTag]
   ): Unit = js.native
 }
-

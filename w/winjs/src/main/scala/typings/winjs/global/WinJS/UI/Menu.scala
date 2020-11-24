@@ -3,7 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a menu flyout for displaying commands.
@@ -23,14 +23,13 @@ class Menu ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.Menu")
 @js.native
 object Menu extends js.Object {
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

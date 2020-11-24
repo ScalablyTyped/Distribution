@@ -2,7 +2,7 @@ package typings.awsSdk.codestarconnectionsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/codestarconnections", JSImport.Namespace)
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends CodeStarconnections {
   def this(options: ClientConfiguration) = this()
 }
-

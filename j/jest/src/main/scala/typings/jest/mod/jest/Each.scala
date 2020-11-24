@@ -3,10 +3,11 @@ package typings.jest.mod.jest
 import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Each extends js.Object {
+  
   def apply(cases: js.Array[js.Array[_]]): js.Function3[
     /* name */ String, 
     /* fn */ js.Function1[/* repeated */ js.Any, _], 
@@ -20,4 +21,3 @@ trait Each extends js.Object {
     Unit
   ] = js.native
 }
-

@@ -3,12 +3,12 @@ package typings.officeUiFabricReact.mod
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "initializeFocusRects")
 @js.native
 object initializeFocusRects extends js.Object {
+  
   def apply(): Unit = js.native
   def apply(window: Window): Unit = js.native
 }
-

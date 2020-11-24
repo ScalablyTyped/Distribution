@@ -3,13 +3,12 @@ package typings.protobufjsCodegen
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@protobufjs/codegen", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /** When set to `true`, codegen will log generated code to console. Useful for debugging. */
-  var verbose: Boolean = js.native
+  
   /**
     * Begins generating a function.
     * @param [functionName] Function name if not anonymous
@@ -25,6 +24,10 @@ object mod extends js.Object {
     */
   def apply(functionParams: js.Array[String]): Codegen = js.native
   def apply(functionParams: js.Array[String], functionName: String): Codegen = js.native
+  
+  /** When set to `true`, codegen will log generated code to console. Useful for debugging. */
+  var verbose: Boolean = js.native
+  
   /**
     * Appends code to the function's body.
     * @param [formatStringOrScope] Format string or, to finish the function, an object of additional scope variables, if any
@@ -38,4 +41,3 @@ object mod extends js.Object {
     (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @protobufjs/codegen.@protobufjs/codegen.Codegen */ js.Object) | js.Function
   ]
 }
-

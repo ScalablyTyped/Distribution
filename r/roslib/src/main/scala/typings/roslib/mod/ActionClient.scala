@@ -3,7 +3,7 @@ package typings.roslib.mod
 import typings.roslib.anon.ActionName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "ActionClient")
 @js.native
@@ -25,9 +25,9 @@ class ActionClient protected () extends js.Object {
     *   * timeout - the timeout length when connecting to the action server
     */
   def this(options: ActionName) = this()
+  
   /**
     * Cancel all goals associated with this ActionClient.
     */
   def cancel(): Unit = js.native
 }
-

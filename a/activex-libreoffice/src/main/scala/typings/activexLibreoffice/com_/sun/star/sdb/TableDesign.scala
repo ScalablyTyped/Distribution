@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements a component which allows the creation of tables.
@@ -27,8 +27,8 @@ import scala.scalajs.js.annotation._
 trait TableDesign
   extends XController
      with XInitialization
-
 object TableDesign {
+  
   @scala.inline
   def apply(
     Frame: XFrame,
@@ -53,4 +53,3 @@ object TableDesign {
     __obj.asInstanceOf[TableDesign]
   }
 }
-

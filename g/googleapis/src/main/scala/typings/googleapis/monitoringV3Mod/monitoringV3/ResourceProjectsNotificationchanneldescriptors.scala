@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Notificationchanneldescriptors")
 @js.native
 class ResourceProjectsNotificationchanneldescriptors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.notificationChannelDescriptors.get
     * @desc Gets a single channel descriptor. The descriptor indicates which
@@ -46,6 +48,7 @@ class ResourceProjectsNotificationchanneldescriptors protected () extends js.Obj
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationChannelDescriptor]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannelDescriptors.list
     * @desc Lists the descriptors for supported channel types. The use of
@@ -82,4 +85,3 @@ class ResourceProjectsNotificationchanneldescriptors protected () extends js.Obj
     callback: BodyResponseCallback[SchemaListNotificationChannelDescriptorsResponse]
   ): Unit = js.native
 }
-

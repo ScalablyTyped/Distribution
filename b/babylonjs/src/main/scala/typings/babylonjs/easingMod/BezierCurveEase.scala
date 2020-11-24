@@ -2,7 +2,7 @@ package typings.babylonjs.easingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/easing", "BezierCurveEase")
 @js.native
@@ -19,9 +19,39 @@ class BezierCurveEase () extends EasingFunction {
   x1: Double) = this()
   def this(
     /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
   x1: Double,
     /** Defines the y component of the start tangent in the bezier curve */
   y1: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: js.UndefOr[scala.Nothing],
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: Double,
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: Double,
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: js.UndefOr[scala.Nothing],
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: Double
   ) = this()
   def this(
     /** Defines the x component of the start tangent in the bezier curve */
@@ -33,6 +63,76 @@ class BezierCurveEase () extends EasingFunction {
   ) = this()
   def this(
     /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: js.UndefOr[scala.Nothing],
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: js.UndefOr[scala.Nothing],
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: Double,
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: Double,
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: Double,
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: Double,
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: Double,
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: js.UndefOr[scala.Nothing],
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: Double,
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: js.UndefOr[scala.Nothing],
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: Double,
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
+  x1: Double,
+    /** Defines the y component of the start tangent in the bezier curve */
+  y1: Double,
+    /** Defines the x component of the end tangent in the bezier curve */
+  x2: js.UndefOr[scala.Nothing],
+    /** Defines the y component of the end tangent in the bezier curve */
+  y2: Double
+  ) = this()
+  def this(
+    /** Defines the x component of the start tangent in the bezier curve */
   x1: Double,
     /** Defines the y component of the start tangent in the bezier curve */
   y1: Double,
@@ -41,13 +141,16 @@ class BezierCurveEase () extends EasingFunction {
     /** Defines the y component of the end tangent in the bezier curve */
   y2: Double
   ) = this()
+  
   /** Defines the x component of the start tangent in the bezier curve */
   var x1: Double = js.native
+  
   /** Defines the x component of the end tangent in the bezier curve */
   var x2: Double = js.native
+  
   /** Defines the y component of the start tangent in the bezier curve */
   var y1: Double = js.native
+  
   /** Defines the y component of the end tangent in the bezier curve */
   var y2: Double = js.native
 }
-

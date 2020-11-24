@@ -9,10 +9,10 @@ Escape RegExp special characters
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | escape-string-regexp |
-| Keywords           | escape, regex, regexp, re, regular, expression, string, str, special, characters |
-| # releases         | 2 |
-| # dependents       | 1202 |
-| # downloads        | 546220243 |
+| Keywords           | escape, regex, regexp, regular, expression, string, special, characters |
+| # releases         | 4 |
+| # dependents       | 1443 |
+| # downloads        | 845914857 |
 | # stars            | 36 |
 
 ## Links

@@ -5,9 +5,16 @@ import typings.tstl.colorMod.Color
 import typings.tstl.lockTypeMod.LockType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tstlNumbers {
+  
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  
   @js.native
   sealed trait `0`
     extends AccessType
@@ -19,10 +26,4 @@ object tstlNumbers {
     extends AccessType
        with Color
        with LockType
-  
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
 }
-

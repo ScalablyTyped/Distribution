@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sindresorhus/fnv1a" : "2.0.0"
+      "@sindresorhus/fnv1a" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@sindresorhus/fnv1a" : "2.0.0"
+      "@sindresorhus/fnv1a" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

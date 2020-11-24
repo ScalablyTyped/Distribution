@@ -10,9 +10,9 @@ A React wrapper component around signature_pad. Unopinionated and heavily update
 | ------------------ | :-------------: |
 | Full name          | react-signature-canvas |
 | Keywords           | react, react-component, component, signature, sign, e-sign, e-signature, canvas, trim, whitespace, draw, pad, wrapper, signature-pad, react-signature-pad |
-| # releases         | 12 |
-| # dependents       | 22 |
-| # downloads        | 760733 |
+| # releases         | 8 |
+| # dependents       | 36 |
+| # downloads        | 1372420 |
 | # stars            | 2 |
 
 ## Links

@@ -3,30 +3,27 @@ package typings.zmq.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zmq", "Socket")
 @js.native
 class Socket () extends EventEmitter {
+  
   // Socket Options
   var _fd: js.Any = js.native
+  
   var _ioevents: js.Any = js.native
+  
   var _receiveMore: js.Any = js.native
+  
   var _subscribe: js.Any = js.native
+  
   var _unsubscribe: js.Any = js.native
+  
   var affinity: js.Any = js.native
-  var hwm: js.Any = js.native
-  var identity: js.Any = js.native
-  var last_endpoint: js.Any = js.native
-  var linger: js.Any = js.native
-  var mcast_loop: js.Any = js.native
-  var rate: js.Any = js.native
-  var rcvbuf: js.Any = js.native
-  var reconnect_ivl: js.Any = js.native
-  var recovery_ivl: js.Any = js.native
-  var sndbuf: js.Any = js.native
-  var swap: js.Any = js.native
+  
   def backlog(): js.Any = js.native
+  
   /**
     * Async bind.
     *
@@ -37,29 +34,34 @@ class Socket () extends EventEmitter {
     */
   def bind(addr: String): Socket = js.native
   def bind(addr: String, callback: js.Function1[/* error */ String, Unit]): Socket = js.native
+  
   /**
     * Sync bind.
     *
     * @param addr Socket address
     */
   def bindSync(addr: String): Socket = js.native
+  
   /**
     * Close the socket.
     *
     */
   def close(): Socket = js.native
+  
   /**
     * Connect to `addr`.
     *
     * @param addr Connection address
     */
   def connect(addr: String): Socket = js.native
+  
   /**
     * Disconnect from `addr`.
     *
     * @param addr The address
     */
   def disconnect(addr: String): Socket = js.native
+  
   /**
     * Get socket `opt`.
     *
@@ -72,6 +74,17 @@ class Socket () extends EventEmitter {
     * @param opt Option number
     */
   def getsocketopt(opt: Double): js.Any = js.native
+  
+  var hwm: js.Any = js.native
+  
+  var identity: js.Any = js.native
+  
+  var last_endpoint: js.Any = js.native
+  
+  var linger: js.Any = js.native
+  
+  var mcast_loop: js.Any = js.native
+  
   /**
     * Enable monitoring of a Socket
     *
@@ -80,14 +93,26 @@ class Socket () extends EventEmitter {
     */
   def monitor(): Socket = js.native
   def monitor(interval: Double): Socket = js.native
+  
   /**
     * Socket event
     * @param eventName {string}
     * @param callback {Function}
     */
   def on(eventName: String, callback: js.Function1[/* repeated */ Buffer, Unit]): Unit = js.native
+  
   def pause(): Unit = js.native
+  
+  var rate: js.Any = js.native
+  
+  var rcvbuf: js.Any = js.native
+  
+  var reconnect_ivl: js.Any = js.native
+  
+  var recovery_ivl: js.Any = js.native
+  
   def resume(): Unit = js.native
+  
   /**
     * Send the given `msg`.
     *
@@ -112,6 +137,7 @@ class Socket () extends EventEmitter {
     */
   def send(msg: Buffer): Socket = js.native
   def send(msg: Buffer, flags: Double): Socket = js.native
+  
   /**
     * Set `opt` to `val`.
     *
@@ -126,12 +152,18 @@ class Socket () extends EventEmitter {
     * @param val Value
     */
   def setsocketopt(opt: Double, `val`: js.Any): Socket = js.native
+  
+  var sndbuf: js.Any = js.native
+  
   /**
     * Subscribe with the given `filter`.
     *
     * @param filter The filter
     */
   def subscribe(filter: String): Socket = js.native
+  
+  var swap: js.Any = js.native
+  
   /**
     * Async unbind.
     *
@@ -142,12 +174,14 @@ class Socket () extends EventEmitter {
     */
   def unbind(addr: String): Socket = js.native
   def unbind(addr: String, callback: js.Function1[/* error */ String, Unit]): Socket = js.native
+  
   /**
     * Sync unbind.
     *
     * @param addr Socket address
     */
   def unbindSync(addr: String): Socket = js.native
+  
   /**
     * Unsubscribe with the given `filter`.
     *
@@ -155,4 +189,3 @@ class Socket () extends EventEmitter {
     */
   def unsubscribe(filter: String): Socket = js.native
 }
-

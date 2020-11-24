@@ -22,11 +22,12 @@ import typings.reactNativeNavigation.nativeEventsReceiverMod.NativeEventsReceive
 import typings.reactNativeNavigation.navigationComponentListenerMod.NavigationComponentListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-navigation/lib/dist/events/EventsRegistry", JSImport.Namespace)
 @js.native
 object eventsRegistryMod extends js.Object {
+  
   @js.native
   class EventsRegistry protected () extends js.Object {
     def this(
@@ -34,28 +35,46 @@ object eventsRegistryMod extends js.Object {
       commandsObserver: CommandsObserver,
       componentEventsObserver: ComponentEventsObserver
     ) = this()
-    var commandsObserver: js.Any = js.native
-    var componentEventsObserver: js.Any = js.native
-    var nativeEventsReceiver: js.Any = js.native
+    
     def bindComponent(component: Component[_, js.Object, _]): EventSubscription = js.native
     def bindComponent(component: Component[_, js.Object, _], componentId: String): EventSubscription = js.native
+    
+    var commandsObserver: js.Any = js.native
+    
+    var componentEventsObserver: js.Any = js.native
+    
+    var nativeEventsReceiver: js.Any = js.native
+    
     def registerAppLaunchedListener(callback: js.Function0[Unit]): EmitterSubscription = js.native
+    
     def registerBottomTabLongPressedListener(callback: js.Function1[/* event */ BottomTabLongPressedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerBottomTabPressedListener(callback: js.Function1[/* event */ BottomTabPressedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerBottomTabSelectedListener(callback: js.Function1[/* event */ BottomTabSelectedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerCommandCompletedListener(callback: js.Function1[/* event */ CommandCompletedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerCommandListener(callback: js.Function2[/* name */ String, /* params */ js.Any, Unit]): EventSubscription = js.native
+    
     def registerComponentDidAppearListener(callback: js.Function1[/* event */ ComponentDidAppearEvent, Unit]): EmitterSubscription = js.native
+    
     def registerComponentDidDisappearListener(callback: js.Function1[/* event */ ComponentDidDisappearEvent, Unit]): EmitterSubscription = js.native
+    
     def registerComponentListener(listener: NavigationComponentListener, componentId: String): EventSubscription = js.native
+    
     def registerModalAttemptedToDismissListener(callback: js.Function1[/* event */ ModalAttemptedToDismissEvent, Unit]): EmitterSubscription = js.native
+    
     def registerModalDismissedListener(callback: js.Function1[/* event */ ModalDismissedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerNavigationButtonPressedListener(callback: js.Function1[/* event */ NavigationButtonPressedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerPreviewCompletedListener(callback: js.Function1[/* event */ PreviewCompletedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerScreenPoppedListener(callback: js.Function1[/* event */ ScreenPoppedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerSearchBarCancelPressedListener(callback: js.Function1[/* event */ SearchBarCancelPressedEvent, Unit]): EmitterSubscription = js.native
+    
     def registerSearchBarUpdatedListener(callback: js.Function1[/* event */ SearchBarUpdatedEvent, Unit]): EmitterSubscription = js.native
   }
-  
 }
-

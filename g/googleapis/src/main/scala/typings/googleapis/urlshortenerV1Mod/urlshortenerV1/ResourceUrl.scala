@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/urlshortener/v1", "urlshortener_v1.Resource$Url")
 @js.native
 class ResourceUrl protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * urlshortener.url.get
     * @desc Expands a short URL or gets creation time and analytics.
@@ -38,6 +40,7 @@ class ResourceUrl protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceUrlGet, options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
   def get(params: ParamsResourceUrlGet, options: MethodOptions, callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
+  
   /**
     * urlshortener.url.insert
     * @desc Creates a new short URL.
@@ -62,6 +65,7 @@ class ResourceUrl protected () extends js.Object {
   ): Unit = js.native
   def insert(params: ParamsResourceUrlInsert, options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
   def insert(params: ParamsResourceUrlInsert, options: MethodOptions, callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
+  
   /**
     * urlshortener.url.list
     * @desc Retrieves a list of URLs shortened by a user.
@@ -92,4 +96,3 @@ class ResourceUrl protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUrlHistory]
   ): Unit = js.native
 }
-

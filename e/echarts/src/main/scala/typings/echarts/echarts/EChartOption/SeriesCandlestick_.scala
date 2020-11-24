@@ -8,7 +8,7 @@ import typings.echarts.anon.`3`
 import typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A
@@ -54,6 +54,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesCandlestick_ extends js.Object {
+  
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -70,6 +71,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -82,6 +84,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -94,6 +97,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.native
+  
   /**
     * Specify bar max width.
     * Absolute value (like `10`) or percentage (like `'20%'`, according
@@ -103,6 +107,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.barMaxWidth
     */
   var barMaxWidth: js.UndefOr[Double] = js.native
+  
   /**
     * Specify bar min width.
     * Absolute value (like `10`) or percentage (like `'20%'`, according
@@ -112,6 +117,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.barMinWidth
     */
   var barMinWidth: js.UndefOr[Double] = js.native
+  
   /**
     * Specify bar width.
     * Absolute value (like `10`) or percentage (like `'20%'`, according
@@ -121,6 +127,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.barWidth
     */
   var barWidth: js.UndefOr[Double] = js.native
+  
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -139,6 +146,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.native
+  
   /**
     * Data should be the two-dimensional array shown as follow.
     *
@@ -153,6 +161,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.data
     */
   var data: js.UndefOr[js.Array[js.Array[Double | DataObject]]] = js.native
+  
   /**
     * `dimensions` can be used to define dimension info for `series.data`
     * or `dataset.source`.
@@ -201,6 +210,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.dimensions
     */
   var dimensions: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * Emphasis style of candlestick.
     *
@@ -208,6 +218,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.emphasis
     */
   var emphasis: js.UndefOr[`3`] = js.native
+  
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -245,6 +256,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.encode
     */
   var encode: js.UndefOr[js.Object] = js.native
+  
   /**
     * Whether to enable animitation when hovering on box.
     *
@@ -254,6 +266,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -263,6 +276,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.id
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Item style of candlestick.
     *
@@ -270,6 +284,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.itemStyle
     */
   var itemStyle: js.UndefOr[BorderColor0] = js.native
+  
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -286,6 +301,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.large
     */
   var large: js.UndefOr[Boolean] = js.native
+  
   /**
     * The threshold enabling the drawing optimization.
     *
@@ -295,6 +311,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.largeThreshold
     */
   var largeThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Layout method, whose values may be:
     *
@@ -313,6 +330,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.layout
     */
   var layout: js.UndefOr[String] = js.native
+  
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -324,6 +342,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.native
+  
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -332,6 +351,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markArea
     */
   var markArea: js.UndefOr[AnimationDelayUpdate] = js.native
+  
   /**
     * Use a line in the chart to illustrate.
     *
@@ -339,6 +359,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine
     */
   var markLine: js.UndefOr[AnimationDelay] = js.native
+  
   /**
     * Mark point in a chart.
     *
@@ -346,6 +367,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markPoint
     */
   var markPoint: js.UndefOr[AnimationDuration] = js.native
+  
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -357,6 +379,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * `progressive` specifies the amount of graphic elements that can
     * be rendered within a frame (about 16ms) if "progressive rendering"
@@ -374,6 +397,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.progressive
     */
   var progressive: js.UndefOr[Double] = js.native
+  
   /**
     * Chunk approach, optional values:
     *
@@ -388,6 +412,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.progressiveChunkMode
     */
   var progressiveChunkMode: js.UndefOr[String] = js.native
+  
   /**
     * If current data amount is over the threshold, "progressive rendering"
     * is enabled.
@@ -398,6 +423,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.progressiveThreshold
     */
   var progressiveThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -407,6 +433,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.silent
     */
   var silent: js.UndefOr[Boolean] = js.native
+  
   /**
     * tooltip settings in this series.
     *
@@ -414,12 +441,14 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * @default
     * "candlestick"
     * @see https://echarts.apache.org/en/option.html#series-candlestick.type
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -429,6 +458,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -438,6 +468,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * `z` value of all graghical elements in candlestick, which controls
     * order of drawing graphical components.
@@ -453,6 +484,7 @@ trait SeriesCandlestick_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-candlestick.z
     */
   var z: js.UndefOr[Double] = js.native
+  
   /**
     * `zlevel` value of all graghical elements in candlestick.
     *
@@ -472,157 +504,225 @@ trait SeriesCandlestick_ extends js.Object {
     */
   var zlevel: js.UndefOr[Double] = js.native
 }
-
 object SeriesCandlestick_ {
+  
   @scala.inline
   def apply(): SeriesCandlestick_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesCandlestick_]
   }
+  
   @scala.inline
   implicit class SeriesCandlestick_Ops[Self <: SeriesCandlestick_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    
     @scala.inline
     def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    
     @scala.inline
     def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    
     @scala.inline
     def setBarMaxWidth(value: Double): Self = this.set("barMaxWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBarMaxWidth: Self = this.set("barMaxWidth", js.undefined)
+    
     @scala.inline
     def setBarMinWidth(value: Double): Self = this.set("barMinWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBarMinWidth: Self = this.set("barMinWidth", js.undefined)
+    
     @scala.inline
     def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBarWidth: Self = this.set("barWidth", js.undefined)
+    
     @scala.inline
     def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: (js.Array[Double | DataObject])*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(value: js.Array[js.Array[Double | DataObject]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDimensionsVarargs(value: js.Any*): Self = this.set("dimensions", js.Array(value :_*))
+    
     @scala.inline
     def setDimensions(value: js.Array[_]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: `3`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setEncode(value: js.Object): Self = this.set("encode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEncode: Self = this.set("encode", js.undefined)
+    
     @scala.inline
     def setHoverAnimation(value: Boolean): Self = this.set("hoverAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHoverAnimation: Self = this.set("hoverAnimation", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setItemStyle(value: BorderColor0): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setLarge(value: Boolean): Self = this.set("large", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLarge: Self = this.set("large", js.undefined)
+    
     @scala.inline
     def setLargeThreshold(value: Double): Self = this.set("largeThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLargeThreshold: Self = this.set("largeThreshold", js.undefined)
+    
     @scala.inline
     def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLayout: Self = this.set("layout", js.undefined)
+    
     @scala.inline
     def setLegendHoverLink(value: Boolean): Self = this.set("legendHoverLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLegendHoverLink: Self = this.set("legendHoverLink", js.undefined)
+    
     @scala.inline
     def setMarkArea(value: AnimationDelayUpdate): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    
     @scala.inline
     def setMarkLine(value: AnimationDelay): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    
     @scala.inline
     def setMarkPoint(value: AnimationDuration): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setProgressive(value: Double): Self = this.set("progressive", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgressive: Self = this.set("progressive", js.undefined)
+    
     @scala.inline
     def setProgressiveChunkMode(value: String): Self = this.set("progressiveChunkMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgressiveChunkMode: Self = this.set("progressiveChunkMode", js.undefined)
+    
     @scala.inline
     def setProgressiveThreshold(value: Double): Self = this.set("progressiveThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgressiveThreshold: Self = this.set("progressiveThreshold", js.undefined)
+    
     @scala.inline
     def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSilent: Self = this.set("silent", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    
     @scala.inline
     def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    
     @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZ: Self = this.set("z", js.undefined)
+    
     @scala.inline
     def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZlevel: Self = this.set("zlevel", js.undefined)
   }
-  
 }
-

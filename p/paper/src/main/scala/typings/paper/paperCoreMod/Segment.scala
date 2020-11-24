@@ -3,7 +3,7 @@ package typings.paper.paperCoreMod
 import typings.paper.paper.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper/dist/paper-core", "Segment")
 @js.native
@@ -28,4 +28,3 @@ class Segment ()
   def this(point: Point, handleIn: js.UndefOr[scala.Nothing], handleOut: Point) = this()
   def this(point: Point, handleIn: Point, handleOut: Point) = this()
 }
-

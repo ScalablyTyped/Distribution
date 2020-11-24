@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactInformation extends IContactInformation
-
 object ContactInformation {
+  
   @scala.inline
   def apply(
     customFields: IVectorView[ContactField],
@@ -26,4 +26,3 @@ object ContactInformation {
     __obj.asInstanceOf[ContactInformation]
   }
 }
-

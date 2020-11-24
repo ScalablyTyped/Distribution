@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new RigidBodyComponentSystem.
@@ -16,4 +16,3 @@ class RigidBodyComponentSystem protected ()
   extends typings.playcanvas.pc.RigidBodyComponentSystem {
   def this(app: typings.playcanvas.pc.Application) = this()
 }
-

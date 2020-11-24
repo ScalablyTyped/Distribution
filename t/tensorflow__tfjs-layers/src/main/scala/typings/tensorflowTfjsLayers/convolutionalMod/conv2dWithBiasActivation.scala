@@ -1,16 +1,17 @@
 package typings.tensorflowTfjsLayers.convolutionalMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.fusedUtilMod.Activation
-import typings.tensorflowTfjsCore.tensorMod.Tensor
+import typings.tensorflowTfjsCore.fusedTypesMod.Activation
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv2dWithBiasActivation")
 @js.native
 object conv2dWithBiasActivation extends js.Object {
+  
   def apply(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = js.native
   def apply(
     x: Tensor[Rank],
@@ -292,4 +293,3 @@ object conv2dWithBiasActivation extends js.Object {
     activation: Activation
   ): Tensor[Rank] = js.native
 }
-

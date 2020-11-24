@@ -12,7 +12,7 @@ The lodash method `_.valuesIn` exported as a module.
 | Keywords           | lodash-modularized, valuesin |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3247 |
+| # downloads        | 3407 |
 | # stars            | 0 |
 
 ## Links

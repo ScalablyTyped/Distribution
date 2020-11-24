@@ -1,13 +1,12 @@
 package typings.mendixmodelsdk.microflowsMod.microflows
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -29,19 +28,19 @@ abstract class ServerSideMicroflow protected () extends MicroflowBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  @JSName("model")
-  var model_FServerSideMicroflow: IModel = js.native
+  
   def applyEntityAccess: Boolean = js.native
   def applyEntityAccess_=(newValue: Boolean): Unit = js.native
+  
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MServerSideMicroflow: FolderBase = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ServerSideMicroflow")
 @js.native
 object ServerSideMicroflow extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

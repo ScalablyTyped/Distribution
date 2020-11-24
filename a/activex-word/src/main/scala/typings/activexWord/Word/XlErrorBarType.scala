@@ -7,7 +7,7 @@ import typings.activexWord.activexWordNumbers.`2`
 import typings.activexWord.activexWordNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`-4114`
@@ -17,17 +17,20 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`4`
 */
 trait XlErrorBarType extends js.Object
-
 object XlErrorBarType {
+  
   @scala.inline
   def xlErrorBarTypeCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  
   @scala.inline
   def xlErrorBarTypeFixedValue: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def xlErrorBarTypePercent: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def xlErrorBarTypeStDev: `-4155` = -4155.asInstanceOf[`-4155`]
+  
   @scala.inline
   def xlErrorBarTypeStError: `4` = 4.asInstanceOf[`4`]
 }
-

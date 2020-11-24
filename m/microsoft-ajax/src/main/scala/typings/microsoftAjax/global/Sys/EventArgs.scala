@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a base class for classes that are used by event sources to pass event argument information.
@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
   */
 class EventArgs ()
   extends typings.microsoftAjax.Sys.EventArgs
-
 /* static members */
 @JSGlobal("Sys.EventArgs")
 @js.native
 object EventArgs extends js.Object {
+  
   //#endregion
   //#region Fields
   /**
@@ -29,4 +29,3 @@ object EventArgs extends js.Object {
     */
   var Empty: typings.microsoftAjax.Sys.EventArgs = js.native
 }
-

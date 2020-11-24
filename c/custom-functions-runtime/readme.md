@@ -1,7 +1,7 @@
 
 # Scala.js typings for custom-functions-runtime
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 
 

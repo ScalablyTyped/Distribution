@@ -23,7 +23,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for a {@link ConnectorShape} , a specialized {@link Shape} , which can be connected to other {@link Shapes} or GluePoints. */
 @js.native
@@ -35,39 +35,48 @@ trait ConnectorShape
      with XText
      with TextProperties
      with RotationDescriptor {
+  
   /** This property contains the distance of line 1. */
   var EdgeLine1Delta: Double = js.native
+  
   /** This property contains the distance of line 2. */
   var EdgeLine2Delta: Double = js.native
+  
   /** This property contains the distance of line 3. */
   var EdgeLine3Delta: Double = js.native
+  
   /**
     * this is the position of the connectors end point in 100th/mm. For unconnected end points you can get and set the position. For connected end points
     * you can only get the position.
     */
   var EndGluePointIndex: Double = js.native
+  
   /** this property holds the index of the glue point the end point of this connector is glued on. */
   var EndPosition: Point = js.native
+  
   /**
     * this property either holds the shape that the end point of this connector is connected to, or is empty when the end point of the connector is not
     * connected to a shape.
     */
   var EndShape: XShape = js.native
+  
   /** this property holds the index of the glue point the start point of this connector is glued on. */
   var StartGluePointIndex: Double = js.native
+  
   /**
     * this is the position of the connectors start point in 100th/mm. For unconnected start points you can get and set the position. For connected start
     * points you can only get the position.
     */
   var StartPosition: Point = js.native
+  
   /**
     * this property either holds the shape that the start point of this connector is connected to, or is empty when the start point of the connector is not
     * connected to a shape.
     */
   var StartShape: XShape = js.native
 }
-
 object ConnectorShape {
+  
   @scala.inline
   def apply(
     EdgeKind: ConnectorType,
@@ -172,36 +181,47 @@ object ConnectorShape {
     js.Dynamic.global.Object.assign(__obj, TextProperties)
     __obj.asInstanceOf[ConnectorShape]
   }
+  
   @scala.inline
   implicit class ConnectorShapeOps[Self <: ConnectorShape] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEdgeLine1Delta(value: Double): Self = this.set("EdgeLine1Delta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEdgeLine2Delta(value: Double): Self = this.set("EdgeLine2Delta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEdgeLine3Delta(value: Double): Self = this.set("EdgeLine3Delta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndGluePointIndex(value: Double): Self = this.set("EndGluePointIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndPosition(value: Point): Self = this.set("EndPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndShape(value: XShape): Self = this.set("EndShape", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartGluePointIndex(value: Double): Self = this.set("StartGluePointIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartPosition(value: Point): Self = this.set("StartPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartShape(value: XShape): Self = this.set("StartShape", value.asInstanceOf[js.Any])
   }
-  
 }
-

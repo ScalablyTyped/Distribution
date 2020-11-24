@@ -3,7 +3,7 @@ package typings.videoJs.mod.default
 import typings.videoJs.mod.videojs.ComponentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "ProgressControl")
 @js.native
@@ -21,4 +21,3 @@ class ProgressControlCls protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mobx-react" : "6.2.5"
+      "mobx-react" : "7.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "mobx-react" : "6.2.5"
+      "mobx-react" : "7.0.5"
     }
   ],
   "compile-devDependencies" : [

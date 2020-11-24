@@ -5,11 +5,12 @@ import typings.chrome.chrome.cookies.Cookie
 import typings.sinonChrome.anon.Description
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sinon-chrome", "plugins")
 @js.native
 object plugins extends js.Object {
+  
   @js.native
   class CookiePlugin () extends js.Object {
     def this(state: js.Array[Cookie]) = this()
@@ -22,4 +23,3 @@ object plugins extends js.Object {
   
   type Translations = StringDictionary[Description]
 }
-

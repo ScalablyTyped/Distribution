@@ -6,14 +6,17 @@ import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentCol
 import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "DocumentColorRequest")
 @js.native
 object DocumentColorRequest extends js.Object {
+  
   val method: textDocumentSlashdocumentColor = js.native
+  
   /** @deprecated Use DocumentColorRequest.type */
   val resultType: typings.vscodeJsonrpc.mod.ProgressType[js.Array[typings.vscodeLanguageserverTypes.mod.ColorInformation]] = js.native
+  
   val `type`: ProtocolRequestType[
     DocumentColorParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.ColorInformation], 
@@ -22,4 +25,3 @@ object DocumentColorRequest extends js.Object {
     DocumentColorRegistrationOptions
   ] = js.native
 }
-

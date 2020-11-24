@@ -2,157 +2,14 @@ package typings.mocha.Mocha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Variables added to the global scope by Mocha when run in the CLI.
   */
 @js.native
 trait MochaGlobals extends js.Object {
-  /**
-    * Execute after each test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#afterEach
-    */
-  @JSName("afterEach")
-  var afterEach_Original: HookFunction = js.native
-  /**
-    * Execute after running tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#after
-    */
-  @JSName("after")
-  var after_Original: HookFunction = js.native
-  /**
-    * Execute before each test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#beforeEach
-    */
-  @JSName("beforeEach")
-  var beforeEach_Original: HookFunction = js.native
-  /**
-    * Execute before running tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#before
-    */
-  @JSName("before")
-  var before_Original: HookFunction = js.native
-  /**
-    * Describe a "suite" containing nested suites and tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("context")
-  var context_Original: SuiteFunction = js.native
-  /**
-    * Describe a "suite" containing nested suites and tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("describe")
-  var describe_Original: SuiteFunction = js.native
-  /**
-    * Describes a test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("it")
-  var it_Original: TestFunction = js.native
-  @JSName("run")
-  var run_Original: js.Function0[Unit] = js.native
-  /**
-    * Execute before each test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#beforeEach
-    */
-  @JSName("setup")
-  var setup_Original: HookFunction = js.native
-  /**
-    * Describes a test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("specify")
-  var specify_Original: TestFunction = js.native
-  /**
-    * Execute before running tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#before
-    */
-  @JSName("suiteSetup")
-  var suiteSetup_Original: HookFunction = js.native
-  /**
-    * Execute after running tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#after
-    */
-  @JSName("suiteTeardown")
-  var suiteTeardown_Original: HookFunction = js.native
-  /**
-    * Describe a "suite" containing nested suites and tests.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("suite")
-  var suite_Original: SuiteFunction = js.native
-  /**
-    * Execute after each test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#afterEach
-    */
-  @JSName("teardown")
-  var teardown_Original: HookFunction = js.native
-  /**
-    * Describes a test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("test")
-  var test_Original: TestFunction = js.native
-  /**
-    * Pending suite.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("xcontext")
-  var xcontext_Original: PendingSuiteFunction = js.native
-  /**
-    * Pending suite.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("xdescribe")
-  var xdescribe_Original: PendingSuiteFunction = js.native
-  /**
-    * Describes a pending test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("xit")
-  var xit_Original: PendingTestFunction = js.native
-  /**
-    * Describes a pending test case.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    */
-  @JSName("xspecify")
-  var xspecify_Original: PendingTestFunction = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -196,6 +53,7 @@ trait MochaGlobals extends js.Object {
   def after(name: String): Unit = js.native
   def after(name: String, fn: AsyncFunc): Unit = js.native
   def after(name: String, fn: Func): Unit = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -240,6 +98,26 @@ trait MochaGlobals extends js.Object {
   def afterEach(name: String, fn: AsyncFunc): Unit = js.native
   def afterEach(name: String, fn: Func): Unit = js.native
   /**
+    * Execute after each test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#afterEach
+    */
+  @JSName("afterEach")
+  var afterEach_Original: HookFunction = js.native
+  
+  /**
+    * Execute after running tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#after
+    */
+  @JSName("after")
+  var after_Original: HookFunction = js.native
+  
+  /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
     *
@@ -282,6 +160,7 @@ trait MochaGlobals extends js.Object {
   def before(name: String): Unit = js.native
   def before(name: String, fn: AsyncFunc): Unit = js.native
   def before(name: String, fn: Func): Unit = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -326,6 +205,26 @@ trait MochaGlobals extends js.Object {
   def beforeEach(name: String, fn: AsyncFunc): Unit = js.native
   def beforeEach(name: String, fn: Func): Unit = js.native
   /**
+    * Execute before each test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#beforeEach
+    */
+  @JSName("beforeEach")
+  var beforeEach_Original: HookFunction = js.native
+  
+  /**
+    * Execute before running tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#before
+    */
+  @JSName("before")
+  var before_Original: HookFunction = js.native
+  
+  /**
     * [qunit] Describe a "suite" with the given `title`.
     *
     * - _Only available when invoked via the mocha CLI._
@@ -349,6 +248,14 @@ trait MochaGlobals extends js.Object {
     */
   def context(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
   /**
+    * Describe a "suite" containing nested suites and tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("context")
+  var context_Original: SuiteFunction = js.native
+  
+  /**
     * [qunit] Describe a "suite" with the given `title`.
     *
     * - _Only available when invoked via the mocha CLI._
@@ -371,6 +278,14 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def describe(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+  /**
+    * Describe a "suite" containing nested suites and tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("describe")
+  var describe_Original: SuiteFunction = js.native
+  
   /**
     * Describe a specification or test-case with the given callback `fn` acting as a thunk.
     * The name of the function is used as the name of the test.
@@ -409,7 +324,18 @@ trait MochaGlobals extends js.Object {
   def it(title: String): Test = js.native
   def it(title: String, fn: AsyncFunc): Test = js.native
   def it(title: String, fn: Func): Test = js.native
+  /**
+    * Describes a test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("it")
+  var it_Original: TestFunction = js.native
+  
   def run(): Unit = js.native
+  @JSName("run")
+  var run_Original: js.Function0[Unit] = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -454,6 +380,16 @@ trait MochaGlobals extends js.Object {
   def setup(name: String, fn: AsyncFunc): Unit = js.native
   def setup(name: String, fn: Func): Unit = js.native
   /**
+    * Execute before each test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#beforeEach
+    */
+  @JSName("setup")
+  var setup_Original: HookFunction = js.native
+  
+  /**
     * Describe a specification or test-case with the given callback `fn` acting as a thunk.
     * The name of the function is used as the name of the test.
     *
@@ -492,6 +428,14 @@ trait MochaGlobals extends js.Object {
   def specify(title: String, fn: AsyncFunc): Test = js.native
   def specify(title: String, fn: Func): Test = js.native
   /**
+    * Describes a test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("specify")
+  var specify_Original: TestFunction = js.native
+  
+  /**
     * [qunit] Describe a "suite" with the given `title`.
     *
     * - _Only available when invoked via the mocha CLI._
@@ -514,6 +458,7 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def suite(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -558,6 +503,16 @@ trait MochaGlobals extends js.Object {
   def suiteSetup(name: String, fn: AsyncFunc): Unit = js.native
   def suiteSetup(name: String, fn: Func): Unit = js.native
   /**
+    * Execute before running tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#before
+    */
+  @JSName("suiteSetup")
+  var suiteSetup_Original: HookFunction = js.native
+  
+  /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
     *
@@ -600,6 +555,24 @@ trait MochaGlobals extends js.Object {
   def suiteTeardown(name: String): Unit = js.native
   def suiteTeardown(name: String, fn: AsyncFunc): Unit = js.native
   def suiteTeardown(name: String, fn: Func): Unit = js.native
+  /**
+    * Execute after running tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#after
+    */
+  @JSName("suiteTeardown")
+  var suiteTeardown_Original: HookFunction = js.native
+  
+  /**
+    * Describe a "suite" containing nested suites and tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("suite")
+  var suite_Original: SuiteFunction = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -644,6 +617,16 @@ trait MochaGlobals extends js.Object {
   def teardown(name: String, fn: AsyncFunc): Unit = js.native
   def teardown(name: String, fn: Func): Unit = js.native
   /**
+    * Execute after each test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    *
+    * @see https://mochajs.org/api/global.html#afterEach
+    */
+  @JSName("teardown")
+  var teardown_Original: HookFunction = js.native
+  
+  /**
     * Describe a specification or test-case with the given callback `fn` acting as a thunk.
     * The name of the function is used as the name of the test.
     *
@@ -682,6 +665,14 @@ trait MochaGlobals extends js.Object {
   def test(title: String, fn: AsyncFunc): Test = js.native
   def test(title: String, fn: Func): Test = js.native
   /**
+    * Describes a test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("test")
+  var test_Original: TestFunction = js.native
+  
+  /**
     * Pending suite.
     *
     * - _Only available when invoked via the mocha CLI._
@@ -692,7 +683,23 @@ trait MochaGlobals extends js.Object {
     *
     * - _Only available when invoked via the mocha CLI._
     */
+  @JSName("xcontext")
+  var xcontext_Original: PendingSuiteFunction = js.native
+  
+  /**
+    * Pending suite.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
   def xdescribe(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+  /**
+    * Pending suite.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("xdescribe")
+  var xdescribe_Original: PendingSuiteFunction = js.native
+  
   /**
     * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
     * acting as a thunk. The name of the function is used as the name of the test. Indicates
@@ -734,6 +741,14 @@ trait MochaGlobals extends js.Object {
   def xit(title: String, fn: AsyncFunc): Test = js.native
   def xit(title: String, fn: Func): Test = js.native
   /**
+    * Describes a pending test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("xit")
+  var xit_Original: PendingTestFunction = js.native
+  
+  /**
     * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
     * acting as a thunk. The name of the function is used as the name of the test. Indicates
     * this test should not be executed.
@@ -773,5 +788,11 @@ trait MochaGlobals extends js.Object {
   def xspecify(title: String): Test = js.native
   def xspecify(title: String, fn: AsyncFunc): Test = js.native
   def xspecify(title: String, fn: Func): Test = js.native
+  /**
+    * Describes a pending test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSName("xspecify")
+  var xspecify_Original: PendingTestFunction = js.native
 }
-

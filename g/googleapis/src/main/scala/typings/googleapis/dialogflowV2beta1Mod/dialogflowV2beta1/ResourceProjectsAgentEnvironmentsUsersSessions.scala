@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Environments$Users$Sessions")
 @js.native
 class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var contexts: ResourceProjectsAgentEnvironmentsUsersSessionsContexts = js.native
-  var entityTypes: ResourceProjectsAgentEnvironmentsUsersSessionsEntitytypes = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.deleteContexts
     * @desc Deletes all active contexts in the specified session.
@@ -47,6 +49,7 @@ class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends js.Obj
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.detectIntent
     * @desc Processes a natural language query and returns structured,
@@ -82,5 +85,6 @@ class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends js.Obj
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]
   ): Unit = js.native
+  
+  var entityTypes: ResourceProjectsAgentEnvironmentsUsersSessionsEntitytypes = js.native
 }
-

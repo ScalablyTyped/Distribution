@@ -3,11 +3,12 @@ package typings.utility.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "datestruct")
 @js.native
 object datestruct extends js.Object {
+  
   /**
     * return datetime struct.
     *
@@ -18,4 +19,3 @@ object datestruct extends js.Object {
   def apply(): IDateStructStaticReturns = js.native
   def apply(now: Date): IDateStructStaticReturns = js.native
 }
-

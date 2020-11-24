@@ -12,9 +12,9 @@ import typings.react.mod.InputHTMLAttributes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "FormField")
+@JSImport("grommet", "FormField")
 @js.native
 class FormField protected ()
   extends Component[
@@ -37,8 +37,7 @@ class FormField protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6", "FormField")
+@JSImport("grommet", "FormField")
 @js.native
 object FormField extends TopLevel[
       ComponentClass[
@@ -49,4 +48,3 @@ object FormField extends TopLevel[
         ComponentState
       ]
     ]
-

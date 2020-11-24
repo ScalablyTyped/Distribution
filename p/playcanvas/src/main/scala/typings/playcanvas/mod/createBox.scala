@@ -3,16 +3,17 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.HeightSegments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playcanvas", "createBox")
 @js.native
 object createBox extends js.Object {
+  
   /**
     * Creates a procedural box-shaped mesh.
     *
     * The size, shape and tesselation properties of the box can be controlled via function parameters. By
-    * default, the function will create a box centred on the object space origin with a width, length and
+    * default, the function will create a box centered on the object space origin with a width, length and
     * height of 1.0 unit and 10 segments in either axis (50 triangles per face).
     *
     * Note that the box is created with UVs in the range of 0 to 1 on each face. Additionally, tangent
@@ -28,4 +29,3 @@ object createBox extends js.Object {
   def apply(device: typings.playcanvas.pc.GraphicsDevice): typings.playcanvas.pc.Mesh = js.native
   def apply(device: typings.playcanvas.pc.GraphicsDevice, opts: HeightSegments): typings.playcanvas.pc.Mesh = js.native
 }
-

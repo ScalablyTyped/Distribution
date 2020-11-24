@@ -2,16 +2,20 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayoutEvents extends js.Object {
+  
   def addListener(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   def addListener(events: EventNames, handler: EventHandler): this.type = js.native
+  
   def bind(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   def bind(events: EventNames, handler: EventHandler): this.type = js.native
+  
   def listen(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   def listen(events: EventNames, handler: EventHandler): this.type = js.native
+  
   /**
     * Remove event handlers on the layout.
     * http://js.cytoscape.org/#layout.off
@@ -21,6 +25,7 @@ trait LayoutEvents extends js.Object {
     */
   def off(events: EventNames): this.type = js.native
   def off(events: EventNames, handler: EventHandler): this.type = js.native
+  
   def on(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   /**
     * http://js.cytoscape.org/#layouts/layout-events
@@ -33,6 +38,7 @@ trait LayoutEvents extends js.Object {
     * when one of the specified events occurs.
     */
   def on(events: EventNames, handler: EventHandler): this.type = js.native
+  
   def one(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   /**
     * Bind to events that are emitted by the layout, and trigger the handler only once.
@@ -41,15 +47,19 @@ trait LayoutEvents extends js.Object {
     * @param handler The handler function that is called when one of the specified events occurs.
     */
   def one(events: EventNames, handler: EventHandler): this.type = js.native
+  
   def pon(events: EventNames): js.Promise[EventObject] = js.native
+  
   /**
     * Get a promise that is resolved with the first of any of
     * the specified events triggered on the layout.
     * http://js.cytoscape.org/#layout.promiseOn
     */
   def promiseOn(events: EventNames): js.Promise[EventObject] = js.native
+  
   def removeListener(events: EventNames): this.type = js.native
   def removeListener(events: EventNames, handler: EventHandler): this.type = js.native
+  
   /**
     * Trigger one or more events on the layout.
     * http://js.cytoscape.org/#layout.trigger
@@ -58,9 +68,10 @@ trait LayoutEvents extends js.Object {
     */
   def trigger(events: EventNames): this.type = js.native
   def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
+  
   def unbind(events: EventNames): this.type = js.native
   def unbind(events: EventNames, handler: EventHandler): this.type = js.native
+  
   def unlisten(events: EventNames): this.type = js.native
   def unlisten(events: EventNames, handler: EventHandler): this.type = js.native
 }
-

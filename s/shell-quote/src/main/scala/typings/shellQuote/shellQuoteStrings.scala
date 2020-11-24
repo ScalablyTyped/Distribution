@@ -3,9 +3,55 @@ package typings.shellQuote
 import typings.shellQuote.mod.ControlOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shellQuoteStrings {
+  
+  @scala.inline
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
+  
+  @scala.inline
+  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignAmpersand: GreaterthansignAmpersand = ">&".asInstanceOf[GreaterthansignAmpersand]
+  
+  @scala.inline
+  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
+  
+  @scala.inline
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignLeftparenthesis: LessthansignLeftparenthesis = "<(".asInstanceOf[LessthansignLeftparenthesis]
+  
+  @scala.inline
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
+  
+  @scala.inline
+  def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
+  
+  @scala.inline
+  def SemicolonSemicolon: SemicolonSemicolon = ";;".asInstanceOf[SemicolonSemicolon]
+  
+  @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @scala.inline
+  def VerticallineAmpersand: VerticallineAmpersand = "|&".asInstanceOf[VerticallineAmpersand]
+  
+  @scala.inline
+  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
+  
+  @scala.inline
+  def glob: glob = "glob".asInstanceOf[glob]
+  
   @js.native
   sealed trait Ampersand extends ControlOperator
   
@@ -50,36 +96,4 @@ object shellQuoteStrings {
   
   @js.native
   sealed trait glob extends js.Object
-  
-  @scala.inline
-  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
-  @scala.inline
-  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignAmpersand: GreaterthansignAmpersand = ">&".asInstanceOf[GreaterthansignAmpersand]
-  @scala.inline
-  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
-  @scala.inline
-  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignLeftparenthesis: LessthansignLeftparenthesis = "<(".asInstanceOf[LessthansignLeftparenthesis]
-  @scala.inline
-  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  @scala.inline
-  def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
-  @scala.inline
-  def SemicolonSemicolon: SemicolonSemicolon = ";;".asInstanceOf[SemicolonSemicolon]
-  @scala.inline
-  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
-  @scala.inline
-  def VerticallineAmpersand: VerticallineAmpersand = "|&".asInstanceOf[VerticallineAmpersand]
-  @scala.inline
-  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
-  @scala.inline
-  def glob: glob = "glob".asInstanceOf[glob]
 }
-

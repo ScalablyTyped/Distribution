@@ -6,12 +6,12 @@ import typings.sharepoint.anon.BLimitToList
 import typings.sharepoint.anon.DataValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LookupTable extends ILookupPropertyType
-
 object LookupTable {
+  
   @scala.inline
   def apply(
     BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
@@ -28,4 +28,3 @@ object LookupTable {
     __obj.asInstanceOf[LookupTable]
   }
 }
-

@@ -3,21 +3,24 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MultiComboBox extends ComboBoxBase {
+  
   /**
     * Adds some item <code>oItem</code> to the association named <code>selectedItems</code>.
     * @param oItem The selected item to add; if empty, nothing is added.
     * @returns <code>this</code> to allow method chaining.
     */
   def addSelectedItem(oItem: Item): MultiComboBox = js.native
+  
   /**
     * Adds selected items. Only items with valid keys are added as selected.
     * @param aKeys An array of item keys that identifies the items to be added as selected
     */
   def addSelectedKeys(aKeys: js.Array[String]): MultiComboBox = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>selectionChange</code> event of this
     * <code>sap.m.MultiComboBox</code>.When called, the context of the event handler (its
@@ -33,6 +36,7 @@ trait MultiComboBox extends ComboBoxBase {
     */
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any): MultiComboBox = js.native
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MultiComboBox = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>selectionFinish</code> event of this
     * <code>sap.m.MultiComboBox</code>.When called, the context of the event handler (its
@@ -48,6 +52,7 @@ trait MultiComboBox extends ComboBoxBase {
     */
   def attachSelectionFinish(oData: js.Any, fnFunction: js.Any): MultiComboBox = js.native
   def attachSelectionFinish(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MultiComboBox = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>selectionChange</code> event of this
     * <code>sap.m.MultiComboBox</code>.The passed function and listener object must match the ones used
@@ -57,6 +62,7 @@ trait MultiComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelectionChange(fnFunction: js.Any, oListener: js.Any): MultiComboBox = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>selectionFinish</code> event of this
     * <code>sap.m.MultiComboBox</code>.The passed function and listener object must match the ones used
@@ -66,6 +72,7 @@ trait MultiComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelectionFinish(fnFunction: js.Any, oListener: js.Any): MultiComboBox = js.native
+  
   /**
     * Fires event <code>selectionChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>changedItem</code> of type <code>sap.ui.core.Item</code>Item which
@@ -75,6 +82,7 @@ trait MultiComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelectionChange(mArguments: js.Any): MultiComboBox = js.native
+  
   /**
     * Fires event <code>selectionFinish</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selectedItems</code> of type <code>sap.ui.core.Item[]</code>The selected
@@ -83,12 +91,14 @@ trait MultiComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelectionFinish(mArguments: js.Any): MultiComboBox = js.native
+  
   /**
     * Retrieves the selected item objects from the association named <code>selectedItems</code>.
     * @returns Array of sap.ui.core.Item instances. The current target of the <code>selectedItems</code>  
     *       association.
     */
   def getSelectedItems(): js.Array[Item] = js.native
+  
   /**
     * Gets current value of property <code>selectedKeys</code>.Keys of the selected items. If the key has
     * no corresponding item, no changes will apply. If duplicate keys exists the first item matching the
@@ -96,19 +106,23 @@ trait MultiComboBox extends ComboBoxBase {
     * @returns Value of property <code>selectedKeys</code>
     */
   def getSelectedKeys(): js.Array[String] = js.native
+  
   /**
     * This hook method is called after the MultiComboBox's Pop-up is rendered.
     */
   def onAfterRenderingPicker(): Unit = js.native
+  
   /**
     * This hook method is called before the MultiComboBox's Pop-up is rendered.
     */
   def onBeforeRenderingPicker(): Unit = js.native
+  
   /**
     * Removes all the controls in the association named <code>selectedItems</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSelectedItems(): js.Array[_] = js.native
+  
   def removeSelectedItem(vSelectedItem: js.Any): js.Any = js.native
   /**
     * Removes an selectedItem from the association named <code>selectedItems</code>.
@@ -117,11 +131,13 @@ trait MultiComboBox extends ComboBoxBase {
     */
   def removeSelectedItem(vSelectedItem: Double): js.Any = js.native
   def removeSelectedItem(vSelectedItem: Item): js.Any = js.native
+  
   /**
     * Removes selected items. Only items with valid keys are removed.
     * @param aKeys An array of item keys that identifies the items to be removed
     */
   def removeSelectedKeys(aKeys: js.Array[String]): MultiComboBox = js.native
+  
   def setSelectedItems(aItems: js.Any): MultiComboBox = js.native
   /**
     * Setter for association <code>selectedItems</code>.
@@ -131,6 +147,7 @@ trait MultiComboBox extends ComboBoxBase {
     * @returns <code>this</code> to allow method chaining.
     */
   def setSelectedItems(aItems: js.Array[Item | String]): MultiComboBox = js.native
+  
   /**
     * Sets a new value for property <code>selectedKeys</code>.Keys of the selected items. If the key has
     * no corresponding item, no changes will apply. If duplicate keys exists the first item matching the
@@ -141,4 +158,3 @@ trait MultiComboBox extends ComboBoxBase {
     */
   def setSelectedKeys(sSelectedKeys: js.Array[String]): MultiComboBox = js.native
 }
-

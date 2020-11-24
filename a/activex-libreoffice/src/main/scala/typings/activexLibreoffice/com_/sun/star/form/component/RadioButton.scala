@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a component which acts as a radio button as needed in HTMLForms.
@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
 trait RadioButton
   extends FormControlModel
      with XReset {
+  
   /**
     * specifies the horizontal alignment of the text in the control.
     *
@@ -38,8 +39,10 @@ trait RadioButton
     * @since OOo 2.0
     */
   var Align: Double = js.native
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Double = js.native
+  
   /**
     * contains a default value for the control.
     *
@@ -50,14 +53,19 @@ trait RadioButton
     * @see com.sun.star.form.XReset
     */
   var DefaultState: Double = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /** specifies the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
   var FontEmphasisMark: Double = js.native
+  
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
   var FontRelief: Double = js.native
+  
   /**
     * specifies a graphic to be displayed besides the label of the control
     *
@@ -67,30 +75,38 @@ trait RadioButton
     * @since OOo 2.1
     */
   var Graphic: XGraphic = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /**
     * specifies the position of the image, if any, relative to the text, if any
     *
     * Valid values of this property are specified with {@link ImagePosition} .
     */
   var ImagePosition: Double = js.native
+  
   /**
     * specifies an URL to an image to display besides the label of the control
     * @see Graphic
     */
   var ImageURL: String = js.native
+  
   /** specifies the label of the control. */
   var Label: String = js.native
+  
   /**
     * specifies that the text may be displayed on more than one line.
     * @since OOo 2.0
     */
   var MultiLine: Boolean = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /**
     * contains a reference value which is used for submission in a HTML form.
     *
@@ -98,18 +114,23 @@ trait RadioButton
     * used for submission.
     */
   var RefValue: String = js.native
+  
   /**
     * specifies the state of the control.
     *
     * `; 0: not checked; 1: checked; `
     */
   var State: Double = js.native
+  
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: Boolean = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /** specifies the text line color (RGB) of the control. */
   var TextLineColor: Color = js.native
+  
   /**
     * specifies a value which is to be associated with the control when it's **not** selected.
     *
@@ -117,11 +138,13 @@ trait RadioButton
     * extensions of this concept: If present, the value should be associated with the control when it is **not** selected.
     */
   var UncheckedRefValue: String = js.native
+  
   /**
     * specifies the vertical alignment of the text in the control.
     * @since OOo 2.0
     */
   var VerticalAlign: VerticalAlignment = js.native
+  
   /**
     * specifies a visual effect to apply to the radio button control.
     *
@@ -130,6 +153,7 @@ trait RadioButton
     * @since OOo 2.0
     */
   var VisualEffect: Double = js.native
+  
   /**
     * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
     *
@@ -137,6 +161,7 @@ trait RadioButton
     * @since OOo 3.1
     */
   var WritingMode: Double = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -144,4 +169,3 @@ trait RadioButton
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

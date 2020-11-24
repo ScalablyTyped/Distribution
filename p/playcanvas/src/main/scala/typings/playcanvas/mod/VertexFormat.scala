@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Components
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns a new pc.VertexFormat object.
@@ -109,14 +109,13 @@ class VertexFormat protected ()
     vertexCount: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("playcanvas", "VertexFormat")
 @js.native
 object VertexFormat extends js.Object {
+  
   /**
     * Returns {@link pc.VertexFormat} used to store matrices of type {@link pc.Mat4} for hardware instancing.
     */
   val defaultInstancingFormat: typings.playcanvas.pc.VertexFormat = js.native
 }
-

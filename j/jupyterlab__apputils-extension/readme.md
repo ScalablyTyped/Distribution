@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__apputils-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Application Utilities Extension
@@ -10,9 +10,9 @@ JupyterLab - Application Utilities Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/apputils-extension |
 | Keywords           | - |
-| # releases         | 64 |
+| # releases         | 114 |
 | # dependents       | 2 |
-| # downloads        | 751183 |
+| # downloads        | 1354708 |
 | # stars            | 0 |
 
 ## Links

@@ -5,9 +5,46 @@ import typings.twilioNotifications.connectorMod.ChannelType
 import typings.twilioNotifications.connectorMod.UpdateReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilioNotificationsStrings {
+  
+  @scala.inline
+  def apn: apn = "apn".asInstanceOf[apn]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  
+  @scala.inline
+  def denied: denied = "denied".asInstanceOf[denied]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
+  
+  @scala.inline
+  def fcm: fcm = "fcm".asInstanceOf[fcm]
+  
+  @scala.inline
+  def gcm: gcm = "gcm".asInstanceOf[gcm]
+  
+  @scala.inline
+  def messageType: messageType = "messageType".asInstanceOf[messageType]
+  
+  @scala.inline
+  def notificationId: notificationId = "notificationId".asInstanceOf[notificationId]
+  
+  @scala.inline
+  def token: token = "token".asInstanceOf[token]
+  
+  @scala.inline
+  def twilsock: twilsock = "twilsock".asInstanceOf[twilsock]
+  
   @js.native
   sealed trait apn extends ChannelType
   
@@ -43,30 +80,4 @@ object twilioNotificationsStrings {
   
   @js.native
   sealed trait twilsock extends ChannelType
-  
-  @scala.inline
-  def apn: apn = "apn".asInstanceOf[apn]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def denied: denied = "denied".asInstanceOf[denied]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
-  @scala.inline
-  def fcm: fcm = "fcm".asInstanceOf[fcm]
-  @scala.inline
-  def gcm: gcm = "gcm".asInstanceOf[gcm]
-  @scala.inline
-  def messageType: messageType = "messageType".asInstanceOf[messageType]
-  @scala.inline
-  def notificationId: notificationId = "notificationId".asInstanceOf[notificationId]
-  @scala.inline
-  def token: token = "token".asInstanceOf[token]
-  @scala.inline
-  def twilsock: twilsock = "twilsock".asInstanceOf[twilsock]
 }
-

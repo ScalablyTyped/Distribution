@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plusDomains/v1", "plusDomains_v1.Resource$Activities")
 @js.native
 class ResourceActivities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * plusDomains.activities.get
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -42,6 +44,7 @@ class ResourceActivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaActivity]
   ): Unit = js.native
+  
   /**
     * plusDomains.activities.list
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -75,4 +78,3 @@ class ResourceActivities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaActivityFeed]
   ): Unit = js.native
 }
-

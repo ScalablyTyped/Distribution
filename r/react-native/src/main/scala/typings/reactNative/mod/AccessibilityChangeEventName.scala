@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNative.reactNativeStrings.change
@@ -14,21 +14,26 @@ import scala.scalajs.js.annotation._
   - typings.reactNative.reactNativeStrings.reduceTransparencyChanged
 */
 trait AccessibilityChangeEventName extends js.Object
-
 object AccessibilityChangeEventName {
+  
   @scala.inline
   def boldTextChanged: typings.reactNative.reactNativeStrings.boldTextChanged = "boldTextChanged".asInstanceOf[typings.reactNative.reactNativeStrings.boldTextChanged]
+  
   @scala.inline
   def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
+  
   @scala.inline
   def grayscaleChanged: typings.reactNative.reactNativeStrings.grayscaleChanged = "grayscaleChanged".asInstanceOf[typings.reactNative.reactNativeStrings.grayscaleChanged]
+  
   @scala.inline
   def invertColorsChanged: typings.reactNative.reactNativeStrings.invertColorsChanged = "invertColorsChanged".asInstanceOf[typings.reactNative.reactNativeStrings.invertColorsChanged]
+  
   @scala.inline
   def reduceMotionChanged: typings.reactNative.reactNativeStrings.reduceMotionChanged = "reduceMotionChanged".asInstanceOf[typings.reactNative.reactNativeStrings.reduceMotionChanged]
+  
   @scala.inline
   def reduceTransparencyChanged: typings.reactNative.reactNativeStrings.reduceTransparencyChanged = "reduceTransparencyChanged".asInstanceOf[typings.reactNative.reactNativeStrings.reduceTransparencyChanged]
+  
   @scala.inline
   def screenReaderChanged: typings.reactNative.reactNativeStrings.screenReaderChanged = "screenReaderChanged".asInstanceOf[typings.reactNative.reactNativeStrings.screenReaderChanged]
 }
-

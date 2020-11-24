@@ -6,11 +6,12 @@ import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pagerDataPartMod.PagerDataPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Paging/AjaxDataProcessor", JSImport.Namespace)
 @js.native
 object ajaxDataProcessorMod extends js.Object {
+  
   type AjaxDataProcessor[TElement] = js.Function3[
     /* data */ js.Any, 
     /* table */ TElement, 
@@ -22,4 +23,3 @@ object ajaxDataProcessorMod extends js.Object {
     ])
   ]
 }
-

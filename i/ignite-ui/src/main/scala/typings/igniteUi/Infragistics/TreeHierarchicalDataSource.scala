@@ -3,16 +3,18 @@ package typings.igniteUi.Infragistics
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TreeHierarchicalDataSource extends js.Object {
+  
   /**
     * Adds a new node to the tree data source. Creates a transaction that can be committed / rolled back
     *
     * @param data the transaction data
     */
   def addNode(data: js.Object): Unit = js.native
+  
   /**
     * Adds a new row to the data source. Creates a transaction that can be committed / rolled back
     *
@@ -21,22 +23,27 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, the datasource will be updated automatically and the transaction is still stored in the accumulated transaction log
     */
   def addRow(rowId: js.Object, rowObject: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Returns a list of all transaction objects that are either pending, or have been committed in the data source.
     */
   def allTransactions(): js.Array[_] = js.native
+  
   /**
     * Analyzes the dataSource setting to automatically determine the type of the data source. Returns the data source type. See settings.type
     */
   def analyzeDataSource(): String = js.native
+  
   /**
     * This clears local filtering applied to the data view by resetting it to the original data and applying any paging.
     */
   def clearLocalFilter(): Unit = js.native
+  
   /**
     * This clears local sorting applied to the data view by resetting it to the original data and applying any paging
     */
   def clearLocalSorting(): Unit = js.native
+  
   /**
     * Clears __matchFiltering property from the data record objects in the filtered data source. The __matchFiltering property determines whether a record matches the specified filtering condition.
     *
@@ -44,6 +51,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def clearMatchFiltering(): Unit = js.native
   def clearMatchFiltering(data: js.Object): Unit = js.native
+  
   /**
     * Update the data source with every transaction from the log
     *
@@ -51,10 +59,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def commit(): Unit = js.native
   def commit(id: Double): Unit = js.native
+  
   /**
     * Returns all of the bound data, without taking into account local paging, sorting, filtering, etc.
     */
   def data(): js.Object = js.native
+  
   /**
     * Data binds to the current data source
     * databinding works using the following workflow:
@@ -79,6 +89,7 @@ trait TreeHierarchicalDataSource extends js.Object {
   def dataBind(callback: js.UndefOr[scala.Nothing], callee: js.Object): Unit = js.native
   def dataBind(callback: String): Unit = js.native
   def dataBind(callback: String, callee: js.Object): Unit = js.native
+  
   /**
     * Gets/sets the dataSource setting. If no parameter is specified, returns settings.dataSource
     *
@@ -86,14 +97,17 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def dataSource(): js.Object = js.native
   def dataSource(ds: js.Object): js.Object = js.native
+  
   /**
     * Returns summaries data
     */
   def dataSummaries(): js.Object = js.native
+  
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted data, i.e. the dataView
     */
   def dataView(): js.Array[_] = js.native
+  
   /**
     * Deletes a row from the data source.
     *
@@ -101,6 +115,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, the datasource will be updated automatically and the transaction is still stored in the accumulated transaction log
     */
   def deleteRow(rowId: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Sets a list of fields to the data source. If no parameter is specified, just returns the already existing list of fields
     *
@@ -108,6 +123,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def fields(): js.Object = js.native
   def fields(fields: js.Object): js.Object = js.native
+  
   /**
     * Filters the data source locally. Remote filtering can be performed by just calling dataBind() and setting the settings.filtering.expressions. The result (filtered data) can be obtained by calling dataView()
     * example: [{fieldName : "firstName", expr: "abc", cond: "StartsWith"}, {fieldName : "lastName"}]
@@ -127,6 +143,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     keepFilterState: Boolean,
     fieldExpressionsOnStrings: js.Object
   ): Unit = js.native
+  
   /**
     * Filters the data source locally by text. If "fields" parameter is set search is performed only in the listed fields otherwise all fields are searched.
     *
@@ -135,6 +152,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def filterByText(expression: String): Unit = js.native
   def filterByText(expression: String, fields: js.Array[_]): Unit = js.native
+  
   /**
     * Gets/sets a list of filtering settings
     *
@@ -142,10 +160,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def filterSettings(): Unit = js.native
   def filterSettings(f: js.Object): Unit = js.native
+  
   /**
     * Returns filtered data if local filtering is applied. If filtering is not applied OR type of filtering is remote returns undefined.
     */
   def filteredData(): js.Array[_] = js.native
+  
   /**
     * Returns a record by a specified key (requires that primaryKey is set in the settings)
     *
@@ -157,10 +177,12 @@ trait TreeHierarchicalDataSource extends js.Object {
   def findRecordByKey(key: js.Object, ds: js.UndefOr[scala.Nothing], objPath: js.Object): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String, objPath: js.Object): js.Object = js.native
+  
   /**
     * Returns the current flat data view
     */
   def flatDataView(): js.Object = js.native
+  
   /**
     * Generates flat data.
     * Returns an object that contains the generated flat data, the flat visible data, records count and visible records count.
@@ -170,10 +192,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def generateFlatData(data: js.Object): js.Object = js.native
   def generateFlatData(data: js.Object, level: Double): js.Object = js.native
+  
   /**
     * Generates a flat data view from the current (hierarchical)data
     */
   def generateFlatDataView(): Unit = js.native
+  
   /**
     * Gets a cell value from the record by the specified fieldName. If there's a mapper defined for the field, the resolved by the mapper value will be returned.
     *
@@ -181,6 +205,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param record the record from which to get it
     */
   def getCellValue(fieldName: String, record: js.Object): js.Object = js.native
+  
   /**
     * Gets the chilren records by the parent record's key in the passed data source
     *
@@ -188,44 +213,53 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param ds the data source
     */
   def getChildrenByKey(key: js.Object, ds: js.Object): js.Object = js.native
+  
   /**
     * Gets the current data bound depth of the tree grid hierarchy.
     */
   def getDataBoundDepth(): Unit = js.native
+  
   /**
     * Returns a standalone object (copy) that represents the commited transactions, but detached from the data source
     *
     * @param t a transaction object
     */
   def getDetachedRecord(t: js.Object): js.Object = js.native
+  
   /**
     * Gets whether the row with the specified id is expanded.Returns true if the row is expanded or false if it's not.
     *
     * @param rowId //The id of the row.
     */
   def getExpandStateById(rowId: String): Boolean = js.native
+  
   /**
     * Gets the count of the filtered records
     */
   def getFilteredRecordsCount(): Double = js.native
+  
   /**
     * Gets the count of the filtered records in the dataView
     */
   def getFilteredRecordsCountFromDataView(): Double = js.native
+  
   /**
     * Returns the total number of match filtering records in the data source.
     * When the dataSource is remote and filtering is applied then it is taken value
     * of property "filtering.countRecords" in metatadata - if set. If it is not set returns totalRecordsCount
     */
   def getFilteringMatchRecordsCount(): Double = js.native
+  
   /**
     * Returns flat data(without taking into account visible/expansion state).
     */
   def getFlatData(): js.Object = js.native
+  
   /**
     * Returns total records count(without taking into account visible/expansion state).
     */
   def getFlatDataCount(): Double = js.native
+  
   /**
     * Returnschild data transformed to flat data
     *
@@ -234,6 +268,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def getFlatDataForRecord(record: js.Object): js.Object = js.native
   def getFlatDataForRecord(record: js.Object, level: Double): js.Object = js.native
+  
   /**
     * Gets the passed record's parent records
     *
@@ -242,30 +277,36 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def getParentRowsForRow(dataRow: js.Object): js.Object = js.native
   def getParentRowsForRow(dataRow: js.Object, ds: js.Object): js.Object = js.native
+  
   /**
     * Gets the path of a record by the record or the record's key
     *
     * @param record
     */
   def getPathBy(record: js.Object): String = js.native
+  
   /**
     * Returns flat visible data.
     */
   def getVisibleFlatData(): js.Object = js.native
+  
   /**
     * Returns collection of data and non-data(grouped) records. Flat representation of hierarchical data
     */
   def groupByData(): js.Array[_] = js.native
+  
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted group-by data
     */
   def groupByDataView(): js.Array[_] = js.native
+  
   /**
     * Gets / sets if the response from the server contains a property which specifies the total number of records in the server-side backend
     *
     * @param hasCount specifies if the data source contains a property that denotes the total number of records in the server-side backend
     */
   def hasTotalRecordsCount(hasCount: Boolean): Unit = js.native
+  
   /**
     * Adds a new row to the data source. Creates a transaction that can be committed / rolled back
     *
@@ -282,6 +323,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     autoCommit: Boolean,
     parentRowId: js.Object
   ): js.Object = js.native
+  
   /**
     * Check whether grouping is applied for the specified sorting expressions.
     *
@@ -289,12 +331,14 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def isGroupByApplied(): Boolean = js.native
   def isGroupByApplied(exprs: js.Array[_]): Boolean = js.native
+  
   /**
     * Check whether the specified gorupby record is collapsed
     *
     * @param gbRec id of the grouped record OR grouped record
     */
   def isGroupByRecordCollapsed(gbRec: js.Object): Boolean = js.native
+  
   /**
     * Gets/Sets whether the data source has been transformed from flat to hierarchical
     *
@@ -302,20 +346,24 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def isTransformedToHierarchicalData(): Unit = js.native
   def isTransformedToHierarchicalData(isTransformed: Boolean): Unit = js.native
+  
   /**
     * Returns metadata object for the specified key
     *
     * @param key Primary key of the record
     */
   def metadata(key: String): js.Object = js.native
+  
   /**
     * Sets the page index to be equal to the next page index and rebinds the data source
     */
   def nextPage(): Unit = js.native
+  
   /**
     * Returns the total number of pages
     */
   def pageCount(): Double = js.native
+  
   /**
     * Gets /sets the current page index. If an index is passed as a parameter, the data source is re-bound.
     *
@@ -323,6 +371,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def pageIndex(): Double = js.native
   def pageIndex(index: Double): Double = js.native
+  
   /**
     * Gets /sets the page size and rebinds the data source if a parameter is specified. If no parameter is passed, returns the current page size
     *
@@ -330,12 +379,14 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def pageSize(): Double = js.native
   def pageSize(s: Double): Double = js.native
+  
   /**
     * For internal use
     *
     * @param dirty
     */
   def pageSizeDirty(dirty: js.Object): Unit = js.native
+  
   /**
     * Gets/sets a list of paging settings
     *
@@ -343,10 +394,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def pagingSettings(): js.Object = js.native
   def pagingSettings(p: js.Object): js.Object = js.native
+  
   /**
     * Returns a list of all transaction objects that are pending to be committed or rolled back to the data source
     */
   def pendingTransactions(): js.Array[_] = js.native
+  
   /**
     * Gets /sets the page index that should be persisted. For now ONLY when filtering is applied and call explicitly DataBind.
     *
@@ -354,10 +407,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def persistedPageIndex(): Double = js.native
   def persistedPageIndex(value: Double): Double = js.native
+  
   /**
     * Sets the page index to be equal to the previous page index and rebinds the data source
     */
   def prevPage(): Unit = js.native
+  
   /**
     * This processes the passed data for the specified level and applies the schema transformation to it.
     *
@@ -369,18 +424,21 @@ trait TreeHierarchicalDataSource extends js.Object {
   def processDataPerLevel(data: js.Object, level: js.UndefOr[scala.Nothing], suppressTransformation: Boolean): js.Object = js.native
   def processDataPerLevel(data: js.Object, level: Double): js.Object = js.native
   def processDataPerLevel(data: js.Object, level: Double, suppressTransformation: Boolean): js.Object = js.native
+  
   /**
     * Returns a list of records for the specified page. Implies that paging is enabled.
     *
     * @param p the page index for which records will be returned
     */
   def recordsForPage(p: Double): Unit = js.native
+  
   /**
     * Removes a node from the tree data source. Creates a transaction that can be committed / rolled back
     *
     * @param data the transaction data
     */
   def removeNode(data: js.Object): Unit = js.native
+  
   /**
     * Removes a record from the data source at specific index.
     *
@@ -388,6 +446,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param origDs
     */
   def removeRecordByIndex(index: Double, origDs: js.Object): Unit = js.native
+  
   /**
     * Removes a specific record denoted by the primaryKey of the passed key parameter from the data source
     *
@@ -395,6 +454,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param origDs
     */
   def removeRecordByKey(key: js.Object, origDs: js.Object): Unit = js.native
+  
   /**
     * Clears the transaction log without updating anything in the data source
     *
@@ -402,6 +462,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def rollback(): Unit = js.native
   def rollback(id: js.Object): Unit = js.native
+  
   /**
     * Posts to the settings.updateUrl using $.ajax, by serializing the changes as url params
     *
@@ -409,6 +470,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param error Specifies a custom function to be called when AJAX request to the updateUrl option fails(optional)
     */
   def saveChanges(success: js.Function, error: js.Function): Unit = js.native
+  
   /**
     * Gets/sets the schema definition.
     *
@@ -419,6 +481,7 @@ trait TreeHierarchicalDataSource extends js.Object {
   def schema(s: js.UndefOr[scala.Nothing], t: String): Unit = js.native
   def schema(s: js.Object): Unit = js.native
   def schema(s: js.Object, t: String): Unit = js.native
+  
   /**
     * Sets a cell value for the cell denoted by rowId and colId. Creates a transaction for the update operation and returns it
     *
@@ -428,6 +491,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, it updates the datasource automatically and the transaction is still stored in the accumulated transaction log
     */
   def setCellValue(rowId: js.Object, colId: js.Object, `val`: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Sets the expanded state of a row by its primary key
     *
@@ -436,6 +500,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param callbackArgs Specifies a custom function to be called when the state of the row is changed.
     */
   def setExpandedStateByPrimaryKey(rowId: String, expanded: Boolean, callbackArgs: js.Function): Unit = js.native
+  
   /**
     * Sets the expanded/collapsed state of a row by its index
     *
@@ -444,10 +509,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param callbackArgs Specifies a custom function to be called when the state of the row is changed.
     */
   def setExpandedStateByRowIndex(index: Double, expanded: Boolean, callbackArgs: js.Function): Unit = js.native
+  
   /**
     * Gets whether the flat data view should be generated by calling the generateFlatDataView method.
     */
   def shouldCallGenerateFlatDataView(): Unit = js.native
+  
   /**
     * Sorts the data source locally. The result (sorted data) can be obtained by calling dataView().
     * Remote filtering can be performed by just calling dataBind() and setting the settings.sorting.expressions
@@ -460,6 +527,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param direction asc / desc direction
     */
   def sort(fields: js.Object, direction: String): Unit = js.native
+  
   /**
     * Sorts the passed data and returns the sorted result.
     *
@@ -473,6 +541,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param direction asc / desc direction
     */
   def sortData(data: js.Object, fields: js.Object, direction: String): Unit = js.native
+  
   /**
     * Sorts the given data recursively
     * fields => an array of fields object definitions:
@@ -485,6 +554,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param direction asc / desc direction
     */
   def sortDataRecursive(data: js.Object, level: Double, fields: js.Object, direction: String): Unit = js.native
+  
   /**
     * Gets/sets a list of paging settings
     *
@@ -492,18 +562,21 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def sortSettings(): js.Object = js.native
   def sortSettings(s: js.Object): js.Object = js.native
+  
   /**
     * Parses the string and returns an evaluated JSON object
     *
     * @param s the JSON as string.
     */
   def stringToJSONObject(s: String): Unit = js.native
+  
   /**
     * Parses a string and returns a XML Document
     *
     * @param s the XML represented as a string
     */
   def stringToXmlObject(s: String): Unit = js.native
+  
   /**
     * Applicable only when the data source is bound to remote data.
     * Gets or sets summaries data.
@@ -517,6 +590,7 @@ trait TreeHierarchicalDataSource extends js.Object {
   def summariesResponse(key: js.UndefOr[scala.Nothing], dsObj: js.Object): js.Object = js.native
   def summariesResponse(key: String): js.Object = js.native
   def summariesResponse(key: String, dsObj: js.Object): js.Object = js.native
+  
   /**
     * Gets/sets a list of summaries settings.
     *
@@ -524,12 +598,14 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def summariesSettings(): Unit = js.native
   def summariesSettings(s: js.Object): Unit = js.native
+  
   /**
     * Converts a HTML TABLE dom element to a JavaScript array of objects that contain the records data
     *
     * @param tableDOM TABLE dom element to transform
     */
   def tableToObject(tableDOM: Element): js.Object = js.native
+  
   /**
     * Toggle grouped record with the specified id and updates collections visible groupby data and data view
     *
@@ -537,6 +613,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param collapsed if true the record should be collapsed, otherwise expanded
     */
   def toggleGroupByRecord(id: String, collapsed: Boolean): Unit = js.native
+  
   /**
     * Toggles the row's state by the row's id.
     *
@@ -544,10 +621,12 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param callbackArgs Specifies a custom function to be called when the state of the row is changed.
     */
   def toggleRow(rowId: String, callbackArgs: js.Function): Unit = js.native
+  
   /**
     * Returns the total number of records in the local data source
     */
   def totalLocalRecordsCount(): Double = js.native
+  
   /**
     * Applicable only when the data source is bound to remote data.
     * Gets / sets the total number of records in the data source.
@@ -596,16 +675,19 @@ trait TreeHierarchicalDataSource extends js.Object {
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.UndefOr[scala.Nothing], context: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
+  
   /**
     * Returns the accumulated transaction log as a string. The purpose of this is to be passed to URLs or used conveniently
     */
   def transactionsAsString(): String = js.native
+  
   /**
     * Transforms flat data to hierararchical data and returns the result
     *
     * @param data The flat data that will be transformed to hierarchical
     */
   def transformToHierarchicalData(data: js.Object): js.Object = js.native
+  
   /**
     * Returns transformed data according to transformed execution:
     * 1. Before paging and filtering
@@ -615,6 +697,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param transformedExecution
     */
   def transformedData(transformedExecution: js.Object): js.Object = js.native
+  
   /**
     * Gets/sets the type of the dataSource. If no parameter is specified, returns settings.type
     *
@@ -623,6 +706,7 @@ trait TreeHierarchicalDataSource extends js.Object {
     */
   def `type`(): String = js.native
   def `type`(t: js.Object): String = js.native
+  
   /**
     * Updates a record in the datasource. Creates a transaction that can be committed / rolled back
     *
@@ -631,9 +715,9 @@ trait TreeHierarchicalDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, the datasource will be updated automatically and the transaction is still stored in the accumulated transaction log
     */
   def updateRow(rowId: js.Object, rowObject: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Returns collection of data and non-data(grouped) records. Returns only visible records(children of collapsed grouped records are not included in the collection)
     */
   def visibleGroupByData(): js.Array[_] = js.native
 }
-

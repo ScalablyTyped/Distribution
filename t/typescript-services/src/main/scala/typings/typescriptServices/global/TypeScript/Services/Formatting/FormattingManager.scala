@@ -5,7 +5,7 @@ import typings.typescriptServices.TypeScript.Services.Formatting.ITextSnapshot
 import typings.typescriptServices.TypeScript.SyntaxTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.Formatting.FormattingManager")
 @js.native
@@ -18,4 +18,3 @@ class FormattingManager protected ()
     editorOptions: EditorOptions
   ) = this()
 }
-

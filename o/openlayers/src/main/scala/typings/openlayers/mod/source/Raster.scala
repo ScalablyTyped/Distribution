@@ -5,7 +5,7 @@ import typings.openlayers.mod.RasterOperation
 import typings.openlayers.mod.olx.source.RasterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -31,6 +31,7 @@ class Raster protected () extends Image {
     * @api
     */
   def this(options: RasterOptions) = this()
+  
   /**
     * Set the operation.
     * @param operation New operation.
@@ -41,4 +42,3 @@ class Raster protected () extends Image {
   def setOperation(operation: RasterOperation): Unit = js.native
   def setOperation(operation: RasterOperation, opt_lib: GlobalObject): Unit = js.native
 }
-

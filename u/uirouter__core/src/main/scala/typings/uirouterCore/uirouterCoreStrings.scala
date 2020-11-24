@@ -5,9 +5,70 @@ import typings.uirouterCore.resolveInterfaceMod._PolicyAsync
 import typings.uirouterCore.urlInterfaceMod.UrlRuleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uirouterCoreStrings {
+  
+  @scala.inline
+  def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
+  
+  @scala.inline
+  def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
+  
+  @scala.inline
+  def NOWAIT: NOWAIT = "NOWAIT".asInstanceOf[NOWAIT]
+  
+  @scala.inline
+  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
+  
+  @scala.inline
+  def RAW: RAW = "RAW".asInstanceOf[RAW]
+  
+  @scala.inline
+  def REGEXP: REGEXP = "REGEXP".asInstanceOf[REGEXP]
+  
+  @scala.inline
+  def STATE: STATE = "STATE".asInstanceOf[STATE]
+  
+  @scala.inline
+  def SameAsCurrent: SameAsCurrent = "SameAsCurrent".asInstanceOf[SameAsCurrent]
+  
+  @scala.inline
+  def SameAsPending: SameAsPending = "SameAsPending".asInstanceOf[SameAsPending]
+  
+  @scala.inline
+  def URLMATCHER: URLMATCHER = "URLMATCHER".asInstanceOf[URLMATCHER]
+  
+  @scala.inline
+  def WAIT: WAIT = "WAIT".asInstanceOf[WAIT]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def deregistered: deregistered = "deregistered".asInstanceOf[deregistered]
+  
+  @scala.inline
+  def otherwise: otherwise = "otherwise".asInstanceOf[otherwise]
+  
+  @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  
+  @scala.inline
+  def registered: registered = "registered".asInstanceOf[registered]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def sref: sref = "sref".asInstanceOf[sref]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  
   @js.native
   sealed trait EAGER extends PolicyWhen
   
@@ -67,46 +128,4 @@ object uirouterCoreStrings {
   
   @js.native
   sealed trait url extends js.Object
-  
-  @scala.inline
-  def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
-  @scala.inline
-  def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
-  @scala.inline
-  def NOWAIT: NOWAIT = "NOWAIT".asInstanceOf[NOWAIT]
-  @scala.inline
-  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
-  @scala.inline
-  def RAW: RAW = "RAW".asInstanceOf[RAW]
-  @scala.inline
-  def REGEXP: REGEXP = "REGEXP".asInstanceOf[REGEXP]
-  @scala.inline
-  def STATE: STATE = "STATE".asInstanceOf[STATE]
-  @scala.inline
-  def SameAsCurrent: SameAsCurrent = "SameAsCurrent".asInstanceOf[SameAsCurrent]
-  @scala.inline
-  def SameAsPending: SameAsPending = "SameAsPending".asInstanceOf[SameAsPending]
-  @scala.inline
-  def URLMATCHER: URLMATCHER = "URLMATCHER".asInstanceOf[URLMATCHER]
-  @scala.inline
-  def WAIT: WAIT = "WAIT".asInstanceOf[WAIT]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def deregistered: deregistered = "deregistered".asInstanceOf[deregistered]
-  @scala.inline
-  def otherwise: otherwise = "otherwise".asInstanceOf[otherwise]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
-  @scala.inline
-  def registered: registered = "registered".asInstanceOf[registered]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def sref: sref = "sref".asInstanceOf[sref]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
 }
-

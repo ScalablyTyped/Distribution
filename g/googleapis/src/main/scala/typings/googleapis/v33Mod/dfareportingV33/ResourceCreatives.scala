@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Creatives")
 @js.native
 class ResourceCreatives protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.creatives.get
     * @desc Gets one creative by ID.
@@ -42,6 +44,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * dfareporting.creatives.insert
     * @desc Inserts a new creative.
@@ -71,6 +74,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * dfareporting.creatives.list
     * @desc Retrieves a list of creatives, possibly filtered. This method
@@ -116,6 +120,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.creatives.patch
     * @desc Updates an existing creative. This method supports patch semantics.
@@ -146,6 +151,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * dfareporting.creatives.update
     * @desc Updates an existing creative.
@@ -176,4 +182,3 @@ class ResourceCreatives protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Cameras/Stereoscopic/stereoscopicArcRotateCamera", JSImport.Namespace)
 @js.native
 object stereoscopicArcRotateCameraMod extends js.Object {
+  
   @js.native
   class StereoscopicArcRotateCamera protected () extends ArcRotateCamera {
     /**
@@ -34,6 +35,4 @@ object stereoscopicArcRotateCameraMod extends js.Object {
       scene: Scene
     ) = this()
   }
-  
 }
-

@@ -5,7 +5,7 @@ import typings.servicenowLondon.servicenowLondonStrings.basic
 import typings.servicenowLondon.servicenowLondonStrings.elevated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The RESTMessageV2 API allows you to send outbound REST messages using JavaScript.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RESTMessageV2 extends js.Object {
+  
   /**
     * Send the REST message to the endpoint.
     *
@@ -31,6 +32,7 @@ trait RESTMessageV2 extends js.Object {
     * var response = sm.execute();
     */
   def execute(): RESTResponseV2 = js.native
+  
   /**
     * Send the REST message to the endpoint asynchronously. The instance does not wait for a
     * response from the web service provider when making asynchronous calls.
@@ -51,6 +53,7 @@ trait RESTMessageV2 extends js.Object {
     * response.waitForResponse(60);
     */
   def executeAsync(): RESTResponseV2 = js.native
+  
   /**
     * Get the URL of the endpoint for the REST message.
     *
@@ -65,6 +68,7 @@ trait RESTMessageV2 extends js.Object {
     * var endpoint = sm.getEndpoint();
     */
   def getEndpoint(): String = js.native
+  
   /**
     * Get the content of the REST message body.
     *
@@ -79,6 +83,7 @@ trait RESTMessageV2 extends js.Object {
     * var body = sm.getRequestBody();
     */
   def getRequestBody(): String = js.native
+  
   /**
     * Get the value for an HTTP header specified in the REST message.
     *
@@ -97,6 +102,7 @@ trait RESTMessageV2 extends js.Object {
     * var header = sm.getRequestHeader("Accept");
     */
   def getRequestHeader(headerName: String): String = js.native
+  
   /**
     * Get HTTP headers that were set by the REST client and the associated values.
     *
@@ -114,6 +120,7 @@ trait RESTMessageV2 extends js.Object {
     * var headers = sm.getRequestHeaders();
     */
   def getRequestHeaders(): js.Object = js.native
+  
   /**
     * Configures the REST message to save the returned response body as an attachment record.
     *
@@ -187,6 +194,7 @@ trait RESTMessageV2 extends js.Object {
     * encrypted using this context.
     */
   def saveResponseBodyAsAttachment(tableName: String, recordSysId: String, fileName: String, encryptContext: String): Unit = js.native
+  
   /**
     * Set the credentials for the REST message using an existing basic auth or OAuth 2.0 profile.
     *
@@ -229,6 +237,7 @@ trait RESTMessageV2 extends js.Object {
     * }
     */
   def setAuthenticationProfile(`type`: String, profileId: String): Unit = js.native
+  
   /**
     * Sets basic authentication headers for the REST message.
     *
@@ -247,6 +256,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setBasicAuth("username","password");
     */
   def setBasicAuth(userName: String, userPass: String): Unit = js.native
+  
   /**
     * Associate outbound requests and the resulting response record in the ECC queue. This method
     * only applies to REST messages sent through a MID Server.
@@ -267,6 +277,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setEccCorrelator("unique_identifier");
     */
   def setEccCorrelator(correlator: String): Unit = js.native
+  
   /**
     * Override a value from the database by writing to the REST message payload. This method only
     * applies to REST messages sent through a MID Server.
@@ -287,6 +298,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setEccParameter("source","http://very.long.endpoint.url");
     */
   def setEccParameter(name: String, value: String): Unit = js.native
+  
   /**
     * Set the endpoint for the REST message.
     *
@@ -302,6 +314,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setEndpoint("http://web.service.endpoint");
     */
   def setEndpoint(endpoint: String): Unit = js.native
+  
   /**
     * The HTTP method this REST message performs, such as GET or PUT.
     *
@@ -314,6 +327,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setHttpMethod("post");
     */
   def setHttpMethod(method: RestHTTPMethods): Unit = js.native
+  
   /**
     * Set the amount of time the REST message waits for a response from the web service provider
     * before the request times out.
@@ -330,6 +344,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setHttpTimeout(6000);
     */
   def setHttpTimeout(timeoutMs: Double): Unit = js.native
+  
   @JSName("setLogLevel")
   def setLogLevel_all(level: all): Unit = js.native
   /**
@@ -350,6 +365,7 @@ trait RESTMessageV2 extends js.Object {
   def setLogLevel_basic(level: basic): Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_elevated(level: elevated): Unit = js.native
+  
   /**
     * Configure the REST message to communicate through a MID Server.
     *
@@ -365,6 +381,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setMIDServer("mid_server_name");
     */
   def setMIDServer(midServer: String): Unit = js.native
+  
   /**
     * Set the mutual authentication protocol profile for the REST message.
     *
@@ -382,6 +399,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setMutualAuth("mutual_auth_profile_name");
     */
   def setMutualAuth(profileName: String): Unit = js.native
+  
   /**
     * Append a parameter to the end of the request URL with the form name=value.
     *
@@ -399,6 +417,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setQueryParameter("sysparm_query","active=true^ORDERBYnumber^ORDERBYDESCcategory");
     */
   def setQueryParameter(name: String, value: String): Unit = js.native
+  
   /**
     * Set the body content to send to the web service provider when using PUT or POST HTTP methods.
     *
@@ -415,6 +434,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setRequestBody(body);
     */
   def setRequestBody(body: String): Unit = js.native
+  
   /**
     * Sets the request body using an existing attachment record.
     *
@@ -444,6 +464,7 @@ trait RESTMessageV2 extends js.Object {
     * })();
     */
   def setRequestBodyFromAttachment(attachmentSysId: String): Unit = js.native
+  
   /**
     * Set the body content of a PUT or POST message using a binary stream.
     *
@@ -454,6 +475,7 @@ trait RESTMessageV2 extends js.Object {
     * service.
     */
   def setRequestBodyFromStream(stream: js.Object): Unit = js.native
+  
   /**
     * Set an HTTP header in the REST message to the specified value.
     *
@@ -469,6 +491,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setRequestHeader("Accept","Application/json");
     */
   def setRequestHeader(name: String, value: String): Unit = js.native
+  
   /**
     * Override the default requestor profile for the REST message in order to retrieve an OAuth
     * access token associated with a different requestor.
@@ -480,6 +503,7 @@ trait RESTMessageV2 extends js.Object {
     * @param requestorId
     */
   def setRequestorProfile(requestorContext: String, requestorId: String): Unit = js.native
+  
   /**
     * Set a REST message function variable with the specified name from the REST message record
     * to the specified value.
@@ -500,6 +524,7 @@ trait RESTMessageV2 extends js.Object {
     * sm.setStringParameter("s","NOW");
     */
   def setStringParameter(name: String, value: String): Unit = js.native
+  
   /**
     * Set a REST message function variable with the specified name from the REST message record to
     * the specified value.
@@ -519,4 +544,3 @@ trait RESTMessageV2 extends js.Object {
     */
   def setStringParameterNoEscape(name: String, value: String): Unit = js.native
 }
-

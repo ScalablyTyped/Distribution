@@ -3,7 +3,7 @@ package typings.googleapis.composerV1Mod.composerV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the selection and configuration of software inside the
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaSoftwareConfig extends js.Object {
+  
   /**
     * Optional. Apache Airflow configuration properties to override.  Property
     * keys contain the section and property names, separated by a hyphen, for
@@ -28,6 +29,7 @@ trait SchemaSoftwareConfig extends js.Object {
     * and cannot be overridden.
     */
   var airflowConfigOverrides: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Optional. Additional environment variables to provide to the Apache
     * Airflow scheduler, worker, and webserver processes.  Environment variable
@@ -40,6 +42,7 @@ trait SchemaSoftwareConfig extends js.Object {
     * `SQL_PASSWORD` * `SQL_PROJECT` * `SQL_REGION` * `SQL_USER`
     */
   var envVariables: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * The version of the software running in the environment. This encapsulates
     * both the version of Cloud Composer functionality and the version of
@@ -59,6 +62,7 @@ trait SchemaSoftwareConfig extends js.Object {
     * [Version List](/composer/docs/concepts/versioning/composer-versions).
     */
   var imageVersion: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Custom Python Package Index (PyPI) packages to be installed in
     * the environment.  Keys refer to the lowercase package name such as
@@ -68,6 +72,7 @@ trait SchemaSoftwareConfig extends js.Object {
     * pinning it to a version specifier, use the empty string as the value.
     */
   var pypiPackages: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Optional. The major version of Python used to run the Apache Airflow
     * scheduler, worker, and webserver processes.  Can be set to &#39;2&#39; or
@@ -76,45 +81,57 @@ trait SchemaSoftwareConfig extends js.Object {
     */
   var pythonVersion: js.UndefOr[String] = js.native
 }
-
 object SchemaSoftwareConfig {
+  
   @scala.inline
   def apply(): SchemaSoftwareConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSoftwareConfig]
   }
+  
   @scala.inline
   implicit class SchemaSoftwareConfigOps[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAirflowConfigOverrides(value: StringDictionary[String]): Self = this.set("airflowConfigOverrides", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAirflowConfigOverrides: Self = this.set("airflowConfigOverrides", js.undefined)
+    
     @scala.inline
     def setEnvVariables(value: StringDictionary[String]): Self = this.set("envVariables", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnvVariables: Self = this.set("envVariables", js.undefined)
+    
     @scala.inline
     def setImageVersion(value: String): Self = this.set("imageVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteImageVersion: Self = this.set("imageVersion", js.undefined)
+    
     @scala.inline
     def setPypiPackages(value: StringDictionary[String]): Self = this.set("pypiPackages", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePypiPackages: Self = this.set("pypiPackages", js.undefined)
+    
     @scala.inline
     def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
   }
-  
 }
-

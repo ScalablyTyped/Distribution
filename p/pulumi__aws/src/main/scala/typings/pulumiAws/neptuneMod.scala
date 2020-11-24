@@ -10,20 +10,36 @@ import typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshotArgs
 import typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshotState
 import typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscriptionArgs
 import typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscriptionState
+import typings.pulumiAws.neptuneGetEngineVersionMod.GetEngineVersionArgs
+import typings.pulumiAws.neptuneGetEngineVersionMod.GetEngineVersionResult
+import typings.pulumiAws.neptuneGetOrderableDbInstanceMod.GetOrderableDbInstanceArgs
+import typings.pulumiAws.neptuneGetOrderableDbInstanceMod.GetOrderableDbInstanceResult
 import typings.pulumiAws.neptuneParameterGroupMod.ParameterGroupArgs
 import typings.pulumiAws.neptuneParameterGroupMod.ParameterGroupState
 import typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroupArgs
 import typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroupState
+import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/neptune", JSImport.Namespace)
 @js.native
 object neptuneMod extends js.Object {
+  
+  def getEngineVersion(): js.Promise[GetEngineVersionResult] = js.native
+  def getEngineVersion(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEngineVersionResult] = js.native
+  def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = js.native
+  def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = js.native
+  
+  def getOrderableDbInstance(): js.Promise[GetOrderableDbInstanceResult] = js.native
+  def getOrderableDbInstance(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = js.native
+  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs): js.Promise[GetOrderableDbInstanceResult] = js.native
+  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs, opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = js.native
+  
   @js.native
   class Cluster protected ()
     extends typings.pulumiAws.neptuneClusterMod.Cluster {
@@ -39,6 +55,30 @@ object neptuneMod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object Cluster extends js.Object {
+    
+    /**
+      * Get an existing Cluster resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/cluster.Cluster */ Boolean = js.native
+  }
   
   @js.native
   class ClusterInstance protected ()
@@ -52,6 +92,30 @@ object neptuneMod extends js.Object {
       */
     def this(name: String, args: ClusterInstanceArgs) = this()
     def this(name: String, args: ClusterInstanceArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object ClusterInstance extends js.Object {
+    
+    /**
+      * Get an existing ClusterInstance resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
+    def get(name: String, id: Input[ID], state: ClusterInstanceState): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
+    def get(name: String, id: Input[ID], state: ClusterInstanceState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ClusterInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterInstance.ClusterInstance */ Boolean = js.native
   }
   
   @js.native
@@ -67,6 +131,30 @@ object neptuneMod extends js.Object {
     def this(name: String, args: ClusterParameterGroupArgs) = this()
     def this(name: String, args: ClusterParameterGroupArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object ClusterParameterGroup extends js.Object {
+    
+    /**
+      * Get an existing ClusterParameterGroup resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: ClusterParameterGroupState): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: ClusterParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterParameterGroup.ClusterParameterGroup */ Boolean = js.native
+  }
   
   @js.native
   class ClusterSnapshot protected ()
@@ -80,6 +168,30 @@ object neptuneMod extends js.Object {
       */
     def this(name: String, args: ClusterSnapshotArgs) = this()
     def this(name: String, args: ClusterSnapshotArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object ClusterSnapshot extends js.Object {
+    
+    /**
+      * Get an existing ClusterSnapshot resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
+    def get(name: String, id: Input[ID], state: ClusterSnapshotState): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
+    def get(name: String, id: Input[ID], state: ClusterSnapshotState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterSnapshot.ClusterSnapshot */ Boolean = js.native
   }
   
   @js.native
@@ -95,6 +207,30 @@ object neptuneMod extends js.Object {
     def this(name: String, args: EventSubscriptionArgs) = this()
     def this(name: String, args: EventSubscriptionArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object EventSubscription extends js.Object {
+    
+    /**
+      * Get an existing EventSubscription resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: EventSubscriptionState): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    
+    /**
+      * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/eventSubscription.EventSubscription */ Boolean = js.native
+  }
   
   @js.native
   class ParameterGroup protected ()
@@ -108,6 +244,30 @@ object neptuneMod extends js.Object {
       */
     def this(name: String, args: ParameterGroupArgs) = this()
     def this(name: String, args: ParameterGroupArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object ParameterGroup extends js.Object {
+    
+    /**
+      * Get an existing ParameterGroup resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/parameterGroup.ParameterGroup */ Boolean = js.native
   }
   
   @js.native
@@ -123,148 +283,10 @@ object neptuneMod extends js.Object {
     def this(name: String, args: SubnetGroupArgs) = this()
     def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Cluster extends js.Object {
-    /**
-      * Get an existing Cluster resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
-    def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
-    /**
-      * Returns true if the given object is an instance of Cluster.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/cluster.Cluster */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ClusterInstance extends js.Object {
-    /**
-      * Get an existing ClusterInstance resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
-    def get(name: String, id: Input[ID], state: ClusterInstanceState): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
-    def get(name: String, id: Input[ID], state: ClusterInstanceState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
-    /**
-      * Returns true if the given object is an instance of ClusterInstance.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterInstance.ClusterInstance */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ClusterParameterGroup extends js.Object {
-    /**
-      * Get an existing ClusterParameterGroup resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
-    def get(name: String, id: Input[ID], state: ClusterParameterGroupState): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
-    def get(name: String, id: Input[ID], state: ClusterParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
-    /**
-      * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterParameterGroup.ClusterParameterGroup */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ClusterSnapshot extends js.Object {
-    /**
-      * Get an existing ClusterSnapshot resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
-    def get(name: String, id: Input[ID], state: ClusterSnapshotState): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
-    def get(name: String, id: Input[ID], state: ClusterSnapshotState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
-    /**
-      * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterSnapshot.ClusterSnapshot */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object EventSubscription extends js.Object {
-    /**
-      * Get an existing EventSubscription resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
-    def get(name: String, id: Input[ID], state: EventSubscriptionState): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
-    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
-    /**
-      * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/eventSubscription.EventSubscription */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ParameterGroup extends js.Object {
-    /**
-      * Get an existing ParameterGroup resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
-    def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
-    def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
-    /**
-      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/parameterGroup.ParameterGroup */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object SubnetGroup extends js.Object {
+    
     /**
       * Get an existing SubnetGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -278,12 +300,11 @@ object neptuneMod extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
+    
     /**
       * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/subnetGroup.SubnetGroup */ Boolean = js.native
   }
-  
 }
-

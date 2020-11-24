@@ -4,7 +4,7 @@ import typings.twilioChat.channelMod.ChannelDescriptor
 import typings.twilioChat.channelMod.ChannelServices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc A Channel represents a remote channel of communication between multiple Programmable Chat Clients
@@ -73,11 +73,10 @@ class Channel protected ()
     */
   def this(services: ChannelServices, descriptor: ChannelDescriptor, sid: String) = this()
 }
-
 /* static members */
 @JSImport("twilio-chat/lib/data/channels", "Channel")
 @js.native
 object Channel extends js.Object {
+  
   var preprocessUpdate: js.Any = js.native
 }
-

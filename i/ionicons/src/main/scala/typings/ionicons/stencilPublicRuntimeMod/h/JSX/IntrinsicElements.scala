@@ -115,15 +115,15 @@ import typings.std.HTMLVideoElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IntrinsicElements
   extends typings.ionicons.stencilPublicRuntimeMod.LocalJSX.IntrinsicElements
      with typings.ionicons.stencilPublicRuntimeMod.JSXBase.IntrinsicElements
      with /* tagName */ StringDictionary[js.Any]
-
 object IntrinsicElements {
+  
   @scala.inline
   def apply(
     a: AnchorHTMLAttributes[HTMLAnchorElement],
@@ -302,4 +302,3 @@ object IntrinsicElements {
     __obj.asInstanceOf[IntrinsicElements]
   }
 }
-

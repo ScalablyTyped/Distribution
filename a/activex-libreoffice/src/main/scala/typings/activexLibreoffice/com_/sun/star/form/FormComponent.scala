@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a component which can be part of a form.
@@ -36,8 +36,8 @@ trait FormComponent
      with XPersistObject
      with XPropertyContainer
      with XPropertyAccess
-
 object FormComponent {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -74,4 +74,3 @@ object FormComponent {
     __obj.asInstanceOf[FormComponent]
   }
 }
-

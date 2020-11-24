@@ -2,13 +2,13 @@ package typings.koPlus.KoPlus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> * / any */ @js.native
 trait Editable[T] extends EditableFunctions
-
 object Editable {
+  
   @scala.inline
   def apply[T](
     beginEdit: () => Unit,
@@ -21,4 +21,3 @@ object Editable {
     __obj.asInstanceOf[Editable[T]]
   }
 }
-

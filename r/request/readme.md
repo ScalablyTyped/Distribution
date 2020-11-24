@@ -10,10 +10,10 @@ Simplified HTTP request client.
 | ------------------ | :-------------: |
 | Full name          | request |
 | Keywords           | http, simple, util, utility |
-| # releases         | 6 |
-| # dependents       | 37060 |
-| # downloads        | 751537803 |
-| # stars            | 1505 |
+| # releases         | 2 |
+| # dependents       | 39000 |
+| # downloads        | 922346652 |
+| # stars            | 1506 |
 
 ## Links
 - [Homepage](https://github.com/request/request#readme)

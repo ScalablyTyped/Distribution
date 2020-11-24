@@ -5,7 +5,7 @@ import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.createPass
 import typings.stellarSdk.horizonApiMod.Horizon.PriceR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.stellarSdk.horizonApiMod.Horizon.BaseResponse because Already inherited
@@ -17,15 +17,24 @@ trait PassiveOfferOperationRecord
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.createPassiveOffer
     ]
      with OperationRecord {
+  
   var amount: String = js.native
+  
   var buying_asset_code: js.UndefOr[String] = js.native
+  
   var buying_asset_issuer: js.UndefOr[String] = js.native
+  
   var buying_asset_type: AssetType = js.native
+  
   var offer_id: Double | String = js.native
+  
   var price: String = js.native
+  
   var price_r: PriceR = js.native
+  
   var selling_asset_code: js.UndefOr[String] = js.native
+  
   var selling_asset_issuer: js.UndefOr[String] = js.native
+  
   var selling_asset_type: AssetType = js.native
 }
-

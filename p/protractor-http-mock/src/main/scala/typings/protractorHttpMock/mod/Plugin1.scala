@@ -9,13 +9,14 @@ import typings.protractorHttpMock.mod.requests.Post
 import typings.protractorHttpMock.mod.requests.Put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Plugin for custom matching logic with 1 generic type.
   */
 @js.native
 trait Plugin1[T1] extends js.Object {
+  
   def `match`[O /* <: Put[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
   @JSName("match")
   def match_O_DeleteT1[O /* <: Delete[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
@@ -37,4 +38,3 @@ trait Plugin1[T1] extends js.Object {
   @JSName("match")
   def match_O_PostT1[O /* <: Post[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
 }
-

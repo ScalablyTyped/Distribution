@@ -8,11 +8,12 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.octokitTypes.routeMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@octokit/plugin-paginate-rest/dist-types/paginate", JSImport.Namespace)
 @js.native
 object paginateMod extends js.Object {
+  
   def paginate(octokit: Octokit, route: RequestInterface[js.Object]): js.Promise[PaginationResults[_]] = js.native
   def paginate(
     octokit: Octokit,
@@ -32,4 +33,3 @@ object paginateMod extends js.Object {
   def paginate(octokit: Octokit, route: Route, parameters: RequestParameters): js.Promise[PaginationResults[_]] = js.native
   def paginate(octokit: Octokit, route: Route, parameters: RequestParameters, mapFn: MapFunction[_, _]): js.Promise[PaginationResults[_]] = js.native
 }
-

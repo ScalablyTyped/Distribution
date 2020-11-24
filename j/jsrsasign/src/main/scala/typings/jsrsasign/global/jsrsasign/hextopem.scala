@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.hextopem")
 @js.native
 object hextopem extends js.Object {
+  
   /**
     * get PEM string from hexadecimal data and header string
     * @param dataHex hexadecimal string of PEM body
@@ -23,4 +24,3 @@ object hextopem extends js.Object {
     */
   def apply(dataHex: String, pemHeader: String): String = js.native
 }
-

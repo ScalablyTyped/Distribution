@@ -11,8 +11,8 @@ slimScroll is a small jQuery plugin that transforms any div into a scrollable ar
 | Full name          | jquery-slimscroll |
 | Keywords           | scrollbar, scroll, slimscroll, scrollable, scrolling, scroller, ui, jquery-plugin, ecosystem:jquery |
 | # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 1169632 |
+| # dependents       | 51 |
+| # downloads        | 1749501 |
 | # stars            | 6 |
 
 ## Links

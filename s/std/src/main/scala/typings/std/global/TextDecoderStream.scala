@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.TextDecoderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TextDecoderStream")
 @js.native
@@ -16,7 +16,6 @@ class TextDecoderStream ()
   def this(label: js.UndefOr[scala.Nothing], options: TextDecoderOptions) = this()
   def this(label: java.lang.String, options: TextDecoderOptions) = this()
 }
-
 @JSGlobal("TextDecoderStream")
 @js.native
 object TextDecoderStream
@@ -27,4 +26,3 @@ object TextDecoderStream
       /* options */ TextDecoderOptions, 
       typings.std.TextDecoderStream
     ]
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassMongoCursor extends ClassObject {
+  
   /**
     * 
     * @brief 查询游标的记录总数
@@ -22,6 +23,7 @@ trait ClassMongoCursor extends ClassObject {
     */
   def count(): Double = js.native
   def count(applySkipLimit: Boolean): Double = js.native
+  
   /**
     * 
     * @brief 遍历全部记录并回调处理函数
@@ -31,6 +33,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def forEach(func: js.Function): Unit = js.native
+  
   /**
     * 
     * @brief 查询当前游标是否有下一条记录
@@ -40,6 +43,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def hasNext(): Boolean = js.native
+  
   /**
     * 
     * @brief 修改 mongodb 服务器缺省索引策略，使用指定的索引进行查询
@@ -50,6 +54,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def hint(opts: js.Object): ClassMongoCursor = js.native
+  
   /**
     * 
     * @brief 指定返回结果的最大记录数
@@ -60,6 +65,7 @@ trait ClassMongoCursor extends ClassObject {
     * @async
     */
   def limit(size: Double): ClassMongoCursor = js.native
+  
   /**
     * 
     * @brief 遍历处理全部记录，并返回处理结果
@@ -70,6 +76,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def map(func: js.Function): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 返回当前游标的下一条记录
@@ -79,6 +86,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def next(): js.Object = js.native
+  
   /**
     * 
     * @brief 查询游标的记录总数，相当于 count(true)
@@ -88,6 +96,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def size(): Double = js.native
+  
   /**
     * 
     * @brief 指定返回结果时跳过的记录数
@@ -98,6 +107,7 @@ trait ClassMongoCursor extends ClassObject {
     * @async
     */
   def skip(num: Double): ClassMongoCursor = js.native
+  
   /**
     * 
     * @brief 设定返回结果的排序
@@ -108,6 +118,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     */
   def sort(opts: js.Object): ClassMongoCursor = js.native
+  
   /**
     * 
     * @brief 返回当前游标全部记录的数组
@@ -118,4 +129,3 @@ trait ClassMongoCursor extends ClassObject {
     */
   def toArray(): js.Array[_] = js.native
 }
-

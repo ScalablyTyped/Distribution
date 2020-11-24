@@ -10,15 +10,15 @@ Noiseless testing framework
 | ------------------ | :-------------: |
 | Full name          | ospec |
 | Keywords           | testing |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 12273 |
+| # downloads        | 33549 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/MithrilJS/mithril.js#readme)
-- [Bugs](https://github.com/MithrilJS/mithril.js/issues)
-- [Repository](https://github.com/MithrilJS/mithril.js)
+- [Homepage](https://github.com/MithrilJS/ospec#readme)
+- [Bugs](https://github.com/MithrilJS/ospec/issues)
+- [Repository](https://github.com/MithrilJS/ospec)
 - [Npm](https://www.npmjs.com/package/ospec)
     
 

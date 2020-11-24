@@ -2,7 +2,7 @@ package typings.emberData.mod.DS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Normally, applications will use the `RESTSerializer` by implementing
@@ -11,29 +11,35 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.RESTSerializer")
 @js.native
 class RESTSerializer () extends JSONSerializer {
+  
   /**
     * `keyForPolymorphicType` can be used to define a custom key when
     * serializing and deserializing a polymorphic type. By default, the
     * returned key is `${key}Type`.
     */
   def keyForPolymorphicType(key: String, typeClass: String, method: String): String = js.native
+  
   def normalize(modelClass: Model, resourceHash: js.Object, prop: String): js.Object = js.native
+  
   /**
     * You can use `payloadKeyFromModelName` to override the root key for an outgoing
     * request. By default, the RESTSerializer returns a camelized version of the
     * model's name.
     */
   def payloadKeyFromModelName[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
+  
   /**
     * `payloadTypeFromModelName` can be used to change the mapping for the type in
     * the payload, taken from the model name.
     */
   def payloadTypeFromModelName[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
+  
   /**
     * This method allows you to push a payload containing top-level
     * collections of records organized per type.
     */
   def pushPayload(store: Store, payload: js.Object): js.Any = js.native
+  
   /**
     * You can use this method to customize the root keys serialized into the JSON.
     * The hash property should be modified by reference (possibly using something like _.extend)
@@ -43,4 +49,3 @@ class RESTSerializer () extends JSONSerializer {
   def serializeIntoHash[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](hash: js.Object, typeClass: Model, snapshot: Snapshot[K]): js.Any = js.native
   def serializeIntoHash[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](hash: js.Object, typeClass: Model, snapshot: Snapshot[K], options: js.Object): js.Any = js.native
 }
-

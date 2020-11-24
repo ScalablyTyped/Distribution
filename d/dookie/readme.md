@@ -10,9 +10,9 @@ Stylus-inspired preprocessor for MongoDB data sets and fixtures
 | ------------------ | :-------------: |
 | Full name          | dookie |
 | Keywords           | mongodb, fixture, fixtures, test, data, dataset, import |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 107189 |
+| # downloads        | 131445 |
 | # stars            | 2 |
 
 ## Links

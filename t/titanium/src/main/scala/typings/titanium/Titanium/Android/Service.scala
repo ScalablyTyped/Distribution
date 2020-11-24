@@ -8,22 +8,14 @@ import typings.titanium.titaniumStrings.stop
 import typings.titanium.titaniumStrings.taskremoved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Android application component that executes in the background.
   */
 @js.native
 trait Service extends Proxy {
-  /**
-    * The intent used to start or bind to the Service.
-    */
-  val intent: Intent = js.native
-  /**
-    * A service can be started more than once -- this number (based on an incrementing integer)
-    * indicates which "start number" in the sequence the current service instance is.
-    */
-  val serviceInstanceId: Double = js.native
+  
   /**
     * Adds the specified callback as an event listener for the named event.
     */
@@ -43,6 +35,7 @@ trait Service extends Proxy {
     name: taskremoved,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ ServiceTaskremovedEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Fires a synthesized event to any registered listeners.
     */
@@ -66,25 +59,35 @@ trait Service extends Proxy {
   def fireEvent_taskremoved(name: taskremoved): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_taskremoved(name: taskremoved, event: ServiceTaskremovedEvent): Unit = js.native
+  
   /**
     * Puts the service into the "background" state and removes its foreground notification.
     */
   def foregroundCancel(): Unit = js.native
+  
   /**
     * Puts the service into the "foreground" state and displays a notification.
     */
   def foregroundNotify(id: Double, notification: Notification): Unit = js.native
   def foregroundNotify(id: Double, notification: Notification, foregroundServiceType: Double): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.Android.Service.intent> property.
     * @deprecated Access <Titanium.Android.Service.intent> instead.
     */
   def getIntent(): Intent = js.native
+  
   /**
     * Gets the value of the <Titanium.Android.Service.serviceInstanceId> property.
     * @deprecated Access <Titanium.Android.Service.serviceInstanceId> instead.
     */
   def getServiceInstanceId(): Double = js.native
+  
+  /**
+    * The intent used to start or bind to the Service.
+    */
+  val intent: Intent = js.native
+  
   /**
     * Removes the specified callback as an event listener for the named event.
     */
@@ -104,13 +107,20 @@ trait Service extends Proxy {
     name: taskremoved,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ ServiceTaskremovedEvent, Unit]
   ): Unit = js.native
+  
+  /**
+    * A service can be started more than once -- this number (based on an incrementing integer)
+    * indicates which "start number" in the sequence the current service instance is.
+    */
+  val serviceInstanceId: Double = js.native
+  
   /**
     * Starts the Service.
     */
   def start(): Unit = js.native
+  
   /**
     * Stops this running instance of the Service.
     */
   def stop(): Unit = js.native
 }
-

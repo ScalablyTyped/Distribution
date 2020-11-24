@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Rellax
@@ -22,6 +22,7 @@ Instantiable0[RellaxInstance]
       /* options */ RellaxOptions, 
       RellaxInstance
     ] {
+  
   /**
     * Inits and starts the Parallax animations
     * @param el Single element or string with selector of elements
@@ -34,4 +35,3 @@ Instantiable0[RellaxInstance]
   def apply(el: Element): RellaxInstance = js.native
   def apply(el: Element, options: RellaxOptions): RellaxInstance = js.native
 }
-

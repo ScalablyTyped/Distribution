@@ -10,9 +10,9 @@ A lightweight and trustworthy URL polyfill for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-url-polyfill |
 | Keywords           | URL, URLSearchParams, polyfill, react native, whatwg-url |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 207459 |
+| # releases         | 10 |
+| # dependents       | 3 |
+| # downloads        | 458351 |
 | # stars            | 0 |
 
 ## Links

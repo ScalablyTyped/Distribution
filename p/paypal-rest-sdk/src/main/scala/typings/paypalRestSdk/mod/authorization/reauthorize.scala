@@ -6,11 +6,12 @@ import typings.paypalRestSdk.mod.AuthorizationResource
 import typings.paypalRestSdk.mod.CallbackFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paypal-rest-sdk", "authorization.reauthorize")
 @js.native
 object reauthorize extends js.Object {
+  
   def apply(id: String, data: RequestOptions): Unit = js.native
   def apply(
     id: String,
@@ -74,4 +75,3 @@ object reauthorize extends js.Object {
     cb: CallbackFunction[AuthorizationResource]
   ): Unit = js.native
 }
-

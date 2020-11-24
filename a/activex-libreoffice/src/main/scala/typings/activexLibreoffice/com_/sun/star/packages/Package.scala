@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.util.ChangesSet
 import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link Package} is a service that provides access to a set of files and folders contained within a {@link Package} . One instance of the {@link
@@ -26,8 +26,8 @@ trait Package
      with XHierarchicalNameAccess
      with XSingleServiceFactory
      with XChangesBatch
-
 object Package {
+  
   @scala.inline
   def apply(
     PendingChanges: ChangesSet,
@@ -47,4 +47,3 @@ object Package {
     __obj.asInstanceOf[Package]
   }
 }
-

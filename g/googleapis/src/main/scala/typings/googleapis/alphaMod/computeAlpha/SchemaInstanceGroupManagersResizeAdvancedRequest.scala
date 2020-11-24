@@ -2,10 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaInstanceGroupManagersResizeAdvancedRequest extends js.Object {
+  
   /**
     * If this flag is true, the managed instance group attempts to create all
     * instances initiated by this resize request only once. If there is an
@@ -24,6 +25,7 @@ trait SchemaInstanceGroupManagersResizeAdvancedRequest extends js.Object {
     * by calling the get or listManagedInstances API.
     */
   var noCreationRetries: js.UndefOr[Boolean] = js.native
+  
   /**
     * The number of running instances that the managed instance group should
     * maintain at any given time. The group automatically adds or removes
@@ -32,33 +34,39 @@ trait SchemaInstanceGroupManagersResizeAdvancedRequest extends js.Object {
     */
   var targetSize: js.UndefOr[Double] = js.native
 }
-
 object SchemaInstanceGroupManagersResizeAdvancedRequest {
+  
   @scala.inline
   def apply(): SchemaInstanceGroupManagersResizeAdvancedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersResizeAdvancedRequest]
   }
+  
   @scala.inline
   implicit class SchemaInstanceGroupManagersResizeAdvancedRequestOps[Self <: SchemaInstanceGroupManagersResizeAdvancedRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setNoCreationRetries(value: Boolean): Self = this.set("noCreationRetries", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNoCreationRetries: Self = this.set("noCreationRetries", js.undefined)
+    
     @scala.inline
     def setTargetSize(value: Double): Self = this.set("targetSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTargetSize: Self = this.set("targetSize", js.undefined)
   }
-  
 }
-

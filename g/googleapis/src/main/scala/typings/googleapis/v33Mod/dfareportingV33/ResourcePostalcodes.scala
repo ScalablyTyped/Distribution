@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Postalcodes")
 @js.native
 class ResourcePostalcodes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.postalCodes.get
     * @desc Gets one postal code by ID.
@@ -42,6 +44,7 @@ class ResourcePostalcodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPostalCode]
   ): Unit = js.native
+  
   /**
     * dfareporting.postalCodes.list
     * @desc Retrieves a list of postal codes.
@@ -74,4 +77,3 @@ class ResourcePostalcodes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPostalCodesListResponse]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A node.js driver for mysql. It is written in JavaScript, does not require compil
 | ------------------ | :-------------: |
 | Full name          | mysql |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 3639 |
-| # downloads        | 23060567 |
+| # releases         | 5 |
+| # dependents       | 4104 |
+| # downloads        | 31847869 |
 | # stars            | 491 |
 
 ## Links

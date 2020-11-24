@@ -11,8 +11,8 @@ An IRC client library for node
 | Full name          | irc |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 173 |
-| # downloads        | 66453 |
+| # dependents       | 172 |
+| # downloads        | 452789 |
 | # stars            | 30 |
 
 ## Links

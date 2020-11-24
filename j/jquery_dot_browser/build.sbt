@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_browser"
-version := "0.1-dt-20200515Z-0267ea"
+version := "0.1-dt-20200515Z-d0c4dd"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

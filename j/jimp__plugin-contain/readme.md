@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-contain
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 contain an image.
@@ -10,9 +10,9 @@ contain an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-contain |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 103 |
 | # dependents       | 1 |
-| # downloads        | 14396112 |
+| # downloads        | 32981750 |
 | # stars            | 0 |
 
 ## Links

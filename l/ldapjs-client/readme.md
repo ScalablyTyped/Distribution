@@ -10,9 +10,9 @@ LDAP js client
 | ------------------ | :-------------: |
 | Full name          | ldapjs-client |
 | Keywords           | LDAP, ldap, client, simple, promised, async |
-| # releases         | 9 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 20204 |
+| # downloads        | 42592 |
 | # stars            | 0 |
 
 ## Links

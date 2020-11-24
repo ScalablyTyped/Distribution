@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UiccAppKind extends js.Object
-
 /** Describes the kinds of UICC applications. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAppKind")
 @js.native
 object UiccAppKind extends js.Object {
+  
   /** CDMA application. */
   @js.native
   sealed trait csim extends UiccAppKind
@@ -38,6 +38,4 @@ object UiccAppKind extends js.Object {
   /** UMTS application. */
   @js.native
   sealed trait usim extends UiccAppKind
-  
 }
-

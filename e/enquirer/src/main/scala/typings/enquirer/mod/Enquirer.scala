@@ -5,10 +5,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Enquirer[T] extends EventEmitter {
+  
   def prompt(
     questions: js.Array[
       PromptOptions | (js.ThisFunction0[/* this */ Enquirer[js.Object], PromptOptions])
@@ -22,6 +23,7 @@ trait Enquirer[T] extends EventEmitter {
     * @param questions Options objects for one or more prompts to run.
     */
   def prompt(questions: PromptOptions): js.Promise[T] = js.native
+  
   def register(
     `type`: String,
     fn: js.Function0[Instantiable1[/* options */ js.UndefOr[PromptOptions], BasePrompt]]
@@ -41,6 +43,7 @@ trait Enquirer[T] extends EventEmitter {
       (Instantiable1[/* options */ js.UndefOr[PromptOptions], BasePrompt]) | (js.Function0[Instantiable1[/* options */ js.UndefOr[PromptOptions], BasePrompt]])
     ]
   ): this.type = js.native
+  
   /**
     * Use an enquirer plugin.
     *
@@ -48,4 +51,3 @@ trait Enquirer[T] extends EventEmitter {
     */
   def use(plugin: js.ThisFunction1[/* this */ this.type, /* enquirer */ this.type, Unit]): this.type = js.native
 }
-

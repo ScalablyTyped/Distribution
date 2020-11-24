@@ -5,7 +5,7 @@ import typings.parse.anon.Size
 import typings.parse.anon.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Parse.File is a local representation of a file that is saved to the Parse
@@ -48,4 +48,3 @@ class File protected ()
   def this(name: String, data: Size, `type`: String) = this()
   def this(name: String, data: Uri, `type`: String) = this()
 }
-

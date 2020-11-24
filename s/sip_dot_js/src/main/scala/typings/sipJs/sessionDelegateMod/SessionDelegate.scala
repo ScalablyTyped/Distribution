@@ -9,20 +9,23 @@ import typings.sipJs.notificationMod.Notification
 import typings.sipJs.referralMod.Referral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SessionDelegate extends js.Object {
+  
   /**
     * Called upon receiving an incoming in dialog BYE request.
     * @param bye - The bye.
     */
   var onBye: js.UndefOr[js.Function1[/* bye */ Bye, Unit]] = js.native
+  
   /**
     * Called upon receiving an incoming in dialog INFO request.
     * @param info - The info.
     */
   var onInfo: js.UndefOr[js.Function1[/* info */ Info, Unit]] = js.native
+  
   /**
     * Called upon receiving an incoming in dialog INVITE request.
     * @param invite - The invite.
@@ -35,11 +38,13 @@ trait SessionDelegate extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /**
     * Called upon receiving an incoming in dialog MESSAGE request.
     * @param message - The message.
     */
   var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.native
+  
   /**
     * Called upon receiving an incoming in dialog NOTIFY request.
     *
@@ -49,11 +54,13 @@ trait SessionDelegate extends js.Object {
     * @param notification - The notification.
     */
   var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.native
+  
   /**
     * Called upon receiving an incoming in dialog REFER request.
     * @param referral - The referral.
     */
   var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.native
+  
   /**
     * Called upon creating a SessionDescriptionHandler.
     *
@@ -87,57 +94,73 @@ trait SessionDelegate extends js.Object {
     ]
   ] = js.native
 }
-
 object SessionDelegate {
+  
   @scala.inline
   def apply(): SessionDelegate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionDelegate]
   }
+  
   @scala.inline
   implicit class SessionDelegateOps[Self <: SessionDelegate] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOnBye(value: /* bye */ Bye => Unit): Self = this.set("onBye", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnBye: Self = this.set("onBye", js.undefined)
+    
     @scala.inline
     def setOnInfo(value: /* info */ Info => Unit): Self = this.set("onInfo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnInfo: Self = this.set("onInfo", js.undefined)
+    
     @scala.inline
     def setOnInvite(
       value: (/* request */ IncomingRequestMessage, /* response */ String, /* statusCode */ Double) => Unit
     ): Self = this.set("onInvite", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteOnInvite: Self = this.set("onInvite", js.undefined)
+    
     @scala.inline
     def setOnMessage(value: /* message */ Message => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    
     @scala.inline
     def setOnNotify(value: /* notification */ Notification => Unit): Self = this.set("onNotify", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnNotify: Self = this.set("onNotify", js.undefined)
+    
     @scala.inline
     def setOnRefer(value: /* referral */ Referral => Unit): Self = this.set("onRefer", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnRefer: Self = this.set("onRefer", js.undefined)
+    
     @scala.inline
     def setOnSessionDescriptionHandler(
       value: (/* sessionDescriptionHandler */ SessionDescriptionHandler, /* provisional */ Boolean) => Unit
     ): Self = this.set("onSessionDescriptionHandler", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnSessionDescriptionHandler: Self = this.set("onSessionDescriptionHandler", js.undefined)
   }
-  
 }
-

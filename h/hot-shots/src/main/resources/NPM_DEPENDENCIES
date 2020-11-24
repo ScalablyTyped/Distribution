@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hot-shots" : "8.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hot-shots" : "8.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

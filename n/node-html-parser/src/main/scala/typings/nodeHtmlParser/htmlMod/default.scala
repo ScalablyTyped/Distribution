@@ -2,7 +2,7 @@ package typings.nodeHtmlParser.htmlMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-html-parser/dist/nodes/html", JSImport.Default)
 @js.native
@@ -29,4 +29,3 @@ class default protected () extends HTMLElement {
     parentNode: typings.nodeHtmlParser.nodeMod.default
   ) = this()
 }
-

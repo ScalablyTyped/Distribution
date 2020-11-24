@@ -4,7 +4,7 @@ import typings.awsSdk.kinesisanalyticsv2Mod.ClientConfiguration
 import typings.awsSdk.kinesisanalyticsv2Mod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "KinesisAnalyticsV2")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class KinesisAnalyticsV2 () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

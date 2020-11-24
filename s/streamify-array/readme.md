@@ -10,9 +10,9 @@ Converts an array into a Node readable stream
 | ------------------ | :-------------: |
 | Full name          | streamify-array |
 | Keywords           | array, stream, readable |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 4659 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 4549 |
 | # stars            | 0 |
 
 ## Links

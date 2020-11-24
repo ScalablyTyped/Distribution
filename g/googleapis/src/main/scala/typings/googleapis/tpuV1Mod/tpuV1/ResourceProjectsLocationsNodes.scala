@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu/v1", "tpu_v1.Resource$Projects$Locations$Nodes")
 @js.native
 class ResourceProjectsLocationsNodes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tpu.projects.locations.nodes.create
     * @desc Creates a node.
@@ -46,6 +48,7 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.nodes.delete
     * @desc Deletes a node.
@@ -77,6 +80,7 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.nodes.get
     * @desc Gets the details of a node.
@@ -105,6 +109,7 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNode]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.nodes.list
     * @desc Lists nodes.
@@ -138,6 +143,7 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListNodesResponse]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.nodes.reimage
     * @desc Reimages a node's OS.
@@ -170,6 +176,7 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.nodes.start
     * @desc Starts a node.
@@ -199,6 +206,7 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.nodes.stop
     * @desc Stops a node.
@@ -229,4 +237,3 @@ class ResourceProjectsLocationsNodes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

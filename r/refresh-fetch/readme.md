@@ -10,9 +10,9 @@ Wrapper around fetch capable of graceful authentication token refreshing.
 | ------------------ | :-------------: |
 | Full name          | refresh-fetch |
 | Keywords           | api, fetch, auth, token, refresh |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 48830 |
+| # downloads        | 114118 |
 | # stars            | 0 |
 
 ## Links

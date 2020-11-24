@@ -12,11 +12,12 @@ import typings.stripe.mod.products.IProductListOptions
 import typings.stripe.mod.products.IProductUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Products")
 @js.native
 class Products () extends js.Object {
+  
   def create(data: IProductCreationOptions): js.Promise[IProduct] = js.native
   /**
     * Creates a new product object.
@@ -24,6 +25,7 @@ class Products () extends js.Object {
   def create(data: IProductCreationOptions, options: HeaderOptions): js.Promise[IProduct] = js.native
   def create(data: IProductCreationOptions, options: HeaderOptions, response: IResponseFn[IProduct]): js.Promise[IProduct] = js.native
   def create(data: IProductCreationOptions, response: IResponseFn[IProduct]): js.Promise[IProduct] = js.native
+  
   def del(productId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * Delete a product. Deleting a product is only possible if it has no SKUs associated with it.
@@ -31,6 +33,7 @@ class Products () extends js.Object {
   def del(productId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def del(productId: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def del(productId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[IProduct] = js.native
   def list(data: IProductListOptions): IListPromise[IProduct] = js.native
   /**
@@ -42,6 +45,7 @@ class Products () extends js.Object {
   def list(options: HeaderOptions): IListPromise[IProduct] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IProduct]]): IListPromise[IProduct] = js.native
   def list(response: IResponseFn[IList[IProduct]]): IListPromise[IProduct] = js.native
+  
   def retrieve(productId: String): js.Promise[IProduct] = js.native
   def retrieve(productId: String, data: IDataOptions): js.Promise[IProduct] = js.native
   /**
@@ -54,6 +58,7 @@ class Products () extends js.Object {
   def retrieve(productId: String, options: HeaderOptions): js.Promise[IProduct] = js.native
   def retrieve(productId: String, options: HeaderOptions, response: IResponseFn[IProduct]): js.Promise[IProduct] = js.native
   def retrieve(productId: String, response: IResponseFn[IProduct]): js.Promise[IProduct] = js.native
+  
   def update(productId: String, data: IProductUpdateOptions): js.Promise[IProduct] = js.native
   /**
     * Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -70,4 +75,3 @@ class Products () extends js.Object {
   ): js.Promise[IProduct] = js.native
   def update(productId: String, data: IProductUpdateOptions, response: IResponseFn[IProduct]): js.Promise[IProduct] = js.native
 }
-

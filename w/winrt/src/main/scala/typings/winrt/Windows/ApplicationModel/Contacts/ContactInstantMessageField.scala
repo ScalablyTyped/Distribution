@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 import typings.winrt.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactInstantMessageField extends IContactInstantMessageField
-
 object ContactInstantMessageField {
+  
   @scala.inline
   def apply(
     category: ContactFieldCategory,
@@ -25,4 +25,3 @@ object ContactInstantMessageField {
     __obj.asInstanceOf[ContactInstantMessageField]
   }
 }
-

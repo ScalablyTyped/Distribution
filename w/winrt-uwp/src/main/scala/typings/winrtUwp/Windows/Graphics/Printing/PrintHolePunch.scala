@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintHolePunch extends js.Object
-
 /** Specifies the hole punch option. */
 @JSGlobal("Windows.Graphics.Printing.PrintHolePunch")
 @js.native
 object PrintHolePunch extends js.Object {
+  
   /** The option to indicate that hole punching required along the bottom edges of the sheets. */
   @js.native
   sealed trait bottomEdge extends PrintHolePunch
@@ -42,6 +42,4 @@ object PrintHolePunch extends js.Object {
   /** The option to indicate that hole punching required along the top edges of the sheets. */
   @js.native
   sealed trait topEdge extends PrintHolePunch
-  
 }
-

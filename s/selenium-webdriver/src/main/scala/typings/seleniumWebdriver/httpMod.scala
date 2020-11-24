@@ -2,11 +2,39 @@ package typings.seleniumWebdriver
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/http", JSImport.Namespace)
 @js.native
 object httpMod extends js.Object {
+  
+  def buildPath(path: String, parameters: js.Object): String = js.native
+  
+  def del(path: String): js.Any = js.native
+  
+  def get(path: String): js.Any = js.native
+  
+  def headersToString(headers: js.Any): String = js.native
+  
+  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = js.native
+  
+  def post(path: String): js.Any = js.native
+  
+  def resource(method: String, path: String): js.Any = js.native
+  
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
+  def sendRequest(
+    options: js.Object,
+    onOk: js.Any,
+    onError: js.Any,
+    opt_data: js.UndefOr[scala.Nothing],
+    opt_proxy: String
+  ): js.Any = js.native
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
+  
+  def tryParse(str: String): js.Any = js.native
+  
   @js.native
   class Executor protected () extends js.Object {
     def this(client: js.Promise[HttpClient]) = this()
@@ -16,6 +44,7 @@ object httpMod extends js.Object {
       *     to the client.
       */
     def this(client: HttpClient) = this()
+    
     /**
       * Defines a new command for use with this executor. When a command is sent,
       * the {@code path} will be preprocessed using the command's parameters; any
@@ -30,6 +59,7 @@ object httpMod extends js.Object {
       *     '/path/:variable/segment'.
       */
     def defineCommand(name: String, method: String, path: String): Unit = js.native
+    
     /** @override */
     def execute(command: js.Any): js.Any = js.native
   }
@@ -47,6 +77,7 @@ object httpMod extends js.Object {
     def this(serverUrl: String, opt_agent: js.Any) = this()
     def this(serverUrl: String, opt_agent: js.UndefOr[scala.Nothing], opt_proxy: String) = this()
     def this(serverUrl: String, opt_agent: js.Any, opt_proxy: String) = this()
+    
     /**
       * Sends a request to the server. The client will automatically follow any
       * redirects returned by the server, fulfilling the returned promise with
@@ -80,24 +111,4 @@ object httpMod extends js.Object {
       */
     def this(status: Double, headers: js.Object, body: String) = this()
   }
-  
-  def buildPath(path: String, parameters: js.Object): String = js.native
-  def del(path: String): js.Any = js.native
-  def get(path: String): js.Any = js.native
-  def headersToString(headers: js.Any): String = js.native
-  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = js.native
-  def post(path: String): js.Any = js.native
-  def resource(method: String, path: String): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
-  def sendRequest(
-    options: js.Object,
-    onOk: js.Any,
-    onError: js.Any,
-    opt_data: js.UndefOr[scala.Nothing],
-    opt_proxy: String
-  ): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
-  def tryParse(str: String): js.Any = js.native
 }
-

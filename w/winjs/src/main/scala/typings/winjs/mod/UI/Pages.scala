@@ -5,7 +5,7 @@ import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.UI.Pages.IPageControlMembers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods for defining and displaying PageControl objects.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "UI.Pages")
 @js.native
 object Pages extends js.Object {
+  
   //#endregion Interfaces
   //#region Objects
   //#endregion Objects
@@ -30,6 +31,7 @@ object Pages extends js.Object {
     /* parentedPromise */ js.UndefOr[Promise[_]], 
     Unit
   ] = js.native
+  
   /**
     * Gets an already-defined page control for the specified URI, or creates a new one.
     * @param uri The URI for the content that defines the page.
@@ -42,6 +44,7 @@ object Pages extends js.Object {
     /* parentedPromise */ js.UndefOr[Promise[_]], 
     Unit
   ] = js.native
+  
   /**
     * Creates a PageControl from the specified URI and inserts it inside the specified element.
     * @param uri The URI for the content that defines the page.
@@ -64,4 +67,3 @@ object Pages extends js.Object {
   def render(uri: String, element: HTMLElement, options: js.Any): Promise[_] = js.native
   def render(uri: String, element: HTMLElement, options: js.Any, parentedPromise: Promise[_]): Promise[_] = js.native
 }
-

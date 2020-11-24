@@ -8,34 +8,54 @@ import typings.openfin.windowMod.WindowGroupChanged
 import typings.openfin.windowMod.WindowHiddenEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ Type in keyof openfin.openfin/_v2/api/events/externalWindow.ExternalWindowEventMapping<string, string> ]: openfin.openfin/_v2/api/events/externalWindow.ExternalWindowEventMapping<'external-window', Type>[Type]} */
 @js.native
 trait ExternalWindowEvents extends js.Object {
+  
   var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String] = js.native
+  
   var blurred: WindowEvent[String, String] = js.native
+  
   var `bounds-changed`: WindowBoundsChange[String, String] = js.native
+  
   var `bounds-changing`: WindowBoundsChange[String, String] = js.native
+  
   var closed: WindowEvent[String, String] = js.native
+  
   var closing: WindowEvent[String, String] = js.native
+  
   var `disabled-movement-bounds-changed`: WindowBoundsChange[String, String] = js.native
+  
   var `disabled-movement-bounds-changing`: WindowBoundsChange[String, String] = js.native
+  
   var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[String, String] = js.native
+  
   var focused: WindowEvent[String, String] = js.native
+  
   var `group-changed`: WindowGroupChanged[String, String] = js.native
+  
   var hidden: WindowHiddenEvent[String, String] = js.native
+  
   var listenerRemoved: String = js.native
+  
   var maximized: WindowEvent[String, String] = js.native
+  
   var minimized: WindowEvent[String, String] = js.native
+  
   var newListener: String = js.native
+  
   var restored: WindowEvent[String, String] = js.native
+  
   var shown: WindowEvent[String, String] = js.native
+  
   var `user-movement-disabled`: WindowEvent[String, String] = js.native
+  
   var `user-movement-enabled`: WindowEvent[String, String] = js.native
 }
-
 object ExternalWindowEvents {
+  
   @scala.inline
   def apply(
     `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String],
@@ -71,58 +91,80 @@ object ExternalWindowEvents {
     __obj.updateDynamic("user-movement-enabled")(`user-movement-enabled`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalWindowEvents]
   }
+  
   @scala.inline
   implicit class ExternalWindowEventsOps[Self <: ExternalWindowEvents] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def `setBegin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[String, String]): Self = this.set("begin-user-bounds-changing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBlurred(value: WindowEvent[String, String]): Self = this.set("blurred", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setBounds-changed`(value: WindowBoundsChange[String, String]): Self = this.set("bounds-changed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setBounds-changing`(value: WindowBoundsChange[String, String]): Self = this.set("bounds-changing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClosed(value: WindowEvent[String, String]): Self = this.set("closed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClosing(value: WindowEvent[String, String]): Self = this.set("closing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setDisabled-movement-bounds-changed`(value: WindowBoundsChange[String, String]): Self = this.set("disabled-movement-bounds-changed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setDisabled-movement-bounds-changing`(value: WindowBoundsChange[String, String]): Self = this.set("disabled-movement-bounds-changing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setEnd-user-bounds-changing`(value: WindowEndBoundsChangingEvent[String, String]): Self = this.set("end-user-bounds-changing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFocused(value: WindowEvent[String, String]): Self = this.set("focused", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setGroup-changed`(value: WindowGroupChanged[String, String]): Self = this.set("group-changed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHidden(value: WindowHiddenEvent[String, String]): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setListenerRemoved(value: String): Self = this.set("listenerRemoved", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaximized(value: WindowEvent[String, String]): Self = this.set("maximized", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinimized(value: WindowEvent[String, String]): Self = this.set("minimized", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNewListener(value: String): Self = this.set("newListener", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRestored(value: WindowEvent[String, String]): Self = this.set("restored", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShown(value: WindowEvent[String, String]): Self = this.set("shown", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setUser-movement-disabled`(value: WindowEvent[String, String]): Self = this.set("user-movement-disabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setUser-movement-enabled`(value: WindowEvent[String, String]): Self = this.set("user-movement-enabled", value.asInstanceOf[js.Any])
   }
-  
 }
-

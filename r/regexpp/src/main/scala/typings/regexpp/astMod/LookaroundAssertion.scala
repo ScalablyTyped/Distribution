@@ -4,7 +4,7 @@ import typings.regexpp.regexppStrings.lookahead
 import typings.regexpp.regexppStrings.lookbehind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.LookaheadAssertion
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait LookaroundAssertion
   extends Assertion
      with BranchNode
-
 object LookaroundAssertion {
+  
   @scala.inline
   def LookaheadAssertion(
     alternatives: js.Array[Alternative],
@@ -30,6 +30,7 @@ object LookaroundAssertion {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookaroundAssertion]
   }
+  
   @scala.inline
   def LookbehindAssertion(
     alternatives: js.Array[Alternative],
@@ -46,4 +47,3 @@ object LookaroundAssertion {
     __obj.asInstanceOf[LookaroundAssertion]
   }
 }
-

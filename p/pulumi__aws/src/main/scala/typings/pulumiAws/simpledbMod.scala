@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/simpledb", JSImport.Namespace)
 @js.native
 object simpledbMod extends js.Object {
+  
   @js.native
   class Domain protected ()
     extends typings.pulumiAws.simpledbDomainMod.Domain {
@@ -27,10 +28,10 @@ object simpledbMod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object Domain extends js.Object {
+    
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,12 +45,11 @@ object simpledbMod extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.simpledbDomainMod.Domain = js.native
     def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.simpledbDomainMod.Domain = js.native
     def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.simpledbDomainMod.Domain = js.native
+    
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/simpledb/domain.Domain */ Boolean = js.native
   }
-  
 }
-

@@ -4,19 +4,19 @@
 Typings are for version 3.5.9
 
 ## Library description:
-A powerful React chart library based G2 for browser
+bizcharts
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bizcharts |
-| Keywords           | visualization, canvas, react, reactjs, chart, react-component, g2, BizCharts |
-| # releases         | 78 |
-| # dependents       | 463 |
-| # downloads        | 760448 |
+| Keywords           | bizcharts, g2 |
+| # releases         | 103 |
+| # dependents       | 516 |
+| # downloads        | 1154010 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://alibaba.github.io/BizCharts/)
+- [Homepage](https://bizcharts.net)
 - [Bugs](https://github.com/alibaba/BizCharts/issues)
 - [Repository](https://github.com/alibaba/BizCharts)
 - [Npm](https://www.npmjs.com/package/bizcharts)

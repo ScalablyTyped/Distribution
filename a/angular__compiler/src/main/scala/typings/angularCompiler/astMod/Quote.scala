@@ -2,7 +2,7 @@ package typings.angularCompiler.astMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "Quote")
 @js.native
@@ -14,8 +14,10 @@ class Quote protected () extends AST {
     uninterpretedExpression: String,
     location: js.Any
   ) = this()
+  
   var location: js.Any = js.native
+  
   var prefix: String = js.native
+  
   var uninterpretedExpression: String = js.native
 }
-

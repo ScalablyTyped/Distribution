@@ -19,7 +19,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChartDocument
@@ -29,8 +29,8 @@ trait ChartDocument
      with XStyleFamiliesSupplier
      with XNumberFormatsSupplier
      with XInitialization
-
 object ChartDocument {
+  
   @scala.inline
   def apply(
     Args: SafeArray[PropertyValue],
@@ -92,4 +92,3 @@ object ChartDocument {
     __obj.asInstanceOf[ChartDocument]
   }
 }
-

@@ -10,9 +10,9 @@ Clear the terminal screen if possible
 | ------------------ | :-------------: |
 | Full name          | clear |
 | Keywords           | ansi, clear, terminal |
-| # releases         | 2 |
-| # dependents       | 1146 |
-| # downloads        | 1545170 |
+| # releases         | 0 |
+| # dependents       | 1630 |
+| # downloads        | 1772897 |
 | # stars            | 18 |
 
 ## Links

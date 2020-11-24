@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.MultiScriptFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Multi Script File suitable for loading by the Loader.
@@ -44,4 +44,3 @@ class MultiScriptFile protected ()
     xhrSettings: XHRSettingsObject
   ) = this()
 }
-

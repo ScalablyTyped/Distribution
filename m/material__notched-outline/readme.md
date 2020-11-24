@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__notched-outline
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the web notched-outline component
@@ -10,9 +10,9 @@ The Material Components for the web notched-outline component
 | ------------------ | :-------------: |
 | Full name          | @material/notched-outline |
 | Keywords           | material components, material design, notchedoutline, notched outline |
-| # releases         | 155 |
-| # dependents       | 26 |
-| # downloads        | 1625763 |
+| # releases         | 658 |
+| # dependents       | 30 |
+| # downloads        | 2666775 |
 | # stars            | 0 |
 
 ## Links

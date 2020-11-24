@@ -2,7 +2,7 @@ package typings.inversify.interfacesMod.interfaces
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.inversify.inversifyStrings.Singleton
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.inversify.inversifyStrings.Request
 */
 trait BindingScope extends js.Object
-
 object BindingScope {
+  
   @scala.inline
   def Request: typings.inversify.inversifyStrings.Request = "Request".asInstanceOf[typings.inversify.inversifyStrings.Request]
+  
   @scala.inline
   def Singleton: typings.inversify.inversifyStrings.Singleton = "Singleton".asInstanceOf[typings.inversify.inversifyStrings.Singleton]
+  
   @scala.inline
   def Transient: typings.inversify.inversifyStrings.Transient = "Transient".asInstanceOf[typings.inversify.inversifyStrings.Transient]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rot-js
 
-Typings are for version 2.1.4
+Typings are for version 2.1.5
 
 ## Library description:
 A roguelike toolkit in JavaScript
@@ -10,9 +10,9 @@ A roguelike toolkit in JavaScript
 | ------------------ | :-------------: |
 | Full name          | rot-js |
 | Keywords           | ascii, dungeon, fov, game, libtcod, lighting, los, rng, rogue, roguelike, tiles |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 3 |
-| # downloads        | 6492 |
+| # downloads        | 7773 |
 | # stars            | 2 |
 
 ## Links

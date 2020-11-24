@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.stateRegistryMod.StateRegistryListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "StateQueueManager")
 @js.native
@@ -17,4 +17,3 @@ class StateQueueManager protected ()
     listeners: js.Array[StateRegistryListener]
   ) = this()
 }
-

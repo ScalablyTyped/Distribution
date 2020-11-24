@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/minimal", "Service")
 @js.native
@@ -17,13 +17,13 @@ class Service protected ()
     * @throws {TypeError} If arguments are invalid
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[js.UndefOr[js.Any]]) = this()
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs/minimal", "Service")
 @js.native
 object Service extends js.Object {
+  
   /**
     * Constructs a service from a service descriptor.
     * @param name Service name
@@ -33,4 +33,3 @@ object Service extends js.Object {
     */
   def fromJSON(name: String, json: IService): typings.apolloProtobufjs.mod.Service = js.native
 }
-

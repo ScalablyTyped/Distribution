@@ -10,9 +10,9 @@ A true BDD framework for JavaScript
 | ------------------ | :-------------: |
 | Full name          | yadda |
 | Keywords           | BDD, Specification, Natural, Test, Behaviour, Driven, Jasmine, Mocha, QUnit, Nodeunit |
-| # releases         | 5 |
-| # dependents       | 36 |
-| # downloads        | 126695 |
+| # releases         | 4 |
+| # dependents       | 34 |
+| # downloads        | 120255 |
 | # stars            | 8 |
 
 ## Links

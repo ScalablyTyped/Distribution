@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "turbolinks"
-version := "5.2-dt-20190315Z-fe7409"
+version := "5.2-dt-20190315Z-0766ab"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -3,18 +3,39 @@ package typings.pulumiPulumi.mod
 import typings.pulumiPulumi.archiveMod.AssetMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi", "asset")
 @js.native
 object asset extends js.Object {
+  
   @js.native
   abstract class Archive ()
     extends typings.pulumiPulumi.assetMod.Archive
+  /* static members */
+  @js.native
+  object Archive extends js.Object {
+    
+    /**
+      * Returns true if the given object is an instance of an Archive.  This is designed to work even when
+      * multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = js.native
+  }
   
   @js.native
   abstract class Asset ()
     extends typings.pulumiPulumi.assetMod.Asset
+  /* static members */
+  @js.native
+  object Asset extends js.Object {
+    
+    /**
+      * Returns true if the given object is an instance of an Asset.  This is designed to work even when
+      * multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = js.native
+  }
   
   @js.native
   class AssetArchive protected ()
@@ -57,26 +78,4 @@ object asset extends js.Object {
     def this(text: String) = this()
     def this(text: js.Promise[String]) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Archive extends js.Object {
-    /**
-      * Returns true if the given object is an instance of an Archive.  This is designed to work even when
-      * multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Asset extends js.Object {
-    /**
-      * Returns true if the given object is an instance of an Asset.  This is designed to work even when
-      * multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = js.native
-  }
-  
 }
-

@@ -10,15 +10,15 @@ Query for the status of any game server in Node.JS
 | ------------------ | :-------------: |
 | Full name          | gamedig |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 5 |
-| # downloads        | 48370 |
+| # releases         | 26 |
+| # dependents       | 6 |
+| # downloads        | 81384 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/sonicsnes/node-gamedig#readme)
-- [Bugs](https://github.com/sonicsnes/node-gamedig/issues)
-- [Repository](https://github.com/sonicsnes/node-gamedig)
+- [Homepage](https://github.com/gamedig/node-gamedig#readme)
+- [Bugs](https://github.com/gamedig/node-gamedig/issues)
+- [Repository](https://github.com/gamedig/node-gamedig)
 - [Npm](https://www.npmjs.com/package/gamedig)
     
 

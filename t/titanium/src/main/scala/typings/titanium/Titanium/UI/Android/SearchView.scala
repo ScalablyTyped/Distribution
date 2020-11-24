@@ -23,41 +23,14 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specialized text field for entering search text.
   */
 @js.native
 trait SearchView extends View {
-  /**
-    * Color of the text in this SearchView, as a color name or hex triplet.
-    */
-  var color: String = js.native
-  /**
-    * Text to show when the search view field is not focused.
-    */
-  var hintText: String = js.native
-  /**
-    * Color of hint text that displays when field is empty.
-    */
-  var hintTextColor: String = js.native
-  /**
-    * Iconifies or expands the search view
-    */
-  var iconified: Boolean = js.native
-  /**
-    * Sets the default or resting state of the search view
-    */
-  var iconifiedByDefault: Boolean = js.native
-  /**
-    * Whether to display the submit button when necessary or never display.
-    */
-  var submitEnabled: Boolean = js.native
-  /**
-    * Value of the search view.
-    */
-  var value: String = js.native
+  
   /**
     * Adds the specified callback as an event listener for the named event.
     */
@@ -81,10 +54,17 @@ trait SearchView extends View {
     name: submit,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchViewSubmitEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Causes the search view to lose focus.
     */
   def blur(): Unit = js.native
+  
+  /**
+    * Color of the text in this SearchView, as a color name or hex triplet.
+    */
+  var color: String = js.native
+  
   /**
     * Fires a synthesized event to any registered listeners.
     */
@@ -136,45 +116,74 @@ trait SearchView extends View {
   def fireEvent_touchstart(name: touchstart, event: SearchViewTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: SearchViewTwofingertapEvent): Unit = js.native
+  
   /**
     * Causes the search view to gain focus.
     */
   def focus(): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.color> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.color> instead.
     */
   def getColor(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.hintText> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.hintText> instead.
     */
   def getHintText(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.hintTextColor> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.hintTextColor> instead.
     */
   def getHintTextColor(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.iconified> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.iconified> instead.
     */
   def getIconified(): Boolean = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.iconifiedByDefault> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.iconifiedByDefault> instead.
     */
   def getIconifiedByDefault(): Boolean = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.submitEnabled> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.submitEnabled> instead.
     */
   def getSubmitEnabled(): Boolean = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.Android.SearchView.value> property.
     * @deprecated Access <Titanium.UI.Android.SearchView.value> instead.
     */
   def getValue(): String = js.native
+  
+  /**
+    * Text to show when the search view field is not focused.
+    */
+  var hintText: String = js.native
+  
+  /**
+    * Color of hint text that displays when field is empty.
+    */
+  var hintTextColor: String = js.native
+  
+  /**
+    * Iconifies or expands the search view
+    */
+  var iconified: Boolean = js.native
+  
+  /**
+    * Sets the default or resting state of the search view
+    */
+  var iconifiedByDefault: Boolean = js.native
+  
   /**
     * Removes the specified callback as an event listener for the named event.
     */
@@ -198,40 +207,56 @@ trait SearchView extends View {
     name: submit,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchViewSubmitEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.color> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.color> instead.
     */
   def setColor(color: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.hintText> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.hintText> instead.
     */
   def setHintText(hintText: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.hintTextColor> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.hintTextColor> instead.
     */
   def setHintTextColor(hintTextColor: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.iconified> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.iconified> instead.
     */
   def setIconified(iconified: Boolean): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.iconifiedByDefault> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.iconifiedByDefault> instead.
     */
   def setIconifiedByDefault(iconifiedByDefault: Boolean): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.submitEnabled> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.submitEnabled> instead.
     */
   def setSubmitEnabled(submitEnabled: Boolean): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.Android.SearchView.value> property.
     * @deprecated Set the value using <Titanium.UI.Android.SearchView.value> instead.
     */
   def setValue(value: String): Unit = js.native
+  
+  /**
+    * Whether to display the submit button when necessary or never display.
+    */
+  var submitEnabled: Boolean = js.native
+  
+  /**
+    * Value of the search view.
+    */
+  var value: String = js.native
 }
-

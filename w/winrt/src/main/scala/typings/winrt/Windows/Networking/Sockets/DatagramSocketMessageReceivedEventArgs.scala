@@ -5,12 +5,12 @@ import typings.winrt.Windows.Storage.Streams.DataReader
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DatagramSocketMessageReceivedEventArgs extends IDatagramSocketMessageReceivedEventArgs
-
 object DatagramSocketMessageReceivedEventArgs {
+  
   @scala.inline
   def apply(
     getDataReader: () => DataReader,
@@ -23,4 +23,3 @@ object DatagramSocketMessageReceivedEventArgs {
     __obj.asInstanceOf[DatagramSocketMessageReceivedEventArgs]
   }
 }
-

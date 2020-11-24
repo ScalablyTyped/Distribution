@@ -3,12 +3,14 @@ package typings.uiGrid.mod.grouping
 import typings.uiGrid.anon.GroupPriority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IColumnDef extends js.Object {
+  
   /** Enable grouping on this column.  Defaults to true. */
   var enableGrouping: js.UndefOr[Boolean] = js.native
+  
   /**
     * Set the grouping for a column.
     * Note that aggregation used to be included in grouping, but is now separately set on the column via
@@ -27,52 +29,64 @@ trait IColumnDef extends js.Object {
     * Defaults to undefined.
     */
   var grouping: js.UndefOr[GroupPriority] = js.native
+  
   /**
     * Show the aggregation menu on this column.  Defaults to true
     * @default true
     */
   var groupingShowAggregationMenu: js.UndefOr[Boolean] = js.native
+  
   /**
     * Show the grouping (group and ungroup items) menu on this column.  Defaults to true
     * @default true
     */
   var groupingShowGroupingMenu: js.UndefOr[Boolean] = js.native
 }
-
 object IColumnDef {
+  
   @scala.inline
   def apply(): IColumnDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnDef]
   }
+  
   @scala.inline
   implicit class IColumnDefOps[Self <: IColumnDef] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEnableGrouping(value: Boolean): Self = this.set("enableGrouping", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnableGrouping: Self = this.set("enableGrouping", js.undefined)
+    
     @scala.inline
     def setGrouping(value: GroupPriority): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGrouping: Self = this.set("grouping", js.undefined)
+    
     @scala.inline
     def setGroupingShowAggregationMenu(value: Boolean): Self = this.set("groupingShowAggregationMenu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGroupingShowAggregationMenu: Self = this.set("groupingShowAggregationMenu", js.undefined)
+    
     @scala.inline
     def setGroupingShowGroupingMenu(value: Boolean): Self = this.set("groupingShowGroupingMenu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGroupingShowGroupingMenu: Self = this.set("groupingShowGroupingMenu", js.undefined)
   }
-  
 }
-

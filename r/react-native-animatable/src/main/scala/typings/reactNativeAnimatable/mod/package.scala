@@ -2,9 +2,10 @@ package typings.reactNativeAnimatable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeAnimatable.reactNativeAnimatableStrings.linear
     - typings.reactNativeAnimatable.reactNativeAnimatableStrings.ease
@@ -38,9 +39,14 @@ package object mod {
     - typings.reactNativeAnimatable.mod.EasingFunction
   */
   type Easing = typings.reactNativeAnimatable.mod._Easing | typings.reactNativeAnimatable.mod.EasingFunction
+  
   type EasingFunction = js.Function1[/* t */ scala.Double, scala.Double]
+  
   type GetPropertyType[B, K /* <: /* keyof B */ java.lang.String */] = /* import warning: importer.ImportType#apply Failed type conversion: B[K] */ js.Any
+  
   type Image = typings.reactNativeAnimatable.mod.AnimatableComponent[typings.reactNative.mod.ImageProperties, typings.reactNative.mod.ImageStyle]
+  
   type Text = typings.reactNativeAnimatable.mod.AnimatableComponent[typings.reactNative.mod.TextProperties, typings.reactNative.mod.TextStyle]
+  
   type View = typings.reactNativeAnimatable.mod.AnimatableComponent[typings.reactNative.mod.ViewProperties, typings.reactNative.mod.ViewStyle]
 }

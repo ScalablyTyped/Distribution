@@ -7,7 +7,7 @@ import typings.qiniu.mod.callback
 import typings.qiniu.mod.conf.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "rs.BucketManager")
 @js.native
@@ -15,14 +15,14 @@ class BucketManager () extends js.Object {
   def this(mac: Mac) = this()
   def this(mac: js.UndefOr[scala.Nothing], config: Config) = this()
   def this(mac: Mac, config: Config) = this()
-  var config: Config = js.native
-  var mac: Mac = js.native
+  
   /**
     * 批量文件管理请求，支持stat，chgm，chtype，delete，copy，move
     * @param operations
     * @param callback
     */
   def batch(operations: js.Any, callback: callback): Unit = js.native
+  
   /**
     * 修改文件的Headers
     * @see TODO
@@ -33,6 +33,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def changeHeaders(bucket: String, key: String, headers: StringDictionary[String], callback: callback): Unit = js.native
+  
   /**
     * 修改文件的类型
     * @see https://developer.qiniu.com/kodo/api/1252/chgm
@@ -43,6 +44,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def changeMime(bucket: String, key: String, newMime: String, callback: callback): Unit = js.native
+  
   /**
     * 修改文件的存储类型
     * @see https://developer.qiniu.com/kodo/api/3710/modify-the-file-type
@@ -53,6 +55,9 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def changeType(bucket: String, key: String, newType: Double, callback: callback): Unit = js.native
+  
+  var config: Config = js.native
+  
   def copy(
     srcBucket: String,
     srcKey: String,
@@ -80,6 +85,7 @@ class BucketManager () extends js.Object {
     options: Force,
     callback: callback
   ): Unit = js.native
+  
   /**
     * 删除资源
     * @see https://developer.qiniu.com/kodo/api/1257/delete
@@ -89,6 +95,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def delete(bucket: String, key: String, callback: callback): Unit = js.native
+  
   /**
     * 更新文件的生命周期
     * @see https://developer.qiniu.com/kodo/api/1732/update-file-lifecycle
@@ -99,6 +106,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def deleteAfterDays(bucket: String, key: String, days: Double, callback: callback): Unit = js.native
+  
   /**
     * 抓取资源
     * @see https://developer.qiniu.com/kodo/api/1263/fetch
@@ -109,6 +117,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def fetch(resUrl: String, bucket: String, key: String, callback: callback): Unit = js.native
+  
   /**
     * 设置空间镜像源
     * @see https://developer.qiniu.com/kodo/api/1370/mirror
@@ -119,6 +128,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def image(bucket: String, srcSiteUrl: String, srcHost: String, callback: callback): Unit = js.native
+  
   def listPrefix(bucket: String, options: Null, callback: callback): Unit = js.native
   /**
     * 获取指定前缀的文件列表
@@ -129,6 +139,9 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def listPrefix(bucket: String, options: ListPrefixOptions, callback: callback): Unit = js.native
+  
+  var mac: Mac = js.native
+  
   def move(
     srcBucket: String,
     srcKey: String,
@@ -156,6 +169,7 @@ class BucketManager () extends js.Object {
     options: Force,
     callback: callback
   ): Unit = js.native
+  
   /**
     * 更新镜像副本
     * @see https://developer.qiniu.com/kodo/api/1293/prefetch
@@ -165,6 +179,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def prefetch(bucket: String, key: String, callback: callback): Unit = js.native
+  
   /**
     * 获取私有空间的下载链接
     * @param domain 空间绑定的域名，比如以http或https开头
@@ -172,12 +187,14 @@ class BucketManager () extends js.Object {
     * @param deadline 文件有效期时间戳（单位秒）
     */
   def privateDownloadUrl(domain: String, fileName: String, deadline: Double): String = js.native
+  
   /**
     * 获取公开空间的下载链接
     * @param domain 空间绑定的域名，比如以http或https开头
     * @param fileName 原始文件名
     */
   def publicDownloadUrl(domain: String, fileName: String): String = js.native
+  
   /**
     * 获取资源信息
     * @see https://developer.qiniu.com/kodo/api/1308/stat
@@ -187,6 +204,7 @@ class BucketManager () extends js.Object {
     * @param callback
     */
   def stat(bucket: String, key: String, callback: callback): Unit = js.native
+  
   /**
     * 取消设置空间镜像源
     * @see https://developer.qiniu.com/kodo/api/1370/mirror
@@ -196,4 +214,3 @@ class BucketManager () extends js.Object {
     */
   def unimage(bucket: String, callback: callback): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects$Groups")
 @js.native
 class ResourceProjectsGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * clouderrorreporting.projects.groups.get
     * @desc Get the specified group.
@@ -41,6 +43,7 @@ class ResourceProjectsGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaErrorGroup]
   ): Unit = js.native
+  
   /**
     * clouderrorreporting.projects.groups.update
     * @desc Replace the data for the specified group. Fails if the group does
@@ -72,4 +75,3 @@ class ResourceProjectsGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaErrorGroup]
   ): Unit = js.native
 }
-

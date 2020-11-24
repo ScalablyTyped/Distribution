@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Template")
 @js.native
 class ResourceTemplate protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fusiontables.template.delete
     * @desc Deletes a template
@@ -38,6 +40,7 @@ class ResourceTemplate protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTemplateDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTemplateDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * fusiontables.template.get
     * @desc Retrieves a specific template by its id
@@ -67,6 +70,7 @@ class ResourceTemplate protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTemplate]
   ): Unit = js.native
+  
   /**
     * fusiontables.template.insert
     * @desc Creates a new template for the table.
@@ -96,6 +100,7 @@ class ResourceTemplate protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTemplate]
   ): Unit = js.native
+  
   /**
     * fusiontables.template.list
     * @desc Retrieves a list of templates.
@@ -126,6 +131,7 @@ class ResourceTemplate protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTemplateList]
   ): Unit = js.native
+  
   /**
     * fusiontables.template.patch
     * @desc Updates an existing template. This method supports patch semantics.
@@ -156,6 +162,7 @@ class ResourceTemplate protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTemplate]
   ): Unit = js.native
+  
   /**
     * fusiontables.template.update
     * @desc Updates an existing template
@@ -187,4 +194,3 @@ class ResourceTemplate protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTemplate]
   ): Unit = js.native
 }
-

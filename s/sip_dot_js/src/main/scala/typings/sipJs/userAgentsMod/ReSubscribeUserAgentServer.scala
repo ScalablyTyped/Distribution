@@ -5,7 +5,7 @@ import typings.sipJs.incomingRequestMod.IncomingRequestDelegate
 import typings.sipJs.messagesMod.IncomingRequestMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/user-agents", "ReSubscribeUserAgentServer")
 @js.native
@@ -14,4 +14,3 @@ class ReSubscribeUserAgentServer protected ()
   def this(dialog: Dialog, message: IncomingRequestMessage) = this()
   def this(dialog: Dialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
 }
-

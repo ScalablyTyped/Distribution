@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "AmmoJSPlugin")
 @js.native
@@ -15,16 +15,33 @@ import scala.scalajs.js.annotation._
 class AmmoJSPlugin ()
   extends typings.babylonjs.indexMod.AmmoJSPlugin {
   def this(_useDeltaForWorldStep: Boolean) = this()
+  def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], ammoInjection: js.Any) = this()
   def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
+  def this(
+    _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
+    ammoInjection: js.UndefOr[scala.Nothing],
+    overlappingPairCache: js.Any
+  ) = this()
+  def this(
+    _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
+    ammoInjection: js.Any,
+    overlappingPairCache: js.Any
+  ) = this()
+  def this(
+    _useDeltaForWorldStep: Boolean,
+    ammoInjection: js.UndefOr[scala.Nothing],
+    overlappingPairCache: js.Any
+  ) = this()
   def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "AmmoJSPlugin")
 @js.native
 object AmmoJSPlugin extends js.Object {
+  
   val DISABLE_COLLISION_FLAG: js.Any = js.native
+  
   val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
+  
   val KINEMATIC_FLAG: js.Any = js.native
 }
-

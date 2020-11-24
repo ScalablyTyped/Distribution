@@ -3,11 +3,12 @@ package typings.stompit.clientMod
 import typings.stompit.incomingFrameStreamMod.IncomingFrame
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Message extends IncomingFrame {
+  
   def ack(): Unit = js.native
+  
   def nack(): Unit = js.native
 }
-

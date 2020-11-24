@@ -11,8 +11,8 @@ Windows Azure Active Directory Client Library for js
 | Full name          | adal-angular |
 | Keywords           | implicit, js, AAD, adal, oauth |
 | # releases         | 2 |
-| # dependents       | 222 |
-| # downloads        | 1681500 |
+| # dependents       | 264 |
+| # downloads        | 2078800 |
 | # stars            | 0 |
 
 ## Links

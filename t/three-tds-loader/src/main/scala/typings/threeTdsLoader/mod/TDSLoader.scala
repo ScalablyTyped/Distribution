@@ -14,10 +14,11 @@ import typings.three.mod.Object3D
 import typings.three.mod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TDSLoader extends js.Object {
+  
   /**
     * Print debug message to the console.
     *
@@ -26,12 +27,14 @@ trait TDSLoader extends js.Object {
     * @param message Debug message to print to the console.
     */
   def debugMessage(message: String): Unit = js.native
+  
   /**
     * Set position to the end of the current chunk of data.
     *
     * @param chunk Data chunk.
     */
   def endChunk(chunk: js.Object): Unit = js.native
+  
   /**
     * Load 3ds file from url.
     *
@@ -58,6 +61,7 @@ trait TDSLoader extends js.Object {
     onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit],
     onError: js.Function1[/* event */ ErrorEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Move to the next data chunk.
     *
@@ -65,6 +69,7 @@ trait TDSLoader extends js.Object {
     * @param chunk Data chunk.
     */
   def nextChunk(data: DataView, chunk: js.Object): Double = js.native
+  
   /**
     * Parse arraybuffer data and load 3ds file.
     *
@@ -73,6 +78,7 @@ trait TDSLoader extends js.Object {
     * @return Group loaded from 3ds file.
     */
   def parse(arraybuffer: ArrayBuffer, path: String): Object3D = js.native
+  
   /**
     * Read byte value.
     *
@@ -80,6 +86,7 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readByte(data: DataView): Double = js.native
+  
   /**
     * Read next chunk of data.
     *
@@ -87,6 +94,7 @@ trait TDSLoader extends js.Object {
     * @return Chunk of data read.
     */
   def readChunk(data: DataView): js.Object = js.native
+  
   /**
     * Read a color value.
     *
@@ -94,6 +102,7 @@ trait TDSLoader extends js.Object {
     * @return Color value read..
     */
   def readColor(data: DataView): Color = js.native
+  
   /**
     * Read 64 bit unsigned integer value.
     *
@@ -101,6 +110,7 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readDWord(data: DataView): Double = js.native
+  
   /**
     * Read face array data chunk.
     *
@@ -108,12 +118,14 @@ trait TDSLoader extends js.Object {
     * @param mesh Mesh to be filled with the data read.
     */
   def readFaceArray(data: DataView, mesh: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]]): Unit = js.native
+  
   /**
     * Decode file content to read 3ds data.
     *
     * @param arraybuffer Arraybuffer data to be loaded.
     */
   def readFile(arraybuffer: ArrayBuffer, path: String): Unit = js.native
+  
   /**
     * Read 32 bit float value.
     *
@@ -121,6 +133,7 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readFloat(data: DataView): Double = js.native
+  
   /**
     * Read 32 bit signed integer value.
     *
@@ -128,6 +141,7 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readInt(data: DataView): Double = js.native
+  
   /**
     * Read texture map data chunk.
     *
@@ -135,12 +149,14 @@ trait TDSLoader extends js.Object {
     * @return Texture read from this data chunk.
     */
   def readMap(data: DataView, path: String): Texture = js.native
+  
   /**
     * Read material data chunk and add it to the material list.
     *
     * @param data Dataview in use.
     */
   def readMaterialEntry(data: DataView, path: String): Unit = js.native
+  
   /**
     * Read material group data chunk.
     *
@@ -148,24 +164,28 @@ trait TDSLoader extends js.Object {
     * @return object with name and index of the object.
     */
   def readMaterialGroup(data: DataView): js.Object = js.native
+  
   /**
     * Read mesh data chunk.
     *
     * @param data Dataview in use.
     */
   def readMesh(data: DataView): Unit = js.native
+  
   /**
     * Read mesh data chunk.
     *
     * @param data Dataview in use.
     */
   def readMeshData(data: DataView, path: String): Unit = js.native
+  
   /**
     * Read named object chunk.
     *
     * @param data Dataview in use.
     */
   def readNamedobject(data: DataView): Unit = js.native
+  
   /**
     * Read 16 bit signed integer value.
     *
@@ -173,6 +193,7 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readShort(data: DataView): Double = js.native
+  
   /**
     * Read string value.
     *
@@ -181,6 +202,7 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readString(data: DataView, maxLength: Double): String = js.native
+  
   /**
     * Read 32 bit unsigned integer value.
     *
@@ -188,10 +210,12 @@ trait TDSLoader extends js.Object {
     * @return Data read from the dataview.
     */
   def readWord(data: DataView): Double = js.native
+  
   /**
     * Reset dataview position.
     */
   def resetPosition(): Unit = js.native
+  
   /**
     * Set resource path used to determine the file path to attached resources.
     *
@@ -200,4 +224,3 @@ trait TDSLoader extends js.Object {
     */
   def setPath(path: String): TDSLoader = js.native
 }
-

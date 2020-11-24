@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.miniprogramWxs.Module
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 模块
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("module")
 @js.native
 object module extends TopLevel[Module]
-

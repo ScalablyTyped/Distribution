@@ -3,11 +3,12 @@ package typings.luminoDatagrid.datamodelMod
 import typings.luminoDatagrid.datamodelMod.DataModel.CellRegion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/datamodel", "MutableDataModel")
 @js.native
 abstract class MutableDataModel () extends DataModel {
+  
   /**
     * Set the data value for a cell in the data model.
     *
@@ -22,4 +23,3 @@ abstract class MutableDataModel () extends DataModel {
     */
   def setData(region: CellRegion, row: Double, column: Double, value: js.Any): Boolean = js.native
 }
-

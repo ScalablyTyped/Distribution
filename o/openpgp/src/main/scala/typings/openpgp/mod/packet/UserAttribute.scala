@@ -3,7 +3,7 @@ package typings.openpgp.mod.packet
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.UserAttribute")
 @js.native
@@ -23,21 +23,23 @@ import scala.scalajs.js.annotation._
   * an implementation may use any method desired.
   */
 class UserAttribute () extends js.Object {
+  
   /**
     * Compare for equality
     * @param usrAttr
     * @returns true if equal
     */
   def equals(usrAttr: UserAttribute): Boolean = js.native
+  
   /**
     * parsing function for a user attribute packet (tag 17).
     * @param input payload of a tag 17 packet
     */
   def read(input: Uint8Array): Unit = js.native
+  
   /**
     * Creates a binary representation of the user attribute packet
     * @returns string representation
     */
   def write(): Uint8Array = js.native
 }
-

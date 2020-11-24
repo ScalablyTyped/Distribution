@@ -5,7 +5,7 @@ import typings.xrm.Xrm.Collection.MatchingDelegate
 import typings.xrm.Xrm.Controls.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for formContext
@@ -13,16 +13,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FormContext extends js.Object {
+  
   /**
     * Provides methods to work with the form.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data External Link: formContext.data (Client API reference)}
     */
   var data: Data = js.native
-  /**
-    * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
-    */
-  var ui: Ui = js.native
+  
   /**
     * Gets all attributes.
     * @returns An array of attributes.
@@ -55,6 +52,7 @@ trait FormContext extends js.Object {
     */
   @JSName("getAttribute")
   def getAttribute_T_Attribute_T[T /* <: Attribute */](attributeName: String): T = js.native
+  
   /**
     * Gets all controls.
     * @returns An array of controls.
@@ -95,5 +93,10 @@ trait FormContext extends js.Object {
     */
   @JSName("getControl")
   def getControl_T_Control_T[T /* <: Control */](index: Double): T = js.native
+  
+  /**
+    * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
+    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
+    */
+  var ui: Ui = js.native
 }
-

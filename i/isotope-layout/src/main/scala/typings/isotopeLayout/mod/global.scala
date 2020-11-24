@@ -22,18 +22,21 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait JQuery extends js.Object {
+    
     /**
       * Get the Isotope instance from a jQuery object. Isotope instances are useful to access Isotope properties.
       */
     @JSName("data")
     def data_isotope(methodName: isotope): Isotope = js.native
+    
     /**
       * Filters, sorts, and lays out items.
       */
@@ -143,6 +146,4 @@ object global extends js.Object {
     @JSName("isotope")
     def isotope_updateSortData(methodName: updateSortData, elements: Elements): JQuery = js.native
   }
-  
 }
-

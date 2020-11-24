@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_WebSocketMessage")
 @js.native
@@ -55,4 +55,3 @@ class ClassWebSocketMessage ()
   def this(`type`: Double, masked: Boolean, compress: js.UndefOr[scala.Nothing], maxSize: Double) = this()
   def this(`type`: Double, masked: Boolean, compress: Boolean, maxSize: Double) = this()
 }
-

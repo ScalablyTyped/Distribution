@@ -12,7 +12,7 @@ A library that simplifies adding koji-specific features to any javascript projec
 | Keywords           | koji, devtool |
 | # releases         | 28 |
 | # dependents       | 0 |
-| # downloads        | 14929 |
+| # downloads        | 8475 |
 | # stars            | 0 |
 
 ## Links

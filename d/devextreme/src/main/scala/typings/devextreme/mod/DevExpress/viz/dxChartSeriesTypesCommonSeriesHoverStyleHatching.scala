@@ -5,55 +5,79 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @name dxChartSeriesTypes.CommonSeries.hoverStyle.hatching */
+/**
+  * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching]
+  */
 @js.native
 trait dxChartSeriesTypesCommonSeriesHoverStyleHatching extends js.Object {
-  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.direction */
+  
+  /**
+    * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.direction]
+    */
   var direction: js.UndefOr[left | none | right] = js.native
-  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.opacity */
+  
+  /**
+    * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.opacity]
+    */
   var opacity: js.UndefOr[Double] = js.native
-  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.step */
+  
+  /**
+    * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.step]
+    */
   var step: js.UndefOr[Double] = js.native
-  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.width */
+  
+  /**
+    * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.width]
+    */
   var width: js.UndefOr[Double] = js.native
 }
-
 object dxChartSeriesTypesCommonSeriesHoverStyleHatching {
+  
   @scala.inline
   def apply(): dxChartSeriesTypesCommonSeriesHoverStyleHatching = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesHoverStyleHatching]
   }
+  
   @scala.inline
   implicit class dxChartSeriesTypesCommonSeriesHoverStyleHatchingOps[Self <: dxChartSeriesTypesCommonSeriesHoverStyleHatching] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDirection(value: left | none | right): Self = this.set("direction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDirection: Self = this.set("direction", js.undefined)
+    
     @scala.inline
     def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOpacity: Self = this.set("opacity", js.undefined)
+    
     @scala.inline
     def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStep: Self = this.set("step", js.undefined)
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }
-  
 }
-

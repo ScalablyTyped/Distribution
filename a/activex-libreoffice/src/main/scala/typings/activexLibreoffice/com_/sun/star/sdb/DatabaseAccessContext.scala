@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XLocalizedAliases
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the context for data access beans. It allows to register aliases for database access beans. It is possible to have different aliases for different
@@ -32,8 +32,8 @@ trait DatabaseAccessContext
      with XNameAccess
      with XLocalizedAliases
      with XLocalizable
-
 object DatabaseAccessContext {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -63,4 +63,3 @@ object DatabaseAccessContext {
     __obj.asInstanceOf[DatabaseAccessContext]
   }
 }
-

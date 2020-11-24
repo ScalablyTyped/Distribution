@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/cache-in-memory" : "4.3.1"
+      "@algolia/cache-in-memory" : "4.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/cache-in-memory" : "4.3.1"
+      "@algolia/cache-in-memory" : "4.8.0"
     }
   ],
   "compile-devDependencies" : [

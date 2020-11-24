@@ -10,18 +10,20 @@ import typings.arcgisJsApi.arcgisJsApiStrings.informative
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NAMessage
   extends Accessor
      with JSONSupport {
+  
   /**
     * A description of the network analyst message.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html#description)
     */
   var description: String = js.native
+  
   /**
     * The network analyst message type.
     *
@@ -29,4 +31,3 @@ trait NAMessage
     */
   var `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = js.native
 }
-

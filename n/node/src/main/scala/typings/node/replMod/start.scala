@@ -2,11 +2,12 @@ package typings.node.replMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("repl", "start")
 @js.native
 object start extends js.Object {
+  
   /**
     * Creates and starts a `repl.REPLServer` instance.
     *
@@ -17,4 +18,3 @@ object start extends js.Object {
   def apply(options: String): REPLServer = js.native
   def apply(options: ReplOptions): REPLServer = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.Manifest")
 @js.native
@@ -16,4 +16,3 @@ class Manifest protected ()
   def this(oManifest: js.Any) = this()
   def this(oManifest: js.Any, mOptions: js.Any) = this()
 }
-

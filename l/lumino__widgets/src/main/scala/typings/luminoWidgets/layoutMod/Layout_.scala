@@ -10,7 +10,7 @@ import typings.luminoWidgets.widgetMod.Widget.ChildMessage
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/layout", "Layout")
 @js.native
@@ -23,9 +23,13 @@ abstract class Layout_ ()
   extends IIterable[Widget]
      with IDisposable {
   def this(options: IOptions) = this()
+  
   var _disposed: js.Any = js.native
+  
   var _fitPolicy: js.Any = js.native
+  
   var _parent: js.Any = js.native
+  
   /**
     * Get the fit policy for the layout.
     *
@@ -48,17 +52,7 @@ abstract class Layout_ ()
     * for the parent widget and then re-fit the parent.
     */
   var fitPolicy: FitPolicy = js.native
-  /**
-    * Get the parent widget of the layout.
-    */
-  /**
-    * Set the parent widget of the layout.
-    *
-    * #### Notes
-    * This is set automatically when installing the layout on the parent
-    * widget. The parent widget should not be set directly by user code.
-    */
-  var parent: Widget | Null = js.native
+  
   /**
     * Perform layout initialization which requires the parent widget.
     *
@@ -73,6 +67,7 @@ abstract class Layout_ ()
     * widget nodes to the parent widget's node.
     */
   /* protected */ def init(): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-attach'` message.
     *
@@ -84,6 +79,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onAfterAttach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-detach'` message.
     *
@@ -95,6 +91,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onAfterDetach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-hide'` message.
     *
@@ -106,6 +103,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onAfterHide(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-show'` message.
     *
@@ -117,6 +115,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onAfterShow(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-attach'` message.
     *
@@ -128,6 +127,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onBeforeAttach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-detach'` message.
     *
@@ -139,6 +139,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onBeforeDetach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-hide'` message.
     *
@@ -150,6 +151,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onBeforeHide(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-show'` message.
     *
@@ -161,6 +163,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onBeforeShow(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'child-hidden'` message.
     *
@@ -168,6 +171,7 @@ abstract class Layout_ ()
     * The default implementation of this handler is a no-op.
     */
   /* protected */ def onChildHidden(msg: ChildMessage): Unit = js.native
+  
   /**
     * A message handler invoked on a `'child-removed'` message.
     *
@@ -177,6 +181,7 @@ abstract class Layout_ ()
     * Subclasses should **not** typically reimplement this method.
     */
   /* protected */ def onChildRemoved(msg: ChildMessage): Unit = js.native
+  
   /**
     * A message handler invoked on a `'child-shown'` message.
     *
@@ -184,6 +189,7 @@ abstract class Layout_ ()
     * The default implementation of this handler is a no-op.
     */
   /* protected */ def onChildShown(msg: ChildMessage): Unit = js.native
+  
   /**
     * A message handler invoked on a `'fit-request'` message.
     *
@@ -191,6 +197,7 @@ abstract class Layout_ ()
     * The default implementation of this handler is a no-op.
     */
   /* protected */ def onFitRequest(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'resize'` message.
     *
@@ -205,6 +212,7 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onResize(msg: ResizeMessage): Unit = js.native
+  
   /**
     * A message handler invoked on an `'update-request'` message.
     *
@@ -219,6 +227,19 @@ abstract class Layout_ ()
     * This may be reimplemented by subclasses as needed.
     */
   /* protected */ def onUpdateRequest(msg: Message): Unit = js.native
+  
+  /**
+    * Get the parent widget of the layout.
+    */
+  /**
+    * Set the parent widget of the layout.
+    *
+    * #### Notes
+    * This is set automatically when installing the layout on the parent
+    * widget. The parent widget should not be set directly by user code.
+    */
+  var parent: Widget | Null = js.native
+  
   /**
     * Process a message sent to the parent widget.
     *
@@ -230,6 +251,7 @@ abstract class Layout_ ()
     * Subclasses may reimplement this method as needed.
     */
   def processParentMessage(msg: Message): Unit = js.native
+  
   /**
     * Remove a widget from the layout.
     *
@@ -245,4 +267,3 @@ abstract class Layout_ ()
     */
   def removeWidget(widget: Widget): Unit = js.native
 }
-

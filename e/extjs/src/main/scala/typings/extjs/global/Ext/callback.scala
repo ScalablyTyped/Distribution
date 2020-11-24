@@ -2,11 +2,12 @@ package typings.extjs.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.callback")
 @js.native
 object callback extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     callback: js.UndefOr[scala.Nothing],
@@ -38,4 +39,3 @@ object callback extends js.Object {
   def apply(callback: js.Any, scope: js.Any, args: typings.extjs.Ext.Array): js.Any = js.native
   def apply(callback: js.Any, scope: js.Any, args: typings.extjs.Ext.Array, delay: Double): js.Any = js.native
 }
-

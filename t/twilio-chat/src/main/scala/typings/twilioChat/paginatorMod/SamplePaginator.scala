@@ -2,7 +2,7 @@ package typings.twilioChat.paginatorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc Pagination helper class.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-chat/lib/interfaces/paginator", "SamplePaginator")
 @js.native
 class SamplePaginator[T] () extends Paginator[T]
-

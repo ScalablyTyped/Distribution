@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to register Out-Parameters for stored procedures.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XOutParameters extends XInterface {
+  
   /**
     * registers the OUT parameter in ordinal position `parameterIndex` to the SDBC type `sqlType` . All OUT parameters must be registered before a stored
     * procedure is executed.
@@ -28,6 +29,7 @@ trait XOutParameters extends XInterface {
     * @throws SQLException if a database access error occurs.
     */
   def registerNumericOutParameter(parameterIndex: Double, sqlType: Double, scale: Double): Unit = js.native
+  
   /**
     * registers the designated output parameter. This version of the method {@link com.sun.star.sdbc.XOutParameters.registerOutParameter()} should be used
     * for a user-named or REF output parameter. Examples of user-named types include: STRUCT, DISTINCT, OBJECT, and named array types.
@@ -50,8 +52,8 @@ trait XOutParameters extends XInterface {
     */
   def registerOutParameter(parameterIndex: Double, sqlType: Double, typeName: String): Unit = js.native
 }
-
 object XOutParameters {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -63,22 +65,26 @@ object XOutParameters {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), registerNumericOutParameter = js.Any.fromFunction3(registerNumericOutParameter), registerOutParameter = js.Any.fromFunction3(registerOutParameter), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XOutParameters]
   }
+  
   @scala.inline
   implicit class XOutParametersOps[Self <: XOutParameters] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setRegisterNumericOutParameter(value: (Double, Double, Double) => Unit): Self = this.set("registerNumericOutParameter", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setRegisterOutParameter(value: (Double, Double, String) => Unit): Self = this.set("registerOutParameter", js.Any.fromFunction3(value))
   }
-  
 }
-

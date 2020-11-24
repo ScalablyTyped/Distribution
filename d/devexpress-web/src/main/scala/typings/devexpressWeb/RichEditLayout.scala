@@ -2,13 +2,14 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains members related to the document's layout functionality.
   */
 @js.native
 trait RichEditLayout extends js.Object {
+  
   /**
     * Returns bounds of the specified document model's position. The object that contains position bounds.
     * @param position The position in a document model.
@@ -17,4 +18,3 @@ trait RichEditLayout extends js.Object {
   def getPositionBounds(position: Double): Rectangle = js.native
   def getPositionBounds(position: Double, endOfLine: Boolean): Rectangle = js.native
 }
-

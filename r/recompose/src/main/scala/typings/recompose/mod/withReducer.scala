@@ -2,11 +2,12 @@ package typings.recompose.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("recompose", "withReducer")
 @js.native
 object withReducer extends js.Object {
+  
   def apply[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
@@ -20,4 +21,3 @@ object withReducer extends js.Object {
     initialState: mapper[TOutter, TState]
   ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = js.native
 }
-

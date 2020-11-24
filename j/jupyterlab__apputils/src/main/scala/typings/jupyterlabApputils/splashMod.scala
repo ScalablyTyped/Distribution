@@ -5,13 +5,15 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/splash", JSImport.Namespace)
 @js.native
 object splashMod extends js.Object {
+  
   @js.native
   trait ISplashScreen extends js.Object {
+    
     /**
       * Show the application splash screen.
       *
@@ -22,9 +24,6 @@ object splashMod extends js.Object {
     def show(): IDisposable = js.native
     def show(light: Boolean): IDisposable = js.native
   }
-  
   @js.native
   object ISplashScreen extends TopLevel[Token[ISplashScreen]]
-  
 }
-

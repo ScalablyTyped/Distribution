@@ -12,7 +12,7 @@ This directive gives you gridster behavior
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 195205 |
+| # downloads        | 154903 |
 | # stars            | 1 |
 
 ## Links

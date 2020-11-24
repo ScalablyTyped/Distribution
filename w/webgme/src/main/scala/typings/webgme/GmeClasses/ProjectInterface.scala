@@ -15,20 +15,15 @@ import typings.webgme.GmeStorage.CommitObject
 import typings.webgme.GmeStorage.CommitResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProjectInterface extends js.Object {
+  
   var CONSTANTS: Dictionary[String] = js.native
+  
   var ID_NAME: String = js.native
-  var logger: GmeLogger = js.native
-  /**
-    * Unique ID of project, built up by the ownerId and projectName.
-    * @example
-    * 'guest+TestProject', 'organization+TestProject2'
-    */
-  var projectId: String = js.native
-  var projectName: Name = js.native
+  
   /**
     * Creates a new branch with head pointing to the provided commit hash.
     * @param {string} branchName - Name of branch to create.
@@ -51,6 +46,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def createBranch(branchName: Name, newHash: CommitHash, callback: ResultCallback[CommitResult]): Unit = js.native
+  
   /**
     * Creates a new tag pointing to the provided commit hash.
     * @param {string} tagName - Name of tag to create.
@@ -71,6 +67,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def createTag(tagName: Name, commitHash: CommitHash, callback: ResultCallback[Unit]): Unit = js.native
+  
   /**
     * Deletes the branch.
     * @param {string} branchName - Name of branch to create.
@@ -93,6 +90,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def deleteBranch(branchName: Name, oldHash: CommitHash, callback: ResultCallback[CommitResult]): Unit = js.native
+  
   /**
     * Deletes the given tag.
     * @param {string} tagName - Name of tag to delete.
@@ -111,6 +109,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def deleteTag(tagName: Name, callback: ResultCallback[Unit]): Unit = js.native
+  
   /**
     * Retrieves the commit hash for the head of the branch.
     * @param {string} branchName - Name of branch.
@@ -131,6 +130,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def getBranchHash(branchName: Name, callback: ResultCallback[CommitHash]): Unit = js.native
+  
   /**
     * Retrieves all branches and their current heads within the project.
     * @param {function} [callback] - if provided no promise will be returned.
@@ -149,6 +149,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def getBranches(callback: ResultCallback[CommitHash]): Unit = js.native
+  
   /**
     * Retrieves and array of the latest (sorted by timestamp) commits for the project.
     * If timestamp is given it will get <b>number</b> of commits strictly <b>before</b>.
@@ -185,6 +186,7 @@ trait ProjectInterface extends js.Object {
   def getCommits(before: Double, number: Double, callback: ResultCallback[js.Array[CommitObject]]): Unit = js.native
   def getCommits(before: CommitHash, number: Double): js.Promise[js.Array[CommitObject]] = js.native
   def getCommits(before: CommitHash, number: Double, callback: ResultCallback[js.Array[CommitObject]]): Unit = js.native
+  
   /**
     * Retrieves the common ancestor of two commits. If no ancestor exists it will result in an error.
     *
@@ -209,6 +211,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def getCommonAncestorCommit(commitA: CommitHash, commitB: CommitHash, callback: ResultCallback[CommitHash]): Unit = js.native
+  
   /**
     * Retrieves an array of commits starting from a branch(es) and/or commitHash(es).
     * <br> The result is ordered by the rules (applied in order)
@@ -239,6 +242,7 @@ trait ProjectInterface extends js.Object {
   def getHistory(start: CommitHash | String, number: Double, callback: ResultCallback[js.Array[CommitObject]]): Unit = js.native
   def getHistory(start: js.Array[String], number: Double): js.Promise[js.Array[CommitObject]] = js.native
   def getHistory(start: js.Array[String], number: Double, callback: ResultCallback[js.Array[CommitObject]]): Unit = js.native
+  
   /**
     * Retrieves all tags and their commits hashes within the project.
     * @param {function} [callback] - if provided no promise will be returned.
@@ -257,6 +261,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   def getTags(callback: ResultCallback[Unit]): Unit = js.native
+  
   // projectCache: ProjectCache;
   // Functions forwarded to project cache.
   /**
@@ -268,6 +273,7 @@ trait ProjectInterface extends js.Object {
     * @private
     */
   def insertObject(obj: CommitObject, stackedObjects: Dictionary[DataObject]): Unit = js.native
+  
   def insertPatchObject(obj: DataObject): Unit = js.native
   /**
     * Try to create the full object from the patch 
@@ -280,6 +286,7 @@ trait ProjectInterface extends js.Object {
     * @private
     */
   def insertPatchObject(obj: CommitObject): Unit = js.native
+  
   /**
     * Loads the object with hash key from the database or
     * directly from the cache if recently loaded.
@@ -289,6 +296,7 @@ trait ProjectInterface extends js.Object {
     * @func
     */
   def loadObject(key: String, callback: ResultCallback[LoadObject]): Unit = js.native
+  
   /**
     * Collects the objects from the server and pre-loads them into the cache
     * making the load of multiple objects faster.
@@ -299,6 +307,9 @@ trait ProjectInterface extends js.Object {
     * @func
     */
   def loadPaths(rootKey: MetadataHash, paths: js.Array[Path], callback: ResultCallback[_]): Unit = js.native
+  
+  var logger: GmeLogger = js.native
+  
   /**
     * Makes a commit to data base. Based on the root hash and commit message a new
     * {@link module:Storage.CommitObject} (with returned hash)
@@ -412,6 +423,16 @@ trait ProjectInterface extends js.Object {
     msg: String,
     callback: ResultCallback[CommitResult]
   ): Unit = js.native
+  
+  /**
+    * Unique ID of project, built up by the ownerId and projectName.
+    * @example
+    * 'guest+TestProject', 'organization+TestProject2'
+    */
+  var projectId: String = js.native
+  
+  var projectName: Name = js.native
+  
   /**
     * Updates the head of the branch.
     * @param {string} branchName - Name of branch to update.
@@ -437,4 +458,3 @@ trait ProjectInterface extends js.Object {
     */
   def setBranchHash(branchName: Name, newHash: CommitHash, oldHash: CommitHash, callback: ResultCallback[CommitResult]): Unit = js.native
 }
-

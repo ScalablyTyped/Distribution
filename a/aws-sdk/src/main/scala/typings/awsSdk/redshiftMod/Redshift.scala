@@ -6,18 +6,17 @@ import typings.awsSdk.awsSdkStrings.clusterAvailable
 import typings.awsSdk.awsSdkStrings.clusterDeleted
 import typings.awsSdk.awsSdkStrings.clusterRestored
 import typings.awsSdk.awsSdkStrings.snapshotAvailable
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Redshift extends Service {
-  @JSName("config")
-  var config_Redshift: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Exchanges a DC1 Reserved Node for a DC2 Reserved Node with no changes to the configuration (term, payment type, or number of nodes) and no additional costs. 
     */
@@ -33,6 +32,7 @@ trait Redshift extends Service {
     params: AcceptReservedNodeExchangeInputMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptReservedNodeExchangeOutputMessage, Unit]
   ): Request[AcceptReservedNodeExchangeOutputMessage, AWSError] = js.native
+  
   /**
     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -48,6 +48,7 @@ trait Redshift extends Service {
     params: AuthorizeClusterSecurityGroupIngressMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeClusterSecurityGroupIngressResult, Unit]
   ): Request[AuthorizeClusterSecurityGroupIngressResult, AWSError] = js.native
+  
   /**
     * Authorizes the specified AWS customer account to restore the specified snapshot.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
@@ -61,6 +62,7 @@ trait Redshift extends Service {
     params: AuthorizeSnapshotAccessMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeSnapshotAccessResult, Unit]
   ): Request[AuthorizeSnapshotAccessResult, AWSError] = js.native
+  
   /**
     * Deletes a set of cluster snapshots.
     */
@@ -74,6 +76,7 @@ trait Redshift extends Service {
     params: BatchDeleteClusterSnapshotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteClusterSnapshotsResult, Unit]
   ): Request[BatchDeleteClusterSnapshotsResult, AWSError] = js.native
+  
   /**
     * Modifies the settings for a set of cluster snapshots.
     */
@@ -89,6 +92,7 @@ trait Redshift extends Service {
     params: BatchModifyClusterSnapshotsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchModifyClusterSnapshotsOutputMessage, Unit]
   ): Request[BatchModifyClusterSnapshotsOutputMessage, AWSError] = js.native
+  
   /**
     * Cancels a resize operation for a cluster.
     */
@@ -102,6 +106,10 @@ trait Redshift extends Service {
     params: CancelResizeMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ResizeProgressMessage, Unit]
   ): Request[ResizeProgressMessage, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Redshift: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Copies the specified automated cluster snapshot to a new manual cluster snapshot. The source must be an automated snapshot and it must be in the available state. When you delete a cluster, Amazon Redshift deletes any automated snapshots of the cluster. Also, when the retention period of the snapshot expires, Amazon Redshift automatically deletes it. If you want to keep an automated snapshot for a longer period, you can make a manual copy of the snapshot. Manual snapshots are retained until you delete them.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
@@ -115,6 +123,7 @@ trait Redshift extends Service {
     params: CopyClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CopyClusterSnapshotResult, Unit]
   ): Request[CopyClusterSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates a new cluster with the specified parameters. To create a cluster in Virtual Private Cloud (VPC), you must provide a cluster subnet group name. The cluster subnet group identifies the subnets of your VPC that Amazon Redshift uses when creating the cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
@@ -128,6 +137,7 @@ trait Redshift extends Service {
     params: CreateClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterResult, Unit]
   ): Request[CreateClusterResult, AWSError] = js.native
+  
   /**
     * Creates an Amazon Redshift parameter group. Creating parameter groups is independent of creating clusters. You can associate a cluster with a parameter group when you create the cluster. You can also associate an existing cluster with a parameter group after the cluster is created by using ModifyCluster.  Parameters in the parameter group define specific behavior that applies to the databases you create on the cluster. For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -141,6 +151,7 @@ trait Redshift extends Service {
     params: CreateClusterParameterGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterParameterGroupResult, Unit]
   ): Request[CreateClusterParameterGroupResult, AWSError] = js.native
+  
   /**
     * Creates a new Amazon Redshift security group. You use security groups to control access to non-VPC clusters.  For information about managing security groups, go to Amazon Redshift Cluster Security Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -154,6 +165,7 @@ trait Redshift extends Service {
     params: CreateClusterSecurityGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterSecurityGroupResult, Unit]
   ): Request[CreateClusterSecurityGroupResult, AWSError] = js.native
+  
   /**
     * Creates a manual snapshot of the specified cluster. The cluster must be in the available state.   For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
@@ -167,6 +179,7 @@ trait Redshift extends Service {
     params: CreateClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterSnapshotResult, Unit]
   ): Request[CreateClusterSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates a new Amazon Redshift subnet group. You must provide a list of one or more subnets in your existing Amazon Virtual Private Cloud (Amazon VPC) when creating Amazon Redshift subnet group.  For information about subnet groups, go to Amazon Redshift Cluster Subnet Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -180,6 +193,7 @@ trait Redshift extends Service {
     params: CreateClusterSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterSubnetGroupResult, Unit]
   ): Request[CreateClusterSubnetGroupResult, AWSError] = js.native
+  
   /**
     * Creates an Amazon Redshift event notification subscription. This action requires an ARN (Amazon Resource Name) of an Amazon SNS topic created by either the Amazon Redshift console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the source type, and lists of Amazon Redshift source IDs, event categories, and event severities. Notifications will be sent for all events you want that match those criteria. For example, you can specify source type = cluster, source ID = my-cluster-1 and mycluster2, event categories = Availability, Backup, and severity = ERROR. The subscription will only send notifications for those ERROR events in the Availability and Backup categories for the specified clusters. If you specify both the source type and source IDs, such as source type = cluster and source identifier = my-cluster-1, notifications will be sent for all the cluster events for my-cluster-1. If you specify a source type but do not specify a source identifier, you will receive notice of the events for the objects of that type in your AWS account. If you do not specify either the SourceType nor the SourceIdentifier, you will be notified of events generated from all Amazon Redshift sources belonging to your AWS account. You must specify a source type if you specify a source ID.
     */
@@ -193,6 +207,7 @@ trait Redshift extends Service {
     params: CreateEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]
   ): Request[CreateEventSubscriptionResult, AWSError] = js.native
+  
   /**
     * Creates an HSM client certificate that an Amazon Redshift cluster will use to connect to the client's HSM in order to store and retrieve the keys used to encrypt the cluster databases. The command returns a public key, which you must store in the HSM. In addition to creating the HSM certificate, you must create an Amazon Redshift HSM configuration that provides a cluster the information needed to store and use encryption keys in the HSM. For more information, go to Hardware Security Modules in the Amazon Redshift Cluster Management Guide.
     */
@@ -206,6 +221,7 @@ trait Redshift extends Service {
     params: CreateHsmClientCertificateMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateHsmClientCertificateResult, Unit]
   ): Request[CreateHsmClientCertificateResult, AWSError] = js.native
+  
   /**
     * Creates an HSM configuration that contains the information required by an Amazon Redshift cluster to store and use database encryption keys in a Hardware Security Module (HSM). After creating the HSM configuration, you can specify it as a parameter when creating a cluster. The cluster will then store its encryption keys in the HSM. In addition to creating an HSM configuration, you must also create an HSM client certificate. For more information, go to Hardware Security Modules in the Amazon Redshift Cluster Management Guide.
     */
@@ -219,6 +235,7 @@ trait Redshift extends Service {
     params: CreateHsmConfigurationMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateHsmConfigurationResult, Unit]
   ): Request[CreateHsmConfigurationResult, AWSError] = js.native
+  
   /**
     * Creates a scheduled action. A scheduled action contains a schedule and an Amazon Redshift API action. For example, you can create a schedule of when to run the ResizeCluster API operation. 
     */
@@ -232,6 +249,7 @@ trait Redshift extends Service {
     params: CreateScheduledActionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ScheduledAction, Unit]
   ): Request[ScheduledAction, AWSError] = js.native
+  
   /**
     * Creates a snapshot copy grant that permits Amazon Redshift to use a customer master key (CMK) from AWS Key Management Service (AWS KMS) to encrypt copied snapshots in a destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
@@ -245,6 +263,7 @@ trait Redshift extends Service {
     params: CreateSnapshotCopyGrantMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotCopyGrantResult, Unit]
   ): Request[CreateSnapshotCopyGrantResult, AWSError] = js.native
+  
   /**
     * Create a snapshot schedule that can be associated to a cluster and which overrides the default system backup schedule. 
     */
@@ -258,6 +277,7 @@ trait Redshift extends Service {
     params: CreateSnapshotScheduleMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotSchedule, Unit]
   ): Request[SnapshotSchedule, AWSError] = js.native
+  
   /**
     * Adds tags to a cluster. A resource can have up to 50 tags. If you try to create more than 50 tags for a resource, you will receive an error and the attempt will fail. If you specify a key that already exists for the resource, the value for that key will be updated with the new value.
     */
@@ -268,6 +288,7 @@ trait Redshift extends Service {
     */
   def createTags(params: CreateTagsMessage): Request[js.Object, AWSError] = js.native
   def createTags(params: CreateTagsMessage, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates a usage limit for a specified Amazon Redshift feature on a cluster. The usage limit is identified by the returned usage limit identifier.
     */
@@ -281,6 +302,7 @@ trait Redshift extends Service {
     params: CreateUsageLimitMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]
   ): Request[UsageLimit, AWSError] = js.native
+  
   /**
     * Deletes a previously provisioned cluster without its final snapshot being created. A successful response from the web service indicates that the request was received correctly. Use DescribeClusters to monitor the status of the deletion. The delete operation cannot be canceled or reverted once submitted. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide. If you want to shut down the cluster and retain it for future use, set SkipFinalClusterSnapshot to false and specify a name for FinalClusterSnapshotIdentifier. You can later restore this snapshot to resume using the cluster. If a final cluster snapshot is requested, the status of the cluster will be "final-snapshot" while the snapshot is being taken, then it's "deleting" once Amazon Redshift begins deleting the cluster.   For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
@@ -294,6 +316,7 @@ trait Redshift extends Service {
     params: DeleteClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteClusterResult, Unit]
   ): Request[DeleteClusterResult, AWSError] = js.native
+  
   /**
     * Deletes a specified Amazon Redshift parameter group.  You cannot delete a parameter group if it is associated with a cluster. 
     */
@@ -307,6 +330,7 @@ trait Redshift extends Service {
     params: DeleteClusterParameterGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an Amazon Redshift security group.  You cannot delete a security group that is associated with any clusters. You cannot delete the default security group.   For information about managing security groups, go to Amazon Redshift Cluster Security Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -320,6 +344,7 @@ trait Redshift extends Service {
     params: DeleteClusterSecurityGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified manual snapshot. The snapshot must be in the available state, with no other users authorized to access the snapshot.  Unlike automated snapshots, manual snapshots are retained even after you delete your cluster. Amazon Redshift does not delete your manual snapshots. You must delete manual snapshot explicitly to avoid getting charged. If other accounts are authorized to access the snapshot, you must revoke all of the authorizations before you can delete the snapshot.
     */
@@ -333,6 +358,7 @@ trait Redshift extends Service {
     params: DeleteClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteClusterSnapshotResult, Unit]
   ): Request[DeleteClusterSnapshotResult, AWSError] = js.native
+  
   /**
     * Deletes the specified cluster subnet group.
     */
@@ -346,6 +372,7 @@ trait Redshift extends Service {
     params: DeleteClusterSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an Amazon Redshift event notification subscription.
     */
@@ -359,6 +386,7 @@ trait Redshift extends Service {
     params: DeleteEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified HSM client certificate.
     */
@@ -372,6 +400,7 @@ trait Redshift extends Service {
     params: DeleteHsmClientCertificateMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified Amazon Redshift HSM configuration.
     */
@@ -385,6 +414,7 @@ trait Redshift extends Service {
     params: DeleteHsmConfigurationMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a scheduled action. 
     */
@@ -398,6 +428,7 @@ trait Redshift extends Service {
     params: DeleteScheduledActionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified snapshot copy grant.
     */
@@ -411,6 +442,7 @@ trait Redshift extends Service {
     params: DeleteSnapshotCopyGrantMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a snapshot schedule.
     */
@@ -424,6 +456,7 @@ trait Redshift extends Service {
     params: DeleteSnapshotScheduleMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes tags from a resource. You must provide the ARN of the resource from which you want to delete the tag or tags.
     */
@@ -434,6 +467,7 @@ trait Redshift extends Service {
     */
   def deleteTags(params: DeleteTagsMessage): Request[js.Object, AWSError] = js.native
   def deleteTags(params: DeleteTagsMessage, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a usage limit from a cluster.
     */
@@ -447,6 +481,7 @@ trait Redshift extends Service {
     params: DeleteUsageLimitMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Returns a list of attributes attached to an account
     */
@@ -460,6 +495,7 @@ trait Redshift extends Service {
     params: DescribeAccountAttributesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ AccountAttributeList, Unit]
   ): Request[AccountAttributeList, AWSError] = js.native
+  
   /**
     * Returns an array of ClusterDbRevision objects.
     */
@@ -473,6 +509,7 @@ trait Redshift extends Service {
     params: DescribeClusterDbRevisionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterDbRevisionsMessage, Unit]
   ): Request[ClusterDbRevisionsMessage, AWSError] = js.native
+  
   /**
     * Returns a list of Amazon Redshift parameter groups, including parameter groups you created and the default parameter group. For each parameter group, the response includes the parameter group name, description, and parameter group family name. You can optionally specify a name to retrieve the description of a specific parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all parameter groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all parameter groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, parameter groups are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -486,6 +523,7 @@ trait Redshift extends Service {
     params: DescribeClusterParameterGroupsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupsMessage, Unit]
   ): Request[ClusterParameterGroupsMessage, AWSError] = js.native
+  
   /**
     * Returns a detailed list of parameters contained within the specified Amazon Redshift parameter group. For each parameter the response includes information such as parameter name, description, data type, value, whether the parameter value is modifiable, and so on. You can specify source filter to retrieve parameters of only specific type. For example, to retrieve parameters that were modified by a user action such as from ModifyClusterParameterGroup, you can specify source equal to user.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -499,6 +537,7 @@ trait Redshift extends Service {
     params: DescribeClusterParametersMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupDetails, Unit]
   ): Request[ClusterParameterGroupDetails, AWSError] = js.native
+  
   /**
     * Returns information about Amazon Redshift security groups. If the name of a security group is specified, the response will contain only information about only that security group.  For information about managing security groups, go to Amazon Redshift Cluster Security Groups in the Amazon Redshift Cluster Management Guide. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all security groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all security groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, security groups are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -512,6 +551,7 @@ trait Redshift extends Service {
     params: DescribeClusterSecurityGroupsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterSecurityGroupMessage, Unit]
   ): Request[ClusterSecurityGroupMessage, AWSError] = js.native
+  
   /**
     * Returns one or more snapshot objects, which contain metadata about your cluster snapshots. By default, this operation returns information about all snapshots of all clusters that are owned by you AWS customer account. No information is returned for snapshots owned by inactive AWS customer accounts. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all snapshots that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all snapshots that have any combination of those values are returned. Only snapshots that you own are returned in the response; shared snapshots are not returned with the tag key and tag value request parameters. If both tag keys and values are omitted from the request, snapshots are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -525,6 +565,7 @@ trait Redshift extends Service {
     params: DescribeClusterSnapshotsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotMessage, Unit]
   ): Request[SnapshotMessage, AWSError] = js.native
+  
   /**
     * Returns one or more cluster subnet group objects, which contain metadata about your cluster subnet groups. By default, this operation returns information about all cluster subnet groups that are defined in you AWS account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all subnet groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all subnet groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, subnet groups are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -538,6 +579,7 @@ trait Redshift extends Service {
     params: DescribeClusterSubnetGroupsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterSubnetGroupMessage, Unit]
   ): Request[ClusterSubnetGroupMessage, AWSError] = js.native
+  
   /**
     * Returns a list of all the available maintenance tracks.
     */
@@ -551,6 +593,7 @@ trait Redshift extends Service {
     params: DescribeClusterTracksMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ TrackListMessage, Unit]
   ): Request[TrackListMessage, AWSError] = js.native
+  
   /**
     * Returns descriptions of the available Amazon Redshift cluster versions. You can call this operation even before creating any clusters to learn more about the Amazon Redshift versions. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
@@ -564,6 +607,7 @@ trait Redshift extends Service {
     params: DescribeClusterVersionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterVersionsMessage, Unit]
   ): Request[ClusterVersionsMessage, AWSError] = js.native
+  
   /**
     * Returns properties of provisioned clusters including general cluster properties, cluster database properties, maintenance and backup properties, and security and access properties. This operation supports pagination. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all clusters that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all clusters that have any combination of those values are returned. If both tag keys and values are omitted from the request, clusters are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -577,6 +621,7 @@ trait Redshift extends Service {
     params: DescribeClustersMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClustersMessage, Unit]
   ): Request[ClustersMessage, AWSError] = js.native
+  
   /**
     * Returns a list of parameter settings for the specified parameter group family.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -592,6 +637,7 @@ trait Redshift extends Service {
     params: DescribeDefaultClusterParametersMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultClusterParametersResult, Unit]
   ): Request[DescribeDefaultClusterParametersResult, AWSError] = js.native
+  
   /**
     * Displays a list of event categories for all event source types, or for a specified source type. For a list of the event categories and source types, go to Amazon Redshift Event Notifications.
     */
@@ -605,6 +651,7 @@ trait Redshift extends Service {
     params: DescribeEventCategoriesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ EventCategoriesMessage, Unit]
   ): Request[EventCategoriesMessage, AWSError] = js.native
+  
   /**
     * Lists descriptions of all the Amazon Redshift event notification subscriptions for a customer account. If you specify a subscription name, lists the description for that subscription. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all event notification subscriptions that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all subscriptions that have any combination of those values are returned. If both tag keys and values are omitted from the request, subscriptions are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -618,6 +665,7 @@ trait Redshift extends Service {
     params: DescribeEventSubscriptionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ EventSubscriptionsMessage, Unit]
   ): Request[EventSubscriptionsMessage, AWSError] = js.native
+  
   /**
     * Returns events related to clusters, security groups, snapshots, and parameter groups for the past 14 days. Events specific to a particular cluster, security group, snapshot or parameter group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.
     */
@@ -631,6 +679,7 @@ trait Redshift extends Service {
     params: DescribeEventsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ EventsMessage, Unit]
   ): Request[EventsMessage, AWSError] = js.native
+  
   /**
     * Returns information about the specified HSM client certificate. If no certificate ID is specified, returns information about all the HSM certificates owned by your AWS customer account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM client certificates that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM client certificates that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM client certificates are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -644,6 +693,7 @@ trait Redshift extends Service {
     params: DescribeHsmClientCertificatesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ HsmClientCertificateMessage, Unit]
   ): Request[HsmClientCertificateMessage, AWSError] = js.native
+  
   /**
     * Returns information about the specified Amazon Redshift HSM configuration. If no configuration ID is specified, returns information about all the HSM configurations owned by your AWS customer account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM connections that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM connections that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM connections are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -657,6 +707,7 @@ trait Redshift extends Service {
     params: DescribeHsmConfigurationsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ HsmConfigurationMessage, Unit]
   ): Request[HsmConfigurationMessage, AWSError] = js.native
+  
   /**
     * Describes whether information, such as queries and connection attempts, is being logged for the specified Amazon Redshift cluster.
     */
@@ -670,6 +721,7 @@ trait Redshift extends Service {
     params: DescribeLoggingStatusMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ LoggingStatus, Unit]
   ): Request[LoggingStatus, AWSError] = js.native
+  
   /**
     * Returns properties of possible node configurations such as node type, number of nodes, and disk usage for the specified action type.
     */
@@ -683,6 +735,7 @@ trait Redshift extends Service {
     params: DescribeNodeConfigurationOptionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ NodeConfigurationOptionsMessage, Unit]
   ): Request[NodeConfigurationOptionsMessage, AWSError] = js.native
+  
   /**
     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
@@ -696,6 +749,7 @@ trait Redshift extends Service {
     params: DescribeOrderableClusterOptionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ OrderableClusterOptionsMessage, Unit]
   ): Request[OrderableClusterOptionsMessage, AWSError] = js.native
+  
   /**
     * Returns a list of the available reserved node offerings by Amazon Redshift with their descriptions including the node type, the fixed and recurring costs of reserving the node and duration the node will be reserved for you. These descriptions help you determine which reserve node offering you want to purchase. You then use the unique offering ID in you call to PurchaseReservedNodeOffering to reserve one or more nodes for your Amazon Redshift cluster.   For more information about reserved node offerings, go to Purchasing Reserved Nodes in the Amazon Redshift Cluster Management Guide.
     */
@@ -709,6 +763,7 @@ trait Redshift extends Service {
     params: DescribeReservedNodeOfferingsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ReservedNodeOfferingsMessage, Unit]
   ): Request[ReservedNodeOfferingsMessage, AWSError] = js.native
+  
   /**
     * Returns the descriptions of the reserved nodes.
     */
@@ -722,6 +777,7 @@ trait Redshift extends Service {
     params: DescribeReservedNodesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ReservedNodesMessage, Unit]
   ): Request[ReservedNodesMessage, AWSError] = js.native
+  
   /**
     * Returns information about the last resize operation for the specified cluster. If no resize operation has ever been initiated for the specified cluster, a HTTP 404 error is returned. If a resize operation was initiated and completed, the status of the resize remains as SUCCEEDED until the next resize.  A resize operation can be requested using ModifyCluster and specifying a different number or type of nodes for the cluster. 
     */
@@ -735,6 +791,7 @@ trait Redshift extends Service {
     params: DescribeResizeMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ResizeProgressMessage, Unit]
   ): Request[ResizeProgressMessage, AWSError] = js.native
+  
   /**
     * Describes properties of scheduled actions. 
     */
@@ -748,6 +805,7 @@ trait Redshift extends Service {
     params: DescribeScheduledActionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ScheduledActionsMessage, Unit]
   ): Request[ScheduledActionsMessage, AWSError] = js.native
+  
   /**
     * Returns a list of snapshot copy grants owned by the AWS account in the destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
@@ -761,6 +819,7 @@ trait Redshift extends Service {
     params: DescribeSnapshotCopyGrantsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotCopyGrantMessage, Unit]
   ): Request[SnapshotCopyGrantMessage, AWSError] = js.native
+  
   /**
     * Returns a list of snapshot schedules. 
     */
@@ -776,11 +835,13 @@ trait Redshift extends Service {
     params: DescribeSnapshotSchedulesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotSchedulesOutputMessage, Unit]
   ): Request[DescribeSnapshotSchedulesOutputMessage, AWSError] = js.native
+  
   /**
     * Returns account level backups storage size and provisional storage.
     */
   def describeStorage(): Request[CustomerStorageMessage, AWSError] = js.native
   def describeStorage(callback: js.Function2[/* err */ AWSError, /* data */ CustomerStorageMessage, Unit]): Request[CustomerStorageMessage, AWSError] = js.native
+  
   /**
     * Lists the status of one or more table restore requests made using the RestoreTableFromClusterSnapshot API action. If you don't specify a value for the TableRestoreRequestId parameter, then DescribeTableRestoreStatus returns the status of all table restore requests ordered by the date and time of the request in ascending order. Otherwise DescribeTableRestoreStatus returns the status of the table specified by TableRestoreRequestId.
     */
@@ -794,6 +855,7 @@ trait Redshift extends Service {
     params: DescribeTableRestoreStatusMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ TableRestoreStatusMessage, Unit]
   ): Request[TableRestoreStatusMessage, AWSError] = js.native
+  
   /**
     * Returns a list of tags. You can return tags from a specific resource by specifying an ARN, or you can return all tags for a given type of resource, such as clusters, snapshots, and so on. The following are limitations for DescribeTags:    You cannot specify an ARN and a resource-type value together in the same request.   You cannot use the MaxRecords and Marker parameters together with the ARN parameter.   The MaxRecords parameter can be a range from 10 to 50 results to return in a request.   If you specify both tag keys and tag values in the same request, Amazon Redshift returns all resources that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all resources that have any combination of those values are returned. If both tag keys and values are omitted from the request, resources are returned regardless of whether they have tag keys or values associated with them.
     */
@@ -807,6 +869,7 @@ trait Redshift extends Service {
     params: DescribeTagsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ TaggedResourceListMessage, Unit]
   ): Request[TaggedResourceListMessage, AWSError] = js.native
+  
   /**
     * Shows usage limits on a cluster. Results are filtered based on the combination of input usage limit identifier, cluster identifier, and feature type parameters:   If usage limit identifier, cluster identifier, and feature type are not provided, then all usage limit objects for the current account in the current region are returned.   If usage limit identifier is provided, then the corresponding usage limit object is returned.   If cluster identifier is provided, then all usage limit objects for the specified cluster are returned.   If cluster identifier and feature type are provided, then all usage limit objects for the combination of cluster and feature are returned.  
     */
@@ -820,6 +883,7 @@ trait Redshift extends Service {
     params: DescribeUsageLimitsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ UsageLimitList, Unit]
   ): Request[UsageLimitList, AWSError] = js.native
+  
   /**
     * Stops logging information, such as queries and connection attempts, for the specified Amazon Redshift cluster.
     */
@@ -833,6 +897,7 @@ trait Redshift extends Service {
     params: DisableLoggingMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ LoggingStatus, Unit]
   ): Request[LoggingStatus, AWSError] = js.native
+  
   /**
     * Disables the automatic copying of snapshots from one region to another region for a specified cluster. If your cluster and its snapshots are encrypted using a customer master key (CMK) from AWS KMS, use DeleteSnapshotCopyGrant to delete the grant that grants Amazon Redshift permission to the CMK in the destination region. 
     */
@@ -846,6 +911,7 @@ trait Redshift extends Service {
     params: DisableSnapshotCopyMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableSnapshotCopyResult, Unit]
   ): Request[DisableSnapshotCopyResult, AWSError] = js.native
+  
   /**
     * Starts logging information, such as queries and connection attempts, for the specified Amazon Redshift cluster.
     */
@@ -859,6 +925,7 @@ trait Redshift extends Service {
     params: EnableLoggingMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ LoggingStatus, Unit]
   ): Request[LoggingStatus, AWSError] = js.native
+  
   /**
     * Enables the automatic copy of snapshots from one region to another region for a specified cluster.
     */
@@ -872,6 +939,7 @@ trait Redshift extends Service {
     params: EnableSnapshotCopyMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSnapshotCopyResult, Unit]
   ): Request[EnableSnapshotCopyResult, AWSError] = js.native
+  
   /**
     * Returns a database user name and temporary password with temporary authorization to log on to an Amazon Redshift database. The action returns the database user name prefixed with IAM: if AutoCreate is False or IAMA: if AutoCreate is True. You can optionally specify one or more database user groups that the user will join at log on. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes). For more information, see Using IAM Authentication to Generate Database User Credentials in the Amazon Redshift Cluster Management Guide. The AWS Identity and Access Management (IAM)user or role that executes GetClusterCredentials must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Resource Policies for GetClusterCredentials in the Amazon Redshift Cluster Management Guide. If the DbGroups parameter is specified, the IAM policy must allow the redshift:JoinGroup action with access to the listed dbgroups.  In addition, if the AutoCreate parameter is set to True, then the policy must include the redshift:CreateClusterUser privilege. If the DbName parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name. 
     */
@@ -885,6 +953,7 @@ trait Redshift extends Service {
     params: GetClusterCredentialsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterCredentials, Unit]
   ): Request[ClusterCredentials, AWSError] = js.native
+  
   /**
     * Returns an array of DC2 ReservedNodeOfferings that matches the payment type, term, and usage price of the given DC1 reserved node.
     */
@@ -900,6 +969,7 @@ trait Redshift extends Service {
     params: GetReservedNodeExchangeOfferingsInputMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ GetReservedNodeExchangeOfferingsOutputMessage, Unit]
   ): Request[GetReservedNodeExchangeOfferingsOutputMessage, AWSError] = js.native
+  
   /**
     * Modifies the settings for a cluster. You can also change node type and the number of nodes to scale up or down the cluster. When resizing a cluster, you must specify both the number of nodes and the node type even if one of the parameters does not change. You can add another security or parameter group, or change the master user password. Resetting a cluster password or modifying the security groups associated with a cluster do not need a reboot. However, modifying a parameter group requires a reboot for parameters to take effect. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
@@ -913,6 +983,7 @@ trait Redshift extends Service {
     params: ModifyClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterResult, Unit]
   ): Request[ModifyClusterResult, AWSError] = js.native
+  
   /**
     * Modifies the database revision of a cluster. The database revision is a unique revision of the database running in a cluster.
     */
@@ -926,6 +997,7 @@ trait Redshift extends Service {
     params: ModifyClusterDbRevisionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterDbRevisionResult, Unit]
   ): Request[ModifyClusterDbRevisionResult, AWSError] = js.native
+  
   /**
     * Modifies the list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. A cluster can have up to 10 IAM roles associated at any time.
     */
@@ -939,6 +1011,7 @@ trait Redshift extends Service {
     params: ModifyClusterIamRolesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterIamRolesResult, Unit]
   ): Request[ModifyClusterIamRolesResult, AWSError] = js.native
+  
   /**
     * Modifies the maintenance settings of a cluster.
     */
@@ -952,6 +1025,7 @@ trait Redshift extends Service {
     params: ModifyClusterMaintenanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterMaintenanceResult, Unit]
   ): Request[ModifyClusterMaintenanceResult, AWSError] = js.native
+  
   /**
     * Modifies the parameters of a parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
@@ -965,6 +1039,7 @@ trait Redshift extends Service {
     params: ModifyClusterParameterGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupNameMessage, Unit]
   ): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
+  
   /**
     * Modifies the settings for a snapshot. This exanmple modifies the manual retention period setting for a cluster snapshot.
     */
@@ -978,6 +1053,7 @@ trait Redshift extends Service {
     params: ModifyClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterSnapshotResult, Unit]
   ): Request[ModifyClusterSnapshotResult, AWSError] = js.native
+  
   /**
     * Modifies a snapshot schedule for a cluster.
     */
@@ -991,6 +1067,7 @@ trait Redshift extends Service {
     params: ModifyClusterSnapshotScheduleMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Modifies a cluster subnet group to include the specified list of VPC subnets. The operation replaces the existing list of subnets with the new list of subnets.
     */
@@ -1004,6 +1081,7 @@ trait Redshift extends Service {
     params: ModifyClusterSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterSubnetGroupResult, Unit]
   ): Request[ModifyClusterSubnetGroupResult, AWSError] = js.native
+  
   /**
     * Modifies an existing Amazon Redshift event notification subscription.
     */
@@ -1017,6 +1095,7 @@ trait Redshift extends Service {
     params: ModifyEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResult, Unit]
   ): Request[ModifyEventSubscriptionResult, AWSError] = js.native
+  
   /**
     * Modifies a scheduled action. 
     */
@@ -1030,6 +1109,7 @@ trait Redshift extends Service {
     params: ModifyScheduledActionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ScheduledAction, Unit]
   ): Request[ScheduledAction, AWSError] = js.native
+  
   /**
     * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
     */
@@ -1045,6 +1125,7 @@ trait Redshift extends Service {
     params: ModifySnapshotCopyRetentionPeriodMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifySnapshotCopyRetentionPeriodResult, Unit]
   ): Request[ModifySnapshotCopyRetentionPeriodResult, AWSError] = js.native
+  
   /**
     * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
     */
@@ -1058,6 +1139,7 @@ trait Redshift extends Service {
     params: ModifySnapshotScheduleMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotSchedule, Unit]
   ): Request[SnapshotSchedule, AWSError] = js.native
+  
   /**
     * Modifies a usage limit in a cluster. You can't modify the feature type or period of a usage limit.
     */
@@ -1071,6 +1153,7 @@ trait Redshift extends Service {
     params: ModifyUsageLimitMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]
   ): Request[UsageLimit, AWSError] = js.native
+  
   /**
     * Pauses a cluster.
     */
@@ -1084,6 +1167,7 @@ trait Redshift extends Service {
     params: PauseClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ PauseClusterResult, Unit]
   ): Request[PauseClusterResult, AWSError] = js.native
+  
   /**
     * Allows you to purchase reserved nodes. Amazon Redshift offers a predefined set of reserved node offerings. You can purchase one or more of the offerings. You can call the DescribeReservedNodeOfferings API to obtain the available reserved node offerings. You can call this API by providing a specific reserved node offering and the number of nodes you want to reserve.   For more information about reserved node offerings, go to Purchasing Reserved Nodes in the Amazon Redshift Cluster Management Guide.
     */
@@ -1097,6 +1181,7 @@ trait Redshift extends Service {
     params: PurchaseReservedNodeOfferingMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedNodeOfferingResult, Unit]
   ): Request[PurchaseReservedNodeOfferingResult, AWSError] = js.native
+  
   /**
     * Reboots a cluster. This action is taken as soon as possible. It results in a momentary outage to the cluster, during which the cluster status is set to rebooting. A cluster event is created when the reboot is completed. Any pending cluster modifications (see ModifyCluster) are applied at this reboot. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide. 
     */
@@ -1110,6 +1195,7 @@ trait Redshift extends Service {
     params: RebootClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootClusterResult, Unit]
   ): Request[RebootClusterResult, AWSError] = js.native
+  
   /**
     * Sets one or more parameters of the specified parameter group to their default values and sets the source values of the parameters to "engine-default". To reset the entire parameter group specify the ResetAllParameters parameter. For parameter changes to take effect you must reboot any associated clusters. 
     */
@@ -1123,19 +1209,21 @@ trait Redshift extends Service {
     params: ResetClusterParameterGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupNameMessage, Unit]
   ): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
+  
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc1.large (if your cluster is in a VPC)   dc1.8xlarge (if your cluster is in a VPC)   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(callback: js.Function2[/* err */ AWSError, /* data */ ResizeClusterResult, Unit]): Request[ResizeClusterResult, AWSError] = js.native
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc1.large (if your cluster is in a VPC)   dc1.8xlarge (if your cluster is in a VPC)   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(params: ResizeClusterMessage): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(
     params: ResizeClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ResizeClusterResult, Unit]
   ): Request[ResizeClusterResult, AWSError] = js.native
+  
   /**
     * Creates a new cluster from a snapshot. By default, Amazon Redshift creates the resulting cluster with the same configuration as the original cluster from which the snapshot was created, except that the new cluster is created with the default cluster security and parameter groups. After Amazon Redshift creates the cluster, you can use the ModifyCluster API to associate a different security group and different parameter group with the restored cluster. If you are using a DS node type, you can also choose to change to another DS node type of the same size during restore. If you restore a cluster into a VPC, you must provide a cluster subnet group where you want the cluster restored.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
@@ -1149,6 +1237,7 @@ trait Redshift extends Service {
     params: RestoreFromClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreFromClusterSnapshotResult, Unit]
   ): Request[RestoreFromClusterSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates a new table from a table in an Amazon Redshift cluster snapshot. You must create the new table within the Amazon Redshift cluster that the snapshot was taken from. You cannot use RestoreTableFromClusterSnapshot to restore a table with the same name as an existing table in an Amazon Redshift cluster. That is, you cannot overwrite an existing table in a cluster with a restored table. If you want to replace your original table with a new, restored table, then rename or drop your original table before you call RestoreTableFromClusterSnapshot. When you have renamed your original table, then you can pass the original name of the table as the NewTableName parameter value in the call to RestoreTableFromClusterSnapshot. This way, you can replace the original table with the table created from the snapshot.
     */
@@ -1162,6 +1251,7 @@ trait Redshift extends Service {
     params: RestoreTableFromClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreTableFromClusterSnapshotResult, Unit]
   ): Request[RestoreTableFromClusterSnapshotResult, AWSError] = js.native
+  
   /**
     * Resumes a paused cluster.
     */
@@ -1175,6 +1265,7 @@ trait Redshift extends Service {
     params: ResumeClusterMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ResumeClusterResult, Unit]
   ): Request[ResumeClusterResult, AWSError] = js.native
+  
   /**
     * Revokes an ingress rule in an Amazon Redshift security group for a previously authorized IP range or Amazon EC2 security group. To add an ingress rule, see AuthorizeClusterSecurityGroupIngress. For information about managing security groups, go to Amazon Redshift Cluster Security Groups in the Amazon Redshift Cluster Management Guide. 
     */
@@ -1190,6 +1281,7 @@ trait Redshift extends Service {
     params: RevokeClusterSecurityGroupIngressMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RevokeClusterSecurityGroupIngressResult, Unit]
   ): Request[RevokeClusterSecurityGroupIngressResult, AWSError] = js.native
+  
   /**
     * Removes the ability of the specified AWS customer account to restore the specified snapshot. If the account is currently restoring the snapshot, the restore will run to completion.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
@@ -1203,6 +1295,7 @@ trait Redshift extends Service {
     params: RevokeSnapshotAccessMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RevokeSnapshotAccessResult, Unit]
   ): Request[RevokeSnapshotAccessResult, AWSError] = js.native
+  
   /**
     * Rotates the encryption keys for a cluster.
     */
@@ -1216,6 +1309,7 @@ trait Redshift extends Service {
     params: RotateEncryptionKeyMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RotateEncryptionKeyResult, Unit]
   ): Request[RotateEncryptionKeyResult, AWSError] = js.native
+  
   /**
     * Waits for the clusterAvailable state by periodically calling the underlying Redshift.describeClustersoperation every 60 seconds (at most 30 times).
     */
@@ -1301,4 +1395,3 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotMessage, Unit]
   ): Request[SnapshotMessage, AWSError] = js.native
 }
-

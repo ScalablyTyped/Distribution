@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.SerialCommunication
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SerialPinChange extends js.Object
-
 /** Defines values for types of signal state changes on the serial port. */
 @JSGlobal("Windows.Devices.SerialCommunication.SerialPinChange")
 @js.native
 object SerialPinChange extends js.Object {
+  
   /** Change in the break signal state. */
   @js.native
   sealed trait breakSignal extends SerialPinChange
@@ -30,6 +30,4 @@ object SerialPinChange extends js.Object {
   /** Change in the ring indicator state. */
   @js.native
   sealed trait ringIndicator extends SerialPinChange
-  
 }
-

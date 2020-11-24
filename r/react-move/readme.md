@@ -10,15 +10,15 @@ Beautiful, data-driven animations for React.
 | ------------------ | :-------------: |
 | Full name          | react-move |
 | Keywords           | react-move, resonance, d3, svg, react, charts, graphs, animation, transitions, interpolation |
-| # releases         | 24 |
-| # dependents       | 29 |
-| # downloads        | 3496303 |
+| # releases         | 25 |
+| # dependents       | 37 |
+| # downloads        | 4605001 |
 | # stars            | 8 |
 
 ## Links
-- [Homepage](https://github.com/react-tools/react-move#readme)
-- [Bugs](https://github.com/react-tools/react-move/issues)
-- [Repository](https://github.com/react-tools/react-move)
+- [Homepage](https://github.com/sghall/react-move#readme)
+- [Bugs](https://github.com/sghall/react-move/issues)
+- [Repository](https://github.com/sghall/react-move)
 - [Npm](https://www.npmjs.com/package/react-move)
     
 

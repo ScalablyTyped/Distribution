@@ -7,11 +7,12 @@ import typings.node.childProcessMod.ExecFileOptionsWithStringEncoding
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz/child_process", "execFile")
 @js.native
 object execFile extends js.Object {
+  
   def apply(file: String): js.Promise[js.Tuple2[String, String]] = js.native
   def apply(
     file: String,
@@ -232,4 +233,3 @@ object execFile extends js.Object {
     callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
 }
-

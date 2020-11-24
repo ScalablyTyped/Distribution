@@ -2,13 +2,14 @@ package typings.officeRuntime.OfficeRuntime
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface that contains functions for checking API requirement-set support.
   */
 @js.native
 trait ApiInformation extends js.Object {
+  
   /**
     * Check if the specified requirement set is supported by the host Office application.
     * @param name - Set name; e.g., "MatrixBindings".
@@ -17,4 +18,3 @@ trait ApiInformation extends js.Object {
   def isSetSupported(name: String): Boolean = js.native
   def isSetSupported(name: String, minVersion: String): Boolean = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Importjobs")
 @js.native
 class ResourceProjectsLocationsKeyringsImportjobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.importJobs.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -45,6 +47,7 @@ class ResourceProjectsLocationsKeyringsImportjobs protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.importJobs.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -78,6 +81,7 @@ class ResourceProjectsLocationsKeyringsImportjobs protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.importJobs.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -118,4 +122,3 @@ class ResourceProjectsLocationsKeyringsImportjobs protected () extends js.Object
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

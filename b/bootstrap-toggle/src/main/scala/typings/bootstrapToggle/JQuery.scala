@@ -8,10 +8,11 @@ import typings.bootstrapToggle.bootstrapToggleStrings.on
 import typings.bootstrapToggle.bootstrapToggleStrings.toggle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def bootstrapToggle(): JQuery = js.native
   def bootstrapToggle(options: BootstrapToggleOptions): JQuery = js.native
   @JSName("bootstrapToggle")
@@ -27,4 +28,3 @@ trait JQuery extends js.Object {
   @JSName("bootstrapToggle")
   def bootstrapToggle_toggle(command: toggle): JQuery = js.native
 }
-

@@ -5,33 +5,29 @@ import typings.awsSdkClientLambdaNode.lambdaConfigurationMod.LambdaResolvedConfi
 import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientLambdaNode.typesTagResourceInputMod.TagResourceInput
 import typings.awsSdkClientLambdaNode.typesTagResourceOutputMod.TagResourceOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/commands/TagResourceCommand", JSImport.Namespace)
 @js.native
 object tagResourceCommandMod extends js.Object {
+  
   @js.native
   class TagResourceCommand protected () extends Command[
           InputTypesUnion, 
           TagResourceInput, 
           OutputTypesUnion, 
           TagResourceOutput, 
-          LambdaResolvedConfiguration, 
-          Readable
+          LambdaResolvedConfiguration
         ] {
     def this(input: TagResourceInput) = this()
-    val middlewareStack: MiddlewareStack[TagResourceInput, TagResourceOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[TagResourceInput, TagResourceOutput] = js.native
   }
-  
 }
-

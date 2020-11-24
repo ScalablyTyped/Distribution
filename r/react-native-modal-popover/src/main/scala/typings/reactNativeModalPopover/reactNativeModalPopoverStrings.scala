@@ -4,9 +4,40 @@ import typings.reactNativeModalPopover.popoverGeometryMod.Placement
 import typings.reactNativeModalPopover.popoverMod.Orientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeModalPopoverStrings {
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def `landscape-left`: `landscape-left` = "landscape-left".asInstanceOf[`landscape-left`]
+  
+  @scala.inline
+  def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
   @js.native
   sealed trait auto extends js.Object
   
@@ -36,26 +67,4 @@ object reactNativeModalPopoverStrings {
   
   @js.native
   sealed trait top extends Placement
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def `landscape-left`: `landscape-left` = "landscape-left".asInstanceOf[`landscape-left`]
-  @scala.inline
-  def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
 }
-

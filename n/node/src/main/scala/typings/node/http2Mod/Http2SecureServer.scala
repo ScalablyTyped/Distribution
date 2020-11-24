@@ -12,10 +12,11 @@ import typings.node.tlsMod.TLSSocket
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Http2SecureServer extends Server {
+  
   @JSName("addListener")
   def addListener_checkContinue(
     event: checkContinue,
@@ -44,6 +45,7 @@ trait Http2SecureServer extends Server {
   def addListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  
   @JSName("emit")
   def emit_checkContinue(event: checkContinue, request: Http2ServerRequest, response: Http2ServerResponse): Boolean = js.native
   @JSName("emit")
@@ -58,6 +60,7 @@ trait Http2SecureServer extends Server {
   def emit_timeout(event: timeout): Boolean = js.native
   @JSName("emit")
   def emit_unknownProtocol(event: unknownProtocol, socket: TLSSocket): Boolean = js.native
+  
   @JSName("on")
   def on_checkContinue(
     event: checkContinue,
@@ -86,6 +89,7 @@ trait Http2SecureServer extends Server {
   def on_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_checkContinue(
     event: checkContinue,
@@ -114,6 +118,7 @@ trait Http2SecureServer extends Server {
   def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_checkContinue(
     event: checkContinue,
@@ -142,6 +147,7 @@ trait Http2SecureServer extends Server {
   def prependListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_checkContinue(
     event: checkContinue,
@@ -170,9 +176,9 @@ trait Http2SecureServer extends Server {
   def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  
   def setTimeout(): this.type = js.native
   def setTimeout(msec: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def setTimeout(msec: Double): this.type = js.native
   def setTimeout(msec: Double, callback: js.Function0[Unit]): this.type = js.native
 }
-

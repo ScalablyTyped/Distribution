@@ -8,11 +8,12 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPoolWithArgmax_impl", JSImport.Namespace)
 @js.native
 object maxPoolWithArgmaxImplMod extends js.Object {
+  
   def maxPoolWithArgmaxImpl(
     xValues: TypedArray,
     xShape: js.Array[Double],
@@ -21,4 +22,3 @@ object maxPoolWithArgmaxImplMod extends js.Object {
     convInfo: Conv2DInfo
   ): js.Array[js.Array[String] | Uint8Array | Int32Array | Float32Array] = js.native
 }
-

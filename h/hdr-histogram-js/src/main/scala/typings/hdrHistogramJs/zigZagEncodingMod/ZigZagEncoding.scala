@@ -2,7 +2,7 @@ package typings.hdrHistogramJs.zigZagEncodingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class provides encoding and decoding methods for writing and reading
@@ -22,4 +22,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ZigZagEncoding extends js.Object
-

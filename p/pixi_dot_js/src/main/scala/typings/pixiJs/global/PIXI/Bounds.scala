@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Builder' pattern for bounds rectangles.
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Bounds ()
   extends typings.pixiJs.PIXI.Bounds
-

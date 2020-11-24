@@ -11,8 +11,8 @@ The swiss army knife for binary data in JavaScript.
 | Full name          | bytebuffer |
 | Keywords           | net, array, buffer, arraybuffer, typed array, bytebuffer, json, websocket, webrtc |
 | # releases         | 0 |
-| # dependents       | 415 |
-| # downloads        | 36830049 |
+| # dependents       | 499 |
+| # downloads        | 42547184 |
 | # stars            | 7 |
 
 ## Links

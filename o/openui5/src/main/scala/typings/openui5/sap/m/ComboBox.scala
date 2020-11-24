@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComboBox extends ComboBoxBase {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>selectionChange</code> event of this
     * <code>sap.m.ComboBox</code>.When called, the context of the event handler (its <code>this</code>)
@@ -23,6 +24,7 @@ trait ComboBox extends ComboBoxBase {
     */
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any): ComboBox = js.native
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ComboBox = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>selectionChange</code> event of this
     * <code>sap.m.ComboBox</code>.The passed function and listener object must match the ones used for
@@ -32,6 +34,7 @@ trait ComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelectionChange(fnFunction: js.Any, oListener: js.Any): ComboBox = js.native
+  
   /**
     * Fires event <code>selectionChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selectedItem</code> of type <code>sap.ui.core.Item</code>The selected
@@ -40,27 +43,32 @@ trait ComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelectionChange(mArguments: js.Any): ComboBox = js.native
+  
   /**
     * Gets the default selected item from the aggregation named <code>items</code>.
     */
   def getDefaultSelectedItem(): Unit = js.native
+  
   /**
     * Gets the selected item object from the aggregation named <code>items</code>.
     * @returns The current target of the <code>selectedItem</code> association,or <code>null</code>.
     */
   def getSelectedItem(): Item | js.Any = js.native
+  
   /**
     * Gets current value of property <code>selectedItemId</code>.ID of the selected item.Default value is
     * <code></code>.
     * @returns Value of property <code>selectedItemId</code>
     */
   def getSelectedItemId(): String = js.native
+  
   /**
     * Gets current value of property <code>selectedKey</code>.Key of the selected item.<b>Note:</b> If
     * duplicate keys exist, the first item matching the key is used.Default value is <code></code>.
     * @returns Value of property <code>selectedKey</code>
     */
   def getSelectedKey(): String = js.native
+  
   /**
     * Gets current value of property <code>showSecondaryValues</code>.Indicates whether the text values of
     * the <code>additionalText</code> property of a{@link sap.ui.core.ListItem} are shown.Default value is
@@ -69,10 +77,12 @@ trait ComboBox extends ComboBoxBase {
     * @returns Value of property <code>showSecondaryValues</code>
     */
   def getShowSecondaryValues(): Boolean = js.native
+  
   /**
     * This event handler is called before the picker popup is opened.
     */
   def onBeforeOpen(): Unit = js.native
+  
   /**
     * Sets the <code>selectedItem</code> association.Default value is <code>null</code>.
     * @param vItem New value for the <code>selectedItem</code> association.If an ID of a
@@ -84,6 +94,7 @@ trait ComboBox extends ComboBoxBase {
   def setSelectedItem(vItem: String): ComboBox = js.native
   def setSelectedItem(vItem: js.Any): ComboBox = js.native
   def setSelectedItem(vItem: Item): ComboBox = js.native
+  
   /**
     * Sets the <code>selectedItemId</code> property.Default value is an empty string <code>""</code> or
     * <code>undefined</code>.
@@ -94,6 +105,7 @@ trait ComboBox extends ComboBoxBase {
     */
   def setSelectedItemId(vItem: String): ComboBox = js.native
   def setSelectedItemId(vItem: js.Any): ComboBox = js.native
+  
   /**
     * Sets the <code>selectedKey</code> property.Default value is an empty string <code>""</code> or
     * <code>undefined</code>.
@@ -103,6 +115,7 @@ trait ComboBox extends ComboBoxBase {
     * @returns <code>this</code> to allow method chaining.
     */
   def setSelectedKey(sKey: String): ComboBox = js.native
+  
   /**
     * Sets a new value for property <code>showSecondaryValues</code>.Indicates whether the text values of
     * the <code>additionalText</code> property of a{@link sap.ui.core.ListItem} are shown.When called with
@@ -113,9 +126,9 @@ trait ComboBox extends ComboBoxBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSecondaryValues(bShowSecondaryValues: Boolean): ComboBox = js.native
+  
   /**
     * Synchronizes the <code>selectedItem</code> association and the <code>selectedItemId</code> property.
     */
   def synchronizeSelection(): Unit = js.native
 }
-

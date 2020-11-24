@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Locations$Datasources")
 @js.native
 class ResourceProjectsLocationsDatasources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * bigquerydatatransfer.projects.locations.dataSources.checkValidCreds
     * @desc Returns true if valid credentials exist for the given data source
@@ -50,6 +50,9 @@ class ResourceProjectsLocationsDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCheckValidCredsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * bigquerydatatransfer.projects.locations.dataSources.get
     * @desc Retrieves a supported data source and returns its settings, which
@@ -82,6 +85,7 @@ class ResourceProjectsLocationsDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataSource]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.locations.dataSources.list
     * @desc Lists supported data sources and returns their settings, which can
@@ -117,4 +121,3 @@ class ResourceProjectsLocationsDatasources protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListDataSourcesResponse]
   ): Unit = js.native
 }
-

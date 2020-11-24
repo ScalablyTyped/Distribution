@@ -4,7 +4,7 @@ import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.outputMod.Output_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi/resource", "ComponentResource")
 @js.native
@@ -20,22 +20,42 @@ class ComponentResource[TData] protected () extends Resource {
     * @param name The _unique_ name of the resource.
     * @param args Information passed to [initialize] method.
     * @param opts A bag of options that control this resource's behavior.
+    * @param remote True if this is a remote component resource.
     */
   def this(`type`: String, name: String) = this()
   def this(`type`: String, name: String, args: Inputs) = this()
   def this(`type`: String, name: String, args: js.UndefOr[scala.Nothing], opts: ComponentResourceOptions) = this()
   def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions) = this()
+  def this(
+    `type`: String,
+    name: String,
+    args: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    remote: Boolean
+  ) = this()
+  def this(
+    `type`: String,
+    name: String,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions,
+    remote: Boolean
+  ) = this()
+  def this(`type`: String, name: String, args: Inputs, opts: js.UndefOr[scala.Nothing], remote: Boolean) = this()
+  def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions, remote: Boolean) = this()
+  
   /**
     * Retrieves the data produces by [initialize].  The data is immediately available in a
     * derived class's constructor after the `super(...)` call to `ComponentResource`.
     */
   /* protected */ def getData(): js.Promise[TData] = js.native
+  
   /**
     * Can be overridden by a subclass to asynchronously initialize data for this Component
     * automatically when constructed.  The data will be available immediately for subclass
     * constructors to use.  To access the data use `.getData`.
     */
   /* protected */ def initialize(args: Inputs): js.Promise[TData] = js.native
+  
   /**
     * registerOutputs registers synthetic outputs that a component has initialized, usually by
     * allocating other child sub-resources and propagating their resulting property values.
@@ -49,15 +69,14 @@ class ComponentResource[TData] protected () extends Resource {
   /* protected */ def registerOutputs(outputs: Inputs): Unit = js.native
   /* protected */ def registerOutputs(outputs: Output_[Inputs]): Unit = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/pulumi/resource", "ComponentResource")
 @js.native
 object ComponentResource extends js.Object {
+  
   /**
     * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
     * multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = js.native
 }
-

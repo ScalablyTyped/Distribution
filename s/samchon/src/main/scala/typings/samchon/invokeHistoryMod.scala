@@ -5,11 +5,12 @@ import typings.samchon.invokeMod.Invoke
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/slave/InvokeHistory", JSImport.Namespace)
 @js.native
 object invokeHistoryMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -21,57 +22,66 @@ object invokeHistoryMod extends js.Object {
       * @param invoke An {@link Invoke} message requesting a *parallel or distributed process*.
       */
     def this(invoke: Invoke) = this()
-    /**
-      * @hidden
-      */
-    var end_time_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var listener: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var start_time_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var uid: js.Any = js.native
+    
     /**
       * Complete the history.
       *
       * Completes the history and determines the {@link getEndTime end time}.
       */
     def complete(): Unit = js.native
+    
     /**
       * Compute elapsed time.
       *
       * @return nanoseconds.
       */
     def computeElapsedTime(): Double = js.native
+    
+    /**
+      * @hidden
+      */
+    var end_time_ : js.Any = js.native
+    
     /**
       * Get end time.
       */
     def getEndTime(): Date = js.native
+    
     /**
       * Get {@link Invoke.getListener listener} of the {@link Invoke} message.
       */
     def getListener(): String = js.native
+    
     /**
       * Get start time.
       */
     def getStartTime(): Date = js.native
+    
     /**
       * Get unique ID.
       */
     def getUID(): Double = js.native
+    
+    /**
+      * @hidden
+      */
+    var listener: js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var start_time_ : js.Any = js.native
+    
     /**
       * Convert to an {@link Invoke} message.
       *
       * Creates and returns an {@link Invoke} message that is used to reporting to the **master**.
       */
     def toInvoke(): Invoke = js.native
+    
+    /**
+      * @hidden
+      */
+    var uid: js.Any = js.native
   }
-  
 }
-

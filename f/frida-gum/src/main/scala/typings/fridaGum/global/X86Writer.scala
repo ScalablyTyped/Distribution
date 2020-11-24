@@ -4,7 +4,7 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.X86WriterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generates machine code for x86.
@@ -23,4 +23,3 @@ class X86Writer protected ()
   def this(codeAddress: NativePointerValue) = this()
   def this(codeAddress: NativePointerValue, options: X86WriterOptions) = this()
 }
-

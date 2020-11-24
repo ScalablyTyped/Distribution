@@ -2,7 +2,7 @@ package typings.materialUiCore.dividerDividerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.materialUiCore.materialUiCoreStrings.root
@@ -12,17 +12,20 @@ import scala.scalajs.js.annotation._
   - typings.materialUiCore.materialUiCoreStrings.middle
 */
 trait DividerClassKey extends js.Object
-
 object DividerClassKey {
+  
   @scala.inline
   def absolute: typings.materialUiCore.materialUiCoreStrings.absolute = "absolute".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.absolute]
+  
   @scala.inline
   def inset: typings.materialUiCore.materialUiCoreStrings.inset = "inset".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inset]
+  
   @scala.inline
   def light: typings.materialUiCore.materialUiCoreStrings.light = "light".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.light]
+  
   @scala.inline
   def middle: typings.materialUiCore.materialUiCoreStrings.middle = "middle".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.middle]
+  
   @scala.inline
   def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
-

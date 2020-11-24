@@ -3,11 +3,11 @@ package typings.oracleOraclejet.ojvalidationNumberMod
 import typings.oracleOraclejet.ojvalidationNumberMod.IntlNumberConverter.ConverterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NumberConverterFactory extends js.Object {
+  
   def createConverter(): IntlNumberConverter = js.native
   def createConverter(options: ConverterOptions): IntlNumberConverter = js.native
 }
-

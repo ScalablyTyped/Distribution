@@ -10,9 +10,9 @@ A pure and powerful JavaScript Bitcoin library.
 | ------------------ | :-------------: |
 | Full name          | bitcore-lib |
 | Keywords           | bitcoin, transaction, address, p2p, ecies, cryptocurrency, blockchain, payment, bip21, bip32, bip37, bip69, bip70, multisig |
-| # releases         | 33 |
-| # dependents       | 254 |
-| # downloads        | 773911 |
+| # releases         | 48 |
+| # dependents       | 280 |
+| # downloads        | 723211 |
 | # stars            | 4 |
 
 ## Links

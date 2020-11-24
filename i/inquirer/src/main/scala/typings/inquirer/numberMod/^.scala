@@ -4,7 +4,7 @@ import typings.inquirer.mod.Answers
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a prompt which allows the user to type a number as answer.
@@ -30,4 +30,3 @@ class ^[TQuestion /* <: Question */] protected ()
     */
   def this(question: TQuestion, readLine: Interface, answers: Answers) = this()
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "trunk8"
-version := "0.0-unknown-dt-20200515Z-1a522a"
+version := "0.0-unknown-dt-20201002Z-7adfae"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

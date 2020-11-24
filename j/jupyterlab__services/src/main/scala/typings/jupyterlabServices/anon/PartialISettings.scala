@@ -10,49 +10,109 @@ import typings.std.global.Request
 import typings.std.global.WebSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@jupyterlab/services.@jupyterlab/services/lib/serverconnection.ServerConnection.ISettings> */
+@js.native
 trait PartialISettings extends js.Object {
-  var Headers: js.UndefOr[Instantiable with Instantiable0[typings.std.global.Headers]] = js.undefined
+  
+  var Headers: js.UndefOr[Instantiable with Instantiable0[typings.std.global.Headers]] = js.native
+  
   var Request: js.UndefOr[
     InstantiableRequest with (Instantiable1[/* input */ RequestInfo, typings.std.global.Request])
-  ] = js.undefined
-  var WebSocket: js.UndefOr[CLOSED with (Instantiable1[/* url */ String, typings.std.global.WebSocket])] = js.undefined
-  var appUrl: js.UndefOr[String] = js.undefined
-  var baseUrl: js.UndefOr[String] = js.undefined
+  ] = js.native
+  
+  var WebSocket: js.UndefOr[CLOSED with (Instantiable1[/* url */ String, typings.std.global.WebSocket])] = js.native
+  
+  var appUrl: js.UndefOr[String] = js.native
+  
+  var baseUrl: js.UndefOr[String] = js.native
+  
   var fetch: js.UndefOr[
     js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
-  ] = js.undefined
-  var init: js.UndefOr[RequestInit] = js.undefined
-  var token: js.UndefOr[String] = js.undefined
-  var wsUrl: js.UndefOr[String] = js.undefined
+  ] = js.native
+  
+  var init: js.UndefOr[RequestInit] = js.native
+  
+  var token: js.UndefOr[String] = js.native
+  
+  var wsUrl: js.UndefOr[String] = js.native
 }
-
 object PartialISettings {
+  
   @scala.inline
-  def apply(
-    Headers: Instantiable with Instantiable0[Headers] = null,
-    Request: InstantiableRequest with (Instantiable1[/* input */ RequestInfo, Request]) = null,
-    WebSocket: CLOSED with (Instantiable1[/* url */ String, WebSocket]) = null,
-    appUrl: String = null,
-    baseUrl: String = null,
-    fetch: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[Response] = null,
-    init: RequestInit = null,
-    token: String = null,
-    wsUrl: String = null
-  ): PartialISettings = {
+  def apply(): PartialISettings = {
     val __obj = js.Dynamic.literal()
-    if (Headers != null) __obj.updateDynamic("Headers")(Headers.asInstanceOf[js.Any])
-    if (Request != null) __obj.updateDynamic("Request")(Request.asInstanceOf[js.Any])
-    if (WebSocket != null) __obj.updateDynamic("WebSocket")(WebSocket.asInstanceOf[js.Any])
-    if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl.asInstanceOf[js.Any])
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (wsUrl != null) __obj.updateDynamic("wsUrl")(wsUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialISettings]
   }
+  
+  @scala.inline
+  implicit class PartialISettingsOps[Self <: PartialISettings] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setHeaders(value: Instantiable with Instantiable0[Headers]): Self = this.set("Headers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHeaders: Self = this.set("Headers", js.undefined)
+    
+    @scala.inline
+    def setRequest(value: InstantiableRequest with (Instantiable1[/* input */ RequestInfo, Request])): Self = this.set("Request", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRequest: Self = this.set("Request", js.undefined)
+    
+    @scala.inline
+    def setWebSocket(value: CLOSED with (Instantiable1[/* url */ String, WebSocket])): Self = this.set("WebSocket", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWebSocket: Self = this.set("WebSocket", js.undefined)
+    
+    @scala.inline
+    def setAppUrl(value: String): Self = this.set("appUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAppUrl: Self = this.set("appUrl", js.undefined)
+    
+    @scala.inline
+    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    
+    @scala.inline
+    def setFetch(value: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[Response]): Self = this.set("fetch", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteFetch: Self = this.set("fetch", js.undefined)
+    
+    @scala.inline
+    def setInit(value: RequestInit): Self = this.set("init", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    
+    @scala.inline
+    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+    
+    @scala.inline
+    def setWsUrl(value: String): Self = this.set("wsUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWsUrl: Self = this.set("wsUrl", js.undefined)
+  }
 }
-

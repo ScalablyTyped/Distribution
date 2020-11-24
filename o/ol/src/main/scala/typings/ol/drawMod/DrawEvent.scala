@@ -2,13 +2,14 @@ package typings.ol.drawMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/interaction/Draw", "DrawEvent")
 @js.native
-class DrawEvent protected ()
+trait DrawEvent
   extends typings.ol.eventMod.default {
-  def this(`type`: DrawEventType, feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]) = this()
+  
+  /**
+    * The feature being drawn.
+    */
   var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
 }
-

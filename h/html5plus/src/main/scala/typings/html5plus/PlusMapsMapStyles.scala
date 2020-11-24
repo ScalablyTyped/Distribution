@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地图控件对象的参数
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusMapsMapStyles extends js.Object {
+  
   /**
     * 地图的中心位置
     * 未设置则使用地图的默认中心点（由地图供应商确定）。
@@ -19,6 +20,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var center: js.UndefOr[PlusMapsPoint] = js.native
+  
   /**
     * 地图控件的高度
     * 可取值：
@@ -29,6 +31,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var height: js.UndefOr[String] = js.native
+  
   /**
     * 地图控件左上角的水平偏移量
     * 可取值：
@@ -40,6 +43,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var left: js.UndefOr[String] = js.native
+  
   /**
     * 地图控件在Webview窗口的布局模式
     * 可取值：
@@ -50,6 +54,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var position: js.UndefOr[String] = js.native
+  
   /**
     * 地图控件左上角的垂直偏移量
     * 可取值：
@@ -60,6 +65,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var top: js.UndefOr[String] = js.native
+  
   /**
     * 地图的是否显示交通信息
     * true表示显示地图的交通信息图层，false则不显示，默认值为false。
@@ -67,6 +73,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var traffic: js.UndefOr[Boolean] = js.native
+  
   /**
     * 地图的视图类型
     * 可设置普通街道视图、卫星视图，默认值为普通街道视图。
@@ -74,6 +81,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var `type`: js.UndefOr[PlusMapsMapType] = js.native
+  
   /**
     * 地图控件的宽度
     * 可取值：
@@ -84,6 +92,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var width: js.UndefOr[String] = js.native
+  
   /**
     * 地图的缩放级别
     * 有效范围为1-22，默认值为12，设置无效的值则使用默认值。
@@ -91,6 +100,7 @@ trait PlusMapsMapStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var zoom: js.UndefOr[Double] = js.native
+  
   /**
     * 是否显示地图的内置缩放控件
     * true表示显示地图的内置缩放控件，false则不显示，默认值为false。
@@ -99,65 +109,87 @@ trait PlusMapsMapStyles extends js.Object {
     */
   var zoomControls: js.UndefOr[Boolean] = js.native
 }
-
 object PlusMapsMapStyles {
+  
   @scala.inline
   def apply(): PlusMapsMapStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsMapStyles]
   }
+  
   @scala.inline
   implicit class PlusMapsMapStylesOps[Self <: PlusMapsMapStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCenter(value: PlusMapsPoint): Self = this.set("center", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCenter: Self = this.set("center", js.undefined)
+    
     @scala.inline
     def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeft: Self = this.set("left", js.undefined)
+    
     @scala.inline
     def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePosition: Self = this.set("position", js.undefined)
+    
     @scala.inline
     def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTop: Self = this.set("top", js.undefined)
+    
     @scala.inline
     def setTraffic(value: Boolean): Self = this.set("traffic", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTraffic: Self = this.set("traffic", js.undefined)
+    
     @scala.inline
     def setType(value: PlusMapsMapType): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
+    
     @scala.inline
     def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZoom: Self = this.set("zoom", js.undefined)
+    
     @scala.inline
     def setZoomControls(value: Boolean): Self = this.set("zoomControls", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZoomControls: Self = this.set("zoomControls", js.undefined)
   }
-  
 }
-

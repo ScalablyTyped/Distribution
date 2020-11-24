@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-box`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextBoxInput
   extends TextInput
      with inputsInput {
+  
   /**
     * The type of input.
     *
@@ -17,4 +18,3 @@ trait TextBoxInput
   @JSName("type")
   var type_TextBoxInput: `text-box` = js.native
 }
-

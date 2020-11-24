@@ -2,9 +2,28 @@ package typings.reactColor
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactColorStrings {
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @scala.inline
+  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
   @js.native
   sealed trait hide extends js.Object
   
@@ -22,18 +41,4 @@ object reactColorStrings {
   
   @js.native
   sealed trait vertical extends js.Object
-  
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

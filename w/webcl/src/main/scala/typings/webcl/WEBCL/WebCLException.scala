@@ -3,12 +3,12 @@ package typings.webcl.WEBCL
 import typings.std.DOMException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebCLException extends DOMException
-
 object WebCLException {
+  
   @scala.inline
   def apply(
     ABORT_ERR: Double,
@@ -44,4 +44,3 @@ object WebCLException {
     __obj.asInstanceOf[WebCLException]
   }
 }
-

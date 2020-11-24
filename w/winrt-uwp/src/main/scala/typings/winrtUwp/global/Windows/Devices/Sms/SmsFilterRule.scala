@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes an SMS filtering rule. */
 @JSGlobal("Windows.Devices.Sms.SmsFilterRule")
@@ -15,4 +15,3 @@ class SmsFilterRule protected ()
     */
   def this(messageType: typings.winrtUwp.Windows.Devices.Sms.SmsMessageType) = this()
 }
-

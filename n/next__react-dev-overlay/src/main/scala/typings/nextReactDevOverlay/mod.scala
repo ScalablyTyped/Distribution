@@ -1,21 +1,26 @@
 package typings.nextReactDevOverlay
 
-import typings.nextReactDevOverlay.anon.Children
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FunctionComponent
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@next/react-dev-overlay/lib/client", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def ReactDevOverlay(hasChildren: Children): Element = js.native
+  
+  val ReactDevOverlay: FunctionComponent[js.Object] = js.native
+  
   def getNodeError(error: Error): Error = js.native
+  
   def onBuildError(message: String): Unit = js.native
+  
   def onBuildOk(): Unit = js.native
+  
   def onRefresh(): Unit = js.native
+  
   def register(): Unit = js.native
+  
   def unregister(): Unit = js.native
 }
-

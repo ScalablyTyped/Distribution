@@ -2,10 +2,9 @@ package typings.sharepoint.global.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.FieldLink")
 @js.native
 class FieldLink ()
   extends typings.sharepoint.SP.FieldLink
-

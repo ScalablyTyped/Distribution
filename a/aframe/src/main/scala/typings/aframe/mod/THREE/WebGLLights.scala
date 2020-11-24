@@ -1,14 +1,15 @@
 package typings.aframe.mod.THREE
 
-import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.WebGLLights")
 @js.native
 class WebGLLights protected ()
   extends typings.three.mod.WebGLLights {
-  def this(gl: WebGLRenderingContext, properties: js.Any, info: js.Any) = this()
+  def this(
+    extensions: typings.three.webGLExtensionsMod.WebGLExtensions,
+    capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities
+  ) = this()
 }
-

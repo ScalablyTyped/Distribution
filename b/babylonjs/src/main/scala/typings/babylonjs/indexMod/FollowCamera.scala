@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "FollowCamera")
 @js.native
@@ -11,7 +11,7 @@ class FollowCamera protected ()
   extends typings.babylonjs.babylonjsMod.FollowCamera {
   /**
     * Instantiates the follow camera.
-    * @see http://doc.babylonjs.com/features/cameras#follow-camera
+    * @see https://doc.babylonjs.com/features/cameras#follow-camera
     * @param name Define the name of the camera in the scene
     * @param position Define the position of the camera
     * @param scene Define the scene the camera belong to
@@ -29,4 +29,3 @@ class FollowCamera protected ()
     lockedTarget: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh]
   ) = this()
 }
-

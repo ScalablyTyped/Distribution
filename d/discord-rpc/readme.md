@@ -10,9 +10,9 @@ A simple RPC client for Discord
 | ------------------ | :-------------: |
 | Full name          | discord-rpc |
 | Keywords           | discord, rpc, rich presence, remote procedural call |
-| # releases         | 9 |
-| # dependents       | 18 |
-| # downloads        | 80693 |
+| # releases         | 6 |
+| # dependents       | 22 |
+| # downloads        | 125756 |
 | # stars            | 6 |
 
 ## Links

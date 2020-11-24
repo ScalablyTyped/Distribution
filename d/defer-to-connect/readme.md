@@ -10,9 +10,9 @@ The safe way to handle the `connect` socket event
 | ------------------ | :-------------: |
 | Full name          | defer-to-connect |
 | Keywords           | socket, connect, event |
-| # releases         | 10 |
-| # dependents       | 10 |
-| # downloads        | 102278990 |
+| # releases         | 8 |
+| # dependents       | 11 |
+| # downloads        | 123047175 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,13 @@ package typings.detox.mod.global.Detox_
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Element extends js.Object {
+  
   def apply(by: Matchers): DetoxAny = js.native
+  
   /**
     * Choose from multiple elements matching the same matcher using index
     * @param index
@@ -14,4 +16,3 @@ trait Element extends js.Object {
     */
   def atIndex(index: Double): DetoxAny = js.native
 }
-

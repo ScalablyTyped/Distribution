@@ -3,7 +3,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 import typings.kiiCloudSdk.anon.`10`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiGroup object
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiGroup ()
   extends typings.kiiCloudSdk.KiiCloud.KiiGroup
-
 /* static members */
 @JSGlobal("KiiCloud.KiiGroup")
 @js.native
 object KiiGroup extends js.Object {
+  
   /**
     * Instantiate KiiGroup that refers to existing group which has specified ID.
     * You have to specify the ID of existing KiiGroup. Unlike KiiObject,
@@ -34,6 +34,7 @@ object KiiGroup extends js.Object {
     *     var group = new KiiUser.groupWithID("__GROUP_ID__");
     */
   def groupWithID(groupId: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  
   /**
     * Creates a reference to a group with the given name
     * <br><br>
@@ -49,6 +50,7 @@ object KiiGroup extends js.Object {
     *     var group = new KiiGroup.groupWithName("myGroup");
     */
   def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  
   /**
     * Creates a reference to a group with the given name and a list of default members
     * <br><br>
@@ -65,6 +67,7 @@ object KiiGroup extends js.Object {
     *     var group = new KiiGroup.groupWithName("myGroup", members);
     */
   def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  
   /**
     * Generate a new KiiGroup based on a given URI
     * <br><br>
@@ -82,6 +85,7 @@ object KiiGroup extends js.Object {
     *     var group = new KiiGroup.groupWithURI("kiicloud://myuri");
     */
   def groupWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  
   /**
     * Register new group own by current user on Kii Cloud with specified ID.
     *
@@ -140,4 +144,3 @@ object KiiGroup extends js.Object {
     callbacks: `10`
   ): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
 }
-

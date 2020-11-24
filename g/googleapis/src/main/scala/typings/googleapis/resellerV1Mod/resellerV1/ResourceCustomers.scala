@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/reseller/v1", "reseller_v1.Resource$Customers")
 @js.native
 class ResourceCustomers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * reseller.customers.get
     * @desc Get a customer account.
@@ -41,6 +43,7 @@ class ResourceCustomers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
+  
   /**
     * reseller.customers.insert
     * @desc Order a new customer's account.
@@ -70,6 +73,7 @@ class ResourceCustomers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
+  
   /**
     * reseller.customers.patch
     * @desc Update a customer account's settings. This method supports patch
@@ -100,6 +104,7 @@ class ResourceCustomers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
+  
   /**
     * reseller.customers.update
     * @desc Update a customer account's settings.
@@ -130,4 +135,3 @@ class ResourceCustomers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
 }
-

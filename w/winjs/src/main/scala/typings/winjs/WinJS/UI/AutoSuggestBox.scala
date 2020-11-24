@@ -4,43 +4,14 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rich input box that provides suggestions as the user types.
   **/
 @js.native
 trait AutoSuggestBox extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets or sets whether the first suggestion is chosen when the user presses Enter.
-    **/
-  var chooseSuggestionOnEnter: Boolean = js.native
-  /**
-    * Gets or sets a value that specifies whether the AutoSuggestBox is disabled. If the control is disabled, it won't receive focus.
-    **/
-  var disabled: Boolean = js.native
-  /**
-    * Gets the DOM element that hosts the AutoSuggestBox.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets or sets the placeholder text for the AutoSuggestBox. This text is displayed if there is no other text in the input box.
-    **/
-  var placeholderText: String = js.native
-  /**
-    * Gets or sets the query text for the AutoSuggestBox.
-    **/
-  var queryText: String = js.native
-  /**
-    * Gets or sets the history context. This context is used a secondary key (the app ID is the primary key) for storing history.
-    **/
-  var searchHistoryContext: String = js.native
-  /**
-    * Gets or sets a value that specifies whether history is disabled.
-    **/
-  var searchHistoryDisabled: Boolean = js.native
+  
   //#endregion Events
   //#region Methods
   /**
@@ -51,6 +22,19 @@ trait AutoSuggestBox extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets whether the first suggestion is chosen when the user presses Enter.
+    **/
+  var chooseSuggestionOnEnter: Boolean = js.native
+  
+  /**
+    * Gets or sets a value that specifies whether the AutoSuggestBox is disabled. If the control is disabled, it won't receive focus.
+    **/
+  var disabled: Boolean = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -58,10 +42,17 @@ trait AutoSuggestBox extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Releases resources held by this AutoSuggestBox. Call this method when the AutoSuggestBox is no longer needed. After calling this method, the AutoSuggestBox becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  /**
+    * Gets the DOM element that hosts the AutoSuggestBox.
+    **/
+  var element: HTMLElement = js.native
+  
   //#endregion Constructors
   //#region Events
   /**
@@ -69,21 +60,35 @@ trait AutoSuggestBox extends js.Object {
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.language, detail.queryText, detail.linguisticDetails.
     **/
   def onquerychanged(eventInfo: CustomEvent[_]): Unit = js.native
+  
   /**
     * Raised awhen the user presses Enter.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.language, detail.queryText, detail.linguisticDetails, detail.keyModifiers.
     **/
   def onquerysubmitted(eventInfo: CustomEvent[_]): Unit = js.native
+  
   /**
     * Raised when the user selects a suggested option for their query.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.tag, detail.keyModifiers, detail.storageFile.
     **/
   def onresultsuggestionchosen(eventInfo: CustomEvent[_]): Unit = js.native
+  
   /**
     * Raised when the system requests suggestions from this app.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.language, detail.linguisticDetails, detail.queryText, detail.searchSuggestionCollection.
     **/
   def onsuggestionsrequested(eventInfo: CustomEvent[_]): Unit = js.native
+  
+  /**
+    * Gets or sets the placeholder text for the AutoSuggestBox. This text is displayed if there is no other text in the input box.
+    **/
+  var placeholderText: String = js.native
+  
+  /**
+    * Gets or sets the query text for the AutoSuggestBox.
+    **/
+  var queryText: String = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -92,6 +97,17 @@ trait AutoSuggestBox extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets the history context. This context is used a secondary key (the app ID is the primary key) for storing history.
+    **/
+  var searchHistoryContext: String = js.native
+  
+  /**
+    * Gets or sets a value that specifies whether history is disabled.
+    **/
+  var searchHistoryDisabled: Boolean = js.native
+  
   /**
     * Specifies whether suggestions based on local files are automatically displayed in the input field, and defines the criteria that
     * the system uses to locate and filter these suggestions.
@@ -99,4 +115,3 @@ trait AutoSuggestBox extends js.Object {
     **/
   def setLocalContentSuggestionSettings(settings: js.Any): Unit = js.native
 }
-

@@ -8,20 +8,24 @@ import typings.std.ArrayLike
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObservableStatic extends js.Object {
+  
   def `catch`[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
       // alias for throw
   def `catch`[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
+  
       // alias for catch
   def catchError[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
       // alias for catch
   def catchError[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
+  
       // alias for catch
   def catchException[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
   def catchException[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
+  
   def combineLatest[T](sources: js.Array[Observable[T] | IPromise[T]]): Observable[js.Array[T]] = js.native
   def combineLatest[T, T2](first: IPromise[T], second: IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def combineLatest[T, T2](first: IPromise[T], second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
@@ -716,13 +720,19 @@ trait ObservableStatic extends js.Object {
     fifth: Observable[T5],
     resultSelector: js.Function5[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, TResult]
   ): Observable[TResult] = js.native
+  
   def concat[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
   def concat[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
+  
   def create[T](subscribe: js.Function1[/* observer */ Observer[T], js.Function0[Unit] | IDisposable | Unit]): Observable[T] = js.native
+  
   def createWithDisposable[T](subscribe: js.Function1[/* observer */ Observer[T], IDisposable]): Observable[T] = js.native
+  
   def defer[T](observableFactory: js.Function0[IPromise[T] | Observable[T]]): Observable[T] = js.native
+  
   def empty[T](): Observable[T] = js.native
   def empty[T](scheduler: IScheduler): Observable[T] = js.native
+  
   /**
     * This method creates a new Observable sequence from an array object.
     * @param array An array-like or iterable object to convert to an Observable sequence.
@@ -813,10 +823,12 @@ trait ObservableStatic extends js.Object {
     thisArg: js.Any,
     scheduler: IScheduler
   ): Observable[T] = js.native
+  
   def fromArray[T](array: js.Array[T]): Observable[T] = js.native
   def fromArray[T](array: js.Array[T], scheduler: IScheduler): Observable[T] = js.native
   def fromArray[T](array: Dictindex[T]): Observable[T] = js.native
   def fromArray[T](array: Dictindex[T], scheduler: IScheduler): Observable[T] = js.native
+  
   def fromCallback[TResult](func: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
   def fromCallback[TResult](
     func: js.Function1[
@@ -908,6 +920,7 @@ trait ObservableStatic extends js.Object {
     context: js.Any,
     selector: js.Function1[/* args */ js.Array[TCallbackResult], TResult]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
+  
   def fromEvent[T](element: DOMEventTarget, eventName: String): Observable[T] = js.native
   def fromEvent[T](element: DOMEventTarget, eventName: String, selector: js.Function1[/* repeated */ js.Any, T]): Observable[T] = js.native
   def fromEvent[T](element: NativeEventTarget, eventName: String): Observable[T] = js.native
@@ -920,6 +933,7 @@ trait ObservableStatic extends js.Object {
     eventName: String,
     selector: js.Function1[/* repeated */ js.Any, T]
   ): Observable[T] = js.native
+  
   def fromEventPattern[T](
     addHandler: js.Function1[/* handler */ js.Function, Unit],
     removeHandler: js.Function1[/* handler */ js.Function, Unit]
@@ -929,6 +943,7 @@ trait ObservableStatic extends js.Object {
     removeHandler: js.Function1[/* handler */ js.Function, Unit],
     selector: js.Function1[/* repeated */ js.Any, T]
   ): Observable[T] = js.native
+  
   def fromNodeCallback[T](func: js.Function): js.Function1[/* repeated */ js.Any, Observable[T]] = js.native
   def fromNodeCallback[TR](func: js.Function1[/* callback */ js.Function, _]): js.Function0[Observable[TR]] = js.native
   def fromNodeCallback[TR](func: js.Function1[/* callback */ js.Function, _], context: js.Any): js.Function0[Observable[TR]] = js.native
@@ -938,8 +953,13 @@ trait ObservableStatic extends js.Object {
     context: js.Any,
     selector: js.Function1[/* results */ js.Array[TC], TR]
   ): js.Function0[Observable[TR]] = js.native
-  def fromNodeCallback[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _]): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
-  def fromNodeCallback[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _], context: js.Any): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
+  def fromNodeCallback[T1, T](
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], _]
+  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
+  def fromNodeCallback[T1, T](
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], _],
+    context: js.Any
+  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
   def fromNodeCallback[TC, T](func: js.Function, context: js.Any, selector: js.Function1[/* results */ js.Array[TC], T]): js.Function1[/* repeated */ js.Any, Observable[T]] = js.native
   def fromNodeCallback[T1, TC, TR](
     func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _],
@@ -953,25 +973,11 @@ trait ObservableStatic extends js.Object {
     context: js.Any,
     selector: js.Function1[/* results */ js.Array[TC], TR]
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TR]] = js.native
-  def fromNodeCallback[T1, T2, T3, T](
-    func: js.Function4[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], 
-      _
-    ]
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[T]] = js.native
-  def fromNodeCallback[T1, T2, T3, T](
-    func: js.Function4[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], 
-      _
-    ],
+  def fromNodeCallback[T1, T2, T3, TR](func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* callback */ js.Function, _]): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TR]] = js.native
+  def fromNodeCallback[T1, T2, T3, TR](
+    func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* callback */ js.Function, _],
     context: js.Any
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[T]] = js.native
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TR]] = js.native
   def fromNodeCallback[T1, T2, T3, TC, TR](
     func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* callback */ js.Function, _],
     context: js.Any,
@@ -985,15 +991,6 @@ trait ObservableStatic extends js.Object {
     context: js.Any
   ): js.Function0[Observable[T]] = js.native
   @JSName("fromNodeCallback")
-  def fromNodeCallback_T1T[T1, T](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], _]
-  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
-  @JSName("fromNodeCallback")
-  def fromNodeCallback_T1T[T1, T](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], _],
-    context: js.Any
-  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
-  @JSName("fromNodeCallback")
   def fromNodeCallback_T1T2T[T1, T2, T](
     func: js.Function3[
       /* arg1 */ T1, 
@@ -1013,18 +1010,38 @@ trait ObservableStatic extends js.Object {
     context: js.Any
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[T]] = js.native
   @JSName("fromNodeCallback")
-  def fromNodeCallback_T1T2T3TR[T1, T2, T3, TR](func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* callback */ js.Function, _]): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TR]] = js.native
+  def fromNodeCallback_T1T2T3T[T1, T2, T3, T](
+    func: js.Function4[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], 
+      _
+    ]
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[T]] = js.native
   @JSName("fromNodeCallback")
-  def fromNodeCallback_T1T2T3TR[T1, T2, T3, TR](
-    func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* callback */ js.Function, _],
+  def fromNodeCallback_T1T2T3T[T1, T2, T3, T](
+    func: js.Function4[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], 
+      _
+    ],
     context: js.Any
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TR]] = js.native
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[T]] = js.native
+  @JSName("fromNodeCallback")
+  def fromNodeCallback_T1TR[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _]): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
+  @JSName("fromNodeCallback")
+  def fromNodeCallback_T1TR[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _], context: js.Any): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
+  
   /**
     * Converts a Promise to an Observable sequence
     * @param promise An ES6 Compliant promise.
     * @returns An Observable sequence which wraps the existing promise success and failure.
     */
   def fromPromise[T](promise: IPromise[T]): Observable[T] = js.native
+  
   /**
     * This method creates a new Observable sequence from an array object.
     * @param array An array-like or iterable object to convert to an Observable sequence.
@@ -1083,6 +1100,7 @@ trait ObservableStatic extends js.Object {
     thisArg: js.Any,
     scheduler: IScheduler
   ): Observable[TResult] = js.native
+  
   def generate[TState, TResult](
     initialState: TState,
     condition: js.Function1[/* state */ TState, Boolean],
@@ -1096,20 +1114,25 @@ trait ObservableStatic extends js.Object {
     resultSelector: js.Function1[/* state */ TState, TResult],
     scheduler: IScheduler
   ): Observable[TResult] = js.native
+  
   def interval(dutTime: Double, period: Double): Observable[Double] = js.native
   def interval(dutTime: Double, period: Double, scheduler: IScheduler): Observable[Double] = js.native
   def interval(period: Double): Observable[Double] = js.native
   def interval(period: Double, scheduler: IScheduler): Observable[Double] = js.native
+  
   /**
     * @since 2.2.28
     */
   def just[T](value: T): Observable[T] = js.native
   def just[T](value: T, scheduler: IScheduler): Observable[T] = js.native
+  
   def merge[T](scheduler: IScheduler, sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
   def merge[T](scheduler: IScheduler, sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
   def merge[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
   def merge[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
+  
   def never[T](): Observable[T] = js.native
+  
   /**
     *  This method creates a new Observable instance with a variable number of arguments, regardless of number or type of the arguments.
     *
@@ -1119,6 +1142,7 @@ trait ObservableStatic extends js.Object {
     * @returns The observable sequence whose elements are pulled from the given arguments.
     */
   def of[T](values: T*): Observable[T] = js.native
+  
   def ofWithScheduler[T](scheduler: js.UndefOr[scala.Nothing], values: T*): Observable[T] = js.native
   /**
     *  This method creates a new Observable instance with a variable number of arguments, regardless of number or type of the arguments.
@@ -1129,31 +1153,41 @@ trait ObservableStatic extends js.Object {
     * @returns The observable sequence whose elements are pulled from the given arguments.
     */
   def ofWithScheduler[T](scheduler: IScheduler, values: T*): Observable[T] = js.native
+  
   def pairs[T](obj: StringDictionary[T]): Observable[js.Tuple2[String, T]] = js.native
   def pairs[T](obj: StringDictionary[T], scheduler: IScheduler): Observable[js.Tuple2[String, T]] = js.native
+  
   def range(start: Double, count: Double): Observable[Double] = js.native
   def range(start: Double, count: Double, scheduler: IScheduler): Observable[Double] = js.native
+  
   def repeat[T](value: T): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Double): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Double, scheduler: IScheduler): Observable[T] = js.native
+  
   def `return`[T](value: T): Observable[T] = js.native
   def `return`[T](value: T, scheduler: IScheduler): Observable[T] = js.native
+  
       // alias for return
   def returnValue[T](value: T): Observable[T] = js.native
   def returnValue[T](value: T, scheduler: IScheduler): Observable[T] = js.native
+  
       // alias for return
   def `throw`[T](exception: Error): Observable[T] = js.native
   def `throw`[T](exception: Error, scheduler: IScheduler): Observable[T] = js.native
+  
       // alias for throw
   def throwError[T](error: Error): Observable[T] = js.native
   def throwError[T](error: Error, scheduler: IScheduler): Observable[T] = js.native
+  
   def throwException[T](exception: Error): Observable[T] = js.native
   def throwException[T](exception: Error, scheduler: IScheduler): Observable[T] = js.native
+  
   def timer(dueTime: Double): Observable[Double] = js.native
   def timer(dueTime: Double, period: Double): Observable[Double] = js.native
   def timer(dueTime: Double, period: Double, scheduler: IScheduler): Observable[Double] = js.native
   def timer(dueTime: Double, scheduler: IScheduler): Observable[Double] = js.native
+  
   def withLatestFrom[T, T2](first: IPromise[T], second: IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def withLatestFrom[T, T2](first: IPromise[T], second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def withLatestFrom[T, T2](first: Observable[T], second: IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
@@ -1846,6 +1880,7 @@ trait ObservableStatic extends js.Object {
     fifth: Observable[T5],
     resultSelector: js.Function5[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, TResult]
   ): Observable[TResult] = js.native
+  
   def zip[T1, T2](first: IPromise[T1], sources: js.Array[Observable[T2] | IPromise[T2]]): Observable[js.Tuple2[T1, T2]] = js.native
   def zip[T1, T2](first: IPromise[T1], sources: IPromise[T2]): Observable[js.Tuple2[T1, T2]] = js.native
   def zip[T1, T2](first: IPromise[T1], sources: Observable[T2]): Observable[js.Tuple2[T1, T2]] = js.native
@@ -2546,7 +2581,7 @@ trait ObservableStatic extends js.Object {
     source5: Observable[T5],
     resultSelector: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, TResult]
   ): Observable[TResult] = js.native
+  
   def zipArray[T](sources: (Observable[T] | IPromise[T])*): Observable[js.Array[T]] = js.native
   def zipArray[T](sources: js.Array[Observable[T] | IPromise[T]]): Observable[js.Array[T]] = js.native
 }
-

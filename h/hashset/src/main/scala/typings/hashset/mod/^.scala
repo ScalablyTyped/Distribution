@@ -6,7 +6,7 @@ import typings.hashset.IHashSetStatic
 import typings.hashtable.IHashtableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hashset", JSImport.Namespace)
 @js.native
@@ -22,8 +22,6 @@ class ^[TValue] () extends IHashSet[TValue] {
     equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]
   ) = this()
 }
-
 @JSImport("hashset", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[IHashSetStatic]
-

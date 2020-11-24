@@ -21,10 +21,11 @@ import typings.minecraftScriptingTypesShared.IEventData
 import typings.minecraftScriptingTypesShared.IQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVanillaClientSystemBase extends js.Object {
+  
   /**
     * 
     * @param eventIdentifier Allows you to trigger an event with the desired data from script. 
@@ -79,6 +80,7 @@ trait IVanillaClientSystemBase extends js.Object {
     */
   @JSName("broadcastEvent")
   def broadcastEvent_minecraftunloadui(eventIdentifier: minecraftColonunload_ui, eventData: IEventData[IUnloadUIParameters]): Boolean | Null = js.native
+  
   /**
     * Creates a component of the specified name and adds it to the entity. This should only be used with custom components which need 
     * to be registered first. If the entity already has the component, this will retrieve the component already there instead.
@@ -89,6 +91,7 @@ trait IVanillaClientSystemBase extends js.Object {
   def createComponent[TComponent](entity: IEntity, componentName: String): IComponent[TComponent] | Null = js.native
   @JSName("createComponent")
   def createComponent_minecraftmolang(entity: IEntity, componentName: minecraftColonmolang): IComponent[IMoLangComponent] | Null = js.native
+  
   /**
     * Creates an object with all the required fields and default data for the specified event. If the event is a custom event, it needs to have been previously registered.
     * 
@@ -133,6 +136,7 @@ trait IVanillaClientSystemBase extends js.Object {
     */
   @JSName("createEventData")
   def createEventData_minecraftunloadui(eventIdentifier: minecraftColonunload_ui): IEventData[IUnloadUIParameters] | Null = js.native
+  
   /**
     * Looks for the specified component in the entity. If it exists, retrieves the data from the component and returns it.
     * @param entity The EntityObject that was retrieved from a call to createEntity() or retrieved from an event
@@ -142,6 +146,7 @@ trait IVanillaClientSystemBase extends js.Object {
   def getComponent[TComponent](entity: IEntity, componentIdentifier: String): IComponent[TComponent] | Null = js.native
   @JSName("getComponent")
   def getComponent_minecraftmolang(entity: IEntity, componentName: minecraftColonmolang): IComponent[IMoLangComponent] | Null = js.native
+  
   /**
     * Allows you to register a JavaScript object that gets called whenever the specified event is broadcast. The event can either be a built-in event or an event specified in script.
     * @param eventIdentifier This is the name of the event to which we want to react. Can be the identifier of a built-in event or a custom one from script
@@ -198,6 +203,7 @@ trait IVanillaClientSystemBase extends js.Object {
     eventIdentifier: minecraftColonui_event,
     callback: js.Function1[/* eventData */ IEventData[String], Unit]
   ): Boolean | Null = js.native
+  
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Generic method for other custom events
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -208,6 +214,7 @@ trait IVanillaClientSystemBase extends js.Object {
     * @param eventData The JavaScript object with the correct fields and default values for the event
     */
   def registerEventData[TEventDataType](eventIdentifier: String, eventData: TEventDataType): `true` | Null = js.native
+  
   /**
     * Allows you to register a query. A query will contain all entities that meet the filter requirement.
     * No filters are added by default when you register a query so it will capture all entities.
@@ -274,4 +281,3 @@ trait IVanillaClientSystemBase extends js.Object {
     componentField3: String
   ): IQuery = js.native
 }
-

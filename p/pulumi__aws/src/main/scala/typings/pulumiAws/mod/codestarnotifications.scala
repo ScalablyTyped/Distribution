@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "codestarnotifications")
 @js.native
 object codestarnotifications extends js.Object {
+  
   @js.native
   class NotificationRule protected ()
     extends typings.pulumiAws.codestarnotificationsMod.NotificationRule {
@@ -25,10 +26,10 @@ object codestarnotifications extends js.Object {
     def this(name: String, args: NotificationRuleArgs) = this()
     def this(name: String, args: NotificationRuleArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object NotificationRule extends js.Object {
+    
     /**
       * Get an existing NotificationRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,12 +43,11 @@ object codestarnotifications extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.notificationRuleMod.NotificationRule = js.native
     def get(name: String, id: Input[ID], state: NotificationRuleState): typings.pulumiAws.notificationRuleMod.NotificationRule = js.native
     def get(name: String, id: Input[ID], state: NotificationRuleState, opts: CustomResourceOptions): typings.pulumiAws.notificationRuleMod.NotificationRule = js.native
+    
     /**
       * Returns true if the given object is an instance of NotificationRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean = js.native
   }
-  
 }
-

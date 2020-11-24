@@ -3,11 +3,12 @@ package typings.fridaGum.global.Java
 import typings.fridaGum.Java.EnumerateMethodsMatchGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.enumerateMethods")
 @js.native
 object enumerateMethods extends js.Object {
+  
   /**
     * Enumerates methods matching `query`.
     *
@@ -20,4 +21,3 @@ object enumerateMethods extends js.Object {
     */
   def apply(query: String): js.Array[EnumerateMethodsMatchGroup] = js.native
 }
-

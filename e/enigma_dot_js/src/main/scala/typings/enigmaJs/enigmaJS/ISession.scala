@@ -6,10 +6,11 @@ import typings.enigmaJs.enigmaJsStrings.resumed
 import typings.enigmaJs.enigmaJsStrings.suspended
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISession extends js.Object {
+  
   /**
     * Closes the websocket and cleans up internal caches, also triggers the closed event on all generated APIs.
     * Eventually resolved when the websocket has been closed.
@@ -18,6 +19,7 @@ trait ISession extends js.Object {
     * @return Promise.
     */
   def close(): js.Promise[_] = js.native
+  
   def on(event: String, func: js.Any): Unit = js.native
   @JSName("on")
   def on_closed(event: closed, func: js.Any): Unit = js.native
@@ -45,11 +47,13 @@ trait ISession extends js.Object {
   def on_resumed(event: resumed, func: js.Any): Unit = js.native
   @JSName("on")
   def on_suspended(event: suspended, func: js.Any): Unit = js.native
+  
   /**
     * Establishes the websocket against the configured URL. Eventually resolved with the QIX global interface when the connection has been established.
     * @return Promise.
     */
   def open[T /* <: IGeneratedAPI */](): js.Promise[T] = js.native
+  
   /**
     * Resume a previously suspended enigma.js session by re-creating the websocket and, if possible, re-open the document
     * as well as refreshing the internal caches. If successful, changed events will be triggered on all generated APIs,
@@ -61,10 +65,10 @@ trait ISession extends js.Object {
     */
   def resume(): js.Promise[_] = js.native
   def resume(onlyIfAttached: Boolean): js.Promise[_] = js.native
+  
   /**
     * Suspends the enigma.js session by closing the websocket and rejecting all method calls until it has been resumed again.
     * @return Promise.
     */
   def suspend(): js.Promise[_] = js.native
 }
-

@@ -1,18 +1,17 @@
 
 # Scala.js typings for emotion__core
 
-Typings are for version 10.0.28
+Typings are for version 10.1.1
 
-## Library description:
-> Simple styling in React.
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @emotion/core |
 | Keywords           | - |
-| # releases         | 76 |
-| # dependents       | 1329 |
-| # downloads        | 51469819 |
+| # releases         | 39 |
+| # dependents       | 2173 |
+| # downloads        | 134818327 |
 | # stars            | 0 |
 
 ## Links

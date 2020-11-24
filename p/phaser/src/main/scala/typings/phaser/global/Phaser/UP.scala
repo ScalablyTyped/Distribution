@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Direction constant.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Phaser.UP")
 @js.native
 object UP extends TopLevel[integer]
-

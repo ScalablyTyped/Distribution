@@ -5,7 +5,7 @@ import typings.kiiCloudSdk.anon.`35`
 import typings.kiiCloudSdk.anon.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main SDK class
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Kii ()
   extends typings.kiiCloudSdk.KiiCloud.Kii
-
 /* static members */
 @JSGlobal("KiiCloud.Kii")
 @js.native
 object Kii extends js.Object {
+  
   /**
     * Authenticate as app admin.
     * <br><br>
@@ -69,6 +69,7 @@ object Kii extends js.Object {
     */
   def authenticateAsAppAdmin(clientId: String, clientSecret: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext] = js.native
   def authenticateAsAppAdmin(clientId: String, clientSecret: String, callbacks: `34`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext] = js.native
+  
   /**
     * Authenticate as Thing.
     * <br><br>
@@ -118,6 +119,7 @@ object Kii extends js.Object {
     */
   def authenticateAsThing(vendorThingID: String, password: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
   def authenticateAsThing(vendorThingID: String, password: String, callbacks: `35`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
+  
   /**
     * Create a KiiThingContext reference
     * <br><br>
@@ -167,6 +169,7 @@ object Kii extends js.Object {
     */
   def authenticateAsThingWithToken(thingID: String, token: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
   def authenticateAsThingWithToken(thingID: String, token: String, callbacks: `35`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
+  
   /**
     * Creates a reference to a bucket for this app
     *
@@ -180,6 +183,7 @@ object Kii extends js.Object {
     *         var bucket = Kii.bucketWithName("myBucket");
     */
   def bucketWithName(bucketName: String): typings.kiiCloudSdk.KiiCloud.KiiBucket = js.native
+  
   /**
     * Creates a reference to a encrypted bucket for this app
     *
@@ -193,6 +197,7 @@ object Kii extends js.Object {
     *         var bucket = Kii.encryptedBucketWithName("myBucket");
     */
   def encryptedBucketWithName(bucketName: String): typings.kiiCloudSdk.KiiCloud.KiiBucket = js.native
+  
   /**
     * Returns access token lifetime in seconds.
     *
@@ -203,30 +208,35 @@ object Kii extends js.Object {
     * @throws If Kii has not been initialized
     */
   def getAccessTokenExpiration(): Double = js.native
+  
   /**
     * Retrieve the current app ID
     *
     * @return The current app ID
     */
   def getAppID(): String = js.native
+  
   /**
     * Retrieve the current app key
     *
     * @return The current app key
     */
   def getAppKey(): String = js.native
+  
   /**
     * Kii SDK Build Number
     *
     * @return current build number of the SDK
     */
   def getBuildNumber(): String = js.native
+  
   /**
     * Kii SDK Version Number
     *
     * @return current version number of the SDK
     */
   def getSDKVersion(): String = js.native
+  
   /**
     * Creates a reference to a group with the given name
     *
@@ -238,6 +248,7 @@ object Kii extends js.Object {
     *         var group = new Kii.groupWithName("myGroup");
     */
   def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  
   /**
     * Creates a reference to a group with the given name and a list of default members
     *
@@ -250,6 +261,7 @@ object Kii extends js.Object {
     *         var group = new KiiGroup.groupWithName("myGroup", members);
     */
   def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  
   /**
     * Initialize the Kii SDK
     *
@@ -275,6 +287,7 @@ object Kii extends js.Object {
     */
   def initialize(appID: String, appKey: String): Unit = js.native
   def initialize(appID: String, appKey: String, analyticsOption: js.Any): Unit = js.native
+  
   /**
     * Initialize the Kii SDK with a specific URL
     *
@@ -300,6 +313,7 @@ object Kii extends js.Object {
     */
   def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite): Unit = js.native
   def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite, analyticsOption: js.Any): Unit = js.native
+  
   /**
     * Gets a list of topics in app scope
     *
@@ -367,6 +381,7 @@ object Kii extends js.Object {
   def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
+  
   /**
     * Instantiate KiiServerCodeEntry with specified entry name.
     *
@@ -383,6 +398,7 @@ object Kii extends js.Object {
     *         var entry = Kii.serverCodeEntry("main");
     */
   def serverCodeEntry(entryName: String): typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry = js.native
+  
   /**
     * Instantiate serverCodeEntryWithVersion with specified entry name and version.
     *
@@ -400,6 +416,7 @@ object Kii extends js.Object {
     *         var entry = Kii.serverCodeEntryWithVersion("main", "gulsdf6ful8jvf8uq6fe7vjy6");
     */
   def serverCodeEntryWithVersion(entryName: String, version: String): typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry = js.native
+  
   /**
     * Set the access token lifetime in seconds.
     *
@@ -419,6 +436,7 @@ object Kii extends js.Object {
     *     Kii.setAccessTokenExpiration(3600);
     */
   def setAccessTokenExpiration(expiresIn: Double): Unit = js.native
+  
   /**
     * Instantiate topic belongs to application.
     *
@@ -428,4 +446,3 @@ object Kii extends js.Object {
     */
   def topicWithName(topicName: String): typings.kiiCloudSdk.KiiCloud.KiiTopic = js.native
 }
-

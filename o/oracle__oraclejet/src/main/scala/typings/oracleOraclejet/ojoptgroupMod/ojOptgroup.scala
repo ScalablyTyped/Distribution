@@ -118,14 +118,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojOptgroup extends JetElement[ojOptgroupSettableProperties] {
-  var disabled: Boolean = js.native
-  var label: String = js.native
-  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -923,17 +920,28 @@ trait ojOptgroup extends JetElement[ojOptgroupSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var disabled: Boolean = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_disabled(property: disabled): Boolean = js.native
   @JSName("getProperty")
   def getProperty_label(property: label): String = js.native
+  
+  var label: String = js.native
+  
+  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
   def refresh(): Unit = js.native
+  
   def setProperties(properties: ojOptgroupSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojOptgroupSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
 }
-

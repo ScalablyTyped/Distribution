@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instances")
 @js.native
 class ResourceProjectsInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var databases: ResourceProjectsInstancesDatabases = js.native
-  var operations: ResourceProjectsInstancesOperations = js.native
+  
   /**
     * spanner.projects.instances.create
     * @desc Creates an instance and begins preparing it to begin serving. The
@@ -63,6 +63,9 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var databases: ResourceProjectsInstancesDatabases = js.native
+  
   /**
     * spanner.projects.instances.delete
     * @desc Deletes an instance.  Immediately upon completion of the request:
@@ -95,6 +98,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.get
     * @desc Gets information about a particular instance.
@@ -123,6 +127,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.getIamPolicy
     * @desc Gets the access control policy for an instance resource. Returns an
@@ -154,6 +159,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.list
     * @desc Lists all instances in the given project.
@@ -188,6 +194,9 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListInstancesResponse]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsInstancesOperations = js.native
+  
   /**
     * spanner.projects.instances.patch
     * @desc Updates an instance, and begins allocating or releasing resources
@@ -239,6 +248,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.setIamPolicy
     * @desc Sets the access control policy on an instance resource. Replaces
@@ -270,6 +280,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.testIamPermissions
     * @desc Returns permissions that the caller has on the specified instance
@@ -307,4 +318,3 @@ class ResourceProjectsInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

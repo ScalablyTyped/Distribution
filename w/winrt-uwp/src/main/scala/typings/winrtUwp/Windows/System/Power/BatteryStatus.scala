@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System.Power
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BatteryStatus extends js.Object
-
 /** Indicates the status of the battery. */
 @JSGlobal("Windows.System.Power.BatteryStatus")
 @js.native
 object BatteryStatus extends js.Object {
+  
   /** The battery is charging. */
   @js.native
   sealed trait charging extends BatteryStatus
@@ -26,6 +26,4 @@ object BatteryStatus extends js.Object {
   /** The battery or battery controller is not present. */
   @js.native
   sealed trait notPresent extends BatteryStatus
-  
 }
-

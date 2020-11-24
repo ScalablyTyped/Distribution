@@ -14,7 +14,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
@@ -31,31 +31,41 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def APRIL: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def AUGUST: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def DECEMBER: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def FEBURARY: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def JANUARY: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def JULY: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def JUNE: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def MARCH: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def MAY: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def NOVEMBER: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def OCTOBER: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def SEPTEMBER: `8` = 8.asInstanceOf[`8`]
 }
-

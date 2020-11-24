@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-layout-effect" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-layout-effect" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

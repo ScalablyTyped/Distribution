@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.SpeechRecognition
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A pre-defined grammar constraint (specifed by SpeechRecognitionScenario ) provided through a web service. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionTopicConstraint")
@@ -30,4 +30,3 @@ class SpeechRecognitionTopicConstraint protected ()
     tag: String
   ) = this()
 }
-

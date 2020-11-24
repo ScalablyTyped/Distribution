@@ -3,41 +3,92 @@ package typings.emberTestHelpers.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ModuleCallbacks
   extends /* key */ StringDictionary[js.Any] {
-  var afterTeardown: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeSetup: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var integration: js.UndefOr[Boolean] = js.undefined
-  var needs: js.UndefOr[js.Array[String]] = js.undefined
-  var setup: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var teardown: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var unit: js.UndefOr[Boolean] = js.undefined
+  
+  var afterTeardown: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.native
+  
+  var beforeSetup: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.native
+  
+  var integration: js.UndefOr[Boolean] = js.native
+  
+  var needs: js.UndefOr[js.Array[String]] = js.native
+  
+  var setup: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.native
+  
+  var teardown: js.UndefOr[js.Function1[/* assert */ js.UndefOr[js.Any], Unit]] = js.native
+  
+  var unit: js.UndefOr[Boolean] = js.native
 }
-
 object ModuleCallbacks {
+  
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    afterTeardown: /* assert */ js.UndefOr[js.Any] => Unit = null,
-    beforeSetup: /* assert */ js.UndefOr[js.Any] => Unit = null,
-    integration: js.UndefOr[Boolean] = js.undefined,
-    needs: js.Array[String] = null,
-    setup: /* assert */ js.UndefOr[js.Any] => Unit = null,
-    teardown: /* assert */ js.UndefOr[js.Any] => Unit = null,
-    unit: js.UndefOr[Boolean] = js.undefined
-  ): ModuleCallbacks = {
+  def apply(): ModuleCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (afterTeardown != null) __obj.updateDynamic("afterTeardown")(js.Any.fromFunction1(afterTeardown))
-    if (beforeSetup != null) __obj.updateDynamic("beforeSetup")(js.Any.fromFunction1(beforeSetup))
-    if (!js.isUndefined(integration)) __obj.updateDynamic("integration")(integration.get.asInstanceOf[js.Any])
-    if (needs != null) __obj.updateDynamic("needs")(needs.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
-    if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction1(teardown))
-    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleCallbacks]
   }
+  
+  @scala.inline
+  implicit class ModuleCallbacksOps[Self <: ModuleCallbacks] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAfterTeardown(value: /* assert */ js.UndefOr[js.Any] => Unit): Self = this.set("afterTeardown", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteAfterTeardown: Self = this.set("afterTeardown", js.undefined)
+    
+    @scala.inline
+    def setBeforeSetup(value: /* assert */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeSetup", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteBeforeSetup: Self = this.set("beforeSetup", js.undefined)
+    
+    @scala.inline
+    def setIntegration(value: Boolean): Self = this.set("integration", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIntegration: Self = this.set("integration", js.undefined)
+    
+    @scala.inline
+    def setNeedsVarargs(value: String*): Self = this.set("needs", js.Array(value :_*))
+    
+    @scala.inline
+    def setNeeds(value: js.Array[String]): Self = this.set("needs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNeeds: Self = this.set("needs", js.undefined)
+    
+    @scala.inline
+    def setSetup(value: /* assert */ js.UndefOr[js.Any] => Unit): Self = this.set("setup", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteSetup: Self = this.set("setup", js.undefined)
+    
+    @scala.inline
+    def setTeardown(value: /* assert */ js.UndefOr[js.Any] => Unit): Self = this.set("teardown", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteTeardown: Self = this.set("teardown", js.undefined)
+    
+    @scala.inline
+    def setUnit(value: Boolean): Self = this.set("unit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
 }
-

@@ -3,7 +3,7 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A NotificationChannel is a medium through which an alert is delivered when
@@ -14,12 +14,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaNotificationChannel extends js.Object {
+  
   /**
     * An optional human-readable description of this notification channel. This
     * description may provide additional details, beyond the display name, for
     * the channel. This may not exceed 1024 Unicode characters.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * An optional human-readable name for this notification channel. It is
     * recommended that you specify a non-empty and unique name in order to make
@@ -27,6 +29,7 @@ trait SchemaNotificationChannel extends js.Object {
     * enforced. The display name is limited to 512 Unicode characters.
     */
   var displayName: js.UndefOr[String] = js.native
+  
   /**
     * Whether notifications are forwarded to the described channel. This makes
     * it possible to disable delivery of notifications to a particular channel
@@ -36,6 +39,7 @@ trait SchemaNotificationChannel extends js.Object {
     * alerting policies on the channel at some point in the future.
     */
   var enabled: js.UndefOr[Boolean] = js.native
+  
   /**
     * Configuration fields that define the channel and its behavior. The
     * permissible and required labels are specified in the
@@ -43,17 +47,20 @@ trait SchemaNotificationChannel extends js.Object {
     * corresponding to the type field.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * The full REST resource name for this channel. The syntax is:
     * projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The [CHANNEL_ID]
     * is automatically assigned by the server on creation.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The type of the notification channel. This field matches the value of the
     * NotificationChannelDescriptor.type field.
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * User-supplied key/value data that does not need to conform to the
     * corresponding NotificationChannelDescriptor&#39;s schema, unlike the
@@ -65,6 +72,7 @@ trait SchemaNotificationChannel extends js.Object {
     * letter.
     */
   var userLabels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Indicates whether this channel has been verified or not. On a
     * ListNotificationChannels or GetNotificationChannel operation, this field
@@ -81,57 +89,75 @@ trait SchemaNotificationChannel extends js.Object {
     */
   var verificationStatus: js.UndefOr[String] = js.native
 }
-
 object SchemaNotificationChannel {
+  
   @scala.inline
   def apply(): SchemaNotificationChannel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotificationChannel]
   }
+  
   @scala.inline
   implicit class SchemaNotificationChannelOps[Self <: SchemaNotificationChannel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    
     @scala.inline
     def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnabled: Self = this.set("enabled", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setUserLabels(value: StringDictionary[String]): Self = this.set("userLabels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUserLabels: Self = this.set("userLabels", js.undefined)
+    
     @scala.inline
     def setVerificationStatus(value: String): Self = this.set("verificationStatus", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVerificationStatus: Self = this.set("verificationStatus", js.undefined)
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * How to clear renderTextures in filter
@@ -21,13 +21,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.CLEAR_MODES")
 @js.native
 object CLEAR_MODES extends js.Object {
-  /* 5 */ val AUTO: typings.pixiJs.PIXI.CLEAR_MODES.AUTO with Double = js.native
-  /* 0 */ val BLEND: typings.pixiJs.PIXI.CLEAR_MODES.BLEND with Double = js.native
-  /* 2 */ val BLIT: typings.pixiJs.PIXI.CLEAR_MODES.BLIT with Double = js.native
-  /* 1 */ val CLEAR: typings.pixiJs.PIXI.CLEAR_MODES.CLEAR with Double = js.native
-  /* 3 */ val NO: typings.pixiJs.PIXI.CLEAR_MODES.NO with Double = js.native
-  /* 4 */ val YES: typings.pixiJs.PIXI.CLEAR_MODES.YES with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.CLEAR_MODES with Double] = js.native
+  
+  /* 5 */ val AUTO: typings.pixiJs.PIXI.CLEAR_MODES.AUTO with Double = js.native
+  
+  /* 0 */ val BLEND: typings.pixiJs.PIXI.CLEAR_MODES.BLEND with Double = js.native
+  
+  /* 2 */ val BLIT: typings.pixiJs.PIXI.CLEAR_MODES.BLIT with Double = js.native
+  
+  /* 1 */ val CLEAR: typings.pixiJs.PIXI.CLEAR_MODES.CLEAR with Double = js.native
+  
+  /* 3 */ val NO: typings.pixiJs.PIXI.CLEAR_MODES.NO with Double = js.native
+  
+  /* 4 */ val YES: typings.pixiJs.PIXI.CLEAR_MODES.YES with Double = js.native
 }
-

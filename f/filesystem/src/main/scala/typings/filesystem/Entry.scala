@@ -2,30 +2,11 @@ package typings.filesystem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Entry extends js.Object {
-  /**
-    * The file system on which the entry resides.
-    */
-  var filesystem: FileSystem = js.native
-  /**
-    * The full absolute path from the root to the entry.
-    */
-  var fullPath: String = js.native
-  /**
-    * Entry is a directory.
-    */
-  var isDirectory: Boolean = js.native
-  /**
-    * Entry is a file.
-    */
-  var isFile: Boolean = js.native
-  /**
-    * The name of the entry, excluding the path leading to it.
-    */
-  var name: String = js.native
+  
   /**
     * Copy an entry to a different location on the file system. It is an error to try to:
     *
@@ -69,6 +50,17 @@ trait Entry extends js.Object {
     successCallback: EntryCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
+  /**
+    * The file system on which the entry resides.
+    */
+  var filesystem: FileSystem = js.native
+  
+  /**
+    * The full absolute path from the root to the entry.
+    */
+  var fullPath: String = js.native
+  
   /**
     * Look up metadata about this entry.
     * @param successCallback A callback that is called with the time of the last modification.
@@ -76,6 +68,7 @@ trait Entry extends js.Object {
     */
   def getMetadata(successCallback: MetadataCallback): Unit = js.native
   def getMetadata(successCallback: MetadataCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Look up the parent DirectoryEntry containing this Entry. If this Entry is the root of its filesystem, its parent is itself.
     * @param successCallback A callback that is called to return the parent Entry.
@@ -83,6 +76,17 @@ trait Entry extends js.Object {
     */
   def getParent(successCallback: DirectoryEntryCallback): Unit = js.native
   def getParent(successCallback: DirectoryEntryCallback, errorCallback: ErrorCallback): Unit = js.native
+  
+  /**
+    * Entry is a directory.
+    */
+  var isDirectory: Boolean = js.native
+  
+  /**
+    * Entry is a file.
+    */
+  var isFile: Boolean = js.native
+  
   /**
     * Move an entry to a different location on the file system. It is an error to try to:
     *
@@ -125,6 +129,12 @@ trait Entry extends js.Object {
     successCallback: EntryCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
+  /**
+    * The name of the entry, excluding the path leading to it.
+    */
+  var name: String = js.native
+  
   /**
     * Deletes a file or directory. It is an error to attempt to delete a directory that is not empty. It is an error to attempt to delete the root directory of a filesystem.
     * @param successCallback A callback that is called on success.
@@ -132,9 +142,9 @@ trait Entry extends js.Object {
     */
   def remove(successCallback: VoidCallback): Unit = js.native
   def remove(successCallback: VoidCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Returns a URL that can be used to identify this entry. Unlike the URN defined in [FILE-API-ED], it has no specific expiration; as it describes a location on disk, it should be valid at least as long as that location exists.
     */
   def toURL(): String = js.native
 }
-

@@ -2,9 +2,10 @@ package typings.chrome.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object debugger {
+  
   type DebuggerDetachedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* source */ typings.chrome.chrome.debugger.Debuggee, 
@@ -12,6 +13,7 @@ package object debugger {
       scala.Unit
     ]
   ]
+  
   type DebuggerEventEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* source */ typings.chrome.chrome.debugger.Debuggee, 

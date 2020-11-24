@@ -2,11 +2,12 @@ package typings.mapboxGeoViewport.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@mapbox/geo-viewport", "viewport")
 @js.native
 object viewport extends js.Object {
+  
   def apply(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double]): GeoViewport = js.native
   def apply(
     bounds: BoundingBox,
@@ -109,4 +110,3 @@ object viewport extends js.Object {
     allowFloat: Boolean
   ): GeoViewport = js.native
 }
-

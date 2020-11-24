@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait QuarticEase extends EasingFunction
-
 object QuarticEase {
+  
   @scala.inline
   def apply(
     _easingMode: js.Any,
@@ -19,4 +20,3 @@ object QuarticEase {
     __obj.asInstanceOf[QuarticEase]
   }
 }
-

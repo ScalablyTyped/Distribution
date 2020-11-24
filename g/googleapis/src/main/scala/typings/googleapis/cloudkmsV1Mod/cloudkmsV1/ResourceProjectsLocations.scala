@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations")
 @js.native
 class ResourceProjectsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var keyRings: ResourceProjectsLocationsKeyrings = js.native
+  
   /**
     * cloudkms.projects.locations.get
     * @desc Gets information about a location.
@@ -42,6 +43,9 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
+  
+  var keyRings: ResourceProjectsLocationsKeyrings = js.native
+  
   /**
     * cloudkms.projects.locations.list
     * @desc Lists information about the supported locations for this service.
@@ -77,4 +81,3 @@ class ResourceProjectsLocations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListLocationsResponse]
   ): Unit = js.native
 }
-

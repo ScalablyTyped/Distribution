@@ -3,12 +3,11 @@ package typings.uiGrid.mod.grouping
 import typings.uiGrid.anon.AggregationChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridGroupingApi[TEntity] extends js.Object {
-  // Events
-  var on: AggregationChanged[TEntity] = js.native
+  
   // Methods
   /**
     * Sets the aggregation type on a column.
@@ -23,12 +22,14 @@ trait IGridGroupingApi[TEntity] extends js.Object {
   def aggregateColumn(columnName: String, or: String, aggregationLabel: String): Unit = js.native
   def aggregateColumn(columnName: String, or: js.Function): Unit = js.native
   def aggregateColumn(columnName: String, or: js.Function, aggregationLabel: String): Unit = js.native
+  
   /**
     * Clear any grouped columns and any aggregations.
     * Doesn't remove sorting, as we don't know whether that sorting was added by grouping or was there
     * beforehand
     */
   def clearGrouping(): Unit = js.native
+  
   /**
     * Get the grouping configuration for this grid, used by the saveState feature.
     * Adds expandedState to the information provided by the internal getGrouping,
@@ -37,6 +38,7 @@ trait IGridGroupingApi[TEntity] extends js.Object {
     * @param {boolean} getExpanded whether or not to return the expanded state
     */
   def getGrouping(getExpanded: Boolean): IGridGroupingConfiguration = js.native
+  
   /**
     * Adds this column to the existing grouping, at the end of the priority order.
     * If the column doesn't have a sort, adds one, by default ASC.
@@ -45,12 +47,17 @@ trait IGridGroupingApi[TEntity] extends js.Object {
     * @param {string} columnName the name of the column we want to group
     */
   def groupColumn(columnName: String): Unit = js.native
+  
+  // Events
+  var on: AggregationChanged[TEntity] = js.native
+  
   /**
     * Set the grouping configuration for this grid, used by the saveState feature,
     * but can also be used by any user to specify a combined grouping and aggregation configuration
     * @param {IGridGroupingConfiguration} config The config to apply, in the format provided out by getGrouping
     */
   def setGrouping(config: IGridGroupingConfiguration): Unit = js.native
+  
   /**
     * Removes the groupPriority from this column.
     * If the column was previously aggregated the aggregation will come back. The sort will remain.
@@ -61,4 +68,3 @@ trait IGridGroupingApi[TEntity] extends js.Object {
     */
   def ungroupColumn(columnName: String): Unit = js.native
 }
-

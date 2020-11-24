@@ -3,11 +3,12 @@ package typings.semver.mod
 import typings.semver.semverMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "valid")
 @js.native
 object valid extends js.Object {
+  
   /**
     * Return the parsed version as a string, or null if it's not valid.
     */
@@ -23,4 +24,3 @@ object valid extends js.Object {
   def apply(version: ^, optionsOrLoose: Boolean): String | Null = js.native
   def apply(version: ^, optionsOrLoose: Options): String | Null = js.native
 }
-

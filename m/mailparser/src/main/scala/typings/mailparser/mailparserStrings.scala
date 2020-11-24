@@ -2,9 +2,34 @@ package typings.mailparser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailparserStrings {
+  
+  @scala.inline
+  def attachment: attachment = "attachment".asInstanceOf[attachment]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def headers: headers = "headers".asInstanceOf[headers]
+  
+  @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
   @js.native
   sealed trait attachment extends js.Object
   
@@ -28,22 +53,4 @@ object mailparserStrings {
   
   @js.native
   sealed trait text extends js.Object
-  
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
 }
-

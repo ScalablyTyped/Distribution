@@ -10,9 +10,9 @@ Check if Electron is running in development
 | ------------------ | :-------------: |
 | Full name          | electron-is-dev |
 | Keywords           | electron, dev, development, mode, prod, production, detect, check, debug, app |
-| # releases         | 4 |
-| # dependents       | 95 |
-| # downloads        | 2420001 |
+| # releases         | 3 |
+| # dependents       | 120 |
+| # downloads        | 3239345 |
 | # stars            | 2 |
 
 ## Links

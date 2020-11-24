@@ -4,11 +4,12 @@ import typings.rxjs.typesMod.MonoTypeOperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/shareReplay", "shareReplay")
 @js.native
 object shareReplay extends js.Object {
+  
   def apply[T](): MonoTypeOperatorFunction[T] = js.native
   def apply[T](
     bufferSize: js.UndefOr[scala.Nothing],
@@ -23,4 +24,3 @@ object shareReplay extends js.Object {
   def apply[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def apply[T](config: ShareReplayConfig): MonoTypeOperatorFunction[T] = js.native
 }
-

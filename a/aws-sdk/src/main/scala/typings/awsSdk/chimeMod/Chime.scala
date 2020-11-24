@@ -1,17 +1,16 @@
 package typings.awsSdk.chimeMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Chime extends Service {
-  @JSName("config")
-  var config_Chime: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Associates a phone number with the specified Amazon Chime user.
     */
@@ -25,6 +24,7 @@ trait Chime extends Service {
     params: AssociatePhoneNumberWithUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePhoneNumberWithUserResponse, Unit]
   ): Request[AssociatePhoneNumberWithUserResponse, AWSError] = js.native
+  
   /**
     * Associates phone numbers with the specified Amazon Chime Voice Connector.
     */
@@ -40,6 +40,7 @@ trait Chime extends Service {
     params: AssociatePhoneNumbersWithVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePhoneNumbersWithVoiceConnectorResponse, Unit]
   ): Request[AssociatePhoneNumbersWithVoiceConnectorResponse, AWSError] = js.native
+  
   /**
     * Associates phone numbers with the specified Amazon Chime Voice Connector group.
     */
@@ -63,6 +64,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[AssociatePhoneNumbersWithVoiceConnectorGroupResponse, AWSError] = js.native
+  
   /**
     * Associates the specified sign-in delegate groups with the specified Amazon Chime account.
     */
@@ -86,6 +88,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[AssociateSigninDelegateGroupsWithAccountResponse, AWSError] = js.native
+  
   /**
     * Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
     */
@@ -99,6 +102,7 @@ trait Chime extends Service {
     params: BatchCreateAttendeeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateAttendeeResponse, Unit]
   ): Request[BatchCreateAttendeeResponse, AWSError] = js.native
+  
   /**
     * Adds up to 50 members to a chat room in an Amazon Chime Enterprise account. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
     */
@@ -112,6 +116,7 @@ trait Chime extends Service {
     params: BatchCreateRoomMembershipRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateRoomMembershipResponse, Unit]
   ): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
+  
   /**
     * Moves phone numbers into the Deletion queue. Phone numbers must be disassociated from any users or Amazon Chime Voice Connectors before they can be deleted. Phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
     */
@@ -125,6 +130,7 @@ trait Chime extends Service {
     params: BatchDeletePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeletePhoneNumberResponse, Unit]
   ): Request[BatchDeletePhoneNumberResponse, AWSError] = js.native
+  
   /**
     * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are disassociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
     */
@@ -138,6 +144,7 @@ trait Chime extends Service {
     params: BatchSuspendUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchSuspendUserResponse, Unit]
   ): Request[BatchSuspendUserResponse, AWSError] = js.native
+  
   /**
     * Removes the suspension from up to 50 previously suspended users for the specified Amazon Chime EnterpriseLWA account. Only users on EnterpriseLWA accounts can be unsuspended using this action. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Previously suspended users who are unsuspended using this action are returned to Registered status. Users who are not previously suspended are ignored.
     */
@@ -151,6 +158,7 @@ trait Chime extends Service {
     params: BatchUnsuspendUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchUnsuspendUserResponse, Unit]
   ): Request[BatchUnsuspendUserResponse, AWSError] = js.native
+  
   /**
     * Updates phone number product types or calling names. You can update one attribute at a time for each UpdatePhoneNumberRequestItem. For example, you can update either the product type or the calling name. For product types, choose from Amazon Chime Business Calling and Amazon Chime Voice Connector. For toll-free numbers, you must use the Amazon Chime Voice Connector product type. Updates to outbound calling names can take up to 72 hours to complete. Pending updates to outbound calling names must be complete before you can request another update.
     */
@@ -164,6 +172,7 @@ trait Chime extends Service {
     params: BatchUpdatePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdatePhoneNumberResponse, Unit]
   ): Request[BatchUpdatePhoneNumberResponse, AWSError] = js.native
+  
   /**
     * Updates user details within the UpdateUserRequestItem object for up to 20 users for the specified Amazon Chime account. Currently, only LicenseType updates are supported for this action.
     */
@@ -177,6 +186,10 @@ trait Chime extends Service {
     params: BatchUpdateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateUserResponse, Unit]
   ): Request[BatchUpdateUserResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Chime: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an Amazon Chime account under the administrator's AWS account. Only Team account types are currently supported for this action. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide.
     */
@@ -190,6 +203,49 @@ trait Chime extends Service {
     params: CreateAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAccountResponse, Unit]
   ): Request[CreateAccountResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon Chime Messaging SDK AppInstance under an AWS Account. Only Messaging SDK customers use this API. CreateAppInstance supports idempotency behavior as described in the AWS API Standard.
+    */
+  def createAppInstance(): Request[CreateAppInstanceResponse, AWSError] = js.native
+  def createAppInstance(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceResponse, Unit]): Request[CreateAppInstanceResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Chime Messaging SDK AppInstance under an AWS Account. Only Messaging SDK customers use this API. CreateAppInstance supports idempotency behavior as described in the AWS API Standard.
+    */
+  def createAppInstance(params: CreateAppInstanceRequest): Request[CreateAppInstanceResponse, AWSError] = js.native
+  def createAppInstance(
+    params: CreateAppInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceResponse, Unit]
+  ): Request[CreateAppInstanceResponse, AWSError] = js.native
+  
+  /**
+    * Promotes an AppInstanceUser to an AppInstanceAdmin. The promoted user can perform the following actions.     ChannelModerator actions across all channels in the app instance.    DeleteChannelMessage actions.   Only an AppInstanceUser can be promoted to an AppInstanceAdmin role.
+    */
+  def createAppInstanceAdmin(): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
+  def createAppInstanceAdmin(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceAdminResponse, Unit]): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
+  /**
+    * Promotes an AppInstanceUser to an AppInstanceAdmin. The promoted user can perform the following actions.     ChannelModerator actions across all channels in the app instance.    DeleteChannelMessage actions.   Only an AppInstanceUser can be promoted to an AppInstanceAdmin role.
+    */
+  def createAppInstanceAdmin(params: CreateAppInstanceAdminRequest): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
+  def createAppInstanceAdmin(
+    params: CreateAppInstanceAdminRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceAdminResponse, Unit]
+  ): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
+  
+  /**
+    * Creates a user under an Amazon Chime AppInstance. The request consists of a unique appInstanceUserId and Name for that user.
+    */
+  def createAppInstanceUser(): Request[CreateAppInstanceUserResponse, AWSError] = js.native
+  def createAppInstanceUser(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceUserResponse, Unit]): Request[CreateAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * Creates a user under an Amazon Chime AppInstance. The request consists of a unique appInstanceUserId and Name for that user.
+    */
+  def createAppInstanceUser(params: CreateAppInstanceUserRequest): Request[CreateAppInstanceUserResponse, AWSError] = js.native
+  def createAppInstanceUser(
+    params: CreateAppInstanceUserRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceUserResponse, Unit]
+  ): Request[CreateAppInstanceUserResponse, AWSError] = js.native
+  
   /**
     * Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -203,6 +259,7 @@ trait Chime extends Service {
     params: CreateAttendeeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAttendeeResponse, Unit]
   ): Request[CreateAttendeeResponse, AWSError] = js.native
+  
   /**
     * Creates a bot for an Amazon Chime Enterprise account.
     */
@@ -216,6 +273,63 @@ trait Chime extends Service {
     params: CreateBotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBotResponse, Unit]
   ): Request[CreateBotResponse, AWSError] = js.native
+  
+  /**
+    * Creates a channel to which you can add users and send messages.  Restriction: You can't change a channel's privacy.
+    */
+  def createChannel(): Request[CreateChannelResponse, AWSError] = js.native
+  def createChannel(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]): Request[CreateChannelResponse, AWSError] = js.native
+  /**
+    * Creates a channel to which you can add users and send messages.  Restriction: You can't change a channel's privacy.
+    */
+  def createChannel(params: CreateChannelRequest): Request[CreateChannelResponse, AWSError] = js.native
+  def createChannel(
+    params: CreateChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]
+  ): Request[CreateChannelResponse, AWSError] = js.native
+  
+  /**
+    * Permanently bans a member from a channel. Moderators can't add banned members to a channel. To undo a ban, you first have to DeleteChannelBan, and then CreateChannelMembership. Bans are cleaned up when you delete users or channels.  If you ban a user who is already part of a channel, that user is automatically kicked from the channel.
+    */
+  def createChannelBan(): Request[CreateChannelBanResponse, AWSError] = js.native
+  def createChannelBan(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelBanResponse, Unit]): Request[CreateChannelBanResponse, AWSError] = js.native
+  /**
+    * Permanently bans a member from a channel. Moderators can't add banned members to a channel. To undo a ban, you first have to DeleteChannelBan, and then CreateChannelMembership. Bans are cleaned up when you delete users or channels.  If you ban a user who is already part of a channel, that user is automatically kicked from the channel.
+    */
+  def createChannelBan(params: CreateChannelBanRequest): Request[CreateChannelBanResponse, AWSError] = js.native
+  def createChannelBan(
+    params: CreateChannelBanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelBanResponse, Unit]
+  ): Request[CreateChannelBanResponse, AWSError] = js.native
+  
+  /**
+    * Adds a user to a channel. The InvitedBy response field is derived from the request header. A channel member can:   List messages   Send messages   Receive messages   Edit their own messages   Leave the channel   Privacy settings impact this action as follows:   Public Channels: You do not need to be a member to list messages, but you must be a member to send messages.   Private Channels: You must be a member to list or send messages.  
+    */
+  def createChannelMembership(): Request[CreateChannelMembershipResponse, AWSError] = js.native
+  def createChannelMembership(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelMembershipResponse, Unit]): Request[CreateChannelMembershipResponse, AWSError] = js.native
+  /**
+    * Adds a user to a channel. The InvitedBy response field is derived from the request header. A channel member can:   List messages   Send messages   Receive messages   Edit their own messages   Leave the channel   Privacy settings impact this action as follows:   Public Channels: You do not need to be a member to list messages, but you must be a member to send messages.   Private Channels: You must be a member to list or send messages.  
+    */
+  def createChannelMembership(params: CreateChannelMembershipRequest): Request[CreateChannelMembershipResponse, AWSError] = js.native
+  def createChannelMembership(
+    params: CreateChannelMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelMembershipResponse, Unit]
+  ): Request[CreateChannelMembershipResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new ChannelModerator. A channel moderator can:   Add and remove other members of the channel.   Add and remove other moderators of the channel.   Add and remove user bans for the channel.   Redact messages in the channel.   List messages in the channel.  
+    */
+  def createChannelModerator(): Request[CreateChannelModeratorResponse, AWSError] = js.native
+  def createChannelModerator(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelModeratorResponse, Unit]): Request[CreateChannelModeratorResponse, AWSError] = js.native
+  /**
+    * Creates a new ChannelModerator. A channel moderator can:   Add and remove other members of the channel.   Add and remove other moderators of the channel.   Add and remove user bans for the channel.   Redact messages in the channel.   List messages in the channel.  
+    */
+  def createChannelModerator(params: CreateChannelModeratorRequest): Request[CreateChannelModeratorResponse, AWSError] = js.native
+  def createChannelModerator(
+    params: CreateChannelModeratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelModeratorResponse, Unit]
+  ): Request[CreateChannelModeratorResponse, AWSError] = js.native
+  
   /**
     * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -229,6 +343,21 @@ trait Chime extends Service {
     params: CreateMeetingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingResponse, Unit]
   ): Request[CreateMeetingResponse, AWSError] = js.native
+  
+  /**
+    * Uses the join token and call metadata in a meeting request (From number, To number, and so forth) to initiate an outbound call to a public switched telephone network (PSTN) and joins them into Chime meeting. Also ensures that the From number belongs to the customer. To play welcome audio or implement an interactive voice response (IVR), use the CreateSipMediaApplicationCall API with the corresponding SIP media application ID.
+    */
+  def createMeetingDialOut(): Request[CreateMeetingDialOutResponse, AWSError] = js.native
+  def createMeetingDialOut(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingDialOutResponse, Unit]): Request[CreateMeetingDialOutResponse, AWSError] = js.native
+  /**
+    * Uses the join token and call metadata in a meeting request (From number, To number, and so forth) to initiate an outbound call to a public switched telephone network (PSTN) and joins them into Chime meeting. Also ensures that the From number belongs to the customer. To play welcome audio or implement an interactive voice response (IVR), use the CreateSipMediaApplicationCall API with the corresponding SIP media application ID.
+    */
+  def createMeetingDialOut(params: CreateMeetingDialOutRequest): Request[CreateMeetingDialOutResponse, AWSError] = js.native
+  def createMeetingDialOut(
+    params: CreateMeetingDialOutRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingDialOutResponse, Unit]
+  ): Request[CreateMeetingDialOutResponse, AWSError] = js.native
+  
   /**
     * Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -242,6 +371,7 @@ trait Chime extends Service {
     params: CreateMeetingWithAttendeesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingWithAttendeesResponse, Unit]
   ): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
+  
   /**
     * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you must use the Amazon Chime Voice Connector product type.
     */
@@ -255,6 +385,7 @@ trait Chime extends Service {
     params: CreatePhoneNumberOrderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePhoneNumberOrderResponse, Unit]
   ): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
+  
   /**
     * Creates a proxy session on the specified Amazon Chime Voice Connector for the specified participant phone numbers.
     */
@@ -268,6 +399,7 @@ trait Chime extends Service {
     params: CreateProxySessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProxySessionResponse, Unit]
   ): Request[CreateProxySessionResponse, AWSError] = js.native
+  
   /**
     * Creates a chat room for the specified Amazon Chime Enterprise account.
     */
@@ -281,6 +413,7 @@ trait Chime extends Service {
     params: CreateRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomResponse, Unit]
   ): Request[CreateRoomResponse, AWSError] = js.native
+  
   /**
     * Adds a member to a chat room in an Amazon Chime Enterprise account. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
     */
@@ -294,6 +427,49 @@ trait Chime extends Service {
     params: CreateRoomMembershipRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomMembershipResponse, Unit]
   ): Request[CreateRoomMembershipResponse, AWSError] = js.native
+  
+  /**
+    * Creates a SIP media application.
+    */
+  def createSipMediaApplication(): Request[CreateSipMediaApplicationResponse, AWSError] = js.native
+  def createSipMediaApplication(callback: js.Function2[/* err */ AWSError, /* data */ CreateSipMediaApplicationResponse, Unit]): Request[CreateSipMediaApplicationResponse, AWSError] = js.native
+  /**
+    * Creates a SIP media application.
+    */
+  def createSipMediaApplication(params: CreateSipMediaApplicationRequest): Request[CreateSipMediaApplicationResponse, AWSError] = js.native
+  def createSipMediaApplication(
+    params: CreateSipMediaApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSipMediaApplicationResponse, Unit]
+  ): Request[CreateSipMediaApplicationResponse, AWSError] = js.native
+  
+  /**
+    * Creates an outbound call to a phone number from the phone number specified in the request, and it invokes the endpoint of the specified sipMediaApplicationId.
+    */
+  def createSipMediaApplicationCall(): Request[CreateSipMediaApplicationCallResponse, AWSError] = js.native
+  def createSipMediaApplicationCall(callback: js.Function2[/* err */ AWSError, /* data */ CreateSipMediaApplicationCallResponse, Unit]): Request[CreateSipMediaApplicationCallResponse, AWSError] = js.native
+  /**
+    * Creates an outbound call to a phone number from the phone number specified in the request, and it invokes the endpoint of the specified sipMediaApplicationId.
+    */
+  def createSipMediaApplicationCall(params: CreateSipMediaApplicationCallRequest): Request[CreateSipMediaApplicationCallResponse, AWSError] = js.native
+  def createSipMediaApplicationCall(
+    params: CreateSipMediaApplicationCallRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSipMediaApplicationCallResponse, Unit]
+  ): Request[CreateSipMediaApplicationCallResponse, AWSError] = js.native
+  
+  /**
+    * Creates a SIP rule which can be used to run a SIP media application as a target for a specific trigger type.
+    */
+  def createSipRule(): Request[CreateSipRuleResponse, AWSError] = js.native
+  def createSipRule(callback: js.Function2[/* err */ AWSError, /* data */ CreateSipRuleResponse, Unit]): Request[CreateSipRuleResponse, AWSError] = js.native
+  /**
+    * Creates a SIP rule which can be used to run a SIP media application as a target for a specific trigger type.
+    */
+  def createSipRule(params: CreateSipRuleRequest): Request[CreateSipRuleResponse, AWSError] = js.native
+  def createSipRule(
+    params: CreateSipRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSipRuleResponse, Unit]
+  ): Request[CreateSipRuleResponse, AWSError] = js.native
+  
   /**
     * Creates a user under the specified Amazon Chime account.
     */
@@ -307,6 +483,7 @@ trait Chime extends Service {
     params: CreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
+  
   /**
     * Creates an Amazon Chime Voice Connector under the administrator's AWS account. You can choose to create an Amazon Chime Voice Connector in a specific AWS Region. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
     */
@@ -320,6 +497,7 @@ trait Chime extends Service {
     params: CreateVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorResponse, Unit]
   ): Request[CreateVoiceConnectorResponse, AWSError] = js.native
+  
   /**
     * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
     */
@@ -333,6 +511,7 @@ trait Chime extends Service {
     params: CreateVoiceConnectorGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorGroupResponse, Unit]
   ): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified Amazon Chime account. You must suspend all users before deleting a Team account. You can use the BatchSuspendUser action to do so. For EnterpriseLWA and EnterpriseAD accounts, you must release the claimed domains for your Amazon Chime account before deletion. As soon as you release the domain, all users under that account are suspended. Deleted accounts appear in your Disabled accounts list for 90 days. To restore a deleted account from your Disabled accounts list, you must contact AWS Support. After 90 days, deleted accounts are permanently removed from your Disabled accounts list.
     */
@@ -346,6 +525,63 @@ trait Chime extends Service {
     params: DeleteAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountResponse, Unit]
   ): Request[DeleteAccountResponse, AWSError] = js.native
+  
+  /**
+    * Deletes an AppInstance and all associated data asynchronously.
+    */
+  def deleteAppInstance(): Request[js.Object, AWSError] = js.native
+  def deleteAppInstance(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an AppInstance and all associated data asynchronously.
+    */
+  def deleteAppInstance(params: DeleteAppInstanceRequest): Request[js.Object, AWSError] = js.native
+  def deleteAppInstance(
+    params: DeleteAppInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Demotes an AppInstanceAdmin to an AppInstanceUser. This action does not delete the user.
+    */
+  def deleteAppInstanceAdmin(): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceAdmin(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Demotes an AppInstanceAdmin to an AppInstanceUser. This action does not delete the user.
+    */
+  def deleteAppInstanceAdmin(params: DeleteAppInstanceAdminRequest): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceAdmin(
+    params: DeleteAppInstanceAdminRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the streaming configurations of an app instance.
+    */
+  def deleteAppInstanceStreamingConfigurations(): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceStreamingConfigurations(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the streaming configurations of an app instance.
+    */
+  def deleteAppInstanceStreamingConfigurations(params: DeleteAppInstanceStreamingConfigurationsRequest): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceStreamingConfigurations(
+    params: DeleteAppInstanceStreamingConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes an AppInstanceUser.
+    */
+  def deleteAppInstanceUser(): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceUser(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an AppInstanceUser.
+    */
+  def deleteAppInstanceUser(params: DeleteAppInstanceUserRequest): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceUser(
+    params: DeleteAppInstanceUserRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -359,6 +595,77 @@ trait Chime extends Service {
     params: DeleteAttendeeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Immediately makes a channel and its memberships inaccessible and marks them for deletion. This is an irreversible process.
+    */
+  def deleteChannel(): Request[js.Object, AWSError] = js.native
+  def deleteChannel(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Immediately makes a channel and its memberships inaccessible and marks them for deletion. This is an irreversible process.
+    */
+  def deleteChannel(params: DeleteChannelRequest): Request[js.Object, AWSError] = js.native
+  def deleteChannel(
+    params: DeleteChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Removes a user from a channel's ban list.
+    */
+  def deleteChannelBan(): Request[js.Object, AWSError] = js.native
+  def deleteChannelBan(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a user from a channel's ban list.
+    */
+  def deleteChannelBan(params: DeleteChannelBanRequest): Request[js.Object, AWSError] = js.native
+  def deleteChannelBan(
+    params: DeleteChannelBanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Removes a member from a channel.
+    */
+  def deleteChannelMembership(): Request[js.Object, AWSError] = js.native
+  def deleteChannelMembership(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a member from a channel.
+    */
+  def deleteChannelMembership(params: DeleteChannelMembershipRequest): Request[js.Object, AWSError] = js.native
+  def deleteChannelMembership(
+    params: DeleteChannelMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a channel message. Only admins can perform this action. Deletion makes messages inaccessible immediately. A background process deletes any revisions created by UpdateChannelMessage.
+    */
+  def deleteChannelMessage(): Request[js.Object, AWSError] = js.native
+  def deleteChannelMessage(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a channel message. Only admins can perform this action. Deletion makes messages inaccessible immediately. A background process deletes any revisions created by UpdateChannelMessage.
+    */
+  def deleteChannelMessage(params: DeleteChannelMessageRequest): Request[js.Object, AWSError] = js.native
+  def deleteChannelMessage(
+    params: DeleteChannelMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a channel moderator.
+    */
+  def deleteChannelModerator(): Request[js.Object, AWSError] = js.native
+  def deleteChannelModerator(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a channel moderator.
+    */
+  def deleteChannelModerator(params: DeleteChannelModeratorRequest): Request[js.Object, AWSError] = js.native
+  def deleteChannelModerator(
+    params: DeleteChannelModeratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the events configuration that allows a bot to receive outgoing events.
     */
@@ -372,6 +679,7 @@ trait Chime extends Service {
     params: DeleteEventsConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified Amazon Chime SDK meeting. When a meeting is deleted, its attendees are also deleted and clients can no longer join it. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -385,6 +693,7 @@ trait Chime extends Service {
     params: DeleteMeetingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Moves the specified phone number into the Deletion queue. A phone number must be disassociated from any users or Amazon Chime Voice Connectors before it can be deleted. Deleted phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
     */
@@ -398,6 +707,7 @@ trait Chime extends Service {
     params: DeletePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified proxy session from the specified Amazon Chime Voice Connector.
     */
@@ -411,6 +721,7 @@ trait Chime extends Service {
     params: DeleteProxySessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a chat room in an Amazon Chime Enterprise account.
     */
@@ -421,6 +732,7 @@ trait Chime extends Service {
     */
   def deleteRoom(params: DeleteRoomRequest): Request[js.Object, AWSError] = js.native
   def deleteRoom(params: DeleteRoomRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes a member from a chat room in an Amazon Chime Enterprise account.
     */
@@ -434,6 +746,35 @@ trait Chime extends Service {
     params: DeleteRoomMembershipRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a SIP media application.
+    */
+  def deleteSipMediaApplication(): Request[js.Object, AWSError] = js.native
+  def deleteSipMediaApplication(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a SIP media application.
+    */
+  def deleteSipMediaApplication(params: DeleteSipMediaApplicationRequest): Request[js.Object, AWSError] = js.native
+  def deleteSipMediaApplication(
+    params: DeleteSipMediaApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a SIP rule. You must disable a SIP rule before you can delete it.
+    */
+  def deleteSipRule(): Request[js.Object, AWSError] = js.native
+  def deleteSipRule(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a SIP rule. You must disable a SIP rule before you can delete it.
+    */
+  def deleteSipRule(params: DeleteSipRuleRequest): Request[js.Object, AWSError] = js.native
+  def deleteSipRule(
+    params: DeleteSipRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified Amazon Chime Voice Connector. Any phone numbers associated with the Amazon Chime Voice Connector must be disassociated from it before it can be deleted.
     */
@@ -447,6 +788,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the emergency calling configuration details from the specified Amazon Chime Voice Connector.
     */
@@ -460,6 +802,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorEmergencyCallingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified Amazon Chime Voice Connector group. Any VoiceConnectorItems and phone numbers associated with the group must be removed before it can be deleted.
     */
@@ -473,6 +816,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the origination settings for the specified Amazon Chime Voice Connector.  If emergency calling is configured for the Amazon Chime Voice Connector, it must be deleted prior to deleting the origination settings. 
     */
@@ -486,6 +830,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the proxy configuration from the specified Amazon Chime Voice Connector.
     */
@@ -499,6 +844,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorProxyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the streaming configuration for the specified Amazon Chime Voice Connector.
     */
@@ -512,6 +858,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorStreamingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the termination settings for the specified Amazon Chime Voice Connector.  If emergency calling is configured for the Amazon Chime Voice Connector, it must be deleted prior to deleting the termination settings. 
     */
@@ -525,6 +872,7 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorTerminationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified SIP credentials used by your equipment to authenticate during call termination.
     */
@@ -538,6 +886,153 @@ trait Chime extends Service {
     params: DeleteVoiceConnectorTerminationCredentialsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Returns the full details of an AppInstance.
+    */
+  def describeAppInstance(): Request[DescribeAppInstanceResponse, AWSError] = js.native
+  def describeAppInstance(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceResponse, Unit]): Request[DescribeAppInstanceResponse, AWSError] = js.native
+  /**
+    * Returns the full details of an AppInstance.
+    */
+  def describeAppInstance(params: DescribeAppInstanceRequest): Request[DescribeAppInstanceResponse, AWSError] = js.native
+  def describeAppInstance(
+    params: DescribeAppInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceResponse, Unit]
+  ): Request[DescribeAppInstanceResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of an AppInstanceAdmin.
+    */
+  def describeAppInstanceAdmin(): Request[DescribeAppInstanceAdminResponse, AWSError] = js.native
+  def describeAppInstanceAdmin(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceAdminResponse, Unit]): Request[DescribeAppInstanceAdminResponse, AWSError] = js.native
+  /**
+    * Returns the full details of an AppInstanceAdmin.
+    */
+  def describeAppInstanceAdmin(params: DescribeAppInstanceAdminRequest): Request[DescribeAppInstanceAdminResponse, AWSError] = js.native
+  def describeAppInstanceAdmin(
+    params: DescribeAppInstanceAdminRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceAdminResponse, Unit]
+  ): Request[DescribeAppInstanceAdminResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of an AppInstanceUser.
+    */
+  def describeAppInstanceUser(): Request[DescribeAppInstanceUserResponse, AWSError] = js.native
+  def describeAppInstanceUser(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceUserResponse, Unit]): Request[DescribeAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * Returns the full details of an AppInstanceUser.
+    */
+  def describeAppInstanceUser(params: DescribeAppInstanceUserRequest): Request[DescribeAppInstanceUserResponse, AWSError] = js.native
+  def describeAppInstanceUser(
+    params: DescribeAppInstanceUserRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceUserResponse, Unit]
+  ): Request[DescribeAppInstanceUserResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of a channel in an Amazon Chime app instance.
+    */
+  def describeChannel(): Request[DescribeChannelResponse, AWSError] = js.native
+  def describeChannel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Returns the full details of a channel in an Amazon Chime app instance.
+    */
+  def describeChannel(params: DescribeChannelRequest): Request[DescribeChannelResponse, AWSError] = js.native
+  def describeChannel(
+    params: DescribeChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
+  ): Request[DescribeChannelResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of a channel ban.
+    */
+  def describeChannelBan(): Request[DescribeChannelBanResponse, AWSError] = js.native
+  def describeChannelBan(callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelBanResponse, Unit]): Request[DescribeChannelBanResponse, AWSError] = js.native
+  /**
+    * Returns the full details of a channel ban.
+    */
+  def describeChannelBan(params: DescribeChannelBanRequest): Request[DescribeChannelBanResponse, AWSError] = js.native
+  def describeChannelBan(
+    params: DescribeChannelBanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelBanResponse, Unit]
+  ): Request[DescribeChannelBanResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of a user's channel membership.
+    */
+  def describeChannelMembership(): Request[DescribeChannelMembershipResponse, AWSError] = js.native
+  def describeChannelMembership(callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelMembershipResponse, Unit]): Request[DescribeChannelMembershipResponse, AWSError] = js.native
+  /**
+    * Returns the full details of a user's channel membership.
+    */
+  def describeChannelMembership(params: DescribeChannelMembershipRequest): Request[DescribeChannelMembershipResponse, AWSError] = js.native
+  def describeChannelMembership(
+    params: DescribeChannelMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelMembershipResponse, Unit]
+  ): Request[DescribeChannelMembershipResponse, AWSError] = js.native
+  
+  /**
+    * Returns the details of a channel based on the membership of the AppInstanceUser specified.
+    */
+  def describeChannelMembershipForAppInstanceUser(): Request[DescribeChannelMembershipForAppInstanceUserResponse, AWSError] = js.native
+  def describeChannelMembershipForAppInstanceUser(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeChannelMembershipForAppInstanceUserResponse, 
+      Unit
+    ]
+  ): Request[DescribeChannelMembershipForAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * Returns the details of a channel based on the membership of the AppInstanceUser specified.
+    */
+  def describeChannelMembershipForAppInstanceUser(params: DescribeChannelMembershipForAppInstanceUserRequest): Request[DescribeChannelMembershipForAppInstanceUserResponse, AWSError] = js.native
+  def describeChannelMembershipForAppInstanceUser(
+    params: DescribeChannelMembershipForAppInstanceUserRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeChannelMembershipForAppInstanceUserResponse, 
+      Unit
+    ]
+  ): Request[DescribeChannelMembershipForAppInstanceUserResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of a channel moderated by the specified AppInstanceUser.
+    */
+  def describeChannelModeratedByAppInstanceUser(): Request[DescribeChannelModeratedByAppInstanceUserResponse, AWSError] = js.native
+  def describeChannelModeratedByAppInstanceUser(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeChannelModeratedByAppInstanceUserResponse, 
+      Unit
+    ]
+  ): Request[DescribeChannelModeratedByAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * Returns the full details of a channel moderated by the specified AppInstanceUser.
+    */
+  def describeChannelModeratedByAppInstanceUser(params: DescribeChannelModeratedByAppInstanceUserRequest): Request[DescribeChannelModeratedByAppInstanceUserResponse, AWSError] = js.native
+  def describeChannelModeratedByAppInstanceUser(
+    params: DescribeChannelModeratedByAppInstanceUserRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeChannelModeratedByAppInstanceUserResponse, 
+      Unit
+    ]
+  ): Request[DescribeChannelModeratedByAppInstanceUserResponse, AWSError] = js.native
+  
+  /**
+    * Returns the full details of a single ChannelModerator.
+    */
+  def describeChannelModerator(): Request[DescribeChannelModeratorResponse, AWSError] = js.native
+  def describeChannelModerator(callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelModeratorResponse, Unit]): Request[DescribeChannelModeratorResponse, AWSError] = js.native
+  /**
+    * Returns the full details of a single ChannelModerator.
+    */
+  def describeChannelModerator(params: DescribeChannelModeratorRequest): Request[DescribeChannelModeratorResponse, AWSError] = js.native
+  def describeChannelModerator(
+    params: DescribeChannelModeratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelModeratorResponse, Unit]
+  ): Request[DescribeChannelModeratorResponse, AWSError] = js.native
+  
   /**
     * Disassociates the primary provisioned phone number from the specified Amazon Chime user.
     */
@@ -553,6 +1048,7 @@ trait Chime extends Service {
     params: DisassociatePhoneNumberFromUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociatePhoneNumberFromUserResponse, Unit]
   ): Request[DisassociatePhoneNumberFromUserResponse, AWSError] = js.native
+  
   /**
     * Disassociates the specified phone numbers from the specified Amazon Chime Voice Connector.
     */
@@ -576,6 +1072,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[DisassociatePhoneNumbersFromVoiceConnectorResponse, AWSError] = js.native
+  
   /**
     * Disassociates the specified phone numbers from the specified Amazon Chime Voice Connector group.
     */
@@ -599,6 +1096,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, AWSError] = js.native
+  
   /**
     * Disassociates the specified sign-in delegate groups from the specified Amazon Chime account.
     */
@@ -622,6 +1120,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[DisassociateSigninDelegateGroupsFromAccountResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified Amazon Chime account, such as account type and supported licenses.
     */
@@ -635,6 +1134,7 @@ trait Chime extends Service {
     params: GetAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAccountResponse, Unit]
   ): Request[GetAccountResponse, AWSError] = js.native
+  
   /**
     * Retrieves account settings for the specified Amazon Chime account ID, such as remote control and dial out settings. For more information about these settings, see Use the Policies Page in the Amazon Chime Administration Guide.
     */
@@ -648,6 +1148,39 @@ trait Chime extends Service {
     params: GetAccountSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAccountSettingsResponse, Unit]
   ): Request[GetAccountSettingsResponse, AWSError] = js.native
+  
+  /**
+    * Gets the retention settings for an app instance.
+    */
+  def getAppInstanceRetentionSettings(): Request[GetAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  def getAppInstanceRetentionSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAppInstanceRetentionSettingsResponse, Unit]
+  ): Request[GetAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  /**
+    * Gets the retention settings for an app instance.
+    */
+  def getAppInstanceRetentionSettings(params: GetAppInstanceRetentionSettingsRequest): Request[GetAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  def getAppInstanceRetentionSettings(
+    params: GetAppInstanceRetentionSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAppInstanceRetentionSettingsResponse, Unit]
+  ): Request[GetAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  
+  /**
+    * Gets the streaming settings for an app instance.
+    */
+  def getAppInstanceStreamingConfigurations(): Request[GetAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  def getAppInstanceStreamingConfigurations(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAppInstanceStreamingConfigurationsResponse, Unit]
+  ): Request[GetAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  /**
+    * Gets the streaming settings for an app instance.
+    */
+  def getAppInstanceStreamingConfigurations(params: GetAppInstanceStreamingConfigurationsRequest): Request[GetAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  def getAppInstanceStreamingConfigurations(
+    params: GetAppInstanceStreamingConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAppInstanceStreamingConfigurationsResponse, Unit]
+  ): Request[GetAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -661,6 +1194,7 @@ trait Chime extends Service {
     params: GetAttendeeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAttendeeResponse, Unit]
   ): Request[GetAttendeeResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified bot, such as bot email address, bot type, status, and display name.
     */
@@ -671,6 +1205,21 @@ trait Chime extends Service {
     */
   def getBot(params: GetBotRequest): Request[GetBotResponse, AWSError] = js.native
   def getBot(params: GetBotRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetBotResponse, Unit]): Request[GetBotResponse, AWSError] = js.native
+  
+  /**
+    * Gets the full details of a channel message.
+    */
+  def getChannelMessage(): Request[GetChannelMessageResponse, AWSError] = js.native
+  def getChannelMessage(callback: js.Function2[/* err */ AWSError, /* data */ GetChannelMessageResponse, Unit]): Request[GetChannelMessageResponse, AWSError] = js.native
+  /**
+    * Gets the full details of a channel message.
+    */
+  def getChannelMessage(params: GetChannelMessageRequest): Request[GetChannelMessageResponse, AWSError] = js.native
+  def getChannelMessage(
+    params: GetChannelMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetChannelMessageResponse, Unit]
+  ): Request[GetChannelMessageResponse, AWSError] = js.native
+  
   /**
     * Gets details for an events configuration that allows a bot to receive outgoing events, such as an HTTPS endpoint or Lambda function ARN. 
     */
@@ -684,11 +1233,13 @@ trait Chime extends Service {
     params: GetEventsConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEventsConfigurationResponse, Unit]
   ): Request[GetEventsConfigurationResponse, AWSError] = js.native
+  
   /**
     * Retrieves global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
     */
   def getGlobalSettings(): Request[GetGlobalSettingsResponse, AWSError] = js.native
   def getGlobalSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetGlobalSettingsResponse, Unit]): Request[GetGlobalSettingsResponse, AWSError] = js.native
+  
   /**
     * Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -702,6 +1253,21 @@ trait Chime extends Service {
     params: GetMeetingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMeetingResponse, Unit]
   ): Request[GetMeetingResponse, AWSError] = js.native
+  
+  /**
+    * The endpoint for the messaging session.
+    */
+  def getMessagingSessionEndpoint(): Request[GetMessagingSessionEndpointResponse, AWSError] = js.native
+  def getMessagingSessionEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ GetMessagingSessionEndpointResponse, Unit]): Request[GetMessagingSessionEndpointResponse, AWSError] = js.native
+  /**
+    * The endpoint for the messaging session.
+    */
+  def getMessagingSessionEndpoint(params: GetMessagingSessionEndpointRequest): Request[GetMessagingSessionEndpointResponse, AWSError] = js.native
+  def getMessagingSessionEndpoint(
+    params: GetMessagingSessionEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMessagingSessionEndpointResponse, Unit]
+  ): Request[GetMessagingSessionEndpointResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified phone number ID, such as associations, capabilities, and product type.
     */
@@ -715,6 +1281,7 @@ trait Chime extends Service {
     params: GetPhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberResponse, Unit]
   ): Request[GetPhoneNumberResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified phone number order, such as order creation timestamp, phone numbers in E.164 format, product type, and order status.
     */
@@ -728,11 +1295,13 @@ trait Chime extends Service {
     params: GetPhoneNumberOrderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberOrderResponse, Unit]
   ): Request[GetPhoneNumberOrderResponse, AWSError] = js.native
+  
   /**
     * Retrieves the phone number settings for the administrator's AWS account, such as the default outbound calling name.
     */
   def getPhoneNumberSettings(): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
   def getPhoneNumberSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberSettingsResponse, Unit]): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
+  
   /**
     * Gets the specified proxy session details for the specified Amazon Chime Voice Connector.
     */
@@ -746,6 +1315,7 @@ trait Chime extends Service {
     params: GetProxySessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetProxySessionResponse, Unit]
   ): Request[GetProxySessionResponse, AWSError] = js.native
+  
   /**
     * Gets the retention settings for the specified Amazon Chime Enterprise account. For more information about retention settings, see Managing Chat Retention Policies in the Amazon Chime Administration Guide.
     */
@@ -759,6 +1329,7 @@ trait Chime extends Service {
     params: GetRetentionSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRetentionSettingsResponse, Unit]
   ): Request[GetRetentionSettingsResponse, AWSError] = js.native
+  
   /**
     * Retrieves room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
@@ -772,6 +1343,59 @@ trait Chime extends Service {
     params: GetRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRoomResponse, Unit]
   ): Request[GetRoomResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the information for a SIP media application, including name, AWS Region, and endpoints.
+    */
+  def getSipMediaApplication(): Request[GetSipMediaApplicationResponse, AWSError] = js.native
+  def getSipMediaApplication(callback: js.Function2[/* err */ AWSError, /* data */ GetSipMediaApplicationResponse, Unit]): Request[GetSipMediaApplicationResponse, AWSError] = js.native
+  /**
+    * Retrieves the information for a SIP media application, including name, AWS Region, and endpoints.
+    */
+  def getSipMediaApplication(params: GetSipMediaApplicationRequest): Request[GetSipMediaApplicationResponse, AWSError] = js.native
+  def getSipMediaApplication(
+    params: GetSipMediaApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSipMediaApplicationResponse, Unit]
+  ): Request[GetSipMediaApplicationResponse, AWSError] = js.native
+  
+  /**
+    * Returns the logging configuration for the specified SIP media application.
+    */
+  def getSipMediaApplicationLoggingConfiguration(): Request[GetSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  def getSipMediaApplicationLoggingConfiguration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetSipMediaApplicationLoggingConfigurationResponse, 
+      Unit
+    ]
+  ): Request[GetSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Returns the logging configuration for the specified SIP media application.
+    */
+  def getSipMediaApplicationLoggingConfiguration(params: GetSipMediaApplicationLoggingConfigurationRequest): Request[GetSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  def getSipMediaApplicationLoggingConfiguration(
+    params: GetSipMediaApplicationLoggingConfigurationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetSipMediaApplicationLoggingConfigurationResponse, 
+      Unit
+    ]
+  ): Request[GetSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the details of a SIP rule, such as the rule ID, name, triggers, and target endpoints.
+    */
+  def getSipRule(): Request[GetSipRuleResponse, AWSError] = js.native
+  def getSipRule(callback: js.Function2[/* err */ AWSError, /* data */ GetSipRuleResponse, Unit]): Request[GetSipRuleResponse, AWSError] = js.native
+  /**
+    * Retrieves the details of a SIP rule, such as the rule ID, name, triggers, and target endpoints.
+    */
+  def getSipRule(params: GetSipRuleRequest): Request[GetSipRuleResponse, AWSError] = js.native
+  def getSipRule(
+    params: GetSipRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSipRuleResponse, Unit]
+  ): Request[GetSipRuleResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified user ID, such as primary email address, license type, and personal meeting PIN. To retrieve user details with an email address instead of a user ID, use the ListUsers action, and then filter by email address.
     */
@@ -785,6 +1409,7 @@ trait Chime extends Service {
     params: GetUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserResponse, Unit]
   ): Request[GetUserResponse, AWSError] = js.native
+  
   /**
     * Retrieves settings for the specified user ID, such as any associated phone number settings.
     */
@@ -798,6 +1423,7 @@ trait Chime extends Service {
     params: GetUserSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserSettingsResponse, Unit]
   ): Request[GetUserSettingsResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified Amazon Chime Voice Connector, such as timestamps, name, outbound host, and encryption requirements.
     */
@@ -811,6 +1437,7 @@ trait Chime extends Service {
     params: GetVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorResponse, Unit]
   ): Request[GetVoiceConnectorResponse, AWSError] = js.native
+  
   /**
     * Gets the emergency calling configuration details for the specified Amazon Chime Voice Connector.
     */
@@ -834,6 +1461,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[GetVoiceConnectorEmergencyCallingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Retrieves details for the specified Amazon Chime Voice Connector group, such as timestamps, name, and associated VoiceConnectorItems.
     */
@@ -847,21 +1475,23 @@ trait Chime extends Service {
     params: GetVoiceConnectorGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorGroupResponse, Unit]
   ): Request[GetVoiceConnectorGroupResponse, AWSError] = js.native
+  
   /**
-    * Retrieves the logging configuration details for the specified Amazon Chime Voice Connector. Shows whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
+    * Retrieves the logging configuration details for the specified Amazon Chime Voice Connector. Shows whether SIP message logs are enabled for sending to Amazon CloudWatch.
     */
   def getVoiceConnectorLoggingConfiguration(): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
   def getVoiceConnectorLoggingConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorLoggingConfigurationResponse, Unit]
   ): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
   /**
-    * Retrieves the logging configuration details for the specified Amazon Chime Voice Connector. Shows whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
+    * Retrieves the logging configuration details for the specified Amazon Chime Voice Connector. Shows whether SIP message logs are enabled for sending to Amazon CloudWatch.
     */
   def getVoiceConnectorLoggingConfiguration(params: GetVoiceConnectorLoggingConfigurationRequest): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
   def getVoiceConnectorLoggingConfiguration(
     params: GetVoiceConnectorLoggingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorLoggingConfigurationResponse, Unit]
   ): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Retrieves origination setting details for the specified Amazon Chime Voice Connector.
     */
@@ -875,6 +1505,7 @@ trait Chime extends Service {
     params: GetVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorOriginationResponse, Unit]
   ): Request[GetVoiceConnectorOriginationResponse, AWSError] = js.native
+  
   /**
     * Gets the proxy configuration details for the specified Amazon Chime Voice Connector.
     */
@@ -888,6 +1519,7 @@ trait Chime extends Service {
     params: GetVoiceConnectorProxyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorProxyResponse, Unit]
   ): Request[GetVoiceConnectorProxyResponse, AWSError] = js.native
+  
   /**
     * Retrieves the streaming configuration details for the specified Amazon Chime Voice Connector. Shows whether media streaming is enabled for sending to Amazon Kinesis. It also shows the retention period, in hours, for the Amazon Kinesis data.
     */
@@ -903,6 +1535,7 @@ trait Chime extends Service {
     params: GetVoiceConnectorStreamingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorStreamingConfigurationResponse, Unit]
   ): Request[GetVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Retrieves termination setting details for the specified Amazon Chime Voice Connector.
     */
@@ -916,6 +1549,7 @@ trait Chime extends Service {
     params: GetVoiceConnectorTerminationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorTerminationResponse, Unit]
   ): Request[GetVoiceConnectorTerminationResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the last time a SIP OPTIONS ping was received from your SIP infrastructure for the specified Amazon Chime Voice Connector.
     */
@@ -931,6 +1565,7 @@ trait Chime extends Service {
     params: GetVoiceConnectorTerminationHealthRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorTerminationHealthResponse, Unit]
   ): Request[GetVoiceConnectorTerminationHealthResponse, AWSError] = js.native
+  
   /**
     * Sends email to a maximum of 50 users, inviting them to the specified Amazon Chime Team account. Only Team account types are currently supported for this action. 
     */
@@ -944,6 +1579,7 @@ trait Chime extends Service {
     params: InviteUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InviteUsersResponse, Unit]
   ): Request[InviteUsersResponse, AWSError] = js.native
+  
   /**
     * Lists the Amazon Chime accounts under the administrator's AWS account. You can filter accounts by account name prefix. To find out which Amazon Chime account a user belongs to, you can filter by the user's email address, which returns one account result.
     */
@@ -957,6 +1593,49 @@ trait Chime extends Service {
     params: ListAccountsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAccountsResponse, Unit]
   ): Request[ListAccountsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of the administrators in the app instance.
+    */
+  def listAppInstanceAdmins(): Request[ListAppInstanceAdminsResponse, AWSError] = js.native
+  def listAppInstanceAdmins(callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceAdminsResponse, Unit]): Request[ListAppInstanceAdminsResponse, AWSError] = js.native
+  /**
+    * Returns a list of the administrators in the app instance.
+    */
+  def listAppInstanceAdmins(params: ListAppInstanceAdminsRequest): Request[ListAppInstanceAdminsResponse, AWSError] = js.native
+  def listAppInstanceAdmins(
+    params: ListAppInstanceAdminsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceAdminsResponse, Unit]
+  ): Request[ListAppInstanceAdminsResponse, AWSError] = js.native
+  
+  /**
+    * List all AppInstanceUsers created under a single app instance.
+    */
+  def listAppInstanceUsers(): Request[ListAppInstanceUsersResponse, AWSError] = js.native
+  def listAppInstanceUsers(callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceUsersResponse, Unit]): Request[ListAppInstanceUsersResponse, AWSError] = js.native
+  /**
+    * List all AppInstanceUsers created under a single app instance.
+    */
+  def listAppInstanceUsers(params: ListAppInstanceUsersRequest): Request[ListAppInstanceUsersResponse, AWSError] = js.native
+  def listAppInstanceUsers(
+    params: ListAppInstanceUsersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceUsersResponse, Unit]
+  ): Request[ListAppInstanceUsersResponse, AWSError] = js.native
+  
+  /**
+    * Lists all Amazon Chime app instances created under a single AWS account.
+    */
+  def listAppInstances(): Request[ListAppInstancesResponse, AWSError] = js.native
+  def listAppInstances(callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstancesResponse, Unit]): Request[ListAppInstancesResponse, AWSError] = js.native
+  /**
+    * Lists all Amazon Chime app instances created under a single AWS account.
+    */
+  def listAppInstances(params: ListAppInstancesRequest): Request[ListAppInstancesResponse, AWSError] = js.native
+  def listAppInstances(
+    params: ListAppInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstancesResponse, Unit]
+  ): Request[ListAppInstancesResponse, AWSError] = js.native
+  
   /**
     * Lists the tags applied to an Amazon Chime SDK attendee resource.
     */
@@ -970,6 +1649,7 @@ trait Chime extends Service {
     params: ListAttendeeTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAttendeeTagsResponse, Unit]
   ): Request[ListAttendeeTagsResponse, AWSError] = js.native
+  
   /**
     * Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -983,6 +1663,7 @@ trait Chime extends Service {
     params: ListAttendeesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAttendeesResponse, Unit]
   ): Request[ListAttendeesResponse, AWSError] = js.native
+  
   /**
     * Lists the bots associated with the administrator's Amazon Chime Enterprise account ID.
     */
@@ -996,6 +1677,117 @@ trait Chime extends Service {
     params: ListBotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBotsResponse, Unit]
   ): Request[ListBotsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all the users banned from a particular channel.
+    */
+  def listChannelBans(): Request[ListChannelBansResponse, AWSError] = js.native
+  def listChannelBans(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelBansResponse, Unit]): Request[ListChannelBansResponse, AWSError] = js.native
+  /**
+    * Lists all the users banned from a particular channel.
+    */
+  def listChannelBans(params: ListChannelBansRequest): Request[ListChannelBansResponse, AWSError] = js.native
+  def listChannelBans(
+    params: ListChannelBansRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelBansResponse, Unit]
+  ): Request[ListChannelBansResponse, AWSError] = js.native
+  
+  /**
+    * Lists all channel memberships in a channel.
+    */
+  def listChannelMemberships(): Request[ListChannelMembershipsResponse, AWSError] = js.native
+  def listChannelMemberships(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelMembershipsResponse, Unit]): Request[ListChannelMembershipsResponse, AWSError] = js.native
+  /**
+    * Lists all channel memberships in a channel.
+    */
+  def listChannelMemberships(params: ListChannelMembershipsRequest): Request[ListChannelMembershipsResponse, AWSError] = js.native
+  def listChannelMemberships(
+    params: ListChannelMembershipsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelMembershipsResponse, Unit]
+  ): Request[ListChannelMembershipsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all channels that a particular AppInstanceUser is a part of. Only an AppInstanceAdmin can call the API with a user ARN that is not their own.
+    */
+  def listChannelMembershipsForAppInstanceUser(): Request[ListChannelMembershipsForAppInstanceUserResponse, AWSError] = js.native
+  def listChannelMembershipsForAppInstanceUser(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListChannelMembershipsForAppInstanceUserResponse, 
+      Unit
+    ]
+  ): Request[ListChannelMembershipsForAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * Lists all channels that a particular AppInstanceUser is a part of. Only an AppInstanceAdmin can call the API with a user ARN that is not their own.
+    */
+  def listChannelMembershipsForAppInstanceUser(params: ListChannelMembershipsForAppInstanceUserRequest): Request[ListChannelMembershipsForAppInstanceUserResponse, AWSError] = js.native
+  def listChannelMembershipsForAppInstanceUser(
+    params: ListChannelMembershipsForAppInstanceUserRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListChannelMembershipsForAppInstanceUserResponse, 
+      Unit
+    ]
+  ): Request[ListChannelMembershipsForAppInstanceUserResponse, AWSError] = js.native
+  
+  /**
+    * List all the messages in a channel. Returns a paginated list of ChannelMessages. Sorted in descending order by default, based on the creation timestamp.  Redacted messages appear in the results as empty, since they are only redacted, not deleted. Deleted messages do not appear in the results. This action always returns the latest version of an edited message. 
+    */
+  def listChannelMessages(): Request[ListChannelMessagesResponse, AWSError] = js.native
+  def listChannelMessages(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelMessagesResponse, Unit]): Request[ListChannelMessagesResponse, AWSError] = js.native
+  /**
+    * List all the messages in a channel. Returns a paginated list of ChannelMessages. Sorted in descending order by default, based on the creation timestamp.  Redacted messages appear in the results as empty, since they are only redacted, not deleted. Deleted messages do not appear in the results. This action always returns the latest version of an edited message. 
+    */
+  def listChannelMessages(params: ListChannelMessagesRequest): Request[ListChannelMessagesResponse, AWSError] = js.native
+  def listChannelMessages(
+    params: ListChannelMessagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelMessagesResponse, Unit]
+  ): Request[ListChannelMessagesResponse, AWSError] = js.native
+  
+  /**
+    * Lists all the moderators for a channel.
+    */
+  def listChannelModerators(): Request[ListChannelModeratorsResponse, AWSError] = js.native
+  def listChannelModerators(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelModeratorsResponse, Unit]): Request[ListChannelModeratorsResponse, AWSError] = js.native
+  /**
+    * Lists all the moderators for a channel.
+    */
+  def listChannelModerators(params: ListChannelModeratorsRequest): Request[ListChannelModeratorsResponse, AWSError] = js.native
+  def listChannelModerators(
+    params: ListChannelModeratorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelModeratorsResponse, Unit]
+  ): Request[ListChannelModeratorsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all Channels created under a single Chime App as a paginated list. You can specify filters to narrow results.  Functionality &amp; restrictions    Use privacy = PUBLIC to retrieve all public channels in the account   Only an AppInstanceAdmin can set privacy = PRIVATE to list the private channels in an account.  
+    */
+  def listChannels(): Request[ListChannelsResponse, AWSError] = js.native
+  def listChannels(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]): Request[ListChannelsResponse, AWSError] = js.native
+  /**
+    * Lists all Channels created under a single Chime App as a paginated list. You can specify filters to narrow results.  Functionality &amp; restrictions    Use privacy = PUBLIC to retrieve all public channels in the account   Only an AppInstanceAdmin can set privacy = PRIVATE to list the private channels in an account.  
+    */
+  def listChannels(params: ListChannelsRequest): Request[ListChannelsResponse, AWSError] = js.native
+  def listChannels(
+    params: ListChannelsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]
+  ): Request[ListChannelsResponse, AWSError] = js.native
+  
+  /**
+    * A list of the channels moderated by an app instance user.
+    */
+  def listChannelsModeratedByAppInstanceUser(): Request[ListChannelsModeratedByAppInstanceUserResponse, AWSError] = js.native
+  def listChannelsModeratedByAppInstanceUser(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsModeratedByAppInstanceUserResponse, Unit]
+  ): Request[ListChannelsModeratedByAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * A list of the channels moderated by an app instance user.
+    */
+  def listChannelsModeratedByAppInstanceUser(params: ListChannelsModeratedByAppInstanceUserRequest): Request[ListChannelsModeratedByAppInstanceUserResponse, AWSError] = js.native
+  def listChannelsModeratedByAppInstanceUser(
+    params: ListChannelsModeratedByAppInstanceUserRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsModeratedByAppInstanceUserResponse, Unit]
+  ): Request[ListChannelsModeratedByAppInstanceUserResponse, AWSError] = js.native
+  
   /**
     * Lists the tags applied to an Amazon Chime SDK meeting resource.
     */
@@ -1009,6 +1801,7 @@ trait Chime extends Service {
     params: ListMeetingTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMeetingTagsResponse, Unit]
   ): Request[ListMeetingTagsResponse, AWSError] = js.native
+  
   /**
     * Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
@@ -1022,6 +1815,7 @@ trait Chime extends Service {
     params: ListMeetingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMeetingsResponse, Unit]
   ): Request[ListMeetingsResponse, AWSError] = js.native
+  
   /**
     * Lists the phone number orders for the administrator's Amazon Chime account.
     */
@@ -1035,6 +1829,7 @@ trait Chime extends Service {
     params: ListPhoneNumberOrdersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumberOrdersResponse, Unit]
   ): Request[ListPhoneNumberOrdersResponse, AWSError] = js.native
+  
   /**
     * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, Amazon Chime Voice Connector, or Amazon Chime Voice Connector group.
     */
@@ -1048,6 +1843,7 @@ trait Chime extends Service {
     params: ListPhoneNumbersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersResponse, Unit]
   ): Request[ListPhoneNumbersResponse, AWSError] = js.native
+  
   /**
     * Lists the proxy sessions for the specified Amazon Chime Voice Connector.
     */
@@ -1061,6 +1857,7 @@ trait Chime extends Service {
     params: ListProxySessionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProxySessionsResponse, Unit]
   ): Request[ListProxySessionsResponse, AWSError] = js.native
+  
   /**
     * Lists the membership details for the specified room in an Amazon Chime Enterprise account, such as the members' IDs, email addresses, and names.
     */
@@ -1074,6 +1871,7 @@ trait Chime extends Service {
     params: ListRoomMembershipsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRoomMembershipsResponse, Unit]
   ): Request[ListRoomMembershipsResponse, AWSError] = js.native
+  
   /**
     * Lists the room details for the specified Amazon Chime Enterprise account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
     */
@@ -1087,6 +1885,35 @@ trait Chime extends Service {
     params: ListRoomsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRoomsResponse, Unit]
   ): Request[ListRoomsResponse, AWSError] = js.native
+  
+  /**
+    * Lists the SIP media applications under the administrator's AWS account.
+    */
+  def listSipMediaApplications(): Request[ListSipMediaApplicationsResponse, AWSError] = js.native
+  def listSipMediaApplications(callback: js.Function2[/* err */ AWSError, /* data */ ListSipMediaApplicationsResponse, Unit]): Request[ListSipMediaApplicationsResponse, AWSError] = js.native
+  /**
+    * Lists the SIP media applications under the administrator's AWS account.
+    */
+  def listSipMediaApplications(params: ListSipMediaApplicationsRequest): Request[ListSipMediaApplicationsResponse, AWSError] = js.native
+  def listSipMediaApplications(
+    params: ListSipMediaApplicationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSipMediaApplicationsResponse, Unit]
+  ): Request[ListSipMediaApplicationsResponse, AWSError] = js.native
+  
+  /**
+    * Lists the SIP rules under the administrator's AWS account.
+    */
+  def listSipRules(): Request[ListSipRulesResponse, AWSError] = js.native
+  def listSipRules(callback: js.Function2[/* err */ AWSError, /* data */ ListSipRulesResponse, Unit]): Request[ListSipRulesResponse, AWSError] = js.native
+  /**
+    * Lists the SIP rules under the administrator's AWS account.
+    */
+  def listSipRules(params: ListSipRulesRequest): Request[ListSipRulesResponse, AWSError] = js.native
+  def listSipRules(
+    params: ListSipRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSipRulesResponse, Unit]
+  ): Request[ListSipRulesResponse, AWSError] = js.native
+  
   /**
     * Lists the tags applied to an Amazon Chime SDK meeting resource.
     */
@@ -1100,6 +1927,7 @@ trait Chime extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Lists the users that belong to the specified Amazon Chime account. You can specify an email address to list only the user that the email address belongs to.
     */
@@ -1113,6 +1941,7 @@ trait Chime extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  
   /**
     * Lists the Amazon Chime Voice Connector groups for the administrator's AWS account.
     */
@@ -1126,6 +1955,7 @@ trait Chime extends Service {
     params: ListVoiceConnectorGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListVoiceConnectorGroupsResponse, Unit]
   ): Request[ListVoiceConnectorGroupsResponse, AWSError] = js.native
+  
   /**
     * Lists the SIP credentials for the specified Amazon Chime Voice Connector.
     */
@@ -1149,6 +1979,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[ListVoiceConnectorTerminationCredentialsResponse, AWSError] = js.native
+  
   /**
     * Lists the Amazon Chime Voice Connectors for the administrator's AWS account.
     */
@@ -1162,6 +1993,7 @@ trait Chime extends Service {
     params: ListVoiceConnectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListVoiceConnectorsResponse, Unit]
   ): Request[ListVoiceConnectorsResponse, AWSError] = js.native
+  
   /**
     * Logs out the specified user from all of the devices they are currently logged into.
     */
@@ -1175,6 +2007,39 @@ trait Chime extends Service {
     params: LogoutUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ LogoutUserResponse, Unit]
   ): Request[LogoutUserResponse, AWSError] = js.native
+  
+  /**
+    * Sets the amount of time in days that a given app instance retains data.
+    */
+  def putAppInstanceRetentionSettings(): Request[PutAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  def putAppInstanceRetentionSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppInstanceRetentionSettingsResponse, Unit]
+  ): Request[PutAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  /**
+    * Sets the amount of time in days that a given app instance retains data.
+    */
+  def putAppInstanceRetentionSettings(params: PutAppInstanceRetentionSettingsRequest): Request[PutAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  def putAppInstanceRetentionSettings(
+    params: PutAppInstanceRetentionSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppInstanceRetentionSettingsResponse, Unit]
+  ): Request[PutAppInstanceRetentionSettingsResponse, AWSError] = js.native
+  
+  /**
+    * The data streaming configurations of an app instance.
+    */
+  def putAppInstanceStreamingConfigurations(): Request[PutAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  def putAppInstanceStreamingConfigurations(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppInstanceStreamingConfigurationsResponse, Unit]
+  ): Request[PutAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  /**
+    * The data streaming configurations of an app instance.
+    */
+  def putAppInstanceStreamingConfigurations(params: PutAppInstanceStreamingConfigurationsRequest): Request[PutAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  def putAppInstanceStreamingConfigurations(
+    params: PutAppInstanceStreamingConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppInstanceStreamingConfigurationsResponse, Unit]
+  ): Request[PutAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Creates an events configuration that allows a bot to receive outgoing events sent by Amazon Chime. Choose either an HTTPS endpoint or a Lambda function ARN. For more information, see Bot.
     */
@@ -1188,6 +2053,7 @@ trait Chime extends Service {
     params: PutEventsConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutEventsConfigurationResponse, Unit]
   ): Request[PutEventsConfigurationResponse, AWSError] = js.native
+  
   /**
     * Puts retention settings for the specified Amazon Chime Enterprise account. We recommend using AWS CloudTrail to monitor usage of this API for your account. For more information, see Logging Amazon Chime API Calls with AWS CloudTrail in the Amazon Chime Administration Guide. To turn off existing retention settings, remove the number of days from the corresponding RetentionDays field in the RetentionSettings object. For more information about retention settings, see Managing Chat Retention Policies in the Amazon Chime Administration Guide.
     */
@@ -1201,6 +2067,31 @@ trait Chime extends Service {
     params: PutRetentionSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionSettingsResponse, Unit]
   ): Request[PutRetentionSettingsResponse, AWSError] = js.native
+  
+  /**
+    * Updates the logging configuration for the specified SIP media application.
+    */
+  def putSipMediaApplicationLoggingConfiguration(): Request[PutSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  def putSipMediaApplicationLoggingConfiguration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ PutSipMediaApplicationLoggingConfigurationResponse, 
+      Unit
+    ]
+  ): Request[PutSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the logging configuration for the specified SIP media application.
+    */
+  def putSipMediaApplicationLoggingConfiguration(params: PutSipMediaApplicationLoggingConfigurationRequest): Request[PutSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  def putSipMediaApplicationLoggingConfiguration(
+    params: PutSipMediaApplicationLoggingConfigurationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ PutSipMediaApplicationLoggingConfigurationResponse, 
+      Unit
+    ]
+  ): Request[PutSipMediaApplicationLoggingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Puts emergency calling configuration details to the specified Amazon Chime Voice Connector, such as emergency phone numbers and calling countries. Origination and termination settings must be enabled for the Amazon Chime Voice Connector before emergency calling can be configured.
     */
@@ -1224,6 +2115,7 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[PutVoiceConnectorEmergencyCallingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Adds a logging configuration for the specified Amazon Chime Voice Connector. The logging configuration specifies whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
     */
@@ -1239,6 +2131,7 @@ trait Chime extends Service {
     params: PutVoiceConnectorLoggingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorLoggingConfigurationResponse, Unit]
   ): Request[PutVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Adds origination settings for the specified Amazon Chime Voice Connector.  If emergency calling is configured for the Amazon Chime Voice Connector, it must be deleted prior to turning off origination settings. 
     */
@@ -1252,6 +2145,7 @@ trait Chime extends Service {
     params: PutVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorOriginationResponse, Unit]
   ): Request[PutVoiceConnectorOriginationResponse, AWSError] = js.native
+  
   /**
     * Puts the specified proxy configuration to the specified Amazon Chime Voice Connector.
     */
@@ -1265,6 +2159,7 @@ trait Chime extends Service {
     params: PutVoiceConnectorProxyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorProxyResponse, Unit]
   ): Request[PutVoiceConnectorProxyResponse, AWSError] = js.native
+  
   /**
     * Adds a streaming configuration for the specified Amazon Chime Voice Connector. The streaming configuration specifies whether media streaming is enabled for sending to Amazon Kinesis. It also sets the retention period, in hours, for the Amazon Kinesis data.
     */
@@ -1280,6 +2175,7 @@ trait Chime extends Service {
     params: PutVoiceConnectorStreamingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorStreamingConfigurationResponse, Unit]
   ): Request[PutVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Adds termination settings for the specified Amazon Chime Voice Connector.  If emergency calling is configured for the Amazon Chime Voice Connector, it must be deleted prior to turning off termination settings. 
     */
@@ -1293,6 +2189,7 @@ trait Chime extends Service {
     params: PutVoiceConnectorTerminationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorTerminationResponse, Unit]
   ): Request[PutVoiceConnectorTerminationResponse, AWSError] = js.native
+  
   /**
     * Adds termination SIP credentials for the specified Amazon Chime Voice Connector.
     */
@@ -1306,6 +2203,21 @@ trait Chime extends Service {
     params: PutVoiceConnectorTerminationCredentialsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Redacts message content, but not metadata. The message exists in the back end, but the action returns null content, and the state shows as redacted.
+    */
+  def redactChannelMessage(): Request[RedactChannelMessageResponse, AWSError] = js.native
+  def redactChannelMessage(callback: js.Function2[/* err */ AWSError, /* data */ RedactChannelMessageResponse, Unit]): Request[RedactChannelMessageResponse, AWSError] = js.native
+  /**
+    * Redacts message content, but not metadata. The message exists in the back end, but the action returns null content, and the state shows as redacted.
+    */
+  def redactChannelMessage(params: RedactChannelMessageRequest): Request[RedactChannelMessageResponse, AWSError] = js.native
+  def redactChannelMessage(
+    params: RedactChannelMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RedactChannelMessageResponse, Unit]
+  ): Request[RedactChannelMessageResponse, AWSError] = js.native
+  
   /**
     * Redacts the specified message from the specified Amazon Chime conversation.
     */
@@ -1319,19 +2231,21 @@ trait Chime extends Service {
     params: RedactConversationMessageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RedactConversationMessageResponse, Unit]
   ): Request[RedactConversationMessageResponse, AWSError] = js.native
+  
   /**
-    * Redacts the specified message from the specified Amazon Chime chat room.
+    * Redacts the specified message from the specified Amazon Chime channel.
     */
   def redactRoomMessage(): Request[RedactRoomMessageResponse, AWSError] = js.native
   def redactRoomMessage(callback: js.Function2[/* err */ AWSError, /* data */ RedactRoomMessageResponse, Unit]): Request[RedactRoomMessageResponse, AWSError] = js.native
   /**
-    * Redacts the specified message from the specified Amazon Chime chat room.
+    * Redacts the specified message from the specified Amazon Chime channel.
     */
   def redactRoomMessage(params: RedactRoomMessageRequest): Request[RedactRoomMessageResponse, AWSError] = js.native
   def redactRoomMessage(
     params: RedactRoomMessageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RedactRoomMessageResponse, Unit]
   ): Request[RedactRoomMessageResponse, AWSError] = js.native
+  
   /**
     * Regenerates the security token for a bot.
     */
@@ -1345,6 +2259,7 @@ trait Chime extends Service {
     params: RegenerateSecurityTokenRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegenerateSecurityTokenResponse, Unit]
   ): Request[RegenerateSecurityTokenResponse, AWSError] = js.native
+  
   /**
     * Resets the personal meeting PIN for the specified user on an Amazon Chime account. Returns the User object with the updated personal meeting PIN.
     */
@@ -1358,6 +2273,7 @@ trait Chime extends Service {
     params: ResetPersonalPINRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResetPersonalPINResponse, Unit]
   ): Request[ResetPersonalPINResponse, AWSError] = js.native
+  
   /**
     * Moves a phone number from the Deletion queue back into the phone number Inventory.
     */
@@ -1371,6 +2287,7 @@ trait Chime extends Service {
     params: RestorePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RestorePhoneNumberResponse, Unit]
   ): Request[RestorePhoneNumberResponse, AWSError] = js.native
+  
   /**
     * Searches phone numbers that can be ordered.
     */
@@ -1384,6 +2301,21 @@ trait Chime extends Service {
     params: SearchAvailablePhoneNumbersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchAvailablePhoneNumbersResponse, Unit]
   ): Request[SearchAvailablePhoneNumbersResponse, AWSError] = js.native
+  
+  /**
+    * Sends a message to a particular channel that the member is a part of.   STANDARD messages can contain 4KB of data and the 1KB of metadata. CONTROL messages can contain 30 bytes of data and no metadata. 
+    */
+  def sendChannelMessage(): Request[SendChannelMessageResponse, AWSError] = js.native
+  def sendChannelMessage(callback: js.Function2[/* err */ AWSError, /* data */ SendChannelMessageResponse, Unit]): Request[SendChannelMessageResponse, AWSError] = js.native
+  /**
+    * Sends a message to a particular channel that the member is a part of.   STANDARD messages can contain 4KB of data and the 1KB of metadata. CONTROL messages can contain 30 bytes of data and no metadata. 
+    */
+  def sendChannelMessage(params: SendChannelMessageRequest): Request[SendChannelMessageResponse, AWSError] = js.native
+  def sendChannelMessage(
+    params: SendChannelMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendChannelMessageResponse, Unit]
+  ): Request[SendChannelMessageResponse, AWSError] = js.native
+  
   /**
     * Applies the specified tags to the specified Amazon Chime SDK attendee.
     */
@@ -1394,6 +2326,7 @@ trait Chime extends Service {
     */
   def tagAttendee(params: TagAttendeeRequest): Request[js.Object, AWSError] = js.native
   def tagAttendee(params: TagAttendeeRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Applies the specified tags to the specified Amazon Chime SDK meeting.
     */
@@ -1404,6 +2337,7 @@ trait Chime extends Service {
     */
   def tagMeeting(params: TagMeetingRequest): Request[js.Object, AWSError] = js.native
   def tagMeeting(params: TagMeetingRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Applies the specified tags to the specified Amazon Chime SDK meeting resource.
     */
@@ -1414,6 +2348,7 @@ trait Chime extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Untags the specified tags from the specified Amazon Chime SDK attendee.
     */
@@ -1427,6 +2362,7 @@ trait Chime extends Service {
     params: UntagAttendeeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Untags the specified tags from the specified Amazon Chime SDK meeting.
     */
@@ -1440,6 +2376,7 @@ trait Chime extends Service {
     params: UntagMeetingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Untags the specified tags from the specified Amazon Chime SDK meeting resource.
     */
@@ -1453,6 +2390,7 @@ trait Chime extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates account details for the specified Amazon Chime account. Currently, only account name updates are supported for this action.
     */
@@ -1466,6 +2404,7 @@ trait Chime extends Service {
     params: UpdateAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountResponse, Unit]
   ): Request[UpdateAccountResponse, AWSError] = js.native
+  
   /**
     * Updates the settings for the specified Amazon Chime account. You can update settings for remote control of shared screens, or for the dial-out option. For more information about these settings, see Use the Policies Page in the Amazon Chime Administration Guide.
     */
@@ -1479,6 +2418,35 @@ trait Chime extends Service {
     params: UpdateAccountSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountSettingsResponse, Unit]
   ): Request[UpdateAccountSettingsResponse, AWSError] = js.native
+  
+  /**
+    * Updates AppInstance metadata.
+    */
+  def updateAppInstance(): Request[UpdateAppInstanceResponse, AWSError] = js.native
+  def updateAppInstance(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceResponse, Unit]): Request[UpdateAppInstanceResponse, AWSError] = js.native
+  /**
+    * Updates AppInstance metadata.
+    */
+  def updateAppInstance(params: UpdateAppInstanceRequest): Request[UpdateAppInstanceResponse, AWSError] = js.native
+  def updateAppInstance(
+    params: UpdateAppInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceResponse, Unit]
+  ): Request[UpdateAppInstanceResponse, AWSError] = js.native
+  
+  /**
+    * Updates the details for an AppInstanceUser. You can update names and metadata.
+    */
+  def updateAppInstanceUser(): Request[UpdateAppInstanceUserResponse, AWSError] = js.native
+  def updateAppInstanceUser(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceUserResponse, Unit]): Request[UpdateAppInstanceUserResponse, AWSError] = js.native
+  /**
+    * Updates the details for an AppInstanceUser. You can update names and metadata.
+    */
+  def updateAppInstanceUser(params: UpdateAppInstanceUserRequest): Request[UpdateAppInstanceUserResponse, AWSError] = js.native
+  def updateAppInstanceUser(
+    params: UpdateAppInstanceUserRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceUserResponse, Unit]
+  ): Request[UpdateAppInstanceUserResponse, AWSError] = js.native
+  
   /**
     * Updates the status of the specified bot, such as starting or stopping the bot from running in your Amazon Chime Enterprise account.
     */
@@ -1492,6 +2460,49 @@ trait Chime extends Service {
     params: UpdateBotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBotResponse, Unit]
   ): Request[UpdateBotResponse, AWSError] = js.native
+  
+  /**
+    * Update a channel's attributes.  Restriction: You can't change a channel's privacy.
+    */
+  def updateChannel(): Request[UpdateChannelResponse, AWSError] = js.native
+  def updateChannel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]): Request[UpdateChannelResponse, AWSError] = js.native
+  /**
+    * Update a channel's attributes.  Restriction: You can't change a channel's privacy.
+    */
+  def updateChannel(params: UpdateChannelRequest): Request[UpdateChannelResponse, AWSError] = js.native
+  def updateChannel(
+    params: UpdateChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]
+  ): Request[UpdateChannelResponse, AWSError] = js.native
+  
+  /**
+    * Updates the content of a message.
+    */
+  def updateChannelMessage(): Request[UpdateChannelMessageResponse, AWSError] = js.native
+  def updateChannelMessage(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelMessageResponse, Unit]): Request[UpdateChannelMessageResponse, AWSError] = js.native
+  /**
+    * Updates the content of a message.
+    */
+  def updateChannelMessage(params: UpdateChannelMessageRequest): Request[UpdateChannelMessageResponse, AWSError] = js.native
+  def updateChannelMessage(
+    params: UpdateChannelMessageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelMessageResponse, Unit]
+  ): Request[UpdateChannelMessageResponse, AWSError] = js.native
+  
+  /**
+    * Sets the timestamp to the point when a user last read messages in a channel.
+    */
+  def updateChannelReadMarker(): Request[UpdateChannelReadMarkerResponse, AWSError] = js.native
+  def updateChannelReadMarker(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelReadMarkerResponse, Unit]): Request[UpdateChannelReadMarkerResponse, AWSError] = js.native
+  /**
+    * Sets the timestamp to the point when a user last read messages in a channel.
+    */
+  def updateChannelReadMarker(params: UpdateChannelReadMarkerRequest): Request[UpdateChannelReadMarkerResponse, AWSError] = js.native
+  def updateChannelReadMarker(
+    params: UpdateChannelReadMarkerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelReadMarkerResponse, Unit]
+  ): Request[UpdateChannelReadMarkerResponse, AWSError] = js.native
+  
   /**
     * Updates global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
     */
@@ -1505,6 +2516,7 @@ trait Chime extends Service {
     params: UpdateGlobalSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates phone number details, such as product type or calling name, for the specified phone number ID. You can update one phone number detail at a time. For example, you can update either the product type or the calling name in one action. For toll-free numbers, you must use the Amazon Chime Voice Connector product type. Updates to outbound calling names can take up to 72 hours to complete. Pending updates to outbound calling names must be complete before you can request another update.
     */
@@ -1518,6 +2530,7 @@ trait Chime extends Service {
     params: UpdatePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePhoneNumberResponse, Unit]
   ): Request[UpdatePhoneNumberResponse, AWSError] = js.native
+  
   /**
     * Updates the phone number settings for the administrator's AWS account, such as the default outbound calling name. You can update the default outbound calling name once every seven days. Outbound calling names can take up to 72 hours to update.
     */
@@ -1531,6 +2544,7 @@ trait Chime extends Service {
     params: UpdatePhoneNumberSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the specified proxy session details, such as voice or SMS capabilities.
     */
@@ -1544,6 +2558,7 @@ trait Chime extends Service {
     params: UpdateProxySessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProxySessionResponse, Unit]
   ): Request[UpdateProxySessionResponse, AWSError] = js.native
+  
   /**
     * Updates room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
@@ -1557,6 +2572,7 @@ trait Chime extends Service {
     params: UpdateRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomResponse, Unit]
   ): Request[UpdateRoomResponse, AWSError] = js.native
+  
   /**
     * Updates room membership details, such as the member role, for a room in an Amazon Chime Enterprise account. The member role designates whether the member is a chat room administrator or a general chat room member. The member role can be updated only for user IDs.
     */
@@ -1570,6 +2586,35 @@ trait Chime extends Service {
     params: UpdateRoomMembershipRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomMembershipResponse, Unit]
   ): Request[UpdateRoomMembershipResponse, AWSError] = js.native
+  
+  /**
+    * Updates the details for the specified SIP media application.
+    */
+  def updateSipMediaApplication(): Request[UpdateSipMediaApplicationResponse, AWSError] = js.native
+  def updateSipMediaApplication(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSipMediaApplicationResponse, Unit]): Request[UpdateSipMediaApplicationResponse, AWSError] = js.native
+  /**
+    * Updates the details for the specified SIP media application.
+    */
+  def updateSipMediaApplication(params: UpdateSipMediaApplicationRequest): Request[UpdateSipMediaApplicationResponse, AWSError] = js.native
+  def updateSipMediaApplication(
+    params: UpdateSipMediaApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSipMediaApplicationResponse, Unit]
+  ): Request[UpdateSipMediaApplicationResponse, AWSError] = js.native
+  
+  /**
+    * Updates the details for the specified SIP rule.
+    */
+  def updateSipRule(): Request[UpdateSipRuleResponse, AWSError] = js.native
+  def updateSipRule(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSipRuleResponse, Unit]): Request[UpdateSipRuleResponse, AWSError] = js.native
+  /**
+    * Updates the details for the specified SIP rule.
+    */
+  def updateSipRule(params: UpdateSipRuleRequest): Request[UpdateSipRuleResponse, AWSError] = js.native
+  def updateSipRule(
+    params: UpdateSipRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSipRuleResponse, Unit]
+  ): Request[UpdateSipRuleResponse, AWSError] = js.native
+  
   /**
     * Updates user details for a specified user ID. Currently, only LicenseType updates are supported for this action.
     */
@@ -1583,6 +2628,7 @@ trait Chime extends Service {
     params: UpdateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserResponse, Unit]
   ): Request[UpdateUserResponse, AWSError] = js.native
+  
   /**
     * Updates the settings for the specified user, such as phone number settings.
     */
@@ -1596,6 +2642,7 @@ trait Chime extends Service {
     params: UpdateUserSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates details for the specified Amazon Chime Voice Connector.
     */
@@ -1609,6 +2656,7 @@ trait Chime extends Service {
     params: UpdateVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceConnectorResponse, Unit]
   ): Request[UpdateVoiceConnectorResponse, AWSError] = js.native
+  
   /**
     * Updates details for the specified Amazon Chime Voice Connector group, such as the name and Amazon Chime Voice Connector priority ranking.
     */
@@ -1623,4 +2671,3 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceConnectorGroupResponse, Unit]
   ): Request[UpdateVoiceConnectorGroupResponse, AWSError] = js.native
 }
-

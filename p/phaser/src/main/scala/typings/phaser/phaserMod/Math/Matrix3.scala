@@ -2,7 +2,7 @@ package typings.phaser.phaserMod.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A three-dimensional matrix.
@@ -19,4 +19,3 @@ class Matrix3 ()
   extends typings.phaser.Phaser.Math.Matrix3 {
   def this(m: typings.phaser.Phaser.Math.Matrix3) = this()
 }
-

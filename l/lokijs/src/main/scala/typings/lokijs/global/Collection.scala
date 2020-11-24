@@ -4,7 +4,7 @@ import typings.lokijs.CollectionOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Collection class that handles documents of same type
@@ -35,4 +35,3 @@ class Collection[E /* <: js.Object */] protected ()
   def this(name: String) = this()
   def this(name: String, options: Partial[CollectionOptions[E]]) = this()
 }
-

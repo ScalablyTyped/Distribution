@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to smart tag actions.
@@ -17,8 +17,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSmartTagAction extends XInitialization {
+  
   /** the number of smart tag types supported by this action component. */
   var SmartTagCount: Double = js.native
+  
   /**
     * obtains a caption for a specified action for use in user interfaces.
     * @param nActionID The identifier of the requested action.
@@ -42,6 +44,7 @@ trait XSmartTagAction extends XInitialization {
     xController: XController,
     xTarget: XTextRange
   ): String = js.native
+  
   /**
     * obtains the number of actions provided for a specified smart tag type.
     * @param aSmartTagName Name of the wanted smart tag type. This is one of the names obtained by {@link getSmartTagName()}
@@ -50,6 +53,7 @@ trait XSmartTagAction extends XInitialization {
     * @returns the number of actions available for the given smart tag type.
     */
   def getActionCount(aSmartTagName: String, xController: XController, xProperties: XStringKeyMap): Double = js.native
+  
   /**
     * obtains a unique integer identifier for an action.
     * @param aSmartTagName Name of the wanted smart tag type. This is one of the names obtained by {@link getSmartTagName()}
@@ -59,6 +63,7 @@ trait XSmartTagAction extends XInitialization {
     * @throws com::sun::star::lang::IllegalArgumentException if the specified nActionIndex is greater than the number of available actions for the specified sm
     */
   def getActionID(aSmartTagName: String, nActionIndex: Double, xController: XController): Double = js.native
+  
   /**
     * obtains a language independent name of an action.
     * @param nActionID The identifier of the requested action.
@@ -67,18 +72,21 @@ trait XSmartTagAction extends XInitialization {
     * @throws com::sun::star::lang::IllegalArgumentException if the ActionID is not recognized.
     */
   def getActionNameFromID(nActionID: Double, xController: XController): String = js.native
+  
   /**
     * obtains a detailed description of this action component.
     * @param aLocale Is used for localization of the description.
     * @returns the description of the action component.
     */
   def getDescription(aLocale: Locale): String = js.native
+  
   /**
     * obtains a name that describes this action component.
     * @param aLocale Is used for localization of the name.
     * @returns the name describing the action component.
     */
   def getName(aLocale: Locale): String = js.native
+  
   /**
     * obtains the caption of the smart tag type for using in user interfaces.
     * @param nSmartTagIndex Index of the wanted smart tag type. Value needs to be between 0 and the number of smarttags available (exclusively).
@@ -87,6 +95,7 @@ trait XSmartTagAction extends XInitialization {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount
     */
   def getSmartTagCaption(nSmartTagIndex: Double, aLocale: Locale): String = js.native
+  
   /**
     * obtains the name of one specific smart tag type supported by this action component.
     * @param nSmartTagIndex Index of the wanted smart tag type. Value needs to be between 0 and the number of smarttags available (exclusively).
@@ -94,6 +103,7 @@ trait XSmartTagAction extends XInitialization {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount.
     */
   def getSmartTagName(nSmartTagIndex: Double): String = js.native
+  
   /**
     * invokes an action.
     * @param nActionID The identifier of the requested action.
@@ -116,6 +126,7 @@ trait XSmartTagAction extends XInitialization {
     aXML: String,
     aLocale: Locale
   ): Unit = js.native
+  
   /**
     * determines whether a caption is dynamic.
     * @param nActionID The identifier of the requested action.
@@ -126,6 +137,7 @@ trait XSmartTagAction extends XInitialization {
     * @throws com::sun::star::lang::IllegalArgumentException if the ActionID is not recognized.
     */
   def isCaptionDynamic(nActionID: Double, aApplicationName: String, xController: XController, aLocale: Locale): Boolean = js.native
+  
   /**
     * determines whether the smart tag indicator should be visible.
     * @param nActionID The identifier of the requested action.
@@ -137,8 +149,8 @@ trait XSmartTagAction extends XInitialization {
     */
   def isShowSmartTagIndicator(nActionID: Double, aApplicationName: String, xController: XController, aLocale: Locale): Boolean = js.native
 }
-
 object XSmartTagAction {
+  
   @scala.inline
   def apply(
     SmartTagCount: Double,
@@ -161,42 +173,56 @@ object XSmartTagAction {
     val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getActionCaptionFromID = js.Any.fromFunction8(getActionCaptionFromID), getActionCount = js.Any.fromFunction3(getActionCount), getActionID = js.Any.fromFunction3(getActionID), getActionNameFromID = js.Any.fromFunction2(getActionNameFromID), getDescription = js.Any.fromFunction1(getDescription), getName = js.Any.fromFunction1(getName), getSmartTagCaption = js.Any.fromFunction2(getSmartTagCaption), getSmartTagName = js.Any.fromFunction1(getSmartTagName), initialize = js.Any.fromFunction1(initialize), invokeAction = js.Any.fromFunction8(invokeAction), isCaptionDynamic = js.Any.fromFunction4(isCaptionDynamic), isShowSmartTagIndicator = js.Any.fromFunction4(isShowSmartTagIndicator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSmartTagAction]
   }
+  
   @scala.inline
   implicit class XSmartTagActionOps[Self <: XSmartTagAction] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSmartTagCount(value: Double): Self = this.set("SmartTagCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetActionCaptionFromID(value: (Double, String, Locale, XStringKeyMap, String, String, XController, XTextRange) => String): Self = this.set("getActionCaptionFromID", js.Any.fromFunction8(value))
+    
     @scala.inline
     def setGetActionCount(value: (String, XController, XStringKeyMap) => Double): Self = this.set("getActionCount", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetActionID(value: (String, Double, XController) => Double): Self = this.set("getActionID", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetActionNameFromID(value: (Double, XController) => String): Self = this.set("getActionNameFromID", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetDescription(value: Locale => String): Self = this.set("getDescription", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetName(value: Locale => String): Self = this.set("getName", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetSmartTagCaption(value: (Double, Locale) => String): Self = this.set("getSmartTagCaption", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetSmartTagName(value: Double => String): Self = this.set("getSmartTagName", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setInvokeAction(value: (Double, String, XController, XTextRange, XStringKeyMap, String, String, Locale) => Unit): Self = this.set("invokeAction", js.Any.fromFunction8(value))
+    
     @scala.inline
     def setIsCaptionDynamic(value: (Double, String, XController, Locale) => Boolean): Self = this.set("isCaptionDynamic", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setIsShowSmartTagIndicator(value: (Double, String, XController, Locale) => Boolean): Self = this.set("isShowSmartTagIndicator", js.Any.fromFunction4(value))
   }
-  
 }
-

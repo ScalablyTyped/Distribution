@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Kanban
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EditingType extends js.Object
-
 @JSGlobal("ej.Kanban.EditingType")
 @js.native
 object EditingType extends js.Object {
+  
   ///Allows to set edit type as date picker edit type
   @js.native
   sealed trait DatePicker extends EditingType
@@ -37,6 +37,4 @@ object EditingType extends js.Object {
   ///Allows to set edit type as text area edit type
   @js.native
   sealed trait TextArea extends EditingType
-  
 }
-

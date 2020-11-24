@@ -1,17 +1,16 @@
 package typings.awsSdk.workdocsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkDocs extends Service {
-  @JSName("config")
-  var config_WorkDocs: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Aborts the upload of the specified document version that was previously initiated by InitiateDocumentVersionUpload. The client should make this call only when it no longer intends to upload the document version, or fails to do so.
     */
@@ -25,6 +24,7 @@ trait WorkDocs extends Service {
     params: AbortDocumentVersionUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Activates the specified user. Only active users can access Amazon WorkDocs.
     */
@@ -38,6 +38,7 @@ trait WorkDocs extends Service {
     params: ActivateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ActivateUserResponse, Unit]
   ): Request[ActivateUserResponse, AWSError] = js.native
+  
   /**
     * Creates a set of permissions for the specified folder or document. The resource permissions are overwritten if the principals already have different permissions.
     */
@@ -51,6 +52,10 @@ trait WorkDocs extends Service {
     params: AddResourcePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AddResourcePermissionsResponse, Unit]
   ): Request[AddResourcePermissionsResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_WorkDocs: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds a new comment to the specified document version.
     */
@@ -64,6 +69,7 @@ trait WorkDocs extends Service {
     params: CreateCommentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCommentResponse, Unit]
   ): Request[CreateCommentResponse, AWSError] = js.native
+  
   /**
     * Adds one or more custom properties to the specified resource (a folder, document, or version).
     */
@@ -77,6 +83,7 @@ trait WorkDocs extends Service {
     params: CreateCustomMetadataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomMetadataResponse, Unit]
   ): Request[CreateCustomMetadataResponse, AWSError] = js.native
+  
   /**
     * Creates a folder with the specified name and parent folder.
     */
@@ -90,6 +97,7 @@ trait WorkDocs extends Service {
     params: CreateFolderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFolderResponse, Unit]
   ): Request[CreateFolderResponse, AWSError] = js.native
+  
   /**
     * Adds the specified list of labels to the given resource (a document or folder)
     */
@@ -103,6 +111,7 @@ trait WorkDocs extends Service {
     params: CreateLabelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLabelsResponse, Unit]
   ): Request[CreateLabelsResponse, AWSError] = js.native
+  
   /**
     * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
     */
@@ -118,6 +127,7 @@ trait WorkDocs extends Service {
     params: CreateNotificationSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNotificationSubscriptionResponse, Unit]
   ): Request[CreateNotificationSubscriptionResponse, AWSError] = js.native
+  
   /**
     * Creates a user in a Simple AD or Microsoft AD directory. The status of a newly created user is "ACTIVE". New users can access Amazon WorkDocs.
     */
@@ -131,6 +141,7 @@ trait WorkDocs extends Service {
     params: CreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
+  
   /**
     * Deactivates the specified user, which revokes the user's access to Amazon WorkDocs.
     */
@@ -144,6 +155,7 @@ trait WorkDocs extends Service {
     params: DeactivateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified comment from the document version.
     */
@@ -157,6 +169,7 @@ trait WorkDocs extends Service {
     params: DeleteCommentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes custom metadata from the specified resource.
     */
@@ -170,6 +183,7 @@ trait WorkDocs extends Service {
     params: DeleteCustomMetadataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomMetadataResponse, Unit]
   ): Request[DeleteCustomMetadataResponse, AWSError] = js.native
+  
   /**
     * Permanently deletes the specified document and its associated metadata.
     */
@@ -183,6 +197,7 @@ trait WorkDocs extends Service {
     params: DeleteDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Permanently deletes the specified folder and its contents.
     */
@@ -196,6 +211,7 @@ trait WorkDocs extends Service {
     params: DeleteFolderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the contents of the specified folder.
     */
@@ -209,6 +225,7 @@ trait WorkDocs extends Service {
     params: DeleteFolderContentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified list of labels from a resource.
     */
@@ -222,6 +239,7 @@ trait WorkDocs extends Service {
     params: DeleteLabelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLabelsResponse, Unit]
   ): Request[DeleteLabelsResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified subscription from the specified organization.
     */
@@ -235,6 +253,7 @@ trait WorkDocs extends Service {
     params: DeleteNotificationSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified user from a Simple AD or Microsoft AD directory.
     */
@@ -245,6 +264,7 @@ trait WorkDocs extends Service {
     */
   def deleteUser(params: DeleteUserRequest): Request[js.Object, AWSError] = js.native
   def deleteUser(params: DeleteUserRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Describes the user activities in a specified time period.
     */
@@ -258,6 +278,7 @@ trait WorkDocs extends Service {
     params: DescribeActivitiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeActivitiesResponse, Unit]
   ): Request[DescribeActivitiesResponse, AWSError] = js.native
+  
   /**
     * List all the comments for the specified document version.
     */
@@ -271,6 +292,7 @@ trait WorkDocs extends Service {
     params: DescribeCommentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCommentsResponse, Unit]
   ): Request[DescribeCommentsResponse, AWSError] = js.native
+  
   /**
     * Retrieves the document versions for the specified document. By default, only active versions are returned.
     */
@@ -284,6 +306,7 @@ trait WorkDocs extends Service {
     params: DescribeDocumentVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDocumentVersionsResponse, Unit]
   ): Request[DescribeDocumentVersionsResponse, AWSError] = js.native
+  
   /**
     * Describes the contents of the specified folder, including its documents and subfolders. By default, Amazon WorkDocs returns the first 100 active document and folder metadata items. If there are more results, the response includes a marker that you can use to request the next set of results. You can also request initialized documents.
     */
@@ -297,6 +320,7 @@ trait WorkDocs extends Service {
     params: DescribeFolderContentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFolderContentsResponse, Unit]
   ): Request[DescribeFolderContentsResponse, AWSError] = js.native
+  
   /**
     * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
     */
@@ -310,6 +334,7 @@ trait WorkDocs extends Service {
     params: DescribeGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeGroupsResponse, Unit]
   ): Request[DescribeGroupsResponse, AWSError] = js.native
+  
   /**
     * Lists the specified notification subscriptions.
     */
@@ -325,6 +350,7 @@ trait WorkDocs extends Service {
     params: DescribeNotificationSubscriptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotificationSubscriptionsResponse, Unit]
   ): Request[DescribeNotificationSubscriptionsResponse, AWSError] = js.native
+  
   /**
     * Describes the permissions of a specified resource.
     */
@@ -338,6 +364,7 @@ trait WorkDocs extends Service {
     params: DescribeResourcePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeResourcePermissionsResponse, Unit]
   ): Request[DescribeResourcePermissionsResponse, AWSError] = js.native
+  
   /**
     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
     */
@@ -351,6 +378,7 @@ trait WorkDocs extends Service {
     params: DescribeRootFoldersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRootFoldersResponse, Unit]
   ): Request[DescribeRootFoldersResponse, AWSError] = js.native
+  
   /**
     * Describes the specified users. You can describe all users or filter the results (for example, by status or organization). By default, Amazon WorkDocs returns the first 24 active or pending users. If there are more results, the response includes a marker that you can use to request the next set of results.
     */
@@ -364,6 +392,7 @@ trait WorkDocs extends Service {
     params: DescribeUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUsersResponse, Unit]
   ): Request[DescribeUsersResponse, AWSError] = js.native
+  
   /**
     * Retrieves details of the current user for whom the authentication token was generated. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
     */
@@ -377,6 +406,7 @@ trait WorkDocs extends Service {
     params: GetCurrentUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCurrentUserResponse, Unit]
   ): Request[GetCurrentUserResponse, AWSError] = js.native
+  
   /**
     * Retrieves details of a document.
     */
@@ -390,6 +420,7 @@ trait WorkDocs extends Service {
     params: GetDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDocumentResponse, Unit]
   ): Request[GetDocumentResponse, AWSError] = js.native
+  
   /**
     * Retrieves the path information (the hierarchy from the root folder) for the requested document. By default, Amazon WorkDocs returns a maximum of 100 levels upwards from the requested document and only includes the IDs of the parent folders in the path. You can limit the maximum number of levels. You can also request the names of the parent folders.
     */
@@ -403,6 +434,7 @@ trait WorkDocs extends Service {
     params: GetDocumentPathRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDocumentPathResponse, Unit]
   ): Request[GetDocumentPathResponse, AWSError] = js.native
+  
   /**
     * Retrieves version metadata for the specified document.
     */
@@ -416,6 +448,7 @@ trait WorkDocs extends Service {
     params: GetDocumentVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDocumentVersionResponse, Unit]
   ): Request[GetDocumentVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves the metadata of the specified folder.
     */
@@ -429,6 +462,7 @@ trait WorkDocs extends Service {
     params: GetFolderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFolderResponse, Unit]
   ): Request[GetFolderResponse, AWSError] = js.native
+  
   /**
     * Retrieves the path information (the hierarchy from the root folder) for the specified folder. By default, Amazon WorkDocs returns a maximum of 100 levels upwards from the requested folder and only includes the IDs of the parent folders in the path. You can limit the maximum number of levels. You can also request the parent folder names.
     */
@@ -442,6 +476,7 @@ trait WorkDocs extends Service {
     params: GetFolderPathRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFolderPathResponse, Unit]
   ): Request[GetFolderPathResponse, AWSError] = js.native
+  
   /**
     * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
     */
@@ -455,6 +490,7 @@ trait WorkDocs extends Service {
     params: GetResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourcesResponse, Unit]
   ): Request[GetResourcesResponse, AWSError] = js.native
+  
   /**
     * Creates a new document object and version object. The client specifies the parent folder ID and name of the document to upload. The ID is optionally specified when creating a new version of an existing document. This is the first step to upload a document. Next, upload the document to the URL returned from the call, and then call UpdateDocumentVersion. To cancel the document upload, call AbortDocumentVersionUpload.
     */
@@ -468,6 +504,7 @@ trait WorkDocs extends Service {
     params: InitiateDocumentVersionUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InitiateDocumentVersionUploadResponse, Unit]
   ): Request[InitiateDocumentVersionUploadResponse, AWSError] = js.native
+  
   /**
     * Removes all the permissions from the specified resource.
     */
@@ -481,6 +518,7 @@ trait WorkDocs extends Service {
     params: RemoveAllResourcePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes the permission for the specified principal from the specified resource.
     */
@@ -494,6 +532,7 @@ trait WorkDocs extends Service {
     params: RemoveResourcePermissionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the specified attributes of a document. The user must have access to both the document and its parent folder, if applicable.
     */
@@ -507,6 +546,7 @@ trait WorkDocs extends Service {
     params: UpdateDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Changes the status of the document version to ACTIVE.  Amazon WorkDocs also sets its document container to ACTIVE. This is the last step in a document upload, after the client uploads the document to an S3-presigned URL returned by InitiateDocumentVersionUpload. 
     */
@@ -520,6 +560,7 @@ trait WorkDocs extends Service {
     params: UpdateDocumentVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the specified attributes of the specified folder. The user must have access to both the folder and its parent folder, if applicable.
     */
@@ -533,6 +574,7 @@ trait WorkDocs extends Service {
     params: UpdateFolderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the specified attributes of the specified user, and grants or revokes administrative privileges to the Amazon WorkDocs site.
     */
@@ -547,4 +589,3 @@ trait WorkDocs extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserResponse, Unit]
   ): Request[UpdateUserResponse, AWSError] = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__floating-label
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the web floating-label component
@@ -10,9 +10,9 @@ The Material Components for the web floating-label component
 | ------------------ | :-------------: |
 | Full name          | @material/floating-label |
 | Keywords           | material components, material design, floatinglabel, floating label |
-| # releases         | 156 |
-| # dependents       | 24 |
-| # downloads        | 1672234 |
+| # releases         | 658 |
+| # dependents       | 33 |
+| # downloads        | 2735817 |
 | # stars            | 0 |
 
 ## Links

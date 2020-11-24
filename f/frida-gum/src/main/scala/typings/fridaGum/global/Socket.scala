@@ -7,7 +7,7 @@ import typings.fridaGum.SocketListener
 import typings.fridaGum.SocketType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TCP and UNIX sockets.
@@ -15,10 +15,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Socket")
 @js.native
 object Socket extends js.Object {
+  
   /**
     * Connects to a TCP or UNIX server.
     */
   def connect(options: SocketConnectOptions): js.Promise[typings.fridaGum.SocketConnection] = js.native
+  
   /**
     * Opens a TCP or UNIX listening socket.
     *
@@ -27,17 +29,19 @@ object Socket extends js.Object {
     */
   def listen(): js.Promise[SocketListener] = js.native
   def listen(options: SocketListenOptions): js.Promise[SocketListener] = js.native
+  
   /**
     * Inspects the OS socket `handle` and returns its local address, or `null` if invalid or unknown.
     */
   def localAddress(handle: Double): SocketEndpointAddress | Null = js.native
+  
   /**
     * Inspects the OS socket `handle` and returns its peer address, or `null` if invalid or unknown.
     */
   def peerAddress(handle: Double): SocketEndpointAddress | Null = js.native
+  
   /**
     * Inspects the OS socket `handle` and returns its type, or `null` if invalid or unknown.
     */
   def `type`(handle: Double): SocketType | Null = js.native
 }
-

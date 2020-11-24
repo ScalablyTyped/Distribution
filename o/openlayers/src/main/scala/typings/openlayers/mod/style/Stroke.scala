@@ -4,7 +4,7 @@ import typings.openlayers.mod.Color_
 import typings.openlayers.mod.olx.style.StrokeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -30,48 +30,56 @@ import scala.scalajs.js.annotation._
   */
 class Stroke () extends js.Object {
   def this(opt_options: StrokeOptions) = this()
+  
   /**
     * Get the stroke color.
     * @return Color.
     * @api
     */
   def getColor(): Color_ | String = js.native
+  
   /**
     * Get the line cap type for the stroke.
     * @return Line cap.
     * @api
     */
   def getLineCap(): String = js.native
+  
   /**
     * Get the line dash style for the stroke.
     * @return Line dash.
     * @api
     */
   def getLineDash(): js.Array[Double] = js.native
+  
   /**
     * Get the line dash offset style for the stroke.
     * @return Line dash offset
     * @api
     */
   def getLineDashOffset(): Double = js.native
+  
   /**
     * Get the line join type for the stroke.
     * @return Line join.
     * @api
     */
   def getLineJoin(): String = js.native
+  
   /**
     * Get the miter limit for the stroke.
     * @return Miter limit.
     * @api
     */
   def getMiterLimit(): Double = js.native
+  
   /**
     * Get the stroke width.
     * @return Width.
     * @api
     */
   def getWidth(): Double = js.native
+  
   def setColor(color: String): Unit = js.native
   /**
     * Set the color.
@@ -80,6 +88,7 @@ class Stroke () extends js.Object {
     * @api
     */
   def setColor(color: Color_): Unit = js.native
+  
   /**
     * Set the line cap.
     *
@@ -87,6 +96,7 @@ class Stroke () extends js.Object {
     * @api
     */
   def setLineCap(lineCap: String): Unit = js.native
+  
   /**
     * Set the line dash.
     *
@@ -100,6 +110,7 @@ class Stroke () extends js.Object {
     * @api
     */
   def setLineDash(lineDash: js.Array[Double]): Unit = js.native
+  
   /**
     * Set the line dash offset.
     *
@@ -107,6 +118,7 @@ class Stroke () extends js.Object {
     * @api
     */
   def setLineDashOffset(lineDashOffset: Double): Unit = js.native
+  
   /**
     * Set the line join.
     *
@@ -114,6 +126,7 @@ class Stroke () extends js.Object {
     * @api
     */
   def setLineJoin(lineJoin: String): Unit = js.native
+  
   /**
     * Set the miter limit.
     *
@@ -121,6 +134,7 @@ class Stroke () extends js.Object {
     * @api
     */
   def setMiterLimit(miterLimit: Double): Unit = js.native
+  
   /**
     * Set the width.
     *
@@ -129,4 +143,3 @@ class Stroke () extends js.Object {
     */
   def setWidth(width: Double): Unit = js.native
 }
-

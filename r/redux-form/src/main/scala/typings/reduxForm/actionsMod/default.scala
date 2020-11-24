@@ -7,11 +7,12 @@ import typings.reduxForm.mod.FieldType
 import typings.reduxForm.mod.FormErrors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-form/lib/actions", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var arrayInsert: js.Function4[
     /* form */ String, 
     /* field */ String, 
@@ -19,12 +20,19 @@ object default extends js.Object {
     /* value */ js.Any, 
     FormAction
   ] = js.native
+  
   var arrayMove: js.Function4[/* form */ String, /* field */ String, /* from */ Double, /* to */ Double, FormAction] = js.native
+  
   var arrayPop: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+  
   var arrayPush: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction] = js.native
+  
   var arrayRemove: js.Function3[/* form */ String, /* field */ String, /* index */ Double, FormAction] = js.native
+  
   var arrayRemoveAll: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+  
   var arrayShift: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+  
   var arraySplice: js.Function5[
     /* form */ String, 
     /* field */ String, 
@@ -33,6 +41,7 @@ object default extends js.Object {
     /* value */ js.Any, 
     FormAction
   ] = js.native
+  
   var arraySwap: js.Function4[
     /* form */ String, 
     /* field */ String, 
@@ -40,8 +49,11 @@ object default extends js.Object {
     /* indexB */ Double, 
     FormAction
   ] = js.native
+  
   var arrayUnshift: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction] = js.native
+  
   var autofill: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction] = js.native
+  
   var blur: js.Function4[
     /* form */ String, 
     /* field */ String, 
@@ -49,6 +61,7 @@ object default extends js.Object {
     /* touch */ js.UndefOr[Boolean], 
     FormAction
   ] = js.native
+  
   var change: js.Function5[
     /* form */ String, 
     /* field */ String, 
@@ -57,7 +70,9 @@ object default extends js.Object {
     /* persistentSubmitErrors */ js.UndefOr[Boolean], 
     FormAction
   ] = js.native
+  
   var clearAsyncError: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+  
   var clearFields: js.Function4[
     /* form */ String, 
     /* keepTouched */ Boolean, 
@@ -65,25 +80,44 @@ object default extends js.Object {
     /* repeated */ String, 
     FormAction
   ] = js.native
+  
   var clearSubmit: js.Function1[/* form */ String, FormAction] = js.native
+  
   var clearSubmitErrors: js.Function1[/* form */ String, FormAction] = js.native
+  
   var destroy: js.Function1[/* repeated */ String, FormAction] = js.native
+  
   var focus: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+  
   var initialize: FnCall = js.native
+  
   var registerField: js.Function3[/* form */ String, /* name */ String, /* type */ FieldType, FormAction] = js.native
+  
   var reset: js.Function1[/* form */ String, FormAction] = js.native
+  
   var resetSection: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+  
   var setSubmitFailed: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+  
   var setSubmitSucceeded: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+  
   var startAsyncValidation: js.Function1[/* form */ String, FormAction] = js.native
+  
   var startSubmit: js.Function1[/* form */ String, FormAction] = js.native
+  
   var stopAsyncValidation: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[_, _]], FormAction] = js.native
+  
   var stopSubmit: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[_, _]], FormAction] = js.native
+  
   var submit: js.Function1[/* form */ String, FormAction] = js.native
+  
   var touch: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+  
   var unregisterField: js.Function2[/* form */ String, /* name */ String, FormAction] = js.native
+  
   var untouch: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+  
   var updateSyncErrors: FnCallFromSyncErrorsError = js.native
+  
   var updateSyncWarnings: FnCallFormSyncWarningsWarning = js.native
 }
-

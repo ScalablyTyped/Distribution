@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "normalizr" : "3.6.0"
+      "normalizr" : "3.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "normalizr" : "3.6.0"
+      "normalizr" : "3.6.1"
     }
   ],
   "compile-devDependencies" : [

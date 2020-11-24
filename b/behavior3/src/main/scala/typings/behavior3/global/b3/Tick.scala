@@ -2,7 +2,7 @@ package typings.behavior3.global.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A new Tick object is instantiated every tick by BehaviorTree. It is passed
@@ -26,4 +26,3 @@ import scala.scalajs.js.annotation._
   */
 class Tick ()
   extends typings.behavior3.b3.Tick
-

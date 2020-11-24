@@ -7,7 +7,7 @@ import typings.mendixmodelsdk.internalMod.StructuralUnit
 import typings.mendixmodelsdk.projectsMod.StructureVersionInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.unitsMod.IStructuralUnit because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IFolderBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsFolderBase, containerAsProject, folders, documents */ @JSImport("mendixmodelsdk/dist/gen/projects", "projects.FolderBase")
 @js.native
-abstract class FolderBase protected () extends StructuralUnit {
+abstract class FolderBase protected () extends StructuralUnit[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,27 +31,29 @@ abstract class FolderBase protected () extends StructuralUnit {
     isPartial: Boolean,
     container: IProject
   ) = this()
+  
+  def containerAsFolderBase: FolderBase = js.native
   @JSName("containerAsFolderBase")
   val containerAsFolderBase_FFolderBase: IFolderBase = js.native
+  
+  def containerAsProject: Project = js.native
   @JSName("containerAsProject")
   val containerAsProject_FFolderBase: IProject = js.native
+  
+  def documents: IList[IDocument] = js.native
   @JSName("documents")
   var documents_FFolderBase: IList[IDocument] = js.native
+  
+  def folders: IList[IFolder] = js.native
   @JSName("folders")
   var folders_FFolderBase: IList[IFolder] = js.native
-  @JSName("model")
-  var model_FFolderBase: IModel = js.native
-  def containerAsFolderBase: FolderBase = js.native
-  def containerAsProject: Project = js.native
-  def documents: IList[IDocument] = js.native
-  def folders: IList[IFolder] = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/projects", "projects.FolderBase")
 @js.native
 object FolderBase extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.stropheJs.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants: XMPP Namespace Constants
   *  Common namespace constants from the XMPP RFCs and XEPs.
@@ -26,23 +26,40 @@ import scala.scalajs.js.annotation._
 @JSImport("strophe.js", "Strophe.NS")
 @js.native
 object NS extends js.Object {
+  
   var AUTH: String = js.native
+  
   var BIND: String = js.native
+  
   var BOSH: String = js.native
+  
   var CLIENT: String = js.native
+  
   var DISCO_INFO: String = js.native
+  
   var DISCO_ITEMS: String = js.native
+  
   var FRAMING: String = js.native
+  
   var HTTPBIND: String = js.native
+  
   var MUC: String = js.native
+  
   var PROFILE: String = js.native
+  
   var ROSTER: String = js.native
+  
   var SASL: String = js.native
+  
   var SESSION: String = js.native
+  
   var STANZAS: String = js.native
+  
   var STREAM: String = js.native
+  
   var VERSION: String = js.native
+  
   var XHTML: String = js.native
+  
   var XHTML_IM: String = js.native
 }
-

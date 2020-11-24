@@ -5,9 +5,8 @@ import typings.react.mod.StatelessComponent
 import typings.reactShare.anon.CommonShareButtonPropstitAdditionalProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-share", "PocketShareButton")
 @js.native
 object PocketShareButton extends TopLevel[StatelessComponent[CommonShareButtonPropstitAdditionalProps]]
-

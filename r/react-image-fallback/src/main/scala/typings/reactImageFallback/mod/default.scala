@@ -6,7 +6,7 @@ import typings.react.mod.ImgHTMLAttributes
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-image-fallback", JSImport.Default)
 @js.native
@@ -16,4 +16,3 @@ class default ()
       js.Any, 
       js.Any
     ]
-

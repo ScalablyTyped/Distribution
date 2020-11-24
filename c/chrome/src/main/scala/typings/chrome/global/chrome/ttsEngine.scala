@@ -4,7 +4,7 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.ttsEngine.TtsEngineSpeakEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Text to Speech Engine
@@ -17,9 +17,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.ttsEngine")
 @js.native
 object ttsEngine extends js.Object {
+  
   var onPause: Event[js.Function0[Unit]] = js.native
+  
   var onResume: Event[js.Function0[Unit]] = js.native
+  
   var onSpeak: TtsEngineSpeakEvent = js.native
+  
   var onStop: Event[js.Function0[Unit]] = js.native
 }
-

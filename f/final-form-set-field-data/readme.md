@@ -12,7 +12,7 @@ Mutator for setting arbitrary metadata on fields in 🏁 Final Form
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 688746 |
+| # downloads        | 948214 |
 | # stars            | 0 |
 
 ## Links

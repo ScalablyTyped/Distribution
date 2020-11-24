@@ -5,7 +5,7 @@ import typings.reduxOrm.modelMod.AnyModel
 import typings.reduxOrm.modelMod.ModelClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm", "QuerySet")
 @js.native
@@ -22,10 +22,10 @@ class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected 
   def this(modelClass: ModelClass[M], clauses: js.Array[QueryClause[js.Object]]) = this()
   def this(modelClass: ModelClass[M], clauses: js.Array[QueryClause[js.Object]], opts: js.Object) = this()
 }
-
 @JSImport("redux-orm", "QuerySet")
 @js.native
 object QuerySet extends js.Object {
+  
   /**
     * Register custom method on a `QuerySet` class specification.
     * QuerySet class may be attached to a {@link Model} class via {@link Model#querySetClass}
@@ -52,4 +52,3 @@ object QuerySet extends js.Object {
     */
   def addSharedMethod(methodName: String): Unit = js.native
 }
-

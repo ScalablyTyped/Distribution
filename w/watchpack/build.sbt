@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "watchpack"
-version := "1.1-dt-20200515Z-b0d39c"
+version := "1.1-dt-20200515Z-fbf3a3"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20200515Z-f63509",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20201021Z-43971b",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

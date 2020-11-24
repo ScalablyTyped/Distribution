@@ -11,8 +11,8 @@ Generate a URL for opening a new GitHub release with prefilled tag, body, and ot
 | Full name          | new-github-release-url |
 | Keywords           | github, release, releases, new, generate, url, gh, query, search, parameters, params |
 | # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 16495 |
+| # dependents       | 11 |
+| # downloads        | 342426 |
 | # stars            | 0 |
 
 ## Links

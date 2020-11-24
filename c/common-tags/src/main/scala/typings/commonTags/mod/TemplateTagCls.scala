@@ -2,7 +2,7 @@ package typings.commonTags.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("common-tags", "TemplateTag")
 @js.native
@@ -14,4 +14,3 @@ class TemplateTagCls () extends TemplateTag {
   def this(transformers: (PluginFunction | TemplateTransformer[_])*) = this()
   def this(transformers: js.Array[TemplateTransformer[_]]) = this()
 }
-

@@ -10,9 +10,9 @@ Lightweight, vanilla javascript parallax library
 | ------------------ | :-------------: |
 | Full name          | rellax |
 | Keywords           | parallax |
-| # releases         | 14 |
-| # dependents       | 11 |
-| # downloads        | 255590 |
+| # releases         | 11 |
+| # dependents       | 15 |
+| # downloads        | 452622 |
 | # stars            | 7 |
 
 ## Links

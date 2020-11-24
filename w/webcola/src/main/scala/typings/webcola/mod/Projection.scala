@@ -4,7 +4,7 @@ import typings.webcola.rectangleMod.GraphNode
 import typings.webcola.rectangleMod.ProjectionGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Projection")
 @js.native
@@ -53,4 +53,3 @@ class Projection protected ()
     avoidOverlaps: Boolean
   ) = this()
 }
-

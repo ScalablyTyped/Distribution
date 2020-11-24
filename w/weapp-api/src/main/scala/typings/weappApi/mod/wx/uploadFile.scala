@@ -2,11 +2,12 @@ package typings.weappApi.mod.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "wx.uploadFile")
 @js.native
 object uploadFile extends js.Object {
+  
   /**
     * 将本地资源上传到开发者服务器。
     * 如页面通过 wx.chooseImage 等接口获取到一个本地资源的临时文件路径后，
@@ -16,4 +17,3 @@ object uploadFile extends js.Object {
     */
   def apply(options: UploadFileOptions): UploadTask = js.native
 }
-

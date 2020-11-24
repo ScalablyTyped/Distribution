@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Blackboard is the memory structure required by `BehaviorTree` and its
@@ -42,6 +42,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Blackboard extends js.Object {
+  
   /**
     * Internal method to retrieve the context memory. If treeScope and
     * nodeScope are provided, this method returns the per node per tree
@@ -52,18 +53,21 @@ trait Blackboard extends js.Object {
     *
     */
   def _getMemory(treeScope: String, nodeScope: String): js.Any = js.native
+  
   /**
     * Internal method to retrieve the node context memory, given the tree
     * memory. If the memory does not exist, this method creates is.
     *
     */
   def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any = js.native
+  
   /**
     * Internal method to retrieve the tree context memory. If the memory does
     * not exist, this method creates it.
     *
     */
   def _getTreeMemory(treeScope: String): js.Any = js.native
+  
   /**
     * Retrieves a value in the blackboard. If treeScope and nodeScope are
     * provided, this method will retrieve the value from the per node per tree
@@ -75,6 +79,7 @@ trait Blackboard extends js.Object {
     *
     */
   def get(key: String, treeScope: String, nodeScope: String): js.Any = js.native
+  
   /**
     * Stores a value in the blackboard. If treeScope and nodeScope are
     * provided, this method will save the value into the per node per tree
@@ -87,8 +92,8 @@ trait Blackboard extends js.Object {
     */
   def set(key: String, value: String, treeScope: String, nodeScope: String): Unit = js.native
 }
-
 object Blackboard {
+  
   @scala.inline
   def apply(
     _getMemory: (String, String) => js.Any,
@@ -100,28 +105,35 @@ object Blackboard {
     val __obj = js.Dynamic.literal(_getMemory = js.Any.fromFunction2(_getMemory), _getNodeMemory = js.Any.fromFunction2(_getNodeMemory), _getTreeMemory = js.Any.fromFunction1(_getTreeMemory), get = js.Any.fromFunction3(get), set = js.Any.fromFunction4(set))
     __obj.asInstanceOf[Blackboard]
   }
+  
   @scala.inline
   implicit class BlackboardOps[Self <: Blackboard] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set_getMemory(value: (String, String) => js.Any): Self = this.set("_getMemory", js.Any.fromFunction2(value))
+    
     @scala.inline
     def set_getNodeMemory(value: (String, String) => js.Any): Self = this.set("_getNodeMemory", js.Any.fromFunction2(value))
+    
     @scala.inline
     def set_getTreeMemory(value: String => js.Any): Self = this.set("_getTreeMemory", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGet(value: (String, String, String) => js.Any): Self = this.set("get", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setSet(value: (String, String, String, String) => Unit): Self = this.set("set", js.Any.fromFunction4(value))
   }
-  
 }
-

@@ -12,7 +12,7 @@ The lodash method `_.attempt` exported as a module.
 | Keywords           | lodash-modularized, attempt |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 45013 |
+| # downloads        | 61988 |
 | # stars            | 0 |
 
 ## Links

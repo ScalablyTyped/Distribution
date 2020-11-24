@@ -3,7 +3,7 @@ package typings.poly2tri.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("poly2tri", "PointError")
 @js.native
@@ -14,9 +14,9 @@ class PointError protected () extends Error {
     * @param points - invalid points
     */
   def this(message: String, points: js.Array[XY]) = this()
+  
   /**
     * Invalid points
     */
   val points: js.Array[XY] = js.native
 }
-

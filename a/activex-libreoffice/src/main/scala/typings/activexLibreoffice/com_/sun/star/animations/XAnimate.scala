@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for generic animation.
@@ -14,22 +14,26 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XAnimate extends XAnimationNode {
+  
   /**
     * Controls whether or not the animation is cumulative.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-accumulate
     */
   var Accumulate: Boolean = js.native
+  
   /**
     * Controls whether or not the animation is additive.
     * @see AnimationAdditiveMode
     * @see http://www.w3.org/TR/smil20/animation.html#adef-additive
     */
   var Additive: Double = js.native
+  
   /**
     * Specifies the target attribute.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-attributeName
     */
   var AttributeName: String = js.native
+  
   /**
     * Specifies a relative offset value for the animation. ;  Must be a legal value of a domain for which addition to the attributeType domain is defined
     * and which yields a value in the attributeType domain. Ignored if the values attribute is specified. Ignored if the {@link Values} attribute is
@@ -37,49 +41,59 @@ trait XAnimate extends XAnimationNode {
     * @see http://www.w3.org/TR/smil20/animation.html#adef-by
     */
   var By: js.Any = js.native
+  
   /**
     * Specifies the interpolation mode for the animation. ;  If the target attribute does not support linear interpolation (e.g. for strings), or if the
     * values attribute has only one value, the CalcMode attribute is ignored and discrete interpolation is used.
     * @see AnimationCalcMode;
     */
   var CalcMode: Double = js.native
+  
   /**
     * if this string is set, its contents will be parsed as a formula. All values are used as a parameter for this formula and the computed result will be
     * used.
     */
   var Formula: String = js.native
+  
   /**
     * Specifies the starting value of the animation. ;  Must be a legal value for the specified attribute. Ignored if the {@link Values} attribute is
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-from
     */
   var From: js.Any = js.native
+  
   var KeyTimes: SafeArray[Double] = js.native
+  
   /**
     * This attribute specifies an optional subitem from the target element that should be animated. ;  A value of zero should always be the default and
     * animate the complete target. ;  See documentation of used animation engine for supported subitems.
     */
   var SubItem: Double = js.native
+  
   /** This attribute specifies the target element to be animated. ;  See documentation of used animation engine for supported targets. */
   var Target: js.Any = js.native
+  
   /** todo: timeFilter="0,0; 0.14,0.36; 0.43,0.73; 0.71,0.91; 1.0,1.0" ? */
   var TimeFilter: SafeArray[TimeFilterPair] = js.native
+  
   /**
     * Specifies the ending value of the animation. ;  Must be a legal value for the specified attribute. Ignored if the {@link Values} attribute is
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-to
     */
   var To: js.Any = js.native
+  
   /** @see AnimationValueType */
   var ValueType: Double = js.native
+  
   /**
     * A sequence of one or more values, each of which must be a legal value for the specified attribute.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-values
     */
   var Values: SafeArray[_] = js.native
 }
-
 object XAnimate {
+  
   @scala.inline
   def apply(
     Acceleration: Double,
@@ -121,46 +135,62 @@ object XAnimate {
     val __obj = js.Dynamic.literal(Acceleration = Acceleration.asInstanceOf[js.Any], Accumulate = Accumulate.asInstanceOf[js.Any], Additive = Additive.asInstanceOf[js.Any], AttributeName = AttributeName.asInstanceOf[js.Any], AutoReverse = AutoReverse.asInstanceOf[js.Any], Begin = Begin.asInstanceOf[js.Any], By = By.asInstanceOf[js.Any], CalcMode = CalcMode.asInstanceOf[js.Any], Decelerate = Decelerate.asInstanceOf[js.Any], Duration = Duration.asInstanceOf[js.Any], End = End.asInstanceOf[js.Any], EndSync = EndSync.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], FillDefault = FillDefault.asInstanceOf[js.Any], Formula = Formula.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], KeyTimes = KeyTimes.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RepeatCount = RepeatCount.asInstanceOf[js.Any], RepeatDuration = RepeatDuration.asInstanceOf[js.Any], Restart = Restart.asInstanceOf[js.Any], RestartDefault = RestartDefault.asInstanceOf[js.Any], SubItem = SubItem.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], TimeFilter = TimeFilter.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UserData = UserData.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getParent = js.Any.fromFunction0(getParent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setParent = js.Any.fromFunction1(setParent))
     __obj.asInstanceOf[XAnimate]
   }
+  
   @scala.inline
   implicit class XAnimateOps[Self <: XAnimate] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAccumulate(value: Boolean): Self = this.set("Accumulate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAdditive(value: Double): Self = this.set("Additive", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAttributeName(value: String): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBy(value: js.Any): Self = this.set("By", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCalcMode(value: Double): Self = this.set("CalcMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFrom(value: js.Any): Self = this.set("From", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKeyTimes(value: SafeArray[Double]): Self = this.set("KeyTimes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSubItem(value: Double): Self = this.set("SubItem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTarget(value: js.Any): Self = this.set("Target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTimeFilter(value: SafeArray[TimeFilterPair]): Self = this.set("TimeFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTo(value: js.Any): Self = this.set("To", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValueType(value: Double): Self = this.set("ValueType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValues(value: SafeArray[_]): Self = this.set("Values", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Version_headers")
 @js.native
 class ResourceAccountsContainersVersionHeaders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.version_headers.latest
     * @desc Gets the latest container version header
@@ -44,6 +46,7 @@ class ResourceAccountsContainersVersionHeaders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainerVersionHeader]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.version_headers.list
     * @desc Lists all Container Versions of a GTM Container.
@@ -78,4 +81,3 @@ class ResourceAccountsContainersVersionHeaders protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListContainerVersionsResponse]
   ): Unit = js.native
 }
-

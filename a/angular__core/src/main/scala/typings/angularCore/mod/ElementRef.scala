@@ -2,12 +2,13 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ElementRef")
 @js.native
 class ElementRef[T] protected () extends js.Object {
   def this(nativeElement: T) = this()
+  
   /**
     * The underlying native element or `null` if direct access to native elements is not supported
     * (e.g. when the application runs in a web worker).
@@ -31,4 +32,3 @@ class ElementRef[T] protected () extends js.Object {
     */
   var nativeElement: T = js.native
 }
-

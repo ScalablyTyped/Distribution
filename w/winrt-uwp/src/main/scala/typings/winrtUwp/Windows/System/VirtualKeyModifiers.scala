@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VirtualKeyModifiers extends js.Object
-
 /** Specifies the virtual key used to modify another keypress. For example, the Ctrl key when pressed in conjunction with another key, as in Ctrl+C. */
 @JSGlobal("Windows.System.VirtualKeyModifiers")
 @js.native
 object VirtualKeyModifiers extends js.Object {
+  
   /** The Ctrl (control) virtual key. */
   @js.native
   sealed trait control extends VirtualKeyModifiers
@@ -30,6 +30,4 @@ object VirtualKeyModifiers extends js.Object {
   /** The Windows virtual key. */
   @js.native
   sealed trait windows extends VirtualKeyModifiers
-  
 }
-

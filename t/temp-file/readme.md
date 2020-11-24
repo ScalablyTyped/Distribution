@@ -10,9 +10,9 @@ Typings are for version 3.3.7
 | ------------------ | :-------------: |
 | Full name          | temp-file |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 15 |
-| # downloads        | 3807837 |
+| # releases         | 10 |
+| # dependents       | 21 |
+| # downloads        | 5546746 |
 | # stars            | 0 |
 
 ## Links

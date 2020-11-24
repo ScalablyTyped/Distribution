@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Globaladdresses")
 @js.native
 class ResourceGlobaladdresses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.globalAddresses.delete
     * @desc Deletes the specified address resource.
@@ -43,6 +45,7 @@ class ResourceGlobaladdresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalAddresses.get
     * @desc Returns the specified address resource. Gets a list of available
@@ -73,6 +76,7 @@ class ResourceGlobaladdresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddress]
   ): Unit = js.native
+  
   /**
     * compute.globalAddresses.insert
     * @desc Creates an address resource in the specified project using the data
@@ -104,6 +108,7 @@ class ResourceGlobaladdresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalAddresses.list
     * @desc Retrieves a list of global addresses.
@@ -136,6 +141,7 @@ class ResourceGlobaladdresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddressList]
   ): Unit = js.native
+  
   /**
     * compute.globalAddresses.setLabels
     * @desc Sets the labels on a GlobalAddress. To learn more about labels,
@@ -167,6 +173,7 @@ class ResourceGlobaladdresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalAddresses.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -201,4 +208,3 @@ class ResourceGlobaladdresses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

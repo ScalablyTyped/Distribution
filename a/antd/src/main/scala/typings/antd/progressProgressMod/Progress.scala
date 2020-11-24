@@ -9,13 +9,16 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Progress
   extends Component[ProgressProps, js.Object, js.Any] {
+  
   def getPercentNumber(): Double = js.native
+  
   def getProgressStatus(): success | normal | active | exception = js.native
+  
   @JSName("renderProcessInfo")
   def renderProcessInfo_active(prefixCls: String, progressStatus: active): Element | Null = js.native
   @JSName("renderProcessInfo")
@@ -24,6 +27,6 @@ trait Progress
   def renderProcessInfo_normal(prefixCls: String, progressStatus: normal): Element | Null = js.native
   @JSName("renderProcessInfo")
   def renderProcessInfo_success(prefixCls: String, progressStatus: success): Element | Null = js.native
+  
   def renderProgress(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
 }
-

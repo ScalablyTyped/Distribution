@@ -12,7 +12,7 @@ This package is no longer supported and has been deprecated. To avoid malicious 
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 969 |
+| # downloads        | 818 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.parsimmon.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parsimmon", "createLanguage")
 @js.native
 object createLanguage extends js.Object {
+  
   /**
     * Starting point for building a language parser in Parsimmon.
     *
@@ -54,4 +55,3 @@ object createLanguage extends js.Object {
   def apply(rules: Rule): Language = js.native
   def apply[TLanguageSpec](rules: TypedRule[TLanguageSpec]): TypedLanguage[TLanguageSpec] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Priority ticks its children sequentially until one of them returns
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Priority extends BaseNode
-
 object Priority {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -32,4 +32,3 @@ object Priority {
     __obj.asInstanceOf[Priority]
   }
 }
-

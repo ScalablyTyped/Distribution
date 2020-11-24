@@ -2,11 +2,12 @@ package typings.vsoNodeApi.serializationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vso-node-api/Serialization", "ContractSerializer")
 @js.native
 object ContractSerializer extends js.Object {
+  
   /**
     * Process a pure JSON object (e.g. that came from a REST call) and transform it into a JS object
     * where date strings are converted to Date objects and enum values are converted from strings into
@@ -23,6 +24,7 @@ object ContractSerializer extends js.Object {
     preserveOriginal: Boolean,
     unwrapWrappedCollections: Boolean
   ): js.Any = js.native
+  
   /**
     * Process a contract in its raw form (e.g. date fields are Dates, and Enums are numbers) and
     * return a pure JSON object that can be posted to REST endpoint.
@@ -33,4 +35,3 @@ object ContractSerializer extends js.Object {
     */
   def serialize(data: js.Any, contractMetadata: ContractMetadata, preserveOriginal: Boolean): js.Any = js.native
 }
-

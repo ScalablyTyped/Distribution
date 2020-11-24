@@ -10,15 +10,12 @@ RSS/Atom/JSON feed parser
 | ------------------ | :-------------: |
 | Full name          | feedme |
 | Keywords           | feed, rss, atom, json, parser |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 166815 |
+| # downloads        | 158275 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/fent/feedme.js#readme)
-- [Bugs](https://github.com/fent/feedme.js/issues)
-- [Repository](https://github.com/fent/feedme.js)
 - [Npm](https://www.npmjs.com/package/feedme)
     
 

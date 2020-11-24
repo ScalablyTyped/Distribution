@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactRelationship extends js.Object
-
 /** Defines a value that indicates the nature of a contact relationship, such as spouse, partner, sibling, parent and so on. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactRelationship")
 @js.native
 object ContactRelationship extends js.Object {
+  
   /** Child */
   @js.native
   sealed trait child extends ContactRelationship
@@ -34,6 +34,4 @@ object ContactRelationship extends js.Object {
   /** Spouse */
   @js.native
   sealed trait spouse extends ContactRelationship
-  
 }
-

@@ -2,9 +2,10 @@ package typings.pMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
   	Function which is called for every item in `input`. Expected to return a `Promise` or value.
   	@param element - Iterated element.

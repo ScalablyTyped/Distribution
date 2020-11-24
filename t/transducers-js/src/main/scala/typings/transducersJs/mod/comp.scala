@@ -2,11 +2,12 @@ package typings.transducersJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("transducers-js", "comp")
 @js.native
 object comp extends js.Object {
+  
   def apply(args: (js.Function1[/* x */ js.Any, _])*): js.Function1[/* x */ js.Any, _] = js.native
   def apply[A, B, C](a: Transducer[A, B], b: Transducer[B, C]): Transducer[A, C] = js.native
   def apply[A, B, C](b: js.Function1[/* b */ B, C], a: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, C] = js.native
@@ -20,4 +21,3 @@ object comp extends js.Object {
     a: js.Function1[/* a */ A, B]
   ): js.Function1[/* a */ A, E] = js.native
 }
-

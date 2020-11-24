@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TopicConstructor
@@ -17,4 +17,3 @@ trait TopicConstructor
   */
 Instantiable1[/* name */ String, Topic[js.Object]]
      with Instantiable2[/* name */ String, /* opts */ ResourceOptions, Topic[js.Object]]
-

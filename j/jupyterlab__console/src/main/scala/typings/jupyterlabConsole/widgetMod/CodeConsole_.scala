@@ -16,7 +16,7 @@ import typings.std.Date
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/console/lib/widget", "CodeConsole")
 @js.native
@@ -25,92 +25,105 @@ class CodeConsole_ protected () extends Widget {
     * Construct a console widget.
     */
   def this(options: IOptions) = this()
+  
   var _banner: js.Any = js.native
+  
   var _cells: js.Any = js.native
+  
   var _content: js.Any = js.native
+  
   /**
     * Create the options used to initialize a code cell widget.
     */
   var _createCodeCellOptions: js.Any = js.native
+  
   var _drag: js.Any = js.native
+  
   var _dragData: js.Any = js.native
+  
   /**
     * Handle the `'keydown'` event for the widget.
     */
   var _evtKeyDown: js.Any = js.native
+  
   /**
     * Handle `mousedown` events for the widget.
     */
   var _evtMouseDown: js.Any = js.native
+  
   /**
     * Handle `mousemove` event of widget
     */
   var _evtMouseMove: js.Any = js.native
+  
   /**
     * Handle the `'mouseup'` event for the widget.
     */
   var _evtMouseUp: js.Any = js.native
+  
   /**
     * Execute the code in the current prompt cell.
     */
   var _execute: js.Any = js.native
+  
   var _executed: js.Any = js.native
+  
   var _focusedCell: js.Any = js.native
+  
   /**
     * Update the console based on the kernel info.
     */
   var _handleInfo: js.Any = js.native
+  
   var _history: js.Any = js.native
+  
   var _input: js.Any = js.native
+  
   var _mimeTypeService: js.Any = js.native
+  
   var _mimetype: js.Any = js.native
+  
   var _msgIdCells: js.Any = js.native
+  
   var _msgIds: js.Any = js.native
+  
   /**
     * Handle cell disposed signals.
     */
   var _onCellDisposed: js.Any = js.native
+  
   /**
     * Handle a keydown event on an editor.
     */
   var _onEditorKeydown: js.Any = js.native
+  
   /**
     * Handle a change to the kernel.
     */
   var _onKernelChanged: js.Any = js.native
+  
   /**
     * Handle a change to the kernel status.
     */
   var _onKernelStatusChanged: js.Any = js.native
+  
   var _promptCellCreated: js.Any = js.native
+  
   /**
     * Test whether we should execute the prompt cell.
     */
   var _shouldExecute: js.Any = js.native
+  
   /**
     * Start a drag event
     */
   var _startDrag: js.Any = js.native
-  /**
-    * The content factory used by the console.
-    */
-  val contentFactory: IContentFactory = js.native
-  /**
-    * The model factory for the console widget.
-    */
-  val modelFactory: IModelFactory = js.native
-  /**
-    * The rendermime instance used by the console.
-    */
-  val rendermime: IRenderMimeRegistry = js.native
-  /**
-    * The client session used by the console.
-    */
-  val sessionContext: ISessionContext = js.native
+  
   /**
     * Add a banner cell.
     */
   def addBanner(): Unit = js.native
+  
   /**
     * Add a new cell to the content panel.
     *
@@ -126,6 +139,7 @@ class CodeConsole_ protected () extends Widget {
     */
   def addCell(cell: CodeCell): Unit = js.native
   def addCell(cell: CodeCell, msgId: String): Unit = js.native
+  
   /**
     * The list of content cells in the console.
     *
@@ -134,14 +148,22 @@ class CodeConsole_ protected () extends Widget {
     * It may include previous banners as raw cells.
     */
   def cells: IObservableList[Cell] = js.native
+  
   /**
     * Clear the code cells.
     */
   def clear(): Unit = js.native
+  
+  /**
+    * The content factory used by the console.
+    */
+  val contentFactory: IContentFactory = js.native
+  
   /**
     * Create a new cell with the built-in factory.
     */
   def createCodeCell(): CodeCell = js.native
+  
   /**
     * Execute the current prompt.
     *
@@ -153,18 +175,22 @@ class CodeConsole_ protected () extends Widget {
     * incomplete before attempting submission anyway. The default value is `250`.
     */
   def execute(): js.Promise[Unit] = js.native
+  def execute(force: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[Unit] = js.native
   def execute(force: Boolean): js.Promise[Unit] = js.native
   def execute(force: Boolean, timeout: Double): js.Promise[Unit] = js.native
+  
   /**
     * A signal emitted when the console finished executing its prompt cell.
     */
   def executed: ISignal[this.type, Date] = js.native
+  
   /**
     * Get a cell given a message id.
     *
     * @param msgId - The message id.
     */
   def getCell(msgId: String): js.UndefOr[CodeCell] = js.native
+  
   /**
     * Handle the DOM events for the widget.
     *
@@ -176,6 +202,7 @@ class CodeConsole_ protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * Inject arbitrary code for the console to execute immediately.
     *
@@ -185,25 +212,41 @@ class CodeConsole_ protected () extends Widget {
     */
   def inject(code: String): js.Promise[Unit] = js.native
   def inject(code: String, metadata: JSONObject): js.Promise[Unit] = js.native
+  
   /**
     * Insert a line break in the prompt cell.
     */
   def insertLinebreak(): Unit = js.native
+  
+  /**
+    * The model factory for the console widget.
+    */
+  val modelFactory: IModelFactory = js.native
+  
   /**
     * Make a new prompt cell.
     */
   /* protected */ def newPromptCell(): Unit = js.native
+  
   def promptCell: CodeCell | Null = js.native
+  
   /**
     * A signal emitted when a new prompt cell is created.
     */
   def promptCellCreated: ISignal[this.type, CodeCell] = js.native
+  
+  /**
+    * The rendermime instance used by the console.
+    */
+  val rendermime: IRenderMimeRegistry = js.native
+  
   /**
     * Replaces the selected text in the prompt cell.
     *
     * @param text - The text to replace the selection.
     */
   def replaceSelection(text: String): Unit = js.native
+  
   /**
     * Serialize the output.
     *
@@ -212,5 +255,9 @@ class CodeConsole_ protected () extends Widget {
     * skips any old banner cells.
     */
   def serialize(): js.Array[ICodeCell] = js.native
+  
+  /**
+    * The client session used by the console.
+    */
+  val sessionContext: ISessionContext = js.native
 }
-

@@ -6,11 +6,12 @@ import typings.rxjs.asyncActionMod.AsyncAction
 import typings.rxjs.schedulerMod.Scheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/scheduler/AsyncScheduler", JSImport.Namespace)
 @js.native
 object asyncSchedulerMod extends js.Object {
+  
   @js.native
   class AsyncScheduler protected () extends Scheduler {
     def this(SchedulerAction: Instantiable2[
@@ -34,7 +35,9 @@ object asyncSchedulerMod extends js.Object {
           ],
       now: js.Function0[Double]
     ) = this()
+    
     var actions: js.Array[AsyncAction[_]] = js.native
+    
     /**
       * A flag to indicate whether the Scheduler is currently executing a batch of
       * queued actions.
@@ -42,6 +45,9 @@ object asyncSchedulerMod extends js.Object {
       * @deprecated internal use only
       */
     var active: Boolean = js.native
+    
+    def flush(action: AsyncAction[_]): Unit = js.native
+    
     /**
       * An internal ID used to track the latest asynchronous task such as those
       * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
@@ -50,14 +56,11 @@ object asyncSchedulerMod extends js.Object {
       * @deprecated internal use only
       */
     var scheduled: js.Any = js.native
-    def flush(action: AsyncAction[_]): Unit = js.native
   }
-  
   /* static members */
   @js.native
   object AsyncScheduler extends js.Object {
+    
     var delegate: js.UndefOr[Scheduler] = js.native
   }
-  
 }
-

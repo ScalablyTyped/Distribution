@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base PhotoSwipe class. Derived from http://photoswipe.com/documentation/api.html
@@ -35,4 +35,3 @@ class ^[T /* <: Options */] protected () extends PhotoSwipe[T] {
   ) = this()
   def this(pswpElement: HTMLElement, uiConstructor: Boolean, items: js.Array[Item], options: T) = this()
 }
-

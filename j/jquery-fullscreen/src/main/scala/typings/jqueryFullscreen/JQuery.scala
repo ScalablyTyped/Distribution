@@ -2,10 +2,11 @@ package typings.jqueryFullscreen
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * The method returns the current fullscreen element (or true if browser doesn't support this) when fullscreen mode is active,
     * false if not active or null when the browser does not support fullscreen mode at all
@@ -17,9 +18,9 @@ trait JQuery extends js.Object {
     * Fullscreen mode is always exited via the document but this plugin allows it also via any HTML element. The owner document of the selected HTML element is used
     */
   def fullScreen(fullScreen: Boolean): JQuery | Boolean = js.native
+  
   /**
     * The plugin provides another method for simple fullscreen mode toggling
     */
   def toggleFullScreen(): JQuery | Boolean = js.native
 }
-

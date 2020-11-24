@@ -3,7 +3,7 @@ package typings.arcgisJsApi.connectionMod
 import typings.arcgisJsApi.esri.Connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/core/workers/Connection", JSImport.Namespace)
 @js.native
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html)
   */
 class Class () extends Connection
-

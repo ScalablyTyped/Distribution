@@ -2,7 +2,7 @@ package typings.raphael.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.raphael.raphaelStrings.bevel
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.raphael.raphaelStrings.miter
 */
 trait RaphaelLineJoinType extends js.Object
-
 object RaphaelLineJoinType {
+  
   @scala.inline
   def bevel: typings.raphael.raphaelStrings.bevel = "bevel".asInstanceOf[typings.raphael.raphaelStrings.bevel]
+  
   @scala.inline
   def miter: typings.raphael.raphaelStrings.miter = "miter".asInstanceOf[typings.raphael.raphaelStrings.miter]
+  
   @scala.inline
   def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
 }
-

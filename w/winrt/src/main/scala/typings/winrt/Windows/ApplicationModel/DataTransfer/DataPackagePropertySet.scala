@@ -8,12 +8,12 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataPackagePropertySet extends IDataPackagePropertySet
-
 object DataPackagePropertySet {
+  
   @scala.inline
   def apply(
     applicationListingUri: Uri,
@@ -35,4 +35,3 @@ object DataPackagePropertySet {
     __obj.asInstanceOf[DataPackagePropertySet]
   }
 }
-

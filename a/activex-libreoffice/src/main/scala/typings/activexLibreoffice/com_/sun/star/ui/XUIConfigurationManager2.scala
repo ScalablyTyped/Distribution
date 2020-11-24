@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
@@ -21,8 +21,8 @@ trait XUIConfigurationManager2
      with XUIConfigurationManager
      with XUIConfiguration
      with XComponent
-
 object XUIConfigurationManager2 {
+  
   @scala.inline
   def apply(
     EventsManager: XInterface,
@@ -59,4 +59,3 @@ object XUIConfigurationManager2 {
     __obj.asInstanceOf[XUIConfigurationManager2]
   }
 }
-

@@ -7,11 +7,14 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/extensionmanager", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def isJupyterOrg(name: String): Boolean = js.native
+  
   @js.native
   class CollapsibleSection protected ()
     extends typings.jupyterlabExtensionmanager.widgetMod.CollapsibleSection {
@@ -28,6 +31,26 @@ object mod extends js.Object {
   class ListModel protected ()
     extends typings.jupyterlabExtensionmanager.modelMod.ListModel {
     def this(serviceManager: ServiceManager, settings: ISettings) = this()
+  }
+  @js.native
+  object ListModel extends js.Object {
+    
+    /**
+      * Utility function to check whether an entry can be updated.
+      *
+      * @param entry The entry to check.
+      */
+    def entryHasUpdate(entry: IEntry): Boolean = js.native
+    
+    def isDisclaimed(): Boolean = js.native
+    
+    def toogleDisclaimed(): Unit = js.native
+  }
+  
+  @js.native
+  object ListView extends js.Object {
+    
+    def apply(props: typings.jupyterlabExtensionmanager.widgetMod.ListView.IProperties): ReactElement = js.native
   }
   
   @js.native
@@ -53,26 +76,7 @@ object mod extends js.Object {
   class Searcher ()
     extends typings.jupyterlabExtensionmanager.npmMod.Searcher {
     def this(repoUri: String) = this()
+    def this(repoUri: js.UndefOr[scala.Nothing], cdnUri: String) = this()
     def this(repoUri: String, cdnUri: String) = this()
   }
-  
-  def isJupyterOrg(name: String): Boolean = js.native
-  @js.native
-  object ListModel extends js.Object {
-    /**
-      * Utility function to check whether an entry can be updated.
-      *
-      * @param entry The entry to check.
-      */
-    def entryHasUpdate(entry: IEntry): Boolean = js.native
-    def isDisclaimed(): Boolean = js.native
-    def toogleDisclaimed(): Unit = js.native
-  }
-  
-  @js.native
-  object ListView extends js.Object {
-    def apply(props: typings.jupyterlabExtensionmanager.widgetMod.ListView.IProperties): ReactElement = js.native
-  }
-  
 }
-

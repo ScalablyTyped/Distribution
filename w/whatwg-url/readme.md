@@ -10,9 +10,9 @@ An implementation of the WHATWG URL Standard's URL API and parsing machinery
 | ------------------ | :-------------: |
 | Full name          | whatwg-url |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 148 |
-| # downloads        | 429230600 |
+| # releases         | 9 |
+| # dependents       | 194 |
+| # downloads        | 713892183 |
 | # stars            | 8 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** used to specify if a table operation is applied to columns, rows, or both columns and rows. */
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait TableOperationMode extends js.Object
-
 object TableOperationMode {
+  
   /**
     * is applied to rows and columns. <p>In this mode, the row and the column contain values. A formula
     *
@@ -23,6 +23,7 @@ object TableOperationMode {
     */
   @scala.inline
   def BOTH: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * the field is used as a column field.
     *
@@ -32,6 +33,7 @@ object TableOperationMode {
     */
   @scala.inline
   def COLUMN: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the field is used as a row field.
     *
@@ -42,4 +44,3 @@ object TableOperationMode {
   @scala.inline
   def ROW: `1` = 1.asInstanceOf[`1`]
 }
-

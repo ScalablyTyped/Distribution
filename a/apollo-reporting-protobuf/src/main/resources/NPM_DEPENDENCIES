@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-reporting-protobuf" : "0.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-reporting-protobuf" : "0.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,13 +8,23 @@ import typings.std.SVGGElement
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-axis", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  
+  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  
+  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  
+  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  
   @js.native
   trait Axis[Domain] extends js.Object {
+    
     /**
       * Render the axis to the given context.
       *
@@ -27,6 +37,7 @@ object mod extends js.Object {
       * @param context A transition defined on SVG containers (either SVG or G elements).
       */
     def apply(context: TransitionLike[SVGGElement | SVGSVGElement, _]): Unit = js.native
+    
     /**
       * Sets the scale and returns the axis.
       *
@@ -37,6 +48,7 @@ object mod extends js.Object {
       * Gets the current scale underlying the axis.
       */
     def scale[A /* <: AxisScale[Domain] */](): A = js.native
+    
     /**
       * Get an array containing the currently set arguments to be passed into scale.ticks and scale.tickFormat, which defaults to the empty array.
       */
@@ -93,6 +105,7 @@ object mod extends js.Object {
       * The second element is a string representing the format specifier to customize how the tick values are formatted.
       */
     def tickArguments(args: js.Tuple2[AxisTimeInterval | Double, String]): this.type = js.native
+    
     /**
       * Returns the currently set tick format function, which defaults to null.
       */
@@ -114,6 +127,7 @@ object mod extends js.Object {
       * @param format null
       */
     def tickFormat(format: Null): this.type = js.native
+    
     /**
       * Get the current padding, which defaults to 3.
       */
@@ -124,6 +138,7 @@ object mod extends js.Object {
       * @param padding Padding in pixels (Default is 3).
       */
     def tickPadding(padding: Double): this.type = js.native
+    
     /**
       * Get the current inner tick size, which defaults to 6.
       */
@@ -134,6 +149,7 @@ object mod extends js.Object {
       * @param size Tick size in pixels (Default is 6).
       */
     def tickSize(size: Double): this.type = js.native
+    
     /**
       * Get the current inner tick size, which defaults to 6.
       * The inner tick size controls the length of the tick lines,
@@ -148,6 +164,7 @@ object mod extends js.Object {
       * @param size Tick size in pixels (Default is 6).
       */
     def tickSizeInner(size: Double): this.type = js.native
+    
     /**
       * Get the current outer tick size, which defaults to 6.
       * The outer tick size controls the length of the square ends of the domain path,
@@ -170,6 +187,7 @@ object mod extends js.Object {
       * @param size Tick size in pixels (Default is 6).
       */
     def tickSizeOuter(size: Double): this.type = js.native
+    
     /**
       * Returns the current tick values, which defaults to null.
       */
@@ -189,6 +207,7 @@ object mod extends js.Object {
       * @param values null
       */
     def tickValues(values: Null): this.type = js.native
+    
     /**
       * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
       *
@@ -230,24 +249,26 @@ object mod extends js.Object {
   
   @js.native
   trait AxisScale[Domain] extends js.Object {
-    var bandwidth: js.UndefOr[js.Function0[Double]] = js.native
+    
     def apply(x: Domain): js.UndefOr[Double] = js.native
+    
+    var bandwidth: js.UndefOr[js.Function0[Double]] = js.native
+    
     def copy(): this.type = js.native
+    
     def domain(): js.Array[Domain] = js.native
+    
     def range(): js.Array[Double] = js.native
   }
   
   @js.native
   trait AxisTimeInterval extends js.Object {
+    
     def range(start: Date, stop: Date): js.Array[Date] = js.native
     def range(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
   }
   
-  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
-  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
-  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
-  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
   type AxisContainerElement = SVGSVGElement | SVGGElement
+  
   type AxisDomain = Double | String | Date | ValueOf
 }
-

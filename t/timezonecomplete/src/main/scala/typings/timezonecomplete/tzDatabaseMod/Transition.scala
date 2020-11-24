@@ -3,7 +3,7 @@ package typings.timezonecomplete.tzDatabaseMod
 import typings.timezonecomplete.durationMod.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete/dist/lib/tz-database", "Transition")
 @js.native
@@ -29,17 +29,19 @@ class Transition protected () extends js.Object {
     */
   letter: String
   ) = this()
+  
   /**
     * Transition time in UTC millis
     */
   var at: Double = js.native
+  
   /**
     * New timzone abbreviation letter
     */
   var letter: String = js.native
+  
   /**
     * New offset (type of offset depends on the function)
     */
   var offset: Duration = js.native
 }
-

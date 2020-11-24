@@ -2,11 +2,12 @@ package typings.postmark.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Errors")
 @js.native
 object Errors extends js.Object {
+  
   @js.native
   class ApiInputError protected ()
     extends typings.postmark.errorsMod.ApiInputError {
@@ -51,6 +52,4 @@ object Errors extends js.Object {
     extends typings.postmark.errorsMod.UnknownError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
-  
 }
-

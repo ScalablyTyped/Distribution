@@ -10,9 +10,9 @@ Run a function exactly one time
 | ------------------ | :-------------: |
 | Full name          | once |
 | Keywords           | once, function, one, single |
-| # releases         | 1 |
-| # dependents       | 890 |
-| # downloads        | 592144589 |
+| # releases         | 0 |
+| # dependents       | 965 |
+| # downloads        | 789710947 |
 | # stars            | 41 |
 
 ## Links

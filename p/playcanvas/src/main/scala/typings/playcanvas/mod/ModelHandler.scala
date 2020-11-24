@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource handler used for loading {@link pc.Model} resources.
@@ -18,4 +18,3 @@ class ModelHandler protected ()
     defaultMaterial: typings.playcanvas.pc.StandardMaterial
   ) = this()
 }
-

@@ -10,9 +10,9 @@ Manage application events without writing spaghetti code
 | ------------------ | :-------------: |
 | Full name          | burns |
 | Keywords           | events, listeners, handlers, broadcasting, event-driven |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 920 |
+| # downloads        | 743 |
 | # stars            | 0 |
 
 ## Links

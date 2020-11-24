@@ -19,49 +19,19 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An activity indicator that lets the user know an action is taking place.
   */
 @js.native
 trait ActivityIndicator extends View {
+  
   /**
     * Color of the message text, as a color name or hex triplet.
     */
-  var color: String = js.native
-  /**
-    * Font used for the message text.
-    */
-  var font: Font = js.native
-  /**
-    * Width of the view. Only accepts value of <Titanium.UI.SIZE>, which must be explicitly set in order to
-    * display the message and to position the view correctly.
-    */
-  @JSName("height")
-  var height_ActivityIndicator: String = js.native
-  /**
-    * Color of the animated indicator.
-    */
-  var indicatorColor: String = js.native
-  /**
-    * Message text.
-    */
-  var message: String = js.native
-  /**
-    * Key identifying a string in the locale file to use for the message text.
-    */
-  var messageid: String = js.native
-  /**
-    * The style for the activity indicator.
-    */
-  var style: Double = js.native
-  /**
-    * Width of the view. Only accepts value of <Titanium.UI.SIZE>, which must be explicitly set in order to
-    * display the message and to position the view correctly.
-    */
-  @JSName("width")
-  var width_ActivityIndicator: String = js.native
+  var color: String | Color = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: ActivityIndicatorClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -94,65 +64,117 @@ trait ActivityIndicator extends View {
   def fireEvent_touchstart(name: touchstart, event: ActivityIndicatorTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: ActivityIndicatorTwofingertapEvent): Unit = js.native
+  
+  /**
+    * Font used for the message text.
+    */
+  var font: Font = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ActivityIndicator.color> property.
     * @deprecated Access <Titanium.UI.ActivityIndicator.color> instead.
     */
-  def getColor(): String = js.native
+  def getColor(): String | Color = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ActivityIndicator.font> property.
     * @deprecated Access <Titanium.UI.ActivityIndicator.font> instead.
     */
   def getFont(): Font = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ActivityIndicator.indicatorColor> property.
     * @deprecated Access <Titanium.UI.ActivityIndicator.indicatorColor> instead.
     */
-  def getIndicatorColor(): String = js.native
+  def getIndicatorColor(): String | Color = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ActivityIndicator.message> property.
     * @deprecated Access <Titanium.UI.ActivityIndicator.message> instead.
     */
   def getMessage(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ActivityIndicator.messageid> property.
     * @deprecated Access <Titanium.UI.ActivityIndicator.messageid> instead.
     */
   def getMessageid(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ActivityIndicator.style> property.
     * @deprecated Access <Titanium.UI.ActivityIndicator.style> instead.
     */
   def getStyle(): Double = js.native
+  
+  /**
+    * Width of the view. Only accepts value of <Titanium.UI.SIZE>, which must be explicitly set in order to
+    * display the message and to position the view correctly.
+    */
+  @JSName("height")
+  var height_ActivityIndicator: String = js.native
+  
+  /**
+    * Color of the animated indicator.
+    */
+  var indicatorColor: String | Color = js.native
+  
+  /**
+    * Message text.
+    */
+  var message: String = js.native
+  
+  /**
+    * Key identifying a string in the locale file to use for the message text.
+    */
+  var messageid: String = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ActivityIndicator.color> property.
     * @deprecated Set the value using <Titanium.UI.ActivityIndicator.color> instead.
     */
   def setColor(color: String): Unit = js.native
+  def setColor(color: Color): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ActivityIndicator.font> property.
     * @deprecated Set the value using <Titanium.UI.ActivityIndicator.font> instead.
     */
   def setFont(font: Font): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ActivityIndicator.indicatorColor> property.
     * @deprecated Set the value using <Titanium.UI.ActivityIndicator.indicatorColor> instead.
     */
   def setIndicatorColor(indicatorColor: String): Unit = js.native
+  def setIndicatorColor(indicatorColor: Color): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ActivityIndicator.message> property.
     * @deprecated Set the value using <Titanium.UI.ActivityIndicator.message> instead.
     */
   def setMessage(message: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ActivityIndicator.messageid> property.
     * @deprecated Set the value using <Titanium.UI.ActivityIndicator.messageid> instead.
     */
   def setMessageid(messageid: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ActivityIndicator.style> property.
     * @deprecated Set the value using <Titanium.UI.ActivityIndicator.style> instead.
     */
   def setStyle(style: Double): Unit = js.native
+  
+  /**
+    * The style for the activity indicator.
+    */
+  var style: Double = js.native
+  
+  /**
+    * Width of the view. Only accepts value of <Titanium.UI.SIZE>, which must be explicitly set in order to
+    * display the message and to position the view correctly.
+    */
+  @JSName("width")
+  var width_ActivityIndicator: String = js.native
 }
-

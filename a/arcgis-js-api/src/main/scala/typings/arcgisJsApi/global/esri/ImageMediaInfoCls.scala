@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.ImageMediaInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.ImageMediaInfo")
 @js.native
@@ -16,4 +16,3 @@ class ImageMediaInfoCls ()
   extends typings.arcgisJsApi.esri.ImageMediaInfo {
   def this(properties: ImageMediaInfoProperties) = this()
 }
-

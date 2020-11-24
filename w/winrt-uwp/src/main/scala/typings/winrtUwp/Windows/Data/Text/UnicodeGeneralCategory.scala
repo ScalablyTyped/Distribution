@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Data.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UnicodeGeneralCategory extends js.Object
-
 /** Defines the Unicode general category of a character. */
 @JSGlobal("Windows.Data.Text.UnicodeGeneralCategory")
 @js.native
 object UnicodeGeneralCategory extends js.Object {
+  
   /** Closing character of one of the paired punctuation marks, such as parentheses, square brackets, and braces. Signified by the Unicode designation "Pe" (punctuation, close). */
   @js.native
   sealed trait closePunctuation extends UnicodeGeneralCategory
@@ -130,6 +130,4 @@ object UnicodeGeneralCategory extends js.Object {
   /** Uppercase letter. Signified by the Unicode designation "Lu" (letter, uppercase). */
   @js.native
   sealed trait uppercaseLetter extends UnicodeGeneralCategory
-  
 }
-

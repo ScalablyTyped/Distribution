@@ -1,7 +1,7 @@
 
 # Scala.js typings for proxy-agent
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Maps proxy protocols to `http.Agent` implementations
@@ -10,9 +10,9 @@ Maps proxy protocols to `http.Agent` implementations
 | ------------------ | :-------------: |
 | Full name          | proxy-agent |
 | Keywords           | http, https, socks, agent, mapping, proxy, cache |
-| # releases         | 9 |
-| # dependents       | 154 |
-| # downloads        | 62654788 |
+| # releases         | 4 |
+| # dependents       | 202 |
+| # downloads        | 90924446 |
 | # stars            | 9 |
 
 ## Links

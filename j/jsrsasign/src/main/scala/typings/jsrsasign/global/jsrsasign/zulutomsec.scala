@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.zulutomsec")
 @js.native
 object zulutomsec extends js.Object {
+  
   /**
     * GeneralizedTime or UTCTime string to milliseconds from Unix origin
     * @param s GeneralizedTime or UTCTime string (ex. 20170412235959.384Z)
@@ -28,4 +29,3 @@ object zulutomsec extends js.Object {
     */
   def apply(s: String): Double = js.native
 }
-

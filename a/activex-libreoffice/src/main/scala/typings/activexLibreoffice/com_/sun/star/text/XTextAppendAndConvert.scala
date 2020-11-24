@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.sequence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** merges the functions of {@link XTextAppend} , {@link XTextContentAppend} and {@link XTextConvert} . */
 @js.native
@@ -16,8 +16,8 @@ trait XTextAppendAndConvert
      with XTextPortionAppend
      with XTextContentAppend
      with XTextConvert
-
 object XTextAppendAndConvert {
+  
   @scala.inline
   def apply(
     End: XTextRange,
@@ -50,4 +50,3 @@ object XTextAppendAndConvert {
     __obj.asInstanceOf[XTextAppendAndConvert]
   }
 }
-

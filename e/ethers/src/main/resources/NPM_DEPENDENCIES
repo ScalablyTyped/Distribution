@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ethers" : "4.0.0-beta.3"
+      "ethers" : "5.0.21"
     }
   ],
   "test-dependencies" : [
     {
-      "ethers" : "4.0.0-beta.3"
+      "ethers" : "5.0.21"
     }
   ],
   "compile-devDependencies" : [

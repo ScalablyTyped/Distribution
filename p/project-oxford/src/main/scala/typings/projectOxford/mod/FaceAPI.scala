@@ -8,17 +8,12 @@ import typings.projectOxford.mod.Options.Detect
 import typings.projectOxford.mod.Options.Identify
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "FaceAPI")
 @js.native
 class FaceAPI () extends js.Object {
-  var person: Person = js.native
-  /**
-    * @namespace
-    * @memberof face
-    */
-  var personGroup: PersonGroup = js.native
+  
   /**
     * Call the Face Detected API
     * Detects human faces in an image and returns face locations, face landmarks, and
@@ -37,6 +32,7 @@ class FaceAPI () extends js.Object {
     * @return {Promise}                                - Promise resolving with the resulting JSON
     */
   def detect(options: Detect): ^[js.Array[typings.projectOxford.mod.FaceResponses.Detect]] = js.native
+  
   /**
     * Divides candidate faces into groups based on face similarity using faceIds.
     * The output is one or more disjointed face groups and a MessyGroup.
@@ -52,6 +48,7 @@ class FaceAPI () extends js.Object {
     * @return {Promise}            - Promise resolving with the resulting JSON
     */
   def grouping(faces: js.Array[String]): ^[Grouping] = js.native
+  
   /**
     * Identifies persons from a person group by one or more input faces.
     * To recognize which person a face belongs to, Face Identification needs a person group
@@ -64,6 +61,15 @@ class FaceAPI () extends js.Object {
     * @return {Promise}            - Promise resolving with the resulting JSON
     */
   def identify(faceIDs: js.Array[String], options: Identify): ^[js.Array[typings.projectOxford.mod.FaceResponses.Identify]] = js.native
+  
+  var person: Person = js.native
+  
+  /**
+    * @namespace
+    * @memberof face
+    */
+  var personGroup: PersonGroup = js.native
+  
   /**
     * Detect similar faces using faceIds (as returned from the detect API)
     * @param  {string} sourceFace          - String of faceId for the source face
@@ -71,6 +77,7 @@ class FaceAPI () extends js.Object {
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
   def similar(sourceFaceId: String, candidateFacesIds: js.Array[String]): ^[Similar] = js.native
+  
   /**
     * Analyzes two faces and determine whether they are from the same person.
     * Verification works well for frontal and near-frontal faces.
@@ -80,4 +87,3 @@ class FaceAPI () extends js.Object {
     */
   def verify(faces: js.Array[String]): ^[Verify] = js.native
 }
-

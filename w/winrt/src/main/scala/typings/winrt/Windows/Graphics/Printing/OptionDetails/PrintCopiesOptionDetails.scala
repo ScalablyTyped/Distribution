@@ -2,12 +2,12 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrintCopiesOptionDetails extends IPrintNumberOptionDetails
-
 object PrintCopiesOptionDetails {
+  
   @scala.inline
   def apply(
     errorText: String,
@@ -23,4 +23,3 @@ object PrintCopiesOptionDetails {
     __obj.asInstanceOf[PrintCopiesOptionDetails]
   }
 }
-

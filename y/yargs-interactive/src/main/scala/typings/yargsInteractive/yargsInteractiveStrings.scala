@@ -2,9 +2,49 @@ package typings.yargsInteractive
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yargsInteractiveStrings {
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @scala.inline
+  def confirm: confirm = "confirm".asInstanceOf[confirm]
+  
+  @scala.inline
+  def editor: editor = "editor".asInstanceOf[editor]
+  
+  @scala.inline
+  def expand: expand = "expand".asInstanceOf[expand]
+  
+  @scala.inline
+  def `if-empty`: `if-empty` = "if-empty".asInstanceOf[`if-empty`]
+  
+  @scala.inline
+  def `if-no-arg`: `if-no-arg` = "if-no-arg".asInstanceOf[`if-no-arg`]
+  
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def password: password = "password".asInstanceOf[password]
+  
+  @scala.inline
+  def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
+  
   @js.native
   sealed trait always extends js.Object
   
@@ -43,32 +83,4 @@ object yargsInteractiveStrings {
   
   @js.native
   sealed trait rawlist extends js.Object
-  
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
-  @scala.inline
-  def editor: editor = "editor".asInstanceOf[editor]
-  @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
-  @scala.inline
-  def `if-empty`: `if-empty` = "if-empty".asInstanceOf[`if-empty`]
-  @scala.inline
-  def `if-no-arg`: `if-no-arg` = "if-no-arg".asInstanceOf[`if-no-arg`]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
 }
-

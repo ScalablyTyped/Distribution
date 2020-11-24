@@ -10,9 +10,9 @@ a bunyan logger middleware for express
 | ------------------ | :-------------: |
 | Full name          | express-bunyan-logger |
 | Keywords           | express, logger, bunyan |
-| # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 1081473 |
+| # releases         | 0 |
+| # dependents       | 38 |
+| # downloads        | 1145542 |
 | # stars            | 8 |
 
 ## Links

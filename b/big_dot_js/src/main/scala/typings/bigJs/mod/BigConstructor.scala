@@ -3,7 +3,7 @@ package typings.bigJs.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BigConstructor
@@ -18,33 +18,7 @@ trait BigConstructor
   * @throws `NaN` on an invalid value.
   */
 Instantiable1[/* value */ BigSource, Big] {
-  /**
-    * The maximum number of decimal places of the results of operations involving division.
-    * It is relevant only to the div and sqrt methods, and the pow method when the exponent is negative.
-    *
-    * 0 to 1e+6 inclusive
-    * Default value: 20
-    */
-  var DP: Double = js.native
-  /**
-    * The negative exponent value at and below which toString returns exponential notation.
-    *
-    * -1e+6 to 0 inclusive
-    * Default value: -7
-    */
-  var NE: Double = js.native
-  /**
-    * The positive exponent value at and above which toString returns exponential notation.
-    *
-    * 0 to 1e+6 inclusive
-    * Default value: 21
-    */
-  var PE: Double = js.native
-  /**
-    * The rounding mode used in the above operations and by round, toExponential, toFixed and toPrecision.
-    * Default value: 1
-    */
-  var RM: Double = js.native
+  
   /**
     * Create an additional Big number constructor
     *
@@ -66,5 +40,35 @@ Instantiable1[/* value */ BigSource, Big] {
     * @throws `NaN` on an invalid value.
     */
   def apply(value: BigSource): Big = js.native
+  
+  /**
+    * The maximum number of decimal places of the results of operations involving division.
+    * It is relevant only to the div and sqrt methods, and the pow method when the exponent is negative.
+    *
+    * 0 to 1e+6 inclusive
+    * Default value: 20
+    */
+  var DP: Double = js.native
+  
+  /**
+    * The negative exponent value at and below which toString returns exponential notation.
+    *
+    * -1e+6 to 0 inclusive
+    * Default value: -7
+    */
+  var NE: Double = js.native
+  
+  /**
+    * The positive exponent value at and above which toString returns exponential notation.
+    *
+    * 0 to 1e+6 inclusive
+    * Default value: 21
+    */
+  var PE: Double = js.native
+  
+  /**
+    * The rounding mode used in the above operations and by round, toExponential, toFixed and toPrecision.
+    * Default value: 1
+    */
+  var RM: Double = js.native
 }
-

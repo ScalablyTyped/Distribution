@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Bookshelves")
 @js.native
 class ResourceMylibraryBookshelves protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var volumes: ResourceMylibraryBookshelvesVolumes = js.native
+  
   /**
     * books.mylibrary.bookshelves.addVolume
     * @desc Adds a volume to a bookshelf.
@@ -45,6 +44,7 @@ class ResourceMylibraryBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.bookshelves.clearVolumes
     * @desc Clears all volumes from a bookshelf.
@@ -74,6 +74,9 @@ class ResourceMylibraryBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * books.mylibrary.bookshelves.get
     * @desc Retrieves metadata for a specific bookshelf belonging to the
@@ -104,6 +107,7 @@ class ResourceMylibraryBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBookshelf]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.bookshelves.list
     * @desc Retrieves a list of bookshelves belonging to the authenticated
@@ -133,6 +137,7 @@ class ResourceMylibraryBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBookshelves]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.bookshelves.moveVolume
     * @desc Moves a volume within a bookshelf.
@@ -164,6 +169,7 @@ class ResourceMylibraryBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.bookshelves.removeVolume
     * @desc Removes a volume from a bookshelf.
@@ -195,5 +201,6 @@ class ResourceMylibraryBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var volumes: ResourceMylibraryBookshelvesVolumes = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalog/v1beta1", "cloudprivatecatalog_v1beta1.Resource$Folders$Catalogs")
 @js.native
 class ResourceFoldersCatalogs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudprivatecatalog.folders.catalogs.search
     * @desc Search Catalog resources that consumers have access to, within the
@@ -49,4 +51,3 @@ class ResourceFoldersCatalogs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse]
   ): Unit = js.native
 }
-

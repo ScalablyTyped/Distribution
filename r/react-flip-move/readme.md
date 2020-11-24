@@ -10,9 +10,9 @@ Effortless animation between DOM changes (eg. list reordering) using the FLIP te
 | ------------------ | :-------------: |
 | Full name          | react-flip-move |
 | Keywords           | react, react-dom, animation, magic-move, component, react-component, flip, web-animations |
-| # releases         | 6 |
-| # dependents       | 48 |
-| # downloads        | 2431720 |
+| # releases         | 3 |
+| # dependents       | 59 |
+| # downloads        | 3348471 |
 | # stars            | 10 |
 
 ## Links

@@ -43,39 +43,67 @@ import typings.jwplayer.jwplayerStrings.volume
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JWPlayer extends js.Object {
+  
   def addButton(icon: String, label: String, handler: js.Function0[Unit], id: String): Unit = js.native
+  
   def getAudioTracks(): js.Array[_] = js.native
+  
   def getBuffer(): Double = js.native
+  
   def getCaptionsList(): js.Array[_] = js.native
+  
   def getContainer(): HTMLElement = js.native
+  
   def getControls(): Boolean = js.native
+  
   def getCurrentAudioTrack(): Double = js.native
+  
   def getCurrentCaptions(): Double = js.native
+  
   def getCurrentQuality(): Double = js.native
+  
   def getDuration(): Double = js.native
+  
   def getEnvironment(): Environment = js.native
+  
   def getFullscreen(): Boolean = js.native
+  
   def getHeight(): Double = js.native
+  
   def getMute(): Boolean = js.native
+  
   def getPlaybackRate(): Double = js.native
+  
   def getPlaylist(): js.Array[_] = js.native
+  
   def getPlaylistIndex(): Double = js.native
+  
   def getPlaylistItem(): js.Any = js.native
   def getPlaylistItem(index: Double): js.Any = js.native
+  
   def getPosition(): Double = js.native
+  
   def getQualityLevels(): js.Array[_] = js.native
+  
   def getRenderingMode(): String = js.native
+  
   def getSafeRegion(): Region = js.native
+  
   def getState(): String = js.native
+  
   def getVisualQuality(): js.UndefOr[QualityLevel] = js.native
+  
   def getVolume(): Double = js.native
+  
   def getWidth(): Double = js.native
+  
   def load(playlist: String): Unit = js.native
   def load(playlist: js.Array[_]): Unit = js.native
+  
   def off(
     event: adClick | adCompanions | adComplete | adSkipped | adError | adRequest | adSchedule | adStarted | adImpression | adPlay | adPause | adTime | cast | meta | audioTracks | audioTrackChanged | firstFrame | buffer | bufferChange | captionsChanged | captionsList | controls | error | fullscreen | idle | levelsChanged | mute | volume | pause | play | playlist | playlistItem | ready | resize | visualQuality | playbackRateChanged | levels | seek | setupError | time
   ): Unit = js.native
@@ -161,6 +189,7 @@ trait JWPlayer extends js.Object {
   def off_visualQuality(event: visualQuality, callback: EventCallback[VisualQualityParam]): Unit = js.native
   @JSName("off")
   def off_volume(event: volume, callback: EventCallback[VolumeParam]): Unit = js.native
+  
   def on(event: NoParamEvent, callback: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_adClick(event: adClick, callback: EventCallback[AdProgressParam]): Unit = js.native
@@ -242,6 +271,7 @@ trait JWPlayer extends js.Object {
   def on_visualQuality(event: visualQuality, callback: EventCallback[VisualQualityParam]): Unit = js.native
   @JSName("on")
   def on_volume(event: volume, callback: EventCallback[VolumeParam]): Unit = js.native
+  
   def once(event: NoParamEvent, callback: js.Function0[Unit]): Unit = js.native
   @JSName("once")
   def once_adClick(event: adClick, callback: EventCallback[AdProgressParam]): Unit = js.native
@@ -323,30 +353,51 @@ trait JWPlayer extends js.Object {
   def once_visualQuality(event: visualQuality, callback: EventCallback[VisualQualityParam]): Unit = js.native
   @JSName("once")
   def once_volume(event: volume, callback: EventCallback[VolumeParam]): Unit = js.native
+  
   def pause(): Unit = js.native
   def pause(state: Boolean): Unit = js.native
+  
   def play(): Unit = js.native
   def play(state: Boolean): Unit = js.native
+  
   def playAd(tag: String): Unit = js.native
+  
   def playlistItem(index: Double): Unit = js.native
+  
   def registerPlugin(id: String, target: String, jsPlugin: js.Function0[Unit]): Unit = js.native
   def registerPlugin(id: String, target: String, jsPlugin: js.Function0[Unit], swfURL: String): Unit = js.native
+  
   def remove(): Unit = js.native
+  
   def removeButton(id: String): Unit = js.native
+  
   def resize(width: Double, height: Double): Unit = js.native
+  
   def seek(position: Double): Unit = js.native
+  
   def setCaptions(options: CaptionOptions): Unit = js.native
+  
   def setControls(controls: Boolean): Unit = js.native
+  
   def setCurrentAudioTrack(index: Double): Unit = js.native
+  
   def setCurrentCaptions(index: Double): Unit = js.native
+  
   def setCurrentQuality(index: Double): Unit = js.native
+  
   def setFullscreen(state: Boolean): Unit = js.native
+  
   def setMute(): Unit = js.native
   def setMute(state: Boolean): Unit = js.native
+  
   def setPlaybackRate(rate: Double): Unit = js.native
+  
   def setVolume(volume: Double): Unit = js.native
+  
   def setup(options: js.Any): JWPlayer = js.native
+  
   def stop(): Unit = js.native
+  
   def trigger(event: NoParamEvent): Unit = js.native
   @JSName("trigger")
   def trigger_adClick(event: adClick, args: AdProgressParam): Unit = js.native
@@ -429,4 +480,3 @@ trait JWPlayer extends js.Object {
   @JSName("trigger")
   def trigger_volume(event: volume, args: VolumeParam): Unit = js.native
 }
-

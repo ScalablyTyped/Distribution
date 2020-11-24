@@ -2,11 +2,12 @@ package typings.gotResume.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("got-resume", "toFile")
 @js.native
 object toFile extends js.Object {
+  
   /**
     * Fetch URL and stream to file.
     * Return Promise. Promise resolves/reject once request is complete
@@ -22,4 +23,3 @@ object toFile extends js.Object {
   def apply(path: String, url: String): js.Promise[Unit] = js.native
   def apply(path: String, url: String, options: ToFileOptions): js.Promise[Unit] = js.native
 }
-

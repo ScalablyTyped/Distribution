@@ -4,7 +4,7 @@ import typings.microsoftAjax.Type
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the base class for the Control and Behavior classes, and for any other object whose lifetime should be managed by the ASP.NET AJAX client library.
@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation._
   */
 class Component ()
   extends typings.microsoftAjax.Sys.Component
-
 /* static members */
 @JSGlobal("Sys.Component")
 @js.native
 object Component extends js.Object {
+  
   /**
     * Creates and initializes a component of the specified type. This method is static and can be called without creating an instance of the class.
     * @param type
@@ -102,4 +102,3 @@ object Component extends js.Object {
   def create(`type`: Type, properties: js.Any, events: js.Any, references: js.Any): typings.microsoftAjax.Sys.Component = js.native
   def create(`type`: Type, properties: js.Any, events: js.Any, references: js.Any, element: HTMLElement): typings.microsoftAjax.Sys.Component = js.native
 }
-

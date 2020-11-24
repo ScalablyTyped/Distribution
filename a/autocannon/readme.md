@@ -11,9 +11,9 @@ Fast HTTP benchmarking tool written in Node.js
 | Full name          | autocannon |
 | Keywords           | http, soak, load, fast, wrk, ab, test |
 | # releases         | 26 |
-| # dependents       | 11 |
-| # downloads        | 651500 |
-| # stars            | 20 |
+| # dependents       | 17 |
+| # downloads        | 1069078 |
+| # stars            | 21 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/autocannon#readme)

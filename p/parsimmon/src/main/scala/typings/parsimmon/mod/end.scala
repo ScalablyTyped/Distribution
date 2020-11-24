@@ -3,7 +3,7 @@ package typings.parsimmon.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Equivalent to Parsimmon.alt(Parsimmon.newline, Parsimmon.eof).
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object end
   extends TopLevel[Parser[js.UndefOr[String]]]
-

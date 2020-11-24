@@ -6,11 +6,12 @@ import typings.reactNativeGoogleAnalyticsBridge.analyticsMod.TimingMetadata
 import typings.reactNativeGoogleAnalyticsBridge.customMod.CustomDimensionsFieldIndexMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-google-analytics-bridge/dist/GoogleAnalyticsTracker", JSImport.Namespace)
 @js.native
 object googleAnalyticsTrackerMod extends js.Object {
+  
   /**
     * @name GoogleAnalyticsTracker
     * @example
@@ -35,21 +36,7 @@ object googleAnalyticsTrackerMod extends js.Object {
     */
   @js.native
   trait GoogleAnalyticsTracker extends js.Object {
-    var customDimensionsFieldsIndexMap: CustomDimensionsFieldIndexMap = js.native
-    var id: String = js.native
-    /**
-      * If Tracker has customDimensionsFieldsIndexMap, it will transform
-      * customDimensions map pairs {field: value} to {fieldIndex: value}.
-      * Otherwise customDimensions are passed trough untouched.
-      * Underlay native methods will transform provided customDimensions map to expected format.
-      * Google analytics expect dimensions to be tracker with 'dimension{index}' keys,
-      * not dimension field names.
-      * @ignore
-      * @param {{fieldName: value}} customDimensions
-      * @returns {{fieldIndex: value}}
-      */
-    var transformCustomDimensionsFieldsToIndexes: js.Any = js.native
-    var transformPayload: js.Any = js.native
+    
     /**
       * Also called advertising identifier collection, and is used for advertising features.
       *
@@ -59,6 +46,9 @@ object googleAnalyticsTrackerMod extends js.Object {
       */
     def allowIDFA(): Unit = js.native
     def allowIDFA(enabled: Boolean): Unit = js.native
+    
+    var customDimensionsFieldsIndexMap: CustomDimensionsFieldIndexMap = js.native
+    
     /**
       * This function lets you manually dispatch all hits which are queued.
       * Use this function sparingly, as it will normally happen automatically
@@ -67,6 +57,7 @@ object googleAnalyticsTrackerMod extends js.Object {
       * @returns {Promise<boolean>} Returns when done
       */
     def dispatch(): js.Promise[Boolean] = js.native
+    
     /**
       * The same as `dispatch`, but also gives you the ability to time out
       * the Promise in case dispatch takes too long.
@@ -79,12 +70,16 @@ object googleAnalyticsTrackerMod extends js.Object {
       */
     def dispatchWithTimeout(): js.Promise[Boolean] = js.native
     def dispatchWithTimeout(timeout: Double): js.Promise[Boolean] = js.native
+    
     /**
       * Get the client id to be used for purpose of logging etc.
       * @example tracker.getClientId().then(clientId => console.log("Client id is: ", clientId));
       * @returns {Promise<string>}
       */
     def getClientId(): js.Promise[String] = js.native
+    
+    var id: String = js.native
+    
     /**
       * Sets if AnonymizeIp is enabled
       * If enabled the last octet of the IP address will be removed
@@ -92,36 +87,42 @@ object googleAnalyticsTrackerMod extends js.Object {
       * @param {boolean} enabled (Required)
       */
     def setAnonymizeIp(enabled: Boolean): Unit = js.native
+    
     /**
       * Overrides the app name logged in Google Analytics. The Bundle name is used by default. Note: This has to be set each time the App starts.
       * @example tracker.setAppName("YourAwesomeApp");
       * @param {string} appName (Required)
       */
     def setAppName(appName: String): Unit = js.native
+    
     /**
       * Sets the trackers appVersion
       * @example tracker.setAppVersion("1.3.2");
       * @param {string} appVersion (Required)
       */
     def setAppVersion(appVersion: String): Unit = js.native
+    
     /**
       * Sets the current clientId for tracking.
       * @example tracker.setClient("35009a79-1a05-49d7-b876-2b884d0f825b");
       * @param {string} clientId A anonymous identifier that complies with Google Analytic's client ID policy
       */
     def setClient(clientId: String): Unit = js.native
+    
     /**
       * Sets the currency for tracking.
       * @example tracker.setCurrency("EUR");
       * @param {string} currencyCode (Required) The currency ISO 4217 code
       */
     def setCurrency(currencyCode: String): Unit = js.native
+    
     /**
       * Sets tracker sampling rate.
       * @example tracker.setSamplingRate(50);
       * @param {number} sampleRatio (Required) Percentage 0 - 100
       */
     def setSamplingRate(sampleRatio: Double): Unit = js.native
+    
     /**
       * Sets if uncaught exceptions should be tracked
       * Important to note: On iOS this option is set on all trackers. On Android it is set per tracker.
@@ -129,12 +130,14 @@ object googleAnalyticsTrackerMod extends js.Object {
       * @param {boolean} enabled
       */
     def setTrackUncaughtExceptions(enabled: Boolean): Unit = js.native
+    
     /**
       * Sets the current userId for tracking.
       * @example tracker.setUser("12345678");
       * @param {string} userId An anonymous identifier that complies with Google Analytic's user ID policy
       */
     def setUser(userId: String): Unit = js.native
+    
     /**
       * Track an event that has occured
       * @example
@@ -177,6 +180,7 @@ object googleAnalyticsTrackerMod extends js.Object {
     def trackEvent(category: String, action: String, eventMetadata: js.UndefOr[scala.Nothing], payload: HitPayload): Unit = js.native
     def trackEvent(category: String, action: String, eventMetadata: EventMetadata): Unit = js.native
     def trackEvent(category: String, action: String, eventMetadata: EventMetadata, payload: HitPayload): Unit = js.native
+    
     /**
       * Track an exception
       * @example
@@ -193,6 +197,7 @@ object googleAnalyticsTrackerMod extends js.Object {
     def trackException(error: String, fatal: js.UndefOr[scala.Nothing], payload: HitPayload): Unit = js.native
     def trackException(error: String, fatal: Boolean): Unit = js.native
     def trackException(error: String, fatal: Boolean, payload: HitPayload): Unit = js.native
+    
     /**
       * Track the current screen/view. Calling this will also set the "current view" for other calls.
       *  So events tracked will be tagged as having occured on the current view, `Home` in this example.
@@ -208,6 +213,7 @@ object googleAnalyticsTrackerMod extends js.Object {
       */
     def trackScreenView(screenName: String): Unit = js.native
     def trackScreenView(screenName: String, payload: HitPayload): Unit = js.native
+    
     /**
       * Track a social interaction, Facebook, Twitter, etc.
       * @example tracker.trackSocialInteraction("Twitter", "Post");
@@ -217,6 +223,7 @@ object googleAnalyticsTrackerMod extends js.Object {
       * @param  {HitPayload} payload (Optional) An object containing the hit payload
       */
     def trackSocialInteraction(network: String, action: String, targetUrl: String, payload: HitPayload): Unit = js.native
+    
     /**
       * Track a timing measurement
       * @example
@@ -232,6 +239,21 @@ object googleAnalyticsTrackerMod extends js.Object {
       */
     def trackTiming(category: String, interval: Double, timingMetadata: TimingMetadata): Unit = js.native
     def trackTiming(category: String, interval: Double, timingMetadata: TimingMetadata, payload: HitPayload): Unit = js.native
+    
+    /**
+      * If Tracker has customDimensionsFieldsIndexMap, it will transform
+      * customDimensions map pairs {field: value} to {fieldIndex: value}.
+      * Otherwise customDimensions are passed trough untouched.
+      * Underlay native methods will transform provided customDimensions map to expected format.
+      * Google analytics expect dimensions to be tracker with 'dimension{index}' keys,
+      * not dimension field names.
+      * @ignore
+      * @param {{fieldName: value}} customDimensions
+      * @returns {{fieldIndex: value}}
+      */
+    var transformCustomDimensionsFieldsToIndexes: js.Any = js.native
+    
+    var transformPayload: js.Any = js.native
   }
   
   /**
@@ -266,6 +288,4 @@ object googleAnalyticsTrackerMod extends js.Object {
     def this(trackerId: String) = this()
     def this(trackerId: String, customDimensionsFieldsIndexMap: CustomDimensionsFieldIndexMap) = this()
   }
-  
 }
-

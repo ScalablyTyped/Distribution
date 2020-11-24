@@ -9,10 +9,10 @@ Minimalistic library to work with countries and timezones data.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | countries-and-timezones |
-| Keywords           | Countries, Timezones, Country, Timezone, Time, Date, DST |
-| # releases         | 9 |
-| # dependents       | 12 |
-| # downloads        | 378249 |
+| Keywords           | Countries, Timezones, Country, Timezone, Time, Date, DST, IANA, ICANN |
+| # releases         | 11 |
+| # dependents       | 18 |
+| # downloads        | 791149 |
 | # stars            | 1 |
 
 ## Links

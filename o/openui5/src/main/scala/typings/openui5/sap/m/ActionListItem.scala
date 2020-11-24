@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActionListItem extends ListItemBase {
+  
   /**
     * Determines item specific modeActionListItems are not selectable because they are command controls
     * (like Button or Link) so triggering the associated command, rather than selection isappropriate to
@@ -13,11 +14,13 @@ trait ActionListItem extends ListItemBase {
     * exclude the item from processingspecific to selectable list-items.
     */
   def getMode(): Unit = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Defines the text that appears in the control.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Defines the text that appears in the control.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -27,4 +30,3 @@ trait ActionListItem extends ListItemBase {
     */
   def setText(sText: String): ActionListItem = js.native
 }
-

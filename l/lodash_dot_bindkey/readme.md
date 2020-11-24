@@ -12,7 +12,7 @@ The lodash method `_.bindKey` exported as a module.
 | Keywords           | lodash-modularized, bindkey |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 17375 |
+| # downloads        | 18911 |
 | # stars            | 0 |
 
 ## Links

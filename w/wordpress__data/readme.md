@@ -9,15 +9,16 @@ Data module for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/data |
-| Keywords           | wordpress, data, redux |
+| Keywords           | wordpress, gutenberg, data, redux |
 | # releases         | 38 |
-| # dependents       | 20 |
-| # downloads        | 218871 |
+| # dependents       | 32 |
+| # downloads        | 951046 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/data/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdata)
     
 

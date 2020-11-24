@@ -3,9 +3,28 @@ package typings.graphviz
 import typings.graphviz.mod.RenderEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphvizStrings {
+  
+  @scala.inline
+  def circo: circo = "circo".asInstanceOf[circo]
+  
+  @scala.inline
+  def dot: dot = "dot".asInstanceOf[dot]
+  
+  @scala.inline
+  def fdp: fdp = "fdp".asInstanceOf[fdp]
+  
+  @scala.inline
+  def neato: neato = "neato".asInstanceOf[neato]
+  
+  @scala.inline
+  def osage: osage = "osage".asInstanceOf[osage]
+  
+  @scala.inline
+  def twopi: twopi = "twopi".asInstanceOf[twopi]
+  
   @js.native
   sealed trait circo extends RenderEngine
   
@@ -23,18 +42,4 @@ object graphvizStrings {
   
   @js.native
   sealed trait twopi extends RenderEngine
-  
-  @scala.inline
-  def circo: circo = "circo".asInstanceOf[circo]
-  @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
-  @scala.inline
-  def fdp: fdp = "fdp".asInstanceOf[fdp]
-  @scala.inline
-  def neato: neato = "neato".asInstanceOf[neato]
-  @scala.inline
-  def osage: osage = "osage".asInstanceOf[osage]
-  @scala.inline
-  def twopi: twopi = "twopi".asInstanceOf[twopi]
 }
-

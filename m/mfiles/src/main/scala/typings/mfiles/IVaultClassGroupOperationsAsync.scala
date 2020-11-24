@@ -3,10 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInObjectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultClassGroupOperationsAsync extends js.Object {
+  
   def AddClassGroup(ClassGroup: IClassGroup): Unit = js.native
   def AddClassGroup(
     ClassGroup: IClassGroup,
@@ -43,6 +44,7 @@ trait IVaultClassGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetClassGroup(ObjectType: Double, ClassGroupID: Double): Unit = js.native
   def GetClassGroup(
     ObjectType: Double,
@@ -135,6 +137,7 @@ trait IVaultClassGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetClassGroupIDByGUID(ClassGroupGUID: String): Unit = js.native
   def GetClassGroupIDByGUID(
     ClassGroupGUID: String,
@@ -171,6 +174,7 @@ trait IVaultClassGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetClassGroups(ObjectType: Double): Unit = js.native
   def GetClassGroups(
     ObjectType: Double,
@@ -243,6 +247,7 @@ trait IVaultClassGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveClassGroup(ClassGroupID: Double): Unit = js.native
   def RemoveClassGroup(
     ClassGroupID: Double,
@@ -279,6 +284,7 @@ trait IVaultClassGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateClassGroup(ClassGroup: IClassGroup): Unit = js.native
   def UpdateClassGroup(
     ClassGroup: IClassGroup,
@@ -316,4 +322,3 @@ trait IVaultClassGroupOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

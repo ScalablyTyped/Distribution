@@ -6,10 +6,13 @@ import typings.reactNative.anon.Format
 import typings.reactNative.reactNativeStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UIManagerStatic extends js.Object {
+  
+  def dispatchViewManagerCommand(reactTag: Double, commandID: String): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Double, commandID: String, commandArgs: js.Array[_]): Unit = js.native
   /**
     * Used to call a native view method from JavaScript
     *
@@ -19,9 +22,13 @@ trait UIManagerStatic extends js.Object {
     */
   def dispatchViewManagerCommand(reactTag: Double, commandID: Double): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: String): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: String, commandArgs: js.Array[_]): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
+  
   def getViewManagerConfig(name: String): Commands = js.native
+  
   /**
     * Determines the location on screen, width, and height of the given view and
     * returns the values via an async callback. If successful, the callback will
@@ -42,6 +49,7 @@ trait UIManagerStatic extends js.Object {
     * @deprecated Use `ref.measure` instead.
     */
   def measure(node: Double, callback: MeasureOnSuccessCallback): Unit = js.native
+  
   /**
     * Determines the location of the given view in the window and returns the
     * values via an async callback. If the React root view is embedded in
@@ -60,6 +68,7 @@ trait UIManagerStatic extends js.Object {
     * @deprecated Use `ref.measureInWindow` instead.
     */
   def measureInWindow(node: Double, callback: MeasureInWindowOnSuccessCallback): Unit = js.native
+  
   /**
     * Like [`measure()`](#measure), but measures the view relative an ancestor,
     * specified as `relativeToNativeNode`. This means that the returned x, y
@@ -76,6 +85,7 @@ trait UIManagerStatic extends js.Object {
     onFail: js.Function0[Unit],
     onSuccess: MeasureLayoutOnSuccessCallback
   ): Unit = js.native
+  
   /**
     * Automatically animates views to their new positions when the
     * next layout happens.
@@ -87,6 +97,7 @@ trait UIManagerStatic extends js.Object {
     *     UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
     */
   def setLayoutAnimationEnabledExperimental(value: Boolean): Unit = js.native
+  
   /**
     * Used to display an Android PopupMenu. If a menu item is pressed, the success callback will
     * be called with the following arguments:
@@ -105,6 +116,7 @@ trait UIManagerStatic extends js.Object {
     error: js.Function0[Unit],
     success: js.Function2[/* item */ String, /* index */ js.UndefOr[Double], Unit]
   ): Unit = js.native
+  
   /**
     * Capture an image of the screen, window or an individual view. The image
     * will be stored in a temporary file that will only exist for as long as the
@@ -133,4 +145,3 @@ trait UIManagerStatic extends js.Object {
   @JSName("takeSnapshot")
   def takeSnapshot_window(view: window, options: Format): js.Promise[String] = js.native
 }
-

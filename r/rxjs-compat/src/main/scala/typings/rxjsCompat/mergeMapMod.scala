@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/mergeMap", JSImport.Namespace)
 @js.native
 object mergeMapMod extends js.Object {
+  
   def mergeMap[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -23,4 +24,3 @@ object mergeMapMod extends js.Object {
     concurrent: Double
   ): js.Any = js.native
 }
-

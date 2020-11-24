@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to a singe layer of configuration data */
 @js.native
 trait MultiLayerStratum
   extends XMultiLayerStratum
      with XBackendEntities
-
 object MultiLayerStratum {
+  
   @scala.inline
   def apply(
     AdminEntity: String,
@@ -36,4 +36,3 @@ object MultiLayerStratum {
     __obj.asInstanceOf[MultiLayerStratum]
   }
 }
-

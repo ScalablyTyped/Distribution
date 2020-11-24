@@ -3,11 +3,12 @@ package typings.rxjs.internalCompatibilityMod
 import typings.rxjs.subscriptionMod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal-compatibility", "subscribeToResult")
 @js.native
 object subscribeToResult extends js.Object {
+  
   def apply[T, R](outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R], result: js.Any): js.UndefOr[Subscription] = js.native
   def apply[T, R](
     outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R],
@@ -34,4 +35,3 @@ object subscribeToResult extends js.Object {
     outerIndex: Double
   ): js.UndefOr[Subscription] = js.native
 }
-

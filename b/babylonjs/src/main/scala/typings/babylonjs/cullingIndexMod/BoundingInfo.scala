@@ -5,7 +5,7 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.DeepImmutable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Culling/index", "BoundingInfo")
 @js.native
@@ -24,11 +24,10 @@ class BoundingInfo protected ()
     worldMatrix: DeepImmutable[Matrix]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Culling/index", "BoundingInfo")
 @js.native
 object BoundingInfo extends js.Object {
+  
   val TmpVector3: js.Any = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jwt-decode
 
-Typings are for version 2.2
+Typings are for version 3.1.2
 
 ## Library description:
 Decode JWT tokens, mostly useful for browser applications.
@@ -10,9 +10,9 @@ Decode JWT tokens, mostly useful for browser applications.
 | ------------------ | :-------------: |
 | Full name          | jwt-decode |
 | Keywords           | jwt, browser |
-| # releases         | 1 |
-| # dependents       | 624 |
-| # downloads        | 32378681 |
+| # releases         | 6 |
+| # dependents       | 988 |
+| # downloads        | 57888938 |
 | # stars            | 22 |
 
 ## Links
@@ -24,7 +24,7 @@ Decode JWT tokens, mostly useful for browser applications.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

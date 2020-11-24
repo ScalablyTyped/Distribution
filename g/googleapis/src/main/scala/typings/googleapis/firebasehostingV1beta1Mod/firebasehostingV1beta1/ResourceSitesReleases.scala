@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Releases")
 @js.native
 class ResourceSitesReleases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebasehosting.sites.releases.create
     * @desc Creates a new release which makes the content of the specified
@@ -44,6 +46,7 @@ class ResourceSitesReleases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRelease]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.releases.list
     * @desc Lists the releases that have been created on the specified site.
@@ -78,4 +81,3 @@ class ResourceSitesReleases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListReleasesResponse]
   ): Unit = js.native
 }
-

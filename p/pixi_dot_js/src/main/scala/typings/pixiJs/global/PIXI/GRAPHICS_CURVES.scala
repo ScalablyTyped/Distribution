@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Graphics curves resolution settings. If `adaptive` flag is set to `true`,
@@ -22,9 +22,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.GRAPHICS_CURVES")
 @js.native
 object GRAPHICS_CURVES extends js.Object {
+  
   var adaptive: Boolean = js.native
+  
   var maxLength: Double = js.native
+  
   var maxSegments: Double = js.native
+  
   var minSegments: Double = js.native
 }
-

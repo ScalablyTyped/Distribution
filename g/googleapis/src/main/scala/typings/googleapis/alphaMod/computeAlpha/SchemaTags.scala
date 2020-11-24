@@ -2,13 +2,14 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of instance tags.
   */
 @js.native
 trait SchemaTags extends js.Object {
+  
   /**
     * Specifies a fingerprint for this request, which is essentially a hash of
     * the tags&#39; contents and used for optimistic locking. The fingerprint
@@ -18,41 +19,49 @@ trait SchemaTags extends js.Object {
     * fingerprint, make get() request to the instance.
     */
   var fingerprint: js.UndefOr[String] = js.native
+  
   /**
     * An array of tags. Each tag must be 1-63 characters long, and comply with
     * RFC1035.
     */
   var items: js.UndefOr[js.Array[String]] = js.native
 }
-
 object SchemaTags {
+  
   @scala.inline
   def apply(): SchemaTags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTags]
   }
+  
   @scala.inline
   implicit class SchemaTagsOps[Self <: SchemaTags] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    
     @scala.inline
     def setItemsVarargs(value: String*): Self = this.set("items", js.Array(value :_*))
+    
     @scala.inline
     def setItems(value: js.Array[String]): Self = this.set("items", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItems: Self = this.set("items", js.undefined)
   }
-  
 }
-

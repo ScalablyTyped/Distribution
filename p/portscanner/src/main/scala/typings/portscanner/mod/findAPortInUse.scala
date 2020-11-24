@@ -2,11 +2,12 @@ package typings.portscanner.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("portscanner", "findAPortInUse")
 @js.native
 object findAPortInUse extends js.Object {
+  
   def apply(portList: js.Array[Double]): js.Promise[Double] = js.native
   def apply(portList: js.Array[Double], findPortCallback: PortCallback): Unit = js.native
   def apply(portList: js.Array[Double], host: String): js.Promise[Double] = js.native
@@ -18,4 +19,3 @@ object findAPortInUse extends js.Object {
   def apply(startPort: Double, findPortCallback: PortCallback): Unit = js.native
   def apply(startPort: Double, host: String): js.Promise[Double] = js.native
 }
-

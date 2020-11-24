@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Goals")
 @js.native
 class ResourceManagementGoals protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.goals.get
     * @desc Gets a goal to which the user has access.
@@ -44,6 +46,7 @@ class ResourceManagementGoals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoal]
   ): Unit = js.native
+  
   /**
     * analytics.management.goals.insert
     * @desc Create a new goal.
@@ -75,6 +78,7 @@ class ResourceManagementGoals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoal]
   ): Unit = js.native
+  
   /**
     * analytics.management.goals.list
     * @desc Lists goals to which the user has access.
@@ -107,6 +111,7 @@ class ResourceManagementGoals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoals]
   ): Unit = js.native
+  
   /**
     * analytics.management.goals.patch
     * @desc Updates an existing goal. This method supports patch semantics.
@@ -139,6 +144,7 @@ class ResourceManagementGoals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoal]
   ): Unit = js.native
+  
   /**
     * analytics.management.goals.update
     * @desc Updates an existing goal.
@@ -172,4 +178,3 @@ class ResourceManagementGoals protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoal]
   ): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Timeline$Attachments")
 @js.native
 class ResourceTimelineAttachments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.timeline.attachments.delete
     * @desc Deletes an attachment from a timeline item.
@@ -42,6 +44,7 @@ class ResourceTimelineAttachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.attachments.get
     * @desc Retrieves an attachment on a timeline item by item ID and
@@ -72,6 +75,7 @@ class ResourceTimelineAttachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAttachment]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.attachments.insert
     * @desc Adds a new attachment to a timeline item.
@@ -103,6 +107,7 @@ class ResourceTimelineAttachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAttachment]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.attachments.list
     * @desc Returns a list of attachments for a timeline item.
@@ -135,4 +140,3 @@ class ResourceTimelineAttachments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAttachmentsListResponse]
   ): Unit = js.native
 }
-

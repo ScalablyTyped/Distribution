@@ -2,14 +2,14 @@ package typings.winrt.Windows.Storage.FileProperties
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PropertyPrefetchOptions extends js.Object
-
 @JSGlobal("Windows.Storage.FileProperties.PropertyPrefetchOptions")
 @js.native
 object PropertyPrefetchOptions extends js.Object {
+  
   @js.native
   sealed trait basicProperties extends PropertyPrefetchOptions
   
@@ -27,6 +27,4 @@ object PropertyPrefetchOptions extends js.Object {
   
   @js.native
   sealed trait videoProperties extends PropertyPrefetchOptions
-  
 }
-

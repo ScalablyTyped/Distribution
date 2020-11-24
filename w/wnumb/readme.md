@@ -11,8 +11,8 @@ wNumb - JavaScript Number & Money formatting
 | Full name          | wnumb |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 481374 |
+| # dependents       | 14 |
+| # downloads        | 749782 |
 | # stars            | 1 |
 
 ## Links

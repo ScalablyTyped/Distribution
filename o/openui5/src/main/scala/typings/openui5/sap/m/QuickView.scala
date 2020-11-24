@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QuickView extends QuickViewBase {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterClose</code> event of this
     * <code>sap.m.QuickView</code>.When called, the context of the event handler (its <code>this</code>)
@@ -21,6 +22,7 @@ trait QuickView extends QuickViewBase {
     */
   def attachAfterClose(oData: js.Any, fnFunction: js.Any): QuickView = js.native
   def attachAfterClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterOpen</code> event of this
     * <code>sap.m.QuickView</code>.When called, the context of the event handler (its <code>this</code>)
@@ -35,6 +37,7 @@ trait QuickView extends QuickViewBase {
     */
   def attachAfterOpen(oData: js.Any, fnFunction: js.Any): QuickView = js.native
   def attachAfterOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeClose</code> event of this
     * <code>sap.m.QuickView</code>.When called, the context of the event handler (its <code>this</code>)
@@ -49,6 +52,7 @@ trait QuickView extends QuickViewBase {
     */
   def attachBeforeClose(oData: js.Any, fnFunction: js.Any): QuickView = js.native
   def attachBeforeClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeOpen</code> event of this
     * <code>sap.m.QuickView</code>.When called, the context of the event handler (its <code>this</code>)
@@ -63,6 +67,7 @@ trait QuickView extends QuickViewBase {
     */
   def attachBeforeOpen(oData: js.Any, fnFunction: js.Any): QuickView = js.native
   def attachBeforeOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterClose</code> event of this
     * <code>sap.m.QuickView</code>.The passed function and listener object must match the ones used for
@@ -72,6 +77,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterClose(fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterOpen</code> event of this
     * <code>sap.m.QuickView</code>.The passed function and listener object must match the ones used for
@@ -81,6 +87,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterOpen(fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeClose</code> event of this
     * <code>sap.m.QuickView</code>.The passed function and listener object must match the ones used for
@@ -90,6 +97,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeClose(fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeOpen</code> event of this
     * <code>sap.m.QuickView</code>.The passed function and listener object must match the ones used for
@@ -99,6 +107,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeOpen(fnFunction: js.Any, oListener: js.Any): QuickView = js.native
+  
   /**
     * Fires event <code>afterClose</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>This parameter refers
@@ -109,6 +118,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterClose(mArguments: js.Any): QuickView = js.native
+  
   /**
     * Fires event <code>afterOpen</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>This parameter refers
@@ -117,6 +127,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterOpen(mArguments: js.Any): QuickView = js.native
+  
   /**
     * Fires event <code>beforeClose</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>This parameter refers
@@ -127,6 +138,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeClose(mArguments: js.Any): QuickView = js.native
+  
   /**
     * Fires event <code>beforeOpen</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>This parameter refers
@@ -135,6 +147,7 @@ trait QuickView extends QuickViewBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeOpen(mArguments: js.Any): QuickView = js.native
+  
   /**
     * Gets current value of property <code>placement</code>.This property is reused from sap.m.Popover and
     * only takes effect when running on desktop or tablet. Please refer the documentation of the placement
@@ -142,24 +155,28 @@ trait QuickView extends QuickViewBase {
     * @returns Value of property <code>placement</code>
     */
   def getPlacement(): PlacementType = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The width of the QuickView. The property takes
     * effect only when running on desktop or tablet.Default value is <code>320px</code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Opens the QuickView.
     * @param oControl The control which opens the QuickView.
     * @returns Pointer to the control instance for chaining
     */
   def openBy(oControl: Control): QuickView = js.native
+  
   /**
     * The method sets placement position of the QuickView.
     * @param sPlacement The side from which the QuickView appears relative to the control that opens it.
     * @returns Pointer to the control instance for chaining.
     */
   def setPlacement(sPlacement: PlacementType): QuickView = js.native
+  
   /**
     * The method sets the width of the QuickView.Works only on desktop or tablet.
     * @param sWidth The new width of the QuickView.
@@ -167,4 +184,3 @@ trait QuickView extends QuickViewBase {
     */
   def setWidth(sWidth: js.Any): QuickView = js.native
 }
-

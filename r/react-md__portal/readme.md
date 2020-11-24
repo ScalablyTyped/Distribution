@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__portal
 
-Typings are for version 2.0.2
+Typings are for version 2.4.2
 
 ## Library description:
 This package is for including icons within react-md. There is included support for both font icons and SVG icons.  There is also a helper component for applying spacing between icons and text.
@@ -10,9 +10,9 @@ This package is for including icons within react-md. There is included support f
 | ------------------ | :-------------: |
 | Full name          | @react-md/portal |
 | Keywords           | react-md, material design, react, icon, font icon, svg icon, component, components |
-| # releases         | 18 |
+| # releases         | 25 |
 | # dependents       | 8 |
-| # downloads        | 4011 |
+| # downloads        | 14679 |
 | # stars            | 0 |
 
 ## Links

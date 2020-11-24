@@ -8,7 +8,7 @@ import typings.tstl.ipairMod.IPair
 import typings.tstl.mapContainerMod.MapContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "TreeMultiMap")
 @js.native
@@ -51,10 +51,10 @@ class TreeMultiMap[Key, T] ()
     comp: Comparator[Key, Key]
   ) = this()
 }
-
 @JSImport("tstl/module", "TreeMultiMap")
 @js.native
 object TreeMultiMap extends js.Object {
+  
   val Iterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.Iterator[
       js.Object, 
@@ -75,6 +75,7 @@ object TreeMultiMap extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
       js.Object, 
@@ -96,4 +97,3 @@ object TreeMultiMap extends js.Object {
     ]
   ] = js.native
 }
-

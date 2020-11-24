@@ -2,11 +2,12 @@ package typings.dva.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dva", "connect")
 @js.native
 object connect extends js.Object {
+  
   def apply(): js.Function = js.native
   def apply(
     mapStateToProps: js.UndefOr[scala.Nothing],
@@ -76,4 +77,3 @@ object connect extends js.Object {
     options: js.Object
   ): js.Function = js.native
 }
-

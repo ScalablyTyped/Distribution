@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ConsensusInitializeBlockRequest")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class ConsensusInitializeBlockRequest () extends IConsensusInitializeBlockRequest {
   def this(properties: IConsensusInitializeBlockRequest) = this()
+  
   /** ConsensusInitializeBlockRequest previousId. */
   @JSName("previousId")
   var previousId_ConsensusInitializeBlockRequest: Uint8Array = js.native
+  
   /**
     * Converts this ConsensusInitializeBlockRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ConsensusInitializeBlockRequest")
 @js.native
 object ConsensusInitializeBlockRequest extends js.Object {
+  
   /**
     * Creates a new ConsensusInitializeBlockRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object ConsensusInitializeBlockRequest extends js.Object {
     */
   def create(): ConsensusInitializeBlockRequest = js.native
   def create(properties: IConsensusInitializeBlockRequest): ConsensusInitializeBlockRequest = js.native
+  
   /**
     * Decodes a ConsensusInitializeBlockRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object ConsensusInitializeBlockRequest extends js.Object {
   def decode(reader: Reader, length: Double): ConsensusInitializeBlockRequest = js.native
   def decode(reader: Uint8Array): ConsensusInitializeBlockRequest = js.native
   def decode(reader: Uint8Array, length: Double): ConsensusInitializeBlockRequest = js.native
+  
   /**
     * Decodes a ConsensusInitializeBlockRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object ConsensusInitializeBlockRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ConsensusInitializeBlockRequest = js.native
   def decodeDelimited(reader: Uint8Array): ConsensusInitializeBlockRequest = js.native
+  
   /**
     * Encodes the specified ConsensusInitializeBlockRequest message. Does not implicitly {@link ConsensusInitializeBlockRequest.verify|verify} messages.
     * @param message ConsensusInitializeBlockRequest message or plain object to encode
@@ -67,6 +72,7 @@ object ConsensusInitializeBlockRequest extends js.Object {
     */
   def encode(message: IConsensusInitializeBlockRequest): Writer = js.native
   def encode(message: IConsensusInitializeBlockRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusInitializeBlockRequest message, length delimited. Does not implicitly {@link ConsensusInitializeBlockRequest.verify|verify} messages.
     * @param message ConsensusInitializeBlockRequest message or plain object to encode
@@ -75,12 +81,14 @@ object ConsensusInitializeBlockRequest extends js.Object {
     */
   def encodeDelimited(message: IConsensusInitializeBlockRequest): Writer = js.native
   def encodeDelimited(message: IConsensusInitializeBlockRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusInitializeBlockRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusInitializeBlockRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ConsensusInitializeBlockRequest = js.native
+  
   /**
     * Creates a plain object from a ConsensusInitializeBlockRequest message. Also converts values to other types if specified.
     * @param message ConsensusInitializeBlockRequest
@@ -89,6 +97,7 @@ object ConsensusInitializeBlockRequest extends js.Object {
     */
   def toObject(message: ConsensusInitializeBlockRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ConsensusInitializeBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusInitializeBlockRequest message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object ConsensusInitializeBlockRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

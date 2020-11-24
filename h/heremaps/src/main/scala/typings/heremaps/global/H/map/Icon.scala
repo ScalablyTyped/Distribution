@@ -5,7 +5,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A visual representation of the H.map.Marker.
@@ -26,21 +26,23 @@ class Icon protected ()
   def this(bitmap: HTMLCanvasElement, opt_options: Options) = this()
   def this(bitmap: HTMLImageElement, opt_options: Options) = this()
 }
-
 @JSGlobal("H.map.Icon")
 @js.native
 object Icon extends js.Object {
+  
   /**
     * The state types of an Icon
     */
   @js.native
   object State extends js.Object {
-    /* 0 */ val ERROR: typings.heremaps.H.map.Icon.State.ERROR with Double = js.native
-    /* 1 */ val LOADING: typings.heremaps.H.map.Icon.State.LOADING with Double = js.native
-    /* 2 */ val READY: typings.heremaps.H.map.Icon.State.READY with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.map.Icon.State with Double] = js.native
+    
+    /* 0 */ val ERROR: typings.heremaps.H.map.Icon.State.ERROR with Double = js.native
+    
+    /* 1 */ val LOADING: typings.heremaps.H.map.Icon.State.LOADING with Double = js.native
+    
+    /* 2 */ val READY: typings.heremaps.H.map.Icon.State.READY with Double = js.native
   }
-  
 }
-

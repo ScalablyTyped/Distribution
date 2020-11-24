@@ -3,7 +3,7 @@ package typings.angularCompiler.srcCompilerMod
 import typings.angularCompiler.extractorMod.ExtractorHost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "Extractor")
 @js.native
@@ -16,12 +16,11 @@ class Extractor protected ()
     metadataResolver: typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
   ) = this()
 }
-
 /* static members */
 @JSImport("@angular/compiler/src/compiler", "Extractor")
 @js.native
 object Extractor extends js.Object {
+  
   def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = js.native
   def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = js.native
 }
-

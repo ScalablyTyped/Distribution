@@ -2,11 +2,12 @@ package typings.cordovaPluginDialogs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This plugin provides access to some native dialog UI elements. */
 @js.native
 trait Notification extends js.Object {
+  
   /**
     * Shows a custom alert or dialog box. Most Cordova implementations use a native dialog box for this feature,
     * but some platforms use the browser's alert function, which is typically less customizable.
@@ -24,11 +25,13 @@ trait Notification extends js.Object {
   ): Unit = js.native
   def alert(message: String, alertCallback: js.Function0[Unit], title: String): Unit = js.native
   def alert(message: String, alertCallback: js.Function0[Unit], title: String, buttonName: String): Unit = js.native
+  
   /**
     * The device plays a beep sound.
     * @param times The number of times to repeat the beep. 
     */
   def beep(times: Double): Unit = js.native
+  
   /**
     * Displays a customizable confirmation dialog box.
     * @param message           Dialog message.
@@ -51,6 +54,7 @@ trait Notification extends js.Object {
     title: String,
     buttonLabels: js.Array[String]
   ): Unit = js.native
+  
   /**
     * Displays a native dialog box that is more customizable than the browser's prompt function.
     * @param message           Dialog message.
@@ -106,4 +110,3 @@ trait Notification extends js.Object {
     defaultText: String
   ): Unit = js.native
 }
-

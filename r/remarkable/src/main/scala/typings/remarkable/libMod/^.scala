@@ -6,7 +6,7 @@ import typings.remarkable.remarkableStrings.full
 import typings.remarkable.remarkableStrings.remarkable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("remarkable/lib", JSImport.Namespace)
 @js.native
@@ -26,13 +26,12 @@ class ^ () extends Remarkable {
   def this(preset: full, options: Options) = this()
   def this(preset: remarkable, options: Options) = this()
 }
-
 @JSImport("remarkable/lib", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Useful helper functions for custom rendering.
     */
   var utils: TypeofUtils = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents Geo Point.
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiGeoPoint ()
   extends typings.kiiCloudSdk.KiiCloud.KiiGeoPoint
-
 /* static members */
 @JSGlobal("KiiCloud.KiiGeoPoint")
 @js.native
 object KiiGeoPoint extends js.Object {
+  
   /**
     * Create a geo point with the given latitude and longitude.
     *
@@ -31,4 +31,3 @@ object KiiGeoPoint extends js.Object {
     */
   def geoPoint(latitude: Double, longitude: Double): typings.kiiCloudSdk.KiiCloud.KiiGeoPoint = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.networking.onc.CaptivePortalStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when a portal detection for a network completes.
@@ -17,4 +17,3 @@ object onPortalDetectionCompleted
   extends TopLevel[
       Event[js.Function2[/* networkGuid */ String, /* status */ CaptivePortalStatus, Unit]]
     ]
-

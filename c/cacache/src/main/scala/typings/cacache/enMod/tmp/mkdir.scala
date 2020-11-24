@@ -2,11 +2,12 @@ package typings.cacache.enMod.tmp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cacache/en", "tmp.mkdir")
 @js.native
 object mkdir extends js.Object {
+  
   /**
     * Returns a unique temporary directory inside the cache's `tmp` dir. This
     * directory will use the same safe user assignment that all the other stuff
@@ -22,4 +23,3 @@ object mkdir extends js.Object {
   def apply(cachePath: String): js.Promise[String] = js.native
   def apply(cachePath: String, opts: Options): js.Promise[String] = js.native
 }
-

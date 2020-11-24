@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of points that are linked sequentially by line segments, with a closing line segment between the last and first points.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "PRIMITIVE_LINELOOP")
 @js.native
 object PRIMITIVE_LINELOOP extends TopLevel[Double]
-

@@ -48,11 +48,12 @@ import typings.electronUtil.electronUtilStrings.speech
 import typings.electronUtil.electronUtilStrings.universalaccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron-util", "openSystemPreferences")
 @js.native
 object openSystemPreferences extends js.Object {
+  
   def apply(): js.Promise[Unit] = js.native
   def apply(
     pane: js.UndefOr[scala.Nothing],
@@ -72,4 +73,3 @@ object openSystemPreferences extends js.Object {
     section: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   ): js.Promise[Unit] = js.native
 }
-

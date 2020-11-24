@@ -2,7 +2,7 @@ package typings.domexception.domexceptionImplMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("domexception/lib/DOMException-impl", "implementation")
 @js.native
@@ -14,4 +14,3 @@ class implementation protected () extends DOMExceptionImpl {
     privateData: js.Object
   ) = this()
 }
-

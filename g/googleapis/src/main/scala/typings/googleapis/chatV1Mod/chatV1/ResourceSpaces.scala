@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/chat/v1", "chat_v1.Resource$Spaces")
 @js.native
 class ResourceSpaces protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var members: ResourceSpacesMembers = js.native
-  var messages: ResourceSpacesMessages = js.native
+  
   /**
     * chat.spaces.get
     * @desc Returns a space.
@@ -43,6 +43,7 @@ class ResourceSpaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSpace]
   ): Unit = js.native
+  
   /**
     * chat.spaces.list
     * @desc Lists spaces the caller is a member of.
@@ -72,5 +73,8 @@ class ResourceSpaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSpacesResponse]
   ): Unit = js.native
+  
+  var members: ResourceSpacesMembers = js.native
+  
+  var messages: ResourceSpacesMessages = js.native
 }
-

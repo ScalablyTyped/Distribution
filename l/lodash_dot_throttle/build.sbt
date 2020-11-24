@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_throttle"
-version := "4.1-dt-20200515Z-7c7de9"
+version := "4.1-dt-20200515Z-e7b07b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

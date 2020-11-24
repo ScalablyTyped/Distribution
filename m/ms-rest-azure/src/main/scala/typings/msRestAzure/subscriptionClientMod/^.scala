@@ -4,7 +4,7 @@ import typings.msRest.mod.ServiceClientCredentials
 import typings.msRest.mod.ServiceClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure/lib/subscriptionManagement/subscriptionClient", JSImport.Namespace)
 @js.native
@@ -45,4 +45,3 @@ class ^ protected () extends SubscriptionClient {
   ) = this()
   def this(credentials: ServiceClientCredentials, baseUri: String, options: ServiceClientOptions) = this()
 }
-

@@ -10,9 +10,9 @@ get colors in your node.js console
 | ------------------ | :-------------: |
 | Full name          | colors |
 | Keywords           | ansi, terminal, colors |
-| # releases         | 13 |
-| # dependents       | 13257 |
-| # downloads        | 605168954 |
+| # releases         | 3 |
+| # dependents       | 14250 |
+| # downloads        | 714497362 |
 | # stars            | 457 |
 
 ## Links

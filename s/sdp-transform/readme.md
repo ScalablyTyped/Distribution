@@ -10,9 +10,9 @@ A simple parser/writer for the Session Description Protocol
 | ------------------ | :-------------: |
 | Full name          | sdp-transform |
 | Keywords           | sdp, webrtc, serializer |
-| # releases         | 13 |
-| # dependents       | 53 |
-| # downloads        | 999185 |
+| # releases         | 11 |
+| # dependents       | 70 |
+| # downloads        | 1469533 |
 | # stars            | 1 |
 
 ## Links

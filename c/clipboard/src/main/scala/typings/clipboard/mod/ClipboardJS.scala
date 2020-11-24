@@ -4,14 +4,16 @@ import typings.clipboard.clipboardStrings.error
 import typings.clipboard.clipboardStrings.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClipboardJS extends js.Object {
+  
   /**
     * Clears all event bindings.
     */
   def destroy(): Unit = js.native
+  
   def on(`type`: String, handler: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_error(`type`: error, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
@@ -23,4 +25,3 @@ trait ClipboardJS extends js.Object {
   @JSName("on")
   def on_success(`type`: success, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
 }
-

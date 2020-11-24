@@ -2,13 +2,14 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata about the request.
   */
 @js.native
 trait SchemaRequestMetadata extends js.Object {
+  
   /**
     * The IP address of the caller. For caller from internet, this will be
     * public IPv4 or IPv6 address. For caller from a Compute Engine VM with
@@ -20,6 +21,7 @@ trait SchemaRequestMetadata extends js.Object {
     * https://cloud.google.com/compute/docs/vpc/ for more information.
     */
   var callerIp: js.UndefOr[String] = js.native
+  
   /**
     * The network of the caller. Set only if the network host project is part
     * of the same GCP organization (or project) as the accessed resource. See
@@ -28,6 +30,7 @@ trait SchemaRequestMetadata extends js.Object {
     * &quot;//compute.googleapis.com/projects/PROJECT_ID/global/networks/NETWORK_ID&quot;
     */
   var callerNetwork: js.UndefOr[String] = js.native
+  
   /**
     * The user agent of the caller. This information is not authenticated and
     * should be treated accordingly. For example:  +
@@ -39,6 +42,7 @@ trait SchemaRequestMetadata extends js.Object {
     * was made from the `my-project` App Engine app. NOLINT
     */
   var callerSuppliedUserAgent: js.UndefOr[String] = js.native
+  
   /**
     * The destination of a network activity, such as accepting a TCP
     * connection. In a multi hop network activity, the destination represents
@@ -47,6 +51,7 @@ trait SchemaRequestMetadata extends js.Object {
     * services utilizing the IAM condition feature.
     */
   var destinationAttributes: js.UndefOr[SchemaPeer] = js.native
+  
   /**
     * Request attributes used in IAM condition evaluation. This field contains
     * request attributes like request time and access levels associated with
@@ -56,45 +61,57 @@ trait SchemaRequestMetadata extends js.Object {
     */
   var requestAttributes: js.UndefOr[SchemaRequest] = js.native
 }
-
 object SchemaRequestMetadata {
+  
   @scala.inline
   def apply(): SchemaRequestMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRequestMetadata]
   }
+  
   @scala.inline
   implicit class SchemaRequestMetadataOps[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCallerIp(value: String): Self = this.set("callerIp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCallerIp: Self = this.set("callerIp", js.undefined)
+    
     @scala.inline
     def setCallerNetwork(value: String): Self = this.set("callerNetwork", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCallerNetwork: Self = this.set("callerNetwork", js.undefined)
+    
     @scala.inline
     def setCallerSuppliedUserAgent(value: String): Self = this.set("callerSuppliedUserAgent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCallerSuppliedUserAgent: Self = this.set("callerSuppliedUserAgent", js.undefined)
+    
     @scala.inline
     def setDestinationAttributes(value: SchemaPeer): Self = this.set("destinationAttributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDestinationAttributes: Self = this.set("destinationAttributes", js.undefined)
+    
     @scala.inline
     def setRequestAttributes(value: SchemaRequest): Self = this.set("requestAttributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRequestAttributes: Self = this.set("requestAttributes", js.undefined)
   }
-  
 }
-

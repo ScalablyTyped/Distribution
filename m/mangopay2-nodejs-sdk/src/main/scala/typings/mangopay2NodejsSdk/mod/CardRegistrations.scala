@@ -5,7 +5,7 @@ import typings.mangopay2NodejsSdk.mod.cardRegistration.CreateCardRegistration
 import typings.mangopay2NodejsSdk.mod.cardRegistration.UpdateCardRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * You need to register a card in order to process a Direct PayIn. Card registration enables you to tokenize a Card. These are the steps to follow:
@@ -22,26 +22,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mangopay2-nodejs-sdk", "CardRegistrations")
 @js.native
 class CardRegistrations () extends js.Object {
-  /**
-    * Create new card registration
-    * @param cardRegistration
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateCardRegistration, CardRegistrationData] = js.native
-  /**
-    * Create new card registration
-    * @param cardRegistrationId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, CardRegistrationData] = js.native
-  /**
-    * Update card registration
-    * @param  cardRegistration
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateCardRegistration, CardRegistrationData] = js.native
+  
   /**
     * Create new card registration
     * @param cardRegistration
@@ -78,6 +59,14 @@ class CardRegistrations () extends js.Object {
   def create(data: CreateCardRegistration, options: MethodOptionWithoutResponse): js.Promise[CardRegistrationData] = js.native
   /**
     * Create new card registration
+    * @param cardRegistration
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateCardRegistration, CardRegistrationData] = js.native
+  
+  /**
+    * Create new card registration
     * @param cardRegistrationId
     * @param options
     */
@@ -111,6 +100,14 @@ class CardRegistrations () extends js.Object {
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[CardRegistrationData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[CardRegistrationData] = js.native
   /**
+    * Create new card registration
+    * @param cardRegistrationId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, CardRegistrationData] = js.native
+  
+  /**
     * Update card registration
     * @param  cardRegistration
     */
@@ -140,5 +137,10 @@ class CardRegistrations () extends js.Object {
     */
   def update(data: UpdateCardRegistration, options: MethodOptionWithResponse): js.Promise[WithResponse[CardRegistrationData]] = js.native
   def update(data: UpdateCardRegistration, options: MethodOptionWithoutResponse): js.Promise[CardRegistrationData] = js.native
+  /**
+    * Update card registration
+    * @param  cardRegistration
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateCardRegistration, CardRegistrationData] = js.native
 }
-

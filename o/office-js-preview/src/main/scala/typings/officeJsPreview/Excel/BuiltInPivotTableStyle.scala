@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BuiltInPivotTableStyle extends js.Object
-
 /**
   *
   * Represents a built-in PivotTable style
@@ -17,6 +16,7 @@ sealed trait BuiltInPivotTableStyle extends js.Object
 @JSGlobal("Excel.BuiltInPivotTableStyle")
 @js.native
 object BuiltInPivotTableStyle extends js.Object {
+  
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and shaded body.
     *
@@ -611,6 +611,4 @@ object BuiltInPivotTableStyle extends js.Object {
     */
   @js.native
   sealed trait none extends BuiltInPivotTableStyle
-  
 }
-

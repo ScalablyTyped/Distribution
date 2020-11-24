@@ -10,7 +10,7 @@ import typings.heredatalens.H.datalens.QueryTileProvider.Zoom
 import typings.heredatalens.H.datalens.Service.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides functionality of value-based heat map with density alpha mask.
@@ -29,23 +29,26 @@ class HeatmapLayer protected ()
     */
   def this(provider: typings.heredatalens.H.datalens.QueryTileProvider, options: Options) = this()
 }
-
 /* static members */
 @JSGlobal("H.datalens.HeatmapLayer")
 @js.native
 object HeatmapLayer extends js.Object {
+  
   /**
     * Set of possible values for the aggregation option
     */
   var aggregation: Aggregation = js.native
-  /**
-    * Set of possible values for the inputScale option
-    */
-  var inputScale: InputScale = js.native
+  
   /**
     * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
     */
   def defaultDataToRows(data: Data, x: X, y: Y, zoom: Zoom): js.Array[Row] = js.native
+  
+  /**
+    * Set of possible values for the inputScale option
+    */
+  var inputScale: InputScale = js.native
+  
   /**
     * Set of possible values for the aggregation option.
     * If the heat map input data is buckets, then different types of aggregation can be applied to the rows in a bucket.
@@ -53,10 +56,13 @@ object HeatmapLayer extends js.Object {
     */
   @js.native
   object Aggregation extends js.Object {
-    /* 1 */ val AVERAGE: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.AVERAGE with Double = js.native
-    /* 0 */ val SUM: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.SUM with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heredatalens.H.datalens.HeatmapLayer.Aggregation with Double] = js.native
+    
+    /* 1 */ val AVERAGE: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.AVERAGE with Double = js.native
+    
+    /* 0 */ val SUM: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.SUM with Double = js.native
   }
   
   /**
@@ -65,12 +71,14 @@ object HeatmapLayer extends js.Object {
     */
   @js.native
   object InputScale extends js.Object {
-    /* 0 */ val DB: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.DB with Double = js.native
-    /* 1 */ val LINEAR: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LINEAR with Double = js.native
-    /* 2 */ val LOG: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LOG with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heredatalens.H.datalens.HeatmapLayer.InputScale with Double] = js.native
+    
+    /* 0 */ val DB: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.DB with Double = js.native
+    
+    /* 1 */ val LINEAR: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LINEAR with Double = js.native
+    
+    /* 2 */ val LOG: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LOG with Double = js.native
   }
-  
 }
-

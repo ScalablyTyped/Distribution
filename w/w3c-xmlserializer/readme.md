@@ -10,9 +10,9 @@ A per-spec XML serializer implementation
 | ------------------ | :-------------: |
 | Full name          | w3c-xmlserializer |
 | Keywords           | dom, w3c, xml, xmlserializer |
-| # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 50957502 |
+| # releases         | 7 |
+| # dependents       | 26 |
+| # downloads        | 166878638 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Compute measurements of React components.
 | ------------------ | :-------------: |
 | Full name          | react-measure |
 | Keywords           | react, component, measure, measurements, dimensions, element-queries, container-queries, size |
-| # releases         | 17 |
-| # dependents       | 155 |
-| # downloads        | 7452425 |
+| # releases         | 14 |
+| # dependents       | 184 |
+| # downloads        | 12032200 |
 | # stars            | 9 |
 
 ## Links

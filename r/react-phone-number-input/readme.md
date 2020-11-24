@@ -10,15 +10,15 @@ Telephone number input React component
 | ------------------ | :-------------: |
 | Full name          | react-phone-number-input |
 | Keywords           | react, phone, number, input, telephone, international |
-| # releases         | 121 |
-| # dependents       | 41 |
-| # downloads        | 2045451 |
+| # releases         | 72 |
+| # dependents       | 53 |
+| # downloads        | 3658846 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/catamphetamine/react-phone-number-input#readme)
-- [Bugs](https://github.com/catamphetamine/react-phone-number-input/issues)
-- [Repository](https://github.com/catamphetamine/react-phone-number-input)
+- [Homepage](https://gitlab.com/catamphetamine/react-phone-number-input#readme)
+- [Bugs](https://gitlab.com/catamphetamine/react-phone-number-input/issues)
+- [Repository](https://gitlab.com/catamphetamine/react-phone-number-input)
 - [Npm](https://www.npmjs.com/package/react-phone-number-input)
     
 

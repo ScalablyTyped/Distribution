@@ -4,7 +4,7 @@ import typings.officeJsPreview.Office.MailboxEnums.ItemType
 import typings.officeJsPreview.anon.AsyncContextOptionsisInli
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -21,243 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AppointmentCompose extends Item {
-  /**
-    * Gets an object that provides methods for manipulating the body of an item.
-    *
-    * [Api set: Mailbox 1.1]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var body: Body = js.native
-  /**
-    * Gets an object that provides methods for managing the item's categories.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var categories: Categories = js.native
-  /**
-    * Gets or sets the date and time that the appointment is to end.
-    *
-    * The `end` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
-    * You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
-    *
-    * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on
-    * the client to UTC for the server.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var end: Time = js.native
-  /**
-    * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation}
-    * object that provides methods to get, remove, or add locations on an item.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var enhancedLocation: EnhancedLocation = js.native
-  /**
-    * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.
-    *
-    * [Api set: Mailbox Preview]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    *
-    * @beta
-    */
-  var isAllDayEvent: IsAllDayEvent = js.native
-  /**
-    * Gets the type of item that an instance represents.
-    *
-    * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the `item` object instance is a message or an appointment.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var itemType: ItemType | String = js.native
-  /**
-    * Gets or sets the location of an appointment. The `location` property returns a {@link Office.Location | Location} object that provides methods that are
-    * used to get and set the location of the appointment.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var location: Location = js.native
-  /**
-    * Gets the notification messages for an item.
-    *
-    * [Api set: Mailbox 1.3]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var notificationMessages: NotificationMessages = js.native
-  /**
-    * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
-    *
-    * The `optionalAttendees` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the optional attendees
-    * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
-    *
-    * - Get 500 members maximum.
-    *
-    * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var optionalAttendees: Recipients = js.native
-  /**
-    * Gets the organizer for the specified meeting.
-    *
-    * The `organizer` property returns an {@link Office.Organizer | Organizer} object that provides a method to get the organizer value.
-    *
-    * [Api set: Mailbox 1.7]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var organizer: Organizer = js.native
-  /**
-    * Gets or sets the recurrence pattern of an appointment.
-    *
-    * The `recurrence` property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance
-    * in a series. `null` is returned for single appointments and meeting requests of single appointments.
-    *
-    * **Note**: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`.
-    *
-    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single
-    * appointment and NOT a part of a series.
-    *
-    * [Api set: Mailbox 1.7]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var recurrence: Recurrence = js.native
-  /**
-    * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
-    *
-    * The `requiredAttendees` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the required attendees
-    * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
-    *
-    * - Get 500 members maximum.
-    *
-    * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var requiredAttendees: Recipients = js.native
-  /**
-    * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.
-    *
-    * [Api set: Mailbox Preview]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    *
-    * @beta
-    */
-  var sensitivity: Sensitivity = js.native
-  /**
-    * Gets the id of the series that an instance belongs to.
-    *
-    * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
-    * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
-    *
-    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
-    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
-    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
-    *
-    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
-    * and returns `undefined` for any other items that are not meeting requests.
-    *
-    * [Api set: Mailbox 1.7]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var seriesId: String = js.native
-  /**
-    * Gets or sets the date and time that the appointment is to begin.
-    *
-    * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
-    * You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
-    *
-    * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on
-    * the client to UTC for the server.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var start: Time = js.native
-  /**
-    * Gets or sets the description that appears in the subject field of an item.
-    *
-    * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
-    *
-    * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    */
-  var subject: Subject = js.native
+  
   /**
     * Adds a file to a message or appointment as an attachment.
     *
@@ -301,11 +65,6 @@ trait AppointmentCompose extends Item {
   def addFileAttachmentAsync(
     uri: String,
     attachmentName: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
-  def addFileAttachmentAsync(
-    uri: String,
-    attachmentName: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
@@ -316,6 +75,7 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptionsisInli,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Adds a file to a message or appointment as an attachment.
     *
@@ -359,11 +119,6 @@ trait AppointmentCompose extends Item {
   def addFileAttachmentFromBase64Async(
     base64File: String,
     attachmentName: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
-  def addFileAttachmentFromBase64Async(
-    base64File: String,
-    attachmentName: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
@@ -374,12 +129,8 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptionsisInli,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   def addHandlerAsync(eventType: String, handler: js.Any): Unit = js.native
-  def addHandlerAsync(
-    eventType: String,
-    handler: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
   def addHandlerAsync(
     eventType: String,
     handler: js.Any,
@@ -418,11 +169,6 @@ trait AppointmentCompose extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -433,6 +179,7 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
     *
@@ -472,11 +219,6 @@ trait AppointmentCompose extends Item {
   def addItemAttachmentAsync(
     itemId: js.Any,
     attachmentName: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
-  def addItemAttachmentAsync(
-    itemId: js.Any,
-    attachmentName: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
@@ -487,6 +229,33 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets an object that provides methods for manipulating the body of an item.
+    *
+    * [Api set: Mailbox 1.1]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var body: Body = js.native
+  
+  /**
+    * Gets an object that provides methods for managing the item's categories.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var categories: Categories = js.native
+  
   /**
     * Closes the current item that is being composed
     *
@@ -507,6 +276,7 @@ trait AppointmentCompose extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   def close(): Unit = js.native
+  
   /**
     * Disables the Outlook client signature.
     *
@@ -531,13 +301,46 @@ trait AppointmentCompose extends Item {
     * @beta
     */
   def disableClientSignatureAsync(): Unit = js.native
-  def disableClientSignatureAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def disableClientSignatureAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def disableClientSignatureAsync(options: AsyncContextOptions): Unit = js.native
   def disableClientSignatureAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  
+  /**
+    * Gets or sets the date and time that the appointment is to end.
+    *
+    * The `end` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
+    * You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
+    *
+    * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on
+    * the client to UTC for the server.
+    *
+    * **Important**: In the Windows client, you can't use this property to update the end of a recurrence.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var end: Time = js.native
+  
+  /**
+    * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation}
+    * object that provides methods to get, remove, or add locations on an item.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var enhancedLocation: EnhancedLocation = js.native
+  
   /**
     * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     *
@@ -572,10 +375,6 @@ trait AppointmentCompose extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
-  ): Unit = js.native
-  def getAttachmentContentAsync(
-    attachmentId: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
@@ -585,6 +384,7 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the item's attachments as an array.
     *
@@ -603,7 +403,6 @@ trait AppointmentCompose extends Item {
     *                 the failure.
     */
   def getAttachmentsAsync(): Unit = js.native
-  def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]): Unit = js.native
   def getAttachmentsAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]
@@ -613,6 +412,7 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]
   ): Unit = js.native
+  
   /**
     * Gets initialization data passed when the add-in is activated by an actionable message.
     *
@@ -640,13 +440,13 @@ trait AppointmentCompose extends Item {
     * @beta
     */
   def getInitializationContextAsync(): Unit = js.native
-  def getInitializationContextAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getInitializationContextAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Asynchronously gets the ID of a saved item.
     *
@@ -699,6 +499,7 @@ trait AppointmentCompose extends Item {
     *                   of type `Office.AsyncResult`.
     */
   def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
   def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedDataAsync(
     coercionType: String,
@@ -763,10 +564,14 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    * For more information around using this API, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.8]
     *
@@ -784,7 +589,10 @@ trait AppointmentCompose extends Item {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    * For more information around using this API, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.8]
     *
@@ -804,6 +612,22 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    *
+    * @beta
+    */
+  var isAllDayEvent: IsAllDayEvent = js.native
+  
   /**
     * Gets if the client signature is enabled.
     *
@@ -850,6 +674,20 @@ trait AppointmentCompose extends Item {
     * @beta
     */
   def isClientSignatureEnabledAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Boolean], Unit]): Unit = js.native
+  
+  /**
+    * Gets the type of item that an instance represents.
+    *
+    * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the `item` object instance is a message or an appointment.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var itemType: ItemType | String = js.native
+  
   /**
     * Asynchronously loads custom properties for this add-in on the selected item.
     *
@@ -874,6 +712,83 @@ trait AppointmentCompose extends Item {
     */
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit]): Unit = js.native
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: js.Any): Unit = js.native
+  
+  /**
+    * Gets or sets the location of an appointment. The `location` property returns a {@link Office.Location | Location} object that provides methods that are
+    * used to get and set the location of the appointment.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var location: Location = js.native
+  
+  /**
+    * Gets the notification messages for an item.
+    *
+    * [Api set: Mailbox 1.3]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var notificationMessages: NotificationMessages = js.native
+  
+  /**
+    * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
+    *
+    * The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the
+    * optional attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
+    * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var optionalAttendees: Recipients = js.native
+  
+  /**
+    * Gets the organizer for the specified meeting.
+    *
+    * The `organizer` property returns an {@link Office.Organizer | Organizer} object that provides a method to get the organizer value.
+    *
+    * [Api set: Mailbox 1.7]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var organizer: Organizer = js.native
+  
+  /**
+    * Gets or sets the recurrence pattern of an appointment.
+    *
+    * The `recurrence` property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance
+    * in a series. `null` is returned for single appointments and meeting requests of single appointments.
+    *
+    * **Note**: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`.
+    *
+    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single
+    * appointment and NOT a part of a series.
+    *
+    * [Api set: Mailbox 1.7]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var recurrence: Recurrence = js.native
+  
   /**
     * Removes an attachment from a message or appointment.
     *
@@ -903,7 +818,6 @@ trait AppointmentCompose extends Item {
     *                 If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
     */
   def removeAttachmentAsync(attachmentId: String): Unit = js.native
-  def removeAttachmentAsync(attachmentId: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeAttachmentAsync(
     attachmentId: String,
     options: js.UndefOr[scala.Nothing],
@@ -915,8 +829,8 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   def removeHandlerAsync(eventType: String): Unit = js.native
-  def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
     options: js.UndefOr[scala.Nothing],
@@ -948,7 +862,6 @@ trait AppointmentCompose extends Item {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
-  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
     options: js.UndefOr[scala.Nothing],
@@ -960,6 +873,22 @@ trait AppointmentCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
+    *
+    * The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the
+    * required attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
+    * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var requiredAttendees: Recipients = js.native
+  
   /**
     * Asynchronously saves an item.
     *
@@ -1031,6 +960,61 @@ trait AppointmentCompose extends Item {
     *                   type `Office.AsyncResult`.
     */
   def saveAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
+  /**
+    * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    *
+    * @beta
+    */
+  var sensitivity: Sensitivity = js.native
+  
+  /**
+    * Gets the id of the series that an instance belongs to.
+    *
+    * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
+    * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+    *
+    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
+    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+    *
+    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
+    * and returns `undefined` for any other items that are not meeting requests.
+    *
+    * [Api set: Mailbox 1.7]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var seriesId: String = js.native
+  
+  /**
+    * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    *
+    * @beta
+    */
+  var sessionData: SessionData = js.native
+  
   /**
     * Asynchronously inserts data into the body or subject of a message.
     *
@@ -1065,7 +1049,6 @@ trait AppointmentCompose extends Item {
     *                 type `Office.AsyncResult`.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
-  def setSelectedDataAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setSelectedDataAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
   def setSelectedDataAsync(
     data: String,
@@ -1077,5 +1060,38 @@ trait AppointmentCompose extends Item {
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets or sets the date and time that the appointment is to begin.
+    *
+    * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
+    * You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
+    *
+    * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on
+    * the client to UTC for the server.
+    *
+    * **Important**: In the Windows client, you can't use this property to update the start of a recurrence.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var start: Time = js.native
+  
+  /**
+    * Gets or sets the description that appears in the subject field of an item.
+    *
+    * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
+    *
+    * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var subject: Subject = js.native
 }
-

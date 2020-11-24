@@ -1,22 +1,15 @@
 package typings.tensorflowTfjsCore.modelTypesMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InferenceModel extends js.Object {
-  /**
-    * Return the array of input tensor info.
-    */
-  val inputs: js.Array[ModelTensorInfo] = js.native
-  /**
-    * Return the array of output tensor info.
-    */
-  val outputs: js.Array[ModelTensorInfo] = js.native
+  
   def execute(inputs: js.Array[Tensor[Rank]], outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: js.Array[Tensor[Rank]], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
@@ -40,6 +33,17 @@ trait InferenceModel extends js.Object {
   def execute(inputs: Tensor[Rank], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: NamedTensorMap, outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: NamedTensorMap, outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  
+  /**
+    * Return the array of input tensor info.
+    */
+  val inputs: js.Array[ModelTensorInfo] = js.native
+  
+  /**
+    * Return the array of output tensor info.
+    */
+  val outputs: js.Array[ModelTensorInfo] = js.native
+  
   def predict(inputs: js.Array[Tensor[Rank]], config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
   /**
     * Execute the inference for the input tensors.
@@ -63,4 +67,3 @@ trait InferenceModel extends js.Object {
   def predict(inputs: Tensor[Rank], config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
   def predict(inputs: NamedTensorMap, config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
 }
-

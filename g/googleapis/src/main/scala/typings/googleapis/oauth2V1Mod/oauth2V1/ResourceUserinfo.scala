@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oauth2/v1", "oauth2_v1.Resource$Userinfo")
 @js.native
 class ResourceUserinfo protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var v2: ResourceUserinfoV2 = js.native
+  
   /**
     * oauth2.userinfo.get
     * @desc Get user info
@@ -41,5 +42,6 @@ class ResourceUserinfo protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserinfoplus]
   ): Unit = js.native
+  
+  var v2: ResourceUserinfoV2 = js.native
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prepend-http" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prepend-http" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

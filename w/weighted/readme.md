@@ -12,7 +12,7 @@ A dead-simple module for picking a random item with weights.
 | Keywords           | simple, random, weighted, weights, ai, bot |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 86265 |
+| # downloads        | 88072 |
 | # stars            | 3 |
 
 ## Links

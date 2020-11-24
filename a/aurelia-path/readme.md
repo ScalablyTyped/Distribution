@@ -12,7 +12,7 @@ Utilities for path manipulation.
 | Keywords           | aurelia, path |
 | # releases         | 5 |
 | # dependents       | 37 |
-| # downloads        | 457451 |
+| # downloads        | 495715 |
 | # stars            | 0 |
 
 ## Links

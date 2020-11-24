@@ -3,13 +3,14 @@ package typings.kiiCloudSdk.KiiCloud
 import typings.kiiCloudSdk.anon.`24`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a server side code entry in KiiCloud.
   */
 @js.native
 trait KiiServerCodeEntry extends js.Object {
+  
   /**
     * Execute this server code entry.<br>
     *  If argument is an empty object or not type of Object, callbacks.failure or reject callback of promise will be called.<br>
@@ -78,6 +79,7 @@ trait KiiServerCodeEntry extends js.Object {
     */
   def execute[T](argument: T): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
   def execute[T](argument: T, callbacks: `24`[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  
   /**
     * Get the entryName of this server code entry.
     *
@@ -85,4 +87,3 @@ trait KiiServerCodeEntry extends js.Object {
     */
   def getEntryName(): String = js.native
 }
-

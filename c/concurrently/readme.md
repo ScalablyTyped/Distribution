@@ -10,9 +10,9 @@ Run commands concurrently
 | ------------------ | :-------------: |
 | Full name          | concurrently |
 | Keywords           | bash, concurrent, parallel, concurrently, command, sh |
-| # releases         | 11 |
-| # dependents       | 388 |
-| # downloads        | 30825609 |
+| # releases         | 10 |
+| # dependents       | 508 |
+| # downloads        | 47916289 |
 | # stars            | 152 |
 
 ## Links

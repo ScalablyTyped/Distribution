@@ -5,7 +5,7 @@ import typings.typesettable.anon.KinIYAlignnumber
 import typings.typesettable.contextsMod.IPenFactoryContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "Writer")
 @js.native
@@ -18,13 +18,14 @@ class Writer protected ()
     _wrapper: typings.typesettable.wrappersMod.Wrapper
   ) = this()
 }
-
 /* static members */
 @JSImport("typesettable", "Writer")
 @js.native
 object Writer extends js.Object {
+  
   var SupportedRotation: js.Any = js.native
+  
   var XOffsetFactor: KinIXAlignnumber = js.native
+  
   var YOffsetFactor: KinIYAlignnumber = js.native
 }
-

@@ -10,9 +10,9 @@ Wrap Node-callback functions to return Promises.
 | ------------------ | :-------------: |
 | Full name          | promisify-node |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 145 |
-| # downloads        | 1689933 |
+| # releases         | 0 |
+| # dependents       | 150 |
+| # downloads        | 2262394 |
 | # stars            | 14 |
 
 ## Links

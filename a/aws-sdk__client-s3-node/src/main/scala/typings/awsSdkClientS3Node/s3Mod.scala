@@ -160,13 +160,15 @@ import typings.awsSdkClientS3Node.typesUploadPartOutputMod.UploadPartOutput
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-s3-node/S3", JSImport.Namespace)
 @js.native
 object s3Mod extends js.Object {
+  
   @js.native
   class S3 () extends S3Client {
+    
     /**
       * <p>Aborts a multipart upload.</p> <p>To verify that all parts have been removed, so you don't get charged for the part storage, you should call the List Parts operation and ensure the parts list is empty.</p>
       *
@@ -179,6 +181,7 @@ object s3Mod extends js.Object {
       args: AbortMultipartUploadInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AbortMultipartUploadOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Completes a multipart upload by assembling previously uploaded parts.</p>
       *
@@ -190,6 +193,7 @@ object s3Mod extends js.Object {
       args: CompleteMultipartUploadInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CompleteMultipartUploadOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Creates a copy of an object that is already stored in Amazon S3.</p>
       *
@@ -202,6 +206,7 @@ object s3Mod extends js.Object {
       args: CopyObjectInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CopyObjectOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Creates a new bucket.</p>
       *
@@ -215,6 +220,7 @@ object s3Mod extends js.Object {
       args: CreateBucketInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateBucketOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Initiates a multipart upload and returns an upload ID.</p> <p> <b>Note:</b> After you initiate multipart upload and upload one or more parts, you must either complete or abort multipart upload in order to stop getting charged for storage of the uploaded parts. Only after you either complete or abort multipart upload, Amazon S3 frees up the parts storage and stops charging you for the parts storage.</p>
       *
@@ -226,6 +232,7 @@ object s3Mod extends js.Object {
       args: CreateMultipartUploadInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateMultipartUploadOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the bucket. All objects (including all object versions and Delete Markers) in the bucket must be deleted before the bucket itself can be deleted.</p>
       *
@@ -237,6 +244,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes an analytics configuration for the bucket (specified by the analytics configuration ID).</p>
       *
@@ -252,6 +260,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the cors configuration information set for the bucket.</p>
       *
@@ -263,6 +272,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketCorsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketCorsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the server-side encryption configuration from the bucket.</p>
       *
@@ -274,6 +284,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketEncryptionInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketEncryptionOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes an inventory configuration (identified by the inventory ID) from the bucket.</p>
       *
@@ -289,6 +300,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the lifecycle configuration from the bucket.</p>
       *
@@ -300,6 +312,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketLifecycleInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketLifecycleOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes a metrics configuration (specified by the metrics configuration ID) from the bucket.</p>
       *
@@ -315,6 +328,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the policy from the bucket.</p>
       *
@@ -326,6 +340,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketPolicyInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketPolicyOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the replication configuration from the bucket.</p>
       *
@@ -337,6 +352,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketReplicationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketReplicationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deletes the tags from the bucket.</p>
       *
@@ -348,6 +364,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketTaggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketTaggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>This operation removes the website configuration from the bucket.</p>
       *
@@ -359,6 +376,7 @@ object s3Mod extends js.Object {
       args: DeleteBucketWebsiteInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketWebsiteOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Removes the null version (if there is one) of an object and inserts a delete marker, which becomes the latest version of the object. If there isn't a null version, Amazon S3 does not remove any objects.</p>
       *
@@ -370,6 +388,7 @@ object s3Mod extends js.Object {
       args: DeleteObjectInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteObjectOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Removes the tag-set from an existing object.</p>
       *
@@ -381,6 +400,7 @@ object s3Mod extends js.Object {
       args: DeleteObjectTaggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteObjectTaggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>This operation enables you to delete multiple objects from a bucket using a single HTTP request. You may specify up to 1000 keys.</p>
       *
@@ -392,6 +412,7 @@ object s3Mod extends js.Object {
       args: DeleteObjectsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteObjectsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the accelerate configuration of a bucket.</p>
       *
@@ -407,6 +428,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Gets the access control policy for the bucket.</p>
       *
@@ -418,6 +440,7 @@ object s3Mod extends js.Object {
       args: GetBucketAclInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketAclOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Gets an analytics configuration for the bucket (specified by the analytics configuration ID).</p>
       *
@@ -429,6 +452,7 @@ object s3Mod extends js.Object {
       args: GetBucketAnalyticsConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketAnalyticsConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the cors configuration for the bucket.</p>
       *
@@ -440,6 +464,7 @@ object s3Mod extends js.Object {
       args: GetBucketCorsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketCorsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the server-side encryption configuration of a bucket.</p>
       *
@@ -451,6 +476,7 @@ object s3Mod extends js.Object {
       args: GetBucketEncryptionInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketEncryptionOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns an inventory configuration (identified by the inventory ID) from the bucket.</p>
       *
@@ -462,6 +488,7 @@ object s3Mod extends js.Object {
       args: GetBucketInventoryConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketInventoryConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deprecated, see the GetBucketLifecycleConfiguration operation.</p>
       *
@@ -473,6 +500,7 @@ object s3Mod extends js.Object {
       args: GetBucketLifecycleInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLifecycleOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the lifecycle configuration information set on the bucket.</p>
       *
@@ -484,6 +512,7 @@ object s3Mod extends js.Object {
       args: GetBucketLifecycleConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLifecycleConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the region the bucket resides in.</p>
       *
@@ -495,6 +524,7 @@ object s3Mod extends js.Object {
       args: GetBucketLocationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLocationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the logging status of a bucket and the permissions users have to view and modify that status. To use GET, you must be the bucket owner.</p>
       *
@@ -506,6 +536,7 @@ object s3Mod extends js.Object {
       args: GetBucketLoggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLoggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Gets a metrics configuration (specified by the metrics configuration ID) from the bucket.</p>
       *
@@ -517,6 +548,7 @@ object s3Mod extends js.Object {
       args: GetBucketMetricsConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketMetricsConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deprecated, see the GetBucketNotificationConfiguration operation.</p>
       *
@@ -528,6 +560,7 @@ object s3Mod extends js.Object {
       args: GetBucketNotificationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketNotificationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the notification configuration of a bucket.</p>
       *
@@ -543,6 +576,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Returns the policy of a specified bucket.</p>
       *
@@ -554,6 +588,7 @@ object s3Mod extends js.Object {
       args: GetBucketPolicyInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketPolicyOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the replication configuration of a bucket.</p>
       *
@@ -565,6 +600,7 @@ object s3Mod extends js.Object {
       args: GetBucketReplicationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketReplicationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the request payment configuration of a bucket.</p>
       *
@@ -576,6 +612,7 @@ object s3Mod extends js.Object {
       args: GetBucketRequestPaymentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketRequestPaymentOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the tag set associated with the bucket.</p>
       *
@@ -587,6 +624,7 @@ object s3Mod extends js.Object {
       args: GetBucketTaggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketTaggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the versioning state of a bucket.</p>
       *
@@ -598,6 +636,7 @@ object s3Mod extends js.Object {
       args: GetBucketVersioningInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketVersioningOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the website configuration for a bucket.</p>
       *
@@ -609,6 +648,7 @@ object s3Mod extends js.Object {
       args: GetBucketWebsiteInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketWebsiteOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Retrieves objects from Amazon S3.</p>
       *
@@ -621,6 +661,7 @@ object s3Mod extends js.Object {
       args: GetObjectInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectOutput[Readable]], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the access control list (ACL) of an object.</p>
       *
@@ -633,6 +674,7 @@ object s3Mod extends js.Object {
       args: GetObjectAclInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectAclOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns the tag-set of an object.</p>
       *
@@ -644,6 +686,7 @@ object s3Mod extends js.Object {
       args: GetObjectTaggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectTaggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Return torrent files from a bucket.</p>
       *
@@ -655,6 +698,7 @@ object s3Mod extends js.Object {
       args: GetObjectTorrentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectTorrentOutput[Readable]], Unit]
     ): Unit = js.native
+    
     /**
       * <p>This operation is useful to determine if a bucket exists and you have permission to access it.</p>
       *
@@ -667,6 +711,7 @@ object s3Mod extends js.Object {
       args: HeadBucketInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[HeadBucketOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>The HEAD operation retrieves metadata from an object without returning the object itself. This operation is useful if you're only interested in an object's metadata. To use HEAD, you must have READ access to the object.</p>
       *
@@ -679,6 +724,7 @@ object s3Mod extends js.Object {
       args: HeadObjectInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[HeadObjectOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Lists the analytics configurations for the bucket.</p>
       *
@@ -694,6 +740,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Returns a list of inventory configurations for the bucket.</p>
       *
@@ -709,6 +756,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Lists the metrics configurations for the bucket.</p>
       *
@@ -720,6 +768,7 @@ object s3Mod extends js.Object {
       args: ListBucketMetricsConfigurationsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBucketMetricsConfigurationsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns a list of all buckets owned by the authenticated sender of the request.</p>
       *
@@ -731,6 +780,7 @@ object s3Mod extends js.Object {
       args: ListBucketsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBucketsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>This operation lists in-progress multipart uploads.</p>
       *
@@ -742,6 +792,7 @@ object s3Mod extends js.Object {
       args: ListMultipartUploadsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListMultipartUploadsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns metadata about all of the versions of objects in a bucket.</p>
       *
@@ -753,6 +804,7 @@ object s3Mod extends js.Object {
       args: ListObjectVersionsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListObjectVersionsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns some or all (up to 1000) of the objects in a bucket. You can use the request parameters as selection criteria to return a subset of the objects in a bucket.</p>
       *
@@ -765,6 +817,7 @@ object s3Mod extends js.Object {
       args: ListObjectsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListObjectsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Returns some or all (up to 1000) of the objects in a bucket. You can use the request parameters as selection criteria to return a subset of the objects in a bucket. Note: ListObjectsV2 is the revised List Objects API and we recommend you use this revised API for new application development.</p>
       *
@@ -777,6 +830,7 @@ object s3Mod extends js.Object {
       args: ListObjectsV2Input,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListObjectsV2Output], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Lists the parts that have been uploaded for a specific multipart upload.</p>
       *
@@ -788,6 +842,7 @@ object s3Mod extends js.Object {
       args: ListPartsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListPartsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets the accelerate configuration of an existing bucket.</p>
       *
@@ -803,6 +858,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Sets the permissions on a bucket using access control lists (ACL).</p>
       *
@@ -814,6 +870,7 @@ object s3Mod extends js.Object {
       args: PutBucketAclInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketAclOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets an analytics configuration for the bucket (specified by the analytics configuration ID).</p>
       *
@@ -825,6 +882,7 @@ object s3Mod extends js.Object {
       args: PutBucketAnalyticsConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketAnalyticsConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets the cors configuration for a bucket.</p>
       *
@@ -836,6 +894,7 @@ object s3Mod extends js.Object {
       args: PutBucketCorsInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketCorsOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Creates a new server-side encryption configuration (or replaces an existing one, if present).</p>
       *
@@ -847,6 +906,7 @@ object s3Mod extends js.Object {
       args: PutBucketEncryptionInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketEncryptionOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Adds an inventory configuration (identified by the inventory ID) from the bucket.</p>
       *
@@ -858,6 +918,7 @@ object s3Mod extends js.Object {
       args: PutBucketInventoryConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketInventoryConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deprecated, see the PutBucketLifecycleConfiguration operation.</p>
       *
@@ -869,6 +930,7 @@ object s3Mod extends js.Object {
       args: PutBucketLifecycleInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketLifecycleOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets lifecycle configuration for your bucket. If a lifecycle configuration exists, it replaces it.</p>
       *
@@ -880,6 +942,7 @@ object s3Mod extends js.Object {
       args: PutBucketLifecycleConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketLifecycleConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Set the logging parameters for a bucket and to specify permissions for who can view and modify the logging parameters. To set the logging status of a bucket, you must be the bucket owner.</p>
       *
@@ -891,6 +954,7 @@ object s3Mod extends js.Object {
       args: PutBucketLoggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketLoggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets a metrics configuration (specified by the metrics configuration ID) for the bucket.</p>
       *
@@ -902,6 +966,7 @@ object s3Mod extends js.Object {
       args: PutBucketMetricsConfigurationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketMetricsConfigurationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Deprecated, see the PutBucketNotificationConfiguraiton operation.</p>
       *
@@ -913,6 +978,7 @@ object s3Mod extends js.Object {
       args: PutBucketNotificationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketNotificationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Enables notifications of specified events for a bucket.</p>
       *
@@ -928,6 +994,7 @@ object s3Mod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * <p>Replaces a policy on a bucket. If the bucket already has a policy, the one in this request completely replaces it.</p>
       *
@@ -939,6 +1006,7 @@ object s3Mod extends js.Object {
       args: PutBucketPolicyInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketPolicyOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p> Creates a new replication configuration (or replaces an existing one, if present). For more information, see <a href=" https://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html">Cross-Region Replication (CRR)</a> in the Amazon S3 Developer Guide. </p>
       *
@@ -950,6 +1018,7 @@ object s3Mod extends js.Object {
       args: PutBucketReplicationInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketReplicationOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets the request payment configuration for a bucket. By default, the bucket owner pays for downloads from the bucket. This configuration parameter enables the bucket owner (only) to specify that the person requesting the download will be charged for the download. Documentation on requester pays buckets can be found at http://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html</p>
       *
@@ -961,6 +1030,7 @@ object s3Mod extends js.Object {
       args: PutBucketRequestPaymentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketRequestPaymentOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets the tags for a bucket.</p>
       *
@@ -972,6 +1042,7 @@ object s3Mod extends js.Object {
       args: PutBucketTaggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketTaggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets the versioning state of an existing bucket. To set the versioning state, you must be the bucket owner.</p>
       *
@@ -983,6 +1054,7 @@ object s3Mod extends js.Object {
       args: PutBucketVersioningInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketVersioningOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Set the website configuration for a bucket.</p>
       *
@@ -994,6 +1066,7 @@ object s3Mod extends js.Object {
       args: PutBucketWebsiteInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketWebsiteOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Adds an object to a bucket.</p>
       *
@@ -1005,6 +1078,7 @@ object s3Mod extends js.Object {
       args: PutObjectInput[Readable],
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutObjectOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>uses the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket</p>
       *
@@ -1017,6 +1091,7 @@ object s3Mod extends js.Object {
       args: PutObjectAclInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutObjectAclOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Sets the supplied tag-set to an object that already exists in a bucket</p>
       *
@@ -1028,6 +1103,7 @@ object s3Mod extends js.Object {
       args: PutObjectTaggingInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutObjectTaggingOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Restores an archived copy of an object back into Amazon S3</p>
       *
@@ -1040,6 +1116,7 @@ object s3Mod extends js.Object {
       args: RestoreObjectInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RestoreObjectOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>This operation filters the contents of an Amazon S3 object based on a simple Structured Query Language (SQL) statement. In the request, along with the SQL expression, you must also specify a data serialization format (JSON or CSV) of the object. Amazon S3 uses this to parse object data into records, and returns only records that match the specified SQL expression. You must also specify the data serialization format for the response.</p>
       *
@@ -1051,6 +1128,7 @@ object s3Mod extends js.Object {
       args: SelectObjectContentInput,
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SelectObjectContentOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Uploads a part in a multipart upload.</p> <p> <b>Note:</b> After you initiate multipart upload and upload one or more parts, you must either complete or abort multipart upload in order to stop getting charged for storage of the uploaded parts. Only after you either complete or abort multipart upload, Amazon S3 frees up the parts storage and stops charging you for the parts storage.</p>
       *
@@ -1062,6 +1140,7 @@ object s3Mod extends js.Object {
       args: UploadPartInput[Readable],
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UploadPartOutput], Unit]
     ): Unit = js.native
+    
     /**
       * <p>Uploads a part by copying data from an existing object as data source.</p>
       *
@@ -1074,6 +1153,4 @@ object s3Mod extends js.Object {
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UploadPartCopyOutput], Unit]
     ): Unit = js.native
   }
-  
 }
-

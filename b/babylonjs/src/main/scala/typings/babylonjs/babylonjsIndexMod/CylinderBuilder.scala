@@ -3,17 +3,17 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.Cap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "CylinderBuilder")
 @js.native
 class CylinderBuilder ()
   extends typings.babylonjs.buildersIndexMod.CylinderBuilder
-
 /* static members */
 @JSImport("babylonjs/Meshes/index", "CylinderBuilder")
 @js.native
 object CylinderBuilder extends js.Object {
+  
   /**
     * Creates a cylinder or a cone mesh
     * * The parameter `height` sets the height size (float) of the cylinder/cone (float, default 2).
@@ -44,4 +44,3 @@ object CylinderBuilder extends js.Object {
     */
   def CreateCylinder(name: String, options: Cap, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
 }
-

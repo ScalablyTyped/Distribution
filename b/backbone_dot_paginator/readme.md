@@ -10,9 +10,9 @@ A pageable Backbone.Collection superset. Supports server-side/client-side/infini
 | ------------------ | :-------------: |
 | Full name          | backbone.paginator |
 | Keywords           | backbone |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 388049 |
+| # downloads        | 435713 |
 | # stars            | 0 |
 
 ## Links

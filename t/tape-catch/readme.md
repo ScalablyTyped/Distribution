@@ -12,7 +12,7 @@ a wrapper around tape that catches and reports exceptions
 | Keywords           | tape, exception, catch |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 228917 |
+| # downloads        | 220874 |
 | # stars            | 1 |
 
 ## Links

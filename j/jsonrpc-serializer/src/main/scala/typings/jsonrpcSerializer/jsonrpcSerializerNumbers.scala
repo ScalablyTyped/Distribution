@@ -3,9 +3,25 @@ package typings.jsonrpcSerializer
 import typings.jsonrpcSerializer.mod.err.ErrorCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonrpcSerializerNumbers {
+  
+  @scala.inline
+  def `-32600`: `-32600` = -32600.asInstanceOf[`-32600`]
+  
+  @scala.inline
+  def `-32601`: `-32601` = -32601.asInstanceOf[`-32601`]
+  
+  @scala.inline
+  def `-32602`: `-32602` = -32602.asInstanceOf[`-32602`]
+  
+  @scala.inline
+  def `-32603`: `-32603` = -32603.asInstanceOf[`-32603`]
+  
+  @scala.inline
+  def `-32700`: `-32700` = -32700.asInstanceOf[`-32700`]
+  
   @js.native
   sealed trait `-32600` extends ErrorCode
   
@@ -20,16 +36,4 @@ object jsonrpcSerializerNumbers {
   
   @js.native
   sealed trait `-32700` extends ErrorCode
-  
-  @scala.inline
-  def `-32600`: `-32600` = -32600.asInstanceOf[`-32600`]
-  @scala.inline
-  def `-32601`: `-32601` = -32601.asInstanceOf[`-32601`]
-  @scala.inline
-  def `-32602`: `-32602` = -32602.asInstanceOf[`-32602`]
-  @scala.inline
-  def `-32603`: `-32603` = -32603.asInstanceOf[`-32603`]
-  @scala.inline
-  def `-32700`: `-32700` = -32700.asInstanceOf[`-32700`]
 }
-

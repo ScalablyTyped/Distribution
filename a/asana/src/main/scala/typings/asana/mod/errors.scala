@@ -3,11 +3,12 @@ package typings.asana.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asana", "errors")
 @js.native
 object errors extends js.Object {
+  
   @js.native
   class AsanaError protected () extends Error {
     /**
@@ -15,11 +16,9 @@ object errors extends js.Object {
       * @return
       */
     def this(message: js.Any) = this()
+    
     var code: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
+    
     var value: js.Any = js.native
   }
   
@@ -76,6 +75,4 @@ object errors extends js.Object {
       */
     def this(value: js.Any) = this()
   }
-  
 }
-

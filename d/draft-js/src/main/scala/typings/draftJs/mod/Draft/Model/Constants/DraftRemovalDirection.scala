@@ -2,7 +2,7 @@ package typings.draftJs.mod.Draft.Model.Constants
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type that allows us to avoid passing boolean arguments
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
   - typings.draftJs.draftJsStrings.forward
 */
 trait DraftRemovalDirection extends js.Object
-
 object DraftRemovalDirection {
+  
   @scala.inline
   def backward: typings.draftJs.draftJsStrings.backward = "backward".asInstanceOf[typings.draftJs.draftJsStrings.backward]
+  
   @scala.inline
   def forward: typings.draftJs.draftJsStrings.forward = "forward".asInstanceOf[typings.draftJs.draftJsStrings.forward]
 }
-

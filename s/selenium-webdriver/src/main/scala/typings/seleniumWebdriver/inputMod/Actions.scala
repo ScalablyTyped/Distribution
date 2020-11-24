@@ -9,7 +9,7 @@ import typings.seleniumWebdriver.mod.ILocation
 import typings.seleniumWebdriver.mod.WebElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/lib/input", "Actions")
 @js.native
@@ -19,12 +19,14 @@ class Actions protected () extends js.Object {
   def this(executor: Executor, options: Async) = this()
   def this(executor: Executor, options: AsyncBoolean) = this()
   def this(executor: Executor, options: Bridge) = this()
+  
   /**
     * Executes this action sequence.
     * @return {!Promise} A promise that will be resolved once
     *     this sequence has completed.
     */
   def clear(): js.Promise[Unit] = js.native
+  
   /**
     * Clicks a mouse button.
     *
@@ -48,6 +50,7 @@ class Actions protected () extends js.Object {
   def click(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def click(opt_elementOrButton: WebElement): Actions = js.native
   def click(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
+  
   /**
     * Short-hand for performing a simple right-click (down/up) with the mouse.
     *
@@ -59,6 +62,7 @@ class Actions protected () extends js.Object {
   def contextClick(): Actions = js.native
   def contextClick(opt_elementOrButton: String): Actions = js.native
   def contextClick(opt_elementOrButton: WebElement): Actions = js.native
+  
   /**
     * Double-clicks a mouse button.
     *
@@ -85,6 +89,7 @@ class Actions protected () extends js.Object {
   def doubleClick(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def doubleClick(opt_elementOrButton: WebElement): Actions = js.native
   def doubleClick(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
+  
   /**
     * Convenience function for performing a 'drag and drop' manuever. The target
     * element may be moved to the location of another element, or by an offset (in
@@ -93,6 +98,7 @@ class Actions protected () extends js.Object {
   def dragAndDrop(from: WebElement): Actions = js.native
   def dragAndDrop(from: WebElement, to: X): Actions = js.native
   def dragAndDrop(from: WebElement, to: WebElement): Actions = js.native
+  
   /**
     * Performs a modifier key press. The modifier key is <em>not released</em>
     * until {@link #keyUp} or {@link #sendKeys} is called. The key press will be
@@ -103,6 +109,7 @@ class Actions protected () extends js.Object {
     * @throws {Error} If the key is not a valid modifier key.
     */
   def keyDown(key: String): Actions = js.native
+  
   /**
     * Performs a modifier key release. The release is targetted at the currently
     * focused element.
@@ -112,10 +119,13 @@ class Actions protected () extends js.Object {
     * @throws {Error} If the key is not a valid modifier key.
     */
   def keyUp(key: String): Actions = js.native
+  
   // endregion
   // region Methods
   def keyboard(): Keyboard = js.native
+  
   def mouse(): Pointer = js.native
+  
   /**
     * Presses a mouse button. The mouse button will not be released until
     * {@link #mouseUp} is called, regardless of whether that call is made in this
@@ -145,6 +155,7 @@ class Actions protected () extends js.Object {
   def mouseDown(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def mouseDown(opt_elementOrButton: WebElement): Actions = js.native
   def mouseDown(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
+  
   def mouseMove(location: ILocation): Actions = js.native
   def mouseMove(location: ILocation, opt_offset: ILocation): Actions = js.native
   /**
@@ -164,6 +175,7 @@ class Actions protected () extends js.Object {
     */
   def mouseMove(location: WebElement): Actions = js.native
   def mouseMove(location: WebElement, opt_offset: ILocation): Actions = js.native
+  
   /**
     * Releases a mouse button. Behavior is undefined for calling this function
     * without a previous call to {@link #mouseDown}.
@@ -191,6 +203,7 @@ class Actions protected () extends js.Object {
   def mouseUp(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def mouseUp(opt_elementOrButton: WebElement): Actions = js.native
   def mouseUp(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
+  
   /**
     * Inserts an action for moving the mouse `x` and `y` pixels relative to the
     * specified `origin`. The `origin` may be defined as the mouse's
@@ -207,27 +220,32 @@ class Actions protected () extends js.Object {
     *     corner of the viewport over 100ms.
     */
   def move(direction: IDirection): Actions = js.native
+  
   def pause(duration: js.UndefOr[scala.Nothing], devices: Device*): Actions = js.native
   def pause(duration: Double, devices: Device*): Actions = js.native
   def pause(duration: Device, devices: Device*): Actions = js.native
+  
   /**
     * Executes this action sequence.
     * @return {!Promise} A promise that will be resolved once
     *     this sequence has completed.
     */
   def perform(): js.Promise[Unit] = js.native
+  
   /**
     * Inserts an action to press a mouse button at the mouse's current location.
     * Defaults to `LEFT`.
     */
   def press(): Actions = js.native
   def press(button: Button): Actions = js.native
+  
   /**
     * Inserts an action to release a mouse button at the mouse's current
     * location.  Defaults to `LEFT`.
     */
   def release(): Actions = js.native
   def release(button: Button): Actions = js.native
+  
   /**
     * Simulates typing multiple keys. Each modifier key encountered in the
     * sequence will not be released until it is encountered again. All key events
@@ -240,4 +258,3 @@ class Actions protected () extends js.Object {
     */
   def sendKeys(var_args: (String | js.Promise[String])*): Actions = js.native
 }
-

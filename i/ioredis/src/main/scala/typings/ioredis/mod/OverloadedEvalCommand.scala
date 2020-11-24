@@ -2,10 +2,11 @@ package typings.ioredis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OverloadedEvalCommand[T, U] extends js.Object {
+  
   // This overload exists specifically to retain compatibility to `redlock`
   // All arguments are by default flattened, declaring all possible permuatations
   // would be unreasonable (and probably impossible)
@@ -31,4 +32,3 @@ trait OverloadedEvalCommand[T, U] extends js.Object {
   def apply(script: String, numKeys: Double, arg1: js.Array[T], cb: Callback[U]): Unit = js.native
   def apply(script: String, numKeys: Double, args: T*): js.Promise[U] = js.native
 }
-

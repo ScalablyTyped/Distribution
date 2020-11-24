@@ -5,7 +5,7 @@ import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "Channel")
 @js.native
@@ -19,10 +19,12 @@ class Channel protected () extends js.Object {
     * @param options A map of channel options that will be passed to the core
     */
   def this(target: String, credentials: ChannelCredentials, options: StringDictionary[String | Double]) = this()
+  
   /**
     * Close the channel. This has the same functionality as the existing grpc.Client.prototype.close
     */
   def close(): Unit = js.native
+  
   def createCall(method: String, deadline: Double): Call = js.native
   def createCall(method: String, deadline: Double, host: String): Call = js.native
   def createCall(method: String, deadline: Double, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
@@ -52,6 +54,7 @@ class Channel protected () extends js.Object {
   def createCall(method: String, deadline: Date, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
   def createCall(method: String, deadline: Date, host: Null, parentCall: Call): Call = js.native
   def createCall(method: String, deadline: Date, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
+  
   /**
     * Get the channel's current connectivity state.
     * @param tryToConnect If true, the channel will start connecting if it is
@@ -59,10 +62,12 @@ class Channel protected () extends js.Object {
     *     call starts.
     */
   def getConnectivityState(tryToConnect: Boolean): connectivityState = js.native
+  
   /**
     * Return the target that this channel connects to
     */
   def getTarget(): String = js.native
+  
   def watchConnectivityState(
     currentState: connectivityState,
     deadline: Double,
@@ -83,4 +88,3 @@ class Channel protected () extends js.Object {
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
   ): Unit = js.native
 }
-

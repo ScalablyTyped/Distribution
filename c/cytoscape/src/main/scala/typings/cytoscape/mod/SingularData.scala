@@ -2,13 +2,14 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/data
   */
 @js.native
 trait SingularData extends js.Object {
+  
   /**
     * Get a particular data field for the element.
     * @param name The name of the field to get.
@@ -26,6 +27,7 @@ trait SingularData extends js.Object {
     * @param obj The object containing name- value pairs to update data fields.
     */
   def attr(obj: js.Any): this.type = js.native
+  
   /**
     * Read and write developer-defined data associated with the elements
     * http://js.cytoscape.org/#eles.data
@@ -47,6 +49,7 @@ trait SingularData extends js.Object {
     * @param obj The object containing name- value pairs to update data fields.
     */
   def data(obj: js.Any): this.type = js.native
+  
   /**
     * Get the group string that defines the type of the element.
     *
@@ -56,26 +59,31 @@ trait SingularData extends js.Object {
     * http://js.cytoscape.org/#ele.group
     */
   def group(): ElementGroup = js.native
+  
   /**
     * A shortcut to get the ID of an element.
     * http://js.cytoscape.org/#ele.id
     */
   def id(): String = js.native
+  
   /**
     * Get whether the element is an edge.
     * http://js.cytoscape.org/#ele.isEdge
     */
   def isEdge(): /* is cytoscape.cytoscape.EdgeSingular */ Boolean = js.native
+  
   /**
     * Get whether the element is a node.
     * http://js.cytoscape.org/#ele.isNode
     */
   def isNode(): /* is cytoscape.cytoscape.NodeSingular */ Boolean = js.native
+  
   /**
     * Get the element's plain JavaScript object representation.
     * http://js.cytoscape.org/#ele.json
     */
   def json(): String = js.native
+  
   /**
     * Remove scratchpad data.
     * You should remove scratchpad data only at your own namespaces.
@@ -83,6 +91,7 @@ trait SingularData extends js.Object {
     * @param namespace A namespace string.
     */
   def removeScratch(namespace: String): this.type = js.native
+  
   /**
     * Get or set the scratchpad at a particular namespace,
     * where temporary or non-JSON data can be stored.
@@ -97,4 +106,3 @@ trait SingularData extends js.Object {
   def scratch(namespace: String): Scratchpad = js.native
   def scratch(namespace: String, value: js.Any): this.type = js.native
 }
-

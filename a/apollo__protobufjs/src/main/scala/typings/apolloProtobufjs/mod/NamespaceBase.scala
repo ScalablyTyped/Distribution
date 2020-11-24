@@ -3,15 +3,12 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "NamespaceBase")
 @js.native
 abstract class NamespaceBase () extends ReflectionObject {
-  /** Nested objects by name. */
-  var nested: js.UndefOr[StringDictionary[ReflectionObject]] = js.native
-  /** Nested objects of this namespace as an array for iteration. */
-  val nestedArray: js.Array[ReflectionObject] = js.native
+  
   /**
     * Adds a nested object to this namespace.
     * @param object Nested object to add
@@ -20,12 +17,14 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @throws {Error} If there is already a nested object with this name
     */
   def add(`object`: ReflectionObject): Namespace = js.native
+  
   /**
     * Adds nested objects to this namespace from nested object descriptors.
     * @param nestedJson Any nested object descriptors
     * @returns `this`
     */
-  def addJSON(nestedJson: StringDictionary[AnyNestedObject]): Namespace = js.native
+  def addJSON(nestedJson: StringDictionary[js.UndefOr[AnyNestedObject]]): Namespace = js.native
+  
   /**
     * Defines additial namespaces within this one if not yet existing.
     * @param path Path to create
@@ -36,12 +35,14 @@ abstract class NamespaceBase () extends ReflectionObject {
   def define(path: String, json: js.Any): Namespace = js.native
   def define(path: js.Array[String]): Namespace = js.native
   def define(path: js.Array[String], json: js.Any): Namespace = js.native
+  
   /**
     * Gets the nested object of the specified name.
     * @param name Nested object name
     * @returns The reflection object or `null` if it doesn't exist
     */
   def get(name: String): ReflectionObject | Null = js.native
+  
   /**
     * Gets the values of the nested {@link Enum|enum} of the specified name.
     * This methods differs from {@link Namespace#get|get} in that it returns an enum's values directly and throws instead of returning `null`.
@@ -49,7 +50,8 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @returns Enum values
     * @throws {Error} If there is no such enum
     */
-  def getEnum(name: String): StringDictionary[Double] = js.native
+  def getEnum(name: String): StringDictionary[js.UndefOr[Double]] = js.native
+  
   /**
     * Looks up the reflection object at the specified path, relative to this namespace.
     * @param path Path to look up
@@ -75,6 +77,7 @@ abstract class NamespaceBase () extends ReflectionObject {
   def lookup(path: js.Array[String], filterTypes: js.Array[_]): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  
   /**
     * Looks up the values of the {@link Enum|enum} at the specified path, relative to this namespace.
     * Besides its signature, this methods differs from {@link Namespace#lookup|lookup} in that it throws instead of returning `null`.
@@ -84,6 +87,7 @@ abstract class NamespaceBase () extends ReflectionObject {
     */
   def lookupEnum(path: String): Enum = js.native
   def lookupEnum(path: js.Array[String]): Enum = js.native
+  
   /**
     * Looks up the {@link Service|service} at the specified path, relative to this namespace.
     * Besides its signature, this methods differs from {@link Namespace#lookup|lookup} in that it throws instead of returning `null`.
@@ -93,6 +97,7 @@ abstract class NamespaceBase () extends ReflectionObject {
     */
   def lookupService(path: String): Service = js.native
   def lookupService(path: js.Array[String]): Service = js.native
+  
   /**
     * Looks up the {@link Type|type} at the specified path, relative to this namespace.
     * Besides its signature, this methods differs from {@link Namespace#lookup|lookup} in that it throws instead of returning `null`.
@@ -102,6 +107,7 @@ abstract class NamespaceBase () extends ReflectionObject {
     */
   def lookupType(path: String): Type = js.native
   def lookupType(path: js.Array[String]): Type = js.native
+  
   /**
     * Looks up the {@link Type|type} or {@link Enum|enum} at the specified path, relative to this namespace.
     * Besides its signature, this methods differs from {@link Namespace#lookup|lookup} in that it throws instead of returning `null`.
@@ -111,6 +117,13 @@ abstract class NamespaceBase () extends ReflectionObject {
     */
   def lookupTypeOrEnum(path: String): Type = js.native
   def lookupTypeOrEnum(path: js.Array[String]): Type = js.native
+  
+  /** Nested objects by name. */
+  var nested: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]] = js.native
+  
+  /** Nested objects of this namespace as an array for iteration. */
+  val nestedArray: js.Array[ReflectionObject] = js.native
+  
   /**
     * Removes a nested object from this namespace.
     * @param object Nested object to remove
@@ -119,11 +132,12 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @throws {Error} If `object` is not a member of this namespace
     */
   def remove(`object`: ReflectionObject): Namespace = js.native
+  
   /**
     * Resolves this namespace's and all its nested objects' type references. Useful to validate a reflection tree, but comes at a cost.
     * @returns `this`
     */
   def resolveAll(): Namespace = js.native
+  
   def toJSON(toJSONOptions: IToJSONOptions): INamespace = js.native
 }
-

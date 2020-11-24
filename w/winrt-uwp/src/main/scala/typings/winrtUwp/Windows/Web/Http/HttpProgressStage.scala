@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Web.Http
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HttpProgressStage extends js.Object
-
 /** Indicates the step in the progress for an HTTP connection. */
 @JSGlobal("Windows.Web.Http.HttpProgressStage")
 @js.native
 object HttpProgressStage extends js.Object {
+  
   /** The socket used for the HTTP connection is connecting to the server. */
   @js.native
   sealed trait connectingToServer extends HttpProgressStage
@@ -50,6 +50,4 @@ object HttpProgressStage extends js.Object {
   /** The HTTP client is waiting for a response from the server. */
   @js.native
   sealed trait waitingForResponse extends HttpProgressStage
-  
 }
-

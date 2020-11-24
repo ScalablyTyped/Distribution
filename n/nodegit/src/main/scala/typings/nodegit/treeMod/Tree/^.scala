@@ -5,13 +5,16 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeEntryMod.TreeEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit/tree", "Tree")
 @js.native
 object ^ extends js.Object {
+  
   def entryCmp(tree1: TreeEntry, tree2: TreeEntry): Double = js.native
+  
   def entryDup(dest: TreeEntry, source: TreeEntry): Double = js.native
+  
   /**
     * Retrieves the tree pointed to by the oid
     */
@@ -21,6 +24,6 @@ object ^ extends js.Object {
   def lookup(repo: Repository, id: Oid, callback: js.Function): js.Promise[typings.nodegit.treeMod.Tree] = js.native
   def lookup(repo: Repository, id: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.treeMod.Tree] = js.native
   def lookup(repo: Repository, id: typings.nodegit.treeMod.Tree, callback: js.Function): js.Promise[typings.nodegit.treeMod.Tree] = js.native
+  
   def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[typings.nodegit.treeMod.Tree] = js.native
 }
-

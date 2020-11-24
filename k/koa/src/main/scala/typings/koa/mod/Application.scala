@@ -11,21 +11,11 @@ import typings.node.netMod.ListenOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Application[StateT, CustomT] extends EventEmitter {
-  var context: BaseContext with CustomT = js.native
-  var env: String = js.native
-  var keys: Keygrip | js.Array[String] = js.native
-  var maxIpsCount: Double = js.native
-  var middleware: js.Array[Middleware[StateT, CustomT]] = js.native
-  var proxy: Boolean = js.native
-  var proxyIpHeader: String = js.native
-  var request: BaseRequest = js.native
-  var response: BaseResponse = js.native
-  var silent: Boolean = js.native
-  var subdomainOffset: Double = js.native
+  
   /**
     * Return a request handler callback
     * for node's native http/http2 server.
@@ -33,19 +23,28 @@ trait Application[StateT, CustomT] extends EventEmitter {
   def callback(): js.Function2[
     /* req */ IncomingMessage | Http2ServerRequest, 
     /* res */ ServerResponse | Http2ServerResponse, 
-    js.Promise[Unit]
+    Unit
   ] = js.native
+  
+  var context: BaseContext with CustomT = js.native
+  
   /**
     * Initialize a new context.
     *
     * @api private
     */
   def createContext[StateT](req: IncomingMessage, res: ServerResponse): ParameterizedContext[StateT, DefaultContext] = js.native
+  
+  var env: String = js.native
+  
   /**
     * Return JSON representation.
     * We only bother showing settings.
     */
   def inspect(): js.Any = js.native
+  
+  var keys: Keygrip | js.Array[String] = js.native
+  
   /**
     * Shorthand for:
     *
@@ -119,17 +118,36 @@ trait Application[StateT, CustomT] extends EventEmitter {
   def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(port: Double, listeningListener: js.Function0[Unit]): Server = js.native
+  
+  var maxIpsCount: Double = js.native
+  
+  var middleware: js.Array[Middleware[StateT, CustomT]] = js.native
+  
   /**
     * Default error handler.
     *
     * @api private
     */
   def onerror(err: Error): Unit = js.native
+  
+  var proxy: Boolean = js.native
+  
+  var proxyIpHeader: String = js.native
+  
+  var request: BaseRequest = js.native
+  
+  var response: BaseResponse = js.native
+  
+  var silent: Boolean = js.native
+  
+  var subdomainOffset: Double = js.native
+  
   /**
     * Return JSON representation.
     * We only bother showing settings.
     */
   def toJSON(): js.Any = js.native
+  
   /**
     * Use the given middleware `fn`.
     *
@@ -137,4 +155,3 @@ trait Application[StateT, CustomT] extends EventEmitter {
     */
   def use[NewStateT, NewCustomT](middleware: Middleware[StateT with NewStateT, CustomT with NewCustomT]): Application[StateT with NewStateT, CustomT with NewCustomT] = js.native
 }
-

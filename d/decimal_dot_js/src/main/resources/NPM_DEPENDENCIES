@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "decimal.js" : "10.2.0"
+      "decimal.js" : "10.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "decimal.js" : "10.2.0"
+      "decimal.js" : "10.2.1"
     }
   ],
   "compile-devDependencies" : [

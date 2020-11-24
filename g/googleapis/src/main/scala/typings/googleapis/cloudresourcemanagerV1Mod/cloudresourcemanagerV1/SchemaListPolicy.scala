@@ -2,7 +2,7 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used in `policy_type` to specify how `list_policy` behaves at this
@@ -27,20 +27,24 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaListPolicy extends js.Object {
+  
   /**
     * The policy all_values state.
     */
   var allValues: js.UndefOr[String] = js.native
+  
   /**
     * List of values allowed  at this resource. Can only be set if `all_values`
     * is set to `ALL_VALUES_UNSPECIFIED`.
     */
   var allowedValues: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * List of values denied at this resource. Can only be set if `all_values`
     * is set to `ALL_VALUES_UNSPECIFIED`.
     */
   var deniedValues: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Determines the inheritance behavior for this `Policy`.  By default, a
     * `ListPolicy` set at a resource supercedes any `Policy` set anywhere up
@@ -108,6 +112,7 @@ trait SchemaListPolicy extends js.Object {
     * `organizations/O1`,   `folders/F1`, `projects/P1`.
     */
   var inheritFromParent: js.UndefOr[Boolean] = js.native
+  
   /**
     * Optional. The Google Cloud Console will try to default to a configuration
     * that matches the value specified in this `Policy`. If `suggested_value`
@@ -116,49 +121,63 @@ trait SchemaListPolicy extends js.Object {
     */
   var suggestedValue: js.UndefOr[String] = js.native
 }
-
 object SchemaListPolicy {
+  
   @scala.inline
   def apply(): SchemaListPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPolicy]
   }
+  
   @scala.inline
   implicit class SchemaListPolicyOps[Self <: SchemaListPolicy] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllValues(value: String): Self = this.set("allValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllValues: Self = this.set("allValues", js.undefined)
+    
     @scala.inline
     def setAllowedValuesVarargs(value: String*): Self = this.set("allowedValues", js.Array(value :_*))
+    
     @scala.inline
     def setAllowedValues(value: js.Array[String]): Self = this.set("allowedValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowedValues: Self = this.set("allowedValues", js.undefined)
+    
     @scala.inline
     def setDeniedValuesVarargs(value: String*): Self = this.set("deniedValues", js.Array(value :_*))
+    
     @scala.inline
     def setDeniedValues(value: js.Array[String]): Self = this.set("deniedValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeniedValues: Self = this.set("deniedValues", js.undefined)
+    
     @scala.inline
     def setInheritFromParent(value: Boolean): Self = this.set("inheritFromParent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInheritFromParent: Self = this.set("inheritFromParent", js.undefined)
+    
     @scala.inline
     def setSuggestedValue(value: String): Self = this.set("suggestedValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSuggestedValue: Self = this.set("suggestedValue", js.undefined)
   }
-  
 }
-

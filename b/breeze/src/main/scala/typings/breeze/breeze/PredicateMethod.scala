@@ -2,10 +2,11 @@ package typings.breeze.breeze
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PredicateMethod extends js.Object {
+  
   def apply(predicates: Predicate*): Predicate = js.native
   def apply(predicates: js.Array[Predicate]): Predicate = js.native
     // for any/all clauses
@@ -22,4 +23,3 @@ trait PredicateMethod extends js.Object {
   def apply(property: String, operator: FilterQueryOpSymbol, value: js.Any): Predicate = js.native
   def apply(property: String, operator: FilterQueryOpSymbol, value: js.Any, valueIsLiteral: Boolean): Predicate = js.native
 }
-

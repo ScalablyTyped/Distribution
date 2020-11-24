@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Pushtokens")
 @js.native
 class ResourcePushtokens protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.pushtokens.remove
     * @desc Removes a push token for the current user and application. Removing
@@ -42,6 +44,7 @@ class ResourcePushtokens protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * games.pushtokens.update
     * @desc Registers a push token for the current user and application.
@@ -71,4 +74,3 @@ class ResourcePushtokens protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Unique machine (desktop) id (no admin privileges required).
 | Full name          | node-machine-id |
 | Keywords           | unique id, license, trial, user license, user id, machine id, unique platform id, node platform id, unique identifier, restrictions, electron id, nw.js id |
 | # releases         | 2 |
-| # dependents       | 113 |
-| # downloads        | 1423752 |
+| # dependents       | 152 |
+| # downloads        | 2614708 |
 | # stars            | 4 |
 
 ## Links

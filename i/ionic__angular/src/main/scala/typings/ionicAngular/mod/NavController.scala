@@ -5,7 +5,7 @@ import typings.angularRouter.mod.Router
 import typings.angularRouter.mod.UrlSerializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "NavController")
 @js.native
@@ -19,4 +19,3 @@ class NavController protected ()
     router: Router
   ) = this()
 }
-

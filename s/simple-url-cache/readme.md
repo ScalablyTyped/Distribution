@@ -11,7 +11,7 @@ A simple cache engine used to store html document with URL keys
 | Keywords           | node.js, cache, file caching, url caching, file cache, url cache, Redis, FileStorage |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 737 |
+| # downloads        | 707 |
 | # stars            | 0 |
 
 ## Links

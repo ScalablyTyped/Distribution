@@ -11,16 +11,11 @@ import typings.std.Error
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-core/RSocketMachine", JSImport.Namespace)
 @js.native
 object rsocketmachineMod extends js.Object {
-  @js.native
-  trait RSocketMachine[D, M] extends ReactiveSocket[D, M] {
-    def setRequestHandler(): Unit = js.native
-    def setRequestHandler(requestHandler: Partial[Responder[D, M]]): Unit = js.native
-  }
   
   def createClientMachine[D, M](
     connection: DuplexConnection,
@@ -311,6 +306,7 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -440,5 +436,11 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  
+  @js.native
+  trait RSocketMachine[D, M] extends ReactiveSocket[D, M] {
+    
+    def setRequestHandler(): Unit = js.native
+    def setRequestHandler(requestHandler: Partial[Responder[D, M]]): Unit = js.native
+  }
 }
-

@@ -2,10 +2,11 @@ package typings.angular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IParseProvider extends js.Object {
+  
   /**
     * Configure $parse service to add literal values that will be present as literal at expressions.
     *
@@ -13,8 +14,10 @@ trait IParseProvider extends js.Object {
     * @param literalValue Value for this literal. All literal values must be primitives or `undefined`.
     **/
   def addLiteral(literalName: String, literalValue: js.Any): Unit = js.native
+  
   def logPromiseWarnings(): Boolean = js.native
   def logPromiseWarnings(value: Boolean): IParseProvider = js.native
+  
   /**
     * Allows defining the set of characters that are allowed in Angular expressions. The function identifierStart will get called to know if a given character is a valid character to be the first character for an identifier. The function identifierContinue will get called to know if a given character is a valid character to be a follow-up identifier character. The functions identifierStart and identifierContinue will receive as arguments the single character to be identifier and the character code point. These arguments will be string and numeric. Keep in mind that the string parameter can be two characters long depending on the character representation. It is expected for the function to return true or false, whether that character is allowed or not.
     * Since this function will be called extensivelly, keep the implementation of these functions fast, as the performance of these functions have a direct impact on the expressions parsing speed.
@@ -32,7 +35,7 @@ trait IParseProvider extends js.Object {
     identifierStart: js.Function2[/* character */ String, /* codePoint */ Double, Boolean],
     identifierContinue: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]
   ): Unit = js.native
+  
   def unwrapPromises(): Boolean = js.native
   def unwrapPromises(value: Boolean): IParseProvider = js.native
 }
-

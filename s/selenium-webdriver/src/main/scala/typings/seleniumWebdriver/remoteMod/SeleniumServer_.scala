@@ -3,7 +3,7 @@ package typings.seleniumWebdriver.remoteMod
 import typings.seleniumWebdriver.remoteMod.SeleniumServer.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/remote", "SeleniumServer")
 @js.native
@@ -18,4 +18,3 @@ class SeleniumServer_ protected () extends DriverService {
   def this(jar: String) = this()
   def this(jar: String, opt_options: Options) = this()
 }
-

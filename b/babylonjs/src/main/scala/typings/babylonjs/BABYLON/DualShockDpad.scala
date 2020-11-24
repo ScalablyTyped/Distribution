@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DualShockDpad extends js.Object
-
 @JSGlobal("BABYLON.DualShockDpad")
 @js.native
 object DualShockDpad extends js.Object {
+  
   /** Down */
   @js.native
   sealed trait Down extends DualShockDpad
@@ -25,6 +25,4 @@ object DualShockDpad extends js.Object {
   /** Up */
   @js.native
   sealed trait Up extends DualShockDpad
-  
 }
-

@@ -11,11 +11,12 @@ import typings.node.cryptoMod.DecipherGCM
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz/crypto", "createDecipheriv")
 @js.native
 object createDecipheriv extends js.Object {
+  
   def apply(algorithm: String, key: CipherKey): typings.node.cryptoMod.Decipher = js.native
   def apply(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Decipher = js.native
   def apply(algorithm: String, key: CipherKey, iv: BinaryLike): typings.node.cryptoMod.Decipher = js.native
@@ -27,4 +28,3 @@ object createDecipheriv extends js.Object {
   def apply(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): DecipherGCM = js.native
   def apply(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = js.native
 }
-

@@ -9,12 +9,13 @@ import typings.jpm.toolbarMod.ToolbarItem
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Frame extends ToolbarItem {
-  var url: URL = js.native
+  
   def destroy(): Unit = js.native
+  
   @JSName("off")
   def off_attach(event: attach, handler: js.Function): Unit = js.native
   @JSName("off")
@@ -25,6 +26,7 @@ trait Frame extends ToolbarItem {
   def off_message(event: message, handler: js.Function): Unit = js.native
   @JSName("off")
   def off_ready(event: ready, handler: js.Function): Unit = js.native
+  
   @JSName("on")
   def on_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
   @JSName("on")
@@ -35,6 +37,7 @@ trait Frame extends ToolbarItem {
   def on_message(event: message, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
   @JSName("on")
   def on_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+  
   @JSName("once")
   def once_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
   @JSName("once")
@@ -45,7 +48,9 @@ trait Frame extends ToolbarItem {
   def once_message(event: message, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
   @JSName("once")
   def once_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+  
   def postMessage(message: String, target: String): Unit = js.native
+  
   @JSName("removeListener")
   def removeListener_attach(event: attach, handler: js.Function): Unit = js.native
   @JSName("removeListener")
@@ -56,5 +61,6 @@ trait Frame extends ToolbarItem {
   def removeListener_message(event: message, handler: js.Function): Unit = js.native
   @JSName("removeListener")
   def removeListener_ready(event: ready, handler: js.Function): Unit = js.native
+  
+  var url: URL = js.native
 }
-

@@ -7,109 +7,50 @@ import typings.algoliasearchHelper.mod.SearchResults.HierarchicalFacet
 import typings.algoliasearchHelper.mod.SearchResults.Refinement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof algoliasearch-helper.algoliasearch-helper.SearchResponse<T>, 'facets' | 'params'> ]: algoliasearch-helper.algoliasearch-helper.SearchResponse<T>[P]} */ @JSImport("algoliasearch-helper", "SearchResults")
 @js.native
 class SearchResults_[T] protected () extends js.Object {
   def this(state: SearchParameters, results: js.Array[SearchResponse[T]]) = this()
+  
   var _rawResults: js.Array[SearchResponse[T]] = js.native
+  
   var _state: SearchParameters = js.native
+  
   /**
     * The position if the position was guessed by IP.
     * @example "48.8637,2.3615",
     */
   var aroundLatLng: String = js.native
+  
   /**
     * The radius computed by Algolia.
     * @example "126792922",
     */
   var automaticRadius: String = js.native
+  
   /**
     * disjunctive facets results
     */
   var disjunctiveFacets: js.Array[Facet] = js.native
+  
   /**
     * True if the counts of the facets is exhaustive
     */
   var exhaustiveFacetsCount: Boolean = js.native
+  
   /**
     * True if the number of hits is exhaustive
     */
   var exhaustiveNbHits: Boolean = js.native
+  
   /**
     * other facets results
     */
   var facets: js.Array[Facet] = js.native
-  /**
-    * disjunctive facets results
-    */
-  var hierarchicalFacets: js.Array[HierarchicalFacet] = js.native
-  /**
-    * all the records that match the search parameters. Each record is
-    * augmented with a new attribute `_highlightResult`
-    * which is an object keyed by attribute and with the following properties:
-    *  - `value` : the value of the facet highlighted (html)
-    *  - `matchLevel`: full, partial or none depending on how the query terms match
-    */
-  var hits: js.Array[T with ObjectID] = js.native
-  /**
-    * number of hits per page requested
-    */
-  var hitsPerPage: Double = js.native
-  /**
-    * index where the results come from
-    */
-  var index: String = js.native
-  /**
-    * total number of hits of this query on the index
-    */
-  var nbHits: Double = js.native
-  /**
-    * total number of pages with respect to the number of hits per page and the total number of hits
-    */
-  var nbPages: Double = js.native
-  /**
-    * current page
-    */
-  var page: Double = js.native
-  /**
-    * The query as parsed by the engine given all the rules.
-    */
-  var parsedQuery: String = js.native
-  /**
-    * sum of the processing time of all the queries
-    */
-  var processingTimeMS: Double = js.native
-  /**
-    * query used to generate the results
-    */
-  var query: String = js.native
-  /**
-    * queryID is the unique identifier of the query used to generate the current search results.
-    * This value is only available if the `clickAnalytics` search parameter is set to `true`.
-    */
-  var queryID: String = js.native
-  /**
-    * String identifying the server used to serve this request.
-    * @example "c7-use-2.algolia.net",
-    */
-  var serverUsed: String = js.native
-  /**
-    * Boolean that indicates if the computation of the counts did time out.
-    * @deprecated
-    */
-  var timeoutCounts: Boolean = js.native
-  /**
-    * Boolean that indicates if the computation of the hits did time out.
-    * @deprecated
-    */
-  var timeoutHits: Boolean = js.native
-  /**
-    * Contains the userData if they are set by a [query rule](https://www.algolia.com/doc/guides/query-rules/query-rules-overview/).
-    */
-  var userData: js.Array[_] = js.native
+  
   /**
     * Get a facet object with its name
     * @deprecated
@@ -117,6 +58,7 @@ class SearchResults_[T] protected () extends js.Object {
     * @return  the facet object
     */
   def getFacetByName(name: String): Facet = js.native
+  
   /**
     * Returns the facet stats if attribute is defined and the facet contains some.
     * Otherwise returns undefined.
@@ -124,6 +66,7 @@ class SearchResults_[T] protected () extends js.Object {
     * @return The stats of the facet
     */
   def getFacetStats(attribute: String): js.Any = js.native
+  
   /**
     * Get a the list of values for a given facet attribute. Those values are sorted
     * refinement first, descending count (bigger value on top), and name ascending
@@ -170,6 +113,7 @@ class SearchResults_[T] protected () extends js.Object {
     * });
     */
   def getFacetValues(attribute: String, opts: js.Any): js.UndefOr[js.Array[FacetValue] | HierarchicalFacet] = js.native
+  
   /**
     * Returns all refinements for all filters + tags. It also provides
     * additional information: count and exhausistivity for each filter.
@@ -180,5 +124,87 @@ class SearchResults_[T] protected () extends js.Object {
     * @return all the refinements
     */
   def getRefinements(): js.Array[Refinement] = js.native
+  
+  /**
+    * disjunctive facets results
+    */
+  var hierarchicalFacets: js.Array[HierarchicalFacet] = js.native
+  
+  /**
+    * all the records that match the search parameters. Each record is
+    * augmented with a new attribute `_highlightResult`
+    * which is an object keyed by attribute and with the following properties:
+    *  - `value` : the value of the facet highlighted (html)
+    *  - `matchLevel`: full, partial or none depending on how the query terms match
+    */
+  var hits: js.Array[T with ObjectID] = js.native
+  
+  /**
+    * number of hits per page requested
+    */
+  var hitsPerPage: Double = js.native
+  
+  /**
+    * index where the results come from
+    */
+  var index: String = js.native
+  
+  /**
+    * total number of hits of this query on the index
+    */
+  var nbHits: Double = js.native
+  
+  /**
+    * total number of pages with respect to the number of hits per page and the total number of hits
+    */
+  var nbPages: Double = js.native
+  
+  /**
+    * current page
+    */
+  var page: Double = js.native
+  
+  /**
+    * The query as parsed by the engine given all the rules.
+    */
+  var parsedQuery: String = js.native
+  
+  /**
+    * sum of the processing time of all the queries
+    */
+  var processingTimeMS: Double = js.native
+  
+  /**
+    * query used to generate the results
+    */
+  var query: String = js.native
+  
+  /**
+    * queryID is the unique identifier of the query used to generate the current search results.
+    * This value is only available if the `clickAnalytics` search parameter is set to `true`.
+    */
+  var queryID: String = js.native
+  
+  /**
+    * String identifying the server used to serve this request.
+    * @example "c7-use-2.algolia.net",
+    */
+  var serverUsed: String = js.native
+  
+  /**
+    * Boolean that indicates if the computation of the counts did time out.
+    * @deprecated
+    */
+  var timeoutCounts: Boolean = js.native
+  
+  /**
+    * Boolean that indicates if the computation of the hits did time out.
+    * @deprecated
+    */
+  var timeoutHits: Boolean = js.native
+  
+  /**
+    * Contains the userData if they are set by a [query rule](https://www.algolia.com/doc/guides/query-rules/query-rules-overview/).
+    */
+  var userData: js.Array[_] = js.native
 }
-

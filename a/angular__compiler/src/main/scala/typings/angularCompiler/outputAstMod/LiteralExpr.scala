@@ -3,7 +3,7 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "LiteralExpr")
 @js.native
@@ -31,6 +31,6 @@ class LiteralExpr () extends Expression {
   def this(value: Null, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(value: Null, `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(value: Null, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
   var value: js.UndefOr[Double | String | Boolean | Null] = js.native
 }
-

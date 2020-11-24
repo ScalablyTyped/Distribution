@@ -12,11 +12,12 @@ import typings.tstl.ifrontMod.IFront
 import typings.tstl.ilistalgorithmMod.IListAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/ForwardList", JSImport.Namespace)
 @js.native
 object forwardListMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -58,17 +59,11 @@ object forwardListMod extends js.Object {
       * @param val Value to fill.
       */
     def this(n: Double, `val`: T) = this()
+    
     var _Insert_by_range: js.Any = js.native
+    
     var _Insert_by_repeating_val: js.Any = js.native
-    var before_begin_ : js.Any = js.native
-    var end_ : js.Any = js.native
-    /**
-      * @inheritDoc
-      */
-    @JSName(js.Symbol.iterator)
-    var iterator_ForwardList: js.Function0[IterableIterator[T]] = js.native
-    var ptr_ : js.Any = js.native
-    var size_ : js.Any = js.native
+    
     /**
       * Fill Assigner.
       *
@@ -83,36 +78,18 @@ object forwardListMod extends js.Object {
       * @param last Input iterator of the last position.
       */
     def assign[T, InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * Iterator to before beginning.
       *
       * @return Iterator to the before beginning.
       */
     def before_begin(): Iterator[T] = js.native
-    /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* CompleteClass */
-    override def begin(): Iterator[T] = js.native
-    /**
-      * Clear elements.
-      */
-    /* CompleteClass */
-    override def clear(): Unit = js.native
-    /**
-      * Test whether container is empty.
-      */
-    /* CompleteClass */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* CompleteClass */
-    override def end(): Iterator[T] = js.native
+    
+    var before_begin_ : js.Any = js.native
+    
+    var end_ : js.Any = js.native
+    
     /**
       * Erase elements.
       *
@@ -128,6 +105,7 @@ object forwardListMod extends js.Object {
       * @return Iterator to the erased element.
       */
     def erase_after(it: Iterator[T]): Iterator[T] = js.native
+    
     /**
       * Inserted repeated elements.
       *
@@ -154,23 +132,17 @@ object forwardListMod extends js.Object {
       * @return An iterator to the last of the newly inserted elements.
       */
     def insert_after[T, InputIterator /* <: IForwardIterator[T, InputIterator] */](pos: Iterator[T], first: InputIterator, last: InputIterator): Iterator[T] = js.native
+    
     /**
-      * Erase the first element.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def pop_front(): Unit = js.native
-    /**
-      * Insert an element at the first.
-      *
-      * @param val Value to insert.
-      */
-    /* CompleteClass */
-    override def push_front(`val`: T): Unit = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* CompleteClass */
-    override def size(): Double = js.native
+    @JSName(js.Symbol.iterator)
+    var iterator_ForwardList: js.Function0[IterableIterator[T]] = js.native
+    
+    var ptr_ : js.Any = js.native
+    
+    var size_ : js.Any = js.native
+    
     /**
       * Transfer elements.
       *
@@ -195,6 +167,7 @@ object forwardListMod extends js.Object {
       * @param last Rangee of the last position to transfer.
       */
     def splice_after(pos: Iterator[T], from: ForwardList[T], first_before: Iterator[T], last: Iterator[T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -202,9 +175,9 @@ object forwardListMod extends js.Object {
       */
     def toJSON(): js.Array[T] = js.native
   }
-  
   @js.native
   object ForwardList extends js.Object {
+    
     /**
       * Iterator of {@link ForwardList}
       *
@@ -212,29 +185,27 @@ object forwardListMod extends js.Object {
       */
     @js.native
     class Iterator[T] protected () extends IForwardIterator[T, Iterator[T]] {
+      
       var _Try_value: js.Any = js.native
+      
       var next_ : js.Any = js.native
-      var source_ptr_ : js.Any = js.native
-      var value_ : js.Any = js.native
+      
       /**
         * Get source container.
         *
         * @return The source container.
         */
       def source(): ForwardList[T] = js.native
+      
+      var source_ptr_ : js.Any = js.native
+      
+      var value_ : js.Any = js.native
+      
       /**
         * @inheritDoc
         */
       @JSName("value")
       def value_MIterator: T = js.native
-      /**
-        * @inheritDoc
-        */
-      @JSName("value")
-      def value_MIterator(`val`: T): js.Any = js.native
     }
-    
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Multiply the color of the source fragment by the color of the destination
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BLEND_MULTIPLICATIVE")
 @js.native
 object BLEND_MULTIPLICATIVE extends TopLevel[Double]
-

@@ -3,7 +3,7 @@ package typings.stellarSdk.mod
 import typings.stellarBase.xdrMod.default.TransactionEnvelope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-sdk", "FeeBumpTransaction")
 @js.native
@@ -12,4 +12,3 @@ class FeeBumpTransaction protected ()
   def this(envelope: String, networkPassphrase: String) = this()
   def this(envelope: TransactionEnvelope, networkPassphrase: String) = this()
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "axios" : "0.19.2"
+      "axios" : "0.21.0"
     }
   ],
   "test-dependencies" : [
     {
-      "axios" : "0.19.2"
+      "axios" : "0.21.0"
     }
   ],
   "compile-devDependencies" : [

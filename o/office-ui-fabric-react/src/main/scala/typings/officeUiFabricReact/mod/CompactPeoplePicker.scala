@@ -5,9 +5,8 @@ import typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "CompactPeoplePicker")
 @js.native
 object CompactPeoplePicker extends TopLevel[FunctionComponent[IPeoplePickerProps]]
-

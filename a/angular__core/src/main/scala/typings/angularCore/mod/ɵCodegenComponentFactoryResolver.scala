@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import typings.angularCore.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275CodegenComponentFactoryResolver")
 @js.native
@@ -13,9 +13,12 @@ class ɵCodegenComponentFactoryResolver protected () extends ComponentFactoryRes
     _parent: ComponentFactoryResolver,
     _ngModule: NgModuleRef[_]
   ) = this()
+  
   var _factories: js.Any = js.native
+  
   var _ngModule: js.Any = js.native
+  
   var _parent: js.Any = js.native
+  
   def resolveComponentFactory[T](component: Instantiable[T]): ComponentFactory[T] = js.native
 }
-

@@ -6,15 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Beacons")
 @js.native
 class ResourceBeacons protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var attachments: ResourceBeaconsAttachments = js.native
-  var context: APIRequestContext = js.native
-  var diagnostics: ResourceBeaconsDiagnostics = js.native
+  
   /**
     * proximitybeacon.beacons.activate
     * @desc Activates a beacon. A beacon that is active will return information
@@ -50,6 +48,11 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var attachments: ResourceBeaconsAttachments = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * proximitybeacon.beacons.deactivate
     * @desc Deactivates a beacon. Once deactivated, the API will not return
@@ -86,6 +89,7 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.decommission
     * @desc Decommissions the specified beacon in the service. This beacon will
@@ -121,6 +125,7 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.delete
     * @desc Deletes the specified beacon including all diagnostics data for the
@@ -156,6 +161,9 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var diagnostics: ResourceBeaconsDiagnostics = js.native
+  
   /**
     * proximitybeacon.beacons.get
     * @desc Returns detailed information about the specified beacon.
@@ -194,6 +202,7 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBeacon]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.list
     * @desc Searches the beacon registry for beacons that match the given
@@ -230,6 +239,7 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListBeaconsResponse]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.register
     * @desc Registers a previously unregistered beacon given its
@@ -264,6 +274,7 @@ class ResourceBeacons protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBeacon]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.update
     * @desc Updates the information about the specified beacon. **Any field
@@ -304,4 +315,3 @@ class ResourceBeacons protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBeacon]
   ): Unit = js.native
 }
-

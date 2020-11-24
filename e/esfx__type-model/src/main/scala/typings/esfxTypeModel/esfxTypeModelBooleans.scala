@@ -16,9 +16,16 @@ import typings.esfxTypeModel.distMod._IsSubsetOf
 import typings.esfxTypeModel.distMod._OneRest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esfxTypeModelBooleans {
+  
+  @scala.inline
+  def `false`: `false` = false.asInstanceOf[`false`]
+  
+  @scala.inline
+  def `true`: `true` = true.asInstanceOf[`true`]
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.esfxTypeModel.distMod.SameType because Already inherited
   - typings.esfxTypeModel.distMod.IsSubtypeOf because Already inherited */ @js.native
@@ -54,10 +61,4 @@ object esfxTypeModelBooleans {
        with _IsConstructable[js.Any]
        with _IsSubsetOf[js.Any, js.Any]
        with _OneRest[js.Any]
-  
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
-

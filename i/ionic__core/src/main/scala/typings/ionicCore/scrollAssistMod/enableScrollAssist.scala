@@ -7,11 +7,12 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/utils/input-shims/hacks/scroll-assist", "enableScrollAssist")
 @js.native
 object enableScrollAssist extends js.Object {
+  
   def apply(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
@@ -69,4 +70,3 @@ object enableScrollAssist extends js.Object {
     keyboardHeight: Double
   ): js.Function0[Unit] = js.native
 }
-

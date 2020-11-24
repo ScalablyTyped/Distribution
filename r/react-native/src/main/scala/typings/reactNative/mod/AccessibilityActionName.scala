@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNative.reactNativeStrings.activate
@@ -13,19 +13,23 @@ import scala.scalajs.js.annotation._
   - typings.reactNative.reactNativeStrings.escape
 */
 trait AccessibilityActionName extends js.Object
-
 object AccessibilityActionName {
+  
   @scala.inline
   def activate: typings.reactNative.reactNativeStrings.activate = "activate".asInstanceOf[typings.reactNative.reactNativeStrings.activate]
+  
   @scala.inline
   def decrement: typings.reactNative.reactNativeStrings.decrement = "decrement".asInstanceOf[typings.reactNative.reactNativeStrings.decrement]
+  
   @scala.inline
   def escape: typings.reactNative.reactNativeStrings.escape = "escape".asInstanceOf[typings.reactNative.reactNativeStrings.escape]
+  
   @scala.inline
   def increment: typings.reactNative.reactNativeStrings.increment = "increment".asInstanceOf[typings.reactNative.reactNativeStrings.increment]
+  
   @scala.inline
   def longpress: typings.reactNative.reactNativeStrings.longpress = "longpress".asInstanceOf[typings.reactNative.reactNativeStrings.longpress]
+  
   @scala.inline
   def magicTap: typings.reactNative.reactNativeStrings.magicTap = "magicTap".asInstanceOf[typings.reactNative.reactNativeStrings.magicTap]
 }
-

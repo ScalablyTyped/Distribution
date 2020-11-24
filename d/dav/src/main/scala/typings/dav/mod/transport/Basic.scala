@@ -3,7 +3,7 @@ package typings.dav.mod.transport
 import typings.dav.mod.Credentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "transport.Basic")
 @js.native
@@ -14,4 +14,3 @@ class Basic protected () extends Transport {
     */
   def this(credentials: Credentials) = this()
 }
-

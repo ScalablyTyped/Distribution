@@ -10,9 +10,9 @@ A CSS Modules transform to extract export statements from local-scope classes
 | ------------------ | :-------------: |
 | Full name          | postcss-modules-scope |
 | Keywords           | css-modules, postcss, plugin |
-| # releases         | 5 |
-| # dependents       | 99 |
-| # downloads        | 250384813 |
+| # releases         | 6 |
+| # dependents       | 117 |
+| # downloads        | 379990240 |
 | # stars            | 2 |
 
 ## Links

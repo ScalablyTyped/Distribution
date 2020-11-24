@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AggregationType extends js.Object
-
 /**
   * An enum that defines the aggregation types that can be set for a Field.
   */
 @JSGlobal("GoogleAppsScript.Data_Studio.AggregationType")
 @js.native
 object AggregationType extends js.Object {
+  
   @js.native
   sealed trait AUTO extends AggregationType
   
@@ -36,6 +36,4 @@ object AggregationType extends js.Object {
   
   @js.native
   sealed trait SUM extends AggregationType
-  
 }
-

@@ -34,7 +34,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * points to a sequence of characters within a {@link Text} .
@@ -59,8 +59,8 @@ trait TextRange
      with ParagraphProperties
      with ParagraphPropertiesAsian
      with ParagraphPropertiesComplex
-
 object TextRange {
+  
   @scala.inline
   def apply(
     AvailableServiceNames: SafeArray[String],
@@ -238,4 +238,3 @@ object TextRange {
     __obj.asInstanceOf[TextRange]
   }
 }
-

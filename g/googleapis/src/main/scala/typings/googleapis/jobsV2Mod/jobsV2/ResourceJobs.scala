@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v2", "jobs_v2.Resource$Jobs")
 @js.native
 class ResourceJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * jobs.jobs.batchDelete
     * @desc Deletes a list of Job postings by filter.
@@ -41,6 +41,9 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * jobs.jobs.create
     * @desc Creates a new job.  Typically, the job becomes searchable within 10
@@ -70,6 +73,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * jobs.jobs.delete
     * @desc Deletes the specified job.  Typically, the job becomes unsearchable
@@ -100,6 +104,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * jobs.jobs.deleteByFilter
     * @desc Deprecated. Use BatchDeleteJobs instead.  Deletes the specified job
@@ -131,6 +136,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * jobs.jobs.get
     * @desc Retrieves the specified job, whose status is OPEN or recently
@@ -156,6 +162,7 @@ class ResourceJobs protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceJobsGet, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  
   /**
     * jobs.jobs.histogram
     * @desc Deprecated. Use SearchJobsRequest.histogram_facets instead to make
@@ -191,6 +198,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetHistogramResponse]
   ): Unit = js.native
+  
   /**
     * jobs.jobs.list
     * @desc Lists jobs by filter.
@@ -222,6 +230,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
   /**
     * jobs.jobs.patch
     * @desc Updates specified job.  Typically, updated contents become visible
@@ -248,6 +257,7 @@ class ResourceJobs protected () extends js.Object {
   ): Unit = js.native
   def patch(params: ParamsResourceJobsPatch, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def patch(params: ParamsResourceJobsPatch, options: MethodOptions, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  
   /**
     * jobs.jobs.search
     * @desc Searches for jobs using the provided SearchJobsRequest.  This call
@@ -278,6 +288,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchJobsResponse]
   ): Unit = js.native
+  
   /**
     * jobs.jobs.searchForAlert
     * @desc Searches for jobs using the provided SearchJobsRequest.  This API
@@ -313,4 +324,3 @@ class ResourceJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchJobsResponse]
   ): Unit = js.native
 }
-

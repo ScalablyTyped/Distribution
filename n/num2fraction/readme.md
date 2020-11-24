@@ -10,9 +10,9 @@ Convert number to fraction
 | ------------------ | :-------------: |
 | Full name          | num2fraction |
 | Keywords           | fraction, number, math, maths, arithmetic, gcd, rational |
-| # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 245626362 |
+| # releases         | 0 |
+| # dependents       | 32 |
+| # downloads        | 335035113 |
 | # stars            | 1 |
 
 ## Links

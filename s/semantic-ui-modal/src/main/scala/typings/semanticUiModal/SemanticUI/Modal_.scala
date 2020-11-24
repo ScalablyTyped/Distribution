@@ -50,11 +50,11 @@ import typings.semanticUiModal.semanticUiModalStrings.transition
 import typings.semanticUiModal.semanticUiModalStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Modal_ extends js.Object {
-  var settings: ModalSettings = js.native
+  
   def apply(): JQuery = js.native
   def apply(behavior: `attach events`, selector: String): JQuery = js.native
   def apply(behavior: `attach events`, selector: String, event: String): JQuery = js.native
@@ -175,5 +175,6 @@ trait Modal_ extends js.Object {
     */
   def apply(behavior: toggle): JQuery = js.native
   def apply(settings: ModalSettings): JQuery = js.native
+  
+  var settings: ModalSettings = js.native
 }
-

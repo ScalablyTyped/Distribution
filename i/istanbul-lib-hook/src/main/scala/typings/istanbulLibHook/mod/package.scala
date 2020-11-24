@@ -2,10 +2,12 @@ package typings.istanbulLibHook
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Matcher = js.Function1[/* filename */ java.lang.String, scala.Boolean]
+  
   type Transformer = js.Function2[
     /* code */ java.lang.String, 
     /* options */ typings.istanbulLibHook.mod.TransformerOptions, 

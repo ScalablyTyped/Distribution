@@ -2,11 +2,12 @@ package typings.typedoc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/models/comments", JSImport.Namespace)
 @js.native
 object commentsMod extends js.Object {
+  
   @js.native
   class Comment ()
     extends typings.typedoc.commentsCommentMod.Comment {
@@ -23,6 +24,4 @@ object commentsMod extends js.Object {
     def this(tagName: String, paramName: js.UndefOr[scala.Nothing], text: String) = this()
     def this(tagName: String, paramName: String, text: String) = this()
   }
-  
 }
-

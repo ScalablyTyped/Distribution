@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | unique-push-id |
 | Keywords           | push, id, guid, uuid, chronological, sortable |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2142 |
+| # downloads        | 2163 |
 | # stars            | 0 |
 
 ## Links

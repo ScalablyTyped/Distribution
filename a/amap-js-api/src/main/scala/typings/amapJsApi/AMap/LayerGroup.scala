@@ -2,26 +2,30 @@ package typings.amapJsApi.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayerGroup[L] extends Layer {
+  
   /**
     * 添加单个图层到集合中，不支持添加重复的图层
     * @param layer 图层
     */
   def addLayer(layer: L): this.type = js.native
   def addLayer(layer: js.Array[L]): this.type = js.native
+  
   /**
     * 添加图层数组到集合中，不支持添加重复的图层
     * @param layers 图层数组
     */
   def addLayers(layers: L): this.type = js.native
   def addLayers(layers: js.Array[L]): this.type = js.native
+  
   /**
     * 清空集合
     */
   def clearLayers(): this.type = js.native
+  
   /**
     * 对集合中的图层做迭代操作
     * @param iterator 迭代回调
@@ -34,13 +38,16 @@ trait LayerGroup[L] extends Layer {
     iterator: js.ThisFunction3[/* this */ C, /* layer */ L, /* index */ Double, /* list */ js.Array[L], Unit],
     context: C
   ): Unit = js.native
+  
   def getLayer(
     finder: js.ThisFunction3[/* this */ Null, /* item */ L, /* index */ Double, /* list */ js.Array[L], Boolean]
   ): L | Null = js.native
+  
   /**
     * 返回当前集合中所有的图层
     */
   def getLayers(): js.Array[L] = js.native
+  
   /**
     * 判断传入的图层实例是否在集合中
     * @param layer 目标图层
@@ -49,19 +56,22 @@ trait LayerGroup[L] extends Layer {
   def hasLayer(
     layer: js.ThisFunction3[/* this */ Null, /* item */ L, /* index */ Double, /* list */ js.Array[L], Boolean]
   ): Boolean = js.native
+  
   def reload(): this.type = js.native
+  
   /**
     *     从集合中删除传入的图层实例
     * @param layer 图层
     */
   def removeLayer(layer: L): this.type = js.native
   def removeLayer(layer: js.Array[L]): this.type = js.native
+  
   /**
     * 从集合中删除传入的图层实例数组
     * @param layers 图层数组
     */
   def removeLayers(layers: L): this.type = js.native
   def removeLayers(layers: js.Array[L]): this.type = js.native
+  
   def setOptions(options: js.Any): this.type = js.native
 }
-

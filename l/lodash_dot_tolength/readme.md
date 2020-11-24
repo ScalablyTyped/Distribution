@@ -12,12 +12,13 @@ The lodash method `_.toLength` exported as a module.
 | Keywords           | lodash-modularized, tolength |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1232 |
+| # downloads        | 1393 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.tolength)
     
 

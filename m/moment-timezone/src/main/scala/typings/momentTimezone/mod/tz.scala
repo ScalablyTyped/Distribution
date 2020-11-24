@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.momentTimezone.mod.momentAugmentingMod.MomentTimezone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("moment-timezone", "tz")
 @js.native
 object tz extends TopLevel[MomentTimezone]
-

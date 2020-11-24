@@ -7,10 +7,11 @@ import typings.tileReduce.tileReduceStrings.reduce
 import typings.tileReduce.tileReduceStrings.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Events extends js.Object {
+  
   /**
     * End Event
     *
@@ -67,4 +68,3 @@ trait Events extends js.Object {
   @JSName("on")
   def on_start(`type`: start, callback: js.Function0[Unit]): Events = js.native
 }
-

@@ -29,11 +29,12 @@ import typings.std.File
 import typings.std.FileList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable:unified-signatures self-documenting code and JSDoc require non-unified signatures
 @js.native
 trait JQuery[TElement] extends js.Object {
+  
   def fileinput(): this.type = js.native
   def fileinput(options: FileInputOptions): this.type = js.native
   /**
@@ -161,4 +162,3 @@ trait JQuery[TElement] extends js.Object {
   @JSName("fileinput")
   def fileinput_zoom(method: zoom, frameId: String): this.type = js.native
 }
-

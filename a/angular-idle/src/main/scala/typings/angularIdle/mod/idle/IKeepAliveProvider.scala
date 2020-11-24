@@ -4,13 +4,14 @@ import typings.angular.mod.IRequestConfig
 import typings.angular.mod.IServiceProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to configure the Keepalive service.
   */
 @js.native
 trait IKeepAliveProvider extends IServiceProvider {
+  
   /**
     * If configured, options will be used to issue a request using $http.
     * If the value is null, no HTTP request will be issued.
@@ -21,6 +22,7 @@ trait IKeepAliveProvider extends IServiceProvider {
     */
   def http(value: String): Unit = js.native
   def http(value: IRequestConfig): Unit = js.native
+  
   /**
     * This specifies how often the keepalive event is triggered and the
     * HTTP request is issued.
@@ -29,4 +31,3 @@ trait IKeepAliveProvider extends IServiceProvider {
     */
   def interval(seconds: Double): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Mesh")
 @js.native
@@ -12,4 +12,3 @@ class Mesh[TGeometry /* <: typings.three.geometryMod.Geometry | typings.three.bu
   def this(geometry: TGeometry, material: TMaterial) = this()
   def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
 }
-

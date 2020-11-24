@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "facebook-locales"
-version := "1.0-dt-20190628Z-c1a1df"
+version := "1.0-dt-20190628Z-9966c1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

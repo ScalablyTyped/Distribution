@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Size object is used to describe the size or dimensions of
@@ -38,11 +38,11 @@ class Size protected ()
     */
   def this(width: Double, height: Double) = this()
 }
-
 /* static members */
 @JSGlobal("paper.Size")
 @js.native
 object Size extends js.Object {
+  
   /** 
     * Returns a new size object with the largest {@link #width} and
     * {@link #height} of the supplied sizes.
@@ -50,6 +50,7 @@ object Size extends js.Object {
     * @return the newly created size object
     */
   def max(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = js.native
+  
   /** 
     * Returns a new size object with the smallest {@link #width} and
     * {@link #height} of the supplied sizes.
@@ -57,6 +58,7 @@ object Size extends js.Object {
     * @return the newly created size object
     */
   def min(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = js.native
+  
   /** 
     * Returns a size object with random {@link #width} and {@link #height}
     * values between `0` and `1`.
@@ -65,4 +67,3 @@ object Size extends js.Object {
     */
   def random(): typings.paper.paper.Size = js.native
 }
-

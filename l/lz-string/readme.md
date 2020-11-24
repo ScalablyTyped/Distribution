@@ -11,8 +11,8 @@ LZ-based compression algorithm
 | Full name          | lz-string |
 | Keywords           | lz, compression, string |
 | # releases         | 1 |
-| # dependents       | 171 |
-| # downloads        | 7006650 |
+| # dependents       | 207 |
+| # downloads        | 9904113 |
 | # stars            | 13 |
 
 ## Links

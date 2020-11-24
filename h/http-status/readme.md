@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-status
 
-Typings are for version 1.4.2
+Typings are for version 1.5.0
 
 ## Library description:
 Interact with HTTP status code
@@ -10,9 +10,9 @@ Interact with HTTP status code
 | ------------------ | :-------------: |
 | Full name          | http-status |
 | Keywords           | http, express, connect |
-| # releases         | 11 |
-| # dependents       | 374 |
-| # downloads        | 12574462 |
+| # releases         | 4 |
+| # dependents       | 443 |
+| # downloads        | 14380177 |
 | # stars            | 27 |
 
 ## Links

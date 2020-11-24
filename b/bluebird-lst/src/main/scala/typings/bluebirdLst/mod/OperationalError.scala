@@ -3,7 +3,7 @@ package typings.bluebirdLst.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an error is an explicit promise rejection as opposed to a thrown error.
@@ -15,10 +15,4 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("bluebird-lst", "OperationalError")
 @js.native
-class OperationalError () extends Error {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
-
+class OperationalError () extends Error

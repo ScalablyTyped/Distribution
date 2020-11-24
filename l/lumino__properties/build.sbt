@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lumino__properties"
-version := "1.2.3-b81785"
+version := "1.2.3-9bb66a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

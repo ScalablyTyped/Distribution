@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objective-C实例对象
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusIosInstanceObject extends js.Object {
+  
   /**
     * 获取Objective-C实例对象的属性
     * 
@@ -20,6 +21,7 @@ trait PlusIosInstanceObject extends js.Object {
     */
   def plusGetAttribute(): js.Any = js.native
   def plusGetAttribute(name: String): js.Any = js.native
+  
   /**
     * 设置Objective-C示例对象的属性
     * 
@@ -30,4 +32,3 @@ trait PlusIosInstanceObject extends js.Object {
   def plusSetAttribute(name: String): Unit = js.native
   def plusSetAttribute(name: String, value: js.Any): Unit = js.native
 }
-

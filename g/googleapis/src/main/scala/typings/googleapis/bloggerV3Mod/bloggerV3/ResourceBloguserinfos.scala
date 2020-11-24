@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Bloguserinfos")
 @js.native
 class ResourceBloguserinfos protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.blogUserInfos.get
     * @desc Gets one blog and user info pair by blogId and userId.
@@ -44,4 +46,3 @@ class ResourceBloguserinfos protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBlogUserInfo]
   ): Unit = js.native
 }
-

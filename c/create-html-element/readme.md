@@ -10,9 +10,9 @@ Create a HTML element string
 | ------------------ | :-------------: |
 | Full name          | create-html-element |
 | Keywords           | html, element, create, document, string, make, tag |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 145035 |
+| # releases         | 3 |
+| # dependents       | 12 |
+| # downloads        | 112795 |
 | # stars            | 1 |
 
 ## Links

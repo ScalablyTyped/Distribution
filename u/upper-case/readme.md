@@ -11,8 +11,8 @@ Transforms the string to upper case
 | Full name          | upper-case |
 | Keywords           | upper, case, upcase, locale, convert, transform |
 | # releases         | 3 |
-| # dependents       | 42 |
-| # downloads        | 213354300 |
+| # dependents       | 61 |
+| # downloads        | 257733983 |
 | # stars            | 1 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.chromeApps.global.chrome.networking.onc
 import typings.chromeApps.chrome.networking.onc.ManagedProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.networking.onc.getManagedProperties")
 @js.native
 object getManagedProperties extends js.Object {
+  
   /**
     * Gets the merged properties of the network with id networkGuid from the sources:
     * User settings, shared settings, user policy, device policy and the currently active settings.
@@ -16,4 +17,3 @@ object getManagedProperties extends js.Object {
     */
   def apply(networkGuid: String, callback: js.Function1[/* result */ ManagedProperties, Unit]): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.olx.interaction.DoubleClickZoomOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -25,11 +25,11 @@ import scala.scalajs.js.annotation._
 class DoubleClickZoom () extends Interaction {
   def this(opt_options: DoubleClickZoomOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "interaction.DoubleClickZoom")
 @js.native
 object DoubleClickZoom extends js.Object {
+  
   /**
     * Handles the {@link ol.MapBrowserEvent map browser event} (if it was a
     * doubleclick) and eventually zooms the map.
@@ -39,4 +39,3 @@ object DoubleClickZoom extends js.Object {
     */
   def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
 }
-

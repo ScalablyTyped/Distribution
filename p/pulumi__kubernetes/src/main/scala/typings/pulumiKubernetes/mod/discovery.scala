@@ -7,13 +7,15 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes", "discovery")
 @js.native
 object discovery extends js.Object {
+  
   @js.native
   object v1beta1 extends js.Object {
+    
     @js.native
     class EndpointSlice protected ()
       extends typings.pulumiKubernetes.discoveryMod.v1beta1.EndpointSlice {
@@ -28,6 +30,27 @@ object discovery extends js.Object {
       def this(name: String, args: EndpointSliceArgs) = this()
       def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
       def this(name: String, args: EndpointSliceArgs, opts: CustomResourceOptions) = this()
+    }
+    /* static members */
+    @js.native
+    object EndpointSlice extends js.Object {
+      
+      /**
+        * Get an existing EndpointSlice resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.endpointSliceMod.EndpointSlice = js.native
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.endpointSliceMod.EndpointSlice = js.native
+      
+      /**
+        * Returns true if the given object is an instance of EndpointSlice.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = js.native
     }
     
     @js.native
@@ -45,30 +68,10 @@ object discovery extends js.Object {
       def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
       def this(name: String, args: EndpointSliceListArgs, opts: CustomResourceOptions) = this()
     }
-    
-    /* static members */
-    @js.native
-    object EndpointSlice extends js.Object {
-      /**
-        * Get an existing EndpointSlice resource's state with the given name, ID, and optional extra
-        * properties used to qualify the lookup.
-        *
-        * @param name The _unique_ name of the resulting resource.
-        * @param id The _unique_ provider ID of the resource to lookup.
-        * @param opts Optional settings to control the behavior of the CustomResource.
-        */
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.endpointSliceMod.EndpointSlice = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.endpointSliceMod.EndpointSlice = js.native
-      /**
-        * Returns true if the given object is an instance of EndpointSlice.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = js.native
-    }
-    
     /* static members */
     @js.native
     object EndpointSliceList extends js.Object {
+      
       /**
         * Get an existing EndpointSliceList resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -79,14 +82,12 @@ object discovery extends js.Object {
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.endpointSliceListMod.EndpointSliceList = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.endpointSliceListMod.EndpointSliceList = js.native
+      
       /**
         * Returns true if the given object is an instance of EndpointSliceList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSliceList.EndpointSliceList */ Boolean = js.native
     }
-    
   }
-  
 }
-

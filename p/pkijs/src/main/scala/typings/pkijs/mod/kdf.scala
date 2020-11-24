@@ -3,11 +3,12 @@ package typings.pkijs.mod
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkijs/src/common", "kdf")
 @js.native
 object kdf extends js.Object {
+  
   /**
     * ANS X9.63 Key Derivation Function
     *
@@ -18,4 +19,3 @@ object kdf extends js.Object {
     */
   def apply(hashFunction: String, Zbuffer: ArrayBuffer, keydatalen: Double, SharedInfo: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
 }
-

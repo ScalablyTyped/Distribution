@@ -10,8 +10,8 @@ Virtual syntax highlighting for virtual DOMs and non-HTML things
 | Full name          | lowlight |
 | Keywords           | syntax, code, ast, virtual, dom, highlight, highlighting |
 | # releases         | 7 |
-| # dependents       | 29 |
-| # downloads        | 30586736 |
+| # dependents       | 43 |
+| # downloads        | 91594711 |
 | # stars            | 1 |
 
 ## Links

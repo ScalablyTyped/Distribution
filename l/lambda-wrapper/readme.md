@@ -10,9 +10,9 @@ Wrapper for running Amazon Lambda modules locally
 | ------------------ | :-------------: |
 | Full name          | lambda-wrapper |
 | Keywords           | AWS, lambda, local |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 511923 |
+| # downloads        | 732986 |
 | # stars            | 0 |
 
 ## Links

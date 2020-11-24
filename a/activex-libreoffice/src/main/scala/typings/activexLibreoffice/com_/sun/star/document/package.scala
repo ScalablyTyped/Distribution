@@ -2,28 +2,33 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object document {
+  
   /**
     * Is used for interaction handle to query user decision in case the document being saved was already stored by another user during the editing.
     * @since OOo 3.1
     */
   type ChangedByOthersRequest = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /** interface to maintain a list of document revisions */
   type DocumentRevisionListPersistence = typings.activexLibreoffice.com_.sun.star.document.XDocumentRevisionListPersistence
+  
   /**
     * is raised when an operation is attemption at an {@link XUndoManager} which requires a non-empty stack of undo actions, and this requirement is not
     * fulfilled.
     * @since OOo 3.4
     */
   type EmptyUndoStackException = typings.activexLibreoffice.com_.sun.star.util.InvalidStateException
+  
   /**
     * is a collection of all events supported by a document or content of a document
     *
     * Such {@link Events} will be broadcasted by a {@link XEventBroadcaster} to any {@link XEventListener} packed as EventObjects.
     */
   type Events = typings.activexLibreoffice.com_.sun.star.container.XNameReplace
+  
   /**
     * describes a class of service which will be used for deep {@link TypeDetection} in a generic way
     *
@@ -41,11 +46,15 @@ package object document {
     * @see TypeDetection
     */
   type ExtendedTypeDetection = typings.activexLibreoffice.com_.sun.star.document.XExtendedFilterDetection
+  
   type FilterAdapter = typings.activexLibreoffice.com_.sun.star.document.XFilterAdapter
+  
   /** @since LibreOffice 4.1 */
   type FilterConfigRefresh = typings.activexLibreoffice.com_.sun.star.util.XRefreshable
+  
   /** @since LibreOffice 4.1 */
   type IndexedPropertyValues = typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
+  
   /**
     * This service gives access to a collection of names that are child links of the parent object that supplied this service.
     *
@@ -53,15 +62,19 @@ package object document {
     * LinkTarget} .
     */
   type LinkTargets = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * Is used for interaction handle to query user decision regarding storing to a location where no lock file can be created.
     * @since OOo 3.0
     */
   type LockFileIgnoreRequest = typings.activexLibreoffice.com_.sun.star.io.IOException
+  
   /** @since LibreOffice 4.1 */
   type NamedPropertyValues = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+  
   /** allows to import document properties from OOXML format */
   type OOXMLDocumentPropertiesImporter = typings.activexLibreoffice.com_.sun.star.document.XOOXMLDocumentPropertiesImporter
+  
   /**
     * registers embedded server for StarOffice documents
     *
@@ -69,14 +82,17 @@ package object document {
     * @since OOo 1.1.2
     */
   type OleEmbeddedServerRegistration = typings.activexLibreoffice.com_.sun.star.uno.XInterface
+  
   /** This service is for a {@link PDFDialog} */
   type PDFDialog = typings.activexLibreoffice.com_.sun.star.ui.dialogs.FilterOptionsDialog
+  
   /**
     * is thrown when an operation is attempted at an {@link XUndoManager} which requires all undo contexts to be closed, but this requirement is not
     * fulfilled.
     * @since OOo 3.4
     */
   type UndoContextNotClosedException = typings.activexLibreoffice.com_.sun.star.util.InvalidStateException
+  
   /**
     * Filter for importing Basic macros from the OASIS Open Office file format.
     *

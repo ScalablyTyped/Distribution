@@ -3,7 +3,7 @@ package typings.winjs.mod.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows users to pick a date value.
@@ -23,15 +23,11 @@ class DatePicker ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.DatePicker")
 @js.native
 object DatePicker extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+  
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
@@ -39,5 +35,9 @@ object DatePicker extends js.Object {
   def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.UndefOr[scala.Nothing], datePatterns: js.Any): js.Any = js.native
   def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any): js.Any = js.native
   def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any, datePatterns: js.Any): js.Any = js.native
+  
+  /**
+    * Indicates that the object is compatibile with declarative processing.
+    **/
+  var supportedForProcessing: Boolean = js.native
 }
-

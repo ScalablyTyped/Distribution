@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.InputEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("InputEvent")
 @js.native
@@ -14,7 +14,6 @@ class InputEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: InputEventInit) = this()
 }
-
 @JSGlobal("InputEvent")
 @js.native
 object InputEvent
@@ -24,4 +23,3 @@ object InputEvent
       /* eventInitDict */ InputEventInit, 
       typings.std.InputEvent
     ]
-

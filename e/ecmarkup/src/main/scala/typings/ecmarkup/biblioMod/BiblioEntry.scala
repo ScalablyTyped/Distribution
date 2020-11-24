@@ -9,9 +9,10 @@ import typings.ecmarkup.ecmarkupStrings.production
 import typings.ecmarkup.ecmarkupStrings.step
 import typings.ecmarkup.ecmarkupStrings.table
 import typings.ecmarkup.ecmarkupStrings.term
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ecmarkup.biblioMod.AlgorithmBiblioEntry
@@ -22,32 +23,36 @@ import scala.scalajs.js.annotation._
   - typings.ecmarkup.biblioMod.StepBiblioEntry
 */
 trait BiblioEntry extends js.Object
-
 object BiblioEntry {
+  
   @scala.inline
   def StepBiblioEntry(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double], `type`: step): BiblioEntry = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], stepNumbers = stepNumbers.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiblioEntry]
   }
+  
   @scala.inline
   def TermBiblioEntry(refId: String, referencingIds: js.Array[String], term: String, `type`: term): BiblioEntry = {
     val __obj = js.Dynamic.literal(refId = refId.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiblioEntry]
   }
+  
   @scala.inline
   def ProductionBiblioEntry(name: String, referencingIds: js.Array[String], `type`: production): BiblioEntry = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiblioEntry]
   }
+  
   @scala.inline
   def AlgorithmBiblioEntry(aoid: String, referencingIds: js.Array[String], `type`: op): BiblioEntry = {
     val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiblioEntry]
   }
+  
   @scala.inline
   def ClauseBiblioEntry(
     aoid: String,
@@ -62,16 +67,17 @@ object BiblioEntry {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiblioEntry]
   }
+  
   @scala.inline
   def FigureBiblioEntry(
     id: String,
+    node: HTMLElement,
     number: String | Double,
     referencingIds: js.Array[String],
     `type`: table | figure | example | note
   ): BiblioEntry = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiblioEntry]
   }
 }
-

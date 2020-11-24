@@ -12,7 +12,7 @@ Automatically detect when a browser is offline
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 372056 |
+| # downloads        | 417907 |
 | # stars            | 4 |
 
 ## Links

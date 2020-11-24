@@ -2,11 +2,12 @@ package typings.ping.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ping", "promise")
 @js.native
 object promise extends js.Object {
+  
   /**
     * Performs a system ping utility.
     *
@@ -16,4 +17,3 @@ object promise extends js.Object {
   def probe(addr: String): js.Promise[PingResponse] = js.native
   def probe(addr: String, config: PingConfig): js.Promise[PingResponse] = js.native
 }
-

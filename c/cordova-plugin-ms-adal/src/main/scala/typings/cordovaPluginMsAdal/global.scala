@@ -3,15 +3,18 @@ package typings.cordovaPluginMsAdal
 import typings.cordovaPluginMsAdal.Microsoft.ADAL.PromiseAuthenticationContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Microsoft extends js.Object {
+    
     @js.native
     object ADAL extends js.Object {
+      
       @js.native
       class AuthenticationContext protected ()
         extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationContext {
@@ -31,18 +34,10 @@ object global extends js.Object {
         def this(authority: String) = this()
         def this(authority: String, validateAuthority: Boolean) = this()
       }
-      
-      @js.native
-      class AuthenticationResult ()
-        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationResult
-      
-      @js.native
-      class TokenCache ()
-        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCache
-      
       /* static members */
       @js.native
       object AuthenticationContext extends js.Object {
+        
         /**
           * Constructs context asynchronously to use with known authority to get the token.
           * It reuses existing context for this authority URL in native proxy or creates a new one if it doesn't exists.
@@ -56,9 +51,13 @@ object global extends js.Object {
         def createAsync(authority: String, validateAuthority: Boolean): PromiseAuthenticationContext = js.native
       }
       
+      @js.native
+      class AuthenticationResult ()
+        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationResult
+      
+      @js.native
+      class TokenCache ()
+        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCache
     }
-    
   }
-  
 }
-

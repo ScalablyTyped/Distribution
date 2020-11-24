@@ -5,10 +5,11 @@ import typings.coinlist.coinlistStrings.name
 import typings.coinlist.coinlistStrings.symbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CoinsAPI extends js.Object {
+  
   def get(symbol: String): js.UndefOr[Coin] = js.native
   @JSName("get")
   def get_id(symbol: String, property: id): js.UndefOr[String] = js.native
@@ -17,4 +18,3 @@ trait CoinsAPI extends js.Object {
   @JSName("get")
   def get_symbol(symbol: String, property: symbol): js.UndefOr[String] = js.native
 }
-

@@ -2,13 +2,14 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the Microsoft.Live.API.Event object.
   */
 @js.native
 trait IEventAPI extends js.Object {
+  
   /**
     * Adds a handler to an event.
     * @param event Required. The name of the event to which to add a
@@ -22,6 +23,7 @@ trait IEventAPI extends js.Object {
     *   is not valid.
     */
   def subscribe(event: String, callback: js.Function): Unit = js.native
+  
   /**
     * Removes a handler from an event.
     * @param event Required. The name of the event from which to remove a
@@ -34,4 +36,3 @@ trait IEventAPI extends js.Object {
   def unsubscribe(event: String): Unit = js.native
   def unsubscribe(event: String, callback: js.Function): Unit = js.native
 }
-

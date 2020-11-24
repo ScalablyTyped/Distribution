@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iamcredentials/v1", "iamcredentials_v1.Resource$Projects$Serviceaccounts")
 @js.native
 class ResourceProjectsServiceaccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * iamcredentials.projects.serviceAccounts.generateAccessToken
     * @desc Generates an OAuth 2.0 access token for a service account.
@@ -45,6 +47,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateAccessTokenResponse]
   ): Unit = js.native
+  
   /**
     * iamcredentials.projects.serviceAccounts.generateIdToken
     * @desc Generates an OpenID Connect ID token for a service account.
@@ -77,6 +80,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateIdTokenResponse]
   ): Unit = js.native
+  
   /**
     * iamcredentials.projects.serviceAccounts.generateIdentityBindingAccessToken
     * @alias
@@ -112,6 +116,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateIdentityBindingAccessTokenResponse]
   ): Unit = js.native
+  
   /**
     * iamcredentials.projects.serviceAccounts.signBlob
     * @desc Signs a blob using a service account's system-managed private key.
@@ -144,6 +149,7 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSignBlobResponse]
   ): Unit = js.native
+  
   /**
     * iamcredentials.projects.serviceAccounts.signJwt
     * @desc Signs a JWT using a service account's system-managed private key.
@@ -177,4 +183,3 @@ class ResourceProjectsServiceaccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSignJwtResponse]
   ): Unit = js.native
 }
-

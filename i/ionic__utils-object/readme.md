@@ -10,9 +10,9 @@ Object utils
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-object |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 22 |
 | # dependents       | 2 |
-| # downloads        | 2015317 |
+| # downloads        | 3154396 |
 | # stars            | 0 |
 
 ## Links

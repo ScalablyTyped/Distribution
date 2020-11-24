@@ -10,9 +10,9 @@ Create an error with a code
 | ------------------ | :-------------: |
 | Full name          | err-code |
 | Keywords           | error, err, code, properties, property |
-| # releases         | 5 |
-| # dependents       | 58 |
-| # downloads        | 110154318 |
+| # releases         | 4 |
+| # dependents       | 62 |
+| # downloads        | 117858643 |
 | # stars            | 2 |
 
 ## Links

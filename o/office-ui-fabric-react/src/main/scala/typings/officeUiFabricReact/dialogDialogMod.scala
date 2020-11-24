@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.dialogTypesMod.IDialogProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog", JSImport.Namespace)
 @js.native
 object dialogDialogMod extends js.Object {
+  
   val Dialog: FunctionComponent[IDialogProps] = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UniqFunction extends js.Object {
+  
   /**
     * Filter adjacent matching lines from input.
     */
@@ -21,4 +22,3 @@ trait UniqFunction extends js.Object {
   def apply(options: String, input: String): ShellString = js.native
   def apply(options: String, input: String, output: String): ShellString = js.native
 }
-

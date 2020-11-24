@@ -1,24 +1,17 @@
 package typings.mockFs.filesystemMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectoryItems
-  extends /* name */ StringDictionary[
-      String | Buffer | (js.Function0[
-        typings.mockFs.fileMod.^  | typings.mockFs.directoryMod.^  | typings.mockFs.symlinkMod.^ 
-      ]) | DirectoryItems
-    ]
-
+trait DirectoryItems extends /* name */ StringDictionary[DirectoryItem]
 object DirectoryItems {
+  
   @scala.inline
   def apply(): DirectoryItems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryItems]
   }
 }
-

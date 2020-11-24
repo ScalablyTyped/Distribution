@@ -37,7 +37,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a table-like control for displaying data.
@@ -60,8 +60,8 @@ trait GridControl
      with XModeSelector
      with XSelectionSupplier
      with XDispatchProviderInterception
-
 object GridControl {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -148,4 +148,3 @@ object GridControl {
     __obj.asInstanceOf[GridControl]
   }
 }
-

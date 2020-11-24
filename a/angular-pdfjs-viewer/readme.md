@@ -12,7 +12,7 @@ Embed PDF.js viewer into your angular application
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 15689 |
+| # downloads        | 20232 |
 | # stars            | 1 |
 
 ## Links

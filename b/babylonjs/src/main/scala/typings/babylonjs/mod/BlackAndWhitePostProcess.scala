@@ -1,9 +1,10 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "BlackAndWhitePostProcess")
 @js.native
@@ -32,7 +33,21 @@ class BlackAndWhitePostProcess protected ()
     name: String,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
+    engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
     engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
@@ -46,8 +61,56 @@ class BlackAndWhitePostProcess protected ()
     name: String,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
     engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
     reusable: Boolean
   ) = this()
   def this(
@@ -59,4 +122,16 @@ class BlackAndWhitePostProcess protected ()
     reusable: Boolean
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs", "BlackAndWhitePostProcess")
+@js.native
+object BlackAndWhitePostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.cameraMod.Camera,
+    scene: typings.babylonjs.sceneMod.Scene,
+    rootUrl: String
+  ): Nullable[typings.babylonjs.blackAndWhitePostProcessMod.BlackAndWhitePostProcess] = js.native
+}

@@ -9,7 +9,7 @@ import typings.jestConsole.typesMod.LogType
 import typings.jestSourceMap.typesMod.SourceMapRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofBufferedConsole
@@ -17,6 +17,7 @@ trait TypeofBufferedConsole
       /* getSourceMaps */ js.Function0[js.UndefOr[SourceMapRegistry | Null]], 
       BufferedConsole
     ] {
+  
   def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
   def write(
     buffer: ConsoleBuffer,
@@ -41,4 +42,3 @@ trait TypeofBufferedConsole
     sourceMaps: SourceMapRegistry
   ): js.Array[LogEntry] = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation.Metadata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MarshalingType extends js.Object
-
 /** Specifies the marshaling type for the class. */
 @JSGlobal("Windows.Foundation.Metadata.MarshalingType")
 @js.native
 object MarshalingType extends js.Object {
+  
   /** The class marshals and unmarshals to the same pointer value on all interfaces. */
   @js.native
   sealed trait agile extends MarshalingType
@@ -26,6 +26,4 @@ object MarshalingType extends js.Object {
   /** The class does not implement IMarshal or forwards to CoGetStandardMarshal on all interfaces. */
   @js.native
   sealed trait standard extends MarshalingType
-  
 }
-

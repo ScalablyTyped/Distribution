@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Groups$Members")
 @js.native
 class ResourceProjectsGroupsMembers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.groups.members.list
     * @desc Lists the monitored resources that are members of a group.
@@ -104,4 +106,3 @@ class ResourceProjectsGroupsMembers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListGroupMembersResponse]
   ): Unit = js.native
 }
-

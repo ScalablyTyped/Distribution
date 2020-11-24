@@ -6,16 +6,13 @@ import typings.yaml.typesMod.Schema.Options
 import typings.yaml.typesMod.Schema.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Schema")
 @js.native
 class Schema_ protected () extends js.Object {
   def this(options: Options) = this()
-  var merge: Boolean = js.native
-  var name: Name = js.native
-  var sortMapEntries: (js.Function2[/* a */ Pair, /* b */ Pair, Double]) | Null = js.native
-  var tags: js.Array[Tag] = js.native
+  
   /**
     * Convert any value into a `Node` using this schema, recursively turning
     * objects into collections.
@@ -39,6 +36,7 @@ class Schema_ protected () extends js.Object {
   def createNode(value: js.Any, wrapScalars: Boolean, tag: js.UndefOr[scala.Nothing], ctx: CreateNodeContext): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean, tag: String): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean, tag: String, ctx: CreateNodeContext): Node = js.native
+  
   /**
     * Convert a key and a value into a `Pair` using this schema, recursively
     * wrapping all values as `Scalar` or `Collection` nodes.
@@ -47,5 +45,12 @@ class Schema_ protected () extends js.Object {
     */
   def createPair(key: js.Any, value: js.Any): Pair = js.native
   def createPair(key: js.Any, value: js.Any, ctx: CreateNodeContext): Pair = js.native
+  
+  var merge: Boolean = js.native
+  
+  var name: Name = js.native
+  
+  var sortMapEntries: (js.Function2[/* a */ Pair, /* b */ Pair, Double]) | Null = js.native
+  
+  var tags: js.Array[Tag] = js.native
 }
-

@@ -150,44 +150,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
-  var borderColor: String = js.native
-  var borderWidth: Double = js.native
-  var categories: js.Array[String] = js.native
-  var color: js.UndefOr[String] = js.native
-  var column: String = js.native
-  var groupCategory: js.UndefOr[String] = js.native
-  var icon: js.UndefOr[BorderRadiusBorderWidth] = js.native
-  var indicatorColor: js.UndefOr[String] = js.native
-  var indicatorIcon: js.UndefOr[BorderWidthColor] = js.native
-  var label: String = js.native
-  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onBorderWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onColumnChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onGroupCategoryChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[BorderRadiusBorderWidth]], _]) | Null = js.native
-  var onIndicatorColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onIndicatorIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[BorderWidthColor]], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onRowChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSecondaryLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Object | Null], _]) | Null = js.native
-  var onXPercentageChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double | Null]], _]) | Null = js.native
-  var onYPercentageChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double | Null]], _]) | Null = js.native
-  var row: String = js.native
-  var secondaryLabel: String = js.native
-  var shortDesc: String = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object | Null = js.native
-  var xPercentage: js.UndefOr[Double | Null] = js.native
-  var yPercentage: js.UndefOr[Double | Null] = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -1166,6 +1133,17 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[Double | Null]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var borderColor: String = js.native
+  
+  var borderWidth: Double = js.native
+  
+  var categories: js.Array[String] = js.native
+  
+  var color: js.UndefOr[String] = js.native
+  
+  var column: String = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_borderColor(property: borderColor): String = js.native
@@ -1201,7 +1179,57 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   def getProperty_xPercentage(property: xPercentage): js.UndefOr[Double | Null] = js.native
   @JSName("getProperty")
   def getProperty_yPercentage(property: yPercentage): js.UndefOr[Double | Null] = js.native
+  
+  var groupCategory: js.UndefOr[String] = js.native
+  
+  var icon: js.UndefOr[BorderRadiusBorderWidth] = js.native
+  
+  var indicatorColor: js.UndefOr[String] = js.native
+  
+  var indicatorIcon: js.UndefOr[BorderWidthColor] = js.native
+  
+  var label: String = js.native
+  
+  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onBorderWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onColumnChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onGroupCategoryChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[BorderRadiusBorderWidth]], _]) | Null = js.native
+  
+  var onIndicatorColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onIndicatorIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[BorderWidthColor]], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onRowChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSecondaryLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Object | Null], _]) | Null = js.native
+  
+  var onXPercentageChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double | Null]], _]) | Null = js.native
+  
+  var onYPercentageChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double | Null]], _]) | Null = js.native
+  
+  var row: String = js.native
+  
+  var secondaryLabel: String = js.native
+  
   def setProperties(properties: ojNBoxNodeSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojNBoxNodeSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderColor(property: borderColor, value: String): Unit = js.native
@@ -1253,5 +1281,14 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   def setProperty_yPercentage(property: yPercentage): Unit = js.native
   @JSName("setProperty")
   def setProperty_yPercentage(property: yPercentage, value: Double): Unit = js.native
+  
+  var shortDesc: String = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object | Null = js.native
+  
+  var xPercentage: js.UndefOr[Double | Null] = js.native
+  
+  var yPercentage: js.UndefOr[Double | Null] = js.native
 }
-

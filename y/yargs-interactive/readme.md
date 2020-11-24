@@ -10,9 +10,9 @@ Build interactive command line tools without worring to parse the arguments (or 
 | ------------------ | :-------------: |
 | Full name          | yargs-interactive |
 | Keywords           | yargs, interactive, cli, arguments, args, prompt, inquirer |
-| # releases         | 9 |
-| # dependents       | 22 |
-| # downloads        | 33208 |
+| # releases         | 5 |
+| # dependents       | 29 |
+| # downloads        | 95757 |
 | # stars            | 1 |
 
 ## Links

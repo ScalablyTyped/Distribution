@@ -7,11 +7,12 @@ import typings.std.Blob
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bro-fs", "appendFile")
 @js.native
 object appendFile extends js.Object {
+  
   def apply(path: String, data: String): js.Promise[FileSystem] = js.native
   def apply(path: String, data: ArrayBuffer): js.Promise[FileSystem] = js.native
   def apply(path: String, data: Blob): js.Promise[FileSystem] = js.native
@@ -21,4 +22,3 @@ object appendFile extends js.Object {
   def apply(path: FileEntry, data: Blob): js.Promise[FileSystem] = js.native
   def apply(path: FileEntry, data: File): js.Promise[FileSystem] = js.native
 }
-

@@ -10,15 +10,15 @@ An easy way to install Dev Tools extensions into Electron applications
 | ------------------ | :-------------: |
 | Full name          | electron-devtools-installer |
 | Keywords           | electron, dev, tools |
-| # releases         | 2 |
-| # dependents       | 50 |
-| # downloads        | 1664611 |
+| # releases         | 4 |
+| # dependents       | 54 |
+| # downloads        | 1994598 |
 | # stars            | 7 |
 
 ## Links
-- [Homepage](https://github.com/GPMDP/electron-devtools-installer#readme)
-- [Bugs](https://github.com/GPMDP/electron-devtools-installer/issues)
-- [Repository](https://github.com/GPMDP/electron-devtools-installer)
+- [Homepage](https://github.com/MarshallOfSound/electron-devtools-installer#readme)
+- [Bugs](https://github.com/MarshallOfSound/electron-devtools-installer/issues)
+- [Repository](https://github.com/MarshallOfSound/electron-devtools-installer)
 - [Npm](https://www.npmjs.com/package/electron-devtools-installer)
     
 

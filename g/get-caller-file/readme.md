@@ -10,9 +10,9 @@ Typings are for version 2.0.5
 | ------------------ | :-------------: |
 | Full name          | get-caller-file |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 88 |
-| # downloads        | 543056825 |
+| # releases         | 6 |
+| # dependents       | 145 |
+| # downloads        | 912042905 |
 | # stars            | 1 |
 
 ## Links

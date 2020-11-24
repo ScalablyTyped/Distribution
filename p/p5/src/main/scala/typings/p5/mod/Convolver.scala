@@ -3,22 +3,11 @@ package typings.p5.mod
 import typings.std.ConvolverNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Convolver extends Effect {
-  /**
-    *   Internally, the p5.Convolver uses the a  Web Audio
-    *   Convolver Node.
-    */
-  var convolverNode: ConvolverNode = js.native
-  /**
-    *   If you load multiple impulse files using the
-    *   .addImpulse method, they will be stored as Objects
-    *   in this Array. Toggle between them with the
-    *   toggleImpulse(id) method.
-    */
-  var impulses: js.Array[_] = js.native
+  
   /**
     *   Load and assign a new Impulse Response to the
     *   p5.Convolver. The impulse is added to the
@@ -33,6 +22,13 @@ trait Convolver extends Effect {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
+  /**
+    *   Internally, the p5.Convolver uses the a  Web Audio
+    *   Convolver Node.
+    */
+  var convolverNode: ConvolverNode = js.native
+  
   /**
     *   Create a p5.Convolver. Accepts a path to a
     *   soundfile that will be used to generate an impulse
@@ -57,6 +53,15 @@ trait Convolver extends Effect {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): Convolver = js.native
+  
+  /**
+    *   If you load multiple impulse files using the
+    *   .addImpulse method, they will be stored as Objects
+    *   in this Array. Toggle between them with the
+    *   toggleImpulse(id) method.
+    */
+  var impulses: js.Array[_] = js.native
+  
   /**
     *   Connect a source to the reverb, and assign reverb
     *   parameters.
@@ -64,6 +69,7 @@ trait Convolver extends Effect {
     *   sound output.
     */
   def process(src: js.Object): Unit = js.native
+  
   /**
     *   Similar to .addImpulse, except that the .impulses
     *   Array is reset to save memory. A new .impulses
@@ -78,6 +84,7 @@ trait Convolver extends Effect {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   /**
     *   Set the global tempo, in beats per minute, for all
     *   p5.Parts. This method will impact all active
@@ -86,6 +93,7 @@ trait Convolver extends Effect {
     *   @param rampTime Seconds from now
     */
   def setBPM(BPM: Double, rampTime: Double): Unit = js.native
+  
   /**
     *   If you have used .addImpulse() to add multiple
     *   impulses to a p5.Convolver, then you can use this
@@ -106,4 +114,3 @@ trait Convolver extends Effect {
   def toggleImpulse(id: String): Unit = js.native
   def toggleImpulse(id: Double): Unit = js.native
 }
-

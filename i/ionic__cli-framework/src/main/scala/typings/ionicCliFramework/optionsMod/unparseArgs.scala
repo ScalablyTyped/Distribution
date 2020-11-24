@@ -4,11 +4,12 @@ import typings.minimist.mod.Opts
 import typings.minimist.mod.ParsedArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/cli-framework/lib/options", "unparseArgs")
 @js.native
 object unparseArgs extends js.Object {
+  
   def apply(parsedArgs: ParsedArgs): js.Array[String] = js.native
   def apply(
     parsedArgs: ParsedArgs,
@@ -22,4 +23,3 @@ object unparseArgs extends js.Object {
     parseArgsOptions: Opts
   ): js.Array[String] = js.native
 }
-

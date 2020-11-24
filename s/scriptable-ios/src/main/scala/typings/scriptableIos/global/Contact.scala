@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Contact in the address book._
@@ -22,11 +22,11 @@ import scala.scalajs.js.annotation._
   */
 class Contact ()
   extends typings.scriptableIos.Contact
-
 /* static members */
 @JSGlobal("Contact")
 @js.native
 object Contact extends js.Object {
+  
   /**
     * _Queues a contact to be added._
     *
@@ -40,6 +40,7 @@ object Contact extends js.Object {
     */
   def add(contact: typings.scriptableIos.Contact): Unit = js.native
   def add(contact: typings.scriptableIos.Contact, containerIdentifier: String): Unit = js.native
+  
   /**
     * _Fetches contacts._
     *
@@ -48,6 +49,7 @@ object Contact extends js.Object {
     * @see https://docs.scriptable.app/contact/#all
     */
   def all(containers: js.Array[typings.scriptableIos.ContactsContainer]): js.Promise[js.Array[typings.scriptableIos.Contact]] = js.native
+  
   /**
     * _Queues a contact to be deleted._
     *
@@ -59,6 +61,7 @@ object Contact extends js.Object {
     * @see https://docs.scriptable.app/contact/#delete
     */
   def delete(contact: typings.scriptableIos.Contact): Unit = js.native
+  
   /**
     * _Fetches contacts in groups._
     *
@@ -67,6 +70,7 @@ object Contact extends js.Object {
     * @see https://docs.scriptable.app/contact/#ingroups
     */
   def inGroups(groups: js.Array[typings.scriptableIos.ContactsGroup]): js.Promise[js.Array[typings.scriptableIos.Contact]] = js.native
+  
   /**
     * _Persist queued changes to the address book._
     *
@@ -77,6 +81,7 @@ object Contact extends js.Object {
     * @see https://docs.scriptable.app/contact/#persistchanges
     */
   def persistChanges(): js.Promise[Unit] = js.native
+  
   /**
     * _Queues an update to a contact._
     *
@@ -90,4 +95,3 @@ object Contact extends js.Object {
     */
   def update(contact: typings.scriptableIos.Contact): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.fastRedact.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fast-redact", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * When called without any options, or with a zero length paths array, fast-redact will return JSON.stringify or the serialize option, if set.
     * @param redactOptions
@@ -19,4 +20,3 @@ object ^ extends js.Object {
     */
   def apply(redactOptions: RedactOptions): redactFn = js.native
 }
-

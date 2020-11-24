@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.XMapping2D
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a specialization of the canvas interface for bitmapped canvases.
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XBitmapCanvas extends XCanvas {
+  
   /**
     * This method copies a rectangular area from a place of one canvas to a place on another.
     *
@@ -47,8 +48,8 @@ trait XBitmapCanvas extends XCanvas {
     destRenderState: RenderState
   ): Unit = js.native
 }
-
 object XBitmapCanvas {
+  
   @scala.inline
   def apply(
     Device: XGraphicDevice,
@@ -79,22 +80,25 @@ object XBitmapCanvas {
     val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), copyRect = js.Any.fromFunction7(copyRect), createFont = js.Any.fromFunction3(createFont), drawBezier = js.Any.fromFunction4(drawBezier), drawBitmap = js.Any.fromFunction3(drawBitmap), drawBitmapModulated = js.Any.fromFunction3(drawBitmapModulated), drawLine = js.Any.fromFunction4(drawLine), drawPoint = js.Any.fromFunction3(drawPoint), drawPolyPolygon = js.Any.fromFunction3(drawPolyPolygon), drawText = js.Any.fromFunction5(drawText), drawTextLayout = js.Any.fromFunction3(drawTextLayout), fillPolyPolygon = js.Any.fromFunction3(fillPolyPolygon), fillTextureMappedPolyPolygon = js.Any.fromFunction5(fillTextureMappedPolyPolygon), fillTexturedPolyPolygon = js.Any.fromFunction4(fillTexturedPolyPolygon), getDevice = js.Any.fromFunction0(getDevice), queryAvailableFonts = js.Any.fromFunction2(queryAvailableFonts), queryInterface = js.Any.fromFunction1(queryInterface), queryStrokeShapes = js.Any.fromFunction4(queryStrokeShapes), release = js.Any.fromFunction0(release), strokePolyPolygon = js.Any.fromFunction4(strokePolyPolygon), strokeTextureMappedPolyPolygon = js.Any.fromFunction6(strokeTextureMappedPolyPolygon), strokeTexturedPolyPolygon = js.Any.fromFunction5(strokeTexturedPolyPolygon))
     __obj.asInstanceOf[XBitmapCanvas]
   }
+  
   @scala.inline
   implicit class XBitmapCanvasOps[Self <: XBitmapCanvas] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCopyRect(
       value: (XBitmapCanvas, RealRectangle2D, ViewState, RenderState, RealRectangle2D, ViewState, RenderState) => Unit
     ): Self = this.set("copyRect", js.Any.fromFunction7(value))
   }
-  
 }
-

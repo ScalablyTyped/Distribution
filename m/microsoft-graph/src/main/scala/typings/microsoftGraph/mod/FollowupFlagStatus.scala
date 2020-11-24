@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.notFlagged
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.flagged
 */
 trait FollowupFlagStatus extends js.Object
-
 object FollowupFlagStatus {
+  
   @scala.inline
   def complete: typings.microsoftGraph.microsoftGraphStrings.complete = "complete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.complete]
+  
   @scala.inline
   def flagged: typings.microsoftGraph.microsoftGraphStrings.flagged = "flagged".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.flagged]
+  
   @scala.inline
   def notFlagged: typings.microsoftGraph.microsoftGraphStrings.notFlagged = "notFlagged".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notFlagged]
 }
-

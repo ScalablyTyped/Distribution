@@ -4,7 +4,7 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IAssetsService extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.assetsService#load
@@ -32,6 +33,7 @@ trait IAssetsService extends js.Object {
     * @returns {Promise} Promise object which resolves when all the files has loaded
     */
   def load(pathArray: js.Array[String], scope: IScope): IPromise[_] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.assetsService#loadCss
@@ -47,6 +49,7 @@ trait IAssetsService extends js.Object {
     * @returns {Promise} Promise object which resolves when the file has loaded
     */
   def loadCss(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[_] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.assetsService#loadJs
@@ -63,8 +66,8 @@ trait IAssetsService extends js.Object {
     */
   def loadJs(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[_] = js.native
 }
-
 object IAssetsService {
+  
   @scala.inline
   def apply(
     load: (js.Array[String], IScope) => IPromise[_],
@@ -74,24 +77,29 @@ object IAssetsService {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load), loadCss = js.Any.fromFunction4(loadCss), loadJs = js.Any.fromFunction4(loadJs))
     __obj.asInstanceOf[IAssetsService]
   }
+  
   @scala.inline
   implicit class IAssetsServiceOps[Self <: IAssetsService] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLoad(value: (js.Array[String], IScope) => IPromise[_]): Self = this.set("load", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = this.set("loadCss", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = this.set("loadJs", js.Any.fromFunction4(value))
   }
-  
 }
-

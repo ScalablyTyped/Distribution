@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * ToolEvent The ToolEvent object is received by the {@link Tool}'s mouse
@@ -13,21 +13,25 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ToolEvent extends Event {
+  
   /** 
     * The number of times the mouse event was fired.
     */
   var count: Double = js.native
+  
   /** 
     * The difference between the current position and the last position of the
     * mouse when the event was fired. In case of the mouseup event, the
     * difference to the mousedown position is returned.
     */
   var delta: Point = js.native
+  
   /** 
     * The position of the mouse in project coordinates when the mouse button
     * was last clicked.
     */
   var downPoint: Point = js.native
+  
   /** 
     * The item at the position of the mouse (if any).
     * 
@@ -36,11 +40,13 @@ trait ToolEvent extends Event {
     * that it is contained within is returned.
     */
   var item: Item = js.native
+  
   /** 
     * The position of the mouse in project coordinates when the previous
     * event was fired.
     */
   var lastPoint: Point = js.native
+  
   /** 
     * The point in the middle between {@link #lastPoint} and
     * {@link #point}. This is a useful position to use when creating
@@ -48,18 +54,20 @@ trait ToolEvent extends Event {
     * {@link #delta}.
     */
   var middlePoint: Point = js.native
+  
   /** 
     * The position of the mouse in project coordinates when the event was
     * fired.
     */
   var point: Point = js.native
+  
   /** 
     * The type of tool event.
     */
   var `type`: String = js.native
 }
-
 object ToolEvent {
+  
   @scala.inline
   def apply(
     count: Double,
@@ -80,34 +88,44 @@ object ToolEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolEvent]
   }
+  
   @scala.inline
   implicit class ToolEventOps[Self <: ToolEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDelta(value: Point): Self = this.set("delta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDownPoint(value: Point): Self = this.set("downPoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItem(value: Item): Self = this.set("item", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLastPoint(value: Point): Self = this.set("lastPoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMiddlePoint(value: Point): Self = this.set("middlePoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

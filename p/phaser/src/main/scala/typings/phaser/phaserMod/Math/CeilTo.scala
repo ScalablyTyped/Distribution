@@ -3,11 +3,12 @@ package typings.phaser.phaserMod.Math
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Math.CeilTo")
 @js.native
 object CeilTo extends js.Object {
+  
   /**
     * Ceils to some place comparative to a `base`, default is 10 for decimal place.
     * 
@@ -21,4 +22,3 @@ object CeilTo extends js.Object {
   def apply(value: Double, place: Double): Double = js.native
   def apply(value: Double, place: Double, base: integer): Double = js.native
 }
-

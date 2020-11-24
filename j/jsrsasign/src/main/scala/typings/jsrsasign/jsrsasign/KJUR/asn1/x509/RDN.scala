@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RDN (Relative Distinguished Name) ASN.1 structure class
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RDN extends ASN1Object {
+  
   /**
     * add one AttributeTypeAndValue by multi-valued string
     * @param s string of multi-valued RDN
@@ -44,6 +45,7 @@ trait RDN extends ASN1Object {
     * rdn.addByMultiValuedString("O=a+O=\"b+b+b\"+O=c"); // multi-valued RDN with quoted quotation
     */
   def addByMultiValuedString(s: String): Unit = js.native
+  
   /**
     * add one AttributeTypeAndValue by string
     * @param s string of AttributeTypeAndValue
@@ -57,8 +59,8 @@ trait RDN extends ASN1Object {
     */
   def addByString(s: String): Unit = js.native
 }
-
 object RDN {
+  
   @scala.inline
   def apply(
     addByMultiValuedString: String => Unit,
@@ -76,22 +78,26 @@ object RDN {
     val __obj = js.Dynamic.literal(addByMultiValuedString = js.Any.fromFunction1(addByMultiValuedString), addByString = js.Any.fromFunction1(addByString), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any])
     __obj.asInstanceOf[RDN]
   }
+  
   @scala.inline
   implicit class RDNOps[Self <: RDN] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddByMultiValuedString(value: String => Unit): Self = this.set("addByMultiValuedString", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddByString(value: String => Unit): Self = this.set("addByString", js.Any.fromFunction1(value))
   }
-  
 }
-

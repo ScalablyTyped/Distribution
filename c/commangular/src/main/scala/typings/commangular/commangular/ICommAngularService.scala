@@ -3,7 +3,7 @@ package typings.commangular.commangular
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The service that enables the execution of commands
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ICommAngularService extends js.Object {
+  
   /**
     * This function executes the given command sequence.
     * see http://commangular.org/docs/#dispatching-events
@@ -20,4 +21,3 @@ trait ICommAngularService extends js.Object {
   def dispatch(eventName: String): IPromise[_] = js.native
   def dispatch(eventName: String, data: js.Any): IPromise[_] = js.native
 }
-

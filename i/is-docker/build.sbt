@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-docker"
-version := "2.0.0-3dc5f9"
+version := "2.1.1-360025"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

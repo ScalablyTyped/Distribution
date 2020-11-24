@@ -3,11 +3,12 @@ package typings.useResizeObserver.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("use-resize-observer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /***
     * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
     * The hook is invoked at least once before the first measurement of actual size by the observer.
@@ -34,4 +35,3 @@ object ^ extends js.Object {
     */
   def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithoutResizeHandler[TElement]): ObserverResultWithSize[TElement] = js.native
 }
-

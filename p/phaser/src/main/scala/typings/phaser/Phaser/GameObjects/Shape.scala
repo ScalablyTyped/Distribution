@@ -14,7 +14,7 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Shape Game Object is a base class for the various different shapes, such as the Arc, Star or Polygon.
@@ -34,58 +34,61 @@ trait Shape
      with ScrollFactor
      with Transform
      with Visible {
+  
   /**
     * Controls if this Shape path is closed during rendering when stroked.
     * Note that some Shapes are always closed when stroked (such as Ellipse shapes)
     */
   var closePath: Boolean = js.native
+  
   /**
     * The fill alpha value used by this Shape.
     */
   var fillAlpha: Double = js.native
+  
   /**
     * The fill color used by this Shape.
     */
   var fillColor: Double = js.native
+  
   /**
     * The source Shape data. Typically a geometry object.
     * You should not manipulate this directly.
     */
   val geom: js.Any = js.native
+  
   /**
     * Controls if this Shape is filled or not.
     * Note that some Shapes do not support being filled (such as Line shapes)
     */
   var isFilled: Boolean = js.native
+  
   /**
     * Controls if this Shape is stroked or not.
     * Note that some Shapes do not support being stroked (such as Iso Box shapes)
     */
   var isStroked: Boolean = js.native
+  
   /**
     * The stroke line width used by this Shape.
     */
   var lineWidth: Double = js.native
+  
   /**
     * Holds the polygon path data for filled rendering.
     */
   val pathData: js.Array[Double] = js.native
+  
   /**
     * Holds the earcut polygon path index data for filled rendering.
     */
   val pathIndexes: js.Array[integer] = js.native
-  /**
-    * The stroke alpha value used by this Shape.
-    */
-  var strokeAlpha: Double = js.native
-  /**
-    * The stroke color used by this Shape.
-    */
-  var strokeColor: Double = js.native
+  
   /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
+  
   /**
     * Sets if this Shape path is closed during rendering when stroked.
     * Note that some Shapes are always closed when stroked (such as Ellipse shapes)
@@ -94,6 +97,7 @@ trait Shape
     * @param value Set to `true` if the Shape should be closed when stroked, otherwise `false`.
     */
   def setClosePath(value: Boolean): this.type = js.native
+  
   /**
     * Sets the fill color and alpha for this Shape.
     * 
@@ -109,6 +113,7 @@ trait Shape
   def setFillStyle(color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
   def setFillStyle(color: Double): this.type = js.native
   def setFillStyle(color: Double, alpha: Double): this.type = js.native
+  
   /**
     * Sets the stroke color and alpha for this Shape.
     * 
@@ -129,5 +134,14 @@ trait Shape
   def setStrokeStyle(lineWidth: Double, color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double, color: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double, color: Double, alpha: Double): this.type = js.native
+  
+  /**
+    * The stroke alpha value used by this Shape.
+    */
+  var strokeAlpha: Double = js.native
+  
+  /**
+    * The stroke color used by this Shape.
+    */
+  var strokeColor: Double = js.native
 }
-

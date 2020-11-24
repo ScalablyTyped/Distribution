@@ -1,0 +1,32 @@
+package typings.bmapgl.BMapGL
+
+import typings.bmapgl.bmapglStrings.polygon_
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.bmapgl.bmapglStrings.marker
+  - typings.bmapgl.bmapglStrings.polyline
+  - typings.bmapgl.bmapglStrings.polygon_
+  - typings.bmapgl.bmapglStrings.rectangle
+  - typings.bmapgl.bmapglStrings.circle
+*/
+trait DrawingType extends js.Object
+object DrawingType {
+  
+  @scala.inline
+  def circle: typings.bmapgl.bmapglStrings.circle = "circle".asInstanceOf[typings.bmapgl.bmapglStrings.circle]
+  
+  @scala.inline
+  def marker: typings.bmapgl.bmapglStrings.marker = "marker".asInstanceOf[typings.bmapgl.bmapglStrings.marker]
+  
+  @scala.inline
+  def polygon: polygon_ = "polygon".asInstanceOf[polygon_]
+  
+  @scala.inline
+  def polyline: typings.bmapgl.bmapglStrings.polyline = "polyline".asInstanceOf[typings.bmapgl.bmapglStrings.polyline]
+  
+  @scala.inline
+  def rectangle: typings.bmapgl.bmapglStrings.rectangle = "rectangle".asInstanceOf[typings.bmapgl.bmapglStrings.rectangle]
+}

@@ -2,7 +2,7 @@ package typings.amapJsSdk.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* --------------------------- 基础类 --------------------------- */
 /* 参考地址:http://lbs.amap.com/api/javascript-api/reference/core */
@@ -18,4 +18,3 @@ class Pixel protected ()
     */
   def this(x: Double, y: Double) = this()
 }
-

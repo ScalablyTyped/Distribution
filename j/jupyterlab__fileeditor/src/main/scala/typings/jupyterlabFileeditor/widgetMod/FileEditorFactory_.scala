@@ -7,7 +7,7 @@ import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/fileeditor/lib/widget", "FileEditorFactory")
 @js.native
@@ -16,6 +16,6 @@ class FileEditorFactory_ protected () extends ABCWidgetFactory[IDocumentWidget[F
     * Construct a new editor widget factory.
     */
   def this(options: IOptions) = this()
+  
   var _services: js.Any = js.native
 }
-

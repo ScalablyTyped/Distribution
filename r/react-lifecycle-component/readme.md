@@ -12,7 +12,7 @@ A higher order component that accepts lifecycle hook functions as props
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 111100 |
+| # downloads        | 45950 |
 | # stars            | 1 |
 
 ## Links

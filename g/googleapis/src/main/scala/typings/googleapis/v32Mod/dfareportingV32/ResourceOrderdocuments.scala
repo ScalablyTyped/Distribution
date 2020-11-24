@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Orderdocuments")
 @js.native
 class ResourceOrderdocuments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.orderDocuments.get
     * @desc Gets one order document by ID.
@@ -43,6 +45,7 @@ class ResourceOrderdocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrderDocument]
   ): Unit = js.native
+  
   /**
     * dfareporting.orderDocuments.list
     * @desc Retrieves a list of order documents, possibly filtered. This method
@@ -86,4 +89,3 @@ class ResourceOrderdocuments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrderDocumentsListResponse]
   ): Unit = js.native
 }
-

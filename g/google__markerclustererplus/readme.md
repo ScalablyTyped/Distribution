@@ -10,9 +10,9 @@ Creates and manages per-zoom-level clusters for large amounts of markers.
 | ------------------ | :-------------: |
 | Full name          | @google/markerclustererplus |
 | Keywords           | cluster, google, maps, marker |
-| # releases         | 17 |
-| # dependents       | 3 |
-| # downloads        | 353043 |
+| # releases         | 18 |
+| # dependents       | 7 |
+| # downloads        | 813892 |
 | # stars            | 0 |
 
 ## Links

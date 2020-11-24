@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin/v1beta", "oslogin_v1beta.Resource$Users$Sshpublickeys")
 @js.native
 class ResourceUsersSshpublickeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * oslogin.users.sshPublicKeys.delete
     * @desc Deletes an SSH public key.
@@ -41,6 +43,7 @@ class ResourceUsersSshpublickeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * oslogin.users.sshPublicKeys.get
     * @desc Retrieves an SSH public key.
@@ -69,6 +72,7 @@ class ResourceUsersSshpublickeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSshPublicKey]
   ): Unit = js.native
+  
   /**
     * oslogin.users.sshPublicKeys.patch
     * @desc Updates an SSH public key and returns the profile information. This
@@ -101,4 +105,3 @@ class ResourceUsersSshpublickeys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSshPublicKey]
   ): Unit = js.native
 }
-

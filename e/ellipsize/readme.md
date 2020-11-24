@@ -12,7 +12,7 @@ Ellipsizes a string at the nearest whitespace character near the end of allowed 
 | Keywords           | ellipsize, ellipsis, truncate, shorten, string |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 714083 |
+| # downloads        | 784167 |
 | # stars            | 2 |
 
 ## Links

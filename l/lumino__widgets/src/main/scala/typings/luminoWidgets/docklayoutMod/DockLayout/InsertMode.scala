@@ -2,7 +2,7 @@ package typings.luminoWidgets.docklayoutMod.DockLayout
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type alias for the supported insertion modes.
@@ -19,19 +19,23 @@ import scala.scalajs.js.annotation._
   - typings.luminoWidgets.luminoWidgetsStrings.`tab-after`
 */
 trait InsertMode extends js.Object
-
 object InsertMode {
+  
   @scala.inline
   def `split-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`split-bottom` = "split-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-bottom`]
+  
   @scala.inline
   def `split-left`: typings.luminoWidgets.luminoWidgetsStrings.`split-left` = "split-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-left`]
+  
   @scala.inline
   def `split-right`: typings.luminoWidgets.luminoWidgetsStrings.`split-right` = "split-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-right`]
+  
   @scala.inline
   def `split-top`: typings.luminoWidgets.luminoWidgetsStrings.`split-top` = "split-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-top`]
+  
   @scala.inline
   def `tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`tab-after` = "tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-after`]
+  
   @scala.inline
   def `tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`tab-before` = "tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-before`]
 }
-

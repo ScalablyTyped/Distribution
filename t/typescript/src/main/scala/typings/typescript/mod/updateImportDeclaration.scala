@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateImportDeclaration")
 @js.native
 object updateImportDeclaration extends js.Object {
+  
   def apply(
     node: ImportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -56,6 +57,7 @@ object updateImportDeclaration extends js.Object {
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
+  /** @deprecated Use `factory.updateImportDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: ImportDeclaration,
     decorators: js.Array[Decorator],
@@ -64,4 +66,3 @@ object updateImportDeclaration extends js.Object {
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
 }
-

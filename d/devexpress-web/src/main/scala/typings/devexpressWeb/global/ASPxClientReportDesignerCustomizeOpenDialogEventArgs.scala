@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeOpenDialog event.
@@ -17,4 +17,3 @@ class ASPxClientReportDesignerCustomizeOpenDialogEventArgs protected ()
     */
   def this(popup: typings.devexpressWeb.ASPxDesignerOpenDialog) = this()
 }
-

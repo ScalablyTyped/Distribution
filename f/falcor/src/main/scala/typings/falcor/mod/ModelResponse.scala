@@ -2,13 +2,15 @@ package typings.falcor.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("falcor", "ModelResponse")
 @js.native
 class ModelResponse[T] protected () extends Observable[T] {
   def this(observable: Observable[T]) = this()
+  
   def progressively(): ModelResponse[T] = js.native
+  
   def `then`(): Thenable[_] = js.native
   def `then`(onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* error */ js.Any, Unit]): Thenable[_] = js.native
   def `then`(onFulfilled: js.Function1[/* value */ T, _ | Thenable[_]]): Thenable[_] = js.native
@@ -28,4 +30,3 @@ class ModelResponse[T] protected () extends Observable[T] {
     onRejected: js.Function1[/* error */ js.Any, Unit]
   ): Thenable[U] = js.native
 }
-

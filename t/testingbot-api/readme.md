@@ -11,8 +11,8 @@ A wrapper around TestingBot's REST API
 | Full name          | testingbot-api |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 59104 |
+| # dependents       | 4 |
+| # downloads        | 81567 |
 | # stars            | 0 |
 
 ## Links

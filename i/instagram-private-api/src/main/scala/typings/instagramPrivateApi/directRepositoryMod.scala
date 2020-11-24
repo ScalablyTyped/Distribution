@@ -8,16 +8,21 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.reshare
 import typings.instagramPrivateApi.repositoryMod.Repository
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api/dist/repositories/direct.repository", JSImport.Namespace)
 @js.native
 object directRepositoryMod extends js.Object {
+  
   @js.native
   class DirectRepository () extends Repository {
+    
     def createGroupThread(recipientUsers: js.Array[String], threadTitle: String): js.Promise[DirectRepositoryCreateGroupThreadResponseRootObject] = js.native
+    
     def getPresence(): js.Promise[DirectRepositoryGetPresenceResponseRootObject] = js.native
+    
     def rankedRecipients(): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
+    def rankedRecipients(mode: js.UndefOr[scala.Nothing], query: String): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
     @JSName("rankedRecipients")
     def rankedRecipients_raven(mode: raven): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
     @JSName("rankedRecipients")
@@ -27,6 +32,4 @@ object directRepositoryMod extends js.Object {
     @JSName("rankedRecipients")
     def rankedRecipients_reshare(mode: reshare, query: String): js.Promise[DirectRepositoryRankedRecipientsResponseRootObject] = js.native
   }
-  
 }
-

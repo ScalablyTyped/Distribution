@@ -10,9 +10,9 @@ JavaScript animation engine
 | ------------------ | :-------------: |
 | Full name          | animejs |
 | Keywords           | anime, animation, javascript, CSS, transforms, SVG, canvas |
-| # releases         | 4 |
-| # dependents       | 205 |
-| # downloads        | 2520978 |
+| # releases         | 5 |
+| # dependents       | 270 |
+| # downloads        | 3552024 |
 | # stars            | 16 |
 
 ## Links

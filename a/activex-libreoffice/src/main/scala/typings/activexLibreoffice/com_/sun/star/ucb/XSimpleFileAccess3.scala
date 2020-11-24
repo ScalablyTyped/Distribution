@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is an extension to the interface {@link XSimpleFileAccess2} .
@@ -17,12 +17,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSimpleFileAccess3 extends XSimpleFileAccess2 {
+  
   /**
     * Checks if a file is "hidden"
     * @param FileURL URL to be checked
     * @returns true, if the given File is "hidden", false otherwise
     */
   def isHidden(FileURL: String): Boolean = js.native
+  
   /**
     * Sets the "hidden" of a file according to the boolean parameter, if the actual process has the right to do so and the used operation system supports
     * this operation.
@@ -31,8 +33,8 @@ trait XSimpleFileAccess3 extends XSimpleFileAccess2 {
     */
   def setHidden(FileURL: String, bHidden: Boolean): Unit = js.native
 }
-
 object XSimpleFileAccess3 {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -61,22 +63,26 @@ object XSimpleFileAccess3 {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), copy = js.Any.fromFunction2(copy), createFolder = js.Any.fromFunction1(createFolder), exists = js.Any.fromFunction1(exists), getContentType = js.Any.fromFunction1(getContentType), getDateTimeModified = js.Any.fromFunction1(getDateTimeModified), getFolderContents = js.Any.fromFunction2(getFolderContents), getSize = js.Any.fromFunction1(getSize), isFolder = js.Any.fromFunction1(isFolder), isHidden = js.Any.fromFunction1(isHidden), isReadOnly = js.Any.fromFunction1(isReadOnly), kill = js.Any.fromFunction1(kill), move = js.Any.fromFunction2(move), openFileRead = js.Any.fromFunction1(openFileRead), openFileReadWrite = js.Any.fromFunction1(openFileReadWrite), openFileWrite = js.Any.fromFunction1(openFileWrite), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHidden = js.Any.fromFunction2(setHidden), setInteractionHandler = js.Any.fromFunction1(setInteractionHandler), setReadOnly = js.Any.fromFunction2(setReadOnly), writeFile = js.Any.fromFunction2(writeFile))
     __obj.asInstanceOf[XSimpleFileAccess3]
   }
+  
   @scala.inline
   implicit class XSimpleFileAccess3Ops[Self <: XSimpleFileAccess3] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIsHidden(value: String => Boolean): Self = this.set("isHidden", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetHidden(value: (String, Boolean) => Unit): Self = this.set("setHidden", js.Any.fromFunction2(value))
   }
-  
 }
-

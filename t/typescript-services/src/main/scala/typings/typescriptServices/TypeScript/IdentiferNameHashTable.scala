@@ -2,12 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IdentiferNameHashTable[T] extends StringHashTable[T]
-
 object IdentiferNameHashTable {
+  
   @scala.inline
   def apply[T](
     add: (String, T) => Boolean,
@@ -26,4 +26,3 @@ object IdentiferNameHashTable {
     __obj.asInstanceOf[IdentiferNameHashTable[T]]
   }
 }
-

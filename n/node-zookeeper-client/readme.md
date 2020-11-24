@@ -11,8 +11,8 @@ A pure Javascript ZooKeeper client for Node.js.
 | Full name          | node-zookeeper-client |
 | Keywords           | zookeeper, client, pure, javascript |
 | # releases         | 4 |
-| # dependents       | 184 |
-| # downloads        | 2505512 |
+| # dependents       | 195 |
+| # downloads        | 1982838 |
 | # stars            | 14 |
 
 ## Links

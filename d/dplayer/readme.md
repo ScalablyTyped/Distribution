@@ -10,9 +10,9 @@ Wow, such a lovely HTML5 danmaku video player
 | ------------------ | :-------------: |
 | Full name          | dplayer |
 | Keywords           | player, danmaku, video, html5 |
-| # releases         | 17 |
-| # dependents       | 19 |
-| # downloads        | 48782 |
+| # releases         | 4 |
+| # dependents       | 27 |
+| # downloads        | 105555 |
 | # stars            | 2 |
 
 ## Links

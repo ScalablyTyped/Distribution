@@ -1,7 +1,7 @@
 
 # Scala.js typings for raspi-board
 
-Typings are for version 7.3.2
+Typings are for version 7.3.3
 
 ## Library description:
 Pin mapping functionality for the Raspberry Pi in Node.js
@@ -10,9 +10,9 @@ Pin mapping functionality for the Raspberry Pi in Node.js
 | ------------------ | :-------------: |
 | Full name          | raspi-board |
 | Keywords           | nodebots, robotics, raspberry pi |
-| # releases         | 17 |
-| # dependents       | 7 |
-| # downloads        | 21312 |
+| # releases         | 14 |
+| # dependents       | 8 |
+| # downloads        | 15627 |
 | # stars            | 9 |
 
 ## Links

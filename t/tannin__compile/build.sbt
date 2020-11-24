@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tannin__compile"
-version := "1.1.0-c4a9bc"
+version := "1.1.0-467c10"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

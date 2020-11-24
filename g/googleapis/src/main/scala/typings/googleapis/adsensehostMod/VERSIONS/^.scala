@@ -6,11 +6,12 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost", "VERSIONS")
 @js.native
 object ^ extends js.Object {
+  
   @JSName("v4.1")
   var v4Dot1: Instantiable2[
     /* options */ GlobalOptions, 
@@ -18,4 +19,3 @@ object ^ extends js.Object {
     Adsensehost
   ] = js.native
 }
-

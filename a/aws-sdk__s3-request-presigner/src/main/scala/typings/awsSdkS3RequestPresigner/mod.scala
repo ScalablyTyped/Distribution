@@ -1,28 +1,31 @@
 package typings.awsSdkS3RequestPresigner
 
-import typings.awsSdkS3RequestPresigner.anon.PartialBySignatureV4InitS
-import typings.awsSdkTypes.signatureMod.RequestPresigner
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Pick
+import typings.awsSdkS3RequestPresigner.presignerMod.S3RequestPresignerOptions
+import typings.awsSdkSmithyClient.mod.Client
+import typings.awsSdkSmithyClient.mod.Command
+import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.signatureMod.RequestPresigningArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/s3-request-presigner", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class S3RequestPresigner protected () extends RequestPresigner {
-    def this(hasServiceUriEscapePathRest: PartialBySignatureV4InitS) = this()
-    val signer: js.Any = js.native
-  }
   
-  /**
-    * PartialBy<T, K> makes properties specified in K optional in interface T
-    * see: https://stackoverflow.com/questions/43159887/make-a-single-property-optional-in-typescript
-    * */
-  type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
-  type PartialBy[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) with (Partial[Pick[T, K]])
+  def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
+    client: Client[_, InputTypesUnion, MetadataBearer, _],
+    command: Command[InputType, OutputType, _, InputTypesUnion, MetadataBearer]
+  ): js.Promise[String] = js.native
+  def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
+    client: Client[_, InputTypesUnion, MetadataBearer, _],
+    command: Command[InputType, OutputType, _, InputTypesUnion, MetadataBearer],
+    options: RequestPresigningArguments
+  ): js.Promise[String] = js.native
+  
+  @js.native
+  class S3RequestPresigner protected ()
+    extends typings.awsSdkS3RequestPresigner.presignerMod.S3RequestPresigner {
+    def this(options: S3RequestPresignerOptions) = this()
+  }
 }
-

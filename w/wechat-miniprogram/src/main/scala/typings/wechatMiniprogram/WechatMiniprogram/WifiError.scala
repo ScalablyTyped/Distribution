@@ -2,10 +2,11 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WifiError extends js.Object {
+  
   /** 错误码
     *
     * | 错误码 | 错误信息 | 说明 |
@@ -24,6 +25,7 @@ trait WifiError extends js.Object {
     * | 12010 | system internal error | 系统其他错误，需要在 errmsg 打印具体的错误原因 |
     * | 12011 | weapp in background | 应用在后台无法配置 Wi-Fi |
     * | 12013 | wifi config may be expired | 系统保存的 Wi-Fi 配置过期，建议忘记 Wi-Fi 后重试 | */ var errCode: Double = js.native
+  
   /** 错误信息
     *
     * | 错误码 | 错误信息 | 说明 |
@@ -43,29 +45,33 @@ trait WifiError extends js.Object {
     * | 12011 | weapp in background | 应用在后台无法配置 Wi-Fi |
     * | 12013 | wifi config may be expired | 系统保存的 Wi-Fi 配置过期，建议忘记 Wi-Fi 后重试 | */ var errMsg: String = js.native
 }
-
 object WifiError {
+  
   @scala.inline
   def apply(errCode: Double, errMsg: String): WifiError = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[WifiError]
   }
+  
   @scala.inline
   implicit class WifiErrorOps[Self <: WifiError] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setErrCode(value: Double): Self = this.set("errCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
   }
-  
 }
-

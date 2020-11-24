@@ -9,7 +9,7 @@ import typings.rdfJs.mod.QuadGraph
 import typings.rdfJs.mod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rdf-transform-triple-to-quad", JSImport.Namespace)
 @js.native
@@ -18,10 +18,12 @@ class ^[Q /* <: BaseQuad */] ()
      with Stream[Q] {
   def this(graph: QuadGraph) = this()
   def this(graph: js.UndefOr[QuadGraph], options: TripleToQuadTransformOptions) = this()
+  
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
   /**
     * This method pulls a quad out of the internal buffer and returns it.
     * If there is no quad available, then it will return null.
@@ -31,4 +33,3 @@ class ^[Q /* <: BaseQuad */] ()
   /* InferMemberOverrides */
   override def read(): (Q | Null) with (String | Buffer) = js.native
 }
-

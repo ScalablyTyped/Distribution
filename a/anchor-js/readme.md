@@ -10,9 +10,9 @@ A JavaScript utility for adding deep anchor links to online docs.
 | ------------------ | :-------------: |
 | Full name          | anchor-js |
 | Keywords           | anchor, links, urlify |
-| # releases         | 5 |
-| # dependents       | 15 |
-| # downloads        | 108056 |
+| # releases         | 4 |
+| # dependents       | 19 |
+| # downloads        | 109957 |
 | # stars            | 2 |
 
 ## Links

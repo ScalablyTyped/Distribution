@@ -6,10 +6,11 @@ import typings.std.Partial
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Micromatch extends js.Object {
+  
   /**
     * The main function takes a list of strings and one or more glob patterns to use for matching.
     *
@@ -31,6 +32,7 @@ trait Micromatch extends js.Object {
   def apply(list: js.Array[String], patterns: String, options: Options): js.Array[String] = js.native
   def apply(list: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
   def apply(list: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
+  
   /**
     * Returns true if **all** of the given `patterns` match the specified string.
     *
@@ -65,6 +67,7 @@ trait Micromatch extends js.Object {
   def all(str: js.Array[String], patterns: String, options: Options): Boolean = js.native
   def all(str: js.Array[String], patterns: js.Array[String]): Boolean = js.native
   def all(str: js.Array[String], patterns: js.Array[String], options: Options): Boolean = js.native
+  
   /**
     * Returns true if **any** of the given glob `patterns` match the specified `string`.
     *
@@ -92,6 +95,7 @@ trait Micromatch extends js.Object {
   def any(str: js.Array[String], patterns: String, options: Options): Boolean = js.native
   def any(str: js.Array[String], patterns: js.Array[String]): Boolean = js.native
   def any(str: js.Array[String], patterns: js.Array[String], options: Options): Boolean = js.native
+  
   /**
     * Expand the given brace `pattern`.
     *
@@ -110,6 +114,7 @@ trait Micromatch extends js.Object {
     */
   def braces(pattern: String): js.Array[String] = js.native
   def braces(pattern: String, options: typings.braces.mod.Options): js.Array[String] = js.native
+  
   /**
     * Returns an array of matches captured by `pattern` in `string, or`null` if the pattern did not match.
     *
@@ -131,6 +136,7 @@ trait Micromatch extends js.Object {
     */
   def capture(pattern: String, string: String): js.Array[String] | Null = js.native
   def capture(pattern: String, string: String, options: Options): js.Array[String] | Null = js.native
+  
   /**
     * Returns true if the given `string` contains the given pattern. Similar to [.isMatch](#isMatch) but the pattern can match any part of the string.
     *
@@ -154,6 +160,7 @@ trait Micromatch extends js.Object {
   def contains(str: String, patterns: String, options: Options): Boolean = js.native
   def contains(str: String, patterns: js.Array[String]): Boolean = js.native
   def contains(str: String, patterns: js.Array[String], options: Options): Boolean = js.native
+  
   /**
     * Returns true if every string in the given `list` matches any of the given glob `patterns`.
     *
@@ -185,6 +192,7 @@ trait Micromatch extends js.Object {
   def every(list: js.Array[String], patterns: String, options: Options): Boolean = js.native
   def every(list: js.Array[String], patterns: js.Array[String]): Boolean = js.native
   def every(list: js.Array[String], patterns: js.Array[String], options: Options): Boolean = js.native
+  
   /**
     * Returns true if the specified `string` matches the given glob `pattern`.
     *
@@ -208,6 +216,7 @@ trait Micromatch extends js.Object {
   def isMatch(string: String, pattern: String, options: Options): Boolean = js.native
   def isMatch(string: String, pattern: js.Array[String]): Boolean = js.native
   def isMatch(string: String, pattern: js.Array[String], options: Options): Boolean = js.native
+  
   /**
     * Create a regular expression from the given glob `pattern`.
     *
@@ -226,6 +235,7 @@ trait Micromatch extends js.Object {
     */
   def makeRe(pattern: String): RegExp = js.native
   def makeRe(pattern: String, options: Options): RegExp = js.native
+  
   /**
     * Similar to the main function, but `pattern` must be a string.
     *
@@ -245,6 +255,7 @@ trait Micromatch extends js.Object {
     */
   def `match`(list: js.Array[String], pattern: String): js.Array[String] = js.native
   def `match`(list: js.Array[String], pattern: String, options: Options): js.Array[String] = js.native
+  
   /**
     * Filter the keys of the given object with the given `glob` pattern and `options`. Does not attempt to match nested keys.
     * If you need this feature, use [glob-object](https://github.com/jonschlinkert/glob-object) instead.
@@ -268,6 +279,7 @@ trait Micromatch extends js.Object {
   def matchKeys[T](`object`: T, patterns: String, options: Options): Partial[T] = js.native
   def matchKeys[T](`object`: T, patterns: js.Array[String]): Partial[T] = js.native
   def matchKeys[T](`object`: T, patterns: js.Array[String], options: Options): Partial[T] = js.native
+  
   /**
     * Returns a memoized matcher function from the given glob `pattern` and `options`. The returned function takes a string to match as its only argument and returns true if the string is a match.
     *
@@ -289,6 +301,7 @@ trait Micromatch extends js.Object {
     */
   def matcher(pattern: String): js.Function1[/* str */ String, Boolean] = js.native
   def matcher(pattern: String, options: Options): js.Function1[/* str */ String, Boolean] = js.native
+  
   /**
     * Returns a list of strings that _**do not match any**_ of the given `patterns`.
     *
@@ -310,6 +323,7 @@ trait Micromatch extends js.Object {
   def not(list: js.Array[String], patterns: String, options: Options): js.Array[String] = js.native
   def not(list: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
   def not(list: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
+  
   /**
     * Parse a glob pattern to create the source string for a regular expression.
     *
@@ -339,6 +353,7 @@ trait Micromatch extends js.Object {
     */
   def parse(glob: String): js.Object = js.native
   def parse(glob: String, options: Options): js.Object = js.native
+  
   def scan(pattern: String): ScanInfo = js.native
   /**
     * Scan a glob pattern to separate the pattern into segments.
@@ -346,6 +361,7 @@ trait Micromatch extends js.Object {
   def scan(pattern: String, options: partstrueScanOptions): ScanInfoWithParts = js.native
   def scan(pattern: String, options: tokenstrueScanOptions): ScanInfoWithTokens = js.native
   def scan(pattern: String, options: ScanOptions): ScanInfo = js.native
+  
   /**
     * Returns true if some of the strings in the given `list` match any of the given glob `patterns`.
     *
@@ -374,4 +390,3 @@ trait Micromatch extends js.Object {
   def some(list: js.Array[String], patterns: js.Array[String]): Boolean = js.native
   def some(list: js.Array[String], patterns: js.Array[String], options: Options): Boolean = js.native
 }
-

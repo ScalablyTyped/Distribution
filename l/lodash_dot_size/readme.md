@@ -11,8 +11,8 @@ The lodash method `_.size` exported as a module.
 | Full name          | lodash.size |
 | Keywords           | lodash-modularized, size |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 803305 |
+| # dependents       | 34 |
+| # downloads        | 2074935 |
 | # stars            | 0 |
 
 ## Links

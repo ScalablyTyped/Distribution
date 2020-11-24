@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceConstructor
@@ -17,4 +17,3 @@ trait ServiceConstructor
   */
 Instantiable2[/* name */ String, /* args */ ServiceArguments, Service]
      with Instantiable3[/* name */ String, /* args */ ServiceArguments, /* opts */ ResourceOptions, Service]
-

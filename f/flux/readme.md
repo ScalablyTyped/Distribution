@@ -10,9 +10,9 @@ An application architecture based on a unidirectional data flow
 | ------------------ | :-------------: |
 | Full name          | flux |
 | Keywords           | flux, react, facebook, dispatcher |
-| # releases         | 1 |
-| # dependents       | 359 |
-| # downloads        | 6834190 |
+| # releases         | 0 |
+| # dependents       | 374 |
+| # downloads        | 11990300 |
 | # stars            | 73 |
 
 ## Links

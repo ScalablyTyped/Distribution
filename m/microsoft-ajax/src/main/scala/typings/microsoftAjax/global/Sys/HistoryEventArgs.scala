@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class is used by the Sys.Application Class to hold event arguments for the navigate event.
@@ -19,4 +19,3 @@ class HistoryEventArgs protected ()
     */
   def this(state: js.Any) = this()
 }
-

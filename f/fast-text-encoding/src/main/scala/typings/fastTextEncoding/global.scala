@@ -3,13 +3,15 @@ package typings.fastTextEncoding
 import typings.fastTextEncoding.fastTextEncoding.TextDecoderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object fastTextEncoding extends js.Object {
+    
     /**
       * TextDecoder instance.
       */
@@ -29,8 +31,5 @@ object global extends js.Object {
       extends typings.fastTextEncoding.fastTextEncoding.TextEncoderClass {
       def this(label: String) = this()
     }
-    
   }
-  
 }
-

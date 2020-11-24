@@ -12,7 +12,7 @@ XML Body Builder for the AWS SDK
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 8 |
-| # downloads        | 5307 |
+| # downloads        | 32582 |
 | # stars            | 0 |
 
 ## Links

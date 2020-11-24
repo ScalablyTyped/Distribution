@@ -10,9 +10,9 @@ Find lexicographical points between strings
 | ------------------ | :-------------: |
 | Full name          | mudder |
 | Keywords           | string, mean, lexicographical, distance, number, radix, base |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 25866 |
+| # downloads        | 28895 |
 | # stars            | 0 |
 
 ## Links

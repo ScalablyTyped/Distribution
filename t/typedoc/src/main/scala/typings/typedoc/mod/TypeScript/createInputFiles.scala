@@ -3,11 +3,12 @@ package typings.typedoc.mod.TypeScript
 import typings.typescript.mod.InputFiles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createInputFiles")
 @js.native
 object createInputFiles extends js.Object {
+  
   def apply(javascriptText: String, declarationText: String): InputFiles = js.native
   def apply(
     javascriptText: String,
@@ -173,4 +174,3 @@ object createInputFiles extends js.Object {
     buildInfoPath: String
   ): InputFiles = js.native
 }
-

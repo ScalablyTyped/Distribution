@@ -11,8 +11,8 @@ A generic asset loader, made with web games in mind.
 | Full name          | resource-loader |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 19 |
-| # downloads        | 999424 |
+| # dependents       | 21 |
+| # downloads        | 1442246 |
 | # stars            | 2 |
 
 ## Links

@@ -2,15 +2,12 @@ package typings.newGithubIssueUrl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("new-github-issue-url", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function newGithubIssueUrl(options: newGithubIssueUrl.Options): string;
-  // export = newGithubIssueUrl;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof newGithubIssueUrl */ js.Any = js.native
+  
   /**
   	Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields.
   	@example
@@ -28,5 +25,9 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(options: Options): String = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function newGithubIssueUrl(options: newGithubIssueUrl.Options): string;
+  // export = newGithubIssueUrl;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof newGithubIssueUrl */ js.Any = js.native
 }
-

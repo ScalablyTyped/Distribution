@@ -12,7 +12,7 @@ Slider/Carousel powered by React Motion.
 | Keywords           | react, component, slider, carousel |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5376 |
+| # downloads        | 12606 |
 | # stars            | 0 |
 
 ## Links

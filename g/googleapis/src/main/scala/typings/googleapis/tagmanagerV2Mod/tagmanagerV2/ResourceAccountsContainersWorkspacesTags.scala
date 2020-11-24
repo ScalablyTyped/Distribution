@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Tags")
 @js.native
 class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.tags.create
     * @desc Creates a GTM Tag.
@@ -45,6 +47,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTag]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.tags.delete
     * @desc Deletes a GTM Tag.
@@ -73,6 +76,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.tags.get
     * @desc Gets a GTM Tag.
@@ -104,6 +108,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTag]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.tags.list
     * @desc Lists all GTM Tags of a Container.
@@ -136,6 +141,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTagsResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.tags.revert
     * @desc Reverts changes to a GTM Tag in a GTM Workspace.
@@ -168,6 +174,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevertTagResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.tags.update
     * @desc Updates a GTM Tag.
@@ -202,4 +209,3 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTag]
   ): Unit = js.native
 }
-

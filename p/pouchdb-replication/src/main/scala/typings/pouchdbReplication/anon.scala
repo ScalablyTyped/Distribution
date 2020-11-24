@@ -7,13 +7,15 @@ import typings.pouchdbReplication.PouchDB.Replication.Replication
 import typings.pouchdbReplication.PouchDB.Replication.ReplicationResultComplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait From extends js.Object {
+    
     /**
       * Replicate data from `source`. Both the source and target can be a PouchDB instance
       * or a string representing a CouchDB database URL or the name of a local PouchDB database.
@@ -40,6 +42,7 @@ object anon extends js.Object {
       options: ReplicateOptions,
       callback: Callback[ReplicationResultComplete[Content]]
     ): Replication[Content] = js.native
+    
     /**
       * Replicate data to `target`. Both the source and target can be a PouchDB instance
       * or a string representing a CouchDB database URL or the name of a local PouchDB database.
@@ -67,6 +70,4 @@ object anon extends js.Object {
       callback: Callback[ReplicationResultComplete[Content]]
     ): Replication[Content] = js.native
   }
-  
 }
-

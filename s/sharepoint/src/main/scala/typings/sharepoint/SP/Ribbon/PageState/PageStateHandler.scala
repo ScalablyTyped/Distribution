@@ -3,12 +3,12 @@ package typings.sharepoint.SP.Ribbon.PageState
 import typings.sharepoint.CUI.Page.PageComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PageStateHandler extends PageComponent
-
 object PageStateHandler {
+  
   @scala.inline
   def apply(
     canHandleCommand: String => Boolean,
@@ -25,4 +25,3 @@ object PageStateHandler {
     __obj.asInstanceOf[PageStateHandler]
   }
 }
-

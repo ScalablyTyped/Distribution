@@ -10,9 +10,9 @@ A pure javascript BMP encoder and decoder
 | ------------------ | :-------------: |
 | Full name          | bmp-js |
 | Keywords           | bmp, 1bit, 4bit, 8bit, 16bit, 24bit, 32bit, encoder, decoder, image, javascript, js |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 31785370 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 47759465 |
 | # stars            | 2 |
 
 ## Links

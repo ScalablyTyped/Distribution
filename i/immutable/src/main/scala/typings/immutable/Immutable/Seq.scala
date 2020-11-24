@@ -2,21 +2,11 @@ package typings.immutable.Immutable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Seq[K, V] extends Collection[K, V] {
-  /**
-    * Some Seqs can describe their size lazily. When this is the case,
-    * size will be an integer. Otherwise it will be undefined.
-    *
-    * For example, Seqs returned from `map()` or `reverse()`
-    * preserve the size of the original `Seq` while `filter()` does not.
-    *
-    * Note: `Range`, `Repeat` and `Seq`s made from `Array`s and `Object`s will
-    * always have a size.
-    */
-  val size: js.UndefOr[Double] = js.native
+  
   // Force evaluation
   /**
     * Because Sequences are lazy and designed to be chained together, they do
@@ -39,6 +29,7 @@ trait Seq[K, V] extends Collection[K, V] {
     * Note: after calling `cacheResult`, a Seq will always have a `size`.
     */
   def cacheResult(): this.type = js.native
+  
   /**
     * Returns a new Seq with only the values for which the `predicate`
     * function returns true.
@@ -53,15 +44,32 @@ trait Seq[K, V] extends Collection[K, V] {
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
   ): Seq[K, F] = js.native
+  
+  /**
+    * Some Seqs can describe their size lazily. When this is the case,
+    * size will be an integer. Otherwise it will be undefined.
+    *
+    * For example, Seqs returned from `map()` or `reverse()`
+    * preserve the size of the original `Seq` while `filter()` does not.
+    *
+    * Note: `Range`, `Repeat` and `Seq`s made from `Array`s and `Object`s will
+    * always have a size.
+    */
+  val size: js.UndefOr[Double] = js.native
 }
-
 @JSGlobal("Immutable.Seq")
 @js.native
 object Seq extends js.Object {
+  
   @js.native
   trait Indexed[T]
     extends Seq[Double, T]
        with typings.immutable.Immutable.Collection.Indexed[T]
+  /**
+    * `Seq` which represents an ordered indexed list of values.
+    */
+  @js.native
+  object Indexed extends js.Object
   
   @js.native
   trait Keyed[K, V]
@@ -72,12 +80,4 @@ object Seq extends js.Object {
   trait Set[T]
     extends Seq[T, T]
        with typings.immutable.Immutable.Collection.Set[T]
-  
-  /**
-    * `Seq` which represents an ordered indexed list of values.
-    */
-  @js.native
-  object Indexed extends js.Object
-  
 }
-

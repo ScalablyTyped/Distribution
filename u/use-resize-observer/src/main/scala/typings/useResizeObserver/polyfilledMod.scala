@@ -7,13 +7,15 @@ import typings.useResizeObserver.mod.ObserverResultForResizeHandler
 import typings.useResizeObserver.mod.ObserverResultWithSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("use-resize-observer/polyfilled", JSImport.Namespace)
 @js.native
 object polyfilledMod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     /***
       * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
       * The hook is invoked at least once before the first measurement of actual size by the observer.
@@ -40,6 +42,4 @@ object polyfilledMod extends js.Object {
       */
     def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithoutResizeHandler[TElement]): ObserverResultWithSize[TElement] = js.native
   }
-  
 }
-

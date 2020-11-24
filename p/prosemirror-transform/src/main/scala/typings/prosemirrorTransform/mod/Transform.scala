@@ -13,7 +13,7 @@ import typings.prosemirrorModel.mod.Slice
 import typings.prosemirrorTransform.anon.Attrs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-transform", "Transform")
 @js.native
@@ -22,36 +22,17 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * Create a transform that starts with the given document.
     */
   def this(doc: Node[S]) = this()
-  /**
-    * The starting document.
-    */
-  var before: Node[S] = js.native
-  /**
-    * The current document (the result of applying the steps in the
-    * transform).
-    */
-  var doc: Node[S] = js.native
-  /**
-    * True when the document has been changed (when there are any
-    * steps).
-    */
-  var docChanged: Boolean = js.native
-  /**
-    * The documents before each of the steps.
-    */
-  var docs: js.Array[Node[S]] = js.native
-  /**
-    * A mapping with the maps for each of the steps in this transform.
-    */
-  var mapping: Mapping = js.native
-  /**
-    * The steps in this transform.
-    */
-  var steps: js.Array[Step[S]] = js.native
+  
   /**
     * Add the given mark to the inline content between `from` and `to`.
     */
   def addMark(from: Double, to: Double, mark: Mark[S]): this.type = js.native
+  
+  /**
+    * The starting document.
+    */
+  var before: Node[S] = js.native
+  
   /**
     * Removes all marks and nodes from the content of the node at `pos`
     * that don't match the given new parent node type. Accepts an
@@ -60,21 +41,42 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def clearIncompatible(pos: Double, parentType: NodeType[S]): this.type = js.native
   def clearIncompatible(pos: Double, parentType: NodeType[S], `match`: ContentMatch[S]): this.type = js.native
+  
   /**
     * Delete the content between the given positions.
     */
   def delete(from: Double, to: Double): this.type = js.native
+  
   /**
     * Delete the given range, expanding it to cover fully covered
     * parent nodes until a valid replace is found.
     */
   def deleteRange(from: Double, to: Double): this.type = js.native
+  
+  /**
+    * The current document (the result of applying the steps in the
+    * transform).
+    */
+  var doc: Node[S] = js.native
+  
+  /**
+    * True when the document has been changed (when there are any
+    * steps).
+    */
+  var docChanged: Boolean = js.native
+  
+  /**
+    * The documents before each of the steps.
+    */
+  var docs: js.Array[Node[S]] = js.native
+  
   def insert(pos: Double, content: js.Array[Node[S]]): this.type = js.native
   /**
     * Insert the given content at the given position.
     */
   def insert(pos: Double, content: Fragment[S]): this.type = js.native
   def insert(pos: Double, content: Node[S]): this.type = js.native
+  
   /**
     * Join the blocks around the given position. If depth is 2, their
     * last and first siblings are also joined, and so on.
@@ -83,6 +85,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
   def join(pos: Double, depth: js.UndefOr[scala.Nothing], p1: Boolean): this.type = js.native
   def join(pos: Double, depth: Double): this.type = js.native
   def join(pos: Double, depth: Double, p1: Boolean): this.type = js.native
+  
   /**
     * Split the content in the given range off from its parent, if there
     * is sibling content before or after it, and move it up the tree to
@@ -91,11 +94,18 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * sure the lift is valid.
     */
   def lift(range: NodeRange[S], target: Double): this.type = js.native
+  
+  /**
+    * A mapping with the maps for each of the steps in this transform.
+    */
+  var mapping: Mapping = js.native
+  
   /**
     * Try to apply a step in this transformation, ignoring it if it
     * fails. Returns the step result.
     */
   def maybeStep(step: Step[S]): StepResult[S] = js.native
+  
   /**
     * Remove marks from inline nodes between `from` and `to`. When `mark`
     * is a single mark, remove precisely that mark. When it is a mark type,
@@ -105,6 +115,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
   def removeMark(from: Double, to: Double): this.type = js.native
   def removeMark(from: Double, to: Double, mark: Mark[S]): this.type = js.native
   def removeMark(from: Double, to: Double, mark: MarkType[S]): this.type = js.native
+  
   /**
     * Replace the part of the document between `from` and `to` with the
     * given `slice`.
@@ -113,6 +124,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
   def replace(from: Double, to: js.UndefOr[scala.Nothing], slice: Slice[S]): this.type = js.native
   def replace(from: Double, to: Double): this.type = js.native
   def replace(from: Double, to: Double, slice: Slice[S]): this.type = js.native
+  
   /**
     * Replace a range of the document with a given slice, using `from`,
     * `to`, and the slice's [`openStart`](#model.Slice.openStart) property
@@ -131,6 +143,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * control over what happens.
     */
   def replaceRange(from: Double, to: Double, slice: Slice[S]): this.type = js.native
+  
   /**
     * Replace the given range with a node, but use `from` and `to` as
     * hints, rather than precise positions. When from and to are the same
@@ -141,6 +154,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * that parent node.
     */
   def replaceRangeWith(from: Double, to: Double, node: Node[S]): this.type = js.native
+  
   def replaceWith(from: Double, to: Double, content: js.Array[Node[S]]): this.type = js.native
   /**
     * Replace the given range with the given content, which may be a
@@ -148,6 +162,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def replaceWith(from: Double, to: Double, content: Fragment[S]): this.type = js.native
   def replaceWith(from: Double, to: Double, content: Node[S]): this.type = js.native
+  
   def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S]): this.type = js.native
   def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   /**
@@ -156,6 +171,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def setBlockType(from: Double, to: Double, `type`: NodeType[S]): this.type = js.native
   def setBlockType(from: Double, to: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
+  
   /**
     * Change the type, attributes, and/or marks of the node at `pos`.
     * When `nodeType` is null, the existing node type is preserved,
@@ -178,6 +194,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
   def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): this.type = js.native
   def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any], marks: js.Array[Mark[S]]): this.type = js.native
+  
   /**
     * Split the node at the given position, and optionally, if `depth` is
     * greater than one, any number of nodes above that. By default, the
@@ -189,11 +206,18 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
   def split(pos: Double, depth: js.UndefOr[scala.Nothing], typesAfter: js.Array[Attrs[S]]): this.type = js.native
   def split(pos: Double, depth: Double): this.type = js.native
   def split(pos: Double, depth: Double, typesAfter: js.Array[Attrs[S]]): this.type = js.native
+  
   /**
     * Apply a new step in this transform, saving the result. Throws an
     * error when the step fails.
     */
   def step(step: Step[S]): this.type = js.native
+  
+  /**
+    * The steps in this transform.
+    */
+  var steps: js.Array[Step[S]] = js.native
+  
   /**
     * Wrap the given [range](#model.NodeRange) in the given set of wrappers.
     * The wrappers are assumed to be valid in this position, and should
@@ -201,4 +225,3 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def wrap(range: NodeRange[S], wrappers: js.Array[Attrs[S]]): this.type = js.native
 }
-

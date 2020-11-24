@@ -2,9 +2,9 @@ package typings.multiaddr
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
-  type Code = scala.Double
-  type Size = scala.Double
+  
+  type MultiaddrInput = java.lang.String | typings.std.Uint8Array | typings.multiaddr.mod.Multiaddr | scala.Null
 }

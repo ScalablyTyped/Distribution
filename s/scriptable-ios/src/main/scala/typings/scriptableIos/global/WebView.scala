@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Presents websites and evaluates JavaScript on websites._
@@ -20,11 +20,11 @@ import scala.scalajs.js.annotation._
   */
 class WebView ()
   extends typings.scriptableIos.WebView
-
 /* static members */
 @JSGlobal("WebView")
 @js.native
 object WebView extends js.Object {
+  
   /**
     * _Loads a file and renders it._
     *
@@ -46,6 +46,7 @@ object WebView extends js.Object {
   def loadFile(fileURL: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
   def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
   def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * _Loads HTML and renders it._
     * @param html - HTML to load and render.
@@ -72,6 +73,7 @@ object WebView extends js.Object {
   def loadHTML(html: String, baseURL: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
   def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
   def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * _Loads URL in web view and presents the web view._
     *
@@ -86,4 +88,3 @@ object WebView extends js.Object {
   def loadURL(url: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
   def loadURL(url: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
 }
-

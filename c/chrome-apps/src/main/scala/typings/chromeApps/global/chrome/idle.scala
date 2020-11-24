@@ -4,7 +4,7 @@ import typings.chromeApps.chrome.idle.IdleState
 import typings.chromeApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.idle
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.idle")
 @js.native
 object idle extends js.Object {
+  
   /**
     * Fired when the system changes to an active, idle or locked state.
     * The event fires with 'locked' if the screen is locked or the screensaver activates,
@@ -26,6 +27,7 @@ object idle extends js.Object {
     * specified number of seconds, and 'active' when the user generates input on an idle system.
     */
   val onStateChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* newState */ IdleState, Unit]] = js.native
+  
   /**
     * Returns 'locked' if the system is locked, 'idle' if the user has not generated any input for a specified number of seconds, or 'active' otherwise.
     * @param detectionIntervalInSeconds The system is considered idle if detectionIntervalInSeconds seconds have elapsed since the last user input detected.
@@ -34,6 +36,7 @@ object idle extends js.Object {
     * function( IdleState newState) {...};
     */
   def queryState(detectionIntervalInSeconds: integer, callback: js.Function1[/* newState */ IdleState, Unit]): Unit = js.native
+  
   /**
     * Sets the interval, in seconds, used to determine when the system is in an idle state for
     * onStateChanged events.
@@ -43,4 +46,3 @@ object idle extends js.Object {
     */
   def setDetectionInterval(intervalInSeconds: integer): Unit = js.native
 }
-

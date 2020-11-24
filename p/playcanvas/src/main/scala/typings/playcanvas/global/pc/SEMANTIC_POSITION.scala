@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Vertex attribute to be treated as a position.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SEMANTIC_POSITION")
 @js.native
 object SEMANTIC_POSITION extends TopLevel[String]
-

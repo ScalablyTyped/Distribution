@@ -4,9 +4,40 @@ import typings.webpackConfigUtils.mod.EnvVars
 import typings.webpackConfigUtils.mod._Falsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackConfigUtilsStrings {
+  
+  @scala.inline
+  def NonEmptyObject: NonEmptyObject = "NonEmptyObject".asInstanceOf[NonEmptyObject]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def dev: dev = "dev".asInstanceOf[dev]
+  
+  @scala.inline
+  def development: development = "development".asInstanceOf[development]
+  
+  @scala.inline
+  def `false`: `false` = "false".asInstanceOf[`false`]
+  
+  @scala.inline
+  def getIfUtils: getIfUtils = "getIfUtils".asInstanceOf[getIfUtils]
+  
+  @scala.inline
+  def prod: prod = "prod".asInstanceOf[prod]
+  
+  @scala.inline
+  def production: production = "production".asInstanceOf[production]
+  
+  @scala.inline
+  def removeEmpty: removeEmpty = "removeEmpty".asInstanceOf[removeEmpty]
+  
+  @scala.inline
+  def test: test = "test".asInstanceOf[test]
+  
   @js.native
   sealed trait NonEmptyObject extends js.Object
   
@@ -36,26 +67,4 @@ object webpackConfigUtilsStrings {
   
   @js.native
   sealed trait test extends EnvVars
-  
-  @scala.inline
-  def NonEmptyObject: NonEmptyObject = "NonEmptyObject".asInstanceOf[NonEmptyObject]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def dev: dev = "dev".asInstanceOf[dev]
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def getIfUtils: getIfUtils = "getIfUtils".asInstanceOf[getIfUtils]
-  @scala.inline
-  def prod: prod = "prod".asInstanceOf[prod]
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
-  @scala.inline
-  def removeEmpty: removeEmpty = "removeEmpty".asInstanceOf[removeEmpty]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
 }
-

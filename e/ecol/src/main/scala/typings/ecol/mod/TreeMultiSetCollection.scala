@@ -7,16 +7,16 @@ import typings.tstl.icontainerMod.IContainer
 import typings.tstl.setContainerMod.SetContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecol", "TreeMultiSetCollection")
 @js.native
 class TreeMultiSetCollection[T] ()
   extends typings.ecol.treeMultiSetCollectionMod.TreeMultiSetCollection[T]
-
 @JSImport("ecol", "TreeMultiSetCollection")
 @js.native
 object TreeMultiSetCollection extends js.Object {
+  
   val Event: Instantiable3[
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
@@ -46,6 +46,7 @@ object TreeMultiSetCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
   val Iterator: Instantiable0[
     typings.tstl.setElementListMod.SetElementList.Iterator[
       js.Object, 
@@ -63,6 +64,7 @@ object TreeMultiSetCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     typings.tstl.setElementListMod.SetElementList.ReverseIterator[
       js.Object, 
@@ -81,4 +83,3 @@ object TreeMultiSetCollection extends js.Object {
     ]
   ] = js.native
 }
-

@@ -12,7 +12,7 @@ Bootstrap FileStyle is a quick and simple plugin to help style your form's file 
 | Keywords           | bootstrap, fileupload, filestyle |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 137779 |
+| # downloads        | 134025 |
 | # stars            | 1 |
 
 ## Links

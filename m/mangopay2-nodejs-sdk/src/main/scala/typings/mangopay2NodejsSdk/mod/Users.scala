@@ -32,173 +32,12 @@ import typings.mangopay2NodejsSdk.mod.user.UserNaturalData
 import typings.mangopay2NodejsSdk.mod.wallet.WalletData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Users")
 @js.native
 class Users () extends js.Object {
-  /**
-    * Create bank account for user
-    * @param userId
-    * @param bankAccount
-    * @param options
-    */
-  @JSName("createBankAccount")
-  var createBankAccount_Original: (TwoArgsMethodOverload[String, USDetails, USData]) with (TwoArgsMethodOverload[String, OtherDetails, OtherData]) with (TwoArgsMethodOverload[String, IBANDetails, IBANData]) with (TwoArgsMethodOverload[String, GBDetails, GBData]) with (TwoArgsMethodOverload[String, CADetails, CAData]) = js.native
-  /**
-    * Create new KYC document
-    * @param  userId
-    * @param  kycDocument
-    * @param  options
-    */
-  @JSName("createKycDocument")
-  var createKycDocument_Original: TwoArgsMethodOverload[String, CreateKycDocument, KycDocumentData] = js.native
-  /**
-    * Create page for KYC document
-    * @param userId
-    * @param kycDocumentId
-    * @param filePath
-    * @param options
-    */
-  @JSName("createKycPageFromFile")
-  var createKycPageFromFile_Original: ThreeArgsMethodOverload[String, String, String, KycDocumentData] = js.native
-  /**
-    * Create page for KYC document
-    * @param userId
-    * @param kycDocumentId
-    * @param kycPage
-    * @param options
-    */
-  @JSName("createKycPage")
-  var createKycPage_Original: ThreeArgsMethodOverload[String, String, CreateKycPage, KycDocumentData] = js.native
-  /**
-    * Create an UboDeclaration for the user
-    * @param userId
-    * @param uboDeclaration
-    * @param options
-    */
-  @JSName("createUboDeclaration")
-  var createUboDeclaration_Original: TwoArgsMethodOverload[String, CreateUboDeclaration, UboDeclarationData] = js.native
-  /**
-    * Create a new user
-    * @param user
-    */
-  @JSName("create")
-  var create_Original: (MethodOverload[CreateUserLegalData, UserLegalData]) with (MethodOverload[CreateUserNaturalData, UserNaturalData]) = js.native
-  /**
-    * Deactivate a bank account
-    *
-    * Note that once deactivated, a bank account can't be reactivated afterwards
-    * @param userId
-    * @param bankAccountId
-    * @param options
-    */
-  @JSName("deactivateBankAccount")
-  var deactivateBankAccount_Original: TwoArgsMethodOverload[String, String, Unit] = js.native
-  /**
-    * Get all users
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[UserLegalData | UserNaturalData]] = js.native
-  /**
-    * Get all bank accounts for user
-    * @param userId
-    * @param bankAccountId
-    * @param options
-    */
-  @JSName("getBankAccount")
-  var getBankAccount_Original: TwoArgsMethodOverload[String, String, Data] = js.native
-  /**
-    * Get all bank accounts for user
-    * @param userId
-    * @param options
-    */
-  @JSName("getBankAccounts")
-  var getBankAccounts_Original: MethodOverload[String, js.Array[Data]] = js.native
-  /**
-    * Get all cards for user
-    * @param userId
-    * @param options
-    */
-  @JSName("getCards")
-  var getCards_Original: MethodOverload[String, js.Array[CardData]] = js.native
-  /**
-    * Get users's EMoney
-    * @param userId
-    * @param options
-    */
-  @JSName("getEMoney")
-  var getEMoney_Original: MethodOverload[String, EMoneyData] = js.native
-  /**
-    * Get KYC document
-    * @param userId
-    * @param kycDocumentId
-    * @param options
-    */
-  @JSName("getKycDocument")
-  var getKycDocument_Original: TwoArgsMethodOverload[String, String, KycDocumentData] = js.native
-  /**
-    * Get all KYC documents for user
-    * @param userId
-    * @param options
-    */
-  @JSName("getKycDocuments")
-  var getKycDocuments_Original: MethodOverload[String, js.Array[KycDocumentData]] = js.native
-  /**
-    * Get legal user by ID
-    * @param userId
-    * @param options
-    */
-  @JSName("getLegal")
-  var getLegal_Original: MethodOverload[String, UserLegalData] = js.native
-  /**
-    * Get natural user by ID
-    * @param userId
-    * @param options
-    */
-  @JSName("getNatural")
-  var getNatural_Original: MethodOverload[String, UserNaturalData] = js.native
-  /**
-    * Get all user preauthorizations
-    * @param userId
-    * @param options
-    */
-  @JSName("getPreAuthorizations")
-  var getPreAuthorizations_Original: MethodOverload[String, js.Array[CardPreAuthorizationData]] = js.native
-  /**
-    * Get all transactions for user
-    * @param userId
-    * @param options
-    */
-  @JSName("getTransactions")
-  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
-  /**
-    * Get all wallets accounts for user
-    */
-  @JSName("getWallets")
-  var getWallets_Original: MethodOverload[String, js.Array[WalletData]] = js.native
-  /**
-    * Get natural or legal user by ID
-    * @param userId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, UserLegalData | UserNaturalData] = js.native
-  /**
-    * Update status of KYC Document (Currently only allows for submitting the document)
-    * @param userId
-    * @param kycDocument
-    * @param options
-    */
-  @JSName("updateKycDocument")
-  var updateKycDocument_Original: TwoArgsMethodOverload[String, SubmitKycDocument, KycDocumentData] = js.native
-  /**
-    * Update a user
-    * @param user
-    * @param options
-    */
-  @JSName("update")
-  var update_Original: (MethodOverload[UserLegal | UpdateUserLegalData, UserLegalData]) with (MethodOverload[UserNatural | UpdateUserNaturalData, UserNaturalData]) = js.native
+  
   /**
     * Create a new user
     * @param user
@@ -259,6 +98,7 @@ class Users () extends js.Object {
     */
   def create(data: CreateUserNaturalData, options: MethodOptionWithResponse): js.Promise[WithResponse[UserNaturalData]] = js.native
   def create(data: CreateUserNaturalData, options: MethodOptionWithoutResponse): js.Promise[UserNaturalData] = js.native
+  
   /**
     * Create bank account for user
     * @param userId
@@ -450,6 +290,15 @@ class Users () extends js.Object {
   def createBankAccount(data: String, extra: USDetails, options: MethodOptionWithResponse): js.Promise[WithResponse[USData]] = js.native
   def createBankAccount(data: String, extra: USDetails, options: MethodOptionWithoutResponse): js.Promise[USData] = js.native
   /**
+    * Create bank account for user
+    * @param userId
+    * @param bankAccount
+    * @param options
+    */
+  @JSName("createBankAccount")
+  var createBankAccount_Original: (TwoArgsMethodOverload[String, USDetails, USData]) with (TwoArgsMethodOverload[String, OtherDetails, OtherData]) with (TwoArgsMethodOverload[String, IBANDetails, IBANData]) with (TwoArgsMethodOverload[String, GBDetails, GBData]) with (TwoArgsMethodOverload[String, CADetails, CAData]) = js.native
+  
+  /**
     * Create new KYC document
     * @param  userId
     * @param  kycDocument
@@ -487,6 +336,15 @@ class Users () extends js.Object {
     */
   def createKycDocument(data: String, extra: CreateKycDocument, options: MethodOptionWithResponse): js.Promise[WithResponse[KycDocumentData]] = js.native
   def createKycDocument(data: String, extra: CreateKycDocument, options: MethodOptionWithoutResponse): js.Promise[KycDocumentData] = js.native
+  /**
+    * Create new KYC document
+    * @param  userId
+    * @param  kycDocument
+    * @param  options
+    */
+  @JSName("createKycDocument")
+  var createKycDocument_Original: TwoArgsMethodOverload[String, CreateKycDocument, KycDocumentData] = js.native
+  
   /**
     * Create page for KYC document
     * @param userId
@@ -531,6 +389,7 @@ class Users () extends js.Object {
     */
   def createKycPage(data: String, extra: String, lastArg: CreateKycPage, options: MethodOptionWithResponse): js.Promise[WithResponse[KycDocumentData]] = js.native
   def createKycPage(data: String, extra: String, lastArg: CreateKycPage, options: MethodOptionWithoutResponse): js.Promise[KycDocumentData] = js.native
+  
   /**
     * Create page for KYC document
     * @param userId
@@ -576,6 +435,26 @@ class Users () extends js.Object {
   def createKycPageFromFile(data: String, extra: String, lastArg: String, options: MethodOptionWithResponse): js.Promise[WithResponse[KycDocumentData]] = js.native
   def createKycPageFromFile(data: String, extra: String, lastArg: String, options: MethodOptionWithoutResponse): js.Promise[KycDocumentData] = js.native
   /**
+    * Create page for KYC document
+    * @param userId
+    * @param kycDocumentId
+    * @param filePath
+    * @param options
+    */
+  @JSName("createKycPageFromFile")
+  var createKycPageFromFile_Original: ThreeArgsMethodOverload[String, String, String, KycDocumentData] = js.native
+  
+  /**
+    * Create page for KYC document
+    * @param userId
+    * @param kycDocumentId
+    * @param kycPage
+    * @param options
+    */
+  @JSName("createKycPage")
+  var createKycPage_Original: ThreeArgsMethodOverload[String, String, CreateKycPage, KycDocumentData] = js.native
+  
+  /**
     * Create an UboDeclaration for the user
     * @param userId
     * @param uboDeclaration
@@ -616,6 +495,22 @@ class Users () extends js.Object {
     */
   def createUboDeclaration(data: String, extra: CreateUboDeclaration, options: MethodOptionWithResponse): js.Promise[WithResponse[UboDeclarationData]] = js.native
   def createUboDeclaration(data: String, extra: CreateUboDeclaration, options: MethodOptionWithoutResponse): js.Promise[UboDeclarationData] = js.native
+  /**
+    * Create an UboDeclaration for the user
+    * @param userId
+    * @param uboDeclaration
+    * @param options
+    */
+  @JSName("createUboDeclaration")
+  var createUboDeclaration_Original: TwoArgsMethodOverload[String, CreateUboDeclaration, UboDeclarationData] = js.native
+  
+  /**
+    * Create a new user
+    * @param user
+    */
+  @JSName("create")
+  var create_Original: (MethodOverload[CreateUserLegalData, UserLegalData]) with (MethodOverload[CreateUserNaturalData, UserNaturalData]) = js.native
+  
   /**
     * Deactivate a bank account
     *
@@ -661,6 +556,17 @@ class Users () extends js.Object {
   def deactivateBankAccount(data: String, extra: String, options: MethodOptionWithResponse): js.Promise[WithResponse[Unit]] = js.native
   def deactivateBankAccount(data: String, extra: String, options: MethodOptionWithoutResponse): js.Promise[Unit] = js.native
   /**
+    * Deactivate a bank account
+    *
+    * Note that once deactivated, a bank account can't be reactivated afterwards
+    * @param userId
+    * @param bankAccountId
+    * @param options
+    */
+  @JSName("deactivateBankAccount")
+  var deactivateBankAccount_Original: TwoArgsMethodOverload[String, String, Unit] = js.native
+  
+  /**
     * Get natural or legal user by ID
     * @param userId
     * @param options
@@ -694,6 +600,7 @@ class Users () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[UserLegalData | UserNaturalData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[UserLegalData | UserNaturalData] = js.native
+  
   /**
     * Get all users
     */
@@ -720,6 +627,12 @@ class Users () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[UserLegalData | UserNaturalData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[UserLegalData | UserNaturalData]] = js.native
+  /**
+    * Get all users
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[UserLegalData | UserNaturalData]] = js.native
+  
   /**
     * Get all bank accounts for user
     * @param userId
@@ -761,6 +674,15 @@ class Users () extends js.Object {
   /**
     * Get all bank accounts for user
     * @param userId
+    * @param bankAccountId
+    * @param options
+    */
+  @JSName("getBankAccount")
+  var getBankAccount_Original: TwoArgsMethodOverload[String, String, Data] = js.native
+  
+  /**
+    * Get all bank accounts for user
+    * @param userId
     * @param options
     */
   def getBankAccounts(data: String): js.Promise[js.Array[Data]] = js.native
@@ -792,6 +714,14 @@ class Users () extends js.Object {
     */
   def getBankAccounts(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[Data]]] = js.native
   def getBankAccounts(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[Data]] = js.native
+  /**
+    * Get all bank accounts for user
+    * @param userId
+    * @param options
+    */
+  @JSName("getBankAccounts")
+  var getBankAccounts_Original: MethodOverload[String, js.Array[Data]] = js.native
+  
   /**
     * Get all cards for user
     * @param userId
@@ -827,6 +757,14 @@ class Users () extends js.Object {
   def getCards(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[CardData]]] = js.native
   def getCards(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[CardData]] = js.native
   /**
+    * Get all cards for user
+    * @param userId
+    * @param options
+    */
+  @JSName("getCards")
+  var getCards_Original: MethodOverload[String, js.Array[CardData]] = js.native
+  
+  /**
     * Get users's EMoney
     * @param userId
     * @param options
@@ -860,6 +798,14 @@ class Users () extends js.Object {
     */
   def getEMoney(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[EMoneyData]] = js.native
   def getEMoney(data: String, options: MethodOptionWithoutResponse): js.Promise[EMoneyData] = js.native
+  /**
+    * Get users's EMoney
+    * @param userId
+    * @param options
+    */
+  @JSName("getEMoney")
+  var getEMoney_Original: MethodOverload[String, EMoneyData] = js.native
+  
   /**
     * Get KYC document
     * @param userId
@@ -899,6 +845,15 @@ class Users () extends js.Object {
   def getKycDocument(data: String, extra: String, options: MethodOptionWithResponse): js.Promise[WithResponse[KycDocumentData]] = js.native
   def getKycDocument(data: String, extra: String, options: MethodOptionWithoutResponse): js.Promise[KycDocumentData] = js.native
   /**
+    * Get KYC document
+    * @param userId
+    * @param kycDocumentId
+    * @param options
+    */
+  @JSName("getKycDocument")
+  var getKycDocument_Original: TwoArgsMethodOverload[String, String, KycDocumentData] = js.native
+  
+  /**
     * Get all KYC documents for user
     * @param userId
     * @param options
@@ -932,6 +887,14 @@ class Users () extends js.Object {
     */
   def getKycDocuments(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[KycDocumentData]]] = js.native
   def getKycDocuments(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[KycDocumentData]] = js.native
+  /**
+    * Get all KYC documents for user
+    * @param userId
+    * @param options
+    */
+  @JSName("getKycDocuments")
+  var getKycDocuments_Original: MethodOverload[String, js.Array[KycDocumentData]] = js.native
+  
   /**
     * Get legal user by ID
     * @param userId
@@ -967,6 +930,14 @@ class Users () extends js.Object {
   def getLegal(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[UserLegalData]] = js.native
   def getLegal(data: String, options: MethodOptionWithoutResponse): js.Promise[UserLegalData] = js.native
   /**
+    * Get legal user by ID
+    * @param userId
+    * @param options
+    */
+  @JSName("getLegal")
+  var getLegal_Original: MethodOverload[String, UserLegalData] = js.native
+  
+  /**
     * Get natural user by ID
     * @param userId
     * @param options
@@ -1000,6 +971,14 @@ class Users () extends js.Object {
     */
   def getNatural(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[UserNaturalData]] = js.native
   def getNatural(data: String, options: MethodOptionWithoutResponse): js.Promise[UserNaturalData] = js.native
+  /**
+    * Get natural user by ID
+    * @param userId
+    * @param options
+    */
+  @JSName("getNatural")
+  var getNatural_Original: MethodOverload[String, UserNaturalData] = js.native
+  
   /**
     * Get all user preauthorizations
     * @param userId
@@ -1035,6 +1014,14 @@ class Users () extends js.Object {
   def getPreAuthorizations(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[CardPreAuthorizationData]]] = js.native
   def getPreAuthorizations(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[CardPreAuthorizationData]] = js.native
   /**
+    * Get all user preauthorizations
+    * @param userId
+    * @param options
+    */
+  @JSName("getPreAuthorizations")
+  var getPreAuthorizations_Original: MethodOverload[String, js.Array[CardPreAuthorizationData]] = js.native
+  
+  /**
     * Get all transactions for user
     * @param userId
     * @param options
@@ -1069,6 +1056,14 @@ class Users () extends js.Object {
   def getTransactions(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[TransactionData]]] = js.native
   def getTransactions(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[TransactionData]] = js.native
   /**
+    * Get all transactions for user
+    * @param userId
+    * @param options
+    */
+  @JSName("getTransactions")
+  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
+  
+  /**
     * Get all wallets accounts for user
     */
   def getWallets(data: String): js.Promise[js.Array[WalletData]] = js.native
@@ -1094,6 +1089,20 @@ class Users () extends js.Object {
     */
   def getWallets(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[WalletData]]] = js.native
   def getWallets(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[WalletData]] = js.native
+  /**
+    * Get all wallets accounts for user
+    */
+  @JSName("getWallets")
+  var getWallets_Original: MethodOverload[String, js.Array[WalletData]] = js.native
+  
+  /**
+    * Get natural or legal user by ID
+    * @param userId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, UserLegalData | UserNaturalData] = js.native
+  
   /**
     * Update a user
     * @param user
@@ -1190,6 +1199,7 @@ class Users () extends js.Object {
   ): Unit = js.native
   def update(data: UpdateUserNaturalData, options: MethodOptionWithResponse): js.Promise[WithResponse[UserNaturalData]] = js.native
   def update(data: UpdateUserNaturalData, options: MethodOptionWithoutResponse): js.Promise[UserNaturalData] = js.native
+  
   /**
     * Update status of KYC Document (Currently only allows for submitting the document)
     * @param userId
@@ -1228,5 +1238,20 @@ class Users () extends js.Object {
     */
   def updateKycDocument(data: String, extra: SubmitKycDocument, options: MethodOptionWithResponse): js.Promise[WithResponse[KycDocumentData]] = js.native
   def updateKycDocument(data: String, extra: SubmitKycDocument, options: MethodOptionWithoutResponse): js.Promise[KycDocumentData] = js.native
+  /**
+    * Update status of KYC Document (Currently only allows for submitting the document)
+    * @param userId
+    * @param kycDocument
+    * @param options
+    */
+  @JSName("updateKycDocument")
+  var updateKycDocument_Original: TwoArgsMethodOverload[String, SubmitKycDocument, KycDocumentData] = js.native
+  
+  /**
+    * Update a user
+    * @param user
+    * @param options
+    */
+  @JSName("update")
+  var update_Original: (MethodOverload[UserLegal | UpdateUserLegalData, UserLegalData]) with (MethodOverload[UserNatural | UpdateUserNaturalData, UserNaturalData]) = js.native
 }
-

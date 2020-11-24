@@ -11,8 +11,8 @@ Tags input directive for AngularJS
 | Full name          | ng-tags-input |
 | Keywords           | angular, tags, tags-input |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 978904 |
+| # dependents       | 12 |
+| # downloads        | 1196812 |
 | # stars            | 4 |
 
 ## Links

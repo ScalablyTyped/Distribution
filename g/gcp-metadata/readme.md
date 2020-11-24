@@ -1,7 +1,7 @@
 
 # Scala.js typings for gcp-metadata
 
-Typings are for version 4.1.4
+Typings are for version 4.2.1
 
 ## Library description:
 Get the metadata from a Google Cloud Platform environment
@@ -10,9 +10,9 @@ Get the metadata from a Google Cloud Platform environment
 | ------------------ | :-------------: |
 | Full name          | gcp-metadata |
 | Keywords           | google cloud platform, google cloud, google, app engine, compute engine, metadata server, metadata |
-| # releases         | 24 |
-| # dependents       | 13 |
-| # downloads        | 100641378 |
+| # releases         | 22 |
+| # dependents       | 15 |
+| # downloads        | 149898867 |
 | # stars            | 0 |
 
 ## Links

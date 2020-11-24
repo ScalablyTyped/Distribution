@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create an instance of a pc.ElementMouseEvent.
@@ -36,4 +36,3 @@ class ElementMouseEvent protected ()
     lastY: Double
   ) = this()
 }
-

@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.mouseout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_mouseout extends js.Object {
+  
   def apply(eventName: mouseout, handler: MouseEvent): Unit = js.native
   def apply(eventName: mouseout, handler: MouseEvent, element: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def apply(
@@ -39,4 +40,3 @@ object default_mouseout extends js.Object {
   def apply(eventName: mouseout, handler: MouseEvent, element: Window): Unit = js.native
   def apply(eventName: mouseout, handler: MouseEvent, element: Window, options: Options): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A front-end flow tool.
 | ------------------ | :-------------: |
 | Full name          | @feflow/cli |
 | Keywords           | feflow, front-end, flow |
-| # releases         | 38 |
+| # releases         | 66 |
 | # dependents       | 0 |
-| # downloads        | 1994 |
+| # downloads        | 7566 |
 | # stars            | 0 |
 
 ## Links

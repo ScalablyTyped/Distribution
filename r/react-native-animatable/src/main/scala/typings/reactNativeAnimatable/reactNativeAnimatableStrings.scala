@@ -5,9 +5,298 @@ import typings.reactNativeAnimatable.mod.Direction
 import typings.reactNativeAnimatable.mod._Easing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeAnimatableStrings {
+  
+  @scala.inline
+  def alternate: alternate = "alternate".asInstanceOf[alternate]
+  
+  @scala.inline
+  def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
+  
+  @scala.inline
+  def bounce: bounce = "bounce".asInstanceOf[bounce]
+  
+  @scala.inline
+  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
+  
+  @scala.inline
+  def bounceInDown: bounceInDown = "bounceInDown".asInstanceOf[bounceInDown]
+  
+  @scala.inline
+  def bounceInLeft: bounceInLeft = "bounceInLeft".asInstanceOf[bounceInLeft]
+  
+  @scala.inline
+  def bounceInRight: bounceInRight = "bounceInRight".asInstanceOf[bounceInRight]
+  
+  @scala.inline
+  def bounceInUp: bounceInUp = "bounceInUp".asInstanceOf[bounceInUp]
+  
+  @scala.inline
+  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
+  
+  @scala.inline
+  def bounceOutDown: bounceOutDown = "bounceOutDown".asInstanceOf[bounceOutDown]
+  
+  @scala.inline
+  def bounceOutLeft: bounceOutLeft = "bounceOutLeft".asInstanceOf[bounceOutLeft]
+  
+  @scala.inline
+  def bounceOutRight: bounceOutRight = "bounceOutRight".asInstanceOf[bounceOutRight]
+  
+  @scala.inline
+  def bounceOutUp: bounceOutUp = "bounceOutUp".asInstanceOf[bounceOutUp]
+  
+  @scala.inline
+  def ease: ease = "ease".asInstanceOf[ease]
+  
+  @scala.inline
+  def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
+  
+  @scala.inline
+  def `ease-in-back`: `ease-in-back` = "ease-in-back".asInstanceOf[`ease-in-back`]
+  
+  @scala.inline
+  def `ease-in-circ`: `ease-in-circ` = "ease-in-circ".asInstanceOf[`ease-in-circ`]
+  
+  @scala.inline
+  def `ease-in-cubic`: `ease-in-cubic` = "ease-in-cubic".asInstanceOf[`ease-in-cubic`]
+  
+  @scala.inline
+  def `ease-in-expo`: `ease-in-expo` = "ease-in-expo".asInstanceOf[`ease-in-expo`]
+  
+  @scala.inline
+  def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
+  
+  @scala.inline
+  def `ease-in-out-back`: `ease-in-out-back` = "ease-in-out-back".asInstanceOf[`ease-in-out-back`]
+  
+  @scala.inline
+  def `ease-in-out-circ`: `ease-in-out-circ` = "ease-in-out-circ".asInstanceOf[`ease-in-out-circ`]
+  
+  @scala.inline
+  def `ease-in-out-cubic`: `ease-in-out-cubic` = "ease-in-out-cubic".asInstanceOf[`ease-in-out-cubic`]
+  
+  @scala.inline
+  def `ease-in-out-expo`: `ease-in-out-expo` = "ease-in-out-expo".asInstanceOf[`ease-in-out-expo`]
+  
+  @scala.inline
+  def `ease-in-out-quad`: `ease-in-out-quad` = "ease-in-out-quad".asInstanceOf[`ease-in-out-quad`]
+  
+  @scala.inline
+  def `ease-in-out-quart`: `ease-in-out-quart` = "ease-in-out-quart".asInstanceOf[`ease-in-out-quart`]
+  
+  @scala.inline
+  def `ease-in-out-quint`: `ease-in-out-quint` = "ease-in-out-quint".asInstanceOf[`ease-in-out-quint`]
+  
+  @scala.inline
+  def `ease-in-out-sine`: `ease-in-out-sine` = "ease-in-out-sine".asInstanceOf[`ease-in-out-sine`]
+  
+  @scala.inline
+  def `ease-in-quad`: `ease-in-quad` = "ease-in-quad".asInstanceOf[`ease-in-quad`]
+  
+  @scala.inline
+  def `ease-in-quart`: `ease-in-quart` = "ease-in-quart".asInstanceOf[`ease-in-quart`]
+  
+  @scala.inline
+  def `ease-in-quint`: `ease-in-quint` = "ease-in-quint".asInstanceOf[`ease-in-quint`]
+  
+  @scala.inline
+  def `ease-in-sine`: `ease-in-sine` = "ease-in-sine".asInstanceOf[`ease-in-sine`]
+  
+  @scala.inline
+  def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
+  
+  @scala.inline
+  def `ease-out-back`: `ease-out-back` = "ease-out-back".asInstanceOf[`ease-out-back`]
+  
+  @scala.inline
+  def `ease-out-circ`: `ease-out-circ` = "ease-out-circ".asInstanceOf[`ease-out-circ`]
+  
+  @scala.inline
+  def `ease-out-cubic`: `ease-out-cubic` = "ease-out-cubic".asInstanceOf[`ease-out-cubic`]
+  
+  @scala.inline
+  def `ease-out-expo`: `ease-out-expo` = "ease-out-expo".asInstanceOf[`ease-out-expo`]
+  
+  @scala.inline
+  def `ease-out-quad`: `ease-out-quad` = "ease-out-quad".asInstanceOf[`ease-out-quad`]
+  
+  @scala.inline
+  def `ease-out-quart`: `ease-out-quart` = "ease-out-quart".asInstanceOf[`ease-out-quart`]
+  
+  @scala.inline
+  def `ease-out-quint`: `ease-out-quint` = "ease-out-quint".asInstanceOf[`ease-out-quint`]
+  
+  @scala.inline
+  def `ease-out-sine`: `ease-out-sine` = "ease-out-sine".asInstanceOf[`ease-out-sine`]
+  
+  @scala.inline
+  def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
+  
+  @scala.inline
+  def fadeInDown: fadeInDown = "fadeInDown".asInstanceOf[fadeInDown]
+  
+  @scala.inline
+  def fadeInDownBig: fadeInDownBig = "fadeInDownBig".asInstanceOf[fadeInDownBig]
+  
+  @scala.inline
+  def fadeInLeft: fadeInLeft = "fadeInLeft".asInstanceOf[fadeInLeft]
+  
+  @scala.inline
+  def fadeInLeftBig: fadeInLeftBig = "fadeInLeftBig".asInstanceOf[fadeInLeftBig]
+  
+  @scala.inline
+  def fadeInRight: fadeInRight = "fadeInRight".asInstanceOf[fadeInRight]
+  
+  @scala.inline
+  def fadeInRightBig: fadeInRightBig = "fadeInRightBig".asInstanceOf[fadeInRightBig]
+  
+  @scala.inline
+  def fadeInUp: fadeInUp = "fadeInUp".asInstanceOf[fadeInUp]
+  
+  @scala.inline
+  def fadeInUpBig: fadeInUpBig = "fadeInUpBig".asInstanceOf[fadeInUpBig]
+  
+  @scala.inline
+  def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
+  
+  @scala.inline
+  def fadeOutDown: fadeOutDown = "fadeOutDown".asInstanceOf[fadeOutDown]
+  
+  @scala.inline
+  def fadeOutDownBig: fadeOutDownBig = "fadeOutDownBig".asInstanceOf[fadeOutDownBig]
+  
+  @scala.inline
+  def fadeOutLeft: fadeOutLeft = "fadeOutLeft".asInstanceOf[fadeOutLeft]
+  
+  @scala.inline
+  def fadeOutLeftBig: fadeOutLeftBig = "fadeOutLeftBig".asInstanceOf[fadeOutLeftBig]
+  
+  @scala.inline
+  def fadeOutRight: fadeOutRight = "fadeOutRight".asInstanceOf[fadeOutRight]
+  
+  @scala.inline
+  def fadeOutRightBig: fadeOutRightBig = "fadeOutRightBig".asInstanceOf[fadeOutRightBig]
+  
+  @scala.inline
+  def fadeOutUp: fadeOutUp = "fadeOutUp".asInstanceOf[fadeOutUp]
+  
+  @scala.inline
+  def fadeOutUpBig: fadeOutUpBig = "fadeOutUpBig".asInstanceOf[fadeOutUpBig]
+  
+  @scala.inline
+  def flash: flash = "flash".asInstanceOf[flash]
+  
+  @scala.inline
+  def flipInX: flipInX = "flipInX".asInstanceOf[flipInX]
+  
+  @scala.inline
+  def flipInY: flipInY = "flipInY".asInstanceOf[flipInY]
+  
+  @scala.inline
+  def flipOutX: flipOutX = "flipOutX".asInstanceOf[flipOutX]
+  
+  @scala.inline
+  def flipOutY: flipOutY = "flipOutY".asInstanceOf[flipOutY]
+  
+  @scala.inline
+  def infinite: infinite = "infinite".asInstanceOf[infinite]
+  
+  @scala.inline
+  def jello: jello = "jello".asInstanceOf[jello]
+  
+  @scala.inline
+  def lightSpeedIn: lightSpeedIn = "lightSpeedIn".asInstanceOf[lightSpeedIn]
+  
+  @scala.inline
+  def lightSpeedOut: lightSpeedOut = "lightSpeedOut".asInstanceOf[lightSpeedOut]
+  
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def pulse: pulse = "pulse".asInstanceOf[pulse]
+  
+  @scala.inline
+  def reverse: reverse = "reverse".asInstanceOf[reverse]
+  
+  @scala.inline
+  def rotate: rotate = "rotate".asInstanceOf[rotate]
+  
+  @scala.inline
+  def rubberBand: rubberBand = "rubberBand".asInstanceOf[rubberBand]
+  
+  @scala.inline
+  def shake: shake = "shake".asInstanceOf[shake]
+  
+  @scala.inline
+  def slideInDown: slideInDown = "slideInDown".asInstanceOf[slideInDown]
+  
+  @scala.inline
+  def slideInLeft: slideInLeft = "slideInLeft".asInstanceOf[slideInLeft]
+  
+  @scala.inline
+  def slideInRight: slideInRight = "slideInRight".asInstanceOf[slideInRight]
+  
+  @scala.inline
+  def slideInUp: slideInUp = "slideInUp".asInstanceOf[slideInUp]
+  
+  @scala.inline
+  def slideOutDown: slideOutDown = "slideOutDown".asInstanceOf[slideOutDown]
+  
+  @scala.inline
+  def slideOutLeft: slideOutLeft = "slideOutLeft".asInstanceOf[slideOutLeft]
+  
+  @scala.inline
+  def slideOutRight: slideOutRight = "slideOutRight".asInstanceOf[slideOutRight]
+  
+  @scala.inline
+  def slideOutUp: slideOutUp = "slideOutUp".asInstanceOf[slideOutUp]
+  
+  @scala.inline
+  def swing: swing = "swing".asInstanceOf[swing]
+  
+  @scala.inline
+  def tada: tada = "tada".asInstanceOf[tada]
+  
+  @scala.inline
+  def wobble: wobble = "wobble".asInstanceOf[wobble]
+  
+  @scala.inline
+  def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
+  
+  @scala.inline
+  def zoomInDown: zoomInDown = "zoomInDown".asInstanceOf[zoomInDown]
+  
+  @scala.inline
+  def zoomInLeft: zoomInLeft = "zoomInLeft".asInstanceOf[zoomInLeft]
+  
+  @scala.inline
+  def zoomInRight: zoomInRight = "zoomInRight".asInstanceOf[zoomInRight]
+  
+  @scala.inline
+  def zoomInUp: zoomInUp = "zoomInUp".asInstanceOf[zoomInUp]
+  
+  @scala.inline
+  def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
+  
+  @scala.inline
+  def zoomOutDown: zoomOutDown = "zoomOutDown".asInstanceOf[zoomOutDown]
+  
+  @scala.inline
+  def zoomOutLeft: zoomOutLeft = "zoomOutLeft".asInstanceOf[zoomOutLeft]
+  
+  @scala.inline
+  def zoomOutRight: zoomOutRight = "zoomOutRight".asInstanceOf[zoomOutRight]
+  
+  @scala.inline
+  def zoomOutUp: zoomOutUp = "zoomOutUp".asInstanceOf[zoomOutUp]
+  
   @js.native
   sealed trait alternate extends Direction
   
@@ -295,198 +584,4 @@ object reactNativeAnimatableStrings {
   
   @js.native
   sealed trait zoomOutUp extends Animation
-  
-  @scala.inline
-  def alternate: alternate = "alternate".asInstanceOf[alternate]
-  @scala.inline
-  def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
-  @scala.inline
-  def bounce: bounce = "bounce".asInstanceOf[bounce]
-  @scala.inline
-  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
-  @scala.inline
-  def bounceInDown: bounceInDown = "bounceInDown".asInstanceOf[bounceInDown]
-  @scala.inline
-  def bounceInLeft: bounceInLeft = "bounceInLeft".asInstanceOf[bounceInLeft]
-  @scala.inline
-  def bounceInRight: bounceInRight = "bounceInRight".asInstanceOf[bounceInRight]
-  @scala.inline
-  def bounceInUp: bounceInUp = "bounceInUp".asInstanceOf[bounceInUp]
-  @scala.inline
-  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
-  @scala.inline
-  def bounceOutDown: bounceOutDown = "bounceOutDown".asInstanceOf[bounceOutDown]
-  @scala.inline
-  def bounceOutLeft: bounceOutLeft = "bounceOutLeft".asInstanceOf[bounceOutLeft]
-  @scala.inline
-  def bounceOutRight: bounceOutRight = "bounceOutRight".asInstanceOf[bounceOutRight]
-  @scala.inline
-  def bounceOutUp: bounceOutUp = "bounceOutUp".asInstanceOf[bounceOutUp]
-  @scala.inline
-  def ease: ease = "ease".asInstanceOf[ease]
-  @scala.inline
-  def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
-  @scala.inline
-  def `ease-in-back`: `ease-in-back` = "ease-in-back".asInstanceOf[`ease-in-back`]
-  @scala.inline
-  def `ease-in-circ`: `ease-in-circ` = "ease-in-circ".asInstanceOf[`ease-in-circ`]
-  @scala.inline
-  def `ease-in-cubic`: `ease-in-cubic` = "ease-in-cubic".asInstanceOf[`ease-in-cubic`]
-  @scala.inline
-  def `ease-in-expo`: `ease-in-expo` = "ease-in-expo".asInstanceOf[`ease-in-expo`]
-  @scala.inline
-  def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
-  @scala.inline
-  def `ease-in-out-back`: `ease-in-out-back` = "ease-in-out-back".asInstanceOf[`ease-in-out-back`]
-  @scala.inline
-  def `ease-in-out-circ`: `ease-in-out-circ` = "ease-in-out-circ".asInstanceOf[`ease-in-out-circ`]
-  @scala.inline
-  def `ease-in-out-cubic`: `ease-in-out-cubic` = "ease-in-out-cubic".asInstanceOf[`ease-in-out-cubic`]
-  @scala.inline
-  def `ease-in-out-expo`: `ease-in-out-expo` = "ease-in-out-expo".asInstanceOf[`ease-in-out-expo`]
-  @scala.inline
-  def `ease-in-out-quad`: `ease-in-out-quad` = "ease-in-out-quad".asInstanceOf[`ease-in-out-quad`]
-  @scala.inline
-  def `ease-in-out-quart`: `ease-in-out-quart` = "ease-in-out-quart".asInstanceOf[`ease-in-out-quart`]
-  @scala.inline
-  def `ease-in-out-quint`: `ease-in-out-quint` = "ease-in-out-quint".asInstanceOf[`ease-in-out-quint`]
-  @scala.inline
-  def `ease-in-out-sine`: `ease-in-out-sine` = "ease-in-out-sine".asInstanceOf[`ease-in-out-sine`]
-  @scala.inline
-  def `ease-in-quad`: `ease-in-quad` = "ease-in-quad".asInstanceOf[`ease-in-quad`]
-  @scala.inline
-  def `ease-in-quart`: `ease-in-quart` = "ease-in-quart".asInstanceOf[`ease-in-quart`]
-  @scala.inline
-  def `ease-in-quint`: `ease-in-quint` = "ease-in-quint".asInstanceOf[`ease-in-quint`]
-  @scala.inline
-  def `ease-in-sine`: `ease-in-sine` = "ease-in-sine".asInstanceOf[`ease-in-sine`]
-  @scala.inline
-  def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
-  @scala.inline
-  def `ease-out-back`: `ease-out-back` = "ease-out-back".asInstanceOf[`ease-out-back`]
-  @scala.inline
-  def `ease-out-circ`: `ease-out-circ` = "ease-out-circ".asInstanceOf[`ease-out-circ`]
-  @scala.inline
-  def `ease-out-cubic`: `ease-out-cubic` = "ease-out-cubic".asInstanceOf[`ease-out-cubic`]
-  @scala.inline
-  def `ease-out-expo`: `ease-out-expo` = "ease-out-expo".asInstanceOf[`ease-out-expo`]
-  @scala.inline
-  def `ease-out-quad`: `ease-out-quad` = "ease-out-quad".asInstanceOf[`ease-out-quad`]
-  @scala.inline
-  def `ease-out-quart`: `ease-out-quart` = "ease-out-quart".asInstanceOf[`ease-out-quart`]
-  @scala.inline
-  def `ease-out-quint`: `ease-out-quint` = "ease-out-quint".asInstanceOf[`ease-out-quint`]
-  @scala.inline
-  def `ease-out-sine`: `ease-out-sine` = "ease-out-sine".asInstanceOf[`ease-out-sine`]
-  @scala.inline
-  def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
-  @scala.inline
-  def fadeInDown: fadeInDown = "fadeInDown".asInstanceOf[fadeInDown]
-  @scala.inline
-  def fadeInDownBig: fadeInDownBig = "fadeInDownBig".asInstanceOf[fadeInDownBig]
-  @scala.inline
-  def fadeInLeft: fadeInLeft = "fadeInLeft".asInstanceOf[fadeInLeft]
-  @scala.inline
-  def fadeInLeftBig: fadeInLeftBig = "fadeInLeftBig".asInstanceOf[fadeInLeftBig]
-  @scala.inline
-  def fadeInRight: fadeInRight = "fadeInRight".asInstanceOf[fadeInRight]
-  @scala.inline
-  def fadeInRightBig: fadeInRightBig = "fadeInRightBig".asInstanceOf[fadeInRightBig]
-  @scala.inline
-  def fadeInUp: fadeInUp = "fadeInUp".asInstanceOf[fadeInUp]
-  @scala.inline
-  def fadeInUpBig: fadeInUpBig = "fadeInUpBig".asInstanceOf[fadeInUpBig]
-  @scala.inline
-  def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
-  @scala.inline
-  def fadeOutDown: fadeOutDown = "fadeOutDown".asInstanceOf[fadeOutDown]
-  @scala.inline
-  def fadeOutDownBig: fadeOutDownBig = "fadeOutDownBig".asInstanceOf[fadeOutDownBig]
-  @scala.inline
-  def fadeOutLeft: fadeOutLeft = "fadeOutLeft".asInstanceOf[fadeOutLeft]
-  @scala.inline
-  def fadeOutLeftBig: fadeOutLeftBig = "fadeOutLeftBig".asInstanceOf[fadeOutLeftBig]
-  @scala.inline
-  def fadeOutRight: fadeOutRight = "fadeOutRight".asInstanceOf[fadeOutRight]
-  @scala.inline
-  def fadeOutRightBig: fadeOutRightBig = "fadeOutRightBig".asInstanceOf[fadeOutRightBig]
-  @scala.inline
-  def fadeOutUp: fadeOutUp = "fadeOutUp".asInstanceOf[fadeOutUp]
-  @scala.inline
-  def fadeOutUpBig: fadeOutUpBig = "fadeOutUpBig".asInstanceOf[fadeOutUpBig]
-  @scala.inline
-  def flash: flash = "flash".asInstanceOf[flash]
-  @scala.inline
-  def flipInX: flipInX = "flipInX".asInstanceOf[flipInX]
-  @scala.inline
-  def flipInY: flipInY = "flipInY".asInstanceOf[flipInY]
-  @scala.inline
-  def flipOutX: flipOutX = "flipOutX".asInstanceOf[flipOutX]
-  @scala.inline
-  def flipOutY: flipOutY = "flipOutY".asInstanceOf[flipOutY]
-  @scala.inline
-  def infinite: infinite = "infinite".asInstanceOf[infinite]
-  @scala.inline
-  def jello: jello = "jello".asInstanceOf[jello]
-  @scala.inline
-  def lightSpeedIn: lightSpeedIn = "lightSpeedIn".asInstanceOf[lightSpeedIn]
-  @scala.inline
-  def lightSpeedOut: lightSpeedOut = "lightSpeedOut".asInstanceOf[lightSpeedOut]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def pulse: pulse = "pulse".asInstanceOf[pulse]
-  @scala.inline
-  def reverse: reverse = "reverse".asInstanceOf[reverse]
-  @scala.inline
-  def rotate: rotate = "rotate".asInstanceOf[rotate]
-  @scala.inline
-  def rubberBand: rubberBand = "rubberBand".asInstanceOf[rubberBand]
-  @scala.inline
-  def shake: shake = "shake".asInstanceOf[shake]
-  @scala.inline
-  def slideInDown: slideInDown = "slideInDown".asInstanceOf[slideInDown]
-  @scala.inline
-  def slideInLeft: slideInLeft = "slideInLeft".asInstanceOf[slideInLeft]
-  @scala.inline
-  def slideInRight: slideInRight = "slideInRight".asInstanceOf[slideInRight]
-  @scala.inline
-  def slideInUp: slideInUp = "slideInUp".asInstanceOf[slideInUp]
-  @scala.inline
-  def slideOutDown: slideOutDown = "slideOutDown".asInstanceOf[slideOutDown]
-  @scala.inline
-  def slideOutLeft: slideOutLeft = "slideOutLeft".asInstanceOf[slideOutLeft]
-  @scala.inline
-  def slideOutRight: slideOutRight = "slideOutRight".asInstanceOf[slideOutRight]
-  @scala.inline
-  def slideOutUp: slideOutUp = "slideOutUp".asInstanceOf[slideOutUp]
-  @scala.inline
-  def swing: swing = "swing".asInstanceOf[swing]
-  @scala.inline
-  def tada: tada = "tada".asInstanceOf[tada]
-  @scala.inline
-  def wobble: wobble = "wobble".asInstanceOf[wobble]
-  @scala.inline
-  def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
-  @scala.inline
-  def zoomInDown: zoomInDown = "zoomInDown".asInstanceOf[zoomInDown]
-  @scala.inline
-  def zoomInLeft: zoomInLeft = "zoomInLeft".asInstanceOf[zoomInLeft]
-  @scala.inline
-  def zoomInRight: zoomInRight = "zoomInRight".asInstanceOf[zoomInRight]
-  @scala.inline
-  def zoomInUp: zoomInUp = "zoomInUp".asInstanceOf[zoomInUp]
-  @scala.inline
-  def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
-  @scala.inline
-  def zoomOutDown: zoomOutDown = "zoomOutDown".asInstanceOf[zoomOutDown]
-  @scala.inline
-  def zoomOutLeft: zoomOutLeft = "zoomOutLeft".asInstanceOf[zoomOutLeft]
-  @scala.inline
-  def zoomOutRight: zoomOutRight = "zoomOutRight".asInstanceOf[zoomOutRight]
-  @scala.inline
-  def zoomOutUp: zoomOutUp = "zoomOutUp".asInstanceOf[zoomOutUp]
 }
-

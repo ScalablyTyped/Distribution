@@ -9,9 +9,9 @@ Common utilities for products from Peculiar Ventures
 | ------------------ | :-------------: |
 | Full name          | pvutils |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 17 |
-| # downloads        | 255596 |
+| # releases         | 2 |
+| # dependents       | 21 |
+| # downloads        | 1036364 |
 | # stars            | 0 |
 
 ## Links

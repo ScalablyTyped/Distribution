@@ -10,11 +10,12 @@ import typings.stripe.mod.StripeResource
 import typings.stripe.mod.countrySpecs.ICountrySpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CountrySpecs")
 @js.native
 class CountrySpecs () extends StripeResource {
+  
   def list(): IListPromise[ICountrySpec] = js.native
   def list(data: IListOptions): IListPromise[ICountrySpec] = js.native
   /**
@@ -26,6 +27,7 @@ class CountrySpecs () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ICountrySpec] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICountrySpec]]): IListPromise[ICountrySpec] = js.native
   def list(response: IResponseFn[IList[ICountrySpec]]): IListPromise[ICountrySpec] = js.native
+  
   def retrieve(id: String): js.Promise[ICountrySpec] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[ICountrySpec] = js.native
   /**
@@ -40,4 +42,3 @@ class CountrySpecs () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ICountrySpec]): js.Promise[ICountrySpec] = js.native
   def retrieve(id: String, response: IResponseFn[ICountrySpec]): js.Promise[ICountrySpec] = js.native
 }
-

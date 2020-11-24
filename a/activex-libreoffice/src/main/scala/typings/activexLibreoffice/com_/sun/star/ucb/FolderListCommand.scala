@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The various commands to process on a list of folders.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait FolderListCommand extends js.Object
-
 object FolderListCommand {
+  
   /**
     * Get a list of all folders.
     *
@@ -26,11 +26,12 @@ object FolderListCommand {
     */
   @scala.inline
   def GET: `0` = 0.asInstanceOf[`0`]
+  
   /** Get a list of subscribed folders. */
   @scala.inline
   def GET_SUBSCRIBED: `1` = 1.asInstanceOf[`1`]
+  
   /** Set a list of folders. */
   @scala.inline
   def SET: `2` = 2.asInstanceOf[`2`]
 }
-

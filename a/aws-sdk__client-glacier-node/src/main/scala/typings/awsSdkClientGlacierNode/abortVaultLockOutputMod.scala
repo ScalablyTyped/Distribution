@@ -1,13 +1,12 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-glacier-node/model/AbortVaultLockOutput", JSImport.Namespace)
 @js.native
 object abortVaultLockOutputMod extends js.Object {
-  val AbortVaultLockOutput: Structure = js.native
+  
+  val AbortVaultLockOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UserWatcherStatus extends js.Object
-
 /** Represents the status of a user watcher. */
 @JSGlobal("Windows.System.UserWatcherStatus")
 @js.native
 object UserWatcherStatus extends js.Object {
+  
   /** The watcher was aborted. */
   @js.native
   sealed trait aborted extends UserWatcherStatus
@@ -34,6 +34,4 @@ object UserWatcherStatus extends js.Object {
   /** The watcher is stopping. */
   @js.native
   sealed trait stopping extends UserWatcherStatus
-  
 }
-

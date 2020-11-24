@@ -9,34 +9,12 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTree")
 @js.native
 class WriteTree () extends js.Object {
-  /**
-    * A list of all pending writes, regardless of visibility and shadowed-ness.  Used to calculate arbitrary
-    * sets of the changed data, such as hidden writes (from transactions) or changes with certain writes excluded (also
-    * used by transactions).
-    *
-    * @type {!Array.<!WriteRecord>}
-    * @private
-    */
-  var allWrites_ : js.Any = js.native
-  var lastWriteId_ : js.Any = js.native
-  var recordContainsPath_ : js.Any = js.native
-  /**
-    * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
-    */
-  var resetTree_ : js.Any = js.native
-  /**
-    * A tree tracking the result of applying all visible writes.  This does not include transactions with
-    * applyLocally=false or writes that are completely shadowed by other writes.
-    *
-    * @type {!CompoundWrite}
-    * @private
-    */
-  var visibleWrites_ : js.Any = js.native
+  
   /**
     * Record a new merge from user code.
     *
@@ -45,6 +23,7 @@ class WriteTree () extends js.Object {
     * @param {!number} writeId
     */
   def addMerge(path: Path, changedChildren: StringDictionary[Node], writeId: Double): Unit = js.native
+  
   /**
     * Record a new overwrite from user code.
     *
@@ -55,6 +34,17 @@ class WriteTree () extends js.Object {
     */
   def addOverwrite(path: Path, snap: Node, writeId: Double): Unit = js.native
   def addOverwrite(path: Path, snap: Node, writeId: Double, visible: Boolean): Unit = js.native
+  
+  /**
+    * A list of all pending writes, regardless of visibility and shadowed-ness.  Used to calculate arbitrary
+    * sets of the changed data, such as hidden writes (from transactions) or changes with certain writes excluded (also
+    * used by transactions).
+    *
+    * @type {!Array.<!WriteRecord>}
+    * @private
+    */
+  var allWrites_ : js.Any = js.native
+  
   /**
     * Returns a complete child for a given server snap after applying all user writes or null if there is no
     * complete child for this ChildKey.
@@ -65,6 +55,7 @@ class WriteTree () extends js.Object {
     * @return {?Node}
     */
   def calcCompleteChild(treePath: Path, childKey: String, existingServerSnap: CacheNode): Node | Null = js.native
+  
   /**
     * Given optional, underlying server data, and an optional set of constraints (exclude some sets, include hidden
     * writes), attempt to calculate a complete snapshot for the given path
@@ -103,6 +94,7 @@ class WriteTree () extends js.Object {
     writeIdsToExclude: js.Array[Double],
     includeHiddenWrites: Boolean
   ): Node | Null = js.native
+  
   /**
     * With optional, underlying server data, attempt to return a children node of children that we have complete data for.
     * Used when creating new views, to pre-fill their complete event children snapshot.
@@ -113,6 +105,7 @@ class WriteTree () extends js.Object {
     */
   def calcCompleteEventChildren(treePath: Path): Node = js.native
   def calcCompleteEventChildren(treePath: Path, completeServerChildren: ChildrenNode): Node = js.native
+  
   /**
     * Given that the underlying server data has updated, determine what, if anything, needs to be
     * applied to the event cache.
@@ -137,6 +130,7 @@ class WriteTree () extends js.Object {
   def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Null, existingServerSnap: Node): Node | Null = js.native
   def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Node): Node | Null = js.native
   def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Node, existingServerSnap: Node): Node | Null = js.native
+  
   def calcIndexedSlice(
     treePath: Path,
     completeServerData: Null,
@@ -157,6 +151,7 @@ class WriteTree () extends js.Object {
     reverse: Boolean,
     index: Index
   ): js.Array[NamedNode] = js.native
+  
   /**
     * Create a new WriteTreeRef for the given path. For use with a new sync point at the given path.
     *
@@ -164,6 +159,7 @@ class WriteTree () extends js.Object {
     * @return {!WriteTreeRef}
     */
   def childWrites(path: Path): WriteTreeRef = js.native
+  
   /**
     * Return a complete snapshot for the given path if there's visible write data at that path, else null.
     * No server data is considered.
@@ -172,11 +168,17 @@ class WriteTree () extends js.Object {
     * @return {?Node}
     */
   def getCompleteWriteData(path: Path): Node | Null = js.native
+  
   /**
     * @param {!number} writeId
     * @return {?WriteRecord}
     */
   def getWrite(writeId: Double): WriteRecord | Null = js.native
+  
+  var lastWriteId_ : js.Any = js.native
+  
+  var recordContainsPath_ : js.Any = js.native
+  
   /**
     * Remove a write (either an overwrite or merge) that has been successfully acknowledge by the server. Recalculates
     * the tree if necessary.  We return true if it may have been visible, meaning views need to reevaluate.
@@ -186,26 +188,41 @@ class WriteTree () extends js.Object {
     * events as a result).
     */
   def removeWrite(writeId: Double): Boolean = js.native
+  
+  /**
+    * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
+    */
+  var resetTree_ : js.Any = js.native
+  
   /**
     * Returns a node if there is a complete overwrite for this path. More specifically, if there is a write at
     * a higher path, this will return the child of that write relative to the write and this path.
     * Returns null if there is no write at this path.
     */
   def shadowingWrite(path: Path): Node | Null = js.native
+  
+  /**
+    * A tree tracking the result of applying all visible writes.  This does not include transactions with
+    * applyLocally=false or writes that are completely shadowed by other writes.
+    *
+    * @type {!CompoundWrite}
+    * @private
+    */
+  var visibleWrites_ : js.Any = js.native
 }
-
 /* static members */
 @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTree")
 @js.native
 object WriteTree extends js.Object {
+  
   /**
     * The default filter used when constructing the tree. Keep everything that's visible.
     */
   var DefaultFilter_ : js.Any = js.native
+  
   /**
     * Static method. Given an array of WriteRecords, a filter for which ones to include, and a path, construct the tree of
     * event data at that path.
     */
   var layerTree_ : js.Any = js.native
 }
-

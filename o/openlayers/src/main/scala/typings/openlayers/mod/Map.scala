@@ -11,7 +11,7 @@ import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Map")
 @js.native
@@ -64,18 +64,21 @@ class Map protected () extends Object {
     * @api stable
     */
   def this(options: MapOptions) = this()
+  
   /**
     * Add the given control to the map.
     * @param control Control.
     * @api stable
     */
   def addControl(control: Control): Unit = js.native
+  
   /**
     * Add the given interaction to the map.
     * @param interaction Interaction to add.
     * @api stable
     */
   def addInteraction(interaction: Interaction): Unit = js.native
+  
   /**
     * Adds the given layer to the top of this map. If you want to add a layer
     * elsewhere in the stack, use `getLayers()` and the methods available on
@@ -84,12 +87,14 @@ class Map protected () extends Object {
     * @api stable
     */
   def addLayer(layer: Base): Unit = js.native
+  
   /**
     * Add the given overlay to the map.
     * @param overlay Overlay.
     * @api stable
     */
   def addOverlay(overlay: Overlay): Unit = js.native
+  
   /**
     * Detect features that intersect a pixel on the viewport, and execute a
     * callback with each intersecting feature. Layers included in the detection can
@@ -117,6 +122,7 @@ class Map protected () extends Object {
     callback: js.Function2[/* feature */ Feature | typings.openlayers.mod.render.Feature, /* layer */ Layer, T],
     opt_options: AtPixelOptions
   ): T = js.native
+  
   /**
     * Detect layers that have a color value at a pixel on the viewport, and
     * execute a callback with each matching layer. Layers included in the
@@ -182,6 +188,7 @@ class Map protected () extends Object {
     opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
     opt_this2: js.Any
   ): T = js.native
+  
   /**
     * Get the map controls. Modifying this collection changes the controls
     * associated with the map.
@@ -189,6 +196,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getControls(): Collection[Control] = js.native
+  
   /**
     * Get the coordinate for a given pixel.  This returns a coordinate in the
     * map view projection.
@@ -197,6 +205,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getCoordinateFromPixel(pixel: Pixel): Coordinate_ = js.native
+  
   /**
     * Returns the geographical coordinate for a browser event.
     * @param event Event.
@@ -204,6 +213,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getEventCoordinate(event: Event): Coordinate_ = js.native
+  
   /**
     * Returns the map pixel position for a browser event relative to the viewport.
     * @param event Event.
@@ -211,6 +221,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getEventPixel(event: Event): Pixel = js.native
+  
   /**
     * Get all features that intersect a pixel on the viewport.
     * @param pixel Pixel.
@@ -220,6 +231,7 @@ class Map protected () extends Object {
     */
   def getFeaturesAtPixel(pixel: Pixel): (js.Array[Feature | typings.openlayers.mod.render.Feature]) | Null = js.native
   def getFeaturesAtPixel(pixel: Pixel, opt_options: AtPixelOptions): (js.Array[Feature | typings.openlayers.mod.render.Feature]) | Null = js.native
+  
   /**
     * Get the map interactions. Modifying this collection changes the interactions
     * associated with the map.
@@ -229,6 +241,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getInteractions(): Collection[Interaction] = js.native
+  
   /**
     * Get the layergroup associated with this map.
     * @return A layer group containing the layers in this map.
@@ -236,12 +249,14 @@ class Map protected () extends Object {
     * @api stable
     */
   def getLayerGroup(): Group = js.native
+  
   /**
     * Get the collection of layers associated with this map.
     * @return Layers.
     * @api stable
     */
   def getLayers(): Collection[Base] = js.native
+  
   /**
     * Get an overlay by its identifier (the value returned by overlay.getId()).
     * Note that the index treats string and numeric identifiers as the same. So
@@ -252,6 +267,7 @@ class Map protected () extends Object {
     */
   def getOverlayById(id: String): Overlay = js.native
   def getOverlayById(id: Double): Overlay = js.native
+  
   /**
     * Get the map overlays. Modifying this collection changes the overlays
     * associated with the map.
@@ -259,6 +275,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getOverlays(): Collection[Overlay] = js.native
+  
   /**
     * Get the pixel for a coordinate.  This takes a coordinate in the map view
     * projection and returns the corresponding pixel.
@@ -267,6 +284,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getPixelFromCoordinate(coordinate: Coordinate_): Pixel = js.native
+  
   /**
     * Get the size of this map.
     * @return The size in pixels of the map in the DOM.
@@ -274,6 +292,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getSize(): Size = js.native
+  
   /**
     * Get the target in which this map is rendered.
     * Note that this returns what is entered as an option or in setTarget:
@@ -284,6 +303,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def getTarget(): Element | String = js.native
+  
   /**
     * Get the DOM element into which this map is rendered. In contrast to
     * `getTarget` this method always return an `Element`, or `null` if the
@@ -292,6 +312,7 @@ class Map protected () extends Object {
     * @api
     */
   def getTargetElement(): Element = js.native
+  
   /**
     * Get the view associated with this map. A view manages properties such as
     * center and resolution.
@@ -300,12 +321,14 @@ class Map protected () extends Object {
     * @api stable
     */
   def getView(): View = js.native
+  
   /**
     * Get the element that serves as the map viewport.
     * @return Viewport.
     * @api stable
     */
   def getViewport(): Element = js.native
+  
   /**
     * Detect if features intersect a pixel on the viewport. Layers included in the
     * detection can be configured through `opt_layerFilter`.
@@ -316,6 +339,7 @@ class Map protected () extends Object {
     */
   def hasFeatureAtPixel(pixel: Pixel): Boolean = js.native
   def hasFeatureAtPixel(pixel: Pixel, opt_options: AtPixelOptions): Boolean = js.native
+  
   /**
     * Remove the given control from the map.
     * @param control Control.
@@ -324,6 +348,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def removeControl(control: Control): Control = js.native
+  
   /**
     * Remove the given interaction from the map.
     * @param interaction Interaction to remove.
@@ -332,6 +357,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def removeInteraction(interaction: Interaction): Interaction = js.native
+  
   /**
     * Removes the given layer from the map.
     * @param layer Layer.
@@ -340,6 +366,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def removeLayer(layer: Base): Base = js.native
+  
   /**
     * Remove the given overlay from the map.
     * @param overlay Overlay.
@@ -348,16 +375,19 @@ class Map protected () extends Object {
     * @api stable
     */
   def removeOverlay(overlay: Overlay): Overlay = js.native
+  
   /**
     * Request a map rendering (at the next animation frame).
     * @api stable
     */
   def render(): Unit = js.native
+  
   /**
     * Requests an immediate render in a synchronous manner.
     * @api stable
     */
   def renderSync(): Unit = js.native
+  
   /**
     * Sets the layergroup of this map.
     * @param layerGroup A layer group containing the layers in
@@ -366,6 +396,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def setLayerGroup(layerGroup: Group): Unit = js.native
+  
   /**
     * Set the size of this map.
     * @param size The size in pixels of the map in the DOM.
@@ -373,6 +404,7 @@ class Map protected () extends Object {
     * @api
     */
   def setSize(size: Size): Unit = js.native
+  
   def setTarget(target: String): Unit = js.native
   /**
     * Set the target element to render this map into.
@@ -382,6 +414,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def setTarget(target: Element): Unit = js.native
+  
   /**
     * Set the view for this map.
     * @param view The view that controls this map.
@@ -389,6 +422,7 @@ class Map protected () extends Object {
     * @api stable
     */
   def setView(view: View): Unit = js.native
+  
   /**
     * Force a recalculation of the map viewport size.  This should be called when
     * third-party code changes the size of the map viewport.
@@ -396,4 +430,3 @@ class Map protected () extends Object {
     */
   def updateSize(): Unit = js.native
 }
-

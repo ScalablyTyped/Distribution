@@ -7,10 +7,11 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofvpnProvider extends js.Object {
+  
   /**
     * The enum is used by the platform to notify the client of the VPN session status.
     *
@@ -35,6 +36,7 @@ trait TypeofvpnProvider extends js.Object {
     * @enum
     */
   val PlatformMessage: DISCONNECTED = js.native
+  
   /**
     * The enum is used by the platform to indicate the event that triggered *onUIEvent*
     *
@@ -45,6 +47,7 @@ trait TypeofvpnProvider extends js.Object {
     * @enum
     */
   val UIEvent: SHOWADDDIALOG = js.native
+  
   /**
     * The enum is used by the VPN client to inform the platform of its current state.
     * This helps provide meaningful messages to the user.
@@ -56,46 +59,7 @@ trait TypeofvpnProvider extends js.Object {
     * @enum
     */
   val VpnConnectionState: CONNECTEDFAILURE = js.native
-  /** Triggered when a configuration is created by the platform for the extension. */
-  val onConfigCreated: Event[js.Function3[/* id */ String, /* name */ String, /* data */ js.Object, Unit]] = js.native
-  /** Triggered when a configuration created by the extension is removed by the platform. */
-  val onConfigRemoved: Event[js.Function1[/* id */ String, Unit]] = js.native
-  /** Triggered when an IP packet is received via the tunnel for the VPN session owned by the extension. */
-  val onPacketReceived: Event[js.Function1[/* data */ ArrayBuffer, Unit]] = js.native
-  /** Triggered when a message is received from the platform for a VPN configuration owned by the extension. */
-  val onPlatformMessage: Event[
-    js.Function3[
-      /* id */ String, 
-      /* message */ ToStringLiteral[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage */ js.Any, 
-        /* keyof typeof PlatformMessage */ String, 
-        Exclude[
-          /* keyof typeof PlatformMessage */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage[keyof typeof PlatformMessage] */ js.Any
-        ]
-      ], 
-      /* error */ String, 
-      Unit
-    ]
-  ] = js.native
-  /**
-    * Triggered when there is a UI event for the extension.
-    * UI events are signals from the platform that indicate to the app that a UI dialog needs to be shown to the user.
-    */
-  val onUIEvent: Event[
-    js.Function2[
-      /* event */ ToStringLiteral[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent */ js.Any, 
-        /* keyof typeof UIEvent */ String, 
-        Exclude[
-          /* keyof typeof UIEvent */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent[keyof typeof UIEvent] */ js.Any
-        ]
-      ], 
-      /* id */ js.UndefOr[String], 
-      Unit
-    ]
-  ] = js.native
+  
   /**
     * Creates a new VPN configuration that persists across multiple login sessions of the user.
     * @param name The name of the VPN configuration.
@@ -103,6 +67,7 @@ trait TypeofvpnProvider extends js.Object {
     * Parameter id: A unique ID for the created configuration, empty string on failure.
     */
   def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = js.native
+  
   /**
     * Destroys a VPN configuration created by the extension.
     * @param id ID of the VPN configuration to destroy.
@@ -110,6 +75,7 @@ trait TypeofvpnProvider extends js.Object {
     */
   def destroyConfig(id: String): Unit = js.native
   def destroyConfig(id: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Notifies the VPN session state to the platform. This will succeed only when the VPN session is owned by the extension.
     * @param state The VPN session state of the VPN client.
@@ -139,6 +105,52 @@ trait TypeofvpnProvider extends js.Object {
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
+  
+  /** Triggered when a configuration is created by the platform for the extension. */
+  val onConfigCreated: Event[js.Function3[/* id */ String, /* name */ String, /* data */ js.Object, Unit]] = js.native
+  
+  /** Triggered when a configuration created by the extension is removed by the platform. */
+  val onConfigRemoved: Event[js.Function1[/* id */ String, Unit]] = js.native
+  
+  /** Triggered when an IP packet is received via the tunnel for the VPN session owned by the extension. */
+  val onPacketReceived: Event[js.Function1[/* data */ ArrayBuffer, Unit]] = js.native
+  
+  /** Triggered when a message is received from the platform for a VPN configuration owned by the extension. */
+  val onPlatformMessage: Event[
+    js.Function3[
+      /* id */ String, 
+      /* message */ ToStringLiteral[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage */ js.Any, 
+        /* keyof typeof PlatformMessage */ String, 
+        Exclude[
+          /* keyof typeof PlatformMessage */ String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage[keyof typeof PlatformMessage] */ js.Any
+        ]
+      ], 
+      /* error */ String, 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
+    * Triggered when there is a UI event for the extension.
+    * UI events are signals from the platform that indicate to the app that a UI dialog needs to be shown to the user.
+    */
+  val onUIEvent: Event[
+    js.Function2[
+      /* event */ ToStringLiteral[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent */ js.Any, 
+        /* keyof typeof UIEvent */ String, 
+        Exclude[
+          /* keyof typeof UIEvent */ String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent[keyof typeof UIEvent] */ js.Any
+        ]
+      ], 
+      /* id */ js.UndefOr[String], 
+      Unit
+    ]
+  ] = js.native
+  
   /**
     * Sends an IP packet through the tunnel created for the VPN session. This will succeed only when the VPN session is owned by the extension.
     * @param data The IP packet to be sent to the platform.
@@ -146,6 +158,7 @@ trait TypeofvpnProvider extends js.Object {
     */
   def sendPacket(data: ArrayBuffer): Unit = js.native
   def sendPacket(data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Sets the parameters for the VPN session. This should be called immediately after 'connected' is received from the platform. This will succeed only when the VPN session is owned by the extension.
     * @param parameters The parameters for the VPN session.
@@ -153,4 +166,3 @@ trait TypeofvpnProvider extends js.Object {
     */
   def setParameters(parameters: VpnSessionParameters, callback: js.Function0[Unit]): Unit = js.native
 }
-

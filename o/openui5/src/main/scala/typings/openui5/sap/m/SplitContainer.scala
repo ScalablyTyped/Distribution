@@ -3,22 +3,25 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SplitContainer extends Control {
+  
   /**
     * Adds some detailPage to the aggregation <code>detailPages</code>.
     * @param oDetailPage the detailPage to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addDetailPage(oDetailPage: Control): SplitContainer = js.native
+  
   /**
     * Adds some masterPage to the aggregation <code>masterPages</code>.
     * @param oMasterPage the masterPage to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addMasterPage(oMasterPage: Control): SplitContainer = js.native
+  
   /**
     * Adds a content entity either to master area or detail area depending on the master parameter.The
     * method is provided mainly for providing API consistency between sap.m.SplitContainer and sap.m.App.
@@ -31,6 +34,7 @@ trait SplitContainer extends Control {
     * is added to detail area.
     */
   def addPage(oPage: Control, bMaster: Boolean): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterDetailNavigate</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -47,6 +51,7 @@ trait SplitContainer extends Control {
     */
   def attachAfterDetailNavigate(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachAfterDetailNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterMasterClose</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -62,6 +67,7 @@ trait SplitContainer extends Control {
     */
   def attachAfterMasterClose(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachAfterMasterClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterMasterNavigate</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -78,6 +84,7 @@ trait SplitContainer extends Control {
     */
   def attachAfterMasterNavigate(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachAfterMasterNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterMasterOpen</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -93,6 +100,7 @@ trait SplitContainer extends Control {
     */
   def attachAfterMasterOpen(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachAfterMasterOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeMasterClose</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -107,6 +115,7 @@ trait SplitContainer extends Control {
     */
   def attachBeforeMasterClose(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachBeforeMasterClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeMasterOpen</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -121,6 +130,7 @@ trait SplitContainer extends Control {
     */
   def attachBeforeMasterOpen(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachBeforeMasterOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>detailNavigate</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -138,6 +148,7 @@ trait SplitContainer extends Control {
     */
   def attachDetailNavigate(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachDetailNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>masterButton</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -154,6 +165,7 @@ trait SplitContainer extends Control {
     */
   def attachMasterButton(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachMasterButton(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>masterNavigate</code> event of this
     * <code>sap.m.SplitContainer</code>.When called, the context of the event handler (its
@@ -170,6 +182,7 @@ trait SplitContainer extends Control {
     */
   def attachMasterNavigate(oData: js.Any, fnFunction: js.Any): SplitContainer = js.native
   def attachMasterNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Navigates back to the previous detail page found in the history.
     * @param oBackData This optional object can carry any payload data which should be made available to
@@ -190,6 +203,7 @@ trait SplitContainer extends Control {
     * transition.
     */
   def backDetail(oBackData: js.Any, oTransitionParameter: js.Any): SplitContainer = js.native
+  
   /**
     * Navigates back to the previous master page which is found in the history.
     * @param oBackData This optional object can carry any payload data which should be made available to
@@ -210,6 +224,7 @@ trait SplitContainer extends Control {
     * transition.
     */
   def backMaster(oBackData: js.Any, oTransitionParameter: js.Any): SplitContainer = js.native
+  
   /**
     * Navigates back to the nearest previous page in the SplitContainer history with the given ID (if
     * there is no such page among the previous pages, nothing happens).The transition effect, which had
@@ -240,6 +255,7 @@ trait SplitContainer extends Control {
     * transition.
     */
   def backToPage(sPageId: String, oBackData: js.Any, oTransitionParameters: js.Any): SplitContainer = js.native
+  
   /**
     * Navigates back to the initial/top level of Detail (this is the element aggregated as initialPage, or
     * the first added element).NOTE: If already on the initial page, nothing happens.The transition effect
@@ -262,6 +278,7 @@ trait SplitContainer extends Control {
     * transition.
     */
   def backToTopDetail(oBackData: js.Any, oTransitionParameter: js.Any): Control = js.native
+  
   /**
     * Navigates back to the initial/top level of Master (this is the element aggregated as "initialPage",
     * or the first added element).NOTE: If already on the initial page, nothing happens.The transition
@@ -284,16 +301,19 @@ trait SplitContainer extends Control {
     * transition.
     */
   def backToTopMaster(oBackData: js.Any, oTransitionParameter: js.Any): Control = js.native
+  
   /**
     * Destroys all the detailPages in the aggregation <code>detailPages</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyDetailPages(): SplitContainer = js.native
+  
   /**
     * Destroys all the masterPages in the aggregation <code>masterPages</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyMasterPages(): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterDetailNavigate</code> event of
     * this <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones
@@ -303,6 +323,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterDetailNavigate(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterMasterClose</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -312,6 +333,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterMasterClose(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterMasterNavigate</code> event of
     * this <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones
@@ -321,6 +343,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterMasterNavigate(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterMasterOpen</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -330,6 +353,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterMasterOpen(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeMasterClose</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -339,6 +363,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeMasterClose(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeMasterOpen</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -348,6 +373,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeMasterOpen(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>detailNavigate</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -357,6 +383,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachDetailNavigate(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>masterButton</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -366,6 +393,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachMasterButton(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>masterNavigate</code> event of this
     * <code>sap.m.SplitContainer</code>.The passed function and listener object must match the ones used
@@ -375,6 +403,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachMasterNavigate(fnFunction: js.Any, oListener: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>afterDetailNavigate</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>from</code> of type <code>sap.ui.core.Control</code>The page, which had
@@ -397,12 +426,14 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterDetailNavigate(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>afterMasterClose</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterMasterClose(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>afterMasterNavigate</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>from</code> of type <code>sap.ui.core.Control</code>The page, which had
@@ -424,24 +455,28 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterMasterNavigate(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>afterMasterOpen</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterMasterOpen(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>beforeMasterClose</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeMasterClose(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>beforeMasterOpen</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeMasterOpen(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>detailNavigate</code> to attached listeners.Listeners may prevent the default
     * action of this event by using the <code>preventDefault</code>-method on the event object.Expects the
@@ -465,12 +500,14 @@ trait SplitContainer extends Control {
     * @returns Whether or not to prevent the default action
     */
   def fireDetailNavigate(mArguments: js.Any): Boolean = js.native
+  
   /**
     * Fires event <code>masterButton</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireMasterButton(mArguments: js.Any): SplitContainer = js.native
+  
   /**
     * Fires event <code>masterNavigate</code> to attached listeners.Listeners may prevent the default
     * action of this event by using the <code>preventDefault</code>-method on the event object.Expects the
@@ -494,6 +531,7 @@ trait SplitContainer extends Control {
     * @returns Whether or not to prevent the default action
     */
   def fireMasterNavigate(mArguments: js.Any): Boolean = js.native
+  
   /**
     * Gets current value of property <code>backgroundColor</code>.Determines the background color of the
     * SplitContainer. If set, this color overrides the default one,which is defined by the theme (should
@@ -505,6 +543,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>backgroundColor</code>
     */
   def getBackgroundColor(): String = js.native
+  
   /**
     * Gets current value of property <code>backgroundImage</code>.Sets the background image of the
     * SplitContainer. When set, this image overridesthe default background defined by the theme (should
@@ -516,6 +555,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>backgroundImage</code>
     */
   def getBackgroundImage(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>backgroundOpacity</code>.Defines the opacity of the background
     * image - between 0 (fully transparent) and 1 (fully opaque).This can be used to improve the content
@@ -524,6 +564,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>backgroundOpacity</code>
     */
   def getBackgroundOpacity(): Double = js.native
+  
   /**
     * Gets current value of property <code>backgroundRepeat</code>.Defines whether the background image
     * (if configured) is proportionally stretchedto cover the whole SplitContainer (false) or whether it
@@ -532,14 +573,17 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>backgroundRepeat</code>
     */
   def getBackgroundRepeat(): Boolean = js.native
+  
   /**
     * Returns the current displayed detail page.
     */
   def getCurrentDetailPage(): Control = js.native
+  
   /**
     * Returns the current displayed master page.
     */
   def getCurrentMasterPage(): Control = js.native
+  
   /**
     * Returns the currently displayed page either in master area or in detail area.When the parameter is
     * set to true, the current page in master area is returned, otherwise, the current page in detail area
@@ -550,6 +594,7 @@ trait SplitContainer extends Control {
     * false, the current page in detail area will be returned.
     */
   def getCurrentPage(bMaster: Boolean): Control = js.native
+  
   /**
     * Gets current value of property <code>defaultTransitionNameDetail</code>.Determines the type of the
     * transition/animation to apply when to() is called without defining thetransition to use. The default
@@ -558,6 +603,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>defaultTransitionNameDetail</code>
     */
   def getDefaultTransitionNameDetail(): String = js.native
+  
   /**
     * Gets current value of property <code>defaultTransitionNameMaster</code>.Determines the type of the
     * transition/animation to apply when to() is called, without defining thetransition to use. The
@@ -566,6 +612,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>defaultTransitionNameMaster</code>
     */
   def getDefaultTransitionNameMaster(): String = js.native
+  
   /**
     * Returns the page with the given ID in detail area. If there's no page that has the given ID, null is
     * returned.
@@ -573,6 +620,7 @@ trait SplitContainer extends Control {
     * @param sId The ID of the page that needs to be fetched.
     */
   def getDetailPage(sId: String): Control = js.native
+  
   /**
     * Gets content of aggregation <code>detailPages</code>.Determines the content entities, between which
     * the SplitContainer navigates in detail area.These can be of type sap.m.Page, sap.ui.core.View,
@@ -581,16 +629,19 @@ trait SplitContainer extends Control {
     * the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
     */
   def getDetailPages(): js.Array[Control] = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>initialDetail</code>, or
     * <code>null</code>.
     */
   def getInitialDetail(): js.Any = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>initialMaster</code>, or
     * <code>null</code>.
     */
   def getInitialMaster(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>masterButtonText</code>.Determines the text displayed in master
     * button, which has a default value "Navigation".This text is only displayed in iOS platform and the
@@ -603,6 +654,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>masterButtonText</code>
     */
   def getMasterButtonText(): String = js.native
+  
   /**
     * Returns the page with the given ID in master area (if there's no page that has the given ID, null is
     * returned).
@@ -610,6 +662,7 @@ trait SplitContainer extends Control {
     * @param sId The ID of the page that needs to be fetched
     */
   def getMasterPage(sId: String): Control = js.native
+  
   /**
     * Gets content of aggregation <code>masterPages</code>.Determines the content entities, between which
     * the SplitContainer navigates in master area.These can be of type sap.m.Page, sap.ui.core.View,
@@ -618,6 +671,7 @@ trait SplitContainer extends Control {
     * the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
     */
   def getMasterPages(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>mode</code>.Defines whether the master page will always be
     * displayed (in portrait and landscape mode - StretchCompressMode),or if it should be hidden when in
@@ -627,6 +681,7 @@ trait SplitContainer extends Control {
     * @returns Value of property <code>mode</code>
     */
   def getMode(): SplitAppMode = js.native
+  
   /**
     * Returns the page with the given ID from either master area, or detail area depending on the master
     * parameter (if there's no page that has the given ID, null is returned).
@@ -636,6 +691,7 @@ trait SplitContainer extends Control {
     * false, the page will be fetched from detail area.
     */
   def getPage(sId: String, bMaster: Boolean): Control = js.native
+  
   /**
     * Returns the previous page (the page, from which the user drilled down to the current page with
     * to()).Note: this is not the page, which the user has seen before, but the page which is the target
@@ -644,10 +700,12 @@ trait SplitContainer extends Control {
     * false, the previous page in detail area will be returned.
     */
   def getPreviousPage(bMaster: Boolean): Control = js.native
+  
   /**
     * Used to hide the master page when in ShowHideMode and the device is in portrait mode.
     */
   def hideMaster(): SplitContainer = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>detailPages</code>.and returns its index if found or -1 otherwise.
@@ -655,6 +713,7 @@ trait SplitContainer extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfDetailPage(oDetailPage: Control): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>masterPages</code>.and returns its index if found or -1 otherwise.
@@ -662,6 +721,7 @@ trait SplitContainer extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfMasterPage(oMasterPage: Control): Double = js.native
+  
   /**
     * Inserts a detailPage into the aggregation <code>detailPages</code>.
     * @param oDetailPage the detailPage to insert; if empty, nothing is inserted
@@ -672,6 +732,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertDetailPage(oDetailPage: Control, iIndex: Double): SplitContainer = js.native
+  
   /**
     * Inserts a masterPage into the aggregation <code>masterPages</code>.
     * @param oMasterPage the masterPage to insert; if empty, nothing is inserted
@@ -682,6 +743,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertMasterPage(oMasterPage: Control, iIndex: Double): SplitContainer = js.native
+  
   /**
     * Inserts the page/control with the specified ID into the navigation history stack of the
     * NavContainer.This can be used for deep-linking when the user directly reached a drilldown detail
@@ -697,6 +759,7 @@ trait SplitContainer extends Control {
     * inserted previous page if the user would have done a normal forward navigation to it.
     */
   def insertPreviousPage(sPageId: String, sTransitionName: String, oData: js.Any): SplitContainer = js.native
+  
   /**
     * Returns whether master area is currently displayed on the screen.In desktop browser or tablet, this
     * method returns true when master area is displayed on the screen, regardless if in portrait or
@@ -705,18 +768,21 @@ trait SplitContainer extends Control {
     * @since 1.16.5
     */
   def isMasterShown(): Boolean = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>detailPages</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllDetailPages(): js.Array[Control] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>masterPages</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllMasterPages(): js.Array[Control] = js.native
+  
   def removeDetailPage(vDetailPage: String): Control = js.native
   /**
     * Removes a detailPage from the aggregation <code>detailPages</code>.
@@ -725,6 +791,7 @@ trait SplitContainer extends Control {
     */
   def removeDetailPage(vDetailPage: Double): Control = js.native
   def removeDetailPage(vDetailPage: Control): Control = js.native
+  
   def removeMasterPage(vMasterPage: String): Control = js.native
   /**
     * Removes a masterPage from the aggregation <code>masterPages</code>.
@@ -733,6 +800,7 @@ trait SplitContainer extends Control {
     */
   def removeMasterPage(vMasterPage: Double): Control = js.native
   def removeMasterPage(vMasterPage: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>backgroundColor</code>.Determines the background color of the
     * SplitContainer. If set, this color overrides the default one,which is defined by the theme (should
@@ -746,6 +814,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundColor(sBackgroundColor: String): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>backgroundImage</code>.Sets the background image of the
     * SplitContainer. When set, this image overridesthe default background defined by the theme (should
@@ -759,6 +828,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundImage(sBackgroundImage: js.Any): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>backgroundOpacity</code>.Defines the opacity of the background
     * image - between 0 (fully transparent) and 1 (fully opaque).This can be used to improve the content
@@ -770,6 +840,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundOpacity(fBackgroundOpacity: Double): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>backgroundRepeat</code>.Defines whether the background image (if
     * configured) is proportionally stretchedto cover the whole SplitContainer (false) or whether it
@@ -780,6 +851,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundRepeat(bBackgroundRepeat: Boolean): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>defaultTransitionNameDetail</code>.Determines the type of the
     * transition/animation to apply when to() is called without defining thetransition to use. The default
@@ -790,6 +862,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDefaultTransitionNameDetail(sDefaultTransitionNameDetail: String): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>defaultTransitionNameMaster</code>.Determines the type of the
     * transition/animation to apply when to() is called, without defining thetransition to use. The
@@ -800,6 +873,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDefaultTransitionNameMaster(sDefaultTransitionNameMaster: String): SplitContainer = js.native
+  
   /**
     * Sets the associated <code>initialDetail</code>.
     * @param oInitialDetail ID of an element which becomes the new target of this initialDetail
@@ -808,6 +882,7 @@ trait SplitContainer extends Control {
     */
   def setInitialDetail(oInitialDetail: js.Any): SplitContainer = js.native
   def setInitialDetail(oInitialDetail: Control): SplitContainer = js.native
+  
   /**
     * Sets the associated <code>initialMaster</code>.
     * @param oInitialMaster ID of an element which becomes the new target of this initialMaster
@@ -816,6 +891,7 @@ trait SplitContainer extends Control {
     */
   def setInitialMaster(oInitialMaster: js.Any): SplitContainer = js.native
   def setInitialMaster(oInitialMaster: Control): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>masterButtonText</code>.Determines the text displayed in master
     * button, which has a default value "Navigation".This text is only displayed in iOS platform and the
@@ -830,6 +906,7 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMasterButtonText(sMasterButtonText: String): SplitContainer = js.native
+  
   /**
     * Sets a new value for property <code>mode</code>.Defines whether the master page will always be
     * displayed (in portrait and landscape mode - StretchCompressMode),or if it should be hidden when in
@@ -841,10 +918,12 @@ trait SplitContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMode(sMode: SplitAppMode): SplitContainer = js.native
+  
   /**
     * Used to make the master page visible when in ShowHideMode and the device is in portrait mode.
     */
   def showMaster(): SplitContainer = js.native
+  
   /**
     * Navigates to the given page inside the SplitContainer.The navigation is done inside the master area
     * if the page has been added,otherwise, it tries to do the page navigation in the detail area.
@@ -870,6 +949,7 @@ trait SplitContainer extends Control {
     * parameter.
     */
   def to(sPageId: String, sTransitionName: String, oData: js.Any, oTransitionParameters: js.Any): SplitContainer = js.native
+  
   /**
     * Navigates to a given detail page.
     * @param sPageId undefined
@@ -893,6 +973,7 @@ trait SplitContainer extends Control {
     * parameter.
     */
   def toDetail(sPageId: String, sTransitionName: String, oData: js.Any, oTransitionParameter: js.Any): SplitContainer = js.native
+  
   /**
     * Navigates to a given master page.
     * @param sPageId The screen to which drilldown should happen. The ID or the control itself can be
@@ -918,4 +999,3 @@ trait SplitContainer extends Control {
     */
   def toMaster(sPageId: String, sTransitionName: String, oData: js.Any, oTransitionParameters: js.Any): SplitContainer = js.native
 }
-

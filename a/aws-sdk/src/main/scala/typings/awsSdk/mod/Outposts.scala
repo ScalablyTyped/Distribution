@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.outpostsMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Outposts")
 @js.native
@@ -14,4 +14,3 @@ class Outposts ()
   extends typings.awsSdk.allMod.Outposts {
   def this(options: ClientConfiguration) = this()
 }
-

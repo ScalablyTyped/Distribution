@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Fps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Handles playing of sprite animations and loading of relevant sprite assets.
@@ -27,4 +27,3 @@ class SpriteAnimationClip protected ()
   extends typings.playcanvas.pc.SpriteAnimationClip {
   def this(component: typings.playcanvas.pc.SpriteComponent, data: Fps) = this()
 }
-

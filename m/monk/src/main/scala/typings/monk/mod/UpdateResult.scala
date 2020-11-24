@@ -2,7 +2,7 @@ package typings.monk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mongodb.mongodb.UpdateWriteOpResult['result'] */
 /* Rewritten from type alias, can be one of: 
@@ -11,13 +11,14 @@ import scala.scalajs.js.annotation._
   - typings.monk.monkStrings.nModified
 */
 trait UpdateResult extends js.Object
-
 object UpdateResult {
+  
   @scala.inline
   def n: typings.monk.monkStrings.n = "n".asInstanceOf[typings.monk.monkStrings.n]
+  
   @scala.inline
   def nModified: typings.monk.monkStrings.nModified = "nModified".asInstanceOf[typings.monk.monkStrings.nModified]
+  
   @scala.inline
   def ok: typings.monk.monkStrings.ok = "ok".asInstanceOf[typings.monk.monkStrings.ok]
 }
-

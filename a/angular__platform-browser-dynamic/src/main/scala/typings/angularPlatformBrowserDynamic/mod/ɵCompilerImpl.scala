@@ -16,7 +16,7 @@ import typings.angularCore.mod.Type
 import typings.angularCore.mod.ɵConsole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser-dynamic", "\u0275CompilerImpl")
 @js.native
@@ -34,12 +34,18 @@ class ɵCompilerImpl protected () extends Compiler {
     compilerConfig: CompilerConfig,
     console: ɵConsole
   ) = this()
+  
   var _delegate: js.Any = js.native
+  
   var _metadataResolver: js.Any = js.native
-  var getExtraNgModuleProviders: js.Any = js.native
-  val injector: Injector = js.native
+  
   def getComponentFactory[T](component: Type[T]): ComponentFactory[T] = js.native
+  
+  var getExtraNgModuleProviders: js.Any = js.native
+  
   def hasAotSummary(ref: Type[_]): Boolean = js.native
+  
+  val injector: Injector = js.native
+  
   def loadAotSummaries(summaries: js.Function0[js.Array[_]]): Unit = js.native
 }
-

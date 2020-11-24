@@ -2,22 +2,56 @@ package typings.jsforce.httpApiMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait HttpApiOptions extends js.Object {
-  var noContentResponse: js.UndefOr[js.Object] = js.undefined
-  var responseType: js.UndefOr[String] = js.undefined
-  var transport: js.UndefOr[js.Object] = js.undefined
+  
+  var noContentResponse: js.UndefOr[js.Object] = js.native
+  
+  var responseType: js.UndefOr[String] = js.native
+  
+  var transport: js.UndefOr[js.Object] = js.native
 }
-
 object HttpApiOptions {
+  
   @scala.inline
-  def apply(noContentResponse: js.Object = null, responseType: String = null, transport: js.Object = null): HttpApiOptions = {
+  def apply(): HttpApiOptions = {
     val __obj = js.Dynamic.literal()
-    if (noContentResponse != null) __obj.updateDynamic("noContentResponse")(noContentResponse.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpApiOptions]
   }
+  
+  @scala.inline
+  implicit class HttpApiOptionsOps[Self <: HttpApiOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setNoContentResponse(value: js.Object): Self = this.set("noContentResponse", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNoContentResponse: Self = this.set("noContentResponse", js.undefined)
+    
+    @scala.inline
+    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    
+    @scala.inline
+    def setTransport(value: js.Object): Self = this.set("transport", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTransport: Self = this.set("transport", js.undefined)
+  }
 }
-

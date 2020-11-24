@@ -2,11 +2,12 @@ package typings.semverDiff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver-diff", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Get the diff type of two [semver](https://github.com/npm/node-semver) versions: `0.0.1 0.0.2` → `patch`.
   @returns The difference type between two semver versions, or `undefined` if they're identical or the second one is lower than the first.
@@ -37,4 +38,3 @@ object ^ extends js.Object {
   */
   def apply(versionA: String, versionB: String): js.UndefOr[Result] = js.native
 }
-

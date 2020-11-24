@@ -6,13 +6,15 @@ import typings.ckeditorCkeditor5Engine.mod.view.observer.KeyEventData
 import typings.ckeditorCkeditor5Utils.mod.KeystrokeHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ckeditor/ckeditor5-core", "EditingKeystrokeHandler")
 @js.native
 class EditingKeystrokeHandler protected () extends KeystrokeHandler {
   def this(editor: Editor) = this()
+  
   val editor: Editor = js.native
+  
   def set(keystroke: String, callback: String): Unit = js.native
   def set(keystroke: String, callback: String, options: `0`): Unit = js.native
   def set(
@@ -28,4 +30,3 @@ class EditingKeystrokeHandler protected () extends KeystrokeHandler {
     options: `0`
   ): Unit = js.native
 }
-

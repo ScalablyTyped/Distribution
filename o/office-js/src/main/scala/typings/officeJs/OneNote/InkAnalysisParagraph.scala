@@ -8,7 +8,7 @@ import typings.officeJs.OneNote.Interfaces.InkAnalysisParagraphUpdateData
 import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InkAnalysisParagraph extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_InkAnalysisParagraph: RequestContext = js.native
+  
   /**
     *
     * Gets the ID of the InkAnalysisParagraph object. Read-only.
@@ -28,6 +30,7 @@ trait InkAnalysisParagraph extends ClientObject {
     * [Api set: OneNoteApi 1.1]
     */
   val id: String = js.native
+  
   /**
     *
     * Reference to the parent InkAnalysisPage. Read-only.
@@ -35,6 +38,7 @@ trait InkAnalysisParagraph extends ClientObject {
     * [Api set: OneNoteApi 1.1]
     */
   val inkAnalysis: InkAnalysis = js.native
+  
   /**
     *
     * Gets the ink analysis lines in this ink analysis paragraph. Read-only.
@@ -42,6 +46,7 @@ trait InkAnalysisParagraph extends ClientObject {
     * [Api set: OneNoteApi 1.1]
     */
   val lines: InkAnalysisLineCollection = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -62,6 +67,7 @@ trait InkAnalysisParagraph extends ClientObject {
   def load(option: js.Array[String]): InkAnalysisParagraph = js.native
   def load(option: InkAnalysisParagraphLoadOptions): InkAnalysisParagraph = js.native
   def load(option: Expand): InkAnalysisParagraph = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: InkAnalysisParagraph): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -77,18 +83,20 @@ trait InkAnalysisParagraph extends ClientObject {
     */
   def set(properties: InkAnalysisParagraphUpdateData): Unit = js.native
   def set(properties: InkAnalysisParagraphUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.InkAnalysisParagraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): InkAnalysisParagraphData = js.native
+  
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): InkAnalysisParagraph = js.native
+  
   /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
     */
   def untrack(): InkAnalysisParagraph = js.native
 }
-

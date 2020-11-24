@@ -4,7 +4,7 @@ import typings.chromeApps.chrome.integer
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when the guest window logs a console message.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ConsoleMessageEvent extends Event {
+  
   /**
     * The severity level of the log message.
     * Ranges from -1 to 2.
@@ -21,11 +22,13 @@ trait ConsoleMessageEvent extends Event {
     * LOG_ERROR (console.error) = 2
     */
   var level: ConsoleMessageLevel = js.native
+  
   /** The line number of the message source. */
   var line: integer = js.native
+  
   /** The logged message contents. */
   var message: String = js.native
+  
   /** A string identifying the resource which logged the message. */
   var sourceId: String = js.native
 }
-

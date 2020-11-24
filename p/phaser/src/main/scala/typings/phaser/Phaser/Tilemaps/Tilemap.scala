@@ -20,7 +20,7 @@ import typings.phaser.TilemapFindCallback
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Tilemap is a container for Tilemap data. This isn't a display object, rather, it holds data
@@ -54,88 +54,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Tilemap extends js.Object {
-  /**
-    * The index of the currently selected LayerData object.
-    */
-  var currentLayerIndex: integer = js.native
-  /**
-    * The format of the map data.
-    */
-  var format: Double = js.native
-  /**
-    * The height of the map (in tiles).
-    */
-  var height: Double = js.native
-  /**
-    * The height of the map in pixels based on height * tileHeight.
-    */
-  var heightInPixels: Double = js.native
-  var imageCollections: js.Array[ImageCollection] = js.native
-  /**
-    * An array of Tiled Image Layers.
-    */
-  var images: js.Array[_] = js.native
-  /**
-    * The LayerData object that is currently selected in the map. You can set this property using
-    * any type supported by setLayer.
-    */
-  var layer: LayerData = js.native
-  /**
-    * An array of Tilemap layer data.
-    */
-  var layers: js.Array[LayerData] = js.native
-  /**
-    * An array of ObjectLayer instances parsed from Tiled object layers.
-    */
-  var objects: js.Array[ObjectLayer] = js.native
-  /**
-    * The orientation of the map data (as specified in Tiled), usually 'orthogonal'.
-    */
-  var orientation: String = js.native
-  /**
-    * Map specific properties as specified in Tiled.
-    */
-  var properties: js.Object = js.native
-  /**
-    * The render (draw) order of the map data (as specified in Tiled), usually 'right-down'.
-    * 
-    * The draw orders are:
-    * 
-    * right-down
-    * left-down
-    * right-up
-    * left-up
-    * 
-    * This can be changed via the `setRenderOrder` method.
-    */
-  var renderOrder: String = js.native
-  var scene: Scene = js.native
-  /**
-    * The base height of a tile in pixels. Note that individual layers may have a different
-    * tile height.
-    */
-  var tileHeight: integer = js.native
-  /**
-    * The base width of a tile in pixels. Note that individual layers may have a different tile
-    * width.
-    */
-  var tileWidth: integer = js.native
-  /**
-    * An array of Tilesets used in the map.
-    */
-  var tilesets: js.Array[Tileset] = js.native
-  /**
-    * The version of the map data (as specified in Tiled, usually 1).
-    */
-  var version: Double = js.native
-  /**
-    * The width of the map (in tiles).
-    */
-  var width: Double = js.native
-  /**
-    * The width of the map in pixels based on width * tileWidth.
-    */
-  var widthInPixels: Double = js.native
+  
   /**
     * Adds an image to the map to be used as a tileset. A single map may use multiple tilesets.
     * Note that the tileset name can be found in the JSON file exported from Tiled, or in the Tiled
@@ -165,6 +84,7 @@ trait Tilemap extends js.Object {
     tileSpacing: js.UndefOr[integer],
     gid: js.UndefOr[integer]
   ): Tileset = js.native
+  
   /**
     * Calculates interesting faces at the given tile coordinates of the specified layer. Interesting
     * faces are used internally for optimizing collisions against tiles. This method is mostly used
@@ -180,6 +100,7 @@ trait Tilemap extends js.Object {
   def calculateFacesAt(tileX: integer, tileY: integer, layer: DynamicTilemapLayer): Tilemap = js.native
   def calculateFacesAt(tileX: integer, tileY: integer, layer: StaticTilemapLayer): Tilemap = js.native
   def calculateFacesAt(tileX: integer, tileY: integer, layer: integer): Tilemap = js.native
+  
   /**
     * Calculates interesting faces within the rectangular area specified (in tile coordinates) of the
     * layer. Interesting faces are used internally for optimizing collisions against tiles. This method
@@ -199,6 +120,7 @@ trait Tilemap extends js.Object {
     height: js.UndefOr[integer],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
   /**
     * Turns the DynamicTilemapLayer associated with the given layer into a StaticTilemapLayer. If
     * no layer specified, the map's current layer is used. This is useful if you want to manipulate
@@ -212,6 +134,7 @@ trait Tilemap extends js.Object {
   def convertLayerToStatic(layer: String): StaticTilemapLayer = js.native
   def convertLayerToStatic(layer: DynamicTilemapLayer): StaticTilemapLayer = js.native
   def convertLayerToStatic(layer: integer): StaticTilemapLayer = js.native
+  
   /**
     * Copies the tiles in the source rectangular area to a new destination (all specified in tile
     * coordinates) within the layer. This copies all tile properties & recalculates collision
@@ -324,6 +247,7 @@ trait Tilemap extends js.Object {
     recalculateFaces: Boolean,
     layer: integer
   ): Tilemap = js.native
+  
   /**
     * Creates a new and empty DynamicTilemapLayer. The currently selected layer in the map is set to this new layer.
     * @param name The name of this layer. Must be unique within the map.
@@ -345,6 +269,7 @@ trait Tilemap extends js.Object {
     tileWidth: js.UndefOr[integer],
     tileHeight: js.UndefOr[integer]
   ): DynamicTilemapLayer = js.native
+  
   def createDynamicLayer(layerID: String, tileset: String): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: String, tileset: String, x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: String, tileset: String, x: Double): DynamicTilemapLayer = js.native
@@ -384,6 +309,7 @@ trait Tilemap extends js.Object {
   def createDynamicLayer(layerID: integer, tileset: Tileset, x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: integer, tileset: Tileset, x: Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: integer, tileset: Tileset, x: Double, y: Double): DynamicTilemapLayer = js.native
+  
   def createFromObjects(name: String, id: String, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
   def createFromObjects(name: String, id: String, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
   /**
@@ -404,6 +330,7 @@ trait Tilemap extends js.Object {
     */
   def createFromObjects(name: String, id: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
   def createFromObjects(name: String, id: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+  
   /**
     * Creates a Sprite for every object matching the given tile indexes in the layer. You can
     * optionally specify if each tile will be replaced with a new tile after the Sprite has been
@@ -426,6 +353,7 @@ trait Tilemap extends js.Object {
     camera: js.UndefOr[Camera],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): js.Array[Sprite] = js.native
+  
   def createStaticLayer(layerID: String, tileset: String): StaticTilemapLayer = js.native
   def createStaticLayer(layerID: String, tileset: String, x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
   def createStaticLayer(layerID: String, tileset: String, x: Double): StaticTilemapLayer = js.native
@@ -465,11 +393,18 @@ trait Tilemap extends js.Object {
   def createStaticLayer(layerID: integer, tileset: Tileset, x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
   def createStaticLayer(layerID: integer, tileset: Tileset, x: Double): StaticTilemapLayer = js.native
   def createStaticLayer(layerID: integer, tileset: Tileset, x: Double, y: Double): StaticTilemapLayer = js.native
+  
+  /**
+    * The index of the currently selected LayerData object.
+    */
+  var currentLayerIndex: integer = js.native
+  
   /**
     * Removes all layer data from this Tilemap and nulls the scene reference. This will destroy any
     * StaticTilemapLayers or DynamicTilemapLayers that have been linked to LayerData.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Destroys the given TilemapLayer and removes it from this Tilemap.
     * 
@@ -481,6 +416,7 @@ trait Tilemap extends js.Object {
   def destroyLayer(layer: DynamicTilemapLayer): Tilemap = js.native
   def destroyLayer(layer: StaticTilemapLayer): Tilemap = js.native
   def destroyLayer(layer: integer): Tilemap = js.native
+  
   /**
     * Sets the tiles in the given rectangular area (in tile coordinates) of the layer with the
     * specified index. Tiles will be set to collide if the given index is a colliding index.
@@ -505,6 +441,7 @@ trait Tilemap extends js.Object {
     recalculateFaces: js.UndefOr[Boolean],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
   def filterObjects(objectLayer: String, callback: TilemapFilterCallback): js.Array[GameObject] = js.native
   def filterObjects(objectLayer: String, callback: TilemapFilterCallback, context: js.Object): js.Array[GameObject] = js.native
   /**
@@ -517,6 +454,7 @@ trait Tilemap extends js.Object {
     */
   def filterObjects(objectLayer: ObjectLayer, callback: TilemapFilterCallback): js.Array[GameObject] = js.native
   def filterObjects(objectLayer: ObjectLayer, callback: TilemapFilterCallback, context: js.Object): js.Array[GameObject] = js.native
+  
   /**
     * For each tile in the given rectangular area (in tile coordinates) of the layer, run the given
     * filter callback function. Any tiles that pass the filter test (i.e. where the callback returns
@@ -543,6 +481,7 @@ trait Tilemap extends js.Object {
     filteringOptions: js.UndefOr[FilteringOptions],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): js.Array[Tile] = js.native
+  
   /**
     * Searches the entire map layer for the first tile matching the given index, then returns that Tile
     * object. If no match is found, it returns null. The search starts from the top-left tile and
@@ -590,6 +529,7 @@ trait Tilemap extends js.Object {
   def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: DynamicTilemapLayer): Tile = js.native
   def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: StaticTilemapLayer): Tile = js.native
   def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: integer): Tile = js.native
+  
   def findObject(objectLayer: String, callback: TilemapFindCallback): GameObject = js.native
   def findObject(objectLayer: String, callback: TilemapFindCallback, context: js.Object): GameObject = js.native
   /**
@@ -602,6 +542,7 @@ trait Tilemap extends js.Object {
     */
   def findObject(objectLayer: ObjectLayer, callback: TilemapFindCallback): GameObject = js.native
   def findObject(objectLayer: ObjectLayer, callback: TilemapFindCallback, context: js.Object): GameObject = js.native
+  
   /**
     * Find the first tile in the given rectangular area (in tile coordinates) of the layer that
     * satisfies the provided testing function. I.e. finds the first tile for which `callback` returns
@@ -626,6 +567,7 @@ trait Tilemap extends js.Object {
     filteringOptions: js.UndefOr[FilteringOptions],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tile = js.native
+  
   /**
     * For each tile in the given rectangular area (in tile coordinates) of the layer, run the given
     * callback. Similar to Array.prototype.forEach in vanilla JS.
@@ -650,15 +592,23 @@ trait Tilemap extends js.Object {
     filteringOptions: js.UndefOr[FilteringOptions],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
+  /**
+    * The format of the map data.
+    */
+  var format: Double = js.native
+  
   /**
     * Gets the image layer index based on its name.
     * @param name The name of the image to get.
     */
   def getImageIndex(name: String): integer = js.native
+  
   /**
     * Return a list of all valid imagelayer names loaded in this Tilemap.
     */
   def getImageLayerNames(): js.Array[String] = js.native
+  
   /**
     * Internally used. Returns the index of the object in one of the Tilemaps arrays whose name
     * property matches the given `name`.
@@ -666,6 +616,7 @@ trait Tilemap extends js.Object {
     * @param name The name of the array element to get.
     */
   def getIndex(location: js.Array[_], name: String): Double = js.native
+  
   /**
     * Gets the LayerData from this.layers that is associated with `layer`, or null if an invalid
     * `layer` is given.
@@ -678,6 +629,7 @@ trait Tilemap extends js.Object {
   def getLayer(layer: DynamicTilemapLayer): LayerData = js.native
   def getLayer(layer: StaticTilemapLayer): LayerData = js.native
   def getLayer(layer: integer): LayerData = js.native
+  
   /**
     * Gets the LayerData index of the given `layer` within this.layers, or null if an invalid
     * `layer` is given.
@@ -690,12 +642,14 @@ trait Tilemap extends js.Object {
   def getLayerIndex(layer: DynamicTilemapLayer): integer = js.native
   def getLayerIndex(layer: StaticTilemapLayer): integer = js.native
   def getLayerIndex(layer: integer): integer = js.native
+  
   /**
     * Gets the index of the LayerData within this.layers that has the given `name`, or null if an
     * invalid `name` is given.
     * @param name The name of the layer to get.
     */
   def getLayerIndexByName(name: String): integer = js.native
+  
   /**
     * Gets the ObjectLayer from this.objects that has the given `name`, or null if no ObjectLayer
     * is found with that name.
@@ -703,10 +657,12 @@ trait Tilemap extends js.Object {
     */
   def getObjectLayer(): ObjectLayer = js.native
   def getObjectLayer(name: String): ObjectLayer = js.native
+  
   /**
     * Return a list of all valid objectgroup names loaded in this Tilemap.
     */
   def getObjectLayerNames(): js.Array[String] = js.native
+  
   /**
     * Gets a tile at the given tile coordinates from the given layer.
     * If no layer specified, the map's current layer is used.
@@ -725,6 +681,7 @@ trait Tilemap extends js.Object {
   def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: DynamicTilemapLayer): Tile = js.native
   def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: StaticTilemapLayer): Tile = js.native
   def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: integer): Tile = js.native
+  
   /**
     * Gets a tile at the given world coordinates from the given layer.
     * If no layer specified, the map's current layer is used.
@@ -808,10 +765,12 @@ trait Tilemap extends js.Object {
   def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: DynamicTilemapLayer): Tile = js.native
   def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: StaticTilemapLayer): Tile = js.native
   def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: integer): Tile = js.native
+  
   /**
     * Return a list of all valid tilelayer names loaded in this Tilemap.
     */
   def getTileLayerNames(): js.Array[String] = js.native
+  
   /**
     * Gets the tiles in the given rectangular area (in tile coordinates) of the layer.
     * If no layer specified, the maps current layer is used.
@@ -830,6 +789,7 @@ trait Tilemap extends js.Object {
     filteringOptions: js.UndefOr[FilteringOptions],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): js.Array[Tile] = js.native
+  
   /**
     * Gets the tiles that overlap with the given shape in the given layer. The shape must be a Circle,
     * Line, Rectangle or Triangle. The shape should be in world coordinates.
@@ -845,6 +805,7 @@ trait Tilemap extends js.Object {
     camera: js.UndefOr[Camera],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): js.Array[Tile] = js.native
+  
   /**
     * Gets the tiles in the given rectangular area (in world coordinates) of the layer.
     * If no layer specified, the maps current layer is used.
@@ -1018,17 +979,20 @@ trait Tilemap extends js.Object {
     camera: Camera,
     layer: integer
   ): js.Array[Tile] = js.native
+  
   /**
     * Gets the Tileset that has the given `name`, or null if an invalid `name` is given.
     * @param name The name of the Tileset to get.
     */
   def getTileset(name: String): Tileset = js.native
+  
   /**
     * Gets the index of the Tileset within this.tilesets that has the given `name`, or null if an
     * invalid `name` is given.
     * @param name The name of the Tileset to get.
     */
   def getTilesetIndex(name: String): integer = js.native
+  
   /**
     * Checks if there is a tile at the given location (in tile coordinates) in the given layer. Returns
     * false if there is no tile or if the tile at that location has an index of -1.
@@ -1043,6 +1007,7 @@ trait Tilemap extends js.Object {
   def hasTileAt(tileX: integer, tileY: integer, layer: DynamicTilemapLayer): Boolean = js.native
   def hasTileAt(tileX: integer, tileY: integer, layer: StaticTilemapLayer): Boolean = js.native
   def hasTileAt(tileX: integer, tileY: integer, layer: integer): Boolean = js.native
+  
   /**
     * Checks if there is a tile at the given location (in world coordinates) in the given layer. Returns
     * false if there is no tile or if the tile at that location has an index of -1.
@@ -1063,6 +1028,50 @@ trait Tilemap extends js.Object {
   def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: DynamicTilemapLayer): Boolean = js.native
   def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: StaticTilemapLayer): Boolean = js.native
   def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: integer): Boolean = js.native
+  
+  /**
+    * The height of the map (in tiles).
+    */
+  var height: Double = js.native
+  
+  /**
+    * The height of the map in pixels based on height * tileHeight.
+    */
+  var heightInPixels: Double = js.native
+  
+  var imageCollections: js.Array[ImageCollection] = js.native
+  
+  /**
+    * An array of Tiled Image Layers.
+    */
+  var images: js.Array[_] = js.native
+  
+  /**
+    * The LayerData object that is currently selected in the map. You can set this property using
+    * any type supported by setLayer.
+    */
+  var layer: LayerData = js.native
+  
+  /**
+    * An array of Tilemap layer data.
+    */
+  var layers: js.Array[LayerData] = js.native
+  
+  /**
+    * An array of ObjectLayer instances parsed from Tiled object layers.
+    */
+  var objects: js.Array[ObjectLayer] = js.native
+  
+  /**
+    * The orientation of the map data (as specified in Tiled), usually 'orthogonal'.
+    */
+  var orientation: String = js.native
+  
+  /**
+    * Map specific properties as specified in Tiled.
+    */
+  var properties: js.Object = js.native
+  
   def putTileAt(tile: Tile, tileX: integer, tileY: integer): Tile = js.native
   def putTileAt(
     tile: Tile,
@@ -1158,6 +1167,7 @@ trait Tilemap extends js.Object {
     layer: StaticTilemapLayer
   ): Tile = js.native
   def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: integer): Tile = js.native
+  
   def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double): Tile = js.native
   def putTileAtWorldXY(
     tile: Tile,
@@ -1449,6 +1459,7 @@ trait Tilemap extends js.Object {
     camera: Camera,
     layer: integer
   ): Tile = js.native
+  
   /**
     * Puts an array of tiles or a 2D array of tiles at the given tile coordinates in the specified
     * layer. The array can be composed of either tile indexes or Tile objects. If you pass in a Tile,
@@ -1527,6 +1538,7 @@ trait Tilemap extends js.Object {
     recalculateFaces: Boolean,
     layer: integer
   ): Tilemap = js.native
+  
   /**
     * Randomizes the indexes of a rectangular region of tiles (in tile coordinates) within the
     * specified layer. Each tile will receive a new index. If an array of indexes is passed in, then
@@ -1551,11 +1563,13 @@ trait Tilemap extends js.Object {
     indexes: js.UndefOr[js.Array[integer]],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
   /**
     * Removes all layers from this Tilemap and destroys any associated StaticTilemapLayers or
     * DynamicTilemapLayers.
     */
   def removeAllLayers(): Tilemap = js.native
+  
   /**
     * Removes the given TilemapLayer from this Tilemap without destroying it.
     * 
@@ -1567,6 +1581,7 @@ trait Tilemap extends js.Object {
   def removeLayer(layer: DynamicTilemapLayer): Tilemap = js.native
   def removeLayer(layer: StaticTilemapLayer): Tilemap = js.native
   def removeLayer(layer: integer): Tilemap = js.native
+  
   def removeTile(tiles: js.Array[Tile]): js.Array[Tile] = js.native
   def removeTile(tiles: js.Array[Tile], replaceIndex: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): js.Array[Tile] = js.native
   def removeTile(tiles: js.Array[Tile], replaceIndex: integer): js.Array[Tile] = js.native
@@ -1584,6 +1599,7 @@ trait Tilemap extends js.Object {
   def removeTile(tiles: Tile, replaceIndex: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): js.Array[Tile] = js.native
   def removeTile(tiles: Tile, replaceIndex: integer): js.Array[Tile] = js.native
   def removeTile(tiles: Tile, replaceIndex: integer, recalculateFaces: Boolean): js.Array[Tile] = js.native
+  
   /**
     * Removes the tile at the given tile coordinates in the specified layer and updates the layer's
     * collision information.
@@ -1711,6 +1727,7 @@ trait Tilemap extends js.Object {
     recalculateFaces: Boolean,
     layer: integer
   ): Tile = js.native
+  
   /**
     * Removes the tile at the given world coordinates in the specified layer and updates the layer's
     * collision information.
@@ -2017,6 +2034,7 @@ trait Tilemap extends js.Object {
     camera: Camera,
     layer: integer
   ): Tile = js.native
+  
   /**
     * Draws a debug representation of the layer to the given Graphics. This is helpful when you want to
     * get a quick idea of which of your tiles are colliding and which have interesting faces. The tiles
@@ -2033,6 +2051,7 @@ trait Tilemap extends js.Object {
   def renderDebug(graphics: Graphics, styleConfig: StyleConfig, layer: DynamicTilemapLayer): Tilemap = js.native
   def renderDebug(graphics: Graphics, styleConfig: StyleConfig, layer: StaticTilemapLayer): Tilemap = js.native
   def renderDebug(graphics: Graphics, styleConfig: StyleConfig, layer: integer): Tilemap = js.native
+  
   /**
     * Draws a debug representation of all layers within this Tilemap to the given Graphics object.
     * 
@@ -2043,6 +2062,21 @@ trait Tilemap extends js.Object {
     * @param styleConfig An object specifying the colors to use for the debug drawing.
     */
   def renderDebugFull(graphics: Graphics, styleConfig: StyleConfig): Tilemap = js.native
+  
+  /**
+    * The render (draw) order of the map data (as specified in Tiled), usually 'right-down'.
+    * 
+    * The draw orders are:
+    * 
+    * right-down
+    * left-down
+    * right-up
+    * left-up
+    * 
+    * This can be changed via the `setRenderOrder` method.
+    */
+  var renderOrder: String = js.native
+  
   /**
     * Scans the given rectangular area (given in tile coordinates) for tiles with an index matching
     * `findIndex` and updates their index to match `newIndex`. This only modifies the index and does
@@ -2067,6 +2101,9 @@ trait Tilemap extends js.Object {
     height: js.UndefOr[integer],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
+  var scene: Scene = js.native
+  
   /**
     * Sets the base tile size for the map. Note: this does not necessarily match the tileWidth and
     * tileHeight for all layers. This also updates the base size on all tiles across all layers.
@@ -2074,6 +2111,7 @@ trait Tilemap extends js.Object {
     * @param tileHeight The height of the tiles the map uses for calculations.
     */
   def setBaseTileSize(tileWidth: integer, tileHeight: integer): Tilemap = js.native
+  
   /**
     * Sets collision on the given tile or tiles within a layer by index. You can pass in either a
     * single numeric index or an array of indexes: [2, 3, 15, 20]. The `collides` parameter controls if
@@ -2093,6 +2131,7 @@ trait Tilemap extends js.Object {
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer],
     updateLayer: js.UndefOr[Boolean]
   ): Tilemap = js.native
+  
   /**
     * Sets collision on a range of tiles in a layer whose index is between the specified `start` and
     * `stop` (inclusive). Calling this with a start value of 10 and a stop value of 14 would set
@@ -2210,6 +2249,7 @@ trait Tilemap extends js.Object {
     layer: StaticTilemapLayer
   ): Tilemap = js.native
   def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+  
   /**
     * Sets collision on all tiles in the given layer, except for tiles that have an index specified in
     * the given array. The `collides` parameter controls if collision will be enabled (true) or
@@ -2311,6 +2351,7 @@ trait Tilemap extends js.Object {
     layer: StaticTilemapLayer
   ): Tilemap = js.native
   def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+  
   /**
     * Sets collision on the tiles within a layer by checking tile properties. If a tile has a property
     * that matches the given properties object, its collision flag will be set. The `collides`
@@ -2406,6 +2447,7 @@ trait Tilemap extends js.Object {
   def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
   def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
   def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+  
   /**
     * Sets collision on the tiles within a layer by checking each tile's collision group data
     * (typically defined in Tiled within the tileset collision editor). If any objects are found within
@@ -2445,6 +2487,7 @@ trait Tilemap extends js.Object {
   def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
   def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
   def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+  
   /**
     * Sets the current layer to the LayerData associated with `layer`.
     * @param layer The name of the
@@ -2456,6 +2499,7 @@ trait Tilemap extends js.Object {
   def setLayer(layer: DynamicTilemapLayer): Tilemap = js.native
   def setLayer(layer: StaticTilemapLayer): Tilemap = js.native
   def setLayer(layer: integer): Tilemap = js.native
+  
   /**
     * Sets the tile size for a specific `layer`. Note: this does not necessarily match the map's
     * tileWidth and tileHeight for all layers. This will set the tile size for the layer and any
@@ -2471,6 +2515,7 @@ trait Tilemap extends js.Object {
   def setLayerTileSize(tileWidth: integer, tileHeight: integer, layer: DynamicTilemapLayer): Tilemap = js.native
   def setLayerTileSize(tileWidth: integer, tileHeight: integer, layer: StaticTilemapLayer): Tilemap = js.native
   def setLayerTileSize(tileWidth: integer, tileHeight: integer, layer: integer): Tilemap = js.native
+  
   def setRenderOrder(renderOrder: String): this.type = js.native
   /**
     * Sets the rendering (draw) order of the tiles in this map.
@@ -2496,6 +2541,7 @@ trait Tilemap extends js.Object {
     * @param renderOrder The render (draw) order value. Either an integer between 0 and 3, or a string: 'right-down', 'left-down', 'right-up' or 'left-up'.
     */
   def setRenderOrder(renderOrder: integer): this.type = js.native
+  
   def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object): Tilemap = js.native
   def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object, layer: String): Tilemap = js.native
   def setTileIndexCallback(
@@ -2523,6 +2569,7 @@ trait Tilemap extends js.Object {
   def setTileIndexCallback(indexes: integer, callback: js.Function, callbackContext: js.Object, layer: DynamicTilemapLayer): Tilemap = js.native
   def setTileIndexCallback(indexes: integer, callback: js.Function, callbackContext: js.Object, layer: StaticTilemapLayer): Tilemap = js.native
   def setTileIndexCallback(indexes: integer, callback: js.Function, callbackContext: js.Object, layer: integer): Tilemap = js.native
+  
   /**
     * Sets a collision callback for the given rectangular area (in tile coordinates) within the layer.
     * If a callback is already set for the tile index it will be replaced. Set the callback to null to
@@ -2618,6 +2665,7 @@ trait Tilemap extends js.Object {
     callbackContext: js.Object,
     layer: integer
   ): Tilemap = js.native
+  
   /**
     * Shuffles the tiles in a rectangular region (specified in tile coordinates) within the given
     * layer. It will only randomize the tiles in that area, so if they're all the same nothing will
@@ -2639,6 +2687,7 @@ trait Tilemap extends js.Object {
     height: js.UndefOr[integer],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
   /**
     * Scans the given rectangular area (given in tile coordinates) for tiles with an index matching
     * `indexA` and swaps then with `indexB`. This only modifies the index and does not change collision
@@ -2663,6 +2712,13 @@ trait Tilemap extends js.Object {
     height: js.UndefOr[integer],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
+  /**
+    * The base height of a tile in pixels. Note that individual layers may have a different
+    * tile height.
+    */
+  var tileHeight: integer = js.native
+  
   /**
     * Converts from tile X coordinates (tile units) to world X coordinates (pixels), factoring in the
     * layers position, scale and scroll.
@@ -2682,6 +2738,7 @@ trait Tilemap extends js.Object {
   def tileToWorldX(tileX: integer, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
   def tileToWorldX(tileX: integer, camera: Camera, layer: StaticTilemapLayer): Double = js.native
   def tileToWorldX(tileX: integer, camera: Camera, layer: integer): Double = js.native
+  
   /**
     * Converts from tile XY coordinates (tile units) to world XY coordinates (pixels), factoring in the
     * layers position, scale and scroll. This will return a new Vector2 object or update the given
@@ -2762,6 +2819,7 @@ trait Tilemap extends js.Object {
   def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera, layer: DynamicTilemapLayer): Vector2 = js.native
   def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera, layer: StaticTilemapLayer): Vector2 = js.native
   def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera, layer: integer): Vector2 = js.native
+  
   /**
     * Converts from tile Y coordinates (tile units) to world Y coordinates (pixels), factoring in the
     * layers position, scale and scroll.
@@ -2782,6 +2840,23 @@ trait Tilemap extends js.Object {
   def tileToWorldY(tileY: integer, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
   def tileToWorldY(tileY: integer, camera: Camera, layer: StaticTilemapLayer): Double = js.native
   def tileToWorldY(tileY: integer, camera: Camera, layer: integer): Double = js.native
+  
+  /**
+    * The base width of a tile in pixels. Note that individual layers may have a different tile
+    * width.
+    */
+  var tileWidth: integer = js.native
+  
+  /**
+    * An array of Tilesets used in the map.
+    */
+  var tilesets: js.Array[Tileset] = js.native
+  
+  /**
+    * The version of the map data (as specified in Tiled, usually 1).
+    */
+  var version: Double = js.native
+  
   /**
     * Randomizes the indexes of a rectangular region of tiles (in tile coordinates) within the
     * specified layer. Each tile will receive a new index. New indexes are drawn from the given
@@ -2816,6 +2891,17 @@ trait Tilemap extends js.Object {
     weightedIndexes: js.UndefOr[js.Array[js.Object]],
     layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer]
   ): Tilemap = js.native
+  
+  /**
+    * The width of the map (in tiles).
+    */
+  var width: Double = js.native
+  
+  /**
+    * The width of the map in pixels based on width * tileWidth.
+    */
+  var widthInPixels: Double = js.native
+  
   /**
     * Converts from world X coordinates (pixels) to tile X coordinates (tile units), factoring in the
     * layers position, scale and scroll.
@@ -2872,6 +2958,7 @@ trait Tilemap extends js.Object {
   def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
   def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: StaticTilemapLayer): Double = js.native
   def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: integer): Double = js.native
+  
   /**
     * Converts from world XY coordinates (pixels) to tile XY coordinates (tile units), factoring in the
     * layers position, scale and scroll. This will return a new Vector2 object or update the given
@@ -3167,6 +3254,7 @@ trait Tilemap extends js.Object {
     camera: Camera,
     layer: integer
   ): Vector2 = js.native
+  
   /**
     * Converts from world Y coordinates (pixels) to tile Y coordinates (tile units), factoring in the
     * layers position, scale and scroll.
@@ -3223,4 +3311,3 @@ trait Tilemap extends js.Object {
   def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera, layer: StaticTilemapLayer): Double = js.native
   def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera, layer: integer): Double = js.native
 }
-

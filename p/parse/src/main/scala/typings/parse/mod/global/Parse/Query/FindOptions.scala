@@ -6,7 +6,7 @@ import typings.parse.mod.global.Parse.SuccessOption
 import typings.parse.mod.global.Parse.UseMasterKeyOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FindOptions
@@ -14,12 +14,11 @@ trait FindOptions
      with ErrorOption
      with SessionTokenOption
      with UseMasterKeyOption
-
 object FindOptions {
+  
   @scala.inline
   def apply(): FindOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOptions]
   }
 }
-

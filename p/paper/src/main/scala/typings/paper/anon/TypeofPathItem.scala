@@ -6,10 +6,11 @@ import typings.paper.paper.Path
 import typings.paper.paper.PathItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPathItem extends Instantiable0[PathItem] {
+  
   /** 
     * Creates a path item from the given object, determining if the
     * contained information describes a plain path or a compound-path with
@@ -42,4 +43,3 @@ trait TypeofPathItem extends Instantiable0[PathItem] {
     */
   def create(segments: js.Array[js.Array[Double]]): Path | CompoundPath = js.native
 }
-

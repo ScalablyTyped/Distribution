@@ -2,11 +2,12 @@ package typings.awsSdkClientCodecommitNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/types/CreateRepositoryExceptionsUnion", JSImport.Namespace)
 @js.native
 object createRepositoryExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientCodecommitNode.typesRepositoryNameExistsExceptionMod.RepositoryNameExistsException
     - typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException
@@ -20,6 +21,4 @@ object createRepositoryExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException
   */
   trait CreateRepositoryExceptionsUnion extends js.Object
-  
 }
-

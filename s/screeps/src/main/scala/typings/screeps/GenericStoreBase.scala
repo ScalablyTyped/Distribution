@@ -2,10 +2,11 @@ package typings.screeps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GenericStoreBase extends js.Object {
+  
   /**
     * Returns capacity of this store for the specified resource. For a general purpose store, it returns total capacity if `resource` is undefined.
     * @param resource The type of the resource.
@@ -13,6 +14,7 @@ trait GenericStoreBase extends js.Object {
     */
   def getCapacity(): Double | Null = js.native
   def getCapacity(resource: ResourceConstant): Double | Null = js.native
+  
   /**
     * Returns free capacity for the store. For a limited store, it returns the capacity available for the specified resource if `resource` is defined and valid for this store.
     * @param resource The type of the resource.
@@ -20,6 +22,7 @@ trait GenericStoreBase extends js.Object {
     */
   def getFreeCapacity(): Double | Null = js.native
   def getFreeCapacity(resource: ResourceConstant): Double | Null = js.native
+  
   /**
     * Returns the capacity used by the specified resource, or total used capacity for general purpose stores if `resource` is undefined.
     * @param resource The type of the resource.
@@ -28,4 +31,3 @@ trait GenericStoreBase extends js.Object {
   def getUsedCapacity(): Double | Null = js.native
   def getUsedCapacity(resource: ResourceConstant): Double | Null = js.native
 }
-

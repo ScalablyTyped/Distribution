@@ -12,7 +12,7 @@ IORedis store for node-cache-manager
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 261413 |
+| # downloads        | 286454 |
 | # stars            | 1 |
 
 ## Links

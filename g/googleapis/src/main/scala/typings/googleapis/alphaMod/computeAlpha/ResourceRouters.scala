@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Routers")
 @js.native
 class ResourceRouters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.routers.aggregatedList
     * @desc Retrieves an aggregated list of routers.
@@ -48,6 +48,9 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouterAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.routers.delete
     * @desc Deletes the specified Router resource.
@@ -79,6 +82,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.routers.get
     * @desc Returns the specified Router resource. Gets a list of available
@@ -110,6 +114,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouter]
   ): Unit = js.native
+  
   /**
     * compute.routers.getNatMappingInfo
     * @desc Retrieves runtime Nat mapping information of VM endpoints.
@@ -148,6 +153,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVmEndpointNatMappingsList]
   ): Unit = js.native
+  
   /**
     * compute.routers.getRouterStatus
     * @desc Retrieves runtime information of the specified router.
@@ -181,6 +187,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouterStatusResponse]
   ): Unit = js.native
+  
   /**
     * compute.routers.insert
     * @desc Creates a Router resource in the specified project and region using
@@ -213,6 +220,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.routers.list
     * @desc Retrieves a list of Router resources available to the specified
@@ -247,6 +255,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouterList]
   ): Unit = js.native
+  
   /**
     * compute.routers.patch
     * @desc Patches the specified Router resource with the data included in the
@@ -281,6 +290,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.routers.preview
     * @desc Preview fields auto-generated during router create and update
@@ -313,6 +323,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoutersPreviewResponse]
   ): Unit = js.native
+  
   /**
     * compute.routers.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -347,6 +358,7 @@ class ResourceRouters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.routers.update
     * @desc Updates the specified Router resource with the data included in the
@@ -381,4 +393,3 @@ class ResourceRouters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

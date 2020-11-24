@@ -7,9 +7,94 @@ import typings.reactBeautifulDnd.mod.InOutAnimationMode
 import typings.reactBeautifulDnd.mod.MovementMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBeautifulDndStrings {
+  
+  @scala.inline
+  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
+  
+  @scala.inline
+  def COLLECTING: COLLECTING = "COLLECTING".asInstanceOf[COLLECTING]
+  
+  @scala.inline
+  def COMBINE: COMBINE = "COMBINE".asInstanceOf[COMBINE]
+  
+  @scala.inline
+  def DRAGGING: DRAGGING = "DRAGGING".asInstanceOf[DRAGGING]
+  
+  @scala.inline
+  def DROP: DROP = "DROP".asInstanceOf[DROP]
+  
+  @scala.inline
+  def DROP_ANIMATING: DROP_ANIMATING = "DROP_ANIMATING".asInstanceOf[DROP_ANIMATING]
+  
+  @scala.inline
+  def DROP_PENDING: DROP_PENDING = "DROP_PENDING".asInstanceOf[DROP_PENDING]
+  
+  @scala.inline
+  def FLUID: FLUID = "FLUID".asInstanceOf[FLUID]
+  
+  @scala.inline
+  def IDLE: IDLE = "IDLE".asInstanceOf[IDLE]
+  
+  @scala.inline
+  def REORDER: REORDER = "REORDER".asInstanceOf[REORDER]
+  
+  @scala.inline
+  def SNAP: SNAP = "SNAP".asInstanceOf[SNAP]
+  
+  @scala.inline
+  def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def virtual: virtual = "virtual".asInstanceOf[virtual]
+  
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
+  
   @js.native
   sealed trait CANCEL extends DropReason
   
@@ -93,62 +178,4 @@ object reactBeautifulDndStrings {
   
   @js.native
   sealed trait y extends js.Object
-  
-  @scala.inline
-  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
-  @scala.inline
-  def COLLECTING: COLLECTING = "COLLECTING".asInstanceOf[COLLECTING]
-  @scala.inline
-  def COMBINE: COMBINE = "COMBINE".asInstanceOf[COMBINE]
-  @scala.inline
-  def DRAGGING: DRAGGING = "DRAGGING".asInstanceOf[DRAGGING]
-  @scala.inline
-  def DROP: DROP = "DROP".asInstanceOf[DROP]
-  @scala.inline
-  def DROP_ANIMATING: DROP_ANIMATING = "DROP_ANIMATING".asInstanceOf[DROP_ANIMATING]
-  @scala.inline
-  def DROP_PENDING: DROP_PENDING = "DROP_PENDING".asInstanceOf[DROP_PENDING]
-  @scala.inline
-  def FLUID: FLUID = "FLUID".asInstanceOf[FLUID]
-  @scala.inline
-  def IDLE: IDLE = "IDLE".asInstanceOf[IDLE]
-  @scala.inline
-  def REORDER: REORDER = "REORDER".asInstanceOf[REORDER]
-  @scala.inline
-  def SNAP: SNAP = "SNAP".asInstanceOf[SNAP]
-  @scala.inline
-  def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def virtual: virtual = "virtual".asInstanceOf[virtual]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
 }
-

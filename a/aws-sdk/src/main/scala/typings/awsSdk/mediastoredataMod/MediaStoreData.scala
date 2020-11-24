@@ -1,17 +1,19 @@
 package typings.awsSdk.mediastoredataMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaStoreData extends Service {
+  
   @JSName("config")
   var config_MediaStoreData: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deletes an object at the specified path.
     */
@@ -25,6 +27,7 @@ trait MediaStoreData extends Service {
     params: DeleteObjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteObjectResponse, Unit]
   ): Request[DeleteObjectResponse, AWSError] = js.native
+  
   /**
     * Gets the headers for an object at the specified path.
     */
@@ -38,6 +41,7 @@ trait MediaStoreData extends Service {
     params: DescribeObjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeObjectResponse, Unit]
   ): Request[DescribeObjectResponse, AWSError] = js.native
+  
   /**
     * Downloads the object at the specified path. If the object’s upload availability is set to streaming, AWS Elemental MediaStore downloads the object even if it’s still uploading the object.
     */
@@ -51,6 +55,7 @@ trait MediaStoreData extends Service {
     params: GetObjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetObjectResponse, Unit]
   ): Request[GetObjectResponse, AWSError] = js.native
+  
   /**
     * Provides a list of metadata entries about folders and objects in the specified folder.
     */
@@ -64,6 +69,7 @@ trait MediaStoreData extends Service {
     params: ListItemsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListItemsResponse, Unit]
   ): Request[ListItemsResponse, AWSError] = js.native
+  
   /**
     * Uploads an object to the specified path. Object sizes are limited to 25 MB for standard upload availability and 10 MB for streaming upload availability.
     */
@@ -78,4 +84,3 @@ trait MediaStoreData extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutObjectResponse, Unit]
   ): Request[PutObjectResponse, AWSError] = js.native
 }
-

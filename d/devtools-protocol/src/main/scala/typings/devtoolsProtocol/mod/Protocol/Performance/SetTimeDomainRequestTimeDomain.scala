@@ -4,18 +4,18 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.threadTicks
 import typings.devtoolsProtocol.devtoolsProtocolStrings.timeTicks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.timeTicks
   - typings.devtoolsProtocol.devtoolsProtocolStrings.threadTicks
 */
 trait SetTimeDomainRequestTimeDomain extends js.Object
-
 object SetTimeDomainRequestTimeDomain {
+  
   @scala.inline
   def ThreadTicks: threadTicks = "threadTicks".asInstanceOf[threadTicks]
+  
   @scala.inline
   def TimeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
 }
-

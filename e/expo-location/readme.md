@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-location
 
-Typings are for version 8.3.0
+Typings are for version 9.0.1
 
 ## Library description:
 Allows reading geolocation information from the device. Your app can poll for the current location or subscribe to location update events.

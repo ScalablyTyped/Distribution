@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.videoJs.mod.videojs.Browser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A suite of browser and device tests from {@link browser}.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("video.js/dist/alt/video.core", "browser")
 @js.native
 object browser extends TopLevel[Browser]
-

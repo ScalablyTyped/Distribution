@@ -13,7 +13,7 @@ import typings.three.constantsMod.Wrapping
 import typings.three.mod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTexture
@@ -30,7 +30,8 @@ trait TypeofTexture
       /* encoding */ js.UndefOr[TextureEncoding], 
       Texture
     ] {
+  
   var DEFAULT_IMAGE: js.Any = js.native
+  
   var DEFAULT_MAPPING: js.Any = js.native
 }
-

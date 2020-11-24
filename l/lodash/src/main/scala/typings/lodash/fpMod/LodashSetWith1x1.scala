@@ -4,10 +4,11 @@ import typings.lodash.mod.PropertyPath
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashSetWith1x1[T] extends js.Object {
+  
   def apply(path: PropertyPath): LodashSetWith1x3[T] = js.native
   def apply(path: PropertyPath, value: js.Any): LodashSetWith1x7[T] = js.native
   def apply(path: PropertyPath, value: js.Any, `object`: T): T = js.native
@@ -16,4 +17,3 @@ trait LodashSetWith1x1[T] extends js.Object {
   def apply(path: __, value: js.Any, `object`: T): LodashSetWith1x13[T] = js.native
   def apply(path: __, value: __, `object`: T): LodashSetWith1x9[T] = js.native
 }
-

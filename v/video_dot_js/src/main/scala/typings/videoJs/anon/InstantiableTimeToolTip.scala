@@ -7,7 +7,7 @@ import typings.videoJs.mod.videojs.Player
 import typings.videoJs.mod.videojs.TimeToolTip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableTimeToolTip
@@ -22,4 +22,3 @@ trait InstantiableTimeToolTip
   */
 Instantiable1[/* player */ Player, TimeToolTip]
      with Instantiable2[/* player */ Player, /* options */ ComponentOptions, TimeToolTip]
-

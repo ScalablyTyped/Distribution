@@ -9,7 +9,7 @@ import org.scalablytyped.runtime.Instantiable5
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChartistSvgStatic
@@ -41,10 +41,11 @@ trait ChartistSvgStatic
       /* insertFirst */ Boolean, 
       IChartistSvg
     ] {
+  
   var Easing: ChartistEasingStatic = js.native
+  
   /**
     * This method checks for support of a given SVG feature like Extensibility, SVG-animation or the like. Check http://www.w3.org/TR/SVG11/feature for a detailed list.
     */
   def isSupported(feature: String): Boolean = js.native
 }
-

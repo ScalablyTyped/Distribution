@@ -11,8 +11,8 @@ Returns `true` if the given string looks like a glob pattern or an extglob patte
 | Full name          | is-glob |
 | Keywords           | bash, braces, check, exec, expression, extglob, glob, globbing, globstar, is, match, matches, pattern, regex, regular, string, test |
 | # releases         | 2 |
-| # dependents       | 309 |
-| # downloads        | 1055304912 |
+| # dependents       | 376 |
+| # downloads        | 1347927657 |
 | # stars            | 5 |
 
 ## Links

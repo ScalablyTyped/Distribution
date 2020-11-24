@@ -2,7 +2,7 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SecurityContext holds security configuration that will be applied to a
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaSecurityContext extends js.Object {
+  
   /**
     * AllowPrivilegeEscalation controls whether a process can gain more
     * privileges than its parent process. This bool directly controls if the
@@ -20,21 +21,25 @@ trait SchemaSecurityContext extends js.Object {
     * Privileged 2) has CAP_SYS_ADMIN +optional
     */
   var allowPrivilegeEscalation: js.UndefOr[Boolean] = js.native
+  
   /**
     * The capabilities to add/drop when running containers. Defaults to the
     * default set of capabilities granted by the container runtime. +optional
     */
   var capabilities: js.UndefOr[SchemaCapabilities] = js.native
+  
   /**
     * Run container in privileged mode. Processes in privileged containers are
     * essentially equivalent to root on the host. Defaults to false. +optional
     */
   var privileged: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether this container has a read-only root filesystem. Default is false.
     * +optional
     */
   var readOnlyRootFilesystem: js.UndefOr[Boolean] = js.native
+  
   /**
     * The GID to run the entrypoint of the container process. Uses runtime
     * default if unset. May also be set in PodSecurityContext.  If set in both
@@ -42,6 +47,7 @@ trait SchemaSecurityContext extends js.Object {
     * SecurityContext takes precedence. +optional
     */
   var runAsGroup: js.UndefOr[String] = js.native
+  
   /**
     * Indicates that the container must run as a non-root user. If true, the
     * Kubelet will validate the image at runtime to ensure that it does not run
@@ -52,6 +58,7 @@ trait SchemaSecurityContext extends js.Object {
     * precedence. +optional
     */
   var runAsNonRoot: js.UndefOr[Boolean] = js.native
+  
   /**
     * The UID to run the entrypoint of the container process. Defaults to user
     * specified in image metadata if unspecified. May also be set in
@@ -60,6 +67,7 @@ trait SchemaSecurityContext extends js.Object {
     * precedence. +optional
     */
   var runAsUser: js.UndefOr[String] = js.native
+  
   /**
     * The SELinux context to be applied to the container. If unspecified, the
     * container runtime will allocate a random SELinux context for each
@@ -69,57 +77,75 @@ trait SchemaSecurityContext extends js.Object {
     */
   var seLinuxOptions: js.UndefOr[SchemaSELinuxOptions] = js.native
 }
-
 object SchemaSecurityContext {
+  
   @scala.inline
   def apply(): SchemaSecurityContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityContext]
   }
+  
   @scala.inline
   implicit class SchemaSecurityContextOps[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllowPrivilegeEscalation(value: Boolean): Self = this.set("allowPrivilegeEscalation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowPrivilegeEscalation: Self = this.set("allowPrivilegeEscalation", js.undefined)
+    
     @scala.inline
     def setCapabilities(value: SchemaCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    
     @scala.inline
     def setPrivileged(value: Boolean): Self = this.set("privileged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrivileged: Self = this.set("privileged", js.undefined)
+    
     @scala.inline
     def setReadOnlyRootFilesystem(value: Boolean): Self = this.set("readOnlyRootFilesystem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReadOnlyRootFilesystem: Self = this.set("readOnlyRootFilesystem", js.undefined)
+    
     @scala.inline
     def setRunAsGroup(value: String): Self = this.set("runAsGroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRunAsGroup: Self = this.set("runAsGroup", js.undefined)
+    
     @scala.inline
     def setRunAsNonRoot(value: Boolean): Self = this.set("runAsNonRoot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRunAsNonRoot: Self = this.set("runAsNonRoot", js.undefined)
+    
     @scala.inline
     def setRunAsUser(value: String): Self = this.set("runAsUser", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRunAsUser: Self = this.set("runAsUser", js.undefined)
+    
     @scala.inline
     def setSeLinuxOptions(value: SchemaSELinuxOptions): Self = this.set("seLinuxOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSeLinuxOptions: Self = this.set("seLinuxOptions", js.undefined)
   }
-  
 }
-

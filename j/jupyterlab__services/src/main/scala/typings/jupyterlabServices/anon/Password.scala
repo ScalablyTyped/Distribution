@@ -2,25 +2,49 @@ package typings.jupyterlabServices.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Password extends js.Object {
+  
   /**
     * Whether the request is for a password.
     * If so, the frontend shouldn't echo input.
     */
-  var password: Boolean
+  var password: Boolean = js.native
+  
   /**
     * The text to show at the prompt.
     */
-  var prompt: String
+  var prompt: String = js.native
 }
-
 object Password {
+  
   @scala.inline
   def apply(password: Boolean, prompt: String): Password = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Password]
   }
+  
+  @scala.inline
+  implicit class PasswordOps[Self <: Password] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setPassword(value: Boolean): Self = this.set("password", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+  }
 }
-

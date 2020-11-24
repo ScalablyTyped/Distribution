@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star.form
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object inspection {
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which is able to enhance the {@link
     * com.sun.star.form.component.CommandButton.ButtonType} and {@link com.sun.star.form.component.CommandButton.TargetURL} properties of a {@link
@@ -17,6 +18,7 @@ package object inspection {
     * @see com.sun.star.form.component.CommandButton
     */
   type ButtonNavigationHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which is able to provide properties to bind a form
     * component to a spreadsheet cell.
@@ -33,6 +35,7 @@ package object inspection {
     * @see com.sun.star.uno.XComponentContext.getValueByName
     */
   type CellBindingPropertyHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which provides convenience wrappers for some properties
     * existing at a form component derived from {@link com.sun.star.awt.UnoControlEditModel} .
@@ -49,6 +52,7 @@ package object inspection {
     * @see com.sun.star.form.component.TextField
     */
   type EditPropertyHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which, for a {@link com.sun.star.form.FormComponent} ,
     * provides the script events offered by this form component.
@@ -61,12 +65,14 @@ package object inspection {
     * @see com.sun.star.script.XEventAttacherManager
     */
   type EventHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements the default property handler for all known types of {@link com.sun.star.form.FormComponents} .
     * @see com.sun.star.inspection.XPropertyHandler
     * @see com.sun.star.form.FormComponents
     */
   type FormComponentPropertyHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which provides properties for button controls which
     * support submission of XML forms.
@@ -83,6 +89,7 @@ package object inspection {
     * @see com.sun.star.uno.XComponentContext.getValueByName
     */
   type SubmissionPropertyHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which provides properties related to binding form
     * control models to {@link XForm} bindings.
@@ -102,6 +109,7 @@ package object inspection {
     * @see com.sun.star.uno.XComponentContext.getValueByName
     */
   type XMLFormsPropertyHandler = typings.activexLibreoffice.com_.sun.star.inspection.XPropertyHandler
+  
   /**
     * implements a property handler for use with an {@link com.sun.star.inspection.ObjectInspector} which provides properties related to binding form
     * control models to {@link XForm} bindings and validating the form control content.

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "VpcIpv4CidrBlockAssociation")
 @js.native
@@ -23,11 +23,11 @@ class VpcIpv4CidrBlockAssociation protected ()
   def this(name: String, args: VpcIpv4CidrBlockAssociationArgs) = this()
   def this(name: String, args: VpcIpv4CidrBlockAssociationArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2", "VpcIpv4CidrBlockAssociation")
 @js.native
 object VpcIpv4CidrBlockAssociation extends js.Object {
+  
   /**
     * Get an existing VpcIpv4CidrBlockAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object VpcIpv4CidrBlockAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
   def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
   def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState, opts: CustomResourceOptions): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of VpcIpv4CidrBlockAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean = js.native
 }
-

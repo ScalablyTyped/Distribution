@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "uninstall")
 @js.native
 object uninstall extends js.Object {
+  
   /**
     * Uninstalls optional features according to the specified options. All optional features start out
     * uninstalled, so this is used to undo the actions of `XRegExp.install`.
@@ -28,4 +29,3 @@ object uninstall extends js.Object {
     */
   def apply(options: FeatureOptions): Unit = js.native
 }
-

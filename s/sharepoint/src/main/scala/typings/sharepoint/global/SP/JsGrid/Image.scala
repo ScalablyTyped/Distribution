@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.Image")
 @js.native
@@ -19,4 +19,3 @@ class Image protected ()
     bIsAnimated: Boolean
   ) = this()
 }
-

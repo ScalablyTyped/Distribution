@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.openfin.anon.HttpResponseCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OpenFinWindowStatic
@@ -36,14 +36,15 @@ Instantiable1[/* options */ WindowOption, OpenFinWindow]
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinWindow
     ] {
+  
   /**
     * Returns an instance of the current window.
     * @returns Current window
     */
   def getCurrent(): OpenFinWindow = js.native
+  
   /**
     * Returns a Window object that wraps an existing window.
     */
   def wrap(appUuid: String, windowName: String): OpenFinWindow = js.native
 }
-

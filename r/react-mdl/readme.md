@@ -10,9 +10,9 @@ React Components for Material Design Lite
 | ------------------ | :-------------: |
 | Full name          | react-mdl |
 | Keywords           | react, react-component, mdl, material-design, badge, button, card, checkbox, data-table, fab-button, icon, icon-button, icon-toggle, radio, radio-group, switch, textfield, progress, progress-bar, spinner, slider, tooltip, menu, dropdown, Layout, Drawer, Grid, Tabs |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 17 |
-| # downloads        | 139703 |
+| # downloads        | 131531 |
 | # stars            | 14 |
 
 ## Links

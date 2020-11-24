@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeviceWatcher extends IDeviceWatcher
-
 object DeviceWatcher {
+  
   @scala.inline
   def apply(
     onadded: js.Any,
@@ -23,4 +23,3 @@ object DeviceWatcher {
     __obj.asInstanceOf[DeviceWatcher]
   }
 }
-

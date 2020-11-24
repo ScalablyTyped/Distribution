@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Protection
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Protected Media Path (PMP) server to enable playback of protected content using digital rights management (DRM). */
 @JSGlobal("Windows.Media.Protection.MediaProtectionPMPServer")
@@ -16,4 +16,3 @@ class MediaProtectionPMPServer protected ()
     */
   def this(pProperties: IPropertySet) = this()
 }
-

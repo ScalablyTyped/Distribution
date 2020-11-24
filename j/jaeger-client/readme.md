@@ -4,15 +4,15 @@
 Typings are for version 3.15
 
 ## Library description:
-Jaeger binding for OpenTracing Node
+Jaeger binding for OpenTracing API for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jaeger-client |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 72 |
-| # downloads        | 2374082 |
+| # releases         | 15 |
+| # dependents       | 95 |
+| # downloads        | 3035883 |
 | # stars            | 1 |
 
 ## Links

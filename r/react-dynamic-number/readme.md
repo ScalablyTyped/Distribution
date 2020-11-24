@@ -12,7 +12,7 @@ Highly customizable react component for numbers
 | Keywords           | react, component, number, format, comma, dot, number separator, thousand separator, decimal separator |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 27299 |
+| # downloads        | 25530 |
 | # stars            | 0 |
 
 ## Links

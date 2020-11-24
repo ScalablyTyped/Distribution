@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__types
 
-Typings are for version 5.2.0
+Typings are for version 5.5.0
 
 ## Library description:
 Shared TypeScript definitions for Octokit projects
@@ -10,9 +10,9 @@ Shared TypeScript definitions for Octokit projects
 | ------------------ | :-------------: |
 | Full name          | @octokit/types |
 | Keywords           | github, api, sdk, toolkit, typescript |
-| # releases         | 61 |
-| # dependents       | 27 |
-| # downloads        | 71258765 |
+| # releases         | 65 |
+| # dependents       | 31 |
+| # downloads        | 92365282 |
 | # stars            | 0 |
 
 ## Links

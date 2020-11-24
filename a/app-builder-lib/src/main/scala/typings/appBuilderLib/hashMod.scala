@@ -4,11 +4,12 @@ import typings.appBuilderLib.appBuilderLibStrings.base64
 import typings.appBuilderLib.appBuilderLibStrings.hex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("app-builder-lib/out/util/hash", JSImport.Namespace)
 @js.native
 object hashMod extends js.Object {
+  
   def hashFile(file: String): js.Promise[String] = js.native
   def hashFile(
     file: String,
@@ -35,4 +36,3 @@ object hashMod extends js.Object {
   @JSName("hashFile")
   def hashFile_hex(file: String, algorithm: String, encoding: hex, options: js.Any): js.Promise[String] = js.native
 }
-

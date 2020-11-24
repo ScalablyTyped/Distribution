@@ -12,50 +12,11 @@ import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Bridge extends Resource {
-  /**
-    * Bridging class.
-    */
-  var bridge_class: String = js.native
-  /**
-    * Type of bridge technology.
-    */
-  var bridge_type: String = js.native
-  /**
-    * Ids of channels participating in this bridge.
-    */
-  var channels: String | js.Array[String] = js.native
-  /**
-    * Timestamp when bridge was created.
-    */
-  var creationtime: Date = js.native
-  /**
-    * Entity that created the bridge.
-    */
-  var creator: String = js.native
-  /**
-    * Unique identifier for this bridge.
-    */
-  var id: String = js.native
-  /**
-    * Name the creator gave the bridge.
-    */
-  var name: String = js.native
-  /**
-    * Name of the current bridging technology.
-    */
-  var technology: String = js.native
-  /**
-    * The video mode the bridge is using. One of none, talker, or single.
-    */
-  var video_mode: js.UndefOr[String] = js.native
-  /**
-    * The ID of the channel that is the source of video in this bridge, if one exists.
-    */
-  var video_source_id: js.UndefOr[String] = js.native
+  
   /**
     * Add a channel to a bridge.
     *
@@ -74,6 +35,22 @@ trait Bridge extends Resource {
     * @param [params.mute] - Mute audio from this channel, preventing it to pass through to the bridge.
     */
   def addChannel(params: Mute, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /**
+    * Bridging class.
+    */
+  var bridge_class: String = js.native
+  
+  /**
+    * Type of bridge technology.
+    */
+  var bridge_type: String = js.native
+  
+  /**
+    * Ids of channels participating in this bridge.
+    */
+  var channels: String | js.Array[String] = js.native
+  
   /**
     * Removes any explicit video source in a multi-party mixing bridge. This operation has no effect on bridges with two or fewer participants. When no explicit video source is set, talk
     * detection will be used to determine the active video stream.
@@ -84,6 +61,7 @@ trait Bridge extends Resource {
     * detection will be used to determine the active video stream.
     */
   def clearVideoSource(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Create a new bridge.
     * This bridge persists until it has been shut down, or Asterisk has been shut down.
@@ -106,6 +84,7 @@ trait Bridge extends Resource {
     * @param [params.name] - Name to give to the bridge being created.
     */
   def create(params: Type, callback: js.Function2[/* err */ Error, /* bridge */ this.type, Unit]): Unit = js.native
+  
   /**
     * Create a new bridge or updates an existing one.
     * This bridge persists until it has been shut down, or Asterisk has been shut down.
@@ -128,6 +107,17 @@ trait Bridge extends Resource {
     * @param [params.name] - Set the name of the bridge.
     */
   def createWithId(params: Type, callback: js.Function2[/* err */ Error, /* bridge */ this.type, Unit]): Unit = js.native
+  
+  /**
+    * Timestamp when bridge was created.
+    */
+  var creationtime: Date = js.native
+  
+  /**
+    * Entity that created the bridge.
+    */
+  var creator: String = js.native
+  
   /**
     * Shut down a bridge.
     * If any channels are in this bridge, they will be removed and resume whatever they were doing beforehand.
@@ -138,6 +128,7 @@ trait Bridge extends Resource {
     * If any channels are in this bridge, they will be removed and resume whatever they were doing beforehand.
     */
   def destroy(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Get bridge details.
     */
@@ -146,6 +137,12 @@ trait Bridge extends Resource {
     * Get bridge details.
     */
   def get(callback: js.Function2[/* err */ Error, /* bridge */ this.type, Unit]): Unit = js.native
+  
+  /**
+    * Unique identifier for this bridge.
+    */
+  var id: String = js.native
+  
   /**
     * List all active bridges in Asterisk.
     */
@@ -154,6 +151,12 @@ trait Bridge extends Resource {
     * List all active bridges in Asterisk.
     */
   def list(callback: js.Function2[/* err */ Error, /* bridges */ js.Array[this.type], Unit]): Unit = js.native
+  
+  /**
+    * Name the creator gave the bridge.
+    */
+  var name: String = js.native
+  
   /**
     * Start playback of media on a bridge.
     * The media URI may be any of a number of URIs. Currently sound:, recording:, number:, digits:, characters:, and tone: URIs are supported. This operation creates a playback resource
@@ -178,6 +181,7 @@ trait Bridge extends Resource {
     * @param [params.playbackId] - Playback Id.
     */
   def play(params: Offsetms, callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]): Unit = js.native
+  
   /**
     * Start playback of media on a bridge.
     * The media URI may be any of a number of URIs. Currently sound:, recording:, number:, digits:, characters:, and tone: URIs are supported. This operation creates a playback resource
@@ -202,6 +206,7 @@ trait Bridge extends Resource {
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     */
   def playWithId(params: PlaybackId, callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]): Unit = js.native
+  
   /**
     * Start a recording.
     * This records the mixed audio from all channels participating in this bridge.
@@ -232,6 +237,7 @@ trait Bridge extends Resource {
     recording: LiveRecording,
     callback: js.Function2[/* err */ Error, /* liverecording */ LiveRecording, Unit]
   ): Unit = js.native
+  
   /**
     * Remove a channel from a bridge.
     *
@@ -244,6 +250,7 @@ trait Bridge extends Resource {
     * @param params.channel - Ids of channels to remove from bridge.
     */
   def removeChannel(params: `2`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Set a channel as the video source in a multi-party mixing bridge. This operation has no effect on bridges with two or fewer participants.
     *
@@ -256,6 +263,7 @@ trait Bridge extends Resource {
     * @param params.channelId - Channels id.
     */
   def setVideoSource(params: ChannelIdString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Play music on hold to a bridge or change the MOH class that is playing.
     *
@@ -273,6 +281,7 @@ trait Bridge extends Resource {
     * @param [params.mohClass] - Channels id.
     */
   def startMoh(params: `3`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Stop playing music on hold to a bridge.
     * This will only stop music on hold being played via POST bridges/{bridgeId}/moh.
@@ -283,5 +292,19 @@ trait Bridge extends Resource {
     * This will only stop music on hold being played via POST bridges/{bridgeId}/moh.
     */
   def stopMoh(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /**
+    * Name of the current bridging technology.
+    */
+  var technology: String = js.native
+  
+  /**
+    * The video mode the bridge is using. One of none, talker, or single.
+    */
+  var video_mode: js.UndefOr[String] = js.native
+  
+  /**
+    * The ID of the channel that is the source of video in this bridge, if one exists.
+    */
+  var video_source_id: js.UndefOr[String] = js.native
 }
-

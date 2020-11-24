@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Move_folders")
 @js.native
 class ResourceAccountsContainersMoveFolders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.move_folders.update
     * @desc Moves entities to a GTM Folder.
@@ -48,4 +50,3 @@ class ResourceAccountsContainersMoveFolders protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

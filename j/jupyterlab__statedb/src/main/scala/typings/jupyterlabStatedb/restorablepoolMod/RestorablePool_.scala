@@ -7,7 +7,7 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/statedb/lib/restorablepool", "RestorablePool")
 @js.native
@@ -20,23 +20,30 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * @param options - The instantiation options for a restorable pool.
     */
   def this(options: IOptions) = this()
+  
   var _added: js.Any = js.native
+  
   var _current: js.Any = js.native
+  
   var _currentChanged: js.Any = js.native
+  
   var _hasRestored: js.Any = js.native
+  
   var _isDisposed: js.Any = js.native
+  
   var _objects: js.Any = js.native
+  
   /**
     * Clean up after disposed objects.
     */
   var _onInstanceDisposed: js.Any = js.native
+  
   var _restore: js.Any = js.native
+  
   var _restored: js.Any = js.native
+  
   var _updated: js.Any = js.native
-  /**
-    * A namespace for all tracked objects.
-    */
-  val namespace: String = js.native
+  
   /**
     * Add a new object to the pool.
     *
@@ -49,6 +56,7 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * restoration connector, if one is available.
     */
   def add(obj: T): js.Promise[Unit] = js.native
+  
   /**
     * A signal emitted when an object object is added.
     *
@@ -58,11 +66,13 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     */
   @JSName("added")
   def added_MRestorablePool_ : ISignal[this.type, T] = js.native
+  
   /**
     * A signal emitted when the current widget changes.
     */
   @JSName("currentChanged")
   def currentChanged_MRestorablePool_ : ISignal[this.type, T | Null] = js.native
+  
   def current_=(obj: T | Null): Unit = js.native
   /**
     * The current object.
@@ -75,6 +85,7 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     */
   @JSName("current")
   def current_MRestorablePool_ : T | Null = js.native
+  
   /**
     * Inject an object into the restorable pool without the pool handling its
     * restoration lifecycle.
@@ -82,11 +93,18 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * @param obj - The object to inject into the pool.
     */
   def inject(obj: T): js.Promise[Unit] = js.native
+  
   /**
     * Test whether the pool is disposed.
     */
   @JSName("isDisposed")
   def isDisposed_MRestorablePool_ : Boolean = js.native
+  
+  /**
+    * A namespace for all tracked objects.
+    */
+  val namespace: String = js.native
+  
   /**
     * Restore the objects in this restorable collection.
     *
@@ -97,26 +115,29 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     */
   /* InferMemberOverrides */
   override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[js.Any] = js.native
+  
   /**
     * A promise resolved when the restorable pool has been restored.
     */
   @JSName("restored")
   def restored_MRestorablePool_ : js.Promise[Unit] = js.native
+  
   /**
     * Save the restore data for a given object.
     *
     * @param obj - The object being saved.
     */
   def save(obj: T): js.Promise[Unit] = js.native
+  
   /**
     * The number of objects held by the pool.
     */
   @JSName("size")
   def size_MRestorablePool_ : Double = js.native
+  
   /**
     * A signal emitted when an object is updated.
     */
   @JSName("updated")
   def updated_MRestorablePool_ : ISignal[this.type, T] = js.native
 }
-

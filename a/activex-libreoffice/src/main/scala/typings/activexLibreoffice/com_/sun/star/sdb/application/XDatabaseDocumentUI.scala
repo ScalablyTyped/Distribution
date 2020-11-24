@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XDataSource
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the user interface of a database document
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDatabaseDocumentUI extends js.Object {
+  
   /**
     * provides access to the current connection of the application
     *
@@ -30,6 +31,7 @@ trait XDatabaseDocumentUI extends js.Object {
     * com.sun.star.sdbc.XDataSource.getConnection()} .
     */
   var ActiveConnection: XConnection = js.native
+  
   /**
     * provides access to the application's main window
     *
@@ -39,8 +41,10 @@ trait XDatabaseDocumentUI extends js.Object {
     * @see com.sun.star.frame.XFrame
     */
   var ApplicationMainWindow: XWindow = js.native
+  
   /** provides access to the data source belong to the database document */
   var DataSource: XDataSource = js.native
+  
   /**
     * contains all sub components of the database document
     *
@@ -52,6 +56,7 @@ trait XDatabaseDocumentUI extends js.Object {
     * @since OOo 3.0
     */
   var SubComponents: SafeArray[XComponent] = js.native
+  
   /**
     * closes all sub components of the database document.
     *
@@ -68,6 +73,7 @@ trait XDatabaseDocumentUI extends js.Object {
     * @since OOo 3.0
     */
   def closeSubComponents(): Boolean = js.native
+  
   /**
     * lets the application connect to the database
     *
@@ -78,12 +84,14 @@ trait XDatabaseDocumentUI extends js.Object {
     * @throws com::sun::star::sdbc::SQLException if the connection cannot be established
     */
   def connect(): Unit = js.native
+  
   /**
     * creates a new sub component of the given type
     * @param ObjectType specifies the type of the object, must be one of the {@link DatabaseObject} constants.
     * @param DocumentDefinition Upon successful return, and if and only if ObjectType equals {@link DatabaseObject.FORM} or {@link DatabaseObject.REPORT} , th
     */
   def createComponent(ObjectType: Double, DocumentDefinition: js.Array[XComponent]): XComponent = js.native
+  
   /**
     * creates a new sub component of the given type
     *
@@ -93,6 +101,7 @@ trait XDatabaseDocumentUI extends js.Object {
     * @param DocumentDefinition Upon successful return, and if and only if ObjectType equals {@link DatabaseObject.FORM} or {@link DatabaseObject.REPORT} , th
     */
   def createComponentWithArguments(ObjectType: Double, Arguments: SeqEquiv[PropertyValue], DocumentDefinition: js.Array[XComponent]): XComponent = js.native
+  
   /**
     * identifies the given sub component
     * @param SubComponent the component to identify. Must be one of the components in {@link SubComponents} .
@@ -100,8 +109,10 @@ trait XDatabaseDocumentUI extends js.Object {
     * @throws com::sun::star::lang::IllegalArgumentException if the given component is not one of the controller's sub components
     */
   def identifySubComponent(SubComponent: XComponent): Pair[Double, String] = js.native
+  
   /** determines whether the application is currently connected to the database */
   def isConnected(): Boolean = js.native
+  
   /**
     * loads the given sub component of the database document
     *
@@ -125,6 +136,7 @@ trait XDatabaseDocumentUI extends js.Object {
     * @throws com::sun::star::sdbc::SQLException if there is no connection to the database at the time the method is called.
     */
   def loadComponent(ObjectType: Double, ObjectName: String, ForEditing: Boolean): XComponent = js.native
+  
   /**
     * loads the given sub component of the database document
     *
@@ -135,8 +147,8 @@ trait XDatabaseDocumentUI extends js.Object {
     */
   def loadComponentWithArguments(ObjectType: Double, ObjectName: String, ForEditing: Boolean, Arguments: SeqEquiv[PropertyValue]): XComponent = js.native
 }
-
 object XDatabaseDocumentUI {
+  
   @scala.inline
   def apply(
     ActiveConnection: XConnection,
@@ -155,42 +167,56 @@ object XDatabaseDocumentUI {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], ApplicationMainWindow = ApplicationMainWindow.asInstanceOf[js.Any], DataSource = DataSource.asInstanceOf[js.Any], SubComponents = SubComponents.asInstanceOf[js.Any], closeSubComponents = js.Any.fromFunction0(closeSubComponents), connect = js.Any.fromFunction0(connect), createComponent = js.Any.fromFunction2(createComponent), createComponentWithArguments = js.Any.fromFunction3(createComponentWithArguments), identifySubComponent = js.Any.fromFunction1(identifySubComponent), isConnected = js.Any.fromFunction0(isConnected), loadComponent = js.Any.fromFunction3(loadComponent), loadComponentWithArguments = js.Any.fromFunction4(loadComponentWithArguments))
     __obj.asInstanceOf[XDatabaseDocumentUI]
   }
+  
   @scala.inline
   implicit class XDatabaseDocumentUIOps[Self <: XDatabaseDocumentUI] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setApplicationMainWindow(value: XWindow): Self = this.set("ApplicationMainWindow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDataSource(value: XDataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSubComponents(value: SafeArray[XComponent]): Self = this.set("SubComponents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCloseSubComponents(value: () => Boolean): Self = this.set("closeSubComponents", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setConnect(value: () => Unit): Self = this.set("connect", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCreateComponent(value: (Double, js.Array[XComponent]) => XComponent): Self = this.set("createComponent", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setCreateComponentWithArguments(value: (Double, SeqEquiv[PropertyValue], js.Array[XComponent]) => XComponent): Self = this.set("createComponentWithArguments", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setIdentifySubComponent(value: XComponent => Pair[Double, String]): Self = this.set("identifySubComponent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsConnected(value: () => Boolean): Self = this.set("isConnected", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setLoadComponent(value: (Double, String, Boolean) => XComponent): Self = this.set("loadComponent", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setLoadComponentWithArguments(value: (Double, String, Boolean, SeqEquiv[PropertyValue]) => XComponent): Self = this.set("loadComponentWithArguments", js.Any.fromFunction4(value))
   }
-  
 }
-

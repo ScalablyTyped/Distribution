@@ -2,7 +2,7 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single firewall rule that is evaluated against incoming traffic and
@@ -10,15 +10,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaFirewallRule extends js.Object {
+  
   /**
     * The action to take on matched requests.
     */
   var action: js.UndefOr[String] = js.native
+  
   /**
     * An optional string description of this rule. This field has a maximum
     * length of 100 characters.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * A positive integer between 1, Int32.MaxValue-1 that defines the order of
     * rule evaluation. Rules with the lowest priority are evaluated first.A
@@ -27,6 +30,7 @@ trait SchemaFirewallRule extends js.Object {
     * modified by the user.
     */
   var priority: js.UndefOr[Double] = js.native
+  
   /**
     * IP address or range, defined using CIDR notation, of requests that this
     * rule applies to. You can use the wildcard character &quot;*&quot; to
@@ -40,41 +44,51 @@ trait SchemaFirewallRule extends js.Object {
     */
   var sourceRange: js.UndefOr[String] = js.native
 }
-
 object SchemaFirewallRule {
+  
   @scala.inline
   def apply(): SchemaFirewallRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFirewallRule]
   }
+  
   @scala.inline
   implicit class SchemaFirewallRuleOps[Self <: SchemaFirewallRule] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAction: Self = this.set("action", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePriority: Self = this.set("priority", js.undefined)
+    
     @scala.inline
     def setSourceRange(value: String): Self = this.set("sourceRange", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceRange: Self = this.set("sourceRange", js.undefined)
   }
-  
 }
-

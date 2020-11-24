@@ -3,7 +3,7 @@ package typings.openlayers.mod.olx.style
 import typings.openlayers.openlayersStrings.point_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Text placement. One of `'point'`, `'line'`. Default is `'point'`. Note that
@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
   - typings.openlayers.openlayersStrings.line
 */
 trait TextPlacement extends js.Object
-
 object TextPlacement {
+  
   @scala.inline
   def line: typings.openlayers.openlayersStrings.line = "line".asInstanceOf[typings.openlayers.openlayersStrings.line]
+  
   @scala.inline
   def point: point_ = "point".asInstanceOf[point_]
 }
-

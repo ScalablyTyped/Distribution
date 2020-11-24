@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "jsxElement")
 @js.native
 object jsxElement extends js.Object {
+  
   def apply(
     openingElement: JSXOpeningElement_,
     closingElement: js.UndefOr[scala.Nothing],
@@ -53,4 +54,3 @@ object jsxElement extends js.Object {
     selfClosing: Boolean
   ): JSXElement_ = js.native
 }
-

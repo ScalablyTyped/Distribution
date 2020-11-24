@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.cloudfrontMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "CloudFront")
 @js.native
@@ -14,10 +14,10 @@ class CloudFront ()
   extends typings.awsSdk.mod.CloudFront {
   def this(options: ClientConfiguration) = this()
 }
-
 @JSImport("mock-aws-s3", "CloudFront")
 @js.native
 object CloudFront extends js.Object {
+  
   @js.native
   class Signer protected ()
     extends typings.awsSdk.mod.CloudFront.Signer {
@@ -29,6 +29,4 @@ object CloudFront extends js.Object {
       */
     def this(keyPairId: String, privateKey: String) = this()
   }
-  
 }
-

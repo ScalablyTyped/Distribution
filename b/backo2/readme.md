@@ -10,9 +10,9 @@ simple backoff based on segmentio/backo
 | ------------------ | :-------------: |
 | Full name          | backo2 |
 | Keywords           | backoff |
-| # releases         | 1 |
-| # dependents       | 80 |
-| # downloads        | 142079807 |
+| # releases         | 0 |
+| # dependents       | 89 |
+| # downloads        | 188714443 |
 | # stars            | 3 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.UI.Notifications
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the content, associated metadata, and expiration time of an update to a tile's badge overlay. A badge can display a number from 1 to 99 or a status glyph. */
 @JSGlobal("Windows.UI.Notifications.BadgeNotification")
@@ -16,4 +16,3 @@ class BadgeNotification protected ()
     */
   def this(content: XmlDocument) = this()
 }
-

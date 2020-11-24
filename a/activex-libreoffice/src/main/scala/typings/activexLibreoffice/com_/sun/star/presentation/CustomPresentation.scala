@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A custom presentation can show the pages of its presentation in a customized order.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait CustomPresentation
   extends XIndexContainer
      with XNamed
-
 object CustomPresentation {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -40,4 +40,3 @@ object CustomPresentation {
     __obj.asInstanceOf[CustomPresentation]
   }
 }
-

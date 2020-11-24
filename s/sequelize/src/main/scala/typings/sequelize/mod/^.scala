@@ -3,7 +3,7 @@ package typings.sequelize.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sequelize", JSImport.Namespace)
 @js.native
@@ -60,8 +60,6 @@ class ^ protected () extends Sequelize {
   def this(database: String, username: String, password: String) = this()
   def this(database: String, username: String, password: String, options: Options) = this()
 }
-
 @JSImport("sequelize", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[SequelizeStatic]
-

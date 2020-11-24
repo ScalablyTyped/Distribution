@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing a page break. A PageBreak can be contained within a ListItem or Paragraph, unless the ListItem or Paragraph is within a
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PageBreak extends Element
-
 object PageBreak {
+  
   @scala.inline
   def apply(
     asBody: () => Body,
@@ -51,4 +51,3 @@ object PageBreak {
     __obj.asInstanceOf[PageBreak]
   }
 }
-

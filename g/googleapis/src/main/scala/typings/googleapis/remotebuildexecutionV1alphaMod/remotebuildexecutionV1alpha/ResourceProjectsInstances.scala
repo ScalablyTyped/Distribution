@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1alpha", "remotebuildexecution_v1alpha.Resource$Projects$Instances")
 @js.native
 class ResourceProjectsInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var workerpools: ResourceProjectsInstancesWorkerpools = js.native
+  
   /**
     * remotebuildexecution.projects.instances.create
     * @desc Creates a new instance in the specified region. Returns a long
@@ -49,6 +50,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.delete
     * @desc Deletes the specified instance. Returns a long running operation
@@ -82,6 +84,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.get
     * @desc Returns the specified instance.
@@ -113,6 +116,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.list
     * @desc Lists instances in a project.
@@ -146,5 +150,6 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse]
   ): Unit = js.native
+  
+  var workerpools: ResourceProjectsInstancesWorkerpools = js.native
 }
-

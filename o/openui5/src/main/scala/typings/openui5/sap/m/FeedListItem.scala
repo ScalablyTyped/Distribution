@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeedListItem extends ListItemBase {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>iconPress</code> event of this
     * <code>sap.m.FeedListItem</code>.When called, the context of the event handler (its
@@ -20,6 +21,7 @@ trait FeedListItem extends ListItemBase {
     */
   def attachIconPress(oData: js.Any, fnFunction: js.Any): FeedListItem = js.native
   def attachIconPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FeedListItem = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>senderPress</code> event of this
     * <code>sap.m.FeedListItem</code>.When called, the context of the event handler (its
@@ -34,6 +36,7 @@ trait FeedListItem extends ListItemBase {
     */
   def attachSenderPress(oData: js.Any, fnFunction: js.Any): FeedListItem = js.native
   def attachSenderPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FeedListItem = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>iconPress</code> event of this
     * <code>sap.m.FeedListItem</code>.The passed function and listener object must match the ones used for
@@ -43,6 +46,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachIconPress(fnFunction: js.Any, oListener: js.Any): FeedListItem = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>senderPress</code> event of this
     * <code>sap.m.FeedListItem</code>.The passed function and listener object must match the ones used for
@@ -52,6 +56,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSenderPress(fnFunction: js.Any, oListener: js.Any): FeedListItem = js.native
+  
   /**
     * Fires event <code>iconPress</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>domRef</code> of type <code>string</code>Dom reference of the feed item's
@@ -62,6 +67,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireIconPress(mArguments: js.Any): FeedListItem = js.native
+  
   /**
     * Fires event <code>senderPress</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>domRef</code> of type <code>string</code>Dom reference of the feed item's
@@ -72,11 +78,13 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSenderPress(mArguments: js.Any): FeedListItem = js.native
+  
   /**
     * Gets current value of property <code>activeIcon</code>.Icon displayed when the list item is active.
     * @returns Value of property <code>activeIcon</code>
     */
   def getActiveIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.Icon to be displayed as graphical element within
     * the FeedListItem. This can be an image or an icon from the icon font. If no icon is provided, a
@@ -84,12 +92,14 @@ trait FeedListItem extends ListItemBase {
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconActive</code>.If true, icon is an link, which will fire
     * 'iconPress' events. If false, icon is normal imageDefault value is <code>true</code>.
     * @returns Value of property <code>iconActive</code>
     */
   def getIconActive(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>iconDensityAware</code>.By default, this is set to true but
     * then one or more requests are sent trying to get the density perfect version of image if this
@@ -98,11 +108,13 @@ trait FeedListItem extends ListItemBase {
     * @returns Value of property <code>iconDensityAware</code>
     */
   def getIconDensityAware(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>info</code>.The Info text.
     * @returns Value of property <code>info</code>
     */
   def getInfo(): String = js.native
+  
   /**
     * Gets current value of property <code>maxCharacters</code>.The expand and collapse feature is set by
     * default and uses 300 characters on mobile devices and 500 characters on desktops as limits. Based on
@@ -113,33 +125,39 @@ trait FeedListItem extends ListItemBase {
     * @returns Value of property <code>maxCharacters</code>
     */
   def getMaxCharacters(): Double = js.native
+  
   /**
     * Gets current value of property <code>sender</code>.Sender of the chunk
     * @returns Value of property <code>sender</code>
     */
   def getSender(): String = js.native
+  
   /**
     * Gets current value of property <code>senderActive</code>.If true, sender string is an link, which
     * will fire 'senderPress' events. If false, sender is normal text.Default value is <code>true</code>.
     * @returns Value of property <code>senderActive</code>
     */
   def getSenderActive(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showIcon</code>.If set to "true" (default), icons will be
     * displayed, if set to false icons are hiddenDefault value is <code>true</code>.
     * @returns Value of property <code>showIcon</code>
     */
   def getShowIcon(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>text</code>.The FeedListItem text.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>timestamp</code>.This chunks timestamp
     * @returns Value of property <code>timestamp</code>
     */
   def getTimestamp(): String = js.native
+  
   /**
     * Sets a new value for property <code>activeIcon</code>.Icon displayed when the list item is
     * active.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -148,6 +166,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setActiveIcon(sActiveIcon: js.Any): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.Icon to be displayed as graphical element within the
     * FeedListItem. This can be an image or an icon from the icon font. If no icon is provided, a default
@@ -157,6 +176,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>iconActive</code>.If true, icon is an link, which will fire
     * 'iconPress' events. If false, icon is normal imageWhen called with a value of <code>null</code> or
@@ -166,6 +186,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconActive(bIconActive: Boolean): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>iconDensityAware</code>.By default, this is set to true but then
     * one or more requests are sent trying to get the density perfect version of image if this version of
@@ -176,6 +197,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconDensityAware(bIconDensityAware: Boolean): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>info</code>.The Info text.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -183,6 +205,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInfo(sInfo: String): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>maxCharacters</code>.The expand and collapse feature is set by
     * default and uses 300 characters on mobile devices and 500 characters on desktops as limits. Based on
@@ -195,6 +218,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxCharacters(iMaxCharacters: Double): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>sender</code>.Sender of the chunkWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -202,6 +226,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSender(sSender: String): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>senderActive</code>.If true, sender string is an link, which
     * will fire 'senderPress' events. If false, sender is normal text.When called with a value of
@@ -211,6 +236,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSenderActive(bSenderActive: Boolean): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>showIcon</code>.If set to "true" (default), icons will be
     * displayed, if set to false icons are hiddenWhen called with a value of <code>null</code> or
@@ -220,6 +246,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowIcon(bShowIcon: Boolean): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.The FeedListItem text.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -227,6 +254,7 @@ trait FeedListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): FeedListItem = js.native
+  
   /**
     * Sets a new value for property <code>timestamp</code>.This chunks timestampWhen called with a value
     * of <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -235,4 +263,3 @@ trait FeedListItem extends ListItemBase {
     */
   def setTimestamp(sTimestamp: String): FeedListItem = js.native
 }
-

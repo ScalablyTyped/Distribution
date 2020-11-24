@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationDataContainer extends IApplicationDataContainer
-
 object ApplicationDataContainer {
+  
   @scala.inline
   def apply(
     containers: IMapView[String, ApplicationDataContainer],
@@ -23,4 +23,3 @@ object ApplicationDataContainer {
     __obj.asInstanceOf[ApplicationDataContainer]
   }
 }
-

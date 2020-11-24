@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-swipeable" : "5.5.1"
+      "react-swipeable" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-swipeable" : "5.5.1"
+      "react-swipeable" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

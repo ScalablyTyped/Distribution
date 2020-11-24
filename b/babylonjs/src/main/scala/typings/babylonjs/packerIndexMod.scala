@@ -6,11 +6,12 @@ import typings.babylonjs.packerMod.ITexturePackerOptions
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/Packer/index", JSImport.Namespace)
 @js.native
 object packerIndexMod extends js.Object {
+  
   @js.native
   class TexturePacker protected ()
     extends typings.babylonjs.packerMod.TexturePacker {
@@ -23,6 +24,28 @@ object packerIndexMod extends js.Object {
       * @returns TexturePacker
       */
     def this(name: String, meshes: js.Array[AbstractMesh], options: ITexturePackerOptions, scene: Scene) = this()
+  }
+  /* static members */
+  @js.native
+  object TexturePacker extends js.Object {
+    
+    /** Packer Layout Constant 2 */
+    val LAYOUT_COLNUM: Double = js.native
+    
+    /** Packer Layout Constant 1 */
+    val LAYOUT_POWER2: Double = js.native
+    
+    /** Packer Layout Constant 0 */
+    val LAYOUT_STRIP: Double = js.native
+    
+    /** Packer Layout Constant 2 */
+    val SUBUV_COLOR: Double = js.native
+    
+    /** Packer Layout Constant 1 */
+    val SUBUV_EXTEND: Double = js.native
+    
+    /** Packer Layout Constant 0 */
+    val SUBUV_WRAP: Double = js.native
   }
   
   @js.native
@@ -37,23 +60,4 @@ object packerIndexMod extends js.Object {
       */
     def this(id: Double, scale: Vector2, offset: Vector2) = this()
   }
-  
-  /* static members */
-  @js.native
-  object TexturePacker extends js.Object {
-    /** Packer Layout Constant 2 */
-    val LAYOUT_COLNUM: Double = js.native
-    /** Packer Layout Constant 1 */
-    val LAYOUT_POWER2: Double = js.native
-    /** Packer Layout Constant 0 */
-    val LAYOUT_STRIP: Double = js.native
-    /** Packer Layout Constant 2 */
-    val SUBUV_COLOR: Double = js.native
-    /** Packer Layout Constant 1 */
-    val SUBUV_EXTEND: Double = js.native
-    /** Packer Layout Constant 0 */
-    val SUBUV_WRAP: Double = js.native
-  }
-  
 }
-

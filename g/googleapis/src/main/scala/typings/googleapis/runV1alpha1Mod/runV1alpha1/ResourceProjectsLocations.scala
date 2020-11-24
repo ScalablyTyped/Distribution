@@ -6,19 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Projects$Locations")
 @js.native
 class ResourceProjectsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var authorizeddomains: ResourceProjectsLocationsAuthorizeddomains = js.native
+  
   var configurations: ResourceProjectsLocationsConfigurations = js.native
+  
   var context: APIRequestContext = js.native
+  
   var domainmappings: ResourceProjectsLocationsDomainmappings = js.native
-  var revisions: ResourceProjectsLocationsRevisions = js.native
-  var routes: ResourceProjectsLocationsRoutes = js.native
-  var services: ResourceProjectsLocationsServices = js.native
+  
   /**
     * run.projects.locations.list
     * @desc Lists information about the supported locations for this service.
@@ -53,5 +55,10 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLocationsResponse]
   ): Unit = js.native
+  
+  var revisions: ResourceProjectsLocationsRevisions = js.native
+  
+  var routes: ResourceProjectsLocationsRoutes = js.native
+  
+  var services: ResourceProjectsLocationsServices = js.native
 }
-

@@ -10,7 +10,7 @@ import typings.phaser.integer
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Audio File suitable for loading by the Loader.
@@ -21,21 +21,24 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HTML5AudioFile extends File {
+  
   /**
     * Called if the file errors while loading.
     */
   def onError(): Unit = js.native
+  
   /**
     * Called when the file finishes loading.
     */
   def onLoad(): Unit = js.native
+  
   /**
     * Called during the file load progress. Is sent a DOM ProgressEvent.
     */
   def onProgress(): Unit = js.native
 }
-
 object HTML5AudioFile {
+  
   @scala.inline
   def apply(
     addToCache: () => Unit,
@@ -72,24 +75,29 @@ object HTML5AudioFile {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTML5AudioFile]
   }
+  
   @scala.inline
   implicit class HTML5AudioFileOps[Self <: HTML5AudioFile] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setOnLoad(value: () => Unit): Self = this.set("onLoad", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setOnProgress(value: () => Unit): Self = this.set("onProgress", js.Any.fromFunction0(value))
   }
-  
 }
-

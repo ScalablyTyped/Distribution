@@ -7,10 +7,11 @@ import typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1.Optio
 import typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1.Remotebuildexecution
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn108 extends js.Object {
+  
   def apply(options: Options): Remotebuildexecution = js.native
   def apply(options: typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Options): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = js.native
   def apply(options: typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Options): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = js.native
@@ -18,4 +19,3 @@ trait Fn108 extends js.Object {
   def apply(version: v1alpha): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = js.native
   def apply(version: v2): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = js.native
 }
-

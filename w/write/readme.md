@@ -11,8 +11,8 @@ Write data to a file, replacing the file if it already exists and creating any i
 | Full name          | write |
 | Keywords           | async, file path, file system, file, filepath, files, filesystem, folder, fs, fs.writeFile, fs.writeFileSync, path, promise, streams, write file, write-file, writefile, write |
 | # releases         | 2 |
-| # dependents       | 185 |
-| # downloads        | 317955251 |
+| # dependents       | 219 |
+| # downloads        | 448275009 |
 | # stars            | 7 |
 
 ## Links

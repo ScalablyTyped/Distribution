@@ -8,16 +8,19 @@ import typings.luminoDatagrid.datamodelMod.DataModel.RowRegion
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/datamodel", "DataModel")
 @js.native
 abstract class DataModel_ () extends js.Object {
+  
   var _changed: js.Any = js.native
+  
   /**
     * A signal emitted when the data model has changed.
     */
   val changed: ISignal[this.type, ChangedArgs] = js.native
+  
   /**
     * Get the column count for a region in the data model.
     *
@@ -29,6 +32,7 @@ abstract class DataModel_ () extends js.Object {
     * This method is called often, and so should be efficient.
     */
   def columnCount(region: ColumnRegion): Double = js.native
+  
   /**
     * Get the data value for a cell in the data model.
     *
@@ -46,6 +50,7 @@ abstract class DataModel_ () extends js.Object {
     * This method is called often, and so should be efficient.
     */
   def data(region: CellRegion, row: Double, column: Double): js.Any = js.native
+  
   /**
     * Emit the `changed` signal for the data model.
     *
@@ -54,6 +59,7 @@ abstract class DataModel_ () extends js.Object {
     * changed so that attached data grids can update themselves.
     */
   /* protected */ def emitChanged(args: ChangedArgs): Unit = js.native
+  
   /**
     * Get the metadata for a cell in the data model.
     *
@@ -73,6 +79,7 @@ abstract class DataModel_ () extends js.Object {
     * The default implementation returns `{}`.
     */
   def metadata(region: CellRegion, row: Double, column: Double): Metadata = js.native
+  
   /**
     * Get the row count for a region in the data model.
     *
@@ -85,4 +92,3 @@ abstract class DataModel_ () extends js.Object {
     */
   def rowCount(region: RowRegion): Double = js.native
 }
-

@@ -3,17 +3,24 @@ package typings.screeps
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RawMemory object allows to implement your own memory stringifier instead of built-in serializer based on JSON.stringify.
   */
 @js.native
 trait RawMemory extends js.Object {
+  
   /**
     * An object with a memory segment of another player available on this tick. Use `setActiveForeignSegment` to fetch segments on the next tick.
     */
   var foreignSegment: typings.screeps.anon.Id = js.native
+  
+  /**
+    * Get a raw string representation of the Memory object.
+    */
+  def get(): String = js.native
+  
   /**
     *  @deprecated Use `InterShardMemory` instead.
     *
@@ -26,20 +33,19 @@ trait RawMemory extends js.Object {
     *
     */
   var interShardSegment: String = js.native
+  
   /**
     * An object with asynchronous memory segments available on this tick. Each object key is the segment ID with data in string values.
     * Use RawMemory.setActiveSegments to fetch segments on the next tick. Segments data is saved automatically in the end of the tick.
     */
   var segments: NumberDictionary[String] = js.native
-  /**
-    * Get a raw string representation of the Memory object.
-    */
-  def get(): String = js.native
+  
   /**
     * Set new memory value.
     * @param value New memory value as a string.
     */
   def set(value: String): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Request a memory segment of another user.
     *
@@ -56,11 +62,13 @@ trait RawMemory extends js.Object {
   def setActiveForeignSegment(username: String): js.UndefOr[scala.Nothing] = js.native
   def setActiveForeignSegment(username: String, id: Double): js.UndefOr[scala.Nothing] = js.native
   def setActiveForeignSegment(username: Null, id: Double): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Request memory segments using the list of their IDs. Memory segments will become available on the next tick in RawMemory.segments object.
     * @param ids An array of segment IDs. Each ID should be a number from 0 to 99. Maximum 10 segments can be active at the same time. Subsequent calls of setActiveSegments override previous ones.
     */
   def setActiveSegments(ids: js.Array[Double]): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Set the specified segment as your default public segment. It will be returned if no id parameter is passed to `setActiveForeignSegment` by another user.
     *
@@ -68,6 +76,7 @@ trait RawMemory extends js.Object {
     */
   def setDefaultPublicSegment(): js.UndefOr[scala.Nothing] = js.native
   def setDefaultPublicSegment(id: Double): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Set specified segments as public. Other users will be able to request access to them using `setActiveForeignSegment`.
     *
@@ -75,4 +84,3 @@ trait RawMemory extends js.Object {
     */
   def setPublicSegments(ids: js.Array[Double]): js.UndefOr[scala.Nothing] = js.native
 }
-

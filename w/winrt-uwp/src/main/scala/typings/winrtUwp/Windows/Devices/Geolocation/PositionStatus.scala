@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PositionStatus extends js.Object
-
 /** Indicates the ability of the Geolocator object to provide location data. */
 @JSGlobal("Windows.Devices.Geolocation.PositionStatus")
 @js.native
 object PositionStatus extends js.Object {
+  
   /** Location settings are turned off. This status indicates that the user has not granted the application permission to access location. */
   @js.native
   sealed trait disabled extends PositionStatus
@@ -34,6 +34,4 @@ object PositionStatus extends js.Object {
   /** Location data is available. */
   @js.native
   sealed trait ready extends PositionStatus
-  
 }
-

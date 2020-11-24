@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FogBlock")
 @js.native
@@ -14,4 +14,3 @@ class FogBlock protected ()
     */
   def this(name: String) = this()
 }
-

@@ -2,11 +2,12 @@ package typings.electron.Electron
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommandLine extends js.Object {
-  // Docs: http://electronjs.org/docs/api/command-line
+  
+  // Docs: https://electronjs.org/docs/api/command-line
   /**
     * Append an argument to Chromium's command line. The argument will be quoted
     * correctly. Switches will precede arguments regardless of appending order.
@@ -18,6 +19,7 @@ trait CommandLine extends js.Object {
     * function is to control Chromium's behavior.
     */
   def appendArgument(value: String): Unit = js.native
+  
   /**
     * Append a switch (with optional `value`) to Chromium's command line.
     *
@@ -26,6 +28,7 @@ trait CommandLine extends js.Object {
     */
   def appendSwitch(the_switch: String): Unit = js.native
   def appendSwitch(the_switch: String, value: String): Unit = js.native
+  
   /**
     * The command-line switch value.
     *
@@ -33,9 +36,9 @@ trait CommandLine extends js.Object {
     * string.
     */
   def getSwitchValue(the_switch: String): String = js.native
+  
   /**
     * Whether the command-line switch is present.
     */
   def hasSwitch(the_switch: String): Boolean = js.native
 }
-

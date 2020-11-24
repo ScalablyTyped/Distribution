@@ -3,10 +3,11 @@ package typings.jupyterlabStatedb.interfacesMod
 import typings.jupyterlabStatedb.anon.Ids
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IDataConnector[T, U, V, W] extends js.Object {
+  
   /**
     * Retrieve an item from the data connector.
     *
@@ -19,6 +20,7 @@ trait IDataConnector[T, U, V, W] extends js.Object {
     * retrieving the data. Nonexistence of an `id` resolves with `undefined`.
     */
   def fetch(id: V): js.Promise[js.UndefOr[T]] = js.native
+  
   /**
     * Retrieve the list of items available from the data connector.
     *
@@ -34,6 +36,7 @@ trait IDataConnector[T, U, V, W] extends js.Object {
     */
   def list(): js.Promise[Ids[V, T]] = js.native
   def list(query: W): js.Promise[Ids[V, T]] = js.native
+  
   /**
     * Remove a value using the data connector.
     *
@@ -48,6 +51,7 @@ trait IDataConnector[T, U, V, W] extends js.Object {
     * type `T` being removed while others may return no content.
     */
   def remove(id: V): js.Promise[_] = js.native
+  
   /**
     * Save a value using the data connector.
     *
@@ -65,4 +69,3 @@ trait IDataConnector[T, U, V, W] extends js.Object {
     */
   def save(id: V, value: U): js.Promise[_] = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.gremlin.mod.driver.RemoteConnection
 import typings.gremlin.mod.structure.Graph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gremlin", "process.GraphTraversalSource")
 @js.native
@@ -53,19 +53,32 @@ class GraphTraversalSource[T /* <: GraphTraversal */] protected () extends js.Ob
     graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]],
     graphTraversalClass: Newable[T]
   ) = this()
+  
   def E(args: js.Any*): T = js.native
+  
   def V(args: js.Any*): T = js.native
+  
   def addE(args: js.Any*): T = js.native
+  
   def addV(args: js.Any*): T = js.native
+  
   def inject(args: js.Any*): T = js.native
+  
   def io(args: js.Any*): T = js.native
+  
   def withBulk(args: js.Any*): this.type = js.native
+  
   def withPath(args: js.Any*): this.type = js.native
+  
   def withRemote(remoteConnection: RemoteConnection): this.type = js.native
+  
   def withSack(args: js.Any*): this.type = js.native
+  
   def withSideEffect(args: js.Any*): this.type = js.native
+  
   def withStrategies(args: js.Any*): this.type = js.native
+  
   def with_(args: js.Any*): this.type = js.native
+  
   def withoutStrategies(args: js.Any*): this.type = js.native
 }
-

@@ -2,13 +2,15 @@ package typings.reactNativeTorch
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-torch", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     /**
       * On android, we need to ask for permissions before being able to turn on/off
       * the torch
@@ -31,6 +33,7 @@ object mod extends js.Object {
       * @param dialogBody The body text of the permissions dialog
       */
     def requestCameraPermission(dialogTitle: String, dialogBody: String): js.Promise[Boolean] = js.native
+    
     /**
       * Used to turn on or off the torch. Pass `true` to turn on and `false` to
       * turn off
@@ -43,6 +46,4 @@ object mod extends js.Object {
       */
     def switchState(newState: Boolean): Unit = js.native
   }
-  
 }
-

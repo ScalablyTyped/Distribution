@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides read access to a fragment of the hierarchy data.
@@ -30,8 +30,8 @@ trait HierarchyDataReadAccess
      with XHierarchicalNameAccess
      with XChangesNotifier
      with XComponent
-
 object HierarchyDataReadAccess {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -56,4 +56,3 @@ object HierarchyDataReadAccess {
     __obj.asInstanceOf[HierarchyDataReadAccess]
   }
 }
-

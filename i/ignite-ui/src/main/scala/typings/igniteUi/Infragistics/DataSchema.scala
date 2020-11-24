@@ -2,27 +2,31 @@ package typings.igniteUi.Infragistics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataSchema extends js.Object {
+  
   /**
     * A list of field definitions specifying the schema of the data source.
     * Field objects description: {fieldName, [fieldDataType], [fieldXPath]}
     */
   def fields(): js.Array[_] = js.native
+  
   /**
     * Specifies if the object is null, undefined, or an empty string
     *
     * @param o the object to check for being empty
     */
   def isEmpty(o: js.Object): js.Object = js.native
+  
   /**
     * Specifies if the object has custom properties or not
     *
     * @param obj the object to check for presence or lack of custom properties
     */
   def isObjEmpty(obj: js.Object): js.Object = js.native
+  
   /**
     * Performs a transformation on the schema so that the resulting data matches the schema
     *
@@ -30,8 +34,8 @@ trait DataSchema extends js.Object {
     */
   def transform(data: js.Object): js.Object = js.native
 }
-
 object DataSchema {
+  
   @scala.inline
   def apply(
     fields: () => js.Array[_],
@@ -42,26 +46,32 @@ object DataSchema {
     val __obj = js.Dynamic.literal(fields = js.Any.fromFunction0(fields), isEmpty = js.Any.fromFunction1(isEmpty), isObjEmpty = js.Any.fromFunction1(isObjEmpty), transform = js.Any.fromFunction1(transform))
     __obj.asInstanceOf[DataSchema]
   }
+  
   @scala.inline
   implicit class DataSchemaOps[Self <: DataSchema] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFields(value: () => js.Array[_]): Self = this.set("fields", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsEmpty(value: js.Object => js.Object): Self = this.set("isEmpty", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsObjEmpty(value: js.Object => js.Object): Self = this.set("isObjEmpty", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setTransform(value: js.Object => js.Object): Self = this.set("transform", js.Any.fromFunction1(value))
   }
-  
 }
-

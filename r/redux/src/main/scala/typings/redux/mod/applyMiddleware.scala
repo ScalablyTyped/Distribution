@@ -7,11 +7,12 @@ import typings.redux.anon.`2`
 import typings.redux.anon.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux", "applyMiddleware")
 @js.native
 object applyMiddleware extends js.Object {
+  
   def apply(): StoreEnhancer[js.Object, js.Object] = js.native
   def apply[Ext1, S](middleware1: Middleware[Ext1, S, _]): StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object] = js.native
   def apply[Ext, S](middlewares: (Middleware[_, S, _])*): StoreEnhancer[DispatchExt[Ext], js.Object] = js.native
@@ -35,4 +36,3 @@ object applyMiddleware extends js.Object {
     middleware5: Middleware[Ext5, S, _]
   ): StoreEnhancer[`3`[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object] = js.native
 }
-

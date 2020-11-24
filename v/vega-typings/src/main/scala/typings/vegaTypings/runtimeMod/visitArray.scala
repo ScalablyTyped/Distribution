@@ -2,11 +2,12 @@ package typings.vegaTypings.runtimeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vega-typings/types/runtime", "visitArray")
 @js.native
 object visitArray extends js.Object {
+  
   def apply(
     array: js.UndefOr[scala.Nothing],
     filter: js.Function1[/* any */ js.Any, js.UndefOr[Boolean]],
@@ -18,4 +19,3 @@ object visitArray extends js.Object {
     visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[_], Unit]
   ): Unit = js.native
 }
-

@@ -9,7 +9,7 @@ import typings.babelTypes.babelTypesStrings.RestElement
 import typings.babelTypes.babelTypesStrings.TSParameterProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.Identifier_
@@ -21,14 +21,15 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.TSParameterProperty_
 */
 trait LVal extends _Node
-
 object LVal {
+  
   @scala.inline
   def RestElement_(argument: LVal, `type`: RestElement): LVal = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LVal]
   }
+  
   @scala.inline
   def MemberExpression_(
     computed: Boolean,
@@ -41,18 +42,21 @@ object LVal {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LVal]
   }
+  
   @scala.inline
   def TSParameterProperty_(parameter: Identifier_ | AssignmentPattern_, `type`: TSParameterProperty): LVal = {
     val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LVal]
   }
+  
   @scala.inline
   def ObjectPattern_(properties: js.Array[RestElement_ | ObjectProperty_], `type`: ObjectPattern): LVal = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LVal]
   }
+  
   @scala.inline
   def AssignmentPattern_(
     left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_,
@@ -63,12 +67,14 @@ object LVal {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LVal]
   }
+  
   @scala.inline
   def Identifier_(name: String, `type`: Identifier): LVal = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LVal]
   }
+  
   @scala.inline
   def ArrayPattern_(elements: js.Array[Null | PatternLike], `type`: ArrayPattern): LVal = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
@@ -76,4 +82,3 @@ object LVal {
     __obj.asInstanceOf[LVal]
   }
 }
-

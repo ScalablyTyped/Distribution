@@ -2,10 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TryFn[Context] extends js.Object {
+  
   /**
   	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else
   	 * the test will fail. A macro may be provided.
@@ -43,4 +44,3 @@ trait TryFn[Context] extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[TryResult] = js.native
 }
-

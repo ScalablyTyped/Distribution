@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue" : "2.6.11"
+      "vue" : "2.6.12"
     }
   ],
   "test-dependencies" : [
     {
-      "vue" : "2.6.11"
+      "vue" : "2.6.12"
     }
   ],
   "compile-devDependencies" : [

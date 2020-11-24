@@ -11,76 +11,100 @@ import typings.plottable.interfacesMod.SpaceRequest
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/component", JSImport.Namespace)
 @js.native
 object componentMod extends js.Object {
+  
   @js.native
   class Component () extends js.Object {
+    
     /**
       * Place more objects just behind this Component's Content by appending them to the _backgroundContainer.
       */
     var _backgroundContainer: js.Any = js.native
+    
     /**
       * Container for the visual content that this Component displays. Subclasses should attach
       * elements onto the _content. Located in between the background and the foreground.
       */
     var _content: js.Any = js.native
+    
     var _cssClasses: js.Any = js.native
+    
     /**
       * If .destroy() has been called on this Component.
       */
     var _destroyed: js.Any = js.native
+    
     /**
       * Holds all the DOM associated with this component. A direct child of the element we're
       * anchored to.
       */
     var _element: js.Any = js.native
+    
     /**
       * Place more objects just in front of this Component's Content by appending them to the _foregroundContainer.
       */
     var _foregroundContainer: js.Any = js.native
+    
     /**
       * height of the Component as computed in computeLayout. Used to size the hitbox, bounding box, etc
       */
     var _height: js.Any = js.native
+    
     var _isAnchored: Boolean = js.native
+    
     var _isSetup: Boolean = js.native
+    
     var _onAnchorCallbacks: js.Any = js.native
+    
     var _onDetachCallbacks: js.Any = js.native
+    
     /**
       * Origin of this Component relative to its parent.
       */
     var _origin: js.Any = js.native
+    
     /**
       * Subclasses should set this to true in their constructor to prevent content from overflowing.
       */
     var _overflowHidden: Boolean = js.native
+    
     /**
       * The ComponentContainer that holds this Component in its children, or null, if this
       * Component is top-level.
       */
     var _parent: js.Any = js.native
+    
     var _resizeHandler: js.Any = js.native
+    
     /**
       * If we're the root Component (top-level), this is the HTMLElement we've anchored to (user-supplied).
       */
     var _rootElement: js.Any = js.native
-    /**
-      * width of the Component as computed in computeLayout. Used to size the hitbox, bounding box, etc
-      */
-    var _width: js.Any = js.native
-    var _xAlignment: js.Any = js.native
-    var _yAlignment: js.Any = js.native
+    
     /* private */ def _scheduleComputeLayout(): js.Any = js.native
+    
     /**
       * Creates additional elements as necessary for the Component to function.
       * Called during anchor() if the Component's element has not been created yet.
       * Override in subclasses to provide additional functionality.
       */
     /* protected */ def _setup(): Unit = js.native
+    
     /* protected */ def _sizeFromOffer(availableWidth: Double, availableHeight: Double): Height = js.native
+    
+    /**
+      * width of the Component as computed in computeLayout. Used to size the hitbox, bounding box, etc
+      */
+    var _width: js.Any = js.native
+    
+    var _xAlignment: js.Any = js.native
+    
+    var _yAlignment: js.Any = js.native
+    
     /**
       * Adds a given CSS class to the Component.
       *
@@ -88,6 +112,7 @@ object componentMod extends js.Object {
       * @returns {Component} The calling Component.
       */
     def addClass(cssClass: String): this.type = js.native
+    
     /**
       * Attaches the Component as a child of a given d3 Selection.
       *
@@ -95,6 +120,7 @@ object componentMod extends js.Object {
       * @returns {Component} The calling Component.
       */
     def anchor(selection: Selection_[HTMLElement, _, _, _]): this.type = js.native
+    
     /**
       * Gets the Selection containing the <g> behind the visual elements of the Component.
       *
@@ -103,12 +129,14 @@ object componentMod extends js.Object {
       * @return {d3.Selection} background selection for the Component
       */
     def background(): SimpleSelection[Unit] = js.native
+    
     /**
       * @returns {Bounds} for the component in pixel space, where the topLeft
       * represents the component's minimum x and y values and the bottomRight represents
       * the component's maximum x and y values.
       */
     def bounds(): Bounds = js.native
+    
     /**
       * Computes and sets the size, position, and alignment of the Component from the specified values.
       * If no parameters are supplied and the Component is a root node,
@@ -131,6 +159,7 @@ object componentMod extends js.Object {
     def computeLayout(origin: Point, availableWidth: js.UndefOr[scala.Nothing], availableHeight: Double): this.type = js.native
     def computeLayout(origin: Point, availableWidth: Double): this.type = js.native
     def computeLayout(origin: Point, availableWidth: Double, availableHeight: Double): this.type = js.native
+    
     /**
       * Gets the SVG that holds the visual elements of the Component.
       *
@@ -139,10 +168,12 @@ object componentMod extends js.Object {
       * @return {d3.Selection} content selection for the Component
       */
     def content(): SimpleSelection[Unit] = js.native
+    
     /**
       * Removes a Component from the DOM and disconnects all listeners.
       */
     def destroy(): Unit = js.native
+    
     /**
       * Detaches a Component from the DOM. The Component can be reused.
       *
@@ -151,20 +182,24 @@ object componentMod extends js.Object {
       * @returns The calling Component.
       */
     def detach(): this.type = js.native
+    
     /**
       * Returns the HTML Element at the root of this component's DOM tree.
       */
     def element(): Selection_[HTMLElement, _, _, _] = js.native
+    
     /**
       * Checks if the Component has a fixed height or if it grows to fill available space.
       * Returns false by default on the base Component class.
       */
     def fixedHeight(): Boolean = js.native
+    
     /**
       * Checks if the Component has a fixed width or if it grows to fill available space.
       * Returns false by default on the base Component class.
       */
     def fixedWidth(): Boolean = js.native
+    
     /**
       * Gets the Selection containing the <g> in front of the visual elements of the Component.
       *
@@ -173,16 +208,19 @@ object componentMod extends js.Object {
       * @return {d3.Selection}
       */
     def foreground(): SimpleSelection[Unit] = js.native
+    
     /**
       * Checks if the Component has a given CSS class.
       *
       * @param {string} cssClass The CSS class to check for.
       */
     def hasClass(cssClass: String): Boolean = js.native
+    
     /**
       * Gets the height of the Component in pixels.
       */
     def height(): Double = js.native
+    
     /**
       * Tell this component to invalidate any caching. This function should be
       * called when a CSS change has occurred that could influence the layout
@@ -191,7 +229,9 @@ object componentMod extends js.Object {
       * Subclasses should override.
       */
     def invalidateCache(): Unit = js.native
+    
     def isRoot(): Boolean = js.native
+    
     /**
       * Removes a callback that would be called on anchoring the Component to the DOM.
       * The callback is identified by reference equality.
@@ -200,6 +240,7 @@ object componentMod extends js.Object {
       * @return {Component}
       */
     def offAnchor(callback: ComponentCallback): this.type = js.native
+    
     /**
       * Removes a callback to be called when the Component is detach()-ed.
       * The callback is identified by reference equality.
@@ -208,6 +249,7 @@ object componentMod extends js.Object {
       * @return {Component} The calling Component.
       */
     def offDetach(callback: ComponentCallback): this.type = js.native
+    
     /**
       * Adds a callback to be called on anchoring the Component to the DOM.
       * If the Component is already anchored, the callback is called immediately.
@@ -216,6 +258,7 @@ object componentMod extends js.Object {
       * @return {Component}
       */
     def onAnchor(callback: ComponentCallback): this.type = js.native
+    
     /**
       * Adds a callback to be called when the Component is detach()-ed.
       *
@@ -223,6 +266,7 @@ object componentMod extends js.Object {
       * @return {Component} The calling Component.
       */
     def onDetach(callback: ComponentCallback): this.type = js.native
+    
     /**
       * Sets a callback that gets called when the component resizes. The size change
       * is not guaranteed to be reflected by the DOM at the time the callback is fired.
@@ -230,18 +274,21 @@ object componentMod extends js.Object {
       * @param {IResizeHandler} [resizeHandler] Callback to be called when component resizes
       */
     def onResize(resizeHandler: IResizeHandler): this.type = js.native
+    
     /**
       * Gets the origin of the Component relative to its parent.
       *
       * @return {Point}
       */
     def origin(): Point = js.native
+    
     /**
       * Gets the origin of the Component relative to the root Component.
       *
       * @return {Point}
       */
     def originToRoot(): Point = js.native
+    
     /**
       * Gets the parent ComponentContainer for this Component.
       */
@@ -253,12 +300,14 @@ object componentMod extends js.Object {
       * using the appropriate method on the ComponentContainer.
       */
     def parent(parent: ComponentContainer): this.type = js.native
+    
     /**
       * Causes the Component to re-layout and render.
       *
       * @returns {Component} The calling Component.
       */
     def redraw(): this.type = js.native
+    
     /**
       * Removes a given CSS class from the Component.
       *
@@ -266,18 +315,22 @@ object componentMod extends js.Object {
       * @returns {Component} The calling Component.
       */
     def removeClass(cssClass: String): this.type = js.native
+    
     /**
       * Queues the Component for rendering.
       *
       * @returns {Component} The calling Component.
       */
     def render(): this.type = js.native
+    
     /**
       * Renders the Component without waiting for the next frame. This method is a no-op on
       * Component, Table, and Group; render them immediately with .renderTo() instead.
       */
     def renderImmediately(): this.type = js.native
+    
     def renderLowPriority(): this.type = js.native
+    
     /**
       * Renders the Component to a given HTML Element.
       *
@@ -287,6 +340,7 @@ object componentMod extends js.Object {
     def renderTo(element: String): this.type = js.native
     def renderTo(element: Selection_[HTMLElement, _, _, _]): this.type = js.native
     def renderTo(element: HTMLElement): this.type = js.native
+    
     /**
       * Given available space in pixels, returns the minimum width and height this Component will need.
       *
@@ -295,15 +349,18 @@ object componentMod extends js.Object {
       * @returns {SpaceRequest}
       */
     def requestedSpace(availableWidth: Double, availableHeight: Double): SpaceRequest = js.native
+    
     /**
       * Gets the root component of the hierarchy. If the provided
       * component is the root, that component will be returned.
       */
     def root(): Component = js.native
+    
     /**
       * Returns the top-level user supplied element that roots the tree that this Component lives in.
       */
     def rootElement(): SimpleSelection[Unit] = js.native
+    
     /**
       * Directly sets component size and, optionally, its origin.
       *
@@ -325,10 +382,12 @@ object componentMod extends js.Object {
     def setBounds(width: Double, height: Double, originX: js.UndefOr[scala.Nothing], originY: Double): this.type = js.native
     def setBounds(width: Double, height: Double, originX: Double): this.type = js.native
     def setBounds(width: Double, height: Double, originX: Double, originY: Double): this.type = js.native
+    
     /**
       * Gets the width of the Component in pixels.
       */
     def width(): Double = js.native
+    
     /**
       * Gets the x alignment of the Component.
       */
@@ -340,6 +399,7 @@ object componentMod extends js.Object {
       * @returns {Component} The calling Component.
       */
     def xAlignment(xAlignment: XAlignment): this.type = js.native
+    
     /**
       * Gets the y alignment of the Component.
       */
@@ -352,6 +412,14 @@ object componentMod extends js.Object {
       */
     def yAlignment(yAlignment: YAlignment): this.type = js.native
   }
+  /* static members */
+  @js.native
+  object Component extends js.Object {
+    
+    var _xAlignToProportion: js.Any = js.native
+    
+    var _yAlignToProportion: js.Any = js.native
+  }
   
   /* keyof plottable.anon.Center */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.left
@@ -359,6 +427,15 @@ object componentMod extends js.Object {
     - typings.plottable.plottableStrings.center
   */
   trait XAlignment extends js.Object
+  @js.native
+  object XAlignment extends js.Object {
+    
+    var center: typings.plottable.plottableStrings.center = js.native
+    
+    var left: typings.plottable.plottableStrings.left = js.native
+    
+    var right: typings.plottable.plottableStrings.right = js.native
+  }
   
   /* keyof plottable.anon.BottomCenter */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.center
@@ -366,29 +443,17 @@ object componentMod extends js.Object {
     - typings.plottable.plottableStrings.bottom
   */
   trait YAlignment extends js.Object
-  
-  /* static members */
-  @js.native
-  object Component extends js.Object {
-    var _xAlignToProportion: js.Any = js.native
-    var _yAlignToProportion: js.Any = js.native
-  }
-  
-  @js.native
-  object XAlignment extends js.Object {
-    var center: typings.plottable.plottableStrings.center = js.native
-    var left: typings.plottable.plottableStrings.left = js.native
-    var right: typings.plottable.plottableStrings.right = js.native
-  }
-  
   @js.native
   object YAlignment extends js.Object {
+    
     var bottom: typings.plottable.plottableStrings.bottom = js.native
+    
     var center: typings.plottable.plottableStrings.center = js.native
+    
     var top: typings.plottable.plottableStrings.top = js.native
   }
   
   type ComponentCallback = js.Function1[/* component */ Component, Unit]
+  
   type IResizeHandler = js.Function1[/* size */ Width, Unit]
 }
-

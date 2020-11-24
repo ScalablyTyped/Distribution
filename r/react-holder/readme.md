@@ -12,7 +12,7 @@ React image Holder (with holder.js)
 | Keywords           | react, image, placeholder, holder.js |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1505 |
+| # downloads        | 1962 |
 | # stars            | 0 |
 
 ## Links

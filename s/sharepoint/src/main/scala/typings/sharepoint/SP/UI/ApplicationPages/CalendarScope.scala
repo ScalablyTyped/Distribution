@@ -2,14 +2,14 @@ package typings.sharepoint.SP.UI.ApplicationPages
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CalendarScope extends js.Object
-
 @JSGlobal("SP.UI.ApplicationPages.CalendarScope")
 @js.native
 object CalendarScope extends js.Object {
+  
   @js.native
   sealed trait daily extends CalendarScope
   
@@ -27,6 +27,4 @@ object CalendarScope extends js.Object {
   
   @js.native
   sealed trait weeklyGroup extends CalendarScope
-  
 }
-

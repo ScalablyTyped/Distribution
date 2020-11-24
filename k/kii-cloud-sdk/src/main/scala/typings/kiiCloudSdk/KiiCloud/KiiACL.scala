@@ -4,13 +4,14 @@ import typings.kiiCloudSdk.anon.Failure
 import typings.kiiCloudSdk.anon.Success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiACL object
   */
 @js.native
 trait KiiACL extends js.Object {
+  
   /**
     * Get the list of active ACLs associated with this object from the server
     *
@@ -61,6 +62,7 @@ trait KiiACL extends js.Object {
     */
   def listACLEntries(): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
   def listACLEntries(callbacks: Failure): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
+  
   /**
     * Add a KiiACLEntry to the local object, if not already present. This does not explicitly grant any permissions, which should be done through the KiiACLEntry itself. This method simply adds
     * the entry to the local ACL object so it can be saved to the server.
@@ -75,6 +77,7 @@ trait KiiACL extends js.Object {
     *     acl.putACLEntry(aclEntry);
     */
   def putACLEntry(entry: KiiACLEntry): Unit = js.native
+  
   /**
     * Remove a KiiACLEntry to the local object. This does not explicitly revoke any permissions, which should be done through the KiiACLEntry itself. This method simply removes the entry from the
     * local ACL object and will not be saved to the server.
@@ -89,6 +92,7 @@ trait KiiACL extends js.Object {
     *     acl.removeACLEntry(aclEntry);
     */
   def removeACLEntry(entry: KiiACLEntry): Unit = js.native
+  
   /**
     * Save the list of ACLEntry objects associated with this ACL object to the server
     *
@@ -133,4 +137,3 @@ trait KiiACL extends js.Object {
   def save(): js.Promise[KiiACL] = js.native
   def save(callbacks: Success): js.Promise[KiiACL] = js.native
 }
-

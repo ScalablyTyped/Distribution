@@ -10,9 +10,9 @@ A robust HTML entities encoder/decoder with full Unicode support.
 | ------------------ | :-------------: |
 | Full name          | he |
 | Keywords           | string, entities, entity, html, encode, decode, unicode |
-| # releases         | 2 |
-| # dependents       | 599 |
-| # downloads        | 322192574 |
+| # releases         | 1 |
+| # dependents       | 715 |
+| # downloads        | 435219078 |
 | # stars            | 35 |
 
 ## Links

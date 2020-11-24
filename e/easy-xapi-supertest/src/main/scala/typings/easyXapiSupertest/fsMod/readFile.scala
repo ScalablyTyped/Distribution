@@ -6,11 +6,12 @@ import typings.easyXapiSupertest.anon.`1`
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "readFile")
 @js.native
 object readFile extends js.Object {
+  
   def apply(filename: String, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
   def apply(
     filename: String,
@@ -28,4 +29,3 @@ object readFile extends js.Object {
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
 }
-

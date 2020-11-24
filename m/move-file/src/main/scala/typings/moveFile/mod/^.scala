@@ -2,11 +2,12 @@ package typings.moveFile.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("move-file", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Move a file.
   	@param source - File you want to move.
@@ -23,6 +24,7 @@ object ^ extends js.Object {
   	*/
   def apply(source: String, destination: String): js.Promise[Unit] = js.native
   def apply(source: String, destination: String, options: Options): js.Promise[Unit] = js.native
+  
   /**
   	Move a file synchronously.
   	@param source - File you want to move.
@@ -31,4 +33,3 @@ object ^ extends js.Object {
   def sync(source: String, destination: String): Unit = js.native
   def sync(source: String, destination: String, options: Options): Unit = js.native
 }
-

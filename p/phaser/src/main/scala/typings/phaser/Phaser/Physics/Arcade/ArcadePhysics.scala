@@ -9,7 +9,7 @@ import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeColliderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Arcade Physics Plugin belongs to a Scene and sets up and manages the Scene's physics simulation.
@@ -24,26 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ArcadePhysics extends js.Object {
-  /**
-    * An object holding the Arcade Physics factory methods.
-    */
-  var add: Factory = js.native
-  /**
-    * A configuration object. Union of the `physics.arcade.*` properties of the GameConfig and SceneConfig objects.
-    */
-  var config: js.Object = js.native
-  /**
-    * The Scene that this Plugin belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * The Scene's Systems.
-    */
-  var systems: Systems = js.native
-  /**
-    * The physics simulation.
-    */
-  var world: World = js.native
+  
   /**
     * Sets the acceleration.x/y property on the game object so it will move towards the x/y coordinates at the given rate (in pixels per second squared)
     * 
@@ -87,6 +68,7 @@ trait ArcadePhysics extends js.Object {
   ): Double = js.native
   def accelerateTo(gameObject: GameObject, x: Double, y: Double, speed: Double, xSpeedMax: Double): Double = js.native
   def accelerateTo(gameObject: GameObject, x: Double, y: Double, speed: Double, xSpeedMax: Double, ySpeedMax: Double): Double = js.native
+  
   /**
     * Sets the acceleration.x/y property on the game object so it will move towards the x/y coordinates at the given rate (in pixels per second squared)
     * 
@@ -137,6 +119,12 @@ trait ArcadePhysics extends js.Object {
     xSpeedMax: Double,
     ySpeedMax: Double
   ): Double = js.native
+  
+  /**
+    * An object holding the Arcade Physics factory methods.
+    */
+  var add: Factory = js.native
+  
   /**
     * Finds the Body or Game Object closest to a source point or object.
     * 
@@ -152,6 +140,7 @@ trait ArcadePhysics extends js.Object {
     */
   def closest(source: js.Any): Body | StaticBody | GameObject = js.native
   def closest(source: js.Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
+  
   /**
     * Performs a collision check and separation between the two physics enabled objects given, which can be single
     * Game Objects, arrays of Game Objects, Physics Groups, arrays of Physics Groups or normal Groups.
@@ -224,6 +213,7 @@ trait ArcadePhysics extends js.Object {
     callbackContext: js.Any
   ): Boolean = js.native
   def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
+  
   /**
     * This advanced method is specifically for testing for collision between a single Sprite and an array of Tile objects.
     * 
@@ -287,11 +277,18 @@ trait ArcadePhysics extends js.Object {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  
+  /**
+    * A configuration object. Union of the `physics.arcade.*` properties of the GameConfig and SceneConfig objects.
+    */
+  var config: js.Object = js.native
+  
   /**
     * The Scene that owns this plugin is being destroyed.
     * We need to shutdown and then kill off all external references.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Finds the Body or Game Object farthest from a source point or object.
     * 
@@ -307,10 +304,12 @@ trait ArcadePhysics extends js.Object {
     */
   def furthest(source: js.Any): Body | StaticBody | GameObject = js.native
   def furthest(source: js.Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
+  
   /**
     * Creates the physics configuration for the current Scene.
     */
   def getConfig(): js.Object = js.native
+  
   /**
     * Move the given display object towards the x/y coordinates at a steady velocity.
     * If you specify a maxTime then it will adjust the speed (over-writing what you set) so it arrives at the destination in that number of seconds.
@@ -328,6 +327,7 @@ trait ArcadePhysics extends js.Object {
   def moveTo(gameObject: GameObject, x: Double, y: Double, speed: js.UndefOr[scala.Nothing], maxTime: Double): Double = js.native
   def moveTo(gameObject: GameObject, x: Double, y: Double, speed: Double): Double = js.native
   def moveTo(gameObject: GameObject, x: Double, y: Double, speed: Double, maxTime: Double): Double = js.native
+  
   /**
     * Move the given display object towards the destination object at a steady velocity.
     * If you specify a maxTime then it will adjust the speed (overwriting what you set) so it arrives at the destination in that number of seconds.
@@ -344,6 +344,7 @@ trait ArcadePhysics extends js.Object {
   def moveToObject(gameObject: GameObject, destination: js.Object, speed: js.UndefOr[scala.Nothing], maxTime: Double): Double = js.native
   def moveToObject(gameObject: GameObject, destination: js.Object, speed: Double): Double = js.native
   def moveToObject(gameObject: GameObject, destination: js.Object, speed: Double, maxTime: Double): Double = js.native
+  
   /**
     * Tests if Game Objects overlap. See {@link Phaser.Physics.Arcade.World#overlap}
     * @param object1 The first object or array of objects to check.
@@ -399,6 +400,7 @@ trait ArcadePhysics extends js.Object {
     callbackContext: js.Any
   ): Boolean = js.native
   def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
+  
   /**
     * This method will search the given circular area and return an array of all physics bodies that
     * overlap with it. It can return either Dynamic, Static bodies or a mixture of both.
@@ -424,6 +426,7 @@ trait ArcadePhysics extends js.Object {
   ): js.Array[Body | StaticBody] = js.native
   def overlapCirc(x: Double, y: Double, radius: Double, includeDynamic: Boolean): js.Array[Body | StaticBody] = js.native
   def overlapCirc(x: Double, y: Double, radius: Double, includeDynamic: Boolean, includeStatic: Boolean): js.Array[Body | StaticBody] = js.native
+  
   /**
     * This method will search the given rectangular area and return an array of all physics bodies that
     * overlap with it. It can return either Dynamic, Static bodies or a mixture of both.
@@ -458,6 +461,7 @@ trait ArcadePhysics extends js.Object {
     includeDynamic: Boolean,
     includeStatic: Boolean
   ): js.Array[Body | StaticBody] = js.native
+  
   /**
     * This advanced method is specifically for testing for overlaps between a single Sprite and an array of Tile objects.
     * 
@@ -516,19 +520,33 @@ trait ArcadePhysics extends js.Object {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  
   /**
     * Pauses the simulation.
     */
   def pause(): World = js.native
+  
   /**
     * Resumes the simulation (if paused).
     */
   def resume(): World = js.native
+  
+  /**
+    * The Scene that this Plugin belongs to.
+    */
+  var scene: Scene = js.native
+  
   /**
     * The Scene that owns this plugin is shutting down.
     * We need to kill and reset all internal properties as well as stop listening to Scene events.
     */
   def shutdown(): Unit = js.native
+  
+  /**
+    * The Scene's Systems.
+    */
+  var systems: Systems = js.native
+  
   /**
     * Given the angle (in degrees) and speed calculate the velocity and return it as a vector, or set it to the given vector object.
     * One way to use this is: velocityFromAngle(angle, 200, sprite.body.velocity) which will set the values directly to the sprite's velocity and not create a new vector object.
@@ -540,6 +558,7 @@ trait ArcadePhysics extends js.Object {
   def velocityFromAngle(angle: Double, speed: js.UndefOr[scala.Nothing], vec2: Vector2): Vector2 = js.native
   def velocityFromAngle(angle: Double, speed: Double): Vector2 = js.native
   def velocityFromAngle(angle: Double, speed: Double, vec2: Vector2): Vector2 = js.native
+  
   /**
     * Given the rotation (in radians) and speed calculate the velocity and return it as a vector, or set it to the given vector object.
     * One way to use this is: velocityFromRotation(rotation, 200, sprite.body.velocity) which will set the values directly to the sprite's velocity and not create a new vector object.
@@ -551,5 +570,9 @@ trait ArcadePhysics extends js.Object {
   def velocityFromRotation(rotation: Double, speed: js.UndefOr[scala.Nothing], vec2: Vector2): Vector2 = js.native
   def velocityFromRotation(rotation: Double, speed: Double): Vector2 = js.native
   def velocityFromRotation(rotation: Double, speed: Double, vec2: Vector2): Vector2 = js.native
+  
+  /**
+    * The physics simulation.
+    */
+  var world: World = js.native
 }
-

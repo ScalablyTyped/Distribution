@@ -5,10 +5,11 @@ import typings.hapi.hapiStrings.peek
 import typings.podium.mod.Podium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResponseEvents extends Podium {
+  
   @JSName("on")
   def on_finish(criteria: finish, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
   /**
@@ -17,6 +18,7 @@ trait ResponseEvents extends Podium {
     */
   @JSName("on")
   def on_peek(criteria: peek, listener: PeekListener): Unit = js.native
+  
   @JSName("once")
   def once_finish(criteria: finish, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
   /**
@@ -26,4 +28,3 @@ trait ResponseEvents extends Podium {
   @JSName("once")
   def once_peek(criteria: peek, listener: PeekListener): Unit = js.native
 }
-

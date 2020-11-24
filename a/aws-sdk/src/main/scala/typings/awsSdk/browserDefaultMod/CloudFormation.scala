@@ -4,7 +4,7 @@ import typings.awsSdk.cloudformationMod.ClientConfiguration
 import typings.awsSdk.cloudformationMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "CloudFormation")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class CloudFormation () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

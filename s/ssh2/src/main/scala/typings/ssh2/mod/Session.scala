@@ -15,10 +15,11 @@ import typings.ssh2.ssh2Strings.x11
 import typings.ssh2Streams.mod.SFTPStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Session extends EventEmitter {
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
@@ -143,4 +144,3 @@ trait Session extends EventEmitter {
     ]
   ): this.type = js.native
 }
-

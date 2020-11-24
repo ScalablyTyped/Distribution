@@ -11,8 +11,8 @@ Parse JSON with more helpful errors
 | Full name          | parse-json |
 | Keywords           | parse, json, graceful, error, message, humanize, friendly, helpful, string |
 | # releases         | 2 |
-| # dependents       | 169 |
-| # downloads        | 732526713 |
+| # dependents       | 220 |
+| # downloads        | 1172625266 |
 | # stars            | 11 |
 
 ## Links

@@ -11,8 +11,8 @@ A simple QR Code generator in pure JavaScript
 | Full name          | qrcode-svg |
 | Keywords           | qrcode, svg |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 76603 |
+| # dependents       | 11 |
+| # downloads        | 154140 |
 | # stars            | 1 |
 
 ## Links

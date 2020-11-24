@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A Rectangle specifies an area that is enclosed by it's top-left
@@ -48,4 +48,3 @@ class Rectangle protected ()
     */
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
-

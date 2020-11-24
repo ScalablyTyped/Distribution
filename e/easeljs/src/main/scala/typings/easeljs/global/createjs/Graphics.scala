@@ -2,17 +2,33 @@ package typings.easeljs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Graphics")
 @js.native
 class Graphics ()
   extends typings.easeljs.createjs.Graphics
-
 /* static members */
 @JSGlobal("createjs.Graphics")
 @js.native
 object Graphics extends js.Object {
+  
+  // properties
+  var BASE_64: js.Object = js.native
+  
+   // array of graphics command objects (Graphics.Fill, etc)
+  var STROKE_CAPS_MAP: js.Array[String] = js.native
+  
+  var STROKE_JOINTS_MAP: js.Array[String] = js.native
+  
+  var beginCmd: typings.easeljs.createjs.Graphics.BeginPath = js.native
+  
+  def getHSL(hue: Double, saturation: Double, lightness: Double): String = js.native
+  def getHSL(hue: Double, saturation: Double, lightness: Double, alpha: Double): String = js.native
+  
+  def getRGB(r: Double, g: Double, b: Double): String = js.native
+  def getRGB(r: Double, g: Double, b: Double, alpha: Double): String = js.native
+  
   @js.native
   class Arc protected ()
     extends typings.easeljs.createjs.Graphics.Arc {
@@ -108,16 +124,4 @@ object Graphics extends js.Object {
     extends typings.easeljs.createjs.Graphics.StrokeStyle {
     def this(width: Double, caps: String, joints: Double, miterLimit: Double) = this()
   }
-  
-  // properties
-  var BASE_64: js.Object = js.native
-   // array of graphics command objects (Graphics.Fill, etc)
-  var STROKE_CAPS_MAP: js.Array[String] = js.native
-  var STROKE_JOINTS_MAP: js.Array[String] = js.native
-  var beginCmd: typings.easeljs.createjs.Graphics.BeginPath = js.native
-  def getHSL(hue: Double, saturation: Double, lightness: Double): String = js.native
-  def getHSL(hue: Double, saturation: Double, lightness: Double, alpha: Double): String = js.native
-  def getRGB(r: Double, g: Double, b: Double): String = js.native
-  def getRGB(r: Double, g: Double, b: Double, alpha: Double): String = js.native
 }
-

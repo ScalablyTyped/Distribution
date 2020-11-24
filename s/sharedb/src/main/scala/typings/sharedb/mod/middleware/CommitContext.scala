@@ -1,9 +1,12 @@
 package typings.sharedb.mod.middleware
 
 import typings.sharedb.agentMod.^
-import typings.sharedb.mod.Op
+import typings.sharedb.mod.CreateOp
+import typings.sharedb.mod.DeleteOp
+import typings.sharedb.mod.EditOp
 import typings.sharedb.mod.SubmitRequest
 import typings.sharedb.mod.sharedb
+import typings.sharedb.sharedbMod.Op
 import typings.sharedb.sharedbStrings.afterSubmit
 import typings.sharedb.sharedbStrings.apply
 import typings.sharedb.sharedbStrings.commit
@@ -17,14 +20,14 @@ import typings.sharedb.sharedbStrings.reply
 import typings.sharedb.sharedbStrings.submit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommitContext
   extends BaseContext
      with SubmitRequest
-
 object CommitContext {
+  
   @scala.inline
   def apply(
     action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
@@ -33,8 +36,8 @@ object CommitContext {
     collection: String,
     id: String,
     index: String,
-    op: Op,
-    ops: js.Array[typings.sharedb.sharedbMod.Op],
+    op: CreateOp | DeleteOp | EditOp,
+    ops: js.Array[Op],
     options: js.Any,
     retries: Double,
     start: Double
@@ -43,4 +46,3 @@ object CommitContext {
     __obj.asInstanceOf[CommitContext]
   }
 }
-

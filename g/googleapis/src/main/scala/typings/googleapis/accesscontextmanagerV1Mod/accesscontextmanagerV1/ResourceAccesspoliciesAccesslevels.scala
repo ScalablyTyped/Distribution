@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/accesscontextmanager/v1", "accesscontextmanager_v1.Resource$Accesspolicies$Accesslevels")
 @js.native
 class ResourceAccesspoliciesAccesslevels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.accessLevels.create
     * @desc Create an Access Level. The longrunning operation from this RPC
@@ -48,6 +50,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.accessLevels.delete
     * @desc Delete an Access Level by resource name. The longrunning operation
@@ -81,6 +84,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.accessLevels.get
     * @desc Get an Access Level by resource name.
@@ -113,6 +117,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccessLevel]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.accessLevels.list
     * @desc List all Access Levels for an access policy.
@@ -147,6 +152,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAccessLevelsResponse]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.accessLevels.patch
     * @desc Update an Access Level. The longrunning operation from this RPC
@@ -184,4 +190,3 @@ class ResourceAccesspoliciesAccesslevels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

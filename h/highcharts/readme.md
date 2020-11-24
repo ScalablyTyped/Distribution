@@ -1,7 +1,7 @@
 
 # Scala.js typings for highcharts
 
-Typings are for version 8.1.2
+Typings are for version 8.2.2
 
 ## Library description:
 JavaScript charting framework
@@ -11,8 +11,8 @@ JavaScript charting framework
 | Full name          | highcharts |
 | Keywords           | charts, dataviz, graphs, visualization, data, browserify, webpack |
 | # releases         | 22 |
-| # dependents       | 305 |
-| # downloads        | 15725156 |
+| # dependents       | 395 |
+| # downloads        | 24625752 |
 | # stars            | 19 |
 
 ## Links

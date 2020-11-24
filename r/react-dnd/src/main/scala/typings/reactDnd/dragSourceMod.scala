@@ -7,11 +7,12 @@ import typings.reactDnd.interfacesMod.DragSourceSpec
 import typings.reactDnd.optionsMod.DndOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd/lib/decorators/DragSource", JSImport.Namespace)
 @js.native
 object dragSourceMod extends js.Object {
+  
   def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: js.Function1[/* props */ RequiredProps, SourceType],
     spec: DragSourceSpec[RequiredProps, DragObject],
@@ -35,4 +36,3 @@ object dragSourceMod extends js.Object {
     options: DndOptions[RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = js.native
 }
-

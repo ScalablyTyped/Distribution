@@ -2,7 +2,7 @@ package typings.babylonjs.mathsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "Viewport")
 @js.native
@@ -26,4 +26,3 @@ class Viewport protected ()
   height: Double
   ) = this()
 }
-

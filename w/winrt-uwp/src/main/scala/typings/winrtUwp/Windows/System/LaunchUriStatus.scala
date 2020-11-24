@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LaunchUriStatus extends js.Object
-
 /** Specifies the result of activating an application. */
 @JSGlobal("Windows.System.LaunchUriStatus")
 @js.native
 object LaunchUriStatus extends js.Object {
+  
   /** The application cannot be activated which may be because it is being updated by the store, it was installed on a removable device that is not available, and so on. */
   @js.native
   sealed trait appUnavailable extends LaunchUriStatus
@@ -26,6 +26,4 @@ object LaunchUriStatus extends js.Object {
   /** An unknown error was encountered while activating the application. */
   @js.native
   sealed trait unknown extends LaunchUriStatus
-  
 }
-

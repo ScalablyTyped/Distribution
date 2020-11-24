@@ -6,7 +6,7 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "ImageTile")
 @js.native
@@ -34,6 +34,7 @@ class ImageTile protected () extends Tile {
     crossOrigin: String,
     tileLoadFunction: TileLoadFunctionType
   ) = this()
+  
   /**
     * Get the image element for this tile.
     * @inheritDoc
@@ -42,4 +43,3 @@ class ImageTile protected () extends Tile {
   def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
   def getImage(opt_context: GlobalObject): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
 }
-

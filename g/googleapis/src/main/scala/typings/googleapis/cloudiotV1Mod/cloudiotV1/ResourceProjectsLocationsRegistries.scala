@@ -6,15 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries")
 @js.native
 class ResourceProjectsLocationsRegistries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var devices: ResourceProjectsLocationsRegistriesDevices = js.native
-  var groups: ResourceProjectsLocationsRegistriesGroups = js.native
+  
   /**
     * cloudiot.projects.locations.registries.bindDeviceToGateway
     * @desc Associates the device with the gateway.
@@ -47,6 +45,9 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBindDeviceToGatewayResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudiot.projects.locations.registries.create
     * @desc Creates a device registry that contains devices.
@@ -79,6 +80,7 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceRegistry]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.delete
     * @desc Deletes a device registry configuration.
@@ -110,6 +112,9 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var devices: ResourceProjectsLocationsRegistriesDevices = js.native
+  
   /**
     * cloudiot.projects.locations.registries.get
     * @desc Gets a device registry configuration.
@@ -141,6 +146,7 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceRegistry]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -174,6 +180,9 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var groups: ResourceProjectsLocationsRegistriesGroups = js.native
+  
   /**
     * cloudiot.projects.locations.registries.list
     * @desc Lists device registries.
@@ -207,6 +216,7 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDeviceRegistriesResponse]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.patch
     * @desc Updates a device registry configuration.
@@ -240,6 +250,7 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceRegistry]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -273,6 +284,7 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -307,6 +319,7 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.unbindDeviceFromGateway
     * @desc Deletes the association between the device and the gateway.
@@ -340,4 +353,3 @@ class ResourceProjectsLocationsRegistries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUnbindDeviceFromGatewayResponse]
   ): Unit = js.native
 }
-

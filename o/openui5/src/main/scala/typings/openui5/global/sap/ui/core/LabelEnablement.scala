@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.LabelEnablement")
 @js.native
 object LabelEnablement extends js.Object {
+  
   /**
     * This function should be called on a label control to enrich it's functionality.<b>Usage:</b>The
     * function can be called with a control
@@ -26,12 +27,14 @@ object LabelEnablement extends js.Object {
     * @param oControl the label control which should be enriched with further label functionality.
     */
   def enrich(oControl: typings.openui5.sap.ui.core.Control): Unit = js.native
+  
   /**
     * Returns an array of ids of the labels referencing the given element
     * @param oElement The element whose referencing labels should be returned
     * @returns an array of ids of the labels referencing the given element
     */
   def getReferencingLabels(oElement: typings.openui5.sap.ui.core.Element): js.Array[String] = js.native
+  
   /**
     * Returns <code>true</code> when the given control is required (property 'required') or one of its
     * referencing labels, <code>false</code> otherwise.
@@ -41,6 +44,7 @@ object LabelEnablement extends js.Object {
     * referencing labels, <code>false</code> otherwise
     */
   def isRequired(oElement: typings.openui5.sap.ui.core.Element): Boolean = js.native
+  
   /**
     * Helper function for the label control to render the html 'for' attribute. This function should be
     * calledat the desired location in the renderer code of the label control.
@@ -50,4 +54,3 @@ object LabelEnablement extends js.Object {
     */
   def writeLabelForAttribute(oRenderManager: typings.openui5.sap.ui.core.RenderManager, oLabel: js.Any): Unit = js.native
 }
-

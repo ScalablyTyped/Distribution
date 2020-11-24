@@ -12,7 +12,7 @@ Spec helpers for testing angular v.1.x apps with Mocha, Jasmine or QUnit
 | Keywords           | angular, mocha, chai, mocks, testing, client-side |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 55436 |
+| # downloads        | 71198 |
 | # stars            | 1 |
 
 ## Links

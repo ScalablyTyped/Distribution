@@ -21,13 +21,17 @@ import typings.chromaJs.chromaJsStrings.saturate
 import typings.chromaJs.chromaJsStrings.temperature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Scale[OutType] extends js.Object {
+  
+  def apply(): OutType = js.native
   def apply(c: js.Array[String]): Scale[Color] = js.native
   def apply(value: Double): OutType = js.native
+  
   def cache(use: Boolean): Boolean = js.native
+  
   def classes(c: js.Array[Double]): this.type = js.native
   /**
     * If you want the scale function to return a distinct set of colors instead of a continuous gradient, you can
@@ -35,6 +39,7 @@ trait Scale[OutType] extends js.Object {
     * You can also define custom class breaks by passing them as array
     */
   def classes(c: Double): this.type = js.native
+  
   /**
     * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
     * arguments, scale.colors returns the original array of colors used to create the scale.
@@ -117,8 +122,10 @@ trait Scale[OutType] extends js.Object {
   def colors_temperature(c: js.UndefOr[scala.Nothing], format: temperature): js.Array[Double] = js.native
   @JSName("colors")
   def colors_temperature(c: Double, format: temperature): js.Array[Double] = js.native
+  
   def correctLightness(): this.type = js.native
   def correctLightness(enable: Boolean): this.type = js.native
+  
   def domain(): this.type = js.native
   def domain(d: js.UndefOr[scala.Nothing], n: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
   def domain(d: js.UndefOr[scala.Nothing], n: Double): this.type = js.native
@@ -127,8 +134,11 @@ trait Scale[OutType] extends js.Object {
   def domain(d: js.Array[Double], n: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
   def domain(d: js.Array[Double], n: Double): this.type = js.native
   def domain(d: js.Array[Double], n: Double, mode: String): this.type = js.native
+  
   def gamma(g: Double): this.type = js.native
+  
   def mode(mode: InterpolationMode): this.type = js.native
+  
   /**
     * Set out format for scale() call. Passing null will result in a scale which outputs colors.
     */
@@ -155,7 +165,7 @@ trait Scale[OutType] extends js.Object {
   def out_rgb(format: rgb): Scale[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("out")
   def out_rgba(format: rgba): Scale[js.Tuple4[Double, Double, Double, Double]] = js.native
+  
   def padding(p: js.Array[Double]): this.type = js.native
   def padding(p: Double): this.type = js.native
 }
-

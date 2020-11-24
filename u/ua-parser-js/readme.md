@@ -10,9 +10,9 @@ Lightweight JavaScript-based user-agent string parser
 | ------------------ | :-------------: |
 | Full name          | ua-parser-js |
 | Keywords           | user-agent, parser, browser, engine, os, device, cpu, jquery-plugin, ecosystem:jquery |
-| # releases         | 5 |
-| # dependents       | 394 |
-| # downloads        | 214438744 |
+| # releases         | 3 |
+| # dependents       | 491 |
+| # downloads        | 247142515 |
 | # stars            | 51 |
 
 ## Links

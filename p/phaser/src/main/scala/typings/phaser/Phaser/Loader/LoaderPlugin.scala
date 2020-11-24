@@ -42,7 +42,7 @@ import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Loader handles loading all external content such as Images, Sounds, Texture Atlases and data files.
@@ -71,127 +71,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LoaderPlugin extends EventEmitter {
-  /**
-    * If you want to append a URL before the path of any asset you can set this here.
-    * 
-    * Useful if allowing the asset base url to be configured outside of the game code.
-    * 
-    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setBaseURL()` and it'll do it for you.
-    */
-  var baseURL: String = js.native
-  /**
-    * A reference to the global Cache Manager.
-    */
-  var cacheManager: CacheManager = js.native
-  /**
-    * The crossOrigin value applied to loaded images. Very often this needs to be set to 'anonymous'.
-    */
-  var crossOrigin: String = js.native
-  /**
-    * Files are stored in this Set while they're in the process of being loaded.
-    * 
-    * Upon a successful load they are moved to the `queue` Set.
-    * 
-    * By the end of the load process this Set will be empty.
-    */
-  var inflight: Set[File] = js.native
-  /**
-    * Files are placed in this Set when they're added to the Loader via `addFile`.
-    * 
-    * They are moved to the `inflight` Set when they start loading, and assuming a successful
-    * load, to the `queue` Set for further processing.
-    * 
-    * By the end of the load process this Set will be empty.
-    */
-  var list: Set[File] = js.native
-  /**
-    * The number of concurrent / parallel resources to try and fetch at once.
-    * 
-    * Old browsers limit 6 requests per domain; modern ones, especially those with HTTP/2 don't limit it at all.
-    * 
-    * The default is 32 but you can change this in your Game Config, or by changing this property before the Loader starts.
-    */
-  var maxParallelDownloads: integer = js.native
-  /**
-    * The value of `path`, if set, is placed before any _relative_ file path given. For example:
-    * 
-    * ```javascript
-    * this.load.path = "images/sprites/";
-    * this.load.image("ball", "ball.png");
-    * this.load.image("tree", "level1/oaktree.png");
-    * this.load.image("boom", "http://server.com/explode.png");
-    * ```
-    * 
-    * Would load the `ball` file from `images/sprites/ball.png` and the tree from
-    * `images/sprites/level1/oaktree.png` but the file `boom` would load from the URL
-    * given as it's an absolute URL.
-    * 
-    * Please note that the path is added before the filename but *after* the baseURL (if set.)
-    * 
-    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setPath()` and it'll do it for you.
-    */
-  var path: String = js.native
-  /**
-    * An optional prefix that is automatically prepended to the start of every file key.
-    * If prefix was `MENU.` and you load an image with the key 'Background' the resulting key would be `MENU.Background`.
-    * You can set this directly, or call `Loader.setPrefix()`. It will then affect every file added to the Loader
-    * from that point on. It does _not_ change any file already in the load queue.
-    */
-  var prefix: String = js.native
-  /**
-    * The progress of the current load queue, as a float value between 0 and 1.
-    * This is updated automatically as files complete loading.
-    * Note that it is possible for this value to go down again if you add content to the current load queue during a load.
-    */
-  var progress: Double = js.native
-  /**
-    * Files are stored in this Set while they're being processed.
-    * 
-    * If the process is successful they are moved to their final destination, which could be
-    * a Cache or the Texture Manager.
-    * 
-    * At the end of the load process this Set will be empty.
-    */
-  var queue: Set[File] = js.native
-  /**
-    * The Scene which owns this Loader instance.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the global Scene Manager.
-    */
-  var sceneManager: SceneManager = js.native
-  /**
-    * The current state of the Loader.
-    */
-  val state: integer = js.native
-  /**
-    * A reference to the Scene Systems.
-    */
-  var systems: Systems = js.native
-  /**
-    * A reference to the global Texture Manager.
-    */
-  var textureManager: TextureManager = js.native
-  /**
-    * The total number of files that successfully loaded during the most recent load.
-    * This value is reset when you call `Loader.start`.
-    */
-  var totalComplete: integer = js.native
-  /**
-    * The total number of files that failed to load during the most recent load.
-    * This value is reset when you call `Loader.start`.
-    */
-  var totalFailed: integer = js.native
-  /**
-    * The total number of files to load. It may not always be accurate because you may add to the Loader during the process
-    * of loading, especially if you load a Pack File. Therefore this value can change, but in most cases remains static.
-    */
-  var totalToLoad: integer = js.native
-  /**
-    * xhr specific global settings (can be overridden on a per-file basis)
-    */
-  var xhr: XHRSettingsObject = js.native
+  
   def addFile(file: js.Array[File]): Unit = js.native
   /**
     * Adds a file, or array of files, into the load queue.
@@ -206,6 +86,7 @@ trait LoaderPlugin extends EventEmitter {
     * @param file The file, or array of files, to be added to the load queue.
     */
   def addFile(file: File): Unit = js.native
+  
   /**
     * Takes a well formed, fully parsed pack file object and adds its entries into the load queue. Usually you do not call
     * this method directly, but instead use `Loader.pack` and supply a path to a JSON file that holds the
@@ -219,6 +100,7 @@ trait LoaderPlugin extends EventEmitter {
     */
   def addPack(pack: js.Any): Boolean = js.native
   def addPack(pack: js.Any, packKey: String): Boolean = js.native
+  
   /**
     * Adds an Animation JSON Data file, or array of Animation JSON files, to the current load queue.
     * 
@@ -368,6 +250,7 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def animation(key: JSONFileConfig, url: String, dataKey: String): this.type = js.native
   def animation(key: JSONFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds a JSON based Texture Atlas, or array of atlases, to the current load queue.
     * 
@@ -473,6 +356,7 @@ trait LoaderPlugin extends EventEmitter {
     textureXhrSettings: js.UndefOr[XHRSettingsObject],
     atlasXhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
   /**
     * Adds an XML based Texture Atlas, or array of atlases, to the current load queue.
     * 
@@ -574,6 +458,7 @@ trait LoaderPlugin extends EventEmitter {
     textureXhrSettings: js.UndefOr[XHRSettingsObject],
     atlasXhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
   /**
     * Adds an Audio or HTML5Audio file, or array of audio files, to the current load queue.
     * 
@@ -716,6 +601,7 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def audio(key: AudioFileConfig, urls: js.Array[String], config: js.Any): this.type = js.native
   def audio(key: AudioFileConfig, urls: js.Array[String], config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds a JSON based Audio Sprite, or array of audio sprites, to the current load queue.
     * 
@@ -817,6 +703,16 @@ trait LoaderPlugin extends EventEmitter {
     audioXhrSettings: js.UndefOr[XHRSettingsObject],
     jsonXhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
+  /**
+    * If you want to append a URL before the path of any asset you can set this here.
+    * 
+    * Useful if allowing the asset base url to be configured outside of the game code.
+    * 
+    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setBaseURL()` and it'll do it for you.
+    */
+  var baseURL: String = js.native
+  
   /**
     * Adds a Binary file, or array of Binary files, to the current load queue.
     * 
@@ -938,6 +834,7 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def binary(key: BinaryFileConfig, url: String, dataType: js.Any): this.type = js.native
   def binary(key: BinaryFileConfig, url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an XML based Bitmap Font, or array of fonts, to the current load queue.
     * 
@@ -1037,6 +934,17 @@ trait LoaderPlugin extends EventEmitter {
     textureXhrSettings: js.UndefOr[XHRSettingsObject],
     fontDataXhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
+  /**
+    * A reference to the global Cache Manager.
+    */
+  var cacheManager: CacheManager = js.native
+  
+  /**
+    * The crossOrigin value applied to loaded images. Very often this needs to be set to 'anonymous'.
+    */
+  var crossOrigin: String = js.native
+  
   /**
     * Adds a CSS file, or array of CSS files, to the current load queue.
     * 
@@ -1098,6 +1006,7 @@ trait LoaderPlugin extends EventEmitter {
   def css(key: CSSFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def css(key: CSSFileConfig, url: String): this.type = js.native
   def css(key: CSSFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * An internal method that is called automatically by the File when it has finished processing.
     * 
@@ -1107,11 +1016,13 @@ trait LoaderPlugin extends EventEmitter {
     * @param file The file that has finished processing.
     */
   def fileProcessComplete(file: File): Unit = js.native
+  
   /**
     * Adds a File into the pending-deletion queue.
     * @param file The File to be queued for deletion when the Loader completes.
     */
   def flagForRemoval(file: File): Unit = js.native
+  
   /**
     * Adds a GLSL file, or array of GLSL files, to the current load queue.
     * In Phaser 3 GLSL files are just plain Text files at the current moment in time.
@@ -1234,6 +1145,7 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def glsl(key: GLSLFileConfig, url: String, shaderType: String): this.type = js.native
   def glsl(key: GLSLFileConfig, url: String, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an HTML file, or array of HTML files, to the current load queue.
     * 
@@ -1306,6 +1218,7 @@ trait LoaderPlugin extends EventEmitter {
   def html(key: HTMLFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def html(key: HTMLFileConfig, url: String): this.type = js.native
   def html(key: HTMLFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an HTML File, or array of HTML Files, to the current load queue. When the files are loaded they
     * will be rendered to textures and stored in the Texture Manager.
@@ -1586,6 +1499,7 @@ trait LoaderPlugin extends EventEmitter {
     height: integer,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
+  
   /**
     * Adds an Image, or array of Images, to the current load queue.
     * 
@@ -1688,14 +1602,26 @@ trait LoaderPlugin extends EventEmitter {
   def image(key: ImageFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
   def image(key: ImageFileConfig, url: js.Array[String]): this.type = js.native
   def image(key: ImageFileConfig, url: js.Array[String], xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * Files are stored in this Set while they're in the process of being loaded.
+    * 
+    * Upon a successful load they are moved to the `queue` Set.
+    * 
+    * By the end of the load process this Set will be empty.
+    */
+  var inflight: Set[File] = js.native
+  
   /**
     * Is the Loader actively loading, or processing loaded files?
     */
   def isLoading(): Boolean = js.native
+  
   /**
     * Is the Loader ready to start a new load?
     */
   def isReady(): Boolean = js.native
+  
   /**
     * Adds a JSON file, or array of JSON files, to the current load queue.
     * 
@@ -1856,12 +1782,24 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def json(key: JSONFileConfig, url: js.Object, dataKey: String): this.type = js.native
   def json(key: JSONFileConfig, url: js.Object, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Checks the key and type of the given file to see if it will conflict with anything already
     * in a Cache, the Texture Manager, or the list or inflight queues.
     * @param file The file to check the key of.
     */
   def keyExists(file: File): Boolean = js.native
+  
+  /**
+    * Files are placed in this Set when they're added to the Loader via `addFile`.
+    * 
+    * They are moved to the `inflight` Set when they start loading, and assuming a successful
+    * load, to the `queue` Set for further processing.
+    * 
+    * By the end of the load process this Set will be empty.
+    */
+  var list: Set[File] = js.native
+  
   /**
     * Called at the end when the load queue is exhausted and all files have either loaded or errored.
     * By this point every loaded file will now be in its associated cache and ready for use.
@@ -1869,6 +1807,16 @@ trait LoaderPlugin extends EventEmitter {
     * Also clears down the Sets, puts progress to 1 and clears the deletion queue.
     */
   def loadComplete(): Unit = js.native
+  
+  /**
+    * The number of concurrent / parallel resources to try and fetch at once.
+    * 
+    * Old browsers limit 6 requests per domain; modern ones, especially those with HTTP/2 don't limit it at all.
+    * 
+    * The default is 32 but you can change this in your Game Config, or by changing this property before the Loader starts.
+    */
+  var maxParallelDownloads: integer = js.native
+  
   /**
     * Adds a Multi Texture Atlas, or array of multi atlases, to the current load queue.
     * 
@@ -2151,6 +2099,7 @@ trait LoaderPlugin extends EventEmitter {
     baseURL: String,
     atlasXhrSettings: XHRSettingsObject
   ): this.type = js.native
+  
   /**
     * An internal method called automatically by the XHRLoader belong to a File.
     * 
@@ -2160,6 +2109,7 @@ trait LoaderPlugin extends EventEmitter {
     * @param success `true` if the file loaded successfully, otherwise `false`.
     */
   def nextFile(file: File, success: Boolean): Unit = js.native
+  
   /**
     * Adds a JSON File Pack, or array of packs, to the current load queue.
     * 
@@ -2331,6 +2281,27 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def pack(key: PackFileConfig, url: String, dataKey: String): this.type = js.native
   def pack(key: PackFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * The value of `path`, if set, is placed before any _relative_ file path given. For example:
+    * 
+    * ```javascript
+    * this.load.path = "images/sprites/";
+    * this.load.image("ball", "ball.png");
+    * this.load.image("tree", "level1/oaktree.png");
+    * this.load.image("boom", "http://server.com/explode.png");
+    * ```
+    * 
+    * Would load the `ball` file from `images/sprites/ball.png` and the tree from
+    * `images/sprites/level1/oaktree.png` but the file `boom` would load from the URL
+    * given as it's an absolute URL.
+    * 
+    * Please note that the path is added before the filename but *after* the baseURL (if set.)
+    * 
+    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setPath()` and it'll do it for you.
+    */
+  var path: String = js.native
+  
   /**
     * Adds a Plugin Script file, or array of plugin files, to the current load queue.
     * 
@@ -2390,6 +2361,32 @@ trait LoaderPlugin extends EventEmitter {
     mapping: js.UndefOr[String],
     xhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
+  /**
+    * An optional prefix that is automatically prepended to the start of every file key.
+    * If prefix was `MENU.` and you load an image with the key 'Background' the resulting key would be `MENU.Background`.
+    * You can set this directly, or call `Loader.setPrefix()`. It will then affect every file added to the Loader
+    * from that point on. It does _not_ change any file already in the load queue.
+    */
+  var prefix: String = js.native
+  
+  /**
+    * The progress of the current load queue, as a float value between 0 and 1.
+    * This is updated automatically as files complete loading.
+    * Note that it is possible for this value to go down again if you add content to the current load queue during a load.
+    */
+  var progress: Double = js.native
+  
+  /**
+    * Files are stored in this Set while they're being processed.
+    * 
+    * If the process is successful they are moved to their final destination, which could be
+    * a Cache or the Texture Manager.
+    * 
+    * At the end of the load process this Set will be empty.
+    */
+  var queue: Set[File] = js.native
+  
   /**
     * Resets the Loader.
     * 
@@ -2398,6 +2395,7 @@ trait LoaderPlugin extends EventEmitter {
     * Warning: If the Loader is currently downloading files, or has files in its queue, they will be aborted.
     */
   def reset(): Unit = js.native
+  
   /**
     * Causes the browser to save the given data as a file to its default Downloads folder.
     * 
@@ -2411,6 +2409,7 @@ trait LoaderPlugin extends EventEmitter {
   def save(data: js.Any, filename: js.UndefOr[scala.Nothing], filetype: String): this.type = js.native
   def save(data: js.Any, filename: String): this.type = js.native
   def save(data: js.Any, filename: String, filetype: String): this.type = js.native
+  
   /**
     * Converts the given JSON data into a file that the browser then prompts you to download so you can save it locally.
     * 
@@ -2420,6 +2419,12 @@ trait LoaderPlugin extends EventEmitter {
     */
   def saveJSON(data: js.Any): this.type = js.native
   def saveJSON(data: js.Any, filename: String): this.type = js.native
+  
+  /**
+    * The Scene which owns this Loader instance.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Adds an external Scene file, or array of Scene files, to the current load queue.
     * 
@@ -2520,6 +2525,12 @@ trait LoaderPlugin extends EventEmitter {
   def sceneFile(key: SceneFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def sceneFile(key: SceneFileConfig, url: String): this.type = js.native
   def sceneFile(key: SceneFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * A reference to the global Scene Manager.
+    */
+  var sceneManager: SceneManager = js.native
+  
   /**
     * Adds a Scene Plugin Script file, or array of plugin files, to the current load queue.
     * 
@@ -2579,6 +2590,7 @@ trait LoaderPlugin extends EventEmitter {
     sceneKey: js.UndefOr[String],
     xhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
   /**
     * Adds a Script file, or array of Script files, to the current load queue.
     * 
@@ -2641,6 +2653,7 @@ trait LoaderPlugin extends EventEmitter {
   def script(key: ScriptFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def script(key: ScriptFileConfig, url: String): this.type = js.native
   def script(key: ScriptFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an array of Script files to the current load queue.
     * 
@@ -2783,6 +2796,7 @@ trait LoaderPlugin extends EventEmitter {
     extension: String,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
+  
   /**
     * If you want to append a URL before the path of any asset you can set this here.
     * 
@@ -2794,6 +2808,7 @@ trait LoaderPlugin extends EventEmitter {
     */
   def setBaseURL(): this.type = js.native
   def setBaseURL(url: String): this.type = js.native
+  
   /**
     * Sets the Cross Origin Resource Sharing value used when loading files.
     * 
@@ -2807,6 +2822,7 @@ trait LoaderPlugin extends EventEmitter {
     */
   def setCORS(): this.type = js.native
   def setCORS(crossOrigin: String): this.type = js.native
+  
   /**
     * The value of `path`, if set, is placed before any _relative_ file path given. For example:
     * 
@@ -2829,6 +2845,7 @@ trait LoaderPlugin extends EventEmitter {
     */
   def setPath(): this.type = js.native
   def setPath(path: String): this.type = js.native
+  
   /**
     * An optional prefix that is automatically prepended to the start of every file key.
     * 
@@ -2840,6 +2857,7 @@ trait LoaderPlugin extends EventEmitter {
     */
   def setPrefix(): this.type = js.native
   def setPrefix(prefix: String): this.type = js.native
+  
   def spine(key: String, jsonURL: String, atlasURL: String): LoaderPlugin = js.native
   def spine(
     key: String,
@@ -3133,6 +3151,7 @@ trait LoaderPlugin extends EventEmitter {
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
+  
   /**
     * Adds a Sprite Sheet Image, or array of Sprite Sheet Images, to the current load queue.
     * 
@@ -3312,6 +3331,7 @@ trait LoaderPlugin extends EventEmitter {
     frameConfig: ImageFrameConfig,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
+  
   /**
     * Starts the Loader running. This will reset the progress and totals and then emit a `start` event.
     * If there is nothing in the queue the Loader will immediately complete, otherwise it will start
@@ -3324,6 +3344,12 @@ trait LoaderPlugin extends EventEmitter {
     * If the Loader is already running this method will simply return.
     */
   def start(): Unit = js.native
+  
+  /**
+    * The current state of the Loader.
+    */
+  val state: integer = js.native
+  
   /**
     * Adds an SVG File, or array of SVG Files, to the current load queue. When the files are loaded they
     * will be rendered to bitmap textures and stored in the Texture Manager.
@@ -3503,6 +3529,12 @@ trait LoaderPlugin extends EventEmitter {
   ): this.type = js.native
   def svg(key: SVGFileConfig, url: String, svgConfig: SVGSizeConfig): this.type = js.native
   def svg(key: SVGFileConfig, url: String, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * A reference to the Scene Systems.
+    */
+  var systems: Systems = js.native
+  
   /**
     * Adds a Text file, or array of Text files, to the current load queue.
     * 
@@ -3575,6 +3607,12 @@ trait LoaderPlugin extends EventEmitter {
   def text(key: TextFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def text(key: TextFileConfig, url: String): this.type = js.native
   def text(key: TextFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * A reference to the global Texture Manager.
+    */
+  var textureManager: TextureManager = js.native
+  
   /**
     * Adds a CSV Tilemap file, or array of CSV files, to the current load queue.
     * 
@@ -3653,6 +3691,7 @@ trait LoaderPlugin extends EventEmitter {
   def tilemapCSV(key: TilemapCSVFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def tilemapCSV(key: TilemapCSVFileConfig, url: String): this.type = js.native
   def tilemapCSV(key: TilemapCSVFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an Impact.js Tilemap file, or array of map files, to the current load queue.
     * 
@@ -3731,6 +3770,7 @@ trait LoaderPlugin extends EventEmitter {
   def tilemapImpact(key: TilemapImpactFileConfig, url: js.UndefOr[scala.Nothing], xhrSettings: XHRSettingsObject): this.type = js.native
   def tilemapImpact(key: TilemapImpactFileConfig, url: String): this.type = js.native
   def tilemapImpact(key: TilemapImpactFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds a Tiled JSON Tilemap file, or array of map files, to the current load queue.
     * 
@@ -3815,6 +3855,25 @@ trait LoaderPlugin extends EventEmitter {
   def tilemapTiledJSON(key: TilemapJSONFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
   def tilemapTiledJSON(key: TilemapJSONFileConfig, url: js.Object): this.type = js.native
   def tilemapTiledJSON(key: TilemapJSONFileConfig, url: js.Object, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * The total number of files that successfully loaded during the most recent load.
+    * This value is reset when you call `Loader.start`.
+    */
+  var totalComplete: integer = js.native
+  
+  /**
+    * The total number of files that failed to load during the most recent load.
+    * This value is reset when you call `Loader.start`.
+    */
+  var totalFailed: integer = js.native
+  
+  /**
+    * The total number of files to load. It may not always be accurate because you may add to the Loader during the process
+    * of loading, especially if you load a Pack File. Therefore this value can change, but in most cases remains static.
+    */
+  var totalToLoad: integer = js.native
+  
   /**
     * Adds a Unity YAML based Texture Atlas, or array of atlases, to the current load queue.
     * 
@@ -3915,16 +3974,19 @@ trait LoaderPlugin extends EventEmitter {
     textureXhrSettings: js.UndefOr[XHRSettingsObject],
     atlasXhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
   /**
     * Called automatically during the load process.
     */
   def update(): Unit = js.native
+  
   /**
     * Called automatically during the load process.
     * It updates the `progress` value and then emits a progress event, which you can use to
     * display a loading bar in your game.
     */
   def updateProgress(): Unit = js.native
+  
   /**
     * Adds a Video file, or array of video files, to the current load queue.
     * 
@@ -3989,6 +4051,12 @@ trait LoaderPlugin extends EventEmitter {
     noAudio: js.UndefOr[Boolean],
     xhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
+  
+  /**
+    * xhr specific global settings (can be overridden on a per-file basis)
+    */
+  var xhr: XHRSettingsObject = js.native
+  
   /**
     * Adds an XML file, or array of XML files, to the current load queue.
     * 
@@ -4062,4 +4130,3 @@ trait LoaderPlugin extends EventEmitter {
   def xml(key: XMLFileConfig, url: String): this.type = js.native
   def xml(key: XMLFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
 }
-

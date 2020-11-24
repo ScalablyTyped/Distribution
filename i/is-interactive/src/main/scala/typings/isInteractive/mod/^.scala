@@ -2,11 +2,12 @@ package typings.isInteractive.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("is-interactive", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Check if stdout or stderr is [interactive](https://unix.stackexchange.com/a/43389/7678).
   It checks that the stream is [TTY](https://jameshfisher.com/2017/12/09/what-is-a-tty/), not a dumb terminal, and not running in a CI.
@@ -21,4 +22,3 @@ object ^ extends js.Object {
   def apply(): Boolean = js.native
   def apply(options: Options): Boolean = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeType extends js.Object
-
 /**
   * The shape types. Many of these shapes correspond to predefined shapes from the ECMA-376 standard.
   * More information on those shapes can be found in the description of the "ST_ShapeType" simple
@@ -17,6 +16,7 @@ sealed trait ShapeType extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.ShapeType")
 @js.native
 object ShapeType extends js.Object {
+  
   @js.native
   sealed trait ARC extends ShapeType
   
@@ -445,6 +445,4 @@ object ShapeType extends js.Object {
   
   @js.native
   sealed trait WEDGE_ROUND_RECTANGLE_CALLOUT extends ShapeType
-  
 }
-

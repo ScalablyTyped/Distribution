@@ -6,15 +6,6 @@ import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove
-import typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.as
 import typings.oracleOraclejet.oracleOraclejetStrings.asChanged
@@ -35,6 +26,15 @@ import typings.oracleOraclejet.oracleOraclejetStrings.icons
 import typings.oracleOraclejet.oracleOraclejetStrings.item
 import typings.oracleOraclejet.oracleOraclejetStrings.itemChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentItem
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDeselect
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRemove
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeSelect
+import typings.oracleOraclejet.oracleOraclejetStrings.ojDeselect
+import typings.oracleOraclejet.oracleOraclejetStrings.ojRemove
+import typings.oracleOraclejet.oracleOraclejetStrings.ojReorder
 import typings.oracleOraclejet.oracleOraclejetStrings.overflow
 import typings.oracleOraclejet.oracleOraclejetStrings.overflowChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.popup
@@ -52,51 +52,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
-  var as: String = js.native
-  var currentItem: js.Any = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var display: all | icons = js.native
-  var edge: top | bottom | start | end = js.native
-  var item: RendererSelectable[K, D] = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCurrentItemChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
-  var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | bottom | start | end], _]) | Null = js.native
-  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[RendererSelectable[K, D]], _]) | Null = js.native
-  var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onOjBeforeCurrentItem: (js.Function1[/* event */ ojBeforeCurrentItem, _]) | Null = js.native
-  var onOjBeforeDeselect: (js.Function1[/* event */ ojBeforeDeselect, _]) | Null = js.native
-  var onOjBeforeRemove: (js.Function1[/* event */ ojBeforeRemove, _]) | Null = js.native
-  var onOjBeforeSelect: (js.Function1[/* event */ ojBeforeSelect, _]) | Null = js.native
-  var onOjDeselect: (js.Function1[/* event */ ojDeselect, _]) | Null = js.native
-  var onOjRemove: (js.Function1[/* event */ ojRemove, _]) | Null = js.native
-  var onOjReorder: (js.Function1[/* event */ ojReorder, _]) | Null = js.native
-  var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], _]) | Null = js.native
-  var onReorderableChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onTruncationChanged: (js.Function1[/* event */ JetElementCustomEvent[none | progressive], _]) | Null = js.native
-  var overflow: popup | hidden = js.native
-  var reorderable: enabled | disabled = js.native
-  var selection: js.Any = js.native
-  @JSName("translations")
-  var translations_ojTabBar_ : AccessibleReorderAfterItem = js.native
-  var truncation: none | progressive = js.native
+  
   def addEventListener(
     `type`: currentItemChanged,
     listener: js.ThisFunction1[
@@ -235,104 +195,188 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _]
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _],
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _]
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _],
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentItem(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentItem,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentItem, _]
+    `type`: ojBeforeCurrentItem,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentItem(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentItem,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentItem, _],
+    `type`: ojBeforeCurrentItem,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeDeselect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDeselect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeDeselect, _]
+    `type`: ojBeforeDeselect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeDeselect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDeselect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeDeselect, _],
+    `type`: ojBeforeDeselect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeRemove(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRemove,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeRemove, _]
+    `type`: ojBeforeRemove,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeRemove(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRemove,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeRemove, _],
+    `type`: ojBeforeRemove,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeSelect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeSelect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeSelect, _]
+    `type`: ojBeforeSelect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeSelect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeSelect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeSelect, _],
+    `type`: ojBeforeSelect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDeselect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDeselect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDeselect, _]
+    `type`: ojDeselect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDeselect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDeselect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDeselect, _],
+    `type`: ojDeselect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojRemove(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojRemove,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojRemove, _]
+    `type`: ojRemove,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojRemove(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojRemove,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojRemove, _],
+    `type`: ojRemove,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojReorder(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojReorder,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojReorder, _]
+    `type`: ojReorder,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojReorder(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojReorder,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojReorder, _],
+    `type`: ojReorder,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var as: String = js.native
+  
+  var currentItem: js.Any = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var display: all | icons = js.native
+  
+  var edge: top | bottom | start | end = js.native
+  
   def getContextByNode(node: Element): NodeContext[K] | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
@@ -353,7 +397,71 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   def getProperty_selection(property: selection): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_truncation(property: truncation): none | progressive = js.native
+  
+  var item: RendererSelectable[K, D] = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onCurrentItemChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
+  
+  var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | bottom | start | end], _]) | Null = js.native
+  
+  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[RendererSelectable[K, D]], _]) | Null = js.native
+  
+  var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, _]) | Null = js.native
+  
+  var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, _]) | Null = js.native
+  
+  var onOjBeforeCurrentItem: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem, 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeDeselect: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect, 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeRemove: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, _]) | Null = js.native
+  
+  var onOjBeforeSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, _]) | Null = js.native
+  
+  var onOjDeselect: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, _]) | Null = js.native
+  
+  var onOjRemove: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, _]) | Null = js.native
+  
+  var onOjReorder: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, _]) | Null = js.native
+  
+  var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], _]) | Null = js.native
+  
+  var onReorderableChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onTruncationChanged: (js.Function1[/* event */ JetElementCustomEvent[none | progressive], _]) | Null = js.native
+  
+  var overflow: popup | hidden = js.native
+  
+  var reorderable: enabled | disabled = js.native
+  
+  var selection: js.Any = js.native
+  
   def setProperties(properties: ojTabBarSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: display, value: all): Unit = js.native
   def setProperty(property: display, value: icons): Unit = js.native
   def setProperty(property: edge, value: bottom): Unit = js.native
@@ -380,5 +488,9 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   def setProperty_selection(property: selection, value: js.Any): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: AccessibleReorderAfterItem): Unit = js.native
+  
+  @JSName("translations")
+  var translations_ojTabBar_ : AccessibleReorderAfterItem = js.native
+  
+  var truncation: none | progressive = js.native
 }
-

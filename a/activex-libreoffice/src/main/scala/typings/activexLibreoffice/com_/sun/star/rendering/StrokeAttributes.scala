@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains all attributes required for path stroking.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait StrokeAttributes extends js.Object {
+  
   /**
     * Array of ink on and off lengths, measured in user coordinate space.
     *
@@ -21,6 +22,7 @@ trait StrokeAttributes extends js.Object {
     * Furthermore, each entry in this array must have a value that is positive (or 0.0)
     */
   var DashArray: SafeArray[Double] = js.native
+  
   /**
     * The end shape of the stroke.
     *
@@ -28,6 +30,7 @@ trait StrokeAttributes extends js.Object {
     * @see PathCapType
     */
   var EndCapType: Double = js.native
+  
   /**
     * The join shape of the stroke.
     *
@@ -37,6 +40,7 @@ trait StrokeAttributes extends js.Object {
     * @see PathJoinType
     */
   var JoinType: Double = js.native
+  
   /**
     * Array of line widths and spacings for multiple-line strokes.
     *
@@ -46,6 +50,7 @@ trait StrokeAttributes extends js.Object {
     * spacing, this spacing is included in the total width of the multiple-line stroke. That is, the stroke becomes asymmetric.
     */
   var LineArray: SafeArray[Double] = js.native
+  
   /**
     * Determines the maximal length of the diagonal in mitered corners.
     *
@@ -57,6 +62,7 @@ trait StrokeAttributes extends js.Object {
     * angle between the two joining segments, MiterLimit=1/sin(phi/2.0).
     */
   var MiterLimit: Double = js.native
+  
   /**
     * The start shape of the stroke.
     *
@@ -64,6 +70,7 @@ trait StrokeAttributes extends js.Object {
     * @see PathCapType
     */
   var StartCapType: Double = js.native
+  
   /**
     * Defines the width of the stroke, measured in user coordinate space.
     *
@@ -71,8 +78,8 @@ trait StrokeAttributes extends js.Object {
     */
   var StrokeWidth: Double = js.native
 }
-
 object StrokeAttributes {
+  
   @scala.inline
   def apply(
     DashArray: SafeArray[Double],
@@ -86,32 +93,41 @@ object StrokeAttributes {
     val __obj = js.Dynamic.literal(DashArray = DashArray.asInstanceOf[js.Any], EndCapType = EndCapType.asInstanceOf[js.Any], JoinType = JoinType.asInstanceOf[js.Any], LineArray = LineArray.asInstanceOf[js.Any], MiterLimit = MiterLimit.asInstanceOf[js.Any], StartCapType = StartCapType.asInstanceOf[js.Any], StrokeWidth = StrokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrokeAttributes]
   }
+  
   @scala.inline
   implicit class StrokeAttributesOps[Self <: StrokeAttributes] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDashArray(value: SafeArray[Double]): Self = this.set("DashArray", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndCapType(value: Double): Self = this.set("EndCapType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setJoinType(value: Double): Self = this.set("JoinType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineArray(value: SafeArray[Double]): Self = this.set("LineArray", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMiterLimit(value: Double): Self = this.set("MiterLimit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartCapType(value: Double): Self = this.set("StartCapType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStrokeWidth(value: Double): Self = this.set("StrokeWidth", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -12,143 +12,12 @@ import typings.mangopay2NodejsSdk.mod.settlementTransfer.SettlementTransferData
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Disputes")
 @js.native
 class Disputes () extends js.Object {
-  /**
-    * Close dispute
-    * @param disputeId
-    * @param options
-    */
-  @JSName("closeDispute")
-  var closeDispute_Original: MethodOverload[String, DisputeData] = js.native
-  /**
-    * Contest dispute
-    * @param disputeId
-    * @param contestedFunds
-    * @param options
-    */
-  @JSName("contestDispute")
-  var contestDispute_Original: TwoArgsMethodOverload[String, MoneyData, DisputeData] = js.native
-  /**
-    * Creates document's page for dispute from file
-    * @param disputeId
-    * @param disputeDocumentId
-    * @param file
-    * @param options
-    */
-  @JSName("createDisputeDocumentPageFromFile")
-  var createDisputeDocumentPageFromFile_Original: ThreeArgsMethodOverload[String, String, String, DisputeDocumentData] = js.native
-  /**
-    * Creates document's page for dispute
-    * @param disputeId
-    * @param disputeDocumentId
-    * @param disputeDocumentPage
-    * @param options
-    */
-  @JSName("createDisputeDocumentPage")
-  var createDisputeDocumentPage_Original: ThreeArgsMethodOverload[String, String, CreateDisputeDocumentPage, DisputeDocumentData] = js.native
-  /**
-    * Creates document for dispute
-    * @param disputeId
-    * @param disputeDocument
-    * @param options
-    */
-  @JSName("createDisputeDocument")
-  var createDisputeDocument_Original: TwoArgsMethodOverload[String, CreateDisputeDocument, DisputeDocumentData] = js.native
-  /**
-    * Creates settlement transfer
-    * @param settlementTransfer
-    * @param repudiationId
-    * @param options
-    */
-  @JSName("createSettlementTransfer")
-  var createSettlementTransfer_Original: TwoArgsMethodOverload[CreateSettlementTransfer, String, SettlementTransferData] = js.native
-  /**
-    * Get all disputes
-    * @param options
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[DisputeData]] = js.native
-  /**
-    * Gets user's disputes
-    * @param userId
-    * @param options
-    */
-  @JSName("getDisputesForUser")
-  var getDisputesForUser_Original: MethodOverload[String, js.Array[DisputeData]] = js.native
-  /**
-    * Gets dispute's documents for wallet
-    * @param walletId
-    * @param options
-    */
-  @JSName("getDisputesForWallet")
-  var getDisputesForWallet_Original: MethodOverload[String, js.Array[DisputeData]] = js.native
-  /**
-    * Gets documents for dispute
-    * @param disputeId
-    * @param options
-    */
-  @JSName("getDocumentsForDispute")
-  var getDocumentsForDispute_Original: MethodOverload[String, js.Array[DisputeDocumentData]] = js.native
-  /**
-    * Retrieve a list of Disputes pending settlement
-    * @param options
-    */
-  @JSName("getPendingSettlement")
-  var getPendingSettlement_Original: NoArgMethodOverload[js.Array[DisputeData]] = js.native
-  /**
-    * Gets repudiation
-    * @param repudiationId
-    * @param options
-    */
-  @JSName("getRepudiation")
-  var getRepudiation_Original: MethodOverload[String, js.Array[RepudiationData]] = js.native
-  /**
-    * Gets settlement transfer
-    * @param settlementTransferId
-    * @param options
-    */
-  @JSName("getSettlementTransfer")
-  var getSettlementTransfer_Original: MethodOverload[String, SettlementTransferData] = js.native
-  /**
-    * Gets dispute's transactions
-    * @param disputeId
-    * @param options
-    */
-  @JSName("getTransactions")
-  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
-  /**
-    * Get dispute
-    * @param disputeId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, DisputeData] = js.native
-  /**
-    * This method is used to resubmit a Dispute if it is reopened requiring more docs
-    * @param disputeId
-    * @param options
-    */
-  @JSName("resubmitDispute")
-  var resubmitDispute_Original: MethodOverload[String, DisputeData] = js.native
-  /**
-    * Update dispute document
-    * @param disputeId
-    * @param disputeDocument
-    * @param options
-    */
-  @JSName("updateDisputeDocument")
-  var updateDisputeDocument_Original: TwoArgsMethodOverload[String, PartialDisputeDocumentDat, DisputeDocumentData] = js.native
-  /**
-    * Update dispute's tag
-    * @param dispute
-    * @param options
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateDispute, DisputeData] = js.native
+  
   /**
     * Close dispute
     * @param disputeId
@@ -183,6 +52,14 @@ class Disputes () extends js.Object {
     */
   def closeDispute(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeData]] = js.native
   def closeDispute(data: String, options: MethodOptionWithoutResponse): js.Promise[DisputeData] = js.native
+  /**
+    * Close dispute
+    * @param disputeId
+    * @param options
+    */
+  @JSName("closeDispute")
+  var closeDispute_Original: MethodOverload[String, DisputeData] = js.native
+  
   /**
     * Contest dispute
     * @param disputeId
@@ -221,6 +98,15 @@ class Disputes () extends js.Object {
     */
   def contestDispute(data: String, extra: MoneyData, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeData]] = js.native
   def contestDispute(data: String, extra: MoneyData, options: MethodOptionWithoutResponse): js.Promise[DisputeData] = js.native
+  /**
+    * Contest dispute
+    * @param disputeId
+    * @param contestedFunds
+    * @param options
+    */
+  @JSName("contestDispute")
+  var contestDispute_Original: TwoArgsMethodOverload[String, MoneyData, DisputeData] = js.native
+  
   /**
     * Creates document for dispute
     * @param disputeId
@@ -262,6 +148,7 @@ class Disputes () extends js.Object {
     */
   def createDisputeDocument(data: String, extra: CreateDisputeDocument, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeDocumentData]] = js.native
   def createDisputeDocument(data: String, extra: CreateDisputeDocument, options: MethodOptionWithoutResponse): js.Promise[DisputeDocumentData] = js.native
+  
   /**
     * Creates document's page for dispute
     * @param disputeId
@@ -314,6 +201,7 @@ class Disputes () extends js.Object {
     lastArg: CreateDisputeDocumentPage,
     options: MethodOptionWithoutResponse
   ): js.Promise[DisputeDocumentData] = js.native
+  
   /**
     * Creates document's page for dispute from file
     * @param disputeId
@@ -362,6 +250,35 @@ class Disputes () extends js.Object {
   def createDisputeDocumentPageFromFile(data: String, extra: String, lastArg: String, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeDocumentData]] = js.native
   def createDisputeDocumentPageFromFile(data: String, extra: String, lastArg: String, options: MethodOptionWithoutResponse): js.Promise[DisputeDocumentData] = js.native
   /**
+    * Creates document's page for dispute from file
+    * @param disputeId
+    * @param disputeDocumentId
+    * @param file
+    * @param options
+    */
+  @JSName("createDisputeDocumentPageFromFile")
+  var createDisputeDocumentPageFromFile_Original: ThreeArgsMethodOverload[String, String, String, DisputeDocumentData] = js.native
+  
+  /**
+    * Creates document's page for dispute
+    * @param disputeId
+    * @param disputeDocumentId
+    * @param disputeDocumentPage
+    * @param options
+    */
+  @JSName("createDisputeDocumentPage")
+  var createDisputeDocumentPage_Original: ThreeArgsMethodOverload[String, String, CreateDisputeDocumentPage, DisputeDocumentData] = js.native
+  
+  /**
+    * Creates document for dispute
+    * @param disputeId
+    * @param disputeDocument
+    * @param options
+    */
+  @JSName("createDisputeDocument")
+  var createDisputeDocument_Original: TwoArgsMethodOverload[String, CreateDisputeDocument, DisputeDocumentData] = js.native
+  
+  /**
     * Creates settlement transfer
     * @param settlementTransfer
     * @param repudiationId
@@ -403,6 +320,15 @@ class Disputes () extends js.Object {
   def createSettlementTransfer(data: CreateSettlementTransfer, extra: String, options: MethodOptionWithResponse): js.Promise[WithResponse[SettlementTransferData]] = js.native
   def createSettlementTransfer(data: CreateSettlementTransfer, extra: String, options: MethodOptionWithoutResponse): js.Promise[SettlementTransferData] = js.native
   /**
+    * Creates settlement transfer
+    * @param settlementTransfer
+    * @param repudiationId
+    * @param options
+    */
+  @JSName("createSettlementTransfer")
+  var createSettlementTransfer_Original: TwoArgsMethodOverload[CreateSettlementTransfer, String, SettlementTransferData] = js.native
+  
+  /**
     * Get dispute
     * @param disputeId
     * @param options
@@ -436,6 +362,7 @@ class Disputes () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[DisputeData] = js.native
+  
   /**
     * Get all disputes
     * @param options
@@ -465,6 +392,13 @@ class Disputes () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[DisputeData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[DisputeData]] = js.native
+  /**
+    * Get all disputes
+    * @param options
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[DisputeData]] = js.native
+  
   /**
     * Gets user's disputes
     * @param userId
@@ -500,6 +434,14 @@ class Disputes () extends js.Object {
   def getDisputesForUser(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[DisputeData]]] = js.native
   def getDisputesForUser(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[DisputeData]] = js.native
   /**
+    * Gets user's disputes
+    * @param userId
+    * @param options
+    */
+  @JSName("getDisputesForUser")
+  var getDisputesForUser_Original: MethodOverload[String, js.Array[DisputeData]] = js.native
+  
+  /**
     * Gets dispute's documents for wallet
     * @param walletId
     * @param options
@@ -533,6 +475,14 @@ class Disputes () extends js.Object {
     */
   def getDisputesForWallet(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[DisputeData]]] = js.native
   def getDisputesForWallet(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[DisputeData]] = js.native
+  /**
+    * Gets dispute's documents for wallet
+    * @param walletId
+    * @param options
+    */
+  @JSName("getDisputesForWallet")
+  var getDisputesForWallet_Original: MethodOverload[String, js.Array[DisputeData]] = js.native
+  
   /**
     * Gets documents for dispute
     * @param disputeId
@@ -568,6 +518,14 @@ class Disputes () extends js.Object {
   def getDocumentsForDispute(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[DisputeDocumentData]]] = js.native
   def getDocumentsForDispute(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[DisputeDocumentData]] = js.native
   /**
+    * Gets documents for dispute
+    * @param disputeId
+    * @param options
+    */
+  @JSName("getDocumentsForDispute")
+  var getDocumentsForDispute_Original: MethodOverload[String, js.Array[DisputeDocumentData]] = js.native
+  
+  /**
     * Retrieve a list of Disputes pending settlement
     * @param options
     */
@@ -596,6 +554,13 @@ class Disputes () extends js.Object {
     */
   def getPendingSettlement(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[DisputeData]]] = js.native
   def getPendingSettlement(options: MethodOptionWithoutResponse): js.Promise[js.Array[DisputeData]] = js.native
+  /**
+    * Retrieve a list of Disputes pending settlement
+    * @param options
+    */
+  @JSName("getPendingSettlement")
+  var getPendingSettlement_Original: NoArgMethodOverload[js.Array[DisputeData]] = js.native
+  
   /**
     * Gets repudiation
     * @param repudiationId
@@ -631,6 +596,14 @@ class Disputes () extends js.Object {
   def getRepudiation(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[RepudiationData]]] = js.native
   def getRepudiation(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[RepudiationData]] = js.native
   /**
+    * Gets repudiation
+    * @param repudiationId
+    * @param options
+    */
+  @JSName("getRepudiation")
+  var getRepudiation_Original: MethodOverload[String, js.Array[RepudiationData]] = js.native
+  
+  /**
     * Gets settlement transfer
     * @param settlementTransferId
     * @param options
@@ -664,6 +637,14 @@ class Disputes () extends js.Object {
     */
   def getSettlementTransfer(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[SettlementTransferData]] = js.native
   def getSettlementTransfer(data: String, options: MethodOptionWithoutResponse): js.Promise[SettlementTransferData] = js.native
+  /**
+    * Gets settlement transfer
+    * @param settlementTransferId
+    * @param options
+    */
+  @JSName("getSettlementTransfer")
+  var getSettlementTransfer_Original: MethodOverload[String, SettlementTransferData] = js.native
+  
   /**
     * Gets dispute's transactions
     * @param disputeId
@@ -699,6 +680,22 @@ class Disputes () extends js.Object {
   def getTransactions(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[TransactionData]]] = js.native
   def getTransactions(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[TransactionData]] = js.native
   /**
+    * Gets dispute's transactions
+    * @param disputeId
+    * @param options
+    */
+  @JSName("getTransactions")
+  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
+  
+  /**
+    * Get dispute
+    * @param disputeId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, DisputeData] = js.native
+  
+  /**
     * This method is used to resubmit a Dispute if it is reopened requiring more docs
     * @param disputeId
     * @param options
@@ -733,6 +730,14 @@ class Disputes () extends js.Object {
   def resubmitDispute(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeData]] = js.native
   def resubmitDispute(data: String, options: MethodOptionWithoutResponse): js.Promise[DisputeData] = js.native
   /**
+    * This method is used to resubmit a Dispute if it is reopened requiring more docs
+    * @param disputeId
+    * @param options
+    */
+  @JSName("resubmitDispute")
+  var resubmitDispute_Original: MethodOverload[String, DisputeData] = js.native
+  
+  /**
     * Update dispute's tag
     * @param dispute
     * @param options
@@ -766,6 +771,7 @@ class Disputes () extends js.Object {
     */
   def update(data: UpdateDispute, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeData]] = js.native
   def update(data: UpdateDispute, options: MethodOptionWithoutResponse): js.Promise[DisputeData] = js.native
+  
   /**
     * Update dispute document
     * @param disputeId
@@ -807,5 +813,20 @@ class Disputes () extends js.Object {
     */
   def updateDisputeDocument(data: String, extra: PartialDisputeDocumentDat, options: MethodOptionWithResponse): js.Promise[WithResponse[DisputeDocumentData]] = js.native
   def updateDisputeDocument(data: String, extra: PartialDisputeDocumentDat, options: MethodOptionWithoutResponse): js.Promise[DisputeDocumentData] = js.native
+  /**
+    * Update dispute document
+    * @param disputeId
+    * @param disputeDocument
+    * @param options
+    */
+  @JSName("updateDisputeDocument")
+  var updateDisputeDocument_Original: TwoArgsMethodOverload[String, PartialDisputeDocumentDat, DisputeDocumentData] = js.native
+  
+  /**
+    * Update dispute's tag
+    * @param dispute
+    * @param options
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateDispute, DisputeData] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This decorator limit the number of times its child can be called. After a
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Limiter extends BaseNode
-
 object Limiter {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -32,4 +32,3 @@ object Limiter {
     __obj.asInstanceOf[Limiter]
   }
 }
-

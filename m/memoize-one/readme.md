@@ -10,9 +10,9 @@ A memoization library which only remembers the latest invocation
 | ------------------ | :-------------: |
 | Full name          | memoize-one |
 | Keywords           | memoize, memoization, cache, performance |
-| # releases         | 22 |
-| # dependents       | 621 |
-| # downloads        | 88877508 |
+| # releases         | 17 |
+| # dependents       | 846 |
+| # downloads        | 151978381 |
 | # stars            | 2 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-csv__parse
 
-Typings are for version 4.3.1
+Typings are for version 4.3.3
 
 ## Library description:
 fast-csv parsing package
@@ -10,9 +10,9 @@ fast-csv parsing package
 | ------------------ | :-------------: |
 | Full name          | @fast-csv/parse |
 | Keywords           | csv, parse, fast-csv, parser |
-| # releases         | 14 |
+| # releases         | 15 |
 | # dependents       | 4 |
-| # downloads        | 483404 |
+| # downloads        | 1466354 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ A plugin for the Karma test runner that loads .html and .json fixtures
 | Keywords           | karma, karma-plugin, fixtures, fixture |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 697257 |
+| # downloads        | 649666 |
 | # stars            | 5 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.angular.JQLite
 import typings.angular.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This corresponds to $transclude passed to controllers and to the transclude function passed to link functions.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ITranscludeFunction extends js.Object {
+  
   // If one argument is provided, then it's assumed to be the cloneAttachFn.
   def apply(): JQLite = js.native
   def apply(
@@ -40,9 +41,9 @@ trait ITranscludeFunction extends js.Object {
   ): JQLite = js.native
   def apply(scope: IScope, cloneAttachFn: ICloneAttachFunction, futureParentElement: JQuery): JQLite = js.native
   def apply(scope: IScope, cloneAttachFn: ICloneAttachFunction, futureParentElement: JQuery, slotName: String): JQLite = js.native
+  
   /**
     * Returns true if the specified slot contains content (i.e. one or more DOM nodes)
     */
   def isSlotFilled(slotName: String): Boolean = js.native
 }
-

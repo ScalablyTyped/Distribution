@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description Utility methods to create different kinds of alert dialogs. There are three methods available: alert, confirm and prompt
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("onsenui", "notification")
 @js.native
 object notification extends js.Object {
+  
   /**
     * @param {Object} options Parameter object
     * @param {String} [options.message] Alert message
@@ -30,6 +31,7 @@ object notification extends js.Object {
   def alert(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
   def alert(message: AlertOptions): js.Promise[HTMLElement] = js.native
   def alert(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * @param {Object} options Parameter object
     * @param {String} [options.message] Confirmation question
@@ -53,6 +55,7 @@ object notification extends js.Object {
   def confirm(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
   def confirm(message: AlertOptions): js.Promise[HTMLElement] = js.native
   def confirm(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * @param {Object} options Parameter object
     * @param {String} [options.message] Prompt question
@@ -75,6 +78,6 @@ object notification extends js.Object {
   def prompt(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
   def prompt(message: AlertOptions): js.Promise[HTMLElement] = js.native
   def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  
   def toast(args: js.Any*): js.Any = js.native
 }
-

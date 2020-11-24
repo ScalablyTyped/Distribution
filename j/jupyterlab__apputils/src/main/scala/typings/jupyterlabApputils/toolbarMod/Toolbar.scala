@@ -7,7 +7,7 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar")
 @js.native
@@ -15,7 +15,9 @@ import scala.scalajs.js.annotation._
   * Construct a new toolbar widget.
   */
 class Toolbar[T /* <: Widget */] () extends Widget {
+  
   var _insertRelative: js.Any = js.native
+  
   /**
     * Add an item to the end of the toolbar.
     *
@@ -32,10 +34,12 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     * The item can be removed from the toolbar by setting its parent to `null`.
     */
   def addItem(name: String, widget: T): Boolean = js.native
+  
   /**
     * Handle a DOM click event.
     */
   /* protected */ def handleClick(event: Event): Unit = js.native
+  
   /**
     * Handle the DOM events for the widget.
     *
@@ -47,6 +51,7 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * Insert an item into the toolbar at the after a target item.
     *
@@ -64,6 +69,7 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     * The item can be removed from the toolbar by setting its parent to `null`.
     */
   def insertAfter(at: String, name: String, widget: T): Boolean = js.native
+  
   /**
     * Insert an item into the toolbar at the before a target item.
     *
@@ -81,6 +87,7 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     * The item can be removed from the toolbar by setting its parent to `null`.
     */
   def insertBefore(at: String, name: String, widget: T): Boolean = js.native
+  
   /**
     * Insert an item into the toolbar at the specified index.
     *
@@ -98,6 +105,7 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     * The item can be removed from the toolbar by setting its parent to `null`.
     */
   def insertItem(index: Double, name: String, widget: T): Boolean = js.native
+  
   /**
     * Get an iterator over the ordered toolbar item names.
     *
@@ -105,14 +113,15 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     */
   def names(): IIterator[String] = js.native
 }
-
 @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar")
 @js.native
 object Toolbar extends js.Object {
+  
   /**
     * Create an interrupt toolbar item.
     */
   def createInterruptButton(sessionContext: ISessionContext): Widget = js.native
+  
   /**
     * Create a kernel name indicator item.
     *
@@ -122,6 +131,7 @@ object Toolbar extends js.Object {
     */
   def createKernelNameItem(sessionContext: ISessionContext): Widget = js.native
   def createKernelNameItem(sessionContext: ISessionContext, dialogs: IDialogs): Widget = js.native
+  
   /**
     * Create a kernel status indicator item.
     *
@@ -131,11 +141,13 @@ object Toolbar extends js.Object {
     * It can handle a change to the context or the kernel.
     */
   def createKernelStatusItem(sessionContext: ISessionContext): Widget = js.native
+  
   /**
     * Create a restart toolbar item.
     */
   def createRestartButton(sessionContext: ISessionContext): Widget = js.native
   def createRestartButton(sessionContext: ISessionContext, dialogs: IDialogs): Widget = js.native
+  
   /**
     * Create a toolbar spacer item.
     *
@@ -145,4 +157,3 @@ object Toolbar extends js.Object {
     */
   def createSpacerItem(): Widget = js.native
 }
-

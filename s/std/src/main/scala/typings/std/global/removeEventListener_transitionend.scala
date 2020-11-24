@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.transitionend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_transitionend extends js.Object {
+  
   def apply(
     `type`: transitionend,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, _]
@@ -25,4 +26,3 @@ object removeEventListener_transitionend extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

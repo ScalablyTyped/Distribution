@@ -14,7 +14,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Matter Factory is responsible for quickly creating a variety of different types of
@@ -32,18 +32,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Factory extends js.Object {
-  /**
-    * The Scene which this Factory's Matter World belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene.Systems this Matter Physics instance belongs to.
-    */
-  var sys: Systems = js.native
-  /**
-    * The Matter World which this Factory adds to.
-    */
-  var world: World = js.native
+  
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @param x The horizontal position of the car in the world.
@@ -53,6 +42,7 @@ trait Factory extends js.Object {
     * @param wheelSize The radius of the car wheels.
     */
   def car(x: Double, y: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  
   /**
     * Chains all bodies in the given composite together using constraints.
     * @param composite The composite in which all bodies will be chained together sequentially.
@@ -71,6 +61,7 @@ trait Factory extends js.Object {
     yOffsetB: Double,
     options: MatterConstraintConfig
   ): CompositeType = js.native
+  
   /**
     * Creates a new rigid circular Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -83,6 +74,7 @@ trait Factory extends js.Object {
   def circle(x: Double, y: Double, radius: Double, options: js.UndefOr[scala.Nothing], maxSides: Double): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: MatterBodyConfig): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: MatterBodyConfig, maxSides: Double): BodyType = js.native
+  
   /**
     * Constraints (or joints) are used for specifying that a fixed distance must be maintained
     * between two bodies, or a body and a fixed world-space position.
@@ -134,10 +126,12 @@ trait Factory extends js.Object {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  
   /**
     * Destroys this Factory.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Creates a body using the supplied physics data, as provided by a JSON file.
     * 
@@ -185,6 +179,7 @@ trait Factory extends js.Object {
   def fromJSON(x: Double, y: Double, config: js.Any, options: js.UndefOr[scala.Nothing], addToWorld: Boolean): BodyType = js.native
   def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
   def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  
   /**
     * Creates a body using data exported from the application PhysicsEditor (https://www.codeandweb.com/physicseditor)
     * 
@@ -216,6 +211,7 @@ trait Factory extends js.Object {
   def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: js.UndefOr[scala.Nothing], addToWorld: Boolean): BodyType = js.native
   def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
   def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  
   /**
     * Creates a body using the path data from an SVG file.
     * 
@@ -278,6 +274,7 @@ trait Factory extends js.Object {
     options: MatterBodyConfig,
     addToWorld: Boolean
   ): BodyType = js.native
+  
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices) and adds it to the World.
     * If the vertices are convex, they will pass through as supplied. Otherwise, if the vertices are concave, they will be decomposed. Note that this process is not guaranteed to support complex sets of vertices, e.g. ones with holes.
@@ -517,6 +514,7 @@ trait Factory extends js.Object {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
+  
   /**
     * Takes an existing Game Object and injects all of the Matter Components into it.
     * 
@@ -535,6 +533,7 @@ trait Factory extends js.Object {
   def gameObject(gameObject: GameObject, options: Body, addToWorld: Boolean): GameObject = js.native
   def gameObject(gameObject: GameObject, options: MatterBodyConfig): GameObject = js.native
   def gameObject(gameObject: GameObject, options: MatterBodyConfig, addToWorld: Boolean): GameObject = js.native
+  
   /**
     * Creates a Matter Physics Image Game Object.
     * 
@@ -554,6 +553,7 @@ trait Factory extends js.Object {
   def image(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Image = js.native
   def image(x: Double, y: Double, key: String, frame: integer): Image = js.native
   def image(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Image = js.native
+  
   /**
     * Create a new composite containing Matter Image objects created in a grid arrangement.
     * This function uses the body bounds to prevent overlaps.
@@ -707,6 +707,7 @@ trait Factory extends js.Object {
     rowGap: Double,
     options: MatterBodyConfig
   ): CompositeType = js.native
+  
   /**
     * This method is an alias for `Factory.constraint`.
     * 
@@ -760,6 +761,7 @@ trait Factory extends js.Object {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @param composite The composite in which all bodies will be chained together.
@@ -776,6 +778,7 @@ trait Factory extends js.Object {
     crossBrace: Boolean,
     options: MatterConstraintConfig
   ): CompositeType = js.native
+  
   /**
     * This method is an alias for `Factory.pointerConstraint`.
     * 
@@ -791,6 +794,7 @@ trait Factory extends js.Object {
     */
   def mouseSpring(): ConstraintType = js.native
   def mouseSpring(options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @param x The horizontal position of the start of the cradle.
@@ -800,6 +804,7 @@ trait Factory extends js.Object {
     * @param length The length of the 'string' the balls hang from.
     */
   def newtonsCradle(x: Double, y: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  
   /**
     * A Pointer Constraint is a special type of constraint that allows you to click
     * and drag bodies in a Matter World. It monitors the active Pointers in a Scene,
@@ -813,6 +818,7 @@ trait Factory extends js.Object {
     */
   def pointerConstraint(): ConstraintType = js.native
   def pointerConstraint(options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Creates a new rigid polygonal Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -823,6 +829,7 @@ trait Factory extends js.Object {
     */
   def polygon(x: Double, y: Double, sides: Double, radius: Double): BodyType = js.native
   def polygon(x: Double, y: Double, sides: Double, radius: Double, options: MatterBodyConfig): BodyType = js.native
+  
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body bounds to prevent overlaps.
@@ -843,6 +850,7 @@ trait Factory extends js.Object {
     rowGap: Double,
     callback: js.Function
   ): CompositeType = js.native
+  
   /**
     * Creates a new rigid rectangular Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -853,6 +861,12 @@ trait Factory extends js.Object {
     */
   def rectangle(x: Double, y: Double, width: Double, height: Double): BodyType = js.native
   def rectangle(x: Double, y: Double, width: Double, height: Double, options: MatterBodyConfig): BodyType = js.native
+  
+  /**
+    * The Scene which this Factory's Matter World belongs to.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Creates a simple soft body like object.
     * @param x The horizontal position of this composite in the world.
@@ -911,6 +925,7 @@ trait Factory extends js.Object {
     particleOptions: MatterBodyConfig,
     constraintOptions: MatterConstraintConfig
   ): CompositeType = js.native
+  
   /**
     * This method is an alias for `Factory.constraint`.
     * 
@@ -964,6 +979,7 @@ trait Factory extends js.Object {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  
   /**
     * Creates a Matter Physics Sprite Game Object.
     * 
@@ -986,6 +1002,7 @@ trait Factory extends js.Object {
   def sprite(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: integer): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Sprite = js.native
+  
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * 
@@ -1007,6 +1024,12 @@ trait Factory extends js.Object {
     rowGap: Double,
     callback: js.Function
   ): CompositeType = js.native
+  
+  /**
+    * A reference to the Scene.Systems this Matter Physics instance belongs to.
+    */
+  var sys: Systems = js.native
+  
   /**
     * Creates a wrapper around a Tile that provides access to a corresponding Matter body. A tile can only
     * have one Matter body associated with it. You can either pass in an existing Matter body for
@@ -1023,6 +1046,7 @@ trait Factory extends js.Object {
     */
   def tileBody(tile: Tile): TileBody = js.native
   def tileBody(tile: Tile, options: MatterTileOptions): TileBody = js.native
+  
   /**
     * Creates a new rigid trapezoidal Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -1034,6 +1058,12 @@ trait Factory extends js.Object {
     */
   def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): BodyType = js.native
   def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double, options: MatterBodyConfig): BodyType = js.native
+  
+  /**
+    * The Matter World which this Factory adds to.
+    */
+  var world: World = js.native
+  
   /**
     * Constraints (or joints) are used for specifying that a fixed distance must be maintained
     * between two bodies, or a body and a fixed world-space position.
@@ -1079,4 +1109,3 @@ trait Factory extends js.Object {
   def worldConstraint(body: BodyType, length: Double, stiffness: Double): ConstraintType = js.native
   def worldConstraint(body: BodyType, length: Double, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
 }
-

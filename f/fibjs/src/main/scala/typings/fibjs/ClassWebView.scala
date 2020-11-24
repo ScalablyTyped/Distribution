@@ -2,10 +2,19 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassWebView extends ClassEventEmitter {
+  
+  /**
+    * 
+    * @brief 关闭当前窗口
+    * 
+    * @async
+    */
+  def close(): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -16,6 +25,7 @@ trait ClassWebView extends ClassEventEmitter {
     * @type Function
     */
   var onclosed: js.Function = js.native
+  
   /**
     * class prop 
     *
@@ -26,6 +36,7 @@ trait ClassWebView extends ClassEventEmitter {
     * @type Function
     */
   var onload: js.Function = js.native
+  
   /**
     * class prop 
     *
@@ -36,6 +47,7 @@ trait ClassWebView extends ClassEventEmitter {
     * @type Function
     */
   var onmessage: js.Function = js.native
+  
   /**
     * class prop 
     *
@@ -55,6 +67,7 @@ trait ClassWebView extends ClassEventEmitter {
     * @type Function
     */
   var onmove: js.Function = js.native
+  
   /**
     * class prop 
     *
@@ -74,23 +87,7 @@ trait ClassWebView extends ClassEventEmitter {
     * @type Function
     */
   var onresize: js.Function = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置窗口是否显示
-    * 
-    * 
-    * @type Boolean
-    */
-  var visible: Boolean = js.native
-  /**
-    * 
-    * @brief 关闭当前窗口
-    * 
-    * @async
-    */
-  def close(): Unit = js.native
+  
   /**
     * 
     * @brief 向 webview 内发送消息
@@ -101,6 +98,7 @@ trait ClassWebView extends ClassEventEmitter {
     * @async
     */
   def postMessage(msg: String): Unit = js.native
+  
   /**
     * 
     * @brief 打印当前窗口文档
@@ -111,6 +109,7 @@ trait ClassWebView extends ClassEventEmitter {
     */
   def print(): Unit = js.native
   def print(mode: Double): Unit = js.native
+  
   /**
     * 
     * @brief 设置 webview 的页面 html
@@ -120,5 +119,15 @@ trait ClassWebView extends ClassEventEmitter {
     * @async
     */
   def setHtml(html: String): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置窗口是否显示
+    * 
+    * 
+    * @type Boolean
+    */
+  var visible: Boolean = js.native
 }
-

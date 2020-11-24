@@ -2,9 +2,34 @@ package typings.sass
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sassStrings {
+  
+  @scala.inline
+  def compressed: compressed = "compressed".asInstanceOf[compressed]
+  
+  @scala.inline
+  def cr: cr = "cr".asInstanceOf[cr]
+  
+  @scala.inline
+  def crlf: crlf = "crlf".asInstanceOf[crlf]
+  
+  @scala.inline
+  def expanded: expanded = "expanded".asInstanceOf[expanded]
+  
+  @scala.inline
+  def lf: lf = "lf".asInstanceOf[lf]
+  
+  @scala.inline
+  def lfcr: lfcr = "lfcr".asInstanceOf[lfcr]
+  
+  @scala.inline
+  def space: space = "space".asInstanceOf[space]
+  
+  @scala.inline
+  def tab: tab = "tab".asInstanceOf[tab]
+  
   @js.native
   sealed trait compressed extends js.Object
   
@@ -28,22 +53,4 @@ object sassStrings {
   
   @js.native
   sealed trait tab extends js.Object
-  
-  @scala.inline
-  def compressed: compressed = "compressed".asInstanceOf[compressed]
-  @scala.inline
-  def cr: cr = "cr".asInstanceOf[cr]
-  @scala.inline
-  def crlf: crlf = "crlf".asInstanceOf[crlf]
-  @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
-  @scala.inline
-  def lf: lf = "lf".asInstanceOf[lf]
-  @scala.inline
-  def lfcr: lfcr = "lfcr".asInstanceOf[lfcr]
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
 }
-

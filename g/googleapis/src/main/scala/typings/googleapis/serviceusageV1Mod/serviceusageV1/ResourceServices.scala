@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/serviceusage/v1", "serviceusage_v1.Resource$Services")
 @js.native
 class ResourceServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * serviceusage.services.batchEnable
     * @desc Enable multiple services on a project. The operation is atomic: if
@@ -44,6 +44,9 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * serviceusage.services.disable
     * @desc Disable a service so that it can no longer be used with a project.
@@ -78,6 +81,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceusage.services.enable
     * @desc Enable a service so that it can be used with a project.
@@ -107,6 +111,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceusage.services.get
     * @desc Returns the service configuration and enabled state for a given
@@ -139,6 +144,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleApiServiceusageV1Service]
   ): Unit = js.native
+  
   /**
     * serviceusage.services.list
     * @desc List all services available to the specified project, and the
@@ -177,4 +183,3 @@ class ResourceServices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
 }
-

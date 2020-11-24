@@ -12,7 +12,7 @@ The lodash method `_.forEachRight` exported as a module.
 | Keywords           | lodash-modularized, foreachright |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 4945 |
+| # downloads        | 4817 |
 | # stars            | 0 |
 
 ## Links

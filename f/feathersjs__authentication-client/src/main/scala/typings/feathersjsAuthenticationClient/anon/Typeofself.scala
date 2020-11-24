@@ -3,12 +3,13 @@ package typings.feathersjsAuthenticationClient.anon
 import typings.feathersjsAuthenticationClient.mod.FeathersAuthClientConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofself extends js.Object {
-  val defaults: Cookie = js.native
+  
   def default(): js.Function0[Unit] = js.native
   def default(config: FeathersAuthClientConfig): js.Function0[Unit] = js.native
+  
+  val defaults: Cookie = js.native
 }
-

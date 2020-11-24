@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassXmlDocument extends ClassXmlNode {
+  
   /**
     * class prop 
     *
@@ -17,6 +18,75 @@ trait ClassXmlDocument extends ClassXmlNode {
     * @type XmlElement
     */
   var body: ClassXmlElement = js.native
+  
+  /**
+    * 
+    * @brief 创建 XmlCDATASection 节点
+    * @param data 指定此节点规定 CDATA 数据
+    * @return 返回新创建的 XmlCDATASection 节点，内容为指定的 data
+    * 
+    * 
+    * 
+    */
+  def createCDATASection(data: String): ClassXmlCDATASection = js.native
+  
+  /**
+    * 
+    * @brief 创建注释节点
+    * @param data 指定此节点的注释文本
+    * @return 返回新创建的 XmlComment 节点，注释文本为指定的 data
+    * 
+    * 
+    * 
+    */
+  def createComment(data: String): ClassXmlComment = js.native
+  
+  /**
+    * 
+    * @brief 创建元素节点
+    * @param tagName 指定元素节点规定名称
+    * @return 返回新创建的 XmlElement 节点，具有指定的标签名
+    * 
+    * 
+    * 
+    */
+  def createElement(tagName: String): ClassXmlElement = js.native
+  
+  /**
+    * 
+    * @brief 创建带有指定命名空间的元素节点
+    * @param namespaceURI 指定元素节点命名空间 URI
+    * @param qualifiedName 指定元素节点规定名称
+    * @return 返回新创建的 XmlElement 节点，具有指定的标签名
+    * 
+    * 
+    * 
+    */
+  def createElementNS(namespaceURI: String, qualifiedName: String): ClassXmlElement = js.native
+  
+  /**
+    * 
+    * @brief 创建 XmlProcessingInstruction 节点
+    * @param target 指定处理指令的目标
+    * @param data 指定处理指令的内容文本
+    * @return 新创建的 ProcessingInstruction 节点
+    * 
+    * 
+    * 
+    */
+  def createProcessingInstruction(target: String, data: String): ClassXmlProcessingInstruction = js.native
+  
+  /**
+    * 
+    * @brief 创建文本节点
+    * @param data 指定此节点的文本
+    * @return 返回新创建的 XmlText 节点，表示指定的 data 字符串
+    * 
+    * 
+    * 
+    */
+  def createTextNode(data: String): ClassXmlText = js.native
+  
   /**
     * class prop 
     *
@@ -30,6 +100,7 @@ trait ClassXmlDocument extends ClassXmlNode {
     * @type XmlDocumentType
     */
   var doctype: ClassXmlDocumentType = js.native
+  
   /**
     * class prop 
     *
@@ -41,123 +112,7 @@ trait ClassXmlDocument extends ClassXmlNode {
     * @type XmlElement
     */
   var documentElement: ClassXmlElement = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回 HTML 文档的 head 节点，仅在 html 模式有效
-    * 
-    * 
-    * @readonly
-    * @type XmlElement
-    */
-  var head: ClassXmlElement = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回用于文档的编码（在解析时）
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var inputEncoding: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回 HTML 文档的 title 节点的内容，仅在 html 模式有效
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var title: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 设置或返回文档是否为 standalone
-    * 
-    * 
-    * 
-    * @type Boolean
-    */
-  var xmlStandalone: Boolean = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 设置或返回文档的 XML 版本
-    * 
-    * 
-    * 
-    * @type String
-    */
-  var xmlVersion: String = js.native
-  /**
-    * 
-    * @brief 创建 XmlCDATASection 节点
-    * @param data 指定此节点规定 CDATA 数据
-    * @return 返回新创建的 XmlCDATASection 节点，内容为指定的 data
-    * 
-    * 
-    * 
-    */
-  def createCDATASection(data: String): ClassXmlCDATASection = js.native
-  /**
-    * 
-    * @brief 创建注释节点
-    * @param data 指定此节点的注释文本
-    * @return 返回新创建的 XmlComment 节点，注释文本为指定的 data
-    * 
-    * 
-    * 
-    */
-  def createComment(data: String): ClassXmlComment = js.native
-  /**
-    * 
-    * @brief 创建元素节点
-    * @param tagName 指定元素节点规定名称
-    * @return 返回新创建的 XmlElement 节点，具有指定的标签名
-    * 
-    * 
-    * 
-    */
-  def createElement(tagName: String): ClassXmlElement = js.native
-  /**
-    * 
-    * @brief 创建带有指定命名空间的元素节点
-    * @param namespaceURI 指定元素节点命名空间 URI
-    * @param qualifiedName 指定元素节点规定名称
-    * @return 返回新创建的 XmlElement 节点，具有指定的标签名
-    * 
-    * 
-    * 
-    */
-  def createElementNS(namespaceURI: String, qualifiedName: String): ClassXmlElement = js.native
-  /**
-    * 
-    * @brief 创建 XmlProcessingInstruction 节点
-    * @param target 指定处理指令的目标
-    * @param data 指定处理指令的内容文本
-    * @return 新创建的 ProcessingInstruction 节点
-    * 
-    * 
-    * 
-    */
-  def createProcessingInstruction(target: String, data: String): ClassXmlProcessingInstruction = js.native
-  /**
-    * 
-    * @brief 创建文本节点
-    * @param data 指定此节点的文本
-    * @return 返回新创建的 XmlText 节点，表示指定的 data 字符串
-    * 
-    * 
-    * 
-    */
-  def createTextNode(data: String): ClassXmlText = js.native
+  
   /**
     * 
     * @brief 返回拥有指定 id 属性的元素
@@ -170,6 +125,7 @@ trait ClassXmlDocument extends ClassXmlNode {
     * 
     */
   def getElementById(id: String): ClassXmlElement = js.native
+  
   /**
     * 
     * @brief 返回带有指定 class 名称的所有元素的一个节点列表
@@ -182,6 +138,7 @@ trait ClassXmlDocument extends ClassXmlNode {
     * 
     */
   def getElementsByClassName(className: String): ClassXmlNodeList = js.native
+  
   /**
     * 
     * @brief 返回带有指定名称的所有元素的一个节点列表
@@ -194,6 +151,7 @@ trait ClassXmlDocument extends ClassXmlNode {
     * 
     */
   def getElementsByTagName(tagName: String): ClassXmlNodeList = js.native
+  
   /**
     * 
     * @brief 返回带有指定命名空间和名称的所有元素的一个节点列表
@@ -207,6 +165,31 @@ trait ClassXmlDocument extends ClassXmlNode {
     * 
     */
   def getElementsByTagNameNS(namespaceURI: String, localName: String): ClassXmlNodeList = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回 HTML 文档的 head 节点，仅在 html 模式有效
+    * 
+    * 
+    * @readonly
+    * @type XmlElement
+    */
+  var head: ClassXmlElement = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回用于文档的编码（在解析时）
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var inputEncoding: String = js.native
+  
   /**
     * 
     * @brief 通过解析一个 XML/HTML 字符串来组成该文档，不支持多语种
@@ -225,5 +208,40 @@ trait ClassXmlDocument extends ClassXmlNode {
     * 
     */
   def load(source: ClassBuffer): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回 HTML 文档的 title 节点的内容，仅在 html 模式有效
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var title: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 设置或返回文档是否为 standalone
+    * 
+    * 
+    * 
+    * @type Boolean
+    */
+  var xmlStandalone: Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 设置或返回文档的 XML 版本
+    * 
+    * 
+    * 
+    * @type String
+    */
+  var xmlVersion: String = js.native
 }
-

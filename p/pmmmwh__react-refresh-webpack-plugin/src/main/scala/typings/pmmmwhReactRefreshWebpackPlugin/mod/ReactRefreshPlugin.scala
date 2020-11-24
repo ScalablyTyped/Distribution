@@ -4,7 +4,7 @@ import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.NormalizedPluginOptions
 import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.ReactRefreshPluginOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pmmmwh/react-refresh-webpack-plugin", "ReactRefreshPlugin")
 @js.native
@@ -13,11 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class ReactRefreshPlugin () extends js.Object {
   def this(options: ReactRefreshPluginOptions) = this()
-  /**
-    * @readonly
-    * @type {import('./types').NormalizedPluginOptions}
-    */
-  val options: NormalizedPluginOptions = js.native
+  
   /**
     * Applies the plugin.
     * @param {import('webpack').Compiler} compiler A webpack compiler object.
@@ -27,5 +23,10 @@ class ReactRefreshPlugin () extends js.Object {
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
   ): Unit = js.native
+  
+  /**
+    * @readonly
+    * @type {import('./types').NormalizedPluginOptions}
+    */
+  val options: NormalizedPluginOptions = js.native
 }
-

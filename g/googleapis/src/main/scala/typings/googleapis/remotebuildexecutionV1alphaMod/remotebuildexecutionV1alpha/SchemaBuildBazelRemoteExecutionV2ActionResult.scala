@@ -2,21 +2,24 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An ActionResult represents the result of an Action being run.
   */
 @js.native
 trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
+  
   /**
     * The details of the execution that originally produced this result.
     */
   var executionMetadata: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ExecutedActionMetadata] = js.native
+  
   /**
     * The exit code of the command.
     */
   var exitCode: js.UndefOr[Double] = js.native
+  
   /**
     * The output directories of the action. For each output directory requested
     * in the `output_directories` field of the Action, if the corresponding
@@ -42,6 +45,7 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
     * is_executable: true       }     ]   } } ```
     */
   var outputDirectories: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2OutputDirectory]] = js.native
+  
   /**
     * The output directories of the action that are symbolic links to other
     * directories. Those may be links to other output directories, or input
@@ -57,6 +61,7 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
     * NOT assume that the output list is sorted.
     */
   var outputDirectorySymlinks: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink]] = js.native
+  
   /**
     * The output files of the action that are symbolic links to other files.
     * Those may be links to other output files, or input files, or even
@@ -72,6 +77,7 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
     * sorted.
     */
   var outputFileSymlinks: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink]] = js.native
+  
   /**
     * The output files of the action. For each output file requested in the
     * `output_files` field of the Action, if the corresponding file existed
@@ -84,12 +90,14 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
     * output list is sorted.
     */
   var outputFiles: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2OutputFile]] = js.native
+  
   /**
     * The digest for a blob containing the standard error of the action, which
     * can be retrieved from the ContentAddressableStorage. See `stderr_raw` for
     * when this will be set.
     */
   var stderrDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  
   /**
     * The standard error buffer of the action. The server will determine, based
     * on the size of the buffer, whether to return it in raw form or to return
@@ -99,12 +107,14 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
     * handle either.
     */
   var stderrRaw: js.UndefOr[String] = js.native
+  
   /**
     * The digest for a blob containing the standard output of the action, which
     * can be retrieved from the ContentAddressableStorage. See `stdout_raw` for
     * when this will be set.
     */
   var stdoutDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  
   /**
     * The standard output buffer of the action. The server will determine,
     * based on the size of the buffer, whether to return it in raw form or to
@@ -115,73 +125,99 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
     */
   var stdoutRaw: js.UndefOr[String] = js.native
 }
-
 object SchemaBuildBazelRemoteExecutionV2ActionResult {
+  
   @scala.inline
   def apply(): SchemaBuildBazelRemoteExecutionV2ActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ActionResult]
   }
+  
   @scala.inline
   implicit class SchemaBuildBazelRemoteExecutionV2ActionResultOps[Self <: SchemaBuildBazelRemoteExecutionV2ActionResult] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setExecutionMetadata(value: SchemaBuildBazelRemoteExecutionV2ExecutedActionMetadata): Self = this.set("executionMetadata", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExecutionMetadata: Self = this.set("executionMetadata", js.undefined)
+    
     @scala.inline
     def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    
     @scala.inline
     def setOutputDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputDirectory*): Self = this.set("outputDirectories", js.Array(value :_*))
+    
     @scala.inline
     def setOutputDirectories(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputDirectory]): Self = this.set("outputDirectories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutputDirectories: Self = this.set("outputDirectories", js.undefined)
+    
     @scala.inline
     def setOutputDirectorySymlinksVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputSymlink*): Self = this.set("outputDirectorySymlinks", js.Array(value :_*))
+    
     @scala.inline
     def setOutputDirectorySymlinks(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink]): Self = this.set("outputDirectorySymlinks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutputDirectorySymlinks: Self = this.set("outputDirectorySymlinks", js.undefined)
+    
     @scala.inline
     def setOutputFileSymlinksVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputSymlink*): Self = this.set("outputFileSymlinks", js.Array(value :_*))
+    
     @scala.inline
     def setOutputFileSymlinks(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink]): Self = this.set("outputFileSymlinks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutputFileSymlinks: Self = this.set("outputFileSymlinks", js.undefined)
+    
     @scala.inline
     def setOutputFilesVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputFile*): Self = this.set("outputFiles", js.Array(value :_*))
+    
     @scala.inline
     def setOutputFiles(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputFile]): Self = this.set("outputFiles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutputFiles: Self = this.set("outputFiles", js.undefined)
+    
     @scala.inline
     def setStderrDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("stderrDigest", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStderrDigest: Self = this.set("stderrDigest", js.undefined)
+    
     @scala.inline
     def setStderrRaw(value: String): Self = this.set("stderrRaw", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStderrRaw: Self = this.set("stderrRaw", js.undefined)
+    
     @scala.inline
     def setStdoutDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("stdoutDigest", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStdoutDigest: Self = this.set("stdoutDigest", js.undefined)
+    
     @scala.inline
     def setStdoutRaw(value: String): Self = this.set("stdoutRaw", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStdoutRaw: Self = this.set("stdoutRaw", js.undefined)
   }
-  
 }
-

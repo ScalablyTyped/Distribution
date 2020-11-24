@@ -5,11 +5,11 @@ import typings.react.mod.ComponentState
 import typings.react.mod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-jsonschema-form", "withTheme")
 @js.native
 object withTheme extends js.Object {
+  
   def apply[T](themeProps: ThemeProps[T]): (ComponentClass[FormProps[T], ComponentState]) | StatelessComponent[FormProps[T]] = js.native
 }
-

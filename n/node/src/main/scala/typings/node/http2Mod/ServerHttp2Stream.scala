@@ -5,13 +5,17 @@ import typings.node.promisesMod.FileHandle
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerHttp2Stream extends Http2Stream {
-  val headersSent: Boolean = js.native
-  val pushAllowed: Boolean = js.native
+  
   def additionalHeaders(headers: OutgoingHttpHeaders): Unit = js.native
+  
+  val headersSent: Boolean = js.native
+  
+  val pushAllowed: Boolean = js.native
+  
   def pushStream(headers: OutgoingHttpHeaders): Unit = js.native
   def pushStream(
     headers: OutgoingHttpHeaders,
@@ -43,10 +47,12 @@ trait ServerHttp2Stream extends Http2Stream {
       Unit
     ]
   ): Unit = js.native
+  
   def respond(): Unit = js.native
   def respond(headers: js.UndefOr[scala.Nothing], options: ServerStreamResponseOptions): Unit = js.native
   def respond(headers: OutgoingHttpHeaders): Unit = js.native
   def respond(headers: OutgoingHttpHeaders, options: ServerStreamResponseOptions): Unit = js.native
+  
   def respondWithFD(fd: Double): Unit = js.native
   def respondWithFD(fd: Double, headers: js.UndefOr[scala.Nothing], options: ServerStreamFileResponseOptions): Unit = js.native
   def respondWithFD(fd: Double, headers: OutgoingHttpHeaders): Unit = js.native
@@ -55,6 +61,7 @@ trait ServerHttp2Stream extends Http2Stream {
   def respondWithFD(fd: FileHandle, headers: js.UndefOr[scala.Nothing], options: ServerStreamFileResponseOptions): Unit = js.native
   def respondWithFD(fd: FileHandle, headers: OutgoingHttpHeaders): Unit = js.native
   def respondWithFD(fd: FileHandle, headers: OutgoingHttpHeaders, options: ServerStreamFileResponseOptions): Unit = js.native
+  
   def respondWithFile(path: String): Unit = js.native
   def respondWithFile(
     path: String,
@@ -64,4 +71,3 @@ trait ServerHttp2Stream extends Http2Stream {
   def respondWithFile(path: String, headers: OutgoingHttpHeaders): Unit = js.native
   def respondWithFile(path: String, headers: OutgoingHttpHeaders, options: ServerStreamFileResponseOptionsWithError): Unit = js.native
 }
-

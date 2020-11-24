@@ -3,7 +3,7 @@ package typings.jsrender.JsViews
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Store[T, TO]
@@ -12,6 +12,7 @@ trait Store[T, TO]
 	 * var template = $.templates.templateName; // Get compiled named template - or similar for named tags, converters, helpers, viewModels
 	 */
 /* itemName */ StringDictionary[T] {
+  
    // named item
   def apply(namedItems: Hash[TO]): Views = js.native
   def apply(namedItems: Hash[TO], parentTmpl: Template): Views = js.native
@@ -30,4 +31,3 @@ trait Store[T, TO]
   def apply(name: String, item: TO, parentTmpl: Template): T = js.native
   def apply(name: String, item: js.UndefOr[scala.Nothing], parentTmpl: Template): T = js.native
 }
-

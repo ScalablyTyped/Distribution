@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Layers$Volumeannotations")
 @js.native
 class ResourceLayersVolumeannotations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.layers.volumeAnnotations.get
     * @desc Gets the volume annotation.
@@ -48,6 +50,7 @@ class ResourceLayersVolumeannotations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVolumeannotation]
   ): Unit = js.native
+  
   /**
     * books.layers.volumeAnnotations.list
     * @desc Gets the volume annotations for a volume and layer.
@@ -94,4 +97,3 @@ class ResourceLayersVolumeannotations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVolumeannotations]
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Detect directionality: left-to-right, right-to-left, or neutral
 | Full name          | direction |
 | Keywords           | writing, system, direction, directionality, rtl, ltr, cli, bin |
 | # releases         | 3 |
-| # dependents       | 49 |
-| # downloads        | 14541788 |
+| # dependents       | 71 |
+| # downloads        | 23241473 |
 | # stars            | 0 |
 
 ## Links

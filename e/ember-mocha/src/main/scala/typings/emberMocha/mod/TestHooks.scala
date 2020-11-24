@@ -6,14 +6,11 @@ import typings.mocha.Mocha.AsyncFunc
 import typings.mocha.Mocha.Func
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TestHooks extends js.Object {
-  @JSName("afterEach")
-  var afterEach_Original: mochaAfterEach = js.native
-  @JSName("beforeEach")
-  var beforeEach_Original: mochaBeforeEach = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -36,6 +33,9 @@ trait TestHooks extends js.Object {
   def afterEach(name: String): Unit = js.native
   def afterEach(name: String, fn: AsyncFunc): Unit = js.native
   def afterEach(name: String, fn: Func): Unit = js.native
+  @JSName("afterEach")
+  var afterEach_Original: mochaAfterEach = js.native
+  
   /**
     * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
     * function is used as the name of the hook.
@@ -58,5 +58,6 @@ trait TestHooks extends js.Object {
   def beforeEach(name: String): Unit = js.native
   def beforeEach(name: String, fn: AsyncFunc): Unit = js.native
   def beforeEach(name: String, fn: Func): Unit = js.native
+  @JSName("beforeEach")
+  var beforeEach_Original: mochaBeforeEach = js.native
 }
-

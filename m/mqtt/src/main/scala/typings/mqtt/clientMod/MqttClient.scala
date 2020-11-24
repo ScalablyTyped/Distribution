@@ -15,20 +15,19 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mqtt/types/lib/client", "MqttClient")
 @js.native
 class MqttClient protected () extends EventEmitter {
   def this(streamBuilder: js.Function1[/* client */ MqttClient, IStream], options: IClientOptions) = this()
+  
   var connected: Boolean = js.native
+  
   var disconnected: Boolean = js.native
+  
   var disconnecting: Boolean = js.native
-  var incomingStore: Store = js.native
-  var options: IClientOptions = js.native
-  var outgoingStore: Store = js.native
-  var queueQoSZero: Boolean = js.native
-  var reconnecting: Boolean = js.native
+  
   /**
     * end - close connection
     *
@@ -47,10 +46,12 @@ class MqttClient protected () extends EventEmitter {
   def end(force: Boolean, opts: js.UndefOr[scala.Nothing], cb: CloseCallback): this.type = js.native
   def end(force: Boolean, opts: js.Object): this.type = js.native
   def end(force: Boolean, opts: js.Object, cb: CloseCallback): this.type = js.native
+  
   /**
     * getLastMessageId
     */
   def getLastMessageId(): Double = js.native
+  
   /**
     * Handle messages with backpressure support, one at a time.
     * Override at will.
@@ -60,6 +61,9 @@ class MqttClient protected () extends EventEmitter {
     * @api public
     */
   def handleMessage(packet: Packet, callback: PacketCallback): Unit = js.native
+  
+  var incomingStore: Store = js.native
+  
   def on(event: String, cb: js.Function): this.type = js.native
   @JSName("on")
   def on_connect(event: connect, cb: OnConnectCallback): this.type = js.native
@@ -71,6 +75,7 @@ class MqttClient protected () extends EventEmitter {
   def on_packetreceive(event: packetreceive, cb: OnPacketCallback): this.type = js.native
   @JSName("on")
   def on_packetsend(event: packetsend, cb: OnPacketCallback): this.type = js.native
+  
   def once(event: String, cb: js.Function): this.type = js.native
   @JSName("once")
   def once_connect(event: connect, cb: OnConnectCallback): this.type = js.native
@@ -82,6 +87,11 @@ class MqttClient protected () extends EventEmitter {
   def once_packetreceive(event: packetreceive, cb: OnPacketCallback): this.type = js.native
   @JSName("once")
   def once_packetsend(event: packetsend, cb: OnPacketCallback): this.type = js.native
+  
+  var options: IClientOptions = js.native
+  
+  var outgoingStore: Store = js.native
+  
   def publish(topic: String, message: String): this.type = js.native
   def publish(topic: String, message: String, callback: PacketCallback): this.type = js.native
   /**
@@ -113,6 +123,9 @@ class MqttClient protected () extends EventEmitter {
   def publish(topic: String, message: Buffer, callback: PacketCallback): this.type = js.native
   def publish(topic: String, message: Buffer, opts: IClientPublishOptions): this.type = js.native
   def publish(topic: String, message: Buffer, opts: IClientPublishOptions, callback: PacketCallback): this.type = js.native
+  
+  var queueQoSZero: Boolean = js.native
+  
   /**
     * reconnect - connect again using the same options as connect()
     *
@@ -127,6 +140,9 @@ class MqttClient protected () extends EventEmitter {
     */
   def reconnect(): this.type = js.native
   def reconnect(opts: IClientReconnectOptions): this.type = js.native
+  
+  var reconnecting: Boolean = js.native
+  
   /**
     * removeOutgoingMessage - remove a message in outgoing store
     * the outgoing callback will be called withe Error('Message removed') if the message is removed
@@ -138,6 +154,7 @@ class MqttClient protected () extends EventEmitter {
     * @example client.removeOutgoingMessage(client.getLastMessageId());
     */
   def removeOutgoingMessage(mid: Double): this.type = js.native
+  
   def subscribe(topic: String): this.type = js.native
   def subscribe(topic: String, callback: ClientSubscribeCallback): this.type = js.native
   /**
@@ -164,6 +181,7 @@ class MqttClient protected () extends EventEmitter {
   def subscribe(topic: js.Array[String], opts: IClientSubscribeOptions, callback: ClientSubscribeCallback): this.type = js.native
   def subscribe(topic: ISubscriptionMap): this.type = js.native
   def subscribe(topic: ISubscriptionMap, callback: ClientSubscribeCallback): this.type = js.native
+  
   /**
     * unsubscribe - unsubscribe from topic(s)
     *
@@ -185,4 +203,3 @@ class MqttClient protected () extends EventEmitter {
   def unsubscribe(topic: js.Array[String], opts: js.Object): this.type = js.native
   def unsubscribe(topic: js.Array[String], opts: js.Object, callback: PacketCallback): this.type = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for echarts
 
-Typings are for version 4.6.1
+Typings are for version 4.9.0
 
 ## Library description:
 A powerful charting and visualization library for browser
@@ -10,9 +10,9 @@ A powerful charting and visualization library for browser
 | ------------------ | :-------------: |
 | Full name          | echarts |
 | Keywords           | visualization, canvas |
-| # releases         | 22 |
-| # dependents       | 1085 |
-| # downloads        | 5924080 |
+| # releases         | 19 |
+| # dependents       | 1589 |
+| # downloads        | 9522358 |
 | # stars            | 19 |
 
 ## Links

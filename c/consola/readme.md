@@ -1,7 +1,7 @@
 
 # Scala.js typings for consola
 
-Typings are for version 2.14.0
+Typings are for version 2.15.0
 
 ## Library description:
 Elegant Console Logger for Node.js and Browser
@@ -10,9 +10,9 @@ Elegant Console Logger for Node.js and Browser
 | ------------------ | :-------------: |
 | Full name          | consola |
 | Keywords           | console, logger, reporter, elegant, cli, universal, unified, winston |
-| # releases         | 67 |
-| # dependents       | 341 |
-| # downloads        | 27322236 |
+| # releases         | 58 |
+| # dependents       | 526 |
+| # downloads        | 49106246 |
 | # stars            | 0 |
 
 ## Links

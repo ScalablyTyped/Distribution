@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintStaple extends js.Object
-
 /** Specifies the staple options. */
 @JSGlobal("Windows.Graphics.Printing.PrintStaple")
 @js.native
 object PrintStaple extends js.Object {
+  
   /** The default staple option. */
   @js.native
   sealed trait default extends PrintStaple
@@ -62,6 +62,4 @@ object PrintStaple extends js.Object {
   /** The option to staple the top right of the printed output. */
   @js.native
   sealed trait stapleTopRight extends PrintStaple
-  
 }
-

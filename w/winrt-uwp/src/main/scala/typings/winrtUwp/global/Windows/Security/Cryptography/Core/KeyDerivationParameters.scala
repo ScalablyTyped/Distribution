@@ -3,18 +3,18 @@ package typings.winrtUwp.global.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents parameters used when deriving a key. */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
 @js.native
 abstract class KeyDerivationParameters ()
   extends typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters
-
 /* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
 @js.native
 object KeyDerivationParameters extends js.Object {
+  
   /**
     * Creates a KeyDerivationParameters object for use in the target algorithm.
     * @param capi1KdfTargetAlgorithm The target algorithm.
@@ -23,6 +23,7 @@ object KeyDerivationParameters extends js.Object {
   def buildForCapi1Kdf(
     capi1KdfTargetAlgorithm: typings.winrtUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm
   ): typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
+  
   /**
     * Creates a KeyDerivationParameters object for use in the password-based key derivation function 2 (PBKDF2).
     * @param pbkdf2Salt The salt, a random or pseudorandom value to be combined with the password in multiple iterations. A salt is used to increase entropy above what can be obtained from using a password alone.
@@ -30,6 +31,7 @@ object KeyDerivationParameters extends js.Object {
     * @return Refers to the parameters used during key derivation.
     */
   def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
+  
   /**
     * Creates a KeyDerivationParameters object for use in a counter mode, hash-based message authentication code (HMAC) key derivation function.
     * @param label Buffer that specifies the purpose for the derived keying material.
@@ -37,6 +39,7 @@ object KeyDerivationParameters extends js.Object {
     * @return Refers to the parameters used during key derivation.
     */
   def buildForSP800108(label: IBuffer, context: IBuffer): typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
+  
   /**
     * Creates a KeyDerivationParameters object for use in the SP800-56A key derivation function.
     * @param algorithmId Specifies the intended purpose of the derived key.
@@ -54,4 +57,3 @@ object KeyDerivationParameters extends js.Object {
     suppPrivInfo: IBuffer
   ): typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
 }
-

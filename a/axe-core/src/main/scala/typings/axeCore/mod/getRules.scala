@@ -2,11 +2,12 @@ package typings.axeCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("axe-core", "getRules")
 @js.native
 object getRules extends js.Object {
+  
   /**
   	 * Searches and returns rules that contain a tag in the list of tags.
   	 * @param  {Array}  tags  Optional array of tags
@@ -15,4 +16,3 @@ object getRules extends js.Object {
   def apply(): js.Array[RuleMetadata] = js.native
   def apply(tags: js.Array[String]): js.Array[RuleMetadata] = js.native
 }
-

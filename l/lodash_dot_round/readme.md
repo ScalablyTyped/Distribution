@@ -11,8 +11,8 @@ The lodash method `_.round` exported as a module.
 | Full name          | lodash.round |
 | Keywords           | lodash-modularized, round |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 633422 |
+| # dependents       | 30 |
+| # downloads        | 447366 |
 | # stars            | 0 |
 
 ## Links

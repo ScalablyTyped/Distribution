@@ -11,8 +11,8 @@ The lodash method `_.max` exported as a module.
 | Full name          | lodash.max |
 | Keywords           | lodash-modularized, max |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 4044033 |
+| # dependents       | 41 |
+| # downloads        | 3201863 |
 | # stars            | 0 |
 
 ## Links

@@ -1,16 +1,17 @@
 package typings.officeUiFabricReact.mod
 
+import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.officeUiFabricReactStrings.horizontal
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
-import typings.uifabricMergeStyles.istyleMod.IRawStyle
-import typings.uifabricStyling.ithemeMod.ITheme
+import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "getFadedOverflowStyle")
 @js.native
 object getFadedOverflowStyle extends js.Object {
+  
   def apply(
     theme: ITheme,
     color: js.UndefOr[
@@ -21,4 +22,3 @@ object getFadedOverflowStyle extends js.Object {
     height: js.UndefOr[String | Double]
   ): IRawStyle = js.native
 }
-

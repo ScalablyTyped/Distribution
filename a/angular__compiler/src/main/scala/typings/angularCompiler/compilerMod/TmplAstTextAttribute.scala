@@ -4,7 +4,7 @@ import typings.angularCompiler.i18nAstMod.Message
 import typings.angularCompiler.i18nAstMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "TmplAstTextAttribute")
 @js.native
@@ -46,4 +46,3 @@ class TmplAstTextAttribute protected ()
     i18n: Node
   ) = this()
 }
-

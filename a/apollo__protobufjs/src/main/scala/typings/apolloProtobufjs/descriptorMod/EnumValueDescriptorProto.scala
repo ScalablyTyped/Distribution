@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.apolloProtobufjs.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/ext/descriptor", "EnumValueDescriptorProto")
 @js.native
 object EnumValueDescriptorProto extends TopLevel[Type]
-

@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.managedblockchainMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "ManagedBlockchain")
 @js.native
@@ -14,4 +14,3 @@ class ManagedBlockchain ()
   extends typings.awsSdk.mod.ManagedBlockchain {
   def this(options: ClientConfiguration) = this()
 }
-

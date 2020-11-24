@@ -6,7 +6,7 @@ import typings.luminoWidgets.titleMod.Title.Dataset
 import typings.luminoWidgets.titleMod.Title.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/title", "Title")
 @js.native
@@ -17,16 +17,27 @@ class Title_[T] protected () extends js.Object {
     * @param options - The options for initializing the title.
     */
   def this(options: IOptions[T]) = this()
+  
   var _caption: js.Any = js.native
+  
   var _changed: js.Any = js.native
+  
   var _className: js.Any = js.native
+  
   var _closable: js.Any = js.native
+  
   var _dataset: js.Any = js.native
+  
   var _icon: js.Any = js.native
+  
   var _iconClass: js.Any = js.native
+  
   var _iconLabel: js.Any = js.native
+  
   var _label: js.Any = js.native
+  
   var _mnemonic: js.Any = js.native
+  
   /**
     * Get the caption for the title.
     *
@@ -37,10 +48,12 @@ class Title_[T] protected () extends js.Object {
     * Set the caption for the title.
     */
   var caption: String = js.native
+  
   /**
     * A signal emitted when the state of the title changes.
     */
   val changed: ISignal[this.type, Unit] = js.native
+  
   /**
     * Get the extra class name for the title.
     *
@@ -54,6 +67,7 @@ class Title_[T] protected () extends js.Object {
     * Multiple class names can be separated with whitespace.
     */
   var className: String = js.native
+  
   /**
     * Get the closable state for the title.
     *
@@ -67,6 +81,7 @@ class Title_[T] protected () extends js.Object {
     * This controls the presence of a close icon when applicable.
     */
   var closable: Boolean = js.native
+  
   /**
     * Get the dataset for the title.
     *
@@ -80,6 +95,7 @@ class Title_[T] protected () extends js.Object {
     * This controls the data attributes when applicable.
     */
   var dataset: Dataset = js.native
+  
   /**
     * Get the icon renderer for the title.
     *
@@ -99,6 +115,7 @@ class Title_[T] protected () extends js.Object {
     * an alias for the .iconClass field, for backwards compatibility
     */
   var icon: js.UndefOr[IRenderer | String] = js.native
+  
   /**
     * Get the icon class name for the title.
     *
@@ -112,6 +129,7 @@ class Title_[T] protected () extends js.Object {
     * Multiple class names can be separated with whitespace.
     */
   var iconClass: String = js.native
+  
   /**
     * Get the icon label for the title.
     *
@@ -125,6 +143,7 @@ class Title_[T] protected () extends js.Object {
     * Multiple class names can be separated with whitespace.
     */
   var iconLabel: String = js.native
+  
   /**
     * @deprecated Use `icon` instead.
     */
@@ -132,6 +151,7 @@ class Title_[T] protected () extends js.Object {
     * @deprecated Use `icon` instead.
     */
   var iconRenderer: js.UndefOr[IRenderer] = js.native
+  
   /**
     * Get the label for the title.
     *
@@ -142,6 +162,7 @@ class Title_[T] protected () extends js.Object {
     * Set the label for the title.
     */
   var label: String = js.native
+  
   /**
     * Get the mnemonic index for the title.
     *
@@ -152,9 +173,9 @@ class Title_[T] protected () extends js.Object {
     * Set the mnemonic index for the title.
     */
   var mnemonic: Double = js.native
+  
   /**
     * The object which owns the title.
     */
   val owner: T = js.native
 }
-

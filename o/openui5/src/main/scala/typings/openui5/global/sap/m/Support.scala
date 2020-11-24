@@ -3,7 +3,7 @@ package typings.openui5.global.sap.m
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * <pre><code>sap.m.Support</code> shows the technical information for SAPUI5 Mobile Applications.This
@@ -23,4 +23,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object Support
   extends TopLevel[js.Any]
-

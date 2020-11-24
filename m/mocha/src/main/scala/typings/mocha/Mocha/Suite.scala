@@ -13,7 +13,7 @@ import typings.mocha.mochaStrings.suite
 import typings.mocha.mochaStrings.test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Suite "post-require" event
 // #region Suite untyped events
@@ -43,31 +43,34 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Suite extends EventEmitter {
+  
   var _afterAll: js.Any = js.native
+  
   var _afterEach: js.Any = js.native
+  
   var _bail: js.Any = js.native
+  
   var _beforeAll: js.Any = js.native
+  
   var _beforeEach: js.Any = js.native
-  var _onlySuites: js.Any = js.native
-  var _onlyTests: js.Any = js.native
-  var _retries: js.Any = js.native
-  var _slow: js.Any = js.native
-  var _timeout: js.Any = js.native
-  var ctx: Context = js.native
-  var delayed: Boolean = js.native
-  var file: js.UndefOr[String] = js.native
-  var parent: js.UndefOr[Suite] = js.native
-  var pending: Boolean = js.native
-  var root: Boolean = js.native
-  var suites: js.Array[Suite] = js.native
-  var tests: js.Array[Test] = js.native
-  var title: String = js.native
+  
   /**
     * Generic hook-creator.
     */
   /* protected */ def _createHook(title: String): Hook = js.native
   /* protected */ def _createHook(title: String, fn: AsyncFunc): Hook = js.native
   /* protected */ def _createHook(title: String, fn: Func): Hook = js.native
+  
+  var _onlySuites: js.Any = js.native
+  
+  var _onlyTests: js.Any = js.native
+  
+  var _retries: js.Any = js.native
+  
+  var _slow: js.Any = js.native
+  
+  var _timeout: js.Any = js.native
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
@@ -98,18 +101,21 @@ trait Suite extends EventEmitter {
   def addListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
   /**
     * Add a test `suite`.
     *
     * @see https://mochajs.org/api/Mocha.Suite.html#addSuite
     */
   def addSuite(suite: Suite): this.type = js.native
+  
   /**
     * Add a `test` to this suite.
     *
     * @see https://mochajs.org/api/Mocha.Suite.html#addTest
     */
   def addTest(test: Test): this.type = js.native
+  
   /**
     * Run `fn(test[, done])` after running tests.
     *
@@ -126,6 +132,7 @@ trait Suite extends EventEmitter {
   def afterAll(title: String): this.type = js.native
   def afterAll(title: String, fn: AsyncFunc): this.type = js.native
   def afterAll(title: String, fn: Func): this.type = js.native
+  
   /**
     * Run `fn(test[, done])` after each test case.
     *
@@ -142,6 +149,7 @@ trait Suite extends EventEmitter {
   def afterEach(title: String): this.type = js.native
   def afterEach(title: String, fn: AsyncFunc): this.type = js.native
   def afterEach(title: String, fn: Func): this.type = js.native
+  
   /**
     * Get whether to bail after first error.
     *
@@ -154,6 +162,7 @@ trait Suite extends EventEmitter {
     * @see https://mochajs.org/api/Mocha.Suite.html#bail
     */
   def bail(bail: Boolean): this.type = js.native
+  
   /**
     * Run `fn(test[, done])` before running tests.
     *
@@ -170,6 +179,7 @@ trait Suite extends EventEmitter {
   def beforeAll(title: String): this.type = js.native
   def beforeAll(title: String, fn: AsyncFunc): this.type = js.native
   def beforeAll(title: String, fn: Func): this.type = js.native
+  
   /**
     * Run `fn(test[, done])` before each test case.
     *
@@ -186,6 +196,18 @@ trait Suite extends EventEmitter {
   def beforeEach(title: String): this.type = js.native
   def beforeEach(title: String, fn: AsyncFunc): this.type = js.native
   def beforeEach(title: String, fn: Func): this.type = js.native
+  
+  var ctx: Context = js.native
+  
+  var delayed: Boolean = js.native
+  
+  /**
+    * Cleans all references from this suite and all child suites.
+    *
+    * https://mochajs.org/api/suite#dispose
+    */
+  def dispose(): Unit = js.native
+  
   /**
     * Iterates through each suite recursively to find all tests. Applies a
     * function in the format `fn(test)`.
@@ -193,6 +215,7 @@ trait Suite extends EventEmitter {
     * @see https://mochajs.org/api/Mocha.Suite.html#eachTest
     */
   def eachTest(fn: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
   def emit(name: String, args: js.Any*): Boolean = js.native
   @JSName("emit")
   def emit_afterAll(name: afterAll, hook: Hook): Boolean = js.native
@@ -214,6 +237,9 @@ trait Suite extends EventEmitter {
   def emit_suite(name: suite, suite: Suite): Boolean = js.native
   @JSName("emit")
   def emit_test(name: test, test: Test): Boolean = js.native
+  
+  var file: js.UndefOr[String] = js.native
+  
   /**
     * Return the full title generated by recursively concatenating the parent's
     * full title.
@@ -221,12 +247,14 @@ trait Suite extends EventEmitter {
     * @see https://mochajs.org/api/Mocha.Suite.html#.Suite#fullTitle
     */
   def fullTitle(): String = js.native
+  
   /**
     * Check if this suite or its parent suite is marked as pending.
     *
     * @see https://mochajs.org/api/Mocha.Suite.html#isPending
     */
   def isPending(): Boolean = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
@@ -257,6 +285,7 @@ trait Suite extends EventEmitter {
   def on_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("on")
   def on_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
@@ -287,6 +316,11 @@ trait Suite extends EventEmitter {
   def once_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("once")
   def once_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
+  var parent: js.UndefOr[Suite] = js.native
+  
+  var pending: Boolean = js.native
+  
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
@@ -317,6 +351,7 @@ trait Suite extends EventEmitter {
   def prependListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
@@ -347,6 +382,7 @@ trait Suite extends EventEmitter {
   def prependOnceListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
@@ -377,6 +413,7 @@ trait Suite extends EventEmitter {
   def removeListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  
   /**
     * Get number of times to retry a failed test.
     *
@@ -390,12 +427,16 @@ trait Suite extends EventEmitter {
     */
   def retries(n: String): this.type = js.native
   def retries(n: Double): this.type = js.native
+  
+  var root: Boolean = js.native
+  
   /**
     * This will run the root suite if we happen to be running in delayed mode.
     *
     * @see https://mochajs.org/api/Mocha.Suite.html#run
     */
   def run(): Unit = js.native
+  
   /**
     * Get slow `ms`.
     *
@@ -409,6 +450,11 @@ trait Suite extends EventEmitter {
     */
   def slow(ms: String): this.type = js.native
   def slow(ms: Double): this.type = js.native
+  
+  var suites: js.Array[Suite] = js.native
+  
+  var tests: js.Array[Test] = js.native
+  
   /**
     * Get timeout `ms`.
     *
@@ -422,6 +468,9 @@ trait Suite extends EventEmitter {
     */
   def timeout(ms: String): this.type = js.native
   def timeout(ms: Double): this.type = js.native
+  
+  var title: String = js.native
+  
   /**
     * Return the title path generated by recursively concatenating the parent's
     * title path.
@@ -429,6 +478,7 @@ trait Suite extends EventEmitter {
     * @see https://mochajs.org/api/Mocha.Suite.html#.Suite#titlePath
     */
   def titlePath(): js.Array[String] = js.native
+  
   /**
     * Return the total number of tests.
     *
@@ -436,4 +486,3 @@ trait Suite extends EventEmitter {
     */
   def total(): Double = js.native
 }
-

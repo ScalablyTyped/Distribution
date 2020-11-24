@@ -3,7 +3,7 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.playlist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Playlist Object Full
@@ -11,21 +11,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlaylistObjectFull extends PlaylistBaseObject {
-  /**
-    * The playlist description. Only returned for modified, verified playlists, otherwise null.
-    */
-  var description: String | Null = js.native
+  
   /**
     * Information about the followers of the playlist.
     */
   var followers: FollowersObject = js.native
+  
   /**
     * Information about the tracks of the playlist.
     */
   var tracks: PagingObject[PlaylistTrackObject] = js.native
 }
-
 object PlaylistObjectFull {
+  
   @scala.inline
   def apply(
     collaborative: Boolean,
@@ -45,26 +43,26 @@ object PlaylistObjectFull {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistObjectFull]
   }
+  
   @scala.inline
   implicit class PlaylistObjectFullOps[Self <: PlaylistObjectFull] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFollowers(value: FollowersObject): Self = this.set("followers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTracks(value: PagingObject[PlaylistTrackObject]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Operations")
 @js.native
 class ResourceOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sql.operations.get
     * @desc Retrieves an instance operation that has been performed on an
@@ -43,6 +45,7 @@ class ResourceOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.operations.list
     * @desc Lists all instance operations that have been performed on the given
@@ -76,4 +79,3 @@ class ResourceOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperationsListResponse]
   ): Unit = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintMediaSize extends js.Object
-
 /** Specifies the media size option. */
 @JSGlobal("Windows.Graphics.Printing.PrintMediaSize")
 @js.native
 object PrintMediaSize extends js.Object {
+  
   /** A business card size. */
   @js.native
   sealed trait businessCard extends PrintMediaSize
@@ -702,6 +702,4 @@ object PrintMediaSize extends js.Object {
   /** The Roll54Inch media size. */
   @js.native
   sealed trait roll54Inch extends PrintMediaSize
-  
 }
-

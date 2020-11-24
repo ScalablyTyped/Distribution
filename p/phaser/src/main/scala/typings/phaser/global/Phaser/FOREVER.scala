@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In Phaser the value -1 means 'forever' in lots of cases, this const allows you to use it instead
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Phaser.FOREVER")
 @js.native
 object FOREVER extends TopLevel[integer]
-

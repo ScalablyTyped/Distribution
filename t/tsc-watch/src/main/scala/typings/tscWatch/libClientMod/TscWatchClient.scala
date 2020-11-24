@@ -6,11 +6,13 @@ import typings.tscWatch.tscWatchStrings.first_success
 import typings.tscWatch.tscWatchStrings.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TscWatchClient extends EventEmitter {
+  
   def kill(): Unit = js.native
+  
   /**
     * Emitted upon every failing compilation
     */
@@ -27,6 +29,6 @@ trait TscWatchClient extends EventEmitter {
     */
   @JSName("on")
   def on_success(event: success, cb: js.Function0[_]): this.type = js.native
+  
   def start(args: js.Any*): Unit = js.native
 }
-

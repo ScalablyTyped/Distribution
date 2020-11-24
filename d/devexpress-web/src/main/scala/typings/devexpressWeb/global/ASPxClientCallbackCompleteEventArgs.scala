@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events concerning the final processing of a callback.
@@ -18,4 +18,3 @@ class ASPxClientCallbackCompleteEventArgs protected ()
     */
   def this(parameter: String, result: String) = this()
 }
-

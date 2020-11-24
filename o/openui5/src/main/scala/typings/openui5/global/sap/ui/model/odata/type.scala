@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.model.odata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.type")
 @js.native
 object `type` extends js.Object {
+  
   @js.native
   class Boolean protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Boolean {
@@ -276,6 +277,4 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any) = this()
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
-  
 }
-

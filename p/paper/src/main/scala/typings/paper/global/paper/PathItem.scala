@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The PathItem class is the base for any items that describe paths and
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class PathItem ()
   extends typings.paper.paper.PathItem
-
 /* static members */
 @JSGlobal("paper.PathItem")
 @js.native
 object PathItem extends js.Object {
+  
   /** 
     * Creates a path item from the given object, determining if the
     * contained information describes a plain path or a compound-path with
@@ -50,4 +50,3 @@ object PathItem extends js.Object {
     */
   def create(segments: js.Array[js.Array[Double]]): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
 }
-

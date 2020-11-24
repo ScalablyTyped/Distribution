@@ -12,7 +12,7 @@ Get the size of an element in pixels, including margins
 | Keywords           | element, dom, browser, browserify, node, dimensions, margin |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 2231933 |
+| # downloads        | 2624464 |
 | # stars            | 0 |
 
 ## Links

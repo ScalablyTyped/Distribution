@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SubEmitterType extends js.Object
-
 @JSGlobal("BABYLON.SubEmitterType")
 @js.native
 object SubEmitterType extends js.Object {
+  
   /**
     * Attached to the particle over it's lifetime
     */
@@ -21,6 +21,4 @@ object SubEmitterType extends js.Object {
     */
   @js.native
   sealed trait END extends SubEmitterType
-  
 }
-

@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.IASTToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.MemberFunctionDeclaration")
 @js.native
@@ -16,4 +16,3 @@ class MemberFunctionDeclaration protected ()
     block: typings.typescriptServices.TypeScript.Block
   ) = this()
 }
-

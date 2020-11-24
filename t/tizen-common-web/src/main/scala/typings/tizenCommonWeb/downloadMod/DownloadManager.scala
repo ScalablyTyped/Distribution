@@ -2,10 +2,11 @@ package typings.tizenCommonWeb.downloadMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DownloadManager extends js.Object {
+  
   /**
     * Abandons a download operation that is specified by the `downloadId` parameter.
     * The abandoned download operation cannot be resumed later with the `resume()` method.
@@ -21,6 +22,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def abandon(downloadId: Double): Unit = js.native
+  
   /**
     * Cancels an ongoing download operation that is specified by the `downloadId` parameter.
     * The abandoned download operation cannot be canceled and trying to do so will result in InvalidValuesError exception.
@@ -32,6 +34,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def cancel(downloadId: Double): Unit = js.native
+  
   /**
     * Gets the DownloadRequest object from a given ID.
     *
@@ -44,6 +47,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def getDownloadRequest(downloadId: Double): DownloadRequest = js.native
+  
   /**
     * Gets the MIME type of the downloaded file.
     *
@@ -59,6 +63,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def getMIMEType(downloadId: Double): String = js.native
+  
   /**
     * Gets the download state of an operation synchronously with the specified ID.
     *
@@ -71,6 +76,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def getState(downloadId: Double): DownloadState = js.native
+  
   /**
     * Pauses an ongoing download operation that is specified by the `downloadId` parameter.
     * The paused download operation can be resumed later by the `resume()` method.
@@ -84,6 +90,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def pause(downloadId: Double): Unit = js.native
+  
   /**
     * Resumes a paused download operation that is specified by the `downloadId` parameter.
     *
@@ -97,6 +104,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def resume(downloadId: Double): Unit = js.native
+  
   /**
     * Sets the download callback to the download operation of the given ID.
     * It's possible to change or register the listener of the download operation using the saved ID.
@@ -109,6 +117,7 @@ trait DownloadManager extends js.Object {
     *
     */
   def setListener(downloadId: Double, downloadCallback: DownloadCallback): Unit = js.native
+  
   /**
     * Starts a download operation with the specified URL information.
     *
@@ -131,4 +140,3 @@ trait DownloadManager extends js.Object {
   def start(downloadRequest: DownloadRequest): Double = js.native
   def start(downloadRequest: DownloadRequest, downloadCallback: DownloadCallback): Double = js.native
 }
-

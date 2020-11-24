@@ -8,11 +8,12 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/publishReplay", JSImport.Namespace)
 @js.native
 object publishReplayMod extends js.Object {
+  
   def publishReplay[T](): MonoTypeOperatorFunction[T] = js.native
   def publishReplay[T](
     bufferSize: js.UndefOr[scala.Nothing],
@@ -98,4 +99,3 @@ object publishReplayMod extends js.Object {
   @JSName("publishReplay")
   def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](bufferSize: Double, windowTime: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
 }
-

@@ -11,8 +11,8 @@ TypeScript port of HdrHistogram
 | Full name          | hdr-histogram-js |
 | Keywords           | hdr-histogram, hdr-histogram-js, percentiles, monitoring, latency, performance |
 | # releases         | 11 |
-| # dependents       | 16 |
-| # downloads        | 4049483 |
+| # dependents       | 17 |
+| # downloads        | 6019858 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,13 @@ import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Delegate extends js.Object {
+  
   def destroy(): Unit = js.native
+  
   def off(): Unit = js.native
   def off(
     eventType: js.UndefOr[scala.Nothing],
@@ -45,6 +47,7 @@ trait Delegate extends js.Object {
     selector: js.Function1[/* element */ Element, Boolean],
     handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit]
   ): Unit = js.native
+  
   def on(eventType: String, handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit]): Unit = js.native
   def on(
     eventType: String,
@@ -73,7 +76,7 @@ trait Delegate extends js.Object {
     handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit],
     eventData: js.Any
   ): Unit = js.native
+  
   def root(): Unit = js.native
   def root(element: Element): Unit = js.native
 }
-

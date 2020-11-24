@@ -7,7 +7,7 @@ import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexOffice.activexOfficeNumbers.`0`
@@ -17,17 +17,20 @@ import scala.scalajs.js.annotation._
   - typings.activexOffice.activexOfficeNumbers.`1`
 */
 trait ContentVerificationResults extends js.Object
-
 object ContentVerificationResults {
+  
   @scala.inline
   def contverresError: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def contverresModified: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def contverresUnverified: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def contverresValid: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def contverresVerifying: `1` = 1.asInstanceOf[`1`]
 }
-

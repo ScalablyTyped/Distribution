@@ -2,17 +2,17 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListViewAnimationType extends js.Object
-
 /**
   * Specifies that type of animation for which a contentanimating event was raised.
   **/
 @JSGlobal("WinJS.UI.ListViewAnimationType")
 @js.native
 object ListViewAnimationType extends js.Object {
+  
   /**
     * The animation plays when the ListView is changing its content.
     **/
@@ -24,6 +24,4 @@ object ListViewAnimationType extends js.Object {
     **/
   @js.native
   sealed trait entrance extends ListViewAnimationType
-  
 }
-

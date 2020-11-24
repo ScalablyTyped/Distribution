@@ -1,12 +1,11 @@
 package typings.pulumiAws.ec2Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pulumiAws.instancePlatformMod.InstancePlatform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "WindowsWithSqlServerPlatform")
 @js.native
-object WindowsWithSqlServerPlatform extends TopLevel[InstancePlatform]
-
+object WindowsWithSqlServerPlatform
+  extends TopLevel[typings.pulumiAws.enumsEc2Mod.InstancePlatform]

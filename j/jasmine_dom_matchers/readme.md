@@ -10,9 +10,9 @@ dom matchers for Jasmine
 | ------------------ | :-------------: |
 | Full name          | jasmine_dom_matchers |
 | Keywords           | jasmine |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 129907 |
+| # downloads        | 79085 |
 | # stars            | 0 |
 
 ## Links

@@ -5,14 +5,14 @@ import typings.spotifyApi.spotifyApiStrings.off
 import typings.spotifyApi.spotifyApiStrings.track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CurrentPlaybackResponse
   extends CurrentlyPlayingObject
      with PlaybackObject
-
 object CurrentPlaybackResponse {
+  
   @scala.inline
   def apply(
     device: UserDevice,
@@ -25,4 +25,3 @@ object CurrentPlaybackResponse {
     __obj.asInstanceOf[CurrentPlaybackResponse]
   }
 }
-

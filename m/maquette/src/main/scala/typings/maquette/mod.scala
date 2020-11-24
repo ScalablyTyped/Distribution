@@ -12,26 +12,32 @@ import typings.maquette.interfacesMod.VNodeProperties
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("maquette", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   var createCache: js.Function0[CalculationCache[js.Any]] = js.native
+  
   var createMapping: js.Function3[
     /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
     /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 
     /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
     Mapping[js.Any, js.Any]
   ] = js.native
+  
   var createProjector: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector] = js.native
+  
   def h(selector: String): VNode = js.native
   def h(selector: String, children: js.Array[VNodeChild]): VNode = js.native
   def h(selector: String, properties: js.UndefOr[scala.Nothing], children: js.Array[VNodeChild]): VNode = js.native
   def h(selector: String, properties: VNodeProperties): VNode = js.native
   def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = js.native
+  
   @js.native
   object dom extends js.Object {
+    
     /**
       * Appends a new child node to the DOM which is generated from a [[VNode]].
       * This is a low-level method. Users will typically use a [[Projector]] instead.
@@ -43,6 +49,7 @@ object mod extends js.Object {
       */
     def append(parentNode: Element, vnode: VNode): Projection = js.native
     def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    
     /**
       * Creates a real DOM tree from `vnode`. The [[Projection]] object returned will contain the resulting DOM Node in
       * its [[Projection.domNode|domNode]] property.
@@ -54,6 +61,7 @@ object mod extends js.Object {
       */
     def create(vnode: VNode): Projection = js.native
     def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    
     /**
       * Inserts a new DOM node which is generated from a [[VNode]].
       * This is a low-level method. Users wil typically use a [[Projector]] instead.
@@ -65,6 +73,7 @@ object mod extends js.Object {
       */
     def insertBefore(beforeNode: Element, vnode: VNode): Projection = js.native
     def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    
     /**
       * Merges a new DOM node which is generated from a [[VNode]] with an existing DOM Node.
       * This means that the virtual DOM and the real DOM will have one overlapping element.
@@ -78,6 +87,7 @@ object mod extends js.Object {
       */
     def merge(element: Element, vnode: VNode): Projection = js.native
     def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    
     /**
       * Replaces an existing DOM node with a node generated from a [[VNode]].
       * This is a low-level method. Users will typically use a [[Projector]] instead.
@@ -90,6 +100,4 @@ object mod extends js.Object {
     def replace(element: Element, vnode: VNode): Projection = js.native
     def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
   }
-  
 }
-

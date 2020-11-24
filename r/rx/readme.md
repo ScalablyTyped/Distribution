@@ -10,9 +10,9 @@ Library for composing asynchronous and event-based operations in JavaScript
 | ------------------ | :-------------: |
 | Full name          | rx |
 | Keywords           | LINQ, FRP, Reactive, Events, Rx, RxJS |
-| # releases         | 1 |
-| # dependents       | 682 |
-| # downloads        | 85915897 |
+| # releases         | 0 |
+| # dependents       | 684 |
+| # downloads        | 95395713 |
 | # stars            | 63 |
 
 ## Links

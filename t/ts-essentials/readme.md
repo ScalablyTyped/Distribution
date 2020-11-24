@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-essentials
 
-Typings are for version 1.0.4
+Typings are for version 2.0.12
 
 ## Library description:
 All essential TypeScript types in one place
@@ -10,9 +10,9 @@ All essential TypeScript types in one place
 | ------------------ | :-------------: |
 | Full name          | ts-essentials |
 | Keywords           | typescript, types, essentials, utils, toolbox, toolbelt, lodash, underscore |
-| # releases         | 33 |
-| # dependents       | 35 |
-| # downloads        | 4602954 |
+| # releases         | 38 |
+| # dependents       | 91 |
+| # downloads        | 22112851 |
 | # stars            | 0 |
 
 ## Links

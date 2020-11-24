@@ -5,13 +5,15 @@ import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.select2OptionsMod.Select2Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Filtering/Formatter/Select2Formatter", JSImport.Namespace)
 @js.native
 object select2FormatterMod extends js.Object {
+  
   @js.native
   trait Select2Formatter extends js.Object {
+    
     /**
       * Creates a select2-control.
       *
@@ -30,6 +32,4 @@ object select2FormatterMod extends js.Object {
     def select2(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def select2(cell: JQuery[HTMLElement], index: Double, options: Select2Options): JQuery[HTMLElement] = js.native
   }
-  
 }
-

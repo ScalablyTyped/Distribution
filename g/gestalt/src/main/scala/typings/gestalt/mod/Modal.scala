@@ -1,12 +1,11 @@
 package typings.gestalt.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gestalt", "Modal")
 @js.native
-class Modal ()
-  extends Component[ModalProps, js.Any, js.Any]
-
+object Modal extends TopLevel[ReactForwardRef[HTMLDivElement, ModalProps]]

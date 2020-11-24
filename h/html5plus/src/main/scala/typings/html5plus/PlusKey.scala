@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Key管理设备按键事件
@@ -11,18 +11,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusKey extends js.Object {
+  
   /**
     * 按键事件
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var KeyEvent: js.UndefOr[PlusKeyKeyEvent] = js.native
+  
   /**
     * 按键类型
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var KeyType: js.UndefOr[PlusKeyKeyType] = js.native
+  
   /**
     * 添加按键事件监听器
     * 添加按键事件监听器，当指定的按键事件发生时，回调函数将触发。
@@ -48,6 +51,7 @@ trait PlusKey extends js.Object {
     listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit],
     capture: Boolean
   ): Unit = js.native
+  
   /**
     * 隐藏软键盘
     * 隐藏已经显示的软键盘，如果软键盘没有显示则不做任何操作。
@@ -55,6 +59,7 @@ trait PlusKey extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   def hideSoftKeybord(): Unit = js.native
+  
   /**
     * 移除按键事件监听器
     * 从窗口移除指定的事件监听器。若没有查找到对应的事件监听器，则无任何作用。
@@ -65,6 +70,7 @@ trait PlusKey extends js.Object {
   def removeEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit]): Unit = js.native
   def removeEventListener(event: PlusKeyKeyType): Unit = js.native
   def removeEventListener(event: PlusKeyKeyType, listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit]): Unit = js.native
+  
   /**
     * 设置辅助输入类型
     * input的type类型为text获取焦点时，在软键盘上方显示辅助输入条方便用户快速输入。
@@ -74,6 +80,7 @@ trait PlusKey extends js.Object {
     */
   def setAssistantType(): Unit = js.native
   def setAssistantType(`type`: String): Unit = js.native
+  
   /**
     * 显示软键盘
     * 强制显示系统软键盘，如果软键盘已经显示则不做任何操作。
@@ -82,4 +89,3 @@ trait PlusKey extends js.Object {
     */
   def showSoftKeybord(): Unit = js.native
 }
-

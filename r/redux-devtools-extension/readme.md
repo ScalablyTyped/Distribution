@@ -10,9 +10,9 @@ Wrappers for Redux DevTools Extension.
 | ------------------ | :-------------: |
 | Full name          | redux-devtools-extension |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 338 |
-| # downloads        | 22230283 |
+| # releases         | 4 |
+| # dependents       | 470 |
+| # downloads        | 33280671 |
 | # stars            | 12 |
 
 ## Links

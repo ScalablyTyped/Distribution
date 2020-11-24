@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Advertisers")
 @js.native
 class ResourceAdvertisers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.advertisers.get
     * @desc Gets one advertiser by ID.
@@ -42,6 +44,7 @@ class ResourceAdvertisers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiser]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertisers.insert
     * @desc Inserts a new advertiser.
@@ -71,6 +74,7 @@ class ResourceAdvertisers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiser]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertisers.list
     * @desc Retrieves a list of advertisers, possibly filtered. This method
@@ -115,6 +119,7 @@ class ResourceAdvertisers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertisersListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertisers.patch
     * @desc Updates an existing advertiser. This method supports patch
@@ -146,6 +151,7 @@ class ResourceAdvertisers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiser]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertisers.update
     * @desc Updates an existing advertiser.
@@ -176,4 +182,3 @@ class ResourceAdvertisers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAdvertiser]
   ): Unit = js.native
 }
-

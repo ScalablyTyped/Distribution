@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "PowerEase")
 @js.native
@@ -16,4 +16,3 @@ class PowerEase ()
   def this(/** Defines the power of the function */
   power: Double) = this()
 }
-

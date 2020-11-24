@@ -420,19 +420,23 @@ import typings.std.Window
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BlissNS")
 @js.native
 object BlissNS extends js.Object {
+  
   @js.native
   trait AriaRequestEvent extends Event {
+    
     val attributeName: String = js.native
+    
     var attributeValue: String | Null = js.native
   }
   
   @js.native
   trait BlissBindedArray[T] extends js.Object {
+    
     def all(method: String, args: js.Any*): Array[_] = js.native
     @JSName("all")
     def all_T[T](method: String, args: js.Any*): Array[T] = js.native
@@ -440,66 +444,99 @@ object BlissNS extends js.Object {
   
   @js.native
   trait BlissBindedElement[T] extends BlissNativeExtentions[T] {
+    
     def after(element: Element): BlissDecoratedElement[T] = js.native
+    
     def around(element: Element): BlissDecoratedElement[T] = js.native
+    
     def attributes(attrs: js.Object): BlissDecoratedElement[T] = js.native
+    
     def before(element: Element): BlissDecoratedElement[T] = js.native
+    
     def contents(elements: String): BlissDecoratedElement[T] = js.native
     def contents(elements: js.Object): BlissDecoratedElement[T] = js.native
     def contents(elements: Array[_]): BlissDecoratedElement[T] = js.native
     def contents(elements: Node): BlissDecoratedElement[T] = js.native
     def contents(elements: Number): BlissDecoratedElement[T] = js.native
+    
     def delegate(`type`: String, selector: String, callback: js.Function1[/* event */ Event, Unit]): BlissDecoratedElement[T] = js.native
     def delegate(`type`: String, selectorsToCallbacks: StringDictionary[js.Function1[/* event */ Event, Unit]]): BlissDecoratedElement[T] = js.native
     def delegate(
       typesToSelectorsToCallbacks: StringDictionary[StringDictionary[js.Function1[/* event */ Event, Unit]]]
     ): BlissDecoratedElement[T] = js.native
+    
     def events(handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]): BlissDecoratedElement[T] = js.native
     def events(handlers: Element): BlissDecoratedElement[T] = js.native
+    
     def fire(`type`: String): BlissDecoratedElement[T] = js.native
     def fire(`type`: String, properties: StringDictionary[js.Any]): BlissDecoratedElement[T] = js.native
+    
     def inside(element: Element): BlissDecoratedElement[T] = js.native
+    
     def once(handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]): BlissDecoratedElement[T] = js.native
     def once(handlers: Element): BlissDecoratedElement[T] = js.native
+    
     def properties(props: js.Object): BlissDecoratedElement[T] = js.native
+    
     def remove(): BlissDecoratedElement[T] = js.native
+    
     def set(options: js.Object): BlissDecoratedElement[T] = js.native
+    
     def start(element: Element): BlissDecoratedElement[T] = js.native
+    
     def style(properties: js.Object): BlissDecoratedElement[T] = js.native
+    
     def transition(properties: js.Object): js.Promise[T] = js.native
     def transition(properties: js.Object, duration: Double): js.Promise[T] = js.native
   }
   
   @js.native
   trait BlissCollectionArray[T] extends js.Object {
+    
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): BlissCollectionArray[T] = js.native
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, useCapture: Boolean): BlissCollectionArray[T] = js.native
+    
     def after(element: Element): BlissCollectionArray[T] = js.native
+    
     def around(element: Element): BlissCollectionArray[T] = js.native
+    
     def attributes(attrs: js.Object): BlissCollectionArray[T] = js.native
+    
     def before(element: Element): BlissCollectionArray[T] = js.native
+    
     def contents(elements: String): BlissCollectionArray[T] = js.native
     def contents(elements: js.Object): BlissCollectionArray[T] = js.native
     def contents(elements: Array[_]): BlissCollectionArray[T] = js.native
     def contents(elements: Node): BlissCollectionArray[T] = js.native
     def contents(elements: Number): BlissCollectionArray[T] = js.native
+    
     def delegate(`type`: String, selector: String, callback: js.Function1[/* event */ Event, Unit]): BlissCollectionArray[T] = js.native
     def delegate(`type`: String, selectorsToCallbacks: StringDictionary[js.Function1[/* event */ Event, Unit]]): BlissCollectionArray[T] = js.native
     def delegate(
       typesToSelectorsToCallbacks: StringDictionary[StringDictionary[js.Function1[/* event */ Event, Unit]]]
     ): BlissCollectionArray[T] = js.native
+    
     def events(handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]): BlissCollectionArray[T] = js.native
     def events(handlers: Element): BlissCollectionArray[T] = js.native
+    
     def fire(`type`: String): BlissCollectionArray[T] = js.native
     def fire(`type`: String, properties: StringDictionary[js.Any]): BlissCollectionArray[T] = js.native
+    
     def inside(element: Element): BlissCollectionArray[T] = js.native
+    
     def once(handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]): BlissCollectionArray[T] = js.native
     def once(handlers: Element): BlissCollectionArray[T] = js.native
+    
     def properties(props: js.Object): BlissCollectionArray[T] = js.native
+    
     def remove(): BlissCollectionArray[T] = js.native
+    
     def set(options: js.Object): BlissCollectionArray[T] = js.native
+    
     def start(element: Element): BlissCollectionArray[T] = js.native
+    
     def style(properties: js.Object): BlissCollectionArray[T] = js.native
+    
     def transition(properties: js.Object): Array[js.Promise[T]] = js.native
     def transition(properties: js.Object, duration: Double): Array[js.Promise[T]] = js.native
   }
@@ -508,6 +545,7 @@ object BlissNS extends js.Object {
   // Methods are All HTMLElement a ELement methods
   @js.native
   trait BlissNativeExtentions[T] extends js.Object {
+    
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): T = js.native
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, useCapture: Boolean): T = js.native
     @JSName("addEventListener")
@@ -930,21 +968,36 @@ object BlissNS extends js.Object {
     def addEventListener_wheel(`type`: wheel, listener: js.Function1[/* ev */ WheelEvent, _]): T = js.native
     @JSName("addEventListener")
     def addEventListener_wheel(`type`: wheel, listener: js.Function1[/* ev */ WheelEvent, _], useCapture: Boolean): T = js.native
+    
     def blur(): T = js.native
+    
     def click(): T = js.native
+    
     def contains(child: HTMLElement): Boolean = js.native
+    
     def dragDrop(): Boolean = js.native
+    
     def focus(): T = js.native
+    
     def getAttribute(): String = js.native
     def getAttribute(name: String): String = js.native
+    
     def getAttributeNS(namespaceURI: String, localName: String): String = js.native
+    
     def getAttributeNode(name: String): Attr = js.native
+    
     def getAttributeNodeNS(namespaceURI: String, localName: String): Attr = js.native
+    
     def getBoundingClientRect(): ClientRect = js.native
+    
     def getClientRects(): ClientRectList = js.native
+    
     def getElementsByClassName(classNames: String): NodeListOf[Element] = js.native
+    
     def getElementsByTagName(name: String): NodeListOf[Element] = js.native
+    
     def getElementsByTagNameNS(namespaceURI: String, localName: String): NodeListOf[Element] = js.native
+    
     @JSName("getElementsByTagName")
     def getElementsByTagName_a(name: a): NodeListOf[HTMLAnchorElement] = js.native
     @JSName("getElementsByTagName")
@@ -1289,45 +1342,68 @@ object BlissNS extends js.Object {
     def getElementsByTagName_wbr(name: wbr): NodeListOf[HTMLElement] = js.native
     @JSName("getElementsByTagName")
     def getElementsByTagName_xmp(name: xmp): NodeListOf[HTMLElement] = js.native
+    
     def hasAttribute(name: String): Boolean = js.native
+    
     def hasAttributeNS(namespaceURI: String, localName: String): Boolean = js.native
+    
     def insertAdjacentElement(position: String, insertedElement: Element): Element = js.native
+    
     def insertAdjacentHTML(where: String, html: String): T = js.native
+    
     def insertAdjacentText(where: String, text: String): T = js.native
+    
     def msGetInputContext(): MSInputMethodContext = js.native
+    
     def msGetUntransformedBounds(): ClientRect = js.native
+    
     def msMatchesSelector(selectors: String): Boolean = js.native
+    
     def msReleasePointerCapture(pointerId: Double): T = js.native
+    
     def msSetPointerCapture(pointerId: Double): T = js.native
+    
     def releasePointerCapture(pointerId: Double): T = js.native
+    
     def removeAttribute(): T = js.native
     def removeAttribute(name: String): T = js.native
+    
     def removeAttributeNS(namespaceURI: String, localName: String): T = js.native
+    
     def removeAttributeNode(oldAttr: Attr): Attr = js.native
+    
     def requestFullscreen(): T = js.native
+    
     def requestPointerLock(): T = js.native
+    
     def scrollIntoView(): T = js.native
     def scrollIntoView(top: Boolean): T = js.native
+    
     def setActive(): T = js.native
+    
     def setAttribute(): T = js.native
     def setAttribute(name: js.UndefOr[scala.Nothing], value: String): T = js.native
     def setAttribute(name: String): T = js.native
     def setAttribute(name: String, value: String): T = js.native
+    
     def setAttributeNS(namespaceURI: String, qualifiedName: String, value: String): T = js.native
+    
     def setAttributeNode(newAttr: Attr): Attr = js.native
+    
     def setAttributeNodeNS(newAttr: Attr): Attr = js.native
+    
     def setPointerCapture(pointerId: Double): T = js.native
+    
     def webkitMatchesSelector(selectors: String): Boolean = js.native
+    
     def webkitRequestFullScreen(): T = js.native
+    
     def webkitRequestFullscreen(): T = js.native
   }
   
   @js.native
   trait BlissStatic extends js.Object {
-    @JSName("$")
-    var $_Original: BlissStaticCollection = js.native
-    var classProps: js.Object = js.native
-    var hooks: Add = js.native
+    
     @JSName("$")
     def $(expr: Node): js.Array[Node] = js.native
     @JSName("$")
@@ -1345,14 +1421,19 @@ object BlissNS extends js.Object {
     @JSName("$")
     def $[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
     @JSName("$")
+    var $_Original: BlissStaticCollection = js.native
+    @JSName("$")
     def $_T_BlissDecoratedArrayElement[T](selector: String): BlissDecoratedArrayElement[T] = js.native
     @JSName("$")
     def $_T_BlissDecoratedArrayElement[T](selector: String, context: Element): BlissDecoratedArrayElement[T] = js.native
+    
     def apply[T](selector: String): BlissDecoratedElement[T] = js.native
     def apply[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
+    
     def Class(options: DictpropertyName): js.Object = js.native
     @JSName("Class")
     def Class_T_T[T](options: DictpropertyName): T = js.native
+    
     def add(callbacks: StringDictionary[js.Function]): Unit = js.native
     def add(callbacks: StringDictionary[js.Function], on: Array[_]): Unit = js.native
     def add(callbacks: StringDictionary[js.Function], on: BlissStatic): Unit = js.native
@@ -1363,15 +1444,24 @@ object BlissNS extends js.Object {
     def add(name: String, callback: js.Function, on: BlissStatic): Unit = js.native
     def add(name: String, callback: js.Function, on: BlissStaticCollection): Unit = js.native
     def add(name: String, callback: js.Function, on: Element): Unit = js.native
+    
     def after[T](subject: BlissDecoratedElement[T], element: Element): BlissDecoratedElement[T] = js.native
+    
     def all(array: Array[_], method: String, args: js.Any*): Array[_] = js.native
     @JSName("all")
     def all_T[T](array: Array[T], method: String, args: js.Any*): Array[T] = js.native
+    
     def around[T](subject: BlissDecoratedElement[T], element: Element): BlissDecoratedElement[T] = js.native
+    
     def attributes[T](subject: Array[BlissDecoratedElement[T]], attrs: js.Object): Array[BlissDecoratedElement[T]] = js.native
     def attributes[T](subject: BlissDecoratedElement[T], attrs: js.Object): BlissDecoratedElement[T] = js.native
+    
     def before[T](subject: BlissDecoratedElement[T], element: Element): BlissDecoratedElement[T] = js.native
+    
+    var classProps: js.Object = js.native
+    
     def clone[T](subject: BlissDecoratedElement[T]): BlissDecoratedElement[T] = js.native
+    
     def contents[T](subject: Array[BlissDecoratedElement[T]], elements: String): Array[BlissDecoratedElement[T]] = js.native
     def contents[T](subject: Array[BlissDecoratedElement[T]], elements: js.Object): Array[BlissDecoratedElement[T]] = js.native
     def contents[T](subject: Array[BlissDecoratedElement[T]], elements: Array[_]): Array[BlissDecoratedElement[T]] = js.native
@@ -1382,6 +1472,7 @@ object BlissNS extends js.Object {
     def contents[T](subject: BlissDecoratedElement[T], elements: Array[_]): BlissDecoratedElement[T] = js.native
     def contents[T](subject: BlissDecoratedElement[T], elements: Node): BlissDecoratedElement[T] = js.native
     def contents[T](subject: BlissDecoratedElement[T], elements: Number): BlissDecoratedElement[T] = js.native
+    
     def create[T](args: js.Any*): BlissDecoratedElement[T] = js.native
     def create[T](options: js.Object): BlissDecoratedElement[T] = js.native
     def create[T](tag: String): BlissDecoratedElement[T] = js.native
@@ -1586,6 +1677,7 @@ object BlissNS extends js.Object {
     def create_video(tag: video): HTMLVideoElement = js.native
     @JSName("create")
     def create_video(tag: video, options: js.Object): HTMLVideoElement = js.native
+    
     def delegate[T](
       subject: Array[BlissDecoratedElement[T]],
       `type`: String,
@@ -1616,12 +1708,14 @@ object BlissNS extends js.Object {
       subject: BlissDecoratedElement[T],
       typesToSelectorsToCallbacks: StringDictionary[StringDictionary[js.Function1[/* event */ Event, Unit]]]
     ): BlissDecoratedElement[T] = js.native
+    
     def each(obj: StringDictionary[js.Any], callback: js.Function): js.Object = js.native
     def each(obj: StringDictionary[js.Any], callback: js.Function, ret: js.Object): js.Object = js.native
     @JSName("each")
     def each_T_T[T](obj: StringDictionary[js.Any], callback: js.Function): T = js.native
     @JSName("each")
     def each_T_T[T](obj: StringDictionary[js.Any], callback: js.Function, ret: js.Object): T = js.native
+    
     def events[T](
       subject: Array[BlissDecoratedElement[T]],
       handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]
@@ -1632,6 +1726,7 @@ object BlissNS extends js.Object {
       handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]
     ): BlissDecoratedElement[T] = js.native
     def events[T](subject: BlissDecoratedElement[T], handlers: Element): BlissDecoratedElement[T] = js.native
+    
     def extend(target: js.Object, source: js.Any): js.Object = js.native
     def extend(target: js.Object, source: js.Any, whitelist: String): js.Object = js.native
     def extend(target: js.Object, source: js.Any, whitelist: js.Function): js.Object = js.native
@@ -1647,21 +1742,29 @@ object BlissNS extends js.Object {
     def extend_T_T[T](target: js.Object, source: js.Any, whitelist: Array[String]): T = js.native
     @JSName("extend")
     def extend_T_T[T](target: js.Object, source: js.Any, whitelist: RegExp): T = js.native
+    
     def fetch(url: String): js.Promise[XMLHttpRequest] = js.native
     def fetch(url: String, options: Data): js.Promise[XMLHttpRequest] = js.native
+    
     def fire[T](subject: Array[BlissDecoratedElement[T]], `type`: String): Array[BlissDecoratedElement[T]] = js.native
     def fire[T](subject: Array[BlissDecoratedElement[T]], `type`: String, properties: StringDictionary[js.Any]): Array[BlissDecoratedElement[T]] = js.native
     def fire[T](subject: BlissDecoratedElement[T], `type`: String): BlissDecoratedElement[T] = js.native
     def fire[T](subject: BlissDecoratedElement[T], `type`: String, properties: StringDictionary[js.Any]): BlissDecoratedElement[T] = js.native
+    
+    var hooks: Add = js.native
+    
     def include(condition: js.Any, url: String): js.Promise[Unit] = js.native
     def include(url: String): js.Promise[Unit] = js.native
+    
     def inside[T](subject: BlissDecoratedElement[T], element: Element): BlissDecoratedElement[T] = js.native
+    
     def `lazy`(`object`: js.Object, properties: StringDictionary[js.Function0[_]]): js.Object = js.native
     def `lazy`(`object`: js.Object, property: String, getter: js.Function0[_]): js.Object = js.native
     @JSName("lazy")
     def lazy_T_T[T](`object`: js.Object, properties: StringDictionary[js.Function0[_]]): T = js.native
     @JSName("lazy")
     def lazy_T_T[T](`object`: js.Object, property: String, getter: js.Function0[_]): T = js.native
+    
     def live(`object`: js.Object, properties: StringDictionary[js.Object | js.Function]): js.Object = js.native
     def live(`object`: js.Object, property: String, descriptor: js.Function): js.Object = js.native
     def live(`object`: js.Object, property: String, descriptor: js.Object): js.Object = js.native
@@ -1671,6 +1774,7 @@ object BlissNS extends js.Object {
     def live_T_T[T](`object`: js.Object, property: String, descriptor: js.Function): T = js.native
     @JSName("live")
     def live_T_T[T](`object`: js.Object, property: String, descriptor: js.Object): T = js.native
+    
     def once[T](
       subject: Array[BlissDecoratedElement[T]],
       handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]
@@ -1681,21 +1785,30 @@ object BlissNS extends js.Object {
       handlers: StringDictionary[js.Function1[/* event */ Event, Unit]]
     ): BlissDecoratedElement[T] = js.native
     def once[T](subject: BlissDecoratedElement[T], handlers: Element): BlissDecoratedElement[T] = js.native
+    
     def properties[T](subject: Array[BlissDecoratedElement[T]], props: js.Object): Array[BlissDecoratedElement[T]] = js.native
     def properties[T](subject: BlissDecoratedElement[T], props: js.Object): BlissDecoratedElement[T] = js.native
+    
     def ready(): js.Promise[_] = js.native
     def ready(context: Document): js.Promise[_] = js.native
+    
     def remove(subject: BlissStatic): Unit = js.native
     def remove(subject: Element): Unit = js.native
+    
     def set[T](subject: BlissDecoratedElement[T], options: js.Object): BlissDecoratedElement[T] = js.native
+    
     def start[T](subject: BlissDecoratedElement[T], element: Element): BlissDecoratedElement[T] = js.native
+    
     def style[T](subject: Array[BlissDecoratedElement[T]], properties: js.Object): Array[BlissDecoratedElement[T]] = js.native
     def style[T](subject: BlissDecoratedElement[T], properties: js.Object): BlissDecoratedElement[T] = js.native
+    
     def transition[T](subject: Array[BlissDecoratedElement[T]], properties: js.Object): js.Promise[T] = js.native
     def transition[T](subject: Array[BlissDecoratedElement[T]], properties: js.Object, duration: Double): js.Promise[T] = js.native
     def transition[T](subject: BlissDecoratedElement[T], properties: js.Object): js.Promise[T] = js.native
     def transition[T](subject: BlissDecoratedElement[T], properties: js.Object, duration: Double): js.Promise[T] = js.native
+    
     def `type`(`object`: js.Object): String = js.native
+    
     def value(obj: js.Object, properties: String*): js.Any = js.native
     def value(property: String, properties: String*): js.Any = js.native
     @JSName("value")
@@ -1706,6 +1819,7 @@ object BlissNS extends js.Object {
   
   @js.native
   trait BlissStaticCollection extends BlissStatic {
+    
     def apply(expr: Node): js.Array[Node] = js.native
     def apply(expr: Node, context: Element): js.Array[Node] = js.native
     def apply(expr: Window): js.Array[Window] = js.native
@@ -1716,11 +1830,13 @@ object BlissNS extends js.Object {
   
   @js.native
   trait CommandEvent extends Event {
+    
     val commandName: String = js.native
+    
     val detail: String | Null = js.native
   }
   
   type BlissDecoratedArrayElement[T] = Array[T] with BlissCollectionArray[T]
+  
   type BlissDecoratedElement[T] = Element with T
 }
-

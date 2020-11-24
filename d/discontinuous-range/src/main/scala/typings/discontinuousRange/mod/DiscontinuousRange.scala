@@ -2,10 +2,11 @@ package typings.discontinuousRange.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DiscontinuousRange extends js.Object {
+  
   /**
     * Adds the numbers from rangeStart to rangeEnd to the current range.
     * If rangeEnd is not defined, only rangeStart is added to the current range.
@@ -21,12 +22,14 @@ trait DiscontinuousRange extends js.Object {
     * @returns The range on which add was called. It contains the numbers in rangeToAdd.
     */
   def add(rangeToAdd: DiscontinuousRange): DiscontinuousRange = js.native
+  
   /**
     * Returns the number in the discontinuous range at the specified index.
     * @param index The index to lookup a number.
     * @returns A number in the range. null if index is greater than the number of elements in the range.
     */
   def index(index: Double): Double | Null = js.native
+  
   /**
     * Removes the numbers from rangeStart to rangeEnd to the current range.
     * If rangeEnd is not defined, only rangeStart is removed from the current range.
@@ -43,4 +46,3 @@ trait DiscontinuousRange extends js.Object {
     */
   def subtract(rangeToRemove: DiscontinuousRange): DiscontinuousRange = js.native
 }
-

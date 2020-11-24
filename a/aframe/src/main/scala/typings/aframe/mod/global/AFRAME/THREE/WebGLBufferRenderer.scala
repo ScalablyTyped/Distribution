@@ -3,7 +3,7 @@ package typings.aframe.mod.global.AFRAME.THREE
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.THREE.WebGLBufferRenderer")
 @js.native
@@ -16,4 +16,3 @@ class WebGLBufferRenderer protected ()
     capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities
   ) = this()
 }
-

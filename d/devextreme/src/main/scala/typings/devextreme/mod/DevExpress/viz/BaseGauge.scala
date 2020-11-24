@@ -2,17 +2,26 @@ package typings.devextreme.mod.DevExpress.viz
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseGauge extends BaseWidget {
-  /** @name BaseGauge.subvalues() */
+  
+  /**
+    * [descr:BaseGauge.subvalues()]
+    */
   def subvalues(): js.Array[Double] = js.native
-  /** @name BaseGauge.subvalues(subvalues) */
+  /**
+    * [descr:BaseGauge.subvalues(subvalues)]
+    */
   def subvalues(subvalues: js.Array[Double]): Unit = js.native
-  /** @name BaseGauge.value() */
+  
+  /**
+    * [descr:BaseGauge.value()]
+    */
   def value(): Double = js.native
-  /** @name BaseGauge.value(value) */
+  /**
+    * [descr:BaseGauge.value(value)]
+    */
   def value(value: Double): Unit = js.native
 }
-

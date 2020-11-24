@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.codebuildMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CodeBuild")
 @js.native
@@ -14,4 +14,3 @@ class CodeBuild ()
   extends typings.awsSdk.allMod.CodeBuild {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.naverWhale.global.whale
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 특정 탭의 네트워크 통신, JavaScript 디버깅, DOM · CSS 변형 등 디버그를 위한 [원격 디버깅 프로토콜](https://chromedevtools.github.io/devtools-protocol/tot/Network)을 사용할 수 있습니다.
@@ -17,4 +17,3 @@ object debugger
   extends TopLevel[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof chrome.debugger */ js.Any
     ]
-

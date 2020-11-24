@@ -1,16 +1,195 @@
 package typings.rcTabs
 
+import typings.rcTabs.interfaceMod.TabBarExtraPosition
 import typings.rcTabs.interfaceMod.TabPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcTabsStrings {
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  
+  @scala.inline
+  def `additions removals`: `additions removals` = ("additions removals").asInstanceOf[`additions removals`]
+  
+  @scala.inline
+  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  
+  @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
+  
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  
+  @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
+  
+  @scala.inline
+  def `removals additions`: `removals additions` = ("removals additions").asInstanceOf[`removals additions`]
+  
+  @scala.inline
+  def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  
+  @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def `text additions`: `text additions` = ("text additions").asInstanceOf[`text additions`]
+  
+  @scala.inline
+  def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
+  
   @js.native
   sealed trait add extends js.Object
   
   @js.native
   sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions removals` extends js.Object
   
   @js.native
   sealed trait `additions text` extends js.Object
@@ -67,7 +246,9 @@ object rcTabsStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
-  sealed trait left extends TabPosition
+  sealed trait left
+    extends TabBarExtraPosition
+       with TabPosition
   
   @js.native
   sealed trait link extends js.Object
@@ -124,10 +305,18 @@ object rcTabsStrings {
   sealed trait removals extends js.Object
   
   @js.native
+  sealed trait `removals additions` extends js.Object
+  
+  @js.native
+  sealed trait `removals text` extends js.Object
+  
+  @js.native
   sealed trait remove extends js.Object
   
   @js.native
-  sealed trait right extends TabPosition
+  sealed trait right
+    extends TabBarExtraPosition
+       with TabPosition
   
   @js.native
   sealed trait rtl extends js.Object
@@ -148,6 +337,12 @@ object rcTabsStrings {
   sealed trait text extends js.Object
   
   @js.native
+  sealed trait `text additions` extends js.Object
+  
+  @js.native
+  sealed trait `text removals` extends js.Object
+  
+  @js.native
   sealed trait time extends js.Object
   
   @js.native
@@ -164,112 +359,4 @@ object rcTabsStrings {
   
   @js.native
   sealed trait yes extends js.Object
-  
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def additions: additions = "additions".asInstanceOf[additions]
-  @scala.inline
-  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def execute: execute = "execute".asInstanceOf[execute]
-  @scala.inline
-  def grammar: grammar = "grammar".asInstanceOf[grammar]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def listbox: listbox = "listbox".asInstanceOf[listbox]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def mixed: mixed = "mixed".asInstanceOf[mixed]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
-  @scala.inline
-  def removals: removals = "removals".asInstanceOf[removals]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def spelling: spelling = "spelling".asInstanceOf[spelling]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def tel: tel = "tel".asInstanceOf[tel]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
 }
-

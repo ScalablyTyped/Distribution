@@ -39,17 +39,14 @@ import typings.actionsOnGoogle.updateMod.UpdatePermissionUserIdArgument
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2Argument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument/argument", "Parsed")
 @js.native
 class Parsed protected () extends js.Object {
   /** @hidden */
   def this(raw: js.Array[GoogleActionsV2Argument]) = this()
-  /** @public */
-  var input: ArgumentsParsed = js.native
-  /** @public */
-  var list: js.Array[Argument] = js.native
+  
   /** @public */
   def get(name: String): Argument = js.native
   @JSName("get")
@@ -89,5 +86,10 @@ class Parsed protected () extends js.Object {
   def get_TRANSACTIONREQUIREMENTSCHECKRESULT(name: TRANSACTION_REQUIREMENTS_CHECK_RESULT): js.UndefOr[TransactionRequirementsArgument] = js.native
   @JSName("get")
   def get_UPDATESUSERID(name: UPDATES_USER_ID): js.UndefOr[UpdatePermissionUserIdArgument] = js.native
+  
+  /** @public */
+  var input: ArgumentsParsed = js.native
+  
+  /** @public */
+  var list: js.Array[Argument] = js.native
 }
-

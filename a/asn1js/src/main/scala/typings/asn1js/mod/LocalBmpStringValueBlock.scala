@@ -3,7 +3,7 @@ package typings.asn1js.mod
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.asn1js.mod.ILocalHexBlock because var conflicts: isHexOnly, valueHex. Inlined 
@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LocalBmpStringValueBlock () extends LocalBaseBlock {
   def this(params: LocalBmpStringValueBlockParams) = this()
-  var isHexOnly: scala.Boolean = js.native
-  var value: String = js.native
-  var valueHex: ArrayBuffer = js.native
+  
   /**
     * Base function for converting block from BER encoded array of bytes
     * 
@@ -25,6 +23,9 @@ class LocalBmpStringValueBlock () extends LocalBaseBlock {
     * @memberOf LocalHexBlockMixin
     */
   def fromBER(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): Double = js.native
+  
+  var isHexOnly: scala.Boolean = js.native
+  
   /**
     * Encoding of current ASN.1 block into ASN.1 encoded array (BER rules)
     * 
@@ -35,5 +36,8 @@ class LocalBmpStringValueBlock () extends LocalBaseBlock {
     */
   def toBER(): ArrayBuffer = js.native
   def toBER(sizeOnly: scala.Boolean): ArrayBuffer = js.native
+  
+  var value: String = js.native
+  
+  var valueHex: ArrayBuffer = js.native
 }
-

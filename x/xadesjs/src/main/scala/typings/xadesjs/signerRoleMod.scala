@@ -6,11 +6,12 @@ import typings.xmlCore.mod.XmlCollection
 import typings.xmlCore.mod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs/build/types/xml/signer_role", JSImport.Namespace)
 @js.native
 object signerRoleMod extends js.Object {
+  
   @js.native
   class CertifiedRole () extends EncapsulatedPKIData
   
@@ -25,9 +26,9 @@ object signerRoleMod extends js.Object {
   
   @js.native
   class SignerRole () extends XmlObject {
+    
     var CertifiedRoles: typings.xadesjs.signerRoleMod.CertifiedRoles = js.native
+    
     var ClaimedRoles: typings.xadesjs.signerRoleMod.ClaimedRoles = js.native
   }
-  
 }
-

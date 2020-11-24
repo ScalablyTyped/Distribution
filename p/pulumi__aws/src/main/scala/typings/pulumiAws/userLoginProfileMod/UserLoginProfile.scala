@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile")
 @js.native
@@ -21,36 +21,42 @@ class UserLoginProfile protected () extends CustomResource {
     */
   def this(name: String, args: UserLoginProfileArgs) = this()
   def this(name: String, args: UserLoginProfileArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The encrypted password, base64 encoded. Only available if password was handled on this provider resource creation, not import.
     */
   val encryptedPassword: Output_[String] = js.native
+  
   /**
     * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on this provider resource creation, not import.
     */
   val keyFingerprint: Output_[String] = js.native
+  
   /**
     * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
   val passwordLength: Output_[js.UndefOr[Double]] = js.native
+  
   /**
     * Whether the user should be forced to reset the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
   val passwordResetRequired: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.
     */
   val pgpKey: Output_[String] = js.native
+  
   /**
     * The IAM user's name.
     */
   val user: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile")
 @js.native
 object UserLoginProfile extends js.Object {
+  
   /**
     * Get an existing UserLoginProfile resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -64,10 +70,10 @@ object UserLoginProfile extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserLoginProfile = js.native
   def get(name: String, id: Input[ID], state: UserLoginProfileState): UserLoginProfile = js.native
   def get(name: String, id: Input[ID], state: UserLoginProfileState, opts: CustomResourceOptions): UserLoginProfile = js.native
+  
   /**
     * Returns true if the given object is an instance of UserLoginProfile.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean = js.native
 }
-

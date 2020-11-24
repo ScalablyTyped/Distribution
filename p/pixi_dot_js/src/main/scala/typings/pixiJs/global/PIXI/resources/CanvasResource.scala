@@ -4,7 +4,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.OffscreenCanvas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for HTMLCanvasElement.
@@ -19,11 +19,11 @@ class CanvasResource protected ()
   extends typings.pixiJs.PIXI.resources.CanvasResource {
   def this(source: HTMLCanvasElement) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.resources.CanvasResource")
 @js.native
 object CanvasResource extends js.Object {
+  
   /**
     * Used to auto-detect the type of resource.
     *
@@ -34,4 +34,3 @@ object CanvasResource extends js.Object {
   def test(source: HTMLCanvasElement): Boolean = js.native
   def test(source: OffscreenCanvas): Boolean = js.native
 }
-

@@ -9,9 +9,94 @@ import typings.documentdb.mod.TriggerOperation
 import typings.documentdb.mod.TriggerType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentdbStrings {
+  
+  @scala.inline
+  def All: All = "All".asInstanceOf[All]
+  
+  @scala.inline
+  def BoundedStaleness: BoundedStaleness = "BoundedStaleness".asInstanceOf[BoundedStaleness]
+  
+  @scala.inline
+  def Buffered: Buffered = "Buffered".asInstanceOf[Buffered]
+  
+  @scala.inline
+  def Consistent: Consistent = "Consistent".asInstanceOf[Consistent]
+  
+  @scala.inline
+  def Create: Create = "Create".asInstanceOf[Create]
+  
+  @scala.inline
+  def Delete: Delete = "Delete".asInstanceOf[Delete]
+  
+  @scala.inline
+  def Eventual: Eventual = "Eventual".asInstanceOf[Eventual]
+  
+  @scala.inline
+  def Hash: Hash = "Hash".asInstanceOf[Hash]
+  
+  @scala.inline
+  def Javascript: Javascript = "Javascript".asInstanceOf[Javascript]
+  
+  @scala.inline
+  def Lazy: Lazy = "Lazy".asInstanceOf[Lazy]
+  
+  @scala.inline
+  def None: None = "None".asInstanceOf[None]
+  
+  @scala.inline
+  def Post: Post = "Post".asInstanceOf[Post]
+  
+  @scala.inline
+  def Pre: Pre = "Pre".asInstanceOf[Pre]
+  
+  @scala.inline
+  def Range: Range = "Range".asInstanceOf[Range]
+  
+  @scala.inline
+  def Read: Read = "Read".asInstanceOf[Read]
+  
+  @scala.inline
+  def Replace: Replace = "Replace".asInstanceOf[Replace]
+  
+  @scala.inline
+  def Session: Session = "Session".asInstanceOf[Session]
+  
+  @scala.inline
+  def Spatial: Spatial = "Spatial".asInstanceOf[Spatial]
+  
+  @scala.inline
+  def Streamed: Streamed = "Streamed".asInstanceOf[Streamed]
+  
+  @scala.inline
+  def Strong: Strong = "Strong".asInstanceOf[Strong]
+  
+  @scala.inline
+  def Update: Update = "Update".asInstanceOf[Update]
+  
+  @scala.inline
+  def all_ : all_ = "all".asInstanceOf[all_]
+  
+  @scala.inline
+  def create_ : create_ = "create".asInstanceOf[create_]
+  
+  @scala.inline
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
+  
+  @scala.inline
+  def post_ : post_ = "post".asInstanceOf[post_]
+  
+  @scala.inline
+  def pre_ : pre_ = "pre".asInstanceOf[pre_]
+  
+  @scala.inline
+  def replace_ : replace_ = "replace".asInstanceOf[replace_]
+  
+  @scala.inline
+  def update_ : update_ = "update".asInstanceOf[update_]
+  
   @js.native
   sealed trait All
     extends PermissionMode
@@ -97,62 +182,4 @@ object documentdbStrings {
   
   @js.native
   sealed trait update_ extends TriggerOperation
-  
-  @scala.inline
-  def All: All = "All".asInstanceOf[All]
-  @scala.inline
-  def BoundedStaleness: BoundedStaleness = "BoundedStaleness".asInstanceOf[BoundedStaleness]
-  @scala.inline
-  def Buffered: Buffered = "Buffered".asInstanceOf[Buffered]
-  @scala.inline
-  def Consistent: Consistent = "Consistent".asInstanceOf[Consistent]
-  @scala.inline
-  def Create: Create = "Create".asInstanceOf[Create]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def Eventual: Eventual = "Eventual".asInstanceOf[Eventual]
-  @scala.inline
-  def Hash: Hash = "Hash".asInstanceOf[Hash]
-  @scala.inline
-  def Javascript: Javascript = "Javascript".asInstanceOf[Javascript]
-  @scala.inline
-  def Lazy: Lazy = "Lazy".asInstanceOf[Lazy]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def Post: Post = "Post".asInstanceOf[Post]
-  @scala.inline
-  def Pre: Pre = "Pre".asInstanceOf[Pre]
-  @scala.inline
-  def Range: Range = "Range".asInstanceOf[Range]
-  @scala.inline
-  def Read: Read = "Read".asInstanceOf[Read]
-  @scala.inline
-  def Replace: Replace = "Replace".asInstanceOf[Replace]
-  @scala.inline
-  def Session: Session = "Session".asInstanceOf[Session]
-  @scala.inline
-  def Spatial: Spatial = "Spatial".asInstanceOf[Spatial]
-  @scala.inline
-  def Streamed: Streamed = "Streamed".asInstanceOf[Streamed]
-  @scala.inline
-  def Strong: Strong = "Strong".asInstanceOf[Strong]
-  @scala.inline
-  def Update: Update = "Update".asInstanceOf[Update]
-  @scala.inline
-  def all_ : all_ = "all".asInstanceOf[all_]
-  @scala.inline
-  def create_ : create_ = "create".asInstanceOf[create_]
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def post_ : post_ = "post".asInstanceOf[post_]
-  @scala.inline
-  def pre_ : pre_ = "pre".asInstanceOf[pre_]
-  @scala.inline
-  def replace_ : replace_ = "replace".asInstanceOf[replace_]
-  @scala.inline
-  def update_ : update_ = "update".asInstanceOf[update_]
 }
-

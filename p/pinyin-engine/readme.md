@@ -11,8 +11,8 @@ Typings are for version 1.1
 | Full name          | pinyin-engine |
 | Keywords           | pinyin |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 4384 |
+| # dependents       | 4 |
+| # downloads        | 4785 |
 | # stars            | 1 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.mongodb.mod.Collection
 import typings.mongodb.mod.DefaultSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agenda", JSImport.Namespace)
 @js.native
@@ -18,4 +18,3 @@ class ^ () extends Agenda {
   def this(config: js.UndefOr[scala.Nothing], cb: ResultCallback[Collection[DefaultSchema]]) = this()
   def this(config: AgendaConfiguration, cb: ResultCallback[Collection[DefaultSchema]]) = this()
 }
-

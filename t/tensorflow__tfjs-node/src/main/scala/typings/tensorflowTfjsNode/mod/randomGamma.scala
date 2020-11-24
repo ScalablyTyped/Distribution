@@ -1,15 +1,16 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsCore.tensorMod.Tensor
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.float32
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.int32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "randomGamma")
 @js.native
 object randomGamma extends js.Object {
+  
   def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double
@@ -86,4 +87,3 @@ object randomGamma extends js.Object {
     seed: Double
   ): Tensor[R] = js.native
 }
-

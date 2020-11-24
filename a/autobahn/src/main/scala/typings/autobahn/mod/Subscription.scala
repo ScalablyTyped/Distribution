@@ -2,7 +2,7 @@ package typings.autobahn.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autobahn", "Subscription")
 @js.native
@@ -154,4 +154,3 @@ class Subscription () extends ISubscription {
   ) = this()
   def this(topic: String, handler: SubscribeHandler, options: ISubscribeOptions, session: Session, id: Double) = this()
 }
-

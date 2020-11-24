@@ -1,17 +1,19 @@
 package typings.awsSdk.codestarconnectionsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeStarconnections extends Service {
+  
   @JSName("config")
   var config_CodeStarconnections: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a connection that can then be given to other AWS services like CodePipeline so that it can access third-party code repositories. The connection is in pending status until the third-party connection handshake is completed from the console.
     */
@@ -25,6 +27,7 @@ trait CodeStarconnections extends Service {
     params: CreateConnectionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConnectionOutput, Unit]
   ): Request[CreateConnectionOutput, AWSError] = js.native
+  
   /**
     * Creates a resource that represents the infrastructure where a third-party provider is installed. The host is used when you create connections to an installed third-party provider type, such as GitHub Enterprise Server. You create one host for all connections to that provider.  A host created through the CLI or the SDK is in `PENDING` status by default. You can make its status `AVAILABLE` by setting up the host in the console. 
     */
@@ -38,6 +41,7 @@ trait CodeStarconnections extends Service {
     params: CreateHostInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateHostOutput, Unit]
   ): Request[CreateHostOutput, AWSError] = js.native
+  
   /**
     * The connection to be deleted.
     */
@@ -51,6 +55,7 @@ trait CodeStarconnections extends Service {
     params: DeleteConnectionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConnectionOutput, Unit]
   ): Request[DeleteConnectionOutput, AWSError] = js.native
+  
   /**
     * The host to be deleted. Before you delete a host, all connections associated to the host must be deleted.  A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING state. 
     */
@@ -64,6 +69,7 @@ trait CodeStarconnections extends Service {
     params: DeleteHostInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteHostOutput, Unit]
   ): Request[DeleteHostOutput, AWSError] = js.native
+  
   /**
     * Returns the connection ARN and details such as status, owner, and provider type.
     */
@@ -77,6 +83,7 @@ trait CodeStarconnections extends Service {
     params: GetConnectionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConnectionOutput, Unit]
   ): Request[GetConnectionOutput, AWSError] = js.native
+  
   /**
     * Returns the host ARN and details such as status, provider type, endpoint, and, if applicable, the VPC configuration.
     */
@@ -87,6 +94,7 @@ trait CodeStarconnections extends Service {
     */
   def getHost(params: GetHostInput): Request[GetHostOutput, AWSError] = js.native
   def getHost(params: GetHostInput, callback: js.Function2[/* err */ AWSError, /* data */ GetHostOutput, Unit]): Request[GetHostOutput, AWSError] = js.native
+  
   /**
     * Lists the connections associated with your account.
     */
@@ -100,6 +108,7 @@ trait CodeStarconnections extends Service {
     params: ListConnectionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConnectionsOutput, Unit]
   ): Request[ListConnectionsOutput, AWSError] = js.native
+  
   /**
     * Lists the hosts associated with your account.
     */
@@ -113,6 +122,7 @@ trait CodeStarconnections extends Service {
     params: ListHostsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListHostsOutput, Unit]
   ): Request[ListHostsOutput, AWSError] = js.native
+  
   /**
     * Gets the set of key-value pairs (metadata) that are used to manage the resource.
     */
@@ -126,6 +136,7 @@ trait CodeStarconnections extends Service {
     params: ListTagsForResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
+  
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
     */
@@ -139,6 +150,7 @@ trait CodeStarconnections extends Service {
     params: TagResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]
   ): Request[TagResourceOutput, AWSError] = js.native
+  
   /**
     * Removes tags from an AWS resource.
     */
@@ -153,4 +165,3 @@ trait CodeStarconnections extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
 }
-

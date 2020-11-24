@@ -6,11 +6,11 @@ import typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsSt
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("object.getownpropertydescriptors/implementation", JSImport.Namespace)
 @js.native
 object implementationMod extends js.Object {
+  
   def apply[T](o: T): ^  with TopLevel[T] with StringDictionary[PropertyDescriptor] = js.native
 }
-

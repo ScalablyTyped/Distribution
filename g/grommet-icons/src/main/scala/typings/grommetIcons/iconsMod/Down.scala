@@ -3,9 +3,8 @@ package typings.grommetIcons.iconsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet-icons/es6/icons", "Down")
+@JSImport("grommet-icons/icons", "Down")
 @js.native
 object Down extends TopLevel[Icon]
-

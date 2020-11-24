@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BPMNTasks extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BPMNTasks")
 @js.native
 object BPMNTasks extends js.Object {
+  
   //Used to set BPMN Task Type as BusinessRule
   @js.native
   sealed trait BusinessRule extends BPMNTasks
@@ -49,6 +49,4 @@ object BPMNTasks extends js.Object {
   //Used to set BPMN Task Type as User
   @js.native
   sealed trait User extends BPMNTasks
-  
 }
-

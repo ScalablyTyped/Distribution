@@ -5,7 +5,7 @@ import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The new loader, extends Resource Loader by Chad Engler: https://github.com/englercj/resource-loader
@@ -60,42 +60,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Loader extends js.Object {
-  var baseUrl: String = js.native
-  var concurrency: Double = js.native
-  var defaultQueryString: String = js.native
-  var loading: Boolean = js.native
-  /**
-    * @memberof PIXI.Loader#
-    * @description Dispatched when completely loaded all resources.
-    * @member {PIXI.Loader.ILoaderSignal} onComplete
-    */
-  var onComplete: ILoaderSignal = js.native
-  /**
-    * @memberof PIXI.Loader#
-    * @description Dispatched once per errored resource.
-    * @member {PIXI.Loader.ILoaderSignal} onError
-    */
-  var onError: ILoaderSignal = js.native
-  /**
-    * @memberof PIXI.Loader#
-    * @description Dispatched once per loaded resource.
-    * @member {PIXI.Loader.ILoaderSignal} onLoad
-    */
-  var onLoad: ILoaderSignal = js.native
-  /**
-    * @memberof PIXI.Loader#
-    * @description Dispatched once per loaded or errored resource.
-    * @member {PIXI.Loader.ILoaderSignal} onProgress
-    */
-  var onProgress: ILoaderSignal = js.native
-  /**
-    * @memberof PIXI.Loader#
-    * @description Dispatched when the loader begins to loading process.
-    * @member {PIXI.Loader.ILoaderSignal} onStart
-    */
-  var onStart: ILoaderSignal = js.native
-  var progress: Double = js.native
-  var resources: IResourceDictionary = js.native
+  
   //tslint:disable-next-line:ban-types forbidden-types
   def add(name: String, url: String): this.type = js.native
   def add(name: String, url: String, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
@@ -115,7 +80,15 @@ trait Loader extends js.Object {
   def add(obj: js.Array[_], options: ILoaderOptions): this.type = js.native
   def add(obj: js.Array[_], options: ILoaderOptions, cb: js.Function): this.type = js.native
   def add(params: js.Any*): this.type = js.native
+  
+  var baseUrl: String = js.native
+  
+  var concurrency: Double = js.native
+  
+  var defaultQueryString: String = js.native
+  
   def destroy(): Unit = js.native
+  
   //tslint:disable-next-line:ban-types forbidden-types
   def load(): this.type = js.native
   def load(
@@ -125,16 +98,60 @@ trait Loader extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
+  var loading: Boolean = js.native
+  
+  /**
+    * @memberof PIXI.Loader#
+    * @description Dispatched when completely loaded all resources.
+    * @member {PIXI.Loader.ILoaderSignal} onComplete
+    */
+  var onComplete: ILoaderSignal = js.native
+  
+  /**
+    * @memberof PIXI.Loader#
+    * @description Dispatched once per errored resource.
+    * @member {PIXI.Loader.ILoaderSignal} onError
+    */
+  var onError: ILoaderSignal = js.native
+  
+  /**
+    * @memberof PIXI.Loader#
+    * @description Dispatched once per loaded resource.
+    * @member {PIXI.Loader.ILoaderSignal} onLoad
+    */
+  var onLoad: ILoaderSignal = js.native
+  
+  /**
+    * @memberof PIXI.Loader#
+    * @description Dispatched once per loaded or errored resource.
+    * @member {PIXI.Loader.ILoaderSignal} onProgress
+    */
+  var onProgress: ILoaderSignal = js.native
+  
+  /**
+    * @memberof PIXI.Loader#
+    * @description Dispatched when the loader begins to loading process.
+    * @member {PIXI.Loader.ILoaderSignal} onStart
+    */
+  var onStart: ILoaderSignal = js.native
+  
   //tslint:disable-next-line:ban-types forbidden-types
   def pre(fn: js.Function): this.type = js.native
+  
+  var progress: Double = js.native
+  
   def reset(): this.type = js.native
+  
+  var resources: IResourceDictionary = js.native
+  
   //tslint:disable-next-line:ban-types forbidden-types
   def use(fn: js.Function): this.type = js.native
 }
-
 @JSGlobal("PIXI.Loader")
 @js.native
 object Loader extends js.Object {
+  
   /**
     * @memberof PIXI.Loader
     * @typedef ILoaderSignal
@@ -144,17 +161,20 @@ object Loader extends js.Object {
     */
   @js.native
   trait ILoaderSignal extends js.Object {
-    @JSName("add")
-    var add_Original: ISignalCallback = js.native
-    @JSName("detach")
-    var detach_Original: ISignalDetach = js.native
-    @JSName("once")
-    var once_Original: ISignalCallback = js.native
+    
     def add(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
     def add(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
+    @JSName("add")
+    var add_Original: ISignalCallback = js.native
+    
     def detach(id: ICallbackID): Unit = js.native
+    @JSName("detach")
+    var detach_Original: ISignalDetach = js.native
+    
     def once(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
     def once(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
+    @JSName("once")
+    var once_Original: ISignalCallback = js.native
   }
   
   /**
@@ -162,6 +182,7 @@ object Loader extends js.Object {
     * @typedef {object} ICallbackID
     */
   type ICallbackID = js.Any
+  
   /**
     * @memberof PIXI.Loader
     * @typedef {function} ISignalCallback
@@ -174,12 +195,14 @@ object Loader extends js.Object {
     /* context */ js.UndefOr[js.Any], 
     ICallbackID
   ]
+  
   /**
     * @memberof PIXI.Loader
     * @typedef {function} ISignalDetach
     * @param {ICallbackID} id - CallbackID returned by `add`/`once` methods
     */
   type ISignalDetach = js.Function1[/* id */ ICallbackID, Unit]
+  
   /**
     * @memberof PIXI.Loader
     * @callback loaderMiddleware
@@ -192,4 +215,3 @@ object Loader extends js.Object {
     Unit
   ]
 }
-

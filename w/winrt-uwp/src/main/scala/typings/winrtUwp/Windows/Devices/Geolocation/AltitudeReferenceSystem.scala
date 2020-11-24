@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AltitudeReferenceSystem extends js.Object
-
 /** Indicates the altitude reference system to be used in defining a geographic shape. */
 @JSGlobal("Windows.Devices.Geolocation.AltitudeReferenceSystem")
 @js.native
 object AltitudeReferenceSystem extends js.Object {
+  
   /** The altitude reference system is based on an ellipsoid which is a mathematical approximation of the shape of the Earth. */
   @js.native
   sealed trait ellipsoid extends AltitudeReferenceSystem
@@ -30,6 +30,4 @@ object AltitudeReferenceSystem extends js.Object {
   /** The altitude reference system was not specified. */
   @js.native
   sealed trait unspecified extends AltitudeReferenceSystem
-  
 }
-

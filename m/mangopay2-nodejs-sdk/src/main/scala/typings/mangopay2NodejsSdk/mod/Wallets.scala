@@ -7,38 +7,12 @@ import typings.mangopay2NodejsSdk.mod.wallet.UpdateWallet
 import typings.mangopay2NodejsSdk.mod.wallet.WalletData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Wallets")
 @js.native
 class Wallets () extends js.Object {
-  /**
-    * Create new wallet
-    * @param wallet
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateWallet | Wallet, WalletData] = js.native
-  /**
-    * Get transactions for the wallet
-    * @param walletId
-    * @param options
-    */
-  @JSName("getTransactions")
-  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
-  /**
-    * Get a specific wallet
-    * @param walletId
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, WalletData] = js.native
-  /**
-    * Update wallet
-    * @param wallet
-    * @param options
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateWallet | Wallet, WalletData] = js.native
+  
   def create(data: Wallet): js.Promise[WalletData] = js.native
   def create(data: Wallet, callback: js.Function1[/* data */ WalletData, Unit]): Unit = js.native
   def create(
@@ -88,6 +62,14 @@ class Wallets () extends js.Object {
   def create(data: CreateWallet, options: MethodOptionWithResponse): js.Promise[WithResponse[WalletData]] = js.native
   def create(data: CreateWallet, options: MethodOptionWithoutResponse): js.Promise[WalletData] = js.native
   /**
+    * Create new wallet
+    * @param wallet
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateWallet | Wallet, WalletData] = js.native
+  
+  /**
     * Get a specific wallet
     * @param walletId
     */
@@ -117,6 +99,7 @@ class Wallets () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[WalletData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[WalletData] = js.native
+  
   /**
     * Get transactions for the wallet
     * @param walletId
@@ -151,6 +134,21 @@ class Wallets () extends js.Object {
     */
   def getTransactions(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[TransactionData]]] = js.native
   def getTransactions(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[TransactionData]] = js.native
+  /**
+    * Get transactions for the wallet
+    * @param walletId
+    * @param options
+    */
+  @JSName("getTransactions")
+  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
+  
+  /**
+    * Get a specific wallet
+    * @param walletId
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, WalletData] = js.native
+  
   def update(data: Wallet): js.Promise[WalletData] = js.native
   def update(data: Wallet, callback: js.Function1[/* data */ WalletData, Unit]): Unit = js.native
   def update(
@@ -199,5 +197,11 @@ class Wallets () extends js.Object {
     */
   def update(data: UpdateWallet, options: MethodOptionWithResponse): js.Promise[WithResponse[WalletData]] = js.native
   def update(data: UpdateWallet, options: MethodOptionWithoutResponse): js.Promise[WalletData] = js.native
+  /**
+    * Update wallet
+    * @param wallet
+    * @param options
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateWallet | Wallet, WalletData] = js.native
 }
-

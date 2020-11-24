@@ -13,37 +13,39 @@ import typings.minappEnv.minappEnvStrings.NFKC
 import typings.minappEnv.minappEnvStrings.NFKD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait String
   extends /* index */ NumberDictionary[java.lang.String] {
-  /** Iterator */
-  @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
-  /** Returns the length of a String object. */
-  val length: Double = js.native
+  
   /**
     * Returns an <a> HTML anchor element and sets the name attribute to the text value
     * @param name
     */
   def anchor(name: java.lang.String): java.lang.String = js.native
+  
   /** Returns a <big> HTML element */
   def big(): java.lang.String = js.native
+  
   /** Returns a <blink> HTML element */
   def blink(): java.lang.String = js.native
+  
   /** Returns a <b> HTML element */
   def bold(): java.lang.String = js.native
+  
   /**
     * Returns the character at the specified index.
     * @param pos The zero-based index of the desired character.
     */
   def charAt(pos: Double): java.lang.String = js.native
+  
   /**
     * Returns the Unicode value of the character at the specified location.
     * @param index The zero-based index of the desired character. If there is no character at the specified index, NaN is returned.
     */
   def charCodeAt(index: Double): Double = js.native
+  
   /**
     * Returns a nonnegative integer Number less than 1114112 (0x110000) that is the code point
     * value of the UTF-16 encoded code point starting at the string element at position pos in
@@ -52,11 +54,13 @@ trait String
     * If a valid UTF-16 surrogate pair does not begin at pos, the result is the code unit at pos.
     */
   def codePointAt(pos: Double): js.UndefOr[Double] = js.native
+  
   /**
     * Returns a string that contains the concatenation of two or more strings.
     * @param strings The strings to append to the end of the string.
     */
   def concat(strings: java.lang.String*): java.lang.String = js.native
+  
   /**
     * Returns true if the sequence of elements of searchString converted to a String is the
     * same as the corresponding elements of this object (converted to a String) starting at
@@ -64,14 +68,18 @@ trait String
     */
   def endsWith(searchString: java.lang.String): scala.Boolean = js.native
   def endsWith(searchString: java.lang.String, endPosition: Double): scala.Boolean = js.native
+  
   /** Returns a <tt> HTML element */
   def fixed(): java.lang.String = js.native
+  
   /** Returns a <font> HTML element and sets the color attribute value */
   def fontcolor(color: java.lang.String): java.lang.String = js.native
+  
   /** Returns a <font> HTML element and sets the size attribute value */
   def fontsize(size: java.lang.String): java.lang.String = js.native
   /** Returns a <font> HTML element and sets the size attribute value */
   def fontsize(size: Double): java.lang.String = js.native
+  
   /**
     * Returns true if searchString appears as a substring of the result of converting this
     * object to a String, at one or more positions that are
@@ -81,6 +89,7 @@ trait String
     */
   def includes(searchString: java.lang.String): scala.Boolean = js.native
   def includes(searchString: java.lang.String, position: Double): scala.Boolean = js.native
+  
   /**
     * Returns the position of the first occurrence of a substring.
     * @param searchString The substring to search for in the string
@@ -88,8 +97,14 @@ trait String
     */
   def indexOf(searchString: java.lang.String): Double = js.native
   def indexOf(searchString: java.lang.String, position: Double): Double = js.native
+  
   /** Returns an <i> HTML element */
   def italics(): java.lang.String = js.native
+  
+  /** Iterator */
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
+  
   /**
     * Returns the last occurrence of a substring in the string.
     * @param searchString The substring to search for.
@@ -97,8 +112,13 @@ trait String
     */
   def lastIndexOf(searchString: java.lang.String): Double = js.native
   def lastIndexOf(searchString: java.lang.String, position: Double): Double = js.native
+  
+  /** Returns the length of a String object. */
+  val length: Double = js.native
+  
   /** Returns an <a> HTML element and sets the href attribute value */
   def link(url: java.lang.String): java.lang.String = js.native
+  
   /**
     * Determines whether two strings are equivalent in the current locale.
     * @param that String to compare to target string
@@ -109,6 +129,7 @@ trait String
   def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String], options: CollatorOptions): Double = js.native
+  
   /**
     * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
     * @param matcher An object that supports being matched against.
@@ -120,6 +141,7 @@ trait String
     */
   def `match`(regexp: java.lang.String): RegExpMatchArray | Null = js.native
   def `match`(regexp: RegExp): RegExpMatchArray | Null = js.native
+  
   /**
     * Returns the String value result of normalizing the string into the normalization form
     * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
@@ -142,12 +164,14 @@ trait String
   def normalize_NFKC(form: NFKC): java.lang.String = js.native
   @JSName("normalize")
   def normalize_NFKD(form: NFKD): java.lang.String = js.native
+  
   /**
     * Returns a String value that is made from count copies appended together. If count is 0,
     * T is the empty String is returned.
     * @param count number of copies to append
     */
   def repeat(count: Double): java.lang.String = js.native
+  
   /**
     * Replaces text in a string, using a regular expression or search string.
     * @param searchValue A string to search for.
@@ -183,6 +207,7 @@ trait String
     searchValue: `0`,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
+  
   /**
     * Finds the first substring match in a regular expression search.
     * @param regexp The regular expression pattern and applicable flags.
@@ -194,6 +219,7 @@ trait String
     * @param searcher An object which supports searching within a string.
     */
   def search(searcher: Search): Double = js.native
+  
   /**
     * Returns a section of a string.
     * @param start The index to the beginning of the specified portion of stringObj.
@@ -204,8 +230,10 @@ trait String
   def slice(start: js.UndefOr[scala.Nothing], end: Double): java.lang.String = js.native
   def slice(start: Double): java.lang.String = js.native
   def slice(start: Double, end: Double): java.lang.String = js.native
+  
   /** Returns a <small> HTML element */
   def small(): java.lang.String = js.native
+  
   /**
     * Split a string into substrings using the specified separator and return them as an array.
     * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
@@ -222,6 +250,7 @@ trait String
     */
   def split(splitter: Split): Array[java.lang.String] = js.native
   def split(splitter: Split, limit: Double): Array[java.lang.String] = js.native
+  
   /**
     * Returns true if the sequence of elements of searchString converted to a String is the
     * same as the corresponding elements of this object (converted to a String) starting at
@@ -229,10 +258,13 @@ trait String
     */
   def startsWith(searchString: java.lang.String): scala.Boolean = js.native
   def startsWith(searchString: java.lang.String, position: Double): scala.Boolean = js.native
+  
   /** Returns a <strike> HTML element */
   def strike(): java.lang.String = js.native
+  
   /** Returns a <sub> HTML element */
   def sub(): java.lang.String = js.native
+  
   // IE extensions
   /**
     * Gets a substring beginning at the specified location and having the specified length.
@@ -241,6 +273,7 @@ trait String
     */
   def substr(from: Double): java.lang.String = js.native
   def substr(from: Double, length: Double): java.lang.String = js.native
+  
   /**
     * Returns the substring at the specified location within a String object.
     * @param start The zero-based index number indicating the beginning of the substring.
@@ -249,17 +282,22 @@ trait String
     */
   def substring(start: Double): java.lang.String = js.native
   def substring(start: Double, end: Double): java.lang.String = js.native
+  
   /** Returns a <sup> HTML element */
   def sup(): java.lang.String = js.native
+  
   /** Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. */
   def toLocaleLowerCase(): java.lang.String = js.native
+  
   /** Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. */
   def toLocaleUpperCase(): java.lang.String = js.native
+  
   /** Converts all the alphabetic characters in a string to lowercase. */
   def toLowerCase(): java.lang.String = js.native
+  
   /** Converts all the alphabetic characters in a string to uppercase. */
   def toUpperCase(): java.lang.String = js.native
+  
   /** Removes the leading and trailing white space and line terminator characters from a string. */
   def trim(): java.lang.String = js.native
 }
-

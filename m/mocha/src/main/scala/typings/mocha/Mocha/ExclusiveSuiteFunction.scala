@@ -2,10 +2,11 @@ package typings.mocha.Mocha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExclusiveSuiteFunction extends js.Object {
+  
   /**
     * [qunit] Describe a "suite" with the given `title`. Indicates this suite should be executed
     * exclusively.
@@ -21,4 +22,3 @@ trait ExclusiveSuiteFunction extends js.Object {
     */
   def apply(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
 }
-

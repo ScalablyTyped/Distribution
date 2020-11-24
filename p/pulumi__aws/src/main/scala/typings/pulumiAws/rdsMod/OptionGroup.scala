@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/rds", "OptionGroup")
 @js.native
@@ -23,11 +23,11 @@ class OptionGroup protected ()
   def this(name: String, args: OptionGroupArgs) = this()
   def this(name: String, args: OptionGroupArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/rds", "OptionGroup")
 @js.native
 object OptionGroup extends js.Object {
+  
   /**
     * Get an existing OptionGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object OptionGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.optionGroupMod.OptionGroup = js.native
   def get(name: String, id: Input[ID], state: OptionGroupState): typings.pulumiAws.optionGroupMod.OptionGroup = js.native
   def get(name: String, id: Input[ID], state: OptionGroupState, opts: CustomResourceOptions): typings.pulumiAws.optionGroupMod.OptionGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of OptionGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ Boolean = js.native
 }
-

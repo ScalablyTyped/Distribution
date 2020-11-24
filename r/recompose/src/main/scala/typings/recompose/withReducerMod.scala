@@ -6,12 +6,13 @@ import typings.recompose.mod.reducer
 import typings.recompose.mod.reducerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#withreducer
 @JSImport("recompose/withReducer", JSImport.Namespace)
 @js.native
 object withReducerMod extends js.Object {
+  
   def default[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
@@ -25,4 +26,3 @@ object withReducerMod extends js.Object {
     initialState: mapper[TOutter, TState]
   ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = js.native
 }
-

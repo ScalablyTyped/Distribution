@@ -2,11 +2,12 @@ package typings.k6.wsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/ws", "Socket")
 @js.native
 abstract class Socket () extends js.Object {
+  
   /**
     * Close connection.
     * https://k6.io/docs/javascript-api/k6-ws/socket/socket-close
@@ -16,6 +17,7 @@ abstract class Socket () extends js.Object {
     */
   def close(): Unit = js.native
   def close(code: Double): Unit = js.native
+  
   /**
     * Listen to event.
     * https://k6.io/docs/javascript-api/k6-ws/socket/socket-on-event-callback
@@ -30,6 +32,7 @@ abstract class Socket () extends js.Object {
     * });
     */
   def on[ET /* <: EventType */](event: ET, handler: EventHandler[ET]): Unit = js.native
+  
   /**
     * Send ping.
     * https://k6.io/docs/javascript-api/k6-ws/socket/socket-ping
@@ -37,6 +40,7 @@ abstract class Socket () extends js.Object {
     * socket.ping();
     */
   def ping(): Unit = js.native
+  
   /**
     * Send data.
     * https://k6.io/docs/javascript-api/k6-ws/socket/socket-send-data
@@ -45,6 +49,7 @@ abstract class Socket () extends js.Object {
     * socket.send(JSON.stringify({ data: 'hola' }));
     */
   def send(data: String): Unit = js.native
+  
   /**
     * Call a function repeatedly, while the WebSocket connection is open.
     * https://k6.io/docs/javascript-api/k6-ws/socket/socket-setinterval-callback-interval
@@ -57,6 +62,7 @@ abstract class Socket () extends js.Object {
     * }, 1000);
     */
   def setInterval(handler: TimerHandler, interval: Double): Unit = js.native
+  
   /**
     * Call a function at a later time,
     * if the WebSocket connection is still open then.
@@ -70,4 +76,3 @@ abstract class Socket () extends js.Object {
     */
   def setTimeout(handler: TimerHandler, delay: Double): Unit = js.native
 }
-

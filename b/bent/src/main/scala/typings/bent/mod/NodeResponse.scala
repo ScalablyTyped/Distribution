@@ -28,11 +28,29 @@ import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.stream.PassThrough & {  statusCode :number,   statusMessage :string,   headers :bent.bent.Headers, arrayBuffer (): std.Promise<node.Buffer>, text (): std.Promise<string>, json (): std.Promise<bent.bent.Json>} */
 @js.native
 trait NodeResponse extends BentResponse {
+  
+  def _destroy(error: Null, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def _destroy(error: Error, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
+  def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
+  def _flush(callback: TransformCallback): Unit = js.native
+  
+  def _read(size: Double): Unit = js.native
+  
+  def _transform(chunk: js.Any, encoding: BufferEncoding, callback: TransformCallback): Unit = js.native
+  
+  def _write(
+    chunk: js.Any,
+    encoding: BufferEncoding,
+    callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Unit = js.native
+  
   var _writev: js.UndefOr[
     js.Function2[
       /* chunks */ js.Array[Chunk], 
@@ -40,35 +58,7 @@ trait NodeResponse extends BentResponse {
       Unit
     ]
   ] = js.native
-  var destroyed: Boolean = js.native
-  var headers: Headers = js.native
-  var readable: Boolean = js.native
-  val readableEncoding: BufferEncoding | Null = js.native
-  val readableEnded: Boolean = js.native
-  val readableFlowing: Boolean | Null = js.native
-  val readableHighWaterMark: Double = js.native
-  val readableLength: Double = js.native
-  val readableObjectMode: Boolean = js.native
-  var statusCode: Double = js.native
-  var statusMessage: String = js.native
-  val writable: Boolean = js.native
-  val writableCorked: Double = js.native
-  val writableEnded: Boolean = js.native
-  val writableFinished: Boolean = js.native
-  val writableHighWaterMark: Double = js.native
-  val writableLength: Double = js.native
-  val writableObjectMode: Boolean = js.native
-  def _destroy(error: Null, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _destroy(error: Error, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _flush(callback: TransformCallback): Unit = js.native
-  def _read(size: Double): Unit = js.native
-  def _transform(chunk: js.Any, encoding: BufferEncoding, callback: TransformCallback): Unit = js.native
-  def _write(
-    chunk: js.Any,
-    encoding: BufferEncoding,
-    callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): Unit = js.native
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
@@ -103,10 +93,16 @@ trait NodeResponse extends BentResponse {
   def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def arrayBuffer(): js.Promise[Buffer] = js.native
+  
   def cork(): Unit = js.native
+  
   def destroy(): Unit = js.native
   def destroy(error: Error): Unit = js.native
+  
+  var destroyed: Boolean = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   @JSName("emit")
@@ -131,6 +127,7 @@ trait NodeResponse extends BentResponse {
   def emit_resume(event: resume): Boolean = js.native
   @JSName("emit")
   def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+  
   def end(): Unit = js.native
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
@@ -145,16 +142,26 @@ trait NodeResponse extends BentResponse {
   def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+  
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
   def getMaxListeners(): Double = js.native
+  
+  var headers: Headers = js.native
+  
   def isPaused(): Boolean = js.native
+  
   def json(): js.Promise[Json] = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listenerCount(`type`: js.Symbol): Double = js.native
+  
+  def listenerCount(event: String): Double = js.native
+  def listenerCount(event: js.Symbol): Double = js.native
+  
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -179,6 +186,7 @@ trait NodeResponse extends BentResponse {
   def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
@@ -203,9 +211,12 @@ trait NodeResponse extends BentResponse {
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def pause(): this.type = js.native
+  
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -230,6 +241,7 @@ trait NodeResponse extends BentResponse {
   def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -254,19 +266,38 @@ trait NodeResponse extends BentResponse {
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def push(chunk: js.Any): Boolean = js.native
   def push(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
+  
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def read(): js.Any = js.native
   def read(size: Double): js.Any = js.native
   @JSName("read")
   def read_Union(): String | Buffer = js.native
   @JSName("read")
   def read_Union(size: Double): String | Buffer = js.native
+  
+  var readable: Boolean = js.native
+  
+  val readableEncoding: BufferEncoding | Null = js.native
+  
+  val readableEnded: Boolean = js.native
+  
+  val readableFlowing: Boolean | Null = js.native
+  
+  val readableHighWaterMark: Double = js.native
+  
+  val readableLength: Double = js.native
+  
+  val readableObjectMode: Boolean = js.native
+  
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -291,21 +322,49 @@ trait NodeResponse extends BentResponse {
   def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def resume(): this.type = js.native
+  
   def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
+  
   def setEncoding(encoding: BufferEncoding): this.type = js.native
+  
   def setMaxListeners(n: Double): this.type = js.native
+  
+  var statusCode: Double = js.native
+  
+  var statusMessage: String = js.native
+  
   def text(): js.Promise[String] = js.native
+  
   def uncork(): Unit = js.native
+  
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native
+  
   def unshift(chunk: String): Unit = js.native
   def unshift(chunk: String, encoding: BufferEncoding): Unit = js.native
   def unshift(chunk: js.Any): Unit = js.native
   def unshift(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
   def unshift(chunk: Uint8Array): Unit = js.native
   def unshift(chunk: Uint8Array, encoding: BufferEncoding): Unit = js.native
+  
   def wrap(oldStream: ReadableStream): this.type = js.native
+  
+  val writable: Boolean = js.native
+  
+  val writableCorked: Double = js.native
+  
+  val writableEnded: Boolean = js.native
+  
+  val writableFinished: Boolean = js.native
+  
+  val writableHighWaterMark: Double = js.native
+  
+  val writableLength: Double = js.native
+  
+  val writableObjectMode: Boolean = js.native
+  
   def write(buffer: String): Boolean = js.native
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(buffer: Uint8Array): Boolean = js.native
@@ -331,4 +390,3 @@ trait NodeResponse extends BentResponse {
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
-

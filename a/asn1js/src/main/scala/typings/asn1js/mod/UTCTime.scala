@@ -4,18 +4,15 @@ import typings.std.ArrayBuffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "UTCTime")
 @js.native
 class UTCTime () extends LocalSimpleStringBlock {
   def this(params: UTCTimeParams) = this()
+  
   var day: Double = js.native
-  var hour: Double = js.native
-  var minute: Double = js.native
-  var month: Double = js.native
-  var second: Double = js.native
-  var year: Double = js.native
+  
   /**
     * Function converting "Date" object into ASN.1 internal string
     * 
@@ -24,6 +21,15 @@ class UTCTime () extends LocalSimpleStringBlock {
     * @memberOf UTCTime
     */
   def fromDate(inputDate: Date): Unit = js.native
+  
+  var hour: Double = js.native
+  
+  var minute: Double = js.native
+  
+  var month: Double = js.native
+  
+  var second: Double = js.native
+  
   /**
     * Function converting ASN.1 internal string into ArrayBuffer
     * 
@@ -32,6 +38,7 @@ class UTCTime () extends LocalSimpleStringBlock {
     * @memberOf UTCTime
     */
   def toBuffer(): ArrayBuffer = js.native
+  
   /**
     * Function converting ASN.1 internal string into "Date" object
     * 
@@ -40,5 +47,6 @@ class UTCTime () extends LocalSimpleStringBlock {
     * @memberOf UTCTime
     */
   def toDate(): Date = js.native
+  
+  var year: Double = js.native
 }
-

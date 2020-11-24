@@ -6,48 +6,57 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceSeriesGet extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * String that identifies the series
     */
   var series_id: js.UndefOr[js.Array[String]] = js.native
 }
-
 object ParamsResourceSeriesGet {
+  
   @scala.inline
   def apply(): ParamsResourceSeriesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSeriesGet]
   }
+  
   @scala.inline
   implicit class ParamsResourceSeriesGetOps[Self <: ParamsResourceSeriesGet] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setSeries_idVarargs(value: String*): Self = this.set("series_id", js.Array(value :_*))
+    
     @scala.inline
     def setSeries_id(value: js.Array[String]): Self = this.set("series_id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSeries_id: Self = this.set("series_id", js.undefined)
   }
-  
 }
-

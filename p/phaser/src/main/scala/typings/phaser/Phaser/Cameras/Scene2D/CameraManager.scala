@@ -11,7 +11,7 @@ import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraConfig
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Camera Manager is a plugin that belongs to a Scene and is responsible for managing all of the Scene Cameras.
@@ -45,47 +45,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CameraManager extends js.Object {
-  /**
-    * An Array of the Camera objects being managed by this Camera Manager.
-    * The Cameras are updated and rendered in the same order in which they appear in this array.
-    * Do not directly add or remove entries to this array. However, you can move the contents
-    * around the array should you wish to adjust the display order.
-    */
-  var cameras: js.Array[Camera] = js.native
-  /**
-    * A default un-transformed Camera that doesn't exist on the camera list and doesn't
-    * count towards the total number of cameras being managed. It exists for other
-    * systems, as well as your own code, should they require a basic un-transformed
-    * camera instance from which to calculate a view matrix.
-    */
-  var default: Camera = js.native
-  /**
-    * A handy reference to the 'main' camera. By default this is the first Camera the
-    * Camera Manager creates. You can also set it directly, or use the `makeMain` argument
-    * in the `add` and `addExisting` methods. It allows you to access it from your game:
-    * 
-    * ```javascript
-    * var cam = this.cameras.main;
-    * ```
-    * 
-    * Also see the properties `camera1`, `camera2` and so on.
-    */
-  var main: Camera = js.native
-  /**
-    * All Cameras created by, or added to, this Camera Manager, will have their `roundPixels`
-    * property set to match this value. By default it is set to match the value set in the
-    * game configuration, but can be changed at any point. Equally, individual cameras can
-    * also be changed as needed.
-    */
-  var roundPixels: Boolean = js.native
-  /**
-    * The Scene that owns the Camera Manager plugin.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene.Systems handler for the Scene that owns the Camera Manager.
-    */
-  var systems: Systems = js.native
+  
   /**
     * Adds a new Camera into the Camera Manager. The Camera Manager can support up to 31 different Cameras.
     * 
@@ -117,6 +77,7 @@ trait CameraManager extends js.Object {
     makeMain: js.UndefOr[Boolean],
     name: js.UndefOr[String]
   ): Camera = js.native
+  
   /**
     * Adds an existing Camera into the Camera Manager.
     * 
@@ -134,6 +95,23 @@ trait CameraManager extends js.Object {
     */
   def addExisting(camera: Camera): Camera = js.native
   def addExisting(camera: Camera, makeMain: Boolean): Camera = js.native
+  
+  /**
+    * An Array of the Camera objects being managed by this Camera Manager.
+    * The Cameras are updated and rendered in the same order in which they appear in this array.
+    * Do not directly add or remove entries to this array. However, you can move the contents
+    * around the array should you wish to adjust the display order.
+    */
+  var cameras: js.Array[Camera] = js.native
+  
+  /**
+    * A default un-transformed Camera that doesn't exist on the camera list and doesn't
+    * count towards the total number of cameras being managed. It exists for other
+    * systems, as well as your own code, should they require a basic un-transformed
+    * camera instance from which to calculate a view matrix.
+    */
+  var default: Camera = js.native
+  
   def fromJSON(config: js.Array[CameraConfig]): this.type = js.native
   /**
     * Populates this Camera Manager based on the given configuration object, or an array of config objects.
@@ -142,6 +120,7 @@ trait CameraManager extends js.Object {
     * @param config A Camera configuration object, or an array of them, to be added to this Camera Manager.
     */
   def fromJSON(config: CameraConfig): this.type = js.native
+  
   /**
     * Gets a Camera based on its name.
     * 
@@ -150,6 +129,7 @@ trait CameraManager extends js.Object {
     * @param name The name of the Camera.
     */
   def getCamera(name: String): Camera = js.native
+  
   /**
     * Returns an array of all cameras below the given Pointer.
     * 
@@ -157,6 +137,7 @@ trait CameraManager extends js.Object {
     * @param pointer The Pointer to check against.
     */
   def getCamerasBelowPointer(pointer: Pointer): js.Array[Camera] = js.native
+  
   /**
     * Gets the total number of Cameras in this Camera Manager.
     * 
@@ -165,12 +146,27 @@ trait CameraManager extends js.Object {
     */
   def getTotal(): integer = js.native
   def getTotal(isVisible: Boolean): integer = js.native
+  
+  /**
+    * A handy reference to the 'main' camera. By default this is the first Camera the
+    * Camera Manager creates. You can also set it directly, or use the `makeMain` argument
+    * in the `add` and `addExisting` methods. It allows you to access it from your game:
+    * 
+    * ```javascript
+    * var cam = this.cameras.main;
+    * ```
+    * 
+    * Also see the properties `camera1`, `camera2` and so on.
+    */
+  var main: Camera = js.native
+  
   /**
     * The event handler that manages the `resize` event dispatched by the Scale Manager.
     * @param gameSize The default Game Size object. This is the un-modified game dimensions.
     * @param baseSize The base Size object. The game dimensions multiplied by the resolution. The canvas width / height values match this.
     */
   def onResize(gameSize: Size, baseSize: Size): Unit = js.native
+  
   def remove(camera: js.Array[Camera]): integer = js.native
   def remove(camera: js.Array[Camera], runDestroy: Boolean): integer = js.native
   /**
@@ -187,6 +183,7 @@ trait CameraManager extends js.Object {
     */
   def remove(camera: Camera): integer = js.native
   def remove(camera: Camera, runDestroy: Boolean): integer = js.native
+  
   /**
     * The internal render method. This is called automatically by the Scene and should not be invoked directly.
     * 
@@ -198,6 +195,7 @@ trait CameraManager extends js.Object {
     */
   /* protected */ def render(renderer: CanvasRenderer, children: js.Array[GameObject], interpolation: Double): Unit = js.native
   /* protected */ def render(renderer: WebGLRenderer, children: js.Array[GameObject], interpolation: Double): Unit = js.native
+  
   /**
     * Resets this Camera Manager.
     * 
@@ -205,12 +203,32 @@ trait CameraManager extends js.Object {
     * cameras array, reset the ID counter and create 1 new single camera using the default values.
     */
   def resetAll(): Camera = js.native
+  
   /**
     * Resizes all cameras to the given dimensions.
     * @param width The new width of the camera.
     * @param height The new height of the camera.
     */
   def resize(width: Double, height: Double): Unit = js.native
+  
+  /**
+    * All Cameras created by, or added to, this Camera Manager, will have their `roundPixels`
+    * property set to match this value. By default it is set to match the value set in the
+    * game configuration, but can be changed at any point. Equally, individual cameras can
+    * also be changed as needed.
+    */
+  var roundPixels: Boolean = js.native
+  
+  /**
+    * The Scene that owns the Camera Manager plugin.
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * A reference to the Scene.Systems handler for the Scene that owns the Camera Manager.
+    */
+  var systems: Systems = js.native
+  
   /**
     * The main update loop. Called automatically when the Scene steps.
     * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
@@ -218,4 +236,3 @@ trait CameraManager extends js.Object {
     */
   /* protected */ def update(time: integer, delta: Double): Unit = js.native
 }
-

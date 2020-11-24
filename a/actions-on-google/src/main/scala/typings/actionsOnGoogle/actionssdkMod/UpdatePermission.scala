@@ -3,7 +3,7 @@ package typings.actionsOnGoogle.actionssdkMod
 import typings.actionsOnGoogle.updateMod.UpdatePermissionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk", "UpdatePermission")
 @js.native
@@ -15,4 +15,3 @@ class UpdatePermission protected ()
     */
   def this(options: UpdatePermissionOptions) = this()
 }
-

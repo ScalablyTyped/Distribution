@@ -12,30 +12,14 @@ import typings.postcssSelectorParser.postcssSelectorParserStrings.operator
 import typings.postcssSelectorParser.postcssSelectorParserStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Attribute_
   extends Namespace[js.UndefOr[String]] {
+  
   var attribute: String = js.native
-  var insensitive: js.UndefOr[Boolean] = js.native
-  /**
-    * The case insensitivity flag or an empty string depending on whether this
-    * attribute is case insensitive.
-    */
-  val insensitiveFlag: i | _empty = js.native
-  var operator: js.UndefOr[AttributeOperator] = js.native
-  /**
-    * The attribute name after having been qualified with a namespace.
-    */
-  val qualifiedAttribute: String = js.native
-  var quoteMark: QuoteMark = js.native
-  var quoted: js.UndefOr[Boolean] = js.native
-  var raws: Insensitive = js.native
-  @JSName("spaces")
-  var spaces_Attribute_ : Before = js.native
-  @JSName("type")
-  var type_Attribute_ : typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = js.native
+  
   /**
     * Returns the attribute's value quoted such that it would be legal to use
     * in the value of a css file. The original value's quotation setting
@@ -48,6 +32,15 @@ trait Attribute_
     **/
   def getQuotedValue(): String = js.native
   def getQuotedValue(options: SmartQuoteMarkOptions): String = js.native
+  
+  var insensitive: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * The case insensitivity flag or an empty string depending on whether this
+    * attribute is case insensitive.
+    */
+  val insensitiveFlag: i | _empty = js.native
+  
   @JSName("offsetOf")
   def offsetOf_attribute(part: typings.postcssSelectorParser.postcssSelectorParserStrings.attribute): Double = js.native
   @JSName("offsetOf")
@@ -76,12 +69,27 @@ trait Attribute_
   def offsetOf_operator(part: operator): Double = js.native
   @JSName("offsetOf")
   def offsetOf_value(part: value): Double = js.native
+  
+  var operator: js.UndefOr[AttributeOperator] = js.native
+  
   /**
     * Selects the preferred quote mark based on the options and the current quote mark value.
     * If you want the quote mark to depend on the attribute value, call `smartQuoteMark(opts)`
     * instead.
     */
   def preferredQuoteMark(options: PreferredQuoteMarkOptions): QuoteMark = js.native
+  
+  /**
+    * The attribute name after having been qualified with a namespace.
+    */
+  val qualifiedAttribute: String = js.native
+  
+  var quoteMark: QuoteMark = js.native
+  
+  var quoted: js.UndefOr[Boolean] = js.native
+  
+  var raws: Insensitive = js.native
+  
   /**
     * Set the unescaped value with the specified quotation options. The value
     * provided must not include any wrapping quote marks -- those quotes will
@@ -90,6 +98,7 @@ trait Attribute_
     */
   def setValue(value: String): Unit = js.native
   def setValue(value: String, options: SmartQuoteMarkOptions): Unit = js.native
+  
   /**
     * Intelligently select a quoteMark value based on the value's contents. If
     * the value is a legal CSS ident, it will not be quoted. Otherwise a quote
@@ -100,5 +109,10 @@ trait Attribute_
     * true). If the quoteMark is unspecified, a double quote is used.
     **/
   def smartQuoteMark(options: PreferredQuoteMarkOptions): QuoteMark = js.native
+  
+  @JSName("spaces")
+  var spaces_Attribute_ : Before = js.native
+  
+  @JSName("type")
+  var type_Attribute_ : typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = js.native
 }
-

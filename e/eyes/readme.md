@@ -11,8 +11,8 @@ a customizable value inspector
 | Full name          | eyes |
 | Keywords           | inspector, debug, inspect, print |
 | # releases         | 0 |
-| # dependents       | 168 |
-| # downloads        | 78079173 |
+| # dependents       | 169 |
+| # downloads        | 87629142 |
 | # stars            | 22 |
 
 ## Links

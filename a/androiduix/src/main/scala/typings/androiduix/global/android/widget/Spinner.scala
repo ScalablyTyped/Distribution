@@ -6,7 +6,7 @@ import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.widget.Spinner")
 @js.native
@@ -31,11 +31,21 @@ class Spinner protected ()
   def this(context: Context, bindElement: HTMLElement, defStyle: js.UndefOr[scala.Nothing], mode: Double) = this()
   def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String], mode: Double) = this()
 }
-
 /* static members */
 @JSGlobal("android.widget.Spinner")
 @js.native
 object Spinner extends js.Object {
+  
+  var MAX_ITEMS_MEASURED: js.Any = js.native
+  
+  var MODE_DIALOG: Double = js.native
+  
+  var MODE_DROPDOWN: Double = js.native
+  
+  var MODE_THEME: js.Any = js.native
+  
+  var TAG: String = js.native
+  
   @js.native
   class DialogPopup protected ()
     extends typings.androiduix.android.widget.Spinner.DialogPopup {
@@ -53,11 +63,4 @@ object Spinner extends js.Object {
     extends typings.androiduix.android.widget.Spinner.DropdownPopup {
     def this(context: Context, defStyleRes: Map[String, String], arg: typings.androiduix.android.widget.Spinner) = this()
   }
-  
-  var MAX_ITEMS_MEASURED: js.Any = js.native
-  var MODE_DIALOG: Double = js.native
-  var MODE_DROPDOWN: Double = js.native
-  var MODE_THEME: js.Any = js.native
-  var TAG: String = js.native
 }
-

@@ -4,10 +4,11 @@ import typings.ariClient.anon.App
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Events extends js.Object {
+  
   /**
     * WebSocket connection for events.
     *
@@ -24,6 +25,7 @@ trait Events extends js.Object {
     * subscriptions. Default is false.
     */
   def eventWebsocket(params: App, callback: js.Function2[/* err */ Error, /* message */ Message, Unit]): Unit = js.native
+  
   /**
     * Generate a user event.
     *
@@ -43,4 +45,3 @@ trait Events extends js.Object {
     */
   def userEvent(params: typings.ariClient.anon.Application, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

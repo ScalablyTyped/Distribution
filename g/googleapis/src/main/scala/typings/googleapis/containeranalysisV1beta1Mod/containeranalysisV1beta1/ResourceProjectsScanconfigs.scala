@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1beta1", "containeranalysis_v1beta1.Resource$Projects$Scanconfigs")
 @js.native
 class ResourceProjectsScanconfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * containeranalysis.projects.scanConfigs.get
     * @desc Gets the specified scan configuration.
@@ -41,6 +43,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScanConfig]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.scanConfigs.list
     * @desc Lists scan configurations for the specified project.
@@ -75,6 +78,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListScanConfigsResponse]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.scanConfigs.update
     * @desc Updates the specified scan configuration.
@@ -105,4 +109,3 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaScanConfig]
   ): Unit = js.native
 }
-

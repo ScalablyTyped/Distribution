@@ -11,8 +11,8 @@ Utilities to help expose prettier output in linting tools
 | Full name          | prettier-linter-helpers |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 15 |
-| # downloads        | 71270911 |
+| # dependents       | 25 |
+| # downloads        | 117914328 |
 | # stars            | 0 |
 
 ## Links

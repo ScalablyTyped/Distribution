@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "wafregional.WebAclAssociation")
 @js.native
@@ -23,11 +23,11 @@ class WebAclAssociation protected ()
   def this(name: String, args: WebAclAssociationArgs) = this()
   def this(name: String, args: WebAclAssociationArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "wafregional.WebAclAssociation")
 @js.native
 object WebAclAssociation extends js.Object {
+  
   /**
     * Get an existing WebAclAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object WebAclAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.webAclAssociationMod.WebAclAssociation = js.native
   def get(name: String, id: Input[ID], state: WebAclAssociationState): typings.pulumiAws.webAclAssociationMod.WebAclAssociation = js.native
   def get(name: String, id: Input[ID], state: WebAclAssociationState, opts: CustomResourceOptions): typings.pulumiAws.webAclAssociationMod.WebAclAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of WebAclAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/webAclAssociation.WebAclAssociation */ Boolean = js.native
 }
-

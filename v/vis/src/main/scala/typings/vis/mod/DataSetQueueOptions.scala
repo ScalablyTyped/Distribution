@@ -2,10 +2,11 @@ package typings.vis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataSetQueueOptions extends js.Object {
+  
   /**
     * Queue data changes ('add', 'update', 'remove') and flush them at once.
     * The queue can be flushed manually by calling DataSet.flush(),
@@ -19,29 +20,33 @@ trait DataSetQueueOptions extends js.Object {
     */
   var queue: js.UndefOr[js.Any | Boolean] = js.native
 }
-
 object DataSetQueueOptions {
+  
   @scala.inline
   def apply(): DataSetQueueOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSetQueueOptions]
   }
+  
   @scala.inline
   implicit class DataSetQueueOptionsOps[Self <: DataSetQueueOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setQueue(value: js.Any | Boolean): Self = this.set("queue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQueue: Self = this.set("queue", js.undefined)
   }
-  
 }
-

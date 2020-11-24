@@ -4,11 +4,12 @@ import typings.monacoEditor.anon.Authority
 import typings.monacoEditor.anon.Fragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "Uri")
 @js.native
 class Uri () extends UriComponents {
+  
   /**
     * Returns a string representing the corresponding file system path of this Uri.
     * Will handle UNC paths, normalizes windows drive letters to lower-case, and uses the
@@ -34,15 +35,18 @@ class Uri () extends UriComponents {
     * with URIs that represent files on disk (`file` scheme).
     */
   def fsPath: String = js.native
+  
   def toJSON(): UriComponents = js.native
+  
   def toString(skipEncoding: Boolean): String = js.native
+  
   def `with`(change: Authority): Uri = js.native
 }
-
 /* static members */
 @JSImport("monaco-editor", "Uri")
 @js.native
 object Uri extends js.Object {
+  
   /**
     * Creates a new Uri from a file system path, e.g. `c:\my\files`,
     * `/usr/home`, or `\\server\share\some\path`.
@@ -65,8 +69,20 @@ object Uri extends js.Object {
     * @param path A file system path (see `Uri#fsPath`)
     */
   def file(path: String): Uri = js.native
+  
   def from(components: Fragment): Uri = js.native
+  
   def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
+  
+  /**
+    * Join a Uri path with path fragments and normalizes the resulting path.
+    *
+    * @param uri The input Uri.
+    * @param pathFragment The path fragment to add to the Uri path.
+    * @returns The resulting Uri.
+    */
+  def joinPath(uri: Uri, pathFragment: String*): Uri = js.native
+  
   /**
     * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,
     * `file:///usr/home`, or `scheme:with/path`.
@@ -75,6 +91,7 @@ object Uri extends js.Object {
     */
   def parse(value: String): Uri = js.native
   def parse(value: String, _strict: Boolean): Uri = js.native
+  
   def revive(): js.UndefOr[Uri] = js.native
   def revive(data: Uri): js.UndefOr[Uri] = js.native
   def revive(data: UriComponents): js.UndefOr[Uri] = js.native
@@ -83,4 +100,3 @@ object Uri extends js.Object {
   @JSName("revive")
   def revive_Uri(data: UriComponents): Uri = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for canvaskit-wasm
 
-Typings are for version 0.9
+Typings are for version 0.18
 
 ## Library description:
 A WASM version of Skia's Canvas API
@@ -10,13 +10,14 @@ A WASM version of Skia's Canvas API
 | ------------------ | :-------------: |
 | Full name          | canvaskit-wasm |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 17897 |
+| # releases         | 25 |
+| # dependents       | 1 |
+| # downloads        | 34149 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/google/skia/tree/master/modules/canvaskit)
+- [Bugs](https://bugs.chromium.org/p/skia/issues/entry)
 - [Npm](https://www.npmjs.com/package/canvaskit-wasm)
     
 

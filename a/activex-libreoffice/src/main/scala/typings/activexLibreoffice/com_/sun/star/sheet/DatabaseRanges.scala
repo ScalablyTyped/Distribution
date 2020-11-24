@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of database ranges in a spreadsheet document.
@@ -19,8 +19,8 @@ trait DatabaseRanges
   extends XDatabaseRanges
      with XEnumerationAccess
      with XIndexAccess
-
 object DatabaseRanges {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -44,4 +44,3 @@ object DatabaseRanges {
     __obj.asInstanceOf[DatabaseRanges]
   }
 }
-

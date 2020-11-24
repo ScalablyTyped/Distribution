@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.SyntaxNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.Formatting.IndentationNodeContext")
 @js.native
@@ -17,4 +17,3 @@ class IndentationNodeContext protected ()
     childIndentationAmountDelta: Double
   ) = this()
 }
-

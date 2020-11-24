@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of all charts based on data in a table.
@@ -20,8 +20,8 @@ trait TableCharts
   extends XTableCharts
      with XIndexAccess
      with XEnumerationAccess
-
 object TableCharts {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -45,4 +45,3 @@ object TableCharts {
     __obj.asInstanceOf[TableCharts]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.pulsarClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.pulsarClient.pulsarClientStrings.RoundRobinPartition
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.pulsarClient.pulsarClientStrings.CustomPartition
 */
 trait MessageRoutingModes extends js.Object
-
 object MessageRoutingModes {
+  
   @scala.inline
   def CustomPartition: typings.pulsarClient.pulsarClientStrings.CustomPartition = "CustomPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.CustomPartition]
+  
   @scala.inline
   def RoundRobinPartition: typings.pulsarClient.pulsarClientStrings.RoundRobinPartition = "RoundRobinPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.RoundRobinPartition]
+  
   @scala.inline
   def SinglePartition: typings.pulsarClient.pulsarClientStrings.SinglePartition = "SinglePartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.SinglePartition]
 }
-

@@ -12,7 +12,7 @@ Create a lazily evaluated value
 | Keywords           | lazy, value, lazily, laziness, val, evaluation, eval, execute, getter, function, fn, memoize, cache, defer, deferred |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 23885 |
+| # downloads        | 27297 |
 | # stars            | 0 |
 
 ## Links

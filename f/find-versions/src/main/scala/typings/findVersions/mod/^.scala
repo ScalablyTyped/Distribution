@@ -2,11 +2,12 @@ package typings.findVersions.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("find-versions", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Find semver versions in a string: `unicorn v1.2.3` → `1.2.3`.
   @example
@@ -21,4 +22,3 @@ object ^ extends js.Object {
   def apply(stringWithVersions: String): js.Array[String] = js.native
   def apply(stringWithVersions: String, options: Options): js.Array[String] = js.native
 }
-

@@ -12,10 +12,11 @@ import typings.jqueryEditableSelect.jqueryEditableSelectStrings.select
 import typings.jqueryEditableSelect.jqueryEditableSelectStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Transforms the <select> into a typeahead field. Accepts an optional options object.
     *
@@ -86,4 +87,3 @@ trait JQuery extends js.Object {
   @JSName("editableSelect")
   def editableSelect_show(action: show): Unit = js.native
 }
-

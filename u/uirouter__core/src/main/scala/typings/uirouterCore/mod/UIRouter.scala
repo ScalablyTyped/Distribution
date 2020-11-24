@@ -4,7 +4,7 @@ import typings.uirouterCore.coreservicesMod.LocationConfig
 import typings.uirouterCore.coreservicesMod.LocationServices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "UIRouter")
 @js.native
@@ -21,4 +21,3 @@ class UIRouter ()
   def this(locationService: js.UndefOr[scala.Nothing], locationConfig: LocationConfig) = this()
   def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
 }
-

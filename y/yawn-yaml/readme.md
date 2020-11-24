@@ -10,9 +10,9 @@ YAML parser that preserves comments and styling
 | ------------------ | :-------------: |
 | Full name          | yawn-yaml |
 | Keywords           | yaml |
-| # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 366957 |
+| # releases         | 3 |
+| # dependents       | 15 |
+| # downloads        | 631873 |
 | # stars            | 0 |
 
 ## Links

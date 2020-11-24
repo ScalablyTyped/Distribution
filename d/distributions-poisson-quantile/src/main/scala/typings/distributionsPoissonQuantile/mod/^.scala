@@ -21,11 +21,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("distributions-poisson-quantile", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(p: js.Array[Double]): js.Array[Double] = js.native
   def apply(p: js.Array[Double], options: Optionsdtypeundefined): js.Array[Double] = js.native
   /**
@@ -50,4 +51,3 @@ object ^ extends js.Object {
   def apply(p: MatrixLike): Double | Data | Matrix = js.native
   def apply(p: MatrixLike, options: Options): Double | Data | Matrix = js.native
 }
-

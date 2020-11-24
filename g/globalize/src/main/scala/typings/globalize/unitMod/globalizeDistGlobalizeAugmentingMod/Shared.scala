@@ -2,10 +2,11 @@ package typings.globalize.unitMod.globalizeDistGlobalizeAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shared extends js.Object {
+  
   /**
     * Alias for .unitFormatter( unit, options )( value ).
     * @param {number} value The number to be formatted.
@@ -15,6 +16,7 @@ trait Shared extends js.Object {
     */
   def formatUnit(value: Double, unit: String): String = js.native
   def formatUnit(value: Double, unit: String, options: UnitFormatterOptions): String = js.native
+  
   /**
     * Returns a function that formats a unit according to the given unit, options, and the default/instance locale.
     * The returned function is invoked with one argument: the number value to be formatted.
@@ -25,4 +27,3 @@ trait Shared extends js.Object {
   def unitFormatter(unit: String): js.Function1[/* value */ Double, String] = js.native
   def unitFormatter(unit: String, options: UnitFormatterOptions): js.Function1[/* value */ Double, String] = js.native
 }
-

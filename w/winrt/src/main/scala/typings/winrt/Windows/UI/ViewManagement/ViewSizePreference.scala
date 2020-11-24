@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ViewSizePreference extends js.Object
-
 @JSGlobal("Windows.UI.ViewManagement.ViewSizePreference")
 @js.native
 object ViewSizePreference extends js.Object {
+  
   @js.native
   sealed trait default extends ViewSizePreference
   
@@ -27,6 +27,4 @@ object ViewSizePreference extends js.Object {
   
   @js.native
   sealed trait useNone extends ViewSizePreference
-  
 }
-

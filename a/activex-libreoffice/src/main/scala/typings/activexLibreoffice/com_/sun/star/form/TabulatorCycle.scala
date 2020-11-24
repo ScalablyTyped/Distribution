@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies how the TAB key should be used in a form.
@@ -26,8 +26,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait TabulatorCycle extends js.Object
-
 object TabulatorCycle {
+  
   /**
     * a navigation bar is provided and navigation will be performed on the current/active form.
     *
@@ -37,11 +37,12 @@ object TabulatorCycle {
     */
   @scala.inline
   def CURRENT: `1` = 1.asInstanceOf[`1`]
+  
   /** pressing the TAB key from the last control of a form moves the focus to the first control of the next form in the tab order. */
   @scala.inline
   def PAGE: `2` = 2.asInstanceOf[`2`]
+  
   /** pressing the TAB key from the last control moves the focus to the first control in the tab order of the next record. */
   @scala.inline
   def RECORDS: `0` = 0.asInstanceOf[`0`]
 }
-

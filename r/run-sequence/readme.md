@@ -9,9 +9,9 @@ Run a series of dependent gulp tasks in order
 | ------------------ | :-------------: |
 | Full name          | run-sequence |
 | Keywords           | gulpfriendly, pipe, sequence, gulp, orchestrator |
-| # releases         | 1 |
-| # dependents       | 976 |
-| # downloads        | 14460768 |
+| # releases         | 0 |
+| # dependents       | 973 |
+| # downloads        | 12412156 |
 | # stars            | 198 |
 
 ## Links

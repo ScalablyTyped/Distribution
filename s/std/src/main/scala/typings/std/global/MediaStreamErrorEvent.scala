@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.MediaStreamErrorEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaStreamErrorEvent")
 @js.native
@@ -14,7 +14,6 @@ class MediaStreamErrorEvent protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: MediaStreamErrorEventInit) = this()
 }
-
 @JSGlobal("MediaStreamErrorEvent")
 @js.native
 object MediaStreamErrorEvent
@@ -24,4 +23,3 @@ object MediaStreamErrorEvent
       /* eventInitDict */ MediaStreamErrorEventInit, 
       typings.std.MediaStreamErrorEvent
     ]
-

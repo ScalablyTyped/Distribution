@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275vid")
 @js.native
 object ɵvid extends js.Object {
+  
   def apply(flags: ɵViewFlags, nodes: js.Array[NodeDef]): ɵViewDefinition = js.native
   def apply(
     flags: ɵViewFlags,
@@ -23,4 +24,3 @@ object ɵvid extends js.Object {
     updateRenderer: ViewUpdateFn
   ): ɵViewDefinition = js.native
 }
-

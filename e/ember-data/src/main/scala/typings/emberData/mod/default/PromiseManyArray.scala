@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PromiseManyArray is a PromiseArray that also proxies certain method calls
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class PromiseManyArray[T /* <: typings.emberData.mod.DS.Model */] ()
   extends typings.emberData.mod.DS.PromiseManyArray[T]
-

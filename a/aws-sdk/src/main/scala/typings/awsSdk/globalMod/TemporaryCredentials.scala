@@ -3,7 +3,7 @@ package typings.awsSdk.globalMod
 import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/global", "TemporaryCredentials")
 @js.native
@@ -21,9 +21,7 @@ class TemporaryCredentials ()
   def this(options: TemporaryCredentialsOptions) = this()
   def this(options: TemporaryCredentialsOptions, masterCredentials: typings.awsSdk.credentialsMod.Credentials) = this()
 }
-
 // Needed to expose interfaces on the class
 @JSImport("aws-sdk/global", "TemporaryCredentials")
 @js.native
 object TemporaryCredentials extends js.Object
-

@@ -12,7 +12,7 @@ A simple json config file loader for node
 | Keywords           | node, config, file, json |
 | # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 641 |
+| # downloads        | 612 |
 | # stars            | 0 |
 
 ## Links

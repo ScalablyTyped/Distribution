@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description
@@ -12,14 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OnsModalElement extends HTMLElement {
-  /**
-    * @description Back-button handler.
-    */
-  var onDeviceBackButton: js.Any = js.native
-  /**
-    * @description Whether the dialog is visible or not.
-    */
-  var visible: Boolean = js.native
+  
   /**
     * @return Resolves to the hidden element
     * @param {String} [options.animation] Animation name. Available animations are `"none"` and `"fade"`.
@@ -28,6 +21,12 @@ trait OnsModalElement extends HTMLElement {
     */
   def hide(): js.Promise[HTMLElement] = js.native
   def hide(options: ModalOptions): js.Promise[HTMLElement] = js.native
+  
+  /**
+    * @description Back-button handler.
+    */
+  var onDeviceBackButton: js.Any = js.native
+  
   /**
     * @param {Object} [options] Parameter object
     * @param {String} [options.animation] Animation name. Available animations are `"none"` and `"fade"`.
@@ -36,6 +35,7 @@ trait OnsModalElement extends HTMLElement {
     */
   def show(): js.Promise[HTMLElement] = js.native
   def show(options: ModalOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * @return Device back button handler
     * @param {String} [options.animation] Animation name. Available animations are `"none"` and `"fade"`.
@@ -44,5 +44,9 @@ trait OnsModalElement extends HTMLElement {
     */
   def toggle(): js.Promise[HTMLElement] = js.native
   def toggle(options: ModalOptions): js.Promise[HTMLElement] = js.native
+  
+  /**
+    * @description Whether the dialog is visible or not.
+    */
+  var visible: Boolean = js.native
 }
-

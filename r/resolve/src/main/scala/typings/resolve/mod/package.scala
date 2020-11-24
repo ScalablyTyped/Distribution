@@ -2,9 +2,10 @@ package typings.resolve
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Callback invoked when checking if a file or directory exists
     *
@@ -16,6 +17,7 @@ package object mod {
     /* isFile */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
+  
   /**
     * Callback invoked when reading a file
     *
@@ -27,6 +29,7 @@ package object mod {
     /* file */ js.UndefOr[typings.node.Buffer], 
     scala.Unit
   ]
+  
   /**
     * Callback invoked when resolving a potential symlink
     *
@@ -38,6 +41,7 @@ package object mod {
     /* resolved */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
+  
   /**
     * Callback invoked when resolving asynchronously
     *

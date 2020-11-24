@@ -3,7 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.olx.source.ClusterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -27,18 +27,21 @@ class Cluster protected () extends Vector {
     * @api
     */
   def this(options: ClusterOptions) = this()
+  
   /**
     * Get the distance in pixels between clusters.
     * @return The distance in pixels.
     * @api
     */
   def getDistance(): Double = js.native
+  
   /**
     * Get a reference to the wrapped source.
     * @return Source.
     * @api
     */
   def getSource(): Vector = js.native
+  
   /**
     * Set the distance in pixels between clusters.
     * @param distance The distance in pixels.
@@ -46,4 +49,3 @@ class Cluster protected () extends Vector {
     */
   def setDistance(distance: Double): Unit = js.native
 }
-

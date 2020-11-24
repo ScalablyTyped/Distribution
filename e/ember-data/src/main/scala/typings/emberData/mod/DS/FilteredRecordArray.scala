@@ -2,7 +2,7 @@ package typings.emberData.mod.DS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of records whose membership is determined by the
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.FilteredRecordArray")
 @js.native
 class FilteredRecordArray[T] () extends RecordArray[T] {
+  
   /**
     * The filterFunction is a function used to test records from the store to
     * determine if they should be part of the record array.
     */
   def filterFunction(record: Model): Boolean = js.native
 }
-

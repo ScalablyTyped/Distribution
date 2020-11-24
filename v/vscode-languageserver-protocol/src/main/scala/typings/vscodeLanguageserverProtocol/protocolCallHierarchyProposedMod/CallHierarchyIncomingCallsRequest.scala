@@ -5,12 +5,14 @@ import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.callHierarchySlashincomingCalls
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol.callHierarchy.proposed", "CallHierarchyIncomingCallsRequest")
 @js.native
 object CallHierarchyIncomingCallsRequest extends js.Object {
+  
   val method: callHierarchySlashincomingCalls = js.native
+  
   val `type`: ProtocolRequestType[
     CallHierarchyIncomingCallsParams, 
     js.Array[CallHierarchyIncomingCall] | Null, 
@@ -18,6 +20,6 @@ object CallHierarchyIncomingCallsRequest extends js.Object {
     Unit, 
     Unit
   ] = js.native
+  
   type HandlerSignature = RequestHandler[CallHierarchyIncomingCallsParams, js.Array[CallHierarchyIncomingCall] | Null, Unit]
 }
-

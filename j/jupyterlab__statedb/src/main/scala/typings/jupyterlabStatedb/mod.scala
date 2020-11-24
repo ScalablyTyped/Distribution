@@ -6,11 +6,14 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoDisposable.mod.IObservableDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/statedb", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val IStateDB: Token[typings.jupyterlabStatedb.tokensMod.IStateDB[ReadonlyPartialJSONValue]] = js.native
+  
   @js.native
   abstract class DataConnector[T, U, V, W] ()
     extends typings.jupyterlabStatedb.dataconnectorMod.DataConnector[T, U, V, W]
@@ -36,18 +39,14 @@ object mod extends js.Object {
     extends typings.jupyterlabStatedb.statedbMod.StateDB[T] {
     def this(options: typings.jupyterlabStatedb.statedbMod.StateDB.IOptions[T]) = this()
   }
-  
-  val IStateDB: Token[typings.jupyterlabStatedb.tokensMod.IStateDB[ReadonlyPartialJSONValue]] = js.native
   @js.native
   object StateDB extends js.Object {
+    
     /**
       * An in-memory string key/value data connector.
       */
     @js.native
     class Connector ()
       extends typings.jupyterlabStatedb.statedbMod.StateDB.Connector
-    
   }
-  
 }
-

@@ -4,10 +4,11 @@ import typings.angularNotify.anon.Classes
 import typings.angularNotify.anon.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait INotifyService extends js.Object {
+  
   /**
     * The notify function can either be passed a string or an object.
     * This function will return an object with a close() method and a message property.
@@ -19,10 +20,12 @@ trait INotifyService extends js.Object {
     * @param option
     */
   def apply(option: Classes): INotify = js.native
+  
   /**
     * Closes all currently open notifications.
     */
   def closeAll(): Unit = js.native
+  
   /**
     * Call config to set the default configuration options for angular-notify.
     * The following options may be specified in the given object:
@@ -30,4 +33,3 @@ trait INotifyService extends js.Object {
     */
   def config(option: Container): Unit = js.native
 }
-

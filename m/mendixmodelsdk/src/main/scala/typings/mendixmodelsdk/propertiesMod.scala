@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import org.scalablytyped.runtime.Instantiable2
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.anon.ToRawChangeValue
 import typings.mendixmodelsdk.elementsMod.AbstractElement
 import typings.mendixmodelsdk.elementsMod.Element
@@ -11,6 +12,8 @@ import typings.mendixmodelsdk.localByNameReferencePropertyMod.INamedElement
 import typings.mendixmodelsdk.structuresMod.IStructure
 import typings.mendixmodelsdk.structuresMod.IStructureClass
 import typings.mendixmodelsdk.structuresMod.Structure
+import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractElementJson
 import typings.mendixmodelsdk.unitsMod.IModelUnit
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
@@ -20,11 +23,26 @@ import typings.mobx.observablearrayMod.IArrayWillChange
 import typings.mobx.observablearrayMod.IArrayWillSplice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/sdk/internal/properties", JSImport.Namespace)
 @js.native
 object propertiesMod extends js.Object {
+  
+  def instantiateChildElement(parent: AbstractElement[IAbstractModel, Container]): Element[IAbstractModel] | Null = js.native
+  def instantiateChildElement(parent: AbstractElement[IAbstractModel, Container], value: IAbstractElementJson): Element[IAbstractModel] | Null = js.native
+  
+  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
+  
+  def sendListChangeDeltas[T, P](
+    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
+    change: IArrayWillChange[P]
+  ): Unit = js.native
+  def sendListChangeDeltas[T, P](
+    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
+    change: IArrayWillSplice[P]
+  ): Unit = js.native
+  
   @js.native
   abstract class AbstractProperty[T, P] protected ()
     extends typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[T, P] {
@@ -36,11 +54,17 @@ object propertiesMod extends js.Object {
       * initialValue is default value except parts and GUID-typed primitives.
       * (by-id/name references do not have default values.)
       */
-    def this(declaredOn: IStructureClass, parent: Structure, name: String, initialValue: T, moreArgs: js.Any*) = this()
+    def this(
+      declaredOn: IStructureClass,
+      parent: Structure[IAbstractModel, IContainer | Null],
+      name: String,
+      initialValue: T,
+      moreArgs: js.Any*
+    ) = this()
   }
   
   @js.native
-  class ByIdReferenceProperty[T /* <: AbstractElement */] ()
+  class ByIdReferenceProperty[T /* <: AbstractElement[IAbstractModel, Container] */] ()
     extends typings.mendixmodelsdk.byIdReferencePropertyMod.ByIdReferenceProperty[T]
   
   @js.native
@@ -48,7 +72,7 @@ object propertiesMod extends js.Object {
     extends typings.mendixmodelsdk.byNameReferencePropertyMod.ByNameReferenceListProperty[T] {
     def this(
       declaredOn: IStructureClass,
-      parent: AbstractElement,
+      parent: AbstractElement[IAbstractModel, Container],
       name: String,
       value: js.Array[T],
       _targetType: String
@@ -60,14 +84,14 @@ object propertiesMod extends js.Object {
     extends typings.mendixmodelsdk.byNameReferencePropertyMod.ByNameReferenceProperty[T] {
     def this(
       declaredOn: IStructureClass,
-      parent: AbstractElement,
+      parent: AbstractElement[IAbstractModel, Container],
       name: String,
       initialValue: T,
       _targetType: String
     ) = this()
     def this(
       declaredOn: IStructureClass,
-      parent: AbstractElement,
+      parent: AbstractElement[IAbstractModel, Container],
       name: String,
       initialValue: Null,
       _targetType: String
@@ -79,7 +103,7 @@ object propertiesMod extends js.Object {
     extends typings.mendixmodelsdk.enumListPropertyMod.EnumListProperty[T] {
     def this(
       declaredOn: IStructureClass,
-      parent: Structure,
+      parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: js.Array[T],
       enumType: Instantiable2[/* key */ String, /* lifeCycle */ ILifeCycle, AbstractEnum]
@@ -91,7 +115,7 @@ object propertiesMod extends js.Object {
     extends typings.mendixmodelsdk.enumPropertyMod.EnumProperty[T] {
     def this(
       declaredOn: IStructureClass,
-      parent: Structure,
+      parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
       enumType: Instantiable2[/* key */ String, /* lifeCycle */ ILifeCycle, AbstractEnum]
@@ -103,14 +127,14 @@ object propertiesMod extends js.Object {
     extends typings.mendixmodelsdk.localByNameReferencePropertyMod.LocalByNameReferenceProperty[T] {
     def this(
       declaredOn: IStructureClass,
-      parent: AbstractElement,
+      parent: AbstractElement[IAbstractModel, Container],
       name: String,
       initialValue: T,
       _targetType: String
     ) = this()
     def this(
       declaredOn: IStructureClass,
-      parent: AbstractElement,
+      parent: AbstractElement[IAbstractModel, Container],
       name: String,
       initialValue: Null,
       _targetType: String
@@ -118,11 +142,11 @@ object propertiesMod extends js.Object {
   }
   
   @js.native
-  class PartListProperty[T /* <: Element */] ()
+  class PartListProperty[T /* <: Element[IAbstractModel] */] ()
     extends typings.mendixmodelsdk.partListPropertyMod.PartListProperty[T]
   
   @js.native
-  class PartProperty[T /* <: Element */] ()
+  class PartProperty[T /* <: Element[IAbstractModel] */] ()
     extends typings.mendixmodelsdk.partPropertyMod.PartProperty[T]
   
   @js.native
@@ -134,12 +158,44 @@ object propertiesMod extends js.Object {
     extends typings.mendixmodelsdk.primitivePropertyMod.PrimitiveProperty[T]
   
   @js.native
+  object PrimitiveTypeEnum extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: scala.Double): js.UndefOr[typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum with scala.Double] = js.native
+    
+    /* 9 */ val Blob: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Blob with scala.Double = js.native
+    
+    /* 2 */ val Boolean: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Boolean with scala.Double = js.native
+    
+    /* 8 */ val Color: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Color with scala.Double = js.native
+    
+    /* 4 */ val DateTime: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.DateTime with scala.Double = js.native
+    
+    /* 3 */ val Double: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Double with scala.Double = js.native
+    
+    /* 5 */ val Guid: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Guid with scala.Double = js.native
+    
+    /* 0 */ val Integer: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Integer with scala.Double = js.native
+    
+    /* 6 */ val Point: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Point with scala.Double = js.native
+    
+    /* 7 */ val Size: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Size with scala.Double = js.native
+    
+    /* 1 */ val String: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.String with scala.Double = js.native
+  }
+  
+  @js.native
   class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
     extends typings.mendixmodelsdk.structuralMod.StructuralChildListProperty[T] {
-    def this(declaredOn: IStructureClass, parent: StructuralUnit, name: String, value: js.Array[T]) = this()
     def this(
       declaredOn: IStructureClass,
-      parent: StructuralUnit,
+      parent: StructuralUnit[IAbstractModel],
+      name: String,
+      value: js.Array[T]
+    ) = this()
+    def this(
+      declaredOn: IStructureClass,
+      parent: StructuralUnit[IAbstractModel],
       name: String,
       value: js.Array[T],
       targetRefType: String
@@ -149,44 +205,21 @@ object propertiesMod extends js.Object {
   @js.native
   class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
     extends typings.mendixmodelsdk.structuralMod.StructuralChildProperty[T] {
-    def this(declaredOn: IStructureClass, parent: StructuralUnit, name: String) = this()
-    def this(declaredOn: IStructureClass, parent: StructuralUnit, name: String, value: T) = this()
-    def this(declaredOn: IStructureClass, parent: StructuralUnit, name: String, value: T, targetRefType: String) = this()
+    def this(declaredOn: IStructureClass, parent: StructuralUnit[IAbstractModel], name: String) = this()
+    def this(declaredOn: IStructureClass, parent: StructuralUnit[IAbstractModel], name: String, value: T) = this()
     def this(
       declaredOn: IStructureClass,
-      parent: StructuralUnit,
+      parent: StructuralUnit[IAbstractModel],
+      name: String,
+      value: T,
+      targetRefType: String
+    ) = this()
+    def this(
+      declaredOn: IStructureClass,
+      parent: StructuralUnit[IAbstractModel],
       name: String,
       value: Null,
       targetRefType: String
     ) = this()
   }
-  
-  def instantiateChildElement(parent: AbstractElement): Element | Null = js.native
-  def instantiateChildElement(parent: AbstractElement, value: IAbstractElementJson): Element | Null = js.native
-  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
-  def sendListChangeDeltas[T, P](
-    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
-    change: IArrayWillChange[P]
-  ): Unit = js.native
-  def sendListChangeDeltas[T, P](
-    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
-    change: IArrayWillSplice[P]
-  ): Unit = js.native
-  @js.native
-  object PrimitiveTypeEnum extends js.Object {
-    /* 9 */ val Blob: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Blob with scala.Double = js.native
-    /* 2 */ val Boolean: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Boolean with scala.Double = js.native
-    /* 8 */ val Color: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Color with scala.Double = js.native
-    /* 4 */ val DateTime: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.DateTime with scala.Double = js.native
-    /* 3 */ val Double: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Double with scala.Double = js.native
-    /* 5 */ val Guid: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Guid with scala.Double = js.native
-    /* 0 */ val Integer: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Integer with scala.Double = js.native
-    /* 6 */ val Point: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Point with scala.Double = js.native
-    /* 7 */ val Size: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.Size with scala.Double = js.native
-    /* 1 */ val String: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.String with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum with scala.Double] = js.native
-  }
-  
 }
-

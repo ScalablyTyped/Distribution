@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Playlistitems")
 @js.native
 class ResourcePlaylistitems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.playlistItems.delete
     * @desc Deletes a playlist item.
@@ -42,6 +44,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.playlistItems.insert
     * @desc Adds a resource to a playlist.
@@ -72,6 +75,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlaylistItem]
   ): Unit = js.native
+  
   /**
     * youtube.playlistItems.list
     * @desc Returns a collection of playlist items that match the API request
@@ -111,6 +115,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlaylistItemListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.playlistItems.update
     * @desc Modifies a playlist item. For example, you could update the item's
@@ -143,4 +148,3 @@ class ResourcePlaylistitems protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlaylistItem]
   ): Unit = js.native
 }
-

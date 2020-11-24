@@ -2,10 +2,11 @@ package typings.googleMaps.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlaceDetailsResult extends js.Object {
+  
   /**
     * is an array containing the separate components applicable to this address.
     *
@@ -21,13 +22,16 @@ trait PlaceDetailsResult extends js.Object {
     *    The type of the component can change. A particular component may be missing in a later response.
     */
   var address_components: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]] = js.native
+  
   /** is a representation of the place's address in the [adr microformat](http://microformats.org/wiki/adr). */
   var adr_address: String = js.native
+  
   /**
     * An array of zero, one or more alternative place IDs for the place, with a scope related to each alternative ID.
     * Note: This array may be empty or not present.
     */
   var alt_ids: js.Array[AlternativePlaceId] = js.native
+  
   /**
     * is a string containing the human-readable address of this place.
     *
@@ -42,48 +46,58 @@ trait PlaceDetailsResult extends js.Object {
     * which the API response includes in addition to the formatted address field.
     */
   var formatted_address: String = js.native
+  
   /**
     * contains the place's phone number in its local format.
     * For example, the `formatted_phone_number` for Google's Sydney, Australia office is `(02) 9374 4000`.
     */
   var formatted_phone_number: String = js.native
+  
   /**
     * contains the following information:
     *  - `location`: contains the geocoded latitude,longitude value for this place.
     *  - `viewport`: contains the preferred viewport when displaying this place on a map as a `LatLngBounds` if it is known.
     */
   var geometry: AddressGeometry = js.native
+  
   /** contains the URL of a suggested icon which may be displayed to the user when indicating this result on a map. */
   var icon: String = js.native
+  
   /**
     * contains the place's phone number in international format.
     * International format includes the country code, and is prefixed with the plus (+) sign.
     * For example, the `international_phone_number` for Google's Sydney, Australia office is `+61 2 9374 4000`.
     */
   var international_phone_number: String = js.native
+  
   /**
     * contains the human-readable name for the returned result.
     * For establishment results, this is usually the canonicalized business name.
     */
   var name: String = js.native
+  
   /** place opening hours. */
   var opening_hours: OpeningHours = js.native
+  
   /**
     * is a boolean flag indicating whether the place has permanently shut down (value `true`).
     * If the place is not permanently closed, the flag is absent from the response.
     */
   var permanently_closed: Boolean = js.native
+  
   /**
     * an array of photo objects, each containing a reference to an image.
     * A Place Details request may return up to ten photos.
     * More information about place photos and how you can use the images in your application can be found in the Place Photos documentation.
     */
   var photos: js.Array[PlacePhoto] = js.native
+  
   /**
     * A textual identifier that uniquely identifies a place.
     * To retrieve information about the place, pass this identifier in the `placeId` field of a Places API request.
     */
   var place_id: String = js.native
+  
   /**
     * is an encoded location reference, derived from latitude and longitude coordinates, that represents an area:
     * 1/8000th of a degree by 1/8000th of a degree (about 14m x 14m at the equator) or smaller.
@@ -101,6 +115,7 @@ trait PlaceDetailsResult extends js.Object {
     * @see [plus codes](https://plus.codes/)
     */
   var plus_code: PlusCode = js.native
+  
   /**
     * The price level of the place, on a scale of 0 to 4.
     * The exact amount indicated by a specific value will vary from region to region.
@@ -113,43 +128,51 @@ trait PlaceDetailsResult extends js.Object {
     *  - `4`: Very Expensive
     */
   var price_level: Double = js.native
+  
   /** contains the place's rating, from 1.0 to 5.0, based on aggregated user reviews. */
   var rating: Double = js.native
+  
   /**
     * a JSON array of up to five reviews. If a `language` parameter was specified in the Place Details request,
     * the Places Service will bias the results to prefer reviews written in that language.
     */
   var reviews: js.Array[PlaceReview] = js.native
+  
   /** Indicates the scope of the `place_id`. */
   var scope: PlaceIdScope = js.native
+  
   /**
     * contains an array of feature types describing the given result.
     * XML responses include multiple `<type>` elements if more than one type is assigned to the result.
     */
   var types: js.Array[AddressType] = js.native
+  
   /**
     * contains the URL of the official Google page for this place.
     * This will be the Google-owned page that contains the best available information about the place.
     * Applications must link to or embed this page on any screen that shows detailed results about the place to the user.
     */
   var url: String = js.native
+  
   /**
     * contains the number of minutes this place’s current timezone is offset from UTC.
     * For example, for places in Sydney, Australia during daylight saving time this would be 660 (+11 hours from UTC),
     * and for places in California outside of daylight saving time this would be -480 (-8 hours from UTC).
     */
   var utc_offset: Double = js.native
+  
   /**
     * lists a simplified address for the place, including the street name, street number, and locality,
     * but not the province/state, postal code, or country. For example, Google's Sydney, Australia office
     * has a `vicinity` value of `48 Pirrama Road, Pyrmont`.
     */
   var vicinity: String = js.native
+  
   /** lists the authoritative website for this place, such as a business' homepage. */
   var website: String = js.native
 }
-
 object PlaceDetailsResult {
+  
   @scala.inline
   def apply(
     address_components: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]],
@@ -179,74 +202,104 @@ object PlaceDetailsResult {
     val __obj = js.Dynamic.literal(address_components = address_components.asInstanceOf[js.Any], adr_address = adr_address.asInstanceOf[js.Any], alt_ids = alt_ids.asInstanceOf[js.Any], formatted_address = formatted_address.asInstanceOf[js.Any], formatted_phone_number = formatted_phone_number.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], international_phone_number = international_phone_number.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opening_hours = opening_hours.asInstanceOf[js.Any], permanently_closed = permanently_closed.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], plus_code = plus_code.asInstanceOf[js.Any], price_level = price_level.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], reviews = reviews.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], utc_offset = utc_offset.asInstanceOf[js.Any], vicinity = vicinity.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceDetailsResult]
   }
+  
   @scala.inline
   implicit class PlaceDetailsResultOps[Self <: PlaceDetailsResult] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddress_componentsVarargs(value: (AddressComponent[AddressType | PlaceDetailsAddressComponentType])*): Self = this.set("address_components", js.Array(value :_*))
+    
     @scala.inline
     def setAddress_components(value: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]]): Self = this.set("address_components", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAdr_address(value: String): Self = this.set("adr_address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAlt_idsVarargs(value: AlternativePlaceId*): Self = this.set("alt_ids", js.Array(value :_*))
+    
     @scala.inline
     def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = this.set("alt_ids", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormatted_address(value: String): Self = this.set("formatted_address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormatted_phone_number(value: String): Self = this.set("formatted_phone_number", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGeometry(value: AddressGeometry): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInternational_phone_number(value: String): Self = this.set("international_phone_number", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOpening_hours(value: OpeningHours): Self = this.set("opening_hours", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPermanently_closed(value: Boolean): Self = this.set("permanently_closed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPhotosVarargs(value: PlacePhoto*): Self = this.set("photos", js.Array(value :_*))
+    
     @scala.inline
     def setPhotos(value: js.Array[PlacePhoto]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPlus_code(value: PlusCode): Self = this.set("plus_code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrice_level(value: Double): Self = this.set("price_level", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRating(value: Double): Self = this.set("rating", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReviewsVarargs(value: PlaceReview*): Self = this.set("reviews", js.Array(value :_*))
+    
     @scala.inline
     def setReviews(value: js.Array[PlaceReview]): Self = this.set("reviews", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScope(value: PlaceIdScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTypesVarargs(value: AddressType*): Self = this.set("types", js.Array(value :_*))
+    
     @scala.inline
     def setTypes(value: js.Array[AddressType]): Self = this.set("types", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUtc_offset(value: Double): Self = this.set("utc_offset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVicinity(value: String): Self = this.set("vicinity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
   }
-  
 }
-

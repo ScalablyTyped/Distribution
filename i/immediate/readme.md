@@ -10,9 +10,9 @@ A cross browser microtask library
 | ------------------ | :-------------: |
 | Full name          | immediate |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 30 |
-| # downloads        | 90380524 |
+| # releases         | 2 |
+| # dependents       | 33 |
+| # downloads        | 140163049 |
 | # stars            | 2 |
 
 ## Links

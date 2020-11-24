@@ -1,24 +1,24 @@
 
 # Scala.js typings for ndjson
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
-streaming newline delimited json parser + serializer
+Streaming newline delimited json parser + serializer
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ndjson |
 | Keywords           | ndjson, ldjson |
-| # releases         | 0 |
-| # dependents       | 238 |
-| # downloads        | 12901043 |
+| # releases         | 2 |
+| # dependents       | 255 |
+| # downloads        | 15522090 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](https://github.com/maxogden/ndjson)
-- [Bugs](https://github.com/maxogden/ndjson/issues)
-- [Repository](https://github.com/maxogden/ndjson)
+- [Homepage](https://github.com/ndjson/ndjson.js)
+- [Bugs](https://github.com/ndjson/ndjson.js/issues)
+- [Repository](https://github.com/ndjson/ndjson.js)
 - [Npm](https://www.npmjs.com/package/ndjson)
     
 

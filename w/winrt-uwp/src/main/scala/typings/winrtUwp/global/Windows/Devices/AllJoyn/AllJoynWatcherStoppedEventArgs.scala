@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about the stopped session watcher object. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynWatcherStoppedEventArgs")
@@ -15,4 +15,3 @@ class AllJoynWatcherStoppedEventArgs protected ()
     */
   def this(status: Double) = this()
 }
-

@@ -21,7 +21,7 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Camera.
@@ -50,6 +50,7 @@ trait Camera
   extends BaseCamera
      with Flip
      with Tint {
+  
   /**
     * If this Camera has been set to render to a texture then this holds a reference
     * to the HTML Canvas Element that the Camera is drawing to.
@@ -59,6 +60,16 @@ trait Camera
     * This is only populated if Phaser is running with the Canvas Renderer.
     */
   var canvas: HTMLCanvasElement = js.native
+  
+  /**
+    * If this Camera was set to render to a texture, this will clear the resources it was using and
+    * redirect it to render back to the primary Canvas again.
+    * 
+    * If you only wish to temporarily disable rendering to a texture then you can toggle the
+    * property `renderToTexture` instead.
+    */
+  def clearRenderToTexture(): this.type = js.native
+  
   /**
     * If this Camera has been set to render to a texture then this holds a reference
     * to the Rendering Context belonging to the Canvas element the Camera is drawing to.
@@ -68,6 +79,7 @@ trait Camera
     * This is only populated if Phaser is running with the Canvas Renderer.
     */
   var context: CanvasRenderingContext2D = js.native
+  
   /**
     * The Camera dead zone.
     * 
@@ -88,116 +100,7 @@ trait Camera
     * to `null`.
     */
   var deadzone: Rectangle = js.native
-  /**
-    * The Camera Fade effect handler.
-    * To fade this camera see the `Camera.fade` methods.
-    */
-  var fadeEffect: Fade = js.native
-  /**
-    * The Camera Flash effect handler.
-    * To flash this camera see the `Camera.flash` method.
-    */
-  var flashEffect: Flash = js.native
-  /**
-    * The values stored in this property are subtracted from the Camera targets position, allowing you to
-    * offset the camera from the actual target x/y coordinates by this amount.
-    * Can also be set via `setFollowOffset` or as part of the `startFollow` call.
-    */
-  var followOffset: Vector2 = js.native
-  /**
-    * If this Camera has been set to render to a texture then this holds a reference
-    * to the GL Frame Buffer belonging the Camera is drawing to.
-    * 
-    * Enable texture rendering using the method `setRenderToTexture`.
-    * 
-    * This is only set if Phaser is running with the WebGL Renderer.
-    */
-  var framebuffer: WebGLFramebuffer = js.native
-  /**
-    * If this Camera has been set to render to a texture then this holds a reference
-    * to the GL Texture belonging the Camera is drawing to.
-    * 
-    * Enable texture rendering using the method `setRenderToTexture`.
-    * 
-    * This is only set if Phaser is running with the WebGL Renderer.
-    */
-  var glTexture: WebGLTexture = js.native
-  /**
-    * Does this Camera allow the Game Objects it renders to receive input events?
-    */
-  var inputEnabled: Boolean = js.native
-  /**
-    * The linear interpolation value to use when following a target.
-    * 
-    * Can also be set via `setLerp` or as part of the `startFollow` call.
-    * 
-    * The default values of 1 means the camera will instantly snap to the target coordinates.
-    * A lower value, such as 0.1 means the camera will more slowly track the target, giving
-    * a smooth transition. You can set the horizontal and vertical values independently, and also
-    * adjust this value in real-time during your game.
-    * 
-    * Be sure to keep the value between 0 and 1. A value of zero will disable tracking on that axis.
-    */
-  var lerp: Vector2 = js.native
-  /**
-    * The Camera Pan effect handler.
-    * To pan this camera see the `Camera.pan` method.
-    */
-  var panEffect: Pan = js.native
-  /**
-    * If this Camera has been set to render to a texture and to use a custom pipeline,
-    * then this holds a reference to the pipeline the Camera is drawing with.
-    * 
-    * Enable texture rendering using the method `setRenderToTexture`.
-    * 
-    * This is only set if Phaser is running with the WebGL Renderer.
-    */
-  var pipeline: js.Any = js.native
-  /**
-    * If this Camera is rendering to a texture (via `setRenderToTexture`) then you
-    * have the option to control if it should also render to the Game canvas as well.
-    * 
-    * By default, a Camera will render both to its texture and to the Game canvas.
-    * 
-    * However, if you set ths property to `false` it will only render to the texture
-    * and skip rendering to the Game canvas.
-    * 
-    * Setting this property if the Camera isn't rendering to a texture has no effect.
-    */
-  var renderToGame: Boolean = js.native
-  /**
-    * Is this Camera rendering directly to the canvas or to a texture?
-    * 
-    * Enable rendering to texture with the method `setRenderToTexture` (just enabling this boolean won't be enough)
-    * 
-    * Once enabled you can toggle it by switching this property.
-    * 
-    * To properly remove a render texture you should call the `clearRenderToTexture()` method.
-    */
-  var renderToTexture: Boolean = js.native
-  /**
-    * The Camera Rotate To effect handler.
-    * To rotate this camera see the `Camera.rotateTo` method.
-    */
-  var rotateToEffect: RotateTo = js.native
-  /**
-    * The Camera Shake effect handler.
-    * To shake this camera see the `Camera.shake` method.
-    */
-  var shakeEffect: Shake = js.native
-  /**
-    * The Camera Zoom effect handler.
-    * To zoom this camera see the `Camera.zoom` method.
-    */
-  var zoomEffect: Zoom = js.native
-  /**
-    * If this Camera was set to render to a texture, this will clear the resources it was using and
-    * redirect it to render back to the primary Canvas again.
-    * 
-    * If you only wish to temporarily disable rendering to a texture then you can toggle the
-    * property `renderToTexture` instead.
-    */
-  def clearRenderToTexture(): this.type = js.native
+  
   /**
     * Fades the Camera from transparent to the given color over the duration specified.
     * @param duration The duration of the effect in milliseconds. Default 1000.
@@ -218,6 +121,13 @@ trait Camera
     callback: js.UndefOr[js.Function],
     context: js.UndefOr[js.Any]
   ): this.type = js.native
+  
+  /**
+    * The Camera Fade effect handler.
+    * To fade this camera see the `Camera.fade` methods.
+    */
+  var fadeEffect: Fade = js.native
+  
   /**
     * Fades the Camera from the given color to transparent over the duration specified.
     * @param duration The duration of the effect in milliseconds. Default 1000.
@@ -238,6 +148,7 @@ trait Camera
     callback: js.UndefOr[js.Function],
     context: js.UndefOr[js.Any]
   ): this.type = js.native
+  
   /**
     * Fades the Camera in from the given color over the duration specified.
     * @param duration The duration of the effect in milliseconds. Default 1000.
@@ -256,6 +167,7 @@ trait Camera
     callback: js.UndefOr[js.Function],
     context: js.UndefOr[js.Any]
   ): this.type = js.native
+  
   /**
     * Fades the Camera out to the given color over the duration specified.
     * This is an alias for Camera.fade that forces the fade to start, regardless of existing fades.
@@ -275,6 +187,7 @@ trait Camera
     callback: js.UndefOr[js.Function],
     context: js.UndefOr[js.Any]
   ): this.type = js.native
+  
   /**
     * Flashes the Camera by setting it to the given color immediately and then fading it away again quickly over the duration specified.
     * @param duration The duration of the effect in milliseconds. Default 250.
@@ -295,6 +208,59 @@ trait Camera
     callback: js.UndefOr[js.Function],
     context: js.UndefOr[js.Any]
   ): this.type = js.native
+  
+  /**
+    * The Camera Flash effect handler.
+    * To flash this camera see the `Camera.flash` method.
+    */
+  var flashEffect: Flash = js.native
+  
+  /**
+    * The values stored in this property are subtracted from the Camera targets position, allowing you to
+    * offset the camera from the actual target x/y coordinates by this amount.
+    * Can also be set via `setFollowOffset` or as part of the `startFollow` call.
+    */
+  var followOffset: Vector2 = js.native
+  
+  /**
+    * If this Camera has been set to render to a texture then this holds a reference
+    * to the GL Frame Buffer belonging the Camera is drawing to.
+    * 
+    * Enable texture rendering using the method `setRenderToTexture`.
+    * 
+    * This is only set if Phaser is running with the WebGL Renderer.
+    */
+  var framebuffer: WebGLFramebuffer = js.native
+  
+  /**
+    * If this Camera has been set to render to a texture then this holds a reference
+    * to the GL Texture belonging the Camera is drawing to.
+    * 
+    * Enable texture rendering using the method `setRenderToTexture`.
+    * 
+    * This is only set if Phaser is running with the WebGL Renderer.
+    */
+  var glTexture: WebGLTexture = js.native
+  
+  /**
+    * Does this Camera allow the Game Objects it renders to receive input events?
+    */
+  var inputEnabled: Boolean = js.native
+  
+  /**
+    * The linear interpolation value to use when following a target.
+    * 
+    * Can also be set via `setLerp` or as part of the `startFollow` call.
+    * 
+    * The default values of 1 means the camera will instantly snap to the target coordinates.
+    * A lower value, such as 0.1 means the camera will more slowly track the target, giving
+    * a smooth transition. You can set the horizontal and vertical values independently, and also
+    * adjust this value in real-time during your game.
+    * 
+    * Be sure to keep the value between 0 and 1. A value of zero will disable tracking on that axis.
+    */
+  var lerp: Vector2 = js.native
+  
   /**
     * This effect will scroll the Camera so that the center of its viewport finishes at the given destination,
     * over the duration and with the ease specified.
@@ -631,11 +597,53 @@ trait Camera
     callback: CameraPanCallback,
     context: js.Any
   ): this.type = js.native
+  
+  /**
+    * The Camera Pan effect handler.
+    * To pan this camera see the `Camera.pan` method.
+    */
+  var panEffect: Pan = js.native
+  
+  /**
+    * If this Camera has been set to render to a texture and to use a custom pipeline,
+    * then this holds a reference to the pipeline the Camera is drawing with.
+    * 
+    * Enable texture rendering using the method `setRenderToTexture`.
+    * 
+    * This is only set if Phaser is running with the WebGL Renderer.
+    */
+  var pipeline: js.Any = js.native
+  
+  /**
+    * If this Camera is rendering to a texture (via `setRenderToTexture`) then you
+    * have the option to control if it should also render to the Game canvas as well.
+    * 
+    * By default, a Camera will render both to its texture and to the Game canvas.
+    * 
+    * However, if you set ths property to `false` it will only render to the texture
+    * and skip rendering to the Game canvas.
+    * 
+    * Setting this property if the Camera isn't rendering to a texture has no effect.
+    */
+  var renderToGame: Boolean = js.native
+  
+  /**
+    * Is this Camera rendering directly to the canvas or to a texture?
+    * 
+    * Enable rendering to texture with the method `setRenderToTexture` (just enabling this boolean won't be enough)
+    * 
+    * Once enabled you can toggle it by switching this property.
+    * 
+    * To properly remove a render texture you should call the `clearRenderToTexture()` method.
+    */
+  var renderToTexture: Boolean = js.native
+  
   /**
     * Resets any active FX, such as a fade, flash or shake. Useful to call after a fade in order to
     * remove the fade.
     */
   def resetFX(): this.type = js.native
+  
   /**
     * This effect will rotate the Camera so that the viewport finishes at the given angle in radians,
     * over the duration and with the ease specified.
@@ -658,6 +666,13 @@ trait Camera
     callback: js.UndefOr[CameraRotateCallback],
     context: js.UndefOr[js.Any]
   ): Camera = js.native
+  
+  /**
+    * The Camera Rotate To effect handler.
+    * To rotate this camera see the `Camera.rotateTo` method.
+    */
+  var rotateToEffect: RotateTo = js.native
+  
   /**
     * Sets the Camera dead zone.
     * 
@@ -680,6 +695,7 @@ trait Camera
   def setDeadzone(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setDeadzone(width: Double): this.type = js.native
   def setDeadzone(width: Double, height: Double): this.type = js.native
+  
   /**
     * Sets the horizontal and vertical offset of the camera from its follow target.
     * The values are subtracted from the targets position during the Cameras update step.
@@ -690,6 +706,7 @@ trait Camera
   def setFollowOffset(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setFollowOffset(x: Double): this.type = js.native
   def setFollowOffset(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the linear interpolation value to use when following a target.
     * 
@@ -706,6 +723,7 @@ trait Camera
   def setLerp(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setLerp(x: Double): this.type = js.native
   def setLerp(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the WebGL pipeline this Camera is using when rendering to a texture.
     * 
@@ -717,6 +735,7 @@ trait Camera
   def setPipeline(): this.type = js.native
   def setPipeline(pipeline: String): this.type = js.native
   def setPipeline(pipeline: WebGLPipeline): this.type = js.native
+  
   /**
     * Sets the Camera to render to a texture instead of to the main canvas.
     * 
@@ -759,6 +778,7 @@ trait Camera
   def setRenderToTexture(pipeline: String, renderToGame: Boolean): this.type = js.native
   def setRenderToTexture(pipeline: WebGLPipeline): this.type = js.native
   def setRenderToTexture(pipeline: WebGLPipeline, renderToGame: Boolean): this.type = js.native
+  
   /**
     * Shakes the Camera by the given intensity over the duration specified.
     * @param duration The duration of the effect in milliseconds. Default 100.
@@ -973,6 +993,13 @@ trait Camera
   ): this.type = js.native
   def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function): this.type = js.native
   def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
+  
+  /**
+    * The Camera Shake effect handler.
+    * To shake this camera see the `Camera.shake` method.
+    */
+  var shakeEffect: Shake = js.native
+  
   /**
     * Sets the Camera to follow a Game Object.
     * 
@@ -1001,10 +1028,18 @@ trait Camera
     offsetX: js.UndefOr[Double],
     offsetY: js.UndefOr[Double]
   ): this.type = js.native
+  
   /**
     * Stops a Camera from following a Game Object, if previously set via `Camera.startFollow`.
     */
   def stopFollow(): this.type = js.native
+  
+  /**
+    * The Camera Zoom effect handler.
+    * To zoom this camera see the `Camera.zoom` method.
+    */
+  var zoomEffect: Zoom = js.native
+  
   /**
     * This effect will zoom the Camera to the given scale, over the duration and with the ease specified.
     * @param zoom The target Camera zoom value.
@@ -1293,4 +1328,3 @@ trait Camera
     context: js.Any
   ): this.type = js.native
 }
-

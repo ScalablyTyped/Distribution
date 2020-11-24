@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Ribbon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait QuickAccessMode extends js.Object
-
 @JSGlobal("ej.Ribbon.QuickAccessMode")
 @js.native
 object QuickAccessMode extends js.Object {
+  
   ///Add controls in menu
   @js.native
   sealed trait Menu extends QuickAccessMode
@@ -21,6 +21,4 @@ object QuickAccessMode extends js.Object {
   ///Add controls in toolBar
   @js.native
   sealed trait ToolBar extends QuickAccessMode
-  
 }
-

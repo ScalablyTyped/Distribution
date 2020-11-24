@@ -2,15 +2,17 @@ package typings.sass
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Importer = js.Function3[
     /* url */ java.lang.String, 
     /* prev */ java.lang.String, 
     /* done */ js.Function1[/* data */ typings.sass.mod.ImporterReturnType, scala.Unit], 
     typings.sass.mod.ImporterReturnType | scala.Unit
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.sass.anon.File
     - typings.sass.anon.Contents

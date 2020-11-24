@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters$Savedqueries")
 @js.native
 class ResourceMattersSavedqueries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * vault.matters.savedQueries.create
     * @desc Creates a saved query.
@@ -42,6 +44,7 @@ class ResourceMattersSavedqueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSavedQuery]
   ): Unit = js.native
+  
   /**
     * vault.matters.savedQueries.delete
     * @desc Deletes a saved query by Id.
@@ -71,6 +74,7 @@ class ResourceMattersSavedqueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vault.matters.savedQueries.get
     * @desc Retrieves a saved query by Id.
@@ -100,6 +104,7 @@ class ResourceMattersSavedqueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSavedQuery]
   ): Unit = js.native
+  
   /**
     * vault.matters.savedQueries.list
     * @desc Lists saved queries within a matter. An empty page token in
@@ -135,4 +140,3 @@ class ResourceMattersSavedqueries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListSavedQueriesResponse]
   ): Unit = js.native
 }
-

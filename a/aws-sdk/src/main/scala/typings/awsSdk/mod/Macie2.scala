@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.macie2Mod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Macie2")
 @js.native
@@ -14,4 +14,3 @@ class Macie2 ()
   extends typings.awsSdk.allMod.Macie2 {
   def this(options: ClientConfiguration) = this()
 }
-

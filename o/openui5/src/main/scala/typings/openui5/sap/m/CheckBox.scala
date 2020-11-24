@@ -6,10 +6,11 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CheckBox extends Control {
+  
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -17,6 +18,7 @@ trait CheckBox extends Control {
     */
   def addAriaDescribedBy(vAriaDescribedBy: js.Any): CheckBox = js.native
   def addAriaDescribedBy(vAriaDescribedBy: Control): CheckBox = js.native
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -24,6 +26,7 @@ trait CheckBox extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): CheckBox = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): CheckBox = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.m.CheckBox</code>.When called, the context of the event handler (its <code>this</code>)
@@ -39,6 +42,7 @@ trait CheckBox extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): CheckBox = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CheckBox = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.m.CheckBox</code>.The passed function and listener object must match the ones used for
@@ -48,6 +52,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): CheckBox = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selected</code> of type <code>boolean</code>Checks whether the CheckBox is
@@ -56,6 +61,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): CheckBox = js.native
+  
   /**
     * Gets current value of property <code>activeHandling</code>.Flag to switch on activeHandling, when it
     * is switched off, there will be no visual changes on active state. Default value is 'true'Default
@@ -63,16 +69,19 @@ trait CheckBox extends Control {
     * @returns Value of property <code>activeHandling</code>
     */
   def getActiveHandling(): Boolean = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
   def getAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>editable</code>.Specifies whether the user shall be allowed to
     * edit the state of the checkboxDefault value is <code>true</code>.
@@ -80,35 +89,41 @@ trait CheckBox extends Control {
     * @returns Value of property <code>editable</code>
     */
   def getEditable(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Disables the Checkbox. Disabled controls are not
     * interactive and are rendered differently according to the theme.Default value is <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>name</code>.The 'name' property to be used in the HTML code,
     * for example for HTML forms that send data to the server via submit.
     * @returns Value of property <code>name</code>
     */
   def getName(): String = js.native
+  
   /**
     * Gets current value of property <code>selected</code>.Stores the state of the checkbox whether it is
     * selected or not.Default value is <code>false</code>.
     * @returns Value of property <code>selected</code>
     */
   def getSelected(): Boolean = js.native
+  
   /**
     * Returns the CheckBox`s tab index.
     * @since 1.22
     * @returns iTabIndex for Checkbox
     */
   def getTabIndex(): Double = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Defines the text displayed next to the checkbox
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>textAlign</code>.Aligns the text of the checkbox. Available
     * alignment settings are "Begin", "Center", "End", "Left", and "Right".Default value is
@@ -116,6 +131,7 @@ trait CheckBox extends Control {
     * @returns Value of property <code>textAlign</code>
     */
   def getTextAlign(): TextAlign = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.Options for the text direction are RTL and
     * LTR. Alternatively, the control can inherit the text direction from its parent container.Default
@@ -123,6 +139,7 @@ trait CheckBox extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>valueState</code>.Accepts the core enumeration ValueState.type
     * that supports 'None', 'Error', 'Warning' and 'Success'.Default value is <code>None</code>.
@@ -130,22 +147,26 @@ trait CheckBox extends Control {
     * @returns Value of property <code>valueState</code>
     */
   def getValueState(): ValueState = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Width of the checkbox`s labelDefault value is
     * <code></code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaDescribedBy from the association named <code>ariaDescribedBy</code>.
@@ -154,6 +175,7 @@ trait CheckBox extends Control {
     */
   def removeAriaDescribedBy(vAriaDescribedBy: Double): js.Any = js.native
   def removeAriaDescribedBy(vAriaDescribedBy: Control): js.Any = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -162,6 +184,7 @@ trait CheckBox extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>activeHandling</code>.Flag to switch on activeHandling, when it
     * is switched off, there will be no visual changes on active state. Default value is 'true'When called
@@ -171,6 +194,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setActiveHandling(bActiveHandling: Boolean): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>editable</code>.Specifies whether the user shall be allowed to
     * edit the state of the checkboxWhen called with a value of <code>null</code> or
@@ -181,6 +205,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEditable(bEditable: Boolean): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Disables the Checkbox. Disabled controls are not
     * interactive and are rendered differently according to the theme.When called with a value of
@@ -190,6 +215,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>name</code>.The 'name' property to be used in the HTML code, for
     * example for HTML forms that send data to the server via submit.When called with a value of
@@ -198,12 +224,14 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setName(sName: String): CheckBox = js.native
+  
   /**
     * Sets the tab index of the control
     * @since 1.16
     * @param iTabIndex The tab index should be greater than or equal -1
     */
   def setTabIndex(iTabIndex: Double): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Defines the text displayed next to the checkboxWhen
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -212,6 +240,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>textAlign</code>.Aligns the text of the checkbox. Available
     * alignment settings are "Begin", "Center", "End", "Left", and "Right".When called with a value of
@@ -221,6 +250,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextAlign(sTextAlign: TextAlign): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.Options for the text direction are RTL and
     * LTR. Alternatively, the control can inherit the text direction from its parent container.When called
@@ -230,6 +260,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextDirection(sTextDirection: TextDirection): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>valueState</code>.Accepts the core enumeration ValueState.type
     * that supports 'None', 'Error', 'Warning' and 'Success'.When called with a value of <code>null</code>
@@ -240,6 +271,7 @@ trait CheckBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueState(sValueState: ValueState): CheckBox = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Width of the checkbox`s labelWhen called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -249,4 +281,3 @@ trait CheckBox extends Control {
     */
   def setWidth(sWidth: js.Any): CheckBox = js.native
 }
-

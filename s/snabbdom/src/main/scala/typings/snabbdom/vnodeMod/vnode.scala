@@ -4,11 +4,12 @@ import typings.std.Element
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("snabbdom/build/package/vnode", "vnode")
 @js.native
 object vnode extends js.Object {
+  
   def apply(): VNode_ = js.native
   def apply(
     sel: js.UndefOr[scala.Nothing],
@@ -240,4 +241,3 @@ object vnode extends js.Object {
   def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = js.native
   def apply(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = js.native
 }
-

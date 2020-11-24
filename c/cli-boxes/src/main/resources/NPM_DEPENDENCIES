@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cli-boxes" : "2.2.0"
+      "cli-boxes" : "2.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cli-boxes" : "2.2.0"
+      "cli-boxes" : "2.2.1"
     }
   ],
   "compile-devDependencies" : [

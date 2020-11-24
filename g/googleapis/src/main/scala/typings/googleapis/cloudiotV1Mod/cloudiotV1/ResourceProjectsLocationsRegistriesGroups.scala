@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries$Groups")
 @js.native
 class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var devices: ResourceProjectsLocationsRegistriesGroupsDevices = js.native
+  
   /**
     * cloudiot.projects.locations.registries.groups.bindDeviceToGateway
     * @desc Associates the device with the gateway.
@@ -46,6 +45,11 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBindDeviceToGatewayResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
+  var devices: ResourceProjectsLocationsRegistriesGroupsDevices = js.native
+  
   /**
     * cloudiot.projects.locations.registries.groups.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -79,6 +83,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.groups.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -112,6 +117,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.groups.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -146,6 +152,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.groups.unbindDeviceFromGateway
     * @desc Deletes the association between the device and the gateway.
@@ -183,4 +190,3 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUnbindDeviceFromGatewayResponse]
   ): Unit = js.native
 }
-

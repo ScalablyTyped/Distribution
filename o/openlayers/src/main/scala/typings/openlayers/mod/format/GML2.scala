@@ -3,7 +3,7 @@ package typings.openlayers.mod.format
 import typings.openlayers.mod.olx.format.GMLOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -26,4 +26,3 @@ import scala.scalajs.js.annotation._
 class GML2 () extends GMLBase {
   def this(opt_options: GMLOptions) = this()
 }
-

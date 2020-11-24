@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Index for pad 3.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "PAD_3")
 @js.native
 object PAD_3 extends TopLevel[Double]
-

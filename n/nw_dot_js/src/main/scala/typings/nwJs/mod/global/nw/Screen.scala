@@ -8,7 +8,7 @@ import typings.nwJs.nwJsStrings.`displayRemoved `
 import typings.nwJs.nwJsStrings.displayBoundsChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Screen: http://docs.nwjs.io/en/latest/References/Screen/ */
 /**
@@ -17,18 +17,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Screen extends EventEmitter {
+  
   /**
     * Use this API to monitor the changes of screens and windows on desktop. This is an instance of EventEmitter.
     */
   var DesktopCaptureMonitor: typings.nwJs.mod.global.NWJSHelpers.DesktopCaptureMonitor = js.native
-  /**
-    * Get the array of screen (number of screen connected to the computer)
-    */
-  var screens: js.Array[screen] = js.native
+  
   /**
     * Init the Screen singleton object, you only need to call this once.
     */
   def Init(): Unit = js.native
+  
   /**
     *
     * @param sources {string[]} Array of source types.
@@ -39,6 +38,7 @@ trait Screen extends EventEmitter {
     sources: js.Array[String],
     callback: js.Function1[/* streamId */ js.UndefOr[String | Boolean], Unit]
   ): Unit = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   /**
     * Emitted when a new screen added.
@@ -67,9 +67,12 @@ trait Screen extends EventEmitter {
     */
   @JSName("on")
   def on_displayRemoved(event: `displayRemoved `, listener: js.Function1[/* screen */ screen, _]): this.type = js.native
+  
+  /**
+    * Get the array of screen (number of screen connected to the computer)
+    */
+  var screens: js.Array[screen] = js.native
 }
-
 @JSGlobal("nw.Screen")
 @js.native
 object Screen extends TopLevel[Screen]
-

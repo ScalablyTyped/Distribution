@@ -3,7 +3,7 @@ package typings.jupyterlabServices.mod
 import typings.jupyterlabServices.managerMod.KernelSpecManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services", "KernelSpecManager")
 @js.native
@@ -16,4 +16,3 @@ class KernelSpecManager ()
   extends typings.jupyterlabServices.kernelspecMod.KernelSpecManager {
   def this(options: IOptions) = this()
 }
-

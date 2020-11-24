@@ -8,11 +8,12 @@ import typings.reactJsonschemaForm.mod.FormValidation
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-jsonschema-form/lib/validate", JSImport.Namespace)
 @js.native
 object validateMod extends js.Object {
+  
   def default[T](formData: T, schema: JSONSchema6Definition): ErrorSchema = js.native
   def default[T](
     formData: T,
@@ -41,4 +42,3 @@ object validateMod extends js.Object {
     customFormats: js.UndefOr[StringDictionary[(js.Function1[/* data */ String, Boolean]) | RegExp | String]]
   ): ErrorSchema = js.native
 }
-

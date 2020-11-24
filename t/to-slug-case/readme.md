@@ -11,8 +11,8 @@ Convert a string to slug case.
 | Full name          | to-slug-case |
 | Keywords           | slug, case, slugcase, string |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 637066 |
+| # dependents       | 54 |
+| # downloads        | 627952 |
 | # stars            | 1 |
 
 ## Links

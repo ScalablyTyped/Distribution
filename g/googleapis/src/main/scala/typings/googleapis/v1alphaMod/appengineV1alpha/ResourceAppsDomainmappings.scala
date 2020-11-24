@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1alpha", "appengine_v1alpha.Resource$Apps$Domainmappings")
 @js.native
 class ResourceAppsDomainmappings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.domainMappings.create
     * @desc Maps a domain to an application. A user must be authorized to
@@ -47,6 +49,7 @@ class ResourceAppsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.domainMappings.delete
     * @desc Deletes the specified domain mapping. A user must be authorized to
@@ -78,6 +81,7 @@ class ResourceAppsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.domainMappings.get
     * @desc Gets the specified domain mapping.
@@ -107,6 +111,7 @@ class ResourceAppsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainMapping]
   ): Unit = js.native
+  
   /**
     * appengine.apps.domainMappings.list
     * @desc Lists the domain mappings on an application.
@@ -140,6 +145,7 @@ class ResourceAppsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDomainMappingsResponse]
   ): Unit = js.native
+  
   /**
     * appengine.apps.domainMappings.patch
     * @desc Updates the specified domain mapping. To map an SSL certificate to
@@ -176,4 +182,3 @@ class ResourceAppsDomainmappings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

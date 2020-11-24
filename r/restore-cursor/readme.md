@@ -11,8 +11,8 @@ Gracefully restore the CLI cursor on exit
 | Full name          | restore-cursor |
 | Keywords           | exit, quit, process, graceful, shutdown, sigterm, sigint, terminate, kill, stop, cli, cursor, ansi, show, term, terminal, console, tty, shell, command-line |
 | # releases         | 3 |
-| # dependents       | 52 |
-| # downloads        | 492281778 |
+| # dependents       | 88 |
+| # downloads        | 841757697 |
 | # stars            | 0 |
 
 ## Links

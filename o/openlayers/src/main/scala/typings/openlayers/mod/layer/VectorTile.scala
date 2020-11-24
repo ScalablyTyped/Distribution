@@ -3,7 +3,7 @@ package typings.openlayers.mod.layer
 import typings.openlayers.mod.olx.layer.VectorTileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
   */
 class VectorTile () extends Vector {
   def this(opt_options: VectorTileOptions) = this()
+  
   /**
     * Return the level as number to which we will preload tiles up to.
     * @return The level to preload tiles up to.
@@ -36,6 +37,7 @@ class VectorTile () extends Vector {
     * @api
     */
   def getPreload(): Double = js.native
+  
   /**
     * Whether we use interim tiles on error.
     * @return Use interim tiles on error.
@@ -43,6 +45,7 @@ class VectorTile () extends Vector {
     * @api
     */
   def getUseInterimTilesOnError(): Boolean = js.native
+  
   /**
     * Set the level as number to which we will preload tiles up to.
     * @param preload The level to preload tiles up to.
@@ -50,6 +53,7 @@ class VectorTile () extends Vector {
     * @api
     */
   def setPreload(preload: Double): Unit = js.native
+  
   /**
     * Set whether we use interim tiles on error.
     * @param useInterimTilesOnError Use interim tiles on error.
@@ -58,4 +62,3 @@ class VectorTile () extends Vector {
     */
   def setUseInterimTilesOnError(useInterimTilesOnError: Boolean): Unit = js.native
 }
-

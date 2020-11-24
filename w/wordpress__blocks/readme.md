@@ -9,10 +9,10 @@ Block API for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/blocks |
-| Keywords           | wordpress, blocks |
-| # releases         | 53 |
-| # dependents       | 15 |
-| # downloads        | 284677 |
+| Keywords           | wordpress, gutenberg, blocks |
+| # releases         | 56 |
+| # dependents       | 17 |
+| # downloads        | 530524 |
 | # stars            | 0 |
 
 ## Links

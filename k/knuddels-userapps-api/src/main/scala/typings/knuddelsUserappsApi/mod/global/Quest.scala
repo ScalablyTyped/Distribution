@@ -2,7 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	 * @see https://developer.knuddels.de/docs/classes/Quest.html
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Quest")
 @js.native
 class Quest () extends js.Object {
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Quest.html#method_getQuestKey
   		 * @since AppServer 82290, ChatServer 82290
   		 */
   def getQuestKey(): java.lang.String = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Quest.html#method_setSolved
   		 * @since AppServer 82290, ChatServer 82290
@@ -22,4 +24,3 @@ class Quest () extends js.Object {
   def setSolved(): Unit = js.native
   def setSolved(count: Double): Unit = js.native
 }
-

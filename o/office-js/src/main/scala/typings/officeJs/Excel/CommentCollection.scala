@@ -5,12 +5,13 @@ import typings.officeJs.Excel.Interfaces.CommentCollectionData
 import typings.officeJs.Excel.Interfaces.CommentCollectionLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
+import typings.officeJs.OfficeExtension.EventHandlers
 import typings.officeJs.OfficeExtension.LoadOption
 import typings.officeJs.officeJsStrings.Mention
 import typings.officeJs.officeJsStrings.Plain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -20,11 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CommentCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_CommentCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[Comment] = js.native
+  
   def add(cellAddress: String, content: String): Comment = js.native
   def add(cellAddress: String, content: String, contentType: ContentType): Comment = js.native
   def add(cellAddress: String, content: CommentRichContent): Comment = js.native
@@ -58,12 +55,18 @@ trait CommentCollection extends ClientObject {
   def add_Plain(cellAddress: Range, content: String, contentType: Plain): Comment = js.native
   @JSName("add")
   def add_Plain(cellAddress: Range, content: CommentRichContent, contentType: Plain): Comment = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_CommentCollection: RequestContext = js.native
+  
   /**
     * Gets the number of comments in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Gets a comment from the collection based on its ID.
     *
@@ -72,6 +75,7 @@ trait CommentCollection extends ClientObject {
     * @param commentId The identifier for the comment.
     */
   def getItem(commentId: String): Comment = js.native
+  
   /**
     * Gets a comment from the collection based on its position.
     *
@@ -80,6 +84,7 @@ trait CommentCollection extends ClientObject {
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: Double): Comment = js.native
+  
   def getItemByCell(cellAddress: String): Comment = js.native
   /**
     * Gets the comment from the specified cell.
@@ -89,6 +94,7 @@ trait CommentCollection extends ClientObject {
     * @param cellAddress The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     */
   def getItemByCell(cellAddress: Range): Comment = js.native
+  
   /**
     * Gets the comment to which the given reply is connected.
     *
@@ -97,6 +103,10 @@ trait CommentCollection extends ClientObject {
     * @param replyId The identifier of comment reply.
     */
   def getItemByReplyId(replyId: String): Comment = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[Comment] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -107,10 +117,40 @@ trait CommentCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): CommentCollection = js.native
   def load(propertyNames: String): CommentCollection = js.native
   def load(propertyNames: js.Array[String]): CommentCollection = js.native
+  
+  /**
+    *
+    * Occurs when the comments are added.
+    *
+    * [Api set: ExcelApi 1.12]
+    *
+    * @eventproperty
+    */
+  val onAdded: EventHandlers[CommentAddedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when comments or replies in a comment collection are changed, including when replies are deleted.
+    *
+    * [Api set: ExcelApi 1.12]
+    *
+    * @eventproperty
+    */
+  val onChanged: EventHandlers[CommentChangedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when comments are deleted in the comment collection.
+    *
+    * [Api set: ExcelApi 1.12]
+    *
+    * @eventproperty
+    */
+  val onDeleted: EventHandlers[CommentDeletedEventArgs] = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): CommentCollectionData = js.native
 }
-

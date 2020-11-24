@@ -2,7 +2,7 @@ package typings.mustache.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A simple string scanner that is used by the template parser to find tokens in template strings.
@@ -15,4 +15,3 @@ class Scanner protected () extends MustacheScanner {
     */
   def this(string: String) = this()
 }
-

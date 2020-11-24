@@ -10,9 +10,9 @@ when you want to fire an event no matter how a process exits.
 | ------------------ | :-------------: |
 | Full name          | signal-exit |
 | Keywords           | signal, exit |
-| # releases         | 0 |
-| # dependents       | 237 |
-| # downloads        | 511580966 |
+| # releases         | 2 |
+| # dependents       | 313 |
+| # downloads        | 743565783 |
 | # stars            | 8 |
 
 ## Links

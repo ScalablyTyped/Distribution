@@ -2,14 +2,14 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasPasswordExpirationResult extends js.Object
-
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult")
 @js.native
 object EasPasswordExpirationResult extends js.Object {
+  
   @js.native
   sealed trait adminsCannotChangePassword extends EasPasswordExpirationResult
   
@@ -36,6 +36,4 @@ object EasPasswordExpirationResult extends js.Object {
   
   @js.native
   sealed trait userCannotChangePassword extends EasPasswordExpirationResult
-  
 }
-

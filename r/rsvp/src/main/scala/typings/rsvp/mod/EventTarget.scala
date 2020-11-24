@@ -10,14 +10,16 @@ import typings.rsvp.rsvpStrings.fulfilled
 import typings.rsvp.rsvpStrings.rejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsvp", "EventTarget")
 @js.native
 object EventTarget
   extends Instantiable0[typings.rsvp.mod.RSVP.EventTarget] {
+  
   /** `RSVP.EventTarget.mixin` extends an object with EventTarget methods. */
   def mixin(`object`: js.Object): ObjectWithEventMixins = js.native
+  
   /**
     * You can use `off` to stop firing a particular callback for an event.
     *
@@ -26,6 +28,7 @@ object EventTarget
     */
   def off(eventName: String): Unit = js.native
   def off(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+  
   def on(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
   @JSName("on")
   def on_chained(eventName: chained, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
@@ -38,6 +41,7 @@ object EventTarget
   def on_fulfilled(eventName: fulfilled, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_rejected(eventName: rejected, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
+  
   /**
     * Use `trigger` to fire custom events.
     *
@@ -45,7 +49,7 @@ object EventTarget
     * passed as an argument to all event listeners for the event
     */
   def trigger(eventName: String): Unit = js.native
+  def trigger(eventName: String, options: js.UndefOr[scala.Nothing], label: String): Unit = js.native
   def trigger(eventName: String, options: js.Any): Unit = js.native
   def trigger(eventName: String, options: js.Any, label: String): Unit = js.native
 }
-

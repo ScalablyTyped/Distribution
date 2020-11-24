@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.navbarTextMod.NavbarTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "NavbarText")
+@JSImport("reactstrap/lib", "NavbarText")
 @js.native
-class NavbarText[T] ()
+class NavbarText ()
   extends Component[NavbarTextProps, js.Object, js.Any]
-

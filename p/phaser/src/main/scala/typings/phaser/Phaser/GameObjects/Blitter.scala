@@ -16,7 +16,7 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Blitter Game Object.
@@ -46,25 +46,24 @@ trait Blitter
      with Texture
      with Transform
      with Visible {
-  /**
-    * The children of this Blitter.
-    * This List contains all of the Bob objects created by the Blitter.
-    */
-  var children: List[Bob] = js.native
-  /**
-    * Is the Blitter considered dirty?
-    * A 'dirty' Blitter has had its child count changed since the last frame.
-    */
-  var dirty: Boolean = js.native
+  
   /**
     * Checks if the given child can render or not, by checking its `visible` and `alpha` values.
     * @param child The Bob to check for rendering.
     */
   def childCanRender(child: Bob): Boolean = js.native
+  
+  /**
+    * The children of this Blitter.
+    * This List contains all of the Bob objects created by the Blitter.
+    */
+  var children: List[Bob] = js.native
+  
   /**
     * Removes all Bobs from the children List and clears the dirty flag.
     */
   def clear(): Unit = js.native
+  
   /**
     * Creates a new Bob in this Blitter.
     * 
@@ -98,6 +97,7 @@ trait Blitter
   def create(x: Double, y: Double, frame: integer, visible: js.UndefOr[scala.Nothing], index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: integer, visible: Boolean): Bob = js.native
   def create(x: Double, y: Double, frame: integer, visible: Boolean, index: integer): Bob = js.native
+  
   /**
     * Creates multiple Bob objects within this Blitter and then passes each of them to the specified callback.
     * @param callback The callback to invoke after creating a bob. It will be sent two arguments: The Bob and the index of the Bob.
@@ -120,6 +120,7 @@ trait Blitter
   def createFromCallback(callback: CreateCallback, quantity: integer, frame: Frame, visible: Boolean): js.Array[Bob] = js.native
   def createFromCallback(callback: CreateCallback, quantity: integer, frame: integer): js.Array[Bob] = js.native
   def createFromCallback(callback: CreateCallback, quantity: integer, frame: integer, visible: Boolean): js.Array[Bob] = js.native
+  
   /**
     * Creates multiple Bobs in one call.
     * 
@@ -141,14 +142,21 @@ trait Blitter
   def createMultiple(quantity: integer, frame: Frame, visible: Boolean): js.Array[Bob] = js.native
   def createMultiple(quantity: integer, frame: integer): js.Array[Bob] = js.native
   def createMultiple(quantity: integer, frame: integer, visible: Boolean): js.Array[Bob] = js.native
+  
+  /**
+    * Is the Blitter considered dirty?
+    * A 'dirty' Blitter has had its child count changed since the last frame.
+    */
+  var dirty: Boolean = js.native
+  
   /**
     * Returns an array of Bobs to be rendered.
     * If the Blitter is dirty then a new list is generated and stored in `renderList`.
     */
   def getRenderList(): js.Array[Bob] = js.native
+  
   /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
 }
-

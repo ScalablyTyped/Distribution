@@ -9,10 +9,10 @@ Returns a copy of an object, sorted deeply by its keys, without mangling any arr
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sortobject |
-| Keywords           | array, browser, comparator, deep, deeply, export-default, keys, module, object, sort, typed, types, typescript |
-| # releases         | 19 |
+| Keywords           | array, browser, comparator, deep, deeply, deno, deno-edition, deno-entry, denoland, esnext, export-default, keys, module, node, object, sort, typed, types, typescript |
+| # releases         | 52 |
 | # dependents       | 9 |
-| # downloads        | 2324606 |
+| # downloads        | 2507413 |
 | # stars            | 0 |
 
 ## Links

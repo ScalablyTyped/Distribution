@@ -4,11 +4,12 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("serve-handler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * This package represents the core of `serve`. It can be plugged into any HTTP
     * server and is responsible for routing requests and handling responses.
@@ -234,4 +235,3 @@ object ^ extends js.Object {
   methods: Methods
   ): js.Promise[Unit] = js.native
 }
-

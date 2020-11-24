@@ -2,23 +2,23 @@ package typings.firebaseDatabase
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/util/SortedMap", JSImport.Namespace)
 @js.native
 object sortedMapMod extends js.Object {
+  
   @js.native
   class LLRBEmptyNode[K, V] () extends js.Object {
-    var color: Boolean = js.native
-    var key: K = js.native
-    var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-    var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-    var value: V = js.native
+    
     /**
       * @private
       * @return {number} Not sure what this returns exactly. :-).
       */
     def check_(): Double = js.native
+    
+    var color: Boolean = js.native
+    
     /**
       * Returns a copy of the current node.
       *
@@ -31,10 +31,12 @@ object sortedMapMod extends js.Object {
       left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null,
       right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null
     ): LLRBEmptyNode[K, V] = js.native
+    
     /**
       * @return {number} The total number of nodes in the tree.
       */
     def count(): Double = js.native
+    
     /**
       * Traverses the tree in key order and calls the specified action function
       * for each node.
@@ -44,6 +46,7 @@ object sortedMapMod extends js.Object {
       * @return {boolean} True if traversal was aborted.
       */
     def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): Boolean = js.native
+    
     /**
       * Returns a copy of the tree, with the specified key/value added.
       *
@@ -53,23 +56,32 @@ object sortedMapMod extends js.Object {
       * @return {!LLRBNode} New tree, with item added.
       */
     def insert(key: K, value: V, comparator: Comparator[K]): LLRBNode[K, V] = js.native
+    
     /**
       * @return {boolean} True if the tree is empty.
       */
     def isEmpty(): Boolean = js.native
+    
     /**
       * @private
       * @return {boolean} Whether this node is red.
       */
     def isRed_(): Boolean = js.native
+    
+    var key: K = js.native
+    
+    var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+    
     /**
       * @return {null}
       */
     def maxKey(): Null = js.native
+    
     /**
       * @return {null}
       */
     def minKey(): Null = js.native
+    
     /**
       * Returns a copy of the tree, with the specified key removed.
       *
@@ -78,6 +90,7 @@ object sortedMapMod extends js.Object {
       * @return {!LLRBEmptyNode} New tree, with item removed.
       */
     def remove(key: K, comparator: Comparator[K]): LLRBEmptyNode[K, V] = js.native
+    
     /**
       * Traverses the tree in reverse key order and calls the specified action function
       * for each node.
@@ -87,6 +100,10 @@ object sortedMapMod extends js.Object {
       * @return {boolean} True if traversal was aborted.
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
+    
+    var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+    
+    var value: V = js.native
   }
   
   @js.native
@@ -121,6 +138,7 @@ object sortedMapMod extends js.Object {
     def this(key: K, value: V, color: Null, left: LLRBEmptyNode[K, V], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBNode[K, V], right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBNode[K, V], right: LLRBNode[K, V]) = this()
+    
     /**
       * For testing.
       *
@@ -128,56 +146,21 @@ object sortedMapMod extends js.Object {
       * @return {boolean} True if all is well.
       */
     var checkMaxDepth_ : js.Any = js.native
-    var color: Boolean = js.native
-    /**
-      * @private
-      * @return {!LLRBNode} New tree, after colorFlip.
-      */
-    var colorFlip_ : js.Any = js.native
-    /**
-      * @private
-      * @return {!LLRBNode} New tree after performing any needed rotations.
-      */
-    var fixUp_ : js.Any = js.native
-    var key: K = js.native
-    var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-    /**
-      * @return {!Object} The minimum node in the tree.
-      * @private
-      */
-    var min_ : js.Any = js.native
-    /**
-      * @private
-      * @return {!LLRBNode} New tree, after moveRedLeft.
-      */
-    var moveRedLeft_ : js.Any = js.native
-    /**
-      * @private
-      * @return {!LLRBNode} New tree, after moveRedRight.
-      */
-    var moveRedRight_ : js.Any = js.native
-    /**
-      * @private
-      * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
-      */
-    var removeMin_ : js.Any = js.native
-    var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-    /**
-      * @private
-      * @return {!LLRBNode} New tree, after rotateLeft.
-      */
-    var rotateLeft_ : js.Any = js.native
-    /**
-      * @private
-      * @return {!LLRBNode} New tree, after rotateRight.
-      */
-    var rotateRight_ : js.Any = js.native
-    var value: V = js.native
+    
     /**
       * @private
       * @return {number} Not sure what this returns exactly. :-).
       */
     def check_(): Double = js.native
+    
+    var color: Boolean = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode} New tree, after colorFlip.
+      */
+    var colorFlip_ : js.Any = js.native
+    
     /**
       * Returns a copy of the current node, optionally replacing pieces of it.
       *
@@ -195,10 +178,18 @@ object sortedMapMod extends js.Object {
       left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null,
       right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null
     ): LLRBNode[K, V] = js.native
+    
     /**
       * @return {number} The total number of nodes in the tree.
       */
     def count(): Double = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode} New tree after performing any needed rotations.
+      */
+    var fixUp_ : js.Any = js.native
+    
     /**
       * Traverses the tree in key order and calls the specified action function
       * for each node.
@@ -209,6 +200,7 @@ object sortedMapMod extends js.Object {
       *   value returned by action
       */
     def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): Boolean = js.native
+    
     /**
       *
       * @param {!Object} key Key to insert.
@@ -217,29 +209,63 @@ object sortedMapMod extends js.Object {
       * @return {!LLRBNode} New tree, with the key/value added.
       */
     def insert(key: K, value: V, comparator: Comparator[K]): LLRBNode[K, V] = js.native
+    
     /**
       * @return {boolean} True if the tree is empty.
       */
     def isEmpty(): Boolean = js.native
+    
     /**
       * @private
       * @return {boolean} Whether this is a RED node.
       */
     def isRed_(): Boolean = js.native
+    
+    var key: K = js.native
+    
+    var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+    
     /**
       * @return {!K} The maximum key in the tree.
       */
     def maxKey(): K = js.native
+    
     /**
       * @return {!K} The maximum key in the tree.
       */
     def minKey(): K = js.native
+    
+    /**
+      * @return {!Object} The minimum node in the tree.
+      * @private
+      */
+    var min_ : js.Any = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode} New tree, after moveRedLeft.
+      */
+    var moveRedLeft_ : js.Any = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode} New tree, after moveRedRight.
+      */
+    var moveRedRight_ : js.Any = js.native
+    
     /**
       * @param {!Object} key The key of the item to remove.
       * @param {Comparator} comparator Comparator.
       * @return {!LLRBNode|LLRBEmptyNode} New tree, with the specified item removed.
       */
     def remove(key: K, comparator: Comparator[K]): (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
+      */
+    var removeMin_ : js.Any = js.native
+    
     /**
       * Traverses the tree in reverse key order and calls the specified action function
       * for each node.
@@ -249,6 +275,30 @@ object sortedMapMod extends js.Object {
       * @return {*} True if traversal was aborted.
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
+    
+    var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode} New tree, after rotateLeft.
+      */
+    var rotateLeft_ : js.Any = js.native
+    
+    /**
+      * @private
+      * @return {!LLRBNode} New tree, after rotateRight.
+      */
+    var rotateRight_ : js.Any = js.native
+    
+    var value: V = js.native
+  }
+  /* static members */
+  @js.native
+  object LLRBNode extends js.Object {
+    
+    var BLACK: Boolean = js.native
+    
+    var RED: Boolean = js.native
   }
   
   @js.native
@@ -261,12 +311,14 @@ object sortedMapMod extends js.Object {
     def this(comparator_ : Comparator[K]) = this()
     def this(comparator_ : Comparator[K], root_ : LLRBEmptyNode[K, V]) = this()
     def this(comparator_ : Comparator[K], root_ : LLRBNode[K, V]) = this()
+    
     var comparator_ : js.Any = js.native
-    var root_ : js.Any = js.native
+    
     /**
       * @return {number} The total number of nodes in the map.
       */
     def count(): Double = js.native
+    
     /**
       * Returns the value of the node with the given key, or null.
       *
@@ -275,6 +327,7 @@ object sortedMapMod extends js.Object {
       * key doesn't exist.
       */
     def get(key: K): V | Null = js.native
+    
     /**
       * Returns an iterator over the SortedMap.
       * @template T
@@ -283,18 +336,23 @@ object sortedMapMod extends js.Object {
       */
     def getIterator[T](): SortedMapIterator[K, V, T] = js.native
     def getIterator[T](resultGenerator: js.Function2[/* k */ K, /* v */ V, T]): SortedMapIterator[K, V, T] = js.native
+    
     def getIteratorFrom[T](key: K): SortedMapIterator[K, V, T] = js.native
     def getIteratorFrom[T](key: K, resultGenerator: js.Function2[/* k */ K, /* v */ V, T]): SortedMapIterator[K, V, T] = js.native
+    
     /**
       * Returns the key of the item *before* the specified key, or null if key is the first item.
       * @param {K} key The key to find the predecessor of
       * @return {?K} The predecessor key.
       */
     def getPredecessorKey(key: K): K | Null = js.native
+    
     def getReverseIterator[T](): SortedMapIterator[K, V, T] = js.native
     def getReverseIterator[T](resultGenerator: js.Function2[/* k */ K, /* v */ V, T]): SortedMapIterator[K, V, T] = js.native
+    
     def getReverseIteratorFrom[T](key: K): SortedMapIterator[K, V, T] = js.native
     def getReverseIteratorFrom[T](key: K, resultGenerator: js.Function2[/* k */ K, /* v */ V, T]): SortedMapIterator[K, V, T] = js.native
+    
     /**
       * Traverses the map in key order and calls the specified action function
       * for each key/value pair.
@@ -305,6 +363,7 @@ object sortedMapMod extends js.Object {
       *   value returned by action
       */
     def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): Boolean = js.native
+    
     /**
       * Returns a copy of the map, with the specified key/value added or replaced.
       * (TODO: We should perhaps rename this method to 'put')
@@ -314,18 +373,22 @@ object sortedMapMod extends js.Object {
       * @return {!SortedMap.<K, V>} New map, with item added.
       */
     def insert(key: K, value: V): SortedMap[K, V] = js.native
+    
     /**
       * @return {boolean} True if the map is empty.
       */
     def isEmpty(): Boolean = js.native
+    
     /**
       * @return {?K} The maximum key in the map.
       */
     def maxKey(): K | Null = js.native
+    
     /**
       * @return {?K} The minimum key in the map.
       */
     def minKey(): K | Null = js.native
+    
     /**
       * Returns a copy of the map, with the specified key removed.
       *
@@ -333,6 +396,7 @@ object sortedMapMod extends js.Object {
       * @return {!SortedMap.<K, V>} New map, with item removed.
       */
     def remove(key: K): SortedMap[K, V] = js.native
+    
     /**
       * Traverses the map in reverse key order and calls the specified action function
       * for each key/value pair.
@@ -342,6 +406,18 @@ object sortedMapMod extends js.Object {
       * @return {*} True if the traversal was aborted.
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
+    
+    var root_ : js.Any = js.native
+  }
+  /* static members */
+  @js.native
+  object SortedMap extends js.Object {
+    
+    /**
+      * Always use the same empty node, to reduce memory.
+      * @const
+      */
+    var EMPTY_NODE: LLRBEmptyNode[_, _] = js.native
   }
   
   @js.native
@@ -386,34 +462,22 @@ object sortedMapMod extends js.Object {
       isReverse_ : Boolean,
       resultGenerator_ : js.Function2[/* k */ K, /* v */ V, T]
     ) = this()
+    
+    def getNext(): T = js.native
+    
+    def hasNext(): Boolean = js.native
+    
     var isReverse_ : js.Any = js.native
+    
     /** @private
       * @type {Array.<!LLRBNode>}
       */
     var nodeStack_ : js.Any = js.native
-    var resultGenerator_ : js.Any = js.native
-    def getNext(): T = js.native
-    def hasNext(): Boolean = js.native
+    
     def peek(): T = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object LLRBNode extends js.Object {
-    var BLACK: Boolean = js.native
-    var RED: Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SortedMap extends js.Object {
-    /**
-      * Always use the same empty node, to reduce memory.
-      * @const
-      */
-    var EMPTY_NODE: LLRBEmptyNode[_, _] = js.native
+    
+    var resultGenerator_ : js.Any = js.native
   }
   
   type Comparator[K] = js.Function2[/* key1 */ K, /* key2 */ K, Double]
 }
-

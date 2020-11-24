@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows an UNO sequence that is passed between different language boundries to indicate it prefers to be represented as a multidimensional array with 0
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ArrayWrapper extends js.Object {
+  
   /**
     * Contains the Array to be passed.
     *
@@ -23,32 +24,37 @@ trait ArrayWrapper extends js.Object {
     * the array indexing.
     */
   var Array: js.Any = js.native
+  
   /** Indicates whether the Array should be have 1 or 0 based indexing. */
   var IsZeroIndex: Boolean = js.native
 }
-
 object ArrayWrapper {
+  
   @scala.inline
   def apply(Array: js.Any, IsZeroIndex: Boolean): ArrayWrapper = {
     val __obj = js.Dynamic.literal(Array = Array.asInstanceOf[js.Any], IsZeroIndex = IsZeroIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayWrapper]
   }
+  
   @scala.inline
   implicit class ArrayWrapperOps[Self <: ArrayWrapper] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArray(value: js.Any): Self = this.set("Array", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsZeroIndex(value: Boolean): Self = this.set("IsZeroIndex", value.asInstanceOf[js.Any])
   }
-  
 }
-

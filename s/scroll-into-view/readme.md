@@ -11,8 +11,8 @@ scrolls an elements into view, recursively aligning parents.
 | Full name          | scroll-into-view |
 | Keywords           | scroll into view, scrollIntoView, scroll into view if needed, smooth scroll, scroll parents |
 | # releases         | 16 |
-| # dependents       | 33 |
-| # downloads        | 1444836 |
+| # dependents       | 38 |
+| # downloads        | 2133112 |
 | # stars            | 5 |
 
 ## Links

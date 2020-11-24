@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of a tab control's Tab or a page control's TabPage object.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientTab ()
   extends typings.devexpressWeb.ASPxClientTab
-

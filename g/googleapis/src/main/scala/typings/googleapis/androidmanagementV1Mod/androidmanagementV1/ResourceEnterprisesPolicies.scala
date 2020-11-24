@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Policies")
 @js.native
 class ResourceEnterprisesPolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.enterprises.policies.delete
     * @desc Deletes a policy. This operation is only permitted if no devices
@@ -42,6 +44,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.policies.get
     * @desc Gets a policy.
@@ -70,6 +73,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.policies.list
     * @desc Lists policies for a given enterprise.
@@ -103,6 +107,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListPoliciesResponse]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.policies.patch
     * @desc Updates or creates a policy.
@@ -134,4 +139,3 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Promooffer")
 @js.native
 class ResourcePromooffer protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * books.promooffer.accept
     * @alias books.promooffer.accept
@@ -47,6 +47,9 @@ class ResourcePromooffer protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * books.promooffer.dismiss
     * @alias books.promooffer.dismiss
@@ -80,6 +83,7 @@ class ResourcePromooffer protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * books.promooffer.get
     * @desc Returns a list of promo offers available to the user
@@ -114,4 +118,3 @@ class ResourcePromooffer protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOffers]
   ): Unit = js.native
 }
-

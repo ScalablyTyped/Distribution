@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk.webservicesMod.webservices
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
@@ -8,10 +7,10 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/consumed-web-services relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -32,31 +31,34 @@ class ImportedWebService protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  @JSName("model")
-  var model_FImportedWebService: IModel = js.native
+  
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MImportedWebService: FolderBase = js.native
+  
   /**
     * In version 6.4.1: introduced
     */
   def useMtom: Boolean = js.native
   def useMtom_=(newValue: Boolean): Unit = js.native
+  
   def wsdlDescription: WsdlDescription | Null = js.native
   def wsdlDescription_=(newValue: WsdlDescription | Null): Unit = js.native
+  
   def wsdlUrl: String = js.native
   def wsdlUrl_=(newValue: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService")
 @js.native
 object ImportedWebService extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates a new ImportedWebService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   def createIn(container: IFolderBase): ImportedWebService = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

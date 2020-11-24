@@ -3,7 +3,7 @@ package typings.jimp.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jimp", JSImport.Namespace)
 @js.native
@@ -29,4 +29,3 @@ class Class protected () extends DepreciatedJimp {
   def this(w: Double, h: Double, background: String, cb: ImageCallback[_]) = this()
   def this(w: Double, h: Double, background: Double, cb: ImageCallback[_]) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.linqsharp.mod
 import typings.linqsharp.mod.LinqSharp.IEqualityComparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Wrapper class for an array that provides Linq functionallity.
@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Linq[T] extends js.Object {
-  /** {T[]} Internal array reference. */
-  var a: js.Array[T] = js.native
+  
   /**
     * Applies an accumulator function over a sequence.
     *
@@ -27,6 +26,7 @@ trait Linq[T] extends js.Object {
     */
   def Aggregate[TResult](func: js.Function2[/* previous */ T, /* next */ T, TResult]): T = js.native
   def Aggregate[TResult](func: js.Function2[/* previous */ T, /* next */ T, TResult], initialValue: T): T = js.native
+  
   /**
     * Determines whether all elements of a sequence satisfy a condition.
     *
@@ -36,6 +36,7 @@ trait Linq[T] extends js.Object {
     * predicate, or if the sequence is empty; otherwise, false.
     */
   def All(predicate: js.Function1[/* value */ T, Boolean]): Boolean = js.native
+  
   /**
     * Determines whether a sequence contains any elements.
     *
@@ -47,6 +48,7 @@ trait Linq[T] extends js.Object {
     */
   def Any(): Boolean = js.native
   def Any(predicate: js.Function1[/* value */ T, Boolean]): Boolean = js.native
+  
   /**
     * Computes the average of a sequence of {number} values.
     *
@@ -56,6 +58,7 @@ trait Linq[T] extends js.Object {
     */
   def Average(): Double = js.native
   def Average(selector: js.Function1[/* value */ T, Double]): Double = js.native
+  
   /**
     * Concatenates two sequences.
     *
@@ -64,6 +67,7 @@ trait Linq[T] extends js.Object {
     * @returns An array that contains the concatenated elements of the two input sequences.
     */
   def Concat(array: js.Array[T]): Linq[T] = js.native
+  
   /**
     * Determines whether a sequence contains a specified element by using a specified comparer.
     *
@@ -75,6 +79,7 @@ trait Linq[T] extends js.Object {
     */
   def Contains(value: T): Boolean = js.native
   def Contains(value: T, comparer: IEqualityComparer[T]): Boolean = js.native
+  
   /**
     * Returns a number that represents how many elements in the specified sequence satisfy a condition.
     *
@@ -85,6 +90,7 @@ trait Linq[T] extends js.Object {
     */
   def Count(): Double = js.native
   def Count(selector: js.Function1[/* value */ T, Boolean]): Double = js.native
+  
   /**
     * Returns distinct elements from a sequence by using a specified IEqualityComparer<T>
     * to compare values.
@@ -95,6 +101,7 @@ trait Linq[T] extends js.Object {
     */
   def Distinct(): Linq[T] = js.native
   def Distinct(comparer: IEqualityComparer[T]): Linq[T] = js.native
+  
   /**
     * Returns distinct elements from a sequence by using a specified IEqualityComparer<T>
     * to compare values.
@@ -106,6 +113,7 @@ trait Linq[T] extends js.Object {
     */
   def DistinctBy[U](selector: js.Function1[/* e */ T, U]): Linq[T] = js.native
   def DistinctBy[U](selector: js.Function1[/* e */ T, U], comparer: IEqualityComparer[T]): Linq[T] = js.native
+  
   /**
     * Returns the element at a specified index in a sequence.
     *
@@ -116,6 +124,7 @@ trait Linq[T] extends js.Object {
     * @returns The element at the specified position in the source sequence.
     */
   def ElementAt(index: Double): T = js.native
+  
   /**
     * Returns the element at a specified index in a sequence or a default value if
     * the index is out of range.
@@ -127,6 +136,7 @@ trait Linq[T] extends js.Object {
     * otherwise, the element at the specified position in the source sequence.
     */
   def ElementAtOrDefault(index: Double, defaultValue: T): T = js.native
+  
   /**
     * Produces the set difference of two sequences by using the specified IEqualityComparer<T>
     * to compare values.
@@ -139,6 +149,7 @@ trait Linq[T] extends js.Object {
     */
   def Except(except: js.Array[T]): Linq[T] = js.native
   def Except(except: js.Array[T], comparer: IEqualityComparer[T]): Linq[T] = js.native
+  
   /**
     * Returns the first element in a sequence that satisfies a specified condition.
     *
@@ -150,6 +161,7 @@ trait Linq[T] extends js.Object {
     */
   def First(): T = js.native
   def First(selector: js.Function1[/* e */ T, Boolean]): T = js.native
+  
   /**
     * Returns the first element of the sequence that satisfies a condition or a default
     * value if no such element is found.
@@ -164,12 +176,14 @@ trait Linq[T] extends js.Object {
   def FirstOrDefault(selector: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def FirstOrDefault(selector: js.Function1[/* e */ T, Boolean]): T = js.native
   def FirstOrDefault(selector: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
+  
   /**
     * Performs the specified action on each element of the array.
     *
     * @param callback The function delegate to perform on each element of the array.
     */
   def ForEach(callback: js.Function2[/* e */ T, /* index */ Double, _]): Unit = js.native
+  
   /**
     * Groups the elements of a sequence according to a specified key selector function.
     *
@@ -192,6 +206,7 @@ trait Linq[T] extends js.Object {
     elementSelector: js.Function1[/* e */ T, TElement],
     comparer: IEqualityComparer[TKey]
   ): Linq[_] = js.native
+  
   /**
     * Searches for the specified object and returns the zero-based index of the first
     * occurrence within the entire array.
@@ -204,6 +219,7 @@ trait Linq[T] extends js.Object {
     */
   def IndexOf(e: T): Double = js.native
   def IndexOf(e: T, comparer: IEqualityComparer[T]): Double = js.native
+  
   /**
     * Produces the set intersection of two sequences by using the specified IEqualityComparer<T>
     * to compare values.
@@ -215,6 +231,7 @@ trait Linq[T] extends js.Object {
     */
   def Intersect(array: js.Array[T]): Linq[T] = js.native
   def Intersect(array: js.Array[T], comparer: IEqualityComparer[T]): Linq[T] = js.native
+  
   /**
     * Correlates the elements of two sequences based on matching keys. A specified IEqualityComparer<T> is used to compare keys.
     *
@@ -239,6 +256,7 @@ trait Linq[T] extends js.Object {
     resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult],
     comparer: IEqualityComparer[TKey]
   ): Linq[TResult] = js.native
+  
   /**
     * Returns the last element of a sequence that satisfies a specified condition.
     *
@@ -250,6 +268,7 @@ trait Linq[T] extends js.Object {
     */
   def Last(): T = js.native
   def Last(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
+  
   /**
     * Returns the last element of a sequence that satisfies a condition or a default
     * value if no such element is found.
@@ -265,6 +284,7 @@ trait Linq[T] extends js.Object {
   def LastOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def LastOrDefault(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
   def LastOrDefault(predicate: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
+  
   /**
     * Returns the maximum value in a sequence of System.Double values.
     *
@@ -276,6 +296,7 @@ trait Linq[T] extends js.Object {
   def Max[TResult](selector: js.Function1[/* e */ T, TResult]): TResult = js.native
   @JSName("Max")
   def Max_TResult_TResult[TResult](): TResult = js.native
+  
   /**
     * Returns the minimum value in a sequence of System.Int64 values.
     *
@@ -287,6 +308,7 @@ trait Linq[T] extends js.Object {
   def Min[TResult](selector: js.Function1[/* e */ T, TResult]): TResult = js.native
   @JSName("Min")
   def Min_TResult_TResult[TResult](): TResult = js.native
+  
   /**
     * Sorts the elements of a sequence in ascending order according to a key.
     *
@@ -300,6 +322,7 @@ trait Linq[T] extends js.Object {
     keySelector: js.Function1[/* e */ T, TKey],
     comparer: js.Function2[/* a */ TKey, /* b */ TKey, Double]
   ): Linq[T] = js.native
+  
   /**
     * Sorts the elements of a sequence in descending order according to a key.
     *
@@ -313,12 +336,14 @@ trait Linq[T] extends js.Object {
     keySelector: js.Function1[/* e */ T, TKey],
     comparer: js.Function2[/* a */ TKey, /* b */ TKey, Double]
   ): Linq[T] = js.native
+  
   /**
     * Inverts the order of the elements in a sequence.
     *
     * @returns A sequence whose elements correspond to those of the input sequence in reverse order.
     */
   def Reverse(): Linq[T] = js.native
+  
   /**
     * Projects each element of a sequence into a new form.
     *
@@ -327,6 +352,7 @@ trait Linq[T] extends js.Object {
     * @returns An array whose elements are the result of invoking the transform function on each element of source.
     */
   def Select[TResult](selector: js.Function2[/* e */ T, /* i */ js.UndefOr[Double], TResult]): Linq[TResult] = js.native
+  
   /**
     * Projects each element of a sequence to an array flattens the resulting sequences into one sequence,
     * and invokes a result selector function on each element therein.
@@ -340,6 +366,7 @@ trait Linq[T] extends js.Object {
     */
   def SelectMany[TResult](selector: js.Function1[/* e */ T, js.Array[T]]): Linq[TResult] = js.native
   def SelectMany[TResult](selector: js.Function1[/* e */ T, js.Array[T]], resultSelector: js.Function1[/* e */ T, TResult]): Linq[TResult] = js.native
+  
   /**
     * Determines whether two sequences are equal by comparing their elements by using
     * a specified IEqualityComparer<T>.
@@ -352,6 +379,7 @@ trait Linq[T] extends js.Object {
     */
   def SequenceEqual(second: js.Array[T]): Boolean = js.native
   def SequenceEqual(second: js.Array[T], comparer: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = js.native
+  
   /**
     * Returns the only element of a sequence that satisfies a specified condition,
     * and throws an exception if more than one such element exists.
@@ -362,6 +390,7 @@ trait Linq[T] extends js.Object {
     */
   def Single(): T = js.native
   def Single(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
+  
   /**
     * Returns the only element of a sequence that satisfies a specified condition or
     * a default value if no such element exists; this method throws an exception if
@@ -377,6 +406,7 @@ trait Linq[T] extends js.Object {
   def SingleOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def SingleOrDefault(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
   def SingleOrDefault(predicate: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
+  
   /**
     * Bypasses a specified number of elements in a sequence and then returns the remaining
     * elements.
@@ -387,6 +417,7 @@ trait Linq[T] extends js.Object {
     * after the specified index in the input sequence.
     */
   def Skip(count: Double): Linq[T] = js.native
+  
   /**
     * Bypasses elements in a sequence as long as a specified condition is true and
     * then returns the remaining elements.
@@ -398,6 +429,7 @@ trait Linq[T] extends js.Object {
     * pass the test specified by predicate.
     */
   def SkipWhile(predicate: js.Function1[/* e */ T, Boolean]): Linq[T] = js.native
+  
   /**
     * Computes the sum of a sequence values.
     *
@@ -407,6 +439,7 @@ trait Linq[T] extends js.Object {
     */
   def Sum(): Double = js.native
   def Sum(selector: js.Function1[/* value */ T, Double]): Double = js.native
+  
   /**
     * Returns a specified number of contiguous elements from the start of a sequence.
     *
@@ -416,6 +449,7 @@ trait Linq[T] extends js.Object {
     * of the input sequence.
     */
   def Take(count: Double): Linq[T] = js.native
+  
   /**
     * Returns elements from a sequence as long as a specified condition is true.
     *
@@ -425,12 +459,14 @@ trait Linq[T] extends js.Object {
     * input sequence that occur before the element at which the test no longer passes.
     */
   def TakeWhile(predicate: js.Function1[/* e */ T, Boolean]): Linq[T] = js.native
+  
   /**
     * Retrieves the internal array.
     *
     * @returns Internal array.
     */
   def ToArray(): js.Array[T] = js.native
+  
   /**
     * Produces the set union of two sequences by using a specified IEqualityComparer<T>.
     *
@@ -442,6 +478,7 @@ trait Linq[T] extends js.Object {
     */
   def Union(second: js.Array[T]): Linq[T] = js.native
   def Union(second: js.Array[T], comparer: IEqualityComparer[T]): Linq[T] = js.native
+  
   /**
     * Filters a sequence of values based on a predicate.
     *
@@ -451,6 +488,7 @@ trait Linq[T] extends js.Object {
     * that satisfy the condition.
     */
   def Where(selector: js.Function1[/* value */ T, Boolean]): Linq[T] = js.native
+  
   /**
     * Applies a specified function to the corresponding elements of two sequences,
     * producing a sequence of the results.
@@ -461,5 +499,7 @@ trait Linq[T] extends js.Object {
     * @returns An array that contains merged elements of two input sequences.
     */
   def Zip[TInner, TResult](array: js.Array[TInner], resultSelector: js.Function2[/* o */ T, /* i */ TInner, TResult]): Linq[TResult] = js.native
+  
+  /** {T[]} Internal array reference. */
+  var a: js.Array[T] = js.native
 }
-

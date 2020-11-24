@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PackageStatus extends js.Object
-
 /** Provides info about the status of a package. */
 @JSGlobal("Windows.Management.Deployment.PackageStatus")
 @js.native
 object PackageStatus extends js.Object {
+  
   /** The package is not available for use. It can still be serviced. */
   @js.native
   sealed trait disabled extends PackageStatus
@@ -30,6 +30,4 @@ object PackageStatus extends js.Object {
   /** The package payload was tampered with intentionally. */
   @js.native
   sealed trait tampered extends PackageStatus
-  
 }
-

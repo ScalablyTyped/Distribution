@@ -11,8 +11,8 @@ TsMonad - fun-size monads library for TypeScript
 | Full name          | tsmonad |
 | Keywords           | typescript, monad, functional |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 76591 |
+| # dependents       | 7 |
+| # downloads        | 91316 |
 | # stars            | 3 |
 
 ## Links

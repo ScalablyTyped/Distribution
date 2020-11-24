@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a pop-up menu controller.
@@ -28,8 +28,8 @@ trait PopupMenuController
      with XInitialization
      with XDispatchProvider
      with XComponent
-
 object PopupMenuController {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -50,4 +50,3 @@ object PopupMenuController {
     __obj.asInstanceOf[PopupMenuController]
   }
 }
-

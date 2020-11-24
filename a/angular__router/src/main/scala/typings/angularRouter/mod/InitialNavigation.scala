@@ -2,30 +2,26 @@ package typings.angularRouter.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularRouter.angularRouterBooleans.`true`
-  - typings.angularRouter.angularRouterBooleans.`false`
-  - typings.angularRouter.angularRouterStrings.enabled
   - typings.angularRouter.angularRouterStrings.disabled
-  - typings.angularRouter.angularRouterStrings.legacy_enabled
-  - typings.angularRouter.angularRouterStrings.legacy_disabled
+  - typings.angularRouter.angularRouterStrings.enabled
+  - typings.angularRouter.angularRouterStrings.enabledBlocking
+  - typings.angularRouter.angularRouterStrings.enabledNonBlocking
 */
 trait InitialNavigation extends js.Object
-
 object InitialNavigation {
+  
   @scala.inline
   def disabled: typings.angularRouter.angularRouterStrings.disabled = "disabled".asInstanceOf[typings.angularRouter.angularRouterStrings.disabled]
+  
   @scala.inline
   def enabled: typings.angularRouter.angularRouterStrings.enabled = "enabled".asInstanceOf[typings.angularRouter.angularRouterStrings.enabled]
+  
   @scala.inline
-  def `false`: typings.angularRouter.angularRouterBooleans.`false` = false.asInstanceOf[typings.angularRouter.angularRouterBooleans.`false`]
+  def enabledBlocking: typings.angularRouter.angularRouterStrings.enabledBlocking = "enabledBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledBlocking]
+  
   @scala.inline
-  def legacy_disabled: typings.angularRouter.angularRouterStrings.legacy_disabled = "legacy_disabled".asInstanceOf[typings.angularRouter.angularRouterStrings.legacy_disabled]
-  @scala.inline
-  def legacy_enabled: typings.angularRouter.angularRouterStrings.legacy_enabled = "legacy_enabled".asInstanceOf[typings.angularRouter.angularRouterStrings.legacy_enabled]
-  @scala.inline
-  def `true`: typings.angularRouter.angularRouterBooleans.`true` = true.asInstanceOf[typings.angularRouter.angularRouterBooleans.`true`]
+  def enabledNonBlocking: typings.angularRouter.angularRouterStrings.enabledNonBlocking = "enabledNonBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledNonBlocking]
 }
-

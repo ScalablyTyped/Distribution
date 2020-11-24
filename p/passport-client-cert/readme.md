@@ -12,7 +12,7 @@ Passport.js strategy for TLS client certificate authentication
 | Keywords           | pki, passport, ssl, tls, certificate, cert, authentication |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 20993 |
+| # downloads        | 27607 |
 | # stars            | 0 |
 
 ## Links

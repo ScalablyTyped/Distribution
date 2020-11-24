@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XStreamListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface for XSLT transformers.
@@ -23,8 +23,8 @@ trait XXSLTTransformer
      with XActiveDataSink
      with XActiveDataSource
      with XInitialization
-
 object XXSLTTransformer {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -46,4 +46,3 @@ object XXSLTTransformer {
     __obj.asInstanceOf[XXSLTTransformer]
   }
 }
-

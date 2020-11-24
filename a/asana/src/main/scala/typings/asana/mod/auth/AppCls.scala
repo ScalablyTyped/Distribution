@@ -2,7 +2,7 @@ package typings.asana.mod.auth
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asana", "auth.App")
 @js.native
@@ -20,4 +20,3 @@ class AppCls protected () extends App {
     */
   def this(options: AppOptions) = this()
 }
-

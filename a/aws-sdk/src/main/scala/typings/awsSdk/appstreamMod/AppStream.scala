@@ -3,18 +3,17 @@ package typings.awsSdk.appstreamMod
 import typings.awsSdk.anon.DescribeFleetsRequestwait
 import typings.awsSdk.awsSdkStrings.fleetStarted
 import typings.awsSdk.awsSdkStrings.fleetStopped
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppStream extends Service {
-  @JSName("config")
-  var config_AppStream: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Associates the specified fleet with the specified stack.
     */
@@ -28,6 +27,7 @@ trait AppStream extends Service {
     params: AssociateFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateFleetResult, Unit]
   ): Request[AssociateFleetResult, AWSError] = js.native
+  
   /**
     * Associates the specified users with the specified stacks. Users in a user pool cannot be assigned to stacks with fleets that are joined to an Active Directory domain.
     */
@@ -41,6 +41,7 @@ trait AppStream extends Service {
     params: BatchAssociateUserStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchAssociateUserStackResult, Unit]
   ): Request[BatchAssociateUserStackResult, AWSError] = js.native
+  
   /**
     * Disassociates the specified users from the specified stacks.
     */
@@ -54,6 +55,10 @@ trait AppStream extends Service {
     params: BatchDisassociateUserStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDisassociateUserStackResult, Unit]
   ): Request[BatchDisassociateUserStackResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_AppStream: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Copies the image within the same region or to a new region within the same AWS account. Note that any tags you added to the image will not be copied.
     */
@@ -67,6 +72,7 @@ trait AppStream extends Service {
     params: CopyImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CopyImageResponse, Unit]
   ): Request[CopyImageResponse, AWSError] = js.native
+  
   /**
     * Creates a Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
@@ -80,6 +86,7 @@ trait AppStream extends Service {
     params: CreateDirectoryConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDirectoryConfigResult, Unit]
   ): Request[CreateDirectoryConfigResult, AWSError] = js.native
+  
   /**
     * Creates a fleet. A fleet consists of streaming instances that run a specified image.
     */
@@ -93,6 +100,7 @@ trait AppStream extends Service {
     params: CreateFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResult, Unit]
   ): Request[CreateFleetResult, AWSError] = js.native
+  
   /**
     * Creates an image builder. An image builder is a virtual machine that is used to create an image. The initial state of the builder is PENDING. When it is ready, the state is RUNNING.
     */
@@ -106,6 +114,7 @@ trait AppStream extends Service {
     params: CreateImageBuilderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImageBuilderResult, Unit]
   ): Request[CreateImageBuilderResult, AWSError] = js.native
+  
   /**
     * Creates a URL to start an image builder streaming session.
     */
@@ -119,6 +128,7 @@ trait AppStream extends Service {
     params: CreateImageBuilderStreamingURLRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImageBuilderStreamingURLResult, Unit]
   ): Request[CreateImageBuilderStreamingURLResult, AWSError] = js.native
+  
   /**
     * Creates a stack to start streaming applications to users. A stack consists of an associated fleet, user access policies, and storage configurations. 
     */
@@ -132,6 +142,7 @@ trait AppStream extends Service {
     params: CreateStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStackResult, Unit]
   ): Request[CreateStackResult, AWSError] = js.native
+  
   /**
     * Creates a temporary URL to start an AppStream 2.0 streaming session for the specified user. A streaming URL enables application streaming to be tested without user setup. 
     */
@@ -145,6 +156,7 @@ trait AppStream extends Service {
     params: CreateStreamingURLRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamingURLResult, Unit]
   ): Request[CreateStreamingURLResult, AWSError] = js.native
+  
   /**
     * Creates a usage report subscription. Usage reports are generated daily.
     */
@@ -158,6 +170,7 @@ trait AppStream extends Service {
     params: CreateUsageReportSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUsageReportSubscriptionResult, Unit]
   ): Request[CreateUsageReportSubscriptionResult, AWSError] = js.native
+  
   /**
     * Creates a new user in the user pool.
     */
@@ -171,6 +184,7 @@ trait AppStream extends Service {
     params: CreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResult, Unit]
   ): Request[CreateUserResult, AWSError] = js.native
+  
   /**
     * Deletes the specified Directory Config object from AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.
     */
@@ -184,6 +198,7 @@ trait AppStream extends Service {
     params: DeleteDirectoryConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDirectoryConfigResult, Unit]
   ): Request[DeleteDirectoryConfigResult, AWSError] = js.native
+  
   /**
     * Deletes the specified fleet.
     */
@@ -197,6 +212,7 @@ trait AppStream extends Service {
     params: DeleteFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetResult, Unit]
   ): Request[DeleteFleetResult, AWSError] = js.native
+  
   /**
     * Deletes the specified image. You cannot delete an image when it is in use. After you delete an image, you cannot provision new capacity using the image.
     */
@@ -210,6 +226,7 @@ trait AppStream extends Service {
     params: DeleteImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteImageResult, Unit]
   ): Request[DeleteImageResult, AWSError] = js.native
+  
   /**
     * Deletes the specified image builder and releases the capacity.
     */
@@ -223,6 +240,7 @@ trait AppStream extends Service {
     params: DeleteImageBuilderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteImageBuilderResult, Unit]
   ): Request[DeleteImageBuilderResult, AWSError] = js.native
+  
   /**
     * Deletes permissions for the specified private image. After you delete permissions for an image, AWS accounts to which you previously granted these permissions can no longer use the image.
     */
@@ -236,6 +254,7 @@ trait AppStream extends Service {
     params: DeleteImagePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteImagePermissionsResult, Unit]
   ): Request[DeleteImagePermissionsResult, AWSError] = js.native
+  
   /**
     * Deletes the specified stack. After the stack is deleted, the application streaming environment provided by the stack is no longer available to users. Also, any reservations made for application streaming sessions for the stack are released.
     */
@@ -249,6 +268,7 @@ trait AppStream extends Service {
     params: DeleteStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteStackResult, Unit]
   ): Request[DeleteStackResult, AWSError] = js.native
+  
   /**
     * Disables usage report generation.
     */
@@ -262,6 +282,7 @@ trait AppStream extends Service {
     params: DeleteUsageReportSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUsageReportSubscriptionResult, Unit]
   ): Request[DeleteUsageReportSubscriptionResult, AWSError] = js.native
+  
   /**
     * Deletes a user from the user pool.
     */
@@ -275,6 +296,7 @@ trait AppStream extends Service {
     params: DeleteUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserResult, Unit]
   ): Request[DeleteUserResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more specified Directory Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise, all Directory Config objects in the account are described. These objects include the configuration information required to join fleets and image builders to Microsoft Active Directory domains.  Although the response syntax in this topic includes the account password, this password is not returned in the actual response.
     */
@@ -288,6 +310,7 @@ trait AppStream extends Service {
     params: DescribeDirectoryConfigsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDirectoryConfigsResult, Unit]
   ): Request[DescribeDirectoryConfigsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more specified fleets, if the fleet names are provided. Otherwise, all fleets in the account are described.
     */
@@ -301,6 +324,7 @@ trait AppStream extends Service {
     params: DescribeFleetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetsResult, Unit]
   ): Request[DescribeFleetsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more specified image builders, if the image builder names are provided. Otherwise, all image builders in the account are described.
     */
@@ -314,6 +338,7 @@ trait AppStream extends Service {
     params: DescribeImageBuildersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageBuildersResult, Unit]
   ): Request[DescribeImageBuildersResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes the permissions for shared AWS account IDs on a private image that you own. 
     */
@@ -327,6 +352,7 @@ trait AppStream extends Service {
     params: DescribeImagePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagePermissionsResult, Unit]
   ): Request[DescribeImagePermissionsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more specified images, if the image names or image ARNs are provided. Otherwise, all images in the account are described.
     */
@@ -340,6 +366,7 @@ trait AppStream extends Service {
     params: DescribeImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
   ): Request[DescribeImagesResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
     */
@@ -353,6 +380,7 @@ trait AppStream extends Service {
     params: DescribeSessionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSessionsResult, Unit]
   ): Request[DescribeSessionsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more specified stacks, if the stack names are provided. Otherwise, all stacks in the account are described.
     */
@@ -366,6 +394,7 @@ trait AppStream extends Service {
     params: DescribeStacksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksResult, Unit]
   ): Request[DescribeStacksResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more usage report subscriptions.
     */
@@ -381,6 +410,7 @@ trait AppStream extends Service {
     params: DescribeUsageReportSubscriptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUsageReportSubscriptionsResult, Unit]
   ): Request[DescribeUsageReportSubscriptionsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes the UserStackAssociation objects. You must specify either or both of the following:   The stack name   The user name (email address of the user associated with the stack) and the authentication type for the user  
     */
@@ -394,6 +424,7 @@ trait AppStream extends Service {
     params: DescribeUserStackAssociationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserStackAssociationsResult, Unit]
   ): Request[DescribeUserStackAssociationsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list that describes one or more specified users in the user pool.
     */
@@ -407,6 +438,7 @@ trait AppStream extends Service {
     params: DescribeUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUsersResult, Unit]
   ): Request[DescribeUsersResult, AWSError] = js.native
+  
   /**
     * Disables the specified user in the user pool. Users can't sign in to AppStream 2.0 until they are re-enabled. This action does not delete the user. 
     */
@@ -420,6 +452,7 @@ trait AppStream extends Service {
     params: DisableUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableUserResult, Unit]
   ): Request[DisableUserResult, AWSError] = js.native
+  
   /**
     * Disassociates the specified fleet from the specified stack.
     */
@@ -433,6 +466,7 @@ trait AppStream extends Service {
     params: DisassociateFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFleetResult, Unit]
   ): Request[DisassociateFleetResult, AWSError] = js.native
+  
   /**
     * Enables a user in the user pool. After being enabled, users can sign in to AppStream 2.0 and open applications from the stacks to which they are assigned.
     */
@@ -446,6 +480,7 @@ trait AppStream extends Service {
     params: EnableUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableUserResult, Unit]
   ): Request[EnableUserResult, AWSError] = js.native
+  
   /**
     * Immediately stops the specified streaming session.
     */
@@ -459,6 +494,7 @@ trait AppStream extends Service {
     params: ExpireSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExpireSessionResult, Unit]
   ): Request[ExpireSessionResult, AWSError] = js.native
+  
   /**
     * Retrieves the name of the fleet that is associated with the specified stack.
     */
@@ -472,6 +508,7 @@ trait AppStream extends Service {
     params: ListAssociatedFleetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssociatedFleetsResult, Unit]
   ): Request[ListAssociatedFleetsResult, AWSError] = js.native
+  
   /**
     * Retrieves the name of the stack with which the specified fleet is associated.
     */
@@ -485,6 +522,7 @@ trait AppStream extends Service {
     params: ListAssociatedStacksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssociatedStacksResult, Unit]
   ): Request[ListAssociatedStacksResult, AWSError] = js.native
+  
   /**
     * Retrieves a list of all tags for the specified AppStream 2.0 resource. You can tag AppStream 2.0 image builders, images, fleets, and stacks. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
@@ -498,6 +536,7 @@ trait AppStream extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Starts the specified fleet.
     */
@@ -511,6 +550,7 @@ trait AppStream extends Service {
     params: StartFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartFleetResult, Unit]
   ): Request[StartFleetResult, AWSError] = js.native
+  
   /**
     * Starts the specified image builder.
     */
@@ -524,6 +564,7 @@ trait AppStream extends Service {
     params: StartImageBuilderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartImageBuilderResult, Unit]
   ): Request[StartImageBuilderResult, AWSError] = js.native
+  
   /**
     * Stops the specified fleet.
     */
@@ -537,6 +578,7 @@ trait AppStream extends Service {
     params: StopFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopFleetResult, Unit]
   ): Request[StopFleetResult, AWSError] = js.native
+  
   /**
     * Stops the specified image builder.
     */
@@ -550,6 +592,7 @@ trait AppStream extends Service {
     params: StopImageBuilderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopImageBuilderResult, Unit]
   ): Request[StopImageBuilderResult, AWSError] = js.native
+  
   /**
     * Adds or overwrites one or more tags for the specified AppStream 2.0 resource. You can tag AppStream 2.0 image builders, images, fleets, and stacks. Each tag consists of a key and an optional value. If a resource already has a tag with the same key, this operation updates its value. To list the current tags for your resources, use ListTagsForResource. To disassociate tags from your resources, use UntagResource. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
@@ -563,6 +606,7 @@ trait AppStream extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Disassociates one or more specified tags from the specified AppStream 2.0 resource. To list the current tags for your resources, use ListTagsForResource. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
     */
@@ -576,6 +620,7 @@ trait AppStream extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the specified Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
@@ -589,6 +634,7 @@ trait AppStream extends Service {
     params: UpdateDirectoryConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDirectoryConfigResult, Unit]
   ): Request[UpdateDirectoryConfigResult, AWSError] = js.native
+  
   /**
     * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
     */
@@ -602,6 +648,7 @@ trait AppStream extends Service {
     params: UpdateFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFleetResult, Unit]
   ): Request[UpdateFleetResult, AWSError] = js.native
+  
   /**
     * Adds or updates permissions for the specified private image. 
     */
@@ -615,6 +662,7 @@ trait AppStream extends Service {
     params: UpdateImagePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateImagePermissionsResult, Unit]
   ): Request[UpdateImagePermissionsResult, AWSError] = js.native
+  
   /**
     * Updates the specified fields for the specified stack.
     */
@@ -628,6 +676,7 @@ trait AppStream extends Service {
     params: UpdateStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateStackResult, Unit]
   ): Request[UpdateStackResult, AWSError] = js.native
+  
   /**
     * Waits for the fleetStarted state by periodically calling the underlying AppStream.describeFleetsoperation every 30 seconds (at most 40 times).
     */
@@ -671,4 +720,3 @@ trait AppStream extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetsResult, Unit]
   ): Request[DescribeFleetsResult, AWSError] = js.native
 }
-

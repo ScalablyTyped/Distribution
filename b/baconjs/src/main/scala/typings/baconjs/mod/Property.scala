@@ -4,7 +4,7 @@ import typings.baconjs.typesMod.EventSink
 import typings.baconjs.typesMod.Subscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baconjs", "Property")
 @js.native
@@ -13,4 +13,3 @@ class Property[V] protected ()
   def this(desc: typings.baconjs.describeMod.Desc, subscribe: Subscribe[V]) = this()
   def this(desc: typings.baconjs.describeMod.Desc, subscribe: Subscribe[V], handler: EventSink[V]) = this()
 }
-

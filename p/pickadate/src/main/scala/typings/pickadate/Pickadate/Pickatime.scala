@@ -8,11 +8,11 @@ import typings.pickadate.pickadateStrings.picker
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pickatime extends js.Object {
-  var defaults: TimeOptions = js.native
+  
   /**
     * Initialize a time picker.
     */
@@ -29,5 +29,6 @@ trait Pickatime extends js.Object {
   def apply(objectName: $root): JQuery = js.native
   def apply(objectName: _hidden): HTMLInputElement = js.native
   def apply(options: TimeOptions): JQuery = js.native
+  
+  var defaults: TimeOptions = js.native
 }
-

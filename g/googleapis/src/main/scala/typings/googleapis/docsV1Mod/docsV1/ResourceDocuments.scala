@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/docs/v1", "docs_v1.Resource$Documents")
 @js.native
 class ResourceDocuments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * docs.documents.batchUpdate
     * @desc Applies one or more updates to the document.  Each request is
@@ -58,6 +58,9 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdateDocumentResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * docs.documents.create
     * @desc Creates a blank document using the title given in the request.
@@ -88,6 +91,7 @@ class ResourceDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDocument]
   ): Unit = js.native
+  
   /**
     * docs.documents.get
     * @desc Gets the latest version of the specified document.
@@ -118,4 +122,3 @@ class ResourceDocuments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDocument]
   ): Unit = js.native
 }
-

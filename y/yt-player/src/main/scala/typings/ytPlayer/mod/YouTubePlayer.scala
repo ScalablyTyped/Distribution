@@ -9,7 +9,7 @@ import typings.ytPlayer.ytPlayerStrings.timeupdate
 import typings.ytPlayer.ytPlayerStrings.unplayable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Simple, robust, blazing-fast YouTube Player API
@@ -18,28 +18,32 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait YouTubePlayer extends EventEmitter {
-  /** Returns true if destroy() has been called on the player. */
-  var destroyed: Boolean = js.native
-  /** Returns the currently loaded video ID, i.e.what was passed to load(). */
-  var videoId: String = js.native
+  
   /**
     * Removes the <iframe> containing the player and cleans up all resources.
     */
   def destroy(): Unit = js.native
+  
+  /** Returns true if destroy() has been called on the player. */
+  var destroyed: Boolean = js.native
+  
   /**
     * The function returns an array of numbers ordered from slowest to fastest
     * playback speed.Even if the player does not support variable playback
     * speeds, the array should always contain at least one value(1).
     */
   def getAvailablePlaybackRates(): js.Array[Double] = js.native
+  
   /** Returns the elapsed time in seconds since the video started playing. */
   def getCurrentTime(): Double = js.native
+  
   /**
     * Returns the duration in seconds of the currently playing video.Note that
     * getDuration() will return 0 until the video's metadata is loaded, which
     * normally happens just before the video starts playing.
     */
   def getDuration(): Double = js.native
+  
   /**
     * This function retrieves the playback rate of the currently playing
     * video.The default playback rate is 1, which indicates that the video is
@@ -47,20 +51,25 @@ trait YouTubePlayer extends EventEmitter {
     * 1, 1.5, and 2.
     */
   def getPlaybackRate(): Double = js.native
+  
   /**
     * Returns a number between 0 and 1 that specifies the percentage of the
     * video that the player shows as buffered.
     */
   def getProgress(): Double = js.native
+  
   /**
     * Returns the state of the player.Possible values are: 'unstarted',
     * 'ended', 'playing', 'paused', 'buffering', or 'cued'.
     */
   def getState(): YouTubePlayerState = js.native
+  
   /** Returns the player's current volume, an integer between 0 and 100. Note that getVolume() will return the volume even if the player is muted. */
   def getVolume(): Double = js.native
+  
   /** Returns true if the player is muted, false if not. */
   def isMuted(): Boolean = js.native
+  
   /**
     * This function loads the specified videoId. An example of a videoId is
     * 'GKSRyLdjsPA'.
@@ -72,9 +81,13 @@ trait YouTubePlayer extends EventEmitter {
     * This should be the first function called on a new Player instance.
     */
   def load(videoId: String): Unit = js.native
+  def load(videoId: String, autoplay: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
   def load(videoId: String, autoplay: Boolean): Unit = js.native
+  def load(videoId: String, autoplay: Boolean, start: Double): Unit = js.native
+  
   /** Mutes the player. */
   def mute(): Unit = js.native
+  
   /**
     * These events fire when the player enters the respective state. These
     * event names are the same as the possible return values from
@@ -123,10 +136,13 @@ trait YouTubePlayer extends EventEmitter {
     */
   @JSName("on")
   def on_unplayable(event: unplayable, callback: js.Function1[/* videoId */ String, Unit]): this.type = js.native
+  
   /** Pauses the currently loaded video. */
   def pause(): Unit = js.native
+  
   /** Plays the currently loaded video. */
   def play(): Unit = js.native
+  
   /**
     * Seeks to a specified time in the video.If the player is paused when the
     * function is called, it will remain paused.If the function is called from
@@ -136,6 +152,7 @@ trait YouTubePlayer extends EventEmitter {
     * which the user is seeking.
     */
   def seek(seconds: Double): Unit = js.native
+  
   /**
     * This function sets the suggested video quality for the current video.
     * The function causes the video to reload at its current position in the
@@ -159,16 +176,20 @@ trait YouTubePlayer extends EventEmitter {
     * equivalent to setting suggestedQuality to 'default'.
     */
   def setPlaybackQuality(suggestedQuality: YouTubePlayerQuality): Unit = js.native
+  
   /**
     * This function sets the suggested playback rate for the current video.If
     * the playback rate changes, it will only change for the video that is
     * already being played.Calling load() will reset the playback rate to 1.
     */
   def setPlaybackRate(rate: Double): Unit = js.native
+  
   /** Sets the size in pixels of the <iframe> that contains the player. */
   def setSize(width: Double, height: Double): Unit = js.native
+  
   /** Sets the volume.Accepts an integer between 0 and 100. */
   def setVolume(volume: Double): Unit = js.native
+  
   /**
     * Stops and cancels loading of the current video.This function should be
     * reserved for rare situations when you know that the user will not be
@@ -177,7 +198,10 @@ trait YouTubePlayer extends EventEmitter {
     * the player is playing, you can call load() without calling stop() first.
     */
   def stop(): Unit = js.native
+  
   /** Unmutes the player. */
   def unMute(): Unit = js.native
+  
+  /** Returns the currently loaded video ID, i.e.what was passed to load(). */
+  var videoId: String = js.native
 }
-

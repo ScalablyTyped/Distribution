@@ -6,11 +6,12 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.serverActionsMod.ServerActions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", JSImport.Namespace)
 @js.native
 object readonlyRestClientMod extends js.Object {
+  
   @js.native
   class ReadonlyRestClient protected () extends ServerActions {
     /**
@@ -24,7 +25,9 @@ object readonlyRestClientMod extends js.Object {
       onDataUpdate_ : js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit],
       authTokenProvider_ : AuthTokenProvider
     ) = this()
+    
     var authTokenProvider_ : js.Any = js.native
+    
     /**
       * We don't actually need to track listens, except to prevent us calling an onComplete for a listen
       * that's been removed. :-/
@@ -32,10 +35,14 @@ object readonlyRestClientMod extends js.Object {
       * @private {!Object.<string, !Object>}
       */
     var listens_ : js.Any = js.native
+    
     /** @private {function(...[*])} */
     var log_ : js.Any = js.native
+    
     var onDataUpdate_ : js.Any = js.native
+    
     var repoInfo_ : js.Any = js.native
+    
     /**
       * Performs a REST request to the given path, with the provided query string parameters,
       * and any auth credentials we have.
@@ -47,10 +54,10 @@ object readonlyRestClientMod extends js.Object {
       */
     var restRequest_ : js.Any = js.native
   }
-  
   /* static members */
   @js.native
   object ReadonlyRestClient extends js.Object {
+    
     /**
       * @param {!Query} query
       * @param {?number=} tag
@@ -60,6 +67,4 @@ object readonlyRestClientMod extends js.Object {
     def getListenId_(query: Query): String = js.native
     def getListenId_(query: Query, tag: Double): String = js.native
   }
-  
 }
-

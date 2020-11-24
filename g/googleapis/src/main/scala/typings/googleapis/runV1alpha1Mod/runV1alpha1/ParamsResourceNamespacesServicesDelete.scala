@@ -6,27 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceNamespacesServicesDelete extends StandardParameters {
+  
   /**
     * Cloud Run currently ignores this parameter.
     */
   var apiVersion: js.UndefOr[String] = js.native
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * Cloud Run currently ignores this parameter.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * The name of the service being deleted. If needed, replace {namespace_id}
     * with the project ID.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Deprecated. Specifies the cascade behavior on delete. Cloud Run only
     * supports cascading behavior, so this must be false. This attribute is
@@ -34,6 +39,7 @@ trait ParamsResourceNamespacesServicesDelete extends StandardParameters {
     * https://github.com/kubernetes/kubernetes/issues/46659 for more info.
     */
   var orphanDependents: js.UndefOr[Boolean] = js.native
+  
   /**
     * Specifies the propagation policy of delete. Cloud Run currently ignores
     * this setting, and deletes in the background. Please see
@@ -42,49 +48,63 @@ trait ParamsResourceNamespacesServicesDelete extends StandardParameters {
     */
   var propagationPolicy: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceNamespacesServicesDelete {
+  
   @scala.inline
   def apply(): ParamsResourceNamespacesServicesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceNamespacesServicesDelete]
   }
+  
   @scala.inline
   implicit class ParamsResourceNamespacesServicesDeleteOps[Self <: ParamsResourceNamespacesServicesDelete] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setOrphanDependents(value: Boolean): Self = this.set("orphanDependents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrphanDependents: Self = this.set("orphanDependents", js.undefined)
+    
     @scala.inline
     def setPropagationPolicy(value: String): Self = this.set("propagationPolicy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePropagationPolicy: Self = this.set("propagationPolicy", js.undefined)
   }
-  
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaStreamSourceErrorStatus extends js.Object
-
 /** Specifies errors related to MediaStreamSource . */
 @JSGlobal("Windows.Media.Core.MediaStreamSourceErrorStatus")
 @js.native
 object MediaStreamSourceErrorStatus extends js.Object {
+  
   /** The network connection to the server was lost. */
   @js.native
   sealed trait connectionToServerLost extends MediaStreamSourceErrorStatus
@@ -42,6 +42,4 @@ object MediaStreamSourceErrorStatus extends js.Object {
   /** The application does not support the media storage format or media encoding format. */
   @js.native
   sealed trait unsupportedMediaFormat extends MediaStreamSourceErrorStatus
-  
 }
-

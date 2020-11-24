@@ -10,9 +10,9 @@ Create 'key/value' collections of one-to-one correspondence.
 | ------------------ | :-------------: |
 | Full name          | bidirectional-map |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 29774 |
+| # releases         | 0 |
+| # dependents       | 1 |
+| # downloads        | 53897 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.navigo.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("navigo", JSImport.Namespace)
 @js.native
@@ -23,4 +23,3 @@ class ^ () extends Navigo {
   def this(root: Null, useHash: js.UndefOr[scala.Nothing], hash: String) = this()
   def this(root: Null, useHash: Boolean, hash: String) = this()
 }
-

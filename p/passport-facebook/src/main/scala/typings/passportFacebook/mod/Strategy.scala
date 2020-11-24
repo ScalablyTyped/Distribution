@@ -5,7 +5,7 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-facebook", "Strategy")
 @js.native
@@ -13,6 +13,6 @@ class Strategy protected ()
   extends typings.passport.mod.Strategy {
   def this(options: StrategyOptionWithRequest, verify: VerifyFunctionWithRequest) = this()
   def this(options: StrategyOption, verify: VerifyFunction) = this()
+  
   def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
 }
-

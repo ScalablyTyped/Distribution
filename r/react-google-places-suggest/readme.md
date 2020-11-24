@@ -10,9 +10,9 @@ React component to select geolocated suggestion from Google Maps Places API
 | ------------------ | :-------------: |
 | Full name          | react-google-places-suggest |
 | Keywords           | react, google, maps, places, googlemaps, geosuggest |
-| # releases         | 15 |
+| # releases         | 11 |
 | # dependents       | 4 |
-| # downloads        | 137739 |
+| # downloads        | 215539 |
 | # stars            | 4 |
 
 ## Links

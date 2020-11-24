@@ -10,9 +10,9 @@ Assertion toolkit for Puppeteer.
 | ------------------ | :-------------: |
 | Full name          | expect-puppeteer |
 | Keywords           | jest, puppeteer, jest-puppeteer, chromeless, chrome-headless, expect, assert, should, assertion |
-| # releases         | 24 |
-| # dependents       | 13 |
-| # downloads        | 4099455 |
+| # releases         | 8 |
+| # dependents       | 15 |
+| # downloads        | 6760016 |
 | # stars            | 0 |
 
 ## Links

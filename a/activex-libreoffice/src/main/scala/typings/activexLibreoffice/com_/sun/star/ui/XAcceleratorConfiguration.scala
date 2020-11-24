@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides read/write access to an accelerator configuration set.
@@ -26,6 +26,7 @@ trait XAcceleratorConfiguration
   extends XUIConfigurationPersistence
      with XUIConfigurationStorage
      with XUIConfiguration {
+  
   /**
     * return the list of all key events, which are available at this configuration set.
     *
@@ -36,6 +37,7 @@ trait XAcceleratorConfiguration
     * @see getCommandForKeyEvent().
     */
   val AllKeyEvents: SafeArray[KeyEvent] = js.native
+  
   /**
     * return the list of all key events, which are available at this configuration set.
     *
@@ -46,6 +48,7 @@ trait XAcceleratorConfiguration
     * @see getCommandForKeyEvent().
     */
   def getAllKeyEvents(): SafeArray[KeyEvent] = js.native
+  
   /**
     * return the registered command for the specified key event.
     *
@@ -56,6 +59,7 @@ trait XAcceleratorConfiguration
     * @throws com::sun::star::container::NoSuchElementException if the key event is an invalid one or does not exists inside this configuration set.
     */
   def getCommandByKeyEvent(aKeyEvent: KeyEvent): String = js.native
+  
   /**
     * optimized access to the relation "command-key" instead of "key-command" which is provided normally by this interface.
     *
@@ -67,6 +71,7 @@ trait XAcceleratorConfiguration
     * @throws com::sun::star::container::NoSuchElementException if the specified command isn't empty but does not occur inside this configuration set.
     */
   def getKeyEventsByCommand(sCommand: String): SafeArray[KeyEvent] = js.native
+  
   /**
     * optimized function to map a list of commands to a corresponding list of key events.
     *
@@ -80,6 +85,7 @@ trait XAcceleratorConfiguration
     * @throws com::sun::star::lang::IllegalArgumentException if at least one of the specified commands is empty. It can't be checked, if a command is valid - b
     */
   def getPreferredKeyEventsForCommandList(lCommandList: SeqEquiv[String]): SafeArray[_] = js.native
+  
   /**
     * search for an key-command-binding inside this configuration set, where the specified command is used.
     *
@@ -92,12 +98,14 @@ trait XAcceleratorConfiguration
     * @throws com::sun::star::container::NoSuchElementException if the specified command isn't used inside this configuration set.
     */
   def removeCommandFromAllKeyEvents(sCommand: String): Unit = js.native
+  
   /**
     * remove a key-command-binding from this configuration set.
     * @param aKeyEvent the key event, which should be removed.
     * @throws com::sun::star::container::NoSuchElementException if the key event does not exists inside this configuration set.
     */
   def removeKeyEvent(aKeyEvent: KeyEvent): Unit = js.native
+  
   /**
     * modify or create a key - command - binding.
     *
@@ -115,8 +123,8 @@ trait XAcceleratorConfiguration
     */
   def setKeyEvent(aKeyEvent: KeyEvent, sCommand: String): Unit = js.native
 }
-
 object XAcceleratorConfiguration {
+  
   @scala.inline
   def apply(
     AllKeyEvents: SafeArray[KeyEvent],
@@ -143,34 +151,44 @@ object XAcceleratorConfiguration {
     val __obj = js.Dynamic.literal(AllKeyEvents = AllKeyEvents.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addConfigurationListener = js.Any.fromFunction1(addConfigurationListener), getAllKeyEvents = js.Any.fromFunction0(getAllKeyEvents), getCommandByKeyEvent = js.Any.fromFunction1(getCommandByKeyEvent), getKeyEventsByCommand = js.Any.fromFunction1(getKeyEventsByCommand), getPreferredKeyEventsForCommandList = js.Any.fromFunction1(getPreferredKeyEventsForCommandList), hasStorage = js.Any.fromFunction0(hasStorage), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), removeCommandFromAllKeyEvents = js.Any.fromFunction1(removeCommandFromAllKeyEvents), removeConfigurationListener = js.Any.fromFunction1(removeConfigurationListener), removeKeyEvent = js.Any.fromFunction1(removeKeyEvent), setKeyEvent = js.Any.fromFunction2(setKeyEvent), setStorage = js.Any.fromFunction1(setStorage), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction1(storeToStorage))
     __obj.asInstanceOf[XAcceleratorConfiguration]
   }
+  
   @scala.inline
   implicit class XAcceleratorConfigurationOps[Self <: XAcceleratorConfiguration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllKeyEvents(value: SafeArray[KeyEvent]): Self = this.set("AllKeyEvents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetAllKeyEvents(value: () => SafeArray[KeyEvent]): Self = this.set("getAllKeyEvents", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCommandByKeyEvent(value: KeyEvent => String): Self = this.set("getCommandByKeyEvent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetKeyEventsByCommand(value: String => SafeArray[KeyEvent]): Self = this.set("getKeyEventsByCommand", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[_]): Self = this.set("getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveCommandFromAllKeyEvents(value: String => Unit): Self = this.set("removeCommandFromAllKeyEvents", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveKeyEvent(value: KeyEvent => Unit): Self = this.set("removeKeyEvent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetKeyEvent(value: (KeyEvent, String) => Unit): Self = this.set("setKeyEvent", js.Any.fromFunction2(value))
   }
-  
 }
-

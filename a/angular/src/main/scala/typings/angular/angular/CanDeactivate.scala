@@ -2,7 +2,7 @@ package typings.angular.angular
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines route lifecycle method `routerCanDeactivate`, which is called by the router to determine
@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CanDeactivate extends js.Object {
+  
   @JSName("$routerCanDeactivate")
   def $routerCanDeactivate(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
   @JSName("$routerCanDeactivate")
@@ -34,4 +35,3 @@ trait CanDeactivate extends js.Object {
   @JSName("$routerCanDeactivate")
   def $routerCanDeactivate(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
 }
-

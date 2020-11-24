@@ -3,9 +3,31 @@ package typings.underscore
 import typings.underscore.mod._AnyFalsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object underscoreStrings {
+  
+  @scala.inline
+  def Fn0: Fn0 = "Fn0".asInstanceOf[Fn0]
+  
+  @scala.inline
+  def FnCall: FnCall = "FnCall".asInstanceOf[FnCall]
+  
+  @scala.inline
+  def FnCallIterateeContext: FnCallIterateeContext = "FnCallIterateeContext".asInstanceOf[FnCallIterateeContext]
+  
+  @scala.inline
+  def Underscore: Underscore = "Underscore".asInstanceOf[Underscore]
+  
+  @scala.inline
+  def UnderscoreStatic: UnderscoreStatic = "UnderscoreStatic".asInstanceOf[UnderscoreStatic]
+  
+  @scala.inline
+  def _Chain: _Chain = "_Chain".asInstanceOf[_Chain]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
   @js.native
   sealed trait Fn0 extends js.Object
   
@@ -26,20 +48,4 @@ object underscoreStrings {
   
   @js.native
   sealed trait _empty extends _AnyFalsy
-  
-  @scala.inline
-  def Fn0: Fn0 = "Fn0".asInstanceOf[Fn0]
-  @scala.inline
-  def FnCall: FnCall = "FnCall".asInstanceOf[FnCall]
-  @scala.inline
-  def FnCallIterateeContext: FnCallIterateeContext = "FnCallIterateeContext".asInstanceOf[FnCallIterateeContext]
-  @scala.inline
-  def Underscore: Underscore = "Underscore".asInstanceOf[Underscore]
-  @scala.inline
-  def UnderscoreStatic: UnderscoreStatic = "UnderscoreStatic".asInstanceOf[UnderscoreStatic]
-  @scala.inline
-  def _Chain: _Chain = "_Chain".asInstanceOf[_Chain]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
 }
-

@@ -11,11 +11,14 @@ Patch console methods to intercept output
 | Full name          | patch-console |
 | Keywords           | stdout, stderr, patch, console, intercept, log, logs |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1530 |
+| # dependents       | 2 |
+| # downloads        | 11828 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/vadimdemedes/patch-console#readme)
+- [Bugs](https://github.com/vadimdemedes/patch-console/issues)
+- [Repository](https://github.com/vadimdemedes/patch-console)
 - [Npm](https://www.npmjs.com/package/patch-console)
     
 

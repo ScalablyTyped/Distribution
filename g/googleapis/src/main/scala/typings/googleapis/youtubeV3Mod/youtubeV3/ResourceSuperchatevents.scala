@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Superchatevents")
 @js.native
 class ResourceSuperchatevents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.superChatEvents.list
     * @desc Lists Super Chat events for a channel.
@@ -48,4 +50,3 @@ class ResourceSuperchatevents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSuperChatEventListResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Midi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies the channel pressure. */
 @JSGlobal("Windows.Devices.Midi.MidiChannelPressureMessage")
@@ -16,4 +16,3 @@ class MidiChannelPressureMessage protected ()
     */
   def this(channel: Double, pressure: Double) = this()
 }
-

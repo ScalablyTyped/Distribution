@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__settingregistry
 
-Typings are for version 2.2.0
+Typings are for version 2.2.5
 
 ## Library description:
 Settings registry for Jupyterlab
@@ -10,9 +10,9 @@ Settings registry for Jupyterlab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/settingregistry |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 66 |
-| # downloads        | 380617 |
+| # releases         | 60 |
+| # dependents       | 75 |
+| # downloads        | 847176 |
 | # stars            | 0 |
 
 ## Links

@@ -6,23 +6,33 @@ import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.touch
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] {
+  
   var height: Double = js.native
+  
   var isPrimary: Boolean = js.native
+  
   var pointerId: Double = js.native
+  
   var pointerType: mouse | pen | touch = js.native
+  
   var pressure: Double = js.native
+  
   var tangentialPressure: Double = js.native
+  
   var tiltX: Double = js.native
+  
   var tiltY: Double = js.native
+  
   var twist: Double = js.native
+  
   var width: Double = js.native
 }
-
 object PointerEvent {
+  
   @scala.inline
   def apply[T](
     altKey: Boolean,
@@ -72,38 +82,50 @@ object PointerEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerEvent[T]]
   }
+  
   @scala.inline
   implicit class PointerEventOps[Self <: PointerEvent[_], T] (val x: Self with PointerEvent[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsPrimary(value: Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPointerId(value: Double): Self = this.set("pointerId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPointerType(value: mouse | pen | touch): Self = this.set("pointerType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPressure(value: Double): Self = this.set("pressure", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTangentialPressure(value: Double): Self = this.set("tangentialPressure", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTiltX(value: Double): Self = this.set("tiltX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTiltY(value: Double): Self = this.set("tiltY", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTwist(value: Double): Self = this.set("twist", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
   }
-  
 }
-

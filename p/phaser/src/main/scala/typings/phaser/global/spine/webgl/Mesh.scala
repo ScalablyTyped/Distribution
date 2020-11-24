@@ -3,7 +3,7 @@ package typings.phaser.global.spine.webgl
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.webgl.Mesh")
 @js.native
@@ -22,4 +22,3 @@ class Mesh protected ()
     maxIndices: Double
   ) = this()
 }
-

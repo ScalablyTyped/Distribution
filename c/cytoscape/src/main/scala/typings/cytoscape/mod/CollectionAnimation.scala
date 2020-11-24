@@ -2,10 +2,11 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CollectionAnimation extends js.Object {
+  
   /**
     * Animate the elements.
     * @param options An object containing the details of the animation.
@@ -15,11 +16,13 @@ trait CollectionAnimation extends js.Object {
   def animate(options: ElementAnimateOptionPos, params: ElementAnimateOptionsBase): this.type = js.native
   def animate(options: ElementAnimateOptionRen): this.type = js.native
   def animate(options: ElementAnimateOptionRen, params: ElementAnimateOptionsBase): this.type = js.native
+  
   /**
     * Remove all queued animations for the elements.
     * http://js.cytoscape.org/#eles.clearQueue
     */
   def clearQueue(): this.type = js.native
+  
   /**
     * Add a delay between animations for the elements.
     * @param duration How long the delay should be in milliseconds.
@@ -28,6 +31,7 @@ trait CollectionAnimation extends js.Object {
     */
   def delay(duration: Double): this.type = js.native
   def delay(duration: Double, complete: js.Function0[Unit]): this.type = js.native
+  
   /**
     * Stop all animations that are currently running.
     * @param clearQueue A boolean, indicating whether the queue of animations should be emptied.
@@ -39,4 +43,3 @@ trait CollectionAnimation extends js.Object {
   def stop(clearQueue: Boolean): this.type = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): this.type = js.native
 }
-

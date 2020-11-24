@@ -3,13 +3,15 @@ package typings.luminoDomutils
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/domutils/types/selector", JSImport.Namespace)
 @js.native
 object selectorMod extends js.Object {
+  
   @js.native
   object Selector extends js.Object {
+    
     /**
       * Calculate the specificity of a single CSS selector.
       *
@@ -36,6 +38,7 @@ object selectorMod extends js.Object {
       * same selector are extremely fast.
       */
     def calculateSpecificity(selector: String): Double = js.native
+    
     /**
       * Test whether a selector is a valid CSS selector.
       *
@@ -48,6 +51,7 @@ object selectorMod extends js.Object {
       * selector are extremely fast.
       */
     def isValid(selector: String): Boolean = js.native
+    
     /**
       * Test whether an element matches a CSS selector.
       *
@@ -63,6 +67,4 @@ object selectorMod extends js.Object {
       */
     def matches(element: Element, selector: String): Boolean = js.native
   }
-  
 }
-

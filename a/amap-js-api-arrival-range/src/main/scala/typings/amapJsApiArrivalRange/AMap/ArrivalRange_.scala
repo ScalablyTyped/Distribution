@@ -7,13 +7,14 @@ import typings.amapJsApiArrivalRange.AMap.ArrivalRange.SearchResult
 import typings.amapJsApiArrivalRange.AMap.ArrivalRange.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 公交到达圈展示
   */
 @js.native
 trait ArrivalRange_ extends EventEmitter {
+  
   /**
     * 计算某个时间段内用户通过公交出行可到达的距离范围
     * @param origin 起始点
@@ -33,4 +34,3 @@ trait ArrivalRange_ extends EventEmitter {
     opts: SearchOptions
   ): Unit = js.native
 }
-

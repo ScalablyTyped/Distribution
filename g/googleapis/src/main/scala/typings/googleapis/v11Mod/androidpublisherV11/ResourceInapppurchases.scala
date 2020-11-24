@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v1.1", "androidpublisher_v1_1.Resource$Inapppurchases")
 @js.native
 class ResourceInapppurchases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.inapppurchases.get
     * @desc Checks the purchase and consumption status of an inapp item.
@@ -44,4 +46,3 @@ class ResourceInapppurchases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaInappPurchase]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.lokijs.global
 import typings.lokijs.anon.PartialDynamicViewOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DynamicView class is a versatile 'live' view class which can have filters and sorts applied.
@@ -34,4 +34,3 @@ class DynamicView[E /* <: js.Object */] protected ()
   def this(collection: typings.lokijs.Collection[E], name: String) = this()
   def this(collection: typings.lokijs.Collection[E], name: String, options: PartialDynamicViewOptions) = this()
 }
-

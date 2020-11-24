@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartAxisType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisType")
 @js.native
 object ChartAxisType extends js.Object {
+  
   /**
     * Axis displays categories.
     *
@@ -36,6 +36,4 @@ object ChartAxisType extends js.Object {
     */
   @js.native
   sealed trait value extends ChartAxisType
-  
 }
-

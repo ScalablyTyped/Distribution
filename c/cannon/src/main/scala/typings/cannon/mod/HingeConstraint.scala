@@ -3,7 +3,7 @@ package typings.cannon.mod
 import typings.cannon.CANNON.IHingeConstraintOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "HingeConstraint")
 @js.native
@@ -16,4 +16,3 @@ class HingeConstraint protected ()
     options: IHingeConstraintOptions
   ) = this()
 }
-

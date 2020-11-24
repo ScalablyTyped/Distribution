@@ -3,7 +3,7 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Group.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a map object which can contain other map objects. It's visibility, zIndex and object-order influences the contained map objects
@@ -18,4 +18,3 @@ class Group ()
   extends typings.heremaps.H.map.Group {
   def this(opt_options: Options) = this()
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__toolbar
 
-Typings are for version 0.35
+Typings are for version 2.3.0
 
 ## Library description:
 The Material Components for the web toolbar component
@@ -10,9 +10,9 @@ The Material Components for the web toolbar component
 | ------------------ | :-------------: |
 | Full name          | @material/toolbar |
 | Keywords           | material components, material design, toolbar |
-| # releases         | 38 |
-| # dependents       | 22 |
-| # downloads        | 883532 |
+| # releases         | 18 |
+| # dependents       | 21 |
+| # downloads        | 688428 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ The Material Components for the web toolbar component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

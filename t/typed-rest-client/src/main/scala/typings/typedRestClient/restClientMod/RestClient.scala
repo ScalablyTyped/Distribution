@@ -6,7 +6,7 @@ import typings.typedRestClient.httpClientMod.HttpClientResponse
 import typings.typedRestClient.interfacesMod.IRequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-rest-client/RestClient", "RestClient")
 @js.native
@@ -105,10 +105,13 @@ class RestClient () extends js.Object {
     handlers: js.Array[IRequestHandler],
     requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
   ) = this()
+  
   var _baseUrl: js.Any = js.native
+  
   var _headersFromOptions: js.Any = js.native
+  
   var client: HttpClient = js.native
-  var versionParam: String = js.native
+  
   /**
     * Creates resource(s) from an endpoint
     * T type of object returned.
@@ -118,6 +121,7 @@ class RestClient () extends js.Object {
     */
   def create[T](resource: String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
   def create[T](resource: String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   /**
     * Deletes a resource from an endpoint
     * Be aware that not found returns a null.  Other error conditions reject the promise
@@ -126,6 +130,7 @@ class RestClient () extends js.Object {
     */
   def del[T](resource: String): js.Promise[IRestResponse[T]] = js.native
   def del[T](resource: String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   /**
     * Gets a resource from an endpoint
     * Be aware that not found returns a null.  Other error conditions reject the promise
@@ -134,6 +139,7 @@ class RestClient () extends js.Object {
     */
   def get[T](resource: String): js.Promise[IRestResponse[T]] = js.native
   def get[T](resource: String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   /**
     * Gets a resource from an endpoint
     * Be aware that not found returns a null.  Other error conditions reject the promise
@@ -142,7 +148,9 @@ class RestClient () extends js.Object {
     */
   def options[T](requestUrl: String): js.Promise[IRestResponse[T]] = js.native
   def options[T](requestUrl: String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   /* protected */ def processResponse[T](res: HttpClientResponse, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   /**
     * Replaces resource(s) from an endpoint
     * T type of object returned.
@@ -152,6 +160,7 @@ class RestClient () extends js.Object {
     */
   def replace[T](resource: String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
   def replace[T](resource: String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   /**
     * Updates resource(s) from an endpoint
     * T type of object returned.
@@ -161,14 +170,16 @@ class RestClient () extends js.Object {
     */
   def update[T](resource: String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
   def update[T](resource: String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
   def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream): js.Promise[IRestResponse[T]] = js.native
   def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  
+  var versionParam: String = js.native
 }
-
 /* static members */
 @JSImport("typed-rest-client/RestClient", "RestClient")
 @js.native
 object RestClient extends js.Object {
+  
   var dateTimeDeserializer: js.Any = js.native
 }
-

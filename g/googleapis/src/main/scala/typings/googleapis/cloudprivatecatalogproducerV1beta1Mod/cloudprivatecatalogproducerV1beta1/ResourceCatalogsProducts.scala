@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs$Products")
 @js.native
 class ResourceCatalogsProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var icons: ResourceCatalogsProductsIcons = js.native
-  var versions: ResourceCatalogsProductsVersions = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.copy
     * @desc Copies a Product under another Catalog.
@@ -47,6 +47,7 @@ class ResourceCatalogsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.create
     * @desc Creates a Product instance under a given Catalog.
@@ -79,6 +80,7 @@ class ResourceCatalogsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Product]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.delete
     * @desc Hard deletes a Product.
@@ -110,6 +112,7 @@ class ResourceCatalogsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.get
     * @desc Returns the requested Product resource.
@@ -141,6 +144,9 @@ class ResourceCatalogsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Product]
   ): Unit = js.native
+  
+  var icons: ResourceCatalogsProductsIcons = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.list
     * @desc Lists Product resources that the producer has access to, within the
@@ -176,6 +182,7 @@ class ResourceCatalogsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListProductsResponse]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.patch
     * @desc Updates a specific Product resource.
@@ -209,5 +216,6 @@ class ResourceCatalogsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Product]
   ): Unit = js.native
+  
+  var versions: ResourceCatalogsProductsVersions = js.native
 }
-

@@ -10,9 +10,9 @@ Backs out file tree changes
 | ------------------ | :-------------: |
 | Full name          | fs-tree-diff |
 | Keywords           | broccoli |
-| # releases         | 8 |
-| # dependents       | 42 |
-| # downloads        | 16936695 |
+| # releases         | 6 |
+| # dependents       | 46 |
+| # downloads        | 23510906 |
 | # stars            | 0 |
 
 ## Links

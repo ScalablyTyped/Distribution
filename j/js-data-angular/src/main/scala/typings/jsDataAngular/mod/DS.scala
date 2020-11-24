@@ -3,10 +3,11 @@ package typings.jsDataAngular.mod
 import typings.angular.mod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DS extends js.Object {
+  
   def bindAll[T](
     resourceName: String,
     params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
@@ -26,6 +27,7 @@ trait DS extends js.Object {
       Unit
     ]
   ): js.Function = js.native
+  
   def bindOne[T](resourceName: String, id: String, scope: IScope, expr: String): js.Function = js.native
   def bindOne[T](
     resourceName: String,
@@ -51,4 +53,3 @@ trait DS extends js.Object {
     ]
   ): js.Function = js.native
 }
-

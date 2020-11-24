@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1", "appengine_v1.Resource$Apps$Firewall$Ingressrules")
 @js.native
 class ResourceAppsFirewallIngressrules protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.firewall.ingressRules.batchUpdate
     * @desc Replaces the entire firewall ruleset in one bulk operation. This
@@ -49,6 +49,9 @@ class ResourceAppsFirewallIngressrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdateIngressRulesResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.firewall.ingressRules.create
     * @desc Creates a firewall rule for the application.
@@ -81,6 +84,7 @@ class ResourceAppsFirewallIngressrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFirewallRule]
   ): Unit = js.native
+  
   /**
     * appengine.apps.firewall.ingressRules.delete
     * @desc Deletes the specified firewall rule.
@@ -110,6 +114,7 @@ class ResourceAppsFirewallIngressrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * appengine.apps.firewall.ingressRules.get
     * @desc Gets the specified firewall rule.
@@ -142,6 +147,7 @@ class ResourceAppsFirewallIngressrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFirewallRule]
   ): Unit = js.native
+  
   /**
     * appengine.apps.firewall.ingressRules.list
     * @desc Lists the firewall rules of an application.
@@ -176,6 +182,7 @@ class ResourceAppsFirewallIngressrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListIngressRulesResponse]
   ): Unit = js.native
+  
   /**
     * appengine.apps.firewall.ingressRules.patch
     * @desc Updates the specified firewall rule.
@@ -211,4 +218,3 @@ class ResourceAppsFirewallIngressrules protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFirewallRule]
   ): Unit = js.native
 }
-

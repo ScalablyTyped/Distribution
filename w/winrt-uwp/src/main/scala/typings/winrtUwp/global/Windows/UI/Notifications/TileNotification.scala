@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.UI.Notifications
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an update to a tile, including its visuals, identification tag, and expiration time. */
 @JSGlobal("Windows.UI.Notifications.TileNotification")
@@ -16,4 +16,3 @@ class TileNotification protected ()
     */
   def this(content: XmlDocument) = this()
 }
-

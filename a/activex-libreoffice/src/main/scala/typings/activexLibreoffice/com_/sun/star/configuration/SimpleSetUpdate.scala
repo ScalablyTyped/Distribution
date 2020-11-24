@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XStringEscape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides write access to a dynamic, homogeneous, non-hierarchical set of values or objects.
@@ -25,6 +25,6 @@ trait SimpleSetUpdate
      with XContainer
      with XSingleServiceFactory
      with XMultiServiceFactory {
+  
   def createInstanceWithArguments(aArguments: String): XInterface = js.native
 }
-

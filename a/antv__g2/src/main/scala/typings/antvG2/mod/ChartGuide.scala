@@ -8,16 +8,21 @@ import typings.antvG2.anon.Start
 import typings.antvG2.anon.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@antv/g2", "ChartGuide")
 @js.native
 class ChartGuide () extends js.Object {
+  
   def arc(option: Top): Unit = js.native
+  
   def html(option: AlignX): Unit = js.native
+  
   def image(option: Height): Unit = js.native
+  
   def line(option: End): Unit = js.native
+  
   def region(option: Start): Unit = js.native
+  
   def text(option: Content): Unit = js.native
 }
-

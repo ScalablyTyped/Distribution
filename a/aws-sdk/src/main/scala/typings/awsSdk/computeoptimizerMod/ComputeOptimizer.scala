@@ -1,17 +1,19 @@
 package typings.awsSdk.computeoptimizerMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComputeOptimizer extends Service {
+  
   @JSName("config")
   var config_ComputeOptimizer: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Describes recommendation export jobs created in the last seven days. Use the ExportAutoScalingGroupRecommendations or ExportEC2InstanceRecommendations actions to request an export of your recommendations. Then use the DescribeRecommendationExportJobs action to view your export jobs.
     */
@@ -27,6 +29,7 @@ trait ComputeOptimizer extends Service {
     params: DescribeRecommendationExportJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommendationExportJobsResponse, Unit]
   ): Request[DescribeRecommendationExportJobsResponse, AWSError] = js.native
+  
   /**
     * Exports optimization recommendations for Auto Scaling groups. Recommendations are exported in a comma-separated values (.csv) file, and its metadata in a JavaScript Object Notation (.json) file, to an existing Amazon Simple Storage Service (Amazon S3) bucket that you specify. For more information, see Exporting Recommendations in the Compute Optimizer User Guide. You can have only one Auto Scaling group export job in progress per AWS Region.
     */
@@ -42,6 +45,7 @@ trait ComputeOptimizer extends Service {
     params: ExportAutoScalingGroupRecommendationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportAutoScalingGroupRecommendationsResponse, Unit]
   ): Request[ExportAutoScalingGroupRecommendationsResponse, AWSError] = js.native
+  
   /**
     * Exports optimization recommendations for Amazon EC2 instances. Recommendations are exported in a comma-separated values (.csv) file, and its metadata in a JavaScript Object Notation (.json) file, to an existing Amazon Simple Storage Service (Amazon S3) bucket that you specify. For more information, see Exporting Recommendations in the Compute Optimizer User Guide. You can have only one Amazon EC2 instance export job in progress per AWS Region.
     */
@@ -57,49 +61,53 @@ trait ComputeOptimizer extends Service {
     params: ExportEC2InstanceRecommendationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportEC2InstanceRecommendationsResponse, Unit]
   ): Request[ExportEC2InstanceRecommendationsResponse, AWSError] = js.native
+  
   /**
-    * Returns Auto Scaling group recommendations. AWS Compute Optimizer currently generates recommendations for Auto Scaling groups that are configured to run instances of the M, C, R, T, and X instance families. The service does not generate recommendations for Auto Scaling groups that have a scaling policy attached to them, or that do not have the same values for desired, minimum, and maximum capacity. In order for Compute Optimizer to analyze your Auto Scaling groups, they must be of a fixed size. For more information, see the AWS Compute Optimizer User Guide.
+    * Returns Auto Scaling group recommendations. AWS Compute Optimizer generates recommendations for Amazon EC2 Auto Scaling groups that meet a specific set of requirements. For more information, see the Supported resources and requirements in the AWS Compute Optimizer User Guide.
     */
   def getAutoScalingGroupRecommendations(): Request[GetAutoScalingGroupRecommendationsResponse, AWSError] = js.native
   def getAutoScalingGroupRecommendations(
     callback: js.Function2[/* err */ AWSError, /* data */ GetAutoScalingGroupRecommendationsResponse, Unit]
   ): Request[GetAutoScalingGroupRecommendationsResponse, AWSError] = js.native
   /**
-    * Returns Auto Scaling group recommendations. AWS Compute Optimizer currently generates recommendations for Auto Scaling groups that are configured to run instances of the M, C, R, T, and X instance families. The service does not generate recommendations for Auto Scaling groups that have a scaling policy attached to them, or that do not have the same values for desired, minimum, and maximum capacity. In order for Compute Optimizer to analyze your Auto Scaling groups, they must be of a fixed size. For more information, see the AWS Compute Optimizer User Guide.
+    * Returns Auto Scaling group recommendations. AWS Compute Optimizer generates recommendations for Amazon EC2 Auto Scaling groups that meet a specific set of requirements. For more information, see the Supported resources and requirements in the AWS Compute Optimizer User Guide.
     */
   def getAutoScalingGroupRecommendations(params: GetAutoScalingGroupRecommendationsRequest): Request[GetAutoScalingGroupRecommendationsResponse, AWSError] = js.native
   def getAutoScalingGroupRecommendations(
     params: GetAutoScalingGroupRecommendationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAutoScalingGroupRecommendationsResponse, Unit]
   ): Request[GetAutoScalingGroupRecommendationsResponse, AWSError] = js.native
+  
   /**
-    * Returns Amazon EC2 instance recommendations. AWS Compute Optimizer currently generates recommendations for Amazon Elastic Compute Cloud (Amazon EC2) and Amazon EC2 Auto Scaling. It generates recommendations for M, C, R, T, and X instance families. For more information, see the AWS Compute Optimizer User Guide.
+    * Returns Amazon EC2 instance recommendations. AWS Compute Optimizer generates recommendations for Amazon Elastic Compute Cloud (Amazon EC2) instances that meet a specific set of requirements. For more information, see the Supported resources and requirements in the AWS Compute Optimizer User Guide.
     */
   def getEC2InstanceRecommendations(): Request[GetEC2InstanceRecommendationsResponse, AWSError] = js.native
   def getEC2InstanceRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ GetEC2InstanceRecommendationsResponse, Unit]): Request[GetEC2InstanceRecommendationsResponse, AWSError] = js.native
   /**
-    * Returns Amazon EC2 instance recommendations. AWS Compute Optimizer currently generates recommendations for Amazon Elastic Compute Cloud (Amazon EC2) and Amazon EC2 Auto Scaling. It generates recommendations for M, C, R, T, and X instance families. For more information, see the AWS Compute Optimizer User Guide.
+    * Returns Amazon EC2 instance recommendations. AWS Compute Optimizer generates recommendations for Amazon Elastic Compute Cloud (Amazon EC2) instances that meet a specific set of requirements. For more information, see the Supported resources and requirements in the AWS Compute Optimizer User Guide.
     */
   def getEC2InstanceRecommendations(params: GetEC2InstanceRecommendationsRequest): Request[GetEC2InstanceRecommendationsResponse, AWSError] = js.native
   def getEC2InstanceRecommendations(
     params: GetEC2InstanceRecommendationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEC2InstanceRecommendationsResponse, Unit]
   ): Request[GetEC2InstanceRecommendationsResponse, AWSError] = js.native
+  
   /**
-    * Returns the projected utilization metrics of Amazon EC2 instance recommendations.
+    * Returns the projected utilization metrics of Amazon EC2 instance recommendations.  The Cpu and Memory metrics are the only projected utilization metrics returned when you run this action. Additionally, the Memory metric is returned only for resources that have the unified CloudWatch agent installed on them. For more information, see Enabling Memory Utilization with the CloudWatch Agent. 
     */
   def getEC2RecommendationProjectedMetrics(): Request[GetEC2RecommendationProjectedMetricsResponse, AWSError] = js.native
   def getEC2RecommendationProjectedMetrics(
     callback: js.Function2[/* err */ AWSError, /* data */ GetEC2RecommendationProjectedMetricsResponse, Unit]
   ): Request[GetEC2RecommendationProjectedMetricsResponse, AWSError] = js.native
   /**
-    * Returns the projected utilization metrics of Amazon EC2 instance recommendations.
+    * Returns the projected utilization metrics of Amazon EC2 instance recommendations.  The Cpu and Memory metrics are the only projected utilization metrics returned when you run this action. Additionally, the Memory metric is returned only for resources that have the unified CloudWatch agent installed on them. For more information, see Enabling Memory Utilization with the CloudWatch Agent. 
     */
   def getEC2RecommendationProjectedMetrics(params: GetEC2RecommendationProjectedMetricsRequest): Request[GetEC2RecommendationProjectedMetricsResponse, AWSError] = js.native
   def getEC2RecommendationProjectedMetrics(
     params: GetEC2RecommendationProjectedMetricsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEC2RecommendationProjectedMetricsResponse, Unit]
   ): Request[GetEC2RecommendationProjectedMetricsResponse, AWSError] = js.native
+  
   /**
     * Returns the enrollment (opt in) status of an account to the AWS Compute Optimizer service. If the account is the master account of an organization, this action also confirms the enrollment status of member accounts within the organization.
     */
@@ -113,6 +121,7 @@ trait ComputeOptimizer extends Service {
     params: GetEnrollmentStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEnrollmentStatusResponse, Unit]
   ): Request[GetEnrollmentStatusResponse, AWSError] = js.native
+  
   /**
     * Returns the optimization findings for an account. For example, it returns the number of Amazon EC2 instances in an account that are under-provisioned, over-provisioned, or optimized. It also returns the number of Auto Scaling groups in an account that are not optimized, or optimized.
     */
@@ -126,6 +135,7 @@ trait ComputeOptimizer extends Service {
     params: GetRecommendationSummariesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRecommendationSummariesResponse, Unit]
   ): Request[GetRecommendationSummariesResponse, AWSError] = js.native
+  
   /**
     * Updates the enrollment (opt in) status of an account to the AWS Compute Optimizer service. If the account is a master account of an organization, this action can also be used to enroll member accounts within the organization.
     */
@@ -140,4 +150,3 @@ trait ComputeOptimizer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnrollmentStatusResponse, Unit]
   ): Request[UpdateEnrollmentStatusResponse, AWSError] = js.native
 }
-

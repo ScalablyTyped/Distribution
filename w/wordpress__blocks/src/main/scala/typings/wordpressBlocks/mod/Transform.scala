@@ -3,7 +3,7 @@ package typings.wordpressBlocks.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.wordpressBlocks.mod.TransformBlock[T]
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   - typings.wordpressBlocks.mod.TransformShortcode[T]
 */
 trait Transform[T /* <: Record[String, _] */] extends js.Object
-

@@ -2,7 +2,7 @@ package typings.apidevtoolsJsonSchemaRefParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the default export of JSON Schema $Ref Parser. You can creates instances of this class using new $RefParser(), or you can just call its static methods.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RefParser extends js.Object {
+  
   /**
     * The $refs property is a `$Refs` object, which lets you access all of the externally-referenced files in the schema, as well as easily get and set specific values in the schema using JSON pointers.
     *
@@ -20,12 +21,7 @@ trait RefParser extends js.Object {
     */
   @JSName("$refs")
   var $refs: Refs = js.native
-  /**
-    * The `schema` property is the parsed/bundled/dereferenced JSON Schema object. This is the same value that is passed to the callback function (or Promise) when calling the parse, bundle, or dereference methods.
-    *
-    * See https://apitools.dev/json-schema-ref-parser/docs/ref-parser.html#schema
-    */
-  var schema: JSONSchema = js.native
+  
   def bundle(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
   def bundle(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
   def bundle(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
@@ -49,6 +45,7 @@ trait RefParser extends js.Object {
   def bundle(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
   def bundle(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
   def bundle(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  
   def dereference(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
   def dereference(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
   def dereference(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
@@ -72,6 +69,7 @@ trait RefParser extends js.Object {
   def dereference(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
   def dereference(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
   def dereference(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  
   def parse(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
   def parse(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
   def parse(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
@@ -95,6 +93,7 @@ trait RefParser extends js.Object {
   def parse(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
   def parse(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
   def parse(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  
   def resolve(baseUrl: String, schema: String, options: Options): js.Promise[Refs] = js.native
   def resolve(baseUrl: String, schema: String, options: Options, callback: RefsCallback): Unit = js.native
   def resolve(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[Refs] = js.native
@@ -118,5 +117,11 @@ trait RefParser extends js.Object {
   def resolve(schema: JSONSchema, callback: RefsCallback): Unit = js.native
   def resolve(schema: JSONSchema, options: Options): js.Promise[Refs] = js.native
   def resolve(schema: JSONSchema, options: Options, callback: RefsCallback): Unit = js.native
+  
+  /**
+    * The `schema` property is the parsed/bundled/dereferenced JSON Schema object. This is the same value that is passed to the callback function (or Promise) when calling the parse, bundle, or dereference methods.
+    *
+    * See https://apitools.dev/json-schema-ref-parser/docs/ref-parser.html#schema
+    */
+  var schema: JSONSchema = js.native
 }
-

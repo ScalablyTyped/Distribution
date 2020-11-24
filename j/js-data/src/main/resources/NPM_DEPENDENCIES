@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "js-data" : "4.0.0-beta.4"
+      "js-data" : "3.0.9"
     }
   ],
   "test-dependencies" : [
     {
-      "js-data" : "4.0.0-beta.4"
+      "js-data" : "3.0.9"
     }
   ],
   "compile-devDependencies" : [

@@ -96,11 +96,11 @@ import typings.semanticUiApi.semanticUiApiStrings.verbose
 import typings.semanticUiApi.semanticUiApiStrings.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Api_ extends js.Object {
-  var settings: ApiSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Adds data to existing templated url and returns full url string
@@ -349,5 +349,6 @@ trait Api_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ApiSettings): JQuery = js.native
   def apply(settings: ApiSettings): JQuery = js.native
+  
+  var settings: ApiSettings = js.native
 }
-

@@ -23,7 +23,7 @@ import typings.std.IterableIterator
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
@@ -39,6 +39,7 @@ trait Instantiable
       ], 
       ^[js.Object]
     ] {
+  
   /**
     * A collection of errors. `AggregateError` is an array-like object, with numeric indices and a `.length` property.
     *  It supports all generic array methods such as `.forEach` directly.
@@ -48,14 +49,17 @@ trait Instantiable
     * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
     */
   var AggregateError: Instantiable0[typings.bluebird.mod.AggregateError] = js.native
+  
   /**
     * Signals that an operation has been aborted or cancelled. The default reason used by `.cancel`.
     */
   var CancellationError: Instantiable0[typings.bluebird.mod.CancellationError] = js.native
+  
   /**
     * returned by `Bluebird.disposer()`.
     */
   var Disposer: Instantiable0[typings.bluebird.mod.Disposer[js.Object]] = js.native
+  
   /**
     * Represents an error is an explicit promise rejection as opposed to a thrown error.
     *  For example, if an error is errbacked by a callback API promisified through undefined or undefined
@@ -65,19 +69,18 @@ trait Instantiable
     * `OperationalError`s are caught in `.error` handlers.
     */
   var OperationalError: Instantiable0[typings.bluebird.mod.OperationalError] = js.native
+  
   /**
     * Create a new promise. The passed in function will receive functions `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
     * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
     */
   var Promise: TypeofBluebird = js.native
+  
   /**
     * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
     */
   var TimeoutError: Instantiable0[typings.bluebird.mod.TimeoutError] = js.native
-  /**
-    * The version number of the library
-    */
-  var version: String = js.native
+  
   def all[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[T1]] = js.native
   // array with values
   def all[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[R]] = js.native
@@ -92,6 +95,7 @@ trait Instantiable
   // TODO enable more overloads
   // array with promises of different types
   def all[T1, T2, T3, T4, T5](values: js.Tuple5[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4], Resolvable[T5]]): Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
+  
   def allSettled[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[Inspection[T1]]] = js.native
   def allSettled[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[Inspection[R]]] = js.native
   def allSettled[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[Inspection[T1], Inspection[T2]]] = js.native
@@ -100,17 +104,20 @@ trait Instantiable
   def allSettled[T1, T2, T3, T4, T5](values: js.Tuple5[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4], Resolvable[T5]]): Bluebird[
     js.Tuple5[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4], Inspection[T5]]
   ] = js.native
+  
    // tslint:disable-line:unified-signatures
   /**
     * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
     */
   def any[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = js.native
+  
   def attempt[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = js.native
+  
   /**
     * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
     */
   def bind(thisArg: js.Any): Bluebird[Unit] = js.native
-   // tslint:disable-line no-unnecessary-generics
+  
   /**
     * Cast the given `value` to a trusted promise.
     *
@@ -118,12 +125,14 @@ trait Instantiable
     * If `value` is a thenable (Promise-like object, like those returned by jQuery's `$.ajax`), returns a trusted that: Promise assimilates the state of the thenable.
     */
   def cast[R](value: Resolvable[R]): Bluebird[R] = js.native
+  
   /**
     * Configure long stack traces, warnings, monitoring and cancellation.
     * Note that even though false is the default here, a development environment might be detected which automatically
     *  enables long stack traces and warnings.
     */
   def config(options: Cancellation): Unit = js.native
+  
   /**
     * Returns a function that can use `yield` to run asynchronous code synchronously.
     *
@@ -273,12 +282,14 @@ trait Instantiable
     /* a8 */ A8, 
     Bluebird[T]
   ] = js.native
+  
   /**
     * @deprecated
     * Create a promise with undecided fate and return a `PromiseResolver` to control it. See resolution?: Promise(#promise-resolution).
     * @see http://bluebirdjs.com/docs/deprecated-apis.html#promise-resolution
     */
   def defer[R](): Resolver[R] = js.native
+  
   def delay(ms: Double): Bluebird[Unit] = js.native
   /**
     * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
@@ -286,6 +297,7 @@ trait Instantiable
     *  promise will be fulfilled with the fulfillment value of the value promise.
     */
   def delay[R](ms: Double, value: Resolvable[R]): Bluebird[R] = js.native
+  
   /**
     * Iterate over an array, or a promise of an array,
     * which contains promises (or a mix of promises and values) with the given iterator function with the signature `(item, index, value)`
@@ -296,6 +308,7 @@ trait Instantiable
     * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
     */
   def each[R](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, _]): Bluebird[js.Array[R]] = js.native
+  
   /**
     * Filter an array, or a promise of an array,
     * which contains a promises (or a mix of promises and values) with the given `filterer` function with the signature `(item, index, arrayLength)`
@@ -312,6 +325,7 @@ trait Instantiable
     filterer: IterateFunction[R, Boolean],
     option: ConcurrencyOption
   ): Bluebird[js.Array[R]] = js.native
+  
   def fromCallback[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
@@ -325,6 +339,7 @@ trait Instantiable
     ],
     options: FromNodeOptions
   ): Bluebird[T] = js.native
+  
   /**
     * Returns a promise that is resolved by a node style callback function.
     */
@@ -341,16 +356,19 @@ trait Instantiable
     ],
     options: FromNodeOptions
   ): Bluebird[T] = js.native
+  
   /**
     * Returns a new independent copy of the Bluebird library.
     *
     * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
     */
   def getNewLibraryCopy(): TypeofBluebird = js.native
+  
   /**
     * See if `value` is a trusted Promise.
     */
   def is(value: js.Any): Boolean = js.native
+  
   // variadic array
   /** @deprecated use .all instead */
   def join[R](values: Resolvable[R]*): Bluebird[js.Array[R]] = js.native
@@ -391,6 +409,7 @@ trait Instantiable
     arg5: Resolvable[A5],
     handler: js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Resolvable[R]]
   ): Bluebird[R] = js.native
+  
   /**
     * Call this right after the library is loaded to enabled long stack traces.
     *
@@ -398,6 +417,7 @@ trait Instantiable
     * Long stack traces imply a substantial performance penalty, around 4-5x for throughput and 0.5x for latency.
     */
   def longStackTraces(): Unit = js.native
+  
   /**
     * Map an array, or a promise of an array,
     * which contains a promises (or a mix of promises and values) with the given `mapper` function with the signature `(item, index, arrayLength)`
@@ -414,6 +434,7 @@ trait Instantiable
     mapper: IterateFunction[R, U],
     options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = js.native
+  
   /**
     * Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of promises and values),
     * iterate over all the values in the Iterable into an array and iterate over the array serially, in-order.
@@ -425,6 +446,7 @@ trait Instantiable
     * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
     */
   def mapSeries[R, U](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, U]): Bluebird[js.Array[U]] = js.native
+  
   /**
     * Returns a new function that wraps the given function `fn`.
     * The new function will always return a promise that is fulfilled with the original functions return values or rejected with thrown exceptions from the original function.
@@ -440,6 +462,7 @@ trait Instantiable
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[R]] = js.native
   @JSName("method")
   def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, Resolvable[R]]): js.Function1[/* arg1 */ A1, Bluebird[R]] = js.native
+  
   /**
     * This is relevant to browser environments with no module loader.
     *
@@ -447,6 +470,7 @@ trait Instantiable
     * Returns a reference to the library namespace so you can attach it to something else.
     */
   def noConflict(): TypeofBluebird = js.native
+  
   /**
     * Add handler as the handler to call when there is a possibly unhandled rejection.
     * The default handler logs the error stack to stderr or console.error in browsers.
@@ -463,6 +487,7 @@ trait Instantiable
     */
   def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, _]): Unit = js.native
   def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ Error, /* promise */ Bluebird[_], Unit]): Unit = js.native
+  
   def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Bluebird[_]] = js.native
   def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ js.Any, Bluebird[_]] = js.native
   def promisify[T, A1](
@@ -560,6 +585,7 @@ trait Instantiable
     ],
     options: PromisifyOptions
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[T]] = js.native
+  
   /**
     * Promisifies the entire object by going through the object's properties and creating an async equivalent of each function on the object and its prototype chain.
     *
@@ -571,6 +597,7 @@ trait Instantiable
   // TODO how to model promisifyAll?
   def promisifyAll[T /* <: js.Object */](target: T): T = js.native
   def promisifyAll[T /* <: js.Object */](target: T, options: PromisifyAllOptions[T]): T = js.native
+  
   /**
     * Returns a function that will wrap the given `nodeFunction`.
     *
@@ -597,9 +624,9 @@ trait Instantiable
     ],
     options: PromisifyOptions
   ): js.Function0[Bluebird[T]] = js.native
+  
   // trusted promise for object
   def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = js.native
-   // tslint:disable-line:unified-signatures
   // object
   def props[T](`object`: ResolvableProps[T]): Bluebird[T] = js.native
   /**
@@ -615,6 +642,7 @@ trait Instantiable
     */
   // map
   def props[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
+  
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
     * fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
@@ -622,6 +650,7 @@ trait Instantiable
     * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
     */
   def race[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = js.native
+  
   /**
     * Reduce an array, or a promise of an array,
     * which contains a promises (or a mix of promises and values) with the given `reducer` function with the signature `(total, current, index, arrayLength)`
@@ -656,15 +685,18 @@ trait Instantiable
     ],
     initialValue: U
   ): Bluebird[U] = js.native
+  
   /**
     * Create a promise that is rejected with the given `reason`.
     */
   def reject(reason: js.Any): Bluebird[scala.Nothing] = js.native
+  
   /**
     * Create a promise that is resolved with the given `value`. If `value` is a thenable or promise, the returned promise will assume its state.
     */
   def resolve(): Bluebird[Unit] = js.native
   def resolve[R](value: Resolvable[R]): Bluebird[R] = js.native
+  
   /**
     * Changes how bluebird schedules calls a-synchronously.
     *
@@ -672,6 +704,7 @@ trait Instantiable
     *                  the calling of the passed in function
     */
   def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Unit]): Unit = js.native
+  
   /**
     * Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).
     * When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of
@@ -683,6 +716,7 @@ trait Instantiable
     * *The original array is not modified.*
     */
   def some[R](values: Resolvable[Iterable[Resolvable[R]]], count: Double): Bluebird[js.Array[R]] = js.native
+  
   /**
     * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
     *
@@ -692,6 +726,7 @@ trait Instantiable
     * Alias for `attempt();` for compatibility with earlier ECMAScript version.
     */
   def `try`[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = js.native
+  
   /**
     * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
     *  will be called when the promise returned by the callback passed to using has settled. The disposer is
@@ -709,5 +744,9 @@ trait Instantiable
     disposer3: Disposer[R3],
     executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
   ): Bluebird[T] = js.native
+  
+  /**
+    * The version number of the library
+    */
+  var version: String = js.native
 }
-

@@ -2,9 +2,19 @@ package typings.cordovaPluginBatteryStatus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaPluginBatteryStatusStrings {
+  
+  @scala.inline
+  def batterycritical: batterycritical = "batterycritical".asInstanceOf[batterycritical]
+  
+  @scala.inline
+  def batterylow: batterylow = "batterylow".asInstanceOf[batterylow]
+  
+  @scala.inline
+  def batterystatus: batterystatus = "batterystatus".asInstanceOf[batterystatus]
+  
   @js.native
   sealed trait batterycritical extends batteryEvent
   
@@ -13,12 +23,4 @@ object cordovaPluginBatteryStatusStrings {
   
   @js.native
   sealed trait batterystatus extends batteryEvent
-  
-  @scala.inline
-  def batterycritical: batterycritical = "batterycritical".asInstanceOf[batterycritical]
-  @scala.inline
-  def batterylow: batterylow = "batterylow".asInstanceOf[batterylow]
-  @scala.inline
-  def batterystatus: batterystatus = "batterystatus".asInstanceOf[batterystatus]
 }
-

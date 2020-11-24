@@ -5,11 +5,14 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod._Locator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/lib/by", JSImport.Namespace)
 @js.native
 object byMod extends js.Object {
+  
+  def checkedLocator(locator: Locator): By = js.native
+  
   @js.native
   class By protected () extends _Locator {
     /**
@@ -17,27 +20,15 @@ object byMod extends js.Object {
       * @param {string} value the value to search for.
       */
     def this(using: String, value: String) = this()
+    
     var using: String = js.native
+    
     var value: String = js.native
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.seleniumWebdriver.anon.ClassName
-    - typings.seleniumWebdriver.anon.Css
-    - typings.seleniumWebdriver.anon.Id
-    - typings.seleniumWebdriver.anon.Js
-    - typings.seleniumWebdriver.anon.LinkText
-    - typings.seleniumWebdriver.anon.Name
-    - typings.seleniumWebdriver.anon.PartialLinkText
-    - typings.seleniumWebdriver.anon.TagName
-    - typings.seleniumWebdriver.anon.Xpath
-  */
-  trait ByHash extends _Locator
-  
-  def checkedLocator(locator: Locator): By = js.native
   /* static members */
   @js.native
   object By extends js.Object {
+    
     /**
       * Locates elements that have a specific class name.
       *
@@ -47,6 +38,7 @@ object byMod extends js.Object {
       * @see http://www.w3.org/TR/CSS2/selector.html#class-html
       */
     def className(name: String): By = js.native
+    
     /**
       * Locates elements using a CSS selector.
       *
@@ -55,6 +47,7 @@ object byMod extends js.Object {
       * @see http://www.w3.org/TR/CSS2/selector.html
       */
     def css(selector: String): By = js.native
+    
     /**
       * Locates eleemnts by the ID attribute. This locator uses the CSS selector
       * `*[id='$ID']`, _not_ `document.getElementById`.
@@ -63,6 +56,7 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       */
     def id(id: String): By = js.native
+    
     /**
       * Locates an elements by evaluating a
       * {@linkplain WebDriver#executeScript JavaScript expression}.
@@ -77,6 +71,7 @@ object byMod extends js.Object {
     def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
     @JSName("js")
     def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+    
     /**
       * Locates link elements whose
       * {@linkplain WebElement#getText visible text} matches the given
@@ -86,6 +81,7 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       */
     def linkText(text: String): By = js.native
+    
     /**
       * Locates elements whose `name` attribute has the given value.
       *
@@ -93,6 +89,7 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       */
     def name(name: String): By = js.native
+    
     /**
       * Locates link elements whose
       * {@linkplain WebElement#getText visible text} contains the given
@@ -102,6 +99,7 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       */
     def partialLinkText(text: String): By = js.native
+    
     /**
       * Locates elements with a given tag name.
       *
@@ -110,6 +108,7 @@ object byMod extends js.Object {
       * @deprecated Use {@link By.css() By.css(tagName)} instead.
       */
     def tagName(name: String): By = js.native
+    
     /**
       * Locates elements matching a XPath selector. Care should be taken when
       * using an XPath selector with a {@link WebElement} as WebDriver
@@ -124,5 +123,16 @@ object byMod extends js.Object {
     def xpath(xpath: String): By = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.seleniumWebdriver.anon.ClassName
+    - typings.seleniumWebdriver.anon.Css
+    - typings.seleniumWebdriver.anon.Id
+    - typings.seleniumWebdriver.anon.Js
+    - typings.seleniumWebdriver.anon.LinkText
+    - typings.seleniumWebdriver.anon.Name
+    - typings.seleniumWebdriver.anon.PartialLinkText
+    - typings.seleniumWebdriver.anon.TagName
+    - typings.seleniumWebdriver.anon.Xpath
+  */
+  trait ByHash extends _Locator
 }
-

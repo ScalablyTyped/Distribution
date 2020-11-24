@@ -11,8 +11,8 @@ LaunchDarkly SDK for JavaScript - common code
 | Full name          | ldclient-js-common |
 | Keywords           | launchdarkly, analytics, client |
 | # releases         | 16 |
-| # dependents       | 1 |
-| # downloads        | 1425990 |
+| # dependents       | 0 |
+| # downloads        | 1910137 |
 | # stars            | 0 |
 
 ## Links

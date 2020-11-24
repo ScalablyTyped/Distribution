@@ -2,7 +2,7 @@ package typings.blueprintjsTable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "Grid")
 @js.native
@@ -54,15 +54,18 @@ class Grid protected ()
     ghostWidth: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("@blueprintjs/table", "Grid")
 @js.native
 object Grid extends js.Object {
+  
   var DEFAULT_BLEED: Double = js.native
+  
   var DEFAULT_GHOST_HEIGHT: Double = js.native
+  
   var DEFAULT_GHOST_WIDTH: Double = js.native
+  
   var DEFAULT_MAX_COLUMNS: Double = js.native
+  
   var DEFAULT_MAX_ROWS: Double = js.native
 }
-

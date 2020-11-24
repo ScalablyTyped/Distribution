@@ -2,11 +2,12 @@ package typings.seleniumWebdriver.loggingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/lib/logging", "LogManager")
 @js.native
 class LogManager () extends js.Object {
+  
   /**
     * Creates a new logger.
     *
@@ -16,6 +17,7 @@ class LogManager () extends js.Object {
     * @private
     */
   def createLogger_(name: String, parent: Logger): Logger = js.native
+  
   /**
     * Retrieves a named logger, creating it in the process. This function will
     * implicitly create the requested logger, and any of its parents, if they
@@ -27,4 +29,3 @@ class LogManager () extends js.Object {
   def getLogger(): Logger = js.native
   def getLogger(name: String): Logger = js.native
 }
-

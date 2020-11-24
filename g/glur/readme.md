@@ -11,8 +11,8 @@ Fast Gaussian Blur in pure JavaScript, via IIR filer. Speed does not depend on b
 | Full name          | glur |
 | Keywords           | blur, gaussian |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 2401872 |
+| # dependents       | 7 |
+| # downloads        | 4891122 |
 | # stars            | 0 |
 
 ## Links

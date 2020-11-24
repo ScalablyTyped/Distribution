@@ -11,7 +11,7 @@ import typings.std.Iterable
 import typings.std.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Highland: the high-level streams library
@@ -23,17 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HighlandStatic extends js.Object {
-  /**
-    * The end of stream marker. This is sent along the data channel of a Stream
-    * to tell consumers that the Stream has ended. See the following map code for
-    * an example of detecting the end of a Stream:
-    *
-    * @id nil
-    * @section Streams
-    * @name _.nil
-    * @api public
-    */
-  var nil: Nil = js.native
+  
   /**
     * The Stream constructor, accepts an array of values or a generator function
     * as an optional argument. This is typically the entry point to the Highland
@@ -145,6 +135,7 @@ trait HighlandStatic extends js.Object {
   def apply[R](source: ReadableStream, onFinished: OnFinished): Stream[R] = js.native
   def apply[R](source: Iterable[R]): Stream[R] = js.native
   def apply[R](source: Iterator[R, _, js.UndefOr[scala.Nothing]]): Stream[R] = js.native
+  
   def add(a: Double): js.Function1[/* b */ Double, Double] = js.native
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // OPERATORS
@@ -158,6 +149,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def add(a: Double, b: Double): Double = js.native
+  
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // FUNCTIONS
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -173,6 +165,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def compose(functions: js.Function*): js.Function = js.native
+  
   /**
     * Transforms a function with specific arity (all arguments must be
     * defined) in a way that it can be called as a chain of functions until
@@ -189,6 +182,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def curry(fn: js.Function, args: js.Any*): js.Function = js.native
+  
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // OBJECTS
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -207,6 +201,7 @@ trait HighlandStatic extends js.Object {
     */
   def extend(extensions: js.Object, target: js.Object): js.Object = js.native
   def extend(target: js.Object): js.Function1[/* extensions */ js.Object, js.Object] = js.native
+  
   /**
     * Evaluates the function `fn` with the argument positions swapped. Only
     * works with functions that accept two arguments.
@@ -220,6 +215,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def flip(fn: js.Function, args: js.Any*): js.Function = js.native
+  
   def get(prop: String): js.Function1[/* obj */ js.Object, js.Object] = js.native
   /**
     * Returns a property from an object.
@@ -232,6 +228,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def get(prop: String, obj: js.Object): String = js.native
+  
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // UTILS
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -246,6 +243,7 @@ trait HighlandStatic extends js.Object {
     */
   def isNil[R](x: R): /* is highland.Highland.Nil */ Boolean = js.native
   def isNil[R](x: Nil): /* is highland.Highland.Nil */ Boolean = js.native
+  
   /**
     * Returns true if `x` is a Highland Stream.
     *
@@ -256,8 +254,11 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def isStream(x: js.Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
+  
   def isStreamError(x: js.Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
+  
   def isStreamRedirect(x: js.Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
+  
   /**
     * Returns keys from an Object as a Stream.
     *
@@ -268,6 +269,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def keys(obj: js.Object): Stream[String] = js.native
+  
   /**
     * Logs values to the console, a simple wrapper around `console.log` that
     * it suitable for passing to other functions by reference without having to
@@ -279,6 +281,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def log(x: js.Any, args: js.Any*): Unit = js.native
+  
   /**
     * Same as `curry` but with a specific number of arguments. This can be
     * useful when functions do not explicitly define all its parameters.
@@ -295,6 +298,19 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def ncurry(n: Double, fn: js.Function, args: js.Any*): js.Function = js.native
+  
+  /**
+    * The end of stream marker. This is sent along the data channel of a Stream
+    * to tell consumers that the Stream has ended. See the following map code for
+    * an example of detecting the end of a Stream:
+    *
+    * @id nil
+    * @section Streams
+    * @name _.nil
+    * @api public
+    */
+  var nil: Nil = js.native
+  
   /**
     * Perform logical negation on a value. If `x` is truthy then returns false,
     * otherwise returns true.
@@ -309,6 +325,7 @@ trait HighlandStatic extends js.Object {
     * _.not(false)  // => true
     */
   def not[R](x: js.Any): Boolean = js.native
+  
   def pairs(obj: js.Array[_]): Stream[js.Array[_]] = js.native
   /**
     * Returns key/value pairs for an Object as a Stream. Reads properties
@@ -323,6 +340,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def pairs(obj: js.Object): Stream[js.Array[_]] = js.native
+  
   /**
     * Partially applies the function (regardless of whether it has had curry
     * called on it). This will always postpone execution until at least the next
@@ -336,6 +354,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def partial(fn: js.Function, args: js.Any*): js.Function = js.native
+  
   /**
     * The reversed version of compose. Where arguments are in the order of
     * application.
@@ -346,6 +365,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def seq(functions: js.Function*): js.Function = js.native
+  
   def set(prop: String, `val`: js.Any): js.Function1[/* obj */ js.Object, js.Object] = js.native
   /**
     * Updates a property on an object, returning the updated object.
@@ -359,6 +379,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def set(prop: String, `val`: js.Any, obj: js.Object): js.Object = js.native
+  
   /**
     * Returns values from an Object as a Stream. Reads properties
     * lazily, so if you don't read from all keys on an object, not
@@ -372,6 +393,7 @@ trait HighlandStatic extends js.Object {
     * @api public
     */
   def values(obj: js.Object): Stream[_] = js.native
+  
   /**
     * Wraps a node-style async function which accepts a callback, transforming
     * it to a function which accepts the same arguments minus the callback and
@@ -399,4 +421,3 @@ trait HighlandStatic extends js.Object {
   def wrapCallback(f: js.Function): js.Function1[/* repeated */ js.Any, Stream[_]] = js.native
   def wrapCallback(f: js.Function, mappingHint: MappingHint): js.Function1[/* repeated */ js.Any, Stream[_]] = js.native
 }
-

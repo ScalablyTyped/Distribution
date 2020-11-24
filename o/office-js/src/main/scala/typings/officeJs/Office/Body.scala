@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The body object provides methods for adding and updating the content of the message or appointment. 
@@ -18,8 +18,56 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Body extends js.Object {
+  
+  /**
+    * Appends on send the specified content to the end of the item body, after any signature.
+    *
+    * If the user is running add-ins that implement the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature using `ItemSend` in the manifest},
+    * append-on-send runs before on-send functionality.
+    *
+    * **Important**: If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
+    * the `appendOnSendAsync` call returns an error as this scenario is not supported.
+    *
+    * **Important**: To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission.
+    *
+    * **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to `null`.
+    *
+    * [Api set: Mailbox 1.9]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    *
+    * **Errors**:
+    *
+    * - `DataExceedsMaximumSize`: The `data` parameter is longer than 5,000 characters.
+    *
+    * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the message body is in plain text.
+    *
+    * @param data - The string to be added to the end of the body. The string is limited to 5,000 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    *        `coercionType`: The desired format for the data to be appended. The string in the `data` parameter will be converted to this format.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
+    */
+  def appendOnSendAsync(data: String): Unit = js.native
+  def appendOnSendAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def appendOnSendAsync(
+    data: String,
+    options: AsyncContextOptions with CoercionTypeOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def appendOnSendAsync(
+    data: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  
   def getAsync(coercionType: String): Unit = js.native
-  def getAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getAsync(
     coercionType: String,
     options: js.UndefOr[scala.Nothing],
@@ -55,7 +103,6 @@ trait Body extends js.Object {
     *                             of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
     */
   def getAsync(coercionType: CoercionType): Unit = js.native
-  def getAsync(coercionType: CoercionType, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getAsync(
     coercionType: CoercionType,
     options: js.UndefOr[scala.Nothing],
@@ -67,6 +114,7 @@ trait Body extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Gets a value that indicates whether the content is in HTML or text format.
     *
@@ -85,7 +133,6 @@ trait Body extends js.Object {
     *                  The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.
     */
   def getTypeAsync(): Unit = js.native
-  def getTypeAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]): Unit = js.native
   def getTypeAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]
@@ -95,11 +142,16 @@ trait Body extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]
   ): Unit = js.native
+  
   /**
     * Adds the specified content to the beginning of the item body.
     *
     * The `prependAsync` method inserts the specified string at the beginning of the item body.
     * After insertion, the cursor is returned to its original place, relative to the inserted content.
+    *
+    * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
+    * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to `Body.getAsync` method
+    * will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
     *
     * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
     * (see the **Examples** section for a sample).
@@ -124,7 +176,6 @@ trait Body extends js.Object {
     *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def prependAsync(data: String): Unit = js.native
-  def prependAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def prependAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
   def prependAsync(
     data: String,
@@ -136,6 +187,7 @@ trait Body extends js.Object {
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Replaces the entire body with the specified text.
     *
@@ -168,7 +220,6 @@ trait Body extends js.Object {
     *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def setAsync(data: String): Unit = js.native
-  def setAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
   def setAsync(
     data: String,
@@ -180,6 +231,7 @@ trait Body extends js.Object {
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Replaces the selection in the body with the specified text.
     *
@@ -212,7 +264,6 @@ trait Body extends js.Object {
     *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
-  def setSelectedDataAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setSelectedDataAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
   def setSelectedDataAsync(
     data: String,
@@ -225,4 +276,3 @@ trait Body extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

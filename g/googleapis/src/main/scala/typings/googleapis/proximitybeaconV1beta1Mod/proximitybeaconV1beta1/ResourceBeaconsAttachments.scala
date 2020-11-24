@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Beacons$Attachments")
 @js.native
 class ResourceBeaconsAttachments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * proximitybeacon.beacons.attachments.batchDelete
     * @desc Deletes multiple attachments on a given beacon. This operation is
@@ -54,6 +54,9 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeleteAttachmentsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * proximitybeacon.beacons.attachments.create
     * @desc Associates the given data with the specified beacon. Attachment
@@ -97,6 +100,7 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBeaconAttachment]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.attachments.delete
     * @desc Deletes the specified attachment for the given beacon. Each
@@ -133,6 +137,7 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.beacons.attachments.list
     * @desc Returns the attachments for the specified beacon that match the
@@ -175,4 +180,3 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListBeaconAttachmentsResponse]
   ): Unit = js.native
 }
-

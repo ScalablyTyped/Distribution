@@ -2,11 +2,12 @@ package typings.awsSdkClientDynamodbNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/types/UpdateItemExceptionsUnion", JSImport.Namespace)
 @js.native
 object updateItemExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientDynamodbNode.typesConditionalCheckFailedExceptionMod.ConditionalCheckFailedException
     - typings.awsSdkClientDynamodbNode.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException
@@ -15,6 +16,4 @@ object updateItemExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError
   */
   trait UpdateItemExceptionsUnion extends js.Object
-  
 }
-

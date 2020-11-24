@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "timm" : "1.6.2"
+      "timm" : "1.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "timm" : "1.6.2"
+      "timm" : "1.7.1"
     }
   ],
   "compile-devDependencies" : [

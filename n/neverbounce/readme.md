@@ -10,9 +10,9 @@ An API wrapper for the NeverBounce API
 | ------------------ | :-------------: |
 | Full name          | neverbounce |
 | Keywords           | email, email verification, email validation, email cleaning, verification, validation, cleaning |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 122389 |
+| # downloads        | 159044 |
 | # stars            | 1 |
 
 ## Links

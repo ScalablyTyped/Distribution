@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "to-fast-properties" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "to-fast-properties" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

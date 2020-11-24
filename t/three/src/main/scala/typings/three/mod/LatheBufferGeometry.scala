@@ -2,12 +2,18 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "LatheBufferGeometry")
 @js.native
 class LatheBufferGeometry protected ()
   extends typings.three.geometriesMod.LatheBufferGeometry {
+  /**
+  	 * @param points
+  	 * @param [segments=12]
+  	 * @param [phiStart=0]
+  	 * @param [phiLength=Math.PI * 2]
+  	 */
   def this(points: js.Array[typings.three.vector2Mod.Vector2]) = this()
   def this(points: js.Array[typings.three.vector2Mod.Vector2], segments: Double) = this()
   def this(
@@ -41,4 +47,3 @@ class LatheBufferGeometry protected ()
     phiLength: Double
   ) = this()
 }
-

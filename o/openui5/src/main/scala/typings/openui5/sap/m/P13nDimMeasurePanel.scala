@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nDimMeasurePanel extends P13nPanel {
+  
   /**
     * Adds some availableChartType to the aggregation <code>availableChartTypes</code>.
     * @since 1.34.0
@@ -14,6 +15,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addAvailableChartType(oAvailableChartType: Item): P13nDimMeasurePanel = js.native
+  
   /**
     * Adds some dimMeasureItem to the aggregation <code>dimMeasureItems</code>.
     * @since 1.34.0
@@ -21,6 +23,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addDimMeasureItem(oDimMeasureItem: P13nDimMeasureItem): P13nDimMeasurePanel = js.native
+  
   /**
     * Binds aggregation <code>dimMeasureItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -30,23 +33,27 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindDimMeasureItems(oBindingInfo: js.Any): P13nDimMeasurePanel = js.native
+  
   /**
     * Destroys all the availableChartTypes in the aggregation <code>availableChartTypes</code>.
     * @since 1.34.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyAvailableChartTypes(): P13nDimMeasurePanel = js.native
+  
   /**
     * Destroys all the dimMeasureItems in the aggregation <code>dimMeasureItems</code>.
     * @since 1.34.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyDimMeasureItems(): P13nDimMeasurePanel = js.native
+  
   /**
     * Gets content of aggregation <code>availableChartTypes</code>.Specifies available chart types.
     * @since 1.34.0
     */
   def getAvailableChartTypes(): js.Array[Item] = js.native
+  
   /**
     * Gets current value of property <code>chartTypeKey</code>.Specifies a chart type key.Default value is
     * <code></code>.
@@ -54,11 +61,13 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Value of property <code>chartTypeKey</code>
     */
   def getChartTypeKey(): String = js.native
+  
   /**
     * Gets content of aggregation <code>dimMeasureItems</code>.List of columns that has been changed.
     * @since 1.34.0
     */
   def getDimMeasureItems(): js.Array[P13nDimMeasureItem] = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Item</code> in the aggregation
     * <code>availableChartTypes</code>.and returns its index if found or -1 otherwise.
@@ -67,6 +76,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfAvailableChartType(oAvailableChartType: Item): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.P13nDimMeasureItem</code> in the aggregation
     * <code>dimMeasureItems</code>.and returns its index if found or -1 otherwise.
@@ -75,6 +85,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfDimMeasureItem(oDimMeasureItem: P13nDimMeasureItem): Double = js.native
+  
   /**
     * Inserts a availableChartType into the aggregation <code>availableChartTypes</code>.
     * @since 1.34.0
@@ -86,6 +97,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertAvailableChartType(oAvailableChartType: Item, iIndex: Double): P13nDimMeasurePanel = js.native
+  
   /**
     * Inserts a dimMeasureItem into the aggregation <code>dimMeasureItems</code>.
     * @since 1.34.0
@@ -97,6 +109,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertDimMeasureItem(oDimMeasureItem: P13nDimMeasureItem, iIndex: Double): P13nDimMeasurePanel = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>availableChartTypes</code>.Additionally, it
     * unregisters them from the hosting UIArea.
@@ -104,6 +117,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAvailableChartTypes(): js.Array[Item] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>dimMeasureItems</code>.Additionally, it
     * unregisters them from the hosting UIArea.
@@ -111,6 +125,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllDimMeasureItems(): js.Array[P13nDimMeasureItem] = js.native
+  
   def removeAvailableChartType(vAvailableChartType: String): Item = js.native
   /**
     * Removes a availableChartType from the aggregation <code>availableChartTypes</code>.
@@ -120,6 +135,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     */
   def removeAvailableChartType(vAvailableChartType: Double): Item = js.native
   def removeAvailableChartType(vAvailableChartType: Item): Item = js.native
+  
   def removeDimMeasureItem(vDimMeasureItem: String): P13nDimMeasureItem = js.native
   /**
     * Removes a dimMeasureItem from the aggregation <code>dimMeasureItems</code>.
@@ -129,6 +145,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     */
   def removeDimMeasureItem(vDimMeasureItem: Double): P13nDimMeasureItem = js.native
   def removeDimMeasureItem(vDimMeasureItem: P13nDimMeasureItem): P13nDimMeasureItem = js.native
+  
   /**
     * Sets a new value for property <code>chartTypeKey</code>.Specifies a chart type key.When called with
     * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -138,6 +155,7 @@ trait P13nDimMeasurePanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setChartTypeKey(sChartTypeKey: String): P13nDimMeasurePanel = js.native
+  
   /**
     * Unbinds aggregation <code>dimMeasureItems</code> from model data.
     * @since 1.34.0
@@ -145,4 +163,3 @@ trait P13nDimMeasurePanel extends P13nPanel {
     */
   def unbindDimMeasureItems(): P13nDimMeasurePanel = js.native
 }
-

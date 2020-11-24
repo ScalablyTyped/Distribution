@@ -6,16 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps")
 @js.native
 class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var perfMetricsSummary: ResourceProjectsHistoriesExecutionsStepsPerfmetricssummary = js.native
-  var perfSampleSeries: ResourceProjectsHistoriesExecutionsStepsPerfsampleseries = js.native
-  var thumbnails: ResourceProjectsHistoriesExecutionsStepsThumbnails = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.create
     * @desc Creates a Step.  The returned Step will have the id set.  May
@@ -56,6 +55,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStep]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.get
     * @desc Gets a Step.  May return any of the following canonical error
@@ -93,6 +93,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStep]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.getPerfMetricsSummary
     * @desc Retrieves a PerfMetricsSummary.  May return any of the following
@@ -133,6 +134,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerfMetricsSummary]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.list
     * @desc Lists Steps for a given Execution.  The steps are sorted by
@@ -175,6 +177,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListStepsResponse]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.patch
     * @desc Updates an existing Step with the supplied partial entity.  May
@@ -217,6 +220,11 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStep]
   ): Unit = js.native
+  
+  var perfMetricsSummary: ResourceProjectsHistoriesExecutionsStepsPerfmetricssummary = js.native
+  
+  var perfSampleSeries: ResourceProjectsHistoriesExecutionsStepsPerfsampleseries = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.publishXunitXmlFiles
     * @desc Publish xml files to an existing Step.  May return any of the
@@ -258,5 +266,6 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStep]
   ): Unit = js.native
+  
+  var thumbnails: ResourceProjectsHistoriesExecutionsStepsThumbnails = js.native
 }
-

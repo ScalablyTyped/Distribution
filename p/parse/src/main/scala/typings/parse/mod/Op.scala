@@ -2,7 +2,7 @@ package typings.parse.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Parse.Op is an atomic operation that can be applied to a field in a
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @JSImport("parse", "Op")
 @js.native
 object Op extends js.Object
-

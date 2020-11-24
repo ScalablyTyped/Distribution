@@ -5,11 +5,12 @@ import typings.expressValidator.baseMod.StandardValidator
 import typings.expressValidator.validationChainMod.ValidationChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-validator/src/context-items", JSImport.Namespace)
 @js.native
 object contextItemsMod extends js.Object {
+  
   @js.native
   class ChainCondition protected ()
     extends typings.expressValidator.chainConditionMod.ChainCondition {
@@ -34,6 +35,4 @@ object contextItemsMod extends js.Object {
     def this(validator: StandardValidator, negated: Boolean) = this()
     def this(validator: StandardValidator, negated: Boolean, options: js.Array[_]) = this()
   }
-  
 }
-

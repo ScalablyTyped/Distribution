@@ -6,10 +6,11 @@ import typings.node.dnsMod.ResolveOptions
 import typings.node.dnsMod.ResolveWithTtlOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofresolve6 extends js.Object {
+  
   def apply(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
@@ -28,8 +29,8 @@ trait Typeofresolve6 extends js.Object {
     options: ResolveWithTtlOptions,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = js.native
+  
   def __promisify__(hostname: String): js.Promise[js.Array[String]] = js.native
   def __promisify__(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
   def __promisify__(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
 }
-

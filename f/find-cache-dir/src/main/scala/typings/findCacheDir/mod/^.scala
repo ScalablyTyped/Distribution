@@ -2,11 +2,12 @@ package typings.findCacheDir.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("find-cache-dir", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(options: Options): js.UndefOr[String] = js.native
   /**
     * Finds the cache directory using the supplied options.
@@ -16,4 +17,3 @@ object ^ extends js.Object {
     */
   def apply(options: OptionsWithThunk): js.UndefOr[js.Function1[/* repeated */ String, String]] = js.native
 }
-

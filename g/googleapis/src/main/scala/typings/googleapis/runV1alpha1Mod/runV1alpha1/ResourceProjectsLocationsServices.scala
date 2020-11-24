@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Projects$Locations$Services")
 @js.native
 class ResourceProjectsLocationsServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.projects.locations.services.create
     * @desc Rpc to create a service.
@@ -45,6 +47,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.delete
     * @desc Rpc to delete a service. This will cause the Service to stop
@@ -79,6 +82,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.get
     * @desc Rpc to get information about a service.
@@ -107,6 +111,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.getIamPolicy
     * @desc Get the IAM Access Control policy currently in effect for the given
@@ -139,6 +144,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.list
     * @desc Rpc to list services.
@@ -177,6 +183,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.replaceService
     * @desc Rpc to replace a service.  Only the spec and metadata labels and
@@ -213,6 +220,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.setIamPolicy
     * @desc Sets the IAM Access control policy for the specified Service.
@@ -246,6 +254,7 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.services.testIamPermissions
     * @desc Returns permissions that a caller has on the specified Project.
@@ -280,4 +289,3 @@ class ResourceProjectsLocationsServices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

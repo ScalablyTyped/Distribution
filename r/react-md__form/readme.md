@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__form
 
-Typings are for version 2.1.2
+Typings are for version 2.4.3
 
 ## Library description:
 This package is for creating all the different form input types.
@@ -10,9 +10,9 @@ This package is for creating all the different form input types.
 | ------------------ | :-------------: |
 | Full name          | @react-md/form |
 | Keywords           | react-md, material design, react, form, input, text field, textarea, checkbox, radio, select, accessible, component, components |
-| # releases         | 22 |
+| # releases         | 31 |
 | # dependents       | 4 |
-| # downloads        | 4056 |
+| # downloads        | 7701 |
 | # stars            | 0 |
 
 ## Links

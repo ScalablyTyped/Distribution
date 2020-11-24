@@ -6,7 +6,7 @@ import typings.heremaps.H.map.ViewPort.Padding
 import typings.heremaps.H.map.layer.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This type defines options which can be used to initialize the map.
@@ -28,93 +28,135 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Options extends js.Object {
+  
   var autoColor: js.UndefOr[Boolean] = js.native
+  
   var bounds: js.UndefOr[Rect] = js.native
+  
   var center: js.UndefOr[IPoint] = js.native
+  
   var engineType: js.UndefOr[EngineType] = js.native
+  
   var fixedCenter: js.UndefOr[Boolean] = js.native
+  
   var imprint: js.UndefOr[typings.heremaps.H.map.Imprint.Options] = js.native
+  
   var layers: js.UndefOr[js.Array[Layer]] = js.native
+  
   var margin: js.UndefOr[Double] = js.native
+  
   var noWrap: js.UndefOr[Boolean] = js.native
+  
   var padding: js.UndefOr[Padding] = js.native
+  
   var pixelRatio: js.UndefOr[Double] = js.native
+  
   var renderBaseBackground: js.UndefOr[BackgroundRange] = js.native
+  
   var zoom: js.UndefOr[Double] = js.native
 }
-
 object Options {
+  
   @scala.inline
   def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
+  
   @scala.inline
   implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAutoColor(value: Boolean): Self = this.set("autoColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoColor: Self = this.set("autoColor", js.undefined)
+    
     @scala.inline
     def setBounds(value: Rect): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBounds: Self = this.set("bounds", js.undefined)
+    
     @scala.inline
     def setCenter(value: IPoint): Self = this.set("center", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCenter: Self = this.set("center", js.undefined)
+    
     @scala.inline
     def setEngineType(value: EngineType): Self = this.set("engineType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEngineType: Self = this.set("engineType", js.undefined)
+    
     @scala.inline
     def setFixedCenter(value: Boolean): Self = this.set("fixedCenter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFixedCenter: Self = this.set("fixedCenter", js.undefined)
+    
     @scala.inline
     def setImprint(value: typings.heremaps.H.map.Imprint.Options): Self = this.set("imprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteImprint: Self = this.set("imprint", js.undefined)
+    
     @scala.inline
     def setLayersVarargs(value: Layer*): Self = this.set("layers", js.Array(value :_*))
+    
     @scala.inline
     def setLayers(value: js.Array[Layer]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLayers: Self = this.set("layers", js.undefined)
+    
     @scala.inline
     def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMargin: Self = this.set("margin", js.undefined)
+    
     @scala.inline
     def setNoWrap(value: Boolean): Self = this.set("noWrap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNoWrap: Self = this.set("noWrap", js.undefined)
+    
     @scala.inline
     def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePadding: Self = this.set("padding", js.undefined)
+    
     @scala.inline
     def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePixelRatio: Self = this.set("pixelRatio", js.undefined)
+    
     @scala.inline
     def setRenderBaseBackground(value: BackgroundRange): Self = this.set("renderBaseBackground", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRenderBaseBackground: Self = this.set("renderBaseBackground", js.undefined)
+    
     @scala.inline
     def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZoom: Self = this.set("zoom", js.undefined)
   }
-  
 }
-

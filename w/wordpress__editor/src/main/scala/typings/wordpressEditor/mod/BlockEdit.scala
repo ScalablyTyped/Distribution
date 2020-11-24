@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.blockEditMod.BlockEdit.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor", "BlockEdit")
 @js.native
 object BlockEdit extends TopLevel[ComponentType[Props]]
-

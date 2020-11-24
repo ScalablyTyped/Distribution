@@ -2,11 +2,12 @@ package typings.esriLeaflet.mod.leafletAugmentingMod.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "esri.task")
 @js.native
 object task extends js.Object {
+  
   def apply(options: Service): Task_ = js.native
   /**
     * `L.esri.Task` is a generic class that provides the foundation for calling operations on ArcGIS Online and
@@ -14,4 +15,3 @@ object task extends js.Object {
     */
   def apply(options: TaskOptions): Task_ = js.native
 }
-

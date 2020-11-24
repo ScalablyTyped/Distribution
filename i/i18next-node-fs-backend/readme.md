@@ -10,9 +10,9 @@ node.js backend layer for i18next using fs module to load resources from filesys
 | ------------------ | :-------------: |
 | Full name          | i18next-node-fs-backend |
 | Keywords           | i18next, i18next-backend |
-| # releases         | 9 |
-| # dependents       | 69 |
-| # downloads        | 2264519 |
+| # releases         | 4 |
+| # dependents       | 79 |
+| # downloads        | 3427971 |
 | # stars            | 3 |
 
 ## Links

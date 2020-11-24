@@ -5,7 +5,7 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/RenderPipeline/index", "PostProcessRenderEffect")
 @js.native
@@ -31,4 +31,3 @@ class PostProcessRenderEffect protected ()
     singleInstance: Boolean
   ) = this()
 }
-

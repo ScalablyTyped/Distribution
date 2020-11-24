@@ -2,17 +2,19 @@ package typings.postcssValueParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A wrapper around a parsed CSS value that allows for inspecting and walking nodes
   */
 @js.native
 trait ParsedValue extends js.Object {
+  
   /**
     * The series of parsed nodes
     */
   var nodes: js.Array[Node] = js.native
+  
   /**
     * Walk all parsed nodes, applying a callback
     *
@@ -22,4 +24,3 @@ trait ParsedValue extends js.Object {
   def walk(callback: WalkCallback): this.type = js.native
   def walk(callback: WalkCallback, bubble: Boolean): this.type = js.native
 }
-

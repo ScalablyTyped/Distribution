@@ -5,12 +5,13 @@ import typings.firebaseFunctions.mod.FirebaseApp
 import typings.firebaseFunctionsTypes.mod.FirebaseFunctions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
-  var Functions: Instantiable0[FirebaseFunctions] = js.native
+  
   def apply(): FirebaseFunctions = js.native
   def apply(app: FirebaseApp): FirebaseFunctions = js.native
+  
+  var Functions: Instantiable0[FirebaseFunctions] = js.native
 }
-

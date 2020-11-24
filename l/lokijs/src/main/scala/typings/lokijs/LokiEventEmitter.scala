@@ -3,7 +3,7 @@ package typings.lokijs
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LokiEventEmitter is a minimalist version of EventEmitter. It enables any
@@ -14,6 +14,16 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LokiEventEmitter extends js.Object {
+  
+  /**
+    * Alias of LokiEventEmitter.prototype.on
+    * addListener(eventName, listener) - adds a listener to the queue of callbacks associated to an event
+    * @param eventName - the name(s) of the event(s) to listen to
+    * @param listener - callback function of listener to attach
+    * @returns the event listener added
+    */
+  def addListener[F /* <: js.Function1[/* repeated */ js.Any, _] */](eventName: String, listener: F): F = js.native
+  def addListener[F /* <: js.Function1[/* repeated */ js.Any, _] */](eventName: js.Array[String], listener: F): F = js.native
   /**
     * Alias of LokiEventEmitter.prototype.on
     * addListener(eventName, listener) - adds a listener to the queue of callbacks associated to an event
@@ -27,25 +37,14 @@ trait LokiEventEmitter extends js.Object {
     /* listener */ js.Function1[/* repeated */ js.Any, _], 
     js.Function1[/* repeated */ _, _]
   ] = js.native
+  
   /**
     * @prop asyncListeners - boolean determines whether or not the callbacks associated with each event
     * should happen in an async fashion or not
     * Default is false, which means events are synchronous
     */
   var asyncListeners: Boolean = js.native
-  /**
-    * @prop events - a hashmap, with each property being an array of callbacks
-    */
-  var events: StringDictionary[js.Array[js.Function1[/* repeated */ _, _]]] = js.native
-  /**
-    * Alias of LokiEventEmitter.prototype.on
-    * addListener(eventName, listener) - adds a listener to the queue of callbacks associated to an event
-    * @param eventName - the name(s) of the event(s) to listen to
-    * @param listener - callback function of listener to attach
-    * @returns the event listener added
-    */
-  def addListener[F /* <: js.Function1[/* repeated */ js.Any, _] */](eventName: String, listener: F): F = js.native
-  def addListener[F /* <: js.Function1[/* repeated */ js.Any, _] */](eventName: js.Array[String], listener: F): F = js.native
+  
   /**
     * emit(eventName, data) - emits a particular event
     * with the option of passing optional parameters which are going to be processed by the callback
@@ -57,6 +56,12 @@ trait LokiEventEmitter extends js.Object {
   def emit(eventName: String, data: js.UndefOr[scala.Nothing], arg: js.Any): Unit = js.native
   def emit(eventName: String, data: js.Any): Unit = js.native
   def emit(eventName: String, data: js.Any, arg: js.Any): Unit = js.native
+  
+  /**
+    * @prop events - a hashmap, with each property being an array of callbacks
+    */
+  var events: StringDictionary[js.Array[js.Function1[/* repeated */ _, _]]] = js.native
+  
   /**
     * on(eventName, listener) - adds a listener to the queue of callbacks associated to an event
     * @param eventName - the name(s) of the event(s) to listen to
@@ -65,6 +70,7 @@ trait LokiEventEmitter extends js.Object {
     */
   def on[F /* <: js.Function1[/* repeated */ js.Any, _] */](eventName: String, listener: F): F = js.native
   def on[F /* <: js.Function1[/* repeated */ js.Any, _] */](eventName: js.Array[String], listener: F): F = js.native
+  
   /**
     * removeListener() - removes the listener at position 'index' from the event 'eventName'
     * @param eventName - the name(s) of the event(s) which the listener is attached to
@@ -73,4 +79,3 @@ trait LokiEventEmitter extends js.Object {
   def removeListener(eventName: String, listener: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   def removeListener(eventName: js.Array[String], listener: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }
-

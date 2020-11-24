@@ -51,11 +51,11 @@ import typings.semanticUiSidebar.semanticUiSidebarStrings.useLegacy
 import typings.semanticUiSidebar.semanticUiSidebarStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sidebar_ extends js.Object {
-  var settings: SidebarSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Adds stylesheet to page head to trigger sidebar animations
@@ -164,5 +164,6 @@ trait Sidebar_ extends js.Object {
     */
   def apply(behavior: toggle): JQuery = js.native
   def apply(settings: SidebarSettings): JQuery = js.native
+  
+  var settings: SidebarSettings = js.native
 }
-

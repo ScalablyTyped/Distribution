@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Searchanalytics")
 @js.native
 class ResourceSearchanalytics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * webmasters.searchanalytics.query
     * @desc Query your data with filters and parameters that you define.
@@ -51,4 +53,3 @@ class ResourceSearchanalytics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchAnalyticsQueryResponse]
   ): Unit = js.native
 }
-

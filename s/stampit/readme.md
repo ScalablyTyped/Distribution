@@ -10,9 +10,9 @@ Create objects from reusable, composable behaviors.
 | ------------------ | :-------------: |
 | Full name          | stampit |
 | Keywords           | object, prototype, object oriented, browser, inheritance, oop, node, factory, class, stamp |
-| # releases         | 7 |
-| # dependents       | 112 |
-| # downloads        | 1285414 |
+| # releases         | 3 |
+| # dependents       | 111 |
+| # downloads        | 1328643 |
 | # stars            | 23 |
 
 ## Links

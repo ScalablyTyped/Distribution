@@ -2,10 +2,11 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISimplifier extends js.Object {
+  
   /**
     * Simplification of a given mesh according to the given settings.
     * Since this requires computation, it is assumed that the function runs async.
@@ -23,4 +24,3 @@ trait ISimplifier extends js.Object {
     errorCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

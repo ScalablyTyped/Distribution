@@ -11,10 +11,11 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChannelWrapper extends EventEmitter {
+  
   /**
     * @see amqplib
     * @param message
@@ -22,6 +23,7 @@ trait ChannelWrapper extends EventEmitter {
     */
   def ack(message: Message): Unit = js.native
   def ack(message: Message, allUpTo: Boolean): Unit = js.native
+  
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -31,6 +33,7 @@ trait ChannelWrapper extends EventEmitter {
   ): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Name, Unit]): this.type = js.native
+  
   /**
     * Adds a new 'setup handler'. setup(channel, [cb]) is a function to call when a new underlying channel is created -
     * handy for asserting exchanges and queues exists, and whatnot. The channel object here is a ConfirmChannel from amqplib.
@@ -42,10 +45,12 @@ trait ChannelWrapper extends EventEmitter {
     * @param func
     */
   def addSetup(func: SetupFunc): js.Promise[Unit] = js.native
+  
   /**
     * Close a channel, clean up resources associated with it.
     */
   def close(): js.Promise[Unit] = js.native
+  
   /**
     * @see amqplib
     * @param message
@@ -53,8 +58,10 @@ trait ChannelWrapper extends EventEmitter {
     * @param requeue
     */
   def nack(message: Message): Unit = js.native
+  def nack(message: Message, allUpTo: js.UndefOr[scala.Nothing], requeue: Boolean): Unit = js.native
   def nack(message: Message, allUpTo: Boolean): Unit = js.native
   def nack(message: Message, allUpTo: Boolean, requeue: Boolean): Unit = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -64,6 +71,7 @@ trait ChannelWrapper extends EventEmitter {
   ): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Name, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -73,6 +81,7 @@ trait ChannelWrapper extends EventEmitter {
   ): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Name, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -82,6 +91,7 @@ trait ChannelWrapper extends EventEmitter {
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Name, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -91,7 +101,15 @@ trait ChannelWrapper extends EventEmitter {
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Name, Unit]): this.type = js.native
+  
   def publish(exchange: String, routingKey: String, content: js.Object): js.Promise[Unit] = js.native
+  def publish(
+    exchange: String,
+    routingKey: String,
+    content: js.Object,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+  ): js.Promise[Unit] = js.native
   def publish(exchange: String, routingKey: String, content: js.Object, options: Publish): js.Promise[Unit] = js.native
   def publish(
     exchange: String,
@@ -109,6 +127,13 @@ trait ChannelWrapper extends EventEmitter {
     * @param callback
     */
   def publish(exchange: String, routingKey: String, content: Buffer): js.Promise[Unit] = js.native
+  def publish(
+    exchange: String,
+    routingKey: String,
+    content: Buffer,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+  ): js.Promise[Unit] = js.native
   def publish(exchange: String, routingKey: String, content: Buffer, options: Publish): js.Promise[Unit] = js.native
   def publish(
     exchange: String,
@@ -117,10 +142,12 @@ trait ChannelWrapper extends EventEmitter {
     options: Publish,
     callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
   ): js.Promise[Unit] = js.native
+  
   /**
     * Returns a count of messages currently waiting to be sent to the underlying channel.
     */
   def queueLength(): Double = js.native
+  
   /**
     * Remove a setup function added with `addSetup`.  If there is currently a
     * connection, `teardown(channel, [cb])` will be run immediately, and the
@@ -130,7 +157,14 @@ trait ChannelWrapper extends EventEmitter {
     */
   def removeSetup(func: SetupFunc): js.Promise[Unit] = js.native
   def removeSetup(func: SetupFunc, tearDown: SetupFunc): js.Promise[Unit] = js.native
+  
   def sendToQueue(queue: String, content: js.Object): js.Promise[Unit] = js.native
+  def sendToQueue(
+    queue: String,
+    content: js.Object,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+  ): js.Promise[Unit] = js.native
   def sendToQueue(queue: String, content: js.Object, options: Publish): js.Promise[Unit] = js.native
   def sendToQueue(
     queue: String,
@@ -146,6 +180,12 @@ trait ChannelWrapper extends EventEmitter {
     * @param callback
     */
   def sendToQueue(queue: String, content: Buffer): js.Promise[Unit] = js.native
+  def sendToQueue(
+    queue: String,
+    content: Buffer,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
+  ): js.Promise[Unit] = js.native
   def sendToQueue(queue: String, content: Buffer, options: Publish): js.Promise[Unit] = js.native
   def sendToQueue(
     queue: String,
@@ -153,9 +193,9 @@ trait ChannelWrapper extends EventEmitter {
     options: Publish,
     callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
   ): js.Promise[Unit] = js.native
+  
   /**
     * Returns a Promise which resolves when this channel next connects.
     */
   def waitForConnect(): js.Promise[Unit] = js.native
 }
-

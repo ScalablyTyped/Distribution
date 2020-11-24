@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.ValidatorOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofValidator
   extends Instantiable1[/* element */ Element, Validator]
      with Instantiable2[/* element */ Element, /* options */ ValidatorOptions, Validator] {
-  var fn: Validator = js.native
+  
   def extend(proto: js.Object): Validator = js.native
+  
+  var fn: Validator = js.native
 }
-

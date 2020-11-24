@@ -11,8 +11,8 @@ EventEmitter to AsyncStreamEmitter converter.
 | Full name          | eetase |
 | Keywords           | event, emitter, async, stream, converter |
 | # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 5397 |
+| # dependents       | 8 |
+| # downloads        | 9744 |
 | # stars            | 0 |
 
 ## Links

@@ -10,15 +10,15 @@ Globalize.js runtime compiler for your formatters and parsers
 | ------------------ | :-------------: |
 | Full name          | globalize-compiler |
 | Keywords           | globalize |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 69933 |
+| # downloads        | 113541 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/jquery-support/globalize-compiler)
-- [Bugs](https://github.com/jquery-support/globalize-compiler/issues)
-- [Repository](https://github.com/jquery-support/globalize-compiler)
+- [Homepage](https://github.com/globalizejs/globalize-compiler)
+- [Bugs](https://github.com/globalizejs/globalize-compiler/issues)
+- [Repository](https://github.com/globalizejs/globalize-compiler)
 - [Npm](https://www.npmjs.com/package/globalize-compiler)
     
 

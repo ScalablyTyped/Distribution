@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.lang.XUnoTunnel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link XMLElementWrapper} */
 @js.native
 trait XMLElementWrapper
   extends XUnoTunnel
      with XInitialization
-
 object XMLElementWrapper {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -27,4 +27,3 @@ object XMLElementWrapper {
     __obj.asInstanceOf[XMLElementWrapper]
   }
 }
-

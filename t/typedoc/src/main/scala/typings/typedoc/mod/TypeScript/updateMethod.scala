@@ -12,11 +12,13 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateMethod")
 @js.native
 object updateMethod extends js.Object {
+  
+  /** @deprecated Use `factory.updateMethodDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: MethodDeclaration,
     decorators: js.UndefOr[js.Array[Decorator]],
@@ -30,4 +32,3 @@ object updateMethod extends js.Object {
     body: js.UndefOr[Block]
   ): MethodDeclaration = js.native
 }
-

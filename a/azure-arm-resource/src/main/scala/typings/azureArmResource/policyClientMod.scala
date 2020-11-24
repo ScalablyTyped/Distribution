@@ -9,11 +9,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/policy/policyClient", JSImport.Namespace)
 @js.native
 object policyClientMod extends js.Object {
+  
   @js.native
   class PolicyClient protected () extends AzureServiceClient {
     /**
@@ -57,16 +58,39 @@ object policyClientMod extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    
     var acceptLanguage: String = js.native
+    
     var apiVersion: String = js.native
+    
     var credentials: ServiceClientCredentials = js.native
+    
     var generateClientRequestId: Boolean = js.native
+    
     var longRunningOperationRetryTimeout: Double = js.native
+    
     // Operation groups
     var policyAssignments: PolicyAssignments = js.native
+    
     var policyDefinitions: PolicyDefinitions = js.native
+    
     var policySetDefinitions: PolicySetDefinitions = js.native
+    
     var subscriptionId: String = js.native
+  }
+  
+  @js.native
+  object PolicyModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.policyModelsMod.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
   }
   
   @js.native
@@ -113,20 +137,4 @@ object policyClientMod extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object PolicyModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.policyModelsMod.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

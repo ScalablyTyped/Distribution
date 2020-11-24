@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star.bridge
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object oleautomation {
+  
   /**
     * registers UNO objects as COM objects.
     *
@@ -21,6 +22,7 @@ package object oleautomation {
     * deregistered if the implementation, which makes use of this service, is being released.
     */
   type ApplicationRegistration = typings.activexLibreoffice.com_.sun.star.uno.XInterface
+  
   /**
     * maps UNO types to oleautomation types and vice versa.
     *
@@ -38,6 +40,7 @@ package object oleautomation {
     * registering OLE objects and class factories.
     */
   type BridgeSupplier = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeSupplier2
+  
   /**
     * makes it possible to create COM objects as UNO objects.
     *
@@ -49,6 +52,7 @@ package object oleautomation {
     * this time they are ignored.
     */
   type Factory = typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
+  
   /**
     * a tagging interface for UNO objects which represent Automation objects.
     *

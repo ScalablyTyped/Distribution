@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.WiFi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WiFiConnectionStatus extends js.Object
-
 /** Status of the connection attempt. */
 @JSGlobal("Windows.Devices.WiFi.WiFiConnectionStatus")
 @js.native
 object WiFiConnectionStatus extends js.Object {
+  
   /** Connection failed because access to the network has been revoked. */
   @js.native
   sealed trait accessRevoked extends WiFiConnectionStatus
@@ -38,6 +38,4 @@ object WiFiConnectionStatus extends js.Object {
   /** Connection failed because the authentication protocol is not supported. */
   @js.native
   sealed trait unsupportedAuthenticationProtocol extends WiFiConnectionStatus
-  
 }
-

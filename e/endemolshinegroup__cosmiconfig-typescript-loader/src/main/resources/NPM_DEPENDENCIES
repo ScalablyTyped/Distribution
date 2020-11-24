@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@endemolshinegroup/cosmiconfig-typescript-loader" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@endemolshinegroup/cosmiconfig-typescript-loader" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.ComponentConfig
 import typings.openui5.sap.ui.core.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.component")
 @js.native
 object component extends js.Object {
+  
   /**
     * Creates a new instance of a <code>Component</code> or returns the instanceof an existing
     * <code>Component</code>.If you want to look up an existing <code>Component</code> you can callthis
@@ -26,4 +27,3 @@ object component extends js.Object {
   def apply(vConfig: js.Any): Component | JQueryPromise[_] = js.native
   def apply(vConfig: ComponentConfig): JQueryPromise[Component] | Component = js.native
 }
-

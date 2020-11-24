@@ -6,46 +6,118 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.mathVectorMod.Vector4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait BackUVs extends js.Object {
-  var backUVs: js.UndefOr[Vector4] = js.undefined
-  var closeArray: js.UndefOr[Boolean] = js.undefined
-  var closePath: js.UndefOr[Boolean] = js.undefined
-  var colors: js.UndefOr[js.Array[Color4]] = js.undefined
-  var frontUVs: js.UndefOr[Vector4] = js.undefined
-  var invertUV: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var pathArray: js.Array[js.Array[Vector3]]
-  var sideOrientation: js.UndefOr[Double] = js.undefined
-  var uvs: js.UndefOr[js.Array[Vector2]] = js.undefined
+  
+  var backUVs: js.UndefOr[Vector4] = js.native
+  
+  var closeArray: js.UndefOr[Boolean] = js.native
+  
+  var closePath: js.UndefOr[Boolean] = js.native
+  
+  var colors: js.UndefOr[js.Array[Color4]] = js.native
+  
+  var frontUVs: js.UndefOr[Vector4] = js.native
+  
+  var invertUV: js.UndefOr[Boolean] = js.native
+  
+  var offset: js.UndefOr[Double] = js.native
+  
+  var pathArray: js.Array[js.Array[Vector3]] = js.native
+  
+  var sideOrientation: js.UndefOr[Double] = js.native
+  
+  var uvs: js.UndefOr[js.Array[Vector2]] = js.native
 }
-
 object BackUVs {
+  
   @scala.inline
-  def apply(
-    pathArray: js.Array[js.Array[Vector3]],
-    backUVs: Vector4 = null,
-    closeArray: js.UndefOr[Boolean] = js.undefined,
-    closePath: js.UndefOr[Boolean] = js.undefined,
-    colors: js.Array[Color4] = null,
-    frontUVs: Vector4 = null,
-    invertUV: js.UndefOr[Boolean] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    sideOrientation: js.UndefOr[Double] = js.undefined,
-    uvs: js.Array[Vector2] = null
-  ): BackUVs = {
+  def apply(pathArray: js.Array[js.Array[Vector3]]): BackUVs = {
     val __obj = js.Dynamic.literal(pathArray = pathArray.asInstanceOf[js.Any])
-    if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeArray)) __obj.updateDynamic("closeArray")(closeArray.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closePath)) __obj.updateDynamic("closePath")(closePath.get.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (frontUVs != null) __obj.updateDynamic("frontUVs")(frontUVs.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertUV)) __obj.updateDynamic("invertUV")(invertUV.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideOrientation)) __obj.updateDynamic("sideOrientation")(sideOrientation.get.asInstanceOf[js.Any])
-    if (uvs != null) __obj.updateDynamic("uvs")(uvs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackUVs]
   }
+  
+  @scala.inline
+  implicit class BackUVsOps[Self <: BackUVs] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setPathArrayVarargs(value: js.Array[Vector3]*): Self = this.set("pathArray", js.Array(value :_*))
+    
+    @scala.inline
+    def setPathArray(value: js.Array[js.Array[Vector3]]): Self = this.set("pathArray", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBackUVs(value: Vector4): Self = this.set("backUVs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBackUVs: Self = this.set("backUVs", js.undefined)
+    
+    @scala.inline
+    def setCloseArray(value: Boolean): Self = this.set("closeArray", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCloseArray: Self = this.set("closeArray", js.undefined)
+    
+    @scala.inline
+    def setClosePath(value: Boolean): Self = this.set("closePath", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteClosePath: Self = this.set("closePath", js.undefined)
+    
+    @scala.inline
+    def setColorsVarargs(value: Color4*): Self = this.set("colors", js.Array(value :_*))
+    
+    @scala.inline
+    def setColors(value: js.Array[Color4]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    
+    @scala.inline
+    def setFrontUVs(value: Vector4): Self = this.set("frontUVs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFrontUVs: Self = this.set("frontUVs", js.undefined)
+    
+    @scala.inline
+    def setInvertUV(value: Boolean): Self = this.set("invertUV", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInvertUV: Self = this.set("invertUV", js.undefined)
+    
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    
+    @scala.inline
+    def setSideOrientation(value: Double): Self = this.set("sideOrientation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSideOrientation: Self = this.set("sideOrientation", js.undefined)
+    
+    @scala.inline
+    def setUvsVarargs(value: Vector2*): Self = this.set("uvs", js.Array(value :_*))
+    
+    @scala.inline
+    def setUvs(value: js.Array[Vector2]): Self = this.set("uvs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUvs: Self = this.set("uvs", js.undefined)
+  }
 }
-

@@ -4,13 +4,11 @@ import typings.jsrender.JsViews.Hash
 import typings.jsrender.JsViews.TemplateRender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
-  @JSName("render")
-  var render_Original: TemplateRender = js.native
+  
   /**
   	 * Template render method: render the template as a string, using the specified data and helpers/context
   	 * var htmlString = template(data, myHelpersObject);
@@ -34,5 +32,7 @@ trait JQuery extends js.Object {
   def render(data: js.Any, helpersOrContext: Hash[_]): String = js.native
   def render(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def render(data: js.Any, noIteration: Boolean): String = js.native
+  /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
+  @JSName("render")
+  var render_Original: TemplateRender = js.native
 }
-

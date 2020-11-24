@@ -2,15 +2,22 @@ package typings.reactNativeFbsdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type GraphRequestCallback = js.Function2[/* error */ js.UndefOr[js.Object], /* result */ js.UndefOr[js.Object], scala.Unit]
+  
   type GraphRequestParameters = org.scalablytyped.runtime.StringDictionary[js.Object]
+  
   type LoginBehavior = typings.reactNativeFbsdk.mod.LoginBehaviorIOS | typings.reactNativeFbsdk.mod.LoginBehaviorAndroid
+  
   type LoginBehaviorIOS = typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser
+  
   type OpenGraphProperties = org.scalablytyped.runtime.StringDictionary[typings.reactNativeFbsdk.mod.OpenGraphValue]
+  
   type Params = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeFbsdk.reactNativeFbsdkStrings.public_profile
     - typings.reactNativeFbsdk.reactNativeFbsdkStrings.user_friends

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.ReportViewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToolbarItems extends js.Object
-
 @JSGlobal("ej.ReportViewer.ToolbarItems")
 @js.native
 object ToolbarItems extends js.Object {
+  
   ///Specifies the Export as value in ToolbarItems to get specified item.
   @js.native
   sealed trait Export extends ToolbarItems
@@ -45,6 +45,4 @@ object ToolbarItems extends js.Object {
   ///Specifies the Zoom as value in ToolbarItems to get specified item.
   @js.native
   sealed trait Zoom extends ToolbarItems
-  
 }
-

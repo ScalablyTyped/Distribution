@@ -10,9 +10,9 @@ think of your app in states not routes (and, yes, while keeping the address bar 
 | ------------------ | :-------------: |
 | Full name          | redux-first-router |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 14 |
-| # downloads        | 634034 |
+| # releases         | 16 |
+| # dependents       | 16 |
+| # downloads        | 726162 |
 | # stars            | 5 |
 
 ## Links

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-to-markdown" : "0.5.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-to-markdown" : "0.5.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

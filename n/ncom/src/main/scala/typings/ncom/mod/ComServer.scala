@@ -7,27 +7,31 @@ import typings.node.netMod.ListenOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ncom", "ComServer")
 @js.native
 class ComServer () extends EventEmitter {
   def this(options: ComServerOptions) = this()
   def this(options: SecureComServerOptions) = this()
+  
   @JSName("addListener")
   def addListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   // tslint:enable:unified-signatures
   /**
     * Forwards to net.Server.close()
     */
   def close(): this.type = js.native
   def close(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+  
   @JSName("emit")
   def emit_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("emit")
   def emit_error(event: error, err: Error): Boolean = js.native
+  
   /**
     * Forwards to net.Server.listen()
     */
@@ -109,25 +113,29 @@ class ComServer () extends EventEmitter {
   def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("on")
   def on_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
   @JSName("removeListener")
   def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
 }
-

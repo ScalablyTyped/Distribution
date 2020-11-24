@@ -10,9 +10,9 @@ Karma plugin for snapshot testing.
 | ------------------ | :-------------: |
 | Full name          | karma-snapshot |
 | Keywords           | karma-plugin, karma-adapter, snapshot |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 138337 |
+| # downloads        | 232746 |
 | # stars            | 0 |
 
 ## Links

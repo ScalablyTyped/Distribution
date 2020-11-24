@@ -2,7 +2,7 @@ package typings.cloudeventsSdk.emitterStructuredMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A class for sending {CloudEvent} instances over HTTP.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSImport("cloudevents-sdk/lib/bindings/http/emitter_structured", JSImport.Namespace)
 @js.native
 class ^ () extends StructuredHTTPEmitter
-

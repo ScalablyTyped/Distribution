@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BeaconRegion
@@ -28,9 +28,12 @@ trait BeaconRegion
       /* notifyEntryStateOnDisplay */ Boolean, 
       BeaconRegion
     ] {
+  
   var major: String = js.native
+  
   var minor: String = js.native
+  
   var notifyEntryStateOnDisplay: Boolean = js.native
+  
   var uuid: String = js.native
 }
-

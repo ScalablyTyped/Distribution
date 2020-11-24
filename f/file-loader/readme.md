@@ -10,9 +10,9 @@ A file loader module for webpack
 | ------------------ | :-------------: |
 | Full name          | file-loader |
 | Keywords           | webpack |
-| # releases         | 16 |
-| # dependents       | 6819 |
-| # downloads        | 302462137 |
+| # releases         | 15 |
+| # dependents       | 8317 |
+| # downloads        | 455268028 |
 | # stars            | 64 |
 
 ## Links

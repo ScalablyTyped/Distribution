@@ -5,33 +5,29 @@ import typings.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSResolvedConfigurati
 import typings.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesGenerateRandomInputMod.GenerateRandomInput
 import typings.awsSdkClientKmsBrowser.typesGenerateRandomOutputMod.GenerateRandomOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/commands/GenerateRandomCommand", JSImport.Namespace)
 @js.native
 object generateRandomCommandMod extends js.Object {
+  
   @js.native
   class GenerateRandomCommand protected () extends Command[
           InputTypesUnion, 
           GenerateRandomInput, 
           OutputTypesUnion, 
           GenerateRandomOutput, 
-          KMSResolvedConfiguration, 
-          Blob
+          KMSResolvedConfiguration
         ] {
     def this(input: GenerateRandomInput) = this()
-    val middlewareStack: MiddlewareStack[GenerateRandomInput, GenerateRandomOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[GenerateRandomInput, GenerateRandomOutput] = js.native
   }
-  
 }
-

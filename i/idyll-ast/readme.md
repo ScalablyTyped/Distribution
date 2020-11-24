@@ -10,9 +10,9 @@ Utilities for manipulating Idyll's AST
 | ------------------ | :-------------: |
 | Full name          | idyll-ast |
 | Keywords           | idyll, ast |
-| # releases         | 25 |
+| # releases         | 13 |
 | # dependents       | 6 |
-| # downloads        | 4981 |
+| # downloads        | 3037 |
 | # stars            | 0 |
 
 ## Links

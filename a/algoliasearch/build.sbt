@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "algoliasearch"
-version := "4.3.1-05f1bb"
+version := "4.8.0-8509ad"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "algolia__cache-common" % "4.3.1-56cdfc",
-  "org.scalablytyped" %%% "algolia__client-analytics" % "4.3.1-5a9498",
-  "org.scalablytyped" %%% "algolia__client-common" % "4.3.1-55c6b0",
-  "org.scalablytyped" %%% "algolia__client-recommendation" % "4.3.1-e7890a",
-  "org.scalablytyped" %%% "algolia__client-search" % "4.3.1-983ea4",
-  "org.scalablytyped" %%% "algolia__logger-common" % "4.3.1-6d87d4",
-  "org.scalablytyped" %%% "algolia__requester-common" % "4.3.1-0443b4",
-  "org.scalablytyped" %%% "algolia__transporter" % "4.3.1-41e4e0",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "algolia__cache-common" % "4.8.0-d90ed9",
+  "org.scalablytyped" %%% "algolia__client-analytics" % "4.8.0-11c3f5",
+  "org.scalablytyped" %%% "algolia__client-common" % "4.8.0-3a6383",
+  "org.scalablytyped" %%% "algolia__client-recommendation" % "4.8.0-3595cc",
+  "org.scalablytyped" %%% "algolia__client-search" % "4.8.0-a6e45d",
+  "org.scalablytyped" %%% "algolia__logger-common" % "4.8.0-97ba34",
+  "org.scalablytyped" %%% "algolia__requester-common" % "4.8.0-88536f",
+  "org.scalablytyped" %%% "algolia__transporter" % "4.8.0-a32a08",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

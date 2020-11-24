@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a member in a data pilot source level.
@@ -22,18 +22,21 @@ import scala.scalajs.js.annotation._
 trait DataPilotSourceMember
   extends XNamed
      with XPropertySet {
+  
   /** specifies whether the member is visible. */
   var IsVisible: Boolean = js.native
+  
   /**
     * specifies the member's position in its hierarchy level if sorting is manual.
     * @since OOo 2.4
     */
   var Position: Boolean = js.native
+  
   /** specifies whether details for the member are shown. */
   var ShowDetails: Boolean = js.native
 }
-
 object DataPilotSourceMember {
+  
   @scala.inline
   def apply(
     IsVisible: Boolean,
@@ -57,24 +60,29 @@ object DataPilotSourceMember {
     val __obj = js.Dynamic.literal(IsVisible = IsVisible.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ShowDetails = ShowDetails.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataPilotSourceMember]
   }
+  
   @scala.inline
   implicit class DataPilotSourceMemberOps[Self <: DataPilotSourceMember] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPosition(value: Boolean): Self = this.set("Position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShowDetails(value: Boolean): Self = this.set("ShowDetails", value.asInstanceOf[js.Any])
   }
-  
 }
-

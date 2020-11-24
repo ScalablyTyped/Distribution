@@ -8,11 +8,12 @@ import typings.googleCloudStorage.hmacKeyMod.HmacKeyOptions
 import typings.googleCloudStorage.storageMod.StorageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/storage", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Create a Bucket object to interact with a Cloud Storage bucket.
     *
@@ -197,6 +198,8 @@ object mod extends js.Object {
     *     attempted before returning the error.
     * @property {Constructor} [promise] Custom promise module to use instead of
     *     native Promises.
+    * @property {string} [userAgent] The value to be prepended to the User-Agent
+    *     header in API requests.
     */
   /**
     * Constructs the Storage client.
@@ -218,10 +221,10 @@ object mod extends js.Object {
     extends typings.googleCloudStorage.storageMod.Storage {
     def this(options: StorageOptions) = this()
   }
-  
   /* static members */
   @js.native
   object Storage extends js.Object {
+    
     /**
       * {@link Bucket} class.
       *
@@ -235,6 +238,7 @@ object mod extends js.Object {
         /* options */ js.UndefOr[BucketOptions], 
         typings.googleCloudStorage.bucketMod.Bucket
       ] = js.native
+    
     /**
       * {@link Channel} class.
       *
@@ -248,6 +252,7 @@ object mod extends js.Object {
         /* resourceId */ String, 
         typings.googleCloudStorage.channelMod.Channel
       ] = js.native
+    
     /**
       * {@link File} class.
       *
@@ -261,6 +266,7 @@ object mod extends js.Object {
         /* options */ js.UndefOr[FileOptions], 
         typings.googleCloudStorage.fileMod.File
       ] = js.native
+    
     /**
       * {@link HmacKey} class.
       *
@@ -274,6 +280,7 @@ object mod extends js.Object {
         /* options */ js.UndefOr[HmacKeyOptions], 
         typings.googleCloudStorage.hmacKeyMod.HmacKey
       ] = js.native
+    
     /**
       * Cloud Storage uses access control lists (ACLs) to manage object and
       * bucket access. ACLs are the mechanism you use to share objects with other
@@ -331,8 +338,7 @@ object mod extends js.Object {
       * });
       */
     var acl: OWNERROLE = js.native
+    
     var sanitizeEndpoint: js.Any = js.native
   }
-  
 }
-

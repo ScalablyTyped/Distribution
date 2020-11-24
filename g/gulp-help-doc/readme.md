@@ -9,9 +9,9 @@ Gulp available tasks usage information based on jsdoc-like notations
 | ------------------ | :-------------: |
 | Full name          | gulp-help-doc |
 | Keywords           | gulp, help, jsdoc, docblock |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 75710 |
+| # downloads        | 149453 |
 | # stars            | 2 |
 
 ## Links

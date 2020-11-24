@@ -3,11 +3,12 @@ package typings.lzmaNative.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lzma-native", "compress")
 @js.native
 object compress extends js.Object {
+  
   def apply(buf: String): Unit = js.native
   def apply(
     buf: String,
@@ -29,4 +30,3 @@ object compress extends js.Object {
   def apply(buf: Buffer, options: Preset): Unit = js.native
   def apply(buf: Buffer, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
 }
-

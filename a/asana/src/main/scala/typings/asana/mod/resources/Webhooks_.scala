@@ -3,7 +3,7 @@ package typings.asana.mod.resources
 import typings.asana.mod.resources.Webhooks.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * **Webhooks are currently in BETA - The information here may change.**
@@ -57,6 +57,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Webhooks_ extends Resource {
+  
   def create(resource: String, target: String, data: js.Any): typings.bluebird.mod.^[Type] = js.native
   def create(resource: String, target: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
@@ -75,7 +76,7 @@ trait Webhooks_ extends Resource {
     * * fail to setup, and you will receive an error in response to your attempt
     * * to create it. This means you need to be able to receive and complete the
     * * webhook *while* the POST request is in-flight.
-    *   * @param {Number} resource A resource ID to subscribe to. The resource can be a task or project.
+    *   * @param {String|Number} resource A resource ID to subscribe to. The resource can be a task or project.
     *   * @param {String} target The URL to receive the HTTP POST.
     *   * @param {Object} data Data for the request
     *   * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
@@ -88,6 +89,7 @@ trait Webhooks_ extends Resource {
     */
   def create(resource: Double, target: String, data: js.Any): typings.bluebird.mod.^[Type] = js.native
   def create(resource: Double, target: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  
   /**
     * * This method permanently removes a webhook. Note that it may be possible
     * * to receive a request that was already in flight after deleting the
@@ -101,15 +103,17 @@ trait Webhooks_ extends Resource {
     */
   def deleteById(webhook: String): typings.bluebird.mod.^[_] = js.native
   def deleteById(webhook: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   def getAll(workspace: String): typings.bluebird.mod.^[_] = js.native
+  def getAll(workspace: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
   def getAll(workspace: String, params: js.Any): typings.bluebird.mod.^[_] = js.native
   def getAll(workspace: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
   /**
     * * Returns the compact representation of all webhooks your app has
     * * registered for the authenticated user in the given workspace.
-    *   * @param {Number} workspace The workspace to query for webhooks in.
+    *   * @param {String|Number} workspace The workspace to query for webhooks in.
     *   * @param {Object} [params] Parameters for the request
-    *   * @param {Number} [params.resource] Only return webhooks for the given resource.
+    *   * @param {String|Number} [params.resource] Only return webhooks for the given resource.
     *   * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     *   * @return {Promise} The response from the API
     * @param workspace
@@ -118,8 +122,10 @@ trait Webhooks_ extends Resource {
     * @return
     */
   def getAll(workspace: Double): typings.bluebird.mod.^[_] = js.native
+  def getAll(workspace: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
   def getAll(workspace: Double, params: js.Any): typings.bluebird.mod.^[_] = js.native
   def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * * Returns the full record for the given webhook.
     *   * @param {String} webhook The webhook to get.
@@ -132,7 +138,7 @@ trait Webhooks_ extends Resource {
     * @return
     */
   def getById(webhook: String): typings.bluebird.mod.^[_] = js.native
+  def getById(webhook: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
   def getById(webhook: String, params: js.Any): typings.bluebird.mod.^[_] = js.native
   def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
 }
-

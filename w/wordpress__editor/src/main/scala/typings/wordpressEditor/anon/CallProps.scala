@@ -6,11 +6,12 @@ import typings.wordpressBlockEditor.anon.OmitPropsname
 import typings.wordpressBlockEditor.inspectorControlsMod.InspectorControls.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CallProps extends js.Object {
-  var Slot: FC[OmitPropsname] = js.native
+  
   def apply(props: Props): Element = js.native
+  
+  var Slot: FC[OmitPropsname] = js.native
 }
-

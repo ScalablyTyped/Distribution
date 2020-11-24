@@ -3,23 +3,33 @@ package typings.opentracing
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentracing/lib/span", JSImport.Namespace)
 @js.native
 object spanMod extends js.Object {
+  
   @js.native
   class Span () extends js.Object {
+    
     /* protected */ def _addTags(keyValuePairs: StringDictionary[js.Any]): Unit = js.native
+    
     /* protected */ def _context(): typings.opentracing.spanContextMod.default = js.native
+    
     /* protected */ def _finish(): Unit = js.native
     /* protected */ def _finish(finishTime: Double): Unit = js.native
+    
     /* protected */ def _getBaggageItem(key: String): js.UndefOr[String] = js.native
+    
     /* protected */ def _log(keyValuePairs: StringDictionary[js.Any]): Unit = js.native
     /* protected */ def _log(keyValuePairs: StringDictionary[js.Any], timestamp: Double): Unit = js.native
+    
     /* protected */ def _setBaggageItem(key: String, value: String): Unit = js.native
+    
     /* protected */ def _setOperationName(name: String): Unit = js.native
+    
     /* protected */ def _tracer(): typings.opentracing.tracerMod.default = js.native
+    
     /**
       * Adds the given key value pairs to the set of span tags.
       *
@@ -37,12 +47,14 @@ object spanMod extends js.Object {
       * @return {[type]} [description]
       */
     def addTags(keyValueMap: StringDictionary[js.Any]): this.type = js.native
+    
     /**
       * Returns the SpanContext object associated with this Span.
       *
       * @return {SpanContext}
       */
     def context(): typings.opentracing.spanContextMod.default = js.native
+    
     /**
       * Sets the end timestamp and finalizes Span state.
       *
@@ -58,6 +70,7 @@ object spanMod extends js.Object {
       */
     def finish(): Unit = js.native
     def finish(finishTime: Double): Unit = js.native
+    
     /**
       * Returns the value for a baggage item given its key.
       *
@@ -68,6 +81,7 @@ object spanMod extends js.Object {
       *         correspond to a set trace attribute.
       */
     def getBaggageItem(key: String): js.UndefOr[String] = js.native
+    
     /**
       * Add a log record to this Span, optionally at a user-provided timestamp.
       *
@@ -97,10 +111,12 @@ object spanMod extends js.Object {
       */
     def log(keyValuePairs: StringDictionary[js.Any]): this.type = js.native
     def log(keyValuePairs: StringDictionary[js.Any], timestamp: Double): this.type = js.native
+    
     /**
       * DEPRECATED
       */
     def logEvent(eventName: String, payload: js.Any): Unit = js.native
+    
     /**
       * Sets a key:value pair on this Span that also propagates to future
       * children of the associated Span.
@@ -122,12 +138,14 @@ object spanMod extends js.Object {
       * @param {string} value
       */
     def setBaggageItem(key: String, value: String): this.type = js.native
+    
     /**
       * Sets the string name for the logical operation this span represents.
       *
       * @param {string} name
       */
     def setOperationName(name: String): this.type = js.native
+    
     /**
       * Adds a single tag to the span.  See `addTags()` for details.
       *
@@ -135,6 +153,7 @@ object spanMod extends js.Object {
       * @param {any} value
       */
     def setTag(key: String, value: js.Any): this.type = js.native
+    
     /**
       * Returns the Tracer object used to create this Span.
       *
@@ -145,6 +164,4 @@ object spanMod extends js.Object {
   
   @js.native
   class default () extends Span
-  
 }
-

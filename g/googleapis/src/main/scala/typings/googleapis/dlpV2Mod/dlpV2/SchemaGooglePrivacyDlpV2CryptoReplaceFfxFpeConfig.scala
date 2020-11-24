@@ -2,7 +2,7 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Replaces an identifier with a surrogate using Format Preserving Encryption
@@ -20,7 +20,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends js.Object {
+  
   var commonAlphabet: js.UndefOr[String] = js.native
+  
   /**
     * The &#39;tweak&#39;, a context may be used for higher security since the
     * same identifier in two different contexts won&#39;t be given the same
@@ -36,10 +38,12 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends js.Object {
     * format followed by a single byte of value 2
     */
   var context: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  
   /**
     * The key used by the encryption algorithm. [required]
     */
   var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.native
+  
   /**
     * This is supported by mapping these to the alphanumeric characters that
     * the FFX mode natively supports. This happens before/after
@@ -48,10 +52,12 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends js.Object {
     * as ASCII. The order of characters does not matter.
     */
   var customAlphabet: js.UndefOr[String] = js.native
+  
   /**
     * The native way to select the alphabet. Must be in the range [2, 62].
     */
   var radix: js.UndefOr[Double] = js.native
+  
   /**
     * The custom infoType to annotate the surrogate with. This annotation will
     * be applied to the surrogate by prefixing it with the name of the custom
@@ -76,49 +82,63 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends js.Object {
     */
   var surrogateInfoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
 }
-
 object SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
+  
   @scala.inline
   def apply(): SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig]
   }
+  
   @scala.inline
   implicit class SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfigOps[Self <: SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCommonAlphabet(value: String): Self = this.set("commonAlphabet", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCommonAlphabet: Self = this.set("commonAlphabet", js.undefined)
+    
     @scala.inline
     def setContext(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("context", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteContext: Self = this.set("context", js.undefined)
+    
     @scala.inline
     def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
+    
     @scala.inline
     def setCustomAlphabet(value: String): Self = this.set("customAlphabet", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCustomAlphabet: Self = this.set("customAlphabet", js.undefined)
+    
     @scala.inline
     def setRadix(value: Double): Self = this.set("radix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRadix: Self = this.set("radix", js.undefined)
+    
     @scala.inline
     def setSurrogateInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("surrogateInfoType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSurrogateInfoType: Self = this.set("surrogateInfoType", js.undefined)
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.PostfixUnaryExpression")
 @js.native
@@ -13,4 +13,3 @@ class PostfixUnaryExpression protected ()
     operand: typings.typescriptServices.TypeScript.AST
   ) = this()
 }
-

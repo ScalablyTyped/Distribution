@@ -10,9 +10,9 @@ Lumino Algorithms and Iterators
 | ------------------ | :-------------: |
 | Full name          | @lumino/algorithm |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 77 |
-| # downloads        | 321275 |
+| # releases         | 11 |
+| # dependents       | 103 |
+| # downloads        | 653152 |
 | # stars            | 0 |
 
 ## Links

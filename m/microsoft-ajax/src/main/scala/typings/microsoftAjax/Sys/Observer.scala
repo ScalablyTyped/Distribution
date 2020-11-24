@@ -2,7 +2,7 @@ package typings.microsoftAjax.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds update and management functionality to target objects such as arrays, DOM elements, and objects.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Observer extends js.Object
-

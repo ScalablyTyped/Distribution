@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.BAtos")
 @js.native
 object BAtos extends js.Object {
+  
   /**
     * convert an array of character codes to a string
     * @param a array of character codes
@@ -14,4 +15,3 @@ object BAtos extends js.Object {
     */
   def apply(a: js.Array[Double]): String = js.native
 }
-

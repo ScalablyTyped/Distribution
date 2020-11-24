@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Native.js for Android封装一条通过JS语法直接调用Native Java接口通道，通过plus.android可调用几乎所有的系统API。
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusAndroid extends js.Object {
+  
   /**
     * Java类对象
     * Java类对象，可通过其属性获取类的常量，可通过方法来操作类的静态变量和方法，也通过new方法来创建类的实例对象。
@@ -19,6 +20,7 @@ trait PlusAndroid extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   var ClassObject: js.UndefOr[PlusAndroidClassObject] = js.native
+  
   /**
     * Java实例对象
     * Java实例对象，可通过其方法来操作实例的变量和方法。
@@ -27,6 +29,7 @@ trait PlusAndroid extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   var InstanceObject: js.UndefOr[PlusAndroidInstanceObject] = js.native
+  
   /**
     * 获取当前Webview窗口对象的native层实例对象
     * Android平台完整Java类名为android.webkit.Webview，完整API请参考Android开发文档
@@ -34,6 +37,7 @@ trait PlusAndroid extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def currentWebview(): PlusAndroidInstanceObject = js.native
+  
   /**
     * 获取对象（类对象/实例对象）的属性值
     * 
@@ -43,6 +47,7 @@ trait PlusAndroid extends js.Object {
   def getAttribute(obj: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
   def getAttribute(obj: PlusAndroidInstanceObject): js.Any = js.native
   def getAttribute(obj: PlusAndroidInstanceObject, name: String): js.Any = js.native
+  
   /**
     * 实现Interface的方法
     * 
@@ -52,6 +57,7 @@ trait PlusAndroid extends js.Object {
   def implements(name: js.UndefOr[scala.Nothing], obj: js.Any): PlusAndroidInstanceObject = js.native
   def implements(name: String): PlusAndroidInstanceObject = js.native
   def implements(name: String, obj: js.Any): PlusAndroidInstanceObject = js.native
+  
   /**
     * 导入Java类对象
     * 导入类对象后，就可以通过.操作符直接调用对象（类对象/实例对象）的方法。
@@ -61,6 +67,7 @@ trait PlusAndroid extends js.Object {
     */
   def importClass(): PlusAndroidClassObject = js.native
   def importClass(classname: String): PlusAndroidClassObject = js.native
+  
   /**
     * 调用对象（类对象/实例对象）的方法
     * 
@@ -74,6 +81,7 @@ trait PlusAndroid extends js.Object {
   def invoke(obj: PlusAndroidInstanceObject, name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def invoke(obj: PlusAndroidInstanceObject, name: String): js.Any = js.native
   def invoke(obj: PlusAndroidInstanceObject, name: String, args: js.Any): js.Any = js.native
+  
   /**
     * 创建实例对象
     * 
@@ -83,6 +91,7 @@ trait PlusAndroid extends js.Object {
   def newObject(classname: js.UndefOr[scala.Nothing], args: js.Any): PlusAndroidInstanceObject = js.native
   def newObject(classname: String): PlusAndroidInstanceObject = js.native
   def newObject(classname: String, args: js.Any): PlusAndroidInstanceObject = js.native
+  
   /**
     * 获取应用主Activity实例对象
     * Android平台完整Java类名为android.app.Activity，完整API请参考Android开发文档
@@ -90,6 +99,7 @@ trait PlusAndroid extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def runtimeMainActivity(): PlusAndroidInstanceObject = js.native
+  
   /**
     * 设置对象（类对象/实例对象）的属性值
     * 
@@ -104,4 +114,3 @@ trait PlusAndroid extends js.Object {
   def setAttribute(obj: PlusAndroidInstanceObject, name: String): Unit = js.native
   def setAttribute(obj: PlusAndroidInstanceObject, name: String, value: js.Any): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ Strophe.js is an XMPP library for JavaScript
 | Keywords           | xmpp, message, browser |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6369 |
+| # downloads        | 7686 |
 | # stars            | 1 |
 
 ## Links

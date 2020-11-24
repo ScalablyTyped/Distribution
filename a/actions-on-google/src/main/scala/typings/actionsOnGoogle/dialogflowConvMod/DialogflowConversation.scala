@@ -14,18 +14,21 @@ import typings.actionsOnGoogle.v1Mod.DialogflowV1WebhookRequest
 import typings.actionsOnGoogle.v1Mod.DialogflowV1WebhookResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/dialogflow/conv", "DialogflowConversation")
 @js.native
 /** @public */
 class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] () extends Conversation[TUserStorage] {
   def this(options: DialogflowConversationOptions[TConvData, TUserStorage]) = this()
+  
   /** @hidden */
   var _followup: js.UndefOr[GoogleCloudDialogflowV2EventInput | DialogflowV1FollowupEvent] = js.native
+  
   /** @hidden */
   @JSName("_init")
   var _init_DialogflowConversation: ConversationOptionsInit[TConvData, TUserStorage] = js.native
+  
   /**
     * Get the current Dialogflow action name.
     *
@@ -40,10 +43,13 @@ class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts *
     * @public
     */
   var action: String = js.native
+  
   /** @public */
   var body: GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest = js.native
+  
   /** @public */
   var contexts: ContextValues[TContexts] = js.native
+  
   /**
     * The session data in JSON format.
     * Stored using contexts.
@@ -59,69 +65,7 @@ class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts *
     * @public
     */
   var data: TConvData = js.native
-  /** @public */
-  var incoming: Incoming = js.native
-  /**
-    * Get the current Dialogflow intent name.
-    *
-    * @example
-    * ```javascript
-    *
-    * app.intent('Default Welcome Intent', conv => {
-    *   const intent = conv.intent // will be 'Default Welcome Intent'
-    * })
-    * ```
-    *
-    * @public
-    */
-  var intent: String = js.native
-  /**
-    * The Dialogflow parameters from the current intent.
-    * Values will only be a string, an Object, or undefined if not included.
-    *
-    * Will also be sent via intent handler 3rd argument which is the encouraged method to retrieve.
-    *
-    * @example
-    * ```javascript
-    *
-    * // Encouraged method through intent handler
-    * app.intent('Tell Greeting', (conv, params) => {
-    *   const color = params.color
-    *   const num = params.num
-    * })
-    *
-    * // Encouraged method through destructuring in intent handler
-    * app.intent('Tell Greeting', (conv, { color, num }) => {
-    *   // now use color and num as variables
-    * }))
-    *
-    * // Using conv.parameters
-    * app.intent('Tell Greeting', conv => {
-    *   const parameters = conv.parameters
-    *   // or destructed
-    *   const { color, num } = conv.parameters
-    * })
-    * ```
-    *
-    * @public
-    */
-  var parameters: Parameters = js.native
-  /**
-    * The user's raw input query.
-    *
-    * @example
-    * ```javascript
-    *
-    * app.intent('User Input', conv => {
-    *   conv.close(`You said ${conv.query}`)
-    * })
-    * ```
-    *
-    * @public
-    */
-  var query: String = js.native
-  /** @public */
-  var version: Double = js.native
+  
   /**
     * Triggers an intent of your choosing by sending a followup event from the webhook.
     * Final response can theoretically include responses but these will not be handled
@@ -157,7 +101,75 @@ class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts *
   def followup(event: String, parameters: js.UndefOr[scala.Nothing], lang: String): this.type = js.native
   def followup(event: String, parameters: Parameters): this.type = js.native
   def followup(event: String, parameters: Parameters, lang: String): this.type = js.native
+  
+  /** @public */
+  var incoming: Incoming = js.native
+  
+  /**
+    * Get the current Dialogflow intent name.
+    *
+    * @example
+    * ```javascript
+    *
+    * app.intent('Default Welcome Intent', conv => {
+    *   const intent = conv.intent // will be 'Default Welcome Intent'
+    * })
+    * ```
+    *
+    * @public
+    */
+  var intent: String = js.native
+  
+  /**
+    * The Dialogflow parameters from the current intent.
+    * Values will only be a string, an Object, or undefined if not included.
+    *
+    * Will also be sent via intent handler 3rd argument which is the encouraged method to retrieve.
+    *
+    * @example
+    * ```javascript
+    *
+    * // Encouraged method through intent handler
+    * app.intent('Tell Greeting', (conv, params) => {
+    *   const color = params.color
+    *   const num = params.num
+    * })
+    *
+    * // Encouraged method through destructuring in intent handler
+    * app.intent('Tell Greeting', (conv, { color, num }) => {
+    *   // now use color and num as variables
+    * }))
+    *
+    * // Using conv.parameters
+    * app.intent('Tell Greeting', conv => {
+    *   const parameters = conv.parameters
+    *   // or destructed
+    *   const { color, num } = conv.parameters
+    * })
+    * ```
+    *
+    * @public
+    */
+  var parameters: Parameters = js.native
+  
+  /**
+    * The user's raw input query.
+    *
+    * @example
+    * ```javascript
+    *
+    * app.intent('User Input', conv => {
+    *   conv.close(`You said ${conv.query}`)
+    * })
+    * ```
+    *
+    * @public
+    */
+  var query: String = js.native
+  
   /** @public */
   def serialize(): GoogleCloudDialogflowV2WebhookResponse | DialogflowV1WebhookResponse = js.native
+  
+  /** @public */
+  var version: Double = js.native
 }
-

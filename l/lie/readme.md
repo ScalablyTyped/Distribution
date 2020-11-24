@@ -10,9 +10,9 @@ A basic but performant promise implementation
 | ------------------ | :-------------: |
 | Full name          | lie |
 | Keywords           | lie, promise, async, aplus |
-| # releases         | 3 |
-| # dependents       | 158 |
-| # downloads        | 47334625 |
+| # releases         | 0 |
+| # dependents       | 162 |
+| # downloads        | 132157831 |
 | # stars            | 9 |
 
 ## Links
@@ -31,16 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for lie 3.2
-// Project: https://github.com/calvinmetcalf/lie#readme
-// Definitions by: Andre Wiggins <https://github.com/andrewiggins>
-// TypeScript Version: 2.3
-// These types are copied from TypeScript's built-in Promise types
-// and extended with extra Lie utilities namely, finally.
-
-```
 

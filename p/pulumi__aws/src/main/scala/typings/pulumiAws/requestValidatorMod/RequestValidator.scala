@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator")
 @js.native
@@ -21,28 +21,32 @@ class RequestValidator protected () extends CustomResource {
     */
   def this(name: String, args: RequestValidatorArgs) = this()
   def this(name: String, args: RequestValidatorArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The name of the request validator
     */
   val name: Output_[String] = js.native
+  
   /**
     * The ID of the associated Rest API
     */
   val restApi: Output_[String] = js.native
+  
   /**
     * Boolean whether to validate request body. Defaults to `false`.
     */
   val validateRequestBody: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * Boolean whether to validate request parameters. Defaults to `false`.
     */
   val validateRequestParameters: Output_[js.UndefOr[Boolean]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator")
 @js.native
 object RequestValidator extends js.Object {
+  
   /**
     * Get an existing RequestValidator resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object RequestValidator extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RequestValidator = js.native
   def get(name: String, id: Input[ID], state: RequestValidatorState): RequestValidator = js.native
   def get(name: String, id: Input[ID], state: RequestValidatorState, opts: CustomResourceOptions): RequestValidator = js.native
+  
   /**
     * Returns true if the given object is an instance of RequestValidator.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/requestValidator.RequestValidator */ Boolean = js.native
 }
-

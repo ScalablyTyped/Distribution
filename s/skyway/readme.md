@@ -11,7 +11,7 @@ An express routing library that leverages swagger (open api) definitions to vali
 | Keywords           | swagger, openapi, express, validation |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1473 |
+| # downloads        | 990 |
 | # stars            | 0 |
 
 ## Links

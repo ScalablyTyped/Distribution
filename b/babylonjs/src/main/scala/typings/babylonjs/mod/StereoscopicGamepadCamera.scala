@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "StereoscopicGamepadCamera")
 @js.native
@@ -24,4 +24,3 @@ class StereoscopicGamepadCamera protected ()
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }
-

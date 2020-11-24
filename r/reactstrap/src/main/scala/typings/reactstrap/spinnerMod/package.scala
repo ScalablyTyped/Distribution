@@ -2,8 +2,9 @@ package typings.reactstrap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object spinnerMod {
-  type Spinner[T] = typings.react.mod.Component[typings.reactstrap.spinnerMod.SpinnerProps, js.Object, js.Any]
+  
+  type Spinner = typings.react.mod.Component[typings.reactstrap.spinnerMod.SpinnerProps, js.Object, js.Any]
 }

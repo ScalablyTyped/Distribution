@@ -3,7 +3,7 @@ package typings.guacamoleClient.onScreenKeyboardMod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an entire on-screen keyboard layout, including all available
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Layout extends js.Object {
+  
   /**
     * The width of each key, in arbitrary units, relative to other keys in
     * this layout. The true pixel size of each key will be determined by the
@@ -21,6 +22,7 @@ trait Layout extends js.Object {
     * key will default to 1.
     */
   var keyWidths: Record[String, Double] = js.native
+  
   /**
     * Map of key name to corresponding keysym, title, or key object. If only
     * the keysym or title is provided, the key object will be created
@@ -28,12 +30,14 @@ trait Layout extends js.Object {
     * taken from the name given in the mapping.
     */
   var keys: Record[String, Double | String | Key | js.Array[Key]] = js.native
+  
   /**
     * The language of keyboard layout, such as "en_US". This property is for
     * informational purposes only, but it is recommend to conform to the
     * [language code]_[country code] format.
     */
   var language: String = js.native
+  
   /**
     * Arbitrarily nested, arbitrarily grouped key names. The contents of the
     * layout will be traversed to produce an identically-nested grouping of
@@ -44,11 +48,13 @@ trait Layout extends js.Object {
     * according to the same units as each key.
     */
   var layout: Layout = js.native
+  
   /**
     * The type of keyboard layout, such as "qwerty". This property is for
     * informational purposes only, and does not conform to any standard.
     */
   var `type`: String = js.native
+  
   /**
     * The width of the entire keyboard, in arbitrary units. The width of each
     * key is relative to this width, as both width values are assumed to be in
@@ -57,8 +63,8 @@ trait Layout extends js.Object {
     */
   var width: Double = js.native
 }
-
 object Layout {
+  
   @scala.inline
   def apply(
     keyWidths: Record[String, Double],
@@ -72,30 +78,38 @@ object Layout {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
+  
   @scala.inline
   implicit class LayoutOps[Self <: Layout] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKeyWidths(value: Record[String, Double]): Self = this.set("keyWidths", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKeys(value: Record[String, Double | String | Key | js.Array[Key]]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
   }
-  
 }
-

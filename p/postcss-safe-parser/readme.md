@@ -10,9 +10,9 @@ Fault-tolerant CSS parser for PostCSS
 | ------------------ | :-------------: |
 | Full name          | postcss-safe-parser |
 | Keywords           | css, postcss, postcss-syntax, parser, fault tolerant |
-| # releases         | 4 |
-| # dependents       | 1675 |
-| # downloads        | 122330920 |
+| # releases         | 3 |
+| # dependents       | 1919 |
+| # downloads        | 164764669 |
 | # stars            | 1 |
 
 ## Links

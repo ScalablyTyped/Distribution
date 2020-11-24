@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Changes")
 @js.native
 class ResourceChanges protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.changes.get
     * @desc Deprecated - Use changes.getStartPageToken and changes.list to
@@ -44,6 +46,7 @@ class ResourceChanges protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChange]
   ): Unit = js.native
+  
   /**
     * drive.changes.getStartPageToken
     * @desc Gets the starting pageToken for listing future changes.
@@ -76,6 +79,7 @@ class ResourceChanges protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStartPageToken]
   ): Unit = js.native
+  
   /**
     * drive.changes.list
     * @desc Lists the changes for a user or Team Drive.
@@ -113,6 +117,7 @@ class ResourceChanges protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChangeList]
   ): Unit = js.native
+  
   /**
     * drive.changes.watch
     * @desc Subscribe to changes for a user.
@@ -152,4 +157,3 @@ class ResourceChanges protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

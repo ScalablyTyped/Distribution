@@ -3,7 +3,7 @@ package typings.xrm.Xrm
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A definition module for collection interface declarations.
@@ -11,17 +11,20 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Xrm.Collection")
 @js.native
 object Collection extends js.Object {
+  
   /**
     * Collections are structures to provide access to data that represent an array, but without the ability to modify the data in the array.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   @js.native
   trait ItemCollection[T] extends js.Object {
+    
     /**
       * Applies an operation to all items in this collection.
       * @param delegate An iterative delegate function
       */
     def forEach(delegate: IterativeDelegate[T]): Unit = js.native
+    
     /**
       * Gets the entire array of T.
       * @returns A T[].
@@ -46,11 +49,13 @@ object Collection extends js.Object {
       * @returns The T in the itemNumber-th place.
       */
     def get(itemNumber: Double): T = js.native
+    
     /**
       * Gets the length of the collection.
       * @returns The length.
       */
     def getLength(): Double = js.native
+    
     /**
       * Gets the item given by the key.
       * @param itemName The item name to get.
@@ -74,12 +79,14 @@ object Collection extends js.Object {
     * @param Generic type parameter.
     */
   type Dictionary[T] = StringDictionary[T]
+  
   /**
     * Called for each item in an array
     * @param item The item.
     * @param index Zero-based index of the item array.
     */
   type IterativeDelegate[T] = js.Function2[/* item */ T, /* index */ js.UndefOr[Double], Unit]
+  
   /**
     * Called for each item in an array
     * @param item The item.
@@ -87,10 +94,10 @@ object Collection extends js.Object {
     * @returns true if the item matches, false if it does not.
     */
   type MatchingDelegate[T] = js.Function2[/* item */ T, /* index */ js.UndefOr[Double], Boolean]
+  
   /**
     * Defines item collections that are index-able by string
     * @param Generic type parameter.
     */
   type StringIndexableItemCollection[T] = Dictionary[T] with ItemCollection[T]
 }
-

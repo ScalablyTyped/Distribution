@@ -2,15 +2,12 @@ package typings.dateTime.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-time", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function dateTime(options?: dateTime.Options): string;
-  // export = dateTime;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dateTime */ js.Any = js.native
+  
   /**
   	Pretty datetime: `2014-01-09 06:46:01`.
   	@example
@@ -32,5 +29,9 @@ object ^ extends js.Object {
   	*/
   def apply(): String = js.native
   def apply(options: Options): String = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function dateTime(options?: dateTime.Options): string;
+  // export = dateTime;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dateTime */ js.Any = js.native
 }
-

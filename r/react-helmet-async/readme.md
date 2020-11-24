@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-helmet-async
 
-Typings are for version 1.0.6
+Typings are for version 1.0.7
 
 ## Library description:
 Thread-safe Helmet for React 16+ and friends
@@ -10,10 +10,10 @@ Thread-safe Helmet for React 16+ and friends
 | ------------------ | :-------------: |
 | Full name          | react-helmet-async |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 51 |
-| # downloads        | 26069244 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 87 |
+| # downloads        | 67604136 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/NYTimes/react-helmet-async#readme)

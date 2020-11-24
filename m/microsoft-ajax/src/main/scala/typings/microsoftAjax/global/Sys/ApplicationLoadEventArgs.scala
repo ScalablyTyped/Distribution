@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Event Args
@@ -24,4 +24,3 @@ class ApplicationLoadEventArgs protected ()
     */
   def this(components: js.Any, isPartialLoad: Boolean) = this()
 }
-

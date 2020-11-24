@@ -9,11 +9,12 @@ import typings.ethereumjsTx.typesMod.TxData
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethereumjs-tx", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class FakeTransaction () extends default {
     def this(data: js.Array[BufferLike]) = this()
@@ -69,6 +70,4 @@ object mod extends js.Object {
     def this(data: TxData, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.mustache.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Writer knows how to take a stream of tokens and render them to a `string`, given a context.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
   * Initializes a new instance of the `MustacheWriter` class.
   */
 class Writer () extends MustacheWriter
-

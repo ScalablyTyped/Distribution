@@ -1,14 +1,16 @@
 package typings.twilsock
 
 import typings.loglevel.mod.LogLevelDesc
+import typings.std.Set
 import typings.twilsock.initregistrationMod.InitRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilsock/lib/configuration", JSImport.Namespace)
 @js.native
 object configurationMod extends js.Object {
+  
   /**
     * Settings container for the Twilsock client library
     */
@@ -20,20 +22,33 @@ object configurationMod extends js.Object {
       */
     def this(token: String, activeGrant: String) = this()
     def this(token: String, activeGrant: String, options: js.Any) = this()
+    
     var _continuationToken: js.Any = js.native
+    
     var _token: js.Any = js.native
+    
     val activeGrant: String = js.native
+    
     val clientMetadata: js.Any = js.native
-    val initRegistrations: js.Array[InitRegistration] = js.native
-    val logLevel: LogLevelDesc = js.native
-    val retryPolicy: js.Any = js.native
-    val tweaks: js.Any = js.native
-    val url: String = js.native
+    
+    var confirmedCapabilities: Set[String] = js.native
+    
     def continuationToken: String = js.native
+    
+    val initRegistrations: js.Array[InitRegistration] = js.native
+    
+    val logLevel: LogLevelDesc = js.native
+    
+    val retryPolicy: js.Any = js.native
+    
     def token: String = js.native
+    
+    val tweaks: js.Any = js.native
+    
     def updateContinuationToken(continuationToken: String): Unit = js.native
+    
     def updateToken(token: String): Unit = js.native
+    
+    val url: String = js.native
   }
-  
 }
-

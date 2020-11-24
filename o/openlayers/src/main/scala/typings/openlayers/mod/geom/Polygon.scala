@@ -5,7 +5,7 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.Sphere
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -28,18 +28,21 @@ class Polygon protected () extends SimpleGeometry {
     */
   def this(coordinates: js.Array[js.Array[Coordinate_]]) = this()
   def this(coordinates: js.Array[js.Array[Coordinate_]], opt_layout: GeometryLayout) = this()
+  
   /**
     * Append the passed linear ring to this polygon.
     * @param linearRing Linear ring.
     * @api stable
     */
   def appendLinearRing(linearRing: LinearRing): Unit = js.native
+  
   /**
     * Return the area of the polygon on projected plane.
     * @return Area (on projected plane).
     * @api stable
     */
   def getArea(): Double = js.native
+  
   /**
     * Get the coordinate array for this geometry.  This array has the structure
     * of a GeoJSON coordinate array for polygons.
@@ -55,12 +58,14 @@ class Polygon protected () extends SimpleGeometry {
     */
   def getCoordinates(): js.Array[js.Array[Coordinate_]] = js.native
   def getCoordinates(opt_right: Boolean): js.Array[js.Array[Coordinate_]] = js.native
+  
   /**
     * Return an interior point of the polygon.
     * @return Interior point.
     * @api stable
     */
   def getInteriorPoint(): Point = js.native
+  
   /**
     * Return the Nth linear ring of the polygon geometry. Return `null` if the
     * given index is out of range.
@@ -72,6 +77,7 @@ class Polygon protected () extends SimpleGeometry {
     * @api stable
     */
   def getLinearRing(index: Double): LinearRing = js.native
+  
   /**
     * Return the number of rings of the polygon,  this includes the exterior
     * ring and any interior rings.
@@ -80,17 +86,20 @@ class Polygon protected () extends SimpleGeometry {
     * @api
     */
   def getLinearRingCount(): Double = js.native
+  
   /**
     * Return the linear rings of the polygon.
     * @return Linear rings.
     * @api stable
     */
   def getLinearRings(): js.Array[LinearRing] = js.native
+  
   /**
     * @inheritDoc
     * @api stable
     */
   def intersectsExtent(extent: Extent_): Boolean = js.native
+  
   /**
     * Set the coordinates of the polygon.
     * @param coordinates Coordinates.
@@ -100,11 +109,11 @@ class Polygon protected () extends SimpleGeometry {
   def setCoordinates(coordinates: js.Array[js.Array[Coordinate_]]): Unit = js.native
   def setCoordinates(coordinates: js.Array[js.Array[Coordinate_]], opt_layout: GeometryLayout): Unit = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "geom.Polygon")
 @js.native
 object Polygon extends js.Object {
+  
   /**
     * Create an approximation of a circle on the surface of a sphere.
     * @param sphere The sphere.
@@ -118,6 +127,7 @@ object Polygon extends js.Object {
     */
   def circular(sphere: Sphere, center: Coordinate_, radius: Double): Polygon = js.native
   def circular(sphere: Sphere, center: Coordinate_, radius: Double, opt_n: Double): Polygon = js.native
+  
   /**
     * Create a regular polygon from a circle.
     * @param circle Circle geometry.
@@ -131,6 +141,7 @@ object Polygon extends js.Object {
   def fromCircle(circle: Circle, opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): Polygon = js.native
   def fromCircle(circle: Circle, opt_sides: Double): Polygon = js.native
   def fromCircle(circle: Circle, opt_sides: Double, opt_angle: Double): Polygon = js.native
+  
   /**
     * Create a polygon from an extent. The layout used is `XY`.
     * @param extent The extent.
@@ -139,4 +150,3 @@ object Polygon extends js.Object {
     */
   def fromExtent(extent: Extent_): Polygon = js.native
 }
-

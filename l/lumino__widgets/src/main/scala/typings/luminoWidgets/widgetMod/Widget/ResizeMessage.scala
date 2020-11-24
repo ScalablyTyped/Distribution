@@ -3,7 +3,7 @@ package typings.luminoWidgets.widgetMod.Widget
 import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message class for `'resize'` messages.
@@ -21,6 +21,7 @@ class ResizeMessage protected () extends Message {
     *   the height is not known.
     */
   def this(width: Double, height: Double) = this()
+  
   /**
     * The offset height of the widget.
     *
@@ -28,6 +29,7 @@ class ResizeMessage protected () extends Message {
     * This will be `-1` if the height is unknown.
     */
   val height: Double = js.native
+  
   /**
     * The offset width of the widget.
     *
@@ -36,16 +38,15 @@ class ResizeMessage protected () extends Message {
     */
   val width: Double = js.native
 }
-
 /**
   * The namespace for the `ResizeMessage` class statics.
   */
 @JSImport("@lumino/widgets/types/widget", "Widget.ResizeMessage")
 @js.native
 object ResizeMessage extends js.Object {
+  
   /**
     * A singleton `'resize'` message with an unknown size.
     */
   val UnknownSize: ResizeMessage = js.native
 }
-

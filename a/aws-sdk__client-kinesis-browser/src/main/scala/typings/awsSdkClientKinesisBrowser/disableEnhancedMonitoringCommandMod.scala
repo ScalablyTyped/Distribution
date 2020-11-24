@@ -5,33 +5,29 @@ import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisResolve
 import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringInputMod.DisableEnhancedMonitoringInput
 import typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringOutputMod.DisableEnhancedMonitoringOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kinesis-browser/commands/DisableEnhancedMonitoringCommand", JSImport.Namespace)
 @js.native
 object disableEnhancedMonitoringCommandMod extends js.Object {
+  
   @js.native
   class DisableEnhancedMonitoringCommand protected () extends Command[
           InputTypesUnion, 
           DisableEnhancedMonitoringInput, 
           OutputTypesUnion, 
           DisableEnhancedMonitoringOutput, 
-          KinesisResolvedConfiguration, 
-          Blob
+          KinesisResolvedConfiguration
         ] {
     def this(input: DisableEnhancedMonitoringInput) = this()
-    val middlewareStack: MiddlewareStack[DisableEnhancedMonitoringInput, DisableEnhancedMonitoringOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[DisableEnhancedMonitoringInput, DisableEnhancedMonitoringOutput] = js.native
   }
-  
 }
-

@@ -5,7 +5,7 @@ import typings.std.Element
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Keyboard object.
@@ -27,4 +27,3 @@ class Keyboard ()
   def this(element: Element, options: PreventDefault) = this()
   def this(element: Window, options: PreventDefault) = this()
 }
-

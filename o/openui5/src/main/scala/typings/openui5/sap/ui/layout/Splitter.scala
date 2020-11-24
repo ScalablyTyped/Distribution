@@ -5,16 +5,18 @@ import typings.openui5.sap.ui.core.Orientation
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Splitter extends Control {
+  
   /**
     * Adds some contentArea to the aggregation <code>contentAreas</code>.
     * @param oContentArea the contentArea to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContentArea(oContentArea: Control): Splitter = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>resize</code> event of this
     * <code>sap.ui.layout.Splitter</code>.When called, the context of the event handler (its
@@ -29,11 +31,13 @@ trait Splitter extends Control {
     */
   def attachResize(oData: js.Any, fnFunction: js.Any): Splitter = js.native
   def attachResize(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Splitter = js.native
+  
   /**
     * Destroys all the contentAreas in the aggregation <code>contentAreas</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContentAreas(): Splitter = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>resize</code> event of this
     * <code>sap.ui.layout.Splitter</code>.The passed function and listener object must match the ones used
@@ -43,6 +47,7 @@ trait Splitter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachResize(fnFunction: js.Any, oListener: js.Any): Splitter = js.native
+  
   /**
     * Disables the resize handler for this control, this leads to an automatic resize ofthe contents
     * whenever the control changes its size. The resize handler is enabledin every control instance by
@@ -51,16 +56,19 @@ trait Splitter extends Control {
     * status can be restored afterwards
     */
   def disableAutoResize(bTemporarily: Boolean): Unit = js.native
+  
   /**
     * Disables the resizing of the Splitter contents via keyboard. This changes the Splitter barsto
     * non-focussable elements.
     */
   def disableKeyboardSupport(): Unit = js.native
+  
   /**
     * Disables recalculation and resize of the splitter contents while dragging the splitter bar.This
     * means that the contents are resized only once after moving the splitter bar.
     */
   def disableLiveResize(): Unit = js.native
+  
   /**
     * Enables the resize handler for this control, this leads to an automatic resize ofthe contents
     * whenever the control changes its size. The resize handler is enabledin every control instance by
@@ -69,16 +77,19 @@ trait Splitter extends Control {
     * resize)
     */
   def enableAutoResize(bTemporarily: Boolean): Unit = js.native
+  
   /**
     * Enables the resizing of the Splitter contents via keyboard. This makes the Splitter barsfocussable
     * elements.
     */
   def enableKeyboardSupport(): Unit = js.native
+  
   /**
     * Enables recalculation and resize of the splitter contents while dragging the splitter bar.This means
     * that the contents are resized several times per second when moving the splitter bar.
     */
   def enableLiveResize(): Unit = js.native
+  
   /**
     * Fires event <code>resize</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>id</code> of type <code>string</code>The ID of the splitter control. The
@@ -91,34 +102,40 @@ trait Splitter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireResize(mArguments: js.Any): Splitter = js.native
+  
   /**
     * Returns the current actual content sizes as pixel value - these values can change with everyresize.
     * @returns Array of px values that correspond to the content area sizes
     */
   def getCalculatedSizes(): js.Array[Number] = js.native
+  
   /**
     * Gets content of aggregation <code>contentAreas</code>.The content areas to be split. The control
     * will show n-1 splitter bars between n controls in this aggregation.
     */
   def getContentAreas(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>height</code>.The height of the controlDefault value is
     * <code>100%</code>.
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>orientation</code>.Whether to split the contents horizontally
     * (default) or vertically.Default value is <code>Horizontal</code>.
     * @returns Value of property <code>orientation</code>
     */
   def getOrientation(): Orientation = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The width of the controlDefault value is
     * <code>100%</code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>contentAreas</code>.and returns its index if found or -1 otherwise.
@@ -126,6 +143,7 @@ trait Splitter extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContentArea(oContentArea: Control): Double = js.native
+  
   /**
     * Inserts a contentArea into the aggregation <code>contentAreas</code>.
     * @param oContentArea the contentArea to insert; if empty, nothing is inserted
@@ -136,12 +154,14 @@ trait Splitter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContentArea(oContentArea: Control, iIndex: Double): Splitter = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>contentAreas</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContentAreas(): js.Array[Control] = js.native
+  
   def removeContentArea(vContentArea: String): Control = js.native
   /**
     * Removes a contentArea from the aggregation <code>contentAreas</code>.
@@ -150,6 +170,7 @@ trait Splitter extends Control {
     */
   def removeContentArea(vContentArea: Double): Control = js.native
   def removeContentArea(vContentArea: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.The height of the controlWhen called with a value
     * of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -158,6 +179,7 @@ trait Splitter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): Splitter = js.native
+  
   /**
     * Sets a new value for property <code>orientation</code>.Whether to split the contents horizontally
     * (default) or vertically.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -166,6 +188,7 @@ trait Splitter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setOrientation(sOrientation: Orientation): Splitter = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.The width of the controlWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -174,6 +197,7 @@ trait Splitter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): Splitter = js.native
+  
   /**
     * This method  triggers a resize on the Splitter - meaning it forces the Splitter to recalculateall
     * sizes.This method should only be used in rare cases, for example when the CSS that defines the
@@ -182,4 +206,3 @@ trait Splitter extends Control {
     */
   def triggerResize(forceDirectly: Boolean): Unit = js.native
 }
-

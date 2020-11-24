@@ -2,10 +2,11 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StreetViewService extends js.Object {
+  
   def getPanorama(
     request: StreetViewLocationRequest,
     cb: js.Function2[/* data */ StreetViewPanoramaData | Null, /* status */ StreetViewStatus, Unit]
@@ -14,6 +15,7 @@ trait StreetViewService extends js.Object {
     request: StreetViewPanoRequest,
     cb: js.Function2[/* data */ StreetViewPanoramaData | Null, /* status */ StreetViewStatus, Unit]
   ): Unit = js.native
+  
   def getPanoramaById(
     pano: String,
     callback: js.Function2[
@@ -22,6 +24,7 @@ trait StreetViewService extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def getPanoramaByLocation(
     latlng: LatLngLiteral,
     radius: Double,
@@ -41,4 +44,3 @@ trait StreetViewService extends js.Object {
     ]
   ): Unit = js.native
 }
-

@@ -4,11 +4,11 @@ import typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/icons/BookmarkBorderTwoTone", JSImport.Namespace)
 @js.native
 object bookmarkBorderTwoToneMod extends js.Object {
+  
   val default: ComponentType[SvgIconProps] = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "GetPeersResponse")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class GetPeersResponse () extends IGetPeersResponse {
   def this(properties: IGetPeersResponse) = this()
+  
   /** GetPeersResponse peerEndpoints. */
   @JSName("peerEndpoints")
   var peerEndpoints_GetPeersResponse: js.Array[String] = js.native
+  
   /**
     * Converts this GetPeersResponse to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "GetPeersResponse")
 @js.native
 object GetPeersResponse extends js.Object {
+  
   /**
     * Creates a new GetPeersResponse instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object GetPeersResponse extends js.Object {
     */
   def create(): GetPeersResponse = js.native
   def create(properties: IGetPeersResponse): GetPeersResponse = js.native
+  
   /**
     * Decodes a GetPeersResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object GetPeersResponse extends js.Object {
   def decode(reader: Reader, length: Double): GetPeersResponse = js.native
   def decode(reader: Uint8Array): GetPeersResponse = js.native
   def decode(reader: Uint8Array, length: Double): GetPeersResponse = js.native
+  
   /**
     * Decodes a GetPeersResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object GetPeersResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): GetPeersResponse = js.native
   def decodeDelimited(reader: Uint8Array): GetPeersResponse = js.native
+  
   /**
     * Encodes the specified GetPeersResponse message. Does not implicitly {@link GetPeersResponse.verify|verify} messages.
     * @param message GetPeersResponse message or plain object to encode
@@ -67,6 +72,7 @@ object GetPeersResponse extends js.Object {
     */
   def encode(message: IGetPeersResponse): Writer = js.native
   def encode(message: IGetPeersResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified GetPeersResponse message, length delimited. Does not implicitly {@link GetPeersResponse.verify|verify} messages.
     * @param message GetPeersResponse message or plain object to encode
@@ -75,12 +81,14 @@ object GetPeersResponse extends js.Object {
     */
   def encodeDelimited(message: IGetPeersResponse): Writer = js.native
   def encodeDelimited(message: IGetPeersResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a GetPeersResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns GetPeersResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): GetPeersResponse = js.native
+  
   /**
     * Creates a plain object from a GetPeersResponse message. Also converts values to other types if specified.
     * @param message GetPeersResponse
@@ -89,6 +97,7 @@ object GetPeersResponse extends js.Object {
     */
   def toObject(message: GetPeersResponse): StringDictionary[js.Any] = js.native
   def toObject(message: GetPeersResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a GetPeersResponse message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object GetPeersResponse extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

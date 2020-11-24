@@ -13,83 +13,28 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/nav/nav", JSImport.Namespace)
 @js.native
 object navMod extends js.Object {
+  
   @js.native
   class Nav () extends NavOutlet {
+    
     /**
       * If `true`, the nav should animate the transition of components.
       */
     var animated: Boolean = js.native
+    
     /**
       * By default `ion-nav` animates transition between pages based in the mode (ios or material design).
       * However, this property allows to create custom transition using `AnimateBuilder` functions.
       */
     var animation: js.UndefOr[AnimationBuilder] = js.native
+    
     var animationEnabled: js.Any = js.native
-    var canGoBackSync: js.Any = js.native
-    var canStart: js.Any = js.native
-    /**
-      * DOM WRITE
-      */
-    var cleanup: js.Any = js.native
-    /** @internal */
-    var delegate: js.UndefOr[FrameworkDelegate] = js.native
-    var destroyView: js.Any = js.native
-    var destroyed: js.Any = js.native
-    var el: HTMLElement = js.native
-    var failed: js.Any = js.native
-    var fireError: js.Any = js.native
-    var gesture: js.Any = js.native
-    var getActiveSync: js.Any = js.native
-    var getEnteringView: js.Any = js.native
-    var getPreviousSync: js.Any = js.native
-    var insertViewAt: js.Any = js.native
-    /**
-      * Event fired when the nav has changed components
-      */
-    var ionNavDidChange: EventEmitter[Unit] = js.native
-    /**
-      * Event fired when the nav will change components
-      */
-    var ionNavWillChange: EventEmitter[Unit] = js.native
-    /**
-      * Event fired when Nav will load a component
-      * @internal
-      */
-    var ionNavWillLoad: EventEmitter[Unit] = js.native
-    var isTransitioning: js.Any = js.native
-    var nextTrns: js.Any = js.native
-    var onEnd: js.Any = js.native
-    var onMove: js.Any = js.native
-    var onStart: js.Any = js.native
-    var postViewInit: js.Any = js.native
-    var prepareTI: js.Any = js.native
-    var queueTrns: js.Any = js.native
-    var removeView: js.Any = js.native
-    /**
-      * Root NavComponent to load
-      */
-    var root: js.UndefOr[NavComponent] = js.native
-    /**
-      * Any parameters for the root component
-      */
-    var rootParams: js.UndefOr[ComponentProps[Null]] = js.native
-    var runTransition: js.Any = js.native
-    var sbAni: js.Any = js.native
-    var success: js.Any = js.native
-    /**
-      * If the nav component should allow for swipe-to-go-back.
-      */
-    var swipeGesture: js.UndefOr[Boolean] = js.native
-    var transInstr: js.Any = js.native
-    var transition: js.Any = js.native
-    var transitionFinish: js.Any = js.native
-    var useRouter: js.Any = js.native
-    var views: js.Any = js.native
+    
     /**
       * Returns `true` if the current view can go back.
       *
@@ -97,20 +42,55 @@ object navMod extends js.Object {
       */
     def canGoBack(): js.Promise[Boolean] = js.native
     def canGoBack(view: ViewController): js.Promise[Boolean] = js.native
+    
+    var canGoBackSync: js.Any = js.native
+    
+    var canStart: js.Any = js.native
+    
+    /**
+      * DOM WRITE
+      */
+    var cleanup: js.Any = js.native
+    
     def componentDidLoad(): js.Promise[Unit] = js.native
-    def componentDidUnload(): Unit = js.native
+    
     def componentWillLoad(): Unit = js.native
+    
+    /** @internal */
+    var delegate: js.UndefOr[FrameworkDelegate] = js.native
+    
+    var destroyView: js.Any = js.native
+    
+    var destroyed: js.Any = js.native
+    
+    def disconnectedCallback(): Unit = js.native
+    
+    var el: HTMLElement = js.native
+    
+    var failed: js.Any = js.native
+    
+    var fireError: js.Any = js.native
+    
+    var gesture: js.Any = js.native
+    
     /**
       * Get the active view.
       */
     def getActive(): js.Promise[js.UndefOr[ViewController]] = js.native
+    
+    var getActiveSync: js.Any = js.native
+    
     /**
       * Get the view at the specified index.
       *
       * @param index The index of the view.
       */
     def getByIndex(index: Double): js.Promise[js.UndefOr[ViewController]] = js.native
+    
+    var getEnteringView: js.Any = js.native
+    
     def getLength(): Double = js.native
+    
     /**
       * Get the previous view.
       *
@@ -118,6 +98,9 @@ object navMod extends js.Object {
       */
     def getPrevious(): js.Promise[js.UndefOr[ViewController]] = js.native
     def getPrevious(view: ViewController): js.Promise[js.UndefOr[ViewController]] = js.native
+    
+    var getPreviousSync: js.Any = js.native
+    
     def insert(insertIndex: Double): js.Promise[Boolean] = js.native
     def insert(insertIndex: Double, component: String): js.Promise[Boolean] = js.native
     def insert(
@@ -500,6 +483,7 @@ object navMod extends js.Object {
       opts: NavOptions,
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
+    
     /**
       * Inserts an array of components into the navigation stack at the specified index.
       * The last component in the array will become instantiated as a view, and animate
@@ -534,6 +518,35 @@ object navMod extends js.Object {
       opts: NavOptions,
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
+    
+    var insertViewAt: js.Any = js.native
+    
+    /**
+      * Event fired when the nav has changed components
+      */
+    var ionNavDidChange: EventEmitter[Unit] = js.native
+    
+    /**
+      * Event fired when the nav will change components
+      */
+    var ionNavWillChange: EventEmitter[Unit] = js.native
+    
+    /**
+      * Event fired when Nav will load a component
+      * @internal
+      */
+    var ionNavWillLoad: EventEmitter[Unit] = js.native
+    
+    var isTransitioning: js.Any = js.native
+    
+    var nextTrns: js.Any = js.native
+    
+    var onEnd: js.Any = js.native
+    
+    var onMove: js.Any = js.native
+    
+    var onStart: js.Any = js.native
+    
     /**
       * Pop a component off of the navigation stack. Navigates back from the current
       * component.
@@ -546,6 +559,7 @@ object navMod extends js.Object {
     def pop(opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     def pop(opts: NavOptions): js.Promise[Boolean] = js.native
     def pop(opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+    
     /**
       * Pop to a specific index in the navigation stack.
       *
@@ -563,6 +577,7 @@ object navMod extends js.Object {
     def popTo(indexOrViewCtrl: ViewController, opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     def popTo(indexOrViewCtrl: ViewController, opts: NavOptions): js.Promise[Boolean] = js.native
     def popTo(indexOrViewCtrl: ViewController, opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+    
     /**
       * Navigate back to the root of the stack, no matter how far back that is.
       *
@@ -574,6 +589,11 @@ object navMod extends js.Object {
     def popToRoot(opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     def popToRoot(opts: NavOptions): js.Promise[Boolean] = js.native
     def popToRoot(opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+    
+    var postViewInit: js.Any = js.native
+    
+    var prepareTI: js.Any = js.native
+    
     def push(): js.Promise[Boolean] = js.native
     def push(component: String): js.Promise[Boolean] = js.native
     def push(
@@ -819,6 +839,9 @@ object navMod extends js.Object {
       opts: NavOptions,
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
+    
+    var queueTrns: js.Any = js.native
+    
     /**
       * Removes a component from the navigation stack at the specified index.
       *
@@ -847,8 +870,27 @@ object navMod extends js.Object {
     def removeIndex(startIndex: Double, removeCount: Double, opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     def removeIndex(startIndex: Double, removeCount: Double, opts: NavOptions): js.Promise[Boolean] = js.native
     def removeIndex(startIndex: Double, removeCount: Double, opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+    
+    var removeView: js.Any = js.native
+    
     def render(): js.Any = js.native
+    
+    /**
+      * Root NavComponent to load
+      */
+    var root: js.UndefOr[NavComponent] = js.native
+    
     def rootChanged(): Unit = js.native
+    
+    /**
+      * Any parameters for the root component
+      */
+    var rootParams: js.UndefOr[ComponentProps[Null]] = js.native
+    
+    var runTransition: js.Any = js.native
+    
+    var sbAni: js.Any = js.native
+    
     /**
       * Set the views of the current navigation stack and navigate to the last view.
       * By default animations are disabled, but they can be enabled by passing options
@@ -868,6 +910,7 @@ object navMod extends js.Object {
     def setPages(views: js.Array[NavComponent | NavComponentWithProps[_]], opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     def setPages(views: js.Array[NavComponent | NavComponentWithProps[_]], opts: NavOptions): js.Promise[Boolean] = js.native
     def setPages(views: js.Array[NavComponent | NavComponentWithProps[_]], opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+    
     def setRoot(): js.Promise[Boolean] = js.native
     def setRoot(component: String): js.Promise[Boolean] = js.native
     def setRoot(
@@ -1111,8 +1154,24 @@ object navMod extends js.Object {
       opts: NavOptions,
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
+    
+    var success: js.Any = js.native
+    
+    /**
+      * If the nav component should allow for swipe-to-go-back.
+      */
+    var swipeGesture: js.UndefOr[Boolean] = js.native
+    
     def swipeGestureChanged(): Unit = js.native
+    
+    var transInstr: js.Any = js.native
+    
+    var transition: js.Any = js.native
+    
+    var transitionFinish: js.Any = js.native
+    
+    var useRouter: js.Any = js.native
+    
+    var views: js.Any = js.native
   }
-  
 }
-

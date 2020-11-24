@@ -10,9 +10,9 @@ List of text file extensions
 | ------------------ | :-------------: |
 | Full name          | text-extensions |
 | Keywords           | text, ascii, extensions, extension, file, json, list, array |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 43399717 |
+| # releases         | 5 |
+| # dependents       | 23 |
+| # downloads        | 68281908 |
 | # stars            | 0 |
 
 ## Links

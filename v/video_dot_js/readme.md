@@ -4,15 +4,15 @@
 Typings are for version 7.3
 
 ## Library description:
-An HTML5 and Flash video player with a common API and skin for both.
+An HTML5 video player that supports HLS and DASH with a common API and skin.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | video.js |
-| Keywords           | flash, html5, player, video, videojs |
-| # releases         | 57 |
-| # dependents       | 360 |
-| # downloads        | 4769577 |
+| Keywords           | dash, hls, html5, player, video, videojs |
+| # releases         | 44 |
+| # dependents       | 469 |
+| # downloads        | 8437151 |
 | # stars            | 46 |
 
 ## Links

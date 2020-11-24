@@ -11,8 +11,8 @@ Combinators for ECMAScript 6 iterators.
 | Full name          | wu |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 20033 |
+| # dependents       | 26 |
+| # downloads        | 34261 |
 | # stars            | 0 |
 
 ## Links

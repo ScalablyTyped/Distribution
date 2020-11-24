@@ -5,11 +5,11 @@ import typings.react.mod.LazyExoticComponent
 import typings.reactRouterGuard.anon.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-router-guard", "lazy")
 @js.native
 object `lazy` extends js.Object {
+  
   def apply[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = js.native
 }
-

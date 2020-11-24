@@ -7,14 +7,14 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Storage.Pickers.Provider.FileSavePickerUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUIFileSavePickerActivatedEventArgs
   extends IFileSavePickerActivatedEventArgs
      with IActivatedEventArgsDeferral
-
 object WebUIFileSavePickerActivatedEventArgs {
+  
   @scala.inline
   def apply(
     activatedOperation: ActivatedOperation,
@@ -27,4 +27,3 @@ object WebUIFileSavePickerActivatedEventArgs {
     __obj.asInstanceOf[WebUIFileSavePickerActivatedEventArgs]
   }
 }
-

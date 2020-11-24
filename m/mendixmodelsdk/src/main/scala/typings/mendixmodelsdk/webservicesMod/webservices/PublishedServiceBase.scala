@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk.webservicesMod.webservices
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.projectsMod.projects.Document
@@ -9,7 +8,7 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -30,18 +29,18 @@ abstract class PublishedServiceBase protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  @JSName("model")
-  var model_FPublishedServiceBase: IModel = js.native
+  
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MPublishedServiceBase: FolderBase = js.native
+  
   def versionedServices: IList[VersionedService] = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedServiceBase")
 @js.native
 object PublishedServiceBase extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

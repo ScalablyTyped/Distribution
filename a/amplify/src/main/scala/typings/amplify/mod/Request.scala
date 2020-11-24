@@ -2,12 +2,11 @@ package typings.amplify.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request extends js.Object {
-  var cache: js.Any = js.native
-  var decoders: Decoders = js.native
+  
   /***
     * Request a resource.
     * resourceId: Identifier string for the resource.
@@ -27,6 +26,11 @@ trait Request extends js.Object {
     *   error (optional): Function to invoke on error.
     */
   def apply(settings: RequestSettings): js.Any = js.native
+  
+  var cache: js.Any = js.native
+  
+  var decoders: Decoders = js.native
+  
   /***
     * Define a resource.
     * resourceId: Identifier string for the resource.
@@ -49,4 +53,3 @@ trait Request extends js.Object {
     */
   def define(resourceId: String, resource: js.Function1[/* settings */ RequestSettings, Unit]): Unit = js.native
 }
-

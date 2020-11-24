@@ -7,9 +7,8 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Row")
 @js.native
 object Row extends TopLevel[ForwardRefExoticComponent[RowProps with RefAttributes[HTMLDivElement]]]
-

@@ -11,8 +11,8 @@ Clamp a value between two other values
 | Full name          | clamp |
 | Keywords           | clamp, math, greater, less, than, between |
 | # releases         | 0 |
-| # dependents       | 178 |
-| # downloads        | 8481116 |
+| # dependents       | 191 |
+| # downloads        | 10276233 |
 | # stars            | 2 |
 
 ## Links

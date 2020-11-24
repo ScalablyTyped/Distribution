@@ -1,28 +1,13 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.hostMod.SyncHostOptions
+import typings.grammarkdown.nodeMod.NodeSyncHostOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "SyncHost")
 @js.native
 class SyncHost ()
-  extends typings.grammarkdown.hostMod.SyncHost {
-  def this(hasReadFileSyncWriteFileSyncBaseOptions: SyncHostOptions) = this()
+  extends typings.grammarkdown.nodeMod.NodeSyncHost {
+  def this(options: NodeSyncHostOptions) = this()
 }
-
-/* static members */
-@JSImport("grammarkdown", "SyncHost")
-@js.native
-object SyncHost extends js.Object {
-  def forFile(content: String): typings.grammarkdown.hostMod.SyncSingleFileHost = js.native
-  def forFile(
-    content: String,
-    file: js.UndefOr[scala.Nothing],
-    hostFallback: typings.grammarkdown.hostMod.SyncHost
-  ): typings.grammarkdown.hostMod.SyncSingleFileHost = js.native
-  def forFile(content: String, file: String): typings.grammarkdown.hostMod.SyncSingleFileHost = js.native
-  def forFile(content: String, file: String, hostFallback: typings.grammarkdown.hostMod.SyncHost): typings.grammarkdown.hostMod.SyncSingleFileHost = js.native
-}
-

@@ -12,7 +12,7 @@ Lock your system
 | Keywords           | lock, system, macos, mac, linux, windows, screen, os, login, password |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 1154 |
+| # downloads        | 1952 |
 | # stars            | 1 |
 
 ## Links

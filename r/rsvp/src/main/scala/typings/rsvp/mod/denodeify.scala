@@ -5,11 +5,12 @@ import typings.rsvp.rsvpBooleans.`false`
 import typings.rsvp.rsvpBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsvp", "denodeify")
 @js.native
 object denodeify extends js.Object {
+  
   def apply[T, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
@@ -71,4 +72,3 @@ object denodeify extends js.Object {
     typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]]
   ] = js.native
 }
-

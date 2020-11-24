@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Placement extends js.Object
-
 /**
   *
   * Specifies the way that an object is attached to its underlying cells.
@@ -16,6 +15,7 @@ sealed trait Placement extends js.Object
 @JSGlobal("Excel.Placement")
 @js.native
 object Placement extends js.Object {
+  
   /**
     * The object is free floating.
     *
@@ -36,6 +36,4 @@ object Placement extends js.Object {
     */
   @js.native
   sealed trait twoCell extends Placement
-  
 }
-

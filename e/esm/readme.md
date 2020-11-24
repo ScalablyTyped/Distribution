@@ -10,9 +10,9 @@ Tomorrow's ECMAScript modules today!
 | ------------------ | :-------------: |
 | Full name          | esm |
 | Keywords           | commonjs, ecmascript, export, import, modules, node, require |
-| # releases         | 118 |
-| # dependents       | 1292 |
-| # downloads        | 28638578 |
+| # releases         | 32 |
+| # dependents       | 2042 |
+| # downloads        | 55442163 |
 | # stars            | 3 |
 
 ## Links

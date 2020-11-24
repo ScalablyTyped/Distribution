@@ -18,22 +18,17 @@ import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined cloneable-readable.cloneable-readable.Cloneable<node.stream.Readable> */
 @js.native
 trait CloneableReadable extends js.Object {
-  var destroyed: Boolean = js.native
-  var readable: Boolean = js.native
-  val readableEncoding: BufferEncoding | Null = js.native
-  val readableEnded: Boolean = js.native
-  val readableFlowing: Boolean | Null = js.native
-  val readableHighWaterMark: Double = js.native
-  val readableLength: Double = js.native
-  val readableObjectMode: Boolean = js.native
+  
   def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
   def _read(size: Double): Unit = js.native
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
@@ -61,8 +56,12 @@ trait CloneableReadable extends js.Object {
   def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def destroy(): Unit = js.native
   def destroy(error: Error): Unit = js.native
+  
+  var destroyed: Boolean = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   @JSName("emit")
@@ -79,15 +78,22 @@ trait CloneableReadable extends js.Object {
   def emit_readable(event: readable): Boolean = js.native
   @JSName("emit")
   def emit_resume(event: resume): Boolean = js.native
+  
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
   def getMaxListeners(): Double = js.native
+  
   def isPaused(): Boolean = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listenerCount(`type`: js.Symbol): Double = js.native
+  
+  def listenerCount(event: String): Double = js.native
+  def listenerCount(event: js.Symbol): Double = js.native
+  
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -104,6 +110,7 @@ trait CloneableReadable extends js.Object {
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
@@ -120,9 +127,12 @@ trait CloneableReadable extends js.Object {
   def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def pause(): this.type = js.native
+  
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -139,6 +149,7 @@ trait CloneableReadable extends js.Object {
   def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -155,19 +166,38 @@ trait CloneableReadable extends js.Object {
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def push(chunk: js.Any): Boolean = js.native
   def push(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
+  
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def read(): js.Any = js.native
   def read(size: Double): js.Any = js.native
   @JSName("read")
   def read_Union(): String | Buffer = js.native
   @JSName("read")
   def read_Union(size: Double): String | Buffer = js.native
+  
+  var readable: Boolean = js.native
+  
+  val readableEncoding: BufferEncoding | Null = js.native
+  
+  val readableEnded: Boolean = js.native
+  
+  val readableFlowing: Boolean | Null = js.native
+  
+  val readableHighWaterMark: Double = js.native
+  
+  val readableLength: Double = js.native
+  
+  val readableObjectMode: Boolean = js.native
+  
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -184,17 +214,22 @@ trait CloneableReadable extends js.Object {
   def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def resume(): this.type = js.native
+  
   def setEncoding(encoding: BufferEncoding): this.type = js.native
+  
   def setMaxListeners(n: Double): this.type = js.native
+  
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native
+  
   def unshift(chunk: String): Unit = js.native
   def unshift(chunk: String, encoding: BufferEncoding): Unit = js.native
   def unshift(chunk: js.Any): Unit = js.native
   def unshift(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
   def unshift(chunk: Uint8Array): Unit = js.native
   def unshift(chunk: Uint8Array, encoding: BufferEncoding): Unit = js.native
+  
   def wrap(oldStream: ReadableStream): this.type = js.native
 }
-

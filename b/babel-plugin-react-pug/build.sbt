@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-react-pug"
-version := "0.5-dt-20200515Z-b00193"
+version := "0.5-dt-20200515Z-b8d7ad"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

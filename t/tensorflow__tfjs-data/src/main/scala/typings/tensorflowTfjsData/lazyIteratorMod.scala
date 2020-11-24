@@ -9,24 +9,53 @@ import typings.tensorflowTfjsData.ringBufferMod.RingBuffer
 import typings.tensorflowTfjsData.typesMod.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", JSImport.Namespace)
 @js.native
 object lazyIteratorMod extends js.Object {
+  
+  def iteratorFromConcatenated[T](baseIterators: LazyIterator[LazyIterator[T]]): LazyIterator[T] = js.native
+  def iteratorFromConcatenated[T](
+    baseIterators: LazyIterator[LazyIterator[T]],
+    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
+  ): LazyIterator[T] = js.native
+  
+  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]], count: Double): LazyIterator[T] = js.native
+  def iteratorFromConcatenatedFunction[T](
+    iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]],
+    count: Double,
+    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
+  ): LazyIterator[T] = js.native
+  
+  def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): LazyIterator[T] = js.native
+  
+  def iteratorFromIncrementing(start: Double): LazyIterator[Double] = js.native
+  
+  def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = js.native
+  
+  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = js.native
+  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer, mismatchMode: ZipMismatchMode): LazyIterator[O] = js.native
+  
   @js.native
   class ChainedIterator[T] protected () extends LazyIterator[T] {
     def this(iterators: LazyIterator[LazyIterator[T]]) = this()
     def this(iterators: LazyIterator[LazyIterator[T]], baseErrorHandler: js.Function1[/* e */ Error, Boolean]) = this()
+    
     val baseErrorHandler: js.Any = js.native
+    
     var iterator: js.Any = js.native
+    
     var lastRead: js.Any = js.native
+    
     var moreIterators: js.Any = js.native
+    
     var readFromChain: js.Any = js.native
   }
   
   @js.native
   abstract class LazyIterator[T] () extends js.Object {
+    
     /**
       * Groups elements into batches, represented in column-major form.
       *
@@ -71,6 +100,7 @@ object lazyIteratorMod extends js.Object {
       smallLastBatch: Boolean,
       zipFn: js.Function1[/* xs */ js.Array[_], DeepMapResult]
     ): LazyIterator[TensorContainer] = js.native
+    
     /**
       * Concatenate this `LazyIterator` with another.
       *
@@ -83,6 +113,7 @@ object lazyIteratorMod extends js.Object {
       */
     def concatenate(iterator: LazyIterator[T]): LazyIterator[T] = js.native
     def concatenate(iterator: LazyIterator[T], baseErrorHandler: js.Function1[/* e */ Error, Boolean]): LazyIterator[T] = js.native
+    
     /**
       * Filters this stream according to `predicate`.
       *
@@ -92,6 +123,7 @@ object lazyIteratorMod extends js.Object {
       * @returns A `LazyIterator` of elements for which the predicate was true.
       */
     def filter(predicate: js.Function1[/* value */ T, Boolean]): LazyIterator[T] = js.native
+    
     /**
       * Maps this stream through a 1-to-many transform.
       *
@@ -101,12 +133,14 @@ object lazyIteratorMod extends js.Object {
       * @returns A `DataStream` of transformed elements.
       */
     def flatmap[O](transform: js.Function1[/* value */ T, js.Array[O]]): LazyIterator[O] = js.native
+    
     /**
       * Apply a function to every element of the stream.
       *
       * @param f A function to apply to each stream element.
       */
     def forEachAsync(f: js.Function1[/* value */ T, Unit]): js.Promise[Unit] = js.native
+    
     /**
       * Handles errors thrown on this stream using a provided handler function.
       *
@@ -120,6 +154,7 @@ object lazyIteratorMod extends js.Object {
       *   throw an `Error`.
       */
     def handleErrors(handler: js.Function1[/* error */ Error, Boolean]): LazyIterator[T] = js.native
+    
     /**
       * Maps this stream through a 1-to-1 transform.
       *
@@ -129,6 +164,7 @@ object lazyIteratorMod extends js.Object {
       * @returns A `LazyIterator` of transformed elements.
       */
     def map[O](transform: js.Function1[/* value */ T, O]): LazyIterator[O] = js.native
+    
     /**
       * Maps this stream through an async 1-to-1 transform.
       *
@@ -138,6 +174,7 @@ object lazyIteratorMod extends js.Object {
       * @returns A `LazyIterator` of transformed elements.
       */
     def mapAsync[O](transform: js.Function1[/* value */ T, js.Promise[O]]): LazyIterator[O] = js.native
+    
     /**
       * Returns a `Promise` for the next element in the stream.
       *
@@ -147,6 +184,7 @@ object lazyIteratorMod extends js.Object {
       * Calling next() on a closed stream returns `{value:null, done:true}`.
       */
     def next(): js.Promise[IteratorResult[T, _]] = js.native
+    
     /**
       * Prefetch the first `bufferSize` items in this stream.
       *
@@ -157,6 +195,7 @@ object lazyIteratorMod extends js.Object {
       *   prefetched.
       */
     def prefetch(bufferSize: Double): LazyIterator[T] = js.native
+    
     /**
       * Draw items from the stream until it is exhausted.
       *
@@ -165,6 +204,7 @@ object lazyIteratorMod extends js.Object {
       * fully processed.
       */
     def resolveFully(): js.Promise[Unit] = js.native
+    
     /**
       * Draw items from the stream until it is exhausted, or a predicate fails.
       *
@@ -173,6 +213,7 @@ object lazyIteratorMod extends js.Object {
       * fully processed.
       */
     def resolveWhile(predicate: js.Function1[/* r */ T, Boolean]): js.Promise[Unit] = js.native
+    
     /**
       * Groups elements into batches, represented as arrays of elements.
       *
@@ -193,11 +234,13 @@ object lazyIteratorMod extends js.Object {
       */
     def rowMajorBatch(batchSize: Double): LazyIterator[js.Array[T]] = js.native
     def rowMajorBatch(batchSize: Double, smallLastBatch: Boolean): LazyIterator[js.Array[T]] = js.native
+    
     /**
       * Force an iterator to execute serially: each next() call will await the
       * prior one, so that they cannot execute concurrently.
       */
     def serial(): LazyIterator[T] = js.native
+    
     /**
       * Apply a function to every element of the stream, forcing serial execution.
       *
@@ -206,6 +249,7 @@ object lazyIteratorMod extends js.Object {
       *   terminate.
       */
     def serialForEach(f: js.Function1[/* value */ T, js.Promise[Boolean]]): js.Promise[Unit] = js.native
+    
     /**
       * Maps this stream through a 1-to-1 transform, forcing serial execution.
       *
@@ -215,6 +259,7 @@ object lazyIteratorMod extends js.Object {
       * @returns A `LazyIterator` of transformed elements.
       */
     def serialMapAsync[O](transform: js.Function1[/* value */ T, js.Promise[O]]): LazyIterator[O] = js.native
+    
     /**
       * Randomly shuffles the elements of this stream.
       *
@@ -225,6 +270,7 @@ object lazyIteratorMod extends js.Object {
       */
     def shuffle(windowSize: Double): LazyIterator[T] = js.native
     def shuffle(windowSize: Double, seed: String): LazyIterator[T] = js.native
+    
     /**
       * Skips the first `count` items in this stream.
       *
@@ -232,7 +278,9 @@ object lazyIteratorMod extends js.Object {
       * value is given, the entire stream is returned unaltered.
       */
     def skip(count: Double): LazyIterator[T] = js.native
+    
     def summary(): String = js.native
+    
     /**
       * Limits this stream to return at most `count` items.
       *
@@ -241,6 +289,7 @@ object lazyIteratorMod extends js.Object {
       *   unaltered.
       */
     def take(count: Double): LazyIterator[T] = js.native
+    
     /**
       * Collect all remaining elements of a bounded stream into an array.
       * Obviously this will succeed only for small streams that fit in memory.
@@ -250,6 +299,7 @@ object lazyIteratorMod extends js.Object {
       *   when the stream is exhausted.
       */
     def toArray(): js.Promise[js.Array[T]] = js.native
+    
     /**
       * Collect all elements of this dataset into an array with prefetching 100
       * elements. This is useful for testing, because the prefetch changes the
@@ -266,8 +316,11 @@ object lazyIteratorMod extends js.Object {
   
   @js.native
   abstract class OneToManyIterator[T] () extends LazyIterator[T] {
+    
     var lastRead: js.Any = js.native
+    
     var outputQueue: RingBuffer[T] = js.native
+    
     /**
       * Read one or more chunks from upstream and process them, possibly
       * reading or writing a carryover, and adding processed items to the
@@ -281,78 +334,70 @@ object lazyIteratorMod extends js.Object {
       * (i.e., any remaining carryover).
       */
     /* protected */ def pump(): js.Promise[Boolean] = js.native
+    
     def serialNext(): js.Promise[IteratorResult[T, _]] = js.native
   }
   
   @js.native
   class PrefetchIterator[T] protected () extends LazyIterator[T] {
     def this(upstream: LazyIterator[T], bufferSize: Double) = this()
+    
     var buffer: RingBuffer[js.Promise[IteratorResult[T, _]]] = js.native
+    
     var bufferSize: Double = js.native
-    var upstream: LazyIterator[T] = js.native
+    
     /**
       * Refill the prefetch buffer.  Returns only after the buffer is full, or
       * the upstream source is exhausted.
       */
     /* protected */ def refill(): Unit = js.native
+    
+    var upstream: LazyIterator[T] = js.native
   }
   
   @js.native
   class ShuffleIterator[T] protected () extends PrefetchIterator[T] {
     def this(upstream: LazyIterator[T], windowSize: Double) = this()
     def this(upstream: LazyIterator[T], windowSize: Double, seed: String) = this()
-    var lastRead: js.Any = js.native
-    val random: js.Any = js.native
-    var randomInt: js.Any = js.native
-    var upstreamExhausted: js.Any = js.native
-    var windowSize: Double = js.native
+    
     /* protected */ def chooseIndex(): Double = js.native
+    
+    var lastRead: js.Any = js.native
+    
+    val random: js.Any = js.native
+    
+    var randomInt: js.Any = js.native
+    
     def serialNext(): js.Promise[IteratorResult[T, _]] = js.native
+    
+    var upstreamExhausted: js.Any = js.native
+    
+    var windowSize: Double = js.native
   }
   
   @js.native
   sealed trait ZipMismatchMode extends js.Object
-  
-  def iteratorFromConcatenated[T](baseIterators: LazyIterator[LazyIterator[T]]): LazyIterator[T] = js.native
-  def iteratorFromConcatenated[T](
-    baseIterators: LazyIterator[LazyIterator[T]],
-    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
-  ): LazyIterator[T] = js.native
-  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]], count: Double): LazyIterator[T] = js.native
-  def iteratorFromConcatenatedFunction[T](
-    iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]],
-    count: Double,
-    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
-  ): LazyIterator[T] = js.native
-  def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): LazyIterator[T] = js.native
-  def iteratorFromIncrementing(start: Double): LazyIterator[Double] = js.native
-  def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = js.native
-  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = js.native
-  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer, mismatchMode: ZipMismatchMode): LazyIterator[O] = js.native
   @js.native
   object ZipMismatchMode extends js.Object {
-    @js.native
-    sealed trait FAIL extends ZipMismatchMode
-    
-    @js.native
-    sealed trait LONGEST extends ZipMismatchMode
-    
-    @js.native
-    sealed trait SHORTEST extends ZipMismatchMode
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ZipMismatchMode with Double] = js.native
+    
+    @js.native
+    sealed trait FAIL extends ZipMismatchMode
     /* 0 */ @js.native
     object FAIL extends TopLevel[FAIL with Double]
     
+    @js.native
+    sealed trait LONGEST extends ZipMismatchMode
     /* 2 */ @js.native
     object LONGEST extends TopLevel[LONGEST with Double]
     
+    @js.native
+    sealed trait SHORTEST extends ZipMismatchMode
     /* 1 */ @js.native
     object SHORTEST extends TopLevel[SHORTEST with Double]
-    
   }
   
   type IteratorContainer = Container[LazyIterator[TensorContainer]]
 }
-

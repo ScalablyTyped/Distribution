@@ -5,11 +5,12 @@ import typings.history.mod.LocationDescriptor
 import typings.history.mod.LocationKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("history/LocationUtils", JSImport.Namespace)
 @js.native
 object locationUtilsMod extends js.Object {
+  
   def createLocation[S](path: LocationDescriptor[S]): Location[S] = js.native
   def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = js.native
   def createLocation[S](
@@ -33,6 +34,6 @@ object locationUtilsMod extends js.Object {
     key: LocationKey,
     currentLocation: Location[S]
   ): Location[S] = js.native
+  
   def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = js.native
 }
-

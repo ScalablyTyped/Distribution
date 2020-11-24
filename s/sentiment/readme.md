@@ -11,8 +11,8 @@ AFINN-based sentiment analysis for Node.js
 | Full name          | sentiment |
 | Keywords           | sentiment, analysis, nlp, sentiment analysis |
 | # releases         | 2 |
-| # dependents       | 81 |
-| # downloads        | 984606 |
+| # dependents       | 82 |
+| # downloads        | 1003416 |
 | # stars            | 49 |
 
 ## Links

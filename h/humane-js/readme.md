@@ -11,8 +11,8 @@ A simple, modern, browser notification system
 | Full name          | humane-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 90468 |
+| # dependents       | 14 |
+| # downloads        | 88581 |
 | # stars            | 3 |
 
 ## Links

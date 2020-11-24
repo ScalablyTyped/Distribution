@@ -12,7 +12,7 @@ VNDB API wrapper
 | Keywords           | VNDB, Visual Novel, API Wrapper |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 247 |
+| # downloads        | 575 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MapTypeId extends js.Object
-
 @JSGlobal("Microsoft.Maps.MapTypeId")
 @js.native
 object MapTypeId extends js.Object {
+  
   /** The aerial map type which uses top-down satellite & airplane imagery. */
   @js.native
   sealed trait aerial extends MapTypeId
@@ -45,6 +45,4 @@ object MapTypeId extends js.Object {
   /** Provides streetside panoramas from the street level. */
   @js.native
   sealed trait streetside extends MapTypeId
-  
 }
-

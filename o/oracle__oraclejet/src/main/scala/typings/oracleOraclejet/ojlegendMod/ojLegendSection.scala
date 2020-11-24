@@ -127,18 +127,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojLegendSection extends JetElement[ojLegendSectionSettableProperties] {
-  var collapsible: js.UndefOr[on | off] = js.native
-  var onCollapsibleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off]], _]) | Null = js.native
-  var onTextChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onTextHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[center | end | start]], _]) | Null = js.native
-  var onTextStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var text: js.UndefOr[String] = js.native
-  var textHalign: js.UndefOr[center | end | start] = js.native
-  var textStyle: js.UndefOr[js.Object] = js.native
+  
   def addEventListener(
     `type`: collapsibleChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[on | off]], _]
@@ -962,6 +955,9 @@ trait ojLegendSection extends JetElement[ojLegendSectionSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var collapsible: js.UndefOr[on | off] = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_collapsible(property: collapsible): js.UndefOr[on | off] = js.native
@@ -971,7 +967,17 @@ trait ojLegendSection extends JetElement[ojLegendSectionSettableProperties] {
   def getProperty_textHalign(property: textHalign): js.UndefOr[center | end | start] = js.native
   @JSName("getProperty")
   def getProperty_textStyle(property: textStyle): js.UndefOr[js.Object] = js.native
+  
+  var onCollapsibleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off]], _]) | Null = js.native
+  
+  var onTextChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onTextHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[center | end | start]], _]) | Null = js.native
+  
+  var onTextStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
   def setProperties(properties: ojLegendSectionSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: collapsible, value: off): Unit = js.native
   def setProperty(property: collapsible, value: on): Unit = js.native
   def setProperty(property: textHalign, value: center): Unit = js.native
@@ -990,5 +996,10 @@ trait ojLegendSection extends JetElement[ojLegendSectionSettableProperties] {
   def setProperty_textStyle(property: textStyle): Unit = js.native
   @JSName("setProperty")
   def setProperty_textStyle(property: textStyle, value: js.Object): Unit = js.native
+  
+  var text: js.UndefOr[String] = js.native
+  
+  var textHalign: js.UndefOr[center | end | start] = js.native
+  
+  var textStyle: js.UndefOr[js.Object] = js.native
 }
-

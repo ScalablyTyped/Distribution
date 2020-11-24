@@ -2,10 +2,11 @@ package typings.facebookInstantGames.FBInstant
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Player extends js.Object {
+  
   /**
     * Returns a promise that resolves with whether the player can subscribe to the game bot or not.
     * Developer can only call subscribeBotAsync() after checking canSubscribeBotAsync(), and the player will
@@ -14,6 +15,7 @@ trait Player extends js.Object {
     * @returns Whether a player can subscribe to the game bot or not.
     */
   def canSubscribeBotAsync(): js.Promise[Boolean] = js.native
+  
   /**
     * Immediately flushes any changes to the player data to the designated cloud storage. This function is expensive, and should primarily be
     * used for critical changes where persistence needs to be immediate and known by the game. Non-critical changes should rely on the platform
@@ -26,6 +28,7 @@ trait Player extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
   def flushDataAsync(): js.Promise[Unit] = js.native
+  
   /**
     * Fetches an array of ConnectedPlayer objects containing information about players that are connected to the current player.
     * @returns A promise that resolves with a list of connected player objects. NOTE: This promise will not resolve until FBInstant.startGameAsync() has resolved.
@@ -33,6 +36,7 @@ trait Player extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
   def getConnectedPlayersAsync(): js.Promise[js.Array[ConnectedPlayer]] = js.native
+  
   /**
     * Retrieve data from the designated cloud storage of the current player.
     *
@@ -43,6 +47,7 @@ trait Player extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
   def getDataAsync(keys: js.Array[String]): js.Promise[DataObject] = js.native
+  
   /**
     * A unique identifier for the player. A Facebook user's player ID will remain constant,
     * and is scoped to a specific game. This means that different games will have different
@@ -52,12 +57,14 @@ trait Player extends js.Object {
     * @returns A unique identifier for the player.
     */
   def getID(): String | Null = js.native
+  
   /**
     * The player's localized display name. This function should not be called until FBInstant.startGameAsync() has resolved.
     *
     * @returns The player's localized display name.
     */
   def getName(): String | Null = js.native
+  
   /**
     * A url to the player's public profile photo. The photo will always be a square, and with dimensions of at least 200x200.
     * When rendering it in the game, the exact dimensions should never be assumed to be constant. It's recommended to always
@@ -69,6 +76,7 @@ trait Player extends js.Object {
     * @returns Url to the player's public profile photo.
     */
   def getPhoto(): String | Null = js.native
+  
   /**
     * Fetch the player's unique identifier along with a signature that verifies that the identifier indeed
     * comes from Facebook without being tampered with. This function should not be called until
@@ -82,6 +90,7 @@ trait Player extends js.Object {
     */
   def getSignedPlayerInfoAsync(): js.Promise[SignedPlayerInfo] = js.native
   def getSignedPlayerInfoAsync(requestPayload: String): js.Promise[SignedPlayerInfo] = js.native
+  
   /**
     * Retrieve stats from the designated cloud storage of the current player.
     *
@@ -93,6 +102,7 @@ trait Player extends js.Object {
     */
   def getStatsAsync(): js.Promise[StatsObject] = js.native
   def getStatsAsync(keys: js.Array[String]): js.Promise[StatsObject] = js.native
+  
   /**
     * Increment stats saved in the designated cloud storage of the current player.
     *
@@ -107,6 +117,7 @@ trait Player extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
   def incrementStatsAsync(increments: IncrementObject): js.Promise[StatsObject] = js.native
+  
   /**
     * Set data to be saved to the designated cloud storage of the current player. The game can store up to 1MB of data for each unique player.
     *
@@ -120,6 +131,7 @@ trait Player extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
   def setDataAsync(data: DataObject): js.Promise[Unit] = js.native
+  
   /**
     * Set stats to be saved to the designated cloud storage of the current player.
     *
@@ -133,6 +145,7 @@ trait Player extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
   def setStatsAsync(stats: StatsObject): js.Promise[Unit] = js.native
+  
   /**
     * Request that the player subscribe the bot associated to the game. The API will reject if the subscription
     * fails - else, the player will subscribe the game bot.
@@ -144,4 +157,3 @@ trait Player extends js.Object {
     */
   def subscribeBotAsync(): js.Promise[Unit] = js.native
 }
-

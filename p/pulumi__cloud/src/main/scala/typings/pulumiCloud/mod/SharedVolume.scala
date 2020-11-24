@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.pulumiCloud.serviceMod.SharedVolumeConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud", "SharedVolume")
 @js.native
 object SharedVolume extends TopLevel[SharedVolumeConstructor]
-

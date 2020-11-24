@@ -5,9 +5,70 @@ import typings.twilsock.protocolMod.Protocol.Method
 import typings.twilsock.twilsockMod.TwilsockChannel.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilsockStrings {
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  
+  @scala.inline
+  def delete_notification_ctx: delete_notification_ctx = "delete_notification_ctx".asInstanceOf[delete_notification_ctx]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def notification: notification = "notification".asInstanceOf[notification]
+  
+  @scala.inline
+  def ping: ping = "ping".asInstanceOf[ping]
+  
+  @scala.inline
+  def put_notification_ctx: put_notification_ctx = "put_notification_ctx".asInstanceOf[put_notification_ctx]
+  
+  @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  
+  @scala.inline
+  def reply: reply = "reply".asInstanceOf[reply]
+  
+  @scala.inline
+  def telemetryDotv1: telemetryDotv1 = "telemetry.v1".asInstanceOf[telemetryDotv1]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
   @js.native
   sealed trait DELETE extends Method
   
@@ -63,45 +124,8 @@ object twilsockStrings {
   sealed trait reply extends MessageType
   
   @js.native
-  sealed trait unknown extends State
+  sealed trait telemetryDotv1 extends MessageType
   
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def delete_notification_ctx: delete_notification_ctx = "delete_notification_ctx".asInstanceOf[delete_notification_ctx]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def put_notification_ctx: put_notification_ctx = "put_notification_ctx".asInstanceOf[put_notification_ctx]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
-  @scala.inline
-  def reply: reply = "reply".asInstanceOf[reply]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @js.native
+  sealed trait unknown extends State
 }
-

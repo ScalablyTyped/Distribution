@@ -6,7 +6,7 @@ import typings.bezierJs.BezierJs.Point
 import typings.bezierJs.anon.Typeofutils
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bezier curve constructor. The constructor argument can be one of three things:
@@ -36,18 +36,21 @@ class ^ protected () extends Bezier {
   ) = this()
   def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double) = this()
 }
-
 @JSImport("bezier-js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def cubicFromPoints(S: Point, B: Point, E: Point): Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: js.UndefOr[scala.Nothing], d1: Double): Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): Bezier = js.native
+  
   def fromSVG(svgString: String): Bezier = js.native
+  
   def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = js.native
+  
   def getUtils(): Typeofutils = js.native
+  
   def quadraticFromPoints(p1: Point, p2: Point, p3: Point): Bezier = js.native
   def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): Bezier = js.native
 }
-

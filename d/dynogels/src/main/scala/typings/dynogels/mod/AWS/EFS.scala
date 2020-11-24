@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.efsMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.EFS")
 @js.native
@@ -14,4 +14,3 @@ class EFS ()
   extends typings.awsSdk.mod.EFS {
   def this(options: ClientConfiguration) = this()
 }
-

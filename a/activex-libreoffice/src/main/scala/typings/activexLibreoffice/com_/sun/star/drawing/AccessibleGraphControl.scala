@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The service describes the accessible graph controls that are used in the image map of the Draw and Impress applications and the contour dialog of the
@@ -32,8 +32,8 @@ trait AccessibleGraphControl
      with XAccessibleComponent
      with XAccessibleEventBroadcaster
      with XAccessibleSelection
-
 object AccessibleGraphControl {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -90,4 +90,3 @@ object AccessibleGraphControl {
     __obj.asInstanceOf[AccessibleGraphControl]
   }
 }
-

@@ -50,50 +50,61 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.SetScriptSourceResponse
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetSkipAllPausesRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetVariableValueRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.StepIntoRequest
+import typings.devtoolsProtocol.mod.Protocol.Debugger.StepOverRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DebuggerApi extends js.Object {
+  
   /**
     * Continues execution until specific location is reached.
     */
   def continueToLocation(params: ContinueToLocationRequest): js.Promise[Unit] = js.native
+  
   /**
     * Disables debugger for given page.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables debugger for the given page. Clients should not assume that the debugging has been
     * enabled until the result for this command is received.
     */
   def enable(params: EnableRequest): js.Promise[EnableResponse] = js.native
+  
   /**
     * Evaluates expression on a given call frame.
     */
   def evaluateOnCallFrame(params: EvaluateOnCallFrameRequest): js.Promise[EvaluateOnCallFrameResponse] = js.native
+  
   /**
     * Execute a Wasm Evaluator module on a given call frame.
     */
   def executeWasmEvaluator(params: ExecuteWasmEvaluatorRequest): js.Promise[ExecuteWasmEvaluatorResponse] = js.native
+  
   /**
     * Returns possible locations for breakpoint. scriptId in start and end range locations should be
     * the same.
     */
   def getPossibleBreakpoints(params: GetPossibleBreakpointsRequest): js.Promise[GetPossibleBreakpointsResponse] = js.native
+  
   /**
     * Returns source for the script with given id.
     */
   def getScriptSource(params: GetScriptSourceRequest): js.Promise[GetScriptSourceResponse] = js.native
+  
   /**
     * Returns stack trace with given `stackTraceId`.
     */
   def getStackTrace(params: GetStackTraceRequest): js.Promise[GetStackTraceResponse] = js.native
+  
   /**
     * This command is deprecated. Use getScriptSource instead.
     */
   def getWasmBytecode(params: GetWasmBytecodeRequest): js.Promise[GetWasmBytecodeResponse] = js.native
+  
   /**
     * Fired when breakpoint is resolved to an actual script and location.
     */
@@ -120,37 +131,46 @@ trait DebuggerApi extends js.Object {
     */
   @JSName("on")
   def on_scriptParsed(event: scriptParsed, listener: js.Function1[/* params */ ScriptParsedEvent, Unit]): Unit = js.native
+  
   /**
     * Stops on the next JavaScript statement.
     */
   def pause(): js.Promise[Unit] = js.native
+  
   def pauseOnAsyncCall(params: PauseOnAsyncCallRequest): js.Promise[Unit] = js.native
+  
   /**
     * Removes JavaScript breakpoint.
     */
   def removeBreakpoint(params: RemoveBreakpointRequest): js.Promise[Unit] = js.native
+  
   /**
     * Restarts particular call frame from the beginning.
     */
   def restartFrame(params: RestartFrameRequest): js.Promise[RestartFrameResponse] = js.native
+  
   /**
     * Resumes JavaScript execution.
     */
   def resume(params: ResumeRequest): js.Promise[Unit] = js.native
+  
   /**
     * Searches for given string in script content.
     */
   def searchInContent(params: SearchInContentRequest): js.Promise[SearchInContentResponse] = js.native
+  
   /**
     * Enables or disables async call stacks tracking.
     */
   def setAsyncCallStackDepth(params: SetAsyncCallStackDepthRequest): js.Promise[Unit] = js.native
+  
   /**
     * Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in
     * scripts with url matching one of the patterns. VM will try to leave blackboxed script by
     * performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
     */
   def setBlackboxPatterns(params: SetBlackboxPatternsRequest): js.Promise[Unit] = js.native
+  
   /**
     * Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted
     * scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
@@ -158,10 +178,12 @@ trait DebuggerApi extends js.Object {
     * blackboxed. Array should be sorted.
     */
   def setBlackboxedRanges(params: SetBlackboxedRangesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Sets JavaScript breakpoint at a given location.
     */
   def setBreakpoint(params: SetBreakpointRequest): js.Promise[SetBreakpointResponse] = js.native
+  
   /**
     * Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
     * command is issued, all existing parsed scripts will have breakpoints resolved and returned in
@@ -169,53 +191,63 @@ trait DebuggerApi extends js.Object {
     * `breakpointResolved` events issued. This logical breakpoint will survive page reloads.
     */
   def setBreakpointByUrl(params: SetBreakpointByUrlRequest): js.Promise[SetBreakpointByUrlResponse] = js.native
+  
   /**
     * Sets JavaScript breakpoint before each call to the given function.
     * If another function was created from the same source as a given one,
     * calling it will also trigger the breakpoint.
     */
   def setBreakpointOnFunctionCall(params: SetBreakpointOnFunctionCallRequest): js.Promise[SetBreakpointOnFunctionCallResponse] = js.native
+  
   /**
     * Activates / deactivates all breakpoints on the page.
     */
   def setBreakpointsActive(params: SetBreakpointsActiveRequest): js.Promise[Unit] = js.native
+  
   /**
     * Sets instrumentation breakpoint.
     */
   def setInstrumentationBreakpoint(params: SetInstrumentationBreakpointRequest): js.Promise[SetInstrumentationBreakpointResponse] = js.native
+  
   /**
     * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or
     * no exceptions. Initial pause on exceptions state is `none`.
     */
   def setPauseOnExceptions(params: SetPauseOnExceptionsRequest): js.Promise[Unit] = js.native
+  
   /**
     * Changes return value in top frame. Available only at return break position.
     */
   def setReturnValue(params: SetReturnValueRequest): js.Promise[Unit] = js.native
+  
   /**
     * Edits JavaScript source live.
     */
   def setScriptSource(params: SetScriptSourceRequest): js.Promise[SetScriptSourceResponse] = js.native
+  
   /**
     * Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).
     */
   def setSkipAllPauses(params: SetSkipAllPausesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Changes value of variable in a callframe. Object-based scopes are not supported and must be
     * mutated manually.
     */
   def setVariableValue(params: SetVariableValueRequest): js.Promise[Unit] = js.native
+  
   /**
     * Steps into the function call.
     */
   def stepInto(params: StepIntoRequest): js.Promise[Unit] = js.native
+  
   /**
     * Steps out of the function call.
     */
   def stepOut(): js.Promise[Unit] = js.native
+  
   /**
     * Steps over the statement.
     */
-  def stepOver(): js.Promise[Unit] = js.native
+  def stepOver(params: StepOverRequest): js.Promise[Unit] = js.native
 }
-

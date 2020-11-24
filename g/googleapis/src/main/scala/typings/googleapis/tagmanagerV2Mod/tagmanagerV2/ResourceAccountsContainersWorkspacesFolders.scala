@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Folders")
 @js.native
 class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.create
     * @desc Creates a GTM Folder.
@@ -45,6 +47,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.delete
     * @desc Deletes a GTM Folder.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.entities
     * @desc List all entities in a GTM Folder.
@@ -108,6 +112,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFolderEntities]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.get
     * @desc Gets a GTM Folder.
@@ -139,6 +144,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.list
     * @desc Lists all GTM Folders of a Container.
@@ -171,6 +177,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListFoldersResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.move_entities_to_folder
     * @desc Moves entities to a GTM Folder.
@@ -210,6 +217,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.revert
     * @desc Reverts changes to a GTM Folder in a GTM Workspace.
@@ -242,6 +250,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevertFolderResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.folders.update
     * @desc Updates a GTM Folder.
@@ -276,4 +285,3 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Expand environment variables using dotenv
 | ------------------ | :-------------: |
 | Full name          | dotenv-expand |
 | Keywords           | dotenv, expand, variables |
-| # releases         | 5 |
-| # dependents       | 2283 |
-| # downloads        | 96473632 |
+| # releases         | 3 |
+| # dependents       | 2799 |
+| # downloads        | 172429157 |
 | # stars            | 3 |
 
 ## Links

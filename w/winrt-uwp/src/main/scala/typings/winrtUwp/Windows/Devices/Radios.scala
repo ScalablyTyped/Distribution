@@ -7,52 +7,54 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The members of this namespace allow your app to find and control radio adapters, like Wi-Fi and Bluetooth, on the device where your app runs, and to query those radios for certain attributes. */
 @JSGlobal("Windows.Devices.Radios")
 @js.native
 object Radios extends js.Object {
+  
   /** Represents a radio device on the system. */
   @js.native
   trait Radio extends js.Object {
-    /** Gets an enumeration value that describes what kind of radio this object represents. */
-    var kind: RadioKind = js.native
-    /** Gets the name of the radio represented by this object. */
-    var name: String = js.native
-    /** Event raised by a state change in the radio represented by this object. */
-    @JSName("onstatechanged")
-    var onstatechanged_Original: TypedEventHandler[Radio, _] = js.native
-    /** Gets the current state of the radio represented by this object. */
-    var state: RadioState = js.native
+    
     def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[Radio, _]): Unit = js.native
+    
+    /** Gets an enumeration value that describes what kind of radio this object represents. */
+    var kind: RadioKind = js.native
+    
+    /** Gets the name of the radio represented by this object. */
+    var name: String = js.native
+    
     /** Event raised by a state change in the radio represented by this object. */
     def onstatechanged(ev: js.Any with WinRTEvent[Radio]): Unit = js.native
+    /** Event raised by a state change in the radio represented by this object. */
+    @JSName("onstatechanged")
+    var onstatechanged_Original: TypedEventHandler[Radio, _] = js.native
+    
     def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[Radio, _]): Unit = js.native
+    
     /**
       * An asynchronous operation that attempts to set the state of the radio represented by this object.
       * @param value The desired radio state.
       * @return An asynchronous state setting operation. On successful completion, contains an enumeration value describing status of the state change request.
       */
     def setStateAsync(value: RadioState): IPromiseWithIAsyncOperation[RadioAccessStatus] = js.native
+    
+    /** Gets the current state of the radio represented by this object. */
+    var state: RadioState = js.native
   }
   
   @js.native
   sealed trait RadioAccessStatus extends js.Object
-  
-  @js.native
-  sealed trait RadioKind extends js.Object
-  
-  @js.native
-  sealed trait RadioState extends js.Object
-  
   /** Enumeration that describes possible access states that a user can have to a given radio. */
   @js.native
   object RadioAccessStatus extends js.Object {
+    
     /** Access is allowed. */
     @js.native
     sealed trait allowed extends RadioAccessStatus
@@ -68,12 +70,14 @@ object Radios extends js.Object {
     /** Access state is unspecified. */
     @js.native
     sealed trait unspecified extends RadioAccessStatus
-    
   }
   
+  @js.native
+  sealed trait RadioKind extends js.Object
   /** Enumeration that represents the kinds of radio devices. */
   @js.native
   object RadioKind extends js.Object {
+    
     /** A Bluetooth radio. */
     @js.native
     sealed trait bluetooth extends RadioKind
@@ -93,12 +97,14 @@ object Radios extends js.Object {
     /** A Wi-Fi radio. */
     @js.native
     sealed trait wiFi extends RadioKind
-    
   }
   
+  @js.native
+  sealed trait RadioState extends js.Object
   /** Enumeration that describes possible radio states. */
   @js.native
   object RadioState extends js.Object {
+    
     /** The radio is powered off and disabled by the device firmware or a hardware switch on the device. */
     @js.native
     sealed trait disabled extends RadioState
@@ -114,8 +120,5 @@ object Radios extends js.Object {
     /** The radio state is unknown, or the radio is in a bad or uncontrollable state. */
     @js.native
     sealed trait unknown extends RadioState
-    
   }
-  
 }
-

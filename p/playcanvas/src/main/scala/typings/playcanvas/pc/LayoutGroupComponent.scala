@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new LayoutGroupComponent.
@@ -66,17 +66,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LayoutGroupComponent extends Component {
+  
   /**
     * Specifies the horizontal and vertical alignment of
     child elements. Values range from 0 to 1 where [0, 0] is the bottom left and
     [1, 1] is the top right. Defaults to [0, 1].
     */
   var alignment: Vec2 = js.native
+  
   /**
     * Identical to {@link pc.LayoutGroupComponent#widthFitting}
     but for the Y axis. Defaults to pc.FITTING_NONE.
     */
   var heightFitting: Double = js.native
+  
   /**
     * Whether the layout should run horizontally or
     vertically. Can be:
@@ -87,27 +90,32 @@ trait LayoutGroupComponent extends Component {
     Defaults to pc.ORIENTATION_HORIZONTAL.
     */
   var orientation: Double = js.native
+  
   /**
     * Padding to be applied inside the container before
     positioning any children. Specified as left, bottom, right and top values.
     Defaults to [0, 0, 0, 0] (no padding).
     */
   var padding: Vec4 = js.native
+  
   /**
     * Reverses the order of children along the x axis.
     Defaults to false.
     */
   var reverseX: Boolean = js.native
+  
   /**
     * Reverses the order of children along the y axis.
     Defaults to true.
     */
   var reverseY: Boolean = js.native
+  
   /**
     * Spacing to be applied between each child element.
     Defaults to [0, 0] (no spacing).
     */
   var spacing: Vec2 = js.native
+  
   /**
     * Fitting logic to be applied when positioning and
     scaling child elements. Can be:
@@ -137,6 +145,7 @@ trait LayoutGroupComponent extends Component {
     Defaults to pc.FITTING_NONE.
     */
   var widthFitting: Double = js.native
+  
   /**
     * Whether or not to wrap children onto a new row/column when the
     size of the container is exceeded. Defaults to false, which means that children will be
@@ -148,4 +157,3 @@ trait LayoutGroupComponent extends Component {
     */
   var wrap: Boolean = js.native
 }
-

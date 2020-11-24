@@ -5,9 +5,52 @@ import typings.mobileMessagingCordova.MobileMessagingCordova.Gender
 import typings.mobileMessagingCordova.MobileMessagingCordova.OS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobileMessagingCordovaStrings {
+  
+  @scala.inline
+  def Android: Android = "Android".asInstanceOf[Android]
+  
+  @scala.inline
+  def Female: Female = "Female".asInstanceOf[Female]
+  
+  @scala.inline
+  def Male: Male = "Male".asInstanceOf[Male]
+  
+  @scala.inline
+  def actionTapped: actionTapped = "actionTapped".asInstanceOf[actionTapped]
+  
+  @scala.inline
+  def depersonalized: depersonalized = "depersonalized".asInstanceOf[depersonalized]
+  
+  @scala.inline
+  def geofenceEntered: geofenceEntered = "geofenceEntered".asInstanceOf[geofenceEntered]
+  
+  @scala.inline
+  def iOS: iOS = "iOS".asInstanceOf[iOS]
+  
+  @scala.inline
+  def installationUpdated: installationUpdated = "installationUpdated".asInstanceOf[installationUpdated]
+  
+  @scala.inline
+  def messageReceived: messageReceived = "messageReceived".asInstanceOf[messageReceived]
+  
+  @scala.inline
+  def notificationTapped: notificationTapped = "notificationTapped".asInstanceOf[notificationTapped]
+  
+  @scala.inline
+  def personalized: personalized = "personalized".asInstanceOf[personalized]
+  
+  @scala.inline
+  def registrationUpdated: registrationUpdated = "registrationUpdated".asInstanceOf[registrationUpdated]
+  
+  @scala.inline
+  def tokenReceived: tokenReceived = "tokenReceived".asInstanceOf[tokenReceived]
+  
+  @scala.inline
+  def userUpdated: userUpdated = "userUpdated".asInstanceOf[userUpdated]
+  
   @js.native
   sealed trait Android extends OS
   
@@ -49,34 +92,4 @@ object mobileMessagingCordovaStrings {
   
   @js.native
   sealed trait userUpdated extends Event
-  
-  @scala.inline
-  def Android: Android = "Android".asInstanceOf[Android]
-  @scala.inline
-  def Female: Female = "Female".asInstanceOf[Female]
-  @scala.inline
-  def Male: Male = "Male".asInstanceOf[Male]
-  @scala.inline
-  def actionTapped: actionTapped = "actionTapped".asInstanceOf[actionTapped]
-  @scala.inline
-  def depersonalized: depersonalized = "depersonalized".asInstanceOf[depersonalized]
-  @scala.inline
-  def geofenceEntered: geofenceEntered = "geofenceEntered".asInstanceOf[geofenceEntered]
-  @scala.inline
-  def iOS: iOS = "iOS".asInstanceOf[iOS]
-  @scala.inline
-  def installationUpdated: installationUpdated = "installationUpdated".asInstanceOf[installationUpdated]
-  @scala.inline
-  def messageReceived: messageReceived = "messageReceived".asInstanceOf[messageReceived]
-  @scala.inline
-  def notificationTapped: notificationTapped = "notificationTapped".asInstanceOf[notificationTapped]
-  @scala.inline
-  def personalized: personalized = "personalized".asInstanceOf[personalized]
-  @scala.inline
-  def registrationUpdated: registrationUpdated = "registrationUpdated".asInstanceOf[registrationUpdated]
-  @scala.inline
-  def tokenReceived: tokenReceived = "tokenReceived".asInstanceOf[tokenReceived]
-  @scala.inline
-  def userUpdated: userUpdated = "userUpdated".asInstanceOf[userUpdated]
 }
-

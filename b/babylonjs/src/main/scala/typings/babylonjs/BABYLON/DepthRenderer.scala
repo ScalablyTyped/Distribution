@@ -2,45 +2,59 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DepthRenderer extends js.Object {
-  var _cachedDefines: js.Any
-  var _camera: js.Any
-  val _clearColor: js.Any
-  var _depthMap: js.Any
-  var _effect: js.Any
-  var _scene: js.Any
-  val _storeNonLinearDepth: js.Any
-  /** Enable or disable the depth renderer. When disabled, the depth texture is not updated */
-  var enabled: Boolean
-  /** Get if the depth renderer is using packed depth or not */
-  val isPacked: Boolean
-  /**
-    * Specifiess that the depth renderer will only be used within
-    * the camera it is created for.
-    * This can help forcing its rendering during the camera processing.
-    */
-  var useOnlyInActiveCamera: Boolean
+  
+  var _cachedDefines: js.Any = js.native
+  
+  var _camera: js.Any = js.native
+  
+  val _clearColor: js.Any = js.native
+  
+  var _depthMap: js.Any = js.native
+  
+  var _effect: js.Any = js.native
+  
+  var _scene: js.Any = js.native
+  
+  val _storeNonLinearDepth: js.Any = js.native
+  
   /**
     * Disposes of the depth renderer.
     */
-  def dispose(): Unit
+  def dispose(): Unit = js.native
+  
+  /** Enable or disable the depth renderer. When disabled, the depth texture is not updated */
+  var enabled: Boolean = js.native
+  
   /**
     * Gets the texture which the depth map will be written to.
     * @returns The depth map texture
     */
-  def getDepthMap(): RenderTargetTexture
+  def getDepthMap(): RenderTargetTexture = js.native
+  
+  /** Get if the depth renderer is using packed depth or not */
+  val isPacked: Boolean = js.native
+  
   /**
     * Creates the depth rendering effect and checks if the effect is ready.
     * @param subMesh The submesh to be used to render the depth map of
     * @param useInstances If multiple world instances should be used
     * @returns if the depth renderer is ready to render the depth map
     */
-  def isReady(subMesh: SubMesh, useInstances: Boolean): Boolean
+  def isReady(subMesh: SubMesh, useInstances: Boolean): Boolean = js.native
+  
+  /**
+    * Specifiess that the depth renderer will only be used within
+    * the camera it is created for.
+    * This can help forcing its rendering during the camera processing.
+    */
+  var useOnlyInActiveCamera: Boolean = js.native
 }
-
 object DepthRenderer {
+  
   @scala.inline
   def apply(
     _cachedDefines: js.Any,
@@ -60,5 +74,59 @@ object DepthRenderer {
     val __obj = js.Dynamic.literal(_cachedDefines = _cachedDefines.asInstanceOf[js.Any], _camera = _camera.asInstanceOf[js.Any], _clearColor = _clearColor.asInstanceOf[js.Any], _depthMap = _depthMap.asInstanceOf[js.Any], _effect = _effect.asInstanceOf[js.Any], _scene = _scene.asInstanceOf[js.Any], _storeNonLinearDepth = _storeNonLinearDepth.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), enabled = enabled.asInstanceOf[js.Any], getDepthMap = js.Any.fromFunction0(getDepthMap), isPacked = isPacked.asInstanceOf[js.Any], isReady = js.Any.fromFunction2(isReady), useOnlyInActiveCamera = useOnlyInActiveCamera.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepthRenderer]
   }
+  
+  @scala.inline
+  implicit class DepthRendererOps[Self <: DepthRenderer] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def set_cachedDefines(value: js.Any): Self = this.set("_cachedDefines", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_camera(value: js.Any): Self = this.set("_camera", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_clearColor(value: js.Any): Self = this.set("_clearColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_depthMap(value: js.Any): Self = this.set("_depthMap", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_effect(value: js.Any): Self = this.set("_effect", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_scene(value: js.Any): Self = this.set("_scene", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_storeNonLinearDepth(value: js.Any): Self = this.set("_storeNonLinearDepth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetDepthMap(value: () => RenderTargetTexture): Self = this.set("getDepthMap", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsPacked(value: Boolean): Self = this.set("isPacked", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsReady(value: (SubMesh, Boolean) => Boolean): Self = this.set("isReady", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setUseOnlyInActiveCamera(value: Boolean): Self = this.set("useOnlyInActiveCamera", value.asInstanceOf[js.Any])
+  }
 }
-

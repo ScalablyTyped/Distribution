@@ -6,13 +6,14 @@ import typings.kendoUi.kendo.ui.Widget
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWidget
   extends Instantiable1[/* element */ Element, Widget]
      with Instantiable2[/* element */ Element, /* options */ js.Object, Widget] {
-  var fn: js.Any = js.native
+  
   def extend(prototype: js.Object): Widget = js.native
+  
+  var fn: js.Any = js.native
 }
-

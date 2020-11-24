@@ -2,11 +2,12 @@ package typings.tempFs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("temp-fs", "mkdir")
 @js.native
 object mkdir extends js.Object {
+  
   /**
     * Try to create a new tempdir asynchronously.
     *
@@ -20,4 +21,3 @@ object mkdir extends js.Object {
   def apply(options: options): js.Any = js.native
   def apply(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, _]): js.Any = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.jupyterlabApputils.mod
 import typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "ToolbarButton")
 @js.native
@@ -15,4 +15,3 @@ class ToolbarButton ()
   extends typings.jupyterlabApputils.toolbarMod.ToolbarButton {
   def this(props: IProps) = this()
 }
-

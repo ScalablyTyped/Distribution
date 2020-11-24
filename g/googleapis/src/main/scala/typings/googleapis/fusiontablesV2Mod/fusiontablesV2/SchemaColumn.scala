@@ -3,34 +3,40 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 import typings.googleapis.anon.ColumnId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the details of a column in a table.
   */
 @js.native
 trait SchemaColumn extends js.Object {
+  
   /**
     * Identifier of the base column. If present, this column is derived from
     * the specified base column.
     */
   var baseColumn: js.UndefOr[ColumnId] = js.native
+  
   /**
     * Identifier for the column.
     */
   var columnId: js.UndefOr[Double] = js.native
+  
   /**
     * JSON schema for interpreting JSON in this column.
     */
   var columnJsonSchema: js.UndefOr[String] = js.native
+  
   /**
     * JSON object containing custom column properties.
     */
   var columnPropertiesJson: js.UndefOr[String] = js.native
+  
   /**
     * Column description.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * Format pattern. Acceptable values are DT_DATE_MEDIUMe.g Dec 24, 2008
     * DT_DATE_SHORTfor example 12/24/08 DT_DATE_TIME_MEDIUMfor example Dec 24,
@@ -59,103 +65,136 @@ trait SchemaColumn extends js.Object {
     * text STRING_VIDEO_OR_MAPDisplay a video or map thumbnail
     */
   var formatPattern: js.UndefOr[String] = js.native
+  
   /**
     * Column graph predicate. Used to map table to graph data model
     * (subject,predicate,object) See W3C Graph-based Data Model.
     */
   var graphPredicate: js.UndefOr[String] = js.native
+  
   /**
     * The kind of item this is. For a column, this is always
     * fusiontables#column.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * Name of the column.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Type of the column.
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * List of valid values used to validate data and supply a drop-down list of
     * values in the web application.
     */
   var validValues: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * If true, data entered via the web application is validated.
     */
   var validateData: js.UndefOr[Boolean] = js.native
 }
-
 object SchemaColumn {
+  
   @scala.inline
   def apply(): SchemaColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaColumn]
   }
+  
   @scala.inline
   implicit class SchemaColumnOps[Self <: SchemaColumn] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBaseColumn(value: ColumnId): Self = this.set("baseColumn", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBaseColumn: Self = this.set("baseColumn", js.undefined)
+    
     @scala.inline
     def setColumnId(value: Double): Self = this.set("columnId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumnId: Self = this.set("columnId", js.undefined)
+    
     @scala.inline
     def setColumnJsonSchema(value: String): Self = this.set("columnJsonSchema", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumnJsonSchema: Self = this.set("columnJsonSchema", js.undefined)
+    
     @scala.inline
     def setColumnPropertiesJson(value: String): Self = this.set("columnPropertiesJson", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumnPropertiesJson: Self = this.set("columnPropertiesJson", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setFormatPattern(value: String): Self = this.set("formatPattern", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFormatPattern: Self = this.set("formatPattern", js.undefined)
+    
     @scala.inline
     def setGraphPredicate(value: String): Self = this.set("graphPredicate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGraphPredicate: Self = this.set("graphPredicate", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setValidValuesVarargs(value: String*): Self = this.set("validValues", js.Array(value :_*))
+    
     @scala.inline
     def setValidValues(value: js.Array[String]): Self = this.set("validValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValidValues: Self = this.set("validValues", js.undefined)
+    
     @scala.inline
     def setValidateData(value: Boolean): Self = this.set("validateData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValidateData: Self = this.set("validateData", js.undefined)
   }
-  
 }
-

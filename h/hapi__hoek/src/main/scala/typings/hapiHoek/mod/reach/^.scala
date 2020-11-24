@@ -3,11 +3,12 @@ package typings.hapiHoek.mod.reach
 import typings.hapiHoek.hapiHoekBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@hapi/hoek", "reach")
 @js.native
 object ^ extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(obj: js.Object): js.Any = js.native
   def apply(obj: js.Object, chain: js.UndefOr[scala.Nothing], options: Options): js.Any = js.native
@@ -27,4 +28,3 @@ object ^ extends js.Object {
   def apply(obj: Null, chain: `false`): js.Any = js.native
   def apply(obj: Null, chain: `false`, options: Options): js.Any = js.native
 }
-

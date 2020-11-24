@@ -3,10 +3,11 @@ package typings.maquette.interfacesMod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dom extends js.Object {
+  
   /**
     * Appends a new child node to the DOM which is generated from a [[VNode]].
     * This is a low-level method. Users will typically use a [[Projector]] instead.
@@ -18,6 +19,7 @@ trait Dom extends js.Object {
     */
   def append(parentNode: Element, vnode: VNode): Projection = js.native
   def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+  
   /**
     * Creates a real DOM tree from `vnode`. The [[Projection]] object returned will contain the resulting DOM Node in
     * its [[Projection.domNode|domNode]] property.
@@ -29,6 +31,7 @@ trait Dom extends js.Object {
     */
   def create(vnode: VNode): Projection = js.native
   def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+  
   /**
     * Inserts a new DOM node which is generated from a [[VNode]].
     * This is a low-level method. Users wil typically use a [[Projector]] instead.
@@ -40,6 +43,7 @@ trait Dom extends js.Object {
     */
   def insertBefore(beforeNode: Element, vnode: VNode): Projection = js.native
   def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+  
   /**
     * Merges a new DOM node which is generated from a [[VNode]] with an existing DOM Node.
     * This means that the virtual DOM and the real DOM will have one overlapping element.
@@ -53,6 +57,7 @@ trait Dom extends js.Object {
     */
   def merge(element: Element, vnode: VNode): Projection = js.native
   def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+  
   /**
     * Replaces an existing DOM node with a node generated from a [[VNode]].
     * This is a low-level method. Users will typically use a [[Projector]] instead.
@@ -65,4 +70,3 @@ trait Dom extends js.Object {
   def replace(element: Element, vnode: VNode): Projection = js.native
   def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
 }
-

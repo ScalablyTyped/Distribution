@@ -6,10 +6,9 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-logger", JSImport.Default)
 @js.native
 object default
   extends TopLevel[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-

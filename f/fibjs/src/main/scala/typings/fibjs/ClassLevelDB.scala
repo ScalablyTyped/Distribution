@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassLevelDB extends ClassObject {
+  
   /**
     * 
     * @brief 在当前数据库上开启一个事务
@@ -19,6 +20,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def begin(): ClassLevelDB = js.native
+  
   /**
     * 
     * @brief 枚举数据库中键值在 from 和 to 之间的键值对
@@ -41,6 +43,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def between(from: ClassBuffer, to: ClassBuffer, func: js.Function): Unit = js.native
+  
   /**
     * 
     * @brief 关闭当前数据库连接或事务
@@ -48,6 +51,7 @@ trait ClassLevelDB extends ClassObject {
     * @async
     */
   def close(): Unit = js.native
+  
   /**
     * 
     * @brief 提交当前事务
@@ -55,6 +59,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def commit(): Unit = js.native
+  
   /**
     * 
     * @brief 枚举数据库中所有的键值对
@@ -75,6 +80,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def forEach(func: js.Function): Unit = js.native
+  
   /**
     * 
     * @brief 查询指定键值的值
@@ -85,6 +91,7 @@ trait ClassLevelDB extends ClassObject {
     * @async
     */
   def get(key: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 检查数据库内是否存在指定键值的数据
@@ -95,6 +102,7 @@ trait ClassLevelDB extends ClassObject {
     * @async
     */
   def has(key: ClassBuffer): Boolean = js.native
+  
   /**
     * 
     * @brief 查询一组指定键值的值
@@ -105,6 +113,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def mget(keys: js.Array[_]): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 删除一组指定键值的值
@@ -114,6 +123,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def mremove(keys: js.Array[_]): Unit = js.native
+  
   /**
     * 
     * @brief 设定一组键值数据，键值不存在则插入新数据
@@ -123,6 +133,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     */
   def mset(map: js.Object): Unit = js.native
+  
   /**
     * 
     * @brief 删除指定键值的全部值
@@ -132,6 +143,7 @@ trait ClassLevelDB extends ClassObject {
     * @async
     */
   def remove(key: ClassBuffer): Unit = js.native
+  
   /**
     * 
     * @brief 设定一个键值数据，键值不存在则插入新数据
@@ -143,4 +155,3 @@ trait ClassLevelDB extends ClassObject {
     */
   def set(key: ClassBuffer, value: ClassBuffer): Unit = js.native
 }
-

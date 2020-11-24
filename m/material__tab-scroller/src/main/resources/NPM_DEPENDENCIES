@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/tab-scroller" : "7.0.0"
+      "@material/tab-scroller" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/tab-scroller" : "7.0.0"
+      "@material/tab-scroller" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

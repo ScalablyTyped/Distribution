@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IClientPagingResponse
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientPagingResponse")
 @js.native
@@ -20,11 +20,11 @@ class ClientPagingResponse ()
   extends typings.sawtoothSdk.protobufMod.ClientPagingResponse {
   def this(properties: IClientPagingResponse) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ClientPagingResponse")
 @js.native
 object ClientPagingResponse extends js.Object {
+  
   /**
     * Creates a new ClientPagingResponse instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ClientPagingResponse extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
   def create(properties: IClientPagingResponse): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
+  
   /**
     * Decodes a ClientPagingResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ClientPagingResponse extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
+  
   /**
     * Decodes a ClientPagingResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ClientPagingResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
+  
   /**
     * Encodes the specified ClientPagingResponse message. Does not implicitly {@link ClientPagingResponse.verify|verify} messages.
     * @param message ClientPagingResponse message or plain object to encode
@@ -61,6 +64,7 @@ object ClientPagingResponse extends js.Object {
     */
   def encode(message: IClientPagingResponse): Writer = js.native
   def encode(message: IClientPagingResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientPagingResponse message, length delimited. Does not implicitly {@link ClientPagingResponse.verify|verify} messages.
     * @param message ClientPagingResponse message or plain object to encode
@@ -69,12 +73,14 @@ object ClientPagingResponse extends js.Object {
     */
   def encodeDelimited(message: IClientPagingResponse): Writer = js.native
   def encodeDelimited(message: IClientPagingResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientPagingResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientPagingResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientPagingResponse = js.native
+  
   /**
     * Creates a plain object from a ClientPagingResponse message. Also converts values to other types if specified.
     * @param message ClientPagingResponse
@@ -83,6 +89,7 @@ object ClientPagingResponse extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientPagingResponse): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientPagingResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientPagingResponse message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ClientPagingResponse extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

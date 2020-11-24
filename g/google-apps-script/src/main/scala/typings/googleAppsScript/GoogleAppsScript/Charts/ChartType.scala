@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartType extends js.Object
-
 /**
   * Chart types supported by the Charts service.
   */
 @JSGlobal("GoogleAppsScript.Charts.ChartType")
 @js.native
 object ChartType extends js.Object {
+  
   @js.native
   sealed trait AREA extends ChartType
   
@@ -72,6 +72,4 @@ object ChartType extends js.Object {
   
   @js.native
   sealed trait WATERFALL extends ChartType
-  
 }
-

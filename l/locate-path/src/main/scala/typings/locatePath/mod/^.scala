@@ -3,11 +3,12 @@ package typings.locatePath.mod
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locate-path", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Get the first path that exists on disk of multiple paths.
   	@param paths - Paths to check.
@@ -28,6 +29,7 @@ object ^ extends js.Object {
   	*/
   def apply(paths: Iterable[String]): js.Promise[js.UndefOr[String]] = js.native
   def apply(paths: Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = js.native
+  
   /**
   	Synchronously get the first path that exists on disk of multiple paths.
   	@param paths - Paths to check.
@@ -36,4 +38,3 @@ object ^ extends js.Object {
   def sync(paths: Iterable[String]): js.UndefOr[String] = js.native
   def sync(paths: Iterable[String], options: Options): js.UndefOr[String] = js.native
 }
-

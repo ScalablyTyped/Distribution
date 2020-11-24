@@ -2,7 +2,7 @@ package typings.angularCompiler.outputAstMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "ClassMethod")
 @js.native
@@ -53,9 +53,12 @@ class ClassMethod protected () extends AbstractClassPart {
     `type`: Type,
     modifiers: js.Array[StmtModifier]
   ) = this()
+  
   var body: js.Array[Statement] = js.native
-  var name: String | Null = js.native
-  var params: js.Array[FnParam] = js.native
+  
   def isEquivalent(m: ClassMethod): Boolean = js.native
+  
+  var name: String | Null = js.native
+  
+  var params: js.Array[FnParam] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.complex.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("complex", JSImport.Namespace)
 @js.native
@@ -13,18 +13,10 @@ class ^ protected () extends Complex {
     */
   def this(real: Double, im: Double) = this()
 }
-
 @JSImport("complex", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /**
-    * A instance of the imaginary unit
-    */
-  var i: Complex = js.native
-  /**
-    * A instance for the real number
-    */
-  var one: Complex = js.native
+  
   /**
     * A in line function like Number.from.
     *
@@ -43,11 +35,21 @@ object ^ extends js.Object {
     */
   def from(real: Double): Complex = js.native
   def from(real: Double, im: Double): Complex = js.native
+  
   /**
     * Creates a complex instance from a polar representation
     * @param r The radius/magnitude of the number
     * @param phi The angle/phase of the number
     */
   def fromPolar(r: Double, phi: Double): Complex = js.native
+  
+  /**
+    * A instance of the imaginary unit
+    */
+  var i: Complex = js.native
+  
+  /**
+    * A instance for the real number
+    */
+  var one: Complex = js.native
 }
-

@@ -12,19 +12,11 @@ import typings.chromeApps.chrome.sockets.tcp.SecureOptions
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeoftcp extends js.Object {
-  /** Event raised when data has been received for a given socket. */
-  val onReceive: Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
-  /**
-    * Event raised when a network error occured while the runtime was
-    * waiting for data on the socket address and port. Once this event
-    * is raised, the socket is set to paused and no more onReceive
-    * events are raised for this socket.
-    */
-  val onReceiveError: Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+  
   /**
     * Closes the socket and releases the address/port the socket is bound to.
     * Each socket created should be closed after use. The socket id is no longer
@@ -35,6 +27,7 @@ trait Typeoftcp extends js.Object {
     */
   def close(socketId: integer): Unit = js.native
   def close(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Connects the socket to a remote machine.
     * When the connect operation completes successfully,
@@ -55,6 +48,7 @@ trait Typeoftcp extends js.Object {
     peerPort: integer,
     callback: js.Function1[/* result */ integer, Unit]
   ): Unit = js.native
+  
   /** Creates a TCP socket. */
   def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
   /**
@@ -62,6 +56,7 @@ trait Typeoftcp extends js.Object {
     * @param properties The socket properties (optional).
     */
   def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
+  
   /**
     * @description Disconnects the socket.
     * @param socketId The socket identifier.
@@ -69,17 +64,31 @@ trait Typeoftcp extends js.Object {
     */
   def disconnect(socketId: integer): Unit = js.native
   def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Retrieves the state of the given socket.
     * @param socketId The socket identifier.
     * @param callback Called when the socket state is available. Provides an object containing the socket information.
     */
   def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = js.native
+  
   /**
     * @description Retrieves the list of currently opened sockets owned by the application.
     * @param callback Called when the list of sockets is available. Provides an array of socket info.
     */
   def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = js.native
+  
+  /** Event raised when data has been received for a given socket. */
+  val onReceive: Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
+  
+  /**
+    * Event raised when a network error occured while the runtime was
+    * waiting for data on the socket address and port. Once this event
+    * is raised, the socket is set to paused and no more onReceive
+    * events are raised for this socket.
+    */
+  val onReceiveError: Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+  
   /**
     * Start a TLS client connection over the connected TCP client socket.
     * @since Chrome 38.
@@ -95,6 +104,7 @@ trait Typeoftcp extends js.Object {
     * @param callback Called when the connection attempt is complete.
     */
   def secure(socketId: integer, options: SecureOptions, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
   /**
     * @description Sends data on the given TCP socket.
     * @param socketId The socket identifier.
@@ -102,6 +112,7 @@ trait Typeoftcp extends js.Object {
     * @param callback Called when the send operation completes.
     */
   def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ SendInfo, Unit]): Unit = js.native
+  
   /**
     * @description Enables or disables the keep-alive functionality for a TCP connection.
     * @param socketId The socket identifier.
@@ -122,6 +133,7 @@ trait Typeoftcp extends js.Object {
     delay: integer,
     callback: js.Function1[/* result */ integer, Unit]
   ): Unit = js.native
+  
   /**
     * Sets or clears TCP_NODELAY for a TCP connection.
     * Nagle's algorithm will be disabled when TCP_NODELAY is set.
@@ -131,6 +143,7 @@ trait Typeoftcp extends js.Object {
     *                 from the underlying network call. A negative value indicates an error.
     */
   def setNoDelay(socketId: integer, noDelay: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
   /**
     * Enables or disables the application from receiving messages from its peer.
     * The default value is 'false'. Pausing a socket is typically used by an
@@ -140,8 +153,8 @@ trait Typeoftcp extends js.Object {
     */
   def setPaused(socketId: integer, paused: Boolean): Unit = js.native
   def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  
   /** Updates the socket properties. */
   def update(socketId: integer, properties: SocketProperties): Unit = js.native
   def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = js.native
 }
-

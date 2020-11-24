@@ -2,14 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FailingInterface[Context] extends js.Object {
-  @JSName("only")
-  var only_Original: OnlyInterface[Context] = js.native
-  @JSName("skip")
-  var skip_Original: SkipInterface[Context] = js.native
+  
   /** Declare a concurrent test. The test is expected to fail. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native
   /**
@@ -29,6 +26,7 @@ trait FailingInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  
   /** Declare a test. Only this test and others declared with `.only()` are run. */
   def only(title: String, implementation: Implementation[Context]): Unit = js.native
   /**
@@ -48,6 +46,9 @@ trait FailingInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("only")
+  var only_Original: OnlyInterface[Context] = js.native
+  
   /** Skip this test. */
   def skip(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Skip this test. */
@@ -61,5 +62,6 @@ trait FailingInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("skip")
+  var skip_Original: SkipInterface[Context] = js.native
 }
-

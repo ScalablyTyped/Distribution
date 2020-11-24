@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.CustomEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CustomEvent")
 @js.native
@@ -14,7 +14,6 @@ class CustomEvent[T] protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: CustomEventInit[T]) = this()
 }
-
 @JSGlobal("CustomEvent")
 @js.native
 object CustomEvent
@@ -24,4 +23,3 @@ object CustomEvent
       /* eventInitDict */ CustomEventInit[js.Object], 
       typings.std.CustomEvent[js.Object]
     ]
-

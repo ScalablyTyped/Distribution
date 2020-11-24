@@ -2,18 +2,20 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The promise API implemented by this library.
   */
 @js.native
 trait IPromise[T] extends js.Object {
+  
   /**
     * Cancels the pending request represented by the Promise, and triggers
     * the error callback if the promised event has not yet occurred.
     */
   def cancel(): Unit = js.native
+  
   /**
     * Adds event listeners for particular events.
     * @param onSuccess Called when the promised event successfully occurs.
@@ -35,4 +37,3 @@ trait IPromise[T] extends js.Object {
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[T] = js.native
 }
-

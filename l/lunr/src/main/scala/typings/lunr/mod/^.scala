@@ -2,11 +2,12 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lunr", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Convenience function for instantiating a new lunr index and configuring it with the default
     * pipeline functions and the passed config function.
@@ -36,4 +37,3 @@ object ^ extends js.Object {
     */
   def apply(config: ConfigFunction): Index = js.native
 }
-

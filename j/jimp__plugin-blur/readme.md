@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-blur
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 blur an image.
@@ -10,9 +10,9 @@ blur an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-blur |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 1 |
-| # downloads        | 14395286 |
+| # releases         | 98 |
+| # dependents       | 3 |
+| # downloads        | 32984192 |
 | # stars            | 0 |
 
 ## Links

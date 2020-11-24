@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a raw buffer of binary data, which is used to store data for the
@@ -15,16 +15,18 @@ trait ArrayBuffer
   extends BufferSource
      with ArrayBufferLike
      with Transferable {
+  
   /**
     * Read-only. The length of the ArrayBuffer (in bytes).
     */
   val byteLength: Double = js.native
-  @JSName(js.Symbol.toStringTag)
-  val toStringTag: java.lang.String = js.native
+  
   /**
     * Returns a section of an ArrayBuffer.
     */
   def slice(begin: Double): ArrayBuffer = js.native
   def slice(begin: Double, end: Double): ArrayBuffer = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: java.lang.String = js.native
 }
-

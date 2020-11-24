@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__platform-browser-dynamic
 
-Typings are for version 10.0.7
+Typings are for version 11.0.2
 
 ## Library description:
 Angular - library for using Angular in a web browser with JIT compilation
@@ -10,9 +10,9 @@ Angular - library for using Angular in a web browser with JIT compilation
 | ------------------ | :-------------: |
 | Full name          | @angular/platform-browser-dynamic |
 | Keywords           | - |
-| # releases         | 180 |
-| # dependents       | 6099 |
-| # downloads        | 53889243 |
+| # releases         | 208 |
+| # dependents       | 7074 |
+| # downloads        | 73056507 |
 | # stars            | 9 |
 
 ## Links

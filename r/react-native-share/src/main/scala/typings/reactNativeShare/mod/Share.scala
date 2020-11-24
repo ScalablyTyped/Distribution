@@ -2,19 +2,17 @@ package typings.reactNativeShare.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-share", "Share")
 @js.native
 object Share extends js.Object {
+  
   @js.native
   sealed trait InstagramStories extends js.Object
-  
-  @js.native
-  sealed trait Social extends js.Object
-  
   @js.native
   object InstagramStories extends js.Object {
+    
     @js.native
     sealed trait SHARE_BACKGROUND_AND_STICKER_IMAGE extends InstagramStories
     
@@ -23,11 +21,13 @@ object Share extends js.Object {
     
     @js.native
     sealed trait SHARE_STICKER_IMAGE extends InstagramStories
-    
   }
   
   @js.native
+  sealed trait Social extends js.Object
+  @js.native
   object Social extends js.Object {
+    
     @js.native
     sealed trait EMAIL extends Social
     
@@ -57,8 +57,5 @@ object Share extends js.Object {
     
     @js.native
     sealed trait WHATSAPP extends Social
-    
   }
-  
 }
-

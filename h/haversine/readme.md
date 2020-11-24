@@ -11,8 +11,8 @@ A simple haversine module
 | Full name          | haversine |
 | Keywords           | haversine, distance, coordinates, geolocation |
 | # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 682474 |
+| # dependents       | 30 |
+| # downloads        | 665750 |
 | # stars            | 3 |
 
 ## Links

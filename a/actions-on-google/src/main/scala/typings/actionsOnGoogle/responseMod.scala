@@ -23,11 +23,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselBrowseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsHtmlResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", JSImport.Namespace)
 @js.native
 object responseMod extends js.Object {
+  
   @js.native
   class BasicCard protected ()
     extends typings.actionsOnGoogle.cardMod.BasicCard {
@@ -208,6 +209,4 @@ object responseMod extends js.Object {
     /** @public */
     def this(options: TableOptions) = this()
   }
-  
 }
-

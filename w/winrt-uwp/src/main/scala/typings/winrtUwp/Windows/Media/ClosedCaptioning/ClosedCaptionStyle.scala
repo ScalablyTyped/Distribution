@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.ClosedCaptioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ClosedCaptionStyle extends js.Object
-
 /** Specifies the style of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionStyle")
 @js.native
 object ClosedCaptionStyle extends js.Object {
+  
   /** Casual. */
   @js.native
   sealed trait casual extends ClosedCaptionStyle
@@ -42,6 +42,4 @@ object ClosedCaptionStyle extends js.Object {
   /** Small capitals. */
   @js.native
   sealed trait smallCapitals extends ClosedCaptionStyle
-  
 }
-

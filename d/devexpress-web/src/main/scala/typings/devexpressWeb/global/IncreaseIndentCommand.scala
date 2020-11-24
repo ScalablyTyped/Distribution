@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to increment the indent level of paragraphs in a selected range.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class IncreaseIndentCommand ()
   extends typings.devexpressWeb.IncreaseIndentCommand
-

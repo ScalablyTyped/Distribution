@@ -11,8 +11,8 @@ Encode/decode base64 data into ArrayBuffers
 | Full name          | base64-arraybuffer |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 98 |
-| # downloads        | 134006244 |
+| # dependents       | 119 |
+| # downloads        | 179392497 |
 | # stars            | 4 |
 
 ## Links

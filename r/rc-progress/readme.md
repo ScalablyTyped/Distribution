@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-progress
 
-Typings are for version 3.0.0
+Typings are for version 3.1.1
 
 ## Library description:
 progress ui component for react
@@ -10,9 +10,9 @@ progress ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-progress |
 | Keywords           | react, react-component, react-progress, progress |
-| # releases         | 9 |
-| # dependents       | 239 |
-| # downloads        | 11806350 |
+| # releases         | 12 |
+| # dependents       | 277 |
+| # downloads        | 18185652 |
 | # stars            | 0 |
 
 ## Links

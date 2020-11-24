@@ -5,38 +5,26 @@ import typings.angular.mod.IRootScopeService
 import typings.angular.mod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined angular.angular.IScope & {  $column :ng-table.ng-table/src/browser/public-interfaces.IColumnDef | undefined,   $columns :std.Array<ng-table.ng-table/src/browser/public-interfaces.IColumnDef>} */
 @js.native
 trait ColumnFieldContext extends js.Object {
-  @JSName("$column")
-  var $column: js.UndefOr[IColumnDef] = js.native
-  @JSName("$columns")
-  var $columns: js.Array[IColumnDef] = js.native
-  @JSName("$id")
-  var $id: Double = js.native
-  @JSName("$parent")
-  var $parent: IScope = js.native
-  @JSName("$root")
-  var $root: IRootScopeService = js.native
-  // Hidden members
-  @JSName("$$isolateBindings")
-  var DollarDollarisolateBindings: js.Any = js.native
-  @JSName("$$phase")
-  var DollarDollarphase: js.Any = js.native
+  
   @JSName("$apply")
   def $apply(): js.Any = js.native
   @JSName("$apply")
   def $apply(exp: String): js.Any = js.native
   @JSName("$apply")
   def $apply(exp: js.Function1[/* scope */ IScope, _]): js.Any = js.native
+  
   @JSName("$applyAsync")
   def $applyAsync(): js.Any = js.native
   @JSName("$applyAsync")
   def $applyAsync(exp: String): js.Any = js.native
   @JSName("$applyAsync")
   def $applyAsync(exp: js.Function1[/* scope */ IScope, _]): js.Any = js.native
+  
   /**
     * Dispatches an event name downwards to all child scopes (and their children) notifying the registered $rootScope.Scope listeners.
     *
@@ -49,10 +37,19 @@ trait ColumnFieldContext extends js.Object {
     */
   @JSName("$broadcast")
   def $broadcast(name: String, args: js.Any*): IAngularEvent = js.native
+  
+  @JSName("$column")
+  var $column: js.UndefOr[IColumnDef] = js.native
+  
+  @JSName("$columns")
+  var $columns: js.Array[IColumnDef] = js.native
+  
   @JSName("$destroy")
   def $destroy(): Unit = js.native
+  
   @JSName("$digest")
   def $digest(): Unit = js.native
+  
   /**
     * Dispatches an event name upwards through the scope hierarchy notifying the registered $rootScope.Scope listeners.
     *
@@ -65,6 +62,7 @@ trait ColumnFieldContext extends js.Object {
     */
   @JSName("$emit")
   def $emit(name: String, args: js.Any*): IAngularEvent = js.native
+  
   @JSName("$eval")
   def $eval(): js.Any = js.native
   @JSName("$eval")
@@ -75,6 +73,7 @@ trait ColumnFieldContext extends js.Object {
   def $eval(expression: js.Function1[/* scope */ IScope, _]): js.Any = js.native
   @JSName("$eval")
   def $eval(expression: js.Function1[/* scope */ IScope, _], locals: js.Object): js.Any = js.native
+  
   @JSName("$evalAsync")
   def $evalAsync(): Unit = js.native
   @JSName("$evalAsync")
@@ -85,6 +84,10 @@ trait ColumnFieldContext extends js.Object {
   def $evalAsync(expression: js.Function1[/* scope */ IScope, Unit]): Unit = js.native
   @JSName("$evalAsync")
   def $evalAsync(expression: js.Function1[/* scope */ IScope, Unit], locals: js.Object): Unit = js.native
+  
+  @JSName("$id")
+  var $id: Double = js.native
+  
   /**
     * Call this method to determine if this scope has been explicitly suspended. It will not
     * tell you whether an ancestor has been suspended.
@@ -107,6 +110,7 @@ trait ColumnFieldContext extends js.Object {
     */
   @JSName("$isSuspended")
   def $isSuspended(): Boolean = js.native
+  
   // Defaults to false by the implementation checking strategy
   @JSName("$new")
   def $new(): IScope = js.native
@@ -116,6 +120,7 @@ trait ColumnFieldContext extends js.Object {
   def $new(isolate: Boolean): IScope = js.native
   @JSName("$new")
   def $new(isolate: Boolean, parent: IScope): IScope = js.native
+  
   /**
     * Listens on events of a given type. See $emit for discussion of event life cycle.
     *
@@ -126,6 +131,10 @@ trait ColumnFieldContext extends js.Object {
     */
   @JSName("$on")
   def $on(name: String, listener: js.Function2[/* event */ IAngularEvent, /* repeated */ js.Any, _]): js.Function0[Unit] = js.native
+  
+  @JSName("$parent")
+  var $parent: IScope = js.native
+  
   /**
     * Resume watchers of this scope subtree in case it was suspended.
     *
@@ -133,6 +142,10 @@ trait ColumnFieldContext extends js.Object {
     */
   @JSName("$resume")
   def $resume(): Unit = js.native
+  
+  @JSName("$root")
+  var $root: IRootScopeService = js.native
+  
   /**
     * Suspend watchers of this scope subtree so that they will not be invoked during digest.
     *
@@ -173,6 +186,7 @@ trait ColumnFieldContext extends js.Object {
     */
   @JSName("$suspend")
   def $suspend(): Unit = js.native
+  
   @JSName("$watch")
   def $watch(watchExpression: String): js.Function0[Unit] = js.native
   @JSName("$watch")
@@ -215,6 +229,7 @@ trait ColumnFieldContext extends js.Object {
     listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, _],
     objectEquality: Boolean
   ): js.Function0[Unit] = js.native
+  
   @JSName("$watchCollection")
   def $watchCollection[T](
     watchExpression: String,
@@ -225,11 +240,13 @@ trait ColumnFieldContext extends js.Object {
     watchExpression: js.Function1[/* scope */ IScope, T],
     listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, _]
   ): js.Function0[Unit] = js.native
+  
   @JSName("$watchGroup")
   def $watchGroup(
     watchExpressions: js.Array[_ | (js.Function1[/* scope */ IScope, _])],
     listener: js.Function3[/* newValue */ js.Any, /* oldValue */ js.Any, /* scope */ IScope, _]
   ): js.Function0[Unit] = js.native
+  
   @JSName("$watch")
   def $watch_T[T](watchExpression: String): js.Function0[Unit] = js.native
   @JSName("$watch")
@@ -242,5 +259,11 @@ trait ColumnFieldContext extends js.Object {
     listener: js.UndefOr[scala.Nothing],
     objectEquality: Boolean
   ): js.Function0[Unit] = js.native
+  
+  // Hidden members
+  @JSName("$$isolateBindings")
+  var DollarDollarisolateBindings: js.Any = js.native
+  
+  @JSName("$$phase")
+  var DollarDollarphase: js.Any = js.native
 }
-

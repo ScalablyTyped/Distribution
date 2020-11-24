@@ -3,11 +3,12 @@ package typings.cassandraDriver.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver", "errors")
 @js.native
 object errors extends js.Object {
+  
   @js.native
   class ArgumentError protected () extends DriverError {
     def this(message: String) = this()
@@ -27,6 +28,7 @@ object errors extends js.Object {
   abstract class DriverError protected () extends Error {
     def this(message: String) = this()
     def this(message: String, constructor: js.Any) = this()
+    
     var info: String = js.native
   }
   
@@ -39,6 +41,7 @@ object errors extends js.Object {
   class NoHostAvailableError protected () extends DriverError {
     def this(innerErrors: js.Any) = this()
     def this(innerErrors: js.Any, message: String) = this()
+    
     var innerErrors: js.Any = js.native
   }
   
@@ -51,14 +54,14 @@ object errors extends js.Object {
   class OperationTimedOutError protected () extends DriverError {
     def this(message: String) = this()
     def this(message: String, host: String) = this()
+    
     var host: js.UndefOr[String] = js.native
   }
   
   @js.native
   class ResponseError protected () extends DriverError {
     def this(code: Double, message: String) = this()
+    
     var code: Double = js.native
   }
-  
 }
-

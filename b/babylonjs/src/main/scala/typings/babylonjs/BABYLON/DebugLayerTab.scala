@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DebugLayerTab extends js.Object
-
 @JSGlobal("BABYLON.DebugLayerTab")
 @js.native
 object DebugLayerTab extends js.Object {
+  
   /**
     * Debug tab
     */
@@ -39,6 +39,4 @@ object DebugLayerTab extends js.Object {
     */
   @js.native
   sealed trait Tools extends DebugLayerTab
-  
 }
-

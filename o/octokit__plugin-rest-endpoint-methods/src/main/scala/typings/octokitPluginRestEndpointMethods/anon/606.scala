@@ -3,48 +3,63 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ActivityListReposWatchedByUserEndpoint
-import typings.octokitTypes.endpointsMod.ActivityListReposWatchedByUserResponseData
+import typings.octokitTypes.endpointsMod.ActivityListRepoNotificationsForAuthenticatedUserEndpoint
+import typings.octokitTypes.endpointsMod.ActivityListRepoNotificationsForAuthenticatedUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `606` extends js.Object {
-  var parameters: RequestParameters with (Omit[ActivityListReposWatchedByUserEndpoint, baseUrl | headers | mediaType]) = js.native
-  var response: OctokitResponse[ActivityListReposWatchedByUserResponseData] = js.native
+  
+  var parameters: RequestParameters with (Omit[
+    ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
+    baseUrl | headers | mediaType
+  ]) = js.native
+  
+  var response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData] = js.native
 }
-
 object `606` {
+  
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ActivityListReposWatchedByUserEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[ActivityListReposWatchedByUserResponseData]
+    parameters: RequestParameters with (Omit[
+      ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
+      baseUrl | headers | mediaType
+    ]),
+    response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]
   ): `606` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`606`]
   }
+  
   @scala.inline
   implicit class `606Ops`[Self <: `606`] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[ActivityListReposWatchedByUserEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters with (Omit[
+          ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
+          baseUrl | headers | mediaType
+        ])
     ): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListReposWatchedByUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
   }
-  
 }
-

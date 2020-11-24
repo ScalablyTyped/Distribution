@@ -2,7 +2,7 @@ package typings.deezerSdk.DeezerSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See:\
@@ -15,13 +15,14 @@ import scala.scalajs.js.annotation._
   - typings.deezerSdk.deezerSdkStrings.DELETE
 */
 trait HttpMethod extends js.Object
-
 object HttpMethod {
+  
   @scala.inline
   def DELETE: typings.deezerSdk.deezerSdkStrings.DELETE = "DELETE".asInstanceOf[typings.deezerSdk.deezerSdkStrings.DELETE]
+  
   @scala.inline
   def GET: typings.deezerSdk.deezerSdkStrings.GET = "GET".asInstanceOf[typings.deezerSdk.deezerSdkStrings.GET]
+  
   @scala.inline
   def POST: typings.deezerSdk.deezerSdkStrings.POST = "POST".asInstanceOf[typings.deezerSdk.deezerSdkStrings.POST]
 }
-

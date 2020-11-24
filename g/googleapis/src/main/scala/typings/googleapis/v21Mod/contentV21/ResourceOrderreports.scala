@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Orderreports")
 @js.native
 class ResourceOrderreports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.orderreports.listdisbursements
     * @desc Retrieves a report for disbursements from your Merchant Center
@@ -49,6 +51,7 @@ class ResourceOrderreports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrderreportsListDisbursementsResponse]
   ): Unit = js.native
+  
   /**
     * content.orderreports.listtransactions
     * @desc Retrieves a list of transactions for a disbursement from your
@@ -87,4 +90,3 @@ class ResourceOrderreports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrderreportsListTransactionsResponse]
   ): Unit = js.native
 }
-

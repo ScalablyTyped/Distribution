@@ -12,7 +12,7 @@ A marshaller for the body portion of AWS's Query(EC2) protocols
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 39 |
-| # downloads        | 9767 |
+| # downloads        | 40579 |
 | # stars            | 0 |
 
 ## Links

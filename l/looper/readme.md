@@ -12,7 +12,7 @@ async loops that never RangeError
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 3029557 |
+| # downloads        | 3157024 |
 | # stars            | 0 |
 
 ## Links

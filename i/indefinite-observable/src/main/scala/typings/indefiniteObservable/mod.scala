@@ -6,11 +6,14 @@ import typings.indefiniteObservable.typesMod.Observer
 import typings.indefiniteObservable.typesMod.ObserverOrNext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("indefinite-observable", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def wrapWithObserver[T](listener: ObserverOrNext[T]): Observer[T] = js.native
+  
   @js.native
   class IndefiniteObservable[T] protected () extends default[T] {
     /**
@@ -23,7 +26,4 @@ object mod extends js.Object {
       */
     def this(connect: Connect[T]) = this()
   }
-  
-  def wrapWithObserver[T](listener: ObserverOrNext[T]): Observer[T] = js.native
 }
-

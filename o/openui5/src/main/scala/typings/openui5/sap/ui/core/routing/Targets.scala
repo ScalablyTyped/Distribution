@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.core.routing
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Targets extends EventProvider {
+  
   /**
     * Creates a target by using the given name and options. If there's already a target with the same name
     * exists, the existing target is kept from being overwritten and an error log will be written to the
@@ -17,6 +18,7 @@ trait Targets extends EventProvider {
     * @returns Targets itself for method chaining
     */
   def addTarget(sName: String, oTarget: js.Any): Targets = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'display' event of this
     * <code>sap.ui.core.routing.Targets</code>.<br/>
@@ -28,12 +30,14 @@ trait Targets extends EventProvider {
     */
   def attachDisplay(oData: js.Any, fnFunction: js.Any): Targets = js.native
   def attachDisplay(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Targets = js.native
+  
   /**
     * Destroys the targets instance and all created targets. Does not destroy the views instance passed to
     * the constructor. It has to be destroyed separately.
     * @returns this for chaining.
     */
   def destroy(): Targets = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'display' event of this
     * <code>sap.ui.core.routing.Targets</code>.<br/>The passed function and listener object must match the
@@ -43,6 +47,7 @@ trait Targets extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachDisplay(fnFunction: js.Any, oListener: js.Any): Targets = js.native
+  
   /**
     * Creates a view and puts it in an aggregation of the specified control.
     * @param vTargets the key of the target as specified in the {@link #constructor}. To display multiple
@@ -55,12 +60,14 @@ trait Targets extends EventProvider {
   def display(vTargets: String, vData: js.Any): Targets = js.native
   def display(vTargets: js.Array[String]): Targets = js.native
   def display(vTargets: js.Array[String], vData: js.Any): Targets = js.native
+  
   /**
     * Fire event created to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireDisplay(mArguments: js.Any): Targets = js.native
+  
   /**
     * Returns a target by its name (if you pass myTarget: { view: "myView" }) in the config myTarget is
     * the name.
@@ -71,10 +78,10 @@ trait Targets extends EventProvider {
     */
   def getTarget(vName: String): Target | js.Any | js.Array[Target] = js.native
   def getTarget(vName: js.Array[String]): Target | js.Any | js.Array[Target] = js.native
+  
   /**
     * Returns the views instance passed to the constructor
     * @returns the views instance
     */
   def getViews(): Views = js.native
 }
-

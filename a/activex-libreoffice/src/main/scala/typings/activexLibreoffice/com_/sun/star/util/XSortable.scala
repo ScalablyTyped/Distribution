@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to sort the contents of this object.
@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSortable extends XInterface {
+  
   /**
     * @returns a sequence of properties which allows to specify/modify the sort criteria.  The set of properties is specific to the type of object that implemen
     * @see com.sun.star.util.SortDescriptor
@@ -36,6 +37,7 @@ trait XSortable extends XInterface {
     * @see com.sun.star.text.TextSortDescriptor2
     */
   def createSortDescriptor(): SafeArray[PropertyValue] = js.native
+  
   /**
     * sorts the contents of the object according to the specified properties.
     *
@@ -49,8 +51,8 @@ trait XSortable extends XInterface {
     */
   def sort(xDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
 }
-
 object XSortable {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -62,22 +64,26 @@ object XSortable {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSortDescriptor = js.Any.fromFunction0(createSortDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), sort = js.Any.fromFunction1(sort))
     __obj.asInstanceOf[XSortable]
   }
+  
   @scala.inline
   implicit class XSortableOps[Self <: XSortable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateSortDescriptor(value: () => SafeArray[PropertyValue]): Self = this.set("createSortDescriptor", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSort(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("sort", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -12,11 +12,14 @@ import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import typings.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/state", JSImport.Namespace)
 @js.native
 object stateMod extends js.Object {
+  
+  def resolvablesBuilder(state: typings.uirouterCore.stateObjectMod.StateObject): js.Array[Resolvable] = js.native
+  
   @js.native
   class StateBuilder protected ()
     extends typings.uirouterCore.stateBuilderMod.StateBuilder {
@@ -34,6 +37,29 @@ object stateMod extends js.Object {
   class StateObject ()
     extends typings.uirouterCore.stateObjectMod.StateObject {
     def this(config: StateDeclaration) = this()
+  }
+  /* static members */
+  @js.native
+  object StateObject extends js.Object {
+    
+    /**
+      * Create a state object to put the private/internal implementation details onto.
+      * The object's prototype chain looks like:
+      * (Internal State Object) -> (Copy of State.prototype) -> (State Declaration object) -> (State Declaration's prototype...)
+      *
+      * @param stateDecl the user-supplied State Declaration
+      * @returns {StateObject} an internal State object
+      */
+    def create(stateDecl: _StateDeclaration): typings.uirouterCore.stateObjectMod.StateObject = js.native
+    
+    /** Predicate which returns true if the object is an internal [[StateObject]] object */
+    def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = js.native
+    
+    /** Predicate which returns true if the object is an class with @State() decorator */
+    def isStateClass(stateDecl: _StateDeclaration): Boolean = js.native
+    
+    /** Predicate which returns true if the object is a [[StateDeclaration]] object */
+    def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = js.native
   }
   
   @js.native
@@ -97,34 +123,11 @@ object stateMod extends js.Object {
       _options: TransitionOptions
     ) = this()
   }
-  
-  def resolvablesBuilder(state: typings.uirouterCore.stateObjectMod.StateObject): js.Array[Resolvable] = js.native
-  /* static members */
-  @js.native
-  object StateObject extends js.Object {
-    /**
-      * Create a state object to put the private/internal implementation details onto.
-      * The object's prototype chain looks like:
-      * (Internal State Object) -> (Copy of State.prototype) -> (State Declaration object) -> (State Declaration's prototype...)
-      *
-      * @param stateDecl the user-supplied State Declaration
-      * @returns {StateObject} an internal State object
-      */
-    def create(stateDecl: _StateDeclaration): typings.uirouterCore.stateObjectMod.StateObject = js.native
-    /** Predicate which returns true if the object is an internal [[StateObject]] object */
-    def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = js.native
-    /** Predicate which returns true if the object is an class with @State() decorator */
-    def isStateClass(stateDecl: _StateDeclaration): Boolean = js.native
-    /** Predicate which returns true if the object is a [[StateDeclaration]] object */
-    def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object TargetState extends js.Object {
+    
     /** Returns true if the object has a state property that might be a state or state name */
     def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
   }
-  
 }
-

@@ -14,32 +14,33 @@ import typings.std.Uint8ArrayConstructor
 import typings.std.global.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Mixins
 @js.native
 trait Window extends js.Object {
+  
   var AudioContext: typings.std.AudioContext = js.native
+  
   var CANNON: js.Any = js.native
+  
    // WebVR, from specs 1.1
   var DracoDecoderModule: js.Any = js.native
+  
   var Float32Array: Float32ArrayConstructor = js.native
+  
   var MSGesture: typings.std.MSGesture = js.native
+  
   var Math: typings.babylonjs.Math = js.native
+  
   var PointerEvent: js.Any = js.native
+  
   var Uint8Array: Uint8ArrayConstructor = js.native
+  
   var VRFrameData: js.Any = js.native
+  
   var WebGLRenderingContext: typings.babylonjs.WebGLRenderingContext = js.native
-  var mozIndexedDB: IDBFactory = js.native
-  var mozURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
-  var msIndexedDB: IDBFactory = js.native
-  var msURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
-  var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var webkitAudioContext: AudioContext = js.native
-  var webkitIndexedDB: IDBFactory = js.native
-  var webkitURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  
   @JSName("addEventListener")
   def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -52,8 +53,30 @@ trait Window extends js.Object {
   def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
+  
+  var mozIndexedDB: IDBFactory = js.native
+  
   def mozRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
+  
+  var mozURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  
+  var msIndexedDB: IDBFactory = js.native
+  
+  var msURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  
   def oRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
+  
+  var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
   def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native
+  
+  var webkitAudioContext: AudioContext = js.native
+  
+  var webkitIndexedDB: IDBFactory = js.native
+  
+  var webkitURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
 }
-

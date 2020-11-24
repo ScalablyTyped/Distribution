@@ -14,109 +14,316 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.replayable
 import typings.instagramPrivateApi.instagramPrivateApiStrings.story
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait MediaConfigureStoryBaseOptions extends js.Object {
-  var allow_multi_configures: js.UndefOr[`0` | `1`] = js.undefined
-  var attached_media: js.UndefOr[js.Array[StoryAttachedMedia] | String] = js.undefined
-  var audience: js.UndefOr[besties] = js.undefined
-  var camera_position: js.UndefOr[String] = js.undefined
-  var caption: js.UndefOr[String] = js.undefined
-  var client_context: js.UndefOr[String] = js.undefined
-  var client_shared_at: js.UndefOr[String] = js.undefined
-  var configure_mode: `1` | `2`
-  var geotag_enabled: js.UndefOr[`1` | `0`] = js.undefined
-  var internal_features: js.UndefOr[polling_sticker] = js.undefined
-  var mas_opt_in: js.UndefOr[NOT_PROMPTED] = js.undefined
-  var media_latitude: js.UndefOr[String] = js.undefined
-  var media_longitude: js.UndefOr[String] = js.undefined
-  var posting_latitude: js.UndefOr[String] = js.undefined
-  var posting_longitude: js.UndefOr[String] = js.undefined
-  var recipient_users: js.UndefOr[js.Array[String] | String] = js.undefined
-  var reel_mentions: js.UndefOr[js.Array[StoryMention] | String] = js.undefined
-  var reply_type: js.UndefOr[story | String] = js.undefined
-  var story_chats: js.UndefOr[js.Array[StoryChat] | String] = js.undefined
-  var story_countdowns: js.UndefOr[js.Array[StoryCountdown] | String] = js.undefined
-  var story_cta: js.UndefOr[js.Array[StoryCta] | String] = js.undefined
-  var story_hashtags: js.UndefOr[js.Array[StoryHashtag] | String] = js.undefined
-  var story_locations: js.UndefOr[js.Array[StoryLocation] | String] = js.undefined
-  var story_media_creation_date: js.UndefOr[String] = js.undefined
-  var story_polls: js.UndefOr[js.Array[StoryPoll] | String] = js.undefined
-  var story_questions: js.UndefOr[js.Array[StoryQuestion] | String] = js.undefined
-  var story_quizs: js.UndefOr[js.Array[StoryQuiz] | String] = js.undefined
-  var story_sliders: js.UndefOr[js.Array[StorySlider] | String] = js.undefined
-  var story_sticker_ids: js.UndefOr[String | question_sticker_ma | countdown_sticker_time | chat_sticker_id] = js.undefined
-  var thread_ids: js.UndefOr[js.Array[String] | String] = js.undefined
-  var view_mode: js.UndefOr[replayable | once | String] = js.undefined
+  
+  var allow_multi_configures: js.UndefOr[`0` | `1`] = js.native
+  
+  var attached_media: js.UndefOr[js.Array[StoryAttachedMedia] | String] = js.native
+  
+  var audience: js.UndefOr[besties] = js.native
+  
+  var camera_position: js.UndefOr[String] = js.native
+  
+  var caption: js.UndefOr[String] = js.native
+  
+  var client_context: js.UndefOr[String] = js.native
+  
+  var client_shared_at: js.UndefOr[String] = js.native
+  
+  var configure_mode: `1` | `2` = js.native
+  
+  var geotag_enabled: js.UndefOr[`1` | `0`] = js.native
+  
+  var internal_features: js.UndefOr[polling_sticker] = js.native
+  
+  var mas_opt_in: js.UndefOr[NOT_PROMPTED] = js.native
+  
+  var media_latitude: js.UndefOr[String] = js.native
+  
+  var media_longitude: js.UndefOr[String] = js.native
+  
+  var posting_latitude: js.UndefOr[String] = js.native
+  
+  var posting_longitude: js.UndefOr[String] = js.native
+  
+  var recipient_users: js.UndefOr[js.Array[String] | String] = js.native
+  
+  var reel_mentions: js.UndefOr[js.Array[StoryMention] | String] = js.native
+  
+  var reply_type: js.UndefOr[story | String] = js.native
+  
+  var story_chats: js.UndefOr[js.Array[StoryChat] | String] = js.native
+  
+  var story_countdowns: js.UndefOr[js.Array[StoryCountdown] | String] = js.native
+  
+  var story_cta: js.UndefOr[js.Array[StoryCta] | String] = js.native
+  
+  var story_hashtags: js.UndefOr[js.Array[StoryHashtag] | String] = js.native
+  
+  var story_locations: js.UndefOr[js.Array[StoryLocation] | String] = js.native
+  
+  var story_media_creation_date: js.UndefOr[String] = js.native
+  
+  var story_polls: js.UndefOr[js.Array[StoryPoll] | String] = js.native
+  
+  var story_questions: js.UndefOr[js.Array[StoryQuestion] | String] = js.native
+  
+  var story_quizs: js.UndefOr[js.Array[StoryQuiz] | String] = js.native
+  
+  var story_sliders: js.UndefOr[js.Array[StorySlider] | String] = js.native
+  
+  var story_sticker_ids: js.UndefOr[String | question_sticker_ma | countdown_sticker_time | chat_sticker_id] = js.native
+  
+  var thread_ids: js.UndefOr[js.Array[String] | String] = js.native
+  
+  var view_mode: js.UndefOr[replayable | once | String] = js.native
 }
-
 object MediaConfigureStoryBaseOptions {
+  
   @scala.inline
-  def apply(
-    configure_mode: `1` | `2`,
-    allow_multi_configures: `0` | `1` = null,
-    attached_media: js.Array[StoryAttachedMedia] | String = null,
-    audience: besties = null,
-    camera_position: String = null,
-    caption: String = null,
-    client_context: String = null,
-    client_shared_at: String = null,
-    geotag_enabled: `1` | `0` = null,
-    internal_features: polling_sticker = null,
-    mas_opt_in: NOT_PROMPTED = null,
-    media_latitude: String = null,
-    media_longitude: String = null,
-    posting_latitude: String = null,
-    posting_longitude: String = null,
-    recipient_users: js.Array[String] | String = null,
-    reel_mentions: js.Array[StoryMention] | String = null,
-    reply_type: story | String = null,
-    story_chats: js.Array[StoryChat] | String = null,
-    story_countdowns: js.Array[StoryCountdown] | String = null,
-    story_cta: js.Array[StoryCta] | String = null,
-    story_hashtags: js.Array[StoryHashtag] | String = null,
-    story_locations: js.Array[StoryLocation] | String = null,
-    story_media_creation_date: String = null,
-    story_polls: js.Array[StoryPoll] | String = null,
-    story_questions: js.Array[StoryQuestion] | String = null,
-    story_quizs: js.Array[StoryQuiz] | String = null,
-    story_sliders: js.Array[StorySlider] | String = null,
-    story_sticker_ids: String | question_sticker_ma | countdown_sticker_time | chat_sticker_id = null,
-    thread_ids: js.Array[String] | String = null,
-    view_mode: replayable | once | String = null
-  ): MediaConfigureStoryBaseOptions = {
+  def apply(configure_mode: `1` | `2`): MediaConfigureStoryBaseOptions = {
     val __obj = js.Dynamic.literal(configure_mode = configure_mode.asInstanceOf[js.Any])
-    if (allow_multi_configures != null) __obj.updateDynamic("allow_multi_configures")(allow_multi_configures.asInstanceOf[js.Any])
-    if (attached_media != null) __obj.updateDynamic("attached_media")(attached_media.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (camera_position != null) __obj.updateDynamic("camera_position")(camera_position.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (client_context != null) __obj.updateDynamic("client_context")(client_context.asInstanceOf[js.Any])
-    if (client_shared_at != null) __obj.updateDynamic("client_shared_at")(client_shared_at.asInstanceOf[js.Any])
-    if (geotag_enabled != null) __obj.updateDynamic("geotag_enabled")(geotag_enabled.asInstanceOf[js.Any])
-    if (internal_features != null) __obj.updateDynamic("internal_features")(internal_features.asInstanceOf[js.Any])
-    if (mas_opt_in != null) __obj.updateDynamic("mas_opt_in")(mas_opt_in.asInstanceOf[js.Any])
-    if (media_latitude != null) __obj.updateDynamic("media_latitude")(media_latitude.asInstanceOf[js.Any])
-    if (media_longitude != null) __obj.updateDynamic("media_longitude")(media_longitude.asInstanceOf[js.Any])
-    if (posting_latitude != null) __obj.updateDynamic("posting_latitude")(posting_latitude.asInstanceOf[js.Any])
-    if (posting_longitude != null) __obj.updateDynamic("posting_longitude")(posting_longitude.asInstanceOf[js.Any])
-    if (recipient_users != null) __obj.updateDynamic("recipient_users")(recipient_users.asInstanceOf[js.Any])
-    if (reel_mentions != null) __obj.updateDynamic("reel_mentions")(reel_mentions.asInstanceOf[js.Any])
-    if (reply_type != null) __obj.updateDynamic("reply_type")(reply_type.asInstanceOf[js.Any])
-    if (story_chats != null) __obj.updateDynamic("story_chats")(story_chats.asInstanceOf[js.Any])
-    if (story_countdowns != null) __obj.updateDynamic("story_countdowns")(story_countdowns.asInstanceOf[js.Any])
-    if (story_cta != null) __obj.updateDynamic("story_cta")(story_cta.asInstanceOf[js.Any])
-    if (story_hashtags != null) __obj.updateDynamic("story_hashtags")(story_hashtags.asInstanceOf[js.Any])
-    if (story_locations != null) __obj.updateDynamic("story_locations")(story_locations.asInstanceOf[js.Any])
-    if (story_media_creation_date != null) __obj.updateDynamic("story_media_creation_date")(story_media_creation_date.asInstanceOf[js.Any])
-    if (story_polls != null) __obj.updateDynamic("story_polls")(story_polls.asInstanceOf[js.Any])
-    if (story_questions != null) __obj.updateDynamic("story_questions")(story_questions.asInstanceOf[js.Any])
-    if (story_quizs != null) __obj.updateDynamic("story_quizs")(story_quizs.asInstanceOf[js.Any])
-    if (story_sliders != null) __obj.updateDynamic("story_sliders")(story_sliders.asInstanceOf[js.Any])
-    if (story_sticker_ids != null) __obj.updateDynamic("story_sticker_ids")(story_sticker_ids.asInstanceOf[js.Any])
-    if (thread_ids != null) __obj.updateDynamic("thread_ids")(thread_ids.asInstanceOf[js.Any])
-    if (view_mode != null) __obj.updateDynamic("view_mode")(view_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureStoryBaseOptions]
   }
+  
+  @scala.inline
+  implicit class MediaConfigureStoryBaseOptionsOps[Self <: MediaConfigureStoryBaseOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setConfigure_mode(value: `1` | `2`): Self = this.set("configure_mode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAllow_multi_configures(value: `0` | `1`): Self = this.set("allow_multi_configures", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAllow_multi_configures: Self = this.set("allow_multi_configures", js.undefined)
+    
+    @scala.inline
+    def setAttached_mediaVarargs(value: StoryAttachedMedia*): Self = this.set("attached_media", js.Array(value :_*))
+    
+    @scala.inline
+    def setAttached_media(value: js.Array[StoryAttachedMedia] | String): Self = this.set("attached_media", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAttached_media: Self = this.set("attached_media", js.undefined)
+    
+    @scala.inline
+    def setAudience(value: besties): Self = this.set("audience", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAudience: Self = this.set("audience", js.undefined)
+    
+    @scala.inline
+    def setCamera_position(value: String): Self = this.set("camera_position", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCamera_position: Self = this.set("camera_position", js.undefined)
+    
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    
+    @scala.inline
+    def setClient_context(value: String): Self = this.set("client_context", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteClient_context: Self = this.set("client_context", js.undefined)
+    
+    @scala.inline
+    def setClient_shared_at(value: String): Self = this.set("client_shared_at", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteClient_shared_at: Self = this.set("client_shared_at", js.undefined)
+    
+    @scala.inline
+    def setGeotag_enabled(value: `1` | `0`): Self = this.set("geotag_enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteGeotag_enabled: Self = this.set("geotag_enabled", js.undefined)
+    
+    @scala.inline
+    def setInternal_features(value: polling_sticker): Self = this.set("internal_features", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInternal_features: Self = this.set("internal_features", js.undefined)
+    
+    @scala.inline
+    def setMas_opt_in(value: NOT_PROMPTED): Self = this.set("mas_opt_in", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMas_opt_in: Self = this.set("mas_opt_in", js.undefined)
+    
+    @scala.inline
+    def setMedia_latitude(value: String): Self = this.set("media_latitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMedia_latitude: Self = this.set("media_latitude", js.undefined)
+    
+    @scala.inline
+    def setMedia_longitude(value: String): Self = this.set("media_longitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMedia_longitude: Self = this.set("media_longitude", js.undefined)
+    
+    @scala.inline
+    def setPosting_latitude(value: String): Self = this.set("posting_latitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePosting_latitude: Self = this.set("posting_latitude", js.undefined)
+    
+    @scala.inline
+    def setPosting_longitude(value: String): Self = this.set("posting_longitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePosting_longitude: Self = this.set("posting_longitude", js.undefined)
+    
+    @scala.inline
+    def setRecipient_usersVarargs(value: String*): Self = this.set("recipient_users", js.Array(value :_*))
+    
+    @scala.inline
+    def setRecipient_users(value: js.Array[String] | String): Self = this.set("recipient_users", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRecipient_users: Self = this.set("recipient_users", js.undefined)
+    
+    @scala.inline
+    def setReel_mentionsVarargs(value: StoryMention*): Self = this.set("reel_mentions", js.Array(value :_*))
+    
+    @scala.inline
+    def setReel_mentions(value: js.Array[StoryMention] | String): Self = this.set("reel_mentions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReel_mentions: Self = this.set("reel_mentions", js.undefined)
+    
+    @scala.inline
+    def setReply_type(value: story | String): Self = this.set("reply_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReply_type: Self = this.set("reply_type", js.undefined)
+    
+    @scala.inline
+    def setStory_chatsVarargs(value: StoryChat*): Self = this.set("story_chats", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_chats(value: js.Array[StoryChat] | String): Self = this.set("story_chats", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_chats: Self = this.set("story_chats", js.undefined)
+    
+    @scala.inline
+    def setStory_countdownsVarargs(value: StoryCountdown*): Self = this.set("story_countdowns", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_countdowns(value: js.Array[StoryCountdown] | String): Self = this.set("story_countdowns", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_countdowns: Self = this.set("story_countdowns", js.undefined)
+    
+    @scala.inline
+    def setStory_ctaVarargs(value: StoryCta*): Self = this.set("story_cta", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_cta(value: js.Array[StoryCta] | String): Self = this.set("story_cta", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_cta: Self = this.set("story_cta", js.undefined)
+    
+    @scala.inline
+    def setStory_hashtagsVarargs(value: StoryHashtag*): Self = this.set("story_hashtags", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_hashtags(value: js.Array[StoryHashtag] | String): Self = this.set("story_hashtags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_hashtags: Self = this.set("story_hashtags", js.undefined)
+    
+    @scala.inline
+    def setStory_locationsVarargs(value: StoryLocation*): Self = this.set("story_locations", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_locations(value: js.Array[StoryLocation] | String): Self = this.set("story_locations", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_locations: Self = this.set("story_locations", js.undefined)
+    
+    @scala.inline
+    def setStory_media_creation_date(value: String): Self = this.set("story_media_creation_date", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_media_creation_date: Self = this.set("story_media_creation_date", js.undefined)
+    
+    @scala.inline
+    def setStory_pollsVarargs(value: StoryPoll*): Self = this.set("story_polls", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_polls(value: js.Array[StoryPoll] | String): Self = this.set("story_polls", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_polls: Self = this.set("story_polls", js.undefined)
+    
+    @scala.inline
+    def setStory_questionsVarargs(value: StoryQuestion*): Self = this.set("story_questions", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_questions(value: js.Array[StoryQuestion] | String): Self = this.set("story_questions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_questions: Self = this.set("story_questions", js.undefined)
+    
+    @scala.inline
+    def setStory_quizsVarargs(value: StoryQuiz*): Self = this.set("story_quizs", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_quizs(value: js.Array[StoryQuiz] | String): Self = this.set("story_quizs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_quizs: Self = this.set("story_quizs", js.undefined)
+    
+    @scala.inline
+    def setStory_slidersVarargs(value: StorySlider*): Self = this.set("story_sliders", js.Array(value :_*))
+    
+    @scala.inline
+    def setStory_sliders(value: js.Array[StorySlider] | String): Self = this.set("story_sliders", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_sliders: Self = this.set("story_sliders", js.undefined)
+    
+    @scala.inline
+    def setStory_sticker_ids(value: String | question_sticker_ma | countdown_sticker_time | chat_sticker_id): Self = this.set("story_sticker_ids", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStory_sticker_ids: Self = this.set("story_sticker_ids", js.undefined)
+    
+    @scala.inline
+    def setThread_idsVarargs(value: String*): Self = this.set("thread_ids", js.Array(value :_*))
+    
+    @scala.inline
+    def setThread_ids(value: js.Array[String] | String): Self = this.set("thread_ids", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteThread_ids: Self = this.set("thread_ids", js.undefined)
+    
+    @scala.inline
+    def setView_mode(value: replayable | once | String): Self = this.set("view_mode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteView_mode: Self = this.set("view_mode", js.undefined)
+  }
 }
-

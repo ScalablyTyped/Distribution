@@ -5,16 +5,18 @@ import typings.highcharts.highchartsStrings.Map
 import typings.highcharts.highchartsStrings.StockChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * Highcharts-extended JQuery.
     */
   @js.native
   trait JQuery extends js.Object {
+    
     /**
       * Helper function to return the chart of the current JQuery selector
       * element.
@@ -69,6 +71,4 @@ object global extends js.Object {
     @JSName("highcharts")
     def highcharts_StockChart(className: StockChart, options: Options, callback: ChartCallbackFunction): JQuery = js.native
   }
-  
 }
-

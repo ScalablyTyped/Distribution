@@ -10,9 +10,9 @@ A simple drag and drop library for React which uses the more stable mouseDown mo
 | ------------------ | :-------------: |
 | Full name          | react-dragtastic |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 13747 |
+| # downloads        | 6550 |
 | # stars            | 0 |
 
 ## Links

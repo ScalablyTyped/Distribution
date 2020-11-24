@@ -2,11 +2,12 @@ package typings.winrt.global.Windows.Globalization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Globalization.Fonts")
 @js.native
 object Fonts extends js.Object {
+  
   @js.native
   class LanguageFont ()
     extends typings.winrt.Windows.Globalization.Fonts.LanguageFont
@@ -16,6 +17,4 @@ object Fonts extends js.Object {
     extends typings.winrt.Windows.Globalization.Fonts.LanguageFontGroup {
     def this(languageTag: String) = this()
   }
-  
 }
-

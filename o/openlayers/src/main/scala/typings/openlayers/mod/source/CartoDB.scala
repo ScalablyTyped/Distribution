@@ -4,7 +4,7 @@ import typings.openlayers.mod.GlobalObject
 import typings.openlayers.mod.olx.source.CartoDBOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,12 +24,14 @@ class CartoDB protected () extends XYZ {
     * @api
     */
   def this(options: CartoDBOptions) = this()
+  
   /**
     * Returns the current config.
     * @return The current configuration.
     * @api
     */
   def getConfig(): GlobalObject = js.native
+  
   /**
     * Sets the CartoDB config
     * @param config In the case of anonymous maps, a CartoDB configuration
@@ -38,6 +40,7 @@ class CartoDB protected () extends XYZ {
     * @api
     */
   def setConfig(config: GlobalObject): Unit = js.native
+  
   /**
     * Updates the carto db config.
     * @param config a key-value lookup. Values will replace current values
@@ -46,4 +49,3 @@ class CartoDB protected () extends XYZ {
     */
   def updateConfig(config: GlobalObject): Unit = js.native
 }
-

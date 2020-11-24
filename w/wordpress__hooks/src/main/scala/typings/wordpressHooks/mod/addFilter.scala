@@ -2,11 +2,12 @@ package typings.wordpressHooks.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/hooks", "addFilter")
 @js.native
 object addFilter extends js.Object {
+  
   def apply[T](
     hookName: String,
     namespace: String,
@@ -19,4 +20,3 @@ object addFilter extends js.Object {
     priority: Double
   ): Unit = js.native
 }
-

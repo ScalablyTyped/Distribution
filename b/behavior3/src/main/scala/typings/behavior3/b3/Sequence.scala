@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Sequence node ticks its children sequentially until one of them
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Sequence extends BaseNode
-
 object Sequence {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -32,4 +32,3 @@ object Sequence {
     __obj.asInstanceOf[Sequence]
   }
 }
-

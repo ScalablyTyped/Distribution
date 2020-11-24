@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait CircleEase extends EasingFunction
-
 object CircleEase {
+  
   @scala.inline
   def apply(
     _easingMode: js.Any,
@@ -19,4 +20,3 @@ object CircleEase {
     __obj.asInstanceOf[CircleEase]
   }
 }
-

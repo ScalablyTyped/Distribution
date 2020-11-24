@@ -10,9 +10,9 @@ A cron-like and not-cron-like job scheduler for Node.
 | ------------------ | :-------------: |
 | Full name          | node-schedule |
 | Keywords           | schedule, task, job, cron |
-| # releases         | 4 |
-| # dependents       | 656 |
-| # downloads        | 9395033 |
+| # releases         | 3 |
+| # dependents       | 772 |
+| # downloads        | 12836713 |
 | # stars            | 257 |
 
 ## Links

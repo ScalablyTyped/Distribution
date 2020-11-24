@@ -7,7 +7,7 @@ import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Events/pointerEvents", "PointerInfoPre")
 @js.native
@@ -21,17 +21,19 @@ class PointerInfoPre protected () extends PointerInfoBase {
     * @param localY Defines the local y coordinates of the pointer when the event occured
     */
   def this(`type`: Double, event: PointerEvent, localX: Double, localY: Double) = this()
+  
   /**
     * Defines the local position of the pointer on the canvas.
     */
   var localPosition: Vector2 = js.native
+  
   /**
     * Ray from a pointer if availible (eg. 6dof controller)
     */
   var ray: Nullable[Ray] = js.native
+  
   /**
     * Defines whether the engine should skip the next OnPointerObservable associated to this pre.
     */
   var skipOnPointerObservable: Boolean = js.native
 }
-

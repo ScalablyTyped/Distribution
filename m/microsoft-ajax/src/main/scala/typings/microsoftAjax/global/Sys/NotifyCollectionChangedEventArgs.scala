@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes how the collection was changed.
@@ -20,4 +20,3 @@ class NotifyCollectionChangedEventArgs protected ()
     */
   def this(changes: typings.microsoftAjax.Sys.CollectionChange) = this()
 }
-

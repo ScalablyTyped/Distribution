@@ -4,7 +4,7 @@ import typings.chromeApps.WebView.PermissionRequestHandler
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @requires `Permissions:` `audioCapture` and/or `videoCapture`
@@ -21,9 +21,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PermissionRequestEvent extends Event {
+  
   /** The type of permission being requested. */
   var permission: RequestedPermission = js.native
+  
   /** An object which holds details of the requested permission.*/
   var request: PermissionRequestHandler = js.native
 }
-

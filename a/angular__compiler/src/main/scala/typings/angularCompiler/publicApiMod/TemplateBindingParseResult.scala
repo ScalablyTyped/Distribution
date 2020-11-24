@@ -3,7 +3,7 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.astMod.TemplateBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "TemplateBindingParseResult")
 @js.native
@@ -15,4 +15,3 @@ class TemplateBindingParseResult protected ()
     errors: js.Array[typings.angularCompiler.astMod.ParserError]
   ) = this()
 }
-

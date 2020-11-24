@@ -11,18 +11,21 @@ import typings.stripe.stripeStrings.verification_failed
 import typings.stripe.stripeStrings.verified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IBankAccount
   extends IBankAccountHash
      with IExternalAccount
      with IStripeSource {
+  
   var account: js.UndefOr[String] = js.native
+  
   /**
     * This indicates whether or not this bank account is the default external account for its currency.
     */
   var default_for_currency: js.UndefOr[Boolean] = js.native
+  
   /**
     * A set of key/value pairs that you can attach to a bank account object. It
     * can be useful for storing additional information about the bank account in
@@ -30,8 +33,8 @@ trait IBankAccount
     */
   var metadata: IMetadata = js.native
 }
-
 object IBankAccount {
+  
   @scala.inline
   def apply(
     bank_name: String,
@@ -49,28 +52,35 @@ object IBankAccount {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBankAccount]
   }
+  
   @scala.inline
   implicit class IBankAccountOps[Self <: IBankAccount] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccount(value: String): Self = this.set("account", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAccount: Self = this.set("account", js.undefined)
+    
     @scala.inline
     def setDefault_for_currency(value: Boolean): Self = this.set("default_for_currency", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDefault_for_currency: Self = this.set("default_for_currency", js.undefined)
   }
-  
 }
-

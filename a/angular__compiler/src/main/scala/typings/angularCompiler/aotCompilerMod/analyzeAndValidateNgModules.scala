@@ -4,11 +4,12 @@ import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/aot/compiler", "analyzeAndValidateNgModules")
 @js.native
 object analyzeAndValidateNgModules extends js.Object {
+  
   def apply(
     fileNames: js.Array[String],
     host: NgAnalyzeModulesHost,
@@ -16,4 +17,3 @@ object analyzeAndValidateNgModules extends js.Object {
     metadataResolver: CompileMetadataResolver
   ): NgAnalyzedModules = js.native
 }
-

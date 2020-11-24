@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pupa" : "2.0.1"
+      "pupa" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "pupa" : "2.0.1"
+      "pupa" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

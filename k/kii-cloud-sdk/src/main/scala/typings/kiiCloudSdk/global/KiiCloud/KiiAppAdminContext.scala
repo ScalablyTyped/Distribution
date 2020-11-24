@@ -2,7 +2,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents the app admin context
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiAppAdminContext ()
   extends typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext
-

@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Rope Game Object.
@@ -47,4 +47,3 @@ class Rope protected ()
     alphas: js.UndefOr[js.Array[Double]]
   ) = this()
 }
-

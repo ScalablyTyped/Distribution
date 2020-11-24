@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__attachments
 
-Typings are for version 2.1.1
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - Notebook Cell Attachments
@@ -10,9 +10,9 @@ JupyterLab - Notebook Cell Attachments
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/attachments |
 | Keywords           | - |
-| # releases         | 56 |
-| # dependents       | 2 |
-| # downloads        | 890567 |
+| # releases         | 111 |
+| # dependents       | 3 |
+| # downloads        | 1558531 |
 | # stars            | 0 |
 
 ## Links

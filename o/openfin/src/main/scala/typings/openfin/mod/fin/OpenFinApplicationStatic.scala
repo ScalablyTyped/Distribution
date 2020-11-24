@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.openfin.anon.HttpResponseCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OpenFinApplicationStatic
@@ -26,6 +26,7 @@ Instantiable1[/* options */ ApplicationOption, OpenFinApplication]
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinApplication
     ] {
+  
   /**
     * Launches the given Application manifest.
     */
@@ -41,13 +42,14 @@ Instantiable1[/* options */ ApplicationOption, OpenFinApplication]
     callback: js.Function1[/* app */ OpenFinApplication, Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Returns an Application object that represents an existing application.
     */
   def getCurrent(): OpenFinApplication = js.native
+  
   /**
     * Returns an Application object that represents an existing application.
     */
   def wrap(uuid: String): OpenFinApplication = js.native
 }
-

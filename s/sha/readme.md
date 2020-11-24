@@ -11,8 +11,8 @@ Check and get file hashes
 | Full name          | sha |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 14780227 |
+| # dependents       | 61 |
+| # downloads        | 19057592 |
 | # stars            | 2 |
 
 ## Links

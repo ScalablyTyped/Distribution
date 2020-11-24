@@ -2,11 +2,12 @@ package typings.pigpioDht.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pigpio-dht", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a new DHT object for accessing a DHT11 or DHT22/AM2302 via GPIO.
     * @param gpio      an unsigned integer specifying the GPIO number
@@ -14,4 +15,3 @@ object ^ extends js.Object {
     */
   def apply(gpio: Double, `type`: Double): Dht = js.native
 }
-

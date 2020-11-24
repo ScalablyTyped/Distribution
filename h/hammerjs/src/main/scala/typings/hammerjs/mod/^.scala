@@ -8,7 +8,7 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hammerjs", JSImport.Namespace)
 @js.native
@@ -18,8 +18,6 @@ class ^ protected () extends HammerManager {
   def this(element: HTMLElement, options: HammerOptions) = this()
   def this(element: SVGElement, options: HammerOptions) = this()
 }
-
 @JSImport("hammerjs", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[HammerStatic]
-

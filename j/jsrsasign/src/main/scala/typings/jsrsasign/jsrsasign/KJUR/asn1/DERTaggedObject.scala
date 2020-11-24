@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER TaggedObject
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DERTaggedObject extends ASN1Object {
+  
   /**
     * set value by an ASN1Object
     * @param isExplicitFlag flag for explicit/implicit tag
@@ -35,8 +36,8 @@ trait DERTaggedObject extends ASN1Object {
     */
   def setASN1Object(isExplicitFlag: Boolean, tagNoHex: String, asn1Object: ASN1Object): Unit = js.native
 }
-
 object DERTaggedObject {
+  
   @scala.inline
   def apply(
     getEncodedHex: () => String,
@@ -53,20 +54,23 @@ object DERTaggedObject {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setASN1Object = js.Any.fromFunction3(setASN1Object))
     __obj.asInstanceOf[DERTaggedObject]
   }
+  
   @scala.inline
   implicit class DERTaggedObjectOps[Self <: DERTaggedObject] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSetASN1Object(value: (Boolean, String, ASN1Object) => Unit): Self = this.set("setASN1Object", js.Any.fromFunction3(value))
   }
-  
 }
-

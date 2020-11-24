@@ -3,7 +3,7 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.SpatialStyle.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The SpatialStyle class represents a style with which spatial objects like polylines and polygons are drawn. A SpatialStyle instance is always treated as immutable to avoid inconstiencies
@@ -31,12 +31,12 @@ class SpatialStyle ()
   def this(opt_options: typings.heremaps.H.map.SpatialStyle) = this()
   def this(opt_options: Options) = this()
 }
-
 /* static members */
 @JSGlobal("H.map.SpatialStyle")
 @js.native
 object SpatialStyle extends js.Object {
+  
   var DEFAULT_STYLE: typings.heremaps.H.map.SpatialStyle = js.native
+  
   var MAX_LINE_WIDTH: Double = js.native
 }
-

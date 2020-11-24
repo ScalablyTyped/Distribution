@@ -24,7 +24,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the area elements of a chart, e.g. the background area, the diagram wall, and the diagram floor of three-dimensional charts. */
 @js.native
@@ -33,8 +33,8 @@ trait ChartArea
      with FillProperties
      with LineProperties
      with UserDefinedAttributesSupplier
-
 object ChartArea {
+  
   @scala.inline
   def apply(
     FillBackground: Boolean,
@@ -95,4 +95,3 @@ object ChartArea {
     __obj.asInstanceOf[ChartArea]
   }
 }
-

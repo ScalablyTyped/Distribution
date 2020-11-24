@@ -3,16 +3,18 @@ package typings.openui5.sap.m.semantic
 import typings.openui5.sap.ui.core.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SemanticSelect extends SemanticControl {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: Item): SemanticSelect = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>change</code> event of this
     * <code>sap.m.semantic.SemanticSelect</code>.When called, the context of the event handler (its
@@ -27,6 +29,7 @@ trait SemanticSelect extends SemanticControl {
     */
   def attachChange(oData: js.Any, fnFunction: js.Any): SemanticSelect = js.native
   def attachChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SemanticSelect = js.native
+  
   /**
     * Binds aggregation <code>items</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -35,11 +38,13 @@ trait SemanticSelect extends SemanticControl {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindItems(oBindingInfo: js.Any): SemanticSelect = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): SemanticSelect = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>change</code> event of this
     * <code>sap.m.semantic.SemanticSelect</code>.The passed function and listener object must match the
@@ -49,6 +54,7 @@ trait SemanticSelect extends SemanticControl {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChange(fnFunction: js.Any, oListener: js.Any): SemanticSelect = js.native
+  
   /**
     * Fires event <code>change</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selectedItem</code> of type <code>sap.ui.core.Item</code>The selected
@@ -57,27 +63,32 @@ trait SemanticSelect extends SemanticControl {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChange(mArguments: js.Any): SemanticSelect = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.See {@link sap.m.Select#enabled}Default value is
     * <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.See {@link sap.m.Select#items}
     */
   def getItems(): js.Array[Item] = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>selectedItem</code>, or
     * <code>null</code>.
     */
   def getSelectedItem(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>selectedKey</code>.See {@link sap.m.Select#selectedKey}Default
     * value is <code></code>.
     * @returns Value of property <code>selectedKey</code>
     */
   def getSelectedKey(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Item</code> in the aggregation <code>items</code>.and
     * returns its index if found or -1 otherwise.
@@ -85,6 +96,7 @@ trait SemanticSelect extends SemanticControl {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: Item): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -95,12 +107,14 @@ trait SemanticSelect extends SemanticControl {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: Item, iIndex: Double): SemanticSelect = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[Item] = js.native
+  
   def removeItem(vItem: String): Item = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -109,6 +123,7 @@ trait SemanticSelect extends SemanticControl {
     */
   def removeItem(vItem: Double): Item = js.native
   def removeItem(vItem: Item): Item = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.See {@link sap.m.Select#enabled}When called with
     * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -117,6 +132,7 @@ trait SemanticSelect extends SemanticControl {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): SemanticSelect = js.native
+  
   /**
     * Sets the associated <code>selectedItem</code>.
     * @param oSelectedItem ID of an element which becomes the new target of this selectedItem association;
@@ -125,6 +141,7 @@ trait SemanticSelect extends SemanticControl {
     */
   def setSelectedItem(oSelectedItem: js.Any): SemanticSelect = js.native
   def setSelectedItem(oSelectedItem: Item): SemanticSelect = js.native
+  
   /**
     * Sets a new value for property <code>selectedKey</code>.See {@link sap.m.Select#selectedKey}When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -133,10 +150,10 @@ trait SemanticSelect extends SemanticControl {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSelectedKey(sSelectedKey: String): SemanticSelect = js.native
+  
   /**
     * Unbinds aggregation <code>items</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindItems(): SemanticSelect = js.native
 }
-

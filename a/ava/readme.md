@@ -1,18 +1,18 @@
 
 # Scala.js typings for ava
 
-Typings are for version 3.11.0
+Typings are for version 3.13.0
 
 ## Library description:
-Testing can be a drag. AVA helps you get it done.
+Node.js test runner that lets you develop with confidence.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ava |
 | Keywords           | 🦄, test, runner, testing, ava, concurrent, parallel, fast, tdd, cli-app, cli, jest, mocha, tape, tap, qunit, jasmine, babel, assert, assertion, promise, promises, async, function, await, generator, generators, yield, observable, observables, unit, snapshot, expect, typescript |
-| # releases         | 29 |
-| # dependents       | 277 |
-| # downloads        | 7407913 |
+| # releases         | 41 |
+| # dependents       | 305 |
+| # downloads        | 9696029 |
 | # stars            | 102 |
 
 ## Links

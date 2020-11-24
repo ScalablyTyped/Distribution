@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "getJSDocReturnType")
 @js.native
 object getJSDocReturnType extends js.Object {
+  
   /**
     * Gets the return type node for the node if provided via JSDoc return tag or type tag.
     *
@@ -15,4 +16,3 @@ object getJSDocReturnType extends js.Object {
     */
   def apply(node: Node): js.UndefOr[TypeNode] = js.native
 }
-

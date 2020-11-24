@@ -4,7 +4,7 @@ import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/index.node", "DataSnapshot")
 @js.native
@@ -17,4 +17,3 @@ class DataSnapshot protected ()
     */
   def this(node_ : Node, ref_ : typings.firebaseDatabase.referenceMod.Reference, index_ : Index) = this()
 }
-

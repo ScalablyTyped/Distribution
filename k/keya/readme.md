@@ -10,9 +10,9 @@ A simple, universal document store
 | ------------------ | :-------------: |
 | Full name          | keya |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 1099 |
+| # releases         | 8 |
+| # dependents       | 2 |
+| # downloads        | 1088 |
 | # stars            | 0 |
 
 ## Links

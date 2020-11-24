@@ -3,7 +3,7 @@ package typings.reactTransitionGroup.switchTransitionMod
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
@@ -34,4 +34,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class default ()
   extends Component[SwitchTransitionProps, js.Object, js.Any]
-

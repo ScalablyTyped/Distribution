@@ -2,21 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AssociationScore...
   */
 @js.native
 trait IAssociationScore extends js.Object {
+  
   /**
     * Association information about the field FieldName1 defined in qFieldPairName.
     */
   var qField1Scores: IFieldScores = js.native
+  
   /**
     * Association information about the field FieldName2 defined in qFieldPairName.
     */
   var qField2Scores: IFieldScores = js.native
+  
   /**
     * Pair of fields.
     * <FieldName1> / <FieldName2>
@@ -26,6 +29,7 @@ trait IAssociationScore extends js.Object {
     * If the field is a synthetic key, the name of the field is preceded by [Synthetic key]:.
     */
   var qFieldPairName: String = js.native
+  
   /**
     * Flag used to interpret calculated scores.
     * One of the following values or sum of values that apply:
@@ -43,8 +47,8 @@ trait IAssociationScore extends js.Object {
     */
   var qScoreSummary: Double = js.native
 }
-
 object IAssociationScore {
+  
   @scala.inline
   def apply(
     qField1Scores: IFieldScores,
@@ -55,26 +59,32 @@ object IAssociationScore {
     val __obj = js.Dynamic.literal(qField1Scores = qField1Scores.asInstanceOf[js.Any], qField2Scores = qField2Scores.asInstanceOf[js.Any], qFieldPairName = qFieldPairName.asInstanceOf[js.Any], qScoreSummary = qScoreSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssociationScore]
   }
+  
   @scala.inline
   implicit class IAssociationScoreOps[Self <: IAssociationScore] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setQField1Scores(value: IFieldScores): Self = this.set("qField1Scores", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQField2Scores(value: IFieldScores): Self = this.set("qField2Scores", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQFieldPairName(value: String): Self = this.set("qFieldPairName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQScoreSummary(value: Double): Self = this.set("qScoreSummary", value.asInstanceOf[js.Any])
   }
-  
 }
-

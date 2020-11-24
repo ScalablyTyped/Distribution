@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigquery.projects.getServiceAccount
     * @desc Returns the email address of the service account for your project
@@ -98,6 +100,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetServiceAccountResponse]
   ): Unit = js.native
+  
   /**
     * bigquery.projects.list
     * @desc Lists all projects to which you have been granted any project role.
@@ -191,4 +194,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProjectList]
   ): Unit = js.native
 }
-

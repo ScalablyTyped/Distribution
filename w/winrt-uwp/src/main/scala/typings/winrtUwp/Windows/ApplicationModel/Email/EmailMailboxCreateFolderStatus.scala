@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailMailboxCreateFolderStatus extends js.Object
-
 /** Indicates the result of a call to TryCreateFolderAsync . */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus")
 @js.native
 object EmailMailboxCreateFolderStatus extends js.Object {
+  
   /** The folder already exists. */
   @js.native
   sealed trait nameCollision extends EmailMailboxCreateFolderStatus
@@ -38,6 +38,4 @@ object EmailMailboxCreateFolderStatus extends js.Object {
   /** Folder creation failed for an unknown reason. */
   @js.native
   sealed trait unknownFailure extends EmailMailboxCreateFolderStatus
-  
 }
-

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SelectionType extends js.Object
-
 /**
   * Type of Selection.
   *
@@ -19,6 +18,7 @@ sealed trait SelectionType extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.SelectionType")
 @js.native
 object SelectionType extends js.Object {
+  
   @js.native
   sealed trait CURRENT_PAGE extends SelectionType
   
@@ -39,6 +39,4 @@ object SelectionType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends SelectionType
-  
 }
-

@@ -17,11 +17,12 @@ import typings.std.RTCSessionDescription
 import typings.std.RTCSessionDescriptionInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", JSImport.Namespace)
 @js.native
 object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
+  
   @js.native
   class SessionDescriptionHandler protected ()
     extends typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler {
@@ -37,33 +38,22 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       mediaStreamFactory: MediaStreamFactory,
       sessionDescriptionHandlerConfiguration: SessionDescriptionHandlerConfiguration
     ) = this()
+    
     /** The data channel. Undefined before created. */
     var _dataChannel: js.UndefOr[RTCDataChannel] = js.native
+    
     /** The local media stream. */
     var _localMediaStream: MediaStream = js.native
+    
     /** The peer connection. Undefined after SessionDescriptionHandler.close(). */
     var _peerConnection: js.UndefOr[RTCPeerConnection] = js.native
+    
     /** The peer connection delegate. */
     var _peerConnectionDelegate: js.UndefOr[PeerConnectionDelegate] = js.native
+    
     /** The remote media stream. */
     var _remoteMediaStream: MediaStream = js.native
-    var iceGatheringCompletePromise: js.Any = js.native
-    var iceGatheringCompleteReject: js.Any = js.native
-    var iceGatheringCompleteResolve: js.Any = js.native
-    var iceGatheringCompleteTimeoutId: js.Any = js.native
-    /**
-      * Initializes the peer connection event handlers
-      */
-    var initPeerConnectionEventHandlers: js.Any = js.native
-    var localMediaStreamConstraints: js.Any = js.native
-    /** Logger. */
-    var logger: Logger = js.native
-    /** Media stream factory. */
-    @JSName("mediaStreamFactory")
-    var mediaStreamFactory_Original: MediaStreamFactory = js.native
-    var onDataChannel: js.Any = js.native
-    /** Configuration options. */
-    var sessionDescriptionHandlerConfiguration: js.UndefOr[SessionDescriptionHandlerConfiguration] = js.native
+    
     /**
       * Applies modifiers to SDP prior to setting the local or remote description.
       * @param sdp - SDP to modify.
@@ -71,6 +61,7 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       */
     /* protected */ def applyModifiers(sdp: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
     /* protected */ def applyModifiers(sdp: RTCSessionDescriptionInit, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[RTCSessionDescriptionInit] = js.native
+    
     /**
       * Create a data channel.
       * @remarks
@@ -81,32 +72,52 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       */
     /* protected */ def createDataChannel(): js.Promise[Unit] = js.native
     /* protected */ def createDataChannel(options: SessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
+    
     /**
       * Depending on current signaling state, create a local offer or answer.
       * @param options - Session description handler options.
       */
     /* protected */ def createLocalOfferOrAnswer(): js.Promise[RTCSessionDescriptionInit] = js.native
     /* protected */ def createLocalOfferOrAnswer(options: SessionDescriptionHandlerOptions): js.Promise[RTCSessionDescriptionInit] = js.native
+    
     /**
       * The data channel. Undefined before it is created.
       */
     def dataChannel: js.UndefOr[RTCDataChannel] = js.native
+    
     def getDescription(options: SessionDescriptionHandlerOptions): js.Promise[BodyAndContentType] = js.native
     def getDescription(options: SessionDescriptionHandlerOptions, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
+    
     /**
       * Get a media stream from the media stream factory and set the local media stream.
       * @param options - Session description handler options.
       */
     /* protected */ def getLocalMediaStream(): js.Promise[Unit] = js.native
     /* protected */ def getLocalMediaStream(options: SessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
+    
     /**
       * Gets the peer connection's local session description.
       */
     /* protected */ def getLocalSessionDescription(): js.Promise[RTCSessionDescription] = js.native
+    
     /**
       * Called when ICE gathering completes and resolves any waiting promise.
       */
     /* protected */ def iceGatheringComplete(): Unit = js.native
+    
+    var iceGatheringCompletePromise: js.Any = js.native
+    
+    var iceGatheringCompleteReject: js.Any = js.native
+    
+    var iceGatheringCompleteResolve: js.Any = js.native
+    
+    var iceGatheringCompleteTimeoutId: js.Any = js.native
+    
+    /**
+      * Initializes the peer connection event handlers
+      */
+    var initPeerConnectionEventHandlers: js.Any = js.native
+    
     /**
       * The local media stream currently being sent.
       *
@@ -121,8 +132,20 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       * https://developer.mozilla.org/en-US/docs/Web/API/MediaStream/onaddtrack
       */
     def localMediaStream: MediaStream = js.native
+    
+    var localMediaStreamConstraints: js.Any = js.native
+    
+    /** Logger. */
+    var logger: Logger = js.native
+    
     /** Media stream factory. */
     /* protected */ def mediaStreamFactory(constraints: MediaStreamConstraints, sessionDescriptionHandler: SessionDescriptionHandler): js.Promise[MediaStream] = js.native
+    /** Media stream factory. */
+    @JSName("mediaStreamFactory")
+    var mediaStreamFactory_Original: MediaStreamFactory = js.native
+    
+    var onDataChannel: js.Any = js.native
+    
     /**
       * The peer connection. Undefined if peer connection has closed.
       *
@@ -136,6 +159,7 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       * this `SessionDescriptionHandler`.
       */
     def peerConnection: js.UndefOr[RTCPeerConnection] = js.native
+    
     /**
       * A delegate which provides access to the peer connection event handlers.
       *
@@ -147,6 +171,7 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       */
     def peerConnectionDelegate: js.UndefOr[PeerConnectionDelegate] = js.native
     def peerConnectionDelegate_=(delegate: js.UndefOr[PeerConnectionDelegate]): Unit = js.native
+    
     /**
       * The remote media stream currently being received.
       *
@@ -161,13 +186,19 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       * https://developer.mozilla.org/en-US/docs/Web/API/MediaStream/onaddtrack
       */
     def remoteMediaStream: MediaStream = js.native
+    
     def sendDtmf(tones: String, options: Duration): Boolean = js.native
+    
+    /** Configuration options. */
+    var sessionDescriptionHandlerConfiguration: js.UndefOr[SessionDescriptionHandlerConfiguration] = js.native
+    
     def setDescription(sdp: String, options: SessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
     def setDescription(
       sdp: String,
       options: SessionDescriptionHandlerOptions,
       modifiers: js.Array[SessionDescriptionHandlerModifier]
     ): js.Promise[Unit] = js.native
+    
     /**
       * Sets the peer connection's sender tracks and local media stream tracks.
       *
@@ -178,16 +209,19 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       * @param stream - Media stream containing tracks to be utilized.
       */
     /* protected */ def setLocalMediaStream(stream: MediaStream): js.Promise[Unit] = js.native
+    
     /**
       * Sets the peer connection's local session description.
       * @param sessionDescription - sessionDescription The session description.
       */
     /* protected */ def setLocalSessionDescription(sessionDescription: RTCSessionDescriptionInit): js.Promise[Unit] = js.native
+    
     /**
       * Sets the peer connection's remote session description.
       * @param sessionDescription - The session description.
       */
     /* protected */ def setRemoteSessionDescription(sessionDescription: RTCSessionDescriptionInit): js.Promise[Unit] = js.native
+    
     /**
       * Sets a remote media stream track.
       *
@@ -197,6 +231,7 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
       * @param track - Media stream track to be utilized.
       */
     /* protected */ def setRemoteTrack(track: MediaStreamTrack): Unit = js.native
+    
     /**
       * Wait for ICE gathering to complete.
       * @param restart - If true, waits if current state is "complete" (waits for transition to "complete").
@@ -207,13 +242,12 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
     /* protected */ def waitForIceGatheringComplete(restart: Boolean): js.Promise[Unit] = js.native
     /* protected */ def waitForIceGatheringComplete(restart: Boolean, timeout: Double): js.Promise[Unit] = js.native
   }
-  
   /* static members */
   @js.native
   object SessionDescriptionHandler extends js.Object {
+    
     var dispatchAddTrackEvent: js.Any = js.native
+    
     var dispatchRemoveTrackEvent: js.Any = js.native
   }
-  
 }
-

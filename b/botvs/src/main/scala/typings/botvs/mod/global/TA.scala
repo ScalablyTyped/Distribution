@@ -9,11 +9,12 @@ import typings.botvs.botvsStrings.Volume
 import typings.botvs.mod.global.botvs.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TA")
 @js.native
 object TA extends js.Object {
+  
   /**
     * 平均真实波幅
     *
@@ -25,6 +26,7 @@ object TA extends js.Object {
     */
   def ATR(Records: js.Array[Record]): js.Array[Double] = js.native
   def ATR(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+  
   /**
     * Alligator Indicator
     *
@@ -59,6 +61,7 @@ object TA extends js.Object {
   ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Chaikin Money Flow
     *
@@ -70,6 +73,7 @@ object TA extends js.Object {
     */
   def CMF(Records: js.Array[Record]): js.Array[Double] = js.native
   def CMF(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+  
   /**
     * 指数平均数指标
     * EMA(数据, 周期), 默认参数为9, 返回一个一维数组
@@ -80,6 +84,7 @@ object TA extends js.Object {
     */
   def EMA(Records: js.Array[Record]): js.Array[Double] = js.native
   def EMA(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+  
   /**
     * 周期最高价
     *
@@ -100,6 +105,7 @@ object TA extends js.Object {
   ): Double = js.native
   def Highest(Records: js.Array[Record], Period: Double): Double = js.native
   def Highest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = js.native
+  
   /**
     * 随机指标
     *
@@ -134,6 +140,7 @@ object TA extends js.Object {
   ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * 周期最低价
     *
@@ -152,6 +159,7 @@ object TA extends js.Object {
   ): Double = js.native
   def Lowest(Records: js.Array[Record], Period: Double): Double = js.native
   def Lowest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = js.native
+  
   /**
     * 移动平均线
     *
@@ -163,6 +171,7 @@ object TA extends js.Object {
     */
   def MA(Records: js.Array[Record]): js.Array[Double] = js.native
   def MA(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+  
   /**
     * 指数平滑异同平均线
     *
@@ -197,6 +206,7 @@ object TA extends js.Object {
   ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * 能量潮
     *
@@ -206,6 +216,7 @@ object TA extends js.Object {
     * @return {[number[] , number[]]}
     */
   def OBV(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * 强弱指标
     *
@@ -218,4 +229,3 @@ object TA extends js.Object {
   def RSI(Records: js.Array[Record]): js.Array[Double] = js.native
   def RSI(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
 }
-

@@ -10,9 +10,9 @@ Tiny graphQL client library
 | ------------------ | :-------------: |
 | Full name          | nanographql |
 | Keywords           | graphql, small, nano |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 5683 |
+| # downloads        | 29001 |
 | # stars            | 0 |
 
 ## Links

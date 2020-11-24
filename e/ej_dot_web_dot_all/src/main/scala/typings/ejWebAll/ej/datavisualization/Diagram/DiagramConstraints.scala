@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DiagramConstraints extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.DiagramConstraints")
 @js.native
 object DiagramConstraints extends js.Object {
+  
   //Enables/Disables interaction done with the help of API methods
   @js.native
   sealed trait APIUpdate extends DiagramConstraints
@@ -73,6 +73,4 @@ object DiagramConstraints extends js.Object {
   //Enables/Disables Zooming
   @js.native
   sealed trait Zoomable extends DiagramConstraints
-  
 }
-

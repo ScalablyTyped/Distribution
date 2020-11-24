@@ -6,7 +6,7 @@ import typings.heremaps.H.service.MapTileService.Info
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class encapsulates a map tile end point of the HERE Map Tile API.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 trait MapTileService_
   extends EventTarget
      with IConfigurable {
+  
   /**
     * This method creates a tile layer. This layer can be used as a layer on a map's data model.
     * @param tileType {string} - the tile type
@@ -167,6 +168,7 @@ trait MapTileService_
     opt_dark: Boolean,
     opt_options: TileProviderOptions
   ): TileLayer = js.native
+  
   /**
     * This method creates a tile provider which uses the specified map tiles. This provider can be used as a data source for an ImageTileLayer.
     * @param tileType {string} - the tile type
@@ -201,20 +203,22 @@ trait MapTileService_
     opt_additionalParameters: ServiceParameters,
     opt_options: TileProviderOptions
   ): ImageTileProvider = js.native
+  
   /**
     * This method returns the map tile service's meta information. The method will return an object once the map tile service's data has been fetched.
     * @returns {(H.service.MapTileService.Info | undefined)} - meta information for this map tile service
     */
   def getInfo(): Info | Unit = js.native
+  
   /**
     * This method returns the map tile type provided by this service.
     * @returns {string} - the map tile type
     */
   def getType(): String = js.native
+  
   /**
     * This method returns the map tile service's newest version hash.
     * @returns {string} - meta information for this map tile service
     */
   def getVersion(): String = js.native
 }
-

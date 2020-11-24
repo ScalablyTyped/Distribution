@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface provides a merged single interface for the {@link ModuleManager} service to implement.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait XModuleManager2
   extends XNameReplace
      with XModuleManager
-
 object XModuleManager2 {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -37,4 +37,3 @@ object XModuleManager2 {
     __obj.asInstanceOf[XModuleManager2]
   }
 }
-

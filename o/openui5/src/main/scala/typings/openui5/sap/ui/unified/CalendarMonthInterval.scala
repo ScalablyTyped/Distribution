@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CalendarMonthInterval extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -15,18 +16,21 @@ trait CalendarMonthInterval extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): CalendarMonthInterval = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): CalendarMonthInterval = js.native
+  
   /**
     * Adds some selectedDate to the aggregation <code>selectedDates</code>.
     * @param oSelectedDate the selectedDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addSelectedDate(oSelectedDate: DateRange): CalendarMonthInterval = js.native
+  
   /**
     * Adds some specialDate to the aggregation <code>specialDates</code>.
     * @param oSpecialDate the specialDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addSpecialDate(oSpecialDate: DateTypeRange): CalendarMonthInterval = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this
     * <code>sap.ui.unified.CalendarMonthInterval</code>.When called, the context of the event handler (its
@@ -41,6 +45,7 @@ trait CalendarMonthInterval extends Control {
     */
   def attachCancel(oData: js.Any, fnFunction: js.Any): CalendarMonthInterval = js.native
   def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.ui.unified.CalendarMonthInterval</code>.When called, the context of the event handler (its
@@ -55,6 +60,7 @@ trait CalendarMonthInterval extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): CalendarMonthInterval = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.CalendarMonthInterval</code>.When called, the context of the event handler (its
@@ -71,16 +77,19 @@ trait CalendarMonthInterval extends Control {
     */
   def attachStartDateChange(oData: js.Any, fnFunction: js.Any): CalendarMonthInterval = js.native
   def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Destroys all the selectedDates in the aggregation <code>selectedDates</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySelectedDates(): CalendarMonthInterval = js.native
+  
   /**
     * Destroys all the specialDates in the aggregation <code>specialDates</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySpecialDates(): CalendarMonthInterval = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancel</code> event of this
     * <code>sap.ui.unified.CalendarMonthInterval</code>.The passed function and listener object must match
@@ -90,6 +99,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachCancel(fnFunction: js.Any, oListener: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.ui.unified.CalendarMonthInterval</code>.The passed function and listener object must match
@@ -99,6 +109,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.CalendarMonthInterval</code>.The passed function and listener object must match
@@ -109,24 +120,28 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Displays a month in the <code>CalendarMonthInterval</code> but doesn't set the focus.
     * @param oDate JavaScript date object for displayed date. (The month of this date will be displayed.)
     * @returns <code>this</code> to allow method chaining
     */
   def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireCancel(mArguments: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Fires event <code>startDateChange</code> to attached listeners.
     * @since 1.34.0
@@ -134,29 +149,34 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireStartDateChange(mArguments: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Sets the focused month of the <code>CalendarMonthInterval</code>.
     * @param oDate JavaScript date object for focused date. (The month of this date will be focused.)
     * @returns <code>this</code> to allow method chaining
     */
   def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>intervalSelection</code>.If set, interval selection is
     * allowedDefault value is <code>false</code>.
     * @returns Value of property <code>intervalSelection</code>
     */
   def getIntervalSelection(): Boolean = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>legend</code>, or
     * <code>null</code>.
     * @since 1.38.5
     */
   def getLegend(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> If the <code>maxDate</code> is set
@@ -166,6 +186,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Value of property <code>maxDate</code>
     */
   def getMaxDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>minDate</code>.Minimum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> If the <code>minDate</code> is set
@@ -175,12 +196,14 @@ trait CalendarMonthInterval extends Control {
     * @returns Value of property <code>minDate</code>
     */
   def getMinDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>months</code>.Number of months displayed<b>Note:</b> On phones,
     * the maximum number of months displayed in the row is always 6.Default value is <code>12</code>.
     * @returns Value of property <code>months</code>
     */
   def getMonths(): Double = js.native
+  
   /**
     * Gets current value of property <code>pickerPopup</code>.If set, the yearPicker opens on a
     * popupDefault value is <code>false</code>.
@@ -188,12 +211,14 @@ trait CalendarMonthInterval extends Control {
     * @returns Value of property <code>pickerPopup</code>
     */
   def getPickerPopup(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>selectedDates</code>.Date ranges for selected dates of the
     * <code>CalendarMonthInterval</code>.If <code>singleSelection</code> is set, only the first entry is
     * used.<b>Note:</b> Even if only one day is selected, the whole corresponding month is selected.
     */
   def getSelectedDates(): js.Array[DateRange] = js.native
+  
   /**
     * Gets current value of property <code>singleSelection</code>.If set, only a single date or interval,
     * if <code>intervalSelection</code> is enabled, can be selected<b>Note:</b> Selection of multiple
@@ -201,6 +226,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Value of property <code>singleSelection</code>
     */
   def getSingleSelection(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>specialDates</code>.Date ranges with type to visualize special
     * months in the <code>CalendarMonthInterval</code>.If one day is assigned to more than one type, only
@@ -208,18 +234,21 @@ trait CalendarMonthInterval extends Control {
     * corresponding month is displayed in this way.
     */
   def getSpecialDates(): js.Array[DateTypeRange] = js.native
+  
   /**
     * Gets current value of property <code>startDate</code>.Start date of the Interval as JavaScript Date
     * object.The month of this Date will be the first month in the displayed row.
     * @returns Value of property <code>startDate</code>
     */
   def getStartDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Width of the <code>CalendarMonthInterval</code>.
     * The width of the single months depends on this width.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.DateRange</code> in the aggregation
     * <code>selectedDates</code>.and returns its index if found or -1 otherwise.
@@ -227,6 +256,7 @@ trait CalendarMonthInterval extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSelectedDate(oSelectedDate: DateRange): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.DateTypeRange</code> in the aggregation
     * <code>specialDates</code>.and returns its index if found or -1 otherwise.
@@ -234,6 +264,7 @@ trait CalendarMonthInterval extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSpecialDate(oSpecialDate: DateTypeRange): Double = js.native
+  
   /**
     * Inserts a selectedDate into the aggregation <code>selectedDates</code>.
     * @param oSelectedDate the selectedDate to insert; if empty, nothing is inserted
@@ -244,6 +275,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSelectedDate(oSelectedDate: DateRange, iIndex: Double): CalendarMonthInterval = js.native
+  
   /**
     * Inserts a specialDate into the aggregation <code>specialDates</code>.
     * @param oSpecialDate the specialDate to insert; if empty, nothing is inserted
@@ -254,23 +286,27 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: Double): CalendarMonthInterval = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>selectedDates</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSelectedDates(): js.Array[DateRange] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>specialDates</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSpecialDates(): js.Array[DateTypeRange] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -279,6 +315,7 @@ trait CalendarMonthInterval extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeSelectedDate(vSelectedDate: String): DateRange = js.native
   /**
     * Removes a selectedDate from the aggregation <code>selectedDates</code>.
@@ -287,6 +324,7 @@ trait CalendarMonthInterval extends Control {
     */
   def removeSelectedDate(vSelectedDate: Double): DateRange = js.native
   def removeSelectedDate(vSelectedDate: DateRange): DateRange = js.native
+  
   def removeSpecialDate(vSpecialDate: String): DateTypeRange = js.native
   /**
     * Removes a specialDate from the aggregation <code>specialDates</code>.
@@ -295,6 +333,7 @@ trait CalendarMonthInterval extends Control {
     */
   def removeSpecialDate(vSpecialDate: Double): DateTypeRange = js.native
   def removeSpecialDate(vSpecialDate: DateTypeRange): DateTypeRange = js.native
+  
   /**
     * Sets a new value for property <code>intervalSelection</code>.If set, interval selection is
     * allowedWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -303,6 +342,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIntervalSelection(bIntervalSelection: Boolean): CalendarMonthInterval = js.native
+  
   /**
     * Sets the associated <code>legend</code>.
     * @since 1.38.5
@@ -312,6 +352,7 @@ trait CalendarMonthInterval extends Control {
     */
   def setLegend(oLegend: js.Any): CalendarMonthInterval = js.native
   def setLegend(oLegend: CalendarLegend): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> If the <code>maxDate</code> is set
@@ -323,6 +364,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxDate(oMaxDate: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>minDate</code>.Minimum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> If the <code>minDate</code> is set
@@ -334,6 +376,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMinDate(oMinDate: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>months</code>.Number of months displayed<b>Note:</b> On phones,
     * the maximum number of months displayed in the row is always 6.When called with a value of
@@ -343,6 +386,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMonths(iMonths: Double): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>pickerPopup</code>.If set, the yearPicker opens on a popupWhen
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -352,6 +396,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPickerPopup(bPickerPopup: Boolean): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>singleSelection</code>.If set, only a single date or interval,
     * if <code>intervalSelection</code> is enabled, can be selected<b>Note:</b> Selection of multiple
@@ -362,6 +407,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSingleSelection(bSingleSelection: Boolean): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>startDate</code>.Start date of the Interval as JavaScript Date
     * object.The month of this Date will be the first month in the displayed row.When called with a value
@@ -370,6 +416,7 @@ trait CalendarMonthInterval extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setStartDate(oStartDate: js.Any): CalendarMonthInterval = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Width of the <code>CalendarMonthInterval</code>.
     * The width of the single months depends on this width.When called with a value of <code>null</code>
@@ -379,4 +426,3 @@ trait CalendarMonthInterval extends Control {
     */
   def setWidth(sWidth: js.Any): CalendarMonthInterval = js.native
 }
-

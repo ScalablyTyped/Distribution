@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.std.FormData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc A Client provides an interface for Media Content Service
@@ -19,10 +19,9 @@ class Client protected () extends js.Object {
     */
   def this(token: String, baseUrl: String) = this()
   def this(token: String, baseUrl: String, options: Options) = this()
+  
   var config: js.Any = js.native
-  var network: js.Any = js.native
-  var options: js.Any = js.native
-  val transport: js.Any = js.native
+  
   /**
     * Gets media from media service
     * @param {String} sid - Media's SID
@@ -30,6 +29,11 @@ class Client protected () extends js.Object {
     * @returns {Promise<Media>}
     */
   def get(sid: String): js.Promise[typings.twilioMcsClient.mediaMod.Media] = js.native
+  
+  var network: js.Any = js.native
+  
+  var options: js.Any = js.native
+  
   /**
     * Posts raw content to media service
     * @param {String} contentType - content type of media
@@ -39,6 +43,7 @@ class Client protected () extends js.Object {
     */
   def post(contentType: String, media: String): js.Promise[typings.twilioMcsClient.mediaMod.Media] = js.native
   def post(contentType: String, media: Buffer): js.Promise[typings.twilioMcsClient.mediaMod.Media] = js.native
+  
   /**
     * Posts FormData to media service. Can be used only with browser engine's FormData.
     * In non-browser FormData case the method will do promise reject with
@@ -48,6 +53,9 @@ class Client protected () extends js.Object {
     * @returns {Promise<Media>}
     */
   def postFormData(formData: FormData): js.Promise[typings.twilioMcsClient.mediaMod.Media] = js.native
+  
+  val transport: js.Any = js.native
+  
   /**
     * These options can be passed to Client constructor
     * @typedef {Object} Client#ClientOptions
@@ -62,11 +70,10 @@ class Client protected () extends js.Object {
     */
   def updateToken(token: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("twilio-mcs-client", "Client")
 @js.native
 object Client extends js.Object {
+  
   val version: String = js.native
 }
-

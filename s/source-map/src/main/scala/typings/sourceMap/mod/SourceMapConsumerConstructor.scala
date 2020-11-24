@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SourceMapConsumerConstructor
@@ -17,10 +17,15 @@ trait SourceMapConsumerConstructor
       /* sourceMapUrl */ SourceMapUrl, 
       js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer]
     ] {
+  
   var GENERATED_ORDER: Double = js.native
+  
   var GREATEST_LOWER_BOUND: Double = js.native
+  
   var LEAST_UPPER_BOUND: Double = js.native
+  
   var ORIGINAL_ORDER: Double = js.native
+  
   /**
     * Create a BasicSourceMapConsumer from a SourceMapGenerator.
     *
@@ -29,6 +34,7 @@ trait SourceMapConsumerConstructor
     */
   def fromSourceMap(sourceMap: SourceMapGenerator): js.Promise[BasicSourceMapConsumer] = js.native
   def fromSourceMap(sourceMap: SourceMapGenerator, sourceMapUrl: SourceMapUrl): js.Promise[BasicSourceMapConsumer] = js.native
+  
   def `with`[T](
     rawSourceMap: String,
     sourceMapUrl: js.UndefOr[scala.Nothing],
@@ -132,4 +138,3 @@ trait SourceMapConsumerConstructor
     ]
   ): js.Promise[T] = js.native
 }
-

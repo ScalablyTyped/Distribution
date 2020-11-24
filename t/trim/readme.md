@@ -11,8 +11,8 @@ Trim string whitespace
 | Full name          | trim |
 | Keywords           | string, trim |
 | # releases         | 0 |
-| # dependents       | 163 |
-| # downloads        | 88272506 |
+| # dependents       | 172 |
+| # downloads        | 118164584 |
 | # stars            | 6 |
 
 ## Links

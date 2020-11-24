@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This meta service allows the bridgefactory service to instantiate an interprocess bridge using a certain transfer protocol.
@@ -26,8 +26,8 @@ trait Bridge
   extends XInitialization
      with XBridge
      with XComponent
-
 object Bridge {
+  
   @scala.inline
   def apply(
     Description: String,
@@ -47,4 +47,3 @@ object Bridge {
     __obj.asInstanceOf[Bridge]
   }
 }
-

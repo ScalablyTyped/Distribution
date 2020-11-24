@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "axe-puppeteer" : "1.1.0"
+      "axe-puppeteer" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "axe-puppeteer" : "1.1.0"
+      "axe-puppeteer" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new Scene.
@@ -51,6 +51,7 @@ import scala.scalajs.js.annotation._
   * @property skyboxPrefiltered8 - The prefiltered cubemap texture (size 8x8) used as the scene's skybox, if mip level 5. Defaults to null.
   * @property skyboxPrefiltered4 - The prefiltered cubemap texture (size 4x4) used as the scene's skybox, if mip level 6. Defaults to null.
   * @property skyboxIntensity - Multiplier for skybox intensity. Defaults to 1.
+  * @property skyboxRotation - The rotation of the skybox to be displayed. Defaults to {@link pc.Quat.IDENTITY}.
   * @property skyboxMip - The mip level of the skybox to be displayed. Only valid
   * for prefiltered cubemap skyboxes. Defaults to 0 (base level).
   * @property lightmapSizeMultiplier - The lightmap resolution multiplier.
@@ -76,4 +77,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Scene ()
   extends typings.playcanvas.pc.Scene
-

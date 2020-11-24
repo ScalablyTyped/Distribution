@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fires when the user clicks the left mouse button on the object
@@ -16,4 +16,3 @@ object onclick
   extends TopLevel[
       (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, js.Any]) | Null
     ]
-

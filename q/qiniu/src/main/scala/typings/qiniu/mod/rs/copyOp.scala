@@ -3,11 +3,12 @@ package typings.qiniu.mod.rs
 import typings.qiniu.anon.Force
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "rs.copyOp")
 @js.native
 object copyOp extends js.Object {
+  
   /**
     *
     * @param srcBucket
@@ -19,4 +20,3 @@ object copyOp extends js.Object {
   def apply(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = js.native
   def apply(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = js.native
 }
-

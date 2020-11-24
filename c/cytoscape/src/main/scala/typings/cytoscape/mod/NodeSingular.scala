@@ -2,7 +2,7 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  node --> Cy.NodeSingular
@@ -37,4 +37,3 @@ trait NodeSingular
      with NodeSingularPosition
      with NodeSingularCompound
      with SingularElementArgument
-

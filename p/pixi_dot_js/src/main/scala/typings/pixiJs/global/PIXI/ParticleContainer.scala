@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ParticleContainer class is a really fast version of the Container built solely for speed,
@@ -72,4 +72,3 @@ class ParticleContainer ()
   def this(maxSize: Double, properties: Position, batchSize: js.UndefOr[scala.Nothing], autoResize: Boolean) = this()
   def this(maxSize: Double, properties: Position, batchSize: Double, autoResize: Boolean) = this()
 }
-

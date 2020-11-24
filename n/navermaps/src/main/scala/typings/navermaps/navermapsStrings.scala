@@ -5,9 +5,61 @@ import typings.navermaps.naver.maps.strokeLineJoinType
 import typings.navermaps.naver.maps.strokeStyleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navermapsStrings {
+  
+  @scala.inline
+  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
+  
+  @scala.inline
+  def dash: dash = "dash".asInstanceOf[dash]
+  
+  @scala.inline
+  def dashdot: dashdot = "dashdot".asInstanceOf[dashdot]
+  
+  @scala.inline
+  def dot: dot = "dot".asInstanceOf[dot]
+  
+  @scala.inline
+  def longdash: longdash = "longdash".asInstanceOf[longdash]
+  
+  @scala.inline
+  def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
+  
+  @scala.inline
+  def longdashdotdot: longdashdotdot = "longdashdotdot".asInstanceOf[longdashdotdot]
+  
+  @scala.inline
+  def miter: miter = "miter".asInstanceOf[miter]
+  
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  
+  @scala.inline
+  def `round `: `round ` = ("round ").asInstanceOf[`round `]
+  
+  @scala.inline
+  def shortdash: shortdash = "shortdash".asInstanceOf[shortdash]
+  
+  @scala.inline
+  def shortdashdot: shortdashdot = "shortdashdot".asInstanceOf[shortdashdot]
+  
+  @scala.inline
+  def shortdashdotdot: shortdashdotdot = "shortdashdotdot".asInstanceOf[shortdashdotdot]
+  
+  @scala.inline
+  def shortdot: shortdot = "shortdot".asInstanceOf[shortdot]
+  
+  @scala.inline
+  def solid: solid = "solid".asInstanceOf[solid]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
   @js.native
   sealed trait bevel extends strokeLineJoinType
   
@@ -58,40 +110,4 @@ object navermapsStrings {
   
   @js.native
   sealed trait square extends strokeLineCapType
-  
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def dash: dash = "dash".asInstanceOf[dash]
-  @scala.inline
-  def dashdot: dashdot = "dashdot".asInstanceOf[dashdot]
-  @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
-  @scala.inline
-  def longdash: longdash = "longdash".asInstanceOf[longdash]
-  @scala.inline
-  def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
-  @scala.inline
-  def longdashdotdot: longdashdotdot = "longdashdotdot".asInstanceOf[longdashdotdot]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def `round `: `round ` = ("round ").asInstanceOf[`round `]
-  @scala.inline
-  def shortdash: shortdash = "shortdash".asInstanceOf[shortdash]
-  @scala.inline
-  def shortdashdot: shortdashdot = "shortdashdot".asInstanceOf[shortdashdot]
-  @scala.inline
-  def shortdashdotdot: shortdashdotdot = "shortdashdotdot".asInstanceOf[shortdashdotdot]
-  @scala.inline
-  def shortdot: shortdot = "shortdot".asInstanceOf[shortdot]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
 }
-

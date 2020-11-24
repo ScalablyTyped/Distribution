@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Resources$Features")
 @js.native
 class ResourceResourcesFeatures protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.resources.features.delete
     * @desc Deletes a feature.
@@ -42,6 +44,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.resources.features.get
     * @desc Retrieves a feature.
@@ -71,6 +74,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFeature]
   ): Unit = js.native
+  
   /**
     * directory.resources.features.insert
     * @desc Inserts a feature.
@@ -100,6 +104,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFeature]
   ): Unit = js.native
+  
   /**
     * directory.resources.features.list
     * @desc Retrieves a list of features for an account.
@@ -130,6 +135,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFeatures]
   ): Unit = js.native
+  
   /**
     * directory.resources.features.patch
     * @desc Updates a feature. This method supports patch semantics.
@@ -160,6 +166,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFeature]
   ): Unit = js.native
+  
   /**
     * directory.resources.features.rename
     * @desc Renames a feature.
@@ -190,6 +197,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.resources.features.update
     * @desc Updates a feature.
@@ -221,4 +229,3 @@ class ResourceResourcesFeatures protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFeature]
   ): Unit = js.native
 }
-

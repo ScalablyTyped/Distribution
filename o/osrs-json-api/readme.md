@@ -10,9 +10,9 @@ Simple and easy to use Old School RuneScape API wrapper (hiscores and grand exch
 | ------------------ | :-------------: |
 | Full name          | osrs-json-api |
 | Keywords           | osrs, oldschool, runescape, hiscores, grandexchange, grand, exchange, ge, stats, skills |
-| # releases         | 6 |
+| # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 578 |
+| # downloads        | 1103 |
 | # stars            | 0 |
 
 ## Links

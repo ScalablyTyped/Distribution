@@ -4,7 +4,7 @@ import typings.fridaGum.WeakRefCallback
 import typings.fridaGum.WeakRefId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Monitors the lifetime of a heap-allocated JavaScript value.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WeakRef")
 @js.native
 object WeakRef extends js.Object {
+  
   /**
     * Starts monitoring the lifetime of `target`. Calls `callback` as soon as
     * value has been garbage-collected, or the script is about to get
@@ -27,6 +28,7 @@ object WeakRef extends js.Object {
     * @param callback Function to call when `target` gets GCed.
     */
   def bind(target: js.Any, callback: WeakRefCallback): WeakRefId = js.native
+  
   /**
     * Stops monitoring the value passed to `WeakRef.bind()` and calls the
     * callback immediately.
@@ -35,4 +37,3 @@ object WeakRef extends js.Object {
     */
   def unbind(id: WeakRefId): Unit = js.native
 }
-

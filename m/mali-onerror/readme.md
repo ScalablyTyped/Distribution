@@ -12,7 +12,7 @@ On error middleware for Mali
 | Keywords           | mali, grpc, service, server, microservice |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 13530 |
+| # downloads        | 2539 |
 | # stars            | 0 |
 
 ## Links

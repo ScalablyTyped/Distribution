@@ -12,7 +12,7 @@ import typings.officeJs.officeJsStrings.Columns
 import typings.officeJs.officeJsStrings.Rows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -22,54 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChartCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_ChartCollection: RequestContext = js.native
-  /**
-    *
-    * Returns the number of charts in the worksheet.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  val count: Double = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[Chart] = js.native
-  /**
-    *
-    * Occurs when a chart is activated.
-    *
-    * [Api set: ExcelApi 1.8]
-    *
-    * @eventproperty
-    */
-  val onActivated: EventHandlers[ChartActivatedEventArgs] = js.native
-  /**
-    *
-    * Occurs when a new chart is added to the worksheet.
-    *
-    * [Api set: ExcelApi 1.8]
-    *
-    * @eventproperty
-    */
-  val onAdded: EventHandlers[ChartAddedEventArgs] = js.native
-  /**
-    *
-    * Occurs when a chart is deactivated.
-    *
-    * [Api set: ExcelApi 1.8]
-    *
-    * @eventproperty
-    */
-  val onDeactivated: EventHandlers[ChartDeactivatedEventArgs] = js.native
-  /**
-    *
-    * Occurs when a chart is deleted.
-    *
-    * [Api set: ExcelApi 1.8]
-    *
-    * @eventproperty
-    */
-  val onDeleted: EventHandlers[ChartDeletedEventArgs] = js.native
+  
   /**
     * Creates a new chart.
     *
@@ -109,12 +62,26 @@ trait ChartCollection extends ClientObject {
     */
   def add(`type`: ChartType, sourceData: Range): Chart = js.native
   def add(`type`: ChartType, sourceData: Range, seriesBy: ChartSeriesBy): Chart = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartCollection: RequestContext = js.native
+  
+  /**
+    *
+    * Returns the number of charts in the worksheet.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  val count: Double = js.native
+  
   /**
     * Returns the number of charts in the worksheet.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
     *
@@ -123,6 +90,7 @@ trait ChartCollection extends ClientObject {
     * @param name Name of the chart to be retrieved.
     */
   def getItem(name: String): Chart = js.native
+  
   /**
     * Gets a chart based on its position in the collection.
     *
@@ -131,6 +99,7 @@ trait ChartCollection extends ClientObject {
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: Double): Chart = js.native
+  
   /**
     * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
     If the chart does not exist, will return a null object.
@@ -140,6 +109,10 @@ trait ChartCollection extends ClientObject {
     * @param name Name of the chart to be retrieved.
     */
   def getItemOrNullObject(name: String): Chart = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[Chart] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -150,10 +123,50 @@ trait ChartCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): ChartCollection = js.native
   def load(propertyNames: String): ChartCollection = js.native
   def load(propertyNames: js.Array[String]): ChartCollection = js.native
+  
+  /**
+    *
+    * Occurs when a chart is activated.
+    *
+    * [Api set: ExcelApi 1.8]
+    *
+    * @eventproperty
+    */
+  val onActivated: EventHandlers[ChartActivatedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when a new chart is added to the worksheet.
+    *
+    * [Api set: ExcelApi 1.8]
+    *
+    * @eventproperty
+    */
+  val onAdded: EventHandlers[ChartAddedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when a chart is deactivated.
+    *
+    * [Api set: ExcelApi 1.8]
+    *
+    * @eventproperty
+    */
+  val onDeactivated: EventHandlers[ChartDeactivatedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when a chart is deleted.
+    *
+    * [Api set: ExcelApi 1.8]
+    *
+    * @eventproperty
+    */
+  val onDeleted: EventHandlers[ChartDeletedEventArgs] = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): ChartCollectionData = js.native
 }
-

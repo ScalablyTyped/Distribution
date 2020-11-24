@@ -5,12 +5,13 @@ import typings.reactMathjax.anon.Children
 import typings.reactMathjax.anon.Formula
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-mathjax", "MathJax")
 @js.native
 object MathJax extends js.Object {
+  
   type Node = Component[Formula, js.Object, js.Any]
+  
   type Provider = Component[Children, MathJaxContextValue, js.Any]
 }
-

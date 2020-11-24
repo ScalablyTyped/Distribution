@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes an export filter for XML-based file formats.
@@ -23,8 +23,8 @@ import scala.scalajs.js.annotation._
 trait ExportFilter
   extends XDocumentHandler
      with XExportFilter
-
 object ExportFilter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -44,4 +44,3 @@ object ExportFilter {
     __obj.asInstanceOf[ExportFilter]
   }
 }
-

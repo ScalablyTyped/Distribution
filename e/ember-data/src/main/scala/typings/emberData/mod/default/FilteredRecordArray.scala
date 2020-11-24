@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of records whose membership is determined by the
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class FilteredRecordArray[T] ()
   extends typings.emberData.mod.DS.FilteredRecordArray[T]
-

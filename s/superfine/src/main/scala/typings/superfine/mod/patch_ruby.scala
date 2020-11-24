@@ -4,11 +4,11 @@ import typings.std.HTMLElement
 import typings.superfine.superfineStrings.ruby
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superfine", "patch")
 @js.native
 object patch_ruby extends js.Object {
+  
   def apply(rootElement: HTMLElement, vNode: VNode[ruby]): Unit = js.native
 }
-

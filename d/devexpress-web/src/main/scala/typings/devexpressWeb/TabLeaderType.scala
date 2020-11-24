@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TabLeaderType extends js.Object
-
 /**
   * Lists repeated characters used to fill in the space created by a tab which ends at the tab stop.
   */
 @JSGlobal("TabLeaderType")
 @js.native
 object TabLeaderType extends js.Object {
+  
   /**
     * The dot is used as a tab leader character.
     */
@@ -54,6 +54,4 @@ object TabLeaderType extends js.Object {
     */
   @js.native
   sealed trait Underline extends TabLeaderType
-  
 }
-

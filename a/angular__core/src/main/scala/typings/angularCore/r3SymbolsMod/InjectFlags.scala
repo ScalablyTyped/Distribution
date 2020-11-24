@@ -2,11 +2,10 @@ package typings.angularCore.r3SymbolsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InjectFlags extends js.Object
-
 /**
   * Injection flags for DI.
   *
@@ -15,6 +14,7 @@ sealed trait InjectFlags extends js.Object
 @JSImport("@angular/core/src/r3_symbols", "InjectFlags")
 @js.native
 object InjectFlags extends js.Object {
+  
   /** Check self and check parent injector if needed */
   @js.native
   sealed trait Default extends InjectFlags
@@ -37,6 +37,4 @@ object InjectFlags extends js.Object {
   /** Skip the node that is requesting injection. */
   @js.native
   sealed trait SkipSelf extends InjectFlags
-  
 }
-

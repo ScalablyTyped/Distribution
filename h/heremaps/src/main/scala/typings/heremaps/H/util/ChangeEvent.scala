@@ -2,7 +2,7 @@ package typings.heremaps.H.util
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event indicates a change. It contains the old and the new value.
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChangeEvent extends Event
-
 object ChangeEvent {
+  
   @scala.inline
   def apply(
     currentTarget: js.Any,
@@ -29,4 +29,3 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent]
   }
 }
-

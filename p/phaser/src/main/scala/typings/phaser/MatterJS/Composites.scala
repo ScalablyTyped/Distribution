@@ -2,7 +2,7 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Composites` module contains factory methods for creating composite bodies
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Composites extends js.Object
-

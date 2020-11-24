@@ -2,9 +2,10 @@ package typings.xstyledStyledComponents
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Augments a type to be Type | BreakpointObject<Type>,
     * in other words, allow a property to be `1` or `{ xs: 1, sm: 2 }`
     */

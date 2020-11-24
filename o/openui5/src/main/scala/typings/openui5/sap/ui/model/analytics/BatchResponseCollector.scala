@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.model.analytics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BatchResponseCollector extends js.Object {
+  
   /**
     * Collects responses of type BatchResponseCollector.TYPE_SUCCESS and
     * BatchResponseCollector.TYPE_ERROR.Keeps track of all collected responses and fires the necessary
@@ -16,17 +17,20 @@ trait BatchResponseCollector extends js.Object {
     */
   def collect(oResponse: js.Any): Unit = js.native
   def collect(oResponse: js.Any, sResponseType: String): Unit = js.native
+  
   /**
     * Convenience function to collect an error response.Internally BatchResponseCollector#collect is
     * called, the second parameter is set to BatchResponseCollector.TYPE_ERROR
     * @param oResponse the erroneous response object
     */
   def error(oResponse: js.Any): Unit = js.native
+  
   /**
     * Setup-Function to initialize/reset the BatchResponseCollector.
     * @param mParams optional Setup-Parameter
     */
   def setup(mParams: js.Any): Unit = js.native
+  
   /**
     * Convenience function to collect a success response.Internally BatchResponseCollector#collect is
     * called with second parameter BatchResponseCollector.TYPE_SUCCESS
@@ -34,4 +38,3 @@ trait BatchResponseCollector extends js.Object {
     */
   def success(oResponse: js.Any): Unit = js.native
 }
-

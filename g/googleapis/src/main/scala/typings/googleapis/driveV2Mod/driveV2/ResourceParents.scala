@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Parents")
 @js.native
 class ResourceParents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.parents.delete
     * @desc Removes a parent from a file.
@@ -38,6 +40,7 @@ class ResourceParents protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceParentsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceParentsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.parents.get
     * @desc Gets a specific parent reference.
@@ -67,6 +70,7 @@ class ResourceParents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaParentReference]
   ): Unit = js.native
+  
   /**
     * drive.parents.insert
     * @desc Adds a parent folder for a file.
@@ -97,6 +101,7 @@ class ResourceParents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaParentReference]
   ): Unit = js.native
+  
   /**
     * drive.parents.list
     * @desc Lists a file's parents.
@@ -126,4 +131,3 @@ class ResourceParents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaParentList]
   ): Unit = js.native
 }
-

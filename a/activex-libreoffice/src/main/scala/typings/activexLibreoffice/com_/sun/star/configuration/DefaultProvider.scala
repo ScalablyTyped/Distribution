@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a {@link ConfigurationProvider} , that is the default {@link ConfigurationProvider} for its {@link com.sun.star.uno.XComponentContext} .
@@ -24,10 +24,10 @@ trait DefaultProvider
      with XRefreshable
      with XFlushable
      with XLocalizable {
+  
   /**
     * Property to enable/disable asynchronous write-back from in-memory cache to backend(s)
     * @since OOo 2.0
     */
   var EnableAsync: Boolean = js.native
 }
-

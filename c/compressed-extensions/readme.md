@@ -11,8 +11,8 @@ List of compressed file extensions
 | Full name          | compressed-extensions |
 | Keywords           | extensions, extension, file, json, list, array, compressed, compress, archive, zip, tar, rar, 7z |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 2123 |
+| # dependents       | 5 |
+| # downloads        | 2611 |
 | # stars            | 0 |
 
 ## Links

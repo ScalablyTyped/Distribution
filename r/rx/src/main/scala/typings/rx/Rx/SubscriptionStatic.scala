@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SubscriptionStatic
@@ -17,4 +17,3 @@ trait SubscriptionStatic
   */
 Instantiable1[/* subscribeAt */ Double, Subscription]
      with Instantiable2[/* subscribeAt */ Double, /* unsubscribeAt */ Double, Subscription]
-

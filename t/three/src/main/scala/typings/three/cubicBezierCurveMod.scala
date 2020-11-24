@@ -4,19 +4,34 @@ import typings.three.curveMod.Curve
 import typings.three.vector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/extras/curves/CubicBezierCurve", JSImport.Namespace)
 @js.native
 object cubicBezierCurveMod extends js.Object {
+  
   @js.native
   class CubicBezierCurve protected () extends Curve[Vector2] {
     def this(v0: Vector2, v1: Vector2, v2: Vector2, v3: Vector2) = this()
+    
+    /**
+    	 * @default new THREE.Vector2()
+    	 */
     var v0: Vector2 = js.native
+    
+    /**
+    	 * @default new THREE.Vector2()
+    	 */
     var v1: Vector2 = js.native
+    
+    /**
+    	 * @default new THREE.Vector2()
+    	 */
     var v2: Vector2 = js.native
+    
+    /**
+    	 * @default new THREE.Vector2()
+    	 */
     var v3: Vector2 = js.native
   }
-  
 }
-

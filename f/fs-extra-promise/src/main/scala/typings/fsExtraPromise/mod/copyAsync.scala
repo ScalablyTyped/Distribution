@@ -4,11 +4,12 @@ import typings.bluebird.mod.^
 import typings.fsExtra.mod.CopyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-extra-promise", "copyAsync")
 @js.native
 object copyAsync extends js.Object {
+  
   def apply(src: String, dest: String): ^[Unit] = js.native
   def apply(
     src: String,
@@ -17,4 +18,3 @@ object copyAsync extends js.Object {
   ): ^[Unit] = js.native
   def apply(src: String, dest: String, options: CopyOptions): ^[Unit] = js.native
 }
-

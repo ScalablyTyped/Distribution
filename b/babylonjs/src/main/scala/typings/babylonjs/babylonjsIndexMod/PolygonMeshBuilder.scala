@@ -5,7 +5,7 @@ import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "PolygonMeshBuilder")
 @js.native
@@ -24,8 +24,15 @@ class PolygonMeshBuilder protected ()
   def this(name: String, contours: js.Any, scene: Scene) = this()
   def this(name: String, contours: js.Array[Vector2], scene: Scene) = this()
   def this(name: String, contours: Path2, scene: Scene) = this()
+  def this(name: String, contours: js.Any, scene: js.UndefOr[scala.Nothing], earcutInjection: js.Any) = this()
   def this(name: String, contours: js.Any, scene: Scene, earcutInjection: js.Any) = this()
+  def this(
+    name: String,
+    contours: js.Array[Vector2],
+    scene: js.UndefOr[scala.Nothing],
+    earcutInjection: js.Any
+  ) = this()
   def this(name: String, contours: js.Array[Vector2], scene: Scene, earcutInjection: js.Any) = this()
+  def this(name: String, contours: Path2, scene: js.UndefOr[scala.Nothing], earcutInjection: js.Any) = this()
   def this(name: String, contours: Path2, scene: Scene, earcutInjection: js.Any) = this()
 }
-

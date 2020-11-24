@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-linking" : "1.0.3"
+      "expo-linking" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-linking" : "1.0.3"
+      "expo-linking" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

@@ -14,10 +14,11 @@ import typings.electron.electronStrings.unknown_
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PowerMonitor extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_lockscreen(event: `lock-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -32,6 +33,7 @@ trait PowerMonitor extends EventEmitter {
   def addListener_suspend(event: suspend, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  
   /**
     * The system's current state. Can be `active`, `idle`, `locked` or `unknown`.
     *
@@ -40,12 +42,14 @@ trait PowerMonitor extends EventEmitter {
     * only.
     */
   def getSystemIdleState(idleThreshold: Double): active | idle | locked | unknown_ = js.native
+  
   /**
     * Idle time in seconds
   Calculate system idle time in seconds.
     */
   def getSystemIdleTime(): Double = js.native
-  // Docs: http://electronjs.org/docs/api/power-monitor
+  
+  // Docs: https://electronjs.org/docs/api/power-monitor
   /**
     * Emitted when the system is about to lock the screen.
     *
@@ -56,21 +60,21 @@ trait PowerMonitor extends EventEmitter {
   /**
     * Emitted when the system changes to AC power.
     *
-    * @platform win32
+    * @platform darwin,win32
     */
   @JSName("on")
   def on_onac(event: `on-ac`, listener: js.Function): this.type = js.native
   /**
     * Emitted when system changes to battery power.
     *
-    * @platform win32
+    * @platform darwin
     */
   @JSName("on")
   def on_onbattery(event: `on-battery`, listener: js.Function): this.type = js.native
   /**
     * Emitted when system is resuming.
     *
-    * @platform linux,win32
+    * @platform darwin,win32
     */
   @JSName("on")
   def on_resume(event: resume, listener: js.Function): this.type = js.native
@@ -87,7 +91,7 @@ trait PowerMonitor extends EventEmitter {
   /**
     * Emitted when the system is suspending.
     *
-    * @platform linux,win32
+    * @platform darwin,win32
     */
   @JSName("on")
   def on_suspend(event: suspend, listener: js.Function): this.type = js.native
@@ -98,6 +102,7 @@ trait PowerMonitor extends EventEmitter {
     */
   @JSName("on")
   def on_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  
   @JSName("once")
   def once_lockscreen(event: `lock-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -112,6 +117,7 @@ trait PowerMonitor extends EventEmitter {
   def once_suspend(event: suspend, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_lockscreen(event: `lock-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -127,4 +133,3 @@ trait PowerMonitor extends EventEmitter {
   @JSName("removeListener")
   def removeListener_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
 }
-

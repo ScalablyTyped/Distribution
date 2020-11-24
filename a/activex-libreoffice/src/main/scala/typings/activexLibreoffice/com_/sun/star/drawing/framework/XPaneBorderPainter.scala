@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Paint the border around a rectangular region, typically a pane.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPaneBorderPainter extends js.Object {
+  
   /**
     * Enlarge the given rectangle by the size of the specified part of the border. This method can be used to convert an inner bounding box into the center
     * box or the outer bounding box.
@@ -26,11 +27,13 @@ trait XPaneBorderPainter extends js.Object {
     * @param eBorderType The part of the border to add to the given rectangle. Use INNER_BORDER to convert an inner bounding box into the center box or TOTAL_
     */
   def addBorder(sPaneBorderStyleName: String, aRectangle: Rectangle, eBorderType: BorderType): Rectangle = js.native
+  
   /**
     * Return the offset of a call out anchor with respect to the outer border. This value is used when the call out is realized by a fixed bitmap in order
     * to determine the size and/or location of the outer border for a given call out.
     */
   def getCalloutOffset(sPaneBorderStyleName: String): Point = js.native
+  
   /**
     * Paint the border around a pane.
     * @param sPaneBorderStyleName The pane style to use for painting the border.
@@ -46,6 +49,7 @@ trait XPaneBorderPainter extends js.Object {
     aRepaintArea: Rectangle,
     sTitle: String
   ): Unit = js.native
+  
   /**
     * Paint the border around a pane where the border includes a call out that is anchored at the given point. Most arguments have the same meaning as in
     * the {@link paintBorder()} .
@@ -65,6 +69,7 @@ trait XPaneBorderPainter extends js.Object {
     sTitle: String,
     aCalloutAnchor: Point
   ): Unit = js.native
+  
   /**
     * Shrink the given rectangle by the size of the specified part of the border. This method can be used to convert an outer bounding box into the center
     * box or the inner bounding box.
@@ -74,8 +79,8 @@ trait XPaneBorderPainter extends js.Object {
     */
   def removeBorder(sPaneBorderStyleName: String, aRectangle: Rectangle, eBorderType: BorderType): Rectangle = js.native
 }
-
 object XPaneBorderPainter {
+  
   @scala.inline
   def apply(
     addBorder: (String, Rectangle, BorderType) => Rectangle,
@@ -87,28 +92,35 @@ object XPaneBorderPainter {
     val __obj = js.Dynamic.literal(addBorder = js.Any.fromFunction3(addBorder), getCalloutOffset = js.Any.fromFunction1(getCalloutOffset), paintBorder = js.Any.fromFunction5(paintBorder), paintBorderWithCallout = js.Any.fromFunction6(paintBorderWithCallout), removeBorder = js.Any.fromFunction3(removeBorder))
     __obj.asInstanceOf[XPaneBorderPainter]
   }
+  
   @scala.inline
   implicit class XPaneBorderPainterOps[Self <: XPaneBorderPainter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = this.set("addBorder", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetCalloutOffset(value: String => Point): Self = this.set("getCalloutOffset", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setPaintBorder(value: (String, XCanvas, Rectangle, Rectangle, String) => Unit): Self = this.set("paintBorder", js.Any.fromFunction5(value))
+    
     @scala.inline
     def setPaintBorderWithCallout(value: (String, XCanvas, Rectangle, Rectangle, String, Point) => Unit): Self = this.set("paintBorderWithCallout", js.Any.fromFunction6(value))
+    
     @scala.inline
     def setRemoveBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = this.set("removeBorder", js.Any.fromFunction3(value))
   }
-  
 }
-

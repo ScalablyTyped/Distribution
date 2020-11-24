@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartMarkerStyle extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartMarkerStyle")
 @js.native
 object ChartMarkerStyle extends js.Object {
+  
   @js.native
   sealed trait automatic extends ChartMarkerStyle
   
@@ -51,6 +51,4 @@ object ChartMarkerStyle extends js.Object {
   
   @js.native
   sealed trait x extends ChartMarkerStyle
-  
 }
-

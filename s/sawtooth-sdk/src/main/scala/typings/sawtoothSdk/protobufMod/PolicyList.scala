@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "PolicyList")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class PolicyList () extends IPolicyList {
   def this(properties: IPolicyList) = this()
+  
   /** PolicyList policies. */
   @JSName("policies")
   var policies_PolicyList: js.Array[IPolicy] = js.native
+  
   /**
     * Converts this PolicyList to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "PolicyList")
 @js.native
 object PolicyList extends js.Object {
+  
   /**
     * Creates a new PolicyList instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object PolicyList extends js.Object {
     */
   def create(): PolicyList = js.native
   def create(properties: IPolicyList): PolicyList = js.native
+  
   /**
     * Decodes a PolicyList message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object PolicyList extends js.Object {
   def decode(reader: Reader, length: Double): PolicyList = js.native
   def decode(reader: Uint8Array): PolicyList = js.native
   def decode(reader: Uint8Array, length: Double): PolicyList = js.native
+  
   /**
     * Decodes a PolicyList message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object PolicyList extends js.Object {
     */
   def decodeDelimited(reader: Reader): PolicyList = js.native
   def decodeDelimited(reader: Uint8Array): PolicyList = js.native
+  
   /**
     * Encodes the specified PolicyList message. Does not implicitly {@link PolicyList.verify|verify} messages.
     * @param message PolicyList message or plain object to encode
@@ -67,6 +72,7 @@ object PolicyList extends js.Object {
     */
   def encode(message: IPolicyList): Writer = js.native
   def encode(message: IPolicyList, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified PolicyList message, length delimited. Does not implicitly {@link PolicyList.verify|verify} messages.
     * @param message PolicyList message or plain object to encode
@@ -75,12 +81,14 @@ object PolicyList extends js.Object {
     */
   def encodeDelimited(message: IPolicyList): Writer = js.native
   def encodeDelimited(message: IPolicyList, writer: Writer): Writer = js.native
+  
   /**
     * Creates a PolicyList message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns PolicyList
     */
   def fromObject(`object`: StringDictionary[js.Any]): PolicyList = js.native
+  
   /**
     * Creates a plain object from a PolicyList message. Also converts values to other types if specified.
     * @param message PolicyList
@@ -89,6 +97,7 @@ object PolicyList extends js.Object {
     */
   def toObject(message: PolicyList): StringDictionary[js.Any] = js.native
   def toObject(message: PolicyList, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a PolicyList message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object PolicyList extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

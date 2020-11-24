@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SmsEncoding extends js.Object
-
 /** This enumerated type is used to determine the encoding algorithm to send or calculate the length of an SmsTextMessage object. */
 @JSGlobal("Windows.Devices.Sms.SmsEncoding")
 @js.native
 object SmsEncoding extends js.Object {
+  
   /** Standard eight bit encoding. */
   @js.native
   sealed trait eightBit extends SmsEncoding
@@ -54,6 +54,4 @@ object SmsEncoding extends js.Object {
   /** The data encoding is unknown. */
   @js.native
   sealed trait unknown extends SmsEncoding
-  
 }
-

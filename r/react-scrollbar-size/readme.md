@@ -10,9 +10,9 @@ React component to calculate the size of browser scrollbars
 | ------------------ | :-------------: |
 | Full name          | react-scrollbar-size |
 | Keywords           | react, scrollbar |
-| # releases         | 2 |
-| # dependents       | 35 |
-| # downloads        | 1174868 |
+| # releases         | 4 |
+| # dependents       | 36 |
+| # downloads        | 994150 |
 | # stars            | 1 |
 
 ## Links

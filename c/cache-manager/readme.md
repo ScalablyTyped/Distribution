@@ -10,9 +10,9 @@ Cache module for Node.js
 | ------------------ | :-------------: |
 | Full name          | cache-manager |
 | Keywords           | cache, redis, lru-cache, memory cache, multiple cache |
-| # releases         | 7 |
-| # dependents       | 162 |
-| # downloads        | 13181973 |
+| # releases         | 12 |
+| # dependents       | 204 |
+| # downloads        | 19983556 |
 | # stars            | 38 |
 
 ## Links

@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.mobile.ui.ScrollerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofScroller
   extends Instantiable1[/* element */ Element, Scroller]
      with Instantiable2[/* element */ Element, /* options */ ScrollerOptions, Scroller] {
-  var fn: Scroller = js.native
+  
   def extend(proto: js.Object): Scroller = js.native
+  
+  var fn: Scroller = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.dav.mod
 import typings.dav.mod.transport.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "Client")
 @js.native
@@ -18,6 +18,7 @@ class Client protected () extends js.Object {
     */
   def this(xhr: Transport) = this()
   def this(xhr: Transport, options: ClientOptions) = this()
+  
   /**
     * Perform an initial download of a caldav or carddav account's data.
     * @param options
@@ -25,6 +26,7 @@ class Client protected () extends js.Object {
     */
   def createAccount(): js.Promise[Account] = js.native
   def createAccount(options: CreateAccountOptions): js.Promise[Account] = js.native
+  
   /**
     * Create a calendar object on the parameter calendar.
     * @param calendar the calendar to put the object on.
@@ -33,6 +35,7 @@ class Client protected () extends js.Object {
     */
   def createCalendarObject(calendar: Calendar): js.Promise[CalendarObject] = js.native
   def createCalendarObject(calendar: Calendar, options: CreateCalendarObjectOptions): js.Promise[CalendarObject] = js.native
+  
   /**
     * Create a vcard object on the parameter address book.
     * @param addressBook the address book to put the object on.
@@ -41,6 +44,7 @@ class Client protected () extends js.Object {
     */
   def createCard(addressBook: AddressBook): js.Promise[AddressBook] = js.native
   def createCard(addressBook: AddressBook, options: CreateCardOptions): js.Promise[AddressBook] = js.native
+  
   /**
     * Delete the parameter calendar object on the server.
     * @param calendarObject target calendar object.
@@ -49,6 +53,7 @@ class Client protected () extends js.Object {
     */
   def deleteCalendarObject(calendarObject: CalendarObject): js.Promise[CalendarObject] = js.native
   def deleteCalendarObject(calendarObject: CalendarObject, options: DeleteCalendarObjectOptions): js.Promise[CalendarObject] = js.native
+  
   /**
     *
     * Delete the parameter vcard object on the server.
@@ -58,6 +63,7 @@ class Client protected () extends js.Object {
     */
   def deleteCard(card: VCard): js.Promise[VCard] = js.native
   def deleteCard(card: VCard, options: DeleteCardOptions): js.Promise[VCard] = js.native
+  
   /**
     * Send a request using this client's transport (and perhaps baseUrl).
     * @param  req dav request.
@@ -69,6 +75,7 @@ class Client protected () extends js.Object {
     */
   def send(req: Request_, uri: String): js.Promise[_] = js.native
   def send(req: Request_, uri: String, options: ClientSendOptions): js.Promise[_] = js.native
+  
   /**
     * Fetch changes from the remote server to the parameter address books.
     * @param addressBook the address book to fetch changes for.
@@ -77,6 +84,7 @@ class Client protected () extends js.Object {
     */
   def syncAddressBook(addressBook: AddressBook): js.Promise[AddressBook] = js.native
   def syncAddressBook(addressBook: AddressBook, options: SyncAddressBookOptions): js.Promise[AddressBook] = js.native
+  
   /**
     * Fetch changes from the remote server to the account's calendars.
     * @param account the calendar account to sync.
@@ -85,6 +93,7 @@ class Client protected () extends js.Object {
     */
   def syncCaldavAccount(account: Account): js.Promise[Account] = js.native
   def syncCaldavAccount(account: Account, options: SyncCaldavAccountOptions): js.Promise[Account] = js.native
+  
   /**
     * Fetch changes from the remote server to the parameter calendar.
     * @param calendar the calendar to fetch changes for.
@@ -93,6 +102,7 @@ class Client protected () extends js.Object {
     */
   def syncCalendar(calendar: Calendar): js.Promise[Calendar] = js.native
   def syncCalendar(calendar: Calendar, options: SyncCalendarOptions): js.Promise[Calendar] = js.native
+  
   /**
     * Fetch changes from the remote server to the account's address books.
     * @param  account the address book account to sync.
@@ -101,6 +111,7 @@ class Client protected () extends js.Object {
     */
   def syncCarddavAccount(account: Account): js.Promise[Account] = js.native
   def syncCarddavAccount(account: Account, options: SyncCarddavAccountOptions): js.Promise[Account] = js.native
+  
   /**
     * Persist updates to the parameter calendar object to the server.
     * @param calendarObject updated calendar object.
@@ -109,6 +120,7 @@ class Client protected () extends js.Object {
     */
   def updateCalendarObject(calendarObject: CalendarObject): js.Promise[CalendarObject] = js.native
   def updateCalendarObject(calendarObject: CalendarObject, options: UpdateCalendarObjectOptions): js.Promise[CalendarObject] = js.native
+  
   /**
     * Persist updates to the parameter vcard object to the server.
     * @param  card updated vcard object.
@@ -118,4 +130,3 @@ class Client protected () extends js.Object {
   def updateCard(card: VCard): js.Promise[VCard] = js.native
   def updateCard(card: VCard, options: UpdateCardOptions): js.Promise[VCard] = js.native
 }
-

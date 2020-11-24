@@ -3,10 +3,11 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AttributeDecorator extends Instantiable1[/* name */ String, Attribute] {
+  
   /**
     * Parameter decorator for a directive constructor that designates
     * a host-element attribute whose value is injected as a constant string literal.
@@ -30,4 +31,3 @@ trait AttributeDecorator extends Instantiable1[/* name */ String, Attribute] {
     */
   def apply(name: String): js.Any = js.native
 }
-

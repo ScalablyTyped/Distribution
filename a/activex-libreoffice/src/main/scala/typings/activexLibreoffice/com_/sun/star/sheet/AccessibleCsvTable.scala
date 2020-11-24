@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible object of the data table in the CSV import dialog.
@@ -30,8 +30,8 @@ trait AccessibleCsvTable
      with XAccessibleComponent
      with XAccessibleTable
      with XAccessibleSelection
-
 object AccessibleCsvTable {
+  
   @scala.inline
   def apply(
     AccessibleCaption: XAccessible,
@@ -111,4 +111,3 @@ object AccessibleCsvTable {
     __obj.asInstanceOf[AccessibleCsvTable]
   }
 }
-

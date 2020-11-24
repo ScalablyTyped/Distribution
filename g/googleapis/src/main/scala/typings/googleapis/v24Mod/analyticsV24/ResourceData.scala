@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v2.4", "analytics_v2_4.Resource$Data")
 @js.native
 class ResourceData protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.data.get
     * @desc Returns Analytics report data for a view (profile).
@@ -47,4 +49,3 @@ class ResourceData protected () extends js.Object {
   def get(params: ParamsResourceDataGet, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def get(params: ParamsResourceDataGet, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client events related to mouse hovering over menu items.
@@ -18,4 +18,3 @@ class BootstrapClientMenuItemMouseEventArgs protected ()
     */
   def this(item: typings.devexpressWeb.BootstrapClientMenuItem, htmlElement: js.Any) = this()
 }
-

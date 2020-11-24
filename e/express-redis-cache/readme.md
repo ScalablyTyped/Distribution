@@ -10,9 +10,9 @@ A module to make Express interact with Redis (create, get, delete). You can auto
 | ------------------ | :-------------: |
 | Full name          | express-redis-cache |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 229294 |
+| # downloads        | 317520 |
 | # stars            | 19 |
 
 ## Links

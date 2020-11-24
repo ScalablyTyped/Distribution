@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionicons
 
-Typings are for version 5.1.2
+Typings are for version 5.2.3
 
 ## Library description:
 Premium icons for Ionic.
@@ -9,10 +9,10 @@ Premium icons for Ionic.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ionicons |
-| Keywords           | ionicons, ionic, icon, svg, font, mobile, web component, component, custom element |
-| # releases         | 74 |
-| # dependents       | 273 |
-| # downloads        | 11194023 |
+| Keywords           | icon pack, ionic, icon, svg, mobile, web component, component, custom element, material design, ios |
+| # releases         | 60 |
+| # dependents       | 308 |
+| # downloads        | 20695282 |
 | # stars            | 17 |
 
 ## Links

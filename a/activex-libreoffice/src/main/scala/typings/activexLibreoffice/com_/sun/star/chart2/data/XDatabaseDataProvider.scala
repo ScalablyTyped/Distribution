@@ -27,7 +27,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * identifies a {@link XDataProvider} for result sets.
@@ -43,10 +43,13 @@ trait XDatabaseDataProvider
      with XComponent
      with XPropertySet
      with XParameters {
+  
   /** specifies the active connection which is used to create the resulting report. */
   var ActiveConnection: XConnection = js.native
+  
   /** indicates whether the filter should be applied or not, default is `FALSE` . */
   var ApplyFilter: Boolean = js.native
+  
   /**
     * is the command which should be executed, the type of command depends on the CommandType.
     *
@@ -57,6 +60,7 @@ trait XDatabaseDataProvider
     * @see com.sun.star.sdb.CommandType
     */
   var Command: String = js.native
+  
   /**
     * specifies the type of the command to be executed to retrieve a result set.
     *
@@ -66,8 +70,10 @@ trait XDatabaseDataProvider
     * @see com.sun.star.sdb.CommandType
     */
   var CommandType: Double = js.native
+  
   /** is the name of the data source to use, this could be a named data source or the URL of a data access component. */
   var DataSourceName: String = js.native
+  
   /**
     * is used for subreports and contains the names of the columns of the subreport which are related to the master fields of the parent report.
     *
@@ -83,6 +89,7 @@ trait XDatabaseDataProvider
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
   var DetailFields: SafeArray[String] = js.native
+  
   /**
     * specifies if the {@link Command} should be analyzed on the client side before sending it to the database server.
     *
@@ -93,6 +100,7 @@ trait XDatabaseDataProvider
     * CommandType} equals CommandType::COMMAND.
     */
   var EscapeProcessing: Boolean = js.native
+  
   /**
     * specifies an additional filter to optionally use.
     *
@@ -106,10 +114,13 @@ trait XDatabaseDataProvider
     * @see ResultSet
     */
   var Filter: String = js.native
+  
   /** additional group by for the row set */
   var GroupBy: String = js.native
+  
   /** additional having clause for the row set */
   var HavingClause: String = js.native
+  
   /**
     * is used for subreports and contains the names of columns of the parent report.
     *
@@ -119,8 +130,10 @@ trait XDatabaseDataProvider
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
   var MasterFields: SafeArray[String] = js.native
+  
   /** is a additional sort order definition for a row set. */
   var Order: String = js.native
+  
   /**
     * specifies the maximal count of rows which should be fetched.
     *
@@ -128,8 +141,8 @@ trait XDatabaseDataProvider
     */
   var RowLimit: Double = js.native
 }
-
 object XDatabaseDataProvider {
+  
   @scala.inline
   def apply(
     ActiveConnection: XConnection,
@@ -220,44 +233,59 @@ object XDatabaseDataProvider {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], ApplyFilter = ApplyFilter.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], CommandType = CommandType.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any], DetailFields = DetailFields.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], MasterFields = MasterFields.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RangeSelection = RangeSelection.asInstanceOf[js.Any], Row = Row.asInstanceOf[js.Any], RowLimit = RowLimit.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], absolute = js.Any.fromFunction1(absolute), acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addRowSetListener = js.Any.fromFunction1(addRowSetListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), afterLast = js.Any.fromFunction0(afterLast), beforeFirst = js.Any.fromFunction0(beforeFirst), clearParameters = js.Any.fromFunction0(clearParameters), convertRangeFromXML = js.Any.fromFunction1(convertRangeFromXML), convertRangeToXML = js.Any.fromFunction1(convertRangeToXML), createDataSequenceByRangeRepresentation = js.Any.fromFunction1(createDataSequenceByRangeRepresentation), createDataSequenceByRangeRepresentationPossible = js.Any.fromFunction1(createDataSequenceByRangeRepresentationPossible), createDataSequenceByValueArray = js.Any.fromFunction2(createDataSequenceByValueArray), createDataSource = js.Any.fromFunction1(createDataSource), createDataSourcePossible = js.Any.fromFunction1(createDataSourcePossible), detectArguments = js.Any.fromFunction1(detectArguments), dispose = js.Any.fromFunction0(dispose), execute = js.Any.fromFunction0(execute), first = js.Any.fromFunction0(first), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getRangeSelection = js.Any.fromFunction0(getRangeSelection), getRow = js.Any.fromFunction0(getRow), getStatement = js.Any.fromFunction0(getStatement), initialize = js.Any.fromFunction1(initialize), isAfterLast = js.Any.fromFunction0(isAfterLast), isBeforeFirst = js.Any.fromFunction0(isBeforeFirst), isFirst = js.Any.fromFunction0(isFirst), isLast = js.Any.fromFunction0(isLast), last = js.Any.fromFunction0(last), next = js.Any.fromFunction0(next), previous = js.Any.fromFunction0(previous), queryInterface = js.Any.fromFunction1(queryInterface), refreshRow = js.Any.fromFunction0(refreshRow), relative = js.Any.fromFunction1(relative), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeRowSetListener = js.Any.fromFunction1(removeRowSetListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), rowDeleted = js.Any.fromFunction0(rowDeleted), rowInserted = js.Any.fromFunction0(rowInserted), rowUpdated = js.Any.fromFunction0(rowUpdated), setArray = js.Any.fromFunction2(setArray), setBinaryStream = js.Any.fromFunction3(setBinaryStream), setBlob = js.Any.fromFunction2(setBlob), setBoolean = js.Any.fromFunction2(setBoolean), setByte = js.Any.fromFunction2(setByte), setBytes = js.Any.fromFunction2(setBytes), setCharacterStream = js.Any.fromFunction3(setCharacterStream), setClob = js.Any.fromFunction2(setClob), setDate = js.Any.fromFunction2(setDate), setDouble = js.Any.fromFunction2(setDouble), setFloat = js.Any.fromFunction2(setFloat), setInt = js.Any.fromFunction2(setInt), setLong = js.Any.fromFunction2(setLong), setNull = js.Any.fromFunction2(setNull), setObject = js.Any.fromFunction2(setObject), setObjectNull = js.Any.fromFunction3(setObjectNull), setObjectWithInfo = js.Any.fromFunction4(setObjectWithInfo), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setRef = js.Any.fromFunction2(setRef), setShort = js.Any.fromFunction2(setShort), setString = js.Any.fromFunction2(setString), setTime = js.Any.fromFunction2(setTime), setTimestamp = js.Any.fromFunction2(setTimestamp))
     __obj.asInstanceOf[XDatabaseDataProvider]
   }
+  
   @scala.inline
   implicit class XDatabaseDataProviderOps[Self <: XDatabaseDataProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setApplyFilter(value: Boolean): Self = this.set("ApplyFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommandType(value: Double): Self = this.set("CommandType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDetailFields(value: SafeArray[String]): Self = this.set("DetailFields", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGroupBy(value: String): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHavingClause(value: String): Self = this.set("HavingClause", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMasterFields(value: SafeArray[String]): Self = this.set("MasterFields", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRowLimit(value: Double): Self = this.set("RowLimit", value.asInstanceOf[js.Any])
   }
-  
 }
-

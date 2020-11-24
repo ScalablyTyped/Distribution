@@ -2,11 +2,12 @@ package typings.strophe.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.getResourceFromJid")
 @js.native
 object getResourceFromJid extends js.Object {
+  
   /** Function: getResourceFromJid
     *  Get the resource portion of a JID String.
     *
@@ -18,4 +19,3 @@ object getResourceFromJid extends js.Object {
     */
   def apply(jid: String): String = js.native
 }
-

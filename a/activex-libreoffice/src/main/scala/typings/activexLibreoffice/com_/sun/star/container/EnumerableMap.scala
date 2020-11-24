@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides a default {@link XEnumerableMap} implementation
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EnumerableMap extends XEnumerableMap {
+  
   /**
     * creates an instance mapping from the given key type to the given value type
     * @param KeyType denotes the type of the keys in the to-be-created map
@@ -41,6 +42,7 @@ trait EnumerableMap extends XEnumerableMap {
     * @throws com::sun::star::beans::IllegalTypeException if KeyType or ValueType are unsupported types. For values, all type classes except com::sun::star::un
     */
   def create(KeyType: `type`, ValueType: `type`): Unit = js.native
+  
   /**
     * creates an instance mapping from the given key type to the given value type
     *
@@ -53,8 +55,8 @@ trait EnumerableMap extends XEnumerableMap {
     */
   def createImmutable(KeyType: `type`, ValueType: `type`, Values: SeqEquiv[Pair[_, _]]): Unit = js.native
 }
-
 object EnumerableMap {
+  
   @scala.inline
   def apply(
     ElementType: `type`,
@@ -80,22 +82,26 @@ object EnumerableMap {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), create = js.Any.fromFunction2(create), createElementEnumeration = js.Any.fromFunction1(createElementEnumeration), createImmutable = js.Any.fromFunction3(createImmutable), createKeyEnumeration = js.Any.fromFunction1(createKeyEnumeration), createValueEnumeration = js.Any.fromFunction1(createValueEnumeration), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[EnumerableMap]
   }
+  
   @scala.inline
   implicit class EnumerableMapOps[Self <: EnumerableMap] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreate(value: (`type`, `type`) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[_, _]]) => Unit): Self = this.set("createImmutable", js.Any.fromFunction3(value))
   }
-  
 }
-

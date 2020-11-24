@@ -2,14 +2,14 @@ package typings.sharepoint.SP.Utilities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrincipalSource extends js.Object
-
 @JSGlobal("SP.Utilities.PrincipalSource")
 @js.native
 object PrincipalSource extends js.Object {
+  
   @js.native
   sealed trait all extends PrincipalSource
   
@@ -27,6 +27,4 @@ object PrincipalSource extends js.Object {
   
   @js.native
   sealed trait windows extends PrincipalSource
-  
 }
-

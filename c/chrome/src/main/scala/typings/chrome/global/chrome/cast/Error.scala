@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.Error")
 @js.native
@@ -24,4 +24,3 @@ class Error protected ()
   ) = this()
   def this(code: typings.chrome.chrome.cast.ErrorCode, description: String, details: js.Object) = this()
 }
-

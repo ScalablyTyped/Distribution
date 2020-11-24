@@ -12,7 +12,7 @@ A Gulp.js plugin to facilitate the running of NUnit unit tests on .Net assemblie
 | Keywords           | gulp, nunit, .net, gulpplugin |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 28079 |
+| # downloads        | 25165 |
 | # stars            | 0 |
 
 ## Links

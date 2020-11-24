@@ -1,19 +1,20 @@
 package typings.nodeHtmlParser.htmlMod
 
 import typings.nodeHtmlParser.anon.HTMLElementvalidboolean
-import typings.nodeHtmlParser.anon.OptionsnoFixfalse
-import typings.nodeHtmlParser.anon.OptionsnoFixtrue
+import typings.nodeHtmlParser.anon.PartialOptions
+import typings.nodeHtmlParser.anon.PartialOptionsnoFixfalse
+import typings.nodeHtmlParser.anon.PartialOptionsnoFixtrue
 import typings.nodeHtmlParser.anon.Valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-html-parser/dist/nodes/html", "parse")
 @js.native
 object parse extends js.Object {
+  
   def apply(data: String): HTMLElementvalidboolean = js.native
-  def apply(data: String, options: OptionsnoFixfalse): HTMLElementvalidboolean = js.native
-  def apply(data: String, options: OptionsnoFixtrue): (HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
-  def apply(data: String, options: Options): HTMLElementvalidboolean = js.native
+  def apply(data: String, options: PartialOptions): HTMLElementvalidboolean = js.native
+  def apply(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = js.native
+  def apply(data: String, options: PartialOptionsnoFixtrue): (HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
 }
-

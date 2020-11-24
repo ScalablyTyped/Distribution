@@ -9,10 +9,10 @@ WordPress Media Upload Utils.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/media-utils |
-| Keywords           | wordpress, media, upload, media-upload |
-| # releases         | 20 |
-| # dependents       | 3 |
-| # downloads        | 179494 |
+| Keywords           | wordpress, gutenberg, media, upload |
+| # releases         | 27 |
+| # dependents       | 4 |
+| # downloads        | 327300 |
 | # stars            | 0 |
 
 ## Links

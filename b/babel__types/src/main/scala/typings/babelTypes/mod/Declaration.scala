@@ -31,7 +31,7 @@ import typings.babelTypes.babelTypesStrings.const
 import typings.babelTypes.babelTypesStrings.let
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.FunctionDeclaration_
@@ -62,38 +62,43 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.TSModuleDeclaration_
 */
 trait Declaration extends _Node
-
 object Declaration {
+  
   @scala.inline
   def DeclareModuleExports_(`type`: DeclareModuleExports, typeAnnotation: TypeAnnotation_): Declaration = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def OpaqueType_(id: Identifier_, impltype: FlowType, `type`: OpaqueType): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareVariable_(id: Identifier_, `type`: DeclareVariable): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def InterfaceDeclaration_(body: ObjectTypeAnnotation_, id: Identifier_, `type`: InterfaceDeclaration): Declaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def ExportAllDeclaration_(source: StringLiteral_, `type`: ExportAllDeclaration): Declaration = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def ExportDefaultDeclaration_(
     declaration: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression,
@@ -103,12 +108,14 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareModule_(body: BlockStatement_, id: Identifier_ | StringLiteral_, `type`: DeclareModule): Declaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def TSDeclareFunction_(
     async: Boolean,
@@ -120,6 +127,7 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def ImportDeclaration_(
     source: StringLiteral_,
@@ -130,12 +138,14 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareFunction_(id: Identifier_, `type`: DeclareFunction): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def ExportNamedDeclaration_(
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_],
@@ -145,12 +155,14 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareExportDeclaration_(`type`: DeclareExportDeclaration): Declaration = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def VariableDeclaration_(
     declarations: js.Array[VariableDeclarator_],
@@ -161,24 +173,28 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareExportAllDeclaration_(source: StringLiteral_, `type`: DeclareExportAllDeclaration): Declaration = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareClass_(body: ObjectTypeAnnotation_, id: Identifier_, `type`: DeclareClass): Declaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareInterface_(body: ObjectTypeAnnotation_, id: Identifier_, `type`: DeclareInterface): Declaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def FunctionDeclaration_(
     async: Boolean,
@@ -191,6 +207,7 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def EnumDeclaration_(
     body: EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_,
@@ -201,12 +218,14 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def TSTypeAliasDeclaration_(id: Identifier_, `type`: TSTypeAliasDeclaration, typeAnnotation: TSType): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def TSModuleDeclaration_(
     body: TSModuleBlock_ | typings.babelTypes.mod.TSModuleDeclaration_,
@@ -217,36 +236,42 @@ object Declaration {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def TypeAlias_(id: Identifier_, right: FlowType, `type`: TypeAlias): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def TSInterfaceDeclaration_(body: TSInterfaceBody_, id: Identifier_, `type`: TSInterfaceDeclaration): Declaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def TSEnumDeclaration_(id: Identifier_, members: js.Array[TSEnumMember_], `type`: TSEnumDeclaration): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareTypeAlias_(id: Identifier_, right: FlowType, `type`: DeclareTypeAlias): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def DeclareOpaqueType_(id: Identifier_, `type`: DeclareOpaqueType): Declaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
   @scala.inline
   def ClassDeclaration_(body: ClassBody_, id: Identifier_, `type`: ClassDeclaration): Declaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
@@ -254,4 +279,3 @@ object Declaration {
     __obj.asInstanceOf[Declaration]
   }
 }
-

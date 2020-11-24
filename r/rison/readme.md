@@ -11,7 +11,7 @@ URI friendly encoding for JSON structures
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 481855 |
+| # downloads        | 479718 |
 | # stars            | 0 |
 
 ## Links

@@ -3,9 +3,103 @@ package typings.basicscroll
 import typings.basicscroll.mod.KnownTimings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicscrollStrings {
+  
+  @scala.inline
+  def backIn: backIn = "backIn".asInstanceOf[backIn]
+  
+  @scala.inline
+  def backInOut: backInOut = "backInOut".asInstanceOf[backInOut]
+  
+  @scala.inline
+  def backOut: backOut = "backOut".asInstanceOf[backOut]
+  
+  @scala.inline
+  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
+  
+  @scala.inline
+  def bounceInOut: bounceInOut = "bounceInOut".asInstanceOf[bounceInOut]
+  
+  @scala.inline
+  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
+  
+  @scala.inline
+  def circIn: circIn = "circIn".asInstanceOf[circIn]
+  
+  @scala.inline
+  def circInOut: circInOut = "circInOut".asInstanceOf[circInOut]
+  
+  @scala.inline
+  def circOut: circOut = "circOut".asInstanceOf[circOut]
+  
+  @scala.inline
+  def cubicIn: cubicIn = "cubicIn".asInstanceOf[cubicIn]
+  
+  @scala.inline
+  def cubicInOut: cubicInOut = "cubicInOut".asInstanceOf[cubicInOut]
+  
+  @scala.inline
+  def cubicOut: cubicOut = "cubicOut".asInstanceOf[cubicOut]
+  
+  @scala.inline
+  def elasticIn: elasticIn = "elasticIn".asInstanceOf[elasticIn]
+  
+  @scala.inline
+  def elasticInOut: elasticInOut = "elasticInOut".asInstanceOf[elasticInOut]
+  
+  @scala.inline
+  def elasticOut: elasticOut = "elasticOut".asInstanceOf[elasticOut]
+  
+  @scala.inline
+  def expoIn: expoIn = "expoIn".asInstanceOf[expoIn]
+  
+  @scala.inline
+  def expoInOut: expoInOut = "expoInOut".asInstanceOf[expoInOut]
+  
+  @scala.inline
+  def expoOut: expoOut = "expoOut".asInstanceOf[expoOut]
+  
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
+  
+  @scala.inline
+  def quadIn: quadIn = "quadIn".asInstanceOf[quadIn]
+  
+  @scala.inline
+  def quadInOut: quadInOut = "quadInOut".asInstanceOf[quadInOut]
+  
+  @scala.inline
+  def quadOut: quadOut = "quadOut".asInstanceOf[quadOut]
+  
+  @scala.inline
+  def quartIn: quartIn = "quartIn".asInstanceOf[quartIn]
+  
+  @scala.inline
+  def quartInOut: quartInOut = "quartInOut".asInstanceOf[quartInOut]
+  
+  @scala.inline
+  def quartOut: quartOut = "quartOut".asInstanceOf[quartOut]
+  
+  @scala.inline
+  def quintIn: quintIn = "quintIn".asInstanceOf[quintIn]
+  
+  @scala.inline
+  def quintInOut: quintInOut = "quintInOut".asInstanceOf[quintInOut]
+  
+  @scala.inline
+  def quintOut: quintOut = "quintOut".asInstanceOf[quintOut]
+  
+  @scala.inline
+  def sineIn: sineIn = "sineIn".asInstanceOf[sineIn]
+  
+  @scala.inline
+  def sineInOut: sineInOut = "sineInOut".asInstanceOf[sineInOut]
+  
+  @scala.inline
+  def sineOut: sineOut = "sineOut".asInstanceOf[sineOut]
+  
   @js.native
   sealed trait backIn extends KnownTimings
   
@@ -98,68 +192,4 @@ object basicscrollStrings {
   
   @js.native
   sealed trait sineOut extends KnownTimings
-  
-  @scala.inline
-  def backIn: backIn = "backIn".asInstanceOf[backIn]
-  @scala.inline
-  def backInOut: backInOut = "backInOut".asInstanceOf[backInOut]
-  @scala.inline
-  def backOut: backOut = "backOut".asInstanceOf[backOut]
-  @scala.inline
-  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
-  @scala.inline
-  def bounceInOut: bounceInOut = "bounceInOut".asInstanceOf[bounceInOut]
-  @scala.inline
-  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
-  @scala.inline
-  def circIn: circIn = "circIn".asInstanceOf[circIn]
-  @scala.inline
-  def circInOut: circInOut = "circInOut".asInstanceOf[circInOut]
-  @scala.inline
-  def circOut: circOut = "circOut".asInstanceOf[circOut]
-  @scala.inline
-  def cubicIn: cubicIn = "cubicIn".asInstanceOf[cubicIn]
-  @scala.inline
-  def cubicInOut: cubicInOut = "cubicInOut".asInstanceOf[cubicInOut]
-  @scala.inline
-  def cubicOut: cubicOut = "cubicOut".asInstanceOf[cubicOut]
-  @scala.inline
-  def elasticIn: elasticIn = "elasticIn".asInstanceOf[elasticIn]
-  @scala.inline
-  def elasticInOut: elasticInOut = "elasticInOut".asInstanceOf[elasticInOut]
-  @scala.inline
-  def elasticOut: elasticOut = "elasticOut".asInstanceOf[elasticOut]
-  @scala.inline
-  def expoIn: expoIn = "expoIn".asInstanceOf[expoIn]
-  @scala.inline
-  def expoInOut: expoInOut = "expoInOut".asInstanceOf[expoInOut]
-  @scala.inline
-  def expoOut: expoOut = "expoOut".asInstanceOf[expoOut]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def quadIn: quadIn = "quadIn".asInstanceOf[quadIn]
-  @scala.inline
-  def quadInOut: quadInOut = "quadInOut".asInstanceOf[quadInOut]
-  @scala.inline
-  def quadOut: quadOut = "quadOut".asInstanceOf[quadOut]
-  @scala.inline
-  def quartIn: quartIn = "quartIn".asInstanceOf[quartIn]
-  @scala.inline
-  def quartInOut: quartInOut = "quartInOut".asInstanceOf[quartInOut]
-  @scala.inline
-  def quartOut: quartOut = "quartOut".asInstanceOf[quartOut]
-  @scala.inline
-  def quintIn: quintIn = "quintIn".asInstanceOf[quintIn]
-  @scala.inline
-  def quintInOut: quintInOut = "quintInOut".asInstanceOf[quintInOut]
-  @scala.inline
-  def quintOut: quintOut = "quintOut".asInstanceOf[quintOut]
-  @scala.inline
-  def sineIn: sineIn = "sineIn".asInstanceOf[sineIn]
-  @scala.inline
-  def sineInOut: sineInOut = "sineInOut".asInstanceOf[sineInOut]
-  @scala.inline
-  def sineOut: sineOut = "sineOut".asInstanceOf[sineOut]
 }
-

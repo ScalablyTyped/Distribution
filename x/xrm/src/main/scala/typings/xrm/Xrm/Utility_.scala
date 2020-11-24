@@ -10,7 +10,7 @@ import typings.xrm.Xrm.Utility.OpenParameters
 import typings.xrm.Xrm.Utility.WindowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.Utility API
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Utility_ extends js.Object {
+  
   /**
     * Displays an alert dialog, with an "OK" button.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openAlertDialog} instead.
@@ -26,10 +27,12 @@ trait Utility_ extends js.Object {
     * @param onCloseCallback The "OK" callback.
     */
   def alertDialog(message: String, onCloseCallback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Closes a progress dialog box.
     */
   def closeProgressIndicator(): Unit = js.native
+  
   /**
     * Displays a confirmation dialog, with "OK" and "Cancel" buttons.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openConfirmDialog} instead.
@@ -39,6 +42,7 @@ trait Utility_ extends js.Object {
     * @param noCloseCallback The "Cancel" callback.
     */
   def confirmDialog(message: String, yesCloseCallback: js.Function0[Unit], noCloseCallback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Returns the valid state transitions for the specified entity type and state code.
     * TODO: No info on the return type is available
@@ -46,6 +50,7 @@ trait Utility_ extends js.Object {
     * @param stateCode     The state code to find out the allowed status transition values.
     */
   def getAllowedStatusTransitions(entityName: String, stateCode: Double): PromiseLike[_] = js.native
+  
   /**
     * Returns the entity metadata for the specified entity.
     * @param entityName The logical name of the entity.
@@ -53,11 +58,13 @@ trait Utility_ extends js.Object {
     */
   def getEntityMetadata(entityName: String): PromiseLike[EntityMetadata] = js.native
   def getEntityMetadata(entityName: String, attributes: js.Array[String]): PromiseLike[EntityMetadata] = js.native
+  
   /**
     * The method provides access to the global context without going through the form context.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getglobalcontext External Link: getGlobalContext (Client API reference)}
     */
   def getGlobalContext(): GlobalContext = js.native
+  
   /**
     * Returns the localized string for a given key associated with the specified web resource.
     * @param webResourceName The name of the web resource.
@@ -65,6 +72,7 @@ trait Utility_ extends js.Object {
     * @returns A localized string.
     */
   def getResourceString(webResourceName: String, key: String): String = js.native
+  
   /**
     * Invokes an action based on the specified parameters
     * @param name Name of the process action to invoke.
@@ -74,6 +82,7 @@ trait Utility_ extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-own-actions External Link: Create your own actions}
     */
   def invokeProcessAction(name: String, parameters: Dictionary[_]): PromiseLike[_] = js.native
+  
   /**
     * Query if 'entityType' is an Activity entity.
     * @deprecated Deprecated in v9. Use {@link Xrm.Utility.getEntityMetadata  Xrm.Utility.getEntityMetadata(entityName, ["IsActivity"])} instead.
@@ -84,11 +93,13 @@ trait Utility_ extends js.Object {
     * @returns true if the entity is an Activity, false if not.
     */
   def isActivityType(entityType: String): Boolean = js.native
+  
   /**
     * Opens a lookup control to select one or more items.
     * @param lookupOptions Defines the options for opening the lookup dialog
     */
   def lookupObjects(lookupOptions: LookupOptions): PromiseLike[js.Array[LookupValue]] = js.native
+  
   /**
     * Opens an entity form.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openForm} instead.
@@ -116,6 +127,7 @@ trait Utility_ extends js.Object {
   def openEntityForm(name: String, id: String, parameters: js.UndefOr[scala.Nothing], windowOptions: WindowOptions): Unit = js.native
   def openEntityForm(name: String, id: String, parameters: FormOpenParameters): Unit = js.native
   def openEntityForm(name: String, id: String, parameters: FormOpenParameters, windowOptions: WindowOptions): Unit = js.native
+  
   /**
     * Opens quick create.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openForm} instead with the option {useQuickCreateForm:true}.
@@ -129,6 +141,7 @@ trait Utility_ extends js.Object {
   def openQuickCreate(entityLogicalName: String, createFromEntity: js.UndefOr[scala.Nothing], parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue, parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  
   /**
     * Opens an HTML Web Resource in a new browser window.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openWebResource} instead.
@@ -161,11 +174,13 @@ trait Utility_ extends js.Object {
   def openWebResource(webResourceName: String, webResourceData: String, width: js.UndefOr[scala.Nothing], height: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String, width: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String, width: Double, height: Double): Window = js.native
+  
   /**
     * Refreshes the parent grid containing the specified record.
     * @param lookupOptions: The lookup value of the parent object to refresh.
     */
   def refreshParentGrid(lookupOptions: LookupValue): Unit = js.native
+  
   /**
     * Displays a progress dialog with the specified message.
     * Any subsequent call to this method will update the displayed message in the existing progress dialog with the message specified in the latest method call.
@@ -173,4 +188,3 @@ trait Utility_ extends js.Object {
     */
   def showProgressIndicator(message: String): Unit = js.native
 }
-

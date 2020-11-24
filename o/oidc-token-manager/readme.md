@@ -11,7 +11,7 @@ Library to manage tokens obtained via OpenID Connect (OIDC)
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 12013 |
+| # downloads        | 12001 |
 | # stars            | 1 |
 
 ## Links

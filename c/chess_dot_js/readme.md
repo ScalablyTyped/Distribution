@@ -4,15 +4,15 @@
 Typings are for version 0.10
 
 ## Library description:
-A Javascript chess library for chess move generation/validation, piece placement/movement, and check/checkmate/draw detection
+[![Build Status](https://travis-ci.org/jhlywa/chess.js.svg?branch=master)](https://travis-ci.org/jhlywa/chess.js)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chess.js |
 | Keywords           | chess |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 28738 |
+| # releases         | 3 |
+| # dependents       | 42 |
+| # downloads        | 40033 |
 | # stars            | 7 |
 
 ## Links

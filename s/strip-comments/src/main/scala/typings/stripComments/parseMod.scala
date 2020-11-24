@@ -4,11 +4,12 @@ import typings.stripComments.mod.Options
 import typings.stripComments.nodeMod.Block
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strip-comments/lib/parse", JSImport.Namespace)
 @js.native
 object parseMod extends js.Object {
+  
   /**
     * Parses a string and returns a basic CST (Concrete Syntax Tree).
     *
@@ -24,4 +25,3 @@ object parseMod extends js.Object {
   def apply(input: String): Block = js.native
   def apply(input: String, options: Options): Block = js.native
 }
-

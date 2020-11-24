@@ -1,7 +1,7 @@
 
 # Scala.js typings for formstate
 
-Typings are for version 1.3.0
+Typings are for version 2.0.0
 
 ## Library description:
 Painless and simple MobX form management
@@ -10,9 +10,9 @@ Painless and simple MobX form management
 | ------------------ | :-------------: |
 | Full name          | formstate |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 83472 |
+| # releases         | 5 |
+| # dependents       | 6 |
+| # downloads        | 86929 |
 | # stars            | 1 |
 
 ## Links

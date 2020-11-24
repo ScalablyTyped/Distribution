@@ -2,9 +2,67 @@ package typings.loginWithAmazonSdkBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loginWithAmazonSdkBrowserStrings {
+  
+  @scala.inline
+  def access_denied: access_denied = "access_denied".asInstanceOf[access_denied]
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def bearer: bearer = "bearer".asInstanceOf[bearer]
+  
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def in_progress: in_progress = "in_progress".asInstanceOf[in_progress]
+  
+  @scala.inline
+  def invalid_grant: invalid_grant = "invalid_grant".asInstanceOf[invalid_grant]
+  
+  @scala.inline
+  def invalid_request: invalid_request = "invalid_request".asInstanceOf[invalid_request]
+  
+  @scala.inline
+  def invalid_scope: invalid_scope = "invalid_scope".asInstanceOf[invalid_scope]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def postal_code: postal_code = "postal_code".asInstanceOf[postal_code]
+  
+  @scala.inline
+  def profile: profile = "profile".asInstanceOf[profile]
+  
+  @scala.inline
+  def profileColonuser_id: profileColonuser_id = "profile:user_id".asInstanceOf[profileColonuser_id]
+  
+  @scala.inline
+  def queued: queued = "queued".asInstanceOf[queued]
+  
+  @scala.inline
+  def server_error: server_error = "server_error".asInstanceOf[server_error]
+  
+  @scala.inline
+  def temporarily_unavailable: temporarily_unavailable = "temporarily_unavailable".asInstanceOf[temporarily_unavailable]
+  
+  @scala.inline
+  def token: token = "token".asInstanceOf[token]
+  
+  @scala.inline
+  def unauthorized_client: unauthorized_client = "unauthorized_client".asInstanceOf[unauthorized_client]
+  
   @js.native
   sealed trait access_denied extends AuthorizeRequestErrorType
   
@@ -61,44 +119,4 @@ object loginWithAmazonSdkBrowserStrings {
   
   @js.native
   sealed trait unauthorized_client extends AuthorizeRequestErrorType
-  
-  @scala.inline
-  def access_denied: access_denied = "access_denied".asInstanceOf[access_denied]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bearer: bearer = "bearer".asInstanceOf[bearer]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def in_progress: in_progress = "in_progress".asInstanceOf[in_progress]
-  @scala.inline
-  def invalid_grant: invalid_grant = "invalid_grant".asInstanceOf[invalid_grant]
-  @scala.inline
-  def invalid_request: invalid_request = "invalid_request".asInstanceOf[invalid_request]
-  @scala.inline
-  def invalid_scope: invalid_scope = "invalid_scope".asInstanceOf[invalid_scope]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def postal_code: postal_code = "postal_code".asInstanceOf[postal_code]
-  @scala.inline
-  def profile: profile = "profile".asInstanceOf[profile]
-  @scala.inline
-  def profileColonuser_id: profileColonuser_id = "profile:user_id".asInstanceOf[profileColonuser_id]
-  @scala.inline
-  def queued: queued = "queued".asInstanceOf[queued]
-  @scala.inline
-  def server_error: server_error = "server_error".asInstanceOf[server_error]
-  @scala.inline
-  def temporarily_unavailable: temporarily_unavailable = "temporarily_unavailable".asInstanceOf[temporarily_unavailable]
-  @scala.inline
-  def token: token = "token".asInstanceOf[token]
-  @scala.inline
-  def unauthorized_client: unauthorized_client = "unauthorized_client".asInstanceOf[unauthorized_client]
 }
-

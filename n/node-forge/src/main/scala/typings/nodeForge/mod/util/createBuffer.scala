@@ -5,11 +5,12 @@ import typings.nodeForge.mod.Encoding
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-forge", "util.createBuffer")
 @js.native
 object createBuffer extends js.Object {
+  
   def apply(): ByteBuffer = js.native
   def apply(input: Bytes): ByteBuffer = js.native
   def apply(input: Bytes, encoding: Encoding): ByteBuffer = js.native
@@ -20,4 +21,3 @@ object createBuffer extends js.Object {
   def apply(input: ArrayBuffer): ByteBuffer = js.native
   def apply(input: ArrayBuffer, encoding: Encoding): ByteBuffer = js.native
 }
-

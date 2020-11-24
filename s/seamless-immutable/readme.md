@@ -10,9 +10,9 @@ Immutable data structures for JavaScript which are backwards-compatible with nor
 | ------------------ | :-------------: |
 | Full name          | seamless-immutable |
 | Keywords           | immutable |
-| # releases         | 3 |
-| # dependents       | 228 |
-| # downloads        | 14046328 |
+| # releases         | 1 |
+| # dependents       | 268 |
+| # downloads        | 17790552 |
 | # stars            | 19 |
 
 ## Links

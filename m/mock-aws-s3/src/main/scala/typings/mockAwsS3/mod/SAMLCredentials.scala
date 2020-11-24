@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.samlCredentialsMod.SAMLCredentialsParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "SAMLCredentials")
 @js.native
@@ -15,4 +15,3 @@ class SAMLCredentials protected ()
   		 */
   def this(params: SAMLCredentialsParams) = this()
 }
-

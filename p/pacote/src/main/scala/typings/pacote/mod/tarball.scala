@@ -4,18 +4,21 @@ import typings.node.Buffer
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pacote", "tarball")
 @js.native
 object tarball extends js.Object {
+  
   def apply(spec: String): js.Promise[Buffer with FetchResult] = js.native
   def apply(spec: String, opts: Options): js.Promise[Buffer with FetchResult] = js.native
+  
   /**
     * Save a package tarball data to a file on disk.
     */
   def file(spec: String, dest: String): js.Promise[FetchResult] = js.native
   def file(spec: String, dest: String, opts: Options): js.Promise[FetchResult] = js.native
+  
   /**
     * Fetch a tarball and make the stream available to the streamHandler
     * function.
@@ -34,4 +37,3 @@ object tarball extends js.Object {
   def stream[T](spec: String, streamHandler: js.Function1[/* stream */ Transform, js.Promise[T]]): js.Promise[T] = js.native
   def stream[T](spec: String, streamHandler: js.Function1[/* stream */ Transform, js.Promise[T]], opts: Options): js.Promise[T] = js.native
 }
-

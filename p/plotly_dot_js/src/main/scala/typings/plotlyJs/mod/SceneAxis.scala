@@ -53,17 +53,21 @@ import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SceneAxis extends Axis {
+  
   var backgroundcolor: Color = js.native
+  
   var showaxeslabels: Boolean = js.native
+  
   var showbackground: Boolean = js.native
+  
   var spikesides: Boolean = js.native
 }
-
 object SceneAxis {
+  
   @scala.inline
   def apply(
     autorange: `true` | `false` | reversed,
@@ -129,28 +133,35 @@ object SceneAxis {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneAxis]
   }
+  
   @scala.inline
   implicit class SceneAxisOps[Self <: SceneAxis] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("backgroundcolor", js.Array(value :_*))
+    
     @scala.inline
     def setBackgroundcolor(value: Color): Self = this.set("backgroundcolor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShowaxeslabels(value: Boolean): Self = this.set("showaxeslabels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShowbackground(value: Boolean): Self = this.set("showbackground", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSpikesides(value: Boolean): Self = this.set("spikesides", value.asInstanceOf[js.Any])
   }
-  
 }
-

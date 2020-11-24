@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Filtersets$Bidmetrics")
 @js.native
 class ResourceBiddersFiltersetsBidmetrics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.bidders.filterSets.bidMetrics.list
     * @desc Lists all metrics that are measured in terms of number of bids.
@@ -47,4 +49,3 @@ class ResourceBiddersFiltersetsBidmetrics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListBidMetricsResponse]
   ): Unit = js.native
 }
-

@@ -22,11 +22,12 @@ import typings.std.Uint8ArrayConstructor
 import typings.std.Uint8ClampedArrayConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dtype", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(`type`: js.Any): js.UndefOr[scala.Nothing] = js.native
   def apply(`type`: Float64Array): Float64ArrayConstructor = js.native
   def apply(`type`: array): ArrayConstructor = js.native
@@ -39,4 +40,3 @@ object mod extends js.Object {
   def apply(`type`: uint8): Uint8ArrayConstructor = js.native
   def apply(`type`: uint8_clamped): Uint8ClampedArrayConstructor = js.native
 }
-

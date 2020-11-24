@@ -1,17 +1,16 @@
 package typings.awsSdk.kendraMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Kendra extends Service {
-  @JSName("config")
-  var config_Kendra: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Removes one or more documents from an index. The documents must have been added with the BatchPutDocument operation. The documents are deleted asynchronously. You can see the progress of the deletion by using AWS CloudWatch. Any error messages releated to the processing of the batch are sent to you CloudWatch log.
     */
@@ -25,6 +24,7 @@ trait Kendra extends Service {
     params: BatchDeleteDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteDocumentResponse, Unit]
   ): Request[BatchDeleteDocumentResponse, AWSError] = js.native
+  
   /**
     * Adds one or more documents to an index. The BatchPutDocument operation enables you to ingest inline documents or a set of documents stored in an Amazon S3 bucket. Use this operation to ingest your text and unstructured text into an index, add custom attributes to the documents, and to attach an access control list to the documents added to the index. The documents are indexed asynchronously. You can see the progress of the batch using AWS CloudWatch. Any error messages related to processing the batch are sent to your AWS CloudWatch log.
     */
@@ -38,19 +38,24 @@ trait Kendra extends Service {
     params: BatchPutDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchPutDocumentResponse, Unit]
   ): Request[BatchPutDocumentResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Kendra: ConfigBase with ClientConfiguration = js.native
+  
   /**
-    * Creates a data source that you use to with an Amazon Kendra index.  You specify a name, connector type and description for your data source. You can choose between an S3 connector, a SharePoint Online connector, and a database connector. You also specify configuration information such as document metadata (author, source URI, and so on) and user context information.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised.
+    * Creates a data source that you use to with an Amazon Kendra index.  You specify a name, data source connector type and description for your data source. You also specify configuration information such as document metadata (author, source URI, and so on) and user context information.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised.
     */
   def createDataSource(): Request[CreateDataSourceResponse, AWSError] = js.native
   def createDataSource(callback: js.Function2[/* err */ AWSError, /* data */ CreateDataSourceResponse, Unit]): Request[CreateDataSourceResponse, AWSError] = js.native
   /**
-    * Creates a data source that you use to with an Amazon Kendra index.  You specify a name, connector type and description for your data source. You can choose between an S3 connector, a SharePoint Online connector, and a database connector. You also specify configuration information such as document metadata (author, source URI, and so on) and user context information.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised.
+    * Creates a data source that you use to with an Amazon Kendra index.  You specify a name, data source connector type and description for your data source. You also specify configuration information such as document metadata (author, source URI, and so on) and user context information.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised.
     */
   def createDataSource(params: CreateDataSourceRequest): Request[CreateDataSourceResponse, AWSError] = js.native
   def createDataSource(
     params: CreateDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDataSourceResponse, Unit]
   ): Request[CreateDataSourceResponse, AWSError] = js.native
+  
   /**
     * Creates an new set of frequently asked question (FAQ) questions and answers.
     */
@@ -64,6 +69,7 @@ trait Kendra extends Service {
     params: CreateFaqRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFaqResponse, Unit]
   ): Request[CreateFaqResponse, AWSError] = js.native
+  
   /**
     * Creates a new Amazon Kendra index. Index creation is an asynchronous operation. To determine if index creation has completed, check the Status field returned from a call to . The Status field is set to ACTIVE when the index is ready to use. Once the index is active you can index your documents using the operation or using one of the supported data sources. 
     */
@@ -77,6 +83,7 @@ trait Kendra extends Service {
     params: CreateIndexRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIndexResponse, Unit]
   ): Request[CreateIndexResponse, AWSError] = js.native
+  
   /**
     * Deletes an Amazon Kendra data source. An exception is not thrown if the data source is already being deleted. While the data source is being deleted, the Status field returned by a call to the operation is set to DELETING. For more information, see Deleting Data Sources.
     */
@@ -90,6 +97,7 @@ trait Kendra extends Service {
     params: DeleteDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes an FAQ from an index.
     */
@@ -100,6 +108,7 @@ trait Kendra extends Service {
     */
   def deleteFaq(params: DeleteFaqRequest): Request[js.Object, AWSError] = js.native
   def deleteFaq(params: DeleteFaqRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an existing Amazon Kendra index. An exception is not thrown if the index is already being deleted. While the index is being deleted, the Status field returned by a call to the DescribeIndex operation is set to DELETING.
     */
@@ -110,6 +119,7 @@ trait Kendra extends Service {
     */
   def deleteIndex(params: DeleteIndexRequest): Request[js.Object, AWSError] = js.native
   def deleteIndex(params: DeleteIndexRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Gets information about a Amazon Kendra data source.
     */
@@ -123,6 +133,7 @@ trait Kendra extends Service {
     params: DescribeDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSourceResponse, Unit]
   ): Request[DescribeDataSourceResponse, AWSError] = js.native
+  
   /**
     * Gets information about an FAQ list.
     */
@@ -136,6 +147,7 @@ trait Kendra extends Service {
     params: DescribeFaqRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFaqResponse, Unit]
   ): Request[DescribeFaqResponse, AWSError] = js.native
+  
   /**
     * Describes an existing Amazon Kendra index
     */
@@ -149,6 +161,7 @@ trait Kendra extends Service {
     params: DescribeIndexRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIndexResponse, Unit]
   ): Request[DescribeIndexResponse, AWSError] = js.native
+  
   /**
     * Gets statistics about synchronizing Amazon Kendra with a data source.
     */
@@ -162,6 +175,7 @@ trait Kendra extends Service {
     params: ListDataSourceSyncJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataSourceSyncJobsResponse, Unit]
   ): Request[ListDataSourceSyncJobsResponse, AWSError] = js.native
+  
   /**
     * Lists the data sources that you have created.
     */
@@ -175,6 +189,7 @@ trait Kendra extends Service {
     params: ListDataSourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataSourcesResponse, Unit]
   ): Request[ListDataSourcesResponse, AWSError] = js.native
+  
   /**
     * Gets a list of FAQ lists associated with an index.
     */
@@ -188,6 +203,7 @@ trait Kendra extends Service {
     params: ListFaqsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFaqsResponse, Unit]
   ): Request[ListFaqsResponse, AWSError] = js.native
+  
   /**
     * Lists the Amazon Kendra indexes that you have created.
     */
@@ -201,6 +217,7 @@ trait Kendra extends Service {
     params: ListIndicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListIndicesResponse, Unit]
   ): Request[ListIndicesResponse, AWSError] = js.native
+  
   /**
     * Gets a list of tags associated with a specified resource. Indexes, FAQs, and data sources can have tags associated with them.
     */
@@ -214,16 +231,18 @@ trait Kendra extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
-    * Searches an active index. Use this API to search your documents using query. The Query operation enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results.  Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeConfig parameter.
+    * Searches an active index. Use this API to search your documents using query. The Query operation enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results.  Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeConfig parameter. Each query returns the 100 most relevant results. 
     */
   def query(): Request[QueryResult, AWSError] = js.native
   def query(callback: js.Function2[/* err */ AWSError, /* data */ QueryResult, Unit]): Request[QueryResult, AWSError] = js.native
   /**
-    * Searches an active index. Use this API to search your documents using query. The Query operation enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results.  Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeConfig parameter.
+    * Searches an active index. Use this API to search your documents using query. The Query operation enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results.  Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeConfig parameter. Each query returns the 100 most relevant results. 
     */
   def query(params: QueryRequest): Request[QueryResult, AWSError] = js.native
   def query(params: QueryRequest, callback: js.Function2[/* err */ AWSError, /* data */ QueryResult, Unit]): Request[QueryResult, AWSError] = js.native
+  
   /**
     * Starts a synchronization job for a data source. If a synchronization job is already in progress, Amazon Kendra returns a ResourceInUseException exception.
     */
@@ -237,6 +256,7 @@ trait Kendra extends Service {
     params: StartDataSourceSyncJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartDataSourceSyncJobResponse, Unit]
   ): Request[StartDataSourceSyncJobResponse, AWSError] = js.native
+  
   /**
     * Stops a running synchronization job. You can't stop a scheduled synchronization job.
     */
@@ -250,6 +270,7 @@ trait Kendra extends Service {
     params: StopDataSourceSyncJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Enables you to provide feedback to Amazon Kendra to improve the performance of the service. 
     */
@@ -263,6 +284,7 @@ trait Kendra extends Service {
     params: SubmitFeedbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Adds the specified tag to the specified index, FAQ, or data source resource. If the tag already exists, the existing value is replaced with the new value.
     */
@@ -276,6 +298,7 @@ trait Kendra extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes a tag from an index, FAQ, or a data source.
     */
@@ -289,6 +312,7 @@ trait Kendra extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates an existing Amazon Kendra data source.
     */
@@ -302,6 +326,7 @@ trait Kendra extends Service {
     params: UpdateDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates an existing Amazon Kendra index.
     */
@@ -313,4 +338,3 @@ trait Kendra extends Service {
   def updateIndex(params: UpdateIndexRequest): Request[js.Object, AWSError] = js.native
   def updateIndex(params: UpdateIndexRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
 }
-

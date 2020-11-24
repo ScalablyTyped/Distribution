@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "V")
 @js.native
 object V extends js.Object {
+  
   def apply(svg: String): Vectorizer = js.native
   def apply(svg: String, attrs: js.UndefOr[scala.Nothing], children: js.Array[SVGElement | Vectorizer]): Vectorizer = js.native
   def apply(svg: String, attrs: js.UndefOr[scala.Nothing], children: Vectorizer): Vectorizer = js.native
@@ -34,4 +35,3 @@ object V extends js.Object {
   def apply(svg: SVGElement, attrs: StringDictionary[js.Any], children: Vectorizer): Vectorizer = js.native
   def apply(svg: SVGElement, attrs: StringDictionary[js.Any], children: SVGElement): Vectorizer = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Storage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KnownLibraryId extends js.Object
-
 /** Provides values that identify storage libraries. */
 @JSGlobal("Windows.Storage.KnownLibraryId")
 @js.native
 object KnownLibraryId extends js.Object {
+  
   /** Documents library. */
   @js.native
   sealed trait documents extends KnownLibraryId
@@ -26,6 +26,4 @@ object KnownLibraryId extends js.Object {
   /** Videos library. */
   @js.native
   sealed trait videos extends KnownLibraryId
-  
 }
-

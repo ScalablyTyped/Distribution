@@ -3,11 +3,12 @@ package typings.echarts.mod
 import typings.echarts.echarts.ECharts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("echarts", "connect")
 @js.native
 object connect extends js.Object {
+  
   /**
     * Connects interaction of multiple chart series. For example:
     *
@@ -25,4 +26,3 @@ object connect extends js.Object {
   def apply(group: String): Unit = js.native
   def apply(group: js.Array[ECharts]): Unit = js.native
 }
-

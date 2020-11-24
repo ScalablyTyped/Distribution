@@ -2,7 +2,7 @@ package typings.rx.rxCoincidenceMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.coincidence", "AnonymousSubject")
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 class AnonymousSubjectCls[T] ()
   extends typings.rx.Rx.Subject[T]
-

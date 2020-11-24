@@ -17,81 +17,22 @@ import typings.asana.mod.resources.Webhooks
 import typings.asana.mod.resources.Workspaces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Client extends js.Object {
+  
   /**
     * Store off Oauth info.
     */
   var app: App = js.native
+  
   /**
     * An instance of the Attachments resource.
     * @type {Attachments}
     */
   var attachments: Attachments = js.native
-  /**
-    * The internal dispatcher. This is mostly used by the resources but provided
-    * for custom requests to the API or API features that have not yet been added
-    * to the client.
-    * @type {Dispatcher}
-    */
-  var dispatcher: Dispatcher = js.native
-  /**
-    * An instance of the Events resource.
-    * @type {Events}
-    */
-  var events: Events = js.native
-  /**
-    * An instance of the Projects resource.
-    * @type {Projects}
-    */
-  var projects: Projects = js.native
-  /**
-    * An instance of the Sections resource.
-    * @type {Sections}
-    */
-  var sections: Sections = js.native
-  /**
-    * An instance of the Stories resource.
-    * @type {Stories}
-    */
-  var stories: Stories = js.native
-  /**
-    * An instance of the Tags resource.
-    * @type {Tags}
-    */
-  var tags: Tags = js.native
-  /**
-    * An instance of the Tasks resource.
-    * @type {Tasks}
-    */
-  var tasks: Tasks = js.native
-  /**
-    * An instance of the Teams resource.
-    * @type {Teams}
-    */
-  var teams: Teams = js.native
-  /**
-    * An instance of the UserTaskLists resource.
-    * @type {UserTaskLists}
-    */
-  var userTaskLists: UserTaskLists = js.native
-  /**
-    * An instance of the Users resource.
-    * @type {Users}
-    */
-  var users: Users = js.native
-  /**
-    * An instance of the Webhooks resource.
-    * @type {Webhooks}
-    */
-  var webhooks: Webhooks = js.native
-  /**
-    * An instance of the Workspaces resource.
-    * @type {Workspaces}
-    */
-  var workspaces: Workspaces = js.native
+  
   /**
     * Ensures the client is authorized to make requests. Kicks off the
     * configured Oauth flow, if any.
@@ -100,6 +41,57 @@ trait Client extends js.Object {
     *     authorization is complete.
     */
   def authorize(): typings.bluebird.mod.^[Client] = js.native
+  
+  /**
+    * The internal dispatcher. This is mostly used by the resources but provided
+    * for custom requests to the API or API features that have not yet been added
+    * to the client.
+    * @type {Dispatcher}
+    */
+  var dispatcher: Dispatcher = js.native
+  
+  /**
+    * An instance of the Events resource.
+    * @type {Events}
+    */
+  var events: Events = js.native
+  
+  /**
+    * An instance of the Projects resource.
+    * @type {Projects}
+    */
+  var projects: Projects = js.native
+  
+  /**
+    * An instance of the Sections resource.
+    * @type {Sections}
+    */
+  var sections: Sections = js.native
+  
+  /**
+    * An instance of the Stories resource.
+    * @type {Stories}
+    */
+  var stories: Stories = js.native
+  
+  /**
+    * An instance of the Tags resource.
+    * @type {Tags}
+    */
+  var tags: Tags = js.native
+  
+  /**
+    * An instance of the Tasks resource.
+    * @type {Tasks}
+    */
+  var tasks: Tasks = js.native
+  
+  /**
+    * An instance of the Teams resource.
+    * @type {Teams}
+    */
+  var teams: Teams = js.native
+  
   /**
     * Configure the client to authenticate using a Personal Access Token.
     * @param  {String} accessToken The Personal Access Token to use for
@@ -109,6 +101,7 @@ trait Client extends js.Object {
     * @return
     */
   def useAccessToken(accessToken: String): this.type = js.native
+  
   /**
     * Configure the Client to use a user's API Key and then authenticate
     * through HTTP Basic Authentication. This should only be done for testing,
@@ -120,6 +113,7 @@ trait Client extends js.Object {
     * @return
     */
   def useBasicAuth(apiKey: String): this.type = js.native
+  
   /**
     * Configure the client to authenticate via Oauth. Credentials can be
     * supplied, or they can be obtained by running an Oauth flow.
@@ -136,9 +130,31 @@ trait Client extends js.Object {
     */
   def useOauth(): this.type = js.native
   def useOauth(options: OauthAuthenticatorOptions): this.type = js.native
+  
+  /**
+    * An instance of the UserTaskLists resource.
+    * @type {UserTaskLists}
+    */
+  var userTaskLists: UserTaskLists = js.native
+  
+  /**
+    * An instance of the Users resource.
+    * @type {Users}
+    */
+  var users: Users = js.native
+  
+  /**
+    * An instance of the Webhooks resource.
+    * @type {Webhooks}
+    */
+  var webhooks: Webhooks = js.native
+  
+  /**
+    * An instance of the Workspaces resource.
+    * @type {Workspaces}
+    */
+  var workspaces: Workspaces = js.native
 }
-
 @JSImport("asana", "Client")
 @js.native
 object Client extends TopLevel[ClientStatic]
-

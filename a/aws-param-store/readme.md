@@ -10,9 +10,9 @@ Library for loading parameters from AWS Parameter Store
 | ------------------ | :-------------: |
 | Full name          | aws-param-store |
 | Keywords           | AWS, SSM, secret, parameter store, parameter, store |
-| # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 804642 |
+| # releases         | 6 |
+| # dependents       | 21 |
+| # downloads        | 1073991 |
 | # stars            | 0 |
 
 ## Links

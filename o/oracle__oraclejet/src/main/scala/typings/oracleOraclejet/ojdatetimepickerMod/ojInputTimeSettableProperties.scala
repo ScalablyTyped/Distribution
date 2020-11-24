@@ -23,22 +23,30 @@ import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojInputTimeSettableProperties extends inputBaseSettableProperties[String, String, String] {
+  
   var converter: Converter[String] | RegisteredConverter = js.native
+  
   var keyboardEdit: enabled | disabled = js.native
+  
   var max: String | Null = js.native
+  
   var min: String | Null = js.native
+  
   var pickerAttributes: Class = js.native
+  
   var renderMode: jet | native = js.native
+  
   var timePicker: FooterLayout = js.native
+  
   @JSName("translations")
   var translations_ojInputTimeSettableProperties: AmpmWheelLabel = js.native
 }
-
 object ojInputTimeSettableProperties {
+  
   @scala.inline
   def apply(
     asyncValidators: js.Array[AsyncValidator[String]],
@@ -66,38 +74,50 @@ object ojInputTimeSettableProperties {
     val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojInputTimeSettableProperties]
   }
+  
   @scala.inline
   implicit class ojInputTimeSettablePropertiesOps[Self <: ojInputTimeSettableProperties] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConverter(value: Converter[String] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKeyboardEdit(value: enabled | disabled): Self = this.set("keyboardEdit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPickerAttributes(value: Class): Self = this.set("pickerAttributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRenderMode(value: jet | native): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTimePicker(value: FooterLayout): Self = this.set("timePicker", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTranslations(value: AmpmWheelLabel): Self = this.set("translations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxNull: Self = this.set("max", null)
+    
     @scala.inline
     def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinNull: Self = this.set("min", null)
   }
-  
 }
-

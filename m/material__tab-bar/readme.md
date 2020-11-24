@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__tab-bar
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the web tab bar component
@@ -10,13 +10,15 @@ The Material Components for the web tab bar component
 | ------------------ | :-------------: |
 | Full name          | @material/tab-bar |
 | Keywords           | material components, material design, tab, bar |
-| # releases         | 159 |
-| # dependents       | 34 |
-| # downloads        | 930226 |
+| # releases         | 668 |
+| # dependents       | 39 |
+| # downloads        | 1569230 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/material-components/material-components-web#readme)
 - [Bugs](https://github.com/material-components/material-components-web/issues)
+- [Repository](https://github.com/material-components/material-components-web)
 - [Npm](https://www.npmjs.com/package/%40material%2Ftab-bar)
     
 

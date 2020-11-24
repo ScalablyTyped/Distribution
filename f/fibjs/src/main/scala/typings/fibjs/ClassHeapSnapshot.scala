@@ -3,7 +3,7 @@ package typings.fibjs
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,36 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHeapSnapshot extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 堆视图节点组成的列表
-    * 
-    * @readonly
-    * @type NArray
-    */
-  var nodes: js.Array[_] = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 堆视图的根节点
-    * 
-    * @readonly
-    * @type HeapGraphNode
-    */
-  var root: ClassHeapGraphNode = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 时间信息
-    * 
-    * @readonly
-    * @type Date
-    */
-  var time: Date = js.native
+  
   /**
     * 
     * @brief 和指定的堆快照进行比较
@@ -52,6 +23,7 @@ trait ClassHeapSnapshot extends ClassObject {
     * 
     */
   def diff(before: ClassHeapSnapshot): js.Object = js.native
+  
   /**
     * 
     * @brief 根据ID获取堆视图节点
@@ -62,6 +34,29 @@ trait ClassHeapSnapshot extends ClassObject {
     * 
     */
   def getNodeById(id: Double): ClassHeapGraphNode = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 堆视图节点组成的列表
+    * 
+    * @readonly
+    * @type NArray
+    */
+  var nodes: js.Array[_] = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 堆视图的根节点
+    * 
+    * @readonly
+    * @type HeapGraphNode
+    */
+  var root: ClassHeapGraphNode = js.native
+  
   /**
     * 
     * @brief 根据指定名称保存HeapSnapshot
@@ -71,5 +66,15 @@ trait ClassHeapSnapshot extends ClassObject {
     * @async
     */
   def save(fname: String): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 时间信息
+    * 
+    * @readonly
+    * @type Date
+    */
+  var time: Date = js.native
 }
-

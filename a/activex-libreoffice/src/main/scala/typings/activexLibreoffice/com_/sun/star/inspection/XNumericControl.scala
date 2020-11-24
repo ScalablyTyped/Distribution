@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.beans.Optional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines the interface for an {@link XPropertyControl} which supports displaying and entering numerical values.
@@ -13,8 +13,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XNumericControl extends XPropertyControl {
+  
   /** describes the number of decimal digits to use for the value */
   var DecimalDigits: Double = js.native
+  
   /**
     * describes a {@link com.sun.star.util.MeasureUnit} to be applied for displaying values.
     *
@@ -23,10 +25,13 @@ trait XNumericControl extends XPropertyControl {
     * @throws com::sun::star::lang::IllegalArgumentException if the caller attempts to set an unsupported {@link com.sun.star.util.MeasureUnit}
     */
   var DisplayUnit: Double = js.native
+  
   /** describes the maximum value which is allowed to be entered in the control */
   var MaxValue: Optional[Double] = js.native
+  
   /** describes the minimum value which is allowed to be entered in the control */
   var MinValue: Optional[Double] = js.native
+  
   /**
     * describes a {@link com.sun.star.util.MeasureUnit} to be applied for transferring values.
     *
@@ -37,8 +42,8 @@ trait XNumericControl extends XPropertyControl {
     */
   var ValueUnit: Double = js.native
 }
-
 object XNumericControl {
+  
   @scala.inline
   def apply(
     ControlContext: XPropertyControlContext,
@@ -57,28 +62,35 @@ object XNumericControl {
     val __obj = js.Dynamic.literal(ControlContext = ControlContext.asInstanceOf[js.Any], ControlType = ControlType.asInstanceOf[js.Any], ControlWindow = ControlWindow.asInstanceOf[js.Any], DecimalDigits = DecimalDigits.asInstanceOf[js.Any], DisplayUnit = DisplayUnit.asInstanceOf[js.Any], MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], ValueUnit = ValueUnit.asInstanceOf[js.Any], isModified = js.Any.fromFunction0(isModified), notifyModifiedValue = js.Any.fromFunction0(notifyModifiedValue))
     __obj.asInstanceOf[XNumericControl]
   }
+  
   @scala.inline
   implicit class XNumericControlOps[Self <: XNumericControl] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDecimalDigits(value: Double): Self = this.set("DecimalDigits", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDisplayUnit(value: Double): Self = this.set("DisplayUnit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxValue(value: Optional[Double]): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinValue(value: Optional[Double]): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValueUnit(value: Double): Self = this.set("ValueUnit", value.asInstanceOf[js.Any])
   }
-  
 }
-

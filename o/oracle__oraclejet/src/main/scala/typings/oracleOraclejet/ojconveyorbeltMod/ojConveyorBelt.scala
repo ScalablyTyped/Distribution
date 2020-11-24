@@ -11,14 +11,11 @@ import typings.oracleOraclejet.oracleOraclejetStrings.vertical
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojConveyorBelt extends baseComponent[ojConveyorBeltSettableProperties] {
-  var contentParent: String | Null = js.native
-  var onContentParentChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
-  var orientation: horizontal | vertical = js.native
+  
   def addEventListener(
     `type`: orientationChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _]
@@ -39,11 +36,22 @@ trait ojConveyorBelt extends baseComponent[ojConveyorBeltSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var contentParent: String | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_contentParent(property: contentParent): String | Null = js.native
   @JSName("getProperty")
   def getProperty_orientation(property: orientation): horizontal | vertical = js.native
+  
+  var onContentParentChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+  
+  var orientation: horizontal | vertical = js.native
+  
   def setProperties(properties: ojConveyorBeltSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: orientation, value: horizontal): Unit = js.native
   def setProperty(property: orientation, value: vertical): Unit = js.native
   @JSName("setProperty")
@@ -51,4 +59,3 @@ trait ojConveyorBelt extends baseComponent[ojConveyorBeltSettableProperties] {
   @JSName("setProperty")
   def setProperty_contentParent(property: contentParent, value: String): Unit = js.native
 }
-

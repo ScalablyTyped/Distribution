@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.ecrMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ECR")
 @js.native
@@ -14,4 +14,3 @@ class ECR ()
   extends typings.awsSdk.allMod.ECR {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -11,8 +11,8 @@ ES spec-like internal slots
 | Full name          | internal-slot |
 | Keywords           | internal, slot, internal slot, ecmascript, es, spec, private, data, private data, weakmap |
 | # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 508441 |
+| # dependents       | 11 |
+| # downloads        | 99153738 |
 | # stars            | 0 |
 
 ## Links

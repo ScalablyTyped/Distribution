@@ -3,15 +3,18 @@ package typings.samchon.ientityMod
 import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IEntity extends js.Object {
+  
   /**
     * A tag name when represented by XML.
     *
     * <code> <TAG {...properties} /> </code>
     */
-  def TAG(): String
+  def TAG(): String = js.native
+  
   /**
     * Construct data of the Entity from a XML object.
     *
@@ -22,7 +25,8 @@ trait IEntity extends js.Object {
     *
     * @param xml An xml used to contruct data of entity.
     */
-  def construct(xml: XML): Unit
+  def construct(xml: XML): Unit = js.native
+  
   /**
     * Get a key that can identify the Entity uniquely.
     *
@@ -42,7 +46,8 @@ trait IEntity extends js.Object {
     * }
     * </code>
     */
-  def key(): js.Any
+  def key(): js.Any = js.native
+  
   /**
     * Get a XML object represents the Entity.
     *
@@ -79,13 +84,13 @@ trait IEntity extends js.Object {
     *
     * @return An XML object representing the Entity.
     */
-  def toXML(): XML
+  def toXML(): XML = js.native
 }
-
 @JSImport("samchon/protocol/entity/IEntity", "IEntity")
 @js.native
 object IEntity extends js.Object {
+  
   def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = js.native
+  
   def toXML(entity: IEntity, prohibited_names: String*): XML = js.native
 }
-

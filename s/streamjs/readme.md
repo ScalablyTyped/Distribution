@@ -12,7 +12,7 @@ Lazy Object Streaming Pipeline for JavaScript - inspired by the Java 8 Streams A
 | Keywords           | functional, collection, pipeline, stream, lazy, utils, java, array |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3990 |
+| # downloads        | 3107 |
 | # stars            | 3 |
 
 ## Links

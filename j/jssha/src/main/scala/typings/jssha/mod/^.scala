@@ -3,7 +3,7 @@ package typings.jssha.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssha", JSImport.Namespace)
 @js.native
@@ -18,8 +18,6 @@ class ^ protected () extends Hasher[String] {
   def this(variant: String, inputFormat: StringDataFormat) = this()
   def this(variant: String, inputFormat: StringDataFormat, options: Options) = this()
 }
-
 @JSImport("jssha", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[jsSHA]
-

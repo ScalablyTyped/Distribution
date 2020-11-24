@@ -10,9 +10,9 @@ The client for Socket.io through feathers-socketio
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/socketio-client |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 33 |
-| # dependents       | 32 |
-| # downloads        | 354482 |
+| # releases         | 38 |
+| # dependents       | 41 |
+| # downloads        | 402193 |
 | # stars            | 0 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for actions-on-google
 
-Typings are for version 2.12.0
+Typings are for version 2.13.0
 
 ## Library description:
 Actions on Google Client Library for Node.js
@@ -10,9 +10,9 @@ Actions on Google Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | actions-on-google |
 | Keywords           | google, google actions, google assistant, client library |
-| # releases         | 37 |
-| # dependents       | 50 |
-| # downloads        | 866838 |
+| # releases         | 18 |
+| # dependents       | 55 |
+| # downloads        | 1546446 |
 | # stars            | 8 |
 
 ## Links

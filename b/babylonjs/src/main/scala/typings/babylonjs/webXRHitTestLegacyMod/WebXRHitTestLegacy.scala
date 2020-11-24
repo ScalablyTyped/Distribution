@@ -10,9 +10,12 @@ import typings.babylonjs.webXRAbstractFeatureMod.WebXRAbstractFeature
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babylonjs.sceneMod.IDisposable because Already inherited
+- typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature because Already inherited
+- typings.babylonjs.webXRHitTestLegacyMod.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy")
 @js.native
 class WebXRHitTestLegacy protected () extends WebXRAbstractFeature {
   /**
@@ -26,42 +29,53 @@ class WebXRHitTestLegacy protected () extends WebXRAbstractFeature {
     /**
     * options to use when constructing this feature
     */
-  options: IWebXRHitTestOptions
+  options: IWebXRLegacyHitTestOptions
   ) = this()
+  
   var _direction: js.Any = js.native
+  
   var _mat: js.Any = js.native
+  
   var _onHitTestResults: js.Any = js.native
+  
   var _onSelect: js.Any = js.native
+  
   var _onSelectEnabled: js.Any = js.native
+  
   var _origin: js.Any = js.native
+  
   /**
     * Populated with the last native XR Hit Results
     */
   var lastNativeXRHitResults: js.Array[XRHitResult] = js.native
+  
   /**
     * Triggered when new babylon (transformed) hit test results are available
     */
-  var onHitTestResultObservable: Observable[js.Array[IWebXRHitResult]] = js.native
+  var onHitTestResultObservable: Observable[js.Array[IWebXRLegacyHitResult]] = js.native
+  
   /**
     * options to use when constructing this feature
     */
-  val options: IWebXRHitTestOptions = js.native
+  val options: IWebXRLegacyHitTestOptions = js.native
 }
-
 /* static members */
 @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy")
 @js.native
 object WebXRHitTestLegacy extends js.Object {
+  
   /**
     * The module's name
     */
   val Name: String = js.native
+  
   /**
     * The (Babylon) version of this module.
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
   val Version: Double = js.native
+  
   /**
     * execute a hit test with an XR Ray
     *
@@ -78,6 +92,7 @@ object WebXRHitTestLegacy extends js.Object {
     referenceSpace: XRReferenceSpace,
     filter: js.Function1[/* result */ XRHitResult, Boolean]
   ): js.Promise[js.Array[XRHitResult]] = js.native
+  
   /**
     * Execute a hit test on the current running session using a select event returned from a transient input (such as touch)
     * @param event the (select) event to use to select with
@@ -86,4 +101,3 @@ object WebXRHitTestLegacy extends js.Object {
     */
   def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
 }
-

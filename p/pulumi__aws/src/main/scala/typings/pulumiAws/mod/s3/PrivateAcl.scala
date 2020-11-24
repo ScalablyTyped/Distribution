@@ -1,12 +1,11 @@
 package typings.pulumiAws.mod.s3
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pulumiAws.cannedAclMod.CannedAcl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "s3.PrivateAcl")
 @js.native
-object PrivateAcl extends TopLevel[CannedAcl]
-
+object PrivateAcl
+  extends TopLevel[typings.pulumiAws.enumsS3Mod.CannedAcl]

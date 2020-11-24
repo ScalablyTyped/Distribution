@@ -12,7 +12,7 @@ import typings.activexWord.activexWordNumbers.`8`
 import typings.activexWord.activexWordNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`8`
@@ -27,27 +27,35 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`11`
 */
 trait WdBreakType extends js.Object
-
 object WdBreakType {
+  
   @scala.inline
   def wdColumnBreak: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def wdLineBreak: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def wdLineBreakClearLeft: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def wdLineBreakClearRight: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def wdPageBreak: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def wdSectionBreakContinuous: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def wdSectionBreakEvenPage: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def wdSectionBreakNextPage: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def wdSectionBreakOddPage: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def wdTextWrappingBreak: `11` = 11.asInstanceOf[`11`]
 }
-

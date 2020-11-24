@@ -1,14 +1,13 @@
 package typings.awsSdkUtilFormatUrl
 
-import typings.awsSdkTypes.httpMod.HttpRequest
-import typings.std.Uint8Array
+import typings.awsSdkUtilFormatUrl.anon.OmitHttpRequestheadersmet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/util-format-url", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def formatUrl(request: HttpRequest[Uint8Array]): String = js.native
+  
+  def formatUrl(request: OmitHttpRequestheadersmet): String = js.native
 }
-

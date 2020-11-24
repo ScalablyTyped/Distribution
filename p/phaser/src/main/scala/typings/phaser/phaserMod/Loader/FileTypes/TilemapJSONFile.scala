@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.TilemapJSONFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Tiled Tilemap JSON File suitable for loading by the Loader.
@@ -43,4 +43,3 @@ class TilemapJSONFile protected ()
   def this(loader: LoaderPlugin, key: TilemapJSONFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
   def this(loader: LoaderPlugin, key: TilemapJSONFileConfig, url: js.Object, xhrSettings: XHRSettingsObject) = this()
 }
-

@@ -10,9 +10,9 @@ Base reporting library for istanbul
 | ------------------ | :-------------: |
 | Full name          | istanbul-lib-report |
 | Keywords           | istanbul, report, api, lib |
-| # releases         | 17 |
-| # dependents       | 61 |
-| # downloads        | 278835900 |
+| # releases         | 11 |
+| # dependents       | 99 |
+| # downloads        | 425001389 |
 | # stars            | 0 |
 
 ## Links

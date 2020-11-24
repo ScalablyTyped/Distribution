@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the custom data for one of the following PlayReady-ND messages: Registration Challenge, Registration Response, License Fetch Challenge, or License Fetch Response. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCustomData")
@@ -16,4 +16,3 @@ class NDCustomData protected ()
     */
   def this(customDataTypeIDBytes: js.Array[Double], customDataBytes: js.Array[Double]) = this()
 }
-

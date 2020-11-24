@@ -11,8 +11,8 @@ Eclipse Paho JavaScript MQTT client for Browsers
 | Full name          | paho-mqtt |
 | Keywords           | mqtt, paho, eclipse, iot, m2m |
 | # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 617905 |
+| # dependents       | 43 |
+| # downloads        | 3761105 |
 | # stars            | 2 |
 
 ## Links

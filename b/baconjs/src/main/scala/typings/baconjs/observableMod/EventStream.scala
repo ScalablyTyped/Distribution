@@ -8,7 +8,7 @@ import typings.baconjs.typesMod.Subscribe
 import typings.baconjs.typesMod.Unsub
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baconjs/types/observable", "EventStream")
 @js.native
@@ -22,8 +22,10 @@ class EventStream[V] protected () extends Observable[V] {
     options: EventStreamOptions
   ) = this()
   def this(desc: Desc, subscribe: Subscribe[V], handler: EventSink[V], options: EventStreamOptions) = this()
+  
   /** @hidden */
   var _isEventStream: Boolean = js.native
+  
   /**
     Buffers stream events with given count.
     The buffer is flushed when it contains the given number of elements or the source stream ends.
@@ -34,6 +36,7 @@ class EventStream[V] protected () extends Observable[V] {
     * @param {number} count
     */
   def bufferWithCount(count: Double): EventStream[js.Array[V]] = js.native
+  
   /**
     Buffers stream events with given delay.
     The buffer is flushed at most once in the given interval. So, if your input
@@ -52,6 +55,7 @@ class EventStream[V] protected () extends Observable[V] {
     */
   def bufferWithTime(delay: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTime(delay: DelayFunction): EventStream[js.Array[V]] = js.native
+  
   /**
     Buffers stream events and
     flushes when either the buffer contains the given number elements or the
@@ -66,9 +70,11 @@ class EventStream[V] protected () extends Observable[V] {
   def bufferWithTimeOrCount(delay: Double, count: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount(delay: DelayFunction): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount(delay: DelayFunction, count: Double): EventStream[js.Array[V]] = js.native
+  
   def concat(other: Observable[V], options: EventStreamOptions): EventStream[V] = js.native
   @JSName("concat")
   def concat_V2[V2](other: Observable[V2], options: EventStreamOptions): EventStream[V | V2] = js.native
+  
   /**
     Scans stream with given seed value and accumulator function, resulting to a Property.
     Difference to [`scan`](#scan) is that the function `f` can return an [`EventStream`](eventstream.html) or a [`Property`](property.html) instead
@@ -80,14 +86,16 @@ class EventStream[V] protected () extends Observable[V] {
     * @typeparam V2 state and result type
     */
   def flatScan[V2](seed: V2, f: Function2[V2, V, Observable[V2]]): Property[V2] = js.native
+  
   /**
     Merges two streams into one stream that delivers events from both
     */
   def merge(other: EventStream[V]): EventStream[V] = js.native
   @JSName("merge")
   def merge_V2[V2](other: EventStream[V2]): EventStream[V | V2] = js.native
+  
   /** @hidden */
   def subscribeInternal(): Unsub = js.native
+  
   def toProperty(initValue: V): Property[V] = js.native
 }
-

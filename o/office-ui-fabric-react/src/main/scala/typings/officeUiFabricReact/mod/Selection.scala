@@ -4,7 +4,7 @@ import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.uifabricUtilities.selectionTypesMod.ISelection because Already inherited
@@ -30,4 +30,3 @@ class Selection[TItem] protected ()
     */
   def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[js.Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a machine learning solution.  A model can have multiple
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGoogleCloudMlV1Model extends js.Object {
+  
   /**
     * Output only. The default version of the model. This version will be used
     * to handle prediction requests that do not specify a version.  You can
@@ -19,10 +20,12 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
     * [projects.methods.versions.setDefault](/ml-engine/reference/rest/v1/projects.models.versions/setDefault).
     */
   var defaultVersion: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.native
+  
   /**
     * Optional. The description specified for the model when it was created.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * `etag` is used for optimistic concurrency control as a way to help
     * prevent simultaneous updates of a model from overwriting each other. It
@@ -33,6 +36,7 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
     * ensure that their change will be applied to the model as intended.
     */
   var etag: js.UndefOr[String] = js.native
+  
   /**
     * Optional. One or more labels that you can add, to organize your models.
     * Each label is a key-value pair, where both the key and the value are
@@ -42,11 +46,13 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
     * labels&lt;/a&gt;.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Required. The name specified for the model when it was created.  The
     * model name must be unique within the project it is created in.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Optional. If true, enables logging of stderr and stdout streams for
     * online prediction in Stackdriver Logging. These can be more verbose than
@@ -57,6 +63,7 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
     * flag.  Default is false.
     */
   var onlinePredictionConsoleLogging: js.UndefOr[Boolean] = js.native
+  
   /**
     * Optional. If true, online prediction access logs are sent to StackDriver
     * Logging. These logs are like standard server access logs, containing
@@ -65,6 +72,7 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
     * project is high.  Default is false.
     */
   var onlinePredictionLogging: js.UndefOr[Boolean] = js.native
+  
   /**
     * Optional. The list of regions where the model is going to be deployed.
     * Currently only one region per model is supported. Defaults to
@@ -78,59 +86,78 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
     */
   var regions: js.UndefOr[js.Array[String]] = js.native
 }
-
 object SchemaGoogleCloudMlV1Model {
+  
   @scala.inline
   def apply(): SchemaGoogleCloudMlV1Model = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Model]
   }
+  
   @scala.inline
   implicit class SchemaGoogleCloudMlV1ModelOps[Self <: SchemaGoogleCloudMlV1Model] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDefaultVersion(value: SchemaGoogleCloudMlV1Version): Self = this.set("defaultVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDefaultVersion: Self = this.set("defaultVersion", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEtag: Self = this.set("etag", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setOnlinePredictionConsoleLogging(value: Boolean): Self = this.set("onlinePredictionConsoleLogging", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOnlinePredictionConsoleLogging: Self = this.set("onlinePredictionConsoleLogging", js.undefined)
+    
     @scala.inline
     def setOnlinePredictionLogging(value: Boolean): Self = this.set("onlinePredictionLogging", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOnlinePredictionLogging: Self = this.set("onlinePredictionLogging", js.undefined)
+    
     @scala.inline
     def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
+    
     @scala.inline
     def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegions: Self = this.set("regions", js.undefined)
   }
-  
 }
-

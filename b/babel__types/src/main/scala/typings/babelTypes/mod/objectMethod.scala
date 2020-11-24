@@ -5,11 +5,12 @@ import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "objectMethod")
 @js.native
 object objectMethod extends js.Object {
+  
   def apply(
     kind: js.UndefOr[method | get | set],
     key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
@@ -20,4 +21,3 @@ object objectMethod extends js.Object {
     async: js.UndefOr[Boolean]
   ): ObjectMethod_ = js.native
 }
-

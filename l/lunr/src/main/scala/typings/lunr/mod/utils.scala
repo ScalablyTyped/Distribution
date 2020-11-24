@@ -2,7 +2,7 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A namespace containing utils for the rest of the lunr library
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("lunr", "utils")
 @js.native
 object utils extends js.Object {
+  
   /**
     * Convert an object to a string.
     *
@@ -21,6 +22,7 @@ object utils extends js.Object {
     * @return string representation of the passed object.
     */
   def asString(obj: js.Any): String = js.native
+  
   /**
     * Print a warning message to the console.
     *
@@ -28,4 +30,3 @@ object utils extends js.Object {
     */
   def warn(message: String): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.videoJs.mod.videojs
 import typings.std.ClientRect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link MouseTimeDisplay} component tracks mouse movement over the
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MouseTimeDisplay extends Component {
+  
   /**
     * Enqueues updates to its own DOM as well as the DOM of its
     * {@link TimeTooltip} child.
@@ -26,4 +27,3 @@ trait MouseTimeDisplay extends Component {
     */
   def update(seekBarRect: ClientRect, seekBarPoint: Double): Unit = js.native
 }
-

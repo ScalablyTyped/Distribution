@@ -10,9 +10,9 @@ A simple helpful robot for your Company
 | ------------------ | :-------------: |
 | Full name          | hubot |
 | Keywords           | github, hubot, campfire, bot |
-| # releases         | 7 |
-| # dependents       | 235 |
-| # downloads        | 733132 |
+| # releases         | 5 |
+| # dependents       | 242 |
+| # downloads        | 772449 |
 | # stars            | 35 |
 
 ## Links

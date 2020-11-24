@@ -11,8 +11,8 @@ This package provides the React Perf add-on.
 | Full name          | react-addons-perf |
 | Keywords           | react, react-addon |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 2973669 |
+| # dependents       | 63 |
+| # downloads        | 3009320 |
 | # stars            | 7 |
 
 ## Links

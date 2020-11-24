@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NumericContent extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
     * <code>sap.m.NumericContent</code>.When called, the context of the event handler (its
@@ -22,6 +23,7 @@ trait NumericContent extends Control {
     */
   def attachPress(oData: js.Any, fnFunction: js.Any): NumericContent = js.native
   def attachPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): NumericContent = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>press</code> event of this
     * <code>sap.m.NumericContent</code>.The passed function and listener object must match the ones used
@@ -31,18 +33,21 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPress(fnFunction: js.Any, oListener: js.Any): NumericContent = js.native
+  
   /**
     * Fires event <code>press</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePress(mArguments: js.Any): NumericContent = js.native
+  
   /**
     * Gets current value of property <code>animateTextChange</code>.If set to true, the change of the
     * value will be animated.Default value is <code>true</code>.
     * @returns Value of property <code>animateTextChange</code>
     */
   def getAnimateTextChange(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>formatterValue</code>.If set to true, the value parameter
     * contains a numeric value and scale. If set to false (default), the value parameter contains a
@@ -50,30 +55,35 @@ trait NumericContent extends Control {
     * @returns Value of property <code>formatterValue</code>
     */
   def getFormatterValue(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.The icon to be displayed as a graphical element
     * within the control. This can be an image or an icon from the icon font.
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconDescription</code>.Description of an icon that is used in
     * the tooltip.
     * @returns Value of property <code>iconDescription</code>
     */
   def getIconDescription(): String = js.native
+  
   /**
     * Gets current value of property <code>indicator</code>.The indicator arrow that shows value
     * deviation.Default value is <code>None</code>.
     * @returns Value of property <code>indicator</code>
     */
   def getIndicator(): DeviationIndicator = js.native
+  
   /**
     * Gets current value of property <code>nullifyValue</code>.If set to true, the omitted value property
     * is set to 0.Default value is <code>true</code>.
     * @returns Value of property <code>nullifyValue</code>
     */
   def getNullifyValue(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>scale</code>.The scaling prefix. Financial characters can be
     * used for currencies and counters. The SI prefixes can be used for units. If the scaling prefix
@@ -81,47 +91,55 @@ trait NumericContent extends Control {
     * @returns Value of property <code>scale</code>
     */
   def getScale(): String = js.native
+  
   /**
     * Gets current value of property <code>size</code>.Updates the size of the chart. If not set then the
     * default size is applied based on the device tile.Default value is <code>Auto</code>.
     * @returns Value of property <code>size</code>
     */
   def getSize(): Size = js.native
+  
   /**
     * Gets current value of property <code>state</code>.Indicates the load status.Default value is
     * <code>Loaded</code>.
     * @returns Value of property <code>state</code>
     */
   def getState(): LoadState = js.native
+  
   /**
     * Gets current value of property <code>truncateValueTo</code>.The number of characters to display for
     * the value property.Default value is <code>4</code>.
     * @returns Value of property <code>truncateValueTo</code>
     */
   def getTruncateValueTo(): Double = js.native
+  
   /**
     * Gets current value of property <code>value</code>.The actual value.
     * @returns Value of property <code>value</code>
     */
   def getValue(): String = js.native
+  
   /**
     * Gets current value of property <code>valueColor</code>.The semantic color of the value.Default value
     * is <code>Neutral</code>.
     * @returns Value of property <code>valueColor</code>
     */
   def getValueColor(): ValueColor = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The width of the chart. If it is not set, the size
     * of the control is defined by the size property.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>withMargin</code>.If the value is set to false, the content
     * will fit to the whole size of the control.Default value is <code>true</code>.
     * @returns Value of property <code>withMargin</code>
     */
   def getWithMargin(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>animateTextChange</code>.If set to true, the change of the value
     * will be animated.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -130,6 +148,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAnimateTextChange(bAnimateTextChange: Boolean): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>formatterValue</code>.If set to true, the value parameter
     * contains a numeric value and scale. If set to false (default), the value parameter contains a
@@ -139,6 +158,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFormatterValue(bFormatterValue: Boolean): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>iconDescription</code>.Description of an icon that is used in
     * the tooltip.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -147,6 +167,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconDescription(sIconDescription: String): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>indicator</code>.The indicator arrow that shows value
     * deviation.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -155,6 +176,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIndicator(sIndicator: DeviationIndicator): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>nullifyValue</code>.If set to true, the omitted value property
     * is set to 0.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -163,6 +185,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNullifyValue(bNullifyValue: Boolean): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>scale</code>.The scaling prefix. Financial characters can be
     * used for currencies and counters. The SI prefixes can be used for units. If the scaling prefix
@@ -173,6 +196,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setScale(sScale: String): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>size</code>.Updates the size of the chart. If not set then the
     * default size is applied based on the device tile.When called with a value of <code>null</code> or
@@ -182,6 +206,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSize(sSize: Size): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>state</code>.Indicates the load status.When called with a value
     * of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -190,6 +215,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setState(sState: LoadState): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>truncateValueTo</code>.The number of characters to display for
     * the value property.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -198,6 +224,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTruncateValueTo(iTruncateValueTo: Double): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>value</code>.The actual value.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -205,6 +232,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValue(sValue: String): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>valueColor</code>.The semantic color of the value.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -213,6 +241,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueColor(sValueColor: ValueColor): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.The width of the chart. If it is not set, the size
     * of the control is defined by the size property.When called with a value of <code>null</code> or
@@ -221,6 +250,7 @@ trait NumericContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): NumericContent = js.native
+  
   /**
     * Sets a new value for property <code>withMargin</code>.If the value is set to false, the content will
     * fit to the whole size of the control.When called with a value of <code>null</code> or
@@ -231,4 +261,3 @@ trait NumericContent extends Control {
     */
   def setWithMargin(bWithMargin: Boolean): NumericContent = js.native
 }
-

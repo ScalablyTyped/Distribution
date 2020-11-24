@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a cell annotation object attached to a spreadsheet cell.
@@ -23,8 +23,8 @@ trait CellAnnotation
      with XSheetAnnotation
      with XChild
      with XSheetAnnotationShapeSupplier
-
 object CellAnnotation {
+  
   @scala.inline
   def apply(
     AnnotationShape: XShape,
@@ -61,4 +61,3 @@ object CellAnnotation {
     __obj.asInstanceOf[CellAnnotation]
   }
 }
-

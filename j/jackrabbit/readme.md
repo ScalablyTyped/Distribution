@@ -12,7 +12,7 @@ Easy RabbitMQ for node
 | Keywords           | amqp, rabbit, job, jobs, queue, task, resqueue |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 62311 |
+| # downloads        | 153468 |
 | # stars            | 4 |
 
 ## Links

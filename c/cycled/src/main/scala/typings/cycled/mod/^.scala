@@ -2,7 +2,7 @@ package typings.cycled.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cycled", JSImport.Namespace)
 @js.native
@@ -48,4 +48,3 @@ class ^[T] protected () extends Cycled[T] {
   	*/
   def this(elements: js.Array[T]) = this()
 }
-

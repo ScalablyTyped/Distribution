@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/surveys/v2", "surveys_v2.Resource$Results")
 @js.native
 class ResourceResults protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * surveys.results.get
     * @desc Retrieves any survey results that have been produced so far.
@@ -45,4 +47,3 @@ class ResourceResults protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSurveyResults]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The number of seconds after which idle connections (unused in the pool) are terminated.
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "poolTimeout")
 @js.native
 object poolTimeout extends TopLevel[Double]
-

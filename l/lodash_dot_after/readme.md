@@ -12,7 +12,7 @@ The lodash method `_.after` exported as a module.
 | Keywords           | lodash-modularized, after |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 19891 |
+| # downloads        | 129681 |
 | # stars            | 1 |
 
 ## Links

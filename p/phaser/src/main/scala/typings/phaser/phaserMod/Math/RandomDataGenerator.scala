@@ -2,7 +2,7 @@ package typings.phaser.phaserMod.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A seeded Random Data Generator.
@@ -27,4 +27,3 @@ class RandomDataGenerator ()
   def this(seeds: String) = this()
   def this(seeds: js.Array[String]) = this()
 }
-

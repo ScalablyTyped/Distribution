@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style {@link FolderPicker} service to implement.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait XFolderPicker2
   extends XFolderPicker
      with XCancellable
-
 object XFolderPicker2 {
+  
   @scala.inline
   def apply(
     Directory: String,
@@ -35,4 +35,3 @@ object XFolderPicker2 {
     __obj.asInstanceOf[XFolderPicker2]
   }
 }
-

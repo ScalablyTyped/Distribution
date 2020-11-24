@@ -11,8 +11,8 @@ The lodash method `_.capitalize` exported as a module.
 | Full name          | lodash.capitalize |
 | Keywords           | lodash-modularized, capitalize |
 | # releases         | 0 |
-| # dependents       | 93 |
-| # downloads        | 15745539 |
+| # dependents       | 102 |
+| # downloads        | 22183824 |
 | # stars            | 0 |
 
 ## Links

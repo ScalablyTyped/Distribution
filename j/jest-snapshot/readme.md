@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-snapshot
 
-Typings are for version 24.9.0
+Typings are for version 26.6.2
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-snapshot |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 51 |
-| # downloads        | 245714906 |
+| # releases         | 58 |
+| # dependents       | 67 |
+| # downloads        | 345824341 |
 | # stars            | 2 |
 
 ## Links

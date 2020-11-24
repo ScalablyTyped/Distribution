@@ -2,7 +2,7 @@ package typings.openlayers.mod.format
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IGC altitude/z. One of 'barometric', 'gps', 'none'.
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.openlayers.openlayersStrings.none
 */
 trait IGCZ extends js.Object
-
 object IGCZ {
+  
   @scala.inline
   def barometric: typings.openlayers.openlayersStrings.barometric = "barometric".asInstanceOf[typings.openlayers.openlayersStrings.barometric]
+  
   @scala.inline
   def gps: typings.openlayers.openlayersStrings.gps = "gps".asInstanceOf[typings.openlayers.openlayersStrings.gps]
+  
   @scala.inline
   def none: typings.openlayers.openlayersStrings.none = "none".asInstanceOf[typings.openlayers.openlayersStrings.none]
 }
-

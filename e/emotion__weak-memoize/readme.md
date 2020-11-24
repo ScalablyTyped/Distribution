@@ -10,9 +10,9 @@ A memoization function that uses a WeakMap
 | ------------------ | :-------------: |
 | Full name          | @emotion/weak-memoize |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 8 |
-| # downloads        | 51159151 |
+| # releases         | 6 |
+| # dependents       | 10 |
+| # downloads        | 133363324 |
 | # stars            | 0 |
 
 ## Links

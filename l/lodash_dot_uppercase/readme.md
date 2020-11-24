@@ -12,12 +12,13 @@ The lodash method `_.upperCase` exported as a module.
 | Keywords           | lodash-modularized, uppercase |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 1218064 |
+| # downloads        | 1491895 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.uppercase)
     
 

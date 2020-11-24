@@ -10,9 +10,9 @@ A Salesforce ORM powered by jsforce
 | ------------------ | :-------------: |
 | Full name          | arbiter |
 | Keywords           | ORM, Salesforce, JSForce, Query |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3578 |
+| # downloads        | 2374 |
 | # stars            | 0 |
 
 ## Links

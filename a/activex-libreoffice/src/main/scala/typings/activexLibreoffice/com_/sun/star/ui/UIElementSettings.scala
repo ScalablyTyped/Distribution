@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XComponentContext
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes the internal structure of a configurable user interface element.
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 trait UIElementSettings
   extends XIndexAccess
      with XSingleComponentFactory {
+  
   /**
     * determine an optional user interface name of the user interface element.
     *
@@ -28,8 +29,8 @@ trait UIElementSettings
     */
   var UIName: String = js.native
 }
-
 object UIElementSettings {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -48,20 +49,23 @@ object UIElementSettings {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], UIName = UIName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createInstanceWithArgumentsAndContext = js.Any.fromFunction2(createInstanceWithArgumentsAndContext), createInstanceWithContext = js.Any.fromFunction1(createInstanceWithContext), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[UIElementSettings]
   }
+  
   @scala.inline
   implicit class UIElementSettingsOps[Self <: UIElementSettings] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setUIName(value: String): Self = this.set("UIName", value.asInstanceOf[js.Any])
   }
-  
 }
-

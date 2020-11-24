@@ -2,7 +2,7 @@ package typings.chrome.global.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Power
@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.power")
 @js.native
 object power extends js.Object {
+  
   def releaseKeepAwake(): Unit = js.native
+  
   def requestKeepAwake(level: String): Unit = js.native
 }
-

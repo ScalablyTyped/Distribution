@@ -14,17 +14,24 @@ import typings.semanticUiReact.commentMetadataMod.CommentMetadataProps
 import typings.semanticUiReact.commentTextMod.CommentTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommentComponent extends FunctionComponent[CommentProps] {
+  
   var Action: ComponentClass[CommentActionProps, ComponentState] = js.native
+  
   var Actions: StatelessComponent[CommentActionsProps] = js.native
+  
   var Author: StatelessComponent[CommentAuthorProps] = js.native
+  
   var Avatar: StatelessComponent[CommentAvatarProps] = js.native
+  
   var Content: StatelessComponent[CommentContentProps] = js.native
+  
   var Group: StatelessComponent[CommentGroupProps] = js.native
+  
   var Metadata: StatelessComponent[CommentMetadataProps] = js.native
+  
   var Text: StatelessComponent[CommentTextProps] = js.native
 }
-

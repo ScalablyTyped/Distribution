@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Instances")
 @js.native
 class ResourceInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.instances.addAccessConfig
     * @desc Adds an access config to an instance's network interface.
@@ -112,6 +112,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.aggregatedList
     * @desc Retrieves aggregated list of all of the instances in your project
@@ -215,6 +216,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceAggregatedList]
   ): Unit = js.native
+  
   /**
     * compute.instances.attachDisk
     * @desc Attaches an existing Disk resource to an instance. You must first
@@ -314,6 +316,9 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.instances.delete
     * @desc Deletes the specified Instance resource. For more information, see
@@ -405,6 +410,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.deleteAccessConfig
     * @desc Deletes an access config from an instance's network interface.
@@ -503,6 +509,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.detachDisk
     * @desc Detaches a disk from an instance.
@@ -597,6 +604,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.get
     * @desc Returns the specified Instance resource. Gets a list of available
@@ -687,6 +695,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
+  
   /**
     * compute.instances.getGuestAttributes
     * @desc Returns the specified guest attributes entry.
@@ -722,6 +731,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGuestAttributes]
   ): Unit = js.native
+  
   /**
     * compute.instances.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -753,6 +763,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.instances.getSerialPortOutput
     * @desc Returns the last 1 MB of serial port output from the specified
@@ -846,6 +857,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSerialPortOutput]
   ): Unit = js.native
+  
   /**
     * compute.instances.getShieldedInstanceIdentity
     * @desc Returns the Shielded Instance Identity of an instance
@@ -879,6 +891,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShieldedInstanceIdentity]
   ): Unit = js.native
+  
   /**
     * compute.instances.getShieldedVmIdentity
     * @desc Returns the Shielded VM Identity of an instance
@@ -912,6 +925,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShieldedVmIdentity]
   ): Unit = js.native
+  
   /**
     * compute.instances.insert
     * @desc Creates an instance resource in the specified project using the
@@ -1005,6 +1019,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.list
     * @desc Retrieves the list of instances contained within the specified
@@ -1108,6 +1123,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceList]
   ): Unit = js.native
+  
   /**
     * compute.instances.listReferrers
     * @desc Retrieves the list of referrers to instances contained within the
@@ -1221,6 +1237,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceListReferrers]
   ): Unit = js.native
+  
   /**
     * compute.instances.reset
     * @desc Performs a reset on the instance. This is a hard reset the VM does
@@ -1313,6 +1330,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.resume
     * @desc Resumes an instance that was suspended using the
@@ -1346,6 +1364,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setDeletionProtection
     * @desc Sets deletion protection on the instance.
@@ -1438,6 +1457,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setDiskAutoDelete
     * @desc Sets the auto-delete flag for a disk attached to an instance.
@@ -1536,6 +1556,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -1568,6 +1589,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.instances.setLabels
     * @desc Sets labels on an instance. To learn more about labels, read the
@@ -1664,6 +1686,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setMachineResources
     * @desc Changes the number and/or type of accelerator for a stopped
@@ -1761,6 +1784,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setMachineType
     * @desc Changes the machine type for a stopped instance to the machine type
@@ -1857,6 +1881,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setMetadata
     * @desc Sets metadata for the specified instance to the data included in
@@ -1953,6 +1978,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setMinCpuPlatform
     * @desc Changes the minimum CPU platform that this instance should use.
@@ -2050,6 +2076,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setScheduling
     * @desc Sets an instance's scheduling options.
@@ -2145,6 +2172,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setServiceAccount
     * @desc Sets the service account on the instance. For more information,
@@ -2241,6 +2269,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setShieldedInstanceIntegrityPolicy
     * @desc Sets the Shielded Instance integrity policy for an instance. You
@@ -2279,6 +2308,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setShieldedVmIntegrityPolicy
     * @desc Sets the Shielded VM integrity policy for a VM instance. You can
@@ -2316,6 +2346,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.setTags
     * @desc Sets network tags for the specified instance to the data included
@@ -2412,6 +2443,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.simulateMaintenanceEvent
     * @desc Simulates a maintenance event on the instance.
@@ -2445,6 +2477,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.start
     * @desc Starts an instance that was stopped using the instances().stop
@@ -2536,6 +2569,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.startWithEncryptionKey
     * @desc Starts an instance that was stopped using the instances().stop
@@ -2633,6 +2667,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.stop
     * @desc Stops a running instance, shutting it down cleanly, and allows you
@@ -2728,6 +2763,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.suspend
     * @desc This method suspends a running instance, saving its state to
@@ -2765,6 +2801,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -2862,6 +2899,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.instances.updateAccessConfig
     * @desc Updates the specified access config from an instance's network
@@ -2964,6 +3002,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.updateDisplayDevice
     * @desc Updates the Display config for a VM instance. You can only use this
@@ -3001,6 +3040,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.updateNetworkInterface
     * @desc Updates an instance's network interface. This method follows PATCH
@@ -3104,6 +3144,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.updateShieldedInstanceConfig
     * @desc Updates the Shielded Instance config for an instance. You can only
@@ -3141,6 +3182,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instances.updateShieldedVmConfig
     * @desc Updates the Shielded VM config for a VM instance. You can only use
@@ -3179,4 +3221,3 @@ class ResourceInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

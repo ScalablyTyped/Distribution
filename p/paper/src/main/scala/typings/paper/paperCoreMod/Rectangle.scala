@@ -4,7 +4,7 @@ import typings.paper.paper.Point
 import typings.paper.paper.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper/dist/paper-core", "Rectangle")
 @js.native
@@ -18,4 +18,3 @@ class Rectangle protected ()
     */
   def this(point: Point, size: Size) = this()
 }
-

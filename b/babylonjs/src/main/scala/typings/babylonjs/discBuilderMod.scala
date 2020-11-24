@@ -6,17 +6,18 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/discBuilder", JSImport.Namespace)
 @js.native
 object discBuilderMod extends js.Object {
+  
   @js.native
   class DiscBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object DiscBuilder extends js.Object {
+    
     /**
       * Creates a plane polygonal mesh.  By default, this is a disc
       * * The parameter `radius` sets the radius size (float) of the polygon (default 0.5)
@@ -34,6 +35,4 @@ object discBuilderMod extends js.Object {
     def CreateDisc(name: String, options: Tessellation): Mesh = js.native
     def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): Mesh = js.native
   }
-  
 }
-

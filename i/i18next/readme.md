@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18next
 
-Typings are for version 19.6.3
+Typings are for version 19.8.4
 
 ## Library description:
 i18next internationalization framework
@@ -11,8 +11,8 @@ i18next internationalization framework
 | Full name          | i18next |
 | Keywords           | i18next, internationalization, i18n, translation, localization, l10n, globalization, gettext |
 | # releases         | 87 |
-| # dependents       | 692 |
-| # downloads        | 23647793 |
+| # dependents       | 1180 |
+| # downloads        | 47157331 |
 | # stars            | 41 |
 
 ## Links

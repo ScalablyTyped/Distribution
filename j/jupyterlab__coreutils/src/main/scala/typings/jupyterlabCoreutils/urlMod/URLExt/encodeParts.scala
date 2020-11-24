@@ -2,11 +2,12 @@ package typings.jupyterlabCoreutils.urlMod.URLExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.encodeParts")
 @js.native
 object encodeParts extends js.Object {
+  
   /**
     * Encode the components of a multi-segment url.
     *
@@ -20,4 +21,3 @@ object encodeParts extends js.Object {
     */
   def apply(url: String): String = js.native
 }
-

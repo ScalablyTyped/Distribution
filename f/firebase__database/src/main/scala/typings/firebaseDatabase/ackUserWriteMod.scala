@@ -5,11 +5,12 @@ import typings.firebaseDatabase.operationMod.Operation
 import typings.firebaseDatabase.pathMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/operation/AckUserWrite", JSImport.Namespace)
 @js.native
 object ackUserWriteMod extends js.Object {
+  
   @js.native
   class AckUserWrite protected () extends Operation {
     /**
@@ -23,9 +24,9 @@ object ackUserWriteMod extends js.Object {
       /** @inheritDoc */ affectedTree: ImmutableTree[Boolean],
       /** @inheritDoc */ revert: Boolean
     ) = this()
+    
     /** @inheritDoc */ var affectedTree: ImmutableTree[Boolean] = js.native
+    
     /** @inheritDoc */ var revert: Boolean = js.native
   }
-  
 }
-

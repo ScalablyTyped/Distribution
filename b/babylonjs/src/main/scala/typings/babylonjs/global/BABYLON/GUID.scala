@@ -2,17 +2,17 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.GUID")
 @js.native
 class GUID ()
   extends typings.babylonjs.BABYLON.GUID
-
 /* static members */
 @JSGlobal("BABYLON.GUID")
 @js.native
 object GUID extends js.Object {
+  
   /**
     * Implementation from http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/2117523#answer-2117523
     * Be aware Math.random() could cause collisions, but:
@@ -21,4 +21,3 @@ object GUID extends js.Object {
     */
   def RandomId(): String = js.native
 }
-

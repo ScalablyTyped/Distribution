@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "moment-timezone" : "0.5.31"
+      "moment-timezone" : "0.5.32"
     }
   ],
   "test-dependencies" : [
     {
-      "moment-timezone" : "0.5.31"
+      "moment-timezone" : "0.5.32"
     }
   ],
   "compile-devDependencies" : [

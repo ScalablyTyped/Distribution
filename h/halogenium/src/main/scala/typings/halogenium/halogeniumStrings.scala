@@ -3,9 +3,43 @@ package typings.halogenium
 import typings.halogenium.mod.VerticalAlign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object halogeniumStrings {
+  
+  @scala.inline
+  def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
+  
+  @scala.inline
+  def length: length = "length".asInstanceOf[length]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def sub: sub = "sub".asInstanceOf[sub]
+  
+  @scala.inline
+  def `super`: `super` = "super".asInstanceOf[`super`]
+  
+  @scala.inline
+  def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
+  
+  @scala.inline
+  def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
   @js.native
   sealed trait baseline extends VerticalAlign
   
@@ -38,28 +72,4 @@ object halogeniumStrings {
   
   @js.native
   sealed trait top extends VerticalAlign
-  
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def length: length = "length".asInstanceOf[length]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def `super`: `super` = "super".asInstanceOf[`super`]
-  @scala.inline
-  def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
-  @scala.inline
-  def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
 }
-

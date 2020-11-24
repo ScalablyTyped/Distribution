@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Managedconfigurationsforuser")
 @js.native
 class ResourceManagedconfigurationsforuser protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.managedconfigurationsforuser.delete
     * @desc Removes a per-user managed configuration for an app for the
@@ -44,6 +46,7 @@ class ResourceManagedconfigurationsforuser protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.managedconfigurationsforuser.get
     * @desc Retrieves details of a per-user managed configuration for an app
@@ -78,6 +81,7 @@ class ResourceManagedconfigurationsforuser protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedConfiguration]
   ): Unit = js.native
+  
   /**
     * androidenterprise.managedconfigurationsforuser.list
     * @desc Lists all the per-user managed configurations for the specified
@@ -111,6 +115,7 @@ class ResourceManagedconfigurationsforuser protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedConfigurationsForUserListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.managedconfigurationsforuser.patch
     * @desc Adds or updates the managed configuration settings for an app for
@@ -150,6 +155,7 @@ class ResourceManagedconfigurationsforuser protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedConfiguration]
   ): Unit = js.native
+  
   /**
     * androidenterprise.managedconfigurationsforuser.update
     * @desc Adds or updates the managed configuration settings for an app for
@@ -190,4 +196,3 @@ class ResourceManagedconfigurationsforuser protected () extends js.Object {
     callback: BodyResponseCallback[SchemaManagedConfiguration]
   ): Unit = js.native
 }
-

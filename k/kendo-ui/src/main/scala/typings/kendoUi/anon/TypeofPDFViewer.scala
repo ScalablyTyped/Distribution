@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.PDFViewerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPDFViewer
   extends Instantiable1[/* element */ Element, PDFViewer]
      with Instantiable2[/* element */ Element, /* options */ PDFViewerOptions, PDFViewer] {
-  var fn: PDFViewer = js.native
+  
   def extend(proto: js.Object): PDFViewer = js.native
+  
+  var fn: PDFViewer = js.native
 }
-

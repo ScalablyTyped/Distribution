@@ -5,10 +5,11 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.windowOptionMod.WindowOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WindowModule extends Base {
+  
   /**
     * Creates a new Window.
     * @param { Window~options } options - Window creation options
@@ -17,6 +18,7 @@ trait WindowModule extends Base {
     * @static
     */
   def create(options: WindowOption): js.Promise[Window] = js.native
+  
   /**
     * Asynchronously returns a Window object that represents the current window
     * @return {Promise.<_Window>}
@@ -24,6 +26,7 @@ trait WindowModule extends Base {
     * @static
     */
   def getCurrent(): js.Promise[Window] = js.native
+  
   /**
     * Synchronously returns a Window object that represents the current window
     * @return {_Window}
@@ -31,6 +34,7 @@ trait WindowModule extends Base {
     * @static
     */
   def getCurrentSync(): Window = js.native
+  
   /**
     * Asynchronously returns a Window object that represents an existing window.
     * @param { Identity } identity
@@ -39,6 +43,7 @@ trait WindowModule extends Base {
     * @static
     */
   def wrap(identity: Identity): js.Promise[Window] = js.native
+  
   /**
     * Synchronously returns a Window object that represents an existing window.
     * @param { Identity } identity
@@ -48,4 +53,3 @@ trait WindowModule extends Base {
     */
   def wrapSync(identity: Identity): Window = js.native
 }
-

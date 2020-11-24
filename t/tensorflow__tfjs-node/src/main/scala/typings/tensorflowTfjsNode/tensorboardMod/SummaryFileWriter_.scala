@@ -1,23 +1,27 @@
 package typings.tensorflowTfjsNode.tensorboardMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "SummaryFileWriter")
 @js.native
 class SummaryFileWriter_ protected () extends js.Object {
   def this(resourceHandle: Tensor[Rank]) = this()
+  
   var backend: NodeJSKernelBackend = js.native
-  val resourceHandle: js.Any = js.native
+  
   /**
     * Force summary writer to send all buffered data to storage.
     */
   def flush(): Unit = js.native
+  
+  val resourceHandle: js.Any = js.native
+  
   def scalar(name: String, value: Double, step: Double): Unit = js.native
   def scalar(name: String, value: Double, step: Double, description: String): Unit = js.native
   /**
@@ -34,4 +38,3 @@ class SummaryFileWriter_ protected () extends js.Object {
   def scalar(name: String, value: Scalar, step: Double): Unit = js.native
   def scalar(name: String, value: Scalar, step: Double, description: String): Unit = js.native
 }
-

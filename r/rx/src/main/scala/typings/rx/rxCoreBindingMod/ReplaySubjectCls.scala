@@ -3,7 +3,7 @@ package typings.rx.rxCoreBindingMod
 import typings.rx.Rx.IScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.core.binding", "ReplaySubject")
 @js.native
@@ -23,4 +23,3 @@ class ReplaySubjectCls[T] ()
   def this(bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler) = this()
   def this(bufferSize: Double, window: Double, scheduler: IScheduler) = this()
 }
-

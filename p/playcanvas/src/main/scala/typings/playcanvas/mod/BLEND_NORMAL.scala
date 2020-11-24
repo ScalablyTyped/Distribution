@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enable simple translucency for materials such as glass. This is
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BLEND_NORMAL")
 @js.native
 object BLEND_NORMAL extends TopLevel[Double]
-

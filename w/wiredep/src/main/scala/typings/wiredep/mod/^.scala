@@ -2,11 +2,12 @@ package typings.wiredep.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wiredep", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @return {PathFiles} paths to your files by extension
     * @example:
@@ -23,4 +24,3 @@ object ^ extends js.Object {
     */
   def apply(config: WiredepParams): PathFiles = js.native
 }
-

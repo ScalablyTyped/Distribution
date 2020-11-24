@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.Point
 import typings.arcgisJsApi.esri.PointProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/geometry/Point", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends Point {
   def this(properties: PointProperties) = this()
 }
-

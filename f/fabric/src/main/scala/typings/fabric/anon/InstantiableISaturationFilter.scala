@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.ISaturationFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableISaturationFilter
@@ -15,10 +15,10 @@ trait InstantiableISaturationFilter
   */
 Instantiable0[ISaturationFilter]
      with Instantiable1[/* options */ Saturation, ISaturationFilter] {
+  
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): ISaturationFilter = js.native
 }
-

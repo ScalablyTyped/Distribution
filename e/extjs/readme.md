@@ -10,9 +10,9 @@ Run ExtJS4 data models on Node.js
 | ------------------ | :-------------: |
 | Full name          | extjs |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 519 |
+| # downloads        | 416 |
 | # stars            | 0 |
 
 ## Links

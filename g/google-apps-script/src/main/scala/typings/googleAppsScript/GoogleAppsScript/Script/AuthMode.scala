@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AuthMode extends js.Object
-
 /**
   * An enumeration that identifies which categories of authorized services Apps Script is able to
   * execute through a triggered function. These values are exposed in triggered functions as the authMode
@@ -37,6 +36,7 @@ sealed trait AuthMode extends js.Object
 @JSGlobal("GoogleAppsScript.Script.AuthMode")
 @js.native
 object AuthMode extends js.Object {
+  
   @js.native
   sealed trait CUSTOM_FUNCTION extends AuthMode
   
@@ -48,6 +48,4 @@ object AuthMode extends js.Object {
   
   @js.native
   sealed trait NONE extends AuthMode
-  
 }
-

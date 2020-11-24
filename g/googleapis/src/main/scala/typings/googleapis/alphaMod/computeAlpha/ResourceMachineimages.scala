@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Machineimages")
 @js.native
 class ResourceMachineimages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.machineImages.delete
     * @desc Deletes the specified machine image. Deleting a machine image is
@@ -44,6 +46,7 @@ class ResourceMachineimages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.machineImages.get
     * @desc Returns the specified machine image. Gets a list of available
@@ -74,6 +77,7 @@ class ResourceMachineimages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMachineImage]
   ): Unit = js.native
+  
   /**
     * compute.machineImages.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -104,6 +108,7 @@ class ResourceMachineimages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.machineImages.insert
     * @desc Creates a machine image in the specified project using the data
@@ -139,6 +144,7 @@ class ResourceMachineimages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.machineImages.list
     * @desc Retrieves a list of machine images that are contained within the
@@ -172,6 +178,7 @@ class ResourceMachineimages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMachineImageList]
   ): Unit = js.native
+  
   /**
     * compute.machineImages.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -203,6 +210,7 @@ class ResourceMachineimages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.machineImages.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -237,4 +245,3 @@ class ResourceMachineimages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

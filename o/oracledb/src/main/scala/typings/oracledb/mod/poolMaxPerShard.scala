@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "poolMaxPerShard")
 @js.native
 object poolMaxPerShard extends TopLevel[Double]
-

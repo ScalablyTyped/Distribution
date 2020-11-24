@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service provides type descriptions, i.e. concrete service implementations read from source like the persistent registry database format. ;
@@ -23,8 +23,8 @@ trait TypeDescriptionProvider
   extends XHierarchicalNameAccess
      with XComponent
      with XTypeDescriptionEnumerationAccess
-
 object TypeDescriptionProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -41,4 +41,3 @@ object TypeDescriptionProvider {
     __obj.asInstanceOf[TypeDescriptionProvider]
   }
 }
-

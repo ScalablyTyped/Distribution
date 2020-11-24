@@ -5,10 +5,11 @@ import typings.lodash.mod.SetWithCustomizer
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashSetWith extends LodashConvertible {
+trait LodashSetWith extends js.Object {
+  
   def apply(customizer: __, path: PropertyPath): LodashSetWith1x2 = js.native
   def apply(customizer: __, path: PropertyPath, value: js.Any): LodashSetWith1x6 = js.native
   def apply(customizer: __, path: __, value: js.Any): LodashSetWith1x4 = js.native
@@ -25,4 +26,3 @@ trait LodashSetWith extends LodashConvertible {
   def apply[T /* <: js.Object */](customizer: __, path: __, value: js.Any, `object`: T): LodashSetWith1x12[T] = js.native
   def apply[T /* <: js.Object */](customizer: __, path: __, value: __, `object`: T): LodashSetWith1x8[T] = js.native
 }
-

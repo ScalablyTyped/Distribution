@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.presentation
 import typings.activexLibreoffice.com_.sun.star.drawing.TextShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is implemented by the notes presentation shape.
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait NotesShape
   extends TextShape
      with Shape
-
 object NotesShape {
+  
   @scala.inline
   def apply(Shape: Shape, TextShape: TextShape): NotesShape = {
     val __obj = js.Dynamic.literal()
@@ -25,4 +25,3 @@ object NotesShape {
     __obj.asInstanceOf[NotesShape]
   }
 }
-

@@ -6,14 +6,20 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/Image", JSImport.Namespace)
 @js.native
 object olImageMod extends js.Object {
+  
+  def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
+  def listenImage(image: HTMLImageElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
+  def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
+  
   @js.native
   trait ImageWrapper
     extends typings.ol.imageBaseMod.default {
+    
     def setImage(image: HTMLCanvasElement): Unit = js.native
     def setImage(image: HTMLImageElement): Unit = js.native
     def setImage(image: HTMLVideoElement): Unit = js.native
@@ -39,9 +45,5 @@ object olImageMod extends js.Object {
     ) = this()
   }
   
-  def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
-  def listenImage(image: HTMLImageElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
-  def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
   type LoadFunction = js.Function2[/* p0 */ ImageWrapper, /* p1 */ String, Unit]
 }
-

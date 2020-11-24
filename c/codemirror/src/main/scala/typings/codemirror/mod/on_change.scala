@@ -3,11 +3,12 @@ package typings.codemirror.mod
 import typings.codemirror.codemirrorStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("codemirror", "on")
 @js.native
 object on_change extends js.Object {
+  
   /** Fired whenever a change occurs to the document. changeObj has a similar type as the object passed to the editor's "change" event,
     but it never has a next property, because document change events are not batched (whereas editor change events are). */
   def apply(
@@ -23,4 +24,3 @@ object on_change extends js.Object {
     handler: js.Function2[/* line */ LineHandle, /* changeObj */ EditorChange, Unit]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Determine an app's root path from anywhere inside the app
 | ------------------ | :-------------: |
 | Full name          | app-root-path |
 | Keywords           | root, path, utility, util, node, module, modules, node_modules, require, app |
-| # releases         | 5 |
-| # dependents       | 996 |
-| # downloads        | 63681882 |
+| # releases         | 4 |
+| # dependents       | 1238 |
+| # downloads        | 88818544 |
 | # stars            | 18 |
 
 ## Links

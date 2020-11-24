@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Achievements")
 @js.native
 class ResourceAchievements protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.achievements.increment
     * @desc Increments the steps of the achievement with the given ID for the
@@ -47,6 +49,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementIncrementResponse]
   ): Unit = js.native
+  
   /**
     * games.achievements.list
     * @desc Lists the progress for all your application's achievements for the
@@ -83,6 +86,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayerAchievementListResponse]
   ): Unit = js.native
+  
   /**
     * games.achievements.reveal
     * @desc Sets the state of the achievement with the given ID to REVEALED for
@@ -115,6 +119,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementRevealResponse]
   ): Unit = js.native
+  
   /**
     * games.achievements.setStepsAtLeast
     * @desc Sets the steps for the currently authenticated player towards
@@ -150,6 +155,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementSetStepsAtLeastResponse]
   ): Unit = js.native
+  
   /**
     * games.achievements.unlock
     * @desc Unlocks this achievement for the currently authenticated player.
@@ -182,6 +188,7 @@ class ResourceAchievements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementUnlockResponse]
   ): Unit = js.native
+  
   /**
     * games.achievements.updateMultiple
     * @desc Updates multiple achievements for the currently authenticated
@@ -216,4 +223,3 @@ class ResourceAchievements protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAchievementUpdateMultipleResponse]
   ): Unit = js.native
 }
-

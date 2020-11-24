@@ -2,11 +2,12 @@ package typings.dayjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dayjs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(): Dayjs = js.native
   def apply(
     date: js.UndefOr[ConfigType],
@@ -20,4 +21,3 @@ object ^ extends js.Object {
   def apply(date: js.UndefOr[ConfigType], format: OptionType): Dayjs = js.native
   def apply(date: ConfigType): Dayjs = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UnifiedPosErrorSeverity extends js.Object
-
 /** Defines the constants that indicates the error severity. */
 @JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorSeverity")
 @js.native
 object UnifiedPosErrorSeverity extends js.Object {
+  
   /** Requires assistance. */
   @js.native
   sealed trait assistanceRequired extends UnifiedPosErrorSeverity
@@ -34,6 +34,4 @@ object UnifiedPosErrorSeverity extends js.Object {
   /** A warning. */
   @js.native
   sealed trait warning extends UnifiedPosErrorSeverity
-  
 }
-

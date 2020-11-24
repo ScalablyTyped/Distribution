@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate")
 @js.native
@@ -21,31 +21,37 @@ class ServerCertificate protected () extends CustomResource {
     */
   def this(name: String, args: ServerCertificateArgs) = this()
   def this(name: String, args: ServerCertificateArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The Amazon Resource Name (ARN) specifying the server certificate.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The contents of the public key certificate in
     * PEM-encoded format.
     */
   val certificateBody: Output_[String] = js.native
+  
   /**
     * The contents of the certificate chain.
     * This is typically a concatenation of the PEM-encoded public key certificates
     * of the chain.
     */
   val certificateChain: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the Server Certificate. Do not include the
     * path in this value. If omitted, this provider will assign a random, unique name.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The IAM path for the server certificate.  If it is not
     * included, it defaults to a slash (/). If this certificate is for use with
@@ -53,16 +59,17 @@ class ServerCertificate protected () extends CustomResource {
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more details on IAM Paths.
     */
   val path: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The contents of the private key in PEM-encoded format.
     */
   val privateKey: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate")
 @js.native
 object ServerCertificate extends js.Object {
+  
   /**
     * Get an existing ServerCertificate resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -76,10 +83,10 @@ object ServerCertificate extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ServerCertificate = js.native
   def get(name: String, id: Input[ID], state: ServerCertificateState): ServerCertificate = js.native
   def get(name: String, id: Input[ID], state: ServerCertificateState, opts: CustomResourceOptions): ServerCertificate = js.native
+  
   /**
     * Returns true if the given object is an instance of ServerCertificate.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serverCertificate.ServerCertificate */ Boolean = js.native
 }
-

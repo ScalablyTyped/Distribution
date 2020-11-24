@@ -4,39 +4,14 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
   **/
 @js.native
 trait ToggleSwitch extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets or sets a value that specifies whether the control is on or off.
-    **/
-  var checked: Boolean = js.native
-  /**
-    * Gets or sets a value that specifies whether the control is disabled.
-    **/
-  var disabled: Boolean = js.native
-  /**
-    * Gets the DOM element that hosts the ToggleSwitch.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets or sets the text that displays when the ToggleSwitch is off (checked is set to false).
-    **/
-  var labelOff: String = js.native
-  /**
-    * Gets or sets the text that displays when the ToggleSwitch is on (checked is set to true).
-    **/
-  var labelOn: String = js.native
-  /**
-    * Gets or sets the main text for the ToggleSwitch control. This text is always displayed, regardless of whether the control is switched on or off.
-    **/
-  var title: String = js.native
+  
   //#endregion Events
   //#region Methods
   /**
@@ -47,6 +22,19 @@ trait ToggleSwitch extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets a value that specifies whether the control is on or off.
+    **/
+  var checked: Boolean = js.native
+  
+  /**
+    * Gets or sets a value that specifies whether the control is disabled.
+    **/
+  var disabled: Boolean = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -54,10 +42,27 @@ trait ToggleSwitch extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Releases resources held by this ToggleSwitch. Call this method when the ToggleSwitch is no longer needed. After calling this method, the ToggleSwitch becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  /**
+    * Gets the DOM element that hosts the ToggleSwitch.
+    **/
+  var element: HTMLElement = js.native
+  
+  /**
+    * Gets or sets the text that displays when the ToggleSwitch is off (checked is set to false).
+    **/
+  var labelOff: String = js.native
+  
+  /**
+    * Gets or sets the text that displays when the ToggleSwitch is on (checked is set to true).
+    **/
+  var labelOn: String = js.native
+  
   //#endregion Constructors
   //#region Events
   /**
@@ -65,6 +70,7 @@ trait ToggleSwitch extends js.Object {
     * @param eventInfo An object that contains information about the event.
     **/
   def onchange(eventInfo: Event): Unit = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -73,5 +79,9 @@ trait ToggleSwitch extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets the main text for the ToggleSwitch control. This text is always displayed, regardless of whether the control is switched on or off.
+    **/
+  var title: String = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassSeekableStream extends ClassStream {
+  
   /**
     * 
     * @brief 查询文件是否到结尾
@@ -15,6 +16,7 @@ trait ClassSeekableStream extends ClassStream {
     * 
     */
   def eof(): Boolean = js.native
+  
   /**
     * 
     * @brief 从流内读取剩余的全部数据
@@ -24,6 +26,7 @@ trait ClassSeekableStream extends ClassStream {
     * @async
     */
   def readAll(): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 移动当前位置到流开头
@@ -31,6 +34,7 @@ trait ClassSeekableStream extends ClassStream {
     * 
     */
   def rewind(): Unit = js.native
+  
   /**
     * 
     * @brief 移动文件当前操作位置
@@ -41,6 +45,7 @@ trait ClassSeekableStream extends ClassStream {
     * 
     */
   def seek(offset: Double, whence: Double): Unit = js.native
+  
   /**
     * 
     * @brief 查询流尺寸
@@ -50,6 +55,7 @@ trait ClassSeekableStream extends ClassStream {
     * 
     */
   def size(): Double = js.native
+  
   /**
     * 
     * @brief 查询当前文件的基础信息
@@ -59,6 +65,7 @@ trait ClassSeekableStream extends ClassStream {
     * @async
     */
   def stat(): ClassStat = js.native
+  
   /**
     * 
     * @brief 查询流当前位置
@@ -68,6 +75,7 @@ trait ClassSeekableStream extends ClassStream {
     * 
     */
   def tell(): Double = js.native
+  
   /**
     * 
     * @brief 修改文件尺寸，如果新尺寸小于原尺寸，则文件被截断
@@ -78,4 +86,3 @@ trait ClassSeekableStream extends ClassStream {
     */
   def truncate(bytes: Double): Unit = js.native
 }
-

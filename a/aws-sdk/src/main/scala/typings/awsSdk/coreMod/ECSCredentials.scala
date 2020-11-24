@@ -3,7 +3,7 @@ package typings.awsSdk.coreMod
 import typings.awsSdk.ecsCredentialsMod.ECSCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/core", "ECSCredentials")
 @js.native
@@ -15,4 +15,3 @@ class ECSCredentials ()
   extends typings.awsSdk.ecsCredentialsMod.ECSCredentials {
   def this(options: ECSCredentialsOptions) = this()
 }
-

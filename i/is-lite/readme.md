@@ -10,9 +10,9 @@ A tiny javascript type testing tool
 | ------------------ | :-------------: |
 | Full name          | is-lite |
 | Keywords           | type, test |
-| # releases         | 12 |
-| # dependents       | 16 |
-| # downloads        | 1380411 |
+| # releases         | 8 |
+| # dependents       | 18 |
+| # downloads        | 2528421 |
 | # stars            | 0 |
 
 ## Links

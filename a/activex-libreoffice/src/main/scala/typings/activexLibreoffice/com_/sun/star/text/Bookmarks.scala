@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a collection of {@link Bookmarks} . */
 @js.native
 trait Bookmarks
   extends XNameAccess
      with XIndexAccess
-
 object Bookmarks {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -35,4 +35,3 @@ object Bookmarks {
     __obj.asInstanceOf[Bookmarks]
   }
 }
-

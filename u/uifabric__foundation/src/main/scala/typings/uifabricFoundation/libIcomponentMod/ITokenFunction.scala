@@ -1,12 +1,12 @@
 package typings.uifabricFoundation.libIcomponentMod
 
-import typings.uifabricStyling.ithemeMod.ITheme
+import typings.fluentuiTheme.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ITokenFunction[TViewProps, TTokens] extends js.Object {
+  
   def apply(props: TViewProps, theme: ITheme): IToken[TViewProps, TTokens] = js.native
 }
-

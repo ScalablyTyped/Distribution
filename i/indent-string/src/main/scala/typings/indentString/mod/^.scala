@@ -2,11 +2,12 @@ package typings.indentString.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("indent-string", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Indent each line in a string.
   @param string - The string to indent.
@@ -25,4 +26,3 @@ object ^ extends js.Object {
   def apply(string: String, count: Double): String = js.native
   def apply(string: String, count: Double, options: Options): String = js.native
 }
-

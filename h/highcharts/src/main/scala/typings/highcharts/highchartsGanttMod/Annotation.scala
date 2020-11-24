@@ -3,7 +3,7 @@ package typings.highcharts.highchartsGanttMod
 import typings.highcharts.mod.AnnotationsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highcharts-gantt", "Annotation")
 @js.native
@@ -22,4 +22,3 @@ class Annotation protected ()
     */
   def this(chart: typings.highcharts.mod.Chart_, userOptions: AnnotationsOptions) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Alert")
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 class Alert ()
   extends typings.scriptableIos.Alert
-

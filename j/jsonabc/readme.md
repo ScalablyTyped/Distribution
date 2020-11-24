@@ -10,9 +10,9 @@ Sorts JSON object alphabetically. It supports nested objects, arrays and collect
 | ------------------ | :-------------: |
 | Full name          | jsonabc |
 | Keywords           | sorting, beautify, alphabet, sorts json, json, utility |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 18181 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 52479 |
 | # stars            | 0 |
 
 ## Links

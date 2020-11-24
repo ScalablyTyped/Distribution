@@ -2,7 +2,7 @@ package typings.xmlbuilder.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a raw text node.
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("xmlbuilder", "XMLRaw")
 @js.native
 class XMLRaw () extends XMLCharacterData {
+  
   def toString(options: XMLToStringOptions): String = js.native
 }
-

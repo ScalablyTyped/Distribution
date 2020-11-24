@@ -7,28 +7,32 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TitleLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SemanticPage extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): SemanticPage = js.native
+  
   /**
     * Adds some customFooterContent to the aggregation <code>customFooterContent</code>.
     * @param oCustomFooterContent the customFooterContent to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addCustomFooterContent(oCustomFooterContent: Button): SemanticPage = js.native
+  
   /**
     * Adds some customHeaderContent to the aggregation <code>customHeaderContent</code>.
     * @param oCustomHeaderContent the customHeaderContent to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addCustomHeaderContent(oCustomHeaderContent: Button): SemanticPage = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>navButtonPress</code> event of this
     * <code>sap.m.semantic.SemanticPage</code>.When called, the context of the event handler (its
@@ -43,31 +47,37 @@ trait SemanticPage extends Control {
     */
   def attachNavButtonPress(oData: js.Any, fnFunction: js.Any): SemanticPage = js.native
   def attachNavButtonPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SemanticPage = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): SemanticPage = js.native
+  
   /**
     * Destroys all the customFooterContent in the aggregation <code>customFooterContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyCustomFooterContent(): SemanticPage = js.native
+  
   /**
     * Destroys all the customHeaderContent in the aggregation <code>customHeaderContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyCustomHeaderContent(): SemanticPage = js.native
+  
   /**
     * Destroys the landmarkInfo in the aggregation <code>landmarkInfo</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyLandmarkInfo(): SemanticPage = js.native
+  
   /**
     * Destroys the subHeader in the aggregation <code>subHeader</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySubHeader(): SemanticPage = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>navButtonPress</code> event of this
     * <code>sap.m.semantic.SemanticPage</code>.The passed function and listener object must match the ones
@@ -77,30 +87,36 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachNavButtonPress(fnFunction: js.Any, oListener: js.Any): SemanticPage = js.native
+  
   /**
     * Fires event <code>navButtonPress</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireNavButtonPress(mArguments: js.Any): SemanticPage = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.See {@link sap.m.Page#content}
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Gets content of aggregation <code>customFooterContent</code>.Custom footer buttons
     */
   def getCustomFooterContent(): js.Array[Button] = js.native
+  
   /**
     * Gets content of aggregation <code>customHeaderContent</code>.Custom header buttons
     */
   def getCustomHeaderContent(): js.Array[Button] = js.native
+  
   /**
     * Gets current value of property <code>enableScrolling</code>.See {@link
     * sap.m.Page#enableScrolling}Default value is <code>true</code>.
     * @returns Value of property <code>enableScrolling</code>
     */
   def getEnableScrolling(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>floatingFooter</code>.Determines whether the floating footer
     * behavior is enabled.If set to <code>true</code>, the content is visible when it's underneath the
@@ -109,44 +125,52 @@ trait SemanticPage extends Control {
     * @returns Value of property <code>floatingFooter</code>
     */
   def getFloatingFooter(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>landmarkInfo</code>.Accessible landmark settings to be applied to
     * the containers of the <code>sap.m.Page</code> control.If not set, no landmarks will be written.
     */
   def getLandmarkInfo(): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Gets current value of property <code>showFooter</code>.Hides or shows the page footerDefault value
     * is <code>true</code>.
     * @returns Value of property <code>showFooter</code>
     */
   def getShowFooter(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showNavButton</code>.See {@link
     * sap.m.Page#showNavButton}Default value is <code>false</code>.
     * @returns Value of property <code>showNavButton</code>
     */
   def getShowNavButton(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSubHeader</code>.See {@link
     * sap.m.Page#showSubHeader}Default value is <code>true</code>.
     * @returns Value of property <code>showSubHeader</code>
     */
   def getShowSubHeader(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>subHeader</code>.See {@link sap.m.Page#subHeader}
     */
   def getSubHeader(): IBar = js.native
+  
   /**
     * Gets current value of property <code>title</code>.See {@link sap.m.Page#title}
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Gets current value of property <code>titleLevel</code>.See {@link sap.m.Page#titleLevel}Default
     * value is <code>Auto</code>.
     * @returns Value of property <code>titleLevel</code>
     */
   def getTitleLevel(): TitleLevel = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -154,6 +178,7 @@ trait SemanticPage extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Button</code> in the aggregation
     * <code>customFooterContent</code>.and returns its index if found or -1 otherwise.
@@ -161,6 +186,7 @@ trait SemanticPage extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfCustomFooterContent(oCustomFooterContent: Button): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Button</code> in the aggregation
     * <code>customHeaderContent</code>.and returns its index if found or -1 otherwise.
@@ -168,6 +194,7 @@ trait SemanticPage extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfCustomHeaderContent(oCustomHeaderContent: Button): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -178,6 +205,7 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): SemanticPage = js.native
+  
   /**
     * Inserts a customFooterContent into the aggregation <code>customFooterContent</code>.
     * @param oCustomFooterContent the customFooterContent to insert; if empty, nothing is inserted
@@ -188,6 +216,7 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertCustomFooterContent(oCustomFooterContent: Button, iIndex: Double): SemanticPage = js.native
+  
   /**
     * Inserts a customHeaderContent into the aggregation <code>customHeaderContent</code>.
     * @param oCustomHeaderContent the customHeaderContent to insert; if empty, nothing is inserted
@@ -198,24 +227,28 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertCustomHeaderContent(oCustomHeaderContent: Button, iIndex: Double): SemanticPage = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>customFooterContent</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllCustomFooterContent(): js.Array[Button] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>customHeaderContent</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllCustomHeaderContent(): js.Array[Button] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -224,6 +257,7 @@ trait SemanticPage extends Control {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   def removeCustomFooterContent(vCustomFooterContent: String): Button = js.native
   /**
     * Removes a customFooterContent from the aggregation <code>customFooterContent</code>.
@@ -232,6 +266,7 @@ trait SemanticPage extends Control {
     */
   def removeCustomFooterContent(vCustomFooterContent: Double): Button = js.native
   def removeCustomFooterContent(vCustomFooterContent: Button): Button = js.native
+  
   def removeCustomHeaderContent(vCustomHeaderContent: String): Button = js.native
   /**
     * Removes a customHeaderContent from the aggregation <code>customHeaderContent</code>.
@@ -240,6 +275,7 @@ trait SemanticPage extends Control {
     */
   def removeCustomHeaderContent(vCustomHeaderContent: Double): Button = js.native
   def removeCustomHeaderContent(vCustomHeaderContent: Button): Button = js.native
+  
   /**
     * Sets a new value for property <code>enableScrolling</code>.See {@link
     * sap.m.Page#enableScrolling}When called with a value of <code>null</code> or <code>undefined</code>,
@@ -248,6 +284,7 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnableScrolling(bEnableScrolling: Boolean): SemanticPage = js.native
+  
   /**
     * Sets a new value for property <code>floatingFooter</code>.Determines whether the floating footer
     * behavior is enabled.If set to <code>true</code>, the content is visible when it's underneath the
@@ -258,12 +295,14 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFloatingFooter(bFloatingFooter: Boolean): SemanticPage = js.native
+  
   /**
     * Sets the aggregated <code>landmarkInfo</code>.
     * @param oLandmarkInfo The landmarkInfo to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLandmarkInfo(oLandmarkInfo: PageAccessibleLandmarkInfo): SemanticPage = js.native
+  
   /**
     * Sets a new value for property <code>showFooter</code>.Hides or shows the page footerWhen called with
     * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -272,6 +311,7 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowFooter(bShowFooter: Boolean): SemanticPage = js.native
+  
   /**
     * Sets a new value for property <code>showNavButton</code>.See {@link sap.m.Page#showNavButton}When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -280,6 +320,7 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowNavButton(bShowNavButton: Boolean): SemanticPage = js.native
+  
   /**
     * Sets a new value for property <code>showSubHeader</code>.See {@link sap.m.Page#showSubHeader}When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -288,12 +329,14 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSubHeader(bShowSubHeader: Boolean): SemanticPage = js.native
+  
   /**
     * Sets the aggregated <code>subHeader</code>.
     * @param oSubHeader The subHeader to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSubHeader(oSubHeader: IBar): SemanticPage = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.See {@link sap.m.Page#title}When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -302,6 +345,7 @@ trait SemanticPage extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitle(sTitle: String): SemanticPage = js.native
+  
   /**
     * Sets a new value for property <code>titleLevel</code>.See {@link sap.m.Page#titleLevel}When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -311,4 +355,3 @@ trait SemanticPage extends Control {
     */
   def setTitleLevel(sTitleLevel: TitleLevel): SemanticPage = js.native
 }
-

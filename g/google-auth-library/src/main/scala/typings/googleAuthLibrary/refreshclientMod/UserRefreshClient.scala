@@ -6,7 +6,7 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-auth-library/build/src/auth/refreshclient", "UserRefreshClient")
 @js.native
@@ -26,14 +26,16 @@ class UserRefreshClient () extends OAuth2Client {
   def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, refreshToken: String) = this()
   def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
   def this(clientId: String, clientSecret: String, refreshToken: String) = this()
+  
   var _refreshToken: js.UndefOr[String | Null] = js.native
-  var fromStreamAsync: js.Any = js.native
+  
   /**
     * Create a UserRefreshClient credentials instance using the given input
     * options.
     * @param json The input object.
     */
   def fromJSON(json: JWTInput): Unit = js.native
+  
   /**
     * Create a UserRefreshClient credentials instance using the given input
     * stream.
@@ -42,5 +44,6 @@ class UserRefreshClient () extends OAuth2Client {
     */
   def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
   def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  
+  var fromStreamAsync: js.Any = js.native
 }
-

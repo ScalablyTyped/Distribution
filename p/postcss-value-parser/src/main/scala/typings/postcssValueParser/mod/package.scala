@@ -2,10 +2,12 @@ package typings.postcssValueParser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type CustomStringifierCallback = js.Function1[/* nodes */ typings.postcssValueParser.mod.Node, js.UndefOr[java.lang.String]]
+  
   type WalkCallback = js.Function3[
     /* node */ typings.postcssValueParser.mod.Node, 
     /* index */ scala.Double, 

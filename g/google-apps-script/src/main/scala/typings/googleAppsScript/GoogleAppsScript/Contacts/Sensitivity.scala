@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Sensitivity extends js.Object
-
 /**
   * An enum for contact sensitivity.
   */
 @JSGlobal("GoogleAppsScript.Contacts.Sensitivity")
 @js.native
 object Sensitivity extends js.Object {
+  
   @js.native
   sealed trait CONFIDENTIAL extends Sensitivity
   
@@ -24,6 +24,4 @@ object Sensitivity extends js.Object {
   
   @js.native
   sealed trait PRIVATE extends Sensitivity
-  
 }
-

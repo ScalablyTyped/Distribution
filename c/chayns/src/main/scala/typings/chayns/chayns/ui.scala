@@ -2,7 +2,7 @@ package typings.chayns.chayns
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * chayns.ui
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chayns.ui")
 @js.native
 object ui extends js.Object {
+  
   /**
     * Media Functions
     * chayns.ui.gallery
@@ -35,6 +36,4 @@ object ui extends js.Object {
     */
   @js.native
   object tooltip extends js.Object
-  
 }
-

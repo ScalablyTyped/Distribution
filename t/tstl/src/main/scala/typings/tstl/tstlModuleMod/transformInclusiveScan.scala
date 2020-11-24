@@ -7,11 +7,12 @@ import typings.tstl.operationsMod.Transformer
 import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "transform_inclusive_scan")
 @js.native
 object transformInclusiveScan extends js.Object {
+  
   def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[OutputIterator], OutputIterator]] */](
     first: InputIterator,
     last: InputIterator,
@@ -28,4 +29,3 @@ object transformInclusiveScan extends js.Object {
     init: ValueType[InputIterator]
   ): OutputIterator = js.native
 }
-

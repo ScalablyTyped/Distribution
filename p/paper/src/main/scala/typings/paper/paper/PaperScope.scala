@@ -18,7 +18,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The `PaperScope` class represents the scope associated with a Paper
@@ -42,65 +42,99 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PaperScope extends js.Object {
+  
   var Color: TypeofColor = js.native
+  
   var CompoundPath: Instantiable1[/* pathData */ String, typings.paper.paper.CompoundPath] = js.native
+  
   var Curve: Instantiable2[/* segment1 */ Segment, /* segment2 */ Segment, typings.paper.paper.Curve] = js.native
+  
   var CurveLocation: Instantiable3[
     /* curve */ Curve, 
     /* time */ Double, 
     /* point */ js.UndefOr[Point], 
     typings.paper.paper.CurveLocation
   ] = js.native
+  
   var Event: Instantiable0[typings.paper.paper.Event] = js.native
+  
   var Gradient: Instantiable0[typings.paper.paper.Gradient] = js.native
+  
   var GradientStop: Instantiable2[
     /* color */ js.UndefOr[Color], 
     /* offset */ js.UndefOr[Double], 
     typings.paper.paper.GradientStop
   ] = js.native
+  
   var Group: Instantiable1[/* children */ js.UndefOr[js.Array[Item]], typings.paper.paper.Group] = js.native
+  
   var HitResult: Instantiable0[typings.paper.paper.HitResult] = js.native
+  
   var Item: Instantiable0[typings.paper.paper.Item] = js.native
+  
   var Key: TypeofKey = js.native
+  
   var KeyEvent: Instantiable0[typings.paper.paper.KeyEvent] = js.native
+  
   var Layer: Instantiable1[/* children */ js.UndefOr[js.Array[Item]], typings.paper.paper.Layer] = js.native
+  
   var Matrix: Instantiable0[typings.paper.paper.Matrix] = js.native
+  
   var MouseEvent: Instantiable0[typings.paper.paper.MouseEvent] = js.native
+  
   var PaperScope: TypeofPaperScope = js.native
+  
   var PaperScript: TypeofPaperScript = js.native
+  
   var Path: TypeofPath with (Instantiable1[/* segments */ js.UndefOr[js.Array[Segment]], typings.paper.paper.Path]) = js.native
+  
   var PathItem: TypeofPathItem = js.native
+  
   var Point: TypeofPoint = js.native
+  
   var PointText: Instantiable1[/* point */ Point, typings.paper.paper.PointText] = js.native
+  
   var Project: Instantiable1[/* element */ HTMLCanvasElement | String | Size, typings.paper.paper.Project] = js.native
+  
   var Raster: Instantiable2[
     /* source */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
     /* position */ js.UndefOr[Point], 
     typings.paper.paper.Raster
   ] = js.native
+  
   var Rectangle: Instantiable2[/* point */ Point, /* size */ Size, typings.paper.paper.Rectangle] = js.native
+  
   var Segment: Instantiable3[
     /* point */ js.UndefOr[Point], 
     /* handleIn */ js.UndefOr[Point], 
     /* handleOut */ js.UndefOr[Point], 
     typings.paper.paper.Segment
   ] = js.native
+  
   var Shape: TypeofShape with Instantiable0[typings.paper.paper.Shape] = js.native
+  
   var Size: TypeofSize = js.native
+  
   var Style: Instantiable1[/* style */ js.Object, typings.paper.paper.Style] = js.native
+  
   var SymbolDefinition: Instantiable2[
     /* item */ Item, 
     /* dontCenter */ js.UndefOr[Boolean], 
     typings.paper.paper.SymbolDefinition
   ] = js.native
+  
   var SymbolItem: Instantiable2[
     /* definition */ SymbolDefinition | Item, 
     /* point */ js.UndefOr[Point], 
     typings.paper.paper.SymbolItem
   ] = js.native
+  
   var TextItem: Instantiable0[typings.paper.paper.TextItem] = js.native
+  
   var Tool: Instantiable0[typings.paper.paper.Tool] = js.native
+  
   var ToolEvent: Instantiable0[typings.paper.paper.ToolEvent] = js.native
+  
   var Tween: Instantiable6[
     /* object */ js.Object, 
     /* from */ js.Object, 
@@ -110,51 +144,15 @@ trait PaperScope extends js.Object {
     /* start */ js.UndefOr[Boolean], 
     typings.paper.paper.Tween
   ] = js.native
+  
   var View: Instantiable0[typings.paper.paper.View] = js.native
-  /** 
-    * The currently active project.
-    */
-  var project: Project = js.native
-  /** 
-    * The list of all open projects within the current Paper.js context.
-    */
-  var projects: js.Array[Project] = js.native
-  /** 
-    * Gives access to paper's configurable settings.
-    * 
-    * @option [settings.insertItems=true] {Boolean} controls whether newly
-    *     created items are automatically inserted into the scene graph, by
-    *     adding them to {@link Project#activeLayer}
-    * @option [settings.applyMatrix=true] {Boolean} controls what value newly
-    *     created items have their {@link Item#applyMatrix} property set to
-    *     (Note that not all items can set this to `false`)
-    * @option [settings.handleSize=4] {Number} the size of the curve handles
-    *     when drawing selections
-    * @option [settings.hitTolerance=0] {Number} the default tolerance for hit-
-    *     tests, when no value is specified
-    */
-  var settings: js.Any = js.native
-  /** 
-    * The reference to the active tool.
-    */
-  var tool: Tool = js.native
-  /** 
-    * The list of available tools.
-    */
-  var tools: js.Array[Tool] = js.native
-  /** 
-    * The version of Paper.js, as a string.
-    */
-  val version: String = js.native
-  /** 
-    * The reference to the active project's view.
-    */
-  val view: View = js.native
+  
   /** 
     * Activates this PaperScope, so all newly created items will be placed
     * in its active project.
     */
   def activate(): Unit = js.native
+  
   /** 
     * Compiles the PaperScript code into a compiled function and executes it.
     * The compiled function receives all properties of this {@link PaperScope}
@@ -172,6 +170,7 @@ trait PaperScope extends js.Object {
     */
   def execute(code: String): Unit = js.native
   def execute(code: String, options: js.Object): Unit = js.native
+  
   /** 
     * Injects the paper scope into any other given scope. Can be used for
     * example to inject the currently active PaperScope into the window's
@@ -184,6 +183,33 @@ trait PaperScope extends js.Object {
     * scoped if you encounter issues caused by this.
     */
   def install(scope: js.Any): Unit = js.native
+  
+  /** 
+    * The currently active project.
+    */
+  var project: Project = js.native
+  
+  /** 
+    * The list of all open projects within the current Paper.js context.
+    */
+  var projects: js.Array[Project] = js.native
+  
+  /** 
+    * Gives access to paper's configurable settings.
+    * 
+    * @option [settings.insertItems=true] {Boolean} controls whether newly
+    *     created items are automatically inserted into the scene graph, by
+    *     adding them to {@link Project#activeLayer}
+    * @option [settings.applyMatrix=true] {Boolean} controls what value newly
+    *     created items have their {@link Item#applyMatrix} property set to
+    *     (Note that not all items can set this to `false`)
+    * @option [settings.handleSize=4] {Number} the size of the curve handles
+    *     when drawing selections
+    * @option [settings.hitTolerance=0] {Number} the default tolerance for hit-
+    *     tests, when no value is specified
+    */
+  var settings: js.Any = js.native
+  
   def setup(element: String): Unit = js.native
   def setup(element: Size): Unit = js.native
   /** 
@@ -196,5 +222,24 @@ trait PaperScope extends js.Object {
     * worker.
     */
   def setup(element: HTMLCanvasElement): Unit = js.native
+  
+  /** 
+    * The reference to the active tool.
+    */
+  var tool: Tool = js.native
+  
+  /** 
+    * The list of available tools.
+    */
+  var tools: js.Array[Tool] = js.native
+  
+  /** 
+    * The version of Paper.js, as a string.
+    */
+  val version: String = js.native
+  
+  /** 
+    * The reference to the active project's view.
+    */
+  val view: View = js.native
 }
-

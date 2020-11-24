@@ -2,20 +2,25 @@ package typings.typescriptServices.TypeScript.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LanguageServiceShim
   extends ShimBase
      with ILanguageServiceShim {
-  var host: js.Any = js.native
-  var logger: js.Any = js.native
+  
   /* private */ def _navigateToItemsToString(items: js.Any): js.Any = js.native
+  
   def forwardJSONCall(actionDescription: String, action: js.Function0[_]): String = js.native
+  
+  var host: js.Any = js.native
+  
+  var logger: js.Any = js.native
+  
   /* private */ def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
 }
-
 object LanguageServiceShim {
+  
   @scala.inline
   def apply(
     _navigateToItemsToString: js.Any => js.Any,
@@ -55,28 +60,35 @@ object LanguageServiceShim {
     val __obj = js.Dynamic.literal(_navigateToItemsToString = js.Any.fromFunction1(_navigateToItemsToString), cleanupSemanticCache = js.Any.fromFunction0(cleanupSemanticCache), dispose = js.Any.fromFunction1(dispose), factory = factory.asInstanceOf[js.Any], forwardJSONCall = js.Any.fromFunction2(forwardJSONCall), getBraceMatchingAtPosition = js.Any.fromFunction2(getBraceMatchingAtPosition), getBreakpointStatementAtPosition = js.Any.fromFunction2(getBreakpointStatementAtPosition), getCompilerOptionsDiagnostics = js.Any.fromFunction0(getCompilerOptionsDiagnostics), getCompletionEntryDetails = js.Any.fromFunction3(getCompletionEntryDetails), getCompletionsAtPosition = js.Any.fromFunction3(getCompletionsAtPosition), getDefinitionAtPosition = js.Any.fromFunction2(getDefinitionAtPosition), getEmitOutput = js.Any.fromFunction1(getEmitOutput), getFormattingEditsAfterKeystroke = js.Any.fromFunction4(getFormattingEditsAfterKeystroke), getFormattingEditsForDocument = js.Any.fromFunction4(getFormattingEditsForDocument), getFormattingEditsForRange = js.Any.fromFunction4(getFormattingEditsForRange), getFormattingEditsOnPaste = js.Any.fromFunction4(getFormattingEditsOnPaste), getImplementorsAtPosition = js.Any.fromFunction2(getImplementorsAtPosition), getIndentationAtPosition = js.Any.fromFunction3(getIndentationAtPosition), getNameOrDottedNameSpan = js.Any.fromFunction3(getNameOrDottedNameSpan), getNavigateToItems = js.Any.fromFunction1(getNavigateToItems), getOccurrencesAtPosition = js.Any.fromFunction2(getOccurrencesAtPosition), getOutliningRegions = js.Any.fromFunction1(getOutliningRegions), getReferencesAtPosition = js.Any.fromFunction2(getReferencesAtPosition), getScriptLexicalStructure = js.Any.fromFunction1(getScriptLexicalStructure), getSemanticDiagnostics = js.Any.fromFunction1(getSemanticDiagnostics), getSignatureAtPosition = js.Any.fromFunction2(getSignatureAtPosition), getSyntacticDiagnostics = js.Any.fromFunction1(getSyntacticDiagnostics), getTypeAtPosition = js.Any.fromFunction2(getTypeAtPosition), host = host.asInstanceOf[js.Any], languageService = languageService.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], realizeDiagnosticWithFileName = js.Any.fromFunction1(realizeDiagnosticWithFileName), refresh = js.Any.fromFunction1(refresh))
     __obj.asInstanceOf[LanguageServiceShim]
   }
+  
   @scala.inline
   implicit class LanguageServiceShimOps[Self <: LanguageServiceShim] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set_navigateToItemsToString(value: js.Any => js.Any): Self = this.set("_navigateToItemsToString", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setForwardJSONCall(value: (String, js.Function0[_]) => String): Self = this.set("forwardJSONCall", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setHost(value: js.Any): Self = this.set("host", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLogger(value: js.Any): Self = this.set("logger", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRealizeDiagnosticWithFileName(value: js.Any => js.Any): Self = this.set("realizeDiagnosticWithFileName", js.Any.fromFunction1(value))
   }
-  
 }
-

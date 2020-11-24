@@ -1,7 +1,7 @@
 
 # Scala.js typings for jasmine
 
-Typings are for version 3.5
+Typings are for version 3.6
 
 ## Library description:
 Command line jasmine
@@ -10,9 +10,9 @@ Command line jasmine
 | ------------------ | :-------------: |
 | Full name          | jasmine |
 | Keywords           | test, jasmine, tdd, bdd |
-| # releases         | 10 |
-| # dependents       | 716 |
-| # downloads        | 63392825 |
+| # releases         | 8 |
+| # dependents       | 781 |
+| # downloads        | 81745101 |
 | # stars            | 64 |
 
 ## Links

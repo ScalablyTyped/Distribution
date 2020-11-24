@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the common properties of a database column. */
 @js.native
 trait Column
   extends typings.activexLibreoffice.com_.sun.star.sdbcx.Column
      with ColumnSettings
-
 object Column {
+  
   @scala.inline
   def apply(
     Align: Double,
@@ -54,4 +54,3 @@ object Column {
     __obj.asInstanceOf[Column]
   }
 }
-

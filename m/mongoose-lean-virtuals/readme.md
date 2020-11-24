@@ -10,9 +10,9 @@ Attach virtuals to the results of mongoose queries when using `.lean()`
 | ------------------ | :-------------: |
 | Full name          | mongoose-lean-virtuals |
 | Keywords           | mongoose, lean, virtuals, mongodb |
-| # releases         | 11 |
-| # dependents       | 3 |
-| # downloads        | 313251 |
+| # releases         | 20 |
+| # dependents       | 7 |
+| # downloads        | 471978 |
 | # stars            | 1 |
 
 ## Links

@@ -2,22 +2,25 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message defining the cost to run a given survey through API.
   */
 @js.native
 trait SchemaSurveyCost extends js.Object {
+  
   /**
     * Cost per survey response in nano units of the given currency. To get the
     * total cost for a survey, multiply this value by wanted_response_count.
     */
   var costPerResponseNanos: js.UndefOr[String] = js.native
+  
   /**
     * Currency code that the cost is given in.
     */
   var currencyCode: js.UndefOr[String] = js.native
+  
   /**
     * *Deprecated* Threshold to start a survey automatically if the quoted
     * price is at most this value. When a survey has a Screener (threshold)
@@ -38,47 +41,58 @@ trait SchemaSurveyCost extends js.Object {
     * the last 21 days. This will no longer be available after June 2018.
     */
   var maxCostPerResponseNanos: js.UndefOr[String] = js.native
+  
   /**
     * Cost of survey in nano units of the given currency. DEPRECATED in favor
     * of cost_per_response_nanos
     */
   var nanos: js.UndefOr[String] = js.native
 }
-
 object SchemaSurveyCost {
+  
   @scala.inline
   def apply(): SchemaSurveyCost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveyCost]
   }
+  
   @scala.inline
   implicit class SchemaSurveyCostOps[Self <: SchemaSurveyCost] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCostPerResponseNanos(value: String): Self = this.set("costPerResponseNanos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCostPerResponseNanos: Self = this.set("costPerResponseNanos", js.undefined)
+    
     @scala.inline
     def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    
     @scala.inline
     def setMaxCostPerResponseNanos(value: String): Self = this.set("maxCostPerResponseNanos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxCostPerResponseNanos: Self = this.set("maxCostPerResponseNanos", js.undefined)
+    
     @scala.inline
     def setNanos(value: String): Self = this.set("nanos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNanos: Self = this.set("nanos", js.undefined)
   }
-  
 }
-

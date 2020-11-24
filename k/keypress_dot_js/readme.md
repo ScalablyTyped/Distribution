@@ -10,9 +10,9 @@ a robust keyboard input capturing Javascript utility focused on input for games.
 | ------------------ | :-------------: |
 | Full name          | keypress.js |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 41446 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 41933 |
 | # stars            | 2 |
 
 ## Links

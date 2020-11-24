@@ -11,8 +11,8 @@ Following googlecode project crypto-js, provide standard and secure cryptographi
 | Full name          | cryptojs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 92806 |
+| # dependents       | 36 |
+| # downloads        | 112124 |
 | # stars            | 1 |
 
 ## Links

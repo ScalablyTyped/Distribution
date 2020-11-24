@@ -3,7 +3,7 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IsoBox Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -46,4 +46,3 @@ class IsoBox protected ()
     fillRight: js.UndefOr[Double]
   ) = this()
 }
-

@@ -4,7 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.SetRoomVariablesRequest")
 @js.native
@@ -17,4 +17,3 @@ class SetRoomVariablesRequest protected ()
     */
   def this(roomVariables: js.Array[SFSRoomVariable], room: SFSRoom) = this()
 }
-

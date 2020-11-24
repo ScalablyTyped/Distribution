@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "normalize-url" : "5.1.0"
+      "normalize-url" : "5.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "normalize-url" : "5.1.0"
+      "normalize-url" : "5.3.0"
     }
   ],
   "compile-devDependencies" : [

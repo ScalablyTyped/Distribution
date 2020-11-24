@@ -2,9 +2,64 @@ package typings.nodeHorseman
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeHorsemanStrings {
+  
+  @scala.inline
+  def A3: A3 = "A3".asInstanceOf[A3]
+  
+  @scala.inline
+  def A4: A4 = "A4".asInstanceOf[A4]
+  
+  @scala.inline
+  def A5: A5 = "A5".asInstanceOf[A5]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def Legal: Legal = "Legal".asInstanceOf[Legal]
+  
+  @scala.inline
+  def Letter: Letter = "Letter".asInstanceOf[Letter]
+  
+  @scala.inline
+  def PNG: PNG = "PNG".asInstanceOf[PNG]
+  
+  @scala.inline
+  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def loadFinished: loadFinished = "loadFinished".asInstanceOf[loadFinished]
+  
+  @scala.inline
+  def pageCreated: pageCreated = "pageCreated".asInstanceOf[pageCreated]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def resourceReceived: resourceReceived = "resourceReceived".asInstanceOf[resourceReceived]
+  
+  @scala.inline
+  def resourceTimeout: resourceTimeout = "resourceTimeout".asInstanceOf[resourceTimeout]
+  
+  @scala.inline
+  def tabClosed: tabClosed = "tabClosed".asInstanceOf[tabClosed]
+  
+  @scala.inline
+  def tabCreated: tabCreated = "tabCreated".asInstanceOf[tabCreated]
+  
+  @scala.inline
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @scala.inline
+  def urlChanged: urlChanged = "urlChanged".asInstanceOf[urlChanged]
+  
   @js.native
   sealed trait A3 extends js.Object
   
@@ -58,42 +113,4 @@ object nodeHorsemanStrings {
   
   @js.native
   sealed trait urlChanged extends js.Object
-  
-  @scala.inline
-  def A3: A3 = "A3".asInstanceOf[A3]
-  @scala.inline
-  def A4: A4 = "A4".asInstanceOf[A4]
-  @scala.inline
-  def A5: A5 = "A5".asInstanceOf[A5]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def Legal: Legal = "Legal".asInstanceOf[Legal]
-  @scala.inline
-  def Letter: Letter = "Letter".asInstanceOf[Letter]
-  @scala.inline
-  def PNG: PNG = "PNG".asInstanceOf[PNG]
-  @scala.inline
-  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def loadFinished: loadFinished = "loadFinished".asInstanceOf[loadFinished]
-  @scala.inline
-  def pageCreated: pageCreated = "pageCreated".asInstanceOf[pageCreated]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def resourceReceived: resourceReceived = "resourceReceived".asInstanceOf[resourceReceived]
-  @scala.inline
-  def resourceTimeout: resourceTimeout = "resourceTimeout".asInstanceOf[resourceTimeout]
-  @scala.inline
-  def tabClosed: tabClosed = "tabClosed".asInstanceOf[tabClosed]
-  @scala.inline
-  def tabCreated: tabCreated = "tabCreated".asInstanceOf[tabCreated]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def urlChanged: urlChanged = "urlChanged".asInstanceOf[urlChanged]
 }
-

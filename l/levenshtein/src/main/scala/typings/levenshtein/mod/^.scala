@@ -2,7 +2,7 @@ package typings.levenshtein.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("levenshtein", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ class ^ protected () extends Levenshtein {
     */
   def this(m: String, n: String) = this()
 }
-

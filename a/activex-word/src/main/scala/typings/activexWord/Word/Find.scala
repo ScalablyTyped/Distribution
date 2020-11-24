@@ -2,51 +2,23 @@ package typings.activexWord.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Find[TParent] extends js.Object {
+  
   val Application: typings.activexWord.Word.Application = js.native
-  var CorrectHangulEndings: Boolean = js.native
-  val Creator: Double = js.native
-  var Font: typings.activexWord.Word.Font = js.native
-  var Format: Boolean = js.native
-  var Forward: Boolean = js.native
-  val Found: Boolean = js.native
-  val Frame: typings.activexWord.Word.Frame = js.native
-  var HanjaPhoneticHangul: Boolean = js.native
-  var Highlight: Double = js.native
-  var IgnorePunct: Boolean = js.native
-  var IgnoreSpace: Boolean = js.native
-  var LanguageID: WdLanguageID = js.native
-  var LanguageIDFarEast: WdLanguageID = js.native
-  var LanguageIDOther: WdLanguageID = js.native
-  var MatchAlefHamza: Boolean = js.native
-  var MatchAllWordForms: Boolean = js.native
-  var MatchByte: Boolean = js.native
-  var MatchCase: Boolean = js.native
-  var MatchControl: Boolean = js.native
-  var MatchDiacritics: Boolean = js.native
-  var MatchFuzzy: Boolean = js.native
-  var MatchKashida: Boolean = js.native
-  var MatchPhrase: Boolean = js.native
-  var MatchPrefix: Boolean = js.native
-  var MatchSoundsLike: Boolean = js.native
-  var MatchSuffix: Boolean = js.native
-  var MatchWholeWord: Boolean = js.native
-  var MatchWildcards: Boolean = js.native
-  var NoProofing: Double = js.native
-  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
-  val Parent: TParent = js.native
-  val Replacement: typings.activexWord.Word.Replacement = js.native
-  var Style: js.Any = js.native
-  var Text: String = js.native
-  @JSName("Word.Find_typekey")
-  var WordDotFind_typekey: Find[Range | Selection] = js.native
-  var Wrap: WdFindWrap = js.native
+  
   def ClearAllFuzzyOptions(): Unit = js.native
+  
   def ClearFormatting(): Unit = js.native
+  
   def ClearHitHighlight(): Boolean = js.native
+  
+  var CorrectHangulEndings: Boolean = js.native
+  
+  val Creator: Double = js.native
+  
   def Execute(
     FindText: js.UndefOr[String],
     MatchCase: js.UndefOr[Boolean],
@@ -64,6 +36,7 @@ trait Find[TParent] extends js.Object {
     MatchAlefHamza: js.UndefOr[Boolean],
     MatchControl: js.UndefOr[Boolean]
   ): Boolean = js.native
+  
   def Execute2007(
     FindText: js.UndefOr[String],
     MatchCase: js.UndefOr[Boolean],
@@ -86,6 +59,7 @@ trait Find[TParent] extends js.Object {
     IgnoreSpace: js.UndefOr[Boolean],
     IgnorePunct: js.UndefOr[Boolean]
   ): Boolean = js.native
+  
   def ExecuteOld(
     FindText: js.UndefOr[String],
     MatchCase: js.UndefOr[Boolean],
@@ -99,6 +73,21 @@ trait Find[TParent] extends js.Object {
     ReplaceWith: js.UndefOr[String],
     Replace: js.UndefOr[WdReplace]
   ): Boolean = js.native
+  
+  var Font: typings.activexWord.Word.Font = js.native
+  
+  var Format: Boolean = js.native
+  
+  var Forward: Boolean = js.native
+  
+  val Found: Boolean = js.native
+  
+  val Frame: typings.activexWord.Word.Frame = js.native
+  
+  var HanjaPhoneticHangul: Boolean = js.native
+  
+  var Highlight: Double = js.native
+  
   def HitHighlight(
     FindText: js.Any,
     HighlightColor: js.UndefOr[js.Any],
@@ -121,10 +110,66 @@ trait Find[TParent] extends js.Object {
     IgnorePunct: js.UndefOr[js.Any],
     HanjaPhoneticHangul: js.UndefOr[js.Any]
   ): Boolean = js.native
+  
+  var IgnorePunct: Boolean = js.native
+  
+  var IgnoreSpace: Boolean = js.native
+  
+  var LanguageID: WdLanguageID = js.native
+  
+  var LanguageIDFarEast: WdLanguageID = js.native
+  
+  var LanguageIDOther: WdLanguageID = js.native
+  
+  var MatchAlefHamza: Boolean = js.native
+  
+  var MatchAllWordForms: Boolean = js.native
+  
+  var MatchByte: Boolean = js.native
+  
+  var MatchCase: Boolean = js.native
+  
+  var MatchControl: Boolean = js.native
+  
+  var MatchDiacritics: Boolean = js.native
+  
+  var MatchFuzzy: Boolean = js.native
+  
+  var MatchKashida: Boolean = js.native
+  
+  var MatchPhrase: Boolean = js.native
+  
+  var MatchPrefix: Boolean = js.native
+  
+  var MatchSoundsLike: Boolean = js.native
+  
+  var MatchSuffix: Boolean = js.native
+  
+  var MatchWholeWord: Boolean = js.native
+  
+  var MatchWildcards: Boolean = js.native
+  
+  var NoProofing: Double = js.native
+  
+  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
+  
+  val Parent: TParent = js.native
+  
+  val Replacement: typings.activexWord.Word.Replacement = js.native
+  
   def SetAllFuzzyOptions(): Unit = js.native
+  
+  var Style: js.Any = js.native
+  
+  var Text: String = js.native
+  
+  @JSName("Word.Find_typekey")
+  var WordDotFind_typekey: Find[Range | Selection] = js.native
+  
+  var Wrap: WdFindWrap = js.native
 }
-
 object Find {
+  
   @scala.inline
   def apply[TParent](
     Application: Application,
@@ -177,116 +222,163 @@ object Find {
     __obj.updateDynamic("Word.Find_typekey")(WordDotFind_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Find[TParent]]
   }
+  
   @scala.inline
   implicit class FindOps[Self <: Find[_], TParent] (val x: Self with Find[TParent]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClearAllFuzzyOptions(value: () => Unit): Self = this.set("ClearAllFuzzyOptions", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setClearFormatting(value: () => Unit): Self = this.set("ClearFormatting", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setClearHitHighlight(value: () => Boolean): Self = this.set("ClearHitHighlight", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCorrectHangulEndings(value: Boolean): Self = this.set("CorrectHangulEndings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExecute(
       value: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Boolean
     ): Self = this.set("Execute", js.Any.fromFunction15(value))
+    
     @scala.inline
     def setExecute2007(
       value: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Boolean
     ): Self = this.set("Execute2007", js.Any.fromFunction20(value))
+    
     @scala.inline
     def setExecuteOld(
       value: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace]) => Boolean
     ): Self = this.set("ExecuteOld", js.Any.fromFunction11(value))
+    
     @scala.inline
     def setFont(value: Font): Self = this.set("Font", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormat(value: Boolean): Self = this.set("Format", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setForward(value: Boolean): Self = this.set("Forward", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFound(value: Boolean): Self = this.set("Found", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFrame(value: Frame): Self = this.set("Frame", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHanjaPhoneticHangul(value: Boolean): Self = this.set("HanjaPhoneticHangul", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHighlight(value: Double): Self = this.set("Highlight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHitHighlight(
       value: (js.Any, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Boolean
     ): Self = this.set("HitHighlight", js.Any.fromFunction20(value))
+    
     @scala.inline
     def setIgnorePunct(value: Boolean): Self = this.set("IgnorePunct", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIgnoreSpace(value: Boolean): Self = this.set("IgnoreSpace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLanguageID(value: WdLanguageID): Self = this.set("LanguageID", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLanguageIDFarEast(value: WdLanguageID): Self = this.set("LanguageIDFarEast", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLanguageIDOther(value: WdLanguageID): Self = this.set("LanguageIDOther", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchAlefHamza(value: Boolean): Self = this.set("MatchAlefHamza", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchAllWordForms(value: Boolean): Self = this.set("MatchAllWordForms", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchByte(value: Boolean): Self = this.set("MatchByte", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchCase(value: Boolean): Self = this.set("MatchCase", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchControl(value: Boolean): Self = this.set("MatchControl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchDiacritics(value: Boolean): Self = this.set("MatchDiacritics", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchFuzzy(value: Boolean): Self = this.set("MatchFuzzy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchKashida(value: Boolean): Self = this.set("MatchKashida", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchPhrase(value: Boolean): Self = this.set("MatchPhrase", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchPrefix(value: Boolean): Self = this.set("MatchPrefix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchSoundsLike(value: Boolean): Self = this.set("MatchSoundsLike", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchSuffix(value: Boolean): Self = this.set("MatchSuffix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchWholeWord(value: Boolean): Self = this.set("MatchWholeWord", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMatchWildcards(value: Boolean): Self = this.set("MatchWildcards", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNoProofing(value: Double): Self = this.set("NoProofing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParagraphFormat(value: ParagraphFormat): Self = this.set("ParagraphFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParent(value: TParent): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReplacement(value: Replacement): Self = this.set("Replacement", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSetAllFuzzyOptions(value: () => Unit): Self = this.set("SetAllFuzzyOptions", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setStyle(value: js.Any): Self = this.set("Style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWordDotFind_typekey(value: Find[Range | Selection]): Self = this.set("Word.Find_typekey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWrap(value: WdFindWrap): Self = this.set("Wrap", value.asInstanceOf[js.Any])
   }
-  
 }
-

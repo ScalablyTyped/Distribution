@@ -12,7 +12,7 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Animation JSON File suitable for loading by the Loader.
@@ -23,13 +23,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AnimationJSONFile extends File {
+  
   /**
     * Called at the end of the load process, after the Loader has finished all files in its queue.
     */
   def onLoadComplete(): Unit = js.native
 }
-
 object AnimationJSONFile {
+  
   @scala.inline
   def apply(
     addToCache: () => Unit,
@@ -67,20 +68,23 @@ object AnimationJSONFile {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationJSONFile]
   }
+  
   @scala.inline
   implicit class AnimationJSONFileOps[Self <: AnimationJSONFile] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOnLoadComplete(value: () => Unit): Self = this.set("onLoadComplete", js.Any.fromFunction0(value))
   }
-  
 }
-

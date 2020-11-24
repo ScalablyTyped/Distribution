@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Row in a UITable._
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
   */
 class UITableRow ()
   extends typings.scriptableIos.UITableRow
-

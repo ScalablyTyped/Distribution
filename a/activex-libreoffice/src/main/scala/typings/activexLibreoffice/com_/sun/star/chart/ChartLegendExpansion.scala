@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies sizing aspects of the legend */
 /* Rewritten from type alias, can be one of: 
@@ -16,14 +16,16 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait ChartLegendExpansion extends js.Object
-
 object ChartLegendExpansion {
+  
   /** The legend entries are arranged in a way that the aspect ratio of the resulting legend is as near to 1 as possible. */
   @scala.inline
   def BALANCED: `2` = 2.asInstanceOf[`2`]
+  
   /** The size of the legend is given explicitly */
   @scala.inline
   def CUSTOM: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * The legend entries are stacked in a single column if possible. If not enough space is available further columns are added. <p>This is usually used for
     * legends that are displayed on the
@@ -32,6 +34,7 @@ object ChartLegendExpansion {
     */
   @scala.inline
   def HIGH: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * The legend entries are arranged in a single row if possible. If not enough space is available further rows are added. <p>This is usually used for
     * legends that are displayed at the
@@ -41,4 +44,3 @@ object ChartLegendExpansion {
   @scala.inline
   def WIDE: `0` = 0.asInstanceOf[`0`]
 }
-

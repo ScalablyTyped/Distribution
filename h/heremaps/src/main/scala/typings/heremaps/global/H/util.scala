@@ -3,12 +3,13 @@ package typings.heremaps.global.H
 import typings.heremaps.H.util.ContextItem.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** util *****/
 @JSGlobal("H.util")
 @js.native
 object util extends js.Object {
+  
   /**
     * The cache represents a in-memory LRU-cache with a fixed size. It stores any data that is added until the cache's content exceeds a maximum size. Once the size of all content elements
     * exceeds the maximum size the cache will drop the least recently retrieved elements until the size of the cache is within the bounds of its maximum size. Data elements are always
@@ -69,6 +70,12 @@ object util extends js.Object {
     extends typings.heremaps.H.util.ContextItem {
     def this(opt_options: Options) = this()
   }
+  /* static members */
+  @js.native
+  object ContextItem extends js.Object {
+    
+    var SEPARATOR: typings.heremaps.H.util.ContextItem = js.native
+  }
   
   /**
     * Object which can be safely disposed.
@@ -110,6 +117,12 @@ object util extends js.Object {
     extends typings.heremaps.H.util.EventTarget
   
   /**
+    * There is no documentation about this API
+    */
+  @js.native
+  object Job extends js.Object
+  
+  /**
     * This class represents an list of ordered entries which dispatches events when the list is modified.
     * @event add {H.util.OList.Event} - Fired when an entry was added to the list.
     * @event remove {H.util.OList.Event} - Fired when an entry was removed from the list.
@@ -119,37 +132,9 @@ object util extends js.Object {
   @js.native
   class OList ()
     extends typings.heremaps.H.util.OList
-  
-  /**
-    * A generic class to represent a handle for any kind of asynchronous processed requests
-    */
-  @js.native
-  /**
-    * Constructor
-    * @param opt_onprogress {function(H.util.Request)=} - A callback to invoke every time when the request's progress state changes
-    * @param opt_total {number=} - The total number of processing steps to complete this request, default is 1
-    */
-  class Request ()
-    extends typings.heremaps.H.util.Request {
-    def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit]) = this()
-    def this(opt_onprogress: js.UndefOr[scala.Nothing], opt_total: Double) = this()
-    def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit], opt_total: Double) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object ContextItem extends js.Object {
-    var SEPARATOR: typings.heremaps.H.util.ContextItem = js.native
-  }
-  
-  /**
-    * There is no documentation about this API
-    */
-  @js.native
-  object Job extends js.Object
-  
   @js.native
   object OList extends js.Object {
+    
     /**
       * The event class for events that are dispatched by OList
       * @property target {*} - Object which triggered the event
@@ -178,63 +163,88 @@ object util extends js.Object {
         moved: js.Any
       ) = this()
     }
-    
   }
   
+  /**
+    * A generic class to represent a handle for any kind of asynchronous processed requests
+    */
+  @js.native
+  /**
+    * Constructor
+    * @param opt_onprogress {function(H.util.Request)=} - A callback to invoke every time when the request's progress state changes
+    * @param opt_total {number=} - The total number of processing steps to complete this request, default is 1
+    */
+  class Request ()
+    extends typings.heremaps.H.util.Request {
+    def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit]) = this()
+    def this(opt_onprogress: js.UndefOr[scala.Nothing], opt_total: Double) = this()
+    def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit], opt_total: Double) = this()
+  }
   @js.native
   object Request extends js.Object {
+    
     /**
       * The supported states of an request
       */
     @js.native
     object State extends js.Object {
-      /* 3 */ val CANCELLED: typings.heremaps.H.util.Request.State.CANCELLED with Double = js.native
-      /* 2 */ val COMPLETE: typings.heremaps.H.util.Request.State.COMPLETE with Double = js.native
-      /* 4 */ val ERROR: typings.heremaps.H.util.Request.State.ERROR with Double = js.native
-      /* 0 */ val PENDING: typings.heremaps.H.util.Request.State.PENDING with Double = js.native
-      /* 1 */ val PROCESSING: typings.heremaps.H.util.Request.State.PROCESSING with Double = js.native
+      
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.util.Request.State with Double] = js.native
+      
+      /* 3 */ val CANCELLED: typings.heremaps.H.util.Request.State.CANCELLED with Double = js.native
+      
+      /* 2 */ val COMPLETE: typings.heremaps.H.util.Request.State.COMPLETE with Double = js.native
+      
+      /* 4 */ val ERROR: typings.heremaps.H.util.Request.State.ERROR with Double = js.native
+      
+      /* 0 */ val PENDING: typings.heremaps.H.util.Request.State.PENDING with Double = js.native
+      
+      /* 1 */ val PROCESSING: typings.heremaps.H.util.Request.State.PROCESSING with Double = js.native
     }
-    
   }
   
   @js.native
   object animation extends js.Object {
+    
     /**
       * This mamespace contains easing functions used for Animation class.
       */
     @js.native
     class ease ()
       extends typings.heremaps.H.util.animation.ease
-    
     /* static members */
     @js.native
     object ease extends js.Object {
+      
       /**
         * This function defines ease in and out with slope.
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
       def EASE_IN_OUT_QUINT(`val`: Double): Double = js.native
+      
       /**
         * This function defines quadratic ease in.
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
       def EASE_IN_QUAD(`val`: Double): Double = js.native
+      
       /**
         * This function defines ease out with circ function.
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
       def EASE_OUT_CIRC(`val`: Double): Double = js.native
+      
       /**
         * This function defines quadratic ease out.
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
       def EASE_OUT_QUAD(`val`: Double): Double = js.native
+      
       /**
         * This function defines linear ease.
         * @param val {number} - A value in range [0..1] to translate
@@ -242,8 +252,5 @@ object util extends js.Object {
         */
       def LINEAR(`val`: Double): Double = js.native
     }
-    
   }
-  
 }
-

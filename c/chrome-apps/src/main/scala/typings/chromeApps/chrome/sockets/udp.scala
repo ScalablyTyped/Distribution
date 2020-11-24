@@ -2,7 +2,7 @@ package typings.chromeApps.chrome.sockets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use the chrome.sockets.udp API to send and receive data over the network
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.sockets.udp")
 @js.native
 object udp extends js.Object
-

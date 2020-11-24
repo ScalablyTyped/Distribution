@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Dicomstores$Dicomweb$Studies")
 @js.native
 class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var series: ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeries = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.studies.delete
     * @desc DeleteStudy deletes all instances within the given study. Delete
@@ -52,6 +53,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () e
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.studies.metadata
     * @desc RetrieveStudyMetadata returns instance associated with the given
@@ -90,6 +92,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () e
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.studies.retrieveStudy
     * @desc RetrieveStudy returns all instances within the given study. See
@@ -127,6 +130,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () e
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.studies.searchForInstances
     * @desc SearchForInstances returns a list of matching instances. See
@@ -164,6 +168,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () e
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.studies.searchForSeries
     * @desc SearchForSeries returns a list of matching series. See
@@ -201,6 +206,9 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () e
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
+  var series: ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeries = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.studies.storeInstances
     * @desc StoreInstances stores DICOM instances associated with study
@@ -241,4 +249,3 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies protected () e
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

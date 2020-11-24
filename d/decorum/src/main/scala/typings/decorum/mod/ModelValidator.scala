@@ -2,7 +2,7 @@ package typings.decorum.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("decorum", "ModelValidator")
 @js.native
@@ -12,6 +12,7 @@ class ModelValidator protected () extends js.Object {
     * @param model The model to validate. Should be a class that has a valid constructor function and prototype.
     */
   def this(model: js.Any) = this()
+  
   /**
     * Gets the validation options for the given field name.
     * @param fieldKey         The name of the field to get options for.
@@ -19,6 +20,7 @@ class ModelValidator protected () extends js.Object {
     * for the field.
     */
   def getValidationOptions(fieldKey: String): FieldOptions = js.native
+  
   /**
     * Validate the entire model and return a result that indicates whether the model is valid or not and any
     * errors
@@ -27,6 +29,7 @@ class ModelValidator protected () extends js.Object {
     *     name.
     */
   def validate(): IValidationResult = js.native
+  
   /**
     * Validates the given field on this {ModelValidator}'s model. If a proposed value is passed, validate
     * against that passed value; otherwise, use the field's current value on the model.
@@ -38,4 +41,3 @@ class ModelValidator protected () extends js.Object {
   def validateField(fieldKey: String): js.Array[String] = js.native
   def validateField(fieldKey: String, proposedValue: js.Any): js.Array[String] = js.native
 }
-

@@ -3,19 +3,13 @@ package typings.nise.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FakeServer_ extends FakeServerOptions {
+  
   var firstRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
-  var lastRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
-  /**
-    * You can inspect the server.requests to verify request ordering, find unmatched requests or check that no requests has been done.
-    * server.requests is an array of all the FakeXMLHttpRequest objects that have been created.
-    */
-  var requests: js.Array[FakeXMLHttpRequest] = js.native
-  var secondRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
-  var thirdRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
+  
   /**
     * Used internally to determine the HTTP method used with the provided request.
     * By default this method simply returns request.method.
@@ -24,10 +18,23 @@ trait FakeServer_ extends FakeServerOptions {
     * @param request
     */
   def getHTTPMethod(request: FakeXMLHttpRequest): String = js.native
+  
   def getRequest(): js.UndefOr[FakeXMLHttpRequest] = js.native
+  
+  var lastRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
+  
+  /**
+    * You can inspect the server.requests to verify request ordering, find unmatched requests or check that no requests has been done.
+    * server.requests is an array of all the FakeXMLHttpRequest objects that have been created.
+    */
+  var requests: js.Array[FakeXMLHttpRequest] = js.native
+  
   def reset(): Unit = js.native
+  
   def resetBehavior(): Unit = js.native
+  
   def resetHistory(): Unit = js.native
+  
   /**
     * Causes all queued asynchronous requests to receive a response.
     * If none of the responses added through respondWith match, the default response is [404, {}, ""].
@@ -35,6 +42,7 @@ trait FakeServer_ extends FakeServerOptions {
     * If called with arguments, respondWith will be called with those arguments before responding to requests.
     */
   def respond(): Unit = js.native
+  
   def respondWith(args: js.Any*): Unit = js.native
   /**
     * Causes the server to respond to any request not matched by another response with the provided data. The default catch-all response is [404, {}, ""].
@@ -114,6 +122,10 @@ trait FakeServer_ extends FakeServerOptions {
     * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
     */
   def respondWith(url: RegExp, response: js.Array[_]): Unit = js.native
+  
   def restore(): Unit = js.native
+  
+  var secondRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
+  
+  var thirdRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
 }
-

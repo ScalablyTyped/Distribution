@@ -11,144 +11,11 @@ import typings.std.JSON
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChocolateChipStatic extends js.Object {
-  /**
-    * A cache to hold callbacks execute by the response from a JSONP request.
-    * This is an array of strings.
-    * By default these values get purged when the callback execute and exposes the data returned by the request.
-    */
-  var JSONPCallbacks: js.Array[String] = js.native
-  /**
-    * ATENTION: DO NOT TOUCH!
-    * This is the ChocolateChipJS cache.
-    * This is used to store details about registered events and data.
-    * You should not touch any of these values, even though they are exposed, as this can seriously impair the behavior of your app.
-    *
-    * data: this is used by $(element).data() to store data.
-    * events: this is used by the event system.
-    */
-  var chch_cache: Data = js.native
-  /**
-    * The base for extending ChocolateChipJS collections, which are arrays of elements.
-    */
-  var fn: Extend = js.native
-  /**
-    * Whether OS is Android
-    */
-  var isAndroid: Boolean = js.native
-  /**
-    * Whether OS is Blackberry.
-    */
-  var isBlackberry: Boolean = js.native
-  /**
-    * Whether browser is Chrome.
-    */
-  var isChrome: Boolean = js.native
-  /**
-    * Whether browser is running on desktop.
-    */
-  var isDesktop: Boolean = js.native
-  /**
-    * Whether browser is IE10.
-    */
-  var isIE10: Boolean = js.native
-  /**
-    * Whether browser is IE11.
-    */
-  var isIE11: Boolean = js.native
-  /**
-    * Whether browser is running on mobile device.
-    */
-  var isMobile: Boolean = js.native
-  /**
-    * Is native Android browser (not mobile Chrome).
-    */
-  var isNativeAndroid: Boolean = js.native
-  /**
-    * Whether there is a network connection.
-    */
-  var isOnline: Boolean = js.native
-  /**
-    * Whether browser is Safari.
-    */
-  var isSafari: Boolean = js.native
-  /**
-    * Whether app is running in stanalone mode.
-    */
-  var isStandalone: Boolean = js.native
-  /**
-    * Whether OS supports touch events.
-    */
-  var isTouchEnabled: Boolean = js.native
-  /**
-    * Whether OS is WebOS.
-    */
-  var isWebOS: Boolean = js.native
-  /**
-    * Whether browser is Webkit based.
-    */
-  var isWebkit: Boolean = js.native
-  /**
-    * Whether OS is Windows.
-    */
-  var isWin: Boolean = js.native
-  /**
-    * Whether device is Windows Phone.
-    */
-  var isWinPhone: Boolean = js.native
-  /**
-    * Whether OS is iOS.
-    */
-  var isiOS: Boolean = js.native
-  /**
-    * Whether OS is iOS 6.
-    */
-  var isiOS6: Boolean = js.native
-  /**
-    * Whether OS i iOS 7.
-    */
-  var isiOS7: Boolean = js.native
-  /**
-    * Whether device is iPad.
-    */
-  var isiPad: Boolean = js.native
-  /**
-    * Whether device is iPhone.
-    */
-  var isiPhone: Boolean = js.native
-  /**
-    * Whether device is iPod.
-    */
-  var isiPod: Boolean = js.native
-  /**
-    * Contains the name of the library (ChocolateChip).
-    */
-  var libraryName: String = js.native
-  /**
-    * This method returns a parsed template.
-    *
-    */
-  @JSName("template")
-  var template_Original: Call = js.native
-  /**
-    * Object used to store string templates and parsed templates.
-    *
-    * @param {strin} A string defining the template.
-    * @param {string} A label used to access an object's properties in the template. If none is provided it defaults to "data": [[= data.name]].
-    * @return {void}
-    */
-  var templates: js.Object = js.native
-  /**
-    * Uuid number.
-    */
-  var uuid: Double = js.native
-  /**
-    * Contains the version of ChocolateChipJS in use.
-    */
-  var version: String = js.native
+  
   /**
     * If no argument is provided, return the document as a ChocolateChipElementArray.
     */
@@ -185,35 +52,59 @@ trait ChocolateChipStatic extends js.Object {
   def apply(selector: HTMLElement): ChocolateChipElementArray = js.native
   def apply(selector: HTMLElement, context: ChocolateChipElementArray): ChocolateChipElementArray = js.native
   def apply(selector: HTMLElement, context: HTMLElement): ChocolateChipElementArray = js.native
+  
+  /**
+    * A cache to hold callbacks execute by the response from a JSONP request.
+    * This is an array of strings.
+    * By default these values get purged when the callback execute and exposes the data returned by the request.
+    */
+  var JSONPCallbacks: js.Array[String] = js.native
+  
   /**
     * This method converts a string of hyphenated tokens into a camel cased string.
     *
     * @param string A string of hyphenated tokens.
     */
   def camelize(string: String): String = js.native
+  
   /**
     * This method capitalizes the first letter of a string.
     */
   def capitalize(string: String): String = js.native
   def capitalize(string: String, boolean: Boolean): String = js.native
+  
+  /**
+    * ATENTION: DO NOT TOUCH!
+    * This is the ChocolateChipJS cache.
+    * This is used to store details about registered events and data.
+    * You should not touch any of these values, even though they are exposed, as this can seriously impair the behavior of your app.
+    *
+    * data: this is used by $(element).data() to store data.
+    * events: this is used by the event system.
+    */
+  var chch_cache: Data = js.native
+  
   /**
     * This method will concatenate strings or values as a cleaner alternative to using the '+' operator.
     *
     * @param {string | number} A comma separated series of strings to concatenate.
     */
   def concat(string: String*): String = js.native
+  
   /**
     * This method converts a camel case string into lowercase with hyphens.
     *
     * @param string A camel case string.
     */
   def deCamelize(string: String): String = js.native
+  
   /**
     * The method will defer the execution of its callback until the call stack is clear.
     *
     * @param callback A callback to execute after a delay.
     */
   def defer(callback: js.Function): js.Function = js.native
+  
   /**
     * This method will defer the execution of a function until the call stack is clear.
     *
@@ -222,6 +113,7 @@ trait ChocolateChipStatic extends js.Object {
     */
   def delay(callback: js.Function): js.Any = js.native
   def delay(callback: js.Function, duration: Double): js.Any = js.native
+  
   /**
     * This method allows you to execute a callback on each item in an array of elements.
     *
@@ -229,6 +121,7 @@ trait ChocolateChipStatic extends js.Object {
     * @param callback A callback to execute on each element. This has two parameters: the context, followed by the index of the current iteration.
     */
   def each[T](array: js.Array[T], callback: js.Function2[/* ctx */ T, /* idx */ Double, _]): js.Any = js.native
+  
   /**
     * Extend the ChocolateChipJS object itself with the provided object.
     *
@@ -244,6 +137,12 @@ trait ChocolateChipStatic extends js.Object {
     * @return The extended object.
     */
   def extend(target: js.Object, `object`: js.Object): js.Object = js.native
+  
+  /**
+    * The base for extending ChocolateChipJS collections, which are arrays of elements.
+    */
+  var fn: Extend = js.native
+  
   /**
     * Grabs values from a form and converts them into a JSON object.
     *
@@ -253,16 +152,39 @@ trait ChocolateChipStatic extends js.Object {
     */
   def form2JSON(rootNode: String, delimiter: String): js.Object = js.native
   def form2JSON(rootNode: HTMLElement, delimiter: String): js.Object = js.native
+  
   /**
     * Create a ChocolateChip collection object by creating elements from an HTML string. This is an alias for $.make.
     */
   def html(selector: String): ChocolateChipElementArray = js.native
+  
+  /**
+    * Whether OS is Android
+    */
+  var isAndroid: Boolean = js.native
+  
   /**
     * Determine whether the argument is an array.
     *
     * @param obj Object to test whether or not it is an array.
     */
   def isArray(obj: js.Any): Boolean = js.native
+  
+  /**
+    * Whether OS is Blackberry.
+    */
+  var isBlackberry: Boolean = js.native
+  
+  /**
+    * Whether browser is Chrome.
+    */
+  var isChrome: Boolean = js.native
+  
+  /**
+    * Whether browser is running on desktop.
+    */
+  var isDesktop: Boolean = js.native
+  
   /**
     * Determine whether the argument is an empty object.
     *
@@ -270,48 +192,146 @@ trait ChocolateChipStatic extends js.Object {
     * @return boolean
     */
   def isEmptyObject(obj: js.Any): Boolean = js.native
+  
   /**
     * Determine whether the argument is a float.
     *
     * @param obj Object to test whether or not it is a float.
     */
   def isFloat(obj: js.Any): Boolean = js.native
+  
   /**
     * Determine whether the argument is a function.
     *
     * @param obj Object to test whether or not it is an function.
     */
   def isFunction(obj: js.Any): Boolean = js.native
+  
+  /**
+    * Whether browser is IE10.
+    */
+  var isIE10: Boolean = js.native
+  
+  /**
+    * Whether browser is IE11.
+    */
+  var isIE11: Boolean = js.native
+  
   /**
     * Determine whether the argument is an integer.
     *
     * @param obj Object to test whether or not it is an integer.
     */
   def isInteger(obj: js.Any): Boolean = js.native
+  
+  /**
+    * Whether browser is running on mobile device.
+    */
+  var isMobile: Boolean = js.native
+  
+  /**
+    * Is native Android browser (not mobile Chrome).
+    */
+  var isNativeAndroid: Boolean = js.native
+  
   /**
     * Determine whether the argument is a number.
     *
     * @param obj Object to test whether or not it is a number.
     */
   def isNumber(obj: js.Any): Boolean = js.native
+  
   /**
     * Determine whether the argument is an object.
     *
     * @param obj Object to test whether or not it is an object.
     */
   def isObject(obj: js.Any): Boolean = js.native
+  
+  /**
+    * Whether there is a network connection.
+    */
+  var isOnline: Boolean = js.native
+  
+  /**
+    * Whether browser is Safari.
+    */
+  var isSafari: Boolean = js.native
+  
+  /**
+    * Whether app is running in stanalone mode.
+    */
+  var isStandalone: Boolean = js.native
+  
   /**
     * Determine whether the argument is a string.
     *
     * @param obj Object to test whether or not it is a string.
     */
   def isString(obj: js.Any): Boolean = js.native
+  
+  /**
+    * Whether OS supports touch events.
+    */
+  var isTouchEnabled: Boolean = js.native
+  
+  /**
+    * Whether OS is WebOS.
+    */
+  var isWebOS: Boolean = js.native
+  
+  /**
+    * Whether browser is Webkit based.
+    */
+  var isWebkit: Boolean = js.native
+  
+  /**
+    * Whether OS is Windows.
+    */
+  var isWin: Boolean = js.native
+  
+  /**
+    * Whether device is Windows Phone.
+    */
+  var isWinPhone: Boolean = js.native
+  
+  /**
+    * Whether OS is iOS.
+    */
+  var isiOS: Boolean = js.native
+  
+  /**
+    * Whether OS is iOS 6.
+    */
+  var isiOS6: Boolean = js.native
+  
+  /**
+    * Whether OS i iOS 7.
+    */
+  var isiOS7: Boolean = js.native
+  
+  /**
+    * Whether device is iPad.
+    */
+  var isiPad: Boolean = js.native
+  
+  /**
+    * Whether device is iPhone.
+    */
+  var isiPhone: Boolean = js.native
+  
+  /**
+    * Whether device is iPod.
+    */
+  var isiPod: Boolean = js.native
+  
   /**
     * Parse the data in a Promise response as JSON.
     *
     * @param response The response from a Promise.
     */
   def json(reponse: Response): JSON = js.native
+  
   /**
     * Method to perform JSONP request.
     *
@@ -320,18 +340,27 @@ trait ChocolateChipStatic extends js.Object {
     */
   def jsonp(url: String): js.Any = js.native
   def jsonp(url: String, options: CallbackName): js.Any = js.native
+  
+  /**
+    * Contains the name of the library (ChocolateChip).
+    */
+  var libraryName: String = js.native
+  
   /**
     * Create a ChocolateChip collection object by creating elements from an HTML string.
     */
   def make(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Creates a uuid using uuidNum().
     */
   def makeUuid(): String = js.native
+  
   /**
     * An empty function.
     */
   def noop(): Unit = js.native
+  
   /**
     * Process JavaScript returned by Ajax request. An optional name can be used to create a custom variable name by which the data is exposed, otherwise it is exposed with the variable "data".
     *
@@ -341,6 +370,7 @@ trait ChocolateChipStatic extends js.Object {
     */
   def processJSON(json: String): js.Any = js.native
   def processJSON(json: String, name: String): js.Any = js.native
+  
   /**
     *    Publish a topic with data for the topic's subscribers to receive.
     *
@@ -349,11 +379,13 @@ trait ChocolateChipStatic extends js.Object {
     * @return {void}
     */
   def publish(topic: String, data: js.Any): String = js.native
+  
   /**
     * Replace one element with another.
     * @return {HTMLElement[]}
     */
   def replace(newElement: ChocolateChipElementArray, oldElement: ChocolateChipElementArray): Unit = js.native
+  
   /**
     * Load a JavaScript file from a url, then execute it.
     *
@@ -362,6 +394,7 @@ trait ChocolateChipStatic extends js.Object {
     * @return {void}
     */
   def require(url: String, callback: js.Function): js.Function = js.native
+  
   /**
     * This method makes sure a method always returns an array.
     * If no values are available to return, it returns and empty array.
@@ -371,6 +404,7 @@ trait ChocolateChipStatic extends js.Object {
     * @return An array holding the results of a method, otherwise an empty array.
     */
   def returnResult(result: js.Array[HTMLElement]): js.Array[_] = js.native
+  
   /**
     * This method takes a referenced form and serializes its element names and values, which it returns as a string. This is required if you want to send form data.
     *
@@ -383,6 +417,7 @@ trait ChocolateChipStatic extends js.Object {
     * Serialize
     */
   def serialize(form: HTMLFormElement): String = js.native
+  
   /**
     * Subscribe to a publication. You provide the topic you want to subscribe to, as well as a callback to execute when a publication occurs.
     * Any data passed by the publisher is exposed to the callback as its second parameter. The callback's first parameter is the published topic.
@@ -391,6 +426,7 @@ trait ChocolateChipStatic extends js.Object {
     * @param callback You can receive any type: string, number, array, object, etc.
     */
   def subscribe(topic: String, callback: js.Function2[/* topic */ String, /* data */ js.Any, _]): Boolean = js.native
+  
   /**
     * This method parses a string and an optoinal variable name and returns a parsed template in the form of a function. You can then pass this function data to get rendered nodes.
     *
@@ -404,15 +440,43 @@ trait ChocolateChipStatic extends js.Object {
   def template(template: String): js.Function = js.native
   def template(template: String, variable: String): js.Function = js.native
   /**
+    * This method returns a parsed template.
+    *
+    */
+  @JSName("template")
+  var template_Original: Call = js.native
+  
+  /**
+    * Object used to store string templates and parsed templates.
+    *
+    * @param {strin} A string defining the template.
+    * @param {string} A label used to access an object's properties in the template. If none is provided it defaults to "data": [[= data.name]].
+    * @return {void}
+    */
+  var templates: js.Object = js.native
+  
+  /**
     * Unsubscribe from a topic. Pass this the topic you wish to unsubscribe from. The subscription will be terminated immediately.
     *
     * @param topic The name of the topic to unsubscribe from.
     */
   def unsubscribe(topic: String): Unit = js.native
+  
+  /**
+    * Uuid number.
+    */
+  var uuid: Double = js.native
+  
   /**
     * Create a random number to use as a uuid.
     */
   def uuidNum(): Double = js.native
+  
+  /**
+    * Contains the version of ChocolateChipJS in use.
+    */
+  var version: String = js.native
+  
   /**
     * This method takes a space-delimited string of words and returns it as an array where the individual words are indices.
     *
@@ -420,4 +484,3 @@ trait ChocolateChipStatic extends js.Object {
     */
   def w(string: String): js.Array[String] = js.native
 }
-

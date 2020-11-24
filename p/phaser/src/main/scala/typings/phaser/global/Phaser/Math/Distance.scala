@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.Distance")
 @js.native
 object Distance extends js.Object {
+  
   /**
     * Calculate the distance between two sets of coordinates (points).
     * @param x1 The x coordinate of the first point.
@@ -16,18 +17,21 @@ object Distance extends js.Object {
     * @param y2 The y coordinate of the second point.
     */
   def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  
   /**
     * Calculate the distance between two points.
     * @param a The first point.
     * @param b The second point.
     */
   def BetweenPoints(a: Vector2Like, b: Vector2Like): Double = js.native
+  
   /**
     * Calculate the squared distance between two points.
     * @param a The first point.
     * @param b The second point.
     */
   def BetweenPointsSquared(a: Vector2Like, b: Vector2Like): Double = js.native
+  
   /**
     * Calculate the Chebyshev distance between two sets of coordinates (points).
     * 
@@ -39,6 +43,7 @@ object Distance extends js.Object {
     * @param y2 The y coordinate of the second point.
     */
   def Chebyshev(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  
   /**
     * Calculate the distance between two sets of coordinates (points) to the power of `pow`.
     * @param x1 The x coordinate of the first point.
@@ -48,6 +53,7 @@ object Distance extends js.Object {
     * @param pow The exponent.
     */
   def Power(x1: Double, y1: Double, x2: Double, y2: Double, pow: Double): Double = js.native
+  
   /**
     * Calculate the snake distance between two sets of coordinates (points).
     * 
@@ -59,6 +65,7 @@ object Distance extends js.Object {
     * @param y2 The y coordinate of the second point.
     */
   def Snake(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  
   /**
     * Calculate the distance between two sets of coordinates (points), squared.
     * @param x1 The x coordinate of the first point.
@@ -68,4 +75,3 @@ object Distance extends js.Object {
     */
   def Squared(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
 }
-

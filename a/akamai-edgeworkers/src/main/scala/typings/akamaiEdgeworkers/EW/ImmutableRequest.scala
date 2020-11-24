@@ -2,15 +2,15 @@ package typings.akamaiEdgeworkers.EW
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImmutableRequest
   extends ReadsHeaders
      with ReadsVariables
      with Request
-
 object ImmutableRequest {
+  
   @scala.inline
   def apply(
     cpCode: Double,
@@ -27,4 +27,3 @@ object ImmutableRequest {
     __obj.asInstanceOf[ImmutableRequest]
   }
 }
-

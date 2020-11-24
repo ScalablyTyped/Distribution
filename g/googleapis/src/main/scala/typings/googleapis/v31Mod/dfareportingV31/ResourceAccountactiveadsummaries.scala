@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Accountactiveadsummaries")
 @js.native
 class ResourceAccountactiveadsummaries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.accountActiveAdSummaries.get
     * @desc Gets the account's active ad summary by account ID.
@@ -46,4 +48,3 @@ class ResourceAccountactiveadsummaries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccountActiveAdSummary]
   ): Unit = js.native
 }
-

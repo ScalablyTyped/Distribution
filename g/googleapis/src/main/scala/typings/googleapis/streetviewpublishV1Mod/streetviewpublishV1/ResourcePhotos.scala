@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/streetviewpublish/v1", "streetviewpublish_v1.Resource$Photos")
 @js.native
 class ResourcePhotos protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * streetviewpublish.photos.batchDelete
     * @desc Deletes a list of Photos and their metadata.  Note that if
@@ -49,6 +49,7 @@ class ResourcePhotos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchDeletePhotosResponse]
   ): Unit = js.native
+  
   /**
     * streetviewpublish.photos.batchGet
     * @desc Gets the metadata of the specified Photo batch.  Note that if
@@ -84,6 +85,7 @@ class ResourcePhotos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetPhotosResponse]
   ): Unit = js.native
+  
   /**
     * streetviewpublish.photos.batchUpdate
     * @desc Updates the metadata of Photos, such as pose, place association,
@@ -127,6 +129,9 @@ class ResourcePhotos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdatePhotosResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * streetviewpublish.photos.list
     * @desc Lists all the Photos that belong to the user.  <aside
@@ -162,4 +167,3 @@ class ResourcePhotos protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListPhotosResponse]
   ): Unit = js.native
 }
-

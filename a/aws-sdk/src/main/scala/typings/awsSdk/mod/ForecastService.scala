@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.forecastserviceMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ForecastService")
 @js.native
@@ -14,4 +14,3 @@ class ForecastService ()
   extends typings.awsSdk.allMod.ForecastService {
   def this(options: ClientConfiguration) = this()
 }
-

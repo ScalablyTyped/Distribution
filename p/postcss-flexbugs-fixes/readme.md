@@ -10,9 +10,9 @@ PostCSS plugin This project tries to fix all of flexbug's issues
 | ------------------ | :-------------: |
 | Full name          | postcss-flexbugs-fixes |
 | Keywords           | postcss, css, postcss-plugin, flexbugs, flexbox, flex |
-| # releases         | 5 |
-| # dependents       | 3285 |
-| # downloads        | 141505572 |
+| # releases         | 3 |
+| # dependents       | 3550 |
+| # downloads        | 180121712 |
 | # stars            | 5 |
 
 ## Links

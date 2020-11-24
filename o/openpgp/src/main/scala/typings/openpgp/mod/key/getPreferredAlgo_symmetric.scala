@@ -4,11 +4,12 @@ import typings.openpgp.openpgpStrings.symmetric
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "key.getPreferredAlgo")
 @js.native
 object getPreferredAlgo_symmetric extends js.Object {
+  
   /**
     * Returns the preferred symmetric/aead algorithm for a set of keys
     * @param type Type of preference to return
@@ -19,4 +20,3 @@ object getPreferredAlgo_symmetric extends js.Object {
     */
   def apply(`type`: symmetric, keys: js.Array[_], date: Date, userIds: js.Array[_]): js.Promise[typings.openpgp.mod.enums.symmetric] = js.native
 }
-

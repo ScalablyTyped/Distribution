@@ -2,7 +2,7 @@ package typings.angularCompiler.compilerMod.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "core.Type")
 @js.native
@@ -14,4 +14,3 @@ class TypeCls protected ()
     */
   def this(args: String*) = this()
 }
-

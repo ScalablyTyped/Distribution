@@ -2,9 +2,61 @@ package typings.freedom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object freedomStrings {
+  
+  @scala.inline
+  def onClientState: onClientState = "onClientState".asInstanceOf[onClientState]
+  
+  @scala.inline
+  def onConnection: onConnection = "onConnection".asInstanceOf[onConnection]
+  
+  @scala.inline
+  def onData: onData = "onData".asInstanceOf[onData]
+  
+  @scala.inline
+  def onDisconnect: onDisconnect = "onDisconnect".asInstanceOf[onDisconnect]
+  
+  @scala.inline
+  def onMessage: onMessage = "onMessage".asInstanceOf[onMessage]
+  
+  @scala.inline
+  def onUserProfile: onUserProfile = "onUserProfile".asInstanceOf[onUserProfile]
+  
+  @scala.inline
+  def onaddstream: onaddstream = "onaddstream".asInstanceOf[onaddstream]
+  
+  @scala.inline
+  def onclose: onclose = "onclose".asInstanceOf[onclose]
+  
+  @scala.inline
+  def ondatachannel: ondatachannel = "ondatachannel".asInstanceOf[ondatachannel]
+  
+  @scala.inline
+  def onerror: onerror = "onerror".asInstanceOf[onerror]
+  
+  @scala.inline
+  def onicecandidate: onicecandidate = "onicecandidate".asInstanceOf[onicecandidate]
+  
+  @scala.inline
+  def oniceconnectionstatechange: oniceconnectionstatechange = "oniceconnectionstatechange".asInstanceOf[oniceconnectionstatechange]
+  
+  @scala.inline
+  def onmessage_ : onmessage_ = "onmessage".asInstanceOf[onmessage_]
+  
+  @scala.inline
+  def onnegotiationneeded: onnegotiationneeded = "onnegotiationneeded".asInstanceOf[onnegotiationneeded]
+  
+  @scala.inline
+  def onopen: onopen = "onopen".asInstanceOf[onopen]
+  
+  @scala.inline
+  def onremovestream: onremovestream = "onremovestream".asInstanceOf[onremovestream]
+  
+  @scala.inline
+  def onsignalingstatechange: onsignalingstatechange = "onsignalingstatechange".asInstanceOf[onsignalingstatechange]
+  
   @js.native
   sealed trait onClientState extends js.Object
   
@@ -55,40 +107,4 @@ object freedomStrings {
   
   @js.native
   sealed trait onsignalingstatechange extends js.Object
-  
-  @scala.inline
-  def onClientState: onClientState = "onClientState".asInstanceOf[onClientState]
-  @scala.inline
-  def onConnection: onConnection = "onConnection".asInstanceOf[onConnection]
-  @scala.inline
-  def onData: onData = "onData".asInstanceOf[onData]
-  @scala.inline
-  def onDisconnect: onDisconnect = "onDisconnect".asInstanceOf[onDisconnect]
-  @scala.inline
-  def onMessage: onMessage = "onMessage".asInstanceOf[onMessage]
-  @scala.inline
-  def onUserProfile: onUserProfile = "onUserProfile".asInstanceOf[onUserProfile]
-  @scala.inline
-  def onaddstream: onaddstream = "onaddstream".asInstanceOf[onaddstream]
-  @scala.inline
-  def onclose: onclose = "onclose".asInstanceOf[onclose]
-  @scala.inline
-  def ondatachannel: ondatachannel = "ondatachannel".asInstanceOf[ondatachannel]
-  @scala.inline
-  def onerror: onerror = "onerror".asInstanceOf[onerror]
-  @scala.inline
-  def onicecandidate: onicecandidate = "onicecandidate".asInstanceOf[onicecandidate]
-  @scala.inline
-  def oniceconnectionstatechange: oniceconnectionstatechange = "oniceconnectionstatechange".asInstanceOf[oniceconnectionstatechange]
-  @scala.inline
-  def onmessage_ : onmessage_ = "onmessage".asInstanceOf[onmessage_]
-  @scala.inline
-  def onnegotiationneeded: onnegotiationneeded = "onnegotiationneeded".asInstanceOf[onnegotiationneeded]
-  @scala.inline
-  def onopen: onopen = "onopen".asInstanceOf[onopen]
-  @scala.inline
-  def onremovestream: onremovestream = "onremovestream".asInstanceOf[onremovestream]
-  @scala.inline
-  def onsignalingstatechange: onsignalingstatechange = "onsignalingstatechange".asInstanceOf[onsignalingstatechange]
 }
-

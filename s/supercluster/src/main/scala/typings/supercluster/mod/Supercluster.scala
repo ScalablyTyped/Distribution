@@ -4,13 +4,14 @@ import typings.geojson.mod.BBox
 import typings.geojson.mod.GeoJsonProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A very fast geospatial point clustering library for browsers and Node.
   */
 @js.native
 trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] extends js.Object {
+  
   /**
     * Returns the children of a cluster (on the next zoom level).
     *
@@ -18,6 +19,7 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     * @throws {Error} If `clusterId` does not exist.
     */
   def getChildren(clusterId: Double): js.Array[ClusterFeature[C] | PointFeature[P]] = js.native
+  
   /**
     * Returns the zoom level on which the cluster expands into several
     * children (useful for "click to zoom" feature).
@@ -25,6 +27,7 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     * @param clusterId Cluster ID (`cluster_id` value from feature properties).
     */
   def getClusterExpansionZoom(clusterId: Double): Double = js.native
+  
   /**
     * Returns an array of clusters and points as `GeoJSON.Feature` objects
     * for the given bounding box (`bbox`) and zoom level (`zoom`).
@@ -33,6 +36,7 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     * @param zoom Zoom level.
     */
   def getClusters(bbox: BBox, zoom: Double): js.Array[ClusterFeature[C] | PointFeature[P]] = js.native
+  
   /**
     * Returns all the points of a cluster (with pagination support).
     *
@@ -44,12 +48,14 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
   def getLeaves(clusterId: Double, limit: js.UndefOr[scala.Nothing], offset: Double): js.Array[PointFeature[P]] = js.native
   def getLeaves(clusterId: Double, limit: Double): js.Array[PointFeature[P]] = js.native
   def getLeaves(clusterId: Double, limit: Double, offset: Double): js.Array[PointFeature[P]] = js.native
+  
   /**
     * For a given zoom and x/y coordinates, returns a
     * [geojson-vt](https://github.com/mapbox/geojson-vt)-compatible JSON
     * tile object with cluster any point features.
     */
   def getTile(zoom: Double, x: Double, y: Double): (Tile[C, P]) | Null = js.native
+  
   /**
     * Loads an array of GeoJSON Feature objects. Each feature's geometry
     * must be a GeoJSON Point. Once loaded, index is immutable.
@@ -58,4 +64,3 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     */
   def load(points: js.Array[PointFeature[P]]): Supercluster[P, C] = js.native
 }
-

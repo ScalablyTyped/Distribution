@@ -10,9 +10,9 @@ Get details about the current Continuous Integration environment
 | ------------------ | :-------------: |
 | Full name          | ci-info |
 | Keywords           | ci, continuous, integration, test, detect |
-| # releases         | 10 |
-| # dependents       | 96 |
-| # downloads        | 421397665 |
+| # releases         | 5 |
+| # dependents       | 161 |
+| # downloads        | 618848936 |
 | # stars            | 2 |
 
 ## Links

@@ -4,11 +4,12 @@ import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Parse.Cloud.getJobStatus")
 @js.native
 object getJobStatus extends js.Object {
+  
   /**
     * Gets job status by Id
     * @param jobStatusId The Id of Job Status.
@@ -16,4 +17,3 @@ object getJobStatus extends js.Object {
     */
   def apply(jobStatusId: String): js.Promise[Object[Attributes]] = js.native
 }
-

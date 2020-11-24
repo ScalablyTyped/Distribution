@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.guarddutyMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "GuardDuty")
 @js.native
@@ -14,4 +14,3 @@ class GuardDuty ()
   extends typings.awsSdk.allMod.GuardDuty {
   def this(options: ClientConfiguration) = this()
 }
-

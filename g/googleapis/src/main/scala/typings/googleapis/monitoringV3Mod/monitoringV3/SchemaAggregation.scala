@@ -2,7 +2,7 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes how to combine multiple time series to provide different views of
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaAggregation extends js.Object {
+  
   /**
     * The alignment period for per-time series alignment. If present,
     * alignmentPeriod must be at least 60 seconds. After per-time series
@@ -24,6 +25,7 @@ trait SchemaAggregation extends js.Object {
     * returned.
     */
   var alignmentPeriod: js.UndefOr[String] = js.native
+  
   /**
     * The approach to be used to combine time series. Not all reducer functions
     * may be applied to all time series, depending on the metric type and the
@@ -35,6 +37,7 @@ trait SchemaAggregation extends js.Object {
     * returned.
     */
   var crossSeriesReducer: js.UndefOr[String] = js.native
+  
   /**
     * The set of fields to preserve when crossSeriesReducer is specified. The
     * groupByFields determine how the time series are partitioned into subsets
@@ -50,6 +53,7 @@ trait SchemaAggregation extends js.Object {
     * this field is ignored.
     */
   var groupByFields: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * The approach to be used to align individual time series. Not all
     * alignment functions may be applied to all time series, depending on the
@@ -62,43 +66,54 @@ trait SchemaAggregation extends js.Object {
     */
   var perSeriesAligner: js.UndefOr[String] = js.native
 }
-
 object SchemaAggregation {
+  
   @scala.inline
   def apply(): SchemaAggregation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAggregation]
   }
+  
   @scala.inline
   implicit class SchemaAggregationOps[Self <: SchemaAggregation] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlignmentPeriod(value: String): Self = this.set("alignmentPeriod", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlignmentPeriod: Self = this.set("alignmentPeriod", js.undefined)
+    
     @scala.inline
     def setCrossSeriesReducer(value: String): Self = this.set("crossSeriesReducer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCrossSeriesReducer: Self = this.set("crossSeriesReducer", js.undefined)
+    
     @scala.inline
     def setGroupByFieldsVarargs(value: String*): Self = this.set("groupByFields", js.Array(value :_*))
+    
     @scala.inline
     def setGroupByFields(value: js.Array[String]): Self = this.set("groupByFields", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGroupByFields: Self = this.set("groupByFields", js.undefined)
+    
     @scala.inline
     def setPerSeriesAligner(value: String): Self = this.set("perSeriesAligner", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePerSeriesAligner: Self = this.set("perSeriesAligner", js.undefined)
   }
-  
 }
-

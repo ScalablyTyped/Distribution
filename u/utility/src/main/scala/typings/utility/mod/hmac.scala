@@ -3,11 +3,12 @@ package typings.utility.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "hmac")
 @js.native
 object hmac extends js.Object {
+  
   /**
     * HMAC algorithm.
     *
@@ -30,4 +31,3 @@ object hmac extends js.Object {
   def apply(algorithm: String, key: String, data: Buffer): String = js.native
   def apply(algorithm: String, key: String, data: Buffer, encoding: String): String = js.native
 }
-

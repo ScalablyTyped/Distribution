@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.loggingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/lib/logging", "Entry")
 @js.native
@@ -34,18 +34,22 @@ class Entry protected () extends js.Object {
   def this(level: Level, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
   def this(level: Level, message: String, opt_timestamp: Double, opt_type: String) = this()
   def this(level: Level, message: String, opt_timestamp: Double, opt_type: IType) = this()
+  
   /** @type {!logging.Level} */
   var level: Level = js.native
+  
   /** @type {string} */
   var message: String = js.native
+  
   /** @type {number} */
   var timestamp: Double = js.native
-  /** @type {string} */
-  var `type`: String = js.native
+  
   /**
     * @return {{level: string, message: string, timestamp: number,
     *           type: string}} The JSON representation of this entry.
     */
   def toJSON(): IEntryJSON = js.native
+  
+  /** @type {string} */
+  var `type`: String = js.native
 }
-

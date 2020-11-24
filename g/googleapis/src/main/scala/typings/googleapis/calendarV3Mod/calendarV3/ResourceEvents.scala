@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Events")
 @js.native
 class ResourceEvents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * calendar.events.delete
     * @desc Deletes an event.
@@ -40,6 +42,7 @@ class ResourceEvents protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceEventsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEventsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * calendar.events.get
     * @desc Returns an event.
@@ -72,6 +75,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.import
     * @desc Imports an event. This operation is used to add a private copy of an
@@ -104,6 +108,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.insert
     * @desc Creates an event.
@@ -138,6 +143,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.instances
     * @desc Returns instances of the specified recurring event.
@@ -176,6 +182,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvents]
   ): Unit = js.native
+  
   /**
     * calendar.events.list
     * @desc Returns events on the specified calendar.
@@ -221,6 +228,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvents]
   ): Unit = js.native
+  
   /**
     * calendar.events.move
     * @desc Moves an event to another calendar, i.e. changes an event's
@@ -254,6 +262,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.patch
     * @desc Updates an event. This method supports patch semantics.
@@ -290,6 +299,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.quickAdd
     * @desc Creates an event based on a simple text string.
@@ -321,6 +331,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.update
     * @desc Updates an event.
@@ -357,6 +368,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEvent]
   ): Unit = js.native
+  
   /**
     * calendar.events.watch
     * @desc Watch for changes to Events resources.
@@ -404,4 +416,3 @@ class ResourceEvents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

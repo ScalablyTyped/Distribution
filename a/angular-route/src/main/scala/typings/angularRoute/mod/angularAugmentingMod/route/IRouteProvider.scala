@@ -3,16 +3,18 @@ package typings.angularRoute.mod.angularAugmentingMod.route
 import typings.angular.mod.IServiceProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRouteProvider extends IServiceProvider {
+  
   /**
     * Match routes without being case sensitive
     *
     * This option defaults to false. If the option is set to true, then the particular route can be matched without being case sensitive
     */
   var caseInsensitiveMatch: js.UndefOr[Boolean] = js.native
+  
   /**
     * Call this method as a getter (i.e. without any arguments) to get the current value of the eagerInstantiationEnabled flag.
     */
@@ -27,6 +29,7 @@ trait IRouteProvider extends IServiceProvider {
     * @param enabled If provided, update the internal eagerInstantiationEnabled flag.
     */
   def eagerInstantiationEnabled(enabled: Boolean): IRouteProvider = js.native
+  
   def otherwise(params: String): IRouteProvider = js.native
   /**
     * Sets route definition that will be used on route change when no other route definition is matched.
@@ -34,6 +37,7 @@ trait IRouteProvider extends IServiceProvider {
     * @params Mapping information to be assigned to $route.current.
     */
   def otherwise(params: IRoute): IRouteProvider = js.native
+  
   /**
     * Adds a new route definition to the $route service.
     *
@@ -49,4 +53,3 @@ trait IRouteProvider extends IServiceProvider {
     */
   def when(path: String, route: IRoute): IRouteProvider = js.native
 }
-

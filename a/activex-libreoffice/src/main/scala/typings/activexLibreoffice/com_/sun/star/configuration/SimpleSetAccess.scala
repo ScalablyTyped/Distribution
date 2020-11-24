@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XStringEscape
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a dynamic, homogeneous, nonhierarchical set of values or objects.
@@ -25,8 +25,8 @@ trait SimpleSetAccess
      with XTemplateContainer
      with XStringEscape
      with XContainer
-
 object SimpleSetAccess {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -50,4 +50,3 @@ object SimpleSetAccess {
     __obj.asInstanceOf[SimpleSetAccess]
   }
 }
-

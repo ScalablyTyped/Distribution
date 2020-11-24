@@ -2,13 +2,13 @@ package typings.winrtUwp.Windows.Foundation.Collections
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Notifies listeners of dynamic changes to a map, such as when items are added or removed. */
 @js.native
 trait IObservableMap[K, V] extends IMap[K, V]
-
 object IObservableMap {
+  
   @scala.inline
   def apply[K, V](
     clear: () => Unit,
@@ -24,4 +24,3 @@ object IObservableMap {
     __obj.asInstanceOf[IObservableMap[K, V]]
   }
 }
-

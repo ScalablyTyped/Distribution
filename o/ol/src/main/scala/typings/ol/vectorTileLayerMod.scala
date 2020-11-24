@@ -4,20 +4,25 @@ import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.pluggableMapMod.FrameState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/renderer/canvas/VectorTileLayer", JSImport.Namespace)
 @js.native
 object vectorTileLayerMod extends js.Object {
+  
   @js.native
   trait CanvasVectorTileLayerRenderer
     extends typings.ol.tileLayerMod.default {
+    
+    def isDrawableTile(tile: typings.ol.vectorRenderTileMod.default): Boolean = js.native
+    
     def prepareTile(
       tile: typings.ol.vectorRenderTileMod.default,
       pixelRatio: Double,
       projection: typings.ol.projectionMod.default,
       queue: Boolean
-    ): Boolean = js.native
+    ): js.UndefOr[Boolean] = js.native
+    
     def renderFeature(
       feature: FeatureLike,
       squaredTolerance: Double,
@@ -30,6 +35,7 @@ object vectorTileLayerMod extends js.Object {
       styles: typings.ol.styleStyleMod.default,
       executorGroup: typings.ol.builderGroupMod.default
     ): Boolean = js.native
+    
     def renderQueuedTileImages_(hifi: Boolean, frameState: FrameState): Unit = js.native
   }
   
@@ -37,6 +43,4 @@ object vectorTileLayerMod extends js.Object {
   class default protected () extends CanvasVectorTileLayerRenderer {
     def this(layer: typings.ol.vectorTileMod.default) = this()
   }
-  
 }
-

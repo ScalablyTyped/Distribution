@@ -3,22 +3,25 @@ package typings.googleDdns.mod
 import typings.googleDdns.googleDdnsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-ddns", "DynamicDNS")
 @js.native
 class DynamicDNS protected () extends js.Object {
   def this(options: DynamicDNSOptions) = this()
+  
   /**
     * Gets the current IP address in the DNS record.
     * @returns a Promise resolving with the IP or rejecting with an error object `{error: message}`
     */
   def getCurrentIP(): js.Promise[String] = js.native
+  
   /**
     * Gets the public IP address of the network hosting this application.
     * @returns a Promise resolving with the IP or rejecting with an error object `{error: message}`
     */
   def getPublicIP(): js.Promise[String] = js.native
+  
   /**
     * Synchronizes the DNS IP address with the current public IP address.
     * Compares the current public IP address against the DNS record for
@@ -33,4 +36,3 @@ class DynamicDNS protected () extends js.Object {
   def sync(): js.Promise[`true` | SuccessResponse] = js.native
   def sync(force: Boolean): js.Promise[`true` | SuccessResponse] = js.native
 }
-

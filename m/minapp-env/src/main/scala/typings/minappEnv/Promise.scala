@@ -2,15 +2,14 @@ package typings.minappEnv
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the completion of an asynchronous operation
   */
 @js.native
 trait Promise[T] extends js.Object {
-  @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.minappEnv.minappEnvStrings.Promise = js.native
+  
   /**
     * Attaches a callback for only the rejection of the Promise.
     * @param onrejected The callback to execute when the Promise is rejected.
@@ -18,6 +17,7 @@ trait Promise[T] extends js.Object {
     */
   def `catch`[TResult](): Promise[T | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | PromiseLike[TResult]]): Promise[T | TResult] = js.native
+  
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
     * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -35,5 +35,7 @@ trait Promise[T] extends js.Object {
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | PromiseLike[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: typings.minappEnv.minappEnvStrings.Promise = js.native
 }
-

@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object java_ {
+  
   /**
     * indicates a the Java settings have been modified.
     *
@@ -13,6 +14,7 @@ package object java_ {
     * @since OOo 2.0
     */
   type InvalidJavaSettingsException = typings.activexLibreoffice.com_.sun.star.java_.JavaInitializationException
+  
   /**
     * indicates that Java could not be initialized because it has been switched off.
     *
@@ -20,6 +22,7 @@ package object java_ {
     * @since OOo 1.1.2
     */
   type JavaDisabledException = typings.activexLibreoffice.com_.sun.star.java_.JavaInitializationException
+  
   /**
     * indicates that there is no Java available
     *
@@ -32,6 +35,7 @@ package object java_ {
     * @since OOo 1.1.2
     */
   type JavaInitializationException = typings.activexLibreoffice.com_.sun.star.uno.DeploymentException
+  
   /**
     * indicates that the user did not configure Java for an Office installation.
     *
@@ -39,16 +43,19 @@ package object java_ {
     * @since OOo 1.1.2
     */
   type JavaNotConfiguredException = typings.activexLibreoffice.com_.sun.star.java_.JavaInitializationException
+  
   /**
     * indicates that no suitable JRE was found.
     * @since OOo 2.0
     */
   type JavaNotFoundException = typings.activexLibreoffice.com_.sun.star.java_.JavaInitializationException
+  
   /**
     * Exports interfaces to handle a Java VM.
     * @deprecated DeprecatedA UNO service seems to be at the wrong abstraction level for this functionality. This should probably be replaced by an appropriate C/C
     */
   type JavaVirtualMachine = typings.activexLibreoffice.com_.sun.star.java_.XJavaVM
+  
   /**
     * indicates that the office must be restarted before a JRE can be used.
     * @since OOo 2.0

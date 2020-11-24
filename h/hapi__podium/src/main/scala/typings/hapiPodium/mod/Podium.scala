@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.hapiPodium.anon.Channel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Podium
@@ -16,6 +16,7 @@ trait Podium
   */
 Instantiable0[Podium]
      with Instantiable1[(/* events */ js.Array[Events]) | (/* events */ Events), Podium] {
+  
   /**
     * podium.addListener(criteria, listener)
     * Same as podium.on()
@@ -25,6 +26,7 @@ Instantiable0[Podium]
     */
   def addListener(criteria: String, listener: Listener): Unit = js.native
   def addListener(criteria: Criteria, listener: Listener): Unit = js.native
+  
   /**
     * podium.emit(criteria, data, [callback])
     * Emits an event update to all the subscribed listeners
@@ -37,6 +39,7 @@ Instantiable0[Podium]
   def emit(criteria: String, data: js.Any, callback: js.Function0[Unit]): Unit = js.native
   def emit(criteria: Channel, data: js.Any): Unit = js.native
   def emit(criteria: Channel, data: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * podium.hasListeners(name)
     * Returns whether an event has any listeners subscribed
@@ -45,6 +48,7 @@ Instantiable0[Podium]
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumhaslistenersname}
     */
   def hasListeners(name: String): Boolean = js.native
+  
   /**
     * podium.on(criteria, listener)
     * Subscribe a handler to an event
@@ -54,6 +58,7 @@ Instantiable0[Podium]
     */
   def on(criteria: String, listener: Listener): Unit = js.native
   def on(criteria: Criteria, listener: Listener): Unit = js.native
+  
   /**
     * podium.once(criteria, listener)
     * Same as podium.on() with the count option set to 1.
@@ -63,6 +68,7 @@ Instantiable0[Podium]
     */
   def once(criteria: String, listener: Listener): Unit = js.native
   def once(criteria: Criteria, listener: Listener): Unit = js.native
+  
   /**
     * podium.registerEvent(events)
     * Register the specified events and their optional configuration. Events must be registered before they can be emitted or subscribed to. This is done to detect event name mispelling and invalid event activities.
@@ -70,6 +76,7 @@ Instantiable0[Podium]
     */
   def registerEvent(events: js.Array[Events]): Unit = js.native
   def registerEvent(events: Events): Unit = js.native
+  
   /**
     * podium.registerPodium(podiums)
     * Registers another emitter as an event source for the current emitter (any event update emitted by the source emitter is passed to any subscriber of the current emitter)
@@ -78,6 +85,7 @@ Instantiable0[Podium]
     */
   def registerPodium(podiums: js.Array[Podium]): Unit = js.native
   def registerPodium(podiums: Podium): Unit = js.native
+  
   /**
     * podium.removeAllListeners(name)
     * Removes all listeners subscribed to a given event name
@@ -86,6 +94,7 @@ Instantiable0[Podium]
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumremovealllistenersname}
     */
   def removeAllListeners(name: String): Podium = js.native
+  
   /**
     * podium.removeListener(name, listener)
     * Removes all listeners subscribed to a given event name matching the provided listener method where:
@@ -96,4 +105,3 @@ Instantiable0[Podium]
     */
   def removeListener(name: String, listener: Listener): Podium = js.native
 }
-

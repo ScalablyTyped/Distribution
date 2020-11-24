@@ -2,14 +2,14 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ElevationStatus extends js.Object
-
 @JSGlobal("google.maps.ElevationStatus")
 @js.native
 object ElevationStatus extends js.Object {
+  
   @js.native
   sealed trait INVALID_REQUEST extends ElevationStatus
   
@@ -24,6 +24,4 @@ object ElevationStatus extends js.Object {
   
   @js.native
   sealed trait UNKNOWN_ERROR extends ElevationStatus
-  
 }
-

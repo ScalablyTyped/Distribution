@@ -2,9 +2,10 @@ package typings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object emscripten {
+  
   /**
     * A factory function is generated when setting the `MODULARIZE` build option
     * to `1` in your Emscripten build. It return a Promise that resolves to an

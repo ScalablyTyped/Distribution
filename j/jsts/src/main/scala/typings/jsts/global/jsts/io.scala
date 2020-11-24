@@ -3,11 +3,12 @@ package typings.jsts.global.jsts
 import typings.jsts.jsts.geom.GeometryFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsts.io")
 @js.native
 object io extends js.Object {
+  
   @js.native
   class GeoJSONReader ()
     extends typings.jsts.jsts.io.GeoJSONReader
@@ -52,6 +53,4 @@ object io extends js.Object {
     extends typings.jsts.jsts.io.WKTWriter {
     def this(geometryFactory: GeometryFactory) = this()
   }
-  
 }
-

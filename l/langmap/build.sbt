@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "langmap"
-version := "0.0-dt-20200515Z-38b47d"
+version := "0.0-dt-20200826Z-f2f33e"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

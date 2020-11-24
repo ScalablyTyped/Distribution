@@ -3,7 +3,7 @@ package typings.ember.mod.Ember.Test
 import typings.rsvp.mod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember", "Ember.Test.Promise")
 @js.native
@@ -14,4 +14,3 @@ class Promise_[T] protected () extends Promise[T] {
         Unit
       ]) = this()
 }
-

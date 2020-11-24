@@ -10,9 +10,9 @@ File edition helpers working on top of mem-fs
 | ------------------ | :-------------: |
 | Full name          | mem-fs-editor |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 188 |
-| # downloads        | 15370806 |
+| # releases         | 4 |
+| # dependents       | 281 |
+| # downloads        | 22196273 |
 | # stars            | 5 |
 
 ## Links

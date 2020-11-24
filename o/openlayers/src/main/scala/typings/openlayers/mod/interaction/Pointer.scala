@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.olx.interaction.PointerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -37,11 +37,11 @@ import scala.scalajs.js.annotation._
 class Pointer () extends Interaction {
   def this(opt_options: PointerOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "interaction.Pointer")
 @js.native
 object Pointer extends js.Object {
+  
   /**
     * Handles the {@link ol.MapBrowserEvent map browser event} and may call into
     * other functions, if event sequences like e.g. 'drag' or 'down-up' etc. are
@@ -52,4 +52,3 @@ object Pointer extends js.Object {
     */
   def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
 }
-

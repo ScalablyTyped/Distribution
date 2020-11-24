@@ -12,7 +12,7 @@ The lodash method `_.isSet` exported as a module.
 | Keywords           | lodash-modularized, isset |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 25108 |
+| # downloads        | 48527 |
 | # stars            | 0 |
 
 ## Links

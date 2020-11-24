@@ -7,11 +7,11 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dom/test-utils", "isCompositeComponentWithType")
 @js.native
 object isCompositeComponentWithType extends js.Object {
+  
   def apply[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](instance: ReactInstance, `type`: ClassType[_, T, C]): Boolean = js.native
 }
-

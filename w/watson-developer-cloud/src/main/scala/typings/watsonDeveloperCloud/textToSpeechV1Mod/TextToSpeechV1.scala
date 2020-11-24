@@ -2,11 +2,12 @@ package typings.watsonDeveloperCloud.textToSpeechV1Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextToSpeechV1
   extends typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.^ {
+  
   /**
     * Repair the WAV header of an audio/wav file.
     *
@@ -14,6 +15,7 @@ trait TextToSpeechV1
     * @return {Buffer} wavFileData - the original Buffer, with a correct header
     */
   def repairWavHeader(wavFileData: js.Any): js.Any = js.native
+  
   /**
     * Use the synthesize function with a readable stream over websockets
     *
@@ -22,4 +24,3 @@ trait TextToSpeechV1
     */
   def synthesizeUsingWebSocket(params: js.Any): typings.watsonDeveloperCloud.synthesizeStreamMod.^ = js.native
 }
-

@@ -96,12 +96,11 @@ import typings.semanticUiApi.semanticUiApiStrings.verbose
 import typings.semanticUiApi.semanticUiApiStrings.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
-  @JSName("api")
-  var api_Original: Api = js.native
+  
   def api(): JQuery = js.native
   def api(behavior: setting, name: action, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
   def api(behavior: setting, name: action, value: String): JQuery = js.native
@@ -279,6 +278,8 @@ trait JQueryStatic extends js.Object {
   def api_JQuery(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
   @JSName("api")
   def api_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  @JSName("api")
+  var api_Original: Api = js.native
   /**
     * Aborts current API request
     */
@@ -392,4 +393,3 @@ trait JQueryStatic extends js.Object {
   @JSName("api")
   def api_writecachedresponse(behavior: `write cached response`, url: String, response: js.Any): JQuery = js.native
 }
-

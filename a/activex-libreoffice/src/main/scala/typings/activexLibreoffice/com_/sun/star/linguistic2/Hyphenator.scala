@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceDisplayName
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers hyphenation functionality. */
 @js.native
@@ -21,8 +21,8 @@ trait Hyphenator
      with XInitialization
      with XComponent
      with XServiceDisplayName
-
 object Hyphenator {
+  
   @scala.inline
   def apply(
     Locales: SafeArray[Locale],
@@ -46,4 +46,3 @@ object Hyphenator {
     __obj.asInstanceOf[Hyphenator]
   }
 }
-

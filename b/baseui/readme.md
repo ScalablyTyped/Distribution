@@ -1,7 +1,7 @@
 
 # Scala.js typings for baseui
 
-Typings are for version 9.91.0
+Typings are for version 9.105.0
 
 ## Library description:
 A React Component library implementing the Base design language
@@ -10,9 +10,9 @@ A React Component library implementing the Base design language
 | ------------------ | :-------------: |
 | Full name          | baseui |
 | Keywords           | react, uber, baseui, baseweb |
-| # releases         | 239 |
-| # dependents       | 24 |
-| # downloads        | 538727 |
+| # releases         | 339 |
+| # dependents       | 36 |
+| # downloads        | 484623 |
 | # stars            | 0 |
 
 ## Links

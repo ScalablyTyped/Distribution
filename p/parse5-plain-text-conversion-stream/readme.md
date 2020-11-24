@@ -10,9 +10,9 @@ Stream that converts plain text files into HTML document.
 | ------------------ | :-------------: |
 | Full name          | parse5-plain-text-conversion-stream |
 | Keywords           | parse5, parser, stream, streaming, plain, text, plain text |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 280 |
+| # downloads        | 655 |
 | # stars            | 0 |
 
 ## Links

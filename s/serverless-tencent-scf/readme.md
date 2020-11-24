@@ -12,7 +12,7 @@ Provider plugin for the Serverless Framework v1.x which adds support for Tencent
 | Keywords           | serverless, serverless framework, serverless applications, serverless modules, tencent cloud functions, iot, internet of things, serverless.com |
 | # releases         | 37 |
 | # dependents       | 2 |
-| # downloads        | 8631 |
+| # downloads        | 9858 |
 | # stars            | 0 |
 
 ## Links

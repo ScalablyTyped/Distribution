@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway")
 @js.native
@@ -24,28 +24,32 @@ class InternetGateway protected () extends CustomResource {
   def this(name: String, args: InternetGatewayArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: InternetGatewayArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the Internet Gateway.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The ID of the AWS account that owns the internet gateway.
     */
   val ownerId: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * The VPC ID to create in.
     */
   val vpcId: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway")
 @js.native
 object InternetGateway extends js.Object {
+  
   /**
     * Get an existing InternetGateway resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -59,10 +63,10 @@ object InternetGateway extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InternetGateway = js.native
   def get(name: String, id: Input[ID], state: InternetGatewayState): InternetGateway = js.native
   def get(name: String, id: Input[ID], state: InternetGatewayState, opts: CustomResourceOptions): InternetGateway = js.native
+  
   /**
     * Returns true if the given object is an instance of InternetGateway.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/internetGateway.InternetGateway */ Boolean = js.native
 }
-

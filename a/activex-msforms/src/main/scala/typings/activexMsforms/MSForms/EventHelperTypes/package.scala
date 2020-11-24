@@ -2,9 +2,10 @@ package typings.activexMsforms.MSForms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object EventHelperTypes {
+  
   type ContainerBeforeDragOverArgNames = js.Tuple8[
     typings.activexMsforms.activexMsformsStrings.Cancel, 
     typings.activexMsforms.activexMsformsStrings.Control, 
@@ -15,6 +16,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type ContainerBeforeDropOrPasteArgNames = js.Tuple8[
     typings.activexMsforms.activexMsformsStrings.Cancel, 
     typings.activexMsforms.activexMsformsStrings.Control, 
@@ -25,6 +27,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type ContainerScrollArgNames = js.Tuple6[
     typings.activexMsforms.activexMsformsStrings.ActionX, 
     typings.activexMsforms.activexMsformsStrings.ActionY, 
@@ -33,6 +36,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.ActualDx, 
     typings.activexMsforms.activexMsformsStrings.ActualDy
   ]
+  
   type ControlBeforeDragOverArgNames = js.Tuple7[
     typings.activexMsforms.activexMsformsStrings.Cancel, 
     typings.activexMsforms.activexMsformsStrings.Data, 
@@ -42,6 +46,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type ControlBeforeDropOrPasteArgNames = js.Tuple7[
     typings.activexMsforms.activexMsformsStrings.Cancel, 
     typings.activexMsforms.activexMsformsStrings.Action, 
@@ -51,6 +56,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type ErrorArgNames = js.Tuple7[
     typings.activexMsforms.activexMsformsStrings.Number, 
     typings.activexMsforms.activexMsformsStrings.Description, 
@@ -60,6 +66,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.HelpContext, 
     typings.activexMsforms.activexMsformsStrings.CancelDisplay
   ]
+  
   type MultiPageBeforeDragOverArgNames = js.Tuple9[
     typings.activexMsforms.activexMsformsStrings.Index, 
     typings.activexMsforms.activexMsformsStrings.Cancel, 
@@ -71,6 +78,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type MultiPageBeforeDropOrPasteArgNames = js.Tuple9[
     typings.activexMsforms.activexMsformsStrings.Index, 
     typings.activexMsforms.activexMsformsStrings.Cancel, 
@@ -82,6 +90,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type MultiPageErrorArgNames = js.Tuple8[
     typings.activexMsforms.activexMsformsStrings.Index, 
     typings.activexMsforms.activexMsformsStrings.Number, 
@@ -92,6 +101,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.HelpContext, 
     typings.activexMsforms.activexMsformsStrings.CancelDisplay
   ]
+  
   type MultiPageScrollArgNames = js.Tuple7[
     typings.activexMsforms.activexMsformsStrings.Index, 
     typings.activexMsforms.activexMsformsStrings.ActionX, 
@@ -101,6 +111,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.ActualDx, 
     typings.activexMsforms.activexMsformsStrings.ActualDy
   ]
+  
   type TabStripBeforeDragOverArgNames = js.Tuple8[
     typings.activexMsforms.activexMsformsStrings.Index, 
     typings.activexMsforms.activexMsformsStrings.Cancel, 
@@ -111,6 +122,7 @@ package object EventHelperTypes {
     typings.activexMsforms.activexMsformsStrings.Effect, 
     typings.activexMsforms.activexMsformsStrings.Shift
   ]
+  
   type TabStripBeforeDropOrPasteArgNames = js.Tuple8[
     typings.activexMsforms.activexMsformsStrings.Index, 
     typings.activexMsforms.activexMsformsStrings.Cancel, 

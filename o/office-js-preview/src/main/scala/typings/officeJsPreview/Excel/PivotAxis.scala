@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PivotAxis extends js.Object
-
 /**
   *
   * Represents the axis from which to get the PivotItems.
@@ -16,6 +15,7 @@ sealed trait PivotAxis extends js.Object
 @JSGlobal("Excel.PivotAxis")
 @js.native
 object PivotAxis extends js.Object {
+  
   /**
     * The column axis.
     *
@@ -50,6 +50,4 @@ object PivotAxis extends js.Object {
     */
   @js.native
   sealed trait unknown extends PivotAxis
-  
 }
-

@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjColumn used for scriptable list column.
@@ -19,6 +19,7 @@ trait nlobjColumn
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * add a URL parameter (optionally defined per row) to this column's URL.
     *
@@ -36,6 +37,7 @@ Instantiable0[js.Any] {
     */
   def addParamToURL(param: String, value: String): Unit = js.native
   def addParamToURL(param: String, value: String, perRow: Boolean): Unit = js.native
+  
   /**
     * set the header name for this column.
     *
@@ -48,6 +50,7 @@ Instantiable0[js.Any] {
     * @param label
     */
   def setLabel(label: String): Unit = js.native
+  
   /**
     * set the base URL (optionally defined per row) for this column.
     *
@@ -63,4 +66,3 @@ Instantiable0[js.Any] {
     */
   def setURL(value: String, perRow: Boolean): Unit = js.native
 }
-

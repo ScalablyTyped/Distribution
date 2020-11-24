@@ -10,7 +10,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
@@ -23,23 +23,29 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def CURRENCY: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def DATE: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def DATE_TIME: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def FIXED_NUMBER: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def FRACTION_NUMBER: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def PERCENT_NUMBER: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def SCIENTIFIC_NUMBER: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def TIME: `2` = 2.asInstanceOf[`2`]
 }
-

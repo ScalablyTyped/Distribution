@@ -11,8 +11,8 @@ WebDriverJS adapter for Jasmine2.
 | Full name          | jasminewd2 |
 | Keywords           | test, testing, webdriver, webdriverjs, selenium, jasmine |
 | # releases         | 1 |
-| # dependents       | 15 |
-| # downloads        | 42572026 |
+| # dependents       | 17 |
+| # downloads        | 54073281 |
 | # stars            | 0 |
 
 ## Links

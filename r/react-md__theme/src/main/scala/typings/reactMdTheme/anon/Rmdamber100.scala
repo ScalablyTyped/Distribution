@@ -2,269 +2,525 @@ package typings.reactMdTheme.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Rmdamber100 extends js.Object {
+  
   var `rmd-amber-100`: String = js.native
+  
   var `rmd-amber-200`: String = js.native
+  
   var `rmd-amber-300`: String = js.native
+  
   var `rmd-amber-400`: String = js.native
+  
   var `rmd-amber-50`: String = js.native
+  
   var `rmd-amber-500`: String = js.native
+  
   var `rmd-amber-600`: String = js.native
+  
   var `rmd-amber-700`: String = js.native
+  
   var `rmd-amber-800`: String = js.native
+  
   var `rmd-amber-900`: String = js.native
+  
   var `rmd-amber-a-100`: String = js.native
+  
   var `rmd-amber-a-200`: String = js.native
+  
   var `rmd-amber-a-400`: String = js.native
+  
   var `rmd-amber-a-700`: String = js.native
+  
   var `rmd-black-base`: String = js.native
+  
   var `rmd-blue-100`: String = js.native
+  
   var `rmd-blue-200`: String = js.native
+  
   var `rmd-blue-300`: String = js.native
+  
   var `rmd-blue-400`: String = js.native
+  
   var `rmd-blue-50`: String = js.native
+  
   var `rmd-blue-500`: String = js.native
+  
   var `rmd-blue-600`: String = js.native
+  
   var `rmd-blue-700`: String = js.native
+  
   var `rmd-blue-800`: String = js.native
+  
   var `rmd-blue-900`: String = js.native
+  
   var `rmd-blue-a-100`: String = js.native
+  
   var `rmd-blue-a-200`: String = js.native
+  
   var `rmd-blue-a-400`: String = js.native
+  
   var `rmd-blue-a-700`: String = js.native
+  
   var `rmd-blue-grey-100`: String = js.native
+  
   var `rmd-blue-grey-200`: String = js.native
+  
   var `rmd-blue-grey-300`: String = js.native
+  
   var `rmd-blue-grey-400`: String = js.native
+  
   var `rmd-blue-grey-50`: String = js.native
+  
   var `rmd-blue-grey-500`: String = js.native
+  
   var `rmd-blue-grey-600`: String = js.native
+  
   var `rmd-blue-grey-700`: String = js.native
+  
   var `rmd-blue-grey-800`: String = js.native
+  
   var `rmd-blue-grey-900`: String = js.native
+  
   var `rmd-brown-100`: String = js.native
+  
   var `rmd-brown-200`: String = js.native
+  
   var `rmd-brown-300`: String = js.native
+  
   var `rmd-brown-400`: String = js.native
+  
   var `rmd-brown-50`: String = js.native
+  
   var `rmd-brown-500`: String = js.native
+  
   var `rmd-brown-600`: String = js.native
+  
   var `rmd-brown-700`: String = js.native
+  
   var `rmd-brown-800`: String = js.native
+  
   var `rmd-brown-900`: String = js.native
+  
   var `rmd-cyan-100`: String = js.native
+  
   var `rmd-cyan-200`: String = js.native
+  
   var `rmd-cyan-300`: String = js.native
+  
   var `rmd-cyan-400`: String = js.native
+  
   var `rmd-cyan-50`: String = js.native
+  
   var `rmd-cyan-500`: String = js.native
+  
   var `rmd-cyan-600`: String = js.native
+  
   var `rmd-cyan-700`: String = js.native
+  
   var `rmd-cyan-800`: String = js.native
+  
   var `rmd-cyan-900`: String = js.native
+  
   var `rmd-cyan-a-100`: String = js.native
+  
   var `rmd-cyan-a-200`: String = js.native
+  
   var `rmd-cyan-a-400`: String = js.native
+  
   var `rmd-cyan-a-700`: String = js.native
+  
   var `rmd-deep-orange-100`: String = js.native
+  
   var `rmd-deep-orange-200`: String = js.native
+  
   var `rmd-deep-orange-300`: String = js.native
+  
   var `rmd-deep-orange-400`: String = js.native
+  
   var `rmd-deep-orange-50`: String = js.native
+  
   var `rmd-deep-orange-500`: String = js.native
+  
   var `rmd-deep-orange-600`: String = js.native
+  
   var `rmd-deep-orange-700`: String = js.native
+  
   var `rmd-deep-orange-800`: String = js.native
+  
   var `rmd-deep-orange-900`: String = js.native
+  
   var `rmd-deep-orange-a-100`: String = js.native
+  
   var `rmd-deep-orange-a-200`: String = js.native
+  
   var `rmd-deep-orange-a-400`: String = js.native
+  
   var `rmd-deep-orange-a-700`: String = js.native
+  
   var `rmd-deep-purple-100`: String = js.native
+  
   var `rmd-deep-purple-200`: String = js.native
+  
   var `rmd-deep-purple-300`: String = js.native
+  
   var `rmd-deep-purple-400`: String = js.native
+  
   var `rmd-deep-purple-50`: String = js.native
+  
   var `rmd-deep-purple-500`: String = js.native
+  
   var `rmd-deep-purple-600`: String = js.native
+  
   var `rmd-deep-purple-700`: String = js.native
+  
   var `rmd-deep-purple-800`: String = js.native
+  
   var `rmd-deep-purple-900`: String = js.native
+  
   var `rmd-deep-purple-a-100`: String = js.native
+  
   var `rmd-deep-purple-a-200`: String = js.native
+  
   var `rmd-deep-purple-a-400`: String = js.native
+  
   var `rmd-deep-purple-a-700`: String = js.native
+  
   var `rmd-green-100`: String = js.native
+  
   var `rmd-green-200`: String = js.native
+  
   var `rmd-green-300`: String = js.native
+  
   var `rmd-green-400`: String = js.native
+  
   var `rmd-green-50`: String = js.native
+  
   var `rmd-green-500`: String = js.native
+  
   var `rmd-green-600`: String = js.native
+  
   var `rmd-green-700`: String = js.native
+  
   var `rmd-green-800`: String = js.native
+  
   var `rmd-green-900`: String = js.native
+  
   var `rmd-green-a-100`: String = js.native
+  
   var `rmd-green-a-200`: String = js.native
+  
   var `rmd-green-a-400`: String = js.native
+  
   var `rmd-green-a-700`: String = js.native
+  
   var `rmd-grey-100`: String = js.native
+  
   var `rmd-grey-200`: String = js.native
+  
   var `rmd-grey-300`: String = js.native
+  
   var `rmd-grey-400`: String = js.native
+  
   var `rmd-grey-50`: String = js.native
+  
   var `rmd-grey-500`: String = js.native
+  
   var `rmd-grey-600`: String = js.native
+  
   var `rmd-grey-700`: String = js.native
+  
   var `rmd-grey-800`: String = js.native
+  
   var `rmd-grey-900`: String = js.native
+  
   var `rmd-indigo-100`: String = js.native
+  
   var `rmd-indigo-200`: String = js.native
+  
   var `rmd-indigo-300`: String = js.native
+  
   var `rmd-indigo-400`: String = js.native
+  
   var `rmd-indigo-50`: String = js.native
+  
   var `rmd-indigo-500`: String = js.native
+  
   var `rmd-indigo-600`: String = js.native
+  
   var `rmd-indigo-700`: String = js.native
+  
   var `rmd-indigo-800`: String = js.native
+  
   var `rmd-indigo-900`: String = js.native
+  
   var `rmd-indigo-a-100`: String = js.native
+  
   var `rmd-indigo-a-200`: String = js.native
+  
   var `rmd-indigo-a-400`: String = js.native
+  
   var `rmd-indigo-a-700`: String = js.native
+  
   var `rmd-light-blue-100`: String = js.native
+  
   var `rmd-light-blue-200`: String = js.native
+  
   var `rmd-light-blue-300`: String = js.native
+  
   var `rmd-light-blue-400`: String = js.native
+  
   var `rmd-light-blue-50`: String = js.native
+  
   var `rmd-light-blue-500`: String = js.native
+  
   var `rmd-light-blue-600`: String = js.native
+  
   var `rmd-light-blue-700`: String = js.native
+  
   var `rmd-light-blue-800`: String = js.native
+  
   var `rmd-light-blue-900`: String = js.native
+  
   var `rmd-light-blue-a-100`: String = js.native
+  
   var `rmd-light-blue-a-200`: String = js.native
+  
   var `rmd-light-blue-a-400`: String = js.native
+  
   var `rmd-light-blue-a-700`: String = js.native
+  
   var `rmd-light-green-100`: String = js.native
+  
   var `rmd-light-green-200`: String = js.native
+  
   var `rmd-light-green-300`: String = js.native
+  
   var `rmd-light-green-400`: String = js.native
+  
   var `rmd-light-green-50`: String = js.native
+  
   var `rmd-light-green-500`: String = js.native
+  
   var `rmd-light-green-600`: String = js.native
+  
   var `rmd-light-green-700`: String = js.native
+  
   var `rmd-light-green-800`: String = js.native
+  
   var `rmd-light-green-900`: String = js.native
+  
   var `rmd-light-green-a-100`: String = js.native
+  
   var `rmd-light-green-a-200`: String = js.native
+  
   var `rmd-light-green-a-400`: String = js.native
+  
   var `rmd-light-green-a-700`: String = js.native
+  
   var `rmd-lime-100`: String = js.native
+  
   var `rmd-lime-200`: String = js.native
+  
   var `rmd-lime-300`: String = js.native
+  
   var `rmd-lime-400`: String = js.native
+  
   var `rmd-lime-50`: String = js.native
+  
   var `rmd-lime-500`: String = js.native
+  
   var `rmd-lime-600`: String = js.native
+  
   var `rmd-lime-700`: String = js.native
+  
   var `rmd-lime-800`: String = js.native
+  
   var `rmd-lime-900`: String = js.native
+  
   var `rmd-lime-a-100`: String = js.native
+  
   var `rmd-lime-a-200`: String = js.native
+  
   var `rmd-lime-a-400`: String = js.native
+  
   var `rmd-lime-a-700`: String = js.native
+  
   var `rmd-orange-100`: String = js.native
+  
   var `rmd-orange-200`: String = js.native
+  
   var `rmd-orange-300`: String = js.native
+  
   var `rmd-orange-400`: String = js.native
+  
   var `rmd-orange-50`: String = js.native
+  
   var `rmd-orange-500`: String = js.native
+  
   var `rmd-orange-600`: String = js.native
+  
   var `rmd-orange-700`: String = js.native
+  
   var `rmd-orange-800`: String = js.native
+  
   var `rmd-orange-900`: String = js.native
+  
   var `rmd-orange-a-100`: String = js.native
+  
   var `rmd-orange-a-200`: String = js.native
+  
   var `rmd-orange-a-400`: String = js.native
+  
   var `rmd-orange-a-700`: String = js.native
+  
   var `rmd-pink-100`: String = js.native
+  
   var `rmd-pink-200`: String = js.native
+  
   var `rmd-pink-300`: String = js.native
+  
   var `rmd-pink-400`: String = js.native
+  
   var `rmd-pink-50`: String = js.native
+  
   var `rmd-pink-500`: String = js.native
+  
   var `rmd-pink-600`: String = js.native
+  
   var `rmd-pink-700`: String = js.native
+  
   var `rmd-pink-800`: String = js.native
+  
   var `rmd-pink-900`: String = js.native
+  
   var `rmd-pink-a-100`: String = js.native
+  
   var `rmd-pink-a-200`: String = js.native
+  
   var `rmd-pink-a-400`: String = js.native
+  
   var `rmd-pink-a-700`: String = js.native
+  
   var `rmd-purple-100`: String = js.native
+  
   var `rmd-purple-200`: String = js.native
+  
   var `rmd-purple-300`: String = js.native
+  
   var `rmd-purple-400`: String = js.native
+  
   var `rmd-purple-50`: String = js.native
+  
   var `rmd-purple-500`: String = js.native
+  
   var `rmd-purple-600`: String = js.native
+  
   var `rmd-purple-700`: String = js.native
+  
   var `rmd-purple-800`: String = js.native
+  
   var `rmd-purple-900`: String = js.native
+  
   var `rmd-purple-a-100`: String = js.native
+  
   var `rmd-purple-a-200`: String = js.native
+  
   var `rmd-purple-a-400`: String = js.native
+  
   var `rmd-purple-a-700`: String = js.native
+  
   var `rmd-red-100`: String = js.native
+  
   var `rmd-red-200`: String = js.native
+  
   var `rmd-red-300`: String = js.native
+  
   var `rmd-red-400`: String = js.native
+  
   var `rmd-red-50`: String = js.native
+  
   var `rmd-red-500`: String = js.native
+  
   var `rmd-red-600`: String = js.native
+  
   var `rmd-red-700`: String = js.native
+  
   var `rmd-red-800`: String = js.native
+  
   var `rmd-red-900`: String = js.native
+  
   var `rmd-red-a-100`: String = js.native
+  
   var `rmd-red-a-200`: String = js.native
+  
   var `rmd-red-a-400`: String = js.native
+  
   var `rmd-red-a-700`: String = js.native
+  
   var `rmd-teal-100`: String = js.native
+  
   var `rmd-teal-200`: String = js.native
+  
   var `rmd-teal-300`: String = js.native
+  
   var `rmd-teal-400`: String = js.native
+  
   var `rmd-teal-50`: String = js.native
+  
   var `rmd-teal-500`: String = js.native
+  
   var `rmd-teal-600`: String = js.native
+  
   var `rmd-teal-700`: String = js.native
+  
   var `rmd-teal-800`: String = js.native
+  
   var `rmd-teal-900`: String = js.native
+  
   var `rmd-teal-a-100`: String = js.native
+  
   var `rmd-teal-a-200`: String = js.native
+  
   var `rmd-teal-a-400`: String = js.native
+  
   var `rmd-teal-a-700`: String = js.native
+  
   var `rmd-white-base`: String = js.native
+  
   var `rmd-yellow-100`: String = js.native
+  
   var `rmd-yellow-200`: String = js.native
+  
   var `rmd-yellow-300`: String = js.native
+  
   var `rmd-yellow-400`: String = js.native
+  
   var `rmd-yellow-50`: String = js.native
+  
   var `rmd-yellow-500`: String = js.native
+  
   var `rmd-yellow-600`: String = js.native
+  
   var `rmd-yellow-700`: String = js.native
+  
   var `rmd-yellow-800`: String = js.native
+  
   var `rmd-yellow-900`: String = js.native
+  
   var `rmd-yellow-a-100`: String = js.native
+  
   var `rmd-yellow-a-200`: String = js.native
+  
   var `rmd-yellow-a-400`: String = js.native
+  
   var `rmd-yellow-a-700`: String = js.native
 }
-
 object Rmdamber100 {
+  
   @scala.inline
   def apply(
     `rmd-amber-100`: String,
@@ -779,530 +1035,788 @@ object Rmdamber100 {
     __obj.updateDynamic("rmd-yellow-a-200")(`rmd-yellow-a-200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rmdamber100]
   }
+  
   @scala.inline
   implicit class Rmdamber100Ops[Self <: Rmdamber100] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def `setRmd-amber-100`(value: String): Self = this.set("rmd-amber-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-200`(value: String): Self = this.set("rmd-amber-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-300`(value: String): Self = this.set("rmd-amber-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-400`(value: String): Self = this.set("rmd-amber-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-50`(value: String): Self = this.set("rmd-amber-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-500`(value: String): Self = this.set("rmd-amber-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-600`(value: String): Self = this.set("rmd-amber-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-700`(value: String): Self = this.set("rmd-amber-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-800`(value: String): Self = this.set("rmd-amber-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-900`(value: String): Self = this.set("rmd-amber-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-a-100`(value: String): Self = this.set("rmd-amber-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-a-200`(value: String): Self = this.set("rmd-amber-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-a-400`(value: String): Self = this.set("rmd-amber-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-amber-a-700`(value: String): Self = this.set("rmd-amber-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-black-base`(value: String): Self = this.set("rmd-black-base", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-100`(value: String): Self = this.set("rmd-blue-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-200`(value: String): Self = this.set("rmd-blue-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-300`(value: String): Self = this.set("rmd-blue-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-400`(value: String): Self = this.set("rmd-blue-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-50`(value: String): Self = this.set("rmd-blue-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-500`(value: String): Self = this.set("rmd-blue-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-600`(value: String): Self = this.set("rmd-blue-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-700`(value: String): Self = this.set("rmd-blue-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-800`(value: String): Self = this.set("rmd-blue-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-900`(value: String): Self = this.set("rmd-blue-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-a-100`(value: String): Self = this.set("rmd-blue-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-a-200`(value: String): Self = this.set("rmd-blue-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-a-400`(value: String): Self = this.set("rmd-blue-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-a-700`(value: String): Self = this.set("rmd-blue-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-100`(value: String): Self = this.set("rmd-blue-grey-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-200`(value: String): Self = this.set("rmd-blue-grey-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-300`(value: String): Self = this.set("rmd-blue-grey-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-400`(value: String): Self = this.set("rmd-blue-grey-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-50`(value: String): Self = this.set("rmd-blue-grey-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-500`(value: String): Self = this.set("rmd-blue-grey-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-600`(value: String): Self = this.set("rmd-blue-grey-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-700`(value: String): Self = this.set("rmd-blue-grey-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-800`(value: String): Self = this.set("rmd-blue-grey-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-blue-grey-900`(value: String): Self = this.set("rmd-blue-grey-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-100`(value: String): Self = this.set("rmd-brown-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-200`(value: String): Self = this.set("rmd-brown-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-300`(value: String): Self = this.set("rmd-brown-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-400`(value: String): Self = this.set("rmd-brown-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-50`(value: String): Self = this.set("rmd-brown-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-500`(value: String): Self = this.set("rmd-brown-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-600`(value: String): Self = this.set("rmd-brown-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-700`(value: String): Self = this.set("rmd-brown-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-800`(value: String): Self = this.set("rmd-brown-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-brown-900`(value: String): Self = this.set("rmd-brown-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-100`(value: String): Self = this.set("rmd-cyan-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-200`(value: String): Self = this.set("rmd-cyan-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-300`(value: String): Self = this.set("rmd-cyan-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-400`(value: String): Self = this.set("rmd-cyan-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-50`(value: String): Self = this.set("rmd-cyan-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-500`(value: String): Self = this.set("rmd-cyan-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-600`(value: String): Self = this.set("rmd-cyan-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-700`(value: String): Self = this.set("rmd-cyan-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-800`(value: String): Self = this.set("rmd-cyan-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-900`(value: String): Self = this.set("rmd-cyan-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-a-100`(value: String): Self = this.set("rmd-cyan-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-a-200`(value: String): Self = this.set("rmd-cyan-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-a-400`(value: String): Self = this.set("rmd-cyan-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-cyan-a-700`(value: String): Self = this.set("rmd-cyan-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-100`(value: String): Self = this.set("rmd-deep-orange-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-200`(value: String): Self = this.set("rmd-deep-orange-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-300`(value: String): Self = this.set("rmd-deep-orange-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-400`(value: String): Self = this.set("rmd-deep-orange-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-50`(value: String): Self = this.set("rmd-deep-orange-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-500`(value: String): Self = this.set("rmd-deep-orange-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-600`(value: String): Self = this.set("rmd-deep-orange-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-700`(value: String): Self = this.set("rmd-deep-orange-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-800`(value: String): Self = this.set("rmd-deep-orange-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-900`(value: String): Self = this.set("rmd-deep-orange-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-a-100`(value: String): Self = this.set("rmd-deep-orange-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-a-200`(value: String): Self = this.set("rmd-deep-orange-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-a-400`(value: String): Self = this.set("rmd-deep-orange-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-orange-a-700`(value: String): Self = this.set("rmd-deep-orange-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-100`(value: String): Self = this.set("rmd-deep-purple-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-200`(value: String): Self = this.set("rmd-deep-purple-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-300`(value: String): Self = this.set("rmd-deep-purple-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-400`(value: String): Self = this.set("rmd-deep-purple-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-50`(value: String): Self = this.set("rmd-deep-purple-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-500`(value: String): Self = this.set("rmd-deep-purple-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-600`(value: String): Self = this.set("rmd-deep-purple-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-700`(value: String): Self = this.set("rmd-deep-purple-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-800`(value: String): Self = this.set("rmd-deep-purple-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-900`(value: String): Self = this.set("rmd-deep-purple-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-a-100`(value: String): Self = this.set("rmd-deep-purple-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-a-200`(value: String): Self = this.set("rmd-deep-purple-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-a-400`(value: String): Self = this.set("rmd-deep-purple-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-deep-purple-a-700`(value: String): Self = this.set("rmd-deep-purple-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-100`(value: String): Self = this.set("rmd-green-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-200`(value: String): Self = this.set("rmd-green-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-300`(value: String): Self = this.set("rmd-green-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-400`(value: String): Self = this.set("rmd-green-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-50`(value: String): Self = this.set("rmd-green-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-500`(value: String): Self = this.set("rmd-green-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-600`(value: String): Self = this.set("rmd-green-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-700`(value: String): Self = this.set("rmd-green-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-800`(value: String): Self = this.set("rmd-green-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-900`(value: String): Self = this.set("rmd-green-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-a-100`(value: String): Self = this.set("rmd-green-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-a-200`(value: String): Self = this.set("rmd-green-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-a-400`(value: String): Self = this.set("rmd-green-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-green-a-700`(value: String): Self = this.set("rmd-green-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-100`(value: String): Self = this.set("rmd-grey-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-200`(value: String): Self = this.set("rmd-grey-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-300`(value: String): Self = this.set("rmd-grey-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-400`(value: String): Self = this.set("rmd-grey-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-50`(value: String): Self = this.set("rmd-grey-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-500`(value: String): Self = this.set("rmd-grey-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-600`(value: String): Self = this.set("rmd-grey-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-700`(value: String): Self = this.set("rmd-grey-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-800`(value: String): Self = this.set("rmd-grey-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-grey-900`(value: String): Self = this.set("rmd-grey-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-100`(value: String): Self = this.set("rmd-indigo-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-200`(value: String): Self = this.set("rmd-indigo-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-300`(value: String): Self = this.set("rmd-indigo-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-400`(value: String): Self = this.set("rmd-indigo-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-50`(value: String): Self = this.set("rmd-indigo-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-500`(value: String): Self = this.set("rmd-indigo-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-600`(value: String): Self = this.set("rmd-indigo-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-700`(value: String): Self = this.set("rmd-indigo-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-800`(value: String): Self = this.set("rmd-indigo-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-900`(value: String): Self = this.set("rmd-indigo-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-a-100`(value: String): Self = this.set("rmd-indigo-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-a-200`(value: String): Self = this.set("rmd-indigo-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-a-400`(value: String): Self = this.set("rmd-indigo-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-indigo-a-700`(value: String): Self = this.set("rmd-indigo-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-100`(value: String): Self = this.set("rmd-light-blue-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-200`(value: String): Self = this.set("rmd-light-blue-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-300`(value: String): Self = this.set("rmd-light-blue-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-400`(value: String): Self = this.set("rmd-light-blue-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-50`(value: String): Self = this.set("rmd-light-blue-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-500`(value: String): Self = this.set("rmd-light-blue-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-600`(value: String): Self = this.set("rmd-light-blue-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-700`(value: String): Self = this.set("rmd-light-blue-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-800`(value: String): Self = this.set("rmd-light-blue-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-900`(value: String): Self = this.set("rmd-light-blue-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-a-100`(value: String): Self = this.set("rmd-light-blue-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-a-200`(value: String): Self = this.set("rmd-light-blue-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-a-400`(value: String): Self = this.set("rmd-light-blue-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-blue-a-700`(value: String): Self = this.set("rmd-light-blue-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-100`(value: String): Self = this.set("rmd-light-green-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-200`(value: String): Self = this.set("rmd-light-green-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-300`(value: String): Self = this.set("rmd-light-green-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-400`(value: String): Self = this.set("rmd-light-green-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-50`(value: String): Self = this.set("rmd-light-green-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-500`(value: String): Self = this.set("rmd-light-green-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-600`(value: String): Self = this.set("rmd-light-green-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-700`(value: String): Self = this.set("rmd-light-green-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-800`(value: String): Self = this.set("rmd-light-green-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-900`(value: String): Self = this.set("rmd-light-green-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-a-100`(value: String): Self = this.set("rmd-light-green-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-a-200`(value: String): Self = this.set("rmd-light-green-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-a-400`(value: String): Self = this.set("rmd-light-green-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-light-green-a-700`(value: String): Self = this.set("rmd-light-green-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-100`(value: String): Self = this.set("rmd-lime-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-200`(value: String): Self = this.set("rmd-lime-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-300`(value: String): Self = this.set("rmd-lime-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-400`(value: String): Self = this.set("rmd-lime-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-50`(value: String): Self = this.set("rmd-lime-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-500`(value: String): Self = this.set("rmd-lime-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-600`(value: String): Self = this.set("rmd-lime-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-700`(value: String): Self = this.set("rmd-lime-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-800`(value: String): Self = this.set("rmd-lime-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-900`(value: String): Self = this.set("rmd-lime-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-a-100`(value: String): Self = this.set("rmd-lime-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-a-200`(value: String): Self = this.set("rmd-lime-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-a-400`(value: String): Self = this.set("rmd-lime-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-lime-a-700`(value: String): Self = this.set("rmd-lime-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-100`(value: String): Self = this.set("rmd-orange-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-200`(value: String): Self = this.set("rmd-orange-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-300`(value: String): Self = this.set("rmd-orange-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-400`(value: String): Self = this.set("rmd-orange-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-50`(value: String): Self = this.set("rmd-orange-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-500`(value: String): Self = this.set("rmd-orange-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-600`(value: String): Self = this.set("rmd-orange-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-700`(value: String): Self = this.set("rmd-orange-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-800`(value: String): Self = this.set("rmd-orange-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-900`(value: String): Self = this.set("rmd-orange-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-a-100`(value: String): Self = this.set("rmd-orange-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-a-200`(value: String): Self = this.set("rmd-orange-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-a-400`(value: String): Self = this.set("rmd-orange-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-orange-a-700`(value: String): Self = this.set("rmd-orange-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-100`(value: String): Self = this.set("rmd-pink-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-200`(value: String): Self = this.set("rmd-pink-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-300`(value: String): Self = this.set("rmd-pink-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-400`(value: String): Self = this.set("rmd-pink-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-50`(value: String): Self = this.set("rmd-pink-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-500`(value: String): Self = this.set("rmd-pink-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-600`(value: String): Self = this.set("rmd-pink-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-700`(value: String): Self = this.set("rmd-pink-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-800`(value: String): Self = this.set("rmd-pink-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-900`(value: String): Self = this.set("rmd-pink-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-a-100`(value: String): Self = this.set("rmd-pink-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-a-200`(value: String): Self = this.set("rmd-pink-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-a-400`(value: String): Self = this.set("rmd-pink-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-pink-a-700`(value: String): Self = this.set("rmd-pink-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-100`(value: String): Self = this.set("rmd-purple-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-200`(value: String): Self = this.set("rmd-purple-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-300`(value: String): Self = this.set("rmd-purple-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-400`(value: String): Self = this.set("rmd-purple-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-50`(value: String): Self = this.set("rmd-purple-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-500`(value: String): Self = this.set("rmd-purple-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-600`(value: String): Self = this.set("rmd-purple-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-700`(value: String): Self = this.set("rmd-purple-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-800`(value: String): Self = this.set("rmd-purple-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-900`(value: String): Self = this.set("rmd-purple-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-a-100`(value: String): Self = this.set("rmd-purple-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-a-200`(value: String): Self = this.set("rmd-purple-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-a-400`(value: String): Self = this.set("rmd-purple-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-purple-a-700`(value: String): Self = this.set("rmd-purple-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-100`(value: String): Self = this.set("rmd-red-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-200`(value: String): Self = this.set("rmd-red-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-300`(value: String): Self = this.set("rmd-red-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-400`(value: String): Self = this.set("rmd-red-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-50`(value: String): Self = this.set("rmd-red-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-500`(value: String): Self = this.set("rmd-red-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-600`(value: String): Self = this.set("rmd-red-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-700`(value: String): Self = this.set("rmd-red-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-800`(value: String): Self = this.set("rmd-red-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-900`(value: String): Self = this.set("rmd-red-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-a-100`(value: String): Self = this.set("rmd-red-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-a-200`(value: String): Self = this.set("rmd-red-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-a-400`(value: String): Self = this.set("rmd-red-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-red-a-700`(value: String): Self = this.set("rmd-red-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-100`(value: String): Self = this.set("rmd-teal-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-200`(value: String): Self = this.set("rmd-teal-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-300`(value: String): Self = this.set("rmd-teal-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-400`(value: String): Self = this.set("rmd-teal-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-50`(value: String): Self = this.set("rmd-teal-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-500`(value: String): Self = this.set("rmd-teal-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-600`(value: String): Self = this.set("rmd-teal-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-700`(value: String): Self = this.set("rmd-teal-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-800`(value: String): Self = this.set("rmd-teal-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-900`(value: String): Self = this.set("rmd-teal-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-a-100`(value: String): Self = this.set("rmd-teal-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-a-200`(value: String): Self = this.set("rmd-teal-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-a-400`(value: String): Self = this.set("rmd-teal-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-teal-a-700`(value: String): Self = this.set("rmd-teal-a-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-white-base`(value: String): Self = this.set("rmd-white-base", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-100`(value: String): Self = this.set("rmd-yellow-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-200`(value: String): Self = this.set("rmd-yellow-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-300`(value: String): Self = this.set("rmd-yellow-300", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-400`(value: String): Self = this.set("rmd-yellow-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-50`(value: String): Self = this.set("rmd-yellow-50", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-500`(value: String): Self = this.set("rmd-yellow-500", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-600`(value: String): Self = this.set("rmd-yellow-600", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-700`(value: String): Self = this.set("rmd-yellow-700", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-800`(value: String): Self = this.set("rmd-yellow-800", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-900`(value: String): Self = this.set("rmd-yellow-900", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-a-100`(value: String): Self = this.set("rmd-yellow-a-100", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-a-200`(value: String): Self = this.set("rmd-yellow-a-200", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-a-400`(value: String): Self = this.set("rmd-yellow-a-400", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setRmd-yellow-a-700`(value: String): Self = this.set("rmd-yellow-a-700", value.asInstanceOf[js.Any])
   }
-  
 }
-

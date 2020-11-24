@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Style")
 @js.native
 class ResourceStyle protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fusiontables.style.delete
     * @desc Deletes a style.
@@ -38,6 +40,7 @@ class ResourceStyle protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceStyleDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStyleDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * fusiontables.style.get
     * @desc Gets a specific style.
@@ -67,6 +70,7 @@ class ResourceStyle protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStyleSetting]
   ): Unit = js.native
+  
   /**
     * fusiontables.style.insert
     * @desc Adds a new style for the table.
@@ -96,6 +100,7 @@ class ResourceStyle protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStyleSetting]
   ): Unit = js.native
+  
   /**
     * fusiontables.style.list
     * @desc Retrieves a list of styles.
@@ -126,6 +131,7 @@ class ResourceStyle protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStyleSettingList]
   ): Unit = js.native
+  
   /**
     * fusiontables.style.patch
     * @desc Updates an existing style. This method supports patch semantics.
@@ -156,6 +162,7 @@ class ResourceStyle protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStyleSetting]
   ): Unit = js.native
+  
   /**
     * fusiontables.style.update
     * @desc Updates an existing style.
@@ -187,4 +194,3 @@ class ResourceStyle protected () extends js.Object {
     callback: BodyResponseCallback[SchemaStyleSetting]
   ): Unit = js.native
 }
-

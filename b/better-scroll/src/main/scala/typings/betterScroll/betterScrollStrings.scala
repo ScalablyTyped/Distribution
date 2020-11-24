@@ -2,9 +2,43 @@ package typings.betterScroll
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object betterScrollStrings {
+  
+  @scala.inline
+  def beforeScrollStart: beforeScrollStart = "beforeScrollStart".asInstanceOf[beforeScrollStart]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def flick: flick = "flick".asInstanceOf[flick]
+  
+  @scala.inline
+  def pullingDown: pullingDown = "pullingDown".asInstanceOf[pullingDown]
+  
+  @scala.inline
+  def pullingUp: pullingUp = "pullingUp".asInstanceOf[pullingUp]
+  
+  @scala.inline
+  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def scrollCancel: scrollCancel = "scrollCancel".asInstanceOf[scrollCancel]
+  
+  @scala.inline
+  def scrollEnd: scrollEnd = "scrollEnd".asInstanceOf[scrollEnd]
+  
+  @scala.inline
+  def scrollStart: scrollStart = "scrollStart".asInstanceOf[scrollStart]
+  
+  @scala.inline
+  def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
+  
   @js.native
   sealed trait beforeScrollStart extends js.Object
   
@@ -37,28 +71,4 @@ object betterScrollStrings {
   
   @js.native
   sealed trait touchEnd extends js.Object
-  
-  @scala.inline
-  def beforeScrollStart: beforeScrollStart = "beforeScrollStart".asInstanceOf[beforeScrollStart]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def flick: flick = "flick".asInstanceOf[flick]
-  @scala.inline
-  def pullingDown: pullingDown = "pullingDown".asInstanceOf[pullingDown]
-  @scala.inline
-  def pullingUp: pullingUp = "pullingUp".asInstanceOf[pullingUp]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scrollCancel: scrollCancel = "scrollCancel".asInstanceOf[scrollCancel]
-  @scala.inline
-  def scrollEnd: scrollEnd = "scrollEnd".asInstanceOf[scrollEnd]
-  @scala.inline
-  def scrollStart: scrollStart = "scrollStart".asInstanceOf[scrollStart]
-  @scala.inline
-  def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
 }
-

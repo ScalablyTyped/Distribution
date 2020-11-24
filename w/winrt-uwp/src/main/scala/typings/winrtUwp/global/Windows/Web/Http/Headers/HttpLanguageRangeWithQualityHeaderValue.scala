@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Web.Http.Headers
 import typings.winrtUwp.anon.LanguageRangeWithQualityHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents accept language information used in the Accept-Language HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue")
@@ -22,21 +22,21 @@ class HttpLanguageRangeWithQualityHeaderValue protected ()
     */
   def this(languageRange: String, quality: Double) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue")
 @js.native
 object HttpLanguageRangeWithQualityHeaderValue extends js.Object {
+  
   /**
     * Converts a string to an HttpLanguageRangeWithQualityHeaderValue instance.
     * @param input A string that represents the language-range and quality factor information used in the Accept-Encoding HTTP header.
     * @return An HttpLanguageRangeWithQualityHeaderValue instance.
     */
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue = js.native
+  
   /**
     * Determines whether a string is valid HttpLanguageRangeWithQualityHeaderValue information.
     * @param input The string to validate.
     */
   def tryParse(input: String): LanguageRangeWithQualityHeaderValue = js.native
 }
-

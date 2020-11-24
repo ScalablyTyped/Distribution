@@ -8,7 +8,7 @@ import typings.pixiJs.PIXI.Rectangle
 import typings.pixiJs.PIXI.System
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * System plugin to the renderer to manage framebuffers.
@@ -19,25 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FramebufferSystem extends System {
-  /**
-    * A list of managed framebuffers
-    * @member {PIXI.Framebuffer[]} PIXI.systems.FramebufferSystem#managedFramebuffers
-    * @readonly
-    */
-  val managedFramebuffers: js.Array[Framebuffer] = js.native
-  /**
-    * Get the size of the current width and height. Returns object with `width` and `height` values.
-    *
-    * @member {object}
-    * @readonly
-    */
-  val size: js.Any = js.native
-  /**
-    * Framebuffer value that shows that we don't know what is bound
-    * @member {Framebuffer} PIXI.systems.FramebufferSystem#unknownFramebuffer
-    * @readonly
-    */
-  val unknownFramebuffer: Framebuffer = js.native
+  
   /**
     * Bind a framebuffer
     *
@@ -46,6 +28,7 @@ trait FramebufferSystem extends System {
     */
   def bind(framebuffer: Framebuffer): Unit = js.native
   def bind(framebuffer: Framebuffer, frame: Rectangle): Unit = js.native
+  
   /**
     * Only works with WebGL2
     *
@@ -70,6 +53,7 @@ trait FramebufferSystem extends System {
   def blit(framebuffer: Framebuffer, sourcePixels: js.UndefOr[scala.Nothing], destPixels: Rectangle): Unit = js.native
   def blit(framebuffer: Framebuffer, sourcePixels: Rectangle): Unit = js.native
   def blit(framebuffer: Framebuffer, sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
+  
   /**
     * Clear the color of the context
     *
@@ -82,10 +66,12 @@ trait FramebufferSystem extends System {
     */
   def clear(r: Double, g: Double, b: Double, a: Double): Unit = js.native
   def clear(r: Double, g: Double, b: Double, a: Double, mask: BUFFER_BITS): Unit = js.native
+  
   /**
     * Sets up the renderer context and necessary buffers.
     */
   def contextChange(): Unit = js.native
+  
   /**
     * Detects number of samples that is not more than a param but as close to it as possible
     *
@@ -93,12 +79,14 @@ trait FramebufferSystem extends System {
     * @returns {PIXI.MSAA_QUALITY} - recommended number of samples
     */
   def detectSamples(samples: MSAA_QUALITY): MSAA_QUALITY = js.native
+  
   /**
     * Disposes all framebuffers, but not textures bound to them
     * @param {boolean} [contextLost=false] - If context was lost, we suppress all delete function calls
     */
   def disposeAll(): Unit = js.native
   def disposeAll(contextLost: Boolean): Unit = js.native
+  
   /**
     * Disposes framebuffer
     * @param {PIXI.Framebuffer} framebuffer - framebuffer that has to be disposed of
@@ -106,6 +94,7 @@ trait FramebufferSystem extends System {
     */
   def disposeFramebuffer(framebuffer: Framebuffer): Unit = js.native
   def disposeFramebuffer(framebuffer: Framebuffer, contextLost: Boolean): Unit = js.native
+  
   /**
     * Initialize framebuffer for this context
     *
@@ -114,12 +103,21 @@ trait FramebufferSystem extends System {
     * @returns {PIXI.GLFramebuffer} created GLFramebuffer
     */
   /* protected */ def initFramebuffer(framebuffer: Framebuffer): GLFramebuffer = js.native
+  
+  /**
+    * A list of managed framebuffers
+    * @member {PIXI.Framebuffer[]} PIXI.systems.FramebufferSystem#managedFramebuffers
+    * @readonly
+    */
+  val managedFramebuffers: js.Array[Framebuffer] = js.native
+  
   /**
     * resets framebuffer stored state, binds screen framebuffer
     *
     * should be called before renderTexture reset()
     */
   def reset(): Unit = js.native
+  
   /**
     * Resize the framebuffer
     *
@@ -127,6 +125,7 @@ trait FramebufferSystem extends System {
     * @param {PIXI.Framebuffer} framebuffer
     */
   /* protected */ def resizeFramebuffer(framebuffer: Framebuffer): Unit = js.native
+  
   /**
     * Set the WebGLRenderingContext's viewport.
     *
@@ -136,6 +135,22 @@ trait FramebufferSystem extends System {
     * @param {Number} height - Height of viewport
     */
   def setViewport(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  
+  /**
+    * Get the size of the current width and height. Returns object with `width` and `height` values.
+    *
+    * @member {object}
+    * @readonly
+    */
+  val size: js.Any = js.native
+  
+  /**
+    * Framebuffer value that shows that we don't know what is bound
+    * @member {Framebuffer} PIXI.systems.FramebufferSystem#unknownFramebuffer
+    * @readonly
+    */
+  val unknownFramebuffer: Framebuffer = js.native
+  
   /**
     * Update the framebuffer
     *
@@ -144,4 +159,3 @@ trait FramebufferSystem extends System {
     */
   /* protected */ def updateFramebuffer(framebuffer: Framebuffer): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.heremaps.global.H.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the base class for UI controls on the map.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Control ()
   extends typings.heremaps.H.ui.Control
-

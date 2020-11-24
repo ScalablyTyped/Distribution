@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Versions")
 @js.native
 class ResourceAccountsContainersVersions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.create
     * @desc Creates a Container Version.
@@ -46,6 +48,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreateContainerVersionResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.delete
     * @desc Deletes a Container Version.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.get
     * @desc Gets a Container Version.
@@ -109,6 +113,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainerVersion]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.list
     * @desc Lists all Container Versions of a GTM Container.
@@ -143,6 +148,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListContainerVersionsResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.publish
     * @desc Publishes a Container Version.
@@ -177,6 +183,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPublishContainerVersionResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.restore
     * @desc Restores a Container Version. This will overwrite the container's
@@ -213,6 +220,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainerVersion]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.undelete
     * @desc Undeletes a Container Version.
@@ -246,6 +254,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainerVersion]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.versions.update
     * @desc Updates a Container Version.
@@ -282,4 +291,3 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaContainerVersion]
   ): Unit = js.native
 }
-

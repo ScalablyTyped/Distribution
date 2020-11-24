@@ -4,7 +4,7 @@ import typings.luminoWidgets.panelMod.Panel.IOptions
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/panel", "Panel")
 @js.native
@@ -15,10 +15,7 @@ import scala.scalajs.js.annotation._
   */
 class Panel_ () extends Widget {
   def this(options: IOptions) = this()
-  /**
-    * A read-only array of the widgets in the panel.
-    */
-  val widgets: js.Array[Widget] = js.native
+  
   /**
     * Add a widget to the end of the panel.
     *
@@ -28,6 +25,7 @@ class Panel_ () extends Widget {
     * If the widget is already contained in the panel, it will be moved.
     */
   def addWidget(widget: Widget): Unit = js.native
+  
   /**
     * Insert a widget at the specified index.
     *
@@ -39,5 +37,9 @@ class Panel_ () extends Widget {
     * If the widget is already contained in the panel, it will be moved.
     */
   def insertWidget(index: Double, widget: Widget): Unit = js.native
+  
+  /**
+    * A read-only array of the widgets in the panel.
+    */
+  val widgets: js.Array[Widget] = js.native
 }
-

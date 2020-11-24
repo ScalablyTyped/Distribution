@@ -5,11 +5,12 @@ import typings.commangular.commangular.ICommAngularStatic
 import typings.commangular.commangular.ICommandCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
   * Mock dispatch function for testing commands.
   * @param ec an ICommandCall object
@@ -17,6 +18,7 @@ object global extends js.Object {
   *         function should expecte an ICommandInfo parameter.
   */
   def dispatch(ec: ICommandCall, callback: js.Function): Unit = js.native
+  
   /**
     * Extending the angular rootScope to include the dispatch function in all scopes.
     */
@@ -25,6 +27,4 @@ object global extends js.Object {
   
   @js.native
   object commangular extends TopLevel[ICommAngularStatic]
-  
 }
-

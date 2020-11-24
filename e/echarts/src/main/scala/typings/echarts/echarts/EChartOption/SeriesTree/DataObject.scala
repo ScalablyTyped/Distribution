@@ -6,10 +6,11 @@ import typings.echarts.anon.`4`
 import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataObject extends js.Object {
+  
   /**
     * Whether to enable animation.
     *
@@ -19,6 +20,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animation
     */
   var animation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Delay before updating the first animation, which supports
     * callback function for different data to have different animation
@@ -36,6 +38,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Delay before updating animation, which supports callback
     * function for different data to have different animation effect.
@@ -52,6 +55,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
@@ -64,6 +68,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -76,6 +81,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -88,6 +94,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.native
+  
   /**
     * Easing method used for animation.
     *
@@ -97,6 +104,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.native
+  
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger
@@ -108,11 +116,14 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.native
+  
   var children: js.UndefOr[js.Array[DataObject]] = js.native
+  
   /**
     * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis
     */
   var emphasis: js.UndefOr[`4`] = js.native
+  
   /**
     * The style of the node.
     *
@@ -120,6 +131,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.native
+  
   /**
     * The label of the node.
     *
@@ -127,6 +139,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.label
     */
   var label: js.UndefOr[Distance] = js.native
+  
   /**
     * The name of the tree node, used to identify each node.
     *
@@ -134,6 +147,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * tooltip settings in this series data.
     *
@@ -141,6 +155,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-tree.data.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * The value of the node, displayed in the tooltip.
     *
@@ -149,87 +164,120 @@ trait DataObject extends js.Object {
     */
   var value: js.UndefOr[Double] = js.native
 }
-
 object DataObject {
+  
   @scala.inline
   def apply(): DataObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataObject]
   }
+  
   @scala.inline
   implicit class DataObjectOps[Self <: DataObject] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimation: Self = this.set("animation", js.undefined)
+    
     @scala.inline
     def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    
     @scala.inline
     def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    
     @scala.inline
     def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    
     @scala.inline
     def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    
     @scala.inline
     def setChildrenVarargs(value: DataObject*): Self = this.set("children", js.Array(value :_*))
+    
     @scala.inline
     def setChildren(value: js.Array[DataObject]): Self = this.set("children", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteChildren: Self = this.set("children", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: `4`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setLabel(value: Distance): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabel: Self = this.set("label", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValue: Self = this.set("value", js.undefined)
   }
-  
 }
-

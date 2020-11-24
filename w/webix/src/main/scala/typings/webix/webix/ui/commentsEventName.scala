@@ -2,7 +2,7 @@ package typings.webix.webix.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.webix.webixStrings.onAfterAdd
@@ -21,35 +21,47 @@ import scala.scalajs.js.annotation._
   - typings.webix.webixStrings.onViewShow
 */
 trait commentsEventName extends js.Object
-
 object commentsEventName {
+  
   @scala.inline
   def onAfterAdd: typings.webix.webixStrings.onAfterAdd = "onAfterAdd".asInstanceOf[typings.webix.webixStrings.onAfterAdd]
+  
   @scala.inline
   def onAfterDelete: typings.webix.webixStrings.onAfterDelete = "onAfterDelete".asInstanceOf[typings.webix.webixStrings.onAfterDelete]
+  
   @scala.inline
   def onAfterEditStart: typings.webix.webixStrings.onAfterEditStart = "onAfterEditStart".asInstanceOf[typings.webix.webixStrings.onAfterEditStart]
+  
   @scala.inline
   def onAfterLoad: typings.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typings.webix.webixStrings.onAfterLoad]
+  
   @scala.inline
   def onBeforeAdd: typings.webix.webixStrings.onBeforeAdd = "onBeforeAdd".asInstanceOf[typings.webix.webixStrings.onBeforeAdd]
+  
   @scala.inline
   def onBeforeDelete: typings.webix.webixStrings.onBeforeDelete = "onBeforeDelete".asInstanceOf[typings.webix.webixStrings.onBeforeDelete]
+  
   @scala.inline
   def onBeforeEditStart: typings.webix.webixStrings.onBeforeEditStart = "onBeforeEditStart".asInstanceOf[typings.webix.webixStrings.onBeforeEditStart]
+  
   @scala.inline
   def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typings.webix.webixStrings.onBeforeLoad]
+  
   @scala.inline
   def onBeforeMenuAction: typings.webix.webixStrings.onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[typings.webix.webixStrings.onBeforeMenuAction]
+  
   @scala.inline
   def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
+  
   @scala.inline
   def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
+  
   @scala.inline
   def onLoadError: typings.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typings.webix.webixStrings.onLoadError]
+  
   @scala.inline
   def onUserMentioned: typings.webix.webixStrings.onUserMentioned = "onUserMentioned".asInstanceOf[typings.webix.webixStrings.onUserMentioned]
+  
   @scala.inline
   def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
-

@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Email
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email attachment. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailAttachment")
@@ -25,4 +25,3 @@ class EmailAttachment ()
     */
   def this(fileName: String, data: IRandomAccessStreamReference, mimeType: String) = this()
 }
-

@@ -10,9 +10,9 @@ Redis client mock object for unit testing
 | ------------------ | :-------------: |
 | Full name          | redis-mock |
 | Keywords           | redis, redis-mock, mock-redis, redis test, redis mock, redis testing, redis fake, redis-js, redis js, redisjs, redis standalone, redis inmemory, redis memory, in-memory |
-| # releases         | 28 |
-| # dependents       | 11 |
-| # downloads        | 1430786 |
+| # releases         | 19 |
+| # dependents       | 18 |
+| # downloads        | 2716588 |
 | # stars            | 6 |
 
 ## Links

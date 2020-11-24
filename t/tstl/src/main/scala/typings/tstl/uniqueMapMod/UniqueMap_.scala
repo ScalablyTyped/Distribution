@@ -8,15 +8,20 @@ import typings.tstl.uniqueMapMod.UniqueMap.Iterator
 import typings.tstl.uniqueMapMod.UniqueMap.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/base/container/UniqueMap", "UniqueMap")
 @js.native
 abstract class UniqueMap_[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: Iterator[Key, T, Source, Iterator, Reverse] */, Reverse /* <: ReverseIterator[Key, T, Source, Iterator, Reverse] */] () extends MapContainer[Key, T, `true`, Source, Iterator, Reverse] {
+  
   var _Extract_by_iterator: js.Any = js.native
+  
   var _Extract_by_key: js.Any = js.native
+  
   var _Insert_or_assign_with_hint: js.Any = js.native
+  
   var _Insert_or_assign_with_key_value: js.Any = js.native
+  
   /**
     * Extract an element by key.
     *
@@ -32,6 +37,7 @@ abstract class UniqueMap_[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterato
     */
   @JSName("extract")
   def extract_Iterator(pos: Iterator): Iterator = js.native
+  
   /**
     * Get a value.
     *
@@ -39,6 +45,7 @@ abstract class UniqueMap_[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterato
     * @return The value mapped by the key.
     */
   def get(key: Key): T = js.native
+  
   /**
     * Insert or assign an element with hint.
     *
@@ -56,6 +63,7 @@ abstract class UniqueMap_[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterato
     * @return {@link Pair} of an iterator to the newly inserted element and `true`, if the specified *key* doesn't exist, otherwise {@link Pair} of iterator to the ordinary element and `false`.
     */
   def insert_or_assign(key: Key, value: T): Pair[Iterator, Boolean] = js.native
+  
   /**
     * Set a value with key.
     *
@@ -64,4 +72,3 @@ abstract class UniqueMap_[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterato
     */
   def set(key: Key, `val`: T): Unit = js.native
 }
-

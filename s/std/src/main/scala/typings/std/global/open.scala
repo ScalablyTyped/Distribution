@@ -3,11 +3,12 @@ package typings.std.global
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("open")
 @js.native
 object open extends js.Object {
+  
   def apply(): Window | Null = js.native
   def apply(
     url: js.UndefOr[scala.Nothing],
@@ -65,4 +66,3 @@ object open extends js.Object {
     replace: scala.Boolean
   ): Window | Null = js.native
 }
-

@@ -2,16 +2,16 @@ package typings.babylonjs.gradientsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/gradients", "GradientHelper")
 @js.native
 class GradientHelper () extends js.Object
-
 /* static members */
 @JSImport("babylonjs/Misc/gradients", "GradientHelper")
 @js.native
 object GradientHelper extends js.Object {
+  
   /**
     * Gets the current gradient from an array of IValueGradient
     * @param ratio defines the current ratio to get
@@ -24,4 +24,3 @@ object GradientHelper extends js.Object {
     updateFunc: js.Function3[/* current */ IValueGradient, /* next */ IValueGradient, /* scale */ Double, Unit]
   ): Unit = js.native
 }
-

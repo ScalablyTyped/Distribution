@@ -7,10 +7,11 @@ import typings.reactMdTransition.constantsMod.TransitionStage
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TransitionReturnValue[E /* <: HTMLElement */] extends TransitionState {
+  
   /**
     * A dispatch function that cna update the transition state manually. This
     * should really not be used too much unless your transition is for appear
@@ -29,6 +30,7 @@ trait TransitionReturnValue[E /* <: HTMLElement */] extends TransitionState {
     * timing.
     */
   var dispatch: Dispatch[TransitionAction] = js.native
+  
   /**
     * A ref that must be passed to a DOM node for the transition to work. This
     * _technically_ should not need to be passed to a DOM node for non-css
@@ -38,10 +40,10 @@ trait TransitionReturnValue[E /* <: HTMLElement */] extends TransitionState {
     */
   var ref: RefCallback[E] = js.native
 }
-
 object TransitionReturnValue {
+  
   @scala.inline
-  def apply[/* <: typings.std.HTMLElement */ E](
+  def apply[E /* <: HTMLElement */](
     appearing: Boolean,
     dispatch: TransitionAction => Unit,
     ref: /* instance */ E | Null => Unit,
@@ -51,22 +53,26 @@ object TransitionReturnValue {
     val __obj = js.Dynamic.literal(appearing = appearing.asInstanceOf[js.Any], dispatch = js.Any.fromFunction1(dispatch), ref = js.Any.fromFunction1(ref), rendered = rendered.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionReturnValue[E]]
   }
+  
   @scala.inline
-  implicit class TransitionReturnValueOps[Self <: TransitionReturnValue[_], /* <: typings.std.HTMLElement */ E] (val x: Self with TransitionReturnValue[E]) extends AnyVal {
+  implicit class TransitionReturnValueOps[Self <: TransitionReturnValue[_], E /* <: HTMLElement */] (val x: Self with TransitionReturnValue[E]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDispatch(value: TransitionAction => Unit): Self = this.set("dispatch", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRef(value: /* instance */ E | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
   }
-  
 }
-

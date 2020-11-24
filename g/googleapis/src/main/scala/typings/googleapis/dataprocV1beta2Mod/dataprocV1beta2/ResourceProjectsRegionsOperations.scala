@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Regions$Operations")
 @js.native
 class ResourceProjectsRegionsOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.regions.operations.cancel
     * @desc Starts asynchronous cancellation on a long-running operation. The
@@ -49,6 +49,9 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.regions.operations.delete
     * @desc Deletes a long-running operation. This method indicates that the
@@ -80,6 +83,7 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.operations.get
     * @desc Gets the latest state of a long-running operation. Clients can use
@@ -113,6 +117,7 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.operations.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -145,6 +150,7 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -187,6 +193,7 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.operations.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -220,6 +227,7 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.operations.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -257,4 +265,3 @@ class ResourceProjectsRegionsOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

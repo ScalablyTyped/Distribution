@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates a command could not be completed because the target element is
@@ -16,4 +16,3 @@ class ElementNotInteractableError ()
   extends typings.seleniumWebdriver.mod.error.ElementNotInteractableError {
   def this(message: String) = this()
 }
-

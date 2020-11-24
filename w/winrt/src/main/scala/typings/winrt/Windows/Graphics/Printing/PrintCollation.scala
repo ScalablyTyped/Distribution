@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintCollation extends js.Object
-
 @JSGlobal("Windows.Graphics.Printing.PrintCollation")
 @js.native
 object PrintCollation extends js.Object {
+  
   @js.native
   sealed trait collated extends PrintCollation
   
@@ -24,6 +24,4 @@ object PrintCollation extends js.Object {
   
   @js.native
   sealed trait uncollated extends PrintCollation
-  
 }
-

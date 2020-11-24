@@ -6,20 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * The ID of the creative status for which to retrieve a breakdown by
     * creative. See
     * [creative-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/creative-status-codes).
     */
   var creativeStatusId: js.UndefOr[Double] = js.native
+  
   /**
     * Name of the filter set that should be applied to the requested metrics.
     * For example:  - For a bidder-level filter set for bidder 123:
@@ -30,11 +33,13 @@ trait ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList extends S
     * `bidders/123/accounts/456/filterSets/abc`
     */
   var filterSetName: js.UndefOr[String] = js.native
+  
   /**
     * Requested page size. The server may return fewer results than requested.
     * If unspecified, the server will pick an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.native
+  
   /**
     * A token identifying a page of results the server should return.
     * Typically, this is the value of
@@ -43,45 +48,57 @@ trait ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList extends S
     */
   var pageToken: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList {
+  
   @scala.inline
   def apply(): ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList]
   }
+  
   @scala.inline
   implicit class ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesListOps[Self <: ParamsResourceBiddersAccountsFiltersetsFilteredbidsCreativesList] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setCreativeStatusId(value: Double): Self = this.set("creativeStatusId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreativeStatusId: Self = this.set("creativeStatusId", js.undefined)
+    
     @scala.inline
     def setFilterSetName(value: String): Self = this.set("filterSetName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilterSetName: Self = this.set("filterSetName", js.undefined)
+    
     @scala.inline
     def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageSize: Self = this.set("pageSize", js.undefined)
+    
     @scala.inline
     def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageToken: Self = this.set("pageToken", js.undefined)
   }
-  
 }
-

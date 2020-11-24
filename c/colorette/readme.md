@@ -10,9 +10,9 @@ Color your terminal using pure idiomatic JavaScript.
 | ------------------ | :-------------: |
 | Full name          | colorette |
 | Keywords           | colorette, terminal, styles, color, ansi |
-| # releases         | 13 |
-| # dependents       | 133 |
-| # downloads        | 11965594 |
+| # releases         | 8 |
+| # dependents       | 216 |
+| # downloads        | 73248373 |
 | # stars            | 1 |
 
 ## Links

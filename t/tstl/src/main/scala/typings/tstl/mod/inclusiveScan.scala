@@ -6,12 +6,20 @@ import typings.tstl.operationsMod.Operator
 import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "inclusive_scan")
 @js.native
 object inclusiveScan extends js.Object {
+  
   def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
+  def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator]] */](
+    first: InputIterator,
+    last: InputIterator,
+    output: OutputIterator,
+    adder: js.UndefOr[scala.Nothing],
+    init: ValueType[InputIterator]
+  ): OutputIterator = js.native
   def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator]] */](
     first: InputIterator,
     last: InputIterator,
@@ -26,4 +34,3 @@ object inclusiveScan extends js.Object {
     init: ValueType[InputIterator]
   ): OutputIterator = js.native
 }
-

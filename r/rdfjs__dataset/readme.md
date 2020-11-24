@@ -11,8 +11,8 @@ A basic implementation of the RDFJS Dataset
 | Full name          | @rdfjs/dataset |
 | Keywords           | rdf, rdfjs, dataset |
 | # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 753 |
+| # dependents       | 31 |
+| # downloads        | 22239 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Smooth scrolling to an element via selector or node reference
 | ------------------ | :-------------: |
 | Full name          | scroll-to-element |
 | Keywords           | animate, scroll, tween, smooth |
-| # releases         | 4 |
-| # dependents       | 27 |
-| # downloads        | 1152040 |
+| # releases         | 2 |
+| # dependents       | 32 |
+| # downloads        | 1471521 |
 | # stars            | 6 |
 
 ## Links

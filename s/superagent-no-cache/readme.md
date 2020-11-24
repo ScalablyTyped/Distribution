@@ -11,8 +11,8 @@ Plugin for visionmedia/superagent that adds headers to all requests that prevent
 | Full name          | superagent-no-cache |
 | Keywords           | superagent, cache, request, AJAX |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 270651 |
+| # dependents       | 13 |
+| # downloads        | 192917 |
 | # stars            | 0 |
 
 ## Links

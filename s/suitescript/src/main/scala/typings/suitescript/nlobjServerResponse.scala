@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjServerResponse..
@@ -21,6 +21,7 @@ trait nlobjServerResponse
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * return an Array of all headers returned.
     * @return {string[]}
@@ -31,6 +32,7 @@ Instantiable0[js.Any] {
     * @since 2008.1
     */
   def getAllHeaders(): Unit = js.native
+  
   /**
     * return the response body returned.
     * @return {string}
@@ -42,6 +44,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getBody(): js.Any = js.native
+  
   /**
     * return the response code returned.
     * @return {int}
@@ -53,6 +56,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getCode(): String = js.native
+  
   /**
     * return the Content-Type header in response
     * @return {string}
@@ -64,6 +68,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getContentType(): String = js.native
+  
   /**
     * return the nlobjError thrown via a client call to nlapiRequestURL.
     * @return {nlobjError}
@@ -75,6 +80,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getError(): js.Function0[Unit] = js.native
+  
   /**
     * return the value of a header returned.
     * @param {string} name the name of the header to return
@@ -88,6 +94,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getHeader(name: String): String = js.native
+  
   /**
     * return all the values of a header returned.
     * @param {string} name the name of the header to return
@@ -101,4 +108,3 @@ Instantiable0[js.Any] {
     */
   def getHeaders(name: String): Unit = js.native
 }
-

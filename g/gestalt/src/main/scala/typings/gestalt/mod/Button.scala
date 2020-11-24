@@ -1,12 +1,12 @@
 package typings.gestalt.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gestalt", "Button")
 @js.native
-class Button ()
-  extends Component[ButtonProps, js.Any, js.Any]
-
+object Button extends TopLevel[ReactForwardRef[HTMLButtonElement | HTMLAnchorElement, ButtonProps]]

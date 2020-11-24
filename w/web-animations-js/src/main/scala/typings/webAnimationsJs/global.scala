@@ -7,11 +7,12 @@ import typings.std.AnimationEffect
 import typings.std.KeyframeEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class Animation ()
     extends typings.webAnimationsJs.Animation {
@@ -20,24 +21,6 @@ object global extends js.Object {
     def this(effect: Null, timeline: AnimationTimeline) = this()
     def this(effect: AnimationEffect, timeline: AnimationTimeline) = this()
   }
-  
-  @js.native
-  class AnimationPlaybackEvent protected ()
-    extends typings.webAnimationsJs.AnimationPlaybackEvent {
-    def this(`type`: String) = this()
-    def this(`type`: String, eventInitDict: AnimationPlaybackEventInit) = this()
-  }
-  
-  @js.native
-  class GroupEffect protected () extends KeyframeEffect {
-    def this(effects: js.Array[KeyframeEffect]) = this()
-  }
-  
-  @js.native
-  class SequenceEffect protected () extends KeyframeEffect {
-    def this(effects: js.Array[KeyframeEffect]) = this()
-  }
-  
   @js.native
   object Animation
     extends Instantiable0[typings.webAnimationsJs.Animation]
@@ -49,6 +32,12 @@ object global extends js.Object {
         ]
   
   @js.native
+  class AnimationPlaybackEvent protected ()
+    extends typings.webAnimationsJs.AnimationPlaybackEvent {
+    def this(`type`: String) = this()
+    def this(`type`: String, eventInitDict: AnimationPlaybackEventInit) = this()
+  }
+  @js.native
   object AnimationPlaybackEvent
     extends Instantiable1[/* type */ String, typings.webAnimationsJs.AnimationPlaybackEvent]
        with Instantiable2[
@@ -57,5 +46,13 @@ object global extends js.Object {
           typings.webAnimationsJs.AnimationPlaybackEvent
         ]
   
+  @js.native
+  class GroupEffect protected () extends KeyframeEffect {
+    def this(effects: js.Array[KeyframeEffect]) = this()
+  }
+  
+  @js.native
+  class SequenceEffect protected () extends KeyframeEffect {
+    def this(effects: js.Array[KeyframeEffect]) = this()
+  }
 }
-

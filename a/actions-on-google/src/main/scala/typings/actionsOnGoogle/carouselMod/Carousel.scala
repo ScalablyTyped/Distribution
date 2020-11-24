@@ -5,7 +5,7 @@ import typings.actionsOnGoogle.helperHelperMod.Helper
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2OptionValueSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option/carousel", "Carousel")
 @js.native
@@ -16,4 +16,3 @@ class Carousel protected () extends Helper[actionsDotintentDotOPTION, GoogleActi
     */
   def this(options: CarouselOptions) = this()
 }
-

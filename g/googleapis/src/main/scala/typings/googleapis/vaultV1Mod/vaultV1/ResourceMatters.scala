@@ -6,16 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters")
 @js.native
 class ResourceMatters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var exports: ResourceMattersExports = js.native
-  var holds: ResourceMattersHolds = js.native
-  var savedQueries: ResourceMattersSavedqueries = js.native
+  
   /**
     * vault.matters.addPermissions
     * @desc Adds an account as a matter collaborator.
@@ -48,6 +45,7 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMatterPermission]
   ): Unit = js.native
+  
   /**
     * vault.matters.close
     * @desc Closes the specified matter. Returns matter with updated state.
@@ -77,6 +75,9 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCloseMatterResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * vault.matters.create
     * @desc Creates a new matter with the given name and description. The
@@ -107,6 +108,7 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMatter]
   ): Unit = js.native
+  
   /**
     * vault.matters.delete
     * @desc Deletes the specified matter. Returns matter with updated state.
@@ -135,6 +137,9 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMatter]
   ): Unit = js.native
+  
+  var exports: ResourceMattersExports = js.native
+  
   /**
     * vault.matters.get
     * @desc Gets the specified matter.
@@ -164,6 +169,9 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMatter]
   ): Unit = js.native
+  
+  var holds: ResourceMattersHolds = js.native
+  
   /**
     * vault.matters.list
     * @desc Lists matters the user has access to.
@@ -195,6 +203,7 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListMattersResponse]
   ): Unit = js.native
+  
   /**
     * vault.matters.removePermissions
     * @desc Removes an account as a matter collaborator.
@@ -224,6 +233,7 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vault.matters.reopen
     * @desc Reopens the specified matter. Returns matter with updated state.
@@ -253,6 +263,9 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReopenMatterResponse]
   ): Unit = js.native
+  
+  var savedQueries: ResourceMattersSavedqueries = js.native
+  
   /**
     * vault.matters.undelete
     * @desc Undeletes the specified matter. Returns matter with updated state.
@@ -282,6 +295,7 @@ class ResourceMatters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMatter]
   ): Unit = js.native
+  
   /**
     * vault.matters.update
     * @desc Updates the specified matter. This updates only the name and
@@ -314,4 +328,3 @@ class ResourceMatters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMatter]
   ): Unit = js.native
 }
-

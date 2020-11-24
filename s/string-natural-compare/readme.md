@@ -11,8 +11,8 @@ Compare alphanumeric strings the same way a human would, using a natural order a
 | Full name          | string-natural-compare |
 | Keywords           | string, natural, compare, comparison, order, natcmp, strnatcmp, sort, natsort, alphanum, alphanumeric |
 | # releases         | 4 |
-| # dependents       | 31 |
-| # downloads        | 2067657 |
+| # dependents       | 32 |
+| # downloads        | 2890817 |
 | # stars            | 2 |
 
 ## Links

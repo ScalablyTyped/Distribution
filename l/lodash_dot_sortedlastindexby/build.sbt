@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_sortedlastindexby"
-version := "4.6-dt-20200515Z-f1d287"
+version := "4.6-dt-20200515Z-9f2ba7"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

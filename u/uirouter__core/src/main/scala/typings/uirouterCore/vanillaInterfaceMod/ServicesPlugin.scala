@@ -5,13 +5,14 @@ import typings.uirouterCore.coreservicesMod.QLike
 import typings.uirouterCore.interfaceMod.UIRouterPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServicesPlugin extends UIRouterPlugin {
+  
   @JSName("$injector")
   var $injector: InjectorLike = js.native
+  
   @JSName("$q")
   var $q: QLike = js.native
 }
-

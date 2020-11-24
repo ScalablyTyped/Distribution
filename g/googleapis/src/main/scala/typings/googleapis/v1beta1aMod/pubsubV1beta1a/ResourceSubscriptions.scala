@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1beta1a", "pubsub_v1beta1a.Resource$Subscriptions")
 @js.native
 class ResourceSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * pubsub.subscriptions.acknowledge
     * @desc Acknowledges a particular received message: the Pub/Sub system can
@@ -45,6 +45,9 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * pubsub.subscriptions.create
     * @desc Creates a subscription on a given topic for a given subscriber. If
@@ -77,6 +80,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.delete
     * @desc Deletes an existing subscription. All pending messages in the
@@ -107,6 +111,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.get
     * @desc Gets the configuration details of a subscription.
@@ -135,6 +140,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.list
     * @desc Lists matching subscriptions.
@@ -168,6 +174,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSubscriptionsResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.modifyAckDeadline
     * @desc Modifies the Ack deadline for a message received from a pull
@@ -197,6 +204,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.modifyPushConfig
     * @desc Modifies the <code>PushConfig</code> for a specified subscription.
@@ -229,6 +237,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.pull
     * @desc Pulls a single message from the server. If return_immediately is
@@ -261,6 +270,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPullResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.subscriptions.pullBatch
     * @desc Pulls messages from the server. Returns an empty list if there are
@@ -296,4 +306,3 @@ class ResourceSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPullBatchResponse]
   ): Unit = js.native
 }
-

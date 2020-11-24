@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A skin contains data about the bones in a hierarchy that drive a skinned mesh animation.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Skin extends js.Object
-

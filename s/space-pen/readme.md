@@ -11,7 +11,7 @@ Write markup on the final frontier
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 2046755 |
+| # downloads        | 1839760 |
 | # stars            | 1 |
 
 ## Links

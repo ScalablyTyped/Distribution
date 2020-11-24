@@ -1,7 +1,7 @@
 
 # Scala.js typings for multimatch
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Extends `minimatch.match()` with support for multiple patterns
@@ -11,8 +11,8 @@ Extends `minimatch.match()` with support for multiple patterns
 | Full name          | multimatch |
 | Keywords           | expand, find, glob, globbing, globs, match, matcher, minimatch, pattern, patterns, wildcard |
 | # releases         | 3 |
-| # dependents       | 570 |
-| # downloads        | 78896336 |
+| # dependents       | 621 |
+| # downloads        | 116310564 |
 | # stars            | 8 |
 
 ## Links

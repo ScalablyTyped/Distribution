@@ -11,12 +11,12 @@ import typings.winrt.Windows.Web.Syndication.SyndicationCategory
 import typings.winrt.Windows.Web.Syndication.SyndicationFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceCollection extends IResourceCollection
-
 object ResourceCollection {
+  
   @scala.inline
   def apply(
     accepts: IVectorView[String],
@@ -36,4 +36,3 @@ object ResourceCollection {
     __obj.asInstanceOf[ResourceCollection]
   }
 }
-

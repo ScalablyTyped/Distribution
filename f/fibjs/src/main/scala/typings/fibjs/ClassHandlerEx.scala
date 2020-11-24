@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassHandlerEx extends ClassHandler {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,28 @@ trait ClassHandlerEx extends ClassHandler {
     * @type Handler
     */
   var handler: ClassHandler = js.native
+  
+  /**
+    * 
+    * @brief 设置错误处理器
+    * 
+    * 使用方式：
+    * ```JavaScript
+    * hdlr.onerror({
+    * "404": function(v)
+    * {
+    * ...
+    * },
+    * "500": new mq.Routing(...)
+    * })
+    * ```
+    * @param hdlrs 指定不同的错误的处理器，key 是错误号，value 是处理器，可以是内置消息处理器，处理函数，链式处理数组，路由对象，详见 mq.Handler
+    * 
+    * 
+    * 
+    */
+  def onerror(hdlrs: js.Object): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -38,25 +61,4 @@ trait ClassHandlerEx extends ClassHandler {
     * @type Stats
     */
   var stats: ClassStats = js.native
-  /**
-    * 
-    * @brief 设置错误处理器
-    * 
-    * 使用方式：
-    * ```JavaScript
-    * hdlr.onerror({
-    * "404": function(v)
-    * {
-    * ...
-    * },
-    * "500": new mq.Routing(...)
-    * })
-    * ```
-    * @param hdlrs 指定不同的错误的处理器，key 是错误号，value 是处理器，可以是内置消息处理器，处理函数，链式处理数组，路由对象，详见 mq.Handler
-    * 
-    * 
-    * 
-    */
-  def onerror(hdlrs: js.Object): Unit = js.native
 }
-

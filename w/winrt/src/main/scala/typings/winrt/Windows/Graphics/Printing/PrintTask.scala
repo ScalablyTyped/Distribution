@@ -3,12 +3,12 @@ package typings.winrt.Windows.Graphics.Printing
 import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackagePropertySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrintTask extends IPrintTask
-
 object PrintTask {
+  
   @scala.inline
   def apply(
     oncompleted: js.Any,
@@ -23,4 +23,3 @@ object PrintTask {
     __obj.asInstanceOf[PrintTask]
   }
 }
-

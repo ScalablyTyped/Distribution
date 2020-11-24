@@ -6,17 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Volumes")
 @js.native
 class ResourceVolumes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var associated: ResourceVolumesAssociated = js.native
+  
   var context: APIRequestContext = js.native
-  var mybooks: ResourceVolumesMybooks = js.native
-  var recommended: ResourceVolumesRecommended = js.native
-  var useruploaded: ResourceVolumesUseruploaded = js.native
+  
   /**
     * books.volumes.get
     * @desc Gets volume information for a single volume.
@@ -51,6 +51,7 @@ class ResourceVolumes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVolume]
   ): Unit = js.native
+  
   /**
     * books.volumes.list
     * @desc Performs a book search.
@@ -92,5 +93,10 @@ class ResourceVolumes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVolumes]
   ): Unit = js.native
+  
+  var mybooks: ResourceVolumesMybooks = js.native
+  
+  var recommended: ResourceVolumesRecommended = js.native
+  
+  var useruploaded: ResourceVolumesUseruploaded = js.native
 }
-

@@ -9,10 +9,10 @@ Building blocks for WordPress editors.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/editor |
-| Keywords           | wordpress, editor |
-| # releases         | 69 |
+| Keywords           | wordpress, gutenberg, editor |
+| # releases         | 77 |
 | # dependents       | 13 |
-| # downloads        | 223363 |
+| # downloads        | 356732 |
 | # stars            | 0 |
 
 ## Links

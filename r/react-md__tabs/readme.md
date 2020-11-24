@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__tabs
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 Create accessible tabs to organize data across multiple screens or interactions.
@@ -10,9 +10,9 @@ Create accessible tabs to organize data across multiple screens or interactions.
 | ------------------ | :-------------: |
 | Full name          | @react-md/tabs |
 | Keywords           | accessibility, a11y, react-md, material design, react, tab, tabs, component, components |
-| # releases         | 13 |
+| # releases         | 21 |
 | # dependents       | 1 |
-| # downloads        | 1786 |
+| # downloads        | 4167 |
 | # stars            | 0 |
 
 ## Links

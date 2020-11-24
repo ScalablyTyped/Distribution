@@ -7,11 +7,22 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/mergeScan", JSImport.Namespace)
 @js.native
 object mergeScanMod extends js.Object {
+  
+  def mergeScan[T, R](
+    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
+    seed: R
+  ): OperatorFunction[T, R] = js.native
+  def mergeScan[T, R](
+    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
+    seed: R,
+    concurrent: Double
+  ): OperatorFunction[T, R] = js.native
+  
   @js.native
   class MergeScanOperator[T, R] protected () extends Operator[T, R] {
     def this(
@@ -19,8 +30,11 @@ object mergeScanMod extends js.Object {
       seed: R,
       concurrent: Double
     ) = this()
+    
     var accumulator: js.Any = js.native
+    
     var concurrent: js.Any = js.native
+    
     var seed: js.Any = js.native
   }
   
@@ -32,26 +46,25 @@ object mergeScanMod extends js.Object {
       acc: R,
       concurrent: Double
     ) = this()
+    
     var _innerSub: js.Any = js.native
-    var acc: js.Any = js.native
-    var accumulator: js.Any = js.native
-    var active: js.Any = js.native
-    var buffer: js.Any = js.native
-    var concurrent: js.Any = js.native
-    var hasCompleted: js.Any = js.native
-    var hasValue: js.Any = js.native
-    var index: Double = js.native
+    
     /* protected */ def _next(value: js.Any): Unit = js.native
+    
+    var acc: js.Any = js.native
+    
+    var accumulator: js.Any = js.native
+    
+    var active: js.Any = js.native
+    
+    var buffer: js.Any = js.native
+    
+    var concurrent: js.Any = js.native
+    
+    var hasCompleted: js.Any = js.native
+    
+    var hasValue: js.Any = js.native
+    
+    var index: Double = js.native
   }
-  
-  def mergeScan[T, R](
-    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
-    seed: R
-  ): OperatorFunction[T, R] = js.native
-  def mergeScan[T, R](
-    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
-    seed: R,
-    concurrent: Double
-  ): OperatorFunction[T, R] = js.native
 }
-

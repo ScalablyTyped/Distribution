@@ -1,7 +1,7 @@
 
 # Scala.js typings for bootstrap-table
 
-Typings are for version 1.17.1
+Typings are for version 1.18.0
 
 ## Library description:
 An extended table to integration with some of the most widely used CSS frameworks. (Supports Bootstrap, Semantic UI, Bulma, Material Design, Foundation)
@@ -11,8 +11,8 @@ An extended table to integration with some of the most widely used CSS framework
 | Full name          | bootstrap-table |
 | Keywords           | bootstrap, table, pagination, checkbox, radio, datatables, css, css-framework, semantic, semantic-ui, bulma, material, material-design, materialize, foundation |
 | # releases         | 19 |
-| # dependents       | 17 |
-| # downloads        | 615335 |
+| # dependents       | 22 |
+| # downloads        | 1049607 |
 | # stars            | 7 |
 
 ## Links

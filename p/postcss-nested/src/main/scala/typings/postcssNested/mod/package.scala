@@ -2,8 +2,9 @@ package typings.postcssNested
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
-  type Nested = typings.postcss.mod.Plugin_[typings.postcssNested.mod.Options]
+  
+  type Nested = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginCreator<Options> */ js.Any
 }

@@ -2,9 +2,10 @@ package typings.officeJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Office {
+  
   /**
     * The subclass of {@link Office.Item | Item} dealing with appointments.
     * 
@@ -19,6 +20,17 @@ package object Office {
     * - {@link Office.AppointmentRead | AppointmentRead}
     */
   type Appointment = typings.officeJs.Office.Item
+  
+  /**
+  	 * Used to strongly type the `handler` property of RemoveHandlerOptions.
+  	 */
+  type BindingEventHandler = js.Function1[
+    /* eventArgs */ js.UndefOr[
+      typings.officeJs.Office.BindingDataChangedEventArgs | typings.officeJs.Office.BindingSelectionChangedEventArgs
+    ], 
+    js.Any
+  ]
+  
   /**
     * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
     * 
@@ -33,6 +45,7 @@ package object Office {
     * - {@link Office.MessageCompose | MessageCompose}
     */
   type ItemCompose = typings.officeJs.Office.Item
+  
   /**
     * The read mode of {@link Office.Item | Office.context.mailbox.item}.
     * 
@@ -47,6 +60,7 @@ package object Office {
     * - {@link Office.MessageRead | MessageRead}
     */
   type ItemRead = typings.officeJs.Office.Item
+  
   /**
     * A subclass of {@link Office.Item | Item} for messages.
     * 
@@ -61,6 +75,12 @@ package object Office {
     * - {@link Office.MessageRead | MessageRead}
     */
   type Message = typings.officeJs.Office.Item
+  
+  /**
+    * Function type to turn off the event.
+    */
+  type RemoveEventListener = js.Function0[js.Promise[scala.Unit]]
+  
   /**
     * Represents a bound text selection in the document.
     * 

@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassMySQL extends ClassDbConnection {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassMySQL extends ClassDbConnection {
     * @type Integer
     */
   var rxBufferSize: Double = js.native
+  
   /**
     * class prop 
     *
@@ -26,6 +28,7 @@ trait ClassMySQL extends ClassDbConnection {
     * @type Integer
     */
   var txBufferSize: Double = js.native
+  
   /**
     * 
     * @brief 选择当前数据库连接的缺省数据库
@@ -36,4 +39,3 @@ trait ClassMySQL extends ClassDbConnection {
     */
   def use(dbName: String): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ This library allows developers to opt-in to using Navigation Preload in their se
 | ------------------ | :-------------: |
 | Full name          | workbox-navigation-preload |
 | Keywords           | workbox, workboxjs, service worker, sw, navigation |
-| # releases         | 30 |
-| # dependents       | 1 |
-| # downloads        | 56498368 |
+| # releases         | 31 |
+| # dependents       | 6 |
+| # downloads        | 102056811 |
 | # stars            | 0 |
 
 ## Links

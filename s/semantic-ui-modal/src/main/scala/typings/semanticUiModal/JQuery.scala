@@ -51,12 +51,11 @@ import typings.semanticUiModal.semanticUiModalStrings.transition
 import typings.semanticUiModal.semanticUiModalStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("modal")
-  var modal_Original: Modal = js.native
+  
   def modal(): JQuery = js.native
   def modal(behavior: setting, name: allowMultiple, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def modal(behavior: setting, name: allowMultiple, value: Boolean): JQuery = js.native
@@ -130,6 +129,8 @@ trait JQuery extends js.Object {
   @JSName("modal")
   def modal_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
   @JSName("modal")
+  var modal_Original: Modal = js.native
+  @JSName("modal")
   def modal_attachevents(behavior: `attach events`, selector: String): JQuery = js.native
   @JSName("modal")
   def modal_attachevents(behavior: `attach events`, selector: String, event: String): JQuery = js.native
@@ -202,4 +203,3 @@ trait JQuery extends js.Object {
   @JSName("modal")
   def modal_toggle(behavior: toggle): JQuery = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.openlayers.mod.geom.Geometry
 import typings.openlayers.mod.style.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Feature")
 @js.native
@@ -55,6 +55,7 @@ import scala.scalajs.js.annotation._
 class Feature () extends Object {
   def this(opt_geometryOrProperties: StringDictionary[js.Any]) = this()
   def this(opt_geometryOrProperties: Geometry) = this()
+  
   /**
     * Get the feature's default geometry.  A feature may have any number of named
     * geometries.  The "default" geometry (the one that is rendered by default) is
@@ -64,6 +65,7 @@ class Feature () extends Object {
     * @observable
     */
   def getGeometry(): Geometry = js.native
+  
   /**
     * Get the name of the feature's default geometry.  By default, the default
     * geometry is named `geometry`.
@@ -72,6 +74,7 @@ class Feature () extends Object {
     * @api stable
     */
   def getGeometryName(): String = js.native
+  
   /**
     * Get the feature identifier.  This is a stable identifier for the feature and
     * is either set when reading data from a remote source or set explicitly by
@@ -81,6 +84,7 @@ class Feature () extends Object {
     * @observable
     */
   def getId(): Double | String = js.native
+  
   /**
     * Get the feature's style.  This return for this method depends on what was
     * provided to the {@link ol.Feature#setStyle} method.
@@ -89,6 +93,7 @@ class Feature () extends Object {
     * @observable
     */
   def getStyle(): Style | js.Array[Style] | FeatureStyleFunction | StyleFunction = js.native
+  
   /**
     * Get the feature's style function.
     * @return Return a function
@@ -96,6 +101,7 @@ class Feature () extends Object {
     * @api stable
     */
   def getStyleFunction(): js.UndefOr[FeatureStyleFunction] = js.native
+  
   /**
     * Set the default geometry for the feature.  This will update the property
     * with the name returned by {@link ol.Feature#getGeometryName}.
@@ -104,6 +110,7 @@ class Feature () extends Object {
     * @observable
     */
   def setGeometry(geometry: Geometry): Unit = js.native
+  
   /**
     * Set the property name to be used when getting the feature's default geometry.
     * When calling {@link ol.Feature#getGeometry}, the value of the property with
@@ -112,6 +119,7 @@ class Feature () extends Object {
     * @api stable
     */
   def setGeometryName(name: String): Unit = js.native
+  
   def setId(id: String): Unit = js.native
   /**
     * Set the feature id.  The feature id is considered stable and may be used when
@@ -123,6 +131,7 @@ class Feature () extends Object {
     * @observable
     */
   def setId(id: Double): Unit = js.native
+  
   /**
     * Set the style for the feature.  This can be a single style object, an array
     * of styles, or a function that takes a resolution and returns an array of
@@ -137,4 +146,3 @@ class Feature () extends Object {
   def setStyle(style: StyleFunction): Unit = js.native
   def setStyle(style: Style): Unit = js.native
 }
-

@@ -9,7 +9,7 @@ import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.ObjectMethod_
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.ClassPrivateMethod_
 */
 trait Method extends _Node
-
 object Method {
+  
   @scala.inline
   def ObjectMethod_(
     async: Boolean,
@@ -34,6 +34,7 @@ object Method {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Method]
   }
+  
   @scala.inline
   def ClassMethod_(
     async: Boolean,
@@ -50,6 +51,7 @@ object Method {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Method]
   }
+  
   @scala.inline
   def ClassPrivateMethod_(
     async: Boolean,
@@ -67,4 +69,3 @@ object Method {
     __obj.asInstanceOf[Method]
   }
 }
-

@@ -5,7 +5,7 @@ import typings.xrm.Xrm.Async.OfflineOperationSuccessCallbackObject
 import typings.xrm.Xrm.Async.PromiseLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Mobile.offline methods to create and manage records in the mobile clients while working in the offline mode.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MobileOffline extends js.Object {
+  
   /**
     * Creates an entity record in mobile clients while working in the offline mode.
     * @param entityType The logical name of the entity.
@@ -29,6 +30,7 @@ trait MobileOffline extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def createRecord(entityType: String, data: StringDictionary[js.Any]): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
+  
   /**
     * Deletes an entity record in mobile clients while working in the offline mode.
     * @param entityType The logical name of the entity.
@@ -39,6 +41,7 @@ trait MobileOffline extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def deleteRecord(entityType: String, id: String): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
+  
   /**
     * Returns whether an entity is offline enabled.
     * @param entityType The logical name of the entity.
@@ -47,6 +50,7 @@ trait MobileOffline extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def isOfflineEnabled(entityType: String): Boolean = js.native
+  
   /**
     * Retrieves a collection of entity records in mobile clients while working in the offline mode.
     *
@@ -72,6 +76,7 @@ trait MobileOffline extends js.Object {
   def retrieveMultipleRecords(entityType: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): PromiseLike[js.Array[StringDictionary[_]]] = js.native
   def retrieveMultipleRecords(entityType: String, options: String): PromiseLike[js.Array[StringDictionary[_]]] = js.native
   def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): PromiseLike[js.Array[StringDictionary[_]]] = js.native
+  
   /**
     * Retrieves an entity record in mobile clients while working in the offline mode.
     *
@@ -91,6 +96,7 @@ trait MobileOffline extends js.Object {
     */
   def retrieveRecord(entityType: String, id: String): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
   def retrieveRecord(entityType: String, id: String, options: String): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
+  
   /**
     * Updates an entity record in mobile clients while working in the offline mode.
     * @param entityType The logical name of the entity.
@@ -107,4 +113,3 @@ trait MobileOffline extends js.Object {
     */
   def updateRecord(entityType: String, id: String, data: StringDictionary[js.Any]): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
 }
-

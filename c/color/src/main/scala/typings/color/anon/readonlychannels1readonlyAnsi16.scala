@@ -33,40 +33,55 @@ import typings.colorConvert.conversionsMod.RGB_
 import typings.colorConvert.conversionsMod.XYZ_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined { readonly channels :1,  readonly labels :['hex'], readonly rgb (hex : color-convert.color-convert/conversions.HEX): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.hex & {[ F in keyof color-convert.color-convert/route.hex ]: {  raw :color-convert.color-convert/route.hex[F]}} */
 @js.native
 trait readonlychannels1readonlyAnsi16 extends js.Object {
+  
   var ansi16: `123` = js.native
-  var ansi256: `115` = js.native
-  var apple: `112` = js.native
-  val channels: `1` = js.native
-  var cmyk: `117` = js.native
-  var gray: `114` = js.native
-  var hcg: `118` = js.native
-  var hsl: `122` = js.native
-  var hsv: `120` = js.native
-  var hwb: `116` = js.native
-  var keyword: `113` = js.native
-  var lab: `124` = js.native
-  val labels: js.Array[hex] = js.native
-  var lch: `121` = js.native
-  var rgb: `111` = js.native
-  var xyz: `119` = js.native
   def ansi16(from: HEX_): ANSI16_ = js.native
+  
+  var ansi256: `115` = js.native
   def ansi256(from: HEX_): ANSI256_ = js.native
+  
+  var apple: `112` = js.native
   def apple(from: HEX_): APPLE_ = js.native
+  
+  val channels: `1` = js.native
+  
+  var cmyk: `117` = js.native
   def cmyk(from: HEX_): CMYK_ = js.native
+  
+  var gray: `114` = js.native
   def gray(from: HEX_): GRAY_ = js.native
+  
+  var hcg: `118` = js.native
   def hcg(from: HEX_): HCG_ = js.native
+  
+  var hsl: `122` = js.native
   def hsl(from: HEX_): HSL_ = js.native
+  
+  var hsv: `120` = js.native
   def hsv(from: HEX_): HSV_ = js.native
+  
+  var hwb: `116` = js.native
   def hwb(from: HEX_): HWB_ = js.native
+  
+  var keyword: `113` = js.native
   def keyword(from: HEX_): KEYWORD_ = js.native
+  
+  var lab: `124` = js.native
   def lab(from: HEX_): LAB_ = js.native
+  
+  val labels: js.Array[hex] = js.native
+  
+  var lch: `121` = js.native
   def lch(from: HEX_): LCH_ = js.native
+  
+  var rgb: `111` = js.native
   def rgb(hex: HEX_): RGB_ = js.native
+  
+  var xyz: `119` = js.native
   def xyz(from: HEX_): XYZ_ = js.native
 }
-

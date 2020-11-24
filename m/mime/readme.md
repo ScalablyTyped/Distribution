@@ -10,15 +10,15 @@ A comprehensive library for mime-type mapping
 | ------------------ | :-------------: |
 | Full name          | mime |
 | Keywords           | util, mime |
-| # releases         | 13 |
-| # dependents       | 3952 |
-| # downloads        | 1043739230 |
+| # releases         | 8 |
+| # dependents       | 4353 |
+| # downloads        | 1334558905 |
 | # stars            | 133 |
 
 ## Links
-- [Homepage](https://github.com/broofa/node-mime#readme)
-- [Bugs](https://github.com/broofa/node-mime/issues)
-- [Repository](https://github.com/broofa/node-mime)
+- [Homepage](https://github.com/broofa/mime#readme)
+- [Bugs](https://github.com/broofa/mime/issues)
+- [Repository](https://github.com/broofa/mime)
 - [Npm](https://www.npmjs.com/package/mime)
     
 

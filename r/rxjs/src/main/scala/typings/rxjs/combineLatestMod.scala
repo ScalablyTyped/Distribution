@@ -9,41 +9,21 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/combineLatest", JSImport.Namespace)
 @js.native
 object combineLatestMod extends js.Object {
-  @js.native
-  class CombineLatestOperator[T, R] () extends Operator[T, R] {
-    def this(resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
-    var resultSelector: js.Any = js.native
-  }
   
-  @js.native
-  class CombineLatestSubscriber[T, R] protected () extends OuterSubscriber[T, R] {
-    def this(destination: Subscriber[R]) = this()
-    def this(destination: Subscriber[R], resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
-    var _tryResultSelector: js.Any = js.native
-    var active: js.Any = js.native
-    var observables: js.Any = js.native
-    var resultSelector: js.Any = js.native
-    var toRespond: js.Any = js.native
-    var values: js.Any = js.native
-    /* protected */ def _next(observable: js.Any): Unit = js.native
-    def notifyComplete(unused: Subscriber[R]): Unit = js.native
-    def notifyNext(_outerValue: T, innerValue: R, outerIndex: Double): Unit = js.native
-  }
-  
-  def combineLatest[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]) | SchedulerLike)*): Observable[R] = js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */](sources: js.Array[O1]): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */](sources: js.Array[O1], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
+  def combineLatest[O /* <: ObservableInput[_] */](observables: (O | SchedulerLike)*): Observable[js.Array[_]] = js.native
+  def combineLatest[O /* <: ObservableInput[_] */](sources: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = js.native
+  def combineLatest[O /* <: ObservableInput[_] */](sources: js.Array[O], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O]]] = js.native
   def combineLatest[O1 /* <: ObservableInput[_] */](v1: O1): Observable[js.Array[ObservedValueOf[O1]]] = js.native
   def combineLatest[O1 /* <: ObservableInput[_] */](v1: O1, scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, R](sources: js.Array[O1], resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, R](
-    sources: js.Array[O1],
-    resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R],
+  def combineLatest[O /* <: ObservableInput[_] */, R](sources: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = js.native
+  def combineLatest[O /* <: ObservableInput[_] */, R](
+    sources: js.Array[O],
+    resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R],
     scheduler: SchedulerLike
   ): Observable[R] = js.native
   def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](sources: js.Tuple2[O1, O2]): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
@@ -369,22 +349,52 @@ object combineLatestMod extends js.Object {
     scheduler: SchedulerLike
   ): Observable[R] = js.native
   @JSName("combineLatest")
-  def combineLatest_O_ObservableInputWildcard[O /* <: ObservableInput[_] */](observables: (O | SchedulerLike)*): Observable[js.Array[_]] = js.native
+  def combineLatest_O1_ObservableInputWildcard[O1 /* <: ObservableInput[_] */](sources: js.Array[O1]): Observable[js.Array[ObservedValueOf[O1]]] = js.native
   @JSName("combineLatest")
-  def combineLatest_O_ObservableInputWildcard[O /* <: ObservableInput[_] */](sources: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = js.native
+  def combineLatest_O1_ObservableInputWildcard[O1 /* <: ObservableInput[_] */](sources: js.Array[O1], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
   @JSName("combineLatest")
-  def combineLatest_O_ObservableInputWildcard[O /* <: ObservableInput[_] */](sources: js.Array[O], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O]]] = js.native
+  def combineLatest_O1_ObservableInputWildcardR[O1 /* <: ObservableInput[_] */, R](sources: js.Array[O1], resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
+  @JSName("combineLatest")
+  def combineLatest_O1_ObservableInputWildcardR[O1 /* <: ObservableInput[_] */, R](
+    sources: js.Array[O1],
+    resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R],
+    scheduler: SchedulerLike
+  ): Observable[R] = js.native
   @JSName("combineLatest")
   def combineLatest_O_ObservableInputWildcardR[O /* <: ObservableInput[_] */, R](
     observables: ((js.Function1[(/* repeated */ js.Any) | (/* repeated */ ObservedValueOf[O]), R]) | O | ObservableInput[_] | SchedulerLike)*
   ): Observable[R] = js.native
   @JSName("combineLatest")
-  def combineLatest_O_ObservableInputWildcardR[O /* <: ObservableInput[_] */, R](sources: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = js.native
-  @JSName("combineLatest")
-  def combineLatest_O_ObservableInputWildcardR[O /* <: ObservableInput[_] */, R](
-    sources: js.Array[O],
-    resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R],
-    scheduler: SchedulerLike
-  ): Observable[R] = js.native
+  def combineLatest_R[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]) | SchedulerLike)*): Observable[R] = js.native
+  
+  @js.native
+  class CombineLatestOperator[T, R] () extends Operator[T, R] {
+    def this(resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
+    
+    var resultSelector: js.Any = js.native
+  }
+  
+  @js.native
+  class CombineLatestSubscriber[T, R] protected () extends OuterSubscriber[T, R] {
+    def this(destination: Subscriber[R]) = this()
+    def this(destination: Subscriber[R], resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
+    
+    /* protected */ def _next(observable: js.Any): Unit = js.native
+    
+    var _tryResultSelector: js.Any = js.native
+    
+    var active: js.Any = js.native
+    
+    def notifyComplete(unused: Subscriber[R]): Unit = js.native
+    
+    def notifyNext(_outerValue: T, innerValue: R, outerIndex: Double): Unit = js.native
+    
+    var observables: js.Any = js.native
+    
+    var resultSelector: js.Any = js.native
+    
+    var toRespond: js.Any = js.native
+    
+    var values: js.Any = js.native
+  }
 }
-

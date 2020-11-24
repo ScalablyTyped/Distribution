@@ -6,10 +6,11 @@ import typings.bootstrap3Typeahead.bootstrap3TypeaheadStrings.getActive
 import typings.bootstrap3Typeahead.bootstrap3TypeaheadStrings.lookup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Initialize or destroy Typeahead
     */
@@ -30,4 +31,3 @@ trait JQuery extends js.Object {
   @JSName("typeahead")
   def typeahead_lookup(method: lookup, defaultValue: String): JQuery = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.DeepImmutable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Ray")
 @js.native
@@ -30,14 +30,11 @@ class Ray protected ()
   length: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "Ray")
 @js.native
 object Ray extends js.Object {
-  val TmpVector3: js.Any = js.native
-  var rayl: js.Any = js.native
-  var smallnum: js.Any = js.native
+  
   /**
     * Creates a new ray from screen space and viewport
     * @param x position
@@ -58,6 +55,7 @@ object Ray extends js.Object {
     view: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     projection: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
   ): typings.babylonjs.rayMod.Ray = js.native
+  
   /**
     * Function will create a new transformed ray starting from origin and ending at the end point. Ray's length will be set, and ray will be
     * transformed to the given world matrix.
@@ -66,15 +64,13 @@ object Ray extends js.Object {
     * @param world a matrix to transform the ray to. Default is the identity matrix.
     * @returns the new ray
     */
+  def CreateNewFromTo(origin: typings.babylonjs.mathVectorMod.Vector3, end: typings.babylonjs.mathVectorMod.Vector3): typings.babylonjs.rayMod.Ray = js.native
   def CreateNewFromTo(
-    origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    end: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.rayMod.Ray = js.native
-  def CreateNewFromTo(
-    origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    end: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    origin: typings.babylonjs.mathVectorMod.Vector3,
+    end: typings.babylonjs.mathVectorMod.Vector3,
     world: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
   ): typings.babylonjs.rayMod.Ray = js.native
+  
   /**
     * Transforms a ray by a matrix
     * @param ray ray to transform
@@ -85,6 +81,7 @@ object Ray extends js.Object {
     ray: DeepImmutable[typings.babylonjs.rayMod.Ray],
     matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
   ): typings.babylonjs.rayMod.Ray = js.native
+  
   /**
     * Transforms a ray by a matrix
     * @param ray ray to transform
@@ -96,10 +93,16 @@ object Ray extends js.Object {
     matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.rayMod.Ray
   ): Unit = js.native
+  
   /**
     * Creates a ray with origin and direction of 0,0,0
     * @returns the new ray
     */
   def Zero(): typings.babylonjs.rayMod.Ray = js.native
+  
+  val _TmpVector3: js.Any = js.native
+  
+  var rayl: js.Any = js.native
+  
+  var smallnum: js.Any = js.native
 }
-

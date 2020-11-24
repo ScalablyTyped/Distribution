@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GattCharacteristicProperties extends js.Object
-
 /** Specifies the values for the GATT characteristic properties as well as the GATT Extended Characteristic Properties Descriptor. */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties")
 @js.native
 object GattCharacteristicProperties extends js.Object {
+  
   /** The characteristic supports signed writes */
   @js.native
   sealed trait authenticatedSignedWrites extends GattCharacteristicProperties
@@ -54,6 +54,4 @@ object GattCharacteristicProperties extends js.Object {
   /** The characteristic supports Write Without Response */
   @js.native
   sealed trait writeWithoutResponse extends GattCharacteristicProperties
-  
 }
-

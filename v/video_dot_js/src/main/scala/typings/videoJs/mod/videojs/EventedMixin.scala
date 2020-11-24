@@ -3,7 +3,7 @@ package typings.videoJs.mod.videojs
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains methods that provide event capabilities to an object which is passed
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EventedMixin extends js.Object {
+  
   /**
     * Removes listener(s) from event(s) on an evented object.
     *
@@ -73,6 +74,7 @@ trait EventedMixin extends js.Object {
   def off(`type`: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def off(`type`: js.Array[String]): Unit = js.native
   def off(`type`: js.Array[String], listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Add a listener to an event (or events) on this object or another evented
     * object.
@@ -139,6 +141,7 @@ trait EventedMixin extends js.Object {
   def on(`type`: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def on(`type`: js.Array[String]): Unit = js.native
   def on(`type`: js.Array[String], listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Add a listener to an event (or events) on this object or another evented
     * object. The listener will only be called once and then removed.
@@ -205,6 +208,7 @@ trait EventedMixin extends js.Object {
   def one(`type`: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def one(`type`: js.Array[String]): Unit = js.native
   def one(`type`: js.Array[String], listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Fire an event on this evented object, causing its listeners to be called.
     *
@@ -219,4 +223,3 @@ trait EventedMixin extends js.Object {
   def trigger(event: js.Any): Boolean = js.native
   def trigger(event: js.Any, hash: js.Any): Boolean = js.native
 }
-

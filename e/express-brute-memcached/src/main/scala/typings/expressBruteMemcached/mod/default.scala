@@ -2,7 +2,7 @@ package typings.expressBruteMemcached.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-brute-memcached", JSImport.Default)
 @js.native
@@ -18,4 +18,3 @@ class default protected () extends MemcachedStore {
   def this(hosts: String, options: MemcachedStoreOptions) = this()
   def this(hosts: js.Array[String], options: MemcachedStoreOptions) = this()
 }
-

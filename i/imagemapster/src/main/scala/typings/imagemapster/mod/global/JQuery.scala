@@ -18,10 +18,11 @@ import typings.imagemapster.mod.global.ImageMapster.Tooltip
 import typings.imagemapster.mod.global.ImageMapster.Unbind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     *
     * All images in the jQuery object will be bound. The specific example
@@ -282,4 +283,3 @@ trait JQuery extends js.Object {
   def mapster(method: Unbind, preserveState: Boolean): JQuery = js.native
   def mapster(options: Options): JQuery = js.native
 }
-

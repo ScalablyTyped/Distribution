@@ -2,11 +2,12 @@ package typings.winjs.global.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WinJS.UI.setOptions")
 @js.native
 object setOptions extends js.Object {
+  
   /**
     * Adds the set of declaratively specified options (properties and events) to the specified control. If name of the options property begins with "on", the property value is a function and the control supports addEventListener, setOptions calls addEventListener on the control.
     * @param control The control on which the properties and events are to be applied.
@@ -15,4 +16,3 @@ object setOptions extends js.Object {
   def apply(control: js.Any): Unit = js.native
   def apply(control: js.Any, options: js.Any): Unit = js.native
 }
-

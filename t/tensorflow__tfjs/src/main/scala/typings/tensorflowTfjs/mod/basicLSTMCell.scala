@@ -1,13 +1,13 @@
 package typings.tensorflowTfjs.mod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Tensor1D
-import typings.tensorflowTfjsCore.tensorMod.Tensor2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "basicLSTMCell")
 @js.native
@@ -23,4 +23,3 @@ object basicLSTMCell
         js.Tuple2[Tensor2D, Tensor2D]
       ]
     ]
-

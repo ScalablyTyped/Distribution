@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/reseller/v1", "reseller_v1.Resource$Subscriptions")
 @js.native
 class ResourceSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * reseller.subscriptions.activate
     * @desc Activates a subscription previously suspended by the reseller
@@ -42,6 +42,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.changePlan
     * @desc Update a subscription plan. Use this method to update a plan for a
@@ -74,6 +75,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.changeRenewalSettings
     * @desc Update a user license's renewal settings. This is applicable for
@@ -108,6 +110,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.changeSeats
     * @desc Update a subscription's user license settings.
@@ -138,6 +141,9 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * reseller.subscriptions.delete
     * @desc Cancel or transfer a subscription to direct.
@@ -168,6 +174,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.get
     * @desc Get a specific subscription.
@@ -197,6 +204,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.insert
     * @desc Create or transfer a subscription.
@@ -227,6 +235,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.list
     * @desc List of subscriptions managed by the reseller. The list can be all
@@ -261,6 +270,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscriptions]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.startPaidService
     * @desc Immediately move a 30-day free trial subscription to a paid service
@@ -294,6 +304,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * reseller.subscriptions.suspend
     * @desc Suspends an active subscription.
@@ -324,4 +335,3 @@ class ResourceSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
 }
-

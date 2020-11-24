@@ -6,11 +6,12 @@ import typings.d3Dsv.mod.DSVRowString
 import typings.std.RequestInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "tsv")
 @js.native
 object tsv extends js.Object {
+  
   def apply[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
   def apply[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
   def apply[ParsedRow /* <: js.Object */, Columns /* <: String */](
@@ -33,4 +34,3 @@ object tsv extends js.Object {
     ]
   ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
 }
-

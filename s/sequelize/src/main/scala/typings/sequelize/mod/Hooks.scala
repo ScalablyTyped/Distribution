@@ -2,7 +2,7 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hooks are function that are called before and after  (bulk-) creation/updating/deletion and validation.
@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Hooks[TInstance] extends js.Object {
+  
   def addHook(hookType: String, fn: js.Function): Hooks[TInstance] = js.native
   /**
     * Add a hook to the model
@@ -49,6 +50,7 @@ trait Hooks[TInstance] extends js.Object {
     * @alias hook
     */
   def addHook(hookType: String, name: String, fn: js.Function): Hooks[TInstance] = js.native
+  
   def afterBulkCreate(
     fn: js.Function3[
       /* instances */ js.Array[TInstance], 
@@ -73,8 +75,10 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterBulkDelete(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   def afterBulkDelete(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def afterBulkDestroy(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run after destroying instances in bulk
@@ -85,6 +89,7 @@ trait Hooks[TInstance] extends js.Object {
     * @alias afterBulkDelete
     */
   def afterBulkDestroy(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def afterBulkSync(fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
   /**
     * A hook that is run after sequelize.sync call
@@ -93,6 +98,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with options passed to sequelize.sync
     */
   def afterBulkSync(name: String, fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
+  
   def afterBulkUpdate(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run after updating instances in bulk
@@ -101,6 +107,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with options
     */
   def afterBulkUpdate(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def afterCreate(
     fn: js.Function3[
       /* attributes */ TInstance, 
@@ -124,6 +131,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterDefine(fn: js.Function1[/* model */ Model[TInstance, _, _], Unit]): Unit = js.native
   /**
     * A hook that is run after a define call
@@ -132,6 +140,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with factory
     */
   def afterDefine(name: String, fn: js.Function1[/* model */ Model[TInstance, _, _], Unit]): Unit = js.native
+  
   def afterDelete(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -149,6 +158,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterDestroy(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -173,6 +183,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterFind(
     fn: js.Function3[
       /* instancesOrInstance */ js.Array[TInstance] | TInstance, 
@@ -196,6 +207,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterInit(fn: js.Function1[/* sequelize */ Sequelize, Unit]): Unit = js.native
   /**
     * A hook that is run after Sequelize() call
@@ -204,6 +216,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with sequelize
     */
   def afterInit(name: String, fn: js.Function1[/* sequelize */ Sequelize, Unit]): Unit = js.native
+  
   def afterSync(fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
   /**
     * A hook that is run after Model.sync call
@@ -212,6 +225,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn       A callback function that is called with options passed to Model.sync
     */
   def afterSync(name: String, fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
+  
   def afterUpdate(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -235,6 +249,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterValidate(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -258,6 +273,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def beforeBulkCreate(
     fn: js.Function3[
       /* instances */ js.Array[TInstance], 
@@ -281,8 +297,10 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def beforeBulkDelete(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   def beforeBulkDelete(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def beforeBulkDestroy(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run before destroying instances in bulk
@@ -293,6 +311,7 @@ trait Hooks[TInstance] extends js.Object {
     * @alias beforeBulkDelete
     */
   def beforeBulkDestroy(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def beforeBulkSync(fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
   /**
     * A hook that is run before sequelize.sync call
@@ -301,6 +320,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn    A callback function that is called with options passed to sequelize.sync
     */
   def beforeBulkSync(name: String, fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
+  
   def beforeBulkUpdate(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run after updating instances in bulk
@@ -309,6 +329,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with options
     */
   def beforeBulkUpdate(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def beforeCreate(
     fn: js.Function3[
       /* attributes */ TInstance, 
@@ -332,6 +353,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def beforeDefine(fn: js.Function2[/* attributes */ DefineAttributes, /* options */ js.Object, Unit]): Unit = js.native
   /**
     * A hook that is run before a define call
@@ -340,6 +362,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with attributes, options
     */
   def beforeDefine(name: String, fn: js.Function2[/* attributes */ DefineAttributes, /* options */ js.Object, Unit]): Unit = js.native
+  
   def beforeDelete(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -357,6 +380,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def beforeDestroy(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -381,6 +405,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def beforeFind(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run before a find (select) query
@@ -389,6 +414,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with options
     */
   def beforeFind(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def beforeFindAfterExpandIncludeAll(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run before a find (select) query, after any { include: {all: ...} } options are expanded
@@ -397,6 +423,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with options
     */
   def beforeFindAfterExpandIncludeAll(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def beforeFindAfterOptions(fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
   /**
     * A hook that is run before a find (select) query, after all option parsing is complete
@@ -405,6 +432,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with options
     */
   def beforeFindAfterOptions(name: String, fn: js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], Unit]): Unit = js.native
+  
   def beforeInit(fn: js.Function2[/* config */ js.Object, /* options */ js.Object, Unit]): Unit = js.native
   /**
     * A hook that is run before Sequelize() call
@@ -413,6 +441,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn   A callback function that is called with config, options
     */
   def beforeInit(name: String, fn: js.Function2[/* config */ js.Object, /* options */ js.Object, Unit]): Unit = js.native
+  
   def beforeSync(fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
   /**
     * A hook that is run before Model.sync call
@@ -421,6 +450,7 @@ trait Hooks[TInstance] extends js.Object {
     * @param fn       A callback function that is called with options passed to Model.sync
     */
   def beforeSync(name: String, fn: js.Function1[/* options */ SyncOptions, Unit]): Unit = js.native
+  
   def beforeUpdate(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -444,6 +474,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def beforeValidate(
     fn: js.Function3[
       /* instance */ TInstance, 
@@ -467,6 +498,7 @@ trait Hooks[TInstance] extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Check whether the mode has any hooks of this type
     *
@@ -475,9 +507,12 @@ trait Hooks[TInstance] extends js.Object {
     * @alias hasHooks
     */
   def hasHook(hookType: String): Boolean = js.native
+  
   def hasHooks(hookType: String): Boolean = js.native
+  
   def hook(hookType: String, fn: js.Function): Hooks[TInstance] = js.native
   def hook(hookType: String, name: String, fn: js.Function): Hooks[TInstance] = js.native
+  
   /**
     * Remove hook from the model
     *
@@ -486,4 +521,3 @@ trait Hooks[TInstance] extends js.Object {
     */
   def removeHook(hookType: String, name: String): Hooks[TInstance] = js.native
 }
-

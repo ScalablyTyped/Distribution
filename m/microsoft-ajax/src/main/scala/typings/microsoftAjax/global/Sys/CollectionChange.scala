@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a change in a collection.
@@ -34,4 +34,3 @@ class CollectionChange protected ()
     oldStartingIndex: Double
   ) = this()
 }
-

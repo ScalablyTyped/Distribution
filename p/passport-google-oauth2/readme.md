@@ -11,8 +11,8 @@ Passport strategy for Google OAuth 2.0
 | Full name          | passport-google-oauth2 |
 | Keywords           | auth, google, google+, passportjs, oauth2 |
 | # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 380753 |
+| # dependents       | 31 |
+| # downloads        | 585259 |
 | # stars            | 5 |
 
 ## Links

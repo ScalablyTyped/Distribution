@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulsar-client
 
-Typings are for version 1.0
+Typings are for version 1.2
 
 ## Library description:
 Pulsar Node.js client
@@ -10,9 +10,9 @@ Pulsar Node.js client
 | ------------------ | :-------------: |
 | Full name          | pulsar-client |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 3648 |
+| # releases         | 10 |
+| # dependents       | 2 |
+| # downloads        | 15759 |
 | # stars            | 0 |
 
 ## Links

@@ -2,19 +2,22 @@ package typings.openui5.sap.ui.model
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.json")
 @js.native
 object json extends js.Object {
+  
   @js.native
   trait JSONModel extends ClientModel {
+    
     /**
       * Serializes the current JSON data of the model into a string.Note: May not work in Internet Explorer
       * 8 because of lacking JSON support (works only if IE 8 mode is enabled)
       * @returns sJSON the JSON data serialized as string
       */
     def getJSON(): String = js.native
+    
     /**
       * Load JSON-encoded data from the server using a GET HTTP request and store the resulting JSON data in
       * the model.Note: Due to browser security restrictions, most "Ajax" requests are subject to the same
@@ -44,6 +47,7 @@ object json extends js.Object {
       bCache: js.UndefOr[String],
       mHeaders: js.UndefOr[js.Any]
     ): Unit = js.native
+    
     /**
       * Sets the JSON encoded data to the model.
       * @param oData the data to set on the model
@@ -51,6 +55,7 @@ object json extends js.Object {
       */
     def setData(oData: js.Any): Unit = js.native
     def setData(oData: js.Any, bMerge: Boolean): Unit = js.native
+    
     /**
       * Sets the JSON encoded string data to the model.
       * @param sJSONText the string data to set on the model
@@ -58,6 +63,7 @@ object json extends js.Object {
       */
     def setJSON(sJSONText: String): Unit = js.native
     def setJSON(sJSONText: String, bMerge: Boolean): Unit = js.native
+    
     /**
       * Sets a new value for the given property <code>sPropertyName</code> in the model.If the model value
       * changed all interested parties are informed.
@@ -73,6 +79,4 @@ object json extends js.Object {
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
   }
-  
 }
-

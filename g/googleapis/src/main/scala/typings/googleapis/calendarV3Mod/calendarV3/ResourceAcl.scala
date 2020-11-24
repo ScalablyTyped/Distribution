@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Acl")
 @js.native
 class ResourceAcl protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * calendar.acl.delete
     * @desc Deletes an access control rule.
@@ -38,6 +40,7 @@ class ResourceAcl protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceAclDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAclDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * calendar.acl.get
     * @desc Returns an access control rule.
@@ -67,6 +70,7 @@ class ResourceAcl protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAclRule]
   ): Unit = js.native
+  
   /**
     * calendar.acl.insert
     * @desc Creates an access control rule.
@@ -97,6 +101,7 @@ class ResourceAcl protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAclRule]
   ): Unit = js.native
+  
   /**
     * calendar.acl.list
     * @desc Returns the rules in the access control list for the calendar.
@@ -125,6 +130,7 @@ class ResourceAcl protected () extends js.Object {
   ): Unit = js.native
   def list(params: ParamsResourceAclList, options: MethodOptions): GaxiosPromise[SchemaAcl] = js.native
   def list(params: ParamsResourceAclList, options: MethodOptions, callback: BodyResponseCallback[SchemaAcl]): Unit = js.native
+  
   /**
     * calendar.acl.patch
     * @desc Updates an access control rule. This method supports patch
@@ -157,6 +163,7 @@ class ResourceAcl protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAclRule]
   ): Unit = js.native
+  
   /**
     * calendar.acl.update
     * @desc Updates an access control rule.
@@ -188,6 +195,7 @@ class ResourceAcl protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAclRule]
   ): Unit = js.native
+  
   /**
     * calendar.acl.watch
     * @desc Watch for changes to ACL resources.
@@ -222,4 +230,3 @@ class ResourceAcl protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

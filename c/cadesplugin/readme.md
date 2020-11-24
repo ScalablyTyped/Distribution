@@ -12,7 +12,7 @@ CryptoPro Browser plug-in
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 340 |
+| # downloads        | 2087 |
 | # stars            | 0 |
 
 ## Links

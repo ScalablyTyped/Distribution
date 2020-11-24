@@ -12,7 +12,7 @@ ES2015 Map to plain object.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 184 |
+| # downloads        | 476 |
 | # stars            | 0 |
 
 ## Links

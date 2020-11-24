@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides information about an element within a hierarchy.
@@ -29,8 +29,8 @@ trait HierarchyElement
      with XProperty
      with XPropertyWithState
      with XChild
-
 object HierarchyElement {
+  
   @scala.inline
   def apply(
     AsProperty: Property,
@@ -57,4 +57,3 @@ object HierarchyElement {
     __obj.asInstanceOf[HierarchyElement]
   }
 }
-

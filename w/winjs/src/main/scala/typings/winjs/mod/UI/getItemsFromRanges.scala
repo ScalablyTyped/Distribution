@@ -6,11 +6,12 @@ import typings.winjs.WinJS.UI.IListDataSource
 import typings.winjs.WinJS.UI.ISelectionRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("winjs", "UI.getItemsFromRanges")
 @js.native
 object getItemsFromRanges extends js.Object {
+  
   /**
     * Retrieves the items in the specified index range.
     * @param dataSource The data source that contains the items to retrieve.
@@ -19,4 +20,3 @@ object getItemsFromRanges extends js.Object {
     **/
   def apply[U](dataSource: IListDataSource[U], ranges: js.Array[ISelectionRange]): Promise[IItem[U]] = js.native
 }
-

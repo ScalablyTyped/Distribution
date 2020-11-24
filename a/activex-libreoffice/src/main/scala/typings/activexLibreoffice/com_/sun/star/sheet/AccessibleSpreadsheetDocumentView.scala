@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of a spreadsheet document
@@ -28,8 +28,8 @@ trait AccessibleSpreadsheetDocumentView
      with XAccessibleComponent
      with XAccessibleSelection
      with XAccessibleEventBroadcaster
-
 object AccessibleSpreadsheetDocumentView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -84,4 +84,3 @@ object AccessibleSpreadsheetDocumentView {
     __obj.asInstanceOf[AccessibleSpreadsheetDocumentView]
   }
 }
-

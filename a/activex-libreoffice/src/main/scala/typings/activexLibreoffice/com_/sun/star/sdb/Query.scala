@@ -18,7 +18,7 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContentIdentifier
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a stored definition of a SQL query.
@@ -35,8 +35,8 @@ trait Query
      with XDataDescriptorFactory
      with XRename
      with XColumnsSupplier
-
 object Query {
+  
   @scala.inline
   def apply(
     ApplyFilter: Boolean,
@@ -76,4 +76,3 @@ object Query {
     __obj.asInstanceOf[Query]
   }
 }
-

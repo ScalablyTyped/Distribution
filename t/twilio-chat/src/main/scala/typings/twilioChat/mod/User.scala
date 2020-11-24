@@ -3,7 +3,7 @@ package typings.twilioChat.mod
 import typings.twilioChat.userMod.UserServices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc Extended user information.
@@ -37,4 +37,3 @@ class User protected ()
     */
   def this(identity: String, entityName: String, services: UserServices) = this()
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-status-bar-height
 
-Typings are for version 2.5.0
+Typings are for version 2.6.0
 
 ## Library description:
 Get status bar height for React Native App
@@ -10,9 +10,9 @@ Get status bar height for React Native App
 | ------------------ | :-------------: |
 | Full name          | react-native-status-bar-height |
 | Keywords           | react-native |
-| # releases         | 9 |
-| # dependents       | 33 |
-| # downloads        | 1871921 |
+| # releases         | 10 |
+| # dependents       | 56 |
+| # downloads        | 3379925 |
 | # stars            | 0 |
 
 ## Links

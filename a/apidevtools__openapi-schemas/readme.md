@@ -10,9 +10,9 @@ JSON Schemas for every version of the OpenAPI Specification
 | ------------------ | :-------------: |
 | Full name          | @apidevtools/openapi-schemas |
 | Keywords           | openapi, open-api, swagger, oas, api, rest, json, specification, definition, schema |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 2 |
-| # downloads        | 1270647 |
+| # downloads        | 2179671 |
 | # stars            | 0 |
 
 ## Links

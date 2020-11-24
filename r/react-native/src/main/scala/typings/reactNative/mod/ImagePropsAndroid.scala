@@ -5,21 +5,24 @@ import typings.reactNative.reactNativeStrings.resize
 import typings.reactNative.reactNativeStrings.scale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImagePropsAndroid extends js.Object {
+  
   /**
     * Duration of fade in animation in ms. Defaults to 300
     *
     * @platform android
     */
   var fadeDuration: js.UndefOr[Double] = js.native
+  
   /**
     * Required if loading images via 'uri' from drawable folder on Android
     * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
     */
   var height: js.UndefOr[Double] = js.native
+  
   /**
     * The mechanism that should be used to resize the image when the image's dimensions
     * differ from the image view's dimensions. Defaults to auto.
@@ -34,47 +37,58 @@ trait ImagePropsAndroid extends js.Object {
     * It should also be used if the image is slightly bigger than the view.
     */
   var resizeMethod: js.UndefOr[auto | resize | scale] = js.native
+  
   /**
     * Required if loading images via 'uri' from drawable folder on Android.
     * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
     */
   var width: js.UndefOr[Double] = js.native
 }
-
 object ImagePropsAndroid {
+  
   @scala.inline
   def apply(): ImagePropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePropsAndroid]
   }
+  
   @scala.inline
   implicit class ImagePropsAndroidOps[Self <: ImagePropsAndroid] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFadeDuration(value: Double): Self = this.set("fadeDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFadeDuration: Self = this.set("fadeDuration", js.undefined)
+    
     @scala.inline
     def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setResizeMethod(value: auto | resize | scale): Self = this.set("resizeMethod", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResizeMethod: Self = this.set("resizeMethod", js.undefined)
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }
-  
 }
-

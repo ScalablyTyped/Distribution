@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConnectorConstraints extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.ConnectorConstraints")
 @js.native
 object ConnectorConstraints extends js.Object {
+  
   //Allows the object to drop over the connector.
   @js.native
   sealed trait AllowDrop extends ConnectorConstraints
@@ -93,6 +93,4 @@ object ConnectorConstraints extends js.Object {
   //Enables connector to be selected
   @js.native
   sealed trait Select extends ConnectorConstraints
-  
 }
-

@@ -6,7 +6,7 @@ import typings.echarts.anon.`23`
 import typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * **Theme river**
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesThemeRiver_ extends js.Object {
+  
   /**
     * Distance between thmemRiver component and the bottom side of
     * the container.
@@ -45,6 +46,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.native
+  
   /**
     * The boundary gap of the direction orthogonal with coordinate
     * axis in diagram, which is set to adjust the diagram position,
@@ -57,6 +59,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.boundaryGap
     */
   var boundaryGap: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * coordinate. The theme river adopts sinle time axis.
     *
@@ -66,6 +69,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.native
+  
   /**
     * Data array of series, which can be in the following forms:
     *
@@ -203,10 +207,12 @@ trait SeriesThemeRiver_ extends js.Object {
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ]
   ] = js.native
+  
   /**
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
     */
   var emphasis: js.UndefOr[`23`] = js.native
+  
   /**
     * Height of thmemRiver component.
     *
@@ -218,6 +224,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.height
     */
   var height: js.UndefOr[Double | String] = js.native
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -227,6 +234,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.id
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * style of each ribbon-shape river branch in theme river.
     *
@@ -234,6 +242,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.native
+  
   /**
     * `label` describes style of text labels with which each ribbon-shape
     * river branch corresponds in theme river.
@@ -242,6 +251,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
     */
   var label: js.UndefOr[TextBorderWidth] = js.native
+  
   /**
     * Distance between thmemRiver component and the left side of the
     * container.
@@ -259,6 +269,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.left
     */
   var left: js.UndefOr[Double | String] = js.native
+  
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -267,6 +278,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Distance between thmemRiver component and the right side of the
     * container.
@@ -280,6 +292,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.right
     */
   var right: js.UndefOr[Double | String] = js.native
+  
   /**
     * The index of single time axis, which defaults to be 0 because
     * it contains only one axis.
@@ -288,6 +301,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.singleAxisIndex
     */
   var singleAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * tooltip settings in this series.
     *
@@ -295,6 +309,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * Distance between thmemRiver component and the top side of the
     * container.
@@ -312,12 +327,14 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.top
     */
   var top: js.UndefOr[Double | String] = js.native
+  
   /**
     * @default
     * "themeRiver"
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.type
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * Width of thmemRiver component.
     *
@@ -325,6 +342,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.width
     */
   var width: js.UndefOr[Double | String] = js.native
+  
   /**
     * `z` value of all graghical elements in , which controls order
     * of drawing graphical components.
@@ -340,6 +358,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.z
     */
   var z: js.UndefOr[Double] = js.native
+  
   /**
     * `zlevel` value of all graphical elements in the series.
     *
@@ -359,109 +378,151 @@ trait SeriesThemeRiver_ extends js.Object {
     */
   var zlevel: js.UndefOr[Double] = js.native
 }
-
 object SeriesThemeRiver_ {
+  
   @scala.inline
   def apply(): SeriesThemeRiver_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesThemeRiver_]
   }
+  
   @scala.inline
   implicit class SeriesThemeRiver_Ops[Self <: SeriesThemeRiver_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBottom: Self = this.set("bottom", js.undefined)
+    
     @scala.inline
     def setBoundaryGapVarargs(value: js.Any*): Self = this.set("boundaryGap", js.Array(value :_*))
+    
     @scala.inline
     def setBoundaryGap(value: js.Array[_]): Self = this.set("boundaryGap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBoundaryGap: Self = this.set("boundaryGap", js.undefined)
+    
     @scala.inline
     def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: ((js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit)*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(
       value: js.Array[
           (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
         ]
     ): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: `23`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setLabel(value: TextBorderWidth): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabel: Self = this.set("label", js.undefined)
+    
     @scala.inline
     def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeft: Self = this.set("left", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRight: Self = this.set("right", js.undefined)
+    
     @scala.inline
     def setSingleAxisIndex(value: Double): Self = this.set("singleAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSingleAxisIndex: Self = this.set("singleAxisIndex", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTop: Self = this.set("top", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
+    
     @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZ: Self = this.set("z", js.undefined)
+    
     @scala.inline
     def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZlevel: Self = this.set("zlevel", js.undefined)
   }
-  
 }
-

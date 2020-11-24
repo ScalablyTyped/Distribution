@@ -8,10 +8,11 @@ import typings.std.IDBKeyRange
 import typings.std.IDBValidKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HasCursor[TValue, TKey] extends js.Object {
+  
   /** Due to the microtask issues in some browsers, iterating over a cursor using promises doesn't always work.
     * So in the mean time, iterateCursor maps to openCursor, takes identical arguments, plus an additional callback that receives an IDBCursor */
   def iterateCursor(callback: js.Function1[/* c */ Cursor[TValue, TKey], Unit]): Unit = js.native
@@ -58,6 +59,7 @@ trait HasCursor[TValue, TKey] extends js.Object {
     direction: prevunique,
     callback: js.Function1[/* c */ Cursor[TValue, TKey], Unit]
   ): Unit = js.native
+  
   /** Due to the microtask issues in some browsers, iterating over a cursor using promises doesn't always work.
     * So in the mean time, iterateKeyCursor maps to openKeyCursor, takes identical arguments, plus an additional callback that receives an IDBCursor */
   def iterateKeyCursor(callback: js.Function1[/* c */ Cursor[TValue, TKey], Unit]): Unit = js.native
@@ -104,6 +106,7 @@ trait HasCursor[TValue, TKey] extends js.Object {
     direction: prevunique,
     callback: js.Function1[/* c */ Cursor[TValue, TKey], Unit]
   ): Unit = js.native
+  
   /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves a new cursor object.
     * Used for iterating through an object store by primary key with a cursor.
     * @param range Optional. A key or IDBKeyRange to be queried. If a single valid key is passed, this will default to a range containing only that key. If nothing is passed, this will default to a key range that selects all the records in this object store.
@@ -136,6 +139,7 @@ trait HasCursor[TValue, TKey] extends js.Object {
   def openCursor_prevunique(range: Null, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_prevunique(range: IDBKeyRange, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+  
   /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves a new cursor object.
     * Used for iterating through an object store with a key.
     * @param range Optional. A key or IDBKeyRange to be queried. If a single valid key is passed, this will default to a range containing only that key. If nothing is passed, this will default to a key range that selects all the records in this object store.
@@ -169,4 +173,3 @@ trait HasCursor[TValue, TKey] extends js.Object {
   @JSName("openKeyCursor")
   def openKeyCursor_prevunique(range: IDBKeyRange, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
 }
-

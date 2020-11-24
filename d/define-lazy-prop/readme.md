@@ -12,7 +12,7 @@ Define a lazily evaluated property on an object
 | Keywords           | lazy, property, properties, prop, define, object, value, lazily, laziness, evaluation, eval, execute, getter, function, fn, memoize, cache, defer, deferred |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 499 |
+| # downloads        | 542 |
 | # stars            | 0 |
 
 ## Links

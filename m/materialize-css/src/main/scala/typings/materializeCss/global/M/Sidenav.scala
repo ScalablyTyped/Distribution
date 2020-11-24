@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialSidenavOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("M.Sidenav")
 @js.native
 class Sidenav ()
   extends typings.materializeCss.M.Sidenav
-
 /* static members */
 @JSGlobal("M.Sidenav")
 @js.native
 object Sidenav extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.Sidenav = js.native
+  
   /**
     * Init Sidenavs
     */
@@ -35,4 +36,3 @@ object Sidenav extends js.Object {
   def init(els: Element): typings.materializeCss.M.Sidenav = js.native
   def init(els: Element, options: PartialSidenavOptions): typings.materializeCss.M.Sidenav = js.native
 }
-

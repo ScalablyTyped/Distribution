@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Storelayoutclusters")
 @js.native
 class ResourceStorelayoutclusters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.storelayoutclusters.delete
     * @desc Deletes a cluster.
@@ -43,6 +45,7 @@ class ResourceStorelayoutclusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutclusters.get
     * @desc Retrieves details of a cluster.
@@ -73,6 +76,7 @@ class ResourceStorelayoutclusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreCluster]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutclusters.insert
     * @desc Inserts a new cluster in a page.
@@ -106,6 +110,7 @@ class ResourceStorelayoutclusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreCluster]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutclusters.list
     * @desc Retrieves the details of all clusters on the specified page.
@@ -138,6 +143,7 @@ class ResourceStorelayoutclusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreLayoutClustersListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutclusters.patch
     * @desc Updates a cluster. This method supports patch semantics.
@@ -169,6 +175,7 @@ class ResourceStorelayoutclusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreCluster]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutclusters.update
     * @desc Updates a cluster.
@@ -204,4 +211,3 @@ class ResourceStorelayoutclusters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaStoreCluster]
   ): Unit = js.native
 }
-

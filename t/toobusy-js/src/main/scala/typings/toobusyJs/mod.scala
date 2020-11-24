@@ -2,16 +2,18 @@ package typings.toobusyJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("toobusy-js", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Main export function.
     * @return True if node process is too busy.
     */
   def apply(): Boolean = js.native
+  
   /**
     * Sets or gets the current check interval.
     * If you want more sensitive checking, set a faster (lower) interval. A lower maxLag can also create a more
@@ -21,11 +23,13 @@ object mod extends js.Object {
     */
   def interval(): Double = js.native
   def interval(newInterval: Double): Double = js.native
+  
   /**
     * Returns last lag reading from last check interval.
     * @return Lag in ms.
     */
   def lag(): Double = js.native
+  
   /**
     * Set or get the current max latency threshold. Default is 70ms.
     *
@@ -39,6 +43,7 @@ object mod extends js.Object {
     */
   def maxLag(): Double = js.native
   def maxLag(newLag: Double): Double = js.native
+  
   /**
     * Registers an event listener for lag events,
     * optionally specify a minimum value threshold for events being emitted
@@ -47,6 +52,7 @@ object mod extends js.Object {
     */
   def onLag(fn: js.Function1[/* lag */ Double, Unit]): Unit = js.native
   def onLag(fn: js.Function1[/* lag */ Double, Unit], threshold: Double): Unit = js.native
+  
   /**
     * Shuts down toobusy.
     *
@@ -54,6 +60,7 @@ object mod extends js.Object {
     * on toobusy's check interval, so it will never keep the server open.
     */
   def shutdown(): Unit = js.native
+  
   /**
     * Set or get the smoothing factor. Default is 0.3333....
     *
@@ -65,6 +72,6 @@ object mod extends js.Object {
     */
   def smoothingFactor(): Double = js.native
   def smoothingFactor(newFactor: Double): Double = js.native
+  
   def started(): Boolean = js.native
 }
-

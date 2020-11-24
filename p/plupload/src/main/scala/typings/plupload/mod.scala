@@ -4,37 +4,48 @@ import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plupload", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class Uploader protected ()
-    extends typings.plupload.plupload.Uploader {
-    def this(settings: pluploadSettings) = this()
-  }
   
   val DONE: Double = js.native
+  
   val FAILED: Double = js.native
+  
   val FILE_DUPLICATE_ERROR: Double = js.native
+  
   val FILE_EXTENSION_ERROR: Double = js.native
+  
   val FILE_SIZE_ERROR: Double = js.native
+  
   val GENERIC_ERROR: Double = js.native
+  
   val HTTP_ERROR: Double = js.native
+  
   val IMAGE_DIMENSIONS_ERROR: Double = js.native
+  
   val IMAGE_FORMAT_ERROR: Double = js.native
+  
   val INIT_ERROR: Double = js.native
+  
   val IO_ERROR: Double = js.native
+  
   val MEMORY_ERROR: Double = js.native
+  
   val QUEUED: Double = js.native
+  
   val SECURITY_ERROR: Double = js.native
+  
   val STARTED: Double = js.native
+  
   val STOPPED: Double = js.native
+  
   val UPLOADING: Double = js.native
+  
   val VERSION: String = js.native
-  val mimeTypes: js.Any = js.native
-  val ua: js.Any = js.native
+  
   /**
     * Adds specified className to specified DOM element.
     *
@@ -44,6 +55,7 @@ object mod extends js.Object {
     * @param {String} name Class name
     */
   def addClass(obj: js.Any, name: String): js.Any = js.native
+  
   /**
     * Adds an event handler to the specified object and store reference to the handler
     * in objects internal Plupload registry (@see removeEvent).
@@ -57,6 +69,7 @@ object mod extends js.Object {
     */
   def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = js.native
   def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = js.native
+  
   /**
     * Registers a filter that will be executed for each file added to the queue.
     * If callback returns false, file will not be added.
@@ -70,6 +83,7 @@ object mod extends js.Object {
     * @param {String} cb Callback - the actual routine that every added file must pass
     */
   def addFileFilter(name: String, cb: js.Function): Unit = js.native
+  
   /**
     * Extends the language pack object with new items.
     *
@@ -79,6 +93,7 @@ object mod extends js.Object {
     * @return {Object} Extended language pack object.
     */
   def addI18n(pack: js.Any): js.Any = js.native
+  
   /**
     * Builds a full url out of a base URL and an object with items to append as query string items.
     *
@@ -89,6 +104,7 @@ object mod extends js.Object {
     * @return {String} String with url + serialized query string items.
     */
   def buildUrl(url: String, items: js.Any): String = js.native
+  
   /**
     * Cleans the specified name from national characters (diacritics). The result will be a name with only a-z, 0-9 and _.
     *
@@ -98,6 +114,7 @@ object mod extends js.Object {
     * @return {String} Cleaned string.
     */
   def cleanName(name: String): String = js.native
+  
   /** Utility methods **/
   /**
     * Executes the callback function for each item in array/object. If you return false in the
@@ -109,6 +126,7 @@ object mod extends js.Object {
     * @param {function} callback Callback function to execute for each item.
     */
   def each(obj: js.Any, callback: js.Function): Unit = js.native
+  
   /**
     * Extends the specified object with another object.
     *
@@ -119,6 +137,7 @@ object mod extends js.Object {
     * @return {Object} Same as target, the extended object.
     */
   def extend(target: js.Any): js.Any = js.native
+  
   /**
     * Formats the specified number as a size string for example 1024 becomes 1 KB.
     *
@@ -128,6 +147,7 @@ object mod extends js.Object {
     * @return {String} Formatted size string.
     */
   def formatSize(size: Double): String = js.native
+  
   /**
     * Returns the absolute x, y position of an Element. The position will be returned in a object with x, y fields.
     *
@@ -138,6 +158,7 @@ object mod extends js.Object {
     * @return {object} Absolute position of the specified element object with x, y fields.
     */
   def getPos(node: Element, root: Element): js.Any = js.native
+  
   /**
     * Returns the size of the specified node in pixels.
     *
@@ -147,6 +168,7 @@ object mod extends js.Object {
     * @return {Object} Object with a w and h property.
     */
   def getSize(node: Node): js.Any = js.native
+  
   /**
     * Returns a given computed style of a DOM element.
     *
@@ -156,6 +178,7 @@ object mod extends js.Object {
     * @param {String} name Style you want to get from the DOM element
     */
   def getStyle(obj: js.Any, name: String): js.Any = js.native
+  
   /**
     * Generates an unique ID. This is 99.99% unique since it takes the current time and 5 random numbers.
     * The only way a user would be able to get the same ID is if the two persons at the same exact millisecond manages
@@ -168,6 +191,7 @@ object mod extends js.Object {
     * @return {String} Virtually unique id.
     */
   def guid(guid: String): String = js.native
+  
   /**
     * Checks if specified DOM element has specified class.
     *
@@ -177,6 +201,7 @@ object mod extends js.Object {
     * @param {String} name Class name
     */
   def hasClass(obj: js.Any, name: String): js.Any = js.native
+  
   /**
     * Find an element in array and return its index if present, otherwise return -1.
     *
@@ -187,6 +212,7 @@ object mod extends js.Object {
     * @return {Int} Index of the element, or -1 if not found
     */
   def inArray(needle: js.Any, array: js.Array[_]): Double = js.native
+  
   /**
     Recieve an array of functions (usually async) to call in sequence, each  function
     receives a callback as first argument that it should call, when it completes. Finally,
@@ -199,6 +225,7 @@ object mod extends js.Object {
     @param {Function} cb Main callback that is called in the end, or in case of error
     */
   def inSeries(queue: js.Array[_], callback: js.Function): Unit = js.native
+  
   /**
     * Checks if object is empty.
     *
@@ -208,6 +235,9 @@ object mod extends js.Object {
     * @return {Boolean}
     */
   def isEmptyObj(obj: js.Any): Boolean = js.native
+  
+  val mimeTypes: js.Any = js.native
+  
   def parseSize(size: String): Double = js.native
   /**
     * Parses the specified size string into a byte value. For example 10kb becomes 10240.
@@ -218,6 +248,7 @@ object mod extends js.Object {
     * @return {Number} Size in bytes.
     */
   def parseSize(size: Double): Double = js.native
+  
   /**
     * A way to predict what runtime will be choosen in the current environment with the
     * specified settings.
@@ -229,6 +260,7 @@ object mod extends js.Object {
     * @return {String} Type of compatible runtime
     */
   def predictRuntime(config: js.Any, runtimes: String): String = js.native
+  
   /**
     * Remove all kind of events from the specified object
     *
@@ -239,6 +271,7 @@ object mod extends js.Object {
     */
   def removeAllEvents(obj: js.Any): js.Any = js.native
   def removeAllEvents(obj: js.Any, key: String): js.Any = js.native
+  
   /**
     * Removes specified className from specified DOM element.
     *
@@ -248,6 +281,7 @@ object mod extends js.Object {
     * @param {String} name Class name
     */
   def removeClass(obj: js.Any, name: String): js.Any = js.native
+  
   /**
     * Remove event handler from the specified object. If third argument (callback)
     * is not specified remove all events with the specified name.
@@ -261,6 +295,7 @@ object mod extends js.Object {
   def removeEvent(obj: js.Any, name: String): js.Any = js.native
   def removeEvent(obj: js.Any, name: String, optional: String): js.Any = js.native
   def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = js.native
+  
   /**
     * Pseudo sprintf implementation - simple way to replace tokens with specified values.
     *
@@ -268,6 +303,7 @@ object mod extends js.Object {
     * @return {String} String with replaced tokens
     */
   def sprintf(str: String): String = js.native
+  
   /**
     * Forces anything into an array.
     *
@@ -277,6 +313,7 @@ object mod extends js.Object {
     * @return {Array} Array object containing all items.
     */
   def toArray(obj: js.Any): js.Array[_] = js.native
+  
   /**
     * Translates the specified string by checking for the english string in the language pack lookup.
     *
@@ -286,6 +323,7 @@ object mod extends js.Object {
     * @return {String} Translated string or the input string if it wasn't found.
     */
   def translate(str: String): String = js.native
+  
   /**
     * Gets the true type of the built-in object (better version of typeof).
     * @credits Angus Croll (http://javascriptweblog.wordpress.com/)
@@ -296,6 +334,9 @@ object mod extends js.Object {
     * @return {String} Object [[Class]]
     */
   def typeOf(o: js.Any): String = js.native
+  
+  val ua: js.Any = js.native
+  
   /**
     * Encodes the specified string.
     *
@@ -305,5 +346,10 @@ object mod extends js.Object {
     * @return {String} Encoded string.
     */
   def xmlEncode(str: String): String = js.native
+  
+  @js.native
+  class Uploader protected ()
+    extends typings.plupload.plupload.Uploader {
+    def this(settings: pluploadSettings) = this()
+  }
 }
-

@@ -4,7 +4,7 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ChromaticAberrationPostProcess")
 @js.native
@@ -27,115 +27,25 @@ class ChromaticAberrationPostProcess protected ()
     name: String,
     screenWidth: Double,
     screenHeight: Double,
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera]
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera]
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: Double,
+    options: Double | PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    name: String,
-    screenWidth: Double,
-    screenHeight: Double,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
+    samplingMode: js.UndefOr[Double],
+    engine: js.UndefOr[typings.babylonjs.BABYLON.Engine],
+    reusable: js.UndefOr[Boolean],
+    textureType: js.UndefOr[Double],
+    blockCompilation: js.UndefOr[Boolean]
   ) = this()
 }
-
+/* static members */
+@JSGlobal("BABYLON.ChromaticAberrationPostProcess")
+@js.native
+object ChromaticAberrationPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.BABYLON.Camera,
+    scene: typings.babylonjs.BABYLON.Scene,
+    rootUrl: String
+  ): Nullable[typings.babylonjs.BABYLON.ChromaticAberrationPostProcess] = js.native
+}

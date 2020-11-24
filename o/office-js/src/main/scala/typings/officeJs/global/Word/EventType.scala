@@ -2,7 +2,7 @@ package typings.officeJs.global.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,14 +13,21 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.EventType")
 @js.native
 object EventType extends js.Object {
-  /* "AnnotationAdded" */ val annotationAdded: typings.officeJs.Word.EventType.annotationAdded with String = js.native
-  /* "AnnotationChanged" */ val annotationChanged: typings.officeJs.Word.EventType.annotationChanged with String = js.native
-  /* "AnnotationDeleted" */ val annotationDeleted: typings.officeJs.Word.EventType.annotationDeleted with String = js.native
-  /* "ContentControlAdded" */ val contentControlAdded: typings.officeJs.Word.EventType.contentControlAdded with String = js.native
-  /* "ContentControlDataChanged" */ val contentControlDataChanged: typings.officeJs.Word.EventType.contentControlDataChanged with String = js.native
-  /* "ContentControlDeleted" */ val contentControlDeleted: typings.officeJs.Word.EventType.contentControlDeleted with String = js.native
-  /* "ContentControlSelectionChanged" */ val contentControlSelectionChanged: typings.officeJs.Word.EventType.contentControlSelectionChanged with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Word.EventType with String] = js.native
+  
+  /* "AnnotationAdded" */ val annotationAdded: typings.officeJs.Word.EventType.annotationAdded with String = js.native
+  
+  /* "AnnotationChanged" */ val annotationChanged: typings.officeJs.Word.EventType.annotationChanged with String = js.native
+  
+  /* "AnnotationDeleted" */ val annotationDeleted: typings.officeJs.Word.EventType.annotationDeleted with String = js.native
+  
+  /* "ContentControlAdded" */ val contentControlAdded: typings.officeJs.Word.EventType.contentControlAdded with String = js.native
+  
+  /* "ContentControlDataChanged" */ val contentControlDataChanged: typings.officeJs.Word.EventType.contentControlDataChanged with String = js.native
+  
+  /* "ContentControlDeleted" */ val contentControlDeleted: typings.officeJs.Word.EventType.contentControlDeleted with String = js.native
+  
+  /* "ContentControlSelectionChanged" */ val contentControlSelectionChanged: typings.officeJs.Word.EventType.contentControlSelectionChanged with String = js.native
 }
-

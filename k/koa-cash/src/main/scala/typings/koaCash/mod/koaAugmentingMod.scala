@@ -2,14 +2,16 @@ package typings.koaCash.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("koa", JSImport.Namespace)
 @js.native
 object koaAugmentingMod extends js.Object {
+  
   @js.native
   trait BaseContext extends js.Object {
+    
     /**
       * This is how you enable a route to be cached. If you don't call await ctx.cashed(),
       * then this route will not be cached nor will it attempt to serve the request from the cache.
@@ -25,6 +27,4 @@ object koaAugmentingMod extends js.Object {
     def cashed(): js.Promise[Boolean] = js.native
     def cashed(maxAge: Double): js.Promise[Boolean] = js.native
   }
-  
 }
-

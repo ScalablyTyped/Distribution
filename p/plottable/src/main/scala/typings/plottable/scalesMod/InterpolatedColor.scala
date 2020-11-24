@@ -2,7 +2,7 @@ package typings.plottable.scalesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/scales", "InterpolatedColor")
 @js.native
@@ -15,13 +15,14 @@ class InterpolatedColor ()
   extends typings.plottable.interpolatedColorScaleMod.InterpolatedColor {
   def this(scaleType: String) = this()
 }
-
 /* static members */
 @JSImport("plottable/build/src/scales", "InterpolatedColor")
 @js.native
 object InterpolatedColor extends js.Object {
+  
   var BLUES: js.Array[String] = js.native
+  
   var POSNEG: js.Array[String] = js.native
+  
   var REDS: js.Array[String] = js.native
 }
-

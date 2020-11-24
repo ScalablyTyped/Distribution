@@ -3,7 +3,7 @@ package typings.googlepay.google.payments.api
 import typings.googlepay.googlepayStrings.default_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Supported colors for the Google Pay button.
@@ -26,13 +26,14 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.white
 */
 trait ButtonColor extends js.Object
-
 object ButtonColor {
+  
   @scala.inline
   def black: typings.googlepay.googlepayStrings.black = "black".asInstanceOf[typings.googlepay.googlepayStrings.black]
+  
   @scala.inline
   def default: default_ = "default".asInstanceOf[default_]
+  
   @scala.inline
   def white: typings.googlepay.googlepayStrings.white = "white".asInstanceOf[typings.googlepay.googlepayStrings.white]
 }
-

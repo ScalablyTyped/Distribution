@@ -8,52 +8,23 @@ import typings.emberRouting.typesMod.RenderOptions
 import typings.emberRouting.typesMod.RouteQueryParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember/routing/route", JSImport.Namespace)
 @js.native
 object routeMod extends js.Object {
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : EmberObject.extend(ActionHandler, Evented) * / any */ @js.native
   trait Route extends js.Object {
-    // properties
-    /**
-      * The controller associated with this route.
-      */
-    var controller: typings.emberController.mod.default = js.native
-    /**
-      * The name of the controller to associate with this route.
-      * By default, Ember will lookup a route's controller that matches the name
-      * of the route (i.e. `App.PostController` for `App.PostRoute`). However,
-      * if you would like to define a specific controller to use, you can do so
-      * using this property.
-      * This is useful in many ways, as the controller specified will be:
-      * * p assed to the `setupController` method.
-      * * used as the controller for the view being rendered by the route.
-      * * returned from a call to `controllerFor` for the route.
-      */
-    var controllerName: String = js.native
-    /**
-      * Configuration hash for this route's queryParams.
-      */
-    var queryParams: StringDictionary[RouteQueryParam] = js.native
-    /**
-      * The name of the route, dot-delimited
-      */
-    var routeName: String = js.native
-    /**
-      * The name of the template to use by default when rendering this routes
-      * template.
-      * This is similar with `viewName`, but is useful when you just want a custom
-      * template without a view.
-      */
-    var templateName: String = js.native
+    
     // events
     /**
       * This hook is executed when the router enters the route. It is not executed
       * when the model for the route changes.
       */
     def activate(): Unit = js.native
+    
     // methods
     /**
       * This hook is called after this route's model has resolved.
@@ -63,7 +34,8 @@ object routeMod extends js.Object {
       * logic that can only take place after the model has already
       * resolved.
       */
-    def afterModel(resolvedModel: js.Any, transition: Transition): js.Any = js.native
+    def afterModel(resolvedModel: js.Any, transition: Transition[_]): js.Any = js.native
+    
     /**
       * This hook is the first of the route entry validation hooks
       * called when an attempt is made to transition into a route
@@ -84,7 +56,44 @@ object routeMod extends js.Object {
       * be useful, for instance, for retrieving async code from
       * the server that is required to enter a route.
       */
-    def beforeModel(transition: Transition): js.Any = js.native
+    def beforeModel(transition: Transition[_]): js.Any = js.native
+    
+    /**
+      * Allows you to produce custom metadata for the route.
+      * The return value of this method will be attached to
+      * its corresponding RouteInfoWithAttributes object.
+      * Example
+      * ```app/routes/posts/index.js
+      * import Route from '@ember/routing/route';
+      * export default class PostsIndexRoute extends Route {
+      *   buildRouteInfoMetadata() {
+      *     return { title: 'Posts Page' }
+      *   }
+      * }
+      * ```
+      * ```app/routes/application.js
+      * import Route from '@ember/routing/route';
+      * import { inject as service } from '@ember/service';
+      * export default class ApplicationRoute extends Route {
+      *   @service router
+      *   constructor() {
+      *     super(...arguments);
+      *     this.router.on('routeDidChange', transition => {
+      *       document.title = transition.to.metadata.title;
+      *       // would update document's title to "Posts Page"
+      *     });
+      *   }
+      * }
+      * ```
+      */
+    def buildRouteInfoMetadata(): js.Any = js.native
+    
+    // properties
+    /**
+      * The controller associated with this route.
+      */
+    var controller: typings.emberController.mod.default = js.native
+    
     /**
       * Returns the controller of the current route, or a parent (or any
       * ancestor) route in a route hierarchy.
@@ -95,11 +104,26 @@ object routeMod extends js.Object {
       * @param name the name of the route or controller
       */
     def controllerFor(name: String): typings.emberController.mod.default = js.native
+    
+    /**
+      * The name of the controller to associate with this route.
+      * By default, Ember will lookup a route's controller that matches the name
+      * of the route (i.e. `App.PostController` for `App.PostRoute`). However,
+      * if you would like to define a specific controller to use, you can do so
+      * using this property.
+      * This is useful in many ways, as the controller specified will be:
+      * * p assed to the `setupController` method.
+      * * used as the controller for the view being rendered by the route.
+      * * returned from a call to `controllerFor` for the route.
+      */
+    var controllerName: String = js.native
+    
     /**
       * This hook is executed when the router completely exits this route. It is
       * not executed when the model for the route changes.
       */
     def deactivate(): Unit = js.native
+    
     /**
       * The didTransition action is fired after a transition has successfully been
       * completed. This occurs after the normal model hooks (beforeModel, model,
@@ -108,18 +132,21 @@ object routeMod extends js.Object {
       * state on the controller.
       */
     def didTransition(): Unit = js.native
+    
     /**
       * Disconnects a view that has been rendered into an outlet.
       */
     def disconnectOutlet(options: String): Unit = js.native
     def disconnectOutlet(options: Outlet): Unit = js.native
+    
     /**
       * When attempting to transition into a route, any of the hooks may return a promise
       * that rejects, at which point an error action will be fired on the partially-entered
       * routes, allowing for per-route error handling logic, or shared error handling logic
       * defined on a parent route.
       */
-    def error(error: js.Any, transition: Transition): Unit = js.native
+    def error(error: js.Any, transition: Transition[_]): Unit = js.native
+    
     // https://emberjs.com/api/ember/3.2/classes/Route/methods/intermediateTransitionTo?anchor=intermediateTransitionTo
     /**
       * Perform a synchronous transition into another route without attempting to resolve promises,
@@ -131,18 +158,21 @@ object routeMod extends js.Object {
       *                       transitioning to the route.
       * @returns              the Transition object associated with this attempted transition
       */
-    def intermediateTransitionTo(name: String, `object`: js.Any*): Transition = js.native
+    def intermediateTransitionTo(name: String, `object`: js.Any*): Transition[_] = js.native
+    
     /**
       * The loading action is fired on the route when a route's model hook returns a
       * promise that is not already resolved. The current Transition object is the first
       * parameter and the route that triggered the loading event is the second parameter.
       */
-    def loading(transition: Transition, route: Route): Unit = js.native
+    def loading(transition: Transition[_], route: Route): Unit = js.native
+    
     /**
       * A hook you can implement to convert the URL into the model for
       * this route.
       */
-    def model(params: js.Object, transition: Transition): js.Any = js.native
+    def model(params: js.Object, transition: Transition[_]): js.Any = js.native
+    
     /**
       * Returns the model of a parent (or any ancestor) route
       * in a route hierarchy.  During a transition, all routes
@@ -153,11 +183,18 @@ object routeMod extends js.Object {
       * retrieve it.
       */
     def modelFor(name: String): js.Object = js.native
+    
     /**
       * Retrieves parameters, for current route using the state.params
       * variable and getQueryParamsFor, using the supplied routeName.
       */
     def paramsFor(name: String): js.Object = js.native
+    
+    /**
+      * Configuration hash for this route's queryParams.
+      */
+    var queryParams: StringDictionary[RouteQueryParam] = js.native
+    
     /**
       * A hook you can implement to optionally redirect to another route.
       *
@@ -178,7 +215,8 @@ object routeMod extends js.Object {
       * both the resolved model and attempted entry into this route
       * are considered to be fully validated.
       */
-    def redirect(model: js.Object, transition: Transition): Unit = js.native
+    def redirect(model: js.Object, transition: Transition[_]): Unit = js.native
+    
     /**
       * Refresh the model on this route and any child routes, firing the
       * `beforeModel`, `model`, and `afterModel` hooks in a similar fashion
@@ -193,7 +231,8 @@ object routeMod extends js.Object {
       * that were provided a model object when the route was initially
       * entered.
       */
-    def refresh(): Transition = js.native
+    def refresh(): Transition[_] = js.native
+    
     /**
       * `render` is used to render a template into a region of another template
       * (indicated by an `{{outlet}}`). `render` is used both during the entry
@@ -204,8 +243,10 @@ object routeMod extends js.Object {
       * controllerName and templateName properties.
       */
     def render(): Unit = js.native
+    def render(name: js.UndefOr[scala.Nothing], options: RenderOptions): Unit = js.native
     def render(name: String): Unit = js.native
     def render(name: String, options: RenderOptions): Unit = js.native
+    
     /**
       * A hook you can use to render the template for the current route.
       * This method is called with the controller for the current route and the
@@ -215,23 +256,32 @@ object routeMod extends js.Object {
       * alternative templates.
       */
     def renderTemplate(controller: typings.emberController.mod.default, model: js.Object): Unit = js.native
+    
     /**
       * Transition into another route while replacing the current URL, if possible.
       * This will replace the current history entry instead of adding a new one.
       * Beside that, it is identical to `transitionTo` in all other respects. See
       * 'transitionTo' for additional information regarding multiple models.
       */
-    def replaceWith(name: String, args: js.Any*): Transition = js.native
+    def replaceWith(name: String, args: js.Any*): Transition[_] = js.native
+    
     /**
       * A hook you can use to reset controller values either when the model
       * changes or the route is exiting.
       */
-    def resetController(controller: typings.emberController.mod.default, isExiting: Boolean, transition: Transition): Unit = js.native
+    def resetController(controller: typings.emberController.mod.default, isExiting: Boolean, transition: Transition[_]): Unit = js.native
+    
+    /**
+      * The name of the route, dot-delimited
+      */
+    var routeName: String = js.native
+    
     /**
       * Sends an action to the router, which will delegate it to the currently active
       * route hierarchy per the bubbling rules explained under actions.
       */
     def send(name: String, args: js.Any*): Unit = js.native
+    
     /**
       * A hook you can implement to convert the route's model into parameters
       * for the URL.
@@ -244,6 +294,7 @@ object routeMod extends js.Object {
       * in order to populate the URL.
       */
     def serialize(model: js.Object, params: js.Array[String]): String | js.Object = js.native
+    
     /**
       * A hook you can use to setup the controller for the current route.
       * This method is called with the controller for the current route and the
@@ -255,7 +306,16 @@ object routeMod extends js.Object {
       * when implementing your `setupController` function, make sure to call
       * `_super`
       */
-    def setupController(controller: typings.emberController.mod.default, model: js.Object, transition: Transition): Unit = js.native
+    def setupController(controller: typings.emberController.mod.default, model: js.Object, transition: Transition[_]): Unit = js.native
+    
+    /**
+      * The name of the template to use by default when rendering this routes
+      * template.
+      * This is similar with `viewName`, but is useful when you just want a custom
+      * template without a view.
+      */
+    var templateName: String = js.native
+    
     /**
       * Transition the application into another route. The route may
       * be either a single route or route path:
@@ -446,11 +506,11 @@ object routeMod extends js.Object {
       * @returns       the Transition object associated with this attempted
       *                transition
       */
-    def transitionTo(name: String): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel, modelsD: RouteModel): Transition = js.native
+    def transitionTo(name: String): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel, modelsD: RouteModel): Transition[_] = js.native
     def transitionTo(
       name: String,
       modelsA: RouteModel,
@@ -458,18 +518,19 @@ object routeMod extends js.Object {
       modelsC: RouteModel,
       modelsD: RouteModel,
       options: QueryParams
-    ): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel, options: QueryParams): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, options: QueryParams): Transition = js.native
-    def transitionTo(name: String, options: QueryParams): Transition = js.native
-    def transitionTo(options: QueryParams): Transition = js.native
+    ): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel, options: QueryParams): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): Transition[_] = js.native
+    def transitionTo(name: String, modelsA: RouteModel, options: QueryParams): Transition[_] = js.native
+    def transitionTo(name: String, options: QueryParams): Transition[_] = js.native
+    def transitionTo(options: QueryParams): Transition[_] = js.native
+    
     /**
       * The willTransition action is fired at the beginning of any attempted transition
       * with a Transition object as the sole argument. This action can be used for aborting,
       * redirecting, or decorating the transition from the currently active routes.
       */
-    def willTransition(transition: Transition): Unit = js.native
+    def willTransition(transition: Transition[_]): Unit = js.native
   }
   
   @js.native
@@ -478,4 +539,3 @@ object routeMod extends js.Object {
   // tslint:disable-next-line:strict-export-declare-modifiers
   type RouteModel = js.Object | String | Double
 }
-

@@ -6,7 +6,7 @@ import typings.jupyterlabServices.messagesMod.IExecuteReplyMsg
 import typings.luminoCoreutils.jsonMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "CodeCell")
 @js.native
@@ -17,10 +17,10 @@ class CodeCell protected ()
     */
   def this(options: IOptions) = this()
 }
-
 @JSImport("@jupyterlab/cells", "CodeCell")
 @js.native
 object CodeCell extends js.Object {
+  
   /**
     * Execute a cell given a client session.
     */
@@ -31,4 +31,3 @@ object CodeCell extends js.Object {
     metadata: JSONObject
   ): js.Promise[IExecuteReplyMsg | Unit] = js.native
 }
-

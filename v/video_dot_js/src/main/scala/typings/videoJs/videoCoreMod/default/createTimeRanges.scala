@@ -3,11 +3,12 @@ package typings.videoJs.videoCoreMod.default
 import typings.videoJs.mod.videojs.TimeRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "createTimeRanges")
 @js.native
 object createTimeRanges extends js.Object {
+  
   /**
     * Should create a fake `TimeRange` object which mimics an HTML5 time range instance.
     *
@@ -24,4 +25,3 @@ object createTimeRanges extends js.Object {
   def apply(start: Double): TimeRange = js.native
   def apply(start: Double, end: Double): TimeRange = js.native
 }
-

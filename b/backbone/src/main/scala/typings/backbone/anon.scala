@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.backbone.mod.Collection
+import typings.backbone.mod.CombinedModelConstructorOptions
 import typings.backbone.mod.History_
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
@@ -26,19 +27,20 @@ import typings.std.HTMLSelectElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait TypeofCollection
-    extends Instantiable0[Collection[Model[js.Any, ModelSetOptions]]]
+    extends Instantiable0[Collection[Model[js.Any, ModelSetOptions, js.Object]]]
        with Instantiable1[
           /* models */ js.Array[
             (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
           ], 
-          Collection[Model[js.Any, ModelSetOptions]]
+          Collection[Model[js.Any, ModelSetOptions, js.Object]]
         ]
        with Instantiable2[
           js.UndefOr[
@@ -47,8 +49,9 @@ object anon extends js.Object {
             ]
           ], 
           /* options */ js.Any, 
-          Collection[Model[js.Any, ModelSetOptions]]
+          Collection[Model[js.Any, ModelSetOptions, js.Object]]
         ] {
+    
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
@@ -58,23 +61,28 @@ object anon extends js.Object {
   
   @js.native
   trait TypeofHistory extends Instantiable0[History_] {
+    
     var started: Boolean = js.native
   }
   
   @js.native
   trait TypeofModel
-    extends Instantiable0[Model[js.Object, js.Object]]
+    extends Instantiable0[Model[js.Object, js.Object, js.Object]]
        with Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam T */ /* attributes */ js.Any, 
-          Model[js.Object, js.Object]
+          Model[js.Object, js.Object, js.Object]
         ]
        with Instantiable2[
           js.UndefOr[
             /* import warning: RewrittenClass.unapply cls was tparam T */ /* attributes */ js.Any
           ], 
-          /* options */ js.Any, 
-          Model[js.Object, js.Object]
+          /* options */ CombinedModelConstructorOptions[
+            /* import warning: RewrittenClass.unapply cls was tparam E */ js.Any, 
+            Model[js.Any, ModelSetOptions, js.Object]
+          ], 
+          Model[js.Object, js.Object, js.Object]
         ] {
+    
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
@@ -86,6 +94,7 @@ object anon extends js.Object {
   trait TypeofRouter
     extends Instantiable0[Router]
        with Instantiable1[/* options */ RouterOptions, Router] {
+    
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
@@ -95,11 +104,12 @@ object anon extends js.Object {
   
   @js.native
   trait TypeofView
-    extends Instantiable0[View[Model[js.Any, ModelSetOptions]]]
+    extends Instantiable0[View[Model[js.Any, ModelSetOptions, js.Object]]]
        with Instantiable1[
           /* options */ ViewOptions[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
-          View[Model[js.Any, ModelSetOptions]]
+          View[Model[js.Any, ModelSetOptions, js.Object]]
         ] {
+    
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
@@ -109,29 +119,7 @@ object anon extends js.Object {
   
   @js.native
   trait Typeofbackbone extends js.Object {
-    @JSName("$")
-    var $_Original: JQueryStatic = js.native
-    var Collection: TypeofCollection = js.native
-    val Events: typings.backbone.mod.Events = js.native
-    /**
-      * Helper to avoid code repetition in type declarations.
-      * Backbone.Events cannot be extended, hence a separate abstract
-      * class with a different name. Both classes and interfaces can
-      * extend from this helper class to reuse the signatures.
-      *
-      * For class type declarations that already extend another base
-      * class, and for actual class definitions, please see the
-      * Events_* interfaces above.
-      */
-    var EventsMixin: Instantiable0[typings.backbone.mod.EventsMixin] = js.native
-    var History: TypeofHistory = js.native
-    var Model: TypeofModel = js.native
-    var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
-    var Router: TypeofRouter = js.native
-    var View: TypeofView = js.native
-    var emulateHTTP: Boolean = js.native
-    var emulateJSON: Boolean = js.native
-    var history: History_ = js.native
+    
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
       * @param element A DOM element to wrap in a jQuery object.
@@ -249,6 +237,8 @@ object anon extends js.Object {
     def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery[TElement] = js.native
     @JSName("$")
     def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
+    @JSName("$")
+    var $_Original: JQueryStatic = js.native
     /**
       * Accepts a string containing a CSS selector which is then used to match a set of elements.
       * @param selector A string containing a selector expression
@@ -299,16 +289,57 @@ object anon extends js.Object {
       */
     @JSName("$")
     def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
+    
+    var Collection: TypeofCollection = js.native
+    
+    val Events: typings.backbone.mod.Events = js.native
+    
+    /**
+      * Helper to avoid code repetition in type declarations.
+      * Backbone.Events cannot be extended, hence a separate abstract
+      * class with a different name. Both classes and interfaces can
+      * extend from this helper class to reuse the signatures.
+      *
+      * For class type declarations that already extend another base
+      * class, and for actual class definitions, please see the
+      * Events_* interfaces above.
+      */
+    var EventsMixin: Instantiable0[typings.backbone.mod.EventsMixin] = js.native
+    
+    var History: TypeofHistory = js.native
+    
+    /**
+      * E - Extensions to the model constructor options. You can accept additional constructor options
+      * by listing them in the E parameter.
+      */
+    var Model: TypeofModel = js.native
+    
+    var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
+    
+    var Router: TypeofRouter = js.native
+    
+    var View: TypeofView = js.native
+    
     def ajax(): JQueryXHR = js.native
     def ajax(options: JQueryAjaxSettings): JQueryXHR = js.native
+    
+    var emulateHTTP: Boolean = js.native
+    
+    var emulateJSON: Boolean = js.native
+    
+    var history: History_ = js.native
+    
     // Utility
     def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Backbone */ js.Any = js.native
-    def sync(method: String, model: Collection[Model[_, ModelSetOptions]]): js.Any = js.native
-    def sync(method: String, model: Collection[Model[_, ModelSetOptions]], options: JQueryAjaxSettings): js.Any = js.native
+    
+    def sync(method: String, model: Collection[Model[_, ModelSetOptions, js.Object]]): js.Any = js.native
+    def sync(
+      method: String,
+      model: Collection[Model[_, ModelSetOptions, js.Object]],
+      options: JQueryAjaxSettings
+    ): js.Any = js.native
     // SYNC
-    def sync(method: String, model: Model[_, ModelSetOptions]): js.Any = js.native
-    def sync(method: String, model: Model[_, ModelSetOptions], options: JQueryAjaxSettings): js.Any = js.native
+    def sync(method: String, model: Model[_, ModelSetOptions, js.Object]): js.Any = js.native
+    def sync(method: String, model: Model[_, ModelSetOptions, js.Object], options: JQueryAjaxSettings): js.Any = js.native
   }
-  
 }
-

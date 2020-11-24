@@ -21,20 +21,11 @@ import typings.oracleOraclejet.oracleOraclejetStrings.valueChanged
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
-  var chroming: full | half | outlined = js.native
-  var disabled: Boolean = js.native
-  var display: all | icons = js.native
-  var focusManagement: oneTabstop | none = js.native
-  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], _]) | Null = js.native
-  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
-  var onFocusManagementChanged: (js.Function1[/* event */ JetElementCustomEvent[oneTabstop | none], _]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_] | Null], _]) | Null = js.native
-  var value: js.Array[_] | Null = js.native
+  
   def addEventListener(
     `type`: chromingChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _]
@@ -84,6 +75,15 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[_] | Null], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var chroming: full | half | outlined = js.native
+  
+  var disabled: Boolean = js.native
+  
+  var display: all | icons = js.native
+  
+  var focusManagement: oneTabstop | none = js.native
+  
   @JSName("getProperty")
   def getProperty_chroming(property: chroming): full | half | outlined = js.native
   @JSName("getProperty")
@@ -94,7 +94,19 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
   def getProperty_focusManagement(property: focusManagement): oneTabstop | none = js.native
   @JSName("getProperty")
   def getProperty_value(property: value): js.Array[_] | Null = js.native
+  
+  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], _]) | Null = js.native
+  
+  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
+  
+  var onFocusManagementChanged: (js.Function1[/* event */ JetElementCustomEvent[oneTabstop | none], _]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_] | Null], _]) | Null = js.native
+  
   def setProperties(properties: ojButtonsetManySettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: chroming, value: full): Unit = js.native
   def setProperty(property: chroming, value: half): Unit = js.native
   def setProperty(property: chroming, value: outlined): Unit = js.native
@@ -108,5 +120,6 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: js.Array[_]): Unit = js.native
+  
+  var value: js.Array[_] | Null = js.native
 }
-

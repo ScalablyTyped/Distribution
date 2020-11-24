@@ -5,11 +5,12 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/endWith", JSImport.Namespace)
 @js.native
 object endWithMod extends js.Object {
+  
   def endWith[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def endWith[T, Z](array: (SchedulerLike | Z)*): OperatorFunction[T, T | Z] = js.native
   def endWith[T, A](v1: A): OperatorFunction[T, T | A] = js.native
@@ -25,4 +26,3 @@ object endWithMod extends js.Object {
   def endWith[T, A, B, C, D, E, F](v1: A, v2: B, v3: C, v4: D, v5: E, v6: F): OperatorFunction[T, T | A | B | C | D | E | F] = js.native
   def endWith[T, A, B, C, D, E, F](v1: A, v2: B, v3: C, v4: D, v5: E, v6: F, scheduler: SchedulerLike): OperatorFunction[T, T | A | B | C | D | E | F] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.browser.runtime
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The machine's processor architecture. */
 /* Rewritten from type alias, can be one of: 
@@ -11,13 +11,14 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64`
 */
 trait PlatformArch extends js.Object
-
 object PlatformArch {
+  
   @scala.inline
   def arm: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm = "arm".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm]
+  
   @scala.inline
   def `x86-32`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32` = "x86-32".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32`]
+  
   @scala.inline
   def `x86-64`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64` = "x86-64".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64`]
 }
-

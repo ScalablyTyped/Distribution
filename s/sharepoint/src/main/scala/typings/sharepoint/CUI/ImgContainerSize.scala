@@ -2,14 +2,14 @@ package typings.sharepoint.CUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ImgContainerSize extends js.Object
-
 @JSGlobal("CUI.ImgContainerSize")
 @js.native
 object ImgContainerSize extends js.Object {
+  
   @js.native
   sealed trait none extends ImgContainerSize
   
@@ -45,6 +45,4 @@ object ImgContainerSize extends js.Object {
   
   @js.native
   sealed trait size96by96 extends ImgContainerSize
-  
 }
-

@@ -3,11 +3,12 @@ package typings.copy.mod
 import typings.vinyl.mod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("copy", "each")
 @js.native
 object each extends js.Object {
+  
   def apply(files: js.Array[File | String], dir: String, cb: Callback): Unit = js.native
   /**
     * Copy an array of files to the given destination `directory`, with
@@ -26,4 +27,3 @@ object each extends js.Object {
     */
   def apply(files: js.Array[File | String], dir: String, options: Options, cb: Callback): Unit = js.native
 }
-

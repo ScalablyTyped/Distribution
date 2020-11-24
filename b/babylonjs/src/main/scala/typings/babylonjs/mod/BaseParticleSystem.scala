@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "BaseParticleSystem")
 @js.native
@@ -15,30 +15,33 @@ class BaseParticleSystem protected ()
     */
   def this(name: String) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "BaseParticleSystem")
 @js.native
 object BaseParticleSystem extends js.Object {
+  
   /**
     * Add current color and particle color multiplied by particle’s alpha
     */
   var BLENDMODE_ADD: Double = js.native
+  
   /**
     * Multiply current color with particle color
     */
   var BLENDMODE_MULTIPLY: Double = js.native
+  
   /**
     * Multiply current color with particle color then add current color and particle color multiplied by particle’s alpha
     */
   var BLENDMODE_MULTIPLYADD: Double = js.native
+  
   /**
     * Source color is added to the destination color without alpha affecting the result
     */
   var BLENDMODE_ONEONE: Double = js.native
+  
   /**
     * Blend current color and particle color using particle’s alpha
     */
   var BLENDMODE_STANDARD: Double = js.native
 }
-

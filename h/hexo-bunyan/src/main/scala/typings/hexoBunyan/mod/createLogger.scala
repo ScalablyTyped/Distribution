@@ -4,11 +4,11 @@ import typings.bunyan.mod.Logger
 import typings.bunyan.mod.LoggerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hexo-bunyan", "createLogger")
 @js.native
 object createLogger extends js.Object {
+  
   def apply(options: LoggerOptions): Logger = js.native
 }
-

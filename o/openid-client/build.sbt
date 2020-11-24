@@ -1,15 +1,13 @@
 organization := "org.scalablytyped"
 name := "openid-client"
-version := "3.15.9-a7ec49"
+version := "4.2.1-80cc31"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "got" % "9.6-dt-20200515Z-59f4b0",
-  "org.scalablytyped" %%% "jose" % "1.27.2-fbf8c2",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13",
-  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20200515Z-1a740a")
+  "org.scalablytyped" %%% "jose" % "2.0.3-627ba3",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

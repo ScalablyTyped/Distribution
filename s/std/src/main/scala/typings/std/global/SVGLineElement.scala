@@ -3,15 +3,13 @@ package typings.std.global
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SVGLineElement")
 @js.native
 class SVGLineElement ()
   extends typings.std.SVGLineElement
-
 @JSGlobal("SVGLineElement")
 @js.native
 object SVGLineElement
   extends Instantiable0[typings.std.SVGLineElement]
-

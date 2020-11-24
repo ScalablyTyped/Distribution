@@ -2,17 +2,17 @@ package typings.openui5.sap.ui.unified
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CalendarDayType extends js.Object
-
 /**
   * Type of a calendar day used for visualization.
   */
 @JSGlobal("sap.ui.unified.CalendarDayType")
 @js.native
 object CalendarDayType extends js.Object {
+  
   @js.native
   sealed trait None extends CalendarDayType
   
@@ -45,6 +45,4 @@ object CalendarDayType extends js.Object {
   
   @js.native
   sealed trait Type10 extends CalendarDayType
-  
 }
-

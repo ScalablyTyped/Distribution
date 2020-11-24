@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RouteResponseCode extends js.Object
-
 @JSGlobal("Microsoft.Maps.Directions.RouteResponseCode")
 @js.native
 object RouteResponseCode extends js.Object {
+  
   /** At least two waypoints are required to calculate a route. */
   @js.native
   sealed trait atleastTwoWaypointRequired extends RouteResponseCode
@@ -93,6 +93,4 @@ object RouteResponseCode extends js.Object {
     */
   @js.native
   sealed trait waypointDisambiguation extends RouteResponseCode
-  
 }
-

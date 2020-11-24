@@ -2,7 +2,7 @@ package typings.winjs.global.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
@@ -11,14 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Layout ()
   extends typings.winjs.WinJS.UI.Layout
-
 /* static members */
 @JSGlobal("WinJS.UI.Layout")
 @js.native
 object Layout extends js.Object {
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

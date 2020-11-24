@@ -2,7 +2,7 @@ package typings.babylonjs.gamepadsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/index", "GenericController")
 @js.native
@@ -14,18 +14,18 @@ class GenericController protected ()
     */
   def this(vrGamepad: js.Any) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Gamepads/index", "GenericController")
 @js.native
 object GenericController extends js.Object {
+  
   /**
     * Base Url for the controller model.
     */
   val MODEL_BASE_URL: String = js.native
+  
   /**
     * File name for the controller model.
     */
   val MODEL_FILENAME: String = js.native
 }
-

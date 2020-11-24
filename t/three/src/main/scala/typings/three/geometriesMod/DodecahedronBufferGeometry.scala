@@ -2,14 +2,17 @@ package typings.three.geometriesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/Geometries", "DodecahedronBufferGeometry")
 @js.native
+/**
+	 * @param [radius=1]
+	 * @param [detail=0]
+	 */
 class DodecahedronBufferGeometry ()
-  extends typings.three.dodecahedronGeometryMod.DodecahedronBufferGeometry {
+  extends typings.three.dodecahedronBufferGeometryMod.DodecahedronBufferGeometry {
   def this(radius: Double) = this()
   def this(radius: js.UndefOr[scala.Nothing], detail: Double) = this()
   def this(radius: Double, detail: Double) = this()
 }
-

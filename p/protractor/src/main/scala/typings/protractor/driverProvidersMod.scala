@@ -5,11 +5,16 @@ import typings.q.mod.Promise
 import typings.seleniumWebdriver.mod.WebDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/driverProviders", JSImport.Namespace)
 @js.native
 object driverProvidersMod extends js.Object {
+  
+  var buildDriverProvider: js.Function1[/* config */ Config, typings.protractor.driverProviderMod.DriverProvider] = js.native
+  
+  var logWarnings: js.Function2[/* providerType */ String, /* config */ Config, Unit] = js.native
+  
   @js.native
   class AttachSession protected ()
     extends typings.protractor.attachSessionMod.AttachSession {
@@ -32,6 +37,17 @@ object driverProvidersMod extends js.Object {
   abstract class DriverProvider protected ()
     extends typings.protractor.driverProviderMod.DriverProvider {
     def this(config: Config) = this()
+  }
+  /* static members */
+  @js.native
+  object DriverProvider extends js.Object {
+    
+    /**
+      * Quits an array of drivers and returns a q promise instead of a webdriver one
+      *
+      * @param drivers {webdriver.WebDriver[]} The webdriver instances
+      */
+    def quitDrivers(provider: typings.protractor.driverProviderMod.DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = js.native
   }
   
   @js.native
@@ -79,19 +95,4 @@ object driverProvidersMod extends js.Object {
     extends typings.protractor.useExistingWebDriverMod.UseExistingWebDriver {
     def this(config: Config) = this()
   }
-  
-  var buildDriverProvider: js.Function1[/* config */ Config, typings.protractor.driverProviderMod.DriverProvider] = js.native
-  var logWarnings: js.Function2[/* providerType */ String, /* config */ Config, Unit] = js.native
-  /* static members */
-  @js.native
-  object DriverProvider extends js.Object {
-    /**
-      * Quits an array of drivers and returns a q promise instead of a webdriver one
-      *
-      * @param drivers {webdriver.WebDriver[]} The webdriver instances
-      */
-    def quitDrivers(provider: typings.protractor.driverProviderMod.DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = js.native
-  }
-  
 }
-

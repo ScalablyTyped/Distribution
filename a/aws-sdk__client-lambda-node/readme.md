@@ -12,7 +12,7 @@ Node SDK for AWS Lambda
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 4673 |
+| # downloads        | 22219 |
 | # stars            | 0 |
 
 ## Links

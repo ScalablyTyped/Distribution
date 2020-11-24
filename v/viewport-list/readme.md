@@ -12,7 +12,7 @@ Return a list of devices and their viewports
 | Keywords           | device, json, resolution, size, viewport |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 121875 |
+| # downloads        | 132142 |
 | # stars            | 1 |
 
 ## Links

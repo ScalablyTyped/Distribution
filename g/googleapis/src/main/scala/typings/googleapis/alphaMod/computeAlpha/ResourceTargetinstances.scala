@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Targetinstances")
 @js.native
 class ResourceTargetinstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetInstances.aggregatedList
     * @desc Retrieves an aggregated list of target instances.
@@ -48,6 +48,9 @@ class ResourceTargetinstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetInstanceAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetInstances.delete
     * @desc Deletes the specified TargetInstance resource.
@@ -79,6 +82,7 @@ class ResourceTargetinstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetInstances.get
     * @desc Returns the specified TargetInstance resource. Gets a list of
@@ -110,6 +114,7 @@ class ResourceTargetinstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetInstance]
   ): Unit = js.native
+  
   /**
     * compute.targetInstances.insert
     * @desc Creates a TargetInstance resource in the specified project and zone
@@ -142,6 +147,7 @@ class ResourceTargetinstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetInstances.list
     * @desc Retrieves a list of TargetInstance resources available to the
@@ -179,6 +185,7 @@ class ResourceTargetinstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetInstanceList]
   ): Unit = js.native
+  
   /**
     * compute.targetInstances.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -214,4 +221,3 @@ class ResourceTargetinstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

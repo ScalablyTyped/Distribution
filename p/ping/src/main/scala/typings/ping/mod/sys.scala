@@ -2,11 +2,12 @@ package typings.ping.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ping", "sys")
 @js.native
 object sys extends js.Object {
+  
   /**
     * Performs a system ping utility.
     *
@@ -23,4 +24,3 @@ object sys extends js.Object {
     config: PingConfig
   ): Unit = js.native
 }
-

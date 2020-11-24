@@ -2,7 +2,7 @@ package typings.ckeditor.global.CKEDITOR
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CKEDITOR.command")
 @js.native
@@ -14,4 +14,3 @@ class command protected ()
     commandDefinition: typings.ckeditor.CKEDITOR.commandDefinition
   ) = this()
 }
-

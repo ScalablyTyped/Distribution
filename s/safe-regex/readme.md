@@ -11,8 +11,8 @@ detect possibly catastrophic, exponential-time regular expressions
 | Full name          | safe-regex |
 | Keywords           | catastrophic, exponential, regex, safe, sandbox |
 | # releases         | 6 |
-| # dependents       | 71 |
-| # downloads        | 402866895 |
+| # dependents       | 118 |
+| # downloads        | 542494837 |
 | # stars            | 20 |
 
 ## Links

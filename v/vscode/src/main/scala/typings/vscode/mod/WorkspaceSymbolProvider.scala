@@ -2,23 +2,11 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends js.Object {
-  /**
-    * Given a symbol fill in its [location](#SymbolInformation.location). This method is called whenever a symbol
-    * is selected in the UI. Providers can implement this method and return incomplete symbols from
-    * [`provideWorkspaceSymbols`](#WorkspaceSymbolProvider.provideWorkspaceSymbols) which often helps to improve
-    * performance.
-    *
-    * @param symbol The symbol that is to be resolved. Guaranteed to be an instance of an object returned from an
-    * earlier call to `provideWorkspaceSymbols`.
-    * @param token A cancellation token.
-    * @return The resolved symbol or a thenable that resolves to that. When no result is returned,
-    * the given `symbol` is used.
-    */
-  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.native
+  
   /**
     * Project-wide search for a symbol matching the given query string.
     *
@@ -37,32 +25,51 @@ trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends js.Object {
     * signaled by returning `undefined`, `null`, or an empty array.
     */
   def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]] = js.native
+  
+  /**
+    * Given a symbol fill in its [location](#SymbolInformation.location). This method is called whenever a symbol
+    * is selected in the UI. Providers can implement this method and return incomplete symbols from
+    * [`provideWorkspaceSymbols`](#WorkspaceSymbolProvider.provideWorkspaceSymbols) which often helps to improve
+    * performance.
+    *
+    * @param symbol The symbol that is to be resolved. Guaranteed to be an instance of an object returned from an
+    * earlier call to `provideWorkspaceSymbols`.
+    * @param token A cancellation token.
+    * @return The resolved symbol or a thenable that resolves to that. When no result is returned,
+    * the given `symbol` is used.
+    */
+  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.native
 }
-
 object WorkspaceSymbolProvider {
+  
   @scala.inline
-  def apply[/* <: typings.vscode.mod.SymbolInformation */ T](provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]]): WorkspaceSymbolProvider[T] = {
+  def apply[T /* <: SymbolInformation */](provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]]): WorkspaceSymbolProvider[T] = {
     val __obj = js.Dynamic.literal(provideWorkspaceSymbols = js.Any.fromFunction2(provideWorkspaceSymbols))
     __obj.asInstanceOf[WorkspaceSymbolProvider[T]]
   }
+  
   @scala.inline
-  implicit class WorkspaceSymbolProviderOps[Self <: WorkspaceSymbolProvider[_], /* <: typings.vscode.mod.SymbolInformation */ T] (val x: Self with WorkspaceSymbolProvider[T]) extends AnyVal {
+  implicit class WorkspaceSymbolProviderOps[Self <: WorkspaceSymbolProvider[_], T /* <: SymbolInformation */] (val x: Self with WorkspaceSymbolProvider[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProvideWorkspaceSymbols(value: (String, CancellationToken) => ProviderResult[js.Array[T]]): Self = this.set("provideWorkspaceSymbols", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setResolveWorkspaceSymbol(value: (/* symbol */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = this.set("resolveWorkspaceSymbol", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteResolveWorkspaceSymbol: Self = this.set("resolveWorkspaceSymbol", js.undefined)
   }
-  
 }
-

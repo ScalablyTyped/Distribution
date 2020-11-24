@@ -2,7 +2,7 @@ package typings.wegameApi.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 日志管理类，最多保存5M的日志内容，超过5M后，旧的日志内容会被删除。
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class LogManager ()
   extends typings.wegameApi.LogManager
-

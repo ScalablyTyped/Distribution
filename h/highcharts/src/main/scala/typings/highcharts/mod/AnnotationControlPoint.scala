@@ -3,7 +3,7 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnnotationControlP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "AnnotationControlPoint")
 @js.native
@@ -31,6 +31,7 @@ class AnnotationControlPoint protected () extends js.Object {
     options: AnnotationControlPointOptionsObject,
     index: Double
   ) = this()
+  
   /**
     * Set the visibility of the control point.
     *
@@ -38,6 +39,7 @@ class AnnotationControlPoint protected () extends js.Object {
     *        Visibility of the control point.
     */
   def setVisibility(visible: Boolean): Unit = js.native
+  
   /**
     * Update the control point.
     *
@@ -46,4 +48,3 @@ class AnnotationControlPoint protected () extends js.Object {
     */
   def update(userOptions: PartialAnnotationControlP): Unit = js.native
 }
-

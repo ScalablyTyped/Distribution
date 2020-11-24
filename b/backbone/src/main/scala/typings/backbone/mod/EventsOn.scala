@@ -2,7 +2,7 @@ package typings.backbone.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper shorthands for classes that implement the Events interface.
@@ -40,9 +40,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EventsOn[BaseT] extends js.Object {
+  
   def apply[T /* <: BaseT */](eventMap: EventMap): T = js.native
   def apply[T /* <: BaseT */](eventMap: EventMap, context: js.Any): T = js.native
   def apply[T /* <: BaseT */](eventName: String, callback: EventHandler): T = js.native
   def apply[T /* <: BaseT */](eventName: String, callback: EventHandler, context: js.Any): T = js.native
 }
-

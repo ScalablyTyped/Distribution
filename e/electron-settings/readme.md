@@ -4,15 +4,15 @@
 Typings are for version 3.1
 
 ## Library description:
-A simple persistent user settings framework for Electron.
+A simple and robust settings management library for Electron.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | electron-settings |
-| Keywords           | electron, app, user, data, settings, config, storage, json, has, get, getAll, set, setAll, delete, deleteAll, watch, file |
-| # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 256310 |
+| Keywords           | electron, app, user, data, settings, config, storage, json |
+| # releases         | 4 |
+| # dependents       | 41 |
+| # downloads        | 239950 |
 | # stars            | 13 |
 
 ## Links

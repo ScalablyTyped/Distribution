@@ -12,7 +12,7 @@ API for adding git remotes.
 | Keywords           | add, git, remote |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10295 |
+| # downloads        | 29801 |
 | # stars            | 0 |
 
 ## Links

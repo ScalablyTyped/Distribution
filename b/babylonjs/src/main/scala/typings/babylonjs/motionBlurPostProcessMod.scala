@@ -9,11 +9,12 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/motionBlurPostProcess", JSImport.Namespace)
 @js.native
 object motionBlurPostProcessMod extends js.Object {
+  
   @js.native
   class MotionBlurPostProcess protected () extends PostProcess {
     /**
@@ -26,106 +27,72 @@ object motionBlurPostProcessMod extends js.Object {
       * @param engine The engine which the post process will be applied. (default: current engine)
       * @param reusable If the post process can be reused on the same frame. (default: false)
       * @param textureType Type of textures used when performing the post process. (default: 0)
-      * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
+      * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: true)
+      * @param forceGeometryBuffer If this post process should use geometry buffer instead of prepass (default: false)
       */
-    def this(name: String, scene: Scene, options: Double, camera: Nullable[Camera]) = this()
-    def this(name: String, scene: Scene, options: PostProcessOptions, camera: Nullable[Camera]) = this()
-    def this(name: String, scene: Scene, options: Double, camera: Nullable[Camera], samplingMode: Double) = this()
     def this(
       name: String,
       scene: Scene,
-      options: PostProcessOptions,
+      options: Double | PostProcessOptions,
       camera: Nullable[Camera],
-      samplingMode: Double
+      samplingMode: js.UndefOr[Double],
+      engine: js.UndefOr[Engine],
+      reusable: js.UndefOr[Boolean],
+      textureType: js.UndefOr[Double],
+      blockCompilation: js.UndefOr[Boolean],
+      forceGeometryBuffer: js.UndefOr[Boolean]
     ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
-    var _geometryBufferRenderer: js.Any = js.native
-    var _motionBlurSamples: js.Any = js.native
+    
     /**
-      * Defines how much the image is blurred by the movement. Default value is equal to 1
+      * Called on the mode changed (object based or screen based).
       */
-    var motionStrength: Double = js.native
+    var _applyMode: js.Any = js.native
+    
+    var _forceGeometryBuffer: js.Any = js.native
+    
+    var _geometryBufferRenderer: js.Any = js.native
+    
+    var _invViewProjection: js.Any = js.native
+    
+    var _isObjectBased: js.Any = js.native
+    
+    var _motionBlurSamples: js.Any = js.native
+    
+    /**
+      * Called on the effect is applied when the motion blur post-process is in object based mode.
+      */
+    var _onApplyObjectBased: js.Any = js.native
+    
+    /**
+      * Called on the effect is applied when the motion blur post-process is in screen based mode.
+      */
+    var _onApplyScreenBased: js.Any = js.native
+    
+    var _prePassRenderer: js.Any = js.native
+    
+    var _previousViewProjection: js.Any = js.native
+    
+    /**
+      * Called on the effect must be updated (changed mode, samples count, etc.).
+      */
+    var _updateEffect: js.Any = js.native
+    
     /**
       * Excludes the given skinned mesh from computing bones velocities.
       * Computing bones velocities can have a cost and that cost. The cost can be saved by calling this function and by passing the skinned mesh reference to ignore.
       * @param skinnedMesh The mesh containing the skeleton to ignore when computing the velocity map.
       */
     def excludeSkinnedMesh(skinnedMesh: AbstractMesh): Unit = js.native
+    
+    /**
+      * Gets wether or not the motion blur post-process is in object based mode.
+      */
+    def isObjectBased: Boolean = js.native
+    /**
+      * Sets wether or not the motion blur post-process is in object based mode.
+      */
+    def isObjectBased_=(value: Boolean): Unit = js.native
+    
     /**
       * Gets the number of iterations are used for motion blur quality. Default value is equal to 32
       */
@@ -133,7 +100,13 @@ object motionBlurPostProcessMod extends js.Object {
     /**
       * Sets the number of iterations to be used for motion blur quality
       */
-    def motionBlurSamples(samples: Double): js.Any = js.native
+    def motionBlurSamples_=(samples: Double): Unit = js.native
+    
+    /**
+      * Defines how much the image is blurred by the movement. Default value is equal to 1
+      */
+    var motionStrength: Double = js.native
+    
     /**
       * Removes the given skinned mesh from the excluded meshes to integrate bones velocities while rendering the velocity map.
       * @param skinnedMesh The mesh containing the skeleton that has been ignored previously.
@@ -141,6 +114,11 @@ object motionBlurPostProcessMod extends js.Object {
       */
     def removeExcludedSkinnedMesh(skinnedMesh: AbstractMesh): Unit = js.native
   }
-  
+  /* static members */
+  @js.native
+  object MotionBlurPostProcess extends js.Object {
+    
+    /** @hidden */
+    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[MotionBlurPostProcess] = js.native
+  }
 }
-

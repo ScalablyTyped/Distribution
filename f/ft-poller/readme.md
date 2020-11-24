@@ -12,7 +12,7 @@ An http client to periodically fetch and cache data from web services
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 51603 |
+| # downloads        | 51822 |
 | # stars            | 0 |
 
 ## Links

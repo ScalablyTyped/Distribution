@@ -10,9 +10,9 @@ A plugin which adds additional commands to selenium's javascript implementation 
 | ------------------ | :-------------: |
 | Full name          | webdriver-js-extender |
 | Keywords           | testing, webdriver, webdriverjs, selenium, appium |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 41725409 |
+| # releases         | 2 |
+| # dependents       | 11 |
+| # downloads        | 53982549 |
 | # stars            | 0 |
 
 ## Links

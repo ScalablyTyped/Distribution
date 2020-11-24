@@ -10,9 +10,9 @@ Simple request and response mock objects to pass into Express routes when testin
 | ------------------ | :-------------: |
 | Full name          | sinon-express-mock |
 | Keywords           | express, mock, test, request, response, req, res, spec, mocha, sinon, spy |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 742346 |
+| # releases         | 4 |
+| # dependents       | 4 |
+| # downloads        | 928391 |
 | # stars            | 1 |
 
 ## Links

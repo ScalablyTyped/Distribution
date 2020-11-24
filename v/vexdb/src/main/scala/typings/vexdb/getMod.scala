@@ -23,11 +23,12 @@ import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexdb/out/methods/get", JSImport.Namespace)
 @js.native
 object getMod extends js.Object {
+  
   @JSName("default")
   def default_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[js.Array[AwardsResponseObject]] = js.native
   @JSName("default")
@@ -43,4 +44,3 @@ object getMod extends js.Object {
   @JSName("default")
   def default_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[js.Array[TeamsResponseObject]] = js.native
 }
-

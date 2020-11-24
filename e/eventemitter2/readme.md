@@ -4,15 +4,15 @@
 Typings are for version 6.4.3
 
 ## Library description:
-A Node.js event emitter implementation with namespaces, wildcards, TTL and browser support.
+A feature-rich Node.js event emitter implementation with namespaces, wildcards, TTL, async listeners and browser/worker support.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | eventemitter2 |
-| Keywords           | event, events, emitter, eventemitter |
-| # releases         | 3 |
-| # dependents       | 1041 |
-| # downloads        | 83986910 |
+| Keywords           | event, events, emitter, eventemitter, addEventListener, addListener, pub/sub, emit, emits, on, once, publish, subscribe |
+| # releases         | 11 |
+| # dependents       | 1133 |
+| # downloads        | 134914156 |
 | # stars            | 48 |
 
 ## Links

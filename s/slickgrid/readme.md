@@ -10,9 +10,9 @@ A lightning fast JavaScript grid/spreadsheet
 | ------------------ | :-------------: |
 | Full name          | slickgrid |
 | Keywords           | slickgrid, grid |
-| # releases         | 28 |
-| # dependents       | 13 |
-| # downloads        | 229257 |
+| # releases         | 30 |
+| # dependents       | 14 |
+| # downloads        | 205876 |
 | # stars            | 1 |
 
 ## Links

@@ -10,11 +10,12 @@ import typings.tensorflowTfjs.tensorflowTfjsStrings.valid
 import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "backend_util.computePool3DInfo")
 @js.native
 object computePool3DInfo extends js.Object {
+  
   def apply(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
@@ -25,4 +26,3 @@ object computePool3DInfo extends js.Object {
     dataFormat: js.UndefOr[NDHWC | NCDHW]
   ): Conv3DInfo = js.native
 }
-

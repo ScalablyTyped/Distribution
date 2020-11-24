@@ -3,11 +3,12 @@ package typings.pAll
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-all", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   // TODO: Refactor the whole definition back to multiple overloaded functions
   /**
   Run promise-returning & async functions concurrently with optional limited concurrency.
@@ -412,7 +413,8 @@ object mod extends js.Object {
   ): js.Promise[
     js.Tuple10[Result1, Result2, Result3, Result4, Result5, Result6, Result7, Result8, Result9, Result10]
   ] = js.native
+  
   type Options = typings.pMap.mod.Options
+  
   type PromiseFactory[T] = js.Function0[js.Thenable[T]]
 }
-

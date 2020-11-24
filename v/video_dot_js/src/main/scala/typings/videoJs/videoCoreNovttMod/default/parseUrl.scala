@@ -3,11 +3,12 @@ package typings.videoJs.videoCoreNovttMod.default
 import typings.videoJs.mod.videojs.url.URLObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "parseUrl")
 @js.native
 object parseUrl extends js.Object {
+  
   /**
     * Resolve and parse the elements of a URL.
     *
@@ -18,4 +19,3 @@ object parseUrl extends js.Object {
     */
   def apply(url: String): URLObject = js.native
 }
-

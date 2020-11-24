@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains status information that indicates why a Producer app was stopped. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynProducerStoppedEventArgs")
@@ -15,4 +15,3 @@ class AllJoynProducerStoppedEventArgs protected ()
     */
   def this(status: Double) = this()
 }
-

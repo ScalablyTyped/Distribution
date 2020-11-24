@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sqltools/formatter" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sqltools/formatter" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

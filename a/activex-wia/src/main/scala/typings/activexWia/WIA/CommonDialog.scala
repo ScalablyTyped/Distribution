@@ -2,7 +2,7 @@ package typings.activexWia.WIA
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The CommonDialog control is an invisible-at-runtime control that contains all the methods that display a User Interface. A CommonDialog control can be
@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CommonDialog extends js.Object {
-  @JSName("WIA.CommonDialog_typekey")
-  var WIADotCommonDialog_typekey: CommonDialog = js.native
+  
   /**
     * Displays one or more dialog boxes that enable the user to acquire an image from a hardware device for image acquisition and returns an ImageFile
     * object on success, otherwise Nothing
@@ -32,23 +31,28 @@ trait CommonDialog extends js.Object {
     UseCommonUI: js.UndefOr[Boolean],
     CancelError: js.UndefOr[Boolean]
   ): ImageFile | Null = js.native
+  
   /** Launches the Windows Scanner and Camera Wizard and returns Nothing. Future versions may return a collection of ImageFile objects. */
   def ShowAcquisitionWizard(Device: Device): Null = js.native
+  
   /**
     * Displays the properties dialog box for the specified Device
     * @param boolean [CancelError=false]
     */
   def ShowDeviceProperties(Device: Device): Unit = js.native
   def ShowDeviceProperties(Device: Device, CancelError: Boolean): Unit = js.native
+  
   /**
     * Displays the properties dialog box for the specified Item
     * @param boolean [CancelError=false]
     */
   def ShowItemProperties(Item: Item): Unit = js.native
   def ShowItemProperties(Item: Item, CancelError: Boolean): Unit = js.native
+  
   /** Launches the Photo Printing Wizard with the absolute path of a specific file or Vector of absolute paths to files */
   def ShowPhotoPrintingWizard(Files: String): Unit = js.native
   def ShowPhotoPrintingWizard(Files: Vector[String]): Unit = js.native
+  
   /**
     * Displays a dialog box that enables the user to select a hardware device for image acquisition. Returns the selected Device object on success,
     * otherwise Nothing
@@ -68,6 +72,7 @@ trait CommonDialog extends js.Object {
   def ShowSelectDevice(DeviceType: WiaDeviceType, AlwaysSelectDevice: js.UndefOr[scala.Nothing], CancelError: Boolean): Device | Null = js.native
   def ShowSelectDevice(DeviceType: WiaDeviceType, AlwaysSelectDevice: Boolean): Device | Null = js.native
   def ShowSelectDevice(DeviceType: WiaDeviceType, AlwaysSelectDevice: Boolean, CancelError: Boolean): Device | Null = js.native
+  
   /**
     * Displays a dialog box that enables the user to select an item for transfer from a hardware device for image acquisition. Returns the selection as an
     * Items collection on success, otherwise Nothing
@@ -274,6 +279,7 @@ trait CommonDialog extends js.Object {
     UseCommonUI: Boolean,
     CancelError: Boolean
   ): Items | Null = js.native
+  
   /**
     * Displays a progress dialog box while transferring the specified Item to the local machine. See Item.Transfer for additional information.
     * @param string [FormatID='{00000000-0000-0000-0000-000000000000}']
@@ -283,5 +289,7 @@ trait CommonDialog extends js.Object {
   def ShowTransfer(Item: Item, FormatID: js.UndefOr[scala.Nothing], CancelError: Boolean): ImageFile = js.native
   def ShowTransfer(Item: Item, FormatID: String): ImageFile = js.native
   def ShowTransfer(Item: Item, FormatID: String, CancelError: Boolean): ImageFile = js.native
+  
+  @JSName("WIA.CommonDialog_typekey")
+  var WIADotCommonDialog_typekey: CommonDialog = js.native
 }
-

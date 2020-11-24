@@ -2,23 +2,33 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Diagnostic extends Location {
+  
   var _additionalLocations: js.Any = js.native
+  
   var _arguments: js.Any = js.native
+  
   var _diagnosticKey: js.Any = js.native
+  
   def additionalLocations(): js.Array[Location] = js.native
+  
   def arguments(): js.Array[_] = js.native
+  
   def diagnosticKey(): String = js.native
+  
   def info(): DiagnosticInfo = js.native
+  
   def message(): String = js.native
+  
   def text(): String = js.native
+  
   def toJSON(key: js.Any): js.Any = js.native
 }
-
 object Diagnostic {
+  
   @scala.inline
   def apply(
     _additionalLocations: js.Any,
@@ -45,38 +55,50 @@ object Diagnostic {
     val __obj = js.Dynamic.literal(_additionalLocations = _additionalLocations.asInstanceOf[js.Any], _arguments = _arguments.asInstanceOf[js.Any], _diagnosticKey = _diagnosticKey.asInstanceOf[js.Any], _fileName = _fileName.asInstanceOf[js.Any], _length = _length.asInstanceOf[js.Any], _lineMap = _lineMap.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], additionalLocations = js.Any.fromFunction0(additionalLocations), arguments = js.Any.fromFunction0(arguments), character = js.Any.fromFunction0(character), diagnosticKey = js.Any.fromFunction0(diagnosticKey), fileName = js.Any.fromFunction0(fileName), info = js.Any.fromFunction0(info), length = js.Any.fromFunction0(length), line = js.Any.fromFunction0(line), lineMap = js.Any.fromFunction0(lineMap), message = js.Any.fromFunction0(message), start = js.Any.fromFunction0(start), text = js.Any.fromFunction0(text), toJSON = js.Any.fromFunction1(toJSON))
     __obj.asInstanceOf[Diagnostic]
   }
+  
   @scala.inline
   implicit class DiagnosticOps[Self <: Diagnostic] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set_additionalLocations(value: js.Any): Self = this.set("_additionalLocations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_arguments(value: js.Any): Self = this.set("_arguments", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_diagnosticKey(value: js.Any): Self = this.set("_diagnosticKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAdditionalLocations(value: () => js.Array[Location]): Self = this.set("additionalLocations", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setArguments(value: () => js.Array[_]): Self = this.set("arguments", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setDiagnosticKey(value: () => String): Self = this.set("diagnosticKey", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setInfo(value: () => DiagnosticInfo): Self = this.set("info", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setMessage(value: () => String): Self = this.set("message", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setText(value: () => String): Self = this.set("text", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setToJSON(value: js.Any => js.Any): Self = this.set("toJSON", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -2,10 +2,11 @@ package typings.jsspecJsspec.JSSpec
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Example extends js.Object {
+  
   /**
     * Provide a test case with the given `title`, executing `fn`.
     *
@@ -22,4 +23,3 @@ trait Example extends js.Object {
   def apply(title: String, option: ExampleOptions): Unit = js.native
   def apply(title: String, option: ExampleOptions, fn: AsyncFunc | Func): Unit = js.native
 }
-

@@ -9,9 +9,9 @@ Implementation of JSON Merge Patch (RFC 7396)
 | ------------------ | :-------------: |
 | Full name          | json-merge-patch |
 | Keywords           | JSON, Merge, Patch, rfc, 7396 |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 897629 |
+| # releases         | 2 |
+| # dependents       | 22 |
+| # downloads        | 2238300 |
 | # stars            | 4 |
 
 ## Links

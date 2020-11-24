@@ -10,12 +10,15 @@ An advanced font engine for Node and the browser
 | ------------------ | :-------------: |
 | Full name          | fontkit |
 | Keywords           | opentype, font, typography, subset, emoji, glyph, layout |
-| # releases         | 3 |
-| # dependents       | 50 |
-| # downloads        | 9101783 |
+| # releases         | 4 |
+| # dependents       | 59 |
+| # downloads        | 16103460 |
 | # stars            | 4 |
 
 ## Links
+- [Homepage](https://github.com/foliojs/fontkit#readme)
+- [Bugs](https://github.com/foliojs/fontkit/issues)
+- [Repository](https://github.com/foliojs/fontkit)
 - [Npm](https://www.npmjs.com/package/fontkit)
     
 

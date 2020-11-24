@@ -10,9 +10,9 @@ A cursor based custom pagination library for Mongoose with customizable labels.
 | ------------------ | :-------------: |
 | Full name          | mongoose-paginate-v2 |
 | Keywords           | mongoose, pagination, plugin, mongodb, paginate, paging, next, prev, nextpage, prevpage, total, paginator, plugin |
-| # releases         | 29 |
-| # dependents       | 12 |
-| # downloads        | 193851 |
+| # releases         | 26 |
+| # dependents       | 26 |
+| # downloads        | 519971 |
 | # stars            | 0 |
 
 ## Links

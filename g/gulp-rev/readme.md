@@ -11,8 +11,8 @@ Static asset revisioning by appending content hash to filenames: unicorn.css => 
 | Full name          | gulp-rev |
 | Keywords           | gulpplugin, rev, revving, revision, hash, optimize, version, versioning, cache, expire, static, asset, assets |
 | # releases         | 2 |
-| # dependents       | 279 |
-| # downloads        | 4733635 |
+| # dependents       | 289 |
+| # downloads        | 4760970 |
 | # stars            | 119 |
 
 ## Links

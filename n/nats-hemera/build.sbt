@@ -1,15 +1,16 @@
 organization := "org.scalablytyped"
 name := "nats-hemera"
-version := "7.0.2-0544d5"
+version := "7.0.2-be6d8d"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "pino" % "6.3-dt-20200613Z-0c37ec",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20200515Z-327170",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-3a5e67",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "nats" % "1.4.12-82fc0f",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "pino" % "6.3-dt-20201119Z-1f4ffd",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20200515Z-94f3c8",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-1acd74",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

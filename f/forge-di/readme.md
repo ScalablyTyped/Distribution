@@ -10,9 +10,9 @@ a dependency injector for node.js
 | ------------------ | :-------------: |
 | Full name          | forge-di |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 2527 |
+| # downloads        | 1253 |
 | # stars            | 2 |
 
 ## Links

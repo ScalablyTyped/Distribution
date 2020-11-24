@@ -12,7 +12,7 @@ Simple replacement for setTimeout, setInterval, and polling loops
 | Keywords           | ender, timeout, polling, setTimeout, setInterval |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 14546 |
+| # downloads        | 20830 |
 | # stars            | 2 |
 
 ## Links

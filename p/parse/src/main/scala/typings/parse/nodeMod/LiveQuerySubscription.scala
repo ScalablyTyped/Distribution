@@ -2,7 +2,7 @@ package typings.parse.nodeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a LiveQuery Subscription.
@@ -83,4 +83,3 @@ class LiveQuerySubscription protected ()
   def this(id: String, query: String) = this()
   def this(id: String, query: String, sessionToken: String) = this()
 }
-

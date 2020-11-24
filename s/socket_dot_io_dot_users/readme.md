@@ -11,7 +11,7 @@ This module finds and manages which socket is from who and visa versa. One user 
 | Keywords           | socket.io.users, socket.io, express, session, socket.io-users |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3620 |
+| # downloads        | 2453 |
 | # stars            | 2 |
 
 ## Links

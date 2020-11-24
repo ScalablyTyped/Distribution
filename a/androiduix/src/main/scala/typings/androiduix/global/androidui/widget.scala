@@ -7,11 +7,12 @@ import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("androidui.widget")
 @js.native
 object widget extends js.Object {
+  
   @js.native
   class HtmlBaseView protected ()
     extends typings.androiduix.androidui.widget.HtmlBaseView {
@@ -24,10 +25,30 @@ object widget extends js.Object {
   @js.native
   class HtmlDataListAdapter ()
     extends typings.androiduix.androidui.widget.HtmlDataListAdapter
+  /* static members */
+  @js.native
+  object HtmlDataListAdapter extends js.Object {
+    
+    var BindAdapterProperty: String = js.native
+    
+    var RefElementProperty: String = js.native
+    
+    var RefElementTag: String = js.native
+  }
   
   @js.native
   class HtmlDataPagerAdapter ()
     extends typings.androiduix.androidui.widget.HtmlDataPagerAdapter
+  /* static members */
+  @js.native
+  object HtmlDataPagerAdapter extends js.Object {
+    
+    var BindAdapterProperty: String = js.native
+    
+    var RefElementProperty: String = js.native
+    
+    var RefElementTag: String = js.native
+  }
   
   @js.native
   class HtmlDataPickerAdapter ()
@@ -52,6 +73,12 @@ object widget extends js.Object {
   }
   
   @js.native
+  object OverScrollLocker extends js.Object {
+    
+    def getFrom(view: View): typings.androiduix.androidui.widget.OverScrollLocker = js.native
+  }
+  
+  @js.native
   class PullRefreshLoadLayout protected ()
     extends typings.androiduix.androidui.widget.PullRefreshLoadLayout {
     def this(context: Context) = this()
@@ -59,31 +86,32 @@ object widget extends js.Object {
     def this(context: Context, bindElement: js.UndefOr[scala.Nothing], defStyle: Map[String, String]) = this()
     def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
   }
-  
-  /* static members */
-  @js.native
-  object HtmlDataListAdapter extends js.Object {
-    var BindAdapterProperty: String = js.native
-    var RefElementProperty: String = js.native
-    var RefElementTag: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object HtmlDataPagerAdapter extends js.Object {
-    var BindAdapterProperty: String = js.native
-    var RefElementProperty: String = js.native
-    var RefElementTag: String = js.native
-  }
-  
-  @js.native
-  object OverScrollLocker extends js.Object {
-    def getFrom(view: View): typings.androiduix.androidui.widget.OverScrollLocker = js.native
-  }
-  
   /* static members */
   @js.native
   object PullRefreshLoadLayout extends js.Object {
+    
+    var StateChangeLimit: NumberDictionary[js.Array[Double]] = js.native
+    
+    var State_Disable: Double = js.native
+    
+    var State_Footer_LoadFail: Double = js.native
+    
+    var State_Footer_Loading: Double = js.native
+    
+    var State_Footer_NoMoreToLoad: Double = js.native
+    
+    var State_Footer_Normal: Double = js.native
+    
+    var State_Footer_ReadyToLoad: Double = js.native
+    
+    var State_Header_Normal: Double = js.native
+    
+    var State_Header_ReadyToRefresh: Double = js.native
+    
+    var State_Header_RefreshFail: Double = js.native
+    
+    var State_Header_Refreshing: Double = js.native
+    
     @js.native
     class DefaultFooterView protected ()
       extends typings.androiduix.androidui.widget.PullRefreshLoadLayout.DefaultFooterView {
@@ -109,19 +137,5 @@ object widget extends js.Object {
     @js.native
     abstract class HeaderView ()
       extends typings.androiduix.androidui.widget.PullRefreshLoadLayout.HeaderView
-    
-    var StateChangeLimit: NumberDictionary[js.Array[Double]] = js.native
-    var State_Disable: Double = js.native
-    var State_Footer_LoadFail: Double = js.native
-    var State_Footer_Loading: Double = js.native
-    var State_Footer_NoMoreToLoad: Double = js.native
-    var State_Footer_Normal: Double = js.native
-    var State_Footer_ReadyToLoad: Double = js.native
-    var State_Header_Normal: Double = js.native
-    var State_Header_ReadyToRefresh: Double = js.native
-    var State_Header_RefreshFail: Double = js.native
-    var State_Header_Refreshing: Double = js.native
   }
-  
 }
-

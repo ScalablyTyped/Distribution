@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.hextoposhex")
 @js.native
 object hextoposhex extends js.Object {
+  
   /**
     * canonicalize hexadecimal string of positive integer
     * @param s hexadecimal string
@@ -26,4 +27,3 @@ object hextoposhex extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

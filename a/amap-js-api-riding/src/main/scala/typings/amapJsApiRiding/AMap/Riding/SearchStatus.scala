@@ -2,7 +2,7 @@ package typings.amapJsApiRiding.AMap.Riding
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApiRiding.amapJsApiRidingStrings.complete
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.amapJsApiRiding.amapJsApiRidingStrings.no_data
 */
 trait SearchStatus extends js.Object
-
 object SearchStatus {
+  
   @scala.inline
   def complete: typings.amapJsApiRiding.amapJsApiRidingStrings.complete = "complete".asInstanceOf[typings.amapJsApiRiding.amapJsApiRidingStrings.complete]
+  
   @scala.inline
   def error: typings.amapJsApiRiding.amapJsApiRidingStrings.error = "error".asInstanceOf[typings.amapJsApiRiding.amapJsApiRidingStrings.error]
+  
   @scala.inline
   def no_data: typings.amapJsApiRiding.amapJsApiRidingStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiRiding.amapJsApiRidingStrings.no_data]
 }
-

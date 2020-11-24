@@ -12,7 +12,7 @@ Health check plugin for SocketCluster.
 | Keywords           | socketcluster, health, check |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 42416 |
+| # downloads        | 57198 |
 | # stars            | 0 |
 
 ## Links

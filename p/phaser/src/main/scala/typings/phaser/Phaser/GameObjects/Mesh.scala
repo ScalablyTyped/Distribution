@@ -13,7 +13,7 @@ import typings.std.Float32Array
 import typings.std.Uint32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Mesh Game Object.
@@ -30,30 +30,35 @@ trait Mesh
      with Transform
      with Visible
      with ScrollFactor {
+  
   /**
     * An array containing the alpha data for this Mesh.
     */
   var alphas: Float32Array = js.native
+  
   /**
     * An array containing the color data for this Mesh.
     */
   var colors: Uint32Array = js.native
-  /**
-    * Fill or additive mode used when blending the color values?
-    */
-  var tintFill: Boolean = js.native
-  /**
-    * An array containing the uv data for this Mesh.
-    */
-  var uv: Float32Array = js.native
-  /**
-    * An array containing the vertices data for this Mesh.
-    */
-  var vertices: Float32Array = js.native
+  
   /**
     * This method is left intentionally empty and does not do anything.
     * It is retained to allow a Mesh or Quad to be added to a Container.
     */
   def setAlpha(): Unit = js.native
+  
+  /**
+    * Fill or additive mode used when blending the color values?
+    */
+  var tintFill: Boolean = js.native
+  
+  /**
+    * An array containing the uv data for this Mesh.
+    */
+  var uv: Float32Array = js.native
+  
+  /**
+    * An array containing the vertices data for this Mesh.
+    */
+  var vertices: Float32Array = js.native
 }
-

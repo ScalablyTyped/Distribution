@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-body-length-node
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
 Determines the length of a request body in node.js
@@ -10,12 +10,15 @@ Determines the length of a request body in node.js
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-body-length-node |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 366 |
-| # downloads        | 30774 |
+| # releases         | 22 |
+| # dependents       | 416 |
+| # downloads        | 3496239 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/util-body-length-node)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-body-length-node)
     
 

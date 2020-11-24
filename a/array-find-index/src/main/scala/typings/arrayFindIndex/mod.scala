@@ -2,11 +2,12 @@ package typings.arrayFindIndex
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("array-find-index", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply[T](
     arr: js.Array[T],
     predicate: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], Boolean]
@@ -17,4 +18,3 @@ object mod extends js.Object {
     ctx: U
   ): Double = js.native
 }
-

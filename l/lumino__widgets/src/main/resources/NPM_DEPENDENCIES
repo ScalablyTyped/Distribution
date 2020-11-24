@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/widgets" : "1.13.4"
+      "@lumino/widgets" : "1.14.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/widgets" : "1.13.4"
+      "@lumino/widgets" : "1.14.1"
     }
   ],
   "compile-devDependencies" : [

@@ -5,13 +5,15 @@ import typings.dateFns.anon.UseAdditionalWeekYearTokensWeekStartsOn
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm/parse", JSImport.Namespace)
 @js.native
 object esmParseMod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     def apply(dateString: String, formatString: String, referenceDate: Double): Date = js.native
     def apply(
       dateString: String,
@@ -39,6 +41,4 @@ object esmParseMod extends js.Object {
       options: UseAdditionalWeekYearTokensWeekStartsOn
     ): Date = js.native
   }
-  
 }
-

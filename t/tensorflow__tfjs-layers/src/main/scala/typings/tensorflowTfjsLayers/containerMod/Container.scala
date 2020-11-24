@@ -2,11 +2,11 @@ package typings.tensorflowTfjsLayers.containerMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Set
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
 import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.Layer
@@ -15,12 +15,13 @@ import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
 import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/engine/container", "Container")
 @js.native
 abstract class Container protected () extends Layer {
   def this(args: ContainerArgs) = this()
+  
   /**
     * Builds a map of internal node keys to node ordering.
     * Used in serializaion a node orderings may change as unused nodes are
@@ -30,26 +31,15 @@ abstract class Container protected () extends Layer {
     * @returns Map of Node Keys to index order within the layer.
     */
   var buildNodeConversionMap: js.Any = js.native
+  
   var containerNodes: Set[String] = js.native
+  
   var feedInputNames: js.Array[String] = js.native
+  
   var feedInputShapes: js.Array[Shape] = js.native
+  
   var feedOutputNames: js.Array[String] = js.native
-  var inputLayers: js.Array[Layer] = js.native
-  var inputLayersNodeIndices: js.Array[Double] = js.native
-  var inputLayersTensorIndices: js.Array[Double] = js.native
-  var inputNames: js.Array[String] = js.native
-  var inputs: js.Array[SymbolicTensor] = js.native
-  var internalContainerRefs: js.Array[Container] = js.native
-  var internalInputShapes: js.Array[Shape] = js.native
-  var internalOutputShapes: js.Array[Shape] = js.native
-  var layers: js.Array[Layer] = js.native
-  var layersByDepth: StringDictionary[js.Array[Layer]] = js.native
-  var nodesByDepth: StringDictionary[js.Array[Node]] = js.native
-  var outputLayers: js.Array[Layer] = js.native
-  var outputLayersNodeIndices: js.Array[Double] = js.native
-  var outputLayersTensorIndices: js.Array[Double] = js.native
-  var outputNames: js.Array[String] = js.native
-  var outputs: js.Array[SymbolicTensor] = js.native
+  
   /**
     * Retrieves a layer based on either its name (unique) or index.
     *
@@ -61,8 +51,7 @@ abstract class Container protected () extends Layer {
     * @param index Index of layer.
     * @returns A Layer instance.
     * @throws ValueError: In case of invalid layer name or index.
-    */
-  /**
+    *
     * @doc {
     *    heading: 'Layers',
     *    subheading: 'Classes',
@@ -74,6 +63,27 @@ abstract class Container protected () extends Layer {
   def getLayer(name: js.UndefOr[scala.Nothing], index: Double): Layer = js.native
   def getLayer(name: String): Layer = js.native
   def getLayer(name: String, index: Double): Layer = js.native
+  
+  var inputLayers: js.Array[Layer] = js.native
+  
+  var inputLayersNodeIndices: js.Array[Double] = js.native
+  
+  var inputLayersTensorIndices: js.Array[Double] = js.native
+  
+  var inputNames: js.Array[String] = js.native
+  
+  var inputs: js.Array[SymbolicTensor] = js.native
+  
+  var internalContainerRefs: js.Array[Container] = js.native
+  
+  var internalInputShapes: js.Array[Shape] = js.native
+  
+  var internalOutputShapes: js.Array[Shape] = js.native
+  
+  var layers: js.Array[Layer] = js.native
+  
+  var layersByDepth: StringDictionary[js.Array[Layer]] = js.native
+  
   /**
     * Loads all layer weights from a JSON object.
     *
@@ -91,6 +101,19 @@ abstract class Container protected () extends Layer {
     */
   def loadWeights(weights: NamedTensorMap): Unit = js.native
   def loadWeights(weights: NamedTensorMap, strict: Boolean): Unit = js.native
+  
+  var nodesByDepth: StringDictionary[js.Array[Node]] = js.native
+  
+  var outputLayers: js.Array[Layer] = js.native
+  
+  var outputLayersNodeIndices: js.Array[Double] = js.native
+  
+  var outputLayersTensorIndices: js.Array[Double] = js.native
+  
+  var outputNames: js.Array[String] = js.native
+  
+  var outputs: js.Array[SymbolicTensor] = js.native
+  
   /**
     * Computes output tensors for new inputs.
     *
@@ -103,6 +126,7 @@ abstract class Container protected () extends Layer {
     */
   /* protected */ def runInternalGraph(inputs: js.Array[Tensor[Rank]]): js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Shape]] = js.native
   /* protected */ def runInternalGraph(inputs: js.Array[Tensor[Rank]], masks: js.Array[Tensor[Rank]]): js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Shape]] = js.native
+  
   /**
     * Returns a JSON string containing the network configuration.
     *
@@ -118,17 +142,18 @@ abstract class Container protected () extends Layer {
   def toJSON(unused: js.UndefOr[scala.Nothing], returnString: Boolean): String | PyJsonDict = js.native
   def toJSON(unused: js.Any): String | PyJsonDict = js.native
   def toJSON(unused: js.Any, returnString: Boolean): String | PyJsonDict = js.native
+  
   /**
     * Util shared between different serialization methods.
     * @returns LayersModel config with Keras version information added.
     */
   /* protected */ def updatedConfig(): ConfigDict = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-layers/dist/engine/container", "Container")
 @js.native
 object Container extends js.Object {
+  
   /**
     * Instantiates a LayersModel from its config (output of `get_config()`).
     * @param cls the class to create
@@ -157,4 +182,3 @@ object Container extends js.Object {
     fastWeightInit: Boolean
   ): T = js.native
 }
-

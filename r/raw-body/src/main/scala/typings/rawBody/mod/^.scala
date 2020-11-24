@@ -5,11 +5,12 @@ import typings.node.streamMod.Readable
 import typings.rawBody.anon.OptionsencodingEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("raw-body", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(stream: Readable): js.Promise[Buffer] = js.native
   /**
     * Gets the entire buffer of a stream either as a `Buffer` or a string.
@@ -36,4 +37,3 @@ object ^ extends js.Object {
     callback: js.Function2[/* err */ RawBodyError, /* body */ Buffer, Unit]
   ): Unit = js.native
 }
-

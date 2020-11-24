@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.Fragment
 import typings.openui5.sap.ui.core.mvc.Controller
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.xmlfragment")
 @js.native
 object xmlfragment extends js.Object {
+  
   /**
     * Instantiates an XML-based Fragment.To instantiate a Fragment, call this method as:  
     * sap.ui.xmlfragment([sId], sFragmentName, [oController]);The Fragment instance ID is optional
@@ -39,4 +40,3 @@ object xmlfragment extends js.Object {
   def apply(vFragment: js.Any): Fragment = js.native
   def apply(vFragment: js.Any, oController: js.Any): Fragment = js.native
 }
-

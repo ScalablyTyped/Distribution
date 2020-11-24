@@ -4,91 +4,17 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Connection extends js.Object {
+  
   /**
     * The action attribute for end-to-end application tracing.
     * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
     */
   var action: js.UndefOr[String] = js.native
-  /**
-    * Sets the maximum number of milliseconds that each underlying round-trip between node-oracledb and Oracle Database may take.
-    * Each node-oracledb method or operation may make zero or more round-trips.
-    * The callTimeout value applies to each round-trip individually, not to the sum of all round-trips.
-    * Time spent processing in node-oracledb before or after the completion of each round-trip is not counted.
-    */
-  var callTimeout: js.UndefOr[Double] = js.native
-  /**
-    * The client identifier for end-to-end application tracing, use with mid-tier authentication, and with Virtual Private Databases.
-    * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
-    */
-  var clientId: js.UndefOr[String] = js.native
-  /**
-    * The client information for end-to-end application tracing.
-    * This is a write-only property. Displaying connection.clientInfo will show a value of null. 
-    * 
-    * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
-    * @since 4.1
-    */
-  var clientInfo: js.UndefOr[String] = js.native
-  /**
-    * After setting currentSchema, SQL statements using unqualified references to schema objects will resolve to objects in the specified schema.
-    * This setting does not change the session user or the current user, nor does it give the session user any additional system or object privileges for the session.
-    * The value of currentSchema will be empty until it has been explicitly set.
-    * This property is an efficient alternative to ALTER SESSION SET CURRENT_SCHEMA.
-    * 
-    * @since 4.0
-    */
-  var currentSchema: js.UndefOr[String] = js.native
-  /**
-    * The database operation information for end-to-end application tracing.
-    * This is a write-only property. Displaying connection.dbOp will show a value of null.
-    * 
-    * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
-    * @since 4.1
-    */
-  var dbOp: js.UndefOr[String] = js.native
-  /**
-    * The module attribute for end-to-end application tracing.
-    * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
-    */
-  var module: js.UndefOr[String] = js.native
-  /**
-    * This readonly property gives a numeric representation of the Oracle database version which is useful in comparisons.
-    * For version a.b.c.d.e, this property gives the number: (100000000 * a) + (1000000 * b) + (10000 * c) + (100 * d) + e.
-    * Note if you connect to Oracle Database 18, the version will only be accurate if node-oracledb is also using Oracle Database 18 client libraries.
-    * Otherwise it will show the base release such as 1800000000 instead of 1803000000.
-    *
-    * @since 1.3
-    */
-  val oracleServerVersion: Double = js.native
-  /**
-    * This readonly property gives a string representation of the Oracle database version which is useful for display.
-    * Note if you connect to Oracle Database 18, the version will only be accurate if node-oracledb is also using Oracle Database 18 client libraries.
-    * Otherwise it will show the base release such as “18.0.0.0.0” instead of “18.3.0.0.0”.
-    *
-    * @since 2.2
-    */
-  val oracleServerVersionString: String = js.native
-  /**
-    * The number of statements to be cached in the statement cache of the connection.
-    * The default value is the stmtCacheSize property in effect in the Pool object when the connection is created in the pool.
-    */
-  val stmtCacheSize: Double = js.native
-  /**
-    * Applications can set the tag property on pooled connections to indicate the ‘session state’ that a connection has.
-    * The tag will be retained when the connection is released to the pool.
-    * A subsequent pool.getConnection() can request a connection that has a given tag.
-    * It is up to the application to set any desired session state and set connection.tag prior to closing the connection.
-    * The tag property is not used for standalone connections.
-    * When node-oracledb is using Oracle Client libraries 12.2 or later, the tag must be a multi-property tag with name=value pairs like “k1=v1;k2=v2”.
-    * An empty string represents not having a tag set.
-    *
-    * @since 3.1
-    */
-  var tag: js.UndefOr[String] = js.native
+  
   /**
     * Stops the currently running operation on the connection.
     *
@@ -104,6 +30,15 @@ trait Connection extends js.Object {
     */
   def break(): js.Promise[Unit] = js.native
   def break(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
+  /**
+    * Sets the maximum number of milliseconds that each underlying round-trip between node-oracledb and Oracle Database may take.
+    * Each node-oracledb method or operation may make zero or more round-trips.
+    * The callTimeout value applies to each round-trip individually, not to the sum of all round-trips.
+    * Time spent processing in node-oracledb before or after the completion of each round-trip is not counted.
+    */
+  var callTimeout: js.UndefOr[Double] = js.native
+  
   /**
     * Changes the password of the specified user.
     *
@@ -123,6 +58,22 @@ trait Connection extends js.Object {
     newPassword: String,
     callback: js.Function1[/* error */ DBError, Unit]
   ): Unit = js.native
+  
+  /**
+    * The client identifier for end-to-end application tracing, use with mid-tier authentication, and with Virtual Private Databases.
+    * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
+    */
+  var clientId: js.UndefOr[String] = js.native
+  
+  /**
+    * The client information for end-to-end application tracing.
+    * This is a write-only property. Displaying connection.clientInfo will show a value of null. 
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
+    * @since 4.1
+    */
+  var clientInfo: js.UndefOr[String] = js.native
+  
   def close(): js.Promise[Unit] = js.native
   def close(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   /**
@@ -144,11 +95,13 @@ trait Connection extends js.Object {
     */
   def close(options: CloseConnectionOptions): js.Promise[Unit] = js.native
   def close(options: CloseConnectionOptions, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * This call commits the current transaction in progress on the connection.
     */
   def commit(): js.Promise[Unit] = js.native
   def commit(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Creates a Lob as an Oracle temporary LOB. The LOB is initially empty. Data can be streamed to the LOB,
     * which can then be passed into PL/SQL blocks, or inserted into the database.
@@ -167,6 +120,26 @@ trait Connection extends js.Object {
     */
   def createLob(`type`: Double): js.Promise[Lob] = js.native
   def createLob(`type`: Double, callback: js.Function2[/* error */ DBError, /* lob */ Lob, Unit]): Unit = js.native
+  
+  /**
+    * After setting currentSchema, SQL statements using unqualified references to schema objects will resolve to objects in the specified schema.
+    * This setting does not change the session user or the current user, nor does it give the session user any additional system or object privileges for the session.
+    * The value of currentSchema will be empty until it has been explicitly set.
+    * This property is an efficient alternative to ALTER SESSION SET CURRENT_SCHEMA.
+    * 
+    * @since 4.0
+    */
+  var currentSchema: js.UndefOr[String] = js.native
+  
+  /**
+    * The database operation information for end-to-end application tracing.
+    * This is a write-only property. Displaying connection.dbOp will show a value of null.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
+    * @since 4.1
+    */
+  var dbOp: js.UndefOr[String] = js.native
+  
   /**
     * This call executes a single SQL or PL/SQL statement.
     *
@@ -209,6 +182,7 @@ trait Connection extends js.Object {
     callback: js.Function2[/* error */ DBError, /* result */ Result[T], Unit]
   ): Unit = js.native
   def execute[T](sql: String, callback: js.Function2[/* error */ DBError, /* result */ Result[T], Unit]): Unit = js.native
+  
   def executeMany[T](sql: String, binds: js.Array[BindParameters]): js.Promise[Results[T]] = js.native
   def executeMany[T](
     sql: String,
@@ -290,6 +264,7 @@ trait Connection extends js.Object {
     options: ExecuteManyOptions,
     callback: js.Function2[/* error */ DBError, /* result */ Results[T], Unit]
   ): Unit = js.native
+  
   /**
     * Returns a DbObject prototype object representing the named Oracle Database object or collection.
     * When the definition of a type changes in the database, such as might occur in a development environment,
@@ -308,6 +283,7 @@ trait Connection extends js.Object {
     className: String,
     callback: js.Function2[/* error */ DBError, /* dbObject */ DBObjectClass[T], Unit]
   ): Unit = js.native
+  
   def getQueue[T](name: String): js.Promise[AdvancedQueue[T]] = js.native
   def getQueue[T](name: String, callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue[T], Unit]): Unit = js.native
   def getQueue[T](name: String, options: GetAdvancedQueueOptions): js.Promise[AdvancedQueue[T]] = js.native
@@ -316,6 +292,7 @@ trait Connection extends js.Object {
     options: GetAdvancedQueueOptions,
     callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue[T], Unit]
   ): Unit = js.native
+  
   /**
     * Returns a parent SodaDatabase object for use with Simple Oracle Document Access (SODA).
     *
@@ -323,6 +300,7 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaoverview
     */
   def getSodaDatabase(): SodaDatabase = js.native
+  
   /**
     * Parses a SQL statement and returns information about it. This is most useful for finding column
     * names of queries, and for finding the names of bind variables used.
@@ -343,6 +321,32 @@ trait Connection extends js.Object {
     sql: String,
     callback: js.Function2[/* error */ DBError, /* info */ StatementInfo[js.Object], Unit]
   ): Unit = js.native
+  
+  /**
+    * The module attribute for end-to-end application tracing.
+    * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.
+    */
+  var module: js.UndefOr[String] = js.native
+  
+  /**
+    * This readonly property gives a numeric representation of the Oracle database version which is useful in comparisons.
+    * For version a.b.c.d.e, this property gives the number: (100000000 * a) + (1000000 * b) + (10000 * c) + (100 * d) + e.
+    * Note if you connect to Oracle Database 18, the version will only be accurate if node-oracledb is also using Oracle Database 18 client libraries.
+    * Otherwise it will show the base release such as 1800000000 instead of 1803000000.
+    *
+    * @since 1.3
+    */
+  val oracleServerVersion: Double = js.native
+  
+  /**
+    * This readonly property gives a string representation of the Oracle database version which is useful for display.
+    * Note if you connect to Oracle Database 18, the version will only be accurate if node-oracledb is also using Oracle Database 18 client libraries.
+    * Otherwise it will show the base release such as “18.0.0.0.0” instead of “18.3.0.0.0”.
+    *
+    * @since 2.2
+    */
+  val oracleServerVersionString: String = js.native
+  
   /**
     * This method checks that a connection is currently usable and the network to the database is valid.
     * This call can be useful for system health checks. A ping only confirms that a single connection
@@ -359,6 +363,7 @@ trait Connection extends js.Object {
     */
   def ping(): js.Promise[Unit] = js.native
   def ping(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   def queryStream(sql: String): Readable = js.native
   def queryStream(sql: String, bindParams: BindParameters): Readable = js.native
   /**
@@ -380,6 +385,7 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#streamingresults
     */
   def queryStream(sql: String, bindParams: BindParameters, options: ExecuteOptions): Readable = js.native
+  
   def release(): js.Promise[Unit] = js.native
   def release(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   /**
@@ -401,11 +407,13 @@ trait Connection extends js.Object {
     */
   def release(options: CloseConnectionOptions): js.Promise[Unit] = js.native
   def release(options: CloseConnectionOptions, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Rolls back the current transaction in progress on the connection.
     */
   def rollback(): js.Promise[Unit] = js.native
   def rollback(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Used to shut down a database instance. This is the flexible version of oracledb.shutdown(), allowing more control over behavior.
     * 
@@ -422,6 +430,7 @@ trait Connection extends js.Object {
   def shutdown(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def shutdown(mode: Double): js.Promise[Unit] = js.native
   def shutdown(mode: Double, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Used to start up a database instance. This is the flexible version of oracledb.startup(), allowing more control over behavior.
     * 
@@ -440,6 +449,13 @@ trait Connection extends js.Object {
   def startup(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def startup(opts: StartupOptions): js.Promise[Unit] = js.native
   def startup(opts: StartupOptions, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /**
+    * The number of statements to be cached in the statement cache of the connection.
+    * The default value is the stmtCacheSize property in effect in the Pool object when the connection is created in the pool.
+    */
+  val stmtCacheSize: Double = js.native
+  
   /**
     * Register a JavaScript callback method to be invoked when data is changed in the database by any committed transaction,
     * or when there are Advanced Queuing messages to be dequeued.
@@ -468,6 +484,20 @@ trait Connection extends js.Object {
     options: SubscribeOptions,
     callback: js.Function2[/* error */ DBError, /* result */ Subscription, Unit]
   ): Unit = js.native
+  
+  /**
+    * Applications can set the tag property on pooled connections to indicate the ‘session state’ that a connection has.
+    * The tag will be retained when the connection is released to the pool.
+    * A subsequent pool.getConnection() can request a connection that has a given tag.
+    * It is up to the application to set any desired session state and set connection.tag prior to closing the connection.
+    * The tag property is not used for standalone connections.
+    * When node-oracledb is using Oracle Client libraries 12.2 or later, the tag must be a multi-property tag with name=value pairs like “k1=v1;k2=v2”.
+    * An empty string represents not having a tag set.
+    *
+    * @since 3.1
+    */
+  var tag: js.UndefOr[String] = js.native
+  
   /**
     * Unregister a Continuous Query Notification (CQN) subscription previously created with connection.subscribe().
     * No further notifications will be sent. The notification callback does not receive a notification of the
@@ -484,4 +514,3 @@ trait Connection extends js.Object {
   def unsubscribe(name: String): js.Promise[Unit] = js.native
   def unsubscribe(name: String, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
 }
-

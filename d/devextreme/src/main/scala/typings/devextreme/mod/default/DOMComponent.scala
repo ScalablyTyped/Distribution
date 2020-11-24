@@ -6,7 +6,7 @@ import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "DOMComponent")
 @js.native
@@ -17,15 +17,19 @@ class DOMComponent protected ()
   def this(element: JQuery, options: DOMComponentOptions[typings.devextreme.mod.DevExpress.DOMComponent]) = this()
   def this(element: Element, options: DOMComponentOptions[typings.devextreme.mod.DevExpress.DOMComponent]) = this()
 }
-
 /* static members */
 @JSImport("devextreme", "DOMComponent")
 @js.native
 object DOMComponent extends js.Object {
-  /** @name DOMComponent.defaultOptions(rule) */
+  
+  /**
+    * [descr:DOMComponent.defaultOptions(rule)]
+    */
   def defaultOptions(rule: Device): Unit = js.native
+  
   def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = js.native
-  /** @name DOMComponent.getInstance(element) */
+  /**
+    * [descr:DOMComponent.getInstance(element)]
+    */
   def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = js.native
 }
-

@@ -2,17 +2,17 @@ package typings.heremaps.H.map.render
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RenderState extends js.Object
-
 /**
   * The rendering states of the layer.
   */
 @JSGlobal("H.map.render.RenderState")
 @js.native
 object RenderState extends js.Object {
+  
   /** Data rendering or animation is in progress. */
   @js.native
   sealed trait ACTIVE extends RenderState
@@ -27,6 +27,4 @@ object RenderState extends js.Object {
     */
   @js.native
   sealed trait PENDING extends RenderState
-  
 }
-

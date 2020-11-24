@@ -3,7 +3,7 @@ package typings.openlayers.mod
 import typings.openlayers.mod.geom.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Sphere")
 @js.native
@@ -24,6 +24,7 @@ class Sphere protected () extends js.Object {
     * @api
     */
   def this(radius: Double) = this()
+  
   /**
     * Returns the geodesic area for a list of coordinates.
     *
@@ -39,6 +40,7 @@ class Sphere protected () extends js.Object {
     * @api
     */
   def geodesicArea(coordinates: js.Array[Coordinate_]): Double = js.native
+  
   /**
     * Returns the distance from c1 to c2 using the haversine formula.
     *
@@ -49,11 +51,11 @@ class Sphere protected () extends js.Object {
     */
   def haversineDistance(c1: Coordinate_, c2: Coordinate_): Double = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "Sphere")
 @js.native
 object Sphere extends js.Object {
+  
   /**
     * Get the spherical area of a geometry.  This is the area (in meters) assuming
     * that polygon edges are segments of great circles on a sphere.
@@ -66,6 +68,7 @@ object Sphere extends js.Object {
     */
   def getArea(geometry: Geometry): Double = js.native
   def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
+  
   /**
     * Get the spherical length of a geometry.  This length is the sum of the
     * great circle distances between coordinates.  For polygons, the length is
@@ -81,4 +84,3 @@ object Sphere extends js.Object {
   def getLength(geometry: Geometry): Double = js.native
   def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
 }
-

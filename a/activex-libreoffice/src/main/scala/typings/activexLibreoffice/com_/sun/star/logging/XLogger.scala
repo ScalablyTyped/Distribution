@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.logging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implemented by a component which is able to log events.
@@ -15,13 +15,16 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XLogger extends js.Object {
+  
   /**
     * specifies which log events are logged or ignored.
     * @see LogLevel
     */
   var Level: Double = js.native
+  
   /** denotes the name of the logger. */
   var Name: String = js.native
+  
   /**
     * adds the given handler to the list of handlers.
     *
@@ -34,6 +37,7 @@ trait XLogger extends js.Object {
     * @param LogHandler the handler to add to the list of handlers. The call is ignored if this parameter is `NULL` .
     */
   def addLogHandler(LogHandler: XLogHandler): Unit = js.native
+  
   /**
     * determines whether logger instance would produce any output for the given level.
     *
@@ -45,12 +49,14 @@ trait XLogger extends js.Object {
     * @see removeLogHandler
     */
   def isLoggable(Level: Double): Boolean = js.native
+  
   /**
     * logs a given message
     * @param Level the log level of this message. If this level is smaller than the logger's {@link Level} attribute, then the call will be ignored.
     * @param Message the message to log
     */
   def log(Level: Double, Message: String): Unit = js.native
+  
   /**
     * logs a given message, detailing the source class and method at which the logged event occurred.
     * @param Level the log level of this message. If this level is smaller than the logger's {@link Level} attribute, then the call will be ignored.
@@ -59,14 +65,15 @@ trait XLogger extends js.Object {
     * @param Message the message to log
     */
   def logp(Level: Double, SourceClass: String, SourceMethod: String, Message: String): Unit = js.native
+  
   /**
     * removes the given handler from the list of handlers.
     * @param LogHandler the handler to remove from the list of handlers. The call is ignored if this parameter is `NULL` , or if the handler has not previousl
     */
   def removeLogHandler(LogHandler: XLogHandler): Unit = js.native
 }
-
 object XLogger {
+  
   @scala.inline
   def apply(
     Level: Double,
@@ -80,32 +87,41 @@ object XLogger {
     val __obj = js.Dynamic.literal(Level = Level.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], addLogHandler = js.Any.fromFunction1(addLogHandler), isLoggable = js.Any.fromFunction1(isLoggable), log = js.Any.fromFunction2(log), logp = js.Any.fromFunction4(logp), removeLogHandler = js.Any.fromFunction1(removeLogHandler))
     __obj.asInstanceOf[XLogger]
   }
+  
   @scala.inline
   implicit class XLoggerOps[Self <: XLogger] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLevel(value: Double): Self = this.set("Level", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddLogHandler(value: XLogHandler => Unit): Self = this.set("addLogHandler", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsLoggable(value: Double => Boolean): Self = this.set("isLoggable", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setLog(value: (Double, String) => Unit): Self = this.set("log", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setLogp(value: (Double, String, String, String) => Unit): Self = this.set("logp", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setRemoveLogHandler(value: XLogHandler => Unit): Self = this.set("removeLogHandler", js.Any.fromFunction1(value))
   }
-  
 }
-

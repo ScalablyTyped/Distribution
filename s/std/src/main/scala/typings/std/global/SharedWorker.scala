@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.WorkerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SharedWorker")
 @js.native
@@ -15,7 +15,6 @@ class SharedWorker protected ()
   def this(scriptURL: java.lang.String, options: java.lang.String) = this()
   def this(scriptURL: java.lang.String, options: WorkerOptions) = this()
 }
-
 @JSGlobal("SharedWorker")
 @js.native
 object SharedWorker
@@ -25,4 +24,3 @@ object SharedWorker
       (/* options */ java.lang.String) | (/* options */ WorkerOptions), 
       typings.std.SharedWorker
     ]
-

@@ -11,8 +11,8 @@ Lazy value.
 | Full name          | lazy-val |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 43 |
-| # downloads        | 3798371 |
+| # dependents       | 58 |
+| # downloads        | 5340171 |
 | # stars            | 0 |
 
 ## Links

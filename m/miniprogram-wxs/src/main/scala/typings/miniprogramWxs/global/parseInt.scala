@@ -2,11 +2,12 @@ package typings.miniprogramWxs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("parseInt")
 @js.native
 object parseInt extends js.Object {
+  
   /**
     * Converts A string to an integer.
     * @param s A string to convert into a number.
@@ -17,4 +18,3 @@ object parseInt extends js.Object {
   def apply(s: String): Double = js.native
   def apply(s: String, radix: Double): Double = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Display
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DisplayOrientations extends js.Object
-
 @JSGlobal("Windows.Graphics.Display.DisplayOrientations")
 @js.native
 object DisplayOrientations extends js.Object {
+  
   @js.native
   sealed trait landscape extends DisplayOrientations
   
@@ -24,6 +24,4 @@ object DisplayOrientations extends js.Object {
   
   @js.native
   sealed trait portraitFlipped extends DisplayOrientations
-  
 }
-

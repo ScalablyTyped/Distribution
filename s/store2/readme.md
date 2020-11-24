@@ -1,7 +1,7 @@
 
 # Scala.js typings for store2
 
-Typings are for version 2.11.2
+Typings are for version 2.12.0
 
 ## Library description:
 Better localStorage
@@ -11,8 +11,8 @@ Better localStorage
 | Full name          | store2 |
 | Keywords           | localStorage, sessionStorage, json, namespace, store |
 | # releases         | 9 |
-| # dependents       | 65 |
-| # downloads        | 17483708 |
+| # dependents       | 83 |
+| # downloads        | 62319777 |
 | # stars            | 10 |
 
 ## Links

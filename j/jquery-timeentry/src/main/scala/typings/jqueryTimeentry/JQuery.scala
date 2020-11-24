@@ -2,15 +2,11 @@ package typings.jqueryTimeentry
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  /**
-    * initialize TimeEntry plugin
-    */
-  @JSName("timeEntry")
-  var timeEntry_Original: ITimeEntry = js.native
+  
   /**
     * initialize TimeEntry plugin
     */
@@ -26,5 +22,9 @@ trait JQuery extends js.Object {
   def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.Any, value: js.Any): js.Any = js.native
+  /**
+    * initialize TimeEntry plugin
+    */
+  @JSName("timeEntry")
+  var timeEntry_Original: ITimeEntry = js.native
 }
-

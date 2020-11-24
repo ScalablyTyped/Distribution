@@ -2,7 +2,7 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `Documentation` provides the information for describing a service. Example:
@@ -44,10 +44,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaDocumentation extends js.Object {
+  
   /**
     * The URL to the root of documentation.
     */
   var documentationRootUrl: js.UndefOr[String] = js.native
+  
   /**
     * Declares a single overview page. For example:
     * &lt;pre&gt;&lt;code&gt;documentation:   summary: ...   overview:
@@ -59,65 +61,82 @@ trait SchemaDocumentation extends js.Object {
     * and `pages` field.
     */
   var overview: js.UndefOr[String] = js.native
+  
   /**
     * The top level pages for the documentation set.
     */
   var pages: js.UndefOr[js.Array[SchemaPage]] = js.native
+  
   /**
     * A list of documentation rules that apply to individual API elements.
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
   var rules: js.UndefOr[js.Array[SchemaDocumentationRule]] = js.native
+  
   /**
     * A short summary of what the service does. Can only be provided by plain
     * text.
     */
   var summary: js.UndefOr[String] = js.native
 }
-
 object SchemaDocumentation {
+  
   @scala.inline
   def apply(): SchemaDocumentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDocumentation]
   }
+  
   @scala.inline
   implicit class SchemaDocumentationOps[Self <: SchemaDocumentation] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDocumentationRootUrl(value: String): Self = this.set("documentationRootUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDocumentationRootUrl: Self = this.set("documentationRootUrl", js.undefined)
+    
     @scala.inline
     def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOverview: Self = this.set("overview", js.undefined)
+    
     @scala.inline
     def setPagesVarargs(value: SchemaPage*): Self = this.set("pages", js.Array(value :_*))
+    
     @scala.inline
     def setPages(value: js.Array[SchemaPage]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePages: Self = this.set("pages", js.undefined)
+    
     @scala.inline
     def setRulesVarargs(value: SchemaDocumentationRule*): Self = this.set("rules", js.Array(value :_*))
+    
     @scala.inline
     def setRules(value: js.Array[SchemaDocumentationRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRules: Self = this.set("rules", js.undefined)
+    
     @scala.inline
     def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSummary: Self = this.set("summary", js.undefined)
   }
-  
 }
-

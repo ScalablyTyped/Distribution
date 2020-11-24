@@ -12,7 +12,7 @@ Validate a date
 | Keywords           | date, validator, iso8601, moment, format, parse |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 24480692 |
+| # downloads        | 21163368 |
 | # stars            | 0 |
 
 ## Links

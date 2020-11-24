@@ -3,16 +3,17 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.BaseRadius
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playcanvas", "createCone")
 @js.native
 object createCone extends js.Object {
+  
   /**
     * Creates a procedural cone-shaped mesh.
     *
     * The size, shape and tesselation properties of the cone can be controlled via function
-    * parameters. By default, the function will create a cone standing vertically centred
+    * parameters. By default, the function will create a cone standing vertically centered
     * on the XZ-plane with a base radius of 0.5, a height of 1.0, 5 height segments and 20
     * cap segments.
     *
@@ -30,4 +31,3 @@ object createCone extends js.Object {
   def apply(device: typings.playcanvas.pc.GraphicsDevice): typings.playcanvas.pc.Mesh = js.native
   def apply(device: typings.playcanvas.pc.GraphicsDevice, opts: BaseRadius): typings.playcanvas.pc.Mesh = js.native
 }
-

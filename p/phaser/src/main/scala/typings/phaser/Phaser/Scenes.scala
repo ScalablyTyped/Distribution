@@ -26,11 +26,12 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Scenes")
 @js.native
 object Scenes extends js.Object {
+  
   /**
     * The Scene Manager.
     * 
@@ -39,31 +40,7 @@ object Scenes extends js.Object {
     */
   @js.native
   trait SceneManager extends js.Object {
-    /**
-      * Do any of the Cameras in any of the Scenes require a custom viewport?
-      * If not we can skip scissor tests.
-      */
-    var customViewports: Double = js.native
-    /**
-      * The Game that this SceneManager belongs to.
-      */
-    var game: Game = js.native
-    /**
-      * Has the Scene Manager properly started?
-      */
-    val isBooted: Boolean = js.native
-    /**
-      * Is the Scene Manager actively processing the Scenes list?
-      */
-    val isProcessing: Boolean = js.native
-    /**
-      * An object that maps the keys to the scene so we can quickly get a scene from a key without iteration.
-      */
-    var keys: js.Object = js.native
-    /**
-      * The array in which all of the scenes are kept.
-      */
-    var scenes: js.Array[_] = js.native
+    
     def add(key: String, sceneConfig: js.Function): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean): Scene = js.native
@@ -103,6 +80,7 @@ object Scenes extends js.Object {
     def add(key: String, sceneConfig: SettingsConfig, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean, data: js.Object): Scene = js.native
+    
     /**
       * Brings a Scene to the top of the Scenes list.
       * 
@@ -111,31 +89,48 @@ object Scenes extends js.Object {
       */
     def bringToTop(key: String): SceneManager = js.native
     def bringToTop(key: Scene): SceneManager = js.native
+    
+    /**
+      * Do any of the Cameras in any of the Scenes require a custom viewport?
+      * If not we can skip scissor tests.
+      */
+    var customViewports: Double = js.native
+    
     /**
       * Destroy the SceneManager and all of its Scene's systems.
       */
     def destroy(): Unit = js.native
+    
     /**
       * Dumps debug information about each Scene to the developer console.
       */
     def dump(): Unit = js.native
+    
+    /**
+      * The Game that this SceneManager belongs to.
+      */
+    var game: Game = js.native
+    
     /**
       * Retrieves a Scene by numeric index.
       * @param index The index of the Scene to retrieve.
       */
     def getAt(index: integer): js.UndefOr[Scene] = js.native
+    
     /**
       * Retrieves the numeric index of a Scene.
       * @param key The key of the Scene.
       */
     def getIndex(key: String): integer = js.native
     def getIndex(key: Scene): integer = js.native
+    
     /**
       * Retrieves a Scene.
       * @param key The Scene to retrieve.
       */
     def getScene(key: String): Scene = js.native
     def getScene(key: Scene): Scene = js.native
+    
     /**
       * Returns an array of all the current Scenes being managed by this Scene Manager.
       * 
@@ -148,26 +143,46 @@ object Scenes extends js.Object {
     def getScenes(isActive: js.UndefOr[scala.Nothing], inReverse: Boolean): js.Array[Scene] = js.native
     def getScenes(isActive: Boolean): js.Array[Scene] = js.native
     def getScenes(isActive: Boolean, inReverse: Boolean): js.Array[Scene] = js.native
+    
     /**
       * Determines whether a Scene is running.
       * @param key The Scene to check.
       */
     def isActive(key: String): Boolean = js.native
+    
+    /**
+      * Has the Scene Manager properly started?
+      */
+    val isBooted: Boolean = js.native
+    
     /**
       * Determines whether a Scene is paused.
       * @param key The Scene to check.
       */
     def isPaused(key: String): Boolean = js.native
+    
+    /**
+      * Is the Scene Manager actively processing the Scenes list?
+      */
+    val isProcessing: Boolean = js.native
+    
     /**
       * Determines whether a Scene is sleeping.
       * @param key The Scene to check.
       */
     def isSleeping(key: String): Boolean = js.native
+    
     /**
       * Determines whether a Scene is visible.
       * @param key The Scene to check.
       */
     def isVisible(key: String): Boolean = js.native
+    
+    /**
+      * An object that maps the keys to the scene so we can quickly get a scene from a key without iteration.
+      */
+    var keys: js.Object = js.native
+    
     /**
       * Moves a Scene so it is immediately above another Scene in the Scenes list.
       * 
@@ -179,6 +194,7 @@ object Scenes extends js.Object {
     def moveAbove(keyA: String, keyB: Scene): SceneManager = js.native
     def moveAbove(keyA: Scene, keyB: String): SceneManager = js.native
     def moveAbove(keyA: Scene, keyB: Scene): SceneManager = js.native
+    
     /**
       * Moves a Scene so it is immediately below another Scene in the Scenes list.
       * 
@@ -190,18 +206,21 @@ object Scenes extends js.Object {
     def moveBelow(keyA: String, keyB: Scene): SceneManager = js.native
     def moveBelow(keyA: Scene, keyB: String): SceneManager = js.native
     def moveBelow(keyA: Scene, keyB: Scene): SceneManager = js.native
+    
     /**
       * Moves a Scene down one position in the Scenes list.
       * @param key The Scene to move.
       */
     def moveDown(key: String): SceneManager = js.native
     def moveDown(key: Scene): SceneManager = js.native
+    
     /**
       * Moves a Scene up one position in the Scenes list.
       * @param key The Scene to move.
       */
     def moveUp(key: String): SceneManager = js.native
     def moveUp(key: Scene): SceneManager = js.native
+    
     /**
       * Pauses the given Scene.
       * @param key The Scene to pause.
@@ -209,10 +228,12 @@ object Scenes extends js.Object {
       */
     def pause(key: String): SceneManager = js.native
     def pause(key: String, data: js.Object): SceneManager = js.native
+    
     /**
       * Process the Scene operations queue.
       */
     def processQueue(): Unit = js.native
+    
     /**
       * Removes a Scene from the SceneManager.
       * 
@@ -224,12 +245,14 @@ object Scenes extends js.Object {
       * @param key A unique key used to reference the Scene, i.e. `MainMenu` or `Level1`.
       */
     def remove(key: String): SceneManager = js.native
+    
     /**
       * Renders the Scenes.
       * @param renderer The renderer to use.
       */
     def render(renderer: CanvasRenderer): Unit = js.native
     def render(renderer: WebGLRenderer): Unit = js.native
+    
     /**
       * Resumes the given Scene.
       * @param key The Scene to resume.
@@ -237,6 +260,7 @@ object Scenes extends js.Object {
       */
     def resume(key: String): SceneManager = js.native
     def resume(key: String, data: js.Object): SceneManager = js.native
+    
     /**
       * Runs the given Scene.
       * 
@@ -250,6 +274,12 @@ object Scenes extends js.Object {
       */
     def run(key: String): SceneManager = js.native
     def run(key: String, data: js.Object): SceneManager = js.native
+    
+    /**
+      * The array in which all of the scenes are kept.
+      */
+    var scenes: js.Array[_] = js.native
+    
     /**
       * Sends a Scene to the back of the Scenes list.
       * 
@@ -258,6 +288,7 @@ object Scenes extends js.Object {
       */
     def sendToBack(key: String): SceneManager = js.native
     def sendToBack(key: Scene): SceneManager = js.native
+    
     /**
       * Puts the given Scene to sleep.
       * @param key The Scene to put to sleep.
@@ -265,6 +296,7 @@ object Scenes extends js.Object {
       */
     def sleep(key: String): SceneManager = js.native
     def sleep(key: String, data: js.Object): SceneManager = js.native
+    
     /**
       * Starts the given Scene.
       * @param key The Scene to start.
@@ -272,6 +304,7 @@ object Scenes extends js.Object {
       */
     def start(key: String): SceneManager = js.native
     def start(key: String, data: js.Object): SceneManager = js.native
+    
     /**
       * Stops the given Scene.
       * @param key The Scene to stop.
@@ -279,6 +312,7 @@ object Scenes extends js.Object {
       */
     def stop(key: String): SceneManager = js.native
     def stop(key: String, data: js.Object): SceneManager = js.native
+    
     /**
       * Swaps the positions of two Scenes in the Scenes list.
       * @param keyA The first Scene to swap.
@@ -288,18 +322,21 @@ object Scenes extends js.Object {
     def swapPosition(keyA: String, keyB: Scene): SceneManager = js.native
     def swapPosition(keyA: Scene, keyB: String): SceneManager = js.native
     def swapPosition(keyA: Scene, keyB: Scene): SceneManager = js.native
+    
     /**
       * Sleeps one one Scene and starts the other.
       * @param from The Scene to sleep.
       * @param to The Scene to start.
       */
     def switch(from: String, to: String): SceneManager = js.native
+    
     /**
       * Updates the Scenes.
       * @param time Time elapsed.
       * @param delta Delta time from the last update.
       */
     def update(time: Double, delta: Double): Unit = js.native
+    
     /**
       * Awakens the given Scene.
       * @param key The Scene to wake up.
@@ -314,31 +351,7 @@ object Scenes extends js.Object {
     */
   @js.native
   trait ScenePlugin extends js.Object {
-    /**
-      * The key of the Scene this ScenePlugin belongs to.
-      */
-    var key: String = js.native
-    /**
-      * The Game's SceneManager.
-      */
-    var manager: SceneManager = js.native
-    /**
-      * The Scene that this ScenePlugin belongs to.
-      */
-    var scene: Scene = js.native
-    /**
-      * The settings of the Scene this ScenePlugin belongs to.
-      */
-    var settings: SettingsObject = js.native
-    /**
-      * The Scene Systems instance of the Scene that this ScenePlugin belongs to.
-      */
-    var systems: Systems = js.native
-    /**
-      * If this Scene is currently transitioning to another, this holds
-      * the current percentage of the transition progress, between 0 and 1.
-      */
-    var transitionProgress: Double = js.native
+    
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean, data: js.Object): Scene = js.native
     /**
@@ -354,6 +367,7 @@ object Scenes extends js.Object {
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig, autoStart: Boolean, data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean, data: js.Object): Scene = js.native
+    
     /**
       * Brings a Scene to the top of the Scenes list.
       * 
@@ -362,11 +376,13 @@ object Scenes extends js.Object {
       */
     def bringToTop(): ScenePlugin = js.native
     def bringToTop(key: String): ScenePlugin = js.native
+    
     /**
       * Retrieve a Scene.
       * @param key The Scene to retrieve.
       */
     def get(key: String): Scene = js.native
+    
     /**
       * Retrieves the numeric index of a Scene in the Scenes list.
       * @param key The Scene to get the index of.
@@ -374,30 +390,40 @@ object Scenes extends js.Object {
     def getIndex(): integer = js.native
     def getIndex(key: String): integer = js.native
     def getIndex(key: Scene): integer = js.native
+    
     /**
       * Checks if the given Scene is running or not?
       * @param key The Scene to check.
       */
     def isActive(): Boolean = js.native
     def isActive(key: String): Boolean = js.native
+    
     /**
       * Checks if the given Scene is paused or not?
       * @param key The Scene to check.
       */
     def isPaused(): Boolean = js.native
     def isPaused(key: String): Boolean = js.native
+    
     /**
       * Checks if the given Scene is sleeping or not?
       * @param key The Scene to check.
       */
     def isSleeping(): Boolean = js.native
     def isSleeping(key: String): Boolean = js.native
+    
     /**
       * Checks if the given Scene is visible or not?
       * @param key The Scene to check.
       */
     def isVisible(): Boolean = js.native
     def isVisible(key: String): Boolean = js.native
+    
+    /**
+      * The key of the Scene this ScenePlugin belongs to.
+      */
+    var key: String = js.native
+    
     /**
       * Launch the given Scene and run it in parallel with this one.
       * 
@@ -407,6 +433,12 @@ object Scenes extends js.Object {
       */
     def launch(key: String): ScenePlugin = js.native
     def launch(key: String, data: js.Object): ScenePlugin = js.native
+    
+    /**
+      * The Game's SceneManager.
+      */
+    var manager: SceneManager = js.native
+    
     /**
       * Swaps the position of two scenes in the Scenes list, so that Scene B is directly above Scene A.
       * 
@@ -416,6 +448,7 @@ object Scenes extends js.Object {
       */
     def moveAbove(keyA: String): ScenePlugin = js.native
     def moveAbove(keyA: String, keyB: String): ScenePlugin = js.native
+    
     /**
       * Swaps the position of two scenes in the Scenes list, so that Scene B is directly below Scene A.
       * 
@@ -425,18 +458,21 @@ object Scenes extends js.Object {
       */
     def moveBelow(keyA: String): ScenePlugin = js.native
     def moveBelow(keyA: String, keyB: String): ScenePlugin = js.native
+    
     /**
       * Moves a Scene down one position in the Scenes list.
       * @param key The Scene to move.
       */
     def moveDown(): ScenePlugin = js.native
     def moveDown(key: String): ScenePlugin = js.native
+    
     /**
       * Moves a Scene up one position in the Scenes list.
       * @param key The Scene to move.
       */
     def moveUp(): ScenePlugin = js.native
     def moveUp(key: String): ScenePlugin = js.native
+    
     /**
       * Pause the Scene - this stops the update step from happening but it still renders.
       * 
@@ -448,6 +484,7 @@ object Scenes extends js.Object {
     def pause(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def pause(key: String): ScenePlugin = js.native
     def pause(key: String, data: js.Object): ScenePlugin = js.native
+    
     /**
       * Removes a Scene from the SceneManager.
       * 
@@ -461,6 +498,7 @@ object Scenes extends js.Object {
     def remove(): SceneManager = js.native
     def remove(key: String): SceneManager = js.native
     def remove(key: Scene): SceneManager = js.native
+    
     /**
       * Restarts this Scene.
       * 
@@ -469,6 +507,7 @@ object Scenes extends js.Object {
       */
     def restart(): ScenePlugin = js.native
     def restart(data: js.Object): ScenePlugin = js.native
+    
     /**
       * Resume the Scene - starts the update loop again.
       * 
@@ -480,6 +519,7 @@ object Scenes extends js.Object {
     def resume(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def resume(key: String): ScenePlugin = js.native
     def resume(key: String, data: js.Object): ScenePlugin = js.native
+    
     /**
       * Runs the given Scene, but does not change the state of this Scene.
       * 
@@ -495,6 +535,12 @@ object Scenes extends js.Object {
       */
     def run(key: String): ScenePlugin = js.native
     def run(key: String, data: js.Object): ScenePlugin = js.native
+    
+    /**
+      * The Scene that this ScenePlugin belongs to.
+      */
+    var scene: Scene = js.native
+    
     /**
       * Sends a Scene to the back of the Scenes list.
       * 
@@ -503,6 +549,7 @@ object Scenes extends js.Object {
       */
     def sendToBack(): ScenePlugin = js.native
     def sendToBack(key: String): ScenePlugin = js.native
+    
     /**
       * Sets the active state of the given Scene.
       * @param value If `true` the Scene will be resumed. If `false` it will be paused.
@@ -513,6 +560,7 @@ object Scenes extends js.Object {
     def setActive(value: Boolean, key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def setActive(value: Boolean, key: String): ScenePlugin = js.native
     def setActive(value: Boolean, key: String, data: js.Object): ScenePlugin = js.native
+    
     /**
       * Sets the visible state of the given Scene.
       * @param value The visible value.
@@ -520,6 +568,12 @@ object Scenes extends js.Object {
       */
     def setVisible(value: Boolean): ScenePlugin = js.native
     def setVisible(value: Boolean, key: String): ScenePlugin = js.native
+    
+    /**
+      * The settings of the Scene this ScenePlugin belongs to.
+      */
+    var settings: SettingsObject = js.native
+    
     /**
       * Makes the Scene sleep (no update, no render) but doesn't shutdown.
       * 
@@ -531,6 +585,7 @@ object Scenes extends js.Object {
     def sleep(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def sleep(key: String): ScenePlugin = js.native
     def sleep(key: String, data: js.Object): ScenePlugin = js.native
+    
     /**
       * Shutdown this Scene and run the given one.
       * 
@@ -542,6 +597,7 @@ object Scenes extends js.Object {
     def start(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def start(key: String): ScenePlugin = js.native
     def start(key: String, data: js.Object): ScenePlugin = js.native
+    
     /**
       * Shutdown the Scene, clearing display list, timers, etc.
       * 
@@ -553,6 +609,7 @@ object Scenes extends js.Object {
     def stop(key: js.UndefOr[scala.Nothing], data: js.Any): ScenePlugin = js.native
     def stop(key: String): ScenePlugin = js.native
     def stop(key: String, data: js.Any): ScenePlugin = js.native
+    
     /**
       * Swaps the position of two scenes in the Scenes list.
       * 
@@ -562,6 +619,7 @@ object Scenes extends js.Object {
       */
     def swapPosition(keyA: String): ScenePlugin = js.native
     def swapPosition(keyA: String, keyB: String): ScenePlugin = js.native
+    
     /**
       * Makes this Scene sleep then starts the Scene given.
       * 
@@ -569,6 +627,12 @@ object Scenes extends js.Object {
       * @param key The Scene to start.
       */
     def switch(key: String): ScenePlugin = js.native
+    
+    /**
+      * The Scene Systems instance of the Scene that this ScenePlugin belongs to.
+      */
+    var systems: Systems = js.native
+    
     /**
       * This will start a transition from the current Scene to the target Scene given.
       * 
@@ -601,6 +665,13 @@ object Scenes extends js.Object {
       * @param config The transition configuration object.
       */
     def transition(config: SceneTransitionConfig): Boolean = js.native
+    
+    /**
+      * If this Scene is currently transitioning to another, this holds
+      * the current percentage of the transition progress, between 0 and 1.
+      */
+    var transitionProgress: Double = js.native
+    
     /**
       * Makes the Scene wake-up (starts update and render)
       * 
@@ -623,6 +694,7 @@ object Scenes extends js.Object {
     */
   @js.native
   trait Systems extends js.Object {
+    
     /**
       * A reference to the Scene's Game Object Factory.
       * 
@@ -631,12 +703,14 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.add` property.
       */
     var add: GameObjectFactory = js.native
+    
     /**
       * A reference to the global Animations Manager.
       * 
       * In the default set-up you can access this from within a Scene via the `this.anims` property.
       */
     var anims: AnimationManager = js.native
+    
     /**
       * A reference to the global Cache. The Cache stores all files bought in to Phaser via
       * the Loader, with the exception of images. Images are stored in the Texture Manager.
@@ -644,6 +718,7 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.cache` property.
       */
     var cache: CacheManager = js.native
+    
     /**
       * A reference to the Scene's Camera Manager.
       * 
@@ -652,18 +727,27 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.cameras` property.
       */
     var cameras: CameraManager = js.native
+    
     /**
       * A handy reference to the Scene canvas / context.
       */
     var canvas: HTMLCanvasElement = js.native
+    
     /**
       * The Scene Configuration object, as passed in when creating the Scene.
       */
     var config: String | SettingsConfig = js.native
+    
     /**
       * A reference to the Canvas Rendering Context being used by the renderer.
       */
     var context: CanvasRenderingContext2D = js.native
+    
+    /**
+      * Immediately sorts the display list if the flag is set.
+      */
+    def depthSort(): Unit = js.native
+    
     /**
       * A reference to the Scene's Display List.
       * 
@@ -672,6 +756,7 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.children` property.
       */
     var displayList: DisplayList = js.native
+    
     /**
       * A reference to the Scene's Event Manager.
       * 
@@ -680,14 +765,68 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.events` property.
       */
     var events: EventEmitter = js.native
+    
     /**
       * The Facebook Instant Games Plugin.
       */
     var facebook: FacebookInstantGamesPlugin = js.native
+    
     /**
       * A reference to the Phaser Game instance.
       */
     var game: Game = js.native
+    
+    /**
+      * Returns any data that was sent to this Scene by another Scene.
+      * 
+      * The data is also passed to `Scene.init` and in various Scene events, but
+      * you can access it at any point via this method.
+      */
+    def getData(): js.Any = js.native
+    
+    /**
+      * This method is called only once by the Scene Manager when the Scene is instantiated.
+      * It is responsible for setting up all of the Scene plugins and references.
+      * It should never be called directly.
+      * @param game A reference to the Phaser Game instance.
+      */
+    /* protected */ def init(game: Game): Unit = js.native
+    
+    /**
+      * Is this Scene running?
+      */
+    def isActive(): Boolean = js.native
+    
+    /**
+      * Is this Scene paused?
+      */
+    def isPaused(): Boolean = js.native
+    
+    /**
+      * Is this Scene sleeping?
+      */
+    def isSleeping(): Boolean = js.native
+    
+    /**
+      * Is this Scene currently transitioning in from another Scene?
+      */
+    def isTransitionIn(): Boolean = js.native
+    
+    /**
+      * Is this Scene currently transitioning out from itself to another Scene?
+      */
+    def isTransitionOut(): Boolean = js.native
+    
+    /**
+      * Is this Scene currently transitioning out to, or in from another Scene?
+      */
+    def isTransitioning(): Boolean = js.native
+    
+    /**
+      * Is this Scene visible and rendering?
+      */
+    def isVisible(): Boolean = js.native
+    
     /**
       * A reference to the Scene's Game Object Creator.
       * 
@@ -698,12 +837,27 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.make` property.
       */
     var make: GameObjectCreator = js.native
+    
+    /**
+      * Pause this Scene.
+      * A paused Scene still renders, it just doesn't run ANY of its update handlers or systems.
+      * @param data A data object that will be passed in the 'pause' event.
+      */
+    def pause(): Systems = js.native
+    def pause(data: js.Object): Systems = js.native
+    
     /**
       * A reference to the global Plugins Manager.
       * 
       * In the default set-up you can access this from within a Scene via the `this.plugins` property.
       */
     var plugins: PluginManager = js.native
+    
+    /**
+      * Force a sort of the display list on the next render.
+      */
+    def queueDepthSort(): Unit = js.native
+    
     /**
       * A reference to the global registry. This is a game-wide instance of the Data Manager, allowing
       * you to exchange data between Scenes via a universal and shared point.
@@ -711,20 +865,39 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.registry` property.
       */
     var registry: DataManager = js.native
+    
+    /**
+      * Called automatically by the Scene Manager.
+      * Instructs the Scene to render itself via its Camera Manager to the renderer given.
+      * @param renderer The renderer that invoked the render call.
+      */
+    def render(renderer: CanvasRenderer): Unit = js.native
+    def render(renderer: WebGLRenderer): Unit = js.native
+    
     /**
       * A reference to either the Canvas or WebGL Renderer that this Game is using.
       */
     var renderer: CanvasRenderer | WebGLRenderer = js.native
+    
+    /**
+      * Resume this Scene from a paused state.
+      * @param data A data object that will be passed in the 'resume' event.
+      */
+    def resume(): Systems = js.native
+    def resume(data: js.Object): Systems = js.native
+    
     /**
       * A reference to the global Scale Manager.
       * 
       * In the default set-up you can access this from within a Scene via the `this.scale` property.
       */
     var scale: ScaleManager = js.native
+    
     /**
       * A reference to the Scene that these Systems belong to.
       */
     var scene: Scene = js.native
+    
     /**
       * A reference to the Scene Manager Plugin.
       * 
@@ -734,103 +907,7 @@ object Scenes extends js.Object {
       * In the default set-up you can access this from within a Scene via the `this.scene` property.
       */
     var scenePlugin: ScenePlugin = js.native
-    /**
-      * The Scene Settings. This is the parsed output based on the Scene configuration.
-      */
-    var settings: SettingsObject = js.native
-    /**
-      * A reference to the global Sound Manager.
-      * 
-      * In the default set-up you can access this from within a Scene via the `this.sound` property.
-      */
-    var sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager = js.native
-    /**
-      * A reference to the global Texture Manager.
-      * 
-      * In the default set-up you can access this from within a Scene via the `this.textures` property.
-      */
-    var textures: TextureManager = js.native
-    /**
-      * A reference to the Scene's Update List.
-      * 
-      * Use this to organize the children contained in the update list.
-      * 
-      * The Update List is responsible for managing children that need their `preUpdate` methods called,
-      * in order to process so internal components, such as Sprites with Animations.
-      * 
-      * In the default set-up there is no reference to this from within the Scene itself.
-      */
-    var updateList: UpdateList = js.native
-    /**
-      * Immediately sorts the display list if the flag is set.
-      */
-    def depthSort(): Unit = js.native
-    /**
-      * Returns any data that was sent to this Scene by another Scene.
-      * 
-      * The data is also passed to `Scene.init` and in various Scene events, but
-      * you can access it at any point via this method.
-      */
-    def getData(): js.Any = js.native
-    /**
-      * This method is called only once by the Scene Manager when the Scene is instantiated.
-      * It is responsible for setting up all of the Scene plugins and references.
-      * It should never be called directly.
-      * @param game A reference to the Phaser Game instance.
-      */
-    /* protected */ def init(game: Game): Unit = js.native
-    /**
-      * Is this Scene running?
-      */
-    def isActive(): Boolean = js.native
-    /**
-      * Is this Scene paused?
-      */
-    def isPaused(): Boolean = js.native
-    /**
-      * Is this Scene sleeping?
-      */
-    def isSleeping(): Boolean = js.native
-    /**
-      * Is this Scene currently transitioning in from another Scene?
-      */
-    def isTransitionIn(): Boolean = js.native
-    /**
-      * Is this Scene currently transitioning out from itself to another Scene?
-      */
-    def isTransitionOut(): Boolean = js.native
-    /**
-      * Is this Scene currently transitioning out to, or in from another Scene?
-      */
-    def isTransitioning(): Boolean = js.native
-    /**
-      * Is this Scene visible and rendering?
-      */
-    def isVisible(): Boolean = js.native
-    /**
-      * Pause this Scene.
-      * A paused Scene still renders, it just doesn't run ANY of its update handlers or systems.
-      * @param data A data object that will be passed in the 'pause' event.
-      */
-    def pause(): Systems = js.native
-    def pause(data: js.Object): Systems = js.native
-    /**
-      * Force a sort of the display list on the next render.
-      */
-    def queueDepthSort(): Unit = js.native
-    /**
-      * Called automatically by the Scene Manager.
-      * Instructs the Scene to render itself via its Camera Manager to the renderer given.
-      * @param renderer The renderer that invoked the render call.
-      */
-    def render(renderer: CanvasRenderer): Unit = js.native
-    def render(renderer: WebGLRenderer): Unit = js.native
-    /**
-      * Resume this Scene from a paused state.
-      * @param data A data object that will be passed in the 'resume' event.
-      */
-    def resume(): Systems = js.native
-    def resume(data: js.Object): Systems = js.native
+    
     /**
       * Set the active state of this Scene.
       * 
@@ -840,12 +917,19 @@ object Scenes extends js.Object {
       */
     def setActive(value: Boolean): Systems = js.native
     def setActive(value: Boolean, data: js.Object): Systems = js.native
+    
     /**
       * Sets the visible state of this Scene.
       * An invisible Scene will not render, but will still process updates.
       * @param value `true` to render this Scene, otherwise `false`.
       */
     def setVisible(value: Boolean): Systems = js.native
+    
+    /**
+      * The Scene Settings. This is the parsed output based on the Scene configuration.
+      */
+    var settings: SettingsObject = js.native
+    
     /**
       * Shutdown this Scene and send a shutdown event to all of its systems.
       * A Scene that has been shutdown will not run its update loop or render, but it does
@@ -856,6 +940,7 @@ object Scenes extends js.Object {
       */
     def shutdown(): Unit = js.native
     def shutdown(data: js.Object): Unit = js.native
+    
     /**
       * Send this Scene to sleep.
       * 
@@ -867,12 +952,21 @@ object Scenes extends js.Object {
       */
     def sleep(): Systems = js.native
     def sleep(data: js.Object): Systems = js.native
+    
+    /**
+      * A reference to the global Sound Manager.
+      * 
+      * In the default set-up you can access this from within a Scene via the `this.sound` property.
+      */
+    var sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager = js.native
+    
     /**
       * Start this Scene running and rendering.
       * Called automatically by the SceneManager.
       * @param data Optional data object that may have been passed to this Scene from another.
       */
     def start(data: js.Object): Unit = js.native
+    
     /**
       * A single game step. Called automatically by the Scene Manager as a result of a Request Animation
       * Frame or Set Timeout call to the main Game instance.
@@ -880,6 +974,26 @@ object Scenes extends js.Object {
       * @param delta The delta value since the last frame. This is smoothed to avoid delta spikes by the TimeStep class.
       */
     def step(time: Double, delta: Double): Unit = js.native
+    
+    /**
+      * A reference to the global Texture Manager.
+      * 
+      * In the default set-up you can access this from within a Scene via the `this.textures` property.
+      */
+    var textures: TextureManager = js.native
+    
+    /**
+      * A reference to the Scene's Update List.
+      * 
+      * Use this to organize the children contained in the update list.
+      * 
+      * The Update List is responsible for managing children that need their `preUpdate` methods called,
+      * in order to process so internal components, such as Sprites with Animations.
+      * 
+      * In the default set-up there is no reference to this from within the Scene itself.
+      */
+    var updateList: UpdateList = js.native
+    
     /**
       * Wake-up this Scene if it was previously asleep.
       * @param data A data object that will be passed in the 'wake' event.
@@ -887,6 +1001,4 @@ object Scenes extends js.Object {
     def wake(): Systems = js.native
     def wake(data: js.Object): Systems = js.native
   }
-  
 }
-

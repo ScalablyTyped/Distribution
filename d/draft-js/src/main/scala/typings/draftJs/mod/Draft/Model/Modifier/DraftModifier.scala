@@ -2,7 +2,7 @@ package typings.draftJs.mod.Draft.Model.Modifier
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `DraftModifier` provides a set of convenience methods that apply
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DraftModifier extends js.Object
-

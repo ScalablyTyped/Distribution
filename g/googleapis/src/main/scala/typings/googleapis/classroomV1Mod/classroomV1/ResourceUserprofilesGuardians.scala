@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Userprofiles$Guardians")
 @js.native
 class ResourceUserprofilesGuardians protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.userProfiles.guardians.delete
     * @desc Deletes a guardian.  The guardian will no longer receive guardian
@@ -53,6 +55,7 @@ class ResourceUserprofilesGuardians protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.userProfiles.guardians.get
     * @desc Returns a specific guardian.  This method returns the following
@@ -92,6 +95,7 @@ class ResourceUserprofilesGuardians protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGuardian]
   ): Unit = js.native
+  
   /**
     * classroom.userProfiles.guardians.list
     * @desc Returns a list of guardians that the requesting user is permitted
@@ -142,4 +146,3 @@ class ResourceUserprofilesGuardians protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListGuardiansResponse]
   ): Unit = js.native
 }
-

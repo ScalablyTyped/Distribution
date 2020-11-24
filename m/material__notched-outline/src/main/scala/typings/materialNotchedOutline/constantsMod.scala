@@ -2,20 +2,25 @@ package typings.materialNotchedOutline
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/notched-outline/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   @js.native
   object cssClasses extends js.Object {
+    
     var NO_LABEL: String = js.native
+    
     var OUTLINE_NOTCHED: String = js.native
+    
     var OUTLINE_UPGRADED: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
+    
     var NOTCH_ELEMENT_PADDING: Double = js.native
   }
   
@@ -43,8 +48,7 @@ object constantsMod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var NOTCH_ELEMENT_SELECTOR: String = js.native
   }
-  
 }
-

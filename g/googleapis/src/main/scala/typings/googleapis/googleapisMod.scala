@@ -13,15 +13,19 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/googleapis", JSImport.Namespace)
 @js.native
 object googleapisMod extends js.Object {
+  
   @js.native
   class AuthPlus () extends GoogleAuth {
+    
     var Compute: Instantiable0[typings.googleAuthLibrary.mod.Compute] = js.native
+    
     var JWT: Instantiable1[/* options */ JWTOptions, typings.googleAuthLibrary.mod.JWT] = js.native
+    
     var OAuth2: TypeofOAuth2Client = js.native
   }
   
@@ -40,8 +44,11 @@ object googleapisMod extends js.Object {
     extends GeneratedAPIs
        with /* index */ StringDictionary[APIEndpoint] {
     def this(options: GlobalOptions) = this()
+    
     var _discovery: js.Any = js.native
+    
     var _options: GlobalOptions = js.native
+    
     /**
       * Add APIs endpoints to googleapis object
       * E.g. googleapis.drive and googleapis.datastore
@@ -52,8 +59,9 @@ object googleapisMod extends js.Object {
       * @private
       */
     var addAPIs: js.Any = js.native
+    
     var auth: AuthPlus = js.native
-    var discoverAsync: js.Any = js.native
+    
     /**
       * Dynamically generate an apis object that can provide Endpoint objects for
       * the discovered APIs.
@@ -74,6 +82,7 @@ object googleapisMod extends js.Object {
       */
     def discover(url: String): js.Promise[Unit] = js.native
     def discover(url: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    
     /**
       * Dynamically generate an Endpoint object from a discovery doc.
       *
@@ -84,10 +93,14 @@ object googleapisMod extends js.Object {
       */
     def discoverAPI(apiPath: String): js.Promise[ReadonlyEndpoint] = js.native
     def discoverAPI(apiPath: String, options: js.Object): js.Promise[ReadonlyEndpoint] = js.native
+    
+    var discoverAsync: js.Any = js.native
+    
     /**
       * Obtain a Map of supported APIs, along with included API versions.
       */
     def getSupportedAPIs(): StringDictionary[js.Array[String]] = js.native
+    
     /**
       * Set options.
       *
@@ -96,6 +109,4 @@ object googleapisMod extends js.Object {
     def options(): Unit = js.native
     def options(options: GlobalOptions): Unit = js.native
   }
-  
 }
-

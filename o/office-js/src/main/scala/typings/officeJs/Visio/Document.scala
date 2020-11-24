@@ -9,7 +9,7 @@ import typings.officeJs.Visio.Interfaces.DocumentUpdateData
 import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Document extends ClientObject {
+  
   /**
     *
     * Represents a Visio application instance that contains this document. Read-only.
@@ -26,77 +27,11 @@ trait Document extends ClientObject {
     * [Api set:  1.1]
     */
   val application: Application = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Document: RequestContext = js.native
-  /**
-    *
-    * Occurs when the data is refreshed in the diagram.
-    *
-    * [Api set:  1.1]
-    *
-    * @eventproperty
-    */
-  val onDataRefreshComplete: EventHandlers[DataRefreshCompleteEventArgs] = js.native
-  /**
-    *
-    * Occurs when the Document is loaded, refreshed, or changed.
-    *
-    * [Api set:  1.1]
-    *
-    * @eventproperty
-    */
-  val onDocumentLoadComplete: EventHandlers[DocumentLoadCompleteEventArgs] = js.native
-  /**
-    *
-    * Occurs when the page is finished loading.
-    *
-    * [Api set:  1.1]
-    *
-    * @eventproperty
-    */
-  val onPageLoadComplete: EventHandlers[PageLoadCompleteEventArgs] = js.native
-  /**
-    *
-    * Occurs when the current selection of shapes changes.
-    *
-    * [Api set:  1.1]
-    *
-    * @eventproperty
-    */
-  val onSelectionChanged: EventHandlers[SelectionChangedEventArgs] = js.native
-  /**
-    *
-    * Occurs when the user moves the mouse pointer into the bounding box of a shape.
-    *
-    * [Api set:  1.1]
-    *
-    * @eventproperty
-    */
-  val onShapeMouseEnter: EventHandlers[ShapeMouseEnterEventArgs] = js.native
-  /**
-    *
-    * Occurs when the user moves the mouse out of the bounding box of a shape.
-    *
-    * [Api set:  1.1]
-    *
-    * @eventproperty
-    */
-  val onShapeMouseLeave: EventHandlers[ShapeMouseLeaveEventArgs] = js.native
-  /**
-    *
-    * Represents a collection of pages associated with the document. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val pages: PageCollection = js.native
-  /**
-    *
-    * Returns the DocumentView object. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val view: DocumentView = js.native
+  
   /**
     *
     * Returns the Active Page of the document.
@@ -104,6 +39,7 @@ trait Document extends ClientObject {
     * [Api set:  1.1]
     */
   def getActivePage(): Page = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -124,6 +60,75 @@ trait Document extends ClientObject {
   def load(option: js.Array[String]): Document = js.native
   def load(option: DocumentLoadOptions): Document = js.native
   def load(option: Expand): Document = js.native
+  
+  /**
+    *
+    * Occurs when the data is refreshed in the diagram.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onDataRefreshComplete: EventHandlers[DataRefreshCompleteEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when the Document is loaded, refreshed, or changed.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onDocumentLoadComplete: EventHandlers[DocumentLoadCompleteEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when the page is finished loading.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onPageLoadComplete: EventHandlers[PageLoadCompleteEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when the current selection of shapes changes.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onSelectionChanged: EventHandlers[SelectionChangedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when the user moves the mouse pointer into the bounding box of a shape.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onShapeMouseEnter: EventHandlers[ShapeMouseEnterEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when the user moves the mouse out of the bounding box of a shape.
+    *
+    * [Api set:  1.1]
+    *
+    * @eventproperty
+    */
+  val onShapeMouseLeave: EventHandlers[ShapeMouseLeaveEventArgs] = js.native
+  
+  /**
+    *
+    * Represents a collection of pages associated with the document. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val pages: PageCollection = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Document): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -139,6 +144,7 @@ trait Document extends ClientObject {
     */
   def set(properties: DocumentUpdateData): Unit = js.native
   def set(properties: DocumentUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     *
     * Set the Active Page of the document.
@@ -148,6 +154,7 @@ trait Document extends ClientObject {
     * @param PageName Name of the page
     */
   def setActivePage(PageName: String): Unit = js.native
+  
   /**
     *
     * Triggers the refresh of the data in the Diagram, for all pages.
@@ -155,10 +162,18 @@ trait Document extends ClientObject {
     * [Api set:  1.1]
     */
   def startDataRefresh(): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): DocumentData = js.native
+  
+  /**
+    *
+    * Returns the DocumentView object. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val view: DocumentView = js.native
 }
-

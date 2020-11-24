@@ -2,7 +2,7 @@ package typings.wegameApi.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IOS及安卓不支持：
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class WxWebGLRenderingContext ()
   extends typings.wegameApi.WxWebGLRenderingContext
-

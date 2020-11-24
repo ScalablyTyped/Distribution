@@ -10,9 +10,9 @@ Layout helpers for digital and software products using the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/layout |
 | Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 97 |
-| # dependents       | 12 |
-| # downloads        | 206344 |
+| # releases         | 111 |
+| # dependents       | 16 |
+| # downloads        | 1647627 |
 | # stars            | 0 |
 
 ## Links

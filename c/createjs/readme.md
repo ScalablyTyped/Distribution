@@ -10,8 +10,8 @@ A suite of modular libraries and tools which work together or independently to e
 | Full name          | createjs |
 | Keywords           | createjs, easeljs, tweenjs, soundjs, preloadjs, zoe, gskinner, flash, javascript, canvas, html5, animate |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 43662 |
+| # dependents       | 7 |
+| # downloads        | 58991 |
 | # stars            | 1 |
 
 ## Links

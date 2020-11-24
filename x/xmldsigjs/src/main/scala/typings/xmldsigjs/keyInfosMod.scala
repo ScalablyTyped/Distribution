@@ -6,11 +6,12 @@ import typings.xmldsigjs.rsaKeyMod.RsaPSSSignParams
 import typings.xmldsigjs.x509DataMod.X509IncludeOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs/build/types/xml/key_infos", JSImport.Namespace)
 @js.native
 object keyInfosMod extends js.Object {
+  
   @js.native
   class DomainParameters ()
     extends typings.xmldsigjs.ecdsaKeyMod.DomainParameters
@@ -54,6 +55,12 @@ object keyInfosMod extends js.Object {
     extends typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams {
     def this(algorithm: RsaPSSSignParams) = this()
   }
+  /* static members */
+  @js.native
+  object PssAlgorithmParams extends js.Object {
+    
+    def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = js.native
+  }
   
   @js.native
   class RsaKeyValue ()
@@ -64,24 +71,21 @@ object keyInfosMod extends js.Object {
     extends typings.xmldsigjs.spkiDataMod.SPKIData
   
   @js.native
-  class X509IssuerSerial ()
-    extends typings.xmldsigjs.x509DataMod.X509IssuerSerial
-  
-  /* static members */
-  @js.native
-  object PssAlgorithmParams extends js.Object {
-    def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = js.native
-  }
-  
-  @js.native
   object X509IncludeOption extends js.Object {
-    /* 1 */ val EndCertOnly: typings.xmldsigjs.x509DataMod.X509IncludeOption.EndCertOnly with Double = js.native
-    /* 2 */ val ExcludeRoot: typings.xmldsigjs.x509DataMod.X509IncludeOption.ExcludeRoot with Double = js.native
-    /* 0 */ val None: typings.xmldsigjs.x509DataMod.X509IncludeOption.None with Double = js.native
-    /* 3 */ val WholeChain: typings.xmldsigjs.x509DataMod.X509IncludeOption.WholeChain with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.xmldsigjs.x509DataMod.X509IncludeOption with Double] = js.native
+    
+    /* 1 */ val EndCertOnly: typings.xmldsigjs.x509DataMod.X509IncludeOption.EndCertOnly with Double = js.native
+    
+    /* 2 */ val ExcludeRoot: typings.xmldsigjs.x509DataMod.X509IncludeOption.ExcludeRoot with Double = js.native
+    
+    /* 0 */ val None: typings.xmldsigjs.x509DataMod.X509IncludeOption.None with Double = js.native
+    
+    /* 3 */ val WholeChain: typings.xmldsigjs.x509DataMod.X509IncludeOption.WholeChain with Double = js.native
   }
   
+  @js.native
+  class X509IssuerSerial ()
+    extends typings.xmldsigjs.x509DataMod.X509IssuerSerial
 }
-

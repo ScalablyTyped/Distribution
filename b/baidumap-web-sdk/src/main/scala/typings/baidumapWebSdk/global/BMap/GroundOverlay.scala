@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.GroundOverlayOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.GroundOverlay")
 @js.native
@@ -12,4 +12,3 @@ class GroundOverlay protected ()
   def this(bounds: typings.baidumapWebSdk.BMap.Bounds) = this()
   def this(bounds: typings.baidumapWebSdk.BMap.Bounds, opts: GroundOverlayOptions) = this()
 }
-

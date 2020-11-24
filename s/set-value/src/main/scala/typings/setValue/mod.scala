@@ -2,11 +2,12 @@ package typings.setValue
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("set-value", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * @param object The object to set `value` on
     * @param prop The property to set. Dot-notation may be used.
@@ -26,4 +27,3 @@ object mod extends js.Object {
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
 }
-

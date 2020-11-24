@@ -4,10 +4,11 @@ import typings.lodash.mod.__
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashSplit extends LodashConvertible {
+trait LodashSplit extends js.Object {
+  
   def apply(separator: String): LodashSplit1x1 = js.native
   def apply(separator: String, string: String): js.Array[String] = js.native
   def apply(separator: __): LodashSplit1x2 = js.native
@@ -15,4 +16,3 @@ trait LodashSplit extends LodashConvertible {
   def apply(separator: RegExp): LodashSplit1x1 = js.native
   def apply(separator: RegExp, string: String): js.Array[String] = js.native
 }
-

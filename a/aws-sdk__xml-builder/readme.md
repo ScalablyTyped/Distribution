@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__xml-builder
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
 XML builder for the AWS SDK
@@ -10,9 +10,9 @@ XML builder for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/xml-builder |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 4893 |
+| # releases         | 17 |
+| # dependents       | 5 |
+| # downloads        | 1312734 |
 | # stars            | 0 |
 
 ## Links

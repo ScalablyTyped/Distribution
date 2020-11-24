@@ -11,7 +11,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigateway/usagePlan", "UsagePlan")
 @js.native
@@ -27,44 +27,52 @@ class UsagePlan protected () extends CustomResource {
   def this(name: String, args: UsagePlanArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: UsagePlanArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The associated API stages of the usage plan.
     */
   val apiStages: Output_[js.UndefOr[js.Array[UsagePlanApiStage]]] = js.native
+  
   /**
     * Amazon Resource Name (ARN)
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The description of a usage plan.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the usage plan.
     */
   val name: Output_[String] = js.native
+  
   /**
-    * The AWS Markeplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
+    * The AWS Marketplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
     */
   val productCode: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The quota settings of the usage plan.
     */
   val quotaSettings: Output_[js.UndefOr[UsagePlanQuotaSettings]] = js.native
+  
   /**
     * Key-value map of resource tags
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * The throttling limits of the usage plan.
     */
   val throttleSettings: Output_[js.UndefOr[UsagePlanThrottleSettings]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigateway/usagePlan", "UsagePlan")
 @js.native
 object UsagePlan extends js.Object {
+  
   /**
     * Get an existing UsagePlan resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -78,10 +86,10 @@ object UsagePlan extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UsagePlan = js.native
   def get(name: String, id: Input[ID], state: UsagePlanState): UsagePlan = js.native
   def get(name: String, id: Input[ID], state: UsagePlanState, opts: CustomResourceOptions): UsagePlan = js.native
+  
   /**
     * Returns true if the given object is an instance of UsagePlan.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ Boolean = js.native
 }
-

@@ -6,17 +6,15 @@ import typings.kineticjs.Kinetic.IImage
 import typings.kineticjs.Kinetic.ImageConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Kinetic.Image")
 @js.native
 class Image () extends IImage {
   def this(config: ImageConfig) = this()
 }
-
 @JSGlobal("Kinetic.Image")
 @js.native
 object Image
   extends Instantiable0[IImage]
      with Instantiable1[/* config */ ImageConfig, IImage]
-

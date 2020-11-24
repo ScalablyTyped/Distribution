@@ -14,10 +14,11 @@ import typings.yandexMetrikaTag.yandexMetrikaTagStrings.setUserID
 import typings.yandexMetrikaTag.yandexMetrikaTagStrings.userParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Event extends js.Object {
+  
   def apply(counterId: Double, eventName: addFileExtension, extensions: String): Unit = js.native
   def apply(counterId: Double, eventName: addFileExtension, extensions: js.Array[String]): Unit = js.native
   def apply(counterId: Double, eventName: getClientID, cb: js.Function1[/* clientID */ String, Unit]): Unit = js.native
@@ -74,7 +75,6 @@ trait Event extends js.Object {
   // tslint:disable-next-line no-unnecessary-generics
   def apply[CTX](counterId: Double, eventName: notBounce): Unit = js.native
   def apply[CTX](counterId: Double, eventName: notBounce, options: NotBounceOptions[CTX]): Unit = js.native
-  // tslint:disable-next-line no-unnecessary-generics
   def apply[CTX](counterId: Double, eventName: reachGoal, target: String): Unit = js.native
   def apply[CTX](
     counterId: Double,
@@ -124,4 +124,3 @@ trait Event extends js.Object {
     ctx: CTX
   ): Unit = js.native
 }
-

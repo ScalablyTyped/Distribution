@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.GenericPad")
 @js.native
@@ -16,4 +16,3 @@ class GenericPad protected ()
     */
   def this(id: String, index: Double, browserGamepad: js.Any) = this()
 }
-

@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AssetTaskState extends js.Object
-
 @JSGlobal("BABYLON.AssetTaskState")
 @js.native
 object AssetTaskState extends js.Object {
+  
   /**
     * Done
     */
@@ -33,6 +33,4 @@ object AssetTaskState extends js.Object {
     */
   @js.native
   sealed trait RUNNING extends AssetTaskState
-  
 }
-

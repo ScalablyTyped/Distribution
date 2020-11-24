@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Zones$Operations")
 @js.native
 class ResourceProjectsZonesOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * container.projects.zones.operations.cancel
     * @desc Cancels the specified operation.
@@ -44,6 +44,9 @@ class ResourceProjectsZonesOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * container.projects.zones.operations.get
     * @desc Gets the specified operation.
@@ -75,6 +78,7 @@ class ResourceProjectsZonesOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.operations.list
     * @desc Lists all operations in a project in a specific zone or all zones.
@@ -109,4 +113,3 @@ class ResourceProjectsZonesOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
 }
-

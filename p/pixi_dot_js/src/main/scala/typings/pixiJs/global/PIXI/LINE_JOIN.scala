@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Supported line joints in `PIXI.LineStyle` for graphics.
@@ -21,10 +21,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.LINE_JOIN")
 @js.native
 object LINE_JOIN extends js.Object {
-  /* 1 */ val BEVEL: typings.pixiJs.PIXI.LINE_JOIN.BEVEL with Double = js.native
-  /* 0 */ val MITER: typings.pixiJs.PIXI.LINE_JOIN.MITER with Double = js.native
-  /* 2 */ val ROUND: typings.pixiJs.PIXI.LINE_JOIN.ROUND with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_JOIN with Double] = js.native
+  
+  /* 1 */ val BEVEL: typings.pixiJs.PIXI.LINE_JOIN.BEVEL with Double = js.native
+  
+  /* 0 */ val MITER: typings.pixiJs.PIXI.LINE_JOIN.MITER with Double = js.native
+  
+  /* 2 */ val ROUND: typings.pixiJs.PIXI.LINE_JOIN.ROUND with Double = js.native
 }
-

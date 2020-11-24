@@ -3,11 +3,12 @@ package typings.acornWalk.mod
 import typings.acorn.mod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("acorn-walk", "findNodeAt")
 @js.native
 object findNodeAt extends js.Object {
+  
   def apply[TState](node: Node): js.UndefOr[Found[TState]] = js.native
   def apply[TState](
     node: Node,
@@ -290,4 +291,3 @@ object findNodeAt extends js.Object {
     state: TState
   ): js.UndefOr[Found[TState]] = js.native
 }
-

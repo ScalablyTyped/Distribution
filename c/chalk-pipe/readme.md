@@ -10,9 +10,9 @@ Apply a color scheme in a style pipe
 | ------------------ | :-------------: |
 | Full name          | chalk-pipe |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 46 |
-| # downloads        | 231933 |
+| # releases         | 3 |
+| # dependents       | 62 |
+| # downloads        | 1078320 |
 | # stars            | 0 |
 
 ## Links

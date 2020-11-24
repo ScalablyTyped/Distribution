@@ -22,21 +22,29 @@ import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.StopTrackingHeapObject
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.TakeHeapSnapshotRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HeapProfilerApi extends js.Object {
+  
   /**
     * Enables console to refer to the node with given id via $x (see Command Line API for more details
     * $x functions).
     */
   def addInspectedHeapObject(params: AddInspectedHeapObjectRequest): js.Promise[Unit] = js.native
+  
   def collectGarbage(): js.Promise[Unit] = js.native
+  
   def disable(): js.Promise[Unit] = js.native
+  
   def enable(): js.Promise[Unit] = js.native
+  
   def getHeapObjectId(params: GetHeapObjectIdRequest): js.Promise[GetHeapObjectIdResponse] = js.native
+  
   def getObjectByHeapObjectId(params: GetObjectByHeapObjectIdRequest): js.Promise[GetObjectByHeapObjectIdResponse] = js.native
+  
   def getSamplingProfile(): js.Promise[GetSamplingProfileResponse] = js.native
+  
   @JSName("on")
   def on_addHeapSnapshotChunk(event: addHeapSnapshotChunk, listener: js.Function1[/* params */ AddHeapSnapshotChunkEvent, Unit]): Unit = js.native
   /**
@@ -58,10 +66,14 @@ trait HeapProfilerApi extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_resetProfiles(event: resetProfiles, listener: js.Function0[Unit]): Unit = js.native
+  
   def startSampling(params: StartSamplingRequest): js.Promise[Unit] = js.native
+  
   def startTrackingHeapObjects(params: StartTrackingHeapObjectsRequest): js.Promise[Unit] = js.native
+  
   def stopSampling(): js.Promise[StopSamplingResponse] = js.native
+  
   def stopTrackingHeapObjects(params: StopTrackingHeapObjectsRequest): js.Promise[Unit] = js.native
+  
   def takeHeapSnapshot(params: TakeHeapSnapshotRequest): js.Promise[Unit] = js.native
 }
-

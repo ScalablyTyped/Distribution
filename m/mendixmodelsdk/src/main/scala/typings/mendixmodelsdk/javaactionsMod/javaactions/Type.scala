@@ -1,14 +1,16 @@
 package typings.mendixmodelsdk.javaactionsMod.javaactions
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.21.0: deleted
@@ -21,36 +23,39 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.Type")
 @js.native
-abstract class Type protected () extends Element {
+abstract class Type protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
+  
+  def containerAsBasicParameterType: BasicParameterType = js.native
   @JSName("containerAsBasicParameterType")
   val containerAsBasicParameterType_FType: IBasicParameterType = js.native
+  
+  def containerAsJavaAction: JavaAction = js.native
+  
+  def containerAsJavaActionParameter: JavaActionParameter = js.native
   @JSName("containerAsJavaActionParameter")
   val containerAsJavaActionParameter_FType: IJavaActionParameter = js.native
+  
   @JSName("containerAsJavaAction")
   val containerAsJavaAction_FType: IJavaAction = js.native
+  
+  def containerAsListType: ListType = js.native
   @JSName("containerAsListType")
   val containerAsListType_FType: IListType = js.native
-  @JSName("model")
-  var model_FType: IModel = js.native
-  def containerAsBasicParameterType: BasicParameterType = js.native
-  def containerAsJavaAction: JavaAction = js.native
-  def containerAsJavaActionParameter: JavaActionParameter = js.native
-  def containerAsListType: ListType = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.Type")
 @js.native
 object Type extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

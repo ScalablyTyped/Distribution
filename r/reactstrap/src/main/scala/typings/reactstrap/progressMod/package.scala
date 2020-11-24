@@ -2,8 +2,9 @@ package typings.reactstrap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object progressMod {
-  type Progress[T] = typings.react.mod.Component[typings.reactstrap.progressMod.ProgressProps, js.Object, js.Any]
+  
+  type Progress = typings.react.mod.Component[typings.reactstrap.progressMod.ProgressProps, js.Object, js.Any]
 }

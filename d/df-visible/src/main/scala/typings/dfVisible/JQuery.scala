@@ -2,10 +2,11 @@ package typings.dfVisible
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Gets the value of a setting.
     * @param details Which setting to consider.
@@ -49,4 +50,3 @@ trait JQuery extends js.Object {
   def visible(partial: Boolean, hidden: Boolean, direction: Direction): Boolean = js.native
   def visible(partial: Boolean, hidden: Boolean, direction: Direction, container: JQuery): Boolean = js.native
 }
-

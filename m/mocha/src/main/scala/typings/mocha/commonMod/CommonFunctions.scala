@@ -5,12 +5,11 @@ import typings.mocha.Mocha.Func
 import typings.mocha.Mocha.Suite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommonFunctions extends js.Object {
-  var suite: SuiteFunctions = js.native
-  var test: TestFunctions = js.native
+  
   /**
     * Execute after running tests.
     */
@@ -23,6 +22,7 @@ trait CommonFunctions extends js.Object {
   def after(name: String): Unit = js.native
   def after(name: String, fn: AsyncFunc): Unit = js.native
   def after(name: String, fn: Func): Unit = js.native
+  
   /**
     * Execute after each test case.
     */
@@ -35,6 +35,7 @@ trait CommonFunctions extends js.Object {
   def afterEach(name: String): Unit = js.native
   def afterEach(name: String, fn: AsyncFunc): Unit = js.native
   def afterEach(name: String, fn: Func): Unit = js.native
+  
   /**
     * Execute before running tests.
     */
@@ -47,6 +48,7 @@ trait CommonFunctions extends js.Object {
   def before(name: String): Unit = js.native
   def before(name: String, fn: AsyncFunc): Unit = js.native
   def before(name: String, fn: Func): Unit = js.native
+  
   /**
     * Execute before each test case.
     */
@@ -59,10 +61,14 @@ trait CommonFunctions extends js.Object {
   def beforeEach(name: String): Unit = js.native
   def beforeEach(name: String, fn: AsyncFunc): Unit = js.native
   def beforeEach(name: String, fn: Func): Unit = js.native
+  
   /**
     * This is only present if flag --delay is passed into Mocha. It triggers
     * root suite execution.
     */
   def runWithSuite(suite: Suite): js.Function0[Unit] = js.native
+  
+  var suite: SuiteFunctions = js.native
+  
+  var test: TestFunctions = js.native
 }
-

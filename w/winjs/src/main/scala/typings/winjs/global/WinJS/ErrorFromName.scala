@@ -2,7 +2,7 @@ package typings.winjs.global.WinJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Properties
 //#region Objects
@@ -23,11 +23,11 @@ class ErrorFromName protected ()
   def this(name: String) = this()
   def this(name: String, message: String) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.ErrorFromName")
 @js.native
 object ErrorFromName extends js.Object {
+  
   //#endregion Constructors
   //#region Properties
   /**
@@ -35,4 +35,3 @@ object ErrorFromName extends js.Object {
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

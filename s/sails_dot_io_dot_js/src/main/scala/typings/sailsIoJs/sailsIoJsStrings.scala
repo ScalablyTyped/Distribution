@@ -2,9 +2,40 @@ package typings.sailsIoJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sailsIoJsStrings {
+  
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def node: node = "node".asInstanceOf[node]
+  
+  @scala.inline
+  def polling: polling = "polling".asInstanceOf[polling]
+  
+  @scala.inline
+  def production: production = "production".asInstanceOf[production]
+  
+  @scala.inline
+  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  
+  @scala.inline
+  def reconnecting: reconnecting = "reconnecting".asInstanceOf[reconnecting]
+  
+  @scala.inline
+  def websocket: websocket = "websocket".asInstanceOf[websocket]
+  
   @js.native
   sealed trait browser extends js.Object
   
@@ -34,26 +65,4 @@ object sailsIoJsStrings {
   
   @js.native
   sealed trait websocket extends js.Object
-  
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def polling: polling = "polling".asInstanceOf[polling]
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
-  @scala.inline
-  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
-  @scala.inline
-  def reconnecting: reconnecting = "reconnecting".asInstanceOf[reconnecting]
-  @scala.inline
-  def websocket: websocket = "websocket".asInstanceOf[websocket]
 }
-

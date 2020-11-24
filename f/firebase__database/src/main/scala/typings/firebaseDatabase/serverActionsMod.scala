@@ -4,13 +4,20 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.queryMod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/ServerActions", JSImport.Namespace)
 @js.native
 object serverActionsMod extends js.Object {
+  
   @js.native
   abstract class ServerActions () extends js.Object {
+    
+    /**
+      * Get the server value satisfying this query.
+      */
+    def get(query: Query): js.Promise[String] = js.native
+    
     /**
       * @param {!Query} query
       * @param {function():string} currentHashFn
@@ -29,6 +36,7 @@ object serverActionsMod extends js.Object {
       tag: Null,
       onComplete: js.Function2[/* a */ String, /* b */ js.Any, Unit]
     ): Unit = js.native
+    
     /**
       * @param {string} pathString
       * @param {*} data
@@ -46,12 +54,14 @@ object serverActionsMod extends js.Object {
       onComplete: js.Function2[/* a */ String, /* b */ String | Null, Unit],
       hash: String
     ): Unit = js.native
+    
     /**
       * @param {string} pathString
       * @param {function(string, string)=} onComplete
       */
     def onDisconnectCancel(pathString: String): Unit = js.native
     def onDisconnectCancel(pathString: String, onComplete: js.Function2[/* a */ String, /* b */ String, Unit]): Unit = js.native
+    
     /**
       * @param {string} pathString
       * @param {*} data
@@ -59,6 +69,7 @@ object serverActionsMod extends js.Object {
       */
     def onDisconnectMerge(pathString: String, data: js.Any): Unit = js.native
     def onDisconnectMerge(pathString: String, data: js.Any, onComplete: js.Function2[/* a */ String, /* b */ String, Unit]): Unit = js.native
+    
     /**
       * @param {string} pathString
       * @param {*} data
@@ -66,6 +77,7 @@ object serverActionsMod extends js.Object {
       */
     def onDisconnectPut(pathString: String, data: js.Any): Unit = js.native
     def onDisconnectPut(pathString: String, data: js.Any, onComplete: js.Function2[/* a */ String, /* b */ String, Unit]): Unit = js.native
+    
     /**
       * @param {string} pathString
       * @param {*} data
@@ -81,15 +93,18 @@ object serverActionsMod extends js.Object {
       onComplete: js.Function2[/* a */ String, /* b */ String, Unit],
       hash: String
     ): Unit = js.native
+    
     /**
       * Refreshes the auth token for the current connection.
       * @param {string} token The authentication token
       */
     def refreshAuthToken(token: String): Unit = js.native
+    
     /**
       * @param {Object.<string, *>} stats
       */
     def reportStats(stats: StringDictionary[js.Any]): Unit = js.native
+    
     /**
       * Remove a listen.
       *
@@ -99,6 +114,4 @@ object serverActionsMod extends js.Object {
     def unlisten(query: Query): Unit = js.native
     def unlisten(query: Query, tag: Double): Unit = js.native
   }
-  
 }
-

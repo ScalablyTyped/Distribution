@@ -3,7 +3,7 @@ package typings.aqb.mod
 import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TernaryOperation
@@ -16,8 +16,10 @@ trait TernaryOperation
       /* value3 */ js.Any, 
       Operation
     ] {
+  
   var _operator1: String = js.native
+  
   var _operator2: String = js.native
+  
   def toAQL(): String = js.native
 }
-

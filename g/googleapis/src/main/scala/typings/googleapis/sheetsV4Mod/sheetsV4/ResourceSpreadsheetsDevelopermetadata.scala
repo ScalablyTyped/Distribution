@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Developermetadata")
 @js.native
 class ResourceSpreadsheetsDevelopermetadata protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sheets.spreadsheets.developerMetadata.get
     * @desc Returns the developer metadata with the specified ID. The caller
@@ -98,6 +100,7 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeveloperMetadata]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.developerMetadata.search
     * @desc Returns all developer metadata matching the specified DataFilter.
@@ -187,4 +190,3 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse]
   ): Unit = js.native
 }
-

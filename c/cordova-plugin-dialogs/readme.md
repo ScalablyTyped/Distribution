@@ -10,9 +10,9 @@ Cordova Notification Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-dialogs |
 | Keywords           | cordova, notification, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-windows |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 908843 |
+| # downloads        | 925267 |
 | # stars            | 25 |
 
 ## Links

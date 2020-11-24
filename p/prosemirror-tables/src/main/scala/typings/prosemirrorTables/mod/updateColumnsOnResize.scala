@@ -4,11 +4,12 @@ import typings.prosemirrorModel.mod.Node
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-tables", "updateColumnsOnResize")
 @js.native
 object updateColumnsOnResize extends js.Object {
+  
   def apply(node: Node[_], colgroup: Element, table: Element, cellMinWidth: Double): Unit = js.native
   def apply(
     node: Node[_],
@@ -28,4 +29,3 @@ object updateColumnsOnResize extends js.Object {
     overrideValue: Double
   ): Unit = js.native
 }
-

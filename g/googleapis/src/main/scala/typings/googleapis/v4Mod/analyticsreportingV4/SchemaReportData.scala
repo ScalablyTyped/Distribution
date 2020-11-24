@@ -2,44 +2,51 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The data part of the report.
   */
 @js.native
 trait SchemaReportData extends js.Object {
+  
   /**
     * The last time the data in the report was refreshed. All the hits received
     * before this timestamp are included in the calculation of the report.
     */
   var dataLastRefreshed: js.UndefOr[String] = js.native
+  
   /**
     * Indicates if response to this request is golden or not. Data is golden
     * when the exact same request will not produce any new results if asked at
     * a later point in time.
     */
   var isDataGolden: js.UndefOr[Boolean] = js.native
+  
   /**
     * Minimum and maximum values seen over all matching rows. These are both
     * empty when `hideValueRanges` in the request is false, or when rowCount is
     * zero.
     */
   var maximums: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
+  
   /**
     * Minimum and maximum values seen over all matching rows. These are both
     * empty when `hideValueRanges` in the request is false, or when rowCount is
     * zero.
     */
   var minimums: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
+  
   /**
     * Total number of matching rows for this query.
     */
   var rowCount: js.UndefOr[Double] = js.native
+  
   /**
     * There&#39;s one ReportRow for every unique combination of dimensions.
     */
   var rows: js.UndefOr[js.Array[SchemaReportRow]] = js.native
+  
   /**
     * If the results are
     * [sampled](https://support.google.com/analytics/answer/2637192), this
@@ -49,6 +56,7 @@ trait SchemaReportData extends js.Object {
     * for details.
     */
   var samplesReadCounts: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * If the results are
     * [sampled](https://support.google.com/analytics/answer/2637192), this
@@ -58,6 +66,7 @@ trait SchemaReportData extends js.Object {
     * for details.
     */
   var samplingSpaceSizes: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * For each requested date range, for the set of all rows that match the
     * query, every requested value format gets a total. The total for a value
@@ -69,73 +78,99 @@ trait SchemaReportData extends js.Object {
     */
   var totals: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
 }
-
 object SchemaReportData {
+  
   @scala.inline
   def apply(): SchemaReportData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportData]
   }
+  
   @scala.inline
   implicit class SchemaReportDataOps[Self <: SchemaReportData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDataLastRefreshed(value: String): Self = this.set("dataLastRefreshed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDataLastRefreshed: Self = this.set("dataLastRefreshed", js.undefined)
+    
     @scala.inline
     def setIsDataGolden(value: Boolean): Self = this.set("isDataGolden", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsDataGolden: Self = this.set("isDataGolden", js.undefined)
+    
     @scala.inline
     def setMaximumsVarargs(value: SchemaDateRangeValues*): Self = this.set("maximums", js.Array(value :_*))
+    
     @scala.inline
     def setMaximums(value: js.Array[SchemaDateRangeValues]): Self = this.set("maximums", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaximums: Self = this.set("maximums", js.undefined)
+    
     @scala.inline
     def setMinimumsVarargs(value: SchemaDateRangeValues*): Self = this.set("minimums", js.Array(value :_*))
+    
     @scala.inline
     def setMinimums(value: js.Array[SchemaDateRangeValues]): Self = this.set("minimums", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMinimums: Self = this.set("minimums", js.undefined)
+    
     @scala.inline
     def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    
     @scala.inline
     def setRowsVarargs(value: SchemaReportRow*): Self = this.set("rows", js.Array(value :_*))
+    
     @scala.inline
     def setRows(value: js.Array[SchemaReportRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRows: Self = this.set("rows", js.undefined)
+    
     @scala.inline
     def setSamplesReadCountsVarargs(value: String*): Self = this.set("samplesReadCounts", js.Array(value :_*))
+    
     @scala.inline
     def setSamplesReadCounts(value: js.Array[String]): Self = this.set("samplesReadCounts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSamplesReadCounts: Self = this.set("samplesReadCounts", js.undefined)
+    
     @scala.inline
     def setSamplingSpaceSizesVarargs(value: String*): Self = this.set("samplingSpaceSizes", js.Array(value :_*))
+    
     @scala.inline
     def setSamplingSpaceSizes(value: js.Array[String]): Self = this.set("samplingSpaceSizes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSamplingSpaceSizes: Self = this.set("samplingSpaceSizes", js.undefined)
+    
     @scala.inline
     def setTotalsVarargs(value: SchemaDateRangeValues*): Self = this.set("totals", js.Array(value :_*))
+    
     @scala.inline
     def setTotals(value: js.Array[SchemaDateRangeValues]): Self = this.set("totals", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTotals: Self = this.set("totals", js.undefined)
   }
-  
 }
-

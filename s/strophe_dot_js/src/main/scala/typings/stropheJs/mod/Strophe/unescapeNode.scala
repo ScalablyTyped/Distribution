@@ -2,11 +2,12 @@ package typings.stropheJs.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe.js", "Strophe.unescapeNode")
 @js.native
 object unescapeNode extends js.Object {
+  
   /** Function: unescapeNode
     *  Unescape a node part (also called local part) of a JID.
     *
@@ -18,4 +19,3 @@ object unescapeNode extends js.Object {
     */
   def apply(node: String): String = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.licensemanagerMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "LicenseManager")
 @js.native
@@ -14,4 +14,3 @@ class LicenseManager ()
   extends typings.awsSdk.allMod.LicenseManager {
   def this(options: ClientConfiguration) = this()
 }
-

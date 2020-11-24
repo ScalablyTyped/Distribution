@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-displaynames
 
-Typings are for version 3.1.7
+Typings are for version 4.0.0
 
 ## Library description:
 Polyfill for: https://tc39.es/proposal-intl-displaynames
@@ -10,9 +10,9 @@ Polyfill for: https://tc39.es/proposal-intl-displaynames
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-displaynames |
 | Keywords           | i18n, polyfill, intl-polyfill, localization, formatjs, Intl.DisplayNames, Intl |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 139 |
+| # releases         | 51 |
+| # dependents       | 5 |
+| # downloads        | 7169123 |
 | # stars            | 0 |
 
 ## Links

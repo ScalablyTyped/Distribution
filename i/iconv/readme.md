@@ -10,9 +10,9 @@ Text recoding in JavaScript for fun and profit!
 | ------------------ | :-------------: |
 | Full name          | iconv |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 235 |
-| # downloads        | 2080425 |
+| # releases         | 7 |
+| # dependents       | 249 |
+| # downloads        | 2710824 |
 | # stars            | 28 |
 
 ## Links

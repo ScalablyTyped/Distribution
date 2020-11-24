@@ -10,9 +10,9 @@ Wrapper for fetch to simplify sending and receiving RDF data
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/fetch |
 | Keywords           | rdf, rdfjs, fetch |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 66 |
+| # downloads        | 1567 |
 | # stars            | 0 |
 
 ## Links

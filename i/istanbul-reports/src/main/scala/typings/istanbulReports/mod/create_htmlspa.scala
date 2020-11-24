@@ -6,12 +6,12 @@ import typings.istanbulReports.istanbulReportsStrings.`html-spa`
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("istanbul-reports", "create")
 @js.native
 object create_htmlspa extends js.Object {
+  
   def apply(name: `html-spa`): Visitor[Node] = js.native
   def apply(name: `html-spa`, options: Partial[HtmlSpaOptions]): Visitor[Node] = js.native
 }
-

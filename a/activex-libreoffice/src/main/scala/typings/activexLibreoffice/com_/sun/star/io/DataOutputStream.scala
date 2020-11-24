@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * writes structured data to a chained {@link XOutputStream} .
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait DataOutputStream
   extends XDataOutputStream
      with XActiveDataSource
-
 object DataOutputStream {
+  
   @scala.inline
   def apply(
     OutputStream: XOutputStream,
@@ -42,4 +42,3 @@ object DataOutputStream {
     __obj.asInstanceOf[DataOutputStream]
   }
 }
-

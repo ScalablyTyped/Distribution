@@ -10,9 +10,9 @@ Super-easy (and fast) persistent data structures in Node.js, modeled after HTML5
 | ------------------ | :-------------: |
 | Full name          | node-persist |
 | Keywords           | node, persist, storage |
-| # releases         | 7 |
-| # dependents       | 229 |
-| # downloads        | 904662 |
+| # releases         | 6 |
+| # dependents       | 298 |
+| # downloads        | 1177338 |
 | # stars            | 20 |
 
 ## Links

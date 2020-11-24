@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Sslcerts")
 @js.native
 class ResourceSslcerts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sql.sslCerts.createEphemeral
     * @desc Generates a short-lived X509 certificate containing the provided
@@ -46,6 +48,7 @@ class ResourceSslcerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCert]
   ): Unit = js.native
+  
   /**
     * sql.sslCerts.delete
     * @desc Deletes the SSL certificate. For First Generation instances, the
@@ -77,6 +80,7 @@ class ResourceSslcerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.sslCerts.get
     * @desc Retrieves a particular SSL certificate. Does not include the
@@ -109,6 +113,7 @@ class ResourceSslcerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCert]
   ): Unit = js.native
+  
   /**
     * sql.sslCerts.insert
     * @desc Creates an SSL certificate and returns it along with the private
@@ -141,6 +146,7 @@ class ResourceSslcerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertsInsertResponse]
   ): Unit = js.native
+  
   /**
     * sql.sslCerts.list
     * @desc Lists all of the current SSL certificates for the instance.
@@ -171,4 +177,3 @@ class ResourceSslcerts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSslCertsListResponse]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A router DataSource constructor for falcor that allows you to model all your clo
 | ------------------ | :-------------: |
 | Full name          | falcor-router |
 | Keywords           | Falcor, Router, Netflix, falcorjs |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 14 |
-| # downloads        | 13842 |
+| # downloads        | 9403 |
 | # stars            | 3 |
 
 ## Links

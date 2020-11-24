@@ -3,64 +3,103 @@ package typings.pulumiKubernetes.outputMod.apiextensions.v1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSONSchemaProps is a JSON-Schema following Specification Draft 4 (http://json-schema.org/).
   */
 @js.native
 trait JSONSchemaProps extends js.Object {
+  
   @JSName("$ref")
   var $ref: String = js.native
+  
   @JSName("$schema")
   var $schema: String = js.native
+  
   var additionalItems: JSONSchemaProps | Boolean = js.native
+  
   var additionalProperties: JSONSchemaProps | Boolean = js.native
+  
   var allOf: js.Array[JSONSchemaProps] = js.native
+  
   var anyOf: js.Array[JSONSchemaProps] = js.native
+  
   /**
     * default is a default value for undefined object fields. Defaulting is a beta feature under the CustomResourceDefaulting feature gate. Defaulting requires spec.preserveUnknownFields to be false.
     */
   var default: js.Any = js.native
+  
   var definitions: StringDictionary[JSONSchemaProps] = js.native
+  
   var dependencies: StringDictionary[JSONSchemaProps | js.Array[String]] = js.native
+  
   var description: String = js.native
+  
   var enum: js.Array[_] = js.native
+  
   var example: js.Any = js.native
+  
   var exclusiveMaximum: Boolean = js.native
+  
   var exclusiveMinimum: Boolean = js.native
+  
   var externalDocs: ExternalDocumentation = js.native
+  
   /**
     * format is an OpenAPI v3 format string. Unknown formats are ignored. The following formats are validated:
     *
     * - bsonobjectid: a bson object ID, i.e. a 24 characters hex string - uri: an URI as parsed by Golang net/url.ParseRequestURI - email: an email address as parsed by Golang net/mail.ParseAddress - hostname: a valid representation for an Internet host name, as defined by RFC 1034, section 3.1 [RFC1034]. - ipv4: an IPv4 IP as parsed by Golang net.ParseIP - ipv6: an IPv6 IP as parsed by Golang net.ParseIP - cidr: a CIDR as parsed by Golang net.ParseCIDR - mac: a MAC address as parsed by Golang net.ParseMAC - uuid: an UUID that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$ - uuid3: an UUID3 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?3[0-9a-f]{3}-?[0-9a-f]{4}-?[0-9a-f]{12}$ - uuid4: an UUID4 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?4[0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$ - uuid5: an UUID5 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?5[0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$ - isbn: an ISBN10 or ISBN13 number string like "0321751043" or "978-0321751041" - isbn10: an ISBN10 number string like "0321751043" - isbn13: an ISBN13 number string like "978-0321751041" - creditcard: a credit card number defined by the regex ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$ with any non digit characters mixed in - ssn: a U.S. social security number following the regex ^\d{3}[- ]?\d{2}[- ]?\d{4}$ - hexcolor: an hexadecimal color code like "#FFFFFF: following the regex ^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$ - rgbcolor: an RGB color code like rgb like "rgb(255,255,2559" - byte: base64 encoded binary data - password: any kind of string - date: a date string like "2006-01-02" as defined by full-date in RFC3339 - duration: a duration string like "22 ns" as parsed by Golang time.ParseDuration or compatible with Scala duration format - datetime: a date time string like "2014-12-15T19:30:20.000Z" as defined by date-time in RFC3339.
     */
   var format: String = js.native
+  
   var id: String = js.native
+  
   var items: JSONSchemaProps | js.Array[_] = js.native
+  
   var maxItems: Double = js.native
+  
   var maxLength: Double = js.native
+  
   var maxProperties: Double = js.native
+  
   var maximum: Double = js.native
+  
   var minItems: Double = js.native
+  
   var minLength: Double = js.native
+  
   var minProperties: Double = js.native
+  
   var minimum: Double = js.native
+  
   var multipleOf: Double = js.native
+  
   var not: JSONSchemaProps = js.native
+  
   var nullable: Boolean = js.native
+  
   var oneOf: js.Array[JSONSchemaProps] = js.native
+  
   var pattern: String = js.native
+  
   var patternProperties: StringDictionary[JSONSchemaProps] = js.native
+  
   var properties: StringDictionary[JSONSchemaProps] = js.native
+  
   var required: js.Array[String] = js.native
+  
   var title: String = js.native
+  
   var `type`: String = js.native
+  
   var uniqueItems: Boolean = js.native
+  
   /**
     * x-kubernetes-embedded-resource defines that the value is an embedded Kubernetes runtime.Object, with TypeMeta and ObjectMeta. The type must be object. It is allowed to further restrict the embedded object. kind, apiVersion and metadata are validated automatically. x-kubernetes-preserve-unknown-fields is allowed to be true, but does not have to be if the object is fully specified (up to kind, apiVersion, metadata).
     */
   var x_kubernetes_embedded_resource: Boolean = js.native
+  
   /**
     * x-kubernetes-int-or-string specifies that this value is either an integer or a string. If this is true, an empty type is allowed and type as child of anyOf is permitted if following one of the following patterns:
     *
@@ -74,6 +113,7 @@ trait JSONSchemaProps extends js.Object {
     *    - ... zero or more
     */
   var x_kubernetes_int_or_string: Boolean = js.native
+  
   /**
     * x-kubernetes-list-map-keys annotates an array with the x-kubernetes-list-type `map` by specifying the keys used as the index of the map.
     *
@@ -82,6 +122,7 @@ trait JSONSchemaProps extends js.Object {
     * The properties specified must either be required or have a default value, to ensure those properties are present for all list items.
     */
   var x_kubernetes_list_map_keys: js.Array[String] = js.native
+  
   /**
     * x-kubernetes-list-type annotates an array to further describe its topology. This extension must only be used on lists and may have 3 possible values:
     *
@@ -99,6 +140,7 @@ trait JSONSchemaProps extends js.Object {
     * Defaults to atomic for arrays.
     */
   var x_kubernetes_list_type: String = js.native
+  
   /**
     * x-kubernetes-map-type annotates an object to further describe its topology. This extension must only be used when type is object and may have 2 possible values:
     *
@@ -110,13 +152,14 @@ trait JSONSchemaProps extends js.Object {
     *      Atomic maps will be entirely replaced when updated.
     */
   var x_kubernetes_map_type: String = js.native
+  
   /**
     * x-kubernetes-preserve-unknown-fields stops the API server decoding step from pruning fields which are not specified in the validation schema. This affects fields recursively, but switches back to normal pruning behaviour if nested properties or additionalProperties are specified in the schema. This can either be true or undefined. False is forbidden.
     */
   var x_kubernetes_preserve_unknown_fields: Boolean = js.native
 }
-
 object JSONSchemaProps {
+  
   @scala.inline
   def apply(
     $ref: String,
@@ -167,118 +210,170 @@ object JSONSchemaProps {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchemaProps]
   }
+  
   @scala.inline
   implicit class JSONSchemaPropsOps[Self <: JSONSchemaProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set$schema(value: String): Self = this.set("$schema", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAdditionalItems(value: JSONSchemaProps | Boolean): Self = this.set("additionalItems", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAdditionalProperties(value: JSONSchemaProps | Boolean): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAllOfVarargs(value: JSONSchemaProps*): Self = this.set("allOf", js.Array(value :_*))
+    
     @scala.inline
     def setAllOf(value: js.Array[JSONSchemaProps]): Self = this.set("allOf", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnyOfVarargs(value: JSONSchemaProps*): Self = this.set("anyOf", js.Array(value :_*))
+    
     @scala.inline
     def setAnyOf(value: js.Array[JSONSchemaProps]): Self = this.set("anyOf", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDefinitions(value: StringDictionary[JSONSchemaProps]): Self = this.set("definitions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDependencies(value: StringDictionary[JSONSchemaProps | js.Array[String]]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnumVarargs(value: js.Any*): Self = this.set("enum", js.Array(value :_*))
+    
     @scala.inline
     def setEnum(value: js.Array[_]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExample(value: js.Any): Self = this.set("example", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExclusiveMaximum(value: Boolean): Self = this.set("exclusiveMaximum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExclusiveMinimum(value: Boolean): Self = this.set("exclusiveMinimum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExternalDocs(value: ExternalDocumentation): Self = this.set("externalDocs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    
     @scala.inline
     def setItems(value: JSONSchemaProps | js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxItems(value: Double): Self = this.set("maxItems", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxProperties(value: Double): Self = this.set("maxProperties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinItems(value: Double): Self = this.set("minItems", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinProperties(value: Double): Self = this.set("minProperties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMultipleOf(value: Double): Self = this.set("multipleOf", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNot(value: JSONSchemaProps): Self = this.set("not", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNullable(value: Boolean): Self = this.set("nullable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOneOfVarargs(value: JSONSchemaProps*): Self = this.set("oneOf", js.Array(value :_*))
+    
     @scala.inline
     def setOneOf(value: js.Array[JSONSchemaProps]): Self = this.set("oneOf", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPatternProperties(value: StringDictionary[JSONSchemaProps]): Self = this.set("patternProperties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProperties(value: StringDictionary[JSONSchemaProps]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRequiredVarargs(value: String*): Self = this.set("required", js.Array(value :_*))
+    
     @scala.inline
     def setRequired(value: js.Array[String]): Self = this.set("required", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUniqueItems(value: Boolean): Self = this.set("uniqueItems", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX_kubernetes_embedded_resource(value: Boolean): Self = this.set("x_kubernetes_embedded_resource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX_kubernetes_int_or_string(value: Boolean): Self = this.set("x_kubernetes_int_or_string", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX_kubernetes_list_map_keysVarargs(value: String*): Self = this.set("x_kubernetes_list_map_keys", js.Array(value :_*))
+    
     @scala.inline
     def setX_kubernetes_list_map_keys(value: js.Array[String]): Self = this.set("x_kubernetes_list_map_keys", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX_kubernetes_list_type(value: String): Self = this.set("x_kubernetes_list_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX_kubernetes_map_type(value: String): Self = this.set("x_kubernetes_map_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX_kubernetes_preserve_unknown_fields(value: Boolean): Self = this.set("x_kubernetes_preserve_unknown_fields", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.anon.PartialIGlowLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "GlowLayer")
 @js.native
@@ -18,23 +18,26 @@ class GlowLayer protected ()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene, options: PartialIGlowLayerOptions) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "GlowLayer")
 @js.native
 object GlowLayer extends js.Object {
+  
   /**
     * The default blur kernel size used for the glow.
     */
   var DefaultBlurKernelSize: Double = js.native
+  
   /**
     * The default texture size ratio used for the glow.
     */
   var DefaultTextureRatio: Double = js.native
+  
   /**
     * Effect Name of the layer.
     */
   val EffectName: String = js.native
+  
   /**
     * Creates a Glow Layer from parsed glow layer data
     * @param parsedGlowLayer defines glow layer data
@@ -44,4 +47,3 @@ object GlowLayer extends js.Object {
     */
   def Parse(parsedGlowLayer: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.glowLayerMod.GlowLayer = js.native
 }
-

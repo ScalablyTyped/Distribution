@@ -4,11 +4,12 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/of", JSImport.Namespace)
 @js.native
 object ofMod extends js.Object {
+  
   def of[T](a: T): Observable[T] = js.native
   def of[T](a: T, scheduler: SchedulerLike): Observable[T] = js.native
   def of[T](args: (SchedulerLike | T)*): Observable[T] = js.native
@@ -29,4 +30,3 @@ object ofMod extends js.Object {
   def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = js.native
   def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = js.native
 }
-

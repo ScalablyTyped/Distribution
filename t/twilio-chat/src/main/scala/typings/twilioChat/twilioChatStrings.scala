@@ -11,9 +11,163 @@ import typings.twilioChat.mod.Client._LogLevel
 import typings.twilioChat.userMod.User.SubscriptionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilioChatStrings {
+  
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @scala.inline
+  def attributes: attributes = "attributes".asInstanceOf[attributes]
+  
+  @scala.inline
+  def author: author = "author".asInstanceOf[author]
+  
+  @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  
+  @scala.inline
+  def chat: chat = "chat".asInstanceOf[chat]
+  
+  @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
+  
+  @scala.inline
+  def createdBy: createdBy = "createdBy".asInstanceOf[createdBy]
+  
+  @scala.inline
+  def dateCreated: dateCreated = "dateCreated".asInstanceOf[dateCreated]
+  
+  @scala.inline
+  def dateUpdated: dateUpdated = "dateUpdated".asInstanceOf[dateUpdated]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def friendlyName: friendlyName = "friendlyName".asInstanceOf[friendlyName]
+  
+  @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def initializing: initializing = "initializing".asInstanceOf[initializing]
+  
+  @scala.inline
+  def invited: invited = "invited".asInstanceOf[invited]
+  
+  @scala.inline
+  def joined: joined = "joined".asInstanceOf[joined]
+  
+  @scala.inline
+  def lastConsumedMessageIndex: lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[lastConsumedMessageIndex]
+  
+  @scala.inline
+  def lastConsumptionTimestamp: lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[lastConsumptionTimestamp]
+  
+  @scala.inline
+  def lastMessage: lastMessage = "lastMessage".asInstanceOf[lastMessage]
+  
+  @scala.inline
+  def lastUpdatedBy: lastUpdatedBy = "lastUpdatedBy".asInstanceOf[lastUpdatedBy]
+  
+  @scala.inline
+  def media: media = "media".asInstanceOf[media]
+  
+  @scala.inline
+  def muted: muted = "muted".asInstanceOf[muted]
+  
+  @scala.inline
+  def notParticipating: notParticipating = "notParticipating".asInstanceOf[notParticipating]
+  
+  @scala.inline
+  def notifiable: notifiable = "notifiable".asInstanceOf[notifiable]
+  
+  @scala.inline
+  def notificationLevel: notificationLevel = "notificationLevel".asInstanceOf[notificationLevel]
+  
+  @scala.inline
+  def online: online = "online".asInstanceOf[online]
+  
+  @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  
+  @scala.inline
+  def public: public = "public".asInstanceOf[public]
+  
+  @scala.inline
+  def roleSid: roleSid = "roleSid".asInstanceOf[roleSid]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def sms: sms = "sms".asInstanceOf[sms]
+  
+  @scala.inline
+  def state: state = "state".asInstanceOf[state]
+  
+  @scala.inline
+  def status: status = "status".asInstanceOf[status]
+  
+  @scala.inline
+  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
+  
+  @scala.inline
+  def synclist: synclist = "synclist".asInstanceOf[synclist]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
+  
+  @scala.inline
+  def twilioDotchannelDotadded_to_channel: twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[twilioDotchannelDotadded_to_channel]
+  
+  @scala.inline
+  def twilioDotchannelDotinvited_to_channel: twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[twilioDotchannelDotinvited_to_channel]
+  
+  @scala.inline
+  def twilioDotchannelDotnew_message: twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[twilioDotchannelDotnew_message]
+  
+  @scala.inline
+  def twilioDotchannelDotremoved_from_channel: twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[twilioDotchannelDotremoved_from_channel]
+  
+  @scala.inline
+  def uniqueName: uniqueName = "uniqueName".asInstanceOf[uniqueName]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
+  @scala.inline
+  def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
+  
   @js.native
   sealed trait active extends js.Object
   
@@ -203,108 +357,4 @@ object twilioChatStrings {
   
   @js.native
   sealed trait whatsapp extends Type
-  
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
-  @scala.inline
-  def attributes: attributes = "attributes".asInstanceOf[attributes]
-  @scala.inline
-  def author: author = "author".asInstanceOf[author]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def chat: chat = "chat".asInstanceOf[chat]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def createdBy: createdBy = "createdBy".asInstanceOf[createdBy]
-  @scala.inline
-  def dateCreated: dateCreated = "dateCreated".asInstanceOf[dateCreated]
-  @scala.inline
-  def dateUpdated: dateUpdated = "dateUpdated".asInstanceOf[dateUpdated]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def friendlyName: friendlyName = "friendlyName".asInstanceOf[friendlyName]
-  @scala.inline
-  def inactive: inactive = "inactive".asInstanceOf[inactive]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def initializing: initializing = "initializing".asInstanceOf[initializing]
-  @scala.inline
-  def invited: invited = "invited".asInstanceOf[invited]
-  @scala.inline
-  def joined: joined = "joined".asInstanceOf[joined]
-  @scala.inline
-  def lastConsumedMessageIndex: lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[lastConsumedMessageIndex]
-  @scala.inline
-  def lastConsumptionTimestamp: lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[lastConsumptionTimestamp]
-  @scala.inline
-  def lastMessage: lastMessage = "lastMessage".asInstanceOf[lastMessage]
-  @scala.inline
-  def lastUpdatedBy: lastUpdatedBy = "lastUpdatedBy".asInstanceOf[lastUpdatedBy]
-  @scala.inline
-  def media: media = "media".asInstanceOf[media]
-  @scala.inline
-  def muted: muted = "muted".asInstanceOf[muted]
-  @scala.inline
-  def notParticipating: notParticipating = "notParticipating".asInstanceOf[notParticipating]
-  @scala.inline
-  def notifiable: notifiable = "notifiable".asInstanceOf[notifiable]
-  @scala.inline
-  def notificationLevel: notificationLevel = "notificationLevel".asInstanceOf[notificationLevel]
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
-  @scala.inline
-  def roleSid: roleSid = "roleSid".asInstanceOf[roleSid]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def sms: sms = "sms".asInstanceOf[sms]
-  @scala.inline
-  def state: state = "state".asInstanceOf[state]
-  @scala.inline
-  def status: status = "status".asInstanceOf[status]
-  @scala.inline
-  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
-  @scala.inline
-  def synclist: synclist = "synclist".asInstanceOf[synclist]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def twilioDotchannelDotadded_to_channel: twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[twilioDotchannelDotadded_to_channel]
-  @scala.inline
-  def twilioDotchannelDotinvited_to_channel: twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[twilioDotchannelDotinvited_to_channel]
-  @scala.inline
-  def twilioDotchannelDotnew_message: twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[twilioDotchannelDotnew_message]
-  @scala.inline
-  def twilioDotchannelDotremoved_from_channel: twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[twilioDotchannelDotremoved_from_channel]
-  @scala.inline
-  def uniqueName: uniqueName = "uniqueName".asInstanceOf[uniqueName]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
 }
-

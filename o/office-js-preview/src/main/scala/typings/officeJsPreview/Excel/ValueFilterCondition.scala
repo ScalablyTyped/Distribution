@@ -2,23 +2,22 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ValueFilterCondition extends js.Object
-
 /**
   *
   * Enum representing all accepted conditions by which a value filter can be applied.
   Used to configure the type of PivotFilter that is applied to the field.
   `PivotFilter.exclusive` can be set to true to invert many of these conditions.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.ValueFilterCondition")
 @js.native
 object ValueFilterCondition extends js.Object {
+  
   /**
     * Between `lowerBound` and `upperBound` criteria.
     
@@ -99,6 +98,4 @@ object ValueFilterCondition extends js.Object {
     */
   @js.native
   sealed trait unknown extends ValueFilterCondition
-  
 }
-

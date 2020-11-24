@@ -2,9 +2,10 @@ package typings.reactBootstrap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object toggleButtonGroupMod {
+  
   type ToggleButtonGroupProps = typings.reactBootstrap.toggleButtonGroupMod.BaseProps with (typings.reactBootstrap.toggleButtonGroupMod.RadioProps | typings.reactBootstrap.toggleButtonGroupMod.CheckboxProps) with (typings.reactBootstrap.mod.Omit[
     typings.reactBootstrap.buttonGroupMod.ButtonGroupProps, 
     typings.reactBootstrap.reactBootstrapStrings.onChange

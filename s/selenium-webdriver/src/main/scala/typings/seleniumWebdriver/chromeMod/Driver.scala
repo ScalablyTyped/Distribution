@@ -6,16 +6,16 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.remoteMod.DriverService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/chrome", "Driver")
 @js.native
 class Driver () extends WebDriver
-
 /* static members */
 @JSImport("selenium-webdriver/chrome", "Driver")
 @js.native
 object Driver extends js.Object {
+  
   /**
     * Creates a new session with the ChromeDriver.
     *
@@ -37,4 +37,3 @@ object Driver extends js.Object {
   def createSession(opt_config: CreateSessionCapabilities, opt_service: Executor): Driver = js.native
   def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
 }
-

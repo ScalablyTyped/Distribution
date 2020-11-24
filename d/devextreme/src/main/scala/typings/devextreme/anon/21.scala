@@ -1,38 +1,67 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.horizontal
-import typings.devextreme.devextremeStrings.vertical
+import typings.devextreme.mod.DevExpress.core.dxElement
+import typings.devextreme.mod.DevExpress.viz.dxBarGauge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `21` extends js.Object {
-  var orientation: js.UndefOr[horizontal | vertical] = js.native
+  
+  var component: js.UndefOr[dxBarGauge] = js.native
+  
+  var element: js.UndefOr[dxElement] = js.native
+  
+  var model: js.UndefOr[js.Any] = js.native
+  
+  var target: js.UndefOr[js.Any] = js.native
 }
-
 object `21` {
+  
   @scala.inline
   def apply(): `21` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`21`]
   }
+  
   @scala.inline
   implicit class `21Ops`[Self <: `21`] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setOrientation(value: horizontal | vertical): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setComponent(value: dxBarGauge): Self = this.set("component", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def deleteComponent: Self = this.set("component", js.undefined)
+    
+    @scala.inline
+    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
   }
-  
 }
-

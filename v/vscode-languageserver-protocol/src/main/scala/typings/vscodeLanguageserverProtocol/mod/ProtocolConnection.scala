@@ -13,39 +13,21 @@ import typings.vscodeJsonrpc.mod.TraceOptions
 import typings.vscodeJsonrpc.mod.Tracer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProtocolConnection extends js.Object {
-  /**
-    * An event emitter firing when the connection got closed.
-    */
-  @JSName("onClose")
-  var onClose_Original: typings.vscodeJsonrpc.eventsMod.Event[Unit] = js.native
-  /**
-    * An event emitter firing when the connection got disposed.
-    */
-  @JSName("onDispose")
-  var onDispose_Original: typings.vscodeJsonrpc.eventsMod.Event[Unit] = js.native
-  /**
-    * An event emitter firing when an error occurs on the connection.
-    */
-  @JSName("onError")
-  var onError_Original: typings.vscodeJsonrpc.eventsMod.Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
-  /**
-    * An event emiiter firing when the connection receives a notification that is not
-    * handled.
-    */
-  @JSName("onUnhandledNotification")
-  var onUnhandledNotification_Original: typings.vscodeJsonrpc.eventsMod.Event[NotificationMessage] = js.native
+  
   /**
     * Actively disposes the connection.
     */
   def dispose(): Unit = js.native
+  
   /**
     * Turns the connection into listening mode
     */
   def listen(): Unit = js.native
+  
   /**
     * An event emitter firing when the connection got closed.
     */
@@ -62,6 +44,12 @@ trait ProtocolConnection extends js.Object {
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   /**
+    * An event emitter firing when the connection got closed.
+    */
+  @JSName("onClose")
+  var onClose_Original: typings.vscodeJsonrpc.eventsMod.Event[Unit] = js.native
+  
+  /**
     * An event emitter firing when the connection got disposed.
     */
   def onDispose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
@@ -76,6 +64,12 @@ trait ProtocolConnection extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  /**
+    * An event emitter firing when the connection got disposed.
+    */
+  @JSName("onDispose")
+  var onDispose_Original: typings.vscodeJsonrpc.eventsMod.Event[Unit] = js.native
+  
   /**
     * An event emitter firing when an error occurs on the connection.
     */
@@ -94,6 +88,12 @@ trait ProtocolConnection extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  /**
+    * An event emitter firing when an error occurs on the connection.
+    */
+  @JSName("onError")
+  var onError_Original: typings.vscodeJsonrpc.eventsMod.Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
+  
   /**
     * Installs a notification handler.
     *
@@ -115,6 +115,7 @@ trait ProtocolConnection extends js.Object {
     * @param handler The actual handler.
     */
   def onNotification[P, RO](`type`: typings.vscodeJsonrpc.mod.NotificationType[P, RO], handler: NotificationHandler[P]): Unit = js.native
+  
   /**
     * Installs a progress handler for a given token.
     * @param type the progress type
@@ -123,6 +124,7 @@ trait ProtocolConnection extends js.Object {
     */
   def onProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: String, handler: NotificationHandler[P]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   def onProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: Double, handler: NotificationHandler[P]): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  
   /**
     * Installs a request handler.
     *
@@ -144,6 +146,7 @@ trait ProtocolConnection extends js.Object {
     * @param handler The actual handler.
     */
   def onRequest[P, R, E, RO](`type`: typings.vscodeJsonrpc.mod.RequestType[P, R, E, RO], handler: RequestHandler[P, R, E]): Unit = js.native
+  
   /**
     * An event emiiter firing when the connection receives a notification that is not
     * handled.
@@ -160,6 +163,13 @@ trait ProtocolConnection extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[typings.vscodeJsonrpc.eventsMod.Disposable]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  /**
+    * An event emiiter firing when the connection receives a notification that is not
+    * handled.
+    */
+  @JSName("onUnhandledNotification")
+  var onUnhandledNotification_Original: typings.vscodeJsonrpc.eventsMod.Event[NotificationMessage] = js.native
+  
   /**
     * Sends a notification.
     *
@@ -187,6 +197,7 @@ trait ProtocolConnection extends js.Object {
     */
   def sendNotification[P, RO](`type`: typings.vscodeJsonrpc.mod.NotificationType[P, RO]): Unit = js.native
   def sendNotification[P, RO](`type`: typings.vscodeJsonrpc.mod.NotificationType[P, RO], params: P): Unit = js.native
+  
   /**
     * Sends progress.
     * @param type the progress type
@@ -195,6 +206,7 @@ trait ProtocolConnection extends js.Object {
     */
   def sendProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: String, value: P): Unit = js.native
   def sendProgress[P](`type`: typings.vscodeJsonrpc.mod.ProgressType[P], token: Double, value: P): Unit = js.native
+  
   /**
     * Sends a request and returns a promise resolving to the result of the request.
     *
@@ -240,6 +252,7 @@ trait ProtocolConnection extends js.Object {
     params: P,
     token: typings.vscodeJsonrpc.cancellationMod.CancellationToken
   ): js.Promise[R] = js.native
+  
   /**
     * Enables tracing mode for the connection.
     */
@@ -247,4 +260,3 @@ trait ProtocolConnection extends js.Object {
   def trace(value: typings.vscodeJsonrpc.mod.Trace, tracer: Tracer, sendNotification: Boolean): Unit = js.native
   def trace(value: typings.vscodeJsonrpc.mod.Trace, tracer: Tracer, traceOptions: TraceOptions): Unit = js.native
 }
-

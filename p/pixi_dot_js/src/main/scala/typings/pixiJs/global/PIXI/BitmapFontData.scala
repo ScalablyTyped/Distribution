@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Normalized parsed data from .fnt files.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class BitmapFontData ()
   extends typings.pixiJs.PIXI.BitmapFontData
-

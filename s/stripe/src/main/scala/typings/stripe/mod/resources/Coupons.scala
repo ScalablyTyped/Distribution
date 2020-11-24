@@ -13,11 +13,12 @@ import typings.stripe.mod.coupons.ICoupon
 import typings.stripe.mod.coupons.ICouponCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Coupons")
 @js.native
 class Coupons () extends StripeResource {
+  
   def create(data: ICouponCreationOptions): js.Promise[ICoupon] = js.native
   /**
     * You can create coupons easily via the coupon management page of the Stripe dashboard. Coupon creation is also accessible via the API if
@@ -33,6 +34,7 @@ class Coupons () extends StripeResource {
   def create(data: ICouponCreationOptions, options: HeaderOptions): js.Promise[ICoupon] = js.native
   def create(data: ICouponCreationOptions, options: HeaderOptions, response: IResponseFn[ICoupon]): js.Promise[ICoupon] = js.native
   def create(data: ICouponCreationOptions, response: IResponseFn[ICoupon]): js.Promise[ICoupon] = js.native
+  
   def del(id: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete coupons via the coupon management page of the Stripe dashboard. However, deleting a coupon does not affect any
@@ -47,6 +49,7 @@ class Coupons () extends StripeResource {
   def del(id: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def del(id: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def del(id: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[ICoupon] = js.native
   def list(data: IListOptionsCreated): IListPromise[ICoupon] = js.native
   /**
@@ -65,6 +68,7 @@ class Coupons () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ICoupon] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICoupon]]): IListPromise[ICoupon] = js.native
   def list(response: IResponseFn[IList[ICoupon]]): IListPromise[ICoupon] = js.native
+  
   def retrieve(id: String): js.Promise[ICoupon] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[ICoupon] = js.native
   /**
@@ -80,6 +84,7 @@ class Coupons () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[ICoupon] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ICoupon]): js.Promise[ICoupon] = js.native
   def retrieve(id: String, response: IResponseFn[ICoupon]): js.Promise[ICoupon] = js.native
+  
   def update(id: String, data: IDataOptionsWithMetadata): js.Promise[ICoupon] = js.native
   /**
     * Updates the metadata of a coupon. Other coupon details (currency, duration, amount_off) are, by design, not editable.
@@ -94,4 +99,3 @@ class Coupons () extends StripeResource {
   def update(id: String, data: IDataOptionsWithMetadata, options: HeaderOptions, response: IResponseFn[ICoupon]): js.Promise[ICoupon] = js.native
   def update(id: String, data: IDataOptionsWithMetadata, response: IResponseFn[ICoupon]): js.Promise[ICoupon] = js.native
 }
-

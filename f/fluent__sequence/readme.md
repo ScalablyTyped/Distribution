@@ -10,9 +10,9 @@ Manage ordered sequences of FluentBundles
 | ------------------ | :-------------: |
 | Full name          | @fluent/sequence |
 | Keywords           | fluent, ftl |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 6118 |
+| # releases         | 5 |
+| # dependents       | 6 |
+| # downloads        | 40441 |
 | # stars            | 0 |
 
 ## Links

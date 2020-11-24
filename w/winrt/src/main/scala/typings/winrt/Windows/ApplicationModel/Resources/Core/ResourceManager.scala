@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Storage.IStorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceManager extends IResourceManager
-
 object ResourceManager {
+  
   @scala.inline
   def apply(
     allResourceMaps: IMapView[String, ResourceMap],
@@ -23,4 +23,3 @@ object ResourceManager {
     __obj.asInstanceOf[ResourceManager]
   }
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.TreeMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextOverflow extends js.Object
-
 @JSGlobal("ej.datavisualization.TreeMap.TextOverflow")
 @js.native
 object TextOverflow extends js.Object {
+  
   //Hides the label when its width exceeds grid width
   @js.native
   sealed trait Hide extends TextOverflow
@@ -25,6 +25,4 @@ object TextOverflow extends js.Object {
   //Wrap the label by word when its width exceeds grid width
   @js.native
   sealed trait WrapByWord extends TextOverflow
-  
 }
-

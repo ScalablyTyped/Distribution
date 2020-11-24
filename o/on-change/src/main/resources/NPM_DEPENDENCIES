@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "on-change" : "2.0.1"
+      "on-change" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "on-change" : "2.0.1"
+      "on-change" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

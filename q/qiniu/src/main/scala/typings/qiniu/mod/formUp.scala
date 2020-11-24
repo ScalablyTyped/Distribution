@@ -4,15 +4,18 @@ import typings.node.NodeJS.ReadableStream
 import typings.qiniu.mod.conf.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "form_up")
 @js.native
 object formUp extends js.Object {
+  
   @js.native
   class FormUploader () extends js.Object {
     def this(config: Config) = this()
+    
     var conf: Config = js.native
+    
     def put(uploadToken: String, key: String, body: js.Any, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -25,6 +28,7 @@ object formUp extends js.Object {
     def put(uploadToken: String, key: String, body: js.Any, putExtra: PutExtra, callback: callback): Unit = js.native
     def put(uploadToken: String, key: Null, body: js.Any, putExtra: Null, callback: callback): Unit = js.native
     def put(uploadToken: String, key: Null, body: js.Any, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putFile(uploadToken: String, key: String, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     /**
       * 上传本地文件
@@ -37,6 +41,7 @@ object formUp extends js.Object {
     def putFile(uploadToken: String, key: String, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
     def putFile(uploadToken: String, key: Null, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     def putFile(uploadToken: String, key: Null, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putFileWithoutKey(uploadToken: String, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -46,6 +51,7 @@ object formUp extends js.Object {
       * @param callback
       */
     def putFileWithoutKey(uploadToken: String, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putStream(uploadToken: String, key: String, rsStream: ReadableStream, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -58,6 +64,7 @@ object formUp extends js.Object {
     def putStream(uploadToken: String, key: String, rsStream: ReadableStream, putExtra: PutExtra, callback: callback): Unit = js.native
     def putStream(uploadToken: String, key: Null, rsStream: ReadableStream, putExtra: Null, callback: callback): Unit = js.native
     def putStream(uploadToken: String, key: Null, rsStream: ReadableStream, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putWithoutKey(uploadToken: String, body: js.Any, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -326,27 +333,30 @@ object formUp extends js.Object {
     ) = this()
     def this(fname: String, params: js.Any, mimeType: String, crc32: String, checkCrc: Boolean) = this()
     def this(fname: String, params: js.Any, mimeType: String, crc32: String, checkCrc: Double) = this()
+    
     /**
       * @default 0|false
       */
     var checkCrc: js.UndefOr[Double | Boolean] = js.native
+    
     /**
       * @default null
       */
     var crc32: js.UndefOr[String] = js.native
+    
     /**
       * @default ''
       */
     var fname: String = js.native
+    
     /**
       * @default null
       */
     var mimeType: js.UndefOr[String] = js.native
+    
     /**
       * @default {}
       */
     var params: js.Any = js.native
   }
-  
 }
-

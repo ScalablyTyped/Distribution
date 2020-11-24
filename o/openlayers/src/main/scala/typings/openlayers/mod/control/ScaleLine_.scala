@@ -4,7 +4,7 @@ import typings.openlayers.mod.control.ScaleLine.Units
 import typings.openlayers.mod.olx.control.ScaleLineOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation._
   */
 class ScaleLine_ () extends Control {
   def this(opt_options: ScaleLineOptions) = this()
+  
   /**
     * Return the units to use in the scale line.
     * @return The units to use in the scale
@@ -44,6 +45,7 @@ class ScaleLine_ () extends Control {
     * @api stable
     */
   def getUnits(): Units = js.native
+  
   /**
     * Set the units to use in the scale line.
     * @param units The units to use in the scale line.
@@ -52,4 +54,3 @@ class ScaleLine_ () extends Control {
     */
   def setUnits(units: Units): Unit = js.native
 }
-

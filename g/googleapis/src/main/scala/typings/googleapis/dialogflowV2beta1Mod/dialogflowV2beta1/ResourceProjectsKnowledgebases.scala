@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Knowledgebases")
 @js.native
 class ResourceProjectsKnowledgebases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var documents: ResourceProjectsKnowledgebasesDocuments = js.native
+  
   /**
     * dialogflow.projects.knowledgeBases.create
     * @desc Creates a knowledge base.
@@ -46,6 +47,7 @@ class ResourceProjectsKnowledgebases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.knowledgeBases.delete
     * @desc Deletes the specified knowledge base.
@@ -78,6 +80,9 @@ class ResourceProjectsKnowledgebases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var documents: ResourceProjectsKnowledgebasesDocuments = js.native
+  
   /**
     * dialogflow.projects.knowledgeBases.get
     * @desc Retrieves the specified knowledge base.
@@ -109,6 +114,7 @@ class ResourceProjectsKnowledgebases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.knowledgeBases.list
     * @desc Returns the list of all knowledge bases of the specified agent.
@@ -142,6 +148,7 @@ class ResourceProjectsKnowledgebases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListKnowledgeBasesResponse]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.knowledgeBases.patch
     * @desc Updates the specified knowledge base.
@@ -176,4 +183,3 @@ class ResourceProjectsKnowledgebases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase]
   ): Unit = js.native
 }
-

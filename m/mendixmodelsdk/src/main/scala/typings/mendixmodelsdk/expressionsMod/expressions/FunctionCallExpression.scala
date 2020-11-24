@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.expressionsMod.expressions
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.instancesMod.IList
@@ -35,12 +36,15 @@ import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationParame
 import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  *
+  * @ignore
   *
   * In version 7.9.0: introduced
   */
@@ -52,31 +56,32 @@ class FunctionCallExpression protected () extends Expression {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FFunctionCallExpression: IModel = js.native
+  
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
     */
   def arguments: IList[Expression] = js.native
+  
   def functionName: String = js.native
   def functionName_=(newValue: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.FunctionCallExpression")
 @js.native
 object FunctionCallExpression extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -86,6 +91,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -95,6 +101,7 @@ object FunctionCallExpression extends js.Object {
     *  7.21.0 and higher
     */
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -104,6 +111,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 to 7.20.0
     */
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'left' property
@@ -113,6 +121,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'right' property
@@ -122,6 +131,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderRight(container: BinaryExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
@@ -131,6 +141,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
@@ -140,6 +151,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeListActionUnderValueModel(container: ChangeListAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
@@ -149,6 +161,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
@@ -158,6 +171,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'timeoutModel' property
@@ -167,6 +181,7 @@ object FunctionCallExpression extends js.Object {
     *  8.5.0 and higher
     */
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'initialValueModel' property
@@ -176,6 +191,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'limitExpressionModel' property
@@ -185,6 +201,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'offsetExpressionModel' property
@@ -194,6 +211,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -203,6 +221,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'returnValueModel' property
@@ -212,6 +231,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInEndEventUnderReturnValueModel(container: EndEvent): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
@@ -221,6 +241,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
@@ -230,6 +251,7 @@ object FunctionCallExpression extends js.Object {
     *  8.0.0 and higher
     */
   def createInFormDataPartUnderValueModel(container: FormDataPart): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'arguments' property
@@ -239,6 +261,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'marginBottomInInchModel' property
@@ -248,6 +271,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'marginLeftInInchModel' property
@@ -257,6 +281,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'marginRightInInchModel' property
@@ -266,6 +291,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'marginTopInInchModel' property
@@ -275,6 +301,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'customLocationModel' property
@@ -284,6 +311,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'password' property
@@ -293,6 +321,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'username' property
@@ -302,6 +331,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
@@ -311,6 +341,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'condition' property
@@ -320,6 +351,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderCondition(container: IfExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'ifFalse' property
@@ -329,6 +361,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfFalse(container: IfExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'ifTrue' property
@@ -338,6 +371,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfTrue(container: IfExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
@@ -347,6 +381,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'nodeModel' property
@@ -356,6 +391,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
@@ -365,6 +401,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInMemberChangeUnderValueModel(container: MemberChange): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -374,6 +411,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -383,6 +421,7 @@ object FunctionCallExpression extends js.Object {
     *  8.0.0 and higher
     */
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expression' property
@@ -392,6 +431,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'hostExpressionModel' property
@@ -401,6 +441,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'passwordExpressionModel' property
@@ -410,6 +451,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'portExpressionModel' property
@@ -419,6 +461,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'useConfigurationExpressionModel' property
@@ -428,6 +471,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'usernameExpressionModel' property
@@ -437,6 +481,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'timeOutModel' property
@@ -446,6 +491,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -455,6 +501,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
@@ -464,6 +511,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expression' property
@@ -473,6 +521,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'timeOutModel' property
@@ -482,6 +531,7 @@ object FunctionCallExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'argumentModel' property
@@ -491,6 +541,7 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): FunctionCallExpression = js.native
+  
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
@@ -500,5 +551,8 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): FunctionCallExpression = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

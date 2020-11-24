@@ -2,7 +2,7 @@ package typings.jqueryFullscreen
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extends jQuery interface
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait JQuery extends js.Object {
+  
   def fullscreen(): Unit = js.native
   def fullscreen(options: js.Object): Unit = js.native
 }
-

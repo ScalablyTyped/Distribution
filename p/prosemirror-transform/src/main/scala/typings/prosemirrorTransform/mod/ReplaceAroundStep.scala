@@ -4,7 +4,7 @@ import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-transform", "ReplaceAroundStep")
 @js.native
@@ -26,4 +26,3 @@ class ReplaceAroundStep[S /* <: Schema[_, _] */] protected () extends Step[S] {
     structure: Boolean
   ) = this()
 }
-

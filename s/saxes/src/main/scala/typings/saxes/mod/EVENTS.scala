@@ -16,7 +16,7 @@ import typings.saxes.saxesStrings.text
 import typings.saxes.saxesStrings.xmldecl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("saxes", "EVENTS")
 @js.native
@@ -38,4 +38,3 @@ object EVENTS
         ready
       ]
     ]
-

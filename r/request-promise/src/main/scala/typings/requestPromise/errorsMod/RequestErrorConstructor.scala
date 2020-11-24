@@ -5,7 +5,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.requestPromise.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RequestErrorConstructor
@@ -15,6 +15,6 @@ trait RequestErrorConstructor
       /* response */ IncomingMessage, 
       RequestError
     ] {
+  
   def apply(cause: js.Any, options: Options, response: IncomingMessage): RequestError = js.native
 }
-

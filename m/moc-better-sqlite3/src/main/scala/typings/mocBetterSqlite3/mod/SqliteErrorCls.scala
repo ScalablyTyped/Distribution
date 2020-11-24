@@ -2,7 +2,7 @@ package typings.mocBetterSqlite3.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (message : string, code : string): / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias moc-better-sqlite3.moc-better-sqlite3.SqliteError * / object */ @JSImport("moc-better-sqlite3", "SqliteError")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 class SqliteErrorCls protected () extends js.Object {
   def this(message: String, code: String) = this()
 }
-

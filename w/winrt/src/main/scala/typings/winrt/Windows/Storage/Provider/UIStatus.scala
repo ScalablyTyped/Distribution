@@ -2,14 +2,14 @@ package typings.winrt.Windows.Storage.Provider
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UIStatus extends js.Object
-
 @JSGlobal("Windows.Storage.Provider.UIStatus")
 @js.native
 object UIStatus extends js.Object {
+  
   @js.native
   sealed trait complete extends UIStatus
   
@@ -21,6 +21,4 @@ object UIStatus extends js.Object {
   
   @js.native
   sealed trait visible extends UIStatus
-  
 }
-

@@ -7,11 +7,12 @@ import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.nodeModuleNameResolver")
 @js.native
 object nodeModuleNameResolver extends js.Object {
+  
   def apply(
     moduleName: String,
     containingFile: String,
@@ -42,4 +43,3 @@ object nodeModuleNameResolver extends js.Object {
     redirectedReference: ResolvedProjectReference
   ): ResolvedModuleWithFailedLookupLocations = js.native
 }
-

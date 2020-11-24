@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudidentity/v1beta1", "cloudidentity_v1beta1.Resource$Groups$Memberships")
 @js.native
 class ResourceGroupsMemberships protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudidentity.groups.memberships.create
     * @desc Creates a Membership.
@@ -42,6 +44,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.memberships.delete
     * @desc Deletes a Membership.
@@ -70,6 +73,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.memberships.get
     * @desc Retrieves a Membership.
@@ -98,6 +102,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMembership]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.memberships.list
     * @desc List Memberships within a Group.
@@ -132,6 +137,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListMembershipsResponse]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.memberships.lookup
     * @desc Looks up [resource
@@ -168,4 +174,3 @@ class ResourceGroupsMemberships protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLookupMembershipNameResponse]
   ): Unit = js.native
 }
-

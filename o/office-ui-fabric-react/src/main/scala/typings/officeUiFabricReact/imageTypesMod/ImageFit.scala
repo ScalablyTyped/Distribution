@@ -3,19 +3,24 @@ package typings.officeUiFabricReact.imageTypesMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ImageFit extends js.Object
-
 @JSImport("office-ui-fabric-react/lib/components/Image/Image.types", "ImageFit")
 @js.native
 object ImageFit extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ImageFit with Double] = js.native
+  
   /**
     * The image is not scaled. The image is centered and cropped within the content box.
     */
   @js.native
   sealed trait center extends ImageFit
+  /* 0 */ @js.native
+  object center extends TopLevel[center with Double]
   
   /**
     * The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
@@ -24,6 +29,8 @@ object ImageFit extends js.Object {
     */
   @js.native
   sealed trait centerContain extends ImageFit
+  /* 5 */ @js.native
+  object centerContain extends TopLevel[centerContain with Double]
   
   /**
     * The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
@@ -32,6 +39,8 @@ object ImageFit extends js.Object {
     */
   @js.native
   sealed trait centerCover extends ImageFit
+  /* 4 */ @js.native
+  object centerCover extends TopLevel[centerCover with Double]
   
   /**
     * The image is scaled to maintain its aspect ratio while being fully contained within the frame. The image will
@@ -40,6 +49,8 @@ object ImageFit extends js.Object {
     */
   @js.native
   sealed trait contain extends ImageFit
+  /* 1 */ @js.native
+  object contain extends TopLevel[contain with Double]
   
   /**
     * The image is scaled to maintain its aspect ratio while filling the frame. Portions of the image will be cropped
@@ -47,6 +58,8 @@ object ImageFit extends js.Object {
     */
   @js.native
   sealed trait cover extends ImageFit
+  /* 2 */ @js.native
+  object cover extends TopLevel[cover with Double]
   
   /**
     * Neither the image nor the frame are scaled. If their sizes do not match, the image will either be cropped or the
@@ -54,26 +67,6 @@ object ImageFit extends js.Object {
     */
   @js.native
   sealed trait none extends ImageFit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageFit with Double] = js.native
-  /* 0 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 5 */ @js.native
-  object centerContain extends TopLevel[centerContain with Double]
-  
-  /* 4 */ @js.native
-  object centerCover extends TopLevel[centerCover with Double]
-  
-  /* 1 */ @js.native
-  object contain extends TopLevel[contain with Double]
-  
-  /* 2 */ @js.native
-  object cover extends TopLevel[cover with Double]
-  
   /* 3 */ @js.native
   object none extends TopLevel[none with Double]
-  
 }
-

@@ -3,14 +3,16 @@ package typings.forgeDi
 import typings.forgeDi.constructorMod.Constructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-di/dist/resolvers/TypeResolver", JSImport.Namespace)
 @js.native
 object typeResolverMod extends js.Object {
+  
   @js.native
   trait TypeResolver
     extends typings.forgeDi.resolverMod.default {
+    
     var `type`: Constructor = js.native
   }
   
@@ -22,6 +24,4 @@ object typeResolverMod extends js.Object {
       `type`: Constructor
     ) = this()
   }
-  
 }
-

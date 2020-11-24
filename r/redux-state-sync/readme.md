@@ -10,9 +10,9 @@ A middleware for redux to sync state in different tabs
 | ------------------ | :-------------: |
 | Full name          | redux-state-sync |
 | Keywords           | redux, react, localstorage, crosstab, sync, tabs, middleware |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 77164 |
+| # downloads        | 173187 |
 | # stars            | 2 |
 
 ## Links

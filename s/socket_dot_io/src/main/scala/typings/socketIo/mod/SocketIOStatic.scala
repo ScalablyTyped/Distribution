@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SocketIOStatic
@@ -36,12 +36,7 @@ Instantiable0[Server]
       /* opts */ ServerOptions, 
       Server
     ] {
-  /**
-    * Backwards compatibility
-    * @see io().listen()
-    */
-  @JSName("listen")
-  var listen_Original: SocketIOStatic = js.native
+  
   /**
     * Default Server constructor
     */
@@ -69,6 +64,7 @@ Instantiable0[Server]
   def apply(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
   def apply(srv: typings.node.httpsMod.Server): Server = js.native
   def apply(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
+  
   /**
     * Default Server constructor
     */
@@ -112,5 +108,10 @@ Instantiable0[Server]
   def listen(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
   def listen(srv: typings.node.httpsMod.Server): Server = js.native
   def listen(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
+  /**
+    * Backwards compatibility
+    * @see io().listen()
+    */
+  @JSName("listen")
+  var listen_Original: SocketIOStatic = js.native
 }
-

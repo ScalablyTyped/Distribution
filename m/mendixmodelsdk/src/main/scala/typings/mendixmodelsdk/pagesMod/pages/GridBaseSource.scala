@@ -1,13 +1,14 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
-import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridBaseSource")
 @js.native
@@ -17,20 +18,19 @@ abstract class GridBaseSource protected () extends SortableEntityPathSource {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FGridBaseSource: IModel = js.native
+  
   def searchBar: SearchBar = js.native
   def searchBar_=(newValue: SearchBar): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridBaseSource")
 @js.native
 object GridBaseSource extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

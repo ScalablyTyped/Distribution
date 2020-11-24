@@ -2,7 +2,7 @@ package typings.chromeApps.chrome.runtime
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.chromeApps.chromeAppsStrings.alarms
@@ -66,4 +66,3 @@ typings.chromeApps.chrome.runtime.UrlMatches
   - typings.chromeApps.chrome.runtime.USBDevicesPermission
 */
 trait Permission extends js.Object
-

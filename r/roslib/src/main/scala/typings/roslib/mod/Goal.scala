@@ -2,7 +2,7 @@ package typings.roslib.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "Goal")
 @js.native
@@ -19,10 +19,12 @@ class Goal protected () extends js.Object {
     *   * goalMessage - The JSON object containing the goal for the action server
     */
   def this(options: typings.roslib.anon.ActionClient) = this()
+  
   /**
     * Cancel the current goal.
     */
   def cancel(): Unit = js.native
+  
   /**
     * Connect callback functions to goal based events
     *
@@ -30,6 +32,7 @@ class Goal protected () extends js.Object {
     * @param callback Callback function executed on connected event
     */
   def on(eventName: String, callback: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Send the goal to the action server.
     *
@@ -38,4 +41,3 @@ class Goal protected () extends js.Object {
   def send(): Unit = js.native
   def send(timeout: Double): Unit = js.native
 }
-

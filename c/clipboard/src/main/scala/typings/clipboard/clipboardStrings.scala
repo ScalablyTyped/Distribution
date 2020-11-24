@@ -2,9 +2,22 @@ package typings.clipboard
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clipboardStrings {
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def cut: cut = "cut".asInstanceOf[cut]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
   @js.native
   sealed trait copy extends js.Object
   
@@ -16,14 +29,4 @@ object clipboardStrings {
   
   @js.native
   sealed trait success extends js.Object
-  
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def cut: cut = "cut".asInstanceOf[cut]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
 }
-

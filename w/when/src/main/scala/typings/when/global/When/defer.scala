@@ -3,11 +3,12 @@ package typings.when.global.When
 import typings.when.When.Deferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("When.defer")
 @js.native
 object defer extends js.Object {
+  
   /**
     * Creates a {promise, resolver} pair, either or both of which
     * may be given out safely to consumers.
@@ -16,4 +17,3 @@ object defer extends js.Object {
     */
   def apply[T](): Deferred[T] = js.native
 }
-

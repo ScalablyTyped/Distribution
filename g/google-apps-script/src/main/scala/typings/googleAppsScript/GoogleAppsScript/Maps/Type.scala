@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Type extends js.Object
-
 /**
   * An enum representing the type of map to render.
   * See also
@@ -16,6 +15,7 @@ sealed trait Type extends js.Object
 @JSGlobal("GoogleAppsScript.Maps.Type")
 @js.native
 object Type extends js.Object {
+  
   @js.native
   sealed trait HYBRID extends Type
   
@@ -27,6 +27,4 @@ object Type extends js.Object {
   
   @js.native
   sealed trait TERRAIN extends Type
-  
 }
-

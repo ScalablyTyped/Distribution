@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Diagram
@@ -17,13 +17,19 @@ trait Diagram
      with XCoordinateSystemContainer
      with XTitled
      with X3DDefaultSetter {
+  
   /** Draw connection lines for stacked bar charts. */
   var ConnectBars: Boolean = js.native
+  
   /** Chart Datatable flags */
   var DataTableHBorder: Boolean = js.native
+  
   var DataTableOutline: Boolean = js.native
+  
   var DataTableVBorder: Boolean = js.native
+  
   var ExternalData: String = js.native
+  
   /**
     * If bars of a bar or column chart are attached to different axis, this property determines how to display those. If `TRUE` , the bars are grouped
     * together in one block for each axis, thus they are painted one group over the other.
@@ -33,38 +39,48 @@ trait Diagram
     * If all data series of a bar or column chart are attached to only one axis, this property has no effect.
     */
   var GroupBarsPerAxis: Boolean = js.native
+  
   /**
     * specifies how empty or invalid cells in the provided data should be handled when displayed
     * @see com.sun.star.chart.MissingValueTreatment
     */
   var MissingValueTreatment: Double = js.native
+  
   /** Perspective of 3D charts ( [0,100] ). */
   var Perspective: Double = js.native
+  
   /**
     * The attributes {@link RelativePosition} and {@link RelativeSize} should be used for the inner coordinate region without axis labels and without data
     * labels.
     */
   var PosSizeExcludeLabels: Boolean = js.native
+  
   /**
     * The position is as a relative position on the page.
     *
     * If a relative position is given the diagram is not automatically placed, but instead is placed relative on the page.
     */
   var RelativePosition: typings.activexLibreoffice.com_.sun.star.chart2.RelativePosition = js.native
+  
   /** The size of the diagram as relative size of the page size. */
   var RelativeSize: typings.activexLibreoffice.com_.sun.star.chart2.RelativeSize = js.native
+  
   var RightAngledAxes: Boolean = js.native
+  
   /** Horizontal rotation of 3D charts in degrees ( ]-180,180] ). */
   var RotationHorizontal: Double = js.native
+  
   /** Vertical rotation of 3D charts in degrees ( ]-180,180] ). */
   var RotationVertical: Double = js.native
+  
   /** Sort data points by x values for rendering */
   var SortByXValues: Boolean = js.native
+  
   /** Starting angle in degrees for pie charts and doughnut charts. */
   var StartingAngle: Double = js.native
 }
-
 object Diagram {
+  
   @scala.inline
   def apply(
     ConnectBars: Boolean,
@@ -112,50 +128,68 @@ object Diagram {
     val __obj = js.Dynamic.literal(ConnectBars = ConnectBars.asInstanceOf[js.Any], CoordinateSystems = CoordinateSystems.asInstanceOf[js.Any], DataTableHBorder = DataTableHBorder.asInstanceOf[js.Any], DataTableOutline = DataTableOutline.asInstanceOf[js.Any], DataTableVBorder = DataTableVBorder.asInstanceOf[js.Any], DefaultColorScheme = DefaultColorScheme.asInstanceOf[js.Any], ExternalData = ExternalData.asInstanceOf[js.Any], Floor = Floor.asInstanceOf[js.Any], GroupBarsPerAxis = GroupBarsPerAxis.asInstanceOf[js.Any], Legend = Legend.asInstanceOf[js.Any], MissingValueTreatment = MissingValueTreatment.asInstanceOf[js.Any], Perspective = Perspective.asInstanceOf[js.Any], PosSizeExcludeLabels = PosSizeExcludeLabels.asInstanceOf[js.Any], RelativePosition = RelativePosition.asInstanceOf[js.Any], RelativeSize = RelativeSize.asInstanceOf[js.Any], RightAngledAxes = RightAngledAxes.asInstanceOf[js.Any], RotationHorizontal = RotationHorizontal.asInstanceOf[js.Any], RotationVertical = RotationVertical.asInstanceOf[js.Any], SortByXValues = SortByXValues.asInstanceOf[js.Any], StartingAngle = StartingAngle.asInstanceOf[js.Any], TitleObject = TitleObject.asInstanceOf[js.Any], Wall = Wall.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addCoordinateSystem = js.Any.fromFunction1(addCoordinateSystem), getCoordinateSystems = js.Any.fromFunction0(getCoordinateSystems), getDefaultColorScheme = js.Any.fromFunction0(getDefaultColorScheme), getFloor = js.Any.fromFunction0(getFloor), getLegend = js.Any.fromFunction0(getLegend), getTitleObject = js.Any.fromFunction0(getTitleObject), getWall = js.Any.fromFunction0(getWall), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCoordinateSystem = js.Any.fromFunction1(removeCoordinateSystem), set3DSettingsToDefault = js.Any.fromFunction0(set3DSettingsToDefault), setCoordinateSystems = js.Any.fromFunction1(setCoordinateSystems), setDefaultColorScheme = js.Any.fromFunction1(setDefaultColorScheme), setDefaultIllumination = js.Any.fromFunction0(setDefaultIllumination), setDefaultRotation = js.Any.fromFunction0(setDefaultRotation), setDiagramData = js.Any.fromFunction2(setDiagramData), setLegend = js.Any.fromFunction1(setLegend), setTitleObject = js.Any.fromFunction1(setTitleObject))
     __obj.asInstanceOf[Diagram]
   }
+  
   @scala.inline
   implicit class DiagramOps[Self <: Diagram] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConnectBars(value: Boolean): Self = this.set("ConnectBars", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDataTableHBorder(value: Boolean): Self = this.set("DataTableHBorder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDataTableOutline(value: Boolean): Self = this.set("DataTableOutline", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDataTableVBorder(value: Boolean): Self = this.set("DataTableVBorder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExternalData(value: String): Self = this.set("ExternalData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGroupBarsPerAxis(value: Boolean): Self = this.set("GroupBarsPerAxis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMissingValueTreatment(value: Double): Self = this.set("MissingValueTreatment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPerspective(value: Double): Self = this.set("Perspective", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPosSizeExcludeLabels(value: Boolean): Self = this.set("PosSizeExcludeLabels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRelativePosition(value: RelativePosition): Self = this.set("RelativePosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRelativeSize(value: RelativeSize): Self = this.set("RelativeSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRightAngledAxes(value: Boolean): Self = this.set("RightAngledAxes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRotationHorizontal(value: Double): Self = this.set("RotationHorizontal", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRotationVertical(value: Double): Self = this.set("RotationVertical", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSortByXValues(value: Boolean): Self = this.set("SortByXValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartingAngle(value: Double): Self = this.set("StartingAngle", value.asInstanceOf[js.Any])
   }
-  
 }
-

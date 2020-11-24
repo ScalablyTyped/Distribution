@@ -10,9 +10,9 @@ Image component to add images without defining both both height and width that s
 | ------------------ | :-------------: |
 | Full name          | react-native-scaled-image |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18682 |
+| # downloads        | 9269 |
 | # stars            | 0 |
 
 ## Links

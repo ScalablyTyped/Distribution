@@ -29,6 +29,7 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetStyleSheetTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetEffectivePropertyValueForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetKeyframeKeyRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetKeyframeKeyResponse
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetLocalFontsEnabledRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetRuleSelectorRequest
@@ -41,67 +42,83 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.StopRuleUsageTrackingResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetChangedEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetRemovedEvent
+import typings.devtoolsProtocol.mod.Protocol.CSS.TakeComputedStyleUpdatesResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.TakeCoverageDeltaResponse
+import typings.devtoolsProtocol.mod.Protocol.CSS.TrackComputedStyleUpdatesRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSSApi extends js.Object {
+  
   /**
     * Inserts a new rule with the given `ruleText` in a stylesheet with given `styleSheetId`, at the
     * position specified by `location`.
     */
   def addRule(params: AddRuleRequest): js.Promise[AddRuleResponse] = js.native
+  
   /**
     * Returns all class names from specified stylesheet.
     */
   def collectClassNames(params: CollectClassNamesRequest): js.Promise[CollectClassNamesResponse] = js.native
+  
   /**
     * Creates a new special "via-inspector" stylesheet in the frame with given `frameId`.
     */
   def createStyleSheet(params: CreateStyleSheetRequest): js.Promise[CreateStyleSheetResponse] = js.native
+  
   /**
     * Disables the CSS agent for the given page.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been
     * enabled until the result of this command is received.
     */
   def enable(): js.Promise[Unit] = js.native
+  
   /**
     * Ensures that the given node will have specified pseudo-classes whenever its style is computed by
     * the browser.
     */
   def forcePseudoState(params: ForcePseudoStateRequest): js.Promise[Unit] = js.native
+  
   def getBackgroundColors(params: GetBackgroundColorsRequest): js.Promise[GetBackgroundColorsResponse] = js.native
+  
   /**
     * Returns the computed style for a DOM node identified by `nodeId`.
     */
   def getComputedStyleForNode(params: GetComputedStyleForNodeRequest): js.Promise[GetComputedStyleForNodeResponse] = js.native
+  
   /**
     * Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM
     * attributes) for a DOM node identified by `nodeId`.
     */
   def getInlineStylesForNode(params: GetInlineStylesForNodeRequest): js.Promise[GetInlineStylesForNodeResponse] = js.native
+  
   /**
     * Returns requested styles for a DOM node identified by `nodeId`.
     */
   def getMatchedStylesForNode(params: GetMatchedStylesForNodeRequest): js.Promise[GetMatchedStylesForNodeResponse] = js.native
+  
   /**
     * Returns all media queries parsed by the rendering engine.
     */
   def getMediaQueries(): js.Promise[GetMediaQueriesResponse] = js.native
+  
   /**
     * Requests information about platform fonts which we used to render child TextNodes in the given
     * node.
     */
   def getPlatformFontsForNode(params: GetPlatformFontsForNodeRequest): js.Promise[GetPlatformFontsForNodeResponse] = js.native
+  
   /**
     * Returns the current textual content for a stylesheet.
     */
   def getStyleSheetText(params: GetStyleSheetTextRequest): js.Promise[GetStyleSheetTextResponse] = js.native
+  
   /**
     * Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
     * web font
@@ -129,44 +146,72 @@ trait CSSApi extends js.Object {
     */
   @JSName("on")
   def on_styleSheetRemoved(event: styleSheetRemoved, listener: js.Function1[/* params */ StyleSheetRemovedEvent, Unit]): Unit = js.native
+  
   /**
     * Find a rule with the given active property for the given node and set the new value for this
     * property
     */
   def setEffectivePropertyValueForNode(params: SetEffectivePropertyValueForNodeRequest): js.Promise[Unit] = js.native
+  
   /**
     * Modifies the keyframe rule key text.
     */
   def setKeyframeKey(params: SetKeyframeKeyRequest): js.Promise[SetKeyframeKeyResponse] = js.native
+  
+  /**
+    * Enables/disables rendering of local CSS fonts (enabled by default).
+    */
+  def setLocalFontsEnabled(params: SetLocalFontsEnabledRequest): js.Promise[Unit] = js.native
+  
   /**
     * Modifies the rule selector.
     */
   def setMediaText(params: SetMediaTextRequest): js.Promise[SetMediaTextResponse] = js.native
+  
   /**
     * Modifies the rule selector.
     */
   def setRuleSelector(params: SetRuleSelectorRequest): js.Promise[SetRuleSelectorResponse] = js.native
+  
   /**
     * Sets the new stylesheet text.
     */
   def setStyleSheetText(params: SetStyleSheetTextRequest): js.Promise[SetStyleSheetTextResponse] = js.native
+  
   /**
     * Applies specified style edits one after another in the given order.
     */
   def setStyleTexts(params: SetStyleTextsRequest): js.Promise[SetStyleTextsResponse] = js.native
+  
   /**
     * Enables the selector recording.
     */
   def startRuleUsageTracking(): js.Promise[Unit] = js.native
+  
   /**
     * Stop tracking rule usage and return the list of rules that were used since last call to
     * `takeCoverageDelta` (or since start of coverage instrumentation)
     */
   def stopRuleUsageTracking(): js.Promise[StopRuleUsageTrackingResponse] = js.native
+  
+  /**
+    * Polls the next batch of computed style updates.
+    */
+  def takeComputedStyleUpdates(): js.Promise[TakeComputedStyleUpdatesResponse] = js.native
+  
   /**
     * Obtain list of rules that became used since last call to this method (or since start of coverage
     * instrumentation)
     */
   def takeCoverageDelta(): js.Promise[TakeCoverageDeltaResponse] = js.native
+  
+  /**
+    * Starts tracking the given computed styles for updates. The specified array of properties
+    * replaces the one previously specified. Pass empty array to disable tracking.
+    * Use takeComputedStyleUpdates to retrieve the list of nodes that had properties modified.
+    * The changes to computed style properties are only tracked for nodes pushed to the front-end
+    * by the DOM agent. If no changes to the tracked properties occur after the node has been pushed
+    * to the front-end, no updates will be issued for the node.
+    */
+  def trackComputedStyleUpdates(params: TrackComputedStyleUpdatesRequest): js.Promise[Unit] = js.native
 }
-

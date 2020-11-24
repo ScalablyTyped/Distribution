@@ -10,9 +10,9 @@ Automatically generate tls credentials using letsencrypt.
 | ------------------ | :-------------: |
 | Full name          | auto-sni |
 | Keywords           | auto, auto-sni, http, https, lets-encrypt, letsencrypt, letsencrypt-auto, renew, secure, sni, ssl, tls, web |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 8034 |
+| # downloads        | 4887 |
 | # stars            | 7 |
 
 ## Links

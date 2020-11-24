@@ -3,7 +3,7 @@ package typings.roslib.mod
 import typings.roslib.anon.Xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "UrdfMaterial")
 @js.native
@@ -16,9 +16,12 @@ class UrdfMaterial protected () extends js.Object {
     *  * xml - the XML element to parse
     */
   def this(options: Xml) = this()
+  
   var color: UrdfColor | Null = js.native
-  var name: String = js.native
-  var textureFilename: String | Null = js.native
+  
   def isLink(): Boolean = js.native
+  
+  var name: String = js.native
+  
+  var textureFilename: String | Null = js.native
 }
-

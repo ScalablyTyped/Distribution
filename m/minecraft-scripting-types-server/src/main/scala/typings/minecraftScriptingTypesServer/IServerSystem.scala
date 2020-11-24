@@ -8,12 +8,13 @@ import typings.minecraftScriptingTypesShared.ITickingArea
 import typings.minecraftScriptingTypesShared.VectorXYZ
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IServerSystem[TSystem]
   extends ISystem[TSystem]
      with IVanillaServerSystemBase {
+  
   /**
     * Creates an entity and applies the specified template as defined in JSON. This allows you to quickly create an entity from the applied Behavior Packs as the base for an entity created in scripting. The entity will be spawned into the world with all the components, component groups, and event triggers that are defined in the JSON file of the identifier specified. Only works on scripts registered on the server.NOTE: Entities are created first on the server, with the client notified of new entities afterwards. Be aware that if you send the result object to the client right away, the created entity might not exist on the client yet.
     * @param type Specifies the type of the entity that is being created by the template. Valid inputs are `entity` and `item_entity`
@@ -22,6 +23,7 @@ trait IServerSystem[TSystem]
     * @return null Something went wrong when creating the entity
     */
   def createEntity(`type`: String, templateIdentifier: String): IEntity | Null = js.native
+  
   ////////////////////////////////////////////////
   // Commands
   ////////////////////////////////////////////////
@@ -32,6 +34,7 @@ trait IServerSystem[TSystem]
     * 
     */
   def executeCommand(command: String, callback: js.Function1[/* callback */ IExecuteCommandCallback, Unit]): Unit = js.native
+  
   /**
     * Allows you to get a block from the world when provided a JavaScript object containing a position. The block must be within a ticking area.
     * @param tickingArea The ticking area the block is in
@@ -53,6 +56,7 @@ trait IServerSystem[TSystem]
     * @return null Something went wrong when retrieving the block
     */
   def getBlock(tickingArea: ITickingArea, x: Double, y: Double, z: Double): IBlock | Null = js.native
+  
   /**
     * Allows you to get an array of blocks from the world when provided a minimum and maximum position. The blocks must be within a ticking area.
     * @param tickingArea The ticking area the blocks are in
@@ -83,6 +87,7 @@ trait IServerSystem[TSystem]
     yMax: Double,
     zMax: Double
   ): js.Array[js.Array[IBlock]] | Null = js.native
+  
   /**
     * Checks if the given entity has the specified component.
     * @param entityObject The EntityObject that was retrieved from a call to createEntity() or retrieved from an event
@@ -99,6 +104,7 @@ trait IServerSystem[TSystem]
     * @returns true if the component is present, false if it is not, or null if an unknown component was passed in or something else went wrong when checking if the EntityObject had the component
     */
   def hasComponent(entity: IEntity, componentIdentifier: MinecraftComponent): Boolean | Null = js.native
+  
   /**
     * Allows you to register a query. A query will contain all entities that meet the filter requirement.
     * No filters are added by default when you register a query so it will capture all entities.
@@ -165,4 +171,3 @@ trait IServerSystem[TSystem]
     componentField3: String
   ): IQuery | Null = js.native
 }
-

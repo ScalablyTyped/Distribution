@@ -10,9 +10,9 @@ common interface for abstracting a console ui
 | ------------------ | :-------------: |
 | Full name          | console-ui |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 9 |
 | # dependents       | 11 |
-| # downloads        | 5897982 |
+| # downloads        | 6543351 |
 | # stars            | 0 |
 
 ## Links

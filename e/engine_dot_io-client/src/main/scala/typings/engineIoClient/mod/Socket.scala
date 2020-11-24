@@ -16,17 +16,19 @@ import typings.std.ArrayBuffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("engine.io-client", "Socket")
 @js.native
 class Socket () extends js.Object {
+  
   var binaryType: js.UndefOr[arraybuffer | blob] = js.native
-  var protocol: js.UndefOr[Double] = js.native
+  
   /**
     * Disconnects the client.
     */
   def close(): this.type = js.native
+  
   /*
     * Fired upon disconnection. In compliance with the WebSocket API spec, this event may be fired even if the open event does not occur (i.e. due to connection error or close()).
     */
@@ -69,6 +71,9 @@ class Socket () extends js.Object {
     */
   @JSName("on")
   def on_upgradeError(ev: upgradeError, cb: js.Function1[/* err */ UpgradeError, Unit]): this.type = js.native
+  
+  var protocol: js.UndefOr[Double] = js.native
+  
   /**
     * Sends a message to the server
     */
@@ -77,4 +82,3 @@ class Socket () extends js.Object {
   def send(message: Message, opts: MessageOptions): this.type = js.native
   def send(message: Message, opts: MessageOptions, cb: js.Function0[Unit]): this.type = js.native
 }
-

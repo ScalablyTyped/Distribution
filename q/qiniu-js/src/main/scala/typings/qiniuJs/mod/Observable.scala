@@ -2,10 +2,11 @@ package typings.qiniuJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Observable extends js.Object {
+  
   /**
     * 订阅
     *
@@ -28,4 +29,3 @@ trait Observable extends js.Object {
   ): Subscription = js.native
   def subscribe(options: Observer): Subscription = js.native
 }
-

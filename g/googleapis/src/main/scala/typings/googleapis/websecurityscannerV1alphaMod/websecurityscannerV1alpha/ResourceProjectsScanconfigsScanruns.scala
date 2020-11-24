@@ -6,16 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1alpha", "websecurityscanner_v1alpha.Resource$Projects$Scanconfigs$Scanruns")
 @js.native
 class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var crawledUrls: ResourceProjectsScanconfigsScanrunsCrawledurls = js.native
+  
   var findingTypeStats: ResourceProjectsScanconfigsScanrunsFindingtypestats = js.native
+  
   var findings: ResourceProjectsScanconfigsScanrunsFindings = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.scanRuns.get
     * @desc Gets a ScanRun.
@@ -47,6 +52,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScanRun]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.scanRuns.list
     * @desc Lists ScanRuns under a given ScanConfig, in descending order of
@@ -81,6 +87,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListScanRunsResponse]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.scanRuns.stop
     * @desc Stops a ScanRun. The stopped ScanRun is returned.
@@ -114,4 +121,3 @@ class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
     callback: BodyResponseCallback[SchemaScanRun]
   ): Unit = js.native
 }
-

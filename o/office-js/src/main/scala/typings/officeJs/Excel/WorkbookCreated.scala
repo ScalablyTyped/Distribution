@@ -5,7 +5,7 @@ import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -15,9 +15,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WorkbookCreated extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorkbookCreated: RequestContext = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -27,10 +29,10 @@ trait WorkbookCreated extends ClientObject {
   def load(propertyNamesAndPaths: Expand): WorkbookCreated = js.native
   def load(propertyNames: String): WorkbookCreated = js.native
   def load(propertyNames: js.Array[String]): WorkbookCreated = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.WorkbookCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookCreatedData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): WorkbookCreatedData = js.native
 }
-

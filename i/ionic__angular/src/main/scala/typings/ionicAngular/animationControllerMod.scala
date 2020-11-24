@@ -3,18 +3,21 @@ package typings.ionicAngular
 import typings.ionicCore.animationInterfaceMod.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/providers/animation-controller", JSImport.Namespace)
 @js.native
 object animationControllerMod extends js.Object {
+  
   @js.native
   class AnimationController () extends js.Object {
+    
     /**
       * Create a new animation
       */
     def create(): Animation = js.native
     def create(animationId: String): Animation = js.native
+    
     /**
       * EXPERIMENTAL
       *
@@ -37,6 +40,4 @@ object animationControllerMod extends js.Object {
       progression: Double
     ): js.Array[Double] = js.native
   }
-  
 }
-

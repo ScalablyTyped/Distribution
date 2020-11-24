@@ -3,11 +3,12 @@ package typings.writePkg.mod
 import typings.typeFest.basicMod.JsonObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("write-pkg", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(data: JsonObject): js.Promise[Unit] = js.native
   def apply(data: JsonObject, options: Options): js.Promise[Unit] = js.native
   /**
@@ -30,6 +31,7 @@ object ^ extends js.Object {
   	*/
   def apply(path: String, data: JsonObject): js.Promise[Unit] = js.native
   def apply(path: String, data: JsonObject, options: Options): js.Promise[Unit] = js.native
+  
   def sync(data: JsonObject): Unit = js.native
   def sync(data: JsonObject, options: Options): Unit = js.native
   /**
@@ -51,4 +53,3 @@ object ^ extends js.Object {
   def sync(path: String, data: JsonObject): Unit = js.native
   def sync(path: String, data: JsonObject, options: Options): Unit = js.native
 }
-

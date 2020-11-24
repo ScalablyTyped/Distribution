@@ -3,11 +3,12 @@ package typings.aureliaTemplating.mod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "BindingLanguage")
 @js.native
 class BindingLanguage () extends js.Object {
+  
   /**
     * Creates an attribute behavior instruction.
     * @param resources The ViewResources for the view being compiled.
@@ -18,6 +19,7 @@ class BindingLanguage () extends js.Object {
     */
   def createAttributeInstruction(resources: ViewResources_, element: Element, info: js.Object): BehaviorInstruction = js.native
   def createAttributeInstruction(resources: ViewResources_, element: Element, info: js.Object, existingInstruction: js.Object): BehaviorInstruction = js.native
+  
   /**
     * Creates let expressions from a <let/> element
     * @param resources The ViewResources for the view being compiled
@@ -26,6 +28,7 @@ class BindingLanguage () extends js.Object {
     * @return the expression array created from the <let/> element
     */
   def createLetExpressions(resources: ViewResources_, element: Element): js.Array[LetExpression] = js.native
+  
   /**
     * Inspects an attribute for bindings.
     * @param resources The ViewResources for the view being compiled.
@@ -35,6 +38,7 @@ class BindingLanguage () extends js.Object {
     * @return An info object with the results of the inspection.
     */
   def inspectAttribute(resources: ViewResources_, elementName: String, attrName: String, attrValue: String): js.Object = js.native
+  
   /**
     * Parses the text for bindings.
     * @param resources The ViewResources for the view being compiled.
@@ -43,4 +47,3 @@ class BindingLanguage () extends js.Object {
     */
   def inspectTextContent(resources: ViewResources_, value: String): js.Object = js.native
 }
-

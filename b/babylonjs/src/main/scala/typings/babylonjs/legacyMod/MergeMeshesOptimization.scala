@@ -2,18 +2,17 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "MergeMeshesOptimization")
 @js.native
 class MergeMeshesOptimization ()
   extends typings.babylonjs.indexMod.MergeMeshesOptimization
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "MergeMeshesOptimization")
 @js.native
 object MergeMeshesOptimization extends js.Object {
-  var _UpdateSelectionTree: js.Any = js.native
+  
   /**
     * Gets or sets a boolean which defines if optimization octree has to be updated
     */
@@ -21,6 +20,7 @@ object MergeMeshesOptimization extends js.Object {
   /**
     * Gets or sets a boolean which defines if optimization octree has to be updated
     */
-  def UpdateSelectionTree(value: Boolean): js.Any = js.native
+  def UpdateSelectionTree_=(value: Boolean): Unit = js.native
+  
+  var _UpdateSelectionTree: js.Any = js.native
 }
-

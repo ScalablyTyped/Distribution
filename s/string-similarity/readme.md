@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-similarity
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Finds degree of similarity between strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.
@@ -10,9 +10,9 @@ Finds degree of similarity between strings, based on Dice's Coefficient, which i
 | ------------------ | :-------------: |
 | Full name          | string-similarity |
 | Keywords           | strings, similar, difference, similarity, compare, comparison, degree, match, matching, dice, levenshtein |
-| # releases         | 4 |
-| # dependents       | 146 |
-| # downloads        | 13361639 |
+| # releases         | 7 |
+| # dependents       | 184 |
+| # downloads        | 24744004 |
 | # stars            | 14 |
 
 ## Links

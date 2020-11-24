@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.ForceWebAudioApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new sound manager.
@@ -17,4 +17,3 @@ class SoundManager ()
   extends typings.playcanvas.pc.SoundManager {
   def this(options: ForceWebAudioApi) = this()
 }
-

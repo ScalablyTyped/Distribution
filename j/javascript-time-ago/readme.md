@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-International highly customizable relative date/time formatting
+Localized relative date/time formatting
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | javascript-time-ago |
 | Keywords           | time, ago, relative, format |
-| # releases         | 40 |
-| # dependents       | 23 |
-| # downloads        | 544378 |
+| # releases         | 37 |
+| # dependents       | 44 |
+| # downloads        | 1034443 |
 | # stars            | 3 |
 
 ## Links

@@ -5,13 +5,15 @@ import typings.googleAppsScript.GoogleAppsScript.Docs.Schema.BatchUpdateDocument
 import typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GoogleAppsScript.Docs.Collection")
 @js.native
 object Collection extends js.Object {
+  
   @js.native
   trait DocumentsCollection extends js.Object {
+    
     // Applies one or more updates to the document.
     // Each request is validated before
     // being applied. If any request is not valid, then the entire request will
@@ -30,15 +32,15 @@ object Collection extends js.Object {
     // the updates in your request are guaranteed to be applied together
     // atomically.
     def batchUpdate(resource: BatchUpdateDocumentRequest, documentId: String): BatchUpdateDocumentResponse = js.native
+    
     // Creates a blank document using the title given in the request. Other fields
     // in the request, including any provided content, are ignored.
     // Returns the created document.
     def create(resource: Document): Document = js.native
+    
     // Gets the latest version of the specified document.
     def get(documentId: String): Document = js.native
     // Gets the latest version of the specified document.
     def get(documentId: String, optionalArgs: js.Object): Document = js.native
   }
-  
 }
-

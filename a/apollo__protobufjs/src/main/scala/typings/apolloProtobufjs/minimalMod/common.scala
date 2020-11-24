@@ -4,12 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.INamespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/minimal", "common")
 @js.native
 object common extends js.Object {
-  def apply(name: String, json: StringDictionary[js.Any]): Unit = js.native
+  
+  def apply(name: String, json: StringDictionary[js.UndefOr[js.Any]]): Unit = js.native
+  
   /**
     * Gets the root definition of the specified common proto file.
     *
@@ -27,4 +29,3 @@ object common extends js.Object {
     */
   def get(file: String): INamespace | Null = js.native
 }
-

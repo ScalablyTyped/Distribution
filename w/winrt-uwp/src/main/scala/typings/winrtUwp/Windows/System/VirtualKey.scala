@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VirtualKey extends js.Object
-
 /** Specifies the values for each virtual key. */
 @JSGlobal("Windows.System.VirtualKey")
 @js.native
 object VirtualKey extends js.Object {
+  
   /** The letter "A" key. */
   @js.native
   sealed trait a extends VirtualKey
@@ -690,6 +690,4 @@ object VirtualKey extends js.Object {
   /** The letter "Z" key. */
   @js.native
   sealed trait z extends VirtualKey
-  
 }
-

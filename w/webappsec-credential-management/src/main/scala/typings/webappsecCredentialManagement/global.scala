@@ -6,11 +6,19 @@ import typings.std.RequestInit
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
+  def fetch(input: String): js.Promise[Response] = js.native
+  def fetch(input: String, init: RequestInit): js.Promise[Response] = js.native
+  def fetch(input: String, init: CMRequestInit): js.Promise[Response] = js.native
+  def fetch(input: Request): js.Promise[Response] = js.native
+  def fetch(input: Request, init: RequestInit): js.Promise[Response] = js.native
+  def fetch(input: Request, init: CMRequestInit): js.Promise[Response] = js.native
+  
   @js.native
   class FederatedCredential protected ()
     extends typings.webappsecCredentialManagement.FederatedCredential {
@@ -40,12 +48,4 @@ object global extends js.Object {
   @js.native
   abstract class SiteBoundCredential ()
     extends typings.webappsecCredentialManagement.SiteBoundCredential
-  
-  def fetch(input: String): js.Promise[Response] = js.native
-  def fetch(input: String, init: RequestInit): js.Promise[Response] = js.native
-  def fetch(input: String, init: CMRequestInit): js.Promise[Response] = js.native
-  def fetch(input: Request): js.Promise[Response] = js.native
-  def fetch(input: Request, init: RequestInit): js.Promise[Response] = js.native
-  def fetch(input: Request, init: CMRequestInit): js.Promise[Response] = js.native
 }
-

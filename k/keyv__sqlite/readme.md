@@ -10,9 +10,9 @@ SQLite storage adapter for Keyv
 | ------------------ | :-------------: |
 | Full name          | @keyv/sqlite |
 | Keywords           | sqlite, sql, keyv, storage, adapter, key, value, store, cache, ttl |
-| # releases         | 4 |
-| # dependents       | 18 |
-| # downloads        | 40925 |
+| # releases         | 3 |
+| # dependents       | 22 |
+| # downloads        | 67238 |
 | # stars            | 0 |
 
 ## Links

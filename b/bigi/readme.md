@@ -11,8 +11,8 @@ Big integers.
 | Full name          | bigi |
 | Keywords           | cryptography, math, bitcoin, arbitrary, precision, arithmetic, big, integer, int, number, biginteger, bigint, bignumber, decimal, float |
 | # releases         | 0 |
-| # dependents       | 358 |
-| # downloads        | 1615529 |
+| # dependents       | 389 |
+| # downloads        | 1627593 |
 | # stars            | 0 |
 
 ## Links

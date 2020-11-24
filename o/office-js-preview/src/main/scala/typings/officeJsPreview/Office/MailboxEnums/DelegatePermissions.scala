@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DelegatePermissions extends js.Object
-
 /**
   * This bit mask represents a delegate's permissions on a shared folder.
   *
@@ -19,6 +18,7 @@ sealed trait DelegatePermissions extends js.Object
 @JSGlobal("Office.MailboxEnums.DelegatePermissions")
 @js.native
 object DelegatePermissions extends js.Object {
+  
   /**
     * Delegate has permission to delete any items.
     */
@@ -54,6 +54,4 @@ object DelegatePermissions extends js.Object {
     */
   @js.native
   sealed trait Write extends DelegatePermissions
-  
 }
-

@@ -6,18 +6,31 @@ import typings.three.constantsMod.TextureDataType
 import typings.three.constantsMod.TextureFilter
 import typings.three.constantsMod.Wrapping
 import typings.three.textureMod.Texture
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/textures/DepthTexture", JSImport.Namespace)
 @js.native
 object depthTextureMod extends js.Object {
+  
   @js.native
   class DepthTexture protected () extends Texture {
+    /**
+    	 * @param width
+    	 * @param height
+    	 * @param type
+    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+    	 * @param [magFilter=THREE.NearestFilter]
+    	 * @param [minFilter=THREE.NearestFilter]
+    	 * @param [anisotropy=1]
+    	 */
     def this(
       width: Double,
-      heighht: Double,
+      height: Double,
       `type`: js.UndefOr[TextureDataType],
       mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
@@ -26,9 +39,10 @@ object depthTextureMod extends js.Object {
       minFilter: js.UndefOr[TextureFilter],
       anisotropy: js.UndefOr[Double]
     ) = this()
+    
     @JSName("image")
     var image_DepthTexture: HeightWidth = js.native
+    
+    val isDepthTexture: `true` = js.native
   }
-  
 }
-

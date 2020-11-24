@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Fog")
 @js.native
@@ -21,4 +21,3 @@ class Fog protected ()
   def this(color: typings.three.colorMod.Color, near: js.UndefOr[scala.Nothing], far: Double) = this()
   def this(color: typings.three.colorMod.Color, near: Double, far: Double) = this()
 }
-

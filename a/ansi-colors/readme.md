@@ -10,9 +10,9 @@ Easily add ANSI colors to your text and symbols in the terminal. A faster drop-i
 | ------------------ | :-------------: |
 | Full name          | ansi-colors |
 | Keywords           | ansi, bgblack, bgBlack, bgblue, bgBlue, bgcyan, bgCyan, bggreen, bgGreen, bgmagenta, bgMagenta, bgred, bgRed, bgwhite, bgWhite, bgyellow, bgYellow, black, blue, bold, clorox, colors, cyan, dim, gray, green, grey, hidden, inverse, italic, kleur, magenta, red, reset, strikethrough, underline, white, yellow |
-| # releases         | 24 |
-| # dependents       | 439 |
-| # downloads        | 309908595 |
+| # releases         | 10 |
+| # dependents       | 605 |
+| # downloads        | 565795119 |
 | # stars            | 3 |
 
 ## Links

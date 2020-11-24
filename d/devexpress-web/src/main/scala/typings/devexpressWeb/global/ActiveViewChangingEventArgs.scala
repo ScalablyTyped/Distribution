@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client-side ASPxClientScheduler.ActiveViewChanging event.
@@ -21,4 +21,3 @@ class ActiveViewChangingEventArgs protected ()
     newView: typings.devexpressWeb.ASPxSchedulerViewType
   ) = this()
 }
-

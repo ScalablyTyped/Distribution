@@ -2,10 +2,11 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NodesRef extends js.Object {
+  
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) NodesRef.boundingClientRect(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.boundingClientRect.html)
   *
   * 添加节点的布局位置的查询请求。相对于显示区域，以像素为单位。其功能类似于 DOM 的 `getBoundingClientRect`。返回 `NodesRef` 对应的 `SelectorQuery`。
@@ -48,6 +49,7 @@ trait NodesRef extends js.Object {
     /** 回调函数，在执行 `SelectorQuery.exec` 方法后，节点信息会在 `callback` 中返回。 */
   callback: BoundingClientRectCallback
   ): SelectorQuery = js.native
+  
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) NodesRef.context(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.context.html)
   *
   * 添加节点的 Context 对象查询请求。目前支持 [VideoContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/video/VideoContext.html)、[CanvasContext](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html)、[LivePlayerContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePlayerContext.html)、[EditorContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.html)和 [MapContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/map/MapContext.html) 的获取。
@@ -69,6 +71,7 @@ trait NodesRef extends js.Object {
   def context(): SelectorQuery = js.native
   def context(/** 回调函数，在执行 `SelectorQuery.exec` 方法后，返回节点信息。 */
   callback: ContextCallback): SelectorQuery = js.native
+  
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) NodesRef.fields(Object fields, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.fields.html)
   *
   * 获取节点的相关信息。需要获取的字段在fields中指定。返回值是 `nodesRef` 对应的 `selectorQuery`
@@ -110,6 +113,7 @@ trait NodesRef extends js.Object {
   def fields(fields: Fields): SelectorQuery = js.native
   def fields(fields: Fields, /** 回调函数 */
   callback: FieldsCallback): SelectorQuery = js.native
+  
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) NodesRef.node(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.node.html)
   *
   * 获取 Node 节点实例。目前支持 [Canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 的获取。
@@ -131,6 +135,7 @@ trait NodesRef extends js.Object {
   def node(): SelectorQuery = js.native
   def node(/** 回调函数，在执行 `SelectorQuery.exec` 方法后，返回节点信息。 */
   callback: NodeCallback): SelectorQuery = js.native
+  
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) NodesRef.scrollOffset(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.scrollOffset.html)
   *
   * 添加节点的滚动位置查询请求。以像素为单位。节点必须是 `scroll-view` 或者 `viewport`，返回 `NodesRef` 对应的 `SelectorQuery`。
@@ -154,4 +159,3 @@ trait NodesRef extends js.Object {
   def scrollOffset(/** 回调函数，在执行 `SelectorQuery.exec` 方法后，节点信息会在 `callback` 中返回。 */
   callback: ScrollOffsetCallback): SelectorQuery = js.native
 }
-

@@ -11,8 +11,8 @@ An email address parser based on rfc5322
 | Full name          | email-addresses |
 | Keywords           | email address, parser, rfc5322, 5322 |
 | # releases         | 5 |
-| # dependents       | 67 |
-| # downloads        | 4593921 |
+| # dependents       | 79 |
+| # downloads        | 9972320 |
 | # stars            | 6 |
 
 ## Links

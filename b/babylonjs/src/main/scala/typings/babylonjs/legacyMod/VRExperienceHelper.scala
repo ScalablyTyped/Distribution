@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "VRExperienceHelper")
 @js.native
@@ -22,18 +22,18 @@ class VRExperienceHelper protected ()
   webVROptions: VRExperienceHelperOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "VRExperienceHelper")
 @js.native
 object VRExperienceHelper extends js.Object {
+  
   /**
     * Speed Constant Teleportation Mode
     */
   val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
+  
   /**
     * Time Constant Teleportation Mode
     */
   val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
 }
-

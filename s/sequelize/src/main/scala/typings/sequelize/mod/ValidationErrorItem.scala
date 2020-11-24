@@ -5,7 +5,7 @@ import typings.std.Error
 import typings.std.ErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidationErrorItem
@@ -27,11 +27,13 @@ Instantiable4[
       /* value */ String, 
       ValidationErrorItem
     ] {
+  
   /** The field that triggered the validation error */
   var path: String = js.native
+  
   /** The type of the validation error */
   var `type`: String = js.native
+  
   /** The value that generated the error */
   var value: String = js.native
 }
-

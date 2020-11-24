@@ -4,7 +4,7 @@ import typings.chrome.chrome.commands.Command
 import typings.chrome.chrome.commands.CommandEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Commands
@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.commands")
 @js.native
 object commands extends js.Object {
-  var onCommand: CommandEvent = js.native
+  
   def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = js.native
+  
+  var onCommand: CommandEvent = js.native
 }
-

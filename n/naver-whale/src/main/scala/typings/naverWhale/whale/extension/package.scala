@@ -2,9 +2,10 @@ package typings.naverWhale.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object extension {
+  
   type OnRequestEvent = typings.chrome.chrome.events.Event[
     (js.Function3[
       /* request */ js.Any, 

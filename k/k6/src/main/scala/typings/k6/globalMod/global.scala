@@ -5,28 +5,32 @@ import typings.k6.k6Strings.b
 import typings.k6.mod.bytes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Available without importing
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * Current iteration number.
     * https://k6.io/docs/using-k6/execution-context-variables
     */
   val __ITER: Double = js.native
+  
   /**
     * Current VU number.
     * https://k6.io/docs/using-k6/execution-context-variables
     */
   val __VU: Double = js.native
+  
   // === VU logic only ===
   // ---------------------
   /**
     * Interface to system console.
     */
   var console: Console = js.native
+  
   // === Init context only ===
   // -------------------------
   /**
@@ -64,6 +68,7 @@ object global extends js.Object {
     */
   @JSName("open")
   def open_b(filePath: String, mode: b): bytes = js.native
+  
   // === Init context and VU logic ===
   // ---------------------------------
   /**
@@ -72,6 +77,4 @@ object global extends js.Object {
     */
   @js.native
   object __ENV extends /* name */ StringDictionary[String]
-  
 }
-

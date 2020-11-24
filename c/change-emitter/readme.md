@@ -10,9 +10,9 @@ Listen for changes. Like an event emitter that only emits a single event type. R
 | ------------------ | :-------------: |
 | Full name          | change-emitter |
 | Keywords           | change, event, emitter |
-| # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 58598574 |
+| # releases         | 0 |
+| # dependents       | 18 |
+| # downloads        | 60603922 |
 | # stars            | 1 |
 
 ## Links

@@ -14,7 +14,7 @@ import typings.officeJs.officeJsStrings.Polynomial
 import typings.officeJs.officeJsStrings.Power
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -24,11 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChartTrendlineCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_ChartTrendlineCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[ChartTrendline] = js.native
+  
   /**
     * Adds a new trendline to trendline collection.
     *
@@ -50,12 +46,18 @@ trait ChartTrendlineCollection extends ClientObject {
   def add_Polynomial(`type`: Polynomial): ChartTrendline = js.native
   @JSName("add")
   def add_Power(`type`: Power): ChartTrendline = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartTrendlineCollection: RequestContext = js.native
+  
   /**
     * Returns the number of trendlines in the collection.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Get trendline object by index, which is the insertion order in items array.
     *
@@ -64,6 +66,10 @@ trait ChartTrendlineCollection extends ClientObject {
     * @param index Represents the insertion order in items array.
     */
   def getItem(index: Double): ChartTrendline = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[ChartTrendline] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -74,10 +80,10 @@ trait ChartTrendlineCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): ChartTrendlineCollection = js.native
   def load(propertyNames: String): ChartTrendlineCollection = js.native
   def load(propertyNames: js.Array[String]): ChartTrendlineCollection = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.ChartTrendlineCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): ChartTrendlineCollectionData = js.native
 }
-

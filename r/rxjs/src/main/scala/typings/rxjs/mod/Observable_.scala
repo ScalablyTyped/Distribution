@@ -7,7 +7,7 @@ import typings.rxjs.typesMod.SubscribableOrPromise
 import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "Observable")
 @js.native
@@ -25,11 +25,11 @@ class Observable_[T] () extends Observable[T] {
         TeardownLogic
       ]) = this()
 }
-
 /* static members */
 @JSImport("rxjs", "Observable")
 @js.native
 object Observable_ extends js.Object {
+  
   /**
     * Creates a new cold Observable by calling the Observable constructor
     * @static true
@@ -41,22 +41,7 @@ object Observable_ extends js.Object {
     * @deprecated use new Observable() instead
     */
   var create: js.Function = js.native
-  /**
-    * @nocollapse
-    * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-    */
-  @JSName("if")
-  var if_Original: FnCall = js.native
-  /**
-    * @nocollapse
-    * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
-    */
-  @JSName("throw")
-  var throw_Original: js.Function2[
-    /* error */ js.Any, 
-    /* scheduler */ js.UndefOr[SchedulerLike], 
-    Observable[scala.Nothing]
-  ] = js.native
+  
   /**
     * @nocollapse
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
@@ -70,9 +55,25 @@ object Observable_ extends js.Object {
   def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
   /**
     * @nocollapse
+    * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
+    */
+  @JSName("if")
+  var if_Original: FnCall = js.native
+  
+  /**
+    * @nocollapse
     * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
     */
   def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
   def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+  /**
+    * @nocollapse
+    * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
+    */
+  @JSName("throw")
+  var throw_Original: js.Function2[
+    /* error */ js.Any, 
+    /* scheduler */ js.UndefOr[SchedulerLike], 
+    Observable[scala.Nothing]
+  ] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.node.httpMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("http", "Server")
 @js.native
@@ -13,4 +13,3 @@ class Server ()
   def this(requestListener: RequestListener) = this()
   def this(options: ServerOptions, requestListener: RequestListener) = this()
 }
-

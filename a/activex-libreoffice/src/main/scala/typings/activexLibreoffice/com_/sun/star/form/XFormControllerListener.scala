@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to be notified when the activation status of a {@link FormController} changes.
@@ -15,11 +15,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFormControllerListener extends XEventListener {
+  
   /**
     * is invoked when a control of the controller gained the focus and the controller was not previously activated.
     * @param rEvent the event happened.
     */
   def formActivated(rEvent: EventObject): Unit = js.native
+  
   /**
     * is invoked when a control of the "XFormController" lost the focus and no control of the controller received the focus. In other words, no control of
     * the controller owns the focus.
@@ -27,8 +29,8 @@ trait XFormControllerListener extends XEventListener {
     */
   def formDeactivated(rEvent: EventObject): Unit = js.native
 }
-
 object XFormControllerListener {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -41,22 +43,26 @@ object XFormControllerListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), formActivated = js.Any.fromFunction1(formActivated), formDeactivated = js.Any.fromFunction1(formDeactivated), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XFormControllerListener]
   }
+  
   @scala.inline
   implicit class XFormControllerListenerOps[Self <: XFormControllerListener] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFormActivated(value: EventObject => Unit): Self = this.set("formActivated", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFormDeactivated(value: EventObject => Unit): Self = this.set("formDeactivated", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -4,10 +4,11 @@ import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(message: String): Unit = js.native
   def apply(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def apply(
@@ -78,4 +79,3 @@ trait FnCall extends js.Object {
     timestamp: Double
   ): Unit = js.native
 }
-

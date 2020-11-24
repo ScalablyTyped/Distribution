@@ -2,14 +2,14 @@ package typings.winrt.Windows.Web
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WebErrorStatus extends js.Object
-
 @JSGlobal("Windows.Web.WebErrorStatus")
 @js.native
 object WebErrorStatus extends js.Object {
+  
   @js.native
   sealed trait badGateway extends WebErrorStatus
   
@@ -168,6 +168,4 @@ object WebErrorStatus extends js.Object {
   
   @js.native
   sealed trait useProxy extends WebErrorStatus
-  
 }
-

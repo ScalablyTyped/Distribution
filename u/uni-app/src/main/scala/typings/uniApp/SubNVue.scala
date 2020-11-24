@@ -18,10 +18,11 @@ import typings.uniApp.uniAppStrings.`zoom-in`
 import typings.uniApp.uniAppStrings.`zoom-out`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SubNVue extends js.Object {
+  
   /**
     * 隐藏原生子窗体
     */
@@ -42,20 +43,24 @@ trait SubNVue extends js.Object {
   def hide_zoomfadein(options: `zoom-fade-in`): Unit = js.native
   @JSName("hide")
   def hide_zoomin(options: `zoom-in`): Unit = js.native
+  
   /**
     * 监听消息
     */
   def onMessage(): Unit = js.native
   def onMessage(success: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 发送消息
     */
   def postMessage(): Unit = js.native
+  
   /**
     * 设置原生子窗体的样式
     */
   def setStyle(): Unit = js.native
   def setStyle(options: SubNVuesSetStyleOptions): Unit = js.native
+  
   /**
     * 显示原生子窗体
     */
@@ -77,4 +82,3 @@ trait SubNVue extends js.Object {
   @JSName("show")
   def show_zoomout(options: `zoom-out`): Unit = js.native
 }
-

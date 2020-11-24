@@ -2,10 +2,11 @@ package typings.d3Force.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */] extends Force[NodeDatum, LinkDatum] {
+  
   /**
     * Return the current distance accessor, which defaults to implying a default distance of 30.
     */
@@ -37,6 +38,7 @@ trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: Simulat
     * @param distance The constant distance to be used for all links.
     */
   def distance(distance: Double): this.type = js.native
+  
   /**
     * Return the current node id accessor, which defaults to the numeric node.index.
     */
@@ -62,14 +64,16 @@ trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: Simulat
   def id(
     id: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodesData */ js.Array[NodeDatum], String]
   ): this.type = js.native
+  
   /**
-    * Assign the array of nodes to this force. This method is called when a force is bound to a simulation via simulation.force
+    * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
     * and when the simulation’s nodes change via simulation.nodes.
     *
     * A force may perform necessary work during initialization, such as evaluating per-node parameters, to avoid repeatedly performing work during each application of the force.
     */
   @JSName("initialize")
-  def initialize_MForceLink_(nodes: js.Array[NodeDatum]): Unit = js.native
+  def initialize_MForceLink_(nodes: js.Array[NodeDatum], random: js.Function0[Double]): Unit = js.native
+  
   /**
     * Return the current iteration count which defaults to 1.
     */
@@ -83,6 +87,7 @@ trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: Simulat
     * @param iterations Number of iterations.
     */
   def iterations(iterations: Double): this.type = js.native
+  
   /**
     * Return the current array of links, which defaults to the empty array.
     *
@@ -106,6 +111,7 @@ trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: Simulat
     * @param links An array of link data.
     */
   def links(links: js.Array[LinkDatum]): this.type = js.native
+  
   /**
     * Return the current strength accessor.
     * For details regarding the default behavior see: {@link https://github.com/d3/d3-force#link_strength}
@@ -139,4 +145,3 @@ trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: Simulat
     */
   def strength(strength: Double): this.type = js.native
 }
-

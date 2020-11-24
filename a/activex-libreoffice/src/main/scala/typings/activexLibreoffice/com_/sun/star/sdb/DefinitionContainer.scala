@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a container which provides access to database related definitions like commands, forms, and reports.
@@ -31,8 +31,8 @@ trait DefinitionContainer
      with XEnumerationAccess
      with XRefreshable
      with XSingleServiceFactory
-
 object DefinitionContainer {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -62,4 +62,3 @@ object DefinitionContainer {
     __obj.asInstanceOf[DefinitionContainer]
   }
 }
-

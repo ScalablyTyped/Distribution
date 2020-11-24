@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Calendars")
 @js.native
 class ResourceCalendars protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * calendar.calendars.clear
     * @desc Clears a primary calendar. This operation deletes all events
@@ -38,6 +38,9 @@ class ResourceCalendars protected () extends js.Object {
   ): Unit = js.native
   def clear(params: ParamsResourceCalendarsClear, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def clear(params: ParamsResourceCalendarsClear, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * calendar.calendars.delete
     * @desc Deletes a secondary calendar. Use calendars.clear for clearing all
@@ -67,6 +70,7 @@ class ResourceCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * calendar.calendars.get
     * @desc Returns metadata for a calendar.
@@ -95,6 +99,7 @@ class ResourceCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendar]
   ): Unit = js.native
+  
   /**
     * calendar.calendars.insert
     * @desc Creates a secondary calendar.
@@ -123,6 +128,7 @@ class ResourceCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendar]
   ): Unit = js.native
+  
   /**
     * calendar.calendars.patch
     * @desc Updates metadata for a calendar. This method supports patch
@@ -153,6 +159,7 @@ class ResourceCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendar]
   ): Unit = js.native
+  
   /**
     * calendar.calendars.update
     * @desc Updates metadata for a calendar.
@@ -183,4 +190,3 @@ class ResourceCalendars protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCalendar]
   ): Unit = js.native
 }
-

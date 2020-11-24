@@ -11,8 +11,8 @@ React.js toastr component
 | Full name          | react-toastr |
 | Keywords           | React.js, React, react-component, toastr, alert, toast, message, popup, jQuery |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 334918 |
+| # dependents       | 38 |
+| # downloads        | 384134 |
 | # stars            | 6 |
 
 ## Links

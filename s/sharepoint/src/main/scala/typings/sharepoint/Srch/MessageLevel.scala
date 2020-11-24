@@ -2,14 +2,14 @@ package typings.sharepoint.Srch
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MessageLevel extends js.Object
-
 @JSGlobal("Srch.MessageLevel")
 @js.native
 object MessageLevel extends js.Object {
+  
   @js.native
   sealed trait error extends MessageLevel
   
@@ -18,6 +18,4 @@ object MessageLevel extends js.Object {
   
   @js.native
   sealed trait warning extends MessageLevel
-  
 }
-

@@ -8,18 +8,18 @@ import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.UnicodeEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides helper methods for reading and writing a file using the absolute path or URI of the file. */
 @JSGlobal("Windows.Storage.PathIO")
 @js.native
 abstract class PathIO ()
   extends typings.winrtUwp.Windows.Storage.PathIO
-
 /* static members */
 @JSGlobal("Windows.Storage.PathIO")
 @js.native
 object PathIO extends js.Object {
+  
   /**
     * Appends lines of text to the file at the specified path or URI.
     * @param absolutePath The path or URI of the file that the lines are appended to.
@@ -35,6 +35,7 @@ object PathIO extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def appendLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Appends text to the file at the specified path or URI.
     * @param absolutePath The path of the file that the text is appended to.
@@ -50,12 +51,14 @@ object PathIO extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def appendTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Reads the contents of the file at the specified path or URI and returns a buffer.
     * @param absolutePath The path of the file to read.
     * @return When this method completes, it returns an object (type IBuffer ) that represents the contents of the file.
     */
   def readBufferAsync(absolutePath: String): IPromiseWithIAsyncOperation[IBuffer] = js.native
+  
   /**
     * Reads the contents of the file at the specified path or URI and returns lines of text.
     * @param absolutePath The path of the file to read.
@@ -69,6 +72,7 @@ object PathIO extends js.Object {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   def readLinesAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[_]] = js.native
+  
   /**
     * Reads the contents of the file at the specified path or URI and returns text.
     * @param absolutePath The path of the file to read.
@@ -82,6 +86,7 @@ object PathIO extends js.Object {
     * @return When this method completes successfully, it returns the contents of the file as a text string.
     */
   def readTextAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[String] = js.native
+  
   /**
     * Writes data from a buffer to the file at the specified path or URI.
     * @param absolutePath The path of the file that the data is written to.
@@ -89,6 +94,7 @@ object PathIO extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def writeBufferAsync(absolutePath: String, buffer: IBuffer): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Writes a single byte of data to the file at the specified path or URI.
     * @param absolutePath The path of the file that the byte is written to.
@@ -96,6 +102,7 @@ object PathIO extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def writeBytesAsync(absolutePath: String, buffer: js.Array[Double]): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Writes lines of text to the file at the specified path or URI.
     * @param absolutePath The path of the file that the lines are written to.
@@ -111,6 +118,7 @@ object PathIO extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def writeLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Writes text to the file at the specified path or URI.
     * @param absolutePath The path of the file that the text is written to.
@@ -127,4 +135,3 @@ object PathIO extends js.Object {
     */
   def writeTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.reactMdAlert.messageQueueContextMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactMdAlert.reactMdAlertStrings.restart
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.reactMdAlert.reactMdAlertStrings.allow
 */
 trait DuplicateBehavior extends js.Object
-
 object DuplicateBehavior {
+  
   @scala.inline
   def allow: typings.reactMdAlert.reactMdAlertStrings.allow = "allow".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.allow]
+  
   @scala.inline
   def prevent: typings.reactMdAlert.reactMdAlertStrings.prevent = "prevent".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.prevent]
+  
   @scala.inline
   def restart: typings.reactMdAlert.reactMdAlertStrings.restart = "restart".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.restart]
 }
-

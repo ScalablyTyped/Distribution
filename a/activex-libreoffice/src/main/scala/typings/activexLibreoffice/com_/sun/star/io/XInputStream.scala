@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the basic interface to read data from a stream.
@@ -15,12 +15,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XInputStream extends XInterface {
+  
   /**
     * states how many bytes can be read or skipped without blocking.
     *
     * Note: This method offers no information on whether the EOF has been reached.
     */
   def available(): Double = js.native
+  
   /**
     * closes the stream.
     *
@@ -28,6 +30,7 @@ trait XInputStream extends XInterface {
     * released during this call. Thus not calling this method would result in a leak of memory or external resources.)
     */
   def closeInput(): Unit = js.native
+  
   /**
     * reads the specified number of bytes in the given sequence.
     *
@@ -37,6 +40,7 @@ trait XInputStream extends XInterface {
     * @param nBytesToRead the total number of bytes to read
     */
   def readBytes(aData: js.Array[SeqEquiv[Double]], nBytesToRead: Double): Double = js.native
+  
   /**
     * reads the available number of bytes, at maximum **nMaxBytesToRead** .
     *
@@ -48,6 +52,7 @@ trait XInputStream extends XInterface {
     * @see com.sun.star.io.XInputStream.readBytes
     */
   def readSomeBytes(aData: js.Array[SeqEquiv[Double]], nMaxBytesToRead: Double): Double = js.native
+  
   /**
     * skips the next **nBytesToSkip** bytes (must be positive).
     *
@@ -56,8 +61,8 @@ trait XInputStream extends XInterface {
     */
   def skipBytes(nBytesToSkip: Double): Unit = js.native
 }
-
 object XInputStream {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -72,28 +77,35 @@ object XInputStream {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), queryInterface = js.Any.fromFunction1(queryInterface), readBytes = js.Any.fromFunction2(readBytes), readSomeBytes = js.Any.fromFunction2(readSomeBytes), release = js.Any.fromFunction0(release), skipBytes = js.Any.fromFunction1(skipBytes))
     __obj.asInstanceOf[XInputStream]
   }
+  
   @scala.inline
   implicit class XInputStreamOps[Self <: XInputStream] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAvailable(value: () => Double): Self = this.set("available", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCloseInput(value: () => Unit): Self = this.set("closeInput", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setReadBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = this.set("readBytes", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = this.set("readSomeBytes", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSkipBytes(value: Double => Unit): Self = this.set("skipBytes", js.Any.fromFunction1(value))
   }
-  
 }
-

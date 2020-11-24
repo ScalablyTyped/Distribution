@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember-feature-flags
 
-Typings are for version 4.0
+Typings are for version 6.0
 
 ## Library description:
 Feature flags/toggles for Ember apps
@@ -10,9 +10,9 @@ Feature flags/toggles for Ember apps
 | ------------------ | :-------------: |
 | Full name          | ember-feature-flags |
 | Keywords           | ember-addon, feature-flag, feature-toggle, features-switch |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 370553 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 419262 |
 | # stars            | 9 |
 
 ## Links

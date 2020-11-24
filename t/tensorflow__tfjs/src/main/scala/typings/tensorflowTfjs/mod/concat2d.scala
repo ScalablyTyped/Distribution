@@ -1,11 +1,11 @@
 package typings.tensorflowTfjs.mod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "concat2d")
 @js.native
@@ -13,4 +13,3 @@ object concat2d
   extends TopLevel[
       js.Function2[/* tensors */ js.Array[Tensor2D | TensorLike], /* axis */ Double, Tensor2D]
     ]
-

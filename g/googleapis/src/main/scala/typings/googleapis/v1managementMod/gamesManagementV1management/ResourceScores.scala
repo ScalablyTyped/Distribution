@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Scores")
 @js.native
 class ResourceScores protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.scores.reset
     * @desc Resets scores for the leaderboard with the given ID for the
@@ -43,6 +45,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayerScoreResetResponse]
   ): Unit = js.native
+  
   /**
     * gamesManagement.scores.resetAll
     * @desc Resets all scores for all leaderboards for the currently
@@ -75,6 +78,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayerScoreResetAllResponse]
   ): Unit = js.native
+  
   /**
     * gamesManagement.scores.resetAllForAllPlayers
     * @desc Resets scores for all draft leaderboards for all players. This
@@ -103,6 +107,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.scores.resetForAllPlayers
     * @desc Resets scores for the leaderboard with the given ID for all
@@ -133,6 +138,7 @@ class ResourceScores protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.scores.resetMultipleForAllPlayers
     * @desc Resets scores for the leaderboards with the given IDs for all
@@ -164,4 +170,3 @@ class ResourceScores protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ return a throttled function
 | ------------------ | :-------------: |
 | Full name          | just-throttle |
 | Keywords           | function, throttle, no-dependencies, just |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 100761 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 140799 |
 | # stars            | 0 |
 
 ## Links

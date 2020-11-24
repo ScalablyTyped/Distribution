@@ -5,7 +5,7 @@ import typings.tstl.icontainerMod.IContainer.Iterator
 import typings.tstl.icontainerMod.IContainer.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecol", "CollectionEvent")
 @js.native
@@ -13,4 +13,3 @@ class CollectionEvent[T, SourceT /* <: IContainer[T, SourceT, IteratorT, Reverse
   extends typings.ecol.collectionEventMod.CollectionEvent[T, SourceT, IteratorT, ReverseT] {
   def this(`type`: String, first: IteratorT, last: IteratorT) = this()
 }
-

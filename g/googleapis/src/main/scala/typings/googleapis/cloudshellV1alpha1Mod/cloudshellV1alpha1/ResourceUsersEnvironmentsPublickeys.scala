@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudshell/v1alpha1", "cloudshell_v1alpha1.Resource$Users$Environments$Publickeys")
 @js.native
 class ResourceUsersEnvironmentsPublickeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudshell.users.environments.publicKeys.create
     * @desc Adds a public SSH key to an environment, allowing clients with the
@@ -48,6 +50,7 @@ class ResourceUsersEnvironmentsPublickeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPublicKey]
   ): Unit = js.native
+  
   /**
     * cloudshell.users.environments.publicKeys.delete
     * @desc Removes a public SSH key from an environment. Clients will no
@@ -82,4 +85,3 @@ class ResourceUsersEnvironmentsPublickeys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

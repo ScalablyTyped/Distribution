@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/people/v1", "people_v1.Resource$People")
 @js.native
 class ResourcePeople protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var connections: ResourcePeopleConnections = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * people.people.createContact
     * @desc Create a new contact and return the person resource for that
@@ -44,6 +47,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerson]
   ): Unit = js.native
+  
   /**
     * people.people.deleteContact
     * @desc Delete a contact person. Any non-contact data will not be deleted.
@@ -72,6 +76,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * people.people.get
     * @desc Provides information about a person by specifying a resource name.
@@ -104,6 +109,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerson]
   ): Unit = js.native
+  
   /**
     * people.people.getBatchGet
     * @desc Provides information about a list of specific people by specifying
@@ -137,6 +143,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetPeopleResponse]
   ): Unit = js.native
+  
   /**
     * people.people.updateContact
     * @desc Update contact data for an existing contact person. Any non-contact
@@ -176,4 +183,3 @@ class ResourcePeople protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPerson]
   ): Unit = js.native
 }
-

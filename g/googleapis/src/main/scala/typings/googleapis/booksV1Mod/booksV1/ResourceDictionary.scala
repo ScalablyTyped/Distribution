@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Dictionary")
 @js.native
 class ResourceDictionary protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.dictionary.listOfflineMetadata
     * @desc Returns a list of offline dictionary metadata available
@@ -45,4 +47,3 @@ class ResourceDictionary protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMetadata]
   ): Unit = js.native
 }
-

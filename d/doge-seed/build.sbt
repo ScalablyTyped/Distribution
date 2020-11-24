@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "doge-seed"
-version := "1.0-dt-20190113Z-501538"
+version := "1.0-dt-20190113Z-8b53c1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

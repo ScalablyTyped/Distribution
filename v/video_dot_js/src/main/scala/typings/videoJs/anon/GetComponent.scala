@@ -29,7 +29,7 @@ import typings.videoJs.videoJsStrings.spacer_
 import typings.videoJs.videoJsStrings.timeTooltip_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetComponent
@@ -58,6 +58,7 @@ Instantiable1[/* player */ Player, Component]
       /* ready */ ReadyCallback, 
       Component
     ] {
+  
   def getComponent(name: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
   /**
     * Get a `Component` based on the name it was registered with.
@@ -116,6 +117,7 @@ Instantiable1[/* player */ Player, Component]
   def getComponent_spacer(name: spacer_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spacer */ js.Any = js.native
   @JSName("getComponent")
   def getComponent_timeTooltip(name: timeTooltip_): /* import warning: importer.ImportType#apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
+  
   /**
     * Register a `Component` with `videojs` given the name and the component.
     *
@@ -136,4 +138,3 @@ Instantiable1[/* player */ Player, Component]
     */
   def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = js.native
 }
-

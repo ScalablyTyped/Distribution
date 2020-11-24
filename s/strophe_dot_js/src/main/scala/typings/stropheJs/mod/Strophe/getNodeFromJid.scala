@@ -2,11 +2,12 @@ package typings.stropheJs.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe.js", "Strophe.getNodeFromJid")
 @js.native
 object getNodeFromJid extends js.Object {
+  
   /** Function: getNodeFromJid
     *  Get the node portion of a JID String.
     *
@@ -18,4 +19,3 @@ object getNodeFromJid extends js.Object {
     */
   def apply(jid: String): String = js.native
 }
-

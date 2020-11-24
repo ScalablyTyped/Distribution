@@ -11,8 +11,8 @@ Single function that return the sha1sum. Installing this is just a little bit qu
 | Full name          | shasum |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 88 |
-| # downloads        | 24950138 |
+| # dependents       | 90 |
+| # downloads        | 29773644 |
 | # stars            | 4 |
 
 ## Links

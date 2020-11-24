@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FileProtectionStatus extends js.Object
-
 /** Describes the enterprise protection state of a file or folder. */
 @JSGlobal("Windows.Security.EnterpriseData.FileProtectionStatus")
 @js.native
 object FileProtectionStatus extends js.Object {
+  
   /** The keys to access the protected item have been dropped while the device is locked. */
   @js.native
   sealed trait accessSuspended extends FileProtectionStatus
@@ -54,6 +54,4 @@ object FileProtectionStatus extends js.Object {
   /** The item is not protected using enterprise protection. */
   @js.native
   sealed trait unprotected extends FileProtectionStatus
-  
 }
-

@@ -3,11 +3,13 @@ package typings.nodeSql2.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Queryable[T] extends Executable {
+  
   def delete(): ModifyingQuery = js.native
+  
   def select(star: Column[Unit, Unit]): Query[T] = js.native
   def select[U](nodesOrTables: js.Any*): Query[U] = js.native
   def select[N1 /* <: String */, T1, N2 /* <: String */, T2](n1: Column[N1, T1], n2: Column[N2, T2]): Query[typings.nodeSql2.nodeSql2Strings.Queryable with TopLevel[js.Any]] = js.native
@@ -18,6 +20,6 @@ trait Queryable[T] extends Executable {
   {[ N in N1 ]: T1}
     */ typings.nodeSql2.nodeSql2Strings.Queryable with TopLevel[js.Any]
   ] = js.native
+  
   def where(nodes: js.Any*): Query[T] = js.native
 }
-

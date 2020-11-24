@@ -4,7 +4,7 @@ import typings.tstl.frontInsertIteratorMod.FrontInsertIterator.ValueType
 import typings.tstl.ipushfrontMod.IPushFront
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "FrontInsertIterator")
 @js.native
@@ -17,4 +17,3 @@ class FrontInsertIterator[Source /* <: IPushFront[ValueType[Source]] */] protect
     */
   def this(source: Source) = this()
 }
-

@@ -2,10 +2,9 @@ package typings.sharepoint.global.CUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.ToolbarBuildOptions")
 @js.native
 class ToolbarBuildOptions ()
   extends typings.sharepoint.CUI.BuildOptions
-

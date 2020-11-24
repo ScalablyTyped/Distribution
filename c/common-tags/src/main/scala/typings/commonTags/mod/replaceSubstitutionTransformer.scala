@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("common-tags", "replaceSubstitutionTransformer")
 @js.native
 object replaceSubstitutionTransformer extends js.Object {
+  
   def apply(replaceWhat: String, replaceWith: String): TemplateTransformer[StringDictionary[_]] = js.native
   def apply(
     replaceWhat: String,
@@ -20,4 +21,3 @@ object replaceSubstitutionTransformer extends js.Object {
     replaceWith: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
   ): TemplateTransformer[StringDictionary[_]] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.jsrsasign.mod.KJUR.asn1.x509
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ASN.1 TBSCertificate structure class
@@ -23,4 +23,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class TBSCertificate ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.TBSCertificate
-

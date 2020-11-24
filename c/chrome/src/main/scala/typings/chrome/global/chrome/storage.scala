@@ -6,7 +6,7 @@ import typings.chrome.chrome.storage.StorageChangedEvent
 import typings.chrome.chrome.storage.SyncStorageArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Storage
@@ -19,9 +19,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.storage")
 @js.native
 object storage extends js.Object {
+  
   var local: LocalStorageArea = js.native
+  
   var managed: StorageArea = js.native
+  
   var onChanged: StorageChangedEvent = js.native
+  
   var sync: SyncStorageArea = js.native
 }
-

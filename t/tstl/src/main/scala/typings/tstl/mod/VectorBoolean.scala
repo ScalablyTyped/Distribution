@@ -7,7 +7,7 @@ import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "VectorBoolean")
 @js.native
@@ -43,10 +43,10 @@ class VectorBoolean ()
     */
   def this(n: Double, `val`: Boolean) = this()
 }
-
 @JSImport("tstl", "VectorBoolean")
 @js.native
 object VectorBoolean extends js.Object {
+  
   val Iterator: Instantiable0[
     ArrayIterator[
       js.Object, 
@@ -66,6 +66,7 @@ object VectorBoolean extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     ArrayReverseIterator[
       js.Object, 
@@ -86,4 +87,3 @@ object VectorBoolean extends js.Object {
     ]
   ] = js.native
 }
-

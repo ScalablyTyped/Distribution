@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the cancelable client-side events which allow the event's processing to be passed to the server side.
@@ -17,4 +17,3 @@ class ASPxClientProcessingModeCancelEventArgs protected ()
     */
   def this(processOnServer: Boolean) = this()
 }
-

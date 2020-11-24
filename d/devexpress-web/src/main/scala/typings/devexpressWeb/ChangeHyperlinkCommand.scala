@@ -2,13 +2,14 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the specified hyperlink.
   */
 @js.native
 trait ChangeHyperlinkCommand extends CommandWithSimpleStateBase {
+  
   /**
     * Executes the ChangeHyperlinkCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param fieldIndex An integer value specifying the field's index in the specified sub-document.
@@ -18,4 +19,3 @@ trait ChangeHyperlinkCommand extends CommandWithSimpleStateBase {
   def execute(fieldIndex: Double, hyperlinkSettings: HyperlinkSettings): Boolean = js.native
   def execute(fieldIndex: Double, hyperlinkSettings: HyperlinkSettings, subDocumentId: Double): Boolean = js.native
 }
-

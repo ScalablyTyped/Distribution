@@ -2,16 +2,16 @@ package typings.matterJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Query")
 @js.native
 class Query () extends js.Object
-
 /* static members */
 @JSImport("matter-js", "Query")
 @js.native
 object Query extends js.Object {
+  
   /**
     * Finds a list of collisions between body and bodies.
     * @method collides
@@ -20,6 +20,7 @@ object Query extends js.Object {
     * @return {object[]} Collisions
     */
   def collides(body: Body, bodies: js.Array[Body]): js.Array[_] = js.native
+  
   /**
     * Returns all bodies whose vertices contain the given point, from the given set of bodies.
     * @method point
@@ -28,6 +29,7 @@ object Query extends js.Object {
     * @return {body[]} The bodies matching the query
     */
   def point(bodies: js.Array[Body], point: Vector): js.Array[Body] = js.native
+  
   /**
     * Casts a ray segment against a set of bodies and returns all collisions, ray width is optional. Intersection points are not provided.
     * @method ray
@@ -39,6 +41,7 @@ object Query extends js.Object {
     */
   def ray(bodies: js.Array[Body], startPoint: Vector, endPoint: Vector): js.Array[_] = js.native
   def ray(bodies: js.Array[Body], startPoint: Vector, endPoint: Vector, rayWidth: Double): js.Array[_] = js.native
+  
   /**
     * Returns all bodies whose bounds are inside (or outside if set) the given set of bounds, from the given set of bodies.
     * @method region
@@ -50,4 +53,3 @@ object Query extends js.Object {
   def region(bodies: js.Array[Body], bounds: Bounds): js.Array[Body] = js.native
   def region(bodies: js.Array[Body], bounds: Bounds, outside: Boolean): js.Array[Body] = js.native
 }
-

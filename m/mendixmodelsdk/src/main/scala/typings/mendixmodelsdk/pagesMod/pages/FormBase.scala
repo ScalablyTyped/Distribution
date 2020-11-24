@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.Document
@@ -8,10 +7,10 @@ import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/pages relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/pages relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -32,21 +31,22 @@ abstract class FormBase protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  @JSName("model")
-  var model_FFormBase: IModel = js.native
+  
   def canvasHeight: Double = js.native
   def canvasHeight_=(newValue: Double): Unit = js.native
+  
   def canvasWidth: Double = js.native
   def canvasWidth_=(newValue: Double): Unit = js.native
+  
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MFormBase: FolderBase = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase")
 @js.native
 object FormBase extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

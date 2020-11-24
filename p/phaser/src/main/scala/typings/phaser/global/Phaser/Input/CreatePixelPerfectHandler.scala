@@ -4,11 +4,12 @@ import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Input.CreatePixelPerfectHandler")
 @js.native
 object CreatePixelPerfectHandler extends js.Object {
+  
   /**
     * Creates a new Pixel Perfect Handler function.
     * 
@@ -18,4 +19,3 @@ object CreatePixelPerfectHandler extends js.Object {
     */
   def apply(textureManager: TextureManager, alphaTolerance: integer): js.Function = js.native
 }
-

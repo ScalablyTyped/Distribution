@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("smpte-timecode", JSImport.Namespace)
 @js.native
@@ -17,7 +17,6 @@ class ^ () extends TimecodeInstance {
   def this(timecode: js.UndefOr[TIMECODE], frameRate: js.UndefOr[scala.Nothing], dropFrame: Boolean) = this()
   def this(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE, dropFrame: Boolean) = this()
 }
-
 @JSImport("smpte-timecode", JSImport.Namespace)
 @js.native
 object ^
@@ -48,10 +47,10 @@ object ^
         TimecodeInstance
       ])
     ] {
+  
   def apply(): TimecodeInstance = js.native
   def apply(timecode: js.UndefOr[TIMECODE], frameRate: js.UndefOr[scala.Nothing], dropFrame: Boolean): TimecodeInstance = js.native
   def apply(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE): TimecodeInstance = js.native
   def apply(timecode: js.UndefOr[TIMECODE], frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = js.native
   def apply(timecode: TIMECODE): TimecodeInstance = js.native
 }
-

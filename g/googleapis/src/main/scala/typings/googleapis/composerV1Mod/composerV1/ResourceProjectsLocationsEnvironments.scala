@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/composer/v1", "composer_v1.Resource$Projects$Locations$Environments")
 @js.native
 class ResourceProjectsLocationsEnvironments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * composer.projects.locations.environments.create
     * @desc Create a new environment.
@@ -45,6 +47,7 @@ class ResourceProjectsLocationsEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * composer.projects.locations.environments.delete
     * @desc Delete an environment.
@@ -76,6 +79,7 @@ class ResourceProjectsLocationsEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * composer.projects.locations.environments.get
     * @desc Get an existing environment.
@@ -107,6 +111,7 @@ class ResourceProjectsLocationsEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
+  
   /**
     * composer.projects.locations.environments.list
     * @desc List environments.
@@ -140,6 +145,7 @@ class ResourceProjectsLocationsEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListEnvironmentsResponse]
   ): Unit = js.native
+  
   /**
     * composer.projects.locations.environments.patch
     * @desc Update an environment.
@@ -174,4 +180,3 @@ class ResourceProjectsLocationsEnvironments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

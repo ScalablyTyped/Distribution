@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Personalizedstream")
 @js.native
 class ResourcePersonalizedstream protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.personalizedstream.get
     * @desc Returns a stream of personalized book clusters
@@ -47,4 +49,3 @@ class ResourcePersonalizedstream protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDiscoveryclusters]
   ): Unit = js.native
 }
-

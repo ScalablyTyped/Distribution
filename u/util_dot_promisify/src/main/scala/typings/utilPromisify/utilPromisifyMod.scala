@@ -3,19 +3,12 @@ package typings.utilPromisify
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("util.promisify", JSImport.Namespace)
 @js.native
 object utilPromisifyMod extends js.Object {
-  val custom: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof util.promisify.custom */ js.Any = js.native
-  /**
-    * @deprecated
-    * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
-    *
-    * Use `util.promisify.custom` instead.
-    */
-  val customPromisifyArgs: js.UndefOr[js.Symbol] = js.native
+  
   // tslint:disable-next-line: ban-types
   def apply(fn: js.Function): js.Function = js.native
   def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = js.native
@@ -71,11 +64,23 @@ object utilPromisifyMod extends js.Object {
     /* arg5 */ T5, 
     js.Promise[Unit]
   ] = js.native
+  
+  val custom: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof util.promisify.custom */ js.Any = js.native
+  
+  /**
+    * @deprecated
+    * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
+    *
+    * Use `util.promisify.custom` instead.
+    */
+  val customPromisifyArgs: js.UndefOr[js.Symbol] = js.native
+  
   def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof promisify */ js.Any
     ]
   ] = js.native
+  
   def shim(): ReturnType[
     js.Function0[
       ReturnType[
@@ -83,15 +88,10 @@ object utilPromisifyMod extends js.Object {
       ]
     ]
   ] = js.native
+  
   @js.native
   object implementation extends js.Object {
-    /**
-      * @deprecated
-      * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
-      *
-      * Use `util.promisify.custom` instead.
-      */
-    val customPromisifyArgs: js.Symbol = js.native
+    
     def apply(fn: js.Function): js.Function = js.native
     def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = js.native
     def apply[TCustom /* <: js.Function */](
@@ -145,7 +145,13 @@ object utilPromisifyMod extends js.Object {
         /* arg5 */ T5, 
         js.Promise[Unit]
       ] = js.native
+    
+    /**
+      * @deprecated
+      * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
+      *
+      * Use `util.promisify.custom` instead.
+      */
+    val customPromisifyArgs: js.Symbol = js.native
   }
-  
 }
-

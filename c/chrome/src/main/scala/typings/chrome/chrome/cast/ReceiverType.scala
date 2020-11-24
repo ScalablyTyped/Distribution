@@ -2,14 +2,14 @@ package typings.chrome.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ReceiverType extends js.Object
-
 @JSGlobal("chrome.cast.ReceiverType")
 @js.native
 object ReceiverType extends js.Object {
+  
   @js.native
   sealed trait CAST extends ReceiverType
   
@@ -21,6 +21,4 @@ object ReceiverType extends js.Object {
   
   @js.native
   sealed trait HANGOUT extends ReceiverType
-  
 }
-

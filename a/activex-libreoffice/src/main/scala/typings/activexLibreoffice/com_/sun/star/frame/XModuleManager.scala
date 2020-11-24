@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * can be used to identify office modules.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XModuleManager extends XInterface {
+  
   /**
     * This identifier can then be used at the service {@link ModuleManager} to get more information about this module.
     *
@@ -26,8 +27,8 @@ trait XModuleManager extends XInterface {
     */
   def identify(Module: XInterface): String = js.native
 }
-
 object XModuleManager {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -38,20 +39,23 @@ object XModuleManager {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), identify = js.Any.fromFunction1(identify), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XModuleManager]
   }
+  
   @scala.inline
   implicit class XModuleManagerOps[Self <: XModuleManager] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIdentify(value: XInterface => String): Self = this.set("identify", js.Any.fromFunction1(value))
   }
-  
 }
-

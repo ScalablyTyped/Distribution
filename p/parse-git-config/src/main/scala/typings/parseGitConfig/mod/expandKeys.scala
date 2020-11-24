@@ -2,11 +2,12 @@ package typings.parseGitConfig.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse-git-config", "expandKeys")
 @js.native
 object expandKeys extends js.Object {
+  
   /**
     * Returns an object with only the properties that had ini-style keys
     * converted to objects.
@@ -19,4 +20,3 @@ object expandKeys extends js.Object {
     */
   def apply(config: Config): Config = js.native
 }
-

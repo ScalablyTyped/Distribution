@@ -2,7 +2,7 @@ package typings.inversifyExpressUtils.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify-express-utils", "StringContent")
 @js.native
@@ -11,4 +11,3 @@ class StringContent protected ()
   def this(content: String) = this()
   def this(content: String, mediaType: String) = this()
 }
-

@@ -5,7 +5,7 @@ import typings.arcgisJsApi.esri.SummaryStatisticsResult
 import typings.arcgisJsApi.esri.summaryStatisticsForAgeSummaryStatisticsForAgeParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.summaryStatisticsForAge")
 @js.native
@@ -16,4 +16,3 @@ object summaryStatisticsForAge
         js.Promise[SummaryStatisticsResult]
       ]
     ]
-

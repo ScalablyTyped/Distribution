@@ -2,7 +2,7 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a postal address, e.g. for postal delivery or payments
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaPostalAddress extends js.Object {
+  
   /**
     * Unstructured address lines describing the lower levels of an address.
     * Because values in address_lines do not have type information and may
@@ -40,6 +41,7 @@ trait SchemaPostalAddress extends js.Object {
     * parts of the address should be localities or administrative areas).
     */
   var addressLines: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Optional. Highest administrative subdivision which is used for postal
     * addresses of a country or region. For example, this can be a state, a
@@ -50,6 +52,7 @@ trait SchemaPostalAddress extends js.Object {
     * be left unpopulated.
     */
   var administrativeArea: js.UndefOr[String] = js.native
+  
   /**
     * Optional. BCP-47 language code of the contents of this address (if
     * known). This is often the UI language of the input form or is expected to
@@ -62,6 +65,7 @@ trait SchemaPostalAddress extends js.Object {
     * &quot;ja&quot;, &quot;ja-Latn&quot;, &quot;en&quot;.
     */
   var languageCode: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Generally refers to the city/town portion of the address.
     * Examples: US city, IT comune, UK post town. In regions of the world where
@@ -69,10 +73,12 @@ trait SchemaPostalAddress extends js.Object {
     * leave locality empty and use address_lines.
     */
   var locality: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The name of the organization at the address.
     */
   var organization: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Postal code of the address. Not all countries use or require
     * postal codes to be present, but where they are used, they may trigger
@@ -80,12 +86,14 @@ trait SchemaPostalAddress extends js.Object {
     * validation in the U.S.A.).
     */
   var postalCode: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The recipient at the address. This field may, under certain
     * circumstances, contain multiline information. For example, it might
     * contain &quot;care of&quot; information.
     */
   var recipients: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Required. CLDR region code of the country/region of the address. This is
     * never inferred and it is up to the user to ensure the value is correct.
@@ -94,12 +102,14 @@ trait SchemaPostalAddress extends js.Object {
     * for details. Example: &quot;CH&quot; for Switzerland.
     */
   var regionCode: js.UndefOr[String] = js.native
+  
   /**
     * The schema revision of the `PostalAddress`. This must be set to 0, which
     * is the latest revision.  All new revisions **must** be backward
     * compatible with old revisions.
     */
   var revision: js.UndefOr[Double] = js.native
+  
   /**
     * Optional. Additional, country-specific, sorting code. This is not used in
     * most regions. Where it is used, the value is either a string like
@@ -109,79 +119,106 @@ trait SchemaPostalAddress extends js.Object {
     * &quot;post office indicator&quot; (e.g. Côte d&#39;Ivoire).
     */
   var sortingCode: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Sublocality of the address. For example, this can be
     * neighborhoods, boroughs, districts.
     */
   var sublocality: js.UndefOr[String] = js.native
 }
-
 object SchemaPostalAddress {
+  
   @scala.inline
   def apply(): SchemaPostalAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPostalAddress]
   }
+  
   @scala.inline
   implicit class SchemaPostalAddressOps[Self <: SchemaPostalAddress] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddressLinesVarargs(value: String*): Self = this.set("addressLines", js.Array(value :_*))
+    
     @scala.inline
     def setAddressLines(value: js.Array[String]): Self = this.set("addressLines", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAddressLines: Self = this.set("addressLines", js.undefined)
+    
     @scala.inline
     def setAdministrativeArea(value: String): Self = this.set("administrativeArea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAdministrativeArea: Self = this.set("administrativeArea", js.undefined)
+    
     @scala.inline
     def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    
     @scala.inline
     def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLocality: Self = this.set("locality", js.undefined)
+    
     @scala.inline
     def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrganization: Self = this.set("organization", js.undefined)
+    
     @scala.inline
     def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    
     @scala.inline
     def setRecipientsVarargs(value: String*): Self = this.set("recipients", js.Array(value :_*))
+    
     @scala.inline
     def setRecipients(value: js.Array[String]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRecipients: Self = this.set("recipients", js.undefined)
+    
     @scala.inline
     def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    
     @scala.inline
     def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRevision: Self = this.set("revision", js.undefined)
+    
     @scala.inline
     def setSortingCode(value: String): Self = this.set("sortingCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSortingCode: Self = this.set("sortingCode", js.undefined)
+    
     @scala.inline
     def setSublocality(value: String): Self = this.set("sublocality", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSublocality: Self = this.set("sublocality", js.undefined)
   }
-  
 }
-

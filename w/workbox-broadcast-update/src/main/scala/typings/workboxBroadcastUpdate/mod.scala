@@ -4,11 +4,14 @@ import typings.workboxBroadcastUpdate.broadcastCacheUpdateMod.BroadcastCacheUpda
 import typings.workboxBroadcastUpdate.broadcastUpdateMod.BroadcastUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("workbox-broadcast-update", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = js.native
+  
   @js.native
   class BroadcastCacheUpdate ()
     extends typings.workboxBroadcastUpdate.broadcastCacheUpdateMod.BroadcastCacheUpdate {
@@ -20,7 +23,4 @@ object mod extends js.Object {
     extends typings.workboxBroadcastUpdate.pluginMod.Plugin {
     def this(options: BroadcastCacheUpdateOptions) = this()
   }
-  
-  def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = js.native
 }
-

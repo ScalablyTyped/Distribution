@@ -4,11 +4,12 @@ import typings.std.Element
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "trigger")
 @js.native
 object trigger extends js.Object {
+  
   def apply(elem: Element, event: String): js.UndefOr[Boolean] = js.native
   def apply(elem: Element, event: String, hash: js.Any): js.UndefOr[Boolean] = js.native
   /**
@@ -29,4 +30,3 @@ object trigger extends js.Object {
   def apply(elem: Element, event: Event): js.UndefOr[Boolean] = js.native
   def apply(elem: Element, event: Event, hash: js.Any): js.UndefOr[Boolean] = js.native
 }
-

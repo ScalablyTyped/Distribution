@@ -5,10 +5,11 @@ import typings.seleniumWebdriver.chromeMod.Options
 import typings.seleniumWebdriver.mod.Capabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofOptions extends Instantiable0[Options] {
+  
   /**
     * Extracts the ChromeDriver specific options from the given capabilities
     * object.
@@ -17,4 +18,3 @@ trait TypeofOptions extends Instantiable0[Options] {
     */
   def fromCapabilities(capabilities: Capabilities): Options = js.native
 }
-

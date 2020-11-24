@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Userroles")
 @js.native
 class ResourceUserroles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.userRoles.delete
     * @desc Deletes an existing user role.
@@ -42,6 +44,7 @@ class ResourceUserroles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.userRoles.get
     * @desc Gets one user role by ID.
@@ -71,6 +74,7 @@ class ResourceUserroles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserRole]
   ): Unit = js.native
+  
   /**
     * dfareporting.userRoles.insert
     * @desc Inserts a new user role.
@@ -100,6 +104,7 @@ class ResourceUserroles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserRole]
   ): Unit = js.native
+  
   /**
     * dfareporting.userRoles.list
     * @desc Retrieves a list of user roles, possibly filtered. This method
@@ -137,6 +142,7 @@ class ResourceUserroles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserRolesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.userRoles.patch
     * @desc Updates an existing user role. This method supports patch
@@ -168,6 +174,7 @@ class ResourceUserroles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserRole]
   ): Unit = js.native
+  
   /**
     * dfareporting.userRoles.update
     * @desc Updates an existing user role.
@@ -198,4 +205,3 @@ class ResourceUserroles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUserRole]
   ): Unit = js.native
 }
-

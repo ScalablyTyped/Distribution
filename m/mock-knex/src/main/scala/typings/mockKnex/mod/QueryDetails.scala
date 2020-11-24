@@ -4,11 +4,11 @@ import typings.mockKnex.mod.Knex.Sql
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QueryDetails extends Sql {
-  var transacting: Boolean = js.native
+  
   def reject(error: String): Unit = js.native
   /**
     * Function that needs to be called to mock database query result for knex.
@@ -16,6 +16,7 @@ trait QueryDetails extends Sql {
     * @param error The Error, string or instance of Error, which represents why the result was rejected
     */
   def reject(error: Error): Unit = js.native
+  
   /**
     * Function that needs to be called to mock database query result for knex.
     *
@@ -23,5 +24,6 @@ trait QueryDetails extends Sql {
     */
   def response(values: js.Any): Unit = js.native
   def response(values: js.Any, options: QueryDetailsResponseOption): Unit = js.native
+  
+  var transacting: Boolean = js.native
 }
-

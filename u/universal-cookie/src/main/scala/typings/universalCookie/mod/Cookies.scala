@@ -2,16 +2,18 @@ package typings.universalCookie.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Cookies extends js.Object {
+  
   /**
     * Add a listener to when a cookie is set or removed.
     *
     * @param callback Call that will be called with the first argument containing name, value and options of the changed cookie.
     */
   def addChangeListener(callback: ChangeListenerCallback): Unit = js.native
+  
   /**
     * Get a cookie value
     *
@@ -20,6 +22,7 @@ trait Cookies extends js.Object {
     */
   def get(name: String): String = js.native
   def get(name: String, options: GetOpts): String = js.native
+  
   /**
     * Get all cookies
     *
@@ -27,6 +30,7 @@ trait Cookies extends js.Object {
     */
   def getAll(): CookiesByName = js.native
   def getAll(options: GetOpts): CookiesByName = js.native
+  
   /**
     * Set a cookie value
     *
@@ -35,10 +39,12 @@ trait Cookies extends js.Object {
     */
   def remove(name: String): Unit = js.native
   def remove(name: String, options: CookieOpts): Unit = js.native
+  
   /**
     * Remove a listener from the change callback.
     */
   def removeChangeListener(callback: ChangeListenerCallback): Unit = js.native
+  
   /**
     * Set a cookie value
     *
@@ -51,4 +57,3 @@ trait Cookies extends js.Object {
   def set(name: String, value: js.Object): Unit = js.native
   def set(name: String, value: js.Object, options: CookieOpts): Unit = js.native
 }
-

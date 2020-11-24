@@ -6,12 +6,12 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SourceChangeRequestedEventArgs extends ISourceChangeRequestedEventArgs
-
 object SourceChangeRequestedEventArgs {
+  
   @scala.inline
   def apply(
     album: String,
@@ -29,4 +29,3 @@ object SourceChangeRequestedEventArgs {
     __obj.asInstanceOf[SourceChangeRequestedEventArgs]
   }
 }
-

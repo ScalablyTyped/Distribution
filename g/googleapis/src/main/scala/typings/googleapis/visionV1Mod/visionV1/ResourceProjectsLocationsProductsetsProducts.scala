@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations$Productsets$Products")
 @js.native
 class ResourceProjectsLocationsProductsetsProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * vision.projects.locations.productSets.products.list
     * @desc Lists the Products in a ProductSet, in an unspecified order. If the
@@ -50,4 +52,3 @@ class ResourceProjectsLocationsProductsetsProducts protected () extends js.Objec
     callback: BodyResponseCallback[SchemaListProductsInProductSetResponse]
   ): Unit = js.native
 }
-

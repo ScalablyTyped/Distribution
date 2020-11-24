@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/tooltip" : "2.1.1"
+      "@jupyterlab/tooltip" : "2.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/tooltip" : "2.1.1"
+      "@jupyterlab/tooltip" : "2.2.6"
     }
   ],
   "compile-devDependencies" : [

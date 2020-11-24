@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mockdate"
-version := "2.0-dt-20200515Z-78515d"
+version := "2.0-dt-20200515Z-a27d4b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

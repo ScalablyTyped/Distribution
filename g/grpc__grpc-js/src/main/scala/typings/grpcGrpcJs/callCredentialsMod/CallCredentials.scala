@@ -3,11 +3,12 @@ package typings.grpcGrpcJs.callCredentialsMod
 import typings.grpcGrpcJs.metadataMod.Metadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@grpc/grpc-js/build/src/call-credentials", "CallCredentials")
 @js.native
 abstract class CallCredentials () extends js.Object {
+  
   /**
     * Check whether two call credentials objects are equal. Separate
     * SingleCallCredentials with identical metadata generator functions are
@@ -15,6 +16,7 @@ abstract class CallCredentials () extends js.Object {
     * @param other The other CallCredentials object to compare with.
     */
   def _equals(other: CallCredentials): Boolean = js.native
+  
   /**
     * Creates a new CallCredentials object from properties of both this and
     * another CallCredentials object. This object's metadata generator will be
@@ -22,24 +24,27 @@ abstract class CallCredentials () extends js.Object {
     * @param callCredentials The other CallCredentials object.
     */
   def compose(callCredentials: CallCredentials): CallCredentials = js.native
+  
   /**
     * Asynchronously generates a new Metadata object.
     * @param options Options used in generating the Metadata object.
     */
   def generateMetadata(options: CallMetadataOptions): js.Promise[Metadata] = js.native
 }
-
 /* static members */
 @JSImport("@grpc/grpc-js/build/src/call-credentials", "CallCredentials")
 @js.native
 object CallCredentials extends js.Object {
+  
   def createEmpty(): CallCredentials = js.native
+  
   /**
     * Create a gRPC credential from a Google credential object.
     * @param googleCredentials The authentication client to use.
     * @return The resulting CallCredentials object.
     */
   def createFromGoogleCredential(googleCredentials: OAuth2Client): CallCredentials = js.native
+  
   /**
     * Creates a new CallCredentials object from a given function that generates
     * Metadata objects.
@@ -49,4 +54,3 @@ object CallCredentials extends js.Object {
     */
   def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): CallCredentials = js.native
 }
-

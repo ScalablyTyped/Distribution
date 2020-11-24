@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.ffiNapi.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Callback
@@ -18,11 +18,10 @@ trait Callback
       /* fn */ js.Any, 
       Buffer
     ] {
+  
   def apply(retType: js.Any, argTypes: js.Array[_], abi: Double, fn: js.Any): Buffer = js.native
   def apply(retType: js.Any, argTypes: js.Array[_], fn: js.Any): Buffer = js.native
 }
-
 @JSImport("ffi-napi", "Callback")
 @js.native
 object Callback extends TopLevel[Callback]
-

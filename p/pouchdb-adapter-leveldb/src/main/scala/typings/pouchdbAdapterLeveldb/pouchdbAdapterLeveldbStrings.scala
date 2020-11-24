@@ -2,13 +2,12 @@ package typings.pouchdbAdapterLeveldb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pouchdbAdapterLeveldbStrings {
-  @js.native
-  sealed trait leveldb extends js.Object
   
   @scala.inline
   def leveldb: leveldb = "leveldb".asInstanceOf[leveldb]
+  @js.native
+  sealed trait leveldb extends js.Object
 }
-

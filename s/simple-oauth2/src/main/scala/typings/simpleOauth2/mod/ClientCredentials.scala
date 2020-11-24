@@ -2,18 +2,20 @@ package typings.simpleOauth2.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("simple-oauth2", "ClientCredentials")
 @js.native
 class ClientCredentials[ClientIdName /* <: String */] protected () extends js.Object {
   def this(options: ModuleOptions[ClientIdName]) = this()
+  
   /**
     * Creates a new access token by providing a token object as specified by RFC6750.
     *
     * @param token Plain object representation of an access token
     */
   def createToken(token: Token): AccessToken = js.native
+  
   /**
     * Requests and returns an access token from the authorization server
     *
@@ -24,4 +26,3 @@ class ClientCredentials[ClientIdName /* <: String */] protected () extends js.Ob
   def getToken(params: ClientCredentialTokenConfig): js.Promise[AccessToken] = js.native
   def getToken(params: ClientCredentialTokenConfig, httpOptions: WreckHttpOptions): js.Promise[AccessToken] = js.native
 }
-

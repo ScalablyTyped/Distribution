@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait App extends NavContainer {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>orientationChange</code> event of this
     * <code>sap.m.App</code>.When called, the context of the event handler (its <code>this</code>) will be
@@ -21,6 +22,7 @@ trait App extends NavContainer {
     */
   def attachOrientationChange(oData: js.Any, fnFunction: js.Any): App = js.native
   def attachOrientationChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): App = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>orientationChange</code> event of this
     * <code>sap.m.App</code>.The passed function and listener object must match the ones used for event
@@ -30,6 +32,7 @@ trait App extends NavContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachOrientationChange(fnFunction: js.Any, oListener: js.Any): App = js.native
+  
   /**
     * Fires event <code>orientationChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>landscape</code> of type <code>boolean</code>Whether the device is in
@@ -38,6 +41,7 @@ trait App extends NavContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireOrientationChange(mArguments: js.Any): App = js.native
+  
   /**
     * Gets current value of property <code>backgroundColor</code>.Background color of the App. If set,
     * this color will override the default background defined by the theme. So this should only be set
@@ -49,6 +53,7 @@ trait App extends NavContainer {
     * @returns Value of property <code>backgroundColor</code>
     */
   def getBackgroundColor(): String = js.native
+  
   /**
     * Gets current value of property <code>backgroundImage</code>.Background image of the App. If set,
     * this image will override the default background defined by the theme. So this should only be set
@@ -60,6 +65,7 @@ trait App extends NavContainer {
     * @returns Value of property <code>backgroundImage</code>
     */
   def getBackgroundImage(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>backgroundOpacity</code>.Opacity of the background image. The
     * opacity can be set between 0 (fully transparent) and 1 fully opaque).This can be used to make the
@@ -69,6 +75,7 @@ trait App extends NavContainer {
     * @returns Value of property <code>backgroundOpacity</code>
     */
   def getBackgroundOpacity(): Double = js.native
+  
   /**
     * Gets current value of property <code>backgroundRepeat</code>.Whether the background image (if
     * configured) should be proportionally stretched to cover the whole App (false) or whether it should
@@ -77,6 +84,7 @@ trait App extends NavContainer {
     * @returns Value of property <code>backgroundRepeat</code>
     */
   def getBackgroundRepeat(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>homeIcon</code>.The icon to be displayed on the home screen of
     * iOS devices after the user does "add to home screen".Note that only the first attempt to set the
@@ -97,6 +105,7 @@ trait App extends NavContainer {
     * @returns Value of property <code>homeIcon</code>
     */
   def getHomeIcon(): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>backgroundColor</code>.Background color of the App. If set, this
     * color will override the default background defined by the theme. So this should only be set when
@@ -110,6 +119,7 @@ trait App extends NavContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundColor(sBackgroundColor: String): App = js.native
+  
   /**
     * Sets a new value for property <code>backgroundImage</code>.Background image of the App. If set, this
     * image will override the default background defined by the theme. So this should only be set when
@@ -123,6 +133,7 @@ trait App extends NavContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundImage(sBackgroundImage: js.Any): App = js.native
+  
   /**
     * Sets a new value for property <code>backgroundOpacity</code>.Opacity of the background image. The
     * opacity can be set between 0 (fully transparent) and 1 fully opaque).This can be used to make the
@@ -134,6 +145,7 @@ trait App extends NavContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundOpacity(fBackgroundOpacity: Double): App = js.native
+  
   /**
     * Sets a new value for property <code>backgroundRepeat</code>.Whether the background image (if
     * configured) should be proportionally stretched to cover the whole App (false) or whether it should
@@ -144,6 +156,7 @@ trait App extends NavContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundRepeat(bBackgroundRepeat: Boolean): App = js.native
+  
   /**
     * Sets a new value for property <code>homeIcon</code>.The icon to be displayed on the home screen of
     * iOS devices after the user does "add to home screen".Note that only the first attempt to set the
@@ -167,4 +180,3 @@ trait App extends NavContainer {
     */
   def setHomeIcon(oHomeIcon: js.Any): App = js.native
 }
-

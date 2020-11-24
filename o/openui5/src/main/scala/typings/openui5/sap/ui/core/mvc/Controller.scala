@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.core.Component
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Controller extends EventProvider {
+  
   /**
     * Returns an Element of the connected view with the given local ID.Views automatically prepend their
     * own ID as a prefix to created Elementsto make the IDs unique even in the case of multiple view
@@ -18,6 +19,7 @@ trait Controller extends EventProvider {
     * @returns Element by its (view local) ID
     */
   def byId(sId: String): Element = js.native
+  
   /**
     * Converts a view local ID to a globally unique one by prependingthe view ID.If no view is connected,
     * undefined is returned.
@@ -25,6 +27,7 @@ trait Controller extends EventProvider {
     * @returns Prefixed ID
     */
   def createId(sId: String): String = js.native
+  
   /**
     * Gets the component of the controller's viewIf there is no Component connected to the view or the
     * view is not connected to the controller,undefined is returned.
@@ -32,11 +35,13 @@ trait Controller extends EventProvider {
     * @returns Component instance
     */
   def getOwnerComponent(): Component = js.native
+  
   /**
     * Returns the view associated with this controller or undefined.
     * @returns View connected to this controller.
     */
   def getView(): View = js.native
+  
   /**
     * This method is called every time the View is rendered, after the HTML is placed in the DOM-Tree. It
     * can beused to apply additional changes to the DOM after the Renderer has finished.(Even though this
@@ -44,6 +49,7 @@ trait Controller extends EventProvider {
     * not exist, it will simply not be called.)
     */
   def onAfterRendering(): Unit = js.native
+  
   /**
     * This method is called every time the View is rendered, before the Renderer is called and the HTML is
     * placed inthe DOM-Tree. It can be used to perform clean-up-tasks before re-rendering.(Even though
@@ -51,6 +57,7 @@ trait Controller extends EventProvider {
     * does not exist, it will simply not be called.)
     */
   def onBeforeRendering(): Unit = js.native
+  
   /**
     * This method is called upon desctuction of the View. The controller should perform its internal
     * destruction inthis hook. It is only called once per View instance, unlike the onBeforeRendering and
@@ -58,6 +65,7 @@ trait Controller extends EventProvider {
     * defined in controllers, if themethod does not exist, it will simply not be called.)
     */
   def onExit(): Unit = js.native
+  
   /**
     * This method is called upon initialization of the View. The controller can perform its internal setup
     * inthis hook. It is only called once per View instance, unlike the onBeforeRendering and
@@ -65,6 +73,7 @@ trait Controller extends EventProvider {
     * defined in controllers, if themethod does not exist, it will simply not be called.)
     */
   def onInit(): Unit = js.native
+  
   /**
     * Registers a callback module, which provides code enhancements for thelifecycle and event handler
     * functions of a specific controller. The codeenhancements are returned either in sync or async
@@ -101,4 +110,3 @@ trait Controller extends EventProvider {
     */
   def registerExtensionProvider(sExtensionProvider: String): Unit = js.native
 }
-

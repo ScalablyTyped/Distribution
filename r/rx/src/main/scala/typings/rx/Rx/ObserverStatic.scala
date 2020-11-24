@@ -2,10 +2,11 @@ package typings.rx.Rx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObserverStatic extends js.Object {
+  
   /**
     *  Creates an observer from the specified OnNext, along with optional OnError, and OnCompleted actions.
     * @param {Function} [onNext] Observer's OnNext action implementation.
@@ -37,6 +38,7 @@ trait ObserverStatic extends js.Object {
     onError: js.Function1[/* exception */ js.Any, Unit],
     onCompleted: js.Function0[Unit]
   ): Observer[T] = js.native
+  
   /**
     *  Creates an observer from a notification callback.
     *
@@ -47,4 +49,3 @@ trait ObserverStatic extends js.Object {
     */
   def fromNotifier[T](handler: js.Function2[/* notification */ Notification[T], /* thisArg */ js.UndefOr[js.Any], Unit]): Observer[T] = js.native
 }
-

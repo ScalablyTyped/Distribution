@@ -2,7 +2,7 @@ package typings.materialUiCore.stepButtonStepButtonMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.materialUiCore.materialUiCoreStrings.root
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.materialUiCore.materialUiCoreStrings.touchRipple
 */
 trait StepButtonClasskey extends js.Object
-
 object StepButtonClasskey {
+  
   @scala.inline
   def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+  
   @scala.inline
   def touchRipple: typings.materialUiCore.materialUiCoreStrings.touchRipple = "touchRipple".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.touchRipple]
+  
   @scala.inline
   def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = "vertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.vertical]
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta1", "storage_v1beta1.Resource$Objects")
 @js.native
 class ResourceObjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.objects.delete
     * @desc Deletes data blobs and associated metadata.
@@ -38,6 +40,7 @@ class ResourceObjects protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceObjectsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceObjectsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * storage.objects.get
     * @desc Retrieves objects or their associated metadata.
@@ -68,6 +71,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.insert
     * @desc Stores new data blobs and associated metadata.
@@ -102,6 +106,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.list
     * @desc Retrieves a list of objects matching the criteria.
@@ -135,6 +140,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjects]
   ): Unit = js.native
+  
   /**
     * storage.objects.patch
     * @desc Updates a data blob's associated metadata. This method supports
@@ -167,6 +173,7 @@ class ResourceObjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
+  
   /**
     * storage.objects.update
     * @desc Updates a data blob's associated metadata.
@@ -199,4 +206,3 @@ class ResourceObjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaObject]
   ): Unit = js.native
 }
-

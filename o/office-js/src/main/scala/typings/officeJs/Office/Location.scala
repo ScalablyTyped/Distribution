@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods to get and set the location of a meeting in an Outlook add-in.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Location extends js.Object {
+  
   /**
     * Gets the location of an appointment.
     *
@@ -55,6 +56,7 @@ trait Location extends js.Object {
     *                 type `Office.AsyncResult`.
     */
   def getAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Sets the location of an appointment.
     *
@@ -80,7 +82,6 @@ trait Location extends js.Object {
     *                 type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.
     */
   def setAsync(location: String): Unit = js.native
-  def setAsync(location: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(
     location: String,
     options: js.UndefOr[scala.Nothing],
@@ -93,4 +94,3 @@ trait Location extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

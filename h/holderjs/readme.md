@@ -10,9 +10,9 @@ Holder uses SVG to render image placeholders entirely in browser.
 | ------------------ | :-------------: |
 | Full name          | holderjs |
 | Keywords           | images, placeholders, client-side, canvas, generation, development, svg |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 721569 |
+| # releases         | 4 |
+| # dependents       | 25 |
+| # downloads        | 1253562 |
 | # stars            | 6 |
 
 ## Links

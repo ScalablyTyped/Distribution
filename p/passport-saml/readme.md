@@ -11,14 +11,14 @@ SAML 2.0 authentication strategy for Passport
 | Full name          | passport-saml |
 | Keywords           | saml, adfs, sso, shibboleth |
 | # releases         | 8 |
-| # dependents       | 57 |
-| # downloads        | 2040630 |
+| # dependents       | 73 |
+| # downloads        | 3246018 |
 | # stars            | 10 |
 
 ## Links
-- [Homepage](https://github.com/bergie/passport-saml#readme)
-- [Bugs](https://github.com/bergie/passport-saml/issues)
-- [Repository](https://github.com/bergie/passport-saml)
+- [Homepage](https://github.com/node-saml/passport-saml#readme)
+- [Bugs](https://github.com/node-saml/passport-saml/issues)
+- [Repository](https://github.com/node-saml/passport-saml)
 - [Npm](https://www.npmjs.com/package/passport-saml)
     
 

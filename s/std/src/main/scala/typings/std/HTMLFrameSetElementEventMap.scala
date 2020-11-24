@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTMLFrameSetElementEventMap
@@ -10,8 +10,8 @@ trait HTMLFrameSetElementEventMap
      with GlobalEventHandlersEventMap
      with DocumentAndElementEventHandlersEventMap
      with WindowEventHandlersEventMap
-
 object HTMLFrameSetElementEventMap {
+  
   @scala.inline
   def apply(
     abort: UIEvent,
@@ -65,8 +65,8 @@ object HTMLFrameSetElementEventMap {
     loadedmetadata: Event,
     loadstart: Event,
     lostpointercapture: PointerEvent,
-    message: MessageEvent,
-    messageerror: MessageEvent,
+    message: MessageEvent[_],
+    messageerror: MessageEvent[_],
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
     mouseleave: MouseEvent,
@@ -127,4 +127,3 @@ object HTMLFrameSetElementEventMap {
     __obj.asInstanceOf[HTMLFrameSetElementEventMap]
   }
 }
-

@@ -2,17 +2,11 @@ package typings.utilPromisify.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
-  /**
-    * @deprecated
-    * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
-    *
-    * Use `util.promisify.custom` instead.
-    */
-  val customPromisifyArgs: js.Symbol = js.native
+  
   def apply(fn: js.Function): js.Function = js.native
   def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = js.native
   def apply[TCustom /* <: js.Function */](
@@ -66,5 +60,12 @@ trait Call extends js.Object {
     /* arg5 */ T5, 
     js.Promise[Unit]
   ] = js.native
+  
+  /**
+    * @deprecated
+    * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
+    *
+    * Use `util.promisify.custom` instead.
+    */
+  val customPromisifyArgs: js.Symbol = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.levelCodec.mod.CodecOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Constructor
@@ -20,8 +20,8 @@ Instantiable1[
       /* options */ CodecOptions, 
       typings.encodingDown.mod.EncodingDown[js.Object, js.Object]
     ] {
+  
   // tslint:disable-next-line:no-unnecessary-generics
   def apply[K, V](db: AbstractLevelDOWN[_, _]): typings.encodingDown.mod.EncodingDown[K, V] = js.native
   def apply[K, V](db: AbstractLevelDOWN[_, _], options: CodecOptions): typings.encodingDown.mod.EncodingDown[K, V] = js.native
 }
-

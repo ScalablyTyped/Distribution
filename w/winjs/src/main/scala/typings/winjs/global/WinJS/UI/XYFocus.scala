@@ -10,7 +10,7 @@ import typings.winjs.winjsStrings.right
 import typings.winjs.winjsStrings.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides utility functions for generic directional focus movement
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WinJS.UI.XYFocus")
 @js.native
 object XYFocus extends js.Object {
-  var focusRoot: HTMLElement = js.native
+  
   def addEventListener(`type`: String, handler: EventListener): Unit = js.native
+  
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   def findNextFocusElement(direction: String): HTMLElement = js.native
   def findNextFocusElement(direction: String, options: XYFocusOptions): HTMLElement = js.native
   @JSName("findNextFocusElement")
@@ -39,6 +41,9 @@ object XYFocus extends js.Object {
   def findNextFocusElement_up(direction: up): HTMLElement = js.native
   @JSName("findNextFocusElement")
   def findNextFocusElement_up(direction: up, options: XYFocusOptions): HTMLElement = js.native
+  
+  var focusRoot: HTMLElement = js.native
+  
   def moveFocus(direction: String): HTMLElement = js.native
   def moveFocus(direction: String, options: XYFocusOptions): HTMLElement = js.native
   @JSName("moveFocus")
@@ -57,36 +62,44 @@ object XYFocus extends js.Object {
   def moveFocus_up(direction: up): HTMLElement = js.native
   @JSName("moveFocus")
   def moveFocus_up(direction: up, options: XYFocusOptions): HTMLElement = js.native
+  
   def onfocuschanged(eventInfo: CustomEvent[_]): Unit = js.native
+  
   def onfocuschanging(eventInfo: CustomEvent[_]): Unit = js.native
+  
   def removeEventListener(`type`: String, handler: EventListener): Unit = js.native
+  
   @js.native
   object keyCodeMap extends js.Object {
+    
     /**
       * The array of keycodes that cause XYFocus to accept.
       **/
     var accept: js.Array[Double] = js.native
+    
     /**
       * The array of keycodes that cause XYFocus to cancel.
       **/
     var cancel: js.Array[Double] = js.native
+    
     /**
       * The array of keycodes that cause XYFocus to navigate down.
       **/
     var down: js.Array[Double] = js.native
+    
     /**
       * The array of keycodes that cause XYFocus to navigate left.
       **/
     var left: js.Array[Double] = js.native
+    
     /**
       * The array of keycodes that cause XYFocus to navigate right.
       **/
     var right: js.Array[Double] = js.native
+    
     /**
       * The array of keycodes that cause XYFocus to navigate up.
       **/
     var up: js.Array[Double] = js.native
   }
-  
 }
-

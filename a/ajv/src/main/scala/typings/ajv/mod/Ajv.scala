@@ -4,11 +4,13 @@ import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Ajv extends js.Object {
-  var errors: js.UndefOr[js.Array[ErrorObject] | Null] = js.native
+  
+  var _opts: Options = js.native
+  
   def addFormat(name: String, format: FormatDefinition): Ajv = js.native
   /**
     * Add custom format
@@ -17,6 +19,7 @@ trait Ajv extends js.Object {
     * @return {Ajv} this for method chaining
     */
   def addFormat(name: String, format: FormatValidator): Ajv = js.native
+  
   /**
     * Define custom keyword
     * @this  Ajv
@@ -25,6 +28,7 @@ trait Ajv extends js.Object {
     * @return {Ajv} this for method chaining
     */
   def addKeyword(keyword: String, definition: KeywordDefinition): Ajv = js.native
+  
   /**
     * Add schema that will be used to validate other schemas
     * options in META_IGNORE_OPTIONS are alway set to false
@@ -34,6 +38,7 @@ trait Ajv extends js.Object {
     */
   def addMetaSchema(schema: js.Object): Ajv = js.native
   def addMetaSchema(schema: js.Object, key: String): Ajv = js.native
+  
   /**
     * Adds schema to the instance.
     * @param {object|Array} schema schema or array of schemas. If array is passed, `key` and other parameters will be ignored.
@@ -44,6 +49,7 @@ trait Ajv extends js.Object {
   def addSchema(schema: js.Array[js.Object], key: String): Ajv = js.native
   def addSchema(schema: js.Object): Ajv = js.native
   def addSchema(schema: js.Object, key: String): Ajv = js.native
+  
   /**
     * Create validating function for passed schema.
     * @param  {object|Boolean} schema schema object
@@ -51,6 +57,7 @@ trait Ajv extends js.Object {
     */
   def compile(schema: js.Object): ValidateFunction = js.native
   def compile(schema: Boolean): ValidateFunction = js.native
+  
   /**
     * Creates validating function for passed schema with asynchronous loading of missing schemas.
     * `loadSchema` option should be a function that accepts schema uri and node-style callback.
@@ -84,6 +91,9 @@ trait Ajv extends js.Object {
     meta: Boolean,
     callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, _]
   ): js.Thenable[ValidateFunction] = js.native
+  
+  var errors: js.UndefOr[js.Array[ErrorObject] | Null] = js.native
+  
   /**
     * Convert array of error message objects to string
     * @param  {Array<object>} errors optional array of validation errors, if not passed errors from the instance are used.
@@ -95,6 +105,7 @@ trait Ajv extends js.Object {
   def errorsText(errors: js.Array[ErrorObject]): String = js.native
   def errorsText(errors: js.Array[ErrorObject], options: ErrorsTextOptions): String = js.native
   def errorsText(errors: Null, options: ErrorsTextOptions): String = js.native
+  
   /**
     * Get keyword definition
     * @this  Ajv
@@ -102,12 +113,14 @@ trait Ajv extends js.Object {
     * @return {object|Boolean} custom keyword definition, `true` if it is a predefined keyword, `false` otherwise.
     */
   def getKeyword(keyword: String): js.Object | Boolean = js.native
+  
   /**
     * Get compiled schema from the instance by `key` or `ref`.
     * @param  {string} keyRef `key` that was passed to `addSchema` or full schema reference (`schema.id` or resolved id).
     * @return {Function} schema validating function (with property `schema`). Returns undefined if keyRef can't be resolved to an existing schema.
     */
   def getSchema(keyRef: String): js.UndefOr[ValidateFunction] = js.native
+  
   /**
     * Remove keyword
     * @this  Ajv
@@ -115,6 +128,7 @@ trait Ajv extends js.Object {
     * @return {Ajv} this for method chaining
     */
   def removeKeyword(keyword: String): Ajv = js.native
+  
   /**
     * Remove cached schema(s).
     * If no parameter is passed all schemas but meta-schemas are removed.
@@ -128,6 +142,7 @@ trait Ajv extends js.Object {
   def removeSchema(schemaKeyRef: js.Object): Ajv = js.native
   def removeSchema(schemaKeyRef: Boolean): Ajv = js.native
   def removeSchema(schemaKeyRef: RegExp): Ajv = js.native
+  
   def validate(schemaKeyRef: String, data: js.Any): Boolean | js.Thenable[_] = js.native
   /**
     * Validate data using schema
@@ -138,6 +153,7 @@ trait Ajv extends js.Object {
     */
   def validate(schemaKeyRef: js.Object, data: js.Any): Boolean | js.Thenable[_] = js.native
   def validate(schemaKeyRef: Boolean, data: js.Any): Boolean | js.Thenable[_] = js.native
+  
   /**
     * Validate keyword
     * @this  Ajv
@@ -146,6 +162,7 @@ trait Ajv extends js.Object {
     * @return {boolean} validation result
     */
   def validateKeyword(definition: KeywordDefinition, throwError: Boolean): Boolean = js.native
+  
   /**
     * Validate schema
     * @param {object|Boolean} schema schema to validate
@@ -154,4 +171,3 @@ trait Ajv extends js.Object {
   def validateSchema(schema: js.Object): Boolean = js.native
   def validateSchema(schema: Boolean): Boolean = js.native
 }
-

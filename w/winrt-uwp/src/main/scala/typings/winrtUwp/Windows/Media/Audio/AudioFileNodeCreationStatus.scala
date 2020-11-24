@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Audio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AudioFileNodeCreationStatus extends js.Object
-
 /** Defines status values for audio file node creation. */
 @JSGlobal("Windows.Media.Audio.AudioFileNodeCreationStatus")
 @js.native
 object AudioFileNodeCreationStatus extends js.Object {
+  
   /** The audio file used to create the node was not found. */
   @js.native
   sealed trait fileNotFound extends AudioFileNodeCreationStatus
@@ -30,6 +30,4 @@ object AudioFileNodeCreationStatus extends js.Object {
   /** An unknown failure occurred during creation of the audio file node. */
   @js.native
   sealed trait unknownFailure extends AudioFileNodeCreationStatus
-  
 }
-

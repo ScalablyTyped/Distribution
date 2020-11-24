@@ -3,9 +3,61 @@ package typings.firebaseFunctionsTypes
 import typings.firebaseFunctionsTypes.mod.FunctionsErrorCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseFunctionsTypesStrings {
+  
+  @scala.inline
+  def aborted: aborted = "aborted".asInstanceOf[aborted]
+  
+  @scala.inline
+  def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
+  
+  @scala.inline
+  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  
+  @scala.inline
+  def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
+  
+  @scala.inline
+  def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
+  
+  @scala.inline
+  def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
+  
+  @scala.inline
+  def internal: internal = "internal".asInstanceOf[internal]
+  
+  @scala.inline
+  def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
+  
+  @scala.inline
+  def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
+  
+  @scala.inline
+  def ok: ok = "ok".asInstanceOf[ok]
+  
+  @scala.inline
+  def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
+  
+  @scala.inline
+  def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
+  
+  @scala.inline
+  def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
+  
+  @scala.inline
+  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
+  
+  @scala.inline
+  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
+  
+  @scala.inline
+  def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
   @js.native
   sealed trait aborted extends FunctionsErrorCode
   
@@ -56,40 +108,4 @@ object firebaseFunctionsTypesStrings {
   
   @js.native
   sealed trait unknown extends FunctionsErrorCode
-  
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
-  @scala.inline
-  def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
-  @scala.inline
-  def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
-  @scala.inline
-  def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
-  @scala.inline
-  def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
-  @scala.inline
-  def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
-  @scala.inline
-  def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
-  @scala.inline
-  def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
-  @scala.inline
-  def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
-  @scala.inline
-  def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
-  @scala.inline
-  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
-  @scala.inline
-  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
-  @scala.inline
-  def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
 }
-

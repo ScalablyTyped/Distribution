@@ -17,7 +17,7 @@ import typings.pixiJs.PIXI.systems.TextureSystem
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Renderer draws the scene and all its content onto a WebGL enabled canvas.
@@ -33,131 +33,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Renderer extends AbstractRenderer {
-  /**
-    * Batch system instance
-    * @member {PIXI.systems.BatchSystem} batch
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val batch: BatchSystem = js.native
-  /**
-    * Context system instance
-    * @member {PIXI.systems.ContextSystem} context
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val context: ContextSystem = js.native
-  /**
-    * Collection of methods for extracting data (image, pixels, etc.) from a display object or render texture
-    *
-    * @member {PIXI.Extract} extract
-    * @memberof PIXI.Renderer#
-    * @see PIXI.Extract
-    */
-  var extract: Extract = js.native
-  /**
-    * Filter system instance
-    * @member {PIXI.systems.FilterSystem} filter
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val filter: FilterSystem = js.native
-  /**
-    * Framebuffer system instance
-    * @member {PIXI.systems.FramebufferSystem} framebuffer
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val framebuffer: FramebufferSystem = js.native
-  /**
-    * Geometry system instance
-    * @member {PIXI.systems.GeometrySystem} geometry
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val geometry: GeometrySystem = js.native
-  /**
-    * WebGL context, set by the contextSystem (this.context)
-    *
-    * @readonly
-    * @member {WebGLRenderingContext} PIXI.Renderer#gl
-    */
-  val gl: WebGLRenderingContext = js.native
-  /**
-    * Global uniforms
-    * @member {PIXI.UniformGroup} PIXI.Renderer#globalUniforms
-    */
-  var globalUniforms: UniformGroup = js.native
-  /**
-    * Mask system instance
-    * @member {PIXI.systems.MaskSystem} mask
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val mask: MaskSystem = js.native
-  /**
-    * Projection system instance
-    * @member {PIXI.systems.ProjectionSystem} projection
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val projection: ProjectionSystem = js.native
-  /**
-    * RenderTexture system instance
-    * @member {PIXI.systems.RenderTextureSystem} renderTexture
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val renderTexture: RenderTextureSystem = js.native
-  /**
-    * Flag if we are rendering to the screen vs renderTexture
-    * @member {boolean} PIXI.Renderer#renderingToScreen
-    * @readonly
-    * @default true
-    */
-  val renderingToScreen: Boolean = js.native
-  /**
-    * Scissor system instance
-    * @member {PIXI.systems.ScissorSystem} scissor
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val scissor: ScissorSystem = js.native
-  /**
-    * Shader system instance
-    * @member {PIXI.systems.ShaderSystem} shader
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val shader: ShaderSystem = js.native
-  /**
-    * State system instance
-    * @member {PIXI.systems.StateSystem} state
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val state: StateSystem = js.native
-  /**
-    * Stencil system instance
-    * @member {PIXI.systems.StencilSystem} stencil
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val stencil: StencilSystem = js.native
-  /**
-    * Texture system instance
-    * @member {PIXI.systems.TextureSystem} texture
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val texture: TextureSystem = js.native
-  /**
-    * Texture garbage collector system instance
-    * @member {PIXI.systems.TextureGCSystem} textureGC
-    * @memberof PIXI.Renderer#
-    * @readonly
-    */
-  val textureGC: TextureGCSystem = js.native
+  
   /**
     * Add a new system to the renderer.
     * @param {Function} ClassRef - Class reference
@@ -169,10 +45,91 @@ trait Renderer extends AbstractRenderer {
     */
   def addSystem(ClassRef: js.Function1[/* repeated */ js.Any, _]): Renderer = js.native
   def addSystem(ClassRef: js.Function1[/* repeated */ js.Any, _], name: String): Renderer = js.native
+  
+  /**
+    * Batch system instance
+    * @member {PIXI.systems.BatchSystem} batch
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val batch: BatchSystem = js.native
+  
   /**
     * Clear the frame buffer
     */
   def clear(): Unit = js.native
+  
+  /**
+    * Context system instance
+    * @member {PIXI.systems.ContextSystem} context
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val context: ContextSystem = js.native
+  
+  /**
+    * Collection of methods for extracting data (image, pixels, etc.) from a display object or render texture
+    *
+    * @member {PIXI.Extract} extract
+    * @memberof PIXI.Renderer#
+    * @see PIXI.Extract
+    */
+  var extract: Extract = js.native
+  
+  /**
+    * Filter system instance
+    * @member {PIXI.systems.FilterSystem} filter
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val filter: FilterSystem = js.native
+  
+  /**
+    * Framebuffer system instance
+    * @member {PIXI.systems.FramebufferSystem} framebuffer
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val framebuffer: FramebufferSystem = js.native
+  
+  /**
+    * Geometry system instance
+    * @member {PIXI.systems.GeometrySystem} geometry
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val geometry: GeometrySystem = js.native
+  
+  /**
+    * WebGL context, set by the contextSystem (this.context)
+    *
+    * @readonly
+    * @member {WebGLRenderingContext} PIXI.Renderer#gl
+    */
+  val gl: WebGLRenderingContext = js.native
+  
+  /**
+    * Global uniforms
+    * @member {PIXI.UniformGroup} PIXI.Renderer#globalUniforms
+    */
+  var globalUniforms: UniformGroup = js.native
+  
+  /**
+    * Mask system instance
+    * @member {PIXI.systems.MaskSystem} mask
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val mask: MaskSystem = js.native
+  
+  /**
+    * Projection system instance
+    * @member {PIXI.systems.ProjectionSystem} projection
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val projection: ProjectionSystem = js.native
+  
   /**
     * Renders the object to its WebGL view
     *
@@ -261,11 +218,75 @@ trait Renderer extends AbstractRenderer {
     transform: Matrix,
     skipUpdateTransform: Boolean
   ): Unit = js.native
+  
+  /**
+    * RenderTexture system instance
+    * @member {PIXI.systems.RenderTextureSystem} renderTexture
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val renderTexture: RenderTextureSystem = js.native
+  
+  /**
+    * Flag if we are rendering to the screen vs renderTexture
+    * @member {boolean} PIXI.Renderer#renderingToScreen
+    * @readonly
+    * @default true
+    */
+  val renderingToScreen: Boolean = js.native
+  
   /**
     * Resets the WebGL state so you can render things however you fancy!
     *
     * @return {PIXI.Renderer} Returns itself.
     */
   def reset(): Renderer = js.native
+  
+  /**
+    * Scissor system instance
+    * @member {PIXI.systems.ScissorSystem} scissor
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val scissor: ScissorSystem = js.native
+  
+  /**
+    * Shader system instance
+    * @member {PIXI.systems.ShaderSystem} shader
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val shader: ShaderSystem = js.native
+  
+  /**
+    * State system instance
+    * @member {PIXI.systems.StateSystem} state
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val state: StateSystem = js.native
+  
+  /**
+    * Stencil system instance
+    * @member {PIXI.systems.StencilSystem} stencil
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val stencil: StencilSystem = js.native
+  
+  /**
+    * Texture system instance
+    * @member {PIXI.systems.TextureSystem} texture
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val texture: TextureSystem = js.native
+  
+  /**
+    * Texture garbage collector system instance
+    * @member {PIXI.systems.TextureGCSystem} textureGC
+    * @memberof PIXI.Renderer#
+    * @readonly
+    */
+  val textureGC: TextureGCSystem = js.native
 }
-

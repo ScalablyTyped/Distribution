@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Application plugin for supporting loader option. Installing the LoaderPlugin
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AppLoaderPlugin extends js.Object
-

@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BitmapProperties extends IBitmapProperties
-
 object BitmapProperties {
+  
   @scala.inline
   def apply(
     getPropertiesAsync: IIterable[String] => IAsyncOperation[BitmapPropertySet],
@@ -21,4 +21,3 @@ object BitmapProperties {
     __obj.asInstanceOf[BitmapProperties]
   }
 }
-

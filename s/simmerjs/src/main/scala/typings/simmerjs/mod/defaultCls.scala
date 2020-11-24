@@ -2,7 +2,7 @@ package typings.simmerjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("simmerjs", JSImport.Default)
 @js.native
@@ -31,4 +31,3 @@ class defaultCls () extends Simmer {
   def this(scope: Scope, options: js.UndefOr[scala.Nothing], query: QueryEngine) = this()
   def this(scope: Scope, options: Options, query: QueryEngine) = this()
 }
-

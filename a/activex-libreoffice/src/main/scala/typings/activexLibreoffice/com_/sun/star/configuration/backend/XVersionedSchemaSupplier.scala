@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to versioned configuration component schemas.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XVersionedSchemaSupplier extends XSchemaSupplier {
+  
   /**
     * Returns the schema version for a particular component.
     * @param aComponent component whose schema version will be determined
@@ -20,8 +21,8 @@ trait XVersionedSchemaSupplier extends XSchemaSupplier {
     */
   def getSchemaVersion(aComponent: String): String = js.native
 }
-
 object XVersionedSchemaSupplier {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -33,20 +34,23 @@ object XVersionedSchemaSupplier {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getComponentSchema = js.Any.fromFunction1(getComponentSchema), getSchemaVersion = js.Any.fromFunction1(getSchemaVersion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XVersionedSchemaSupplier]
   }
+  
   @scala.inline
   implicit class XVersionedSchemaSupplierOps[Self <: XVersionedSchemaSupplier] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetSchemaVersion(value: String => String): Self = this.set("getSchemaVersion", js.Any.fromFunction1(value))
   }
-  
 }
-

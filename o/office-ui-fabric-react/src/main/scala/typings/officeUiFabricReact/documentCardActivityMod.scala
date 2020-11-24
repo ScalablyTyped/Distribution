@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardAct
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity", JSImport.Namespace)
 @js.native
 object documentCardActivityMod extends js.Object {
+  
   val DocumentCardActivity: FunctionComponent[IDocumentCardActivityProps] = js.native
 }
-

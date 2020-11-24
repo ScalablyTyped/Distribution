@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.three.mod.Quaternion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofQuaternion extends Instantiable0[Quaternion] {
+  
   def multiplyQuaternionsFlat(
     dst: js.Array[Double],
     dstOffset: Double,
@@ -16,6 +17,7 @@ trait TypeofQuaternion extends Instantiable0[Quaternion] {
     src1: js.Array[Double],
     stcOffset1: Double
   ): js.Array[Double] = js.native
+  
   /**
   	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
   	 */
@@ -25,6 +27,7 @@ trait TypeofQuaternion extends Instantiable0[Quaternion] {
     qm: typings.three.quaternionMod.Quaternion,
     t: Double
   ): typings.three.quaternionMod.Quaternion = js.native
+  
   def slerpFlat(
     dst: js.Array[Double],
     dstOffset: Double,
@@ -35,4 +38,3 @@ trait TypeofQuaternion extends Instantiable0[Quaternion] {
     t: Double
   ): typings.three.quaternionMod.Quaternion = js.native
 }
-

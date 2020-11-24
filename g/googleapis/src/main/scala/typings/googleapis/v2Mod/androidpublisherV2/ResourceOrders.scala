@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Orders")
 @js.native
 class ResourceOrders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.orders.refund
     * @desc Refund a user's subscription or in-app purchase order.
@@ -40,4 +42,3 @@ class ResourceOrders protected () extends js.Object {
   def refund(params: ParamsResourceOrdersRefund, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourceOrdersRefund, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
 }
-

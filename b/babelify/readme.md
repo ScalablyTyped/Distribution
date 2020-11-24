@@ -10,9 +10,9 @@ Babel browserify transform
 | ------------------ | :-------------: |
 | Full name          | babelify |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1057 |
-| # downloads        | 14766218 |
+| # releases         | 4 |
+| # dependents       | 1091 |
+| # downloads        | 19176487 |
 | # stars            | 77 |
 
 ## Links

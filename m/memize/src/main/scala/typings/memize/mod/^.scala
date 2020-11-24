@@ -2,11 +2,12 @@ package typings.memize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memize", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Memize options object.
     *
@@ -46,4 +47,3 @@ object ^ extends js.Object {
   def apply[F /* <: js.Function */](fn: F): F with MemizeMemoizedFunction = js.native
   def apply[F /* <: js.Function */](fn: F, options: MemizeOptions): F with MemizeMemoizedFunction = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -17,30 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AutoFilter extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_AutoFilter: RequestContext = js.native
-  /**
-    *
-    * An array that holds all the filter criteria in the autofiltered range.
-    *
-    * [Api set: ExcelApi 1.9]
-    */
-  val criteria: js.Array[FilterCriteria] = js.native
-  /**
-    *
-    * Specifies if the AutoFilter is enabled.
-    *
-    * [Api set: ExcelApi 1.9]
-    */
-  val enabled: Boolean = js.native
-  /**
-    *
-    * Specifies if the AutoFilter has filter criteria.
-    *
-    * [Api set: ExcelApi 1.9]
-    */
-  val isDataFiltered: Boolean = js.native
+  
   @JSName("apply")
   def apply(range: String): Unit = js.native
   @JSName("apply")
@@ -66,18 +43,41 @@ trait AutoFilter extends ClientObject {
   def apply(range: Range, columnIndex: Double): Unit = js.native
   @JSName("apply")
   def apply(range: Range, columnIndex: Double, criteria: FilterCriteria): Unit = js.native
+  
   /**
     * Clears the filter criteria of the AutoFilter.
     *
     * [Api set: ExcelApi 1.9]
     */
   def clearCriteria(): Unit = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_AutoFilter: RequestContext = js.native
+  
+  /**
+    *
+    * An array that holds all the filter criteria in the autofiltered range.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val criteria: js.Array[FilterCriteria] = js.native
+  
+  /**
+    *
+    * Specifies if the AutoFilter is enabled.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val enabled: Boolean = js.native
+  
   /**
     * Returns the Range object that represents the range to which the AutoFilter applies.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getRange(): Range = js.native
+  
   /**
     * Returns the Range object that represents the range to which the AutoFilter applies.
     If there is no Range object associated with the AutoFilter, this method returns a null object.
@@ -85,6 +85,15 @@ trait AutoFilter extends ClientObject {
     * [Api set: ExcelApi 1.9]
     */
   def getRangeOrNullObject(): Range = js.native
+  
+  /**
+    *
+    * Specifies if the AutoFilter has filter criteria.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val isDataFiltered: Boolean = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -95,22 +104,24 @@ trait AutoFilter extends ClientObject {
   def load(propertyNamesAndPaths: Expand): AutoFilter = js.native
   def load(propertyNames: String): AutoFilter = js.native
   def load(propertyNames: js.Array[String]): AutoFilter = js.native
+  
   /**
     * Applies the specified Autofilter object currently on the range.
     *
     * [Api set: ExcelApi 1.9]
     */
   def reapply(): Unit = js.native
+  
   /**
     * Removes the AutoFilter for the range.
     *
     * [Api set: ExcelApi 1.9]
     */
   def remove(): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.AutoFilter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AutoFilterData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): AutoFilterData = js.native
 }
-

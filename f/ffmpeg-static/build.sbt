@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ffmpeg-static"
-version := "3.0-dt-20200515Z-f27074"
+version := "3.0-dt-20200515Z-5cddec"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

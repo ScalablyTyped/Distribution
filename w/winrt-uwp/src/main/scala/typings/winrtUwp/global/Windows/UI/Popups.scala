@@ -3,12 +3,13 @@ package typings.winrtUwp.global.Windows.UI
 import typings.winrtUwp.Windows.UI.Popups.UICommandInvokedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for context menus and message dialogs. */
 @JSGlobal("Windows.UI.Popups")
 @js.native
 object Popups extends js.Object {
+  
   /** Represents a dialog. The dialog has a command bar that can support up to three commands. If you don't specify any commands, then a default command is added to close the dialog. */
   @js.native
   class MessageDialog protected ()
@@ -24,6 +25,36 @@ object Popups extends js.Object {
       * @param title The title you want displayed on the dialog.
       */
     def this(content: String, title: String) = this()
+  }
+  
+  /** Specifies less frequently used options for a MessageDialog . */
+  @js.native
+  object MessageDialogOptions extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions with Double] = js.native
+    
+    /* 1 */ val acceptUserInputAfterDelay: typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay with Double = js.native
+    
+    /* 0 */ val none: typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions.none with Double = js.native
+  }
+  
+  /** Specifies where the context menu should be positioned relative to the selection rectangle. */
+  @js.native
+  object Placement extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Popups.Placement with Double] = js.native
+    
+    /* 1 */ val above: typings.winrtUwp.Windows.UI.Popups.Placement.above with Double = js.native
+    
+    /* 2 */ val below: typings.winrtUwp.Windows.UI.Popups.Placement.below with Double = js.native
+    
+    /* 0 */ val default: typings.winrtUwp.Windows.UI.Popups.Placement.default with Double = js.native
+    
+    /* 3 */ val left: typings.winrtUwp.Windows.UI.Popups.Placement.left with Double = js.native
+    
+    /* 4 */ val right: typings.winrtUwp.Windows.UI.Popups.Placement.right with Double = js.native
   }
   
   /** Represents a context menu. */
@@ -62,27 +93,4 @@ object Popups extends js.Object {
   /** Creates a new instance of the UICommandSeparator class. */
   class UICommandSeparator ()
     extends typings.winrtUwp.Windows.UI.Popups.UICommandSeparator
-  
-  /** Specifies less frequently used options for a MessageDialog . */
-  @js.native
-  object MessageDialogOptions extends js.Object {
-    /* 1 */ val acceptUserInputAfterDelay: typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay with Double = js.native
-    /* 0 */ val none: typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions.none with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions with Double] = js.native
-  }
-  
-  /** Specifies where the context menu should be positioned relative to the selection rectangle. */
-  @js.native
-  object Placement extends js.Object {
-    /* 1 */ val above: typings.winrtUwp.Windows.UI.Popups.Placement.above with Double = js.native
-    /* 2 */ val below: typings.winrtUwp.Windows.UI.Popups.Placement.below with Double = js.native
-    /* 0 */ val default: typings.winrtUwp.Windows.UI.Popups.Placement.default with Double = js.native
-    /* 3 */ val left: typings.winrtUwp.Windows.UI.Popups.Placement.left with Double = js.native
-    /* 4 */ val right: typings.winrtUwp.Windows.UI.Popups.Placement.right with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Popups.Placement with Double] = js.native
-  }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.nodemailer.mimeNodeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new mime tree node. Assumes 'multipart/ *' as the content type
@@ -16,4 +16,3 @@ class ^ () extends MimeNode {
   def this(contentType: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(contentType: String, options: Options) = this()
 }
-

@@ -12,7 +12,7 @@ Runnable README files
 | Keywords           | markdown, readme |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 20162 |
+| # downloads        | 20760 |
 | # stars            | 0 |
 
 ## Links

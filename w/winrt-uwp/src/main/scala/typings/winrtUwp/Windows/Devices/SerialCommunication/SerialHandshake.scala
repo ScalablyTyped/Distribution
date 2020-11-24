@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.SerialCommunication
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SerialHandshake extends js.Object
-
 /** Defines values for hardware and software flow control protocols used in serial communication. The values are used by Handshake property on the SerialDevice object. */
 @JSGlobal("Windows.Devices.SerialCommunication.SerialHandshake")
 @js.native
 object SerialHandshake extends js.Object {
+  
   /** No protocol is used for the handshake. */
   @js.native
   sealed trait none extends SerialHandshake
@@ -26,6 +26,4 @@ object SerialHandshake extends js.Object {
   /** The serial port sends an Xoff control to inform the sender to stop sending data. When ready, the port sends an Xon control to inform the sender that the port is now ready to receive data. */
   @js.native
   sealed trait xonXOff extends SerialHandshake
-  
 }
-

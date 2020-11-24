@@ -21,7 +21,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is implemented by the OLE2 presentation shape.
@@ -33,8 +33,8 @@ import scala.scalajs.js.annotation._
 trait OLE2Shape
   extends typings.activexLibreoffice.com_.sun.star.drawing.OLE2Shape
      with Shape
-
 object OLE2Shape {
+  
   @scala.inline
   def apply(
     Bookmark: String,
@@ -106,4 +106,3 @@ object OLE2Shape {
     __obj.asInstanceOf[OLE2Shape]
   }
 }
-

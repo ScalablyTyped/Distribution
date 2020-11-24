@@ -2,7 +2,7 @@ package typings.nodeJsonDb.jsonDBConfigMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-json-db/dist/lib/JsonDBConfig", "Config")
 @js.native
@@ -21,4 +21,3 @@ class Config protected () extends JsonDBConfig {
   def this(filename: String, saveOnPush: Boolean, humanReadable: js.UndefOr[scala.Nothing], separator: String) = this()
   def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean, separator: String) = this()
 }
-

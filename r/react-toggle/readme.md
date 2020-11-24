@@ -11,8 +11,8 @@ An elegant, accessible toggle component for React. Also a glorified checkbox.
 | Full name          | react-toggle |
 | Keywords           | toggle, component, react, react-component |
 | # releases         | 3 |
-| # dependents       | 73 |
-| # downloads        | 3170390 |
+| # dependents       | 96 |
+| # downloads        | 3990484 |
 | # stars            | 5 |
 
 ## Links

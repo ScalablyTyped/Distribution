@@ -2,11 +2,12 @@ package typings.k6.cryptoMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/crypto", "Hasher")
 @js.native
 abstract class Hasher () extends js.Object {
+  
   /**
     * Return a digest from the data added so far.
     * https://k6.io/docs/javascript-api/k6-crypto/hasher
@@ -19,6 +20,7 @@ abstract class Hasher () extends js.Object {
     * console.log(hasher.digest('hex'));
     */
   def digest[OE /* <: OutputEncoding */](outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Add more data to the string we want to create a hash of.
     * https://k6.io/docs/javascript-api/k6-crypto/hasher
@@ -31,4 +33,3 @@ abstract class Hasher () extends js.Object {
     */
   def update(input: String): Unit = js.native
 }
-

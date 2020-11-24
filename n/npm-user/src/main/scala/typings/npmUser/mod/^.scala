@@ -2,15 +2,12 @@ package typings.npmUser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("npm-user", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function npmUser(name: string): Promise<npmUser.UserInfo>;
-  // export = npmUser;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmUser */ js.Any = js.native
+  
   /**
   	Get user info of an npm user.
   	@param name - User's username on npm.
@@ -30,5 +27,9 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(name: String): js.Promise[UserInfo] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function npmUser(name: string): Promise<npmUser.UserInfo>;
+  // export = npmUser;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmUser */ js.Any = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv-webpack
 
-Typings are for version 1.8
+Typings are for version 5.0
 
 ## Library description:
 A simple webpack plugin to support dotenv.
@@ -10,9 +10,9 @@ A simple webpack plugin to support dotenv.
 | ------------------ | :-------------: |
 | Full name          | dotenv-webpack |
 | Keywords           | dotenv, env, safe, environment, dotenv-safe, variables, process, process.env, webpack, plugin |
-| # releases         | 6 |
-| # dependents       | 116 |
-| # downloads        | 42992783 |
+| # releases         | 4 |
+| # dependents       | 175 |
+| # downloads        | 76319976 |
 | # stars            | 10 |
 
 ## Links

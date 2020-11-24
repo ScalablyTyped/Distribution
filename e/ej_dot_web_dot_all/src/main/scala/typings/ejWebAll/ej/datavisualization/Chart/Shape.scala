@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Chart
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Shape extends js.Object
-
 @JSGlobal("ej.datavisualization.Chart.Shape")
 @js.native
 object Shape extends js.Object {
+  
   //string
   @js.native
   sealed trait Circle extends Shape
@@ -85,6 +85,4 @@ object Shape extends js.Object {
   //string
   @js.native
   sealed trait VertLine extends Shape
-  
 }
-

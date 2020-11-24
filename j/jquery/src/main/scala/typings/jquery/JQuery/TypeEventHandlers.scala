@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.jqueryBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
@@ -16,12 +16,11 @@ trait TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, String]) | `false` | js.Object
       ]
     ]
-
 object TypeEventHandlers {
+  
   @scala.inline
   def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](): TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]]
   }
 }
-

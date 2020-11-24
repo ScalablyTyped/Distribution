@@ -14,7 +14,7 @@ import typings.nodal.mod.RelationshipNode
 import typings.nodal.mod.RelationshipPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofModel
@@ -26,7 +26,9 @@ trait TypeofModel
       /* fromSeed */ Boolean, 
       Model
     ] {
+  
   var _relationshipCache: js.Any = js.native
+  
   /**
     * Create a calculated field (in JavaScript). Must be synchronous.
     * @param {string} calcField The name of the calculated field
@@ -34,26 +36,31 @@ trait TypeofModel
     *   Pass the names of the (non-computed) fields you'd like to use as parameters.
     */
   def calculates(calcField: String, fnCompute: js.Function): Unit = js.native
+  
   /**
     * Return the column schema data for a given name
     * @param {string} columnName
     */
   def column(columnName: String): js.Any = js.native
+  
   /**
     * Get the model's column lookup data
     * @return {Object}
     */
   def columnLookup(): IAnyObject = js.native
+  
   /**
     * Get the model's column names (fields)
     * @return {Array}
     */
   def columnNames(): js.Array[String] = js.native
+  
   /**
     * Get the model's column data
     * @return {Array}
     */
   def columns(): js.Array[IColumn] = js.native
+  
   /**
     * Creates a new model instance using the provided data.
     * @param {object} data The data to load into the object.
@@ -63,18 +70,22 @@ trait TypeofModel
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[Model], Unit]
   ): Unit = js.native
+  
   /**
     * Finds and destroys a model with a specified id. Return a notFound error if model does not exist.
     * @param {number} id The id of the model you're looking for
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
   def destroy(id: Double, callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[Model], Unit]): Unit = js.native
+  
   def find(id: Double, callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[Model], Unit]): Unit = js.native
+  
   def findBy(
     field: String,
     value: js.Any,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[Model], Unit]
   ): Unit = js.native
+  
   /**
     * Finds a model with a provided field, value pair. Returns the first found.
     * @param {string} field Name of the field
@@ -86,21 +97,25 @@ trait TypeofModel
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError | Null, /* model */ js.UndefOr[Model], Unit]
   ): Unit = js.native
+  
   /**
     * Check if the model has a column name in its schema
     * @param {string} columnName
     */
   def hasColumn(columnName: String): Boolean = js.native
+  
   /**
     * Hides fields from being output in .toObject() (i.e. API responses), even if asked for
     * @param {String} field
     */
   def hides(field: String): Boolean = js.native
+  
   /**
     * Tells us if a field is hidden (i.e. from API queries)
     * @param {String} field
     */
   def isHidden(field: String): js.Any = js.native
+  
   /**
     * Sets a joins relationship for the Model. Sets joinedBy relationship for parent.
     * @param {class Nodal.Model} Model The Model class which your current model belongs to
@@ -114,6 +129,7 @@ trait TypeofModel
     modelClass: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any,
     options: As
   ): RelationshipEdge | Null = js.native
+  
   /**
     * Creates a new Composer (ORM) instance to begin a new query.
     * @param {optional Nodal.Database} db Deprecated - provide a database to query from. Set the model's db in its constructor file, instead.
@@ -121,29 +137,35 @@ trait TypeofModel
     */
   def query[T /* <: Model */](): Composer[T] = js.native
   def query[T /* <: Model */](db: Database): Composer[T] = js.native
+  
   /**`
     * FIXME
     */
   def relationship(name: String): RelationshipPath = js.native
+  
   /**
     * FIXME
     */
   def relationships(): RelationshipNode = js.native
+  
   /**
     * Set the database to be used for this model
     * @param {Nodal.Database} db
     */
   def setDatabase(db: Database): Unit = js.native
+  
   /**
     * Set the schema to be used for this model
     * @param {Object} schema
     */
   def setSchema(schema: Columns): Unit = js.native
+  
   /**
     * Get the model's table name
     * @return {string}
     */
   def table(): String = js.native
+  
   /**
     * Finds and updates a model with a specified id. Return a notFound error if model does not exist.
     * @param {number} id The id of the model you're looking for
@@ -155,6 +177,7 @@ trait TypeofModel
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[Model], Unit]
   ): Unit = js.native
+  
   /**
     * Create a validator. These run synchronously and check every time a field is set / cleared.
     * @param {string} field The field you'd like to validate
@@ -162,6 +185,7 @@ trait TypeofModel
     * @param {function({any} value)} fnAction the validation to run - first parameter is the value you're testing.
     */
   def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Creates a verifier. These run asynchronously, support multiple fields, and check every time you try to save a Model.
     * @param {string} message The error message shown if a validation fails.
@@ -170,4 +194,3 @@ trait TypeofModel
     */
   def verifies(message: String, fnAction: js.Function): Unit = js.native
 }
-

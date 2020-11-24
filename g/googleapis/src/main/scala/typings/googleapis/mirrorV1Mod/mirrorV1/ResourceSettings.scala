@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Settings")
 @js.native
 class ResourceSettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.settings.get
     * @desc Gets a single setting by ID.
@@ -42,4 +44,3 @@ class ResourceSettings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSetting]
   ): Unit = js.native
 }
-

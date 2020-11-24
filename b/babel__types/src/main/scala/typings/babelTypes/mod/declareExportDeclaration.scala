@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "declareExportDeclaration")
 @js.native
 object declareExportDeclaration extends js.Object {
+  
   def apply(): DeclareExportDeclaration_ = js.native
   def apply(
     declaration: js.UndefOr[scala.Nothing],
@@ -41,4 +42,3 @@ object declareExportDeclaration extends js.Object {
   ): DeclareExportDeclaration_ = js.native
   def apply(declaration: Flow, specifiers: Null, source: StringLiteral_): DeclareExportDeclaration_ = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartMapLabelStrategy extends js.Object
-
 /**
   *
   * Represents the region level of a chart series layout. This only applies to region map charts.
@@ -16,6 +15,7 @@ sealed trait ChartMapLabelStrategy extends js.Object
 @JSGlobal("Excel.ChartMapLabelStrategy")
 @js.native
 object ChartMapLabelStrategy extends js.Object {
+  
   @js.native
   sealed trait bestFit extends ChartMapLabelStrategy
   
@@ -24,6 +24,4 @@ object ChartMapLabelStrategy extends js.Object {
   
   @js.native
   sealed trait showAll extends ChartMapLabelStrategy
-  
 }
-

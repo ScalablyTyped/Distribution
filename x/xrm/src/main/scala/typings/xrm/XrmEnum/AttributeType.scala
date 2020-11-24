@@ -13,7 +13,7 @@ import typings.xrm.xrmStrings.optionset
 import typings.xrm.xrmStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Attribute types for {@link Attributes.Attribute.setDisplayState()}.
@@ -33,29 +33,38 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.string
 */
 trait AttributeType extends js.Object
-
 object AttributeType {
+  
   @scala.inline
   def Boolean: boolean = "boolean".asInstanceOf[boolean]
+  
   @scala.inline
   def DateTime: datetime = "datetime".asInstanceOf[datetime]
+  
   @scala.inline
   def Decimal: decimal = "decimal".asInstanceOf[decimal]
+  
   @scala.inline
   def Double: double = "double".asInstanceOf[double]
+  
   @scala.inline
   def Integer: integer = "integer".asInstanceOf[integer]
+  
   @scala.inline
   def Lookup: lookup = "lookup".asInstanceOf[lookup]
+  
   @scala.inline
   def Memo: memo = "memo".asInstanceOf[memo]
+  
   @scala.inline
   def Money: money = "money".asInstanceOf[money]
+  
   @scala.inline
   def MultiOptionSet: multioptionset = "multioptionset".asInstanceOf[multioptionset]
+  
   @scala.inline
   def OptionSet: optionset = "optionset".asInstanceOf[optionset]
+  
   @scala.inline
   def String: string = "string".asInstanceOf[string]
 }
-

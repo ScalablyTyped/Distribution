@@ -1,14 +1,13 @@
 package typings.awsSdkClientS3Node
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-s3-node/model/_IndexDocument", JSImport.Namespace)
 @js.native
 object indexDocumentMod extends js.Object {
+  
   @JSName("_IndexDocument")
-  val IndexDocument: Structure = js.native
+  val IndexDocument: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

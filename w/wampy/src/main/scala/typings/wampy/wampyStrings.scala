@@ -2,9 +2,46 @@ package typings.wampy
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wampyStrings {
+  
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  
+  @scala.inline
+  def kill: kill = "kill".asInstanceOf[kill]
+  
+  @scala.inline
+  def killnowait: killnowait = "killnowait".asInstanceOf[killnowait]
+  
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  
+  @scala.inline
+  def loose: loose = "loose".asInstanceOf[loose]
+  
+  @scala.inline
+  def prefix: prefix = "prefix".asInstanceOf[prefix]
+  
+  @scala.inline
+  def random: random = "random".asInstanceOf[random]
+  
+  @scala.inline
+  def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def skip: skip = "skip".asInstanceOf[skip]
+  
+  @scala.inline
+  def strict: strict = "strict".asInstanceOf[strict]
+  
+  @scala.inline
+  def wildcard: wildcard = "wildcard".asInstanceOf[wildcard]
+  
   @js.native
   sealed trait first extends js.Object
   
@@ -16,6 +53,9 @@ object wampyStrings {
   
   @js.native
   sealed trait last extends js.Object
+  
+  @js.native
+  sealed trait loose extends js.Object
   
   @js.native
   sealed trait prefix extends js.Object
@@ -33,27 +73,8 @@ object wampyStrings {
   sealed trait skip extends js.Object
   
   @js.native
-  sealed trait wildcard extends js.Object
+  sealed trait strict extends js.Object
   
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def kill: kill = "kill".asInstanceOf[kill]
-  @scala.inline
-  def killnowait: killnowait = "killnowait".asInstanceOf[killnowait]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def prefix: prefix = "prefix".asInstanceOf[prefix]
-  @scala.inline
-  def random: random = "random".asInstanceOf[random]
-  @scala.inline
-  def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def wildcard: wildcard = "wildcard".asInstanceOf[wildcard]
+  @js.native
+  sealed trait wildcard extends js.Object
 }
-

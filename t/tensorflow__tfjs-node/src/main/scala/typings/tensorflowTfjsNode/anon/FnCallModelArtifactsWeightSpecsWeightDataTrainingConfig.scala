@@ -7,10 +7,11 @@ import typings.tensorflowTfjsCore.typesMod.TrainingConfig
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallModelArtifactsWeightSpecsWeightDataTrainingConfig extends js.Object {
+  
   def apply(modelArtifacts: js.Object): IOHandler = js.native
   def apply(
     modelArtifacts: js.Object,
@@ -72,4 +73,3 @@ trait FnCallModelArtifactsWeightSpecsWeightDataTrainingConfig extends js.Object 
     trainingConfig: TrainingConfig
   ): IOHandler = js.native
 }
-

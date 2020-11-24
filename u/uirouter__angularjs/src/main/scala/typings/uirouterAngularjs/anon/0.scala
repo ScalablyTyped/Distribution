@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.commonCommonMod.Obj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `0` extends js.Object {
+  
   /**
     * Asynchronously injects a resolve block.
     *
@@ -53,4 +54,3 @@ trait `0` extends js.Object {
   def resolve(invocables: StringDictionary[js.Function], locals: js.Object): js.Promise[Obj] = js.native
   def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[_]): js.Promise[Obj] = js.native
 }
-

@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu", JSImport.Namespace)
 @js.native
 object tpuMod extends js.Object {
+  
   def tpu(options: Options): Tpu = js.native
   def tpu(options: typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Options): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = js.native
   @JSName("tpu")
   def tpu_v1(version: v1): Tpu = js.native
   @JSName("tpu")
   def tpu_v1alpha1(version: v1alpha1): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Tpu {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tpu]
+            ]
     
     @js.native
     class v1alpha1 protected ()
@@ -37,13 +45,6 @@ object tpuMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tpu]
-            ]
-    
     @js.native
     object v1alpha1
       extends TopLevel[
@@ -53,11 +54,11 @@ object tpuMod extends js.Object {
                 typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object tpuMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

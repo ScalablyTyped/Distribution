@@ -21,7 +21,7 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The cover flow view is a container showing animated three-dimensional images in a style
@@ -29,14 +29,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CoverFlowView extends View {
-  /**
-    * Images to display in the view.
-    */
-  var images: js.Array[Blob | CoverFlowImageType | File | String] = js.native
-  /**
-    * Index to make selected.
-    */
-  var selected: Double = js.native
+  
   /**
     * Adds the specified callback as an event listener for the named event.
     */
@@ -45,6 +38,7 @@ trait CoverFlowView extends View {
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ CoverFlowViewChangeEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Fires a synthesized event to any registered listeners.
     */
@@ -80,16 +74,24 @@ trait CoverFlowView extends View {
   def fireEvent_touchstart(name: touchstart, event: CoverFlowViewTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: CoverFlowViewTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
     * @deprecated Access <Titanium.UI.iOS.CoverFlowView.images> instead.
     */
   def getImages(): js.Array[Blob | CoverFlowImageType | File | String] = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iOS.CoverFlowView.selected> property.
     * @deprecated Access <Titanium.UI.iOS.CoverFlowView.selected> instead.
     */
   def getSelected(): Double = js.native
+  
+  /**
+    * Images to display in the view.
+    */
+  var images: js.Array[Blob | CoverFlowImageType | File | String] = js.native
+  
   /**
     * Removes the specified callback as an event listener for the named event.
     */
@@ -98,6 +100,12 @@ trait CoverFlowView extends View {
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ CoverFlowViewChangeEvent, Unit]
   ): Unit = js.native
+  
+  /**
+    * Index to make selected.
+    */
+  var selected: Double = js.native
+  
   /**
     * Changes the image for a specified index.
     */
@@ -105,15 +113,16 @@ trait CoverFlowView extends View {
   def setImage(index: Double, image: CoverFlowImageType): Unit = js.native
   def setImage(index: Double, image: Blob): Unit = js.native
   def setImage(index: Double, image: File): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
     * @deprecated Set the value using <Titanium.UI.iOS.CoverFlowView.images> instead.
     */
   def setImages(images: js.Array[Blob | CoverFlowImageType | File | String]): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iOS.CoverFlowView.selected> property.
     * @deprecated Set the value using <Titanium.UI.iOS.CoverFlowView.selected> instead.
     */
   def setSelected(selected: Double): Unit = js.native
 }
-

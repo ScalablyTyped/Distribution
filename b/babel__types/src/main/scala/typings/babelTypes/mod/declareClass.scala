@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "declareClass")
 @js.native
 object declareClass extends js.Object {
+  
   def apply(
     id: Identifier_,
     typeParameters: js.UndefOr[scala.Nothing],
@@ -57,4 +58,3 @@ object declareClass extends js.Object {
     body: ObjectTypeAnnotation_
   ): DeclareClass_ = js.native
 }
-

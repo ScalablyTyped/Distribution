@@ -3,9 +3,67 @@ package typings.prismicDom
 import typings.prismicDom.mod.ElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prismicDomStrings {
+  
+  @scala.inline
+  def em: em = "em".asInstanceOf[em]
+  
+  @scala.inline
+  def embed: embed = "embed".asInstanceOf[embed]
+  
+  @scala.inline
+  def `group-list-item`: `group-list-item` = "group-list-item".asInstanceOf[`group-list-item`]
+  
+  @scala.inline
+  def `group-o-list-item`: `group-o-list-item` = "group-o-list-item".asInstanceOf[`group-o-list-item`]
+  
+  @scala.inline
+  def heading1: heading1 = "heading1".asInstanceOf[heading1]
+  
+  @scala.inline
+  def heading2: heading2 = "heading2".asInstanceOf[heading2]
+  
+  @scala.inline
+  def heading3: heading3 = "heading3".asInstanceOf[heading3]
+  
+  @scala.inline
+  def heading4: heading4 = "heading4".asInstanceOf[heading4]
+  
+  @scala.inline
+  def heading5: heading5 = "heading5".asInstanceOf[heading5]
+  
+  @scala.inline
+  def heading6: heading6 = "heading6".asInstanceOf[heading6]
+  
+  @scala.inline
+  def hyperlink: hyperlink = "hyperlink".asInstanceOf[hyperlink]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def label: label = "label".asInstanceOf[label]
+  
+  @scala.inline
+  def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
+  
+  @scala.inline
+  def `o-list-item`: `o-list-item` = "o-list-item".asInstanceOf[`o-list-item`]
+  
+  @scala.inline
+  def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  
+  @scala.inline
+  def preformatted: preformatted = "preformatted".asInstanceOf[preformatted]
+  
+  @scala.inline
+  def span: span = "span".asInstanceOf[span]
+  
+  @scala.inline
+  def strong: strong = "strong".asInstanceOf[strong]
+  
   @js.native
   sealed trait em extends ElementType
   
@@ -62,44 +120,4 @@ object prismicDomStrings {
   
   @js.native
   sealed trait strong extends ElementType
-  
-  @scala.inline
-  def em: em = "em".asInstanceOf[em]
-  @scala.inline
-  def embed: embed = "embed".asInstanceOf[embed]
-  @scala.inline
-  def `group-list-item`: `group-list-item` = "group-list-item".asInstanceOf[`group-list-item`]
-  @scala.inline
-  def `group-o-list-item`: `group-o-list-item` = "group-o-list-item".asInstanceOf[`group-o-list-item`]
-  @scala.inline
-  def heading1: heading1 = "heading1".asInstanceOf[heading1]
-  @scala.inline
-  def heading2: heading2 = "heading2".asInstanceOf[heading2]
-  @scala.inline
-  def heading3: heading3 = "heading3".asInstanceOf[heading3]
-  @scala.inline
-  def heading4: heading4 = "heading4".asInstanceOf[heading4]
-  @scala.inline
-  def heading5: heading5 = "heading5".asInstanceOf[heading5]
-  @scala.inline
-  def heading6: heading6 = "heading6".asInstanceOf[heading6]
-  @scala.inline
-  def hyperlink: hyperlink = "hyperlink".asInstanceOf[hyperlink]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def label: label = "label".asInstanceOf[label]
-  @scala.inline
-  def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
-  @scala.inline
-  def `o-list-item`: `o-list-item` = "o-list-item".asInstanceOf[`o-list-item`]
-  @scala.inline
-  def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
-  @scala.inline
-  def preformatted: preformatted = "preformatted".asInstanceOf[preformatted]
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
 }
-

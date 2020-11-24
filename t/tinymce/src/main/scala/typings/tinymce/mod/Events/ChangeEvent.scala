@@ -2,12 +2,12 @@ package typings.tinymce.mod.Events
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChangeEvent extends Event
-
 object ChangeEvent {
+  
   @scala.inline
   def apply(
     isDefaultPrevented: () => Boolean,
@@ -24,4 +24,3 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent]
   }
 }
-

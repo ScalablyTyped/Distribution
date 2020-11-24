@@ -2,7 +2,7 @@ package typings.documentdb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "QueryIterator")
 @js.native
@@ -41,22 +41,26 @@ class QueryIterator[TResultRow] protected () extends js.Object {
     fetchFunctions: RequestCallback[TResultRow],
     resourceLinkopt: String
   ) = this()
+  
   /**
     * Retrieve the current element on the QueryIterator.
     * @param callback Function to execute for the current element.
     */
   def current(callback: RequestCallback[TResultRow]): Unit = js.native
+  
   /**
     * Retrieve the next batch of the feed and pass them as an array to a function
     * @param callback Function execute on the feed response.
     */
   def executeNext(callback: RequestCallback[js.Array[TResultRow]]): Unit = js.native
+  
   /**
     * Execute a provided function once per feed element.
     * @param callback Function to execute for each element. the function takes two parameters error, element. Note: the last element the callback
     *        will be called on will be undefined. If the callback explicitly returned false, the loop gets stopped.
     */
   def forEach(callback: RequestCallback[TResultRow]): Unit = js.native
+  
   /**
     * DEPRECATED
     *
@@ -67,19 +71,21 @@ class QueryIterator[TResultRow] protected () extends js.Object {
     * @deprecated
     */
   def hasMoreResults(): Boolean = js.native
+  
   /**
     * Execute a provided function on the next element in the QueryIterator.
     * @param callback Function to execute for each element.
     */
   def nextItem(callback: RequestCallback[TResultRow]): Unit = js.native
+  
   /**
     * Reset the QueryIterator to the beginning and clear all the resources inside it
     */
   def reset(): Unit = js.native
+  
   /**
     * Retrieve all the elements of the feed and pass them as an array to a function
     * @param callback Function execute on the feed response.
     */
   def toArray(callback: RequestCallback[js.Array[TResultRow]]): Unit = js.native
 }
-

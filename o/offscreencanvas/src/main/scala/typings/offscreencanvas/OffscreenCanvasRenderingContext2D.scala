@@ -16,7 +16,7 @@ import typings.std.CanvasTextDrawingStyles
 import typings.std.CanvasTransform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d
 @js.native
@@ -36,6 +36,6 @@ trait OffscreenCanvasRenderingContext2D
      with CanvasPathDrawingStyles
      with CanvasTextDrawingStyles
      with CanvasPath {
+  
   val canvas: OffscreenCanvas = js.native
 }
-

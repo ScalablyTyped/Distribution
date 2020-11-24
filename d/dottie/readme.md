@@ -11,8 +11,8 @@ Fast and safe nested object access and manipulation in JavaScript
 | Full name          | dottie |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 141 |
-| # downloads        | 18874484 |
+| # dependents       | 159 |
+| # downloads        | 28266771 |
 | # stars            | 6 |
 
 ## Links

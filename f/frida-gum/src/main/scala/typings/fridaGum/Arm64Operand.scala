@@ -14,7 +14,7 @@ import typings.fridaGum.fridaGumStrings.reg
 import typings.fridaGum.fridaGumStrings.sys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.fridaGum.Arm64RegOperand
@@ -30,68 +30,78 @@ import scala.scalajs.js.annotation._
   - typings.fridaGum.Arm64BarrierOperand
 */
 trait Arm64Operand extends js.Object
-
 object Arm64Operand {
+  
   @scala.inline
   def Arm64BarrierOperand(`type`: barrier, value: Double): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64PstateOperand(`type`: pstate, value: Double): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64RegMrsOperand(`type`: `reg-mrs`, value: Arm64Register): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64PrefetchOperand(`type`: prefetch, value: Double): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64CimmOperand(`type`: cimm, value: Int64): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64RegMsrOperand(`type`: `reg-msr`, value: Arm64Register): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64RegOperand(`type`: reg, value: Arm64Register): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64SysOperand(`type`: sys, value: Double): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64FpOperand(`type`: fp, value: Double): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64MemOperand(`type`: mem, value: Index): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64Operand]
   }
+  
   @scala.inline
   def Arm64ImmOperand(`type`: imm, value: Int64): Arm64Operand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
@@ -99,4 +109,3 @@ object Arm64Operand {
     __obj.asInstanceOf[Arm64Operand]
   }
 }
-

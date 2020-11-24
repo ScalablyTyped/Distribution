@@ -2,10 +2,11 @@ package typings.cordovaPluginVibration
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Navigator extends js.Object {
+  
   /**
     * Vibrates the device with a given pattern.
     *
@@ -19,4 +20,3 @@ trait Navigator extends js.Object {
     */
   def vibrate(time: Double): Unit = js.native
 }
-

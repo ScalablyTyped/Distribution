@@ -6,26 +6,31 @@ import typings.uirouterCore.paramsMod.ParamTypes
 import typings.uirouterCore.routerMod.UIRouter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/url/urlConfig", JSImport.Namespace)
 @js.native
 object urlConfigMod extends js.Object {
+  
   @js.native
   class UrlConfig protected () extends Disposable {
     /** @internal */ def this(/** @internal */ router: UIRouter) = this()
+    
     /** @internal */ var _decodeParams: Boolean = js.native
+    
     /** @internal */ var _defaultSquashPolicy: Boolean | String = js.native
+    
     /** @internal */ var _isCaseInsensitive: Boolean = js.native
+    
     /** @internal */ var _isStrictMode: Boolean = js.native
-    /** @internal */ var paramTypes: ParamTypes = js.native
-    var router: js.Any = js.native
+    
     /**
       * Gets the base Href, e.g., `http://localhost/approot/`
       *
       * @return the application's base href
       */
     def baseHref(): String = js.native
+    
     /**
       * Defines whether URL matching should be case sensitive (the default behavior), or not.
       *
@@ -40,6 +45,7 @@ object urlConfigMod extends js.Object {
       */
     def caseInsensitive(): Boolean = js.native
     def caseInsensitive(value: Boolean): Boolean = js.native
+    
     /**
       * Sets the default behavior when generating or matching URLs with default parameter values.
       *
@@ -60,6 +66,7 @@ object urlConfigMod extends js.Object {
     def defaultSquashPolicy(): String | Boolean = js.native
     def defaultSquashPolicy(value: String): String | Boolean = js.native
     def defaultSquashPolicy(value: Boolean): String | Boolean = js.native
+    
     /**
       * Gets or sets the hashPrefix
       *
@@ -71,30 +78,39 @@ object urlConfigMod extends js.Object {
       */
     def hashPrefix(): String = js.native
     def hashPrefix(newprefix: String): String = js.native
+    
     /**
       * Gets the host, e.g., `localhost`
       *
       * @return the protocol
       */
     def host(): String = js.native
+    
     /**
       * Returns true when running in pushstate mode
       *
       * @return true when running in html5 mode (pushstate mode).
       */
     def html5Mode(): Boolean = js.native
+    
+    /** @internal */ var paramTypes: ParamTypes = js.native
+    
     /**
       * Gets the port, e.g., `80`
       *
       * @return the port number
       */
     def port(): Double = js.native
+    
     /**
       * Gets the protocol, e.g., `http`
       *
       * @return the protocol
       */
     def protocol(): String = js.native
+    
+    var router: js.Any = js.native
+    
     /**
       * Defines whether URLs should match trailing slashes, or not (the default behavior).
       *
@@ -109,6 +125,7 @@ object urlConfigMod extends js.Object {
       */
     def strictMode(): Boolean = js.native
     def strictMode(value: Boolean): Boolean = js.native
+    
     /**
       * Creates and registers a custom [[ParamType]] object
       *
@@ -148,6 +165,4 @@ object urlConfigMod extends js.Object {
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }
-  
 }
-

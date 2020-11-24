@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-color" : "0.14.0"
+      "@jimp/plugin-color" : "0.16.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-color" : "0.14.0"
+      "@jimp/plugin-color" : "0.16.1"
     }
   ],
   "compile-devDependencies" : [

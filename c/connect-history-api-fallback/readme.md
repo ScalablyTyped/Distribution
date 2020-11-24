@@ -11,8 +11,8 @@ Provides a fallback for non-existing directories so that the HTML 5 history API 
 | Full name          | connect-history-api-fallback |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 810 |
-| # downloads        | 234113169 |
+| # dependents       | 868 |
+| # downloads        | 301426141 |
 | # stars            | 20 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for screeps
 
-Typings are for version 3.1
+Typings are for version 3.2
 
 ## Library description:
 A standalone server for programming game Screeps
@@ -10,9 +10,9 @@ A standalone server for programming game Screeps
 | ------------------ | :-------------: |
 | Full name          | screeps |
 | Keywords           | - |
-| # releases         | 73 |
-| # dependents       | 0 |
-| # downloads        | 21622 |
+| # releases         | 65 |
+| # dependents       | 2 |
+| # downloads        | 16724 |
 | # stars            | 0 |
 
 ## Links

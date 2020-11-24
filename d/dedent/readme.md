@@ -10,9 +10,9 @@ An ES6 string tag that strips indentation from multi-line strings
 | ------------------ | :-------------: |
 | Full name          | dedent |
 | Keywords           | dedent, tag, multi-line string, es6 |
-| # releases         | 1 |
-| # dependents       | 326 |
-| # downloads        | 93933297 |
+| # releases         | 0 |
+| # dependents       | 399 |
+| # downloads        | 156878058 |
 | # stars            | 11 |
 
 ## Links

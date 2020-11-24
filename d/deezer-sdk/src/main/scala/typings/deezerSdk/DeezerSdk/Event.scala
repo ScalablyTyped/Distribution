@@ -15,7 +15,7 @@ import typings.deezerSdk.deezerSdkStrings.tracklist_changed
 import typings.deezerSdk.deezerSdkStrings.volume_changed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Player Events
 /**
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Event extends js.Object {
+  
   @JSName("subscribe")
   def subscribe_currenttrack(event: current_track, callback: js.Function1[/* currentTrackInfo */ Index, Unit]): Unit = js.native
   @JSName("subscribe")
@@ -58,4 +59,3 @@ trait Event extends js.Object {
   @JSName("subscribe")
   def subscribe_volumechanged(event: volume_changed, callback: js.Function1[/* volumePercentInt */ Double, Unit]): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enum string of a display item status.
@@ -21,11 +21,11 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.PENDING
 */
 trait DisplayItemStatus extends js.Object
-
 object DisplayItemStatus {
+  
   @scala.inline
   def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
+  
   @scala.inline
   def PENDING: typings.googlepay.googlepayStrings.PENDING = "PENDING".asInstanceOf[typings.googlepay.googlepayStrings.PENDING]
 }
-

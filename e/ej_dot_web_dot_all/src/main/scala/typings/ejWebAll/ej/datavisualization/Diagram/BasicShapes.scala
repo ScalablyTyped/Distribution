@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BasicShapes extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BasicShapes")
 @js.native
 object BasicShapes extends js.Object {
+  
   //Used to specify node Shape as Cylinder
   @js.native
   sealed trait Cylinder extends BasicShapes
@@ -65,6 +65,4 @@ object BasicShapes extends js.Object {
   //Used to specify node Shape as Triangle
   @js.native
   sealed trait Triangle extends BasicShapes
-  
 }
-

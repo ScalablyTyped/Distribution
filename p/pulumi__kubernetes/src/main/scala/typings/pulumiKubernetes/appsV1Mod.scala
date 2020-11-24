@@ -15,11 +15,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/apps/v1", JSImport.Namespace)
 @js.native
 object appsV1Mod extends js.Object {
+  
   @js.native
   class ControllerRevision protected ()
     extends typings.pulumiKubernetes.v1ControllerRevisionMod.ControllerRevision {
@@ -34,6 +35,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: ControllerRevisionArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ControllerRevisionArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object ControllerRevision extends js.Object {
+    
+    /**
+      * Get an existing ControllerRevision resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ControllerRevisionMod.ControllerRevision = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ControllerRevisionMod.ControllerRevision = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ControllerRevision.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/controllerRevision.ControllerRevision */ Boolean = js.native
   }
   
   @js.native
@@ -51,6 +73,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ControllerRevisionListArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object ControllerRevisionList extends js.Object {
+    
+    /**
+      * Get an existing ControllerRevisionList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ControllerRevisionListMod.ControllerRevisionList = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ControllerRevisionListMod.ControllerRevisionList = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ControllerRevisionList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/controllerRevisionList.ControllerRevisionList */ Boolean = js.native
+  }
   
   @js.native
   class DaemonSet protected ()
@@ -66,6 +109,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: DaemonSetArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DaemonSetArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object DaemonSet extends js.Object {
+    
+    /**
+      * Get an existing DaemonSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DaemonSetMod.DaemonSet = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DaemonSetMod.DaemonSet = js.native
+    
+    /**
+      * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSet.DaemonSet */ Boolean = js.native
   }
   
   @js.native
@@ -83,6 +147,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DaemonSetListArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object DaemonSetList extends js.Object {
+    
+    /**
+      * Get an existing DaemonSetList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DaemonSetListMod.DaemonSetList = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DaemonSetListMod.DaemonSetList = js.native
+    
+    /**
+      * Returns true if the given object is an instance of DaemonSetList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSetList.DaemonSetList */ Boolean = js.native
+  }
   
   @js.native
   class Deployment protected ()
@@ -98,6 +183,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: DeploymentArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DeploymentArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object Deployment extends js.Object {
+    
+    /**
+      * Get an existing Deployment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DeploymentMod.Deployment = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DeploymentMod.Deployment = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Deployment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/deployment.Deployment */ Boolean = js.native
   }
   
   @js.native
@@ -115,6 +221,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DeploymentListArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object DeploymentList extends js.Object {
+    
+    /**
+      * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DeploymentListMod.DeploymentList = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DeploymentListMod.DeploymentList = js.native
+    
+    /**
+      * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/deploymentList.DeploymentList */ Boolean = js.native
+  }
   
   @js.native
   class ReplicaSet protected ()
@@ -130,6 +257,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: ReplicaSetArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ReplicaSetArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object ReplicaSet extends js.Object {
+    
+    /**
+      * Get an existing ReplicaSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ReplicaSetMod.ReplicaSet = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ReplicaSetMod.ReplicaSet = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ReplicaSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/replicaSet.ReplicaSet */ Boolean = js.native
   }
   
   @js.native
@@ -147,6 +295,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ReplicaSetListArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object ReplicaSetList extends js.Object {
+    
+    /**
+      * Get an existing ReplicaSetList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ReplicaSetListMod.ReplicaSetList = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ReplicaSetListMod.ReplicaSetList = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ReplicaSetList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/replicaSetList.ReplicaSetList */ Boolean = js.native
+  }
   
   @js.native
   class StatefulSet protected ()
@@ -162,6 +331,27 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: StatefulSetArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: StatefulSetArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object StatefulSet extends js.Object {
+    
+    /**
+      * Get an existing StatefulSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1StatefulSetMod.StatefulSet = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1StatefulSetMod.StatefulSet = js.native
+    
+    /**
+      * Returns true if the given object is an instance of StatefulSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/statefulSet.StatefulSet */ Boolean = js.native
   }
   
   @js.native
@@ -179,190 +369,10 @@ object appsV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: StatefulSetListArgs, opts: CustomResourceOptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object ControllerRevision extends js.Object {
-    /**
-      * Get an existing ControllerRevision resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ControllerRevisionMod.ControllerRevision = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ControllerRevisionMod.ControllerRevision = js.native
-    /**
-      * Returns true if the given object is an instance of ControllerRevision.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/controllerRevision.ControllerRevision */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ControllerRevisionList extends js.Object {
-    /**
-      * Get an existing ControllerRevisionList resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ControllerRevisionListMod.ControllerRevisionList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ControllerRevisionListMod.ControllerRevisionList = js.native
-    /**
-      * Returns true if the given object is an instance of ControllerRevisionList.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/controllerRevisionList.ControllerRevisionList */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object DaemonSet extends js.Object {
-    /**
-      * Get an existing DaemonSet resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DaemonSetMod.DaemonSet = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DaemonSetMod.DaemonSet = js.native
-    /**
-      * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSet.DaemonSet */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object DaemonSetList extends js.Object {
-    /**
-      * Get an existing DaemonSetList resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DaemonSetListMod.DaemonSetList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DaemonSetListMod.DaemonSetList = js.native
-    /**
-      * Returns true if the given object is an instance of DaemonSetList.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSetList.DaemonSetList */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Deployment extends js.Object {
-    /**
-      * Get an existing Deployment resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DeploymentMod.Deployment = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DeploymentMod.Deployment = js.native
-    /**
-      * Returns true if the given object is an instance of Deployment.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/deployment.Deployment */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object DeploymentList extends js.Object {
-    /**
-      * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1DeploymentListMod.DeploymentList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1DeploymentListMod.DeploymentList = js.native
-    /**
-      * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/deploymentList.DeploymentList */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ReplicaSet extends js.Object {
-    /**
-      * Get an existing ReplicaSet resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ReplicaSetMod.ReplicaSet = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ReplicaSetMod.ReplicaSet = js.native
-    /**
-      * Returns true if the given object is an instance of ReplicaSet.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/replicaSet.ReplicaSet */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ReplicaSetList extends js.Object {
-    /**
-      * Get an existing ReplicaSetList resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1ReplicaSetListMod.ReplicaSetList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1ReplicaSetListMod.ReplicaSetList = js.native
-    /**
-      * Returns true if the given object is an instance of ReplicaSetList.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/replicaSetList.ReplicaSetList */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object StatefulSet extends js.Object {
-    /**
-      * Get an existing StatefulSet resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1StatefulSetMod.StatefulSet = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1StatefulSetMod.StatefulSet = js.native
-    /**
-      * Returns true if the given object is an instance of StatefulSet.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/statefulSet.StatefulSet */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object StatefulSetList extends js.Object {
+    
     /**
       * Get an existing StatefulSetList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -373,12 +383,11 @@ object appsV1Mod extends js.Object {
       */
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1StatefulSetListMod.StatefulSetList = js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1StatefulSetListMod.StatefulSetList = js.native
+    
     /**
       * Returns true if the given object is an instance of StatefulSetList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/statefulSetList.StatefulSetList */ Boolean = js.native
   }
-  
 }
-

@@ -5,9 +5,8 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.messageContentMod.MessageContentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "MessageContent")
 @js.native
 object MessageContent extends TopLevel[StatelessComponent[MessageContentProps]]
-

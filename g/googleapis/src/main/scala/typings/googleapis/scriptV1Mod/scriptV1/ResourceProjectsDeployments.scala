@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Projects$Deployments")
 @js.native
 class ResourceProjectsDeployments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * script.projects.deployments.create
     * @desc Creates a deployment of an Apps Script project.
@@ -42,6 +44,7 @@ class ResourceProjectsDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeployment]
   ): Unit = js.native
+  
   /**
     * script.projects.deployments.delete
     * @desc Deletes a deployment of an Apps Script project.
@@ -71,6 +74,7 @@ class ResourceProjectsDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * script.projects.deployments.get
     * @desc Gets a deployment of an Apps Script project.
@@ -100,6 +104,7 @@ class ResourceProjectsDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeployment]
   ): Unit = js.native
+  
   /**
     * script.projects.deployments.list
     * @desc Lists the deployments of an Apps Script project.
@@ -133,6 +138,7 @@ class ResourceProjectsDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDeploymentsResponse]
   ): Unit = js.native
+  
   /**
     * script.projects.deployments.update
     * @desc Updates a deployment of an Apps Script project.
@@ -164,4 +170,3 @@ class ResourceProjectsDeployments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDeployment]
   ): Unit = js.native
 }
-

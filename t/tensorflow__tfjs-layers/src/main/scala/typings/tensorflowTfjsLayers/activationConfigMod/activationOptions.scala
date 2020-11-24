@@ -14,14 +14,13 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign
 import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/keras_format/activation_config", "activationOptions")
 @js.native
 object activationOptions
   extends TopLevel[
       js.Array[
-        linear | relu_ | elu_ | relu6 | sigmoid | softplus | tanh | softmax_ | selu | hard_sigmoid | softsign
+        linear | relu_ | elu_ | relu6 | selu | sigmoid | softmax_ | softplus | tanh | hard_sigmoid | softsign
       ]
     ]
-

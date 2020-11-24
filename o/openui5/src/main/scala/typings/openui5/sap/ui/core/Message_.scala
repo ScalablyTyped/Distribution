@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.core
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Message_ extends Element {
+  
   /**
     * Compares two given messages with each other.The types of {@link sap.ui.core.MessageType} are ordered
     * from "Error" > "Warning" > "Success" >"Information" > "None".
@@ -30,6 +31,7 @@ trait Message_ extends Element {
     * message has a higher level.
     */
   def compareByType(oOther: Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_]): Double = js.native
+  
   /**
     * Returns the icon's default URI depending on given size.There are default icons for messages
     * available that can be used this way. If noparameter is given, the size will be 16x16 per default. If
@@ -39,17 +41,20 @@ trait Message_ extends Element {
     * @returns URI of the default icon.
     */
   def getDefaultIcon(sSize: String): js.Any = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.A possible icon URI of the message
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>level</code>.Setting the message's level.Default value is
     * <code>None</code>.
     * @returns Value of property <code>level</code>
     */
   def getLevel(): MessageType = js.native
+  
   /**
     * Gets current value of property <code>readOnly</code>.Determines whether the message should be read
     * only. This helps the application to handle a message a different way if the application
@@ -58,11 +63,13 @@ trait Message_ extends Element {
     * @returns Value of property <code>readOnly</code>
     */
   def getReadOnly(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Message text
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>timestamp</code>.Message's timestamp. It is just a simple
     * String that will be used without any transformation. So the application that uses messages needs to
@@ -70,6 +77,7 @@ trait Message_ extends Element {
     * @returns Value of property <code>timestamp</code>
     */
   def getTimestamp(): String = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.A possible icon URI of the messageWhen called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -78,6 +86,7 @@ trait Message_ extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
+  
   /**
     * Sets a new value for property <code>level</code>.Setting the message's level.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -86,6 +95,7 @@ trait Message_ extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLevel(sLevel: MessageType): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
+  
   /**
     * Sets a new value for property <code>readOnly</code>.Determines whether the message should be read
     * only. This helps the application to handle a message a different way if the application
@@ -97,6 +107,7 @@ trait Message_ extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setReadOnly(bReadOnly: Boolean): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Message textWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -104,6 +115,7 @@ trait Message_ extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
+  
   /**
     * Sets a new value for property <code>timestamp</code>.Message's timestamp. It is just a simple String
     * that will be used without any transformation. So the application that uses messages needs to format
@@ -114,4 +126,3 @@ trait Message_ extends Element {
     */
   def setTimestamp(sTimestamp: String): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
 }
-

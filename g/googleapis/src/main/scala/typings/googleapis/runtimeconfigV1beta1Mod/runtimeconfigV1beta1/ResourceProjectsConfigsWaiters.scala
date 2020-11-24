@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/runtimeconfig/v1beta1", "runtimeconfig_v1beta1.Resource$Projects$Configs$Waiters")
 @js.native
 class ResourceProjectsConfigsWaiters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * runtimeconfig.projects.configs.waiters.create
     * @desc Creates a Waiter resource. This operation returns a long-running
@@ -51,6 +53,7 @@ class ResourceProjectsConfigsWaiters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.waiters.delete
     * @desc Deletes the waiter with the specified name.
@@ -79,6 +82,7 @@ class ResourceProjectsConfigsWaiters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.waiters.get
     * @desc Gets information about a single waiter.
@@ -107,6 +111,7 @@ class ResourceProjectsConfigsWaiters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWaiter]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.waiters.list
     * @desc List waiters within the given configuration.
@@ -140,6 +145,7 @@ class ResourceProjectsConfigsWaiters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWaitersResponse]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.waiters.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -177,4 +183,3 @@ class ResourceProjectsConfigsWaiters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

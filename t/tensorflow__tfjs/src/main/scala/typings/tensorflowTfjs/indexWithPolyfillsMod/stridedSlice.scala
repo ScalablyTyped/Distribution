@@ -1,11 +1,11 @@
 package typings.tensorflowTfjs.indexWithPolyfillsMod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "stridedSlice")
 @js.native
@@ -24,4 +24,3 @@ object stridedSlice
         Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
       ]
     ]
-

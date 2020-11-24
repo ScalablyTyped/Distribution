@@ -3,14 +3,16 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToolbarSpacer extends Control {
+  
   /**
     * Flexible Spacer Class Name
     */
   var flexClass: js.Any = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Defines the width of the horizontal space.Note:
     * Empty("") value makes the space flexible which means it covers the remaining space between toolbar
@@ -19,6 +21,7 @@ trait ToolbarSpacer extends Control {
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Defines the width of the horizontal space.Note:
     * Empty("") value makes the space flexible which means it covers the remaining space between toolbar
@@ -30,4 +33,3 @@ trait ToolbarSpacer extends Control {
     */
   def setWidth(sWidth: js.Any): ToolbarSpacer = js.native
 }
-

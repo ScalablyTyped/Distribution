@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__utils
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 Utils for jimp extensions.
@@ -10,9 +10,9 @@ Utils for jimp extensions.
 | ------------------ | :-------------: |
 | Full name          | @jimp/utils |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 26 |
-| # downloads        | 14450082 |
+| # releases         | 98 |
+| # dependents       | 27 |
+| # downloads        | 34150171 |
 | # stars            | 0 |
 
 ## Links

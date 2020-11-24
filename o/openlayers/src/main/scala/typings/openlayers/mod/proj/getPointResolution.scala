@@ -3,11 +3,12 @@ package typings.openlayers.mod.proj
 import typings.openlayers.mod.Coordinate_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "proj.getPointResolution")
 @js.native
 object getPointResolution extends js.Object {
+  
   /**
     * Get the resolution of the point in degrees or distance units. For
     * projections with degrees as the unit this will simply return the
@@ -22,4 +23,3 @@ object getPointResolution extends js.Object {
     */
   def apply(projection: Projection, resolution: Double, point: Coordinate_): Double = js.native
 }
-

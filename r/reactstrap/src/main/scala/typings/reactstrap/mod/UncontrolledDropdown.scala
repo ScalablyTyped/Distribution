@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.dropdownMod.UncontrolledDropdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "UncontrolledDropdown")
+@JSImport("reactstrap/lib", "UncontrolledDropdown")
 @js.native
-class UncontrolledDropdown[T] ()
+class UncontrolledDropdown ()
   extends Component[UncontrolledDropdownProps, js.Object, js.Any]
-

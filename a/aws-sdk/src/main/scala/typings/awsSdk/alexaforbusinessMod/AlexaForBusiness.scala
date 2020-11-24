@@ -1,17 +1,16 @@
 package typings.awsSdk.alexaforbusinessMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AlexaForBusiness extends Service {
-  @JSName("config")
-  var config_AlexaForBusiness: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
     */
@@ -25,6 +24,7 @@ trait AlexaForBusiness extends Service {
     params: ApproveSkillRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ApproveSkillResponse, Unit]
   ): Request[ApproveSkillResponse, AWSError] = js.native
+  
   /**
     * Associates a contact with a given address book.
     */
@@ -40,6 +40,7 @@ trait AlexaForBusiness extends Service {
     params: AssociateContactWithAddressBookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateContactWithAddressBookResponse, Unit]
   ): Request[AssociateContactWithAddressBookResponse, AWSError] = js.native
+  
   /**
     * Associates a device with the specified network profile.
     */
@@ -55,6 +56,7 @@ trait AlexaForBusiness extends Service {
     params: AssociateDeviceWithNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateDeviceWithNetworkProfileResponse, Unit]
   ): Request[AssociateDeviceWithNetworkProfileResponse, AWSError] = js.native
+  
   /**
     * Associates a device with a given room. This applies all the settings from the room profile to the device, and all the skills in any skill groups added to that room. This operation requires the device to be online, or else a manual sync is required. 
     */
@@ -68,6 +70,7 @@ trait AlexaForBusiness extends Service {
     params: AssociateDeviceWithRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateDeviceWithRoomResponse, Unit]
   ): Request[AssociateDeviceWithRoomResponse, AWSError] = js.native
+  
   /**
     * Associates a skill group with a given room. This enables all skills in the associated skill group on all devices in the room.
     */
@@ -81,6 +84,7 @@ trait AlexaForBusiness extends Service {
     params: AssociateSkillGroupWithRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateSkillGroupWithRoomResponse, Unit]
   ): Request[AssociateSkillGroupWithRoomResponse, AWSError] = js.native
+  
   /**
     * Associates a skill with a skill group.
     */
@@ -94,6 +98,7 @@ trait AlexaForBusiness extends Service {
     params: AssociateSkillWithSkillGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateSkillWithSkillGroupResponse, Unit]
   ): Request[AssociateSkillWithSkillGroupResponse, AWSError] = js.native
+  
   /**
     * Makes a private skill available for enrolled users to enable on their devices.
     */
@@ -107,6 +112,10 @@ trait AlexaForBusiness extends Service {
     params: AssociateSkillWithUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateSkillWithUsersResponse, Unit]
   ): Request[AssociateSkillWithUsersResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_AlexaForBusiness: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an address book with the specified details.
     */
@@ -120,6 +129,7 @@ trait AlexaForBusiness extends Service {
     params: CreateAddressBookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAddressBookResponse, Unit]
   ): Request[CreateAddressBookResponse, AWSError] = js.native
+  
   /**
     * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
     */
@@ -133,6 +143,7 @@ trait AlexaForBusiness extends Service {
     params: CreateBusinessReportScheduleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBusinessReportScheduleResponse, Unit]
   ): Request[CreateBusinessReportScheduleResponse, AWSError] = js.native
+  
   /**
     * Adds a new conference provider under the user's AWS account.
     */
@@ -146,6 +157,7 @@ trait AlexaForBusiness extends Service {
     params: CreateConferenceProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConferenceProviderResponse, Unit]
   ): Request[CreateConferenceProviderResponse, AWSError] = js.native
+  
   /**
     * Creates a contact with the specified details.
     */
@@ -159,6 +171,7 @@ trait AlexaForBusiness extends Service {
     params: CreateContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateContactResponse, Unit]
   ): Request[CreateContactResponse, AWSError] = js.native
+  
   /**
     * Creates a gateway group with the specified details.
     */
@@ -172,6 +185,7 @@ trait AlexaForBusiness extends Service {
     params: CreateGatewayGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGatewayGroupResponse, Unit]
   ): Request[CreateGatewayGroupResponse, AWSError] = js.native
+  
   /**
     * Creates a network profile with the specified details.
     */
@@ -185,6 +199,7 @@ trait AlexaForBusiness extends Service {
     params: CreateNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkProfileResponse, Unit]
   ): Request[CreateNetworkProfileResponse, AWSError] = js.native
+  
   /**
     * Creates a new room profile with the specified details.
     */
@@ -198,6 +213,7 @@ trait AlexaForBusiness extends Service {
     params: CreateProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProfileResponse, Unit]
   ): Request[CreateProfileResponse, AWSError] = js.native
+  
   /**
     * Creates a room with the specified details.
     */
@@ -211,6 +227,7 @@ trait AlexaForBusiness extends Service {
     params: CreateRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomResponse, Unit]
   ): Request[CreateRoomResponse, AWSError] = js.native
+  
   /**
     * Creates a skill group with a specified name and description.
     */
@@ -224,6 +241,7 @@ trait AlexaForBusiness extends Service {
     params: CreateSkillGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSkillGroupResponse, Unit]
   ): Request[CreateSkillGroupResponse, AWSError] = js.native
+  
   /**
     * Creates a user.
     */
@@ -237,6 +255,7 @@ trait AlexaForBusiness extends Service {
     params: CreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
+  
   /**
     * Deletes an address book by the address book ARN.
     */
@@ -250,6 +269,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteAddressBookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAddressBookResponse, Unit]
   ): Request[DeleteAddressBookResponse, AWSError] = js.native
+  
   /**
     * Deletes the recurring report delivery schedule with the specified schedule ARN.
     */
@@ -263,6 +283,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteBusinessReportScheduleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBusinessReportScheduleResponse, Unit]
   ): Request[DeleteBusinessReportScheduleResponse, AWSError] = js.native
+  
   /**
     * Deletes a conference provider.
     */
@@ -276,6 +297,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteConferenceProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConferenceProviderResponse, Unit]
   ): Request[DeleteConferenceProviderResponse, AWSError] = js.native
+  
   /**
     * Deletes a contact by the contact ARN.
     */
@@ -289,6 +311,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactResponse, Unit]
   ): Request[DeleteContactResponse, AWSError] = js.native
+  
   /**
     * Removes a device from Alexa For Business.
     */
@@ -302,6 +325,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDeviceResponse, Unit]
   ): Request[DeleteDeviceResponse, AWSError] = js.native
+  
   /**
     * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
     */
@@ -315,6 +339,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteDeviceUsageDataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDeviceUsageDataResponse, Unit]
   ): Request[DeleteDeviceUsageDataResponse, AWSError] = js.native
+  
   /**
     * Deletes a gateway group.
     */
@@ -328,6 +353,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteGatewayGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGatewayGroupResponse, Unit]
   ): Request[DeleteGatewayGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes a network profile by the network profile ARN.
     */
@@ -341,6 +367,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkProfileResponse, Unit]
   ): Request[DeleteNetworkProfileResponse, AWSError] = js.native
+  
   /**
     * Deletes a room profile by the profile ARN.
     */
@@ -354,6 +381,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProfileResponse, Unit]
   ): Request[DeleteProfileResponse, AWSError] = js.native
+  
   /**
     * Deletes a room by the room ARN.
     */
@@ -367,6 +395,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRoomResponse, Unit]
   ): Request[DeleteRoomResponse, AWSError] = js.native
+  
   /**
     * Deletes room skill parameter details by room, skill, and parameter key ID.
     */
@@ -380,6 +409,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteRoomSkillParameterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRoomSkillParameterResponse, Unit]
   ): Request[DeleteRoomSkillParameterResponse, AWSError] = js.native
+  
   /**
     * Unlinks a third-party account from a skill.
     */
@@ -393,6 +423,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteSkillAuthorizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSkillAuthorizationResponse, Unit]
   ): Request[DeleteSkillAuthorizationResponse, AWSError] = js.native
+  
   /**
     * Deletes a skill group by skill group ARN.
     */
@@ -406,6 +437,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteSkillGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSkillGroupResponse, Unit]
   ): Request[DeleteSkillGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes a specified user by user ARN and enrollment ARN.
     */
@@ -419,6 +451,7 @@ trait AlexaForBusiness extends Service {
     params: DeleteUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserResponse, Unit]
   ): Request[DeleteUserResponse, AWSError] = js.native
+  
   /**
     * Disassociates a contact from a given address book.
     */
@@ -434,6 +467,7 @@ trait AlexaForBusiness extends Service {
     params: DisassociateContactFromAddressBookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateContactFromAddressBookResponse, Unit]
   ): Request[DisassociateContactFromAddressBookResponse, AWSError] = js.native
+  
   /**
     * Disassociates a device from its current room. The device continues to be connected to the Wi-Fi network and is still registered to the account. The device settings and skills are removed from the room.
     */
@@ -447,6 +481,7 @@ trait AlexaForBusiness extends Service {
     params: DisassociateDeviceFromRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDeviceFromRoomResponse, Unit]
   ): Request[DisassociateDeviceFromRoomResponse, AWSError] = js.native
+  
   /**
     * Disassociates a skill from a skill group.
     */
@@ -462,6 +497,7 @@ trait AlexaForBusiness extends Service {
     params: DisassociateSkillFromSkillGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSkillFromSkillGroupResponse, Unit]
   ): Request[DisassociateSkillFromSkillGroupResponse, AWSError] = js.native
+  
   /**
     * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
     */
@@ -475,6 +511,7 @@ trait AlexaForBusiness extends Service {
     params: DisassociateSkillFromUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSkillFromUsersResponse, Unit]
   ): Request[DisassociateSkillFromUsersResponse, AWSError] = js.native
+  
   /**
     * Disassociates a skill group from a specified room. This disables all skills in the skill group on all devices in the room.
     */
@@ -490,6 +527,7 @@ trait AlexaForBusiness extends Service {
     params: DisassociateSkillGroupFromRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSkillGroupFromRoomResponse, Unit]
   ): Request[DisassociateSkillGroupFromRoomResponse, AWSError] = js.native
+  
   /**
     * Forgets smart home appliances associated to a room.
     */
@@ -503,6 +541,7 @@ trait AlexaForBusiness extends Service {
     params: ForgetSmartHomeAppliancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ForgetSmartHomeAppliancesResponse, Unit]
   ): Request[ForgetSmartHomeAppliancesResponse, AWSError] = js.native
+  
   /**
     * Gets address the book details by the address book ARN.
     */
@@ -516,6 +555,7 @@ trait AlexaForBusiness extends Service {
     params: GetAddressBookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAddressBookResponse, Unit]
   ): Request[GetAddressBookResponse, AWSError] = js.native
+  
   /**
     * Retrieves the existing conference preferences.
     */
@@ -529,6 +569,7 @@ trait AlexaForBusiness extends Service {
     params: GetConferencePreferenceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConferencePreferenceResponse, Unit]
   ): Request[GetConferencePreferenceResponse, AWSError] = js.native
+  
   /**
     * Gets details about a specific conference provider.
     */
@@ -542,6 +583,7 @@ trait AlexaForBusiness extends Service {
     params: GetConferenceProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConferenceProviderResponse, Unit]
   ): Request[GetConferenceProviderResponse, AWSError] = js.native
+  
   /**
     * Gets the contact details by the contact ARN.
     */
@@ -555,6 +597,7 @@ trait AlexaForBusiness extends Service {
     params: GetContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetContactResponse, Unit]
   ): Request[GetContactResponse, AWSError] = js.native
+  
   /**
     * Gets the details of a device by device ARN.
     */
@@ -568,6 +611,7 @@ trait AlexaForBusiness extends Service {
     params: GetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResponse, Unit]
   ): Request[GetDeviceResponse, AWSError] = js.native
+  
   /**
     * Retrieves the details of a gateway.
     */
@@ -581,6 +625,7 @@ trait AlexaForBusiness extends Service {
     params: GetGatewayRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGatewayResponse, Unit]
   ): Request[GetGatewayResponse, AWSError] = js.native
+  
   /**
     * Retrieves the details of a gateway group.
     */
@@ -594,6 +639,7 @@ trait AlexaForBusiness extends Service {
     params: GetGatewayGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGatewayGroupResponse, Unit]
   ): Request[GetGatewayGroupResponse, AWSError] = js.native
+  
   /**
     * Retrieves the configured values for the user enrollment invitation email template.
     */
@@ -607,6 +653,7 @@ trait AlexaForBusiness extends Service {
     params: GetInvitationConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInvitationConfigurationResponse, Unit]
   ): Request[GetInvitationConfigurationResponse, AWSError] = js.native
+  
   /**
     * Gets the network profile details by the network profile ARN.
     */
@@ -620,6 +667,7 @@ trait AlexaForBusiness extends Service {
     params: GetNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetNetworkProfileResponse, Unit]
   ): Request[GetNetworkProfileResponse, AWSError] = js.native
+  
   /**
     * Gets the details of a room profile by profile ARN.
     */
@@ -633,6 +681,7 @@ trait AlexaForBusiness extends Service {
     params: GetProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetProfileResponse, Unit]
   ): Request[GetProfileResponse, AWSError] = js.native
+  
   /**
     * Gets room details by room ARN.
     */
@@ -646,6 +695,7 @@ trait AlexaForBusiness extends Service {
     params: GetRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRoomResponse, Unit]
   ): Request[GetRoomResponse, AWSError] = js.native
+  
   /**
     * Gets room skill parameter details by room, skill, and parameter key ARN.
     */
@@ -659,6 +709,7 @@ trait AlexaForBusiness extends Service {
     params: GetRoomSkillParameterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRoomSkillParameterResponse, Unit]
   ): Request[GetRoomSkillParameterResponse, AWSError] = js.native
+  
   /**
     * Gets skill group details by skill group ARN.
     */
@@ -672,6 +723,7 @@ trait AlexaForBusiness extends Service {
     params: GetSkillGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSkillGroupResponse, Unit]
   ): Request[GetSkillGroupResponse, AWSError] = js.native
+  
   /**
     * Lists the details of the schedules that a user configured. A download URL of the report associated with each schedule is returned every time this action is called. A new download URL is returned each time, and is valid for 24 hours.
     */
@@ -685,6 +737,7 @@ trait AlexaForBusiness extends Service {
     params: ListBusinessReportSchedulesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBusinessReportSchedulesResponse, Unit]
   ): Request[ListBusinessReportSchedulesResponse, AWSError] = js.native
+  
   /**
     * Lists conference providers under a specific AWS account.
     */
@@ -698,6 +751,7 @@ trait AlexaForBusiness extends Service {
     params: ListConferenceProvidersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConferenceProvidersResponse, Unit]
   ): Request[ListConferenceProvidersResponse, AWSError] = js.native
+  
   /**
     * Lists the device event history, including device connection status, for up to 30 days.
     */
@@ -711,6 +765,7 @@ trait AlexaForBusiness extends Service {
     params: ListDeviceEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeviceEventsResponse, Unit]
   ): Request[ListDeviceEventsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of gateway group summaries. Use GetGatewayGroup to retrieve details of a specific gateway group.
     */
@@ -724,6 +779,7 @@ trait AlexaForBusiness extends Service {
     params: ListGatewayGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGatewayGroupsResponse, Unit]
   ): Request[ListGatewayGroupsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of gateway summaries. Use GetGateway to retrieve details of a specific gateway. An optional gateway group ARN can be provided to only retrieve gateway summaries of gateways that are associated with that gateway group ARN.
     */
@@ -737,6 +793,7 @@ trait AlexaForBusiness extends Service {
     params: ListGatewaysRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGatewaysResponse, Unit]
   ): Request[ListGatewaysResponse, AWSError] = js.native
+  
   /**
     * Lists all enabled skills in a specific skill group.
     */
@@ -750,6 +807,7 @@ trait AlexaForBusiness extends Service {
     params: ListSkillsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSkillsResponse, Unit]
   ): Request[ListSkillsResponse, AWSError] = js.native
+  
   /**
     * Lists all categories in the Alexa skill store.
     */
@@ -763,6 +821,7 @@ trait AlexaForBusiness extends Service {
     params: ListSkillsStoreCategoriesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSkillsStoreCategoriesResponse, Unit]
   ): Request[ListSkillsStoreCategoriesResponse, AWSError] = js.native
+  
   /**
     * Lists all skills in the Alexa skill store by category.
     */
@@ -778,6 +837,7 @@ trait AlexaForBusiness extends Service {
     params: ListSkillsStoreSkillsByCategoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSkillsStoreSkillsByCategoryResponse, Unit]
   ): Request[ListSkillsStoreSkillsByCategoryResponse, AWSError] = js.native
+  
   /**
     * Lists all of the smart home appliances associated with a room.
     */
@@ -791,6 +851,7 @@ trait AlexaForBusiness extends Service {
     params: ListSmartHomeAppliancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSmartHomeAppliancesResponse, Unit]
   ): Request[ListSmartHomeAppliancesResponse, AWSError] = js.native
+  
   /**
     * Lists all tags for the specified resource.
     */
@@ -804,6 +865,7 @@ trait AlexaForBusiness extends Service {
     params: ListTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
+  
   /**
     * Sets the conference preferences on a specific conference provider at the account level.
     */
@@ -817,6 +879,7 @@ trait AlexaForBusiness extends Service {
     params: PutConferencePreferenceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutConferencePreferenceResponse, Unit]
   ): Request[PutConferencePreferenceResponse, AWSError] = js.native
+  
   /**
     * Configures the email template for the user enrollment invitation with the specified attributes.
     */
@@ -830,6 +893,7 @@ trait AlexaForBusiness extends Service {
     params: PutInvitationConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutInvitationConfigurationResponse, Unit]
   ): Request[PutInvitationConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates room skill parameter details by room, skill, and parameter key ID. Not all skills have a room skill parameter.
     */
@@ -843,6 +907,7 @@ trait AlexaForBusiness extends Service {
     params: PutRoomSkillParameterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRoomSkillParameterResponse, Unit]
   ): Request[PutRoomSkillParameterResponse, AWSError] = js.native
+  
   /**
     * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
     */
@@ -856,6 +921,7 @@ trait AlexaForBusiness extends Service {
     params: PutSkillAuthorizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutSkillAuthorizationResponse, Unit]
   ): Request[PutSkillAuthorizationResponse, AWSError] = js.native
+  
   /**
     * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
     */
@@ -869,6 +935,7 @@ trait AlexaForBusiness extends Service {
     params: RegisterAVSDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterAVSDeviceResponse, Unit]
   ): Request[RegisterAVSDeviceResponse, AWSError] = js.native
+  
   /**
     * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
     */
@@ -882,6 +949,7 @@ trait AlexaForBusiness extends Service {
     params: RejectSkillRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RejectSkillResponse, Unit]
   ): Request[RejectSkillResponse, AWSError] = js.native
+  
   /**
     * Determines the details for the room from which a skill request was invoked. This operation is used by skill developers.
     */
@@ -895,6 +963,7 @@ trait AlexaForBusiness extends Service {
     params: ResolveRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResolveRoomResponse, Unit]
   ): Request[ResolveRoomResponse, AWSError] = js.native
+  
   /**
     * Revokes an invitation and invalidates the enrollment URL.
     */
@@ -908,6 +977,7 @@ trait AlexaForBusiness extends Service {
     params: RevokeInvitationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RevokeInvitationResponse, Unit]
   ): Request[RevokeInvitationResponse, AWSError] = js.native
+  
   /**
     * Searches address books and lists the ones that meet a set of filter and sort criteria.
     */
@@ -921,6 +991,7 @@ trait AlexaForBusiness extends Service {
     params: SearchAddressBooksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchAddressBooksResponse, Unit]
   ): Request[SearchAddressBooksResponse, AWSError] = js.native
+  
   /**
     * Searches contacts and lists the ones that meet a set of filter and sort criteria.
     */
@@ -934,6 +1005,7 @@ trait AlexaForBusiness extends Service {
     params: SearchContactsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchContactsResponse, Unit]
   ): Request[SearchContactsResponse, AWSError] = js.native
+  
   /**
     * Searches devices and lists the ones that meet a set of filter criteria.
     */
@@ -947,6 +1019,7 @@ trait AlexaForBusiness extends Service {
     params: SearchDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchDevicesResponse, Unit]
   ): Request[SearchDevicesResponse, AWSError] = js.native
+  
   /**
     * Searches network profiles and lists the ones that meet a set of filter and sort criteria.
     */
@@ -960,6 +1033,7 @@ trait AlexaForBusiness extends Service {
     params: SearchNetworkProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchNetworkProfilesResponse, Unit]
   ): Request[SearchNetworkProfilesResponse, AWSError] = js.native
+  
   /**
     * Searches room profiles and lists the ones that meet a set of filter criteria.
     */
@@ -973,6 +1047,7 @@ trait AlexaForBusiness extends Service {
     params: SearchProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchProfilesResponse, Unit]
   ): Request[SearchProfilesResponse, AWSError] = js.native
+  
   /**
     * Searches rooms and lists the ones that meet a set of filter and sort criteria.
     */
@@ -986,6 +1061,7 @@ trait AlexaForBusiness extends Service {
     params: SearchRoomsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchRoomsResponse, Unit]
   ): Request[SearchRoomsResponse, AWSError] = js.native
+  
   /**
     * Searches skill groups and lists the ones that meet a set of filter and sort criteria.
     */
@@ -999,6 +1075,7 @@ trait AlexaForBusiness extends Service {
     params: SearchSkillGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchSkillGroupsResponse, Unit]
   ): Request[SearchSkillGroupsResponse, AWSError] = js.native
+  
   /**
     * Searches users and lists the ones that meet a set of filter and sort criteria.
     */
@@ -1012,6 +1089,7 @@ trait AlexaForBusiness extends Service {
     params: SearchUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchUsersResponse, Unit]
   ): Request[SearchUsersResponse, AWSError] = js.native
+  
   /**
     * Triggers an asynchronous flow to send text, SSML, or audio announcements to rooms that are identified by a search or filter. 
     */
@@ -1025,6 +1103,7 @@ trait AlexaForBusiness extends Service {
     params: SendAnnouncementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendAnnouncementResponse, Unit]
   ): Request[SendAnnouncementResponse, AWSError] = js.native
+  
   /**
     * Sends an enrollment invitation email with a URL to a user. The URL is valid for 30 days or until you call this operation again, whichever comes first. 
     */
@@ -1038,6 +1117,7 @@ trait AlexaForBusiness extends Service {
     params: SendInvitationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendInvitationResponse, Unit]
   ): Request[SendInvitationResponse, AWSError] = js.native
+  
   /**
     * Resets a device and its account to the known default settings. This clears all information and settings set by previous users in the following ways:   Bluetooth - This unpairs all bluetooth devices paired with your echo device.   Volume - This resets the echo device's volume to the default value.   Notifications - This clears all notifications from your echo device.   Lists - This clears all to-do items from your echo device.   Settings - This internally syncs the room's profile (if the device is assigned to a room), contacts, address books, delegation access for account linking, and communications (if enabled on the room profile).  
     */
@@ -1051,6 +1131,7 @@ trait AlexaForBusiness extends Service {
     params: StartDeviceSyncRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartDeviceSyncResponse, Unit]
   ): Request[StartDeviceSyncResponse, AWSError] = js.native
+  
   /**
     * Initiates the discovery of any smart home appliances associated with the room.
     */
@@ -1066,6 +1147,7 @@ trait AlexaForBusiness extends Service {
     params: StartSmartHomeApplianceDiscoveryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartSmartHomeApplianceDiscoveryResponse, Unit]
   ): Request[StartSmartHomeApplianceDiscoveryResponse, AWSError] = js.native
+  
   /**
     * Adds metadata tags to a specified resource.
     */
@@ -1079,6 +1161,7 @@ trait AlexaForBusiness extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes metadata tags from a specified resource.
     */
@@ -1092,6 +1175,7 @@ trait AlexaForBusiness extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates address book details by the address book ARN.
     */
@@ -1105,6 +1189,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateAddressBookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAddressBookResponse, Unit]
   ): Request[UpdateAddressBookResponse, AWSError] = js.native
+  
   /**
     * Updates the configuration of the report delivery schedule with the specified schedule ARN.
     */
@@ -1118,6 +1203,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateBusinessReportScheduleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBusinessReportScheduleResponse, Unit]
   ): Request[UpdateBusinessReportScheduleResponse, AWSError] = js.native
+  
   /**
     * Updates an existing conference provider's settings.
     */
@@ -1131,6 +1217,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateConferenceProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConferenceProviderResponse, Unit]
   ): Request[UpdateConferenceProviderResponse, AWSError] = js.native
+  
   /**
     * Updates the contact details by the contact ARN.
     */
@@ -1144,6 +1231,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactResponse, Unit]
   ): Request[UpdateContactResponse, AWSError] = js.native
+  
   /**
     * Updates the device name by device ARN.
     */
@@ -1157,6 +1245,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceResponse, Unit]
   ): Request[UpdateDeviceResponse, AWSError] = js.native
+  
   /**
     * Updates the details of a gateway. If any optional field is not provided, the existing corresponding value is left unmodified.
     */
@@ -1170,6 +1259,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateGatewayRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGatewayResponse, Unit]
   ): Request[UpdateGatewayResponse, AWSError] = js.native
+  
   /**
     * Updates the details of a gateway group. If any optional field is not provided, the existing corresponding value is left unmodified.
     */
@@ -1183,6 +1273,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateGatewayGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGatewayGroupResponse, Unit]
   ): Request[UpdateGatewayGroupResponse, AWSError] = js.native
+  
   /**
     * Updates a network profile by the network profile ARN.
     */
@@ -1196,6 +1287,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateNetworkProfileResponse, Unit]
   ): Request[UpdateNetworkProfileResponse, AWSError] = js.native
+  
   /**
     * Updates an existing room profile by room profile ARN.
     */
@@ -1209,6 +1301,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProfileResponse, Unit]
   ): Request[UpdateProfileResponse, AWSError] = js.native
+  
   /**
     * Updates room details by room ARN.
     */
@@ -1222,6 +1315,7 @@ trait AlexaForBusiness extends Service {
     params: UpdateRoomRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomResponse, Unit]
   ): Request[UpdateRoomResponse, AWSError] = js.native
+  
   /**
     * Updates skill group details by skill group ARN.
     */
@@ -1236,4 +1330,3 @@ trait AlexaForBusiness extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSkillGroupResponse, Unit]
   ): Request[UpdateSkillGroupResponse, AWSError] = js.native
 }
-

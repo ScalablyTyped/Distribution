@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.std.RTCSrtpSdesParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCSrtpSdesTransport")
 @js.native
@@ -16,7 +16,6 @@ class RTCSrtpSdesTransport protected ()
     decryptParameters: RTCSrtpSdesParameters
   ) = this()
 }
-
 @JSGlobal("RTCSrtpSdesTransport")
 @js.native
 object RTCSrtpSdesTransport
@@ -26,6 +25,6 @@ object RTCSrtpSdesTransport
       /* decryptParameters */ RTCSrtpSdesParameters, 
       typings.std.RTCSrtpSdesTransport
     ] {
+  
   def getLocalParameters(): js.Array[RTCSrtpSdesParameters] = js.native
 }
-

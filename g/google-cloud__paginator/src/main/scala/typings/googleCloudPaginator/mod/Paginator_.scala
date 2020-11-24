@@ -3,11 +3,12 @@ package typings.googleCloudPaginator.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/paginator", "Paginator")
 @js.native
 class Paginator_ () extends js.Object {
+  
   /**
     * Cache the original method, then overwrite it on the Class's prototype.
     *
@@ -16,6 +17,7 @@ class Paginator_ () extends js.Object {
     */
   def extend(Class: js.Function, methodNames: String): Unit = js.native
   def extend(Class: js.Function, methodNames: js.Array[String]): Unit = js.native
+  
   /**
     * Parse a pseudo-array `arguments` for a query and callback.
     *
@@ -23,6 +25,7 @@ class Paginator_ () extends js.Object {
     *     method received.
     */
   def parseArguments_(args: js.Array[_]): ParsedArguments = js.native
+  
   /**
     * This method simply calls the nextQuery recursively, emitting results to a
     * stream. The stream ends when `nextQuery` is null.
@@ -42,6 +45,7 @@ class Paginator_ () extends js.Object {
     * @return {stream} - Readable object stream.
     */
   def runAsStream_[T](parsedArguments: ParsedArguments, originalMethod: js.Function): typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T] = js.native
+  
   /**
     * This simply checks to see if `autoPaginate` is set or not, if it's true
     * then we buffer all results, otherwise simply call the original method.
@@ -59,6 +63,7 @@ class Paginator_ () extends js.Object {
     *     and returns `nextQuery` to receive more results.
     */
   def run_(parsedArguments: ParsedArguments, originalMethod: js.Function): js.Any = js.native
+  
   /**
     * Wraps paginated API calls in a readable object stream.
     *
@@ -77,4 +82,3 @@ class Paginator_ () extends js.Object {
     typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T]
   ] = js.native
 }
-

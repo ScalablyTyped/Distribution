@@ -4,14 +4,16 @@ import typings.pulumiAws.lambdaMixinsMod.Callback
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("@pulumi/aws/cloudwatch/logGroup", JSImport.Namespace)
 @js.native
 object pulumiAwsCloudwatchLogGroupAugmentingMod extends js.Object {
+  
   @js.native
   trait LogGroup extends js.Object {
+    
     /**
       * Creates a new subscription to events fired from this LogGroup to the callback provided,
       * along with options to control the behavior of the subscription.
@@ -34,6 +36,7 @@ object pulumiAwsCloudwatchLogGroupAugmentingMod extends js.Object {
       args: LogGroupEventSubscriptionArgs,
       opts: ComponentResourceOptions
     ): LogGroupEventSubscription = js.native
+    
     /**
       * Creates a new subscription to events fired from this LogGroup to the handler provided,
       * along with options to control the behavior of the subscription.
@@ -55,6 +58,4 @@ object pulumiAwsCloudwatchLogGroupAugmentingMod extends js.Object {
       opts: ComponentResourceOptions
     ): LogGroupEventSubscription = js.native
   }
-  
 }
-

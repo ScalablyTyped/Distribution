@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.move")
 @js.native
 object move extends js.Object {
+  
   /**
     * Move an element in an array from one index to another.
     *
@@ -35,4 +36,3 @@ object move extends js.Object {
     */
   def apply[T](array: MutableArrayLike[T], fromIndex: Double, toIndex: Double): Unit = js.native
 }
-

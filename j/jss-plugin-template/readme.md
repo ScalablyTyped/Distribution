@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-template
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 JSS plugin enables string templates
@@ -10,9 +10,9 @@ JSS plugin enables string templates
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-template |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, template |
-| # releases         | 32 |
-| # dependents       | 1 |
-| # downloads        | 531491 |
+| # releases         | 39 |
+| # dependents       | 2 |
+| # downloads        | 2570762 |
 | # stars            | 0 |
 
 ## Links

@@ -16,10 +16,11 @@ import typings.progressStream.progressStreamStrings.unpipe
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProgressStream extends Transform {
+  
   // We have to redeclare all on/once overloads from stream.Transform in
   // order for this ProgressStream interface to extend stream.Transform
   // correctly. Using an intersection type instead may be an option once
@@ -54,6 +55,7 @@ trait ProgressStream extends Transform {
   /* tslint:disable-next-line unified-signatures */
   @JSName("on")
   def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   /* tslint:disable-next-line adjacent-overload-signatures */
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
@@ -82,7 +84,8 @@ trait ProgressStream extends Transform {
   /* tslint:disable-next-line unified-signatures */
   @JSName("once")
   def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def progress(): Progress = js.native
+  
   def setLength(length: Double): Unit = js.native
 }
-

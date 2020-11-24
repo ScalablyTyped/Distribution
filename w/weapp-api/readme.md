@@ -11,7 +11,7 @@ wechat api
 | Keywords           | weapp, wechat, api |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 209 |
+| # downloads        | 414 |
 | # stars            | 0 |
 
 ## Links

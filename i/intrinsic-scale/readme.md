@@ -11,8 +11,8 @@ Replicate background-size: cover/contain (scale+crop) for canvas/CSS/Node/… on
 | Full name          | intrinsic-scale |
 | Keywords           | background-size, browser, canvas, contain, cover, crop, css, image, intrinsic, media, object-fit, scale, video, webcam |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 17467 |
+| # dependents       | 3 |
+| # downloads        | 24763 |
 | # stars            | 2 |
 
 ## Links

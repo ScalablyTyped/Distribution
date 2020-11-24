@@ -44,12 +44,11 @@ import typings.semanticUiShape.semanticUiShapeStrings.verbose
 import typings.semanticUiShape.semanticUiShapeStrings.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("shape")
-  var shape_Original: Shape = js.native
+  
   def shape(): JQuery = js.native
   def shape(behavior: setting, name: beforeChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def shape(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
@@ -87,6 +86,8 @@ trait JQuery extends js.Object {
   def shape_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
   @JSName("shape")
   def shape_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  @JSName("shape")
+  var shape_Original: Shape = js.native
   @JSName("shape")
   def shape_destroy(behavior: destroy): JQuery = js.native
   /**
@@ -184,4 +185,3 @@ trait JQuery extends js.Object {
   @JSName("shape")
   def shape_setting(behavior: setting, value: ShapeSettings): JQuery = js.native
 }
-

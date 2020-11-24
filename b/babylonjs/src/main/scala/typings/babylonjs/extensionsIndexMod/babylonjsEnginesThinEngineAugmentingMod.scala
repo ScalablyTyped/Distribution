@@ -2,30 +2,37 @@ package typings.babylonjs.extensionsIndexMod
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
-import typings.babylonjs.anon.Height
+import typings.babylonjs.ImageBitmap
 import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.babylonjs.depthTextureCreationOptionsMod.DepthTextureCreationOptions
+import typings.babylonjs.engineRenderTargetMod.RenderTargetTextureSize
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.ipipelinecontextMod.IPipelineContext
 import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
 import typings.babylonjs.renderTargetCreationOptionsMod.RenderTargetCreationOptions
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.FloatArray
+import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBuffer
+import typings.std.ArrayBufferView
 import typings.std.HTMLImageElement
+import typings.std.ImageData
 import typings.std.OffscreenCanvas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("babylonjs/Engines/Extensions/index", "babylonjs/Engines/thinEngine")
 @js.native
 object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
+  
   @js.native
   trait ThinEngine extends js.Object {
+    
     /** @hidden */
     def _cascadeLoadFiles(
       scene: Nullable[Scene],
@@ -35,6 +42,7 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
         ]
     ): Unit = js.native
+    
     /** @hidden */
     def _cascadeLoadImgs(
       scene: Nullable[Scene],
@@ -53,6 +61,7 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
         ],
       mimeType: String
     ): Unit = js.native
+    
     /**
       * Creates a depth stencil cube texture.
       * This is only available in WebGL 2.
@@ -61,9 +70,10 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       * @returns The cube texture
       */
     def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
+    
     /** @hidden */
-    def _createDepthStencilTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
-    def _createDepthStencilTexture(size: Height, options: DepthTextureCreationOptions): InternalTexture = js.native
+    def _createDepthStencilTexture(size: RenderTargetTextureSize, options: DepthTextureCreationOptions): InternalTexture = js.native
+    
     /** @hidden */
     def _partialLoadFile(
       url: String,
@@ -74,6 +84,7 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
         ]
     ): Unit = js.native
+    
     /** @hidden */
     def _partialLoadImg(
       url: String,
@@ -96,10 +107,62 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
         ],
       mimeType: String
     ): Unit = js.native
+    
+    /** @hidden */
+    def _readTexturePixels(texture: InternalTexture, width: Double, height: Double): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: js.UndefOr[scala.Nothing],
+      level: js.UndefOr[scala.Nothing],
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: js.UndefOr[scala.Nothing],
+      level: Double
+    ): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: js.UndefOr[scala.Nothing],
+      level: Double,
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
+    def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: Double,
+      level: js.UndefOr[scala.Nothing],
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
+    def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double, level: Double): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: Double,
+      level: Double,
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
+    
     /**
       * @hidden
       */
-    def _setCubeMapTextureParams(loadMipmap: Boolean): Unit = js.native
+    def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
+    
+    /**
+      * Select a subsets of attachments to draw to.
+      * @param attachments gl attachments
+      */
+    def bindAttachments(attachments: js.Array[Double]): Unit = js.native
+    
     /**
       * Bind a specific block at a given index in a specific shader program
       * @param pipelineContext defines the pipeline context to use
@@ -107,48 +170,104 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       * @param index defines the index where to bind the block
       */
     def bindUniformBlock(pipelineContext: IPipelineContext, blockName: String, index: Double): Unit = js.native
+    
     /**
       * Bind an uniform buffer to the current webGL context
       * @param buffer defines the buffer to bind
       */
     def bindUniformBuffer(buffer: Nullable[DataBuffer]): Unit = js.native
+    
     /**
       * Bind a buffer to the current webGL context at a given location
       * @param buffer defines the buffer to bind
       * @param location defines the index where to bind the buffer
       */
     def bindUniformBufferBase(buffer: DataBuffer, location: Double): Unit = js.native
+    
     /**
-      * Creates a cube texture
-      * @param rootUrl defines the url where the files to load is located
-      * @param scene defines the current scene
-      * @param files defines the list of files to load (1 per face)
-      * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
-      * @param onLoad defines an optional callback raised when the texture is loaded
-      * @param onError defines an optional callback raised if there is an issue to load the texture
-      * @param format defines the format of the data
-      * @param forcedExtension defines the extension to use to pick the right loader
-      * @param createPolynomials if a polynomial sphere should be created for the cube texture
-      * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
-      * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
-      * @param fallback defines texture to use while falling back when (compressed) texture file not found.
-      * @returns the cube texture as an InternalTexture
+      * Creates a layout object to draw/clear on specific textures in a MRT
+      * @param textureStatus textureStatus[i] indicates if the i-th is active
+      * @returns A layout to be fed to the engine, calling `bindAttachments`.
       */
+    def buildTextureLayout(textureStatus: js.Array[Boolean]): js.Array[Double] = js.native
+    
     def createCubeTexture(
       rootUrl: String,
       scene: Nullable[Scene],
       files: Nullable[js.Array[String]],
-      noMipmap: js.UndefOr[Boolean],
+      noMipmap: js.UndefOr[scala.Nothing],
       onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
       onError: Nullable[
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
         ],
-      format: js.UndefOr[Double],
+      format: js.UndefOr[scala.Nothing],
       forcedExtension: js.Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double,
-      fallback: Nullable[InternalTexture]
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: js.UndefOr[scala.Nothing],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: js.UndefOr[scala.Nothing],
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: js.UndefOr[scala.Nothing],
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: js.UndefOr[scala.Nothing],
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
     ): InternalTexture = js.native
     /**
       * Creates a cube texture
@@ -171,7 +290,7 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       onError: Nullable[
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
         ],
-      format: js.UndefOr[Double],
+      format: Double,
       forcedExtension: js.Any
     ): InternalTexture = js.native
     /**
@@ -198,12 +317,47 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       onError: Nullable[
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
         ],
-      format: js.UndefOr[Double],
+      format: Double,
       forcedExtension: js.Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double
     ): InternalTexture = js.native
+    /**
+      * Creates a cube texture
+      * @param rootUrl defines the url where the files to load is located
+      * @param scene defines the current scene
+      * @param files defines the list of files to load (1 per face)
+      * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
+      * @param onLoad defines an optional callback raised when the texture is loaded
+      * @param onError defines an optional callback raised if there is an issue to load the texture
+      * @param format defines the format of the data
+      * @param forcedExtension defines the extension to use to pick the right loader
+      * @param createPolynomials if a polynomial sphere should be created for the cube texture
+      * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
+      * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
+      * @param fallback defines texture to use while falling back when (compressed) texture file not found.
+      * @param loaderOptions options to be passed to the loader
+      * @returns the cube texture as an InternalTexture
+      */
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
+    ): InternalTexture = js.native
+    
     /**
       * Creates a depth stencil texture.
       * This is only available in WebGL 2 or with the depth texture extension available.
@@ -211,8 +365,8 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       * @param options The options defining the texture.
       * @returns The texture
       */
-    def createDepthStencilTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
-    def createDepthStencilTexture(size: Height, options: DepthTextureCreationOptions): InternalTexture = js.native
+    def createDepthStencilTexture(size: RenderTargetTextureSize, options: DepthTextureCreationOptions): InternalTexture = js.native
+    
     /**
       * Creates a dynamic texture
       * @param width defines the width of the texture
@@ -222,21 +376,191 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       * @returns the dynamic texture inside an InternalTexture
       */
     def createDynamicTexture(width: Double, height: Double, generateMipMaps: Boolean, samplingMode: Double): InternalTexture = js.native
+    
     /**
       * Create a dynamic uniform buffer
-      * @see http://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
       * @param elements defines the content of the uniform buffer
       * @returns the webGL uniform buffer
       */
     def createDynamicUniformBuffer(elements: FloatArray): DataBuffer = js.native
+    
     /**
       * Create a multi render target texture
-      * @see http://doc.babylonjs.com/features/webgl2#multiple-render-target
+      * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
       * @param size defines the size of the texture
       * @param options defines the creation options
       * @returns the cube texture as an InternalTexture
       */
     def createMultipleRenderTarget(size: js.Any, options: IMultiRenderTargetOptions): js.Array[InternalTexture] = js.native
+    
+    /**
+      * Creates a new raw cube texture
+      * @param data defines the array of data to use to create each face
+      * @param size defines the size of the textures
+      * @param format defines the format of the data
+      * @param type defines the type of the data (like Engine.TEXTURETYPE_UNSIGNED_INT)
+      * @param generateMipMaps  defines if the engine should generate the mip levels
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
+      * @param compression defines the compression used (null by default)
+      * @returns the cube texture as an InternalTexture
+      */
+    def createRawCubeTexture(
+      data: Nullable[js.Array[ArrayBufferView]],
+      size: Double,
+      format: Double,
+      `type`: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String]
+    ): InternalTexture = js.native
+    
+    /**
+      * Creates a new raw cube texture from a specified url
+      * @param url defines the url where the data is located
+      * @param scene defines the current scene
+      * @param size defines the size of the textures
+      * @param format defines the format of the data
+      * @param type defines the type fo the data (like Engine.TEXTURETYPE_UNSIGNED_INT)
+      * @param noMipmap defines if the engine should avoid generating the mip levels
+      * @param callback defines a callback used to extract texture data from loaded data
+      * @param mipmapGenerator defines to provide an optional tool to generate mip levels
+      * @param onLoad defines a callback called when texture is loaded
+      * @param onError defines a callback called if there is an error
+      * @returns the cube texture as an InternalTexture
+      */
+    def createRawCubeTextureFromUrl(
+      url: String,
+      scene: Nullable[Scene],
+      size: Double,
+      format: Double,
+      `type`: Double,
+      noMipmap: Boolean,
+      callback: js.Function1[/* ArrayBuffer */ ArrayBuffer, Nullable[js.Array[ArrayBufferView]]],
+      mipmapGenerator: Nullable[
+          js.Function1[/* faces */ js.Array[ArrayBufferView], js.Array[js.Array[ArrayBufferView]]]
+        ],
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ]
+    ): InternalTexture = js.native
+    /**
+      * Creates a new raw cube texture from a specified url
+      * @param url defines the url where the data is located
+      * @param scene defines the current scene
+      * @param size defines the size of the textures
+      * @param format defines the format of the data
+      * @param type defines the type fo the data (like Engine.TEXTURETYPE_UNSIGNED_INT)
+      * @param noMipmap defines if the engine should avoid generating the mip levels
+      * @param callback defines a callback used to extract texture data from loaded data
+      * @param mipmapGenerator defines to provide an optional tool to generate mip levels
+      * @param onLoad defines a callback called when texture is loaded
+      * @param onError defines a callback called if there is an error
+      * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @returns the cube texture as an InternalTexture
+      */
+    def createRawCubeTextureFromUrl(
+      url: String,
+      scene: Nullable[Scene],
+      size: Double,
+      format: Double,
+      `type`: Double,
+      noMipmap: Boolean,
+      callback: js.Function1[/* ArrayBuffer */ ArrayBuffer, Nullable[js.Array[ArrayBufferView]]],
+      mipmapGenerator: Nullable[
+          js.Function1[/* faces */ js.Array[ArrayBufferView], js.Array[js.Array[ArrayBufferView]]]
+        ],
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      samplingMode: Double,
+      invertY: Boolean
+    ): InternalTexture = js.native
+    
+    /**
+      * Creates a raw texture
+      * @param data defines the data to store in the texture
+      * @param width defines the width of the texture
+      * @param height defines the height of the texture
+      * @param format defines the format of the data
+      * @param generateMipMaps defines if the engine should generate the mip levels
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param samplingMode defines the required sampling mode (Texture.NEAREST_SAMPLINGMODE by default)
+      * @param compression defines the compression used (null by default)
+      * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @returns the raw texture inside an InternalTexture
+      */
+    def createRawTexture(
+      data: Nullable[ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Double
+    ): InternalTexture = js.native
+    
+    /**
+      * Creates a new raw 2D array texture
+      * @param data defines the data used to create the texture
+      * @param width defines the width of the texture
+      * @param height defines the height of the texture
+      * @param depth defines the number of layers of the texture
+      * @param format defines the format of the texture
+      * @param generateMipMaps defines if the engine must generate mip levels
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
+      * @param compression defines the compressed used (can be null)
+      * @param textureType defines the compressed used (can be null)
+      * @returns a new raw 2D array texture (stored in an InternalTexture)
+      */
+    def createRawTexture2DArray(
+      data: Nullable[ArrayBufferView],
+      width: Double,
+      height: Double,
+      depth: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      textureType: Double
+    ): InternalTexture = js.native
+    
+    /**
+      * Creates a new raw 3D texture
+      * @param data defines the data used to create the texture
+      * @param width defines the width of the texture
+      * @param height defines the height of the texture
+      * @param depth defines the depth of the texture
+      * @param format defines the format of the texture
+      * @param generateMipMaps defines if the engine must generate mip levels
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
+      * @param compression defines the compressed used (can be null)
+      * @param textureType defines the compressed used (can be null)
+      * @returns a new raw 3D texture (stored in an InternalTexture)
+      */
+    def createRawTexture3D(
+      data: Nullable[ArrayBufferView],
+      width: Double,
+      height: Double,
+      depth: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      textureType: Double
+    ): InternalTexture = js.native
+    
     /**
       * Creates a new render target cube texture
       * @param size defines the size of the texture
@@ -245,34 +569,42 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       */
     def createRenderTargetCubeTexture(size: Double): InternalTexture = js.native
     def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): InternalTexture = js.native
+    
     /**
       * Creates a new render target texture
       * @param size defines the size of the texture
       * @param options defines the options used to create the texture
       * @returns a new render target texture stored in an InternalTexture
       */
-    def createRenderTargetTexture(size: Double, options: Boolean): InternalTexture = js.native
-    def createRenderTargetTexture(size: Double, options: RenderTargetCreationOptions): InternalTexture = js.native
-    def createRenderTargetTexture(size: Height, options: Boolean): InternalTexture = js.native
-    def createRenderTargetTexture(size: Height, options: RenderTargetCreationOptions): InternalTexture = js.native
+    def createRenderTargetTexture(size: RenderTargetTextureSize, options: Boolean): InternalTexture = js.native
+    def createRenderTargetTexture(size: RenderTargetTextureSize, options: RenderTargetCreationOptions): InternalTexture = js.native
+    
     /**
       * Create an uniform buffer
-      * @see http://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
       * @param elements defines the content of the uniform buffer
       * @returns the webGL uniform buffer
       */
     def createUniformBuffer(elements: FloatArray): DataBuffer = js.native
+    
     /**
       * Gets the current alpha equation.
       * @returns the current alpha equation
       */
     def getAlphaEquation(): Double = js.native
+    
     /**
       * Gets the current alpha mode
-      * @see http://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+      * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
       * @returns the current alpha mode
       */
     def getAlphaMode(): Double = js.native
+    
+    /**
+      * Restores the webgl state to only draw on the main color attachment
+      */
+    def restoreSingleAttachment(): Unit = js.native
+    
     /**
       * Sets alpha constants used by some alpha blending modes
       * @param r defines the red component
@@ -281,19 +613,22 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       * @param a defines the alpha component
       */
     def setAlphaConstants(r: Double, g: Double, b: Double, a: Double): Unit = js.native
+    
     /**
       * Sets the current alpha equation
       * @param equation defines the equation to use (one of the Engine.ALPHA_EQUATION_XXX)
       */
     def setAlphaEquation(equation: Double): Unit = js.native
+    
     /**
       * Sets the current alpha mode
       * @param mode defines the mode to use (one of the Engine.ALPHA_XXX)
       * @param noDepthWriteChange defines if depth writing state should remains unchanged (false by default)
-      * @see http://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+      * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
       */
     def setAlphaMode(mode: Double): Unit = js.native
     def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
+    
     /**
       * Unbind a list of render target textures from the webGL context
       * This is used only when drawBuffer extension or webGL2 are active
@@ -307,78 +642,208 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       disableGenerateMipMaps: Boolean,
       onBeforeUnbind: js.Function0[Unit]
     ): Unit = js.native
+    
+    /**
+      * Update a dynamic index buffer
+      * @param indexBuffer defines the target index buffer
+      * @param indices defines the data to update
+      * @param offset defines the offset in the target index buffer where update should start
+      */
+    def updateDynamicIndexBuffer(indexBuffer: DataBuffer, indices: IndicesArray): Unit = js.native
+    def updateDynamicIndexBuffer(indexBuffer: DataBuffer, indices: IndicesArray, offset: Double): Unit = js.native
+    
     /**
       * Update the content of a dynamic texture
       * @param texture defines the texture to update
-      * @param canvas defines the canvas containing the source
+      * @param source defines the source containing the data
       * @param invertY defines if data must be stored with Y axis inverted
       * @param premulAlpha defines if alpha is stored as premultiplied
       * @param format defines the format of the data
       * @param forceBindTexture if the texture should be forced to be bound eg. after a graphics context loss (Default: false)
       */
-    def updateDynamicTexture(texture: Nullable[InternalTexture], canvas: HTMLCanvasElement, invertY: Boolean): Unit = js.native
     def updateDynamicTexture(
       texture: Nullable[InternalTexture],
-      canvas: HTMLCanvasElement,
-      invertY: Boolean,
-      premulAlpha: Boolean
+      source: ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas,
+      invertY: js.UndefOr[Boolean],
+      premulAlpha: js.UndefOr[Boolean],
+      format: js.UndefOr[Double],
+      forceBindTexture: js.UndefOr[Boolean]
     ): Unit = js.native
-    def updateDynamicTexture(
-      texture: Nullable[InternalTexture],
-      canvas: HTMLCanvasElement,
-      invertY: Boolean,
-      premulAlpha: Boolean,
-      format: Double
+    
+    /**
+      * Updates a dynamic vertex buffer.
+      * @param vertexBuffer the vertex buffer to update
+      * @param data the data used to update the vertex buffer
+      * @param byteOffset the byte offset of the data
+      * @param byteLength the byte length of the data
+      */
+    def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray): Unit = js.native
+    def updateDynamicVertexBuffer(
+      vertexBuffer: DataBuffer,
+      data: DataArray,
+      byteOffset: js.UndefOr[scala.Nothing],
+      byteLength: Double
     ): Unit = js.native
-    def updateDynamicTexture(
-      texture: Nullable[InternalTexture],
-      canvas: HTMLCanvasElement,
-      invertY: Boolean,
-      premulAlpha: Boolean,
-      format: Double,
-      forceBindTexture: Boolean
-    ): Unit = js.native
-    def updateDynamicTexture(texture: Nullable[InternalTexture], canvas: OffscreenCanvas, invertY: Boolean): Unit = js.native
-    def updateDynamicTexture(
-      texture: Nullable[InternalTexture],
-      canvas: OffscreenCanvas,
-      invertY: Boolean,
-      premulAlpha: Boolean
-    ): Unit = js.native
-    def updateDynamicTexture(
-      texture: Nullable[InternalTexture],
-      canvas: OffscreenCanvas,
-      invertY: Boolean,
-      premulAlpha: Boolean,
-      format: Double
-    ): Unit = js.native
-    def updateDynamicTexture(
-      texture: Nullable[InternalTexture],
-      canvas: OffscreenCanvas,
-      invertY: Boolean,
-      premulAlpha: Boolean,
-      format: Double,
-      forceBindTexture: Boolean
-    ): Unit = js.native
+    def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Double): Unit = js.native
+    def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Double, byteLength: Double): Unit = js.native
+    
     /**
       * Update the sample count for a given multiple render target texture
-      * @see http://doc.babylonjs.com/features/webgl2#multisample-render-targets
+      * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
       * @param textures defines the textures to update
       * @param samples defines the sample count to set
       * @returns the effective sample count (could be 0 if multisample render targets are not supported)
       */
     def updateMultipleRenderTargetTextureSampleCount(textures: Nullable[js.Array[InternalTexture]], samples: Double): Double = js.native
+    
+    /**
+      * Update a raw cube texture
+      * @param texture defines the texture to udpdate
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param invertY defines if data must be stored with Y axis inverted
+      */
+    def updateRawCubeTexture(
+      texture: InternalTexture,
+      data: js.Array[ArrayBufferView],
+      format: Double,
+      `type`: Double,
+      invertY: Boolean
+    ): Unit = js.native
+    /**
+      * Update a raw cube texture
+      * @param texture defines the texture to udpdate
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param compression defines the compression used (null by default)
+      */
+    def updateRawCubeTexture(
+      texture: InternalTexture,
+      data: js.Array[ArrayBufferView],
+      format: Double,
+      `type`: Double,
+      invertY: Boolean,
+      compression: Nullable[String]
+    ): Unit = js.native
+    /**
+      * Update a raw cube texture
+      * @param texture defines the texture to udpdate
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param compression defines the compression used (null by default)
+      * @param level defines which level of the texture to update
+      */
+    def updateRawCubeTexture(
+      texture: InternalTexture,
+      data: js.Array[ArrayBufferView],
+      format: Double,
+      `type`: Double,
+      invertY: Boolean,
+      compression: Nullable[String],
+      level: Double
+    ): Unit = js.native
+    
+    /**
+      * Update a raw texture
+      * @param texture defines the texture to update
+      * @param data defines the data to store in the texture
+      * @param format defines the format of the data
+      * @param invertY defines if data must be stored with Y axis inverted
+      */
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[ArrayBufferView],
+      format: Double,
+      invertY: Boolean
+    ): Unit = js.native
+    /**
+      * Update a raw texture
+      * @param texture defines the texture to update
+      * @param data defines the data to store in the texture
+      * @param format defines the format of the data
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param compression defines the compression used (null by default)
+      * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      */
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Nullable[String],
+      `type`: Double
+    ): Unit = js.native
+    
+    /**
+      * Update a raw 2D array texture
+      * @param texture defines the texture to update
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param invertY defines if data must be stored with Y axis inverted
+      */
+    def updateRawTexture2DArray(texture: InternalTexture, data: Nullable[ArrayBufferView], format: Double, invertY: Boolean): Unit = js.native
+    /**
+      * Update a raw 2D array texture
+      * @param texture defines the texture to update
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param compression defines the used compression (can be null)
+      * @param textureType defines the texture Type (Engine.TEXTURETYPE_UNSIGNED_INT, Engine.TEXTURETYPE_FLOAT...)
+      */
+    def updateRawTexture2DArray(
+      texture: InternalTexture,
+      data: Nullable[ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Nullable[String],
+      textureType: Double
+    ): Unit = js.native
+    
+    /**
+      * Update a raw 3D texture
+      * @param texture defines the texture to update
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param invertY defines if data must be stored with Y axis inverted
+      */
+    def updateRawTexture3D(texture: InternalTexture, data: Nullable[ArrayBufferView], format: Double, invertY: Boolean): Unit = js.native
+    /**
+      * Update a raw 3D texture
+      * @param texture defines the texture to update
+      * @param data defines the data to store
+      * @param format defines the data format
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param compression defines the used compression (can be null)
+      * @param textureType defines the texture Type (Engine.TEXTURETYPE_UNSIGNED_INT, Engine.TEXTURETYPE_FLOAT...)
+      */
+    def updateRawTexture3D(
+      texture: InternalTexture,
+      data: Nullable[ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Nullable[String],
+      textureType: Double
+    ): Unit = js.native
+    
     /**
       * Update an existing uniform buffer
-      * @see http://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
       * @param uniformBuffer defines the target uniform buffer
       * @param elements defines the content to update
       * @param offset defines the offset in the uniform buffer where update should start
       * @param count defines the size of the data to update
       */
     def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray): Unit = js.native
+    def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
     def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double): Unit = js.native
     def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double, count: Double): Unit = js.native
+    
     /**
       * Update a video texture
       * @param texture defines the texture to update
@@ -387,6 +852,4 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       */
     def updateVideoTexture(texture: Nullable[InternalTexture], video: HTMLVideoElement, invertY: Boolean): Unit = js.native
   }
-  
 }
-

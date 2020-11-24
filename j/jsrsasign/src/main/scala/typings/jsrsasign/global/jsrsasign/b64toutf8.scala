@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.b64toutf8")
 @js.native
 object b64toutf8 extends js.Object {
+  
   /**
     * convert a Base64 encoded string to a UTF-8 encoded string including CJK or Latin.
     * @param s Base64 encoded string
@@ -14,4 +15,3 @@ object b64toutf8 extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

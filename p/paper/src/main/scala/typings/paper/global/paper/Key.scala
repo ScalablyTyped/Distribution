@@ -2,17 +2,29 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("paper.Key")
 @js.native
 class Key ()
   extends typings.paper.paper.Key
-
 /* static members */
 @JSGlobal("paper.Key")
 @js.native
 object Key extends js.Object {
+  
+  /** 
+    * Checks whether the specified key is pressed.
+    * 
+    * @param key - any character or special key descriptor:
+    *     {@values 'enter', 'space', 'shift', 'control', 'alt', 'meta',
+    *     'caps-lock', 'left', 'up', 'right', 'down', 'escape', 'delete',
+    *     ...}
+    * 
+    * @return true if the key is pressed
+    */
+  def isDown(key: String): Boolean = js.native
+  
   /** 
     * The current state of the keyboard modifiers.
     * 
@@ -34,16 +46,4 @@ object Key extends js.Object {
     *     on Mac, or the control key is pressed on Windows and Linux}.
     */
   var modifiers: js.Any = js.native
-  /** 
-    * Checks whether the specified key is pressed.
-    * 
-    * @param key - any character or special key descriptor:
-    *     {@values 'enter', 'space', 'shift', 'control', 'alt', 'meta',
-    *     'caps-lock', 'left', 'up', 'right', 'down', 'escape', 'delete',
-    *     ...}
-    * 
-    * @return true if the key is pressed
-    */
-  def isDown(key: String): Boolean = js.native
 }
-

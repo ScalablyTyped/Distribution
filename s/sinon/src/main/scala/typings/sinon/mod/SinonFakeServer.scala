@@ -3,15 +3,11 @@ package typings.sinon.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SinonFakeServer extends SinonFakeServerOptions {
-  /**
-    * You can inspect the server.requests to verify request ordering, find unmatched requests or check that no requests has been done.
-    * server.requests is an array of all the FakeXMLHttpRequest objects that have been created.
-    */
-  var requests: js.Array[SinonFakeXMLHttpRequest] = js.native
+  
   // Properties
   /**
     * Used internally to determine the HTTP method used with the provided request.
@@ -21,6 +17,13 @@ trait SinonFakeServer extends SinonFakeServerOptions {
     * @param request
     */
   def getHTTPMethod(request: SinonFakeXMLHttpRequest): String = js.native
+  
+  /**
+    * You can inspect the server.requests to verify request ordering, find unmatched requests or check that no requests has been done.
+    * server.requests is an array of all the FakeXMLHttpRequest objects that have been created.
+    */
+  var requests: js.Array[SinonFakeXMLHttpRequest] = js.native
+  
   /**
     * Causes all queued asynchronous requests to receive a response.
     * If none of the responses added through respondWith match, the default response is [404, {}, ""].
@@ -28,6 +31,7 @@ trait SinonFakeServer extends SinonFakeServerOptions {
     * If called with arguments, respondWith will be called with those arguments before responding to requests.
     */
   def respond(): Unit = js.native
+  
   // Methods
   /**
     * Causes the server to respond to any request not matched by another response with the provided data. The default catch-all response is [404, {}, ""].
@@ -107,6 +111,6 @@ trait SinonFakeServer extends SinonFakeServerOptions {
     * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
     */
   def respondWith(url: RegExp, response: js.Array[_]): Unit = js.native
+  
   def restore(): Unit = js.native
 }
-

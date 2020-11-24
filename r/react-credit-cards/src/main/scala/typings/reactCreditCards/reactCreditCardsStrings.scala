@@ -3,9 +3,22 @@ package typings.reactCreditCards
 import typings.reactCreditCards.mod.Focused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactCreditCardsStrings {
+  
+  @scala.inline
+  def cvc: cvc = "cvc".asInstanceOf[cvc]
+  
+  @scala.inline
+  def expiry: expiry = "expiry".asInstanceOf[expiry]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
   @js.native
   sealed trait cvc extends Focused
   
@@ -17,14 +30,4 @@ object reactCreditCardsStrings {
   
   @js.native
   sealed trait number extends Focused
-  
-  @scala.inline
-  def cvc: cvc = "cvc".asInstanceOf[cvc]
-  @scala.inline
-  def expiry: expiry = "expiry".asInstanceOf[expiry]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
 }
-

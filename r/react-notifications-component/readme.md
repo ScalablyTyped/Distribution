@@ -10,9 +10,9 @@ React component for creating notifications on the fly
 | ------------------ | :-------------: |
 | Full name          | react-notifications-component |
 | Keywords           | react, react-component, react-notifications, notifications-component, toast-notifications, toast-component, notifications |
-| # releases         | 37 |
-| # dependents       | 7 |
-| # downloads        | 295993 |
+| # releases         | 27 |
+| # dependents       | 9 |
+| # downloads        | 618641 |
 | # stars            | 0 |
 
 ## Links

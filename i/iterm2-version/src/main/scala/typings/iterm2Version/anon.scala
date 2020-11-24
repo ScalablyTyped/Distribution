@@ -2,13 +2,15 @@ package typings.iterm2Version
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Get the [iTerm2](https://www.iterm2.com) version.
     	@returns iTerm2 version. If you're running this on a different terminal or operating system, it will return `undefined`.
@@ -21,6 +23,4 @@ object anon extends js.Object {
     	*/
     def apply(): js.UndefOr[String] = js.native
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.confidence
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("confidence", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   /**
     * @constructor
@@ -14,6 +15,7 @@ object mod extends js.Object {
     */
   class Store () extends js.Object {
     def this(document: js.Any) = this()
+    
     /**
       * Retrieves a value from the configuration document after applying the provided criteria where:
       *   @param {string} key - the requested key path. All keys must begin with '/'. '/' returns the the entire document.
@@ -23,11 +25,13 @@ object mod extends js.Object {
       */
     def get(key: String): js.Any = js.native
     def get(key: String, criteria: js.Any): js.Any = js.native
+    
     /**
       * Validates the provided configuration, clears any existing configuration, then loads the configuration where:
       *   @param {any} document - an object containing a confidence configuration object generated from a parsed JSON document. If the document is invlaid, will throw an error.
       */
     def load(document: js.Any): Unit = js.native
+    
     /**
       * Retrieves the metadata (if any) from the configuration document after applying the provided criteria where:
       *   @param {string} key - the requested key path. All keys must begin with '/'. '/' returns the the entire document.
@@ -38,6 +42,4 @@ object mod extends js.Object {
     def meta(key: String): js.Any = js.native
     def meta(key: String, criteria: js.Any): js.Any = js.native
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.semanticRelease.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * semantic-release options.
@@ -18,6 +18,7 @@ trait Options
   * Any other options supported by plugins.
   */
 /* name */ StringDictionary[js.Any] {
+  
   /**
     * The branches on which releases should happen. By default
     * **semantic-release** will release:
@@ -51,15 +52,18 @@ trait Options
     * for more details.
     */
   var branches: js.UndefOr[js.Array[BranchSpec] | BranchSpec] = js.native
+  
   /**
     * Set to false to skip Continuous Integration environment verifications.
     * This allows for making releases from a local machine.
     */
   var ci: js.UndefOr[Boolean] = js.native
+  
   /**
     * Dry-run mode, skip publishing, print next version and release notes.
     */
   var dryRun: js.UndefOr[Boolean] = js.native
+  
   /**
     * List of modules or file paths containing a
     * [shareable configuration](https://semantic-release.gitbook.io/semantic-release/usage/shareable-configurations).
@@ -73,6 +77,7 @@ trait Options
     * configuration.
     */
   var `extends`: js.UndefOr[js.Array[String] | String] = js.native
+  
   /**
     * Define the list of plugins to use. Plugins will run in series, in
     * the order defined, for each [step](https://semantic-release.gitbook.io/semantic-release/#release-steps)
@@ -92,6 +97,7 @@ trait Options
     * ]`
     */
   var plugins: js.UndefOr[js.Array[PluginSpec]] = js.native
+  
   /**
     * The git repository URL.
     *
@@ -101,6 +107,7 @@ trait Options
     * Default: `repository` property in `package.json`, or git origin url.
     */
   var repositoryUrl: js.UndefOr[String] = js.native
+  
   /**
     * The git tag format used by **semantic-release** to identify
     * releases. The tag name is generated with [Lodash template](https://lodash.com/docs#template)
@@ -112,59 +119,78 @@ trait Options
     */
   var tagFormat: js.UndefOr[String] = js.native
 }
-
 object Options {
+  
   @scala.inline
   def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
+  
   @scala.inline
   implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBranchesVarargs(value: BranchSpec*): Self = this.set("branches", js.Array(value :_*))
+    
     @scala.inline
     def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = this.set("branches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBranches: Self = this.set("branches", js.undefined)
+    
     @scala.inline
     def setCi(value: Boolean): Self = this.set("ci", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCi: Self = this.set("ci", js.undefined)
+    
     @scala.inline
     def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    
     @scala.inline
     def setExtendsVarargs(value: String*): Self = this.set("extends", js.Array(value :_*))
+    
     @scala.inline
     def setExtends(value: js.Array[String] | String): Self = this.set("extends", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExtends: Self = this.set("extends", js.undefined)
+    
     @scala.inline
     def setPluginsVarargs(value: PluginSpec*): Self = this.set("plugins", js.Array(value :_*))
+    
     @scala.inline
     def setPlugins(value: js.Array[PluginSpec]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePlugins: Self = this.set("plugins", js.undefined)
+    
     @scala.inline
     def setRepositoryUrl(value: String): Self = this.set("repositoryUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRepositoryUrl: Self = this.set("repositoryUrl", js.undefined)
+    
     @scala.inline
     def setTagFormat(value: String): Self = this.set("tagFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTagFormat: Self = this.set("tagFormat", js.undefined)
   }
-  
 }
-

@@ -4,11 +4,12 @@ import typings.loopback.mod.LoopBackApplication
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("loopback-boot", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Use this API in the app.js file of your server-side Node.js application.
     * ```
@@ -84,4 +85,3 @@ object ^ extends js.Object {
   def apply(app: LoopBackApplication, options: OptionsLB): Unit = js.native
   def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

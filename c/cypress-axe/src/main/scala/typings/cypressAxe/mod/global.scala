@@ -4,15 +4,18 @@ import typings.axeCore.mod.ElementContext
 import typings.axeCore.mod.RunOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Cypress extends js.Object {
+    
     @js.native
     trait Chainable[Subject] extends js.Object {
+      
       def checkA11y(): Unit = js.native
       def checkA11y(
         context: js.UndefOr[ElementContext],
@@ -46,12 +49,11 @@ object global extends js.Object {
         skipFailures: Boolean
       ): Unit = js.native
       def checkA11y(context: ElementContext): Unit = js.native
+      
       def configureAxe(): Unit = js.native
       def configureAxe(options: RunOptions): Unit = js.native
+      
       def injectAxe(): Unit = js.native
     }
-    
   }
-  
 }
-

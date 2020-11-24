@@ -12,31 +12,31 @@ import typings.awsSdk.awsSdkStrings.replicationTaskReady
 import typings.awsSdk.awsSdkStrings.replicationTaskRunning
 import typings.awsSdk.awsSdkStrings.replicationTaskStopped
 import typings.awsSdk.awsSdkStrings.testConnectionSucceeds
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DMS extends Service {
-  @JSName("config")
-  var config_DMS: ConfigBase with ClientConfiguration = js.native
+  
   /**
-    * Adds metadata tags to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS.
+    * Adds metadata tags to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
     */
   def addTagsToResource(): Request[AddTagsToResourceResponse, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsToResourceResponse, Unit]): Request[AddTagsToResourceResponse, AWSError] = js.native
   /**
-    * Adds metadata tags to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS.
+    * Adds metadata tags to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
     */
   def addTagsToResource(params: AddTagsToResourceMessage): Request[AddTagsToResourceResponse, AWSError] = js.native
   def addTagsToResource(
     params: AddTagsToResourceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ AddTagsToResourceResponse, Unit]
   ): Request[AddTagsToResourceResponse, AWSError] = js.native
+  
   /**
     * Applies a pending maintenance action to a resource (for example, to a replication instance).
     */
@@ -50,6 +50,7 @@ trait DMS extends Service {
     params: ApplyPendingMaintenanceActionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ApplyPendingMaintenanceActionResponse, Unit]
   ): Request[ApplyPendingMaintenanceActionResponse, AWSError] = js.native
+  
   /**
     * Cancels a single premigration assessment run. This operation prevents any individual assessments from running if they haven't started running. It also attempts to cancel any individual assessments that are currently running.
     */
@@ -65,6 +66,10 @@ trait DMS extends Service {
     params: CancelReplicationTaskAssessmentRunMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelReplicationTaskAssessmentRunResponse, Unit]
   ): Request[CancelReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_DMS: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an endpoint using the provided settings.
     */
@@ -78,6 +83,7 @@ trait DMS extends Service {
     params: CreateEndpointMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointResponse, Unit]
   ): Request[CreateEndpointResponse, AWSError] = js.native
+  
   /**
     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
     */
@@ -91,6 +97,7 @@ trait DMS extends Service {
     params: CreateEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResponse, Unit]
   ): Request[CreateEventSubscriptionResponse, AWSError] = js.native
+  
   /**
     * Creates the replication instance using the specified parameters. AWS DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the AWS CLI and AWS DMS API. For information on the required permissions, see IAM Permissions Needed to Use AWS DMS.
     */
@@ -104,6 +111,7 @@ trait DMS extends Service {
     params: CreateReplicationInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationInstanceResponse, Unit]
   ): Request[CreateReplicationInstanceResponse, AWSError] = js.native
+  
   /**
     * Creates a replication subnet group given a list of the subnet IDs in a VPC.
     */
@@ -117,6 +125,7 @@ trait DMS extends Service {
     params: CreateReplicationSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationSubnetGroupResponse, Unit]
   ): Request[CreateReplicationSubnetGroupResponse, AWSError] = js.native
+  
   /**
     * Creates a replication task using the specified parameters.
     */
@@ -130,6 +139,7 @@ trait DMS extends Service {
     params: CreateReplicationTaskMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationTaskResponse, Unit]
   ): Request[CreateReplicationTaskResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified certificate. 
     */
@@ -143,6 +153,7 @@ trait DMS extends Service {
     params: DeleteCertificateMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCertificateResponse, Unit]
   ): Request[DeleteCertificateResponse, AWSError] = js.native
+  
   /**
     * Deletes the connection between a replication instance and an endpoint.
     */
@@ -156,6 +167,7 @@ trait DMS extends Service {
     params: DeleteConnectionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConnectionResponse, Unit]
   ): Request[DeleteConnectionResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified endpoint.  All tasks associated with the endpoint must be deleted before you can delete the endpoint.  
     */
@@ -169,6 +181,7 @@ trait DMS extends Service {
     params: DeleteEndpointMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEndpointResponse, Unit]
   ): Request[DeleteEndpointResponse, AWSError] = js.native
+  
   /**
     *  Deletes an AWS DMS event subscription. 
     */
@@ -182,6 +195,7 @@ trait DMS extends Service {
     params: DeleteEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventSubscriptionResponse, Unit]
   ): Request[DeleteEventSubscriptionResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified replication instance.  You must delete any migration tasks that are associated with the replication instance before you can delete it.  
     */
@@ -195,6 +209,7 @@ trait DMS extends Service {
     params: DeleteReplicationInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationInstanceResponse, Unit]
   ): Request[DeleteReplicationInstanceResponse, AWSError] = js.native
+  
   /**
     * Deletes a subnet group.
     */
@@ -208,6 +223,7 @@ trait DMS extends Service {
     params: DeleteReplicationSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationSubnetGroupResponse, Unit]
   ): Request[DeleteReplicationSubnetGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified replication task.
     */
@@ -221,6 +237,7 @@ trait DMS extends Service {
     params: DeleteReplicationTaskMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationTaskResponse, Unit]
   ): Request[DeleteReplicationTaskResponse, AWSError] = js.native
+  
   /**
     * Deletes the record of a single premigration assessment run. This operation removes all metadata that AWS DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
     */
@@ -236,6 +253,7 @@ trait DMS extends Service {
     params: DeleteReplicationTaskAssessmentRunMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationTaskAssessmentRunResponse, Unit]
   ): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  
   /**
     * Lists all of the AWS DMS attributes for a customer account. These attributes include AWS DMS quotas for the account and a unique account identifier in a particular DMS region. DMS quotas include a list of resource quotas supported by the account, such as the number of replication instances allowed. The description for each resource quota, includes the quota name, current usage toward that quota, and the quota's maximum value. DMS uses the unique account identifier to name each artifact used by DMS in the given region. This command does not take any parameters.
     */
@@ -249,6 +267,7 @@ trait DMS extends Service {
     params: DescribeAccountAttributesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAttributesResponse, Unit]
   ): Request[DescribeAccountAttributesResponse, AWSError] = js.native
+  
   /**
     * Provides a list of individual assessments that you can specify for a new premigration assessment run, given one or more parameters. If you specify an existing migration task, this operation provides the default individual assessments you can specify for that task. Otherwise, the specified parameters model elements of a possible migration task on which to base a premigration assessment run. To use these migration task modeling parameters, you must specify an existing replication instance, a source database engine, a target database engine, and a migration type. This combination of parameters potentially limits the default individual assessments available for an assessment run created for a corresponding migration task. If you specify no parameters, this operation provides a list of all possible individual assessments that you can specify for an assessment run. If you specify any one of the task modeling parameters, you must specify all of them or the operation cannot provide a list of individual assessments. The only parameter that you can specify alone is for an existing migration task. The specified task definition then determines the default list of individual assessments that you can specify in an assessment run for the task.
     */
@@ -264,6 +283,7 @@ trait DMS extends Service {
     params: DescribeApplicableIndividualAssessmentsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicableIndividualAssessmentsResponse, Unit]
   ): Request[DescribeApplicableIndividualAssessmentsResponse, AWSError] = js.native
+  
   /**
     * Provides a description of the certificate.
     */
@@ -277,6 +297,7 @@ trait DMS extends Service {
     params: DescribeCertificatesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificatesResponse, Unit]
   ): Request[DescribeCertificatesResponse, AWSError] = js.native
+  
   /**
     * Describes the status of the connections that have been made between the replication instance and an endpoint. Connections are created when you test an endpoint.
     */
@@ -290,6 +311,7 @@ trait DMS extends Service {
     params: DescribeConnectionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConnectionsResponse, Unit]
   ): Request[DescribeConnectionsResponse, AWSError] = js.native
+  
   /**
     * Returns information about the type of endpoints available.
     */
@@ -303,6 +325,7 @@ trait DMS extends Service {
     params: DescribeEndpointTypesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointTypesResponse, Unit]
   ): Request[DescribeEndpointTypesResponse, AWSError] = js.native
+  
   /**
     * Returns information about the endpoints for your account in the current region.
     */
@@ -316,6 +339,7 @@ trait DMS extends Service {
     params: DescribeEndpointsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointsResponse, Unit]
   ): Request[DescribeEndpointsResponse, AWSError] = js.native
+  
   /**
     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
     */
@@ -329,6 +353,7 @@ trait DMS extends Service {
     params: DescribeEventCategoriesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventCategoriesResponse, Unit]
   ): Request[DescribeEventCategoriesResponse, AWSError] = js.native
+  
   /**
     * Lists all the event subscriptions for a customer account. The description of a subscription includes SubscriptionName, SNSTopicARN, CustomerID, SourceType, SourceID, CreationTime, and Status.  If you specify SubscriptionName, this action lists the description for that subscription.
     */
@@ -342,6 +367,7 @@ trait DMS extends Service {
     params: DescribeEventSubscriptionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventSubscriptionsResponse, Unit]
   ): Request[DescribeEventSubscriptionsResponse, AWSError] = js.native
+  
   /**
     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
     */
@@ -355,6 +381,7 @@ trait DMS extends Service {
     params: DescribeEventsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsResponse, Unit]
   ): Request[DescribeEventsResponse, AWSError] = js.native
+  
   /**
     * Returns information about the replication instance types that can be created in the specified region.
     */
@@ -370,6 +397,7 @@ trait DMS extends Service {
     params: DescribeOrderableReplicationInstancesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrderableReplicationInstancesResponse, Unit]
   ): Request[DescribeOrderableReplicationInstancesResponse, AWSError] = js.native
+  
   /**
     * For internal use only
     */
@@ -385,6 +413,7 @@ trait DMS extends Service {
     params: DescribePendingMaintenanceActionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePendingMaintenanceActionsResponse, Unit]
   ): Request[DescribePendingMaintenanceActionsResponse, AWSError] = js.native
+  
   /**
     * Returns the status of the RefreshSchemas operation.
     */
@@ -398,6 +427,7 @@ trait DMS extends Service {
     params: DescribeRefreshSchemasStatusMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRefreshSchemasStatusResponse, Unit]
   ): Request[DescribeRefreshSchemasStatusResponse, AWSError] = js.native
+  
   /**
     * Returns information about the task logs for the specified task.
     */
@@ -413,6 +443,7 @@ trait DMS extends Service {
     params: DescribeReplicationInstanceTaskLogsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationInstanceTaskLogsResponse, Unit]
   ): Request[DescribeReplicationInstanceTaskLogsResponse, AWSError] = js.native
+  
   /**
     * Returns information about replication instances for your account in the current region.
     */
@@ -426,6 +457,7 @@ trait DMS extends Service {
     params: DescribeReplicationInstancesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationInstancesResponse, Unit]
   ): Request[DescribeReplicationInstancesResponse, AWSError] = js.native
+  
   /**
     * Returns information about the replication subnet groups.
     */
@@ -441,6 +473,7 @@ trait DMS extends Service {
     params: DescribeReplicationSubnetGroupsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationSubnetGroupsResponse, Unit]
   ): Request[DescribeReplicationSubnetGroupsResponse, AWSError] = js.native
+  
   /**
     * Returns the task assessment results from Amazon S3. This action always returns the latest results.
     */
@@ -464,6 +497,7 @@ trait DMS extends Service {
       Unit
     ]
   ): Request[DescribeReplicationTaskAssessmentResultsResponse, AWSError] = js.native
+  
   /**
     * Returns a paginated list of premigration assessment runs based on filter settings. These filter settings can specify a combination of premigration assessment runs, migration tasks, replication instances, and assessment run status values.  This operation doesn't return information about individual assessments. For this information, see the DescribeReplicationTaskIndividualAssessments operation.  
     */
@@ -479,6 +513,7 @@ trait DMS extends Service {
     params: DescribeReplicationTaskAssessmentRunsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTaskAssessmentRunsResponse, Unit]
   ): Request[DescribeReplicationTaskAssessmentRunsResponse, AWSError] = js.native
+  
   /**
     * Returns a paginated list of individual assessments based on filter settings. These filter settings can specify a combination of premigration assessment runs, migration tasks, and assessment status values.
     */
@@ -502,6 +537,7 @@ trait DMS extends Service {
       Unit
     ]
   ): Request[DescribeReplicationTaskIndividualAssessmentsResponse, AWSError] = js.native
+  
   /**
     * Returns information about replication tasks for your account in the current region.
     */
@@ -515,6 +551,7 @@ trait DMS extends Service {
     params: DescribeReplicationTasksMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTasksResponse, Unit]
   ): Request[DescribeReplicationTasksResponse, AWSError] = js.native
+  
   /**
     * Returns information about the schema for the specified endpoint. 
     */
@@ -528,6 +565,7 @@ trait DMS extends Service {
     params: DescribeSchemasMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSchemasResponse, Unit]
   ): Request[DescribeSchemasResponse, AWSError] = js.native
+  
   /**
     * Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted. Note that the "last updated" column the DMS console only indicates the time that AWS DMS last updated the table statistics record for a table. It does not indicate the time of the last update to the table.
     */
@@ -541,6 +579,7 @@ trait DMS extends Service {
     params: DescribeTableStatisticsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableStatisticsResponse, Unit]
   ): Request[DescribeTableStatisticsResponse, AWSError] = js.native
+  
   /**
     * Uploads the specified certificate.
     */
@@ -554,19 +593,21 @@ trait DMS extends Service {
     params: ImportCertificateMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportCertificateResponse, Unit]
   ): Request[ImportCertificateResponse, AWSError] = js.native
+  
   /**
-    * Lists all tags for an AWS DMS resource.
+    * Lists all metadata tags attached to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists all tags for an AWS DMS resource.
+    * Lists all metadata tags attached to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def listTagsForResource(params: ListTagsForResourceMessage): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
     params: ListTagsForResourceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Modifies the specified endpoint.
     */
@@ -580,6 +621,7 @@ trait DMS extends Service {
     params: ModifyEndpointMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyEndpointResponse, Unit]
   ): Request[ModifyEndpointResponse, AWSError] = js.native
+  
   /**
     * Modifies an existing AWS DMS event notification subscription. 
     */
@@ -593,6 +635,7 @@ trait DMS extends Service {
     params: ModifyEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResponse, Unit]
   ): Request[ModifyEventSubscriptionResponse, AWSError] = js.native
+  
   /**
     * Modifies the replication instance to apply new settings. You can change one or more parameters by specifying these parameters and the new values in the request. Some settings are applied during the maintenance window. 
     */
@@ -606,6 +649,7 @@ trait DMS extends Service {
     params: ModifyReplicationInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyReplicationInstanceResponse, Unit]
   ): Request[ModifyReplicationInstanceResponse, AWSError] = js.native
+  
   /**
     * Modifies the settings for the specified replication subnet group.
     */
@@ -619,6 +663,7 @@ trait DMS extends Service {
     params: ModifyReplicationSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyReplicationSubnetGroupResponse, Unit]
   ): Request[ModifyReplicationSubnetGroupResponse, AWSError] = js.native
+  
   /**
     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
     */
@@ -632,6 +677,21 @@ trait DMS extends Service {
     params: ModifyReplicationTaskMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyReplicationTaskResponse, Unit]
   ): Request[ModifyReplicationTaskResponse, AWSError] = js.native
+  
+  /**
+    * Moves a replication task from its current replication instance to a different target replication instance using the specified parameters. The target replication instance must be created with the same or later AWS DMS version as the current replication instance.
+    */
+  def moveReplicationTask(): Request[MoveReplicationTaskResponse, AWSError] = js.native
+  def moveReplicationTask(callback: js.Function2[/* err */ AWSError, /* data */ MoveReplicationTaskResponse, Unit]): Request[MoveReplicationTaskResponse, AWSError] = js.native
+  /**
+    * Moves a replication task from its current replication instance to a different target replication instance using the specified parameters. The target replication instance must be created with the same or later AWS DMS version as the current replication instance.
+    */
+  def moveReplicationTask(params: MoveReplicationTaskMessage): Request[MoveReplicationTaskResponse, AWSError] = js.native
+  def moveReplicationTask(
+    params: MoveReplicationTaskMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ MoveReplicationTaskResponse, Unit]
+  ): Request[MoveReplicationTaskResponse, AWSError] = js.native
+  
   /**
     * Reboots a replication instance. Rebooting results in a momentary outage, until the replication instance becomes available again.
     */
@@ -645,6 +705,7 @@ trait DMS extends Service {
     params: RebootReplicationInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootReplicationInstanceResponse, Unit]
   ): Request[RebootReplicationInstanceResponse, AWSError] = js.native
+  
   /**
     * Populates the schema for the specified endpoint. This is an asynchronous operation and can take several minutes. You can check the status of this operation by calling the DescribeRefreshSchemasStatus operation.
     */
@@ -658,6 +719,7 @@ trait DMS extends Service {
     params: RefreshSchemasMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RefreshSchemasResponse, Unit]
   ): Request[RefreshSchemasResponse, AWSError] = js.native
+  
   /**
     * Reloads the target database table with the source data. 
     */
@@ -671,19 +733,21 @@ trait DMS extends Service {
     params: ReloadTablesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ReloadTablesResponse, Unit]
   ): Request[ReloadTablesResponse, AWSError] = js.native
+  
   /**
-    * Removes metadata tags from a DMS resource.
+    * Removes metadata tags from an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def removeTagsFromResource(): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   def removeTagsFromResource(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceResponse, Unit]): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   /**
-    * Removes metadata tags from a DMS resource.
+    * Removes metadata tags from an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def removeTagsFromResource(params: RemoveTagsFromResourceMessage): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   def removeTagsFromResource(
     params: RemoveTagsFromResourceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceResponse, Unit]
   ): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
+  
   /**
     * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
     */
@@ -697,6 +761,7 @@ trait DMS extends Service {
     params: StartReplicationTaskMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskResponse, Unit]
   ): Request[StartReplicationTaskResponse, AWSError] = js.native
+  
   /**
     *  Starts the replication task assessment for unsupported data types in the source database. 
     */
@@ -712,6 +777,7 @@ trait DMS extends Service {
     params: StartReplicationTaskAssessmentMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskAssessmentResponse, Unit]
   ): Request[StartReplicationTaskAssessmentResponse, AWSError] = js.native
+  
   /**
     * Starts a new premigration assessment run for one or more individual assessments of a migration task. The assessments that you can specify depend on the source and target database engine and the migration type defined for the given task. To run this operation, your migration task must already be created. After you run this operation, you can review the status of each individual assessment. You can also run the migration task manually after the assessment run and its individual assessments complete.
     */
@@ -727,6 +793,7 @@ trait DMS extends Service {
     params: StartReplicationTaskAssessmentRunMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskAssessmentRunResponse, Unit]
   ): Request[StartReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  
   /**
     * Stops the replication task.
     */
@@ -740,6 +807,7 @@ trait DMS extends Service {
     params: StopReplicationTaskMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ StopReplicationTaskResponse, Unit]
   ): Request[StopReplicationTaskResponse, AWSError] = js.native
+  
   /**
     * Tests the connection between the replication instance and the endpoint.
     */
@@ -753,6 +821,7 @@ trait DMS extends Service {
     params: TestConnectionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ TestConnectionResponse, Unit]
   ): Request[TestConnectionResponse, AWSError] = js.native
+  
   /**
     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
     */
@@ -922,4 +991,3 @@ trait DMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConnectionsResponse, Unit]
   ): Request[DescribeConnectionsResponse, AWSError] = js.native
 }
-

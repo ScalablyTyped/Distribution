@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-intl
 
-Typings are for version 3.12.1
+Typings are for version 5.10.4
 
 ## Library description:
 Internationalize React apps. This library provides React components and an API to format dates, numbers, and strings, including pluralization and handling translations.
@@ -10,15 +10,15 @@ Internationalize React apps. This library provides React components and an API t
 | ------------------ | :-------------: |
 | Full name          | react-intl |
 | Keywords           | intl, i18n, internationalization, locale, localization, globalization, react, reactjs, format, formatting, translate, translation |
-| # releases         | 69 |
-| # dependents       | 770 |
-| # downloads        | 20941523 |
+| # releases         | 156 |
+| # dependents       | 1018 |
+| # downloads        | 34064160 |
 | # stars            | 46 |
 
 ## Links
-- [Homepage](https://github.com/formatjs/react-intl)
-- [Bugs](https://github.com/formatjs/react-intl/issues)
-- [Repository](https://github.com/formatjs/react-intl)
+- [Homepage](https://formatjs.io/docs/react-intl)
+- [Bugs](https://github.com/formatjs/formatjs/issues)
+- [Repository](https://github.com/formatjs/formatjs)
 - [Npm](https://www.npmjs.com/package/react-intl)
     
 

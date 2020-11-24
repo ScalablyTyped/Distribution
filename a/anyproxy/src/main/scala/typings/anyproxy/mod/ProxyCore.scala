@@ -4,7 +4,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("anyproxy", "ProxyCore")
 @js.native
@@ -14,8 +14,10 @@ import scala.scalajs.js.annotation._
   */
 class ProxyCore () extends EventEmitter {
   def this(config: ProxyOptions) = this()
+  
   /** Close the proxy server */
   def close(): js.Promise[Unit] = js.native
+  
   /**
     * Manage all created socket
     * for each new socket, we put them to a map;
@@ -25,7 +27,7 @@ class ProxyCore () extends EventEmitter {
     * @param socket the http socket that is creating
     */
   def handleExistConnections(socket: Socket): Unit = js.native
+  
   /** Start the proxy server */
   def start(): this.type = js.native
 }
-

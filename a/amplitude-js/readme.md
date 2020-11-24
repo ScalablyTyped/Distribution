@@ -1,7 +1,7 @@
 
 # Scala.js typings for amplitude-js
 
-Typings are for version 5.11
+Typings are for version 6.0
 
 ## Library description:
 Javascript library for Amplitude Analytics
@@ -10,9 +10,9 @@ Javascript library for Amplitude Analytics
 | ------------------ | :-------------: |
 | Full name          | amplitude-js |
 | Keywords           | analytics, amplitude |
-| # releases         | 32 |
-| # dependents       | 13 |
-| # downloads        | 1563987 |
+| # releases         | 43 |
+| # dependents       | 29 |
+| # downloads        | 3794207 |
 | # stars            | 0 |
 
 ## Links

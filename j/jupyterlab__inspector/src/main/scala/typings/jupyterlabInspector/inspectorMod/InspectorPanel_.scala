@@ -14,7 +14,7 @@ import typings.luminoWidgets.widgetMod.Widget.Flag
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/inspector/lib/inspector", "InspectorPanel")
 @js.native
@@ -26,13 +26,11 @@ class InspectorPanel_ ()
      with IInspector
      with IPrintable {
   def this(options: IOptions) = this()
+  
   var _content: js.Any = js.native
+  
   var _source: js.Any = js.native
-  /**
-    * The source of events the inspector listens for.
-    */
-  /* CompleteClass */
-  override var source: IInspectable | Null = js.native
+  
   /**
     * Post an `'activate-request'` message to the widget.
     *
@@ -41,6 +39,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def activate(): Unit = js.native
+  
   /**
     * Add a class name to the widget's DOM node.
     *
@@ -53,6 +52,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def addClass(name: String): Unit = js.native
+  
   /**
     * Add a widget to the end of the panel.
     *
@@ -63,6 +63,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def addWidget(widget: Widget): Unit = js.native
+  
   /**
     * Create an iterator over the widget's children.
     *
@@ -75,6 +76,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def children(): IIterator[Widget] = js.native
+  
   /**
     * Clear the given widget flag.
     *
@@ -83,6 +85,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def clearFlag(flag: Flag): Unit = js.native
+  
   /**
     * Send a `'close-request'` message to the widget.
     *
@@ -91,6 +94,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def close(): Unit = js.native
+  
   /**
     * Test whether a widget is a descendant of this widget.
     *
@@ -100,20 +104,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def contains(widget: Widget): Boolean = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  /* InferMemberOverrides */
-  override def dispose(): Unit = js.native
+  
   /**
     * Post a `'fit-request'` message to the widget.
     *
@@ -122,6 +113,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def fit(): Unit = js.native
+  
   /**
     * Test whether the widget's DOM node has the given class name.
     *
@@ -131,6 +123,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def hasClass(name: String): Boolean = js.native
+  
   /**
     * Hide the widget and make it hidden to its parent widget.
     *
@@ -141,6 +134,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def hide(): Unit = js.native
+  
   /**
     * Insert a widget at the specified index.
     *
@@ -153,6 +147,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def insertWidget(index: Double, widget: Widget): Unit = js.native
+  
   /**
     * Invoke the message processing routine of the widget's layout.
     *
@@ -165,6 +160,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def notifyLayout(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'activate-request'` message.
     *
@@ -173,6 +169,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onActivateRequest(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-attach'` message.
     *
@@ -181,6 +178,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onAfterAttach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-detach'` message.
     *
@@ -189,6 +187,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onAfterDetach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-hide'` message.
     *
@@ -197,6 +196,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onAfterHide(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on an `'after-show'` message.
     *
@@ -205,6 +205,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onAfterShow(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-attach'` message.
     *
@@ -213,6 +214,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onBeforeAttach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-detach'` message.
     *
@@ -221,6 +223,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onBeforeDetach(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-hide'` message.
     *
@@ -229,6 +232,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onBeforeHide(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'before-show'` message.
     *
@@ -237,6 +241,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onBeforeShow(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'child-added'` message.
     *
@@ -245,6 +250,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onChildAdded(msg: ChildMessage): Unit = js.native
+  
   /**
     * A message handler invoked on a `'child-removed'` message.
     *
@@ -253,6 +259,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onChildRemoved(msg: ChildMessage): Unit = js.native
+  
   /**
     * A message handler invoked on a `'close-request'` message.
     *
@@ -261,6 +268,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onCloseRequest(msg: Message): Unit = js.native
+  
   /**
     * A message handler invoked on a `'fit-request'` message.
     *
@@ -269,10 +277,12 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onFitRequest(msg: Message): Unit = js.native
+  
   /**
     * Handle inspector update signals.
     */
   /* protected */ def onInspectorUpdate(sender: js.Any, args: IInspectorUpdate): Unit = js.native
+  
   /**
     * A message handler invoked on a `'resize'` message.
     *
@@ -281,10 +291,12 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onResize(msg: ResizeMessage): Unit = js.native
+  
   /**
     * Handle source disposed signals.
     */
   /* protected */ def onSourceDisposed(sender: js.Any, args: Unit): Unit = js.native
+  
   /**
     * A message handler invoked on an `'update-request'` message.
     *
@@ -293,14 +305,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   /* protected */ override def onUpdateRequest(msg: Message): Unit = js.native
-  /**
-    * Process a message sent to the handler.
-    *
-    * @param msg - The message to be processed.
-    */
-  /* CompleteClass */
-  /* InferMemberOverrides */
-  override def processMessage(msg: Message): Unit = js.native
+  
   /**
     * Remove a class name from the widget's DOM node.
     *
@@ -313,6 +318,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def removeClass(name: String): Unit = js.native
+  
   /**
     * Set the given widget flag.
     *
@@ -321,6 +327,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def setFlag(flag: Flag): Unit = js.native
+  
   /**
     * Show or hide the widget according to a boolean value.
     *
@@ -331,6 +338,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def setHidden(hidden: Boolean): Unit = js.native
+  
   /**
     * Show the widget and make it visible to its parent widget.
     *
@@ -341,15 +349,13 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def show(): Unit = js.native
-  @JSName("source")
-  def source_MInspectorPanel_(): js.Any = js.native
-  @JSName("source")
-  def source_MInspectorPanel_(source: IInspectable): js.Any = js.native
+  
   /**
     * The source of events the inspector panel listens for.
     */
   @JSName("source")
-  def source_Union: IInspectable | Null = js.native
+  def source_MInspectorPanel_ : IInspectable | Null = js.native
+  
   /**
     * Test whether the given widget flag is set.
     *
@@ -358,6 +364,7 @@ class InspectorPanel_ ()
     */
   /* InferMemberOverrides */
   override def testFlag(flag: Flag): Boolean = js.native
+  
   /**
     * Toggle a class name on the widget's DOM node.
     *
@@ -376,6 +383,7 @@ class InspectorPanel_ ()
   override def toggleClass(name: String): Boolean = js.native
   /* InferMemberOverrides */
   override def toggleClass(name: String, force: Boolean): Boolean = js.native
+  
   /**
     * Post an `'update-request'` message to the widget.
     *
@@ -385,4 +393,3 @@ class InspectorPanel_ ()
   /* InferMemberOverrides */
   override def update(): Unit = js.native
 }
-

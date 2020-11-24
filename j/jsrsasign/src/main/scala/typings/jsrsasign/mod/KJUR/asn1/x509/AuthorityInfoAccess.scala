@@ -4,7 +4,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.ExtensionParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AuthorityInfoAccess ASN.1 structure class
@@ -36,4 +36,3 @@ class AuthorityInfoAccess ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AuthorityInfoAccess {
   def this(params: ArrayParam[ExtensionParam]) = this()
 }
-

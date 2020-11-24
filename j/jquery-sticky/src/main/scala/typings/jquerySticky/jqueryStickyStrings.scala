@@ -2,13 +2,12 @@ package typings.jquerySticky
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryStickyStrings {
-  @js.native
-  sealed trait update extends js.Object
   
   @scala.inline
   def update: update = "update".asInstanceOf[update]
+  @js.native
+  sealed trait update extends js.Object
 }
-

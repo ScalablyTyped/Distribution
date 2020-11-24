@@ -97,11 +97,12 @@ import typings.std.AddEventListenerOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dom-helpers/cjs/listen", JSImport.Namespace)
 @js.native
 object listenMod extends js.Object {
+  
   @JSName("default")
   def default_abort(node: HTMLElement, eventName: abort, handler: EventHandler[abort]): js.Function0[Unit] = js.native
   @JSName("default")
@@ -1169,4 +1170,3 @@ object listenMod extends js.Object {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = js.native
 }
-

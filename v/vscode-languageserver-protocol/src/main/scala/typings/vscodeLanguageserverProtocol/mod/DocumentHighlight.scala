@@ -2,11 +2,12 @@ package typings.vscodeLanguageserverProtocol.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol", "DocumentHighlight")
 @js.native
 object DocumentHighlight extends js.Object {
+  
   /**
     * Create a DocumentHighlight object.
     * @param range The range the highlight applies to.
@@ -17,4 +18,3 @@ object DocumentHighlight extends js.Object {
     kind: typings.vscodeLanguageserverTypes.mod.DocumentHighlightKind
   ): typings.vscodeLanguageserverTypes.mod.DocumentHighlight = js.native
 }
-

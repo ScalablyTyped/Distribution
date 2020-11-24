@@ -10,8 +10,8 @@ Converts HTML to JSX for use with React
 | Full name          | htmltojsx |
 | Keywords           | react, jsx, htmltojsx, html, react-component |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 154728 |
+| # dependents       | 29 |
+| # downloads        | 139361 |
 | # stars            | 4 |
 
 ## Links

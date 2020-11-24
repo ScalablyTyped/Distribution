@@ -9,7 +9,7 @@ import typings.sawtoothSdk.protobufMod.IChangeLogEntry
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ChangeLogEntry")
 @js.native
@@ -21,21 +21,10 @@ class ChangeLogEntry ()
   extends typings.sawtoothSdk.protobufMod.ChangeLogEntry {
   def this(properties: IChangeLogEntry) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ChangeLogEntry")
 @js.native
 object ChangeLogEntry extends js.Object {
-  /** Represents a Successor. */
-  @js.native
-  /**
-    * Constructs a new Successor.
-    * @param [properties] Properties to set
-    */
-  class Successor ()
-    extends typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor {
-    def this(properties: ISuccessor) = this()
-  }
   
   /**
     * Creates a new ChangeLogEntry instance using the specified properties.
@@ -44,6 +33,7 @@ object ChangeLogEntry extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
   def create(properties: IChangeLogEntry): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
+  
   /**
     * Decodes a ChangeLogEntry message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -56,6 +46,7 @@ object ChangeLogEntry extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
+  
   /**
     * Decodes a ChangeLogEntry message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,6 +56,7 @@ object ChangeLogEntry extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
+  
   /**
     * Encodes the specified ChangeLogEntry message. Does not implicitly {@link ChangeLogEntry.verify|verify} messages.
     * @param message ChangeLogEntry message or plain object to encode
@@ -73,6 +65,7 @@ object ChangeLogEntry extends js.Object {
     */
   def encode(message: IChangeLogEntry): Writer = js.native
   def encode(message: IChangeLogEntry, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ChangeLogEntry message, length delimited. Does not implicitly {@link ChangeLogEntry.verify|verify} messages.
     * @param message ChangeLogEntry message or plain object to encode
@@ -81,12 +74,14 @@ object ChangeLogEntry extends js.Object {
     */
   def encodeDelimited(message: IChangeLogEntry): Writer = js.native
   def encodeDelimited(message: IChangeLogEntry, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ChangeLogEntry message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ChangeLogEntry
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ChangeLogEntry = js.native
+  
   /**
     * Creates a plain object from a ChangeLogEntry message. Also converts values to other types if specified.
     * @param message ChangeLogEntry
@@ -95,15 +90,28 @@ object ChangeLogEntry extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ChangeLogEntry message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  
+  /** Represents a Successor. */
+  @js.native
+  /**
+    * Constructs a new Successor.
+    * @param [properties] Properties to set
+    */
+  class Successor ()
+    extends typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor {
+    def this(properties: ISuccessor) = this()
+  }
   /* static members */
   @js.native
   object Successor extends js.Object {
+    
     /**
       * Creates a new Successor instance using the specified properties.
       * @param [properties] Properties to set
@@ -111,6 +119,7 @@ object ChangeLogEntry extends js.Object {
       */
     def create(): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
     def create(properties: ISuccessor): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
+    
     /**
       * Decodes a Successor message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -123,6 +132,7 @@ object ChangeLogEntry extends js.Object {
     def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
     def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
     def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
+    
     /**
       * Decodes a Successor message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -132,6 +142,7 @@ object ChangeLogEntry extends js.Object {
       */
     def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
     def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
+    
     /**
       * Encodes the specified Successor message. Does not implicitly {@link ChangeLogEntry.Successor.verify|verify} messages.
       * @param message Successor message or plain object to encode
@@ -140,6 +151,7 @@ object ChangeLogEntry extends js.Object {
       */
     def encode(message: ISuccessor): Writer = js.native
     def encode(message: ISuccessor, writer: Writer): Writer = js.native
+    
     /**
       * Encodes the specified Successor message, length delimited. Does not implicitly {@link ChangeLogEntry.Successor.verify|verify} messages.
       * @param message Successor message or plain object to encode
@@ -148,12 +160,14 @@ object ChangeLogEntry extends js.Object {
       */
     def encodeDelimited(message: ISuccessor): Writer = js.native
     def encodeDelimited(message: ISuccessor, writer: Writer): Writer = js.native
+    
     /**
       * Creates a Successor message from a plain object. Also converts values to their respective internal types.
       * @param object Plain object
       * @returns Successor
       */
     def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = js.native
+    
     /**
       * Creates a plain object from a Successor message. Also converts values to other types if specified.
       * @param message Successor
@@ -162,6 +176,7 @@ object ChangeLogEntry extends js.Object {
       */
     def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor): StringDictionary[js.Any] = js.native
     def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    
     /**
       * Verifies a Successor message.
       * @param message Plain object to verify
@@ -169,6 +184,4 @@ object ChangeLogEntry extends js.Object {
       */
     def verify(message: StringDictionary[js.Any]): String | Null = js.native
   }
-  
 }
-

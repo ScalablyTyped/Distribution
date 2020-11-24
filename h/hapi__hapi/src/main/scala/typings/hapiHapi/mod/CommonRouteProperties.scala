@@ -13,21 +13,24 @@ import typings.hapiHapi.mod.Util.Dictionary
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommonRouteProperties extends js.Object {
+  
   /**
     * Application-specific route configuration state. Should not be used by plugins which should use options.plugins[name] instead.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsapp)
     */
   var app: js.UndefOr[RouteOptionsApp] = js.native
+  
   /**
     * @default null.
     * An object passed back to the provided handler (via this) when called. Ignored if the method is an arrow function.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsbind)
     */
   var bind: js.UndefOr[js.Object | Null] = js.native
+  
   /**
     * @default { privacy: 'default', statuses: [200], otherwise: 'no-cache' }.
     * If the route method is 'GET', the route can be configured to include HTTP caching directives in the response. Caching can be customized using an object with the following options:
@@ -43,11 +46,13 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionscache)
     */
   var cache: js.UndefOr[`false` | RouteOptionsCache] = js.native
+  
   /**
     * An object where each key is a content-encoding name and each value is an object with the desired encoder settings. Note that decoder settings are set in compression.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionscompression)
     */
   var compression: js.UndefOr[Dictionary[RouteCompressionEncoderSettings]] = js.native
+  
   /**
     * @default false (no CORS headers).
     * The Cross-Origin Resource Sharing protocol allows browsers to make cross-origin API calls. CORS is required by web applications running inside a browser which are loaded from a different
@@ -65,6 +70,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionscors)
     */
   var cors: js.UndefOr[Boolean | RouteOptionsCors] = js.native
+  
   /**
     * @default none.
     * Route description used for generating documentation (string).
@@ -72,6 +78,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsdescription)
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * @default none.
     * Route-level request extension points by setting the option to an object with a key for each of the desired extension points ('onRequest' is not allowed), and the value is the same as the
@@ -80,6 +87,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#request-lifecycle)
     */
   var ext: js.UndefOr[keyinRouteRequestExtTypeR] = js.native
+  
   /**
     * @default { relativeTo: '.' }.
     * Defines the behavior for accessing files:
@@ -87,6 +95,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsfiles)
     */
   var files: js.UndefOr[RelativeTo] = js.native
+  
   /**
     * @default none.
     * The route handler function performs the main business logic of the route and sets the response. handler can be assigned:
@@ -96,12 +105,14 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionshandler)
     */
   var handler: js.UndefOr[Method | js.Object] = js.native
+  
   /**
     * @default none.
     * An optional unique identifier used to look up the route using server.lookup(). Cannot be assigned to routes added with an array of methods.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsid)
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * @default false.
     * If true, the route cannot be accessed through the HTTP listener but only through the server.inject() interface with the allowInternals option set to true. Used for internal routes that should
@@ -109,6 +120,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsisinternal)
     */
   var isInternal: js.UndefOr[Boolean] = js.native
+  
   /**
     * @default none.
     * Optional arguments passed to JSON.stringify() when converting an object or error response to a string payload or escaping it after stringification. Supports the following:
@@ -119,6 +131,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsjson)
     */
   var json: js.UndefOr[StringifyArguments] = js.native
+  
   /**
     * @default none.
     * Enables JSONP support by setting the value to the query parameter name containing the function name used to wrap the response payload.
@@ -128,6 +141,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsjsonp)
     */
   var jsonp: js.UndefOr[String] = js.native
+  
   /**
     * @default { collect: false }.
     * Request logging options:
@@ -135,6 +149,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionslog)
     */
   var log: js.UndefOr[Collect] = js.native
+  
   /**
     * @default none.
     * Route notes used for generating documentation (string or array of strings).
@@ -142,17 +157,20 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsnotes)
     */
   var notes: js.UndefOr[String | js.Array[String]] = js.native
+  
   /**
     * Determines how the request payload is processed.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayload)
     */
   var payload: js.UndefOr[RouteOptionsPayload] = js.native
+  
   /**
     * @default {}.
     * Plugin-specific configuration. plugins is an object where each key is a plugin name and the value is the plugin configuration.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsplugins)
     */
   var plugins: js.UndefOr[PluginSpecificConfiguration] = js.native
+  
   /**
     * @default none.
     * The pre option allows defining methods for performing actions before the handler is called. These methods allow breaking the handler logic into smaller, reusable components that can be shared
@@ -172,16 +190,19 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspre)
     */
   var pre: js.UndefOr[RouteOptionsPreArray] = js.native
+  
   /**
     * Processing rules for the outgoing response.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponse)
     */
   var response: js.UndefOr[RouteOptionsResponse] = js.native
+  
   /**
     * @default false (security headers disabled).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionssecurity)
     */
   var security: js.UndefOr[RouteOptionsSecure] = js.native
+  
   /**
     * @default { parse: true, failAction: 'error' }.
     * HTTP state management (cookies) allows the server to store information on the client which is sent back to the server with every request (as defined in RFC 6265). state supports the following
@@ -190,6 +211,7 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsstate)
     */
   var state: js.UndefOr[FailAction] = js.native
+  
   /**
     * @default none.
     * Route tags used for generating documentation (array of strings).
@@ -197,12 +219,14 @@ trait CommonRouteProperties extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstags)
     */
   var tags: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * @default { server: false }.
     * Timeouts for processing durations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstimeout)
     */
   var timeout: js.UndefOr[Server] = js.native
+  
   /**
     * @default { headers: true, params: true, query: true, payload: true, failAction: 'error' }.
     * Request input validation rules for various request components.
@@ -210,133 +234,188 @@ trait CommonRouteProperties extends js.Object {
     */
   var validate: js.UndefOr[RouteOptionsValidate] = js.native
 }
-
 object CommonRouteProperties {
+  
   @scala.inline
   def apply(): CommonRouteProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonRouteProperties]
   }
+  
   @scala.inline
   implicit class CommonRoutePropertiesOps[Self <: CommonRouteProperties] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApp(value: RouteOptionsApp): Self = this.set("app", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteApp: Self = this.set("app", js.undefined)
+    
     @scala.inline
     def setBind(value: js.Object): Self = this.set("bind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBind: Self = this.set("bind", js.undefined)
+    
     @scala.inline
     def setBindNull: Self = this.set("bind", null)
+    
     @scala.inline
     def setCache(value: `false` | RouteOptionsCache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCache: Self = this.set("cache", js.undefined)
+    
     @scala.inline
     def setCompression(value: Dictionary[RouteCompressionEncoderSettings]): Self = this.set("compression", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompression: Self = this.set("compression", js.undefined)
+    
     @scala.inline
     def setCors(value: Boolean | RouteOptionsCors): Self = this.set("cors", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCors: Self = this.set("cors", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setExt(value: keyinRouteRequestExtTypeR): Self = this.set("ext", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExt: Self = this.set("ext", js.undefined)
+    
     @scala.inline
     def setFiles(value: RelativeTo): Self = this.set("files", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFiles: Self = this.set("files", js.undefined)
+    
     @scala.inline
     def setHandlerFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = this.set("handler", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setHandler(value: Method | js.Object): Self = this.set("handler", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHandler: Self = this.set("handler", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setIsInternal(value: Boolean): Self = this.set("isInternal", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsInternal: Self = this.set("isInternal", js.undefined)
+    
     @scala.inline
     def setJson(value: StringifyArguments): Self = this.set("json", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteJson: Self = this.set("json", js.undefined)
+    
     @scala.inline
     def setJsonp(value: String): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    
     @scala.inline
     def setLog(value: Collect): Self = this.set("log", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLog: Self = this.set("log", js.undefined)
+    
     @scala.inline
     def setNotesVarargs(value: String*): Self = this.set("notes", js.Array(value :_*))
+    
     @scala.inline
     def setNotes(value: String | js.Array[String]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNotes: Self = this.set("notes", js.undefined)
+    
     @scala.inline
     def setPayload(value: RouteOptionsPayload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePayload: Self = this.set("payload", js.undefined)
+    
     @scala.inline
     def setPlugins(value: PluginSpecificConfiguration): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePlugins: Self = this.set("plugins", js.undefined)
+    
     @scala.inline
     def setPreVarargs(value: RouteOptionsPreAllOptions*): Self = this.set("pre", js.Array(value :_*))
+    
     @scala.inline
     def setPre(value: RouteOptionsPreArray): Self = this.set("pre", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePre: Self = this.set("pre", js.undefined)
+    
     @scala.inline
     def setResponse(value: RouteOptionsResponse): Self = this.set("response", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResponse: Self = this.set("response", js.undefined)
+    
     @scala.inline
     def setSecurity(value: RouteOptionsSecure): Self = this.set("security", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSecurity: Self = this.set("security", js.undefined)
+    
     @scala.inline
     def setState(value: FailAction): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
+    
     @scala.inline
     def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    
     @scala.inline
     def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTags: Self = this.set("tags", js.undefined)
+    
     @scala.inline
     def setTimeout(value: Server): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeout: Self = this.set("timeout", js.undefined)
+    
     @scala.inline
     def setValidate(value: RouteOptionsValidate): Self = this.set("validate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValidate: Self = this.set("validate", js.undefined)
   }
-  
 }
-

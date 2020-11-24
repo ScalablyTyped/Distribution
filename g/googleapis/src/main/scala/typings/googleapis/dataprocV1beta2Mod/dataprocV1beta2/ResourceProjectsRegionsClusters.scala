@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Regions$Clusters")
 @js.native
 class ResourceProjectsRegionsClusters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.regions.clusters.create
     * @desc Creates a cluster in a project.
@@ -47,6 +49,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.delete
     * @desc Deletes a cluster in a project.
@@ -82,6 +85,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.diagnose
     * @desc Gets cluster diagnostic information. After the operation completes,
@@ -117,6 +121,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.get
     * @desc Gets the resource representation for a cluster in a project.
@@ -147,6 +152,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCluster]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -179,6 +185,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.list
     * @desc Lists all regions/{region}/clusters in a project.
@@ -214,6 +221,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClustersResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.patch
     * @desc Updates a cluster in a project.
@@ -251,6 +259,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -284,6 +293,7 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.clusters.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -321,4 +331,3 @@ class ResourceProjectsRegionsClusters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

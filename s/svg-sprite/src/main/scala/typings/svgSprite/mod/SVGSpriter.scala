@@ -3,10 +3,11 @@ package typings.svgSprite.mod
 import typings.vinyl.mod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SVGSpriter extends js.Object {
+  
   /**
     * Registering source SVG files
     * @param file Absolute path to the SVG file or a vinyl file object carrying all the necessary values (the following arguments are ignored then).
@@ -20,6 +21,7 @@ trait SVGSpriter extends js.Object {
     */
   def add(file: File): SVGSpriter = js.native
   def add(file: File, name: String, svg: String): SVGSpriter = js.native
+  
   /**
     * Triggering the sprite compilation
     * @param callback Callback triggered when the compilation has finished.
@@ -31,6 +33,7 @@ trait SVGSpriter extends js.Object {
     * @param callback Callback triggered when the compilation has finished.
     */
   def compile(config: Config, callback: CompileCallback): SVGSpriter = js.native
+  
   /**
     * Accessing the intermediate SVG resources
     * @param dest Base directory for the SVG files in case the will be written to disk.
@@ -38,4 +41,3 @@ trait SVGSpriter extends js.Object {
     */
   def getShapes(dest: String, callback: GetShapesCallback): Unit = js.native
 }
-

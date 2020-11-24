@@ -2,19 +2,12 @@ package typings.pTimes
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-times", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pTimes<ValueType>(
-  // 	count: number,
-  // 	mapper: (index: number) => ValueType | PromiseLike<ValueType>,
-  // 	options?: pTimes.Options
-  // ): Promise<ValueType[]>;
-  // export = pTimes;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any = js.native
+  
   /**
   	Run promise-returning & async functions a specific number of times concurrently.
   	@param count - Number of times to call `mapper`.
@@ -36,6 +29,15 @@ object mod extends js.Object {
     mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]],
     options: Options
   ): js.Promise[js.Array[ValueType]] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pTimes<ValueType>(
+  // 	count: number,
+  // 	mapper: (index: number) => ValueType | PromiseLike<ValueType>,
+  // 	options?: pTimes.Options
+  // ): Promise<ValueType[]>;
+  // export = pTimes;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any = js.native
+  
   type Options = typings.pMap.mod.Options
 }
-

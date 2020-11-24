@@ -2,17 +2,17 @@ package typings.phaser.Phaser.Scale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Orientation extends js.Object
-
 /**
   * Phaser Scale Manager constants for orientation.
   */
 @JSGlobal("Phaser.Scale.Orientation")
 @js.native
 object Orientation extends js.Object {
+  
   /**
     * A landscape orientation.
     */
@@ -24,6 +24,4 @@ object Orientation extends js.Object {
     */
   @js.native
   sealed trait PORTRAIT extends Orientation
-  
 }
-

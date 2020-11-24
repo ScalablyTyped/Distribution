@@ -16,11 +16,12 @@ import typings.chrome.chromeStrings.dark
 import typings.chrome.chromeStrings.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.devtools")
 @js.native
 object devtools extends js.Object {
+  
   ////////////////////
   // Dev Tools - Inspected Window
   ////////////////////
@@ -30,9 +31,7 @@ object devtools extends js.Object {
     */
   @js.native
   object inspectedWindow extends js.Object {
-    var onResourceAdded: ResourceAddedEvent = js.native
-    var onResourceContentCommitted: ResourceContentCommittedEvent = js.native
-    var tabId: Double = js.native
+    
     def eval[T](expression: String): Unit = js.native
     def eval[T](
       expression: String,
@@ -44,8 +43,16 @@ object devtools extends js.Object {
       options: EvalOptions,
       callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
     ): Unit = js.native
+    
     def getResources(callback: js.Function1[/* resources */ js.Array[Resource], Unit]): Unit = js.native
+    
+    var onResourceAdded: ResourceAddedEvent = js.native
+    
+    var onResourceContentCommitted: ResourceContentCommittedEvent = js.native
+    
     def reload(reloadOptions: ReloadOptions): Unit = js.native
+    
+    var tabId: Double = js.native
   }
   
   ////////////////////
@@ -57,9 +64,12 @@ object devtools extends js.Object {
     */
   @js.native
   object network extends js.Object {
-    var onNavigated: NavigatedEvent = js.native
-    var onRequestFinished: RequestFinishedEvent = js.native
+    
     def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit = js.native
+    
+    var onNavigated: NavigatedEvent = js.native
+    
+    var onRequestFinished: RequestFinishedEvent = js.native
   }
   
   ////////////////////
@@ -71,9 +81,7 @@ object devtools extends js.Object {
     */
   @js.native
   object panels extends js.Object {
-    var elements: ElementsPanel = js.native
-    var sources: SourcesPanel = js.native
-    var themeName: default | dark = js.native
+    
     def create(title: String, iconPath: String, pagePath: String): Unit = js.native
     def create(
       title: String,
@@ -81,10 +89,16 @@ object devtools extends js.Object {
       pagePath: String,
       callback: js.Function1[/* panel */ ExtensionPanel, Unit]
     ): Unit = js.native
+    
+    var elements: ElementsPanel = js.native
+    
     def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = js.native
+    
     def setOpenResourceHandler(): Unit = js.native
     def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = js.native
+    
+    var sources: SourcesPanel = js.native
+    
+    var themeName: default | dark = js.native
   }
-  
 }
-

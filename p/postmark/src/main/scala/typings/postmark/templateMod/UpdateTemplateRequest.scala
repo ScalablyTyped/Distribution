@@ -2,7 +2,7 @@ package typings.postmark.templateMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models/templates/Template", "UpdateTemplateRequest")
 @js.native
@@ -16,12 +16,18 @@ class UpdateTemplateRequest protected () extends js.Object {
     TemplateType: js.UndefOr[TemplateTypes],
     LayoutTemplate: js.UndefOr[String]
   ) = this()
+  
   var Alias: js.UndefOr[String | Null] = js.native
+  
   var HtmlBody: js.UndefOr[String] = js.native
+  
   var LayoutTemplate: js.UndefOr[String] = js.native
+  
   var Name: js.UndefOr[String] = js.native
+  
   var Subject: js.UndefOr[String] = js.native
+  
   var TemplateType: js.UndefOr[TemplateTypes] = js.native
+  
   var TextBody: js.UndefOr[String] = js.native
 }
-

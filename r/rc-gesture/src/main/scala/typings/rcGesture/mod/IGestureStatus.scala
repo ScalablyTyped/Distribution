@@ -2,30 +2,49 @@ package typings.rcGesture.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IGestureStatus extends js.Object {
-  var availablePan: js.UndefOr[Boolean] = js.undefined
-  var direction: js.UndefOr[Double] = js.undefined
-  var moveStatus: js.UndefOr[SingeFingerMoveStatus] = js.undefined
-  var mutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
-  var pan: js.UndefOr[Boolean] = js.undefined
-  var pinch: js.UndefOr[Boolean] = js.undefined
-  var preTouches: js.Array[Finger]
-  var press: js.UndefOr[Boolean] = js.undefined
-  var rotate: js.UndefOr[Boolean] = js.undefined
-  var rotation: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var srcEvent: js.Any
-  var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
-  var startTime: Double
-  var startTouches: js.Array[Finger]
-  var swipe: js.UndefOr[Boolean] = js.undefined
-  var time: Double
-  var touches: js.Array[Finger]
+  
+  var availablePan: js.UndefOr[Boolean] = js.native
+  
+  var direction: js.UndefOr[Double] = js.native
+  
+  var moveStatus: js.UndefOr[SingeFingerMoveStatus] = js.native
+  
+  var mutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.native
+  
+  var pan: js.UndefOr[Boolean] = js.native
+  
+  var pinch: js.UndefOr[Boolean] = js.native
+  
+  var preTouches: js.Array[Finger] = js.native
+  
+  var press: js.UndefOr[Boolean] = js.native
+  
+  var rotate: js.UndefOr[Boolean] = js.native
+  
+  var rotation: js.UndefOr[Double] = js.native
+  
+  var scale: js.UndefOr[Double] = js.native
+  
+  var srcEvent: js.Any = js.native
+  
+  var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.native
+  
+  var startTime: Double = js.native
+  
+  var startTouches: js.Array[Finger] = js.native
+  
+  var swipe: js.UndefOr[Boolean] = js.native
+  
+  var time: Double = js.native
+  
+  var touches: js.Array[Finger] = js.native
 }
-
 object IGestureStatus {
+  
   @scala.inline
   def apply(
     preTouches: js.Array[Finger],
@@ -33,34 +52,130 @@ object IGestureStatus {
     startTime: Double,
     startTouches: js.Array[Finger],
     time: Double,
-    touches: js.Array[Finger],
-    availablePan: js.UndefOr[Boolean] = js.undefined,
-    direction: js.UndefOr[Double] = js.undefined,
-    moveStatus: SingeFingerMoveStatus = null,
-    mutliFingerStatus: js.Array[MultiFingerStatus] = null,
-    pan: js.UndefOr[Boolean] = js.undefined,
-    pinch: js.UndefOr[Boolean] = js.undefined,
-    press: js.UndefOr[Boolean] = js.undefined,
-    rotate: js.UndefOr[Boolean] = js.undefined,
-    rotation: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    startMutliFingerStatus: js.Array[MultiFingerStatus] = null,
-    swipe: js.UndefOr[Boolean] = js.undefined
+    touches: js.Array[Finger]
   ): IGestureStatus = {
     val __obj = js.Dynamic.literal(preTouches = preTouches.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], startTouches = startTouches.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
-    if (!js.isUndefined(availablePan)) __obj.updateDynamic("availablePan")(availablePan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
-    if (moveStatus != null) __obj.updateDynamic("moveStatus")(moveStatus.asInstanceOf[js.Any])
-    if (mutliFingerStatus != null) __obj.updateDynamic("mutliFingerStatus")(mutliFingerStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(pan)) __obj.updateDynamic("pan")(pan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinch)) __obj.updateDynamic("pinch")(pinch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(press)) __obj.updateDynamic("press")(press.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (startMutliFingerStatus != null) __obj.updateDynamic("startMutliFingerStatus")(startMutliFingerStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGestureStatus]
   }
+  
+  @scala.inline
+  implicit class IGestureStatusOps[Self <: IGestureStatus] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setPreTouchesVarargs(value: Finger*): Self = this.set("preTouches", js.Array(value :_*))
+    
+    @scala.inline
+    def setPreTouches(value: js.Array[Finger]): Self = this.set("preTouches", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSrcEvent(value: js.Any): Self = this.set("srcEvent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStartTouchesVarargs(value: Finger*): Self = this.set("startTouches", js.Array(value :_*))
+    
+    @scala.inline
+    def setStartTouches(value: js.Array[Finger]): Self = this.set("startTouches", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTouchesVarargs(value: Finger*): Self = this.set("touches", js.Array(value :_*))
+    
+    @scala.inline
+    def setTouches(value: js.Array[Finger]): Self = this.set("touches", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAvailablePan(value: Boolean): Self = this.set("availablePan", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAvailablePan: Self = this.set("availablePan", js.undefined)
+    
+    @scala.inline
+    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    
+    @scala.inline
+    def setMoveStatus(value: SingeFingerMoveStatus): Self = this.set("moveStatus", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMoveStatus: Self = this.set("moveStatus", js.undefined)
+    
+    @scala.inline
+    def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = this.set("mutliFingerStatus", js.Array(value :_*))
+    
+    @scala.inline
+    def setMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = this.set("mutliFingerStatus", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMutliFingerStatus: Self = this.set("mutliFingerStatus", js.undefined)
+    
+    @scala.inline
+    def setPan(value: Boolean): Self = this.set("pan", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePan: Self = this.set("pan", js.undefined)
+    
+    @scala.inline
+    def setPinch(value: Boolean): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePinch: Self = this.set("pinch", js.undefined)
+    
+    @scala.inline
+    def setPress(value: Boolean): Self = this.set("press", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePress: Self = this.set("press", js.undefined)
+    
+    @scala.inline
+    def setRotate(value: Boolean): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRotate: Self = this.set("rotate", js.undefined)
+    
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    
+    @scala.inline
+    def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = this.set("startMutliFingerStatus", js.Array(value :_*))
+    
+    @scala.inline
+    def setStartMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = this.set("startMutliFingerStatus", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStartMutliFingerStatus: Self = this.set("startMutliFingerStatus", js.undefined)
+    
+    @scala.inline
+    def setSwipe(value: Boolean): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSwipe: Self = this.set("swipe", js.undefined)
+  }
 }
-

@@ -10,9 +10,9 @@ Get raw git commits out of your repository using git-log(1)
 | ------------------ | :-------------: |
 | Full name          | git-raw-commits |
 | Keywords           | git-raw-commits, raw, commit, commits, git, log, git-log |
-| # releases         | 10 |
-| # dependents       | 36 |
-| # downloads        | 41336068 |
+| # releases         | 4 |
+| # dependents       | 50 |
+| # downloads        | 70659626 |
 | # stars            | 3 |
 
 ## Links

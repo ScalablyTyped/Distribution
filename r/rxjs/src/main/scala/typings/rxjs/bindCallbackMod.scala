@@ -4,11 +4,12 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/bindCallback", JSImport.Namespace)
 @js.native
 object bindCallbackMod extends js.Object {
+  
   def bindCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
   def bindCallback(callbackFunc: js.Function1[/* callback */ js.Function0[_], _]): js.Function0[Observable[Unit]] = js.native
   def bindCallback(callbackFunc: js.Function1[/* callback */ js.Function0[_], _], scheduler: SchedulerLike): js.Function0[Observable[Unit]] = js.native
@@ -591,4 +592,3 @@ object bindCallbackMod extends js.Object {
     scheduler: SchedulerLike
   ): js.Function0[Observable[js.Array[_]]] = js.native
 }
-

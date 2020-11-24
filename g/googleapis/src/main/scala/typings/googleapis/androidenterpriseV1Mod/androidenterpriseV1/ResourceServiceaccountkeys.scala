@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Serviceaccountkeys")
 @js.native
 class ResourceServiceaccountkeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.serviceaccountkeys.delete
     * @desc Removes and invalidates the specified credentials for the service
@@ -46,6 +48,7 @@ class ResourceServiceaccountkeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.serviceaccountkeys.insert
     * @desc Generates new credentials for the service account associated with
@@ -82,6 +85,7 @@ class ResourceServiceaccountkeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccountKey]
   ): Unit = js.native
+  
   /**
     * androidenterprise.serviceaccountkeys.list
     * @desc Lists all active credentials for the service account associated
@@ -118,4 +122,3 @@ class ResourceServiceaccountkeys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaServiceAccountKeysListResponse]
   ): Unit = js.native
 }
-

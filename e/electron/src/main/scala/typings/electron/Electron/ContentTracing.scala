@@ -2,11 +2,12 @@ package typings.electron.Electron
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContentTracing extends js.Object {
-  // Docs: http://electronjs.org/docs/api/content-tracing
+  
+  // Docs: https://electronjs.org/docs/api/content-tracing
   /**
     * resolves with an array of category groups once all child processes have
     * acknowledged the `getCategories` request
@@ -18,6 +19,7 @@ trait ContentTracing extends js.Object {
     * This category can be used to capture Electron-specific tracing events.
     */
   def getCategories(): js.Promise[js.Array[String]] = js.native
+  
   /**
     * Resolves with an object containing the `value` and `percentage` of trace buffer
     * maximum usage
@@ -29,6 +31,7 @@ trait ContentTracing extends js.Object {
     * full state.
     */
   def getTraceBufferUsage(): js.Promise[TraceBufferUsageReturnValue] = js.native
+  
   def startRecording(options: TraceCategoriesAndOptions): js.Promise[Unit] = js.native
   /**
     * resolved once all child processes have acknowledged the `startRecording`
@@ -43,6 +46,7 @@ trait ContentTracing extends js.Object {
     * only one trace operation can be in progress at a time.
     */
   def startRecording(options: TraceConfig): js.Promise[Unit] = js.native
+  
   /**
     * resolves with a path to a file that contains the traced data once all child
     * processes have acknowledged the `stopRecording` request
@@ -62,4 +66,3 @@ trait ContentTracing extends js.Object {
   def stopRecording(): js.Promise[String] = js.native
   def stopRecording(resultFilePath: String): js.Promise[String] = js.native
 }
-

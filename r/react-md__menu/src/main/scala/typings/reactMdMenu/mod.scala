@@ -6,8 +6,8 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.reactMdDivider.dividerMod.DividerElement
 import typings.reactMdList.listItemLinkMod.ListItemLinkWithComponentProps
-import typings.reactMdMenu.anon.MenuPropsPickMenuPropshid
-import typings.reactMdMenu.anon.MenuPropsPickMenuPropshidAbout
+import typings.reactMdMenu.anon.PickBaseMenuPropshiddenvi
+import typings.reactMdMenu.anon.PickBaseMenuPropshiddenviAbout
 import typings.reactMdMenu.defaultMenuItemRendererMod.ValidMenuItem
 import typings.reactMdMenu.defaultMenuRendererMod.AllInjectedMenuProps
 import typings.reactMdMenu.dropdownMenuItemMod.DropdownMenuItemProps
@@ -25,36 +25,32 @@ import typings.std.HTMLElement
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/menu", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   val DropdownMenu: ForwardRefExoticComponent[DropdownMenuProps with RefAttributes[HTMLButtonElement]] = js.native
-  /**
-    * The `DropdownMenuItem` component is used to be able to render nested dropdown menus.
-    */
+  
   val DropdownMenuItem: ForwardRefExoticComponent[DropdownMenuItemProps with RefAttributes[HTMLLIElement]] = js.native
-  /**
-    * The `Menu` component is a fully controlled component that will animate in and
-    * out based on the `visible` prop as well as handle keyboard focus, closing
-    * when needed, etc.
-    */
-  val Menu: ForwardRefExoticComponent[MenuPropsPickMenuPropshid | MenuPropsPickMenuPropshidAbout] = js.native
-  /**
-    * This component is an extension of the `Button` component that will:
-    * - apply the required a11y prosp for a menu button
-    * - dynamically add a dropdown icon after the button contents
-    */
+  
+  val Menu: ForwardRefExoticComponent[PickBaseMenuPropshiddenvi | PickBaseMenuPropshiddenviAbout] = js.native
+  
   val MenuButton: ForwardRefExoticComponent[MenuButtonProps with RefAttributes[HTMLButtonElement]] = js.native
+  
   val MenuItem: ForwardRefExoticComponent[MenuItemProps with RefAttributes[HTMLLIElement]] = js.native
+  
   val MenuItemLink: ForwardRefExoticComponent[
     (MenuItemLinkProps with RefAttributes[HTMLAnchorElement]) | (MenuItemLinkProps with ListItemLinkWithComponentProps with RefAttributes[HTMLAnchorElement])
   ] = js.native
+  
   val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps with RefAttributes[DividerElement]] = js.native
+  
   def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = js.native
+  
   def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = js.native
+  
   def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = js.native
   def useContextMenu[CE /* <: HTMLElement */](hasIdRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = js.native
 }
-

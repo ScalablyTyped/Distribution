@@ -2,7 +2,7 @@ package typings.azure.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "QueueService")
 @js.native
@@ -44,12 +44,15 @@ class QueueService () extends StorageServiceClient {
     sasToken: String
   ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, sasToken: String) = this()
+  
   var authenticationProvider: SharedKey = js.native
+  
   /**
     * Clears all messages from the queue.
     */
   def clearMessages(queue: String, callback: StorageCallbackVoid): Unit = js.native
   def clearMessages(queue: String, options: TimeoutIntervalOptions, callback: StorageCallbackVoid): Unit = js.native
+  
   //#endregion
   //#region Message Methods
   /**
@@ -65,16 +68,19 @@ class QueueService () extends StorageServiceClient {
     options: CreateQueueMessageOptions,
     callback: StorageCallback[QueueMessageResult]
   ): Unit = js.native
+  
   /**
     * Creates a new queue under the given account.
     */
   def createQueue(queue: String, callback: StorageCallback[QueueResult]): Unit = js.native
   def createQueue(queue: String, options: MetadataOptions, callback: StorageCallback[QueueResult]): Unit = js.native
+  
   /**
     * Creates a new queue under the given account if it doesn't exist.
     */
   def createQueueIfNotExists(queue: String, callback: StorageCallback[Boolean]): Unit = js.native
   def createQueueIfNotExists(queue: String, options: MetadataOptions, callback: StorageCallback[Boolean]): Unit = js.native
+  
   /**
     * Deletes a specified message from the queue.
     */
@@ -86,11 +92,13 @@ class QueueService () extends StorageServiceClient {
     options: TimeoutIntervalOptions,
     callback: StorageCallback[Boolean]
   ): Unit = js.native
+  
   /**
     * Permanently deletes the specified queue.
     */
   def deleteQueue(queue: String, callback: StorageCallback[Boolean]): Unit = js.native
   def deleteQueue(queue: String, options: TimeoutIntervalOptions, callback: StorageCallback[Boolean]): Unit = js.native
+  
   /**
     * Retrieves a message from the queue and makes it invisible to other consumers.
     */
@@ -100,11 +108,13 @@ class QueueService () extends StorageServiceClient {
     options: GetQueueMessagesOptions,
     callback: StorageCallback[js.Array[QueueMessageResult]]
   ): Unit = js.native
+  
   /**
     * Returns queue properties, including user-defined metadata.
     */
   def getQueueMetadata(queue: String, callback: StorageCallback[QueueResult]): Unit = js.native
   def getQueueMetadata(queue: String, options: TimeoutIntervalOptions, callback: StorageCallback[QueueResult]): Unit = js.native
+  
   //#endregion
   //#region Service Methods
   /**
@@ -112,6 +122,7 @@ class QueueService () extends StorageServiceClient {
     */
   def getServiceProperties(callback: StorageServicePropertiesCallback): Unit = js.native
   def getServiceProperties(options: TimeoutIntervalOptions, callback: StorageServicePropertiesCallback): Unit = js.native
+  
   //#endregion
   //#region Queue Methods
   /**
@@ -119,6 +130,7 @@ class QueueService () extends StorageServiceClient {
     */
   def listQueues(callback: ListQueuesCallback): Unit = js.native
   def listQueues(options: ListQueuesOptions, callback: ListQueuesCallback): Unit = js.native
+  
   /**
     * Retrieves a message from the front of the queue, without changing the message visibility.
     */
@@ -128,6 +140,7 @@ class QueueService () extends StorageServiceClient {
     options: PeekQueueMessagesOptions,
     callback: StorageCallback[js.Array[QueueMessageResult]]
   ): Unit = js.native
+  
   /**
     * Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
     */
@@ -138,6 +151,7 @@ class QueueService () extends StorageServiceClient {
     options: TimeoutIntervalOptions,
     callback: StorageCallback[QueueResult]
   ): Unit = js.native
+  
   /**
     * Sets the properties of a storage account's Blob service, including Azure Storage Analytics.
     * You can also use this operation to set the default request version for all incoming requests that do not have a version specified.
@@ -148,6 +162,7 @@ class QueueService () extends StorageServiceClient {
     options: TimeoutIntervalOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
   /**
     * Deletes a specified message from the queue.
     */
@@ -167,4 +182,3 @@ class QueueService () extends StorageServiceClient {
     callback: StorageCallback[QueueMessageResult]
   ): Unit = js.native
 }
-

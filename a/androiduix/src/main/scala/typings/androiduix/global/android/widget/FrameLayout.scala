@@ -5,7 +5,7 @@ import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.widget.FrameLayout")
 @js.native
@@ -16,11 +16,13 @@ class FrameLayout protected ()
   def this(context: Context, bindElement: js.UndefOr[scala.Nothing], defStyle: Map[String, String]) = this()
   def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
 }
-
 /* static members */
 @JSGlobal("android.widget.FrameLayout")
 @js.native
 object FrameLayout extends js.Object {
+  
+  var DEFAULT_CHILD_GRAVITY: Double = js.native
+  
   @js.native
   class LayoutParams ()
     extends typings.androiduix.android.widget.FrameLayout.LayoutParams {
@@ -29,7 +31,4 @@ object FrameLayout extends js.Object {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, gravity: Double) = this()
   }
-  
-  var DEFAULT_CHILD_GRAVITY: Double = js.native
 }
-

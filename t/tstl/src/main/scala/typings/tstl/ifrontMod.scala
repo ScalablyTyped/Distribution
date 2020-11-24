@@ -2,13 +2,15 @@ package typings.tstl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/partial/IFront", JSImport.Namespace)
 @js.native
 object ifrontMod extends js.Object {
+  
   @js.native
   trait IFront[T] extends js.Object {
+    
     /**
       * Get the first element.
       *
@@ -22,6 +24,4 @@ object ifrontMod extends js.Object {
       */
     def front(`val`: T): Unit = js.native
   }
-  
 }
-

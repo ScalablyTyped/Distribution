@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.Types.Scenes.SettingsConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A base Phaser.Scene class which can be extended for your own use.
@@ -21,4 +21,3 @@ class Scene protected ()
   def this(config: String) = this()
   def this(config: SettingsConfig) = this()
 }
-

@@ -2,13 +2,17 @@ package typings.d3Dispatch
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-dispatch", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
+  
   @js.native
   trait Dispatch_[T /* <: js.Object */] extends js.Object {
+    
     /**
       * Like `function.apply`, invokes each registered callback for the specified type,
       * passing the callback the specified arguments, with `that` as the `this` context.
@@ -26,6 +30,7 @@ object mod extends js.Object {
     def apply(`type`: String, that: T, args: js.Array[_]): Unit = js.native
     @JSName("apply")
     def apply(`type`: String, that: js.UndefOr[scala.Nothing], args: js.Array[_]): Unit = js.native
+    
     /**
       * Like `function.call`, invokes each registered callback for the specified type,
       * passing the callback the specified arguments, with `that` as the `this` context.
@@ -38,11 +43,13 @@ object mod extends js.Object {
       */
     def call(`type`: String, that: T, args: js.Any*): Unit = js.native
     def call(`type`: String, that: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
+    
     /**
       * Returns a copy of this dispatch object.
       * Changes to this dispatch do not affect the returned copy and vice versa.
       */
     def copy(): Dispatch_[T] = js.native
+    
     /**
       * Returns the callback for the specified typenames, if any.
       * If multiple typenames are specified, the first matching callback is returned.
@@ -69,7 +76,4 @@ object mod extends js.Object {
       */
     def on(typenames: String, callback: Null): this.type = js.native
   }
-  
-  def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
 }
-

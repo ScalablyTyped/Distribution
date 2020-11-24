@@ -5,11 +5,12 @@ import typings.superstruct.structMod.Struct
 import typings.superstruct.utilsMod.StructRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct", "type")
 @js.native
 object `type` extends js.Object {
+  
   def apply[V /* <: StructRecord[_] */](Structs: V): Struct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]: superstruct.superstruct/lib/struct.StructType<V[K]>}
@@ -17,4 +18,3 @@ object `type` extends js.Object {
     _
   ] = js.native
 }
-

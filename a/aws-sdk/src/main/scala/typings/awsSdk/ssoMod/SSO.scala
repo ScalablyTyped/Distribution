@@ -1,17 +1,19 @@
 package typings.awsSdk.ssoMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SSO extends Service {
+  
   @JSName("config")
   var config_SSO: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Returns the STS short-term credentials for a given role name that is assigned to the user.
     */
@@ -25,6 +27,7 @@ trait SSO extends Service {
     params: GetRoleCredentialsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRoleCredentialsResponse, Unit]
   ): Request[GetRoleCredentialsResponse, AWSError] = js.native
+  
   /**
     * Lists all roles that are assigned to the user for a given AWS account.
     */
@@ -38,6 +41,7 @@ trait SSO extends Service {
     params: ListAccountRolesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAccountRolesResponse, Unit]
   ): Request[ListAccountRolesResponse, AWSError] = js.native
+  
   /**
     * Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the administrator of the account. For more information, see Assign User Access in the AWS SSO User Guide. This operation returns a paginated response.
     */
@@ -51,6 +55,7 @@ trait SSO extends Service {
     params: ListAccountsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAccountsResponse, Unit]
   ): Request[ListAccountsResponse, AWSError] = js.native
+  
   /**
     * Removes the client- and server-side session that is associated with the user.
     */
@@ -62,4 +67,3 @@ trait SSO extends Service {
   def logout(params: LogoutRequest): Request[js.Object, AWSError] = js.native
   def logout(params: LogoutRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
 }
-

@@ -9,13 +9,14 @@ import typings.autocannon.autocannonStrings.tick
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Autocannon instance/event emitter for tracking progress, etc.
   */
 @js.native
 trait Instance extends EventEmitter {
+  
    // tslint:disable-line:unified-signatures
   /**
     * Emitted when the autocannon finishes a benchmark.
@@ -59,4 +60,3 @@ trait Instance extends EventEmitter {
   @JSName("on")
   def on_tick(event: tick, listener: js.Function0[Unit]): this.type = js.native
 }
-

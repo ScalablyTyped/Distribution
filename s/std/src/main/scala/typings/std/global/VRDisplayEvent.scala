@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.VRDisplayEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("VRDisplayEvent")
 @js.native
@@ -12,7 +12,6 @@ class VRDisplayEvent protected ()
   extends typings.std.VRDisplayEvent {
   def this(`type`: java.lang.String, eventInitDict: VRDisplayEventInit) = this()
 }
-
 @JSGlobal("VRDisplayEvent")
 @js.native
 object VRDisplayEvent
@@ -21,4 +20,3 @@ object VRDisplayEvent
       /* eventInitDict */ VRDisplayEventInit, 
       typings.std.VRDisplayEvent
     ]
-

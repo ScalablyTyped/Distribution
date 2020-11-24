@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.gameliftMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.GameLift")
 @js.native
@@ -14,4 +14,3 @@ class GameLift ()
   extends typings.awsSdk.mod.GameLift {
   def this(options: ClientConfiguration) = this()
 }
-

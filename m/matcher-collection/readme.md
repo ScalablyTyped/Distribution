@@ -11,8 +11,8 @@ Minimatch but for collections of minimatcher matchers.
 | Full name          | matcher-collection |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 12234077 |
+| # dependents       | 9 |
+| # downloads        | 18730425 |
 | # stars            | 0 |
 
 ## Links

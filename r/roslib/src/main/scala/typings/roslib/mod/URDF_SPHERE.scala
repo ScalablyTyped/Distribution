@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.roslib.roslibNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "URDF_SPHERE")
 @js.native
 object URDF_SPHERE extends TopLevel[`0`]
-

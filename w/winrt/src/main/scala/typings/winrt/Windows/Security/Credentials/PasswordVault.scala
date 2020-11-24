@@ -3,12 +3,12 @@ package typings.winrt.Windows.Security.Credentials
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PasswordVault extends IPasswordVault
-
 object PasswordVault {
+  
   @scala.inline
   def apply(
     add: PasswordCredential => Unit,
@@ -22,4 +22,3 @@ object PasswordVault {
     __obj.asInstanceOf[PasswordVault]
   }
 }
-

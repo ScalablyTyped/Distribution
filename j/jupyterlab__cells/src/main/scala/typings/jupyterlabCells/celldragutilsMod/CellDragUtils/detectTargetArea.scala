@@ -4,11 +4,12 @@ import typings.jupyterlabCells.widgetMod.Cell
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.detectTargetArea")
 @js.native
 object detectTargetArea extends js.Object {
+  
   /**
     * Detect which part of the cell triggered the MouseEvent
     *
@@ -17,4 +18,3 @@ object detectTargetArea extends js.Object {
     */
   def apply(cell: Cell, target: HTMLElement): ICellTargetArea = js.native
 }
-

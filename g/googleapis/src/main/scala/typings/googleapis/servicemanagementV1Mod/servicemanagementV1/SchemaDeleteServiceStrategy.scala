@@ -2,7 +2,7 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Strategy used to delete a service. This strategy is a placeholder only used
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaDeleteServiceStrategy extends js.Object
-

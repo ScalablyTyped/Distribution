@@ -2,14 +2,14 @@ package typings.pixiSpine.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TimelineType extends js.Object
-
 @JSGlobal("PIXI.spine.core.TimelineType")
 @js.native
 object TimelineType extends js.Object {
+  
   @js.native
   sealed trait attachment extends TimelineType
   
@@ -54,6 +54,4 @@ object TimelineType extends js.Object {
   
   @js.native
   sealed trait twoColor extends TimelineType
-  
 }
-

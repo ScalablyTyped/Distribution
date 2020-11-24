@@ -11,7 +11,7 @@ import typings.zchatBrowser.zchatBrowserStrings.chatDotrating
 import typings.zchatBrowser.zchatBrowserStrings.chatDotrequestDotrating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.zchatBrowser.anon.BaseChatEventDatatypechat
@@ -23,14 +23,15 @@ import scala.scalajs.js.annotation._
   - typings.zchatBrowser.anon.BaseChatEventDatatypechatComment
 */
 trait ChatEventData extends EventData
-
 object ChatEventData {
+  
   @scala.inline
   def BaseChatEventDatatypechatTimestamp(display_name: String, nick: String, time_stamp: Double, `type`: chatDotrequestDotrating): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
+  
   @scala.inline
   def BaseChatEventDatatypechat(
     display_name: String,
@@ -45,12 +46,14 @@ object ChatEventData {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
+  
   @scala.inline
   def BaseChatEventDatatypechatDisplayname(display_name: String, nick: String, time_stamp: Double, `type`: chatDotmemberjoin): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
+  
   @scala.inline
   def BaseChatEventDatatypechatAttachment(
     attachment: Attachment,
@@ -64,18 +67,21 @@ object ChatEventData {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
+  
   @scala.inline
   def BaseChatEventDatatypechatNewrating(display_name: String, nick: String, time_stamp: Double, `type`: chatDotrating): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
+  
   @scala.inline
   def BaseChatEventDatatypechatComment(display_name: String, nick: String, time_stamp: Double, `type`: chatDotcomment): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
+  
   @scala.inline
   def BaseChatEventDatatypechatNick(display_name: String, nick: String, time_stamp: Double, `type`: chatDotmemberleave): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
@@ -83,4 +89,3 @@ object ChatEventData {
     __obj.asInstanceOf[ChatEventData]
   }
 }
-

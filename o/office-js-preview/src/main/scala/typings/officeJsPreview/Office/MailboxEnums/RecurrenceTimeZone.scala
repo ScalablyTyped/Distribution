@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RecurrenceTimeZone extends js.Object
-
 /**
   * Specifies the time zone applied to the recurrence.
   *
@@ -19,6 +18,7 @@ sealed trait RecurrenceTimeZone extends js.Object
 @JSGlobal("Office.MailboxEnums.RecurrenceTimeZone")
 @js.native
 object RecurrenceTimeZone extends js.Object {
+  
   /**
     * Australia Central Standard Time
     */
@@ -834,6 +834,4 @@ object RecurrenceTimeZone extends js.Object {
     */
   @js.native
   sealed trait YakutskStandardTime extends RecurrenceTimeZone
-  
 }
-

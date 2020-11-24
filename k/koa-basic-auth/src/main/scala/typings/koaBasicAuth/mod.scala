@@ -6,11 +6,11 @@ import typings.koa.mod.Middleware
 import typings.koaBasicAuth.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("koa-basic-auth", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(opts: Name): Middleware[DefaultState, DefaultContext] = js.native
 }
-

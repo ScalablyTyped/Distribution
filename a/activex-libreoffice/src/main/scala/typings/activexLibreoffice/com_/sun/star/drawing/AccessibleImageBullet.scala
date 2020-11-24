@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of an image bullet.
@@ -23,8 +23,8 @@ import scala.scalajs.js.annotation._
 trait AccessibleImageBullet
   extends XAccessibleContext
      with XAccessibleComponent
-
 object AccessibleImageBullet {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -69,4 +69,3 @@ object AccessibleImageBullet {
     __obj.asInstanceOf[AccessibleImageBullet]
   }
 }
-

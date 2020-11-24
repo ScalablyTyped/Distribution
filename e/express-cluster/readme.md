@@ -12,7 +12,7 @@ Simple drop-in for express apps to spawn multiple processes
 | Keywords           | cluster, express, http, https, net, listener |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 141227 |
+| # downloads        | 199716 |
 | # stars            | 11 |
 
 ## Links

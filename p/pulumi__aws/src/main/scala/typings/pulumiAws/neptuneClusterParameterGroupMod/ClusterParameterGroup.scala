@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/neptune/clusterParameterGroup", "ClusterParameterGroup")
 @js.native
@@ -23,40 +23,47 @@ class ClusterParameterGroup protected () extends CustomResource {
     */
   def this(name: String, args: ClusterParameterGroupArgs) = this()
   def this(name: String, args: ClusterParameterGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the neptune cluster parameter group.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The description of the neptune cluster parameter group. Defaults to "Managed by Pulumi".
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The family of the neptune cluster parameter group.
     */
   val family: Output_[String] = js.native
+  
   /**
     * The name of the neptune parameter.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[String] = js.native
+  
   /**
     * A list of neptune parameters to apply.
     */
   val parameters: Output_[js.UndefOr[js.Array[ClusterParameterGroupParameter]]] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/neptune/clusterParameterGroup", "ClusterParameterGroup")
 @js.native
 object ClusterParameterGroup extends js.Object {
+  
   /**
     * Get an existing ClusterParameterGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -70,10 +77,10 @@ object ClusterParameterGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ClusterParameterGroup = js.native
   def get(name: String, id: Input[ID], state: ClusterParameterGroupState): ClusterParameterGroup = js.native
   def get(name: String, id: Input[ID], state: ClusterParameterGroupState, opts: CustomResourceOptions): ClusterParameterGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterParameterGroup.ClusterParameterGroup */ Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A queue is a container of related tasks. Queues are configured to manage
@@ -11,10 +11,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaQueue extends js.Object {
+  
   /**
     * AppEngineHttpQueue settings apply only to App Engine tasks in this queue.
     */
   var appEngineHttpQueue: js.UndefOr[SchemaAppEngineHttpQueue] = js.native
+  
   /**
     * Caller-specified and required in CreateQueue, after which it becomes
     * output only.  The queue name.  The queue name must have the following
@@ -30,6 +32,7 @@ trait SchemaQueue extends js.Object {
     * (-). The maximum length is 100 characters.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Output only. The last time this queue was purged.  All tasks that were
     * created before this time were purged.  A queue can be purged using
@@ -39,6 +42,7 @@ trait SchemaQueue extends js.Object {
     * be unset if the queue has never been purged.
     */
   var purgeTime: js.UndefOr[String] = js.native
+  
   /**
     * Rate limits for task dispatches.  rate_limits and retry_config are
     * related because they both control task attempts. However they control
@@ -55,6 +59,7 @@ trait SchemaQueue extends js.Object {
     * sudden large traffic spikes.
     */
   var rateLimits: js.UndefOr[SchemaRateLimits] = js.native
+  
   /**
     * Settings that determine the retry behavior.  * For tasks created using
     * Cloud Tasks: the queue-level retry settings   apply to all tasks in the
@@ -66,6 +71,7 @@ trait SchemaQueue extends js.Object {
     * documentation](https://cloud.google.com/appengine/docs/standard/python/taskqueue/push/retrying-tasks).
     */
   var retryConfig: js.UndefOr[SchemaRetryConfig] = js.native
+  
   /**
     * Output only. The state of the queue.  `state` can only be changed by
     * called PauseQueue, ResumeQueue, or uploading
@@ -74,49 +80,63 @@ trait SchemaQueue extends js.Object {
     */
   var state: js.UndefOr[String] = js.native
 }
-
 object SchemaQueue {
+  
   @scala.inline
   def apply(): SchemaQueue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueue]
   }
+  
   @scala.inline
   implicit class SchemaQueueOps[Self <: SchemaQueue] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppEngineHttpQueue(value: SchemaAppEngineHttpQueue): Self = this.set("appEngineHttpQueue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppEngineHttpQueue: Self = this.set("appEngineHttpQueue", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setPurgeTime(value: String): Self = this.set("purgeTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePurgeTime: Self = this.set("purgeTime", js.undefined)
+    
     @scala.inline
     def setRateLimits(value: SchemaRateLimits): Self = this.set("rateLimits", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRateLimits: Self = this.set("rateLimits", js.undefined)
+    
     @scala.inline
     def setRetryConfig(value: SchemaRetryConfig): Self = this.set("retryConfig", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRetryConfig: Self = this.set("retryConfig", js.undefined)
+    
     @scala.inline
     def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
   }
-  
 }
-

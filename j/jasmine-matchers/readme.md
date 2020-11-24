@@ -12,7 +12,7 @@ Extends the matchers jasmine provides.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 37670 |
+| # downloads        | 105287 |
 | # stars            | 0 |
 
 ## Links

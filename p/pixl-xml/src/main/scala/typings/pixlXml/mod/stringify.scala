@@ -2,11 +2,12 @@ package typings.pixlXml.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pixl-xml", "stringify")
 @js.native
 object stringify extends js.Object {
+  
   def apply(doc: js.Object): String = js.native
   def apply(
     doc: js.Object,
@@ -215,4 +216,3 @@ object stringify extends js.Object {
     preserveOrder: Boolean
   ): String = js.native
 }
-

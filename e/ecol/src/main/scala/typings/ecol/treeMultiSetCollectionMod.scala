@@ -3,8 +3,6 @@ package typings.ecol
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
 import typings.ecol.collectionEventMod.CollectionEvent
-import typings.ecol.collectionEventMod.CollectionEvent.Listener
-import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
 import typings.tstl.anon.Iteratoranyanyany
 import typings.tstl.icontainerMod.IContainer
@@ -17,11 +15,12 @@ import typings.tstl.treeMultiSetMod.TreeMultiSet.ReverseIterator
 import typings.tstl.tstlBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecol/lib/sets/TreeMultiSetCollection", JSImport.Namespace)
 @js.native
 object treeMultiSetCollectionMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -34,30 +33,33 @@ object treeMultiSetCollectionMod extends js.Object {
   class TreeMultiSetCollection[T] ()
     extends TreeMultiSet[T]
        with IEventDispatcher[T, TreeMultiSet[T], Iterator[T], ReverseIterator[T]] {
-    /**
-      * @hidden
-      */
-    var dispatcher_ : js.Any = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_range(first: Iterator[T]): Iterator[T] = js.native
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_range(first: Iterator[T], last: Iterator[T]): Iterator[T] = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_val(key: T): Double = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Handle_erase(first: Iterator[T], last: Iterator[T]): Unit = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Handle_insert(first: Iterator[T], last: Iterator[T]): Unit = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Insert_by_hint(hint: Iterator[T], key: T): Iterator[T] = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Insert_by_key(key: T): InsertRet[T, `false`, TreeMultiSet[T], Iterator[T], ReverseIterator[T]] = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Insert_by_range[InputIterator /* <: IForwardIterator[T, InputIterator] */](begin: InputIterator, end: InputIterator): Unit = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Key_eq(x: T, y: T): Boolean = js.native
-    /* CompleteClass */
-    override def addEventListener(`type`: Type, listener: Listener[T, TreeMultiSet[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    
     /**
       * Range Assigner.
       *
@@ -66,18 +68,13 @@ object treeMultiSetCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.icontainerMod.IContainer.Iterator[T, TreeMultiSet[T], Iterator[T], ReverseIterator[T], T] = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -89,21 +86,12 @@ object treeMultiSetCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def count(key: T): Double = js.native
-    /* CompleteClass */
-    override def dispatchEvent(event: CollectionEvent[T, TreeMultiSet[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    
     /**
-      * Test whether container is empty.
+      * @hidden
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.icontainerMod.IContainer.Iterator[T, TreeMultiSet[T], Iterator[T], ReverseIterator[T], T] = js.native
+    var dispatcher_ : js.Any = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -127,6 +115,7 @@ object treeMultiSetCollectionMod extends js.Object {
     /* InferMemberOverrides */
     @JSName("erase")
     override def erase_IteratorT(pos: Iterator[T]): Iterator[T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -138,6 +127,7 @@ object treeMultiSetCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def find(key: T): Iterator[T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -149,8 +139,7 @@ object treeMultiSetCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def has(key: T): Boolean = js.native
-    /* CompleteClass */
-    override def hasEventListener(`type`: Type): Boolean = js.native
+    
     /* InferMemberOverrides */
     override def insert(hint: Iterator[T], key: T): Iterator[T] = js.native
     /* InferMemberOverrides */
@@ -158,28 +147,13 @@ object treeMultiSetCollectionMod extends js.Object {
     /* InferMemberOverrides */
     @JSName("insert")
     override def insert_InputIterator_IForwardIteratorKeyInputIterator_Unit[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def merge(source: TreeMultiSet[T]): Unit = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push(items: T*): Double = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseIterator[T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -192,22 +166,7 @@ object treeMultiSetCollectionMod extends js.Object {
       * @inheritDoc
       */
     def refresh(it: Iterator[T]): Unit = js.native
-    /* CompleteClass */
-    override def removeEventListener(`type`: Type, listener: Listener[T, TreeMultiSet[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rend(): ReverseIterator[T] = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
+    
     /**
       * Swap elements.
       *
@@ -215,6 +174,7 @@ object treeMultiSetCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: TreeMultiSet[T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -223,9 +183,9 @@ object treeMultiSetCollectionMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   @js.native
   object TreeMultiSetCollection extends js.Object {
+    
     val Event: Instantiable3[
         /* type */ String, 
         /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
@@ -255,6 +215,7 @@ object treeMultiSetCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val Iterator: Instantiable0[
         typings.tstl.setElementListMod.SetElementList.Iterator[
           js.Object, 
@@ -272,6 +233,7 @@ object treeMultiSetCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           js.Object, 
@@ -289,27 +251,29 @@ object treeMultiSetCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     type Event[T] = CollectionEvent[
         T, 
         TreeMultiSet[T], 
         typings.tstl.treeMultiSetMod.TreeMultiSet.Iterator[T], 
         typings.tstl.treeMultiSetMod.TreeMultiSet.ReverseIterator[T]
       ]
+    
     /**
       * Iterator of {@link TreeMultiSet}
       */
     type Iterator[Key] = typings.tstl.setElementListMod.SetElementList.Iterator[Key, typings.ecol.ecolBooleans.`false`, TreeMultiSet[Key]]
+    
     type Listener[T] = typings.ecol.collectionEventMod.CollectionEvent.Listener[
         T, 
         TreeMultiSet[T], 
         typings.tstl.treeMultiSetMod.TreeMultiSet.Iterator[T], 
         typings.tstl.treeMultiSetMod.TreeMultiSet.ReverseIterator[T]
       ]
+    
     /**
       * Reverse iterator of {@link TreeMultiSet}
       */
     type ReverseIterator[Key] = typings.tstl.setElementListMod.SetElementList.ReverseIterator[Key, typings.ecol.ecolBooleans.`false`, TreeMultiSet[Key]]
   }
-  
 }
-

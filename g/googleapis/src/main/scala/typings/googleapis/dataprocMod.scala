@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc", JSImport.Namespace)
 @js.native
 object dataprocMod extends js.Object {
+  
   def dataproc(options: Options): Dataproc = js.native
   def dataproc(options: typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Options): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = js.native
   @JSName("dataproc")
   def dataproc_v1(version: v1): Dataproc = js.native
   @JSName("dataproc")
   def dataproc_v1beta2(version: v1beta2): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Dataproc {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataproc]
+            ]
     
     @js.native
     class v1beta2 protected ()
@@ -37,13 +45,6 @@ object dataprocMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataproc]
-            ]
-    
     @js.native
     object v1beta2
       extends TopLevel[
@@ -53,11 +54,11 @@ object dataprocMod extends js.Object {
                 typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object dataprocMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

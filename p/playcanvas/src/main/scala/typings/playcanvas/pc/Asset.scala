@@ -4,7 +4,7 @@ import typings.playcanvas.anon.Contents
 import typings.playcanvas.pc.callbacks.AssetReady
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Asset record. Generally, Assets are created in the loading process and you won't need to create them by hand.
@@ -45,58 +45,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Asset extends EventHandler {
+  
   /**
     * Optional JSON data that contains either the complete resource data (e.g. in the case of a material) or additional data (e.g. in the case of a model it contains mappings from mesh to material)
     */
   var data: js.UndefOr[js.Any] = js.native
+  
   /**
     * The file details or null if no file
     */
   var file: Contents = js.native
-  /**
-    * The asset id
-    */
-  var id: Double = js.native
-  /**
-    * True if the resource is loaded. e.g. if asset.resource is not null
-    */
-  var loaded: Boolean = js.native
-  /**
-    * True if the resource is currently being loaded
-    */
-  var loading: Boolean = js.native
-  /**
-    * The name of the asset
-    */
-  var name: String = js.native
-  /**
-    * Optional JSON data that contains the asset handler options.
-    */
-  var options: js.UndefOr[js.Any] = js.native
-  /**
-    * If true the asset will be loaded during the preload phase of application set up.
-    */
-  var preload: Boolean = js.native
-  /**
-    * The asset registry that this Asset belongs to
-    */
-  var registry: AssetRegistry = js.native
-  /**
-    * A reference to the resource when the asset is loaded. e.g. a {@link pc.Texture} or a {@link pc.Model}
-    */
-  var resource: js.Any = js.native
-  /**
-    * A reference to the resources of the asset when it's loaded. An asset can hold more runtime resources than one e.g. cubemaps
-    */
-  var resources: js.Array[_] = js.native
-  /**
-    * Interface for tagging. Allows to find assets by tags using {@link pc.AssetRegistry#findByTag} method.
-    */
-  var tags: Tags = js.native
-  /**
-    * The type of the asset. One of ["animation", "audio", "binary", "cubemap", "css", "font", "json", "html", "material", "model", "script", "shader", "text", "texture"]
-    */
-  var `type`: String = js.native
+  
   /**
     * Return the URL required to fetch the file for this asset.
     * @example
@@ -105,6 +64,37 @@ trait Asset extends EventHandler {
     * @returns The URL.
     */
   def getFileUrl(): String = js.native
+  
+  /**
+    * The asset id
+    */
+  var id: Double = js.native
+  
+  /**
+    * True if the resource is loaded. e.g. if asset.resource is not null
+    */
+  var loaded: Boolean = js.native
+  
+  /**
+    * True if the resource is currently being loaded
+    */
+  var loading: Boolean = js.native
+  
+  /**
+    * The name of the asset
+    */
+  var name: String = js.native
+  
+  /**
+    * Optional JSON data that contains the asset handler options.
+    */
+  var options: js.UndefOr[js.Any] = js.native
+  
+  /**
+    * If true the asset will be loaded during the preload phase of application set up.
+    */
+  var preload: Boolean = js.native
+  
   /**
     * Take a callback which is called as soon as the asset is loaded. If the asset is already loaded the callback is called straight away.
     * @example
@@ -118,6 +108,32 @@ trait Asset extends EventHandler {
     */
   def ready(callback: AssetReady): Unit = js.native
   def ready(callback: AssetReady, scope: js.Any): Unit = js.native
+  
+  /**
+    * The asset registry that this Asset belongs to
+    */
+  var registry: AssetRegistry = js.native
+  
+  /**
+    * A reference to the resource when the asset is loaded. e.g. a {@link pc.Texture} or a {@link pc.Model}
+    */
+  var resource: js.Any = js.native
+  
+  /**
+    * A reference to the resources of the asset when it's loaded. An asset can hold more runtime resources than one e.g. cubemaps
+    */
+  var resources: js.Array[_] = js.native
+  
+  /**
+    * Interface for tagging. Allows to find assets by tags using {@link pc.AssetRegistry#findByTag} method.
+    */
+  var tags: Tags = js.native
+  
+  /**
+    * The type of the asset. One of ["animation", "audio", "binary", "cubemap", "css", "font", "json", "html", "material", "model", "script", "shader", "text", "texture"]
+    */
+  var `type`: String = js.native
+  
   /**
     * Destroys the associated resource and marks asset as unloaded.
     * @example
@@ -127,4 +143,3 @@ trait Asset extends EventHandler {
     */
   def unload(): Unit = js.native
 }
-

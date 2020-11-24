@@ -5,7 +5,7 @@ import typings.tstl.iinsertMod.IInsert
 import typings.tstl.ipointerMod.IPointer.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "InsertIterator")
 @js.native
@@ -19,4 +19,3 @@ class InsertIterator[Container /* <: IInsert[Iterator] */, Iterator /* <: IForwa
     */
   def this(container: Container, it: Iterator) = this()
 }
-

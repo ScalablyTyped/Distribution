@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Jobtriggers")
 @js.native
 class ResourceProjectsJobtriggers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.jobTriggers.activate
     * @desc Activate a job trigger. Causes the immediate execute of a trigger
@@ -46,6 +46,9 @@ class ResourceProjectsJobtriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DlpJob]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.jobTriggers.create
     * @desc Creates a job trigger to run DLP actions such as scanning storage
@@ -80,6 +83,7 @@ class ResourceProjectsJobtriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2JobTrigger]
   ): Unit = js.native
+  
   /**
     * dlp.projects.jobTriggers.delete
     * @desc Deletes a job trigger. See
@@ -112,6 +116,7 @@ class ResourceProjectsJobtriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dlp.projects.jobTriggers.get
     * @desc Gets a job trigger. See
@@ -144,6 +149,7 @@ class ResourceProjectsJobtriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2JobTrigger]
   ): Unit = js.native
+  
   /**
     * dlp.projects.jobTriggers.list
     * @desc Lists job triggers. See
@@ -180,6 +186,7 @@ class ResourceProjectsJobtriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListJobTriggersResponse]
   ): Unit = js.native
+  
   /**
     * dlp.projects.jobTriggers.patch
     * @desc Updates a job trigger. See
@@ -214,4 +221,3 @@ class ResourceProjectsJobtriggers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2JobTrigger]
   ): Unit = js.native
 }
-

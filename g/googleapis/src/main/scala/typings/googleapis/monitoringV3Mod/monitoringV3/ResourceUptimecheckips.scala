@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Uptimecheckips")
 @js.native
 class ResourceUptimecheckips protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.uptimeCheckIps.list
     * @desc Returns the list of IPs that checkers run from
@@ -46,4 +48,3 @@ class ResourceUptimecheckips protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListUptimeCheckIpsResponse]
   ): Unit = js.native
 }
-

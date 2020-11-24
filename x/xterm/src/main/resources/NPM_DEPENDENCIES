@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xterm" : "4.8.1"
+      "xterm" : "4.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "xterm" : "4.8.1"
+      "xterm" : "4.9.0"
     }
   ],
   "compile-devDependencies" : [

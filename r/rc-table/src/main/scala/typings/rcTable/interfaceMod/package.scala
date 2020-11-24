@@ -2,13 +2,16 @@ package typings.rcTable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object interfaceMod {
+  
   type CellEllipsisType = typings.rcTable.anon.ShowTitle | scala.Boolean
+  
   type ColumnsType[RecordType] = js.Array[
     typings.rcTable.interfaceMod.ColumnGroupType[RecordType] | typings.rcTable.interfaceMod.ColumnType[RecordType]
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.react.mod.ComponentType[P]
     - typings.react.mod.ForwardRefExoticComponent[P]
@@ -131,14 +134,19 @@ package object interfaceMod {
     - typings.rcTable.rcTableStrings.webview
   */
   type Component[P] = typings.rcTable.interfaceMod._Component[P] | typings.react.mod.ComponentType[P] | typings.react.mod.ForwardRefExoticComponent[P] | typings.react.mod.FC[P]
+  
   type CustomizeComponent = typings.rcTable.interfaceMod.Component[js.Any]
+  
   type CustomizeScrollBody[RecordType] = js.Function2[
     /* data */ js.Array[RecordType], 
     /* info */ typings.rcTable.anon.OnScroll, 
     typings.react.mod.ReactNode
   ]
+  
   type DataIndex = java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])
+  
   type DefaultRecordType = typings.std.Record[java.lang.String, js.Any]
+  
   type ExpandedRowRender[ValueType] = js.Function4[
     /* record */ ValueType, 
     /* index */ scala.Double, 
@@ -146,39 +154,48 @@ package object interfaceMod {
     /* expanded */ scala.Boolean, 
     typings.react.mod.ReactNode
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.rcTable.rcTableStrings.left
     - typings.rcTable.rcTableStrings.right
     - scala.Boolean
   */
   type FixedType = typings.rcTable.interfaceMod._FixedType | scala.Boolean
+  
   type GetComponent = js.Function2[
     /* path */ js.Array[java.lang.String], 
     /* defaultComponent */ js.UndefOr[typings.rcTable.interfaceMod.CustomizeComponent], 
     typings.rcTable.interfaceMod.CustomizeComponent
   ]
+  
   type GetComponentProps[DataType] = js.Function2[
     /* data */ DataType, 
     /* index */ js.UndefOr[scala.Double], 
     typings.react.mod.HTMLAttributes[typings.std.HTMLElement]
   ]
+  
   type GetRowKey[RecordType] = js.Function2[
     /* record */ RecordType, 
     /* index */ js.UndefOr[scala.Double], 
     typings.rcTable.interfaceMod.Key
   ]
+  
   type Key = typings.react.mod.Key
+  
   type PanelRender[RecordType] = js.Function1[/* data */ js.Array[RecordType], typings.react.mod.ReactNode]
+  
   type RenderExpandIcon[RecordType] = js.Function1[
     /* props */ typings.rcTable.interfaceMod.RenderExpandIconProps[RecordType], 
     typings.react.mod.ReactNode
   ]
+  
   type RowClassName[RecordType] = js.Function3[
     /* record */ RecordType, 
     /* index */ scala.Double, 
     /* indent */ scala.Double, 
     java.lang.String
   ]
+  
   type TriggerEventHandler[RecordType] = js.Function2[
     /* record */ RecordType, 
     /* event */ typings.react.mod.MouseEvent[typings.std.HTMLElement, typings.react.mod.NativeMouseEvent], 

@@ -9,7 +9,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def CHILDREN: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def NOCHILDREN: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def NOCLIPCHILDREN: `16384` = 16384.asInstanceOf[`16384`]
+  
   @scala.inline
   def NOERASE: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def NOTRANSPARENT: `32` = 32.asInstanceOf[`32`]
+  
   @scala.inline
   def TRANSPARENT: `16` = 16.asInstanceOf[`16`]
+  
   @scala.inline
   def UPDATE: `8` = 8.asInstanceOf[`8`]
 }
-

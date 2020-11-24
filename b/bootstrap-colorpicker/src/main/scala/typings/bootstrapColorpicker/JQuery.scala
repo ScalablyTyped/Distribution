@@ -12,10 +12,11 @@ import typings.bootstrapColorpicker.bootstrapColorpickerStrings.show
 import typings.bootstrapColorpicker.bootstrapColorpickerStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Initializes an colorpicker.
     */
@@ -66,11 +67,13 @@ trait JQuery extends js.Object {
     */
   @JSName("colorpicker")
   def colorpicker_update(methodName: update): Unit = js.native
+  
   /**
     * Access to the colorpicker API directly
     */
   @JSName("data")
   def data_colorpicker(methodName: colorpicker): ColorPicker = js.native
+  
   def off(events: ColorPickerEvents): JQuery = js.native
   def off(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
   def off(
@@ -84,6 +87,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function1[/* event */ ColorPickerEventObject, _]
   ): JQuery = js.native
+  
   def on(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
   def on(events: ColorPickerEvents, selector: String, data: js.Any): JQuery = js.native
   def on(
@@ -98,4 +102,3 @@ trait JQuery extends js.Object {
     handler: js.Function1[/* event */ ColorPickerEventObject, _]
   ): JQuery = js.native
 }
-

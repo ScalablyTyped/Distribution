@@ -2,11 +2,12 @@ package typings.multer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("multer", "diskStorage")
 @js.native
 object diskStorage extends js.Object {
+  
   /**
     * Returns a `StorageEngine` implementation configured to store files on
     * the local file system.
@@ -18,4 +19,3 @@ object diskStorage extends js.Object {
     */
   def apply(options: DiskStorageOptions): StorageEngine = js.native
 }
-

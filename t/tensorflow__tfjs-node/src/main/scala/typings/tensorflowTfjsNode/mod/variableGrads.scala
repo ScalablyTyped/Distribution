@@ -1,15 +1,16 @@
 package typings.tensorflowTfjsNode.mod
 
 import typings.tensorflowTfjsCore.anon.Value
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Variable
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "variableGrads")
 @js.native
 object variableGrads extends js.Object {
+  
   /**
     * Computes and returns the gradient of f(x) with respect to the list of
     * trainable variables provided by `varList`. If no list is provided, it
@@ -37,9 +38,9 @@ object variableGrads extends js.Object {
     *     If the `varList` argument is provided explicitly and contains a subset of
     *     non-trainable variables, this map in the return value will contain keys
     *     that map the names of the non-trainable variables to `null`.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def apply(f: js.Function0[Scalar]): Value = js.native
   def apply(f: js.Function0[Scalar], varList: js.Array[Variable[typings.tensorflowTfjsCore.distTypesMod.Rank]]): Value = js.native
 }
-

@@ -63,30 +63,26 @@ import typings.wordpressElement.anon.childrenstringPickDetaile
 import typings.wordpressElement.wordpressElementStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/element", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // Base component for plain JS classes
-  // tslint:disable-next-line:no-empty-interface
-  @js.native
-  class Component[P, S, SS] protected ()
-    extends typings.wordpressElement.reactMod.Component[P, S, SS] {
-    def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
-  }
   
   val Children: ReactChildren = js.native
+  
   val Fragment: ExoticComponent[typings.react.anon.Children] = js.native
+  
+  def RawHTML(hasChildrenProps: childrenstringPickDetaile): Element = js.native
+  
   val StrictMode: ExoticComponent[typings.react.anon.Children] = js.native
+  
   /**
     * This feature is not yet available for server-side rendering.
     * Suspense support will be added in a later release.
     */
   val Suspense: ExoticComponent[SuspenseProps] = js.native
-  val render: Renderer = js.native
-  def RawHTML(hasChildrenProps: childrenstringPickDetaile): Element = js.native
+  
   // Custom components
   def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] with Attributes, children: ReactNode*): FunctionComponentElement[P] = js.native
   def cloneElement[P](element: FunctionComponentElement[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
@@ -109,12 +105,15 @@ object mod extends js.Object {
   def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
   @JSName("cloneElement")
   def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactHTMLElement[T] = js.native
+  
   def concatChildren(childrenArguments: js.Any*): js.Array[_] = js.native
+  
   def createContext[T](
     // If you thought this should be optional, see
   // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
   defaultValue: T
   ): Context[T] = js.native
+  
   def createElement[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = js.native
@@ -199,17 +198,26 @@ object mod extends js.Object {
   def createElement_input(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
   @JSName("createElement")
   def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  
   def createInterpolateElement(interpolatedString: String, conversionMap: js.Any): ReactElement = js.native
+  
   def createPortal(children: ReactNode, container: typings.std.Element): ReactPortal = js.native
   def createPortal(children: ReactNode, container: typings.std.Element, key: String): ReactPortal = js.native
+  
   def createRef[T](): RefObject[T] = js.native
+  
   def findDOMNode(): typings.std.Element | Null | Text = js.native
   def findDOMNode(instance: ReactInstance): typings.std.Element | Null | Text = js.native
+  
   def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
+  
   def isEmptyElement(element: js.Any): Boolean = js.native
+  
   def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
   def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = js.native
+  
   def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = js.native
+  
   def memo[T /* <: ComponentType[_] */](Component: T): MemoExoticComponent[T] = js.native
   def memo[T /* <: ComponentType[_] */](
     Component: T,
@@ -220,13 +228,19 @@ object mod extends js.Object {
     Component: SFC[P],
     propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
   ): NamedExoticComponent[P] = js.native
+  
+  val render: Renderer = js.native
+  
   def renderToString(element: ReactNode): String = js.native
   def renderToString(element: ReactNode, context: js.UndefOr[scala.Nothing], legacyContext: js.Any): String = js.native
   def renderToString(element: ReactNode, context: js.Any): String = js.native
   def renderToString(element: ReactNode, context: js.Any, legacyContext: js.Any): String = js.native
+  
   def switchChildrenNodeName(children: js.Any, nodeName: String): js.Any = js.native
+  
   def unmountComponentAtNode(container: DocumentFragment): Boolean = js.native
   def unmountComponentAtNode(container: typings.std.Element): Boolean = js.native
+  
   // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
   // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
   /**
@@ -238,6 +252,7 @@ object mod extends js.Object {
     */
   // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
   def useCallback[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, deps: DependencyList): T = js.native
+  
   // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
   /**
     * Accepts a context object (the value returned from `React.createContext`) and returns the current
@@ -247,6 +262,7 @@ object mod extends js.Object {
     * @see https://reactjs.org/docs/hooks-reference.html#usecontext
     */
   def useContext[T](context: Context[T]): T = js.native
+  
   /**
     * `useDebugValue` can be used to display a label for custom hooks in React DevTools.
     *
@@ -260,6 +276,7 @@ object mod extends js.Object {
   // it's just the function name without the "use" prefix.
   def useDebugValue[T](value: T): Unit = js.native
   def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
+  
   /**
     * Accepts a function that contains imperative, possibly effectful code.
     *
@@ -271,6 +288,7 @@ object mod extends js.Object {
     */
   def useEffect(effect: EffectCallback): Unit = js.native
   def useEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+  
   // NOTE: this does not accept strings, but this will have to be fixed by removing strings from type Ref<T>
   /**
     * `useImperativeHandle` customizes the instance value that is exposed to parent components when using
@@ -283,6 +301,7 @@ object mod extends js.Object {
     */
   def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R]): Unit = js.native
   def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R], deps: DependencyList): Unit = js.native
+  
   /**
     * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
     * Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside
@@ -298,6 +317,7 @@ object mod extends js.Object {
     */
   def useLayoutEffect(effect: EffectCallback): Unit = js.native
   def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+  
   /**
     * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
     *
@@ -319,6 +339,38 @@ object mod extends js.Object {
   // allow undefined, but don't make it optional as that is very likely a mistake
   def useMemo[T](factory: js.Function0[T]): T = js.native
   def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = js.native
+  
+  /**
+    * An alternative to `useState`.
+    *
+    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+    * multiple sub-values. It also lets you optimize performance for components that trigger deep
+    * updates because you can pass `dispatch` down instead of callbacks.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+    */
+  // overload where dispatch could accept 0 arguments.
+  def useReducer[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  /**
+    * An alternative to `useState`.
+    *
+    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+    * multiple sub-values. It also lets you optimize performance for components that trigger deep
+    * updates because you can pass `dispatch` down instead of callbacks.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+    */
+  // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+  // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
+  // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
+  // the last overload effectively behaves as if the identity function (x => x) is the initializer.
+  def useReducer[R /* <: Reducer[_, _] */, I](
+    reducer: R,
+    initializerArg: (I with ReducerState[R]) | I,
+    initializer: js.Function1[(/* arg */ I with ReducerState[R]) | (/* arg */ I), ReducerState[R]]
+  ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
   /**
     * An alternative to `useState`.
     *
@@ -336,39 +388,8 @@ object mod extends js.Object {
   // which would prevent autocompletion from ever working.
   // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
   // in older versions, or a regression in newer versions of the typescript completion service.
-  def useReducer[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
-  /**
-    * An alternative to `useState`.
-    *
-    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-    * multiple sub-values. It also lets you optimize performance for components that trigger deep
-    * updates because you can pass `dispatch` down instead of callbacks.
-    *
-    * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-    */
-  // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
-  // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
-  // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
-  // the last overload effectively behaves as if the identity function (x => x) is the initializer.
-  def useReducer[R /* <: Reducer[_, _] */, I](
-    reducer: R,
-    initializerArg: (I with ReducerState[R]) | I,
-    initializer: js.Function1[(/* arg */ I with ReducerState[R]) | (/* arg */ I), ReducerState[R]]
-  ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
-  /**
-    * An alternative to `useState`.
-    *
-    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-    * multiple sub-values. It also lets you optimize performance for components that trigger deep
-    * updates because you can pass `dispatch` down instead of callbacks.
-    *
-    * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-    */
-  // overload where dispatch could accept 0 arguments.
   @JSName("useReducer")
-  def useReducer_R_ReducerWithoutActionWildcard[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  def useReducer_R_ReducerWildcardWildcard[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
   /**
     * An alternative to `useState`.
     *
@@ -386,6 +407,7 @@ object mod extends js.Object {
     initializerArg: I,
     initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
   ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**
     * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
@@ -431,7 +453,8 @@ object mod extends js.Object {
   // TODO (TypeScript 3.0): <T extends unknown>
   @JSName("useRef")
   def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = js.native
-  // convenience overload when first argument is ommitted
+  
+  // convenience overload when first argument is omitted
   /**
     * Returns a stateful value, and a function to update it.
     *
@@ -447,9 +470,22 @@ object mod extends js.Object {
     */
   def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+  
+  // Base component for plain JS classes
+  @js.native
+  class Component[P, S, SS] protected ()
+    extends typings.wordpressElement.reactMod.Component[P, S, SS] {
+    def this(props: P) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: P, context: js.Any) = this()
+  }
   /* static members */
   @js.native
   object Component extends js.Object {
+    
     // tslint won't let me format the sample code in a way that vscode likes it :(
     /**
       * If set, `this.context` will be set at runtime to the current value of the given Context.
@@ -476,9 +512,9 @@ object mod extends js.Object {
   
   @js.native
   object Platform extends js.Object {
+    
     val OS: String = js.native
+    
     def select(spec: js.Any): js.Any = js.native
   }
-  
 }
-

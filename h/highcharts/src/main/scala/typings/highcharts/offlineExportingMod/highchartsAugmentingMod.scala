@@ -4,14 +4,16 @@ import typings.highcharts.mod.ExportingOptions
 import typings.highcharts.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("highcharts", JSImport.Namespace)
 @js.native
 object highchartsAugmentingMod extends js.Object {
+  
   @js.native
   trait Chart extends js.Object {
+    
     /**
       * Exporting and offline-exporting modules required. Export a chart to
       * an image locally in the user's browser.
@@ -30,6 +32,4 @@ object highchartsAugmentingMod extends js.Object {
     def exportChartLocal(exportingOptions: ExportingOptions): Unit = js.native
     def exportChartLocal(exportingOptions: ExportingOptions, chartOptions: Options): Unit = js.native
   }
-  
 }
-

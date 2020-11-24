@@ -12,7 +12,7 @@ Angular 1.x ES helper
 | Keywords           | angular, ES6, ES7, annotations, decorators |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1184 |
+| # downloads        | 664 |
 | # stars            | 1 |
 
 ## Links

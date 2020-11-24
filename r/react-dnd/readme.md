@@ -10,9 +10,9 @@ Drag and Drop for React
 | ------------------ | :-------------: |
 | Full name          | react-dnd |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 752 |
-| # downloads        | 18189481 |
+| # releases         | 41 |
+| # dependents       | 986 |
+| # downloads        | 27660660 |
 | # stars            | 30 |
 
 ## Links

@@ -3,13 +3,28 @@ package typings.babylonjs
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Events/keyboardEvents", JSImport.Namespace)
 @js.native
 object keyboardEventsMod extends js.Object {
+  
   @js.native
   class KeyboardEventTypes () extends js.Object
+  /* static members */
+  @js.native
+  object KeyboardEventTypes extends js.Object {
+    
+    /**
+      * The keydown event is fired when a key becomes active (pressed).
+      */
+    val KEYDOWN: Double = js.native
+    
+    /**
+      * The keyup event is fired when a key has been released.
+      */
+    val KEYUP: Double = js.native
+  }
   
   @js.native
   class KeyboardInfo protected () extends js.Object {
@@ -29,10 +44,12 @@ object keyboardEventsMod extends js.Object {
       */
     event: KeyboardEvent
     ) = this()
+    
     /**
       * Defines the related dom event
       */
     var event: KeyboardEvent = js.native
+    
     /**
       * Defines the type of event (KeyboardEventTypes)
       */
@@ -57,24 +74,10 @@ object keyboardEventsMod extends js.Object {
       */
     event: KeyboardEvent
     ) = this()
+    
     /**
       * Defines whether the engine should skip the next onKeyboardObservable associated to this pre.
       */
     var skipOnPointerObservable: Boolean = js.native
   }
-  
-  /* static members */
-  @js.native
-  object KeyboardEventTypes extends js.Object {
-    /**
-      * The keydown event is fired when a key becomes active (pressed).
-      */
-    val KEYDOWN: Double = js.native
-    /**
-      * The keyup event is fired when a key has been released.
-      */
-    val KEYUP: Double = js.native
-  }
-  
 }
-

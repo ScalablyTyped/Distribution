@@ -4,7 +4,7 @@ import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.mod.videojs.ComponentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Spacer")
 @js.native
@@ -31,4 +31,3 @@ class SpacerCls protected ()
   ) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions, ready: ReadyCallback) = this()
 }
-

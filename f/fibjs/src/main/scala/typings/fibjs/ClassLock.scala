@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassLock extends ClassObject {
+  
   /**
     * 
     * @brief 获取锁的拥有权
@@ -28,6 +29,7 @@ trait ClassLock extends ClassObject {
     */
   def acquire(): Boolean = js.native
   def acquire(blocking: Boolean): Boolean = js.native
+  
   /**
     * 
     * @brief 查询当前等待任务数
@@ -37,6 +39,7 @@ trait ClassLock extends ClassObject {
     * 
     */
   def count(): Double = js.native
+  
   /**
     * 
     * @brief 释放锁的拥有权
@@ -48,4 +51,3 @@ trait ClassLock extends ClassObject {
     */
   def release(): Unit = js.native
 }
-

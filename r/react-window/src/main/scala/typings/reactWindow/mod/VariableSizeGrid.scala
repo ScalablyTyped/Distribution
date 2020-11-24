@@ -5,12 +5,13 @@ import typings.reactWindow.anon.RowIndex
 import typings.reactWindow.anon.ScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "VariableSizeGrid")
 @js.native
 class VariableSizeGrid ()
   extends Component[VariableSizeGridProps, js.Object, js.Any] {
+  
   /**
     * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.
     * This method clears that cached data for all columns after (and including) the specified index.
@@ -22,6 +23,7 @@ class VariableSizeGrid ()
     */
   def resetAfterColumnIndex(index: Double): Unit = js.native
   def resetAfterColumnIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
+  
   /**
     * VariableSizeGrid caches offsets and measurements for each item for performance purposes.
     * This method clears that cached data for all items after (and including) the specified indices.
@@ -32,6 +34,7 @@ class VariableSizeGrid ()
     * specify a value of false for the optional shouldForceUpdate parameter.
     */
   def resetAfterIndices(params: RowIndex): Unit = js.native
+  
   /**
     * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
     * This method clears that cached data for all rows after (and including) the specified index.
@@ -43,10 +46,12 @@ class VariableSizeGrid ()
     */
   def resetAfterRowIndex(index: Double): Unit = js.native
   def resetAfterRowIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
+  
   /**
     * Scroll to the specified offsets.
     */
   def scrollTo(params: ScrollLeft): Unit = js.native
+  
   /**
     * Scroll to the specified item.
     *
@@ -66,4 +71,3 @@ class VariableSizeGrid ()
     */
   def scrollToItem(params: typings.reactWindow.anon.Align): Unit = js.native
 }
-

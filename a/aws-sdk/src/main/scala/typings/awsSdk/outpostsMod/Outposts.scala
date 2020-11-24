@@ -1,17 +1,19 @@
 package typings.awsSdk.outpostsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Outposts extends Service {
+  
   @JSName("config")
   var config_Outposts: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an Outpost.
     */
@@ -25,6 +27,7 @@ trait Outposts extends Service {
     params: CreateOutpostInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateOutpostOutput, Unit]
   ): Request[CreateOutpostOutput, AWSError] = js.native
+  
   /**
     * Deletes the Outpost.
     */
@@ -38,6 +41,7 @@ trait Outposts extends Service {
     params: DeleteOutpostInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteOutpostOutput, Unit]
   ): Request[DeleteOutpostOutput, AWSError] = js.native
+  
   /**
     * Deletes the site.
     */
@@ -51,6 +55,7 @@ trait Outposts extends Service {
     params: DeleteSiteInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSiteOutput, Unit]
   ): Request[DeleteSiteOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified Outpost.
     */
@@ -64,6 +69,7 @@ trait Outposts extends Service {
     params: GetOutpostInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOutpostOutput, Unit]
   ): Request[GetOutpostOutput, AWSError] = js.native
+  
   /**
     * Lists the instance types for the specified Outpost.
     */
@@ -77,6 +83,7 @@ trait Outposts extends Service {
     params: GetOutpostInstanceTypesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOutpostInstanceTypesOutput, Unit]
   ): Request[GetOutpostInstanceTypesOutput, AWSError] = js.native
+  
   /**
     * List the Outposts for your AWS account.
     */
@@ -90,6 +97,7 @@ trait Outposts extends Service {
     params: ListOutpostsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOutpostsOutput, Unit]
   ): Request[ListOutpostsOutput, AWSError] = js.native
+  
   /**
     * Lists the sites for the specified AWS account.
     */
@@ -104,4 +112,3 @@ trait Outposts extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListSitesOutput, Unit]
   ): Request[ListSitesOutput, AWSError] = js.native
 }
-

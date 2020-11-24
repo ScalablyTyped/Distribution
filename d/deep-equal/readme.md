@@ -10,10 +10,10 @@ node's assert.deepEqual algorithm
 | ------------------ | :-------------: |
 | Full name          | deep-equal |
 | Keywords           | equality, equal, compare |
-| # releases         | 5 |
-| # dependents       | 1502 |
-| # downloads        | 335527674 |
-| # stars            | 34 |
+| # releases         | 7 |
+| # dependents       | 1637 |
+| # downloads        | 481982488 |
+| # stars            | 35 |
 
 ## Links
 - [Homepage](https://github.com/inspect-js/node-deep-equal#readme)

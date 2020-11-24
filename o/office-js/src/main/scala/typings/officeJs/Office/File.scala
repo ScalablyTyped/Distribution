@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the document file associated with an Office Add-in.
@@ -14,14 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait File extends js.Object {
-  /**
-    * Gets the document file size in bytes.
-    */
-  var size: Double = js.native
-  /**
-    * Gets the number of slices into which the file is divided.
-    */
-  var sliceCount: Double = js.native
+  
   /**
     * Closes the document file.
     * 
@@ -62,6 +55,7 @@ trait File extends js.Object {
     */
   def closeAsync(): Unit = js.native
   def closeAsync(callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  
   /**
     * Returns the specified slice.
     * 
@@ -101,5 +95,14 @@ trait File extends js.Object {
     */
   def getSliceAsync(sliceIndex: Double): Unit = js.native
   def getSliceAsync(sliceIndex: Double, callback: js.Function1[/* result */ AsyncResult[Slice], Unit]): Unit = js.native
+  
+  /**
+    * Gets the document file size in bytes.
+    */
+  var size: Double = js.native
+  
+  /**
+    * Gets the number of slices into which the file is divided.
+    */
+  var sliceCount: Double = js.native
 }
-

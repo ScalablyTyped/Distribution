@@ -7,7 +7,7 @@ import typings.minappEnv.Array
 import typings.minappEnv.Intl.CollatorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.Collator")
 @js.native
@@ -22,15 +22,16 @@ object Collator
       /* options */ CollatorOptions, 
       typings.minappEnv.Intl.Collator
     ] {
+  
   def apply(): typings.minappEnv.Intl.Collator = js.native
   def apply(locales: js.UndefOr[scala.Nothing], options: CollatorOptions): typings.minappEnv.Intl.Collator = js.native
   def apply(locales: String): typings.minappEnv.Intl.Collator = js.native
   def apply(locales: String, options: CollatorOptions): typings.minappEnv.Intl.Collator = js.native
   def apply(locales: Array[String]): typings.minappEnv.Intl.Collator = js.native
   def apply(locales: Array[String], options: CollatorOptions): typings.minappEnv.Intl.Collator = js.native
+  
   def supportedLocalesOf(locales: String): Array[String] = js.native
   def supportedLocalesOf(locales: String, options: CollatorOptions): Array[String] = js.native
   def supportedLocalesOf(locales: Array[String]): Array[String] = js.native
   def supportedLocalesOf(locales: Array[String], options: CollatorOptions): Array[String] = js.native
 }
-

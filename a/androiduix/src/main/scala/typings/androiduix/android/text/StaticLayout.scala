@@ -3,20 +3,11 @@ package typings.androiduix.android.text
 import typings.androiduix.android.text.TextUtils.TruncateAt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StaticLayout extends Layout {
-  var mBottomPadding: js.Any = js.native
-  var mColumns: js.Any = js.native
-  var mEllipsizedWidth: js.Any = js.native
-  var mFontMetricsInt: js.Any = js.native
-  var mLineCount: js.Any = js.native
-  var mLineDirections: js.Any = js.native
-  var mLines: js.Any = js.native
-  var mMaximumVisibleLineCount: js.Any = js.native
-  var mMeasured: js.Any = js.native
-  var mTopPadding: js.Any = js.native
+  
   /* private */ def calculateEllipsis(
     lineStart: js.Any,
     lineEnd: js.Any,
@@ -29,7 +20,9 @@ trait StaticLayout extends Layout {
     paint: js.Any,
     forceEllipsis: js.Any
   ): js.Any = js.native
+  
   def finish(): Unit = js.native
+  
   def generate(
     source: String,
     bufStart: Double,
@@ -44,6 +37,27 @@ trait StaticLayout extends Layout {
     ellipsizedWidth: Double,
     ellipsize: TruncateAt
   ): Unit = js.native
+  
+  var mBottomPadding: js.Any = js.native
+  
+  var mColumns: js.Any = js.native
+  
+  var mEllipsizedWidth: js.Any = js.native
+  
+  var mFontMetricsInt: js.Any = js.native
+  
+  var mLineCount: js.Any = js.native
+  
+  var mLineDirections: js.Any = js.native
+  
+  var mLines: js.Any = js.native
+  
+  var mMaximumVisibleLineCount: js.Any = js.native
+  
+  var mMeasured: js.Any = js.native
+  
+  var mTopPadding: js.Any = js.native
+  
   /* private */ def out(
     text: js.Any,
     start: js.Any,
@@ -75,6 +89,6 @@ trait StaticLayout extends Layout {
     paint: js.Any,
     moreChars: js.Any
   ): js.Any = js.native
+  
   def prepare(): Unit = js.native
 }
-

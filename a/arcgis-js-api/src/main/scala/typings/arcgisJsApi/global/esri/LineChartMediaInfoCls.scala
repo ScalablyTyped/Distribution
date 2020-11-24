@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.LineChartMediaInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.LineChartMediaInfo")
 @js.native
@@ -16,4 +16,3 @@ class LineChartMediaInfoCls ()
   extends typings.arcgisJsApi.esri.LineChartMediaInfo {
   def this(properties: LineChartMediaInfoProperties) = this()
 }
-

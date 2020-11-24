@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livestreams")
 @js.native
 class ResourceLivestreams protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.liveStreams.delete
     * @desc Deletes a video stream.
@@ -43,6 +45,7 @@ class ResourceLivestreams protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.liveStreams.insert
     * @desc Creates a video stream. The stream enables you to send your video
@@ -75,6 +78,7 @@ class ResourceLivestreams protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveStream]
   ): Unit = js.native
+  
   /**
     * youtube.liveStreams.list
     * @desc Returns a list of video streams that match the API request
@@ -113,6 +117,7 @@ class ResourceLivestreams protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveStreamListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.liveStreams.update
     * @desc Updates a video stream. If the properties that you want to change
@@ -147,4 +152,3 @@ class ResourceLivestreams protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLiveStream]
   ): Unit = js.native
 }
-

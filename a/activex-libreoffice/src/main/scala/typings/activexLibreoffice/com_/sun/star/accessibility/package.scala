@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object accessibility {
+  
   /**
     * Every class has to support this service in order to be accessible.
     *
@@ -16,6 +17,7 @@ package object accessibility {
     * @since OOo 1.1.2
     */
   type Accessible = typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
+  
   /**
     * Indicates invalid or unavailable state information.
     *
@@ -25,5 +27,6 @@ package object accessibility {
     * @since OOo 1.1.2
     */
   type IllegalAccessibleComponentStateException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   type MSAAService = typings.activexLibreoffice.com_.sun.star.accessibility.XMSAAService
 }

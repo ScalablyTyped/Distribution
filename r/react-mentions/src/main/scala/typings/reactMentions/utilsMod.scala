@@ -4,11 +4,12 @@ import typings.reactMentions.mod.DisplayTransformFunc
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-mentions/lib/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
+  
   def mapPlainTextIndex(
     value: String,
     markup: String,
@@ -18,4 +19,3 @@ object utilsMod extends js.Object {
     regex: RegExp
   ): Double = js.native
 }
-

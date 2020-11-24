@@ -2,7 +2,7 @@ package typings.commonmark.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("commonmark", "Parser")
 @js.native
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
   */
 class Parser () extends js.Object {
   def this(options: ParserOptions) = this()
+  
   def parse(input: String): Node = js.native
 }
-

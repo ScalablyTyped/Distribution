@@ -2,10 +2,11 @@ package typings.mathjax.MathJax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MML2jaxPreprocessor extends js.Object {
+  
   /*This controls whether mml2jax inserts MathJax_Preview spans to make a preview available, and what preview to
     * use, when it locates mathematics on the page. Possible values are: "mathml", "alttext", , "altimg", "none",
     * or an HTML snippet.
@@ -24,29 +25,33 @@ trait MML2jaxPreprocessor extends js.Object {
     */
   var preview: js.UndefOr[js.Any] = js.native
 }
-
 object MML2jaxPreprocessor {
+  
   @scala.inline
   def apply(): MML2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MML2jaxPreprocessor]
   }
+  
   @scala.inline
   implicit class MML2jaxPreprocessorOps[Self <: MML2jaxPreprocessor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPreview(value: js.Any): Self = this.set("preview", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreview: Self = this.set("preview", js.undefined)
   }
-  
 }
-

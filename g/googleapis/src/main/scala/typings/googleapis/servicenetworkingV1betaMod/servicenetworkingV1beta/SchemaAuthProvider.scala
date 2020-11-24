@@ -2,7 +2,7 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for an anthentication provider, including support for [JSON
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaAuthProvider extends js.Object {
+  
   /**
     * The list of JWT
     * [audiences](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-4.1.3).
@@ -24,16 +25,19 @@ trait SchemaAuthProvider extends js.Object {
     * bookstore_web.apps.googleusercontent.com
     */
   var audiences: js.UndefOr[String] = js.native
+  
   /**
     * Redirect URL if JWT token is required but not present or is expired.
     * Implement authorizationUrl of securityDefinitions in OpenAPI spec.
     */
   var authorizationUrl: js.UndefOr[String] = js.native
+  
   /**
     * The unique identifier of the auth provider. It will be referred to by
     * `AuthRequirement.provider_id`.  Example: &quot;bookstore_auth&quot;.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Identifies the principal that issued the JWT. See
     * https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-4.1.1
@@ -42,6 +46,7 @@ trait SchemaAuthProvider extends js.Object {
     * 1234567-compute@developer.gserviceaccount.com
     */
   var issuer: js.UndefOr[String] = js.native
+  
   /**
     * URL of the provider&#39;s public key set to validate signature of the
     * JWT. See [OpenID
@@ -54,45 +59,57 @@ trait SchemaAuthProvider extends js.Object {
     */
   var jwksUri: js.UndefOr[String] = js.native
 }
-
 object SchemaAuthProvider {
+  
   @scala.inline
   def apply(): SchemaAuthProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthProvider]
   }
+  
   @scala.inline
   implicit class SchemaAuthProviderOps[Self <: SchemaAuthProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAudiences(value: String): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAudiences: Self = this.set("audiences", js.undefined)
+    
     @scala.inline
     def setAuthorizationUrl(value: String): Self = this.set("authorizationUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuthorizationUrl: Self = this.set("authorizationUrl", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIssuer: Self = this.set("issuer", js.undefined)
+    
     @scala.inline
     def setJwksUri(value: String): Self = this.set("jwksUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteJwksUri: Self = this.set("jwksUri", js.undefined)
   }
-  
 }
-

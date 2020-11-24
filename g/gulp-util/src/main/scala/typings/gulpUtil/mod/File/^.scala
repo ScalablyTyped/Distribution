@@ -6,15 +6,13 @@ import typings.vinyl.mod.FileConstructor
 import typings.vinyl.mod.NullFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gulp-util", "File")
 @js.native
 class ^ protected () extends NullFile {
   def this(options: ConstructorOptionscontent) = this()
 }
-
 @JSImport("gulp-util", "File")
 @js.native
 object ^ extends TopLevel[FileConstructor]
-

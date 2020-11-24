@@ -2,11 +2,12 @@ package typings.instagramPrivateApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api/dist/sticker-builder/stickers", JSImport.Namespace)
 @js.native
 object stickersMod extends js.Object {
+  
   @js.native
   class AttachmentSticker ()
     extends typings.instagramPrivateApi.attachmentStickerMod.AttachmentSticker
@@ -50,6 +51,4 @@ object stickersMod extends js.Object {
   @js.native
   class SliderSticker ()
     extends typings.instagramPrivateApi.sliderStickerMod.SliderSticker
-  
 }
-

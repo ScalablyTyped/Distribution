@@ -2,7 +2,7 @@ package typings.easeljs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Rectangle")
 @js.native
@@ -29,4 +29,3 @@ class Rectangle ()
   def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
-

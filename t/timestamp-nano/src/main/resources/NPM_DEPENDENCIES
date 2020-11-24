@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "timestamp-nano" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "timestamp-nano" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,13 +2,14 @@ package typings.smartFoxServer.global.SFS2X.Entities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Data
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Entities.Data.html
 @JSGlobal("SFS2X.Entities.Data")
 @js.native
 object Data extends js.Object {
+  
   @js.native
   class Vec3D protected ()
     extends typings.smartFoxServer.SFS2X.Entities.Data.Vec3D {
@@ -21,6 +22,4 @@ object Data extends js.Object {
     def this(px: Double, py: Double) = this()
     def this(px: Double, py: Double, pz: Double) = this()
   }
-  
 }
-

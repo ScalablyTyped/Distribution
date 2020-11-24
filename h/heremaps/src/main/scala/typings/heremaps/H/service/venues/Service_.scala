@@ -9,7 +9,7 @@ import typings.heremaps.H.service.venues.TileProvider.Options
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class encapsulates methods to call Venue Maps API endpoints.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 trait Service_
   extends EventTarget
      with IConfigurable {
+  
   /**
     * This method creates a tile layer which can be added to the map in order to see the venues. It uses Interaction Tile endpoint of the Venue Maps API, more at
     * http://developer.here.com/rest-apis/documentation/venue-maps/topics/quick-start-get-interaction-tile.html.
@@ -26,6 +27,7 @@ trait Service_
     */
   def createTileLayer(): TileLayer = js.native
   def createTileLayer(opt_options: Options): TileLayer = js.native
+  
   /**
     * This method sends a discovery request to the Venue Maps API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
     * object, or the onError callback if a communication error occured.
@@ -38,10 +40,10 @@ trait Service_
     onResult: js.Function1[/* res */ ServiceResult, Unit],
     onError: js.Function1[/* s */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Method returns current state of the service.
     * @returns {H.service.venues.Service.State} - State of the service
     */
   def getState(): State = js.native
 }
-

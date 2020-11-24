@@ -2,11 +2,12 @@ package typings.awsSdkClientDynamodbNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/types/RestoreTableFromBackupExceptionsUnion", JSImport.Namespace)
 @js.native
 object restoreTableFromBackupExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientDynamodbNode.typesTableAlreadyExistsExceptionMod.TableAlreadyExistsException
     - typings.awsSdkClientDynamodbNode.typesTableInUseExceptionMod.TableInUseException
@@ -16,6 +17,4 @@ object restoreTableFromBackupExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError
   */
   trait RestoreTableFromBackupExceptionsUnion extends js.Object
-  
 }
-

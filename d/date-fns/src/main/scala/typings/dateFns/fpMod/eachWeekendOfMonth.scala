@@ -5,10 +5,9 @@ import typings.dateFns.CurriedFn1
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm/fp", "eachWeekendOfMonth")
 @js.native
 object eachWeekendOfMonth
   extends TopLevel[CurriedFn1[Date | Double, js.Array[Date]]]
-

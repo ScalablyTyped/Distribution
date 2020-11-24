@@ -4,15 +4,15 @@
 Typings are for version 2.3.4
 
 ## Library description:
-Splits an url into sub-domain, domain and effective top-level-domain
+Splits a hostname into subdomains, domain and (effective) top-level domains
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parse-domain |
-| Keywords           | domain, url, sub-domain, tld, parse, extract, sanitize, country, top-level |
-| # releases         | 17 |
-| # dependents       | 71 |
-| # downloads        | 4859172 |
+| Keywords           | domain, url, sub-domain, tld, parse, sanitize, top-level |
+| # releases         | 27 |
+| # dependents       | 79 |
+| # downloads        | 4900490 |
 | # stars            | 5 |
 
 ## Links

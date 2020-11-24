@@ -10,9 +10,9 @@ Typings are for version 3.0
 | ------------------ | :-------------: |
 | Full name          | textarea-caret |
 | Keywords           | textarea, caret, position |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 1645944 |
+| # releases         | 1 |
+| # dependents       | 52 |
+| # downloads        | 4844641 |
 | # stars            | 2 |
 
 ## Links

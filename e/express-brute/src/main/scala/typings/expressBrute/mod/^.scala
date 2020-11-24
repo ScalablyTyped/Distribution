@@ -2,7 +2,7 @@ package typings.expressBrute.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @summary Middleware.
@@ -19,4 +19,3 @@ class ^ protected () extends ExpressBrute {
   def this(store: js.Any) = this()
   def this(store: js.Any, options: Options) = this()
 }
-

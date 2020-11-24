@@ -10,9 +10,9 @@ GTIN (UPC, EAN, ITF, etc.) utilities.
 | ------------------ | :-------------: |
 | Full name          | gtin |
 | Keywords           | gtin, upc, ean, ucc, itf, itf-14, itf14, ean-13, ean13, ucc-12, ucc12, upc-e, upce, upca, upc-a, validation, utilities, valid |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 25999 |
+| # downloads        | 37003 |
 | # stars            | 0 |
 
 ## Links

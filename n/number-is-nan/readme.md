@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-ES2015 Number.isNaN() ponyfill
+ES2015 `Number.isNaN()` ponyfill
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | number-is-nan |
 | Keywords           | es2015, ecmascript, ponyfill, polyfill, shim, number, is, nan, not |
-| # releases         | 0 |
-| # dependents       | 79 |
-| # downloads        | 464641663 |
+| # releases         | 2 |
+| # dependents       | 108 |
+| # downloads        | 574075941 |
 | # stars            | 2 |
 
 ## Links

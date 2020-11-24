@@ -2,10 +2,11 @@ package typings.speakeasy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Hotp_ extends js.Object {
+  
   /**
     * Generate a counter-based one-time token. Specify the key and counter, and
     * receive the one-time password for that counter position as a string. You can
@@ -15,6 +16,7 @@ trait Hotp_ extends js.Object {
     * @return The one-time passcode.
     */
   def apply(options: HotpOptions): String = js.native
+  
   /**
     * Verify a counter-based one-time token against the secret and return true if
     * it verifies. Helper function for `hotp.verifyDelta()`` that returns a boolean
@@ -23,6 +25,7 @@ trait Hotp_ extends js.Object {
     * @return Returns true if the token matches within the given window, false otherwise.
     */
   def verify(options: HotpVerifyOptions): Boolean = js.native
+  
   /**
     * Verify a counter-based one-time token against the secret and return the delta.
     * By default, it verifies the token at the given counter value, with no leeway
@@ -44,4 +47,3 @@ trait Hotp_ extends js.Object {
     */
   def verifyDelta(options: HotpVerifyOptions): js.UndefOr[Delta] = js.native
 }
-

@@ -10,9 +10,9 @@ A JavaScript library for generating random user agents.
 | ------------------ | :-------------: |
 | Full name          | user-agents |
 | Keywords           | - |
-| # releases         | 528 |
-| # dependents       | 20 |
-| # downloads        | 762031 |
+| # releases         | 536 |
+| # dependents       | 47 |
+| # downloads        | 1062662 |
 | # stars            | 0 |
 
 ## Links

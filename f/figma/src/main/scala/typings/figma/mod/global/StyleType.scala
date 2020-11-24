@@ -2,7 +2,7 @@ package typings.figma.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Styles
@@ -13,15 +13,17 @@ import scala.scalajs.js.annotation._
   - typings.figma.figmaStrings.GRID
 */
 trait StyleType extends js.Object
-
 object StyleType {
+  
   @scala.inline
   def EFFECT: typings.figma.figmaStrings.EFFECT = "EFFECT".asInstanceOf[typings.figma.figmaStrings.EFFECT]
+  
   @scala.inline
   def GRID: typings.figma.figmaStrings.GRID = "GRID".asInstanceOf[typings.figma.figmaStrings.GRID]
+  
   @scala.inline
   def PAINT: typings.figma.figmaStrings.PAINT = "PAINT".asInstanceOf[typings.figma.figmaStrings.PAINT]
+  
   @scala.inline
   def TEXT: typings.figma.figmaStrings.TEXT = "TEXT".asInstanceOf[typings.figma.figmaStrings.TEXT]
 }
-

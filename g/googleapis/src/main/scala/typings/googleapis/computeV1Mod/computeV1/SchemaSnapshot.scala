@@ -3,7 +3,7 @@ package typings.googleapis.computeV1Mod.computeV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A persistent disk snapshot resource. (== resource_for beta.snapshots ==)
@@ -11,29 +11,35 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaSnapshot extends js.Object {
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Size of the snapshot, specified in GB.
     */
   var diskSizeGb: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#snapshot for Snapshot
     * resources.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * A fingerprint for the labels being applied to this snapshot, which is
     * essentially a hash of the labels set used for optimistic locking. The
@@ -44,22 +50,26 @@ trait SchemaSnapshot extends js.Object {
     * the latest fingerprint, make a get() request to retrieve a snapshot.
     */
   var labelFingerprint: js.UndefOr[String] = js.native
+  
   /**
     * Labels to apply to this snapshot. These can be later modified by the
     * setLabels method. Label values may be empty.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * [Output Only] Integer license codes indicating which licenses are
     * attached to this snapshot.
     */
   var licenseCodes: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * [Output Only] A list of public visible licenses that apply to this
     * snapshot. This can be because the original image had licenses attached
     * (such as a Windows image).
     */
   var licenses: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Name of the resource; provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -70,10 +80,12 @@ trait SchemaSnapshot extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Server-defined URL for the resource.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * Encrypts the snapshot using a customer-supplied encryption key.  After
     * you encrypt a snapshot using a customer-supplied key, you must provide
@@ -86,32 +98,38 @@ trait SchemaSnapshot extends js.Object {
     * the snapshot later.
     */
   var snapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The source disk used to create this snapshot.
     */
   var sourceDisk: js.UndefOr[String] = js.native
+  
   /**
     * The customer-supplied encryption key of the source disk. Required if the
     * source disk is protected by a customer-supplied encryption key.
     */
   var sourceDiskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The ID value of the disk used to create this snapshot. This
     * value may be used to determine whether the snapshot was taken from the
     * current or a previous instance of a given disk name.
     */
   var sourceDiskId: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The status of the snapshot. This can be CREATING, DELETING,
     * FAILED, READY, or UPLOADING.
     */
   var status: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] A size of the storage used by the snapshot. As snapshots
     * share storage, this number is expected to change with snapshot
     * creation/deletion.
     */
   var storageBytes: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] An indicator whether storageBytes is in a stable state or
     * it is being adjusted as a result of shared storage reallocation. This
@@ -119,112 +137,156 @@ trait SchemaSnapshot extends js.Object {
     * updated, or UP_TO_DATE, meaning the size of the snapshot is up-to-date.
     */
   var storageBytesStatus: js.UndefOr[String] = js.native
+  
   /**
     * GCS bucket storage location of the snapshot (regional or multi-regional).
     */
   var storageLocations: js.UndefOr[js.Array[String]] = js.native
 }
-
 object SchemaSnapshot {
+  
   @scala.inline
   def apply(): SchemaSnapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSnapshot]
   }
+  
   @scala.inline
   implicit class SchemaSnapshotOps[Self <: SchemaSnapshot] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setLicenseCodesVarargs(value: String*): Self = this.set("licenseCodes", js.Array(value :_*))
+    
     @scala.inline
     def setLicenseCodes(value: js.Array[String]): Self = this.set("licenseCodes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenseCodes: Self = this.set("licenseCodes", js.undefined)
+    
     @scala.inline
     def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    
     @scala.inline
     def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenses: Self = this.set("licenses", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("snapshotEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSnapshotEncryptionKey: Self = this.set("snapshotEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceDisk(value: String): Self = this.set("sourceDisk", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDisk: Self = this.set("sourceDisk", js.undefined)
+    
     @scala.inline
     def setSourceDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceDiskEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDiskEncryptionKey: Self = this.set("sourceDiskEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceDiskId(value: String): Self = this.set("sourceDiskId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDiskId: Self = this.set("sourceDiskId", js.undefined)
+    
     @scala.inline
     def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatus: Self = this.set("status", js.undefined)
+    
     @scala.inline
     def setStorageBytes(value: String): Self = this.set("storageBytes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStorageBytes: Self = this.set("storageBytes", js.undefined)
+    
     @scala.inline
     def setStorageBytesStatus(value: String): Self = this.set("storageBytesStatus", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStorageBytesStatus: Self = this.set("storageBytesStatus", js.undefined)
+    
     @scala.inline
     def setStorageLocationsVarargs(value: String*): Self = this.set("storageLocations", js.Array(value :_*))
+    
     @scala.inline
     def setStorageLocations(value: js.Array[String]): Self = this.set("storageLocations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStorageLocations: Self = this.set("storageLocations", js.undefined)
   }
-  
 }
-

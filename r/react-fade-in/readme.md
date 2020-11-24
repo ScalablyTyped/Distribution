@@ -10,9 +10,9 @@ Super-easy fade-in animation for react children
 | ------------------ | :-------------: |
 | Full name          | react-fade-in |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 78496 |
+| # releases         | 5 |
+| # dependents       | 13 |
+| # downloads        | 218883 |
 | # stars            | 1 |
 
 ## Links

@@ -12,7 +12,7 @@ File uploader module for Socket.io
 | Keywords           | WebSocket, Socket.io, binary, arraybuffer, file, upload |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 8831 |
+| # downloads        | 10297 |
 | # stars            | 2 |
 
 ## Links

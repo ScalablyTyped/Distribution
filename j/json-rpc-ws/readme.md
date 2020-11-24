@@ -10,9 +10,9 @@ json-rpc websocket transport
 | ------------------ | :-------------: |
 | Full name          | json-rpc-ws |
 | Keywords           | json-rpc, websocket |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 3376 |
+| # downloads        | 2378 |
 | # stars            | 0 |
 
 ## Links

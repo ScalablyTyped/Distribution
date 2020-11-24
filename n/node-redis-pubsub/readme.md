@@ -10,9 +10,9 @@ Redis PubSub client for Node
 | ------------------ | :-------------: |
 | Full name          | node-redis-pubsub |
 | Keywords           | redis, pubsub, node, simple |
-| # releases         | 3 |
-| # dependents       | 57 |
-| # downloads        | 222372 |
+| # releases         | 2 |
+| # dependents       | 59 |
+| # downloads        | 289950 |
 | # stars            | 3 |
 
 ## Links

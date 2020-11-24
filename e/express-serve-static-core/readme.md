@@ -12,7 +12,7 @@ only here to make types work
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 159498 |
+| # downloads        | 300190 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The clipboard manager is a one-instance service that holds a list of all known clipboard instances.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait ClipboardManager
   extends XClipboardManager
      with XComponent
-
 object ClipboardManager {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -35,4 +35,3 @@ object ClipboardManager {
     __obj.asInstanceOf[ClipboardManager]
   }
 }
-

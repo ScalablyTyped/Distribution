@@ -10,9 +10,9 @@ Simple ORM to manage and query your state trees
 | ------------------ | :-------------: |
 | Full name          | redux-orm |
 | Keywords           | redux, orm |
-| # releases         | 22 |
-| # dependents       | 8 |
-| # downloads        | 290005 |
+| # releases         | 19 |
+| # dependents       | 12 |
+| # downloads        | 265536 |
 | # stars            | 0 |
 
 ## Links

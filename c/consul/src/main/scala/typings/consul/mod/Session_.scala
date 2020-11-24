@@ -9,11 +9,13 @@ import typings.consul.mod.Session.NodeOptions
 import typings.consul.mod.Session.RenewOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Session_ extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Creates a new session
     */
@@ -27,6 +29,7 @@ trait Session_ extends js.Object {
     * Creates a new session
     */
   def create[TData](opts: CreateOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Destroys a given session
     */
@@ -43,10 +46,12 @@ trait Session_ extends js.Object {
     * Destroys a given session
     */
   def destroy[TData](opts: DestroyOptions, callback: Callback[TData]): Unit = js.native
+  
   def get[TData](id: String): Thenable[TData] = js.native
   def get[TData](id: String, callback: Callback[TData]): Unit = js.native
   def get[TData](opts: GetOptions): Thenable[TData] = js.native
   def get[TData](opts: GetOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Queries a given session
     */
@@ -63,6 +68,7 @@ trait Session_ extends js.Object {
     * Queries a given session
     */
   def info[TData](opts: InfoOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Lists all the active sessions
     */
@@ -76,6 +82,7 @@ trait Session_ extends js.Object {
     * Lists all the active sessions
     */
   def list[TData](opts: ListOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Lists sessions belonging to a node
     */
@@ -92,6 +99,7 @@ trait Session_ extends js.Object {
     * Lists sessions belonging to a node
     */
   def node[TData](opts: NodeOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Renews a TTL-based session
     */
@@ -109,4 +117,3 @@ trait Session_ extends js.Object {
     */
   def renew[TData](opts: RenewOptions, callback: Callback[TData]): Unit = js.native
 }
-

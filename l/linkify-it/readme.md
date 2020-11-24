@@ -10,9 +10,9 @@ Links recognition library with FULL unicode support
 | ------------------ | :-------------: |
 | Full name          | linkify-it |
 | Keywords           | linkify, linkifier, autolink, autolinker |
-| # releases         | 3 |
-| # dependents       | 127 |
-| # downloads        | 42465030 |
+| # releases         | 6 |
+| # dependents       | 151 |
+| # downloads        | 68690220 |
 | # stars            | 5 |
 
 ## Links

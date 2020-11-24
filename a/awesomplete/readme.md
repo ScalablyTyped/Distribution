@@ -10,9 +10,9 @@ http://leaverou.github.io/awesomplete/
 | ------------------ | :-------------: |
 | Full name          | awesomplete |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 22 |
-| # downloads        | 726560 |
+| # downloads        | 853902 |
 | # stars            | 4 |
 
 ## Links

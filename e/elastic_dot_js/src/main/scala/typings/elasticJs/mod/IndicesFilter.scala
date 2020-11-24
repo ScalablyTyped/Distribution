@@ -2,7 +2,7 @@ package typings.elasticJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "IndicesFilter")
 @js.native
@@ -12,23 +12,28 @@ class IndicesFilter protected () extends Filter {
     */
   def this(fltr: js.Object, indices: String) = this()
   def this(fltr: js.Object, indices: js.Array[String]) = this()
+  
   /*
     The type of ejs object.  For internal use only.
     */
   def _type(): String = js.native
+  
   /*
     Enable or disable caching of the filter
     */
   def cache(trueFalse: Boolean): IndicesFilter = js.native
+  
   /*
     Sets the cache key.
     */
   def cacheKey(key: String): IndicesFilter = js.native
+  
   /*
     Sets the filter to be used when executing on one of the indicies
     specified.
     */
   def filter(f: js.Object): IndicesFilter = js.native
+  
   /*
     Sets the indicies the filter should match.  When passed a string,
     the index name is added to the current list of indices.  When passed
@@ -36,10 +41,12 @@ class IndicesFilter protected () extends Filter {
     */
   def indices(i: String): IndicesFilter = js.native
   def indices(i: js.Array[String]): IndicesFilter = js.native
+  
   /*
     Sets the filter name.
     */
   def name(name: String): IndicesFilter = js.native
+  
   def noMatchFilter(f: String): IndicesFilter = js.native
   /*
     Sets the filter to be used on an index that does not match an index
@@ -47,9 +54,9 @@ class IndicesFilter protected () extends Filter {
     documents or "all" to match all documents.
     */
   def noMatchFilter(f: Filter): IndicesFilter = js.native
+  
   /*
     Returns the filter object.
     */
   def toJSON(): IndicesFilter = js.native
 }
-

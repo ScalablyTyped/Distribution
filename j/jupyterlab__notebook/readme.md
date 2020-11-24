@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__notebook
 
-Typings are for version 2.1.2
+Typings are for version 2.2.7
 
 ## Library description:
 JupyterLab - Notebook
@@ -10,9 +10,9 @@ JupyterLab - Notebook
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/notebook |
 | Keywords           | - |
-| # releases         | 70 |
-| # dependents       | 160 |
-| # downloads        | 869985 |
+| # releases         | 115 |
+| # dependents       | 253 |
+| # downloads        | 1564479 |
 | # stars            | 0 |
 
 ## Links

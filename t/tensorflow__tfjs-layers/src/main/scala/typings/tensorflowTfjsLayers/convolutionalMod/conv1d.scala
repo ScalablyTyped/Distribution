@@ -1,15 +1,16 @@
 package typings.tensorflowTfjsLayers.convolutionalMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "conv1d")
 @js.native
 object conv1d extends js.Object {
+  
   def apply(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = js.native
   def apply(
     x: Tensor[Rank],
@@ -101,4 +102,3 @@ object conv1d extends js.Object {
     dilationRate: Double
   ): Tensor[Rank] = js.native
 }
-

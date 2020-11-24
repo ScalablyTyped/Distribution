@@ -3,11 +3,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.firstIndexOf")
 @js.native
 object firstIndexOf extends js.Object {
+  
   /**
     * Find the index of the first occurrence of a value in an array.
     *
@@ -53,4 +54,3 @@ object firstIndexOf extends js.Object {
   def apply[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
   def apply[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
 }
-

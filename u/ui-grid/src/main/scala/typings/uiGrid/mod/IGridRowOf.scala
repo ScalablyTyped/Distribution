@@ -2,7 +2,7 @@ package typings.uiGrid.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridRowOf[TEntity]
@@ -11,28 +11,7 @@ trait IGridRowOf[TEntity]
      with typings.uiGrid.mod.exporter.IGridRow
      with typings.uiGrid.mod.selection.IGridRow
      with typings.uiGrid.mod.expandable.IGridRow {
-  /** A reference to an item in gridOptions.data[] */
-  var entity: TEntity = js.native
-  // Additional features enabled by other modules
-  /**
-    * If set to false, then don't export this row,
-    * notwithstanding visible or other settings
-    * Defaults to true
-    * @default true
-    */
-  @JSName("exporterEnableExporting")
-  var exporterEnableExporting_IGridRowOf: Boolean = js.native
-  /** A reference back to the grid */
-  var grid: IGridInstanceOf[TEntity] = js.native
-  /**
-    * height of each individual row. changing the height will flag all
-    * row renderContainers to recalculate their canvas height
-    */
-  var height: Double = js.native
-  /** uniqueId of row */
-  var uid: String = js.native
-  /** if true, row will be rendered */
-  var visible: Boolean = js.native
+  
   /**
     * Clears any override on the row visibility, returning it to normal visibility calculations.
     * Emits the rowsVisibleChanged event
@@ -51,6 +30,10 @@ trait IGridRowOf[TEntity]
     * @param row the row we want to clear the invisible flag
     */
   def clearRowInvisible(row: IGridRowOf[TEntity]): Unit = js.native
+  
+  /** A reference to an item in gridOptions.data[] */
+  var entity: TEntity = js.native
+  
   /**
     * Determines whether the row should be visible based on invisibleReason,
     * and if it changes the row visibility, then emits the rowsVisibleChanged event.
@@ -58,18 +41,40 @@ trait IGridRowOf[TEntity]
     * grid refreshes.
     */
   def evaluateRowVisibility(fromRowProcessor: Boolean): Unit = js.native
+  
+  // Additional features enabled by other modules
+  /**
+    * If set to false, then don't export this row,
+    * notwithstanding visible or other settings
+    * Defaults to true
+    * @default true
+    */
+  @JSName("exporterEnableExporting")
+  var exporterEnableExporting_IGridRowOf: Boolean = js.native
+  
   /**
     * returns the qualified field name minus the row path ie: entity.fieldA
     * @param col column instance
     * @returns resulting name that can be evaluated against a row
     */
   def getEntityQualifiedColField(col: IGridColumnOf[TEntity]): String = js.native
+  
   /**
     * returns the qualified field name as it exists on scope ie: row.entity.fieldA
     * @param col column instance
     * @returns resulting name that can be evaluated on scope
     */
   def getQualifiedColField(col: IGridColumnOf[TEntity]): String = js.native
+  
+  /** A reference back to the grid */
+  var grid: IGridInstanceOf[TEntity] = js.native
+  
+  /**
+    * height of each individual row. changing the height will flag all
+    * row renderContainers to recalculate their canvas height
+    */
+  var height: Double = js.native
+  
   /**
     * Sets an override on the row that forces it to always be invisible.
     * Emits the rowsVisibleChanged event if it changed the row visibility.
@@ -80,6 +85,7 @@ trait IGridRowOf[TEntity]
     * @param row the row we want to set to invisible
     */
   def setRowInvisible(row: IGridRowOf[TEntity]): Unit = js.native
+  
   /**
     * Sets an override on the row that forces it to always be invisible.
     * Emits the rowsVisibleChanged event if it changed the row visibility
@@ -87,5 +93,10 @@ trait IGridRowOf[TEntity]
     * @param fromRowsProcessor whether we were called from a rowsProcessor, passed through to evaluateRowVisibility
     */
   def setThisRowInvisible(reason: String, fromRowsProcessor: Boolean): Unit = js.native
+  
+  /** uniqueId of row */
+  var uid: String = js.native
+  
+  /** if true, row will be rendered */
+  var visible: Boolean = js.native
 }
-

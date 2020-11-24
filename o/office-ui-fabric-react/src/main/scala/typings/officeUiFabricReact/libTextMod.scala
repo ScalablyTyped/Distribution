@@ -8,13 +8,15 @@ import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
 import typings.uifabricFoundation.libIcomponentMod.IViewComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/Text", JSImport.Namespace)
 @js.native
 object libTextMod extends js.Object {
+  
   val Text: FunctionComponent[ITextProps] = js.native
+  
   val TextStyles: IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles] = js.native
+  
   val TextView: IViewComponent[ITextProps] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.mongoose.mod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * section querycursor.js
@@ -15,9 +15,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait QueryCursor[T /* <: Document */] extends Readable {
+  
   /** Marks this cursor as closed. Will stop streaming and subsequent calls to next() will error. */
   def close(): js.Promise[_] = js.native
   def close(callback: js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]): js.Promise[_] = js.native
+  
   /**
     * Execute fn for every document in the cursor. If fn returns a promise,
     * will wait for the promise to resolve before iterating on to the next one.
@@ -41,11 +43,13 @@ trait QueryCursor[T /* <: Document */] extends Readable {
     options: EachAsyncOptions,
     callback: js.Function1[/* err */ js.Any, Unit]
   ): js.Promise[T] = js.native
+  
   /**
     * Registers a transform function which subsequently maps documents retrieved
     * via the streams interface or .next()
     */
   def map(fn: js.Function1[/* doc */ T, T]): this.type = js.native
+  
   /**
     * Get the next document from this cursor. Will return null when there are
     * no documents left.
@@ -53,4 +57,3 @@ trait QueryCursor[T /* <: Document */] extends Readable {
   def next(): js.Promise[_] = js.native
   def next(callback: js.Function2[/* err */ js.Any, /* doc */ js.UndefOr[T], Unit]): js.Promise[_] = js.native
 }
-

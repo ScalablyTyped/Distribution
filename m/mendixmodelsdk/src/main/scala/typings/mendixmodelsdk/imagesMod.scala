@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.elementsMod.IByNameReferrable
 import typings.mendixmodelsdk.elementsMod.IElement
@@ -12,15 +13,17 @@ import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IDocument
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/images", JSImport.Namespace)
 @js.native
 object imagesMod extends js.Object {
+  
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
@@ -29,6 +32,7 @@ object imagesMod extends js.Object {
   
   @js.native
   object images extends js.Object {
+    
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `Images`.
       */
@@ -36,17 +40,21 @@ object imagesMod extends js.Object {
     trait IImage
       extends IElement
          with IByNameReferrable {
+      
       val containerAsImageCollection: IImageCollection = js.native
+      
       @JSName("model")
       val model_IImage: IModel = js.native
+      
       val name: String = js.native
     }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/images relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/images relevant section in reference guide}
       */
     @js.native
     trait IImageCollection extends IDocument {
+      
       val images: IList[IImage] = js.native
     }
     
@@ -57,33 +65,57 @@ object imagesMod extends js.Object {
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
     - typings.mendixmodelsdk.imagesMod.images.IImage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsImageCollection, name */ @js.native
     class Image protected ()
-      extends Element
+      extends Element[IModel]
          with IByNameReferrable {
       def this(
         model: AbstractModel,
         structureTypeName: String,
         id: String,
         isPartial: Boolean,
-        unit: ModelUnit,
-        container: AbstractElement
+        unit: ModelUnit[IAbstractModel],
+        container: AbstractElement[IAbstractModel, Container]
       ) = this()
+      
+      def containerAsImageCollection: ImageCollection = js.native
       @JSName("containerAsImageCollection")
       val containerAsImageCollection_FImage: IImageCollection = js.native
-      @JSName("model")
-      var model_FImage: IModel = js.native
-      @JSName("name")
-      val name_FImage: String = js.native
-      def containerAsImageCollection: ImageCollection = js.native
+      
       def imageData: String | Null = js.native
       def imageData_=(newValue: String | Null): Unit = js.native
+      
       def name: String = js.native
       def name_=(newValue: String): Unit = js.native
+      @JSName("name")
+      val name_FImage: String = js.native
+      
       @JSName("qualifiedName")
       def qualifiedName_MImage: String | Null = js.native
     }
+    /* static members */
+    @js.native
+    object Image extends js.Object {
+      
+      /**
+        * Creates and returns a new Image instance in the SDK and on the server.
+        * Expects one argument: the IModel object the instance will "live on".
+        * After creation, assign or add this instance to a property that accepts this kind of objects.
+        */
+      def create(model: IModel): Image = js.native
+      
+      /**
+        * Creates and returns a new Image instance in the SDK and on the server.
+        * The new Image will be automatically stored in the 'images' property
+        * of the parent ImageCollection element passed as argument.
+        */
+      def createIn(container: ImageCollection): Image = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
+    }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/images relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/images relevant section in reference guide}
       */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -103,47 +135,27 @@ object imagesMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      @JSName("images")
-      val images_FImageCollection: IList[IImage] = js.native
-      @JSName("model")
-      var model_FImageCollection: IModel = js.native
+      
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MImageCollection: FolderBase = js.native
+      
       def images: IList[Image] = js.native
+      @JSName("images")
+      val images_FImageCollection: IList[IImage] = js.native
     }
-    
-    /* static members */
-    @js.native
-    object Image extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
-      /**
-        * Creates and returns a new Image instance in the SDK and on the server.
-        * Expects one argument: the IModel object the instance will "live on".
-        * After creation, assign or add this instance to a property that accepts this kind of objects.
-        */
-      def create(model: IModel): Image = js.native
-      /**
-        * Creates and returns a new Image instance in the SDK and on the server.
-        * The new Image will be automatically stored in the 'images' property
-        * of the parent ImageCollection element passed as argument.
-        */
-      def createIn(container: ImageCollection): Image = js.native
-    }
-    
     /* static members */
     @js.native
     object ImageCollection extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
+      
       /**
         * Creates a new ImageCollection unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       def createIn(container: IFolderBase): ImageCollection = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
     }
-    
   }
-  
 }
-

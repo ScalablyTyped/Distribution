@@ -3,23 +3,26 @@ package typings.powerappsComponentFramework.ComponentFramework
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the PowerApps Controls (Standard)
   */
 @js.native
 trait StandardControl[TInputs, TOutputs] extends js.Object {
-  /**
-    * It is called by the framework prior to a control receiving new data.
-    * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
-    */
-  var getOutputs: js.UndefOr[js.Function0[TOutputs]] = js.native
+  
   /**
     * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
     * i.e. cancelling any pending remote calls, removing listeners, etc.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * It is called by the framework prior to a control receiving new data.
+    * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
+    */
+  var getOutputs: js.UndefOr[js.Function0[TOutputs]] = js.native
+  
   /**
     * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
     * Data-set values are not initialized here, use updateView.
@@ -58,6 +61,7 @@ trait StandardControl[TInputs, TOutputs] extends js.Object {
     state: Dictionary,
     container: HTMLDivElement
   ): Unit = js.native
+  
   /**
     * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width,
     * offline status, control metadata values such as label, visible, etc.
@@ -66,4 +70,3 @@ trait StandardControl[TInputs, TOutputs] extends js.Object {
     */
   def updateView(context: Context[TInputs]): Unit = js.native
 }
-

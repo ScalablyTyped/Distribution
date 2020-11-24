@@ -8,11 +8,12 @@ import typings.phin.anon.IWithFormIOptions
 import typings.phin.anon.IWithFormIStreamResponseO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phin", "unpromisified")
 @js.native
 object unpromisified extends js.Object {
+  
   def apply(options: String, callback: ICallback[IResponse] | IErrorCallback): Unit = js.native
   def apply(options: IWithDataIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = js.native
   def apply(options: IWithDataIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = js.native
@@ -24,4 +25,3 @@ object unpromisified extends js.Object {
   def apply[T](options: IWithFormIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = js.native
   def apply[T](options: IJSONResponseOptions, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = js.native
 }
-

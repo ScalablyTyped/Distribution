@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.quicksightMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.QuickSight")
 @js.native
@@ -14,4 +14,3 @@ class QuickSight ()
   extends typings.awsSdk.mod.QuickSight {
   def this(options: ClientConfiguration) = this()
 }
-

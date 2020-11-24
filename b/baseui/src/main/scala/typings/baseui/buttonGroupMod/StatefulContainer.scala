@@ -6,13 +6,14 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui/button-group", "StatefulContainer")
 @js.native
 class StatefulContainer ()
   extends Component[StatefulButtonGroupProps, State, js.Any] {
+  
   def changeState(nextState: State): Unit = js.native
+  
   def onClick(event: MouseEvent[HTMLButtonElement, NativeMouseEvent], index: Double): Unit = js.native
 }
-

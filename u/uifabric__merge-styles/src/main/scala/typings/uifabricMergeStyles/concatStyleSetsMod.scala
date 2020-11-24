@@ -7,11 +7,12 @@ import typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly
 import typings.uifabricMergeStyles.uifabricMergeStylesBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/merge-styles/lib/concatStyleSets", JSImport.Namespace)
 @js.native
 object concatStyleSetsMod extends js.Object {
+  
   def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def concatStyleSets[TStyleSet](styleSet: TStyleSet): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
@@ -74,4 +75,3 @@ object concatStyleSetsMod extends js.Object {
   @JSName("concatStyleSets")
   def concatStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
 }
-

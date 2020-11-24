@@ -5,7 +5,7 @@ import typings.webgme.Global_.GmeLogger
 import typings.webgme.GmeCommon.ResultCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class defines the public API of the WebGME-Core
@@ -14,11 +14,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Core")
 @js.native
 object Core extends js.Object {
+  
   @js.native
   class Node ()
     extends typings.webgme.Core.Node {
     def this(id: String, logger: GmeLogger, state: js.Any, storeNode: ResultCallback[Storage]) = this()
   }
-  
 }
-

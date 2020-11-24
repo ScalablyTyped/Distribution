@@ -10,9 +10,9 @@ Graylog2 client library for node.js
 | ------------------ | :-------------: |
 | Full name          | graylog2 |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 473882 |
+| # releases         | 0 |
+| # dependents       | 18 |
+| # downloads        | 513698 |
 | # stars            | 1 |
 
 ## Links

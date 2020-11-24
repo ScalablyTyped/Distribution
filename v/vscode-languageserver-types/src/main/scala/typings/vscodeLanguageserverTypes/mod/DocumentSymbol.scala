@@ -2,47 +2,54 @@ package typings.vscodeLanguageserverTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocumentSymbol extends js.Object {
+  
   /**
     * Children of this symbol, e.g. properties of a class.
     */
   var children: js.UndefOr[js.Array[DocumentSymbol]] = js.native
+  
   /**
     * Indicates if this symbol is deprecated.
     */
   var deprecated: js.UndefOr[Boolean] = js.native
+  
   /**
     * More detail for this symbol, e.g the signature of a function.
     */
   var detail: js.UndefOr[String] = js.native
+  
   /**
     * The kind of this symbol.
     */
   var kind: SymbolKind = js.native
+  
   /**
     * The name of this symbol. Will be displayed in the user interface and therefore must not be
     * an empty string or a string only consisting of white spaces.
     */
   var name: String = js.native
+  
   /**
     * The range enclosing this symbol not including leading/trailing whitespace but everything else
     * like comments. This information is typically used to determine if the the clients cursor is
     * inside the symbol to reveal in the symbol in the UI.
     */
   var range: Range = js.native
+  
   /**
     * The range that should be selected and revealed when this symbol is being picked, e.g the name of a function.
     * Must be contained by the the `range`.
     */
   var selectionRange: Range = js.native
 }
-
 @JSImport("vscode-languageserver-types", "DocumentSymbol")
 @js.native
 object DocumentSymbol extends js.Object {
+  
   def create(
     name: String,
     detail: js.UndefOr[scala.Nothing],
@@ -77,9 +84,9 @@ object DocumentSymbol extends js.Object {
     selectionRange: Range,
     children: js.Array[DocumentSymbol]
   ): DocumentSymbol = js.native
+  
   /**
     * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
     */
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = js.native
 }
-

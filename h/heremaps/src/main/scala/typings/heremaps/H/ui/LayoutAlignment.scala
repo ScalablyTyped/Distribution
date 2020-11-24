@@ -2,17 +2,17 @@ package typings.heremaps.H.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LayoutAlignment extends js.Object
-
 /**
   * This enumeration holds the possible layout alignments for the UI elements.
   */
 @JSGlobal("H.ui.LayoutAlignment")
 @js.native
 object LayoutAlignment extends js.Object {
+  
   @js.native
   sealed trait BOTTOM_CENTER extends LayoutAlignment
   
@@ -48,6 +48,4 @@ object LayoutAlignment extends js.Object {
   
   @js.native
   sealed trait TOP_RIGHT extends LayoutAlignment
-  
 }
-

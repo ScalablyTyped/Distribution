@@ -4,16 +4,16 @@
 Typings are for version 1.20.6
 
 ## Library description:
-GSAP is a JavaScript library for building high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch! No other library deliv
+GSAP is a JavaScript library for building high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch! The ScrollTrigger plug
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gsap |
-| Keywords           | GSAP, GreenSock, animation, MotionPathPlugin, motion, motionPath, easing, JavaScript, PixiPlugin, CustomEase, SVG, 3D, 2D, transform, morph, morphing, tweening |
-| # releases         | 19 |
-| # dependents       | 346 |
-| # downloads        | 5040767 |
-| # stars            | 51 |
+| Keywords           | GSAP, GreenSock, animation, MotionPathPlugin, motion, motionPath, easing, ScrollTrigger, JavaScript, PixiPlugin, CustomEase, SVG, 3D, 2D, transform, morph, morphing, tweening |
+| # releases         | 34 |
+| # dependents       | 452 |
+| # downloads        | 7860251 |
+| # stars            | 52 |
 
 ## Links
 - [Homepage](https://greensock.com)

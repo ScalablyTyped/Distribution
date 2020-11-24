@@ -7,11 +7,12 @@ import typings.reactNativeNavigation.componentWrapperMod.ComponentWrapper
 import typings.reactNativeNavigation.storeMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-navigation/lib/dist/components/ComponentRegistry", JSImport.Namespace)
 @js.native
 object componentRegistryMod extends js.Object {
+  
   @js.native
   class ComponentRegistry protected () extends js.Object {
     def this(
@@ -20,10 +21,13 @@ object componentRegistryMod extends js.Object {
       componentWrapper: ComponentWrapper,
       appRegistryService: AppRegistryService
     ) = this()
+    
     var appRegistryService: js.Any = js.native
+    
     var componentEventsObserver: js.Any = js.native
+    
     var componentWrapper: js.Any = js.native
-    var store: js.Any = js.native
+    
     def registerComponent(componentName: String, componentProvider: ComponentProvider): ComponentProvider = js.native
     def registerComponent(
       componentName: String,
@@ -116,7 +120,7 @@ object componentRegistryMod extends js.Object {
       ReduxProvider: js.Any,
       reduxStore: js.Any
     ): ComponentProvider = js.native
+    
+    var store: js.Any = js.native
   }
-  
 }
-

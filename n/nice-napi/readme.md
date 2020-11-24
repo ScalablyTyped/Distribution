@@ -11,8 +11,8 @@ nice(2) bindings for Node.js
 | Full name          | nice-napi |
 | Keywords           | nice, priority |
 | # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 5027 |
+| # dependents       | 2 |
+| # downloads        | 24766 |
 | # stars            | 0 |
 
 ## Links

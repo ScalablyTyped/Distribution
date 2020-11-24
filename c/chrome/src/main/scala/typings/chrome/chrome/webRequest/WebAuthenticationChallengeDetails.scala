@@ -2,21 +2,25 @@ package typings.chrome.chrome.webRequest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebAuthenticationChallengeDetails extends WebResponseHeadersDetails {
+  
   /** The server requesting authentication. */
   var challenger: WebAuthChallenger = js.native
+  
   /** True for Proxy-Authenticate, false for WWW-Authenticate. */
   var isProxy: Boolean = js.native
+  
   /** The authentication realm provided by the server, if there is one. */
   var realm: js.UndefOr[String] = js.native
+  
   /** The authentication scheme, e.g. Basic or Digest. */
   var scheme: String = js.native
 }
-
 object WebAuthenticationChallengeDetails {
+  
   @scala.inline
   def apply(
     challenger: WebAuthChallenger,
@@ -37,28 +41,35 @@ object WebAuthenticationChallengeDetails {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAuthenticationChallengeDetails]
   }
+  
   @scala.inline
   implicit class WebAuthenticationChallengeDetailsOps[Self <: WebAuthenticationChallengeDetails] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChallenger(value: WebAuthChallenger): Self = this.set("challenger", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsProxy(value: Boolean): Self = this.set("isProxy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRealm: Self = this.set("realm", js.undefined)
   }
-  
 }
-

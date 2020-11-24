@@ -8,7 +8,7 @@ import typings.pixiJs.PIXI.Renderer
 import typings.pixiJs.PIXI.System
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * System plugin to the renderer to manage render textures.
@@ -21,35 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RenderTextureSystem extends System {
-  /**
-    * The clear background color as rgba
-    * @member {number[]} PIXI.systems.RenderTextureSystem#clearColor
-    */
-  var clearColor: js.Array[Double] = js.native
-  /**
-    * Render texture
-    * @member {PIXI.RenderTexture} PIXI.systems.RenderTextureSystem#current
-    * @readonly
-    */
-  val current: RenderTexture = js.native
-  /**
-    * List of masks for the StencilSystem
-    * @member {PIXI.Graphics[]} PIXI.systems.RenderTextureSystem#defaultMaskStack
-    * @readonly
-    */
-  val defaultMaskStack: js.Array[Graphics] = js.native
-  /**
-    * Destination frame
-    * @member {PIXI.Rectangle} PIXI.systems.RenderTextureSystem#destinationFrame
-    * @readonly
-    */
-  val destinationFrame: Rectangle = js.native
-  /**
-    * Source frame
-    * @member {PIXI.Rectangle} PIXI.systems.RenderTextureSystem#sourceFrame
-    * @readonly
-    */
-  val sourceFrame: Rectangle = js.native
+  
   /**
     * Bind the current render texture
     *
@@ -69,6 +41,7 @@ trait RenderTextureSystem extends System {
   def bind(renderTexture: RenderTexture, sourceFrame: js.UndefOr[scala.Nothing], destinationFrame: Rectangle): Unit = js.native
   def bind(renderTexture: RenderTexture, sourceFrame: Rectangle): Unit = js.native
   def bind(renderTexture: RenderTexture, sourceFrame: Rectangle, destinationFrame: Rectangle): Unit = js.native
+  
   /**
     * Erases the render texture and fills the drawing area with a colour
     *
@@ -81,9 +54,43 @@ trait RenderTextureSystem extends System {
   def clear(clearColor: js.UndefOr[scala.Nothing], mask: BUFFER_BITS): Renderer = js.native
   def clear(clearColor: js.Array[Double]): Renderer = js.native
   def clear(clearColor: js.Array[Double], mask: BUFFER_BITS): Renderer = js.native
+  
+  /**
+    * The clear background color as rgba
+    * @member {number[]} PIXI.systems.RenderTextureSystem#clearColor
+    */
+  var clearColor: js.Array[Double] = js.native
+  
+  /**
+    * Render texture
+    * @member {PIXI.RenderTexture} PIXI.systems.RenderTextureSystem#current
+    * @readonly
+    */
+  val current: RenderTexture = js.native
+  
+  /**
+    * List of masks for the StencilSystem
+    * @member {PIXI.Graphics[]} PIXI.systems.RenderTextureSystem#defaultMaskStack
+    * @readonly
+    */
+  val defaultMaskStack: js.Array[Graphics] = js.native
+  
+  /**
+    * Destination frame
+    * @member {PIXI.Rectangle} PIXI.systems.RenderTextureSystem#destinationFrame
+    * @readonly
+    */
+  val destinationFrame: Rectangle = js.native
+  
   /**
     * Resets renderTexture state
     */
   def reset(): Unit = js.native
+  
+  /**
+    * Source frame
+    * @member {PIXI.Rectangle} PIXI.systems.RenderTextureSystem#sourceFrame
+    * @readonly
+    */
+  val sourceFrame: Rectangle = js.native
 }
-

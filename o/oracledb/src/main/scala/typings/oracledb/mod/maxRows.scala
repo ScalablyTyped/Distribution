@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "maxRows")
 @js.native
 object maxRows extends TopLevel[Double]
-

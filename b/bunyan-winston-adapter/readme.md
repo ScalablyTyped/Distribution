@@ -12,7 +12,7 @@ Allows to use winston logger in restify server without really using bunyan.
 | Keywords           | bunyan, winston, restify |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10954 |
+| # downloads        | 10502 |
 | # stars            | 0 |
 
 ## Links

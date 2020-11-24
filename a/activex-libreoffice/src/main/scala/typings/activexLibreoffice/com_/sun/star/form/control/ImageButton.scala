@@ -25,7 +25,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a control which can be used for displaying images on a control acting like a button.
@@ -45,8 +45,8 @@ trait ImageButton
      with XAccessible
      with XLayoutConstrains
      with XApproveActionBroadcaster
-
 object ImageButton {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -108,4 +108,3 @@ object ImageButton {
     __obj.asInstanceOf[ImageButton]
   }
 }
-

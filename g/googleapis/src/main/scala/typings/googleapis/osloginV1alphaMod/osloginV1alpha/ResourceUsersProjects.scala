@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin/v1alpha", "oslogin_v1alpha.Resource$Users$Projects")
 @js.native
 class ResourceUsersProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * oslogin.users.projects.delete
     * @desc Deletes a POSIX account.
@@ -43,4 +45,3 @@ class ResourceUsersProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

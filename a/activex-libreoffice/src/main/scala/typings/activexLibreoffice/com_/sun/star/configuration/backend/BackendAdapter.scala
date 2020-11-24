@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements {@link Backend} retrieving data from a {@link SingleBackend} .
@@ -18,8 +18,8 @@ trait BackendAdapter
      with XBackend
      with XBackendEntities
      with XInitialization
-
 object BackendAdapter {
+  
   @scala.inline
   def apply(
     AdminEntity: String,
@@ -42,4 +42,3 @@ object BackendAdapter {
     __obj.asInstanceOf[BackendAdapter]
   }
 }
-

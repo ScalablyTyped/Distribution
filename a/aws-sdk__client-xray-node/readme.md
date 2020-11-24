@@ -12,7 +12,7 @@ Node SDK for AWS X-Ray
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 641 |
+| # downloads        | 556 |
 | # stars            | 0 |
 
 ## Links

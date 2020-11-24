@@ -4,17 +4,18 @@ import typings.cloudeventsSdk.anon.V03
 import typings.cloudeventsSdk.cloudeventMod.CloudEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cloudevents-sdk/lib/bindings/http/http_receiver", JSImport.Namespace)
 @js.native
 object httpReceiverMod extends js.Object {
+  
   @js.native
   /**
     * Create an instance of an HTTPReceiver to accept incoming CloudEvents.
     */
   class HTTPReceiver () extends js.Object {
-    var receivers: V03 = js.native
+    
     /**
       * Acceptor for an incoming HTTP CloudEvent POST. Can process
       * binary and structured incoming CloudEvents.
@@ -24,7 +25,7 @@ object httpReceiverMod extends js.Object {
       * @return {CloudEvent} A new {CloudEvent} instance
       */
     def accept(headers: js.Object, body: js.Object): CloudEvent = js.native
+    
+    var receivers: V03 = js.native
   }
-  
 }
-

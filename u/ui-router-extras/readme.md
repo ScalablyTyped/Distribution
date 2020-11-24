@@ -12,7 +12,7 @@ UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition 
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 182484 |
+| # downloads        | 250739 |
 | # stars            | 2 |
 
 ## Links

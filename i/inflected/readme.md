@@ -10,9 +10,9 @@ A port of ActiveSupport's inflector to Node.js
 | ------------------ | :-------------: |
 | Full name          | inflected |
 | Keywords           | inflector, inflection, pluralize, singularize, camelize, titleize, tableize, humanize, capitalize, constantify, dasherize, ordinalize, parameterize, transliterate, activesupport |
-| # releases         | 2 |
-| # dependents       | 138 |
-| # downloads        | 14312378 |
+| # releases         | 0 |
+| # dependents       | 148 |
+| # downloads        | 25154938 |
 | # stars            | 2 |
 
 ## Links

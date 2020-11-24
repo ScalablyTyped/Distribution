@@ -2,10 +2,11 @@ package typings.dvtngJss
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSS extends js.Object {
+  
   /**
     * Retrieve all rules added via JSS, organized by selectors
     */
@@ -15,11 +16,13 @@ trait JSS extends js.Object {
     * @param s CSS selector
     */
   def get(s: String): Properties = js.native
+  
   /**
     * Retrieve all rules specified for a given selector (not necessarily added via JSS)
     * @param s CSS selector
     */
   def getAll(s: String): Properties = js.native
+  
   /**
     * Remove all rules added via JSS
     */
@@ -28,6 +31,7 @@ trait JSS extends js.Object {
     * Remove all rules added via JSS for the given selector
     */
   def remove(s: String): Unit = js.native
+  
   /**
     * Add or extend an existing rule
     * @param s CSS selector
@@ -35,4 +39,3 @@ trait JSS extends js.Object {
     */
   def set(s: String, p: Properties): Unit = js.native
 }
-

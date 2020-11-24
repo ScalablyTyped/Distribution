@@ -5,9 +5,8 @@ import typings.grommet.dataChartMod.DataChartProps
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "DataChart")
+@JSImport("grommet", "DataChart")
 @js.native
 object DataChart extends TopLevel[FC[DataChartProps]]
-

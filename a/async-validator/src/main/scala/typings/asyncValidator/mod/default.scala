@@ -2,12 +2,13 @@ package typings.asyncValidator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async-validator", JSImport.Default)
 @js.native
 class default protected () extends js.Object {
   def this(rule: Rules) = this()
+  
   /**
     * Validate source
     * @param source The object to validate (required)
@@ -28,4 +29,3 @@ class default protected () extends js.Object {
     callback: js.Function2[/* errors */ ErrorList, /* fields */ FieldErrorList, Unit]
   ): js.Promise[Unit] = js.native
 }
-

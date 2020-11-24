@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Uint32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_heap")
 @js.native
 object bigintHeap extends TopLevel[Uint32Array]
-

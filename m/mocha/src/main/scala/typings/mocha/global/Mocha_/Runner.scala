@@ -4,7 +4,7 @@ import typings.mocha.Mocha.RunnerConstants
 import typings.mocha.Mocha.Suite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runner "pending" event
 // #region Runner untyped events
@@ -42,15 +42,15 @@ class Runner protected ()
   extends typings.mocha.Mocha.Runner {
   def this(suite: Suite, delay: Boolean) = this()
 }
-
 /* static members */
 @JSGlobal("Mocha.Runner")
 @js.native
 object Runner extends js.Object {
+  
   val constants: RunnerConstants = js.native
+  
   /**
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */
   /* protected */ def immediately(callback: js.Function): Unit = js.native
 }
-

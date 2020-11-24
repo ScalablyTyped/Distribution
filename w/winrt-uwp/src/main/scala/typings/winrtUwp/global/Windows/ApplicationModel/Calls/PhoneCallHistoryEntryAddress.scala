@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Calls
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Address book information for a contact used by PhoneCallHistoryEntry objects. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryAddress")
@@ -20,4 +20,3 @@ class PhoneCallHistoryEntryAddress ()
     rawAddressKind: typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryRawAddressKind
   ) = this()
 }
-

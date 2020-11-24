@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatusRequest")
 @js.native
@@ -17,26 +17,30 @@ import scala.scalajs.js.annotation._
   */
 class ClientBatchStatusRequest () extends IClientBatchStatusRequest {
   def this(properties: IClientBatchStatusRequest) = this()
+  
   /** ClientBatchStatusRequest batchIds. */
   @JSName("batchIds")
   var batchIds_ClientBatchStatusRequest: js.Array[String] = js.native
+  
   /** ClientBatchStatusRequest timeout. */
   @JSName("timeout")
   var timeout_ClientBatchStatusRequest: Double = js.native
-  /** ClientBatchStatusRequest wait. */
-  @JSName("wait")
-  var wait_FClientBatchStatusRequest: Boolean = js.native
+  
   /**
     * Converts this ClientBatchStatusRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
+  
+  /** ClientBatchStatusRequest wait. */
+  @JSName("wait")
+  var wait_FClientBatchStatusRequest: Boolean = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientBatchStatusRequest")
 @js.native
 object ClientBatchStatusRequest extends js.Object {
+  
   /**
     * Creates a new ClientBatchStatusRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -44,6 +48,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def create(): ClientBatchStatusRequest = js.native
   def create(properties: IClientBatchStatusRequest): ClientBatchStatusRequest = js.native
+  
   /**
     * Decodes a ClientBatchStatusRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -56,6 +61,7 @@ object ClientBatchStatusRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientBatchStatusRequest = js.native
   def decode(reader: Uint8Array): ClientBatchStatusRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientBatchStatusRequest = js.native
+  
   /**
     * Decodes a ClientBatchStatusRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,6 +71,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientBatchStatusRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientBatchStatusRequest = js.native
+  
   /**
     * Encodes the specified ClientBatchStatusRequest message. Does not implicitly {@link ClientBatchStatusRequest.verify|verify} messages.
     * @param message ClientBatchStatusRequest message or plain object to encode
@@ -73,6 +80,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def encode(message: IClientBatchStatusRequest): Writer = js.native
   def encode(message: IClientBatchStatusRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientBatchStatusRequest message, length delimited. Does not implicitly {@link ClientBatchStatusRequest.verify|verify} messages.
     * @param message ClientBatchStatusRequest message or plain object to encode
@@ -81,12 +89,14 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def encodeDelimited(message: IClientBatchStatusRequest): Writer = js.native
   def encodeDelimited(message: IClientBatchStatusRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientBatchStatusRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBatchStatusRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientBatchStatusRequest = js.native
+  
   /**
     * Creates a plain object from a ClientBatchStatusRequest message. Also converts values to other types if specified.
     * @param message ClientBatchStatusRequest
@@ -95,6 +105,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def toObject(message: ClientBatchStatusRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientBatchStatusRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientBatchStatusRequest message.
     * @param message Plain object to verify
@@ -102,4 +113,3 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

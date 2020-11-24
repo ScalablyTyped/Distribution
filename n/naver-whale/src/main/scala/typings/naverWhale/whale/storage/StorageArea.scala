@@ -3,10 +3,11 @@ package typings.naverWhale.whale.storage
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StorageArea extends js.Object {
+  
   /**
     * Removes all items from storage.
     * @param callback Optional.
@@ -14,6 +15,7 @@ trait StorageArea extends js.Object {
     */
   def clear(): Unit = js.native
   def clear(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Gets one or more items from storage.
     * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
@@ -31,6 +33,7 @@ trait StorageArea extends js.Object {
   def get(keys: js.Array[String], callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
   def get(keys: js.Object, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
   def get(keys: Null, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
+  
   /**
     * Gets the amount of space (in bytes) being used by one or more items.
     * @param callback Callback with the amount of space being used by storage, or on failure (in which case runtime.lastError will be set).
@@ -46,9 +49,10 @@ trait StorageArea extends js.Object {
   def getBytesInUse(keys: String, callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
   def getBytesInUse(keys: js.Array[String], callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
   def getBytesInUse(keys: Null, callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
+  
   /**
     * Removes one or more items from storage.
-    * @param A single key or a list of keys for items to remove.
+    * @param keys A single key or a list of keys for items to remove.
     * @param callback Optional.
     * Callback on success, or on failure (in which case runtime.lastError will be set).
     */
@@ -56,6 +60,7 @@ trait StorageArea extends js.Object {
   def remove(keys: String, callback: js.Function0[Unit]): Unit = js.native
   def remove(keys: js.Array[String]): Unit = js.native
   def remove(keys: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Sets multiple items.
     * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in storage will not be affected.
@@ -66,4 +71,3 @@ trait StorageArea extends js.Object {
   def set(items: js.Object): Unit = js.native
   def set(items: js.Object, callback: js.Function0[Unit]): Unit = js.native
 }
-

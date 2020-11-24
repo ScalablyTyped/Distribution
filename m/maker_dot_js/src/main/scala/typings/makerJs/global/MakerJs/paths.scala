@@ -5,11 +5,12 @@ import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.paths")
 @js.native
 object paths extends js.Object {
+  
   /**
     * Class for arc path.
     */
@@ -154,6 +155,4 @@ object paths extends js.Object {
     extends typings.makerJs.MakerJs.paths.Parallel {
     def this(toLine: IPathLine, distance: Double, nearPoint: IPoint) = this()
   }
-  
 }
-

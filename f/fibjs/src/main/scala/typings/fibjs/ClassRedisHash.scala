@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassRedisHash extends ClassObject {
+  
   /**
     * 
     * @brief 删除哈希表中的一个或多个指定域，不存在的域将被忽略
@@ -29,6 +30,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def del(fields: js.Array[_]): Double = js.native
+  
   /**
     * 
     * @brief 查看哈希表中，给定域 field 是否存在
@@ -38,6 +40,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def exists(field: ClassBuffer): Boolean = js.native
+  
   /**
     * 
     * @brief 返回哈希表中给定域 field 的值
@@ -47,6 +50,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def get(field: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 返回哈希表中，所有的域和值
@@ -55,6 +59,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def getAll(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 将域所储存的值加上增量
@@ -66,6 +71,7 @@ trait ClassRedisHash extends ClassObject {
     */
   def incr(field: ClassBuffer): Double = js.native
   def incr(field: ClassBuffer, num: Double): Double = js.native
+  
   /**
     * 
     * @brief 返回哈希表中的所有域
@@ -74,6 +80,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def keys(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 返回哈希表中域的数量
@@ -82,6 +89,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def len(): Double = js.native
+  
   /**
     * 
     * @brief 返回哈希表中，一个或多个给定域的值
@@ -100,6 +108,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def mget(fields: js.Array[_]): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 同时将多个 field-value (域-值)对设置到哈希表中，此命令会覆盖哈希表中已存在的域
@@ -116,6 +125,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def mset(kvs: js.Object): Unit = js.native
+  
   /**
     * 
     * @brief 将哈希表中的域 field 的值设为 value，如果域 field 已经存在于哈希表中，旧值将被覆盖
@@ -125,6 +135,7 @@ trait ClassRedisHash extends ClassObject {
     * 
     */
   def set(field: ClassBuffer, value: ClassBuffer): Unit = js.native
+  
   /**
     * 
     * @brief 将哈希表中的域 field 的值设置为 value ，当且仅当域 field 不存在。若域 field 已经存在，该操作无效
@@ -135,4 +146,3 @@ trait ClassRedisHash extends ClassObject {
     */
   def setNX(field: ClassBuffer, value: ClassBuffer): Unit = js.native
 }
-

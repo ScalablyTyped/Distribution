@@ -2,10 +2,11 @@ package typings.googleVisualization.google.visualization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PatternFormat extends js.Object {
+  
   /**
     * The standard formatting call, with a few additional parameters
     *
@@ -16,4 +17,3 @@ trait PatternFormat extends js.Object {
   def format(data: DataTable, srcColumnIndices: js.Array[Double]): Unit = js.native
   def format(data: DataTable, srcColumnIndices: js.Array[Double], opt_dstColumnIndex: Double): Unit = js.native
 }
-

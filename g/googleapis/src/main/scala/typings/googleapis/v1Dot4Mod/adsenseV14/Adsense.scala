@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AdSense Management API
@@ -28,16 +28,26 @@ import scala.scalajs.js.annotation._
 class Adsense protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var accounts: ResourceAccounts = js.native
+  
   var adclients: ResourceAdclients = js.native
+  
   var adunits: ResourceAdunits = js.native
+  
   var alerts: ResourceAlerts = js.native
+  
   var context: APIRequestContext = js.native
+  
   var customchannels: ResourceCustomchannels = js.native
+  
   var metadata: ResourceMetadata = js.native
+  
   var payments: ResourcePayments = js.native
+  
   var reports: ResourceReports = js.native
+  
   var savedadstyles: ResourceSavedadstyles = js.native
+  
   var urlchannels: ResourceUrlchannels = js.native
 }
-

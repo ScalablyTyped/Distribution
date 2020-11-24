@@ -2,8 +2,9 @@ package typings.reactNativeCommunityViewpager
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
-  type ViewPagerAndroidComponent = typings.react.mod.Component[typings.reactNativeCommunityViewpager.mod.ViewPagerAndroidProps, js.Object, js.Any]
+  
+  type ViewPagerComponent = typings.react.mod.Component[typings.reactNativeCommunityViewpager.mod.ViewPagerProps, js.Object, js.Any]
 }

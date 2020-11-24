@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.JoinRoomRequest")
 @js.native
@@ -29,4 +29,3 @@ class JoinRoomRequest protected ()
   def this(room: js.Any, password: String, roomIdToLeave: js.UndefOr[scala.Nothing], asSpect: Boolean) = this()
   def this(room: js.Any, password: String, roomIdToLeave: Double, asSpect: Boolean) = this()
 }
-

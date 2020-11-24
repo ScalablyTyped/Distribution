@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.MenuOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofMenu
   extends Instantiable1[/* element */ Element, Menu]
      with Instantiable2[/* element */ Element, /* options */ MenuOptions, Menu] {
-  var fn: Menu = js.native
+  
   def extend(proto: js.Object): Menu = js.native
+  
+  var fn: Menu = js.native
 }
-

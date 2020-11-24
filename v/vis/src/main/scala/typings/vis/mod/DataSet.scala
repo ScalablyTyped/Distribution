@@ -2,7 +2,7 @@ package typings.vis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vis", "DataSet")
 @js.native
@@ -22,10 +22,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
   def this(options: DataSetOptions) = this()
   def this(data: js.UndefOr[scala.Nothing], options: DataSetOptions) = this()
   def this(data: js.Array[T], options: DataSetOptions) = this()
-  /**
-    * The number of items in the DataSet.
-    */
-  var length: Double = js.native
+  
   /**
     * Add one or multiple items to the DataSet.
     * Adding an item will fail when there already is an item with the same id.
@@ -38,6 +35,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
   def add(data: T, senderId: IdType): js.Array[IdType] = js.native
   def add(data: js.Array[T]): js.Array[IdType] = js.native
   def add(data: js.Array[T], senderId: IdType): js.Array[IdType] = js.native
+  
   /**
     * Clear all data from the DataSet.
     *
@@ -46,6 +44,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     */
   def clear(): js.Array[IdType] = js.native
   def clear(senderId: IdType): js.Array[IdType] = js.native
+  
   /**
     * Find all distinct values of a specified field.
     * If data items do not contain the specified field are ignored.
@@ -54,11 +53,13 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     * @returns Returns an unordered array containing all distinct values.
     */
   def distinct(field: String): js.Array[_] = js.native
+  
   /**
     * Flush queued changes.
     * Only available when the DataSet is configured with the option queue.
     */
   def flush(): Unit = js.native
+  
   /**
     * Execute a callback function for every item in the dataset.
     *
@@ -67,6 +68,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     */
   def forEach(callback: js.Function2[/* item */ T, /* id */ IdType, Unit]): Unit = js.native
   def forEach(callback: js.Function2[/* item */ T, /* id */ IdType, Unit], options: DataSelectionOptions[T]): Unit = js.native
+  
   /**
     * Get all items from the DataSet.
     *
@@ -95,6 +97,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
   def get(id: IdType): T | Null = js.native
   def get(id: IdType, options: DataSelectionOptions[T]): T | Null = js.native
   def get(options: DataSelectionOptions[T]): js.Array[T] = js.native
+  
   /**
     * Get the DataSet itself.
     * In case of a DataView, this function does not return the DataSet
@@ -103,6 +106,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     * @returns The DataSet itself.
     */
   def getDataSet(): DataSet[T] = js.native
+  
   /**
     * Get ids of all items or of a filtered set of items.
     *
@@ -110,6 +114,12 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     */
   def getIds(): js.Array[IdType] = js.native
   def getIds(options: DataSelectionOptions[T]): js.Array[IdType] = js.native
+  
+  /**
+    * The number of items in the DataSet.
+    */
+  var length: Double = js.native
+  
   /**
     * Map every item in the DataSet.
     *
@@ -119,18 +129,21 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     */
   def map[M](callback: js.Function2[/* item */ T, /* id */ IdType, M]): js.Array[M] = js.native
   def map[M](callback: js.Function2[/* item */ T, /* id */ IdType, M], options: DataSelectionOptions[T]): js.Array[M] = js.native
+  
   /**
     * Find the item with maximum value of specified field.
     *
     * @returns Returns null if no item is found.
     */
   def max(field: String): T = js.native
+  
   /**
     * Find the item with minimum value of specified field.
     *
     * @returns Returns null if no item is found.
     */
   def min(field: String): T = js.native
+  
   /**
     * Unsubscribe to an event.
     *
@@ -142,6 +155,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     event: String,
     callback: js.Function3[/* event */ String, /* properties */ js.Any, /* senderId */ IdType, Unit]
   ): Unit = js.native
+  
   /**
     * Subscribe from an event.
     *
@@ -153,6 +167,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     event: String,
     callback: js.Function3[/* event */ String, /* properties */ js.Any, /* senderId */ IdType, Unit]
   ): Unit = js.native
+  
   def remove(id: js.Array[IdType]): js.Array[IdType] = js.native
   def remove(id: js.Array[IdType], senderId: IdType): js.Array[IdType] = js.native
   /**
@@ -164,11 +179,13 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     */
   def remove(id: IdType): js.Array[IdType] = js.native
   def remove(id: IdType, senderId: IdType): js.Array[IdType] = js.native
+  
   /**
     * Set options for the DataSet.
     */
   def setOptions(): Unit = js.native
   def setOptions(options: DataSetQueueOptions): Unit = js.native
+  
   /**
     * Update one or multiple existing items.
     * When an item doesn't exist, it will be created.
@@ -181,4 +198,3 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
   def update(data: js.Array[T]): js.Array[IdType] = js.native
   def update(data: js.Array[T], senderId: IdType): js.Array[IdType] = js.native
 }
-

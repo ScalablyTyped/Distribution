@@ -4,12 +4,14 @@ import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokensSlashedits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokensEditsRequest")
 @js.native
 object SemanticTokensEditsRequest extends js.Object {
+  
   val method: textDocumentSlashsemanticTokensSlashedits = js.native
+  
   val `type`: ProtocolRequestType[
     SemanticTokensEditsParams, 
     SemanticTokens | SemanticTokensEdits | Null, 
@@ -18,4 +20,3 @@ object SemanticTokensEditsRequest extends js.Object {
     SemanticTokensRegistrationOptions
   ] = js.native
 }
-

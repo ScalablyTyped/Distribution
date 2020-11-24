@@ -2,13 +2,14 @@ package typings.jqueryAjaxfile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the JQuery promise, part of callbacks
   */
 @js.native
 trait JQueryPromise[T] extends JQueryGenericPromise[T] {
+  
   def always(
     alwaysCallback1: js.UndefOr[scala.Nothing],
     alwaysCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
@@ -27,6 +28,7 @@ trait JQueryPromise[T] extends JQueryGenericPromise[T] {
     alwaysCallback1: JQueryPromiseCallback[_],
     alwaysCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
   ): JQueryPromise[T] = js.native
+  
   def done(
     doneCallback1: js.UndefOr[scala.Nothing],
     doneCallbackN: (JQueryPromiseCallback[T] | js.Array[JQueryPromiseCallback[T]])*
@@ -45,6 +47,7 @@ trait JQueryPromise[T] extends JQueryGenericPromise[T] {
     doneCallback1: JQueryPromiseCallback[T],
     doneCallbackN: (JQueryPromiseCallback[T] | js.Array[JQueryPromiseCallback[T]])*
   ): JQueryPromise[T] = js.native
+  
   def fail(
     failCallback1: js.UndefOr[scala.Nothing],
     failCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
@@ -63,6 +66,7 @@ trait JQueryPromise[T] extends JQueryGenericPromise[T] {
     failCallback1: JQueryPromiseCallback[_],
     failCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
   ): JQueryPromise[T] = js.native
+  
   // Deprecated - given no typings
   def pipe(): JQueryPromise[_] = js.native
   def pipe(
@@ -88,6 +92,7 @@ trait JQueryPromise[T] extends JQueryGenericPromise[T] {
     failFilter: js.Function1[/* x */ js.Any, _],
     progressFilter: js.Function1[/* x */ js.Any, _]
   ): JQueryPromise[_] = js.native
+  
   def progress(
     progressCallback1: js.UndefOr[scala.Nothing],
     progressCallbackN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
@@ -105,9 +110,9 @@ trait JQueryPromise[T] extends JQueryGenericPromise[T] {
     progressCallback1: JQueryPromiseCallback[_],
     progressCallbackN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
   ): JQueryPromise[T] = js.native
+  
   /**
     * Determine the current state of a Deferred object.
     */
   def state(): String = js.native
 }
-

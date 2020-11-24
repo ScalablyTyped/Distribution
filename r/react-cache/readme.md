@@ -11,8 +11,8 @@ A basic cache for React applications
 | Full name          | react-cache |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 120630 |
+| # dependents       | 6 |
+| # downloads        | 136085 |
 | # stars            | 0 |
 
 ## Links

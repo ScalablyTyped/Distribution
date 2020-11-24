@@ -5,9 +5,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.Mocha.reporters.Markdown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Mocha.reporters.markdown")
 @js.native
 object markdown extends TopLevel[Instantiable0[Markdown]]
-

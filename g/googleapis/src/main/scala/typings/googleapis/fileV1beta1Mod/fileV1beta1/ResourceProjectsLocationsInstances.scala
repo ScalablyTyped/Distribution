@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/file/v1beta1", "file_v1beta1.Resource$Projects$Locations$Instances")
 @js.native
 class ResourceProjectsLocationsInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * file.projects.locations.instances.create
     * @desc Creates an instance.
@@ -46,6 +48,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * file.projects.locations.instances.delete
     * @desc Deletes an instance.
@@ -77,6 +80,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * file.projects.locations.instances.get
     * @desc Gets the details of a specific instance.
@@ -108,6 +112,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
+  
   /**
     * file.projects.locations.instances.list
     * @desc Lists all instances in a project for either a specified location or
@@ -144,6 +149,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListInstancesResponse]
   ): Unit = js.native
+  
   /**
     * file.projects.locations.instances.patch
     * @desc Updates the settings of a specific instance.
@@ -178,4 +184,3 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

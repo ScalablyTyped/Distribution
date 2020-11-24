@@ -10,9 +10,9 @@ Minify URLs by converting them from absolute to relative.
 | ------------------ | :-------------: |
 | Full name          | relateurl |
 | Keywords           | uri, url, minifier, minify, lint, relative, absolute |
-| # releases         | 1 |
-| # dependents       | 29 |
-| # downloads        | 187316735 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 246225131 |
 | # stars            | 2 |
 
 ## Links

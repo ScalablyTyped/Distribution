@@ -2,15 +2,20 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VariableDeclarationSyntax extends SyntaxNode {
-  var varKeyword: ISyntaxToken = js.native
-  var variableDeclarators: ISeparatedSyntaxList = js.native
+  
   def update(varKeyword: ISyntaxToken, variableDeclarators: ISeparatedSyntaxList): VariableDeclarationSyntax = js.native
+  
+  var varKeyword: ISyntaxToken = js.native
+  
+  var variableDeclarators: ISeparatedSyntaxList = js.native
+  
   def withVarKeyword(varKeyword: ISyntaxToken): VariableDeclarationSyntax = js.native
+  
   def withVariableDeclarator(variableDeclarator: VariableDeclaratorSyntax): VariableDeclarationSyntax = js.native
+  
   def withVariableDeclarators(variableDeclarators: ISeparatedSyntaxList): VariableDeclarationSyntax = js.native
 }
-

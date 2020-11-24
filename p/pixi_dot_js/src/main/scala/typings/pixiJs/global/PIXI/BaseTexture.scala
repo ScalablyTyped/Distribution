@@ -10,7 +10,7 @@ import typings.std.SVGElement
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Texture stores the information that represents an image.
@@ -54,11 +54,11 @@ class BaseTexture ()
   def this(resource: HTMLImageElement, options: AlphaMode) = this()
   def this(resource: HTMLVideoElement, options: AlphaMode) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.BaseTexture")
 @js.native
 object BaseTexture extends js.Object {
+  
   /**
     * Global number of the texture batch, used by multi-texture renderers
     *
@@ -66,6 +66,7 @@ object BaseTexture extends js.Object {
     * @member {number}
     */
   var _globalBatch: Double = js.native
+  
   /**
     * Adds a BaseTexture to the global BaseTextureCache. This cache is shared across the whole PIXI object.
     *
@@ -74,6 +75,7 @@ object BaseTexture extends js.Object {
     * @param {string} id - The id that the BaseTexture will be stored against.
     */
   def addToCache(baseTexture: typings.pixiJs.PIXI.BaseTexture, id: String): Unit = js.native
+  
   /**
     * Helper function that creates a base texture based on the source you provide.
     * The source can be - image url, image element, canvas element. If the
@@ -107,6 +109,7 @@ object BaseTexture extends js.Object {
   def from(source: SVGElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: SVGElement, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: SVGElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
+  
   /**
     * Create a new BaseTexture with a BufferResource from a Float32Array.
     * RGBA values are floats from 0 to 1.
@@ -122,6 +125,7 @@ object BaseTexture extends js.Object {
   def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def fromBuffer(buffer: Uint8Array, width: Double, height: Double): typings.pixiJs.PIXI.BaseTexture = js.native
   def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
+  
   /**
     * Remove a BaseTexture from the global BaseTextureCache.
     *
@@ -132,4 +136,3 @@ object BaseTexture extends js.Object {
   def removeFromCache(baseTexture: String): typings.pixiJs.PIXI.BaseTexture | Null = js.native
   def removeFromCache(baseTexture: typings.pixiJs.PIXI.BaseTexture): typings.pixiJs.PIXI.BaseTexture | Null = js.native
 }
-

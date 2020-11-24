@@ -5,7 +5,7 @@ import typings.heremaps.H.geo.MultiLineString
 import typings.heremaps.H.map.Polyline.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a polyline in geo-space. It is defined by a path containing the vertices of a polyline (lat, lng, alt values) and a pen to use when tracing the path on the map.
@@ -24,4 +24,3 @@ class Polyline protected ()
   def this(geometry: LineString, opt_options: Options) = this()
   def this(geometry: MultiLineString, opt_options: Options) = this()
 }
-

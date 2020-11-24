@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha", "healthcare_v1alpha.Resource$Projects$Locations$Datasets$Hl7v2stores$Messages")
 @js.native
 class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.messages.create
     * @desc Creates a message and sends a notification to the Cloud Pub/Sub
@@ -50,6 +52,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.messages.delete
     * @desc Deletes an HL7v2 message.
@@ -81,6 +84,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.messages.get
     * @desc Gets an HL7v2 message.
@@ -113,6 +117,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.messages.ingest
     * @desc Ingests a new HL7v2 message from the hospital and sends a
@@ -149,6 +154,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIngestMessageResponse]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.messages.list
     * @desc Lists all the messages in the given HL7v2 store with support for
@@ -185,6 +191,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListMessagesResponse]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.messages.patch
     * @desc Update the message.
@@ -219,4 +226,3 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
 }
-

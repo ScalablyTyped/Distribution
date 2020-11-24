@@ -2,7 +2,7 @@ package typings.solidityParserAntlr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.solidityParserAntlr.mod.IndexAccess
@@ -14,14 +14,15 @@ import scala.scalajs.js.annotation._
   - typings.solidityParserAntlr.mod.PrimaryExpression
 */
 trait Expression extends ASTNode
-
 object Expression {
+  
   @scala.inline
   def NumberLiteral(number: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): Expression = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TupleExpression(
     components: js.Array[Expression],
@@ -32,6 +33,7 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def FunctionCall(
     arguments: js.Array[Expression],
@@ -43,6 +45,7 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def MemberAccess(
     expression: Expression,
@@ -53,6 +56,7 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def Conditional(
     falseExpression: ASTNode,
@@ -63,6 +67,7 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def IndexAccess(
     base: Expression,
@@ -73,6 +78,7 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ElementaryTypeNameExpression(
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression,
@@ -82,18 +88,21 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def BooleanLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral, value: Boolean): Expression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def Identifier(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier): Expression = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def BinaryOperation(
     left: Expression,
@@ -106,4 +115,3 @@ object Expression {
     __obj.asInstanceOf[Expression]
   }
 }
-

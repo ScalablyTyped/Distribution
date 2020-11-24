@@ -1,0 +1,11 @@
+package typings.playable
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("playable", JSImport.Namespace)
+@js.native
+object playableRequire extends js.Object

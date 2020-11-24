@@ -2,7 +2,7 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ### System parameter configuration  A system parameter is a special kind of
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaSystemParameters extends js.Object {
+  
   /**
     * Define system parameters.  The parameters defined here will override the
     * default parameters implemented by the system. If this field is missing
@@ -29,31 +30,36 @@ trait SchemaSystemParameters extends js.Object {
     */
   var rules: js.UndefOr[js.Array[SchemaSystemParameterRule]] = js.native
 }
-
 object SchemaSystemParameters {
+  
   @scala.inline
   def apply(): SchemaSystemParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSystemParameters]
   }
+  
   @scala.inline
   implicit class SchemaSystemParametersOps[Self <: SchemaSystemParameters] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setRulesVarargs(value: SchemaSystemParameterRule*): Self = this.set("rules", js.Array(value :_*))
+    
     @scala.inline
     def setRules(value: js.Array[SchemaSystemParameterRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRules: Self = this.set("rules", js.undefined)
   }
-  
 }
-

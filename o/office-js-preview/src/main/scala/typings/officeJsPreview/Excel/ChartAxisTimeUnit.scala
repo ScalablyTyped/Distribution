@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartAxisTimeUnit extends js.Object
-
 /**
   *
   * Specifies the unit of time for chart axes and data series.
@@ -16,6 +15,7 @@ sealed trait ChartAxisTimeUnit extends js.Object
 @JSGlobal("Excel.ChartAxisTimeUnit")
 @js.native
 object ChartAxisTimeUnit extends js.Object {
+  
   @js.native
   sealed trait days extends ChartAxisTimeUnit
   
@@ -24,6 +24,4 @@ object ChartAxisTimeUnit extends js.Object {
   
   @js.native
   sealed trait years extends ChartAxisTimeUnit
-  
 }
-

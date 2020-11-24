@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is an abstract service for specialized FormControlModels which are data aware and thus can be bound to a data source.
@@ -19,6 +19,7 @@ trait DataAwareControlModel
      with XBoundComponent
      with XLoadListener
      with XReset {
+  
   /**
     * references to the cursor field to which the control is bound.
     *
@@ -27,6 +28,7 @@ trait DataAwareControlModel
     * @see DataAwareControlModel.DataField
     */
   var BoundField: XPropertySet = js.native
+  
   /**
     * specifies the name of the bound database field.
     *
@@ -39,6 +41,7 @@ trait DataAwareControlModel
     * @see DataAwareControlModel.BoundField
     */
   var DataField: String = js.native
+  
   /**
     * determines whether or not input into this field is required, when it is actually bound to a database field.
     *
@@ -48,6 +51,7 @@ trait DataAwareControlModel
     * @since OOo 3.1
     */
   var InputRequired: Boolean = js.native
+  
   /**
     * references to a control model within the same document which should be used as a label.
     *
@@ -68,6 +72,7 @@ trait DataAwareControlModel
     * com.sun.star.form.component.GroupBox} ) only.
     */
   var LabelControl: XPropertySet = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -75,4 +80,3 @@ trait DataAwareControlModel
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

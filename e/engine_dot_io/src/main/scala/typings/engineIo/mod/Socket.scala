@@ -17,7 +17,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation of a client. Inherits from EventEmitter.
@@ -25,30 +25,17 @@ import scala.scalajs.js.annotation._
 @JSImport("engine.io", "Socket")
 @js.native
 class Socket () extends EventEmitter {
-  /**
-    * unique identifier
-    */
-  var id: String = js.native
-  /**
-    * readyState
-    */
-  var readyState: opening | open | closing | closed = js.native
-  /**
-    * request that originated the Socket
-    */
-  var request: IncomingMessage = js.native
-  /**
-    * engine parent reference
-    */
-  var server: Server = js.native
-  /**
-    * whether the transport has been upgraded
-    */
-  var upgraded: Boolean = js.native
+  
   /**
     * Disconnects the client
     */
   def close(): this.type = js.native
+  
+  /**
+    * unique identifier
+    */
+  var id: String = js.native
+  
   /**
     * Fired when the client is disconnected.
     */
@@ -82,6 +69,17 @@ class Socket () extends EventEmitter {
   def on_packet(ev: packet, fn: js.Function1[/* packet */ Packet, Unit]): this.type = js.native
   @JSName("on")
   def on_packetCreate(ev: packetCreate, fn: js.Function1[/* packet */ Packet, Unit]): this.type = js.native
+  
+  /**
+    * readyState
+    */
+  var readyState: opening | open | closing | closed = js.native
+  
+  /**
+    * request that originated the Socket
+    */
+  var request: IncomingMessage = js.native
+  
   /**
     * Sends a message, performing message = toString(arguments[0]) unless sending binary data, which is sent as is.
     */
@@ -89,5 +87,14 @@ class Socket () extends EventEmitter {
   def send(message: Message, opts: js.UndefOr[scala.Nothing], fn: js.Function1[/* transport */ js.Any, Unit]): Unit = js.native
   def send(message: Message, opts: MessageOptions): Unit = js.native
   def send(message: Message, opts: MessageOptions, fn: js.Function1[/* transport */ js.Any, Unit]): Unit = js.native
+  
+  /**
+    * engine parent reference
+    */
+  var server: Server = js.native
+  
+  /**
+    * whether the transport has been upgraded
+    */
+  var upgraded: Boolean = js.native
 }
-

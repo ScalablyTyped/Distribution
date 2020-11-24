@@ -11,8 +11,8 @@ Awesome Media Queries in JavaScript
 | Full name          | enquire.js |
 | Keywords           | media query, media queries, matchMedia, enquire, enquire.js |
 | # releases         | 0 |
-| # dependents       | 336 |
-| # downloads        | 23769097 |
+| # dependents       | 397 |
+| # downloads        | 32232053 |
 | # stars            | 10 |
 
 ## Links

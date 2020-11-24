@@ -3,7 +3,7 @@ package typings.chromeApps.WebView.Events
 import typings.chromeApps.chromeAppsStrings.normal_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * String indicating the reason for the exit.
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.chromeApps.chromeAppsStrings.kill
 */
 trait ExitEventReason extends js.Object
-
 object ExitEventReason {
+  
   @scala.inline
   def abnormal: typings.chromeApps.chromeAppsStrings.abnormal = "abnormal".asInstanceOf[typings.chromeApps.chromeAppsStrings.abnormal]
+  
   @scala.inline
   def crash: typings.chromeApps.chromeAppsStrings.crash = "crash".asInstanceOf[typings.chromeApps.chromeAppsStrings.crash]
+  
   @scala.inline
   def kill: typings.chromeApps.chromeAppsStrings.kill = "kill".asInstanceOf[typings.chromeApps.chromeAppsStrings.kill]
+  
   @scala.inline
   def normal: normal_ = "normal".asInstanceOf[normal_]
 }
-

@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.pdfjsDist.anon.BaseUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CMapReaderFactory extends Instantiable1[/* params */ BaseUrl, CMapReader]
-

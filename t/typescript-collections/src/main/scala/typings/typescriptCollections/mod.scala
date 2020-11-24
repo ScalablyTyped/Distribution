@@ -7,11 +7,12 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class BSTree[T] () extends default[T, T]
   
@@ -388,39 +389,57 @@ object mod extends js.Object {
   
   @js.native
   object arrays extends js.Object {
+    
     def contains[T](array: js.Array[T], item: T): Boolean = js.native
     def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    
     def copy[T](array: js.Array[T]): js.Array[T] = js.native
+    
     def equals[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
     def equals[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    
     def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = js.native
+    
     def frequency[T](array: js.Array[T], item: T): Double = js.native
     def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+    
     def indexOf[T](array: js.Array[T], item: T): Double = js.native
     def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+    
     def lastIndexOf[T](array: js.Array[T], item: T): Double = js.native
     def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+    
     def remove[T](array: js.Array[T], item: T): Boolean = js.native
     def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    
     def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = js.native
+    
     def toString[T](array: js.Array[T]): String = js.native
   }
   
   @js.native
   object util extends js.Object {
+    
     def compareToEquals[T](compareFunction: ICompareFunction[T]): IEqualsFunction[T] = js.native
+    
     def defaultCompare[T](a: T, b: T): Double = js.native
+    
     def defaultEquals[T](a: T, b: T): Boolean = js.native
+    
     def defaultToString(item: js.Any): String = js.native
+    
     def has(obj: js.Any, prop: js.Any): js.Any = js.native
+    
     def isFunction(func: js.Any): Boolean = js.native
+    
     def isString(obj: js.Any): Boolean = js.native
+    
     def isUndefined(obj: js.Any): /* is undefined */ Boolean = js.native
+    
     def makeString[T](item: T): String = js.native
     def makeString[T](item: T, join: String): String = js.native
+    
     def reverseCompareFunction[T](): ICompareFunction[T] = js.native
     def reverseCompareFunction[T](compareFunction: ICompareFunction[T]): ICompareFunction[T] = js.native
   }
-  
 }
-

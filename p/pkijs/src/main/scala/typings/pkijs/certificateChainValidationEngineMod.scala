@@ -3,19 +3,27 @@ package typings.pkijs
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkijs/src/CertificateChainValidationEngine", JSImport.Namespace)
 @js.native
 object certificateChainValidationEngineMod extends js.Object {
+  
   @js.native
   trait CertificateChainValidationEngine extends js.Object {
+    
     var certs: js.Array[typings.pkijs.certificateMod.default] = js.native
+    
     var checkDate: Date = js.native
+    
     var crls: js.Array[typings.pkijs.certificateRevocationListMod.default] = js.native
+    
     var ocsp: typings.pkijs.ocspresponseMod.default = js.native
-    var trustedCerts: js.Array[typings.pkijs.certificateMod.default] = js.native
+    
     def sort(): js.Any = js.native
+    
+    var trustedCerts: js.Array[typings.pkijs.certificateMod.default] = js.native
+    
     /**
       * Major verification function for certificate chain.
       * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
@@ -34,6 +42,4 @@ object certificateChainValidationEngineMod extends js.Object {
   class default () extends CertificateChainValidationEngine {
     def this(parameters: js.Any) = this()
   }
-  
 }
-

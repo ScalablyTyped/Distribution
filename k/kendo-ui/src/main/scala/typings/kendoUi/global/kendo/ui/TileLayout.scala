@@ -4,7 +4,7 @@ import typings.kendoUi.kendo.ui.TileLayoutOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.TileLayout")
 @js.native
@@ -13,12 +13,12 @@ class TileLayout protected ()
   def this(element: Element) = this()
   def this(element: Element, options: TileLayoutOptions) = this()
 }
-
 /* static members */
 @JSGlobal("kendo.ui.TileLayout")
 @js.native
 object TileLayout extends js.Object {
-  var fn: typings.kendoUi.kendo.ui.TileLayout = js.native
+  
   def extend(proto: js.Object): typings.kendoUi.kendo.ui.TileLayout = js.native
+  
+  var fn: typings.kendoUi.kendo.ui.TileLayout = js.native
 }
-

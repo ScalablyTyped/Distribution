@@ -6,10 +6,11 @@ import typings.googleCloudCommon.utilMod.GoogleErrorBody
 import typings.googleCloudCommon.utilMod.GoogleInnerError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofApiError extends Instantiable1[/* errorMessage */ String, ApiError] {
+  
   /**
     * Pieces together an error message by combining all unique error messages
     * returned from a single GoogleError
@@ -23,4 +24,3 @@ trait TypeofApiError extends Instantiable1[/* errorMessage */ String, ApiError] 
   def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
   def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
 }
-

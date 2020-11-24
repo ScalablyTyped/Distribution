@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha", "healthcare_v1alpha.Resource$Projects$Locations$Datasets$Dicomstores$Dicomweb")
 @js.native
 class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.dicomWebDelete
     * @desc Handles DELETE requests equivalent to the GET requests specified in
@@ -55,6 +57,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.dicomWebGet
     * @desc Handles the GET requests specified in the STOW-RS, WADO-RS, or
@@ -97,6 +100,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.dicomWebPost
     * @desc Handles the POST requests specified in the STOW-RS, WADO-RS, or
@@ -141,4 +145,3 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

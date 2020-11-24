@@ -3,7 +3,7 @@ package typings.reactNative.mod
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated - subclass NativeEventEmitter to create granular event modules instead of
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 trait DeviceEventEmitterStatic
   extends EventEmitter
      with Instantiable0[DeviceEventEmitterStatic] {
+  
   var sharedSubscriber: EventSubscriptionVendor = js.native
 }
-

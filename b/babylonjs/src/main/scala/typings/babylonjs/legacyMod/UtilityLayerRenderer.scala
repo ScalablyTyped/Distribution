@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "UtilityLayerRenderer")
 @js.native
@@ -21,20 +21,22 @@ class UtilityLayerRenderer protected ()
     handleEvents: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "UtilityLayerRenderer")
 @js.native
 object UtilityLayerRenderer extends js.Object {
-  var _DefaultKeepDepthUtilityLayer: js.Any = js.native
-  var _DefaultUtilityLayer: js.Any = js.native
+  
   /**
     * A shared utility layer that can be used to embed objects into a scene (Depth map of the previous scene is not cleared before drawing on top of it)
     */
   def DefaultKeepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer = js.native
+  
   /**
     * A shared utility layer that can be used to overlay objects into a scene (Depth map of the previous scene is cleared before drawing on top of it)
     */
   def DefaultUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer = js.native
+  
+  var _DefaultKeepDepthUtilityLayer: js.Any = js.native
+  
+  var _DefaultUtilityLayer: js.Any = js.native
 }
-

@@ -11,7 +11,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`object`
@@ -25,25 +25,32 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.bigint
 */
 trait PropertyPreviewType extends js.Object
-
 object PropertyPreviewType {
+  
   @scala.inline
   def Accessor: accessor = "accessor".asInstanceOf[accessor]
+  
   @scala.inline
   def Bigint: bigint = "bigint".asInstanceOf[bigint]
+  
   @scala.inline
   def Boolean: boolean = "boolean".asInstanceOf[boolean]
+  
   @scala.inline
   def Function: function = "function".asInstanceOf[function]
+  
   @scala.inline
   def Number: number = "number".asInstanceOf[number]
+  
   @scala.inline
   def Object: `object` = "object".asInstanceOf[`object`]
+  
   @scala.inline
   def String: string = "string".asInstanceOf[string]
+  
   @scala.inline
   def Symbol: symbol = "symbol".asInstanceOf[symbol]
+  
   @scala.inline
   def Undefined: undefined = "undefined".asInstanceOf[undefined]
 }
-

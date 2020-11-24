@@ -2,12 +2,12 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeviceActivatedEventArgs extends IDeviceActivatedEventArgs
-
 object DeviceActivatedEventArgs {
+  
   @scala.inline
   def apply(
     deviceInformationId: String,
@@ -20,4 +20,3 @@ object DeviceActivatedEventArgs {
     __obj.asInstanceOf[DeviceActivatedEventArgs]
   }
 }
-

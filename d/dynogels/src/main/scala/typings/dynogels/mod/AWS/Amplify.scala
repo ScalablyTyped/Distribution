@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.amplifyMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Amplify")
 @js.native
@@ -14,4 +14,3 @@ class Amplify ()
   extends typings.awsSdk.mod.Amplify {
   def this(options: ClientConfiguration) = this()
 }
-

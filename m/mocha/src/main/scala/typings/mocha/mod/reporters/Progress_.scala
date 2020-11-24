@@ -5,7 +5,7 @@ import typings.mocha.Mocha.reporters.Base
 import typings.mocha.Mocha.reporters.Progress.MochaOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `Progress` bar test reporter.
@@ -18,4 +18,3 @@ class Progress_ protected () extends Base {
   def this(runner: Runner) = this()
   def this(runner: Runner, options: MochaOptions) = this()
 }
-

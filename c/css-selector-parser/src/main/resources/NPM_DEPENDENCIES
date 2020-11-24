@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "css-selector-parser" : "1.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "css-selector-parser" : "1.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

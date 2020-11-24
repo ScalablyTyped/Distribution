@@ -10,9 +10,9 @@ simple logger module for nodejs
 | ------------------ | :-------------: |
 | Full name          | logat |
 | Keywords           | log, file, console, lineNumber, fileName, error, config, color |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3723 |
+| # downloads        | 5577 |
 | # stars            | 0 |
 
 ## Links

@@ -6,23 +6,21 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for getting and setting the mask of a Game Object.
   */
 @js.native
 trait Mask extends js.Object {
-  /**
-    * The Mask this Game Object is using during render.
-    */
-  var mask: BitmapMask | GeometryMask = js.native
+  
   /**
     * Clears the mask that this Game Object was using.
     * @param destroyMask Destroy the mask before clearing it? Default false.
     */
   def clearMask(): this.type = js.native
   def clearMask(destroyMask: Boolean): this.type = js.native
+  
   /**
     * Creates and returns a Bitmap Mask. This mask can be used by any Game Object,
     * including this one.
@@ -38,6 +36,7 @@ trait Mask extends js.Object {
     */
   def createBitmapMask(): BitmapMask = js.native
   def createBitmapMask(renderable: GameObject): BitmapMask = js.native
+  
   /**
     * Creates and returns a Geometry Mask. This mask can be used by any Game Object,
     * including this one.
@@ -52,6 +51,12 @@ trait Mask extends js.Object {
     */
   def createGeometryMask(): GeometryMask = js.native
   def createGeometryMask(graphics: Graphics): GeometryMask = js.native
+  
+  /**
+    * The Mask this Game Object is using during render.
+    */
+  var mask: BitmapMask | GeometryMask = js.native
+  
   /**
     * Sets the mask that this Game Object will use to render with.
     * 
@@ -70,4 +75,3 @@ trait Mask extends js.Object {
   def setMask(mask: BitmapMask): this.type = js.native
   def setMask(mask: GeometryMask): this.type = js.native
 }
-

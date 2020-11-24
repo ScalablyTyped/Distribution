@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.require")
 @js.native
 object require extends js.Object {
+  
   /**
     * Resolves one or more module dependencies.<b>Synchronous Retrieval of a Single Module Value</b>When
     * called with a single string, that string is assumed to be the name of an already loadedmodule and
@@ -38,4 +39,3 @@ object require extends js.Object {
   def apply(vDependencies: js.Array[String]): js.Any = js.native
   def apply(vDependencies: js.Array[String], fnCallback: js.Any): js.Any = js.native
 }
-

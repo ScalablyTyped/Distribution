@@ -1,9 +1,11 @@
 package typings.babylonjs.mod
 
+import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
+import typings.babylonjs.typesMod.Nullable
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "FilesInput")
 @js.native
@@ -23,29 +25,32 @@ class FilesInput protected ()
     */
   def this(
     engine: typings.babylonjs.engineMod.Engine,
-    scene: typings.babylonjs.sceneMod.Scene,
-    sceneLoadedCallback: js.Function2[/* sceneFile */ File, /* scene */ typings.babylonjs.sceneMod.Scene, Unit],
-    progressCallback: js.Function1[/* progress */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit],
-    additionalRenderLoopLogicCallback: js.Function0[Unit],
-    textureLoadingCallback: js.Function1[/* remaining */ Double, Unit],
-    startingProcessingFilesCallback: js.Function1[/* files */ js.UndefOr[js.Array[File]], Unit],
-    onReloadCallback: js.Function1[/* sceneFile */ File, Unit],
-    errorCallback: js.Function3[
-        /* sceneFile */ File, 
-        /* scene */ typings.babylonjs.sceneMod.Scene, 
-        /* message */ String, 
-        Unit
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    sceneLoadedCallback: Nullable[
+        js.Function2[/* sceneFile */ File, /* scene */ typings.babylonjs.sceneMod.Scene, Unit]
+      ],
+    progressCallback: Nullable[js.Function1[/* progress */ ISceneLoaderProgressEvent, Unit]],
+    additionalRenderLoopLogicCallback: Nullable[js.Function0[Unit]],
+    textureLoadingCallback: Nullable[js.Function1[/* remaining */ Double, Unit]],
+    startingProcessingFilesCallback: Nullable[js.Function1[/* files */ js.UndefOr[js.Array[File]], Unit]],
+    onReloadCallback: Nullable[js.Function1[/* sceneFile */ File, Unit]],
+    errorCallback: Nullable[
+        js.Function3[
+          /* sceneFile */ File, 
+          /* scene */ Nullable[typings.babylonjs.sceneMod.Scene], 
+          /* message */ String, 
+          Unit
+        ]
       ]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "FilesInput")
 @js.native
 object FilesInput extends js.Object {
+  
   /**
     * List of files ready to be loaded
     */
   def FilesToLoad: org.scalablytyped.runtime.StringDictionary[File] = js.native
 }
-

@@ -11,8 +11,8 @@ Transform into a string of capitalized words without separators
 | Full name          | pascal-case |
 | Keywords           | pascal, case, camel, capital, convert, transform, identifier, class |
 | # releases         | 5 |
-| # dependents       | 211 |
-| # downloads        | 45575476 |
+| # dependents       | 280 |
+| # downloads        | 132682590 |
 | # stars            | 3 |
 
 ## Links

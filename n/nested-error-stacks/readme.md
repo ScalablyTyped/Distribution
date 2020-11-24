@@ -10,9 +10,9 @@ An Error subclass that will chain nested Errors and dump nested stacktraces
 | ------------------ | :-------------: |
 | Full name          | nested-error-stacks |
 | Keywords           | error, nested, stack |
-| # releases         | 3 |
-| # dependents       | 54 |
-| # downloads        | 34160209 |
+| # releases         | 2 |
+| # dependents       | 58 |
+| # downloads        | 49655734 |
 | # stars            | 3 |
 
 ## Links

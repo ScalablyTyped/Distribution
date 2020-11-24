@@ -4,7 +4,7 @@ import typings.enhancedResolve.commonTypesMod.ResolverRequest
 import typings.enhancedResolve.concordMod.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("enhanced-resolve/lib/UnsafeCachePlugin", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ class ^ protected () extends UnsafeCachePlugin {
     target: String
   ) = this()
 }
-

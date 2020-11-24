@@ -3,7 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.olx.source.ZoomifyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 class Zoomify () extends TileImage {
   def this(opt_options: ZoomifyOptions) = this()
 }
-

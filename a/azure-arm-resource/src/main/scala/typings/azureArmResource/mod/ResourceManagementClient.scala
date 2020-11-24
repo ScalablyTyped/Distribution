@@ -5,11 +5,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource", "ResourceManagementClient")
 @js.native
 object ResourceManagementClient extends js.Object {
+  
   @js.native
   class ResourceManagementClient protected ()
     extends typings.azureArmResource.resourceManagementClientMod.ResourceManagementClient {
@@ -57,6 +58,20 @@ object ResourceManagementClient extends js.Object {
   }
   
   @js.native
+  object ResourceManagementModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.resourceManagementClientMod.ResourceManagementModels.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
+  }
+  
+  @js.native
   class default protected ()
     extends typings.azureArmResource.resourceManagementClientMod.default {
     /**
@@ -101,20 +116,4 @@ object ResourceManagementClient extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object ResourceManagementModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.resourceManagementClientMod.ResourceManagementModels.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

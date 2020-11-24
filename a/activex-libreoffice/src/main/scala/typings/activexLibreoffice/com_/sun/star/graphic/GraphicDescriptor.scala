@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service describes all graphic properties that are available via the {@link com.sun.star.beans.XPropertySet} interface
@@ -16,29 +16,34 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GraphicDescriptor extends XPropertySet {
+  
   /**
     * Indicates that it is a pixel graphic with an alpha channel
     *
     * The status of this flag is not always clear if the graphic was not loaded at all, e.g. in case of just querying for the {@link GraphicDescriptor}
     */
   var Alpha: Boolean = js.native
+  
   /**
     * Indicates that it is a graphic that consists of several frames that can be played as an animation
     *
     * The status of this flag is not always clear if the graphic was not loaded at all, e.g. in case of just querying for the {@link GraphicDescriptor}
     */
   var Animated: Boolean = js.native
+  
   /**
     * The number of bits per pixel used for the pixel graphic
     *
     * This property is not available for vector graphics and may not be available for some kinds of pixel graphics
     */
   var BitsPerPixel: Double = js.native
+  
   /**
     * The type of the graphic
     * @see GraphicType
     */
   var GraphicType: Double = js.native
+  
   /**
     * The MimeType of the loaded graphic
     *
@@ -50,6 +55,7 @@ trait GraphicDescriptor extends XPropertySet {
     * erimage/x-targaimage/x-photoshopimage/x-epsimage/x-dxfimage/x-metimage/x-pictimage/x-sgfimage/x-svmimage/x-wmfimage/x-sgvimage/x-emfimage/x-vclgraphic
     */
   var MimeType: String = js.native
+  
   /**
     * The Size of the graphic in 100th mm.
     *
@@ -57,6 +63,7 @@ trait GraphicDescriptor extends XPropertySet {
     * the whole graphic
     */
   var Size100thMM: Size = js.native
+  
   /**
     * The Size of the graphic in pixel.
     *
@@ -64,6 +71,7 @@ trait GraphicDescriptor extends XPropertySet {
     * the whole graphic
     */
   var SizePixel: Size = js.native
+  
   /**
     * Indicates that it is a transparent graphic
     *
@@ -72,8 +80,8 @@ trait GraphicDescriptor extends XPropertySet {
     */
   var Transparent: Boolean = js.native
 }
-
 object GraphicDescriptor {
+  
   @scala.inline
   def apply(
     Alpha: Boolean,
@@ -99,34 +107,44 @@ object GraphicDescriptor {
     val __obj = js.Dynamic.literal(Alpha = Alpha.asInstanceOf[js.Any], Animated = Animated.asInstanceOf[js.Any], BitsPerPixel = BitsPerPixel.asInstanceOf[js.Any], GraphicType = GraphicType.asInstanceOf[js.Any], MimeType = MimeType.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Size100thMM = Size100thMM.asInstanceOf[js.Any], SizePixel = SizePixel.asInstanceOf[js.Any], Transparent = Transparent.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[GraphicDescriptor]
   }
+  
   @scala.inline
   implicit class GraphicDescriptorOps[Self <: GraphicDescriptor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlpha(value: Boolean): Self = this.set("Alpha", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnimated(value: Boolean): Self = this.set("Animated", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBitsPerPixel(value: Double): Self = this.set("BitsPerPixel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGraphicType(value: Double): Self = this.set("GraphicType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMimeType(value: String): Self = this.set("MimeType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSize100thMM(value: Size): Self = this.set("Size100thMM", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSizePixel(value: Size): Self = this.set("SizePixel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTransparent(value: Boolean): Self = this.set("Transparent", value.asInstanceOf[js.Any])
   }
-  
 }
-

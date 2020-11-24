@@ -2,17 +2,17 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PlatformType extends js.Object
-
 /**
   * Specifies the OS or other platform on which the Office host application is running.
   */
 @JSGlobal("Office.PlatformType")
 @js.native
 object PlatformType extends js.Object {
+  
   /**
     * The platform is an Android device.
     */
@@ -48,6 +48,4 @@ object PlatformType extends js.Object {
     */
   @js.native
   sealed trait iOS extends PlatformType
-  
 }
-

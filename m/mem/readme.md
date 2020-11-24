@@ -1,7 +1,7 @@
 
 # Scala.js typings for mem
 
-Typings are for version 6.1.0
+Typings are for version 8.0.0
 
 ## Library description:
 Memoize functions - An optimization used to speed up consecutive function calls by caching the result of calls with identical input
@@ -10,9 +10,9 @@ Memoize functions - An optimization used to speed up consecutive function calls 
 | ------------------ | :-------------: |
 | Full name          | mem |
 | Keywords           | memoize, function, mem, memoization, cache, caching, optimize, performance, ttl, expire, promise |
-| # releases         | 11 |
-| # dependents       | 164 |
-| # downloads        | 526818927 |
+| # releases         | 16 |
+| # dependents       | 239 |
+| # downloads        | 543419120 |
 | # stars            | 9 |
 
 ## Links

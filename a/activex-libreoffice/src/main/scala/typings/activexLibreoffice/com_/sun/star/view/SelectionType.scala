@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a selection type for a view that supports a selection model. */
 /* Rewritten from type alias, can be one of: 
@@ -16,11 +16,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait SelectionType extends js.Object
-
 object SelectionType {
+  
   /** The selection can contain zero or more objects. */
   @scala.inline
   def MULTI: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * No selection is possible.
     *
@@ -28,6 +29,7 @@ object SelectionType {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * The selection can contain zero or more objects.
     *
@@ -35,8 +37,8 @@ object SelectionType {
     */
   @scala.inline
   def RANGE: `3` = 3.asInstanceOf[`3`]
+  
   /** The selection can only contain one or zero objects. */
   @scala.inline
   def SINGLE: `1` = 1.asInstanceOf[`1`]
 }
-

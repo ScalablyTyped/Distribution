@@ -15,7 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides read and write access to a fragment of the hierarchy data. */
 @js.native
@@ -26,8 +26,8 @@ trait HierarchyDataReadWriteAccess
      with XComponent
      with XSingleServiceFactory
      with XChangesBatch
-
 object HierarchyDataReadWriteAccess {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -61,4 +61,3 @@ object HierarchyDataReadWriteAccess {
     __obj.asInstanceOf[HierarchyDataReadWriteAccess]
   }
 }
-

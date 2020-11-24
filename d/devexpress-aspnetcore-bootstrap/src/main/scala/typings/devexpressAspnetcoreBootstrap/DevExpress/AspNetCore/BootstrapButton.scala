@@ -6,18 +6,27 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.lostFocus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapButton extends Control {
+  
   def doClick(): Unit = js.native
+  
   def focus(): Unit = js.native
+  
   def getBadgeIconCssClass(): String = js.native
+  
   def getBadgeText(): String = js.native
+  
   def getChecked(): Boolean = js.native
+  
   def getEnabled(): Boolean = js.native
+  
   def getImageUrl(): String = js.native
+  
   def getText(): String = js.native
+  
   def off(
     eventName: js.UndefOr[scala.Nothing],
     callback: js.ThisFunction1[
@@ -54,6 +63,7 @@ trait BootstrapButton extends Control {
     eventName: lostFocus,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_checkedChanged(
     eventName: checkedChanged,
@@ -74,6 +84,7 @@ trait BootstrapButton extends Control {
     eventName: lostFocus,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_checkedChanged(
     eventName: checkedChanged,
@@ -94,11 +105,16 @@ trait BootstrapButton extends Control {
     eventName: lostFocus,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   def setBadgeIconCssClass(cssClass: String): Unit = js.native
+  
   def setBadgeText(text: String): Unit = js.native
+  
   def setChecked(value: Boolean): Unit = js.native
+  
   def setEnabled(value: Boolean): Unit = js.native
+  
   def setImageUrl(value: String): Unit = js.native
+  
   def setText(value: String): Unit = js.native
 }
-

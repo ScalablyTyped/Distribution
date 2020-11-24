@@ -5,11 +5,12 @@ import typings.libsodiumWrappers.mod.Uint8ArrayOutputFormat
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libsodium-wrappers-sumo", "crypto_pwhash_scryptsalsa208sha256_ll")
 @js.native
 object cryptoPwhashScryptsalsa208sha256Ll extends js.Object {
+  
   def apply(password: String, salt: String, opsLimit: Double, r: Double, p: Double, keyLength: Double): Uint8Array = js.native
   def apply(
     password: String,
@@ -87,4 +88,3 @@ object cryptoPwhashScryptsalsa208sha256Ll extends js.Object {
     outputFormat: Uint8ArrayOutputFormat
   ): Uint8Array = js.native
 }
-

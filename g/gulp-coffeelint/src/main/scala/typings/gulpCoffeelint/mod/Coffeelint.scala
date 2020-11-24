@@ -3,10 +3,11 @@ package typings.gulpCoffeelint.mod
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Coffeelint extends js.Object {
+  
   /**
     * @param optFile Absolute path of a json file containing options for coffeelint.
     * @param opt Options you wish to send to coffeelint. If optFile is given, this will be ignored.
@@ -49,8 +50,8 @@ trait Coffeelint extends js.Object {
   def apply(optFile: String, opt: js.Any, literate: js.UndefOr[scala.Nothing], rules: js.Array[js.Function]): ReadWriteStream = js.native
   def apply(optFile: String, opt: js.Any, literate: Boolean): ReadWriteStream = js.native
   def apply(optFile: String, opt: js.Any, literate: Boolean, rules: js.Array[js.Function]): ReadWriteStream = js.native
+  
   def reporter(): ReadWriteStream = js.native
   def reporter(reporter: String): ReadWriteStream = js.native
   def reporter(reporter: js.Function): ReadWriteStream = js.native
 }
-

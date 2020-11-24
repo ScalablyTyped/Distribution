@@ -2,10 +2,11 @@ package typings.miniprogramWxs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DateConstructor extends js.Object {
+  
   /**
     * Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the specified date.
     * @param year The full year designation is required for cross-century date accuracy. If year is between 0 and 99 is used, then year is assumed to be 1900 + year.
@@ -231,7 +232,9 @@ trait DateConstructor extends js.Object {
     seconds: Double,
     ms: Double
   ): Double = js.native
+  
   def now(): Double = js.native
+  
   // new(): Date;
   // new(value: number | string): Date;
   // new(year: number, month: number, date?: number, hours?: number, minutes?: number, seconds?: number, ms?: number): Date;
@@ -243,4 +246,3 @@ trait DateConstructor extends js.Object {
     */
   def parse(s: java.lang.String): Double = js.native
 }
-

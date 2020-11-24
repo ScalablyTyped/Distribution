@@ -9,11 +9,12 @@ import typings.phaser.Phaser.Types.GameObjects.Particles.RandomZoneSource
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "GameObjects.Particles")
 @js.native
 object Particles extends js.Object {
+  
   /**
     * A Particle Emitter property.
     * 
@@ -281,6 +282,7 @@ object Particles extends js.Object {
   
   @js.native
   object Zones extends js.Object {
+    
     /**
       * A Death Zone.
       * 
@@ -338,8 +340,5 @@ object Particles extends js.Object {
         */
       def this(source: RandomZoneSource) = this()
     }
-    
   }
-  
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "docker-file-parser" : "1.0.4"
+      "docker-file-parser" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "docker-file-parser" : "1.0.4"
+      "docker-file-parser" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-sdk-glacier
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 1.0.0-rc.7
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-glacier |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 30 |
 | # dependents       | 3 |
-| # downloads        | 737 |
+| # downloads        | 2152 |
 | # stars            | 0 |
 
 ## Links

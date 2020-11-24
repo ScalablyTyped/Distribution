@@ -2,7 +2,7 @@ package typings.googleSpreadsheet.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR
 */
 trait RecalculationInterval extends js.Object
-
 object RecalculationInterval {
+  
   @scala.inline
   def HOUR: typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR = "HOUR".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR]
+  
   @scala.inline
   def MINUTE: typings.googleSpreadsheet.googleSpreadsheetStrings.MINUTE = "MINUTE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.MINUTE]
+  
   @scala.inline
   def ON_CHANGE: typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE = "ON_CHANGE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE]
 }
-

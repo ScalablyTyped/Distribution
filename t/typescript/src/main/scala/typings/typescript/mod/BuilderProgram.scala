@@ -2,13 +2,14 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder to manage the program state changes
   */
 @js.native
 trait BuilderProgram extends js.Object {
+  
   /**
     * Emits the JavaScript and declaration files.
     * When targetSource file is specified, emits the files corresponding to that source file,
@@ -200,22 +201,27 @@ trait BuilderProgram extends js.Object {
     emitOnlyDtsFiles: Boolean,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
+  
   /**
     * Get all the dependencies of the file
     */
   def getAllDependencies(sourceFile: SourceFile): js.Array[java.lang.String] = js.native
+  
   /**
     * Get compiler options of the program
     */
   def getCompilerOptions(): CompilerOptions = js.native
+  
   /**
     * Get the diagnostics from config file parsing
     */
   def getConfigFileParsingDiagnostics(): js.Array[Diagnostic] = js.native
+  
   /**
     * Get the current directory of the program
     */
   def getCurrentDirectory(): java.lang.String = js.native
+  
   /**
     * Get the declaration diagnostics, for all source files if source file is not supplied
     */
@@ -223,20 +229,24 @@ trait BuilderProgram extends js.Object {
   def getDeclarationDiagnostics(sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   def getDeclarationDiagnostics(sourceFile: SourceFile): js.Array[DiagnosticWithLocation] = js.native
   def getDeclarationDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
+  
   /**
     * Get the diagnostics that dont belong to any file
     */
   def getGlobalDiagnostics(): js.Array[Diagnostic] = js.native
   def getGlobalDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+  
   /**
     * Get the diagnostics for compiler options
     */
   def getOptionsDiagnostics(): js.Array[Diagnostic] = js.native
   def getOptionsDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+  
   /**
     * Returns current program
     */
   def getProgram(): Program = js.native
+  
   /**
     * Gets the semantic diagnostics from the program corresponding to this state of file (if provided) or whole program
     * The semantic diagnostics are cached and managed here
@@ -249,14 +259,17 @@ trait BuilderProgram extends js.Object {
   def getSemanticDiagnostics(sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def getSemanticDiagnostics(sourceFile: SourceFile): js.Array[Diagnostic] = js.native
   def getSemanticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+  
   /**
     * Get the source file in the program with file name
     */
   def getSourceFile(fileName: java.lang.String): js.UndefOr[SourceFile] = js.native
+  
   /**
     * Get a list of files in the program
     */
   def getSourceFiles(): js.Array[SourceFile] = js.native
+  
   /**
     * Get the syntax diagnostics, for all source files if source file is not supplied
     */
@@ -265,4 +278,3 @@ trait BuilderProgram extends js.Object {
   def getSyntacticDiagnostics(sourceFile: SourceFile): js.Array[Diagnostic] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
 }
-

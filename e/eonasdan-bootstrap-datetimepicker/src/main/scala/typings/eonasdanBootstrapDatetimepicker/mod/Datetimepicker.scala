@@ -3,10 +3,11 @@ package typings.eonasdanBootstrapDatetimepicker.mod
 import typings.moment.mod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Datetimepicker extends js.Object {
+  
   /**
     * Returns the options.allowInputToggle option.
     */
@@ -15,6 +16,7 @@ trait Datetimepicker extends js.Object {
     * If true, the picker will show on textbox focus and icon click when used in a button group.
     */
   def allowInputToggle(allowInputToggle: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the current options.calendarWeeks option configuration.
     */
@@ -23,10 +25,12 @@ trait Datetimepicker extends js.Object {
     * Set if the week numbers will appear to the left on the days view.
     */
   def calendarWeeks(calendarWeeks: Boolean): Datetimepicker = js.native
+  
   /**
     * Clears the datepicker by setting the value to null.
     */
   def clear(): Datetimepicker = js.native
+  
   /**
     * Returns the options.collapse option configuration.
     */
@@ -35,6 +39,7 @@ trait Datetimepicker extends js.Object {
     * If set to false the picker will display similar to sideBySide except vertical.
     */
   def collapse(collapse: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the component's model current date, a moment object or null if not set.
     */
@@ -50,11 +55,13 @@ trait Datetimepicker extends js.Object {
     * - dp.change - in case newDate is different from current moment
     */
   def date(date: DateComparable): Datetimepicker = js.native
+  
   /**
     * Returns the options.datepickerInput option.
     */
   def datepickerInput(): String = js.native
   def datepickerInput(datepickerInput: String): Datetimepicker = js.native
+  
   /**
     * Returns the options.dayViewHeaderFormat option.
     */
@@ -63,6 +70,7 @@ trait Datetimepicker extends js.Object {
     * Used to customize the header of the day view.
     */
   def dayViewHeaderFormat(dayViewHeaderFormat: String): Datetimepicker = js.native
+  
   /**
     * Returns the options.daysOfWeekDisabled configuration
     * IMPORTANT! Throws exception if not set explicitly https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1459
@@ -76,10 +84,12 @@ trait Datetimepicker extends js.Object {
     * - dp.error - if the currently selected moment falls in the values passed on the daysOfWeek parameter.
     */
   def daysOfWeekDisabled(daysOfWeek: js.Array[DayOfWeek]): Datetimepicker = js.native
+  
   /**
     * For the moment this function will only prevent the picker from calling hide() on blur so that the picker can be inspected.
     */
   def debug(): Datetimepicker = js.native
+  
   /**
     * Returns a moment with the options.defaultDate option configuration or false if not set.
     */
@@ -93,16 +103,19 @@ trait Datetimepicker extends js.Object {
     * - TypeError - if the provided date cannot be parsed by momentjs
     */
   def defaultDate(dates: DateComparable): Datetimepicker = js.native
+  
   /**
     * Destroys the widget and removes all attached event listeners.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Disables the input element, the component is attached to, by adding a disabled="true" attribute to it. If the widget was visible before that call it is hidden.
     * Emits:
     * - dp.hide - if the widget was visible before that call
     */
   def disable(): Datetimepicker = js.native
+  
   /**
     * Returns the options.disabledDates option.
     * IMPORTANT! The getter returns an Object NOT an Array, with keys being the dates, values being true.
@@ -118,6 +131,7 @@ trait Datetimepicker extends js.Object {
     */
   def disabledDates(dates: js.Array[DateComparable]): Datetimepicker = js.native
   def disabledDates(dates: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.disabledHours option.
     * IMPORTANT! The getter returns an Object NOT an Array, with keys being the hours, values being true.
@@ -134,6 +148,7 @@ trait Datetimepicker extends js.Object {
     */
   def disabledHours(disabledHours: js.Array[Double]): Datetimepicker = js.native
   def disabledHours(disabledHours: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.disabledTimeIntervals option.
     */
@@ -146,10 +161,12 @@ trait Datetimepicker extends js.Object {
     */
   def disabledTimeIntervals(disabledTimeIntervals: js.Array[FromTo]): Datetimepicker = js.native
   def disabledTimeIntervals(disabledTimeIntervals: Boolean): Datetimepicker = js.native
+  
   /**
     * Enables the input element, the component is attached to, by removing disabled attribute from it.
     */
   def enable(): Datetimepicker = js.native
+  
   /**
     * Returns the options.enabledDates option.
     * IMPORTANT! The getter returns an Object NOT an Array, with keys being the dates, values being true.
@@ -165,6 +182,7 @@ trait Datetimepicker extends js.Object {
     */
   def enabledDates(dates: js.Array[DateComparable]): Datetimepicker = js.native
   def enabledDates(dates: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.enabledHours option.
     * IMPORTANT! The getter returns an Object NOT an Array, with keys being the hours, values being true.
@@ -181,6 +199,7 @@ trait Datetimepicker extends js.Object {
     */
   def enabledHours(enabledHours: js.Array[Double]): Datetimepicker = js.native
   def enabledHours(enabledHours: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns a boolean or array with the options.extraFormats option configuration.
     */
@@ -190,6 +209,7 @@ trait Datetimepicker extends js.Object {
     */
   def extraFormats(formats: js.Array[String]): Datetimepicker = js.native
   def extraFormats(formats: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.focusOnShow option.
     */
@@ -198,6 +218,7 @@ trait Datetimepicker extends js.Object {
     * If false, the textbox will not be given focus when the picker is shown.
     */
   def focusOnShow(focusOnShow: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the component's options.format.
     */
@@ -210,12 +231,14 @@ trait Datetimepicker extends js.Object {
     */
   def format(format: String): Datetimepicker = js.native
   def format(format: Boolean): Datetimepicker = js.native
+  
   /**
     * Hides the widget.
     * Emits:
     * - dp.hide - if the widget was visible before that call
     */
   def hide(): Datetimepicker = js.native
+  
   /**
     * Returns options.icons.
     */
@@ -226,6 +249,7 @@ trait Datetimepicker extends js.Object {
     * - TypeError - if icons parameter is not an Object
     */
   def icons(icons: Icons): Datetimepicker = js.native
+  
   /**
     * Returns the options.ignoreReadonly option.
     */
@@ -234,6 +258,7 @@ trait Datetimepicker extends js.Object {
     * Set this to true to allow the picker to be used even if the input field is readonly. This will not bypass the disabled property.
     */
   def ignoreReadonly(ignoreReadonly: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.inline option.
     */
@@ -242,6 +267,7 @@ trait Datetimepicker extends js.Object {
     * Used to customize the header of the day view.
     */
   def `inline`(`inline`: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.keepInvalid option.
     */
@@ -250,6 +276,7 @@ trait Datetimepicker extends js.Object {
     * If true, invalid dates will not be reverted to a previous selection or changed.
     */
   def keepInvalid(keepInvalid: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the currently set options.keyBinds option.
     */
@@ -258,6 +285,7 @@ trait Datetimepicker extends js.Object {
     * Allows for several keyBinding functions to be specified for ease of access or accessibility.
     */
   def keyBinds(keyBinds: KeyBinds): Datetimepicker = js.native
+  
   /**
     * Returns the currently set locale of the options.locale.
     */
@@ -268,6 +296,7 @@ trait Datetimepicker extends js.Object {
     * - TypeError - if the locale is not loaded via a separate script or moment-with-locales
     */
   def locale(newLocale: String): Datetimepicker = js.native
+  
   /**
     * Returns the currently set moment of the options.maxDate or false if not set.
     */
@@ -286,6 +315,7 @@ trait Datetimepicker extends js.Object {
     * - dp.error - if the new maxDate is after currently selected moment
     */
   def maxDate(maxDate: DateComparable): Datetimepicker = js.native
+  
   /**
     * Returns the currently set moment of the options.minDate or false if not set.
     */
@@ -304,6 +334,7 @@ trait Datetimepicker extends js.Object {
     * - dp.error - if the new minDate is after currently selected moment
     */
   def minDate(minDate: DateComparable): Datetimepicker = js.native
+  
   /**
     * Returns the components current options object.
     * Note that the changing the values of the returned object does not change the components actual configuration.
@@ -313,6 +344,7 @@ trait Datetimepicker extends js.Object {
     * Takes an object variable with option key:value properties and configures the component. Use this to update multiple options on the component.
     */
   def options(options: SetOptions): Datetimepicker = js.native
+  
   /**
     * Returns the options.parseInputDate option.
     */
@@ -323,6 +355,7 @@ trait Datetimepicker extends js.Object {
     * The user can enter "yesterday"" or "30 days ago".
     */
   def parseInputDate(parseInputDate: ParseInputDateFunction): Datetimepicker = js.native
+  
   /**
     * Shows the widget.
     * Emits:
@@ -330,6 +363,7 @@ trait Datetimepicker extends js.Object {
     * - dp.change - if the widget is opened for the first time and the useCurrent is set to true or to a granularity value and the input element the component is attached to has an empty value
     */
   def show(): Datetimepicker = js.native
+  
   /**
     * Returns the options.showClear option.
     */
@@ -338,6 +372,7 @@ trait Datetimepicker extends js.Object {
     * Set if the clear date button will appear on the widget.
     */
   def showClear(showClear: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.showClose option.
     */
@@ -346,6 +381,7 @@ trait Datetimepicker extends js.Object {
     * If true, an icon will be displayed on the toolbar that will hide the picker.
     */
   def showClose(showClose: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.showTodayButton option.
     */
@@ -354,6 +390,7 @@ trait Datetimepicker extends js.Object {
     * Set if the Today button will appear on the widget.
     */
   def showTodayButton(showTodayButton: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns a boolean of the options.sideBySide.
     */
@@ -362,6 +399,7 @@ trait Datetimepicker extends js.Object {
     * If sideBySide is true and the time picker is used, both components will display side by side instead of collapsing.
     */
   def sideBySide(sideBySide: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns a number with the options.stepping option configuration.
     */
@@ -370,6 +408,7 @@ trait Datetimepicker extends js.Object {
     * This will be the amount the up/down arrows move the minute value with a time picker.
     */
   def stepping(step: Double): Datetimepicker = js.native
+  
   //////////////////////////////////////////////////////////////////////////////////////
   //// Below are the getters/setters for the properties of the 'options(): Options' ////
   //////////////////////////////////////////////////////////////////////////////////////
@@ -378,6 +417,7 @@ trait Datetimepicker extends js.Object {
     */
   def timeZone(): String = js.native
   def timeZone(newZone: String): Datetimepicker = js.native
+  
   /**
     * Shows or hides the widget.
     * Emits:
@@ -386,6 +426,7 @@ trait Datetimepicker extends js.Object {
     * - dp.change - if the widget is opened for the first time and the input element is empty and options.useCurrent != false
     */
   def toggle(): Datetimepicker = js.native
+  
   /**
     * Returns the options.toolbarplacement option.
     */
@@ -397,6 +438,7 @@ trait Datetimepicker extends js.Object {
     * - TypeError if the parameter is not a valid value
     */
   def toolbarPlacement(toolbarPlacement: ToolbarPlacement): Datetimepicker = js.native
+  
   /**
     * Returns the options.tooltips option.
     */
@@ -407,6 +449,7 @@ trait Datetimepicker extends js.Object {
     * - TypeError - if tooltips parameter is not an Object
     */
   def tooltips(tooltips: Tooltips): Datetimepicker = js.native
+  
   /**
     * Returns the options.useCurrent option configuration.
     */
@@ -421,6 +464,7 @@ trait Datetimepicker extends js.Object {
     */
   def useCurrent(useCurrent: Boolean): Datetimepicker = js.native
   def useCurrent(useCurrent: UseCurrent): Datetimepicker = js.native
+  
   /**
     * Returns the options.useStrict
     */
@@ -429,6 +473,7 @@ trait Datetimepicker extends js.Object {
     * If useStrict is true, momentjs parsing rules will be stricter when determining if a date is valid or not.
     */
   def useStrict(useStrict: Boolean): Datetimepicker = js.native
+  
   /**
     * Returns the options.viewDate option.
     */
@@ -438,6 +483,7 @@ trait Datetimepicker extends js.Object {
     * This will change the viewDate without changing or setting the selected date.
     */
   def viewDate(viewDate: DateComparable): Datetimepicker = js.native
+  
   /**
     * Returns the options.viewMode.
     */
@@ -448,6 +494,7 @@ trait Datetimepicker extends js.Object {
     * - TypeError - if newViewMode parameter is not an a string or if newViewMode is not a valid value
     */
   def viewMode(newViewMode: ViewMode): Datetimepicker = js.native
+  
   /**
     * Returns the options.widgetPositioning object.
     */
@@ -459,4 +506,3 @@ trait Datetimepicker extends js.Object {
     */
   def widgetPositioning(positioningObject: WidgetPositioning): Datetimepicker = js.native
 }
-

@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.activexLibreoffice.com_.sun.star.util.XReplaceable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A text document is a model component which contains text structured by paragraphs.
@@ -49,10 +49,13 @@ trait GenericTextDocument
      with XTextFramesSupplier
      with XTextSectionsSupplier
      with XNumberFormatsSupplier {
+  
   /** contains the identifier of the default locale of the document. */
   var CharLocale: Locale = js.native
+  
   /** contains the count of all characters in the document. */
   var CharacterCount: Double = js.native
+  
   /**
     * specifies the concordance file taken into account when creating an index.
     *
@@ -60,15 +63,19 @@ trait GenericTextDocument
     * @since OOo 1.1.2
     */
   var IndexAutoMarkFileURL: String = js.native
+  
   /** contains the count of all paragraphs in the document. */
   var ParagraphCount: Double = js.native
+  
   /**
     * specifies if change recording is active.
     * @since OOo 1.1.2
     */
   var RecordChanges: Boolean = js.native
+  
   /** @returns the major {@link com.sun.star.text.Text} of the text document.  This text does not contain texts in {@link TextFrames} , or cells of {@link TextT */
   val Text: XText = js.native
+  
   /**
     * specifies the first 4 digit year to be used when years are given in 2 digits.
     *
@@ -77,11 +84,13 @@ trait GenericTextDocument
     * @since OOo 1.1.2
     */
   var TwoDigitYear: Double = js.native
+  
   /**
     * contains the count of all words in the document.
     * @see WordSeparator
     */
   var WordCount: Double = js.native
+  
   /**
     * contains a string that consists of characters that mark the separation of words in counting the words in a document.
     *
@@ -89,9 +98,10 @@ trait GenericTextDocument
     * @see WordCount
     */
   var WordSeparator: String = js.native
+  
   /** @returns the major {@link com.sun.star.text.Text} of the text document.  This text does not contain texts in {@link TextFrames} , or cells of {@link TextT */
   def getText(): XText = js.native
+  
   /** reformats the contents of the document. */
   def reformat(): Unit = js.native
 }
-

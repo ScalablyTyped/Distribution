@@ -10,9 +10,9 @@ Simple module to localize the strings of any JS based program using the same syn
 | ------------------ | :-------------: |
 | Full name          | localized-strings |
 | Keywords           | localization, internationalization, string localization, javascript, typescript, nativescript |
-| # releases         | 20 |
-| # dependents       | 5 |
-| # downloads        | 799888 |
+| # releases         | 8 |
+| # dependents       | 10 |
+| # downloads        | 1444562 |
 | # stars            | 0 |
 
 ## Links

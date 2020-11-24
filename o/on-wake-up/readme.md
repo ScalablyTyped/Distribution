@@ -12,7 +12,7 @@ Small module that calls a function when your computer wakes up from sleep
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3753 |
+| # downloads        | 6285 |
 | # stars            | 0 |
 
 ## Links

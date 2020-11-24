@@ -10,9 +10,9 @@ Global HTTP/HTTPS proxy configurable using environment variables.
 | ------------------ | :-------------: |
 | Full name          | global-agent |
 | Keywords           | http, global, proxy, agent |
-| # releases         | 40 |
-| # dependents       | 17 |
-| # downloads        | 2279059 |
+| # releases         | 46 |
+| # dependents       | 37 |
+| # downloads        | 10835295 |
 | # stars            | 0 |
 
 ## Links

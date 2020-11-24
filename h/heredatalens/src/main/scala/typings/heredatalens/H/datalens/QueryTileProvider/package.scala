@@ -2,19 +2,22 @@ package typings.heredatalens.H.datalens
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object QueryTileProvider {
+  
   /**
     * Tile X coordinate (column)
     * Coordinate in XYZ tile numbering scheme.
     */
   type X = scala.Double
+  
   /**
     * Tile Y coordinate (row)
     * Coordinate in XYZ tile numbering scheme.
     */
   type Y = scala.Double
+  
   /**
     * Zoom level
     * Coordinate in XYZ tile numbering scheme. May vary within range 1 to 20.

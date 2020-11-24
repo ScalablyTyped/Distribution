@@ -2,7 +2,7 @@ package typings.hdrHistogramJs.zigZagEncodingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class provides encoding and decoding methods for writing and reading
@@ -23,11 +23,11 @@ import scala.scalajs.js.annotation._
 @JSImport("hdr-histogram-js/ZigZagEncoding", JSImport.Default)
 @js.native
 class default () extends ZigZagEncoding
-
 /* static members */
 @JSImport("hdr-histogram-js/ZigZagEncoding", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Read an LEB128-64b9B ZigZag encoded long value from the given buffer
     * (negative numbers not supported)
@@ -35,6 +35,7 @@ object default extends js.Object {
     * @return the value read from the buffer
     */
   def decode(buffer: typings.hdrHistogramJs.byteBufferMod.default): Double = js.native
+  
   /**
     * Writes a long value to the given buffer in LEB128 ZigZag encoded format
     * (negative numbers not supported)
@@ -43,4 +44,3 @@ object default extends js.Object {
     */
   def encode(buffer: typings.hdrHistogramJs.byteBufferMod.default, value: Double): Unit = js.native
 }
-

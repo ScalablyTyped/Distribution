@@ -2,11 +2,12 @@ package typings.mapbox.mod.global.L.mapbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("L.mapbox.gridControl")
 @js.native
 object gridControl extends js.Object {
+  
   // GridControl
   //////////////////////////////////////////////////////////////////////
   /**
@@ -16,4 +17,3 @@ object gridControl extends js.Object {
   def apply(layer: String): GridControl_ = js.native
   def apply(layer: String, options: GridControlOptions): GridControl_ = js.native
 }
-

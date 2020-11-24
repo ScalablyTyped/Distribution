@@ -10,9 +10,9 @@ Keep an eye on your memory usage, and discover and isolate leaks.
 | ------------------ | :-------------: |
 | Full name          | node-memwatch |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 206165 |
+| # releases         | 0 |
+| # dependents       | 9 |
+| # downloads        | 189235 |
 | # stars            | 0 |
 
 ## Links

@@ -5,29 +5,38 @@ import typings.blockingProxy.webdriverLoggerMod.WebDriverLogger
 import typings.blockingProxy.webdriverProxyMod.WebDriverBarrier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blocking-proxy/built/lib/angular_wait_barrier", JSImport.Namespace)
 @js.native
 object angularWaitBarrierMod extends js.Object {
+  
   @js.native
   class AngularWaitBarrier protected () extends WebDriverBarrier {
     def this(client: SimpleWebDriverClient) = this()
+    
     var client: js.Any = js.native
-    var enabled: Boolean = js.native
-    var logger: WebDriverLogger = js.native
-    var rootSelector: String = js.native
+    
     /**
       * Turn on WebDriver logging.
       *
       * @param logDir The directory to create logs in.
       */
     def enableLogging(logDir: String): Unit = js.native
+    
+    var enabled: Boolean = js.native
+    
+    var logger: WebDriverLogger = js.native
+    
+    var rootSelector: String = js.native
+    
     /* private */ def sendRequestToStabilize(command: js.Any): js.Any = js.native
+    
     /**
       * Override the logger instance. Only used for testing.
       */
     def setLogger(logger: WebDriverLogger): Unit = js.native
+    
     /**
       * A CSS Selector for a DOM element within your Angular application.
       * BlockingProxy will attempt to automatically find your application, but it is
@@ -44,9 +53,9 @@ object angularWaitBarrierMod extends js.Object {
       * @param rootSelector A selector for the root element of the Angular app.
       */
     def setRootSelector(selector: String): Unit = js.native
+    
     /* private */ def shouldStabilize(command: js.Any): js.Any = js.native
+    
     /* private */ def waitForAngularData(): js.Any = js.native
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.zipkinTransportHttp.mod
 import typings.zipkin.mod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zipkin-transport-http", "HttpLogger")
 @js.native
@@ -22,4 +22,3 @@ class HttpLogger protected () extends Logger {
     */
   def this(options: typings.zipkinTransportHttp.anon.Agent) = this()
 }
-

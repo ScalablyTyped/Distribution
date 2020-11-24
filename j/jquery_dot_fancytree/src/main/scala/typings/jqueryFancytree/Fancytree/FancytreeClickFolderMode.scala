@@ -2,14 +2,14 @@ package typings.jqueryFancytree.Fancytree
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FancytreeClickFolderMode extends js.Object
-
 @JSGlobal("Fancytree.FancytreeClickFolderMode")
 @js.native
 object FancytreeClickFolderMode extends js.Object {
+  
   @js.native
   sealed trait activate extends FancytreeClickFolderMode
   
@@ -21,6 +21,4 @@ object FancytreeClickFolderMode extends js.Object {
   
   @js.native
   sealed trait expand extends FancytreeClickFolderMode
-  
 }
-

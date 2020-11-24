@@ -2,11 +2,12 @@ package typings.validator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("validator/lib/whitelist", JSImport.Namespace)
 @js.native
 object whitelistMod extends js.Object {
+  
   /**
     * Remove characters that do not appear in the whitelist.
     *
@@ -14,4 +15,3 @@ object whitelistMod extends js.Object {
     */
   def default(input: String, chars: String): String = js.native
 }
-

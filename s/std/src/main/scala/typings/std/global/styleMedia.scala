@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.StyleMedia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("styleMedia")
 @js.native
 object styleMedia extends TopLevel[StyleMedia]
-

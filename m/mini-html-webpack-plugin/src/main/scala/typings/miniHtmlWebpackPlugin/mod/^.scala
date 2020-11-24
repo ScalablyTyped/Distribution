@@ -2,7 +2,7 @@ package typings.miniHtmlWebpackPlugin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A miniature version of html-webpack-plugin with only necessary features
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends MiniHtmlWebpackPlugin {
   def this(options: PluginOptions) = this()
 }
-

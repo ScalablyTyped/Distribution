@@ -10,9 +10,9 @@ highcharts-ng
 | ------------------ | :-------------: |
 | Full name          | highcharts-ng |
 | Keywords           | angular |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 632324 |
+| # downloads        | 1106240 |
 | # stars            | 3 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The rope allows you to draw a texture across several points and then manipulate these points
@@ -30,4 +30,3 @@ class SimpleRope protected ()
     textureScale: Double
   ) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.pc.ResourceHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource handler used for loading {@link pc.Sprite} resources.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 class SpriteHandler protected () extends ResourceHandler {
   def this(assets: typings.playcanvas.pc.AssetRegistry, device: typings.playcanvas.pc.GraphicsDevice) = this()
 }
-

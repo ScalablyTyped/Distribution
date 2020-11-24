@@ -2,7 +2,7 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A mask that indicates which of the fields on the base
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaEmbeddedDrawingPropertiesSuggestionState extends js.Object
-

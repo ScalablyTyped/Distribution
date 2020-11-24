@@ -5,12 +5,12 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(path: PathLike): WriteStream = js.native
   def apply(path: PathLike, options: String): WriteStream = js.native
   def apply(path: PathLike, options: EmitClose): WriteStream = js.native
 }
-

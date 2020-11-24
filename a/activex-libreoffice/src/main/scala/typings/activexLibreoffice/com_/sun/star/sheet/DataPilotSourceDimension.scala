@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a dimension in a data pilot source.
@@ -31,36 +31,45 @@ trait DataPilotSourceDimension
      with XHierarchiesSupplier
      with XCloneable
      with XPropertySet {
+  
   /** specifies which values are used. */
   var Filter: SafeArray[TableFilterField] = js.native
+  
   /**
     * contains flags that control the usage of the dimension.
     * @see com.sun.star.sheet.DimensionFlags
     */
   var Flags: Double = js.native
+  
   /** specifies how data are aggregated. */
   var Function: GeneralFunction = js.native
+  
   /**
     * specifies how data are aggregated.
     * @since LibreOffice 5.3
     */
   var Function2: Double = js.native
+  
   /** contains `TRUE` if this is the dimension used to layout the different data dimensions. */
   var IsDataLayoutDimension: Boolean = js.native
+  
   /** specifies where the dimension is used. */
   var Orientation: DataPilotFieldOrientation = js.native
+  
   /** returns the name of the dimension from which this dimension was cloned, or `NULL` if it was not cloned. */
   var Original: XNamed = js.native
+  
   /** specifies the position of the dimension within its orientation. */
   var Position: Double = js.native
+  
   /**
     * specifies which hierarchy of the dimension is used.
     * @see com.sun.star.sheet.DataPilotSourceHierarchies
     */
   var UsedHierarchy: Double = js.native
 }
-
 object DataPilotSourceDimension {
+  
   @scala.inline
   def apply(
     Filter: SafeArray[TableFilterField],
@@ -93,36 +102,47 @@ object DataPilotSourceDimension {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], Function2 = Function2.asInstanceOf[js.Any], Hierarchies = Hierarchies.asInstanceOf[js.Any], IsDataLayoutDimension = IsDataLayoutDimension.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Original = Original.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], UsedHierarchy = UsedHierarchy.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), getHierarchies = js.Any.fromFunction0(getHierarchies), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataPilotSourceDimension]
   }
+  
   @scala.inline
   implicit class DataPilotSourceDimensionOps[Self <: DataPilotSourceDimension] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFilter(value: SafeArray[TableFilterField]): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFlags(value: Double): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFunction(value: GeneralFunction): Self = this.set("Function", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFunction2(value: Double): Self = this.set("Function2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsDataLayoutDimension(value: Boolean): Self = this.set("IsDataLayoutDimension", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOrientation(value: DataPilotFieldOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOriginal(value: XNamed): Self = this.set("Original", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUsedHierarchy(value: Double): Self = this.set("UsedHierarchy", value.asInstanceOf[js.Any])
   }
-  
 }
-

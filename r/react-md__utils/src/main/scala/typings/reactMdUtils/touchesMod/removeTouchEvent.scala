@@ -6,11 +6,12 @@ import typings.std.TouchEvent
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/utils/types/events/touches", "removeTouchEvent")
 @js.native
 object removeTouchEvent extends js.Object {
+  
   def apply(
     el: HTMLElement,
     eventType: TouchTypes,
@@ -122,4 +123,3 @@ object removeTouchEvent extends js.Object {
   options: AddEventListenerOptions
   ): Unit = js.native
 }
-

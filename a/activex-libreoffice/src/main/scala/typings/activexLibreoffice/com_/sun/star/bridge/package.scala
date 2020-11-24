@@ -2,11 +2,13 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object bridge {
+  
   /** Indicates, that it was tried to create a remote bridge with a name, which already existed. */
   type BridgeExistsException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * allows to create new or access existing interprocess bridges.
     *
@@ -14,6 +16,7 @@ package object bridge {
     * @see com.sun.star.bridge.Bridge
     */
   type BridgeFactory = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeFactory2
+  
   /**
     * registers UNO objects as COM objects.
     *
@@ -31,6 +34,7 @@ package object bridge {
     * @deprecated Deprecated
     */
   type OleApplicationRegistration = typings.activexLibreoffice.com_.sun.star.uno.XInterface
+  
   /**
     * makes it possible to generate OLE bridges to UNO objects and vice versa.
     *
@@ -39,6 +43,7 @@ package object bridge {
     * @deprecated Deprecated
     */
   type OleBridgeSupplier = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeSupplier
+  
   /**
     * maps UNO types to oleautomation types and vice versa.
     *
@@ -56,6 +61,7 @@ package object bridge {
     * @deprecated Deprecated
     */
   type OleBridgeSupplier2 = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeSupplier2
+  
   /**
     * maps UNO types to COM types and vice versa. It is optimized for use in a remote szenario.
     *
@@ -65,6 +71,7 @@ package object bridge {
     * @deprecated Deprecated
     */
   type OleBridgeSupplierVar1 = typings.activexLibreoffice.com_.sun.star.bridge.OleBridgeSupplier2
+  
   /**
     * makes it possible to create COM objects as UNO objects.
     *
@@ -77,6 +84,7 @@ package object bridge {
     * @deprecated Deprecated
     */
   type OleObjectFactory = typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
+  
   /** provides the ability to access remote processes, resolving them by an UNO url. ; */
   type UnoUrlResolver = typings.activexLibreoffice.com_.sun.star.bridge.XUnoUrlResolver
 }

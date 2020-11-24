@@ -5,11 +5,12 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/stereoscopicInterlacePostProcess", JSImport.Namespace)
 @js.native
 object stereoscopicInterlacePostProcessMod extends js.Object {
+  
   @js.native
   class StereoscopicInterlacePostProcess protected () extends PostProcess {
     /**
@@ -27,8 +28,39 @@ object stereoscopicInterlacePostProcessMod extends js.Object {
       name: String,
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
+      samplingMode: js.UndefOr[scala.Nothing],
+      engine: Engine
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
       samplingMode: Double,
       engine: Engine
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      samplingMode: js.UndefOr[scala.Nothing],
+      engine: js.UndefOr[scala.Nothing],
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      samplingMode: js.UndefOr[scala.Nothing],
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      samplingMode: Double,
+      engine: js.UndefOr[scala.Nothing],
+      reusable: Boolean
     ) = this()
     def this(
       name: String,
@@ -38,7 +70,9 @@ object stereoscopicInterlacePostProcessMod extends js.Object {
       engine: Engine,
       reusable: Boolean
     ) = this()
+    
     var _passedProcess: js.Any = js.native
+    
     var _stepSize: js.Any = js.native
   }
   
@@ -72,8 +106,43 @@ object stereoscopicInterlacePostProcessMod extends js.Object {
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
       isStereoscopicInterlaced: Boolean,
+      samplingMode: js.UndefOr[scala.Nothing],
+      engine: Engine
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      isStereoscopicInterlaced: Boolean,
       samplingMode: Double,
       engine: Engine
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      isStereoscopicInterlaced: Boolean,
+      samplingMode: js.UndefOr[scala.Nothing],
+      engine: js.UndefOr[scala.Nothing],
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      isStereoscopicInterlaced: Boolean,
+      samplingMode: js.UndefOr[scala.Nothing],
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      isStereoscopicInterlaced: Boolean,
+      samplingMode: Double,
+      engine: js.UndefOr[scala.Nothing],
+      reusable: Boolean
     ) = this()
     def this(
       name: String,
@@ -84,9 +153,9 @@ object stereoscopicInterlacePostProcessMod extends js.Object {
       engine: Engine,
       reusable: Boolean
     ) = this()
+    
     var _passedProcess: js.Any = js.native
+    
     var _stepSize: js.Any = js.native
   }
-  
 }
-

@@ -2,9 +2,11 @@ package typings.bluebird.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait PromisifyAllOptions[T] extends PromisifyOptions {
+  
   var filter: js.UndefOr[
     js.Function4[
       /* name */ String, 
@@ -13,7 +15,8 @@ trait PromisifyAllOptions[T] extends PromisifyOptions {
       /* passesDefaultFilter */ js.UndefOr[Boolean], 
       Boolean
     ]
-  ] = js.undefined
+  ] = js.native
+  
   // The promisifier gets a reference to the original method and should return a function which returns a promise
   var promisifier: js.UndefOr[
     js.ThisFunction2[
@@ -22,31 +25,58 @@ trait PromisifyAllOptions[T] extends PromisifyOptions {
       /* defaultPromisifer */ js.Function1[/* repeated */ js.Any, js.Function1[/* repeated */ _, Bluebird[_]]], 
       js.Function0[js.Thenable[_]]
     ]
-  ] = js.undefined
-  var suffix: js.UndefOr[String] = js.undefined
+  ] = js.native
+  
+  var suffix: js.UndefOr[String] = js.native
 }
-
 object PromisifyAllOptions {
+  
   @scala.inline
-  def apply[T](
-    context: js.Any = null,
-    filter: (/* name */ String, /* func */ js.Function1[/* repeated */ js.Any, _], /* target */ js.UndefOr[js.Any], /* passesDefaultFilter */ js.UndefOr[Boolean]) => Boolean = null,
-    multiArgs: js.UndefOr[Boolean] = js.undefined,
-    promisifier: js.ThisFunction2[
-      /* this */ T, 
-      /* originalMethod */ js.Function1[/* repeated */ js.Any, _], 
-      /* defaultPromisifer */ js.Function1[/* repeated */ js.Any, js.Function1[/* repeated */ _, Bluebird[_]]], 
-      js.Function0[js.Thenable[_]]
-    ] = null,
-    suffix: String = null
-  ): PromisifyAllOptions[T] = {
+  def apply[T](): PromisifyAllOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.get.asInstanceOf[js.Any])
-    if (promisifier != null) __obj.updateDynamic("promisifier")(promisifier.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromisifyAllOptions[T]]
   }
+  
+  @scala.inline
+  implicit class PromisifyAllOptionsOps[Self <: PromisifyAllOptions[_], T] (val x: Self with PromisifyAllOptions[T]) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setFilter(
+      value: (/* name */ String, /* func */ js.Function1[/* repeated */ js.Any, _], /* target */ js.UndefOr[js.Any], /* passesDefaultFilter */ js.UndefOr[Boolean]) => Boolean
+    ): Self = this.set("filter", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    
+    @scala.inline
+    def setPromisifier(
+      value: js.ThisFunction2[
+          /* this */ T, 
+          /* originalMethod */ js.Function1[/* repeated */ js.Any, _], 
+          /* defaultPromisifer */ js.Function1[/* repeated */ js.Any, js.Function1[/* repeated */ _, Bluebird[_]]], 
+          js.Function0[js.Thenable[_]]
+        ]
+    ): Self = this.set("promisifier", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePromisifier: Self = this.set("promisifier", js.undefined)
+    
+    @scala.inline
+    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+  }
 }
-

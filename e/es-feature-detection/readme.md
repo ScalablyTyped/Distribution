@@ -9,10 +9,10 @@ ECMAScript feature and API detection
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | es-feature-detection |
-| Keywords           | es6, es7, es2015, es2016, es2017, es2018, es2019, ecmascript, feature, detect, check, test, support, syntax, api, polyfill, builtin, util |
-| # releases         | 10 |
+| Keywords           | es6, es7, es2015, es2016, es2017, es2018, es2019, es2020, ecmascript, feature, detect, check, test, syntax, polyfill, builtin, dom, localization |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 7622 |
+| # downloads        | 12052 |
 | # stars            | 0 |
 
 ## Links

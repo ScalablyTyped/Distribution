@@ -11,9 +11,9 @@ A JavaScript library for providing multiple simultaneous, stable, fault-tolerant
 | Full name          | resumablejs |
 | Keywords           | html5, file, upload |
 | # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 398117 |
-| # stars            | 2 |
+| # dependents       | 15 |
+| # downloads        | 689781 |
+| # stars            | 3 |
 
 ## Links
 - [Homepage](https://github.com/23/resumable.js#readme)

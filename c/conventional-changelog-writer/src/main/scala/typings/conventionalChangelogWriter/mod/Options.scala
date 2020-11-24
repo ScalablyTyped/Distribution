@@ -10,10 +10,11 @@ import typings.conventionalCommitsParser.mod.Commit.Note
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] extends js.Object {
+  
   /**
     * A compare function used to sort commit groups. If it's a string or array, it
     * sorts on the property(ies) by `localeCompare`. Will not sort if this is a
@@ -22,11 +23,13 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * The string can be a dot path to a nested object property.
     */
   var commitGroupsSort: js.UndefOr[Sort[CommitGroup[TCommit]]] = js.native
+  
   /**
     * @defaults
     * [commit.hbs](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-writer/templates/commit.hbs)
     */
   var commitPartial: js.UndefOr[String] = js.native
+  
   /**
     * A compare function used to sort commits. If it's a string or array, it sorts
     * on the property(ies) by `localeCompare`. Will not sort if this is a falsy
@@ -38,6 +41,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * 'header'
     */
   var commitsSort: js.UndefOr[Sort[TransformedCommit[TCommit]]] = js.native
+  
   /**
     * A function to get debug information.
     *
@@ -45,6 +49,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * function () {}
     */
   var debug: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], Unit]] = js.native
+  
   /**
     * If `true`, the stream will flush out the last bit of commits (could be empty)
     * to changelog.
@@ -53,6 +58,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * true
     */
   var doFlush: js.UndefOr[Boolean] = js.native
+  
   /**
     * Last chance to modify your context before generating a changelog.
     *
@@ -60,11 +66,13 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * Pass through.
     */
   var finalizeContext: js.UndefOr[FinalizeContext[TContext, TCommit]] = js.native
+  
   /**
     * @defaults
     * [footer.hbs](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-writer/templates/footer.hbs)
     */
   var footerPartial: js.UndefOr[String] = js.native
+  
   /**
     * When the upstream finishes pouring the commits it will generate a block of
     * logs if `doFlush` is `true`. However, you can generate more than one block
@@ -85,6 +93,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * If `commit.version` is a valid semver.
     */
   var generateOn: js.UndefOr[GenerateOn[TContext, TCommit]] = js.native
+  
   /**
     * How to group the commits. EG: based on the same type. If this value is falsy,
     * commits are not grouped.
@@ -93,11 +102,13 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * 'type'
     */
   var groupBy: js.UndefOr[String | `false`] = js.native
+  
   /**
     * @defaults
     * [header.hbs](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-writer/templates/header.hbs)
     */
   var headerPartial: js.UndefOr[String] = js.native
+  
   /**
     * If `true`, reverted commits will be ignored.
     *
@@ -105,6 +116,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * true
     */
   var ignoreReverted: js.UndefOr[Boolean] = js.native
+  
   /**
     * If this value is `true`, instead of emitting strings of changelog, it emits
     * objects containing the details the block.
@@ -116,6 +128,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * false
     */
   var includeDetails: js.UndefOr[Boolean] = js.native
+  
   /**
     * The main handlebars template.
     *
@@ -123,6 +136,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * [template.hbs](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-writer/templates/template.hbs)
     */
   var mainTemplate: js.UndefOr[String] = js.native
+  
   /**
     * A compare function used to sort note groups. If it's a string or array, it
     * sorts on the property(ies) by `localeCompare`. Will not sort if this is a
@@ -134,6 +148,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * 'title'
     */
   var noteGroupsSort: js.UndefOr[Sort[NoteGroup]] = js.native
+  
   /**
     * A compare function used to sort note groups. If it's a string or array, it
     * sorts on the property(ies) by `localeCompare`. Will not sort if this is a
@@ -145,12 +160,14 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * 'text'
     */
   var notesSort: js.UndefOr[Sort[Note]] = js.native
+  
   /**
     * Partials that used in the main template, if any. The key should be the
     * partial name and the value should be handlebars template strings. If you are
     * using handlebars template files, read files by yourself.
     */
   var partials: js.UndefOr[Record[String, String]] = js.native
+  
   /**
     * The normal order means reverse chronological order. `reverse` order means
     * chronological order. Are the commits from upstream in the reverse order? You
@@ -162,6 +179,7 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     * false
     */
   var reverse: js.UndefOr[Boolean] = js.native
+  
   /**
     * Replace with new values in each commit.
     *
@@ -179,12 +197,13 @@ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* 
     */
   var transform: js.UndefOr[Transform[TCommit, TContext]] = js.native
 }
-
 @JSImport("conventional-changelog-writer", "Options")
 @js.native
 object Options extends js.Object {
+  
   @js.native
   object GenerateOn extends js.Object {
+    
     type FunctionType[TContext /* <: Context */, TCommit /* <: Commit[String | Double | js.Symbol] */] = js.Function4[
         /* commit */ TransformedCommit[TCommit], 
         /* commits */ js.Array[TransformedCommit[TCommit]], 
@@ -196,13 +215,16 @@ object Options extends js.Object {
   
   @js.native
   object Sort extends js.Object {
+    
     type FunctionType[T] = js.Function2[/* a */ T, /* b */ T, Double]
   }
   
   @js.native
   object Transform extends js.Object {
+    
     @js.native
     object ObjectType extends js.Object {
+      
       type FunctionType[T] = js.Function2[/* value */ T, /* path */ String, T]
     }
     
@@ -211,6 +233,7 @@ object Options extends js.Object {
         /* context */ TContext, 
         TCommit | `false`
       ]
+    
     type ObjectType = Record[String, js.Object | js.Function]
   }
   
@@ -221,8 +244,10 @@ object Options extends js.Object {
     /* keyCommit */ TransformedCommit[TCommit], 
     GeneratedContext[TCommit, TContext]
   ]
+  
   type GenerateOn[TContext /* <: Context */, TCommit /* <: Commit[String | Double | js.Symbol] */] = js.Function | String | js.Object
+  
   type Sort[T] = js.Function | String | js.Array[String] | `false`
+  
   type Transform[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] = js.Object | js.Function
 }
-

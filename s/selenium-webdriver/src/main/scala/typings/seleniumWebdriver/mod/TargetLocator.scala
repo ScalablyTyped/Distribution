@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "TargetLocator")
 @js.native
@@ -13,6 +13,7 @@ class TargetLocator protected () extends js.Object {
     * @constructor
     */
   def this(driver: WebDriver) = this()
+  
   // endregion
   // region Methods
   /**
@@ -22,6 +23,7 @@ class TargetLocator protected () extends js.Object {
     * @return {!WebElement} The active element.
     */
   def activeElement(): WebElementPromise = js.native
+  
   /**
     * Schedules a command to change focus to the active modal dialog, such as
     * those opened by `window.alert()`, `window.confirm()`, and
@@ -31,6 +33,7 @@ class TargetLocator protected () extends js.Object {
     * @return {!AlertPromise} The open alert.
     */
   def alert(): AlertPromise = js.native
+  
   /**
     * Schedules a command to switch focus of all future commands to the first
     * frame on the page.
@@ -38,6 +41,7 @@ class TargetLocator protected () extends js.Object {
     *     driver has changed focus to the default content.
     */
   def defaultContent(): js.Promise[Unit] = js.native
+  
   /**
     * Changes the focus of all future commands to another frame on the page. The
     * target frame may be specified as one of the following:
@@ -59,6 +63,7 @@ class TargetLocator protected () extends js.Object {
   def frame(): js.Promise[Unit] = js.native
   def frame(id: Double): js.Promise[Unit] = js.native
   def frame(id: WebElement): js.Promise[Unit] = js.native
+  
   /**
     * Creates a new browser window and switches the focus for future
     * commands of this driver to the new window.
@@ -71,6 +76,7 @@ class TargetLocator protected () extends js.Object {
     *     when the driver has changed focus to the new window.
     */
   def newWindow(typeHint: String): js.Promise[Unit] = js.native
+  
   /**
     * Changes the focus of all future commands to the parent frame of the
     * currently selected frame. This command has no effect if the driver is
@@ -80,6 +86,7 @@ class TargetLocator protected () extends js.Object {
     *     has completed.
     */
   def parentFrame(): js.Promise[Unit] = js.native
+  
   /**
     * Schedules a command to switch the focus of all future commands to another
     * window. Windows may be specified by their {@code window.name} attribute or
@@ -95,4 +102,3 @@ class TargetLocator protected () extends js.Object {
     */
   def window(nameOrHandle: String): js.Promise[Unit] = js.native
 }
-

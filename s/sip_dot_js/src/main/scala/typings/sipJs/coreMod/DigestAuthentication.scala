@@ -2,7 +2,7 @@ package typings.sipJs.coreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core", "DigestAuthentication")
 @js.native
@@ -42,4 +42,3 @@ class DigestAuthentication protected ()
   ) = this()
   def this(loggerFactory: typings.sipJs.logMod.LoggerFactory, ha1: String, username: String, password: String) = this()
 }
-

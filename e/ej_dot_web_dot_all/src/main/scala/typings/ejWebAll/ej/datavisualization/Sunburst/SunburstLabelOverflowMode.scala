@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Sunburst
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SunburstLabelOverflowMode extends js.Object
-
 @JSGlobal("ej.datavisualization.Sunburst.SunburstLabelOverflowMode")
 @js.native
 object SunburstLabelOverflowMode extends js.Object {
+  
   //string
   @js.native
   sealed trait Hide extends SunburstLabelOverflowMode
@@ -21,6 +21,4 @@ object SunburstLabelOverflowMode extends js.Object {
   //string
   @js.native
   sealed trait Trim extends SunburstLabelOverflowMode
-  
 }
-

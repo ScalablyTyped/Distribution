@@ -10,9 +10,9 @@ A wrapper on top of MFMailComposeViewController from iOS and Mail Intent on andr
 | ------------------ | :-------------: |
 | Full name          | react-native-mail |
 | Keywords           | react, react-native, react-component, ios, android, email, MFMailComposeViewController |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 325868 |
+| # downloads        | 385202 |
 | # stars            | 0 |
 
 ## Links

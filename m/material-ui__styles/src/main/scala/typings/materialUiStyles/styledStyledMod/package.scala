@@ -2,9 +2,10 @@ package typings.materialUiStyles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object styledStyledMod {
+  
   type ComponentCreator[Component /* <: typings.react.mod.ElementType[_] */] = js.Function2[
     /* styles */ typings.materialUiStyles.withStylesWithStylesMod.CreateCSSProperties[typings.react.mod.ComponentPropsWithoutRef[Component]] | (js.Function1[
       /* props */ typings.materialUiStyles.anon.ThemeTheme[typings.materialUiStyles.defaultThemeMod.DefaultTheme] with typings.react.mod.ComponentPropsWithoutRef[Component], 
@@ -23,5 +24,6 @@ package object styledStyledMod {
       ])
     ]
   ]
+  
   type StyledComponent[P /* <: js.Object */] = js.Function1[/* props */ P, typings.react.mod.ReactElement | scala.Null]
 }

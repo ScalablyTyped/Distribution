@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Floodlightactivities")
 @js.native
 class ResourceFloodlightactivities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.floodlightActivities.delete
     * @desc Deletes an existing floodlight activity.
@@ -42,6 +44,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivities.generatetag
     * @desc Generates a tag for a floodlight activity.
@@ -74,6 +77,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivitiesGenerateTagResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivities.get
     * @desc Gets one floodlight activity by ID.
@@ -106,6 +110,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivity]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivities.insert
     * @desc Inserts a new floodlight activity.
@@ -138,6 +143,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivity]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivities.list
     * @desc Retrieves a list of floodlight activities, possibly filtered. This
@@ -183,6 +189,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivitiesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivities.patch
     * @desc Updates an existing floodlight activity. This method supports patch
@@ -217,6 +224,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivity]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivities.update
     * @desc Updates an existing floodlight activity.
@@ -250,4 +258,3 @@ class ResourceFloodlightactivities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFloodlightActivity]
   ): Unit = js.native
 }
-

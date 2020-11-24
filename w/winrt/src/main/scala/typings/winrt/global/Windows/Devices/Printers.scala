@@ -2,16 +2,24 @@ package typings.winrt.global.Windows.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Devices.Printers")
 @js.native
 object Printers extends js.Object {
+  
   @js.native
   object Extensions extends js.Object {
+    
     @js.native
     class PrintExtensionContext ()
       extends typings.winrt.Windows.Devices.Printers.Extensions.PrintExtensionContext
+    /* static members */
+    @js.native
+    object PrintExtensionContext extends js.Object {
+      
+      def fromDeviceId(deviceId: String): js.Any = js.native
+    }
     
     @js.native
     class PrintNotificationEventDetails ()
@@ -32,14 +40,5 @@ object Printers extends js.Object {
     @js.native
     class PrintTaskConfigurationSaveRequestedEventArgs ()
       extends typings.winrt.Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedEventArgs
-    
-    /* static members */
-    @js.native
-    object PrintExtensionContext extends js.Object {
-      def fromDeviceId(deviceId: String): js.Any = js.native
-    }
-    
   }
-  
 }
-

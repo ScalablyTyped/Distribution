@@ -2,7 +2,7 @@ package typings.postcss.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a CSS declaration.
@@ -11,19 +11,24 @@ import scala.scalajs.js.annotation._
 trait Declaration
   extends ChildNode
      with NodeBase {
+  
   /**
     * True if the declaration has an !important annotation.
     */
   var important: Boolean = js.native
+  
   /**
     * Returns the declaration's parent node.
     */
   var parent: Container = js.native
+  
   /**
     * The declaration's property name.
     */
   var prop: String = js.native
+  
   var `type`: typings.postcss.postcssStrings.decl = js.native
+  
   /**
     * The declaration's value. This value will be cleaned of comments. If the
     * source value contained comments, those comments will be available in the
@@ -32,4 +37,3 @@ trait Declaration
     */
   var value: String = js.native
 }
-

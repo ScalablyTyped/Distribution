@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DispatcherStatic
@@ -27,11 +27,13 @@ trait DispatcherStatic
   */
 Instantiable0[Dispatcher]
      with Instantiable1[/* options */ DispatcherOptions, Dispatcher] {
+  
   /**
     * The relative API path for the current version of the Asana API.
     * @type {String}
     */
   var API_PATH: String = js.native
+  
   /**
     * Default handler for requests that are considered unauthorized.
     * Requests that the authenticator try to refresh its credentials if
@@ -41,4 +43,3 @@ Instantiable0[Dispatcher]
     */
   def maybeReauthorize(): typings.bluebird.mod.^[Boolean] = js.native
 }
-

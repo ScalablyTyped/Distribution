@@ -135,33 +135,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] {
-  var categories: js.Array[String] = js.native
-  var color: String = js.native
-  var endLocation: Location = js.native
-  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onEndLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[Location], _]) | Null = js.native
-  var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], _]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onStartLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[Location], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapLink['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var selectable: auto | off = js.native
-  var shortDesc: String = js.native
-  var startLocation: Location = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object = js.native
-  var width: Double = js.native
+  
   def addEventListener(
     `type`: selectableChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], _]
@@ -1044,6 +1022,13 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var categories: js.Array[String] = js.native
+  
+  var color: String = js.native
+  
+  var endLocation: Location = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_categories(property: categories): js.Array[String] = js.native
@@ -1063,7 +1048,34 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapLink['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_width(property: width): Double = js.native
+  
+  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onEndLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[Location], _]) | Null = js.native
+  
+  var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], _]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onStartLocationChanged: (js.Function1[/* event */ JetElementCustomEvent[Location], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapLink['svgStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var selectable: auto | off = js.native
+  
   def setProperties(properties: ojThematicMapLinkSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: selectable, value: auto): Unit = js.native
   def setProperty(property: selectable, value: off): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojThematicMapLinkSettableProperties]): Unit = js.native
@@ -1083,5 +1095,14 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
   def setProperty_width(property: width, value: Double): Unit = js.native
+  
+  var shortDesc: String = js.native
+  
+  var startLocation: Location = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object = js.native
+  
+  var width: Double = js.native
 }
-

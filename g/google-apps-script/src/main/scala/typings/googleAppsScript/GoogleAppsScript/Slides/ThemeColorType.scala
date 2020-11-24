@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ThemeColorType extends js.Object
-
 /**
   * The name of an entry in the page's color scheme.
   */
 @JSGlobal("GoogleAppsScript.Slides.ThemeColorType")
 @js.native
 object ThemeColorType extends js.Object {
+  
   @js.native
   sealed trait ACCENT1 extends ThemeColorType
   
@@ -51,6 +51,4 @@ object ThemeColorType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ThemeColorType
-  
 }
-

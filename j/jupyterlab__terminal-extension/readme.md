@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__terminal-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Terminal Emulator Extension
@@ -10,9 +10,9 @@ JupyterLab - Terminal Emulator Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/terminal-extension |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 1 |
-| # downloads        | 742805 |
+| # releases         | 113 |
+| # dependents       | 2 |
+| # downloads        | 1345911 |
 | # stars            | 0 |
 
 ## Links

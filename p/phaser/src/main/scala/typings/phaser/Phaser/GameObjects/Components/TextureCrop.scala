@@ -6,27 +6,26 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for getting and setting the texture of a Game Object.
   */
 @js.native
 trait TextureCrop extends js.Object {
+  
   /**
     * The Texture Frame this Game Object is using to render with.
     */
   var frame: Frame = js.native
+  
   /**
     * A boolean flag indicating if this Game Object is being cropped or not.
     * You can toggle this at any time after `setCrop` has been called, to turn cropping on or off.
     * Equally, calling `setCrop` with no arguments will reset the crop and disable it.
     */
   var isCropped: Boolean = js.native
-  /**
-    * The Texture this Game Object is using to render with.
-    */
-  var texture: typings.phaser.Phaser.Textures.Texture | CanvasTexture = js.native
+  
   /**
     * Applies a crop to a texture based Game Object, such as a Sprite or Image.
     * 
@@ -83,6 +82,7 @@ trait TextureCrop extends js.Object {
   def setCrop(x: Rectangle, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double, width: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double, width: Double, height: Double): this.type = js.native
+  
   /**
     * Sets the frame this Game Object will use to render with.
     * 
@@ -104,6 +104,7 @@ trait TextureCrop extends js.Object {
   def setFrame(frame: integer, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+  
   /**
     * Sets the texture and frame this Game Object will use to render with.
     * 
@@ -114,5 +115,9 @@ trait TextureCrop extends js.Object {
   def setTexture(key: String): this.type = js.native
   def setTexture(key: String, frame: String): this.type = js.native
   def setTexture(key: String, frame: integer): this.type = js.native
+  
+  /**
+    * The Texture this Game Object is using to render with.
+    */
+  var texture: typings.phaser.Phaser.Textures.Texture | CanvasTexture = js.native
 }
-

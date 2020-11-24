@@ -10,9 +10,9 @@ Watch files and directories for changes
 | ------------------ | :-------------: |
 | Full name          | pathwatcher |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 91616 |
+| # downloads        | 82209 |
 | # stars            | 1 |
 
 ## Links

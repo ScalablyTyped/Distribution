@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "TextureAssetTask")
 @js.native
@@ -13,7 +13,7 @@ class TextureAssetTask protected ()
     * @param name defines the name of the task
     * @param url defines the location of the file to load
     * @param noMipmap defines if mipmap should not be generated (default is false)
-    * @param invertY defines if texture must be inverted on Y axis (default is false)
+    * @param invertY defines if texture must be inverted on Y axis (default is true)
     * @param samplingMode defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
     */
   def this(
@@ -52,9 +52,9 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: Boolean,
+  noMipmap: js.UndefOr[scala.Nothing],
     /**
-    * Defines if texture must be inverted on Y axis (default is false)
+    * Defines if texture must be inverted on Y axis (default is true)
     */
   invertY: Boolean
   ) = this()
@@ -72,7 +72,91 @@ class TextureAssetTask protected ()
     */
   noMipmap: Boolean,
     /**
-    * Defines if texture must be inverted on Y axis (default is false)
+    * Defines if texture must be inverted on Y axis (default is true)
+    */
+  invertY: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines if mipmap should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Defines if texture must be inverted on Y axis (default is true)
+    */
+  invertY: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
+    */
+  samplingMode: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines if mipmap should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Defines if texture must be inverted on Y axis (default is true)
+    */
+  invertY: Boolean,
+    /**
+    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
+    */
+  samplingMode: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines if mipmap should not be generated (default is false)
+    */
+  noMipmap: Boolean,
+    /**
+    * Defines if texture must be inverted on Y axis (default is true)
+    */
+  invertY: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
+    */
+  samplingMode: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines if mipmap should not be generated (default is false)
+    */
+  noMipmap: Boolean,
+    /**
+    * Defines if texture must be inverted on Y axis (default is true)
     */
   invertY: Boolean,
     /**
@@ -81,4 +165,3 @@ class TextureAssetTask protected ()
   samplingMode: Double
   ) = this()
 }
-

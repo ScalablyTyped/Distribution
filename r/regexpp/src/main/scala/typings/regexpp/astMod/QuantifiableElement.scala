@@ -8,7 +8,7 @@ import typings.regexpp.regexppStrings.space
 import typings.regexpp.regexppStrings.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.Group
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
   - typings.regexpp.astMod.LookaheadAssertion
 */
 trait QuantifiableElement extends Element
-
 object QuantifiableElement {
+  
   @scala.inline
   def AnyCharacterSet(
     end: Double,
@@ -35,6 +35,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def Backreference(
     end: Double,
@@ -49,6 +50,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def LookaheadAssertion(
     alternatives: js.Array[Alternative],
@@ -64,6 +66,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def CapturingGroup(
     alternatives: js.Array[Alternative],
@@ -78,6 +81,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def EscapeCharacterSet(
     end: Double,
@@ -92,6 +96,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def UnicodePropertyCharacterSet(
     end: Double,
@@ -107,6 +112,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def Character(
     end: Double,
@@ -120,6 +126,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def CharacterClass(
     elements: js.Array[CharacterClassElement],
@@ -134,6 +141,7 @@ object QuantifiableElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
+  
   @scala.inline
   def Group(
     alternatives: js.Array[Alternative],
@@ -148,4 +156,3 @@ object QuantifiableElement {
     __obj.asInstanceOf[QuantifiableElement]
   }
 }
-

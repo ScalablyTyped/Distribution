@@ -5,7 +5,7 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/tooltip/lib/widget", "Tooltip")
 @js.native
@@ -14,21 +14,28 @@ class Tooltip_ protected () extends Widget {
     * Instantiate a tooltip.
     */
   def this(options: IOptions) = this()
+  
   var _content: js.Any = js.native
+  
   var _editor: js.Any = js.native
+  
   /**
     * Handle scroll events for the widget
     */
   var _evtScroll: js.Any = js.native
+  
   var _rendermime: js.Any = js.native
+  
   /**
     * Set the geometry of the tooltip widget.
     */
   var _setGeometry: js.Any = js.native
+  
   /**
     * The anchor widget that the tooltip widget tracks.
     */
   val anchor: Widget = js.native
+  
   /**
     * Handle the DOM events for the widget.
     *
@@ -41,4 +48,3 @@ class Tooltip_ protected () extends Widget {
     */
   def handleEvent(event: Event): Unit = js.native
 }
-

@@ -18,33 +18,43 @@ import typings.xmlZeroLexer.xmlZeroLexerNumbers.`8`
 import typings.xmlZeroLexer.xmlZeroLexerNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xml-zero-lexer", "NodeTypes")
 @js.native
 object NodeTypes extends js.Object {
+  
   var ATTRIBUTE_NODE: `2` = js.native
+  
   var CDATA_SECTION_NODE: `4` = js.native
+  
   /**
     * unofficial
     */
   var CLOSE_ELEMENT: `13` = js.native
+  
   var COMMENT_NODE: `8` = js.native
+  
   /**
     * Don't support this either
     */
   var DOCUMENT_FRAGMENT_NODE: `11` = js.native
+  
   /**
     * Not used. Root elements are just elements.
     */
   var DOCUMENT_NODE: `9` = js.native
+  
   var DOCUMENT_TYPE_NODE: `10` = js.native
+  
   var ELEMENT_NODE: `1` = js.native
+  
   /**
     * Only supported as <!ENTITY ...> outside of <!DOCTYPE ...>
     * E.g. <!DOCTYPE [ <!ENTITY> ]> will just be a string inside DOCTYPE and not an ENTITY_NODE.
     */
   var ENTITY_NODE: `6` = js.native
+  
   /**
     * Not used
     *
@@ -64,20 +74,26 @@ object NodeTypes extends js.Object {
     * So I've decided that's not the job of this lexer.
     */
   var ENTITY_REFERENCE_NODE: `5` = js.native
+  
   /**
     * unofficial
     */
   var JSX: `15` = js.native
+  
   /**
     * unofficial
     */
   var JSX_ATTRIBUTE: `14` = js.native
+  
   var NOTATION_NODE: `12` = js.native
+  
   var PROCESSING_INSTRUCTION_NODE: `7` = js.native
+  
   /**
     * Note that these can include entities which should be resolved before display
     */
   var TEXT_NODE: `3` = js.native
+  
   /**
     * unofficial
     *
@@ -90,4 +106,3 @@ object NodeTypes extends js.Object {
     */
   var XML_DECLARATION: `0` = js.native
 }
-

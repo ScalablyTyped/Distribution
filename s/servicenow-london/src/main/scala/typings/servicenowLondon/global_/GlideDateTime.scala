@@ -2,7 +2,7 @@ package typings.servicenowLondon.global_
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GlideDateTime")
 @js.native
@@ -27,11 +27,11 @@ class GlideDateTime ()
     */
   def this(value: String) = this()
 }
-
 /* static members */
 @JSGlobal("GlideDateTime")
 @js.native
 object GlideDateTime extends js.Object {
+  
   /**
     * Gets the duration difference between two GlideDateTime values.
     *
@@ -48,4 +48,3 @@ object GlideDateTime extends js.Object {
   def subtract(start: typings.servicenowLondon.GlideDateTime): typings.servicenowLondon.GlideDuration = js.native
   def subtract(start: typings.servicenowLondon.GlideDateTime, end: typings.servicenowLondon.GlideDateTime): typings.servicenowLondon.GlideDuration = js.native
 }
-

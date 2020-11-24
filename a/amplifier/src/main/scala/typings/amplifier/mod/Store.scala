@@ -2,35 +2,11 @@ package typings.amplifier.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Store extends StorageTypeStore {
-  /***
-    * Firefox 2+
-    */
-  @JSName("globalStorage")
-  var globalStorage_Original: StorageTypeStore = js.native
-  /***
-    * IE 8+, Firefox 3.5+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
-    */
-  @JSName("localStorage")
-  var localStorage_Original: StorageTypeStore = js.native
-  /***
-    * An in-memory store is provided as a fallback if none of the other storage types are available.
-    */
-  @JSName("memory")
-  var memory_Original: StorageTypeStore = js.native
-  /***
-    * IE 8+, Firefox 2+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
-    */
-  @JSName("sessionStorage")
-  var sessionStorage_Original: StorageTypeStore = js.native
-  /***
-    * IE 5 - 7
-    */
-  @JSName("userData")
-  var userData_Original: StorageTypeStore = js.native
+  
   /***
     * Gets a stored value based on the key of a hash of all stored values.
     */
@@ -52,6 +28,12 @@ trait Store extends StorageTypeStore {
   def globalStorage(key: String, value: js.Any): Unit = js.native
   def globalStorage(key: String, value: js.Any, options: js.Any): Unit = js.native
   /***
+    * Firefox 2+
+    */
+  @JSName("globalStorage")
+  var globalStorage_Original: StorageTypeStore = js.native
+  
+  /***
     * Gets a stored value based on the key of a hash of all stored values.
     */
   /***
@@ -71,6 +53,12 @@ trait Store extends StorageTypeStore {
     */
   def localStorage(key: String, value: js.Any): Unit = js.native
   def localStorage(key: String, value: js.Any, options: js.Any): Unit = js.native
+  /***
+    * IE 8+, Firefox 3.5+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
+    */
+  @JSName("localStorage")
+  var localStorage_Original: StorageTypeStore = js.native
+  
   /***
     * Gets a stored value based on the key of a hash of all stored values.
     */
@@ -92,6 +80,12 @@ trait Store extends StorageTypeStore {
   def memory(key: String, value: js.Any): Unit = js.native
   def memory(key: String, value: js.Any, options: js.Any): Unit = js.native
   /***
+    * An in-memory store is provided as a fallback if none of the other storage types are available.
+    */
+  @JSName("memory")
+  var memory_Original: StorageTypeStore = js.native
+  
+  /***
     * Gets a stored value based on the key of a hash of all stored values.
     */
   /***
@@ -112,6 +106,12 @@ trait Store extends StorageTypeStore {
   def sessionStorage(key: String, value: js.Any): Unit = js.native
   def sessionStorage(key: String, value: js.Any, options: js.Any): Unit = js.native
   /***
+    * IE 8+, Firefox 2+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
+    */
+  @JSName("sessionStorage")
+  var sessionStorage_Original: StorageTypeStore = js.native
+  
+  /***
     * Gets a stored value based on the key of a hash of all stored values.
     */
   /***
@@ -131,5 +131,9 @@ trait Store extends StorageTypeStore {
     */
   def userData(key: String, value: js.Any): Unit = js.native
   def userData(key: String, value: js.Any, options: js.Any): Unit = js.native
+  /***
+    * IE 5 - 7
+    */
+  @JSName("userData")
+  var userData_Original: StorageTypeStore = js.native
 }
-

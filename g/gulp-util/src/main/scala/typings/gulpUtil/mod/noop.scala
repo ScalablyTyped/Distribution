@@ -7,11 +7,12 @@ import typings.through2.mod.Through2Constructor
 import typings.through2.mod.TransformFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gulp-util", "noop")
 @js.native
 object noop extends js.Object {
+  
   def apply(): Transform = js.native
   def apply(opts: js.UndefOr[scala.Nothing], transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
   def apply(opts: js.UndefOr[scala.Nothing], transform: TransformFunction): Transform = js.native
@@ -23,6 +24,7 @@ object noop extends js.Object {
   def apply(transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
   def apply(transform: TransformFunction): Transform = js.native
   def apply(transform: TransformFunction, flush: FlushCallback): Transform = js.native
+  
   /**
     * Creates a constructor for a custom Transform. This is useful when you
     * want to use the same transform logic in multiple instances.
@@ -38,6 +40,7 @@ object noop extends js.Object {
   def ctor(transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Through2Constructor = js.native
   def ctor(transform: TransformFunction): Through2Constructor = js.native
   def ctor(transform: TransformFunction, flush: FlushCallback): Through2Constructor = js.native
+  
   /**
     * Convenvience method for creating object streams
     */
@@ -46,4 +49,3 @@ object noop extends js.Object {
   def obj(transform: TransformFunction): Transform = js.native
   def obj(transform: TransformFunction, flush: FlushCallback): Transform = js.native
 }
-

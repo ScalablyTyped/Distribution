@@ -8,43 +8,18 @@ import typings.actionsOnGoogle.v1Mod.DialogflowV1Fulfillment
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/dialogflow/incoming", JSImport.Namespace)
 @js.native
 object incomingMod extends js.Object {
+  
   @js.native
   /** @hidden */
   class Incoming () extends js.Object {
     def this(fulfillment: js.Array[GoogleCloudDialogflowV2IntentMessage]) = this()
     def this(fulfillment: DialogflowV1Fulfillment) = this()
-    /**
-      * Gets the Dialogflow incoming messages as an iterator.
-      * Messages are converted into client library class instances or a string.
-      * See {@link Incoming#get|conv.incoming.get} for details on how the conversion works.
-      *
-      * @example
-      * ```javascript
-      *
-      * // Dialogflow
-      * const app = dialogflow()
-      *
-      * // Create messages in the Dialogflow Console Intent Responses section
-      * app.intent('Default Welcome Intent', conv => {
-      *   const messages = [...conv.incoming]
-      *   // do something with the messages
-      *   // or just spread them out back to the user
-      *   conv.ask(`Here's what was set in the Dialogflow console`)
-      *   conv.ask(...conv.incoming)
-      * }
-      * ```
-      *
-      * @public
-      */
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[IncomingMessage]] = js.native
-    /** @public */
-    var parsed: js.Array[IncomingMessage] = js.native
+    
     /**
       * Gets the first Dialogflow incoming message with the given type.
       * Messages are converted into client library class instances or a string.
@@ -106,6 +81,35 @@ object incomingMod extends js.Object {
     /** @public */
     @JSName("get")
     def get_string(`type`: string): String = js.native
+    
+    /**
+      * Gets the Dialogflow incoming messages as an iterator.
+      * Messages are converted into client library class instances or a string.
+      * See {@link Incoming#get|conv.incoming.get} for details on how the conversion works.
+      *
+      * @example
+      * ```javascript
+      *
+      * // Dialogflow
+      * const app = dialogflow()
+      *
+      * // Create messages in the Dialogflow Console Intent Responses section
+      * app.intent('Default Welcome Intent', conv => {
+      *   const messages = [...conv.incoming]
+      *   // do something with the messages
+      *   // or just spread them out back to the user
+      *   conv.ask(`Here's what was set in the Dialogflow console`)
+      *   conv.ask(...conv.incoming)
+      * }
+      * ```
+      *
+      * @public
+      */
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[IncomingMessage]] = js.native
+    
+    /** @public */
+    var parsed: js.Array[IncomingMessage] = js.native
   }
   
   trait _IncomingMessage extends js.Object
@@ -123,4 +127,3 @@ object incomingMod extends js.Object {
   */
   type IncomingMessage = _IncomingMessage | String | JsonObject
 }
-

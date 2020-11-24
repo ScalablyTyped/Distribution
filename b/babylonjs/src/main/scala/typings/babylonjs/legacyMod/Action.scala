@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Action")
 @js.native
@@ -22,21 +22,21 @@ class Action protected ()
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "Action")
 @js.native
 object Action extends js.Object {
+  
+  def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = js.native
   /**
     * Internal only
     * @hidden
     */
-  def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = js.native
   def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): Name = js.native
+  
   /**
     * Internal only
     * @hidden
     */
   def _SerializeValueAsString(value: js.Any): String = js.native
 }
-

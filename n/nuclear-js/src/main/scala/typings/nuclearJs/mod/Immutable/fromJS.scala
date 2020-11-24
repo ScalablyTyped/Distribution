@@ -4,11 +4,12 @@ import typings.immutable.Immutable.Collection.Indexed
 import typings.immutable.Immutable.Collection.Keyed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nuclear-js", "Immutable.fromJS")
 @js.native
 object fromJS extends js.Object {
+  
   def apply(jsValue: js.Any): js.Any = js.native
   def apply(
     jsValue: js.Any,
@@ -20,4 +21,3 @@ object fromJS extends js.Object {
     ]
   ): js.Any = js.native
 }
-

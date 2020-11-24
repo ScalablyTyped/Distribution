@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
@@ -14,8 +14,8 @@ trait XLabeledDataSequence2
   extends XLabeledDataSequence
      with XModifyBroadcaster
      with XCloneable
-
 object XLabeledDataSequence2 {
+  
   @scala.inline
   def apply(
     Label: XDataSequence,
@@ -35,4 +35,3 @@ object XLabeledDataSequence2 {
     __obj.asInstanceOf[XLabeledDataSequence2]
   }
 }
-

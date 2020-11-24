@@ -12,7 +12,7 @@ Temporary files, directories or names!
 | Keywords           | tmp, temp, tmpfile, tempfile, tmpdir, tempdir, temporary, filename, random |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 4594444 |
+| # downloads        | 6633499 |
 | # stars            | 0 |
 
 ## Links

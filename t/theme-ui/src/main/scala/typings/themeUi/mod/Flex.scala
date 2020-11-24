@@ -7,10 +7,9 @@ import typings.themeUi.themeUiStrings.div
 import typings.themeUiComponents.mod.FlexStyleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("theme-ui", "Flex")
 @js.native
 object Flex
   extends TopLevel[StyledComponent[ComponentProps[div], FlexStyleProps, js.Object]]
-

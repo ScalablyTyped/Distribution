@@ -2,7 +2,7 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows you to manually organize the values in a source data column into
@@ -22,37 +22,43 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaManualRule extends js.Object {
+  
   /**
     * The list of group names and the corresponding items from the source data
     * that map to each group name.
     */
   var groups: js.UndefOr[js.Array[SchemaManualRuleGroup]] = js.native
 }
-
 object SchemaManualRule {
+  
   @scala.inline
   def apply(): SchemaManualRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManualRule]
   }
+  
   @scala.inline
   implicit class SchemaManualRuleOps[Self <: SchemaManualRule] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGroupsVarargs(value: SchemaManualRuleGroup*): Self = this.set("groups", js.Array(value :_*))
+    
     @scala.inline
     def setGroups(value: js.Array[SchemaManualRuleGroup]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGroups: Self = this.set("groups", js.undefined)
   }
-  
 }
-

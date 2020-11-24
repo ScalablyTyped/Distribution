@@ -2,13 +2,12 @@ package typings.tinycon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tinyconStrings {
-  @js.native
-  sealed trait force extends js.Object
   
   @scala.inline
   def force: force = "force".asInstanceOf[force]
+  @js.native
+  sealed trait force extends js.Object
 }
-

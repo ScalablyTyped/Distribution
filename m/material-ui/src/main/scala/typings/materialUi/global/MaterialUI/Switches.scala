@@ -2,11 +2,12 @@ package typings.materialUi.global.MaterialUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__MaterialUI.Switches")
 @js.native
 object Switches extends js.Object {
+  
   @js.native
   class Checkbox ()
     extends typings.materialUi.MaterialUI.Switches.Checkbox
@@ -26,6 +27,4 @@ object Switches extends js.Object {
   @js.native
   class Toggle ()
     extends typings.materialUi.MaterialUI.Switches.Toggle
-  
 }
-

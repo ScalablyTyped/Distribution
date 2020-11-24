@@ -11,11 +11,12 @@ import typings.stripe.mod.plans.IPlanCreationOptions
 import typings.stripe.mod.plans.IPlanUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Plans")
 @js.native
 class Plans () extends StripeResource {
+  
   def create(data: IPlanCreationOptions): js.Promise[IPlan] = js.native
   /**
     * You can create plans easily via the plan management page of the Stripe dashboard. Plan creation is also
@@ -28,6 +29,7 @@ class Plans () extends StripeResource {
   def create(data: IPlanCreationOptions, options: HeaderOptions): js.Promise[IPlan] = js.native
   def create(data: IPlanCreationOptions, options: HeaderOptions, response: IResponseFn[IPlan]): js.Promise[IPlan] = js.native
   def create(data: IPlanCreationOptions, response: IResponseFn[IPlan]): js.Promise[IPlan] = js.native
+  
   def del(planName: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete plans via the plan management page of the Stripe dashboard. However, deleting a plan does not affect
@@ -41,6 +43,7 @@ class Plans () extends StripeResource {
   def del(planName: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def del(planName: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def del(planName: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[IPlan] = js.native
   def list(data: IPlanListOptions): IListPromise[IPlan] = js.native
   /**
@@ -57,6 +60,7 @@ class Plans () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IPlan] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IPlan]]): IListPromise[IPlan] = js.native
   def list(response: IResponseFn[IList[IPlan]]): IListPromise[IPlan] = js.native
+  
   def retrieve(planName: String): js.Promise[IPlan] = js.native
   /**
     * Retrieves the plan with the given ID.
@@ -68,6 +72,7 @@ class Plans () extends StripeResource {
   def retrieve(planName: String, options: HeaderOptions): js.Promise[IPlan] = js.native
   def retrieve(planName: String, options: HeaderOptions, response: IResponseFn[IPlan]): js.Promise[IPlan] = js.native
   def retrieve(planName: String, response: IResponseFn[IPlan]): js.Promise[IPlan] = js.native
+  
   def update(planName: String, data: IPlanUpdateOptions): js.Promise[IPlan] = js.native
   /**
     * Updates the name of a plan. Other plan details (price, interval, etc.) are, by design, not editable.
@@ -81,4 +86,3 @@ class Plans () extends StripeResource {
   def update(planName: String, data: IPlanUpdateOptions, options: HeaderOptions, response: IResponseFn[IPlan]): js.Promise[IPlan] = js.native
   def update(planName: String, data: IPlanUpdateOptions, response: IResponseFn[IPlan]): js.Promise[IPlan] = js.native
 }
-

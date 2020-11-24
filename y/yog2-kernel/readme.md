@@ -10,9 +10,9 @@ yog2 kernel
 | ------------------ | :-------------: |
 | Full name          | yog2-kernel |
 | Keywords           | nodejs, fis |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 4765 |
+| # downloads        | 3322 |
 | # stars            | 0 |
 
 ## Links

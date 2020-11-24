@@ -8,7 +8,7 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for DepthTexture.
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DepthResource extends BufferResource
-
 object DepthResource {
+  
   @scala.inline
   def apply(
     _height: Double,
@@ -44,4 +44,3 @@ object DepthResource {
     __obj.asInstanceOf[DepthResource]
   }
 }
-

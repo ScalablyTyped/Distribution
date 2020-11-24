@@ -11,8 +11,8 @@ MongoDB URI parser
 | Full name          | muri |
 | Keywords           | mongodb, uri, parser |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 6228393 |
+| # dependents       | 29 |
+| # downloads        | 5130677 |
 | # stars            | 2 |
 
 ## Links

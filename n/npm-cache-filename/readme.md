@@ -11,8 +11,8 @@ Given a cache folder and url, return the appropriate cache folder.
 | Full name          | npm-cache-filename |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 13998473 |
+| # dependents       | 36 |
+| # downloads        | 20426659 |
 | # stars            | 0 |
 
 ## Links

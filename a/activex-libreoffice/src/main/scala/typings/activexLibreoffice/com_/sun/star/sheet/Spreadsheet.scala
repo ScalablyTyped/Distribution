@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XProtectable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a complete spreadsheet in a spreadsheet document.
@@ -32,6 +32,7 @@ trait Spreadsheet
      with XSheetAuditing
      with XSheetLinkable
      with XExternalSheetName {
+  
   /**
     * specifies whether the sheet has an automatic print area.
     *
@@ -48,14 +49,19 @@ trait Spreadsheet
     * @see XPrintAreas
     */
   var AutomaticPrintArea: Boolean = js.native
+  
   /** specifies all conditional formats of that sheet */
   var ConditionalFormats: XConditionalFormats = js.native
+  
   /** specifies if the sheet is visible. */
   var IsVisible: Boolean = js.native
+  
   /** specifies the page style of the sheet. */
   var PageStyle: String = js.native
+  
   /** specifies the color of the sheet tab, if any. */
   var TabColor: Color = js.native
+  
   /**
     * specifies the direction of the columns in the spreadsheet.
     *
@@ -65,8 +71,8 @@ trait Spreadsheet
     */
   var TableLayout: Double = js.native
 }
-
 object Spreadsheet {
+  
   @scala.inline
   def apply(
     AutomaticPrintArea: Boolean,
@@ -111,30 +117,38 @@ object Spreadsheet {
     js.Dynamic.global.Object.assign(__obj, XTableChartsSupplier)
     __obj.asInstanceOf[Spreadsheet]
   }
+  
   @scala.inline
   implicit class SpreadsheetOps[Self <: Spreadsheet] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAutomaticPrintArea(value: Boolean): Self = this.set("AutomaticPrintArea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConditionalFormats(value: XConditionalFormats): Self = this.set("ConditionalFormats", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPageStyle(value: String): Self = this.set("PageStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTabColor(value: Color): Self = this.set("TabColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTableLayout(value: Double): Self = this.set("TableLayout", value.asInstanceOf[js.Any])
   }
-  
 }
-

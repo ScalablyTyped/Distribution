@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigtableadmin/v2", "bigtableadmin_v2.Resource$Projects$Instances$Tables")
 @js.native
 class ResourceProjectsInstancesTables protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.checkConsistency
     * @desc Checks replication consistency based on a consistency token, that
@@ -47,6 +47,9 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCheckConsistencyResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.create
     * @desc Creates a new table in the specified instance. The table can be
@@ -78,6 +81,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.delete
     * @desc Permanently deletes a specified table and all of its data.
@@ -106,6 +110,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.dropRowRange
     * @desc Permanently drop/delete a row range from a specified table. The
@@ -140,6 +145,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.generateConsistencyToken
     * @desc Generates a consistency token for a Table, which can be used in
@@ -175,6 +181,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateConsistencyTokenResponse]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.get
     * @desc Gets metadata information about the specified table.
@@ -204,6 +211,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.getIamPolicy
     * @desc Gets the access control policy for an instance resource. Returns an
@@ -237,6 +245,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.list
     * @desc Lists all tables served from a specified instance.
@@ -271,6 +280,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTablesResponse]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.modifyColumnFamilies
     * @desc Performs a series of column family modifications on the specified
@@ -306,6 +316,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.setIamPolicy
     * @desc Sets the access control policy on a table resource. Replaces any
@@ -339,6 +350,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.tables.testIamPermissions
     * @desc Returns permissions that the caller has on the specified table
@@ -373,4 +385,3 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

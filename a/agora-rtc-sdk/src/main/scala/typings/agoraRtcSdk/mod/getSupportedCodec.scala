@@ -3,11 +3,12 @@ package typings.agoraRtcSdk.mod
 import typings.agoraRtcSdk.anon.Audio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agora-rtc-sdk", "getSupportedCodec")
 @js.native
 object getSupportedCodec extends js.Object {
+  
   /**
     * Gets the supported codec of the web browser
     *
@@ -48,4 +49,3 @@ object getSupportedCodec extends js.Object {
   def apply(): js.Promise[Audio] = js.native
   def apply(supportedCodecOptions: typings.agoraRtcSdk.anon.Stream): js.Promise[Audio] = js.native
 }
-

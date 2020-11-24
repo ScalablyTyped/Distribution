@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "exit-hook"
-version := "2.2.0-65081f"
+version := "2.2.0-ade6cd"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

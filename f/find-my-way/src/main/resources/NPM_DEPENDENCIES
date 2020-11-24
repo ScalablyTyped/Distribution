@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "find-my-way" : "2.2.3"
+      "find-my-way" : "2.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "find-my-way" : "2.2.3"
+      "find-my-way" : "2.2.5"
     }
   ],
   "compile-devDependencies" : [

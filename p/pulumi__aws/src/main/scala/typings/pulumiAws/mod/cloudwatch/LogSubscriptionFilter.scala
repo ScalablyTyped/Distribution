@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "cloudwatch.LogSubscriptionFilter")
 @js.native
@@ -23,11 +23,11 @@ class LogSubscriptionFilter protected ()
   def this(name: String, args: LogSubscriptionFilterArgs) = this()
   def this(name: String, args: LogSubscriptionFilterArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "cloudwatch.LogSubscriptionFilter")
 @js.native
 object LogSubscriptionFilter extends js.Object {
+  
   /**
     * Get an existing LogSubscriptionFilter resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object LogSubscriptionFilter extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.logSubscriptionFilterMod.LogSubscriptionFilter = js.native
   def get(name: String, id: Input[ID], state: LogSubscriptionFilterState): typings.pulumiAws.logSubscriptionFilterMod.LogSubscriptionFilter = js.native
   def get(name: String, id: Input[ID], state: LogSubscriptionFilterState, opts: CustomResourceOptions): typings.pulumiAws.logSubscriptionFilterMod.LogSubscriptionFilter = js.native
+  
   /**
     * Returns true if the given object is an instance of LogSubscriptionFilter.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean = js.native
 }
-

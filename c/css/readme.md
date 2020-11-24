@@ -9,10 +9,10 @@ CSS parser / stringifier
 | ------------------ | :-------------: |
 | Full name          | css |
 | Keywords           | css, parser, stringifier, stylesheet |
-| # releases         | 4 |
-| # dependents       | 802 |
-| # downloads        | 125846089 |
-| # stars            | 30 |
+| # releases         | 2 |
+| # dependents       | 926 |
+| # downloads        | 268768388 |
+| # stars            | 31 |
 
 ## Links
 - [Homepage](https://github.com/reworkcss/css#readme)

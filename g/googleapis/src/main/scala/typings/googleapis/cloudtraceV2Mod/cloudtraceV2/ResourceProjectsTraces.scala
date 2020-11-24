@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtrace/v2", "cloudtrace_v2.Resource$Projects$Traces")
 @js.native
 class ResourceProjectsTraces protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var spans: ResourceProjectsTracesSpans = js.native
+  
   /**
     * cloudtrace.projects.traces.batchWrite
     * @desc Sends new spans to new or existing traces. You cannot update
@@ -44,5 +43,8 @@ class ResourceProjectsTraces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
+  var spans: ResourceProjectsTracesSpans = js.native
 }
-

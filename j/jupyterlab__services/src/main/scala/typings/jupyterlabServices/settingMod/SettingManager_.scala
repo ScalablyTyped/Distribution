@@ -6,7 +6,7 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
 import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services/lib/setting", "SettingManager")
 @js.native
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
   */
 class SettingManager_ () extends DataConnector[IPlugin, String, String, String] {
   def this(options: IOptions) = this()
+  
   /**
     * The server settings used to make API requests.
     */
   val serverSettings: ISettings = js.native
 }
-

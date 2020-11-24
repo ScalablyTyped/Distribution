@@ -2,12 +2,12 @@ package typings.winrt.Windows.Media.Capture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CameraCaptureUIVideoCaptureSettings extends ICameraCaptureUIVideoCaptureSettings
-
 object CameraCaptureUIVideoCaptureSettings {
+  
   @scala.inline
   def apply(
     allowTrimming: Boolean,
@@ -19,4 +19,3 @@ object CameraCaptureUIVideoCaptureSettings {
     __obj.asInstanceOf[CameraCaptureUIVideoCaptureSettings]
   }
 }
-

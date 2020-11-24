@@ -11,8 +11,8 @@ Determine if a function is a native generator function.
 | Full name          | is-generator-function |
 | Keywords           | generator, generator function, es6, es2015, yield, function, function* |
 | # releases         | 1 |
-| # dependents       | 64 |
-| # downloads        | 27801695 |
+| # dependents       | 69 |
+| # downloads        | 44720607 |
 | # stars            | 4 |
 
 ## Links

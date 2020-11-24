@@ -3,7 +3,7 @@ package typings.makerJs.global.MakerJs.models
 import typings.makerJs.MakerJs.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.RoundRectangle")
 @js.native
@@ -36,4 +36,3 @@ class RoundRectangle protected ()
     */
   def this(width: Double, height: Double, radius: Double) = this()
 }
-

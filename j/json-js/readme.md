@@ -11,8 +11,8 @@ JSON in JavaScript
 | Full name          | json-js |
 | Keywords           | cyclic, json, cycle, parsing |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 56039 |
+| # dependents       | 2 |
+| # downloads        | 76650 |
 | # stars            | 0 |
 
 ## Links

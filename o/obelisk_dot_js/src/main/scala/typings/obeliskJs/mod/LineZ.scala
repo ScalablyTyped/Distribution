@@ -2,7 +2,7 @@ package typings.obeliskJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "LineZ")
 @js.native
@@ -15,4 +15,3 @@ class LineZ () extends AbstractPrimitive {
   def this(dimension: LineZDimension, color: js.UndefOr[scala.Nothing], useDefaultCanvas: Boolean) = this()
   def this(dimension: LineZDimension, color: LineColor, useDefaultCanvas: Boolean) = this()
 }
-

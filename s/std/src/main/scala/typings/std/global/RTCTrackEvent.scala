@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.RTCTrackEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCTrackEvent")
 @js.native
@@ -12,7 +12,6 @@ class RTCTrackEvent protected ()
   extends typings.std.RTCTrackEvent {
   def this(`type`: java.lang.String, eventInitDict: RTCTrackEventInit) = this()
 }
-
 @JSGlobal("RTCTrackEvent")
 @js.native
 object RTCTrackEvent
@@ -21,4 +20,3 @@ object RTCTrackEvent
       /* eventInitDict */ RTCTrackEventInit, 
       typings.std.RTCTrackEvent
     ]
-

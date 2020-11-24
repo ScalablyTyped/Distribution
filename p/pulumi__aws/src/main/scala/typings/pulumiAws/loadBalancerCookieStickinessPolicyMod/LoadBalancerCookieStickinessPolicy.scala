@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy")
 @js.native
@@ -22,32 +22,36 @@ class LoadBalancerCookieStickinessPolicy protected () extends CustomResource {
   /** @deprecated aws.elasticloadbalancing.LoadBalancerCookieStickinessPolicy has been deprecated in favor of aws.elb.LoadBalancerCookieStickinessPolicy */
   def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs) = this()
   def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The time period after which
     * the session cookie should be considered stale, expressed in seconds.
     */
   val cookieExpirationPeriod: Output_[js.UndefOr[Double]] = js.native
+  
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
   val lbPort: Output_[Double] = js.native
+  
   /**
     * The load balancer to which the policy
     * should be attached.
     */
   val loadBalancer: Output_[String] = js.native
+  
   /**
     * The name of the stickiness policy.
     */
   val name: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy")
 @js.native
 object LoadBalancerCookieStickinessPolicy extends js.Object {
+  
   /**
     * Get an existing LoadBalancerCookieStickinessPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -66,10 +70,10 @@ object LoadBalancerCookieStickinessPolicy extends js.Object {
     state: LoadBalancerCookieStickinessPolicyState,
     opts: CustomResourceOptions
   ): LoadBalancerCookieStickinessPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of LoadBalancerCookieStickinessPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerCookieStickinessPolicy.LoadBalancerCookieStickinessPolicy */ Boolean = js.native
 }
-

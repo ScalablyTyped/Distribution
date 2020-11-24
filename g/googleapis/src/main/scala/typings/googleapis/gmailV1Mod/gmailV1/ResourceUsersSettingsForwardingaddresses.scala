@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Forwardingaddresses")
 @js.native
 class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.settings.forwardingAddresses.create
     * @desc Creates a forwarding address. If ownership verification is
@@ -50,6 +52,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingAddress]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.forwardingAddresses.delete
     * @desc Deletes the specified forwarding address and revokes any
@@ -82,6 +85,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.forwardingAddresses.get
     * @desc Gets the specified forwarding address.
@@ -114,6 +118,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingAddress]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.forwardingAddresses.list
     * @desc Lists the forwarding addresses for the specified account.
@@ -146,4 +151,3 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListForwardingAddressesResponse]
   ): Unit = js.native
 }
-

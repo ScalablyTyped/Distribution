@@ -4,7 +4,7 @@ import typings.openlayers.mod.Feature
 import typings.openlayers.mod.olx.interaction.SnapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -50,6 +50,7 @@ import scala.scalajs.js.annotation._
   */
 class Snap () extends Pointer {
   def this(opt_options: SnapOptions) = this()
+  
   /**
     * Add a feature to the collection of features that we may snap to.
     * @param feature Feature.
@@ -59,6 +60,7 @@ class Snap () extends Pointer {
     */
   def addFeature(feature: Feature): Unit = js.native
   def addFeature(feature: Feature, opt_listen: Boolean): Unit = js.native
+  
   /**
     * Remove a feature from the collection of features that we may snap to.
     * @param feature Feature
@@ -69,4 +71,3 @@ class Snap () extends Pointer {
   def removeFeature(feature: Feature): Unit = js.native
   def removeFeature(feature: Feature, opt_unlisten: Boolean): Unit = js.native
 }
-

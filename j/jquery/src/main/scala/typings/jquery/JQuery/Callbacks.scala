@@ -3,11 +3,12 @@ package typings.jquery.JQuery
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:ban-types
 @js.native
 trait Callbacks[T /* <: js.Function */] extends js.Object {
+  
   /**
     * Add a callback or a collection of callbacks to a callback list.
     * @param callback A function, or array of functions, that are to be added to the callback list.
@@ -47,6 +48,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def add(callback: TypeOrArray[T], callbacks: TypeOrArray[T]*): this.type = js.native
+  
   /**
     * Disable a callback list from doing anything more.
     * @see \`{@link https://api.jquery.com/callbacks.disable/ }\`
@@ -76,6 +78,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def disable(): this.type = js.native
+  
   /**
     * Determine if the callbacks list has been disabled.
     * @see \`{@link https://api.jquery.com/callbacks.disabled/ }\`
@@ -105,6 +108,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def disabled(): Boolean = js.native
+  
   /**
     * Remove all of the callbacks from a list.
     * @see \`{@link https://api.jquery.com/callbacks.empty/ }\`
@@ -138,6 +142,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def empty(): this.type = js.native
+  
   /**
     * Call all of the callbacks with the given arguments.
     * @param args The argument or list of arguments to pass back to the callback list.
@@ -175,6 +180,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def fire(args: js.Any*): this.type = js.native
+  
   /**
     * Call all callbacks in a list with the given context and arguments.
     * @param context A reference to the context in which the callbacks in the list should be fired.
@@ -202,6 +208,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
     */
   def fireWith(context: js.Object): this.type = js.native
   def fireWith(context: js.Object, args: ArrayLike[_]): this.type = js.native
+  
   /**
     * Determine if the callbacks have already been called at least once.
     * @see \`{@link https://api.jquery.com/callbacks.fired/ }\`
@@ -227,6 +234,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def fired(): Boolean = js.native
+  
   /**
     * Determine whether or not the list has any callbacks attached. If a callback is provided as an argument, determine whether it is in a list.
     * @param callback The callback to search for.
@@ -258,6 +266,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
     */
   def has(): Boolean = js.native
   def has(callback: T): Boolean = js.native
+  
   /**
     * Lock a callback list in its current state.
     * @see \`{@link https://api.jquery.com/callbacks.lock/ }\`
@@ -352,6 +361,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def lock(): this.type = js.native
+  
   /**
     * Determine if the callbacks list has been locked.
     * @see \`{@link https://api.jquery.com/callbacks.locked/ }\`
@@ -381,6 +391,7 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
   ```
     */
   def locked(): Boolean = js.native
+  
   /**
     * Remove a callback or a collection of callbacks from a callback list.
     * @param callbacks A function, or array of functions, that are to be removed from the callback list.
@@ -413,4 +424,3 @@ trait Callbacks[T /* <: js.Function */] extends js.Object {
     */
   def remove(callbacks: T*): this.type = js.native
 }
-

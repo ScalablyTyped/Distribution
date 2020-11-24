@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "FunctionBreakpoint")
 @js.native
@@ -79,9 +79,9 @@ class FunctionBreakpoint protected () extends Breakpoint {
     hitCondition: String,
     logMessage: String
   ) = this()
+  
   /**
     * The name of the function to which this breakpoint is attached.
     */
   val functionName: String = js.native
 }
-

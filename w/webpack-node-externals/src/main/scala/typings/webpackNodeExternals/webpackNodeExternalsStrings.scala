@@ -2,9 +2,25 @@ package typings.webpackNodeExternals
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackNodeExternalsStrings {
+  
+  @scala.inline
+  def amd: amd = "amd".asInstanceOf[amd]
+  
+  @scala.inline
+  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
+  
+  @scala.inline
+  def `this`: `this` = "this".asInstanceOf[`this`]
+  
+  @scala.inline
+  def umd: umd = "umd".asInstanceOf[umd]
+  
+  @scala.inline
+  def `var`: `var` = "var".asInstanceOf[`var`]
+  
   @js.native
   sealed trait amd extends js.Object
   
@@ -19,16 +35,4 @@ object webpackNodeExternalsStrings {
   
   @js.native
   sealed trait `var` extends js.Object
-  
-  @scala.inline
-  def amd: amd = "amd".asInstanceOf[amd]
-  @scala.inline
-  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
-  @scala.inline
-  def `this`: `this` = "this".asInstanceOf[`this`]
-  @scala.inline
-  def umd: umd = "umd".asInstanceOf[umd]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
 }
-

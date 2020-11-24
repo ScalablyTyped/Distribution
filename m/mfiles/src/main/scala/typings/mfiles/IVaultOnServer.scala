@@ -3,13 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFAuthType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultOnServer extends js.Object {
+  
   val GUID: String = js.native
-  val Name: String = js.native
+  
   def LogIn(): IVault = js.native
+  
   def LogInAsUser(
     AuthType: MFAuthType,
     UserName: String,
@@ -60,12 +62,14 @@ trait IVaultOnServer extends js.Object {
     TimeZone: ITimeZoneInformation
   ): IVault = js.native
   def LogInAsUser(AuthType: MFAuthType, UserName: Null, Password: Null, Domain: Null, TimeZone: ITimeZoneInformation): IVault = js.native
+  
   def LogInAsUserWithAuthenticationData(
     PluginInfo: IPluginInfo,
     AuthenticationData: INamedValues,
     AttemptIdentifier: String,
     TimeZone: ITimeZoneInformation
   ): IAuthenticationResult = js.native
+  
   def LogInAsUserWithSPN(
     AuthType: MFAuthType,
     UserName: String,
@@ -194,5 +198,6 @@ trait IVaultOnServer extends js.Object {
     SPN: Null,
     TimeZone: ITimeZoneInformation
   ): IVault = js.native
+  
+  val Name: String = js.native
 }
-

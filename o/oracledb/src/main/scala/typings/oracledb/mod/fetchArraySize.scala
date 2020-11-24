@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This property sets the size of an internal buffer used for fetching query rows from Oracle Database.
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "fetchArraySize")
 @js.native
 object fetchArraySize extends TopLevel[Double]
-

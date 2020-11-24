@@ -3,7 +3,7 @@ package typings.screeps
 import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Spawns are your colony centers. This structure can create, renew, and recycle
@@ -17,37 +17,7 @@ trait StructureSpawn
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {
-  /**
-    * The amount of energy containing in the spawn.
-    * @deprecated An alias for .store[RESOURCE_ENERGY].
-    */
-  var energy: Double = js.native
-  /**
-    * The total amount of energy the spawn can contain
-    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
-    */
-  var energyCapacity: Double = js.native
-  /**
-    * A shorthand to `Memory.spawns[spawn.name]`. You can use it for quick access
-    * the spawn’s specific memory data object.
-    *
-    * @see http://docs.screeps.com/global-objects.html#Memory-object
-    */
-  var memory: SpawnMemory = js.native
-  /**
-    * Spawn's name. You choose the name upon creating a new spawn, and it cannot
-    * be changed later. This name is a hash key to access the spawn via the
-    * `Game.spawns` object.
-    */
-  var name: String = js.native
-  /**
-    * If the spawn is in process of spawning a new creep, this object will contain the new creep’s information, or null otherwise.
-    */
-  var spawning: Spawning | Null = js.native
-  /**
-    * A Store object that contains cargo of this structure.
-    */
-  var store: StoreRESOURCEENERGYfalse = js.native
+  
   /**
     * Check if a creep can be created.
     *
@@ -61,6 +31,7 @@ trait StructureSpawn
     */
   def canCreateCreep(body: js.Array[BodyPartConstant]): ScreepsReturnCode = js.native
   def canCreateCreep(body: js.Array[BodyPartConstant], name: String): ScreepsReturnCode = js.native
+  
   /**
     * Start the creep spawning process.
     *
@@ -86,11 +57,40 @@ trait StructureSpawn
   def createCreep(body: js.Array[BodyPartConstant], name: js.UndefOr[scala.Nothing], memory: CreepMemory): ScreepsReturnCode | String = js.native
   def createCreep(body: js.Array[BodyPartConstant], name: String): ScreepsReturnCode | String = js.native
   def createCreep(body: js.Array[BodyPartConstant], name: String, memory: CreepMemory): ScreepsReturnCode | String = js.native
+  
+  /**
+    * The amount of energy containing in the spawn.
+    * @deprecated An alias for .store[RESOURCE_ENERGY].
+    */
+  var energy: Double = js.native
+  
+  /**
+    * The total amount of energy the spawn can contain
+    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
+    */
+  var energyCapacity: Double = js.native
+  
+  /**
+    * A shorthand to `Memory.spawns[spawn.name]`. You can use it for quick access
+    * the spawn’s specific memory data object.
+    *
+    * @see http://docs.screeps.com/global-objects.html#Memory-object
+    */
+  var memory: SpawnMemory = js.native
+  
+  /**
+    * Spawn's name. You choose the name upon creating a new spawn, and it cannot
+    * be changed later. This name is a hash key to access the spawn via the
+    * `Game.spawns` object.
+    */
+  var name: String = js.native
+  
   /**
     * Kill the creep and drop up to 100% of resources spent on its spawning and boosting depending on remaining life time. The target should be at adjacent square.
     * @param target The target creep object.
     */
   def recycleCreep(target: Creep): ScreepsReturnCode = js.native
+  
   /**
     * Increase the remaining time to live of the target creep.
     *
@@ -104,6 +104,7 @@ trait StructureSpawn
     * @param target The target creep object.
     */
   def renewCreep(target: Creep): ScreepsReturnCode = js.native
+  
   /**
     * Start the creep spawning process. The required energy amount can be withdrawn from all spawns and extensions in the room.
     *
@@ -131,5 +132,14 @@ trait StructureSpawn
     */
   def spawnCreep(body: js.Array[BodyPartConstant], name: String): ScreepsReturnCode = js.native
   def spawnCreep(body: js.Array[BodyPartConstant], name: String, opts: SpawnOptions): ScreepsReturnCode = js.native
+  
+  /**
+    * If the spawn is in process of spawning a new creep, this object will contain the new creep’s information, or null otherwise.
+    */
+  var spawning: Spawning | Null = js.native
+  
+  /**
+    * A Store object that contains cargo of this structure.
+    */
+  var store: StoreRESOURCEENERGYfalse = js.native
 }
-

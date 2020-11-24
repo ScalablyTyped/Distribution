@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Basic material is for rendering unlit geometry, either using a constant color or a
@@ -23,14 +23,15 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BasicMaterial extends Material {
+  
   /**
     * The flat color of the material (RGBA, where each component is 0 to 1).
     */
   var color: Color = js.native
+  
   /**
     * The color map of the material (default is null). If specified, the color map is
     * modulated by the color property.
     */
   var colorMap: Texture | Null = js.native
 }
-

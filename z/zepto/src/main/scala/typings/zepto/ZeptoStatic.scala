@@ -6,46 +6,11 @@ import typings.zepto.anon.Android
 import typings.zepto.anon.Chrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ZeptoStatic extends js.Object {
-  /**
-    * Object containing the default settings for Ajax requests. Most settings are described in $.ajax. The ones that are useful when set globally are:
-    * @example
-    *    timeout (default: 0): set to a non-zero value to specify a default timeout for Ajax requests in milliseconds
-    *    global (default: true): set to false to prevent firing Ajax events
-    *    xhr (default: XMLHttpRequest factory): set to a function that returns instances of XMLHttpRequest (or a compatible object)
-    *    accepts: MIME types to request from the server for specific dataType values:
-    *        script: “text/javascript, application/javascript”
-    *        json: “application/json”
-    *        xml: “application/xml, text/xml”
-    *        html: “text/html”
-    *        text: “text/plain”
-    **/
-  var ajaxSettings: ZeptoAjaxSettings = js.native
-  /**
-    * The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
-    **/
-  var browser: Chrome = js.native
-  /**
-    * Zepto.fn is an object that holds all of the methods that are available on Zepto collections, such as addClass(), attr(), and other. Adding a function to this object makes that method available on every Zepto collection.
-    **/
-  var fn: js.Any = js.native
-  /**
-    * Effects
-    **/
-  /**
-    * Global settings for animations.
-    **/
-  var fx: ZeptoEffects = js.native
-  /**
-    * Detect
-    **/
-  /**
-    * The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
-    **/
-  var os: Android = js.native
+  
   /**
     * @see ZeptoStatic();
     * @param collection
@@ -80,6 +45,7 @@ trait ZeptoStatic extends js.Object {
     * @param attributes
     **/
   def apply(selector: String, context: js.Any): ZeptoCollection = js.native
+  
   /**
     * Event
     **/
@@ -91,6 +57,7 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def Event(`type`: String, properties: js.Any): typings.std.Event = js.native
+  
   /**
     * Ajax
     **/
@@ -114,6 +81,7 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def ajax(options: ZeptoAjaxSettings): XMLHttpRequest = js.native
+  
   /**
     * Perform a JSONP request to fetch data from another domain.
     * This method has no advantages over $.ajax and should not be used.
@@ -121,6 +89,27 @@ trait ZeptoStatic extends js.Object {
     * @deprecated use $.ajax instead.
     **/
   def ajaxJSONP(options: ZeptoAjaxSettings): XMLHttpRequest = js.native
+  
+  /**
+    * Object containing the default settings for Ajax requests. Most settings are described in $.ajax. The ones that are useful when set globally are:
+    * @example
+    *    timeout (default: 0): set to a non-zero value to specify a default timeout for Ajax requests in milliseconds
+    *    global (default: true): set to false to prevent firing Ajax events
+    *    xhr (default: XMLHttpRequest factory): set to a function that returns instances of XMLHttpRequest (or a compatible object)
+    *    accepts: MIME types to request from the server for specific dataType values:
+    *        script: “text/javascript, application/javascript”
+    *        json: “application/json”
+    *        xml: “application/xml, text/xml”
+    *        html: “text/html”
+    *        text: “text/plain”
+    **/
+  var ajaxSettings: ZeptoAjaxSettings = js.native
+  
+  /**
+    * The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
+    **/
+  var browser: Chrome = js.native
+  
           // window and document tests break without this
   /**
     * Turn a dasherized string into “camel case”. Doesn’t affect already camel-cased strings.
@@ -128,6 +117,7 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def camelCase(str: String): String = js.native
+  
   /**
     * Check if the parent node contains the given DOM node. Returns false if both are the same node.
     * @param parent
@@ -135,6 +125,7 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def contains(parent: HTMLElement, node: HTMLElement): Boolean = js.native
+  
   /**
     * @see ZeptoStatic.each
     **/
@@ -145,6 +136,7 @@ trait ZeptoStatic extends js.Object {
     * @param fn
     **/
   def each(collection: js.Array[_], fn: js.Function2[/* index */ Double, /* item */ js.Any, Boolean]): Unit = js.native
+  
   /**
     * @see ZeptoStatic.extend
     * @param deep
@@ -158,6 +150,20 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def extend(target: js.Any, sources: js.Any*): js.Any = js.native
+  
+  /**
+    * Zepto.fn is an object that holds all of the methods that are available on Zepto collections, such as addClass(), attr(), and other. Adding a function to this object makes that method available on every Zepto collection.
+    **/
+  var fn: js.Any = js.native
+  
+  /**
+    * Effects
+    **/
+  /**
+    * Global settings for animations.
+    **/
+  var fx: ZeptoEffects = js.native
+  
   /**
     * @see ZeptoStatic.get
     * @param data See ZeptoAjaxSettings.data
@@ -177,6 +183,7 @@ trait ZeptoStatic extends js.Object {
     url: String,
     fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
+  
   /**
     * @see ZeptoStatic.getJSON
     * @param data See ZeptoAjaxSettings.data
@@ -196,6 +203,7 @@ trait ZeptoStatic extends js.Object {
     url: String,
     fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
+  
   /**
     * Get a new array containing only the items for which the callback function returned true.
     * @param items
@@ -203,6 +211,7 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def grep(items: js.Array[_], fn: js.Function1[/* item */ js.Any, Boolean]): js.Array[_] = js.native
+  
   /**
     * Get the position of element inside an array, or -1 if not found.
     * @param element
@@ -212,30 +221,35 @@ trait ZeptoStatic extends js.Object {
     **/
   def inArray(element: js.Any, array: js.Array[_]): Double = js.native
   def inArray(element: js.Any, array: js.Array[_], fromIndex: Double): Double = js.native
+  
   /**
     * True if the object is an array.
     * @param object
     * @return
     **/
   def isArray(`object`: js.Any): Boolean = js.native
+  
   /**
     * True if the object is a function.
     * @param object
     * @return
     **/
   def isFunction(`object`: js.Any): Boolean = js.native
+  
   /**
     * True if the object is a “plain” JavaScript object, which is only true for object literals and objects created with new Object.
     * @param object
     * @return
     **/
   def isPlainObject(`object`: js.Any): Boolean = js.native
+  
   /**
     * True if the object is a window object. This is useful for iframes where each one has its own window, and where these objects fail the regular obj === window check.
     * @param object
     * @return
     **/
   def isWindow(`object`: js.Any): Boolean = js.native
+  
   /**
     * Iterate through elements of collection and return all results of running the iterator function, with null and undefined values filtered out.
     * @param collection
@@ -243,6 +257,15 @@ trait ZeptoStatic extends js.Object {
     * @return
     **/
   def map(collection: js.Array[_], fn: js.Function2[/* item */ js.Any, /* index */ Double, _]): js.Array[_] = js.native
+  
+  /**
+    * Detect
+    **/
+  /**
+    * The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
+    **/
+  var os: Android = js.native
+  
   /**
     * Serialize an object to a URL-encoded string representation for use in Ajax request query strings and post data. If shallow is set, nested objects are not serialized and nested array values won’t use square brackets on their keys.
     * Also accepts an array in serializeArray format, where each item has “name” and “value” properties.
@@ -252,12 +275,14 @@ trait ZeptoStatic extends js.Object {
     **/
   def param(`object`: js.Any): String = js.native
   def param(`object`: js.Any, shallow: Boolean): String = js.native
+  
   /**
     * Alias for the native JSON.parse method.
     * @param str
     * @retrun
     **/
   def parseJSON(str: String): js.Any = js.native
+  
   /**
     * @see ZeptoStatic.post
     * @param data See ZeptoAjaxSettings.data
@@ -288,16 +313,19 @@ trait ZeptoStatic extends js.Object {
     fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit],
     dataType: String
   ): XMLHttpRequest = js.native
+  
   /**
     * Get a function that ensures that the value of this in the original function refers to the context object. In the second form, the original function is read from the specific property of the context object.
     **/
   def proxy(fn: js.Function, context: js.Any): js.Function = js.native
+  
   /**
     * Remove whitespace from beginning and end of a string; just like String.prototype.trim().
     * @param str
     * @return
     **/
   def trim(str: String): String = js.native
+  
   /**
     * Get string type of an object. Possible types are: null undefined boolean number string function array date regexp object error.
     * For other objects it will simply report “object”. To find out if an object is a plain JavaScript object, use isPlainObject.
@@ -306,4 +334,3 @@ trait ZeptoStatic extends js.Object {
     **/
   def `type`(`object`: js.Any): String = js.native
 }
-

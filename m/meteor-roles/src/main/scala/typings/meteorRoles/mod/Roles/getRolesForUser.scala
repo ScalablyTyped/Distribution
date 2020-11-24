@@ -2,11 +2,12 @@ package typings.meteorRoles.mod.Roles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.getRolesForUser")
 @js.native
 object getRolesForUser extends js.Object {
+  
   /**
     * Retrieve users roles
     *
@@ -21,4 +22,3 @@ object getRolesForUser extends js.Object {
   def apply(user: js.Object): js.Array[String] = js.native
   def apply(user: js.Object, group: String): js.Array[String] = js.native
 }
-

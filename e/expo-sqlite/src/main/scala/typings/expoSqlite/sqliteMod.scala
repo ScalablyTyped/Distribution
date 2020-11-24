@@ -3,11 +3,12 @@ package typings.expoSqlite
 import typings.expoSqlite.sqliteTypesMod.WebSQLDatabase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-sqlite/build/SQLite", JSImport.Namespace)
 @js.native
 object sqliteMod extends js.Object {
+  
   def openDatabase(name: String): WebSQLDatabase = js.native
   def openDatabase(
     name: String,
@@ -78,4 +79,3 @@ object sqliteMod extends js.Object {
     callback: js.Function1[/* db */ WebSQLDatabase, Unit]
   ): WebSQLDatabase = js.native
 }
-

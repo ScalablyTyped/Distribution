@@ -2,12 +2,12 @@ package typings.typescriptServices.TypeScript.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResolvedCompletionEntry extends CachedCompletionEntryDetails
-
 object ResolvedCompletionEntry {
+  
   @scala.inline
   def apply(
     docComment: String,
@@ -23,4 +23,3 @@ object ResolvedCompletionEntry {
     __obj.asInstanceOf[ResolvedCompletionEntry]
   }
 }
-

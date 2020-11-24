@@ -2,14 +2,17 @@ package typings.mocha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Mocha {
+  
   /**
     * Async callback function used for tests and hooks.
     */
   type AsyncFunc = js.ThisFunction0[/* this */ typings.mocha.Mocha.Context, js.Thenable[js.Any]]
+  
   type Done = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
+  
   /**
     * Callback function used for tests and hooks.
     */
@@ -18,6 +21,7 @@ package object Mocha {
     /* done */ typings.mocha.Mocha.Done, 
     scala.Unit
   ]
+  
   /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites. Indicates this suite should not be executed.
@@ -32,5 +36,6 @@ package object Mocha {
     /* fn */ js.ThisFunction0[/* this */ typings.mocha.Mocha.Suite, scala.Unit], 
     typings.mocha.Mocha.Suite | scala.Unit
   ]
+  
   type TestInterface = js.Function1[/* suite */ typings.mocha.Mocha.Suite, scala.Unit]
 }

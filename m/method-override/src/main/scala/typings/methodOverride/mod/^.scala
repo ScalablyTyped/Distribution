@@ -7,11 +7,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("method-override", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(getter: js.UndefOr[scala.Nothing], options: MethodOverrideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(getter: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
@@ -24,4 +25,3 @@ object ^ extends js.Object {
     options: MethodOverrideOptions
   ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

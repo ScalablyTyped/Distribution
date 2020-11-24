@@ -4,7 +4,7 @@ import typings.mqtt.mod.Client
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-iot-device-sdk", "jobs")
 @js.native
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 class jobs () extends device {
   def this(options: DeviceOptions) = this()
+  
   /**
     * Causes any existing queued job executions for the given thing to be published
     * to the appropriate subscribeToJobs handler. Only needs to be called once per thing.
@@ -24,6 +25,7 @@ class jobs () extends device {
     * @param callback - function (err) callback for when the startJobNotifications operation completes
     */
   def startJobNotifications(thingName: String, callback: js.Function1[/* error */ Error, Unit]): Client = js.native
+  
   /**
     * Subscribes to job execution notifications for the thing named `thingName`. If
     * `operationName` is specified then the callback will only be called when a job
@@ -45,6 +47,7 @@ class jobs () extends device {
     operationName: String,
     callback: js.Function2[/* err */ Error, /* job */ job, Unit]
   ): Unit = js.native
+  
   /**
     * Unsubscribes from job execution notifications for the thing named `thingName` having
     * operations with a value of the given `operationName`. If `operationName` is omitted then
@@ -56,4 +59,3 @@ class jobs () extends device {
     */
   def unsubscribeFromJobs(thingName: String, operationName: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

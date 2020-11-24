@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ganache-core" : "2.10.2"
+      "ganache-core" : "2.13.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ganache-core" : "2.10.2"
+      "ganache-core" : "2.13.1"
     }
   ],
   "compile-devDependencies" : [

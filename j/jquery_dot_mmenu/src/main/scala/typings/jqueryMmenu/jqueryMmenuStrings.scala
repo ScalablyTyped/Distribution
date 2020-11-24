@@ -2,9 +2,34 @@ package typings.jqueryMmenu
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryMmenuStrings {
+  
+  @scala.inline
+  def closeAllPanels: closeAllPanels = "closeAllPanels".asInstanceOf[closeAllPanels]
+  
+  @scala.inline
+  def closePanel: closePanel = "closePanel".asInstanceOf[closePanel]
+  
+  @scala.inline
+  def getInstance: getInstance = "getInstance".asInstanceOf[getInstance]
+  
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
+  
+  @scala.inline
+  def mmenu: mmenu = "mmenu".asInstanceOf[mmenu]
+  
+  @scala.inline
+  def openPanel: openPanel = "openPanel".asInstanceOf[openPanel]
+  
+  @scala.inline
+  def setSelected: setSelected = "setSelected".asInstanceOf[setSelected]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
   @js.native
   sealed trait closeAllPanels extends js.Object
   
@@ -28,22 +53,4 @@ object jqueryMmenuStrings {
   
   @js.native
   sealed trait update extends js.Object
-  
-  @scala.inline
-  def closeAllPanels: closeAllPanels = "closeAllPanels".asInstanceOf[closeAllPanels]
-  @scala.inline
-  def closePanel: closePanel = "closePanel".asInstanceOf[closePanel]
-  @scala.inline
-  def getInstance: getInstance = "getInstance".asInstanceOf[getInstance]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def mmenu: mmenu = "mmenu".asInstanceOf[mmenu]
-  @scala.inline
-  def openPanel: openPanel = "openPanel".asInstanceOf[openPanel]
-  @scala.inline
-  def setSelected: setSelected = "setSelected".asInstanceOf[setSelected]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
 }
-

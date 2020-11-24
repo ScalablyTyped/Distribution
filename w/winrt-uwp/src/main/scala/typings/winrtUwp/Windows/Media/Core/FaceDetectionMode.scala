@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FaceDetectionMode extends js.Object
-
 /** Specifies the mode used for face detection. */
 @JSGlobal("Windows.Media.Core.FaceDetectionMode")
 @js.native
 object FaceDetectionMode extends js.Object {
+  
   /** The prioritization of detection speed and result quality are balanced. */
   @js.native
   sealed trait balanced extends FaceDetectionMode
@@ -22,6 +22,4 @@ object FaceDetectionMode extends js.Object {
   /** The accuracy of face detection results is prioritized over the speed of face detection. */
   @js.native
   sealed trait highQuality extends FaceDetectionMode
-  
 }
-

@@ -10,9 +10,9 @@ An opiniated react form framework.
 | ------------------ | :-------------: |
 | Full name          | formol |
 | Keywords           | - |
-| # releases         | 74 |
+| # releases         | 35 |
 | # dependents       | 0 |
-| # downloads        | 8857 |
+| # downloads        | 3907 |
 | # stars            | 0 |
 
 ## Links

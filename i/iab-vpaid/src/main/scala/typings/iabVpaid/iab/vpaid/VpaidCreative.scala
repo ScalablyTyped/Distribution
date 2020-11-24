@@ -24,13 +24,14 @@ import typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile
 import typings.iabVpaid.iabVpaidStrings.AdVolumeChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Vpaid API reference: https://www.iab.com/wp-content/uploads/2015/06/VPAID_2_0_Final_04-10-2012.pdf
   */
 @js.native
 trait VpaidCreative extends js.Object {
+  
   /**
     * When the ad unit is in an expanded state, the video player may call `collapseAd()` to prompt
     * the ad unit to retract any extended ad space. The ad unit responds by setting the `adExpanded`
@@ -49,6 +50,7 @@ trait VpaidCreative extends js.Object {
     * However, only one collapsed state is required
     */
   def collapseAd(): Unit = js.native
+  
   /**
     * The video player calls `expandAd()` when the timing is appropriate for an expandable ad unit
     * to play at additional interactive ad space, such as an expanding panel. The video player may
@@ -58,6 +60,7 @@ trait VpaidCreative extends js.Object {
     * appearance of the ad.
     */
   def expandAd(): Unit = js.native
+  
   /**
     * The `adCompanions` property is new to VPAID 2.0.
     *
@@ -110,6 +113,7 @@ trait VpaidCreative extends js.Object {
     * ```
     */
   def getAdCompanions(): String = js.native
+  
   /**
     * The `adDuration` property is new to VPAID 2.0.
     *
@@ -125,6 +129,7 @@ trait VpaidCreative extends js.Object {
     * the ad unit returns a -2. Unknown duration is typical when the user has engaged the ad.
     */
   def getAdDuration(): Double = js.native
+  
   /**
     * The `adExpanded` Boolean value indicates whether the ad unit is in a state where additional
     * portions it occupies more UI area than its smallest area. If the ad unit has multiple collapsed
@@ -146,6 +151,7 @@ trait VpaidCreative extends js.Object {
     * @returns If the ad is in expanded mode
     */
   def getAdExpanded(): Boolean = js.native
+  
   /**
     * The `adHeight` property is new to VPAID 2.0.
     *
@@ -167,6 +173,7 @@ trait VpaidCreative extends js.Object {
     * @returns The actual height of the ad
     */
   def getAdHeight(): Double = js.native
+  
   /**
     * The `adIcons` property is new to VPAID 2.0.
     *
@@ -188,6 +195,7 @@ trait VpaidCreative extends js.Object {
     * icons of its own.
     */
   def getAdIcons(): Boolean = js.native
+  
   /**
     * The `adLinear` Boolean indicates whether the ad unit is in a linear (`true`) or non-linear (`false`)
     * mode of operation. The `adLinear` property should only be accessed after the ad unit has dispatched
@@ -201,6 +209,7 @@ trait VpaidCreative extends js.Object {
     * @returns The ad linearity: `true` for linear and `false` for non-linear
     */
   def getAdLinear(): Boolean = js.native
+  
   /**
     * The video player may use the `adRemainingTime` property to update player UI during ad playback,
     * such as displaying a playback counter or other ad duration indicator. The `adRemainingTime`
@@ -221,6 +230,7 @@ trait VpaidCreative extends js.Object {
     * @returns The remaining time in seconds
     */
   def getAdRemainingTime(): Double = js.native
+  
   /**
     * The `adSkippableState` property is new to VPAID 2.0.
     *
@@ -239,6 +249,7 @@ trait VpaidCreative extends js.Object {
     * @returns If the ad is skippable
     */
   def getAdSkippableState(): Boolean = js.native
+  
   /**
     * The video player uses the `adVolume` property to request the current value for ad volume (get).
     * The `adVolume` value is between 0 and 1 and is linear, where 0 is mute and 1 is maximum volume.
@@ -247,6 +258,7 @@ trait VpaidCreative extends js.Object {
     * @returns The ad volume between 0 and 1
     */
   def getAdVolume(): Double = js.native
+  
   /**
     * The `adWidth` property is new to VPAID 2.0.
     *
@@ -268,6 +280,7 @@ trait VpaidCreative extends js.Object {
     * @returns The actual width of the ad
     */
   def getAdWidth(): Double = js.native
+  
   /**
     * The video player calls `handshakeVersion` immediately after loading the ad unit to indicate to
     * the ad unit that VPAID will be used. The video player passes in its latest VPAID version string.
@@ -279,6 +292,7 @@ trait VpaidCreative extends js.Object {
     * @returns The proposed VPAID version
     */
   def handshakeVersion(playerVPAIDVersion: String): String = js.native
+  
   def initAd(
     width: Double,
     height: Double,
@@ -324,6 +338,7 @@ trait VpaidCreative extends js.Object {
     creativeData: CreativeData,
     environmentVars: EnvironmentVars
   ): Unit = js.native
+  
   /**
     * The video player calls `pauseAd()` to prompt the ad unit to pause ad display. The ad unit
     * responds by suspending any audio, animation or video and then sending the AdPaused event.
@@ -335,6 +350,7 @@ trait VpaidCreative extends js.Object {
     * lack of response as a failed attempt to pause the ad.
     */
   def pauseAd(): Unit = js.native
+  
   /**
     * The `resizeAd()` method is only called when the video player changes the width and height of
     * the video content container, which prompts the ad unit to scale or reposition. The ad unit
@@ -355,6 +371,7 @@ trait VpaidCreative extends js.Object {
     *                 viewmode is fullscreen.
     */
   def resizeAd(width: Double, height: Double, viewMode: ViewMode): Unit = js.native
+  
   /**
     * Following a call to `pauseAd()`, the video player calls `resumeAd()` to continue ad playback.
     * The ad unit responds by resuming playback and sending the `AdPlaying` event to confirm.
@@ -364,6 +381,7 @@ trait VpaidCreative extends js.Object {
     * playback of the ad.
     */
   def resumeAd(): Unit = js.native
+  
   /**
     * The video player uses the `adVolume` property to change the value of the ad unit’s volume (set).
     * The `adVolume` value is between 0 and 1 and is linear, where 0 is mute and 1 is maximum volume.
@@ -373,6 +391,7 @@ trait VpaidCreative extends js.Object {
     * @param volume The volume to set between 0 and 1
     */
   def setAdVolume(volume: Double): Unit = js.native
+  
   /**
     * The `skipAd()` method is new in VPAID 2.0.
     *
@@ -398,6 +417,7 @@ trait VpaidCreative extends js.Object {
     * method to close skipped ads that use earlier versions of VPAID.
     */
   def skipAd(): Unit = js.native
+  
   /**
     * `startAd()` is called by the video player when the video player is ready for the ad to display.
     * The ad unit responds by sending an `AdStarted` event that notifies the video player when the ad
@@ -405,6 +425,7 @@ trait VpaidCreative extends js.Object {
     * `startAd()` and `stopAd()` multiple times.
     */
   def startAd(): Unit = js.native
+  
   /**
     * The video player calls `stopAd()` when it will no longer display the ad or needs to cancel the
     * ad unit. The ad unit responds by closing the ad, cleaning up its resources and then sending
@@ -412,6 +433,7 @@ trait VpaidCreative extends js.Object {
     * "Error Handling and Timeouts" for more information on error reporting and timeouts.
     */
   def stopAd(): Unit = js.native
+  
   @JSName("subscribe")
   def subscribe_AdDurationChange(fn: js.Function0[Unit], event: AdDurationChange): Unit = js.native
   @JSName("subscribe")
@@ -507,6 +529,7 @@ trait VpaidCreative extends js.Object {
   def subscribe_AdVolumeChange(fn: js.Function0[Unit], event: AdVolumeChange): Unit = js.native
   @JSName("subscribe")
   def subscribe_AdVolumeChange(fn: js.Function0[Unit], event: AdVolumeChange, listenerScope: js.Object): Unit = js.native
+  
   @JSName("unsubscribe")
   def unsubscribe_AdDurationChange(fn: js.Function0[Unit], event: AdDurationChange): Unit = js.native
   @JSName("unsubscribe")
@@ -558,4 +581,3 @@ trait VpaidCreative extends js.Object {
   @JSName("unsubscribe")
   def unsubscribe_AdVolumeChange(fn: js.Function0[Unit], event: AdVolumeChange): Unit = js.native
 }
-

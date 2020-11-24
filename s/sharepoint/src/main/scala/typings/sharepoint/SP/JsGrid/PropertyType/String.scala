@@ -4,12 +4,12 @@ import typings.sharepoint.SP.JsGrid.IPropertyType
 import typings.sharepoint.anon.DataValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait String extends IPropertyType
-
 object String {
+  
   @scala.inline
   def apply(
     BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
@@ -19,4 +19,3 @@ object String {
     __obj.asInstanceOf[String]
   }
 }
-

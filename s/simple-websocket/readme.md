@@ -10,9 +10,9 @@ Simple, EventEmitter API for WebSockets (browser)
 | ------------------ | :-------------: |
 | Full name          | simple-websocket |
 | Keywords           | simple, simple websocket, simple-websocket, socket, websocket, ws |
-| # releases         | 11 |
-| # dependents       | 30 |
-| # downloads        | 265287 |
+| # releases         | 6 |
+| # dependents       | 33 |
+| # downloads        | 441879 |
 | # stars            | 1 |
 
 ## Links

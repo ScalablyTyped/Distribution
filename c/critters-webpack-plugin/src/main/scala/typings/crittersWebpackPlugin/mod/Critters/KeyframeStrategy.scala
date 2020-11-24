@@ -2,7 +2,7 @@ package typings.crittersWebpackPlugin.mod.Critters
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Controls which keyframes rules are inlined
@@ -16,13 +16,14 @@ import scala.scalajs.js.annotation._
   - typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none
 */
 trait KeyframeStrategy extends js.Object
-
 object KeyframeStrategy {
+  
   @scala.inline
   def all: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all = "all".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all]
+  
   @scala.inline
   def critical: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical = "critical".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical]
+  
   @scala.inline
   def none: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none = "none".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none]
 }
-

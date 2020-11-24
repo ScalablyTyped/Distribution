@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/hash" : "5.0.2"
+      "@ethersproject/hash" : "5.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/hash" : "5.0.2"
+      "@ethersproject/hash" : "5.0.7"
     }
   ],
   "compile-devDependencies" : [

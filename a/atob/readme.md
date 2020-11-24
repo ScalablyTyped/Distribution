@@ -10,13 +10,12 @@ atob for Node.JS and Linux / Mac / Windows CLI (it's a one-liner)
 | ------------------ | :-------------: |
 | Full name          | atob |
 | Keywords           | atob, browser |
-| # releases         | 4 |
-| # dependents       | 445 |
-| # downloads        | 433125249 |
+| # releases         | 0 |
+| # dependents       | 604 |
+| # downloads        | 556181374 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://git.coolaj86.com/coolaj86/atob.js.git)
 - [Npm](https://www.npmjs.com/package/atob)
     
 

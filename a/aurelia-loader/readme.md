@@ -11,8 +11,8 @@ An abstract module which specifies an interface for loading modules and view tem
 | Full name          | aurelia-loader |
 | Keywords           | aurelia, loader, modules |
 | # releases         | 3 |
-| # dependents       | 30 |
-| # downloads        | 533907 |
+| # dependents       | 31 |
+| # downloads        | 506343 |
 | # stars            | 0 |
 
 ## Links

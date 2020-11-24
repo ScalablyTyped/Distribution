@@ -3,7 +3,7 @@ package typings.reactNative.mod
 import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EmitterSubscription represents a subscription with listener and context data.
@@ -28,8 +28,10 @@ Instantiable4[
       /* context */ js.Any, 
       EmitterSubscription
     ] {
+  
   var context: js.Any = js.native
+  
   var emitter: EventEmitter = js.native
+  
   def listener(): js.Any = js.native
 }
-

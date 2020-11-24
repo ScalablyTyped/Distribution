@@ -3,11 +3,12 @@ package typings.grammarkdown
 import typings.grammarkdown.optionsMod.CompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/emitter", JSImport.Namespace)
 @js.native
 object emitterMod extends js.Object {
+  
   @js.native
   class EcmarkupEmitter ()
     extends typings.grammarkdown.ecmarkupMod.EcmarkupEmitter
@@ -25,6 +26,4 @@ object emitterMod extends js.Object {
   @js.native
   class MarkdownEmitter ()
     extends typings.grammarkdown.markdownMod.MarkdownEmitter
-  
 }
-

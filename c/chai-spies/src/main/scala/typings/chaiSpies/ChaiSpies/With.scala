@@ -3,10 +3,11 @@ package typings.chaiSpies.ChaiSpies
 import typings.chaiSpies.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait With extends js.Object {
+  
   /**
     * ####.with
     * Assert that a spy has been called with a given argument at least once, even if more arguments were provided.
@@ -35,6 +36,7 @@ trait With extends js.Object {
     i: js.UndefOr[js.Any],
     j: js.UndefOr[js.Any]
   ): Assertion = js.native
+  
   /**
     * ####.with.exactly
     * Similar to .with, but will pass only if the list of arguments is exactly the same as the one provided.
@@ -60,4 +62,3 @@ trait With extends js.Object {
     j: js.UndefOr[js.Any]
   ): Assertion = js.native
 }
-

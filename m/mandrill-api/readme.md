@@ -11,8 +11,8 @@ The official API client for the Mandrill email as a service product.
 | Full name          | mandrill-api |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 124 |
-| # downloads        | 3058826 |
+| # dependents       | 129 |
+| # downloads        | 3880669 |
 | # stars            | 19 |
 
 ## Links

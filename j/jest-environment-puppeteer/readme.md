@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-environment-puppeteer
 
-Typings are for version 4.3
+Typings are for version 4.4
 
 ## Library description:
 Puppeteer environment for Jest.
@@ -10,9 +10,9 @@ Puppeteer environment for Jest.
 | ------------------ | :-------------: |
 | Full name          | jest-environment-puppeteer |
 | Keywords           | jest, jest-environment, puppeteer, jest-puppeteer, chromeless, chrome-headless |
-| # releases         | 33 |
-| # dependents       | 9 |
-| # downloads        | 3883914 |
+| # releases         | 16 |
+| # dependents       | 11 |
+| # downloads        | 6061122 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "TextEdit")
 @js.native
@@ -14,6 +14,7 @@ class TextEdit protected () extends js.Object {
     * @param newText A string.
     */
   def this(range: Range, newText: String) = this()
+  
   /**
     * The eol-sequence used in the document.
     *
@@ -21,20 +22,22 @@ class TextEdit protected () extends js.Object {
     * whole document.
     */
   var newEol: js.UndefOr[EndOfLine] = js.native
+  
   /**
     * The string this edit will insert.
     */
   var newText: String = js.native
+  
   /**
     * The range this edit applies to.
     */
   var range: Range = js.native
 }
-
 /* static members */
 @JSImport("vscode", "TextEdit")
 @js.native
 object TextEdit extends js.Object {
+  
   /**
     * Utility to create a delete edit.
     *
@@ -42,6 +45,7 @@ object TextEdit extends js.Object {
     * @return A new text edit object.
     */
   def delete(range: Range): TextEdit = js.native
+  
   /**
     * Utility to create an insert edit.
     *
@@ -50,6 +54,7 @@ object TextEdit extends js.Object {
     * @return A new text edit object.
     */
   def insert(position: Position, newText: String): TextEdit = js.native
+  
   /**
     * Utility to create a replace edit.
     *
@@ -58,6 +63,7 @@ object TextEdit extends js.Object {
     * @return A new text edit object.
     */
   def replace(range: Range, newText: String): TextEdit = js.native
+  
   /**
     * Utility to create an eol-edit.
     *
@@ -66,4 +72,3 @@ object TextEdit extends js.Object {
     */
   def setEndOfLine(eol: EndOfLine): TextEdit = js.native
 }
-

@@ -10,11 +10,12 @@ import typings.squareConnect.squareConnectStrings.PAYROLL
 import typings.squareConnect.squareConnectStrings.REGISTER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Transaction")
 @js.native
 class Transaction () extends js.Object {
+  
   /**
     * If the transaction was created in the Square Point of Sale app, this value is the ID generated for the
     * transaction by Square Point of Sale. This ID has no relationship to the transaction's canonical `id`, which is
@@ -23,44 +24,52 @@ class Transaction () extends js.Object {
     * It is not currently possible with the Connect API to perform a transaction lookup by this value.
     */
   var client_id: js.UndefOr[String] = js.native
+  
   /**
-    * The time when the transaction was created, in RFC 3339 format.
+    * The timestamp for when the transaction was created, in RFC 3339 format.
     */
   var created_at: js.UndefOr[String] = js.native
+  
   /**
     * The transaction's unique ID, issued by Square payments servers.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * The ID of the transaction's associated location.
     */
   var location_id: js.UndefOr[String] = js.native
+  
   /**
     * The order_id is an identifier for the order associated with this transaction, if any.
     */
   var order_id: js.UndefOr[String] = js.native
+  
   /**
     * The Square product that processed the transaction. See [TransactionProduct](#type-transactionproduct) for possible values.
     */
   var product: js.UndefOr[
     REGISTER | EXTERNAL_API | BILLING | APPOINTMENTS | INVOICES | ONLINE_STORE | PAYROLL | OTHER
   ] = js.native
+  
   /**
     * If the transaction was created with the `Charge` endpoint, this value is the same as the value provided for
     * the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
     */
   var reference_id: js.UndefOr[String] = js.native
+  
   /**
     * Refunds that have been applied to any tender in the transaction.
     */
   var refunds: js.UndefOr[js.Array[Refund]] = js.native
+  
   /**
     * The shipping address provided in the request, if any.
     */
   var shipping_address: js.UndefOr[Address] = js.native
+  
   /**
     * The tenders used to pay in the transaction.
     */
   var tenders: js.UndefOr[js.Array[Tender]] = js.native
 }
-

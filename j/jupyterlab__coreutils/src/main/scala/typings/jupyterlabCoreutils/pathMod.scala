@@ -2,13 +2,15 @@ package typings.jupyterlabCoreutils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/path", JSImport.Namespace)
 @js.native
 object pathMod extends js.Object {
+  
   @js.native
   object PathExt extends js.Object {
+    
     /**
       * Return the last portion of a path. Similar to the Unix basename command.
       * Often used to extract the file name from a fully qualified path.
@@ -19,6 +21,7 @@ object pathMod extends js.Object {
       */
     def basename(path: String): String = js.native
     def basename(path: String, ext: String): String = js.native
+    
     /**
       * Get the directory name of a path, similar to the Unix dirname command.
       * When an empty path is given, returns the root path.
@@ -26,6 +29,7 @@ object pathMod extends js.Object {
       * @param path - The file path.
       */
     def dirname(path: String): String = js.native
+    
     /**
       * Get the extension of the path.
       *
@@ -41,6 +45,7 @@ object pathMod extends js.Object {
       * empty string is returned.
       */
     def extname(path: String): String = js.native
+    
     /**
       * Join all arguments together and normalize the resulting path.
       * Arguments must be strings. In v0.8, non-string arguments were silently ignored. In v0.10 and up, an exception is thrown.
@@ -48,6 +53,7 @@ object pathMod extends js.Object {
       * @param paths - The string paths to join.
       */
     def join(paths: String*): String = js.native
+    
     /**
       * Normalize a string path, reducing '..' and '.' parts.
       * When multiple slashes are found, they're replaced by a single one; when the path contains a trailing slash, it is preserved. On Windows backslashes are used.
@@ -56,6 +62,7 @@ object pathMod extends js.Object {
       * @param path - The string path to normalize.
       */
     def normalize(path: String): String = js.native
+    
     /**
       * Normalize a file extension to be of the type `'.foo'`.
       *
@@ -65,6 +72,7 @@ object pathMod extends js.Object {
       * Adds a leading dot if not present and converts to lower case.
       */
     def normalizeExtension(extension: String): String = js.native
+    
     /**
       * Solve the relative path from {from} to {to}.
       *
@@ -79,12 +87,14 @@ object pathMod extends js.Object {
       * will be used instead of the zero-length strings.
       */
     def relative(from: String, to: String): String = js.native
+    
     /**
       * Remove the leading slash from a path.
       *
       * @param path: the path from which to remove a leading slash.
       */
     def removeSlash(path: String): String = js.native
+    
     /**
       * Resolve a sequence of paths or path segments into an absolute path.
       * The root path in the application has no leading slash, so it is removed.
@@ -100,6 +110,4 @@ object pathMod extends js.Object {
       */
     def resolve(parts: String*): String = js.native
   }
-  
 }
-

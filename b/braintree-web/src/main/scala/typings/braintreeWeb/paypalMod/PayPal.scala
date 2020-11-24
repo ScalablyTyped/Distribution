@@ -5,11 +5,13 @@ import typings.braintreeWeb.anon.Client
 import typings.braintreeWeb.coreMod.callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PayPal extends js.Object {
+  
   var VERSION: String = js.native
+  
   /**
     * @example
     * braintree.paypal.create({
@@ -25,12 +27,14 @@ trait PayPal extends js.Object {
     * });
     */
   def create(options: Client): js.Promise[PayPal] = js.native
-  def create(options: Client, callback: callback): Unit = js.native
+  def create(options: Client, callback: callback[PayPal]): Unit = js.native
+  
   /**
     * Cleanly tear down anything set up by `create`.
     */
   def teardown(): Unit = js.native
   def teardown(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Launches the PayPal login flow and returns a nonce payload. Only one PayPal login flow should be active at a time.
     * One way to achieve this is to disable your PayPal button while the flow is open.
@@ -101,7 +105,6 @@ trait PayPal extends js.Object {
     *   });
     * });
     */
-  def tokenize(options: BillingAgreementDescription): js.Promise[PayPalTokenizeReturn] = js.native
-  def tokenize(options: BillingAgreementDescription, callback: callback): PayPalTokenizeReturn = js.native
+  def tokenize(options: BillingAgreementDescription): js.Promise[PayPalTokenizePayload] = js.native
+  def tokenize(options: BillingAgreementDescription, callback: callback[PayPalTokenizePayload]): PayPalTokenizeReturn = js.native
 }
-

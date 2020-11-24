@@ -4,7 +4,7 @@ import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.elementsMod.IElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `CodeActions`.
@@ -14,8 +14,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IParameterType extends IElement {
+  
   val containerAsCodeActionParameter: ICodeActionParameter = js.native
+  
   @JSName("model")
   val model_IParameterType: IModel = js.native
 }
-

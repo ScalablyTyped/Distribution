@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Midi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI messages that specifies a MIDI note to turn off. */
 @JSGlobal("Windows.Devices.Midi.MidiNoteOffMessage")
@@ -17,4 +17,3 @@ class MidiNoteOffMessage protected ()
     */
   def this(channel: Double, note: Double, velocity: Double) = this()
 }
-

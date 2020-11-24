@@ -11,7 +11,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/apps/v1/daemonSet", "DaemonSet")
 @js.native
@@ -27,32 +27,37 @@ class DaemonSet protected () extends CustomResource {
   def this(name: String, args: DaemonSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DaemonSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[appsSlashv1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.DaemonSet] = js.native
+  
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * The desired behavior of this daemon set. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val spec: Output_[DaemonSetSpec] = js.native
+  
   /**
     * The current status of this daemon set. This data may be out of date by some window of time. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val status: Output_[DaemonSetStatus] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/apps/v1/daemonSet", "DaemonSet")
 @js.native
 object DaemonSet extends js.Object {
+  
   /**
     * Get an existing DaemonSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -63,10 +68,10 @@ object DaemonSet extends js.Object {
     */
   def get(name: String, id: Input[ID]): DaemonSet = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): DaemonSet = js.native
+  
   /**
     * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSet.DaemonSet */ Boolean = js.native
 }
-

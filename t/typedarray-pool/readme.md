@@ -10,9 +10,9 @@ Reuse typed arrays
 | ------------------ | :-------------: |
 | Full name          | typedarray-pool |
 | Keywords           | typed, array, cache, pool, memory, malloc, free, reuse, optimize, construct, overhead |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 2185675 |
+| # releases         | 2 |
+| # dependents       | 78 |
+| # downloads        | 3106445 |
 | # stars            | 0 |
 
 ## Links

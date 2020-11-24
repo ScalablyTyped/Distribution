@@ -13,20 +13,21 @@ import typings.nvd3.nvd3Strings.wiggle
 import typings.nvd3.nvd3Strings.zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StackedArea extends Scatter {
-  @JSName("scatter")
-  var scatter_Original: Scatter = js.native
+  
   /*A provided function that allows a line to be non-continuous when not defined.*/
   def defined(): js.Function2[/* d */ js.Any, /* i */ Double, Boolean] = js.native
   /*A provided function that allows a line to be non-continuous when not defined.*/
   def defined(func: js.Function2[/* d */ js.Any, /* i */ Double, Boolean]): this.type = js.native
+  
   /*controls the line interpolation between points, many options exist, see the D3 reference:*/
   def interpolate(): String = js.native
   /*controls the line interpolation between points, many options exist, see the D3 reference:*/
   def interpolate(value: String): this.type = js.native
+  
   /* options include 'silhouette', 'wiggle', 'expand', 'zero', or a custom function*/
   def offset(offset: String): this.type = js.native
   /* options include 'silhouette', 'wiggle', 'expand', 'zero', or a custom function*/
@@ -43,8 +44,10 @@ trait StackedArea extends Scatter {
   /* options include 'silhouette', 'wiggle', 'expand', 'zero', or a custom function*/
   @JSName("offset")
   def offset_zero(offset: zero): this.type = js.native
+  
   def order(): String = js.native
   def order(value: String): this.type = js.native
+  
   def scatter(
     selection: Selection_[
       _ | js.Array[_], 
@@ -63,6 +66,9 @@ trait StackedArea extends Scatter {
     ],
     args: js.Any*
   ): js.Any = js.native
+  @JSName("scatter")
+  var scatter_Original: Scatter = js.native
+  
   def style(offset: String): this.type = js.native
   @JSName("style")
   def style_expand(offset: expand): this.type = js.native
@@ -75,4 +81,3 @@ trait StackedArea extends Scatter {
   @JSName("style")
   def style_streamcenter(offset: `stream-center`): this.type = js.native
 }
-

@@ -9,9 +9,103 @@ import typings.jsoneditor.mod.NodeType
 import typings.jsoneditor.mod.SchemaValidationErrorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsoneditorStrings {
+  
+  @scala.inline
+  def `@`: `@` = "@".asInstanceOf[`@`]
+  
+  @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @scala.inline
+  def append: append = "append".asInstanceOf[append]
+  
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  
+  @scala.inline
+  def contain: contain = "contain".asInstanceOf[contain]
+  
+  @scala.inline
+  def customValidation: customValidation = "customValidation".asInstanceOf[customValidation]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def field: field = "field".asInstanceOf[field]
+  
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  
+  @scala.inline
+  def form: form = "form".asInstanceOf[form]
+  
+  @scala.inline
+  def keydown: keydown = "keydown".asInstanceOf[keydown]
+  
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @scala.inline
+  def preview: preview = "preview".asInstanceOf[preview]
+  
+  @scala.inline
+  def separator: separator = "separator".asInstanceOf[separator]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  
+  @scala.inline
+  def validation: validation = "validation".asInstanceOf[validation]
+  
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  
+  @scala.inline
+  def view: view = "view".asInstanceOf[view]
+  
   @js.native
   sealed trait `@` extends js.Object
   
@@ -104,68 +198,4 @@ object jsoneditorStrings {
   
   @js.native
   sealed trait view extends JSONEditorMode
-  
-  @scala.inline
-  def `@`: `@` = "@".asInstanceOf[`@`]
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def append: append = "append".asInstanceOf[append]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def customValidation: customValidation = "customValidation".asInstanceOf[customValidation]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def field: field = "field".asInstanceOf[field]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def preview: preview = "preview".asInstanceOf[preview]
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def validation: validation = "validation".asInstanceOf[validation]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
 }
-

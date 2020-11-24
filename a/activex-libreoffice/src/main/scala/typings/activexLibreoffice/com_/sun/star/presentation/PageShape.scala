@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is implemented by the page presentation shape.
@@ -32,8 +32,8 @@ import scala.scalajs.js.annotation._
 trait PageShape
   extends typings.activexLibreoffice.com_.sun.star.drawing.PageShape
      with Shape
-
 object PageShape {
+  
   @scala.inline
   def apply(
     Bookmark: String,
@@ -102,4 +102,3 @@ object PageShape {
     __obj.asInstanceOf[PageShape]
   }
 }
-

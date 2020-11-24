@@ -2,7 +2,7 @@ package typings.samchon.mod.protocol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon", "protocol.WebClientDriver")
 @js.native
@@ -17,4 +17,3 @@ class WebClientDriver protected ()
     */
   def this(connection: js.Any, path: String, session_id: String) = this()
 }
-

@@ -4,18 +4,17 @@ import typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/panellayout", JSImport.Namespace)
 @js.native
 object panellayoutMod extends js.Object {
+  
   @js.native
   class PanelLayout () extends Layout {
+    
     var _widgets: js.Any = js.native
-    /**
-      * A read-only array of the widgets in the layout.
-      */
-    val widgets: js.Array[Widget] = js.native
+    
     /**
       * Add a widget to the end of the layout.
       *
@@ -25,6 +24,7 @@ object panellayoutMod extends js.Object {
       * If the widget is already contained in the layout, it will be moved.
       */
     def addWidget(widget: Widget): Unit = js.native
+    
     /**
       * Attach a widget to the parent's DOM node.
       *
@@ -44,6 +44,7 @@ object panellayoutMod extends js.Object {
       * node is added to the parent's node.
       */
     /* protected */ def attachWidget(index: Double, widget: Widget): Unit = js.native
+    
     /**
       * Detach a widget from the parent's DOM node.
       *
@@ -63,6 +64,7 @@ object panellayoutMod extends js.Object {
       * node is removed from the parent's node.
       */
     /* protected */ def detachWidget(index: Double, widget: Widget): Unit = js.native
+    
     /**
       * Insert a widget into the layout at the specified index.
       *
@@ -79,6 +81,7 @@ object panellayoutMod extends js.Object {
       * An `index` which is non-integral.
       */
     def insertWidget(index: Double, widget: Widget): Unit = js.native
+    
     /**
       * Move a widget in the parent's DOM node.
       *
@@ -100,6 +103,7 @@ object panellayoutMod extends js.Object {
       * node is moved in the parent's node.
       */
     /* protected */ def moveWidget(fromIndex: Double, toIndex: Double, widget: Widget): Unit = js.native
+    
     /**
       * Remove the widget at a given index from the layout.
       *
@@ -117,7 +121,10 @@ object panellayoutMod extends js.Object {
       * An `index` which is non-integral.
       */
     def removeWidgetAt(index: Double): Unit = js.native
+    
+    /**
+      * A read-only array of the widgets in the layout.
+      */
+    val widgets: js.Array[Widget] = js.native
   }
-  
 }
-

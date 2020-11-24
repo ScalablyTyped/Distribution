@@ -5,10 +5,11 @@ import typings.signalsJs.isignalMod.ISignal
 import typings.signalsJs.islotMod.ISlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPrioritySignal extends ISignal {
+  
   /**
     * Subscribes a one-time listener for this signal.
     * The signal will remove the listener automatically the first time it is called,
@@ -24,6 +25,7 @@ trait IPrioritySignal extends ISignal {
     * @see ISlot
     */
   def addOnceWithPriority(listener: js.Function, priority: Double): ISlot = js.native
+  
   /**
     * Subscribes a listener for the signal.
     * After you successfully register an event listener,
@@ -38,9 +40,7 @@ trait IPrioritySignal extends ISignal {
     */
   def addWithPriority(listener: js.Function, priority: Double): ISlot = js.native
 }
-
 @JSImport("signals.js/lib/org/osflash/signals/IPrioritySignal", "IPrioritySignal")
 @js.native
 object IPrioritySignal
   extends TopLevel[js.Symbol]
-

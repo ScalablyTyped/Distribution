@@ -4,7 +4,7 @@ import typings.abortController.abortControllerStrings.loose
 import typings.eventTargetShim.anon.AddEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The signal class.
@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation._
   * AbortSignal cannot be constructed directly.
   */
 class AbortSignal () extends AddEventListener[Events, loose] {
+  
   /**
     * Returns `true` if this `AbortSignal`"s `AbortController` has signaled to abort, and `false` otherwise.
     */
   val aborted: Boolean = js.native
 }
-

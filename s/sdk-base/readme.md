@@ -10,9 +10,9 @@ a base class for sdk with default error handler
 | ------------------ | :-------------: |
 | Full name          | sdk-base |
 | Keywords           | sdk, error |
-| # releases         | 4 |
-| # dependents       | 83 |
-| # downloads        | 976746 |
+| # releases         | 3 |
+| # dependents       | 99 |
+| # downloads        | 1323463 |
 | # stars            | 0 |
 
 ## Links

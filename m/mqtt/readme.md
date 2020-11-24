@@ -1,7 +1,7 @@
 
 # Scala.js typings for mqtt
 
-Typings are for version 4.1.0
+Typings are for version 4.2.5
 
 ## Library description:
 A library for the MQTT protocol
@@ -10,9 +10,9 @@ A library for the MQTT protocol
 | ------------------ | :-------------: |
 | Full name          | mqtt |
 | Keywords           | mqtt, publish/subscribe, publish, subscribe |
-| # releases         | 15 |
-| # dependents       | 1082 |
-| # downloads        | 6365593 |
+| # releases         | 9 |
+| # dependents       | 1256 |
+| # downloads        | 8387341 |
 | # stars            | 87 |
 
 ## Links

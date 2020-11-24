@@ -1,10 +1,14 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-fixedcolumns"
-version := "3.2-dt-20190718Z-db4929"
+version := "3.3-dt-20201105Z-e386f7"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20201002Z-f101ac",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-7fbb2b",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-12b933",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

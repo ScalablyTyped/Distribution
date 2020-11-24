@@ -2,11 +2,12 @@ package typings.vimeoPlayer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VimeoPromise[Result, Reason]
   extends js.Promise[Result] {
+  
   def apply(): js.Promise[Result] = js.native
   def apply(
     successCallback: js.UndefOr[scala.Nothing],
@@ -18,4 +19,3 @@ trait VimeoPromise[Result, Reason]
     rejectCallback: js.Function1[/* reasonValue */ Reason, Unit]
   ): js.Promise[Result] = js.native
 }
-

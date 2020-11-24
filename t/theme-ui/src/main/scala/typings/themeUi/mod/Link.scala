@@ -6,9 +6,8 @@ import typings.themeUiComponents.mod.ForwardRef
 import typings.themeUiComponents.mod.LinkProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("theme-ui", "Link")
 @js.native
 object Link extends TopLevel[ForwardRef[HTMLAnchorElement, LinkProps]]
-

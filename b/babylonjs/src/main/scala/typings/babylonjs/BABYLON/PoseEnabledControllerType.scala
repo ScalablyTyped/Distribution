@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PoseEnabledControllerType extends js.Object
-
 @JSGlobal("BABYLON.PoseEnabledControllerType")
 @js.native
 object PoseEnabledControllerType extends js.Object {
+  
   /**
     * Google Daydream
     */
@@ -45,6 +45,4 @@ object PoseEnabledControllerType extends js.Object {
     */
   @js.native
   sealed trait WINDOWS extends PoseEnabledControllerType
-  
 }
-

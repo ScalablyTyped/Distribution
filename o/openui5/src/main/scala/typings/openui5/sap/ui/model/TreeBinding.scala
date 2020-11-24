@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.model
 import typings.openui5.anon.TypeofFilterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TreeBinding extends Binding {
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the '_filter' event of this
     * <code>sap.ui.model.TreeBinding</code>.<br/>
@@ -15,6 +16,7 @@ trait TreeBinding extends Binding {
     */
   def attachFilter(fnFunction: js.Any): Unit = js.native
   def attachFilter(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the '_filter' event of this
     * <code>sap.ui.model.TreeBinding</code>.<br/>
@@ -23,6 +25,7 @@ trait TreeBinding extends Binding {
     */
   def detachFilter(fnFunction: js.Any): Unit = js.native
   def detachFilter(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Filters the tree according to the filter definitions.
     * @param aFilters Array of sap.ui.model.Filter objects
@@ -30,12 +33,14 @@ trait TreeBinding extends Binding {
     * behaviour applies
     */
   def filter(aFilters: js.Array[Filter], sFilterType: TypeofFilterType): Unit = js.native
+  
   /**
     * Returns the number of child nodes of a specific context
     * @param oContext the context element of the node
     * @returns the number of children
     */
   def getChildCount(oContext: js.Any): Double = js.native
+  
   /**
     * Returns the current value of the bound target
     * @param oContext the context element of the node
@@ -45,6 +50,7 @@ trait TreeBinding extends Binding {
     */
   def getNodeContexts(oContext: js.Any, iStartIndex: Double, iLength: Double): js.Array[_] = js.native
   def getNodeContexts(oContext: js.Any, iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[_] = js.native
+  
   /**
     * Returns the current value of the bound target
     * @param iStartIndex the startIndex where to start the retrieval of contexts
@@ -52,6 +58,7 @@ trait TreeBinding extends Binding {
     * @returns the array of child contexts for the root node
     */
   def getRootContexts(iStartIndex: Double, iLength: Double): js.Array[_] = js.native
+  
   /**
     * Returns if the node has child nodes
     * @param oContext the context element of the node
@@ -59,6 +66,7 @@ trait TreeBinding extends Binding {
     */
   def hasChildren(oContext: Context): Boolean = js.native
   def hasChildren(oContext: Context, mParameters: js.Any): Boolean = js.native
+  
   /**
     * Sorts the tree according to the sorter definitions.
     * @param aSorters Array of sap.ui.model.Sorter objects
@@ -66,4 +74,3 @@ trait TreeBinding extends Binding {
   def sort(aSorters: js.Array[Sorter]): ListBinding | Unit = js.native
   def sort(aSorters: Sorter): ListBinding | Unit = js.native
 }
-

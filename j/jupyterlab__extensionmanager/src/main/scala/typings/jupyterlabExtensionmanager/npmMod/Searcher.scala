@@ -3,7 +3,7 @@ package typings.jupyterlabExtensionmanager.npmMod
 import typings.jupyterlabExtensionmanager.companionsMod.IJupyterLabPackageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/extensionmanager/lib/npm", "Searcher")
 @js.native
@@ -15,15 +15,14 @@ import scala.scalajs.js.annotation._
   */
 class Searcher () extends js.Object {
   def this(repoUri: String) = this()
+  def this(repoUri: js.UndefOr[scala.Nothing], cdnUri: String) = this()
   def this(repoUri: String, cdnUri: String) = this()
+  
   /**
     * The URI of the CDN to use for fetching full package data.
     */
   var cdnUri: String = js.native
-  /**
-    * The URI of the NPM registry to use.
-    */
-  var repoUri: String = js.native
+  
   /**
     * Fetch package.json of a package
     *
@@ -31,6 +30,12 @@ class Searcher () extends js.Object {
     * @param version The version of the package to fetch.
     */
   def fetchPackageData(name: String, version: String): js.Promise[IJupyterLabPackageData | Null] = js.native
+  
+  /**
+    * The URI of the NPM registry to use.
+    */
+  var repoUri: String = js.native
+  
   /**
     * Search for a jupyterlab extension.
     *
@@ -39,7 +44,7 @@ class Searcher () extends js.Object {
     * @param pageination The pagination size to use. See registry API documentation for acceptable values.
     */
   def searchExtensions(query: String): js.Promise[ISearchResult] = js.native
+  def searchExtensions(query: String, page: js.UndefOr[scala.Nothing], pageination: Double): js.Promise[ISearchResult] = js.native
   def searchExtensions(query: String, page: Double): js.Promise[ISearchResult] = js.native
   def searchExtensions(query: String, page: Double, pageination: Double): js.Promise[ISearchResult] = js.native
 }
-

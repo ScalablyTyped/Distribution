@@ -9,13 +9,14 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for ChocolateChipJS HTMLElement Array.
   */
 @js.native
 trait ChocolateChipElementArray extends js.Object {
+  
   /**
     * Display a busy indicator. Posible options: {size: "100px", color: "#ff0000", position: "align-flush", duration: "2s"}.
     *
@@ -27,10 +28,12 @@ trait ChocolateChipElementArray extends js.Object {
     */
   def UIBusy(): Unit = js.native
   def UIBusy(options: Color): Unit = js.native
+  
   /**
     * Center an element to the screen.
     */
   def UICenter(): Unit = js.native
+  
   /**
     * Make a list editable. This can be enabling changing the order of list items, or deleting them, or both. Options: {editLabel: "Edit", doneLabel: "Done",
     * deleteLabel: "Delete", callback: function() {alert('Bye bye!');}, deletable: true, movable: true}.
@@ -39,6 +42,7 @@ trait ChocolateChipElementArray extends js.Object {
     */
   def UIEditList(): Unit = js.native
   def UIEditList(options: Deletable): Unit = js.native
+  
   /**
     * This method allows the user to use a segmented control to toggle a set of panels. It is executed on the segmented control.
     * The options id is the contain of the panels. The options callback is to execute when the user toggles a panel.
@@ -46,18 +50,21 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UIPanelToggle(panelsContainer: String, callback: js.Function0[_]): Unit = js.native
+  
   /**
     * Close the currently displayed Popup. This is executed on the popup: $('#myPopup').UIPopupClose().
     *
     * @return void
     */
   def UIPopupClose(): Unit = js.native
+  
   /**
     * Execute this on a range control to initialize it.
     *
     * @return void
     */
   def UIRange(): Unit = js.native
+  
   /**
     * Initialize a segmented control. Options: {selected: 2, callback: function() {console.log('Blah');}}
     *
@@ -65,6 +72,7 @@ trait ChocolateChipElementArray extends js.Object {
     */
   def UISegmented(): Unit = js.native
   def UISegmented(options: Selected): Unit = js.native
+  
   /**
     * Convert a simple list into a selection list. This converts the list into a radio button group, meaning only one can be selected at any time.
     * You can name the radios buttons using the options name. Options: {name: "selectedNamesGroup", selected: 2, callback: function() {alert('hi');}}
@@ -73,18 +81,21 @@ trait ChocolateChipElementArray extends js.Object {
     */
   def UISelectList(): Unit = js.native
   def UISelectList(options: Name): Unit = js.native
+  
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *
     * @return void
     */
   def UIStepper(options: DefaultValue): Unit = js.native
+  
   /**
     * Initialize any existing switch controls: $('.switch').UISwitch();
     *
     * @return void
     */
   def UISwitch(): Unit = js.native
+  
   /**
     * Attach a handler to an event for the elements.
     *
@@ -101,6 +112,7 @@ trait ChocolateChipElementArray extends js.Object {
     handler: js.Function1[/* eventObject */ Event, _],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  
   /**
     * Add a delegated event to listen for the provided event on the descendant elements.
     *
@@ -125,12 +137,14 @@ trait ChocolateChipElementArray extends js.Object {
     handler: js.Function1[/* eventObject */ Event, _],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  
   /**
     * Iterate over an Array object, executing a function for each matched element.
     *
     * @return void
     */
   def forEach(func: js.Function2[/* ctx */ js.Any, /* idx */ Double, Unit]): Unit = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
     *
@@ -145,6 +159,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def haz(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return any of the matched elements that have the given attribute.
     *
@@ -152,6 +167,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def hazAttr(attributeName: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return any of the matched elements that have the given class.
     *
@@ -159,6 +175,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def hazClass(className: String): ChocolateChipElementArray = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that does not match the selector or DOM element.
     *
@@ -173,6 +190,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def haznt(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return any of the matched elements that do not have the given attribute.
     *
@@ -180,6 +198,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def hazntAttr(attributeName: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return any of the matched elements that do not have the given class.
     *
@@ -187,6 +206,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def hazntClass(className: String): ChocolateChipElementArray = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -203,6 +223,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def iz(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -219,6 +240,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return HTMLElement[]
     */
   def iznt(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Remove a handler for an event from the elements. If the second argument is a selector, it tries to undelegate the event.
     * If no arugments are provided, it removes all events from the element(s).
@@ -324,6 +346,7 @@ trait ChocolateChipElementArray extends js.Object {
     handler: js.Function1[/* eventObject */ Event, _],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
+  
   /**
     * Add a handler to an event for elements. If a selector is provided as the second argument, this implements a delegated event.
     *
@@ -356,11 +379,13 @@ trait ChocolateChipElementArray extends js.Object {
     handler: js.Function1[/* eventObject */ Event, _],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
+  
   /**
     *
     */
   def trigger(eventType: String): Unit = js.native
   def trigger(eventType: ChUIEventInterface): Unit = js.native
+  
   /**
     * Remove a handler for an event from the elements.
     *
@@ -377,6 +402,7 @@ trait ChocolateChipElementArray extends js.Object {
     handler: js.Function1[/* eventObject */ Event, _],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  
   /**
     * Add a delegated event to listen for the provided event on the descendant elements.
     *
@@ -401,4 +427,3 @@ trait ChocolateChipElementArray extends js.Object {
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
 }
-

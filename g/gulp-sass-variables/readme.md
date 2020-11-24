@@ -10,9 +10,9 @@ Define Sass variables in your gulp task
 | ------------------ | :-------------: |
 | Full name          | gulp-sass-variables |
 | Keywords           | gulpplugin, gulp-sass-variables, environment variabes, sass, scss |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 215977 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 236791 |
 | # stars            | 1 |
 
 ## Links

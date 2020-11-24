@@ -3,21 +3,25 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Presentations extends js.Object {
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  val Count: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.Presentations_typekey")
-  var PowerPointDotPresentations_typekey: Presentations = js.native
+  
   /** @param Office.MsoTriState [WithWindow=-1] */
   def Add(): Presentation = js.native
   def Add(WithWindow: MsoTriState): Presentation = js.native
+  
+  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  
   def CanCheckOut(FileName: String): Boolean = js.native
+  
   def CheckOut(FileName: String): Unit = js.native
+  
+  val Count: Double = js.native
+  
   def Item(Index: js.Any): Presentation = js.native
+  
   /**
     * @param Office.MsoTriState [ReadOnly=0]
     * @param Office.MsoTriState [Untitled=0]
@@ -46,6 +50,7 @@ trait Presentations extends js.Object {
   ): Presentation = js.native
   def Open(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState): Presentation = js.native
   def Open(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
+  
   /**
     * @param Office.MsoTriState [ReadOnly=0]
     * @param Office.MsoTriState [Untitled=0]
@@ -131,6 +136,7 @@ trait Presentations extends js.Object {
     WithWindow: MsoTriState,
     OpenAndRepair: MsoTriState
   ): Presentation = js.native
+  
   /**
     * @param Office.MsoTriState [ReadOnly=0]
     * @param Office.MsoTriState [Untitled=0]
@@ -159,5 +165,9 @@ trait Presentations extends js.Object {
   ): Presentation = js.native
   def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState): Presentation = js.native
   def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
+  
+  val Parent: js.Any = js.native
+  
+  @JSName("PowerPoint.Presentations_typekey")
+  var PowerPointDotPresentations_typekey: Presentations = js.native
 }
-

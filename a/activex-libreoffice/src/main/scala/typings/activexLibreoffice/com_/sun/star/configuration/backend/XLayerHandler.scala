@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * receives a description of a configuration layer as a sequence of events.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XLayerHandler extends XInterface {
+  
   /**
     * receives notification that a new item is started.
     *
@@ -28,6 +29,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def addOrReplaceNode(aName: String, aAttributes: Double): Unit = js.native
+  
   /**
     * receives notification that a new item based on a particular template is started.
     *
@@ -43,6 +45,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def addOrReplaceNodeFromTemplate(aName: String, aTemplate: TemplateIdentifier, aAttributes: Double): Unit = js.native
+  
   /**
     * receives notification that a property having a `VOID` value is added to the current node.
     *
@@ -55,6 +58,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit = js.native
+  
   /**
     * receives notification that a property having a non- `VOID` value is added to the current node.
     *
@@ -67,6 +71,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def addPropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit = js.native
+  
   /**
     * receives notification that a node is dropped from a set.
     *
@@ -76,6 +81,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def dropNode(aName: String): Unit = js.native
+  
   /**
     * receives notification that a layer description is complete.
     *
@@ -84,6 +90,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def endLayer(): Unit = js.native
+  
   /**
     * receives notification that a node description is complete.
     *
@@ -93,6 +100,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def endNode(): Unit = js.native
+  
   /**
     * receives notification that a property description is complete.
     *
@@ -101,6 +109,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def endProperty(): Unit = js.native
+  
   /**
     * receives notification that a description of a node override is started.
     *
@@ -114,6 +123,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def overrideNode(aName: String, aAttributes: Double, bClear: Boolean): Unit = js.native
+  
   /**
     * receives notification that an existing property is modified.
     *
@@ -127,6 +137,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def overrideProperty(aName: String, aAttributes: Double, aType: `type`, bClear: Boolean): Unit = js.native
+  
   /**
     * receives notification that the value of the current property is overridden.
     * @param aValue specifies the new value of the property.  The value must match the type of the current property. If the property does not have the {@link
@@ -135,6 +146,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def setPropertyValue(aValue: js.Any): Unit = js.native
+  
   /**
     * receives notification that the value of the current localized property is overridden for a specific locale .
     * @param aValue specifies the new value of the property.  The value must match the type of the current property. If the property does not have the {@link
@@ -144,6 +156,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
   def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit = js.native
+  
   /**
     * receives notification that a layer description is started for a component.
     *
@@ -153,8 +166,8 @@ trait XLayerHandler extends XInterface {
     */
   def startLayer(): Unit = js.native
 }
-
 object XLayerHandler {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -177,44 +190,59 @@ object XLayerHandler {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addOrReplaceNode = js.Any.fromFunction2(addOrReplaceNode), addOrReplaceNodeFromTemplate = js.Any.fromFunction3(addOrReplaceNodeFromTemplate), addProperty = js.Any.fromFunction3(addProperty), addPropertyWithValue = js.Any.fromFunction3(addPropertyWithValue), dropNode = js.Any.fromFunction1(dropNode), endLayer = js.Any.fromFunction0(endLayer), endNode = js.Any.fromFunction0(endNode), endProperty = js.Any.fromFunction0(endProperty), overrideNode = js.Any.fromFunction3(overrideNode), overrideProperty = js.Any.fromFunction4(overrideProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValue = js.Any.fromFunction1(setPropertyValue), setPropertyValueForLocale = js.Any.fromFunction2(setPropertyValueForLocale), startLayer = js.Any.fromFunction0(startLayer))
     __obj.asInstanceOf[XLayerHandler]
   }
+  
   @scala.inline
   implicit class XLayerHandlerOps[Self <: XLayerHandler] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddOrReplaceNode(value: (String, Double) => Unit): Self = this.set("addOrReplaceNode", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setAddOrReplaceNodeFromTemplate(value: (String, TemplateIdentifier, Double) => Unit): Self = this.set("addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setAddProperty(value: (String, Double, `type`) => Unit): Self = this.set("addProperty", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = this.set("addPropertyWithValue", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setDropNode(value: String => Unit): Self = this.set("dropNode", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEndLayer(value: () => Unit): Self = this.set("endLayer", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setEndNode(value: () => Unit): Self = this.set("endNode", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setEndProperty(value: () => Unit): Self = this.set("endProperty", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setOverrideNode(value: (String, Double, Boolean) => Unit): Self = this.set("overrideNode", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = this.set("overrideProperty", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setSetPropertyValue(value: js.Any => Unit): Self = this.set("setPropertyValue", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = this.set("setPropertyValueForLocale", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setStartLayer(value: () => Unit): Self = this.set("startLayer", js.Any.fromFunction0(value))
   }
-  
 }
-

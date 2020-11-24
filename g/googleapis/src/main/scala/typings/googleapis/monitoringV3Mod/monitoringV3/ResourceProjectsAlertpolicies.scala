@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Alertpolicies")
 @js.native
 class ResourceProjectsAlertpolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.alertPolicies.create
     * @desc Creates a new alerting policy.
@@ -45,6 +47,7 @@ class ResourceProjectsAlertpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAlertPolicy]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.alertPolicies.delete
     * @desc Deletes an alerting policy.
@@ -73,6 +76,7 @@ class ResourceProjectsAlertpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.alertPolicies.get
     * @desc Gets a single alerting policy.
@@ -101,6 +105,7 @@ class ResourceProjectsAlertpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAlertPolicy]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.alertPolicies.list
     * @desc Lists the existing alerting policies for the project.
@@ -136,6 +141,7 @@ class ResourceProjectsAlertpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAlertPoliciesResponse]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.alertPolicies.patch
     * @desc Updates an alerting policy. You can either replace the entire
@@ -173,4 +179,3 @@ class ResourceProjectsAlertpolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAlertPolicy]
   ): Unit = js.native
 }
-

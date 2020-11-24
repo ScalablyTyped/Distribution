@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Enumeration.Pnp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PnpObjectType extends js.Object
-
 /** Indicates the device type of a PnpObject . */
 @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectType")
 @js.native
 object PnpObjectType extends js.Object {
+  
   /** The PnpObject represents an association endpoint. */
   @js.native
   sealed trait associationEndpoint extends PnpObjectType
@@ -42,6 +42,4 @@ object PnpObjectType extends js.Object {
   /** The object is of an unknown type. This value is not used. */
   @js.native
   sealed trait unknown extends PnpObjectType
-  
 }
-

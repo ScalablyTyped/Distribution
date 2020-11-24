@@ -12,7 +12,7 @@ Generates an id useable in json rpc payloads.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 939251 |
+| # downloads        | 1320090 |
 | # stars            | 0 |
 
 ## Links

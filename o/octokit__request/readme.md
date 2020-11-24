@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__request
 
-Typings are for version 5.4.7
+Typings are for version 5.4.10
 
 ## Library description:
 Send parameterized requests to GitHub’s APIs with sensible defaults in browsers and Node
@@ -10,9 +10,9 @@ Send parameterized requests to GitHub’s APIs with sensible defaults in browser
 | ------------------ | :-------------: |
 | Full name          | @octokit/request |
 | Keywords           | octokit, github, api, request |
-| # releases         | 37 |
-| # dependents       | 20 |
-| # downloads        | 33066393 |
+| # releases         | 40 |
+| # dependents       | 33 |
+| # downloads        | 103487046 |
 | # stars            | 0 |
 
 ## Links

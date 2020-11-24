@@ -9,9 +9,9 @@ A node.js library for git
 | ------------------ | :-------------: |
 | Full name          | git |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 63 |
-| # downloads        | 345701 |
+| # releases         | 0 |
+| # dependents       | 77 |
+| # downloads        | 427604 |
 | # stars            | 9 |
 
 ## Links

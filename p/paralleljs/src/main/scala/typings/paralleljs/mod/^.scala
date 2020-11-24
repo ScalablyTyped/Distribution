@@ -4,7 +4,7 @@ import typings.paralleljs.Parallel
 import typings.paralleljs.ParallelOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paralleljs", JSImport.Namespace)
 @js.native
@@ -18,4 +18,3 @@ class ^[T] protected () extends Parallel[T] {
   def this(data: T) = this()
   def this(data: T, opts: ParallelOptions) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.echarts.echarts.EChartOption
 import typings.echarts.anon.AnimationEasing
 import typings.echarts.anon.AnimationEasingUpdate
 import typings.echarts.anon.AnimationThreshold
-import typings.echarts.anon.BorderType
+import typings.echarts.anon.BorderColorBorderType
 import typings.echarts.anon.LengthLineStyle
 import typings.echarts.anon.LengthShow
 import typings.echarts.anon.LineStyleShow
@@ -15,7 +15,7 @@ import typings.echarts.anon.`2`
 import typings.echarts.echarts.EChartOption.SeriesGauge.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * **Gauge chart**
@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesGauge_ extends js.Object {
+  
   /**
     * Whether to enable animation.
     *
@@ -38,6 +39,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animation
     */
   var animation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -54,6 +56,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -70,6 +73,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -82,6 +86,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -94,6 +99,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -106,6 +112,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.native
+  
   /**
     * Easing method used for animation.
     *
@@ -115,6 +122,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.native
+  
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -126,6 +134,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Axis tick label.
     *
@@ -133,6 +142,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel
     */
   var axisLabel: js.UndefOr[Padding] = js.native
+  
   /**
     * The related configuration about the axis line of gauge chart.
     *
@@ -140,6 +150,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine
     */
   var axisLine: js.UndefOr[LineStyleShow] = js.native
+  
   /**
     * The tick line style.
     *
@@ -147,6 +158,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick
     */
   var axisTick: js.UndefOr[SplitNumber] = js.native
+  
   /**
     * Whether the scale in gauge chart increases clockwise.
     *
@@ -156,6 +168,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.clockwise
     */
   var clockwise: js.UndefOr[Boolean] = js.native
+  
   /**
     * Data array of series, which can be a single data value.
     *
@@ -175,6 +188,7 @@ trait SeriesGauge_ extends js.Object {
       (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
     ]
   ] = js.native
+  
   /**
     * The detail about gauge chart which is used to show data.
     *
@@ -182,10 +196,12 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.detail
     */
   var detail: js.UndefOr[Rich] = js.native
+  
   /**
     * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis
     */
   var emphasis: js.UndefOr[`2`] = js.native
+  
   /**
     * The end angle of gauge chart.
     *
@@ -195,6 +211,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.endAngle
     */
   var endAngle: js.UndefOr[Double] = js.native
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -204,13 +221,15 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.id
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * The style of gauge chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.native
+  var itemStyle: js.UndefOr[BorderColorBorderType] = js.native
+  
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -219,6 +238,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.markArea
     */
   var markArea: js.UndefOr[AnimationThreshold] = js.native
+  
   /**
     * Use a line in the chart to illustrate.
     *
@@ -226,6 +246,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.markLine
     */
   var markLine: js.UndefOr[AnimationEasingUpdate] = js.native
+  
   /**
     * Mark point in a chart.
     *
@@ -233,6 +254,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.markPoint
     */
   var markPoint: js.UndefOr[AnimationEasing] = js.native
+  
   /**
     * The maximum data value which map to
     * [maxAngle](https://echarts.apache.org/en/option.html#series-gauge.maxAngle)
@@ -244,6 +266,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.max
     */
   var max: js.UndefOr[Double] = js.native
+  
   /**
     * The minimum data value which map to
     * [minAngle](https://echarts.apache.org/en/option.html#series-gauge.minAngle)
@@ -253,6 +276,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.min
     */
   var min: js.UndefOr[Double] = js.native
+  
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -264,6 +288,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Gauge chart pointer.
     *
@@ -271,6 +296,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.pointer
     */
   var pointer: js.UndefOr[LengthShow] = js.native
+  
   /**
     * The radius of gauge chart.
     * It can be a percentage value of the smaller of container half
@@ -284,6 +310,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.radius
     */
   var radius: js.UndefOr[Double | String] = js.native
+  
   /**
     * The style of split line.
     *
@@ -291,6 +318,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine
     */
   var splitLine: js.UndefOr[LengthLineStyle] = js.native
+  
   /**
     * The number of split segments of gauge chart scale.
     *
@@ -300,6 +328,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.splitNumber
     */
   var splitNumber: js.UndefOr[Double] = js.native
+  
   /**
     * The start angle of gauge chart. The direct right side of
     * [circle center](https://echarts.apache.org/en/option.html#series-gauge.center)
@@ -312,6 +341,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.startAngle
     */
   var startAngle: js.UndefOr[Double] = js.native
+  
   /**
     * The title of gauge chart.
     *
@@ -319,6 +349,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.title
     */
   var title: js.UndefOr[OffsetCenter] = js.native
+  
   /**
     * tooltip settings in this series.
     *
@@ -326,6 +357,7 @@ trait SeriesGauge_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-gauge.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * @default
     * "gauge"
@@ -333,159 +365,226 @@ trait SeriesGauge_ extends js.Object {
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SeriesGauge_ {
+  
   @scala.inline
   def apply(): SeriesGauge_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesGauge_]
   }
+  
   @scala.inline
   implicit class SeriesGauge_Ops[Self <: SeriesGauge_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimation: Self = this.set("animation", js.undefined)
+    
     @scala.inline
     def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    
     @scala.inline
     def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    
     @scala.inline
     def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    
     @scala.inline
     def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    
     @scala.inline
     def setAxisLabel(value: Padding): Self = this.set("axisLabel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAxisLabel: Self = this.set("axisLabel", js.undefined)
+    
     @scala.inline
     def setAxisLine(value: LineStyleShow): Self = this.set("axisLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAxisLine: Self = this.set("axisLine", js.undefined)
+    
     @scala.inline
     def setAxisTick(value: SplitNumber): Self = this.set("axisTick", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAxisTick: Self = this.set("axisTick", js.undefined)
+    
     @scala.inline
     def setClockwise(value: Boolean): Self = this.set("clockwise", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClockwise: Self = this.set("clockwise", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: ((js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit)*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(
       value: js.Array[
           (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
         ]
     ): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDetail(value: Rich): Self = this.set("detail", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDetail: Self = this.set("detail", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: `2`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
-    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setItemStyle(value: BorderColorBorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setMarkArea(value: AnimationThreshold): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    
     @scala.inline
     def setMarkLine(value: AnimationEasingUpdate): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    
     @scala.inline
     def setMarkPoint(value: AnimationEasing): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    
     @scala.inline
     def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMax: Self = this.set("max", js.undefined)
+    
     @scala.inline
     def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMin: Self = this.set("min", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setPointer(value: LengthShow): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePointer: Self = this.set("pointer", js.undefined)
+    
     @scala.inline
     def setRadius(value: Double | String): Self = this.set("radius", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRadius: Self = this.set("radius", js.undefined)
+    
     @scala.inline
     def setSplitLine(value: LengthLineStyle): Self = this.set("splitLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSplitLine: Self = this.set("splitLine", js.undefined)
+    
     @scala.inline
     def setSplitNumber(value: Double): Self = this.set("splitNumber", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSplitNumber: Self = this.set("splitNumber", js.undefined)
+    
     @scala.inline
     def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    
     @scala.inline
     def setTitle(value: OffsetCenter): Self = this.set("title", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitle: Self = this.set("title", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

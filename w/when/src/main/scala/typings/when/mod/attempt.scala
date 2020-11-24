@@ -9,11 +9,12 @@ import typings.when.When._underscore.Fn4
 import typings.when.When._underscore.Fn5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("when", "attempt")
 @js.native
 object attempt extends js.Object {
+  
   def apply[T](f: Fn0[T]): Promise[T] = js.native
   def apply[A1, T](f: Fn1[A1, T], arg1: A1): Promise[T] = js.native
   def apply[A1, T](f: Fn1[A1, T], arg1: Promise[A1]): Promise[T] = js.native
@@ -196,4 +197,3 @@ object attempt extends js.Object {
     arg5: Promise[A5]
   ): Promise[T] = js.native
 }
-

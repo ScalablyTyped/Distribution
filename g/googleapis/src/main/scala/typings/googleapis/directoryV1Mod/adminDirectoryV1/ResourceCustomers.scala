@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Customers")
 @js.native
 class ResourceCustomers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.customers.get
     * @desc Retrieves a customer.
@@ -41,6 +43,7 @@ class ResourceCustomers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
+  
   /**
     * directory.customers.patch
     * @desc Updates a customer. This method supports patch semantics.
@@ -70,6 +73,7 @@ class ResourceCustomers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
+  
   /**
     * directory.customers.update
     * @desc Updates a customer.
@@ -100,4 +104,3 @@ class ResourceCustomers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomer]
   ): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__react-native
 
-Typings are for version 4.0.2
+Typings are for version 4.0.6
 
 ## Library description:
 基于蚂蚁金服移动设计规范的 React Native 组件库
@@ -10,9 +10,9 @@ Typings are for version 4.0.2
 | ------------------ | :-------------: |
 | Full name          | @ant-design/react-native |
 | Keywords           | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
-| # releases         | 42 |
-| # dependents       | 7 |
-| # downloads        | 171591 |
+| # releases         | 47 |
+| # dependents       | 15 |
+| # downloads        | 139651 |
 | # stars            | 0 |
 
 ## Links

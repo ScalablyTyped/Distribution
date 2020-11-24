@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-shape
 
-Typings are for version 1.3
+Typings are for version 2.0
 
 ## Library description:
 Graphical primitives for visualization, such as lines and areas.
@@ -11,8 +11,8 @@ Graphical primitives for visualization, such as lines and areas.
 | Full name          | d3-shape |
 | Keywords           | d3, d3-module, graphics, visualization, canvas, svg |
 | # releases         | 11 |
-| # dependents       | 494 |
-| # downloads        | 45484111 |
+| # dependents       | 653 |
+| # downloads        | 73432501 |
 | # stars            | 2 |
 
 ## Links

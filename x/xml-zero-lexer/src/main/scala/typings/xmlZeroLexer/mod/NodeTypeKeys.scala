@@ -19,7 +19,7 @@ import typings.xmlZeroLexer.xmlZeroLexerStrings.TEXT_NODE
 import typings.xmlZeroLexer.xmlZeroLexerStrings.XML_DECLARATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xml-zero-lexer", "NodeTypeKeys")
 @js.native
@@ -44,4 +44,3 @@ object NodeTypeKeys
         JSX
       ]
     ]
-

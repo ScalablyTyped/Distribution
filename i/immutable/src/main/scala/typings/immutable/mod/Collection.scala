@@ -8,16 +8,18 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Collection[K, V]
   extends typings.immutable.Immutable.ValueObject {
+  
   /**
     * Returns a new Collection of the same type containing all entries except
     * the last.
     */
   def butLast(): this.type = js.native
+  
   // Combination
   /**
     * Returns a new Collection of the same type with other values and
@@ -27,7 +29,9 @@ trait Collection[K, V]
     * have the same key.
     */
   def concat(valuesOrCollections: js.Any*): typings.immutable.Immutable.Collection[_, _] = js.native
+  
   def contains(value: V): Boolean = js.native
+  
   /**
     * Returns the size of this Collection.
     *
@@ -44,6 +48,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): Double = js.native
+  
   /**
     * Returns a `Seq.Keyed` of counts, grouped by the return value of
     * the `grouper` function.
@@ -52,6 +57,7 @@ trait Collection[K, V]
     */
   def countBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): typings.immutable.Immutable.Map[G, Double] = js.native
   def countBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: js.Any): typings.immutable.Immutable.Map[G, Double] = js.native
+  
   /**
     * An iterator of this `Collection`'s entries as `[ key, value ]` tuples.
     *
@@ -60,10 +66,12 @@ trait Collection[K, V]
     * what you want.
     */
   def entries(): IterableIterator[js.Tuple2[K, V]] = js.native
+  
   /**
     * Returns a new Seq.Indexed of [key, value] tuples.
     */
   def entrySeq(): Indexed[js.Tuple2[K, V]] = js.native
+  
   /**
     * True if `predicate` returns true for all entries in the Collection.
     */
@@ -72,8 +80,10 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): Boolean = js.native
+  
   def filter(predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, _]): this.type = js.native
   def filter(predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, _], context: js.Any): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type with only the entries for which
     * the `predicate` function returns false.
@@ -93,6 +103,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type with only the entries for which
     * the `predicate` function returns true.
@@ -114,6 +125,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
   ): typings.immutable.Immutable.Collection[K, F] = js.native
+  
   // Search for value
   /**
     * Returns the first value for which the `predicate` returns true.
@@ -133,6 +145,7 @@ trait Collection[K, V]
     context: js.Any,
     notSetValue: V
   ): js.UndefOr[V] = js.native
+  
   /**
     * Returns the first [key, value] entry for which the `predicate` returns true.
     */
@@ -151,6 +164,7 @@ trait Collection[K, V]
     context: js.Any,
     notSetValue: V
   ): js.UndefOr[js.Tuple2[K, V]] = js.native
+  
   /**
     * Returns the key for which the `predicate` returns true.
     */
@@ -159,6 +173,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): js.UndefOr[K] = js.native
+  
   /**
     * Returns the last value for which the `predicate` returns true.
     *
@@ -179,6 +194,7 @@ trait Collection[K, V]
     context: js.Any,
     notSetValue: V
   ): js.UndefOr[V] = js.native
+  
   /**
     * Returns the last [key, value] entry for which the `predicate`
     * returns true.
@@ -200,6 +216,7 @@ trait Collection[K, V]
     context: js.Any,
     notSetValue: V
   ): js.UndefOr[js.Tuple2[K, V]] = js.native
+  
   /**
     * Returns the last key for which the `predicate` returns true.
     *
@@ -210,6 +227,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): js.UndefOr[K] = js.native
+  
   /**
     * In case the `Collection` is not empty returns the first element of the
     * `Collection`.
@@ -218,6 +236,7 @@ trait Collection[K, V]
     */
   def first[NSV](): V | NSV = js.native
   def first[NSV](notSetValue: NSV): V | NSV = js.native
+  
   /**
     * Flat-maps the Collection, returning a Collection of the same type.
     *
@@ -243,6 +262,7 @@ trait Collection[K, V]
     mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Iterable[js.Tuple2[KM, VM]]],
     context: js.Any
   ): typings.immutable.Immutable.Collection[KM, VM] = js.native
+  
   /**
     * Flattens nested Collections.
     *
@@ -259,6 +279,7 @@ trait Collection[K, V]
   def flatten(): typings.immutable.Immutable.Collection[_, _] = js.native
   def flatten(depth: Double): typings.immutable.Immutable.Collection[_, _] = js.native
   def flatten(shallow: Boolean): typings.immutable.Immutable.Collection[_, _] = js.native
+  
   // Side effects
   /**
     * The `sideEffect` is executed for every entry in the Collection.
@@ -269,6 +290,7 @@ trait Collection[K, V]
     */
   def forEach(sideEffect: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, _]): Double = js.native
   def forEach(sideEffect: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, _], context: js.Any): Double = js.native
+  
   def get(key: K): js.UndefOr[V] = js.native
   // Reading values
   /**
@@ -280,6 +302,7 @@ trait Collection[K, V]
     * that does not guarantee the key was not found.
     */
   def get[NSV](key: K, notSetValue: NSV): V | NSV = js.native
+  
   // Reading deep values
   /**
     * Returns the value found by following a path of keys or indices through
@@ -304,6 +327,7 @@ trait Collection[K, V]
     */
   def getIn(searchKeyPath: Iterable[_]): js.Any = js.native
   def getIn(searchKeyPath: Iterable[_], notSetValue: js.Any): js.Any = js.native
+  
   /**
     * Returns a `Collection.Keyed` of `Collection.Keyeds`, grouped by the return
     * value of the `grouper` function.
@@ -330,22 +354,26 @@ trait Collection[K, V]
     */
   def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): /*Map*/ Keyed[G, /*this*/ typings.immutable.Immutable.Collection[K, V]] = js.native
   def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: js.Any): /*Map*/ Keyed[G, /*this*/ typings.immutable.Immutable.Collection[K, V]] = js.native
+  
   /**
     * True if a key exists within this `Collection`, using `Immutable.is`
     * to determine equality
     */
   def has(key: K): Boolean = js.native
+  
   /**
     * True if the result of following a path of keys or indices through nested
     * Collections results in a set value.
     */
   def hasIn(searchKeyPath: Iterable[_]): Boolean = js.native
+  
   /**
     * True if a value exists within this `Collection`, using `Immutable.is`
     * to determine equality
     * @alias contains
     */
   def includes(value: V): Boolean = js.native
+  
   /**
     * Returns true if this Collection includes no values.
     *
@@ -353,31 +381,37 @@ trait Collection[K, V]
     * emptiness. At most one iteration will occur.
     */
   def isEmpty(): Boolean = js.native
+  
   // Comparison
   /**
     * True if `iter` includes every value in this Collection.
     */
   def isSubset(iter: Iterable[V]): Boolean = js.native
+  
   /**
     * True if this Collection includes every value in `iter`.
     */
   def isSuperset(iter: Iterable[V]): Boolean = js.native
+  
   /**
     * Joins values together as a string, inserting a separator between each.
     * The default separator is `","`.
     */
   def join(): String = js.native
   def join(separator: String): String = js.native
+  
   /**
     * Returns the key associated with the search value, or undefined.
     */
   def keyOf(searchValue: V): js.UndefOr[K] = js.native
+  
   // Collections (Seq)
   /**
     * Returns a new Seq.Indexed of the keys of this Collection,
     * discarding values.
     */
   def keySeq(): Indexed[K] = js.native
+  
   // Iterators
   /**
     * An iterator of this `Collection`'s keys.
@@ -387,6 +421,7 @@ trait Collection[K, V]
     * what you want.
     */
   def keys(): IterableIterator[K] = js.native
+  
   /**
     * In case the `Collection` is not empty returns the last element of the
     * `Collection`.
@@ -395,10 +430,12 @@ trait Collection[K, V]
     */
   def last[NSV](): V | NSV = js.native
   def last[NSV](notSetValue: NSV): V | NSV = js.native
+  
   /**
     * Returns the last key associated with the search value, or undefined.
     */
   def lastKeyOf(searchValue: V): js.UndefOr[K] = js.native
+  
   /**
     * Note: used only for sets, which return Collection<M, M> but are otherwise
     * identical to normal `map()`.
@@ -423,6 +460,7 @@ trait Collection[K, V]
     */
   def map[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, M]): typings.immutable.Immutable.Collection[K, M] = js.native
   def map[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, M], context: js.Any): typings.immutable.Immutable.Collection[K, M] = js.native
+  
   /**
     * Returns the maximum value in this collection. If any values are
     * comparatively equivalent, the first one found will be returned.
@@ -440,6 +478,7 @@ trait Collection[K, V]
     */
   def max(): js.UndefOr[V] = js.native
   def max(comparator: js.Function2[/* valueA */ V, /* valueB */ V, Double]): js.UndefOr[V] = js.native
+  
   /**
     * Like `max`, but also accepts a `comparatorValueMapper` which allows for
     * comparing by more sophisticated means:
@@ -452,6 +491,7 @@ trait Collection[K, V]
     comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C],
     comparator: js.Function2[/* valueA */ C, /* valueB */ C, Double]
   ): js.UndefOr[V] = js.native
+  
   /**
     * Returns the minimum value in this collection. If any values are
     * comparatively equivalent, the first one found will be returned.
@@ -469,6 +509,7 @@ trait Collection[K, V]
     */
   def min(): js.UndefOr[V] = js.native
   def min(comparator: js.Function2[/* valueA */ V, /* valueB */ V, Double]): js.UndefOr[V] = js.native
+  
   /**
     * Like `min`, but also accepts a `comparatorValueMapper` which allows for
     * comparing by more sophisticated means:
@@ -481,6 +522,7 @@ trait Collection[K, V]
     comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C],
     comparator: js.Function2[/* valueA */ C, /* valueB */ C, Double]
   ): js.UndefOr[V] = js.native
+  
   def reduce[R](reducer: js.Function4[/* reduction */ V | R, /* value */ V, /* key */ K, /* iter */ this.type, R]): R = js.native
   // Reducing a value
   /**
@@ -501,6 +543,7 @@ trait Collection[K, V]
     initialReduction: R,
     context: js.Any
   ): R = js.native
+  
   def reduceRight[R](reducer: js.Function4[/* reduction */ V | R, /* value */ V, /* key */ K, /* iter */ this.type, R]): R = js.native
   /**
     * Reduces the Collection in reverse (from the right side).
@@ -517,25 +560,30 @@ trait Collection[K, V]
     initialReduction: R,
     context: js.Any
   ): R = js.native
+  
   /**
     * Returns a new Collection of the same type containing all entries except
     * the first.
     */
   def rest(): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type in reverse order.
     */
   def reverse(): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which excludes the first `amount`
     * entries from this Collection.
     */
   def skip(amount: Double): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which excludes the last `amount`
     * entries from this Collection.
     */
   def skipLast(amount: Double): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which includes entries starting
     * from when `predicate` first returns true.
@@ -553,6 +601,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which includes entries starting
     * from when `predicate` first returns false.
@@ -570,6 +619,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): this.type = js.native
+  
   // Creating subsets
   /**
     * Returns a new Collection of the same type representing a portion of this
@@ -591,6 +641,7 @@ trait Collection[K, V]
   def slice(begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def slice(begin: Double): this.type = js.native
   def slice(begin: Double, end: Double): this.type = js.native
+  
   /**
     * True if `predicate` returns true for any entry in the Collection.
     */
@@ -599,6 +650,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): Boolean = js.native
+  
   /**
     * Returns a new Collection of the same type which includes the same entries,
     * stably sorted by using a `comparator`.
@@ -634,6 +686,7 @@ trait Collection[K, V]
     */
   def sort(): this.type = js.native
   def sort(comparator: js.Function2[/* valueA */ V, /* valueB */ V, Double]): this.type = js.native
+  
   /**
     * Like `sort`, but also accepts a `comparatorValueMapper` which allows for
     * sorting by more sophisticated means:
@@ -650,16 +703,19 @@ trait Collection[K, V]
     comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C],
     comparator: js.Function2[/* valueA */ C, /* valueB */ C, Double]
   ): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which includes the first `amount`
     * entries from this Collection.
     */
   def take(amount: Double): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which includes the last `amount`
     * entries from this Collection.
     */
   def takeLast(amount: Double): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which includes entries from this
     * Collection as long as the `predicate` returns false.
@@ -677,6 +733,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): this.type = js.native
+  
   /**
     * Returns a new Collection of the same type which includes entries from this
     * Collection as long as the `predicate` returns true.
@@ -694,6 +751,7 @@ trait Collection[K, V]
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): this.type = js.native
+  
   /**
     * Shallowly converts this collection to an Array.
     *
@@ -701,10 +759,12 @@ trait Collection[K, V]
     * `Collection.Keyed` produce an Array of [key, value] tuples.
     */
   def toArray(): js.Array[(js.Tuple2[K, V]) | V] = js.native
+  
   /**
     * Returns an Seq.Indexed of the values of this Collection, discarding keys.
     */
   def toIndexedSeq(): Indexed[V] = js.native
+  
   // Conversion to JavaScript types
   /**
     * Deeply converts this Collection to equivalent native JavaScript Array or Object.
@@ -713,6 +773,7 @@ trait Collection[K, V]
     * `Collection.Keyed` become `Object`, converting keys to Strings.
     */
   def toJS(): js.Array[_] | StringDictionary[js.Any] = js.native
+  
   /**
     * Shallowly converts this Collection to equivalent native JavaScript Array or Object.
     *
@@ -720,6 +781,7 @@ trait Collection[K, V]
     * `Collection.Keyed` become `Object`, converting keys to Strings.
     */
   def toJSON(): js.Array[V] | StringDictionary[V] = js.native
+  
   /**
     * Returns a Seq.Keyed from this Collection where indices are treated as keys.
     *
@@ -743,6 +805,7 @@ trait Collection[K, V]
     * ```
     */
   def toKeyedSeq(): Keyed[K, V] = js.native
+  
   /**
     * Converts this Collection to a List, discarding keys.
     *
@@ -760,6 +823,7 @@ trait Collection[K, V]
     * ```
     */
   def toList(): typings.immutable.Immutable.List[V] = js.native
+  
   // Conversion to Collections
   /**
     * Converts this Collection to a Map, Throws if keys are not hashable.
@@ -768,12 +832,14 @@ trait Collection[K, V]
     * for convenience and to allow for chained expressions.
     */
   def toMap(): typings.immutable.Immutable.Map[K, V] = js.native
+  
   /**
     * Shallowly converts this Collection to an Object.
     *
     * Converts keys to Strings.
     */
   def toObject(): StringDictionary[V] = js.native
+  
   /**
     * Converts this Collection to a Map, maintaining the order of iteration.
     *
@@ -781,6 +847,7 @@ trait Collection[K, V]
     * provided for convenience and to allow for chained expressions.
     */
   def toOrderedMap(): typings.immutable.Immutable.OrderedMap[K, V] = js.native
+  
   /**
     * Converts this Collection to a Set, maintaining the order of iteration and
     * discarding keys.
@@ -789,12 +856,14 @@ trait Collection[K, V]
     * for convenience and to allow for chained expressions.
     */
   def toOrderedSet(): typings.immutable.Immutable.OrderedSet[V] = js.native
+  
   // Conversion to Seq
   /**
     * Converts this Collection to a Seq of the same kind (indexed,
     * keyed, or set).
     */
   def toSeq(): typings.immutable.Immutable.Seq[K, V] = js.native
+  
   /**
     * Converts this Collection to a Set, discarding keys. Throws if values
     * are not hashable.
@@ -803,10 +872,12 @@ trait Collection[K, V]
     * chained expressions.
     */
   def toSet(): Set[V] = js.native
+  
   /**
     * Returns a Seq.Set of the values of this Collection, discarding keys.
     */
   def toSetSeq(): typings.immutable.Immutable.Seq.Set[V] = js.native
+  
   /**
     * Converts this Collection to a Stack, discarding keys. Throws if values
     * are not hashable.
@@ -815,6 +886,7 @@ trait Collection[K, V]
     * chained expressions.
     */
   def toStack(): typings.immutable.Immutable.Stack[V] = js.native
+  
   // Persistent changes
   /**
     * This can be very useful as a way to "chain" a normal function into a
@@ -838,10 +910,12 @@ trait Collection[K, V]
     * ```
     */
   def update[R](updater: js.Function1[/* value */ this.type, R]): R = js.native
+  
   /**
     * Returns an Seq.Indexed of the values of this Collection, discarding keys.
     */
   def valueSeq(): Indexed[V] = js.native
+  
   /**
     * An iterator of this `Collection`'s values.
     *
@@ -851,15 +925,38 @@ trait Collection[K, V]
     */
   def values(): IterableIterator[V] = js.native
 }
-
 @JSImport("immutable", "Collection")
 @js.native
 object Collection extends js.Object {
+  
+  def apply[I /* <: typings.immutable.Immutable.Collection[_, _] */](collection: I): I = js.native
+  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
+  def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
+  
+  /**
+    * @deprecated use `const { isAssociative } = require('immutable')`
+    */
+  def isAssociative(maybeAssociative: js.Any): Boolean = js.native
+  
+  /**
+    * @deprecated use `const { isIndexed } = require('immutable')`
+    */
+  def isIndexed(maybeIndexed: js.Any): /* is immutable.Immutable.Collection.Indexed<any> */ Boolean = js.native
+  
+  /**
+    * @deprecated use `const { isKeyed } = require('immutable')`
+    */
+  def isKeyed(maybeKeyed: js.Any): /* is immutable.Immutable.Collection.Keyed<any, any> */ Boolean = js.native
+  
+  /**
+    * @deprecated use `const { isOrdered } = require('immutable')`
+    */
+  def isOrdered(maybeOrdered: js.Any): Boolean = js.native
+  
   @js.native
   trait Indexed[T]
     extends typings.immutable.Immutable.Collection[Double, T] {
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[T]] = js.native
+    
     /**
       * Returns a new Collection with only the values for which the `predicate`
       * function returns true.
@@ -876,6 +973,7 @@ object Collection extends js.Object {
       predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
     ): typings.immutable.Immutable.Collection.Indexed[F] = js.native
+    
     /**
       * Returns the first index in the Collection where a value satisfies the
       * provided predicate function. Otherwise -1 is returned.
@@ -885,6 +983,7 @@ object Collection extends js.Object {
       predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, Boolean],
       context: js.Any
     ): Double = js.native
+    
     /**
       * Returns the last index in the Collection where a value satisfies the
       * provided predicate function. Otherwise -1 is returned.
@@ -894,17 +993,20 @@ object Collection extends js.Object {
       predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, Boolean],
       context: js.Any
     ): Double = js.native
+    
     /**
       * If this is a collection of [key, value] entry tuples, it will return a
       * Seq.Keyed of those entries.
       */
     def fromEntrySeq(): typings.immutable.Immutable.Seq.Keyed[_, _] = js.native
+    
     // Search for value
     /**
       * Returns the first index at which a given value can be found in the
       * Collection, or -1 if it is not present.
       */
     def indexOf(searchValue: T): Double = js.native
+    
     /**
       * Returns a Collection of the same type with the provided `collections`
       * interleaved into this collection.
@@ -940,17 +1042,23 @@ object Collection extends js.Object {
       * Note: `interleave` *cannot* be used in `withMutations`.
       */
     def interleave(collections: (typings.immutable.Immutable.Collection[_, T])*): this.type = js.native
+    
     // Combination
     /**
       * Returns a Collection of the same type with `separator` between each item
       * in this Collection.
       */
     def interpose(separator: T): this.type = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[T]] = js.native
+    
     /**
       * Returns the last index at which a given value can be found in the
       * Collection, or -1 if it is not present.
       */
     def lastIndexOf(searchValue: T): Double = js.native
+    
     /**
       * Splice returns a new indexed Collection by replacing a region of this
       * Collection with new values. If values are not provided, it only skips the
@@ -972,6 +1080,7 @@ object Collection extends js.Object {
       * Note: `splice` *cannot* be used in `withMutations`.
       */
     def splice(index: Double, removeNum: Double, values: T*): this.type = js.native
+    
     def zip(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.Collection.Indexed[_] = js.native
     /**
       * Returns a Collection of the same type "zipped" with the provided
@@ -994,6 +1103,7 @@ object Collection extends js.Object {
       other: typings.immutable.Immutable.Collection[_, U],
       other2: typings.immutable.Immutable.Collection[_, V]
     ): typings.immutable.Immutable.Collection.Indexed[js.Tuple3[T, U, V]] = js.native
+    
     def zipAll(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.Collection.Indexed[_] = js.native
     /**
       * Returns a Collection "zipped" with the provided collections.
@@ -1012,6 +1122,7 @@ object Collection extends js.Object {
       other: typings.immutable.Immutable.Collection[_, U],
       other2: typings.immutable.Immutable.Collection[_, V]
     ): typings.immutable.Immutable.Collection.Indexed[js.Tuple3[T, U, V]] = js.native
+    
     def zipWith[Z](
       zipper: js.Function1[/* repeated */ js.Any, Z],
       collections: (typings.immutable.Immutable.Collection[_, _])*
@@ -1040,17 +1151,22 @@ object Collection extends js.Object {
       thirdCollection: typings.immutable.Immutable.Collection[_, V]
     ): typings.immutable.Immutable.Collection.Indexed[Z] = js.native
   }
+  @js.native
+  object Indexed extends js.Object {
+    
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
+  }
   
   @js.native
   trait Keyed[K, V]
     extends typings.immutable.Immutable.Collection[K, V] {
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
+    
     /**
       * Returns a new Collection with other collections concatenated to this one.
       */
     @JSName("concat")
     def concat_KCVC[KC, VC](collections: (Iterable[js.Tuple2[KC, VC]])*): typings.immutable.Immutable.Collection.Keyed[K | KC, V | VC] = js.native
+    
     /**
       * Returns a new Collection with only the values for which the `predicate`
       * function returns true.
@@ -1065,6 +1181,7 @@ object Collection extends js.Object {
       predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
     ): typings.immutable.Immutable.Collection.Keyed[K, F] = js.native
+    
     // Sequence functions
     /**
       * Returns a new Collection.Keyed of the same type where the keys and values
@@ -1078,6 +1195,10 @@ object Collection extends js.Object {
       * ```
       */
     def flip(): typings.immutable.Immutable.Collection.Keyed[V, K] = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
+    
     /**
       * Returns a new Collection.Keyed of the same type with entries
       * ([key, value] tuples) passed through a `mapper` function.
@@ -1110,6 +1231,7 @@ object Collection extends js.Object {
         ],
       context: js.Any
     ): typings.immutable.Immutable.Collection.Keyed[KM, VM] = js.native
+    
     /**
       * Returns a new Collection.Keyed of the same type with keys passed through
       * a `mapper` function.
@@ -1127,12 +1249,17 @@ object Collection extends js.Object {
     def mapKeys[M](mapper: js.Function3[/* key */ K, /* value */ V, /* iter */ this.type, M]): typings.immutable.Immutable.Collection.Keyed[M, V] = js.native
     def mapKeys[M](mapper: js.Function3[/* key */ K, /* value */ V, /* iter */ this.type, M], context: js.Any): typings.immutable.Immutable.Collection.Keyed[M, V] = js.native
   }
+  @js.native
+  object Keyed extends js.Object {
+    
+    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
+    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Collection.Keyed[K, V] = js.native
+  }
   
   @js.native
   trait Set[T]
     extends typings.immutable.Immutable.Collection[T, T] {
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[T]] = js.native
+    
     /**
       * Returns a new Collection with only the values for which the `predicate`
       * function returns true.
@@ -1147,42 +1274,13 @@ object Collection extends js.Object {
       predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
     ): typings.immutable.Immutable.Collection.Set[F] = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[T]] = js.native
   }
-  
-  def apply[I /* <: typings.immutable.Immutable.Collection[_, _] */](collection: I): I = js.native
-  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
-  def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
-  /**
-    * @deprecated use `const { isAssociative } = require('immutable')`
-    */
-  def isAssociative(maybeAssociative: js.Any): Boolean = js.native
-  /**
-    * @deprecated use `const { isIndexed } = require('immutable')`
-    */
-  def isIndexed(maybeIndexed: js.Any): /* is immutable.Immutable.Collection.Indexed<any> */ Boolean = js.native
-  /**
-    * @deprecated use `const { isKeyed } = require('immutable')`
-    */
-  def isKeyed(maybeKeyed: js.Any): /* is immutable.Immutable.Collection.Keyed<any, any> */ Boolean = js.native
-  /**
-    * @deprecated use `const { isOrdered } = require('immutable')`
-    */
-  def isOrdered(maybeOrdered: js.Any): Boolean = js.native
-  @js.native
-  object Indexed extends js.Object {
-    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
-  }
-  
-  @js.native
-  object Keyed extends js.Object {
-    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
-    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Collection.Keyed[K, V] = js.native
-  }
-  
   @js.native
   object Set extends js.Object {
+    
     def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Set[T] = js.native
   }
-  
 }
-

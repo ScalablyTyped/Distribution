@@ -3,11 +3,12 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.datafilter")
 @js.native
 object datafilter extends js.Object {
+  
   @js.native
   class columnGroup () extends textFilter
   
@@ -49,8 +50,7 @@ object datafilter extends js.Object {
   
   @js.native
   class textFilter () extends WebixFilter {
+    
     def getInputNode(node: HTMLElement): HTMLElement = js.native
   }
-  
 }
-

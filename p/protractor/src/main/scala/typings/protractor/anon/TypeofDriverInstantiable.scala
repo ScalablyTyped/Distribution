@@ -8,10 +8,11 @@ import typings.seleniumWebdriver.mod.CreateSessionCapabilities
 import typings.seleniumWebdriver.remoteMod.DriverService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDriverInstantiable extends Instantiable0[Driver] {
+  
   /**
     * Creates a new session with the ChromeDriver.
     *
@@ -33,4 +34,3 @@ trait TypeofDriverInstantiable extends Instantiable0[Driver] {
   def createSession(opt_config: CreateSessionCapabilities, opt_service: Executor): Driver = js.native
   def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
 }
-

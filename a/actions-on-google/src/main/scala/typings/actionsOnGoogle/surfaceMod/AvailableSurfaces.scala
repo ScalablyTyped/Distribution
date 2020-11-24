@@ -3,17 +3,17 @@ package typings.actionsOnGoogle.surfaceMod
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2Surface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/surface", "AvailableSurfaces")
 @js.native
 class AvailableSurfaces protected () extends js.Object {
   /** @hidden */
   def this(list: js.Array[GoogleActionsV2Surface]) = this()
+  
   /** @public */
   var capabilities: AvailableSurfacesCapabilities = js.native
-  /** @public */
-  var list: js.Array[Surface] = js.native
+  
   /**
     * Checks if available surfaces has an attribute like a capability
     *
@@ -33,5 +33,7 @@ class AvailableSurfaces protected () extends js.Object {
     * @public
     */
   def has(attribute: SurfaceCapability): Boolean = js.native
+  
+  /** @public */
+  var list: js.Array[Surface] = js.native
 }
-

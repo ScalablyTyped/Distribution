@@ -10,9 +10,9 @@ backend layer for i18next using browsers xhr
 | ------------------ | :-------------: |
 | Full name          | i18next-xhr-backend |
 | Keywords           | i18next, i18next-backend |
-| # releases         | 12 |
-| # dependents       | 134 |
-| # downloads        | 5429976 |
+| # releases         | 11 |
+| # dependents       | 170 |
+| # downloads        | 9445466 |
 | # stars            | 2 |
 
 ## Links

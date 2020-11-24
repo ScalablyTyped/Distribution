@@ -7,13 +7,14 @@ import typings.antDesignReactNative.pickerTypesMod.PickerProps
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContextType
   extends Instantiable1[(/* props */ PickerProps) | (/* props */ ReadonlyPickerProps), ComponentDidMount]
      with Instantiable2[/* props */ PickerProps, /* context */ js.Any, ComponentDidMount] {
-  var contextType: js.UndefOr[Context[_]] = js.native
+  
   def Item(_props: ItemProps): Null = js.native
+  
+  var contextType: js.UndefOr[Context[_]] = js.native
 }
-

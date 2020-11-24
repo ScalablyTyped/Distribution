@@ -4,11 +4,12 @@ import typings.makerJs.MakerJs.IKit
 import typings.makerJs.MakerJs.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.kit")
 @js.native
 object kit extends js.Object {
+  
   /**
     * Helper function to use the JavaScript "apply" function in conjunction with the "new" keyword.
     *
@@ -17,6 +18,7 @@ object kit extends js.Object {
     * @returns A new instance of the class, which implements the IModel interface.
     */
   def construct(ctor: IKit, args: js.Any): IModel = js.native
+  
   /**
     * Extract just the initial sample values from a kit.
     *
@@ -25,4 +27,3 @@ object kit extends js.Object {
     */
   def getParameterValues(ctor: IKit): js.Array[_] = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an uncompressed bitmap. */
 @JSGlobal("Windows.Graphics.Imaging.SoftwareBitmap")
@@ -33,11 +33,11 @@ class SoftwareBitmap protected ()
     alpha: typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
   ) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Graphics.Imaging.SoftwareBitmap")
 @js.native
 object SoftwareBitmap extends js.Object {
+  
   /**
     * Converts an existing SoftwareBitmap to a SoftwareBitmap with a different pixel format.
     * @param source The software bitmap to convert.
@@ -60,12 +60,14 @@ object SoftwareBitmap extends js.Object {
     format: typings.winrtUwp.Windows.Graphics.Imaging.BitmapPixelFormat,
     alpha: typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
   ): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = js.native
+  
   /**
     * Creates a copy of the provided SoftwareBitmap object.
     * @param source The software bitmap to copy.
     * @return The newly created copy of the software bitmap.
     */
   def copy(source: typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = js.native
+  
   /**
     * Creates a new SoftwareBitmap by performing a deep copy of the provided buffer. Modifications to the data in the new SoftwareBitmap will not effect the buffer from which it was created.
     * @param source The source buffer from which the copy will be created.
@@ -96,6 +98,7 @@ object SoftwareBitmap extends js.Object {
     height: Double,
     alpha: typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
   ): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = js.native
+  
   /**
     * Asynchronously creates a new SoftwareBitmap by performing a deep copy of the provided IDirect3DSurface . Modifications to the data in the new SoftwareBitmap will not effect the surface from which it was created.
     * @param surface The source surface from which the copy will be created.
@@ -110,4 +113,3 @@ object SoftwareBitmap extends js.Object {
     */
   def createCopyFromSurfaceAsync(surface: IDirect3DSurface, alpha: typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap] = js.native
 }
-

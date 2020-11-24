@@ -23,11 +23,12 @@ import typings.jose.joseStrings.unspecified
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jose", "errors")
 @js.native
 object errors extends js.Object {
+  
   @js.native
   class JOSEAlgNotWhitelisted () extends JOSEError[ERR_JOSE_ALG_NOT_WHITELISTED]
   
@@ -36,6 +37,7 @@ object errors extends js.Object {
   
   @js.native
   class JOSEError[T] () extends Error {
+    
     var code: T = js.native
   }
   
@@ -81,7 +83,9 @@ object errors extends js.Object {
     def this(message: js.UndefOr[scala.Nothing], claim: String, reason: String) = this()
     def this(message: String, claim: js.UndefOr[scala.Nothing], reason: String) = this()
     def this(message: String, claim: String, reason: String) = this()
+    
     var claim: String = js.native
+    
     var reason: prohibited | missing | invalid | check_failed | unspecified = js.native
   }
   
@@ -90,6 +94,4 @@ object errors extends js.Object {
   
   @js.native
   class JWTMalformed () extends JOSEError[ERR_JWT_MALFORMED]
-  
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-transition"
-version := "2.2-dt-20200515Z-cf5b51"
+version := "2.2-dt-20200515Z-df95cc"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,7 +12,7 @@ Minimal implementation of headroom.js
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 490 |
+| # downloads        | 1915 |
 | # stars            | 0 |
 
 ## Links

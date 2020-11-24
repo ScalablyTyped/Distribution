@@ -2,7 +2,7 @@ package typings.paper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper", "SymbolDefinition")
 @js.native
@@ -17,4 +17,3 @@ class SymbolDefinition protected ()
   def this(item: typings.paper.paper.Item) = this()
   def this(item: typings.paper.paper.Item, dontCenter: Boolean) = this()
 }
-

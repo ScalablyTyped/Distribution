@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InspectableType extends js.Object
-
 @JSGlobal("BABYLON.InspectableType")
 @js.native
 object InspectableType extends js.Object {
+  
   /**
     * Checkbox for booleans
     */
@@ -45,6 +45,4 @@ object InspectableType extends js.Object {
     */
   @js.native
   sealed trait Vector3 extends InspectableType
-  
 }
-

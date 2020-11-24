@@ -7,10 +7,11 @@ import typings.sparkpost.mod.Transmission
 import typings.sparkpost.mod.TransmissionSummary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Send extends js.Object {
+  
   /**
     * Retrieve the details about a transmission by its ID
     *
@@ -25,6 +26,7 @@ trait Send extends js.Object {
     * @param callback The request callback with Transmission results
     */
   def get(transmissionID: String, callback: ResultsCallback[Transmission]): Unit = js.native
+  
   /**
     * List an overview of all transmissions in the account
     *
@@ -44,6 +46,7 @@ trait Send extends js.Object {
     * @param callback The request callback with Transmission results array
     */
   def list(options: Campaignid, callback: ResultsCallback[js.Array[TransmissionSummary]]): Unit = js.native
+  
   /**
     * Sends a message by creating a new transmission
     *
@@ -73,4 +76,3 @@ trait Send extends js.Object {
     callback: ResultsCallback[Totalacceptedrecipients]
   ): Unit = js.native
 }
-

@@ -2,9 +2,49 @@ package typings.scriptableIos
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scriptableIosStrings {
+  
+  @scala.inline
+  def accept: accept = "accept".asInstanceOf[accept]
+  
+  @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
+  
+  @scala.inline
+  def busy: busy = "busy".asInstanceOf[busy]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def event: event = "event".asInstanceOf[event]
+  
+  @scala.inline
+  def failure: failure = "failure".asInstanceOf[failure]
+  
+  @scala.inline
+  def free: free = "free".asInstanceOf[free]
+  
+  @scala.inline
+  def piano_error: piano_error = "piano_error".asInstanceOf[piano_error]
+  
+  @scala.inline
+  def piano_success: piano_success = "piano_success".asInstanceOf[piano_success]
+  
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  
+  @scala.inline
+  def tentative: tentative = "tentative".asInstanceOf[tentative]
+  
+  @scala.inline
+  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
+  
   @js.native
   sealed trait accept extends js.Object
   
@@ -43,32 +83,4 @@ object scriptableIosStrings {
   
   @js.native
   sealed trait unavailable extends js.Object
-  
-  @scala.inline
-  def accept: accept = "accept".asInstanceOf[accept]
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
-  @scala.inline
-  def busy: busy = "busy".asInstanceOf[busy]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
-  @scala.inline
-  def free: free = "free".asInstanceOf[free]
-  @scala.inline
-  def piano_error: piano_error = "piano_error".asInstanceOf[piano_error]
-  @scala.inline
-  def piano_success: piano_success = "piano_success".asInstanceOf[piano_success]
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
-  @scala.inline
-  def tentative: tentative = "tentative".asInstanceOf[tentative]
-  @scala.inline
-  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
 }
-

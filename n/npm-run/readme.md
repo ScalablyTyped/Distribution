@@ -10,9 +10,9 @@ Run executables for locally-installed packages without using ./node_modules/.bin
 | ------------------ | :-------------: |
 | Full name          | npm-run |
 | Keywords           | npm, path, executable, .bin, run |
-| # releases         | 3 |
-| # dependents       | 88 |
-| # downloads        | 3423743 |
+| # releases         | 0 |
+| # dependents       | 96 |
+| # downloads        | 4177166 |
 | # stars            | 29 |
 
 ## Links

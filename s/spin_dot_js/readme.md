@@ -10,9 +10,9 @@ A spinning activity indicator
 | ------------------ | :-------------: |
 | Full name          | spin.js |
 | Keywords           | css, progress indicator, spin, spinner |
-| # releases         | 3 |
-| # dependents       | 65 |
-| # downloads        | 5969315 |
+| # releases         | 2 |
+| # dependents       | 67 |
+| # downloads        | 7644687 |
 | # stars            | 4 |
 
 ## Links

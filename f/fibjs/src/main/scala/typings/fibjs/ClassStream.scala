@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassStream extends ClassObject {
+  
   /**
     * 
     * @brief 关闭当前流对象
@@ -18,6 +19,7 @@ trait ClassStream extends ClassObject {
     * @async
     */
   def close(): Unit = js.native
+  
   /**
     * 
     * @brief 复制流数据到目标流中
@@ -30,6 +32,7 @@ trait ClassStream extends ClassObject {
     */
   def copyTo(stm: ClassStream): Double = js.native
   def copyTo(stm: ClassStream, bytes: Double): Double = js.native
+  
   /**
     * 
     * @brief 将文件缓冲区内容写入物理设备
@@ -37,6 +40,7 @@ trait ClassStream extends ClassObject {
     * @async
     */
   def flush(): Unit = js.native
+  
   /**
     * 
     * @brief 从流内读取指定大小的数据
@@ -48,6 +52,7 @@ trait ClassStream extends ClassObject {
     */
   def read(): ClassBuffer = js.native
   def read(bytes: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 将给定的数据写入流
@@ -58,4 +63,3 @@ trait ClassStream extends ClassObject {
     */
   def write(data: ClassBuffer): Unit = js.native
 }
-

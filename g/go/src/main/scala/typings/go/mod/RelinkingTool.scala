@@ -2,7 +2,7 @@ package typings.go.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The RelinkingTool allows the user to reconnect an existing Link
@@ -14,18 +14,20 @@ import scala.scalajs.js.annotation._
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.relinkingTool, which you can modify.
   */
 class RelinkingTool () extends LinkingBaseTool {
-  /**Gets or sets a small GraphObject that is copied as a relinking handle for the selected link path at the "from" end of the link.*/
-  var fromHandleArchetype: GraphObject = js.native
-  /**This read-only property returns the GraphObject that is the tool handle being dragged by the user.*/
-  var handle: GraphObject = js.native
-  /**Gets or sets a small GraphObject that is copied as a relinking handle for the selected link path at the "to" end of the link.*/
-  var toHandleArchetype: GraphObject = js.native
+  
   /**
     * Make a temporary link look and act like the real Link being relinked.
     * @param {Link} reallink
     * @param {Link} templink
     */
   def copyLinkProperties(reallink: Link, templink: Link): Unit = js.native
+  
+  /**Gets or sets a small GraphObject that is copied as a relinking handle for the selected link path at the "from" end of the link.*/
+  var fromHandleArchetype: GraphObject = js.native
+  
+  /**This read-only property returns the GraphObject that is the tool handle being dragged by the user.*/
+  var handle: GraphObject = js.native
+  
   /**
     * Modify an existing Link to connect to a new node and port.
     * @param {Link} existinglink
@@ -34,5 +36,7 @@ class RelinkingTool () extends LinkingBaseTool {
     * @param {boolean} toend If true, this modifies the link's "to" node and port; otherwise it modifies the "from" node and port.
     */
   def reconnectLink(existinglink: Link, newnode: Node, newport: GraphObject, toend: Boolean): Boolean = js.native
+  
+  /**Gets or sets a small GraphObject that is copied as a relinking handle for the selected link path at the "to" end of the link.*/
+  var toHandleArchetype: GraphObject = js.native
 }
-

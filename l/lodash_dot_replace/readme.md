@@ -11,8 +11,8 @@ The lodash method `_.replace` exported as a module.
 | Full name          | lodash.replace |
 | Keywords           | lodash-modularized, replace |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 150908 |
+| # dependents       | 14 |
+| # downloads        | 174248 |
 | # stars            | 0 |
 
 ## Links

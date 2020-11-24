@@ -2,10 +2,11 @@ package typings.jsspecJsspec.JSSpec
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Subject extends js.Object {
+  
   /**
     * Set `subject` which can be accessed inside of an Example.
     *
@@ -22,4 +23,3 @@ trait Subject extends js.Object {
     */
   def apply(varName: String, fnOrValue: js.Any): Unit = js.native
 }
-

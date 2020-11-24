@@ -8,7 +8,7 @@ import typings.i18next.mod.Module
 import typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18next-express-middleware", "LanguageDetector")
 @js.native
@@ -28,20 +28,22 @@ class LanguageDetector () extends Module {
     options: LanguageDetectorOptions,
     allOptions: LanguageDetectorAllOptions
   ) = this()
-  @JSName("type")
-  var type_LanguageDetector: languageDetector = js.native
+  
   def addDetector(detector: LanguageDetectorInterface): Unit = js.native
+  
   def cacheUserLanguage(
     req: Request_[ParamsDictionary, _, _, Query],
     res: Response_[_],
     lng: String,
     caches: LanguageDetectorCaches
   ): Unit = js.native
+  
   def detect(
     req: Request_[ParamsDictionary, _, _, Query],
     res: Response_[_],
     detectionOrder: LanguageDetectorOrder
   ): Unit = js.native
+  
   def init(): Unit = js.native
   def init(options: js.UndefOr[scala.Nothing], allOptions: LanguageDetectorAllOptions): Unit = js.native
   def init(options: LanguageDetectorOptions): Unit = js.native
@@ -58,5 +60,7 @@ class LanguageDetector () extends Module {
     options: LanguageDetectorOptions,
     allOptions: LanguageDetectorAllOptions
   ): Unit = js.native
+  
+  @JSName("type")
+  var type_LanguageDetector: languageDetector = js.native
 }
-

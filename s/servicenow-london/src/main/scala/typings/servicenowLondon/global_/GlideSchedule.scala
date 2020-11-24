@@ -2,7 +2,7 @@ package typings.servicenowLondon.global_
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GlideSchedule")
 @js.native
@@ -24,4 +24,3 @@ class GlideSchedule ()
   def this(sysId: String) = this()
   def this(sysId: String, timeZone: String) = this()
 }
-

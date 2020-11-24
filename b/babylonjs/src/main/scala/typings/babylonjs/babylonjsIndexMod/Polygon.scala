@@ -4,17 +4,17 @@ import typings.babylonjs.mathPathMod.Path2
 import typings.babylonjs.mathVectorMod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "Polygon")
 @js.native
 class Polygon ()
   extends typings.babylonjs.polygonMeshMod.Polygon
-
 /* static members */
 @JSImport("babylonjs/Meshes/index", "Polygon")
 @js.native
 object Polygon extends js.Object {
+  
   /**
     * Creates a circle
     * @param radius radius of circle
@@ -24,15 +24,26 @@ object Polygon extends js.Object {
     * @returns points that make the resulting circle
     */
   def Circle(radius: Double): js.Array[Vector2] = js.native
+  def Circle(
+    radius: Double,
+    cx: js.UndefOr[scala.Nothing],
+    cy: js.UndefOr[scala.Nothing],
+    numberOfSides: Double
+  ): js.Array[Vector2] = js.native
+  def Circle(radius: Double, cx: js.UndefOr[scala.Nothing], cy: Double): js.Array[Vector2] = js.native
+  def Circle(radius: Double, cx: js.UndefOr[scala.Nothing], cy: Double, numberOfSides: Double): js.Array[Vector2] = js.native
   def Circle(radius: Double, cx: Double): js.Array[Vector2] = js.native
+  def Circle(radius: Double, cx: Double, cy: js.UndefOr[scala.Nothing], numberOfSides: Double): js.Array[Vector2] = js.native
   def Circle(radius: Double, cx: Double, cy: Double): js.Array[Vector2] = js.native
   def Circle(radius: Double, cx: Double, cy: Double, numberOfSides: Double): js.Array[Vector2] = js.native
+  
   /**
     * Creates a polygon from input string
     * @param input Input polygon data
     * @returns the parsed points
     */
   def Parse(input: String): js.Array[Vector2] = js.native
+  
   /**
     * Creates a rectangle
     * @param xmin bottom X coord
@@ -42,6 +53,7 @@ object Polygon extends js.Object {
     * @returns points that make the resulting rectation
     */
   def Rectangle(xmin: Double, ymin: Double, xmax: Double, ymax: Double): js.Array[Vector2] = js.native
+  
   /**
     * Starts building a polygon from x and y coordinates
     * @param x x coordinate
@@ -50,4 +62,3 @@ object Polygon extends js.Object {
     */
   def StartingAt(x: Double, y: Double): Path2 = js.native
 }
-

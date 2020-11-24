@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.elastictranscoderMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ElasticTranscoder")
 @js.native
@@ -14,4 +14,3 @@ class ElasticTranscoder ()
   extends typings.awsSdk.mod.ElasticTranscoder {
   def this(options: ClientConfiguration) = this()
 }
-

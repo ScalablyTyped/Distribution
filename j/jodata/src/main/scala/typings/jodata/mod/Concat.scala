@@ -2,7 +2,7 @@ package typings.jodata.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jodata", "Concat")
 @js.native
@@ -13,4 +13,3 @@ class Concat protected ()
   def this(value1: typings.jodata.jo.Concat, value2: String) = this()
   def this(value1: typings.jodata.jo.Concat, value2: typings.jodata.jo.Concat) = this()
 }
-

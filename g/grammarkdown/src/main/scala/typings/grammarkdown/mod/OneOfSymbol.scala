@@ -5,7 +5,7 @@ import typings.grammarkdown.tokensMod.SyntaxKind.OfKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OneKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "OneOfSymbol")
 @js.native
@@ -27,4 +27,3 @@ class OneOfSymbol protected ()
     symbols: js.Array[LexicalSymbol]
   ) = this()
 }
-

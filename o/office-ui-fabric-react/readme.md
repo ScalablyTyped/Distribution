@@ -1,24 +1,24 @@
 
 # Scala.js typings for office-ui-fabric-react
 
-Typings are for version 7.124.1
+Typings are for version 7.152.1
 
 ## Library description:
-Reusable React components for building experiences for Office 365.
+Reusable React components for building experiences for Microsoft 365.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | office-ui-fabric-react |
 | Keywords           | - |
-| # releases         | 720 |
-| # dependents       | 174 |
-| # downloads        | 5299227 |
+| # releases         | 611 |
+| # dependents       | 221 |
+| # downloads        | 5694641 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/OfficeDev/office-ui-fabric-react#readme)
-- [Bugs](https://github.com/OfficeDev/office-ui-fabric-react/issues)
-- [Repository](https://github.com/OfficeDev/office-ui-fabric-react)
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
 - [Npm](https://www.npmjs.com/package/office-ui-fabric-react)
     
 

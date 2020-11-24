@@ -3,11 +3,12 @@ package typings.decodeGif.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("decode-gif", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Decode the frames of a gif.
   @param data The gif data. Can be anything array-like such as a `Buffer`, `Array` or `Uint8Array`.
@@ -31,4 +32,3 @@ object ^ extends js.Object {
   */
   def apply(data: ArrayLike[Double]): ResultType = js.native
 }
-

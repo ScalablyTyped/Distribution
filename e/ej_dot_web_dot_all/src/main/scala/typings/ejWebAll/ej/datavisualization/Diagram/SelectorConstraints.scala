@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SelectorConstraints extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.SelectorConstraints")
 @js.native
 object SelectorConstraints extends js.Object {
+  
   //Sets the visibility of all selection handles as visible
   @js.native
   sealed trait All extends SelectorConstraints
@@ -41,6 +41,4 @@ object SelectorConstraints extends js.Object {
   //Sets the visibility of user handles as visible
   @js.native
   sealed trait UserHandles extends SelectorConstraints
-  
 }
-

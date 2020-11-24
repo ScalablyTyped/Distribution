@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Workitems")
 @js.native
 class ResourceProjectsLocationsJobsWorkitems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataflow.projects.locations.jobs.workItems.lease
     * @desc Leases a dataflow WorkItem to run.
@@ -47,6 +49,7 @@ class ResourceProjectsLocationsJobsWorkitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaseWorkItemResponse]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.locations.jobs.workItems.reportStatus
     * @desc Reports the status of dataflow WorkItems leased by a worker.
@@ -82,4 +85,3 @@ class ResourceProjectsLocationsJobsWorkitems protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReportWorkItemStatusResponse]
   ): Unit = js.native
 }
-

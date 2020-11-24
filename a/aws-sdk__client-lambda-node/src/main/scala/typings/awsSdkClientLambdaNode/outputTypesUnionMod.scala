@@ -2,11 +2,12 @@ package typings.awsSdkClientLambdaNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/types/OutputTypesUnion", JSImport.Namespace)
 @js.native
 object outputTypesUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientLambdaNode.typesAddPermissionOutputMod.AddPermissionOutput
     - typings.awsSdkClientLambdaNode.typesCreateAliasOutputMod.CreateAliasOutput
@@ -40,6 +41,4 @@ object outputTypesUnionMod extends js.Object {
     - typings.awsSdkClientLambdaNode.typesUpdateFunctionConfigurationOutputMod.UpdateFunctionConfigurationOutput
   */
   trait OutputTypesUnion extends js.Object
-  
 }
-

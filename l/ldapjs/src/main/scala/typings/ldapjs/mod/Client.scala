@@ -3,11 +3,11 @@ package typings.ldapjs.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Client extends EventEmitter {
-  var connected: Boolean = js.native
+  
   /**
     * Adds an entry to the LDAP server.
     *
@@ -24,6 +24,7 @@ trait Client extends EventEmitter {
   def add(name: String, entry: js.Object, callback: ErrorCallback): Unit = js.native
   def add(name: String, entry: js.Object, controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def add(name: String, entry: js.Object, controls: Control, callback: ErrorCallback): Unit = js.native
+  
   /**
     * Performs a simple authentication against the server.
     *
@@ -36,6 +37,7 @@ trait Client extends EventEmitter {
   def bind(dn: String, password: String, callback: CallBack): Unit = js.native
   def bind(dn: String, password: String, controls: js.Array[Control], callback: CallBack): Unit = js.native
   def bind(dn: String, password: String, controls: Control, callback: CallBack): Unit = js.native
+  
   /**
     * Compares an attribute/value pair with an entry on the LDAP server.
     *
@@ -49,6 +51,9 @@ trait Client extends EventEmitter {
   def compare(name: String, attr: String, value: String, callback: CompareCallback): Unit = js.native
   def compare(name: String, attr: String, value: String, controls: js.Array[Control], callback: CompareCallback): Unit = js.native
   def compare(name: String, attr: String, value: String, controls: Control, callback: CompareCallback): Unit = js.native
+  
+  var connected: Boolean = js.native
+  
   /**
     * Deletes an entry from the LDAP server.
     *
@@ -60,6 +65,7 @@ trait Client extends EventEmitter {
   def del(name: String, callback: ErrorCallback): Unit = js.native
   def del(name: String, controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def del(name: String, controls: Control, callback: ErrorCallback): Unit = js.native
+  
   /**
     * Disconnect from the LDAP server and do not allow reconnection.
     *
@@ -73,6 +79,7 @@ trait Client extends EventEmitter {
     */
   def destroy(): Unit = js.native
   def destroy(err: js.Any): Unit = js.native
+  
   /**
     * Performs an extended operation on the LDAP server.
     *
@@ -89,6 +96,7 @@ trait Client extends EventEmitter {
   def exop(name: String, value: String, callback: ExopCallback): Unit = js.native
   def exop(name: String, value: String, controls: js.Array[Control], callback: ExopCallback): Unit = js.native
   def exop(name: String, value: String, controls: Control, callback: ExopCallback): Unit = js.native
+  
   def modify(name: String, change: js.Array[Change], callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: js.Array[Change], controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: js.Array[Change], controls: Control, callback: ErrorCallback): Unit = js.native
@@ -104,6 +112,7 @@ trait Client extends EventEmitter {
   def modify(name: String, change: Change, callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: Change, controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: Change, controls: Control, callback: ErrorCallback): Unit = js.native
+  
   /**
     * Performs an LDAP modifyDN against the server.
     *
@@ -121,6 +130,7 @@ trait Client extends EventEmitter {
   def modifyDN(name: String, newName: String, callback: ErrorCallback): Unit = js.native
   def modifyDN(name: String, newName: String, controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def modifyDN(name: String, newName: String, controls: Control, callback: ErrorCallback): Unit = js.native
+  
   /**
     * Performs an LDAP search against the server.
     *
@@ -158,6 +168,7 @@ trait Client extends EventEmitter {
     callback: SearchCallBack,
     _bypass: Boolean
   ): Unit = js.native
+  
   def starttls(options: js.Object, controls: js.Array[Control], callback: CallBack): Unit = js.native
   def starttls(options: js.Object, controls: js.Array[Control], callback: CallBack, _bypass: Boolean): Unit = js.native
   /**
@@ -165,6 +176,7 @@ trait Client extends EventEmitter {
     */
   def starttls(options: js.Object, controls: Control, callback: CallBack): Unit = js.native
   def starttls(options: js.Object, controls: Control, callback: CallBack, _bypass: Boolean): Unit = js.native
+  
   /**
     * Unbinds this client from the LDAP server.
     *
@@ -177,4 +189,3 @@ trait Client extends EventEmitter {
   def unbind(): Unit = js.native
   def unbind(callback: ErrorCallback): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.isLength` exported as a module.
 | Full name          | lodash.islength |
 | Keywords           | lodash-modularized, islength |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 3975971 |
+| # dependents       | 3 |
+| # downloads        | 7461765 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.sharp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharp", "cache")
 @js.native
 object cache extends js.Object {
+  
   //#endregion
   //#region Utility functions
   /**
@@ -20,4 +21,3 @@ object cache extends js.Object {
   def apply(options: Boolean): CacheResult = js.native
   def apply(options: CacheOptions): CacheResult = js.native
 }
-

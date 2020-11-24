@@ -10,9 +10,9 @@ Fast and simple xml generator. Supports attributes, CDATA, etc. Includes tests a
 | ------------------ | :-------------: |
 | Full name          | xml |
 | Keywords           | xml, create, builder, json, simple |
-| # releases         | 1 |
-| # dependents       | 311 |
-| # downloads        | 49833488 |
+| # releases         | 0 |
+| # dependents       | 336 |
+| # downloads        | 74981243 |
 | # stars            | 38 |
 
 ## Links

@@ -2,12 +2,12 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MobileBroadbandAccountWatcher extends IMobileBroadbandAccountWatcher
-
 object MobileBroadbandAccountWatcher {
+  
   @scala.inline
   def apply(
     onaccountadded: js.Any,
@@ -23,4 +23,3 @@ object MobileBroadbandAccountWatcher {
     __obj.asInstanceOf[MobileBroadbandAccountWatcher]
   }
 }
-

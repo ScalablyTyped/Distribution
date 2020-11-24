@@ -7,7 +7,7 @@ import typings.styledSystem.mod.JustifyContentProps
 import typings.styledSystem.mod.RequiredTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LabelKnownProps
@@ -16,12 +16,11 @@ trait LabelKnownProps
      with FlexDirectionProps[RequiredTheme]
      with AlignItemsProps[RequiredTheme]
      with JustifyContentProps[RequiredTheme]
-
 object LabelKnownProps {
+  
   @scala.inline
   def apply(): LabelKnownProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelKnownProps]
   }
 }
-

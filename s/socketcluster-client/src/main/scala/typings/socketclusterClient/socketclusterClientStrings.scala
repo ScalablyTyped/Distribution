@@ -4,9 +4,79 @@ import typings.socketclusterClient.clientsocketMod.AuthStates
 import typings.socketclusterClient.clientsocketMod.States
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socketclusterClientStrings {
+  
+  @scala.inline
+  def authStateChange: authStateChange = "authStateChange".asInstanceOf[authStateChange]
+  
+  @scala.inline
+  def authenticate: authenticate = "authenticate".asInstanceOf[authenticate]
+  
+  @scala.inline
+  def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def connectAbort: connectAbort = "connectAbort".asInstanceOf[connectAbort]
+  
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  
+  @scala.inline
+  def deauthenticate: deauthenticate = "deauthenticate".asInstanceOf[deauthenticate]
+  
+  @scala.inline
+  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def kickOut: kickOut = "kickOut".asInstanceOf[kickOut]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
+  
+  @scala.inline
+  def removeAuthToken: removeAuthToken = "removeAuthToken".asInstanceOf[removeAuthToken]
+  
+  @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @scala.inline
+  def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
+  
+  @scala.inline
+  def subscribeRequest: subscribeRequest = "subscribeRequest".asInstanceOf[subscribeRequest]
+  
+  @scala.inline
+  def subscribeStateChange: subscribeStateChange = "subscribeStateChange".asInstanceOf[subscribeStateChange]
+  
+  @scala.inline
+  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  
+  @scala.inline
+  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
+  
+  @scala.inline
+  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  
+  @scala.inline
+  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
+  
   @js.native
   sealed trait authStateChange extends js.Object
   
@@ -75,52 +145,4 @@ object socketclusterClientStrings {
   
   @js.native
   sealed trait unsubscribed extends js.Object
-  
-  @scala.inline
-  def authStateChange: authStateChange = "authStateChange".asInstanceOf[authStateChange]
-  @scala.inline
-  def authenticate: authenticate = "authenticate".asInstanceOf[authenticate]
-  @scala.inline
-  def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def connectAbort: connectAbort = "connectAbort".asInstanceOf[connectAbort]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def deauthenticate: deauthenticate = "deauthenticate".asInstanceOf[deauthenticate]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def kickOut: kickOut = "kickOut".asInstanceOf[kickOut]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def removeAuthToken: removeAuthToken = "removeAuthToken".asInstanceOf[removeAuthToken]
-  @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
-  @scala.inline
-  def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
-  @scala.inline
-  def subscribeRequest: subscribeRequest = "subscribeRequest".asInstanceOf[subscribeRequest]
-  @scala.inline
-  def subscribeStateChange: subscribeStateChange = "subscribeStateChange".asInstanceOf[subscribeStateChange]
-  @scala.inline
-  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
-  @scala.inline
-  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
-  @scala.inline
-  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
-  @scala.inline
-  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
 }
-

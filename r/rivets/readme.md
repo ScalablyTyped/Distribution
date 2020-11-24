@@ -11,8 +11,8 @@ Declarative data binding + templating solution.
 | Full name          | rivets |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 153682 |
+| # dependents       | 14 |
+| # downloads        | 159263 |
 | # stars            | 2 |
 
 ## Links

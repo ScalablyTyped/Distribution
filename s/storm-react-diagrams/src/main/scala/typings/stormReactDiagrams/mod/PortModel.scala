@@ -2,7 +2,7 @@ package typings.stormReactDiagrams.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "PortModel")
 @js.native
@@ -22,4 +22,3 @@ class PortModel protected ()
   def this(name: String, `type`: String, id: js.UndefOr[scala.Nothing], maximumLinks: Double) = this()
   def this(name: String, `type`: String, id: String, maximumLinks: Double) = this()
 }
-

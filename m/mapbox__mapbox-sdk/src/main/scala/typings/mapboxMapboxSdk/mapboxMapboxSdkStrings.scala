@@ -17,9 +17,229 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapboxProfile
 import typings.mapboxMapboxSdk.tilequeryMod.GeometryType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapboxMapboxSdkStrings {
+  
+  @scala.inline
+  def address: address = "address".asInstanceOf[address]
+  
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  
+  @scala.inline
+  def arrive: arrive = "arrive".asInstanceOf[arrive]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def congestion: congestion = "congestion".asInstanceOf[congestion]
+  
+  @scala.inline
+  def continue: continue = "continue".asInstanceOf[continue]
+  
+  @scala.inline
+  def country: country = "country".asInstanceOf[country]
+  
+  @scala.inline
+  def curb: curb = "curb".asInstanceOf[curb]
+  
+  @scala.inline
+  def cycling: cycling = "cycling".asInstanceOf[cycling]
+  
+  @scala.inline
+  def depart: depart = "depart".asInstanceOf[depart]
+  
+  @scala.inline
+  def distance: distance = "distance".asInstanceOf[distance]
+  
+  @scala.inline
+  def district: district = "district".asInstanceOf[district]
+  
+  @scala.inline
+  def driving: driving = "driving".asInstanceOf[driving]
+  
+  @scala.inline
+  def `driving-traffic`: `driving-traffic` = "driving-traffic".asInstanceOf[`driving-traffic`]
+  
+  @scala.inline
+  def duration: duration = "duration".asInstanceOf[duration]
+  
+  @scala.inline
+  def `end of road`: `end of road` = ("end of road").asInstanceOf[`end of road`]
+  
+  @scala.inline
+  def `exit rotary`: `exit rotary` = ("exit rotary").asInstanceOf[`exit rotary`]
+  
+  @scala.inline
+  def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
+  
+  @scala.inline
+  def `false`: `false` = "false".asInstanceOf[`false`]
+  
+  @scala.inline
+  def ferry: ferry = "ferry".asInstanceOf[ferry]
+  
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  
+  @scala.inline
+  def fork: fork = "fork".asInstanceOf[fork]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
+  @scala.inline
+  def geojson: geojson = "geojson".asInstanceOf[geojson]
+  
+  @scala.inline
+  def imperial: imperial = "imperial".asInstanceOf[imperial]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def linestring: linestring = "linestring".asInstanceOf[linestring]
+  
+  @scala.inline
+  def locality: locality = "locality".asInstanceOf[locality]
+  
+  @scala.inline
+  def mapboxDotplaces: mapboxDotplaces = "mapbox.places".asInstanceOf[mapboxDotplaces]
+  
+  @scala.inline
+  def `mapboxDotplaces-permanent`: `mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDotplaces-permanent`]
+  
+  @scala.inline
+  def merge: merge = "merge".asInstanceOf[merge]
+  
+  @scala.inline
+  def metric: metric = "metric".asInstanceOf[metric]
+  
+  @scala.inline
+  def motorway: motorway = "motorway".asInstanceOf[motorway]
+  
+  @scala.inline
+  def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
+  
+  @scala.inline
+  def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
+  
+  @scala.inline
+  def notification: notification = "notification".asInstanceOf[notification]
+  
+  @scala.inline
+  def `off ramp`: `off ramp` = ("off ramp").asInstanceOf[`off ramp`]
+  
+  @scala.inline
+  def `on ramp`: `on ramp` = ("on ramp").asInstanceOf[`on ramp`]
+  
+  @scala.inline
+  def place: place = "place".asInstanceOf[place]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def poi: poi = "poi".asInstanceOf[poi]
+  
+  @scala.inline
+  def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
+  
+  @scala.inline
+  def point: point = "point".asInstanceOf[point]
+  
+  @scala.inline
+  def polygon: polygon = "polygon".asInstanceOf[polygon]
+  
+  @scala.inline
+  def polyline: polyline = "polyline".asInstanceOf[polyline]
+  
+  @scala.inline
+  def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
+  
+  @scala.inline
+  def postcode: postcode = "postcode".asInstanceOf[postcode]
+  
+  @scala.inline
+  def region: region = "region".asInstanceOf[region]
+  
+  @scala.inline
+  def restricted: restricted = "restricted".asInstanceOf[restricted]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rotary: rotary = "rotary".asInstanceOf[rotary]
+  
+  @scala.inline
+  def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
+  
+  @scala.inline
+  def `roundabout turn`: `roundabout turn` = ("roundabout turn").asInstanceOf[`roundabout turn`]
+  
+  @scala.inline
+  def `sharp left`: `sharp left` = ("sharp left").asInstanceOf[`sharp left`]
+  
+  @scala.inline
+  def `sharp right`: `sharp right` = ("sharp right").asInstanceOf[`sharp right`]
+  
+  @scala.inline
+  def simplified: simplified = "simplified".asInstanceOf[simplified]
+  
+  @scala.inline
+  def `slight left`: `slight left` = ("slight left").asInstanceOf[`slight left`]
+  
+  @scala.inline
+  def `slight right`: `slight right` = ("slight right").asInstanceOf[`slight right`]
+  
+  @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  
+  @scala.inline
+  def speed: speed = "speed".asInstanceOf[speed]
+  
+  @scala.inline
+  def straight: straight = "straight".asInstanceOf[straight]
+  
+  @scala.inline
+  def toll: toll = "toll".asInstanceOf[toll]
+  
+  @scala.inline
+  def train: train = "train".asInstanceOf[train]
+  
+  @scala.inline
+  def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
+  
+  @scala.inline
+  def turn: turn = "turn".asInstanceOf[turn]
+  
+  @scala.inline
+  def unaccessible: unaccessible = "unaccessible".asInstanceOf[unaccessible]
+  
+  @scala.inline
+  def unlimited: unlimited = "unlimited".asInstanceOf[unlimited]
+  
+  @scala.inline
+  def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
+  
+  @scala.inline
+  def uturn: uturn = "uturn".asInstanceOf[uturn]
+  
+  @scala.inline
+  def walking: walking = "walking".asInstanceOf[walking]
+  
   @js.native
   sealed trait address extends GeocodeQueryType
   
@@ -109,6 +329,9 @@ object mapboxMapboxSdkStrings {
   
   @js.native
   sealed trait json extends js.Object
+  
+  @js.native
+  sealed trait large extends js.Object
   
   @js.native
   sealed trait last extends js.Object
@@ -217,6 +440,9 @@ object mapboxMapboxSdkStrings {
   sealed trait `slight right` extends ManeuverModifier
   
   @js.native
+  sealed trait small extends js.Object
+  
+  @js.native
   sealed trait speed extends DirectionsAnnotation
   
   @js.native
@@ -251,148 +477,4 @@ object mapboxMapboxSdkStrings {
     extends DirectionsMode
        with DirectionsProfile
        with MapboxProfile
-  
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def arrive: arrive = "arrive".asInstanceOf[arrive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def congestion: congestion = "congestion".asInstanceOf[congestion]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def country: country = "country".asInstanceOf[country]
-  @scala.inline
-  def curb: curb = "curb".asInstanceOf[curb]
-  @scala.inline
-  def cycling: cycling = "cycling".asInstanceOf[cycling]
-  @scala.inline
-  def depart: depart = "depart".asInstanceOf[depart]
-  @scala.inline
-  def distance: distance = "distance".asInstanceOf[distance]
-  @scala.inline
-  def district: district = "district".asInstanceOf[district]
-  @scala.inline
-  def driving: driving = "driving".asInstanceOf[driving]
-  @scala.inline
-  def `driving-traffic`: `driving-traffic` = "driving-traffic".asInstanceOf[`driving-traffic`]
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
-  @scala.inline
-  def `end of road`: `end of road` = ("end of road").asInstanceOf[`end of road`]
-  @scala.inline
-  def `exit rotary`: `exit rotary` = ("exit rotary").asInstanceOf[`exit rotary`]
-  @scala.inline
-  def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def ferry: ferry = "ferry".asInstanceOf[ferry]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def fork: fork = "fork".asInstanceOf[fork]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def geojson: geojson = "geojson".asInstanceOf[geojson]
-  @scala.inline
-  def imperial: imperial = "imperial".asInstanceOf[imperial]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def linestring: linestring = "linestring".asInstanceOf[linestring]
-  @scala.inline
-  def locality: locality = "locality".asInstanceOf[locality]
-  @scala.inline
-  def mapboxDotplaces: mapboxDotplaces = "mapbox.places".asInstanceOf[mapboxDotplaces]
-  @scala.inline
-  def `mapboxDotplaces-permanent`: `mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDotplaces-permanent`]
-  @scala.inline
-  def merge: merge = "merge".asInstanceOf[merge]
-  @scala.inline
-  def metric: metric = "metric".asInstanceOf[metric]
-  @scala.inline
-  def motorway: motorway = "motorway".asInstanceOf[motorway]
-  @scala.inline
-  def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
-  @scala.inline
-  def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def `off ramp`: `off ramp` = ("off ramp").asInstanceOf[`off ramp`]
-  @scala.inline
-  def `on ramp`: `on ramp` = ("on ramp").asInstanceOf[`on ramp`]
-  @scala.inline
-  def place: place = "place".asInstanceOf[place]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def poi: poi = "poi".asInstanceOf[poi]
-  @scala.inline
-  def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
-  @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
-  @scala.inline
-  def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
-  @scala.inline
-  def postcode: postcode = "postcode".asInstanceOf[postcode]
-  @scala.inline
-  def region: region = "region".asInstanceOf[region]
-  @scala.inline
-  def restricted: restricted = "restricted".asInstanceOf[restricted]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rotary: rotary = "rotary".asInstanceOf[rotary]
-  @scala.inline
-  def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
-  @scala.inline
-  def `roundabout turn`: `roundabout turn` = ("roundabout turn").asInstanceOf[`roundabout turn`]
-  @scala.inline
-  def `sharp left`: `sharp left` = ("sharp left").asInstanceOf[`sharp left`]
-  @scala.inline
-  def `sharp right`: `sharp right` = ("sharp right").asInstanceOf[`sharp right`]
-  @scala.inline
-  def simplified: simplified = "simplified".asInstanceOf[simplified]
-  @scala.inline
-  def `slight left`: `slight left` = ("slight left").asInstanceOf[`slight left`]
-  @scala.inline
-  def `slight right`: `slight right` = ("slight right").asInstanceOf[`slight right`]
-  @scala.inline
-  def speed: speed = "speed".asInstanceOf[speed]
-  @scala.inline
-  def straight: straight = "straight".asInstanceOf[straight]
-  @scala.inline
-  def toll: toll = "toll".asInstanceOf[toll]
-  @scala.inline
-  def train: train = "train".asInstanceOf[train]
-  @scala.inline
-  def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
-  @scala.inline
-  def turn: turn = "turn".asInstanceOf[turn]
-  @scala.inline
-  def unaccessible: unaccessible = "unaccessible".asInstanceOf[unaccessible]
-  @scala.inline
-  def unlimited: unlimited = "unlimited".asInstanceOf[unlimited]
-  @scala.inline
-  def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
-  @scala.inline
-  def uturn: uturn = "uturn".asInstanceOf[uturn]
-  @scala.inline
-  def walking: walking = "walking".asInstanceOf[walking]
 }
-

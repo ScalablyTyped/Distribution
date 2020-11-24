@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cucumber-messages" : "8.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cucumber-messages" : "8.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

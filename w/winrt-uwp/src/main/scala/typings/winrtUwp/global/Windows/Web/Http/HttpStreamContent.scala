@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Web.Http
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses a stream. */
 @JSGlobal("Windows.Web.Http.HttpStreamContent")
@@ -16,4 +16,3 @@ class HttpStreamContent protected ()
     */
   def this(content: IInputStream) = this()
 }
-

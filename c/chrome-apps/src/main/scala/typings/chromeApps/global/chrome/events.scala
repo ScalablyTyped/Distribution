@@ -2,7 +2,7 @@ package typings.chromeApps.global.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.enterprise.*
 // #region chrome.events
@@ -33,4 +33,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.events")
 @js.native
 object events extends js.Object
-

@@ -12,32 +12,27 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner", JSImport.Namespace)
 @js.native
 object websecurityscannerMod extends js.Object {
+  
   def websecurityscanner(options: Options): Websecurityscanner = js.native
   def websecurityscanner(options: typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Options): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = js.native
   @JSName("websecurityscanner")
   def websecurityscanner_v1alpha(version: v1alpha): Websecurityscanner = js.native
   @JSName("websecurityscanner")
   def websecurityscanner_v1beta(version: v1beta): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1alpha protected () extends Websecurityscanner {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta protected ()
-      extends typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1alpha
       extends TopLevel[
@@ -49,6 +44,12 @@ object websecurityscannerMod extends js.Object {
             ]
     
     @js.native
+    class v1beta protected ()
+      extends typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta
       extends TopLevel[
               Instantiable2[
@@ -57,11 +58,11 @@ object websecurityscannerMod extends js.Object {
                 typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,8 +90,5 @@ object websecurityscannerMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

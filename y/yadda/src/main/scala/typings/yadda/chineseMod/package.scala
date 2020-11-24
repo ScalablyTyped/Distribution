@@ -2,9 +2,11 @@ package typings.yadda
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object chineseMod {
+  
   type Library = typings.yadda.englishMod.Library
+  
   type Vocabulary = typings.yadda.englishMod.Vocabulary
 }

@@ -2,7 +2,7 @@ package typings.webcola.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Layout3D")
 @js.native
@@ -18,12 +18,12 @@ class Layout3D protected ()
     idealLinkLength: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("webcola", "Layout3D")
 @js.native
 object Layout3D extends js.Object {
+  
   var dims: js.Array[String] = js.native
+  
   var k: Double = js.native
 }
-

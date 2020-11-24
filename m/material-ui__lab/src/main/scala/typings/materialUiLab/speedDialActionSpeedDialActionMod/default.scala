@@ -3,11 +3,11 @@ package typings.materialUiLab.speedDialActionSpeedDialActionMod
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/lab/SpeedDialAction/SpeedDialAction", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply(props: SpeedDialActionProps): Element = js.native
 }
-

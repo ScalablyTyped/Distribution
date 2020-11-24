@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-scale
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 scale an image.
@@ -10,9 +10,9 @@ scale an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-scale |
 | Keywords           | - |
-| # releases         | 64 |
+| # releases         | 101 |
 | # dependents       | 1 |
-| # downloads        | 14379276 |
+| # downloads        | 37764799 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListGuardianIn
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListGuardiansResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GoogleAppsScript.Classroom.Collection.UserProfiles")
 @js.native
 object UserProfiles extends js.Object {
+  
   @js.native
   trait GuardianInvitationsCollection extends js.Object {
+    
     // Creates a guardian invitation, and sends an email to the guardian asking
     // them to confirm that they are the student's guardian.
     // Once the guardian accepts the invitation, their `state` will change to
@@ -40,6 +42,7 @@ object UserProfiles extends js.Object {
     //   `invited_email_address` matches the Google account of an existing
     //   `Guardian` for this user.
     def create(resource: GuardianInvitation, studentId: String): GuardianInvitation = js.native
+    
     // Returns a specific guardian invitation.
     // This method returns the following error codes:
     // * `PERMISSION_DENIED` if the requesting user is not permitted to view
@@ -53,6 +56,7 @@ object UserProfiles extends js.Object {
     //   `invitation_id`. May also be returned if the student exists, but the
     //   requesting user does not have access to see that student.
     def get(studentId: String, invitationId: String): GuardianInvitation = js.native
+    
     // Returns a list of guardian invitations that the requesting user is
     // permitted to view, filtered by the parameters provided.
     // This method returns the following error codes:
@@ -83,6 +87,7 @@ object UserProfiles extends js.Object {
     // * `NOT_FOUND` if a `student_id` is specified, and its format can be
     //   recognized, but Classroom has no record of that student.
     def list(studentId: String, optionalArgs: js.Object): ListGuardianInvitationsResponse = js.native
+    
     // Modifies a guardian invitation.
     // Currently, the only valid modification is to change the `state` from
     // `PENDING` to `COMPLETE`. This has the effect of withdrawing the invitation.
@@ -119,6 +124,7 @@ object UserProfiles extends js.Object {
   
   @js.native
   trait GuardiansCollection extends js.Object {
+    
     // Returns a specific guardian.
     // This method returns the following error codes:
     // * `PERMISSION_DENIED` if no user that matches the provided `student_id`
@@ -133,6 +139,7 @@ object UserProfiles extends js.Object {
     //   the requested `student_id`, but no `Guardian` record exists for that
     //   student that matches the provided `guardian_id`.
     def get(studentId: String, guardianId: String): Guardian = js.native
+    
     // Returns a list of guardians that the requesting user is permitted to
     // view, restricted to those that match the request.
     // To list guardians for any student that the requesting user may view
@@ -169,6 +176,7 @@ object UserProfiles extends js.Object {
     // * `NOT_FOUND` if a `student_id` is specified, and its format can be
     //   recognized, but Classroom has no record of that student.
     def list(studentId: String, optionalArgs: js.Object): ListGuardiansResponse = js.native
+    
     // Deletes a guardian.
     // The guardian will no longer receive guardian notifications and the guardian
     // will no longer be accessible via the API.
@@ -186,6 +194,4 @@ object UserProfiles extends js.Object {
     //   student with the provided `guardian_id`.
     def remove(studentId: String, guardianId: String): Unit = js.native
   }
-  
 }
-

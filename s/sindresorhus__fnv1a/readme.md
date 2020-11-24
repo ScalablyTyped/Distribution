@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__fnv1a
 
-Typings are for version 2.0.0
+Typings are for version 2.0.1
 
 ## Library description:
 FNV-1a non-cryptographic hash function
@@ -10,9 +10,9 @@ FNV-1a non-cryptographic hash function
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/fnv1a |
 | Keywords           | fnv1a, fnv-1a, fnv1, fnv-1, fnv, algorithm, hash, hashing, string, function, fowler–noll–vo, fowler, noll, vo, unicode, bigint |
-| # releases         | 6 |
-| # dependents       | 16 |
-| # downloads        | 616137 |
+| # releases         | 5 |
+| # dependents       | 17 |
+| # downloads        | 1340826 |
 | # stars            | 0 |
 
 ## Links

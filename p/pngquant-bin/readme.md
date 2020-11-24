@@ -10,9 +10,9 @@ Typings are for version 4.0
 | ------------------ | :-------------: |
 | Full name          | pngquant-bin |
 | Keywords           | imagemin, compress, image, img, minify, optimize, png, pngquant |
-| # releases         | 5 |
-| # dependents       | 55 |
-| # downloads        | 23052237 |
+| # releases         | 4 |
+| # dependents       | 61 |
+| # downloads        | 29964765 |
 | # stars            | 5 |
 
 ## Links

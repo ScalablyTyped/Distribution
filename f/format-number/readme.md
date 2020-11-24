@@ -12,7 +12,7 @@ Formats numbers with separators every 3 digits and currency etc. Highly configur
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 36 |
-| # downloads        | 1527186 |
+| # downloads        | 1536688 |
 | # stars            | 3 |
 
 ## Links

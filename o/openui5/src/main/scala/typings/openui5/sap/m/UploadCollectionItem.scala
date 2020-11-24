@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.unified.FileUploader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UploadCollectionItem extends Element {
+  
   /**
     * Adds some attribute to the aggregation <code>attributes</code>.
     * @since 1.30
@@ -15,6 +16,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addAttribute(oAttribute: ObjectAttribute): UploadCollectionItem = js.native
+  
   /**
     * Adds some marker to the aggregation <code>markers</code>.
     * @since 1.40
@@ -22,6 +24,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addMarker(oMarker: ObjectMarker): UploadCollectionItem = js.native
+  
   /**
     * Adds some status to the aggregation <code>statuses</code>.
     * @since 1.30
@@ -29,6 +32,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addStatus(oStatus: ObjectStatus): UploadCollectionItem = js.native
+  
   /**
     * Binds aggregation <code>attributes</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -38,6 +42,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindAttributes(oBindingInfo: js.Any): UploadCollectionItem = js.native
+  
   /**
     * Binds aggregation <code>markers</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -47,6 +52,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindMarkers(oBindingInfo: js.Any): UploadCollectionItem = js.native
+  
   /**
     * Binds aggregation <code>statuses</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -56,24 +62,28 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindStatuses(oBindingInfo: js.Any): UploadCollectionItem = js.native
+  
   /**
     * Destroys all the attributes in the aggregation <code>attributes</code>.
     * @since 1.30
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyAttributes(): UploadCollectionItem = js.native
+  
   /**
     * Destroys all the markers in the aggregation <code>markers</code>.
     * @since 1.40
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyMarkers(): UploadCollectionItem = js.native
+  
   /**
     * Destroys all the statuses in the aggregation <code>statuses</code>.
     * @since 1.30
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyStatuses(): UploadCollectionItem = js.native
+  
   /**
     * Downloads the item.The sap.ui.core.util.File method is used here. For further details on this
     * method, see {sap.ui.core.util.File.save}.
@@ -81,12 +91,14 @@ trait UploadCollectionItem extends Element {
     * @param askForLocation Decides whether to ask for a location to download or not.
     */
   def download(askForLocation: Boolean): Unit = js.native
+  
   /**
     * Gets current value of property <code>ariaLabelForPicture</code>.Aria label for the icon (or for the
     * image).
     * @returns Value of property <code>ariaLabelForPicture</code>
     */
   def getAriaLabelForPicture(): String = js.native
+  
   /**
     * Gets content of aggregation <code>attributes</code>.Attributes of an uploaded item, for example,
     * 'Uploaded By', 'Uploaded On', 'File Size'attributes are displayed after an item has been
@@ -100,18 +112,21 @@ trait UploadCollectionItem extends Element {
     * @since 1.30
     */
   def getAttributes(): js.Array[ObjectAttribute] = js.native
+  
   /**
     * Gets current value of property <code>contributor</code>.Specifies the name of the user who uploaded
     * the file.
     * @returns Value of property <code>contributor</code>
     */
   def getContributor(): String = js.native
+  
   /**
     * Gets current value of property <code>documentId</code>.Specifies a unique identifier of the file
     * (created by the application).
     * @returns Value of property <code>documentId</code>
     */
   def getDocumentId(): String = js.native
+  
   /**
     * Gets current value of property <code>enableDelete</code>.Enables/Disables the Edit button.If the
     * value is true, the Edit button is enabled and the edit function can be used.If the value is false,
@@ -119,6 +134,7 @@ trait UploadCollectionItem extends Element {
     * @returns Value of property <code>enableDelete</code>
     */
   def getEnableDelete(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>enableEdit</code>.Enables/Disables the Edit button.If the value
     * is true, the Edit button is enabled and the edit function can be used.If the value is false, the
@@ -126,33 +142,39 @@ trait UploadCollectionItem extends Element {
     * @returns Value of property <code>enableEdit</code>
     */
   def getEnableEdit(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>fileName</code>.Specifies the name of the uploaded file.
     * @returns Value of property <code>fileName</code>
     */
   def getFileName(): String = js.native
+  
   /**
     * Gets current value of property <code>fileSize</code>.Specifies the size of the uploaded file (in
     * megabytes).
     * @returns Value of property <code>fileSize</code>
     */
   def getFileSize(): Double = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>fileUploader</code>, or
     * <code>null</code>.
     */
   def getFileUploader(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>markers</code>.Markers of an uploaded itemMarkers will be
     * displayed after an item has been uploadedBut not in Edit mode
     * @since 1.40
     */
   def getMarkers(): js.Array[ObjectMarker] = js.native
+  
   /**
     * Gets current value of property <code>mimeType</code>.Specifies the MIME type of the file.
     * @returns Value of property <code>mimeType</code>
     */
   def getMimeType(): String = js.native
+  
   /**
     * Gets current value of property <code>selected</code>.Defines the selected state of the
     * UploadCollectionItem.Default value is <code>false</code>.
@@ -160,24 +182,28 @@ trait UploadCollectionItem extends Element {
     * @returns Value of property <code>selected</code>
     */
   def getSelected(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>statuses</code>.Statuses of an uploaded itemStatuses will be
     * displayed after an item has been uploaded
     * @since 1.30
     */
   def getStatuses(): js.Array[ObjectStatus] = js.native
+  
   /**
     * Gets current value of property <code>thumbnailUrl</code>.Specifies the URL where the thumbnail of
     * the file is located.
     * @returns Value of property <code>thumbnailUrl</code>
     */
   def getThumbnailUrl(): String = js.native
+  
   /**
     * Gets current value of property <code>uploadedDate</code>.Specifies the date on which the file was
     * uploaded.The application has to define the date format.
     * @returns Value of property <code>uploadedDate</code>
     */
   def getUploadedDate(): String = js.native
+  
   /**
     * Gets current value of property <code>url</code>.Specifies the URL where the file is located.If the
     * application doesn't provide a value for this property, the icon and the file name of the
@@ -185,6 +211,7 @@ trait UploadCollectionItem extends Element {
     * @returns Value of property <code>url</code>
     */
   def getUrl(): String = js.native
+  
   /**
     * Gets current value of property <code>visibleDelete</code>.Show/Hide the Delete button.If the value
     * is true, the Delete button is visible.If the value is false, the Delete button is not
@@ -192,6 +219,7 @@ trait UploadCollectionItem extends Element {
     * @returns Value of property <code>visibleDelete</code>
     */
   def getVisibleDelete(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>visibleEdit</code>.Show/Hide the Edit button.If the value is
     * true, the Edit button is visible.If the value is false, the Edit button is not visible.Default value
@@ -199,6 +227,7 @@ trait UploadCollectionItem extends Element {
     * @returns Value of property <code>visibleEdit</code>
     */
   def getVisibleEdit(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ObjectAttribute</code> in the aggregation
     * <code>attributes</code>.and returns its index if found or -1 otherwise.
@@ -207,6 +236,7 @@ trait UploadCollectionItem extends Element {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfAttribute(oAttribute: ObjectAttribute): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ObjectMarker</code> in the aggregation <code>markers</code>.and
     * returns its index if found or -1 otherwise.
@@ -215,6 +245,7 @@ trait UploadCollectionItem extends Element {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfMarker(oMarker: ObjectMarker): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ObjectStatus</code> in the aggregation <code>statuses</code>.and
     * returns its index if found or -1 otherwise.
@@ -223,6 +254,7 @@ trait UploadCollectionItem extends Element {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfStatus(oStatus: ObjectStatus): Double = js.native
+  
   /**
     * Inserts a attribute into the aggregation <code>attributes</code>.
     * @since 1.30
@@ -234,6 +266,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertAttribute(oAttribute: ObjectAttribute, iIndex: Double): UploadCollectionItem = js.native
+  
   /**
     * Inserts a marker into the aggregation <code>markers</code>.
     * @since 1.40
@@ -245,6 +278,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertMarker(oMarker: ObjectMarker, iIndex: Double): UploadCollectionItem = js.native
+  
   /**
     * Inserts a status into the aggregation <code>statuses</code>.
     * @since 1.30
@@ -256,6 +290,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertStatus(oStatus: ObjectStatus, iIndex: Double): UploadCollectionItem = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>attributes</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -263,6 +298,7 @@ trait UploadCollectionItem extends Element {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAttributes(): js.Array[ObjectAttribute] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>markers</code>.Additionally, it unregisters them
     * from the hosting UIArea.
@@ -270,6 +306,7 @@ trait UploadCollectionItem extends Element {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllMarkers(): js.Array[ObjectMarker] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>statuses</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -277,6 +314,7 @@ trait UploadCollectionItem extends Element {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllStatuses(): js.Array[ObjectStatus] = js.native
+  
   def removeAttribute(vAttribute: String): ObjectAttribute = js.native
   /**
     * Removes a attribute from the aggregation <code>attributes</code>.
@@ -286,6 +324,7 @@ trait UploadCollectionItem extends Element {
     */
   def removeAttribute(vAttribute: Double): ObjectAttribute = js.native
   def removeAttribute(vAttribute: ObjectAttribute): ObjectAttribute = js.native
+  
   def removeMarker(vMarker: String): ObjectMarker = js.native
   /**
     * Removes a marker from the aggregation <code>markers</code>.
@@ -295,6 +334,7 @@ trait UploadCollectionItem extends Element {
     */
   def removeMarker(vMarker: Double): ObjectMarker = js.native
   def removeMarker(vMarker: ObjectMarker): ObjectMarker = js.native
+  
   def removeStatus(vStatus: String): ObjectStatus = js.native
   /**
     * Removes a status from the aggregation <code>statuses</code>.
@@ -304,6 +344,7 @@ trait UploadCollectionItem extends Element {
     */
   def removeStatus(vStatus: Double): ObjectStatus = js.native
   def removeStatus(vStatus: ObjectStatus): ObjectStatus = js.native
+  
   /**
     * Sets a new value for property <code>ariaLabelForPicture</code>.Aria label for the icon (or for the
     * image).When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -312,10 +353,12 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAriaLabelForPicture(sAriaLabelForPicture: String): UploadCollectionItem = js.native
+  
   /**
     * Setter of the deprecated contributor property. The property is mapped to the aggregation attributes.
     */
   def setContributor(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>documentId</code>.Specifies a unique identifier of the file
     * (created by the application).When called with a value of <code>null</code> or
@@ -324,6 +367,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDocumentId(sDocumentId: String): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>enableDelete</code>.Enables/Disables the Edit button.If the
     * value is true, the Edit button is enabled and the edit function can be used.If the value is false,
@@ -334,6 +378,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnableDelete(bEnableDelete: Boolean): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>enableEdit</code>.Enables/Disables the Edit button.If the value
     * is true, the Edit button is enabled and the edit function can be used.If the value is false, the
@@ -344,6 +389,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnableEdit(bEnableEdit: Boolean): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>fileName</code>.Specifies the name of the uploaded file.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -352,10 +398,12 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFileName(sFileName: String): UploadCollectionItem = js.native
+  
   /**
     * Setter of the deprecated fileSize property. The property is mapped to the aggregation attributes.
     */
   def setFileSize(): Unit = js.native
+  
   /**
     * Sets the associated <code>fileUploader</code>.
     * @param oFileUploader ID of an element which becomes the new target of this fileUploader association;
@@ -364,6 +412,7 @@ trait UploadCollectionItem extends Element {
     */
   def setFileUploader(oFileUploader: js.Any): UploadCollectionItem = js.native
   def setFileUploader(oFileUploader: FileUploader): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>mimeType</code>.Specifies the MIME type of the file.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -372,6 +421,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMimeType(sMimeType: String): UploadCollectionItem = js.native
+  
   /**
     * Setter of the selected property.
     * @since 1.34
@@ -379,6 +429,7 @@ trait UploadCollectionItem extends Element {
     * @returns The current UploadCollectionItem
     */
   def setSelected(selected: Boolean): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>thumbnailUrl</code>.Specifies the URL where the thumbnail of the
     * file is located.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -387,11 +438,13 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setThumbnailUrl(sThumbnailUrl: String): UploadCollectionItem = js.native
+  
   /**
     * Setter of the deprecated uploadedDate property. The property is mapped to the aggregation
     * attributes.
     */
   def setUploadedDate(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>url</code>.Specifies the URL where the file is located.If the
     * application doesn't provide a value for this property, the icon and the file name of the
@@ -401,6 +454,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUrl(sUrl: String): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>visibleDelete</code>.Show/Hide the Delete button.If the value is
     * true, the Delete button is visible.If the value is false, the Delete button is not visible.When
@@ -410,6 +464,7 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVisibleDelete(bVisibleDelete: Boolean): UploadCollectionItem = js.native
+  
   /**
     * Sets a new value for property <code>visibleEdit</code>.Show/Hide the Edit button.If the value is
     * true, the Edit button is visible.If the value is false, the Edit button is not visible.When called
@@ -419,18 +474,21 @@ trait UploadCollectionItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVisibleEdit(bVisibleEdit: Boolean): UploadCollectionItem = js.native
+  
   /**
     * Unbinds aggregation <code>attributes</code> from model data.
     * @since 1.30
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindAttributes(): UploadCollectionItem = js.native
+  
   /**
     * Unbinds aggregation <code>markers</code> from model data.
     * @since 1.40
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindMarkers(): UploadCollectionItem = js.native
+  
   /**
     * Unbinds aggregation <code>statuses</code> from model data.
     * @since 1.30
@@ -438,4 +496,3 @@ trait UploadCollectionItem extends Element {
     */
   def unbindStatuses(): UploadCollectionItem = js.native
 }
-

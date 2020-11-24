@@ -5,11 +5,12 @@ import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi", "dynamic")
 @js.native
 object dynamic extends js.Object {
+  
   @js.native
   abstract class Resource protected ()
     extends typings.pulumiPulumi.dynamicMod.Resource {
@@ -25,6 +26,4 @@ object dynamic extends js.Object {
     def this(provider: ResourceProvider, name: String, props: Inputs) = this()
     def this(provider: ResourceProvider, name: String, props: Inputs, opts: CustomResourceOptions) = this()
   }
-  
 }
-

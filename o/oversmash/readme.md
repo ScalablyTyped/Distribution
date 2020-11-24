@@ -10,9 +10,9 @@ API wrapper for Blizzard's Overwatch player data
 | ------------------ | :-------------: |
 | Full name          | oversmash |
 | Keywords           | overwatch, gaming, api, client, scraper, oversmash |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 1716 |
+| # downloads        | 1266 |
 | # stars            | 0 |
 
 ## Links

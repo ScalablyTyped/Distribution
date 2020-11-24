@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.SceneFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An external Scene JavaScript File suitable for loading by the Loader.
@@ -39,4 +39,3 @@ class SceneFile protected ()
   ) = this()
   def this(loader: LoaderPlugin, key: SceneFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
 }
-

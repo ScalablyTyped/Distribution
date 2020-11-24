@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.esri.MomentElementViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.MomentElementViewModel")
 @js.native
 object MomentElementViewModel extends TopLevel[MomentElementViewModelConstructor]
-

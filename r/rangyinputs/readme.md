@@ -12,7 +12,7 @@ A small jQuery plug-in for selection and caret manipulation within textareas and
 | Keywords           | input, selection, caret, textarea, jquery |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 71021 |
+| # downloads        | 227291 |
 | # stars            | 0 |
 
 ## Links

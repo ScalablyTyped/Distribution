@@ -2,11 +2,12 @@ package typings.timsort
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timsort", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def sort(array: js.Array[_], lo: Double): Unit = js.native
   def sort(array: js.Array[_], lo: Double, hi: Double): Unit = js.native
   def sort[T](array: js.Array[T]): Unit = js.native
@@ -23,4 +24,3 @@ object mod extends js.Object {
   def sort[T](array: js.Array[T], compare: js.Function2[/* a */ T, /* b */ T, Double], lo: Double): Unit = js.native
   def sort[T](array: js.Array[T], compare: js.Function2[/* a */ T, /* b */ T, Double], lo: Double, hi: Double): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.BaldingNichols")
 @js.native
@@ -12,4 +12,3 @@ class BaldingNichols ()
   def this(F: js.UndefOr[scala.Nothing], p: Double) = this()
   def this(F: Double, p: Double) = this()
 }
-

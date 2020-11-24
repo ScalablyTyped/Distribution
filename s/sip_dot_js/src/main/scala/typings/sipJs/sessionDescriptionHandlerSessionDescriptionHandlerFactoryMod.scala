@@ -5,14 +5,16 @@ import typings.sipJs.sessionDescriptionHandlerFactoryOptionsMod.SessionDescripti
 import typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler-factory", JSImport.Namespace)
 @js.native
 object sessionDescriptionHandlerSessionDescriptionHandlerFactoryMod extends js.Object {
+  
   @js.native
   trait SessionDescriptionHandlerFactory
     extends typings.sipJs.sessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory {
+    
     /**
       * SessionDescriptionHandler factory function.
       * @remarks
@@ -22,6 +24,4 @@ object sessionDescriptionHandlerSessionDescriptionHandlerFactoryMod extends js.O
     def apply(session: Session): SessionDescriptionHandler = js.native
     def apply(session: Session, options: SessionDescriptionHandlerFactoryOptions): SessionDescriptionHandler = js.native
   }
-  
 }
-

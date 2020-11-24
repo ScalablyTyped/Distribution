@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XDriver
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends the service {@link com.sun.star.sdbc.Driver} by beans for data definition.
@@ -25,8 +25,8 @@ trait Driver
      with XDataDefinitionSupplier
      with XCreateCatalog
      with XDropCatalog
-
 object Driver {
+  
   @scala.inline
   def apply(
     MajorVersion: Double,
@@ -48,4 +48,3 @@ object Driver {
     __obj.asInstanceOf[Driver]
   }
 }
-

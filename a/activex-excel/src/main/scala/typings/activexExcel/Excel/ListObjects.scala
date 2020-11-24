@@ -5,16 +5,14 @@ import typings.activexExcel.activexExcelNumbers.`1`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListObjects extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: String): ListObject = js.native
   def apply(Index: Double): ListObject = js.native
+  
   /**
     * @param SourceType [SourceType=1]
     * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
@@ -98,8 +96,18 @@ trait ListObjects extends js.Object {
     Destination: js.UndefOr[scala.Nothing],
     TableStyleName: String
   ): ListObject = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: String): ListObject = js.native
   def Item(Index: Double): ListObject = js.native
+  
+  val Parent: js.Any = js.native
+  
   /**
     * @param SourceType [SourceType=1]
     * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
@@ -272,6 +280,6 @@ trait ListObjects extends js.Object {
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: js.Any
   ): ListObject = js.native
+  
   def _Default(Index: js.Any): ListObject = js.native
 }
-

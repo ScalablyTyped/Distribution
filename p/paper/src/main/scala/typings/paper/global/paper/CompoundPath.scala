@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A compound path is a complex path that is made up of one or more
@@ -36,4 +36,3 @@ class CompoundPath protected ()
     */
   def this(pathData: String) = this()
 }
-

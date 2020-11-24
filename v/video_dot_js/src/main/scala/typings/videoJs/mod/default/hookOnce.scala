@@ -2,11 +2,12 @@ package typings.videoJs.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "hookOnce")
 @js.native
 object hookOnce extends js.Object {
+  
   /**
     * Add a function hook that will only run once to a specific videojs lifecycle.
     *
@@ -20,4 +21,3 @@ object hookOnce extends js.Object {
   def apply(`type`: String, fn: js.Array[js.Function0[_]]): Unit = js.native
   def apply(`type`: String, fn: js.Function0[_]): Unit = js.native
 }
-

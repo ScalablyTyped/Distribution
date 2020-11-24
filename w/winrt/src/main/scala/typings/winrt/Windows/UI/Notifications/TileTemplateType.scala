@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Notifications
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TileTemplateType extends js.Object
-
 @JSGlobal("Windows.UI.Notifications.TileTemplateType")
 @js.native
 object TileTemplateType extends js.Object {
+  
   @js.native
   sealed trait tileSquareBlock extends TileTemplateType
   
@@ -147,6 +147,4 @@ object TileTemplateType extends js.Object {
   
   @js.native
   sealed trait tileWideText11 extends TileTemplateType
-  
 }
-

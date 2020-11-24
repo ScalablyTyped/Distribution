@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IconTabHeader extends Control {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: IconTab): IconTabHeader = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.m.IconTabHeader</code>.When called, the context of the event handler (its
@@ -27,11 +29,13 @@ trait IconTabHeader extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): IconTabHeader = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): IconTabHeader = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): IconTabHeader = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.m.IconTabHeader</code>.The passed function and listener object must match the ones used
@@ -41,6 +45,7 @@ trait IconTabHeader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): IconTabHeader = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>item</code> of type <code>sap.m.IconTabFilter</code>The selected
@@ -49,10 +54,12 @@ trait IconTabHeader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): IconTabHeader = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.The items displayed in the IconTabHeader.
     */
   def getItems(): js.Array[IconTab] = js.native
+  
   /**
     * Gets current value of property <code>mode</code>.Specifies the header mode.<b>Note:</b> The Inline
     * mode works only if no icons are set.Default value is <code>Standard</code>.
@@ -60,6 +67,7 @@ trait IconTabHeader extends Control {
     * @returns Value of property <code>mode</code>
     */
   def getMode(): IconTabHeaderMode = js.native
+  
   /**
     * Gets current value of property <code>selectedKey</code>.Key of the selected item.If the key has no
     * corresponding aggregated item, no changes will apply.If duplicate keys exists the first item
@@ -68,12 +76,14 @@ trait IconTabHeader extends Control {
     * @returns Value of property <code>selectedKey</code>
     */
   def getSelectedKey(): String = js.native
+  
   /**
     * Gets current value of property <code>showSelection</code>.Defines whether the current selection is
     * visualized.Default value is <code>true</code>.
     * @returns Value of property <code>showSelection</code>
     */
   def getShowSelection(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.m.IconTab</code> in the aggregation <code>items</code>.and returns
     * its index if found or -1 otherwise.
@@ -81,6 +91,7 @@ trait IconTabHeader extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: IconTab): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -91,12 +102,14 @@ trait IconTabHeader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: IconTab, iIndex: Double): IconTabHeader = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[IconTab] = js.native
+  
   def removeItem(vItem: String): IconTab = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -105,6 +118,7 @@ trait IconTabHeader extends Control {
     */
   def removeItem(vItem: Double): IconTab = js.native
   def removeItem(vItem: IconTab): IconTab = js.native
+  
   /**
     * Sets a new value for property <code>mode</code>.Specifies the header mode.<b>Note:</b> The Inline
     * mode works only if no icons are set.When called with a value of <code>null</code> or
@@ -115,12 +129,14 @@ trait IconTabHeader extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMode(sMode: IconTabHeaderMode): IconTabHeader = js.native
+  
   /**
     * Sets the selected item based on key.
     * @param sKey The key of the item to be selected
     * @returns this pointer for chaining
     */
   def setSelectedKey(sKey: String): IconTabHeader = js.native
+  
   /**
     * Sets a new value for property <code>showSelection</code>.Defines whether the current selection is
     * visualized.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -130,4 +146,3 @@ trait IconTabHeader extends Control {
     */
   def setShowSelection(bShowSelection: Boolean): IconTabHeader = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.ol.olImageCanvasMod.default
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol", "ImageCanvas")
 @js.native
@@ -20,4 +20,3 @@ class ImageCanvas protected () extends default {
     opt_loader: Loader
   ) = this()
 }
-

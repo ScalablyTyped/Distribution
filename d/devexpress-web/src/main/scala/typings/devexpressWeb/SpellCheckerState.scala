@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SpellCheckerState extends js.Object
-
 /**
   * Lists values specifying the spell checking state.
   */
 @JSGlobal("SpellCheckerState")
 @js.native
 object SpellCheckerState extends js.Object {
+  
   /**
     * Spell checking is disabled.
     */
@@ -30,6 +30,4 @@ object SpellCheckerState extends js.Object {
     */
   @js.native
   sealed trait InProgress extends SpellCheckerState
-  
 }
-

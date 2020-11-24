@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operator/publishReplay", JSImport.Namespace)
 @js.native
 object operatorPublishReplayMod extends js.Object {
+  
   def publishReplay[T](): js.Any = js.native
   def publishReplay[T](
     bufferSize: js.UndefOr[scala.Nothing],
@@ -112,4 +113,3 @@ object operatorPublishReplayMod extends js.Object {
     selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
   ): js.Any = js.native
 }
-

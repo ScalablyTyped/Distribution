@@ -10,9 +10,9 @@ Lumino Tabular Data Grid
 | ------------------ | :-------------: |
 | Full name          | @lumino/datagrid |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 9 |
-| # downloads        | 317915 |
+| # releases         | 27 |
+| # dependents       | 14 |
+| # downloads        | 676608 |
 | # stars            | 0 |
 
 ## Links

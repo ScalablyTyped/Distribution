@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link SAXDocumentBuilder} service to implement.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait XSAXDocumentBuilder2
   extends XSAXDocumentBuilder
      with XDocumentHandler
-
 object XSAXDocumentBuilder2 {
+  
   @scala.inline
   def apply(
     Document: XDocument,
@@ -45,4 +45,3 @@ object XSAXDocumentBuilder2 {
     __obj.asInstanceOf[XSAXDocumentBuilder2]
   }
 }
-

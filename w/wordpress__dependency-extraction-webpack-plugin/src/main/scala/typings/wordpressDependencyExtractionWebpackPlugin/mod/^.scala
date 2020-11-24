@@ -3,7 +3,7 @@ package typings.wordpressDependencyExtractionWebpackPlugin.mod
 import typings.wordpressDependencyExtractionWebpackPlugin.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Map module request to an external.
@@ -50,4 +50,3 @@ class ^ protected () extends DependencyExtractionWebpackPlugin {
     */
   def this(options: PartialOptions) = this()
 }
-

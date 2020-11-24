@@ -5,7 +5,7 @@ import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "SymbolicTensor")
 @js.native
@@ -56,26 +56,37 @@ class SymbolicTensor protected () extends js.Object {
     name: String,
     outputTensorIndex: Double
   ) = this()
+  
   val callArgs: Kwargs = js.native
+  
   val dtype: DataType = js.native
+  
   val id: Double = js.native
+  
   val inputs: js.Array[SymbolicTensor] = js.native
+  
   val name: String = js.native
+  
   /**
     * Replacement for _keras_history.
     */
   var nodeIndex: Double = js.native
+  
   val originalName: js.UndefOr[String] = js.native
+  
   val outputTensorIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Rank/dimensionality of the tensor.
     */
   val rank: Double = js.native
+  
   val shape: Shape = js.native
+  
   var sourceLayer: Layer = js.native
+  
   /**
     * Replacement for _keras_history.
     */
   var tensorIndex: Double = js.native
 }
-

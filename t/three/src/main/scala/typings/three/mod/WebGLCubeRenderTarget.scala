@@ -3,7 +3,7 @@ package typings.three.mod
 import typings.three.webGLRenderTargetMod.WebGLRenderTargetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLCubeRenderTarget")
 @js.native
@@ -12,4 +12,3 @@ class WebGLCubeRenderTarget protected ()
   def this(size: Double) = this()
   def this(size: Double, options: WebGLRenderTargetOptions) = this()
 }
-

@@ -7,18 +7,18 @@ import typings.std.HTMLAnchorElement
 import typings.wordpressComponents.externalLinkMod.ExternalLink.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components/external-link", JSImport.Namespace)
 @js.native
 object externalLinkMod extends js.Object {
+  
   @js.native
   object ExternalLink extends js.Object {
+    
     type Props = HTMLProps[HTMLAnchorElement]
   }
   
   @js.native
   object default extends TopLevel[ComponentType[Props]]
-  
 }
-

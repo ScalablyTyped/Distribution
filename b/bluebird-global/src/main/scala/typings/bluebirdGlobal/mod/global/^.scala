@@ -2,11 +2,12 @@ package typings.bluebirdGlobal.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
+  
   /*
     * Declare the `Promise` variable. This is needed for es5 only and is a no-op for all other targets.
     *
@@ -16,4 +17,3 @@ object ^ extends js.Object {
     */
   var Promise: PromiseConstructor = js.native
 }
-

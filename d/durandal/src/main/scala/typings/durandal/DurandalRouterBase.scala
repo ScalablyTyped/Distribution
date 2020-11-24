@@ -4,19 +4,58 @@ import typings.durandal.anon.Callback
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
+  
   /**
     * An observable surfacing the active routing instruction that is currently being processed or has recently finished processing.
     * The instruction object has `config`, `fragment`, `queryString`, `params` and `queryParams` properties.
     */
   var activeInstruction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<DurandalRouteInstruction> */ js.Any = js.native
+  
   /**
     * The active item/screen based on the current navigation state.
     */
   var activeItem: DurandalActivator[_] = js.native
+  
+  /**
+    * Builds an observable array designed to bind a navigation UI to. The model will exist in the `navigationModel` property.
+    * @param {number} defaultOrder The default order to use for navigation visible routes that don't specify an order. The defualt is 100.
+    * @chainable
+    */
+  def buildNavigationModel(): T = js.native
+  def buildNavigationModel(defaultOrder: Double): T = js.native
+  
+  /**
+    * Converts a route to a hash suitable for binding to a link's href.
+    * @param {string} route
+    * @returns {string} The hash.
+    */
+  def convertRouteToHash(route: String): String = js.native
+  
+  /**
+    * Converts a route to a module id. This is only called if no module id is supplied as part of the route mapping.
+    * @param {string} route
+    * @returns {string} The module id.
+    */
+  def convertRouteToModuleId(route: String): String = js.native
+  
+  /**
+    * Converts a route to a displayable title. This is only called if no title is specified as part of the route mapping.
+    * @method convertRouteToTitle
+    * @param {string} route
+    * @returns {string} The title.
+    */
+  def convertRouteToTitle(route: String): String = js.native
+  
+  /**
+    * Creates a child router.
+    * @returns {Router} The child router.
+    */
+  def createChildRouter(): T = js.native
+  
   /**
     * Inspects routes and modules before activation. Can be used to protect access by cancelling navigation or redirecting.
     * @param {object} instance The module instance that is about to be activated by the router.
@@ -30,63 +69,24 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
       (DurandalPromise[Boolean | String]) | Boolean | String
     ]
   ] = js.native
+  
   /**
     * The route handlers that are registered. Each handler consists of a `routePattern` and a `callback`.
     */
   var handlers: js.Array[Callback] = js.native
+  
   /**
     * Indicates that the router (or a child router) is currently in the process of navigating.
     */
   var isNavigating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
-  /**
-    * The route configurations that have been designated as displayable in a nav ui (nav:true).
-    */
-  var navigationModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<DurandalRouteConfiguration> */ js.Any = js.native
-  /**
-    * Parent router of the current child router.
-    */
-  var parent: js.UndefOr[DurandalRouter] = js.native
-  /**
-    * The route configs that are registered.
-    */
-  var routes: js.Array[DurandalRouteConfiguration] = js.native
-  /**
-    * Builds an observable array designed to bind a navigation UI to. The model will exist in the `navigationModel` property.
-    * @param {number} defaultOrder The default order to use for navigation visible routes that don't specify an order. The defualt is 100.
-    * @chainable
-    */
-  def buildNavigationModel(): T = js.native
-  def buildNavigationModel(defaultOrder: Double): T = js.native
-  /**
-    * Converts a route to a hash suitable for binding to a link's href.
-    * @param {string} route
-    * @returns {string} The hash.
-    */
-  def convertRouteToHash(route: String): String = js.native
-  /**
-    * Converts a route to a module id. This is only called if no module id is supplied as part of the route mapping.
-    * @param {string} route
-    * @returns {string} The module id.
-    */
-  def convertRouteToModuleId(route: String): String = js.native
-  /**
-    * Converts a route to a displayable title. This is only called if no title is specified as part of the route mapping.
-    * @method convertRouteToTitle
-    * @param {string} route
-    * @returns {string} The title.
-    */
-  def convertRouteToTitle(route: String): String = js.native
-  /**
-    * Creates a child router.
-    * @returns {Router} The child router.
-    */
-  def createChildRouter(): T = js.native
+  
   /**
     * Attempt to load the specified URL fragment. If a route succeeds with a match, returns `true`. If no defined routes matches the fragment, returns `false`.
     * @param {string} fragment The URL fragment to find a match for.
     * @returns {boolean} True if a match was found, false otherwise.
     */
   def loadUrl(fragment: String): Boolean = js.native
+  
   /**
     * Makes all configured routes and/or module ids relative to a certain base url.
     * @param {string} settings The value is used as the base for routes and module ids.
@@ -99,6 +99,7 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * @chainable
     */
   def makeRelative(settings: DurandalRelativeRouteSettings): T = js.native
+  
   /**
     * Maps route patterns to modules.
     * @param {RouteConfiguration[]} configs An array of route configurations.
@@ -146,6 +147,7 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * @chainable
     */
   def map(route: RegExp, moduleId: String): T = js.native
+  
   /**
     * Configures the router to map unknown routes to modules at the same path.
     * @chainable
@@ -171,6 +173,7 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     */
   def mapUnknownRoutes(notFoundModuleId: String): T = js.native
   def mapUnknownRoutes(notFoundModuleId: String, replaceRoute: String): T = js.native
+  
   /**
     * Save a fragment into the hash history, or replace the URL state if the
     * 'replace' option is passed. You are responsible for properly URL-encoding
@@ -196,27 +199,47 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     */
   def navigate(fragment: String, options: DurandalNavigationOptions): Boolean = js.native
   def navigate(fragment: String, trigger: Boolean): Boolean = js.native
+  
   /**
     * Navigates back in the browser history.
     */
   def navigateBack(): Unit = js.native
+  
+  /**
+    * The route configurations that have been designated as displayable in a nav ui (nav:true).
+    */
+  var navigationModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<DurandalRouteConfiguration> */ js.Any = js.native
+  
+  /**
+    * Parent router of the current child router.
+    */
+  var parent: js.UndefOr[DurandalRouter] = js.native
+  
   /**
     * Parses a query string into an object.
     * @param {string} queryString The query string to parse.
     * @returns {object} An object keyed according to the query string parameters.
     */
   def parseQueryString(queryString: String): js.Object = js.native
+  
   /**
     * Resets the router by removing handlers, routes, event handlers and previously configured options.
     * @chainable
     */
   def reset(): T = js.native
+  
   /**
     * Add a route to be tested when the url fragment changes.
     * @param {RegEx} routePattern The route pattern to test against.
     * @param {function} callback The callback to execute when the route pattern is matched.
     */
   def route(routePattern: RegExp, callback: js.Function1[/* fragment */ String, Unit]): Unit = js.native
+  
+  /**
+    * The route configs that are registered.
+    */
+  var routes: js.Array[DurandalRouteConfiguration] = js.native
+  
   /**
     * Updates the document title based on the activated module instance, the routing instruction and the app.title.
     * @param {object} instance The activated module.
@@ -224,4 +247,3 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     */
   def updateDocumentTitle(instance: js.Object, instruction: DurandalRouteInstruction): Unit = js.native
 }
-

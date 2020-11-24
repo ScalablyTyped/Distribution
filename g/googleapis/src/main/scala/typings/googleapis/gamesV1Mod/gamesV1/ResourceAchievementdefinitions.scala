@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Achievementdefinitions")
 @js.native
 class ResourceAchievementdefinitions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.achievementDefinitions.list
     * @desc Lists all the achievement definitions for your application.
@@ -47,4 +49,3 @@ class ResourceAchievementdefinitions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAchievementDefinitionsListResponse]
   ): Unit = js.native
 }
-

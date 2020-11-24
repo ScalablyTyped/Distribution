@@ -12,7 +12,7 @@ business rules engine
 | Keywords           | business rules, validation, form |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1953 |
+| # downloads        | 1361 |
 | # stars            | 3 |
 
 ## Links

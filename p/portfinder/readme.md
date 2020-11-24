@@ -11,14 +11,14 @@ A simple tool to find an open port on the current machine
 | Full name          | portfinder |
 | Keywords           | http, ports, utilities |
 | # releases         | 12 |
-| # dependents       | 861 |
-| # downloads        | 251181396 |
+| # dependents       | 1079 |
+| # downloads        | 336745460 |
 | # stars            | 15 |
 
 ## Links
-- [Homepage](https://github.com/indexzero/node-portfinder#readme)
-- [Bugs](https://github.com/indexzero/node-portfinder/issues)
-- [Repository](https://github.com/indexzero/node-portfinder)
+- [Homepage](https://github.com/http-party/node-portfinder#readme)
+- [Bugs](https://github.com/http-party/node-portfinder/issues)
+- [Repository](https://github.com/http-party/node-portfinder)
 - [Npm](https://www.npmjs.com/package/portfinder)
     
 

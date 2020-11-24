@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a {@link TextContent} that can be used to attach RDF metadata to a range of text.
@@ -23,8 +23,8 @@ trait InContentMetadata
      with XMetadatable
      with XEnumerationAccess
      with XChild
-
 object InContentMetadata {
+  
   @scala.inline
   def apply(
     Anchor: XTextRange,
@@ -56,4 +56,3 @@ object InContentMetadata {
     __obj.asInstanceOf[InContentMetadata]
   }
 }
-

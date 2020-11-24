@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * indicates that the Java Virtual Machine could not be created
@@ -16,33 +16,37 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait JavaVMCreationFailureException extends Exception {
+  
   /**
     * contains an error code that reflects the returned error code of JNI_CreateJavaVM or other errors. A negative value represents the returned error code
     * of JNI_CreateJavaVM. All other values indicate a different cause.
     */
   var ErrorCode: Double = js.native
 }
-
 object JavaVMCreationFailureException {
+  
   @scala.inline
   def apply(Context: XInterface, ErrorCode: Double, Message: String): JavaVMCreationFailureException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[JavaVMCreationFailureException]
   }
+  
   @scala.inline
   implicit class JavaVMCreationFailureExceptionOps[Self <: JavaVMCreationFailureException] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setErrorCode(value: Double): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
   }
-  
 }
-

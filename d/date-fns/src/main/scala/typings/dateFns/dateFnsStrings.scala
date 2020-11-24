@@ -2,9 +2,52 @@ package typings.dateFns
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFnsStrings {
+  
+  @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  
+  @scala.inline
+  def ceil: ceil = "ceil".asInstanceOf[ceil]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def day: day = "day".asInstanceOf[day]
+  
+  @scala.inline
+  def extended: extended = "extended".asInstanceOf[extended]
+  
+  @scala.inline
+  def floor: floor = "floor".asInstanceOf[floor]
+  
+  @scala.inline
+  def hour: hour = "hour".asInstanceOf[hour]
+  
+  @scala.inline
+  def minute: minute = "minute".asInstanceOf[minute]
+  
+  @scala.inline
+  def month: month = "month".asInstanceOf[month]
+  
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  
+  @scala.inline
+  def second: second = "second".asInstanceOf[second]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def year: year = "year".asInstanceOf[year]
+  
   @js.native
   sealed trait basic extends js.Object
   
@@ -46,34 +89,4 @@ object dateFnsStrings {
   
   @js.native
   sealed trait year extends js.Object
-  
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def ceil: ceil = "ceil".asInstanceOf[ceil]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def extended: extended = "extended".asInstanceOf[extended]
-  @scala.inline
-  def floor: floor = "floor".asInstanceOf[floor]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
 }
-

@@ -1,9 +1,10 @@
 package typings.highcharts.mod
 
+import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Series")
 @js.native
@@ -61,85 +62,7 @@ class Series protected () extends js.Object {
     */
   def this(chart: Chart_, options: js.Object) = this()
   def this(chart: Chart_, options: SeriesOptionsType) = this()
-  /**
-    * SVG element of area-based charts. Can be used for styling purposes. If
-    * zones are configured, this element will be hidden and replaced by
-    * multiple zone areas, accessible via `series['zone-area-x']` (where x is a
-    * number, starting with 0).
-    */
-  var area: js.UndefOr[SVGElement] = js.native
-  /**
-    * Read only. The chart that the series belongs to.
-    */
-  var chart: Chart_ = js.native
-  /**
-    * Read only. An array containing those values converted to points. In case
-    * the series data length exceeds the `cropThreshold`, or if the data is
-    * grouped, `series.data` doesn't contain all the points. Also, in case a
-    * series is hidden, the `data` array may be empty. To access raw values,
-    * `series.options.data` will always be up to date. `Series.data` only
-    * contains the points that have been created on demand. To modify the data,
-    * use Highcharts.Series#setData or Highcharts.Point#update.
-    */
-  var data: js.Array[Point] = js.native
-  /**
-    * Contains the minimum value of the series' data point.
-    */
-  val dataMin: Double = js.native
-  /**
-    * SVG element of line-based charts. Can be used for styling purposes. If
-    * zones are configured, this element will be hidden and replaced by
-    * multiple zone lines, accessible via `series['zone-graph-x']` (where x is
-    * a number, starting with 0).
-    */
-  var graph: js.UndefOr[SVGElement] = js.native
-  /**
-    * Contains the series' index in the `Chart.series` array.
-    */
-  val index: Double = js.native
-  /**
-    * The series name as given in the options. Defaults to "Series {n}".
-    */
-  var name: String = js.native
-  /**
-    * Read only. The series' current options. To update, use Series#update.
-    */
-  var options: SeriesOptionsType = js.native
-  /**
-    * An array containing all currently visible point objects. In case of
-    * cropping, the cropped-away points are not part of this array. The
-    * `series.points` array starts at `series.cropStart` compared to
-    * `series.data` and `series.options.data`. If however the series data is
-    * grouped, these can't be correlated one to one. To modify the data, use
-    * Highcharts.Series#setData or Highcharts.Point#update.
-    */
-  var points: js.Array[Point] = js.native
-  /**
-    * Read only. The series' selected state as set by Highcharts.Series#select.
-    */
-  var selected: Boolean = js.native
-  /**
-    * Read only. The series' type, like "line", "area", "column" etc. The type
-    * in the series options anc can be altered using Series#update.
-    */
-  var `type`: String = js.native
-  /**
-    * Contains series options by the user without defaults.
-    */
-  var userOptions: SeriesOptionsType = js.native
-  /**
-    * Read only. The series' visibility state as set by Series#show,
-    * Series#hide, or in the initial configuration.
-    */
-  var visible: Boolean = js.native
-  /**
-    * Read only. The unique xAxis object associated with the series.
-    */
-  var xAxis: Axis = js.native
-  /**
-    * Read only. The unique yAxis object associated with the series.
-    */
-  var yAxis: Axis = js.native
+  
   /**
     * Add a point to the series after render time. The point can be added at
     * the end, or by giving it an X value, to the start or in the middle of the
@@ -196,13 +119,13 @@ class Series protected () extends js.Object {
     options: PointOptionsType,
     redraw: js.UndefOr[scala.Nothing],
     shift: js.UndefOr[scala.Nothing],
-    animation: AnimationOptionsObject
+    animation: PartialAnimationOptionsOb
   ): Unit = js.native
   def addPoint(
     options: PointOptionsType,
     redraw: js.UndefOr[scala.Nothing],
     shift: js.UndefOr[scala.Nothing],
-    animation: AnimationOptionsObject,
+    animation: PartialAnimationOptionsOb,
     withEvent: Boolean
   ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], shift: Boolean): Unit = js.native
@@ -225,13 +148,13 @@ class Series protected () extends js.Object {
     options: PointOptionsType,
     redraw: js.UndefOr[scala.Nothing],
     shift: Boolean,
-    animation: AnimationOptionsObject
+    animation: PartialAnimationOptionsOb
   ): Unit = js.native
   def addPoint(
     options: PointOptionsType,
     redraw: js.UndefOr[scala.Nothing],
     shift: Boolean,
-    animation: AnimationOptionsObject,
+    animation: PartialAnimationOptionsOb,
     withEvent: Boolean
   ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean): Unit = js.native
@@ -254,13 +177,13 @@ class Series protected () extends js.Object {
     options: PointOptionsType,
     redraw: Boolean,
     shift: js.UndefOr[scala.Nothing],
-    animation: AnimationOptionsObject
+    animation: PartialAnimationOptionsOb
   ): Unit = js.native
   def addPoint(
     options: PointOptionsType,
     redraw: Boolean,
     shift: js.UndefOr[scala.Nothing],
-    animation: AnimationOptionsObject,
+    animation: PartialAnimationOptionsOb,
     withEvent: Boolean
   ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean): Unit = js.native
@@ -273,14 +196,15 @@ class Series protected () extends js.Object {
   ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
-  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def addPoint(
     options: PointOptionsType,
     redraw: Boolean,
     shift: Boolean,
-    animation: AnimationOptionsObject,
+    animation: PartialAnimationOptionsOb,
     withEvent: Boolean
   ): Unit = js.native
+  
   /**
     * Animate in the series. Called internally twice. First with the `init`
     * parameter set to true, which sets up the initial state of the animation.
@@ -293,11 +217,51 @@ class Series protected () extends js.Object {
     */
   def animate(): Unit = js.native
   def animate(init: Boolean): Unit = js.native
+  
+  /**
+    * SVG element of area-based charts. Can be used for styling purposes. If
+    * zones are configured, this element will be hidden and replaced by
+    * multiple zone areas, accessible via `series['zone-area-x']` (where x is a
+    * number, starting with 0).
+    */
+  var area: js.UndefOr[SVGElement] = js.native
+  
+  /**
+    * Read only. The chart that the series belongs to.
+    */
+  var chart: Chart_ = js.native
+  
+  /**
+    * Read only. An array containing those values converted to points. In case
+    * the series data length exceeds the `cropThreshold`, or if the data is
+    * grouped, `series.data` doesn't contain all the points. Also, in case a
+    * series is hidden, the `data` array may be empty. To access raw values,
+    * `series.options.data` will always be up to date. `Series.data` only
+    * contains the points that have been created on demand. To modify the data,
+    * use Highcharts.Series#setData or Highcharts.Point#update.
+    */
+  var data: js.Array[Point] = js.native
+  
+  /**
+    * Contains the maximum value of the series' data point. Some series types
+    * like `networkgraph` do not support this property as they lack a
+    * `y`-value.
+    */
+  val dataMax: js.UndefOr[Double] = js.native
+  
+  /**
+    * Contains the minimum value of the series' data point. Some series types
+    * like `networkgraph` do not support this property as they lack a
+    * `y`-value.
+    */
+  val dataMin: js.UndefOr[Double] = js.native
+  
   /**
     * If implemented in the core, parts of this can probably be shared with
     * other similar methods in Highcharts.
     */
   def destroyGraphics(): Unit = js.native
+  
   /**
     * Draw the graph. Called internally when rendering line-like series types.
     * The first time it generates the `series.graph` item and optionally other
@@ -305,6 +269,7 @@ class Series protected () extends js.Object {
     * these items are updated with new positions and attributes.
     */
   def drawGraph(): Unit = js.native
+  
   /**
     * Draw the markers for line-like series types, and columns or other
     * graphical representation for Point objects for other series types. The
@@ -312,14 +277,17 @@ class Series protected () extends js.Object {
     * the first call and updated and moved on subsequent calls.
     */
   def drawPoints(): Unit = js.native
+  
   /**
     * Enter boost mode and apply boost-specific properties.
     */
   def enterBoost(): Unit = js.native
+  
   /**
     * Exit from boost mode and restore non-boost properties.
     */
   def exitBoost(): Unit = js.native
+  
   /**
     * Return series name in "Series {Number}" format or the one defined by a
     * user. This method can be simply overridden as series name format can vary
@@ -328,10 +296,12 @@ class Series protected () extends js.Object {
     * @return The series name.
     */
   def getName(): String = js.native
+  
   /**
     * Get the translation and scale for the plot area of this series.
     */
   def getPlotBox(): SeriesPlotBoxObject = js.native
+  
   /**
     * Return a full Point object based on the index. The boost module uses
     * stripped point objects for performance reasons.
@@ -344,6 +314,7 @@ class Series protected () extends js.Object {
     */
   def getPoint(boostPoint: js.Object): Point = js.native
   def getPoint(boostPoint: Point): Point = js.native
+  
   /**
     * Return the series points with null points filtered out.
     *
@@ -367,6 +338,15 @@ class Series protected () extends js.Object {
   def getValidPoints(points: js.Array[Point], insideOnly: js.UndefOr[scala.Nothing], allowNull: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point], insideOnly: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point], insideOnly: Boolean, allowNull: Boolean): js.Array[Point] = js.native
+  
+  /**
+    * SVG element of line-based charts. Can be used for styling purposes. If
+    * zones are configured, this element will be hidden and replaced by
+    * multiple zone lines, accessible via `series['zone-graph-x']` (where x is
+    * a number, starting with 0).
+    */
+  var graph: js.UndefOr[SVGElement] = js.native
+  
   /**
     * Hide the series if visible. If the chart.ignoreHiddenSeries option is
     * true, the chart is redrawn without this series.
@@ -374,6 +354,12 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#hide
     */
   def hide(): Unit = js.native
+  
+  /**
+    * Contains the series' index in the `Chart.series` array.
+    */
+  val index: Double = js.native
+  
   /**
     * Check whether the series item is itself or inherits from a certain series
     * type.
@@ -385,6 +371,7 @@ class Series protected () extends js.Object {
     * @return True if this item is or inherits from the given type.
     */
   def is(`type`: String): Boolean = js.native
+  
   /**
     * Get non-presentational attributes for a point. Used internally for
     * both styled mode and classic. Set correct position in link with
@@ -412,18 +399,41 @@ class Series protected () extends js.Object {
     */
   def markerAttribs(point: Point): SVGAttributes = js.native
   def markerAttribs(point: Point, state: String): SVGAttributes = js.native
+  
+  /**
+    * The series name as given in the options. Defaults to "Series {n}".
+    */
+  var name: String = js.native
+  
   /**
     * Runs on mouse out of the series graphical items.
     *
     * @fires Highcharts.Series#mouseOut
     */
   def onMouseOut(): Unit = js.native
+  
   /**
     * Runs on mouse over the series graphical items.
     *
     * @fires Highcharts.Series#mouseOver
     */
   def onMouseOver(): Unit = js.native
+  
+  /**
+    * Read only. The series' current options. To update, use Series#update.
+    */
+  var options: SeriesOptionsType = js.native
+  
+  /**
+    * An array containing all currently visible point objects. In case of
+    * cropping, the cropped-away points are not part of this array. The
+    * `series.points` array starts at `series.cropStart` compared to
+    * `series.data` and `series.options.data`. If however the series data is
+    * grouped, these can't be correlated one to one. To modify the data, use
+    * Highcharts.Series#setData or Highcharts.Point#update.
+    */
+  var points: js.Array[Point] = js.native
+  
   /**
     * Remove a series and optionally redraw the chart.
     *
@@ -444,14 +454,15 @@ class Series protected () extends js.Object {
   def remove(redraw: js.UndefOr[scala.Nothing], animation: js.UndefOr[scala.Nothing], withEvent: Boolean): Unit = js.native
   def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
   def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean, withEvent: Boolean): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject, withEvent: Boolean): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb, withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: js.UndefOr[scala.Nothing], withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
-  def remove(redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
-  def remove(redraw: Boolean, animation: AnimationOptionsObject, withEvent: Boolean): Unit = js.native
+  def remove(redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def remove(redraw: Boolean, animation: PartialAnimationOptionsOb, withEvent: Boolean): Unit = js.native
+  
   /**
     * Remove a point from the series. Unlike the Highcharts.Point#remove
     * method, this can also be done on a point that is not instanciated because
@@ -474,10 +485,11 @@ class Series protected () extends js.Object {
     */
   def removePoint(i: Double): Unit = js.native
   def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
+  def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def removePoint(i: Double, redraw: Boolean): Unit = js.native
   def removePoint(i: Double, redraw: Boolean, animation: Boolean): Unit = js.native
-  def removePoint(i: Double, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def removePoint(i: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  
   /**
     * Render the graph and markers. Called internally when first rendering and
     * later when redrawing the chart. This function can be extended in plugins,
@@ -486,6 +498,7 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#afterRender
     */
   def render(): Unit = js.native
+  
   /**
     * Select or unselect the series. This means its selected property is set,
     * the checkbox in the legend is toggled and when selected, the series is
@@ -500,6 +513,12 @@ class Series protected () extends js.Object {
     */
   def select(): Unit = js.native
   def select(selected: Boolean): Unit = js.native
+  
+  /**
+    * Read only. The series' selected state as set by Highcharts.Series#select.
+    */
+  var selected: Boolean = js.native
+  
   /**
     * Highstock only. Set the compare mode of the series after render time.
     * In most cases it is more useful running Axis#setCompare on the X axis
@@ -510,6 +529,7 @@ class Series protected () extends js.Object {
     */
   def setCompare(): Unit = js.native
   def setCompare(compare: String): Unit = js.native
+  
   /**
     * Apply a new set of data to the series and optionally redraw it. The new
     * data array is passed by reference (except in case of `updatePoints`), and
@@ -562,12 +582,12 @@ class Series protected () extends js.Object {
   def setData(
     data: js.Array[PointOptionsType],
     redraw: js.UndefOr[scala.Nothing],
-    animation: AnimationOptionsObject
+    animation: PartialAnimationOptionsOb
   ): Unit = js.native
   def setData(
     data: js.Array[PointOptionsType],
     redraw: js.UndefOr[scala.Nothing],
-    animation: AnimationOptionsObject,
+    animation: PartialAnimationOptionsOb,
     updatePoints: Boolean
   ): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean): Unit = js.native
@@ -579,13 +599,14 @@ class Series protected () extends js.Object {
   ): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean, updatePoints: Boolean): Unit = js.native
-  def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setData(
     data: js.Array[PointOptionsType],
     redraw: Boolean,
-    animation: AnimationOptionsObject,
+    animation: PartialAnimationOptionsOb,
     updatePoints: Boolean
   ): Unit = js.native
+  
   /**
     * Set the state of the series. Called internally on mouse interaction
     * operations, but it can also be called directly to visually highlight a
@@ -605,6 +626,7 @@ class Series protected () extends js.Object {
   def setState(state: _empty, inherit: Boolean): Unit = js.native
   def setState(state: SeriesStateValue): Unit = js.native
   def setState(state: SeriesStateValue, inherit: Boolean): Unit = js.native
+  
   /**
     * Show or hide the series.
     *
@@ -624,19 +646,24 @@ class Series protected () extends js.Object {
   def setVisible(visible: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
   def setVisible(visible: Boolean): Unit = js.native
   def setVisible(visible: Boolean, redraw: Boolean): Unit = js.native
+  
   /**
     * Show the series if hidden.
     *
     * @fires Highcharts.Series#show
     */
   def show(): Unit = js.native
+  
   /**
     * Sonify a series.
     *
     * @param options
-    *        The options for sonifying this series.
+    *        The options for sonifying this series. If not provided, uses
+    *        options set on chart and series.
     */
+  def sonify(): Unit = js.native
   def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.SonifySeriesOptionsObject): Unit = js.native
+  
   /**
     * Translate data points from raw data values to chart specific positioning
     * data needed later in the `drawPoints` and `drawGraph` functions. This
@@ -646,6 +673,13 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#events:translate
     */
   def translate(): Unit = js.native
+  
+  /**
+    * Read only. The series' type, like "line", "area", "column" etc. The type
+    * in the series options anc can be altered using Series#update.
+    */
+  var `type`: String = js.native
+  
   /**
     * Update the series with a new set of options. For a clean and precise
     * handling of new options, all methods and elements from the series are
@@ -668,5 +702,25 @@ class Series protected () extends js.Object {
     */
   def update(options: SeriesOptionsType): Unit = js.native
   def update(options: SeriesOptionsType, redraw: Boolean): Unit = js.native
+  
+  /**
+    * Contains series options by the user without defaults.
+    */
+  var userOptions: SeriesOptionsType = js.native
+  
+  /**
+    * Read only. The series' visibility state as set by Series#show,
+    * Series#hide, or in the initial configuration.
+    */
+  var visible: Boolean = js.native
+  
+  /**
+    * Read only. The unique xAxis object associated with the series.
+    */
+  var xAxis: Axis = js.native
+  
+  /**
+    * Read only. The unique yAxis object associated with the series.
+    */
+  var yAxis: Axis = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.xRIndexMod
 import typings.babylonjs.webXRBackgroundRemoverMod.IWebXRBackgroundRemoverOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRBackgroundRemover")
 @js.native
@@ -23,15 +23,16 @@ class WebXRBackgroundRemover protected ()
   options: IWebXRBackgroundRemoverOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/XR/index", "WebXRBackgroundRemover")
 @js.native
 object WebXRBackgroundRemover extends js.Object {
+  
   /**
     * The module's name
     */
   val Name: String = js.native
+  
   /**
     * The (Babylon) version of this module.
     * This is an integer representing the implementation version.
@@ -39,4 +40,3 @@ object WebXRBackgroundRemover extends js.Object {
     */
   val Version: Double = js.native
 }
-

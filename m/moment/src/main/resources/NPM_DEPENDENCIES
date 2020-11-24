@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "moment" : "2.27.0"
+      "moment" : "2.29.1"
     }
   ],
   "test-dependencies" : [
     {
-      "moment" : "2.27.0"
+      "moment" : "2.29.1"
     }
   ],
   "compile-devDependencies" : [

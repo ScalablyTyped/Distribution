@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns a new pc.VertexIterator object.
@@ -12,10 +12,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait VertexIterator extends js.Object {
+  
   /**
     * The vertex buffer elements.
     */
   var element: StringDictionary[VertexIteratorAccessor] = js.native
+  
   /**
     * Notifies the vertex buffer being iterated that writes are complete. Internally
     the vertex buffer is unlocked and vertex data is uploaded to video memory.
@@ -32,6 +34,7 @@ trait VertexIterator extends js.Object {
     iterator.end();
     */
   def end(): Unit = js.native
+  
   /**
     * Moves the vertex iterator on to the next vertex.
     * @example
@@ -50,4 +53,3 @@ trait VertexIterator extends js.Object {
   def next(): Unit = js.native
   def next(count: Double): Unit = js.native
 }
-

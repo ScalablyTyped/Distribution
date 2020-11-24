@@ -2,11 +2,12 @@ package typings.mocha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mocha/lib/ms", JSImport.Namespace)
 @js.native
 object msMod extends js.Object {
+  
   /**
     * Parse the given `str` and return milliseconds.
     *
@@ -22,4 +23,3 @@ object msMod extends js.Object {
     */
   def apply(`val`: Double): String = js.native
 }
-

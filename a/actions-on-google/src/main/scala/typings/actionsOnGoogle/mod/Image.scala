@@ -3,7 +3,7 @@ package typings.actionsOnGoogle.mod
 import typings.actionsOnGoogle.imageMod.ImageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "Image")
 @js.native
@@ -15,4 +15,3 @@ class Image protected ()
     */
   def this(option: ImageOptions) = this()
 }
-

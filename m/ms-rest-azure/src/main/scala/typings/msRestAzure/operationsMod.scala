@@ -9,13 +9,15 @@ import typings.msRestAzure.modelsMod.SubscriptionListResult
 import typings.msRestAzure.modelsMod.TenantListResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure/lib/subscriptionManagement/operations", JSImport.Namespace)
 @js.native
 object operationsMod extends js.Object {
+  
   @js.native
   trait Subscriptions extends js.Object {
+    
     /**
       * Gets details about a specified subscription.
       *
@@ -52,6 +54,7 @@ object operationsMod extends js.Object {
     def get(subscriptionId: String, callback: ServiceCallback[Subscription]): Unit = js.native
     def get(subscriptionId: String, options: CustomHeaders): js.Promise[Subscription] = js.native
     def get(subscriptionId: String, options: CustomHeaders, callback: ServiceCallback[Subscription]): Unit = js.native
+    
     /**
       * Gets details about a specified subscription.
       *
@@ -70,6 +73,7 @@ object operationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(subscriptionId: String): js.Promise[HttpOperationResponse[Subscription]] = js.native
     def getWithHttpOperationResponse(subscriptionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Subscription]] = js.native
+    
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -105,6 +109,7 @@ object operationsMod extends js.Object {
     def list(callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
     def list(options: CustomHeaders): js.Promise[SubscriptionListResult] = js.native
     def list(options: CustomHeaders, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
+    
     /**
       * @summary Gets all available geo-locations.
       *
@@ -145,6 +150,7 @@ object operationsMod extends js.Object {
     def listLocations(subscriptionId: String, callback: ServiceCallback[LocationListResult]): Unit = js.native
     def listLocations(subscriptionId: String, options: CustomHeaders): js.Promise[LocationListResult] = js.native
     def listLocations(subscriptionId: String, options: CustomHeaders, callback: ServiceCallback[LocationListResult]): Unit = js.native
+    
     /**
       * @summary Gets all available geo-locations.
       *
@@ -167,6 +173,7 @@ object operationsMod extends js.Object {
       */
     def listLocationsWithHttpOperationResponse(subscriptionId: String): js.Promise[HttpOperationResponse[LocationListResult]] = js.native
     def listLocationsWithHttpOperationResponse(subscriptionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[LocationListResult]] = js.native
+    
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -205,6 +212,7 @@ object operationsMod extends js.Object {
     def listNext(nextPageLink: String, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
     def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[SubscriptionListResult] = js.native
     def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
+    
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -224,6 +232,7 @@ object operationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
+    
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -244,6 +253,7 @@ object operationsMod extends js.Object {
   
   @js.native
   trait Tenants extends js.Object {
+    
     /**
       * Gets the tenants for your account.
       *
@@ -278,6 +288,7 @@ object operationsMod extends js.Object {
     def list(callback: ServiceCallback[TenantListResult]): Unit = js.native
     def list(options: CustomHeaders): js.Promise[TenantListResult] = js.native
     def list(options: CustomHeaders, callback: ServiceCallback[TenantListResult]): Unit = js.native
+    
     /**
       * Gets the tenants for your account.
       *
@@ -315,6 +326,7 @@ object operationsMod extends js.Object {
     def listNext(nextPageLink: String, callback: ServiceCallback[TenantListResult]): Unit = js.native
     def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[TenantListResult] = js.native
     def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[TenantListResult]): Unit = js.native
+    
     /**
       * Gets the tenants for your account.
       *
@@ -334,6 +346,7 @@ object operationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
+    
     /**
       * Gets the tenants for your account.
       *
@@ -351,6 +364,4 @@ object operationsMod extends js.Object {
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
     def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
   }
-  
 }
-

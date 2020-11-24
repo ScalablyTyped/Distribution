@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.System.VirtualKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CoreWindow extends ICoreWindow
-
 object CoreWindow {
+  
   @scala.inline
   def apply(
     activate: () => Unit,
@@ -51,4 +51,3 @@ object CoreWindow {
     __obj.asInstanceOf[CoreWindow]
   }
 }
-

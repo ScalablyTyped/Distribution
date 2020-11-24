@@ -2,7 +2,7 @@ package typings.esriLeaflet.mod.leafletAugmentingMod.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `L.esri.FeatureLayerService` is an abstraction for interacting with Feature Layers running on ArcGIS Online
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FeatureLayerService_ protected () extends Service {
   def this(options: FeatureLayerServiceOptions) = this()
+  
   /**
     * Adds a new feature to the feature layer. this also adds the feature to the map if creation is successful.
     *
@@ -27,6 +28,7 @@ class FeatureLayerService_ protected () extends Service {
   def addFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def addFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
   def addFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+  
   /**
     * Remove the feature with the provided id from the feature layer. This will also remove the feature from
     * the map if it exists.
@@ -45,6 +47,7 @@ class FeatureLayerService_ protected () extends Service {
   def deleteFeature(id: Double, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def deleteFeature(id: Double, callback: ResponseCallbackHandler): this.type = js.native
   def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+  
   /**
     * Removes an array of features with the provided ids from the feature layer. This will also remove the
     * features from the map if they exist.
@@ -59,10 +62,12 @@ class FeatureLayerService_ protected () extends Service {
   def deleteFeatures(ids: js.Array[Double | String], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler): this.type = js.native
   def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+  
   /**
     * Returns a new `L.esri.Query` object that can be used to query this layer.
     */
   def query(): Query_ = js.native
+  
   /**
     * Update the provided feature on the Feature Layer. This also updates the feature on the map.
     *
@@ -78,4 +83,3 @@ class FeatureLayerService_ protected () extends Service {
   def updateFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
   def updateFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
 }
-

@@ -5,13 +5,15 @@ import typings.tstl.comparatorMod.Comparator
 import typings.tstl.unaryPredicatorMod.UnaryPredicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/linear/IListAlgorithm", JSImport.Namespace)
 @js.native
 object ilistalgorithmMod extends js.Object {
+  
   @js.native
   trait IListAlgorithm[T, Source] extends js.Object {
+    
     /**
       * Merge two *sorted* containers.
       *
@@ -20,22 +22,26 @@ object ilistalgorithmMod extends js.Object {
       */
     def merge(from: Source): Unit = js.native
     def merge(from: Source, comp: Comparator[T, T]): Unit = js.native
+    
     /**
       * Remove elements with specific value.
       *
       * @param val The value to remove.
       */
     def remove(`val`: T): Unit = js.native
+    
     /**
       * Remove elements with specific function.
       *
       * @param pred A unary function determines whether remove or not.
       */
     def remove_if(pred: UnaryPredicator[T]): Unit = js.native
+    
     /**
       * Reverse elements.
       */
     def reverse(): Unit = js.native
+    
     /**
       * Sort elements.
       *
@@ -43,12 +49,14 @@ object ilistalgorithmMod extends js.Object {
       */
     def sort(): Unit = js.native
     def sort(comp: Comparator[T, T]): Unit = js.native
+    
     /**
       * Swap elements.
       *
       * @param obj Target container to swap.
       */
     def swap(obj: Source): Unit = js.native
+    
     /**
       * Remove duplicated elements.
       *
@@ -57,6 +65,4 @@ object ilistalgorithmMod extends js.Object {
     def unique(): Unit = js.native
     def unique(binary_pred: BinaryPredicator[T, T]): Unit = js.native
   }
-  
 }
-

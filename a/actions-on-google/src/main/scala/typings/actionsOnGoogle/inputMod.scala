@@ -4,15 +4,17 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RawInput
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RawInputInputType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/input", JSImport.Namespace)
 @js.native
 object inputMod extends js.Object {
+  
   @js.native
   /** @hidden */
   class Input () extends js.Object {
     def this(input: GoogleActionsV2RawInput) = this()
+    
     /**
       * Gets the user's raw input query.
       *
@@ -35,12 +37,11 @@ object inputMod extends js.Object {
       * @public
       */
     var raw: String = js.native
+    
     /**
       * Gets type of input used for this request.
       * @public
       */
     var `type`: GoogleActionsV2RawInputInputType = js.native
   }
-  
 }
-

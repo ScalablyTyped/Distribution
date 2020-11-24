@@ -4,11 +4,12 @@ import typings.redux.mod.Action
 import typings.reduxSagaCore.typesMod.TakeableChannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@redux-saga/core/types/effects", "debounce")
 @js.native
 object debounce extends js.Object {
+  
   def apply[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
   def apply[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     ms: Double,
@@ -45,4 +46,3 @@ object debounce extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BPMNBoundary extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BPMNBoundary")
 @js.native
 object BPMNBoundary extends js.Object {
+  
   //Used to set BPMN SubProcess's Boundary as Call
   @js.native
   sealed trait Call extends BPMNBoundary
@@ -21,6 +21,4 @@ object BPMNBoundary extends js.Object {
   //Used to set BPMN SubProcess's Boundary as Event
   @js.native
   sealed trait Event extends BPMNBoundary
-  
 }
-

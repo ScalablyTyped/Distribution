@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275eld")
 @js.native
 object ɵeld extends js.Object {
+  
   def apply(
     checkIndex: Double,
     flags: ɵNodeFlags,
@@ -24,4 +25,3 @@ object ɵeld extends js.Object {
     componentRendererType: js.UndefOr[RendererType2 | Null]
   ): NodeDef = js.native
 }
-

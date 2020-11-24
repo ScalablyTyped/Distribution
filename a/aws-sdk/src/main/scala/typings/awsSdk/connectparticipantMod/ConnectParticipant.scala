@@ -1,17 +1,19 @@
 package typings.awsSdk.connectparticipantMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConnectParticipant extends Service {
+  
   @JSName("config")
   var config_ConnectParticipant: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates the participant's connection. Note that ParticipantToken is used for invoking this API instead of ConnectionToken. The participant token is valid for the lifetime of the participant – until the they are part of a contact. The response URL for WEBSOCKET Type has a connect expiry timeout of 100s. Clients must manually connect to the returned websocket URL and subscribe to the desired topic.  For chat, you need to publish the following on the established websocket connection:  {"topic":"aws/subscribe","content":{"topics":["aws/chat"]}}  Upon websocket URL expiry, as specified in the response ConnectionExpiry parameter, clients need to call this API again to obtain a new websocket URL and perform the same steps as before.
     */
@@ -25,6 +27,7 @@ trait ConnectParticipant extends Service {
     params: CreateParticipantConnectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateParticipantConnectionResponse, Unit]
   ): Request[CreateParticipantConnectionResponse, AWSError] = js.native
+  
   /**
     * Disconnects a participant. Note that ConnectionToken is used for invoking this API instead of ParticipantToken.
     */
@@ -38,6 +41,7 @@ trait ConnectParticipant extends Service {
     params: DisconnectParticipantRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisconnectParticipantResponse, Unit]
   ): Request[DisconnectParticipantResponse, AWSError] = js.native
+  
   /**
     * Retrieves a transcript of the session. Note that ConnectionToken is used for invoking this API instead of ParticipantToken.
     */
@@ -51,6 +55,7 @@ trait ConnectParticipant extends Service {
     params: GetTranscriptRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTranscriptResponse, Unit]
   ): Request[GetTranscriptResponse, AWSError] = js.native
+  
   /**
     * Sends an event. Note that ConnectionToken is used for invoking this API instead of ParticipantToken.
     */
@@ -64,6 +69,7 @@ trait ConnectParticipant extends Service {
     params: SendEventRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendEventResponse, Unit]
   ): Request[SendEventResponse, AWSError] = js.native
+  
   /**
     * Sends a message. Note that ConnectionToken is used for invoking this API instead of ParticipantToken.
     */
@@ -78,4 +84,3 @@ trait ConnectParticipant extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SendMessageResponse, Unit]
   ): Request[SendMessageResponse, AWSError] = js.native
 }
-

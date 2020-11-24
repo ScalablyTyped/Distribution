@@ -11,8 +11,8 @@ Access memory using small fixed sized buffers
 | Full name          | memory-pager |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 26567941 |
+| # dependents       | 6 |
+| # downloads        | 45065016 |
 | # stars            | 0 |
 
 ## Links

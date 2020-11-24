@@ -2,16 +2,16 @@ package typings.anser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("anser", JSImport.Default)
 @js.native
 class default () extends Anser
-
 /* static members */
 @JSImport("anser", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * This replaces ANSI terminal escape codes with SPAN tags that wrap the
     * content.
@@ -35,6 +35,7 @@ object default extends js.Object {
     */
   def ansiToHtml(txt: String): String = js.native
   def ansiToHtml(txt: String, options: AnserOptions): String = js.native
+  
   /**
     * Converts ANSI input into JSON output.
     *
@@ -44,6 +45,7 @@ object default extends js.Object {
     */
   def ansiToJson(txt: String): js.Array[AnserJsonEntry] = js.native
   def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = js.native
+  
   /**
     * Converts ANSI input into text output.
     *
@@ -52,6 +54,7 @@ object default extends js.Object {
     */
   def ansiToText(txt: String): String = js.native
   def ansiToText(txt: String, options: AnserOptions): String = js.native
+  
   /**
     * Escape the input HTML.
     *
@@ -63,6 +66,7 @@ object default extends js.Object {
     * @returns The escaped html.
     */
   def escapeForHtml(txt: String): String = js.native
+  
   /**
     * Adds the links in the HTML.
     *
@@ -76,4 +80,3 @@ object default extends js.Object {
     */
   def linkify(txt: String): String = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.chrome.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofenterprise extends js.Object {
+  
   ////////////////////
   // Enterprise Device Attributes
   ////////////////////
@@ -17,6 +18,7 @@ trait Typeofenterprise extends js.Object {
     * Note: This API is only for extensions pre-installed by policy.
     */
   val deviceAttributes: TypeofdeviceAttributes = js.native
+  
   ////////////////////
   // Enterprise Networking Attributes
   ////////////////////
@@ -26,6 +28,7 @@ trait Typeofenterprise extends js.Object {
     * @since Chrome 85.
     */
   val networkingAttributes: TypeofnetworkingAttribute = js.native
+  
   ////////////////////
   // Enterprise Platform Keys
   ////////////////////
@@ -38,8 +41,8 @@ trait Typeofenterprise extends js.Object {
     */
   val platformKeys: TypeofplatformKeys = js.native
 }
-
 object Typeofenterprise {
+  
   @scala.inline
   def apply(
     deviceAttributes: TypeofdeviceAttributes,
@@ -49,24 +52,29 @@ object Typeofenterprise {
     val __obj = js.Dynamic.literal(deviceAttributes = deviceAttributes.asInstanceOf[js.Any], networkingAttributes = networkingAttributes.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofenterprise]
   }
+  
   @scala.inline
   implicit class TypeofenterpriseOps[Self <: Typeofenterprise] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDeviceAttributes(value: TypeofdeviceAttributes): Self = this.set("deviceAttributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNetworkingAttributes(value: TypeofnetworkingAttribute): Self = this.set("networkingAttributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPlatformKeys(value: TypeofplatformKeys): Self = this.set("platformKeys", value.asInstanceOf[js.Any])
   }
-  
 }
-

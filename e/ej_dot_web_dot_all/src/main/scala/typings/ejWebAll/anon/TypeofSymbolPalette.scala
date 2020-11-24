@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.datavisualization.SymbolPalette.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSymbolPalette
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), SymbolPalette]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, SymbolPalette] {
+  
   var Locale: js.Any = js.native
+  
   var fn: SymbolPalette = js.native
 }
-

@@ -10,9 +10,9 @@ Validate your webpack config with joi
 | ------------------ | :-------------: |
 | Full name          | webpack-validator |
 | Keywords           | webpack, config, schema, validation, joi |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 626733 |
+| # downloads        | 355280 |
 | # stars            | 14 |
 
 ## Links

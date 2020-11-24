@@ -12,12 +12,14 @@ import typings.superstruct.structMod.Struct
 import typings.superstruct.superstructStrings.enums
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/structs/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
+  
   def any(): Struct[_, Null] = js.native
+  
   def array(): Struct[js.Array[_], js.UndefOr[scala.Nothing]] = js.native
   def array[T /* <: Struct[_, _] */](Element: T): Struct[
     js.Array[
@@ -25,8 +27,11 @@ object typesMod extends js.Object {
     ], 
     T
   ] = js.native
+  
   def boolean(): Struct[Boolean, Null] = js.native
+  
   def date(): Struct[Date, Null] = js.native
+  
   def enums[T /* <: String */](values: js.Array[T]): Struct[
     T, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -40,9 +45,13 @@ object typesMod extends js.Object {
   {[ K in std.Array<T>[number] ]: K}
     */ enums with TopLevel[js.Any]
   ] = js.native
+  
   def func(): Struct[js.Function, Null] = js.native
+  
   def instance[T /* <: Instantiable */](Class: T): Struct[InstanceType[T], Null] = js.native
+  
   def integer(): Struct[Double, Null] = js.native
+  
   def intersection[A](
     Structs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TupleSchema<[A]> */ js.Any
   ): Struct[A, Null] = js.native
@@ -128,6 +137,7 @@ object typesMod extends js.Object {
     A with B with C with D with E with F with G with H with I with J with K with L with M with N with O with P with Q, 
     Null
   ] = js.native
+  
   def literal[T /* <: String */](constant: T): Struct[T, Null] = js.native
   @JSName("literal")
   def literal_T[T](constant: T): Struct[T, Null] = js.native
@@ -135,26 +145,38 @@ object typesMod extends js.Object {
   def literal_T_Boolean[T /* <: Boolean */](constant: T): Struct[T, Null] = js.native
   @JSName("literal")
   def literal_T_Double[T /* <: Double */](constant: T): Struct[T, Null] = js.native
+  
   def map(): Struct[Map[_, _], Null] = js.native
   def map[K, V](Key: Struct[K, _], Value: Struct[V, _]): Struct[Map[K, V], Null] = js.native
+  
   def never(): Struct[scala.Nothing, Null] = js.native
+  
   def nullable[T, S](struct: Struct[T, S]): Struct[T | Null, S] = js.native
+  
   def number(): Struct[Double, Null] = js.native
+  
   def `object`(): Struct[Record[String, _], Null] = js.native
   def `object`[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](schema: S): Struct[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ _, 
     S
   ] = js.native
+  
   def optional[T, S](struct: Struct[T, S]): Struct[js.UndefOr[T], S] = js.native
+  
   def record[K /* <: String */, V](Key: Struct[K, _], Value: Struct[V, _]): Struct[Record[K, V], Null] = js.native
+  
   def regexp(): Struct[RegExp, Null] = js.native
+  
   def set(): Struct[Set[_], Null] = js.native
   def set[T](Element: Struct[T, _]): Struct[Set[T], Null] = js.native
+  
   def shape[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](schema: S): Struct[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ _, 
     S
   ] = js.native
+  
   def string(): Struct[String, Null] = js.native
+  
   def tuple[A](
     Structs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TupleSchema<[A]> */ js.Any
   ): Struct[A, Null] = js.native
@@ -222,6 +244,7 @@ object typesMod extends js.Object {
   def tuple_ABCDEFGHIJKLMNOPQ[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q](
     Structs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TupleSchema<[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]> */ js.Any
   ): Struct[js.Tuple17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q], Null] = js.native
+  
   def union[A](
     Structs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TupleSchema<[A]> */ js.Any
   ): Struct[A, Null] = js.native
@@ -289,6 +312,6 @@ object typesMod extends js.Object {
   def union_ABCDEFGHIJKLMNOPQ[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q](
     Structs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TupleSchema<[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]> */ js.Any
   ): Struct[A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q, Null] = js.native
+  
   def unknown(): Struct[_, Null] = js.native
 }
-

@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Userprofiles")
 @js.native
 class ResourceUserprofiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var guardianInvitations: ResourceUserprofilesGuardianinvitations = js.native
-  var guardians: ResourceUserprofilesGuardians = js.native
+  
   /**
     * classroom.userProfiles.get
     * @desc Returns a user profile.  This method returns the following error
@@ -46,5 +46,8 @@ class ResourceUserprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserProfile]
   ): Unit = js.native
+  
+  var guardianInvitations: ResourceUserprofilesGuardianinvitations = js.native
+  
+  var guardians: ResourceUserprofilesGuardians = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.nodeEmoji.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-emoji", "emojify")
 @js.native
 object emojify extends js.Object {
+  
   def apply(str: String): String = js.native
   def apply(
     str: String,
@@ -20,4 +21,3 @@ object emojify extends js.Object {
     format: js.Function2[/* code */ String, /* name */ String, String]
   ): String = js.native
 }
-

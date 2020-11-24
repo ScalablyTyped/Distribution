@@ -11,8 +11,8 @@ A simple utility library for making the web more humane.
 | Full name          | humanize-plus |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 1754911 |
+| # dependents       | 37 |
+| # downloads        | 2026808 |
 | # stars            | 4 |
 
 ## Links

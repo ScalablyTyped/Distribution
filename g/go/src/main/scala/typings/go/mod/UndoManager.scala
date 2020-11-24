@@ -2,7 +2,7 @@ package typings.go.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Transaction holds a list of ChangedEvents collected during a transaction,
@@ -14,47 +14,28 @@ import scala.scalajs.js.annotation._
   * The constructor produces an empty UndoManager with no transaction history.
   */
 class UndoManager () extends js.Object {
-  /**This read-only property returns the current Transaction for recording additional model change events.*/
-  var currentTransaction: Transaction = js.native
-  /**This read-only property returns the index into .history for the current undoable Transaction.*/
-  var hisotryIndex: Double = js.native
-  /**This read-only property returns the whole history, a list of all of the Transactions, each representing a transaction with some number of ChangedEvents.*/
-  var history: List[Transaction] = js.native
-  /**Gets or sets whether this UndoManager records any changes.*/
-  var isEnabled: Boolean = js.native
-  /**This property is true after the first call to .startTransaction and before a corresponding call to .commitTransaction or .rollbackTransaction.*/
-  var isInTransaction: Boolean = js.native
-  /**This property is true during a call to .undo or .redo.*/
-  var isUndoingRedoing: Boolean = js.native
-  /**Gets or sets the maximum number of transactions that this undo manager will remember.*/
-  var maxHistoryLength: Double = js.native
-  /**This read-only property returns an iterator for all of the Models that this UndoManager is handling.*/
-  var models: Iterator[Model] = js.native
-  /**This read-only property returns a stack of ongoing transaction names.*/
-  var nestedTransactionNames: List[String] = js.native
-  /**This read-only property returns the current transaction level.*/
-  var transactionLevel: Double = js.native
-  /**This read-only property returns the Transaction in the .history to be redone next.*/
-  var transactionToRedo: Transaction = js.native
-  /**This read-only property returns the Transaction in the .history to be undone next.*/
-  var transactionToUndo: Transaction = js.native
+  
   /**
     * Make sure this UndoManager knows about a Model for which it may receive ChangedEvents when the given Model is changed.
     * @param {Model} model
     */
   def addModel(model: Model): Unit = js.native
+  
   /**
     * This predicate returns true if you can call .redo.
     */
   def canRedo(): Boolean = js.native
+  
   /**
     * This predicate returns true if you can call .undo.
     */
   def canUndo(): Boolean = js.native
+  
   /**
     * Clear all of the Transactions and clear all other state, including any ongoing transaction without rolling back.
     */
   def clear(): Unit = js.native
+  
   /**
     * Commit the current transaction started by a call to .startTransaction.
     * For convenience, this method is called by Model.commitTransaction and Diagram.commitTransaction.
@@ -70,6 +51,10 @@ class UndoManager () extends js.Object {
     */
   def commitTransaction(): Boolean = js.native
   def commitTransaction(tname: String): Boolean = js.native
+  
+  /**This read-only property returns the current Transaction for recording additional model change events.*/
+  var currentTransaction: Transaction = js.native
+  
   /**
     * Maybe record a ChangedEvent in the .currentTransaction.
     * This calls .skipsEvent to see if this should ignore the change.
@@ -82,10 +67,36 @@ class UndoManager () extends js.Object {
     * @param {ChangedEvent} e a ChangedEvent.
     */
   def handleChanged(e: ChangedEvent): Unit = js.native
+  
+  /**This read-only property returns the index into .history for the current undoable Transaction.*/
+  var hisotryIndex: Double = js.native
+  
+  /**This read-only property returns the whole history, a list of all of the Transactions, each representing a transaction with some number of ChangedEvents.*/
+  var history: List[Transaction] = js.native
+  
+  /**Gets or sets whether this UndoManager records any changes.*/
+  var isEnabled: Boolean = js.native
+  
+  /**This property is true after the first call to .startTransaction and before a corresponding call to .commitTransaction or .rollbackTransaction.*/
+  var isInTransaction: Boolean = js.native
+  
+  /**This property is true during a call to .undo or .redo.*/
+  var isUndoingRedoing: Boolean = js.native
+  
+  /**Gets or sets the maximum number of transactions that this undo manager will remember.*/
+  var maxHistoryLength: Double = js.native
+  
+  /**This read-only property returns an iterator for all of the Models that this UndoManager is handling.*/
+  var models: Iterator[Model] = js.native
+  
+  /**This read-only property returns a stack of ongoing transaction names.*/
+  var nestedTransactionNames: List[String] = js.native
+  
   /**
     * Re-perform this object change after an .undo.
     */
   def redo(): Unit = js.native
+  
   /**
     * Inform this UndoManager that it will no longer be receiving ChangedEvents
     * when the given Model is changed.
@@ -96,10 +107,12 @@ class UndoManager () extends js.Object {
     * @param {Model} model A Model that this UndoManager should no longer manage.
     */
   def removeModel(model: Model): Unit = js.native
+  
   /**
     * Rollback the current transaction started by a call to .startTransaction, undoing any changes.
     */
   def rollbackTransaction(): Boolean = js.native
+  
   /**
     * This predicate is called by .handleChanged to decide if a ChangedEvent
     * is not interesting enough to be remembered.
@@ -110,6 +123,7 @@ class UndoManager () extends js.Object {
     * @param {ChangedEvent} e the ChangedEvent received by .handleChanged.
     */
   def skipsEvent(e: ChangedEvent): Boolean = js.native
+  
   /**
     * Begin a transaction, where the changes are held by a Transaction object
     * as the value of .currentTransaction.
@@ -124,9 +138,18 @@ class UndoManager () extends js.Object {
     */
   def startTransaction(): Boolean = js.native
   def startTransaction(tname: String): Boolean = js.native
+  
+  /**This read-only property returns the current transaction level.*/
+  var transactionLevel: Double = js.native
+  
+  /**This read-only property returns the Transaction in the .history to be redone next.*/
+  var transactionToRedo: Transaction = js.native
+  
+  /**This read-only property returns the Transaction in the .history to be undone next.*/
+  var transactionToUndo: Transaction = js.native
+  
   /**
     * Reverse the effects of this object change.
     */
   def undo(): Unit = js.native
 }
-

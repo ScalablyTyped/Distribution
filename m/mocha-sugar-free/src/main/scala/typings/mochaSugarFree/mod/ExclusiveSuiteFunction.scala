@@ -5,7 +5,7 @@ import typings.mochaSugarFree.anon.OptionsfnSuiteFuncundefin
 import typings.mochaSugarFree.anon.OptionstitlestringfnSuite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [bdd, tdd, qunit]
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ExclusiveSuiteFunction extends js.Object {
+  
   // tslint:disable-next-line: unified-signatures
   def apply(options: OptionstitlestringfnSuite): Suite_ = js.native
   def apply(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
@@ -25,4 +26,3 @@ trait ExclusiveSuiteFunction extends js.Object {
   def apply(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
   def apply(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
 }
-

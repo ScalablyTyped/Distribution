@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analyticsreporting", JSImport.Namespace)
 @js.native
 object analyticsreportingMod extends js.Object {
+  
   def analyticsreporting(options: Options): Analyticsreporting = js.native
   @JSName("analyticsreporting")
   def analyticsreporting_v4(version: v4): Analyticsreporting = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v4 protected () extends Analyticsreporting {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v4
       extends TopLevel[
@@ -36,11 +38,11 @@ object analyticsreportingMod extends js.Object {
                 Analyticsreporting
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object analyticsreportingMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

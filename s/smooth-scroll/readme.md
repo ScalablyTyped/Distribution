@@ -10,9 +10,9 @@ Animate scrolling to anchor links
 | ------------------ | :-------------: |
 | Full name          | smooth-scroll |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 32 |
-| # downloads        | 1145483 |
+| # releases         | 10 |
+| # dependents       | 42 |
+| # downloads        | 1566231 |
 | # stars            | 3 |
 
 ## Links

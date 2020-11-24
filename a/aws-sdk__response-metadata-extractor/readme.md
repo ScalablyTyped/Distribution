@@ -10,9 +10,9 @@ Provides a function for extracting metadata from responses
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/response-metadata-extractor |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 17 |
 | # dependents       | 7 |
-| # downloads        | 37072 |
+| # downloads        | 175915 |
 | # stars            | 0 |
 
 ## Links

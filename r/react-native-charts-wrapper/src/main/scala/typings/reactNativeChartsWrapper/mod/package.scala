@@ -2,12 +2,16 @@ package typings.reactNativeChartsWrapper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type ChartChangeEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeChartsWrapper.anon.Action]
+  
   type ChartSelectEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeChartsWrapper.anon.Y | scala.Null]
+  
   type Color = typings.std.ReturnType[typings.reactNativeChartsWrapper.anon.FnCall]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.largeValue
     - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.percent

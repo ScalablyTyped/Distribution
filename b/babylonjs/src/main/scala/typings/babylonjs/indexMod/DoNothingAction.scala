@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "DoNothingAction")
 @js.native
@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
 class DoNothingAction ()
   extends typings.babylonjs.actionsIndexMod.DoNothingAction {
   def this(triggerOptions: js.Any) = this()
+  def this(triggerOptions: js.UndefOr[scala.Nothing], condition: typings.babylonjs.conditionMod.Condition) = this()
   def this(triggerOptions: js.Any, condition: typings.babylonjs.conditionMod.Condition) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.nodemailer.smtpConnectionMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.nodemailer.nodemailerStrings.NEVER
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.nodemailer.nodemailerStrings.DELAY
 */
 trait DSNOption extends js.Object
-
 object DSNOption {
+  
   @scala.inline
   def DELAY: typings.nodemailer.nodemailerStrings.DELAY = "DELAY".asInstanceOf[typings.nodemailer.nodemailerStrings.DELAY]
+  
   @scala.inline
   def FAILURE: typings.nodemailer.nodemailerStrings.FAILURE = "FAILURE".asInstanceOf[typings.nodemailer.nodemailerStrings.FAILURE]
+  
   @scala.inline
   def NEVER: typings.nodemailer.nodemailerStrings.NEVER = "NEVER".asInstanceOf[typings.nodemailer.nodemailerStrings.NEVER]
+  
   @scala.inline
   def SUCCESS: typings.nodemailer.nodemailerStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.nodemailer.nodemailerStrings.SUCCESS]
 }
-

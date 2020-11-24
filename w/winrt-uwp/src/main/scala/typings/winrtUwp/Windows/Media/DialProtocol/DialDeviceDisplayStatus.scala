@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.DialProtocol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DialDeviceDisplayStatus extends js.Object
-
 /** The possible statuses a DIAL device can have in the DIAL device picker. You can use these to adjust the sub-status and other visual attributes for a particular device in the picker. */
 @JSGlobal("Windows.Media.DialProtocol.DialDeviceDisplayStatus")
 @js.native
 object DialDeviceDisplayStatus extends js.Object {
+  
   /** The device is connected. */
   @js.native
   sealed trait connected extends DialDeviceDisplayStatus
@@ -34,6 +34,4 @@ object DialDeviceDisplayStatus extends js.Object {
   /** The device is not connected. */
   @js.native
   sealed trait none extends DialDeviceDisplayStatus
-  
 }
-

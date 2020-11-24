@@ -2,7 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.ForStatement")
 @js.native
@@ -16,4 +16,3 @@ class ForStatement protected ()
     statement: typings.typescriptServices.TypeScript.AST
   ) = this()
 }
-

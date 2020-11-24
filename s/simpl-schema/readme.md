@@ -10,15 +10,15 @@ A schema validation package that supports direct validation of MongoDB update mo
 | ------------------ | :-------------: |
 | Full name          | simpl-schema |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 44 |
-| # downloads        | 645581 |
+| # releases         | 18 |
+| # dependents       | 99 |
+| # downloads        | 851678 |
 | # stars            | 8 |
 
 ## Links
-- [Homepage](https://github.com/aldeed/node-simple-schema)
-- [Bugs](https://github.com/aldeed/node-simple-schema/issues)
-- [Repository](https://github.com/aldeed/node-simple-schema)
+- [Homepage](https://github.com/aldeed/simpl-schema)
+- [Bugs](https://github.com/aldeed/simpl-schema/issues)
+- [Repository](https://github.com/aldeed/simpl-schema)
 - [Npm](https://www.npmjs.com/package/simpl-schema)
     
 

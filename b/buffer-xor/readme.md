@@ -11,8 +11,8 @@ A simple module for bitwise-xor on buffers
 | Full name          | buffer-xor |
 | Keywords           | bits, bitwise, buffer, buffer-xor, crypto, inline, math, memory, performance, xor |
 | # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 274308120 |
+| # dependents       | 101 |
+| # downloads        | 387509180 |
 | # stars            | 0 |
 
 ## Links

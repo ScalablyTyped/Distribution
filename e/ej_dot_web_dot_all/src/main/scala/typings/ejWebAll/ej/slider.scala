@@ -2,16 +2,17 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.slider")
 @js.native
 object slider extends js.Object {
-  @js.native
-  sealed trait sliderType extends js.Object
   
   @js.native
+  sealed trait sliderType extends js.Object
+  @js.native
   object sliderType extends js.Object {
+    
     //Shows default slider
     @js.native
     sealed trait Default extends sliderType
@@ -23,8 +24,5 @@ object slider extends js.Object {
     //Shows Range slider
     @js.native
     sealed trait Range extends sliderType
-    
   }
-  
 }
-

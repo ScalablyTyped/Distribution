@@ -4,11 +4,12 @@ import typings.botvs.mod.global.botvs.ChartOptions
 import typings.botvs.mod.global.botvs.RChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Chart")
 @js.native
 object Chart extends js.Object {
+  
   /**
     * 图表绘图函数
     *
@@ -30,4 +31,3 @@ object Chart extends js.Object {
     */
   def apply(options: ChartOptions*): RChart = js.native
 }
-

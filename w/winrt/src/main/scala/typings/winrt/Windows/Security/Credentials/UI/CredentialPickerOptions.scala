@@ -3,12 +3,12 @@ package typings.winrt.Windows.Security.Credentials.UI
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CredentialPickerOptions extends ICredentialPickerOptions
-
 object CredentialPickerOptions {
+  
   @scala.inline
   def apply(
     alwaysDisplayDialog: Boolean,
@@ -26,4 +26,3 @@ object CredentialPickerOptions {
     __obj.asInstanceOf[CredentialPickerOptions]
   }
 }
-

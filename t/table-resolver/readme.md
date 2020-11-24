@@ -10,9 +10,9 @@ Table resolution utilities
 | ------------------ | :-------------: |
 | Full name          | table-resolver |
 | Keywords           | table, tables, resolve, resolving, algorithm, reactabular |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 437107 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 422376 |
 | # stars            | 0 |
 
 ## Links

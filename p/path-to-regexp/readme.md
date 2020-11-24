@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-to-regexp
 
-Typings are for version 6.1.0
+Typings are for version 6.2.0
 
 ## Library description:
 Express style path to RegExp utility
@@ -10,9 +10,9 @@ Express style path to RegExp utility
 | ------------------ | :-------------: |
 | Full name          | path-to-regexp |
 | Keywords           | express, regexp, route, routing |
-| # releases         | 18 |
-| # dependents       | 2327 |
-| # downloads        | 649287665 |
+| # releases         | 15 |
+| # dependents       | 2924 |
+| # downloads        | 935061373 |
 | # stars            | 112 |
 
 ## Links

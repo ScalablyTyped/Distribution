@@ -11,17 +11,17 @@ import typings.node.cryptoMod.BinaryLike
 import typings.node.cryptoMod.HexBase64Latin1Encoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz", "crypto.ECDH")
 @js.native
 class ECDH protected ()
   extends typings.mz.cryptoMod.ECDH
-
 /* static members */
 @JSImport("mz", "crypto.ECDH")
 @js.native
 object ECDH extends js.Object {
+  
   def convertKey(key: BinaryLike, curve: String): Buffer | String = js.native
   def convertKey(
     key: BinaryLike,
@@ -211,4 +211,3 @@ object ECDH extends js.Object {
     format: uncompressed
   ): Buffer | String = js.native
 }
-

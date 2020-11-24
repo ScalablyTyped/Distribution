@@ -10,7 +10,7 @@ import typings.officeJsPreview.OfficeExtension.LoadOption
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -20,20 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SettingCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_SettingCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[Setting] = js.native
-  /**
-    *
-    * Occurs when the Settings in the document are changed.
-    *
-    * [Api set: ExcelApi 1.4]
-    *
-    * @eventproperty
-    */
-  val onSettingsChanged: EventHandlers[SettingsChangedEventArgs] = js.native
+  
   /**
     * Sets or adds the specified setting to the workbook.
     *
@@ -48,12 +35,18 @@ trait SettingCollection extends ClientObject {
   def add(key: String, value: Boolean): Setting = js.native
   def add(key: String, value: Double): Setting = js.native
   def add(key: String, value: Date): Setting = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_SettingCollection: RequestContext = js.native
+  
   /**
     * Gets the number of Settings in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Gets a Setting entry via the key.
     *
@@ -62,6 +55,7 @@ trait SettingCollection extends ClientObject {
     * @param key Key of the setting.
     */
   def getItem(key: String): Setting = js.native
+  
   /**
     * Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
     *
@@ -70,6 +64,10 @@ trait SettingCollection extends ClientObject {
     * @param key The key of the setting.
     */
   def getItemOrNullObject(key: String): Setting = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[Setting] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -80,10 +78,20 @@ trait SettingCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): SettingCollection = js.native
   def load(propertyNames: String): SettingCollection = js.native
   def load(propertyNames: js.Array[String]): SettingCollection = js.native
+  
+  /**
+    *
+    * Occurs when the Settings in the document are changed.
+    *
+    * [Api set: ExcelApi 1.4]
+    *
+    * @eventproperty
+    */
+  val onSettingsChanged: EventHandlers[SettingsChangedEventArgs] = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): SettingCollectionData = js.native
 }
-

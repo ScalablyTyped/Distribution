@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.Signature.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSignature
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Signature]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Signature] {
+  
   var Locale: js.Any = js.native
+  
   var fn: Signature = js.native
 }
-

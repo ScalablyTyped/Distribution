@@ -24,23 +24,31 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Nightmare extends js.Object {
-  val cookies: Cookies = js.native
+  
   // Settings
   def authentication(user: String, password: String): Nightmare = js.native
+  
   def back(): Nightmare = js.native
+  
   def check(seletor: String): Nightmare = js.native
+  
   def click(selector: String): Nightmare = js.native
+  
+  val cookies: Cookies = js.native
+  
   def download(path: String): Nightmare = js.native
   @JSName("download")
   def download_cancel(action: cancel): Nightmare = js.native
   @JSName("download")
   def download_continue(action: continue): Nightmare = js.native
+  
   // Interact
   def end(): Nightmare = js.native
+  
   def evaluate(fn: js.Function0[Unit]): Nightmare = js.native
   def evaluate[R](fn: js.Function0[R], cb: js.Function1[/* result */ R, Unit]): Nightmare = js.native
   def evaluate[T](fn: js.Function1[/* arg */ T, Unit], cb: js.Function0[Unit], arg: T): Nightmare = js.native
@@ -58,15 +66,22 @@ trait Nightmare extends js.Object {
     arg2: T2,
     arg3: T3
   ): Nightmare = js.native
+  
   // Extract
   def exists(selector: String): Nightmare = js.native
   def exists(selector: String, cb: js.Function1[/* result */ Boolean, Unit]): Nightmare = js.native
+  
   def forward(): Nightmare = js.native
+  
   def goto(url: String): Nightmare = js.native
   def goto(url: String, headers: js.Object): Nightmare = js.native
+  
   def halt(error: String, cb: js.Function0[Unit]): Nightmare = js.native
+  
   def header(header: String, value: String): Nightmare = js.native
+  
   def headers(headers: js.Object): Nightmare = js.native
+  
   def html(path: String, saveType: String): Nightmare = js.native
   @JSName("html")
   def html_HTMLComplete(path: String, saveType: HTMLComplete): Nightmare = js.native
@@ -74,11 +89,17 @@ trait Nightmare extends js.Object {
   def html_HTMLOnly(path: String, saveType: HTMLOnly): Nightmare = js.native
   @JSName("html")
   def html_MHTML(path: String, saveType: MHTML): Nightmare = js.native
+  
   def inject(`type`: String, file: String): Nightmare = js.native
+  
   def insert(selector: String, text: String): Nightmare = js.native
+  
   def mousedown(selector: String): Nightmare = js.native
+  
   def mouseover(selector: String): Nightmare = js.native
+  
   def mouseup(selector: String): Nightmare = js.native
+  
   def on(event: String, cb: js.Function0[Unit]): Nightmare = js.native
   @JSName("on")
   def on_alert(event: alert, cb: js.Function1[/* msg */ String, Unit]): Nightmare = js.native
@@ -126,6 +147,7 @@ trait Nightmare extends js.Object {
   def on_timeout(event: timeout, cb: js.Function1[/* msg */ String, Unit]): Nightmare = js.native
   @JSName("on")
   def on_urlChanged(event: urlChanged, cb: js.Function1[/* targetUrl */ String, Unit]): Nightmare = js.native
+  
   def once(event: String, cb: js.Function0[Unit]): Nightmare = js.native
   @JSName("once")
   def once_alert(event: alert, cb: js.Function1[/* msg */ String, Unit]): Nightmare = js.native
@@ -173,11 +195,15 @@ trait Nightmare extends js.Object {
   def once_timeout(event: timeout, cb: js.Function1[/* msg */ String, Unit]): Nightmare = js.native
   @JSName("once")
   def once_urlChanged(event: urlChanged, cb: js.Function1[/* targetUrl */ String, Unit]): Nightmare = js.native
+  
   def path(): String = js.native
+  
   def pdf(cb: js.Function2[/* err */ Error, /* data */ Buffer, Unit]): Nightmare = js.native
   def pdf(path: String): Nightmare = js.native
   def pdf(path: String, options: js.Object): Nightmare = js.native
+  
   def refresh(): Nightmare = js.native
+  
   def removeListener(event: String, cb: js.Function0[Unit]): Nightmare = js.native
   @JSName("removeListener")
   def removeListener_alert(event: alert, cb: js.Function1[/* msg */ String, Unit]): Nightmare = js.native
@@ -225,8 +251,10 @@ trait Nightmare extends js.Object {
   def removeListener_timeout(event: timeout, cb: js.Function1[/* msg */ String, Unit]): Nightmare = js.native
   @JSName("removeListener")
   def removeListener_urlChanged(event: urlChanged, cb: js.Function1[/* targetUrl */ String, Unit]): Nightmare = js.native
+  
   def run(): Nightmare = js.native
   def run(cb: js.Function2[/* err */ js.Any, /* nightmare */ this.type, Unit]): Nightmare = js.native
+  
   def screenshot(): Nightmare = js.native
   def screenshot(clip: Height): Nightmare = js.native
   def screenshot(clip: Height, done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
@@ -236,21 +264,34 @@ trait Nightmare extends js.Object {
   def screenshot(path: String, clip: Height): Nightmare = js.native
   def screenshot(path: String, clip: Height, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
   def screenshot(path: String, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
+  
   def scrollTo(top: Double, left: Double): Nightmare = js.native
+  
   def select(seletor: String, option: String): Nightmare = js.native
+  
   def `then`[T, R](fn: js.Function1[/* value */ T, R]): js.Promise[R] = js.native
+  
   def title(): String = js.native
   def title(cb: js.Function1[/* title */ String, Unit]): Nightmare = js.native
+  
   def `type`(selector: String, text: String): Nightmare = js.native
+  
   def uncheck(seletor: String): Nightmare = js.native
+  
   def upload(selector: String, path: String): Nightmare = js.native
+  
   def url(): String = js.native
   def url(cb: js.Function1[/* url */ String, Unit]): Nightmare = js.native
+  
   def use(plugin: js.Function1[/* nightmare */ this.type, Unit]): Nightmare = js.native
+  
   def useragent(useragent: String): Nightmare = js.native
+  
   def viewport(width: Double, height: Double): Nightmare = js.native
+  
   def visible(selector: String): Nightmare = js.native
   def visible(selector: String, cb: js.Function1[/* result */ Boolean, Unit]): Nightmare = js.native
+  
   def wait(fn: js.Function0[_]): Nightmare = js.native
   def wait(fn: js.Function0[_], value: js.Any): Nightmare = js.native
   def wait(fn: js.Function0[_], value: js.Any, delay: Double): Nightmare = js.native
@@ -279,6 +320,6 @@ trait Nightmare extends js.Object {
     value4: T4,
     value5: T5
   ): Nightmare = js.native
+  
   def zoom(zoomFactor: Double): Nightmare = js.native
 }
-

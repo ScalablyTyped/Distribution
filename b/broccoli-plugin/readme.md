@@ -10,9 +10,9 @@ Base class for all Broccoli plugins
 | ------------------ | :-------------: |
 | Full name          | broccoli-plugin |
 | Keywords           | broccoli-plugin |
-| # releases         | 8 |
-| # dependents       | 165 |
-| # downloads        | 13274644 |
+| # releases         | 9 |
+| # dependents       | 173 |
+| # downloads        | 22877722 |
 | # stars            | 2 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a traffic incident and flow data to the map.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.Traffic")
 @js.native
 object Traffic extends js.Object {
+  
   @js.native
   class TrafficManager protected ()
     extends typings.bingmaps.Microsoft.Maps.Traffic.TrafficManager {
@@ -21,6 +22,4 @@ object Traffic extends js.Object {
       */
     def this(map: typings.bingmaps.Microsoft.Maps.Map) = this()
   }
-  
 }
-

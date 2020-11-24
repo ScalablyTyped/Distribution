@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContentAlignment extends js.Object
-
 /**
   * The content alignments for a Shape or TableCell. The supported alignments
   * correspond to predefined text anchoring types from the ECMA-376 standard.
@@ -19,6 +18,7 @@ sealed trait ContentAlignment extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.ContentAlignment")
 @js.native
 object ContentAlignment extends js.Object {
+  
   @js.native
   sealed trait BOTTOM extends ContentAlignment
   
@@ -30,6 +30,4 @@ object ContentAlignment extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ContentAlignment
-  
 }
-

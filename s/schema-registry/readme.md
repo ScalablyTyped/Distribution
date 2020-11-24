@@ -11,8 +11,8 @@ json & avro schema registry
 | Full name          | schema-registry |
 | Keywords           | schema, registry, avro, json, rest, kafka, living, version, etl, avsc, ajv, format, type |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 6821 |
+| # dependents       | 2 |
+| # downloads        | 4811 |
 | # stars            | 0 |
 
 ## Links

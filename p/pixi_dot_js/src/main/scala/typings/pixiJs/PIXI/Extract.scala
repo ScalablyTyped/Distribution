@@ -5,7 +5,7 @@ import typings.std.HTMLImageElement
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class provides renderer-specific plugins for exporting content from a renderer.
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Extract extends js.Object {
+  
   /**
     * Will return a a base64 encoded string of this target. It works by calling
     *  `Extract.getCanvas` and then running toDataURL on that.
@@ -48,6 +49,7 @@ trait Extract extends js.Object {
   def base64(target: RenderTexture, format: js.UndefOr[scala.Nothing], quality: Double): String = js.native
   def base64(target: RenderTexture, format: String): String = js.native
   def base64(target: RenderTexture, format: String, quality: Double): String = js.native
+  
   /**
     * Creates a Canvas element, renders this target to it and then returns it.
     *
@@ -57,11 +59,13 @@ trait Extract extends js.Object {
     */
   def canvas(target: DisplayObject): HTMLCanvasElement = js.native
   def canvas(target: RenderTexture): HTMLCanvasElement = js.native
+  
   /**
     * Destroys the extract
     *
     */
   def destroy(): Unit = js.native
+  
   /**
     * Will return a HTML Image of the target
     *
@@ -79,6 +83,7 @@ trait Extract extends js.Object {
   def image(target: RenderTexture, format: js.UndefOr[scala.Nothing], quality: Double): HTMLImageElement = js.native
   def image(target: RenderTexture, format: String): HTMLImageElement = js.native
   def image(target: RenderTexture, format: String, quality: Double): HTMLImageElement = js.native
+  
   /**
     * Will return a one-dimensional array containing the pixel data of the entire texture in RGBA
     * order, with integer values between 0 and 255 (included).
@@ -90,4 +95,3 @@ trait Extract extends js.Object {
   def pixels(target: DisplayObject): Uint8Array = js.native
   def pixels(target: RenderTexture): Uint8Array = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.validator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("validator/lib/blacklist", JSImport.Namespace)
 @js.native
 object blacklistMod extends js.Object {
+  
   /******************
     *** Sanitizers ***
     ******************/
@@ -17,4 +18,3 @@ object blacklistMod extends js.Object {
     */
   def default(input: String, chars: String): String = js.native
 }
-

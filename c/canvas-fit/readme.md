@@ -12,7 +12,7 @@ Small module for fitting a canvas element within the bounds of its parent.
 | Keywords           | canvas, fit, screen, window, browser, stretch, resize |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 2231318 |
+| # downloads        | 2682675 |
 | # stars            | 0 |
 
 ## Links

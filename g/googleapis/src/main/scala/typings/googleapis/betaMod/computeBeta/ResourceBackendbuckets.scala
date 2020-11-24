@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Backendbuckets")
 @js.native
 class ResourceBackendbuckets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.backendBuckets.addSignedUrlKey
     * @desc Adds a key for validating requests with signed URLs for this
@@ -48,6 +48,9 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.backendBuckets.delete
     * @desc Deletes the specified BackendBucket resource.
@@ -135,6 +138,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendBuckets.deleteSignedUrlKey
     * @desc Deletes a key for validating requests with signed URLs for this
@@ -170,6 +174,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendBuckets.get
     * @desc Returns the specified BackendBucket resource. Gets a list of
@@ -257,6 +262,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendBucket]
   ): Unit = js.native
+  
   /**
     * compute.backendBuckets.insert
     * @desc Creates a BackendBucket resource in the specified project using the
@@ -345,6 +351,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendBuckets.list
     * @desc Retrieves the list of BackendBucket resources available to the
@@ -444,6 +451,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendBucketList]
   ): Unit = js.native
+  
   /**
     * compute.backendBuckets.patch
     * @desc Updates the specified BackendBucket resource with the data included
@@ -540,6 +548,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendBuckets.update
     * @desc Updates the specified BackendBucket resource with the data included
@@ -636,4 +645,3 @@ class ResourceBackendbuckets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

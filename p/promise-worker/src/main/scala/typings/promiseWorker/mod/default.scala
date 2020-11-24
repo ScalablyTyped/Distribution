@@ -3,7 +3,7 @@ package typings.promiseWorker.mod
 import typings.std.Worker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promise-worker", JSImport.Default)
 @js.native
@@ -15,4 +15,3 @@ class default protected () extends PromiseWorker {
     */
   def this(worker: Worker) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.googleCloudStorage.iamMod
 import typings.googleCloudStorage.bucketMod.Bucket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Get and set IAM policies for your Cloud Storage bucket.
@@ -26,16 +26,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class Iam protected () extends js.Object {
   def this(bucket: Bucket) = this()
-  var request_ : js.Any = js.native
-  var resourceId_ : js.Any = js.native
+  
   def getPolicy(): js.Promise[GetPolicyResponse] = js.native
   def getPolicy(callback: GetPolicyCallback): Unit = js.native
   def getPolicy(options: GetPolicyOptions): js.Promise[GetPolicyResponse] = js.native
   def getPolicy(options: GetPolicyOptions, callback: GetPolicyCallback): Unit = js.native
+  
+  var request_ : js.Any = js.native
+  
+  var resourceId_ : js.Any = js.native
+  
   def setPolicy(policy: Policy): js.Promise[SetPolicyResponse] = js.native
   def setPolicy(policy: Policy, callback: SetPolicyCallback): Unit = js.native
   def setPolicy(policy: Policy, options: SetPolicyOptions): js.Promise[SetPolicyResponse] = js.native
   def setPolicy(policy: Policy, options: SetPolicyOptions, callback: SetPolicyCallback): Unit = js.native
+  
   def testPermissions(permissions: String): js.Promise[TestIamPermissionsResponse] = js.native
   def testPermissions(permissions: String, callback: TestIamPermissionsCallback): Unit = js.native
   def testPermissions(permissions: String, options: TestIamPermissionsOptions): js.Promise[TestIamPermissionsResponse] = js.native
@@ -49,4 +54,3 @@ class Iam protected () extends js.Object {
     callback: TestIamPermissionsCallback
   ): Unit = js.native
 }
-

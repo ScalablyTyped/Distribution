@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailMailboxSyncStatus extends js.Object
-
 /** Defines the sync status of the mailbox. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxSyncStatus")
 @js.native
 object EmailMailboxSyncStatus extends js.Object {
+  
   /** The mailbox has encountered an authentication error and cannot sync. */
   @js.native
   sealed trait authenticationError extends EmailMailboxSyncStatus
@@ -38,6 +38,4 @@ object EmailMailboxSyncStatus extends js.Object {
   /** The mailbox is up to date. */
   @js.native
   sealed trait upToDate extends EmailMailboxSyncStatus
-  
 }
-

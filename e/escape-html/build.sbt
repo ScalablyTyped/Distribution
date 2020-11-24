@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "escape-html"
-version := "1.0-dt-20200513Z-da5960"
+version := "1.0-dt-20200513Z-ce0c7f"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

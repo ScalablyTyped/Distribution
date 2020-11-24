@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.form.component.DatabaseCheckBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies a check box which is data-aware and thus can be bound to a database field, and additionally supports binding to arbitrary
@@ -53,6 +53,7 @@ import scala.scalajs.js.annotation._
 trait BindableDatabaseCheckBox
   extends DatabaseCheckBox
      with XBindableValue {
+  
   /**
     * specifies a value which is to be associated with the control when it's **not** checked.
     *
@@ -60,6 +61,7 @@ trait BindableDatabaseCheckBox
     * member {@link SecondaryRefValue} , clients of the check box can also associate a value with the **not checked** state of the control.
     */
   var SecondaryRefValue: String = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -67,4 +69,3 @@ trait BindableDatabaseCheckBox
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.wechatMiniprogram.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("setTimeout")
 @js.native
 object setTimeout extends js.Object {
+  
   /** [number setTimeout(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setTimeout.html)
     *
     * 设定一个定时器。在定时到期以后执行注册的回调函数 */
@@ -35,4 +36,3 @@ object setTimeout extends js.Object {
   rest: js.Any
   ): Double = js.native
 }
-

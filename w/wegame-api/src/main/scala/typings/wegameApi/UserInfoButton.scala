@@ -4,12 +4,12 @@ import typings.wegameApi.wx.types.ButtonStyle
 import typings.wegameApi.wx.types.ButtonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UserInfoButton extends CreatedButton
-
 object UserInfoButton {
+  
   @scala.inline
   def apply(
     destroy: () => Unit,
@@ -27,4 +27,3 @@ object UserInfoButton {
     __obj.asInstanceOf[UserInfoButton]
   }
 }
-

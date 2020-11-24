@@ -12,7 +12,7 @@ Strip emoji from a string in Node.js and browsers.
 | Keywords           | emoji, strip, remove, emoticons |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 473828 |
+| # downloads        | 491294 |
 | # stars            | 1 |
 
 ## Links

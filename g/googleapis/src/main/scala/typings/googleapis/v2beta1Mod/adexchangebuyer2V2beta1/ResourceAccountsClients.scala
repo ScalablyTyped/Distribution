@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Clients")
 @js.native
 class ResourceAccountsClients protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var invitations: ResourceAccountsClientsInvitations = js.native
-  var users: ResourceAccountsClientsUsers = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.create
     * @desc Creates a new client buyer.
@@ -44,6 +44,7 @@ class ResourceAccountsClients protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClient]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.get
     * @desc Gets a client buyer with a given client account ID.
@@ -73,6 +74,9 @@ class ResourceAccountsClients protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClient]
   ): Unit = js.native
+  
+  var invitations: ResourceAccountsClientsInvitations = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.list
     * @desc Lists all the clients for the current sponsor buyer.
@@ -107,6 +111,7 @@ class ResourceAccountsClients protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClientsResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.update
     * @desc Updates an existing client buyer.
@@ -137,5 +142,6 @@ class ResourceAccountsClients protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClient]
   ): Unit = js.native
+  
+  var users: ResourceAccountsClientsUsers = js.native
 }
-

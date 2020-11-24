@@ -2,13 +2,14 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed information about the merchant.
   */
 @js.native
 trait MerchantInfo extends js.Object {
+  
   /**
     * The ID of the merchant account with Google Pay.
     *
@@ -20,6 +21,7 @@ trait MerchantInfo extends js.Object {
     * production environment.
     */
   var merchantId: String = js.native
+  
   /**
     * A user visible merchant name.
     *
@@ -30,6 +32,7 @@ trait MerchantInfo extends js.Object {
     * Pay Developer Profile will be used.
     */
   var merchantName: js.UndefOr[String] = js.native
+  
   /**
     * The info of the software used by merchants to integrate with GPay.
     *
@@ -38,35 +41,42 @@ trait MerchantInfo extends js.Object {
     */
   var softwareInfo: js.UndefOr[SoftwareInfo] = js.native
 }
-
 object MerchantInfo {
+  
   @scala.inline
   def apply(merchantId: String): MerchantInfo = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantInfo]
   }
+  
   @scala.inline
   implicit class MerchantInfoOps[Self <: MerchantInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMerchantName(value: String): Self = this.set("merchantName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMerchantName: Self = this.set("merchantName", js.undefined)
+    
     @scala.inline
     def setSoftwareInfo(value: SoftwareInfo): Self = this.set("softwareInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSoftwareInfo: Self = this.set("softwareInfo", js.undefined)
   }
-  
 }
-

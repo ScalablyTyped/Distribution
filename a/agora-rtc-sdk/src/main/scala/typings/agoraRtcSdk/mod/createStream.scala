@@ -2,11 +2,12 @@ package typings.agoraRtcSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agora-rtc-sdk", "createStream")
 @js.native
 object createStream extends js.Object {
+  
   /**
     * Creates a Stream Object
     *
@@ -16,4 +17,3 @@ object createStream extends js.Object {
     */
   def apply(spec: StreamSpec): Stream = js.native
 }
-

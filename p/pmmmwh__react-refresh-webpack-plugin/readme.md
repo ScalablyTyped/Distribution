@@ -1,7 +1,7 @@
 
 # Scala.js typings for pmmmwh__react-refresh-webpack-plugin
 
-Typings are for version 0.3.3
+Typings are for version 0.4.3
 
 ## Library description:
 An **EXPERIMENTAL** Webpack plugin to enable "Fast Refresh" (also previously known as _Hot Reloading_) for React components.
@@ -10,9 +10,9 @@ An **EXPERIMENTAL** Webpack plugin to enable "Fast Refresh" (also previously kno
 | ------------------ | :-------------: |
 | Full name          | @pmmmwh/react-refresh-webpack-plugin |
 | Keywords           | react, javascript, webpack, refresh, hmr, hotreload, livereload, live, edit, hot, reload |
-| # releases         | 16 |
-| # dependents       | 68 |
-| # downloads        | 2177518 |
+| # releases         | 33 |
+| # dependents       | 261 |
+| # downloads        | 14354426 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/acceleratedmobilepageurl/v1", "acceleratedmobilepageurl_v1.Resource$Ampurls")
 @js.native
 class ResourceAmpurls protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * acceleratedmobilepageurl.ampUrls.batchGet
     * @desc Returns AMP URL(s) and equivalent [AMP Cache
@@ -45,5 +45,6 @@ class ResourceAmpurls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetAmpUrlsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

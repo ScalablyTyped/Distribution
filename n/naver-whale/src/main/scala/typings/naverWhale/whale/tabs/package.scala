@@ -2,12 +2,14 @@ package typings.naverWhale.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object tabs {
+  
   type TabActivatedEvent = typings.chrome.chrome.events.Event[
     js.Function1[/* activeInfo */ typings.chrome.chrome.tabs.TabActiveInfo, scala.Unit]
   ]
+  
   type TabAttachedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* tabId */ scala.Double, 
@@ -15,7 +17,9 @@ package object tabs {
       scala.Unit
     ]
   ]
+  
   type TabCreatedEvent = typings.chrome.chrome.events.Event[js.Function1[/* tab */ typings.chrome.chrome.tabs.Tab, scala.Unit]]
+  
   type TabDetachedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* tabId */ scala.Double, 
@@ -23,9 +27,11 @@ package object tabs {
       scala.Unit
     ]
   ]
+  
   type TabHighlightedEvent = typings.chrome.chrome.events.Event[
     js.Function1[/* highlightInfo */ typings.chrome.chrome.tabs.TabHighlightInfo, scala.Unit]
   ]
+  
   type TabMovedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* tabId */ scala.Double, 
@@ -33,6 +39,7 @@ package object tabs {
       scala.Unit
     ]
   ]
+  
   type TabRemovedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* tabId */ scala.Double, 
@@ -40,9 +47,11 @@ package object tabs {
       scala.Unit
     ]
   ]
+  
   type TabReplacedEvent = typings.chrome.chrome.events.Event[
     js.Function2[/* addedTabId */ scala.Double, /* removedTabId */ scala.Double, scala.Unit]
   ]
+  
   type TabSelectedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* tabId */ scala.Double, 
@@ -50,6 +59,7 @@ package object tabs {
       scala.Unit
     ]
   ]
+  
   type TabUpdatedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* tabId */ scala.Double, 
@@ -58,6 +68,7 @@ package object tabs {
       scala.Unit
     ]
   ]
+  
   type TabZoomChangeEvent = typings.chrome.chrome.events.Event[
     js.Function1[/* ZoomChangeInfo */ typings.chrome.chrome.tabs.ZoomChangeInfo, scala.Unit]
   ]

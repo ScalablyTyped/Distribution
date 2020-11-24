@@ -10,9 +10,9 @@ Dependency free publish/subscribe library
 | ------------------ | :-------------: |
 | Full name          | pubsub-js |
 | Keywords           | pub/sub, pubsub, publish/subscribe, publish, subscribe |
-| # releases         | 5 |
-| # dependents       | 140 |
-| # downloads        | 1623996 |
+| # releases         | 3 |
+| # dependents       | 170 |
+| # downloads        | 2413174 |
 | # stars            | 15 |
 
 ## Links

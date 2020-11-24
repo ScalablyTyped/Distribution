@@ -2,18 +2,21 @@ package typings.igniteUi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IgTileManagerMethods extends js.Object {
+  
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
   def changeGlobalLanguage(): Unit = js.native
+  
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
   def changeGlobalRegional(): Unit = js.native
+  
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
     * Note that this method is for rare scenarios, use [language](ui.igwidget#options:language) or [locale](ui.igwidget#options:locale) option setter
@@ -21,18 +24,22 @@ trait IgTileManagerMethods extends js.Object {
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
   def changeLocale($container: js.Object): Unit = js.native
+  
   /**
     * Causes the TileManager to data bind to the data source (local or remote) , and re-render all of the data as well.
     */
   def dataBind(): Unit = js.native
+  
   /**
     * Deletes the widget instance (client object). It is no longer accessible and all its event handlers stop working. Destroys all child widgets. Removes auto-generated HTML content, which is outside the widget, e.g. detached popups, dropdowns, etc.
     */
   def destroy(): js.Object = js.native
+  
   /**
     * Returns the [layout manager](ui.iglayoutmanager) associated with current tile manager.
     */
   def layoutManager(): js.Object = js.native
+  
   /**
     * Maximizes a given tile.
     *
@@ -44,11 +51,13 @@ trait IgTileManagerMethods extends js.Object {
   def maximize($tileToMaximize: js.Object, animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def maximize($tileToMaximize: js.Object, animDuration: Double): Unit = js.native
   def maximize($tileToMaximize: js.Object, animDuration: Double, event: js.Object): Unit = js.native
+  
   /**
     * Returns the maximized tile or null if such is not present.
     * @return object|null Returns the maximized tile or null if such is not present.
     */
   def maximizedTile(): js.Object = js.native
+  
   /**
     * Minimizes the maximized tile. Has no effect if no maximized tile is present.
     *
@@ -59,11 +68,13 @@ trait IgTileManagerMethods extends js.Object {
   def minimize(animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def minimize(animDuration: Double): Unit = js.native
   def minimize(animDuration: Double, event: js.Object): Unit = js.native
+  
   /**
     * Returns an array with the tiles in minimized state or null if such are not present.
     * @return object|null Returns an array with the tiles in minimized state or null if such are not present.
     */
   def minimizedTiles(): js.Object = js.native
+  
   /**
     * Reflow the tile manager. Rearranging the tiles to fit in the container
     *
@@ -83,15 +94,16 @@ trait IgTileManagerMethods extends js.Object {
   def reflow(forceReflow: js.Object, animationDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def reflow(forceReflow: js.Object, animationDuration: Double): Unit = js.native
   def reflow(forceReflow: js.Object, animationDuration: Double, event: js.Object): Unit = js.native
+  
   /**
     * Returns the splitter associated with this tile manager or
     *                 null if the tile manager was instantiated with maximizedTileIndex.
     * @return object|null Returns the splitter associated with this tile manager or null if the tile manager was instantiated with maximizedTileIndex.
     */
   def splitter(): js.Object = js.native
+  
   /**
     * Returns the element that represents this widget.
     */
   def widget(): js.Object = js.native
 }
-

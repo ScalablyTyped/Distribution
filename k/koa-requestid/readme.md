@@ -11,8 +11,8 @@ A middleware that adds a request id to a koa application
 | Full name          | koa-requestid |
 | Keywords           | koa, request, request-id, requestId |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 91243 |
+| # dependents       | 8 |
+| # downloads        | 266629 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.inquirer.choiceMod
 import typings.inquirer.mod.Answers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a choice for several question-types.
@@ -25,4 +25,3 @@ class ^[T /* <: Answers */] protected () extends Choice[T] {
     */
   def this(value: js.Any, answers: T) = this()
 }
-

@@ -2,10 +2,11 @@ package typings.roarr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Logger extends js.Object {
+  
   def apply(
     context: MessageContextType,
     message: String,
@@ -30,4 +31,3 @@ trait Logger extends js.Object {
     i: js.UndefOr[SprintfArgumentType]
   ): Unit = js.native
 }
-

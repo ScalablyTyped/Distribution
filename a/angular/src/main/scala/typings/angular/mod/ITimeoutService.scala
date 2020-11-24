@@ -2,7 +2,7 @@ package typings.angular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // TimeoutService
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait ITimeoutService extends js.Object {
+  
   def apply(): IPromise[Unit] = js.native
   def apply(delay: js.UndefOr[scala.Nothing], invokeApply: Boolean): IPromise[Unit] = js.native
   def apply(delay: Double): IPromise[Unit] = js.native
@@ -38,7 +39,7 @@ trait ITimeoutService extends js.Object {
     invokeApply: Boolean,
     args: js.Any*
   ): IPromise[T] = js.native
+  
   def cancel(): Boolean = js.native
   def cancel(promise: IPromise[_]): Boolean = js.native
 }
-

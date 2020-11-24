@@ -10,9 +10,9 @@ Get the remote origin url of a Git repository
 | ------------------ | :-------------: |
 | Full name          | git-remote-origin-url |
 | Keywords           | git, config, url, repo, remote, origin |
-| # releases         | 2 |
-| # dependents       | 99 |
-| # downloads        | 31698485 |
+| # releases         | 3 |
+| # dependents       | 124 |
+| # downloads        | 47244269 |
 | # stars            | 2 |
 
 ## Links

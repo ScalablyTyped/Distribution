@@ -10,9 +10,9 @@ This is a library designed to render js objects as xml. Its not made to parse or
 | ------------------ | :-------------: |
 | Full name          | jsontoxml |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 69 |
-| # downloads        | 4842115 |
+| # releases         | 2 |
+| # dependents       | 71 |
+| # downloads        | 5892917 |
 | # stars            | 1 |
 
 ## Links

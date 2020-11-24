@@ -5,12 +5,12 @@ import typings.testingLibraryDom.getQueriesForElementMod.BoundFunctions
 import typings.testingLibraryDom.getQueriesForElementMod.Queries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@testing-library/react", "getQueriesForElement")
 @js.native
 object getQueriesForElement extends js.Object {
+  
   def apply[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
   def apply[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
 }
-

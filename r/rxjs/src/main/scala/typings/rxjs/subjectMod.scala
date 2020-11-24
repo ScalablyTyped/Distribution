@@ -6,16 +6,18 @@ import typings.rxjs.typesMod.Observer
 import typings.rxjs.typesMod.SubscriptionLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Subject", JSImport.Namespace)
 @js.native
 object subjectMod extends js.Object {
+  
   @js.native
   class AnonymousSubject[T] () extends Subject[T] {
     def this(destination: Observer[T]) = this()
     def this(destination: js.UndefOr[scala.Nothing], source: Observable[T]) = this()
     def this(destination: Observer[T], source: Observable[T]) = this()
+    
     var destination: js.UndefOr[Observer[T]] = js.native
   }
   
@@ -23,10 +25,7 @@ object subjectMod extends js.Object {
   class Subject[T] ()
     extends Observable[T]
        with SubscriptionLike {
-    var hasError: Boolean = js.native
-    var isStopped: Boolean = js.native
-    var observers: js.Array[Observer[T]] = js.native
-    var thrownError: js.Any = js.native
+    
     /**
       * Creates a new Observable with this Subject as the source. You can do this
       * to create customize Observer-side logic of the Subject and conceal it from
@@ -34,27 +33,37 @@ object subjectMod extends js.Object {
       * @return {Observable} Observable that the Subject casts to
       */
     def asObservable(): Observable[T] = js.native
+    
     def complete(): Unit = js.native
+    
     def error(err: js.Any): Unit = js.native
+    
+    var hasError: Boolean = js.native
+    
+    var isStopped: Boolean = js.native
+    
     def next(): Unit = js.native
     def next(value: T): Unit = js.native
+    
+    var observers: js.Array[Observer[T]] = js.native
+    
+    var thrownError: js.Any = js.native
   }
-  
-  @js.native
-  class SubjectSubscriber[T] protected () extends Subscriber[T] {
-    def this(destination: Subject[T]) = this()
-    @JSName("destination")
-    var destination_SubjectSubscriber: Subject[T] = js.native
-  }
-  
   /* static members */
   @js.native
   object Subject extends js.Object {
+    
     /**@nocollapse
       * @deprecated use new Subject() instead
       */
     var create: js.Function = js.native
   }
   
+  @js.native
+  class SubjectSubscriber[T] protected () extends Subscriber[T] {
+    def this(destination: Subject[T]) = this()
+    
+    @JSName("destination")
+    var destination_SubjectSubscriber: Subject[T] = js.native
+  }
 }
-

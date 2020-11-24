@@ -3,7 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.INameSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "GenericTypeSyntax")
 @js.native
@@ -15,11 +15,10 @@ class GenericTypeSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "GenericTypeSyntax")
 @js.native
 object GenericTypeSyntax extends js.Object {
+  
   def create1(name: INameSyntax): typings.typescriptServices.TypeScript.GenericTypeSyntax = js.native
 }
-

@@ -15,11 +15,12 @@ import typings.typescript.mod.SyntaxKind.ReadonlyKeyword
 import typings.typescript.mod.SyntaxKind.StaticKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tsutils/util/util", "getModifier")
 @js.native
 object getModifier extends js.Object {
+  
   def apply(node: Node, kind: AbstractKeyword): js.UndefOr[Modifier] = js.native
   def apply(node: Node, kind: AsyncKeyword): js.UndefOr[Modifier] = js.native
   def apply(node: Node, kind: ConstKeyword): js.UndefOr[Modifier] = js.native
@@ -32,4 +33,3 @@ object getModifier extends js.Object {
   def apply(node: Node, kind: ReadonlyKeyword): js.UndefOr[Modifier] = js.native
   def apply(node: Node, kind: StaticKeyword): js.UndefOr[Modifier] = js.native
 }
-

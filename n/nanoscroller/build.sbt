@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoscroller"
-version := "0.8-dt-20200515Z-80b326"
+version := "0.8-dt-20200515Z-68f99c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

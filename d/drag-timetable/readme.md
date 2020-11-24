@@ -12,7 +12,7 @@ Simple, customizable draggable timetable.
 | Keywords           | timetable, schedule |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 712 |
+| # downloads        | 703 |
 | # stars            | 1 |
 
 ## Links

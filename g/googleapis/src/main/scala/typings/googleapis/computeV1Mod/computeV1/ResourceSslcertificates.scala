@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Sslcertificates")
 @js.native
 class ResourceSslcertificates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.sslCertificates.delete
     * @desc Deletes the specified SslCertificate resource.
@@ -100,6 +102,7 @@ class ResourceSslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.sslCertificates.get
     * @desc Returns the specified SslCertificate resource. Gets a list of
@@ -187,6 +190,7 @@ class ResourceSslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertificate]
   ): Unit = js.native
+  
   /**
     * compute.sslCertificates.insert
     * @desc Creates a SslCertificate resource in the specified project using
@@ -275,6 +279,7 @@ class ResourceSslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.sslCertificates.list
     * @desc Retrieves the list of SslCertificate resources available to the
@@ -378,4 +383,3 @@ class ResourceSslcertificates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSslCertificateList]
   ): Unit = js.native
 }
-

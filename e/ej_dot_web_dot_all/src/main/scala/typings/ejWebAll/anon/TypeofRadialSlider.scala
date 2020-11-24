@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.RadialSlider.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofRadialSlider
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), RadialSlider]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, RadialSlider] {
+  
   var Locale: js.Any = js.native
+  
   var fn: RadialSlider = js.native
 }
-

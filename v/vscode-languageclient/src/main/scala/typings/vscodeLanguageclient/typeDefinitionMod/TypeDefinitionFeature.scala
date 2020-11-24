@@ -7,7 +7,7 @@ import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefini
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/typeDefinition", "TypeDefinitionFeature")
 @js.native
@@ -18,4 +18,3 @@ class TypeDefinitionFeature protected () extends TextDocumentFeature[
     ] {
   def this(client: BaseLanguageClient) = this()
 }
-

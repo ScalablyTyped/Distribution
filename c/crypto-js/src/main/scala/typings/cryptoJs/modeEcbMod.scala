@@ -1,14 +1,11 @@
 package typings.cryptoJs
 
 import org.scalablytyped.runtime.TopLevel
+import typings.cryptoJs.mod.BlockCipherMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto-js/mode-ecb", JSImport.Namespace)
 @js.native
-object modeEcbMod
-  extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
-    ]
-
+object modeEcbMod extends TopLevel[BlockCipherMode]

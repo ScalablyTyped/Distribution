@@ -2,17 +2,15 @@ package typings.officeJsPreview.global.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
   * Represents a worksheet-level custom property.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.WorksheetCustomProperty")
 @js.native
 class WorksheetCustomProperty ()
   extends typings.officeJsPreview.Excel.WorksheetCustomProperty
-

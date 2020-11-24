@@ -4,7 +4,7 @@ import typings.rx.Rx.Comparer
 import typings.rx.Rx.VirtualTimeScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.aggregates", "HistoricalScheduler")
 @js.native
@@ -17,4 +17,3 @@ class HistoricalSchedulerCls protected () extends VirtualTimeScheduler[Double, D
     */
   def this(initialClock: Double, comparer: Comparer[Double, Double]) = this()
 }
-

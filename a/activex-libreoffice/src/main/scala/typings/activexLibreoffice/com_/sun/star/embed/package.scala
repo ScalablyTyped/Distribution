@@ -2,13 +2,16 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object embed {
+  
   /** @since LibreOffice 4.1 */
   type EmbeddedObjectCreator = typings.activexLibreoffice.com_.sun.star.embed.XEmbeddedObjectCreator
+  
   /** This is a service that allows to get access to a file system folder using storage hierarchy. */
   type FileSystemStorage = typings.activexLibreoffice.com_.sun.star.embed.BaseStorage
+  
   /**
     * The {@link FileSystemStorageFactory} is a service that allows to create a {@link FileSystemStorage} based on URL. The URL must point to a folder.
     *
@@ -33,22 +36,27 @@ package object embed {
     * The opened storages can support read access in addition to specified one.
     */
   type FileSystemStorageFactory = typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
+  
   /** @since LibreOffice 4.1 */
   type HatchWindowFactory = typings.activexLibreoffice.com_.sun.star.embed.XHatchWindowFactory
+  
   /**
     * This exception can be thrown in case a storage is invalid.
     *
     * For example in case it is broken one.
     */
   type InvalidStorageException = typings.activexLibreoffice.com_.sun.star.io.IOException
+  
   /**
     * This exception can be thrown in case a linked object is misused.
     *
     * Or if embedded object is misused as a linked object.
     */
   type LinkageMisuseException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /** @since LibreOffice 4.1 */
   type MSOLEObjectSystemCreator = typings.activexLibreoffice.com_.sun.star.embed.XEmbedObjectClipboardCreator
+  
   /**
     * This exception can be thrown in case a list of accepted verbs of states is requested and the object is in loaded state and this information can be
     * retrieved only when the object is in running state.
@@ -57,17 +65,22 @@ package object embed {
     * only after object is switched to running state.
     */
   type NeedsRunningStateException = typings.activexLibreoffice.com_.sun.star.embed.WrongStateException
+  
   /** This exception can be thrown in case the object can not provide own visual area currently. */
   type NoVisualAreaSizeException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /** @since LibreOffice 4.1 */
   type OLEEmbeddedObjectFactory = typings.activexLibreoffice.com_.sun.star.embed.XEmbeddedObjectCreator
+  
   /** @since LibreOffice 4.1 */
   type OOoEmbeddedObjectFactory = typings.activexLibreoffice.com_.sun.star.embed.XEmbeddedObjectCreator
+  
   /**
     * This exception can be thrown in case container wants to avoid objects saving.
     * @see XEmbeddedClient
     */
   type ObjectSaveVetoException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * The {@link StorageFactory} is a service that allows to create a storage based on either stream or URL.
     *
@@ -97,10 +110,13 @@ package object embed {
     * The opened root storage can support read access in addition to specified one.
     */
   type StorageFactory = typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
+  
   /** This exception can wrap an exception thrown during {@link XStorage} methods execution. */
   type StorageWrappedTargetException = typings.activexLibreoffice.com_.sun.star.lang.WrappedTargetException
+  
   /** This exception can be thrown in case the object's state does not allow to call requested functionality. */
   type WrongStateException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * Represents a marker for embedded OLE objects.
     * @since LibreOffice 5.2

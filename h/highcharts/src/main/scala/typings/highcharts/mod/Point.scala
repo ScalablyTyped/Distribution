@@ -1,27 +1,42 @@
 package typings.highcharts.mod
 
+import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Point")
 @js.native
 class Point () extends js.Object {
+  
+  /**
+    * Cancel sonification of a point. Calls onEnd functions.
+    *
+    * @param fadeOut
+    *        Whether or not to fade out as we stop. If false, the points
+    *        are cancelled synchronously.
+    */
+  def cancelSonify(): Unit = js.native
+  def cancelSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
     */
   var category: String = js.native
+  
   /**
     * The point's current color.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  
   /**
     * The point's current color index, used in styled mode instead of `color`.
     * The color index is inserted in class names used for styling.
     */
   var colorIndex: Double = js.native
+  
   /**
     * (Highstock) Highstock only. If a point object is created by data
     * grouping, it doesn't reflect actual points in the raw data. In this case,
@@ -34,97 +49,7 @@ class Point () extends js.Object {
     * - `dataGroup.length` is the amount of points in the group.
     */
   var dataGroup: js.UndefOr[DataGroupingInfoObject] = js.native
-  /**
-    * Range series only. The high or maximum value for each data point.
-    */
-  var high: js.UndefOr[Double] = js.native
-  /**
-    * Contains the point's index in the `Series.points` array.
-    */
-  val index: Double = js.native
-  /**
-    * Range series only. The low or minimum value for each data point.
-    */
-  var low: js.UndefOr[Double] = js.native
-  /**
-    * Indicates if this is a mock point for an annotation.
-    */
-  var mock: js.UndefOr[Boolean] = js.native
-  /**
-    * The name of the point. The name can be given as the first position of the
-    * point configuration array, or as a `name` property in the configuration:
-    */
-  var name: String = js.native
-  /**
-    * The point's options as applied in the initial configuration, or extended
-    * through `Point.update`.
-    *
-    * In TypeScript you have to extend `PointOptionsObject` via an additional
-    * interface to allow custom data options: (see online documentation for
-    * example)
-    */
-  var options: PointOptionsObject = js.native
-  /**
-    * The percentage for points in a stacked series or pies.
-    */
-  var percentage: js.UndefOr[Double] = js.native
-  /**
-    * Heatmap series only. Padding between the points in the heatmap.
-    */
-  var pointPadding: js.UndefOr[Double] = js.native
-  /**
-    * In Highmaps, when data is loaded from GeoJSON, the GeoJSON item's
-    * properies are copied over here.
-    */
-  var properties: js.Any = js.native
-  /**
-    * Whether the point is selected or not.
-    */
-  var selected: Boolean = js.native
-  /**
-    * The series object associated with the point.
-    */
-  var series: Series = js.native
-  /**
-    * Pie series only. Whether to display a slice offset from the center.
-    */
-  var sliced: js.UndefOr[Boolean] = js.native
-  /**
-    * The total of values in either a stack for stacked series, or a pie in a
-    * pie series.
-    */
-  var total: js.UndefOr[Double] = js.native
-  /**
-    * Heatmap series only. The value of the point, resulting in a color
-    * controled by options as set in the colorAxis configuration.
-    */
-  var value: js.UndefOr[Double | Null] = js.native
-  /**
-    * For certain series types, like pie charts, where individual points can be
-    * shown or hidden.
-    */
-  var visible: Boolean = js.native
-  /**
-    * The x value of the point.
-    */
-  var x: Double = js.native
-  /**
-    * The ending X value of the range point.
-    */
-  var x2: js.UndefOr[Double] = js.native
-  /**
-    * The y value of the point.
-    */
-  var y: js.UndefOr[Double] = js.native
-  /**
-    * Cancel sonification of a point. Calls onEnd functions.
-    *
-    * @param fadeOut
-    *        Whether or not to fade out as we stop. If false, the points
-    *        are cancelled synchronously.
-    */
-  def cancelSonify(): Unit = js.native
-  def cancelSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * Get the CSS class names for individual points. Used internally where the
     * returned value is set on every point.
@@ -132,6 +57,7 @@ class Point () extends js.Object {
     * @return The class names.
     */
   def getClassName(): String = js.native
+  
   /**
     * Return the configuration hash needed for the data label and tooltip
     * formatters.
@@ -139,12 +65,14 @@ class Point () extends js.Object {
     * @return Abstract object used in formatters and formats.
     */
   def getLabelConfig(): PointLabelObject = js.native
+  
   /**
     * In a series with `zones`, return the zone that the point belongs to.
     *
     * @return The zone item.
     */
   def getZone(): SeriesZonesOptionsObject = js.native
+  
   /**
     * Get the path definition for the halo, which is usually a shadow-like
     * circle around the currently hovered point.
@@ -155,6 +83,17 @@ class Point () extends js.Object {
     * @return The path definition.
     */
   def haloPath(size: Double): SVGPathArray = js.native
+  
+  /**
+    * Range series only. The high or maximum value for each data point.
+    */
+  var high: js.UndefOr[Double] = js.native
+  
+  /**
+    * Contains the point's index in the `Series.points` array.
+    */
+  val index: Double = js.native
+  
   /**
     * Initialize the point. Called internally based on the `series.data`
     * option.
@@ -174,6 +113,23 @@ class Point () extends js.Object {
     */
   def init(series: Series, options: PointOptionsType): Point = js.native
   def init(series: Series, options: PointOptionsType, x: Double): Point = js.native
+  
+  /**
+    * Range series only. The low or minimum value for each data point.
+    */
+  var low: js.UndefOr[Double] = js.native
+  
+  /**
+    * Indicates if this is a mock point for an annotation.
+    */
+  var mock: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * The name of the point. The name can be given as the first position of the
+    * point configuration array, or as a `name` property in the configuration:
+    */
+  var name: String = js.native
+  
   /**
     * Runs on mouse out from the point. Called internally from mouse and touch
     * events.
@@ -181,6 +137,7 @@ class Point () extends js.Object {
     * @fires Highcharts.Point#mouseOut
     */
   def onMouseOut(): Unit = js.native
+  
   /**
     * Runs on mouse over the point. Called internally from mouse and touch
     * events.
@@ -190,6 +147,17 @@ class Point () extends js.Object {
     */
   def onMouseOver(): Unit = js.native
   def onMouseOver(e: PointerEventObject): Unit = js.native
+  
+  /**
+    * The point's options as applied in the initial configuration, or extended
+    * through `Point.update`.
+    *
+    * In TypeScript you have to extend `PointOptionsObject` via an additional
+    * interface to allow custom data options: (see online documentation for
+    * example)
+    */
+  var options: PointOptionsObject = js.native
+  
   /**
     * Transform number or array configs into objects. Also called for object
     * configs. Used internally to unify the different configuration formats for
@@ -203,6 +171,23 @@ class Point () extends js.Object {
     * @return Transformed options.
     */
   def optionsToObject(options: PointOptionsType): Dictionary[_] = js.native
+  
+  /**
+    * The percentage for points in a stacked series or pies.
+    */
+  var percentage: js.UndefOr[Double] = js.native
+  
+  /**
+    * Heatmap series only. Padding between the points in the heatmap.
+    */
+  var pointPadding: js.UndefOr[Double] = js.native
+  
+  /**
+    * In Highmaps, when data is loaded from GeoJSON, the GeoJSON item's
+    * properies are copied over here.
+    */
+  var properties: js.Any = js.native
+  
   /**
     * Remove a point and optionally redraw the series and if necessary the axes
     *
@@ -218,10 +203,11 @@ class Point () extends js.Object {
     */
   def remove(): Unit = js.native
   def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
-  def remove(redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def remove(redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  
   /**
     * Toggle the selection status of a point.
     *
@@ -243,6 +229,17 @@ class Point () extends js.Object {
   def select(selected: js.UndefOr[scala.Nothing], accumulate: Boolean): Unit = js.native
   def select(selected: Boolean): Unit = js.native
   def select(selected: Boolean, accumulate: Boolean): Unit = js.native
+  
+  /**
+    * Whether the point is selected or not.
+    */
+  var selected: Boolean = js.native
+  
+  /**
+    * The series object associated with the point.
+    */
+  var series: Series = js.native
+  
   /**
     * Set a value in an object, on the property defined by key. The key
     * supports nested properties using dot notation. The function modifies the
@@ -260,6 +257,7 @@ class Point () extends js.Object {
     * @return The modified object.
     */
   def setNestedProperty[T](`object`: T, value: js.Any, key: String): T = js.native
+  
   /**
     * Set the point's state.
     *
@@ -279,6 +277,12 @@ class Point () extends js.Object {
   def setState(state: _empty, move: Boolean): Unit = js.native
   def setState(state: PointStateValue): Unit = js.native
   def setState(state: PointStateValue, move: Boolean): Unit = js.native
+  
+  /**
+    * Pie series only. Whether to display a slice offset from the center.
+    */
+  var sliced: js.UndefOr[Boolean] = js.native
+  
   /**
     * Sonify a single point.
     *
@@ -286,6 +290,7 @@ class Point () extends js.Object {
     *        Options for the sonification of the point.
     */
   def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointSonifyOptionsObject): Unit = js.native
+  
   /**
     * Extendable method for formatting each point's tooltip line.
     *
@@ -295,6 +300,13 @@ class Point () extends js.Object {
     * @return A string to be concatenated in to the common tooltip text.
     */
   def tooltipFormatter(pointFormat: String): String = js.native
+  
+  /**
+    * The total of values in either a stack for stacked series, or a pie in a
+    * pie series.
+    */
+  var total: js.UndefOr[Double] = js.native
+  
   /**
     * Update point with new options (typically x/y data) and optionally redraw
     * the series.
@@ -320,13 +332,40 @@ class Point () extends js.Object {
     */
   def update(options: PointOptionsType): Unit = js.native
   def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
+  def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: Boolean): Unit = js.native
-  def update(options: PointOptionsType, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  def update(options: PointOptionsType, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  
+  /**
+    * Heatmap series only. The value of the point, resulting in a color
+    * controled by options as set in the colorAxis configuration.
+    */
+  var value: js.UndefOr[Double | Null] = js.native
+  
+  /**
+    * For certain series types, like pie charts, where individual points can be
+    * shown or hidden.
+    */
+  var visible: Boolean = js.native
+  
+  /**
+    * The x value of the point.
+    */
+  var x: Double = js.native
+  
+  /**
+    * The ending X value of the range point.
+    */
+  var x2: js.UndefOr[Double] = js.native
+  
+  /**
+    * The y value of the point.
+    */
+  var y: js.UndefOr[Double] = js.native
+  
   /**
     * Highmaps only. Zoom in on the point using the global animation.
     */
   def zoomTo(): Unit = js.native
 }
-

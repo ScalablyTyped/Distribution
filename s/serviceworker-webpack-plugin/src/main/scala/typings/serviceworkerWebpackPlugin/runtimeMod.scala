@@ -5,13 +5,17 @@ import typings.std.RegistrationOptions
 import typings.std.ServiceWorkerRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("serviceworker-webpack-plugin/lib/runtime", JSImport.Namespace)
 @js.native
 object runtimeMod extends js.Object {
+  
+  val default: ServiceWorkerWebpackPluginRuntime = js.native
+  
   @js.native
   trait ServiceWorkerWebpackPluginRuntime extends js.Object {
+    
     /**
       * Register the service worker registered using serviceworker-webpack-plugin.
       *
@@ -21,7 +25,4 @@ object runtimeMod extends js.Object {
     def register(): `false` | js.Promise[ServiceWorkerRegistration] = js.native
     def register(options: RegistrationOptions): `false` | js.Promise[ServiceWorkerRegistration] = js.native
   }
-  
-  val default: ServiceWorkerWebpackPluginRuntime = js.native
 }
-

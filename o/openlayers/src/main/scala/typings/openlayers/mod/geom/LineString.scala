@@ -4,7 +4,7 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.Extent_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -27,12 +27,14 @@ class LineString protected () extends SimpleGeometry {
     */
   def this(coordinates: js.Array[Coordinate_]) = this()
   def this(coordinates: js.Array[Coordinate_], opt_layout: GeometryLayout) = this()
+  
   /**
     * Append the passed coordinate to the coordinates of the linestring.
     * @param coordinate Coordinate.
     * @api stable
     */
   def appendCoordinate(coordinate: Coordinate_): Unit = js.native
+  
   /**
     * Iterate over each segment, calling the provided callback.
     * If the callback returns a truthy value the function returns that
@@ -51,6 +53,7 @@ class LineString protected () extends SimpleGeometry {
     callback: js.ThisFunction2[/* this */ S, /* start */ Coordinate_, /* end */ Coordinate_, T],
     opt_this: S
   ): T | Boolean = js.native
+  
   /**
     * Return the coordinate at the provided fraction along the linestring.
     * The `fraction` is a number between 0 and 1, where 0 is the start of the
@@ -63,6 +66,7 @@ class LineString protected () extends SimpleGeometry {
     */
   def getCoordinateAt(fraction: Double): Coordinate_ = js.native
   def getCoordinateAt(fraction: Double, opt_dest: Coordinate_): Coordinate_ = js.native
+  
   /**
     * Returns the coordinate at `m` using linear interpolation, or `null` if no
     * such coordinate exists.
@@ -79,23 +83,27 @@ class LineString protected () extends SimpleGeometry {
     */
   def getCoordinateAtM(m: Double): Coordinate_ = js.native
   def getCoordinateAtM(m: Double, opt_extrapolate: Boolean): Coordinate_ = js.native
+  
   /**
     * Return the coordinates of the linestring.
     * @return Coordinates.
     * @api stable
     */
   def getCoordinates(): js.Array[Coordinate_] = js.native
+  
   /**
     * Return the length of the linestring on projected plane.
     * @return Length (on projected plane).
     * @api stable
     */
   def getLength(): Double = js.native
+  
   /**
     * @inheritDoc
     * @api stable
     */
   def intersectsExtent(extent: Extent_): Boolean = js.native
+  
   /**
     * Set the coordinates of the linestring.
     * @param coordinates Coordinates.
@@ -105,4 +113,3 @@ class LineString protected () extends SimpleGeometry {
   def setCoordinates(coordinates: js.Array[Coordinate_]): Unit = js.native
   def setCoordinates(coordinates: js.Array[Coordinate_], opt_layout: GeometryLayout): Unit = js.native
 }
-

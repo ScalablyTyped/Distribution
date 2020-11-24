@@ -1,7 +1,7 @@
 
 # Scala.js typings for snappy
 
-Typings are for version 6.3.4
+Typings are for version 6.3.5
 
 ## Library description:
 Nodejs bindings to Google's Snappy compression library
@@ -10,9 +10,9 @@ Nodejs bindings to Google's Snappy compression library
 | ------------------ | :-------------: |
 | Full name          | snappy |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 58 |
-| # downloads        | 4241338 |
+| # releases         | 8 |
+| # dependents       | 68 |
+| # downloads        | 4961322 |
 | # stars            | 6 |
 
 ## Links

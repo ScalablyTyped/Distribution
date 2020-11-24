@@ -3,10 +3,11 @@ package typings.hapiHapi.mod
 import typings.hapiCatbox.mod.Policy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerCache extends js.Object {
+  
   /**
     * Provisions a cache segment within the server cache facility where:
     * @param options - [catbox policy](https://github.com/hapijs/catbox#policy) configuration where:
@@ -33,6 +34,7 @@ trait ServerCache extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servercacheoptions)
     */
   def apply[T, O /* <: CachePolicyOptions[T] */](options: O): Policy[T, O] = js.native
+  
   /**
     * Provisions a server cache as described in server.cache where:
     * @param options - same as the server cache configuration options.
@@ -42,4 +44,3 @@ trait ServerCache extends js.Object {
     */
   def provision(options: ServerOptionsCache): js.Promise[Unit] = js.native
 }
-

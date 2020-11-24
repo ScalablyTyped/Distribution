@@ -2,11 +2,10 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the `StopScanRun` method.
   */
 @js.native
 trait SchemaStopScanRunRequest extends js.Object
-

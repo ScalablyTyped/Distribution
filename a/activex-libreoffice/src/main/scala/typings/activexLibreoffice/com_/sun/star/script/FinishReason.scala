@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * contains the response for a scripting engine termination.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait FinishReason extends js.Object
-
 object FinishReason {
+  
   /**
     * script in the engine was cancelled.
     *
@@ -26,11 +26,12 @@ object FinishReason {
     */
   @scala.inline
   def Cancel: `1` = 1.asInstanceOf[`1`]
+  
   /** error occurred during script execution or compiling. */
   @scala.inline
   def Error: `2` = 2.asInstanceOf[`2`]
+  
   /** script in the engine terminated normally. */
   @scala.inline
   def OK: `0` = 0.asInstanceOf[`0`]
 }
-

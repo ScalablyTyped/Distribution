@@ -10,8 +10,8 @@ Send and receive Slack Webhooks easily!
 | Full name          | node-slack |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 781956 |
+| # dependents       | 55 |
+| # downloads        | 931795 |
 | # stars            | 15 |
 
 ## Links

@@ -6,7 +6,7 @@ import typings.chrome.chrome.scriptBadge.ScriptBadgeClickedEvent
 import typings.chrome.chrome.scriptBadge.SetPopupDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Script Badge
@@ -14,9 +14,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.scriptBadge")
 @js.native
 object scriptBadge extends js.Object {
-  var onClicked: ScriptBadgeClickedEvent = js.native
+  
   def getAttention(details: AttentionDetails): Unit = js.native
+  
   def getPopup(details: GetPopupDetails, callback: js.Function): Unit = js.native
+  
+  var onClicked: ScriptBadgeClickedEvent = js.native
+  
   def setPopup(details: SetPopupDetails): Unit = js.native
 }
-

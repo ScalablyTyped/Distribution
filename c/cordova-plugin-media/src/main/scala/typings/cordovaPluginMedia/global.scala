@@ -6,11 +6,12 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.std.MediaError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class Media protected ()
     extends typings.cordovaPluginMedia.Media {
@@ -29,7 +30,6 @@ object global extends js.Object {
       mediaStatus: js.Function1[/* status */ Double, Unit]
     ) = this()
   }
-  
   @js.native
   object Media
     extends Instantiable2[
@@ -50,13 +50,16 @@ object global extends js.Object {
           /* mediaStatus */ js.Function1[/* status */ Double, Unit], 
           typings.cordovaPluginMedia.Media
         ] {
+    
     //Media statuses
     var MEDIA_NONE: Double = js.native
+    
     var MEDIA_PAUSED: Double = js.native
+    
     var MEDIA_RUNNING: Double = js.native
+    
     var MEDIA_STARTING: Double = js.native
+    
     var MEDIA_STOPPED: Double = js.native
   }
-  
 }
-

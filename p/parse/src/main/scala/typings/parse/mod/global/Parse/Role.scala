@@ -3,7 +3,7 @@ package typings.parse.mod.global.Parse
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Role on the Parse server. Roles represent groupings of
@@ -19,14 +19,16 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Role[T /* <: Attributes */] extends Object[T] {
+  
   def getName(): String = js.native
+  
   def getRoles(): Relation[Role[Attributes], Role[Attributes]] = js.native
+  
   def getUsers[U /* <: User[Attributes] */](): Relation[Role[Attributes], U] = js.native
+  
   def setName(name: String): js.Any = js.native
   def setName(name: String, options: SuccessFailureOptions): js.Any = js.native
 }
-
 @JSGlobal("Parse.Role")
 @js.native
 object Role extends TopLevel[RoleConstructor]
-

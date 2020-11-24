@@ -2,24 +2,24 @@ package typings.babylonjs.buildersIndexMod
 
 import typings.babylonjs.anon.ColorFilter
 import typings.babylonjs.anon.SubdivisionsX
-import typings.babylonjs.anon.Xmax
+import typings.babylonjs.anon.Updatable
 import typings.babylonjs.groundMeshMod.GroundMesh
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/index", "GroundBuilder")
 @js.native
 class GroundBuilder ()
   extends typings.babylonjs.groundBuilderMod.GroundBuilder
-
 /* static members */
 @JSImport("babylonjs/Meshes/Builders/index", "GroundBuilder")
 @js.native
 object GroundBuilder extends js.Object {
+  
   /**
     * Creates a ground mesh
     * * The parameters `width` and `height` (floats, default 1) set the width and height sizes of the ground
@@ -32,6 +32,7 @@ object GroundBuilder extends js.Object {
     * @see https://doc.babylonjs.com/how_to/set_shapes#ground
     */
   def CreateGround(name: String, options: SubdivisionsX, scene: js.Any): Mesh = js.native
+  
   /**
     * Creates a ground mesh from a height map
     * * The parameter `url` sets the URL of the height map image resource.
@@ -53,6 +54,7 @@ object GroundBuilder extends js.Object {
     */
   def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): GroundMesh = js.native
   def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[Scene]): GroundMesh = js.native
+  
   /**
     * Creates a tiled ground mesh
     * * The parameters `xmin` and `xmax` (floats, default -1 and 1) set the ground minimum and maximum X coordinates
@@ -66,7 +68,6 @@ object GroundBuilder extends js.Object {
     * @returns the tiled ground mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#tiled-ground
     */
-  def CreateTiledGround(name: String, options: Xmax): Mesh = js.native
-  def CreateTiledGround(name: String, options: Xmax, scene: Nullable[Scene]): Mesh = js.native
+  def CreateTiledGround(name: String, options: Updatable): Mesh = js.native
+  def CreateTiledGround(name: String, options: Updatable, scene: Nullable[Scene]): Mesh = js.native
 }
-

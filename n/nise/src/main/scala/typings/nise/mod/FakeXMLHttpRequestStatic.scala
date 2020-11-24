@@ -3,15 +3,11 @@ package typings.nise.mod
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FakeXMLHttpRequestStatic extends Instantiable0[FakeXMLHttpRequest] {
-  /**
-    * Default false.
-    * When set to true, Sinon will check added filters if certain requests should be “unfaked”
-    */
-  var useFilters: Boolean = js.native
+  
   /**
     * Add a filter that will decide whether or not to fake a request.
     * The filter will be called when xhr.open is called, with the exact same arguments (method, url, async, username, password).
@@ -28,6 +24,7 @@ trait FakeXMLHttpRequestStatic extends Instantiable0[FakeXMLHttpRequest] {
       Boolean
     ]
   ): Unit = js.native
+  
   /**
     * By assigning a function to the onCreate property of the returned object from useFakeXMLHttpRequest()
     * you can subscribe to newly created FakeXMLHttpRequest objects. See below for the fake xhr object API.
@@ -35,9 +32,15 @@ trait FakeXMLHttpRequestStatic extends Instantiable0[FakeXMLHttpRequest] {
     * @param xhr
     */
   def onCreate(xhr: FakeXMLHttpRequest): Unit = js.native
+  
   /**
     * Restore original function(s).
     */
   def restore(): Unit = js.native
+  
+  /**
+    * Default false.
+    * When set to true, Sinon will check added filters if certain requests should be “unfaked”
+    */
+  var useFilters: Boolean = js.native
 }
-

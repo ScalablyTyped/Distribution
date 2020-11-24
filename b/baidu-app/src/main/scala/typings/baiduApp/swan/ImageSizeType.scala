@@ -2,7 +2,7 @@ package typings.baiduApp.swan
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #endregion
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
   - typings.baiduApp.baiduAppStrings.compressed
 */
 trait ImageSizeType extends js.Object
-
 object ImageSizeType {
+  
   @scala.inline
   def compressed: typings.baiduApp.baiduAppStrings.compressed = "compressed".asInstanceOf[typings.baiduApp.baiduAppStrings.compressed]
+  
   @scala.inline
   def original: typings.baiduApp.baiduAppStrings.original = "original".asInstanceOf[typings.baiduApp.baiduAppStrings.original]
 }
-

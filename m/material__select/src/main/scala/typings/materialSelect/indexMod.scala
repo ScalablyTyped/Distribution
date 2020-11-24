@@ -7,41 +7,46 @@ import typings.materialSelect.helperTextAdapterMod.MDCSelectHelperTextAdapter
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select/helper-text/index", JSImport.Namespace)
 @js.native
 object indexMod extends js.Object {
+  
   @js.native
   class MDCSelectHelperText ()
     extends typings.materialSelect.helperTextComponentMod.MDCSelectHelperText
+  /* static members */
+  @js.native
+  object MDCSelectHelperText extends js.Object {
+    
+    def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
+  }
   
   @js.native
   class MDCSelectHelperTextFoundation ()
     extends typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundation {
     def this(adapter: PartialMDCSelectHelperTex) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCSelectHelperText extends js.Object {
-    def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCSelectHelperTextFoundation extends js.Object {
+    
     def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
+    
     /**
       * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
       */
     def defaultAdapter: MDCSelectHelperTextAdapter = js.native
+    
     def strings: ARIAHIDDEN = js.native
   }
   
   @js.native
   object helperTextCssClasses extends js.Object {
+    
     var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    
     var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
   }
   
@@ -69,9 +74,9 @@ object indexMod extends js.Object {
     */
   @js.native
   object helperTextStrings extends js.Object {
+    
     var ARIA_HIDDEN: String = js.native
+    
     var ROLE: String = js.native
   }
-  
 }
-

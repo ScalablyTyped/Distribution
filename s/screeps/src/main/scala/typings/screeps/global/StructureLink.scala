@@ -5,7 +5,7 @@ import typings.screeps.Id
 import typings.screeps.StructureLinkConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("StructureLink")
 @js.native
@@ -13,8 +13,6 @@ class StructureLink protected ()
   extends typings.screeps.StructureLink {
   def this(id: Id[typings.screeps.StructureLink]) = this()
 }
-
 @JSGlobal("StructureLink")
 @js.native
 object StructureLink extends TopLevel[StructureLinkConstructor]
-

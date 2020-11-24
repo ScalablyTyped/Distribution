@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a rule to format numberings.
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait NumberingRule
   extends NumberingAlignment
      with NumberingLevel
-
 object NumberingRule {
+  
   @scala.inline
   def apply(
     Alignment: HorizontalAlignment,
@@ -35,4 +35,3 @@ object NumberingRule {
     __obj.asInstanceOf[NumberingRule]
   }
 }
-

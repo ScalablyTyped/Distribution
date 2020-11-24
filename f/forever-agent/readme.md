@@ -11,8 +11,8 @@ HTTP Agent that keeps socket connections alive between keep-alive requests. Form
 | Full name          | forever-agent |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 96 |
-| # downloads        | 523568040 |
+| # dependents       | 133 |
+| # downloads        | 688889573 |
 | # stars            | 4 |
 
 ## Links

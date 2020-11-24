@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a physics vortex event
@@ -23,4 +23,3 @@ class PhysicsVortexEvent protected ()
     _options: typings.babylonjs.BABYLON.PhysicsVortexEventOptions
   ) = this()
 }
-

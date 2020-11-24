@@ -1,19 +1,21 @@
 package typings.tensorflowTfjsCore
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor3D
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/ops/avg_pool_backprop", JSImport.Namespace)
 @js.native
 object avgPoolBackpropMod extends js.Object {
+  
   @js.native
   object avgPoolBackprop extends js.Object {
+    
     def apply[T /* <: Tensor3D | Tensor4D */](
       dy: T,
       input: T,
@@ -171,6 +173,4 @@ object avgPoolBackpropMod extends js.Object {
     def apply[T /* <: Tensor3D | Tensor4D */](dy: TensorLike, input: TensorLike, filterSize: Double, strides: Double, pad: same_): T = js.native
     def apply[T /* <: Tensor3D | Tensor4D */](dy: TensorLike, input: TensorLike, filterSize: Double, strides: Double, pad: valid_): T = js.native
   }
-  
 }
-

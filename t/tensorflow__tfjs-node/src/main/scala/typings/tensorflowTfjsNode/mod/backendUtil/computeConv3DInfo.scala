@@ -10,11 +10,12 @@ import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.same
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "backend_util.computeConv3DInfo")
 @js.native
 object computeConv3DInfo extends js.Object {
+  
   def apply(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
@@ -26,4 +27,3 @@ object computeConv3DInfo extends js.Object {
     roundingMode: js.UndefOr[floor | round | ceil]
   ): Conv3DInfo = js.native
 }
-

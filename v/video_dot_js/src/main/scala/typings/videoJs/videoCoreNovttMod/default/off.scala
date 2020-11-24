@@ -4,11 +4,12 @@ import typings.std.Element
 import typings.videoJs.mod.videojs.EventTarget.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "off")
 @js.native
 object off extends js.Object {
+  
   /**
     * Removes event listeners from an element
     *
@@ -24,4 +25,3 @@ object off extends js.Object {
     */
   def apply(elem: Element, `type`: String, fn: EventListener): Unit = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.MultiAtlasFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Multi Texture Atlas File suitable for loading by the Loader.
@@ -38,4 +38,3 @@ class MultiAtlasFile protected ()
     textureXhrSettings: js.UndefOr[XHRSettingsObject]
   ) = this()
 }
-

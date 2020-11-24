@@ -4,18 +4,18 @@ import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a device. This class allows access to well-known device properties as well as additional properties specified during device enumeration. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
 @js.native
 abstract class DeviceInformation ()
   extends typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
-
 /* static members */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
 @js.native
 object DeviceInformation extends js.Object {
+  
   /**
     * Creates a DeviceInformation object from a DeviceInformation ID.
     * @param deviceId The device ID.
@@ -41,6 +41,7 @@ object DeviceInformation extends js.Object {
     additionalProperties: IIterable[String],
     kind: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationKind
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation] = js.native
+  
   /**
     * Creates a DeviceWatcher for all devices.
     * @return The created DeviceWatcher .
@@ -77,6 +78,7 @@ object DeviceInformation extends js.Object {
     * @return The created DeviceWatcher .
     */
   def createWatcher(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = js.native
+  
   /**
     * Enumerates all DeviceInformation objects.
     * @return The object for managing the asynchronous operation.
@@ -113,6 +115,7 @@ object DeviceInformation extends js.Object {
     * @return The object for managing the asynchronous operation.
     */
   def findAllAsync(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = js.native
+  
   /**
     * Creates a filter to use to enumerate through a subset of device types.
     * @param deviceClass The type of devices that you want to create a filter for.
@@ -120,4 +123,3 @@ object DeviceInformation extends js.Object {
     */
   def getAqsFilterFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): String = js.native
 }
-

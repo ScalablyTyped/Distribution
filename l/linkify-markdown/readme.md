@@ -12,7 +12,7 @@ A cli tool which automatically add references to issues, pull requests, user men
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 694009 |
+| # downloads        | 754765 |
 | # stars            | 0 |
 
 ## Links

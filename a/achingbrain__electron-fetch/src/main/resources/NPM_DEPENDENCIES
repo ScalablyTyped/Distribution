@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@achingbrain/electron-fetch" : "1.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@achingbrain/electron-fetch" : "1.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

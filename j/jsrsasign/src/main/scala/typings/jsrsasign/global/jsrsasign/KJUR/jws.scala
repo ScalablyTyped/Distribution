@@ -1,5 +1,6 @@
 package typings.jsrsasign.global.jsrsasign.KJUR
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.jsrsasign.anon.AlgString
 import typings.jsrsasign.anon.Aud
 import typings.jsrsasign.anon.B64
@@ -11,7 +12,7 @@ import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's JSON Web Signature/Token(JWS/JWT) library name space
@@ -25,6 +26,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.jws")
 @js.native
 object jws extends js.Object {
+  
   /**
     * IntDate class for time representation for JSON Web Token(JWT)
     * @description
@@ -33,6 +35,7 @@ object jws extends js.Object {
     */
   @js.native
   object IntDate extends js.Object {
+    
     /**
       * get UNIX origin time from by string
       * @param s string of time representation
@@ -51,6 +54,7 @@ object jws extends js.Object {
       *
       */
     def get(s: String): Double = js.native
+    
     /**
       * get UNIX origin time of current time
       * @return UNIX origin time for current time
@@ -60,6 +64,7 @@ object jws extends js.Object {
       * KJUR.jws.IntDate.getNow() => 1478...
       */
     def getNow(): Double = js.native
+    
     /**
       * get UNIX origin time from Zulu time representation string
       * @param s string of Zulu time representation (ex. 20151012125959Z)
@@ -78,6 +83,7 @@ object jws extends js.Object {
       * KJUR.jws.IntDate.getZulu("151012125959Z") => 1478...
       */
     def getZulu(s: String): Double = js.native
+    
     /**
       * get UTC time string from UNIX origin time value
       * @param intDate UNIX origin time value (ex. 1478...)
@@ -88,6 +94,7 @@ object jws extends js.Object {
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "2015 Oct ..."
       */
     def intDate2UTCString(intDate: Double): String = js.native
+    
     /**
       * get UTC time string from UNIX origin time value
       * @param intDate UNIX origin time value (ex. 1478...)
@@ -176,6 +183,7 @@ object jws extends js.Object {
     */
   @js.native
   object JWS extends js.Object {
+    
     /**
       * get Encoed Signature Value from JWS string.
       * @param sJWS JWS signature string to be verified
@@ -183,6 +191,7 @@ object jws extends js.Object {
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       */
     def getEncodedSignatureValueFromJWS(sJWS: String): String = js.native
+    
     /**
       * get RFC 7638 JWK thumbprint from JWK object
       * @param o JWK object to be calculated thumbprint
@@ -198,6 +207,7 @@ object jws extends js.Object {
       * thumbprint = KJUR.jws.JWS.getJWKthumbprint(jwk);
       */
     def getJWKthumbprint(o: JsonWebKey): String = js.native
+    
     /**
       * check whether item is included by array
       * @param item check whether item is included by array
@@ -211,6 +221,7 @@ object jws extends js.Object {
       * KJUR.jws.JWS.inArray('a', ['b', 'c']) => false
       */
     def inArray(item: String, a: js.Array[String]): Boolean = js.native
+    
     /**
       * check whether array is included by another array
       * @param a1 check whether set a1 is included by a2
@@ -224,6 +235,7 @@ object jws extends js.Object {
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c']) => false
       */
     def includedArray(a1: js.Array[String], a2: js.Array[String]): Boolean = js.native
+    
     /**
       * check whether a String "s" is a safe JSON string or not.
       * If a String "s" is a malformed JSON string or an other object type
@@ -235,6 +247,7 @@ object jws extends js.Object {
     def isSafeJSONString(s: String, h: js.UndefOr[scala.Nothing], p: String): `0` | `1` = js.native
     def isSafeJSONString(s: String, h: js.Object): `0` | `1` = js.native
     def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = js.native
+    
     /**
       * parse header and payload of JWS signature
       * @param sJWS string of JWS signature to parse
@@ -269,6 +282,7 @@ object jws extends js.Object {
       * }
       */
     def parse(sJWS: String): JWSResult = js.native
+    
     /**
       * parse JWS string and set public property 'parsedJWS' dictionary.
       * @param sJWS JWS signature string to be parsed.
@@ -277,6 +291,7 @@ object jws extends js.Object {
       */
     def parseJWS(sJWS: String): Unit = js.native
     def parseJWS(sJWS: String, sigValNotNeeded: Boolean): Unit = js.native
+    
     /**
       * read a String "s" as JSON object if it is safe.
       * If a String "s" is a malformed JSON string or not JSON string,
@@ -285,6 +300,7 @@ object jws extends js.Object {
       * @return JSON object or null
       */
     def readSafeJSONString(s: String): js.Object | Null = js.native
+    
     /**
       * generate JWS signature by specified key
       * @param alg JWS algorithm name to sign and force set to sHead or null
@@ -348,20 +364,29 @@ object jws extends js.Object {
       */
     def sign(alg: String, spHead: String, spPayload: String): String = js.native
     def sign(alg: String, spHead: String, spPayload: String, pass: String): String = js.native
+    def sign(alg: String, spHead: String, spPayload: String, pass: StringDictionary[String]): String = js.native
     def sign(alg: String, spHead: String, spPayload: js.Object): String = js.native
     def sign(alg: String, spHead: String, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: String, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
     def sign(alg: String, spHead: AlgString, spPayload: String): String = js.native
     def sign(alg: String, spHead: AlgString, spPayload: String, pass: String): String = js.native
+    def sign(alg: String, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = js.native
     def sign(alg: String, spHead: AlgString, spPayload: js.Object): String = js.native
     def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
     def sign(alg: Null, spHead: String, spPayload: String): String = js.native
     def sign(alg: Null, spHead: String, spPayload: String, pass: String): String = js.native
+    def sign(alg: Null, spHead: String, spPayload: String, pass: StringDictionary[String]): String = js.native
     def sign(alg: Null, spHead: String, spPayload: js.Object): String = js.native
     def sign(alg: Null, spHead: String, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
     def sign(alg: Null, spHead: AlgString, spPayload: String): String = js.native
     def sign(alg: Null, spHead: AlgString, spPayload: String, pass: String): String = js.native
+    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = js.native
     def sign(alg: Null, spHead: AlgString, spPayload: js.Object): String = js.native
     def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
+    
     /**
       * verify JWS signature by specified key or certificate
       * @param sJWS string of JWS signature to verify
@@ -427,6 +452,7 @@ object jws extends js.Object {
     def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = js.native
     def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = js.native
     def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = js.native
+    
     /**
       * @param sJWT string of JSON Web Token(JWT) to verify
       * @param key string of public key, certificate or key object to verify
@@ -509,24 +535,34 @@ object jws extends js.Object {
       */
     def verifyJWT(sJWT: String, key: String): Boolean = js.native
     def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = js.native
+    
     /** static associative array of general signature algorithm name from JWS algorithm name */
     @js.native
     object jwsalg2sigalg extends js.Object {
+      
       var ES256: String = js.native
+      
       var ES384: String = js.native
+      
       var HS256: String = js.native
+      
       var HS384: String = js.native
+      
       var HS512: String = js.native
+      
       var PS256: String = js.native
+      
       var PS384: String = js.native
+      
       var PS512: String = js.native
+      
       var RS256: String = js.native
+      
       var RS384: String = js.native
+      
       var RS512: String = js.native
+      
       var none: String = js.native
     }
-    
   }
-  
 }
-

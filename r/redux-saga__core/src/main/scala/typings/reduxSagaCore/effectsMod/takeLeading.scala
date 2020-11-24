@@ -4,11 +4,12 @@ import typings.redux.mod.Action
 import typings.reduxSagaCore.typesMod.TakeableChannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@redux-saga/core/types/effects", "takeLeading")
 @js.native
 object takeLeading extends js.Object {
+  
   def apply[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
   def apply[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     pattern: P,
@@ -40,4 +41,3 @@ object takeLeading extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = js.native
 }
-

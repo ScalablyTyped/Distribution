@@ -2,7 +2,7 @@ package typings.twilio.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "IpMessagingClient")
 @js.native
@@ -14,7 +14,8 @@ class IpMessagingClient () extends Client {
   def this(sid: js.UndefOr[scala.Nothing], tkn: String, options: ClientOptions) = this()
   def this(sid: String, tkn: js.UndefOr[scala.Nothing], options: ClientOptions) = this()
   def this(sid: String, tkn: String, options: ClientOptions) = this()
+  
   var credentials: CredentialResource = js.native
+  
   var services: ServiceResource = js.native
 }
-

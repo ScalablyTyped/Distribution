@@ -5,7 +5,7 @@ import typings.aceBuilds.mod.Ace.Point
 import typings.aceBuilds.mod.Ace.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComparePoints extends Instantiable4[
@@ -15,7 +15,8 @@ trait ComparePoints extends Instantiable4[
       /* endColumn */ Double, 
       Range
     ] {
+  
   def comparePoints(p1: Point, p2: Point): Double = js.native
+  
   def fromPoints(start: Point, end: Point): Range = js.native
 }
-

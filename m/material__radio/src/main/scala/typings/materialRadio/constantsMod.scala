@@ -2,14 +2,17 @@ package typings.materialRadio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/radio/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   @js.native
   object cssClasses extends js.Object {
+    
     var DISABLED: String = js.native
+    
     var ROOT: String = js.native
   }
   
@@ -37,8 +40,7 @@ object constantsMod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var NATIVE_CONTROL_SELECTOR: String = js.native
   }
-  
 }
-

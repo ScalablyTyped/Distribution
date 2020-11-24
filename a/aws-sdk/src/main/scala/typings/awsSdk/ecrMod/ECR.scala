@@ -4,18 +4,17 @@ import typings.awsSdk.anon.DescribeImageScanFindings
 import typings.awsSdk.anon.GetLifecyclePolicyPreview
 import typings.awsSdk.awsSdkStrings.imageScanComplete
 import typings.awsSdk.awsSdkStrings.lifecyclePolicyPreviewComplete
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ECR extends Service {
-  @JSName("config")
-  var config_ECR: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Checks the availability of one or more image layers in a repository. When an image is pushed to a repository, each image layer is checked to verify if it has been uploaded before. If it has been uploaded, then the image layer is skipped.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
@@ -29,6 +28,7 @@ trait ECR extends Service {
     params: BatchCheckLayerAvailabilityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchCheckLayerAvailabilityResponse, Unit]
   ): Request[BatchCheckLayerAvailabilityResponse, AWSError] = js.native
+  
   /**
     * Deletes a list of specified images within a repository. Images are specified with either an imageTag or imageDigest. You can remove a tag from an image by specifying the image's tag in your request. When you remove the last tag from an image, the image is deleted from your repository. You can completely delete an image (and all of its tags) by specifying the image's digest in your request.
     */
@@ -42,6 +42,7 @@ trait ECR extends Service {
     params: BatchDeleteImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteImageResponse, Unit]
   ): Request[BatchDeleteImageResponse, AWSError] = js.native
+  
   /**
     * Gets detailed information for an image. Images are specified with either an imageTag or imageDigest. When an image is pulled, the BatchGetImage API is called once to retrieve the image manifest.
     */
@@ -55,6 +56,7 @@ trait ECR extends Service {
     params: BatchGetImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetImageResponse, Unit]
   ): Request[BatchGetImageResponse, AWSError] = js.native
+  
   /**
     * Informs Amazon ECR that the image layer upload has completed for a specified registry, repository name, and upload ID. You can optionally provide a sha256 digest of the image layer for data validation purposes. When an image is pushed, the CompleteLayerUpload API is called once per each new image layer to verify that the upload has completed.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
@@ -68,6 +70,10 @@ trait ECR extends Service {
     params: CompleteLayerUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CompleteLayerUploadResponse, Unit]
   ): Request[CompleteLayerUploadResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_ECR: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a repository. For more information, see Amazon ECR Repositories in the Amazon Elastic Container Registry User Guide.
     */
@@ -81,6 +87,7 @@ trait ECR extends Service {
     params: CreateRepositoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryResponse, Unit]
   ): Request[CreateRepositoryResponse, AWSError] = js.native
+  
   /**
     * Deletes the lifecycle policy associated with the specified repository.
     */
@@ -94,6 +101,7 @@ trait ECR extends Service {
     params: DeleteLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLifecyclePolicyResponse, Unit]
   ): Request[DeleteLifecyclePolicyResponse, AWSError] = js.native
+  
   /**
     * Deletes a repository. If the repository contains images, you must either delete all images in the repository or use the force option to delete the repository.
     */
@@ -107,6 +115,7 @@ trait ECR extends Service {
     params: DeleteRepositoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryResponse, Unit]
   ): Request[DeleteRepositoryResponse, AWSError] = js.native
+  
   /**
     * Deletes the repository policy associated with the specified repository.
     */
@@ -120,6 +129,7 @@ trait ECR extends Service {
     params: DeleteRepositoryPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryPolicyResponse, Unit]
   ): Request[DeleteRepositoryPolicyResponse, AWSError] = js.native
+  
   /**
     * Returns the scan findings for the specified image.
     */
@@ -133,6 +143,7 @@ trait ECR extends Service {
     params: DescribeImageScanFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageScanFindingsResponse, Unit]
   ): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  
   /**
     * Returns metadata about the images in a repository.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it may return a larger image size than the image sizes returned by DescribeImages. 
     */
@@ -146,6 +157,7 @@ trait ECR extends Service {
     params: DescribeImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResponse, Unit]
   ): Request[DescribeImagesResponse, AWSError] = js.native
+  
   /**
     * Describes image repositories in a registry.
     */
@@ -159,6 +171,7 @@ trait ECR extends Service {
     params: DescribeRepositoriesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRepositoriesResponse, Unit]
   ): Request[DescribeRepositoriesResponse, AWSError] = js.native
+  
   /**
     * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. The authorizationToken returned is a base64 encoded string that can be decoded and used in a docker login command to authenticate to a registry. The AWS CLI offers an get-login-password command that simplifies the login process. For more information, see Registry Authentication in the Amazon Elastic Container Registry User Guide.
     */
@@ -172,6 +185,7 @@ trait ECR extends Service {
     params: GetAuthorizationTokenRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizationTokenResponse, Unit]
   ): Request[GetAuthorizationTokenResponse, AWSError] = js.native
+  
   /**
     * Retrieves the pre-signed Amazon S3 download URL corresponding to an image layer. You can only get URLs for image layers that are referenced in an image. When an image is pulled, the GetDownloadUrlForLayer API is called once per image layer that is not already cached.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
@@ -185,6 +199,7 @@ trait ECR extends Service {
     params: GetDownloadUrlForLayerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDownloadUrlForLayerResponse, Unit]
   ): Request[GetDownloadUrlForLayerResponse, AWSError] = js.native
+  
   /**
     * Retrieves the lifecycle policy for the specified repository.
     */
@@ -198,6 +213,7 @@ trait ECR extends Service {
     params: GetLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyResponse, Unit]
   ): Request[GetLifecyclePolicyResponse, AWSError] = js.native
+  
   /**
     * Retrieves the results of the lifecycle policy preview request for the specified repository.
     */
@@ -211,6 +227,7 @@ trait ECR extends Service {
     params: GetLifecyclePolicyPreviewRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyPreviewResponse, Unit]
   ): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
+  
   /**
     * Retrieves the repository policy for the specified repository.
     */
@@ -224,6 +241,7 @@ trait ECR extends Service {
     params: GetRepositoryPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryPolicyResponse, Unit]
   ): Request[GetRepositoryPolicyResponse, AWSError] = js.native
+  
   /**
     * Notifies Amazon ECR that you intend to upload an image layer. When an image is pushed, the InitiateLayerUpload API is called once per image layer that has not already been uploaded. Whether or not an image layer has been uploaded is determined by the BatchCheckLayerAvailability API action.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
@@ -237,6 +255,7 @@ trait ECR extends Service {
     params: InitiateLayerUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InitiateLayerUploadResponse, Unit]
   ): Request[InitiateLayerUploadResponse, AWSError] = js.native
+  
   /**
     * Lists all the image IDs for the specified repository. You can filter images based on whether or not they are tagged by using the tagStatus filter and specifying either TAGGED, UNTAGGED or ANY. For example, you can filter your results to return only UNTAGGED images and then pipe that result to a BatchDeleteImage operation to delete them. Or, you can filter your results to return only TAGGED images to list all of the tags in your repository.
     */
@@ -250,6 +269,7 @@ trait ECR extends Service {
     params: ListImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImagesResponse, Unit]
   ): Request[ListImagesResponse, AWSError] = js.native
+  
   /**
     * List the tags for an Amazon ECR resource.
     */
@@ -263,6 +283,7 @@ trait ECR extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Creates or updates the image manifest and tags associated with an image. When an image is pushed and all new image layers have been uploaded, the PutImage API is called once to create or update the image manifest and the tags associated with the image.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
@@ -276,6 +297,7 @@ trait ECR extends Service {
     params: PutImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutImageResponse, Unit]
   ): Request[PutImageResponse, AWSError] = js.native
+  
   /**
     * Updates the image scanning configuration for the specified repository.
     */
@@ -289,6 +311,7 @@ trait ECR extends Service {
     params: PutImageScanningConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutImageScanningConfigurationResponse, Unit]
   ): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates the image tag mutability settings for the specified repository. For more information, see Image Tag Mutability in the Amazon Elastic Container Registry User Guide.
     */
@@ -302,6 +325,7 @@ trait ECR extends Service {
     params: PutImageTagMutabilityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutImageTagMutabilityResponse, Unit]
   ): Request[PutImageTagMutabilityResponse, AWSError] = js.native
+  
   /**
     * Creates or updates the lifecycle policy for the specified repository. For more information, see Lifecycle Policy Template.
     */
@@ -315,6 +339,7 @@ trait ECR extends Service {
     params: PutLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutLifecyclePolicyResponse, Unit]
   ): Request[PutLifecyclePolicyResponse, AWSError] = js.native
+  
   /**
     * Applies a repository policy to the specified repository to control access permissions. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
     */
@@ -328,6 +353,7 @@ trait ECR extends Service {
     params: SetRepositoryPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetRepositoryPolicyResponse, Unit]
   ): Request[SetRepositoryPolicyResponse, AWSError] = js.native
+  
   /**
     * Starts an image vulnerability scan. An image scan can only be started once per day on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image Scanning in the Amazon Elastic Container Registry User Guide.
     */
@@ -341,6 +367,7 @@ trait ECR extends Service {
     params: StartImageScanRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartImageScanResponse, Unit]
   ): Request[StartImageScanResponse, AWSError] = js.native
+  
   /**
     * Starts a preview of a lifecycle policy for the specified repository. This allows you to see the results before associating the lifecycle policy with the repository.
     */
@@ -354,6 +381,7 @@ trait ECR extends Service {
     params: StartLifecyclePolicyPreviewRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartLifecyclePolicyPreviewResponse, Unit]
   ): Request[StartLifecyclePolicyPreviewResponse, AWSError] = js.native
+  
   /**
     * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
     */
@@ -367,6 +395,7 @@ trait ECR extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Deletes specified tags from a resource.
     */
@@ -380,6 +409,7 @@ trait ECR extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Uploads an image layer part to Amazon ECR. When an image is pushed, each new image layer is uploaded in parts. The maximum size of each image layer part can be 20971520 bytes (or about 20MB). The UploadLayerPart API is called once per each new image layer part.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
@@ -393,6 +423,7 @@ trait ECR extends Service {
     params: UploadLayerPartRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UploadLayerPartResponse, Unit]
   ): Request[UploadLayerPartResponse, AWSError] = js.native
+  
   /**
     * Waits for the imageScanComplete state by periodically calling the underlying ECR.describeImageScanFindingsoperation every 5 seconds (at most 60 times). Wait until an image scan is complete and findings can be accessed
     */
@@ -436,4 +467,3 @@ trait ECR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyPreviewResponse, Unit]
   ): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
 }
-

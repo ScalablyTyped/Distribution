@@ -10,9 +10,9 @@ File system persister for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/persister-fs |
 | Keywords           | polly, pollyjs, record, replay, fs, file |
-| # releases         | 19 |
-| # dependents       | 3 |
-| # downloads        | 224547 |
+| # releases         | 21 |
+| # dependents       | 10 |
+| # downloads        | 636001 |
 | # stars            | 0 |
 
 ## Links

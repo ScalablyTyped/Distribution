@@ -5,10 +5,11 @@ import typings.lodash.mod.ListOfRecursiveArraysOrValues
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFlatMapDepth extends LodashConvertible {
+trait LodashFlatMapDepth extends js.Object {
+  
   def apply(iteratee: String): LodashFlatMapDepth3x1 = js.native
   def apply(iteratee: String, depth: Double): LodashFlatMapDepth3x3 = js.native
   def apply(iteratee: String, depth: Double, collection: js.Object): js.Array[_] = js.native
@@ -28,13 +29,10 @@ trait LodashFlatMapDepth extends LodashConvertible {
   def apply[T /* <: js.Object */](iteratee: __, depth: __, collection: T): LodashFlatMapDepth2x4[T] = js.native
   def apply[T](iteratee: __, depth: __, collection: List[T]): LodashFlatMapDepth1x4[T] = js.native
   def apply[T, TResult](iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LodashFlatMapDepth1x1[T, TResult] = js.native
-  def apply[T /* <: js.Object */, TResult](
-    iteratee: js.Function1[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      ListOfRecursiveArraysOrValues[TResult] | TResult
-    ],
+  def apply[T, TResult](
+    iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult],
     depth: Double
-  ): js.Array[TResult] = js.native
+  ): LodashFlatMapDepth1x3[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -69,4 +67,3 @@ trait LodashFlatMapDepth extends LodashConvertible {
     collection: List[T]
   ): LodashFlatMapDepth1x5[TResult] = js.native
 }
-

@@ -9,13 +9,19 @@ import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/helpers/DirectionalLightHelper", JSImport.Namespace)
 @js.native
 object directionalLightHelperMod extends js.Object {
+  
   @js.native
   class DirectionalLightHelper protected () extends Object3D {
+    /**
+    	 * @param light
+    	 * @param [size=1]
+    	 * @param color
+    	 */
     def this(light: DirectionalLight) = this()
     def this(light: DirectionalLight, size: Double) = this()
     def this(light: DirectionalLight, size: js.UndefOr[scala.Nothing], color: String) = this()
@@ -24,13 +30,20 @@ object directionalLightHelperMod extends js.Object {
     def this(light: DirectionalLight, size: Double, color: String) = this()
     def this(light: DirectionalLight, size: Double, color: Double) = this()
     def this(light: DirectionalLight, size: Double, color: Color) = this()
+    
+    /**
+    	 * @default undefined
+    	 */
     var color: js.UndefOr[Color | String | Double] = js.native
-    var light: DirectionalLight = js.native
-    var lightPlane: Line[Geometry | BufferGeometry, Material | js.Array[Material]] = js.native
-    var targetLine: Line[Geometry | BufferGeometry, Material | js.Array[Material]] = js.native
+    
     def dispose(): Unit = js.native
+    
+    var light: DirectionalLight = js.native
+    
+    var lightPlane: Line[Geometry | BufferGeometry, Material | js.Array[Material]] = js.native
+    
+    var targetLine: Line[Geometry | BufferGeometry, Material | js.Array[Material]] = js.native
+    
     def update(): Unit = js.native
   }
-  
 }
-

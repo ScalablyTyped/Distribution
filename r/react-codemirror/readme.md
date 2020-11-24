@@ -10,9 +10,9 @@ Codemirror
 | ------------------ | :-------------: |
 | Full name          | react-codemirror |
 | Keywords           | react, react-component, codemirror, editor, code |
-| # releases         | 1 |
-| # dependents       | 108 |
-| # downloads        | 1462572 |
+| # releases         | 0 |
+| # dependents       | 119 |
+| # downloads        | 1868905 |
 | # stars            | 10 |
 
 ## Links

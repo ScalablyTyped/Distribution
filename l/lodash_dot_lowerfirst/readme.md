@@ -11,8 +11,8 @@ The lodash method `_.lowerFirst` exported as a module.
 | Full name          | lodash.lowerfirst |
 | Keywords           | lodash-modularized, lowerfirst |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 1477333 |
+| # dependents       | 16 |
+| # downloads        | 3430105 |
 | # stars            | 0 |
 
 ## Links

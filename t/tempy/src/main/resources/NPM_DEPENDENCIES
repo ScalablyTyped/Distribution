@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tempy" : "0.6.0"
+      "tempy" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tempy" : "0.6.0"
+      "tempy" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -2,11 +2,10 @@ package typings.sharepoint.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocialFeedAttributes extends js.Object
-
 // For some reasons this enum doesn't exist
 // enum SocialFollowResult {
 //    ok = 0,
@@ -19,11 +18,10 @@ sealed trait SocialFeedAttributes extends js.Object
 @JSGlobal("SP.Social.SocialFeedAttributes")
 @js.native
 object SocialFeedAttributes extends js.Object {
+  
   @js.native
   sealed trait moreThreadsAvailable extends SocialFeedAttributes
   
   @js.native
   sealed trait none extends SocialFeedAttributes
-  
 }
-

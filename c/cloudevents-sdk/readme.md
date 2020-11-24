@@ -11,8 +11,8 @@ CloudEvents SDK for JavaScript
 | Full name          | cloudevents-sdk |
 | Keywords           | events, cloudevents, sdk, javascript, cncf |
 | # releases         | 19 |
-| # dependents       | 6 |
-| # downloads        | 72389 |
+| # dependents       | 2 |
+| # downloads        | 81350 |
 | # stars            | 0 |
 
 ## Links

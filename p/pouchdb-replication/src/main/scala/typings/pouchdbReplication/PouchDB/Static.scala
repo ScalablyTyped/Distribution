@@ -8,10 +8,11 @@ import typings.pouchdbReplication.PouchDB.Replication.SyncOptions
 import typings.pouchdbReplication.PouchDB.Replication.SyncResultComplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static extends js.Object {
+  
   /**
     * Replicate data from source to target. Both the source and target can be a PouchDB instance or a string
     * representing a CouchDB database URL or the name of a local PouchDB database. If options.live is true,
@@ -74,6 +75,7 @@ trait Static extends js.Object {
     options: ReplicateOptions,
     callback: Callback[ReplicationResultComplete[Content]]
   ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
+  
   /**
     * Sync data from src to target and target to src. This is a convenience method for bidirectional data replication.
     *
@@ -140,4 +142,3 @@ trait Static extends js.Object {
     callback: Callback[SyncResultComplete[Content]]
   ): Sync[Content] = js.native
 }
-

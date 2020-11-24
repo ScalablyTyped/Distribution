@@ -6,7 +6,7 @@ import typings.activexWord.activexWordNumbers.`2`
 import typings.activexWord.activexWordNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`0`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`1`
 */
 trait WdExportRange extends js.Object
-
 object WdExportRange {
+  
   @scala.inline
   def wdExportAllDocument: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def wdExportCurrentPage: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def wdExportFromTo: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def wdExportSelection: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Middleware for for Application Ticker.
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TickerPlugin extends js.Object
-

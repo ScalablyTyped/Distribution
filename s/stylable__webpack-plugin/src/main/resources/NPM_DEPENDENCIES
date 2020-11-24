@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stylable/webpack-plugin" : "3.6.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stylable/webpack-plugin" : "3.6.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

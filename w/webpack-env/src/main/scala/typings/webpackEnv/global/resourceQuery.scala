@@ -3,7 +3,7 @@ package typings.webpackEnv.global
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The resource query of the current module.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("__resourceQuery")
 @js.native
 object resourceQuery extends TopLevel[String]
-

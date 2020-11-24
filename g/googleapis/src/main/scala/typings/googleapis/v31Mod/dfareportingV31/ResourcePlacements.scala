@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Placements")
 @js.native
 class ResourcePlacements protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.placements.generatetags
     * @desc Generates tags for a placement.
@@ -47,6 +49,7 @@ class ResourcePlacements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementsGenerateTagsResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.placements.get
     * @desc Gets one placement by ID.
@@ -76,6 +79,7 @@ class ResourcePlacements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacement]
   ): Unit = js.native
+  
   /**
     * dfareporting.placements.insert
     * @desc Inserts a new placement.
@@ -105,6 +109,7 @@ class ResourcePlacements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacement]
   ): Unit = js.native
+  
   /**
     * dfareporting.placements.list
     * @desc Retrieves a list of placements, possibly filtered. This method
@@ -156,6 +161,7 @@ class ResourcePlacements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.placements.patch
     * @desc Updates an existing placement. This method supports patch
@@ -187,6 +193,7 @@ class ResourcePlacements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacement]
   ): Unit = js.native
+  
   /**
     * dfareporting.placements.update
     * @desc Updates an existing placement.
@@ -217,4 +224,3 @@ class ResourcePlacements protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlacement]
   ): Unit = js.native
 }
-

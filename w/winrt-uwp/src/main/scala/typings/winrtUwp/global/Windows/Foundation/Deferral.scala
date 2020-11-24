@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Foundation
 import typings.winrtUwp.Windows.Foundation.DeferralCompletedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Stores a DeferralCompletedHandler to be invoked upon completion of the deferral and manipulates the state of the deferral. */
 @JSGlobal("Windows.Foundation.Deferral")
@@ -16,4 +16,3 @@ class Deferral protected ()
     */
   def this(handler: DeferralCompletedHandler) = this()
 }
-

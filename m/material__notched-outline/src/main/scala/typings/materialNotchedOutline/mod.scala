@@ -8,48 +8,56 @@ import typings.materialNotchedOutline.anon.PartialMDCNotchedOutlineA
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/notched-outline", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCNotchedOutline ()
     extends typings.materialNotchedOutline.componentMod.MDCNotchedOutline
+  /* static members */
+  @js.native
+  object MDCNotchedOutline extends js.Object {
+    
+    def attachTo(root: Element): typings.materialNotchedOutline.componentMod.MDCNotchedOutline = js.native
+  }
   
   @js.native
   class MDCNotchedOutlineFoundation ()
     extends typings.materialNotchedOutline.foundationMod.MDCNotchedOutlineFoundation {
     def this(adapter: PartialMDCNotchedOutlineA) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCNotchedOutline extends js.Object {
-    def attachTo(root: Element): typings.materialNotchedOutline.componentMod.MDCNotchedOutline = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCNotchedOutlineFoundation extends js.Object {
+    
     def cssClasses: NOLABEL = js.native
+    
     /**
       * See {@link MDCNotchedOutlineAdapter} for typing information on parameters and return types.
       */
     def defaultAdapter: MDCNotchedOutlineAdapter = js.native
+    
     def numbers: NOTCHELEMENTPADDING = js.native
+    
     def strings: NOTCHELEMENTSELECTOR = js.native
   }
   
   @js.native
   object cssClasses extends js.Object {
+    
     var NO_LABEL: String = js.native
+    
     var OUTLINE_NOTCHED: String = js.native
+    
     var OUTLINE_UPGRADED: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
+    
     var NOTCH_ELEMENT_PADDING: Double = js.native
   }
   
@@ -77,8 +85,7 @@ object mod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var NOTCH_ELEMENT_SELECTOR: String = js.native
   }
-  
 }
-

@@ -12,7 +12,7 @@ Submit and query New Relic Insights data
 | Keywords           | newrelic, new-relic, new, relic, insights |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 172787 |
+| # downloads        | 172976 |
 | # stars            | 1 |
 
 ## Links

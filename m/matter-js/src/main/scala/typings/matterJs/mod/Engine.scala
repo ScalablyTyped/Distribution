@@ -3,11 +3,12 @@ package typings.matterJs.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Engine")
 @js.native
 class Engine () extends js.Object {
+  
   /**
     * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
     *
@@ -16,6 +17,7 @@ class Engine () extends js.Object {
     * @default a Matter.Grid instance
     */
   var broadphase: Grid = js.native
+  
   /**
     * An integer `Number` that specifies the number of constraint iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -26,6 +28,7 @@ class Engine () extends js.Object {
     * @default 2
     */
   var constraintIterations: Double = js.native
+  
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
@@ -35,14 +38,17 @@ class Engine () extends js.Object {
     * @default false
     */
   var enableSleeping: Boolean = js.native
+  
   /**
     * A flag that specifies whether the engine is running or not.
     */
   var enabled: Boolean = js.native
+  
   /**
     * Collision pair set for this `Engine`.
     */
   var pairs: js.Any = js.native
+  
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -52,6 +58,7 @@ class Engine () extends js.Object {
     * @default 6
     */
   var positionIterations: Double = js.native
+  
   /**
     * An instance of a `Render` controller. The default value is a `Matter.Render` instance created by `Engine.create`.
     * One may also develop a custom renderer module based on `Matter.Render` and pass an instance of it to `Engine.create` via `options.render`.
@@ -64,6 +71,7 @@ class Engine () extends js.Object {
     * @default a Matter.Render instance
     */
   var render: Render = js.native
+  
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
     *
@@ -71,6 +79,7 @@ class Engine () extends js.Object {
     * @type object
     */
   var timing: IEngineTimingOptions = js.native
+  
   /**
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -80,6 +89,7 @@ class Engine () extends js.Object {
     * @default 4
     */
   var velocityIterations: Double = js.native
+  
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
     *
@@ -89,17 +99,18 @@ class Engine () extends js.Object {
     */
   var world: World = js.native
 }
-
 /* static members */
 @JSImport("matter-js", "Engine")
 @js.native
 object Engine extends js.Object {
+  
   /**
     * Clears the engine including the world, pairs and broadphase.
     * @method clear
     * @param {engine} engine
     */
   def clear(engine: Engine): Unit = js.native
+  
   /**
     * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -125,6 +136,7 @@ object Engine extends js.Object {
   def create(element: IEngineDefinition, options: IEngineDefinition): Engine = js.native
   def create(element: HTMLElement): Engine = js.native
   def create(element: HTMLElement, options: IEngineDefinition): Engine = js.native
+  
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
     * @method merge
@@ -132,12 +144,14 @@ object Engine extends js.Object {
     * @param {engine} engineB
     */
   def merge(engineA: Engine, engineB: Engine): Unit = js.native
+  
   /**
     * An alias for `Runner.run`, see `Matter.Runner` for more information.
     * @method run
     * @param {engine} engine
     */
   def run(enige: Engine): Unit = js.native
+  
   /**
     * Moves the simulation forward in time by `delta` ms.
     * The `correction` argument is an optional `Number` that specifies the time correction factor to apply to the update.
@@ -158,4 +172,3 @@ object Engine extends js.Object {
   def update(engine: Engine, delta: Double): Engine = js.native
   def update(engine: Engine, delta: Double, correction: Double): Engine = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.node.Buffer
 import typings.refNapi.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the `constructor` of the Struct type that gets returned.
@@ -27,12 +27,13 @@ trait StructType
 Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any]
      with Instantiable0[js.Any]
      with Instantiable2[/* arg */ Buffer, /* data */ js.Object, js.Any] {
-  var fields: StringDictionary[typings.refStructDi.anon.Type] = js.native
+  
   def apply(): js.Any = js.native
   /** Pass it an existing Buffer instance to use that as the backing buffer. */
   def apply(arg: Buffer): js.Any = js.native
   def apply(arg: Buffer, data: js.Object): js.Any = js.native
   def apply(data: js.Object): js.Any = js.native
+  
   /**
     * Adds a new field to the struct instance with the given name and type.
     * Note that this function will throw an Error if any instances of the struct
@@ -47,5 +48,6 @@ Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any]
     * beginning, before any instances are created.
     */
   def defineProperty(name: String, `type`: Type): Unit = js.native
+  
+  var fields: StringDictionary[typings.refStructDi.anon.Type] = js.native
 }
-

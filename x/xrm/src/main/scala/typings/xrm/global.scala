@@ -5,11 +5,12 @@ import typings.xrm.Xrm.GlobalContext
 import typings.xrm.Xrm.XrmStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * Gets the global context.
     * The method provides access to the global context without going through the form context.
@@ -18,12 +19,14 @@ object global extends js.Object {
     * @see {@link Xrm.Utility.getGlobalContext}
     */
   def GetGlobalContext(): GlobalContext = js.native
+  
   /**
     * Xrm Namespace
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference External Link: Client API Reference}
     */
   @js.native
   object Xrm extends TopLevel[XrmStatic] {
+    
     /**
       *  A definition module for asynchronous interface declarations.
       */
@@ -78,6 +81,7 @@ object global extends js.Object {
       */
     @js.native
     object Page extends js.Object {
+      
       /**
         * Module for the Xrm.Page.data API.
         * @deprecated Use {@link Xrm.Form.data formContext.data} has been deprecated.
@@ -91,7 +95,6 @@ object global extends js.Object {
         */
       @js.native
       object ui extends js.Object
-      
     }
     
     /**
@@ -108,8 +111,5 @@ object global extends js.Object {
       */
     @js.native
     object Utility extends js.Object
-    
   }
-  
 }
-

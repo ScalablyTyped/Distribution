@@ -2,11 +2,12 @@ package typings.electronPackager.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron-packager", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Bundles Electron-based application source code with a renamed/customized Electron executable and
     * its supporting files into folders ready for distribution.
@@ -32,4 +33,3 @@ object ^ extends js.Object {
     */
   def apply(opts: Options): js.Promise[js.Array[String]] = js.native
 }
-

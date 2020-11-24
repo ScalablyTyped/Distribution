@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "RefractionPostProcess")
 @js.native
@@ -26,36 +26,27 @@ class RefractionPostProcess protected ()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera
   ) = this()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera
   ) = this()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double
@@ -63,12 +54,9 @@ class RefractionPostProcess protected ()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double
@@ -76,12 +64,20 @@ class RefractionPostProcess protected ()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
@@ -90,12 +86,20 @@ class RefractionPostProcess protected ()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
@@ -104,12 +108,45 @@ class RefractionPostProcess protected ()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
@@ -119,12 +156,45 @@ class RefractionPostProcess protected ()
   def this(
     name: String,
     refractionTextureUrl: String,
-    /** the base color of the refraction (used to taint the rendering) */
-  color: typings.babylonjs.mathColorMod.Color3,
-    /** simulated refraction depth */
-  depth: Double,
-    /** the coefficient of the base color (0 to remove base color tainting) */
-  colorLevel: Double,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
     options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
@@ -132,4 +202,16 @@ class RefractionPostProcess protected ()
     reusable: Boolean
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/index", "RefractionPostProcess")
+@js.native
+object RefractionPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.cameraMod.Camera,
+    scene: typings.babylonjs.sceneMod.Scene,
+    rootUrl: String
+  ): typings.babylonjs.refractionPostProcessMod.RefractionPostProcess = js.native
+}

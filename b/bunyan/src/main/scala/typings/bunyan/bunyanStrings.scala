@@ -3,9 +3,28 @@ package typings.bunyan
 import typings.bunyan.mod.LogLevelString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bunyanStrings {
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait debug extends LogLevelString
   
@@ -23,18 +42,4 @@ object bunyanStrings {
   
   @js.native
   sealed trait warn extends LogLevelString
-  
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

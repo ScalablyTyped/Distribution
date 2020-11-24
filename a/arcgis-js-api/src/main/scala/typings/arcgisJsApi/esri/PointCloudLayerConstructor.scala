@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointCloudLayerConstructor
@@ -15,6 +15,6 @@ trait PointCloudLayerConstructor
   */
 Instantiable0[PointCloudLayer]
      with Instantiable1[/* properties */ PointCloudLayerProperties, PointCloudLayer] {
+  
   def fromJSON(json: js.Any): PointCloudLayer = js.native
 }
-

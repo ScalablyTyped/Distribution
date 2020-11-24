@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FloatingObjectHorizontalPositionAlignment extends js.Object
-
 /**
   * Lists values specifying how a floating object is horizontally aligned relative to the specified element.
   */
 @JSGlobal("FloatingObjectHorizontalPositionAlignment")
 @js.native
 object FloatingObjectHorizontalPositionAlignment extends js.Object {
+  
   /**
     * The shape is centered relative to its FloatingObjectAlignmentPositionSettings.horizontalPositionType.
     */
@@ -48,6 +48,4 @@ object FloatingObjectHorizontalPositionAlignment extends js.Object {
     */
   @js.native
   sealed trait Right extends FloatingObjectHorizontalPositionAlignment
-  
 }
-

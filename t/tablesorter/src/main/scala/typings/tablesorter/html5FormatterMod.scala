@@ -7,13 +7,15 @@ import typings.tablesorter.mod.global.HTMLElement
 import typings.tablesorter.mod.global.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Filtering/Formatter/Html5Formatter", JSImport.Namespace)
 @js.native
 object html5FormatterMod extends js.Object {
+  
   @js.native
   trait Html5Formatter extends js.Object {
+    
     /**
       * Creates an html5 color-control.
       *
@@ -31,6 +33,7 @@ object html5FormatterMod extends js.Object {
       */
     def html5Color(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def html5Color(cell: JQuery[HTMLElement], index: Double, options: Html5ColorOptions): JQuery[HTMLElement] = js.native
+    
     /**
       * Creates an html5 number-control.
       *
@@ -48,6 +51,7 @@ object html5FormatterMod extends js.Object {
       */
     def html5Number(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def html5Number(cell: JQuery[HTMLElement], index: Double, options: Html5NumberOptions): JQuery[HTMLElement] = js.native
+    
     /**
       * Creates an html5 range-control.
       *
@@ -66,6 +70,4 @@ object html5FormatterMod extends js.Object {
     def html5Range(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def html5Range(cell: JQuery[HTMLElement], index: Double, options: Html5RangeOptions): JQuery[HTMLElement] = js.native
   }
-  
 }
-

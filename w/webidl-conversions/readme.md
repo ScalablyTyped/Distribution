@@ -10,9 +10,9 @@ Implements the WebIDL algorithms for converting to and from JavaScript values
 | ------------------ | :-------------: |
 | Full name          | webidl-conversions |
 | Keywords           | webidl, web, types |
-| # releases         | 2 |
-| # dependents       | 61 |
-| # downloads        | 283717015 |
+| # releases         | 4 |
+| # dependents       | 83 |
+| # downloads        | 454079659 |
 | # stars            | 0 |
 
 ## Links

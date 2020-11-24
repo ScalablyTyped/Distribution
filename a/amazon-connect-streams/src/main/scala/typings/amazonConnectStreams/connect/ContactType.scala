@@ -2,15 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactType extends js.Object
-
 /** This enumeration lists all of the contact types supported by Connect Streams. */
 @JSGlobal("connect.ContactType")
 @js.native
 object ContactType extends js.Object {
+  
   /** Chat contact. */
   @js.native
   sealed trait CHAT extends ContactType
@@ -25,6 +25,4 @@ object ContactType extends js.Object {
   /** Normal incoming and outgoing voice calls. */
   @js.native
   sealed trait VOICE extends ContactType
-  
 }
-

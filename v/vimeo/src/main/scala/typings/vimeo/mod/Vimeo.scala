@@ -2,7 +2,7 @@ package typings.vimeo.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vimeo", "Vimeo")
 @js.native
@@ -16,6 +16,7 @@ class Vimeo protected () extends js.Object {
     */
   def this(clientId: String, clientSecret: String) = this()
   def this(clientId: String, clientSecret: String, accessToken: String) = this()
+  
   /**
     * Exchange a code for an access token. This code should exist on your `redirectUri`.
     *
@@ -25,6 +26,7 @@ class Vimeo protected () extends js.Object {
     * @param fn           Callback to execute on completion.
     */
   def accessToken(code: String, redirectUri: String, fn: CompleteCallback): Unit = js.native
+  
   /**
     * The first step of the authorization process.
     *
@@ -44,6 +46,7 @@ class Vimeo protected () extends js.Object {
     */
   def buildAuthorizationEndpoint(redirectUri: String, scope: String, state: String): Unit = js.native
   def buildAuthorizationEndpoint(redirectUri: String, scope: js.Array[String], state: String): Unit = js.native
+  
   /**
     * Generates an unauthenticated access token. This is necessary to make unauthenticated requests
     *
@@ -55,6 +58,7 @@ class Vimeo protected () extends js.Object {
     */
   def generateClientCredentials(scope: String, fn: CompleteCallback): Unit = js.native
   def generateClientCredentials(scope: js.Array[String], fn: CompleteCallback): Unit = js.native
+  
   def replace(
     file: String,
     videoUri: String,
@@ -85,6 +89,7 @@ class Vimeo protected () extends js.Object {
     progressCallback: ProgressCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Performs an API call.
     *
@@ -115,12 +120,14 @@ class Vimeo protected () extends js.Object {
     */
   def request(url: String, callback: CompleteCallback): Unit = js.native
   def request(url: RequestOptions, callback: CompleteCallback): Unit = js.native
+  
   /**
     * Set a user access token to be used with library requests.
     *
     * @param accessToken
     */
   def setAccessToken(accessToken: String): Unit = js.native
+  
   def upload(
     filePath: String,
     completeCallback: UriCallback,
@@ -164,4 +171,3 @@ class Vimeo protected () extends js.Object {
     errorCallback: ErrorCallback
   ): Unit = js.native
 }
-

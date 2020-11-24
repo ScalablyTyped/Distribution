@@ -2,11 +2,12 @@ package typings.yandexMaps.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Polygon")
 @js.native
-class Polygon protected () extends GeoObject_ {
+class Polygon protected ()
+  extends GeoObject_[IPolygonGeometry, js.Object] {
   def this(geometry: js.Array[js.Array[js.Array[Double]]]) = this()
   def this(geometry: js.Object) = this()
   def this(geometry: IPolygonGeometry) = this()
@@ -30,4 +31,3 @@ class Polygon protected () extends GeoObject_ {
   def this(geometry: IPolygonGeometry, properties: js.Object, options: IPolygonOptions) = this()
   def this(geometry: IPolygonGeometry, properties: IDataManager, options: IPolygonOptions) = this()
 }
-

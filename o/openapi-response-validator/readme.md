@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-response-validator
 
-Typings are for version 7.0.0
+Typings are for version 7.0.1
 
 ## Library description:
 Validate a response according to an openapi schema.
@@ -10,9 +10,9 @@ Validate a response according to an openapi schema.
 | ------------------ | :-------------: |
 | Full name          | openapi-response-validator |
 | Keywords           | openapi, validation, jsonschema, response |
-| # releases         | 20 |
-| # dependents       | 3 |
-| # downloads        | 460270 |
+| # releases         | 15 |
+| # dependents       | 5 |
+| # downloads        | 973844 |
 | # stars            | 0 |
 
 ## Links

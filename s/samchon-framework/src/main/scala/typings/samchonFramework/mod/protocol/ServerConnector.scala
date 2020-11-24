@@ -3,7 +3,7 @@ package typings.samchonFramework.mod.protocol
 import typings.samchon.iprotocolMod.IProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon-framework", "protocol.ServerConnector")
 @js.native
@@ -17,4 +17,3 @@ class ServerConnector protected ()
     */
   def this(listener: IProtocol) = this()
 }
-

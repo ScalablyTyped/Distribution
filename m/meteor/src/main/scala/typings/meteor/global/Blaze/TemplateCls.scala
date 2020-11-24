@@ -2,7 +2,7 @@ package typings.meteor.global.Blaze
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Blaze.Template")
 @js.native
@@ -12,4 +12,3 @@ class TemplateCls ()
   def this(viewName: js.UndefOr[scala.Nothing], renderFunction: js.Function) = this()
   def this(viewName: String, renderFunction: js.Function) = this()
 }
-

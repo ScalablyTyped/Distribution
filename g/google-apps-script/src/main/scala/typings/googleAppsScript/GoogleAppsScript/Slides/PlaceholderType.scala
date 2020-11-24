@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PlaceholderType extends js.Object
-
 /**
   * The placeholder types. Many of these placeholder types correspond to placeholder IDs from the
   * ECMA-376 standard. More information on those shapes can be found in the description of the
@@ -17,6 +16,7 @@ sealed trait PlaceholderType extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.PlaceholderType")
 @js.native
 object PlaceholderType extends js.Object {
+  
   @js.native
   sealed trait BODY extends PlaceholderType
   
@@ -70,6 +70,4 @@ object PlaceholderType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends PlaceholderType
-  
 }
-

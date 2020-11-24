@@ -9,10 +9,10 @@ A package that contains an array of every single file extension there is for bin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | binaryextensions |
-| Keywords           | binary, extensions, binary extensions, binary-extensions |
-| # releases         | 23 |
-| # dependents       | 9 |
-| # downloads        | 30459278 |
+| Keywords           | binary, binary extensions, binary-extensions, browser, deno, deno-edition, deno-entry, denoland, es5, export-default, extensions, module, node, typed, types, typescript |
+| # releases         | 68 |
+| # dependents       | 10 |
+| # downloads        | 35596117 |
 | # stars            | 0 |
 
 ## Links

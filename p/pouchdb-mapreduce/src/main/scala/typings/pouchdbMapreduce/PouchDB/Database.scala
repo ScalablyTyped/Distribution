@@ -6,10 +6,11 @@ import typings.pouchdbMapreduce.PouchDB.Query.Options
 import typings.pouchdbMapreduce.PouchDB.Query.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database[Content /* <: js.Object */] extends js.Object {
+  
   /**
     * Invoke a map/reduce function, which allows you to perform more complex queries
     * on PouchDB than what you get with allDocs().
@@ -34,6 +35,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
   def query[Result, Model](fun: Map[Model, Result], callback: Callback[Response[Result]]): Unit = js.native
   def query[Result, Model](fun: Map[Model, Result], opts: Options[Model, Result]): js.Promise[Response[Result]] = js.native
   def query[Result, Model](fun: Map[Model, Result], opts: Options[Model, Result], callback: Callback[Response[Result]]): Unit = js.native
+  
   /**
     * Cleans up any stale map/reduce indexes.
     *
@@ -53,4 +55,3 @@ trait Database[Content /* <: js.Object */] extends js.Object {
     */
   def viewCleanup(callback: Callback[BasicResponse]): Unit = js.native
 }
-

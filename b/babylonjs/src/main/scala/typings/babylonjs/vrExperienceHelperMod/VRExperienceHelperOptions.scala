@@ -3,76 +3,103 @@ package typings.babylonjs.vrExperienceHelperMod
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
 import typings.babylonjs.webVRCameraMod.WebVROptions
-import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait VRExperienceHelperOptions extends WebVROptions {
+  
   /**
     * Create a DeviceOrientationCamera to be used as your out of vr camera. (default: true)
     */
-  var createDeviceOrientationCamera: js.UndefOr[Boolean] = js.undefined
+  var createDeviceOrientationCamera: js.UndefOr[Boolean] = js.native
+  
   /**
     * Create a VRDeviceOrientationFreeCamera to be used for VR when no external HMD is found. (default: true)
     */
-  var createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[Boolean] = js.undefined
+  var createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[Boolean] = js.native
+  
   /**
     * A list of meshes to be used as the teleportation floor. If specified, teleportation will be enabled (default: undefined)
     */
-  var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.undefined
+  var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.native
+  
   /**
     * Uses the main button on the controller to toggle the laser casted. (default: true)
     */
-  var laserToggle: js.UndefOr[Boolean] = js.undefined
+  var laserToggle: js.UndefOr[Boolean] = js.native
+  
   /**
     * Defines if WebXR should be used instead of WebVR (if available)
     */
-  var useXR: js.UndefOr[Boolean] = js.undefined
+  var useXR: js.UndefOr[Boolean] = js.native
+  
   /**
     * Distortion metrics for the fallback vrDeviceOrientationCamera (default: VRCameraMetrics.Default)
     */
-  var vrDeviceOrientationCameraMetrics: js.UndefOr[VRCameraMetrics] = js.undefined
+  var vrDeviceOrientationCameraMetrics: js.UndefOr[VRCameraMetrics] = js.native
 }
-
 object VRExperienceHelperOptions {
+  
   @scala.inline
-  def apply(
-    controllerMeshes: js.UndefOr[Boolean] = js.undefined,
-    createDeviceOrientationCamera: js.UndefOr[Boolean] = js.undefined,
-    createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[Boolean] = js.undefined,
-    customVRButton: HTMLButtonElement = null,
-    defaultHeight: js.UndefOr[Double] = js.undefined,
-    defaultLightingOnControllers: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    floorMeshes: js.Array[Mesh] = null,
-    laserToggle: js.UndefOr[Boolean] = js.undefined,
-    positionScale: js.UndefOr[Double] = js.undefined,
-    rayLength: js.UndefOr[Double] = js.undefined,
-    trackPosition: js.UndefOr[Boolean] = js.undefined,
-    useCustomVRButton: js.UndefOr[Boolean] = js.undefined,
-    useMultiview: js.UndefOr[Boolean] = js.undefined,
-    useXR: js.UndefOr[Boolean] = js.undefined,
-    vrDeviceOrientationCameraMetrics: VRCameraMetrics = null
-  ): VRExperienceHelperOptions = {
+  def apply(): VRExperienceHelperOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(controllerMeshes)) __obj.updateDynamic("controllerMeshes")(controllerMeshes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(createDeviceOrientationCamera)) __obj.updateDynamic("createDeviceOrientationCamera")(createDeviceOrientationCamera.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(createFallbackVRDeviceOrientationFreeCamera)) __obj.updateDynamic("createFallbackVRDeviceOrientationFreeCamera")(createFallbackVRDeviceOrientationFreeCamera.get.asInstanceOf[js.Any])
-    if (customVRButton != null) __obj.updateDynamic("customVRButton")(customVRButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultHeight)) __obj.updateDynamic("defaultHeight")(defaultHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultLightingOnControllers)) __obj.updateDynamic("defaultLightingOnControllers")(defaultLightingOnControllers.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (floorMeshes != null) __obj.updateDynamic("floorMeshes")(floorMeshes.asInstanceOf[js.Any])
-    if (!js.isUndefined(laserToggle)) __obj.updateDynamic("laserToggle")(laserToggle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionScale)) __obj.updateDynamic("positionScale")(positionScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rayLength)) __obj.updateDynamic("rayLength")(rayLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackPosition)) __obj.updateDynamic("trackPosition")(trackPosition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomVRButton)) __obj.updateDynamic("useCustomVRButton")(useCustomVRButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMultiview)) __obj.updateDynamic("useMultiview")(useMultiview.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useXR)) __obj.updateDynamic("useXR")(useXR.get.asInstanceOf[js.Any])
-    if (vrDeviceOrientationCameraMetrics != null) __obj.updateDynamic("vrDeviceOrientationCameraMetrics")(vrDeviceOrientationCameraMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRExperienceHelperOptions]
   }
+  
+  @scala.inline
+  implicit class VRExperienceHelperOptionsOps[Self <: VRExperienceHelperOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCreateDeviceOrientationCamera(value: Boolean): Self = this.set("createDeviceOrientationCamera", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCreateDeviceOrientationCamera: Self = this.set("createDeviceOrientationCamera", js.undefined)
+    
+    @scala.inline
+    def setCreateFallbackVRDeviceOrientationFreeCamera(value: Boolean): Self = this.set("createFallbackVRDeviceOrientationFreeCamera", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCreateFallbackVRDeviceOrientationFreeCamera: Self = this.set("createFallbackVRDeviceOrientationFreeCamera", js.undefined)
+    
+    @scala.inline
+    def setFloorMeshesVarargs(value: Mesh*): Self = this.set("floorMeshes", js.Array(value :_*))
+    
+    @scala.inline
+    def setFloorMeshes(value: js.Array[Mesh]): Self = this.set("floorMeshes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFloorMeshes: Self = this.set("floorMeshes", js.undefined)
+    
+    @scala.inline
+    def setLaserToggle(value: Boolean): Self = this.set("laserToggle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLaserToggle: Self = this.set("laserToggle", js.undefined)
+    
+    @scala.inline
+    def setUseXR(value: Boolean): Self = this.set("useXR", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUseXR: Self = this.set("useXR", js.undefined)
+    
+    @scala.inline
+    def setVrDeviceOrientationCameraMetrics(value: VRCameraMetrics): Self = this.set("vrDeviceOrientationCameraMetrics", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteVrDeviceOrientationCameraMetrics: Self = this.set("vrDeviceOrientationCameraMetrics", js.undefined)
+  }
 }
-

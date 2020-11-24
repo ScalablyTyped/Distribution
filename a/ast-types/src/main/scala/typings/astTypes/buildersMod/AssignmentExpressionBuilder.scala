@@ -1,7 +1,8 @@
 package typings.astTypes.buildersMod
 
-import typings.astTypes.AnonCommentsLeft
+import typings.astTypes.anon.CommentsLeft
 import typings.astTypes.astTypesStrings.AmpersandEqualssign
+import typings.astTypes.astTypesStrings.AsteriskAsteriskEqualssign
 import typings.astTypes.astTypesStrings.AsteriskEqualssign
 import typings.astTypes.astTypesStrings.Equalssign
 import typings.astTypes.astTypesStrings.GreaterthansignGreaterthansignEqualssign
@@ -19,20 +20,49 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.namedTypesMod.namedTypes.AssignmentExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AssignmentExpressionBuilder extends js.Object {
+  
+  def apply(operator: AmpersandEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: AmpersandEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: AsteriskAsteriskEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: AsteriskAsteriskEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: AsteriskEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: AsteriskEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: Equalssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: Equalssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
   def apply(
-    operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign,
+    operator: GreaterthansignGreaterthansignEqualssign,
+    left: MemberExpressionKind,
+    right: ExpressionKind
+  ): AssignmentExpression = js.native
+  def apply(operator: GreaterthansignGreaterthansignEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(
+    operator: GreaterthansignGreaterthansignGreaterthansignEqualssign,
     left: MemberExpressionKind,
     right: ExpressionKind
   ): AssignmentExpression = js.native
   def apply(
-    operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign,
+    operator: GreaterthansignGreaterthansignGreaterthansignEqualssign,
     left: PatternKind,
     right: ExpressionKind
   ): AssignmentExpression = js.native
-  def from(params: AnonCommentsLeft): AssignmentExpression = js.native
+  def apply(operator: LessthansignLessthansignEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: LessthansignLessthansignEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: PercentsignEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: PercentsignEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: PlussignEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: PlussignEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: SlashEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: SlashEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: VerticallineEqualssign, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: VerticallineEqualssign, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: `-Equalssign`, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: `-Equalssign`, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: `^Equalssign`, left: MemberExpressionKind, right: ExpressionKind): AssignmentExpression = js.native
+  def apply(operator: `^Equalssign`, left: PatternKind, right: ExpressionKind): AssignmentExpression = js.native
+  
+  def from(params: CommentsLeft): AssignmentExpression = js.native
 }
-

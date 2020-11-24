@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-extend
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 JSS plugin that enables mixing in styles.
@@ -10,9 +10,9 @@ JSS plugin that enables mixing in styles.
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-extend |
 | Keywords           | jss, plugin, extend, css-in-js, cssinjs, css in js |
-| # releases         | 32 |
-| # dependents       | 4 |
-| # downloads        | 542816 |
+| # releases         | 39 |
+| # dependents       | 7 |
+| # downloads        | 2653497 |
 | # stars            | 0 |
 
 ## Links

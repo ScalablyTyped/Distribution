@@ -4,7 +4,7 @@ import typings.androiduix.android.content.Context
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.widget.EditText")
 @js.native
@@ -15,4 +15,3 @@ class EditText protected ()
   def this(context: Context, bindElement: js.UndefOr[scala.Nothing], defStyle: js.Any) = this()
   def this(context: Context, bindElement: HTMLElement, defStyle: js.Any) = this()
 }
-

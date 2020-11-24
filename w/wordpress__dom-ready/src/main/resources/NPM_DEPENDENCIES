@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/dom-ready" : "2.10.0"
+      "@wordpress/dom-ready" : "2.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/dom-ready" : "2.10.0"
+      "@wordpress/dom-ready" : "2.11.0"
     }
   ],
   "compile-devDependencies" : [

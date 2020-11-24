@@ -9,7 +9,7 @@ import typings.sawtoothSdk.protobufMod.TpUnregisterResponse.Status
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TpUnregisterResponse")
 @js.native
@@ -19,22 +19,21 @@ import scala.scalajs.js.annotation._
   */
 class TpUnregisterResponse () extends ITpUnregisterResponse {
   def this(properties: ITpUnregisterResponse) = this()
+  
   /** TpUnregisterResponse status. */
   @JSName("status")
   var status_TpUnregisterResponse: Status = js.native
+  
   /**
     * Converts this TpUnregisterResponse to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "TpUnregisterResponse")
 @js.native
 object TpUnregisterResponse extends js.Object {
-  @js.native
-  sealed trait Status extends js.Object
   
   /**
     * Creates a new TpUnregisterResponse instance using the specified properties.
@@ -43,6 +42,7 @@ object TpUnregisterResponse extends js.Object {
     */
   def create(): TpUnregisterResponse = js.native
   def create(properties: ITpUnregisterResponse): TpUnregisterResponse = js.native
+  
   /**
     * Decodes a TpUnregisterResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -55,6 +55,7 @@ object TpUnregisterResponse extends js.Object {
   def decode(reader: Reader, length: Double): TpUnregisterResponse = js.native
   def decode(reader: Uint8Array): TpUnregisterResponse = js.native
   def decode(reader: Uint8Array, length: Double): TpUnregisterResponse = js.native
+  
   /**
     * Decodes a TpUnregisterResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -64,6 +65,7 @@ object TpUnregisterResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): TpUnregisterResponse = js.native
   def decodeDelimited(reader: Uint8Array): TpUnregisterResponse = js.native
+  
   /**
     * Encodes the specified TpUnregisterResponse message. Does not implicitly {@link TpUnregisterResponse.verify|verify} messages.
     * @param message TpUnregisterResponse message or plain object to encode
@@ -72,6 +74,7 @@ object TpUnregisterResponse extends js.Object {
     */
   def encode(message: ITpUnregisterResponse): Writer = js.native
   def encode(message: ITpUnregisterResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpUnregisterResponse message, length delimited. Does not implicitly {@link TpUnregisterResponse.verify|verify} messages.
     * @param message TpUnregisterResponse message or plain object to encode
@@ -80,12 +83,14 @@ object TpUnregisterResponse extends js.Object {
     */
   def encodeDelimited(message: ITpUnregisterResponse): Writer = js.native
   def encodeDelimited(message: ITpUnregisterResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpUnregisterResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpUnregisterResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): TpUnregisterResponse = js.native
+  
   /**
     * Creates a plain object from a TpUnregisterResponse message. Also converts values to other types if specified.
     * @param message TpUnregisterResponse
@@ -94,36 +99,36 @@ object TpUnregisterResponse extends js.Object {
     */
   def toObject(message: TpUnregisterResponse): StringDictionary[js.Any] = js.native
   def toObject(message: TpUnregisterResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpUnregisterResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  
+  @js.native
+  sealed trait Status extends js.Object
   /** Status enum. */
   @js.native
   object Status extends js.Object {
-    @js.native
-    sealed trait ERROR extends Status
-    
-    @js.native
-    sealed trait OK extends Status
-    
-    @js.native
-    sealed trait STATUS_UNSET extends Status
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    
+    @js.native
+    sealed trait ERROR extends Status
     /* 2 */ @js.native
     object ERROR extends TopLevel[ERROR with Double]
     
+    @js.native
+    sealed trait OK extends Status
     /* 1 */ @js.native
     object OK extends TopLevel[OK with Double]
     
+    @js.native
+    sealed trait STATUS_UNSET extends Status
     /* 0 */ @js.native
     object STATUS_UNSET extends TopLevel[STATUS_UNSET with Double]
-    
   }
-  
 }
-

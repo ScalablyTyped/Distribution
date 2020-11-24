@@ -2,11 +2,12 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.like")
 @js.native
 object like extends js.Object {
+  
   /**
     * Represents a `<PropertyIsLike>` comparison operator that matches a string property
     * value against a text pattern.
@@ -125,4 +126,3 @@ object like extends js.Object {
     opt_matchCase: Boolean
   ): IsLike = js.native
 }
-

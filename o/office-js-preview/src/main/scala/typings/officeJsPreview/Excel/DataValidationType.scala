@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataValidationType extends js.Object
-
 /**
   *
   * Represents Data validation type enum.
@@ -16,6 +15,7 @@ sealed trait DataValidationType extends js.Object
 @JSGlobal("Excel.DataValidationType")
 @js.native
 object DataValidationType extends js.Object {
+  
   /**
     * Custom data validation type
     *
@@ -85,6 +85,4 @@ object DataValidationType extends js.Object {
     */
   @js.native
   sealed trait wholeNumber extends DataValidationType
-  
 }
-

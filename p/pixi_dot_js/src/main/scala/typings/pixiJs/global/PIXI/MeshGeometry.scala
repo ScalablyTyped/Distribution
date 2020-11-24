@@ -4,7 +4,7 @@ import typings.std.Float32Array
 import typings.std.Uint16Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Standard 2D geometry used in PixiJS.
@@ -54,4 +54,3 @@ class MeshGeometry ()
   def this(vertices: Float32Array, uvs: Float32Array, index: js.Array[Double]) = this()
   def this(vertices: Float32Array, uvs: Float32Array, index: Uint16Array) = this()
 }
-

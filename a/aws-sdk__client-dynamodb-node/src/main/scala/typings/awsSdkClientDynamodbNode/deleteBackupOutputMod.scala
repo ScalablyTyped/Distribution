@@ -1,13 +1,12 @@
 package typings.awsSdkClientDynamodbNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/model/DeleteBackupOutput", JSImport.Namespace)
 @js.native
 object deleteBackupOutputMod extends js.Object {
-  val DeleteBackupOutput: Structure = js.native
+  
+  val DeleteBackupOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

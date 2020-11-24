@@ -2,13 +2,14 @@ package typings.jqueryAjaxfile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows jQuery Promises to interop with non-jQuery promises
   */
 @js.native
 trait JQueryGenericPromise[T] extends js.Object {
+  
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
     * 
@@ -56,4 +57,3 @@ trait JQueryGenericPromise[T] extends js.Object {
     progressFilter: js.Function1[/* repeated */ js.Any, _]
   ): JQueryPromise[U] = js.native
 }
-

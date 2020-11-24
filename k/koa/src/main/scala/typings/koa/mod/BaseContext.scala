@@ -4,21 +4,13 @@ import typings.koa.anon.Call
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseContext
   extends ContextDelegatedRequest
      with ContextDelegatedResponse {
-  /**
-    * Similar to .throw(), adds assertion.
-    *
-    *    this.assert(this.user, 401, 'Please login!');
-    *
-    * See: https://github.com/jshttp/http-assert
-    */
-  @JSName("assert")
-  var assert_Original: Call = js.native
+  
   /**
     * Similar to .throw(), adds assertion.
     *
@@ -100,14 +92,26 @@ trait BaseContext
     */
   def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
   /**
+    * Similar to .throw(), adds assertion.
+    *
+    *    this.assert(this.user, 401, 'Please login!');
+    *
+    * See: https://github.com/jshttp/http-assert
+    */
+  @JSName("assert")
+  var assert_Original: Call = js.native
+  
+  /**
     * util.inspect() implementation, which
     * just returns the JSON output.
     */
   def inspect(): js.Any = js.native
+  
   /**
     * Default error handling.
     */
   def onerror(err: Error): Unit = js.native
+  
   /**
     * Throw an error with `msg` and optional `status`
     * defaulting to 500. Note that these are user-level
@@ -128,6 +132,7 @@ trait BaseContext
   def `throw`(message: String, code: Double, properties: js.Object): scala.Nothing = js.native
   def `throw`(properties: (Double | String | js.Object)*): scala.Nothing = js.native
   def `throw`(status: Double): scala.Nothing = js.native
+  
   /**
     * Return JSON representation.
     *
@@ -138,4 +143,3 @@ trait BaseContext
     */
   def toJSON(): js.Any = js.native
 }
-

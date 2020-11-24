@@ -2,9 +2,10 @@ package typings.officeUiFabricReact
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object stackTypesMod {
+  
   type IStackComponent = typings.uifabricFoundation.libIcomponentMod.IComponent[
     typings.officeUiFabricReact.stackTypesMod.IStackProps, 
     typings.officeUiFabricReact.stackTypesMod.IStackTokens, 
@@ -12,7 +13,9 @@ package object stackTypesMod {
     typings.officeUiFabricReact.stackTypesMod.IStackProps, 
     js.Object
   ]
+  
   type IStackSlot = typings.uifabricFoundation.libIslotsMod.ISlotProp[typings.officeUiFabricReact.stackTypesMod.IStackProps, scala.Nothing]
+  
   type IStackStylesReturnType = typings.std.ReturnType[
     typings.std.Extract[
       typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject[
@@ -23,6 +26,7 @@ package object stackTypesMod {
       js.Function
     ]
   ]
+  
   type IStackTokenReturnType = typings.std.ReturnType[
     typings.std.Extract[
       typings.uifabricFoundation.libIcomponentMod.ITokenFunctionOrObject[

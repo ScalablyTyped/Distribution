@@ -10,9 +10,9 @@ Linq methods for JavaScript/TypeScript to work with Arrays
 | ------------------ | :-------------: |
 | Full name          | linq4js |
 | Keywords           | Linq, .NET, TypeScript, JavaScript, Array, Sorting |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 3798 |
+| # downloads        | 2768 |
 | # stars            | 0 |
 
 ## Links

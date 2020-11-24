@@ -5,7 +5,7 @@ import typings.angular.mod.IPromise
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates and maintains a synchronized list of data. This is a pseudo-read-only array. One should
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AngularFireArray extends Array[AngularFireSimpleObject] {
+  
   /**
     * Create a new record with a unique ID and add it to the end of the array.
     * This should be used instead of Array.prototype.push, since those changes will not be
@@ -37,12 +38,14 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   def $add(newData: js.Any): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
+  
   /**
     * Informs $firebase to stop sending events and clears memory being used
     * by this array (delete's its local content).
     */
   @JSName("$destroy")
   def $destroy(): Unit = js.native
+  
   /**
     * Returns the record for a given Firebase key (record.$id). If the record is not found
     * then returns null.
@@ -52,6 +55,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     */
   @JSName("$getRecord")
   def $getRecord(key: String): AngularFireSimpleObject = js.native
+  
   /**
     * The inverse of $keyAt, this method takes a Firebase key (record.$id) and returns the
     * index in the array where that record is stored. If the record is not in the array,
@@ -62,6 +66,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     */
   @JSName("$indexFor")
   def $indexFor(key: String): Double = js.native
+  
   /**
     * Given an item in this array or the index of an item in the array, this returns the
     * Firebase key (record.$id) for that record. If passed an invalid key or an item which
@@ -72,6 +77,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     */
   @JSName("$keyAt")
   def $keyAt(recordOrIndex: js.Any): String = js.native
+  
   /**
     * The loaded method is invoked after the initial batch of data arrives from the server.
     * When this resolves, all data which existed prior to calling $asArray() is now cached
@@ -95,11 +101,13 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit],
     reject: js.Function1[/* err */ js.Any, _]
   ): IPromise[AngularFireArray] = js.native
+  
   /**
     * @returns {Firebase} the original Firebase ref used to create this object.
     */
   @JSName("$ref")
   def $ref(): js.Any = js.native
+  
   /**
     * Pass either an existing item in this array or the index of that item and it will
     * be removed both locally and in Firebase. This should be used in place of
@@ -118,6 +126,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   def $remove(recordOrIndex: js.Any): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
+  
   /**
     * Pass either an item in the array or the index of an item and it will be saved back
     * to Firebase. While the array is read-only and its structure should not be changed,
@@ -136,6 +145,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   def $save(recordOrIndex: js.Any): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
+  
   /**
     * Listeners passed into this method are notified whenever a new change (add, updated,
     * move, remove) is received from the server. Each invocation is sent an object
@@ -159,4 +169,3 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     context: js.Any
   ): js.Function = js.native
 }
-

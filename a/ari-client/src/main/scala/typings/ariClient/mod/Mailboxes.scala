@@ -5,10 +5,11 @@ import typings.ariClient.anon.NewMessages
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mailboxes extends js.Object {
+  
   /**
     * Destroy a mailbox.
     *
@@ -21,6 +22,7 @@ trait Mailboxes extends js.Object {
     * @param params.mailboxName - Name of the mailbox.
     */
   def delete(params: MailboxName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Retrieve the current state of a mailbox.
     *
@@ -33,6 +35,7 @@ trait Mailboxes extends js.Object {
     * @param params.mailboxName - Name of the mailbox.
     */
   def get(params: MailboxName, callback: js.Function2[/* err */ Error, /* mailbox */ Mailbox, Unit]): Unit = js.native
+  
   /**
     * List all mailboxes.
     */
@@ -41,6 +44,7 @@ trait Mailboxes extends js.Object {
     * List all mailboxes.
     */
   def list(callback: js.Function2[/* err */ Error, /* mailboxs */ js.Array[Mailbox], Unit]): Unit = js.native
+  
   /**
     * Change the state of a mailbox. (Note - implicitly creates the mailbox).
     *
@@ -58,4 +62,3 @@ trait Mailboxes extends js.Object {
     */
   def update(params: NewMessages, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

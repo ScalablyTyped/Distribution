@@ -6,11 +6,12 @@ import typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleItemProp
 import typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList", JSImport.Namespace)
 @js.native
 object selectedItemsListMod extends js.Object {
+  
   @js.native
   class BasePeopleSelectedItemsList ()
     extends typings.officeUiFabricReact.baseSelectedItemsListMod.BaseSelectedItemsList[IExtendedPersonaProps, ISelectedPeopleProps]
@@ -30,12 +31,10 @@ object selectedItemsListMod extends js.Object {
   @js.native
   class SelectedPeopleList ()
     extends typings.officeUiFabricReact.selectedPeopleListMod.SelectedPeopleList
-  
   /* static members */
   @js.native
   object SelectedPeopleList extends js.Object {
+    
     var defaultProps: js.Any = js.native
   }
-  
 }
-

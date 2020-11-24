@@ -10,9 +10,9 @@ A Long class for representing a 64-bit two's-complement integer value.
 | ------------------ | :-------------: |
 | Full name          | @xtuc/long |
 | Keywords           | math |
-| # releases         | 7 |
+| # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 201168801 |
+| # downloads        | 345117818 |
 | # stars            | 0 |
 
 ## Links

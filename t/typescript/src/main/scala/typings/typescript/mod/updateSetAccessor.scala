@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateSetAccessor")
 @js.native
 object updateSetAccessor extends js.Object {
+  
   def apply(
     node: SetAccessorDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -52,6 +53,7 @@ object updateSetAccessor extends js.Object {
     parameters: js.Array[ParameterDeclaration],
     body: Block
   ): SetAccessorDeclaration = js.native
+  /** @deprecated Use `factory.updateSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: SetAccessorDeclaration,
     decorators: js.Array[Decorator],
@@ -68,4 +70,3 @@ object updateSetAccessor extends js.Object {
     body: Block
   ): SetAccessorDeclaration = js.native
 }
-

@@ -2,11 +2,11 @@ package typings.expressFlash2.mod.global.Express
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Response extends js.Object {
-  var locals: typings.expressFlash2.anon.Flash = js.native
+  
   /**
     * Queue flash `msg` of the given `type`.
     *
@@ -29,5 +29,6 @@ trait Response extends js.Object {
     */
   def flash(`type`: String, msg: String): Unit = js.native
   def flash(`type`: String, msg: js.Array[_]): Unit = js.native
+  
+  var locals: typings.expressFlash2.anon.Flash = js.native
 }
-

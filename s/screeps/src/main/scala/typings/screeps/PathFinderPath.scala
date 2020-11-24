@@ -2,7 +2,7 @@ package typings.screeps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object containing:
@@ -14,54 +14,65 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PathFinderPath extends js.Object {
+  
   /**
     * The total cost of the path as derived from `plainCost`, `swampCost` and any given CostMatrix instances.
     */
   var cost: Double = js.native
+  
   /**
     * If the pathfinder fails to find a complete path, this will be true.
     *
     * Note that `path` will still be populated with a partial path which represents the closest path it could find given the search parameters.
     */
   var incomplete: Boolean = js.native
+  
   /**
     * Total number of operations performed before this path was calculated.
     */
   var ops: Double = js.native
+  
   /**
     * An array of RoomPosition objects.
     */
   var path: js.Array[RoomPosition] = js.native
 }
-
 object PathFinderPath {
+  
   @scala.inline
   def apply(cost: Double, incomplete: Boolean, ops: Double, path: js.Array[RoomPosition]): PathFinderPath = {
     val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any], incomplete = incomplete.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathFinderPath]
   }
+  
   @scala.inline
   implicit class PathFinderPathOps[Self <: PathFinderPath] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCost(value: Double): Self = this.set("cost", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIncomplete(value: Boolean): Self = this.set("incomplete", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOps(value: Double): Self = this.set("ops", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPathVarargs(value: RoomPosition*): Self = this.set("path", js.Array(value :_*))
+    
     @scala.inline
     def setPath(value: js.Array[RoomPosition]): Self = this.set("path", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.oracledb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oracledb", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * The oracledb.Promise property is no longer used in node-oracledb 5 and has no effect.
     * 
@@ -15,6 +16,7 @@ object ^ extends js.Object {
     * @deprecated 5.0
     */
   var Promise: js.Promise[js.Any] = js.native
+  
   /**
     * If true, the transaction in the current connection is automatically committed at the end of statement execution.
     * This property may be overridden in an execute() call.
@@ -23,6 +25,7 @@ object ^ extends js.Object {
     * @since 0.5
     */
   var autoCommit: Boolean = js.native
+  
   /**
     * The user-chosen Connection class value defines a logical name for connections.
     * Most single purpose applications should set connectionClass when using a connection pool or DRCP.
@@ -39,12 +42,14 @@ object ^ extends js.Object {
     * If connectionClass is set for a non-pooled connection, the driver name is not recorded in V$ views.
     */
   var connectionClass: String = js.native
+  
   /**
     * Sets the name used for Edition-Based Redefinition by connections.
     *
     * @since 2.2
     */
   var edition: String = js.native
+  
   /**
     * Determines whether Oracle Client events mode should be enabled.
     *
@@ -56,6 +61,7 @@ object ^ extends js.Object {
     * @since 2.2
     */
   var events: Boolean = js.native
+  
   /**
     * Determines whether additional metadata is available for queries and for REF CURSORs returned from PL/SQL blocks.
     *
@@ -69,6 +75,7 @@ object ^ extends js.Object {
     * @since 1.10
     */
   var extendedMetaData: Boolean = js.native
+  
   /**
     * If true, connections will be established using external authentication.
     *
@@ -80,6 +87,7 @@ object ^ extends js.Object {
     * @since 0.5
     */
   var externalAuth: Boolean = js.native
+  
   /**
     * This property sets the size of an internal buffer used for fetching query rows from Oracle Database.
     * Changing it may affect query performance but does not affect how many rows are returned to the application.
@@ -97,6 +105,7 @@ object ^ extends js.Object {
     * @since 2.0
     */
   var fetchArraySize: Double = js.native
+  
   /**
     * Configure data types to be returned as a Buffer instead of the default representation when queried with execute() or queryStream().
     *
@@ -109,6 +118,7 @@ object ^ extends js.Object {
     * @since 1.13
     */
   var fetchAsBuffer: js.Array[Double] = js.native
+  
   /**
     * An array of node-oracledb types. The valid types are oracledb.DATE, oracledb.NUMBER, oracledb.BUFFER, and oracledb.CLOB.
     * When any column having one of the specified types is queried with execute() or queryStream(), the column data is returned as a string instead of the default representation.
@@ -126,6 +136,7 @@ object ^ extends js.Object {
     * For non-CLOB types, the conversion to string is handled by Oracle client libraries and is often referred to as defining the fetch type.
     */
   var fetchAsString: js.Array[Double] = js.native
+  
   /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
     * Rows beyond this limit are not fetched from the database. A value of 0 means there is no limit.
@@ -143,6 +154,7 @@ object ^ extends js.Object {
     * @default 0 (unlimited)
     */
   var maxRows: Double = js.native
+  
   /**
     * The format of query rows fetched when using connection.execute() or connection.queryStream().
     * It affects both ResultSet and non-ResultSet queries. It can be used for top level queries and REF CURSOR output.
@@ -161,6 +173,7 @@ object ^ extends js.Object {
     * @default ARRAY
     */
   var outFormat: Double = js.native
+  
   /**
     * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
     *
@@ -169,6 +182,7 @@ object ^ extends js.Object {
     * @default 1
     */
   var poolIncrement: Double = js.native
+  
   /**
     * The maximum number of connections to which a connection pool can grow.
     *
@@ -179,6 +193,7 @@ object ^ extends js.Object {
     * @default 4
     */
   var poolMax: Double = js.native
+  
   /**
     * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
     * 
@@ -191,6 +206,7 @@ object ^ extends js.Object {
     * @since 4.1
     */
   var poolMaxPerShard: Double = js.native
+  
   /**
     * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
     *
@@ -205,6 +221,7 @@ object ^ extends js.Object {
     * @default 0
     */
   var poolMin: Double = js.native
+  
   /**
     * When a pool getConnection() is called and the connection has been idle in the pool for at least
     * poolPingInterval seconds, node-oracledb internally “pings” the database to check the connection is alive.
@@ -218,6 +235,7 @@ object ^ extends js.Object {
     * @since 1.12
     */
   var poolPingInterval: Double = js.native
+  
   /**
     * The number of seconds after which idle connections (unused in the pool) are terminated.
     * Idle connections are terminated only when the pool is accessed. If the poolTimeout is set to 0,
@@ -228,6 +246,7 @@ object ^ extends js.Object {
     * @default 60
     */
   var poolTimeout: Double = js.native
+  
   /**
     * This is a query tuning option to set the number of additional rows the underlying Oracle Client library
     * fetches during the internal initial statement execution phase of a query. The prefetch size does not affect when, or how many,
@@ -246,6 +265,7 @@ object ^ extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#rowfetching
     */
   var prefetchRows: Double = js.native
+  
   /**
     * The maximum number of pending pool.getConnection() calls that can be queued.
     * 
@@ -259,6 +279,7 @@ object ^ extends js.Object {
     * @default 500
     */
   var queueMax: Double = js.native
+  
   /**
     * This property was removed in node-oracledb 3.0 and queuing was always enabled.
     * In node-oracledb 5.0, set queueMax to 0 to disable queuing.
@@ -266,6 +287,7 @@ object ^ extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#connpoolqueue
     */
   var queueRequests: Double = js.native
+  
   /**
     * The number of milliseconds after which connection requests waiting in the connection request queue are terminated.
     * If queueTimeout is 0, then queued connection requests are never terminated.
@@ -276,6 +298,7 @@ object ^ extends js.Object {
     * @since 1.7
     */
   var queueTimeout: Double = js.native
+  
   /**
     * The number of statements that are cached in the statement cache of each connection.
     *
@@ -288,4 +311,3 @@ object ^ extends js.Object {
     */
   var stmtCacheSize: Double = js.native
 }
-

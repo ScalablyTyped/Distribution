@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ParameterDataType extends js.Object
-
 @JSGlobal("tableau.ParameterDataType")
 @js.native
 object ParameterDataType extends js.Object {
+  
   @js.native
   sealed trait BOOLEAN extends ParameterDataType
   
@@ -27,6 +27,4 @@ object ParameterDataType extends js.Object {
   
   @js.native
   sealed trait STRING extends ParameterDataType
-  
 }
-

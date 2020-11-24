@@ -10,9 +10,9 @@ ProseMirror document transformations
 | ------------------ | :-------------: |
 | Full name          | prosemirror-transform |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 52 |
-| # downloads        | 2522745 |
+| # releases         | 15 |
+| # dependents       | 85 |
+| # downloads        | 5757539 |
 | # stars            | 0 |
 
 ## Links

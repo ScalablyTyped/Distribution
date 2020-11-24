@@ -10,11 +10,12 @@ import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.mod.TensorBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/pool_utils", JSImport.Namespace)
 @js.native
 object poolUtilsMod extends js.Object {
+  
   def maxPoolPositions(xValues: TypedArray, xShape: js.Array[Double], dtype: DataType, convInfo: Conv2DInfo): TensorBuffer[Rank, int32] = js.native
   def maxPoolPositions(
     xValues: TypedArray,
@@ -39,6 +40,7 @@ object poolUtilsMod extends js.Object {
     flattenPositions: Boolean,
     includeBatchInIndex: Boolean
   ): TensorBuffer[Rank, int32] = js.native
+  
   @JSName("pool")
   def pool_avg(
     xValues: TypedArray,
@@ -58,4 +60,3 @@ object poolUtilsMod extends js.Object {
     poolType: max
   ): TensorBuffer[Rank, DataType] = js.native
 }
-

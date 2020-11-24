@@ -11,8 +11,8 @@ A streaming parser for HTML form data for node.js
 | Full name          | busboy |
 | Keywords           | uploads, forms, multipart, form-data |
 | # releases         | 3 |
-| # dependents       | 396 |
-| # downloads        | 51511479 |
+| # dependents       | 448 |
+| # downloads        | 86233786 |
 | # stars            | 82 |
 
 ## Links

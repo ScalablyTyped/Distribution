@@ -2,9 +2,11 @@ package typings.fibers
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object futureMod {
+  
   type FutureOrFutureArray = typings.fibers.futureMod.Future[js.Any] | js.Array[typings.fibers.futureMod.Future[js.Any]]
+  
   type FutureResolveFunction[T] = js.Function2[/* err */ typings.std.Error, /* val */ T, scala.Unit]
 }

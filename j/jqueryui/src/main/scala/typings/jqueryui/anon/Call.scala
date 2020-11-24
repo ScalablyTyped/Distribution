@@ -21,11 +21,11 @@ import typings.jqueryui.jqueryuiStrings.select
 import typings.jqueryui.jqueryuiStrings.widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
-  var active: Boolean = js.native
+  
   def apply(): JQuery = js.native
   def apply(methodName: String): JQuery = js.native
   def apply(methodName: String, event: JQueryEventObject, item: JQuery): Unit = js.native
@@ -58,5 +58,6 @@ trait Call extends js.Object {
   def apply(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
   def apply(optionLiteral: String, options: MenuOptions): js.Any = js.native
   def apply(options: MenuOptions): JQuery = js.native
+  
+  var active: Boolean = js.native
 }
-

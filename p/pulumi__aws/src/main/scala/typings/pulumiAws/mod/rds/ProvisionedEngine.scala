@@ -1,12 +1,11 @@
 package typings.pulumiAws.mod.rds
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pulumiAws.engineModeMod.EngineMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "rds.ProvisionedEngine")
 @js.native
-object ProvisionedEngine extends TopLevel[EngineMode]
-
+object ProvisionedEngine
+  extends TopLevel[typings.pulumiAws.enumsRdsMod.EngineMode]

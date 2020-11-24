@@ -9,10 +9,10 @@ State management for notices.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/notices |
-| Keywords           | wordpress, notices |
-| # releases         | 23 |
-| # dependents       | 4 |
-| # downloads        | 121491 |
+| Keywords           | wordpress, gutenberg, notices |
+| # releases         | 41 |
+| # dependents       | 9 |
+| # downloads        | 387442 |
 | # stars            | 0 |
 
 ## Links

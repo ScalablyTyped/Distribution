@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InternetHeaders extends js.Object {
+  
   /**
     * Given an array of internet header names, this method returns a dictionary containing those internet headers and their values. 
     * If the add-in requests an x-header that is not available, that x-header will not be returned in the results.
@@ -55,7 +56,6 @@ trait InternetHeaders extends js.Object {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def getAsync(names: js.Array[String]): Unit = js.native
-  def getAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
   def getAsync(
     names: js.Array[String],
     options: js.UndefOr[scala.Nothing],
@@ -67,6 +67,7 @@ trait InternetHeaders extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
   ): Unit = js.native
+  
   /**
     * Given an array of internet header names, this method removes the specified headers from the internet header collection.
     * 
@@ -87,7 +88,6 @@ trait InternetHeaders extends js.Object {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeAsync(names: js.Array[String]): Unit = js.native
-  def removeAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
   def removeAsync(
     names: js.Array[String],
     options: js.UndefOr[scala.Nothing],
@@ -99,6 +99,7 @@ trait InternetHeaders extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
   ): Unit = js.native
+  
   /**
     * Sets the specified internet headers to the specified values.
     * 
@@ -123,7 +124,6 @@ trait InternetHeaders extends js.Object {
     *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def setAsync(headers: js.Object): Unit = js.native
-  def setAsync(headers: js.Object, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(
     headers: js.Object,
     options: js.UndefOr[scala.Nothing],
@@ -136,4 +136,3 @@ trait InternetHeaders extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

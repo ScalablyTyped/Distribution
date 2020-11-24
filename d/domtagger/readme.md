@@ -10,9 +10,9 @@ The hyperHTML's template literal parser
 | ------------------ | :-------------: |
 | Full name          | domtagger |
 | Keywords           | - |
-| # releases         | 34 |
+| # releases         | 36 |
 | # dependents       | 6 |
-| # downloads        | 73724 |
+| # downloads        | 90097 |
 | # stars            | 0 |
 
 ## Links

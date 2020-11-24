@@ -3,11 +3,12 @@ package typings.openpgp.mod.key
 import typings.openpgp.mod.KeyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "key.generate")
 @js.native
 object generate extends js.Object {
+  
   /**
     * Generates a new OpenPGP key. Supports RSA and ECC keys.
     * Primary and subkey will be of same type.
@@ -26,4 +27,3 @@ object generate extends js.Object {
     */
   def apply(options: KeyOptions): js.Promise[Key] = js.native
 }
-

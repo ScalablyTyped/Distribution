@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Pubprofiles")
 @js.native
 class ResourcePubprofiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.pubprofiles.list
     * @desc Gets the requested publisher profile(s) by publisher accountId.
@@ -45,4 +47,3 @@ class ResourcePubprofiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGetPublisherProfilesByAccountIdResponse]
   ): Unit = js.native
 }
-

@@ -9,15 +9,31 @@ import typings.three.constantsMod.TextureEncoding
 import typings.three.constantsMod.TextureFilter
 import typings.three.constantsMod.Wrapping
 import typings.three.textureMod.Texture
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/textures/CompressedTexture", JSImport.Namespace)
 @js.native
 object compressedTextureMod extends js.Object {
+  
   @js.native
   class CompressedTexture protected () extends Texture {
+    /**
+    	 * @param mipmaps
+    	 * @param width
+    	 * @param height
+    	 * @param [format=THREE.RGBAFormat]
+    	 * @param [type=THREE.UnsignedByteType]
+    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+    	 * @param [magFilter=THREE.LinearFilter]
+    	 * @param [minFilter=THREE.LinearMipmapLinearFilter]
+    	 * @param [anisotropy=1]
+    	 * @param [encoding=THREE.LinearEncoding]
+    	 */
     def this(
       mipmaps: js.Array[ImageData],
       width: Double,
@@ -32,9 +48,13 @@ object compressedTextureMod extends js.Object {
       anisotropy: js.UndefOr[Double],
       encoding: js.UndefOr[TextureEncoding]
     ) = this()
+    
     @JSName("image")
     var image_CompressedTexture: HeightWidth = js.native
+    
+    val isCompressedTexture: `true` = js.native
+    
+    @JSName("mipmaps")
+    var mipmaps_CompressedTexture: js.Array[ImageData] = js.native
   }
-  
 }
-

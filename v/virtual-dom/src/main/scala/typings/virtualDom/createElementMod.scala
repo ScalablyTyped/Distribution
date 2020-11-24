@@ -9,11 +9,12 @@ import typings.virtualDom.VirtualDOM.Widget
 import typings.virtualDom.anon.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("virtual-dom/create-element", JSImport.Namespace)
 @js.native
 object createElementMod extends js.Object {
+  
   def apply(vnode: Thunk): Element = js.native
   def apply(vnode: Thunk, opts: Document): Element = js.native
   def apply(vnode: VNode): Element = js.native
@@ -27,4 +28,3 @@ object createElementMod extends js.Object {
   def apply(vnode: Widget): Element = js.native
   def apply(vnode: Widget, opts: Document): Element = js.native
 }
-

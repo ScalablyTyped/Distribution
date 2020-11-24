@@ -3,7 +3,7 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnnotationsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Annotation")
 @js.native
@@ -20,26 +20,27 @@ class Annotation protected () extends js.Object {
     *        the options object
     */
   def this(chart: Chart_, userOptions: AnnotationsOptions) = this()
+  
   /**
     * The group svg element.
     */
   var group: SVGElement = js.native
+  
   /**
     * The group svg element of the annotation's labels.
     */
   var labelsGroup: SVGElement = js.native
+  
   /**
     * The options for the annotations.
     */
   var options: AnnotationsOptions = js.native
+  
   /**
     * The group svg element of the annotation's shapes.
     */
   var shapesGroup: SVGElement = js.native
-  /**
-    * The user options for the annotations.
-    */
-  var userOptions: AnnotationsOptions = js.native
+  
   /**
     * Updates an annotation.
     *
@@ -47,5 +48,9 @@ class Annotation protected () extends js.Object {
     *        New user options for the annotation.
     */
   def update(userOptions: PartialAnnotationsOptions): Unit = js.native
+  
+  /**
+    * The user options for the annotations.
+    */
+  var userOptions: AnnotationsOptions = js.native
 }
-

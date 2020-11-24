@@ -2,14 +2,14 @@ package typings.winrtUwp.Windows.Foundation.Collections
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of key-value pairs, correlating several other collection interfaces. */
 @js.native
 trait IPropertySet
   extends IMap[String, js.Any]
-
 object IPropertySet {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -25,4 +25,3 @@ object IPropertySet {
     __obj.asInstanceOf[IPropertySet]
   }
 }
-

@@ -8,9 +8,115 @@ import typings.googleVisualization.google.visualization.ChartPointShape
 import typings.googleVisualization.google.visualization.ChartSelectionMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleVisualizationStrings {
+  
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def circle: circle = "circle".asInstanceOf[circle]
+  
+  @scala.inline
+  def diamond: diamond = "diamond".asInstanceOf[diamond]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def exponential: exponential = "exponential".asInstanceOf[exponential]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
+  
+  @scala.inline
+  def inner: inner = "inner".asInstanceOf[inner]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
+  
+  @scala.inline
+  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  
+  @scala.inline
+  def newRow: newRow = "newRow".asInstanceOf[newRow]
+  
+  @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def out: out = "out".asInstanceOf[out]
+  
+  @scala.inline
+  def percent: percent = "percent".asInstanceOf[percent]
+  
+  @scala.inline
+  def polygon: polygon = "polygon".asInstanceOf[polygon]
+  
+  @scala.inline
+  def polynomial: polynomial = "polynomial".asInstanceOf[polynomial]
+  
+  @scala.inline
+  def prev: prev = "prev".asInstanceOf[prev]
+  
+  @scala.inline
+  def relative: relative = "relative".asInstanceOf[relative]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def sameRow: sameRow = "sameRow".asInstanceOf[sameRow]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
+  @scala.inline
+  def star: star = "star".asInstanceOf[star]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
   @js.native
   sealed trait absolute extends js.Object
   
@@ -119,76 +225,4 @@ object googleVisualizationStrings {
   
   @js.native
   sealed trait vertical extends ChartOrientation
-  
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
-  def diamond: diamond = "diamond".asInstanceOf[diamond]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def exponential: exponential = "exponential".asInstanceOf[exponential]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def inner: inner = "inner".asInstanceOf[inner]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
-  @scala.inline
-  def newRow: newRow = "newRow".asInstanceOf[newRow]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def out: out = "out".asInstanceOf[out]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
-  @scala.inline
-  def polynomial: polynomial = "polynomial".asInstanceOf[polynomial]
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def sameRow: sameRow = "sameRow".asInstanceOf[sameRow]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def triangle: triangle = "triangle".asInstanceOf[triangle]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

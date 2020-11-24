@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/waf/rule", "Rule")
 @js.native
@@ -23,32 +23,37 @@ class Rule protected () extends CustomResource {
     */
   def this(name: String, args: RuleArgs) = this()
   def this(name: String, args: RuleArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the WAF rule.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The name or description for the Amazon CloudWatch metric of this rule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace.
     */
   val metricName: Output_[String] = js.native
+  
   /**
     * The name or description of the rule.
     */
   val name: Output_[String] = js.native
+  
   /**
     * The objects to include in a rule (documented below).
     */
   val predicates: Output_[js.UndefOr[js.Array[RulePredicate]]] = js.native
+  
   /**
     * Key-value map of resource tags
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/waf/rule", "Rule")
 @js.native
 object Rule extends js.Object {
+  
   /**
     * Get an existing Rule resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -62,10 +67,10 @@ object Rule extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Rule = js.native
   def get(name: String, id: Input[ID], state: RuleState): Rule = js.native
   def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = js.native
+  
   /**
     * Returns true if the given object is an instance of Rule.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = js.native
 }
-

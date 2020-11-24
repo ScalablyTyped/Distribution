@@ -12,7 +12,7 @@ node client for Etsy'd StatsD server
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 83 |
-| # downloads        | 2735586 |
+| # downloads        | 2648075 |
 | # stars            | 13 |
 
 ## Links

@@ -12,7 +12,7 @@ A node module for sending notifications in electron applications
 | Keywords           | electron, notification, notification center, toaster, growl, notify-send, terminal-notifier, notify |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 18290 |
+| # downloads        | 15610 |
 | # stars            | 8 |
 
 ## Links

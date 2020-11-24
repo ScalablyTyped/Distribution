@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "matchRecursive")
 @js.native
 object matchRecursive extends js.Object {
+  
   /**
     * Returns an array of match strings between outermost left and right delimiters, or an array of
     * objects with detailed match parts and position data. An error is thrown if delimiters are
@@ -62,4 +63,3 @@ object matchRecursive extends js.Object {
   def apply[T /* <: js.UndefOr[MatchRecursiveOptions | Null] */](str: String, left: String, right: String, flags: String, options: T): js.Array[MatchRecursiveValueNameMatch | String] = js.native
   def apply[T /* <: js.UndefOr[MatchRecursiveOptions | Null] */](str: String, left: String, right: String, flags: Null, options: T): js.Array[MatchRecursiveValueNameMatch | String] = js.native
 }
-

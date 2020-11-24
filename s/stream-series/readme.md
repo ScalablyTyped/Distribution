@@ -9,9 +9,9 @@ Waterfalls for streams
 | ------------------ | :-------------: |
 | Full name          | stream-series |
 | Keywords           | stream, control, flow, series |
-| # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 273224 |
+| # releases         | 0 |
+| # dependents       | 20 |
+| # downloads        | 292401 |
 | # stars            | 3 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.parsimmon.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Equivalent to Parsimmon.string("\n").
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("parsimmon", "lf")
 @js.native
 object lf extends TopLevel[Parser[String]]
-

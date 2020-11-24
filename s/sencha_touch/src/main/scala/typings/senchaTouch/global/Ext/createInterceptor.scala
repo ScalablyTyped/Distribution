@@ -2,11 +2,12 @@ package typings.senchaTouch.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.createInterceptor")
 @js.native
 object createInterceptor extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     origFn: js.UndefOr[scala.Nothing],
@@ -44,4 +45,3 @@ object createInterceptor extends js.Object {
   def apply(origFn: js.Any, newFn: js.Any, scope: js.Any): js.Any = js.native
   def apply(origFn: js.Any, newFn: js.Any, scope: js.Any, returnValue: js.Any): js.Any = js.native
 }
-

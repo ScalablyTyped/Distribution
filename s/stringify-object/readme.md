@@ -10,9 +10,9 @@ Stringify an object/array like JSON.stringify just without all the double-quotes
 | ------------------ | :-------------: |
 | Full name          | stringify-object |
 | Keywords           | object, stringify, pretty, print, dump, format, type, json |
-| # releases         | 3 |
-| # dependents       | 244 |
-| # downloads        | 121682807 |
+| # releases         | 2 |
+| # dependents       | 276 |
+| # downloads        | 192958380 |
 | # stars            | 10 |
 
 ## Links

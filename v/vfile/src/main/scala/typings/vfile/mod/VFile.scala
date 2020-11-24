@@ -7,60 +7,13 @@ import typings.unist.mod.Position
 import typings.vfileMessage.mod.VFileMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VFile
   extends /* key */ StringDictionary[js.Any]
      with _VFileCompatible {
-  /**
-    * Current name (including extension) of `vfile`.
-    * Cannot contain path separators.
-    * Cannot be nullified either (use `file.path = file.dirname` instead).
-    */
-  var basename: js.UndefOr[String] = js.native
-  /**
-    * Raw value.
-    */
-  var contents: VFileContents = js.native
-  /**
-    * Base of `path`.
-    * Defaults to `process.cwd()`.
-    */
-  var cwd: String = js.native
-  /**
-    * Place to store custom information.
-    * It's OK to store custom data directly on the `vfile`, moving it to `data` gives a little more privacy.
-    */
-  var data: js.Any = js.native
-  /**
-    * Path to parent directory of `vfile`.
-    * Cannot be set if there's no `path` yet.
-    */
-  var dirname: js.UndefOr[String] = js.native
-  /**
-    * Extension (with dot) of `vfile`.
-    * Cannot be set if there's no `path` yet and cannot contain path separators.
-    */
-  var extname: js.UndefOr[String] = js.native
-  /**
-    * List of file-paths the file moved between.
-    */
-  var history: js.Array[String] = js.native
-  /**
-    * List of messages associated with the file.
-    */
-  var messages: js.Array[VFileMessage] = js.native
-  /**
-    * Path of `vfile`.
-    * Cannot be nullified.
-    */
-  var path: js.UndefOr[String] = js.native
-  /**
-    * Name (without extension) of `vfile`.
-    * Cannot be nullified, and cannot contain path separators.
-    */
-  var stem: js.UndefOr[String] = js.native
+  
   /**
     * Create a new virtual file. If `options` is `string` or `Buffer`, treats it as `{contents: options}`.
     * If `options` is a `VFile`, returns it. All other options are set on the newly created `vfile`.
@@ -75,6 +28,43 @@ trait VFile
   def apply[F /* <: VFile */](input: F): F = js.native
   def apply[F /* <: VFile */](input: VFileContents): F = js.native
   def apply[F /* <: VFile */](input: VFileOptions): F = js.native
+  
+  /**
+    * Current name (including extension) of `vfile`.
+    * Cannot contain path separators.
+    * Cannot be nullified either (use `file.path = file.dirname` instead).
+    */
+  var basename: js.UndefOr[String] = js.native
+  
+  /**
+    * Raw value.
+    */
+  var contents: VFileContents = js.native
+  
+  /**
+    * Base of `path`.
+    * Defaults to `process.cwd()`.
+    */
+  var cwd: String = js.native
+  
+  /**
+    * Place to store custom information.
+    * It's OK to store custom data directly on the `vfile`, moving it to `data` gives a little more privacy.
+    */
+  var data: js.Any = js.native
+  
+  /**
+    * Path to parent directory of `vfile`.
+    * Cannot be set if there's no `path` yet.
+    */
+  var dirname: js.UndefOr[String] = js.native
+  
+  /**
+    * Extension (with dot) of `vfile`.
+    * Cannot be set if there's no `path` yet and cannot contain path separators.
+    */
+  var extname: js.UndefOr[String] = js.native
+  
   /**
     * Associates a fatal message with the file, then immediately throws it.
     * Note: fatal errors mean a file is no longer processable.
@@ -91,6 +81,12 @@ trait VFile
   def fail(reason: String, position: Point, ruleId: String): scala.Nothing = js.native
   def fail(reason: String, position: Position): scala.Nothing = js.native
   def fail(reason: String, position: Position, ruleId: String): scala.Nothing = js.native
+  
+  /**
+    * List of file-paths the file moved between.
+    */
+  var history: js.Array[String] = js.native
+  
   /**
     * Associates an informational message with the file, where `fatal` is set to `null`.
     * Calls `message()` internally.
@@ -106,6 +102,7 @@ trait VFile
   def info(reason: String, position: Point, ruleId: String): VFileMessage = js.native
   def info(reason: String, position: Position): VFileMessage = js.native
   def info(reason: String, position: Position, ruleId: String): VFileMessage = js.native
+  
   /**
     * Associates a message with the file for `reason` at `position`.
     * When an error is passed in as `reason`, copies the stack.
@@ -122,6 +119,23 @@ trait VFile
   def message(reason: String, position: Point, ruleId: String): VFileMessage = js.native
   def message(reason: String, position: Position): VFileMessage = js.native
   def message(reason: String, position: Position, ruleId: String): VFileMessage = js.native
+  
+  /**
+    * List of messages associated with the file.
+    */
+  var messages: js.Array[VFileMessage] = js.native
+  
+  /**
+    * Path of `vfile`.
+    * Cannot be nullified.
+    */
+  var path: js.UndefOr[String] = js.native
+  
+  /**
+    * Name (without extension) of `vfile`.
+    * Cannot be nullified, and cannot contain path separators.
+    */
+  var stem: js.UndefOr[String] = js.native
+  
   def toString(encoding: BufferEncoding): String = js.native
 }
-

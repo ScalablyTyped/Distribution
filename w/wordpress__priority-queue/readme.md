@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__priority-queue
 
-Typings are for version 1.7.0
+Typings are for version 1.9.0
 
 ## Library description:
 Generic browser priority queue.
@@ -9,10 +9,10 @@ Generic browser priority queue.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/priority-queue |
-| Keywords           | wordpress, browser, async |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 147450 |
+| Keywords           | wordpress, gutenberg, browser, async |
+| # releases         | 15 |
+| # dependents       | 3 |
+| # downloads        | 730648 |
 | # stars            | 0 |
 
 ## Links

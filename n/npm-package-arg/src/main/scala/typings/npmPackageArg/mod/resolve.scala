@@ -2,11 +2,12 @@ package typings.npmPackageArg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("npm-package-arg", "resolve")
 @js.native
 object resolve extends js.Object {
+  
   /**
     * Throws if the package name is invalid, a dist-tag is invalid or a URL's protocol is not supported.
     * @param name The name of the module you want to install. For example: foo or @bar/foo.
@@ -17,4 +18,3 @@ object resolve extends js.Object {
   def apply(name: String, spec: String): FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult = js.native
   def apply(name: String, spec: String, where: String): FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult = js.native
 }
-

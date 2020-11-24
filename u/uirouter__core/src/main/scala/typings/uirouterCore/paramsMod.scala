@@ -8,11 +8,25 @@ import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/params", JSImport.Namespace)
 @js.native
 object paramsMod extends js.Object {
+  
+  @js.native
+  object DefType extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.uirouterCore.paramMod.DefType with Double] = js.native
+    
+    /* 2 */ val CONFIG: typings.uirouterCore.paramMod.DefType.CONFIG with Double = js.native
+    
+    /* 0 */ val PATH: typings.uirouterCore.paramMod.DefType.PATH with Double = js.native
+    
+    /* 1 */ val SEARCH: typings.uirouterCore.paramMod.DefType.SEARCH with Double = js.native
+  }
+  
   @js.native
   class Param protected ()
     extends typings.uirouterCore.paramMod.Param {
@@ -24,40 +38,10 @@ object paramsMod extends js.Object {
       state: StateDeclaration
     ) = this()
   }
-  
-  @js.native
-  class ParamType protected ()
-    extends typings.uirouterCore.paramTypeMod.ParamType {
-    /**
-      * @param def  A configuration object which contains the custom type definition.  The object's
-      *        properties will override the default methods and/or pattern in `ParamType`'s public interface.
-      * @returns a new ParamType object
-      */
-    def this(`def`: ParamTypeDefinition) = this()
-  }
-  
-  @js.native
-  class ParamTypes ()
-    extends typings.uirouterCore.paramTypesMod.ParamTypes
-  
-  @js.native
-  class StateParams ()
-    extends typings.uirouterCore.stateParamsMod.StateParams {
-    def this(params: Obj) = this()
-  }
-  
-  @js.native
-  object DefType extends js.Object {
-    /* 2 */ val CONFIG: typings.uirouterCore.paramMod.DefType.CONFIG with Double = js.native
-    /* 0 */ val PATH: typings.uirouterCore.paramMod.DefType.PATH with Double = js.native
-    /* 1 */ val SEARCH: typings.uirouterCore.paramMod.DefType.SEARCH with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uirouterCore.paramMod.DefType with Double] = js.native
-  }
-  
   /* static members */
   @js.native
   object Param extends js.Object {
+    
     /**
       * Finds [[Param]] objects which have different param values
       *
@@ -77,6 +61,7 @@ object paramsMod extends js.Object {
     ): js.Array[typings.uirouterCore.paramMod.Param] = js.native
     def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
     def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+    
     /**
       * Checks if two param value objects are equal (for a set of [[Param]] objects)
       *
@@ -94,16 +79,33 @@ object paramsMod extends js.Object {
     ): Boolean = js.native
     def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
     def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
+    
     /** Returns true if a the parameter values are valid, according to the Param definitions */
     def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
     def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = js.native
+    
     def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = js.native
     def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = js.native
   }
   
+  @js.native
+  class ParamType protected ()
+    extends typings.uirouterCore.paramTypeMod.ParamType {
+    /**
+      * @param def  A configuration object which contains the custom type definition.  The object's
+      *        properties will override the default methods and/or pattern in `ParamType`'s public interface.
+      * @returns a new ParamType object
+      */
+    def this(`def`: ParamTypeDefinition) = this()
+  }
+  
+  @js.native
+  class ParamTypes ()
+    extends typings.uirouterCore.paramTypesMod.ParamTypes
   /* static members */
   @js.native
   object ParamTypes extends js.Object {
+    
     /**
       * Built-in parameter type: `any`
       *
@@ -127,6 +129,7 @@ object paramsMod extends js.Object {
       * ```
       */
     var any: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `bool`
       *
@@ -148,6 +151,7 @@ object paramsMod extends js.Object {
       * Conversely, if the url is `/inbox?unread=0`, the value of the `unread` parameter will be a `false`.
       */
     var bool: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `date`
       *
@@ -173,6 +177,7 @@ object paramsMod extends js.Object {
       * - `date.getDate() === 25`
       */
     var date: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `hash`
       *
@@ -180,6 +185,7 @@ object paramsMod extends js.Object {
       * It behaves the same as the [[string]] parameter type.
       */
     var hash: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `int`
       *
@@ -201,6 +207,7 @@ object paramsMod extends js.Object {
       * When the parameter value is read, it will be the `number` `1298547`, not the string `"1298547"`.
       */
     var int: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `json`
       *
@@ -221,6 +228,7 @@ object paramsMod extends js.Object {
       * The URL will serialize to: `/map/%7B%22x%22%3A10399.2%2C%22y%22%3A49071%7D`
       */
     var json: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `path`
       *
@@ -237,6 +245,7 @@ object paramsMod extends js.Object {
       * For more details about this angular 1 behavior, see: https://github.com/angular-ui/ui-router/issues/2598
       */
     var path: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `query`
       *
@@ -248,6 +257,7 @@ object paramsMod extends js.Object {
       * - `/bar?param2`: a query parameter
       */
     var query: ParamTypeDefinition = js.native
+    
     /**
       * Built-in parameter type: `string`
       *
@@ -257,5 +267,9 @@ object paramsMod extends js.Object {
     var string: ParamTypeDefinition = js.native
   }
   
+  @js.native
+  class StateParams ()
+    extends typings.uirouterCore.stateParamsMod.StateParams {
+    def this(params: Obj) = this()
+  }
 }
-

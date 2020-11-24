@@ -12,15 +12,15 @@ import typings.reactBeautifulDnd.reactBeautifulDndStrings.x
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactBeautifulDnd.mod.VerticalAxis
   - typings.reactBeautifulDnd.mod.HorizontalAxis
 */
 trait Axis extends js.Object
-
 object Axis {
+  
   @scala.inline
   def VerticalAxis(
     crossAxisEnd: right,
@@ -36,6 +36,7 @@ object Axis {
     val __obj = js.Dynamic.literal(crossAxisEnd = crossAxisEnd.asInstanceOf[js.Any], crossAxisLine = crossAxisLine.asInstanceOf[js.Any], crossAxisSize = crossAxisSize.asInstanceOf[js.Any], crossAxisStart = crossAxisStart.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Axis]
   }
+  
   @scala.inline
   def HorizontalAxis(
     crossAxisEnd: bottom,
@@ -52,4 +53,3 @@ object Axis {
     __obj.asInstanceOf[Axis]
   }
 }
-

@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * the implementation of a data source and a data sink.
@@ -16,8 +16,8 @@ trait Pump
   extends XActiveDataSource
      with XActiveDataSink
      with XActiveDataControl
-
 object Pump {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -38,4 +38,3 @@ object Pump {
     __obj.asInstanceOf[Pump]
   }
 }
-

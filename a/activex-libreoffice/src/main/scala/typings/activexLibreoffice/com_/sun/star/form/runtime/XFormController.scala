@@ -28,7 +28,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a component controlling the interaction between the user and form functionality.
@@ -107,30 +107,37 @@ trait XFormController
      with XDatabaseParameterBroadcaster2
      with XModeSelector
      with XFilterController {
+  
   /** allows to delegate certain tasks to the context of the form controller */
   var Context: XFormControllerContext = js.native
+  
   /** provides access to the currently active control */
   var CurrentControl: XControl = js.native
+  
   /**
     * denotes the instance which is used to implement operations on the form which the controller works for.
     *
     * This instance can be used, for instance, to determine the current state of certain form features.
     */
   var FormOperations: XFormOperations = js.native
+  
   /** used (if not `NULL` ) for user interactions triggered by the form controller. */
   var InteractionHandler: XInteractionHandler = js.native
+  
   /** adds the specified listener to receive notifications whenever the activation state of the controller changes. */
   def addActivateListener(Listener: XFormControllerListener): Unit = js.native
+  
   /**
     * adds a controller to the list of child controllers
     * @throws com::sun::star::lang::IllegalArgumentException if the given controller is `NULL` , or cannot rightfully be a child controller. Since controllers
     */
   def addChildController(ChildController: XFormController): Unit = js.native
+  
   /** removes the specified listener from the list of components to receive notifications whenever the activation state of the controller changes. */
   def removeActivateListener(Listener: XFormControllerListener): Unit = js.native
 }
-
 object XFormController {
+  
   @scala.inline
   def apply(
     ActiveTerm: Double,
@@ -200,32 +207,41 @@ object XFormController {
     val __obj = js.Dynamic.literal(ActiveTerm = ActiveTerm.asInstanceOf[js.Any], Container = Container.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Controls = Controls.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], CurrentControl = CurrentControl.asInstanceOf[js.Any], DisjunctiveTerms = DisjunctiveTerms.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], FilterComponents = FilterComponents.asInstanceOf[js.Any], FormOperations = FormOperations.asInstanceOf[js.Any], InteractionHandler = InteractionHandler.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PredicateExpressions = PredicateExpressions.asInstanceOf[js.Any], SupportedModes = SupportedModes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), activateFirst = js.Any.fromFunction0(activateFirst), activateLast = js.Any.fromFunction0(activateLast), activateTabOrder = js.Any.fromFunction0(activateTabOrder), addActivateListener = js.Any.fromFunction1(addActivateListener), addChildController = js.Any.fromFunction1(addChildController), addConfirmDeleteListener = js.Any.fromFunction1(addConfirmDeleteListener), addDatabaseParameterListener = js.Any.fromFunction1(addDatabaseParameterListener), addEventListener = js.Any.fromFunction1(addEventListener), addFilterControllerListener = js.Any.fromFunction1(addFilterControllerListener), addModifyListener = js.Any.fromFunction1(addModifyListener), addParameterListener = js.Any.fromFunction1(addParameterListener), addRowSetApproveListener = js.Any.fromFunction1(addRowSetApproveListener), addSQLErrorListener = js.Any.fromFunction1(addSQLErrorListener), appendEmptyDisjunctiveTerm = js.Any.fromFunction0(appendEmptyDisjunctiveTerm), autoTabOrder = js.Any.fromFunction0(autoTabOrder), createEnumeration = js.Any.fromFunction0(createEnumeration), dispose = js.Any.fromFunction0(dispose), getByIndex = js.Any.fromFunction1(getByIndex), getContainer = js.Any.fromFunction0(getContainer), getControls = js.Any.fromFunction0(getControls), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getFilterComponent = js.Any.fromFunction1(getFilterComponent), getMode = js.Any.fromFunction0(getMode), getModel = js.Any.fromFunction0(getModel), getParent = js.Any.fromFunction0(getParent), getPredicateExpressions = js.Any.fromFunction0(getPredicateExpressions), getSupportedModes = js.Any.fromFunction0(getSupportedModes), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActivateListener = js.Any.fromFunction1(removeActivateListener), removeConfirmDeleteListener = js.Any.fromFunction1(removeConfirmDeleteListener), removeDatabaseParameterListener = js.Any.fromFunction1(removeDatabaseParameterListener), removeDisjunctiveTerm = js.Any.fromFunction1(removeDisjunctiveTerm), removeEventListener = js.Any.fromFunction1(removeEventListener), removeFilterControllerListener = js.Any.fromFunction1(removeFilterControllerListener), removeModifyListener = js.Any.fromFunction1(removeModifyListener), removeParameterListener = js.Any.fromFunction1(removeParameterListener), removeRowSetApproveListener = js.Any.fromFunction1(removeRowSetApproveListener), removeSQLErrorListener = js.Any.fromFunction1(removeSQLErrorListener), setContainer = js.Any.fromFunction1(setContainer), setMode = js.Any.fromFunction1(setMode), setModel = js.Any.fromFunction1(setModel), setParent = js.Any.fromFunction1(setParent), setPredicateExpression = js.Any.fromFunction3(setPredicateExpression), supportsMode = js.Any.fromFunction1(supportsMode))
     __obj.asInstanceOf[XFormController]
   }
+  
   @scala.inline
   implicit class XFormControllerOps[Self <: XFormController] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContext(value: XFormControllerContext): Self = this.set("Context", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCurrentControl(value: XControl): Self = this.set("CurrentControl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormOperations(value: XFormOperations): Self = this.set("FormOperations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInteractionHandler(value: XInteractionHandler): Self = this.set("InteractionHandler", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddActivateListener(value: XFormControllerListener => Unit): Self = this.set("addActivateListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddChildController(value: XFormController => Unit): Self = this.set("addChildController", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveActivateListener(value: XFormControllerListener => Unit): Self = this.set("removeActivateListener", js.Any.fromFunction1(value))
   }
-  
 }
-

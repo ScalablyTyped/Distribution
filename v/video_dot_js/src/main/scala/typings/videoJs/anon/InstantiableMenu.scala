@@ -7,7 +7,7 @@ import typings.videoJs.mod.videojs.MenuOptions
 import typings.videoJs.mod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableMenu
@@ -23,4 +23,3 @@ trait InstantiableMenu
   */
 Instantiable1[/* player */ Player, Menu]
      with Instantiable2[/* player */ Player, /* options */ MenuOptions, Menu]
-

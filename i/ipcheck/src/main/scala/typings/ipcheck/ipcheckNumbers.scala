@@ -2,9 +2,19 @@ package typings.ipcheck
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipcheckNumbers {
+  
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @scala.inline
+  def `6`: `6` = 6.asInstanceOf[`6`]
+  
   @js.native
   sealed trait `0` extends js.Object
   
@@ -13,12 +23,4 @@ object ipcheckNumbers {
   
   @js.native
   sealed trait `6` extends js.Object
-  
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
 }
-

@@ -2,10 +2,11 @@ package typings.globalize.currencyMod.globalizeDistGlobalizeAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shared extends js.Object {
+  
   /**
     * Return a function that formats a currency according to the given options or locale's defaults.
     * The returned function is invoked with one argument: the Number value to be formatted.
@@ -15,6 +16,7 @@ trait Shared extends js.Object {
     */
   def currencyFormatter(currency: String): js.Function1[/* value */ Double, String] = js.native
   def currencyFormatter(currency: String, options: CurrencyFormatterOptions): js.Function1[/* value */ Double, String] = js.native
+  
   /**
     * Return a currency formatted according to the given options or locale's defaults.
     * @param {number} value The value to format.
@@ -25,4 +27,3 @@ trait Shared extends js.Object {
   def formatCurrency(value: Double, currency: String): String = js.native
   def formatCurrency(value: Double, currency: String, options: CurrencyFormatterOptions): String = js.native
 }
-

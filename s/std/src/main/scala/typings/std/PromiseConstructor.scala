@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the completion of an asynchronous operation
@@ -19,14 +19,13 @@ trait PromiseConstructor
   */
 Instantiable1[
       /* executor */ js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | js.Thenable[js.Object]], Unit], 
+        /* resolve */ js.Function1[/* value */ js.Object | js.Thenable[js.Object], Unit], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
         Unit
       ], 
       js.Promise[js.Object]
     ] {
-  @JSName(js.Symbol.species)
-  val species: PromiseConstructor = js.native
+  
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
@@ -169,6 +168,7 @@ Instantiable1[
       T10 | js.Thenable[T10]
     ]
   ): js.Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
+  
   /**
     * Creates a Promise that is resolved with an array of results when all
     * of the provided Promises resolve or reject.
@@ -187,6 +187,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   def allSettled[T](values: Iterable[T]): js.Promise[js.Array[PromiseSettledResult[T]]] = js.native
+  
   /**
     * The any function returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected with an AggregateError containing an array of rejection reasons if all of the given promises are rejected. It resolves all elements of the passed iterable to promises as it runs this algorithm.
     * @param values An array or iterable of Promises.
@@ -194,6 +195,7 @@ Instantiable1[
     */
   def any[T](values: js.Array[T | js.Thenable[T]]): js.Promise[T] = js.native
   def any[T](values: Iterable[T | js.Thenable[T]]): js.Promise[T] = js.native
+  
   // see: lib.es2015.iterable.d.ts
   // all<T>(values: Iterable<T | PromiseLike<T>>): Promise<T[]>;
   /**
@@ -210,6 +212,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   def race[T](values: Iterable[T | js.Thenable[T]]): js.Promise[T] = js.native
+  
   // see: lib.es2015.iterable.d.ts
   // race<T>(values: Iterable<T>): Promise<T extends PromiseLike<infer U> ? U : T>;
   /**
@@ -219,8 +222,9 @@ Instantiable1[
     */
   def reject[T](): js.Promise[T] = js.native
   def reject[T](reason: js.Any): js.Promise[T] = js.native
+  
   /**
-    * Creates a new resolved promise .
+    * Creates a new resolved promise.
     * @returns A resolved promise.
     */
   def resolve(): js.Promise[Unit] = js.native
@@ -231,5 +235,7 @@ Instantiable1[
     */
   def resolve[T](value: T): js.Promise[T] = js.native
   def resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
+  
+  @JSName(js.Symbol.species)
+  val species: PromiseConstructor = js.native
 }
-

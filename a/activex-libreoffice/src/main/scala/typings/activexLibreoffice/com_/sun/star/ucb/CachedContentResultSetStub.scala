@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used on provider side to access a {@link ContentResultSet} remote optimized. */
 @js.native
@@ -28,8 +28,8 @@ trait CachedContentResultSetStub
   extends ContentResultSet
      with XFetchProvider
      with XFetchProviderForContentAccess
-
 object CachedContentResultSetStub {
+  
   @scala.inline
   def apply(
     CursorName: String,
@@ -136,4 +136,3 @@ object CachedContentResultSetStub {
     __obj.asInstanceOf[CachedContentResultSetStub]
   }
 }
-

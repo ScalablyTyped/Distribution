@@ -10,9 +10,9 @@ parses JSON HAL resources (Hypertext Application Language)
 | ------------------ | :-------------: |
 | Full name          | halfred |
 | Keywords           | HAL, REST, JSON |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 169648 |
+| # downloads        | 143594 |
 | # stars            | 1 |
 
 ## Links

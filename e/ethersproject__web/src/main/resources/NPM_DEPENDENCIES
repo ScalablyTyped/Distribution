@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/web" : "5.0.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/web" : "5.0.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

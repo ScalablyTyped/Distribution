@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts")
 @js.native
 class ResourceAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var containers: ResourceAccountsContainers = js.native
+  
   var context: APIRequestContext = js.native
-  var permissions: ResourceAccountsPermissions = js.native
+  
   /**
     * tagmanager.accounts.get
     * @desc Gets a GTM Account.
@@ -43,6 +45,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.list
     * @desc Lists all GTM Accounts that a user has access to.
@@ -70,6 +73,9 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAccountsResponse]
   ): Unit = js.native
+  
+  var permissions: ResourceAccountsPermissions = js.native
+  
   /**
     * tagmanager.accounts.update
     * @desc Updates a GTM Account.
@@ -101,4 +107,3 @@ class ResourceAccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Environments$Users$Sessions$Contexts")
 @js.native
 class ResourceProjectsAgentEnvironmentsUsersSessionsContexts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.contexts.create
     * @desc Creates a context.  If the specified context already exists,
@@ -47,6 +49,7 @@ class ResourceProjectsAgentEnvironmentsUsersSessionsContexts protected () extend
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Context]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.contexts.delete
     * @desc Deletes the specified context.
@@ -79,6 +82,7 @@ class ResourceProjectsAgentEnvironmentsUsersSessionsContexts protected () extend
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.contexts.get
     * @desc Retrieves the specified context.
@@ -110,6 +114,7 @@ class ResourceProjectsAgentEnvironmentsUsersSessionsContexts protected () extend
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Context]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.contexts.list
     * @desc Returns the list of all contexts in the specified session.
@@ -144,6 +149,7 @@ class ResourceProjectsAgentEnvironmentsUsersSessionsContexts protected () extend
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListContextsResponse]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.environments.users.sessions.contexts.patch
     * @desc Updates the specified context.
@@ -179,4 +185,3 @@ class ResourceProjectsAgentEnvironmentsUsersSessionsContexts protected () extend
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Context]
   ): Unit = js.native
 }
-

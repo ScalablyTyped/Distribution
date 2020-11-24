@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LaunchQuerySupportStatus extends js.Object
-
 /** Specifies whether an app is available that supports activation. */
 @JSGlobal("Windows.System.LaunchQuerySupportStatus")
 @js.native
 object LaunchQuerySupportStatus extends js.Object {
+  
   /** No app is installed to handle the activation. */
   @js.native
   sealed trait appNotInstalled extends LaunchQuerySupportStatus
@@ -30,6 +30,4 @@ object LaunchQuerySupportStatus extends js.Object {
   /** An unknown error was encountered while determining whether an app supports the activation. */
   @js.native
   sealed trait unknown extends LaunchQuerySupportStatus
-  
 }
-

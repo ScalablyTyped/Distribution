@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast.media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.media.Media")
 @js.native
@@ -16,4 +16,3 @@ class Media protected ()
     */
   def this(sessionId: String, mediaSessionId: Double) = this()
 }
-

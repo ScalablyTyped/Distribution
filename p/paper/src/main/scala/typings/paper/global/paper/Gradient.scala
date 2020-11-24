@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Gradient object.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Gradient ()
   extends typings.paper.paper.Gradient
-

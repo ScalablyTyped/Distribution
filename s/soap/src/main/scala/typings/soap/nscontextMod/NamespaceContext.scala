@@ -2,14 +2,12 @@ package typings.soap.nscontextMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("soap/lib/nscontext", "NamespaceContext")
 @js.native
 class NamespaceContext () extends js.Object {
-  var currentScope: js.UndefOr[NamespaceScope] = js.native
-  var prefixCount: Double = js.native
-  var scopes: js.Array[NamespaceScope] = js.native
+  
   /**
     * Add a prefix/URI namespace mapping
     * @param {String} prefix Namespace prefix
@@ -20,6 +18,9 @@ class NamespaceContext () extends js.Object {
     */
   def addNamespace(prefix: String, nsUri: String): Boolean = js.native
   def addNamespace(prefix: String, nsUri: String, localOnly: Boolean): Boolean = js.native
+  
+  var currentScope: js.UndefOr[NamespaceScope] = js.native
+  
   /**
     * Declare a namespace prefix/uri mapping
     * @param {String} prefix Namespace prefix
@@ -27,6 +28,7 @@ class NamespaceContext () extends js.Object {
     * @returns {Boolean} true if the declaration is created
     */
   def declareNamespace(prefix: String, nsUri: String): Boolean = js.native
+  
   /**
     * Look up the namespace URI by prefix
     * @param {String} prefix Namespace prefix
@@ -35,6 +37,7 @@ class NamespaceContext () extends js.Object {
     */
   def getNamespaceURI(prefix: String): String = js.native
   def getNamespaceURI(prefix: String, localOnly: Boolean): String = js.native
+  
   /**
     * Look up the namespace prefix by URI
     * @param {String} nsURI Namespace URI
@@ -43,21 +46,27 @@ class NamespaceContext () extends js.Object {
     */
   def getPrefix(nsUri: String): String = js.native
   def getPrefix(nsUri: String, localOnly: Boolean): String = js.native
+  
   /**
     * Pop a scope out of the context
     * @returns {NamespaceScope} The removed scope
     */
   def popContext(): NamespaceScope = js.native
+  
+  var prefixCount: Double = js.native
+  
   /**
     * Push a scope into the context
     * @returns {NamespaceScope} The current scope
     */
   def pushContext(): NamespaceScope = js.native
+  
   /**
     * Register a namespace
     * @param {String} nsUri Namespace URI
     * @returns {String} The matching or generated namespace prefix
     */
   def registerNamespace(nsUri: String): String = js.native
+  
+  var scopes: js.Array[NamespaceScope] = js.native
 }
-

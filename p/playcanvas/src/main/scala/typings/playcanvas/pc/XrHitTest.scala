@@ -1,9 +1,9 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.anon.Callback
+import typings.playcanvas.anon.EntityTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hit Test provides ability to get position and rotation of ray intersecting point with representation of real world geometry by underlying AR system.
@@ -13,14 +13,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XrHitTest extends EventHandler {
+  
   /**
     * list of active {@link pc.XrHitTestSource}.
     */
   var sources: js.Array[XrHitTestSource] = js.native
-  /**
-    * True if AR Hit Test is supported.
-    */
-  var supported: Boolean = js.native
+  
   /**
     * Attempts to start hit test with provided reference space.
     * @example
@@ -73,6 +71,10 @@ trait XrHitTest extends EventHandler {
     * @param [options.callback] - Optional callback function called once hit test source is created or failed.
     */
   def start(): Unit = js.native
-  def start(options: Callback): Unit = js.native
+  def start(options: EntityTypes): Unit = js.native
+  
+  /**
+    * True if AR Hit Test is supported.
+    */
+  var supported: Boolean = js.native
 }
-

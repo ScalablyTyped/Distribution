@@ -10,9 +10,9 @@ URL Safe Base64 encoding
 | ------------------ | :-------------: |
 | Full name          | urlsafe-base64 |
 | Keywords           | base64, encoding, url, util |
-| # releases         | 1 |
-| # dependents       | 109 |
-| # downloads        | 2879890 |
+| # releases         | 0 |
+| # dependents       | 120 |
+| # downloads        | 4630796 |
 | # stars            | 6 |
 
 ## Links

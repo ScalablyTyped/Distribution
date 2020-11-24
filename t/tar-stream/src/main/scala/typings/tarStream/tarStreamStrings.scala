@@ -2,9 +2,49 @@ package typings.tarStream
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tarStreamStrings {
+  
+  @scala.inline
+  def `block-device`: `block-device` = "block-device".asInstanceOf[`block-device`]
+  
+  @scala.inline
+  def `character-device`: `character-device` = "character-device".asInstanceOf[`character-device`]
+  
+  @scala.inline
+  def `contiguous-file`: `contiguous-file` = "contiguous-file".asInstanceOf[`contiguous-file`]
+  
+  @scala.inline
+  def directory: directory = "directory".asInstanceOf[directory]
+  
+  @scala.inline
+  def entry: entry = "entry".asInstanceOf[entry]
+  
+  @scala.inline
+  def fifo: fifo = "fifo".asInstanceOf[fifo]
+  
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
+  
+  @scala.inline
+  def `gnu-long-link-path`: `gnu-long-link-path` = "gnu-long-link-path".asInstanceOf[`gnu-long-link-path`]
+  
+  @scala.inline
+  def `gnu-long-path`: `gnu-long-path` = "gnu-long-path".asInstanceOf[`gnu-long-path`]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def `pax-global-header`: `pax-global-header` = "pax-global-header".asInstanceOf[`pax-global-header`]
+  
+  @scala.inline
+  def `pax-header`: `pax-header` = "pax-header".asInstanceOf[`pax-header`]
+  
+  @scala.inline
+  def symlink: symlink = "symlink".asInstanceOf[symlink]
+  
   @js.native
   sealed trait `block-device` extends js.Object
   
@@ -43,32 +83,4 @@ object tarStreamStrings {
   
   @js.native
   sealed trait symlink extends js.Object
-  
-  @scala.inline
-  def `block-device`: `block-device` = "block-device".asInstanceOf[`block-device`]
-  @scala.inline
-  def `character-device`: `character-device` = "character-device".asInstanceOf[`character-device`]
-  @scala.inline
-  def `contiguous-file`: `contiguous-file` = "contiguous-file".asInstanceOf[`contiguous-file`]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def entry: entry = "entry".asInstanceOf[entry]
-  @scala.inline
-  def fifo: fifo = "fifo".asInstanceOf[fifo]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def `gnu-long-link-path`: `gnu-long-link-path` = "gnu-long-link-path".asInstanceOf[`gnu-long-link-path`]
-  @scala.inline
-  def `gnu-long-path`: `gnu-long-path` = "gnu-long-path".asInstanceOf[`gnu-long-path`]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def `pax-global-header`: `pax-global-header` = "pax-global-header".asInstanceOf[`pax-global-header`]
-  @scala.inline
-  def `pax-header`: `pax-header` = "pax-header".asInstanceOf[`pax-header`]
-  @scala.inline
-  def symlink: symlink = "symlink".asInstanceOf[symlink]
 }
-

@@ -24,7 +24,7 @@ import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0424Semic
 import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
@@ -51,53 +51,74 @@ import scala.scalajs.js.annotation._
   - typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
 */
 trait LanguageConstants extends js.Object
-
 object LanguageConstants {
+  
   @scala.inline
   def dbLangArabic: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangChineseSimplified: SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0804;CP=936;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangChineseTraditional: SemicolonLANGIDEqualssign0x0404SemicolonCPEqualssign950SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0404;CP=950;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0404SemicolonCPEqualssign950SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangCyrillic: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangCzech: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangDutch: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangGeneral: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangGreek: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangHebrew: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangHindi: SemicolonLANGIDEqualssign0x00000439SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0 = ";LANGID=0x00000439;CP=65001;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x00000439SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangHungarian: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangIcelandic: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangJapanese: SemicolonLANGIDEqualssign0x0411SemicolonCPEqualssign932SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0411;CP=932;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0411SemicolonCPEqualssign932SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangJapaneseRadicalStrokeCount: SemicolonLANGIDEqualssign0x00040411SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0 = ";LANGID=0x00040411;CP=65001;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x00040411SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangKorean: SemicolonLANGIDEqualssign0x0412SemicolonCPEqualssign949SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0412;CP=949;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0412SemicolonCPEqualssign949SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangNordic: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangNorwDan: SemicolonLANGIDEqualssign0x0406SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0406;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0406SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangPolish: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangSlovenian: SemicolonLANGIDEqualssign0x0424SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0424;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0424SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangSpanish: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangSwedFin: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangThai: SemicolonLANGIDEqualssign0x041ESemicolonCPEqualssign874SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041E;CP=874;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041ESemicolonCPEqualssign874SemicolonCOUNTRYEqualssign0]
+  
   @scala.inline
   def dbLangTurkish: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0]
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides the possibility of receiving an event for configuration of parameters.
@@ -16,12 +16,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDatabaseParameterBroadcaster extends XInterface {
+  
   /**
     * adds the specified listener, to allow it to fill in necessary parameter values.
     * @param aListener the listener to add.
     * @see com.sun.star.form.XDatabaseParameterListener
     */
   def addParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
+  
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
@@ -29,8 +31,8 @@ trait XDatabaseParameterBroadcaster extends XInterface {
     */
   def removeParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
 }
-
 object XDatabaseParameterBroadcaster {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -42,22 +44,26 @@ object XDatabaseParameterBroadcaster {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addParameterListener = js.Any.fromFunction1(addParameterListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeParameterListener = js.Any.fromFunction1(removeParameterListener))
     __obj.asInstanceOf[XDatabaseParameterBroadcaster]
   }
+  
   @scala.inline
   implicit class XDatabaseParameterBroadcasterOps[Self <: XDatabaseParameterBroadcaster] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddParameterListener(value: XDatabaseParameterListener => Unit): Self = this.set("addParameterListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveParameterListener(value: XDatabaseParameterListener => Unit): Self = this.set("removeParameterListener", js.Any.fromFunction1(value))
   }
-  
 }
-

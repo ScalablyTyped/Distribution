@@ -2,9 +2,46 @@ package typings.vivus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vivusStrings {
+  
+  @scala.inline
+  def autostart: autostart = "autostart".asInstanceOf[autostart]
+  
+  @scala.inline
+  def delayed: delayed = "delayed".asInstanceOf[delayed]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def inViewport: inViewport = "inViewport".asInstanceOf[inViewport]
+  
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  
+  @scala.inline
+  def oneByOne: oneByOne = "oneByOne".asInstanceOf[oneByOne]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def scenario: scenario = "scenario".asInstanceOf[scenario]
+  
+  @scala.inline
+  def `scenario-sync`: `scenario-sync` = "scenario-sync".asInstanceOf[`scenario-sync`]
+  
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
+  
   @js.native
   sealed trait autostart extends js.Object
   
@@ -40,30 +77,4 @@ object vivusStrings {
   
   @js.native
   sealed trait sync extends js.Object
-  
-  @scala.inline
-  def autostart: autostart = "autostart".asInstanceOf[autostart]
-  @scala.inline
-  def delayed: delayed = "delayed".asInstanceOf[delayed]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def inViewport: inViewport = "inViewport".asInstanceOf[inViewport]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def oneByOne: oneByOne = "oneByOne".asInstanceOf[oneByOne]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def scenario: scenario = "scenario".asInstanceOf[scenario]
-  @scala.inline
-  def `scenario-sync`: `scenario-sync` = "scenario-sync".asInstanceOf[`scenario-sync`]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
 }
-

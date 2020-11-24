@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocketActivityKind extends js.Object
-
 /** Describes the kind of socket object being transferred to or from the socket broker. */
 @JSGlobal("Windows.Networking.Sockets.SocketActivityKind")
 @js.native
 object SocketActivityKind extends js.Object {
+  
   /** A socket type of DatagramSocket . */
   @js.native
   sealed trait datagramSocket extends SocketActivityKind
@@ -26,6 +26,4 @@ object SocketActivityKind extends js.Object {
   /** A socket type of StreamSocketListener . */
   @js.native
   sealed trait streamSocketListener extends SocketActivityKind
-  
 }
-

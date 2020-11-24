@@ -10,9 +10,9 @@ Create S3 urls from bucket/key or extract bucket/key from them
 | ------------------ | :-------------: |
 | Full name          | @mapbox/s3urls |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 111469 |
+| # releases         | 1 |
+| # dependents       | 9 |
+| # downloads        | 208969 |
 | # stars            | 0 |
 
 ## Links

@@ -6,16 +6,19 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options used to initialize a keyselector.
   */
+@js.native
 trait IOptions extends js.Object {
+  
   /**
     * Default value for default setters and getters if value is not found.
     */
-  var default: js.UndefOr[ReadonlyPartialJSONValue] = js.undefined
+  var default: js.UndefOr[ReadonlyPartialJSONValue] = js.native
+  
   /**
     * An optional value getter for the selector.
     *
@@ -23,11 +26,13 @@ trait IOptions extends js.Object {
     *
     * @returns The appropriate value for the selector.
     */
-  var getter: js.UndefOr[js.Function1[/* cell */ Cell, js.UndefOr[ReadonlyPartialJSONValue]]] = js.undefined
+  var getter: js.UndefOr[js.Function1[/* cell */ Cell, js.UndefOr[ReadonlyPartialJSONValue]]] = js.native
+  
   /**
     * The metadata key of interest.
     */
-  var key: String
+  var key: String = js.native
+  
   /**
     * The map of options to values.
     *
@@ -35,7 +40,8 @@ trait IOptions extends js.Object {
     * If a value equals the default, choosing it may erase the key from the
     * metadata.
     */
-  var optionsMap: ReadonlyPartialJSONObject
+  var optionsMap: ReadonlyPartialJSONObject = js.native
+  
   /**
     * An optional value setter for the selector.
     *
@@ -49,35 +55,81 @@ trait IOptions extends js.Object {
     */
   var setter: js.UndefOr[
     js.Function2[/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue], Unit]
-  ] = js.undefined
+  ] = js.native
+  
   /**
     * The optional title of the selector - defaults to capitalized `key`.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
+  
   /**
     * The optional valid cell types - defaults to all valid types.
     */
-  var validCellTypes: js.UndefOr[js.Array[CellType]] = js.undefined
+  var validCellTypes: js.UndefOr[js.Array[CellType]] = js.native
 }
-
 object IOptions {
+  
   @scala.inline
-  def apply(
-    key: String,
-    optionsMap: ReadonlyPartialJSONObject,
-    default: js.UndefOr[Null | ReadonlyPartialJSONValue] = js.undefined,
-    getter: /* cell */ Cell => js.UndefOr[ReadonlyPartialJSONValue] = null,
-    setter: (/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue]) => Unit = null,
-    title: String = null,
-    validCellTypes: js.Array[CellType] = null
-  ): IOptions = {
+  def apply(key: String, optionsMap: ReadonlyPartialJSONObject): IOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optionsMap = optionsMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (getter != null) __obj.updateDynamic("getter")(js.Any.fromFunction1(getter))
-    if (setter != null) __obj.updateDynamic("setter")(js.Any.fromFunction2(setter))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (validCellTypes != null) __obj.updateDynamic("validCellTypes")(validCellTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptionsMap(value: ReadonlyPartialJSONObject): Self = this.set("optionsMap", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDefault(value: ReadonlyPartialJSONValue): Self = this.set("default", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    
+    @scala.inline
+    def setDefaultNull: Self = this.set("default", null)
+    
+    @scala.inline
+    def setGetter(value: /* cell */ Cell => js.UndefOr[ReadonlyPartialJSONValue]): Self = this.set("getter", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteGetter: Self = this.set("getter", js.undefined)
+    
+    @scala.inline
+    def setSetter(value: (/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue]) => Unit): Self = this.set("setter", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteSetter: Self = this.set("setter", js.undefined)
+    
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    
+    @scala.inline
+    def setValidCellTypesVarargs(value: CellType*): Self = this.set("validCellTypes", js.Array(value :_*))
+    
+    @scala.inline
+    def setValidCellTypes(value: js.Array[CellType]): Self = this.set("validCellTypes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteValidCellTypes: Self = this.set("validCellTypes", js.undefined)
+  }
 }
-

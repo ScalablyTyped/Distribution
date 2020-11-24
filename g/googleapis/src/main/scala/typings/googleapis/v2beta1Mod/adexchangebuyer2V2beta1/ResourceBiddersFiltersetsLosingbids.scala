@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Filtersets$Losingbids")
 @js.native
 class ResourceBiddersFiltersetsLosingbids protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.bidders.filterSets.losingBids.list
     * @desc List all reasons for which bids lost in the auction, with the
@@ -48,4 +50,3 @@ class ResourceBiddersFiltersetsLosingbids protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListLosingBidsResponse]
   ): Unit = js.native
 }
-

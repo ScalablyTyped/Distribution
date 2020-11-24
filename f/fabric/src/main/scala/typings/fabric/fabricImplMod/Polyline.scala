@@ -5,7 +5,7 @@ import typings.fabric.anon.X
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
@@ -20,11 +20,7 @@ class Polyline protected () extends Object {
     */
   def this(points: js.Array[X]) = this()
   def this(points: js.Array[X], options: IPolylineOptions) = this()
-  var pathOffset: Point = js.native
-  /**
-    * Points array
-    */
-  var points: js.UndefOr[js.Array[Point]] = js.native
+  
   /**
     * Calculate the polygon min and max point from points array,
     * returning an object with left, top, width, height to measure the polygon size
@@ -35,16 +31,24 @@ class Polyline protected () extends Object {
     * @return {Object} object.height distance between Y coordinates of the polygon topmost and bottommost point
     */
   def _calcDimensions(): Top = js.native
+  
+  var pathOffset: Point = js.native
+  
+  /**
+    * Points array
+    */
+  var points: js.UndefOr[js.Array[Point]] = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Polyline")
 @js.native
 object Polyline extends js.Object {
+  
   /**
     * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
     */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  
   /**
     * Returns Polyline  instance from an SVG element
     * @param element Element to parse
@@ -52,10 +56,10 @@ object Polyline extends js.Object {
     */
   def fromElement(element: SVGElement): Polyline = js.native
   def fromElement(element: SVGElement, options: IPolylineOptions): Polyline = js.native
+  
   /**
     * Returns fabric.Polyline instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): Polyline = js.native
 }
-

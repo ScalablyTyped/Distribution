@@ -10,9 +10,9 @@ Google maps container
 | ------------------ | :-------------: |
 | Full name          | google-maps-react |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 21 |
-| # downloads        | 1348538 |
+| # releases         | 4 |
+| # dependents       | 36 |
+| # downloads        | 2908946 |
 | # stars            | 9 |
 
 ## Links

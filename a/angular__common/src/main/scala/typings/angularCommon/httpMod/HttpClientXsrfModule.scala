@@ -4,21 +4,22 @@ import typings.angularCommon.anon.CookieName
 import typings.angularCore.mod.ModuleWithProviders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpClientXsrfModule")
 @js.native
 class HttpClientXsrfModule ()
   extends typings.angularCommon.httpHttpMod.HttpClientXsrfModule
-
 /* static members */
 @JSImport("@angular/common/http", "HttpClientXsrfModule")
 @js.native
 object HttpClientXsrfModule extends js.Object {
+  
   /**
     * Disable the default XSRF protection.
     */
   def disable(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = js.native
+  
   /**
     * Configure XSRF protection.
     * @param options An object that can specify either or both
@@ -30,4 +31,3 @@ object HttpClientXsrfModule extends js.Object {
   def withOptions(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = js.native
   def withOptions(options: CookieName): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = js.native
 }
-

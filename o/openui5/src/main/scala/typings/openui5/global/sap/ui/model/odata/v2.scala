@@ -5,14 +5,29 @@ import typings.openui5.sap.ui.model.Model
 import typings.openui5.sap.ui.model.Sorter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.v2")
 @js.native
 object v2 extends js.Object {
+  
   @js.native
   class ODataAnnotations ()
     extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations
+  @js.native
+  object ODataAnnotations extends js.Object {
+    
+    @js.native
+    class constructor protected ()
+      extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations.constructor {
+      /**
+        * Creates a new instance of the ODataAnnotations annotation loader.
+        * @param oMetadata Metadata object with the metadata information needed to parse the annotations
+        * @param mOptions Obligatory options
+        */
+      def this(oMetadata: typings.openui5.sap.ui.model.odata.ODataMetadata, mOptions: js.Any) = this()
+    }
+  }
   
   @js.native
   abstract class ODataContextBinding protected ()
@@ -146,21 +161,4 @@ object v2 extends js.Object {
       aSorters: js.Array[Sorter]
     ) = this()
   }
-  
-  @js.native
-  object ODataAnnotations extends js.Object {
-    @js.native
-    class constructor protected ()
-      extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations.constructor {
-      /**
-        * Creates a new instance of the ODataAnnotations annotation loader.
-        * @param oMetadata Metadata object with the metadata information needed to parse the annotations
-        * @param mOptions Obligatory options
-        */
-      def this(oMetadata: typings.openui5.sap.ui.model.odata.ODataMetadata, mOptions: js.Any) = this()
-    }
-    
-  }
-  
 }
-

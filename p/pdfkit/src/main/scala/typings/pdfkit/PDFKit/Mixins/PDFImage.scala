@@ -2,10 +2,11 @@ package typings.pdfkit.PDFKit.Mixins
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PDFImage extends js.Object {
+  
   /**
     * Draw an image in PDFKit document.
     */
@@ -19,4 +20,3 @@ trait PDFImage extends js.Object {
   def image(src: js.Any, x: Double, y: Double): this.type = js.native
   def image(src: js.Any, x: Double, y: Double, options: ImageOption): this.type = js.native
 }
-

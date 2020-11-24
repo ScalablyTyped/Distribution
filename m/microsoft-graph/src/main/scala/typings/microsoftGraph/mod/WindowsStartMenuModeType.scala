@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.userDefined
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.nonFullScreen
 */
 trait WindowsStartMenuModeType extends js.Object
-
 object WindowsStartMenuModeType {
+  
   @scala.inline
   def fullScreen: typings.microsoftGraph.microsoftGraphStrings.fullScreen = "fullScreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fullScreen]
+  
   @scala.inline
   def nonFullScreen: typings.microsoftGraph.microsoftGraphStrings.nonFullScreen = "nonFullScreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.nonFullScreen]
+  
   @scala.inline
   def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

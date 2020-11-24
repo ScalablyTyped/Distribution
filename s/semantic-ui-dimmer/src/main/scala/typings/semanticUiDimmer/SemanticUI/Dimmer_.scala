@@ -57,11 +57,11 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.variation
 import typings.semanticUiDimmer.semanticUiDimmerStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dimmer_ extends js.Object {
-  var settings: DimmerSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Detaches a given element from DOM and reattaches element inside dimmer
@@ -201,5 +201,6 @@ trait Dimmer_ extends js.Object {
     */
   def apply(behavior: toggle): JQuery = js.native
   def apply(settings: DimmerSettings): JQuery = js.native
+  
+  var settings: DimmerSettings = js.native
 }
-

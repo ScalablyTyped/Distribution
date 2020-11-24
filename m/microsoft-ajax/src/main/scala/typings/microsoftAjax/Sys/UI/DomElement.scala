@@ -5,7 +5,7 @@ import typings.microsoftAjax.anon.Height
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines static methods and properties that provide helper APIs for manipulating and inspecting DOM elements.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DomElement extends js.Object {
+  
   //#region Constructors
   //#endregion
   //#region Methods
@@ -25,6 +26,7 @@ trait DomElement extends js.Object {
     *             The name of the CSS class to add.
     */
   def addCssClass(element: HTMLElement, className: String): Unit = js.native
+  
   /**
     * Gets a value that indicates whether the DOM element contains the specified CSS class. This member is static and can be invoked without creating an instance of the class.
     * @param element
@@ -35,6 +37,7 @@ trait DomElement extends js.Object {
     *          true if the element contains the specified CSS class; otherwise, false.
     */
   def containsCssClass(element: HTMLElement, className: String): Boolean = js.native
+  
   /**
     * Gets a set of integer coordinates that represent the position, width, and height of a DOM element. This member is static and can be invoked without creating an instance of the class.
     *
@@ -44,6 +47,7 @@ trait DomElement extends js.Object {
     *      An object of the JavaScript type Object that contains the x-coordinate and y-coordinate of the upper-left corner, the width, and the height of the element in pixels.
     */
   def getBounds(element: HTMLElement): Height = js.native
+  
   /**
     * @param id
     *      The ID of the element to find.
@@ -53,6 +57,7 @@ trait DomElement extends js.Object {
   def getElementById(id: String): HTMLElement = js.native
   def getElementById(id: String, element: js.Any): js.Any = js.native
   def getElementById(id: String, element: HTMLElement): HTMLElement = js.native
+  
   /**
     * Gets the absolute position of a DOM element relative to the upper-left corner of the owner frame or window. This member is static and can be invoked without creating an instance of the class.             *
     * @param element
@@ -61,6 +66,7 @@ trait DomElement extends js.Object {
     *      An object of the JavaScript type Object that contains the x-coordinate and y-coordinate of the element in pixels.
     */
   def getLocation(element: HTMLElement): Point = js.native
+  
   /*
     * Returns a value that represents the layout characteristics of a DOM element when it is hidden by invoking the HTMLElement.setVisible method. This member is static and can be invoked without creating an instance of the class.
     * @param element
@@ -69,6 +75,7 @@ trait DomElement extends js.Object {
     *    A Sys.UI.VisibilityMode enumeration value that indicates the layout characteristics of element when it is hidden by invoking the setVisible method.
     */
   def getVisibilityMode(element: HTMLElement): VisibilityMode = js.native
+  
   /**
     * Gets a value that indicates whether a DOM element is currently visible on the Web page. This member is static and can be invoked without creating an instance of the class.
     * @param element
@@ -77,6 +84,7 @@ trait DomElement extends js.Object {
     *      true if element is visible on the Web page; otherwise, false
     */
   def getVisible(element: js.Any): Boolean = js.native
+  
   /**
     * Determines whether the specified object is a DOM element.
     * @param obj
@@ -85,6 +93,7 @@ trait DomElement extends js.Object {
     *      true if the object is a DOM element; otherwise, false.
     */
   def isDomElement(obj: js.Any): Boolean = js.native
+  
   /**
     * Raises a bubble event. A bubble event causes an event to be raised and then propagated up the control hierarchy until it is handled.
     * @param source
@@ -93,6 +102,7 @@ trait DomElement extends js.Object {
     *      The event arguments
     */
   def raiseBubbleEvent(source: HTMLElement, args: EventArgs): Unit = js.native
+  
   def removeCssClass(element: js.Any, className: String): Unit = js.native
   /**
     * Removes a CSS class from a DOM element. This member is static and can be invoked without creating an instance of the class. If the element does not include a CSS class, no change is made to the element.
@@ -102,6 +112,7 @@ trait DomElement extends js.Object {
     *          The name of the CSS class to remove.
     */
   def removeCssClass(element: HTMLElement, className: String): Unit = js.native
+  
   /**
     * Returns the element that has either the specified ID in the specified container, or is the specified element itself.
     * The resolveElement method is used to verify that an ID or an object can be resolved as an element.             *
@@ -116,6 +127,7 @@ trait DomElement extends js.Object {
   def resolveElement(elementOrElementId: String, containerElement: HTMLElement): HTMLElement = js.native
   def resolveElement(elementOrElementId: HTMLElement): HTMLElement = js.native
   def resolveElement(elementOrElementId: HTMLElement, containerElement: HTMLElement): HTMLElement = js.native
+  
   /**
     * Sets the position of a DOM element. This member is static and can be invoked without creating an instance of the class.
     * The left and top style attributes (upper-left corner) of an element specify the relative position of an element.
@@ -125,6 +137,7 @@ trait DomElement extends js.Object {
     * @param y The y-coordinate in pixels.
     */
   def setLocation(element: HTMLElement, x: Double, y: Double): Unit = js.native
+  
   /**
     * Sets the layout characteristics of a DOM element when it is hidden by invoking the HTMLElement.setVisible method.
     * This member is static and can be invoked without creating an instance of the class.
@@ -138,6 +151,7 @@ trait DomElement extends js.Object {
     *          A Sys.UI.VisibilityMode enumeration value.
     */
   def setVisibilityMode(element: HTMLElement, value: VisibilityMode): Unit = js.native
+  
   /**
     * Sets a DOM element to be visible or hidden. This member is static and can be invoked without creating an instance of the class.
     *
@@ -152,6 +166,7 @@ trait DomElement extends js.Object {
     *      true to make element visible on the Web page; false to hide element.
     */
   def setVisible(element: HTMLElement, value: Boolean): Unit = js.native
+  
   /**
     * Toggles a CSS class in a DOM element. This member is static and can be invoked without creating an instance of the class.
     * Use the toggleCssClass method to hide a CSS class of an element if it is shown, or to show a CSS class of an element if it is hidden.
@@ -163,4 +178,3 @@ trait DomElement extends js.Object {
     */
   def toggleCssClass(element: HTMLElement, className: String): Unit = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CalculationState extends js.Object
-
 /**
   *
   * Represents the state of calculation across the entire Excel application.
@@ -16,6 +15,7 @@ sealed trait CalculationState extends js.Object
 @JSGlobal("Excel.CalculationState")
 @js.native
 object CalculationState extends js.Object {
+  
   /**
     * Calculations in progress.
     *
@@ -36,6 +36,4 @@ object CalculationState extends js.Object {
     */
   @js.native
   sealed trait pending extends CalculationState
-  
 }
-

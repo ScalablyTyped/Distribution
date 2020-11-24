@@ -11,8 +11,8 @@ Measure the time a promise takes to resolve
 | Full name          | p-time |
 | Keywords           | promise, time, timed, timing, timer, elapsed, measure, bench, resolve, execute |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 6814 |
+| # dependents       | 6 |
+| # downloads        | 9338 |
 | # stars            | 0 |
 
 ## Links

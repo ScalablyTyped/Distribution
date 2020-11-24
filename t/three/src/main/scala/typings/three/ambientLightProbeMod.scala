@@ -5,11 +5,12 @@ import typings.three.lightProbeMod.LightProbe
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/AmbientLightProbe", JSImport.Namespace)
 @js.native
 object ambientLightProbeMod extends js.Object {
+  
   @js.native
   class AmbientLightProbe () extends LightProbe {
     def this(color: String) = this()
@@ -19,8 +20,7 @@ object ambientLightProbeMod extends js.Object {
     def this(color: String, intensity: Double) = this()
     def this(color: Double, intensity: Double) = this()
     def this(color: Color, intensity: Double) = this()
+    
     val isAmbientLightProbe: `true` = js.native
   }
-  
 }
-

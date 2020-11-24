@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CloseBehavior extends js.Object
-
 /**
   *
   * Specifies the close behavior for Workbook.close API.
@@ -16,6 +15,7 @@ sealed trait CloseBehavior extends js.Object
 @JSGlobal("Excel.CloseBehavior")
 @js.native
 object CloseBehavior extends js.Object {
+  
   /**
     * Save the possible changes before closing the workbook.
     *
@@ -29,6 +29,4 @@ object CloseBehavior extends js.Object {
     */
   @js.native
   sealed trait skipSave extends CloseBehavior
-  
 }
-

@@ -3,7 +3,7 @@ package typings.openlayers.mod.layer
 import typings.openlayers.mod.olx.layer.HeatmapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
   */
 class Heatmap () extends Vector {
   def this(opt_options: HeatmapOptions) = this()
+  
   /**
     * Return the blur size in pixels.
     * @return Blur size in pixels.
@@ -38,6 +39,7 @@ class Heatmap () extends Vector {
     * @observable
     */
   def getBlur(): Double = js.native
+  
   /**
     * Return the gradient colors as array of strings.
     * @return Colors.
@@ -45,6 +47,7 @@ class Heatmap () extends Vector {
     * @observable
     */
   def getGradient(): js.Array[String] = js.native
+  
   /**
     * Return the size of the radius in pixels.
     * @return Radius size in pixel.
@@ -52,6 +55,7 @@ class Heatmap () extends Vector {
     * @observable
     */
   def getRadius(): Double = js.native
+  
   /**
     * Set the blur size in pixels.
     * @param blur Blur size in pixels.
@@ -59,6 +63,7 @@ class Heatmap () extends Vector {
     * @observable
     */
   def setBlur(blur: Double): Unit = js.native
+  
   /**
     * Set the gradient colors as array of strings.
     * @param colors Gradient.
@@ -66,6 +71,7 @@ class Heatmap () extends Vector {
     * @observable
     */
   def setGradient(colors: js.Array[String]): Unit = js.native
+  
   /**
     * Set the size of the radius in pixels.
     * @param radius Radius size in pixel.
@@ -74,4 +80,3 @@ class Heatmap () extends Vector {
     */
   def setRadius(radius: Double): Unit = js.native
 }
-

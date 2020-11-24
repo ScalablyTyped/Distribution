@@ -7,7 +7,7 @@ import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "Vector")
 @js.native
@@ -46,11 +46,11 @@ class Vector[T] ()
     */
   def this(n: Double, `val`: T) = this()
 }
-
 /* static members */
 @JSImport("tstl", "Vector")
 @js.native
 object Vector extends js.Object {
+  
   val Iterator: Instantiable0[
     ArrayIterator[
       js.Object, 
@@ -70,6 +70,7 @@ object Vector extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     ArrayReverseIterator[
       js.Object, 
@@ -89,6 +90,7 @@ object Vector extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * Wrap an array into a vector.
     *
@@ -97,4 +99,3 @@ object Vector extends js.Object {
     */
   def wrap[T](data: js.Array[T]): typings.tstl.vectorMod.Vector[T] = js.native
 }
-

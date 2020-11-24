@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GetAllMembersVisiblity extends js.Object
-
 @JSGlobal("TypeScript.GetAllMembersVisiblity")
 @js.native
 object GetAllMembersVisiblity extends js.Object {
+  
   @js.native
   sealed trait all extends GetAllMembersVisiblity
   
@@ -18,6 +18,4 @@ object GetAllMembersVisiblity extends js.Object {
   
   @js.native
   sealed trait internallyVisible extends GetAllMembersVisiblity
-  
 }
-

@@ -9,10 +9,10 @@ minify HTML responses like some crazy guy
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | koa-html-minifier |
-| Keywords           | - |
-| # releases         | 0 |
+| Keywords           | koa, html, css, htmlmin, min, compress, minification, minifier, minify, uglifier, uglify, terser |
+| # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 5511 |
+| # downloads        | 6627 |
 | # stars            | 0 |
 
 ## Links

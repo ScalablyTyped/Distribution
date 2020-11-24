@@ -3,22 +3,25 @@ package typings.openui5.global.sap.ui.core
 import typings.openui5.sap.ui.base.Metadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.ResizeHandler")
 @js.native
 object ResizeHandler extends js.Object {
+  
   /**
     * Deregisters a previously registered handler for resize events with the given registration ID.
     * @param sId The registration ID of the handler to deregister. The ID was provided by function {@link
     * sap.ui.core.ResizeHandler.register}           when the handler was registered.
     */
   def deregister(sId: String): Unit = js.native
+  
   /**
     * Returns a metadata object for class sap.ui.core.ResizeHandler.
     * @returns Metadata object describing this class
     */
   def getMetadata(): Metadata = js.native
+  
   /**
     * Registers the given event handler for resize events on the given DOM element or control.<b>Note:</b>
     * This function must not be used before the UI5 framework is initialized.Please use the {@link
@@ -45,4 +48,3 @@ object ResizeHandler extends js.Object {
   def register(oRef: js.Any, fHandler: js.Any): String = js.native
   def register(oRef: typings.openui5.sap.ui.core.Control, fHandler: js.Any): String = js.native
 }
-

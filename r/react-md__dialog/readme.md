@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__dialog
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 This package is used to create accessible dialogs and modals.
@@ -10,9 +10,9 @@ This package is used to create accessible dialogs and modals.
 | ------------------ | :-------------: |
 | Full name          | @react-md/dialog |
 | Keywords           | accessibility, a11y, react-md, material design, react, dialog, modal, component, components |
-| # releases         | 23 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 3906 |
+| # downloads        | 7087 |
 | # stars            | 0 |
 
 ## Links

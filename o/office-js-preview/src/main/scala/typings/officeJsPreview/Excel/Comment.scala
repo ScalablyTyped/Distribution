@@ -11,7 +11,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Plain
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -21,6 +21,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Comment extends ClientObject {
+  
+  /**
+    * Assigns the task attached to the comment to the given user as the sole assignee. If there is no task, one will be created.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param email The email address of the user to assign the task to.
+    */
+  def assignTask(email: String): Task = js.native
+  
   /**
     *
     * Gets the email of the comment's author.
@@ -28,6 +39,7 @@ trait Comment extends ClientObject {
     * [Api set: ExcelApi 1.10]
     */
   val authorEmail: String = js.native
+  
   /**
     *
     * Gets the name of the comment's author.
@@ -35,6 +47,7 @@ trait Comment extends ClientObject {
     * [Api set: ExcelApi 1.10]
     */
   val authorName: String = js.native
+  
   /**
     *
     * The comment's content. The string is plain text.
@@ -42,17 +55,19 @@ trait Comment extends ClientObject {
     * [Api set: ExcelApi 1.10]
     */
   var content: String = js.native
+  
   /**
     *
     * Gets the content type of the comment.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.12]
     */
   val contentType: ContentType | Plain | Mention = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Comment: RequestContext = js.native
+  
   /**
     *
     * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
@@ -60,6 +75,37 @@ trait Comment extends ClientObject {
     * [Api set: ExcelApi 1.10]
     */
   val creationDate: Date = js.native
+  
+  /**
+    * Deletes the comment and all the connected replies.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  def delete(): Unit = js.native
+  
+  /**
+    * Gets the cell where this comment is located.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  def getLocation(): Range = js.native
+  
+  /**
+    * Gets the task associated with this comment. If there is no task for the comment thread, an ItemNotFound exception is thrown.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getTask(): Task = js.native
+  
+  /**
+    * Gets the task associated with this comment. If there is no task for the comment thread, a null object is returned.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getTaskOrNullObject(): Task = js.native
+  
   /**
     *
     * Specifies the comment identifier.
@@ -67,46 +113,7 @@ trait Comment extends ClientObject {
     * [Api set: ExcelApi 1.10]
     */
   val id: String = js.native
-  /**
-    *
-    * Gets the entities (e.g., people) that are mentioned in comments.
-    *
-    * [Api set: ExcelApi 1.11]
-    */
-  val mentions: js.Array[CommentMention] = js.native
-  /**
-    *
-    * Represents a collection of reply objects associated with the comment.
-    *
-    * [Api set: ExcelApi 1.10]
-    */
-  val replies: CommentReplyCollection = js.native
-  /**
-    *
-    * The comment thread status. A value of "true" means the comment thread is resolved.
-    *
-    * [Api set: ExcelApi 1.11]
-    */
-  var resolved: Boolean = js.native
-  /**
-    *
-    * Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
-    *
-    * [Api set: ExcelApi 1.11]
-    */
-  val richContent: String = js.native
-  /**
-    * Deletes the comment and all the connected replies.
-    *
-    * [Api set: ExcelApi 1.10]
-    */
-  def delete(): Unit = js.native
-  /**
-    * Gets the cell where this comment is located.
-    *
-    * [Api set: ExcelApi 1.10]
-    */
-  def getLocation(): Range = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -117,6 +124,39 @@ trait Comment extends ClientObject {
   def load(propertyNamesAndPaths: Expand): Comment = js.native
   def load(propertyNames: String): Comment = js.native
   def load(propertyNames: js.Array[String]): Comment = js.native
+  
+  /**
+    *
+    * Gets the entities (e.g., people) that are mentioned in comments.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  val mentions: js.Array[CommentMention] = js.native
+  
+  /**
+    *
+    * Represents a collection of reply objects associated with the comment.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val replies: CommentReplyCollection = js.native
+  
+  /**
+    *
+    * The comment thread status. A value of "true" means the comment thread is resolved.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  var resolved: Boolean = js.native
+  
+  /**
+    *
+    * Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  val richContent: String = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Comment): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -132,11 +172,13 @@ trait Comment extends ClientObject {
     */
   def set(properties: CommentUpdateData): Unit = js.native
   def set(properties: CommentUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): CommentData = js.native
+  
   /**
     * Updates the comment content with a specially formatted string and a list of mentions.
     *
@@ -146,4 +188,3 @@ trait Comment extends ClientObject {
     */
   def updateMentions(contentWithMentions: CommentRichContent): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ This plugin is designed to allow Vue.js developers to incorporate fully reactive
 | Keywords           | vue, d3, graphs, charts, data, data visualization, vue.js, d3.js, plugin |
 | # releases         | 25 |
 | # dependents       | 0 |
-| # downloads        | 3400 |
+| # downloads        | 4718 |
 | # stars            | 0 |
 
 ## Links

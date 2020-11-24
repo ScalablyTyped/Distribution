@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/overlay" : "2.1.2"
+      "@react-md/overlay" : "2.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/overlay" : "2.1.2"
+      "@react-md/overlay" : "2.4.2"
     }
   ],
   "compile-devDependencies" : [

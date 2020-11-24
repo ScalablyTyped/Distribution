@@ -4,7 +4,7 @@ import typings.awsSdk.marketplacecommerceanalyticsMod.ClientConfiguration
 import typings.awsSdk.marketplacecommerceanalyticsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "MarketplaceCommerceAnalytics")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class MarketplaceCommerceAnalytics () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

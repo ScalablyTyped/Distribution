@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services$Configs")
 @js.native
 class ResourceServicesConfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicemanagement.services.configs.create
     * @desc Creates a new service configuration (version) for a managed
@@ -47,6 +49,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.configs.get
     * @desc Gets a service configuration (version) for a managed service.
@@ -77,6 +80,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.configs.list
     * @desc Lists the history of the service configuration for a managed
@@ -111,6 +115,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServiceConfigsResponse]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.configs.submit
     * @desc Creates a new service configuration (version) for a managed service
@@ -148,4 +153,3 @@ class ResourceServicesConfigs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

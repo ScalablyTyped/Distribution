@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjPortlet used for scriptable dashboard portlet.
@@ -19,6 +19,7 @@ trait nlobjPortlet_
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * add a column (nlobjColumn) to this LIST portlet and return it.
     *
@@ -34,6 +35,7 @@ Instantiable0[js.Any] {
     */
   def addColumn(name: String, `type`: String, label: String): Unit = js.native
   def addColumn(name: String, `type`: String, label: String, align: String): Unit = js.native
+  
   /**
     * add an Edit column (nlobjColumn) to the left of the column specified (supported on LIST portlets only).
     *
@@ -50,6 +52,7 @@ Instantiable0[js.Any] {
     */
   def addEditColumn(column: js.Function0[Unit], showView: Boolean): js.Function0[Unit] = js.native
   def addEditColumn(column: js.Function0[Unit], showView: Boolean, showHref: String): js.Function0[Unit] = js.native
+  
   /**
     * add a field (nlobjField) to this FORM portlet and return it.
     *
@@ -70,6 +73,7 @@ Instantiable0[js.Any] {
   def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
+  
   /**
     * add a line (containing text or simple HTML) with optional indenting and URL to this LINKS portlet.
     *
@@ -85,6 +89,7 @@ Instantiable0[js.Any] {
   def addLine(text: String, url: js.UndefOr[scala.Nothing], indent: js.Any): Unit = js.native
   def addLine(text: String, url: String): Unit = js.native
   def addLine(text: String, url: String, indent: js.Any): Unit = js.native
+  
   /**
     * add a row (nlobjSearchResult or Array of name-value pairs) to this LIST portlet.
     *
@@ -93,6 +98,7 @@ Instantiable0[js.Any] {
     * @param row
     */
   def addRow(row: js.Any): Unit = js.native
+  
   /**
     * add multiple rows (Array of nlobjSearchResults or name-value pair Arrays) to this LIST portlet.
     *
@@ -101,6 +107,7 @@ Instantiable0[js.Any] {
     * @param rows
     */
   def addRows(rows: js.Any): Unit = js.native
+  
   /**
     * set the entire contents of the HTML portlet (will be placed inside a <TD>...</TD>).
     *
@@ -109,6 +116,7 @@ Instantiable0[js.Any] {
     * @param html
     */
   def setHtml(html: String): Unit = js.native
+  
   /**
     * add a FORM submit button to this FORM portlet.
     *
@@ -120,6 +128,7 @@ Instantiable0[js.Any] {
     */
   def setSubmitButton(url: String): Unit = js.native
   def setSubmitButton(url: String, label: String): Unit = js.native
+  
   /**
     * set the portlet title.
     *
@@ -129,4 +138,3 @@ Instantiable0[js.Any] {
     */
   def setTitle(title: String): Unit = js.native
 }
-

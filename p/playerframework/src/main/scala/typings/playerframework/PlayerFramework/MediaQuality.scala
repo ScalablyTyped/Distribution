@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaQuality extends js.Object
-
 @JSGlobal("PlayerFramework.MediaQuality")
 @js.native
 object MediaQuality extends js.Object {
+  
   /**
     * Typically indicates greater than or equal to 720p media quality.
     **/
@@ -21,6 +21,4 @@ object MediaQuality extends js.Object {
     **/
   @js.native
   sealed trait standardDefinition extends MediaQuality
-  
 }
-

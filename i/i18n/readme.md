@@ -10,9 +10,9 @@ lightweight translation module with dynamic json storage
 | ------------------ | :-------------: |
 | Full name          | i18n |
 | Keywords           | template, i18n, l10n |
-| # releases         | 2 |
-| # dependents       | 314 |
-| # downloads        | 6378976 |
+| # releases         | 11 |
+| # dependents       | 358 |
+| # downloads        | 8186416 |
 | # stars            | 93 |
 
 ## Links

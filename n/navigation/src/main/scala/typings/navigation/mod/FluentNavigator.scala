@@ -2,14 +2,11 @@ package typings.navigation.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FluentNavigator extends js.Object {
-  /**
-    * Gets the current Url
-    */
-  var url: String = js.native
+  
   /**
     * Navigates to a State
     * @param stateKey The key of a State
@@ -21,6 +18,7 @@ trait FluentNavigator extends js.Object {
     */
   def navigate(stateKey: String): FluentNavigator = js.native
   def navigate(stateKey: String, navigationData: js.Any): FluentNavigator = js.native
+  
   /**
     * Navigates back along the crumb trail
     * @param distance Starting at 1, the number of Crumb steps to go back
@@ -28,6 +26,7 @@ trait FluentNavigator extends js.Object {
     * @throws A mandatory route parameter has not been supplied a value
     */
   def navigateBack(distance: Double): FluentNavigator = js.native
+  
   /**
     * Navigates to the current State
     * @param navigationData The NavigationData to be passed to the current
@@ -38,5 +37,9 @@ trait FluentNavigator extends js.Object {
     */
   def refresh(): FluentNavigator = js.native
   def refresh(navigationData: js.Any): FluentNavigator = js.native
+  
+  /**
+    * Gets the current Url
+    */
+  var url: String = js.native
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "highlight.js" : "10.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "highlight.js" : "10.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

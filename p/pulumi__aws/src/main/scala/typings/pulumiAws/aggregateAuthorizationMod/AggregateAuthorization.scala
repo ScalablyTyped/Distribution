@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization")
 @js.native
@@ -22,28 +22,32 @@ class AggregateAuthorization protected () extends CustomResource {
     */
   def this(name: String, args: AggregateAuthorizationArgs) = this()
   def this(name: String, args: AggregateAuthorizationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Account ID
     */
   val accountId: Output_[String] = js.native
+  
   /**
     * The ARN of the authorization
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Region
     */
   val region: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization")
 @js.native
 object AggregateAuthorization extends js.Object {
+  
   /**
     * Get an existing AggregateAuthorization resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -57,10 +61,10 @@ object AggregateAuthorization extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AggregateAuthorization = js.native
   def get(name: String, id: Input[ID], state: AggregateAuthorizationState): AggregateAuthorization = js.native
   def get(name: String, id: Input[ID], state: AggregateAuthorizationState, opts: CustomResourceOptions): AggregateAuthorization = js.native
+  
   /**
     * Returns true if the given object is an instance of AggregateAuthorization.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/aggregateAuthorization.AggregateAuthorization */ Boolean = js.native
 }
-

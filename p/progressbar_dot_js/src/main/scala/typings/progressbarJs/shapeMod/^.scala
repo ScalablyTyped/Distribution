@@ -4,7 +4,7 @@ import typings.progressbarJs.mod.PathDrawingOptions
 import typings.std.SVGPathElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-empty-interface adds members from animation contract
 @JSImport("progressbar.js/shape", JSImport.Namespace)
@@ -22,4 +22,3 @@ class ^ () extends Shape {
   def this(container: Null, opts: PathDrawingOptions) = this()
   def this(container: SVGPathElement, opts: PathDrawingOptions) = this()
 }
-

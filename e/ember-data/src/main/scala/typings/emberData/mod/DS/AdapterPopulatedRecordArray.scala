@@ -2,7 +2,7 @@ package typings.emberData.mod.DS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an ordered list of records whose order and membership is
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.AdapterPopulatedRecordArray")
 @js.native
 class AdapterPopulatedRecordArray[T] () extends RecordArray[T]
-

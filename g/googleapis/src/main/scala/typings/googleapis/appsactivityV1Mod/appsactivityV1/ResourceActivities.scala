@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appsactivity/v1", "appsactivity_v1.Resource$Activities")
 @js.native
 class ResourceActivities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appsactivity.activities.list
     * @desc Returns a list of activities visible to the current logged in user.
@@ -53,4 +55,3 @@ class ResourceActivities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListActivitiesResponse]
   ): Unit = js.native
 }
-

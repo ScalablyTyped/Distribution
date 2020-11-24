@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-date-range
 
-Typings are for version 0.95
+Typings are for version 1.1
 
 ## Library description:
 A React component for choosing dates and date ranges.
@@ -10,9 +10,9 @@ A React component for choosing dates and date ranges.
 | ------------------ | :-------------: |
 | Full name          | react-date-range |
 | Keywords           | react, date, range, datepicker, rangepicker |
-| # releases         | 10 |
-| # dependents       | 38 |
-| # downloads        | 1358618 |
+| # releases         | 6 |
+| # dependents       | 44 |
+| # downloads        | 2047397 |
 | # stars            | 1 |
 
 ## Links

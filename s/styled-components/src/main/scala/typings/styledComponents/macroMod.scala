@@ -24,11 +24,36 @@ import typings.styledComponents.styledComponentsMod.ThemedStyledProps
 import typings.styledComponents.styledComponentsMod.WithThemeFnInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("styled-components/macro", JSImport.Namespace)
 @js.native
 object macroMod extends js.Object {
+  
+  val ThemeConsumer: Consumer[AnyIfEmpty[DefaultTheme]] = js.native
+  
+  val ThemeContext: Context[AnyIfEmpty[DefaultTheme]] = js.native
+  
+  def createGlobalStyle[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
+  def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
+  def createGlobalStyle[P /* <: js.Object */](
+    first: InterpolationFunction[ThemedStyledProps[P, DefaultTheme]],
+    interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*
+  ): GlobalStyleComponent[P, DefaultTheme] = js.native
+  
+  val css: ThemedCssFunction[DefaultTheme] = js.native
+  
+  val default: StyledInterface = js.native
+  
+  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = js.native
+  
+  def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = js.native
+  def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = js.native
+  
+  def useTheme(): DefaultTheme = js.native
+  
+  val withTheme: WithThemeFnInterface[DefaultTheme] = js.native
+  
   @js.native
   class ServerStyleSheet ()
     extends typings.styledComponents.styledComponentsMod.ServerStyleSheet
@@ -50,24 +75,6 @@ object macroMod extends js.Object {
       context: js.Any
     ) = this()
   }
-  
-  val ThemeConsumer: Consumer[AnyIfEmpty[DefaultTheme]] = js.native
-  val ThemeContext: Context[AnyIfEmpty[DefaultTheme]] = js.native
-  val css: ThemedCssFunction[DefaultTheme] = js.native
-  val default: StyledInterface = js.native
-  val withTheme: WithThemeFnInterface[DefaultTheme] = js.native
-  def createGlobalStyle[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
-  def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
-  def createGlobalStyle[P /* <: js.Object */](
-    first: InterpolationFunction[ThemedStyledProps[P, DefaultTheme]],
-    interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*
-  ): GlobalStyleComponent[P, DefaultTheme] = js.native
-  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = js.native
-  def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = js.native
-  def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = js.native
-  def useTheme(): DefaultTheme = js.native
   @js.native
   object ThemeProvider extends TopLevel[ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]]]
-  
 }
-

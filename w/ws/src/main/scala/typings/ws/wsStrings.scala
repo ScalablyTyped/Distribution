@@ -2,9 +2,43 @@ package typings.ws
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wsStrings {
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def connection: connection = "connection".asInstanceOf[connection]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def headers: headers = "headers".asInstanceOf[headers]
+  
+  @scala.inline
+  def listening: listening = "listening".asInstanceOf[listening]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def ping: ping = "ping".asInstanceOf[ping]
+  
+  @scala.inline
+  def pong: pong = "pong".asInstanceOf[pong]
+  
+  @scala.inline
+  def `unexpected-response`: `unexpected-response` = "unexpected-response".asInstanceOf[`unexpected-response`]
+  
+  @scala.inline
+  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
+  
   @js.native
   sealed trait close extends js.Object
   
@@ -37,28 +71,4 @@ object wsStrings {
   
   @js.native
   sealed trait upgrade extends js.Object
-  
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def listening: listening = "listening".asInstanceOf[listening]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def pong: pong = "pong".asInstanceOf[pong]
-  @scala.inline
-  def `unexpected-response`: `unexpected-response` = "unexpected-response".asInstanceOf[`unexpected-response`]
-  @scala.inline
-  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
 }
-

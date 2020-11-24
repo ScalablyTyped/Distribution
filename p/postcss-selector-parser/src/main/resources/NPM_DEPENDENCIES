@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-selector-parser" : "6.0.2"
+      "postcss-selector-parser" : "6.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-selector-parser" : "6.0.2"
+      "postcss-selector-parser" : "6.0.4"
     }
   ],
   "compile-devDependencies" : [

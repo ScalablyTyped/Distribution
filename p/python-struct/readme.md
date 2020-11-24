@@ -10,9 +10,9 @@ Packs/Unpacks/Measures structs according to Python's `struct` format
 | ------------------ | :-------------: |
 | Full name          | python-struct |
 | Keywords           | pack, unpack, struct, cstruct, python |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 26026 |
+| # releases         | 7 |
+| # dependents       | 14 |
+| # downloads        | 52789 |
 | # stars            | 0 |
 
 ## Links

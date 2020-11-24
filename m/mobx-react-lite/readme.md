@@ -1,18 +1,18 @@
 
 # Scala.js typings for mobx-react-lite
 
-Typings are for version 2.0.7
+Typings are for version 3.1.6
 
 ## Library description:
-Lightweight React bindings for MobX based on React 16.8 and Hooks
+Lightweight React bindings for MobX based on React 16.8+ and Hooks
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | mobx-react-lite |
-| Keywords           | mobx, mobservable, react-component, react, reactjs, reactive, hooks, observer, useObserver, useComputer |
-| # releases         | 34 |
-| # dependents       | 45 |
-| # downloads        | 2695952 |
+| Keywords           | mobx, mobservable, react-component, react, reactjs, reactive, hooks, observer, useObserver, useLocalStore, useAsObservableSource |
+| # releases         | 50 |
+| # dependents       | 97 |
+| # downloads        | 10871590 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.complete
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.std.stdStrings.`new`
 */
 trait RTCIceGatheringState extends js.Object
-
 object RTCIceGatheringState {
+  
   @scala.inline
   def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
+  
   @scala.inline
   def gathering: typings.std.stdStrings.gathering = "gathering".asInstanceOf[typings.std.stdStrings.gathering]
+  
   @scala.inline
   def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
 }
-

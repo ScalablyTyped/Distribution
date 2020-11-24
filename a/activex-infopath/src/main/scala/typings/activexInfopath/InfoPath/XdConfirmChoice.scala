@@ -6,7 +6,7 @@ import typings.activexInfopath.activexInfopathNumbers.`6`
 import typings.activexInfopath.activexInfopathNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexInfopath.activexInfopathNumbers.`2`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexInfopath.activexInfopathNumbers.`6`
 */
 trait XdConfirmChoice extends js.Object
-
 object XdConfirmChoice {
+  
   @scala.inline
   def xdCancel: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def xdNo: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def xdOK: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def xdYes: `6` = 6.asInstanceOf[`6`]
 }
-

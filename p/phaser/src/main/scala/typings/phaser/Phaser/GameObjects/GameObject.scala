@@ -16,7 +16,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class that all Game Objects extend.
@@ -28,82 +28,35 @@ trait GameObject
   extends EventEmitter
      with MatterBody
      with _ArcadeColliderType {
+  
   /**
     * The active state of this Game Object.
     * A Game Object with an active state of `true` is processed by the Scenes UpdateList, if added to it.
     * An active object is one which is having its logic and internal systems updated.
     */
   var active: Boolean = js.native
+  
   /**
     * If this Game Object is enabled for Arcade or Matter Physics then this property will contain a reference to a Physics Body.
     */
   var body: Body | StaticBody | BodyType = js.native
+  
   /**
     * A bitmask that controls if this Game Object is drawn by a Camera or not.
     * Not usually set directly, instead call `Camera.ignore`, however you can
     * set this property directly using the Camera.id property:
     */
   var cameraFilter: Double = js.native
+  
   /**
     * A Data Manager.
     * It allows you to store, query and get key/value paired information specific to this Game Object.
     * `null` by default. Automatically created if you use `getData` or `setData` or `setDataEnabled`.
     */
   var data: DataManager = js.native
-  /**
-    * This Game Object will ignore all calls made to its destroy method if this flag is set to `true`.
-    * This includes calls that may come from a Group, Container or the Scene itself.
-    * While it allows you to persist a Game Object across Scenes, please understand you are entirely
-    * responsible for managing references to and from this Game Object.
-    */
-  var ignoreDestroy: Boolean = js.native
-  /**
-    * If this Game Object is enabled for input then this property will contain an InteractiveObject instance.
-    * Not usually set directly. Instead call `GameObject.setInteractive()`.
-    */
-  var input: InteractiveObject = js.native
-  /**
-    * The name of this Game Object.
-    * Empty by default and never populated by Phaser, this is left for developers to use.
-    */
-  var name: String = js.native
-  /**
-    * The parent Container of this Game Object, if it has one.
-    */
-  var parentContainer: Container = js.native
-  /**
-    * The flags that are compared against `RENDER_MASK` to determine if this Game Object will render or not.
-    * The bits are 0001 | 0010 | 0100 | 1000 set by the components Visible, Alpha, Transform and Texture respectively.
-    * If those components are not used by your custom class then you can use this bitmask as you wish.
-    */
-  var renderFlags: integer = js.native
-  /**
-    * The Scene to which this Game Object belongs.
-    * Game Objects can only belong to one Scene.
-    */
-  var scene: Scene = js.native
-  /**
-    * The current state of this Game Object.
-    * 
-    * Phaser itself will never modify this value, although plugins may do so.
-    * 
-    * Use this property to track the state of a Game Object during its lifetime. For example, it could change from
-    * a state of 'moving', to 'attacking', to 'dead'. The state value should be an integer (ideally mapped to a constant
-    * in your game code), or a string. These are recommended to keep it light and simple, with fast comparisons.
-    * If you need to store complex data about your Game Object, look at using the Data Component instead.
-    */
-  var state: integer | String = js.native
-  /**
-    * The Tab Index of the Game Object.
-    * Reserved for future use by plugins and the Input Manager.
-    */
-  var tabIndex: integer = js.native
-  /**
-    * A textual representation of this Game Object, i.e. `sprite`.
-    * Used internally by Phaser but is available for your own custom classes to populate.
-    */
-  var `type`: String = js.native
+  
   def destroy(fromScene: Boolean): Unit = js.native
+  
   /**
     * If this Game Object has previously been enabled for input, this will disable it.
     * 
@@ -114,6 +67,7 @@ trait GameObject
     * If want to completely remove interaction from this Game Object then use `removeInteractive` instead.
     */
   def disableInteractive(): this.type = js.native
+  
   /**
     * Retrieves the value for the given key in this Game Objects Data Manager, or undefined if it doesn't exist.
     * 
@@ -140,6 +94,7 @@ trait GameObject
     */
   def getData(key: String): js.Any = js.native
   def getData(key: js.Array[String]): js.Any = js.native
+  
   /**
     * Returns an array containing the display list index of either this Game Object, or if it has one,
     * its parent Container. It then iterates up through all of the parent containers until it hits the
@@ -149,6 +104,15 @@ trait GameObject
     * this Game Object and all of its ancestors.
     */
   def getIndexList(): js.Array[integer] = js.native
+  
+  /**
+    * This Game Object will ignore all calls made to its destroy method if this flag is set to `true`.
+    * This includes calls that may come from a Group, Container or the Scene itself.
+    * While it allows you to persist a Game Object across Scenes, please understand you are entirely
+    * responsible for managing references to and from this Game Object.
+    */
+  var ignoreDestroy: Boolean = js.native
+  
   /**
     * Increase a value for the given key within this Game Objects Data Manager. If the key doesn't already exist in the Data Manager then it is increased from 0.
     * 
@@ -165,6 +129,24 @@ trait GameObject
   def incData(key: String, data: js.Any): this.type = js.native
   def incData(key: js.Object): this.type = js.native
   def incData(key: js.Object, data: js.Any): this.type = js.native
+  
+  /**
+    * If this Game Object is enabled for input then this property will contain an InteractiveObject instance.
+    * Not usually set directly. Instead call `GameObject.setInteractive()`.
+    */
+  var input: InteractiveObject = js.native
+  
+  /**
+    * The name of this Game Object.
+    * Empty by default and never populated by Phaser, this is left for developers to use.
+    */
+  var name: String = js.native
+  
+  /**
+    * The parent Container of this Game Object, if it has one.
+    */
+  var parentContainer: Container = js.native
+  
   /**
     * If this Game Object has previously been enabled for input, this will queue it
     * for removal, causing it to no longer be interactive. The removal happens on
@@ -186,12 +168,27 @@ trait GameObject
     * shape is a Rectangle, which it is by default.)
     */
   def removeInteractive(): this.type = js.native
+  
+  /**
+    * The flags that are compared against `RENDER_MASK` to determine if this Game Object will render or not.
+    * The bits are 0001 | 0010 | 0100 | 1000 set by the components Visible, Alpha, Transform and Texture respectively.
+    * If those components are not used by your custom class then you can use this bitmask as you wish.
+    */
+  var renderFlags: integer = js.native
+  
+  /**
+    * The Scene to which this Game Object belongs.
+    * Game Objects can only belong to one Scene.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Sets the `active` property of this Game Object and returns this Game Object for further chaining.
     * A Game Object with its `active` property set to `true` will be updated by the Scenes UpdateList.
     * @param value True if this Game Object should be set as active, false if not.
     */
   def setActive(value: Boolean): this.type = js.native
+  
   /**
     * Allows you to store a key value pair within this Game Objects Data Manager.
     * 
@@ -237,10 +234,12 @@ trait GameObject
   def setData(key: String, data: js.Any): this.type = js.native
   def setData(key: js.Object): this.type = js.native
   def setData(key: js.Object, data: js.Any): this.type = js.native
+  
   /**
     * Adds a Data Manager component to this Game Object.
     */
   def setDataEnabled(): this.type = js.native
+  
   /**
     * Pass this Game Object to the Input Manager to enable it for Input.
     * 
@@ -269,12 +268,14 @@ trait GameObject
   def setInteractive(shape: InputConfiguration, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
   def setInteractive(shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
   def setInteractive(shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  
   /**
     * Sets the `name` property of this Game Object and returns this Game Object for further chaining.
     * The `name` property is not populated by Phaser and is presented for your own use.
     * @param value The name to be given to this Game Object.
     */
   def setName(value: String): this.type = js.native
+  
   def setState(value: String): this.type = js.native
   /**
     * Sets the current state of this Game Object.
@@ -288,10 +289,30 @@ trait GameObject
     * @param value The state of the Game Object.
     */
   def setState(value: integer): this.type = js.native
+  
+  /**
+    * The current state of this Game Object.
+    * 
+    * Phaser itself will never modify this value, although plugins may do so.
+    * 
+    * Use this property to track the state of a Game Object during its lifetime. For example, it could change from
+    * a state of 'moving', to 'attacking', to 'dead'. The state value should be an integer (ideally mapped to a constant
+    * in your game code), or a string. These are recommended to keep it light and simple, with fast comparisons.
+    * If you need to store complex data about your Game Object, look at using the Data Component instead.
+    */
+  var state: integer | String = js.native
+  
+  /**
+    * The Tab Index of the Game Object.
+    * Reserved for future use by plugins and the Input Manager.
+    */
+  var tabIndex: integer = js.native
+  
   /**
     * Returns a JSON representation of the Game Object.
     */
   def toJSON(): JSONGameObject = js.native
+  
   /**
     * Toggle a boolean value for the given key within this Game Objects Data Manager. If the key doesn't already exist in the Data Manager then it is toggled from false.
     * 
@@ -305,11 +326,19 @@ trait GameObject
     */
   def toggleData(key: String): this.type = js.native
   def toggleData(key: js.Object): this.type = js.native
+  
+  /**
+    * A textual representation of this Game Object, i.e. `sprite`.
+    * Used internally by Phaser but is available for your own custom classes to populate.
+    */
+  var `type`: String = js.native
+  
   /**
     * To be overridden by custom GameObjects. Allows base objects to be used in a Pool.
     * @param args args
     */
   def update(args: js.Any*): Unit = js.native
+  
   /**
     * Compares the renderMask with the renderFlags to see if this Game Object will render or not.
     * Also checks the Game Object against the given Cameras exclusion list.
@@ -317,4 +346,3 @@ trait GameObject
     */
   def willRender(camera: Camera): Boolean = js.native
 }
-

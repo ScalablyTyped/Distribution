@@ -1,7 +1,7 @@
 
 # Scala.js typings for xstyled__styled-components
 
-Typings are for version 1.17
+Typings are for version 1.19
 
 ## Library description:
 Xstyled bindings for styled-components.
@@ -10,9 +10,9 @@ Xstyled bindings for styled-components.
 | ------------------ | :-------------: |
 | Full name          | @xstyled/styled-components |
 | Keywords           | styled-components, css, system, styled-system |
-| # releases         | 43 |
-| # dependents       | 5 |
-| # downloads        | 98778 |
+| # releases         | 51 |
+| # dependents       | 8 |
+| # downloads        | 210519 |
 | # stars            | 0 |
 
 ## Links

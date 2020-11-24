@@ -6,16 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Jobs")
 @js.native
 class ResourceProjectsJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var debug: ResourceProjectsJobsDebug = js.native
-  var messages: ResourceProjectsJobsMessages = js.native
-  var workItems: ResourceProjectsJobsWorkitems = js.native
+  
   /**
     * dataflow.projects.jobs.aggregated
     * @desc List the jobs of a project across all regions.
@@ -52,6 +49,9 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dataflow.projects.jobs.create
     * @desc Creates a Cloud Dataflow job.  To create a job, we recommend using
@@ -88,6 +88,9 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
+  var debug: ResourceProjectsJobsDebug = js.native
+  
   /**
     * dataflow.projects.jobs.get
     * @desc Gets the state of the specified Cloud Dataflow job.  To get the
@@ -124,6 +127,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.jobs.getMetrics
     * @desc Request the job status.  To request the status of a job, we
@@ -160,6 +164,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJobMetrics]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.jobs.list
     * @desc List the jobs of a project.  To list the jobs of a project in a
@@ -199,6 +204,9 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
+  var messages: ResourceProjectsJobsMessages = js.native
+  
   /**
     * dataflow.projects.jobs.snapshot
     * @desc Snapshot the state of a streaming job.
@@ -229,6 +237,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.jobs.update
     * @desc Updates the state of an existing Cloud Dataflow job.  To update the
@@ -265,5 +274,6 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
+  var workItems: ResourceProjectsJobsWorkitems = js.native
 }
-

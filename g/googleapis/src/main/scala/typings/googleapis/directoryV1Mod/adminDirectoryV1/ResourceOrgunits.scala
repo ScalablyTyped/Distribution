@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Orgunits")
 @js.native
 class ResourceOrgunits protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.orgunits.delete
     * @desc Remove organizational unit
@@ -38,6 +40,7 @@ class ResourceOrgunits protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceOrgunitsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceOrgunitsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.orgunits.get
     * @desc Retrieve organizational unit
@@ -67,6 +70,7 @@ class ResourceOrgunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
+  
   /**
     * directory.orgunits.insert
     * @desc Add organizational unit
@@ -96,6 +100,7 @@ class ResourceOrgunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
+  
   /**
     * directory.orgunits.list
     * @desc Retrieve all organizational units
@@ -126,6 +131,7 @@ class ResourceOrgunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnits]
   ): Unit = js.native
+  
   /**
     * directory.orgunits.patch
     * @desc Update organizational unit. This method supports patch semantics.
@@ -156,6 +162,7 @@ class ResourceOrgunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
+  
   /**
     * directory.orgunits.update
     * @desc Update organizational unit
@@ -187,4 +194,3 @@ class ResourceOrgunits protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
 }
-

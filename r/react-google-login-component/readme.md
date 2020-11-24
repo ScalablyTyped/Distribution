@@ -10,9 +10,9 @@ React Component that lets you instantly login through google platform
 | ------------------ | :-------------: |
 | Full name          | react-google-login-component |
 | Keywords           | React, Google, Login, Auth, oauth, component |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 30136 |
+| # downloads        | 39751 |
 | # stars            | 3 |
 
 ## Links

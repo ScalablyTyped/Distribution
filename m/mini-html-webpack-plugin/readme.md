@@ -10,9 +10,9 @@ A miniature version of html-webpack-plugin with only necessary features
 | ------------------ | :-------------: |
 | Full name          | mini-html-webpack-plugin |
 | Keywords           | webpack, html, template |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 37 |
-| # downloads        | 5404361 |
+| # downloads        | 6242886 |
 | # stars            | 0 |
 
 ## Links

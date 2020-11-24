@@ -4,7 +4,7 @@ import typings.uirouterAngularjs.interfaceMod.Ng1ViewDeclaration
 import typings.uirouterAngularjs.templateFactoryMod.TemplateFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "Ng1ViewConfig")
 @js.native
@@ -16,4 +16,3 @@ class Ng1ViewConfig protected ()
     factory: TemplateFactory
   ) = this()
 }
-

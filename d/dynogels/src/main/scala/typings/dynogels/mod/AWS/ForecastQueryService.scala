@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.forecastqueryserviceMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ForecastQueryService")
 @js.native
@@ -14,4 +14,3 @@ class ForecastQueryService ()
   extends typings.awsSdk.mod.ForecastQueryService {
   def this(options: ClientConfiguration) = this()
 }
-

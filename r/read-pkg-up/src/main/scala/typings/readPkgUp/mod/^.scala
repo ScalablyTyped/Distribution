@@ -2,11 +2,12 @@ package typings.readPkgUp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("read-pkg-up", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Read the closest `package.json` file.
   	@example
@@ -28,6 +29,7 @@ object ^ extends js.Object {
   def apply(): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
   def apply(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = js.native
   def apply(options: Options): js.Promise[js.UndefOr[ReadResult]] = js.native
+  
   /**
   	Synchronously read the closest `package.json` file.
   	@example
@@ -48,4 +50,3 @@ object ^ extends js.Object {
   def sync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = js.native
   def sync(options: Options): js.UndefOr[ReadResult] = js.native
 }
-

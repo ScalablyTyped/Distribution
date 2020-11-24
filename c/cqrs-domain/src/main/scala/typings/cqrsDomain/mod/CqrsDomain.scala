@@ -3,10 +3,11 @@ package typings.cqrsDomain.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CqrsDomain extends js.Object {
+  
   /**
     * Inject idGenerator function for aggregate id.
     * @param fn The function to be injected.
@@ -14,6 +15,7 @@ trait CqrsDomain extends js.Object {
     */
   def aggregateIdGenerator(cb: js.Function0[String]): CqrsDomain = js.native
   def aggregateIdGenerator(cb: js.Function1[/* callback */ generateIdCallback, String]): CqrsDomain = js.native
+  
   /**
     * Converts an error to the commandRejected event
     * @param cmd The command that was handled.
@@ -21,22 +23,26 @@ trait CqrsDomain extends js.Object {
     * @returns The resulting event.
     */
   def createCommandRejectedEvent(cmd: js.Any, err: Error): js.Any = js.native
+  
   /**
     * Inject definition for command structure.
     * @param definition the definition to be injected
     * @returns to be able to chain...
     */
   def defineCommand(definition: CommandDefinition): CqrsDomain = js.native
+  
   /**
     * Inject definition for event structure.
     * @param definition the definition to be injected
     * @returns to be able to chain...
     */
   def defineEvent(definition: EventDefinition): CqrsDomain = js.native
+  
   /**
     * Returns the domain information.
     */
   def getInfo(): js.Any = js.native
+  
   /**
     * Call this function to let the domain handle it.
     * @param cmd      the command object
@@ -55,6 +61,7 @@ trait CqrsDomain extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Inject idGenerator function.
     * @param fn The function to be injected.
@@ -62,12 +69,14 @@ trait CqrsDomain extends js.Object {
     */
   def idGenerator(cb: js.Function0[String]): CqrsDomain = js.native
   def idGenerator(cb: js.Function1[/* callback */ generateIdCallback, String]): CqrsDomain = js.native
+  
   /**
     * Call this function to initialize the domain.
     * @param callback the function that will be called when this action has finished [optional]
     *                            `function(err, warnings){}`
     */
   def init(cb: js.Function2[/* err */ Error, /* warnings */ js.Array[Error], Unit]): Unit = js.native
+  
   /**
     * Is called when dispatched a command.
     * @param cmd              the command object
@@ -92,6 +101,7 @@ trait CqrsDomain extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Inject function for for event notification.
     * @param fn the function to be injected
@@ -100,4 +110,3 @@ trait CqrsDomain extends js.Object {
   def onEvent(cb: js.Function1[/* evt */ js.Any, Unit]): CqrsDomain = js.native
   def onEvent(cb: js.Function2[/* evt */ js.Any, /* callback */ js.Function0[Unit], Unit]): CqrsDomain = js.native
 }
-

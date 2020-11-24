@@ -6,16 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/runtimeconfig/v1beta1", "runtimeconfig_v1beta1.Resource$Projects$Configs")
 @js.native
 class ResourceProjectsConfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceProjectsConfigsOperations = js.native
-  var variables: ResourceProjectsConfigsVariables = js.native
-  var waiters: ResourceProjectsConfigsWaiters = js.native
+  
   /**
     * runtimeconfig.projects.configs.create
     * @desc Creates a new RuntimeConfig resource. The configuration name must
@@ -47,6 +46,7 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRuntimeConfig]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.delete
     * @desc Deletes a RuntimeConfig resource.
@@ -75,6 +75,7 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.get
     * @desc Gets information about a RuntimeConfig resource.
@@ -103,6 +104,7 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRuntimeConfig]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -132,6 +134,7 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.list
     * @desc Lists all the RuntimeConfig resources within project.
@@ -165,6 +168,9 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListConfigsResponse]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsConfigsOperations = js.native
+  
   /**
     * runtimeconfig.projects.configs.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -195,6 +201,7 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -231,6 +238,7 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.update
     * @desc Updates a RuntimeConfig resource. The configuration must exist
@@ -261,5 +269,8 @@ class ResourceProjectsConfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRuntimeConfig]
   ): Unit = js.native
+  
+  var variables: ResourceProjectsConfigsVariables = js.native
+  
+  var waiters: ResourceProjectsConfigsWaiters = js.native
 }
-

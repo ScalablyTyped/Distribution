@@ -7,11 +7,16 @@ import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
 import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/resolve", JSImport.Namespace)
 @js.native
 object libResolveMod extends js.Object {
+  
+  val NATIVE_INJECTOR_TOKEN: String = js.native
+  
+  var defaultResolvePolicy: ResolvePolicy = js.native
+  
   @js.native
   class Resolvable protected ()
     extends typings.uirouterCore.resolvableMod.Resolvable {
@@ -65,6 +70,12 @@ object libResolveMod extends js.Object {
     ) = this()
     def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
   }
+  /* static members */
+  @js.native
+  object Resolvable extends js.Object {
+    
+    def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = js.native
+  }
   
   @js.native
   class ResolveContext protected ()
@@ -72,19 +83,11 @@ object libResolveMod extends js.Object {
     def this(_path: js.Array[PathNode]) = this()
   }
   
-  val NATIVE_INJECTOR_TOKEN: String = js.native
-  var defaultResolvePolicy: ResolvePolicy = js.native
-  /* static members */
-  @js.native
-  object Resolvable extends js.Object {
-    def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = js.native
-  }
-  
   @js.native
   object resolvePolicies extends js.Object {
+    
     var async: NOWAIT = js.native
+    
     var when: EAGER = js.native
   }
-  
 }
-

@@ -10,9 +10,9 @@ Accessible, extensible, Autocomplete for React.js
 | ------------------ | :-------------: |
 | Full name          | react-autocomplete |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 72 |
-| # downloads        | 2649147 |
+| # releases         | 0 |
+| # dependents       | 89 |
+| # downloads        | 3162551 |
 | # stars            | 8 |
 
 ## Links

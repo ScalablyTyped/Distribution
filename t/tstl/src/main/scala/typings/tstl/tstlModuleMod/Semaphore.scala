@@ -4,7 +4,7 @@ import typings.tstl.anon.PickSemaphorenumberacquir
 import typings.tstl.itimedlockableMod.ITimedLockable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "Semaphore")
 @js.native
@@ -17,10 +17,10 @@ class Semaphore[Max /* <: Double */] protected ()
     */
   def this(max: Max) = this()
 }
-
 @JSImport("tstl/module", "Semaphore")
 @js.native
 object Semaphore extends js.Object {
+  
   /**
     * Capsules a {@link Semaphore} to be suitable for the {@link UniqueLock}.
     *
@@ -30,4 +30,3 @@ object Semaphore extends js.Object {
   @JSName("get_lockable")
   def getLockable[SemaphoreT /* <: PickSemaphorenumberacquir */](semaphore: SemaphoreT): ITimedLockable = js.native
 }
-

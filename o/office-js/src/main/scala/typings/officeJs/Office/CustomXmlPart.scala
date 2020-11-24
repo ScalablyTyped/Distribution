@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single CustomXMLPart in an {@link Office.CustomXmlParts} collection.
@@ -13,18 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomXmlPart extends js.Object {
-  /**
-    * True, if the custom XML part is built in; otherwise false.
-    */
-  var builtIn: Boolean = js.native
-  /**
-    * Gets the GUID of the CustomXMLPart.
-    */
-  var id: String = js.native
-  /**
-    * Gets the set of namespace prefix mappings ({@link Office.CustomXmlPrefixMappings}) used against the current CustomXmlPart.
-    */
-  var namespaceManager: CustomXmlPrefixMappings = js.native
+  
   /**
     * Adds an event handler to the object using the specified event type.
     *
@@ -64,6 +53,12 @@ trait CustomXmlPart extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * True, if the custom XML part is built in; otherwise false.
+    */
+  var builtIn: Boolean = js.native
+  
   /**
     * Deletes the Custom XML Part.
     * 
@@ -79,6 +74,7 @@ trait CustomXmlPart extends js.Object {
   def deleteAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def deleteAsync(options: AsyncContextOptions): Unit = js.native
   def deleteAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  
   /**
     * Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     * 
@@ -104,6 +100,7 @@ trait CustomXmlPart extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlNode]], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously gets the XML inside this custom XML part.
     * 
@@ -120,6 +117,17 @@ trait CustomXmlPart extends js.Object {
   def getXmlAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  
+  /**
+    * Gets the GUID of the CustomXMLPart.
+    */
+  var id: String = js.native
+  
+  /**
+    * Gets the set of namespace prefix mappings ({@link Office.CustomXmlPrefixMappings}) used against the current CustomXmlPart.
+    */
+  var namespaceManager: CustomXmlPrefixMappings = js.native
+  
   /**
     * Removes an event handler for the specified event type.
     * 
@@ -176,4 +184,3 @@ trait CustomXmlPart extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

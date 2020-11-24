@@ -11,8 +11,8 @@ The lodash method `_.at` exported as a module.
 | Full name          | lodash.at |
 | Keywords           | lodash-modularized, at |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 23213481 |
+| # dependents       | 17 |
+| # downloads        | 47006130 |
 | # stars            | 0 |
 
 ## Links

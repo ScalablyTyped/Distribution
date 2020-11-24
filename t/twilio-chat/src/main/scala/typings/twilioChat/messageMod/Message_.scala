@@ -10,7 +10,7 @@ import typings.twilioChat.messageMod.Message.Type
 import typings.twilioChat.sessionerrorMod.SessionError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc A Message represents a Message in a Channel.
@@ -36,37 +36,56 @@ class Message_ protected () extends EventEmitter {
     * @typedef {('body' | 'lastUpdatedBy' | 'dateCreated' | 'dateUpdated' | 'attributes' | 'author')} Message#UpdateReason
     */
   def this(channel: Channel, services: MessageServices, index: Double, data: js.Any) = this()
-  val channel: Channel = js.native
-  var services: js.Any = js.native
-  var state: js.Any = js.native
+  
   def _update(data: js.Any): Unit = js.native
+  
   def attributes: js.Object = js.native
+  
   def author: String = js.native
+  
   def body: String = js.native
+  
+  val channel: Channel = js.native
+  
   def dateCreated: Date = js.native
+  
   def dateUpdated: Date = js.native
+  
   /**
     * Get Member who is author of the Message
     * @returns {Promise<Member>}
     */
   def getMember(): js.Promise[Member] = js.native
+  
   def index: Double = js.native
+  
   def lastUpdatedBy: String = js.native
+  
   def media: Media = js.native
+  
   def memberSid: String = js.native
+  
   /**
     * Remove the Message.
     * @returns {Promise<Message|SessionError>}
     */
   def remove(): js.Promise[Message | SessionError] = js.native
+  
+  var services: js.Any = js.native
+  
   def sid: String = js.native
+  
+  var state: js.Any = js.native
+  
   def `type`: Type = js.native
+  
   /**
     * Edit message attributes.
     * @param {any} attributes new attributes for Message.
     * @returns {Promise<Message|Error|SessionError>}
     */
   def updateAttributes(attributes: js.Any): js.Promise[this.type] = js.native
+  
   /**
     * Edit message body.
     * @param {String} body - new body of Message.
@@ -74,4 +93,3 @@ class Message_ protected () extends EventEmitter {
     */
   def updateBody(body: String): js.Promise[Message | Error | SessionError] = js.native
 }
-

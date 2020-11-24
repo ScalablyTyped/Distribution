@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasRequireEncryptionResult extends js.Object
-
 /** Represents the type of encryption required. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult")
 @js.native
 object EasRequireEncryptionResult extends js.Object {
+  
   /** This computer can be compliant by using the ApplyAsync method. */
   @js.native
   sealed trait canBeCompliant extends EasRequireEncryptionResult
@@ -86,6 +86,4 @@ object EasRequireEncryptionResult extends js.Object {
   /** An unexpected failure occurred. */
   @js.native
   sealed trait unexpectedFailure extends EasRequireEncryptionResult
-  
 }
-

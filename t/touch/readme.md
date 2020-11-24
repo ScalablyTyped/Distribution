@@ -10,9 +10,9 @@ like touch(1) in node
 | ------------------ | :-------------: |
 | Full name          | touch |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 560 |
-| # downloads        | 124198198 |
+| # releases         | 0 |
+| # dependents       | 669 |
+| # downloads        | 155892195 |
 | # stars            | 16 |
 
 ## Links

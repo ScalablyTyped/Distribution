@@ -3,7 +3,7 @@ package typings.pixiJs.PIXI
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Class controls uv mapping from Texture normal space to BaseTexture normal space.
@@ -24,18 +24,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextureMatrix extends js.Object {
+  
   /**
     * Tracks Texture frame changes
     * @member {number} PIXI.TextureMatrix#_textureID
     * @protected
     */
   var _textureID: Double = js.native
+  
   /**
     * Tracks Texture frame changes
     * @member {number} PIXI.TextureMatrix#_updateID
     * @protected
     */
   var _updateID: Double = js.native
+  
   /**
     * Changes frame clamping
     * Works with TilingSprite and Mesh
@@ -45,6 +48,7 @@ trait TextureMatrix extends js.Object {
     * @member {number} PIXI.TextureMatrix#clampMargin
     */
   var clampMargin: Double = js.native
+  
   /**
     * Changes frame clamping
     * Works with TilingSprite and Mesh
@@ -54,6 +58,7 @@ trait TextureMatrix extends js.Object {
     * @member {number} PIXI.TextureMatrix#clampOffset
     */
   var clampOffset: Double = js.native
+  
   /**
     * If texture size is the same as baseTexture
     * @member {boolean} PIXI.TextureMatrix#isSimple
@@ -61,31 +66,14 @@ trait TextureMatrix extends js.Object {
     * @readonly
     */
   val isSimple: Boolean = js.native
+  
   /**
     * Matrix operation that converts texture region coords to texture coords
     * @member {PIXI.Matrix} PIXI.TextureMatrix#mapCoord
     * @readonly
     */
   val mapCoord: Matrix = js.native
-  /**
-    * texture property
-    * @member {PIXI.Texture}
-    */
-  var texture: Texture = js.native
-  /**
-    * Clamp region for normalized coords, left-top pixel center in xy , bottom-right in zw.
-    * Calculated based on clampOffset.
-    * @member {Float32Array} PIXI.TextureMatrix#uClampFrame
-    * @readonly
-    */
-  val uClampFrame: Float32Array = js.native
-  /**
-    * Normalized clamp offset.
-    * Calculated based on clampOffset.
-    * @member {Float32Array} PIXI.TextureMatrix#uClampOffset
-    * @readonly
-    */
-  val uClampOffset: Float32Array = js.native
+  
   /**
     * Multiplies uvs array to transform
     * @param {Float32Array} uvs - mesh uvs
@@ -94,6 +82,29 @@ trait TextureMatrix extends js.Object {
     */
   def multiplyUvs(uvs: Float32Array): Float32Array = js.native
   def multiplyUvs(uvs: Float32Array, out: Float32Array): Float32Array = js.native
+  
+  /**
+    * texture property
+    * @member {PIXI.Texture}
+    */
+  var texture: Texture = js.native
+  
+  /**
+    * Clamp region for normalized coords, left-top pixel center in xy , bottom-right in zw.
+    * Calculated based on clampOffset.
+    * @member {Float32Array} PIXI.TextureMatrix#uClampFrame
+    * @readonly
+    */
+  val uClampFrame: Float32Array = js.native
+  
+  /**
+    * Normalized clamp offset.
+    * Calculated based on clampOffset.
+    * @member {Float32Array} PIXI.TextureMatrix#uClampOffset
+    * @readonly
+    */
+  val uClampOffset: Float32Array = js.native
+  
   /**
     * updates matrices if texture was changed
     * @param {boolean} [forceUpdate=false] - if true, matrices will be updated any case
@@ -102,4 +113,3 @@ trait TextureMatrix extends js.Object {
   def update(): Boolean = js.native
   def update(forceUpdate: Boolean): Boolean = js.native
 }
-

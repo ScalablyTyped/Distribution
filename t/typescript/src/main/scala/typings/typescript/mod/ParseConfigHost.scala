@@ -2,17 +2,17 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParseConfigHost extends js.Object {
-  var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.native
-  var useCaseSensitiveFileNames: Boolean = js.native
+  
   /**
     * Gets a value indicating whether the specified path exists and is a file.
     * @param path The path to test.
     */
   def fileExists(path: java.lang.String): Boolean = js.native
+  
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
@@ -39,6 +39,10 @@ trait ParseConfigHost extends js.Object {
     includes: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native
+  
   def readFile(path: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  
+  var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.native
+  
+  var useCaseSensitiveFileNames: Boolean = js.native
 }
-

@@ -13,10 +13,11 @@ import typings.jqueryCycle2.jqueryCycle2Strings.resume
 import typings.jqueryCycle2.jqueryCycle2Strings.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Cycle2 extends js.Object {
+  
   def apply(): JQuery = js.native
   def apply(methodNameDontCallMe: String, arg1DontCallMe: js.Any, arg2DontCallMe: js.Any): JQuery = js.native
   def apply(methodName: add, newSlide: js.Any): JQuery = js.native
@@ -32,4 +33,3 @@ trait Cycle2 extends js.Object {
   def apply(methodName: stop): JQuery = js.native
   def apply(options: Options): JQuery = js.native
 }
-

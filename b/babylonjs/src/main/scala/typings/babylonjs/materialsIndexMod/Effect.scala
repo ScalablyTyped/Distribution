@@ -7,7 +7,7 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "Effect")
 @js.native
@@ -29,56 +29,8 @@ class Effect protected ()
     */
   def this(
     baseName: js.Any,
-    attributesNamesOrOptions: js.Array[String],
-    uniformsNamesOrEngine: js.Array[String],
-    samplers: js.UndefOr[Nullable[js.Array[String]]],
-    engine: js.UndefOr[ThinEngine],
-    defines: js.UndefOr[Nullable[String]],
-    fallbacks: js.UndefOr[Nullable[IEffectFallbacks]],
-    onCompiled: js.UndefOr[Nullable[js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]]],
-    onError: js.UndefOr[
-        Nullable[
-          js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-        ]
-      ],
-    indexParameters: js.UndefOr[js.Any]
-  ) = this()
-  def this(
-    baseName: js.Any,
-    attributesNamesOrOptions: js.Array[String],
-    uniformsNamesOrEngine: ThinEngine,
-    samplers: js.UndefOr[Nullable[js.Array[String]]],
-    engine: js.UndefOr[ThinEngine],
-    defines: js.UndefOr[Nullable[String]],
-    fallbacks: js.UndefOr[Nullable[IEffectFallbacks]],
-    onCompiled: js.UndefOr[Nullable[js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]]],
-    onError: js.UndefOr[
-        Nullable[
-          js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-        ]
-      ],
-    indexParameters: js.UndefOr[js.Any]
-  ) = this()
-  def this(
-    baseName: js.Any,
-    attributesNamesOrOptions: IEffectCreationOptions,
-    uniformsNamesOrEngine: js.Array[String],
-    samplers: js.UndefOr[Nullable[js.Array[String]]],
-    engine: js.UndefOr[ThinEngine],
-    defines: js.UndefOr[Nullable[String]],
-    fallbacks: js.UndefOr[Nullable[IEffectFallbacks]],
-    onCompiled: js.UndefOr[Nullable[js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]]],
-    onError: js.UndefOr[
-        Nullable[
-          js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-        ]
-      ],
-    indexParameters: js.UndefOr[js.Any]
-  ) = this()
-  def this(
-    baseName: js.Any,
-    attributesNamesOrOptions: IEffectCreationOptions,
-    uniformsNamesOrEngine: ThinEngine,
+    attributesNamesOrOptions: js.Array[String] | IEffectCreationOptions,
+    uniformsNamesOrEngine: js.Array[String] | ThinEngine,
     samplers: js.UndefOr[Nullable[js.Array[String]]],
     engine: js.UndefOr[ThinEngine],
     defines: js.UndefOr[Nullable[String]],
@@ -92,25 +44,21 @@ class Effect protected ()
     indexParameters: js.UndefOr[js.Any]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Materials/index", "Effect")
 @js.native
 object Effect extends js.Object {
+  
   /**
     * Store of each included file for a shader (The can be looked up using effect.key)
     */
   var IncludesShadersStore: StringDictionary[String] = js.native
+  
   /**
-    * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
+    * Enable logging of the shader code when a compilation error occurs
     */
-  var ShadersRepository: String = js.native
-  /**
-    * Store of each shader (The can be looked up using effect.key)
-    */
-  var ShadersStore: StringDictionary[String] = js.native
-  var _baseCache: js.Any = js.native
-  var _uniqueIdSeed: js.Any = js.native
+  var LogShaderCodeOnCompilationError: Boolean = js.native
+  
   /**
     * This function will add a new shader to the shader store
     * @param name the name of the shader
@@ -118,11 +66,26 @@ object Effect extends js.Object {
     * @param vertexShader optional vertex shader content
     */
   def RegisterShader(name: String): Unit = js.native
+  def RegisterShader(name: String, pixelShader: js.UndefOr[scala.Nothing], vertexShader: String): Unit = js.native
   def RegisterShader(name: String, pixelShader: String): Unit = js.native
   def RegisterShader(name: String, pixelShader: String, vertexShader: String): Unit = js.native
+  
   /**
     * Resets the cache of effects.
     */
   def ResetCache(): Unit = js.native
+  
+  /**
+    * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
+    */
+  var ShadersRepository: String = js.native
+  
+  /**
+    * Store of each shader (The can be looked up using effect.key)
+    */
+  var ShadersStore: StringDictionary[String] = js.native
+  
+  var _baseCache: js.Any = js.native
+  
+  var _uniqueIdSeed: js.Any = js.native
 }
-

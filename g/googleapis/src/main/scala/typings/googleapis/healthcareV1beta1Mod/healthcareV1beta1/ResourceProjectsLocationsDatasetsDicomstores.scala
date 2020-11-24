@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1beta1", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores")
 @js.native
 class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var studies: ResourceProjectsLocationsDatasetsDicomstoresStudies = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.create
     * @desc Creates a new DICOM store within the parent dataset.
@@ -47,6 +48,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDicomStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.delete
     * @desc Deletes the specified DICOM store and removes all images that are
@@ -79,6 +81,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.export
     * @desc Exports data to the specified destination by copying it from the
@@ -112,6 +115,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.get
     * @desc Gets the specified DICOM store.
@@ -143,6 +147,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDicomStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -175,6 +180,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.import
     * @desc Imports data into the DICOM store by copying it from the specified
@@ -211,6 +217,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.list
     * @desc Lists the DICOM stores in the given dataset.
@@ -245,6 +252,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDicomStoresResponse]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.patch
     * @desc Updates the specified DICOM store.
@@ -278,6 +286,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDicomStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.searchForInstances
     * @desc SearchForInstances returns a list of matching instances. See
@@ -315,6 +324,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.searchForSeries
     * @desc SearchForSeries returns a list of matching series. See
@@ -348,6 +358,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.searchForStudies
     * @desc SearchForStudies returns a list of matching studies. See
@@ -382,6 +393,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -415,6 +427,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.storeInstances
     * @desc StoreInstances stores DICOM instances associated with study
@@ -450,6 +463,9 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
+  var studies: ResourceProjectsLocationsDatasetsDicomstoresStudies = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -491,4 +507,3 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

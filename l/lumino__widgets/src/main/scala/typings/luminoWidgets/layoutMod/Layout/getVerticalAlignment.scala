@@ -3,11 +3,12 @@ package typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/layout", "Layout.getVerticalAlignment")
 @js.native
 object getVerticalAlignment extends js.Object {
+  
   /**
     * Get the vertical alignment for a widget.
     *
@@ -27,4 +28,3 @@ object getVerticalAlignment extends js.Object {
     */
   def apply(widget: Widget): VerticalAlignment = js.native
 }
-

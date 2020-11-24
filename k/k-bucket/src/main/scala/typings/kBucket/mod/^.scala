@@ -3,7 +3,7 @@ package typings.kBucket.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k-bucket", JSImport.Namespace)
 @js.native
@@ -36,20 +36,10 @@ import scala.scalajs.js.annotation._
 class ^[T /* <: Contact */] () extends KBucket[T] {
   def this(options: typings.kBucket.anon.Arbiter[T]) = this()
 }
-
 @JSImport("k-bucket", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /**
-    * Default distance function. Finds the XOR
-    * distance between firstId and secondId.
-    *
-    * @param firstId  Uint8Array containing first id.
-    * @param secondId Uint8Array containing second id.
-    * @return Integer The XOR distance between firstId and secondId.
-    */
-  @JSName("distance")
-  var distance_Original: Distance = js.native
+  
   /**
     * Default arbiter function for contacts with the same id. Uses
     * contact.vectorClock to select which contact to update the k-bucket with.
@@ -61,6 +51,7 @@ object ^ extends js.Object {
     * @return Contact to updated the k-bucket with.
     */
   def arbiter(incumbent: Contact, candidate: Contact): Contact = js.native
+  
   /**
     * Default distance function. Finds the XOR
     * distance between firstId and secondId.
@@ -70,5 +61,14 @@ object ^ extends js.Object {
     * @return Integer The XOR distance between firstId and secondId.
     */
   def distance(firstId: Uint8Array, secondId: Uint8Array): Double = js.native
+  /**
+    * Default distance function. Finds the XOR
+    * distance between firstId and secondId.
+    *
+    * @param firstId  Uint8Array containing first id.
+    * @param secondId Uint8Array containing second id.
+    * @return Integer The XOR distance between firstId and secondId.
+    */
+  @JSName("distance")
+  var distance_Original: Distance = js.native
 }
-

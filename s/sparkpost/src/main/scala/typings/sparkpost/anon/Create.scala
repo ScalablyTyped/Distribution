@@ -6,10 +6,11 @@ import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Create extends js.Object {
+  
   /**
     * Create an inbound domain by providing an inbound domains object as the POST request body.
     * @param createOpts a hash of [inbound domain attributes]{@link https://developers.sparkpost.com/api/inbound-domains#header-inbound-domains-attributes}
@@ -22,6 +23,7 @@ trait Create extends js.Object {
     * @param callback The request callback
     */
   def create(createOpts: CreateOpts, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Delete an inbound domain by specifying its domain name in the URI path.
     * @param domain Domain name
@@ -34,6 +36,7 @@ trait Create extends js.Object {
     * @param callback The request callback
     */
   def delete(domain: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Retrieve an inbound domain by specifying its domain name in the URI path.
     * @param domain Domain name
@@ -46,6 +49,7 @@ trait Create extends js.Object {
     * @param callback The request callback with Domain results
     */
   def get(domain: String, callback: ResultsCallback[typings.sparkpost.mod.Domain]): Unit = js.native
+  
   /**
     * List all your inbound domains.
     * @returns Promise The Domain results array
@@ -57,4 +61,3 @@ trait Create extends js.Object {
     */
   def list(callback: ResultsCallback[js.Array[typings.sparkpost.mod.Domain]]): Unit = js.native
 }
-

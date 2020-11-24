@@ -1,7 +1,7 @@
 
 # Scala.js typings for tus-js-client
 
-Typings are for version 2.1.1
+Typings are for version 2.2.0
 
 ## Library description:
 A pure JavaScript client for the tus resumable upload protocol
@@ -10,9 +10,9 @@ A pure JavaScript client for the tus resumable upload protocol
 | ------------------ | :-------------: |
 | Full name          | tus-js-client |
 | Keywords           | tus, resumable, upload, protocol, progress, file, browser |
-| # releases         | 13 |
-| # dependents       | 30 |
-| # downloads        | 1476346 |
+| # releases         | 17 |
+| # dependents       | 37 |
+| # downloads        | 2990626 |
 | # stars            | 0 |
 
 ## Links

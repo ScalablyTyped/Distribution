@@ -11,8 +11,8 @@ Transform into a space separated string with each word capitalized
 | Full name          | capital-case |
 | Keywords           | capital, case, title, capital-case, convert, transform, capitalize |
 | # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 3467706 |
+| # dependents       | 6 |
+| # downloads        | 7768835 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service with manual scaling runs continuously, allowing you to perform
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaManualScaling extends js.Object {
+  
   /**
     * Number of instances to assign to the service at the start. This number
     * can later be altered by using the Modules API
@@ -18,29 +19,33 @@ trait SchemaManualScaling extends js.Object {
     */
   var instances: js.UndefOr[Double] = js.native
 }
-
 object SchemaManualScaling {
+  
   @scala.inline
   def apply(): SchemaManualScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManualScaling]
   }
+  
   @scala.inline
   implicit class SchemaManualScalingOps[Self <: SchemaManualScaling] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setInstances(value: Double): Self = this.set("instances", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInstances: Self = this.set("instances", js.undefined)
   }
-  
 }
-

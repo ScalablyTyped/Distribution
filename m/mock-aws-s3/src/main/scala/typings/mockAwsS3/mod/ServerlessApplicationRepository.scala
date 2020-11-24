@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.serverlessapplicationrepositoryMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "ServerlessApplicationRepository")
 @js.native
@@ -14,4 +14,3 @@ class ServerlessApplicationRepository ()
   extends typings.awsSdk.mod.ServerlessApplicationRepository {
   def this(options: ClientConfiguration) = this()
 }
-

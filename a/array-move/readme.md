@@ -1,7 +1,7 @@
 
 # Scala.js typings for array-move
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Move an array item to a different position
@@ -10,9 +10,9 @@ Move an array item to a different position
 | ------------------ | :-------------: |
 | Full name          | array-move |
 | Keywords           | array, move, change, position, index |
-| # releases         | 5 |
-| # dependents       | 52 |
-| # downloads        | 1472549 |
+| # releases         | 8 |
+| # dependents       | 113 |
+| # downloads        | 3412221 |
 | # stars            | 3 |
 
 ## Links

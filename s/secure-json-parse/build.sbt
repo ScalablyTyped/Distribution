@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "secure-json-parse"
-version := "1.0-dt-20200515Z-6be723"
+version := "1.0-dt-20200515Z-e98853"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

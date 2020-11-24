@@ -4,7 +4,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Text Object will create a line or multiple lines of text.
@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Text extends Sprite {
+  
   /**
     * The resolution / device pixel ratio of the canvas.
     * This is set to automatically match the renderer resolution by default, but can be overridden by setting manually.
@@ -40,17 +41,20 @@ trait Text extends Sprite {
     * @default 1
     */
   var _resolution: Double = js.native
+  
   /**
     * The canvas element that everything is drawn to
     *
     * @member {HTMLCanvasElement} PIXI.Text#canvas
     */
   var canvas: HTMLCanvasElement = js.native
+  
   /**
     * The canvas 2d context that everything is drawn with
     * @member {CanvasRenderingContext2D} PIXI.Text#context
     */
   var context: CanvasRenderingContext2D = js.native
+  
   /**
     * The resolution / device pixel ratio of the canvas.
     * This is set to automatically match the renderer resolution by default, but can be overridden by setting manually.
@@ -58,6 +62,7 @@ trait Text extends Sprite {
     * @default 1
     */
   var resolution: Double = js.native
+  
   /**
     * Set the style of the text. Set up an event listener to listen for changes on the style
     * object and mark the text as dirty.
@@ -65,12 +70,14 @@ trait Text extends Sprite {
     * @member {object|PIXI.TextStyle}
     */
   var style: js.Any | TextStyle = js.native
+  
   /**
     * Set the copy for the text object. To split a line you can use '\n'.
     *
     * @member {string}
     */
   var text: String = js.native
+  
   /**
     * Renders text to its canvas, and updates its texture.
     * By default this is used internally to ensure the texture is correct before rendering,
@@ -81,4 +88,3 @@ trait Text extends Sprite {
     */
   def updateText(respectDirty: Boolean): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Settings extends js.Object {
+  
   /**
     * Adds an event handler for the settingsChanged event.
     *
@@ -83,6 +84,7 @@ trait Settings extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the specified setting.
     *
@@ -94,6 +96,7 @@ trait Settings extends js.Object {
     * @returns An object that has property names mapped to JSON serialized values.
     */
   def get(name: String): js.Any = js.native
+  
   /**
     * Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those settings held in memory.
     *
@@ -138,6 +141,7 @@ trait Settings extends js.Object {
     */
   def refreshAsync(): Unit = js.native
   def refreshAsync(callback: js.Function1[/* result */ AsyncResult[this.type], Unit]): Unit = js.native
+  
   /**
     * Removes the specified setting.
     *
@@ -154,6 +158,7 @@ trait Settings extends js.Object {
     * @param settingName The case-sensitive name of the setting to remove.
     */
   def remove(name: String): Unit = js.native
+  
   /**
     * Removes an event handler for the settingsChanged event.
     *
@@ -187,6 +192,7 @@ trait Settings extends js.Object {
     options: RemoveHandlerOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Persists the in-memory copy of the settings property bag in the document.
     * 
@@ -234,6 +240,7 @@ trait Settings extends js.Object {
   def saveAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def saveAsync(options: SaveSettingsOptions): Unit = js.native
   def saveAsync(options: SaveSettingsOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  
   /**
     * Sets or creates the specified setting.
     *
@@ -255,4 +262,3 @@ trait Settings extends js.Object {
     */
   def set(name: String, value: js.Any): Unit = js.native
 }
-

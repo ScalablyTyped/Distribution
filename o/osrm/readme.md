@@ -1,7 +1,7 @@
 
 # Scala.js typings for osrm
 
-Typings are for version 5.12
+Typings are for version 5.22
 
 ## Library description:
 The Open Source Routing Machine is a high performance routing engine written in C++14 designed to run on OpenStreetMap data.
@@ -10,9 +10,9 @@ The Open Source Routing Machine is a high performance routing engine written in 
 | ------------------ | :-------------: |
 | Full name          | osrm |
 | Keywords           | - |
-| # releases         | 66 |
-| # dependents       | 6 |
-| # downloads        | 57094 |
+| # releases         | 27 |
+| # dependents       | 7 |
+| # downloads        | 60481 |
 | # stars            | 4 |
 
 ## Links

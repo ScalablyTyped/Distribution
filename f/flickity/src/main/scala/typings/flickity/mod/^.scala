@@ -3,7 +3,7 @@ package typings.flickity.mod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("flickity", JSImport.Namespace)
 @js.native
@@ -19,10 +19,10 @@ class ^ protected () extends Flickity {
   def this(selector: String, options: Options) = this()
   def this(selector: Element, options: Options) = this()
 }
-
 @JSImport("flickity", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   // static methods
   /**
     * (static) Get the Flickity instance.
@@ -32,4 +32,3 @@ object ^ extends js.Object {
   def data(element: String): Flickity = js.native
   def data(element: Element): Flickity = js.native
 }
-

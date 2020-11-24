@@ -10,9 +10,9 @@ A JSON-LD Processor and API implementation in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | jsonld |
 | Keywords           | JSON, Linked Data, JSON-LD, RDF, Semantic Web, jsonld |
-| # releases         | 30 |
-| # dependents       | 172 |
-| # downloads        | 4828096 |
+| # releases         | 24 |
+| # dependents       | 237 |
+| # downloads        | 10396048 |
 | # stars            | 8 |
 
 ## Links

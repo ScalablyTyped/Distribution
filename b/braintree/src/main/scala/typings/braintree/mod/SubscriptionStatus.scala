@@ -2,7 +2,7 @@ package typings.braintree.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.braintree.braintreeStrings.Active
@@ -12,17 +12,20 @@ import scala.scalajs.js.annotation._
   - typings.braintree.braintreeStrings.Pending
 */
 trait SubscriptionStatus extends js.Object
-
 object SubscriptionStatus {
+  
   @scala.inline
   def Active: typings.braintree.braintreeStrings.Active = "Active".asInstanceOf[typings.braintree.braintreeStrings.Active]
+  
   @scala.inline
   def Canceled: typings.braintree.braintreeStrings.Canceled = "Canceled".asInstanceOf[typings.braintree.braintreeStrings.Canceled]
+  
   @scala.inline
   def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
+  
   @scala.inline
   def PastDue: typings.braintree.braintreeStrings.PastDue = "PastDue".asInstanceOf[typings.braintree.braintreeStrings.PastDue]
+  
   @scala.inline
   def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
 }
-

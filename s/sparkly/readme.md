@@ -10,9 +10,9 @@ Generate sparklines `▁▂▃▅▂▇`
 | ------------------ | :-------------: |
 | Full name          | sparkly |
 | Keywords           | spark, sparkly, line, sparkline, sparklines, unicode, data, graph, plot, ascii |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 5649 |
+| # releases         | 2 |
+| # dependents       | 14 |
+| # downloads        | 3055 |
 | # stars            | 13 |
 
 ## Links

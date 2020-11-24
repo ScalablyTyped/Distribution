@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GestureSettings extends js.Object
-
 @JSGlobal("Windows.UI.Input.GestureSettings")
 @js.native
 object GestureSettings extends js.Object {
+  
   @js.native
   sealed trait crossSlide extends GestureSettings
   
@@ -60,6 +60,4 @@ object GestureSettings extends js.Object {
   
   @js.native
   sealed trait tap extends GestureSettings
-  
 }
-

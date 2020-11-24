@@ -2,59 +2,71 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template to list domain aliases in Directory API.
   */
 @js.native
 trait SchemaDomainAliases extends js.Object {
+  
   /**
     * List of domain alias objects.
     */
   var domainAliases: js.UndefOr[js.Array[SchemaDomainAlias]] = js.native
+  
   /**
     * ETag of the resource.
     */
   var etag: js.UndefOr[String] = js.native
+  
   /**
     * Kind of resource this is.
     */
   var kind: js.UndefOr[String] = js.native
 }
-
 object SchemaDomainAliases {
+  
   @scala.inline
   def apply(): SchemaDomainAliases = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainAliases]
   }
+  
   @scala.inline
   implicit class SchemaDomainAliasesOps[Self <: SchemaDomainAliases] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDomainAliasesVarargs(value: SchemaDomainAlias*): Self = this.set("domainAliases", js.Array(value :_*))
+    
     @scala.inline
     def setDomainAliases(value: js.Array[SchemaDomainAlias]): Self = this.set("domainAliases", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDomainAliases: Self = this.set("domainAliases", js.undefined)
+    
     @scala.inline
     def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEtag: Self = this.set("etag", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
   }
-  
 }
-

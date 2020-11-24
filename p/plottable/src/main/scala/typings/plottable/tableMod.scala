@@ -4,11 +4,12 @@ import typings.plottable.componentContainerMod.ComponentContainer
 import typings.plottable.componentMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/table", JSImport.Namespace)
 @js.native
 object tableMod extends js.Object {
+  
   @js.native
   /**
     * A Table combines Components in the form of a grid. A
@@ -24,17 +25,29 @@ object tableMod extends js.Object {
     */
   class Table () extends ComponentContainer {
     def this(rows: js.Array[js.Array[js.UndefOr[Component | Null]]]) = this()
+    
     var _calculatedLayout: js.Any = js.native
+    
     var _columnPadding: js.Any = js.native
+    
     var _columnWeights: js.Any = js.native
-    var _nCols: js.Any = js.native
-    var _nRows: js.Any = js.native
-    var _rowPadding: js.Any = js.native
-    var _rowWeights: js.Any = js.native
-    var _rows: js.Any = js.native
+    
     /* private */ def _determineGuarantees(offeredWidths: js.Any, offeredHeights: js.Any, isFinalOffer: js.Any): js.Any = js.native
+    
     /* private */ def _iterateLayout(availableWidth: js.Any, availableHeight: js.Any, isFinalOffer: js.Any): js.Any = js.native
+    
+    var _nCols: js.Any = js.native
+    
+    var _nRows: js.Any = js.native
+    
     /* private */ def _padTableToSize(nRows: js.Any, nCols: js.Any): js.Any = js.native
+    
+    var _rowPadding: js.Any = js.native
+    
+    var _rowWeights: js.Any = js.native
+    
+    var _rows: js.Any = js.native
+    
     /**
       * Adds a Component in the specified row and column position.
       *
@@ -51,6 +64,7 @@ object tableMod extends js.Object {
       * @returns {Table} The calling Table.
       */
     def add(component: Component, row: Double, col: Double): this.type = js.native
+    
     /**
       * Gets the padding to the left and right of each column in pixels.
       */
@@ -62,6 +76,7 @@ object tableMod extends js.Object {
       * @returns {Table} The calling Table.
       */
     def columnPadding(columnPadding: Double): this.type = js.native
+    
     /**
       * Gets the weight of the specified column.
       *
@@ -79,6 +94,7 @@ object tableMod extends js.Object {
       * @returns {Table} The calling Table.
       */
     def columnWeight(index: Double, weight: Double): this.type = js.native
+    
     /**
       * Returns the Component at the specified row and column index.
       *
@@ -87,6 +103,7 @@ object tableMod extends js.Object {
       * @returns {Component} The Component at the specified position, or null if no Component is there.
       */
     def componentAt(rowIndex: Double, columnIndex: Double): Component = js.native
+    
     /**
       * Gets the padding above and below each row in pixels.
       */
@@ -98,6 +115,7 @@ object tableMod extends js.Object {
       * @returns {Table} The calling Table.
       */
     def rowPadding(rowPadding: Double): this.type = js.native
+    
     /**
       * Gets the weight of the specified row.
       *
@@ -131,14 +149,14 @@ object tableMod extends js.Object {
       */
     def rowWeight(index: Double, weight: Double): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object Table extends js.Object {
+    
     /* private */ def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = js.native
+    
     /* private */ def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = js.native
+    
     /* private */ def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = js.native
   }
-  
 }
-

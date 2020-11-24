@@ -10,9 +10,9 @@ React Native Native Module Bridge Quicklock Document Viewer for IOS + Android su
 | ------------------ | :-------------: |
 | Full name          | react-native-doc-viewer |
 | Keywords           | react-native, react, native, ios, android, pdf, video, Video Player, Doc Viewer |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 40205 |
+| # downloads        | 25885 |
 | # stars            | 1 |
 
 ## Links

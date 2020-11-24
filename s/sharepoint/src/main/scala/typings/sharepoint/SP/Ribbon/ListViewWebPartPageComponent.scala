@@ -7,15 +7,15 @@ import typings.sharepoint.SP.Application.UI.ViewInformationRequestor
 import typings.sharepoint.SP.Application.UI.ViewSelectorGroups
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListViewWebPartPageComponent
   extends PageComponent
      with ViewInformationRequestor
      with DefaultFormsInformationRequestor
-
 object ListViewWebPartPageComponent {
+  
   @scala.inline
   def apply(
     canHandleCommand: String => Boolean,
@@ -35,4 +35,3 @@ object ListViewWebPartPageComponent {
     __obj.asInstanceOf[ListViewWebPartPageComponent]
   }
 }
-

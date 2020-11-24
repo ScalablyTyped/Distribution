@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.std.DOMPointInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DOMPointReadOnly")
 @js.native
@@ -35,7 +35,6 @@ class DOMPointReadOnly ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-
 @JSGlobal("DOMPointReadOnly")
 @js.native
 object DOMPointReadOnly
@@ -55,7 +54,7 @@ object DOMPointReadOnly
       /* w */ Double, 
       typings.std.DOMPointReadOnly
     ] {
+  
   def fromPoint(): typings.std.DOMPointReadOnly = js.native
   def fromPoint(other: DOMPointInit): typings.std.DOMPointReadOnly = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.properUrlJoin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait urlJoin extends js.Object {
+  
   def apply(p1: PathArg): String = js.native
   def apply(p1: PathArg, options: Options): String = js.native
   def apply(p1: PathArg, p2: PathArg): String = js.native
@@ -113,4 +114,3 @@ trait urlJoin extends js.Object {
     args: (PathArg | Options)*
   ): String = js.native
 }
-

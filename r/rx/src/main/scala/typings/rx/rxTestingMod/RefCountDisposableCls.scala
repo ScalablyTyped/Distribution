@@ -3,7 +3,7 @@ package typings.rx.rxTestingMod
 import typings.rx.Rx.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.testing", "RefCountDisposable")
 @js.native
@@ -16,4 +16,3 @@ class RefCountDisposableCls protected ()
     */
   def this(disposable: IDisposable) = this()
 }
-

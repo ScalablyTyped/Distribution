@@ -1,35 +1,19 @@
 package typings.expoConfigureSplashScreen.constantsMod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.all
+import typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.android
+import typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.ios
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-@js.native
-sealed trait Platform extends js.Object
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@expo/configure-splash-screen/build/constants", "Platform")
 @js.native
 object Platform extends js.Object {
-  @js.native
-  sealed trait ALL extends Platform
   
-  @js.native
-  sealed trait ANDROID extends Platform
+  val ALL: all = js.native
   
-  @js.native
-  sealed trait IOS extends Platform
+  val ANDROID: android = js.native
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Platform with String] = js.native
-  /* "all" */ @js.native
-  object ALL extends TopLevel[ALL with String]
-  
-  /* "android" */ @js.native
-  object ANDROID extends TopLevel[ANDROID with String]
-  
-  /* "ios" */ @js.native
-  object IOS extends TopLevel[IOS with String]
-  
+  val IOS: ios = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.std.QueuingStrategy
 import typings.std.UnderlyingSink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WritableStream")
 @js.native
@@ -17,7 +17,6 @@ class WritableStream[W] ()
   def this(underlyingSink: js.UndefOr[scala.Nothing], strategy: QueuingStrategy[W]) = this()
   def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
 }
-
 @JSGlobal("WritableStream")
 @js.native
 object WritableStream
@@ -31,4 +30,3 @@ object WritableStream
       /* strategy */ QueuingStrategy[js.Object], 
       typings.std.WritableStream[js.Object]
     ]
-

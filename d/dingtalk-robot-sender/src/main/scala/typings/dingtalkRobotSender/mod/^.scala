@@ -2,7 +2,7 @@ package typings.dingtalkRobotSender.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dingtalk-robot-sender", JSImport.Namespace)
 @js.native
@@ -18,4 +18,3 @@ class ^ protected () extends ChatBot {
     */
   def this(options: WebHookOptions) = this()
 }
-

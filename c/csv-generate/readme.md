@@ -1,7 +1,7 @@
 
 # Scala.js typings for csv-generate
 
-Typings are for version 3.2.4
+Typings are for version 3.3.0
 
 ## Library description:
 CSV and object generation implementing the Node.js `stream.Readable` API
@@ -10,9 +10,9 @@ CSV and object generation implementing the Node.js `stream.Readable` API
 | ------------------ | :-------------: |
 | Full name          | csv-generate |
 | Keywords           | stream, generate, csv, object |
-| # releases         | 12 |
+| # releases         | 6 |
 | # dependents       | 9 |
-| # downloads        | 12674102 |
+| # downloads        | 15482401 |
 | # stars            | 1 |
 
 ## Links

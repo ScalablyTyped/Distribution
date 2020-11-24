@@ -2,7 +2,7 @@ package typings.durandal
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The activator module encapsulates all logic related to screen/component activation.
@@ -15,11 +15,13 @@ import scala.scalajs.js.annotation._
 @JSImport("durandal/activator", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  var defaults: DurandalActivatorSettings = js.native
+  
   def create[T](): DurandalActivator[T] = js.native
   def create[T](initialActiveItem: T): DurandalActivator[T] = js.native
   def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
   def create[T](initialActiveItem: js.UndefOr[scala.Nothing], settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
+  
+  var defaults: DurandalActivatorSettings = js.native
+  
   def isActivator(`object`: js.Any): Boolean = js.native
 }
-

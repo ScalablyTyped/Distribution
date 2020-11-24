@@ -2,10 +2,11 @@ package typings.hoganJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HoganTemplate extends js.Object {
+  
   /**
     * Renders the template to a string.
     *
@@ -19,4 +20,3 @@ trait HoganTemplate extends js.Object {
   def render(context: Context, partials: Partials): String = js.native
   def render(context: Context, partials: Partials, indent: String): String = js.native
 }
-

@@ -5,13 +5,16 @@ import typings.mysql.mysqlStrings.offline
 import typings.mysql.mysqlStrings.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PoolCluster extends js.Object {
-  var config: PoolClusterConfig = js.native
+  
   def add(config: PoolConfig): Unit = js.native
   def add(id: String, config: PoolConfig): Unit = js.native
+  
+  var config: PoolClusterConfig = js.native
+  
   /**
     * Close the connection. Any queued data (eg queries) will be sent first. If
     * there are any fatal errors, the connection will be immediately closed.
@@ -19,6 +22,7 @@ trait PoolCluster extends js.Object {
     */
   def end(): Unit = js.native
   def end(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  
   def getConnection(callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, Unit]): Unit = js.native
   def getConnection(
     pattern: String,
@@ -29,12 +33,14 @@ trait PoolCluster extends js.Object {
     selector: String,
     callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, Unit]
   ): Unit = js.native
+  
   def of(pattern: js.UndefOr[scala.Nothing], selector: String): Pool = js.native
   def of(pattern: String): Pool = js.native
   def of(pattern: String, selector: String): Pool = js.native
   def of(pattern: Null, selector: String): Pool = js.native
   @JSName("of")
   def of_false(pattern: `false`, selector: String): Pool = js.native
+  
   /**
     * Set handler to be run on a certain event.
     */
@@ -46,9 +52,9 @@ trait PoolCluster extends js.Object {
     */
   @JSName("on")
   def on_remove(ev: remove, callback: js.Function1[/* nodeId */ String, Unit]): PoolCluster = js.native
+  
   /**
     * remove all pools which match pattern
     */
   def remove(pattern: String): Unit = js.native
 }
-

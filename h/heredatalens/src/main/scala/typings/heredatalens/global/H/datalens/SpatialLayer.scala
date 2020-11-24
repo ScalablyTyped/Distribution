@@ -3,7 +3,7 @@ package typings.heredatalens.global.H.datalens
 import typings.heredatalens.H.datalens.SpatialLayer.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Renders vector tiles using data-driven styles
@@ -25,16 +25,17 @@ class SpatialLayer protected ()
     options: Options
   ) = this()
 }
-
 /* static members */
 @JSGlobal("H.datalens.SpatialLayer")
 @js.native
 object SpatialLayer extends js.Object {
+  
   var DEFAULT_STATE: js.Any = js.native
+  
   var Spatial: js.Any = js.native
+  
   /**
     * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
     */
   var defaultDataToRows: js.Any = js.native
 }
-

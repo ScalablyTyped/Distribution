@@ -6,10 +6,11 @@ import typings.jqueryMaskmoney.jqueryMaskmoneyStrings.mask
 import typings.jqueryMaskmoney.jqueryMaskmoneyStrings.unmasked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Apply mask to input when the argument are options
     * Remove maskMoney from an element when the argument is "destroy"
@@ -33,4 +34,3 @@ trait JQuery extends js.Object {
   @JSName("maskMoney")
   def maskMoney_unmasked(method: unmasked): js.Array[Double] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new Light Component.
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
   * @property outerConeAngle - The angle at which the spotlight cone has faded
   * to nothing. The angle is specified in degrees. Affects spot lights only. Defaults
   * to 45.
-  * @property falloffMode - Controls the rate at which a light attentuates from
+  * @property falloffMode - Controls the rate at which a light attenuates from
   * its position. Can be:
   * * {@link pc.LIGHTFALLOFF_LINEAR}: Linear.
   * * {@link pc.LIGHTFALLOFF_INVERSESQUARED}: Inverse squared.
@@ -92,4 +92,3 @@ class LightComponent protected ()
   extends typings.playcanvas.pc.LightComponent {
   def this(system: typings.playcanvas.pc.LightComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

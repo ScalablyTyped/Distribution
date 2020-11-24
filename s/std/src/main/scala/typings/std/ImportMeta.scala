@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The type of `import.meta`.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ImportMeta extends js.Object
-

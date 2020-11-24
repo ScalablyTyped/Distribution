@@ -3,18 +3,21 @@ package typings.blueprintjsTable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table/lib/esm/common/clipboard", JSImport.Namespace)
 @js.native
 object clipboardMod extends js.Object {
+  
   @js.native
   object Clipboard extends js.Object {
+    
     /**
       * Overrides the inherited CSS of the element to make sure it is
       * selectable. This method also makes the element pseudo-invisible.
       */
     def applySelectableStyles(elem: HTMLElement): HTMLElement = js.native
+    
     /**
       * Copies table cells to the clipboard. The parameter is a row-major
       * 2-dimensional `Array` of strings and can contain nulls. We assume all
@@ -25,6 +28,7 @@ object clipboardMod extends js.Object {
       * See `Clipboard.copy`
       */
     def copyCells(cells: js.Array[js.Array[String]]): Boolean = js.native
+    
     /**
       * Copies the element and its children to the clipboard. Returns a boolean
       * indicating whether the copy succeeded.
@@ -45,6 +49,7 @@ object clipboardMod extends js.Object {
       */
     def copyElement(elem: HTMLElement): Boolean = js.native
     def copyElement(elem: HTMLElement, plaintext: String): Boolean = js.native
+    
     /**
       * Copies the text to the clipboard. Returns a boolean
       * indicating whether the copy succeeded.
@@ -52,12 +57,11 @@ object clipboardMod extends js.Object {
       * See `Clipboard.copy`
       */
     def copyString(value: String): Boolean = js.native
+    
     /**
       * Returns a boolean indicating whether the current browser nominally
       * supports the `copy` operation using the `execCommand` API.
       */
     def isCopySupported(): Boolean = js.native
   }
-  
 }
-

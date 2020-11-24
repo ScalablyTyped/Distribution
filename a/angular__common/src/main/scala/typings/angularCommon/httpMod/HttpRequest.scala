@@ -11,7 +11,7 @@ import typings.angularCommon.angularCommonStrings.PUT
 import typings.angularCommon.anon.Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpRequest")
 @js.native
@@ -44,4 +44,3 @@ class HttpRequest[T] protected ()
   def this(method: PUT, url: String, body: T, init: Params) = this()
   def this(method: PUT, url: String, body: Null, init: Params) = this()
 }
-

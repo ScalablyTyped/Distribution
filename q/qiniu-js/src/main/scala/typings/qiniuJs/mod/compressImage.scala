@@ -5,11 +5,11 @@ import typings.qiniuJs.anon.PartialCompressOptions
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu-js", "compressImage")
 @js.native
 object compressImage extends js.Object {
+  
   def apply(file: Blob, options: PartialCompressOptions): js.Promise[Dist] = js.native
 }
-

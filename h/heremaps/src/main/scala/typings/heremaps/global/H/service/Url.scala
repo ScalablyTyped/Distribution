@@ -2,7 +2,7 @@ package typings.heremaps.global.H.service
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a URL giving access to the individual parts that make up a URL,such as the scheme, host/domain, path, etc. Use the static parse method to populate a new URL object
@@ -112,11 +112,11 @@ class Url protected ()
     opt_anchor: String
   ) = this()
 }
-
 /* static members */
 @JSGlobal("H.service.Url")
 @js.native
 object Url extends js.Object {
+  
   /**
     * This function parses a URL string and returns a H.service.Url object. The URL string must contain at least a scheme and a host.
     * @param url {string} - The URL string to parse.
@@ -126,4 +126,3 @@ object Url extends js.Object {
   def parse(url: String): typings.heremaps.H.service.Url = js.native
   def parse(url: String, opt_baseURL: String): typings.heremaps.H.service.Url = js.native
 }
-

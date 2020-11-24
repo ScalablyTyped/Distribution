@@ -2,11 +2,12 @@ package typings.fridaGum.global.Java
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.performNow")
 @js.native
 object performNow extends js.Object {
+  
   /**
     * Ensures that the current thread is attached to the VM and calls `fn`.
     * (This isn't necessary in callbacks from Java.)
@@ -15,4 +16,3 @@ object performNow extends js.Object {
     */
   def apply(fn: js.Function0[Unit]): Unit = js.native
 }
-

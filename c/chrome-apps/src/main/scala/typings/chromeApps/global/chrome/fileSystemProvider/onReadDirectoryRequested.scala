@@ -25,7 +25,7 @@ import typings.chromeApps.chromeAppsStrings.TOO_MANY_OPENED
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Raised when contents of a directory at directoryPath are requested.
@@ -56,4 +56,3 @@ object onReadDirectoryRequested
         ]
       ]
     ]
-

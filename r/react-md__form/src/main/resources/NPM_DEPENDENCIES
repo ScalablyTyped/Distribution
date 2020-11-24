@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/form" : "2.1.2"
+      "@react-md/form" : "2.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/form" : "2.1.2"
+      "@react-md/form" : "2.4.3"
     }
   ],
   "compile-devDependencies" : [

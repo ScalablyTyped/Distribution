@@ -2,11 +2,12 @@ package typings.toSemver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("to-semver", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Get an array of valid, sorted, and cleaned [semver](https://semver.org/) versions from an array of strings.
   @example
@@ -28,4 +29,3 @@ object ^ extends js.Object {
   def apply(versions: js.Array[String]): js.Array[String] = js.native
   def apply(versions: js.Array[String], options: Options): js.Array[String] = js.native
 }
-

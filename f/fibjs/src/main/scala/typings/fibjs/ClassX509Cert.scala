@@ -3,7 +3,7 @@ package typings.fibjs
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassX509Cert extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -22,6 +23,25 @@ trait ClassX509Cert extends ClassObject {
     * @type Boolean
     */
   var ca: Boolean = js.native
+  
+  /**
+    * 
+    * @brief 清空已经加载的证书
+    * 
+    * 
+    */
+  def clear(): Unit = js.native
+  
+  /**
+    * 
+    * @brief 导出已经加载的证书
+    * @return 以数组方式导出证书链
+    * 
+    * 
+    * 
+    */
+  def dump(): js.Array[_] = js.native
+  
   /**
     * class prop 
     *
@@ -32,128 +52,7 @@ trait ClassX509Cert extends ClassObject {
     * @type String
     */
   var issuer: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书链中得下一个证书
-    * 
-    * @readonly
-    * @type X509Cert
-    */
-  var next: ClassX509Cert = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的到期时间
-    * 
-    * @readonly
-    * @type Date
-    */
-  var notAfter: Date = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的生效时间
-    * 
-    * @readonly
-    * @type Date
-    */
-  var notBefore: Date = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的 pathlen
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var pathlen: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的公钥
-    * 
-    * @readonly
-    * @type PKey
-    */
-  var publicKey: ClassPKey = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的序列号
-    * 
-    * @readonly
-    * @type String
-    */
-  var serial: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的主题可分辨名称
-    * 
-    * @readonly
-    * @type String
-    */
-  var subject: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的 Netscape 证书类型
-    * 
-    * 结果为全部或部分以下内容：client, server, email, objsign, reserved, sslCA, emailCA, objCA
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var `type`: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的使用范围
-    * 
-    * 结果为全部或部分以下内容：digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment, keyAgreement, keyCertSign, cRLSign
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var usage: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 获取证书的版本
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var version: Double = js.native
-  /**
-    * 
-    * @brief 清空已经加载的证书
-    * 
-    * 
-    */
-  def clear(): Unit = js.native
-  /**
-    * 
-    * @brief 导出已经加载的证书
-    * @return 以数组方式导出证书链
-    * 
-    * 
-    * 
-    */
-  def dump(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 加载一个 DER 格式的证书，可多次调用
@@ -174,6 +73,7 @@ trait ClassX509Cert extends ClassObject {
     * 
     */
   def load(txtCert: String): Unit = js.native
+  
   /**
     * 
     * @brief 加载一个 CRT/PEM/DER/TXT 格式的证书，可多次调用
@@ -185,6 +85,7 @@ trait ClassX509Cert extends ClassObject {
     * 
     */
   def loadFile(filename: String): Unit = js.native
+  
   /**
     * 
     * @brief 加载自带的缺省根证书
@@ -193,6 +94,112 @@ trait ClassX509Cert extends ClassObject {
     * 
     */
   def loadRootCerts(): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书链中得下一个证书
+    * 
+    * @readonly
+    * @type X509Cert
+    */
+  var next: ClassX509Cert = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的到期时间
+    * 
+    * @readonly
+    * @type Date
+    */
+  var notAfter: Date = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的生效时间
+    * 
+    * @readonly
+    * @type Date
+    */
+  var notBefore: Date = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的 pathlen
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var pathlen: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的公钥
+    * 
+    * @readonly
+    * @type PKey
+    */
+  var publicKey: ClassPKey = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的序列号
+    * 
+    * @readonly
+    * @type String
+    */
+  var serial: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的主题可分辨名称
+    * 
+    * @readonly
+    * @type String
+    */
+  var subject: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的 Netscape 证书类型
+    * 
+    * 结果为全部或部分以下内容：client, server, email, objsign, reserved, sslCA, emailCA, objCA
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var `type`: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的使用范围
+    * 
+    * 结果为全部或部分以下内容：digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment, keyAgreement, keyCertSign, cRLSign
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var usage: String = js.native
+  
   /**
     * 
     * @brief 使用当前证书链验证给定的证书
@@ -203,5 +210,15 @@ trait ClassX509Cert extends ClassObject {
     * @async
     */
   def verify(cert: ClassX509Cert): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 获取证书的版本
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var version: Double = js.native
 }
-

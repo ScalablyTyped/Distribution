@@ -11,7 +11,7 @@
 | Keywords           | immutable, data, datastructure, functional, collection, stateless, scala, monad, option, maybe, either, future |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1542 |
+| # downloads        | 3840 |
 | # stars            | 0 |
 
 ## Links

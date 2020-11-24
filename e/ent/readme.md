@@ -10,9 +10,9 @@ Encode and decode HTML entities
 | ------------------ | :-------------: |
 | Full name          | ent |
 | Keywords           | entities, entitify, entity, html, encode, decode |
-| # releases         | 1 |
-| # dependents       | 118 |
-| # downloads        | 112260072 |
+| # releases         | 0 |
+| # dependents       | 120 |
+| # downloads        | 154242354 |
 | # stars            | 9 |
 
 ## Links

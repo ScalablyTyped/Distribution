@@ -3,10 +3,11 @@ package typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shared extends js.Object {
+  
   /**
     * .dateFormatter( options )
     * @param {DateFormatterOptions} options see date/expand_pattern for more info.
@@ -14,9 +15,11 @@ trait Shared extends js.Object {
     */
   def dateFormatter(): js.Function1[/* value */ Date, String] = js.native
   def dateFormatter(options: DateFormatterOptions): js.Function1[/* value */ Date, String] = js.native
+  
   //Return a function that parses a string representing a date into a JavaScript Date object according to the given options. The default parsing assumes numeric year, month, and day (i.e., { skeleton: "yMd" }).
   def dateParser(): js.Function1[/* value */ String, Date] = js.native
   def dateParser(options: DateFormatterOptions): js.Function1[/* value */ String, Date] = js.native
+  
   /**
     * .dateToPartsFormatter( options )
     * @param {DateFormatterOptions} options see date/expand_pattern for more info.
@@ -24,12 +27,15 @@ trait Shared extends js.Object {
     */
   def dateToPartsFormatter(): js.Function1[/* value */ Date, js.Array[DateFormatPart]] = js.native
   def dateToPartsFormatter(options: DateFormatterOptions): js.Function1[/* value */ Date, js.Array[DateFormatPart]] = js.native
+  
   //Alias for .dateFormatter( [options] )( value ).
   def formatDate(value: Date): String = js.native
   def formatDate(value: Date, options: DateFormatterOptions): String = js.native
+  
   //Alias for .dateToPartsFormatter( [options] )( value ).
   def formatDateToParts(value: Date): js.Array[DateFormatPart] = js.native
   def formatDateToParts(value: Date, options: DateFormatterOptions): js.Array[DateFormatPart] = js.native
+  
   /**
     * Return a number formatted according to the given options or locale's defaults.
     * @param {number} value The number to format
@@ -47,6 +53,7 @@ trait Shared extends js.Object {
     value: Double,
     options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatterOptions
   ): String = js.native
+  
   /**
     * Return a function that formats a number according to the given options or locale's defaults.
     * @param {NumberFormatterOptions} options A JSON object including none or any of the following options.
@@ -60,6 +67,7 @@ trait Shared extends js.Object {
     */
   def numberFormatter(): js.Function1[/* value */ Double, String] = js.native
   def numberFormatter(options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatterOptions): js.Function1[/* value */ Double, String] = js.native
+  
   /**
     * Return a function that parses a string representing a number according to the given options or locale's defaults.
     * @param {NumberParserOptions} options A JSON object including none or any of the following options.
@@ -68,6 +76,7 @@ trait Shared extends js.Object {
     */
   def numberParser(): js.Function1[/* value */ String, Double] = js.native
   def numberParser(options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberParserOptions): js.Function1[/* value */ String, Double] = js.native
+  
   /**
     * Alias for .dateParser( [options] )( value ).
     * @param {string} value The object whose module id you wish to determine.
@@ -76,6 +85,7 @@ trait Shared extends js.Object {
     */
   def parseDate(value: String): Date = js.native
   def parseDate(value: String, options: DateFormatterOptions): Date = js.native
+  
   /**
     * A function that parses a string representing a number according to the given options or locale's defaults.
     * @param {string} value The number as string to parse
@@ -89,4 +99,3 @@ trait Shared extends js.Object {
     options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberParserOptions
   ): Double = js.native
 }
-

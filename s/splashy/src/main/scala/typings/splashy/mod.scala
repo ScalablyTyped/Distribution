@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("splashy", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(source: ImageSource): js.Promise[js.Array[String]] = js.native
+  
   type ImageSource = String | HTMLImageElement | Buffer
 }
-

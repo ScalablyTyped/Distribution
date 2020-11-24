@@ -2,9 +2,217 @@ package typings.remarkable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remarkableStrings {
+  
+  @scala.inline
+  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def abbr_close: abbr_close = "abbr_close".asInstanceOf[abbr_close]
+  
+  @scala.inline
+  def abbr_open: abbr_open = "abbr_open".asInstanceOf[abbr_open]
+  
+  @scala.inline
+  def blockquote_close: blockquote_close = "blockquote_close".asInstanceOf[blockquote_close]
+  
+  @scala.inline
+  def blockquote_open: blockquote_open = "blockquote_open".asInstanceOf[blockquote_open]
+  
+  @scala.inline
+  def bullet_list_close: bullet_list_close = "bullet_list_close".asInstanceOf[bullet_list_close]
+  
+  @scala.inline
+  def bullet_list_open: bullet_list_open = "bullet_list_open".asInstanceOf[bullet_list_open]
+  
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  
+  @scala.inline
+  def commonmark: commonmark = "commonmark".asInstanceOf[commonmark]
+  
+  @scala.inline
+  def dd_close: dd_close = "dd_close".asInstanceOf[dd_close]
+  
+  @scala.inline
+  def dd_open: dd_open = "dd_open".asInstanceOf[dd_open]
+  
+  @scala.inline
+  def del_open: del_open = "del_open".asInstanceOf[del_open]
+  
+  @scala.inline
+  def dl_close: dl_close = "dl_close".asInstanceOf[dl_close]
+  
+  @scala.inline
+  def dl_open: dl_open = "dl_open".asInstanceOf[dl_open]
+  
+  @scala.inline
+  def dt_close: dt_close = "dt_close".asInstanceOf[dt_close]
+  
+  @scala.inline
+  def dt_open: dt_open = "dt_open".asInstanceOf[dt_open]
+  
+  @scala.inline
+  def em_close: em_close = "em_close".asInstanceOf[em_close]
+  
+  @scala.inline
+  def em_open: em_open = "em_open".asInstanceOf[em_open]
+  
+  @scala.inline
+  def fence: fence = "fence".asInstanceOf[fence]
+  
+  @scala.inline
+  def footnote_anchor: footnote_anchor = "footnote_anchor".asInstanceOf[footnote_anchor]
+  
+  @scala.inline
+  def footnote_block_close: footnote_block_close = "footnote_block_close".asInstanceOf[footnote_block_close]
+  
+  @scala.inline
+  def footnote_block_open: footnote_block_open = "footnote_block_open".asInstanceOf[footnote_block_open]
+  
+  @scala.inline
+  def footnote_close: footnote_close = "footnote_close".asInstanceOf[footnote_close]
+  
+  @scala.inline
+  def footnote_open: footnote_open = "footnote_open".asInstanceOf[footnote_open]
+  
+  @scala.inline
+  def footnote_ref: footnote_ref = "footnote_ref".asInstanceOf[footnote_ref]
+  
+  @scala.inline
+  def footnote_reference_close: footnote_reference_close = "footnote_reference_close".asInstanceOf[footnote_reference_close]
+  
+  @scala.inline
+  def footnote_reference_open: footnote_reference_open = "footnote_reference_open".asInstanceOf[footnote_reference_open]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
+  @scala.inline
+  def hardbreak: hardbreak = "hardbreak".asInstanceOf[hardbreak]
+  
+  @scala.inline
+  def heading_close: heading_close = "heading_close".asInstanceOf[heading_close]
+  
+  @scala.inline
+  def heading_open: heading_open = "heading_open".asInstanceOf[heading_open]
+  
+  @scala.inline
+  def hr: hr = "hr".asInstanceOf[hr]
+  
+  @scala.inline
+  def htmlblock: htmlblock = "htmlblock".asInstanceOf[htmlblock]
+  
+  @scala.inline
+  def htmltag: htmltag = "htmltag".asInstanceOf[htmltag]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def ins_close: ins_close = "ins_close".asInstanceOf[ins_close]
+  
+  @scala.inline
+  def ins_open: ins_open = "ins_open".asInstanceOf[ins_open]
+  
+  @scala.inline
+  def link_close: link_close = "link_close".asInstanceOf[link_close]
+  
+  @scala.inline
+  def link_open: link_open = "link_open".asInstanceOf[link_open]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def list_item_close: list_item_close = "list_item_close".asInstanceOf[list_item_close]
+  
+  @scala.inline
+  def list_item_open: list_item_open = "list_item_open".asInstanceOf[list_item_open]
+  
+  @scala.inline
+  def mark_close: mark_close = "mark_close".asInstanceOf[mark_close]
+  
+  @scala.inline
+  def mark_open: mark_open = "mark_open".asInstanceOf[mark_open]
+  
+  @scala.inline
+  def ordered_list_close: ordered_list_close = "ordered_list_close".asInstanceOf[ordered_list_close]
+  
+  @scala.inline
+  def ordered_list_open: ordered_list_open = "ordered_list_open".asInstanceOf[ordered_list_open]
+  
+  @scala.inline
+  def paragraph_close: paragraph_close = "paragraph_close".asInstanceOf[paragraph_close]
+  
+  @scala.inline
+  def paragraph_open: paragraph_open = "paragraph_open".asInstanceOf[paragraph_open]
+  
+  @scala.inline
+  def remarkable: remarkable = "remarkable".asInstanceOf[remarkable]
+  
+  @scala.inline
+  def root: root = "root".asInstanceOf[root]
+  
+  @scala.inline
+  def softbreak: softbreak = "softbreak".asInstanceOf[softbreak]
+  
+  @scala.inline
+  def strong_close: strong_close = "strong_close".asInstanceOf[strong_close]
+  
+  @scala.inline
+  def strong_open: strong_open = "strong_open".asInstanceOf[strong_open]
+  
+  @scala.inline
+  def sub: sub = "sub".asInstanceOf[sub]
+  
+  @scala.inline
+  def sup: sup = "sup".asInstanceOf[sup]
+  
+  @scala.inline
+  def table_close: table_close = "table_close".asInstanceOf[table_close]
+  
+  @scala.inline
+  def table_open: table_open = "table_open".asInstanceOf[table_open]
+  
+  @scala.inline
+  def tbody_close: tbody_close = "tbody_close".asInstanceOf[tbody_close]
+  
+  @scala.inline
+  def tbody_open: tbody_open = "tbody_open".asInstanceOf[tbody_open]
+  
+  @scala.inline
+  def td_close: td_close = "td_close".asInstanceOf[td_close]
+  
+  @scala.inline
+  def td_open: td_open = "td_open".asInstanceOf[td_open]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def th_close: th_close = "th_close".asInstanceOf[th_close]
+  
+  @scala.inline
+  def th_open: th_open = "th_open".asInstanceOf[th_open]
+  
+  @scala.inline
+  def thead_close: thead_close = "thead_close".asInstanceOf[thead_close]
+  
+  @scala.inline
+  def thead_open: thead_open = "thead_open".asInstanceOf[thead_open]
+  
+  @scala.inline
+  def tr_close: tr_close = "tr_close".asInstanceOf[tr_close]
+  
+  @scala.inline
+  def tr_open: tr_open = "tr_open".asInstanceOf[tr_open]
+  
   @js.native
   sealed trait Linefeed extends js.Object
   
@@ -211,144 +419,4 @@ object remarkableStrings {
   
   @js.native
   sealed trait tr_open extends js.Object
-  
-  @scala.inline
-  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def abbr_close: abbr_close = "abbr_close".asInstanceOf[abbr_close]
-  @scala.inline
-  def abbr_open: abbr_open = "abbr_open".asInstanceOf[abbr_open]
-  @scala.inline
-  def blockquote_close: blockquote_close = "blockquote_close".asInstanceOf[blockquote_close]
-  @scala.inline
-  def blockquote_open: blockquote_open = "blockquote_open".asInstanceOf[blockquote_open]
-  @scala.inline
-  def bullet_list_close: bullet_list_close = "bullet_list_close".asInstanceOf[bullet_list_close]
-  @scala.inline
-  def bullet_list_open: bullet_list_open = "bullet_list_open".asInstanceOf[bullet_list_open]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def commonmark: commonmark = "commonmark".asInstanceOf[commonmark]
-  @scala.inline
-  def dd_close: dd_close = "dd_close".asInstanceOf[dd_close]
-  @scala.inline
-  def dd_open: dd_open = "dd_open".asInstanceOf[dd_open]
-  @scala.inline
-  def del_open: del_open = "del_open".asInstanceOf[del_open]
-  @scala.inline
-  def dl_close: dl_close = "dl_close".asInstanceOf[dl_close]
-  @scala.inline
-  def dl_open: dl_open = "dl_open".asInstanceOf[dl_open]
-  @scala.inline
-  def dt_close: dt_close = "dt_close".asInstanceOf[dt_close]
-  @scala.inline
-  def dt_open: dt_open = "dt_open".asInstanceOf[dt_open]
-  @scala.inline
-  def em_close: em_close = "em_close".asInstanceOf[em_close]
-  @scala.inline
-  def em_open: em_open = "em_open".asInstanceOf[em_open]
-  @scala.inline
-  def fence: fence = "fence".asInstanceOf[fence]
-  @scala.inline
-  def footnote_anchor: footnote_anchor = "footnote_anchor".asInstanceOf[footnote_anchor]
-  @scala.inline
-  def footnote_block_close: footnote_block_close = "footnote_block_close".asInstanceOf[footnote_block_close]
-  @scala.inline
-  def footnote_block_open: footnote_block_open = "footnote_block_open".asInstanceOf[footnote_block_open]
-  @scala.inline
-  def footnote_close: footnote_close = "footnote_close".asInstanceOf[footnote_close]
-  @scala.inline
-  def footnote_open: footnote_open = "footnote_open".asInstanceOf[footnote_open]
-  @scala.inline
-  def footnote_ref: footnote_ref = "footnote_ref".asInstanceOf[footnote_ref]
-  @scala.inline
-  def footnote_reference_close: footnote_reference_close = "footnote_reference_close".asInstanceOf[footnote_reference_close]
-  @scala.inline
-  def footnote_reference_open: footnote_reference_open = "footnote_reference_open".asInstanceOf[footnote_reference_open]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def hardbreak: hardbreak = "hardbreak".asInstanceOf[hardbreak]
-  @scala.inline
-  def heading_close: heading_close = "heading_close".asInstanceOf[heading_close]
-  @scala.inline
-  def heading_open: heading_open = "heading_open".asInstanceOf[heading_open]
-  @scala.inline
-  def hr: hr = "hr".asInstanceOf[hr]
-  @scala.inline
-  def htmlblock: htmlblock = "htmlblock".asInstanceOf[htmlblock]
-  @scala.inline
-  def htmltag: htmltag = "htmltag".asInstanceOf[htmltag]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def ins_close: ins_close = "ins_close".asInstanceOf[ins_close]
-  @scala.inline
-  def ins_open: ins_open = "ins_open".asInstanceOf[ins_open]
-  @scala.inline
-  def link_close: link_close = "link_close".asInstanceOf[link_close]
-  @scala.inline
-  def link_open: link_open = "link_open".asInstanceOf[link_open]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def list_item_close: list_item_close = "list_item_close".asInstanceOf[list_item_close]
-  @scala.inline
-  def list_item_open: list_item_open = "list_item_open".asInstanceOf[list_item_open]
-  @scala.inline
-  def mark_close: mark_close = "mark_close".asInstanceOf[mark_close]
-  @scala.inline
-  def mark_open: mark_open = "mark_open".asInstanceOf[mark_open]
-  @scala.inline
-  def ordered_list_close: ordered_list_close = "ordered_list_close".asInstanceOf[ordered_list_close]
-  @scala.inline
-  def ordered_list_open: ordered_list_open = "ordered_list_open".asInstanceOf[ordered_list_open]
-  @scala.inline
-  def paragraph_close: paragraph_close = "paragraph_close".asInstanceOf[paragraph_close]
-  @scala.inline
-  def paragraph_open: paragraph_open = "paragraph_open".asInstanceOf[paragraph_open]
-  @scala.inline
-  def remarkable: remarkable = "remarkable".asInstanceOf[remarkable]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def softbreak: softbreak = "softbreak".asInstanceOf[softbreak]
-  @scala.inline
-  def strong_close: strong_close = "strong_close".asInstanceOf[strong_close]
-  @scala.inline
-  def strong_open: strong_open = "strong_open".asInstanceOf[strong_open]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def sup: sup = "sup".asInstanceOf[sup]
-  @scala.inline
-  def table_close: table_close = "table_close".asInstanceOf[table_close]
-  @scala.inline
-  def table_open: table_open = "table_open".asInstanceOf[table_open]
-  @scala.inline
-  def tbody_close: tbody_close = "tbody_close".asInstanceOf[tbody_close]
-  @scala.inline
-  def tbody_open: tbody_open = "tbody_open".asInstanceOf[tbody_open]
-  @scala.inline
-  def td_close: td_close = "td_close".asInstanceOf[td_close]
-  @scala.inline
-  def td_open: td_open = "td_open".asInstanceOf[td_open]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def th_close: th_close = "th_close".asInstanceOf[th_close]
-  @scala.inline
-  def th_open: th_open = "th_open".asInstanceOf[th_open]
-  @scala.inline
-  def thead_close: thead_close = "thead_close".asInstanceOf[thead_close]
-  @scala.inline
-  def thead_open: thead_open = "thead_open".asInstanceOf[thead_open]
-  @scala.inline
-  def tr_close: tr_close = "tr_close".asInstanceOf[tr_close]
-  @scala.inline
-  def tr_open: tr_open = "tr_open".asInstanceOf[tr_open]
 }
-

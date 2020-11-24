@@ -2,19 +2,27 @@ package typings.materialTabBar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/tab-bar/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   @js.native
   object numbers extends js.Object {
+    
     var ARROW_LEFT_KEYCODE: Double = js.native
+    
     var ARROW_RIGHT_KEYCODE: Double = js.native
+    
     var END_KEYCODE: Double = js.native
+    
     var ENTER_KEYCODE: Double = js.native
+    
     var EXTRA_SCROLL_AMOUNT: Double = js.native
+    
     var HOME_KEYCODE: Double = js.native
+    
     var SPACE_KEYCODE: Double = js.native
   }
   
@@ -42,16 +50,23 @@ object constantsMod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var ARROW_LEFT_KEY: String = js.native
+    
     var ARROW_RIGHT_KEY: String = js.native
+    
     var END_KEY: String = js.native
+    
     var ENTER_KEY: String = js.native
+    
     var HOME_KEY: String = js.native
+    
     var SPACE_KEY: String = js.native
+    
     var TAB_ACTIVATED_EVENT: String = js.native
+    
     var TAB_SCROLLER_SELECTOR: String = js.native
+    
     var TAB_SELECTOR: String = js.native
   }
-  
 }
-

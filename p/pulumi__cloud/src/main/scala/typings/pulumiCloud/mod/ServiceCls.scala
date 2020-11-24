@@ -4,7 +4,7 @@ import typings.pulumiCloud.serviceMod.ServiceArguments
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud", "Service")
 @js.native
@@ -19,4 +19,3 @@ class ServiceCls protected ()
   def this(name: String, args: ServiceArguments) = this()
   def this(name: String, args: ServiceArguments, opts: ResourceOptions) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，启动流应用参数
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusStreamStreamOptions extends js.Object {
+  
   /**
     * 流应用标识
     * 流应用唯一字符串标识。
@@ -19,6 +20,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var appid: js.UndefOr[String] = js.native
+  
   /**
     * 流应用运行模式
     * 可取值："test"表示测试版模式运行，其它值则为正式版本模式。
@@ -26,6 +28,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var appmode: js.UndefOr[String] = js.native
+  
   /**
     * 启动流应用的直达页面链接地址
     * 可在应用中通过plus.runtime.processDirectPage()方法获取。
@@ -33,6 +36,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var direct_page: js.UndefOr[String] = js.native
+  
   /**
     * 流应用运行参数
     * 启动流应用的扩展参数，可在流应用中通过plus.runtime.arguments获取。
@@ -40,6 +44,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var extras: js.UndefOr[js.Any] = js.native
+  
   /**
     * 流应用图标
     * 流应用显示的图标路径（仅支持本地路径），在启动提示界面中显示。
@@ -47,6 +52,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var icon: js.UndefOr[String] = js.native
+  
   /**
     * 流应用启动类型
     * 流应用的启动类型，可在流应用中通过plus.runtime.launcher获取，默认值为“stream”。
@@ -54,6 +60,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var launcher: js.UndefOr[String] = js.native
+  
   /**
     * 启动流应用的快捷方式逻辑
     * 可取值：
@@ -67,6 +74,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var shortcut: js.UndefOr[String] = js.native
+  
   /**
     * 退出流应用的快捷方式逻辑
     * 可取值：
@@ -78,6 +86,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var shortcutQuit: js.UndefOr[String] = js.native
+  
   /**
     * 应用启动界面样式
     * 可取值：
@@ -88,6 +97,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var splash: js.UndefOr[String] = js.native
+  
   /**
     * 流应用首页窗口对象样式
     * 如果流应用已经运行，从后台激活到前台时忽略此属性。
@@ -95,6 +105,7 @@ trait PlusStreamStreamOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var styles: js.UndefOr[PlusStreamLaunchWebviewStyles] = js.native
+  
   /**
     * 流应用名称
     * 流应用显示的标题，在启动提示界面中显示。
@@ -103,69 +114,93 @@ trait PlusStreamStreamOptions extends js.Object {
     */
   var title: js.UndefOr[String] = js.native
 }
-
 object PlusStreamStreamOptions {
+  
   @scala.inline
   def apply(): PlusStreamStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamStreamOptions]
   }
+  
   @scala.inline
   implicit class PlusStreamStreamOptionsOps[Self <: PlusStreamStreamOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppid(value: String): Self = this.set("appid", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppid: Self = this.set("appid", js.undefined)
+    
     @scala.inline
     def setAppmode(value: String): Self = this.set("appmode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppmode: Self = this.set("appmode", js.undefined)
+    
     @scala.inline
     def setDirect_page(value: String): Self = this.set("direct_page", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDirect_page: Self = this.set("direct_page", js.undefined)
+    
     @scala.inline
     def setExtras(value: js.Any): Self = this.set("extras", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExtras: Self = this.set("extras", js.undefined)
+    
     @scala.inline
     def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIcon: Self = this.set("icon", js.undefined)
+    
     @scala.inline
     def setLauncher(value: String): Self = this.set("launcher", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLauncher: Self = this.set("launcher", js.undefined)
+    
     @scala.inline
     def setShortcut(value: String): Self = this.set("shortcut", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShortcut: Self = this.set("shortcut", js.undefined)
+    
     @scala.inline
     def setShortcutQuit(value: String): Self = this.set("shortcutQuit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShortcutQuit: Self = this.set("shortcutQuit", js.undefined)
+    
     @scala.inline
     def setSplash(value: String): Self = this.set("splash", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSplash: Self = this.set("splash", js.undefined)
+    
     @scala.inline
     def setStyles(value: PlusStreamLaunchWebviewStyles): Self = this.set("styles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyles: Self = this.set("styles", js.undefined)
+    
     @scala.inline
     def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitle: Self = this.set("title", js.undefined)
   }
-  
 }
-

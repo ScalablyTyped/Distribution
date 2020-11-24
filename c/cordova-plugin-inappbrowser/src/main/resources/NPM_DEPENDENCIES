@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-inappbrowser" : "4.0.0"
+      "cordova-plugin-inappbrowser" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-inappbrowser" : "4.0.0"
+      "cordova-plugin-inappbrowser" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

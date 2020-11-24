@@ -7,11 +7,12 @@ import typings.mobservable.interfacesMod.IObservableArray
 import typings.mobservable.interfacesMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobservable", "observe")
 @js.native
 object observe extends js.Object {
+  
   def apply(func: js.Function0[Unit]): Lambda = js.native
   def apply[T /* <: js.Object */](`object`: T, listener: js.Function1[/* change */ IObjectChange[_, T], Unit]): Lambda = js.native
   def apply[T](
@@ -31,4 +32,3 @@ object observe extends js.Object {
     listener: js.Function2[/* newValue */ Y, /* oldValue */ js.UndefOr[Y], Unit]
   ): Lambda = js.native
 }
-

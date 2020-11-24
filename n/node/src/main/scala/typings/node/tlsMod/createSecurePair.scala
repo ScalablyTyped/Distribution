@@ -2,11 +2,12 @@ package typings.node.tlsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tls", "createSecurePair")
 @js.native
 object createSecurePair extends js.Object {
+  
   /**
     * @deprecated since v0.11.3 Use `tls.TLSSocket` instead.
     */
@@ -62,4 +63,3 @@ object createSecurePair extends js.Object {
   def apply(credentials: SecureContext, isServer: Boolean, requestCert: Boolean): SecurePair = js.native
   def apply(credentials: SecureContext, isServer: Boolean, requestCert: Boolean, rejectUnauthorized: Boolean): SecurePair = js.native
 }
-

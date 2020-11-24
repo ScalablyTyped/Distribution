@@ -10,9 +10,9 @@ Manage the desktop wallpaper
 | ------------------ | :-------------: |
 | Full name          | wallpaper |
 | Keywords           | macos, linux, windows, wallpaper, desktop, background, image, picture, photo |
-| # releases         | 8 |
-| # dependents       | 165 |
-| # downloads        | 10435 |
+| # releases         | 7 |
+| # dependents       | 169 |
+| # downloads        | 12105 |
 | # stars            | 7 |
 
 ## Links

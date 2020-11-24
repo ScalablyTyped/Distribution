@@ -6,7 +6,7 @@ import typings.regexpp.regexppStrings.space
 import typings.regexpp.regexppStrings.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.EscapeCharacterSet
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
   - typings.regexpp.astMod.CharacterClassRange
 */
 trait CharacterClassElement extends js.Object
-
 object CharacterClassElement {
+  
   @scala.inline
   def EscapeCharacterSet(
     end: Double,
@@ -31,6 +31,7 @@ object CharacterClassElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterClassElement]
   }
+  
   @scala.inline
   def UnicodePropertyCharacterSet(
     end: Double,
@@ -46,6 +47,7 @@ object CharacterClassElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterClassElement]
   }
+  
   @scala.inline
   def Character(
     end: Double,
@@ -59,6 +61,7 @@ object CharacterClassElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterClassElement]
   }
+  
   @scala.inline
   def CharacterClassRange(
     end: Double,
@@ -74,4 +77,3 @@ object CharacterClassElement {
     __obj.asInstanceOf[CharacterClassElement]
   }
 }
-

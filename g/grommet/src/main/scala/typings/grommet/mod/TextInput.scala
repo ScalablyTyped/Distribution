@@ -14,9 +14,9 @@ import typings.react.mod.InputHTMLAttributes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "TextInput")
+@JSImport("grommet", "TextInput")
 @js.native
 class TextInput protected ()
   extends Component[
@@ -39,8 +39,7 @@ class TextInput protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6", "TextInput")
+@JSImport("grommet", "TextInput")
 @js.native
 object TextInput extends TopLevel[
       ComponentClass[
@@ -51,4 +50,3 @@ object TextInput extends TopLevel[
         ComponentState
       ]
     ]
-

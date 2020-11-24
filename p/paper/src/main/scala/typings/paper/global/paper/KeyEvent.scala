@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The KeyEvent object is received by the {@link Tool}'s keyboard
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyEvent ()
   extends typings.paper.paper.KeyEvent
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Midi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MidiMessageType extends js.Object
-
 /** Provides constants used to map MIDI message types into their corresponding byte codes. */
 @JSGlobal("Windows.Devices.Midi.MidiMessageType")
 @js.native
 object MidiMessageType extends js.Object {
+  
   /** A MidiActiveSensingMessage . */
   @js.native
   sealed trait activeSensing extends MidiMessageType
@@ -86,6 +86,4 @@ object MidiMessageType extends js.Object {
   /** A MidiTuneRequestMessage . */
   @js.native
   sealed trait tuneRequest extends MidiMessageType
-  
 }
-

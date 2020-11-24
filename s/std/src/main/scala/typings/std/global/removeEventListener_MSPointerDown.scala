@@ -6,11 +6,12 @@ import typings.std.Window
 import typings.std.stdStrings.MSPointerDown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_MSPointerDown extends js.Object {
+  
   def apply(`type`: MSPointerDown, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
   def apply(
     `type`: MSPointerDown,
@@ -23,4 +24,3 @@ object removeEventListener_MSPointerDown extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

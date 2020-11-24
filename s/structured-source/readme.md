@@ -11,8 +11,8 @@ Provides StructuredSource and functionality for converting range and loc vice ve
 | Full name          | structured-source |
 | Keywords           | location, range, abstract, syntax, tree |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 1474874 |
+| # dependents       | 24 |
+| # downloads        | 1995066 |
 | # stars            | 1 |
 
 ## Links

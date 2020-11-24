@@ -28,7 +28,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a cursor in text tables.
@@ -47,8 +47,8 @@ trait TextTableCursor
      with CharacterPropertiesComplex
      with ParagraphProperties
      with UserDefinedAttributesSupplier
-
 object TextTableCursor {
+  
   @scala.inline
   def apply(
     BorderDistance: Double,
@@ -219,4 +219,3 @@ object TextTableCursor {
     __obj.asInstanceOf[TextTableCursor]
   }
 }
-

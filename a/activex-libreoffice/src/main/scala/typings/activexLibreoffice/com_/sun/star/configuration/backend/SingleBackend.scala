@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a configuration storage backends containing a complete configuration database, including user data, default or policy layers and schemata.
@@ -25,8 +25,8 @@ trait SingleBackend
   extends XSchemaSupplier
      with XMultiLayerStratum
      with XBackendEntities
-
 object SingleBackend {
+  
   @scala.inline
   def apply(
     AdminEntity: String,
@@ -50,4 +50,3 @@ object SingleBackend {
     __obj.asInstanceOf[SingleBackend]
   }
 }
-

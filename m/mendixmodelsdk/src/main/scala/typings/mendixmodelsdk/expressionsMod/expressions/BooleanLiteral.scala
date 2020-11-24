@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.expressionsMod.expressions
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -34,12 +35,15 @@ import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationParame
 import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  *
+  * @ignore
   *
   * In version 7.9.0: introduced
   */
@@ -51,27 +55,25 @@ class BooleanLiteral protected () extends LiteralExpression {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FBooleanLiteral: IModel = js.native
+  
   def value: Boolean = js.native
   def value_=(newValue: Boolean): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BooleanLiteral")
 @js.native
 object BooleanLiteral extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -81,6 +83,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -90,6 +93,7 @@ object BooleanLiteral extends js.Object {
     *  7.21.0 and higher
     */
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -99,6 +103,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 to 7.20.0
     */
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'left' property
@@ -108,6 +113,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'right' property
@@ -117,6 +123,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderRight(container: BinaryExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expressionModel' property
@@ -126,6 +133,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'valueModel' property
@@ -135,6 +143,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeListActionUnderValueModel(container: ChangeListAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'valueModel' property
@@ -144,6 +153,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expressionModel' property
@@ -153,6 +163,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'timeoutModel' property
@@ -162,6 +173,7 @@ object BooleanLiteral extends js.Object {
     *  8.5.0 and higher
     */
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'initialValueModel' property
@@ -171,6 +183,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'limitExpressionModel' property
@@ -180,6 +193,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'offsetExpressionModel' property
@@ -189,6 +203,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -198,6 +213,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'returnValueModel' property
@@ -207,6 +223,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInEndEventUnderReturnValueModel(container: EndEvent): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expressionModel' property
@@ -216,6 +233,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'valueModel' property
@@ -225,6 +243,7 @@ object BooleanLiteral extends js.Object {
     *  8.0.0 and higher
     */
   def createInFormDataPartUnderValueModel(container: FormDataPart): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'arguments' property
@@ -234,6 +253,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'marginBottomInInchModel' property
@@ -243,6 +263,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'marginLeftInInchModel' property
@@ -252,6 +273,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'marginRightInInchModel' property
@@ -261,6 +283,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'marginTopInInchModel' property
@@ -270,6 +293,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'customLocationModel' property
@@ -279,6 +303,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'password' property
@@ -288,6 +313,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'username' property
@@ -297,6 +323,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'valueModel' property
@@ -306,6 +333,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'condition' property
@@ -315,6 +343,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderCondition(container: IfExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'ifFalse' property
@@ -324,6 +353,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfFalse(container: IfExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'ifTrue' property
@@ -333,6 +363,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfTrue(container: IfExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expressionModel' property
@@ -342,6 +373,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'nodeModel' property
@@ -351,6 +383,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'valueModel' property
@@ -360,6 +393,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInMemberChangeUnderValueModel(container: MemberChange): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -369,6 +403,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -378,6 +413,7 @@ object BooleanLiteral extends js.Object {
     *  8.0.0 and higher
     */
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expression' property
@@ -387,6 +423,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'hostExpressionModel' property
@@ -396,6 +433,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'passwordExpressionModel' property
@@ -405,6 +443,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'portExpressionModel' property
@@ -414,6 +453,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'useConfigurationExpressionModel' property
@@ -423,6 +463,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'usernameExpressionModel' property
@@ -432,6 +473,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'timeOutModel' property
@@ -441,6 +483,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -450,6 +493,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expressionModel' property
@@ -459,6 +503,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expression' property
@@ -468,6 +513,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'timeOutModel' property
@@ -477,6 +523,7 @@ object BooleanLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'argumentModel' property
@@ -486,6 +533,7 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): BooleanLiteral = js.native
+  
   /**
     * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
     * The new BooleanLiteral will be automatically stored in the 'expressionModel' property
@@ -495,5 +543,8 @@ object BooleanLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): BooleanLiteral = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

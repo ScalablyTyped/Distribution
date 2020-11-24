@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "easystarjs" : "0.4.3"
+      "easystarjs" : "0.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "easystarjs" : "0.4.3"
+      "easystarjs" : "0.4.4"
     }
   ],
   "compile-devDependencies" : [

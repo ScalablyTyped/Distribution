@@ -10,9 +10,9 @@ Typings are for version 0.7
 | ------------------ | :-------------: |
 | Full name          | react-copy-write |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 128854 |
+| # downloads        | 69399 |
 | # stars            | 0 |
 
 ## Links

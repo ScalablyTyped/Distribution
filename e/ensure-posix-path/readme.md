@@ -11,8 +11,8 @@ Typings are for version 1.1.1
 | Full name          | ensure-posix-path |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 24 |
-| # downloads        | 9765716 |
+| # dependents       | 26 |
+| # downloads        | 11244055 |
 | # stars            | 1 |
 
 ## Links

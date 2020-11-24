@@ -6,7 +6,7 @@ import typings.phaser.MatterJS.ConstraintType
 import typings.phaser.MatterJS.IWorldDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.World` module contains methods for creating and manipulating the world composite.
@@ -24,11 +24,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class World ()
   extends typings.phaser.MatterJS.World
-
 /* static members */
 @JSImport("matter", "World")
 @js.native
 object World extends js.Object {
+  
   def add(world: typings.phaser.MatterJS.World, body: js.Array[BodyType | CompositeType | ConstraintType]): typings.phaser.MatterJS.World = js.native
   /**
     * Add objects or arrays of objects of types: Body, Constraint, Composite
@@ -40,6 +40,7 @@ object World extends js.Object {
   def add(world: typings.phaser.MatterJS.World, body: CompositeType): typings.phaser.MatterJS.World = js.native
   def add(world: typings.phaser.MatterJS.World, body: ConstraintType): typings.phaser.MatterJS.World = js.native
   def add(world: typings.phaser.MatterJS.World, body: typings.phaser.MatterJS.MouseConstraint): typings.phaser.MatterJS.World = js.native
+  
   /**
     * An alias for Composite.addBody since World is also a Composite
     * @method addBody
@@ -48,6 +49,7 @@ object World extends js.Object {
     * @return {world} The original world with the body added
     */
   def addBody(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = js.native
+  
   /**
     * An alias for Composite.add since World is also a Composite
     * @method addComposite
@@ -56,6 +58,7 @@ object World extends js.Object {
     * @return {world} The original world with the objects from composite added
     */
   def addComposite(world: typings.phaser.MatterJS.World, composite: CompositeType): typings.phaser.MatterJS.World = js.native
+  
   /**
     * An alias for Composite.addConstraint since World is also a Composite
     * @method addConstraint
@@ -64,6 +67,7 @@ object World extends js.Object {
     * @return {world} The original world with the constraint added
     */
   def addConstraint(world: typings.phaser.MatterJS.World, constraint: ConstraintType): typings.phaser.MatterJS.World = js.native
+  
   /**
     * An alias for Composite.clear since World is also a Composite
     * @method clear
@@ -71,6 +75,7 @@ object World extends js.Object {
     * @param {boolean} keepStatic
     */
   def clear(world: typings.phaser.MatterJS.World, keepStatic: Boolean): Unit = js.native
+  
   /**
     * Creates a new world composite. The options parameter is an object that specifies any properties you wish to override the defaults.
     * See the properties section below for detailed information on what you can pass via the `options` object.
@@ -81,4 +86,3 @@ object World extends js.Object {
     */
   def create(options: IWorldDefinition): typings.phaser.MatterJS.World = js.native
 }
-

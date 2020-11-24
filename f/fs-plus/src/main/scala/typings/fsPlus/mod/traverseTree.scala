@@ -2,11 +2,12 @@ package typings.fsPlus.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-plus", "traverseTree")
 @js.native
 object traverseTree extends js.Object {
+  
   def apply(
     rootPath: String,
     onFile: js.Function1[/* file */ String, Unit],
@@ -14,4 +15,3 @@ object traverseTree extends js.Object {
     onDone: js.Function1[/* err */ js.Any, Unit]
   ): Unit = js.native
 }
-

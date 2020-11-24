@@ -12,7 +12,7 @@ Check if a DOM element matches a given selector
 | Keywords           | browser, dom, element, matches, selector |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 9875090 |
+| # downloads        | 12826370 |
 | # stars            | 1 |
 
 ## Links

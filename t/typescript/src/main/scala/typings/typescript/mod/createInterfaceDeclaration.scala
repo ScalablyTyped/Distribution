@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createInterfaceDeclaration")
 @js.native
 object createInterfaceDeclaration extends js.Object {
+  
   def apply(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
@@ -223,6 +224,7 @@ object createInterfaceDeclaration extends js.Object {
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
+  /** @deprecated Use `factory.createInterfaceDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
@@ -264,4 +266,3 @@ object createInterfaceDeclaration extends js.Object {
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
 }
-

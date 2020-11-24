@@ -4,15 +4,15 @@
 Typings are for version 1.22
 
 ## Library description:
-[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=eXpPWDNzYkdKZkxuQ1VaYkRqOTYwT1hBZ1ZWcFNoWGE1Mm1UYk02cGNYRT0tLTc5RXJRNFhQdnBlOXFlQlYwdjY4SFE9PQ==--e62ce6f205d984a440dca2c74289c82a30ad84a8)](https://automate.browserstack.com/pu
+[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=MHNCQnJqZ042SFFUek9uZTFyV2dQZEppenhsdUVBQU9SMzBLRGxPUXZyaz0tLVNpUjlqUnlPUVVPOWswN1B1WWdySXc9PQ==--7517ca3a283b3a7e80dcf5de3f4270bc47eab891)](https://automate.browserstack.com/pu
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | braintree-web-drop-in |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 10 |
-| # downloads        | 728045 |
+| # releases         | 18 |
+| # dependents       | 16 |
+| # downloads        | 1257240 |
 | # stars            | 0 |
 
 ## Links

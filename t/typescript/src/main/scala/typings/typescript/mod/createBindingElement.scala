@@ -2,102 +2,19 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createBindingElement")
 @js.native
 object createBindingElement extends js.Object {
+  
+  /** @deprecated Use `factory.createBindingElement` or the factory supplied by your transformation context instead. */
   def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: BindingName
-  ): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: java.lang.String): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: java.lang.String,
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: BindingName): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: java.lang.String,
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: PropertyName, name: java.lang.String): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: PropertyName,
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: PropertyName, name: BindingName): BindingElement = js.native
-  def apply(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: PropertyName,
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: DotDotDotToken, propertyName: js.UndefOr[scala.Nothing], name: java.lang.String): BindingElement = js.native
-  def apply(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: DotDotDotToken, propertyName: js.UndefOr[scala.Nothing], name: BindingName): BindingElement = js.native
-  def apply(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing],
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: DotDotDotToken, propertyName: java.lang.String, name: java.lang.String): BindingElement = js.native
-  def apply(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: java.lang.String,
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: DotDotDotToken, propertyName: java.lang.String, name: BindingName): BindingElement = js.native
-  def apply(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: java.lang.String,
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: java.lang.String): BindingElement = js.native
-  def apply(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: PropertyName,
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def apply(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: BindingName): BindingElement = js.native
-  def apply(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: PropertyName,
-    name: BindingName,
-    initializer: Expression
+    dotDotDotToken: js.UndefOr[DotDotDotToken],
+    propertyName: js.UndefOr[
+      java.lang.String | Identifier | StringLiteral | NumericLiteral | ComputedPropertyName | PrivateIdentifier
+    ],
+    name: java.lang.String | Identifier | ObjectBindingPattern | ArrayBindingPattern,
+    initializer: js.UndefOr[Expression]
   ): BindingElement = js.native
 }
-

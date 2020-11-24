@@ -4,7 +4,7 @@ import typings.babylonjs.BABYLON.IMotionControllerProfile
 import typings.babylonjs.XRInputSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRProfiledMotionController")
 @js.native
@@ -16,10 +16,4 @@ class WebXRProfiledMotionController protected ()
     _profile: IMotionControllerProfile,
     _repositoryUrl: String
   ) = this()
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-

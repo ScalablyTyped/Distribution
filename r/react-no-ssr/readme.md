@@ -11,8 +11,8 @@ React component to wrap non SSR components.
 | Full name          | react-no-ssr |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 709630 |
+| # dependents       | 18 |
+| # downloads        | 797227 |
 | # stars            | 0 |
 
 ## Links

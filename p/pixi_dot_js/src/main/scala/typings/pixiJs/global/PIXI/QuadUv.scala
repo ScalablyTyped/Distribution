@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper class to create a quad with uvs like in v4
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuadUv ()
   extends typings.pixiJs.PIXI.QuadUv
-

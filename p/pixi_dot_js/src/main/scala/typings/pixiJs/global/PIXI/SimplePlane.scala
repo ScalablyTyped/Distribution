@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The SimplePlane allows you to draw a texture across several points and then manipulate these points
@@ -25,4 +25,3 @@ class SimplePlane protected ()
   extends typings.pixiJs.PIXI.SimplePlane {
   def this(texture: typings.pixiJs.PIXI.Texture, verticesX: Double, verticesY: Double) = this()
 }
-

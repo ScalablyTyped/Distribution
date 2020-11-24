@@ -2,7 +2,7 @@ package typings.phaser.global.spine.webgl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.webgl.Vector3")
 @js.native
@@ -16,4 +16,3 @@ class Vector3 ()
   def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
 }
-

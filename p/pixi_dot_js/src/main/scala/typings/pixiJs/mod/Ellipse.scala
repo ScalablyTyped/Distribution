@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Ellipse object is used to help draw graphics and can also be used to specify a hit area for displayObjects.
@@ -35,4 +35,3 @@ class Ellipse ()
   def this(x: Double, y: Double, halfWidth: js.UndefOr[scala.Nothing], halfHeight: Double) = this()
   def this(x: Double, y: Double, halfWidth: Double, halfHeight: Double) = this()
 }
-

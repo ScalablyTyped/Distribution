@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.ContextMenu event.
@@ -20,4 +20,3 @@ class ASPxClientGridViewContextMenuEventArgs protected ()
     */
   def this(objectType: String, index: Double, htmlEvent: js.Any, showBrowserMenu: Boolean) = this()
 }
-

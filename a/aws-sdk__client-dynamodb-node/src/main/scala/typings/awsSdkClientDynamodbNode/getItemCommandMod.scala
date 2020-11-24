@@ -5,33 +5,29 @@ import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesGetItemInputMod.GetItemInput
 import typings.awsSdkClientDynamodbNode.typesGetItemOutputMod.GetItemOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/commands/GetItemCommand", JSImport.Namespace)
 @js.native
 object getItemCommandMod extends js.Object {
+  
   @js.native
   class GetItemCommand protected () extends Command[
           InputTypesUnion, 
           GetItemInput, 
           OutputTypesUnion, 
           GetItemOutput, 
-          DynamoDBResolvedConfiguration, 
-          Readable
+          DynamoDBResolvedConfiguration
         ] {
     def this(input: GetItemInput) = this()
-    val middlewareStack: MiddlewareStack[GetItemInput, GetItemOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[GetItemInput, GetItemOutput] = js.native
   }
-  
 }
-

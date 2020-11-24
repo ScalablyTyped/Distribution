@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-svg
 
-Typings are for version 11.0.33
+Typings are for version 11.1.1
 
 ## Library description:
 A React component that injects SVG into the DOM.
@@ -10,9 +10,9 @@ A React component that injects SVG into the DOM.
 | ------------------ | :-------------: |
 | Full name          | react-svg |
 | Keywords           | dom, html, images, img, javascript, react, scalable vector graphics, svg, svginjector, typescript |
-| # releases         | 158 |
-| # dependents       | 64 |
-| # downloads        | 1981533 |
+| # releases         | 110 |
+| # dependents       | 95 |
+| # downloads        | 2958456 |
 | # stars            | 6 |
 
 ## Links

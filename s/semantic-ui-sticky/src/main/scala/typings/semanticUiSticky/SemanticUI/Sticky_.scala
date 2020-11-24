@@ -31,11 +31,11 @@ import typings.semanticUiSticky.semanticUiStickyStrings.silent
 import typings.semanticUiSticky.semanticUiStickyStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sticky_ extends js.Object {
-  var settings: StickySettings = js.native
+  
   def apply(): JQuery = js.native
   def apply(behavior: destroy): JQuery = js.native
   /**
@@ -89,5 +89,6 @@ trait Sticky_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: StickySettings): JQuery = js.native
   def apply(settings: StickySettings): JQuery = js.native
+  
+  var settings: StickySettings = js.native
 }
-

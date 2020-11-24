@@ -2,7 +2,7 @@ package typings.commangular.commangular
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // Commangular Static
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait ICommAngularStatic extends js.Object {
+  
   /**
     * This function allows you to hijack the execution before or after and
     * execute some cross cutting functionality.
@@ -33,12 +34,15 @@ trait ICommAngularStatic extends js.Object {
     *         the interceptor in a specific order you can indicate it here. An order of 0 is assigned by default.
     */
   def aspect(aspectDescriptor: String, aspectFunction: ICommand, order: Double): Unit = js.native
+  
   /**
     * TBD
     */
   def build(): Unit = js.native
+  
   def command(commandName: String, commandFunction: js.Function): Unit = js.native
   def command(commandName: String, commandFunction: js.Function, commandConfig: ICommandConfig): Unit = js.native
+  
   /**
     * Use this function to create and register a command with Commangular
     *
@@ -49,14 +53,17 @@ trait ICommAngularStatic extends js.Object {
     */
   def create(commandName: String, commandFunction: js.Function): Unit = js.native
   def create(commandName: String, commandFunction: js.Function, commandConfig: ICommandConfig): Unit = js.native
+  
   /**
     * Can be used to enable/disable debug
     */
   def debug(enableDebug: Boolean): Unit = js.native
+  
   /**
     * Mock dispatch function for testing commands.
     */
   def dispatch(ec: ICommandCall, callback: js.Function): Unit = js.native
+  
   /**
     * Event aspects work the same way command aspects do, but they intercept all the command groups instead,
     * so you can run some function before the command group starts it's execution , after or when any
@@ -76,13 +83,14 @@ trait ICommAngularStatic extends js.Object {
     *         the interceptor in a specific order you can indicate it here. An order of 0 is assigned by default.
     */
   def eventAspect(aspectDescriptor: String, aspectFunction: ICommand, order: Double): Unit = js.native
+  
   /**
     * Clears all commands and aspects registered with commangular.
     */
   def reset(): Unit = js.native
+  
   /**
     * TBD
     */
   def resolver(commandName: String, resolverFunction: js.Function): Unit = js.native
 }
-

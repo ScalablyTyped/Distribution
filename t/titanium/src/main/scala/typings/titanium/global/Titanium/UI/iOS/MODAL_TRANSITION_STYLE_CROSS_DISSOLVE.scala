@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * When the window is presented, the current view fades out while the new view fades in at the
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.MODAL_TRANSITION_STYLE_CROSS_DISSOLVE")
 @js.native
 object MODAL_TRANSITION_STYLE_CROSS_DISSOLVE extends TopLevel[Double]
-

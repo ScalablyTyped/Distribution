@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Box shape parameterized by emitterExtents. Initial velocity is directed towards local Z axis.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.EMITTERSHAPE_BOX")
 @js.native
 object EMITTERSHAPE_BOX extends TopLevel[Double]
-

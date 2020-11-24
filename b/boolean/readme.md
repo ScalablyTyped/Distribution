@@ -1,7 +1,7 @@
 
 # Scala.js typings for boolean
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 boolean converts lots of things to boolean.
@@ -10,9 +10,9 @@ boolean converts lots of things to boolean.
 | ------------------ | :-------------: |
 | Full name          | boolean |
 | Keywords           | boolean, parser |
-| # releases         | 8 |
-| # dependents       | 82 |
-| # downloads        | 10837165 |
+| # releases         | 7 |
+| # dependents       | 85 |
+| # downloads        | 14457963 |
 | # stars            | 0 |
 
 ## Links

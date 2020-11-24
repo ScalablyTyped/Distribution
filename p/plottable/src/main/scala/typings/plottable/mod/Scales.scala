@@ -4,11 +4,14 @@ import typings.d3Time.mod.CountableTimeInterval
 import typings.plottable.tickGeneratorsMod.ITickGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Scales")
 @js.native
 object Scales extends js.Object {
+  
+  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = js.native
+  
   @js.native
   /**
     * A Category Scale maps strings to numbers.
@@ -17,6 +20,14 @@ object Scales extends js.Object {
     */
   class Category ()
     extends typings.plottable.scalesMod.Category
+  /* static members */
+  @js.native
+  object Category extends js.Object {
+    
+    /* private */ def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
+    
+    /* private */ def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
+  }
   
   @js.native
   /**
@@ -31,6 +42,20 @@ object Scales extends js.Object {
     extends typings.plottable.scalesMod.Color {
     def this(scaleType: String) = this()
   }
+  /* static members */
+  @js.native
+  object Color extends js.Object {
+    
+    var _LOOP_LIGHTEN_FACTOR: js.Any = js.native
+    
+    var _MAXIMUM_COLORS_FROM_CSS: js.Any = js.native
+    
+    /* private */ def _getPlottableColors(): js.Any = js.native
+    
+    var _plottableColorCache: js.Any = js.native
+    
+    def invalidateColorCache(): Unit = js.native
+  }
   
   @js.native
   /**
@@ -41,6 +66,16 @@ object Scales extends js.Object {
   class InterpolatedColor ()
     extends typings.plottable.scalesMod.InterpolatedColor {
     def this(scaleType: String) = this()
+  }
+  /* static members */
+  @js.native
+  object InterpolatedColor extends js.Object {
+    
+    var BLUES: js.Array[String] = js.native
+    
+    var POSNEG: js.Array[String] = js.native
+    
+    var REDS: js.Array[String] = js.native
   }
   
   @js.native
@@ -94,6 +129,14 @@ object Scales extends js.Object {
   }
   
   @js.native
+  object TickGenerators extends js.Object {
+    
+    def integerTickGenerator(): ITickGenerator[Double] = js.native
+    
+    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = js.native
+  }
+  
+  @js.native
   /**
     * A Time Scale maps Date objects to numbers.
     *
@@ -101,48 +144,14 @@ object Scales extends js.Object {
     */
   class Time ()
     extends typings.plottable.scalesMod.Time
-  
-  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = js.native
-  /* static members */
-  @js.native
-  object Category extends js.Object {
-    /* private */ def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
-    /* private */ def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Color extends js.Object {
-    var _LOOP_LIGHTEN_FACTOR: js.Any = js.native
-    var _MAXIMUM_COLORS_FROM_CSS: js.Any = js.native
-    var _plottableColorCache: js.Any = js.native
-    /* private */ def _getPlottableColors(): js.Any = js.native
-    def invalidateColorCache(): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object InterpolatedColor extends js.Object {
-    var BLUES: js.Array[String] = js.native
-    var POSNEG: js.Array[String] = js.native
-    var REDS: js.Array[String] = js.native
-  }
-  
-  @js.native
-  object TickGenerators extends js.Object {
-    def integerTickGenerator(): ITickGenerator[Double] = js.native
-    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = js.native
-  }
-  
   /* static members */
   @js.native
   object Time extends js.Object {
+    
     /**
       * Transforms the Plottable TimeInterval string into a d3 time interval equivalent.
       * If the provided TimeInterval is incorrect, the default is d3.timeYear
       */
     def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = js.native
   }
-  
 }
-

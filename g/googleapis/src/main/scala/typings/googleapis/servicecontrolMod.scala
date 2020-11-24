@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicecontrol", JSImport.Namespace)
 @js.native
 object servicecontrolMod extends js.Object {
+  
   def servicecontrol(options: Options): Servicecontrol = js.native
   @JSName("servicecontrol")
   def servicecontrol_v1(version: v1): Servicecontrol = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Servicecontrol {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -36,11 +38,11 @@ object servicecontrolMod extends js.Object {
                 Servicecontrol
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object servicecontrolMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

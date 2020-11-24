@@ -2,21 +2,22 @@ package typings.vexflow.Vex.Flow
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stroke extends Modifier {
+  
   def addEndNote(note: Note): Stroke = js.native
 }
-
 @JSGlobal("Vex.Flow.Stroke")
 @js.native
 object Stroke extends js.Object {
-  @js.native
-  sealed trait Type extends js.Object
   
   @js.native
+  sealed trait Type extends js.Object
+  @js.native
   object Type extends js.Object {
+    
     @js.native
     sealed trait ARPEGGIO_DIRECTIONLESS extends Type
     
@@ -37,8 +38,5 @@ object Stroke extends js.Object {
     
     @js.native
     sealed trait ROLL_UP extends Type
-    
   }
-  
 }
-

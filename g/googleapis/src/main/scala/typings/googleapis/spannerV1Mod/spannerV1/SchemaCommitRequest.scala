@@ -2,18 +2,20 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Commit.
   */
 @js.native
 trait SchemaCommitRequest extends js.Object {
+  
   /**
     * The mutations to be executed when this transaction commits. All mutations
     * are applied atomically, in the order they appear in this list.
     */
   var mutations: js.UndefOr[js.Array[SchemaMutation]] = js.native
+  
   /**
     * Execute mutations in a temporary transaction. Note that unlike commit of
     * a previously-started transaction, commit with a temporary transaction is
@@ -24,44 +26,54 @@ trait SchemaCommitRequest extends js.Object {
     * instead.
     */
   var singleUseTransaction: js.UndefOr[SchemaTransactionOptions] = js.native
+  
   /**
     * Commit a previously-started transaction.
     */
   var transactionId: js.UndefOr[String] = js.native
 }
-
 object SchemaCommitRequest {
+  
   @scala.inline
   def apply(): SchemaCommitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommitRequest]
   }
+  
   @scala.inline
   implicit class SchemaCommitRequestOps[Self <: SchemaCommitRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMutationsVarargs(value: SchemaMutation*): Self = this.set("mutations", js.Array(value :_*))
+    
     @scala.inline
     def setMutations(value: js.Array[SchemaMutation]): Self = this.set("mutations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMutations: Self = this.set("mutations", js.undefined)
+    
     @scala.inline
     def setSingleUseTransaction(value: SchemaTransactionOptions): Self = this.set("singleUseTransaction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSingleUseTransaction: Self = this.set("singleUseTransaction", js.undefined)
+    
     @scala.inline
     def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransactionId: Self = this.set("transactionId", js.undefined)
   }
-  
 }
-

@@ -2,19 +2,21 @@ package typings.webappsecCredentialManagement
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#credentialscontainer}
   */
 @js.native
 trait CredentialsContainer extends js.Object {
+  
   /**
     * Create a {@link Credential} asynchronously.
     *
     * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dom-credentialscontainer-create}
     */
   def create(options: CredentialCreationOptions): js.Promise[CredentialType | Null] = js.native
+  
   /**
     * Request a credential from the credential manager.
     *
@@ -26,6 +28,7 @@ trait CredentialsContainer extends js.Object {
     */
   def get(): js.Promise[CredentialType | Null] = js.native
   def get(options: CredentialRequestOptions): js.Promise[CredentialType | Null] = js.native
+  
   /**
     * Ask the credential manager to require user mediation before returning
     * credentials for the origin in which the method is called. This might be
@@ -36,6 +39,7 @@ trait CredentialsContainer extends js.Object {
     * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dom-credentialscontainer-preventsilentaccess}
     */
   def preventSilentAccess(): js.Promise[Unit] = js.native
+  
   /**
     * Ask the credential manager to require user mediation before returning
     * credentials for the origin in which the method is called. This might be
@@ -47,6 +51,7 @@ trait CredentialsContainer extends js.Object {
     * @see {@link https://www.w3.org/TR/2016/WD-credential-management-1-20160425/#dom-credentialscontainer-requireusermediation}
     */
   def requireUserMediation(): js.Promise[Unit] = js.native
+  
   /**
     * Ask the credential manager to store a {@link Credential} for the user.
     * Authors could call this method after a user successfully signs in, or
@@ -56,4 +61,3 @@ trait CredentialsContainer extends js.Object {
     */
   def store(credential: CredentialType): js.Promise[CredentialType] = js.native
 }
-

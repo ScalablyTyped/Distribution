@@ -3,7 +3,7 @@ package typings.scriptableIos
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Performs HTTP requests._
@@ -14,64 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Request extends js.Object {
-  /**
-    * _Allow the request even if it is deemed insecure._
-    *
-    * By default Scriptable will attempt to reject requests that are deemed insecure.
-    *
-    * As an example, Scriptable will reject communicating with a server that has an invalid certificate. Such servers might be malicious and may put confidentional information at risk.
-    * By enabling this setting, those requests will be allowed.
-    *
-    * Enable this setting at your own risk.
-    * @see https://docs.scriptable.app/request/#allowinsecurerequest
-    */
-  var allowInsecureRequest: Boolean = js.native
-  /**
-    * _Body to send with the request._
-    *
-    * The body will be send along the request. While this property can be any value, currently only strings and Data is supported.
-    *
-    * Be aware that this property is ignored if you convert the request to a multipart request using `addParameterToMultipart`, `addFileToMultipart` or `addFileDataToMultipart`.
-    * @see https://docs.scriptable.app/request/#body
-    */
-  var body: js.Any = js.native
-  /**
-    * _HTTP headers to send with the request._
-    *
-    * Key value pairs where the key is the name of an HTTP header and the value will be sent as the value for the HTTP header.
-    * @see https://docs.scriptable.app/request/#headers
-    */
-  var headers: StringDictionary[String] = js.native
-  /**
-    * _HTTP method used for the request._
-    *
-    * Specifies the HTTP method to use when sending the request. The default is to send the request using the GET HTTP method.
-    * @see https://docs.scriptable.app/request/#method
-    */
-  var method: String = js.native
-  /**
-    * _Response of the request._
-    *
-    * The response is not populated until the request have been completed. The response is an object that looks like the following example.
-    *
-    *     {
-    *       "url": "https://example.com/",
-    *       "statusCode": 200
-    *       "mimeType": "application/json",
-    *       "textEncodingName": "utf-8",
-    *       "headers": {
-    *         "Content-Type": "application/json;charset=utf-8",
-    *         "Content-Length": "17671"
-    *       }
-    *     }
-    * @see https://docs.scriptable.app/request/#response
-    */
-  var response: StringDictionary[js.Any] = js.native
-  /**
-    * _URL to send request to._
-    * @see https://docs.scriptable.app/request/#url
-    */
-  var url: String = js.native
+  
   /**
     * _Adds a file to a multipart request._
     *
@@ -86,6 +29,7 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#-addfiledatatomultipart
     */
   def addFileDataToMultipart(data: Data, mimeType: String, name: String, filename: String): Unit = js.native
+  
   /**
     * _Adds a file to a multipart request._
     *
@@ -100,6 +44,7 @@ trait Request extends js.Object {
     */
   def addFileToMultipart(filePath: String, name: String): Unit = js.native
   def addFileToMultipart(filePath: String, name: String, filename: String): Unit = js.native
+  
   /**
     * _Adds an image to a multipart request._
     *
@@ -114,6 +59,7 @@ trait Request extends js.Object {
     */
   def addImageToMultipart(image: Image, name: String): Unit = js.native
   def addImageToMultipart(image: Image, name: String, filename: String): Unit = js.native
+  
   /**
     * _Adds a parameter to a multipart request._
     *
@@ -126,6 +72,38 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#-addparametertomultipart
     */
   def addParameterToMultipart(name: String, value: String): Unit = js.native
+  
+  /**
+    * _Allow the request even if it is deemed insecure._
+    *
+    * By default Scriptable will attempt to reject requests that are deemed insecure.
+    *
+    * As an example, Scriptable will reject communicating with a server that has an invalid certificate. Such servers might be malicious and may put confidentional information at risk.
+    * By enabling this setting, those requests will be allowed.
+    *
+    * Enable this setting at your own risk.
+    * @see https://docs.scriptable.app/request/#allowinsecurerequest
+    */
+  var allowInsecureRequest: Boolean = js.native
+  
+  /**
+    * _Body to send with the request._
+    *
+    * The body will be send along the request. While this property can be any value, currently only strings and Data is supported.
+    *
+    * Be aware that this property is ignored if you convert the request to a multipart request using `addParameterToMultipart`, `addFileToMultipart` or `addFileDataToMultipart`.
+    * @see https://docs.scriptable.app/request/#body
+    */
+  var body: js.Any = js.native
+  
+  /**
+    * _HTTP headers to send with the request._
+    *
+    * Key value pairs where the key is the name of an HTTP header and the value will be sent as the value for the HTTP header.
+    * @see https://docs.scriptable.app/request/#headers
+    */
+  var headers: StringDictionary[String] = js.native
+  
   /**
     * _Sends request._
     *
@@ -133,6 +111,7 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#-load
     */
   def load(): js.Promise[Data] = js.native
+  
   /**
     * _Sends request and parses response as an image._
     *
@@ -140,6 +119,7 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#-loadimage
     */
   def loadImage(): js.Promise[Image] = js.native
+  
   /**
     * _Sends request and parses response as JSON._
     *
@@ -147,6 +127,7 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#-loadjson
     */
   def loadJSON(): js.Promise[_] = js.native
+  
   /**
     * _Sends request and parses response as a string._
     *
@@ -154,6 +135,15 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#-loadstring
     */
   def loadString(): js.Promise[String] = js.native
+  
+  /**
+    * _HTTP method used for the request._
+    *
+    * Specifies the HTTP method to use when sending the request. The default is to send the request using the GET HTTP method.
+    * @see https://docs.scriptable.app/request/#method
+    */
+  var method: String = js.native
+  
   /**
     * _Function called upon redirect._
     *
@@ -163,5 +153,47 @@ trait Request extends js.Object {
     * @see https://docs.scriptable.app/request/#onredirect
     */
   def onRedirect(arg0: Request): Request = js.native
+  
+  /**
+    * _Response of the request._
+    *
+    * The response is not populated until the request has been completed. The response is an object that looks like the following example.
+    *
+    *     {
+    *       "url": "https://example.com/",
+    *       "statusCode": 200
+    *       "mimeType": "application/json",
+    *       "textEncodingName": "utf-8",
+    *       "headers": {
+    *         "Content-Type": "application/json;charset=utf-8",
+    *         "Content-Length": "17671"
+    *       },
+    *       "cookies": [{
+    *         "path": "/",
+    *         "httpOnly": true,
+    *         "domain": "www.example.com",
+    *         "sessionOnly": true,
+    *         "name": "JSESSIONID",
+    *         "value": "7616271F4878CFD05182D20C45F4CEB3"
+    *       }]
+    *     }
+    * @see https://docs.scriptable.app/request/#response
+    */
+  var response: StringDictionary[js.Any] = js.native
+  
+  /**
+    * _Timeout interval of the request._
+    *
+    * If a request remains idle for longer than the timeout interval, the request is considered timed out.
+    *
+    * The timeout interval is measured in seconds and defaults to 60 seconds.
+    * @see https://docs.scriptable.app/request/#timeoutinterval
+    */
+  var timeoutInterval: Double = js.native
+  
+  /**
+    * _URL to send request to._
+    * @see https://docs.scriptable.app/request/#url
+    */
+  var url: String = js.native
 }
-

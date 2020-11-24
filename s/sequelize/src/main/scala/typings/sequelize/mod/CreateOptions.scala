@@ -2,66 +2,86 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.create method
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.sequelize.mod.ReturningOptions because Already inherited
-- typings.sequelize.mod.BuildOptions because var conflicts: returning. Inlined raw, isNewRecord, include */ trait CreateOptions extends InstanceSaveOptions {
+- typings.sequelize.mod.BuildOptions because var conflicts: returning. Inlined raw, isNewRecord, include */ @js.native
+trait CreateOptions extends InstanceSaveOptions {
+  
   /**
     * an array of include options - Used to build prefetched/included model instances. See `set`
     *
     * TODO: See set
     */
-  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.native
+  
   /**
     * Is this record new
     */
-  var isNewRecord: js.UndefOr[Boolean] = js.undefined
+  var isNewRecord: js.UndefOr[Boolean] = js.native
+  
   /**
     * On Duplicate
     */
-  var onDuplicate: js.UndefOr[String] = js.undefined
+  var onDuplicate: js.UndefOr[String] = js.native
+  
   /**
     * If set to true, values will ignore field and virtual setters.
     */
-  var raw: js.UndefOr[Boolean] = js.undefined
+  var raw: js.UndefOr[Boolean] = js.native
 }
-
 object CreateOptions {
+  
   @scala.inline
-  def apply(
-    benchmark: js.UndefOr[Boolean] = js.undefined,
-    fields: js.Array[String] = null,
-    hooks: js.UndefOr[Boolean] = js.undefined,
-    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
-    isNewRecord: js.UndefOr[Boolean] = js.undefined,
-    logging: Boolean | js.Function = null,
-    onDuplicate: String = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    returning: js.UndefOr[Boolean] = js.undefined,
-    searchPath: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    transaction: Transaction = null,
-    validate: js.UndefOr[Boolean] = js.undefined
-  ): CreateOptions = {
+  def apply(): CreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.get.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNewRecord)) __obj.updateDynamic("isNewRecord")(isNewRecord.get.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (onDuplicate != null) __obj.updateDynamic("onDuplicate")(onDuplicate.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.get.asInstanceOf[js.Any])
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
+  
+  @scala.inline
+  implicit class CreateOptionsOps[Self <: CreateOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = this.set("include", js.Array(value :_*))
+    
+    @scala.inline
+    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = this.set("include", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    
+    @scala.inline
+    def setIsNewRecord(value: Boolean): Self = this.set("isNewRecord", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsNewRecord: Self = this.set("isNewRecord", js.undefined)
+    
+    @scala.inline
+    def setOnDuplicate(value: String): Self = this.set("onDuplicate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOnDuplicate: Self = this.set("onDuplicate", js.undefined)
+    
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+  }
 }
-

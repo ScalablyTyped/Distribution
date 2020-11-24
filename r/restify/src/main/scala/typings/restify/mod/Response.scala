@@ -4,18 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Response extends ServerResponse {
-  /** HTTP status code. */
-  var code: Double = js.native
-  /** short hand for the header content-length. */
-  var contentLength: Double = js.native
-  /** short hand for the header content-type. */
-  var contentType: String = js.native
-  /** A unique request id (x-request-id). */
-  var id: String = js.native
+  
   /**
     * sets the cache-control header. `type` defaults to _public_,
     * and options currently only takes maxAge.
@@ -33,6 +26,7 @@ trait Response extends ServerResponse {
     */
   def cache(`type`: String): String = js.native
   def cache(`type`: String, options: CacheOptions): String = js.native
+  
   /**
     * Appends the provided character set to the response's Content-Type.
     * e.g., res.charSet('utf-8');
@@ -40,11 +34,22 @@ trait Response extends ServerResponse {
     * @returns  self, the response object
     */
   def charSet(`type`: String): Response = js.native
+  
+  /** HTTP status code. */
+  var code: Double = js.native
+  
+  /** short hand for the header content-length. */
+  var contentLength: Double = js.native
+  
+  /** short hand for the header content-type. */
+  var contentType: String = js.native
+  
   /**
     * retrieves a header off the response.
     * @param    name the header name
     */
   def get(name: String): String = js.native
+  
   /**
     * sets headers on the response.
     * @param    key  the name of the header
@@ -52,10 +57,15 @@ trait Response extends ServerResponse {
     */
   def header(key: String): js.Any = js.native
   def header(key: String, value: js.Any): js.Any = js.native
+  
   /**
     * pass through to getHeaders.
     */
   def headers(): js.Any = js.native
+  
+  /** A unique request id (x-request-id). */
+  var id: String = js.native
+  
   /**
     * short hand method for:
     *     res.contentType = 'json';
@@ -75,6 +85,7 @@ trait Response extends ServerResponse {
     */
   def json(code: Double, body: js.Any): js.Any = js.native
   def json(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  
   /**
     * sets the link heaader.
     * @param    key   the link key
@@ -82,11 +93,13 @@ trait Response extends ServerResponse {
     * @returns      the header value set to res
     */
   def link(key: String, value: String): String = js.native
+  
   /**
     * turns off all cache related headers.
     * @returns  self, the response object
     */
   def noCache(): Response = js.native
+  
   /**
     * redirect is sugar method for redirecting.
     * res.redirect(301, 'www.foo.com', next);
@@ -107,6 +120,7 @@ trait Response extends ServerResponse {
     */
   def redirect(opts: String, next: Next): Unit = js.native
   def redirect(opts: RedirectOptions, next: Next): Unit = js.native
+  
   /**
     * sends the response object. pass through to internal __send that uses a
     * formatter based on the content-type header.
@@ -130,6 +144,7 @@ trait Response extends ServerResponse {
   def send(code: Double, body: js.UndefOr[scala.Nothing], headers: StringDictionary[String]): js.Any = js.native
   def send(code: Double, body: js.Any): js.Any = js.native
   def send(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  
   /**
     * sends the response object. pass through to internal __send that skips
     * formatters entirely and sends the content as is.
@@ -153,6 +168,7 @@ trait Response extends ServerResponse {
   def sendRaw(code: Double, body: js.UndefOr[scala.Nothing], headers: StringDictionary[String]): js.Any = js.native
   def sendRaw(code: Double, body: js.Any): js.Any = js.native
   def sendRaw(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  
   /**
     * sets a header on the response.
     * @param    val  object of headers
@@ -167,6 +183,7 @@ trait Response extends ServerResponse {
     * @returns       self, the response object
     */
   def set(name: String, `val`: String): Response = js.native
+  
   /**
     * sets the http status code on the response.
     * @param    code http status code
@@ -174,4 +191,3 @@ trait Response extends ServerResponse {
     */
   def status(code: Double): Double = js.native
 }
-

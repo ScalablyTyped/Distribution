@@ -11,11 +11,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "shuffle")
 @js.native
 object shuffle extends js.Object {
+  
   def apply(array: Float32Array): Float32Array = js.native
   def apply(array: Float32Array, lo: js.UndefOr[scala.Nothing], hi: Double): Float32Array = js.native
   def apply(array: Float32Array, lo: Double): Float32Array = js.native
@@ -57,4 +58,3 @@ object shuffle extends js.Object {
   def apply[T](array: js.Array[T], lo: Double): js.Array[T] = js.native
   def apply[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = js.native
 }
-

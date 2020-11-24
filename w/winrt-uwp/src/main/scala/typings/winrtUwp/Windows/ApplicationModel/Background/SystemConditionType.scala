@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SystemConditionType extends js.Object
-
 /** Specifies a system condition that must be in effect for a background task to run. If a background task with a system condition is triggered, the task will not run until the condition is met. */
 @JSGlobal("Windows.ApplicationModel.Background.SystemConditionType")
 @js.native
 object SystemConditionType extends js.Object {
+  
   /** Specifies that the background task can only run when the cost to do background work is low. */
   @js.native
   sealed trait backgroundWorkCostNotHigh extends SystemConditionType
@@ -46,6 +46,4 @@ object SystemConditionType extends js.Object {
   /** Specifies that the background task can only run when the user is present. If a background task with the UserPresent condition is triggered, and the user is away, the task will not run until the user is present. */
   @js.native
   sealed trait userPresent extends SystemConditionType
-  
 }
-

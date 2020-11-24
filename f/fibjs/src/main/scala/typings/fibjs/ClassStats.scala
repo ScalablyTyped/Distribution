@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassStats extends ClassObject {
+  
   /**
     * 
     * @brief 指定的计数器加指定值
@@ -21,6 +22,7 @@ trait ClassStats extends ClassObject {
     * 
     */
   def add(key: String, value: Double): Unit = js.native
+  
   /**
     * 
     * @brief 指定的计数器减一
@@ -30,6 +32,7 @@ trait ClassStats extends ClassObject {
     * 
     */
   def dec(key: String): Unit = js.native
+  
   /**
     * 
     * @brief 指定的计数器增一
@@ -39,6 +42,7 @@ trait ClassStats extends ClassObject {
     * 
     */
   def inc(key: String): Unit = js.native
+  
   /**
     * 
     * @brief 初始化计数器，除 staticKeys 指定的计数器全部清零
@@ -46,6 +50,7 @@ trait ClassStats extends ClassObject {
     * 
     */
   def reset(): Unit = js.native
+  
   /**
     * 
     * @brief 查询上次 reset 到现在的运行时间
@@ -56,4 +61,3 @@ trait ClassStats extends ClassObject {
     */
   def uptime(): Double = js.native
 }
-

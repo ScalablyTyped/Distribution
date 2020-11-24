@@ -6,7 +6,7 @@ import typings.requestPromise.mod.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StatusCodeErrorConstructor
@@ -18,6 +18,6 @@ trait StatusCodeErrorConstructor
       /* response */ IncomingMessage, 
       StatusCodeError
     ] {
+  
   def apply(statusCode: Double, body: js.Any, options: Options, response: IncomingMessage): StatusCodeError = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.rxjsCompat.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisPredicateThisArg extends js.Object {
+  
   def apply[T](
     predicate: js.Function3[
       /* value */ T, 
@@ -24,4 +25,3 @@ trait FnCallThisPredicateThisArg extends js.Object {
     thisArg: js.Any
   ): js.Any = js.native
 }
-

@@ -6,11 +6,12 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWebElement
   extends Instantiable2[/* driver */ WebDriver, /* id */ js.Promise[String], WebElement] {
+  
   /**
     * @param {string} id The raw ID.
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
@@ -18,6 +19,7 @@ trait TypeofWebElement
     */
   def buildId(id: String): IWebElementId = js.native
   def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = js.native
+  
   /**
     * Compares two WebElements for equality.
     *
@@ -27,6 +29,7 @@ trait TypeofWebElement
     *     resolved to whether the two WebElements are equal.
     */
   def equals(a: WebElement, b: WebElement): js.Promise[Boolean] = js.native
+  
   /**
     * Extracts the encoded WebElement ID from the object.
     *
@@ -35,10 +38,10 @@ trait TypeofWebElement
     * @throws {TypeError} if the object is not a valid encoded ID.
     */
   def extractId(obj: IWebElementId): String = js.native
+  
   /**
     * @param {?} obj the object to test.
     * @return {boolean} whether the object is a valid encoded WebElement ID.
     */
   def isId(obj: IWebElementId): Boolean = js.native
 }
-

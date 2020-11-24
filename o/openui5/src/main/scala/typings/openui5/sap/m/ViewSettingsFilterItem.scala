@@ -2,16 +2,18 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewSettingsFilterItem extends ViewSettingsItem {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: ViewSettingsItem): ViewSettingsFilterItem = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the
     * <code>filterDetailItemsAggregationChange</code> event of this
@@ -28,6 +30,7 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     */
   def attachFilterDetailItemsAggregationChange(oData: js.Any, fnFunction: js.Any): ViewSettingsFilterItem = js.native
   def attachFilterDetailItemsAggregationChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ViewSettingsFilterItem = js.native
+  
   /**
     * Binds aggregation <code>items</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -36,11 +39,13 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindItems(oBindingInfo: js.Any): ViewSettingsFilterItem = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): ViewSettingsFilterItem = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the
     * <code>filterDetailItemsAggregationChange</code> event of this
@@ -51,23 +56,27 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFilterDetailItemsAggregationChange(fnFunction: js.Any, oListener: js.Any): ViewSettingsFilterItem = js.native
+  
   /**
     * Fires event <code>filterDetailItemsAggregationChange</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFilterDetailItemsAggregationChange(mArguments: js.Any): ViewSettingsFilterItem = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.Items that are logically grouped under this filter
     * item. They are used to display filter details in the ViewSettingsDialog.
     */
   def getItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Gets current value of property <code>multiSelect</code>.If set to (true), multi selection will be
     * allowed for the items aggregation.Default value is <code>true</code>.
     * @returns Value of property <code>multiSelect</code>
     */
   def getMultiSelect(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ViewSettingsItem</code> in the aggregation
     * <code>items</code>.and returns its index if found or -1 otherwise.
@@ -75,6 +84,7 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: ViewSettingsItem): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -85,12 +95,14 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: ViewSettingsItem, iIndex: Double): ViewSettingsFilterItem = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[ViewSettingsItem] = js.native
+  
   def removeItem(vItem: String): ViewSettingsItem = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -99,6 +111,7 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     */
   def removeItem(vItem: Double): ViewSettingsItem = js.native
   def removeItem(vItem: ViewSettingsItem): ViewSettingsItem = js.native
+  
   /**
     * Sets a new value for property <code>multiSelect</code>.If set to (true), multi selection will be
     * allowed for the items aggregation.When called with a value of <code>null</code> or
@@ -108,10 +121,10 @@ trait ViewSettingsFilterItem extends ViewSettingsItem {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMultiSelect(bMultiSelect: Boolean): ViewSettingsFilterItem = js.native
+  
   /**
     * Unbinds aggregation <code>items</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindItems(): ViewSettingsFilterItem = js.native
 }
-

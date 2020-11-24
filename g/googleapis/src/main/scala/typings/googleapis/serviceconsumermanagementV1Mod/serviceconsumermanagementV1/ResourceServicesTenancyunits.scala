@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/serviceconsumermanagement/v1", "serviceconsumermanagement_v1.Resource$Services$Tenancyunits")
 @js.native
 class ResourceServicesTenancyunits protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.addProject
     * @desc Add a new tenant project to the tenancy unit. There can be a
@@ -49,6 +49,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.applyProjectConfig
     * @desc Apply a configuration to an existing tenant project. This project
@@ -93,6 +94,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.attachProject
     * @desc Attach an existing project to the tenancy unit as a new tenant
@@ -134,6 +136,9 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.create
     * @desc Creates a tenancy unit with no tenant resources.
@@ -166,6 +171,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTenancyUnit]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.delete
     * @desc Delete a tenancy unit. Before you delete the tenancy unit, there
@@ -196,6 +202,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.deleteProject
     * @desc Deletes the specified project resource identified by a tenant
@@ -235,6 +242,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.list
     * @desc Find the tenancy unit for a managed service and service consumer.
@@ -273,6 +281,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTenancyUnitsResponse]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.removeProject
     * @desc Removes the specified project resource identified by a tenant
@@ -311,6 +320,7 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * serviceconsumermanagement.services.tenancyUnits.undeleteProject
     * @desc Attempts to undelete a previously deleted tenant project. The
@@ -348,4 +358,3 @@ class ResourceServicesTenancyunits protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

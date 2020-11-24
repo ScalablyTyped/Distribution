@@ -1,7 +1,7 @@
 
 # Scala.js typings for stellar-base
 
-Typings are for version 3.0.4
+Typings are for version 4.0.3
 
 ## Library description:
 Low level stellar support library
@@ -10,9 +10,9 @@ Low level stellar support library
 | ------------------ | :-------------: |
 | Full name          | stellar-base |
 | Keywords           | stellar |
-| # releases         | 27 |
-| # dependents       | 17 |
-| # downloads        | 294091 |
+| # releases         | 38 |
+| # dependents       | 23 |
+| # downloads        | 341814 |
 | # stars            | 1 |
 
 ## Links

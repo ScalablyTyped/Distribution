@@ -10,9 +10,9 @@ Lookup information about ISO-3166-2 subdivisions.
 | ------------------ | :-------------: |
 | Full name          | iso-3166-2 |
 | Keywords           | iso3166, iso-3166, iso-3166-2, geo |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 197907 |
+| # downloads        | 319575 |
 | # stars            | 7 |
 
 ## Links

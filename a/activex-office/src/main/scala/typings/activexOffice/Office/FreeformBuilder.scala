@@ -2,15 +2,11 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FreeformBuilder extends js.Object {
-  val Application: js.Any = js.native
-  val Creator: Double = js.native
-  @JSName("Office.FreeformBuilder_typekey")
-  var OfficeDotFreeformBuilder_typekey: FreeformBuilder = js.native
-  val Parent: js.Any = js.native
+  
   /**
     * @param X2 [X2=0]
     * @param Y2 [Y2=0]
@@ -151,6 +147,15 @@ trait FreeformBuilder extends js.Object {
     X3: Double,
     Y3: Double
   ): Unit = js.native
+  
+  val Application: js.Any = js.native
+  
   def ConvertToShape(): Shape = js.native
+  
+  val Creator: Double = js.native
+  
+  @JSName("Office.FreeformBuilder_typekey")
+  var OfficeDotFreeformBuilder_typekey: FreeformBuilder = js.native
+  
+  val Parent: js.Any = js.native
 }
-

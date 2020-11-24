@@ -4,11 +4,12 @@ import typings.polished.fluidRangeConfigurationMod.FluidRangeConfiguration
 import typings.polished.styleMod.Styles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("polished/lib/mixins/fluidRange", JSImport.Namespace)
 @js.native
 object fluidRangeMod extends js.Object {
+  
   def default(cssProp: js.Array[FluidRangeConfiguration]): Styles = js.native
   def default(
     cssProp: js.Array[FluidRangeConfiguration],
@@ -22,4 +23,3 @@ object fluidRangeMod extends js.Object {
   def default(cssProp: FluidRangeConfiguration, minScreen: String): Styles = js.native
   def default(cssProp: FluidRangeConfiguration, minScreen: String, maxScreen: String): Styles = js.native
 }
-

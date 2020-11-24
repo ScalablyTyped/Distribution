@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EntityType extends js.Object
-
 /**
   * Specifies an entity's type.
   *
@@ -17,6 +16,7 @@ sealed trait EntityType extends js.Object
 @JSGlobal("Office.MailboxEnums.EntityType")
 @js.native
 object EntityType extends js.Object {
+  
   /**
     * Specifies that the entity is a postal address.
     */
@@ -58,6 +58,4 @@ object EntityType extends js.Object {
     */
   @js.native
   sealed trait Url extends EntityType
-  
 }
-

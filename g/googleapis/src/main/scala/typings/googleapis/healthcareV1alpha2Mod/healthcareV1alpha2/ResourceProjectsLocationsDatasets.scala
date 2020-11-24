@@ -6,18 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets")
 @js.native
 class ResourceProjectsLocationsDatasets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var annotationStores: ResourceProjectsLocationsDatasetsAnnotationstores = js.native
+  
   var context: APIRequestContext = js.native
-  var dicomStores: ResourceProjectsLocationsDatasetsDicomstores = js.native
-  var fhirStores: ResourceProjectsLocationsDatasetsFhirstores = js.native
-  var hl7V2Stores: ResourceProjectsLocationsDatasetsHl7v2stores = js.native
-  var operations: ResourceProjectsLocationsDatasetsOperations = js.native
+  
   /**
     * healthcare.projects.locations.datasets.create
     * @desc Creates a new health dataset. Results are returned through the
@@ -54,6 +53,7 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.deidentify
     * @desc Creates a new dataset containing de-identified data from the source
@@ -89,6 +89,7 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.delete
     * @desc Deletes the specified health dataset and all data contained in the
@@ -119,6 +120,11 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var dicomStores: ResourceProjectsLocationsDatasetsDicomstores = js.native
+  
+  var fhirStores: ResourceProjectsLocationsDatasetsFhirstores = js.native
+  
   /**
     * healthcare.projects.locations.datasets.get
     * @desc Gets any metadata associated with a dataset.
@@ -147,6 +153,7 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -179,6 +186,9 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var hl7V2Stores: ResourceProjectsLocationsDatasetsHl7v2stores = js.native
+  
   /**
     * healthcare.projects.locations.datasets.list
     * @desc Lists the health datasets in the current project.
@@ -212,6 +222,9 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDatasetsResponse]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsLocationsDatasetsOperations = js.native
+  
   /**
     * healthcare.projects.locations.datasets.patch
     * @desc Updates dataset metadata.
@@ -245,6 +258,7 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -278,6 +292,7 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -315,4 +330,3 @@ class ResourceProjectsLocationsDatasets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

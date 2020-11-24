@@ -3,12 +3,12 @@ package typings.cytoscape.mod
 import typings.cytoscape.mod.Css.TransitionTimingFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SingularAnimationOptionsPos extends SingularAnimationOptionsBase
-
 object SingularAnimationOptionsPos {
+  
   @scala.inline
   def apply(
     duration: Double,
@@ -21,4 +21,3 @@ object SingularAnimationOptionsPos {
     __obj.asInstanceOf[SingularAnimationOptionsPos]
   }
 }
-

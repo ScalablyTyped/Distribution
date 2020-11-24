@@ -6,7 +6,7 @@ import typings.winreg.Winreg.Registry
 import typings.winreg.WinregStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Winreg")
 @js.native
@@ -29,8 +29,6 @@ class ^ protected () extends Registry {
     */
   def this(options: Options) = this()
 }
-
 @JSGlobal("Winreg")
 @js.native
 object ^ extends TopLevel[WinregStatic]
-

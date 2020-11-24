@@ -10,9 +10,9 @@ Buttons for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-buttons |
 | Keywords           | buttons, excel, pdf, csv, column visibility, print, DataTables, jQuery, table, DataTables |
-| # releases         | 8 |
-| # dependents       | 22 |
-| # downloads        | 1636007 |
+| # releases         | 7 |
+| # dependents       | 32 |
+| # downloads        | 3073734 |
 | # stars            | 0 |
 
 ## Links

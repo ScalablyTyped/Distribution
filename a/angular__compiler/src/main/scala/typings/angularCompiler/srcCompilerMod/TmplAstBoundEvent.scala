@@ -4,7 +4,7 @@ import typings.angularCompiler.astMod.ParsedEventType
 import typings.angularCompiler.r3AstMod.BoundEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "TmplAstBoundEvent")
 @js.native
@@ -46,11 +46,10 @@ class TmplAstBoundEvent protected () extends BoundEvent {
     handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
 }
-
 /* static members */
 @JSImport("@angular/compiler/src/compiler", "TmplAstBoundEvent")
 @js.native
 object TmplAstBoundEvent extends js.Object {
+  
   def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): BoundEvent = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.estree.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.estree.mod.FunctionDeclaration
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   - typings.estree.mod.ArrowFunctionExpression
 */
 trait Function extends Node
-
 object Function {
+  
   @scala.inline
   def FunctionDeclaration(
     body: BlockStatement,
@@ -22,6 +22,7 @@ object Function {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Function]
   }
+  
   @scala.inline
   def FunctionExpression(
     body: BlockStatement,
@@ -32,6 +33,7 @@ object Function {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Function]
   }
+  
   @scala.inline
   def ArrowFunctionExpression(
     body: BlockStatement | Expression,
@@ -44,4 +46,3 @@ object Function {
     __obj.asInstanceOf[Function]
   }
 }
-

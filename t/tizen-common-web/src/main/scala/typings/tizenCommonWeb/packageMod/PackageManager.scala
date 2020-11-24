@@ -3,10 +3,11 @@ package typings.tizenCommonWeb.packageMod
 import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PackageManager extends js.Object {
+  
   /**
     * Gets information of an installed package.
     *
@@ -25,6 +26,7 @@ trait PackageManager extends js.Object {
     */
   def getPackageInfo(): PackageInformation = js.native
   def getPackageInfo(id: PackageId): PackageInformation = js.native
+  
   /**
     * Gets information of the installed packages.
     *
@@ -43,6 +45,7 @@ trait PackageManager extends js.Object {
     */
   def getPackagesInfo(successCallback: PackageInformationArraySuccessCallback): Unit = js.native
   def getPackagesInfo(successCallback: PackageInformationArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Installs a package with a specified file on a device.
     *
@@ -65,6 +68,7 @@ trait PackageManager extends js.Object {
     */
   def install(packageFileURI: String, progressCallback: PackageProgressCallback): Unit = js.native
   def install(packageFileURI: String, progressCallback: PackageProgressCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Sets a listener to receive notifications for any changes made to the list of installed packages.
     *
@@ -81,6 +85,7 @@ trait PackageManager extends js.Object {
     * @throw WebAPIException `TypeMismatchError`, `SecurityError`, `UnknownError`.
     */
   def setPackageInfoEventListener(eventCallback: PackageInformationEventCallback): Unit = js.native
+  
   /**
     * Uninstalls the package with a specified package ID.
     *
@@ -105,6 +110,7 @@ trait PackageManager extends js.Object {
     */
   def uninstall(id: PackageId, progressCallback: PackageProgressCallback): Unit = js.native
   def uninstall(id: PackageId, progressCallback: PackageProgressCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Unsets the listener to stop receiving package notifications.
     *
@@ -118,4 +124,3 @@ trait PackageManager extends js.Object {
     */
   def unsetPackageInfoEventListener(): Unit = js.native
 }
-

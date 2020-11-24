@@ -12,7 +12,7 @@ import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofStats
@@ -42,6 +42,6 @@ trait TypeofStats
       /* ctime */ Date, 
       default
     ] {
+  
   def fromBuffer(buffer: Buffer): Stats = js.native
 }
-

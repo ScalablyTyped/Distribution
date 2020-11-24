@@ -12,7 +12,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Float
 import typings.officeJsPreview.officeJsPreviewStrings.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -22,9 +22,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomProperty extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CustomProperty: RequestContext = js.native
+  
+  /**
+    * Deletes the custom property.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  def delete(): Unit = js.native
+  
   /**
     *
     * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
@@ -32,26 +41,7 @@ trait CustomProperty extends ClientObject {
     * [Api set: ExcelApi 1.7]
     */
   val key: String = js.native
-  /**
-    *
-    * The type of the value used for the custom property.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  val `type`: DocumentPropertyType | Number | Boolean | Date | typings.officeJsPreview.officeJsPreviewStrings.String | Float = js.native
-  /**
-    *
-    * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var value: js.Any = js.native
-  /**
-    * Deletes the custom property.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  def delete(): Unit = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -62,6 +52,7 @@ trait CustomProperty extends ClientObject {
   def load(propertyNamesAndPaths: Expand): CustomProperty = js.native
   def load(propertyNames: String): CustomProperty = js.native
   def load(propertyNames: js.Array[String]): CustomProperty = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: CustomProperty): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -77,10 +68,26 @@ trait CustomProperty extends ClientObject {
     */
   def set(properties: CustomPropertyUpdateData): Unit = js.native
   def set(properties: CustomPropertyUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.CustomProperty object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): CustomPropertyData = js.native
+  
+  /**
+    *
+    * The type of the value used for the custom property.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  val `type`: DocumentPropertyType | Number | Boolean | Date | typings.officeJsPreview.officeJsPreviewStrings.String | Float = js.native
+  
+  /**
+    *
+    * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  var value: js.Any = js.native
 }
-

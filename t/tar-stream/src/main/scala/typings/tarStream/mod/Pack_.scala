@@ -5,10 +5,11 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pack_ extends Readable {
+  
   /**
     * To create a pack stream use tar.pack() and call pack.entry(header, [callback]) to add tar entries.
     */
@@ -20,4 +21,3 @@ trait Pack_ extends Readable {
   def entry(headers: Headers, buffer: Buffer, callback: Callback): Writable = js.native
   def entry(headers: Headers, callback: Callback): Writable = js.native
 }
-

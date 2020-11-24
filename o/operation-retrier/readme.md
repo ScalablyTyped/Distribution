@@ -10,9 +10,9 @@ RTD retrier
 | ------------------ | :-------------: |
 | Full name          | operation-retrier |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 749633 |
+| # releases         | 5 |
+| # dependents       | 7 |
+| # downloads        | 2315085 |
 | # stars            | 0 |
 
 ## Links

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "contentful-management" : "5.28.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "contentful-management" : "5.28.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

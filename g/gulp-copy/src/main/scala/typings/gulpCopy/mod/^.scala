@@ -3,11 +3,12 @@ package typings.gulpCopy.mod
 import typings.through.mod.ThroughStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gulp-copy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Copy files to destination and expose those files as source streams for the gulp pipeline.
     *
@@ -24,4 +25,3 @@ object ^ extends js.Object {
     */
   def apply(outDirectory: String, options: GulpCopyOptions): ThroughStream = js.native
 }
-

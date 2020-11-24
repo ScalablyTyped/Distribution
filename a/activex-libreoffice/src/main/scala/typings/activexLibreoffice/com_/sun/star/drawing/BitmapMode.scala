@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The BitmapMode selects an algorithm for filling an area with a bitmap. */
 /* Rewritten from type alias, can be one of: 
@@ -14,14 +14,16 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait BitmapMode extends js.Object
-
 object BitmapMode {
+  
   /** the bitmap is painted in its original or selected size. */
   @scala.inline
   def NO_REPEAT: `2` = 2.asInstanceOf[`2`]
+  
   /** the bitmap is repeated over the fill area. */
   @scala.inline
   def REPEAT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the bitmap is stretched to fill the area.
     *
@@ -30,4 +32,3 @@ object BitmapMode {
   @scala.inline
   def STRETCH: `1` = 1.asInstanceOf[`1`]
 }
-

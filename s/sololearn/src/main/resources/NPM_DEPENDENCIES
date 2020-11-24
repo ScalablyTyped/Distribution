@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sololearn" : "2.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sololearn" : "2.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularForms.anon.EmitEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormGroup")
 @js.native
@@ -76,7 +76,7 @@ class FormGroup protected () extends AbstractControl {
     validatorOrOpts: ValidatorFn,
     asyncValidator: AsyncValidatorFn
   ) = this()
-  var controls: StringDictionary[AbstractControl] = js.native
+  
   /**
     * Add a control to this group.
     *
@@ -86,6 +86,7 @@ class FormGroup protected () extends AbstractControl {
     * @param control Provides the control for the given name
     */
   def addControl(name: String, control: AbstractControl): Unit = js.native
+  
   /**
     * Check whether there is an enabled control with the given name in the group.
     *
@@ -97,6 +98,9 @@ class FormGroup protected () extends AbstractControl {
     * @returns false for disabled controls, true otherwise.
     */
   def contains(controlName: String): Boolean = js.native
+  
+  var controls: StringDictionary[AbstractControl] = js.native
+  
   /**
     * The aggregate value of the `FormGroup`, including any disabled controls.
     *
@@ -105,6 +109,7 @@ class FormGroup protected () extends AbstractControl {
     * it excludes disabled controls in the `FormGroup`.
     */
   def getRawValue(): js.Any = js.native
+  
   /**
     * Patches the value of the `FormGroup`. It accepts an object with control
     * names as keys, and does its best to match the values to the correct controls
@@ -140,6 +145,7 @@ class FormGroup protected () extends AbstractControl {
     */
   def patchValue(value: StringDictionary[js.Any]): Unit = js.native
   def patchValue(value: StringDictionary[js.Any], options: EmitEvent): Unit = js.native
+  
   /**
     * Registers a control with the group's list of controls.
     *
@@ -150,14 +156,17 @@ class FormGroup protected () extends AbstractControl {
     * @param control Provides the control for the given name
     */
   def registerControl(name: String, control: AbstractControl): AbstractControl = js.native
+  
   /**
     * Remove a control from this group.
     *
     * @param name The control name to remove from the collection
     */
   def removeControl(name: String): Unit = js.native
+  
   def reset(value: js.UndefOr[scala.Nothing], options: EmitEvent): Unit = js.native
   def reset(value: js.Any, options: EmitEvent): Unit = js.native
+  
   /**
     * Replace an existing control.
     *
@@ -165,6 +174,7 @@ class FormGroup protected () extends AbstractControl {
     * @param control Provides the control for the given name
     */
   def setControl(name: String, control: AbstractControl): Unit = js.native
+  
   /**
     * Sets the value of the `FormGroup`. It accepts an object that matches
     * the structure of the group, with control names as keys.
@@ -203,4 +213,3 @@ class FormGroup protected () extends AbstractControl {
   def setValue(value: StringDictionary[js.Any]): Unit = js.native
   def setValue(value: StringDictionary[js.Any], options: EmitEvent): Unit = js.native
 }
-

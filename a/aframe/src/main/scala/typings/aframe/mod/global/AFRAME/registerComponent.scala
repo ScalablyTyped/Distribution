@@ -5,7 +5,7 @@ import typings.aframe.mod.ComponentConstructor
 import typings.aframe.mod.ComponentDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.registerComponent")
 @js.native
@@ -17,4 +17,3 @@ object registerComponent
         ComponentConstructor[js.Object]
       ]
     ]
-

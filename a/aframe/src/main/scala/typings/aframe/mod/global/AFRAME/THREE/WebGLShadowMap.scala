@@ -2,7 +2,7 @@ package typings.aframe.mod.global.AFRAME.THREE
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.THREE.WebGLShadowMap")
 @js.native
@@ -14,4 +14,3 @@ class WebGLShadowMap protected ()
     maxTextureSize: Double
   ) = this()
 }
-

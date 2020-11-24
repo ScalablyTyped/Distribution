@@ -10,13 +10,12 @@ import typings.vue.vueMod.Vue
 import typings.vueClassComponent.declarationsMod.VueClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vue-class-component/lib/component", JSImport.Namespace)
 @js.native
 object componentMod extends js.Object {
-  @JSName("$internalHooks")
-  val internalHooks: js.Array[String] = js.native
+  
   def componentFactory(Component: VueClass[Vue]): VueClass[Vue] = js.native
   def componentFactory(
     Component: VueClass[Vue],
@@ -29,5 +28,7 @@ object componentMod extends js.Object {
       DefaultProps
     ]
   ): VueClass[Vue] = js.native
+  
+  @JSName("$internalHooks")
+  val internalHooks: js.Array[String] = js.native
 }
-

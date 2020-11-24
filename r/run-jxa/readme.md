@@ -12,7 +12,7 @@ Run JXAcode and get the result
 | Keywords           | macos, jxa, javascript, osascript, run, mac, execute, code, script, automation |
 | # releases         | 2 |
 | # dependents       | 12 |
-| # downloads        | 5469 |
+| # downloads        | 2294 |
 | # stars            | 0 |
 
 ## Links

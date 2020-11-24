@@ -2,16 +2,19 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object uno {
+  
   /**
     * {@link Exception} signalling a deployment error.
     * @since OOo 1.1.2
     */
   type DeploymentException = typings.activexLibreoffice.com_.sun.star.uno.RuntimeException
+  
   /** a simple named object container. */
   type NamingService = typings.activexLibreoffice.com_.sun.star.uno.XNamingService
+  
   /**
     * This exception or a subclass can occur at every interface method.
     *
@@ -20,6 +23,7 @@ package object uno {
     * object has been disposed before.
     */
   type RuntimeException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /** Base exception for all security related exceptions. */
   type SecurityException = typings.activexLibreoffice.com_.sun.star.uno.RuntimeException
 }

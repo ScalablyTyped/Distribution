@@ -10,9 +10,9 @@ A node.js client for Librato Metrics (http://metrics.librato.com/)
 | ------------------ | :-------------: |
 | Full name          | librato-node |
 | Keywords           | librato, metrics, express |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 5 |
-| # downloads        | 767251 |
+| # downloads        | 1207431 |
 | # stars            | 1 |
 
 ## Links

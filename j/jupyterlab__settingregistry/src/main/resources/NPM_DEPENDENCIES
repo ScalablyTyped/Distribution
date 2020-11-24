@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/settingregistry" : "2.2.0"
+      "@jupyterlab/settingregistry" : "2.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/settingregistry" : "2.2.0"
+      "@jupyterlab/settingregistry" : "2.2.5"
     }
   ],
   "compile-devDependencies" : [

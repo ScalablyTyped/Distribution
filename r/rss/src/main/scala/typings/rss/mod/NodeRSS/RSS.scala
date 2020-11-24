@@ -2,10 +2,11 @@ package typings.rss.mod.NodeRSS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RSS extends js.Object {
+  
   /**
     * Add an item to a feed. An item can be used for a blog
     * entry, project update, log entry, etc.
@@ -13,6 +14,7 @@ trait RSS extends js.Object {
     * @returns {RSS}
     */
   def item(itemOptions: ItemOptions): RSS = js.native
+  
   /**
     * Generate XML and return as a string for this feed.
     * @returns {string}
@@ -27,4 +29,3 @@ trait RSS extends js.Object {
     */
   def xml(xmlOptions: XmlOptions): String = js.native
 }
-

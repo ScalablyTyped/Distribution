@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.ContextMenu.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.ContextMenu")
 @js.native
@@ -15,4 +15,3 @@ class ContextMenu[ExtraData] ()
   extends typings.amapJsApi.AMap.ContextMenu[ExtraData] {
   def this(options: Options) = this()
 }
-

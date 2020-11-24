@@ -4,15 +4,15 @@
 Typings are for version 3.3.1
 
 ## Library description:
-[![CircleCI](https://circleci.com/gh/manuelbieh/geolib/tree/master.svg?style=svg)](https://circleci.com/gh/manuelbieh/geolib/tree/master) ![](https://badgen.net/bundlephobia/minzip/geolib) ![](https://badgen.net/npm/dm/geolib) ![](https://badgen.net/githu
+Library to provide basic geospatial operations like distance calculation, conversion of decimal coordinates to sexagesimal and vice versa, etc. This library is currently **2D**, meaning that altitude/elevation is not yet supported by any of its functions!
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | geolib |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 130 |
-| # downloads        | 3639677 |
+| # releases         | 14 |
+| # dependents       | 137 |
+| # downloads        | 4489039 |
 | # stars            | 58 |
 
 ## Links

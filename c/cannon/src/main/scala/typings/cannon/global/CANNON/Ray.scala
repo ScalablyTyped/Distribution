@@ -2,7 +2,7 @@ package typings.cannon.global.CANNON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CANNON.Ray")
 @js.native
@@ -12,4 +12,3 @@ class Ray ()
   def this(from: js.UndefOr[scala.Nothing], to: typings.cannon.CANNON.Vec3) = this()
   def this(from: typings.cannon.CANNON.Vec3, to: typings.cannon.CANNON.Vec3) = this()
 }
-

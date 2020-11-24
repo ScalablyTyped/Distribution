@@ -12,7 +12,7 @@ A pure Javascript reverse CSS selector engine which calculates a DOM element's u
 | Keywords           | Simmer, css, css selector, sizzle |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 67901 |
+| # downloads        | 221262 |
 | # stars            | 0 |
 
 ## Links

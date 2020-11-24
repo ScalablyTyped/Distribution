@@ -2,10 +2,11 @@ package typings.uniApp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CanvasGradient extends js.Object {
+  
   /**
     * 创建一个颜色的渐变点
     */
@@ -14,4 +15,3 @@ trait CanvasGradient extends js.Object {
   def addColorStop(stop: Double): Unit = js.native
   def addColorStop(stop: Double, color: String): Unit = js.native
 }
-

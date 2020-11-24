@@ -2,17 +2,17 @@ package typings.officeJs.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CellPaddingLocation extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.CellPaddingLocation")
 @js.native
 object CellPaddingLocation extends js.Object {
+  
   @js.native
   sealed trait bottom extends CellPaddingLocation
   
@@ -24,6 +24,4 @@ object CellPaddingLocation extends js.Object {
   
   @js.native
   sealed trait top extends CellPaddingLocation
-  
 }
-

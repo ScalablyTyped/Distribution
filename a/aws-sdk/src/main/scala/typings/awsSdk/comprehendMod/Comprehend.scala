@@ -1,17 +1,16 @@
 package typings.awsSdk.comprehendMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Comprehend extends Service {
-  @JSName("config")
-  var config_Comprehend: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Determines the dominant language of the input text for a batch of documents. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
     */
@@ -25,6 +24,7 @@ trait Comprehend extends Service {
     params: BatchDetectDominantLanguageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectDominantLanguageResponse, Unit]
   ): Request[BatchDetectDominantLanguageResponse, AWSError] = js.native
+  
   /**
     * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
     */
@@ -38,6 +38,7 @@ trait Comprehend extends Service {
     params: BatchDetectEntitiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectEntitiesResponse, Unit]
   ): Request[BatchDetectEntitiesResponse, AWSError] = js.native
+  
   /**
     * Detects the key noun phrases found in a batch of documents.
     */
@@ -51,6 +52,7 @@ trait Comprehend extends Service {
     params: BatchDetectKeyPhrasesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectKeyPhrasesResponse, Unit]
   ): Request[BatchDetectKeyPhrasesResponse, AWSError] = js.native
+  
   /**
     * Inspects a batch of documents and returns an inference of the prevailing sentiment, POSITIVE, NEUTRAL, MIXED, or NEGATIVE, in each one.
     */
@@ -64,6 +66,7 @@ trait Comprehend extends Service {
     params: BatchDetectSentimentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectSentimentResponse, Unit]
   ): Request[BatchDetectSentimentResponse, AWSError] = js.native
+  
   /**
     * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
     */
@@ -77,6 +80,7 @@ trait Comprehend extends Service {
     params: BatchDetectSyntaxRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectSyntaxResponse, Unit]
   ): Request[BatchDetectSyntaxResponse, AWSError] = js.native
+  
   /**
     * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint.
     */
@@ -90,6 +94,10 @@ trait Comprehend extends Service {
     params: ClassifyDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClassifyDocumentResponse, Unit]
   ): Request[ClassifyDocumentResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Comprehend: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
     */
@@ -103,6 +111,7 @@ trait Comprehend extends Service {
     params: CreateDocumentClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentClassifierResponse, Unit]
   ): Request[CreateDocumentClassifierResponse, AWSError] = js.native
+  
   /**
     * Creates a model-specific endpoint for synchronous inference for a previously trained custom model 
     */
@@ -116,6 +125,7 @@ trait Comprehend extends Service {
     params: CreateEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointResponse, Unit]
   ): Request[CreateEndpointResponse, AWSError] = js.native
+  
   /**
     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
     */
@@ -129,6 +139,7 @@ trait Comprehend extends Service {
     params: CreateEntityRecognizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEntityRecognizerResponse, Unit]
   ): Request[CreateEntityRecognizerResponse, AWSError] = js.native
+  
   /**
     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
     */
@@ -142,6 +153,7 @@ trait Comprehend extends Service {
     params: DeleteDocumentClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDocumentClassifierResponse, Unit]
   ): Request[DeleteDocumentClassifierResponse, AWSError] = js.native
+  
   /**
     * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted.
     */
@@ -155,6 +167,7 @@ trait Comprehend extends Service {
     params: DeleteEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEndpointResponse, Unit]
   ): Request[DeleteEndpointResponse, AWSError] = js.native
+  
   /**
     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
     */
@@ -168,6 +181,7 @@ trait Comprehend extends Service {
     params: DeleteEntityRecognizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEntityRecognizerResponse, Unit]
   ): Request[DeleteEntityRecognizerResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
     */
@@ -183,6 +197,7 @@ trait Comprehend extends Service {
     params: DescribeDocumentClassificationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDocumentClassificationJobResponse, Unit]
   ): Request[DescribeDocumentClassificationJobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a document classifier.
     */
@@ -196,6 +211,7 @@ trait Comprehend extends Service {
     params: DescribeDocumentClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDocumentClassifierResponse, Unit]
   ): Request[DescribeDocumentClassifierResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
     */
@@ -211,6 +227,7 @@ trait Comprehend extends Service {
     params: DescribeDominantLanguageDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDominantLanguageDetectionJobResponse, Unit]
   ): Request[DescribeDominantLanguageDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint.
     */
@@ -224,6 +241,7 @@ trait Comprehend extends Service {
     params: DescribeEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointResponse, Unit]
   ): Request[DescribeEndpointResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
     */
@@ -237,6 +255,7 @@ trait Comprehend extends Service {
     params: DescribeEntitiesDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntitiesDetectionJobResponse, Unit]
   ): Request[DescribeEntitiesDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
     */
@@ -250,6 +269,7 @@ trait Comprehend extends Service {
     params: DescribeEntityRecognizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntityRecognizerResponse, Unit]
   ): Request[DescribeEntityRecognizerResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
     */
@@ -265,6 +285,23 @@ trait Comprehend extends Service {
     params: DescribeKeyPhrasesDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPhrasesDetectionJobResponse, Unit]
   ): Request[DescribeKeyPhrasesDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Gets the properties associated with a PII entities detection job. For example, you can use this operation to get the job status.
+    */
+  def describePiiEntitiesDetectionJob(): Request[DescribePiiEntitiesDetectionJobResponse, AWSError] = js.native
+  def describePiiEntitiesDetectionJob(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePiiEntitiesDetectionJobResponse, Unit]
+  ): Request[DescribePiiEntitiesDetectionJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with a PII entities detection job. For example, you can use this operation to get the job status.
+    */
+  def describePiiEntitiesDetectionJob(params: DescribePiiEntitiesDetectionJobRequest): Request[DescribePiiEntitiesDetectionJobResponse, AWSError] = js.native
+  def describePiiEntitiesDetectionJob(
+    params: DescribePiiEntitiesDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePiiEntitiesDetectionJobResponse, Unit]
+  ): Request[DescribePiiEntitiesDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
     */
@@ -278,6 +315,7 @@ trait Comprehend extends Service {
     params: DescribeSentimentDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSentimentDetectionJobResponse, Unit]
   ): Request[DescribeSentimentDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
     */
@@ -291,6 +329,7 @@ trait Comprehend extends Service {
     params: DescribeTopicsDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicsDetectionJobResponse, Unit]
   ): Request[DescribeTopicsDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Determines the dominant language of the input text. For a list of languages that Amazon Comprehend can detect, see Amazon Comprehend Supported Languages. 
     */
@@ -304,6 +343,7 @@ trait Comprehend extends Service {
     params: DetectDominantLanguageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectDominantLanguageResponse, Unit]
   ): Request[DetectDominantLanguageResponse, AWSError] = js.native
+  
   /**
     * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
     */
@@ -317,6 +357,7 @@ trait Comprehend extends Service {
     params: DetectEntitiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesResponse, Unit]
   ): Request[DetectEntitiesResponse, AWSError] = js.native
+  
   /**
     * Detects the key noun phrases found in the text. 
     */
@@ -330,6 +371,21 @@ trait Comprehend extends Service {
     params: DetectKeyPhrasesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectKeyPhrasesResponse, Unit]
   ): Request[DetectKeyPhrasesResponse, AWSError] = js.native
+  
+  /**
+    * Inspects the input text for entities that contain personally identifiable information (PII) and returns information about them.
+    */
+  def detectPiiEntities(): Request[DetectPiiEntitiesResponse, AWSError] = js.native
+  def detectPiiEntities(callback: js.Function2[/* err */ AWSError, /* data */ DetectPiiEntitiesResponse, Unit]): Request[DetectPiiEntitiesResponse, AWSError] = js.native
+  /**
+    * Inspects the input text for entities that contain personally identifiable information (PII) and returns information about them.
+    */
+  def detectPiiEntities(params: DetectPiiEntitiesRequest): Request[DetectPiiEntitiesResponse, AWSError] = js.native
+  def detectPiiEntities(
+    params: DetectPiiEntitiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DetectPiiEntitiesResponse, Unit]
+  ): Request[DetectPiiEntitiesResponse, AWSError] = js.native
+  
   /**
     * Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE). 
     */
@@ -343,6 +399,7 @@ trait Comprehend extends Service {
     params: DetectSentimentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectSentimentResponse, Unit]
   ): Request[DetectSentimentResponse, AWSError] = js.native
+  
   /**
     * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
     */
@@ -356,6 +413,7 @@ trait Comprehend extends Service {
     params: DetectSyntaxRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectSyntaxResponse, Unit]
   ): Request[DetectSyntaxResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the documentation classification jobs that you have submitted.
     */
@@ -371,6 +429,7 @@ trait Comprehend extends Service {
     params: ListDocumentClassificationJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDocumentClassificationJobsResponse, Unit]
   ): Request[ListDocumentClassificationJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the document classifiers that you have created.
     */
@@ -384,6 +443,7 @@ trait Comprehend extends Service {
     params: ListDocumentClassifiersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDocumentClassifiersResponse, Unit]
   ): Request[ListDocumentClassifiersResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the dominant language detection jobs that you have submitted.
     */
@@ -399,6 +459,7 @@ trait Comprehend extends Service {
     params: ListDominantLanguageDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDominantLanguageDetectionJobsResponse, Unit]
   ): Request[ListDominantLanguageDetectionJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of all existing endpoints that you've created.
     */
@@ -412,6 +473,7 @@ trait Comprehend extends Service {
     params: ListEndpointsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEndpointsResponse, Unit]
   ): Request[ListEndpointsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the entity detection jobs that you have submitted.
     */
@@ -425,6 +487,7 @@ trait Comprehend extends Service {
     params: ListEntitiesDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEntitiesDetectionJobsResponse, Unit]
   ): Request[ListEntitiesDetectionJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
     */
@@ -438,6 +501,7 @@ trait Comprehend extends Service {
     params: ListEntityRecognizersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEntityRecognizersResponse, Unit]
   ): Request[ListEntityRecognizersResponse, AWSError] = js.native
+  
   /**
     * Get a list of key phrase detection jobs that you have submitted.
     */
@@ -451,6 +515,21 @@ trait Comprehend extends Service {
     params: ListKeyPhrasesDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListKeyPhrasesDetectionJobsResponse, Unit]
   ): Request[ListKeyPhrasesDetectionJobsResponse, AWSError] = js.native
+  
+  /**
+    * Gets a list of the PII entity detection jobs that you have submitted.
+    */
+  def listPiiEntitiesDetectionJobs(): Request[ListPiiEntitiesDetectionJobsResponse, AWSError] = js.native
+  def listPiiEntitiesDetectionJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListPiiEntitiesDetectionJobsResponse, Unit]): Request[ListPiiEntitiesDetectionJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of the PII entity detection jobs that you have submitted.
+    */
+  def listPiiEntitiesDetectionJobs(params: ListPiiEntitiesDetectionJobsRequest): Request[ListPiiEntitiesDetectionJobsResponse, AWSError] = js.native
+  def listPiiEntitiesDetectionJobs(
+    params: ListPiiEntitiesDetectionJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPiiEntitiesDetectionJobsResponse, Unit]
+  ): Request[ListPiiEntitiesDetectionJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of sentiment detection jobs that you have submitted.
     */
@@ -464,6 +543,7 @@ trait Comprehend extends Service {
     params: ListSentimentDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSentimentDetectionJobsResponse, Unit]
   ): Request[ListSentimentDetectionJobsResponse, AWSError] = js.native
+  
   /**
     * Lists all tags associated with a given Amazon Comprehend resource. 
     */
@@ -477,6 +557,7 @@ trait Comprehend extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the topic detection jobs that you have submitted.
     */
@@ -490,6 +571,7 @@ trait Comprehend extends Service {
     params: ListTopicsDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTopicsDetectionJobsResponse, Unit]
   ): Request[ListTopicsDetectionJobsResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
     */
@@ -505,6 +587,7 @@ trait Comprehend extends Service {
     params: StartDocumentClassificationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartDocumentClassificationJobResponse, Unit]
   ): Request[StartDocumentClassificationJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
     */
@@ -520,6 +603,7 @@ trait Comprehend extends Service {
     params: StartDominantLanguageDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartDominantLanguageDetectionJobResponse, Unit]
   ): Request[StartDominantLanguageDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
     */
@@ -533,6 +617,7 @@ trait Comprehend extends Service {
     params: StartEntitiesDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartEntitiesDetectionJobResponse, Unit]
   ): Request[StartEntitiesDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
     */
@@ -546,6 +631,21 @@ trait Comprehend extends Service {
     params: StartKeyPhrasesDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartKeyPhrasesDetectionJobResponse, Unit]
   ): Request[StartKeyPhrasesDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Starts an asynchronous PII entity detection job for a collection of documents.
+    */
+  def startPiiEntitiesDetectionJob(): Request[StartPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  def startPiiEntitiesDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ StartPiiEntitiesDetectionJobResponse, Unit]): Request[StartPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  /**
+    * Starts an asynchronous PII entity detection job for a collection of documents.
+    */
+  def startPiiEntitiesDetectionJob(params: StartPiiEntitiesDetectionJobRequest): Request[StartPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  def startPiiEntitiesDetectionJob(
+    params: StartPiiEntitiesDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartPiiEntitiesDetectionJobResponse, Unit]
+  ): Request[StartPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
     */
@@ -559,6 +659,7 @@ trait Comprehend extends Service {
     params: StartSentimentDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartSentimentDetectionJobResponse, Unit]
   ): Request[StartSentimentDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
     */
@@ -572,6 +673,7 @@ trait Comprehend extends Service {
     params: StartTopicsDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartTopicsDetectionJobResponse, Unit]
   ): Request[StartTopicsDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Stops a dominant language detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
@@ -587,6 +689,7 @@ trait Comprehend extends Service {
     params: StopDominantLanguageDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopDominantLanguageDetectionJobResponse, Unit]
   ): Request[StopDominantLanguageDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Stops an entities detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
@@ -600,6 +703,7 @@ trait Comprehend extends Service {
     params: StopEntitiesDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopEntitiesDetectionJobResponse, Unit]
   ): Request[StopEntitiesDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
@@ -613,6 +717,21 @@ trait Comprehend extends Service {
     params: StopKeyPhrasesDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopKeyPhrasesDetectionJobResponse, Unit]
   ): Request[StopKeyPhrasesDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Stops a PII entities detection job in progress.
+    */
+  def stopPiiEntitiesDetectionJob(): Request[StopPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  def stopPiiEntitiesDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ StopPiiEntitiesDetectionJobResponse, Unit]): Request[StopPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  /**
+    * Stops a PII entities detection job in progress.
+    */
+  def stopPiiEntitiesDetectionJob(params: StopPiiEntitiesDetectionJobRequest): Request[StopPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  def stopPiiEntitiesDetectionJob(
+    params: StopPiiEntitiesDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopPiiEntitiesDetectionJobResponse, Unit]
+  ): Request[StopPiiEntitiesDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
@@ -626,6 +745,7 @@ trait Comprehend extends Service {
     params: StopSentimentDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopSentimentDetectionJobResponse, Unit]
   ): Request[StopSentimentDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
     */
@@ -641,6 +761,7 @@ trait Comprehend extends Service {
     params: StopTrainingDocumentClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopTrainingDocumentClassifierResponse, Unit]
   ): Request[StopTrainingDocumentClassifierResponse, AWSError] = js.native
+  
   /**
     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
     */
@@ -654,6 +775,7 @@ trait Comprehend extends Service {
     params: StopTrainingEntityRecognizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopTrainingEntityRecognizerResponse, Unit]
   ): Request[StopTrainingEntityRecognizerResponse, AWSError] = js.native
+  
   /**
     * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
     */
@@ -667,6 +789,7 @@ trait Comprehend extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes a specific tag associated with an Amazon Comprehend resource. 
     */
@@ -680,6 +803,7 @@ trait Comprehend extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates information about the specified endpoint.
     */
@@ -694,4 +818,3 @@ trait Comprehend extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]
   ): Request[UpdateEndpointResponse, AWSError] = js.native
 }
-

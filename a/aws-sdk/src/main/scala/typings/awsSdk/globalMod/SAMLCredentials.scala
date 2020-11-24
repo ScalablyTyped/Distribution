@@ -3,7 +3,7 @@ package typings.awsSdk.globalMod
 import typings.awsSdk.samlCredentialsMod.SAMLCredentialsParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/global", "SAMLCredentials")
 @js.native
@@ -15,4 +15,3 @@ class SAMLCredentials protected ()
   		 */
   def this(params: SAMLCredentialsParams) = this()
 }
-

@@ -10,9 +10,9 @@ Check if a directory is empty.
 | ------------------ | :-------------: |
 | Full name          | empty-dir |
 | Keywords           | empty, is-empty, directory, folder, check |
-| # releases         | 3 |
-| # dependents       | 161 |
-| # downloads        | 2025268 |
+| # releases         | 2 |
+| # dependents       | 171 |
+| # downloads        | 2510851 |
 | # stars            | 2 |
 
 ## Links

@@ -2,69 +2,19 @@ package typings.oracledb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a pool of connections to the database.
   */
 @js.native
 trait Pool extends js.Object {
-  /**
-    * The number of currently active connections in the connection pool i.e. the number of connections currently “checked out” using getConnection().
-    */
-  val connectionsInUse: Double = js.native
-  /**
-    * The number of currently open connections in the underlying connection pool.
-    */
-  val connectionsOpen: Double = js.native
-  /**
-    * The alias of this pool in the connection pool cache. An alias cannot be changed once the pool has been created.
-    */
-  val poolAlias: js.UndefOr[String] = js.native
-  /**
-    * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
-    */
-  val poolIncrement: Double = js.native
-  /**
-    * The maximum number of connections that can be open in the connection pool.
-    */
-  val poolMax: Double = js.native
-  /**
-    * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
-    * 
-    * @since 4.1
-    */
-  val poolMaxPerShard: Double = js.native
-  /**
-    * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
-    */
-  val poolMin: Double = js.native
-  /**
-    * The maximum number of seconds that a connection can remain idle in a connection pool (not “checked out” to the application by getConnection())
-    * before node-oracledb pings the database prior to returning that connection to the application.
-    */
-  val poolPingInterval: Double = js.native
-  /**
-    * The time (in seconds) after which the pool terminates idle connections (unused in the pool).
-    * The number of connections does not drop below poolMin.
-    */
-  val poolTimeout: Double = js.native
-  /**
-    * The time (in milliseconds) that a connection request should wait in the queue before the request is terminated.
-    */
-  val queueTimeout: Double = js.native
-  /**
-    * One of the POOL_STATUS_* constants indicating whether the pool is open, being drained of in-use connections, or has been closed.
-    */
-  val status: Double = js.native
-  /**
-    * The number of statements to be cached in the statement cache of each connection.
-    */
-  val stmtCacheSize: Double = js.native
+  
   /**
     * If _enableStats is true, this method can be used to output statistics to the console.
     */
   def _logStats(): Unit = js.native
+  
   /**
     * This call closes connections in the pool and terminates the connection pool.
     *
@@ -97,6 +47,17 @@ trait Pool extends js.Object {
   def close(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   def close(drainTime: Double): js.Promise[Unit] = js.native
   def close(drainTime: Double, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
+  /**
+    * The number of currently active connections in the connection pool i.e. the number of connections currently “checked out” using getConnection().
+    */
+  val connectionsInUse: Double = js.native
+  
+  /**
+    * The number of currently open connections in the underlying connection pool.
+    */
+  val connectionsOpen: Double = js.native
+  
   /**
     * This method obtains a connection from the connection pool.
     *
@@ -139,6 +100,61 @@ trait Pool extends js.Object {
     poolAttributes: GetPooledConnectionOptions,
     callback: js.Function2[/* error */ DBError, /* connection */ Connection, Unit]
   ): Unit = js.native
+  
+  /**
+    * The alias of this pool in the connection pool cache. An alias cannot be changed once the pool has been created.
+    */
+  val poolAlias: js.UndefOr[String] = js.native
+  
+  /**
+    * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
+    */
+  val poolIncrement: Double = js.native
+  
+  /**
+    * The maximum number of connections that can be open in the connection pool.
+    */
+  val poolMax: Double = js.native
+  
+  /**
+    * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
+    * 
+    * @since 4.1
+    */
+  val poolMaxPerShard: Double = js.native
+  
+  /**
+    * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
+    */
+  val poolMin: Double = js.native
+  
+  /**
+    * The maximum number of seconds that a connection can remain idle in a connection pool (not “checked out” to the application by getConnection())
+    * before node-oracledb pings the database prior to returning that connection to the application.
+    */
+  val poolPingInterval: Double = js.native
+  
+  /**
+    * The time (in seconds) after which the pool terminates idle connections (unused in the pool).
+    * The number of connections does not drop below poolMin.
+    */
+  val poolTimeout: Double = js.native
+  
+  /**
+    * The time (in milliseconds) that a connection request should wait in the queue before the request is terminated.
+    */
+  val queueTimeout: Double = js.native
+  
+  /**
+    * One of the POOL_STATUS_* constants indicating whether the pool is open, being drained of in-use connections, or has been closed.
+    */
+  val status: Double = js.native
+  
+  /**
+    * The number of statements to be cached in the statement cache of each connection.
+    */
+  val stmtCacheSize: Double = js.native
+  
   /**
     * This call closes connections in the pool and terminates the connection pool.
     *
@@ -171,4 +187,3 @@ trait Pool extends js.Object {
   def terminate(drainTime: Double): js.Promise[Unit] = js.native
   def terminate(drainTime: Double, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
 }
-

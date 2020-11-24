@@ -11,8 +11,8 @@ A cache proxy plugin for Gulp
 | Full name          | gulp-cache |
 | Keywords           | gulpplugin, gulp, cache |
 | # releases         | 5 |
-| # dependents       | 105 |
-| # downloads        | 1222114 |
+| # dependents       | 109 |
+| # downloads        | 1298401 |
 | # stars            | 36 |
 
 ## Links

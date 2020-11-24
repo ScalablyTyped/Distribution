@@ -3,16 +3,17 @@ package typings.dompurify.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _HookEvent extends js.Object
-
 object _HookEvent {
+  
   @scala.inline
   def SanitizeElementHookEvent(allowedTags: StringDictionary[Boolean], tagName: String): _HookEvent = {
     val __obj = js.Dynamic.literal(allowedTags = allowedTags.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_HookEvent]
   }
+  
   @scala.inline
   def SanitizeAttributeHookEvent(
     allowedAttributes: StringDictionary[Boolean],
@@ -24,4 +25,3 @@ object _HookEvent {
     __obj.asInstanceOf[_HookEvent]
   }
 }
-

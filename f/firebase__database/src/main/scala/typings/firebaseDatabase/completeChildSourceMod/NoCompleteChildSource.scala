@@ -5,11 +5,12 @@ import typings.firebaseDatabase.nodeMod.NamedNode
 import typings.firebaseDatabase.nodeMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/view/CompleteChildSource", "NoCompleteChildSource_")
 @js.native
 class NoCompleteChildSource () extends CompleteChildSource {
+  
   /**
     * @inheritDoc
     */
@@ -20,9 +21,9 @@ class NoCompleteChildSource () extends CompleteChildSource {
   def getChildAfterChild(index: Index): NamedNode | Null = js.native
   def getChildAfterChild(index: Index, child: js.UndefOr[scala.Nothing], reverse: Boolean): NamedNode | Null = js.native
   def getChildAfterChild(index: Index, child: NamedNode): NamedNode | Null = js.native
+  
   /**
     * @inheritDoc
     */
   def getCompleteChild(): Node | Null = js.native
 }
-

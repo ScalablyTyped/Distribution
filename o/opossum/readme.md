@@ -10,9 +10,9 @@ A fail-fast circuit breaker for promises and callbacks
 | ------------------ | :-------------: |
 | Full name          | opossum |
 | Keywords           | circuit breaker, circuit-breaker, fail-fast, circuit, breaker, hystrix, rate-limiting |
-| # releases         | 23 |
-| # dependents       | 8 |
-| # downloads        | 678952 |
+| # releases         | 22 |
+| # dependents       | 12 |
+| # downloads        | 1567310 |
 | # stars            | 3 |
 
 ## Links

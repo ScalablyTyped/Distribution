@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.buttonMod.ButtonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Button")
+@JSImport("reactstrap/lib", "Button")
 @js.native
-class Button[T] ()
+class Button ()
   extends Component[ButtonProps, js.Object, js.Any]
-

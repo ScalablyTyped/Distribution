@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postFeaturedImageCheckMod.PostFeaturedImageCheck.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor", "PostFeaturedImageCheck")
 @js.native
 object PostFeaturedImageCheck extends TopLevel[ComponentType[Props]]
-

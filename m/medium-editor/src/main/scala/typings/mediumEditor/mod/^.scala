@@ -6,7 +6,7 @@ import typings.mediumEditor.MediumEditor.MediumEditor
 import typings.mediumEditor.MediumEditor.elementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("medium-editor", JSImport.Namespace)
 @js.native
@@ -15,8 +15,6 @@ class ^ protected () extends MediumEditor {
   def this(elements: elementType) = this()
   def this(elements: elementType, options: CoreOptions) = this()
 }
-
 @JSImport("medium-editor", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[MediumEditor]
-

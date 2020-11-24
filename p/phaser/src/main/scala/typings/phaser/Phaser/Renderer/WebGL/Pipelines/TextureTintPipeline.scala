@@ -13,7 +13,7 @@ import typings.std.Uint32Array
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TextureTintPipeline implements the rendering infrastructure
@@ -30,22 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextureTintPipeline extends WebGLPipeline {
-  /**
-    * Collection of batch information
-    */
-  var batches: js.Array[_] = js.native
-  /**
-    * Size of the batch.
-    */
-  var maxQuads: integer = js.native
-  /**
-    * Float32 view of the array buffer containing the pipeline's vertices.
-    */
-  var vertexViewF32: Float32Array = js.native
-  /**
-    * Uint32 view of the array buffer containing the pipeline's vertices.
-    */
-  var vertexViewU32: Uint32Array = js.native
+  
   /**
     * Adds the given path to the vertex batch for rendering.
     * 
@@ -58,6 +43,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     * @param parentMatrix The parent transform.
     */
   def batchFillPath(path: js.Array[_], currentMatrix: TransformMatrix, parentMatrix: TransformMatrix): Unit = js.native
+  
   /**
     * Pushes a filled rectangle into the vertex batch.
     * Rectangle factors in the given transform matrices before adding to the batch.
@@ -76,6 +62,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     currentMatrix: TransformMatrix,
     parentMatrix: TransformMatrix
   ): Unit = js.native
+  
   /**
     * Pushes a filled triangle into the vertex batch.
     * Triangle factors in the given transform matrices before adding to the batch.
@@ -98,6 +85,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     currentMatrix: TransformMatrix,
     parentMatrix: TransformMatrix
   ): Unit = js.native
+  
   /**
     * Creates a quad and adds it to the vertex batch based on the given line values.
     * @param ax X coordinate to the start of the line
@@ -117,6 +105,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     bLineWidth: Double,
     currentMatrix: Float32Array
   ): Unit = js.native
+  
   def batchQuad(
     x0: Double,
     y0: Double,
@@ -315,6 +304,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     texture: WebGLTexture,
     unit: integer
   ): Boolean = js.native
+  
   /**
     * Takes a Sprite Game Object, or any object that extends it, and adds it to the batch.
     * @param sprite The texture based Game Object to add to the batch.
@@ -325,6 +315,7 @@ trait TextureTintPipeline extends WebGLPipeline {
   def batchSprite(sprite: Image, camera: Camera, parentTransformMatrix: TransformMatrix): Unit = js.native
   def batchSprite(sprite: Sprite, camera: Camera): Unit = js.native
   def batchSprite(sprite: Sprite, camera: Camera, parentTransformMatrix: TransformMatrix): Unit = js.native
+  
   /**
     * Adds the given path to the vertex batch for rendering.
     * 
@@ -345,6 +336,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     currentMatrix: TransformMatrix,
     parentMatrix: TransformMatrix
   ): Unit = js.native
+  
   /**
     * Pushes a stroked triangle into the vertex batch.
     * Triangle factors in the given transform matrices before adding to the batch.
@@ -370,6 +362,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     currentMatrix: TransformMatrix,
     parentMatrix: TransformMatrix
   ): Unit = js.native
+  
   /**
     * Generic function for batching a textured quad using argument values instead of a Game Object.
     * @param gameObject Source GameObject.
@@ -437,6 +430,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     parentTransformMatrix: TransformMatrix,
     skipFlip: js.UndefOr[Boolean]
   ): Unit = js.native
+  
   /**
     * Adds a Texture Frame into the batch for rendering.
     * @param frame The Texture Frame to be rendered.
@@ -457,6 +451,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     transformMatrix: TransformMatrix,
     parentTransformMatrix: TransformMatrix
   ): Unit = js.native
+  
   def batchTri(
     x1: Double,
     y1: Double,
@@ -626,6 +621,12 @@ trait TextureTintPipeline extends WebGLPipeline {
     texture: WebGLTexture,
     unit: integer
   ): Boolean = js.native
+  
+  /**
+    * Collection of batch information
+    */
+  var batches: js.Array[_] = js.native
+  
   /**
     * Pushes a filled rectangle into the vertex batch.
     * Rectangle has no transform values and isn't transformed into the local space.
@@ -638,6 +639,12 @@ trait TextureTintPipeline extends WebGLPipeline {
     * @param alpha Alpha value of the rectangle to draw.
     */
   def drawFillRect(x: Double, y: Double, width: Double, height: Double, color: Double, alpha: Double): Unit = js.native
+  
+  /**
+    * Size of the batch.
+    */
+  var maxQuads: integer = js.native
+  
   /**
     * Creates a new batch object and pushes it to a batch array.
     * The batch object contains information relevant to the current 
@@ -647,12 +654,14 @@ trait TextureTintPipeline extends WebGLPipeline {
     * @param unit Texture unit to which the texture needs to be bound.
     */
   def pushBatch(texture: WebGLTexture, unit: integer): Unit = js.native
+  
   /**
     * Checks if the current batch has the same texture and texture unit, or if we need to create a new batch.
     * @param texture WebGLTexture that will be assigned to the current batch. If not given uses blankTexture.
     * @param unit Texture unit to which the texture needs to be bound.
     */
   def requireTextureBatch(texture: WebGLTexture, unit: integer): Boolean = js.native
+  
   /**
     * Assigns a texture to the current batch. If a different texture is already set it creates a new batch object.
     * @param texture WebGLTexture that will be assigned to the current batch. If not given uses blankTexture.
@@ -662,5 +671,14 @@ trait TextureTintPipeline extends WebGLPipeline {
   def setTexture2D(texture: js.UndefOr[scala.Nothing], unit: integer): TextureTintPipeline = js.native
   def setTexture2D(texture: WebGLTexture): TextureTintPipeline = js.native
   def setTexture2D(texture: WebGLTexture, unit: integer): TextureTintPipeline = js.native
+  
+  /**
+    * Float32 view of the array buffer containing the pipeline's vertices.
+    */
+  var vertexViewF32: Float32Array = js.native
+  
+  /**
+    * Uint32 view of the array buffer containing the pipeline's vertices.
+    */
+  var vertexViewU32: Uint32Array = js.native
 }
-

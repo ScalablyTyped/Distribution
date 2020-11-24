@@ -2,7 +2,7 @@ package typings.nodemailer.smtpPoolMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a SMTP pool transport object for Nodemailer
@@ -13,4 +13,3 @@ class ^ () extends SMTPPool {
   def this(options: String) = this()
   def this(options: Options) = this()
 }
-

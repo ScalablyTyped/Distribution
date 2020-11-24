@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents one single Leaderboard that belongs to a Facebook Instant Game.
@@ -15,38 +15,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FacebookInstantGamesLeaderboard extends EventEmitter {
+  
   /**
     * The ID of the context that the leaderboard is associated with, or null if the leaderboard is not tied to a particular context.
     */
   var contextID: String = js.native
+  
   /**
     * The total number of player entries in the leaderboard.
     * This value defaults to zero. Populate it via the `getEntryCount()` method.
     */
   var entryCount: integer = js.native
-  /**
-    * The name of the leaderboard.
-    */
-  var name: String = js.native
-  /**
-    * The players score object.
-    * This value defaults to `null`. Populate it via the `getPlayerScore()` method.
-    */
-  var playerScore: LeaderboardScore = js.native
-  /**
-    * A reference to the Facebook Instant Games Plugin.
-    */
-  var plugin: FacebookInstantGamesPlugin = js.native
-  /**
-    * An Instant Game leaderboard instance.
-    */
-  var ref: js.Any = js.native
-  /**
-    * The scores in the Leaderboard from the currently requested range.
-    * This value defaults to an empty array. Populate it via the `getScores()` method.
-    * The contents of this array are reset each time `getScores()` is called.
-    */
-  var scores: js.Array[LeaderboardScore] = js.native
+  
   /**
     * Retrieves a set of leaderboard entries, based on the current player's connected players (including the current player), ordered by local rank within the set of connected players.
     * 
@@ -55,6 +35,7 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
     * When the call completes this Leaderboard will emit the `getconnectedscores` event along with an array of LeaderboardScore entries and the name of the Leaderboard.
     */
   def getConnectedScores(): this.type = js.native
+  
   /**
     * Fetches the total number of player entries in the leaderboard.
     * 
@@ -63,6 +44,7 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
     * When the call completes this Leaderboard will emit the `getentrycount` event along with the count and name of the Leaderboard.
     */
   def getEntryCount(): this.type = js.native
+  
   /**
     * Gets the players leaderboard entry and stores it in the `playerScore` property.
     * 
@@ -73,6 +55,7 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
     * If the player has not yet saved a score, the event will send `null` as the score value, and `playerScore` will be set to `null` as well.
     */
   def getPlayerScore(): this.type = js.native
+  
   /**
     * Retrieves a set of leaderboard entries, ordered by score ranking in the leaderboard.
     * 
@@ -86,6 +69,35 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
   def getScores(count: js.UndefOr[scala.Nothing], offset: integer): this.type = js.native
   def getScores(count: integer): this.type = js.native
   def getScores(count: integer, offset: integer): this.type = js.native
+  
+  /**
+    * The name of the leaderboard.
+    */
+  var name: String = js.native
+  
+  /**
+    * The players score object.
+    * This value defaults to `null`. Populate it via the `getPlayerScore()` method.
+    */
+  var playerScore: LeaderboardScore = js.native
+  
+  /**
+    * A reference to the Facebook Instant Games Plugin.
+    */
+  var plugin: FacebookInstantGamesPlugin = js.native
+  
+  /**
+    * An Instant Game leaderboard instance.
+    */
+  var ref: js.Any = js.native
+  
+  /**
+    * The scores in the Leaderboard from the currently requested range.
+    * This value defaults to an empty array. Populate it via the `getScores()` method.
+    * The contents of this array are reset each time `getScores()` is called.
+    */
+  var scores: js.Array[LeaderboardScore] = js.native
+  
   /**
     * Updates the player's score. If the player has an existing score, the old score will only be replaced if the new score is better than it.
     * NOTE: If the leaderboard is associated with a specific context, the game must be in that context to set a score for the player.
@@ -102,4 +114,3 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
   def setScore(score: integer, data: String): this.type = js.native
   def setScore(score: integer, data: js.Any): this.type = js.native
 }
-

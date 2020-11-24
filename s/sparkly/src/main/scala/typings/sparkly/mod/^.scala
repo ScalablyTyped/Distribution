@@ -3,11 +3,12 @@ package typings.sparkly.mod
 import typings.sparkly.sparklyStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sparkly", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Generate sparklines `▁▂▃▅▂▇`.
   @param numbers - Numbers to create the sparkline from.
@@ -27,4 +28,3 @@ object ^ extends js.Object {
   def apply(numbers: js.Array[Double | _empty]): String = js.native
   def apply(numbers: js.Array[Double | _empty], options: Options): String = js.native
 }
-

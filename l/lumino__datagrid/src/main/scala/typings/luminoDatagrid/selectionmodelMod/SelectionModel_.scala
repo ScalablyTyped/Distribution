@@ -11,7 +11,7 @@ import typings.luminoDatagrid.selectionmodelMod.SelectionModel.SelectionMode
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/selectionmodel", "SelectionModel")
 @js.native
@@ -22,49 +22,21 @@ abstract class SelectionModel_ protected () extends js.Object {
     * @param options - The options for initializing the model.
     */
   def this(options: IOptions) = this()
+  
   var _changed: js.Any = js.native
+  
   var _selectionMode: js.Any = js.native
+  
   /**
     * A signal emitted when the selection model has changed.
     */
   val changed: ISignal[this.type, Unit] = js.native
-  /**
-    * The column index of the cursor.
-    *
-    * This is `-1` if the selection model is empty.
-    */
-  val cursorColumn: Double = js.native
-  /**
-    * The row index of the cursor.
-    *
-    * This is `-1` if the selection model is empty.
-    */
-  val cursorRow: Double = js.native
-  /**
-    * The data model associated with the selection model.
-    */
-  val dataModel: DataModel = js.native
-  /**
-    * Whether the selection model is empty.
-    *
-    * #### Notes
-    * An empty selection model will yield an empty `selections` iterator.
-    */
-  val isEmpty: Boolean = js.native
-  /**
-    * Get the selection mode for the model.
-    */
-  /**
-    * Set the selection mode for the model.
-    *
-    * #### Notes
-    * This will clear the selection model.
-    */
-  var selectionMode: SelectionMode = js.native
+  
   /**
     * Clear all selections in the selection model.
     */
   def clear(): Unit = js.native
+  
   /**
     * Get the current selection in the selection model.
     *
@@ -74,6 +46,26 @@ abstract class SelectionModel_ protected () extends js.Object {
     * This is the selection which holds the cursor.
     */
   def currentSelection(): Selection | Null = js.native
+  
+  /**
+    * The column index of the cursor.
+    *
+    * This is `-1` if the selection model is empty.
+    */
+  val cursorColumn: Double = js.native
+  
+  /**
+    * The row index of the cursor.
+    *
+    * This is `-1` if the selection model is empty.
+    */
+  val cursorRow: Double = js.native
+  
+  /**
+    * The data model associated with the selection model.
+    */
+  val dataModel: DataModel = js.native
+  
   /**
     * Emit the `changed` signal for the selection model.
     *
@@ -82,6 +74,7 @@ abstract class SelectionModel_ protected () extends js.Object {
     * has changed so that attached data grids can update themselves.
     */
   /* protected */ def emitChanged(): Unit = js.native
+  
   /**
     * Test whether any selection intersects a cell.
     *
@@ -95,6 +88,7 @@ abstract class SelectionModel_ protected () extends js.Object {
     * This method may be reimplemented in a subclass.
     */
   def isCellSelected(row: Double, column: Double): Boolean = js.native
+  
   /**
     * Test whether any selection intersects a column.
     *
@@ -106,6 +100,15 @@ abstract class SelectionModel_ protected () extends js.Object {
     * This method may be reimplemented in a subclass.
     */
   def isColumnSelected(index: Double): Boolean = js.native
+  
+  /**
+    * Whether the selection model is empty.
+    *
+    * #### Notes
+    * An empty selection model will yield an empty `selections` iterator.
+    */
+  val isEmpty: Boolean = js.native
+  
   /**
     * Test whether any selection intersects a row.
     *
@@ -117,6 +120,7 @@ abstract class SelectionModel_ protected () extends js.Object {
     * This method may be reimplemented in a subclass.
     */
   def isRowSelected(index: Double): Boolean = js.native
+  
   /**
     * Move cursor down/up/left/right while making sure it remains
     * within the bounds of selected rectangles
@@ -124,6 +128,7 @@ abstract class SelectionModel_ protected () extends js.Object {
     * @param direction - The direction of the movement.
     */
   def moveCursorWithinSelections(direction: CursorMoveDirection): Unit = js.native
+  
   /**
     * A signal handler for the data model `changed` signal.
     *
@@ -136,12 +141,25 @@ abstract class SelectionModel_ protected () extends js.Object {
     * The default implementation of this method is a no-op.
     */
   /* protected */ def onDataModelChanged(sender: DataModel, args: ChangedArgs): Unit = js.native
+  
   /**
     * Select the specified cells.
     *
     * @param args - The arguments for the selection.
     */
   def select(args: SelectArgs): Unit = js.native
+  
+  /**
+    * Get the selection mode for the model.
+    */
+  /**
+    * Set the selection mode for the model.
+    *
+    * #### Notes
+    * This will clear the selection model.
+    */
+  var selectionMode: SelectionMode = js.native
+  
   /**
     * Get an iterator of the selections in the model.
     *
@@ -152,4 +170,3 @@ abstract class SelectionModel_ protected () extends js.Object {
     */
   def selections(): IIterator[Selection] = js.native
 }
-

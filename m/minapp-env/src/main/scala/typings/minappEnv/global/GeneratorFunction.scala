@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.minappEnv.GeneratorFunctionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GeneratorFunction")
 @js.native
@@ -16,8 +16,6 @@ class GeneratorFunction protected ()
     */
   def this(args: java.lang.String*) = this()
 }
-
 @JSGlobal("GeneratorFunction")
 @js.native
 object GeneratorFunction extends TopLevel[GeneratorFunctionConstructor]
-

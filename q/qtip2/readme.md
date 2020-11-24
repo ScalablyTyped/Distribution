@@ -12,7 +12,7 @@ Introducing... qTip2. The second generation of the advanced qTip plugin for the 
 | Keywords           | tooltip, tooltips, jquery, jquery-plugin, qtip, qtip2, simpletip, craig thompson, craig michael thompson, craigsworks, craga89 |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 518254 |
+| # downloads        | 535095 |
 | # stars            | 1 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.awsSdk.esMod.ClientConfiguration
 import typings.awsSdk.esMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "ES")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ES () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

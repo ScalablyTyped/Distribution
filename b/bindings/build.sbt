@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bindings"
-version := "1.3-dt-20200515Z-9e6ead"
+version := "1.3-dt-20200515Z-37256b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,10 +9,10 @@ A package that contains an array of every single file extension there is for tex
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | textextensions |
-| Keywords           | text, extensions, text extensions, text-extensions |
-| # releases         | 16 |
-| # dependents       | 12 |
-| # downloads        | 30809217 |
+| Keywords           | browser, deno, deno-edition, deno-entry, denoland, es5, export-default, extensions, module, node, text, text extensions, text-extensions, typed, types, typescript |
+| # releases         | 62 |
+| # dependents       | 17 |
+| # downloads        | 35470901 |
 | # stars            | 1 |
 
 ## Links

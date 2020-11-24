@@ -10,9 +10,9 @@ Standard Subresource Integrity library -- parses, serializes, generates, and ver
 | ------------------ | :-------------: |
 | Full name          | ssri |
 | Keywords           | w3c, web, security, integrity, checksum, hashing, subresource integrity, sri, sri hash, sri string, sri generator, html |
-| # releases         | 11 |
-| # dependents       | 105 |
-| # downloads        | 346490968 |
+| # releases         | 4 |
+| # dependents       | 146 |
+| # downloads        | 614006141 |
 | # stars            | 2 |
 
 ## Links

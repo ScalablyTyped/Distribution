@@ -10,9 +10,9 @@ A Relay inspired library for building React.js + Firebase applications.
 | ------------------ | :-------------: |
 | Full name          | re-base |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 55945 |
+| # releases         | 0 |
+| # dependents       | 4 |
+| # downloads        | 40698 |
 | # stars            | 22 |
 
 ## Links

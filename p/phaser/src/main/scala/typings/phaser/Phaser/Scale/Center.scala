@@ -2,17 +2,17 @@ package typings.phaser.Phaser.Scale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Center extends js.Object
-
 /**
   * Phaser Scale Manager constants for centering the game canvas.
   */
 @JSGlobal("Phaser.Scale.Center")
 @js.native
 object Center extends js.Object {
+  
   /**
     * The game canvas is centered both horizontally and vertically within the parent.
     * To do this, the parent has to have a bounds that can be calculated and not be empty.
@@ -49,6 +49,4 @@ object Center extends js.Object {
     */
   @js.native
   sealed trait NO_CENTER extends Center
-  
 }
-

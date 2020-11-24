@@ -97,13 +97,12 @@ import typings.std.AddEventListenerOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dom-helpers/cjs/addEventListener", JSImport.Namespace)
 @js.native
 object addEventListenerMod extends js.Object {
-  var onceSupported: Boolean = js.native
-  var optionsSupported: Boolean = js.native
+  
   @JSName("default")
   def default_abort(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort]): Unit = js.native
   @JSName("default")
@@ -1293,11 +1292,16 @@ object addEventListenerMod extends js.Object {
     handler: TaggedEventHandler[wheel],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  var onceSupported: Boolean = js.native
+  
+  var optionsSupported: Boolean = js.native
+  
   type EventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */] = js.ThisFunction1[
     /* this */ HTMLElement, 
     /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[K] */ /* event */ js.Any, 
     js.Any
   ]
+  
   type TaggedEventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */] = EventHandler[K] with Once[K]
 }
-

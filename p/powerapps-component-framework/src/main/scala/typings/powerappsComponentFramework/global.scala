@@ -2,13 +2,15 @@ package typings.powerappsComponentFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object ComponentFramework extends js.Object {
+    
     /**
       * Helper of Device API interface
       */
@@ -17,22 +19,22 @@ object global extends js.Object {
     
     @js.native
     object FactoryApi extends js.Object {
+      
       /**
         * Helper of Factory Pop API interface
         */
       @js.native
       object Popup extends js.Object
-      
     }
     
     @js.native
     object FormattingApi extends js.Object {
+      
       /**
         * Helper of Formatting API interface
         */
       @js.native
       object Types extends js.Object
-      
     }
     
     /**
@@ -62,8 +64,5 @@ object global extends js.Object {
       */
     @js.native
     object WebApi extends js.Object
-    
   }
-  
 }
-

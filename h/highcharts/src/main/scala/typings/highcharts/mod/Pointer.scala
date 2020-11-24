@@ -5,7 +5,7 @@ import typings.std.PointerEvent
 import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Pointer")
 @js.native
@@ -22,10 +22,12 @@ class Pointer protected () extends js.Object {
     *        and tooltip structures.
     */
   def this(chart: Chart_, options: Options) = this()
+  
   /**
     * Destroys the Pointer object and disconnects DOM events.
     */
   def destroy(): Unit = js.native
+  
   def findNearestKDPoint(series: js.Array[Series], shared: js.UndefOr[scala.Nothing], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Finds the closest point to a set of coordinates, using the k-d-tree
@@ -44,6 +46,7 @@ class Pointer protected () extends js.Object {
     * @return The point closest to given coordinates.
     */
   def findNearestKDPoint(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
+  
   /**
     * Return the cached chartPosition if it is available on the Pointer,
     * otherwise find it. Running offset is quite expensive, so it should be
@@ -52,6 +55,7 @@ class Pointer protected () extends js.Object {
     * @return The offset of the chart container within the page
     */
   def getChartPosition(): OffsetObject = js.native
+  
   /**
     * Get the click position in terms of axis values.
     *
@@ -59,6 +63,7 @@ class Pointer protected () extends js.Object {
     *        Pointer event, extended with `chartX` and `chartY` properties.
     */
   def getCoordinates(e: PointerEventObject): PointerAxisCoordinatesObject = js.native
+  
   /**
     * Utility to detect whether an element has, or has a parent with, a
     * specificclass name. Used on detection of tracker objects and on deciding
@@ -75,6 +80,7 @@ class Pointer protected () extends js.Object {
     */
   def inClass(element: HTMLDOMElement, className: String): js.UndefOr[Boolean] = js.native
   def inClass(element: SVGDOMElement, className: String): js.UndefOr[Boolean] = js.native
+  
   /**
     * Takes a browser event object and extends it with custom Highcharts
     * properties `chartX` and `chartY` in order to work on the internal
@@ -94,6 +100,7 @@ class Pointer protected () extends js.Object {
   def normalize(e: PointerEvent, chartPosition: OffsetObject): PointerEventObject = js.native
   def normalize(e: TouchEvent): PointerEventObject = js.native
   def normalize(e: TouchEvent, chartPosition: OffsetObject): PointerEventObject = js.native
+  
   /**
     * Reset the tracking by hiding the tooltip, the hover series state and the
     * hover point
@@ -107,4 +114,3 @@ class Pointer protected () extends js.Object {
   def reset(allowMove: Boolean): Unit = js.native
   def reset(allowMove: Boolean, delay: Double): Unit = js.native
 }
-

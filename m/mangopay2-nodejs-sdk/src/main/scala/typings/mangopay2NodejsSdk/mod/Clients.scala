@@ -8,66 +8,12 @@ import typings.mangopay2NodejsSdk.mod.wallet.ClientWalletData
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Clients")
 @js.native
 class Clients () extends js.Object {
-  /**
-    * Get a client wallet's transactions
-    * @param fundsType
-    * @param currency
-    * @param options
-    */
-  @JSName("getClientWalletTransactions")
-  var getClientWalletTransactions_Original: TwoArgsMethodOverload[ClientFundsType, CurrencyISO, js.Array[TransactionData]] = js.native
-  /**
-    * Get a client wallet
-    * @param fundsType
-    * @param currency
-    * @param options
-    */
-  @JSName("getClientWallet")
-  var getClientWallet_Original: TwoArgsMethodOverload[ClientFundsType, CurrencyISO, ClientWalletData] = js.native
-  /**
-    * Get client wallets by the type of funds
-    * @param fundsType
-    * @param options
-    */
-  @JSName("getClientWalletsByFundsType")
-  var getClientWalletsByFundsType_Original: MethodOverload[ClientFundsType, js.Array[ClientWalletData]] = js.native
-  /**
-    * Get all client wallets
-    * @param options
-    */
-  @JSName("getClientWallets")
-  var getClientWallets_Original: NoArgMethodOverload[js.Array[ClientWalletData]] = js.native
-  /**
-    * Get the client
-    */
-  @JSName("get")
-  var get_Original: NoArgMethodOverload[ClientData] = js.native
-  /**
-    * Update the client
-    * @param client
-    * @param options
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateClient, ClientData] = js.native
-  /**
-    * Upload client logo from file path
-    * @param filePath
-    * @param options
-    */
-  @JSName("uploadLogoFromFile")
-  var uploadLogoFromFile_Original: MethodOverload[String, ClientData] = js.native
-  /**
-    * Upload client logo from base64 image string
-    * @param base64Logo
-    * @param options
-    */
-  @JSName("uploadLogo")
-  var uploadLogo_Original: MethodOverload[String, ClientData] = js.native
+  
   /**
     * Get the client
     */
@@ -86,6 +32,7 @@ class Clients () extends js.Object {
     */
   def get(options: MethodOptionWithResponse): js.Promise[WithResponse[ClientData]] = js.native
   def get(options: MethodOptionWithoutResponse): js.Promise[ClientData] = js.native
+  
   /**
     * Get a client wallet
     * @param fundsType
@@ -124,6 +71,7 @@ class Clients () extends js.Object {
     */
   def getClientWallet(data: ClientFundsType, extra: CurrencyISO, options: MethodOptionWithResponse): js.Promise[WithResponse[ClientWalletData]] = js.native
   def getClientWallet(data: ClientFundsType, extra: CurrencyISO, options: MethodOptionWithoutResponse): js.Promise[ClientWalletData] = js.native
+  
   /**
     * Get a client wallet's transactions
     * @param fundsType
@@ -166,6 +114,24 @@ class Clients () extends js.Object {
   def getClientWalletTransactions(data: ClientFundsType, extra: CurrencyISO, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[TransactionData]]] = js.native
   def getClientWalletTransactions(data: ClientFundsType, extra: CurrencyISO, options: MethodOptionWithoutResponse): js.Promise[js.Array[TransactionData]] = js.native
   /**
+    * Get a client wallet's transactions
+    * @param fundsType
+    * @param currency
+    * @param options
+    */
+  @JSName("getClientWalletTransactions")
+  var getClientWalletTransactions_Original: TwoArgsMethodOverload[ClientFundsType, CurrencyISO, js.Array[TransactionData]] = js.native
+  
+  /**
+    * Get a client wallet
+    * @param fundsType
+    * @param currency
+    * @param options
+    */
+  @JSName("getClientWallet")
+  var getClientWallet_Original: TwoArgsMethodOverload[ClientFundsType, CurrencyISO, ClientWalletData] = js.native
+  
+  /**
     * Get all client wallets
     * @param options
     */
@@ -194,6 +160,7 @@ class Clients () extends js.Object {
     */
   def getClientWallets(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[ClientWalletData]]] = js.native
   def getClientWallets(options: MethodOptionWithoutResponse): js.Promise[js.Array[ClientWalletData]] = js.native
+  
   /**
     * Get client wallets by the type of funds
     * @param fundsType
@@ -229,6 +196,27 @@ class Clients () extends js.Object {
   def getClientWalletsByFundsType(data: ClientFundsType, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[ClientWalletData]]] = js.native
   def getClientWalletsByFundsType(data: ClientFundsType, options: MethodOptionWithoutResponse): js.Promise[js.Array[ClientWalletData]] = js.native
   /**
+    * Get client wallets by the type of funds
+    * @param fundsType
+    * @param options
+    */
+  @JSName("getClientWalletsByFundsType")
+  var getClientWalletsByFundsType_Original: MethodOverload[ClientFundsType, js.Array[ClientWalletData]] = js.native
+  
+  /**
+    * Get all client wallets
+    * @param options
+    */
+  @JSName("getClientWallets")
+  var getClientWallets_Original: NoArgMethodOverload[js.Array[ClientWalletData]] = js.native
+  
+  /**
+    * Get the client
+    */
+  @JSName("get")
+  var get_Original: NoArgMethodOverload[ClientData] = js.native
+  
+  /**
     * Update the client
     * @param client
     * @param options
@@ -263,6 +251,14 @@ class Clients () extends js.Object {
   def update(data: UpdateClient, options: MethodOptionWithResponse): js.Promise[WithResponse[ClientData]] = js.native
   def update(data: UpdateClient, options: MethodOptionWithoutResponse): js.Promise[ClientData] = js.native
   /**
+    * Update the client
+    * @param client
+    * @param options
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateClient, ClientData] = js.native
+  
+  /**
     * Upload client logo from base64 image string
     * @param base64Logo
     * @param options
@@ -296,6 +292,7 @@ class Clients () extends js.Object {
     */
   def uploadLogo(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[ClientData]] = js.native
   def uploadLogo(data: String, options: MethodOptionWithoutResponse): js.Promise[ClientData] = js.native
+  
   /**
     * Upload client logo from file path
     * @param filePath
@@ -330,5 +327,19 @@ class Clients () extends js.Object {
     */
   def uploadLogoFromFile(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[ClientData]] = js.native
   def uploadLogoFromFile(data: String, options: MethodOptionWithoutResponse): js.Promise[ClientData] = js.native
+  /**
+    * Upload client logo from file path
+    * @param filePath
+    * @param options
+    */
+  @JSName("uploadLogoFromFile")
+  var uploadLogoFromFile_Original: MethodOverload[String, ClientData] = js.native
+  
+  /**
+    * Upload client logo from base64 image string
+    * @param base64Logo
+    * @param options
+    */
+  @JSName("uploadLogo")
+  var uploadLogo_Original: MethodOverload[String, ClientData] = js.native
 }
-

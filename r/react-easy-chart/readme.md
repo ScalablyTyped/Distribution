@@ -10,9 +10,9 @@ React component implementations of Mike Bostok's D3 visualisation library.
 | ------------------ | :-------------: |
 | Full name          | react-easy-chart |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 108518 |
+| # downloads        | 109352 |
 | # stars            | 4 |
 
 ## Links

@@ -7,7 +7,7 @@ import typings.firebaseDatabase.eventMod.DataEvent
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/view/EventRegistration", "ChildEventRegistration")
 @js.native
@@ -35,13 +35,16 @@ class ChildEventRegistration () extends EventRegistration {
   ) = this()
   def this(callbacks_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit], context_ : js.Object) = this()
   def this(callbacks_ : Null, cancelCallback_ : Null, context_ : js.Object) = this()
+  
   var callbacks_ : js.Any = js.native
+  
   var cancelCallback_ : js.Any = js.native
+  
   var context_ : js.Any = js.native
+  
   /**
     * @inheritDoc
     */
   def getEventRunner(eventData: CancelEvent): js.Function0[Unit] = js.native
   def getEventRunner(eventData: DataEvent): js.Function0[Unit] = js.native
 }
-

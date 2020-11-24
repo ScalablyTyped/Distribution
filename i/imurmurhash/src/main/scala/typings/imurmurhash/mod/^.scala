@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("imurmurhash", JSImport.Namespace)
 @js.native
@@ -21,6 +21,7 @@ object ^
   */
 Instantiable0[MurmurHash3]) with (Instantiable1[/* text */ String, MurmurHash3]) with (Instantiable2[/* text */ String, /* seed */ Double, MurmurHash3]) with (Instantiable2[/* text */ js.UndefOr[scala.Nothing], /* seed */ Double, MurmurHash3])
     ] {
+  
   /**
     * Get a hash state object, optionally initialized with the given string and seed.
     * Seed must be a positive integer if provided.
@@ -33,4 +34,3 @@ Instantiable0[MurmurHash3]) with (Instantiable1[/* text */ String, MurmurHash3])
   def apply(text: String): MurmurHash3 = js.native
   def apply(text: String, seed: Double): MurmurHash3 = js.native
 }
-

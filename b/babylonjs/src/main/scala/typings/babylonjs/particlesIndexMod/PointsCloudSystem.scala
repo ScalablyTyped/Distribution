@@ -1,10 +1,10 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.anon.UpdatableBoolean
+import typings.babylonjs.anon.`0`
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Particles/index", "PointsCloudSystem")
 @js.native
@@ -19,6 +19,5 @@ class PointsCloudSystem protected ()
     * * updatable (optional boolean, default true) : if the PCS must be updatable or immutable
     */
   def this(name: String, pointSize: Double, scene: Scene) = this()
-  def this(name: String, pointSize: Double, scene: Scene, options: UpdatableBoolean) = this()
+  def this(name: String, pointSize: Double, scene: Scene, options: `0`) = this()
 }
-

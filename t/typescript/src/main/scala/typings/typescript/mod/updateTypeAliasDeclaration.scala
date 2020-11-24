@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateTypeAliasDeclaration")
 @js.native
 object updateTypeAliasDeclaration extends js.Object {
+  
   def apply(
     node: TypeAliasDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -63,6 +64,7 @@ object updateTypeAliasDeclaration extends js.Object {
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
+  /** @deprecated Use `factory.updateTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: TypeAliasDeclaration,
     decorators: js.Array[Decorator],
@@ -72,4 +74,3 @@ object updateTypeAliasDeclaration extends js.Object {
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
 }
-

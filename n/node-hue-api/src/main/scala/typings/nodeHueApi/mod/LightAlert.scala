@@ -2,7 +2,7 @@ package typings.nodeHueApi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.nodeHueApi.nodeHueApiStrings.none
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.nodeHueApi.nodeHueApiStrings.lselect
 */
 trait LightAlert extends js.Object
-
 object LightAlert {
+  
   @scala.inline
   def lselect: typings.nodeHueApi.nodeHueApiStrings.lselect = "lselect".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.lselect]
+  
   @scala.inline
   def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
+  
   @scala.inline
   def select: typings.nodeHueApi.nodeHueApiStrings.select = "select".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.select]
 }
-

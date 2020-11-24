@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/lambda", "EventSourceMapping")
 @js.native
@@ -23,11 +23,11 @@ class EventSourceMapping protected ()
   def this(name: String, args: EventSourceMappingArgs) = this()
   def this(name: String, args: EventSourceMappingArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/lambda", "EventSourceMapping")
 @js.native
 object EventSourceMapping extends js.Object {
+  
   /**
     * Get an existing EventSourceMapping resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object EventSourceMapping extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.eventSourceMappingMod.EventSourceMapping = js.native
   def get(name: String, id: Input[ID], state: EventSourceMappingState): typings.pulumiAws.eventSourceMappingMod.EventSourceMapping = js.native
   def get(name: String, id: Input[ID], state: EventSourceMappingState, opts: CustomResourceOptions): typings.pulumiAws.eventSourceMappingMod.EventSourceMapping = js.native
+  
   /**
     * Returns true if the given object is an instance of EventSourceMapping.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/eventSourceMapping.EventSourceMapping */ Boolean = js.native
 }
-

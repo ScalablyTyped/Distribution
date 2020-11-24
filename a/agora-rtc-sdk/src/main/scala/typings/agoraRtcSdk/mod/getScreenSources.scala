@@ -2,11 +2,12 @@ package typings.agoraRtcSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agora-rtc-sdk", "getScreenSources")
 @js.native
 object getScreenSources extends js.Object {
+  
   /**
     * Gets the Sources for Screen-sharing
     *
@@ -22,4 +23,3 @@ object getScreenSources extends js.Object {
     */
   def apply(callback: js.Function1[/* sources */ js.Array[DesktopCapturerSource], Unit]): Unit = js.native
 }
-

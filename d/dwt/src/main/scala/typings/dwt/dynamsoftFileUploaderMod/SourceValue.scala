@@ -2,10 +2,11 @@ package typings.dwt.dynamsoftFileUploaderMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SourceValue extends js.Object {
+  
   /**
     * Specify the block size. By default, it's 10240.
     * @param source A URL to specify the content of the file.
@@ -16,4 +17,3 @@ trait SourceValue extends js.Object {
   def Add(source: String, name: String): Unit = js.native
   def Add(source: String, name: String, key: String): Unit = js.native
 }
-

@@ -1,15 +1,16 @@
 package typings.redis.mod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redis", "AbortError")
 @js.native
-class AbortError () extends Error {
+class AbortError () extends RedisError {
+  
   var args: js.UndefOr[js.Array[_]] = js.native
+  
   var code: js.UndefOr[String] = js.native
+  
   var command: String = js.native
 }
-

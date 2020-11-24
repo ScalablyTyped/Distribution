@@ -2,7 +2,7 @@ package typings.wordpressComponents.autocompleteMod.Autocomplete
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * There are currently two supported actions:
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
   - typings.wordpressComponents.wordpressComponentsStrings.replace
 */
 trait Action extends js.Object
-
 object Action {
+  
   @scala.inline
   def `insert-at-caret`: typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret` = "insert-at-caret".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret`]
+  
   @scala.inline
   def replace: typings.wordpressComponents.wordpressComponentsStrings.replace = "replace".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.replace]
 }
-

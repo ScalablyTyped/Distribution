@@ -2,7 +2,7 @@ package typings.eggJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Egg.js is a simple JS library that has no prerequisites and allows you to easily add web easter
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Egg extends js.Object {
+  
   /**
     * Use to add in your easter eggs.
     * @param keySequence You need to pass it the character sequence to trigger the easter egg
@@ -25,6 +26,7 @@ trait Egg extends js.Object {
     * @param metadata An optional set of metadata.
     */
   def AddCode(keySequence: String, fn: js.Function0[_], metadata: js.Any): Egg = js.native
+  
   /**
     * Add a hook, that will run after any egg code is triggered. You could use it to fire a Google
     * Analytics event or send out a tweet that someone finally found your easter egg. Hooks get
@@ -33,10 +35,12 @@ trait Egg extends js.Object {
     * @param fn A function to trigger when it happens.
     */
   def AddHook(fn: js.Function0[_]): Egg = js.native
+  
   /**
     * Start listening to key codes.
     */
   def Listen(): Egg = js.native
+  
   /**
     * Use to add in your easter eggs.
     * @param keySequence You need to pass it the character sequence to trigger the easter egg
@@ -52,6 +56,7 @@ trait Egg extends js.Object {
     * @param metadata An optional set of metadata.
     */
   def addCode(keySequence: String, fn: js.Function0[_], metadata: js.Any): Egg = js.native
+  
   /**
     * Add a hook, that will run after any egg code is triggered. You could use it to fire a Google
     * Analytics event or send out a tweet that someone finally found your easter egg. Hooks get
@@ -60,9 +65,9 @@ trait Egg extends js.Object {
     * @param fn A function to trigger when it happens.
     */
   def addHook(fn: js.Function0[_]): Egg = js.native
+  
   /**
     * Start listening to key codes.
     */
   def listen(): Egg = js.native
 }
-

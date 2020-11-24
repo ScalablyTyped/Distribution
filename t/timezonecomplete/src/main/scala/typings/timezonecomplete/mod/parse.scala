@@ -4,11 +4,12 @@ import typings.timezonecomplete.localeMod.PartialLocale
 import typings.timezonecomplete.parseMod.AwareTimeStruct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "parse")
 @js.native
 object parse extends js.Object {
+  
   def apply(dateTimeString: String, formatString: String): AwareTimeStruct = js.native
   def apply(
     dateTimeString: String,
@@ -71,4 +72,3 @@ object parse extends js.Object {
     locale: PartialLocale
   ): AwareTimeStruct = js.native
 }
-

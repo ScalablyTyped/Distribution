@@ -3,7 +3,7 @@ package typings.watsonDeveloperCloud.synthesizeStreamMod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * pipe()-able Node.js Readable stream - accepts text in the constructor and emits binary audio data in its 'message' events
@@ -16,13 +16,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SynthesizeStream extends Readable {
-  var _readableState: js.Any = js.native
-  var authenticated: js.Any = js.native
-  var initialized: js.Any = js.native
-  var options: js.Any = js.native
-  var socket: js.Any = js.native
+  
   def _read(): Unit = js.native
+  
+  var _readableState: js.Any = js.native
+  
+  var authenticated: js.Any = js.native
+  
   def initialize(): Unit = js.native
+  
+  var initialized: js.Any = js.native
+  
+  var options: js.Any = js.native
+  
   /**
     * This function retrieves an IAM access token and stores it in the
     * request header before calling the callback function, which will
@@ -33,5 +39,6 @@ trait SynthesizeStream extends Readable {
     * @param {Function} callback
     */
   def setAuthorizationHeaderToken(callback: js.Any): Unit = js.native
+  
+  var socket: js.Any = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.meteorRoles.mod.Roles
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant used to reference the special 'global' group that
@@ -25,4 +25,3 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/alanning:roles", "Roles.GLOBAL_GROUP")
 @js.native
 object GLOBAL_GROUP extends TopLevel[String]
-

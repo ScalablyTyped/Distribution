@@ -11,13 +11,17 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tooltipShown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapSparkline extends Control {
+  
   def exportTo(fileName: String, format: String): Unit = js.native
+  
   def getDataSource(): js.Any = js.native
+  
   def getInstance(): js.Any = js.native
+  
   def off(
     eventName: js.UndefOr[scala.Nothing],
     callback: js.ThisFunction1[
@@ -95,6 +99,7 @@ trait BootstrapSparkline extends Control {
     eventName: tooltipShown,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[BootstrapChartEventArgsBase], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_disposing(
     eventName: disposing,
@@ -144,6 +149,7 @@ trait BootstrapSparkline extends Control {
     eventName: tooltipShown,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[BootstrapChartEventArgsBase], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_disposing(
     eventName: disposing,
@@ -193,8 +199,10 @@ trait BootstrapSparkline extends Control {
     eventName: tooltipShown,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[BootstrapChartEventArgsBase], Unit]
   ): this.type = js.native
+  
   def print(): Unit = js.native
+  
   def setDataSource(dataSource: js.Any): Unit = js.native
+  
   def setOptions(options: js.Any): Unit = js.native
 }
-

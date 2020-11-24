@@ -3,17 +3,17 @@ package typings.nssm.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NssmPromise[T]
   extends js.Promise[T] {
-  @JSName("catch")
-  var catch_Original: NssmCatch[T] = js.native
-  @JSName("then")
-  var then_Original: NssmThen[T] = js.native
+  
   def `catch`[TResult](): NssmPromise[T | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function2[/* reason */ Error, /* stderr */ String, TResult | js.Thenable[TResult]]): NssmPromise[T | TResult] = js.native
+  @JSName("catch")
+  var catch_Original: NssmCatch[T] = js.native
+  
   def `then`[TResult1, TResult2](): NssmPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
@@ -28,5 +28,6 @@ trait NssmPromise[T]
     onfulfilled: Null,
     onrejected: js.Function2[/* reason */ Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
   ): NssmPromise[TResult1 | TResult2] = js.native
+  @JSName("then")
+  var then_Original: NssmThen[T] = js.native
 }
-

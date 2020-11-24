@@ -11,8 +11,8 @@ Concat buffer correctly.
 | Full name          | bufferhelper |
 | Keywords           | Buffer |
 | # releases         | 0 |
-| # dependents       | 100 |
-| # downloads        | 317407 |
+| # dependents       | 104 |
+| # downloads        | 499673 |
 | # stars            | 4 |
 
 ## Links

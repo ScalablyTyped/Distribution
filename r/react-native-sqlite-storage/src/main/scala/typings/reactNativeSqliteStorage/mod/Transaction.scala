@@ -2,10 +2,11 @@ package typings.reactNativeSqliteStorage.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Transaction extends js.Object {
+  
   def executeSql(sqlStatement: String): Unit = js.native
   def executeSql(
     sqlStatement: String,
@@ -39,4 +40,3 @@ trait Transaction extends js.Object {
   @JSName("executeSql")
   def executeSql_Promise(sqlStatement: String, arguments: js.Array[_]): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
 }
-

@@ -2,13 +2,15 @@ package typings.activexIwshruntimelibrary
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object IWshRuntimeLibrary extends js.Object {
+    
     @js.native
     class TextStreamBase ()
       extends typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamBase
@@ -45,24 +47,21 @@ object global extends js.Object {
     @js.native
     class WshURLShortcut protected ()
       extends typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshURLShortcut
-    
   }
   
   @js.native
   object ScriptSigner extends js.Object {
+    
     @js.native
     class Signer protected ()
       extends typings.activexIwshruntimelibrary.ScriptSigner.Signer
-    
   }
   
   @js.native
   object WSHControllerLibrary extends js.Object {
+    
     @js.native
     class WSHController protected ()
       extends typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
-    
   }
-  
 }
-

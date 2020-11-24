@@ -3,24 +3,28 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProgressControl extends Component {
+  
   /**
     * Disable all controls on the progress control and its children
     */
   def disable(): Unit = js.native
+  
   /**
     * Enable all controls on the progress control and its children
     */
   def enable(): Unit = js.native
+  
   /**
     * Are controls are currently enabled for this progress control.
     *
     * @return true if controls are enabled, false otherwise
     */
   def enabled(): Boolean = js.native
+  
   /**
     * Handle `mousedown` or `touchstart` events on the `ProgressControl`.
     *
@@ -31,6 +35,7 @@ trait ProgressControl extends Component {
     * @listens touchstart
     */
   def handleMouseDown(event: Event): Unit = js.native
+  
   /**
     * When the mouse moves over the `ProgressControl`, the pointer position
     * gets passed down to the `MouseTimeDisplay` component.
@@ -41,6 +46,7 @@ trait ProgressControl extends Component {
     * @listen mousemove
     */
   def handleMouseMove(event: Event): Unit = js.native
+  
   /**
     * Handle `mousemove` or `touchmove` events on the `ProgressControl`.
     *
@@ -51,6 +57,7 @@ trait ProgressControl extends Component {
     * @listens touchmove
     */
   def handleMouseSeek(event: Event): Unit = js.native
+  
   /**
     * Handle `mouseup` or `touchend` events on the `ProgressControl`.
     *
@@ -62,4 +69,3 @@ trait ProgressControl extends Component {
     */
   def handleMouseUp(event: Event): Unit = js.native
 }
-

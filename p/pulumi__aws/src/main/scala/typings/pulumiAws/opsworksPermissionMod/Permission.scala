@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/opsworks/permission", "Permission")
 @js.native
@@ -21,32 +21,37 @@ class Permission protected () extends CustomResource {
     */
   def this(name: String, args: PermissionArgs) = this()
   def this(name: String, args: PermissionArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Whether the user is allowed to use SSH to communicate with the instance
     */
   val allowSsh: Output_[Boolean] = js.native
+  
   /**
     * Whether the user is allowed to use sudo to elevate privileges
     */
   val allowSudo: Output_[Boolean] = js.native
+  
   /**
     * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iamOnly`
     */
   val level: Output_[String] = js.native
+  
   /**
     * The stack to set the permissions for
     */
   val stackId: Output_[String] = js.native
+  
   /**
     * The user's IAM ARN to set permissions for
     */
   val userArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/opsworks/permission", "Permission")
 @js.native
 object Permission extends js.Object {
+  
   /**
     * Get an existing Permission resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -60,10 +65,10 @@ object Permission extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Permission = js.native
   def get(name: String, id: Input[ID], state: PermissionState): Permission = js.native
   def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = js.native
+  
   /**
     * Returns true if the given object is an instance of Permission.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean = js.native
 }
-

@@ -21,7 +21,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a container which provides access to documents embedded into a database document, usually forms and reports.
@@ -55,6 +55,6 @@ trait DocumentContainer
      with XComponentLoader
      with XMultiServiceFactory
      with XHierarchicalNameContainer {
+  
   def createInstanceWithArguments(aArguments: String): XInterface = js.native
 }
-

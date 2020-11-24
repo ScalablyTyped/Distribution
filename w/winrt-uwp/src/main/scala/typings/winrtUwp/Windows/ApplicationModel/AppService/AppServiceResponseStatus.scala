@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.AppService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppServiceResponseStatus extends js.Object
-
 /** Describes the status when an app tries to send a message to an app service by calling the AppServiceConnection.SendMessageAsync method. */
 @JSGlobal("Windows.ApplicationModel.AppService.AppServiceResponseStatus")
 @js.native
 object AppServiceResponseStatus extends js.Object {
+  
   /** The app service failed to receive and process the message. */
   @js.native
   sealed trait failure extends AppServiceResponseStatus
@@ -26,6 +26,4 @@ object AppServiceResponseStatus extends js.Object {
   /** An unknown error occurred. */
   @js.native
   sealed trait unknown extends AppServiceResponseStatus
-  
 }
-

@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MaskInput extends InputBase {
+  
   /**
     * Gets a replacement string for the character being placed in the input.Subclasses may override this
     * method in order to get some additional behavior. For instance, switching current inputcharacter with
@@ -18,23 +19,27 @@ trait MaskInput extends InputBase {
     * @returns A string that replaces the character
     */
   def _feedReplaceChar(sChar: String, iPlacePosition: Double, sCurrentInputValue: String): String = js.native
+  
   /**
     * Verifies whether a character at a given position is allowed according to its mask rule.
     * @param sChar The character
     * @param iIndex The position of the character
     */
   def _isCharAllowed(sChar: String, iIndex: Double): Unit = js.native
+  
   /**
     * Adds some rule to the aggregation <code>rules</code>.
     * @param oRule the rule to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addRule(oRule: MaskInputRule): MaskInput = js.native
+  
   /**
     * Destroys all the rules in the aggregation <code>rules</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyRules(): MaskInput = js.native
+  
   /**
     * Gets current value of property <code>mask</code>.Mask defined by its characters type (respectively,
     * by its length).You should consider the following important facts:1. The mask characters normally
@@ -48,17 +53,20 @@ trait MaskInput extends InputBase {
     * @returns Value of property <code>mask</code>
     */
   def getMask(): String = js.native
+  
   /**
     * Gets current value of property <code>placeholderSymbol</code>.Defines a placeholder symbol. Shown at
     * the position where there is no user input yet.Default value is <code>_</code>.
     * @returns Value of property <code>placeholderSymbol</code>
     */
   def getPlaceholderSymbol(): String = js.native
+  
   /**
     * Gets content of aggregation <code>rules</code>.A list of validation rules (one rule per mask
     * character).
     */
   def getRules(): js.Array[MaskInputRule] = js.native
+  
   /**
     * Checks for the provided <code>sap.m.MaskInputRule</code> in the aggregation <code>rules</code>.and
     * returns its index if found or -1 otherwise.
@@ -66,6 +74,7 @@ trait MaskInput extends InputBase {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfRule(oRule: MaskInputRule): Double = js.native
+  
   /**
     * Inserts a rule into the aggregation <code>rules</code>.
     * @param oRule the rule to insert; if empty, nothing is inserted
@@ -76,12 +85,14 @@ trait MaskInput extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertRule(oRule: MaskInputRule, iIndex: Double): MaskInput = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>rules</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllRules(): js.Array[MaskInputRule] = js.native
+  
   def removeRule(vRule: String): MaskInputRule = js.native
   /**
     * Removes a rule from the aggregation <code>rules</code>.
@@ -91,4 +102,3 @@ trait MaskInput extends InputBase {
   def removeRule(vRule: Double): MaskInputRule = js.native
   def removeRule(vRule: MaskInputRule): MaskInputRule = js.native
 }
-

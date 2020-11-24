@@ -2,7 +2,7 @@ package typings.peerjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("peerjs", JSImport.Namespace)
 @js.native
@@ -22,4 +22,3 @@ class ^ () extends Peer {
   def this(id: js.UndefOr[scala.Nothing], options: PeerJSOption) = this()
   def this(id: String, options: PeerJSOption) = this()
 }
-

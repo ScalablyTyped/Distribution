@@ -11,8 +11,8 @@ Transform stream implemented using SAX parser
 | Full name          | sax-stream |
 | Keywords           | xml, stream, sax, objects |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 29679 |
+| # dependents       | 7 |
+| # downloads        | 41010 |
 | # stars            | 0 |
 
 ## Links

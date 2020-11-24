@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,38 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassPKey extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回当前算法密码长度，以位为单位
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var keySize: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回当前算法名称
-    * 
-    * @readonly
-    * @type String
-    */
-  var name: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回当前密钥的公钥
-    * @return 当前密钥的公钥
-    * 
-    * 
-    * @readonly
-    * @type PKey
-    */
-  var publicKey: ClassPKey = js.native
+  
   /**
     * 
     * @brief 使用当前算法密码私钥解密数据
@@ -53,6 +22,7 @@ trait ClassPKey extends ClassObject {
     * @async
     */
   def decrypt(data: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 使用当前算法密码公钥加密数据
@@ -63,6 +33,7 @@ trait ClassPKey extends ClassObject {
     * @async
     */
   def encrypt(data: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 返回当前 key 的 DER 格式编码
@@ -72,6 +43,7 @@ trait ClassPKey extends ClassObject {
     * 
     */
   def exportDer(): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 返回当前 key 的 DER 格式编码
@@ -81,6 +53,7 @@ trait ClassPKey extends ClassObject {
     * 
     */
   def exportJson(): js.Object = js.native
+  
   /**
     * 
     * @brief 返回当前 key 的 PEM 格式编码
@@ -90,6 +63,7 @@ trait ClassPKey extends ClassObject {
     * 
     */
   def exportPem(): String = js.native
+  
   /**
     * 
     * @brief 生成一个 EC 私钥
@@ -100,6 +74,7 @@ trait ClassPKey extends ClassObject {
     */
   def genEcKey(): Unit = js.native
   def genEcKey(curve: String): Unit = js.native
+  
   /**
     * 
     * @brief 生成一个 RSA 私钥
@@ -109,6 +84,7 @@ trait ClassPKey extends ClassObject {
     * @async
     */
   def genRsaKey(size: Double): Unit = js.native
+  
   /**
     * 
     * @brief 加载一个 PEM/DER 格式的密钥文件
@@ -120,6 +96,7 @@ trait ClassPKey extends ClassObject {
     */
   def importFile(filename: String): Unit = js.native
   def importFile(filename: String, password: String): Unit = js.native
+  
   /**
     * 
     * @brief 加载一个 DER 格式的密钥
@@ -193,6 +170,7 @@ trait ClassPKey extends ClassObject {
     */
   def importKey(pemKey: String): Unit = js.native
   def importKey(pemKey: String, password: String): Unit = js.native
+  
   /**
     * 
     * @brief 查询当前密钥是否为私钥
@@ -202,6 +180,42 @@ trait ClassPKey extends ClassObject {
     * 
     */
   def isPrivate(): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回当前算法密码长度，以位为单位
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var keySize: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回当前算法名称
+    * 
+    * @readonly
+    * @type String
+    */
+  var name: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回当前密钥的公钥
+    * @return 当前密钥的公钥
+    * 
+    * 
+    * @readonly
+    * @type PKey
+    */
+  var publicKey: ClassPKey = js.native
+  
   /**
     * 
     * @brief 使用当前算法密码私钥签名数据
@@ -214,6 +228,7 @@ trait ClassPKey extends ClassObject {
     */
   def sign(data: ClassBuffer): ClassBuffer = js.native
   def sign(data: ClassBuffer, alg: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 使用当前算法密码公钥验证数据
@@ -228,4 +243,3 @@ trait ClassPKey extends ClassObject {
   def verify(data: ClassBuffer, sign: ClassBuffer): Boolean = js.native
   def verify(data: ClassBuffer, sign: ClassBuffer, alg: Double): Boolean = js.native
 }
-

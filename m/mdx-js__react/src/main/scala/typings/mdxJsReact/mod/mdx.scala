@@ -25,11 +25,12 @@ import typings.std.HTMLInputElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@mdx-js/react", "mdx")
 @js.native
 object mdx extends js.Object {
+  
   def apply(
     `type`: input,
     props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
@@ -81,4 +82,3 @@ object mdx extends js.Object {
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: js.UndefOr[scala.Nothing], children: ReactNode*): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
 }
-

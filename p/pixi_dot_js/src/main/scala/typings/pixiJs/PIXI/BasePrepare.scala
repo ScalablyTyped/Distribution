@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The prepare manager provides functionality to upload content to the GPU.
@@ -29,24 +29,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BasePrepare extends js.Object {
-  /**
-    * The limiter to be used to control how quickly items are prepared.
-    * @type {PIXI.CountLimiter|PIXI.TimeLimiter}
-    */
-  var limiter: CountLimiter | TimeLimiter = js.native
-  /**
-    * Reference to the renderer.
-    * @type {PIXI.AbstractRenderer}
-    * @protected
-    */
-  var renderer: AbstractRenderer = js.native
-  /**
-    * The only real difference between CanvasPrepare and Prepare is what they pass
-    * to upload hooks. That different parameter is stored here.
-    * @type {object}
-    * @protected
-    */
-  var uploadHookHelper: js.Any = js.native
+  
   def add(item: js.Any): this.type = js.native
   def add(item: BaseTexture): this.type = js.native
   def add(item: Container): this.type = js.native
@@ -61,11 +44,19 @@ trait BasePrepare extends js.Object {
   def add(item: Graphics): this.type = js.native
   def add(item: Text): this.type = js.native
   def add(item: Texture): this.type = js.native
+  
   /**
     * Destroys the plugin, don't use after this.
     *
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * The limiter to be used to control how quickly items are prepared.
+    * @type {PIXI.CountLimiter|PIXI.TimeLimiter}
+    */
+  var limiter: CountLimiter | TimeLimiter = js.native
+  
   /**
     * Adds hooks for finding items.
     *
@@ -74,6 +65,7 @@ trait BasePrepare extends js.Object {
     * @return {this} Instance of plugin for chaining.
     */
   def registerFindHook(addHook: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  
   /**
     * Adds hooks for uploading items.
     *
@@ -82,6 +74,14 @@ trait BasePrepare extends js.Object {
     * @return {this} Instance of plugin for chaining.
     */
   def registerUploadHook(uploadHook: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  
+  /**
+    * Reference to the renderer.
+    * @type {PIXI.AbstractRenderer}
+    * @protected
+    */
+  var renderer: AbstractRenderer = js.native
+  
   /**
     * Upload all the textures and graphics to the GPU.
     *
@@ -104,5 +104,12 @@ trait BasePrepare extends js.Object {
   def upload(item: Text, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   def upload(item: Texture): Unit = js.native
   def upload(item: Texture, done: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  
+  /**
+    * The only real difference between CanvasPrepare and Prepare is what they pass
+    * to upload hooks. That different parameter is stored here.
+    * @type {object}
+    * @protected
+    */
+  var uploadHookHelper: js.Any = js.native
 }
-

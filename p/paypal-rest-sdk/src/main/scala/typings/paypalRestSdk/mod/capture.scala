@@ -3,15 +3,17 @@ package typings.paypalRestSdk.mod
 import typings.node.httpMod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paypal-rest-sdk", "capture")
 @js.native
 object capture extends js.Object {
+  
   def get(id: String, config: RequestOptions): Unit = js.native
   def get(id: String, config: RequestOptions, cb: CallbackFunction[CaptureResource]): Unit = js.native
   def get(id: String, config: CallbackFunction[CaptureResource]): Unit = js.native
   def get(id: String, config: CallbackFunction[CaptureResource], cb: CallbackFunction[CaptureResource]): Unit = js.native
+  
   def refund(id: String, data: RequestOptions): Unit = js.native
   def refund(
     id: String,
@@ -66,4 +68,3 @@ object capture extends js.Object {
     cb: CallbackFunction[RefundResource]
   ): Unit = js.native
 }
-

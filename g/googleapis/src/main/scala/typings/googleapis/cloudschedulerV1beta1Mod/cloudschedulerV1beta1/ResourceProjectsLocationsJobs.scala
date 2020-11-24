@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudscheduler/v1beta1", "cloudscheduler_v1beta1.Resource$Projects$Locations$Jobs")
 @js.native
 class ResourceProjectsLocationsJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.create
     * @desc Creates a job.
@@ -42,6 +44,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.delete
     * @desc Deletes a job.
@@ -70,6 +73,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.get
     * @desc Gets a job.
@@ -98,6 +102,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.list
     * @desc Lists jobs.
@@ -131,6 +136,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.patch
     * @desc Updates a job.  If successful, the updated Job is returned. If the
@@ -166,6 +172,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.pause
     * @desc Pauses a job.  If a job is paused then the system will stop
@@ -198,6 +205,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.resume
     * @desc Resume a job.  This method reenables a job after it has been
@@ -230,6 +238,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * cloudscheduler.projects.locations.jobs.run
     * @desc Forces a job to run now.  When this method is called, Cloud
@@ -261,4 +270,3 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
 }
-

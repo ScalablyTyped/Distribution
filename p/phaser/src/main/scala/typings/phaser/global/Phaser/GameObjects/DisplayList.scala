@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Display List plugin.
@@ -22,4 +22,3 @@ class DisplayList protected ()
     */
   def this(scene: Scene) = this()
 }
-

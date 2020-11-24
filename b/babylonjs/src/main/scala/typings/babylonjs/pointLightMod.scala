@@ -5,11 +5,12 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowLightMod.ShadowLight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Lights/pointLight", JSImport.Namespace)
 @js.native
 object pointLightMod extends js.Object {
+  
   @js.native
   class PointLight protected () extends ShadowLight {
     /**
@@ -26,18 +27,16 @@ object pointLightMod extends js.Object {
       * @param scene The scene the lights belongs to
       */
     def this(name: String, position: Vector3, scene: Scene) = this()
+    
     var _shadowAngle: js.Any = js.native
+    
     /**
       * Gets the direction if it has been set.
       * In case of direction provided, the shadow will not use a cube texture but simulate a spot shadow as a fallback
       */
     @JSName("direction")
     def direction_MPointLight: Vector3 = js.native
-    /**
-      * In case of direction provided, the shadow will not use a cube texture but simulate a spot shadow as a fallback
-      */
-    @JSName("direction")
-    def direction_MPointLight(value: Vector3): js.Any = js.native
+    
     /**
       * Getter: In case of direction provided, the shadow will not use a cube texture but simulate a spot shadow as a fallback
       * This specifies what angle the shadow will use to be created.
@@ -51,8 +50,6 @@ object pointLightMod extends js.Object {
       *
       * It default to 90 degrees to work nicely with the cube texture generation for point lights shadow maps.
       */
-    def shadowAngle(value: Double): js.Any = js.native
+    def shadowAngle_=(value: Double): Unit = js.native
   }
-  
 }
-

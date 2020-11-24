@@ -1,7 +1,7 @@
 
 # Scala.js typings for webidl2
 
-Typings are for version 23.12
+Typings are for version 23.13
 
 ## Library description:
 A WebIDL Parser
@@ -10,9 +10,9 @@ A WebIDL Parser
 | ------------------ | :-------------: |
 | Full name          | webidl2 |
 | Keywords           | - |
-| # releases         | 58 |
-| # dependents       | 16 |
-| # downloads        | 67249 |
+| # releases         | 43 |
+| # dependents       | 18 |
+| # downloads        | 73522 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-currency-formatter", JSImport.Namespace)
 @js.native
@@ -15,8 +15,6 @@ class ^ protected ()
   def this(props: CurrencyFormatterProps) = this()
   def this(props: CurrencyFormatterProps, context: js.Any) = this()
 }
-
 @JSImport("react-currency-formatter", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[ComponentClass[CurrencyFormatterProps, ComponentState]]
-

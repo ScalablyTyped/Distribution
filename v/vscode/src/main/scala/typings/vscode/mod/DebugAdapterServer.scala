@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "DebugAdapterServer")
 @js.native
@@ -12,13 +12,14 @@ class DebugAdapterServer protected () extends DebugAdapterDescriptor {
     */
   def this(port: Double) = this()
   def this(port: Double, host: String) = this()
+  
   /**
     * The host.
     */
   val host: js.UndefOr[String] = js.native
+  
   /**
     * The port.
     */
   val port: Double = js.native
 }
-

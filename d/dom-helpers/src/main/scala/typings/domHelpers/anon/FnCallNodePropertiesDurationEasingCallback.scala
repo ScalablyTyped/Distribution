@@ -8,10 +8,11 @@ import typings.domHelpers.domHelpersStrings.transitionend
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallNodePropertiesDurationEasingCallback extends js.Object {
+  
   def apply(node: HTMLElement, properties: AnimateProperties, duration: Double): Cancel = js.native
   def apply(
     node: HTMLElement,
@@ -28,4 +29,3 @@ trait FnCallNodePropertiesDurationEasingCallback extends js.Object {
   ): Cancel = js.native
   def apply(options: Options): Cancel = js.native
 }
-

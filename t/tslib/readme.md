@@ -1,7 +1,7 @@
 
 # Scala.js typings for tslib
 
-Typings are for version 2.0.0
+Typings are for version 2.0.3
 
 ## Library description:
 Runtime library for TypeScript helper functions
@@ -10,13 +10,13 @@ Runtime library for TypeScript helper functions
 | ------------------ | :-------------: |
 | Full name          | tslib |
 | Keywords           | TypeScript, Microsoft, compiler, language, javascript, tslib, runtime |
-| # releases         | 6 |
-| # dependents       | 24935 |
-| # downloads        | 457011324 |
+| # releases         | 9 |
+| # dependents       | 33583 |
+| # downloads        | 863162047 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](http://typescriptlang.org/)
+- [Homepage](https://www.typescriptlang.org/)
 - [Bugs](https://github.com/Microsoft/TypeScript/issues)
 - [Repository](https://github.com/Microsoft/tslib)
 - [Npm](https://www.npmjs.com/package/tslib)

@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IClientReceiptGetRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientReceiptGetRequest")
 @js.native
@@ -20,11 +20,11 @@ class ClientReceiptGetRequest ()
   extends typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest {
   def this(properties: IClientReceiptGetRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ClientReceiptGetRequest")
 @js.native
 object ClientReceiptGetRequest extends js.Object {
+  
   /**
     * Creates a new ClientReceiptGetRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ClientReceiptGetRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
   def create(properties: IClientReceiptGetRequest): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
+  
   /**
     * Decodes a ClientReceiptGetRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ClientReceiptGetRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
+  
   /**
     * Decodes a ClientReceiptGetRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ClientReceiptGetRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
+  
   /**
     * Encodes the specified ClientReceiptGetRequest message. Does not implicitly {@link ClientReceiptGetRequest.verify|verify} messages.
     * @param message ClientReceiptGetRequest message or plain object to encode
@@ -61,6 +64,7 @@ object ClientReceiptGetRequest extends js.Object {
     */
   def encode(message: IClientReceiptGetRequest): Writer = js.native
   def encode(message: IClientReceiptGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientReceiptGetRequest message, length delimited. Does not implicitly {@link ClientReceiptGetRequest.verify|verify} messages.
     * @param message ClientReceiptGetRequest message or plain object to encode
@@ -69,12 +73,14 @@ object ClientReceiptGetRequest extends js.Object {
     */
   def encodeDelimited(message: IClientReceiptGetRequest): Writer = js.native
   def encodeDelimited(message: IClientReceiptGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientReceiptGetRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientReceiptGetRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest = js.native
+  
   /**
     * Creates a plain object from a ClientReceiptGetRequest message. Also converts values to other types if specified.
     * @param message ClientReceiptGetRequest
@@ -83,6 +89,7 @@ object ClientReceiptGetRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientReceiptGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientReceiptGetRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ClientReceiptGetRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

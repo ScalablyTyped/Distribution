@@ -3,11 +3,12 @@ package typings.parseColumns.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse-columns", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Parse text columns, like the output of Unix commands.
   @param textColumns - Text columns to parse.
@@ -45,4 +46,3 @@ object ^ extends js.Object {
   def apply[ValuesType /* <: js.Any */](textColumns: String): js.Array[StringDictionary[ValuesType]] = js.native
   def apply[ValuesType /* <: js.Any */](textColumns: String, options: Options[ValuesType]): js.Array[StringDictionary[ValuesType]] = js.native
 }
-

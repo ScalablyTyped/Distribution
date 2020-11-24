@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprofiler/v2", "cloudprofiler_v2.Resource$Projects$Profiles")
 @js.native
 class ResourceProjectsProfiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudprofiler.projects.profiles.create
     * @desc CreateProfile creates a new profile resource in the online mode.
@@ -51,6 +53,7 @@ class ResourceProjectsProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
+  
   /**
     * cloudprofiler.projects.profiles.createOffline
     * @desc CreateOfflineProfile creates a new profile resource in the offline
@@ -82,6 +85,7 @@ class ResourceProjectsProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
+  
   /**
     * cloudprofiler.projects.profiles.patch
     * @desc UpdateProfile updates the profile bytes and labels on the profile
@@ -116,4 +120,3 @@ class ResourceProjectsProfiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
 }
-

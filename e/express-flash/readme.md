@@ -10,9 +10,9 @@ Flash Messages for your Express Application
 | ------------------ | :-------------: |
 | Full name          | express-flash |
 | Keywords           | express, flash, messages |
-| # releases         | 1 |
-| # dependents       | 88 |
-| # downloads        | 941089 |
+| # releases         | 0 |
+| # dependents       | 100 |
+| # downloads        | 1017102 |
 | # stars            | 17 |
 
 ## Links

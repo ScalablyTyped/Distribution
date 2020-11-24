@@ -2,12 +2,12 @@ package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CertificateRequestProperties extends ICertificateRequestProperties
-
 object CertificateRequestProperties {
+  
   @scala.inline
   def apply(
     exportable: ExportOption,
@@ -24,4 +24,3 @@ object CertificateRequestProperties {
     __obj.asInstanceOf[CertificateRequestProperties]
   }
 }
-

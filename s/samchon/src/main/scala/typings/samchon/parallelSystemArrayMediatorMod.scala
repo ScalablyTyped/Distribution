@@ -5,20 +5,18 @@ import typings.samchon.parallelSystemArrayMod.ParallelSystemArray
 import typings.samchon.parallelSystemMod.ParallelSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/ParallelSystemArrayMediator", JSImport.Namespace)
 @js.native
 object parallelSystemArrayMediatorMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
     */
   abstract class ParallelSystemArrayMediator[System /* <: ParallelSystem */] () extends ParallelSystemArray[System] {
-    /**
-      * @hidden
-      */
-    var mediator_ : js.Any = js.native
+    
     /**
       * Factory method creating a {@link MediatorSystem} object.
       *
@@ -44,6 +42,7 @@ object parallelSystemArrayMediatorMod extends js.Object {
       * @return A newly created {@link MediatorSystem} object.
       */
     /* protected */ def createMediator(): MediatorSystem = js.native
+    
     /**
       * Get {@link MediatorSystem} object.
       *
@@ -57,6 +56,12 @@ object parallelSystemArrayMediatorMod extends js.Object {
       * @return The {@link MediatorSystem} object.
       */
     def getMediator(): MediatorSystem = js.native
+    
+    /**
+      * @hidden
+      */
+    var mediator_ : js.Any = js.native
+    
     /**
       * Start mediator.
       *
@@ -65,6 +70,4 @@ object parallelSystemArrayMediatorMod extends js.Object {
       */
     /* protected */ def startMediator(): Unit = js.native
   }
-  
 }
-

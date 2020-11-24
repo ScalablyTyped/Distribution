@@ -5,10 +5,11 @@ import typings.leaflet.mod.Point_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GoogleMutant_ extends GridLayer_ {
+  
   /**
     * Add additional Google Maps layer.
     *
@@ -20,6 +21,7 @@ trait GoogleMutant_ extends GridLayer_ {
     */
   def addGoogleLayer(googleLayerName: String): js.Promise[js.Object] = js.native
   def addGoogleLayer(googleLayerName: String, options: js.Object): js.Promise[js.Object] = js.native
+  
   /**
     * Removes Google Maps layer.
     *
@@ -28,6 +30,6 @@ trait GoogleMutant_ extends GridLayer_ {
     * @param googleLayerName such as BicyclingLayer, TrafficLayer, or TransitLayer.
     */
   def removeGoogleLayer(googleLayerName: String): Unit = js.native
+  
   def setElementSize(e: HTMLElement, size: Point_): Unit = js.native
 }
-

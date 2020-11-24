@@ -63,12 +63,11 @@ import typings.semanticUiVisibility.semanticUiVisibilityStrings.verbose
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.zIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("visibility")
-  var visibility_Original: Visibility = js.native
+  
   def visibility(): JQuery = js.native
   def visibility(behavior: setting, name: `type`, value: js.UndefOr[scala.Nothing]): `false` | image | fixed = js.native
   def visibility(behavior: setting, name: `type`, value: `false`): JQuery = js.native
@@ -163,6 +162,8 @@ trait JQuery extends js.Object {
   def visibility(behavior: setting, name: zIndex, value: Double): JQuery = js.native
   def visibility(settings: VisibilitySettings): JQuery = js.native
   @JSName("visibility")
+  var visibility_Original: Visibility = js.native
+  @JSName("visibility")
   def visibility_destroy(behavior: destroy): JQuery = js.native
   /**
     * Disable callbacks temporarily. This is useful if you need to adjust scroll position and do not want to trigger callbacks during the position change.
@@ -207,4 +208,3 @@ trait JQuery extends js.Object {
   @JSName("visibility")
   def visibility_setting(behavior: setting, value: VisibilitySettings): JQuery = js.native
 }
-

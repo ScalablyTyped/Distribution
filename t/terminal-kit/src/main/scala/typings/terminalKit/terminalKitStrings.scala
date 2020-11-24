@@ -2,9 +2,37 @@ package typings.terminalKit
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object terminalKitStrings {
+  
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def drag: drag = "drag".asInstanceOf[drag]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def motion: motion = "motion".asInstanceOf[motion]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
+  
   @js.native
   sealed trait button extends js.Object
   
@@ -31,24 +59,4 @@ object terminalKitStrings {
   
   @js.native
   sealed trait y extends js.Object
-  
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def drag: drag = "drag".asInstanceOf[drag]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def motion: motion = "motion".asInstanceOf[motion]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
 }
-

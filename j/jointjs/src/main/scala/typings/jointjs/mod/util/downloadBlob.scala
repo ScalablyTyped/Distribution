@@ -3,11 +3,11 @@ package typings.jointjs.mod.util
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "util.downloadBlob")
 @js.native
 object downloadBlob extends js.Object {
+  
   def apply(blob: Blob, fileName: String): Unit = js.native
 }
-

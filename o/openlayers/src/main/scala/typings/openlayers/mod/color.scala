@@ -2,11 +2,12 @@ package typings.openlayers.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "color")
 @js.native
 object color extends js.Object {
+  
   def asArray(color: String): Color_ = js.native
   /**
     * Return the color as an array. This function maintains a cache of calculated
@@ -16,6 +17,7 @@ object color extends js.Object {
     * @api
     */
   def asArray(color: Color_): Color_ = js.native
+  
   def asString(color: String): String = js.native
   /**
     * Return the color as an rgba string.
@@ -25,4 +27,3 @@ object color extends js.Object {
     */
   def asString(color: Color_): String = js.native
 }
-

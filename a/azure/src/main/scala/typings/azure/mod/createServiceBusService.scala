@@ -2,11 +2,12 @@ package typings.azure.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "createServiceBusService")
 @js.native
 object createServiceBusService extends js.Object {
+  
   def apply(): ServiceBusService = js.native
   def apply(connectionString: String): ServiceBusService = js.native
   def apply(
@@ -200,4 +201,3 @@ object createServiceBusService extends js.Object {
     authenticationProvider: String
   ): ServiceBusService = js.native
 }
-

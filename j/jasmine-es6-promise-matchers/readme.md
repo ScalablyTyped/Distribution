@@ -9,9 +9,9 @@ Jasmine matchers for testing ES6 Promises
 | ------------------ | :-------------: |
 | Full name          | jasmine-es6-promise-matchers |
 | Keywords           | Promise, ES6Promise, Jasmine, matchers, unit, test, tests |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 10418 |
+| # downloads        | 9362 |
 | # stars            | 0 |
 
 ## Links

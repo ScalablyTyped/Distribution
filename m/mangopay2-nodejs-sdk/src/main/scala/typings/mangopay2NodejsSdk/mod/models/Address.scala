@@ -4,7 +4,7 @@ import typings.mangopay2NodejsSdk.anon.PartialAddressData
 import typings.mangopay2NodejsSdk.mod.address.AddressData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mangopay2NodejsSdk.mod.address._AddressType because Already inherited */ @JSImport("mangopay2-nodejs-sdk", "models.Address")
@@ -14,4 +14,3 @@ class Address protected ()
      with AddressData {
   def this(data: PartialAddressData) = this()
 }
-

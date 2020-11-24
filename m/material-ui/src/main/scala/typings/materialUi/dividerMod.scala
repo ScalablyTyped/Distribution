@@ -4,11 +4,12 @@ import typings.materialUi.MaterialUI.DividerProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui/Divider", JSImport.Namespace)
 @js.native
 object dividerMod extends js.Object {
+  
   @js.native
   class Divider ()
     extends Component[DividerProps, js.Object, js.Any]
@@ -16,6 +17,4 @@ object dividerMod extends js.Object {
   @js.native
   class default ()
     extends Component[DividerProps, js.Object, js.Any]
-  
 }
-

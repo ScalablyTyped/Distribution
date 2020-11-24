@@ -2,18 +2,37 @@ package typings.username
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("username", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(): js.Promise[String] = js.native
+  
   /**
-    * Tries to get the username from the LOGNAME, USER, LNAME or USERNAME environment variables. Falls back
-    * to returning an empty string in the reare case none of the environment variables are set.
-    *
-    * @return The username or empty string if not found.
-    */
-  def sync(): String = js.native
+  	Get the username of the current user.
+  	It first tries to get the username from the `SUDO_USER` `LOGNAME` `USER` `LNAME` `USERNAME` environment variables. Then falls back to `$ id -un` on macOS / Linux and `$ whoami` on Windows, in the rare case none of the environment variables are set. The result is cached.
+  	@returns The username.
+  	@example
+  	```
+  	import username = require('username');
+  	(async () => {
+  		console.log(await username());
+  		//=> 'sindresorhus'
+  	})();
+  	```
+  	*/
+  def apply(): js.Promise[js.UndefOr[String]] = js.native
+  
+  /**
+  	Synchronously get the username of the current user.
+  	It first tries to get the username from the `SUDO_USER` `LOGNAME` `USER` `LNAME` `USERNAME` environment variables. Then falls back to `$ id -un` on macOS / Linux and `$ whoami` on Windows, in the rare case none of the environment variables are set. The result is cached.
+  	@returns The username.
+  	@example
+  	```
+  	import username = require('username');
+  	console.log(username.sync());
+  	//=> 'sindresorhus'
+  	```
+  	*/
+  def sync(): js.UndefOr[String] = js.native
 }
-

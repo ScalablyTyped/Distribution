@@ -3,11 +3,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.upperBound")
 @js.native
 object upperBound extends js.Object {
+  
   /**
     * Find the index of the first element which compares `>` than a value.
     *
@@ -85,4 +86,3 @@ object upperBound extends js.Object {
     stop: Double
   ): Double = js.native
 }
-

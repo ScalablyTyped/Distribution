@@ -4,11 +4,12 @@ import typings.tstl.adaptorContainerMod.AdaptorContainer
 import typings.tstl.listMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/Queue", JSImport.Namespace)
 @js.native
 object queueMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -20,12 +21,14 @@ object queueMod extends js.Object {
       * @param obj Object to copy.
       */
     def this(obj: Queue[T]) = this()
+    
     /**
       * Get the last element.
       *
       * @return The last element.
       */
     def back(): T = js.native
+    
     /**
       * Get the first element.
       *
@@ -33,6 +36,4 @@ object queueMod extends js.Object {
       */
     def front(): T = js.native
   }
-  
 }
-

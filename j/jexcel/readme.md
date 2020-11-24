@@ -11,8 +11,8 @@ jExcel is a lightweight, vanilla javascript plugin to create amazing web-based i
 | Full name          | jexcel |
 | Keywords           | spreadsheet, tables, table, excel, grid, grid-editor, data-table, data-grid, data-spreadsheet |
 | # releases         | 40 |
-| # dependents       | 4 |
-| # downloads        | 42609 |
+| # dependents       | 6 |
+| # downloads        | 86292 |
 | # stars            | 0 |
 
 ## Links

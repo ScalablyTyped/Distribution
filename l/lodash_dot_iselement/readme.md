@@ -12,7 +12,7 @@ The lodash method `_.isElement` exported as a module.
 | Keywords           | lodash-modularized, iselement |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 99991 |
+| # downloads        | 160830 |
 | # stars            | 0 |
 
 ## Links

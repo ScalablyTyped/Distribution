@@ -11,11 +11,12 @@ import typings.three.webGLExtensionsMod.WebGLExtensions
 import typings.three.webGLProgramMod.WebGLProgram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLBindingStates", JSImport.Namespace)
 @js.native
 object webGLBindingStatesMod extends js.Object {
+  
   @js.native
   class WebGLBindingStates protected () extends js.Object {
     def this(
@@ -24,14 +25,23 @@ object webGLBindingStatesMod extends js.Object {
       attributes: WebGLAttributes,
       capabilities: WebGLCapabilities
     ) = this()
+    
     def disableUnusedAttributes(): Unit = js.native
+    
     def dispose(): Unit = js.native
+    
     def enableAttribute(attribute: Double): Unit = js.native
+    
     def initAttributes(): Unit = js.native
+    
     def releaseStatesOfGeometry(): Unit = js.native
+    
     def releaseStatesOfProgram(): Unit = js.native
+    
     def reset(): Unit = js.native
+    
     def resetDefaultState(): Unit = js.native
+    
     def setup(
       `object`: Object3D,
       material: Material,
@@ -40,6 +50,4 @@ object webGLBindingStatesMod extends js.Object {
       index: BufferAttribute
     ): Unit = js.native
   }
-  
 }
-

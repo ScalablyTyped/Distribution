@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.MaskedTextBoxOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofMaskedTextBox
   extends Instantiable1[/* element */ Element, MaskedTextBox]
      with Instantiable2[/* element */ Element, /* options */ MaskedTextBoxOptions, MaskedTextBox] {
-  var fn: MaskedTextBox = js.native
+  
   def extend(proto: js.Object): MaskedTextBox = js.native
+  
+  var fn: MaskedTextBox = js.native
 }
-

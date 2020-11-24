@@ -4,10 +4,11 @@ import typings.asmcryptoJs.asmcryptoJsNumbers.`-1`
 import typings.asmcryptoJs.asmcryptoJsNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait sha1result extends js.Object {
+  
   /**
     * @param offset - multiple of 64
     * @param length
@@ -15,6 +16,7 @@ trait sha1result extends js.Object {
     * @returns hashed
     */
   def finish(offset: Double, length: Double, output: Double): Double = js.native
+  
   /**
     * @param offset - multiple of 64
     * @param length
@@ -22,6 +24,7 @@ trait sha1result extends js.Object {
     * @returns hashed
     */
   def hmac_finish(offset: Double, length: Double, output: Double): Double = js.native
+  
   def hmac_init(
     p0: Double,
     p1: Double,
@@ -40,9 +43,12 @@ trait sha1result extends js.Object {
     p14: Double,
     p15: Double
   ): Unit = js.native
+  
   // HMAC-SHA;
   def hmac_reset(): Unit = js.native
+  
   def init(h0: Double, h1: Double, h2: Double, h3: Double, h4: Double, total0: Double, total1: Double): Unit = js.native
+  
   // ;
   /**
     * PBKDF2-HMAC-SHA
@@ -53,17 +59,19 @@ trait sha1result extends js.Object {
     * @param output - multiple of 32
     */
   def pbkdf2_generate_block(offset: Double, length: Double, block: Double, count: Double, output: Double): `0` | `-1` = js.native
+  
   /**
     * @param offset - multiple of 64
     * @param length
     * @returns hashed
     */
   def process(offset: Double, length: Double): Double = js.native
+  
   // SHA1
   def reset(): Unit = js.native
 }
-
 object sha1result {
+  
   @scala.inline
   def apply(
     finish: (Double, Double, Double) => Double,
@@ -78,36 +86,46 @@ object sha1result {
     val __obj = js.Dynamic.literal(finish = js.Any.fromFunction3(finish), hmac_finish = js.Any.fromFunction3(hmac_finish), hmac_init = js.Any.fromFunction16(hmac_init), hmac_reset = js.Any.fromFunction0(hmac_reset), init = js.Any.fromFunction7(init), pbkdf2_generate_block = js.Any.fromFunction5(pbkdf2_generate_block), process = js.Any.fromFunction2(process), reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[sha1result]
   }
+  
   @scala.inline
   implicit class sha1resultOps[Self <: sha1result] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFinish(value: (Double, Double, Double) => Double): Self = this.set("finish", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setHmac_finish(value: (Double, Double, Double) => Double): Self = this.set("hmac_finish", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setHmac_init(
       value: (Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double) => Unit
     ): Self = this.set("hmac_init", js.Any.fromFunction16(value))
+    
     @scala.inline
     def setHmac_reset(value: () => Unit): Self = this.set("hmac_reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setInit(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("init", js.Any.fromFunction7(value))
+    
     @scala.inline
     def setPbkdf2_generate_block(value: (Double, Double, Double, Double, Double) => `0` | `-1`): Self = this.set("pbkdf2_generate_block", js.Any.fromFunction5(value))
+    
     @scala.inline
     def setProcess(value: (Double, Double) => Double): Self = this.set("process", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
   }
-  
 }
-

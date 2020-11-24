@@ -10,8 +10,8 @@ A flexible and extensible jQuery plugin for modern tooltips.
 | Full name          | tooltipster |
 | Keywords           | ecosystem:jquery, jquery-plugin, tooltip, tooltips |
 | # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 537391 |
+| # dependents       | 14 |
+| # downloads        | 590897 |
 | # stars            | 1 |
 
 ## Links

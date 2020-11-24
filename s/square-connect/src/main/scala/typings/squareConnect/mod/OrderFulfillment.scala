@@ -3,11 +3,12 @@ package typings.squareConnect.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderFulfillment")
 @js.native
 class OrderFulfillment () extends js.Object {
+  
   /**
     * Application-defined data attached to this fulfillment. Metadata fields are intended to store descriptive
     * references or associations with an entity in another system or store brief information about the object.
@@ -20,10 +21,12 @@ class OrderFulfillment () extends js.Object {
     * See [Metadata](https://developer.squareup.com/docs/build-basics/metadata) for more information.
     */
   var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Contains details for a pickup fulfillment. Required when fulfillment type is `PICKUP`.
     */
   var pickup_details: js.UndefOr[OrderFulfillmentPickupDetails] = js.native
+  
   /**
     * Contains details for a shipment fulfillment. Required when fulfillment type is `SHIPMENT`.
     * A shipment fulfillment's relationship to fulfillment `state`:
@@ -35,17 +38,19 @@ class OrderFulfillment () extends js.Object {
     *  `FAILED`: Shipment has failed.
     */
   var shipment_details: js.UndefOr[OrderFulfillmentShipmentDetails] = js.native
+  
   /**
     * The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values.
     */
   var state: js.UndefOr[FulfillmentStateType] = js.native
+  
   /**
     * The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values.
     */
   var `type`: js.UndefOr[FulfillmentType] = js.native
+  
   /**
     * Unique ID that identifies the fulfillment only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }
-

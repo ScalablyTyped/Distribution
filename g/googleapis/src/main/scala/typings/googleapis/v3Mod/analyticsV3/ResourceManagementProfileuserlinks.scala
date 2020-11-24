@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Profileuserlinks")
 @js.native
 class ResourceManagementProfileuserlinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.profileUserLinks.delete
     * @desc Removes a user from the given view (profile).
@@ -44,6 +46,7 @@ class ResourceManagementProfileuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileUserLinks.insert
     * @desc Adds a new user to the given view (profile).
@@ -78,6 +81,7 @@ class ResourceManagementProfileuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityUserLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileUserLinks.list
     * @desc Lists profile-user links for a given view (profile).
@@ -113,6 +117,7 @@ class ResourceManagementProfileuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityUserLinks]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileUserLinks.update
     * @desc Updates permissions for an existing user on the given view
@@ -150,4 +155,3 @@ class ResourceManagementProfileuserlinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEntityUserLink]
   ): Unit = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.pixiJs.anon.Scale
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for SVG elements and graphics.
@@ -26,11 +26,11 @@ class SVGResource protected ()
   def this(source: String) = this()
   def this(source: String, options: Scale) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.resources.SVGResource")
 @js.native
 object SVGResource extends js.Object {
+  
   /**
     * RegExp for SVG size.
     *
@@ -40,6 +40,7 @@ object SVGResource extends js.Object {
     * @example &lt;svg width="100" height="100"&gt;&lt;/svg&gt;
     */
   val SVG_SIZE: RegExp | String = js.native
+  
   /**
     * Get size from an svg string using regexp.
     *
@@ -48,6 +49,7 @@ object SVGResource extends js.Object {
     * @return {PIXI.ISize} image extension
     */
   def getSize(svgString: String): ISize = js.native
+  
   /**
     * Used to auto-detect the type of resource.
     *
@@ -57,4 +59,3 @@ object SVGResource extends js.Object {
     */
   def test(source: js.Any, extension: String): Unit = js.native
 }
-

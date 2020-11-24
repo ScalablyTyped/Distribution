@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Partners$Customers")
 @js.native
 class ResourcePartnersCustomers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.partners.customers.create
     * @desc Creates a customer for zero-touch enrollment. After the method
@@ -46,6 +48,7 @@ class ResourcePartnersCustomers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.customers.list
     * @desc Lists the customers that are enrolled to the reseller identified by
@@ -82,4 +85,3 @@ class ResourcePartnersCustomers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListCustomersResponse]
   ): Unit = js.native
 }
-

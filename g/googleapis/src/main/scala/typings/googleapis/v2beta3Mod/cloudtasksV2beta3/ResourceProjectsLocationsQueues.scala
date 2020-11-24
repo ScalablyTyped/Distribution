@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtasks/v2beta3", "cloudtasks_v2beta3.Resource$Projects$Locations$Queues")
 @js.native
 class ResourceProjectsLocationsQueues protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var tasks: ResourceProjectsLocationsQueuesTasks = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.create
     * @desc Creates a queue.  Queues created with this method allow tasks to
@@ -50,6 +51,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQueue]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.delete
     * @desc Deletes a queue.  This command will delete the queue even if it has
@@ -85,6 +87,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.get
     * @desc Gets a queue.
@@ -113,6 +116,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQueue]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.getIamPolicy
     * @desc Gets the access control policy for a Queue. Returns an empty policy
@@ -149,6 +153,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.list
     * @desc Lists queues.  Queues are returned in lexicographical order.
@@ -183,6 +188,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListQueuesResponse]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.patch
     * @desc Updates a queue.  This method creates the queue if it does not
@@ -221,6 +227,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQueue]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.pause
     * @desc Pauses the queue.  If a queue is paused then the system will stop
@@ -253,6 +260,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQueue]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.purge
     * @desc Purges a queue by deleting all of its tasks.  All tasks created
@@ -285,6 +293,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQueue]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.resume
     * @desc Resume a queue.  This method resumes a queue after it has been
@@ -320,6 +329,7 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQueue]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.setIamPolicy
     * @desc Sets the access control policy for a Queue. Replaces any existing
@@ -357,6 +367,9 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var tasks: ResourceProjectsLocationsQueuesTasks = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.testIamPermissions
     * @desc Returns permissions that a caller has on a Queue. If the resource
@@ -394,4 +407,3 @@ class ResourceProjectsLocationsQueues protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

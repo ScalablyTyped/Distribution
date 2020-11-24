@@ -10,9 +10,9 @@ C++ bindings for all single- and double-precision CBLAS (Basic Linear Algebra Su
 | ------------------ | :-------------: |
 | Full name          | nblas |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 38291 |
+| # downloads        | 43663 |
 | # stars            | 1 |
 
 ## Links

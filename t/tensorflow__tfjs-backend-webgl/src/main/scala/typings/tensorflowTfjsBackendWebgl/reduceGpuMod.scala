@@ -10,11 +10,12 @@ import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.sum
 import typings.tensorflowTfjsCore.reduceUtilMod.ReduceInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/reduce_gpu", JSImport.Namespace)
 @js.native
 object reduceGpuMod extends js.Object {
+  
   @js.native
   class ReduceProgram protected () extends GPGPUProgram {
     def this(reduceInfo: ReduceInfo, reduceType: all) = this()
@@ -24,6 +25,4 @@ object reduceGpuMod extends js.Object {
     def this(reduceInfo: ReduceInfo, reduceType: prod) = this()
     def this(reduceInfo: ReduceInfo, reduceType: sum) = this()
   }
-  
 }
-

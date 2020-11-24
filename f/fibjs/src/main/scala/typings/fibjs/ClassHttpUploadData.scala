@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHttpUploadData extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,6 +22,7 @@ trait ClassHttpUploadData extends ClassObject {
     * @type SeekableStream
     */
   var body: ClassSeekableStream = js.native
+  
   /**
     * class prop 
     *
@@ -31,6 +33,7 @@ trait ClassHttpUploadData extends ClassObject {
     * @type String
     */
   var contentTransferEncoding: String = js.native
+  
   /**
     * class prop 
     *
@@ -41,6 +44,7 @@ trait ClassHttpUploadData extends ClassObject {
     * @type String
     */
   var contentType: String = js.native
+  
   /**
     * class prop 
     *
@@ -52,4 +56,3 @@ trait ClassHttpUploadData extends ClassObject {
     */
   var fileName: String = js.native
 }
-

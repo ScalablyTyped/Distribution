@@ -9,9 +9,9 @@ Plugin for nunjucks of momentjs format date
 | ------------------ | :-------------: |
 | Full name          | nunjucks-date |
 | Keywords           | nunjucks, date |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 22522 |
+| # releases         | 4 |
+| # dependents       | 10 |
+| # downloads        | 26830 |
 | # stars            | 1 |
 
 ## Links

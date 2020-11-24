@@ -12,7 +12,7 @@ import typings.luminoWidgets.widgetMod.Widget
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/docklayout", "DockLayout")
 @js.native
@@ -23,7 +23,9 @@ class DockLayout_ protected () extends Layout {
     * @param options - The options for initializing the layout.
     */
   def this(options: IOptions) = this()
+  
   var _box: js.Any = js.native
+  
   /**
     * Create a new handle for the dock layout.
     *
@@ -31,6 +33,7 @@ class DockLayout_ protected () extends Layout {
     * The handle will be attached to the parent if it exists.
     */
   var _createHandle: js.Any = js.native
+  
   /**
     * Create a new tab bar for use by the dock layout.
     *
@@ -38,11 +41,14 @@ class DockLayout_ protected () extends Layout {
     * The tab bar will be attached to the parent if it exists.
     */
   var _createTabBar: js.Any = js.native
+  
   var _dirty: js.Any = js.native
+  
   /**
     * Fit the layout to the total size required by the widgets.
     */
   var _fit: js.Any = js.native
+  
   /**
     * Insert a widget as a new split area.
     *
@@ -50,6 +56,7 @@ class DockLayout_ protected () extends Layout {
     * This does not attach the widget to the parent widget.
     */
   var _insertSplit: js.Any = js.native
+  
   /**
     * Insert a widget next to an existing tab.
     *
@@ -57,7 +64,9 @@ class DockLayout_ protected () extends Layout {
     * This does not attach the widget to the parent widget.
     */
   var _insertTab: js.Any = js.native
+  
   var _items: js.Any = js.native
+  
   /**
     * Remove the specified widget from the layout structure.
     *
@@ -67,33 +76,23 @@ class DockLayout_ protected () extends Layout {
     * This does not detach the widget from the parent node.
     */
   var _removeWidget: js.Any = js.native
+  
   var _root: js.Any = js.native
+  
   var _spacing: js.Any = js.native
+  
   /**
     * Ensure the root is a split node with the given orientation.
     */
   var _splitRoot: js.Any = js.native
+  
   /**
     * Update the layout position and size of the widgets.
     *
     * The parent offset dimensions should be `-1` if unknown.
     */
   var _update: js.Any = js.native
-  /**
-    * Whether the dock layout is empty.
-    */
-  val isEmpty: Boolean = js.native
-  /**
-    * The renderer used by the dock layout.
-    */
-  val renderer: IRenderer = js.native
-  /**
-    * Get the inter-element spacing for the dock layout.
-    */
-  /**
-    * Set the inter-element spacing for the dock layout.
-    */
-  var spacing: Double = js.native
+  
   /**
     * Add a widget to the dock layout.
     *
@@ -108,6 +107,7 @@ class DockLayout_ protected () extends Layout {
     */
   def addWidget(widget: Widget): Unit = js.native
   def addWidget(widget: Widget, options: IAddOptions): Unit = js.native
+  
   /**
     * Attach the widget to the layout parent widget.
     *
@@ -117,6 +117,7 @@ class DockLayout_ protected () extends Layout {
     * This is a no-op if the widget is already attached.
     */
   /* protected */ def attachWidget(widget: Widget): Unit = js.native
+  
   /**
     * Detach the widget from the layout parent widget.
     *
@@ -126,12 +127,14 @@ class DockLayout_ protected () extends Layout {
     * This is a no-op if the widget is not attached.
     */
   /* protected */ def detachWidget(widget: Widget): Unit = js.native
+  
   /**
     * Create an iterator over the handles in the layout.
     *
     * @returns A new iterator over the handles in the layout.
     */
   def handles(): IIterator[HTMLDivElement] = js.native
+  
   /**
     * Find the tab area which contains the given client position.
     *
@@ -143,6 +146,12 @@ class DockLayout_ protected () extends Layout {
     *   `null` if there is no tab area at the given position.
     */
   def hitTestTabAreas(clientX: Double, clientY: Double): ITabAreaGeometry | Null = js.native
+  
+  /**
+    * Whether the dock layout is empty.
+    */
+  val isEmpty: Boolean = js.native
+  
   /**
     * Move a handle to the given offset position.
     *
@@ -164,6 +173,12 @@ class DockLayout_ protected () extends Layout {
     * the handle orientation.
     */
   def moveHandle(handle: HTMLDivElement, offsetX: Double, offsetY: Double): Unit = js.native
+  
+  /**
+    * The renderer used by the dock layout.
+    */
+  val renderer: IRenderer = js.native
+  
   /**
     * Restore the layout to a previously saved configuration.
     *
@@ -174,6 +189,7 @@ class DockLayout_ protected () extends Layout {
     * contained in the config will be unparented.
     */
   def restoreLayout(config: ILayoutConfig): Unit = js.native
+  
   /**
     * Save the current configuration of the dock layout.
     *
@@ -184,6 +200,7 @@ class DockLayout_ protected () extends Layout {
     * in order to restore the layout to its current configuration.
     */
   def saveLayout(): ILayoutConfig = js.native
+  
   /**
     * Create an iterator over the selected widgets in the layout.
     *
@@ -194,6 +211,15 @@ class DockLayout_ protected () extends Layout {
     * of each tab bar in the layout.
     */
   def selectedWidgets(): IIterator[Widget] = js.native
+  
+  /**
+    * Get the inter-element spacing for the dock layout.
+    */
+  /**
+    * Set the inter-element spacing for the dock layout.
+    */
+  var spacing: Double = js.native
+  
   /**
     * Create an iterator over the tab bars in the layout.
     *
@@ -203,6 +229,7 @@ class DockLayout_ protected () extends Layout {
     * This iterator does not include the user widgets.
     */
   def tabBars(): IIterator[TabBar[Widget]] = js.native
+  
   /**
     * Create an iterator over the user widgets in the layout.
     *
@@ -213,4 +240,3 @@ class DockLayout_ protected () extends Layout {
     */
   def widgets(): IIterator[Widget] = js.native
 }
-

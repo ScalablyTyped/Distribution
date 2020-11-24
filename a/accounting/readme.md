@@ -11,8 +11,8 @@ number, money and currency formatting library
 | Full name          | accounting |
 | Keywords           | accounting, number, money, currency, format, utilities, finance, exchange |
 | # releases         | 0 |
-| # dependents       | 171 |
-| # downloads        | 7543550 |
+| # dependents       | 193 |
+| # downloads        | 9482043 |
 | # stars            | 24 |
 
 ## Links

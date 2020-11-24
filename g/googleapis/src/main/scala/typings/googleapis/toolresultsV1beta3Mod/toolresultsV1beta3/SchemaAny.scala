@@ -2,7 +2,7 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `Any` contains an arbitrary serialized protocol buffer message along with a
@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaAny extends js.Object {
+  
   /**
     * A URL/resource name that uniquely identifies the type of the serialized
     * protocol buffer message. This string must contain at least one
@@ -60,38 +61,45 @@ trait SchemaAny extends js.Object {
     * scheme) might be used with implementation specific semantics.
     */
   var typeUrl: js.UndefOr[String] = js.native
+  
   /**
     * Must be a valid serialized protocol buffer of the above specified type.
     */
   var value: js.UndefOr[String] = js.native
 }
-
 object SchemaAny {
+  
   @scala.inline
   def apply(): SchemaAny = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAny]
   }
+  
   @scala.inline
   implicit class SchemaAnyOps[Self <: SchemaAny] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setTypeUrl(value: String): Self = this.set("typeUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTypeUrl: Self = this.set("typeUrl", js.undefined)
+    
     @scala.inline
     def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValue: Self = this.set("value", js.undefined)
   }
-  
 }
-

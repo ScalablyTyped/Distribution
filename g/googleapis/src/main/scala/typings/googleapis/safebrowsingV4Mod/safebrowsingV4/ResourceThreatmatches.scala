@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/safebrowsing/v4", "safebrowsing_v4.Resource$Threatmatches")
 @js.native
 class ResourceThreatmatches protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * safebrowsing.threatMatches.find
     * @desc Finds the threat entries that match the Safe Browsing lists.
@@ -45,4 +47,3 @@ class ResourceThreatmatches protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFindThreatMatchesResponse]
   ): Unit = js.native
 }
-

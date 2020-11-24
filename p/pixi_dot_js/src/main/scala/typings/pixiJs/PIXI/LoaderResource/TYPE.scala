@@ -2,14 +2,14 @@ package typings.pixiJs.PIXI.LoaderResource
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TYPE extends js.Object
-
 @JSGlobal("PIXI.LoaderResource.TYPE")
 @js.native
 object TYPE extends js.Object {
+  
   @js.native
   sealed trait AUDIO extends TYPE
   
@@ -30,6 +30,4 @@ object TYPE extends js.Object {
   
   @js.native
   sealed trait XML extends TYPE
-  
 }
-

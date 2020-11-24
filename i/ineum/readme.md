@@ -1,7 +1,7 @@
 
 # Scala.js typings for ineum
 
-Typings are for version 175.0
+Typings are for version 187.0
 
 
 

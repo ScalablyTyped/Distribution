@@ -2,11 +2,12 @@ package typings.boom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("boom", "unsupportedMediaType")
 @js.native
 object unsupportedMediaType extends js.Object {
+  
   /**
     * Returns a 415 Unsupported Media Type error
     * @param message optional message.
@@ -18,4 +19,3 @@ object unsupportedMediaType extends js.Object {
   def apply[Data](message: String): Boom[Data] = js.native
   def apply[Data](message: String, data: Data): Boom[Data] = js.native
 }
-

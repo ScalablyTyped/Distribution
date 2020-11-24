@@ -5,12 +5,14 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HttpAgent extends Agent {
-  val statusChanged: Boolean = js.native
+  
   def createSocket(req: IncomingMessage, options: RequestOptions, cb: js.Function): Unit = js.native
+  
   def getCurrentStatus(): AgentStatus = js.native
+  
+  val statusChanged: Boolean = js.native
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.now` exported as a module.
 | Full name          | lodash.now |
 | Keywords           | lodash-modularized, now |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2491979 |
+| # dependents       | 4 |
+| # downloads        | 2422028 |
 | # stars            | 0 |
 
 ## Links

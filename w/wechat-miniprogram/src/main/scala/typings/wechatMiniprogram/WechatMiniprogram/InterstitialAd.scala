@@ -2,42 +2,52 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InterstitialAd extends js.Object {
+  
   /** [InterstitialAd.destroy()](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.destroy.html)
     *
     * 销毁插屏广告实例。
     *
     * 最低基础库： `2.8.0` */
   def destroy(): Unit = js.native
+  
   /** [Promise InterstitialAd.load()](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.load.html)
     *
     * 加载插屏广告。
     *
     * 最低基础库： `2.8.0` */
   def load(): js.Promise[_] = js.native
+  
   /** [InterstitialAd.offClose(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.offClose.html)
     *
     * 取消监听插屏广告关闭事件 */
+  def offClose(): Unit = js.native
   def offClose(/** 插屏广告关闭事件的回调函数 */
-  callback: OffCloseCallback): Unit = js.native
+  callback: UDPSocketOffCloseCallback): Unit = js.native
+  
   /** [InterstitialAd.offError(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.offError.html)
     *
     * 取消监听插屏错误事件 */
+  def offError(): Unit = js.native
   def offError(/** 插屏错误事件的回调函数 */
-  callback: OffErrorCallback): Unit = js.native
+  callback: InterstitialAdOffErrorCallback): Unit = js.native
+  
   /** [InterstitialAd.offLoad(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.offLoad.html)
     *
     * 取消监听插屏广告加载事件 */
+  def offLoad(): Unit = js.native
   def offLoad(/** 插屏广告加载事件的回调函数 */
   callback: OffLoadCallback): Unit = js.native
+  
   /** [InterstitialAd.onClose(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.onClose.html)
     *
     * 监听插屏广告关闭事件。 */
   def onClose(/** 插屏广告关闭事件的回调函数 */
   callback: UDPSocketOnCloseCallback): Unit = js.native
+  
   /** [InterstitialAd.onError(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.onError.html)
     *
     * 监听插屏错误事件。
@@ -61,11 +71,13 @@ trait InterstitialAd extends js.Object {
     * | 1008  | 广告单元已关闭  | 该广告位的广告能力已经被关闭 | 请前往mp.weixin.qq.com重新打开对应广告位的展现。| */
   def onError(/** 插屏错误事件的回调函数 */
   callback: InterstitialAdOnErrorCallback): Unit = js.native
+  
   /** [InterstitialAd.onLoad(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.onLoad.html)
     *
     * 监听插屏广告加载事件。 */
   def onLoad(/** 插屏广告加载事件的回调函数 */
   callback: OnLoadCallback): Unit = js.native
+  
   /** [Promise InterstitialAd.show()](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.show.html)
     *
     * 显示插屏广告。
@@ -84,53 +96,3 @@ trait InterstitialAd extends js.Object {
     * | 2005  | 广告调用异常  | 插屏广告实例不允许跨页面调用 | */
   def show(): js.Promise[_] = js.native
 }
-
-object InterstitialAd {
-  @scala.inline
-  def apply(
-    destroy: () => Unit,
-    load: () => js.Promise[_],
-    offClose: OffCloseCallback => Unit,
-    offError: OffErrorCallback => Unit,
-    offLoad: OffLoadCallback => Unit,
-    onClose: UDPSocketOnCloseCallback => Unit,
-    onError: InterstitialAdOnErrorCallback => Unit,
-    onLoad: OnLoadCallback => Unit,
-    show: () => js.Promise[_]
-  ): InterstitialAd = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), load = js.Any.fromFunction0(load), offClose = js.Any.fromFunction1(offClose), offError = js.Any.fromFunction1(offError), offLoad = js.Any.fromFunction1(offLoad), onClose = js.Any.fromFunction1(onClose), onError = js.Any.fromFunction1(onError), onLoad = js.Any.fromFunction1(onLoad), show = js.Any.fromFunction0(show))
-    __obj.asInstanceOf[InterstitialAd]
-  }
-  @scala.inline
-  implicit class InterstitialAdOps[Self <: InterstitialAd] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    @scala.inline
-    def setLoad(value: () => js.Promise[_]): Self = this.set("load", js.Any.fromFunction0(value))
-    @scala.inline
-    def setOffClose(value: OffCloseCallback => Unit): Self = this.set("offClose", js.Any.fromFunction1(value))
-    @scala.inline
-    def setOffError(value: OffErrorCallback => Unit): Self = this.set("offError", js.Any.fromFunction1(value))
-    @scala.inline
-    def setOffLoad(value: OffLoadCallback => Unit): Self = this.set("offLoad", js.Any.fromFunction1(value))
-    @scala.inline
-    def setOnClose(value: UDPSocketOnCloseCallback => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
-    @scala.inline
-    def setOnError(value: InterstitialAdOnErrorCallback => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
-    @scala.inline
-    def setOnLoad(value: OnLoadCallback => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
-    @scala.inline
-    def setShow(value: () => js.Promise[_]): Self = this.set("show", js.Any.fromFunction0(value))
-  }
-  
-}
-

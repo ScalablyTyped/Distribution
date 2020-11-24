@@ -2,7 +2,7 @@ package typings.agGrid.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid", "RowNodeBlockLoader")
 @js.native
@@ -10,4 +10,3 @@ class RowNodeBlockLoader protected ()
   extends typings.agGrid.rowNodeBlockLoaderMod.RowNodeBlockLoader {
   def this(maxConcurrentRequests: Double) = this()
 }
-

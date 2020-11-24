@@ -7,10 +7,11 @@ import typings.googleapis.googleapisStrings.v2
 import typings.googleapis.googleapisStrings.v2beta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn54 extends js.Object {
+  
   def apply(options: Options): Deploymentmanager = js.native
   def apply(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native
   def apply(options: typings.googleapis.v2betaMod.deploymentmanagerV2beta.Options): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = js.native
@@ -18,4 +19,3 @@ trait Fn54 extends js.Object {
   def apply(version: v2): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native
   def apply(version: v2beta): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = js.native
 }
-

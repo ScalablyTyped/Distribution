@@ -10,9 +10,9 @@ Typings are for version 2.2.0
 | ------------------ | :-------------: |
 | Full name          | p-try |
 | Keywords           | promise, try, resolve, function, catch, async, await, promises, settled, ponyfill, polyfill, shim, bluebird |
-| # releases         | 4 |
-| # dependents       | 62 |
-| # downloads        | 717811679 |
+| # releases         | 3 |
+| # dependents       | 113 |
+| # downloads        | 1088427045 |
 | # stars            | 0 |
 
 ## Links

@@ -2,12 +2,13 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShareStatic extends js.Object {
+  
   var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction = js.native
-  var sharedAction: typings.reactNative.reactNativeStrings.sharedAction = js.native
+  
   /**
     * Open a dialog to share text content.
     *
@@ -42,5 +43,6 @@ trait ShareStatic extends js.Object {
     */
   def share(content: ShareContent): js.Promise[ShareAction] = js.native
   def share(content: ShareContent, options: ShareOptions): js.Promise[ShareAction] = js.native
+  
+  var sharedAction: typings.reactNative.reactNativeStrings.sharedAction = js.native
 }
-

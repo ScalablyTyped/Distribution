@@ -4,7 +4,7 @@ import typings.std.Element
 import typings.stropheJs.anon.MatchBare
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class: Strophe.Connection
   *  XMPP Connection manager.
@@ -79,13 +79,7 @@ class Connection protected () extends js.Object {
     */
   def this(service: String) = this()
   def this(service: String, options: ConnectionOptions) = this()
-  var authcid: String = js.native
-  var authzid: String = js.native
-  var domain: String = js.native
-  var jid: String = js.native
-  var maxRetries: Double = js.native
-  var pass: String = js.native
-  var servtype: String = js.native
+  
   /** Function: addHandler
     *  Add a stanza handler for the connection.
     *
@@ -141,6 +135,7 @@ class Connection protected () extends js.Object {
     from: String,
     options: MatchBare
   ): js.Any = js.native
+  
   /** Function: addTimedHandler
     *  Add a timed handler to the connection.
     *
@@ -164,6 +159,7 @@ class Connection protected () extends js.Object {
     *    A reference to the handler that can be used to remove it.
     */
   def addTimedHandler(period: Double, handler: js.Function0[Boolean]): js.Any = js.native
+  
   /** Function: attach
     *  Attach to an already created and authenticated BOSH session.
     *
@@ -307,6 +303,11 @@ class Connection protected () extends js.Object {
     hold: Double,
     wind: Double
   ): Unit = js.native
+  
+  var authcid: String = js.native
+  
+  var authzid: String = js.native
+  
   /** Function: connect
     *  Starts the connection process.
     *
@@ -344,6 +345,7 @@ class Connection protected () extends js.Object {
     hold: js.UndefOr[Double],
     route: js.UndefOr[String]
   ): Unit = js.native
+  
   /** Function: deleteHandler
     *  Delete a stanza handler for a connection.
     *
@@ -355,6 +357,7 @@ class Connection protected () extends js.Object {
     *    (Strophe.Handler) handRef - The handler reference.
     */
   def deleteHandler(handRef: js.Any): Unit = js.native
+  
   /** Function: deleteTimedHandler
     *  Delete a timed handler for a connection.
     *
@@ -366,6 +369,7 @@ class Connection protected () extends js.Object {
     *    (Strophe.TimedHandler) handRef - The handler reference.
     */
   def deleteTimedHandler(handRef: js.Any): Unit = js.native
+  
   /** Function: disconnect
     *  Start the graceful disconnection process.
     *
@@ -383,6 +387,9 @@ class Connection protected () extends js.Object {
     *    (String) reason - The reason the disconnect is occuring.
     */
   def disconnect(reason: String): Unit = js.native
+  
+  var domain: String = js.native
+  
   /** Function: flush
     *  Immediately send any pending outgoing data.
     *
@@ -392,6 +399,7 @@ class Connection protected () extends js.Object {
     *  immediately send all pending data.
     */
   def flush(): Unit = js.native
+  
   /** Function: getUniqueId
     *  Generate a unique ID for use in <iq/> elements.
     *
@@ -417,6 +425,13 @@ class Connection protected () extends js.Object {
   def getUniqueId(): String = js.native
   def getUniqueId(suffix: String): String = js.native
   def getUniqueId(suffix: Double): String = js.native
+  
+  var jid: String = js.native
+  
+  var maxRetries: Double = js.native
+  
+  var pass: String = js.native
+  
   /** Function: pause
     *  Pause the request manager.
     *
@@ -427,6 +442,7 @@ class Connection protected () extends js.Object {
     *  many request trips.
     */
   def pause(): Unit = js.native
+  
   /** Function: rawInput
     *  User overrideable function that receives raw data coming into the
     *  connection.
@@ -440,6 +456,7 @@ class Connection protected () extends js.Object {
     *    (String) data - The data received by the connection.
     */
   def rawInput(data: String): Unit = js.native
+  
   /** Function: rawOutput
     *  User overrideable function that receives raw data sent to the
     *  connection.
@@ -453,6 +470,7 @@ class Connection protected () extends js.Object {
     *    (String) data - The data sent by the connection.
     */
   def rawOutput(data: String): Unit = js.native
+  
   /** Function: reset
     *  Reset the connection.
     *
@@ -460,6 +478,7 @@ class Connection protected () extends js.Object {
     *  before that connection is reused.
     */
   def reset(): Unit = js.native
+  
   /**
     * Function: restore
     * Attempt to restore a cached BOSH session.
@@ -639,12 +658,14 @@ class Connection protected () extends js.Object {
     hold: Double,
     route: String
   ): Unit = js.native
+  
   /** Function: resume
     *  Resume the request manager.
     *
     *  This resumes after pause() has been called.
     */
   def resume(): Unit = js.native
+  
   def send(elem: js.Array[Element]): Unit = js.native
   /** Function: send
     *  Send a stanza.
@@ -660,6 +681,7 @@ class Connection protected () extends js.Object {
     */
   def send(elem: Element): Unit = js.native
   def send(elem: Builder): Unit = js.native
+  
   /** Function: sendIQ
     *  Helper function to send IQ stanzas.
     *
@@ -738,6 +760,9 @@ class Connection protected () extends js.Object {
     errback: js.Function1[/* stanza */ Element, _],
     timeout: Double
   ): String = js.native
+  
+  var servtype: String = js.native
+  
   /** Function: xmlInput
     *  User overrideable function that receives XML data coming into the
     *  connection.
@@ -757,6 +782,7 @@ class Connection protected () extends js.Object {
     *    (XMLElement) elem - The XML data received by the connection.
     */
   def xmlInput(elem: Element): Unit = js.native
+  
   /** Function: xmlOutput
     *  User overrideable function that receives XML data sent to the
     *  connection.
@@ -777,4 +803,3 @@ class Connection protected () extends js.Object {
     */
   def xmlOutput(elem: Element): Unit = js.native
 }
-

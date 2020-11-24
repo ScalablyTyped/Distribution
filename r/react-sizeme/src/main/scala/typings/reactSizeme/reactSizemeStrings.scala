@@ -2,9 +2,19 @@ package typings.reactSizeme
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSizemeStrings {
+  
+  @scala.inline
+  def debounce: debounce = "debounce".asInstanceOf[debounce]
+  
+  @scala.inline
+  def size: size = "size".asInstanceOf[size]
+  
+  @scala.inline
+  def throttle: throttle = "throttle".asInstanceOf[throttle]
+  
   @js.native
   sealed trait debounce extends js.Object
   
@@ -13,12 +23,4 @@ object reactSizemeStrings {
   
   @js.native
   sealed trait throttle extends js.Object
-  
-  @scala.inline
-  def debounce: debounce = "debounce".asInstanceOf[debounce]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def throttle: throttle = "throttle".asInstanceOf[throttle]
 }
-

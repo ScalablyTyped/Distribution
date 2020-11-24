@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Transferconfigs$Runs$Transferlogs")
 @js.native
 class ResourceProjectsTransferconfigsRunsTransferlogs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.runs.transferLogs.list
     * @desc Returns user facing log messages for the data transfer run.
@@ -49,4 +51,3 @@ class ResourceProjectsTransferconfigsRunsTransferlogs protected () extends js.Ob
     callback: BodyResponseCallback[SchemaListTransferLogsResponse]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Simple, easy to use component for pagination. Compatible with bootstrap paginato
 | ------------------ | :-------------: |
 | Full name          | react-js-pagination |
 | Keywords           | react, reactjs, pagination, paginator, bootstrap, reload, webpack, babel, react-transform, react-component |
-| # releases         | 3 |
-| # dependents       | 27 |
-| # downloads        | 1231887 |
+| # releases         | 2 |
+| # dependents       | 37 |
+| # downloads        | 1843721 |
 | # stars            | 6 |
 
 ## Links

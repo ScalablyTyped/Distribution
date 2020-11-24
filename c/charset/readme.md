@@ -10,9 +10,9 @@ Get the content charset from header and html content-type.
 | ------------------ | :-------------: |
 | Full name          | charset |
 | Keywords           | charset, content-type, ContentType, Content-Type, xml, encoding |
-| # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 5747595 |
+| # releases         | 0 |
+| # dependents       | 46 |
+| # downloads        | 8915187 |
 | # stars            | 3 |
 
 ## Links

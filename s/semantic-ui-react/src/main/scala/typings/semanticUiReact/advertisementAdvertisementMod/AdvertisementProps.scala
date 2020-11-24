@@ -26,14 +26,14 @@ import typings.semanticUiReact.semanticUiReactStrings.skyscraper
 import typings.semanticUiReact.semanticUiReactStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdvertisementProps
   extends StrictAdvertisementProps
      with /* key */ StringDictionary[js.Any]
-
 object AdvertisementProps {
+  
   @scala.inline
   def apply(
     unit: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`)
@@ -42,4 +42,3 @@ object AdvertisementProps {
     __obj.asInstanceOf[AdvertisementProps]
   }
 }
-

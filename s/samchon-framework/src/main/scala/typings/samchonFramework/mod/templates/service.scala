@@ -3,11 +3,12 @@ package typings.samchonFramework.mod.templates
 import typings.samchon.webClientDriverMod.WebClientDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon-framework", "templates.service")
 @js.native
 object service extends js.Object {
+  
   @js.native
   abstract class Client protected ()
     extends typings.samchon.mod.templates.service.Client {
@@ -49,6 +50,4 @@ object service extends js.Object {
       */
     def this(server: typings.samchon.serviceServerMod.Server) = this()
   }
-  
 }
-

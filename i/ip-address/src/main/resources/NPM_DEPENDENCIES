@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ip-address" : "7.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ip-address" : "7.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

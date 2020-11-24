@@ -11,8 +11,8 @@ A general purpose buffer pool.
 | Full name          | @protobufjs/pool |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 57676305 |
+| # dependents       | 34 |
+| # downloads        | 112503671 |
 | # stars            | 0 |
 
 ## Links

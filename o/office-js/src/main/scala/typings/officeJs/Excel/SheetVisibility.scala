@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SheetVisibility extends js.Object
-
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.SheetVisibility")
 @js.native
 object SheetVisibility extends js.Object {
+  
   @js.native
   sealed trait hidden extends SheetVisibility
   
@@ -21,6 +21,4 @@ object SheetVisibility extends js.Object {
   
   @js.native
   sealed trait visible extends SheetVisibility
-  
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style service {@link TextInputStream} .
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait XTextInputStream2
   extends XTextInputStream
      with XActiveDataSink
-
 object XTextInputStream2 {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -38,4 +38,3 @@ object XTextInputStream2 {
     __obj.asInstanceOf[XTextInputStream2]
   }
 }
-

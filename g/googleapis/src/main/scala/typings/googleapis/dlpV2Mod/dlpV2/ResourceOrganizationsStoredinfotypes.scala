@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Organizations$Storedinfotypes")
 @js.native
 class ResourceOrganizationsStoredinfotypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dlp.organizations.storedInfoTypes.create
     * @desc Creates a pre-built stored infoType to be used for inspection. See
@@ -47,6 +49,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2StoredInfoType]
   ): Unit = js.native
+  
   /**
     * dlp.organizations.storedInfoTypes.delete
     * @desc Deletes a stored infoType. See
@@ -80,6 +83,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dlp.organizations.storedInfoTypes.get
     * @desc Gets a stored infoType. See
@@ -113,6 +117,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2StoredInfoType]
   ): Unit = js.native
+  
   /**
     * dlp.organizations.storedInfoTypes.list
     * @desc Lists stored infoTypes. See
@@ -149,6 +154,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse]
   ): Unit = js.native
+  
   /**
     * dlp.organizations.storedInfoTypes.patch
     * @desc Updates the stored infoType by creating a new version. The existing
@@ -185,4 +191,3 @@ class ResourceOrganizationsStoredinfotypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2StoredInfoType]
   ): Unit = js.native
 }
-

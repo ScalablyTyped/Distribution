@@ -12,7 +12,7 @@ Check something against an array of types.
 | Keywords           | check, multi, multiple, test, type, typeof |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 3454 |
+| # downloads        | 5558 |
 | # stars            | 0 |
 
 ## Links

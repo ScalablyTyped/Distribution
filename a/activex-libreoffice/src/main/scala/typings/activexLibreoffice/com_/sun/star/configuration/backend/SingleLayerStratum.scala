@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to a single layer of configuration data */
 @js.native
 trait SingleLayerStratum
   extends XSingleLayerStratum
      with XBackendEntities
-
 object SingleLayerStratum {
+  
   @scala.inline
   def apply(
     AdminEntity: String,
@@ -30,4 +30,3 @@ object SingleLayerStratum {
     __obj.asInstanceOf[SingleLayerStratum]
   }
 }
-

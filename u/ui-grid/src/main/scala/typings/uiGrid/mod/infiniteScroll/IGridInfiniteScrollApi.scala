@@ -5,12 +5,11 @@ import typings.uiGrid.anon.NeedLoadMoreData
 import typings.uiGrid.mod.IGridInstanceOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridInfiniteScrollApi[TEntity] extends js.Object {
-  // Events
-  var on: NeedLoadMoreData = js.native
+  
   // Methods
   /**
     * Call this function when you have loaded the additional data requested.
@@ -32,6 +31,7 @@ trait IGridInfiniteScrollApi[TEntity] extends js.Object {
     *          scroll positioning
     */
   def dataLoaded(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+  
   /**
     * Adjusts the scroll position after you've removed data at the bottom.
     * You should have called saveScrollPercentage before you remove the data,
@@ -51,6 +51,7 @@ trait IGridInfiniteScrollApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
     */
   def dataRemovedBottom(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+  
   /**
     * Adjusts the scroll position after you've removed data at the bottom.
     * You should have called saveScrollPercentage before you remove the data,
@@ -70,6 +71,10 @@ trait IGridInfiniteScrollApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
     */
   def dataRemovedTop(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+  
+  // Events
+  var on: NeedLoadMoreData = js.native
+  
   /**
     * Call this function when you have taken some action that makes the current scroll position invalid.
     * For example, if you're using external sorting and you've resorted then you might reset the scroll,
@@ -82,10 +87,10 @@ trait IGridInfiniteScrollApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
     */
   def resetScroll(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+  
   /**
     * Saves the scroll percentage and number of visible rows before you adjust the data,
     * used if you're subsequently going to call dataRemovedTop or dataRemovedBottom
     */
   def saveScrollPercentage(): Unit = js.native
 }
-

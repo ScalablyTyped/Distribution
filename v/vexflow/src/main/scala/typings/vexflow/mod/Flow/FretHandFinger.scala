@@ -3,7 +3,7 @@ package typings.vexflow.mod.Flow
 import typings.vexflow.anon.Leftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.FretHandFinger")
 @js.native
@@ -12,12 +12,12 @@ class FretHandFinger protected ()
   def this(number: String) = this()
   def this(number: Double) = this()
 }
-
 /* static members */
 @JSImport("vexflow", "Flow.FretHandFinger")
 @js.native
 object FretHandFinger extends js.Object {
+  
   val CATEGORY: String = js.native
+  
   def format(nums: js.Array[typings.vexflow.Vex.Flow.FretHandFinger], state: Leftshift): Unit = js.native
 }
-

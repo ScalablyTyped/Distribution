@@ -26,7 +26,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a check box control which can (but not necessarily has to) be bound to a database field.
@@ -44,8 +44,8 @@ trait CheckBox
      with XCheckBox
      with XLayoutConstrains
      with XBoundControl
-
 object CheckBox {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -115,4 +115,3 @@ object CheckBox {
     __obj.asInstanceOf[CheckBox]
   }
 }
-

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigatewayv2", "IntegrationResponse")
 @js.native
@@ -23,11 +23,11 @@ class IntegrationResponse protected ()
   def this(name: String, args: IntegrationResponseArgs) = this()
   def this(name: String, args: IntegrationResponseArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigatewayv2", "IntegrationResponse")
 @js.native
 object IntegrationResponse extends js.Object {
+  
   /**
     * Get an existing IntegrationResponse resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object IntegrationResponse extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.integrationResponseMod.IntegrationResponse = js.native
   def get(name: String, id: Input[ID], state: IntegrationResponseState): typings.pulumiAws.integrationResponseMod.IntegrationResponse = js.native
   def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): typings.pulumiAws.integrationResponseMod.IntegrationResponse = js.native
+  
   /**
     * Returns true if the given object is an instance of IntegrationResponse.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean = js.native
 }
-

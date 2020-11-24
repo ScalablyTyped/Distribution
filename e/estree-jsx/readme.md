@@ -9,9 +9,9 @@ TypeScript type definitions for JSX
 | ------------------ | :-------------: |
 | Full name          | estree-jsx |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 928 |
 | # stars            | 0 |
 
 ## Links

@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/elasticache/parameterGroup", "ParameterGroup")
 @js.native
@@ -22,28 +22,32 @@ class ParameterGroup protected () extends CustomResource {
     */
   def this(name: String, args: ParameterGroupArgs) = this()
   def this(name: String, args: ParameterGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The description of the ElastiCache parameter group. Defaults to "Managed by Pulumi".
     */
   val description: Output_[String] = js.native
+  
   /**
     * The family of the ElastiCache parameter group.
     */
   val family: Output_[String] = js.native
+  
   /**
     * The name of the ElastiCache parameter.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A list of ElastiCache parameters to apply.
     */
   val parameters: Output_[js.UndefOr[js.Array[ParameterGroupParameter]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/elasticache/parameterGroup", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {
+  
   /**
     * Get an existing ParameterGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -57,10 +61,10 @@ object ParameterGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ParameterGroup = js.native
   def get(name: String, id: Input[ID], state: ParameterGroupState): ParameterGroup = js.native
   def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): ParameterGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/parameterGroup.ParameterGroup */ Boolean = js.native
 }
-

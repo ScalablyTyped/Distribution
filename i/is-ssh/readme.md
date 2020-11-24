@@ -10,9 +10,9 @@ Check if an input value is a ssh url or not.
 | ------------------ | :-------------: |
 | Full name          | is-ssh |
 | Keywords           | ssh, url, check, parser |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 30300741 |
+| # releases         | 3 |
+| # dependents       | 16 |
+| # downloads        | 65431760 |
 | # stars            | 1 |
 
 ## Links

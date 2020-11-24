@@ -3,13 +3,15 @@ package typings.qlikVisualizationextensions
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("VariableAPI")
 @js.native
 object VariableAPI extends js.Object {
+  
   @js.native
   trait IVariable extends js.Object {
+    
     /**
       * Creates a variable.
       * @param qProp - Variable name or properties. Properties:
@@ -24,6 +26,7 @@ object VariableAPI extends js.Object {
       */
     def create(qProp: String): IPromise[_] = js.native
     def create(qProp: js.Any): IPromise[_] = js.native
+    
     /**
       * Creates a session variable, that is a temporary variable which is not
       * persisted and needs to be recreated for each new session.
@@ -38,18 +41,21 @@ object VariableAPI extends js.Object {
       * @return - A promise of a variable model.
       */
     def createSessionVariable(qProp: js.Any): IPromise[_] = js.native
+    
     /**
       * Gets a variable by id.
       * @param qId - Variable id.
       * @return - A promise of a variable model.
       */
     def get(qId: String): IPromise[_] = js.native
+    
     /**
       * Gets a variable by name.
       * @param qName - Variable name.
       * @return - A promise of a variable model.
       */
     def getByName(qName: String): IPromise[_] = js.native
+    
     /**
       * Gets variable content.
       * @param name - Variable name.
@@ -57,6 +63,7 @@ object VariableAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def getContent(name: String, callback: js.Any): IPromise[_] = js.native
+    
     /**
       * Sets the content of a variable.
       * @param name - Variable name.
@@ -64,6 +71,7 @@ object VariableAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def setContent(name: String, content: String): IPromise[_] = js.native
+    
     /**
       * Sets a numeric value as a variable.
       * @param qName - Variable name.
@@ -71,6 +79,7 @@ object VariableAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def setNumValue(qName: String, qVal: Double): IPromise[_] = js.native
+    
     /**
       * Sets variable string value.
       * @param qName - Variable name.
@@ -79,6 +88,4 @@ object VariableAPI extends js.Object {
       */
     def setStringValue(qName: String, qVal: String): IPromise[_] = js.native
   }
-  
 }
-

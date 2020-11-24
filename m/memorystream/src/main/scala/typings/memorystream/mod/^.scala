@@ -3,7 +3,7 @@ package typings.memorystream.mod
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memorystream", JSImport.Namespace)
 @js.native
@@ -13,4 +13,3 @@ class ^ () extends Duplex {
   def this(data: js.UndefOr[DataType], options: Options) = this()
   def this(data: js.Array[DataType], options: Options) = this()
 }
-

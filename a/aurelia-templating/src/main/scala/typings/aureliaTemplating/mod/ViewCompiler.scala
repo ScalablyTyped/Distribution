@@ -4,7 +4,7 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewCompiler")
 @js.native
@@ -15,6 +15,7 @@ class ViewCompiler protected () extends js.Object {
     * @param resources The global resources used during compilation when none are provided for compilation.
     */
   def this(bindingLanguage: BindingLanguage, resources: ViewResources_) = this()
+  
   def compile(source: String): ViewFactory = js.native
   def compile(source: String, resources: js.UndefOr[scala.Nothing], compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: String, resources: ViewResources_): ViewFactory = js.native
@@ -39,11 +40,10 @@ class ViewCompiler protected () extends js.Object {
   def compile(source: Element, resources: ViewResources_): ViewFactory = js.native
   def compile(source: Element, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
 }
-
 /* static members */
 @JSImport("aurelia-templating", "ViewCompiler")
 @js.native
 object ViewCompiler extends js.Object {
+  
   def inject(): js.Any = js.native
 }
-

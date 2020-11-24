@@ -4,9 +4,103 @@ import typings.menubar.getWindowPositionMod.TaskbarLocation_
 import typings.menubar.getWindowPositionMod.WindowPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menubarStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
+  
+  @scala.inline
+  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  
+  @scala.inline
+  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  
+  @scala.inline
+  def browserWindow: browserWindow = "browserWindow".asInstanceOf[browserWindow]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def dir: dir = "dir".asInstanceOf[dir]
+  
+  @scala.inline
+  def icon: icon = "icon".asInstanceOf[icon]
+  
+  @scala.inline
+  def index: index = "index".asInstanceOf[index]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def leftCenter: leftCenter = "leftCenter".asInstanceOf[leftCenter]
+  
+  @scala.inline
+  def loadUrlOptions: loadUrlOptions = "loadUrlOptions".asInstanceOf[loadUrlOptions]
+  
+  @scala.inline
+  def preloadWindow: preloadWindow = "preloadWindow".asInstanceOf[preloadWindow]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rightCenter: rightCenter = "rightCenter".asInstanceOf[rightCenter]
+  
+  @scala.inline
+  def showDockIcon: showDockIcon = "showDockIcon".asInstanceOf[showDockIcon]
+  
+  @scala.inline
+  def showOnAllWorkspaces: showOnAllWorkspaces = "showOnAllWorkspaces".asInstanceOf[showOnAllWorkspaces]
+  
+  @scala.inline
+  def showOnRightClick: showOnRightClick = "showOnRightClick".asInstanceOf[showOnRightClick]
+  
+  @scala.inline
+  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
+  
+  @scala.inline
+  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  
+  @scala.inline
+  def topRight: topRight = "topRight".asInstanceOf[topRight]
+  
+  @scala.inline
+  def tray: tray = "tray".asInstanceOf[tray]
+  
+  @scala.inline
+  def trayBottomCenter: trayBottomCenter = "trayBottomCenter".asInstanceOf[trayBottomCenter]
+  
+  @scala.inline
+  def trayBottomLeft: trayBottomLeft = "trayBottomLeft".asInstanceOf[trayBottomLeft]
+  
+  @scala.inline
+  def trayBottomRight: trayBottomRight = "trayBottomRight".asInstanceOf[trayBottomRight]
+  
+  @scala.inline
+  def trayCenter: trayCenter = "trayCenter".asInstanceOf[trayCenter]
+  
+  @scala.inline
+  def trayLeft: trayLeft = "trayLeft".asInstanceOf[trayLeft]
+  
+  @scala.inline
+  def trayRight: trayRight = "trayRight".asInstanceOf[trayRight]
+  
+  @scala.inline
+  def windowPosition: windowPosition = "windowPosition".asInstanceOf[windowPosition]
+  
   @js.native
   sealed trait bottom extends TaskbarLocation_
   
@@ -99,68 +193,4 @@ object menubarStrings {
   
   @js.native
   sealed trait windowPosition extends js.Object
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
-  @scala.inline
-  def browserWindow: browserWindow = "browserWindow".asInstanceOf[browserWindow]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def leftCenter: leftCenter = "leftCenter".asInstanceOf[leftCenter]
-  @scala.inline
-  def loadUrlOptions: loadUrlOptions = "loadUrlOptions".asInstanceOf[loadUrlOptions]
-  @scala.inline
-  def preloadWindow: preloadWindow = "preloadWindow".asInstanceOf[preloadWindow]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rightCenter: rightCenter = "rightCenter".asInstanceOf[rightCenter]
-  @scala.inline
-  def showDockIcon: showDockIcon = "showDockIcon".asInstanceOf[showDockIcon]
-  @scala.inline
-  def showOnAllWorkspaces: showOnAllWorkspaces = "showOnAllWorkspaces".asInstanceOf[showOnAllWorkspaces]
-  @scala.inline
-  def showOnRightClick: showOnRightClick = "showOnRightClick".asInstanceOf[showOnRightClick]
-  @scala.inline
-  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
-  @scala.inline
-  def tray: tray = "tray".asInstanceOf[tray]
-  @scala.inline
-  def trayBottomCenter: trayBottomCenter = "trayBottomCenter".asInstanceOf[trayBottomCenter]
-  @scala.inline
-  def trayBottomLeft: trayBottomLeft = "trayBottomLeft".asInstanceOf[trayBottomLeft]
-  @scala.inline
-  def trayBottomRight: trayBottomRight = "trayBottomRight".asInstanceOf[trayBottomRight]
-  @scala.inline
-  def trayCenter: trayCenter = "trayCenter".asInstanceOf[trayCenter]
-  @scala.inline
-  def trayLeft: trayLeft = "trayLeft".asInstanceOf[trayLeft]
-  @scala.inline
-  def trayRight: trayRight = "trayRight".asInstanceOf[trayRight]
-  @scala.inline
-  def windowPosition: windowPosition = "windowPosition".asInstanceOf[windowPosition]
 }
-

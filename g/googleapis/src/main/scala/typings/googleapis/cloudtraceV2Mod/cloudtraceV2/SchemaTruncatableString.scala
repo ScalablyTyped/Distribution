@@ -2,18 +2,20 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a string that might be shortened to a specified length.
   */
 @js.native
 trait SchemaTruncatableString extends js.Object {
+  
   /**
     * The number of bytes removed from the original string. If this value is 0,
     * then the string was not shortened.
     */
   var truncatedByteCount: js.UndefOr[Double] = js.native
+  
   /**
     * The shortened string. For example, if the original string is 500 bytes
     * long and the limit of the string is 128 bytes, then `value` contains the
@@ -24,33 +26,39 @@ trait SchemaTruncatableString extends js.Object {
     */
   var value: js.UndefOr[String] = js.native
 }
-
 object SchemaTruncatableString {
+  
   @scala.inline
   def apply(): SchemaTruncatableString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTruncatableString]
   }
+  
   @scala.inline
   implicit class SchemaTruncatableStringOps[Self <: SchemaTruncatableString] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setTruncatedByteCount(value: Double): Self = this.set("truncatedByteCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTruncatedByteCount: Self = this.set("truncatedByteCount", js.undefined)
+    
     @scala.inline
     def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValue: Self = this.set("value", js.undefined)
   }
-  
 }
-

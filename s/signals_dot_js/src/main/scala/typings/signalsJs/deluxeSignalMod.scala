@@ -3,11 +3,12 @@ package typings.signalsJs
 import typings.signalsJs.prioritySignalMod.PrioritySignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("signals.js/lib/org/osflash/signals/DeluxeSignal", JSImport.Namespace)
 @js.native
 object deluxeSignalMod extends js.Object {
+  
   @js.native
   class DeluxeSignal protected () extends PrioritySignal {
     def this(target: js.UndefOr[scala.Nothing], valueClasses: js.Any*) = this()
@@ -24,10 +25,10 @@ object deluxeSignalMod extends js.Object {
       * but this constructor has logic to support super(valueClasses).
       */
     def this(target: js.Object, valueClasses: js.Any*) = this()
+    
     var _target: js.Object = js.native
+    
     /** @inheritDoc */
     var target: js.Object = js.native
   }
-  
 }
-

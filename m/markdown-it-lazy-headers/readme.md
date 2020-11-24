@@ -11,8 +11,8 @@ Lazy ATX headers plugin for markdown-it
 | Full name          | markdown-it-lazy-headers |
 | Keywords           | markdown-it, markdown-it-plugin, markdown |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 441011 |
+| # dependents       | 13 |
+| # downloads        | 509201 |
 | # stars            | 1 |
 
 ## Links

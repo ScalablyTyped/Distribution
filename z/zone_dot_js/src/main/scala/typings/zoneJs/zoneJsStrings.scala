@@ -2,9 +2,37 @@ package typings.zoneJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoneJsStrings {
+  
+  @scala.inline
+  def canceling: canceling = "canceling".asInstanceOf[canceling]
+  
+  @scala.inline
+  def eventTask: eventTask = "eventTask".asInstanceOf[eventTask]
+  
+  @scala.inline
+  def macroTask: macroTask = "macroTask".asInstanceOf[macroTask]
+  
+  @scala.inline
+  def microTask: microTask = "microTask".asInstanceOf[microTask]
+  
+  @scala.inline
+  def notScheduled: notScheduled = "notScheduled".asInstanceOf[notScheduled]
+  
+  @scala.inline
+  def running: running = "running".asInstanceOf[running]
+  
+  @scala.inline
+  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
+  
+  @scala.inline
+  def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
   @js.native
   sealed trait canceling extends TaskState
   
@@ -31,24 +59,4 @@ object zoneJsStrings {
   
   @js.native
   sealed trait unknown extends TaskState
-  
-  @scala.inline
-  def canceling: canceling = "canceling".asInstanceOf[canceling]
-  @scala.inline
-  def eventTask: eventTask = "eventTask".asInstanceOf[eventTask]
-  @scala.inline
-  def macroTask: macroTask = "macroTask".asInstanceOf[macroTask]
-  @scala.inline
-  def microTask: microTask = "microTask".asInstanceOf[microTask]
-  @scala.inline
-  def notScheduled: notScheduled = "notScheduled".asInstanceOf[notScheduled]
-  @scala.inline
-  def running: running = "running".asInstanceOf[running]
-  @scala.inline
-  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
-  @scala.inline
-  def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
 }
-

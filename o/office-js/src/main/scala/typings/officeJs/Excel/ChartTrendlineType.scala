@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartTrendlineType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTrendlineType")
 @js.native
 object ChartTrendlineType extends js.Object {
+  
   @js.native
   sealed trait exponential extends ChartTrendlineType
   
@@ -30,6 +30,4 @@ object ChartTrendlineType extends js.Object {
   
   @js.native
   sealed trait power extends ChartTrendlineType
-  
 }
-

@@ -3,20 +3,21 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormStrings.array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.rcFieldForm.interfaceMod.BaseRule
+  - typings.rcFieldForm.interfaceMod.AggregationRule
   - typings.rcFieldForm.interfaceMod.ArrayRule
 */
 trait RuleObject extends js.Object
-
 object RuleObject {
+  
   @scala.inline
-  def BaseRule(): RuleObject = {
+  def AggregationRule(): RuleObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleObject]
   }
+  
   @scala.inline
   def ArrayRule(`type`: array): RuleObject = {
     val __obj = js.Dynamic.literal()
@@ -24,4 +25,3 @@ object RuleObject {
     __obj.asInstanceOf[RuleObject]
   }
 }
-

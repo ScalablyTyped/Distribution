@@ -2,7 +2,7 @@ package typings.naverWhale.global.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Printer Provider
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.printerProvider")
 @js.native
 object printerProvider extends js.Object
-

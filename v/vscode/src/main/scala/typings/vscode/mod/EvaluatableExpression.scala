@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "EvaluatableExpression")
 @js.native
@@ -15,13 +15,14 @@ class EvaluatableExpression protected () extends js.Object {
     */
   def this(range: Range) = this()
   def this(range: Range, expression: String) = this()
+  
   /*
     * If specified the expression overrides the extracted expression.
     */
   val expression: js.UndefOr[String] = js.native
+  
   /*
     * The range is used to extract the evaluatable expression from the underlying document and to highlight it.
     */
   val range: Range = js.native
 }
-

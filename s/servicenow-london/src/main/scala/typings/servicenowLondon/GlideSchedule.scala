@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlideSchedule extends js.Object {
+  
   /**
     * Adds a new schedule segment to the current schedule.
     *
@@ -23,6 +24,7 @@ trait GlideSchedule extends js.Object {
     * gs.info(end);
     */
   def add(startDate: GlideDateTime, offset: GlideDuration): GlideDateTime = js.native
+  
   /**
     * Determines the elapsed time in the schedule between two date time values using the
     * timezone of the schedule or, if that is not specified, the timezone of the session.
@@ -42,6 +44,7 @@ trait GlideSchedule extends js.Object {
     * gs.info(duration.getDurationValue()); // gets the elapsed time in schedule
     */
   def duration(startDate: GlideDateTime, endDate: GlideDateTime): GlideDuration = js.native
+  
   /**
     * Retrieves the schedule name.
     *
@@ -54,6 +57,7 @@ trait GlideSchedule extends js.Object {
     * gs.info(sched.getName());
     */
   def getName(): String = js.native
+  
   /**
     * Determines if the given datetime is within the current schedule.
     *
@@ -77,6 +81,7 @@ trait GlideSchedule extends js.Object {
     * }
     */
   def isInSchedule(time: GlideDateTime): String = js.native
+  
   /**
     * Determines if the current schedule is valid. A schedule is valid if it has at least one
     * schedule span.
@@ -99,6 +104,7 @@ trait GlideSchedule extends js.Object {
     * }
     */
   def isValid(): Boolean = js.native
+  
   /**
     * Loads a schedule with the schedule information.
     *
@@ -117,6 +123,7 @@ trait GlideSchedule extends js.Object {
   def load(sysId: String, timeZone: js.UndefOr[scala.Nothing], excludeSpanId: String): Unit = js.native
   def load(sysId: String, timeZone: String): Unit = js.native
   def load(sysId: String, timeZone: String, excludeSpanId: String): Unit = js.native
+  
   /**
     * Sets the timezone for the current schedule.
     *
@@ -129,6 +136,7 @@ trait GlideSchedule extends js.Object {
     * schedule.setTimeZone('US/Pacific');
     */
   def setTimeZone(tz: String): Unit = js.native
+  
   /**
     * Determines how much time (in milliseconds) until start time of the next schedule
     * item.
@@ -147,4 +155,3 @@ trait GlideSchedule extends js.Object {
   def whenNext(time: GlideDateTime): Double = js.native
   def whenNext(time: GlideDateTime, timeZone: String): Double = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.socketclusterServer.serversocketMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("socketcluster-server/serversocket", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ class ^ protected () extends AGServerSocket {
     protocolVersion: Double
   ) = this()
 }
-

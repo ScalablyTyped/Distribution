@@ -7,32 +7,35 @@ import typings.materialTab.anon.PartialMDCTabAdapter
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/tab", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCTab ()
     extends typings.materialTab.componentMod.MDCTab
+  /* static members */
+  @js.native
+  object MDCTab extends js.Object {
+    
+    def attachTo(root: Element): typings.materialTab.componentMod.MDCTab = js.native
+  }
   
   @js.native
   class MDCTabFoundation ()
     extends typings.materialTab.foundationMod.MDCTabFoundation {
     def this(adapter: PartialMDCTabAdapter) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCTab extends js.Object {
-    def attachTo(root: Element): typings.materialTab.componentMod.MDCTab = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCTabFoundation extends js.Object {
+    
     def cssClasses: ACTIVE = js.native
+    
     def defaultAdapter: MDCTabAdapter = js.native
+    
     def strings: ARIASELECTED = js.native
   }
   
@@ -60,18 +63,23 @@ object mod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ACTIVE: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ARIA_SELECTED: String = js.native
+    
     var CONTENT_SELECTOR: String = js.native
+    
     var INTERACTED_EVENT: String = js.native
+    
     var RIPPLE_SELECTOR: String = js.native
+    
     var TABINDEX: String = js.native
+    
     var TAB_INDICATOR_SELECTOR: String = js.native
   }
-  
 }
-

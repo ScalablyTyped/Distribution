@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Transition component lets you describe a transition from one component
@@ -51,4 +51,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[RefElement /* <: js.UndefOr[HTMLElement] */] ()
   extends Component[TransitionProps[RefElement], js.Object, js.Any]
-

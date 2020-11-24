@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IClientBatchStatusRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientBatchStatusRequest")
 @js.native
@@ -20,11 +20,11 @@ class ClientBatchStatusRequest ()
   extends typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest {
   def this(properties: IClientBatchStatusRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ClientBatchStatusRequest")
 @js.native
 object ClientBatchStatusRequest extends js.Object {
+  
   /**
     * Creates a new ClientBatchStatusRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
   def create(properties: IClientBatchStatusRequest): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
+  
   /**
     * Decodes a ClientBatchStatusRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ClientBatchStatusRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
+  
   /**
     * Decodes a ClientBatchStatusRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
+  
   /**
     * Encodes the specified ClientBatchStatusRequest message. Does not implicitly {@link ClientBatchStatusRequest.verify|verify} messages.
     * @param message ClientBatchStatusRequest message or plain object to encode
@@ -61,6 +64,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def encode(message: IClientBatchStatusRequest): Writer = js.native
   def encode(message: IClientBatchStatusRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientBatchStatusRequest message, length delimited. Does not implicitly {@link ClientBatchStatusRequest.verify|verify} messages.
     * @param message ClientBatchStatusRequest message or plain object to encode
@@ -69,12 +73,14 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def encodeDelimited(message: IClientBatchStatusRequest): Writer = js.native
   def encodeDelimited(message: IClientBatchStatusRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientBatchStatusRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBatchStatusRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest = js.native
+  
   /**
     * Creates a plain object from a ClientBatchStatusRequest message. Also converts values to other types if specified.
     * @param message ClientBatchStatusRequest
@@ -83,6 +89,7 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientBatchStatusRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientBatchStatusRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ClientBatchStatusRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

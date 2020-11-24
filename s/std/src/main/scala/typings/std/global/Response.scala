@@ -7,7 +7,7 @@ import typings.std.BodyInit
 import typings.std.ResponseInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Response")
 @js.native
@@ -17,7 +17,6 @@ class Response ()
   def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
   def this(body: Null, init: ResponseInit) = this()
 }
-
 @JSGlobal("Response")
 @js.native
 object Response
@@ -28,8 +27,9 @@ object Response
       /* init */ ResponseInit, 
       typings.std.Response
     ] {
+  
   def error(): typings.std.Response = js.native
+  
   def redirect(url: java.lang.String): typings.std.Response = js.native
   def redirect(url: java.lang.String, status: Double): typings.std.Response = js.native
 }
-

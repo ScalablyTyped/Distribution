@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DocumentFormat extends js.Object
-
 /**
   * Lists file document formats.
   */
 @JSGlobal("DocumentFormat")
 @js.native
 object DocumentFormat extends js.Object {
+  
   /**
     * MS Word 97-2003 binary file format.
     */
@@ -72,6 +72,4 @@ object DocumentFormat extends js.Object {
     */
   @js.native
   sealed trait ePub extends DocumentFormat
-  
 }
-

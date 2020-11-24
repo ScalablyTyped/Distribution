@@ -4,7 +4,7 @@ import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads data from an input stream. */
 @JSGlobal("Windows.Storage.Streams.DataReader")
@@ -17,11 +17,11 @@ class DataReader protected ()
     */
   def this(inputStream: IInputStream) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Storage.Streams.DataReader")
 @js.native
 object DataReader extends js.Object {
+  
   /**
     * Creates a new instance of the data reader with data from the specified buffer.
     * @param buffer The buffer.
@@ -29,4 +29,3 @@ object DataReader extends js.Object {
     */
   def fromBuffer(buffer: IBuffer): typings.winrtUwp.Windows.Storage.Streams.DataReader = js.native
 }
-

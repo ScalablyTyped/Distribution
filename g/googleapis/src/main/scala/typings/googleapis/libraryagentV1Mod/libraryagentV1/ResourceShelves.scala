@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/libraryagent/v1", "libraryagent_v1.Resource$Shelves")
 @js.native
 class ResourceShelves protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var books: ResourceShelvesBooks = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * libraryagent.shelves.get
     * @desc Gets a shelf. Returns NOT_FOUND if the shelf does not exist.
@@ -45,6 +48,7 @@ class ResourceShelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Shelf]
   ): Unit = js.native
+  
   /**
     * libraryagent.shelves.list
     * @desc Lists shelves. The order is unspecified but deterministic. Newly
@@ -79,4 +83,3 @@ class ResourceShelves protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListShelvesResponse]
   ): Unit = js.native
 }
-

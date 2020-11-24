@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Perfmetricssummary")
 @js.native
 class ResourceProjectsHistoriesExecutionsStepsPerfmetricssummary protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.perfMetricsSummary.create
     * @desc Creates a PerfMetricsSummary resource. Returns the existing one if
@@ -55,4 +57,3 @@ class ResourceProjectsHistoriesExecutionsStepsPerfmetricssummary protected () ex
     callback: BodyResponseCallback[SchemaPerfMetricsSummary]
   ): Unit = js.native
 }
-

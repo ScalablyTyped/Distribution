@@ -21,15 +21,15 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojDeferEventMap
   extends ElementEventMap
      with GlobalEventHandlersEventMap
      with DocumentAndElementEventHandlersEventMap
-
 object ojDeferEventMap {
+  
   @scala.inline
   def apply(
     abort: UIEvent,
@@ -129,4 +129,3 @@ object ojDeferEventMap {
     __obj.asInstanceOf[ojDeferEventMap]
   }
 }
-

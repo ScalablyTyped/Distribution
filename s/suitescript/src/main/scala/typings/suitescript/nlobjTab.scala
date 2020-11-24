@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjTab used for scriptable tab or subtab.
@@ -19,6 +19,7 @@ trait nlobjTab
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * set helper text for this tab or subtab.
     *
@@ -30,6 +31,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setHelpText(help: String): js.Function0[Unit] = js.native
+  
   /**
     * set the label for this tab or subtab.
     *
@@ -42,4 +44,3 @@ Instantiable0[js.Any] {
     */
   def setLabel(label: String): js.Function0[Unit] = js.native
 }
-

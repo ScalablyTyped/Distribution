@@ -17,12 +17,13 @@ import typings.rbx.rbxStrings.child
 import typings.rbx.rbxStrings.parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/grid/tiles/tile", "TILE_DEFAULTS")
 @js.native
 object TILE_DEFAULTS extends js.Object {
+  
   var kinds: js.Tuple3[ancestor, parent, child] = js.native
+  
   var sizes: js.Tuple12[`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`] = js.native
 }
-

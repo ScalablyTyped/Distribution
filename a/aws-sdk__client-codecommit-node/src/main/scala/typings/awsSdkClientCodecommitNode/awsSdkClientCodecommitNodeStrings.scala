@@ -2,9 +2,418 @@ package typings.awsSdkClientCodecommitNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkClientCodecommitNodeStrings {
+  
+  @scala.inline
+  def A: A = "A".asInstanceOf[A]
+  
+  @scala.inline
+  def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
+  
+  @scala.inline
+  def ActorDoesNotExistException: ActorDoesNotExistException = "ActorDoesNotExistException".asInstanceOf[ActorDoesNotExistException]
+  
+  @scala.inline
+  def AuthorDoesNotExistException: AuthorDoesNotExistException = "AuthorDoesNotExistException".asInstanceOf[AuthorDoesNotExistException]
+  
+  @scala.inline
+  def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
+  
+  @scala.inline
+  def BeforeCommitIdAndAfterCommitIdAreSameException: BeforeCommitIdAndAfterCommitIdAreSameException = "BeforeCommitIdAndAfterCommitIdAreSameException".asInstanceOf[BeforeCommitIdAndAfterCommitIdAreSameException]
+  
+  @scala.inline
+  def BlobIdDoesNotExistException: BlobIdDoesNotExistException = "BlobIdDoesNotExistException".asInstanceOf[BlobIdDoesNotExistException]
+  
+  @scala.inline
+  def BlobIdRequiredException: BlobIdRequiredException = "BlobIdRequiredException".asInstanceOf[BlobIdRequiredException]
+  
+  @scala.inline
+  def BranchDoesNotExistException: BranchDoesNotExistException = "BranchDoesNotExistException".asInstanceOf[BranchDoesNotExistException]
+  
+  @scala.inline
+  def BranchNameExistsException: BranchNameExistsException = "BranchNameExistsException".asInstanceOf[BranchNameExistsException]
+  
+  @scala.inline
+  def BranchNameIsTagNameException: BranchNameIsTagNameException = "BranchNameIsTagNameException".asInstanceOf[BranchNameIsTagNameException]
+  
+  @scala.inline
+  def BranchNameRequiredException: BranchNameRequiredException = "BranchNameRequiredException".asInstanceOf[BranchNameRequiredException]
+  
+  @scala.inline
+  def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
+  
+  @scala.inline
+  def ClientRequestTokenRequiredException: ClientRequestTokenRequiredException = "ClientRequestTokenRequiredException".asInstanceOf[ClientRequestTokenRequiredException]
+  
+  @scala.inline
+  def CommentContentRequiredException: CommentContentRequiredException = "CommentContentRequiredException".asInstanceOf[CommentContentRequiredException]
+  
+  @scala.inline
+  def CommentContentSizeLimitExceededException: CommentContentSizeLimitExceededException = "CommentContentSizeLimitExceededException".asInstanceOf[CommentContentSizeLimitExceededException]
+  
+  @scala.inline
+  def CommentDeletedException: CommentDeletedException = "CommentDeletedException".asInstanceOf[CommentDeletedException]
+  
+  @scala.inline
+  def CommentDoesNotExistException: CommentDoesNotExistException = "CommentDoesNotExistException".asInstanceOf[CommentDoesNotExistException]
+  
+  @scala.inline
+  def CommentIdRequiredException: CommentIdRequiredException = "CommentIdRequiredException".asInstanceOf[CommentIdRequiredException]
+  
+  @scala.inline
+  def CommentNotCreatedByCallerException: CommentNotCreatedByCallerException = "CommentNotCreatedByCallerException".asInstanceOf[CommentNotCreatedByCallerException]
+  
+  @scala.inline
+  def CommitDoesNotExistException: CommitDoesNotExistException = "CommitDoesNotExistException".asInstanceOf[CommitDoesNotExistException]
+  
+  @scala.inline
+  def CommitIdDoesNotExistException: CommitIdDoesNotExistException = "CommitIdDoesNotExistException".asInstanceOf[CommitIdDoesNotExistException]
+  
+  @scala.inline
+  def CommitIdRequiredException: CommitIdRequiredException = "CommitIdRequiredException".asInstanceOf[CommitIdRequiredException]
+  
+  @scala.inline
+  def CommitMessageLengthExceededException: CommitMessageLengthExceededException = "CommitMessageLengthExceededException".asInstanceOf[CommitMessageLengthExceededException]
+  
+  @scala.inline
+  def CommitRequiredException: CommitRequiredException = "CommitRequiredException".asInstanceOf[CommitRequiredException]
+  
+  @scala.inline
+  def D: D = "D".asInstanceOf[D]
+  
+  @scala.inline
+  def DefaultBranchCannotBeDeletedException: DefaultBranchCannotBeDeletedException = "DefaultBranchCannotBeDeletedException".asInstanceOf[DefaultBranchCannotBeDeletedException]
+  
+  @scala.inline
+  def DirectoryNameConflictsWithFileNameException: DirectoryNameConflictsWithFileNameException = "DirectoryNameConflictsWithFileNameException".asInstanceOf[DirectoryNameConflictsWithFileNameException]
+  
+  @scala.inline
+  def EXECUTABLE: EXECUTABLE = "EXECUTABLE".asInstanceOf[EXECUTABLE]
+  
+  @scala.inline
+  def EncryptionIntegrityChecksFailedException: EncryptionIntegrityChecksFailedException = "EncryptionIntegrityChecksFailedException".asInstanceOf[EncryptionIntegrityChecksFailedException]
+  
+  @scala.inline
+  def EncryptionKeyAccessDeniedException: EncryptionKeyAccessDeniedException = "EncryptionKeyAccessDeniedException".asInstanceOf[EncryptionKeyAccessDeniedException]
+  
+  @scala.inline
+  def EncryptionKeyDisabledException: EncryptionKeyDisabledException = "EncryptionKeyDisabledException".asInstanceOf[EncryptionKeyDisabledException]
+  
+  @scala.inline
+  def EncryptionKeyNotFoundException: EncryptionKeyNotFoundException = "EncryptionKeyNotFoundException".asInstanceOf[EncryptionKeyNotFoundException]
+  
+  @scala.inline
+  def EncryptionKeyUnavailableException: EncryptionKeyUnavailableException = "EncryptionKeyUnavailableException".asInstanceOf[EncryptionKeyUnavailableException]
+  
+  @scala.inline
+  def FAST_FORWARD_MERGE: FAST_FORWARD_MERGE = "FAST_FORWARD_MERGE".asInstanceOf[FAST_FORWARD_MERGE]
+  
+  @scala.inline
+  def FileContentRequiredException: FileContentRequiredException = "FileContentRequiredException".asInstanceOf[FileContentRequiredException]
+  
+  @scala.inline
+  def FileContentSizeLimitExceededException: FileContentSizeLimitExceededException = "FileContentSizeLimitExceededException".asInstanceOf[FileContentSizeLimitExceededException]
+  
+  @scala.inline
+  def FileDoesNotExistException: FileDoesNotExistException = "FileDoesNotExistException".asInstanceOf[FileDoesNotExistException]
+  
+  @scala.inline
+  def FileNameConflictsWithDirectoryNameException: FileNameConflictsWithDirectoryNameException = "FileNameConflictsWithDirectoryNameException".asInstanceOf[FileNameConflictsWithDirectoryNameException]
+  
+  @scala.inline
+  def FileTooLargeException: FileTooLargeException = "FileTooLargeException".asInstanceOf[FileTooLargeException]
+  
+  @scala.inline
+  def FolderDoesNotExistException: FolderDoesNotExistException = "FolderDoesNotExistException".asInstanceOf[FolderDoesNotExistException]
+  
+  @scala.inline
+  def IdempotencyParameterMismatchException: IdempotencyParameterMismatchException = "IdempotencyParameterMismatchException".asInstanceOf[IdempotencyParameterMismatchException]
+  
+  @scala.inline
+  def InvalidActorArnException: InvalidActorArnException = "InvalidActorArnException".asInstanceOf[InvalidActorArnException]
+  
+  @scala.inline
+  def InvalidAuthorArnException: InvalidAuthorArnException = "InvalidAuthorArnException".asInstanceOf[InvalidAuthorArnException]
+  
+  @scala.inline
+  def InvalidBlobIdException: InvalidBlobIdException = "InvalidBlobIdException".asInstanceOf[InvalidBlobIdException]
+  
+  @scala.inline
+  def InvalidBranchNameException: InvalidBranchNameException = "InvalidBranchNameException".asInstanceOf[InvalidBranchNameException]
+  
+  @scala.inline
+  def InvalidClientRequestTokenException: InvalidClientRequestTokenException = "InvalidClientRequestTokenException".asInstanceOf[InvalidClientRequestTokenException]
+  
+  @scala.inline
+  def InvalidCommentIdException: InvalidCommentIdException = "InvalidCommentIdException".asInstanceOf[InvalidCommentIdException]
+  
+  @scala.inline
+  def InvalidCommitException: InvalidCommitException = "InvalidCommitException".asInstanceOf[InvalidCommitException]
+  
+  @scala.inline
+  def InvalidCommitIdException: InvalidCommitIdException = "InvalidCommitIdException".asInstanceOf[InvalidCommitIdException]
+  
+  @scala.inline
+  def InvalidContinuationTokenException: InvalidContinuationTokenException = "InvalidContinuationTokenException".asInstanceOf[InvalidContinuationTokenException]
+  
+  @scala.inline
+  def InvalidDeletionParameterException: InvalidDeletionParameterException = "InvalidDeletionParameterException".asInstanceOf[InvalidDeletionParameterException]
+  
+  @scala.inline
+  def InvalidDescriptionException: InvalidDescriptionException = "InvalidDescriptionException".asInstanceOf[InvalidDescriptionException]
+  
+  @scala.inline
+  def InvalidDestinationCommitSpecifierException: InvalidDestinationCommitSpecifierException = "InvalidDestinationCommitSpecifierException".asInstanceOf[InvalidDestinationCommitSpecifierException]
+  
+  @scala.inline
+  def InvalidEmailException: InvalidEmailException = "InvalidEmailException".asInstanceOf[InvalidEmailException]
+  
+  @scala.inline
+  def InvalidFileLocationException: InvalidFileLocationException = "InvalidFileLocationException".asInstanceOf[InvalidFileLocationException]
+  
+  @scala.inline
+  def InvalidFileModeException: InvalidFileModeException = "InvalidFileModeException".asInstanceOf[InvalidFileModeException]
+  
+  @scala.inline
+  def InvalidFilePositionException: InvalidFilePositionException = "InvalidFilePositionException".asInstanceOf[InvalidFilePositionException]
+  
+  @scala.inline
+  def InvalidMaxResultsException: InvalidMaxResultsException = "InvalidMaxResultsException".asInstanceOf[InvalidMaxResultsException]
+  
+  @scala.inline
+  def InvalidMergeOptionException: InvalidMergeOptionException = "InvalidMergeOptionException".asInstanceOf[InvalidMergeOptionException]
+  
+  @scala.inline
+  def InvalidOrderException: InvalidOrderException = "InvalidOrderException".asInstanceOf[InvalidOrderException]
+  
+  @scala.inline
+  def InvalidParentCommitIdException: InvalidParentCommitIdException = "InvalidParentCommitIdException".asInstanceOf[InvalidParentCommitIdException]
+  
+  @scala.inline
+  def InvalidPathException: InvalidPathException = "InvalidPathException".asInstanceOf[InvalidPathException]
+  
+  @scala.inline
+  def InvalidPullRequestEventTypeException: InvalidPullRequestEventTypeException = "InvalidPullRequestEventTypeException".asInstanceOf[InvalidPullRequestEventTypeException]
+  
+  @scala.inline
+  def InvalidPullRequestIdException: InvalidPullRequestIdException = "InvalidPullRequestIdException".asInstanceOf[InvalidPullRequestIdException]
+  
+  @scala.inline
+  def InvalidPullRequestStatusException: InvalidPullRequestStatusException = "InvalidPullRequestStatusException".asInstanceOf[InvalidPullRequestStatusException]
+  
+  @scala.inline
+  def InvalidPullRequestStatusUpdateException: InvalidPullRequestStatusUpdateException = "InvalidPullRequestStatusUpdateException".asInstanceOf[InvalidPullRequestStatusUpdateException]
+  
+  @scala.inline
+  def InvalidReferenceNameException: InvalidReferenceNameException = "InvalidReferenceNameException".asInstanceOf[InvalidReferenceNameException]
+  
+  @scala.inline
+  def InvalidRelativeFileVersionEnumException: InvalidRelativeFileVersionEnumException = "InvalidRelativeFileVersionEnumException".asInstanceOf[InvalidRelativeFileVersionEnumException]
+  
+  @scala.inline
+  def InvalidRepositoryDescriptionException: InvalidRepositoryDescriptionException = "InvalidRepositoryDescriptionException".asInstanceOf[InvalidRepositoryDescriptionException]
+  
+  @scala.inline
+  def InvalidRepositoryNameException: InvalidRepositoryNameException = "InvalidRepositoryNameException".asInstanceOf[InvalidRepositoryNameException]
+  
+  @scala.inline
+  def InvalidRepositoryTriggerBranchNameException: InvalidRepositoryTriggerBranchNameException = "InvalidRepositoryTriggerBranchNameException".asInstanceOf[InvalidRepositoryTriggerBranchNameException]
+  
+  @scala.inline
+  def InvalidRepositoryTriggerCustomDataException: InvalidRepositoryTriggerCustomDataException = "InvalidRepositoryTriggerCustomDataException".asInstanceOf[InvalidRepositoryTriggerCustomDataException]
+  
+  @scala.inline
+  def InvalidRepositoryTriggerDestinationArnException: InvalidRepositoryTriggerDestinationArnException = "InvalidRepositoryTriggerDestinationArnException".asInstanceOf[InvalidRepositoryTriggerDestinationArnException]
+  
+  @scala.inline
+  def InvalidRepositoryTriggerEventsException: InvalidRepositoryTriggerEventsException = "InvalidRepositoryTriggerEventsException".asInstanceOf[InvalidRepositoryTriggerEventsException]
+  
+  @scala.inline
+  def InvalidRepositoryTriggerNameException: InvalidRepositoryTriggerNameException = "InvalidRepositoryTriggerNameException".asInstanceOf[InvalidRepositoryTriggerNameException]
+  
+  @scala.inline
+  def InvalidRepositoryTriggerRegionException: InvalidRepositoryTriggerRegionException = "InvalidRepositoryTriggerRegionException".asInstanceOf[InvalidRepositoryTriggerRegionException]
+  
+  @scala.inline
+  def InvalidSortByException: InvalidSortByException = "InvalidSortByException".asInstanceOf[InvalidSortByException]
+  
+  @scala.inline
+  def InvalidSourceCommitSpecifierException: InvalidSourceCommitSpecifierException = "InvalidSourceCommitSpecifierException".asInstanceOf[InvalidSourceCommitSpecifierException]
+  
+  @scala.inline
+  def InvalidTargetException: InvalidTargetException = "InvalidTargetException".asInstanceOf[InvalidTargetException]
+  
+  @scala.inline
+  def InvalidTargetsException: InvalidTargetsException = "InvalidTargetsException".asInstanceOf[InvalidTargetsException]
+  
+  @scala.inline
+  def InvalidTitleException: InvalidTitleException = "InvalidTitleException".asInstanceOf[InvalidTitleException]
+  
+  @scala.inline
+  def M: M = "M".asInstanceOf[M]
+  
+  @scala.inline
+  def ManualMergeRequiredException: ManualMergeRequiredException = "ManualMergeRequiredException".asInstanceOf[ManualMergeRequiredException]
+  
+  @scala.inline
+  def MaximumBranchesExceededException: MaximumBranchesExceededException = "MaximumBranchesExceededException".asInstanceOf[MaximumBranchesExceededException]
+  
+  @scala.inline
+  def MaximumOpenPullRequestsExceededException: MaximumOpenPullRequestsExceededException = "MaximumOpenPullRequestsExceededException".asInstanceOf[MaximumOpenPullRequestsExceededException]
+  
+  @scala.inline
+  def MaximumRepositoryNamesExceededException: MaximumRepositoryNamesExceededException = "MaximumRepositoryNamesExceededException".asInstanceOf[MaximumRepositoryNamesExceededException]
+  
+  @scala.inline
+  def MaximumRepositoryTriggersExceededException: MaximumRepositoryTriggersExceededException = "MaximumRepositoryTriggersExceededException".asInstanceOf[MaximumRepositoryTriggersExceededException]
+  
+  @scala.inline
+  def MergeOptionRequiredException: MergeOptionRequiredException = "MergeOptionRequiredException".asInstanceOf[MergeOptionRequiredException]
+  
+  @scala.inline
+  def MultipleRepositoriesInPullRequestException: MultipleRepositoriesInPullRequestException = "MultipleRepositoriesInPullRequestException".asInstanceOf[MultipleRepositoriesInPullRequestException]
+  
+  @scala.inline
+  def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
+  
+  @scala.inline
+  def NameLengthExceededException: NameLengthExceededException = "NameLengthExceededException".asInstanceOf[NameLengthExceededException]
+  
+  @scala.inline
+  def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
+  
+  @scala.inline
+  def PULL_REQUEST_CREATED: PULL_REQUEST_CREATED = "PULL_REQUEST_CREATED".asInstanceOf[PULL_REQUEST_CREATED]
+  
+  @scala.inline
+  def PULL_REQUEST_MERGE_STATE_CHANGED: PULL_REQUEST_MERGE_STATE_CHANGED = "PULL_REQUEST_MERGE_STATE_CHANGED".asInstanceOf[PULL_REQUEST_MERGE_STATE_CHANGED]
+  
+  @scala.inline
+  def PULL_REQUEST_SOURCE_REFERENCE_UPDATED: PULL_REQUEST_SOURCE_REFERENCE_UPDATED = "PULL_REQUEST_SOURCE_REFERENCE_UPDATED".asInstanceOf[PULL_REQUEST_SOURCE_REFERENCE_UPDATED]
+  
+  @scala.inline
+  def PULL_REQUEST_STATUS_CHANGED: PULL_REQUEST_STATUS_CHANGED = "PULL_REQUEST_STATUS_CHANGED".asInstanceOf[PULL_REQUEST_STATUS_CHANGED]
+  
+  @scala.inline
+  def ParentCommitDoesNotExistException: ParentCommitDoesNotExistException = "ParentCommitDoesNotExistException".asInstanceOf[ParentCommitDoesNotExistException]
+  
+  @scala.inline
+  def ParentCommitIdOutdatedException: ParentCommitIdOutdatedException = "ParentCommitIdOutdatedException".asInstanceOf[ParentCommitIdOutdatedException]
+  
+  @scala.inline
+  def ParentCommitIdRequiredException: ParentCommitIdRequiredException = "ParentCommitIdRequiredException".asInstanceOf[ParentCommitIdRequiredException]
+  
+  @scala.inline
+  def PathDoesNotExistException: PathDoesNotExistException = "PathDoesNotExistException".asInstanceOf[PathDoesNotExistException]
+  
+  @scala.inline
+  def PathRequiredException: PathRequiredException = "PathRequiredException".asInstanceOf[PathRequiredException]
+  
+  @scala.inline
+  def PullRequestAlreadyClosedException: PullRequestAlreadyClosedException = "PullRequestAlreadyClosedException".asInstanceOf[PullRequestAlreadyClosedException]
+  
+  @scala.inline
+  def PullRequestDoesNotExistException: PullRequestDoesNotExistException = "PullRequestDoesNotExistException".asInstanceOf[PullRequestDoesNotExistException]
+  
+  @scala.inline
+  def PullRequestIdRequiredException: PullRequestIdRequiredException = "PullRequestIdRequiredException".asInstanceOf[PullRequestIdRequiredException]
+  
+  @scala.inline
+  def PullRequestStatusRequiredException: PullRequestStatusRequiredException = "PullRequestStatusRequiredException".asInstanceOf[PullRequestStatusRequiredException]
+  
+  @scala.inline
+  def ReferenceDoesNotExistException: ReferenceDoesNotExistException = "ReferenceDoesNotExistException".asInstanceOf[ReferenceDoesNotExistException]
+  
+  @scala.inline
+  def ReferenceNameRequiredException: ReferenceNameRequiredException = "ReferenceNameRequiredException".asInstanceOf[ReferenceNameRequiredException]
+  
+  @scala.inline
+  def ReferenceTypeNotSupportedException: ReferenceTypeNotSupportedException = "ReferenceTypeNotSupportedException".asInstanceOf[ReferenceTypeNotSupportedException]
+  
+  @scala.inline
+  def RepositoryDoesNotExistException: RepositoryDoesNotExistException = "RepositoryDoesNotExistException".asInstanceOf[RepositoryDoesNotExistException]
+  
+  @scala.inline
+  def RepositoryLimitExceededException: RepositoryLimitExceededException = "RepositoryLimitExceededException".asInstanceOf[RepositoryLimitExceededException]
+  
+  @scala.inline
+  def RepositoryNameExistsException: RepositoryNameExistsException = "RepositoryNameExistsException".asInstanceOf[RepositoryNameExistsException]
+  
+  @scala.inline
+  def RepositoryNameRequiredException: RepositoryNameRequiredException = "RepositoryNameRequiredException".asInstanceOf[RepositoryNameRequiredException]
+  
+  @scala.inline
+  def RepositoryNamesRequiredException: RepositoryNamesRequiredException = "RepositoryNamesRequiredException".asInstanceOf[RepositoryNamesRequiredException]
+  
+  @scala.inline
+  def RepositoryNotAssociatedWithPullRequestException: RepositoryNotAssociatedWithPullRequestException = "RepositoryNotAssociatedWithPullRequestException".asInstanceOf[RepositoryNotAssociatedWithPullRequestException]
+  
+  @scala.inline
+  def RepositoryTriggerBranchNameListRequiredException: RepositoryTriggerBranchNameListRequiredException = "RepositoryTriggerBranchNameListRequiredException".asInstanceOf[RepositoryTriggerBranchNameListRequiredException]
+  
+  @scala.inline
+  def RepositoryTriggerDestinationArnRequiredException: RepositoryTriggerDestinationArnRequiredException = "RepositoryTriggerDestinationArnRequiredException".asInstanceOf[RepositoryTriggerDestinationArnRequiredException]
+  
+  @scala.inline
+  def RepositoryTriggerEventsListRequiredException: RepositoryTriggerEventsListRequiredException = "RepositoryTriggerEventsListRequiredException".asInstanceOf[RepositoryTriggerEventsListRequiredException]
+  
+  @scala.inline
+  def RepositoryTriggerNameRequiredException: RepositoryTriggerNameRequiredException = "RepositoryTriggerNameRequiredException".asInstanceOf[RepositoryTriggerNameRequiredException]
+  
+  @scala.inline
+  def RepositoryTriggersListRequiredException: RepositoryTriggersListRequiredException = "RepositoryTriggersListRequiredException".asInstanceOf[RepositoryTriggersListRequiredException]
+  
+  @scala.inline
+  def SYMLINK: SYMLINK = "SYMLINK".asInstanceOf[SYMLINK]
+  
+  @scala.inline
+  def SameFileContentException: SameFileContentException = "SameFileContentException".asInstanceOf[SameFileContentException]
+  
+  @scala.inline
+  def SourceAndDestinationAreSameException: SourceAndDestinationAreSameException = "SourceAndDestinationAreSameException".asInstanceOf[SourceAndDestinationAreSameException]
+  
+  @scala.inline
+  def TargetRequiredException: TargetRequiredException = "TargetRequiredException".asInstanceOf[TargetRequiredException]
+  
+  @scala.inline
+  def TargetsRequiredException: TargetsRequiredException = "TargetsRequiredException".asInstanceOf[TargetsRequiredException]
+  
+  @scala.inline
+  def TipOfSourceReferenceIsDifferentException: TipOfSourceReferenceIsDifferentException = "TipOfSourceReferenceIsDifferentException".asInstanceOf[TipOfSourceReferenceIsDifferentException]
+  
+  @scala.inline
+  def TipsDivergenceExceededException: TipsDivergenceExceededException = "TipsDivergenceExceededException".asInstanceOf[TipsDivergenceExceededException]
+  
+  @scala.inline
+  def TitleRequiredException: TitleRequiredException = "TitleRequiredException".asInstanceOf[TitleRequiredException]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @scala.inline
+  def createReference: createReference = "createReference".asInstanceOf[createReference]
+  
+  @scala.inline
+  def deleteReference: deleteReference = "deleteReference".asInstanceOf[deleteReference]
+  
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  
+  @scala.inline
+  def lastModifiedDate: lastModifiedDate = "lastModifiedDate".asInstanceOf[lastModifiedDate]
+  
+  @scala.inline
+  def repositoryName: repositoryName = "repositoryName".asInstanceOf[repositoryName]
+  
+  @scala.inline
+  def updateReference: updateReference = "updateReference".asInstanceOf[updateReference]
+  
   @js.native
   sealed trait A extends js.Object
   
@@ -412,278 +821,4 @@ object awsSdkClientCodecommitNodeStrings {
   
   @js.native
   sealed trait updateReference extends js.Object
-  
-  @scala.inline
-  def A: A = "A".asInstanceOf[A]
-  @scala.inline
-  def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
-  @scala.inline
-  def ActorDoesNotExistException: ActorDoesNotExistException = "ActorDoesNotExistException".asInstanceOf[ActorDoesNotExistException]
-  @scala.inline
-  def AuthorDoesNotExistException: AuthorDoesNotExistException = "AuthorDoesNotExistException".asInstanceOf[AuthorDoesNotExistException]
-  @scala.inline
-  def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
-  @scala.inline
-  def BeforeCommitIdAndAfterCommitIdAreSameException: BeforeCommitIdAndAfterCommitIdAreSameException = "BeforeCommitIdAndAfterCommitIdAreSameException".asInstanceOf[BeforeCommitIdAndAfterCommitIdAreSameException]
-  @scala.inline
-  def BlobIdDoesNotExistException: BlobIdDoesNotExistException = "BlobIdDoesNotExistException".asInstanceOf[BlobIdDoesNotExistException]
-  @scala.inline
-  def BlobIdRequiredException: BlobIdRequiredException = "BlobIdRequiredException".asInstanceOf[BlobIdRequiredException]
-  @scala.inline
-  def BranchDoesNotExistException: BranchDoesNotExistException = "BranchDoesNotExistException".asInstanceOf[BranchDoesNotExistException]
-  @scala.inline
-  def BranchNameExistsException: BranchNameExistsException = "BranchNameExistsException".asInstanceOf[BranchNameExistsException]
-  @scala.inline
-  def BranchNameIsTagNameException: BranchNameIsTagNameException = "BranchNameIsTagNameException".asInstanceOf[BranchNameIsTagNameException]
-  @scala.inline
-  def BranchNameRequiredException: BranchNameRequiredException = "BranchNameRequiredException".asInstanceOf[BranchNameRequiredException]
-  @scala.inline
-  def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
-  @scala.inline
-  def ClientRequestTokenRequiredException: ClientRequestTokenRequiredException = "ClientRequestTokenRequiredException".asInstanceOf[ClientRequestTokenRequiredException]
-  @scala.inline
-  def CommentContentRequiredException: CommentContentRequiredException = "CommentContentRequiredException".asInstanceOf[CommentContentRequiredException]
-  @scala.inline
-  def CommentContentSizeLimitExceededException: CommentContentSizeLimitExceededException = "CommentContentSizeLimitExceededException".asInstanceOf[CommentContentSizeLimitExceededException]
-  @scala.inline
-  def CommentDeletedException: CommentDeletedException = "CommentDeletedException".asInstanceOf[CommentDeletedException]
-  @scala.inline
-  def CommentDoesNotExistException: CommentDoesNotExistException = "CommentDoesNotExistException".asInstanceOf[CommentDoesNotExistException]
-  @scala.inline
-  def CommentIdRequiredException: CommentIdRequiredException = "CommentIdRequiredException".asInstanceOf[CommentIdRequiredException]
-  @scala.inline
-  def CommentNotCreatedByCallerException: CommentNotCreatedByCallerException = "CommentNotCreatedByCallerException".asInstanceOf[CommentNotCreatedByCallerException]
-  @scala.inline
-  def CommitDoesNotExistException: CommitDoesNotExistException = "CommitDoesNotExistException".asInstanceOf[CommitDoesNotExistException]
-  @scala.inline
-  def CommitIdDoesNotExistException: CommitIdDoesNotExistException = "CommitIdDoesNotExistException".asInstanceOf[CommitIdDoesNotExistException]
-  @scala.inline
-  def CommitIdRequiredException: CommitIdRequiredException = "CommitIdRequiredException".asInstanceOf[CommitIdRequiredException]
-  @scala.inline
-  def CommitMessageLengthExceededException: CommitMessageLengthExceededException = "CommitMessageLengthExceededException".asInstanceOf[CommitMessageLengthExceededException]
-  @scala.inline
-  def CommitRequiredException: CommitRequiredException = "CommitRequiredException".asInstanceOf[CommitRequiredException]
-  @scala.inline
-  def D: D = "D".asInstanceOf[D]
-  @scala.inline
-  def DefaultBranchCannotBeDeletedException: DefaultBranchCannotBeDeletedException = "DefaultBranchCannotBeDeletedException".asInstanceOf[DefaultBranchCannotBeDeletedException]
-  @scala.inline
-  def DirectoryNameConflictsWithFileNameException: DirectoryNameConflictsWithFileNameException = "DirectoryNameConflictsWithFileNameException".asInstanceOf[DirectoryNameConflictsWithFileNameException]
-  @scala.inline
-  def EXECUTABLE: EXECUTABLE = "EXECUTABLE".asInstanceOf[EXECUTABLE]
-  @scala.inline
-  def EncryptionIntegrityChecksFailedException: EncryptionIntegrityChecksFailedException = "EncryptionIntegrityChecksFailedException".asInstanceOf[EncryptionIntegrityChecksFailedException]
-  @scala.inline
-  def EncryptionKeyAccessDeniedException: EncryptionKeyAccessDeniedException = "EncryptionKeyAccessDeniedException".asInstanceOf[EncryptionKeyAccessDeniedException]
-  @scala.inline
-  def EncryptionKeyDisabledException: EncryptionKeyDisabledException = "EncryptionKeyDisabledException".asInstanceOf[EncryptionKeyDisabledException]
-  @scala.inline
-  def EncryptionKeyNotFoundException: EncryptionKeyNotFoundException = "EncryptionKeyNotFoundException".asInstanceOf[EncryptionKeyNotFoundException]
-  @scala.inline
-  def EncryptionKeyUnavailableException: EncryptionKeyUnavailableException = "EncryptionKeyUnavailableException".asInstanceOf[EncryptionKeyUnavailableException]
-  @scala.inline
-  def FAST_FORWARD_MERGE: FAST_FORWARD_MERGE = "FAST_FORWARD_MERGE".asInstanceOf[FAST_FORWARD_MERGE]
-  @scala.inline
-  def FileContentRequiredException: FileContentRequiredException = "FileContentRequiredException".asInstanceOf[FileContentRequiredException]
-  @scala.inline
-  def FileContentSizeLimitExceededException: FileContentSizeLimitExceededException = "FileContentSizeLimitExceededException".asInstanceOf[FileContentSizeLimitExceededException]
-  @scala.inline
-  def FileDoesNotExistException: FileDoesNotExistException = "FileDoesNotExistException".asInstanceOf[FileDoesNotExistException]
-  @scala.inline
-  def FileNameConflictsWithDirectoryNameException: FileNameConflictsWithDirectoryNameException = "FileNameConflictsWithDirectoryNameException".asInstanceOf[FileNameConflictsWithDirectoryNameException]
-  @scala.inline
-  def FileTooLargeException: FileTooLargeException = "FileTooLargeException".asInstanceOf[FileTooLargeException]
-  @scala.inline
-  def FolderDoesNotExistException: FolderDoesNotExistException = "FolderDoesNotExistException".asInstanceOf[FolderDoesNotExistException]
-  @scala.inline
-  def IdempotencyParameterMismatchException: IdempotencyParameterMismatchException = "IdempotencyParameterMismatchException".asInstanceOf[IdempotencyParameterMismatchException]
-  @scala.inline
-  def InvalidActorArnException: InvalidActorArnException = "InvalidActorArnException".asInstanceOf[InvalidActorArnException]
-  @scala.inline
-  def InvalidAuthorArnException: InvalidAuthorArnException = "InvalidAuthorArnException".asInstanceOf[InvalidAuthorArnException]
-  @scala.inline
-  def InvalidBlobIdException: InvalidBlobIdException = "InvalidBlobIdException".asInstanceOf[InvalidBlobIdException]
-  @scala.inline
-  def InvalidBranchNameException: InvalidBranchNameException = "InvalidBranchNameException".asInstanceOf[InvalidBranchNameException]
-  @scala.inline
-  def InvalidClientRequestTokenException: InvalidClientRequestTokenException = "InvalidClientRequestTokenException".asInstanceOf[InvalidClientRequestTokenException]
-  @scala.inline
-  def InvalidCommentIdException: InvalidCommentIdException = "InvalidCommentIdException".asInstanceOf[InvalidCommentIdException]
-  @scala.inline
-  def InvalidCommitException: InvalidCommitException = "InvalidCommitException".asInstanceOf[InvalidCommitException]
-  @scala.inline
-  def InvalidCommitIdException: InvalidCommitIdException = "InvalidCommitIdException".asInstanceOf[InvalidCommitIdException]
-  @scala.inline
-  def InvalidContinuationTokenException: InvalidContinuationTokenException = "InvalidContinuationTokenException".asInstanceOf[InvalidContinuationTokenException]
-  @scala.inline
-  def InvalidDeletionParameterException: InvalidDeletionParameterException = "InvalidDeletionParameterException".asInstanceOf[InvalidDeletionParameterException]
-  @scala.inline
-  def InvalidDescriptionException: InvalidDescriptionException = "InvalidDescriptionException".asInstanceOf[InvalidDescriptionException]
-  @scala.inline
-  def InvalidDestinationCommitSpecifierException: InvalidDestinationCommitSpecifierException = "InvalidDestinationCommitSpecifierException".asInstanceOf[InvalidDestinationCommitSpecifierException]
-  @scala.inline
-  def InvalidEmailException: InvalidEmailException = "InvalidEmailException".asInstanceOf[InvalidEmailException]
-  @scala.inline
-  def InvalidFileLocationException: InvalidFileLocationException = "InvalidFileLocationException".asInstanceOf[InvalidFileLocationException]
-  @scala.inline
-  def InvalidFileModeException: InvalidFileModeException = "InvalidFileModeException".asInstanceOf[InvalidFileModeException]
-  @scala.inline
-  def InvalidFilePositionException: InvalidFilePositionException = "InvalidFilePositionException".asInstanceOf[InvalidFilePositionException]
-  @scala.inline
-  def InvalidMaxResultsException: InvalidMaxResultsException = "InvalidMaxResultsException".asInstanceOf[InvalidMaxResultsException]
-  @scala.inline
-  def InvalidMergeOptionException: InvalidMergeOptionException = "InvalidMergeOptionException".asInstanceOf[InvalidMergeOptionException]
-  @scala.inline
-  def InvalidOrderException: InvalidOrderException = "InvalidOrderException".asInstanceOf[InvalidOrderException]
-  @scala.inline
-  def InvalidParentCommitIdException: InvalidParentCommitIdException = "InvalidParentCommitIdException".asInstanceOf[InvalidParentCommitIdException]
-  @scala.inline
-  def InvalidPathException: InvalidPathException = "InvalidPathException".asInstanceOf[InvalidPathException]
-  @scala.inline
-  def InvalidPullRequestEventTypeException: InvalidPullRequestEventTypeException = "InvalidPullRequestEventTypeException".asInstanceOf[InvalidPullRequestEventTypeException]
-  @scala.inline
-  def InvalidPullRequestIdException: InvalidPullRequestIdException = "InvalidPullRequestIdException".asInstanceOf[InvalidPullRequestIdException]
-  @scala.inline
-  def InvalidPullRequestStatusException: InvalidPullRequestStatusException = "InvalidPullRequestStatusException".asInstanceOf[InvalidPullRequestStatusException]
-  @scala.inline
-  def InvalidPullRequestStatusUpdateException: InvalidPullRequestStatusUpdateException = "InvalidPullRequestStatusUpdateException".asInstanceOf[InvalidPullRequestStatusUpdateException]
-  @scala.inline
-  def InvalidReferenceNameException: InvalidReferenceNameException = "InvalidReferenceNameException".asInstanceOf[InvalidReferenceNameException]
-  @scala.inline
-  def InvalidRelativeFileVersionEnumException: InvalidRelativeFileVersionEnumException = "InvalidRelativeFileVersionEnumException".asInstanceOf[InvalidRelativeFileVersionEnumException]
-  @scala.inline
-  def InvalidRepositoryDescriptionException: InvalidRepositoryDescriptionException = "InvalidRepositoryDescriptionException".asInstanceOf[InvalidRepositoryDescriptionException]
-  @scala.inline
-  def InvalidRepositoryNameException: InvalidRepositoryNameException = "InvalidRepositoryNameException".asInstanceOf[InvalidRepositoryNameException]
-  @scala.inline
-  def InvalidRepositoryTriggerBranchNameException: InvalidRepositoryTriggerBranchNameException = "InvalidRepositoryTriggerBranchNameException".asInstanceOf[InvalidRepositoryTriggerBranchNameException]
-  @scala.inline
-  def InvalidRepositoryTriggerCustomDataException: InvalidRepositoryTriggerCustomDataException = "InvalidRepositoryTriggerCustomDataException".asInstanceOf[InvalidRepositoryTriggerCustomDataException]
-  @scala.inline
-  def InvalidRepositoryTriggerDestinationArnException: InvalidRepositoryTriggerDestinationArnException = "InvalidRepositoryTriggerDestinationArnException".asInstanceOf[InvalidRepositoryTriggerDestinationArnException]
-  @scala.inline
-  def InvalidRepositoryTriggerEventsException: InvalidRepositoryTriggerEventsException = "InvalidRepositoryTriggerEventsException".asInstanceOf[InvalidRepositoryTriggerEventsException]
-  @scala.inline
-  def InvalidRepositoryTriggerNameException: InvalidRepositoryTriggerNameException = "InvalidRepositoryTriggerNameException".asInstanceOf[InvalidRepositoryTriggerNameException]
-  @scala.inline
-  def InvalidRepositoryTriggerRegionException: InvalidRepositoryTriggerRegionException = "InvalidRepositoryTriggerRegionException".asInstanceOf[InvalidRepositoryTriggerRegionException]
-  @scala.inline
-  def InvalidSortByException: InvalidSortByException = "InvalidSortByException".asInstanceOf[InvalidSortByException]
-  @scala.inline
-  def InvalidSourceCommitSpecifierException: InvalidSourceCommitSpecifierException = "InvalidSourceCommitSpecifierException".asInstanceOf[InvalidSourceCommitSpecifierException]
-  @scala.inline
-  def InvalidTargetException: InvalidTargetException = "InvalidTargetException".asInstanceOf[InvalidTargetException]
-  @scala.inline
-  def InvalidTargetsException: InvalidTargetsException = "InvalidTargetsException".asInstanceOf[InvalidTargetsException]
-  @scala.inline
-  def InvalidTitleException: InvalidTitleException = "InvalidTitleException".asInstanceOf[InvalidTitleException]
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def ManualMergeRequiredException: ManualMergeRequiredException = "ManualMergeRequiredException".asInstanceOf[ManualMergeRequiredException]
-  @scala.inline
-  def MaximumBranchesExceededException: MaximumBranchesExceededException = "MaximumBranchesExceededException".asInstanceOf[MaximumBranchesExceededException]
-  @scala.inline
-  def MaximumOpenPullRequestsExceededException: MaximumOpenPullRequestsExceededException = "MaximumOpenPullRequestsExceededException".asInstanceOf[MaximumOpenPullRequestsExceededException]
-  @scala.inline
-  def MaximumRepositoryNamesExceededException: MaximumRepositoryNamesExceededException = "MaximumRepositoryNamesExceededException".asInstanceOf[MaximumRepositoryNamesExceededException]
-  @scala.inline
-  def MaximumRepositoryTriggersExceededException: MaximumRepositoryTriggersExceededException = "MaximumRepositoryTriggersExceededException".asInstanceOf[MaximumRepositoryTriggersExceededException]
-  @scala.inline
-  def MergeOptionRequiredException: MergeOptionRequiredException = "MergeOptionRequiredException".asInstanceOf[MergeOptionRequiredException]
-  @scala.inline
-  def MultipleRepositoriesInPullRequestException: MultipleRepositoriesInPullRequestException = "MultipleRepositoriesInPullRequestException".asInstanceOf[MultipleRepositoriesInPullRequestException]
-  @scala.inline
-  def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
-  @scala.inline
-  def NameLengthExceededException: NameLengthExceededException = "NameLengthExceededException".asInstanceOf[NameLengthExceededException]
-  @scala.inline
-  def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
-  @scala.inline
-  def PULL_REQUEST_CREATED: PULL_REQUEST_CREATED = "PULL_REQUEST_CREATED".asInstanceOf[PULL_REQUEST_CREATED]
-  @scala.inline
-  def PULL_REQUEST_MERGE_STATE_CHANGED: PULL_REQUEST_MERGE_STATE_CHANGED = "PULL_REQUEST_MERGE_STATE_CHANGED".asInstanceOf[PULL_REQUEST_MERGE_STATE_CHANGED]
-  @scala.inline
-  def PULL_REQUEST_SOURCE_REFERENCE_UPDATED: PULL_REQUEST_SOURCE_REFERENCE_UPDATED = "PULL_REQUEST_SOURCE_REFERENCE_UPDATED".asInstanceOf[PULL_REQUEST_SOURCE_REFERENCE_UPDATED]
-  @scala.inline
-  def PULL_REQUEST_STATUS_CHANGED: PULL_REQUEST_STATUS_CHANGED = "PULL_REQUEST_STATUS_CHANGED".asInstanceOf[PULL_REQUEST_STATUS_CHANGED]
-  @scala.inline
-  def ParentCommitDoesNotExistException: ParentCommitDoesNotExistException = "ParentCommitDoesNotExistException".asInstanceOf[ParentCommitDoesNotExistException]
-  @scala.inline
-  def ParentCommitIdOutdatedException: ParentCommitIdOutdatedException = "ParentCommitIdOutdatedException".asInstanceOf[ParentCommitIdOutdatedException]
-  @scala.inline
-  def ParentCommitIdRequiredException: ParentCommitIdRequiredException = "ParentCommitIdRequiredException".asInstanceOf[ParentCommitIdRequiredException]
-  @scala.inline
-  def PathDoesNotExistException: PathDoesNotExistException = "PathDoesNotExistException".asInstanceOf[PathDoesNotExistException]
-  @scala.inline
-  def PathRequiredException: PathRequiredException = "PathRequiredException".asInstanceOf[PathRequiredException]
-  @scala.inline
-  def PullRequestAlreadyClosedException: PullRequestAlreadyClosedException = "PullRequestAlreadyClosedException".asInstanceOf[PullRequestAlreadyClosedException]
-  @scala.inline
-  def PullRequestDoesNotExistException: PullRequestDoesNotExistException = "PullRequestDoesNotExistException".asInstanceOf[PullRequestDoesNotExistException]
-  @scala.inline
-  def PullRequestIdRequiredException: PullRequestIdRequiredException = "PullRequestIdRequiredException".asInstanceOf[PullRequestIdRequiredException]
-  @scala.inline
-  def PullRequestStatusRequiredException: PullRequestStatusRequiredException = "PullRequestStatusRequiredException".asInstanceOf[PullRequestStatusRequiredException]
-  @scala.inline
-  def ReferenceDoesNotExistException: ReferenceDoesNotExistException = "ReferenceDoesNotExistException".asInstanceOf[ReferenceDoesNotExistException]
-  @scala.inline
-  def ReferenceNameRequiredException: ReferenceNameRequiredException = "ReferenceNameRequiredException".asInstanceOf[ReferenceNameRequiredException]
-  @scala.inline
-  def ReferenceTypeNotSupportedException: ReferenceTypeNotSupportedException = "ReferenceTypeNotSupportedException".asInstanceOf[ReferenceTypeNotSupportedException]
-  @scala.inline
-  def RepositoryDoesNotExistException: RepositoryDoesNotExistException = "RepositoryDoesNotExistException".asInstanceOf[RepositoryDoesNotExistException]
-  @scala.inline
-  def RepositoryLimitExceededException: RepositoryLimitExceededException = "RepositoryLimitExceededException".asInstanceOf[RepositoryLimitExceededException]
-  @scala.inline
-  def RepositoryNameExistsException: RepositoryNameExistsException = "RepositoryNameExistsException".asInstanceOf[RepositoryNameExistsException]
-  @scala.inline
-  def RepositoryNameRequiredException: RepositoryNameRequiredException = "RepositoryNameRequiredException".asInstanceOf[RepositoryNameRequiredException]
-  @scala.inline
-  def RepositoryNamesRequiredException: RepositoryNamesRequiredException = "RepositoryNamesRequiredException".asInstanceOf[RepositoryNamesRequiredException]
-  @scala.inline
-  def RepositoryNotAssociatedWithPullRequestException: RepositoryNotAssociatedWithPullRequestException = "RepositoryNotAssociatedWithPullRequestException".asInstanceOf[RepositoryNotAssociatedWithPullRequestException]
-  @scala.inline
-  def RepositoryTriggerBranchNameListRequiredException: RepositoryTriggerBranchNameListRequiredException = "RepositoryTriggerBranchNameListRequiredException".asInstanceOf[RepositoryTriggerBranchNameListRequiredException]
-  @scala.inline
-  def RepositoryTriggerDestinationArnRequiredException: RepositoryTriggerDestinationArnRequiredException = "RepositoryTriggerDestinationArnRequiredException".asInstanceOf[RepositoryTriggerDestinationArnRequiredException]
-  @scala.inline
-  def RepositoryTriggerEventsListRequiredException: RepositoryTriggerEventsListRequiredException = "RepositoryTriggerEventsListRequiredException".asInstanceOf[RepositoryTriggerEventsListRequiredException]
-  @scala.inline
-  def RepositoryTriggerNameRequiredException: RepositoryTriggerNameRequiredException = "RepositoryTriggerNameRequiredException".asInstanceOf[RepositoryTriggerNameRequiredException]
-  @scala.inline
-  def RepositoryTriggersListRequiredException: RepositoryTriggersListRequiredException = "RepositoryTriggersListRequiredException".asInstanceOf[RepositoryTriggersListRequiredException]
-  @scala.inline
-  def SYMLINK: SYMLINK = "SYMLINK".asInstanceOf[SYMLINK]
-  @scala.inline
-  def SameFileContentException: SameFileContentException = "SameFileContentException".asInstanceOf[SameFileContentException]
-  @scala.inline
-  def SourceAndDestinationAreSameException: SourceAndDestinationAreSameException = "SourceAndDestinationAreSameException".asInstanceOf[SourceAndDestinationAreSameException]
-  @scala.inline
-  def TargetRequiredException: TargetRequiredException = "TargetRequiredException".asInstanceOf[TargetRequiredException]
-  @scala.inline
-  def TargetsRequiredException: TargetsRequiredException = "TargetsRequiredException".asInstanceOf[TargetsRequiredException]
-  @scala.inline
-  def TipOfSourceReferenceIsDifferentException: TipOfSourceReferenceIsDifferentException = "TipOfSourceReferenceIsDifferentException".asInstanceOf[TipOfSourceReferenceIsDifferentException]
-  @scala.inline
-  def TipsDivergenceExceededException: TipsDivergenceExceededException = "TipsDivergenceExceededException".asInstanceOf[TipsDivergenceExceededException]
-  @scala.inline
-  def TitleRequiredException: TitleRequiredException = "TitleRequiredException".asInstanceOf[TitleRequiredException]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
-  @scala.inline
-  def createReference: createReference = "createReference".asInstanceOf[createReference]
-  @scala.inline
-  def deleteReference: deleteReference = "deleteReference".asInstanceOf[deleteReference]
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
-  @scala.inline
-  def lastModifiedDate: lastModifiedDate = "lastModifiedDate".asInstanceOf[lastModifiedDate]
-  @scala.inline
-  def repositoryName: repositoryName = "repositoryName".asInstanceOf[repositoryName]
-  @scala.inline
-  def updateReference: updateReference = "updateReference".asInstanceOf[updateReference]
 }
-

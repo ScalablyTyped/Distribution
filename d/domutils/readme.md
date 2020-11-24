@@ -1,7 +1,7 @@
 
 # Scala.js typings for domutils
 
-Typings are for version 2.1.0
+Typings are for version 1.7
 
 ## Library description:
 Utilities for working with htmlparser2's dom
@@ -10,9 +10,9 @@ Utilities for working with htmlparser2's dom
 | ------------------ | :-------------: |
 | Full name          | domutils |
 | Keywords           | dom, htmlparser2 |
-| # releases         | 3 |
-| # dependents       | 92 |
-| # downloads        | 544552962 |
+| # releases         | 5 |
+| # dependents       | 113 |
+| # downloads        | 754308663 |
 | # stars            | 3 |
 
 ## Links
@@ -24,7 +24,7 @@ Utilities for working with htmlparser2's dom
 
 
 ## Note
-This library has been generated from typescript code from first party type definitions.
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

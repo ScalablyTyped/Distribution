@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a semantic event which indicates that a component-defined action occurred.
@@ -17,30 +17,34 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ActionEvent extends EventObject {
+  
   /** contains the command string associated with this action. */
   var ActionCommand: String = js.native
 }
-
 object ActionEvent {
+  
   @scala.inline
   def apply(ActionCommand: String, Source: XInterface): ActionEvent = {
     val __obj = js.Dynamic.literal(ActionCommand = ActionCommand.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionEvent]
   }
+  
   @scala.inline
   implicit class ActionEventOps[Self <: ActionEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActionCommand(value: String): Self = this.set("ActionCommand", value.asInstanceOf[js.Any])
   }
-  
 }
-

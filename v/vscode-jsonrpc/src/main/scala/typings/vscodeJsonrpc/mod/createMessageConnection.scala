@@ -4,11 +4,12 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-jsonrpc", "createMessageConnection")
 @js.native
 object createMessageConnection extends js.Object {
+  
   def apply(inputStream: ReadableStream, outputStream: WritableStream): MessageConnection = js.native
   def apply(
     inputStream: ReadableStream,
@@ -45,4 +46,3 @@ object createMessageConnection extends js.Object {
     strategy: ConnectionStrategy
   ): MessageConnection = js.native
 }
-

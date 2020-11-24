@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of cell annotations.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait CellAnnotations
   extends XSheetAnnotations
      with XEnumerationAccess
-
 object CellAnnotations {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -37,4 +37,3 @@ object CellAnnotations {
     __obj.asInstanceOf[CellAnnotations]
   }
 }
-

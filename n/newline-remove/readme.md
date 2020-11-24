@@ -11,8 +11,8 @@ Strip all newlines from the given string.
 | Full name          | newline-remove |
 | Keywords           | line ending, newline, remove, strip |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 159628 |
+| # dependents       | 8 |
+| # downloads        | 241049 |
 | # stars            | 2 |
 
 ## Links

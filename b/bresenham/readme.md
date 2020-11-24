@@ -12,7 +12,7 @@ Bresenham's line algorithm
 | Keywords           | line, bresenham, math |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 274776 |
+| # downloads        | 280478 |
 | # stars            | 2 |
 
 ## Links

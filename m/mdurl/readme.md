@@ -11,8 +11,8 @@ URL utilities for markdown-it
 | Full name          | mdurl |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 37 |
-| # downloads        | 47783319 |
+| # dependents       | 44 |
+| # downloads        | 81534772 |
 | # stars            | 0 |
 
 ## Links

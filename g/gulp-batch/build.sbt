@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-batch"
-version := "1.0-dt-20200515Z-647f8d"
+version := "1.0-dt-20200515Z-abb638"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

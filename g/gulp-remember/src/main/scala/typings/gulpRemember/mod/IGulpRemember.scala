@@ -3,10 +3,11 @@ package typings.gulpRemember.mod
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGulpRemember extends js.Object {
+  
   /**
     * Return a through stream that will:
     *   1. Remember all files that ever pass through it.
@@ -15,6 +16,7 @@ trait IGulpRemember extends js.Object {
     */
   def apply(): ReadWriteStream = js.native
   def apply(cacheName: String): ReadWriteStream = js.native
+  
   /**
     * Return a raw cache by name.
     * Useful for checking state. Manually adding or removing files is NOT recommended.
@@ -23,6 +25,7 @@ trait IGulpRemember extends js.Object {
     */
   def cacheFor(): ICache = js.native
   def cacheFor(cacheName: String): ICache = js.native
+  
   /**
     * Forget about a file.
     * A warning is logged if either the named cache or file do not exist.
@@ -36,6 +39,7 @@ trait IGulpRemember extends js.Object {
     * @param path Path of the file to forget
     */
   def forget(path: String): Unit = js.native
+  
   /**
     * Forget all files in one cache.
     * A warning is logged if the cache does not exist.
@@ -45,4 +49,3 @@ trait IGulpRemember extends js.Object {
   def forgetAll(): Unit = js.native
   def forgetAll(cacheName: String): Unit = js.native
 }
-

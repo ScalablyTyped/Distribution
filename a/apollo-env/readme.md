@@ -9,9 +9,9 @@ Typings are for version 0.6.5
 | ------------------ | :-------------: |
 | Full name          | apollo-env |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 19 |
-| # downloads        | 22281400 |
+| # releases         | 28 |
+| # dependents       | 25 |
+| # downloads        | 50389971 |
 | # stars            | 0 |
 
 ## Links

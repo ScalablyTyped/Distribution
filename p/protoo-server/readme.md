@@ -10,9 +10,9 @@ protoo Node.js server module
 | ------------------ | :-------------: |
 | Full name          | protoo-server |
 | Keywords           | nodejs, websocket |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 7020 |
+| # releases         | 9 |
+| # dependents       | 2 |
+| # downloads        | 18077 |
 | # stars            | 0 |
 
 ## Links

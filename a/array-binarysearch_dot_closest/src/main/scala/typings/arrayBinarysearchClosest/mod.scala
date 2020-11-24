@@ -2,11 +2,12 @@ package typings.arrayBinarysearchClosest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("array-binarysearch.closest", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(arr: js.Array[String], `val`: String): Double = js.native
   def apply(arr: js.Array[Double], `val`: Double): Double = js.native
   def apply[T](arr: js.Array[T], `val`: T): Double = js.native
@@ -116,4 +117,3 @@ object mod extends js.Object {
   def apply[T](arr: js.Array[T], `val`: T, fn: Null, ths: js.Any, bgn: Double): Double = js.native
   def apply[T](arr: js.Array[T], `val`: T, fn: Null, ths: js.Any, bgn: Double, end: Double): Double = js.native
 }
-

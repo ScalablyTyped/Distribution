@@ -11,8 +11,8 @@ A suite of tools for integrating Braintree in the browser
 | Full name          | braintree-web |
 | Keywords           | braintree, payments |
 | # releases         | 43 |
-| # dependents       | 22 |
-| # downloads        | 4163932 |
+| # dependents       | 28 |
+| # downloads        | 6570911 |
 | # stars            | 3 |
 
 ## Links

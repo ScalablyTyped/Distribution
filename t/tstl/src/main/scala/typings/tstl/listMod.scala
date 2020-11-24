@@ -10,11 +10,12 @@ import typings.tstl.listMod.List.Iterator
 import typings.tstl.listMod.List.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/List", JSImport.Namespace)
 @js.native
 object listMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -63,9 +64,11 @@ object listMod extends js.Object {
       * @param val Value to fill.
       */
     def this(size: Double, `val`: T) = this()
+    
     var _Quick_sort: js.Any = js.native
+    
     var _Quick_sort_partition: js.Any = js.native
-    var ptr_ : js.Any = js.native
+    
     /**
       * Range Assigner.
       *
@@ -74,6 +77,7 @@ object listMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -92,11 +96,13 @@ object listMod extends js.Object {
       * @param val The value to change.
       */
     def back(`val`: T): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -114,16 +120,21 @@ object listMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: Iterator[T]): Iterator[T] = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def pop_front(): Unit = js.native
+    
+    var ptr_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def push_front(`val`: T): Unit = js.native
+    
     /**
       * Transfer elements.
       *
@@ -148,6 +159,7 @@ object listMod extends js.Object {
       * @param it Position of the single element to transfer.
       */
     def splice(pos: Iterator[T], from: List[T], it: Iterator[T]): Unit = js.native
+    
     /**
       * Swap elements.
       *
@@ -155,6 +167,7 @@ object listMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: List[T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -163,9 +176,9 @@ object listMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   @js.native
   object List extends js.Object {
+    
     /**
       * Iterator of {@link List}
       *
@@ -173,11 +186,13 @@ object listMod extends js.Object {
       */
     @js.native
     class Iterator[T] protected () extends ListIterator[T, List[T], Iterator[T], ReverseIterator[T], T] {
+      
       var source_ptr_ : js.Any = js.native
+      
       /**
         * @inheritDoc
         */
-      def value(`val`: T): js.Any = js.native
+      def value_=(`val`: T): Unit = js.native
     }
     
     /**
@@ -187,9 +202,12 @@ object listMod extends js.Object {
       */
     @js.native
     class ReverseIterator[T] ()
-      extends typings.tstl.reverseIteratorMod.ReverseIterator[T, List[T], Iterator[T], ReverseIterator[T], T]
-    
+      extends typings.tstl.reverseIteratorMod.ReverseIterator[T, List[T], Iterator[T], ReverseIterator[T], T] {
+      
+      /**
+        * @inheritDoc
+        */
+      def value_=(`val`: T): Unit = js.native
+    }
   }
-  
 }
-

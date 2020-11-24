@@ -2,7 +2,7 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for updating an active breakpoint. The message is defined to allow
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaUpdateActiveBreakpointResponse extends js.Object
-

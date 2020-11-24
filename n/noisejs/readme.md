@@ -9,9 +9,9 @@ Perlin noise implementation
 | ------------------ | :-------------: |
 | Full name          | noisejs |
 | Keywords           | perlin, noise, simplex |
-| # releases         | 1 |
-| # dependents       | 9 |
-| # downloads        | 12633 |
+| # releases         | 0 |
+| # dependents       | 10 |
+| # downloads        | 13166 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ Find files or directories by name
 | ------------------ | :-------------: |
 | Full name          | find |
 | Keywords           | find, findfile, search, files |
-| # releases         | 3 |
-| # dependents       | 194 |
-| # downloads        | 16698009 |
+| # releases         | 2 |
+| # dependents       | 220 |
+| # downloads        | 29368457 |
 | # stars            | 10 |
 
 ## Links

@@ -2,13 +2,14 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the configuration for importing data from Cloud Storage.
   */
 @js.native
 trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource extends js.Object {
+  
   /**
     * Points to a Cloud Storage URI containing file(s) to import.  The URI must
     * be in the following format: `gs://{bucket_id}/{object_id}`. The URI can
@@ -25,29 +26,33 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource extends js.Object {
     */
   var uri: js.UndefOr[String] = js.native
 }
-
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource {
+  
   @scala.inline
   def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource]
   }
+  
   @scala.inline
   implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSourceOps[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUri: Self = this.set("uri", js.undefined)
   }
-  
 }
-

@@ -5,11 +5,12 @@ import typings.paypalRestSdk.mod.CallbackFunction
 import typings.paypalRestSdk.mod.PaymentResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paypal-rest-sdk", "payment.execute")
 @js.native
 object execute extends js.Object {
+  
   def apply(id: String, data: ExecuteRequest, config: RequestOptions): Unit = js.native
   def apply(id: String, data: ExecuteRequest, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = js.native
   def apply(id: String, data: ExecuteRequest, config: CallbackFunction[PaymentResponse]): Unit = js.native
@@ -20,4 +21,3 @@ object execute extends js.Object {
     cb: CallbackFunction[PaymentResponse]
   ): Unit = js.native
 }
-

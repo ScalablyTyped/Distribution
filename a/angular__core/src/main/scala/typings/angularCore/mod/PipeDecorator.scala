@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PipeDecorator
@@ -11,6 +11,7 @@ trait PipeDecorator
   * See the `Pipe` decorator.
   */
 Instantiable1[/* obj */ Pipe, Pipe] {
+  
   /**
     *
     * Decorator that marks a class as pipe and supplies configuration metadata.
@@ -34,4 +35,3 @@ Instantiable1[/* obj */ Pipe, Pipe] {
     */
   def apply(obj: Pipe): TypeDecorator = js.native
 }
-

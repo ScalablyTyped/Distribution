@@ -2,7 +2,7 @@ package typings.googleAppsScript.global.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration representing the parts of a spreadsheet that can be protected from edits.
@@ -27,9 +27,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GoogleAppsScript.Spreadsheet.ProtectionType")
 @js.native
 object ProtectionType extends js.Object {
-  /* 0 */ val RANGE: typings.googleAppsScript.GoogleAppsScript.Spreadsheet.ProtectionType.RANGE with Double = js.native
-  /* 1 */ val SHEET: typings.googleAppsScript.GoogleAppsScript.Spreadsheet.ProtectionType.SHEET with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Spreadsheet.ProtectionType with Double] = js.native
+  
+  /* 0 */ val RANGE: typings.googleAppsScript.GoogleAppsScript.Spreadsheet.ProtectionType.RANGE with Double = js.native
+  
+  /* 1 */ val SHEET: typings.googleAppsScript.GoogleAppsScript.Spreadsheet.ProtectionType.SHEET with Double = js.native
 }
-

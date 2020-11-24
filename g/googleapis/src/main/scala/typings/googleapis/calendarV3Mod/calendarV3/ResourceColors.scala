@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Colors")
 @js.native
 class ResourceColors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * calendar.colors.get
     * @desc Returns the color definitions for calendars and events.
@@ -41,4 +43,3 @@ class ResourceColors protected () extends js.Object {
     callback: BodyResponseCallback[SchemaColors]
   ): Unit = js.native
 }
-

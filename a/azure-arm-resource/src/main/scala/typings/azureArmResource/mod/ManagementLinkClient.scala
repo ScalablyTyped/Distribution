@@ -5,11 +5,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource", "ManagementLinkClient")
 @js.native
 object ManagementLinkClient extends js.Object {
+  
   @js.native
   class ManagementLinkClient protected ()
     extends typings.azureArmResource.managementLinkClientMod.ManagementLinkClient {
@@ -57,6 +58,20 @@ object ManagementLinkClient extends js.Object {
   }
   
   @js.native
+  object ManagementLinkModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.managementLinkClientMod.ManagementLinkModels.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
+  }
+  
+  @js.native
   class default protected ()
     extends typings.azureArmResource.managementLinkClientMod.default {
     /**
@@ -101,20 +116,4 @@ object ManagementLinkClient extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object ManagementLinkModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.managementLinkClientMod.ManagementLinkModels.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

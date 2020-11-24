@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a top level frame in the frame hierarchy with the desktop as root
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Task extends XTask
-
 object Task {
+  
   @scala.inline
   def apply(
     ComponentWindow: XWindow,
@@ -59,4 +59,3 @@ object Task {
     __obj.asInstanceOf[Task]
   }
 }
-

@@ -11,8 +11,8 @@ Cache your async lookups and don't fetch the same thing more than necessary.
 | Full name          | async-cache |
 | Keywords           | async, cache, lru |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 3114158 |
+| # dependents       | 52 |
+| # downloads        | 9106820 |
 | # stars            | 5 |
 
 ## Links

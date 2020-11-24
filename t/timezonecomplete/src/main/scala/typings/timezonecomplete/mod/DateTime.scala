@@ -5,7 +5,7 @@ import typings.timezonecomplete.localeMod.PartialLocale
 import typings.timezonecomplete.timesourceMod.TimeSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "DateTime")
 @js.native
@@ -369,22 +369,17 @@ class DateTime ()
     timeZone: typings.timezonecomplete.timezoneMod.TimeZone
   ) = this()
 }
-
 /* static members */
 @JSImport("timezonecomplete", "DateTime")
 @js.native
 object DateTime extends js.Object {
+  
   /**
     * Split a combined ISO datetime and timezone into datetime and timezone
     * @throws nothing
     */
   var _splitDateFromTimeZone: js.Any = js.native
-  /**
-    * Actual time source in use. Setting this property allows to
-    * fake time in tests. DateTime.nowLocal() and DateTime.nowUtc()
-    * use this property for obtaining the current time.
-    */
-  var timeSource: TimeSource = js.native
+  
   /**
     * Check whether a given date exists in the given time zone.
     * E.g. 2015-02-29 returns false (not a leap year)
@@ -407,6 +402,7 @@ object DateTime extends js.Object {
     zone: js.UndefOr[typings.timezonecomplete.timezoneMod.TimeZone | Null],
     allowPre1970: js.UndefOr[Boolean]
   ): Boolean = js.native
+  
   /**
     * Create a DateTime from a Lotus 123 / Microsoft Excel date-time value
     * i.e. a double representing days since 1-1-1900 where 1900 is incorrectly seen as leap year
@@ -419,6 +415,7 @@ object DateTime extends js.Object {
     */
   def fromExcel(n: Double): typings.timezonecomplete.datetimeMod.DateTime = js.native
   def fromExcel(n: Double, timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  
   /**
     * Current date+time in the given time zone
     * @param timeZone	The desired time zone (optional, defaults to UTC).
@@ -426,16 +423,19 @@ object DateTime extends js.Object {
     */
   def now(): typings.timezonecomplete.datetimeMod.DateTime = js.native
   def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  
   /**
     * Current date+time in local time
     * @throws nothing
     */
   def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  
   /**
     * Current date+time in UTC time
     * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  
   /**
     * Parse a date in a given format
     * @param s the string to parse
@@ -483,5 +483,11 @@ object DateTime extends js.Object {
     locale: PartialLocale,
     allowTrailing: Boolean
   ): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  
+  /**
+    * Actual time source in use. Setting this property allows to
+    * fake time in tests. DateTime.nowLocal() and DateTime.nowUtc()
+    * use this property for obtaining the current time.
+    */
+  var timeSource: TimeSource = js.native
 }
-

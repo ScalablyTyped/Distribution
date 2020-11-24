@@ -173,10 +173,11 @@ import typings.activexMshtml.anon.EventData
 import typings.activexMshtml.anon.PEvtObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: HTMLAnchorElement,
     event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
@@ -1442,4 +1443,3 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }
-

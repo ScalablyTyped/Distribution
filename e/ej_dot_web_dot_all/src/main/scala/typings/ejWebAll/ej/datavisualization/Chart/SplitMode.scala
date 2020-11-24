@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Chart
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SplitMode extends js.Object
-
 @JSGlobal("ej.datavisualization.Chart.SplitMode")
 @js.native
 object SplitMode extends js.Object {
+  
   //string
   @js.native
   sealed trait Indexes extends SplitMode
@@ -25,6 +25,4 @@ object SplitMode extends js.Object {
   //string
   @js.native
   sealed trait Value extends SplitMode
-  
 }
-

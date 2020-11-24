@@ -10,9 +10,9 @@ This application aims to retrieve browser history from all browsers on the user'
 | ------------------ | :-------------: |
 | Full name          | node-browser-history |
 | Keywords           | browser, history |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2972 |
+| # downloads        | 2524 |
 | # stars            | 0 |
 
 ## Links

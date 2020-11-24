@@ -2,7 +2,7 @@ package typings.typedoc.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "Reflection")
 @js.native
@@ -15,4 +15,3 @@ abstract class Reflection protected ()
     parent: typings.typedoc.abstractMod.Reflection
   ) = this()
 }
-

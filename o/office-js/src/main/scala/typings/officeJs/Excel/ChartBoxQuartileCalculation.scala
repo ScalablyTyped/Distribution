@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartBoxQuartileCalculation extends js.Object
-
 /**
   *
   * Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
@@ -16,11 +15,10 @@ sealed trait ChartBoxQuartileCalculation extends js.Object
 @JSGlobal("Excel.ChartBoxQuartileCalculation")
 @js.native
 object ChartBoxQuartileCalculation extends js.Object {
+  
   @js.native
   sealed trait exclusive extends ChartBoxQuartileCalculation
   
   @js.native
   sealed trait inclusive extends ChartBoxQuartileCalculation
-  
 }
-

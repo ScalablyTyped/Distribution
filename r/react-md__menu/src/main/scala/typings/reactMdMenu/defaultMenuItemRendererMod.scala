@@ -3,15 +3,18 @@ package typings.reactMdMenu
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/menu/types/defaultMenuItemRenderer", JSImport.Namespace)
 @js.native
 object defaultMenuItemRendererMod extends js.Object {
+  
+  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = js.native
+  
   trait _ValidMenuItem extends js.Object
   
-  def default(item: ValidMenuItem, key: String): ReactNode = js.native
   type MenuItemRenderer = js.Function2[/* item */ ValidMenuItem, /* key */ String, ReactNode]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.react.mod.ReactNode
     - typings.reactMdMenu.menuItemMod.MenuItemProps
@@ -19,4 +22,3 @@ object defaultMenuItemRendererMod extends js.Object {
   */
   type ValidMenuItem = _ValidMenuItem | ReactNode
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChanceStatic
@@ -13,8 +13,8 @@ trait ChanceStatic
       (/* generator */ js.Function0[js.Any]) | (/* seed */ Seed), 
       typings.chance.Chance.Chance
     ] {
+  
   def apply(): typings.chance.Chance.Chance = js.native
   def apply(generator: js.Function0[_]): typings.chance.Chance.Chance = js.native
   def apply(seed: Seed): typings.chance.Chance.Chance = js.native
 }
-

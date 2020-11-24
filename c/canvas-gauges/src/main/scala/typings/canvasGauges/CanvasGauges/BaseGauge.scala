@@ -18,17 +18,19 @@ import typings.canvasGauges.canvasGaugesStrings.init
 import typings.canvasGauges.canvasGaugesStrings.render
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseGauge extends js.Object {
+  
   var animation: Animation = js.native
+  
   var canvas: SmartCanvas = js.native
-  var options: GenericOptions = js.native
-  var `type`: BaseGauge = js.native
-  var value: Double = js.native
+  
   def destroy(): js.Any = js.native
+  
   def draw(): BaseGauge = js.native
+  
   @JSName("on")
   def on_animate(event: animate, listeners: js.Function2[/* percent */ Double, /* value */ Double, Unit]): Unit = js.native
   @JSName("on")
@@ -61,6 +63,12 @@ trait BaseGauge extends js.Object {
   def on_init(event: init, listeners: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_render(event: render, listeners: js.Function0[Unit]): Unit = js.native
+  
+  var options: GenericOptions = js.native
+  
+  var `type`: BaseGauge = js.native
+  
   def update(options: GenericOptions): BaseGauge = js.native
+  
+  var value: Double = js.native
 }
-

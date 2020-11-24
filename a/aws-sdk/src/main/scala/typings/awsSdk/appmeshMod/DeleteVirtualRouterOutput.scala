@@ -2,36 +2,40 @@ package typings.awsSdk.appmeshMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeleteVirtualRouterOutput extends js.Object {
+  
   /**
     * The virtual router that was deleted.
     */
   var virtualRouter: VirtualRouterData = js.native
 }
-
 object DeleteVirtualRouterOutput {
+  
   @scala.inline
   def apply(virtualRouter: VirtualRouterData): DeleteVirtualRouterOutput = {
     val __obj = js.Dynamic.literal(virtualRouter = virtualRouter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualRouterOutput]
   }
+  
   @scala.inline
   implicit class DeleteVirtualRouterOutputOps[Self <: DeleteVirtualRouterOutput] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setVirtualRouter(value: VirtualRouterData): Self = this.set("virtualRouter", value.asInstanceOf[js.Any])
   }
-  
 }
-

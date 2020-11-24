@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Platformtypes")
 @js.native
 class ResourcePlatformtypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.platformTypes.get
     * @desc Gets one platform type by ID.
@@ -42,6 +44,7 @@ class ResourcePlatformtypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlatformType]
   ): Unit = js.native
+  
   /**
     * dfareporting.platformTypes.list
     * @desc Retrieves a list of platform types.
@@ -74,4 +77,3 @@ class ResourcePlatformtypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlatformTypesListResponse]
   ): Unit = js.native
 }
-

@@ -52,48 +52,11 @@ import typings.oracleOraclejet.oracleOraclejetStrings.visualEffectsChanged
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
-  var borderColor: String = js.native
-  var color: String = js.native
-  var label: Text = js.native
-  var max: Double = js.native
-  var metricLabel: TextType = js.native
-  var min: Double = js.native
-  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[Text], _]) | Null = js.native
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[TextType], _]) | Null = js.native
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onRotationChanged: (js.Function1[/* event */ JetElementCustomEvent[`90` | `180` | `270` | `0`], _]) | Null = js.native
-  var onSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojLedGauge['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`10`], _]) | Null = js.native
-  var onTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle], 
-    _
-  ]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
-  var rotation: `90` | `180` | `270` | `0` = js.native
-  var size: Double = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object = js.native
-  var thresholds: js.Array[Threshold] = js.native
-  var tooltip: `10` = js.native
-  var `type`: arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
-  var value: Double | Null = js.native
-  var visualEffects: none | auto = js.native
+  
   def addEventListener(
     `type`: rotationChanged,
     listener: js.ThisFunction1[
@@ -279,7 +242,13 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var borderColor: String = js.native
+  
+  var color: String = js.native
+  
   def getMetricLabel(): String = js.native
+  
   @JSName("getProperty")
   def getProperty_borderColor(property: borderColor): String = js.native
   @JSName("getProperty")
@@ -310,7 +279,57 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   def getProperty_value(property: value): Double | Null = js.native
   @JSName("getProperty")
   def getProperty_visualEffects(property: visualEffects): none | auto = js.native
+  
+  var label: Text = js.native
+  
+  var max: Double = js.native
+  
+  var metricLabel: TextType = js.native
+  
+  var min: Double = js.native
+  
+  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[Text], _]) | Null = js.native
+  
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[TextType], _]) | Null = js.native
+  
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onRotationChanged: (js.Function1[/* event */ JetElementCustomEvent[`90` | `180` | `270` | `0`], _]) | Null = js.native
+  
+  var onSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojLedGauge['svgStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`10`], _]) | Null = js.native
+  
+  var onTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle], 
+    _
+  ]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
+  
+  var rotation: `90` | `180` | `270` | `0` = js.native
+  
   def setProperties(properties: ojLedGaugeSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: `type`, value: arrow): Unit = js.native
   def setProperty(property: `type`, value: circle): Unit = js.native
   def setProperty(property: `type`, value: diamond): Unit = js.native
@@ -351,5 +370,20 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var size: Double = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object = js.native
+  
+  var thresholds: js.Array[Threshold] = js.native
+  
+  var tooltip: `10` = js.native
+  
+  var `type`: arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
+  
+  var value: Double | Null = js.native
+  
+  var visualEffects: none | auto = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to be implemented by objects used to provide system dependent data for a transfer operation. Those objects usually also implement {@link
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSystemTransferable extends XInterface {
+  
   /**
     * Called by a data consumer to obtain a system specific data object from the source. The data object is returned in an any. The contained type may
     * differ on different platforms.
@@ -21,8 +22,8 @@ trait XSystemTransferable extends XInterface {
     */
   def getData(aProcessId: SeqEquiv[Double]): js.Any = js.native
 }
-
 object XSystemTransferable {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -33,20 +34,23 @@ object XSystemTransferable {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction1(getData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSystemTransferable]
   }
+  
   @scala.inline
   implicit class XSystemTransferableOps[Self <: XSystemTransferable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetData(value: SeqEquiv[Double] => js.Any): Self = this.set("getData", js.Any.fromFunction1(value))
   }
-  
 }
-

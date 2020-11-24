@@ -2,9 +2,64 @@ package typings.qiniuJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qiniuJsStrings {
+  
+  @scala.inline
+  def Center: Center = "Center".asInstanceOf[Center]
+  
+  @scala.inline
+  def East: East = "East".asInstanceOf[East]
+  
+  @scala.inline
+  def North: North = "North".asInstanceOf[North]
+  
+  @scala.inline
+  def NorthEast: NorthEast = "NorthEast".asInstanceOf[NorthEast]
+  
+  @scala.inline
+  def NorthWest: NorthWest = "NorthWest".asInstanceOf[NorthWest]
+  
+  @scala.inline
+  def South: South = "South".asInstanceOf[South]
+  
+  @scala.inline
+  def SouthEast: SouthEast = "SouthEast".asInstanceOf[SouthEast]
+  
+  @scala.inline
+  def SouthWest: SouthWest = "SouthWest".asInstanceOf[SouthWest]
+  
+  @scala.inline
+  def West: West = "West".asInstanceOf[West]
+  
+  @scala.inline
+  def bmp: bmp = "bmp".asInstanceOf[bmp]
+  
+  @scala.inline
+  def gif: gif = "gif".asInstanceOf[gif]
+  
+  @scala.inline
+  def imageMogr2: imageMogr2 = "imageMogr2".asInstanceOf[imageMogr2]
+  
+  @scala.inline
+  def imageView2: imageView2 = "imageView2".asInstanceOf[imageView2]
+  
+  @scala.inline
+  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  
+  @scala.inline
+  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def watermark: watermark = "watermark".asInstanceOf[watermark]
+  
+  @scala.inline
+  def webp: webp = "webp".asInstanceOf[webp]
+  
   @js.native
   sealed trait Center extends js.Object
   
@@ -58,42 +113,4 @@ object qiniuJsStrings {
   
   @js.native
   sealed trait webp extends js.Object
-  
-  @scala.inline
-  def Center: Center = "Center".asInstanceOf[Center]
-  @scala.inline
-  def East: East = "East".asInstanceOf[East]
-  @scala.inline
-  def North: North = "North".asInstanceOf[North]
-  @scala.inline
-  def NorthEast: NorthEast = "NorthEast".asInstanceOf[NorthEast]
-  @scala.inline
-  def NorthWest: NorthWest = "NorthWest".asInstanceOf[NorthWest]
-  @scala.inline
-  def South: South = "South".asInstanceOf[South]
-  @scala.inline
-  def SouthEast: SouthEast = "SouthEast".asInstanceOf[SouthEast]
-  @scala.inline
-  def SouthWest: SouthWest = "SouthWest".asInstanceOf[SouthWest]
-  @scala.inline
-  def West: West = "West".asInstanceOf[West]
-  @scala.inline
-  def bmp: bmp = "bmp".asInstanceOf[bmp]
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
-  @scala.inline
-  def imageMogr2: imageMogr2 = "imageMogr2".asInstanceOf[imageMogr2]
-  @scala.inline
-  def imageView2: imageView2 = "imageView2".asInstanceOf[imageView2]
-  @scala.inline
-  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def watermark: watermark = "watermark".asInstanceOf[watermark]
-  @scala.inline
-  def webp: webp = "webp".asInstanceOf[webp]
 }
-

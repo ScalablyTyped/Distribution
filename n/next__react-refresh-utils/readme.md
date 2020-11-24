@@ -1,7 +1,7 @@
 
 # Scala.js typings for next__react-refresh-utils
 
-Typings are for version 9.5.1
+Typings are for version 10.0.2
 
 ## Library description:
 An experimental package providing utilities for React Refresh.
@@ -10,15 +10,15 @@ An experimental package providing utilities for React Refresh.
 | ------------------ | :-------------: |
 | Full name          | @next/react-refresh-utils |
 | Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 2 |
-| # downloads        | 606943 |
+| # releases         | 239 |
+| # dependents       | 8 |
+| # downloads        | 14791190 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/zeit/next.js#readme)
-- [Bugs](https://github.com/zeit/next.js/issues)
-- [Repository](https://github.com/zeit/next.js)
+- [Homepage](https://github.com/vercel/next.js#readme)
+- [Bugs](https://github.com/vercel/next.js/issues)
+- [Repository](https://github.com/vercel/next.js)
 - [Npm](https://www.npmjs.com/package/%40next%2Freact-refresh-utils)
     
 

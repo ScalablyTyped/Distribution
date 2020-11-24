@@ -10,9 +10,9 @@ A lightweight, battle tested, fast, CSS parser in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | jotform-css.js |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 6612 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 8415 |
 | # stars            | 0 |
 
 ## Links

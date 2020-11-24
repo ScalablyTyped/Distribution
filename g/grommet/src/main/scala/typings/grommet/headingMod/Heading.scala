@@ -9,13 +9,12 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLHeadingElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Heading", "Heading")
+@JSImport("grommet/components/Heading", "Heading")
 @js.native
 object Heading extends TopLevel[
       FC[
         HeadingProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
       ]
     ]
-

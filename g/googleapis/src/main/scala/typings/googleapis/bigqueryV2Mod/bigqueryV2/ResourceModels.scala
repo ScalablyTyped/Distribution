@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Models")
 @js.native
 class ResourceModels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigquery.models.delete
     * @desc Deletes the model specified by modelId from the dataset.
@@ -39,6 +41,7 @@ class ResourceModels protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceModelsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceModelsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * bigquery.models.get
     * @desc Gets the specified model resource by model ID.
@@ -69,6 +72,7 @@ class ResourceModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaModel]
   ): Unit = js.native
+  
   /**
     * bigquery.models.list
     * @desc Lists all models in the specified dataset. Requires the READER
@@ -101,6 +105,7 @@ class ResourceModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListModelsResponse]
   ): Unit = js.native
+  
   /**
     * bigquery.models.patch
     * @desc Patch specific fields in the specified model.
@@ -133,4 +138,3 @@ class ResourceModels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaModel]
   ): Unit = js.native
 }
-

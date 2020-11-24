@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geolite2"
-version := "2.0-dt-20191206Z-86c0e9"
+version := "2.0-dt-20191206Z-234fcd"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

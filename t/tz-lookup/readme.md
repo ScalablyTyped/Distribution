@@ -10,15 +10,12 @@ fast time zone lookup
 | ------------------ | :-------------: |
 | Full name          | tz-lookup |
 | Keywords           | tz, timezone, time zone |
-| # releases         | 13 |
-| # dependents       | 13 |
-| # downloads        | 521874 |
+| # releases         | 8 |
+| # dependents       | 14 |
+| # downloads        | 901368 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/darkskyapp/tz-lookup#readme)
-- [Bugs](https://github.com/darkskyapp/tz-lookup/issues)
-- [Repository](https://github.com/darkskyapp/tz-lookup)
 - [Npm](https://www.npmjs.com/package/tz-lookup)
     
 

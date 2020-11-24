@@ -2,11 +2,12 @@ package typings.sindresorhusTransliterate.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@sindresorhus/transliterate", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Convert Unicode characters to Latin characters using [transliteration](https://en.wikipedia.org/wiki/Transliteration).
   @param string - String to transliterate.
@@ -26,4 +27,3 @@ object ^ extends js.Object {
   def apply(string: String): String = js.native
   def apply(string: String, options: Options): String = js.native
 }
-

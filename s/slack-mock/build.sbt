@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "slack-mock"
-version := "1.1-dt-20200515Z-78e9b2"
+version := "1.1-dt-20200515Z-64c1d7"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "nock" % "13.0.3-443377",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13",
-  "org.scalablytyped" %%% "ws" % "7.2-dt-20200629Z-0157fd")
+  "org.scalablytyped" %%% "nock" % "13.0.5-ca71cb",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0",
+  "org.scalablytyped" %%% "ws" % "7.4-dt-20201109Z-fda7ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

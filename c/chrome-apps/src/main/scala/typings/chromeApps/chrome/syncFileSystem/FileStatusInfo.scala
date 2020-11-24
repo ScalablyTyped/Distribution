@@ -11,14 +11,17 @@ import typings.filesystem.FileEntry
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileStatusInfo extends js.Object {
+  
   /** Optional error that is only returned if there was a problem retrieving the FileStatus for the given file. */
   var error: js.UndefOr[String] = js.native
+  
   /** One of the Entry's originally given to getFileStatuses. */
   var fileEntry: FileEntry = js.native
+  
   /**
     * Status value
     * @see FileStatus
@@ -32,8 +35,8 @@ trait FileStatusInfo extends js.Object {
     ]
   ] = js.native
 }
-
 object FileStatusInfo {
+  
   @scala.inline
   def apply(
     fileEntry: FileEntry,
@@ -49,19 +52,25 @@ object FileStatusInfo {
     val __obj = js.Dynamic.literal(fileEntry = fileEntry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStatusInfo]
   }
+  
   @scala.inline
   implicit class FileStatusInfoOps[Self <: FileStatusInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFileEntry(value: FileEntry): Self = this.set("fileEntry", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStatus(
       value: ToStringLiteral[
@@ -73,11 +82,11 @@ object FileStatusInfo {
           ]
         ]
     ): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteError: Self = this.set("error", js.undefined)
   }
-  
 }
-

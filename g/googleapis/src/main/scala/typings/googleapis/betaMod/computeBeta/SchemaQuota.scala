@@ -2,66 +2,80 @@ package typings.googleapis.betaMod.computeBeta
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A quotas entry.
   */
 @js.native
 trait SchemaQuota extends js.Object {
+  
   /**
     * [Output Only] Quota limit for this metric.
     */
   var limit: js.UndefOr[Double] = js.native
+  
   /**
     * [Output Only] Name of the quota metric.
     */
   var metric: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Owning resource. This is the resource on which this quota
     * is applied.
     */
   var owner: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Current usage of this metric.
     */
   var usage: js.UndefOr[Double] = js.native
 }
-
 object SchemaQuota {
+  
   @scala.inline
   def apply(): SchemaQuota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuota]
   }
+  
   @scala.inline
   implicit class SchemaQuotaOps[Self <: SchemaQuota] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLimit: Self = this.set("limit", js.undefined)
+    
     @scala.inline
     def setMetric(value: String): Self = this.set("metric", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMetric: Self = this.set("metric", js.undefined)
+    
     @scala.inline
     def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOwner: Self = this.set("owner", js.undefined)
+    
     @scala.inline
     def setUsage(value: Double): Self = this.set("usage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUsage: Self = this.set("usage", js.undefined)
   }
-  
 }
-

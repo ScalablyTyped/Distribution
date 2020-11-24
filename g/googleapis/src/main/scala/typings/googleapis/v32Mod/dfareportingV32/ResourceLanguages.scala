@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Languages")
 @js.native
 class ResourceLanguages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.languages.list
     * @desc Retrieves a list of languages.
@@ -42,4 +44,3 @@ class ResourceLanguages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLanguagesListResponse]
   ): Unit = js.native
 }
-

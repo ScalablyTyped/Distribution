@@ -3,11 +3,12 @@ package typings.images.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("images", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(buffer: Buffer): ImagesStatic = js.native
   def apply(buffer: Buffer, start: js.UndefOr[scala.Nothing], end: Double): ImagesStatic = js.native
   def apply(buffer: Buffer, start: Double): ImagesStatic = js.native
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(image: ImagesStatic, x: Double, y: Double, width: Double, height: Double): ImagesStatic = js.native
   def apply(width: Double, height: Double): ImagesStatic = js.native
 }
-

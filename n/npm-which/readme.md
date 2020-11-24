@@ -10,9 +10,9 @@ Locate a program or locally installed node module's executable
 | ------------------ | :-------------: |
 | Full name          | npm-which |
 | Keywords           | npm, path, executable, run |
-| # releases         | 1 |
-| # dependents       | 95 |
-| # downloads        | 51271478 |
+| # releases         | 0 |
+| # dependents       | 104 |
+| # downloads        | 45219815 |
 | # stars            | 3 |
 
 ## Links

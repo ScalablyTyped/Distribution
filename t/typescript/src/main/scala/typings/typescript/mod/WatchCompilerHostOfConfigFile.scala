@@ -2,7 +2,7 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Host to create watch with config file
@@ -11,12 +11,15 @@ import scala.scalajs.js.annotation._
 trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
   extends WatchCompilerHost[T]
      with ConfigFileDiagnosticsReporter {
+  
   /** Name of the config file to compile */
   var configFileName: java.lang.String = js.native
+  
   var extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]] = js.native
+  
   /** Options to extend */
   var optionsToExtend: js.UndefOr[CompilerOptions] = js.native
-  var watchOptionsToExtend: js.UndefOr[WatchOptions] = js.native
+  
   /**
     * Used to generate source file names from the config file and its include, exclude, files rules
     * and also to cache the directory stucture
@@ -125,5 +128,6 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
     include: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native
+  
+  var watchOptionsToExtend: js.UndefOr[WatchOptions] = js.native
 }
-

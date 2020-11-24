@@ -6,31 +6,37 @@ import typings.angularSanitize.anon.HtmlElements
 import typings.angularSanitize.mod.angularAugmentingMod.sanitize.filter.ILinky
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("angular", JSImport.Namespace)
 @js.native
 object angularAugmentingMod extends js.Object {
+  
   ///////////////////////////////////////////////////////////////////////////////
   // ngSanitize module (angular-sanitize.js)
   // see https://code.angularjs.org/1.7.0/docs/api/ngSanitize
   ///////////////////////////////////////////////////////////////////////////////
   @js.native
   object sanitize extends js.Object {
+    
     /**
       * Creates and configures $sanitize instance.
       */
     @js.native
     trait ISanitizeProvider extends js.Object {
+      
       /**
         * Extends the built-in list of valid attributes, i.e. attributes that are considered safe and are not stripped off during sanitization.
         *
-        * Note: The new attributes will not be treated as URI attributes, which means their values will not be sanitized as URIs using $compileProvider's aHrefSanitizationWhitelist and imgSrcSanitizationWhitelist.
+        * Note: The new attributes will not be treated as URI attributes, which means their
+        * values will not be sanitized as URIs using $compileProvider's
+        * aHrefSanitizationTrustedUrlList and imgSrcSanitizationTrustedUrlList.
         * @see https://code.angularjs.org/1.7.0/docs/api/ngSanitize/provider/$sanitizeProvider#addValidAttrs
         * @param attrs A list of valid attributes.
         */
       def addValidAttrs(attrs: js.Array[String]): ISanitizeProvider = js.native
+      
       /**
         * Extends the built-in lists of valid HTML/SVG elements, i.e. elements that are considered safe and are not stripped off during sanitization.
         *
@@ -44,6 +50,7 @@ object angularAugmentingMod extends js.Object {
         */
       def addValidElements(elements: js.Array[String]): ISanitizeProvider = js.native
       def addValidElements(elements: HtmlElements): ISanitizeProvider = js.native
+      
       def enableSvg(): Boolean | ISanitizeProvider = js.native
       def enableSvg(flag: Boolean): Boolean | ISanitizeProvider = js.native
       /**
@@ -60,6 +67,7 @@ object angularAugmentingMod extends js.Object {
     
     @js.native
     object filter extends js.Object {
+      
       /**
         * Finds links in text input and turns them into html links. Supports http/https/ftp/mailto and plain email address links.
         * @see https://code.angularjs.org/1.7.0/docs/api/ngSanitize/filter/linky
@@ -82,20 +90,21 @@ object angularAugmentingMod extends js.Object {
     // Extend angular $filter declarations to include filters from angular.sanitize module
     ///////////////////////////////////////////////////////////////////////////////
     type IFilterService = js.Function1[linky, ILinky]
+    
     /**
       * Sanitizes an html string by stripping all potentially dangerous tokens.
       *
       * The input is sanitized by parsing the HTML into tokens.
-      * All safe tokens (from a whitelist) are then serialized back to a properly escaped HTML string.
+      * All safe tokens (from a trusted list) are then serialized back to a properly
+      * escaped HTML string.
       * This means that no unsafe input can make it into the returned string.
       *
-      * The whitelist for URL sanitization of attribute values is configured using the functions aHrefSanitizationWhitelist and imgSrcSanitizationWhitelist of $compileProvider.
+      * URLs allowed in attribute values are configured using the methods aHrefSanitizationTrustedUrlList
+      * and imgSrcSanitizationTrustedUrlList of $compileProvider.
       * The input may also contain SVG markup if this is enabled via $sanitizeProvider.
       *
       * @param html HTML input.
       */
     type ISanitizeService = js.Function1[/* html */ String, String]
   }
-  
 }
-

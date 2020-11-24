@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.Grid.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofGrid
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Grid]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Grid] {
+  
   var Locale: js.Any = js.native
+  
   var fn: Grid = js.native
 }
-

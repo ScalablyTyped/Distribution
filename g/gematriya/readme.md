@@ -11,8 +11,8 @@ Convert numbers to gematriya representation, and vice-versa.
 | Full name          | gematriya |
 | Keywords           | hebrew, gematriya, numbers |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 6297 |
+| # dependents       | 4 |
+| # downloads        | 7579 |
 | # stars            | 2 |
 
 ## Links

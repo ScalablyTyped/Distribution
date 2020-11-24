@@ -24,30 +24,19 @@ import typings.baconjs.withstatemachineMod.StateF
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baconjs/types/observable", "Observable")
 @js.native
 abstract class Observable[V] protected () extends js.Object {
   def this(desc: Desc) = this()
+  
   /** @hidden */
   var _isObservable: Boolean = js.native
+  
   /** @hidden */
   var _name: js.UndefOr[String] = js.native
-  /**
-    * Contains a structured version of what [`toString`](#tostring) returns.
-    The structured description is an object that contains the fields `context`, `method` and `args`.
-    For example, for `Bacon.fromArray([1,2,3]).desc` you'd get
-    
-    { context: "Bacon", method: "fromArray", args: [[1,2,3]] }
-    */
-  var desc: Desc = js.native
-  /**
-    * Unique numeric id of this Observable. Implemented using a simple counter starting from 1.
-    */
-  var id: Double = js.native
-  /** @hidden */
-  var initialDesc: Desc = js.native
+  
   /**
     Creates a Property that indicates whether
     `observable` is awaiting `otherObservable`, i.e. has produced a value after the latest
@@ -60,6 +49,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def awaiting(other: Observable[_]): Property[Boolean] = js.native
+  
   /**
     Throttles the observable using a buffer so that at most one value event in minimumInterval is issued.
     Unlike [`throttle`](#observable-throttle), it doesn't discard the excessive events but buffers them instead, outputting
@@ -77,12 +67,14 @@ abstract class Observable[V] protected () extends js.Object {
     ```
     */
   def bufferingThrottle(minimumInterval: Double): this.type = js.native
+  
   /**
     * Creates a stream of changes to the Property. The stream *does not* include
     an event for the current value of the Property at the time this method was called.
     For EventStreams, this method returns the stream itself.
     */
   def changes(): EventStream[V] = js.native
+  
   /**
     Combines the latest values of the two
     streams or properties using a two-arg function. Similarly to [`scan`](#scan), you can use a
@@ -90,6 +82,7 @@ abstract class Observable[V] protected () extends js.Object {
     properties with array value. The result is a [Property](property.html).
     */
   def combine[V2, R](right: Observable[V2], f: Function2[V, V2, R]): Property[R] = js.native
+  
   /**
     Concatenates two streams/properties into one stream/property so that
     it will deliver events from this observable until it ends and then deliver
@@ -100,6 +93,7 @@ abstract class Observable[V] protected () extends js.Object {
   def concat(other: Observable[V]): Observable[V] = js.native
   @JSName("concat")
   def concat_V2[V2](other: Observable[V2]): Observable[V | V2] = js.native
+  
   /**
     Throttles stream/property by given amount
     of milliseconds, but so that event is only emitted after the given
@@ -116,6 +110,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def debounce(minimumInterval: Double): this.type = js.native
+  
   /**
     Passes the first event in the
     stream through, but after that, only passes events after a given number
@@ -129,6 +124,7 @@ abstract class Observable[V] protected () extends js.Object {
     ```
     */
   def debounceImmediate(minimumInterval: Double): this.type = js.native
+  
   /**
     Decodes input using the given mapping. Is a
     bit like a switch-case or the decode function in Oracle SQL. For
@@ -150,6 +146,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def decode[T /* <: Record[_, _] */](cases: T): Property[DecodedValueOf[T]] = js.native
+  
   /**
     Delays the stream/property by given amount of milliseconds. Does not delay the initial value of a [`Property`](property.html).
     
@@ -164,6 +161,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def delay(delayMs: Double): this.type = js.native
+  
   /**
     * Returns the an array of dependencies that the Observable has. For instance, for `a.map(function() {}).deps()`, would return `[a]`.
     This method returns the "visible" dependencies only, skipping internal details.  This method is thus suitable for visualization tools.
@@ -171,6 +169,16 @@ abstract class Observable[V] protected () extends js.Object {
     The `deps` method will skip these internal dependencies. See also: [internalDeps](#internaldeps)
     */
   def deps(): js.Array[Observable[_]] = js.native
+  
+  /**
+    * Contains a structured version of what [`toString`](#tostring) returns.
+    The structured description is an object that contains the fields `context`, `method` and `args`.
+    For example, for `Bacon.fromArray([1,2,3]).desc` you'd get
+    
+    { context: "Bacon", method: "fromArray", args: [[1,2,3]] }
+    */
+  var desc: Desc = js.native
+  
   /**
     Returns a Property that represents the result of a comparison
     between the previous and current value of the Observable. For the initial value of the Observable,
@@ -191,6 +199,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def diff[V2](start: V, f: Differ[V, V2]): Property[V2] = js.native
+  
   /**
     Returns a stream/property where the function f
     is executed for each value, before dispatching to subscribers. This is
@@ -204,13 +213,16 @@ abstract class Observable[V] protected () extends js.Object {
     new subscriber is added.
     */
   def doAction(f: Function1[V, _]): this.type = js.native
+  
   def doEnd(f: Function0[_]): this.type = js.native
+  
   /**
     Returns a stream/property where the function f
     is executed for each error, before dispatching to subscribers.
     That is, same as [`doAction`](#observable-doaction) but for errors.
     */
   def doError(f: Function1[_, _]): this.type = js.native
+  
   /**
     Logs each value of the Observable to the console. doLog() behaves like [`log`](#log)
     but does not subscribe to the event stream. You can think of doLog() as a
@@ -219,7 +231,9 @@ abstract class Observable[V] protected () extends js.Object {
     does.
     */
   def doLog(args: js.Any*): this.type = js.native
+  
   def endAsValue(): Observable[js.Object] = js.native
+  
   /**
     Returns a stream/property that ends the on first [`Error`](error.html) event. The
     error is included in the output of the returned Observable.
@@ -228,11 +242,13 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def endOnError(): this.type = js.native
   def endOnError(predicate: Predicate[_]): this.type = js.native
+  
   /**
     Returns a stream containing [`Error`](error.html) events only.
     Same as filtering with a function that always returns false.
     */
   def errors(): this.type = js.native
+  
   def filter(f: Boolean): this.type = js.native
   def filter(f: Property[Boolean]): this.type = js.native
   /**
@@ -244,10 +260,12 @@ abstract class Observable[V] protected () extends js.Object {
     at the time of the event.
     */
   def filter(f: Predicate[V]): this.type = js.native
+  
   /**
     Takes the first element from the stream. Essentially `observable.take(1)`.
     */
   def first(): this.type = js.native
+  
   /**
     Returns a Promise which will be resolved with the first event coming from an Observable.
     Like [`toPromise`](#topromise), the global ES6 promise implementation will be used unless a promise
@@ -255,6 +273,7 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def firstToPromise(): js.Promise[V] = js.native
   def firstToPromise(PromiseCtr: js.Function): js.Promise[V] = js.native
+  
   /**
     For each element in the source stream, spawn a new
     stream/property using the function `f`. Collect events from each of the spawned
@@ -274,22 +293,27 @@ abstract class Observable[V] protected () extends js.Object {
     ```
     */
   def flatMap[V2](f: SpawnerOrObservable[V, V2]): Observable[V2] = js.native
+  
   /**
     A [`flatMapWithConcurrencyLimit`](#flatmapwithconcurrencylimit) with limit of 1.
     */
   def flatMapConcat[V2](f: SpawnerOrObservable[V, V2]): Observable[V2] = js.native
+  
   /**
     Like [`flatMap`](#flatmap), but is applied only on [`Error`](error.html) events. Returned values go into the
     value stream, unless an error event is returned. As an example, one type of error could result in a retry and another just
     passed through, which can be implemented using flatMapError.
     */
   def flatMapError[V2](f: Function1[_, Observable[V2] | EventOrValue[V2]]): Observable[V | V2] = js.native
+  
   def flatMapEvent[V2](f: EventSpawner[V, V2]): Observable[V2] = js.native
+  
   /**
     Like [`flatMap`](#observable-flatmap), but only spawns a new
     stream if the previously spawned stream has ended.
     */
   def flatMapFirst[V2](f: SpawnerOrObservable[V, V2]): Observable[V2] = js.native
+  
   /**
     Like [`flatMap`](#flatmap), but instead of including events from
     all spawned streams, only includes them from the latest spawned stream.
@@ -297,18 +321,21 @@ abstract class Observable[V] protected () extends js.Object {
     Note that instead of a function, you can provide a stream/property too.
     */
   def flatMapLatest[V2](f: SpawnerOrObservable[V, V2]): Observable[V2] = js.native
+  
   /**
     A super method of *flatMap* family. It limits the number of open spawned streams and buffers incoming events.
     [`flatMapConcat`](#flatmapconcat) is `flatMapWithConcurrencyLimit(1)` (only one input active),
     and [`flatMap`](#flatmap) is `flatMapWithConcurrencyLimit ∞` (all inputs are piped to output).
     */
   def flatMapWithConcurrencyLimit[V2](limit: Double, f: SpawnerOrObservable[V, V2]): Observable[V2] = js.native
+  
   /**
     Works like [`scan`](#scan) but only emits the final
     value, i.e. the value just before the observable ends. Returns a
     [`Property`](property.html).
     */
   def fold[V2](seed: V2, f: Accumulator[V, V2]): Property[V2] = js.native
+  
   /**
     An alias for [onValue](#onvalue).
     
@@ -316,6 +343,7 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def forEach(): Unsub = js.native
   def forEach(f: Sink[V]): Unsub = js.native
+  
   /**
     Groups stream events to new streams by `keyF`. Optional `limitF` can be provided to limit grouped
     stream life. Stream transformed by `limitF` is passed on if provided. `limitF` gets grouped stream
@@ -360,18 +388,30 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def groupBy[V2](keyF: Function1[V, String]): Observable[EventStream[V2]] = js.native
   def groupBy[V2](keyF: Function1[V, String], limitF: GroupTransformer[V, V2]): Observable[EventStream[V2]] = js.native
+  
   /**
     Pauses and buffers the event stream if last event in valve is truthy.
     All buffered events are released when valve becomes falsy.
     */
   def holdWhen(valve: Property[Boolean]): EventStream[V] = js.native
+  
+  /**
+    * Unique numeric id of this Observable. Implemented using a simple counter starting from 1.
+    */
+  var id: Double = js.native
+  
+  /** @hidden */
+  var initialDesc: Desc = js.native
+  
   def inspect(): String = js.native
+  
   /**
     * Returns the true dependencies of the observable, including the intermediate "hidden" Observables.
     This method is for Bacon.js internal purposes but could be useful for debugging/analysis tools as well.
     See also: [deps](#deps)
     */
   def internalDeps(): js.Array[_] = js.native
+  
   /**
     Takes the last element from the stream. None, if stream is empty.
     
@@ -379,6 +419,7 @@ abstract class Observable[V] protected () extends js.Object {
     *Note:* `neverEndingStream.last()` creates the stream which doesn't produce any events and never ends.
     */
   def last(): this.type = js.native
+  
   /**
     Logs each value of the Observable to the console.
     It optionally takes arguments to pass to console.log() alongside each
@@ -399,6 +440,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def log(args: js.Any*): this.type = js.native
+  
   def map[V2](f: V2): Observable[V2] = js.native
   def map[V2](f: Property[V2]): Observable[V2] = js.native
   /**
@@ -408,6 +450,7 @@ abstract class Observable[V] protected () extends js.Object {
     the given property.
     */
   def map[V2](f: Function1[V, V2]): Observable[V2] = js.native
+  
   def mapEnd(f: V): this.type = js.native
   /**
     Adds an extra [`Next`](next.html) event just before End. The value is created
@@ -415,6 +458,7 @@ abstract class Observable[V] protected () extends js.Object {
     function, a static value can be used.
     */
   def mapEnd(f: Function0[V]): this.type = js.native
+  
   def mapError(f: V): this.type = js.native
   /**
     Maps errors using given function. More
@@ -422,28 +466,33 @@ abstract class Observable[V] protected () extends js.Object {
     and produces a [`Next`](next.html) event based on the return value.
     */
   def mapError(f: Function1[_, V]): this.type = js.native
+  
   /**
     Sets the name of the observable. Overrides the default
     implementation of [`toString`](#tostring) and `inspect`.
     Returns the same observable, with mutated name.
     */
   def name(name: String): this.type = js.native
+  
   /**
     Returns a stream/property that inverts boolean values (using `!`)
     */
   def not(): Observable[Boolean] = js.native
+  
   /**
     Subscribes a callback to stream end. The function will be called when the stream ends.
     Just like `subscribe`, this method returns a function for unsubscribing.
     */
   def onEnd(): Unsub = js.native
   def onEnd(f: VoidSink): Unsub = js.native
+  
   /**
     Subscribes a handler to error events. The function will be called for each error in the stream.
     Just like `subscribe`, this method returns a function for unsubscribing.
     */
   def onError(): Unsub = js.native
   def onError(f: Sink[_]): Unsub = js.native
+  
   /**
     Subscribes a given handler function to the observable. Function will be called for each new value.
     This is the simplest way to assign a side-effect to an observable. The difference
@@ -455,14 +504,17 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def onValue(): Unsub = js.native
   def onValue(f: Sink[V]): Unsub = js.native
+  
   /**
     Like [`onValue`](#onvalue), but splits the value (assuming its an array) as function arguments to `f`.
     Only applicable for observables with arrays as values.
     */
   def onValues(f: js.Function): Unsub = js.native
+  
   /** A synonym for [scan](#scan).
     */
   def reduce[V2](seed: V2, f: Accumulator[V, V2]): Property[V2] = js.native
+  
   /**
     Creates an EventStream by sampling this
     stream/property value at each event from the `sampler` stream. The result
@@ -481,6 +533,7 @@ abstract class Observable[V] protected () extends js.Object {
   def sampledBy(sampler: EventStream[_]): EventStream[V] = js.native
   def sampledBy(sampler: Observable[_]): Observable[V] = js.native
   def sampledBy(sampler: Property[_]): Property[V] = js.native
+  
   /**
     Scans stream/property with given seed value and
     accumulator function, resulting to a Property. For example, you might
@@ -512,10 +565,12 @@ abstract class Observable[V] protected () extends js.Object {
     because there can only be 1 initial value for a Property at a time.
     */
   def scan[V2](seed: V2, f: Accumulator[V, V2]): Property[V2] = js.native
+  
   /**
     Skips the first n elements from the stream
     */
   def skip(count: Double): this.type = js.native
+  
   /**
     Drops consecutive equal elements. So,
     from `[1, 2, 2, 1]` you'd get `[1, 2, 1]`. Uses the `===` operator for equality
@@ -526,22 +581,26 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def skipDuplicates(): this.type = js.native
   def skipDuplicates(isEqual: Equals_[V]): this.type = js.native
+  
   /**
     * Returns a new stream/property which excludes all [Error](error.html) events in the source
     */
   def skipErrors(): this.type = js.native
+  
   /**
     Skips elements from the source, until a value event
     appears in the given `starter` stream/property. In other words, starts delivering values
     from the source after first value appears in `starter`.
     */
   def skipUntil(starter: Observable[_]): this.type = js.native
+  
   /**
     Skips elements until the given predicate function returns falsy once, and then
     lets all events pass through. Instead of a predicate you can also pass in a `Property<boolean>` to skip elements
     while the Property holds a truthy value.
     */
   def skipWhile(f: PredicateOrProperty[V]): this.type = js.native
+  
   /**
     Returns a Property that represents a
     "sliding window" into the history of the values of the Observable. The
@@ -558,11 +617,13 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def slidingWindow(maxValues: Double): Property[js.Array[V]] = js.native
   def slidingWindow(maxValues: Double, minValues: Double): Property[js.Array[V]] = js.native
+  
   /**
     Adds a starting value to the stream/property, i.e. concats a
     single-element stream containing the single seed value  with this stream.
     */
   def startWith(seed: V): Observable[V] = js.native
+  
   /**
     * subscribes given handler function to event stream. Function will receive [event](event.html) objects
     for all new value, end and error events in the stream.
@@ -577,23 +638,28 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def subscribe(): Unsub = js.native
   def subscribe(sink: EventSink[V]): Unsub = js.native
+  
   /** @hidden */
   def subscribeInternal(sink: EventSink[V]): Unsub = js.native
+  
   /**
     Takes at most n values from the stream and then ends the stream. If the stream has
     fewer than n values then it is unaffected.
     Equal to [`Bacon.never()`](../globals.html#never) if `n <= 0`.
     */
   def take(count: Double): this.type = js.native
+  
   /**
     Takes elements from source until a value event appears in the other stream.
     If other stream ends without value, it is ignored.
     */
   def takeUntil(stopper: Observable[_]): this.type = js.native
+  
   /**
     Takes while given predicate function holds true, and then ends. Alternatively, you can supply a boolean Property to take elements while the Property holds `true`.
     */
   def takeWhile(f: PredicateOrProperty[V]): this.type = js.native
+  
   /**
     Throttles stream/property by given amount
     of milliseconds. Events are emitted with the minimum interval of
@@ -612,7 +678,9 @@ abstract class Observable[V] protected () extends js.Object {
     ```
     */
   def throttle(minimumInterval: Double): this.type = js.native
+  
   def toEventStream(): EventStream[V] = js.native
+  
   /**
     Returns a Promise which will be resolved with the last event coming from an Observable.
     The global ES6 promise implementation will be used unless a promise constructor is given.
@@ -623,12 +691,14 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def toPromise(): js.Promise[V] = js.native
   def toPromise(PromiseCtr: js.Function): js.Promise[V] = js.native
+  
   /**
     In case of EventStream, creates a Property based on the EventStream.
     
     In case of Property, returns the Property itself.
     */
   def toProperty(): Property[V] = js.native
+  
   /**
     * TODO: proper documentation missing
     Lets you do more custom event handling: you
@@ -651,10 +721,13 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def transform[V2](transformer: Transformer[V, V2]): Observable[V2] = js.native
   def transform[V2](transformer: Transformer[V, V2], desc: Desc): Observable[V2] = js.native
+  
   /** @hidden */
   def transformChanges(desc: Desc, f: EventStreamDelay[V]): this.type = js.native
+  
   def withDesc(): this.type = js.native
   def withDesc(desc: Desc): this.type = js.native
+  
   /**
     Sets the structured description of the observable. The [`toString`](#tostring) and `inspect` methods
     use this data recursively to create a string representation for the observable. This method
@@ -674,6 +747,7 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def withDescription(context: js.Any, method: String, args: js.Any*): this.type = js.native
+  
   /**
     Creates an EventStream/Property by sampling a given `samplee`
     stream/property value at each event from the this stream/property.
@@ -685,6 +759,7 @@ abstract class Observable[V] protected () extends js.Object {
     @typeparam R   type of values in the result
     */
   def withLatestFrom[V2, R](samplee: Observable[V2], f: Function2[V, V2, R]): Observable[R] = js.native
+  
   /**
     Lets you run a state machine
     on an observable. Give it an initial state object and a state
@@ -710,6 +785,7 @@ abstract class Observable[V] protected () extends js.Object {
     @typeparam  Out     type of values to be emitted
     */
   def withStateMachine[State, Out](initState: State, f: StateF[V, State, Out]): Observable[Out] = js.native
+  
   /**
     Returns an EventStream with elements
     pair-wise lined up with events from this and the other EventStream or Property.
@@ -738,4 +814,3 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def zip[V2, R](other: Observable[V2], f: Function2[V, V2, R]): EventStream[R] = js.native
 }
-

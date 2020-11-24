@@ -2,7 +2,7 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define how to redact sensitive values. Default behaviour is erase, e.g.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaRedactConfig extends js.Object
-

@@ -11,8 +11,8 @@ Mouse wheel event unified for all browsers
 | Full name          | wheel |
 | Keywords           | addWheelListener, wheel, mouse, DOMMouseScroll |
 | # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 206442 |
+| # dependents       | 16 |
+| # downloads        | 413899 |
 | # stars            | 2 |
 
 ## Links

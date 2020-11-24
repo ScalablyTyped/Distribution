@@ -3,11 +3,12 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri-leaflet", "dynamicMapLayer")
 @js.native
 object dynamicMapLayer extends js.Object {
+  
   /**
     * Render and visualize Map Services from ArcGIS Online and ArcGIS Server. L.esri.DynamicMapLayer also supports
     * custom popups and identification of features.
@@ -18,4 +19,3 @@ object dynamicMapLayer extends js.Object {
     */
   def apply(options: DynamicMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ = js.native
 }
-

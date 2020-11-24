@@ -11,8 +11,8 @@ Turn an object into a string of HTML attributes
 | Full name          | stringify-attributes |
 | Keywords           | html, attributes, stringify, element, tag, props, object, convert, transform |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 140348 |
+| # dependents       | 11 |
+| # downloads        | 152073 |
 | # stars            | 1 |
 
 ## Links

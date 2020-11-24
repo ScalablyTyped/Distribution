@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/accesscontextmanager/v1", "accesscontextmanager_v1.Resource$Accesspolicies$Serviceperimeters")
 @js.native
 class ResourceAccesspoliciesServiceperimeters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.servicePerimeters.create
     * @desc Create an Service Perimeter. The longrunning operation from this
@@ -48,6 +50,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.servicePerimeters.delete
     * @desc Delete an Service Perimeter by resource name. The longrunning
@@ -81,6 +84,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.servicePerimeters.get
     * @desc Get an Service Perimeter by resource name.
@@ -112,6 +116,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServicePerimeter]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.servicePerimeters.list
     * @desc List all Service Perimeters for an access policy.
@@ -145,6 +150,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicePerimetersResponse]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.servicePerimeters.patch
     * @desc Update an Service Perimeter. The longrunning operation from this
@@ -183,4 +189,3 @@ class ResourceAccesspoliciesServiceperimeters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

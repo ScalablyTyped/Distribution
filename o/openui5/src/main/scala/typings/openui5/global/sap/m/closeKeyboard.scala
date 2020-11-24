@@ -3,7 +3,7 @@ package typings.openui5.global.sap.m
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hide the soft keyboard.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object closeKeyboard
   extends TopLevel[js.Any]
-

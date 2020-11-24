@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SmsModemErrorCode extends js.Object
-
 /** Values that describe error codes from the SMS modem in an SmsSendMessageResult. */
 @JSGlobal("Windows.Devices.Sms.SmsModemErrorCode")
 @js.native
 object SmsModemErrorCode extends js.Object {
+  
   /** The device failed. */
   @js.native
   sealed trait deviceFailure extends SmsModemErrorCode
@@ -58,6 +58,4 @@ object SmsModemErrorCode extends js.Object {
   /** SMS is not supported by the network. */
   @js.native
   sealed trait smsServiceNotSupportedByNetwork extends SmsModemErrorCode
-  
 }
-

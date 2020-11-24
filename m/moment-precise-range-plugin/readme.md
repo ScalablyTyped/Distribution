@@ -10,9 +10,9 @@ This is a plugin for the moment.js JavaScript library, to display date/time rang
 | ------------------ | :-------------: |
 | Full name          | moment-precise-range-plugin |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 312057 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 506857 |
 | # stars            | 0 |
 
 ## Links

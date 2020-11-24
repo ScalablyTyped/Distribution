@@ -5,7 +5,7 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SubjectPublicKeyInfo ASN.1 structure class
@@ -34,4 +34,3 @@ class SubjectPublicKeyInfo ()
   def this(params: ECDSA) = this()
   def this(params: RSAKey) = this()
 }
-

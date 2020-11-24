@@ -2,9 +2,31 @@ package typings.scrollbooster
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollboosterStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  
+  @scala.inline
+  def native: native = "native".asInstanceOf[native]
+  
+  @scala.inline
+  def touch: touch = "touch".asInstanceOf[touch]
+  
+  @scala.inline
+  def transform: transform = "transform".asInstanceOf[transform]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
   @js.native
   sealed trait all extends js.Object
   
@@ -25,20 +47,4 @@ object scrollboosterStrings {
   
   @js.native
   sealed trait vertical extends js.Object
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

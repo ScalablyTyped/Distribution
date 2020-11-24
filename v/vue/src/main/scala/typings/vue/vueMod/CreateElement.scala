@@ -11,10 +11,11 @@ import typings.vue.vnodeMod.VNodeChildren
 import typings.vue.vnodeMod.VNodeData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CreateElement extends js.Object {
+  
   def apply(): VNode = js.native
   def apply(tag: (AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])): VNode = js.native
   def apply(tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])], children: VNodeChildren): VNode = js.native
@@ -91,4 +92,3 @@ trait CreateElement extends js.Object {
     children: VNodeChildren
   ): VNode = js.native
 }
-

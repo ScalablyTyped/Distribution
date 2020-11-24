@@ -8,16 +8,23 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tabClick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapTabControl extends Control {
+  
   def adjustSize(): Unit = js.native
+  
   def getActiveTab(): BootstrapTab | Null = js.native
+  
   def getActiveTabIndex(): Double = js.native
+  
   def getTab(index: Double): BootstrapTab | Null = js.native
+  
   def getTabByName(name: String): BootstrapTab | Null = js.native
+  
   def getTabCount(): Double = js.native
+  
   def off(
     eventName: js.UndefOr[scala.Nothing],
     callback: js.ThisFunction1[
@@ -70,6 +77,7 @@ trait BootstrapTabControl extends Control {
     eventName: tabClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TabControlTabClickEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_activeTabChanged(
     eventName: activeTabChanged,
@@ -100,6 +108,7 @@ trait BootstrapTabControl extends Control {
     eventName: tabClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TabControlTabClickEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_activeTabChanged(
     eventName: activeTabChanged,
@@ -130,7 +139,8 @@ trait BootstrapTabControl extends Control {
     eventName: tabClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TabControlTabClickEventArgs], Unit]
   ): this.type = js.native
+  
   def setActiveTab(tab: BootstrapTab): Unit = js.native
+  
   def setActiveTabIndex(index: Double): Unit = js.native
 }
-

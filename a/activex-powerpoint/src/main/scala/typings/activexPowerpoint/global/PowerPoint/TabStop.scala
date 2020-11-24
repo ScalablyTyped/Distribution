@@ -2,10 +2,9 @@ package typings.activexPowerpoint.global.PowerPoint
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PowerPoint.TabStop")
 @js.native
 class TabStop protected ()
   extends typings.activexPowerpoint.PowerPoint.TabStop
-

@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.test
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.test.actions")
 @js.native
 object actions extends js.Object {
+  
   @js.native
   /**
     * Accepts an object literal <code>mSettings</code> that defines initialproperty values, aggregated and
@@ -42,6 +43,4 @@ object actions extends js.Object {
     */
   class Press ()
     extends typings.openui5.sap.ui.test.actions.Press
-  
 }
-

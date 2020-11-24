@@ -17,7 +17,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
@@ -37,37 +37,50 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def ADJUSTMENT: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def BOTTOM: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def EQUATION: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def HASFILL: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def HASSTROKE: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def HEIGHT: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def LEFT: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def LOGHEIGHT: `14` = 14.asInstanceOf[`14`]
+  
   @scala.inline
   def LOGWIDTH: `13` = 13.asInstanceOf[`13`]
+  
   @scala.inline
   def NORMAL: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def RIGHT: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def TOP: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def WIDTH: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def XSTRETCH: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def YSTRETCH: `8` = 8.asInstanceOf[`8`]
 }
-

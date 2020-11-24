@@ -1,7 +1,7 @@
 
 # Scala.js typings for dom-helpers
 
-Typings are for version 5.1.4
+Typings are for version 5.2.0
 
 ## Library description:
 tiny modular DOM lib for ie9+
@@ -10,15 +10,15 @@ tiny modular DOM lib for ie9+
 | ------------------ | :-------------: |
 | Full name          | dom-helpers |
 | Keywords           | dom-helpers, react-component, dom, api, cross-browser, style, event, height, width, dom-helpers, class, classlist, css |
-| # releases         | 8 |
-| # dependents       | 460 |
-| # downloads        | 153312623 |
+| # releases         | 10 |
+| # dependents       | 516 |
+| # downloads        | 236916815 |
 | # stars            | 10 |
 
 ## Links
-- [Homepage](https://github.com/jquense/dom-helpers#readme)
-- [Bugs](https://github.com/jquense/dom-helpers/issues)
-- [Repository](https://github.com/jquense/dom-helpers)
+- [Homepage](https://github.com/react-bootstrap/dom-helpers#readme)
+- [Bugs](https://github.com/react-bootstrap/dom-helpers/issues)
+- [Repository](https://github.com/react-bootstrap/dom-helpers)
 - [Npm](https://www.npmjs.com/package/dom-helpers)
     
 

@@ -3,11 +3,12 @@ package typings.wordpressViewport
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/viewport/if-viewport-matches", JSImport.Namespace)
 @js.native
 object ifViewportMatchesMod extends js.Object {
+  
   /**
     * Higher-order component creator, creating a new component which renders if
     * the viewport query is satisfied.
@@ -26,4 +27,3 @@ object ifViewportMatchesMod extends js.Object {
   // prettier-ignore
   def default(query: String): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
 }
-

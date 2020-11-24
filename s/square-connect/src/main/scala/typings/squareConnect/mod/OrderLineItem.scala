@@ -3,11 +3,12 @@ package typings.squareConnect.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderLineItem")
 @js.native
 class OrderLineItem () extends js.Object {
+  
   /**
     * The list of references to discounts applied to this line item. Each `OrderLineItemAppliedDiscount` has a
     * `discount_uid` that references the `uid` of a top-level `OrderLineItemDiscounts` applied to the line item.
@@ -17,6 +18,7 @@ class OrderLineItem () extends js.Object {
     * To change the amount of a discount, modify the referenced top-level discount.
     */
   var applied_discounts: js.UndefOr[js.Array[OrderLineItemAppliedDiscount]] = js.native
+  
   /**
     * The list of references to taxes applied to this line item. Each `OrderLineItemAppliedTax` has a `tax_uid` that
     * references the `uid` of a top-level `OrderLineItemTax` applied to the line item. On reads, the amount applied is populated.
@@ -25,19 +27,23 @@ class OrderLineItem () extends js.Object {
     * the tax to apply to any line items. To change the amount of a tax, modify the referenced top-level tax.
     */
   var applied_taxes: js.UndefOr[js.Array[OrderLineItemAppliedTax]] = js.native
+  
   /**
     * The base price for a single unit of the line item.
     */
   var base_price_money: js.UndefOr[Money] = js.native
+  
   /**
     * The `CatalogItemVariation` id applied to this line item.
     */
   var catalog_object_id: js.UndefOr[String] = js.native
+  
   /**
     * The amount of money made in gross sales for this line item.
     * Calculated as the sum of the variation's total price and each modifier's total price.
     */
   var gross_sales_money: js.UndefOr[Money] = js.native
+  
   /**
     * Application-defined data attached to this line item. Metadata fields are intended to store descriptive references
     * or associations with an entity in another system or store brief information about the object. Square does not
@@ -50,51 +56,62 @@ class OrderLineItem () extends js.Object {
     * See [Metadata](https://developer.squareup.com/docs/build-basics/metadata) for more information.
     */
   var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * The [CatalogModifier](#type-catalogmodifier)s applied to this line item.
     */
   var modifiers: js.UndefOr[js.Array[OrderLineItemModifier]] = js.native
+  
   /**
     * The name of the line item.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The note of the line item.
     */
   var note: js.UndefOr[String] = js.native
+  
   /**
-    * The quantity purchased, formatted as a decimal number. For example: "3".
-    * Line items with a `quantity_unit` can have non-integer quantities. For example: "1.70000".
+    * The quantity purchased, formatted as a decimal number. For example: `\"3\"`.
+    * Line items with a quantity of `\"0\"` will be automatically removed upon paying for or otherwise completing the order.
+    * Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.
     */
   var quantity: String = js.native
+  
   /**
     * The unit and precision that this line item's quantity is measured in.
     */
   var quantity_unit: js.UndefOr[OrderQuantityUnit] = js.native
+  
   /**
     * The total discount amount of money to collect for the line item.
     */
   var total_discount_money: js.UndefOr[Money] = js.native
+  
   /**
     * The total amount of money to collect for this line item.
     */
   var total_money: js.UndefOr[Money] = js.native
+  
   /**
     * The total tax amount of money to collect for the line item.
     */
   var total_tax_money: js.UndefOr[Money] = js.native
+  
   /**
     * Unique ID that identifies the line item only within this order.
     */
   var uid: js.UndefOr[String] = js.native
+  
   /**
     * The name of the variation applied to this line item.
     */
   var variation_name: js.UndefOr[String] = js.native
+  
   /**
     * The total price of all item variations sold in this line item.
     * Calculated as `base_price_money` multiplied by `quantity`. Does not include modifiers.
     */
   var variation_total_price_money: js.UndefOr[Money] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.amapJsSdk.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 经纬度坐标，确定地图上的一个点
@@ -18,4 +18,3 @@ class LngLat protected ()
     */
   def this(lng: Double, lat: Double) = this()
 }
-

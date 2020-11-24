@@ -10,9 +10,9 @@ Leaflet plugin for plain image map projection to display large images using tile
 | ------------------ | :-------------: |
 | Full name          | leaflet-rastercoords |
 | Keywords           | Leaflet, coordinates, raster |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4318 |
+| # downloads        | 6293 |
 | # stars            | 1 |
 
 ## Links

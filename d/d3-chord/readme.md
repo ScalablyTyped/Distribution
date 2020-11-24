@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-chord
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Visualize relationships or network flow with an aesthetically-pleasing circular layout.
@@ -11,8 +11,8 @@ Visualize relationships or network flow with an aesthetically-pleasing circular 
 | Full name          | d3-chord |
 | Keywords           | d3, d3-module, chord, radial, network, flow |
 | # releases         | 12 |
-| # dependents       | 25 |
-| # downloads        | 20373012 |
+| # dependents       | 28 |
+| # downloads        | 31271752 |
 | # stars            | 0 |
 
 ## Links

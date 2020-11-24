@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "extension")
 @js.native
 object extension extends js.Object {
+  
   /**
     * Get a registered extension.
     *
@@ -27,4 +28,3 @@ object extension extends js.Object {
   def apply(name: String, ext: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = js.native
   def apply(name: String, ext: ShowdownExtension): Unit = js.native
 }
-

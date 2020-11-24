@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "Animatable")
 @js.native
@@ -19,6 +19,7 @@ class Animatable protected ()
     * @param onAnimationEnd defines a callback to call when animation ends if it is not looping
     * @param animations defines a group of animation to add to the new Animatable
     * @param onAnimationLoop defines a callback to call when animation loops
+    * @param isAdditive defines whether the animation should be evaluated additively
     */
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
@@ -35,7 +36,8 @@ class Animatable protected ()
   onAnimationEnd: js.UndefOr[js.Function0[Unit] | Null],
     animations: js.UndefOr[js.Array[typings.babylonjs.animationMod.Animation]],
     /** defines a callback to call when animation loops */
-  onAnimationLoop: js.UndefOr[js.Function0[Unit] | Null]
+  onAnimationLoop: js.UndefOr[js.Function0[Unit] | Null],
+    /** defines whether the animation should be evaluated additively */
+  isAdditive: js.UndefOr[Boolean]
   ) = this()
 }
-

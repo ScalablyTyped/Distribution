@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavContainer extends Control {
+  
   /**
     * Adds a custom transition to the NavContainer type (not to a particular instance!). The transition is
     * identified by a "name". Make sure to only use names that will not collide with transitions which may
@@ -50,12 +51,14 @@ trait NavContainer extends Control {
     * NavContainer.addCustomTransitions for more details about this function.
     */
   def addCustomTransition(sName: String, oTo: js.Any, oBack: js.Any): NavContainer = js.native
+  
   /**
     * Adds some page to the aggregation <code>pages</code>.
     * @param oPage the page to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addPage(oPage: Control): NavContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterNavigate</code> event of this
     * <code>sap.m.NavContainer</code>.When called, the context of the event handler (its
@@ -73,6 +76,7 @@ trait NavContainer extends Control {
     */
   def attachAfterNavigate(oData: js.Any, fnFunction: js.Any): NavContainer = js.native
   def attachAfterNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): NavContainer = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>navigate</code> event of this
     * <code>sap.m.NavContainer</code>.When called, the context of the event handler (its
@@ -90,6 +94,7 @@ trait NavContainer extends Control {
     */
   def attachNavigate(oData: js.Any, fnFunction: js.Any): NavContainer = js.native
   def attachNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): NavContainer = js.native
+  
   /**
     * Navigates back one level. If already on the initial page and there is no place to go back, nothing
     * happens.Calling this navigation method triggers first the (cancelable) "navigate" event on the
@@ -118,6 +123,7 @@ trait NavContainer extends Control {
     */
   def back(oBackData: js.Any): NavContainer = js.native
   def back(oBackData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
+  
   /**
     * Navigates back to the nearest previous page in the NavContainer history with the given ID. If there
     * is no such page among the previous pages, nothing happens.The transition effect which had been used
@@ -148,6 +154,7 @@ trait NavContainer extends Control {
   def backToPage(sPageId: String, oBackData: js.UndefOr[scala.Nothing], oTransitionParameters: js.Any): NavContainer = js.native
   def backToPage(sPageId: String, oBackData: js.Any): NavContainer = js.native
   def backToPage(sPageId: String, oBackData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
+  
   /**
     * Navigates back to the initial/top level (this is the element aggregated as "initialPage", or the
     * first added element). If already on the initial page, nothing happens.The transition effect which
@@ -173,17 +180,20 @@ trait NavContainer extends Control {
     */
   def backToTop(oBackData: js.Any): NavContainer = js.native
   def backToTop(oBackData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
+  
   /**
     * Returns whether the current page is the top/initial page.Note: going to the initial page again with
     * a row of "to" navigations causes the initial page to be displayed again, but logically one is not at
     * the top level, so this method returns "false" in this case.
     */
   def currentPageIsTopPage(): Boolean = js.native
+  
   /**
     * Destroys all the pages in the aggregation <code>pages</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyPages(): NavContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterNavigate</code> event of this
     * <code>sap.m.NavContainer</code>.The passed function and listener object must match the ones used for
@@ -194,6 +204,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterNavigate(fnFunction: js.Any, oListener: js.Any): NavContainer = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>navigate</code> event of this
     * <code>sap.m.NavContainer</code>.The passed function and listener object must match the ones used for
@@ -204,6 +215,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachNavigate(fnFunction: js.Any, oListener: js.Any): NavContainer = js.native
+  
   /**
     * Fires event <code>afterNavigate</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>from</code> of type <code>sap.ui.core.Control</code>The page which had been
@@ -226,6 +238,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterNavigate(mArguments: js.Any): NavContainer = js.native
+  
   /**
     * Fires event <code>navigate</code> to attached listeners.Listeners may prevent the default action of
     * this event by using the <code>preventDefault</code>-method on the event object.Expects the following
@@ -249,6 +262,7 @@ trait NavContainer extends Control {
     * @returns Whether or not to prevent the default action
     */
   def fireNavigate(mArguments: js.Any): Boolean = js.native
+  
   /**
     * Gets current value of property <code>autoFocus</code>.Determines whether the initial focus is set
     * automatically on first rendering and after navigating to a new page.This is useful when on touch
@@ -259,12 +273,14 @@ trait NavContainer extends Control {
     * @returns Value of property <code>autoFocus</code>
     */
   def getAutoFocus(): Boolean = js.native
+  
   /**
     * Returns the currently displayed page-level control. Note: it is not necessarily an instance of
     * sap.m.Page, but it could also be a sap.ui.core.View, sap.m.Carousel, or whatever is
     * aggregated.Returns undefined if no page has been added yet.
     */
   def getCurrentPage(): Control = js.native
+  
   /**
     * Gets current value of property <code>defaultTransitionName</code>.The type of the
     * transition/animation to apply when "to()" is called without defining a transition type to use. The
@@ -274,22 +290,26 @@ trait NavContainer extends Control {
     * @returns Value of property <code>defaultTransitionName</code>
     */
   def getDefaultTransitionName(): String = js.native
+  
   /**
     * Gets current value of property <code>height</code>.The height of the NavContainer. Can be changed
     * when the NavContainer should not cover the whole available area.Default value is <code>100%</code>.
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>initialPage</code>, or
     * <code>null</code>.
     */
   def getInitialPage(): js.Any = js.native
+  
   /**
     * Returns the control with the given ID from the "pages" aggregation (if available).
     * @param sId The ID of the aggregated control to find.
     */
   def getPage(sId: String): Control = js.native
+  
   /**
     * Gets content of aggregation <code>pages</code>.The content entities between which this NavContainer
     * navigates. These can be of type sap.m.Page, sap.ui.core.View, sap.m.Carousel or any other control
@@ -298,6 +318,7 @@ trait NavContainer extends Control {
     * sap.m.NavContainerChild sap.m.NavContainerChild}
     */
   def getPages(): js.Array[Control] = js.native
+  
   /**
     * Returns the previous page (the page from which the user drilled down to the current page with
     * "to()").Note: this is not the page which the user has seen before, but the page which is the target
@@ -305,12 +326,14 @@ trait NavContainer extends Control {
     * @since 1.7.1
     */
   def getPreviousPage(): Control = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The width of the NavContainer. Can be changed when
     * the NavContainer should not cover the whole available area.Default value is <code>100%</code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>pages</code>.and
     * returns its index if found or -1 otherwise.
@@ -318,6 +341,7 @@ trait NavContainer extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfPage(oPage: Control): Double = js.native
+  
   /**
     * Inserts a page into the aggregation <code>pages</code>.
     * @param oPage the page to insert; if empty, nothing is inserted
@@ -328,6 +352,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertPage(oPage: Control, iIndex: Double): NavContainer = js.native
+  
   /**
     * Inserts the page/control with the specified ID into the navigation history stack of the
     * NavContainer.This can be used for deep-linking when the user directly reached a drilldown detail
@@ -348,12 +373,14 @@ trait NavContainer extends Control {
   def insertPreviousPage(sPageId: String, sTransitionName: js.UndefOr[scala.Nothing], oData: js.Any): NavContainer = js.native
   def insertPreviousPage(sPageId: String, sTransitionName: String): NavContainer = js.native
   def insertPreviousPage(sPageId: String, sTransitionName: String, oData: js.Any): NavContainer = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>pages</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllPages(): js.Array[Control] = js.native
+  
   def removePage(vPage: String): Control = js.native
   /**
     * Removes a page from the aggregation <code>pages</code>.
@@ -362,6 +389,7 @@ trait NavContainer extends Control {
     */
   def removePage(vPage: Double): Control = js.native
   def removePage(vPage: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>autoFocus</code>.Determines whether the initial focus is set
     * automatically on first rendering and after navigating to a new page.This is useful when on touch
@@ -374,6 +402,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAutoFocus(bAutoFocus: Boolean): NavContainer = js.native
+  
   /**
     * Sets a new value for property <code>defaultTransitionName</code>.The type of the
     * transition/animation to apply when "to()" is called without defining a transition type to use. The
@@ -385,6 +414,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDefaultTransitionName(sDefaultTransitionName: String): NavContainer = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.The height of the NavContainer. Can be changed
     * when the NavContainer should not cover the whole available area.When called with a value of
@@ -394,6 +424,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): NavContainer = js.native
+  
   /**
     * Sets the associated <code>initialPage</code>.
     * @param oInitialPage ID of an element which becomes the new target of this initialPage association;
@@ -402,6 +433,7 @@ trait NavContainer extends Control {
     */
   def setInitialPage(oInitialPage: js.Any): NavContainer = js.native
   def setInitialPage(oInitialPage: Control): NavContainer = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.The width of the NavContainer. Can be changed when
     * the NavContainer should not cover the whole available area.When called with a value of
@@ -411,6 +443,7 @@ trait NavContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): NavContainer = js.native
+  
   /**
     * Navigates to the next page (with drill-down semantic) with the given (or default) animation. This
     * creates a new history item inside the NavContainer and allows going back.Note that any modifications
@@ -468,4 +501,3 @@ trait NavContainer extends Control {
   def to(sPageId: String, sTransitionName: String, oData: js.Any): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String, oData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
 }
-

@@ -1,18 +1,14 @@
 package typings.datastoreCore.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.interfaceDatastore.mod.Datastore
+import typings.interfaceDatastore.mod.Adapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-@js.native
-trait TieredDatastore
-  extends Datastore[js.Any] {
-  var stores: js.Array[Datastore[_]] = js.native
-}
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("datastore-core", "TieredDatastore")
 @js.native
-object TieredDatastore extends TopLevel[TieredDatastoreConstructor]
-
+class TieredDatastore[Value] protected () extends Adapter[Value] {
+  def this(stores: js.Array[Adapter[Value]]) = this()
+  
+  var stores: js.Array[Adapter[Value]] = js.native
+}

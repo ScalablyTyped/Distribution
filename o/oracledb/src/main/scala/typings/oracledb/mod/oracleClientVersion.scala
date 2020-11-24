@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This readonly property gives a numeric representation of the Oracle client library version which
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "oracleClientVersion")
 @js.native
 object oracleClientVersion extends TopLevel[Double]
-

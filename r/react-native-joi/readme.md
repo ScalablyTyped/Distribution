@@ -12,7 +12,7 @@ Object schema validation
 | Keywords           | hapi, joi, schema, validation, react native |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 21062 |
+| # downloads        | 26413 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.ColormapInfo
 import typings.arcgisJsApi.esri.ColormapInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/renderers/support/ColormapInfo", JSImport.Namespace)
 @js.native
 class Class () extends ColormapInfo {
   def this(properties: ColormapInfoProperties) = this()
 }
-

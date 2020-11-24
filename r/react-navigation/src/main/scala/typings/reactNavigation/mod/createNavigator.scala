@@ -2,11 +2,12 @@ package typings.reactNavigation.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation", "createNavigator")
 @js.native
 object createNavigator extends js.Object {
+  
   def apply[S, Options](view: NavigationView[Options, S, _], router: NavigationRouter[S, Options]): NavigationNavigator[Options, NavigationProp[NavigationState]] = js.native
   def apply[S, Options](
     view: NavigationView[Options, S, _],
@@ -26,4 +27,3 @@ object createNavigator extends js.Object {
     navigatorType: NavigatorType
   ): NavigationNavigator[Options, NavigationProp[NavigationState]] = js.native
 }
-

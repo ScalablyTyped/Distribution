@@ -10,9 +10,9 @@ like `chmod -R`
 | ------------------ | :-------------: |
 | Full name          | chmodr |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 38 |
-| # downloads        | 4346470 |
+| # releases         | 1 |
+| # dependents       | 45 |
+| # downloads        | 4254374 |
 | # stars            | 4 |
 
 ## Links

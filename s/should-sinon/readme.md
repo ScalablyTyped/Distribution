@@ -11,8 +11,8 @@ Sinon.js assertions for should.js
 | Full name          | should-sinon |
 | Keywords           | should, sinon |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 837611 |
+| # dependents       | 9 |
+| # downloads        | 521082 |
 | # stars            | 1 |
 
 ## Links

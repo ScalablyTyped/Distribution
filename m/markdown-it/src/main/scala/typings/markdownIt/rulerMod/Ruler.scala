@@ -2,7 +2,7 @@ package typings.markdownIt.rulerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class Ruler
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Ruler[T] extends js.Object {
+  
   /**
     * Add new rule to chain after one with given name. See also
     * [[Ruler.before]], [[Ruler.push]].
@@ -48,6 +49,7 @@ trait Ruler[T] extends js.Object {
     */
   def after(afterName: String, ruleName: String, fn: T): Unit = js.native
   def after(afterName: String, ruleName: String, fn: T, options: RuleOptions): Unit = js.native
+  
   /**
     * Replace rule by name with new function & options. Throws error if name not
     * found.
@@ -70,6 +72,7 @@ trait Ruler[T] extends js.Object {
     */
   def at(name: String, fn: T): Unit = js.native
   def at(name: String, fn: T, options: RuleOptions): Unit = js.native
+  
   /**
     * Add new rule to chain before one with given name. See also
     * [[Ruler.after]], [[Ruler.push]].
@@ -91,6 +94,7 @@ trait Ruler[T] extends js.Object {
     */
   def before(beforeName: String, ruleName: String, fn: T): Unit = js.native
   def before(beforeName: String, ruleName: String, fn: T, options: RuleOptions): Unit = js.native
+  
   /**
     * Disable rules with given names. If any rule name not found - throw Error.
     * Errors can be disabled by second param.
@@ -106,6 +110,7 @@ trait Ruler[T] extends js.Object {
   def disable(list: String, ignoreInvalid: Boolean): js.Array[String] = js.native
   def disable(list: js.Array[String]): js.Array[String] = js.native
   def disable(list: js.Array[String], ignoreInvalid: Boolean): js.Array[String] = js.native
+  
   /**
     * Enable rules with given names. If any rule name not found - throw Error.
     * Errors can be disabled by second param.
@@ -121,6 +126,7 @@ trait Ruler[T] extends js.Object {
   def enable(list: String, ignoreInvalid: Boolean): js.Array[String] = js.native
   def enable(list: js.Array[String]): js.Array[String] = js.native
   def enable(list: js.Array[String], ignoreInvalid: Boolean): js.Array[String] = js.native
+  
   /**
     * Enable rules with given names, and disable everything else. If any rule name
     * not found - throw Error. Errors can be disabled by second param.
@@ -134,6 +140,7 @@ trait Ruler[T] extends js.Object {
   def enableOnly(list: String, ignoreInvalid: Boolean): js.Array[String] = js.native
   def enableOnly(list: js.Array[String]): js.Array[String] = js.native
   def enableOnly(list: js.Array[String], ignoreInvalid: Boolean): js.Array[String] = js.native
+  
   /**
     * Return array of active functions (rules) for given chain name. It analyzes
     * rules configuration, compiles caches if not exists and returns result.
@@ -142,6 +149,7 @@ trait Ruler[T] extends js.Object {
     * done intentionally, to keep signature monomorphic for high speed.
     */
   def getRules(chainName: String): js.Array[T] = js.native
+  
   /**
     * Push new rule to the end of chain. See also
     * [[Ruler.before]], [[Ruler.after]].
@@ -167,4 +175,3 @@ trait Ruler[T] extends js.Object {
   def push(ruleName: String, fn: T): Unit = js.native
   def push(ruleName: String, fn: T, options: RuleOptions): Unit = js.native
 }
-

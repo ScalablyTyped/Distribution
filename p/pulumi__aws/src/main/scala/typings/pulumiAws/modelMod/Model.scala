@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigatewayv2/model", "Model")
 @js.native
@@ -21,32 +21,37 @@ class Model protected () extends CustomResource {
     */
   def this(name: String, args: ModelArgs) = this()
   def this(name: String, args: ModelArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The API identifier.
     */
   val apiId: Output_[String] = js.native
+  
   /**
-    * The content-type for the model, for example, `application/json`.
+    * The content-type for the model, for example, `application/json`. Must be between 1 and 256 characters in length.
     */
   val contentType: Output_[String] = js.native
+  
   /**
-    * The description of the model.
+    * The description of the model. Must be between 1 and 128 characters in length.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
-    * The name of the model. Must be alphanumeric.
+    * The name of the model. Must be alphanumeric. Must be between 1 and 128 characters in length.
     */
   val name: Output_[String] = js.native
+  
   /**
-    * The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04) model.
+    * The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04) model. Must be less than or equal to 32768 characters in length.
     */
   val schema: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigatewayv2/model", "Model")
 @js.native
 object Model extends js.Object {
+  
   /**
     * Get an existing Model resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -60,10 +65,10 @@ object Model extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Model = js.native
   def get(name: String, id: Input[ID], state: ModelState): Model = js.native
   def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = js.native
+  
   /**
     * Returns true if the given object is an instance of Model.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/model.Model */ Boolean = js.native
 }
-

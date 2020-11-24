@@ -8,7 +8,7 @@ import typings.urlParse.anon.Parse
 import typings.urlParse.anon.Protocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("url-parse", JSImport.Namespace)
 @js.native
@@ -26,7 +26,7 @@ object ^
         URLParse
       ])
     ] {
-  var qs: Parse = js.native
+  
   def apply(address: String): URLParse = js.native
   def apply(address: String, location: js.UndefOr[scala.Nothing], parser: Boolean): URLParse = js.native
   def apply(address: String, location: js.UndefOr[scala.Nothing], parser: QueryParser): URLParse = js.native
@@ -38,7 +38,10 @@ object ^
   def apply(address: String, location: js.Object, parser: QueryParser): URLParse = js.native
   def apply(address: String, parser: Boolean): URLParse = js.native
   def apply(address: String, parser: QueryParser): URLParse = js.native
+  
   def extractProtocol(url: String): Protocol = js.native
+  
   def location(url: String): js.Object = js.native
+  
+  var qs: Parse = js.native
 }
-

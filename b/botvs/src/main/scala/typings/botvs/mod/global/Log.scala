@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Log")
 @js.native
 object Log extends js.Object {
+  
   /**
     * 保存一条信息到日志列表
     *
@@ -23,4 +24,3 @@ object Log extends js.Object {
     */
   def apply(arg: js.Any*): Unit = js.native
 }
-

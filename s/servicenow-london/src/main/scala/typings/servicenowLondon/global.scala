@@ -2,22 +2,33 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("global")
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait Workflow extends js.Object {
+    
     def broadcastEvent(contextId: String, eventName: String): Unit = js.native
+    
     def cancel(record: ScopedGlideRecord): Unit = js.native
+    
     def cancelContext(context: ScopedGlideRecord): Unit = js.native
+    
     def deleteWorkflow(current: ScopedGlideRecord): Unit = js.native
+    
     def fireEvent(eventRecord: ScopedGlideRecord, eventName: String): Unit = js.native
+    
     def fireEventById(eventRecordId: String, eventName: String): Unit = js.native
+    
     def getContexts(record: ScopedGlideRecord): ScopedGlideRecord = js.native
+    
     def getEstimatedDeliveryTime(workflowId: String): String = js.native
+    
     def getEstimatedDeliveryTimeFromWFVersion(wfVersion: ScopedGlideRecord): String = js.native
+    
     /**
       * Get the return value set by activity "Return Value"
       *
@@ -25,13 +36,20 @@ object global extends js.Object {
       * @return The value set by activity "Return Value" in the workflow
       */
     def getReturnValue(context: ScopedGlideRecord): js.Any = js.native
+    
     def getRunningFlows(record: ScopedGlideRecord): ScopedGlideRecord = js.native
+    
     def getVersion(workflowId: String): ScopedGlideRecord = js.native
+    
     def getVersionFromName(workflowName: String): ScopedGlideElement = js.native
+    
     def getWorkflowFromName(workflowName: String): String = js.native
+    
     def hasWorkflow(record: ScopedGlideRecord): Boolean = js.native
+    
     def restartWorkflow(record: ScopedGlideRecord): Unit = js.native
     def restartWorkflow(record: ScopedGlideRecord, maintainStateFlag: Boolean): Unit = js.native
+    
     /**
       * Run all flows attached to a current GlideRecord.
       *
@@ -44,6 +62,7 @@ object global extends js.Object {
       * "timer" or some other user defined value.
       */
     def runFlows(record: ScopedGlideRecord, operation: GlideRecordOperation): Unit = js.native
+    
     def startFlow(workflowId: String, current: Null, operation: GlideRecordOperation): String = js.native
     def startFlow(workflowId: String, current: Null, operation: GlideRecordOperation, vars: js.Object): String = js.native
     /**
@@ -63,6 +82,7 @@ object global extends js.Object {
       */
     def startFlow(workflowId: String, current: ScopedGlideRecord, operation: GlideRecordOperation): String = js.native
     def startFlow(workflowId: String, current: ScopedGlideRecord, operation: GlideRecordOperation, vars: js.Object): String = js.native
+    
     /**
       * An intermediate method used to start a workflow from the green "run" button on the
       * Graphical Workflow Editor. This should not be used by SNC script writers.
@@ -71,6 +91,7 @@ object global extends js.Object {
       * @param operation The String event for processing
       */
     def startFlowFromContextInsert(context: ScopedGlideRecord, operation: GlideRecordOperation): Unit = js.native
+    
     /**
       * An intermediate method used to start a workflow with preloaded values for SLA Timer
       * activity.  This should not be used by SNC script writers
@@ -114,6 +135,4 @@ object global extends js.Object {
       withSchedule: js.Any
     ): ScopedGlideRecord = js.native
   }
-  
 }
-

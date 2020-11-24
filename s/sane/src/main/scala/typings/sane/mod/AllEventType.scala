@@ -2,7 +2,7 @@ package typings.sane.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.sane.saneStrings.add
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.sane.saneStrings.delete
 */
 trait AllEventType extends js.Object
-
 object AllEventType {
+  
   @scala.inline
   def add: typings.sane.saneStrings.add = "add".asInstanceOf[typings.sane.saneStrings.add]
+  
   @scala.inline
   def change: typings.sane.saneStrings.change = "change".asInstanceOf[typings.sane.saneStrings.change]
+  
   @scala.inline
   def delete: typings.sane.saneStrings.delete = "delete".asInstanceOf[typings.sane.saneStrings.delete]
 }
-

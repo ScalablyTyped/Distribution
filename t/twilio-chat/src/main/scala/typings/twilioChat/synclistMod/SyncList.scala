@@ -4,7 +4,7 @@ import typings.twilioChat.restpaginatorMod.RestPaginator
 import typings.twilioChat.synclistdescriptorMod.SyncListDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides async pagination interface for sync list
@@ -20,8 +20,9 @@ class SyncList protected () extends js.Object {
     * @private
     */
   def this(services: SyncListServices) = this()
-  val services: js.Any = js.native
+  
   def getPage(): js.Promise[RestPaginator[SyncListDescriptor]] = js.native
   def getPage(args: js.Any): js.Promise[RestPaginator[SyncListDescriptor]] = js.native
+  
+  val services: js.Any = js.native
 }
-

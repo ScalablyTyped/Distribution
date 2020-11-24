@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Monitoredresourcedescriptors")
 @js.native
 class ResourceProjectsMonitoredresourcedescriptors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.monitoredResourceDescriptors.get
     * @desc Gets a single monitored resource descriptor. This method does not
@@ -94,6 +96,7 @@ class ResourceProjectsMonitoredresourcedescriptors protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMonitoredResourceDescriptor]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.monitoredResourceDescriptors.list
     * @desc Lists monitored resource descriptors that match a filter. This
@@ -184,4 +187,3 @@ class ResourceProjectsMonitoredresourcedescriptors protected () extends js.Objec
     callback: BodyResponseCallback[SchemaListMonitoredResourceDescriptorsResponse]
   ): Unit = js.native
 }
-

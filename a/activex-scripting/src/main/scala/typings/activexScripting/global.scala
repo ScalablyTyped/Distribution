@@ -2,13 +2,15 @@ package typings.activexScripting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Scripting extends js.Object {
+    
     /** Drive Object */
     @js.native
     class Drive protected ()
@@ -33,8 +35,5 @@ object global extends js.Object {
     @js.native
     class TextStream protected ()
       extends typings.activexScripting.Scripting.TextStream
-    
   }
-  
 }
-

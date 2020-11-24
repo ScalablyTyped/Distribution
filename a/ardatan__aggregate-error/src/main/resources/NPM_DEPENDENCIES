@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ardatan/aggregate-error" : "0.0.1"
+      "@ardatan/aggregate-error" : "0.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@ardatan/aggregate-error" : "0.0.1"
+      "@ardatan/aggregate-error" : "0.0.6"
     }
   ],
   "compile-devDependencies" : [

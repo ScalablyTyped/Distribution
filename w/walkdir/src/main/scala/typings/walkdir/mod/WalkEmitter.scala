@@ -17,33 +17,43 @@ import typings.walkdir.walkdirStrings.socket
 import typings.walkdir.walkdirStrings.targetdirectory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.events.EventEmitter & {end (): void, pause (): void, resume (): void, ignore (paths : string | std.Array<string>): void, on (event : 'error', listener : (error : std.Error): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'fail', listener : (path : string, error : std.Error): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'targetdirectory', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'empty', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'path', listener : (this : walkdir.walkdir/walkdir.WalkEmitter, path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'directory', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'file', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'link', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'socket', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'fifo', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'blockdevice', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'characterdevice', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter} */
 @js.native
 trait WalkEmitter extends js.Object {
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  
   /**
     * cancel a walk in progress 
     */
   def end(): Unit = js.native
+  
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
   def getMaxListeners(): Double = js.native
+  
   /**
     * pass paths to ignore for the remainder of the walk. directories ignored will not have events emitted for any of their children.
     * @param paths string|string[]
     */
   def ignore(paths: String): Unit = js.native
   def ignore(paths: js.Array[String]): Unit = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listenerCount(`type`: js.Symbol): Double = js.native
+  
+  def listenerCount(event: String): Double = js.native
+  def listenerCount(event: js.Symbol): Double = js.native
+  
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
@@ -127,28 +137,36 @@ trait WalkEmitter extends js.Object {
     event: targetdirectory,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
   ): WalkEmitter = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   /**
     * pause the walk
     */
   def pause(): Unit = js.native
+  
   // Added in Node 6...
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   /**
     * resume the walk
     */
   def resume(): Unit = js.native
+  
   def setMaxListeners(n: Double): this.type = js.native
 }
-

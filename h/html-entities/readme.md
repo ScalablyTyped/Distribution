@@ -10,10 +10,10 @@ Faster HTML entities encode/decode library.
 | ------------------ | :-------------: |
 | Full name          | html-entities |
 | Keywords           | html, html entities, html entities encode, html entities decode, entities, entities encode, entities decode |
-| # releases         | 1 |
-| # dependents       | 588 |
-| # downloads        | 242896461 |
-| # stars            | 36 |
+| # releases         | 3 |
+| # dependents       | 719 |
+| # downloads        | 364364485 |
+| # stars            | 37 |
 
 ## Links
 - [Homepage](https://github.com/mdevils/node-html-entities#readme)

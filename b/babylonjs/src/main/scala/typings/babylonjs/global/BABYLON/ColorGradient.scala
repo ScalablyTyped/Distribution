@@ -2,28 +2,40 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ColorGradient")
 @js.native
-class ColorGradient ()
+class ColorGradient protected ()
   extends typings.babylonjs.BABYLON.ColorGradient {
   /**
-    * Gets or sets first associated color
+    * Creates a new color4 gradient
+    * @param gradient gets or sets the gradient value (between 0 and 1)
+    * @param color1 gets or sets first associated color
+    * @param color2 gets or sets first second color
     */
-  /* CompleteClass */
-  override var color1: typings.babylonjs.BABYLON.Color4 = js.native
-  /**
+  def this(
+    /**
     * Gets or sets the gradient value (between 0 and 1)
     */
-  /* CompleteClass */
-  override var gradient: Double = js.native
-  /**
-    * Will get a color picked randomly between color1 and color2.
-    * If color2 is undefined then color1 will be used
-    * @param result defines the target Color4 to store the result in
+  gradient: Double,
+    /**
+    * Gets or sets first associated color
     */
-  /* CompleteClass */
-  override def getColorToRef(result: typings.babylonjs.BABYLON.Color4): Unit = js.native
+  color1: typings.babylonjs.BABYLON.Color4
+  ) = this()
+  def this(
+    /**
+    * Gets or sets the gradient value (between 0 and 1)
+    */
+  gradient: Double,
+    /**
+    * Gets or sets first associated color
+    */
+  color1: typings.babylonjs.BABYLON.Color4,
+    /**
+    * Gets or sets second associated color
+    */
+  color2: typings.babylonjs.BABYLON.Color4
+  ) = this()
 }
-

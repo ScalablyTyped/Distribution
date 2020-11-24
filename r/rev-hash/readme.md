@@ -11,8 +11,8 @@ Create a hash for file revving
 | Full name          | rev-hash |
 | Keywords           | hash, crypto, md5, rev, revving, web, buffer, string, file, cache, caching |
 | # releases         | 2 |
-| # dependents       | 148 |
-| # downloads        | 4890148 |
+| # dependents       | 161 |
+| # downloads        | 5297904 |
 | # stars            | 2 |
 
 ## Links

@@ -5,13 +5,15 @@ import typings.ngTable.publicInterfacesMod.IColumnDef
 import typings.ngTable.publicInterfacesMod.IDynamicTableColDef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/browser/ngTableColumn", JSImport.Namespace)
 @js.native
 object ngTableColumnMod extends js.Object {
+  
   @js.native
   class NgTableColumn[TCol /* <: IColumnDef | IDynamicTableColDef */] () extends js.Object {
+    
     /**
       * Creates a $column for use within a header template
       *
@@ -21,16 +23,16 @@ object ngTableColumnMod extends js.Object {
       * $column getter methods
       */
     def buildColumn(column: TCol, defaultScope: IScope, columns: js.Array[IColumnDef]): IColumnDef = js.native
+    
     /* private */ def createDefaults(): js.Any = js.native
+    
     /* private */ def createGetterSetter(initialValue: js.Any): js.Any = js.native
   }
-  
   /* static members */
   @js.native
   object NgTableColumn extends js.Object {
+    
     @JSName("$inject")
     var $inject: js.Array[String] = js.native
   }
-  
 }
-

@@ -5,9 +5,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maildev.MailDevOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("maildev", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[Instantiable1[/* options */ MailDevOptions, MailDev]]
-

@@ -2,10 +2,20 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassSQLite extends ClassDbConnection {
+  
+  /**
+    * 
+    * @brief 备份当前数据库到新文件
+    * @param fileName 指定备份的数据库文件名
+    * 
+    * @async
+    */
+  def backup(fileName: String): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -16,6 +26,7 @@ trait ClassSQLite extends ClassDbConnection {
     * @type String
     */
   var fileName: String = js.native
+  
   /**
     * class prop 
     *
@@ -26,13 +37,4 @@ trait ClassSQLite extends ClassDbConnection {
     * @type Integer
     */
   var timeout: Double = js.native
-  /**
-    * 
-    * @brief 备份当前数据库到新文件
-    * @param fileName 指定备份的数据库文件名
-    * 
-    * @async
-    */
-  def backup(fileName: String): Unit = js.native
 }
-

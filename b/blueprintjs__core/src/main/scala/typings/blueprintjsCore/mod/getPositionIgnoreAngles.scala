@@ -6,11 +6,11 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.right
 import typings.blueprintjsCore.blueprintjsCoreStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "getPositionIgnoreAngles")
 @js.native
 object getPositionIgnoreAngles extends js.Object {
+  
   def apply(position: typings.blueprintjsCore.positionMod.Position): left | right | bottom | top = js.native
 }
-

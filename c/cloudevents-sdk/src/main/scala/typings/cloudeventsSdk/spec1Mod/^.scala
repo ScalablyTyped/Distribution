@@ -2,7 +2,7 @@ package typings.cloudeventsSdk.spec1Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import("../../../cloudevent")} CloudEvent */
 /**
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("cloudevents-sdk/lib/bindings/http/v1/spec_1", JSImport.Namespace)
 @js.native
 class ^ () extends Spec1
-

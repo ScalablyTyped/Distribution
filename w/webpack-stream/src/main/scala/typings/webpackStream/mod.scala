@@ -3,11 +3,12 @@ package typings.webpackStream
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack-stream", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Run webpack with the specified configuration and webpack instance
     *
@@ -48,4 +49,3 @@ object mod extends js.Object {
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ js.Any
   ): ReadWriteStream = js.native
 }
-

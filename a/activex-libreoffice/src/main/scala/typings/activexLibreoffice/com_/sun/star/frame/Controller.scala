@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is an abstract service for a component which offers a deeper integration of desktop components than a {@link com.sun.star.awt.XWindow} can offer
@@ -33,8 +33,8 @@ trait Controller
      with XUserInputInterception
      with XSelectionSupplier
      with XTransferableSupplier
-
 object Controller {
+  
   @scala.inline
   def apply(
     Frame: XFrame,
@@ -74,4 +74,3 @@ object Controller {
     __obj.asInstanceOf[Controller]
   }
 }
-

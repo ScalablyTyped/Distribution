@@ -5,7 +5,7 @@ import typings.whichPm.whichPmStrings.pnpm
 import typings.whichPm.whichPmStrings.yarn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.whichPm.mod.NPM
@@ -14,27 +14,29 @@ import scala.scalajs.js.annotation._
   - typings.whichPm.mod.Other
 */
 trait Result extends js.Object
-
 object Result {
+  
   @scala.inline
   def NPM(name: npm): Result = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
+  
   @scala.inline
   def YARN(name: yarn): Result = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
+  
   @scala.inline
   def PNPM(name: pnpm, version: String): Result = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
+  
   @scala.inline
   def Other(name: String): Result = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }
-

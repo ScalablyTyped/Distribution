@@ -9,11 +9,12 @@ import typings.eventTargetShim.mod.EventTarget.PickEvent
 import typings.eventTargetShim.mod.EventTarget.RemoveOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined event-target-shim.event-target-shim.EventTarget<{}, {}, 'standard'> */
 @js.native
 trait EventTargetstandard extends js.Object {
+  
   /**
     * Add a given listener to this event target.
     * @param eventName The event name to add.
@@ -26,6 +27,7 @@ trait EventTargetstandard extends js.Object {
   def addEventListener[TEventType /* <: EventType[js.Object, standard] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]]): Unit = js.native
   def addEventListener[TEventType /* <: EventType[js.Object, standard] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: Boolean): Unit = js.native
   def addEventListener[TEventType /* <: EventType[js.Object, standard] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: AddOptions): Unit = js.native
+  
   /**
     * Dispatch a given event.
     * @param event The event to dispatch.
@@ -33,6 +35,7 @@ trait EventTargetstandard extends js.Object {
     */
   @JSName("dispatchEvent")
   def dispatchEvent_standard[TEventType /* <: EventType[js.Object, standard] */](event: EventData[js.Object, TEventType, standard]): Boolean = js.native
+  
   /**
     * Remove a given listener from this event target.
     * @param eventName The event name to remove.
@@ -46,4 +49,3 @@ trait EventTargetstandard extends js.Object {
   def removeEventListener[TEventType /* <: EventType[js.Object, standard] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: Boolean): Unit = js.native
   def removeEventListener[TEventType /* <: EventType[js.Object, standard] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: RemoveOptions): Unit = js.native
 }
-

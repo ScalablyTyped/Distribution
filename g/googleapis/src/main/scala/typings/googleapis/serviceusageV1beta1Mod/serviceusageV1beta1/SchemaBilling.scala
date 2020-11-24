@@ -2,7 +2,7 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Billing related configuration of the service.  The following example shows
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaBilling extends js.Object {
+  
   /**
     * Billing configurations for sending metrics to the consumer project. There
     * can be multiple consumer destinations per service, each one must have a
@@ -26,31 +27,36 @@ trait SchemaBilling extends js.Object {
     */
   var consumerDestinations: js.UndefOr[js.Array[SchemaBillingDestination]] = js.native
 }
-
 object SchemaBilling {
+  
   @scala.inline
   def apply(): SchemaBilling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBilling]
   }
+  
   @scala.inline
   implicit class SchemaBillingOps[Self <: SchemaBilling] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConsumerDestinationsVarargs(value: SchemaBillingDestination*): Self = this.set("consumerDestinations", js.Array(value :_*))
+    
     @scala.inline
     def setConsumerDestinations(value: js.Array[SchemaBillingDestination]): Self = this.set("consumerDestinations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConsumerDestinations: Self = this.set("consumerDestinations", js.undefined)
   }
-  
 }
-

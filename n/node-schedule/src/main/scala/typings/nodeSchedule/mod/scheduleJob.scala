@@ -3,11 +3,12 @@ package typings.nodeSchedule.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-schedule", "scheduleJob")
 @js.native
 object scheduleJob extends js.Object {
+  
   def apply(name: String, rule: String, callback: JobCallback): Job = js.native
   def apply(name: String, rule: Double, callback: JobCallback): Job = js.native
   def apply(name: String, rule: RecurrenceRule, callback: JobCallback): Job = js.native
@@ -21,4 +22,3 @@ object scheduleJob extends js.Object {
   def apply(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native
   def apply(rule: Date, callback: JobCallback): Job = js.native
 }
-

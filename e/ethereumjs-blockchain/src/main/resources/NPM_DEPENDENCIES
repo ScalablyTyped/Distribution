@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ethereumjs-blockchain" : "4.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ethereumjs-blockchain" : "4.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

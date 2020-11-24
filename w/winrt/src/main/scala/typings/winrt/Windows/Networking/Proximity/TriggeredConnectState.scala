@@ -2,14 +2,14 @@ package typings.winrt.Windows.Networking.Proximity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TriggeredConnectState extends js.Object
-
 @JSGlobal("Windows.Networking.Proximity.TriggeredConnectState")
 @js.native
 object TriggeredConnectState extends js.Object {
+  
   @js.native
   sealed trait canceled extends TriggeredConnectState
   
@@ -27,6 +27,4 @@ object TriggeredConnectState extends js.Object {
   
   @js.native
   sealed trait peerFound extends TriggeredConnectState
-  
 }
-

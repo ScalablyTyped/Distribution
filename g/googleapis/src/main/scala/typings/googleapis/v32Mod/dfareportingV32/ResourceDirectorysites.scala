@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Directorysites")
 @js.native
 class ResourceDirectorysites protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.directorySites.get
     * @desc Gets one directory site by ID.
@@ -42,6 +44,7 @@ class ResourceDirectorysites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDirectorySite]
   ): Unit = js.native
+  
   /**
     * dfareporting.directorySites.insert
     * @desc Inserts a new directory site.
@@ -71,6 +74,7 @@ class ResourceDirectorysites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDirectorySite]
   ): Unit = js.native
+  
   /**
     * dfareporting.directorySites.list
     * @desc Retrieves a list of directory sites, possibly filtered. This method
@@ -117,4 +121,3 @@ class ResourceDirectorysites protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDirectorySitesListResponse]
   ): Unit = js.native
 }
-

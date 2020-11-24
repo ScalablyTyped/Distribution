@@ -2,9 +2,10 @@ package typings.actionsOnGoogle
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object dialogflowDialogflowMod {
+  
   type DialogflowIntentHandler[TConvData, TUserStorage, TContexts /* <: typings.actionsOnGoogle.contextMod.Contexts */, TConversation /* <: typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversation[TConvData, TUserStorage, TContexts] */, TParameters /* <: typings.actionsOnGoogle.contextMod.Parameters */, TArgument /* <: typings.actionsOnGoogle.argumentArgumentMod.Argument */] = js.Function4[
     /* conv */ TConversation, 
     /* params */ TParameters, 
@@ -12,7 +13,9 @@ package object dialogflowDialogflowMod {
     /* status */ js.UndefOr[typings.actionsOnGoogle.v2Mod.GoogleRpcStatus], 
     js.Promise[js.Any] | js.Any
   ]
+  
   type DialogflowIntentHandlers = org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Function | java.lang.String]]
+  
   type DialogflowMiddleware[TConversationPlugin /* <: typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversation[
     typings.actionsOnGoogle.commonMod.JsonObject, 
     typings.actionsOnGoogle.commonMod.JsonObject, 
@@ -36,6 +39,7 @@ package object dialogflowDialogflowMod {
       ]) with TConversationPlugin) | scala.Unit
     ])
   ]
+  
   type DialogflowVerificationHeaders = /**
     * A header key value pair to check against.
     * @public

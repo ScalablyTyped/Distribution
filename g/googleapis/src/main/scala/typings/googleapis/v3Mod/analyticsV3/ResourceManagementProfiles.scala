@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Profiles")
 @js.native
 class ResourceManagementProfiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.profiles.delete
     * @desc Deletes a view (profile).
@@ -43,6 +45,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.profiles.get
     * @desc Gets a view (profile) to which the user has access.
@@ -73,6 +76,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
+  
   /**
     * analytics.management.profiles.insert
     * @desc Create a new view (profile).
@@ -103,6 +107,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
+  
   /**
     * analytics.management.profiles.list
     * @desc Lists views (profiles) to which the user has access.
@@ -134,6 +139,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfiles]
   ): Unit = js.native
+  
   /**
     * analytics.management.profiles.patch
     * @desc Updates an existing view (profile). This method supports patch
@@ -166,6 +172,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
+  
   /**
     * analytics.management.profiles.update
     * @desc Updates an existing view (profile).
@@ -198,4 +205,3 @@ class ResourceManagementProfiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
 }
-

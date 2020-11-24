@@ -10,9 +10,9 @@ ActiveDirectory is an ldapjs client for authN (authentication) and authZ (author
 | ------------------ | :-------------: |
 | Full name          | activedirectory2 |
 | Keywords           | ldap, active directory |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 6 |
-| # downloads        | 56583 |
+| # downloads        | 86663 |
 | # stars            | 3 |
 
 ## Links

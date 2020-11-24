@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inject the script after the document element is created, but before any other content is loaded.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.INJECTION_TIME_DOCUMENT_START")
 @js.native
 object INJECTION_TIME_DOCUMENT_START extends TopLevel[Double]
-

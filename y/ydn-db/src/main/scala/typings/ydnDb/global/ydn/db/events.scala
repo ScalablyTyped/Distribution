@@ -2,11 +2,12 @@ package typings.ydnDb.global.ydn.db
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ydn.db.events")
 @js.native
 object events extends js.Object {
+  
   @js.native
   class Event ()
     extends typings.ydnDb.ydn.db.events.Event
@@ -22,6 +23,4 @@ object events extends js.Object {
   @js.native
   class StoreEvent ()
     extends typings.ydnDb.ydn.db.events.StoreEvent
-  
 }
-

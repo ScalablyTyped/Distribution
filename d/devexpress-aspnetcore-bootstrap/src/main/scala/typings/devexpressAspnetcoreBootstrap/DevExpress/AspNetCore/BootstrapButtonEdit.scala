@@ -8,13 +8,17 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapButtonEdit extends BootstrapClientEdit {
+  
   def getButtonVisible(number: Double): Boolean = js.native
+  
   def getCaretPosition(): Double = js.native
+  
   def getText(): String = js.native
+  
   @JSName("off")
   def off_buttonClick(eventName: buttonClick): this.type = js.native
   @JSName("off")
@@ -57,6 +61,7 @@ trait BootstrapButtonEdit extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_buttonClick(
     eventName: buttonClick,
@@ -87,6 +92,7 @@ trait BootstrapButtonEdit extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_buttonClick(
     eventName: buttonClick,
@@ -117,10 +123,14 @@ trait BootstrapButtonEdit extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   def selectAll(): Unit = js.native
+  
   def setButtonVisible(number: Double, value: Boolean): Unit = js.native
+  
   def setCaretPosition(position: Double): Unit = js.native
+  
   def setSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit = js.native
+  
   def setText(text: String): Unit = js.native
 }
-

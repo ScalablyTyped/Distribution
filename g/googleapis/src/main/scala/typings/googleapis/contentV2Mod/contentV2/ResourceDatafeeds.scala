@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Datafeeds")
 @js.native
 class ResourceDatafeeds protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.datafeeds.custombatch
     * @desc Deletes, fetches, gets, inserts and updates multiple datafeeds in a
@@ -46,6 +48,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeedsCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.delete
     * @desc Deletes a datafeed configuration from your Merchant Center account.
@@ -76,6 +79,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.fetchnow
     * @desc Invokes a fetch for the datafeed in your Merchant Center account.
@@ -109,6 +113,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeedsFetchNowResponse]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.get
     * @desc Retrieves a datafeed configuration from your Merchant Center
@@ -139,6 +144,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeed]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.insert
     * @desc Registers a datafeed configuration with your Merchant Center
@@ -170,6 +176,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeed]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.list
     * @desc Lists the configurations for datafeeds in your Merchant Center
@@ -201,6 +208,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeedsListResponse]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.patch
     * @desc Updates a datafeed configuration of your Merchant Center account.
@@ -233,6 +241,7 @@ class ResourceDatafeeds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeed]
   ): Unit = js.native
+  
   /**
     * content.datafeeds.update
     * @desc Updates a datafeed configuration of your Merchant Center account.
@@ -265,4 +274,3 @@ class ResourceDatafeeds protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDatafeed]
   ): Unit = js.native
 }
-

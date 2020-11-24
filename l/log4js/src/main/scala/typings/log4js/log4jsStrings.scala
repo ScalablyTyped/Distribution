@@ -2,9 +2,70 @@ package typings.log4js
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object log4jsStrings {
+  
+  @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  
+  @scala.inline
+  def categoryFilter: categoryFilter = "categoryFilter".asInstanceOf[categoryFilter]
+  
+  @scala.inline
+  def colored: colored = "colored".asInstanceOf[colored]
+  
+  @scala.inline
+  def coloured: coloured = "coloured".asInstanceOf[coloured]
+  
+  @scala.inline
+  def console: console = "console".asInstanceOf[console]
+  
+  @scala.inline
+  def dateFile: dateFile = "dateFile".asInstanceOf[dateFile]
+  
+  @scala.inline
+  def dummy: dummy = "dummy".asInstanceOf[dummy]
+  
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
+  
+  @scala.inline
+  def fileSync: fileSync = "fileSync".asInstanceOf[fileSync]
+  
+  @scala.inline
+  def logLevelFilter: logLevelFilter = "logLevelFilter".asInstanceOf[logLevelFilter]
+  
+  @scala.inline
+  def master: master = "master".asInstanceOf[master]
+  
+  @scala.inline
+  def messagePassThrough: messagePassThrough = "messagePassThrough".asInstanceOf[messagePassThrough]
+  
+  @scala.inline
+  def multiFile: multiFile = "multiFile".asInstanceOf[multiFile]
+  
+  @scala.inline
+  def multiprocess: multiprocess = "multiprocess".asInstanceOf[multiprocess]
+  
+  @scala.inline
+  def noLogFilter: noLogFilter = "noLogFilter".asInstanceOf[noLogFilter]
+  
+  @scala.inline
+  def pattern: pattern = "pattern".asInstanceOf[pattern]
+  
+  @scala.inline
+  def recording: recording = "recording".asInstanceOf[recording]
+  
+  @scala.inline
+  def stderr: stderr = "stderr".asInstanceOf[stderr]
+  
+  @scala.inline
+  def stdout: stdout = "stdout".asInstanceOf[stdout]
+  
+  @scala.inline
+  def worker: worker = "worker".asInstanceOf[worker]
+  
   @js.native
   sealed trait basic extends js.Object
   
@@ -64,46 +125,4 @@ object log4jsStrings {
   
   @js.native
   sealed trait worker extends js.Object
-  
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def categoryFilter: categoryFilter = "categoryFilter".asInstanceOf[categoryFilter]
-  @scala.inline
-  def colored: colored = "colored".asInstanceOf[colored]
-  @scala.inline
-  def coloured: coloured = "coloured".asInstanceOf[coloured]
-  @scala.inline
-  def console: console = "console".asInstanceOf[console]
-  @scala.inline
-  def dateFile: dateFile = "dateFile".asInstanceOf[dateFile]
-  @scala.inline
-  def dummy: dummy = "dummy".asInstanceOf[dummy]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def fileSync: fileSync = "fileSync".asInstanceOf[fileSync]
-  @scala.inline
-  def logLevelFilter: logLevelFilter = "logLevelFilter".asInstanceOf[logLevelFilter]
-  @scala.inline
-  def master: master = "master".asInstanceOf[master]
-  @scala.inline
-  def messagePassThrough: messagePassThrough = "messagePassThrough".asInstanceOf[messagePassThrough]
-  @scala.inline
-  def multiFile: multiFile = "multiFile".asInstanceOf[multiFile]
-  @scala.inline
-  def multiprocess: multiprocess = "multiprocess".asInstanceOf[multiprocess]
-  @scala.inline
-  def noLogFilter: noLogFilter = "noLogFilter".asInstanceOf[noLogFilter]
-  @scala.inline
-  def pattern: pattern = "pattern".asInstanceOf[pattern]
-  @scala.inline
-  def recording: recording = "recording".asInstanceOf[recording]
-  @scala.inline
-  def stderr: stderr = "stderr".asInstanceOf[stderr]
-  @scala.inline
-  def stdout: stdout = "stdout".asInstanceOf[stdout]
-  @scala.inline
-  def worker: worker = "worker".asInstanceOf[worker]
 }
-

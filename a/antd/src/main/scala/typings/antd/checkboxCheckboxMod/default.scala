@@ -1,24 +1,12 @@
 package typings.antd.checkboxCheckboxMod
 
-import typings.antd.anon.Indeterminate
-import typings.antd.anon.TypeofCheckboxGroup
-import typings.antd.checkboxGroupMod.CheckboxGroupContext
-import typings.react.mod.Context
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/checkbox/Checkbox", JSImport.Default)
 @js.native
-class default () extends Checkbox
-
-/* static members */
-@JSImport("antd/lib/checkbox/Checkbox", JSImport.Default)
-@js.native
-object default extends js.Object {
-  var Group: TypeofCheckboxGroup = js.native
-  var __ANT_CHECKBOX: Boolean = js.native
-  var contextType: Context[CheckboxGroupContext | Null] = js.native
-  var defaultProps: Indeterminate = js.native
-}
-
+object default extends TopLevel[ForwardRefExoticComponent[CheckboxProps with RefAttributes[_]]]

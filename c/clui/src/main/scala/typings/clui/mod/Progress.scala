@@ -2,7 +2,7 @@ package typings.clui.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("clui", "Progress")
 @js.native
@@ -12,6 +12,7 @@ class Progress protected () extends js.Object {
     * @param length The desired length of the progress bar in characters
     */
   def this(length: Double) = this()
+  
   /**
     * Returns the progress bar min/max context to write to stdout
     * @param currentValueOrPercent Current value (or percent) of the progress bar
@@ -20,4 +21,3 @@ class Progress protected () extends js.Object {
   def update(currentValueOrPercent: Double): String = js.native
   def update(currentValueOrPercent: Double, maxValue: Double): String = js.native
 }
-

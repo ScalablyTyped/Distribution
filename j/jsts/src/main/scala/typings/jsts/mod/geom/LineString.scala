@@ -2,7 +2,7 @@ package typings.jsts.mod.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsts", "geom.LineString")
 @js.native
@@ -14,4 +14,3 @@ class LineString protected ()
   def this(points: js.Array[typings.jsts.jsts.geom.Coordinate]) = this()
   def this(points: js.Array[typings.jsts.jsts.geom.Coordinate], factory: js.Any) = this()
 }
-

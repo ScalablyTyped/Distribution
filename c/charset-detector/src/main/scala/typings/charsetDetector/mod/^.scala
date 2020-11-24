@@ -3,11 +3,12 @@ package typings.charsetDetector.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("charset-detector", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * ICU based port of charset detection to javascript
     * @param input accept node Buffer, but will work with anything that follow such rules:
@@ -20,4 +21,3 @@ object ^ extends js.Object {
   def apply(input: ArrayLike[Double]): js.Array[CharsetMatch] = js.native
   def apply(input: ArrayLike[Double], matchers: js.Array[CharsetMatcher]): js.Array[CharsetMatch] = js.native
 }
-

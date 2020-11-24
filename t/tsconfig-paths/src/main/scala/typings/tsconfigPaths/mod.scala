@@ -13,11 +13,12 @@ import typings.tsconfigPaths.matchPathAsyncMod.MatchPathAsyncCallback
 import typings.tsconfigPaths.matchPathSyncMod.MatchPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tsconfig-paths", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPath = js.native
   def createMatchPath(
     absoluteBaseUrl: String,
@@ -32,6 +33,7 @@ object mod extends js.Object {
     mainFields: js.Array[String],
     addMatchAll: Boolean
   ): MatchPath = js.native
+  
   def createMatchPathAsync(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPathAsync = js.native
   def createMatchPathAsync(
     absoluteBaseUrl: String,
@@ -46,8 +48,10 @@ object mod extends js.Object {
     mainFields: js.Array[String],
     addMatchAll: Boolean
   ): MatchPathAsync = js.native
+  
   def loadConfig(): ConfigLoaderResult = js.native
   def loadConfig(cwd: String): ConfigLoaderResult = js.native
+  
   def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
@@ -154,6 +158,7 @@ object mod extends js.Object {
     extensions: js.Array[String],
     mainFields: js.Array[String]
   ): js.UndefOr[String] = js.native
+  
   def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
@@ -290,6 +295,6 @@ object mod extends js.Object {
     callback: MatchPathAsyncCallback,
     mainFields: js.Array[String]
   ): Unit = js.native
+  
   def register(explicitParams: ExplicitParams): js.Function0[Unit] = js.native
 }
-

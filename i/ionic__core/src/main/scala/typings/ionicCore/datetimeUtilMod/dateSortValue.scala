@@ -2,11 +2,12 @@ package typings.ionicCore.datetimeUtilMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/datetime/datetime-util", "dateSortValue")
 @js.native
 object dateSortValue extends js.Object {
+  
   def apply(): Double = js.native
   def apply(
     year: js.UndefOr[scala.Nothing],
@@ -111,4 +112,3 @@ object dateSortValue extends js.Object {
   def apply(year: Double, month: Double, day: Double, hour: Double): Double = js.native
   def apply(year: Double, month: Double, day: Double, hour: Double, minute: Double): Double = js.native
 }
-

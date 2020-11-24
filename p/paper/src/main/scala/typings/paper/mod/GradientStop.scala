@@ -3,7 +3,7 @@ package typings.paper.mod
 import typings.paper.paper.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper", "GradientStop")
 @js.native
@@ -21,4 +21,3 @@ class GradientStop ()
   def this(color: js.UndefOr[scala.Nothing], offset: Double) = this()
   def this(color: Color, offset: Double) = this()
 }
-

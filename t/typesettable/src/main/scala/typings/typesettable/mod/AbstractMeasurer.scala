@@ -4,7 +4,7 @@ import typings.typesettable.abstractMeasurerMod.IRuler
 import typings.typesettable.contextsMod.IRulerFactoryContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "AbstractMeasurer")
 @js.native
@@ -13,11 +13,11 @@ class AbstractMeasurer protected ()
   def this(ruler: IRuler) = this()
   def this(ruler: IRulerFactoryContext) = this()
 }
-
 /* static members */
 @JSImport("typesettable", "AbstractMeasurer")
 @js.native
 object AbstractMeasurer extends js.Object {
+  
   /**
     * A string representing the full ascender/descender range of your text.
     *
@@ -27,4 +27,3 @@ object AbstractMeasurer extends js.Object {
     */
   var HEIGHT_TEXT: String = js.native
 }
-

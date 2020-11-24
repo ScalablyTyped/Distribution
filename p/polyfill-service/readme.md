@@ -10,9 +10,9 @@ A polyfill combinator
 | ------------------ | :-------------: |
 | Full name          | polyfill-service |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 15 |
-| # downloads        | 597392 |
+| # downloads        | 1013152 |
 | # stars            | 1 |
 
 ## Links

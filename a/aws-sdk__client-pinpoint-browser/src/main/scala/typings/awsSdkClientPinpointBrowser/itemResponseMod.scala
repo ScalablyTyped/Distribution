@@ -1,14 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser/model/_ItemResponse", JSImport.Namespace)
 @js.native
 object itemResponseMod extends js.Object {
+  
   @JSName("_ItemResponse")
-  val ItemResponse: Structure = js.native
+  val ItemResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

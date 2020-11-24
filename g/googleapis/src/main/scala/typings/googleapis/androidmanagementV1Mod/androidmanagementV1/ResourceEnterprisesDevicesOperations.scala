@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Devices$Operations")
 @js.native
 class ResourceEnterprisesDevicesOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.enterprises.devices.operations.cancel
     * @desc Starts asynchronous cancellation on a long-running operation. The
@@ -52,6 +52,9 @@ class ResourceEnterprisesDevicesOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.enterprises.devices.operations.delete
     * @desc Deletes a long-running operation. This method indicates that the
@@ -86,6 +89,7 @@ class ResourceEnterprisesDevicesOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.devices.operations.get
     * @desc Gets the latest state of a long-running operation. Clients can use
@@ -119,6 +123,7 @@ class ResourceEnterprisesDevicesOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.devices.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -162,4 +167,3 @@ class ResourceEnterprisesDevicesOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
 }
-

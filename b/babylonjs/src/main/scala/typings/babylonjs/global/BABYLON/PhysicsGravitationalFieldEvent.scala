@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a gravitational field event
@@ -25,4 +25,3 @@ class PhysicsGravitationalFieldEvent protected ()
     _options: typings.babylonjs.BABYLON.PhysicsRadialExplosionEventOptions
   ) = this()
 }
-

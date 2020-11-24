@@ -5,11 +5,11 @@ import typings.gaxios.anon.ShouldRetry
 import typings.gaxios.commonMod.GaxiosError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gaxios/build/src/retry", JSImport.Namespace)
 @js.native
 object retryMod extends js.Object {
+  
   def getRetryConfig(err: GaxiosError[_]): js.Promise[Config | ShouldRetry] = js.native
 }
-

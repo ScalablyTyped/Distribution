@@ -3,7 +3,7 @@ package typings.node.tlsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An immutable array of strings representing the root certificates (in PEM
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object rootCertificates
   extends TopLevel[js.Array[String]]
-

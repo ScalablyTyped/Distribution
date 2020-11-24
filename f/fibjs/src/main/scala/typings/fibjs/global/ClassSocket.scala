@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Socket")
 @js.native
@@ -21,4 +21,3 @@ class ClassSocket ()
   def this(family: js.UndefOr[scala.Nothing], `type`: Double) = this()
   def this(family: Double, `type`: Double) = this()
 }
-

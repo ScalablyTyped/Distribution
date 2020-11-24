@@ -5,7 +5,7 @@ import typings.agGrid.columnGroupChildMod.ColumnGroupChild
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid", "SetLeftFeature")
 @js.native
@@ -19,4 +19,3 @@ class SetLeftFeature protected ()
     colsSpanning: js.Array[typings.agGrid.columnMod.Column]
   ) = this()
 }
-

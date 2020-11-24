@@ -12,7 +12,7 @@ kakao oauth2 login module
 | Keywords           | passport, kakao, kakaotalk, oauth2 |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 40840 |
+| # downloads        | 135541 |
 | # stars            | 1 |
 
 ## Links

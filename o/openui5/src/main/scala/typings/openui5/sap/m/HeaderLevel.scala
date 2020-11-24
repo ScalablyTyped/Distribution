@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HeaderLevel extends js.Object
-
 /**
   * Different levels for headers
   */
 @JSGlobal("sap.m.HeaderLevel")
 @js.native
 object HeaderLevel extends js.Object {
+  
   @js.native
   sealed trait H1 extends HeaderLevel
   
@@ -30,6 +30,4 @@ object HeaderLevel extends js.Object {
   
   @js.native
   sealed trait H6 extends HeaderLevel
-  
 }
-

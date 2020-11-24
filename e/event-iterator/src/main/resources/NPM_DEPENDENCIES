@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "event-iterator" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "event-iterator" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

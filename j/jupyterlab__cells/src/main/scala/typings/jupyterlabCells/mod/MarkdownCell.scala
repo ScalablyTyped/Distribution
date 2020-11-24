@@ -3,7 +3,7 @@ package typings.jupyterlabCells.mod
 import typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "MarkdownCell")
 @js.native
@@ -14,4 +14,3 @@ class MarkdownCell protected ()
     */
   def this(options: IOptions) = this()
 }
-

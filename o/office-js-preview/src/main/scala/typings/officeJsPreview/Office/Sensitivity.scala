@@ -3,7 +3,7 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.AppointmentSensitivityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Sensitivity extends js.Object {
+  
   /**
     * Gets the value of the appointment sensitivity.
     *
@@ -59,8 +60,8 @@ trait Sensitivity extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[AppointmentSensitivityType], Unit]
   ): Unit = js.native
+  
   def setAsync(sensitivity: String): Unit = js.native
-  def setAsync(sensitivity: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(
     sensitivity: String,
     options: js.UndefOr[scala.Nothing],
@@ -94,10 +95,6 @@ trait Sensitivity extends js.Object {
   def setAsync(sensitivity: AppointmentSensitivityType): Unit = js.native
   def setAsync(
     sensitivity: AppointmentSensitivityType,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def setAsync(
-    sensitivity: AppointmentSensitivityType,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -108,4 +105,3 @@ trait Sensitivity extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

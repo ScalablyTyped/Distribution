@@ -6,11 +6,12 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/concat", JSImport.Namespace)
 @js.native
 object operatorsConcatMod extends js.Object {
+  
   def concat[T](): MonoTypeOperatorFunction[T] = js.native
   def concat[T](observables: (ObservableInput[T] | SchedulerLike)*): MonoTypeOperatorFunction[T] = js.native
   def concat[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
@@ -51,4 +52,3 @@ object operatorsConcatMod extends js.Object {
   @JSName("concat")
   def concat_TR_OperatorFunction[T, R](observables: (ObservableInput[_] | SchedulerLike)*): OperatorFunction[T, R] = js.native
 }
-

@@ -3,15 +3,17 @@ package typings.electronSettings.mod
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Settings extends EventEmitter {
+  
   /**
     * Clears the custom settings file path, if it exists.
     * @see #setPath
     */
   def clearPath(): Settings = js.native
+  
   /**
     * Deletes the key and value at the given key path and returns the Settings
     * instance. Chainable.
@@ -19,12 +21,14 @@ trait Settings extends EventEmitter {
     */
   def delete(keyPath: String): Settings = js.native
   def delete(keyPath: String, options: SettingsOptions): Settings = js.native
+  
   /**
     * Deletes all settings and returns the Settings instance. Chainable.
     * @see #delete
     */
   def deleteAll(): Settings = js.native
   def deleteAll(options: SettingsOptions): Settings = js.native
+  
   /**
     * Returns the absolute path to where the settings file is or will be
     * stored.
@@ -46,6 +50,7 @@ trait Settings extends EventEmitter {
     * cause unintended consequences.
     */
   def file(): String = js.native
+  
   /**
     * Returns the value at the given key path, or sets the value at that key
     * path to the default value, if provided, if the key does not exist.
@@ -57,16 +62,19 @@ trait Settings extends EventEmitter {
   def get(keyPath: String, defaultValue: js.UndefOr[scala.Nothing], options: SettingsOptions): JsonValue = js.native
   def get(keyPath: String, defaultValue: js.Any): JsonValue = js.native
   def get(keyPath: String, defaultValue: js.Any, options: SettingsOptions): JsonValue = js.native
+  
   /**
     * Returns all settings.
     * @see #get
     */
   def getAll(): JsonValue = js.native
+  
   /**
     * Returns a boolean indicating whether the settings object contains the
     * given key path.
     */
   def has(keyPath: String): Boolean = js.native
+  
   /**
     * Sets the value at the given key path and returns the Settings instance.
     * Chainable.
@@ -78,6 +86,7 @@ trait Settings extends EventEmitter {
     */
   def set(keyPath: String, value: JsonValue): Settings = js.native
   def set(keyPath: String, value: JsonValue, options: SettingsOptions): Settings = js.native
+  
   /**
     * Sets all settings and returns the Settings instance. Chainable.
     * @param obj The new settings object.
@@ -85,6 +94,7 @@ trait Settings extends EventEmitter {
     */
   def setAll(obj: JsonValue): Settings = js.native
   def setAll(obj: JsonValue, options: SettingsOptions): Settings = js.native
+  
   /**
     * Sets a custom settings file path. By default, the settings file is
     * stored in your app's user data directory in a file called Settings,
@@ -97,6 +107,7 @@ trait Settings extends EventEmitter {
     *                 user data will be saved.
     */
   def setPath(filePath: String): Settings = js.native
+  
   /**
     * Returns an Observer instance which watches the given key path for changes
     * and calls the given handler if the value changes. To unsubscribe from
@@ -108,4 +119,3 @@ trait Settings extends EventEmitter {
     */
   def watch(keyPath: String, handler: SettingsHandler): SettingsObserver = js.native
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.DynamicsCompressorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DynamicsCompressorNode")
 @js.native
@@ -14,7 +14,6 @@ class DynamicsCompressorNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: DynamicsCompressorOptions) = this()
 }
-
 @JSGlobal("DynamicsCompressorNode")
 @js.native
 object DynamicsCompressorNode
@@ -24,4 +23,3 @@ object DynamicsCompressorNode
       /* options */ DynamicsCompressorOptions, 
       typings.std.DynamicsCompressorNode
     ]
-

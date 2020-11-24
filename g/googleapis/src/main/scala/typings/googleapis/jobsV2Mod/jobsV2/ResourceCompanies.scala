@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v2", "jobs_v2.Resource$Companies")
 @js.native
 class ResourceCompanies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var jobs: ResourceCompaniesJobs = js.native
+  
   /**
     * jobs.companies.create
     * @desc Creates a new company entity.
@@ -42,6 +43,7 @@ class ResourceCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
+  
   /**
     * jobs.companies.delete
     * @desc Deletes the specified company.
@@ -70,6 +72,7 @@ class ResourceCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * jobs.companies.get
     * @desc Retrieves the specified company.
@@ -98,6 +101,9 @@ class ResourceCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
+  
+  var jobs: ResourceCompaniesJobs = js.native
+  
   /**
     * jobs.companies.list
     * @desc Lists all companies associated with a Cloud Talent Solution
@@ -129,6 +135,7 @@ class ResourceCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCompaniesResponse]
   ): Unit = js.native
+  
   /**
     * jobs.companies.patch
     * @desc Updates the specified company. Company names can't be updated. To
@@ -162,4 +169,3 @@ class ResourceCompanies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
 }
-

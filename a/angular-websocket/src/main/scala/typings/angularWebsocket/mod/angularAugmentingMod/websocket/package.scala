@@ -2,9 +2,10 @@ package typings.angularWebsocket.mod.angularAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object websocket {
+  
   /**
     * Creates and opens an IWebSocket instance.
     *

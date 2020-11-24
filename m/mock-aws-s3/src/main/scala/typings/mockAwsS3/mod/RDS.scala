@@ -4,7 +4,7 @@ import typings.awsSdk.rdsMod.ClientConfiguration
 import typings.awsSdk.rdsSignerMod.Signer.SignerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "RDS")
 @js.native
@@ -15,10 +15,10 @@ class RDS ()
   extends typings.awsSdk.mod.RDS {
   def this(options: ClientConfiguration) = this()
 }
-
 @JSImport("mock-aws-s3", "RDS")
 @js.native
 object RDS extends js.Object {
+  
   @js.native
   /**
     * A signer object can be used to generate an auth token to a database.
@@ -27,6 +27,4 @@ object RDS extends js.Object {
     extends typings.awsSdk.mod.RDS.Signer {
     def this(options: SignerOptions) = this()
   }
-  
 }
-

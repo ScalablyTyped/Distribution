@@ -5,11 +5,12 @@ import typings.samchon.parallelSystemMod.ParallelSystem
 import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/derived/ParallelServerClientArrayMediator", JSImport.Namespace)
 @js.native
 object parallelServerClientArrayMediatorMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -34,6 +35,7 @@ object parallelServerClientArrayMediatorMod extends js.Object {
     * Default Constructor.
     */
   abstract class ParallelServerClientArrayMediator[System /* <: ParallelSystem */] () extends ParallelClientArrayMediator[System] {
+    
     /**
       * @inheritdoc
       */
@@ -43,6 +45,7 @@ object parallelServerClientArrayMediatorMod extends js.Object {
       * This method calls children elements' method {@link IExternalServer.connect} gradually.
       */
     def connect(): Unit = js.native
+    
     /**
       * Factory method creating an {@link IParallelServer} object.
       *
@@ -51,6 +54,4 @@ object parallelServerClientArrayMediatorMod extends js.Object {
       */
     /* protected */ def createExternalServer(xml: XML): System = js.native
   }
-  
 }
-

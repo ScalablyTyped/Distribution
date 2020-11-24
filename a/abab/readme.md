@@ -1,7 +1,7 @@
 
 # Scala.js typings for abab
 
-Typings are for version 2.0.4
+Typings are for version 2.0.5
 
 ## Library description:
 WHATWG spec-compliant implementations of window.atob and window.btoa.
@@ -10,9 +10,9 @@ WHATWG spec-compliant implementations of window.atob and window.btoa.
 | ------------------ | :-------------: |
 | Full name          | abab |
 | Keywords           | atob, btoa, browser |
-| # releases         | 5 |
-| # dependents       | 83 |
-| # downloads        | 257103694 |
+| # releases         | 4 |
+| # dependents       | 115 |
+| # downloads        | 375347720 |
 | # stars            | 1 |
 
 ## Links

@@ -2,40 +2,46 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaGetOrderDealsResponse extends js.Object {
+  
   /**
     * List of deals for the proposal
     */
   var deals: js.UndefOr[js.Array[SchemaMarketplaceDeal]] = js.native
 }
-
 object SchemaGetOrderDealsResponse {
+  
   @scala.inline
   def apply(): SchemaGetOrderDealsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetOrderDealsResponse]
   }
+  
   @scala.inline
   implicit class SchemaGetOrderDealsResponseOps[Self <: SchemaGetOrderDealsResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = this.set("deals", js.Array(value :_*))
+    
     @scala.inline
     def setDeals(value: js.Array[SchemaMarketplaceDeal]): Self = this.set("deals", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeals: Self = this.set("deals", js.undefined)
   }
-  
 }
-

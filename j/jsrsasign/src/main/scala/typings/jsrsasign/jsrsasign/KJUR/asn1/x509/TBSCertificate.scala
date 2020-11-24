@@ -11,7 +11,7 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ASN.1 TBSCertificate structure class
@@ -30,7 +30,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TBSCertificate extends ASN1Object {
+  
   /* private */ def _initialize(): Unit = js.native
+  
   /**
     * append X.509v3 extension to this object
     * @param extObj X.509v3 Extension object
@@ -40,6 +42,7 @@ trait TBSCertificate extends ASN1Object {
     * @see KJUR.asn1.x509.Extension
     */
   def appendExtension(extObj: Extension): Unit = js.native
+  
   /**
     * append X.509v3 extension to this object by name and parameters
     * @param name name of X.509v3 Extension object
@@ -55,6 +58,7 @@ trait TBSCertificate extends ASN1Object {
     * @see KJUR.asn1.x509.Extension
     */
   def appendExtensionByName(name: String, extParams: Extension): Unit = js.native
+  
   /**
     * set issuer name field by parameter
     * @param x500NameParam X500Name parameter
@@ -63,6 +67,7 @@ trait TBSCertificate extends ASN1Object {
     * @see KJUR.asn1.x509.X500Name
     */
   def setIssuerByParam(x500NameParam: StringParam): Unit = js.native
+  
   /**
     * set notAfter field by parameter
     * @param timeParam Time parameter
@@ -71,6 +76,7 @@ trait TBSCertificate extends ASN1Object {
     * @see KJUR.asn1.x509.Time
     */
   def setNotAfterByParam(timeParam: StringParam): Unit = js.native
+  
   /**
     * set notBefore field by parameter
     * @param timeParam Time parameter
@@ -79,6 +85,7 @@ trait TBSCertificate extends ASN1Object {
     * @see KJUR.asn1.x509.Time
     */
   def setNotBeforeByParam(timeParam: StringParam): Unit = js.native
+  
   /**
     * set serial number field by parameter
     * @param intParam DERInteger param
@@ -86,6 +93,7 @@ trait TBSCertificate extends ASN1Object {
     * tbsc.setSerialNumberByParam({'int': 3});
     */
   def setSerialNumberByParam(intParam: IntegerParam): Unit = js.native
+  
   /**
     * set signature algorithm field by parameter
     * @param algIdParam AlgorithmIdentifier parameter
@@ -93,6 +101,7 @@ trait TBSCertificate extends ASN1Object {
     * tbsc.setSignatureAlgByParam({'name': 'SHA1withRSA'});
     */
   def setSignatureAlgByParam(algIdParam: NameParam): Unit = js.native
+  
   /**
     * set subject name field by parameter
     * @param x500NameParam X500Name parameter
@@ -101,6 +110,7 @@ trait TBSCertificate extends ASN1Object {
     * @see KJUR.asn1.x509.X500Name
     */
   def setSubjectByParam(x500NameParam: StringParam): Unit = js.native
+  
   /**
     * set subject public key info field by key object
     * @param param `KJUR.asn1.x509.SubjectPublicKeyInfo` class constructor parameter
@@ -112,6 +122,7 @@ trait TBSCertificate extends ASN1Object {
   def setSubjectPublicKey(param: DSA): Unit = js.native
   def setSubjectPublicKey(param: ECDSA): Unit = js.native
   def setSubjectPublicKey(param: RSAKey): Unit = js.native
+  
   def setSubjectPublicKeyByGetKey(keyParam: String): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: E): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: DSA): Unit = js.native
@@ -129,4 +140,3 @@ trait TBSCertificate extends ASN1Object {
     */
   def setSubjectPublicKeyByGetKey(keyParam: RSAKey): Unit = js.native
 }
-

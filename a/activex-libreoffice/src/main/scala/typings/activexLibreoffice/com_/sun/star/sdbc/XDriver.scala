@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the interface that every driver class must implement.
@@ -24,16 +24,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDriver extends XInterface {
+  
   /**
     * gets the driver's major version number. Initially this should be 1.
     * @returns this driver's major version number
     */
   val MajorVersion: Double = js.native
+  
   /**
     * gets the driver's minor version number. Initially this should be 0.
     * @returns this driver's minor version number.
     */
   val MinorVersion: Double = js.native
+  
   /**
     * returns `TRUE` if the driver thinks that it can open a connection to the given URL. Typically drivers will return `TRUE` if they understand the
     * subprotocol specified in the URL and `FALSE` if they do not.
@@ -42,6 +45,7 @@ trait XDriver extends XInterface {
     * @throws SQLException if a database access error occurs.
     */
   def acceptsURL(url: String): Boolean = js.native
+  
   /**
     * attempts to make a database connection to the given URL. The driver should return `NULL` if it realizes it is the wrong kind of driver to connect to
     * the given URL. This will be common, as when the driver manager is asked to connect to a given URL it passes the URL to each loaded driver in turn.
@@ -61,16 +65,19 @@ trait XDriver extends XInterface {
     * @throws SQLException if a database access error occurs
     */
   def connect(url: String, info: SeqEquiv[PropertyValue]): XConnection = js.native
+  
   /**
     * gets the driver's major version number. Initially this should be 1.
     * @returns this driver's major version number
     */
   def getMajorVersion(): Double = js.native
+  
   /**
     * gets the driver's minor version number. Initially this should be 0.
     * @returns this driver's minor version number.
     */
   def getMinorVersion(): Double = js.native
+  
   /**
     * gets information about the possible properties for this driver.
     *
@@ -84,8 +91,8 @@ trait XDriver extends XInterface {
     */
   def getPropertyInfo(url: String, info: SeqEquiv[PropertyValue]): SafeArray[DriverPropertyInfo] = js.native
 }
-
 object XDriver {
+  
   @scala.inline
   def apply(
     MajorVersion: Double,
@@ -102,32 +109,41 @@ object XDriver {
     val __obj = js.Dynamic.literal(MajorVersion = MajorVersion.asInstanceOf[js.Any], MinorVersion = MinorVersion.asInstanceOf[js.Any], acceptsURL = js.Any.fromFunction1(acceptsURL), acquire = js.Any.fromFunction0(acquire), connect = js.Any.fromFunction2(connect), getMajorVersion = js.Any.fromFunction0(getMajorVersion), getMinorVersion = js.Any.fromFunction0(getMinorVersion), getPropertyInfo = js.Any.fromFunction2(getPropertyInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDriver]
   }
+  
   @scala.inline
   implicit class XDriverOps[Self <: XDriver] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMajorVersion(value: Double): Self = this.set("MajorVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinorVersion(value: Double): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAcceptsURL(value: String => Boolean): Self = this.set("acceptsURL", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConnect(value: (String, SeqEquiv[PropertyValue]) => XConnection): Self = this.set("connect", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetMajorVersion(value: () => Double): Self = this.set("getMajorVersion", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetMinorVersion(value: () => Double): Self = this.set("getMinorVersion", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPropertyInfo(value: (String, SeqEquiv[PropertyValue]) => SafeArray[DriverPropertyInfo]): Self = this.set("getPropertyInfo", js.Any.fromFunction2(value))
   }
-  
 }
-

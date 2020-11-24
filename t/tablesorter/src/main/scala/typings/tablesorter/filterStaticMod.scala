@@ -5,13 +5,15 @@ import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.parsedOptionMod.ParsedOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Filtering/FilterStatic", JSImport.Namespace)
 @js.native
 object filterStaticMod extends js.Object {
+  
   @js.native
   trait FilterStatic[TElement] extends js.Object {
+    
     def bindSearch(table: TElement, controls: JQuery[HTMLElement], forceStart: Boolean): Unit = js.native
     /**
       * Adds new controls to the tablesorter as external search-filters.
@@ -25,6 +27,7 @@ object filterStaticMod extends js.Object {
       * A value indicating whether a new search should be performed after adding the controls.
       */
     def bindSearch(table: JQuery[TElement], controls: JQuery[HTMLElement], forceStart: Boolean): Unit = js.native
+    
     def buildSelect(table: TElement, column: Double, options: String, replace: Boolean): Unit = js.native
     def buildSelect(table: TElement, column: Double, options: String, replace: Boolean, visibleOnly: Boolean): Unit = js.native
     def buildSelect(table: TElement, column: Double, options: js.Array[_], replace: Boolean): Unit = js.native
@@ -73,6 +76,7 @@ object filterStaticMod extends js.Object {
       replace: Boolean,
       visibleOnly: Boolean
     ): Unit = js.native
+    
     def getOptionSource(table: TElement, column: Double): js.Array[ParsedOption] = js.native
     def getOptionSource(table: TElement, column: Double, visibleOnly: Boolean): js.Array[ParsedOption] = js.native
     /**
@@ -92,6 +96,7 @@ object filterStaticMod extends js.Object {
       */
     def getOptionSource(table: JQuery[TElement], column: Double): js.Array[ParsedOption] = js.native
     def getOptionSource(table: JQuery[TElement], column: Double, visibleOnly: Boolean): js.Array[ParsedOption] = js.native
+    
     def getOptions(table: TElement, column: Double): js.Array[String] = js.native
     def getOptions(table: TElement, column: Double, visibleOnly: Boolean): js.Array[String] = js.native
     /**
@@ -111,6 +116,7 @@ object filterStaticMod extends js.Object {
       */
     def getOptions(table: JQuery[TElement], column: Double): js.Array[String] = js.native
     def getOptions(table: JQuery[TElement], column: Double, visibleOnly: Boolean): js.Array[String] = js.native
+    
     def processOptions(table: TElement, column: js.UndefOr[scala.Nothing], options: js.Array[_]): js.Array[String] = js.native
     def processOptions(table: TElement, column: Double, options: js.Array[_]): js.Array[String] = js.native
     def processOptions(table: TElement, column: Null, options: js.Array[_]): js.Array[String] = js.native
@@ -130,6 +136,4 @@ object filterStaticMod extends js.Object {
     def processOptions(table: JQuery[TElement], column: Double, options: js.Array[_]): js.Array[String] = js.native
     def processOptions(table: JQuery[TElement], column: Null, options: js.Array[_]): js.Array[String] = js.native
   }
-  
 }
-

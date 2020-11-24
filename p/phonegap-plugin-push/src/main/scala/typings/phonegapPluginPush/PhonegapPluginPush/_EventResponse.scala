@@ -2,16 +2,17 @@ package typings.phonegapPluginPush.PhonegapPluginPush
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _EventResponse extends js.Object
-
 object _EventResponse {
+  
   @scala.inline
   def RegistrationEventResponse(registrationId: String): _EventResponse = {
     val __obj = js.Dynamic.literal(registrationId = registrationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EventResponse]
   }
+  
   @scala.inline
   def NotificationEventResponse(
     additionalData: NotificationEventAdditionalData,
@@ -24,4 +25,3 @@ object _EventResponse {
     __obj.asInstanceOf[_EventResponse]
   }
 }
-

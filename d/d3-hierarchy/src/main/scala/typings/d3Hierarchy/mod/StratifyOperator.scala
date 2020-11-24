@@ -3,10 +3,11 @@ package typings.d3Hierarchy.mod
 import typings.d3Hierarchy.d3HierarchyStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StratifyOperator[Datum] extends js.Object {
+  
   /**
     * Generates a new hierarchy from the specified tabular data. Each node in the returned object has a shallow copy of the properties
     * from the corresponding data object, excluding the following reserved properties: id, parentId, children.
@@ -15,6 +16,7 @@ trait StratifyOperator[Datum] extends js.Object {
     * @throws Error on missing id, ambiguous id, cycle, multiple roots or no root.
     */
   def apply(data: js.Array[Datum]): HierarchyNode[Datum] = js.native
+  
   /**
     * Returns the current id accessor, which defaults to: `(d) => d.id`.
     */
@@ -40,6 +42,7 @@ trait StratifyOperator[Datum] extends js.Object {
       js.UndefOr[String | Null | _empty]
     ]
   ): this.type = js.native
+  
   /**
     * Returns the current parent id accessor, which defaults to: `(d) => d.parentId`.
     */
@@ -67,4 +70,3 @@ trait StratifyOperator[Datum] extends js.Object {
     ]
   ): this.type = js.native
 }
-

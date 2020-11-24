@@ -4,11 +4,12 @@ import typings.routeNode.routeNodeMod.Route
 import typings.routeNode.routeNodeMod.RouteNodeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("route-node", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class RouteNode ()
     extends typings.routeNode.routeNodeMod.RouteNode {
@@ -58,6 +59,4 @@ object mod extends js.Object {
     def this(name: String, path: String, childRoutes: js.UndefOr[scala.Nothing], options: RouteNodeOptions) = this()
     def this(name: String, path: String, childRoutes: js.Array[Route], options: RouteNodeOptions) = this()
   }
-  
 }
-

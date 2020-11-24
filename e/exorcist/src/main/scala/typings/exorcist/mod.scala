@@ -3,11 +3,12 @@ package typings.exorcist
 import typings.through.mod.ThroughStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("exorcist", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /** Externalizes the source map found inside a stream to an external .map file.
     * Works with both JavaScript and CSS input streams
     * @param file full path to the map file to which to write the extracted source map
@@ -57,4 +58,3 @@ object mod extends js.Object {
   def apply(file: String, url: String, root: String, base: String): ThroughStream = js.native
   def apply(file: String, url: String, root: String, base: String, errorOnMissing: Boolean): ThroughStream = js.native
 }
-

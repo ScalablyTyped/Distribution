@@ -10,9 +10,9 @@ ES2015 Number.isFinite() ponyfill
 | ------------------ | :-------------: |
 | Full name          | is-finite |
 | Keywords           | es2015, ponyfill, polyfill, shim, number, finite, is |
-| # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 335101984 |
+| # releases         | 2 |
+| # dependents       | 70 |
+| # downloads        | 389824534 |
 | # stars            | 0 |
 
 ## Links

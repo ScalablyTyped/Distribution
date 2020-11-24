@@ -6,7 +6,7 @@ import typings.twitterStreamChannels.mod.StreamChannels.Channels
 import typings.twitterStreamChannels.mod.StreamChannels.StreamChannelsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twitter-stream-channels", "StreamChannels")
 @js.native
@@ -15,6 +15,7 @@ class StreamChannels_ protected () extends EventEmitter {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/StreamChannels.js#L25
     */
   def this(apiClient: typings.twit.mod.^, options: StreamChannelsOptions) = this()
+  
   /**
     * Returns your channel description
     * @method getChannels
@@ -22,6 +23,7 @@ class StreamChannels_ protected () extends EventEmitter {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/StreamChannels.js#L145
     */
   def getChannels(): Channels = js.native
+  
   /**
     * Returns an object key/value - key:your channels - value:the full text search RegExp for the keywords of this channel
     * @method getchannelsKeywordsLowerCasedRegExp
@@ -29,6 +31,7 @@ class StreamChannels_ protected () extends EventEmitter {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/StreamChannels.js#L163
     */
   def getChannelsKeywordsLowerCasedRegExp(): Channels = js.native
+  
   /**
     * Returns an array of the keywords you're tracking (duplicates were removed)
     * @method getTrackedKeywords
@@ -36,6 +39,7 @@ class StreamChannels_ protected () extends EventEmitter {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/StreamChannels.js#L145
     */
   def getTrackedKeywords(): js.Array[String] = js.native
+  
   /**
     * Call this function to restart the stream after you called `.stop()` on it.
     *
@@ -45,6 +49,7 @@ class StreamChannels_ protected () extends EventEmitter {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/StreamChannels.js#L120
     */
   def start(): StreamChannels = js.native
+  
   /**
     * Closes the opened stream with Twitter
     * @method stop
@@ -56,4 +61,3 @@ class StreamChannels_ protected () extends EventEmitter {
   def stop(): StreamChannels = js.native
   def stop(options: RemoveAllListeners): StreamChannels = js.native
 }
-

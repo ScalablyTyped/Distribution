@@ -5,7 +5,7 @@ import typings.plottable.svgDrawerMod.SVGDrawer
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "ProxyDrawer")
 @js.native
@@ -23,4 +23,3 @@ class ProxyDrawer protected ()
     _canvasDrawerFactory: js.Function1[/* ctx */ CanvasRenderingContext2D, CanvasDrawer]
   ) = this()
 }
-

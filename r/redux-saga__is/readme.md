@@ -12,7 +12,7 @@ Runtime type checking helpers
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 6 |
-| # downloads        | 8861832 |
+| # downloads        | 18938878 |
 | # stars            | 0 |
 
 ## Links

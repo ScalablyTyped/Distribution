@@ -52,12 +52,11 @@ import typings.semanticUiSidebar.semanticUiSidebarStrings.useLegacy
 import typings.semanticUiSidebar.semanticUiSidebarStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("sidebar")
-  var sidebar_Original: Sidebar = js.native
+  
   def sidebar(): JQuery = js.native
   def sidebar(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
   def sidebar(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
@@ -121,6 +120,8 @@ trait JQuery extends js.Object {
   def sidebar_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
   @JSName("sidebar")
   def sidebar_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  @JSName("sidebar")
+  var sidebar_Original: Sidebar = js.native
   @JSName("sidebar")
   def sidebar_RegExpSettings(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
   /**
@@ -194,4 +195,3 @@ trait JQuery extends js.Object {
   @JSName("sidebar")
   def sidebar_toggle(behavior: toggle): JQuery = js.native
 }
-

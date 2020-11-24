@@ -10,9 +10,9 @@ Displays a beginner-friendly message telling your user to upgrade their version 
 | ------------------ | :-------------: |
 | Full name          | please-upgrade-node |
 | Keywords           | node, engines, version, check, verify, upgrade |
-| # releases         | 5 |
-| # dependents       | 90 |
-| # downloads        | 75672663 |
+| # releases         | 2 |
+| # dependents       | 137 |
+| # downloads        | 153405538 |
 | # stars            | 0 |
 
 ## Links

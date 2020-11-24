@@ -2,7 +2,7 @@ package typings.resourceLoader.resourceLoaderMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Smaller version of the async library constructs.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("resource-loader", "async")
 @js.native
 object async extends js.Object {
+  
   /**
     * Iterates an array in series.
     *
@@ -33,6 +34,7 @@ object async extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     deferNext: Boolean
   ): Unit = js.native
+  
   /**
     * Async queue implementation,
     *
@@ -44,4 +46,3 @@ object async extends js.Object {
     */
   def queue(worker: js.Function1[/* repeated */ js.Any, _], concurrency: Double): js.Any = js.native
 }
-

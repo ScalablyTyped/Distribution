@@ -11,8 +11,8 @@ A small JavaScript library that decorates the WebSocket API to provide a WebSock
 | Full name          | reconnectingwebsocket |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 133758 |
+| # dependents       | 13 |
+| # downloads        | 109279 |
 | # stars            | 3 |
 
 ## Links

@@ -7,7 +7,7 @@ import typings.chromeApps.chromeAppsStrings.textPlain
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.clipboard
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.clipboard")
 @js.native
 object clipboard extends js.Object {
+  
   /**
     * **Dev channel only.**
     * Fired when clipboard data changes.
@@ -35,6 +36,7 @@ object clipboard extends js.Object {
     * clipboard data is available by calling document.execCommand('paste').
     */
   val onClipboardDataChanged: typings.chromeApps.chrome.events.Event[js.Function0[Unit]] = js.native
+  
   /**
     * **Dev channel only.**
     * Sets image data to clipboard
@@ -60,12 +62,13 @@ object clipboard extends js.Object {
     additionalItems: AdditionalItems,
     callback: js.Function0[Unit]
   ): Unit = js.native
+  
   /** @enum */
   @js.native
   object DataItemType extends js.Object {
+    
     var TEXT_HTML: textHtml = js.native
+    
     var TEXT_PLAIN: textPlain = js.native
   }
-  
 }
-

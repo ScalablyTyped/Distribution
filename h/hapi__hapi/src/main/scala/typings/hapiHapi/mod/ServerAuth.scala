@@ -4,10 +4,11 @@ import typings.hapiHapi.anon.Default
 import typings.hapiHapi.mod.Util.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerAuth extends js.Object {
+  
   /**
     * An object where each key is an authentication strategy name and the value is the exposed strategy API.
     * Available only when the authentication scheme exposes an API by returning an api key in the object
@@ -15,11 +16,7 @@ trait ServerAuth extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverauthapi)
     */
   var api: Dictionary[ServerAuthSchemeObjectApi] = js.native
-  /**
-    * Contains the default authentication configuration is a default strategy was set via
-    * [server.auth.default()](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.default()).
-    */
-  val settings: Default = js.native
+  
   /**
     * Sets a default strategy which is applied to every route where:
     * @param options - one of:
@@ -39,6 +36,7 @@ trait ServerAuth extends js.Object {
     */
   def default(options: String): Unit = js.native
   def default(options: ServerAuthConfig): Unit = js.native
+  
   /**
     * Registers an authentication scheme where:
     * @param name the scheme name.
@@ -49,6 +47,13 @@ trait ServerAuth extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverauthschemename-scheme)
     */
   def scheme(name: String, scheme: ServerAuthScheme): Unit = js.native
+  
+  /**
+    * Contains the default authentication configuration is a default strategy was set via
+    * [server.auth.default()](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.default()).
+    */
+  val settings: Default = js.native
+  
   /**
     * Registers an authentication strategy where:
     * @param name - the strategy name.
@@ -59,6 +64,7 @@ trait ServerAuth extends js.Object {
     */
   def strategy(name: String, scheme: String): Unit = js.native
   def strategy(name: String, scheme: String, options: js.Object): Unit = js.native
+  
   /**
     * Tests a request against an authentication strategy where:
     * @param strategy - the strategy name registered with server.auth.strategy().
@@ -70,6 +76,7 @@ trait ServerAuth extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverauthteststrategy-request)
     */
   def test(strategy: String, request: Request): js.Promise[AuthenticationData] = js.native
+  
   /**
     * Verify a request's authentication credentials against an authentication strategy.
     * Returns nothing if verification was successful, otherwise throws an error.
@@ -82,4 +89,3 @@ trait ServerAuth extends js.Object {
     */
   def verify(request: Request): js.Promise[Unit] = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Schedule
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CurrentView extends js.Object
-
 @JSGlobal("ej.Schedule.CurrentView")
 @js.native
 object CurrentView extends js.Object {
+  
   ///Sets currentView of the Scheduler as Agenda
   @js.native
   sealed trait Agenda extends CurrentView
@@ -33,6 +33,4 @@ object CurrentView extends js.Object {
   ///Sets currentView of the Scheduler as WorkWeek
   @js.native
   sealed trait Workweek extends CurrentView
-  
 }
-

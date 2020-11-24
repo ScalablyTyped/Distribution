@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "use-composed-ref" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "use-composed-ref" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,11 +2,12 @@ package typings.fridaGum.global.Java
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.array")
 @js.native
 object array extends js.Object {
+  
   /**
     * Creates a Java array with elements of the specified `type`, from a
     * JavaScript array `elements`. The resulting Java array behaves like
@@ -19,4 +20,3 @@ object array extends js.Object {
     */
   def apply(`type`: String, elements: js.Array[_]): js.Array[_] = js.native
 }
-

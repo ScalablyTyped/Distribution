@@ -2,22 +2,33 @@ package typings.instagramPrivateApi.mediaRepositoryCommentResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait MediaRepositoryCommentResponseComment extends js.Object {
-  var content_type: String
-  var created_at: Double
-  var created_at_utc: Double
-  var media_id: String
-  var pk: String
-  var share_enabled: Boolean
-  var status: String
-  var text: String
-  var `type`: Double
-  var user: MediaRepositoryCommentResponseUser
+  
+  var content_type: String = js.native
+  
+  var created_at: Double = js.native
+  
+  var created_at_utc: Double = js.native
+  
+  var media_id: String = js.native
+  
+  var pk: String = js.native
+  
+  var share_enabled: Boolean = js.native
+  
+  var status: String = js.native
+  
+  var text: String = js.native
+  
+  var `type`: Double = js.native
+  
+  var user: MediaRepositoryCommentResponseUser = js.native
 }
-
 object MediaRepositoryCommentResponseComment {
+  
   @scala.inline
   def apply(
     content_type: String,
@@ -35,5 +46,50 @@ object MediaRepositoryCommentResponseComment {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRepositoryCommentResponseComment]
   }
+  
+  @scala.inline
+  implicit class MediaRepositoryCommentResponseCommentOps[Self <: MediaRepositoryCommentResponseComment] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreated_at_utc(value: Double): Self = this.set("created_at_utc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShare_enabled(value: Boolean): Self = this.set("share_enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUser(value: MediaRepositoryCommentResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+  }
 }
-

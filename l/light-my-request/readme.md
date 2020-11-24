@@ -1,7 +1,7 @@
 
 # Scala.js typings for light-my-request
 
-Typings are for version 3.3.0
+Typings are for version 4.3.0
 
 ## Library description:
 Fake HTTP injection library
@@ -10,9 +10,9 @@ Fake HTTP injection library
 | ------------------ | :-------------: |
 | Full name          | light-my-request |
 | Keywords           | http, inject, fake, request, server |
-| # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 533605 |
+| # releases         | 19 |
+| # dependents       | 7 |
+| # downloads        | 4744416 |
 | # stars            | 1 |
 
 ## Links

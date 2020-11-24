@@ -4,12 +4,12 @@ import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StreamSocketInformation extends IStreamSocketInformation
-
 object StreamSocketInformation {
+  
   @scala.inline
   def apply(
     bandwidthStatistics: BandwidthStatistics,
@@ -27,4 +27,3 @@ object StreamSocketInformation {
     __obj.asInstanceOf[StreamSocketInformation]
   }
 }
-

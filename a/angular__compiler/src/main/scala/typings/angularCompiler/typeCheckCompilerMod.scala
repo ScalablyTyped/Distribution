@@ -11,16 +11,16 @@ import typings.angularCompiler.templateAstMod.TemplateAst
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/view_compiler/type_check_compiler", JSImport.Namespace)
 @js.native
 object typeCheckCompilerMod extends js.Object {
+  
   @js.native
   class TypeCheckCompiler protected () extends js.Object {
     def this(options: AotCompilerOptions, reflector: StaticReflector) = this()
-    var options: js.Any = js.native
-    var reflector: js.Any = js.native
+    
     /**
       * Important notes:
       * - This must not produce new `import` statements, but only refer to types outside
@@ -37,7 +37,9 @@ object typeCheckCompilerMod extends js.Object {
       externalReferenceVars: Map[StaticSymbol, String],
       ctx: OutputContext
     ): js.Array[Statement] = js.native
+    
+    var options: js.Any = js.native
+    
+    var reflector: js.Any = js.native
   }
-  
 }
-

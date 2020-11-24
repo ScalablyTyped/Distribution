@@ -8,16 +8,20 @@ import typings.amapJsApiRiding.AMap.Riding.SearchResultExt
 import typings.amapJsApiRiding.AMap.Riding.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Riding_ extends EventEmitter {
+  
   /**
     * 清除搜索的结果
     */
   def clear(): Unit = js.native
+  
   def close(): Unit = js.native
+  
   def open(): Unit = js.native
+  
   /**
     * 根据起点和终点坐标，实现骑行路径规划
     * @param origin 起点坐标
@@ -40,7 +44,7 @@ trait Riding_ extends EventEmitter {
     point: js.Array[SearchPoint],
     callback: js.Function2[/* status */ SearchStatus, /* result */ SearchResultExt | String, Unit]
   ): Unit = js.native
+  
   // internal
   def setPolicy(policy: RidingPolicy): Unit = js.native
 }
-

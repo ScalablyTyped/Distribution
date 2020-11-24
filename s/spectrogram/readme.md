@@ -12,7 +12,7 @@ Audio spectrogram in canvas.
 | Keywords           | audio, spectrogram, canvas |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 1189 |
+| # downloads        | 1071 |
 | # stars            | 2 |
 
 ## Links

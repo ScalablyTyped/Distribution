@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Members")
 @js.native
 class ResourceMembers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.members.delete
     * @desc Remove membership.
@@ -38,6 +40,7 @@ class ResourceMembers protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceMembersDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMembersDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.members.get
     * @desc Retrieve Group Member
@@ -67,6 +70,7 @@ class ResourceMembers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMember]
   ): Unit = js.native
+  
   /**
     * directory.members.hasMember
     * @desc Checks whether the given user is a member of the group. Membership
@@ -97,6 +101,7 @@ class ResourceMembers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMembersHasMember]
   ): Unit = js.native
+  
   /**
     * directory.members.insert
     * @desc Add user to the specified group.
@@ -126,6 +131,7 @@ class ResourceMembers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMember]
   ): Unit = js.native
+  
   /**
     * directory.members.list
     * @desc Retrieve all members in a group (paginated)
@@ -158,6 +164,7 @@ class ResourceMembers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMembers]
   ): Unit = js.native
+  
   /**
     * directory.members.patch
     * @desc Update membership of a user in the specified group. This method
@@ -189,6 +196,7 @@ class ResourceMembers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMember]
   ): Unit = js.native
+  
   /**
     * directory.members.update
     * @desc Update membership of a user in the specified group.
@@ -220,4 +228,3 @@ class ResourceMembers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMember]
   ): Unit = js.native
 }
-

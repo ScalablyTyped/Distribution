@@ -10,20 +10,27 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.error_
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FirestoreStatics extends js.Object {
+  
   var Blob: TypeofBlob = js.native
+  
   var FieldPath: TypeofFieldPath = js.native
+  
   var FieldValue: TypeofFieldValue = js.native
+  
   var GeoPoint: Instantiable2[
     /* latitude */ Double, 
     /* longitude */ Double, 
     typings.reactNativeFirebase.mod.RNFirebase.firestore.GeoPoint
   ] = js.native
+  
   var Timestamp: TypeofTimestamp = js.native
+  
   def enableLogging(enabled: Boolean): Unit = js.native
+  
   @JSName("setLogLevel")
   def setLogLevel_debug(logLevel: debug): Unit = js.native
   @JSName("setLogLevel")
@@ -31,4 +38,3 @@ trait FirestoreStatics extends js.Object {
   @JSName("setLogLevel")
   def setLogLevel_silent(logLevel: silent): Unit = js.native
 }
-

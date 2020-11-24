@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.dropdownMod.DropdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "ButtonDropdown")
+@JSImport("reactstrap/lib", "ButtonDropdown")
 @js.native
-class ButtonDropdown[T] ()
+class ButtonDropdown ()
   extends Component[DropdownProps, js.Object, js.Any]
-

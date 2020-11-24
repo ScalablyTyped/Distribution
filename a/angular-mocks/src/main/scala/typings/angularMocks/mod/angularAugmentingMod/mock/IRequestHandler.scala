@@ -3,17 +3,19 @@ package typings.angularMocks.mod.angularAugmentingMod.mock
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object returned by the the mocked HttpBackendService expect/when methods */
 @js.native
 trait IRequestHandler extends js.Object {
+  
   /**
     * Any request matching a backend definition or expectation with passThrough handler will be
     * passed through to the real backend (an XHR request will be made to the server.)
     * Available when ngMockE2E is loaded
     */
   def passThrough(): IRequestHandler = js.native
+  
   /**
     * Controls the response for a matched request using the HTTP status code 200 and supplied static data to construct the response.
     * Returns the RequestHandler object for possible overrides.
@@ -72,4 +74,3 @@ trait IRequestHandler extends js.Object {
   def respond(status: Double, data: js.Object, headers: IHttpHeaders): IRequestHandler = js.native
   def respond(status: Double, data: js.Object, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
 }
-

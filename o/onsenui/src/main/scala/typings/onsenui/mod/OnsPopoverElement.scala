@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @modifier android Display an Android style popover
@@ -11,18 +11,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OnsPopoverElement extends HTMLElement {
+  
   /**
     * @description A boolean value that specifies whether the popover is cancelable or not. When the popover is cancelable it can be closed by tapping the background or by pressing the back button on Android devices.
     */
   var cancelable: Boolean = js.native
-  /**
-    * @description Retrieve the back- button handler.
-    */
-  var onDeviceBackButton: js.Any = js.native
-  /**
-    * @description Whether the dialog is visible or not.
-    */
-  var visible: Boolean = js.native
+  
   /**
     * @param {Object} [options] Parameter object
     * @param {String} [options.animation] Animation name. Available animations are "fade" and "none"
@@ -31,6 +25,12 @@ trait OnsPopoverElement extends HTMLElement {
     */
   def hide(): js.Promise[HTMLElement] = js.native
   def hide(options: PopoverOptions): js.Promise[HTMLElement] = js.native
+  
+  /**
+    * @description Retrieve the back- button handler.
+    */
+  var onDeviceBackButton: js.Any = js.native
+  
   /**
     * @param {String|Event|HTMLElement} target Target element. Can be either a CSS selector, an event object or a DOM element
     * @param {Object} [options] Parameter object
@@ -40,5 +40,9 @@ trait OnsPopoverElement extends HTMLElement {
     */
   def show(target: js.Any): js.Promise[HTMLElement] = js.native
   def show(target: js.Any, options: PopoverOptions): js.Promise[HTMLElement] = js.native
+  
+  /**
+    * @description Whether the dialog is visible or not.
+    */
+  var visible: Boolean = js.native
 }
-

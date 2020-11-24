@@ -3,7 +3,7 @@ package typings.jsrsasign.mod.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNameParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GeneralName ASN.1 structure class
@@ -52,4 +52,3 @@ class GeneralName ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralName {
   def this(params: GeneralNameParam) = this()
 }
-

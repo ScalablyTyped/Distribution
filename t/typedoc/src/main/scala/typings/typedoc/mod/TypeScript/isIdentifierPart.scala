@@ -2,11 +2,12 @@ package typings.typedoc.mod.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.isIdentifierPart")
 @js.native
 object isIdentifierPart extends js.Object {
+  
   def apply(ch: Double): Boolean = js.native
   def apply(
     ch: Double,
@@ -20,4 +21,3 @@ object isIdentifierPart extends js.Object {
     identifierVariant: typings.typescript.mod.LanguageVariant
   ): Boolean = js.native
 }
-

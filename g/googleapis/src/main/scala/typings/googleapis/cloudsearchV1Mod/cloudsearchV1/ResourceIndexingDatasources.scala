@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Indexing$Datasources")
 @js.native
 class ResourceIndexingDatasources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var items: ResourceIndexingDatasourcesItems = js.native
+  
   /**
     * cloudsearch.indexing.datasources.deleteSchema
     * @desc Deletes the schema of a data source.
@@ -46,6 +47,7 @@ class ResourceIndexingDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.getSchema
     * @desc Gets the schema of a data source.
@@ -75,6 +77,9 @@ class ResourceIndexingDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSchema]
   ): Unit = js.native
+  
+  var items: ResourceIndexingDatasourcesItems = js.native
+  
   /**
     * cloudsearch.indexing.datasources.updateSchema
     * @desc Updates the schema of a data source.
@@ -108,4 +113,3 @@ class ResourceIndexingDatasources protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

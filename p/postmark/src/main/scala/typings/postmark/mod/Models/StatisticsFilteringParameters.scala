@@ -2,7 +2,7 @@ package typings.postmark.mod.Models
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.StatisticsFilteringParameters")
 @js.native
@@ -16,4 +16,3 @@ class StatisticsFilteringParameters ()
   def this(tag: String, fromDate: js.UndefOr[scala.Nothing], toDate: String) = this()
   def this(tag: String, fromDate: String, toDate: String) = this()
 }
-

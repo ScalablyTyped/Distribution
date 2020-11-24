@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.jqueryColorpicker.JQueryColorpickerStatic.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
@@ -23,4 +23,3 @@ trait Instantiable
       /* a */ Double, 
       Color
     ]
-

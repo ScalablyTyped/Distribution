@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.BackgroundColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Renderer draws the scene and all its content onto a WebGL enabled canvas.
@@ -23,11 +23,11 @@ class Renderer ()
   extends typings.pixiJs.PIXI.Renderer {
   def this(options: BackgroundColor) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Renderer")
 @js.native
 object Renderer extends js.Object {
+  
   /**
     * Adds a plugin to the renderer.
     *
@@ -37,4 +37,3 @@ object Renderer extends js.Object {
     */
   def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }
-

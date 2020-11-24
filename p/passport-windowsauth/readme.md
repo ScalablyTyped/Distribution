@@ -10,9 +10,9 @@ Passport strategy for Windows Integrated Authentication (NTLM)
 | ------------------ | :-------------: |
 | Full name          | passport-windowsauth |
 | Keywords           | passport, windows, auth, ntlm |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 21681 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 17258 |
 | # stars            | 9 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubereporting/v1", "youtubereporting_v1.Resource$Jobs$Reports")
 @js.native
 class ResourceJobsReports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtubereporting.jobs.reports.get
     * @desc Gets the metadata of a specific report.
@@ -43,6 +45,7 @@ class ResourceJobsReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
+  
   /**
     * youtubereporting.jobs.reports.list
     * @desc Lists reports created by a specific job. Returns NOT_FOUND if the
@@ -79,4 +82,3 @@ class ResourceJobsReports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListReportsResponse]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreNovttMod.default
 import typings.videoJs.mod.videojs.TrackButtonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "TextTrackButton")
 @js.native
@@ -21,4 +21,3 @@ class TextTrackButtonCls protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
 }
-

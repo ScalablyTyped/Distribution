@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.registry.XRegistryKey
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * handles activation (loading) of a UNO component.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XImplementationLoader extends XInterface {
+  
   /**
     * activates a concrete implementation within a component.
     * @param implementationName The name of the implementation, which shall be instantiated. The method {@link XImplementationLoader.writeRegistryInfo()} writ
@@ -27,6 +28,7 @@ trait XImplementationLoader extends XInterface {
     locationUrl: String,
     xKey: XRegistryKey
   ): XInterface = js.native
+  
   /**
     * writes a list of all implementations hosted by this component into a registry key.
     *
@@ -38,8 +40,8 @@ trait XImplementationLoader extends XInterface {
     */
   def writeRegistryInfo(xKey: XRegistryKey, implementationLoaderUrl: String, locationUrl: String): Boolean = js.native
 }
-
 object XImplementationLoader {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -51,22 +53,26 @@ object XImplementationLoader {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activate = js.Any.fromFunction4(activate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), writeRegistryInfo = js.Any.fromFunction3(writeRegistryInfo))
     __obj.asInstanceOf[XImplementationLoader]
   }
+  
   @scala.inline
   implicit class XImplementationLoaderOps[Self <: XImplementationLoader] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActivate(value: (String, String, String, XRegistryKey) => XInterface): Self = this.set("activate", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setWriteRegistryInfo(value: (XRegistryKey, String, String) => Boolean): Self = this.set("writeRegistryInfo", js.Any.fromFunction3(value))
   }
-  
 }
-

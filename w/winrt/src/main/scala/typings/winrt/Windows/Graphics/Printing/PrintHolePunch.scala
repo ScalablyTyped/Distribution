@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintHolePunch extends js.Object
-
 @JSGlobal("Windows.Graphics.Printing.PrintHolePunch")
 @js.native
 object PrintHolePunch extends js.Object {
+  
   @js.native
   sealed trait bottomEdge extends PrintHolePunch
   
@@ -33,6 +33,4 @@ object PrintHolePunch extends js.Object {
   
   @js.native
   sealed trait topEdge extends PrintHolePunch
-  
 }
-

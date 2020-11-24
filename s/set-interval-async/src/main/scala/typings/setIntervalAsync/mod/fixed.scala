@@ -2,11 +2,12 @@ package typings.setIntervalAsync.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("set-interval-async", "fixed")
 @js.native
 object fixed extends js.Object {
+  
   /**
     * Executes the given handler at fixed intervals, while preventing
     * multiple concurrent executions. The handler will never be executed
@@ -20,4 +21,3 @@ object fixed extends js.Object {
     */
   def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, _], interval: Double, args: js.Any*): SetIntervalAsyncTimer = js.native
 }
-

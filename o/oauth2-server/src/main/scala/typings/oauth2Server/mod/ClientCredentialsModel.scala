@@ -2,12 +2,20 @@ package typings.oauth2Server.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientCredentialsModel
   extends BaseModel
      with RequestAuthenticationModel {
+  
+  /**
+    * Invoked to retrieve the user associated with the specified client.
+    *
+    */
+  def getUserFromClient(client: Client): js.Promise[User | Falsey] = js.native
+  def getUserFromClient(client: Client, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
+  
   /**
     * Invoked to check if the requested scope is valid for a particular client/user combination.
     *
@@ -21,11 +29,4 @@ trait ClientCredentialsModel
       js.Promise[String | js.Array[String] | Falsey]
     ]
   ] = js.native
-  /**
-    * Invoked to retrieve the user associated with the specified client.
-    *
-    */
-  def getUserFromClient(client: Client): js.Promise[User | Falsey] = js.native
-  def getUserFromClient(client: Client, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
 }
-

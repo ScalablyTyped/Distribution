@@ -7,10 +7,11 @@ import typings.stripejs.stripejsStrings.source
 import typings.stripejs.stripejsStrings.token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StripePaymentRequest extends js.Object {
+  
   /**
     * Whether or not a payment can be made
     * NOTE: When no API is available it resolves with `null`
@@ -18,6 +19,7 @@ trait StripePaymentRequest extends js.Object {
     * @see https://stripe.com/docs/stripe-js/reference#payment-request-can-make-payment
     */
   def canMakePayment(): js.Promise[CanMakePaymentResult | Null] = js.native
+  
   /**
     * Register your event listener
     * @see https://stripe.com/docs/stripe-js/reference#payment-request-on
@@ -32,6 +34,7 @@ trait StripePaymentRequest extends js.Object {
   def on_source(event: source, handler: js.Function1[/* event */ StripePaymentResponse, Unit]): Unit = js.native
   @JSName("on")
   def on_token(event: token, handler: js.Function1[/* event */ StripePaymentResponse, Unit]): Unit = js.native
+  
   /**
     * Shows the browser’s payment UI
     * NOTE: When using the paymentRequestButton Element, this is called for you under the hood
@@ -40,6 +43,7 @@ trait StripePaymentRequest extends js.Object {
     * @see https://stripe.com/docs/stripe-js/reference#payment-request-show
     */
   def show(): Unit = js.native
+  
   /**
     * Updates the payment information
     * NOTE: can only be called when the browser payment UI is not showing
@@ -50,4 +54,3 @@ trait StripePaymentRequest extends js.Object {
     */
   def update(options: UpdateOptions): Unit = js.native
 }
-

@@ -10,8 +10,8 @@ Fast, caching, dynamic inline SVG DOM injection library
 | Full name          | svg-injector |
 | Keywords           | SVG, Scalable Vector Graphics, SVG injector, images, img, html, DOM |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 535700 |
+| # dependents       | 9 |
+| # downloads        | 522754 |
 | # stars            | 3 |
 
 ## Links

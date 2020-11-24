@@ -11,8 +11,8 @@ This script gives you the zone info key representing your device's time zone set
 | Full name          | jstimezonedetect |
 | Keywords           | time, timezone, tz, date |
 | # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 2264353 |
+| # dependents       | 60 |
+| # downloads        | 4902569 |
 | # stars            | 7 |
 
 ## Links

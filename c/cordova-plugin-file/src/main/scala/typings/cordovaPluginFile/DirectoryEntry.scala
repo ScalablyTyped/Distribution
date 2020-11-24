@@ -2,15 +2,17 @@ package typings.cordovaPluginFile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents a directory on a file system. */
 @js.native
 trait DirectoryEntry extends Entry {
+  
   /**
     * Creates a new DirectoryReader to read Entries from this Directory.
     */
   def createReader(): DirectoryReader = js.native
+  
   /**
     * Creates or looks up a directory.
     * @param path    Either an absolute path or a relative path from this DirectoryEntry
@@ -56,6 +58,7 @@ trait DirectoryEntry extends Entry {
     successCallback: js.Function1[/* entry */ this.type, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
   /**
     * Creates or looks up a file.
     * @param path    Either an absolute path or a relative path from this DirectoryEntry
@@ -101,6 +104,7 @@ trait DirectoryEntry extends Entry {
     successCallback: js.Function1[/* entry */ FileEntry, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
   /**
     * Deletes a directory and all of its contents, if any. In the event of an error (e.g. trying
     * to delete a directory that contains a file that cannot be removed), some of the contents
@@ -111,4 +115,3 @@ trait DirectoryEntry extends Entry {
   def removeRecursively(successCallback: js.Function0[Unit]): Unit = js.native
   def removeRecursively(successCallback: js.Function0[Unit], errorCallback: js.Function1[/* error */ FileError, Unit]): Unit = js.native
 }
-

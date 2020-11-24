@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Credentials.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UserConsentVerificationResult extends js.Object
-
 /** Describes the result of a biometric (fingerprint) verification operation. */
 @JSGlobal("Windows.Security.Credentials.UI.UserConsentVerificationResult")
 @js.native
 object UserConsentVerificationResult extends js.Object {
+  
   /** The verification operation was canceled. */
   @js.native
   sealed trait canceled extends UserConsentVerificationResult
@@ -38,6 +38,4 @@ object UserConsentVerificationResult extends js.Object {
   /** The fingerprint was verified. */
   @js.native
   sealed trait verified extends UserConsentVerificationResult
-  
 }
-

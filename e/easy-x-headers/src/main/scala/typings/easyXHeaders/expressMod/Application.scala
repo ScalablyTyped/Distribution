@@ -4,28 +4,16 @@ import typings.easyXHeaders.httpMod.Server
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Application
   extends IRouter[Application]
      with typings.easyXHeaders.Express.Application {
-  var locals: js.Any = js.native
-  var map: js.Any = js.native
-  var resource: js.Any = js.native
-  var router: String = js.native
-  /**
-    * The app.routes object houses all of the routes defined mapped by the
-    * associated HTTP verb. This object may be used for introspection
-    * capabilities, for example Express uses this internally not only for
-    * routing but to provide default OPTIONS behaviour unless app.options()
-    * is used. Your application or framework may also remove routes by
-    * simply by removing them from this object.
-    */
-  var routes: js.Any = js.native
-  var settings: js.Any = js.native
+  
   /* InferMemberOverrides */
   override def apply(T0: /* req */ Request, T1: /* res */ Response, T2: /* next */ js.Function): js.Any = js.native
+  
   def configure(env0: String, env1: String, env2: String, env3: String, env4: String, fn: js.Function): Application = js.native
   def configure(env0: String, env1: String, env2: String, env3: String, fn: js.Function): Application = js.native
   def configure(env0: String, env1: String, env2: String, fn: js.Function): Application = js.native
@@ -74,16 +62,19 @@ trait Application
     * @param fn
     */
   def configure(fn: js.Function): Application = js.native
+  
   /**
     * Initialize application configuration.
     */
   def defaultConfiguration(): Unit = js.native
+  
   /**
     * Disable `setting`.
     *
     * @param setting
     */
   def disable(setting: String): Application = js.native
+  
   /**
     * Check if `setting` is disabled.
     *
@@ -97,12 +88,14 @@ trait Application
     * @param setting
     */
   def disabled(setting: String): Boolean = js.native
+  
   /**
     * Enable `setting`.
     *
     * @param setting
     */
   def enable(setting: String): Application = js.native
+  
   /**
     * Check if `setting` is enabled (truthy).
     *
@@ -114,6 +107,7 @@ trait Application
     *    // => true
     */
   def enabled(setting: String): Boolean = js.native
+  
   /**
     * Register the given template engine callback `fn`
     * as `ext`.
@@ -143,7 +137,9 @@ trait Application
     * work seamlessly within Express.
     */
   def engine(ext: String, fn: js.Function): Application = js.native
+  
   def get(name: String): js.Any = js.native
+  
   /**
     * Initialize the server.
     *
@@ -152,6 +148,7 @@ trait Application
     *   - setup route reflection methods
     */
   def init(): Unit = js.native
+  
   def listen(handle: js.Any): Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function): Server = js.native
   def listen(path: String): Server = js.native
@@ -179,6 +176,11 @@ trait Application
   def listen(port: Double, hostname: String, backlog: Double): Server = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): Server = js.native
   def listen(port: Double, hostname: String, callback: js.Function): Server = js.native
+  
+  var locals: js.Any = js.native
+  
+  var map: js.Any = js.native
+  
   /**
     * Return the app's absolute pathname
     * based on the parent(s) that have
@@ -190,6 +192,7 @@ trait Application
     * return value would be "/blog/admin".
     */
   def path(): String = js.native
+  
   /**
     * Render the given view `name` name with `options`
     * and a callback accepting an error and the
@@ -214,6 +217,21 @@ trait Application
   ): Unit = js.native
   def render(name: String, options: js.Object): Unit = js.native
   def render(name: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+  
+  var resource: js.Any = js.native
+  
+  var router: String = js.native
+  
+  /**
+    * The app.routes object houses all of the routes defined mapped by the
+    * associated HTTP verb. This object may be used for introspection
+    * capabilities, for example Express uses this internally not only for
+    * routing but to provide default OPTIONS behaviour unless app.options()
+    * is used. Your application or framework may also remove routes by
+    * simply by removing them from this object.
+    */
+  var routes: js.Any = js.native
+  
   /**
     * Assign `setting` to `val`, or return `setting`'s value.
     *
@@ -230,5 +248,6 @@ trait Application
     * @param val
     */
   def set(setting: String, `val`: js.Any): Application = js.native
+  
+  var settings: js.Any = js.native
 }
-

@@ -1,21 +1,26 @@
 package typings.ol.selectMod
 
+import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/interaction/Select", "SelectEvent")
 @js.native
-class SelectEvent protected ()
+trait SelectEvent
   extends typings.ol.eventMod.default {
-  def this(
-    `type`: SelectEventType,
-    selected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]],
-    deselected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]],
-    mapBrowserEvent: typings.ol.mapBrowserEventMod.default
-  ) = this()
+  
+  /**
+    * Deselected features array.
+    */
   var deselected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
-  var mapBrowserEvent: typings.ol.mapBrowserEventMod.default = js.native
+  
+  /**
+    * Associated {@link module:ol/MapBrowserEvent}.
+    */
+  var mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent] = js.native
+  
+  /**
+    * Selected features array.
+    */
   var selected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
 }
-

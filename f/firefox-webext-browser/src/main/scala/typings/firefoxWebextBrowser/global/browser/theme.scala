@@ -5,7 +5,7 @@ import typings.firefoxWebextBrowser.browser.manifest.ThemeType
 import typings.firefoxWebextBrowser.browser.theme.ThemeUpdateInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The theme API allows customizing of visual elements of the browser.
@@ -15,12 +15,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.theme")
 @js.native
 object theme extends js.Object {
-  /* theme events */
-  /**
-    * Fired when a new theme has been applied
-    * @param updateInfo Details of the theme update
-    */
-  val onUpdated: WebExtEvent[js.Function1[/* updateInfo */ ThemeUpdateInfo, Unit]] = js.native
+  
   /* theme functions */
   /**
     * Returns the current theme for the specified window or the last focused window.
@@ -28,12 +23,21 @@ object theme extends js.Object {
     */
   def getCurrent(): js.Promise[ThemeType] = js.native
   def getCurrent(windowId: Double): js.Promise[ThemeType] = js.native
+  
+  /* theme events */
+  /**
+    * Fired when a new theme has been applied
+    * @param updateInfo Details of the theme update
+    */
+  val onUpdated: WebExtEvent[js.Function1[/* updateInfo */ ThemeUpdateInfo, Unit]] = js.native
+  
   /**
     * Removes the updates made to the theme.
     * @param [windowId] The id of the window to reset. No id resets all windows.
     */
   def reset(): Unit = js.native
   def reset(windowId: Double): Unit = js.native
+  
   /**
     * Make complete updates to the theme. Resolves when the update has completed.
     * @param details The properties of the theme to update.
@@ -46,4 +50,3 @@ object theme extends js.Object {
     */
   def update(windowId: Double, details: ThemeType): Unit = js.native
 }
-

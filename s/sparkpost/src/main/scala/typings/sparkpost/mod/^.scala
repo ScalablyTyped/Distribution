@@ -2,7 +2,7 @@ package typings.sparkpost.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sparkpost", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ class ^ () extends SparkPost {
   def this(apiKey: js.UndefOr[scala.Nothing], options: ConstructorOptions) = this()
   def this(apiKey: String, options: ConstructorOptions) = this()
 }
-

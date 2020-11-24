@@ -2,11 +2,12 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playcanvas", "calculateNormals")
 @js.native
 object calculateNormals extends js.Object {
+  
   /**
     * Generates normal information from the specified positions and
     * triangle indices. See {@link pc.createMesh}.
@@ -20,4 +21,3 @@ object calculateNormals extends js.Object {
     */
   def apply(positions: js.Array[Double], indices: js.Array[Double]): js.Array[Double] = js.native
 }
-

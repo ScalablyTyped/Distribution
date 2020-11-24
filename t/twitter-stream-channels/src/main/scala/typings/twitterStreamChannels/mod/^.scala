@@ -2,7 +2,7 @@ package typings.twitterStreamChannels.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class TwitterStreamChannels
@@ -21,4 +21,3 @@ class ^ protected () extends TwitterStreamChannels {
     */
   def this(config: js.Object) = this()
 }
-

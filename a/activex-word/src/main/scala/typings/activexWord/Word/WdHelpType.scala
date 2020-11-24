@@ -16,7 +16,7 @@ import typings.activexWord.activexWordNumbers.`8`
 import typings.activexWord.activexWordNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`0`
@@ -35,35 +35,47 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`10`
 */
 trait WdHelpType extends js.Object
-
 object WdHelpType {
+  
   @scala.inline
   def wdHelp: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def wdHelpAbout: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def wdHelpActiveWindow: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def wdHelpContents: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def wdHelpExamplesAndDemos: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def wdHelpHWP: `13` = 13.asInstanceOf[`13`]
+  
   @scala.inline
   def wdHelpIchitaro: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def wdHelpIndex: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def wdHelpKeyboard: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def wdHelpPE2: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def wdHelpPSSHelp: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def wdHelpQuickPreview: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def wdHelpSearch: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def wdHelpUsingHelp: `10` = 10.asInstanceOf[`10`]
 }
-

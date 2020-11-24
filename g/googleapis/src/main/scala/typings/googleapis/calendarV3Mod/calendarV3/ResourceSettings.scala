@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Settings")
 @js.native
 class ResourceSettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * calendar.settings.get
     * @desc Returns a single user setting.
@@ -41,6 +43,7 @@ class ResourceSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSetting]
   ): Unit = js.native
+  
   /**
     * calendar.settings.list
     * @desc Returns all user settings for the authenticated user.
@@ -71,6 +74,7 @@ class ResourceSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSettings]
   ): Unit = js.native
+  
   /**
     * calendar.settings.watch
     * @desc Watch for changes to Settings resources.
@@ -103,4 +107,3 @@ class ResourceSettings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

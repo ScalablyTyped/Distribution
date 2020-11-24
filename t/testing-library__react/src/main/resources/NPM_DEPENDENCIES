@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@testing-library/react" : "10.4.7"
+      "@testing-library/react" : "11.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@testing-library/react" : "10.4.7"
+      "@testing-library/react" : "11.2.2"
     }
   ],
   "compile-devDependencies" : [

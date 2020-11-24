@@ -333,187 +333,89 @@ import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Element & {  __events :{[key: string] : (e : std.Event): any | undefined} | undefined} */
 @js.native
 trait ElementeventskeystringeEv extends js.Object {
+  
   val ATTRIBUTE_NODE: Double = js.native
+  
   /**
     * node is a CDATASection node.
     */
   val CDATA_SECTION_NODE: Double = js.native
+  
   /**
     * node is a Comment node.
     */
   val COMMENT_NODE: Double = js.native
+  
   /**
     * node is a DocumentFragment node.
     */
   val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  
   /**
     * node is a document.
     */
   val DOCUMENT_NODE: Double = js.native
+  
   /**
     * Set when other is a descendant of node.
     */
   val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  
   /**
     * Set when other is an ancestor of node.
     */
   val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  
   /**
     * Set when node and other are not in the same tree.
     */
   val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  
   /**
     * Set when other is following node.
     */
   val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  
   val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  
   /**
     * Set when other is preceding node.
     */
   val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  
   /**
     * node is a doctype.
     */
   val DOCUMENT_TYPE_NODE: Double = js.native
+  
   /**
     * node is an element.
     */
   val ELEMENT_NODE: Double = js.native
+  
   val ENTITY_NODE: Double = js.native
+  
   val ENTITY_REFERENCE_NODE: Double = js.native
+  
   val NOTATION_NODE: Double = js.native
+  
   /**
     * node is a ProcessingInstruction node.
     */
   val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  
   /**
     * node is a Text node.
     */
   val TEXT_NODE: Double = js.native
+  
   var __events: js.UndefOr[StringDictionary[js.UndefOr[js.Function1[/* e */ Event, _]]]] = js.native
-  val assignedSlot: HTMLSlotElement | Null = js.native
-  val attributes: NamedNodeMap = js.native
-  /**
-    * Returns node's node document's document base URL.
-    */
-  val baseURI: String = js.native
-  val childElementCount: Double = js.native
-  /**
-    * Returns the children.
-    */
-  val childNodes: NodeListOf[ChildNode] = js.native
-  /**
-    * Returns the child elements.
-    */
-  val children: HTMLCollection = js.native
-  /**
-    * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
-    */
-  val classList: DOMTokenList = js.native
-  /**
-    * Returns the value of element's class content attribute. Can be set to change it.
-    */
-  var className: String = js.native
-  val clientHeight: Double = js.native
-  val clientLeft: Double = js.native
-  val clientTop: Double = js.native
-  val clientWidth: Double = js.native
-  /**
-    * Returns the first child.
-    */
-  val firstChild: ChildNode | Null = js.native
-  /**
-    * Returns the first child that is an element, and null otherwise.
-    */
-  val firstElementChild: Element | Null = js.native
-  /**
-    * Returns the value of element's id content attribute. Can be set to change it.
-    */
-  var id: String = js.native
-  var innerHTML: String = js.native
-  /**
-    * Returns true if node is connected and false otherwise.
-    */
-  val isConnected: Boolean = js.native
-  /**
-    * Returns the last child.
-    */
-  val lastChild: ChildNode | Null = js.native
-  /**
-    * Returns the last child that is an element, and null otherwise.
-    */
-  val lastElementChild: Element | Null = js.native
-  /**
-    * Returns the local name.
-    */
-  val localName: String = js.native
-  /**
-    * Returns the namespace.
-    */
-  val namespaceURI: String | Null = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the next sibling.
-    */
-  val nextSibling: ChildNode | Null = js.native
-  /**
-    * Returns a string appropriate for the type of node.
-    */
-  val nodeName: String = js.native
-  /**
-    * Returns the type of node.
-    */
-  val nodeType: Double = js.native
-  var nodeValue: String | Null = js.native
-  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var outerHTML: String = js.native
-  val ownerDocument: Document = js.native
-  /**
-    * Returns the parent element.
-    */
-  val parentElement: HTMLElement | Null = js.native
-  /**
-    * Returns the parent.
-    */
-  val parentNode: (Node with ParentNode) | Null = js.native
-  /**
-    * Returns the namespace prefix.
-    */
-  val prefix: String | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  val previousElementSibling: Element | Null = js.native
-  /**
-    * Returns the previous sibling.
-    */
-  val previousSibling: ChildNode | Null = js.native
-  val scrollHeight: Double = js.native
-  var scrollLeft: Double = js.native
-  var scrollTop: Double = js.native
-  val scrollWidth: Double = js.native
-  /**
-    * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
-    */
-  val shadowRoot: ShadowRoot | Null = js.native
-  /**
-    * Returns the value of element's slot content attribute. Can be set to change it.
-    */
-  var slot: String = js.native
-  /**
-    * Returns the HTML-uppercased qualified name.
-    */
-  val tagName: String = js.native
-  var textContent: String | Null = js.native
+  
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
     * 
@@ -561,12 +463,14 @@ trait ElementeventskeystringeEv extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   /**
     * Inserts nodes just after node, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def after(nodes: (Node | String)*): Unit = js.native
+  
   def animate(): Animation = js.native
   def animate(keyframes: js.Array[Keyframe]): Animation = js.native
   def animate(keyframes: js.Array[Keyframe], options: Double): Animation = js.native
@@ -576,28 +480,73 @@ trait ElementeventskeystringeEv extends js.Object {
   def animate(keyframes: PropertyIndexedKeyframes): Animation = js.native
   def animate(keyframes: PropertyIndexedKeyframes, options: Double): Animation = js.native
   def animate(keyframes: PropertyIndexedKeyframes, options: KeyframeAnimationOptions): Animation = js.native
+  
   /**
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def append(nodes: (Node | String)*): Unit = js.native
+  
   def appendChild[T /* <: Node */](newChild: T): T = js.native
+  
+  val assignedSlot: HTMLSlotElement | Null = js.native
+  
   /**
     * Creates a shadow root for element and returns it.
     */
   def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
+  
+  val attributes: NamedNodeMap = js.native
+  
+  /**
+    * Returns node's node document's document base URL.
+    */
+  val baseURI: String = js.native
+  
   /**
     * Inserts nodes just before node, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def before(nodes: (Node | String)*): Unit = js.native
+  
+  val childElementCount: Double = js.native
+  
+  /**
+    * Returns the children.
+    */
+  val childNodes: NodeListOf[ChildNode] = js.native
+  
+  /**
+    * Returns the child elements.
+    */
+  val children: HTMLCollection = js.native
+  
+  /**
+    * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
+    */
+  val classList: DOMTokenList = js.native
+  
+  /**
+    * Returns the value of element's class content attribute. Can be set to change it.
+    */
+  var className: String = js.native
+  
+  val clientHeight: Double = js.native
+  
+  val clientLeft: Double = js.native
+  
+  val clientTop: Double = js.native
+  
+  val clientWidth: Double = js.native
+  
   /**
     * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
     */
   def cloneNode(): Node = js.native
   def cloneNode(deep: Boolean): Node = js.native
+  
   def closest[E /* <: Element */](selector: String): E | Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
@@ -946,47 +895,73 @@ trait ElementeventskeystringeEv extends js.Object {
   def closest_view(selector: view): SVGViewElement | Null = js.native
   @JSName("closest")
   def closest_wbr(selector: wbr): HTMLElement | Null = js.native
+  
   /**
     * Returns a bitmask indicating the position of other relative to node.
     */
   def compareDocumentPosition(other: Node): Double = js.native
+  
   /**
     * Returns true if other is an inclusive descendant of node, and false otherwise.
     */
   def contains(): Boolean = js.native
   def contains(other: Node): Boolean = js.native
+  
   /**
     * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
     */
   def dispatchEvent(event: Event): Boolean = js.native
+  
+  /**
+    * Returns the first child.
+    */
+  val firstChild: ChildNode | Null = js.native
+  
+  /**
+    * Returns the first child that is an element, and null otherwise.
+    */
+  val firstElementChild: Element | Null = js.native
+  
   def getAnimations(): js.Array[Animation] = js.native
+  
   /**
     * Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
     */
   def getAttribute(qualifiedName: String): String | Null = js.native
+  
   /**
     * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
     */
   def getAttributeNS(namespace: String, localName: String): String | Null = js.native
   def getAttributeNS(namespace: Null, localName: String): String | Null = js.native
+  
   /**
     * Returns the qualified names of all element's attributes. Can contain duplicates.
     */
   def getAttributeNames(): js.Array[String] = js.native
-  def getAttributeNode(name: String): Attr | Null = js.native
-  def getAttributeNodeNS(namespaceURI: String, localName: String): Attr | Null = js.native
+  
+  def getAttributeNode(qualifiedName: String): Attr | Null = js.native
+  
+  def getAttributeNodeNS(namespace: String, localName: String): Attr | Null = js.native
+  def getAttributeNodeNS(namespace: Null, localName: String): Attr | Null = js.native
+  
   def getBoundingClientRect(): DOMRect = js.native
+  
   def getClientRects(): DOMRectList = js.native
+  
   /**
     * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
     */
   def getElementsByClassName(classNames: String): HTMLCollectionOf[Element] = js.native
+  
   def getElementsByTagName(qualifiedName: String): HTMLCollectionOf[Element] = js.native
+  
   def getElementsByTagNameNS(namespaceURI: String, localName: String): HTMLCollectionOf[Element] = js.native
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: String): HTMLCollectionOf[SVGElement] = js.native
+  
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")
@@ -1331,63 +1306,171 @@ trait ElementeventskeystringeEv extends js.Object {
   def getElementsByTagName_view(qualifiedName: view): HTMLCollectionOf[SVGViewElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
+  
   /**
     * Returns node's root.
     */
   def getRootNode(): Node = js.native
   def getRootNode(options: GetRootNodeOptions): Node = js.native
+  
   /**
     * Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
     */
   def hasAttribute(qualifiedName: String): Boolean = js.native
+  
   /**
     * Returns true if element has an attribute whose namespace is namespace and local name is localName.
     */
   def hasAttributeNS(namespace: String, localName: String): Boolean = js.native
   def hasAttributeNS(namespace: Null, localName: String): Boolean = js.native
+  
   /**
     * Returns true if element has attributes, and false otherwise.
     */
   def hasAttributes(): Boolean = js.native
+  
   /**
     * Returns whether node has children.
     */
   def hasChildNodes(): Boolean = js.native
+  
   def hasPointerCapture(pointerId: Double): Boolean = js.native
+  
+  /**
+    * Returns the value of element's id content attribute. Can be set to change it.
+    */
+  var id: String = js.native
+  
+  var innerHTML: String = js.native
+  
   def insertAdjacentElement(position: InsertPosition, insertedElement: Element): Element | Null = js.native
+  
   def insertAdjacentHTML(where: InsertPosition, html: String): Unit = js.native
+  
   def insertAdjacentText(where: InsertPosition, text: String): Unit = js.native
+  
   def insertBefore[T /* <: Node */](newChild: T): T = js.native
   def insertBefore[T /* <: Node */](newChild: T, refChild: Node): T = js.native
+  
+  /**
+    * Returns true if node is connected and false otherwise.
+    */
+  val isConnected: Boolean = js.native
+  
   def isDefaultNamespace(): Boolean = js.native
   def isDefaultNamespace(namespace: String): Boolean = js.native
+  
   /**
     * Returns whether node and otherNode have the same properties.
     */
   def isEqualNode(): Boolean = js.native
   def isEqualNode(otherNode: Node): Boolean = js.native
+  
   def isSameNode(): Boolean = js.native
   def isSameNode(otherNode: Node): Boolean = js.native
+  
+  /**
+    * Returns the last child.
+    */
+  val lastChild: ChildNode | Null = js.native
+  
+  /**
+    * Returns the last child that is an element, and null otherwise.
+    */
+  val lastElementChild: Element | Null = js.native
+  
+  /**
+    * Returns the local name.
+    */
+  val localName: String = js.native
+  
   def lookupNamespaceURI(): String | Null = js.native
   def lookupNamespaceURI(prefix: String): String | Null = js.native
+  
   def lookupPrefix(): String | Null = js.native
   def lookupPrefix(namespace: String): String | Null = js.native
+  
   /**
     * Returns true if matching selectors against element's root yields element, and false otherwise.
     */
   def matches(selectors: String): Boolean = js.native
+  
   def msGetRegionContent(): js.Any = js.native
+  
+  /**
+    * Returns the namespace.
+    */
+  val namespaceURI: String | Null = js.native
+  
+  /**
+    * Returns the first following sibling that is an element, and null otherwise.
+    */
+  val nextElementSibling: Element | Null = js.native
+  
+  /**
+    * Returns the next sibling.
+    */
+  val nextSibling: ChildNode | Null = js.native
+  
+  /**
+    * Returns a string appropriate for the type of node.
+    */
+  val nodeName: String = js.native
+  
+  /**
+    * Returns the type of node.
+    */
+  val nodeType: Double = js.native
+  
+  var nodeValue: String | Null = js.native
+  
   /**
     * Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
     */
   def normalize(): Unit = js.native
+  
+  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var outerHTML: String = js.native
+  
+  val ownerDocument: Document = js.native
+  
+  /**
+    * Returns the parent element.
+    */
+  val parentElement: HTMLElement | Null = js.native
+  
+  /**
+    * Returns the parent.
+    */
+  val parentNode: (Node with ParentNode) | Null = js.native
+  
+  /**
+    * Returns the namespace prefix.
+    */
+  val prefix: String | Null = js.native
+  
   /**
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def prepend(nodes: (Node | String)*): Unit = js.native
+  
+  /**
+    * Returns the first preceding sibling that is an element, and null otherwise.
+    */
+  val previousElementSibling: Element | Null = js.native
+  
+  /**
+    * Returns the previous sibling.
+    */
+  val previousSibling: ChildNode | Null = js.native
+  
   def querySelector[E /* <: Element */](selectors: String): E | Null = js.native
+  
   def querySelectorAll[E /* <: Element */](selectors: String): NodeListOf[E] = js.native
   /**
     * Returns all element descendants of node that match selectors.
@@ -1736,6 +1819,7 @@ trait ElementeventskeystringeEv extends js.Object {
   def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
+  
   /**
     * Returns the first element that is a descendant of node that matches selectors.
     */
@@ -2083,22 +2167,29 @@ trait ElementeventskeystringeEv extends js.Object {
   def querySelector_view(selectors: view): SVGViewElement | Null = js.native
   @JSName("querySelector")
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+  
   def releasePointerCapture(pointerId: Double): Unit = js.native
+  
   /**
     * Removes node.
     */
   def remove(): Unit = js.native
+  
   /**
     * Removes element's first attribute whose qualified name is qualifiedName.
     */
   def removeAttribute(qualifiedName: String): Unit = js.native
+  
   /**
     * Removes element's attribute whose namespace is namespace and local name is localName.
     */
   def removeAttributeNS(namespace: String, localName: String): Unit = js.native
   def removeAttributeNS(namespace: Null, localName: String): Unit = js.native
+  
   def removeAttributeNode(attr: Attr): Attr = js.native
+  
   def removeChild[T /* <: Node */](oldChild: T): T = js.native
+  
   /**
     * Removes the event listener in target's event listener list with the same type, callback, and options.
     */
@@ -2136,13 +2227,16 @@ trait ElementeventskeystringeEv extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
+  
   def replaceChild[T /* <: Node */](newChild: Node, oldChild: T): T = js.native
+  
   /**
     * Replaces node with nodes, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def replaceWith(nodes: (Node | String)*): Unit = js.native
+  
   /**
     * Displays element fullscreen and resolves promise when done.
     * 
@@ -2150,31 +2244,67 @@ trait ElementeventskeystringeEv extends js.Object {
     */
   def requestFullscreen(): js.Promise[Unit] = js.native
   def requestFullscreen(options: FullscreenOptions): js.Promise[Unit] = js.native
+  
   def requestPointerLock(): Unit = js.native
+  
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
   def scroll(x: Double, y: Double): Unit = js.native
+  
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
   def scrollBy(x: Double, y: Double): Unit = js.native
+  
+  val scrollHeight: Double = js.native
+  
   def scrollIntoView(): Unit = js.native
   def scrollIntoView(arg: Boolean): Unit = js.native
   def scrollIntoView(arg: ScrollIntoViewOptions): Unit = js.native
+  
+  var scrollLeft: Double = js.native
+  
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
+  
+  var scrollTop: Double = js.native
+  
+  val scrollWidth: Double = js.native
+  
   /**
     * Sets the value of element's first attribute whose qualified name is qualifiedName to value.
     */
   def setAttribute(qualifiedName: String, value: String): Unit = js.native
+  
   /**
     * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
     */
   def setAttributeNS(namespace: String, qualifiedName: String, value: String): Unit = js.native
   def setAttributeNS(namespace: Null, qualifiedName: String, value: String): Unit = js.native
+  
   def setAttributeNode(attr: Attr): Attr | Null = js.native
+  
   def setAttributeNodeNS(attr: Attr): Attr | Null = js.native
+  
   def setPointerCapture(pointerId: Double): Unit = js.native
+  
+  /**
+    * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
+    */
+  val shadowRoot: ShadowRoot | Null = js.native
+  
+  /**
+    * Returns the value of element's slot content attribute. Can be set to change it.
+    */
+  var slot: String = js.native
+  
+  /**
+    * Returns the HTML-uppercased qualified name.
+    */
+  val tagName: String = js.native
+  
+  var textContent: String | Null = js.native
+  
   /**
     * If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
     * 
@@ -2182,6 +2312,6 @@ trait ElementeventskeystringeEv extends js.Object {
     */
   def toggleAttribute(qualifiedName: String): Boolean = js.native
   def toggleAttribute(qualifiedName: String, force: Boolean): Boolean = js.native
+  
   def webkitMatchesSelector(selectors: String): Boolean = js.native
 }
-

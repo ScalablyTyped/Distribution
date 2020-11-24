@@ -4,17 +4,19 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.asana.mod.Dispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceStatic extends /**
   * @param dispatcher
   */
 Instantiable1[/* dispatcher */ Dispatcher, Resource] {
+  
   /**
     * @type {number} Default number of items to get per page.
     */
   var DEFAULT_PAGE_LIMIT: Double = js.native
+  
   /**
     * Helper method that dispatches a GET request to the API, where the expected
     * result is a collection.
@@ -30,8 +32,10 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param dispatchOptions?
     */
   def getCollection(dispatcher: js.Any, path: String): typings.bluebird.mod.^[_] = js.native
+  def getCollection(dispatcher: js.Any, path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
   def getCollection(dispatcher: js.Any, path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
   def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Helper method for any request Promise from the Dispatcher, unwraps the `data`
     * value from the payload.
@@ -42,4 +46,3 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     */
   def unwrap(promise: js.Any): typings.bluebird.mod.^[_] = js.native
 }
-

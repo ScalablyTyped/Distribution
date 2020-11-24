@@ -3,10 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFNamedACLType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultNamedACLOperationsAsync extends js.Object {
+  
   def AddNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): Unit = js.native
   def AddNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
@@ -43,6 +44,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetMatchingNamedACLForAccessControlList(
     AccessControlList: IAccessControlList,
     ExplicitLinkOnly: Boolean,
@@ -108,6 +110,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetMatchingNamedACLForAccessControlListComponent(
     AccessControlListComponent: IAccessControlListComponent,
     ExplicitLinkOnly: Boolean,
@@ -165,6 +168,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACL(NamedACLID: Double): Unit = js.native
   def GetNamedACL(
     NamedACLID: Double,
@@ -201,6 +205,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLAdmin(NamedACLID: Double): Unit = js.native
   def GetNamedACLAdmin(
     NamedACLID: Double,
@@ -237,6 +242,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLIDByAlias(Alias: String): Unit = js.native
   def GetNamedACLIDByAlias(
     Alias: String,
@@ -273,6 +279,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLIDByGUID(NamedACLGUID: String): Unit = js.native
   def GetNamedACLIDByGUID(
     NamedACLGUID: String,
@@ -309,6 +316,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLWithRefresh(NamedACLID: Double, RefreshFromServer: Boolean): Unit = js.native
   def GetNamedACLWithRefresh(
     NamedACLID: Double,
@@ -355,6 +363,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLs(): Unit = js.native
   def GetNamedACLs(
     successCallback: js.UndefOr[scala.Nothing],
@@ -385,6 +394,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLsByTypeAdmin(Type: MFNamedACLType): Unit = js.native
   def GetNamedACLsByTypeAdmin(
     Type: MFNamedACLType,
@@ -421,6 +431,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetNamedACLsWithRefresh(RefreshFromServer: Boolean): Unit = js.native
   def GetNamedACLsWithRefresh(
     RefreshFromServer: Boolean,
@@ -457,6 +468,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def IsNamedACLUsedInAutomaticPermissionsAdmin(NamedACLID: Double): Unit = js.native
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
     NamedACLID: Double,
@@ -493,6 +505,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveNamedACLWithPropagationAdmin(NamedACLID: Double, AllowPropagation: Boolean): Unit = js.native
   def RemoveNamedACLWithPropagationAdmin(
     NamedACLID: Double,
@@ -535,6 +548,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): Unit = js.native
   def UpdateNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
@@ -571,6 +585,7 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateNamedACLWithPropagationAdmin(NamedACLAdmin: INamedACLAdmin, MaintainLinks: Boolean, AllowPropagation: Boolean): Unit = js.native
   def UpdateNamedACLWithPropagationAdmin(
     NamedACLAdmin: INamedACLAdmin,
@@ -625,4 +640,3 @@ trait IVaultNamedACLOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

@@ -2,16 +2,17 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.Analytics")
 @js.native
 object Analytics extends js.Object {
-  @js.native
-  sealed trait EventTypeId extends js.Object
   
   @js.native
+  sealed trait EventTypeId extends js.Object
+  @js.native
   object EventTypeId extends js.Object {
+    
     @js.native
     sealed trait first extends EventTypeId
     
@@ -29,9 +30,7 @@ object Analytics extends js.Object {
     
     @js.native
     sealed trait view extends EventTypeId
-    
   }
   
   type AnalyticsUsageEntry = ClientObject
 }
-

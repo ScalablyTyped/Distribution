@@ -2,11 +2,12 @@ package typings.jupyterlabCoreutils.urlMod.URLExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.join")
 @js.native
 object join extends js.Object {
+  
   /**
     * Join a sequence of url components and normalizes as in node `path.join`.
     *
@@ -16,4 +17,3 @@ object join extends js.Object {
     */
   def apply(parts: String*): String = js.native
 }
-

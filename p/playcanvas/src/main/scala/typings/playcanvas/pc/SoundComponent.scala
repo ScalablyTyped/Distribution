@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Sound Component.
@@ -35,53 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SoundComponent extends Component {
-  /**
-    * Determines which algorithm to use to reduce the
-    volume of the sound as it moves away from the listener. Can be:
-    
-    * {@link pc.DISTANCE_LINEAR}
-    * {@link pc.DISTANCE_INVERSE}
-    * {@link pc.DISTANCE_EXPONENTIAL}
-    
-    Defaults to {@link pc.DISTANCE_LINEAR}.
-    */
-  var distanceModel: String = js.native
-  /**
-    * The maximum distance from the listener at which audio
-    falloff stops. Note the volume of the audio is not 0 after this distance, but just
-    doesn't fall off anymore. Defaults to 10000.
-    */
-  var maxDistance: Double = js.native
-  /**
-    * The pitch modifier to play the audio with. Must be larger
-    than 0.01. Defaults to 1.
-    */
-  var pitch: Double = js.native
-  /**
-    * If true the audio will play back at the location
-    of the Entity in space, so the audio will be affected by the position of the
-    {@link pc.AudioListenerComponent}. Defaults to true.
-    */
-  var positional: Boolean = js.native
-  /**
-    * The reference distance for reducing volume as the
-    sound source moves further from the listener. Defaults to 1.
-    */
-  var refDistance: Double = js.native
-  /**
-    * The factor used in the falloff equation. Defaults to 1.
-    */
-  var rollOffFactor: Double = js.native
-  /**
-    * A dictionary that contains the {@link pc.SoundSlot}s managed
-    by this SoundComponent.
-    */
-  var slots: js.Any = js.native
-  /**
-    * The volume modifier to play the audio with. In range 0-1.
-    Defaults to 1.
-    */
-  var volume: Double = js.native
+  
   /**
     * Creates a new {@link pc.SoundSlot} with the specified name.
     * @example
@@ -107,6 +61,26 @@ trait SoundComponent extends Component {
     */
   def addSlot(name: String): SoundSlot = js.native
   def addSlot(name: String, options: typings.playcanvas.anon.Asset): SoundSlot = js.native
+  
+  /**
+    * Determines which algorithm to use to reduce the
+    volume of the sound as it moves away from the listener. Can be:
+    
+    * {@link pc.DISTANCE_LINEAR}
+    * {@link pc.DISTANCE_INVERSE}
+    * {@link pc.DISTANCE_EXPONENTIAL}
+    
+    Defaults to {@link pc.DISTANCE_LINEAR}.
+    */
+  var distanceModel: String = js.native
+  
+  /**
+    * The maximum distance from the listener at which audio
+    falloff stops. Note the volume of the audio is not 0 after this distance, but just
+    doesn't fall off anymore. Defaults to 10000.
+    */
+  var maxDistance: Double = js.native
+  
   /**
     * Pauses playback of the slot with the specified name. If the name is undefined then all slots currently played will be paused. The slots can be resumed by calling {@link pc.SoundComponent#resume}.
     * @example
@@ -118,6 +92,13 @@ trait SoundComponent extends Component {
     */
   def pause(): Unit = js.native
   def pause(name: String): Unit = js.native
+  
+  /**
+    * The pitch modifier to play the audio with. Must be larger
+    than 0.01. Defaults to 1.
+    */
+  var pitch: Double = js.native
+  
   /**
     * Begins playing the sound slot with the specified name. The slot will restart playing if it is already playing unless the overlap field is true in which case a new sound will be created and played.
     * @example
@@ -132,6 +113,20 @@ trait SoundComponent extends Component {
     * @returns The sound instance that will be played.
     */
   def play(name: String): SoundInstance = js.native
+  
+  /**
+    * If true the audio will play back at the location
+    of the Entity in space, so the audio will be affected by the position of the
+    {@link pc.AudioListenerComponent}. Defaults to true.
+    */
+  var positional: Boolean = js.native
+  
+  /**
+    * The reference distance for reducing volume as the
+    sound source moves further from the listener. Defaults to 1.
+    */
+  var refDistance: Double = js.native
+  
   /**
     * Removes the {@link pc.SoundSlot} with the specified name.
     * @example
@@ -140,6 +135,7 @@ trait SoundComponent extends Component {
     * @param name - The name of the slot.
     */
   def removeSlot(name: String): Unit = js.native
+  
   /**
     * Resumes playback of the sound slot with the specified name if it's paused. If no
     * name is specified all slots will be resumed.
@@ -152,6 +148,12 @@ trait SoundComponent extends Component {
     */
   def resume(): Unit = js.native
   def resume(name: String): Unit = js.native
+  
+  /**
+    * The factor used in the falloff equation. Defaults to 1.
+    */
+  var rollOffFactor: Double = js.native
+  
   /**
     * Returns the slot with the specified name.
     * @example
@@ -161,6 +163,13 @@ trait SoundComponent extends Component {
     * @returns The slot.
     */
   def slot(name: String): SoundSlot = js.native
+  
+  /**
+    * A dictionary that contains the {@link pc.SoundSlot}s managed
+    by this SoundComponent.
+    */
+  var slots: js.Any = js.native
+  
   /**
     * Stops playback of the sound slot with the specified name if it's paused. If no
     * name is specified all slots will be stopped.
@@ -173,5 +182,10 @@ trait SoundComponent extends Component {
     */
   def stop(): Unit = js.native
   def stop(name: String): Unit = js.native
+  
+  /**
+    * The volume modifier to play the audio with. In range 0-1.
+    Defaults to 1.
+    */
+  var volume: Double = js.native
 }
-

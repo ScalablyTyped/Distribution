@@ -3,7 +3,7 @@ package typings.azureSb.mod
 import typings.azureSb.servicebusserviceMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-sb", "ServiceBusService")
 @js.native
@@ -17,4 +17,3 @@ class ServiceBusService protected () extends ^ {
     authenticationProvider: js.UndefOr[js.Object]
   ) = this()
 }
-

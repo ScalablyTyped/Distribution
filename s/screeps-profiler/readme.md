@@ -12,7 +12,7 @@ A profiler designed for use in the game of Screeps.
 | Keywords           | screeps, profiler |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1142 |
+| # downloads        | 1450 |
 | # stars            | 0 |
 
 ## Links

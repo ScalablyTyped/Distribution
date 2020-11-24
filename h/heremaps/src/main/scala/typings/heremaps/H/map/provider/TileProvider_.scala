@@ -5,7 +5,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TileProvider is an abstract class to provide data on a tile basis
@@ -19,9 +19,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TileProvider_ extends Provider {
+  
   var cancelTile: js.Any = js.native
+  
   var cancelTileByKey: js.Any = js.native
-  var requestTile: js.Any = js.native
+  
   def createTileInternal(x: Double, y: Double, z: Double, data: HTMLCanvasElement): Tile = js.native
   def createTileInternal(x: Double, y: Double, z: Double, data: HTMLCanvasElement, opt_options: StringDictionary[js.Any]): Tile = js.native
   /**
@@ -35,6 +37,7 @@ trait TileProvider_ extends Provider {
     */
   def createTileInternal(x: Double, y: Double, z: Double, data: HTMLImageElement): Tile = js.native
   def createTileInternal(x: Double, y: Double, z: Double, data: HTMLImageElement, opt_options: StringDictionary[js.Any]): Tile = js.native
+  
   /**
     * This method creates a tile key consisting of the provider&#x27;s uri, and the tile&#x27;s x, y and z coordinates, seperated by underscores e.g.: &quot;4711_7_42_23&quot;
     * @param x {number} - The x tile coordinate (row)
@@ -43,5 +46,6 @@ trait TileProvider_ extends Provider {
     * @returns {string} - string
     */
   def getTileKey(x: Double, y: Double, z: Double): String = js.native
+  
+  var requestTile: js.Any = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.openpgp.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "emsa")
 @js.native
 object emsa extends js.Object {
+  
   /**
     * Create a EMSA-PKCS1-v1_5 padded message
     * @see
@@ -18,4 +19,3 @@ object emsa extends js.Object {
     */
   def encode(algo: Integer, hashed: Uint8Array, emLen: Integer): String = js.native
 }
-

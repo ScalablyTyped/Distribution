@@ -4,9 +4,52 @@ import typings.iframeResizer.mod.HeightCalculationMethod
 import typings.iframeResizer.mod.WidthCalculationMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iframeResizerStrings {
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def bodyOffset: bodyOffset = "bodyOffset".asInstanceOf[bodyOffset]
+  
+  @scala.inline
+  def bodyScroll: bodyScroll = "bodyScroll".asInstanceOf[bodyScroll]
+  
+  @scala.inline
+  def child: child = "child".asInstanceOf[child]
+  
+  @scala.inline
+  def documentElementOffset: documentElementOffset = "documentElementOffset".asInstanceOf[documentElementOffset]
+  
+  @scala.inline
+  def documentElementScroll: documentElementScroll = "documentElementScroll".asInstanceOf[documentElementScroll]
+  
+  @scala.inline
+  def grow: grow = "grow".asInstanceOf[grow]
+  
+  @scala.inline
+  def lowestElement: lowestElement = "lowestElement".asInstanceOf[lowestElement]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def parent: parent = "parent".asInstanceOf[parent]
+  
+  @scala.inline
+  def rightMostElement: rightMostElement = "rightMostElement".asInstanceOf[rightMostElement]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def taggedElement: taggedElement = "taggedElement".asInstanceOf[taggedElement]
+  
   @js.native
   sealed trait auto extends js.Object
   
@@ -62,34 +105,4 @@ object iframeResizerStrings {
   sealed trait taggedElement
     extends HeightCalculationMethod
        with WidthCalculationMethod
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bodyOffset: bodyOffset = "bodyOffset".asInstanceOf[bodyOffset]
-  @scala.inline
-  def bodyScroll: bodyScroll = "bodyScroll".asInstanceOf[bodyScroll]
-  @scala.inline
-  def child: child = "child".asInstanceOf[child]
-  @scala.inline
-  def documentElementOffset: documentElementOffset = "documentElementOffset".asInstanceOf[documentElementOffset]
-  @scala.inline
-  def documentElementScroll: documentElementScroll = "documentElementScroll".asInstanceOf[documentElementScroll]
-  @scala.inline
-  def grow: grow = "grow".asInstanceOf[grow]
-  @scala.inline
-  def lowestElement: lowestElement = "lowestElement".asInstanceOf[lowestElement]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def rightMostElement: rightMostElement = "rightMostElement".asInstanceOf[rightMostElement]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def taggedElement: taggedElement = "taggedElement".asInstanceOf[taggedElement]
 }
-

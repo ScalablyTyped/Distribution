@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/expand", JSImport.Namespace)
 @js.native
 object expandMod extends js.Object {
+  
   def expand[T](
     project: js.Function2[
       /* value */ T, 
@@ -78,4 +79,3 @@ object expandMod extends js.Object {
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
 }
-

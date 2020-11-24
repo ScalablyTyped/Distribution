@@ -2,7 +2,7 @@ package typings.autolinker.autolinkerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.autolinker.autolinkerStrings.scheme
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.autolinker.autolinkerStrings.tld
 */
 trait UrlMatchTypeOptions extends js.Object
-
 object UrlMatchTypeOptions {
+  
   @scala.inline
   def scheme: typings.autolinker.autolinkerStrings.scheme = "scheme".asInstanceOf[typings.autolinker.autolinkerStrings.scheme]
+  
   @scala.inline
   def tld: typings.autolinker.autolinkerStrings.tld = "tld".asInstanceOf[typings.autolinker.autolinkerStrings.tld]
+  
   @scala.inline
   def www: typings.autolinker.autolinkerStrings.www = "www".asInstanceOf[typings.autolinker.autolinkerStrings.www]
 }
-

@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.rowMod.PanelRow.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components", "PanelRow")
 @js.native
 object PanelRow extends TopLevel[ComponentType[Props]]
-

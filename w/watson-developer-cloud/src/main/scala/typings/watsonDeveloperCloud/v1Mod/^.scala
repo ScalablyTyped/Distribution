@@ -2,7 +2,7 @@ package typings.watsonDeveloperCloud.v1Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("watson-developer-cloud/authorization/v1", JSImport.Namespace)
 @js.native
@@ -21,10 +21,9 @@ class ^ protected () extends AuthorizationV1 {
     */
   def this(options: js.Any) = this()
 }
-
 @JSImport("watson-developer-cloud/authorization/v1", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var URL: String = js.native
 }
-

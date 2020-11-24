@@ -10,9 +10,9 @@ Decode strings according to the WHATWG Encoding Standard
 | ------------------ | :-------------: |
 | Full name          | whatwg-encoding |
 | Keywords           | encoding, whatwg |
-| # releases         | 3 |
-| # dependents       | 59 |
-| # downloads        | 254409388 |
+| # releases         | 2 |
+| # dependents       | 75 |
+| # downloads        | 336782882 |
 | # stars            | 0 |
 
 ## Links

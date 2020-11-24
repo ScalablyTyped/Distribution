@@ -10,9 +10,9 @@ Get the name and version of a macOS release from the Darwin version
 | ------------------ | :-------------: |
 | Full name          | macos-release |
 | Keywords           | macos, os, darwin, operating, system, platform, name, title, release, version |
-| # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 57226249 |
+| # releases         | 6 |
+| # dependents       | 21 |
+| # downloads        | 112511439 |
 | # stars            | 0 |
 
 ## Links

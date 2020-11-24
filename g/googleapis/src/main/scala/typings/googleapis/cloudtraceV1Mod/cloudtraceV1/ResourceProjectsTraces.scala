@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtrace/v1", "cloudtrace_v1.Resource$Projects$Traces")
 @js.native
 class ResourceProjectsTraces protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudtrace.projects.traces.get
     * @desc Gets a single trace by its ID.
@@ -98,6 +100,7 @@ class ResourceProjectsTraces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrace]
   ): Unit = js.native
+  
   /**
     * cloudtrace.projects.traces.list
     * @desc Returns of a list of traces that match the specified filter
@@ -201,4 +204,3 @@ class ResourceProjectsTraces protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListTracesResponse]
   ): Unit = js.native
 }
-

@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SmsDevice extends ISmsDevice
-
 object SmsDevice {
+  
   @scala.inline
   def apply(
     accountPhoneNumber: String,
@@ -23,4 +23,3 @@ object SmsDevice {
     __obj.asInstanceOf[SmsDevice]
   }
 }
-

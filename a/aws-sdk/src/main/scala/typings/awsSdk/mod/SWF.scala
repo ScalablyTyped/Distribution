@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.swfMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "SWF")
 @js.native
@@ -14,4 +14,3 @@ class SWF ()
   extends typings.awsSdk.allMod.SWF {
   def this(options: ClientConfiguration) = this()
 }
-

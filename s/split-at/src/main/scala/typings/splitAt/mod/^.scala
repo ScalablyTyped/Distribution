@@ -2,11 +2,12 @@ package typings.splitAt.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("split-at", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(string: String, index: js.Array[Double]): js.Array[String] = js.native
   def apply(string: String, index: js.Array[Double], options: Options): js.Array[String] = js.native
   /**
@@ -29,4 +30,3 @@ object ^ extends js.Object {
   def apply(string: String, index: Double): js.Array[String] = js.native
   def apply(string: String, index: Double, options: Options): js.Array[String] = js.native
 }
-

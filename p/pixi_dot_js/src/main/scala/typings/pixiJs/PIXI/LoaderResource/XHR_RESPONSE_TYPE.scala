@@ -2,14 +2,14 @@ package typings.pixiJs.PIXI.LoaderResource
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait XHR_RESPONSE_TYPE extends js.Object
-
 @JSGlobal("PIXI.LoaderResource.XHR_RESPONSE_TYPE")
 @js.native
 object XHR_RESPONSE_TYPE extends js.Object {
+  
   /** Blob */
   @js.native
   sealed trait BLOB extends XHR_RESPONSE_TYPE
@@ -33,6 +33,4 @@ object XHR_RESPONSE_TYPE extends js.Object {
   /** String */
   @js.native
   sealed trait TEXT extends XHR_RESPONSE_TYPE
-  
 }
-

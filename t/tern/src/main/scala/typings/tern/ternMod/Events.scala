@@ -6,30 +6,39 @@ import typings.tern.inferMod.Scope
 import typings.tern.inferMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Events extends js.Object {
+  
   /** After analyzing a file. */
   def afterLoad(file: File): Unit = js.native
+  
   /** Before analyzing a file. file is an object holding {name, text, scope} properties. */
   def beforeLoad(file: File): Unit = js.native
+  
   /** Run at the start of a completion query. May return a valid completion result to replace the default completion algorithm. */
   def completion(file: File, query: CompletionsQuery): CompletionsQueryResult | Unit = js.native
+  
   /** Run after the type inference pass. */
   def postInfer(ast: Program, scope: Scope): Unit = js.native
+  
   /** Run right after a file is parsed, and passed the parse tree and the parsed file as arguments. */
   def postParse(ast: Program, text: String): Unit = js.native
+  
   /** Run right before the type inference pass, passing the syntax tree and a scope object. */
   def preInfer(ast: Program, scope: Scope): Unit = js.native
+  
   /**
     * Will be run right before a file is parsed, and passed the given text and options. If a handler
     * returns a new text value, the origin text will be overriden. This is useful for
     * instance when a plugin is able to extract JavaScript content from an HTML file.
     */
   def preParse(text: String, options: js.Object): String | Unit = js.native
+  
   /** When the server throws away its current analysis data and starts a fresh run. */
   def reset(): Unit = js.native
+  
   /**
     * Run after Tern attempts to find the type at the position end in the given file.
     * A handler may return either the given type (already calculated by Tern and earlier "typeAt" passes)
@@ -38,8 +47,8 @@ trait Events extends js.Object {
     */
   def typeAt(file: File, end: Position, expr: Node, `type`: Type): Type | Unit = js.native
 }
-
 object Events {
+  
   @scala.inline
   def apply(
     afterLoad: File => Unit,
@@ -55,36 +64,47 @@ object Events {
     val __obj = js.Dynamic.literal(afterLoad = js.Any.fromFunction1(afterLoad), beforeLoad = js.Any.fromFunction1(beforeLoad), completion = js.Any.fromFunction2(completion), postInfer = js.Any.fromFunction2(postInfer), postParse = js.Any.fromFunction2(postParse), preInfer = js.Any.fromFunction2(preInfer), preParse = js.Any.fromFunction2(preParse), reset = js.Any.fromFunction0(reset), typeAt = js.Any.fromFunction4(typeAt))
     __obj.asInstanceOf[Events]
   }
+  
   @scala.inline
   implicit class EventsOps[Self <: Events] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAfterLoad(value: File => Unit): Self = this.set("afterLoad", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setBeforeLoad(value: File => Unit): Self = this.set("beforeLoad", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCompletion(value: (File, CompletionsQuery) => CompletionsQueryResult | Unit): Self = this.set("completion", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setPostInfer(value: (Program, Scope) => Unit): Self = this.set("postInfer", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setPostParse(value: (Program, String) => Unit): Self = this.set("postParse", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setPreInfer(value: (Program, Scope) => Unit): Self = this.set("preInfer", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setPreParse(value: (String, js.Object) => String | Unit): Self = this.set("preParse", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setTypeAt(value: (File, Position, Node, Type) => Type | Unit): Self = this.set("typeAt", js.Any.fromFunction4(value))
   }
-  
 }
-

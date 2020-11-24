@@ -2,14 +2,11 @@ package typings.dottie.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dottie extends js.Object {
-  /**
-    * Dottie memoization flag
-    */
-  var memoizePath: Boolean = js.native
+  
   /**
     * Set the default value if path does not exist
     *
@@ -18,6 +15,7 @@ trait Dottie extends js.Object {
     * dottie.default({ some: { value: 'a' }}, 'some.value', 'b') as MyType; // { some: { value: 'a' }}
     */
   def default(obj: js.Object, path: DottiePath, value: js.Any): js.Any = js.native
+  
   /**
     * Check path exists in object
     *
@@ -32,6 +30,7 @@ trait Dottie extends js.Object {
     * dottie.exists(values, 'some.otherKey'); // false
     */
   def exists(obj: js.Object, path: DottiePath): Boolean = js.native
+  
   /**
     * Opposite of transform. Flattens a nested object
     *
@@ -71,6 +70,7 @@ trait Dottie extends js.Object {
     */
   def flatten(obj: js.Object): FlatPaths = js.native
   def flatten(obj: js.Object, delimiter: String): FlatPaths = js.native
+  
   /**
     * Gets nested value, or undefined if unreachable, or a default value if passed.
     *
@@ -93,6 +93,12 @@ trait Dottie extends js.Object {
     */
   def get[T](obj: js.Object, path: DottiePath): T = js.native
   def get[T](obj: js.Object, path: DottiePath, defaultValue: T): T = js.native
+  
+  /**
+    * Dottie memoization flag
+    */
+  var memoizePath: Boolean = js.native
+  
   /**
     * Get paths in object
     *
@@ -108,6 +114,7 @@ trait Dottie extends js.Object {
     * dottie.paths(object); // ["a", "b.c", "b.d.e"];
     */
   def paths(obj: js.Object): js.Array[String] = js.native
+  
   /**
     * Sets nested value, creates nested structure if needed
     *
@@ -118,6 +125,7 @@ trait Dottie extends js.Object {
     */
   def set(obj: js.Object, path: DottiePath, value: js.Any): Unit = js.native
   def set(obj: js.Object, path: DottiePath, value: js.Any, options: SetOptions): Unit = js.native
+  
   /**
     * Transform object from keys with dottie notation to nested objects
     *
@@ -158,4 +166,3 @@ trait Dottie extends js.Object {
   def transform(obj: FlatPaths): js.Any = js.native
   def transform(obj: FlatPaths, options: TransformOptions): js.Any = js.native
 }
-

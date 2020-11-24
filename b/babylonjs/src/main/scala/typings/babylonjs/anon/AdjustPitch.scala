@@ -4,53 +4,128 @@ import typings.babylonjs.mathAxisMod.Space
 import typings.babylonjs.mathVectorMod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AdjustPitch extends js.Object {
-  var adjustPitch: js.UndefOr[Double] = js.undefined
-  var adjustRoll: js.UndefOr[Double] = js.undefined
-  var adjustYaw: js.UndefOr[Double] = js.undefined
-  var maxPitch: js.UndefOr[Double] = js.undefined
-  var maxYaw: js.UndefOr[Double] = js.undefined
-  var minPitch: js.UndefOr[Double] = js.undefined
-  var minYaw: js.UndefOr[Double] = js.undefined
-  var pitchAxis: js.UndefOr[Vector3] = js.undefined
-  var slerpAmount: js.UndefOr[Double] = js.undefined
-  var upAxis: js.UndefOr[Vector3] = js.undefined
-  var upAxisSpace: js.UndefOr[Space] = js.undefined
-  var yawAxis: js.UndefOr[Vector3] = js.undefined
+  
+  var adjustPitch: js.UndefOr[Double] = js.native
+  
+  var adjustRoll: js.UndefOr[Double] = js.native
+  
+  var adjustYaw: js.UndefOr[Double] = js.native
+  
+  var maxPitch: js.UndefOr[Double] = js.native
+  
+  var maxYaw: js.UndefOr[Double] = js.native
+  
+  var minPitch: js.UndefOr[Double] = js.native
+  
+  var minYaw: js.UndefOr[Double] = js.native
+  
+  var pitchAxis: js.UndefOr[Vector3] = js.native
+  
+  var slerpAmount: js.UndefOr[Double] = js.native
+  
+  var upAxis: js.UndefOr[Vector3] = js.native
+  
+  var upAxisSpace: js.UndefOr[Space] = js.native
+  
+  var yawAxis: js.UndefOr[Vector3] = js.native
 }
-
 object AdjustPitch {
+  
   @scala.inline
-  def apply(
-    adjustPitch: js.UndefOr[Double] = js.undefined,
-    adjustRoll: js.UndefOr[Double] = js.undefined,
-    adjustYaw: js.UndefOr[Double] = js.undefined,
-    maxPitch: js.UndefOr[Double] = js.undefined,
-    maxYaw: js.UndefOr[Double] = js.undefined,
-    minPitch: js.UndefOr[Double] = js.undefined,
-    minYaw: js.UndefOr[Double] = js.undefined,
-    pitchAxis: Vector3 = null,
-    slerpAmount: js.UndefOr[Double] = js.undefined,
-    upAxis: Vector3 = null,
-    upAxisSpace: Space = null,
-    yawAxis: Vector3 = null
-  ): AdjustPitch = {
+  def apply(): AdjustPitch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustPitch)) __obj.updateDynamic("adjustPitch")(adjustPitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(adjustRoll)) __obj.updateDynamic("adjustRoll")(adjustRoll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(adjustYaw)) __obj.updateDynamic("adjustYaw")(adjustYaw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPitch)) __obj.updateDynamic("maxPitch")(maxPitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxYaw)) __obj.updateDynamic("maxYaw")(maxYaw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minPitch)) __obj.updateDynamic("minPitch")(minPitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minYaw)) __obj.updateDynamic("minYaw")(minYaw.get.asInstanceOf[js.Any])
-    if (pitchAxis != null) __obj.updateDynamic("pitchAxis")(pitchAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(slerpAmount)) __obj.updateDynamic("slerpAmount")(slerpAmount.get.asInstanceOf[js.Any])
-    if (upAxis != null) __obj.updateDynamic("upAxis")(upAxis.asInstanceOf[js.Any])
-    if (upAxisSpace != null) __obj.updateDynamic("upAxisSpace")(upAxisSpace.asInstanceOf[js.Any])
-    if (yawAxis != null) __obj.updateDynamic("yawAxis")(yawAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdjustPitch]
   }
+  
+  @scala.inline
+  implicit class AdjustPitchOps[Self <: AdjustPitch] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAdjustPitch(value: Double): Self = this.set("adjustPitch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAdjustPitch: Self = this.set("adjustPitch", js.undefined)
+    
+    @scala.inline
+    def setAdjustRoll(value: Double): Self = this.set("adjustRoll", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAdjustRoll: Self = this.set("adjustRoll", js.undefined)
+    
+    @scala.inline
+    def setAdjustYaw(value: Double): Self = this.set("adjustYaw", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAdjustYaw: Self = this.set("adjustYaw", js.undefined)
+    
+    @scala.inline
+    def setMaxPitch(value: Double): Self = this.set("maxPitch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMaxPitch: Self = this.set("maxPitch", js.undefined)
+    
+    @scala.inline
+    def setMaxYaw(value: Double): Self = this.set("maxYaw", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMaxYaw: Self = this.set("maxYaw", js.undefined)
+    
+    @scala.inline
+    def setMinPitch(value: Double): Self = this.set("minPitch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMinPitch: Self = this.set("minPitch", js.undefined)
+    
+    @scala.inline
+    def setMinYaw(value: Double): Self = this.set("minYaw", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMinYaw: Self = this.set("minYaw", js.undefined)
+    
+    @scala.inline
+    def setPitchAxis(value: Vector3): Self = this.set("pitchAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePitchAxis: Self = this.set("pitchAxis", js.undefined)
+    
+    @scala.inline
+    def setSlerpAmount(value: Double): Self = this.set("slerpAmount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSlerpAmount: Self = this.set("slerpAmount", js.undefined)
+    
+    @scala.inline
+    def setUpAxis(value: Vector3): Self = this.set("upAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpAxis: Self = this.set("upAxis", js.undefined)
+    
+    @scala.inline
+    def setUpAxisSpace(value: Space): Self = this.set("upAxisSpace", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpAxisSpace: Self = this.set("upAxisSpace", js.undefined)
+    
+    @scala.inline
+    def setYawAxis(value: Vector3): Self = this.set("yawAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteYawAxis: Self = this.set("yawAxis", js.undefined)
+  }
 }
-

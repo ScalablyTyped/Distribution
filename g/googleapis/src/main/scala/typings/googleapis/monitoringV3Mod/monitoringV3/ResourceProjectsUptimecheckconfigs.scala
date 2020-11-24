@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Uptimecheckconfigs")
 @js.native
 class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.uptimeCheckConfigs.create
     * @desc Creates a new uptime check configuration.
@@ -45,6 +47,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUptimeCheckConfig]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.uptimeCheckConfigs.delete
     * @desc Deletes an uptime check configuration. Note that this method will
@@ -79,6 +82,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.uptimeCheckConfigs.get
     * @desc Gets a single uptime check configuration.
@@ -110,6 +114,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUptimeCheckConfig]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.uptimeCheckConfigs.list
     * @desc Lists the existing valid uptime check configurations for the
@@ -144,6 +149,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListUptimeCheckConfigsResponse]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.uptimeCheckConfigs.patch
     * @desc Updates an uptime check configuration. You can either replace the
@@ -181,4 +187,3 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUptimeCheckConfig]
   ): Unit = js.native
 }
-

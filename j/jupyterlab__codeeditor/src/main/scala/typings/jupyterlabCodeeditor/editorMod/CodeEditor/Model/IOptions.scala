@@ -3,31 +3,65 @@ package typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IOptions extends js.Object {
+  
   /**
     * The mimetype of the model.
     */
-  var mimeType: js.UndefOr[String] = js.undefined
+  var mimeType: js.UndefOr[String] = js.native
+  
   /**
     * An optional modelDB for storing model state.
     */
-  var modelDB: js.UndefOr[IModelDB] = js.undefined
+  var modelDB: js.UndefOr[IModelDB] = js.native
+  
   /**
     * The initial value of the model.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.native
 }
-
 object IOptions {
+  
   @scala.inline
-  def apply(mimeType: String = null, modelDB: IModelDB = null, value: String = null): IOptions = {
+  def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    
+    @scala.inline
+    def setModelDB(value: IModelDB): Self = this.set("modelDB", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteModelDB: Self = this.set("modelDB", js.undefined)
+    
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
 }
-

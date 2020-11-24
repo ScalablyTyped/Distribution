@@ -5,14 +5,15 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.ObservedValueOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "zip")
 @js.native
 object zip extends js.Object {
-  def apply[R](array: js.Array[ObservableInput[_]]): Observable[R] = js.native
+  
+  def apply[O /* <: ObservableInput[_] */](array: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = js.native
   def apply[R](array: js.Array[ObservableInput[_]], resultSelector: js.Function1[/* repeated */ js.Any, R]): Observable[R] = js.native
-  def apply[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = js.native
+  def apply[O /* <: ObservableInput[_] */](observables: O*): Observable[js.Array[ObservedValueOf[O]]] = js.native
   def apply[O1 /* <: ObservableInput[_] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
   def apply[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
   def apply[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, R](
@@ -100,4 +101,3 @@ object zip extends js.Object {
     ]
   ): Observable[R] = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.std.HTMLElement
 import typings.winjs.anon.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Displays a modal dialog which can display arbitrary HTML content.
@@ -23,18 +23,18 @@ class ContentDialog ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.ContentDialog")
 @js.native
 object ContentDialog extends js.Object {
+  
   /**
     * Specifies the result of dismissing the ContentDialog.
     **/
   var DismissalResult: None = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

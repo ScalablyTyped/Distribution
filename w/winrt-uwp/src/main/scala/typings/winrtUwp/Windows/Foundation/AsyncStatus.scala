@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AsyncStatus extends js.Object
-
 /** Specifies the status of an asynchronous operation. */
 @JSGlobal("Windows.Foundation.AsyncStatus")
 @js.native
 object AsyncStatus extends js.Object {
+  
   /** The operation was canceled. */
   @js.native
   sealed trait canceled extends AsyncStatus
@@ -26,6 +26,4 @@ object AsyncStatus extends js.Object {
   /** The operation has started. */
   @js.native
   sealed trait started extends AsyncStatus
-  
 }
-

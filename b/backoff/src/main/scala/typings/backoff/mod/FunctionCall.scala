@@ -7,16 +7,18 @@ import typings.backoff.backoffStrings.callback
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FunctionCall[T] extends EventEmitter {
+  
   /**
     * Aborts the call and causes the completion callback to be invoked with an abort
     * error if the call was pending or running; does nothing otherwise. This method
     * can safely be called multiple times.
     */
   def abort(): Unit = js.native
+  
   /**
     * Emitted when a call is aborted.
     */
@@ -40,6 +42,7 @@ trait FunctionCall[T] extends EventEmitter {
     */
   @JSName("addListener")
   def addListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  
   @JSName("emit")
   def emit_abort(event: abort): Boolean = js.native
   @JSName("emit")
@@ -48,6 +51,7 @@ trait FunctionCall[T] extends EventEmitter {
   def emit_backoff(event: backoff, number: Double, delay: Double, error: js.Any): Boolean = js.native
   @JSName("emit")
   def emit_call(event: typings.backoff.backoffStrings.call, args: T): Boolean = js.native
+  
   /**
     * Sets the maximum number of backoffs before the call is aborted. By default,
     * there is no limit on the number of backoffs that can be performed.
@@ -58,6 +62,7 @@ trait FunctionCall[T] extends EventEmitter {
     * @param maxNumberOfBackoffs: maximum number of backoffs before the call is aborted
     */
   def failAfter(maxNumberOfBackoffs: Double): this.type = js.native
+  
   /**
     * Returns the number of times the wrapped function call was retried. For a
     * wrapped function that succeeded immediately, this would return 0. This
@@ -65,22 +70,27 @@ trait FunctionCall[T] extends EventEmitter {
     * before, during and after the wrapped function invocation.
     */
   def getNumRetries(): Double = js.native
+  
   /**
     * Returns whether the call is aborted.
     */
   def isAborted(): Boolean = js.native
+  
   /**
     * Returns whether the call is completed.
     */
   def isCompleted(): Boolean = js.native
+  
   /**
     * Returns whether the call is pending, i.e. hasn't been started.
     */
   def isPending(): Boolean = js.native
+  
   /**
     * Returns whether the call is in progress.
     */
   def isRunning(): Boolean = js.native
+  
   @JSName("listenerCount")
   def listenerCount_abort(`type`: abort): Double = js.native
   @JSName("listenerCount")
@@ -89,6 +99,7 @@ trait FunctionCall[T] extends EventEmitter {
   def listenerCount_call(`type`: typings.backoff.backoffStrings.call): Double = js.native
   @JSName("listenerCount")
   def listenerCount_callback(`type`: callback): Double = js.native
+  
   @JSName("listeners")
   def listeners_abort(event: abort): js.Array[js.Function0[Unit]] = js.native
   @JSName("listeners")
@@ -97,6 +108,7 @@ trait FunctionCall[T] extends EventEmitter {
   ] = js.native
   @JSName("listeners")
   def listeners_call(event: typings.backoff.backoffStrings.call): js.Array[js.Function1[/* args */ T, Unit]] = js.native
+  
   @JSName("on")
   def on_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -106,6 +118,7 @@ trait FunctionCall[T] extends EventEmitter {
   ): this.type = js.native
   @JSName("on")
   def on_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -115,6 +128,7 @@ trait FunctionCall[T] extends EventEmitter {
   ): this.type = js.native
   @JSName("once")
   def once_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -124,6 +138,7 @@ trait FunctionCall[T] extends EventEmitter {
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -133,6 +148,7 @@ trait FunctionCall[T] extends EventEmitter {
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  
   @JSName("removeAllListeners")
   def removeAllListeners_abort(event: abort): this.type = js.native
   @JSName("removeAllListeners")
@@ -141,6 +157,7 @@ trait FunctionCall[T] extends EventEmitter {
   def removeAllListeners_call(event: typings.backoff.backoffStrings.call): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_callback(event: callback): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
@@ -150,6 +167,7 @@ trait FunctionCall[T] extends EventEmitter {
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  
   /**
     * Sets the predicate which will be invoked to determine whether a given error
     * should be retried or not, e.g. a network error would be retriable while a type
@@ -163,6 +181,7 @@ trait FunctionCall[T] extends EventEmitter {
     * by the wrapped function and determines whether it is retriable.
     */
   def retryIf(predicate: js.Function1[/* error */ js.Any, Boolean]): this.type = js.native
+  
   /**
     * Sets the backoff strategy to use. This method should be called before
     * `call.start()` otherwise an exception will be thrown.
@@ -170,14 +189,13 @@ trait FunctionCall[T] extends EventEmitter {
     * @param strategy: strategy instance to use, defaults to `FibonacciStrategy`.
     */
   def setStrategy(strategy: BackoffStrategy): this.type = js.native
+  
   /**
     * Initiates the call the wrapped function. This method should only be called
     * once otherwise an exception will be thrown.
     */
   def start(): Unit = js.native
 }
-
 @JSImport("backoff", "FunctionCall")
 @js.native
 object FunctionCall extends TopLevel[FunctionCallConstructor]
-

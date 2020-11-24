@@ -5,11 +5,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsOrdersV3OrderUpdate
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2OrdersOrderUpdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/order", JSImport.Namespace)
 @js.native
 object orderMod extends js.Object {
+  
   @js.native
   class OrderUpdate protected ()
     extends _RichResponseItem
@@ -23,6 +24,4 @@ object orderMod extends js.Object {
       */
     def this(options: GoogleActionsV2OrdersOrderUpdate) = this()
   }
-  
 }
-

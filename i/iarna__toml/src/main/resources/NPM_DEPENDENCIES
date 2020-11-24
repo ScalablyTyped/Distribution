@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@iarna/toml" : "2.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@iarna/toml" : "2.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

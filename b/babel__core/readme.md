@@ -10,10 +10,10 @@ Babel compiler core.
 | ------------------ | :-------------: |
 | Full name          | @babel/core |
 | Keywords           | 6to5, babel, classes, const, es6, harmony, let, modules, transpile, transpiler, var, babel-core, compiler |
-| # releases         | 54 |
-| # dependents       | 6743 |
-| # downloads        | 377163697 |
-| # stars            | 2 |
+| # releases         | 43 |
+| # dependents       | 9160 |
+| # downloads        | 726183592 |
+| # stars            | 3 |
 
 ## Links
 - [Homepage](https://babeljs.io/)

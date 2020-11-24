@@ -4,31 +4,12 @@ import typings.mangopay2NodejsSdk.mod.report.CreateReport
 import typings.mangopay2NodejsSdk.mod.report.ReportData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Reports")
 @js.native
 class Reports () extends js.Object {
-  /**
-    * Create a report
-    * @param report
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateReport, ReportData] = js.native
-  /**
-    * Get all reports
-    * @param options
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[ReportData]] = js.native
-  /**
-    * Get a report
-    * @param reportId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, ReportData] = js.native
+  
   /**
     * Create a report
     * @param report
@@ -64,6 +45,14 @@ class Reports () extends js.Object {
   def create(data: CreateReport, options: MethodOptionWithResponse): js.Promise[WithResponse[ReportData]] = js.native
   def create(data: CreateReport, options: MethodOptionWithoutResponse): js.Promise[ReportData] = js.native
   /**
+    * Create a report
+    * @param report
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateReport, ReportData] = js.native
+  
+  /**
     * Get a report
     * @param reportId
     * @param options
@@ -97,6 +86,7 @@ class Reports () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[ReportData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[ReportData] = js.native
+  
   /**
     * Get all reports
     * @param options
@@ -126,5 +116,18 @@ class Reports () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[ReportData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[ReportData]] = js.native
+  /**
+    * Get all reports
+    * @param options
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[ReportData]] = js.native
+  
+  /**
+    * Get a report
+    * @param reportId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, ReportData] = js.native
 }
-

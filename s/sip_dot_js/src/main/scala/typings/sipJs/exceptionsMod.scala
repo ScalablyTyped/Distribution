@@ -2,11 +2,12 @@ package typings.sipJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/api/exceptions", JSImport.Namespace)
 @js.native
 object exceptionsMod extends js.Object {
+  
   @js.native
   class ContentTypeUnsupportedError ()
     extends typings.sipJs.contentTypeUnsupportedMod.ContentTypeUnsupportedError {
@@ -35,6 +36,4 @@ object exceptionsMod extends js.Object {
     extends typings.sipJs.stateTransitionMod.StateTransitionError {
     def this(message: String) = this()
   }
-  
 }
-

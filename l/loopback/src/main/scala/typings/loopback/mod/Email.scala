@@ -3,7 +3,7 @@ package typings.loopback.mod
 import typings.loopback.anon.From
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Email model.  Extends LoopBack base [Model](#model-new-model).
@@ -18,26 +18,32 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", "Email")
 @js.native
 class Email () extends Model {
+  
   /** Email sender address.  Required. */
   var from: String = js.native
+  
   /** HTML body of email. */
   var html: String = js.native
-  /** Email subject string.  Required. */
-  var subject: String = js.native
-  /** Text body of email. */
-  var text: String = js.native
-  /** Email addressee.  Required. */
-  var to: String = js.native
+  
   /**
     * A shortcut for Email.send(this).
     */
   def send(): Unit = js.native
+  
+  /** Email subject string.  Required. */
+  var subject: String = js.native
+  
+  /** Text body of email. */
+  var text: String = js.native
+  
+  /** Email addressee.  Required. */
+  var to: String = js.native
 }
-
 /* static members */
 @JSImport("loopback", "Email")
 @js.native
 object Email extends js.Object {
+  
   /**
     * Send an email with the given `options`
     * Example Options
@@ -62,4 +68,3 @@ object Email extends js.Object {
     */
   def send(callback: js.Function0[Unit], options: From): Unit = js.native
 }
-

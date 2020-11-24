@@ -4,11 +4,12 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.PartialObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/util/toSubscriber", JSImport.Namespace)
 @js.native
 object toSubscriberMod extends js.Object {
+  
   def toSubscriber[T](): Subscriber[T] = js.native
   def toSubscriber[T](
     nextOrObserver: js.UndefOr[scala.Nothing],
@@ -42,4 +43,3 @@ object toSubscriberMod extends js.Object {
     complete: js.Function0[Unit]
   ): Subscriber[T] = js.native
 }
-

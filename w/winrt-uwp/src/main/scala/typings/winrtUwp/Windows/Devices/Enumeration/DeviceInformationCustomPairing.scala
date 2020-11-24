@@ -7,22 +7,25 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.pairingrequested
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a custom pairing for a DeviceInformation object. */
 @js.native
 trait DeviceInformationCustomPairing extends js.Object {
-  /** Raised when a pairing action is requested. */
-  @JSName("onpairingrequested")
-  var onpairingrequested_Original: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs] = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pairingrequested(
     `type`: pairingrequested,
     listener: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs]
   ): Unit = js.native
+  
   /** Raised when a pairing action is requested. */
   def onpairingrequested(ev: DevicePairingRequestedEventArgs with WinRTEvent[DeviceInformationCustomPairing]): Unit = js.native
+  /** Raised when a pairing action is requested. */
+  @JSName("onpairingrequested")
+  var onpairingrequested_Original: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs] = js.native
+  
   /**
     * Attempts to pair the device.
     * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
@@ -48,6 +51,7 @@ trait DeviceInformationCustomPairing extends js.Object {
     minProtectionLevel: DevicePairingProtectionLevel,
     devicePairingSettings: IDevicePairingSettings
   ): IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pairingrequested(
@@ -55,4 +59,3 @@ trait DeviceInformationCustomPairing extends js.Object {
     listener: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs]
   ): Unit = js.native
 }
-

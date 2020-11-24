@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Content API for Shopping
@@ -28,22 +28,38 @@ import scala.scalajs.js.annotation._
 class Content protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var accounts: ResourceAccounts = js.native
+  
   var accountstatuses: ResourceAccountstatuses = js.native
+  
   var accounttax: ResourceAccounttax = js.native
+  
   var context: APIRequestContext = js.native
+  
   var datafeeds: ResourceDatafeeds = js.native
+  
   var datafeedstatuses: ResourceDatafeedstatuses = js.native
+  
   var inventory: ResourceInventory = js.native
+  
   var liasettings: ResourceLiasettings = js.native
+  
   var orderinvoices: ResourceOrderinvoices = js.native
+  
   var orderpayments: ResourceOrderpayments = js.native
+  
   var orderreports: ResourceOrderreports = js.native
+  
   var orderreturns: ResourceOrderreturns = js.native
+  
   var orders: ResourceOrders = js.native
+  
   var pos: ResourcePos = js.native
+  
   var products: ResourceProducts = js.native
+  
   var productstatuses: ResourceProductstatuses = js.native
+  
   var shippingsettings: ResourceShippingsettings = js.native
 }
-

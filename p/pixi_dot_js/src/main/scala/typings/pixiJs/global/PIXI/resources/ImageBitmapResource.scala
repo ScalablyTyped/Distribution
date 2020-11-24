@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI.resources
 import typings.std.ImageBitmap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for ImageBitmap.
@@ -18,11 +18,11 @@ class ImageBitmapResource protected ()
   extends typings.pixiJs.PIXI.resources.ImageBitmapResource {
   def this(source: ImageBitmap) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.resources.ImageBitmapResource")
 @js.native
 object ImageBitmapResource extends js.Object {
+  
   /**
     * Used to auto-detect the type of resource.
     *
@@ -32,4 +32,3 @@ object ImageBitmapResource extends js.Object {
     */
   def test(source: ImageBitmap): Boolean = js.native
 }
-

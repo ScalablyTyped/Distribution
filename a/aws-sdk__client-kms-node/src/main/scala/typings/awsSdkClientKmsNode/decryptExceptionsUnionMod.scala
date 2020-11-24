@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/types/DecryptExceptionsUnion", JSImport.Namespace)
 @js.native
 object decryptExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException
     - typings.awsSdkClientKmsNode.typesDisabledExceptionMod.DisabledException
@@ -18,6 +19,4 @@ object decryptExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException
   */
   trait DecryptExceptionsUnion extends js.Object
-  
 }
-

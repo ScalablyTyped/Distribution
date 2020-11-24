@@ -4,9 +4,37 @@ import typings.googleapisCommon.schemaMod.HttpMethod
 import typings.googleapisCommon.schemaMod.SchemaType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleapisCommonStrings {
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @scala.inline
+  def int32: int32 = "int32".asInstanceOf[int32]
+  
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
+  
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
   @js.native
   sealed trait GET extends HttpMethod
   
@@ -33,24 +61,4 @@ object googleapisCommonStrings {
   
   @js.native
   sealed trait string extends SchemaType
-  
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def int32: int32 = "int32".asInstanceOf[int32]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
 }
-

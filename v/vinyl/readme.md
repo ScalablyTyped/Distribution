@@ -10,9 +10,9 @@ Virtual file format.
 | ------------------ | :-------------: |
 | Full name          | vinyl |
 | Keywords           | virtual, filesystem, file, directory, stat, path |
-| # releases         | 2 |
-| # dependents       | 1279 |
-| # downloads        | 253557304 |
+| # releases         | 0 |
+| # dependents       | 1375 |
+| # downloads        | 242622105 |
 | # stars            | 43 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.stellarSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EventTarget is an interface implemented by objects that can receive events and may have listeners for them. */
 @js.native
 trait EventTarget extends js.Object {
+  
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
     * The options argument sets listener-specific options. For compatibility this can be a
@@ -26,11 +27,13 @@ trait EventTarget extends js.Object {
   def addEventListener(`type`: String, listener: EventListenerObject, options: AddEventListenerOptions): Unit = js.native
   def addEventListener(`type`: String, listener: EventListener, options: Boolean): Unit = js.native
   def addEventListener(`type`: String, listener: EventListener, options: AddEventListenerOptions): Unit = js.native
+  
   /**
     * Dispatches a synthetic event event to target and returns true
     * if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
     */
   def dispatchEvent(event: Event): Boolean = js.native
+  
   /**
     * Removes the event listener in target's event listener list with the same type, callback, and options.
     */
@@ -44,4 +47,3 @@ trait EventTarget extends js.Object {
   def removeEventListener(`type`: String, callback: EventListener, options: Boolean): Unit = js.native
   def removeEventListener(`type`: String, callback: EventListener, options: EventListenerOptions): Unit = js.native
 }
-

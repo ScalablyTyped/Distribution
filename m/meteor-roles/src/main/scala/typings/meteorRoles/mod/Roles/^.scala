@@ -3,11 +3,12 @@ package typings.meteorRoles.mod.Roles
 import typings.meteor.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles")
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Constant used to reference the special 'global' group that
     * can be used to apply blanket permissions across all groups.
@@ -26,6 +27,7 @@ object ^ extends js.Object {
     * @final
     */
   var GLOBAL_GROUP: String = js.native
+  
   /**
     * Subscription handle for the currently logged in user's permissions.
     *
@@ -43,4 +45,3 @@ object ^ extends js.Object {
     */
   var subscription: Subscription = js.native
 }
-

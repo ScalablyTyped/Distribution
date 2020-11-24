@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NDCertificatePlatformID extends js.Object
-
 /** Indicates the client platforms with which a PlayReady-ND certificate can be associated. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCertificatePlatformID")
 @js.native
 object NDCertificatePlatformID extends js.Object {
+  
   /** Client platform is the Google Android operating system running on an ARM processor. */
   @js.native
   sealed trait androidOnARM extends NDCertificatePlatformID
@@ -58,6 +58,4 @@ object NDCertificatePlatformID extends js.Object {
   /** Client platform is the Xbox operating system. */
   @js.native
   sealed trait xboxOne extends NDCertificatePlatformID
-  
 }
-

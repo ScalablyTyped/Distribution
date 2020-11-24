@@ -8,7 +8,7 @@ import typings.officeJs.Visio.Interfaces.ShapeDataItemCollectionData
 import typings.officeJs.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ShapeDataItemCollection extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ShapeDataItemCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[ShapeDataItem] = js.native
+  
   /**
     *
     * Gets the number of Shape Data Items.
@@ -30,6 +30,7 @@ trait ShapeDataItemCollection extends ClientObject {
     * [Api set:  1.1]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     *
     * Gets the ShapeDataItem using its name.
@@ -39,6 +40,10 @@ trait ShapeDataItemCollection extends ClientObject {
     * @param key Key is the name of the ShapeDataItem to be retrieved.
     */
   def getItem(key: String): ShapeDataItem = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[ShapeDataItem] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -59,10 +64,10 @@ trait ShapeDataItemCollection extends ClientObject {
   def load(option: String): ShapeDataItemCollection = js.native
   def load(option: js.Array[String]): ShapeDataItemCollection = js.native
   def load(option: LoadOption): ShapeDataItemCollection = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Visio.ShapeDataItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeDataItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): ShapeDataItemCollectionData = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The LineJoint defines rendering of joints between thick lines */
 /* Rewritten from type alias, can be one of: 
@@ -18,17 +18,20 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 */
 trait LineJoint extends js.Object
-
 object LineJoint {
+  
   /** the edges of the thick lines will be joined by lines */
   @scala.inline
   def BEVEL: `2` = 2.asInstanceOf[`2`]
+  
   /** the middle value between the joints is used */
   @scala.inline
   def MIDDLE: `1` = 1.asInstanceOf[`1`]
+  
   /** the lines join at intersections */
   @scala.inline
   def MITER: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the area is not filled.
     *
@@ -44,6 +47,7 @@ object LineJoint {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the dash is a point
     *
@@ -54,4 +58,3 @@ object LineJoint {
   @scala.inline
   def ROUND: `4` = 4.asInstanceOf[`4`]
 }
-

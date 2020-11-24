@@ -2,7 +2,7 @@ package typings.abortController.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The AbortController.
@@ -14,13 +14,14 @@ import scala.scalajs.js.annotation._
   * Initialize this controller.
   */
 class AbortController () extends js.Object {
-  /**
-    * Returns the `AbortSignal` object associated with this object.
-    */
-  val signal: typings.abortController.anon.AbortSignal = js.native
+  
   /**
     * Abort and signal to any observers that the associated activity is to be aborted.
     */
   def abort(): Unit = js.native
+  
+  /**
+    * Returns the `AbortSignal` object associated with this object.
+    */
+  val signal: typings.abortController.anon.AbortSignal = js.native
 }
-

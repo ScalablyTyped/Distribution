@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/searchconsole/v1", "searchconsole_v1.Resource$Urltestingtools$Mobilefriendlytest")
 @js.native
 class ResourceUrltestingtoolsMobilefriendlytest protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * searchconsole.urlTestingTools.mobileFriendlyTest.run
     * @desc Runs Mobile-Friendly Test for a given URL.
@@ -45,4 +47,3 @@ class ResourceUrltestingtoolsMobilefriendlytest protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRunMobileFriendlyTestResponse]
   ): Unit = js.native
 }
-

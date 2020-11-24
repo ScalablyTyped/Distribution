@@ -5,33 +5,29 @@ import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.typesDeleteSamplingRuleInputMod.DeleteSamplingRuleInput
 import typings.awsSdkClientXrayNode.typesDeleteSamplingRuleOutputMod.DeleteSamplingRuleOutput
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-xray-node/commands/DeleteSamplingRuleCommand", JSImport.Namespace)
 @js.native
 object deleteSamplingRuleCommandMod extends js.Object {
+  
   @js.native
   class DeleteSamplingRuleCommand protected () extends Command[
           InputTypesUnion, 
           DeleteSamplingRuleInput, 
           OutputTypesUnion, 
           DeleteSamplingRuleOutput, 
-          XRayResolvedConfiguration, 
-          Readable
+          XRayResolvedConfiguration
         ] {
     def this(input: DeleteSamplingRuleInput) = this()
-    val middlewareStack: MiddlewareStack[DeleteSamplingRuleInput, DeleteSamplingRuleOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: XRayResolvedConfiguration
     ): Handler[DeleteSamplingRuleInput, DeleteSamplingRuleOutput] = js.native
   }
-  
 }
-

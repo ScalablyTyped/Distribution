@@ -3,11 +3,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 import typings.luminoAlgorithm.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.removeFirstWhere")
 @js.native
 object removeFirstWhere extends js.Object {
+  
   /**
     * Remove the first occurrence of a value which matches a predicate.
     *
@@ -61,4 +62,3 @@ object removeFirstWhere extends js.Object {
     stop: Double
   ): Index[T] = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.binVersion.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bin-version", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Get the version of a binary in [semver](https://github.com/npm/node-semver) format.
   @param binary - The name of or path to the binary to get the version from.
@@ -31,4 +32,3 @@ object ^ extends js.Object {
   def apply(binary: String): js.Promise[String] = js.native
   def apply(binary: String, options: Options): js.Promise[String] = js.native
 }
-

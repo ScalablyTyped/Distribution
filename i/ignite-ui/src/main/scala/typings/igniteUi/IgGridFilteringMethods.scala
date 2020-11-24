@@ -2,26 +2,32 @@ package typings.igniteUi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IgGridFilteringMethods extends js.Object {
+  
   def changeGlobalLanguage(): Unit = js.native
+  
   def changeGlobalRegional(): Unit = js.native
+  
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.iggridfiltering#options:language)
     * Note that this method is for rare scenarios, see [language](ui.iggridfiltering#options:language) or [locale](ui.iggridfiltering#options:locale) option setter
     */
   def changeLocale(): Unit = js.native
+  
   /**
     * Changes the the regional settings of widget element to the language specified in [options.regional](ui.iggridfiltering#options:regional)
     * Note that this method is for rare scenarios, use [regional](ui.iggridfiltering#options:regional) option setter
     */
   def changeRegional(): Unit = js.native
+  
   /**
     * Destroys the filtering widget - remove fitler row, unbinds events, returns the grid to its previous state.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Applies filtering programmatically and updates the UI by default.
     *
@@ -33,16 +39,19 @@ trait IgGridFilteringMethods extends js.Object {
   def filter(expressions: js.Array[_], updateUI: js.UndefOr[scala.Nothing], addedFromAdvanced: Boolean): Unit = js.native
   def filter(expressions: js.Array[_], updateUI: Boolean): Unit = js.native
   def filter(expressions: js.Array[_], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
+  
   /**
     * Returns the count of data records that match filtering conditions
     */
   def getFilteringMatchesCount(): Double = js.native
+  
   /**
     * Check whether filterCondition requires or not filtering expression - e.g. if filterCondition is "lastMonth", "thisMonth", "null", "notNull", "true", "false", etc. then filtering expression is NOT required
     *
     * @param filterCondition filtering condition - e.g. "true", "false",  "yesterday", "empty", "null", etc.
     */
   def requiresFilteringExpression(filterCondition: String): Boolean = js.native
+  
   /**
     * Toggle filter row when mode is simple or [advancedModeEditorsVisible](ui.iggridfiltering#options:advancedModeEditorsVisible) is true. Otherwise show/hide advanced dialog.
     *
@@ -50,4 +59,3 @@ trait IgGridFilteringMethods extends js.Object {
     */
   def toggleFilterRowByFeatureChooser(event: String): Unit = js.native
 }
-

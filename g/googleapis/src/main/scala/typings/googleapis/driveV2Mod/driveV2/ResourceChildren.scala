@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Children")
 @js.native
 class ResourceChildren protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.children.delete
     * @desc Removes a child from a folder.
@@ -38,6 +40,7 @@ class ResourceChildren protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceChildrenDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceChildrenDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.children.get
     * @desc Gets a specific child reference.
@@ -67,6 +70,7 @@ class ResourceChildren protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChildReference]
   ): Unit = js.native
+  
   /**
     * drive.children.insert
     * @desc Inserts a file into a folder.
@@ -97,6 +101,7 @@ class ResourceChildren protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChildReference]
   ): Unit = js.native
+  
   /**
     * drive.children.list
     * @desc Lists a folder's children.
@@ -130,4 +135,3 @@ class ResourceChildren protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChildList]
   ): Unit = js.native
 }
-

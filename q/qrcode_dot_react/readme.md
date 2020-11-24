@@ -10,9 +10,9 @@ React component to generate QR codes
 | ------------------ | :-------------: |
 | Full name          | qrcode.react |
 | Keywords           | react, react-component, qrcode |
-| # releases         | 7 |
-| # dependents       | 111 |
-| # downloads        | 4353398 |
+| # releases         | 6 |
+| # dependents       | 161 |
+| # downloads        | 7240391 |
 | # stars            | 4 |
 
 ## Links

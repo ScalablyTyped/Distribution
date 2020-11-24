@@ -4,14 +4,12 @@ import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Promise<node.http.IncomingMessage> & {  req :node.http.ClientRequest} */
 @js.native
 trait PromiseIncomingMessagereq extends js.Object {
-  var req: ClientRequest = js.native
-  @JSName(js.Symbol.toStringTag)
-  val toStringTag: String = js.native
+  
   /**
     * Attaches a callback for only the rejection of the Promise.
     * @param onrejected The callback to execute when the Promise is rejected.
@@ -19,6 +17,7 @@ trait PromiseIncomingMessagereq extends js.Object {
     */
   def `catch`[TResult](): js.Promise[IncomingMessage | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[IncomingMessage | TResult] = js.native
+  
   /**
     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
     * resolved value cannot be modified from the callback.
@@ -27,6 +26,9 @@ trait PromiseIncomingMessagereq extends js.Object {
     */
   def `finally`(): js.Promise[IncomingMessage] = js.native
   def `finally`(onfinally: js.Function0[Unit]): js.Promise[IncomingMessage] = js.native
+  
+  var req: ClientRequest = js.native
+  
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
     * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -44,5 +46,7 @@ trait PromiseIncomingMessagereq extends js.Object {
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: String = js.native
 }
-

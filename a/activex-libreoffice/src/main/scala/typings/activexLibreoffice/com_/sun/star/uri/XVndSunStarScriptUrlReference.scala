@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.uri
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents absolute " vnd.sun.star.script " URL references. */
 @js.native
 trait XVndSunStarScriptUrlReference
   extends XUriReference
      with XVndSunStarScriptUrl
-
 object XVndSunStarScriptUrlReference {
+  
   @scala.inline
   def apply(
     Authority: String,
@@ -53,4 +53,3 @@ object XVndSunStarScriptUrlReference {
     __obj.asInstanceOf[XVndSunStarScriptUrlReference]
   }
 }
-

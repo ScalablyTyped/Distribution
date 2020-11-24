@@ -4,11 +4,12 @@ import typings.luminoWidgets.anon.PartialICellConfig
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/gridlayout", "GridLayout.setCellConfig")
 @js.native
 object setCellConfig extends js.Object {
+  
   /**
     * Set the cell config for the given widget.
     *
@@ -18,4 +19,3 @@ object setCellConfig extends js.Object {
     */
   def apply(widget: Widget, value: PartialICellConfig): Unit = js.native
 }
-

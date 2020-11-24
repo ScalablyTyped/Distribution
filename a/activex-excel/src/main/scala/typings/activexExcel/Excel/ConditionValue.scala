@@ -8,17 +8,18 @@ import typings.activexExcel.activexExcelNumbers.`4`
 import typings.activexExcel.activexExcelNumbers.`5`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConditionValue extends js.Object {
+  
   val Application: typings.activexExcel.Excel.Application = js.native
+  
   val Creator: XlCreator = js.native
+  
   @JSName("Excel.ConditionValue_typekey")
   var ExcelDotConditionValue_typekey: ConditionValue = js.native
-  val Parent: js.Any = js.native
-  val Type: XlConditionValueTypes = js.native
-  var Value: Double | String = js.native
+  
   def Modify(newtype: XlConditionValueTypes): Unit = js.native
   def Modify(newtype: XlConditionValueTypes, newvalue: js.Any): Unit = js.native
   @JSName("Modify")
@@ -33,5 +34,10 @@ trait ConditionValue extends js.Object {
   def Modify_4(newtype: `4`, newvalue: String): Unit = js.native
   @JSName("Modify")
   def Modify_5(newtype: `5`, newvalue: Double): Unit = js.native
+  
+  val Parent: js.Any = js.native
+  
+  val Type: XlConditionValueTypes = js.native
+  
+  var Value: Double | String = js.native
 }
-

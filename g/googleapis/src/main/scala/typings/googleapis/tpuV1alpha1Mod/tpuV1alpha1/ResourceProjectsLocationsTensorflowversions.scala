@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu/v1alpha1", "tpu_v1alpha1.Resource$Projects$Locations$Tensorflowversions")
 @js.native
 class ResourceProjectsLocationsTensorflowversions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tpu.projects.locations.tensorflowVersions.get
     * @desc Gets TensorFlow Version.
@@ -44,6 +46,7 @@ class ResourceProjectsLocationsTensorflowversions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTensorFlowVersion]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.tensorflowVersions.list
     * @desc Lists TensorFlow versions supported by this API.
@@ -80,4 +83,3 @@ class ResourceProjectsLocationsTensorflowversions protected () extends js.Object
     callback: BodyResponseCallback[SchemaListTensorFlowVersionsResponse]
   ): Unit = js.native
 }
-

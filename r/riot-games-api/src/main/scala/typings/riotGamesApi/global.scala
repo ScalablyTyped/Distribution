@@ -2,13 +2,15 @@ package typings.riotGamesApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object RiotGamesAPI extends js.Object {
+    
     /**
       * champion-v1.2
       */
@@ -92,8 +94,5 @@ object global extends js.Object {
       */
     @js.native
     object TournamentProvider extends js.Object
-    
   }
-  
 }
-

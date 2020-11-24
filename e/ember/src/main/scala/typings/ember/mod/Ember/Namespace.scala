@@ -3,7 +3,7 @@ package typings.ember.mod.Ember
 import typings.emberObject.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Namespace is an object usually used to contain other objects or methods
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.Namespace")
 @js.native
 class Namespace () extends default
-

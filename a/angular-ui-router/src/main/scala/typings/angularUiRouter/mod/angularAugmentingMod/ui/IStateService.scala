@@ -3,18 +3,17 @@ package typings.angularUiRouter.mod.angularAugmentingMod.ui
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IStateService extends js.Object {
+  
   @JSName("$current")
   var $current: IResolvedState = js.native
+  
   /** A reference to the state's config object. However you passed it in. Useful for accessing custom data. */
   var current: IState = js.native
-  /** A param object, e.g. {sectionId: section.id)}, that you'd like to test against the current active state. */
-  var params: IStateParamsService = js.native
-  /** Currently pending transition. A promise that'll resolve or reject. */
-  var transition: IPromise[js.Object] = js.native
+  
   def get(): js.Array[IState] = js.native
   def get(state: String): IState = js.native
   def get(state: String, context: String): IState = js.native
@@ -22,6 +21,7 @@ trait IStateService extends js.Object {
   def get(state: IState): IState = js.native
   def get(state: IState, context: String): IState = js.native
   def get(state: IState, context: IState): IState = js.native
+  
   /**
     * Convenience method for transitioning to a new state. $state.go calls $state.transitionTo internally but automatically sets options to { location: true, inherit: true, relative: $state.$current, notify: true }. This allows you to easily use an absolute or relative to path and specify only the parameters you'd like to update (while letting unspecified parameters inherit from the currently active ancestor states).
     *
@@ -44,6 +44,7 @@ trait IStateService extends js.Object {
   def go(to: IState, params: js.UndefOr[scala.Nothing], options: IStateOptions): IPromise[_] = js.native
   def go(to: IState, params: js.Object): IPromise[_] = js.native
   def go(to: IState, params: js.Object, options: IStateOptions): IPromise[_] = js.native
+  
   def href(state: String): String = js.native
   def href(state: String, params: js.UndefOr[scala.Nothing], options: IHrefOptions): String = js.native
   def href(state: String, params: js.Object): String = js.native
@@ -52,17 +53,27 @@ trait IStateService extends js.Object {
   def href(state: IState, params: js.UndefOr[scala.Nothing], options: IHrefOptions): String = js.native
   def href(state: IState, params: js.Object): String = js.native
   def href(state: IState, params: js.Object, options: IHrefOptions): String = js.native
+  
   def includes(state: String): Boolean = js.native
   def includes(state: String, params: js.UndefOr[scala.Nothing], options: js.Any): Boolean = js.native
   def includes(state: String, params: js.Object): Boolean = js.native
   def includes(state: String, params: js.Object, options: js.Any): Boolean = js.native
+  
   def is(state: String): Boolean = js.native
   def is(state: String, params: js.Object): Boolean = js.native
   def is(state: IState): Boolean = js.native
   def is(state: IState, params: js.Object): Boolean = js.native
+  
+  /** A param object, e.g. {sectionId: section.id)}, that you'd like to test against the current active state. */
+  var params: IStateParamsService = js.native
+  
   def reload(): IPromise[_] = js.native
   def reload(reloadState: String): IPromise[_] = js.native
   def reload(reloadState: IState): IPromise[_] = js.native
+  
+  /** Currently pending transition. A promise that'll resolve or reject. */
+  var transition: IPromise[js.Object] = js.native
+  
   def transitionTo(state: String): IPromise[_] = js.native
   def transitionTo(state: String, params: js.UndefOr[scala.Nothing], options: IStateOptions): IPromise[_] = js.native
   def transitionTo(state: String, params: js.UndefOr[scala.Nothing], updateLocation: Boolean): IPromise[_] = js.native
@@ -76,4 +87,3 @@ trait IStateService extends js.Object {
   def transitionTo(state: IState, params: js.Object, options: IStateOptions): IPromise[_] = js.native
   def transitionTo(state: IState, params: js.Object, updateLocation: Boolean): IPromise[_] = js.native
 }
-

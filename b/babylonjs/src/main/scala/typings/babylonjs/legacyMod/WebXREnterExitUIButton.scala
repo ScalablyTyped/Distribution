@@ -5,7 +5,7 @@ import typings.babylonjs.XRSessionMode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "WebXREnterExitUIButton")
 @js.native
@@ -26,4 +26,3 @@ class WebXREnterExitUIButton protected ()
   referenceSpaceType: XRReferenceSpaceType
   ) = this()
 }
-

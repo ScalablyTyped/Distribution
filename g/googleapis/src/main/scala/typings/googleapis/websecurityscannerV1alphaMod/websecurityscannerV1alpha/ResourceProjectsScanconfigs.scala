@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1alpha", "websecurityscanner_v1alpha.Resource$Projects$Scanconfigs")
 @js.native
 class ResourceProjectsScanconfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var scanRuns: ResourceProjectsScanconfigsScanruns = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.create
     * @desc Creates a new ScanConfig.
@@ -43,6 +44,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScanConfig]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.delete
     * @desc Deletes an existing ScanConfig and its child resources.
@@ -71,6 +73,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.get
     * @desc Gets a ScanConfig.
@@ -99,6 +102,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScanConfig]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.list
     * @desc Lists ScanConfigs under a given project.
@@ -132,6 +136,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListScanConfigsResponse]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.patch
     * @desc Updates a ScanConfig. This method support partial update of a
@@ -163,6 +168,9 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScanConfig]
   ): Unit = js.native
+  
+  var scanRuns: ResourceProjectsScanconfigsScanruns = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.start
     * @desc Start a ScanRun according to the given ScanConfig.
@@ -193,4 +201,3 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaScanRun]
   ): Unit = js.native
 }
-

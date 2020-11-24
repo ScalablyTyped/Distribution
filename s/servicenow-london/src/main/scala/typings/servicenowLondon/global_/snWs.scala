@@ -3,11 +3,12 @@ package typings.servicenowLondon.global_
 import typings.servicenowLondon.snWs.RestHTTPMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sn_ws")
 @js.native
 object snWs extends js.Object {
+  
   /**
     * The RESTMessageV2 API allows you to send outbound REST messages using JavaScript.
     * Use the RESTResponseV2 API to manage the response returned by the REST provider.
@@ -57,6 +58,4 @@ object snWs extends js.Object {
     extends typings.servicenowLondon.snWs.SOAPMessageV2 {
     def this(soapMessage: String, soapFunction: String) = this()
   }
-  
 }
-

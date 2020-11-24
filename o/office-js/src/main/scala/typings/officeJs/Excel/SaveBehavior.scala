@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SaveBehavior extends js.Object
-
 /**
   *
   * Specifies the save behavior for Workbook.save API.
@@ -16,6 +15,7 @@ sealed trait SaveBehavior extends js.Object
 @JSGlobal("Excel.SaveBehavior")
 @js.native
 object SaveBehavior extends js.Object {
+  
   /**
     * Prompts the saveas experience to the user if the workbook has not been saved,
     Ignored if the workbook was previously saved.
@@ -31,6 +31,4 @@ object SaveBehavior extends js.Object {
     */
   @js.native
   sealed trait save extends SaveBehavior
-  
 }
-

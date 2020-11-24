@@ -2,7 +2,7 @@ package typings.heremaps.global.H.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Namespace contains functionality related to internationalization.
@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("H.ui.i18n")
 @js.native
 object i18n extends js.Object {
+  
+  /**
+    * Default available locales. UI provides default translations for this set of locale codes.
+    */
+  val defaultLocales: js.Array[String] = js.native
+  
   /**
     * This class is used for internationalization of UI components.
     */
@@ -19,10 +25,4 @@ object i18n extends js.Object {
     def this(locale: String) = this()
     def this(locale: String, opt_translationMap: js.Any) = this()
   }
-  
-  /**
-    * Default available locales. UI provides default translations for this set of locale codes.
-    */
-  val defaultLocales: js.Array[String] = js.native
 }
-

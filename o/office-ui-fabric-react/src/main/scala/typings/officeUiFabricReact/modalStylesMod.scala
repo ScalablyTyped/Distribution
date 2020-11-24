@@ -4,12 +4,13 @@ import typings.officeUiFabricReact.modalTypesMod.IModalStyleProps
 import typings.officeUiFabricReact.modalTypesMod.IModalStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/Modal/Modal.styles", JSImport.Namespace)
 @js.native
 object modalStylesMod extends js.Object {
+  
   val animationDuration: String = js.native
+  
   def getStyles(props: IModalStyleProps): IModalStyles = js.native
 }
-

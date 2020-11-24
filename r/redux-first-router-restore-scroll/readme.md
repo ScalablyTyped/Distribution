@@ -12,7 +12,7 @@ think of your app in states not routes (and, yes, while keeping the address bar 
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 154049 |
+| # downloads        | 148033 |
 | # stars            | 1 |
 
 ## Links

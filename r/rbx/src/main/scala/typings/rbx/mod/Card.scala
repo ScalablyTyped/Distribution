@@ -52,21 +52,12 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx", "Card")
 @js.native
 object Card extends js.Object {
-  var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
-  var Footer: NoneTAsComponentextendsEl = js.native
-  var Header: NoneTAsComponentextendsElCall = js.native
-  var Image: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  var defaultProps: AsElementType with (Partial[
-    HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
-  ]) = js.native
-  var displayName: js.UndefOr[String] = js.native
+  
   def apply[TAsComponent /* <: ElementType[_] */](
     props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
       ComponentProps[TAsComponent], 
@@ -76,5 +67,21 @@ object Card extends js.Object {
       ]
     ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
   ): Element | Null = js.native
+  
+  var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  @JSName("$$typeof")
+  var DollarDollartypeof: js.Symbol = js.native
+  
+  var Footer: NoneTAsComponentextendsEl = js.native
+  
+  var Header: NoneTAsComponentextendsElCall = js.native
+  
+  var Image: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  var defaultProps: AsElementType with (Partial[
+    HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
+  ]) = js.native
+  
+  var displayName: js.UndefOr[String] = js.native
 }
-

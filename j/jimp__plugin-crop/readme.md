@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-crop
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 crop an image.
@@ -10,9 +10,9 @@ crop an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-crop |
 | Keywords           | - |
-| # releases         | 71 |
+| # releases         | 103 |
 | # dependents       | 2 |
-| # downloads        | 14429790 |
+| # downloads        | 37934097 |
 | # stars            | 0 |
 
 ## Links

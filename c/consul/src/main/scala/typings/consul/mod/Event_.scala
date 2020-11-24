@@ -5,11 +5,13 @@ import typings.consul.mod.Event.ListOptions
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Event_ extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Fires a new user event
     */
@@ -36,6 +38,7 @@ trait Event_ extends js.Object {
     * Fires a new user event
     */
   def fire[TData](opts: FireOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Lists the most recent events an agent has seen
     */
@@ -55,4 +58,3 @@ trait Event_ extends js.Object {
     */
   def list[TData](opts: ListOptions, callback: Callback[TData]): Unit = js.native
 }
-

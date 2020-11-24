@@ -10,9 +10,9 @@ Bash-like brace expansion, implemented in JavaScript. Safer than other brace exp
 | ------------------ | :-------------: |
 | Full name          | braces |
 | Keywords           | alpha, alphabetical, bash, brace, braces, expand, expansion, filepath, fill, fs, glob, globbing, letter, match, matches, matching, number, numerical, path, range, ranges, sh |
-| # releases         | 6 |
-| # dependents       | 133 |
-| # downloads        | 807743305 |
+| # releases         | 4 |
+| # dependents       | 197 |
+| # downloads        | 1154244281 |
 | # stars            | 3 |
 
 ## Links

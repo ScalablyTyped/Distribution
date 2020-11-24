@@ -14,11 +14,18 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "msk")
 @js.native
 object msk extends js.Object {
+  
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  
+  def getConfiguration(args: GetConfigurationArgs): js.Promise[GetConfigurationResult] = js.native
+  def getConfiguration(args: GetConfigurationArgs, opts: InvokeOptions): js.Promise[GetConfigurationResult] = js.native
+  
   @js.native
   class Cluster protected ()
     extends typings.pulumiAws.mskMod.Cluster {
@@ -31,6 +38,30 @@ object msk extends js.Object {
       */
     def this(name: String, args: ClusterArgs) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object Cluster extends js.Object {
+    
+    /**
+      * Get an existing Cluster resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.mskClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mskClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.mskClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.mskClusterMod.Cluster = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/cluster.Cluster */ Boolean = js.native
   }
   
   @js.native
@@ -46,37 +77,10 @@ object msk extends js.Object {
     def this(name: String, args: ConfigurationArgs) = this()
     def this(name: String, args: ConfigurationArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
-  def getConfiguration(args: GetConfigurationArgs): js.Promise[GetConfigurationResult] = js.native
-  def getConfiguration(args: GetConfigurationArgs, opts: InvokeOptions): js.Promise[GetConfigurationResult] = js.native
-  /* static members */
-  @js.native
-  object Cluster extends js.Object {
-    /**
-      * Get an existing Cluster resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.mskClusterMod.Cluster = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mskClusterMod.Cluster = js.native
-    def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.mskClusterMod.Cluster = js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.mskClusterMod.Cluster = js.native
-    /**
-      * Returns true if the given object is an instance of Cluster.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/cluster.Cluster */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object Configuration extends js.Object {
+    
     /**
       * Get an existing Configuration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,12 +94,11 @@ object msk extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mskConfigurationMod.Configuration = js.native
     def get(name: String, id: Input[ID], state: ConfigurationState): typings.pulumiAws.mskConfigurationMod.Configuration = js.native
     def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.mskConfigurationMod.Configuration = js.native
+    
     /**
       * Returns true if the given object is an instance of Configuration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/configuration.Configuration */ Boolean = js.native
   }
-  
 }
-

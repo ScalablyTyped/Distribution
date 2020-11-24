@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Cell in a UITableRow._
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class UITableCell ()
   extends typings.scriptableIos.UITableCell
-
 /* static members */
 @JSGlobal("UITableCell")
 @js.native
 object UITableCell extends js.Object {
+  
   /**
     * _Constructs a button cell._
     *
@@ -25,6 +25,7 @@ object UITableCell extends js.Object {
     * @see https://docs.scriptable.app/uitablecell/#button
     */
   def button(title: String): typings.scriptableIos.UITableCell = js.native
+  
   /**
     * _Constructs an image cell._
     *
@@ -33,6 +34,7 @@ object UITableCell extends js.Object {
     * @see https://docs.scriptable.app/uitablecell/#image
     */
   def image(image: typings.scriptableIos.Image): typings.scriptableIos.UITableCell = js.native
+  
   /**
     * _Constructs an image cell._
     *
@@ -41,10 +43,11 @@ object UITableCell extends js.Object {
     * @see https://docs.scriptable.app/uitablecell/#imageaturl
     */
   def imageAtURL(url: String): typings.scriptableIos.UITableCell = js.native
+  
   /**
     * _Constructs a text cell._
     *
-    * Constructs a new cell containing a text.
+    * Constructs a new cell containing text.
     * @param title - Optional title to show in the cell.
     * @param subtitle - Optional subtitle shown below the title.
     * @see https://docs.scriptable.app/uitablecell/#text
@@ -54,4 +57,3 @@ object UITableCell extends js.Object {
   def text(title: String): typings.scriptableIos.UITableCell = js.native
   def text(title: String, subtitle: String): typings.scriptableIos.UITableCell = js.native
 }
-

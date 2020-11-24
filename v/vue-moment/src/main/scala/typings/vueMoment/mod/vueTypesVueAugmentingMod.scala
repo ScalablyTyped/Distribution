@@ -7,15 +7,15 @@ import typings.vueMoment.mod.VueMomentPlugin.Options
 import typings.vueMoment.mod.VueMomentPlugin.VueStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vue/types/vue", JSImport.Namespace)
 @js.native
 object vueTypesVueAugmentingMod extends js.Object {
+  
   @js.native
   trait Vue extends js.Object {
-    @JSName("$moment")
-    var $moment_Original: VueStatic = js.native
+    
     @JSName("$moment")
     def $moment(): Moment = js.native
     @JSName("$moment")
@@ -42,7 +42,7 @@ object vueTypesVueAugmentingMod extends js.Object {
     def $moment(inp: MomentInput): Moment = js.native
     @JSName("$moment")
     def $moment(options: Options): Unit = js.native
+    @JSName("$moment")
+    var $moment_Original: VueStatic = js.native
   }
-  
 }
-

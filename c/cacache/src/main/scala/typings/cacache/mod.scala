@@ -13,19 +13,25 @@ import typings.std.Date
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cacache", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def clearMemoized(): Record[String, CacheObject] = js.native
+  
   def setLocale(locale: String): js.Any = js.native
+  
   @js.native
   object get extends js.Object {
+    
     def apply(cachePath: String, key: String): js.Promise[GetCacheObject] = js.native
     def apply(cachePath: String, key: String, options: Options): js.Promise[GetCacheObject] = js.native
+    
     def byDigest(cachePath: String, hash: String): js.Promise[String] = js.native
     def byDigest(cachePath: String, hash: String, opts: Options): js.Promise[String] = js.native
+    
     /**
       * Looks up a Subresource Integrity hash in the cache. If content exists
       * for this `integrity`, it will return an object, with the specific single
@@ -34,26 +40,34 @@ object mod extends js.Object {
       * `false`.
       */
     def hasContent(cachePath: String, hash: String): js.Promise[HasContentObject | `false`] = js.native
+    
     def hasContentnc(cachePath: String, hash: String): HasContentObject | `false` = js.native
+    
     /**
       * Looks up `key` in the cache index, returning information about the entry
       * if one exists.
       */
     def info(cachePath: String, key: String): js.Promise[CacheObject] = js.native
+    
     def sync(cachePath: String, key: String): CacheObject = js.native
     def sync(cachePath: String, key: String, opts: Options): CacheObject = js.native
+    
     def syncDigest(cachePath: String, key: String): CacheObject = js.native
     def syncDigest(cachePath: String, key: String, opts: Options): CacheObject = js.native
+    
     @js.native
     object copy extends js.Object {
+      
       def apply(cachePath: String, key: String, dest: String): js.Promise[CacheObject] = js.native
       def apply(cachePath: String, key: String, dest: String, opts: Options): js.Promise[CacheObject] = js.native
+      
       def byDigest(cachePath: String, hash: String, dest: String): js.Promise[String] = js.native
       def byDigest(cachePath: String, hash: String, dest: String, opts: Options): js.Promise[String] = js.native
     }
     
     @js.native
     object stream extends js.Object {
+      
       /**
         * Returns a Readable Stream of the cached data identified by `key`.
         *
@@ -70,15 +84,17 @@ object mod extends js.Object {
         */
       def apply(cachePath: String, key: String): ReadableStream = js.native
       def apply(cachePath: String, key: String, opts: Options): ReadableStream = js.native
+      
       def byDigest(cachePath: String, hash: String): ReadableStream = js.native
       def byDigest(cachePath: String, hash: String, opts: Options): ReadableStream = js.native
     }
-    
   }
   
   @js.native
   object ls extends js.Object {
+    
     def apply(cachePath: String): js.Promise[Cache] = js.native
+    
     /**
       * Lists info for all entries currently in the cache as a single large
       * object.
@@ -91,8 +107,10 @@ object mod extends js.Object {
   
   @js.native
   object put extends js.Object {
+    
     def apply(cachePath: String, key: String, data: js.Any): js.Promise[String] = js.native
     def apply(cachePath: String, key: String, data: js.Any, opts: typings.cacache.enMod.put.Options): js.Promise[String] = js.native
+    
     /**
       * Returns a Writable Stream that inserts data written to it into the cache.
       * Emits an `integrity` event with the digest of written contents when it
@@ -104,18 +122,22 @@ object mod extends js.Object {
   
   @js.native
   object rm extends js.Object {
+    
     def apply(cachePath: String, key: String): js.Promise[_] = js.native
+    
     /**
       * Clears the entire cache. Mainly by blowing away the cache directory
       * itself.
       */
     def all(cachePath: String): js.Promise[Unit] = js.native
+    
     /**
       * Removes the content identified by `integrity`. Any index entries
       * referring to it will not be usable again until the content is re-added
       * to the cache with an identical digest.
       */
     def content(cachePath: String, hash: String): js.Promise[Boolean] = js.native
+    
     /**
       * Removes the index entry for `key`. Content will still be accessible if
       * requested directly by content address (`get.stream.byDigest`).
@@ -129,6 +151,7 @@ object mod extends js.Object {
   
   @js.native
   object tmp extends js.Object {
+    
     /**
       * Sets the `uid` and `gid` properties on all files and folders within the
       * tmp folder to match the rest of the cache.
@@ -136,6 +159,7 @@ object mod extends js.Object {
       * Use this after manually writing files into `tmp.mkdir` or `tmp.withTmp`.
       */
     def fix(cachePath: String): js.Promise[Unit] = js.native
+    
     /**
       * Returns a unique temporary directory inside the cache's `tmp` dir. This
       * directory will use the same safe user assignment that all the other stuff
@@ -150,6 +174,7 @@ object mod extends js.Object {
       */
     def mkdir(cachePath: String): js.Promise[String] = js.native
     def mkdir(cachePath: String, opts: typings.cacache.enMod.tmp.Options): js.Promise[String] = js.native
+    
     def withTmp(cachePath: String, cb: Callback): Unit = js.native
     /**
       * Creates a temporary directory with `tmp.mkdir()` and calls `cb` with it.
@@ -164,14 +189,14 @@ object mod extends js.Object {
   
   @js.native
   object verify extends js.Object {
+    
     def apply(cachePath: String): js.Promise[_] = js.native
     def apply(cachePath: String, opts: typings.cacache.enMod.verify.Options): js.Promise[_] = js.native
+    
     /**
       * Returns a Date representing the last time `cacache.verify` was run on
       * `cache`.
       */
     def lastRun(cachePath: String): js.Promise[Date] = js.native
   }
-  
 }
-

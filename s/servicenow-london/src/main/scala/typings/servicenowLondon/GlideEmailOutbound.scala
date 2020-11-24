@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlideEmailOutbound extends js.Object {
+  
   /**
     * Adds the address to either the cc or bcc list.
     *
@@ -28,6 +29,7 @@ trait GlideEmailOutbound extends js.Object {
     * email.addAddress('bcc', 'joe.employee@something.com', 'dudley rocks');
     */
   def addAddress(`type`: String, address: String, displayName: String): Unit = js.native
+  
   /**
     * Returns the email's subject line.
     *
@@ -37,10 +39,12 @@ trait GlideEmailOutbound extends js.Object {
     * var subject = email.getSubject();
     */
   def getSubject(): String = js.native
+  
   /**
     * Returns the email's watermark.
     */
   def getWatermark(): String = js.native
+  
   /**
     * Sets the body of the email.
     *
@@ -50,6 +54,7 @@ trait GlideEmailOutbound extends js.Object {
     * email.setBody('Dear Sir, ...');
     */
   def setBody(bodyText: String): Unit = js.native
+  
   /**
     * Sets the sender's address.
     *
@@ -59,6 +64,7 @@ trait GlideEmailOutbound extends js.Object {
     * email.setFrom('joe.employee@something.com');
     */
   def setFrom(address: String): Unit = js.native
+  
   /**
     * Sets the reply to address.
     *
@@ -68,6 +74,7 @@ trait GlideEmailOutbound extends js.Object {
     * email.setReplyTo('joe.employee@something.com');
     */
   def setReplyTo(address: String): Unit = js.native
+  
   /**
     * Sets the email's subject line.
     *
@@ -78,4 +85,3 @@ trait GlideEmailOutbound extends js.Object {
     */
   def setSubject(subject: String): Unit = js.native
 }
-

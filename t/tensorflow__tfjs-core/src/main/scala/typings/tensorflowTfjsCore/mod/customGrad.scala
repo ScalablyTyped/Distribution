@@ -1,14 +1,15 @@
 package typings.tensorflowTfjsCore.mod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.engineMod.CustomGradientFunc
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core", "customGrad")
 @js.native
 object customGrad extends js.Object {
+  
   /**
     * Overrides the gradient computation of a function `f`.
     *
@@ -46,8 +47,8 @@ object customGrad extends js.Object {
     * @param f The function to evaluate in forward mode, which should return
     *     `{value: Tensor, gradFunc: (dy, saved) => Tensor[]}`, where `gradFunc`
     *     returns the custom gradients of `f` with respect to its inputs.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def apply[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], T] = js.native
 }
-

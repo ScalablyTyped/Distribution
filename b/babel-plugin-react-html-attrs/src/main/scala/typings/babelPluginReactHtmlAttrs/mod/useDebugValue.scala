@@ -2,11 +2,12 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-react-html-attrs", "useDebugValue")
 @js.native
 object useDebugValue extends js.Object {
+  
   /**
     * `useDebugValue` can be used to display a label for custom hooks in React DevTools.
     *
@@ -21,4 +22,3 @@ object useDebugValue extends js.Object {
   def apply[T](value: T): Unit = js.native
   def apply[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
 }
-

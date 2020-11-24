@@ -69,11 +69,11 @@ import typings.semanticUiProgress.semanticUiProgressStrings.value
 import typings.semanticUiProgress.semanticUiProgressStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Progress_ extends js.Object {
-  var settings: ProgressSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Returns normalized value inside acceptable range specified by total.
@@ -263,5 +263,6 @@ trait Progress_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ProgressSettings): JQuery = js.native
   def apply(settings: ProgressSettings): JQuery = js.native
+  
+  var settings: ProgressSettings = js.native
 }
-

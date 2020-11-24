@@ -2,7 +2,7 @@ package typings.grpcGrpcJs.serverCallMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.grpcGrpcJs.serverCallMod.UnaryHandler[RequestType, ResponseType]
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   - typings.grpcGrpcJs.serverCallMod.BidiStreamingHandler[RequestType, ResponseType]
 */
 trait Handler[RequestType, ResponseType] extends js.Object
-

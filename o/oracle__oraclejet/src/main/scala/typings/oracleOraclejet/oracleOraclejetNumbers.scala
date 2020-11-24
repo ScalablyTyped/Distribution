@@ -3,9 +3,43 @@ package typings.oracleOraclejet
 import typings.oracleOraclejet.ojmessagingMod.SEVERITY_LEVEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oracleOraclejetNumbers {
+  
+  @scala.inline
+  def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @scala.inline
+  def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
+  
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @scala.inline
+  def `180`: `180` = 180.asInstanceOf[`180`]
+  
+  @scala.inline
+  def `2`: `2` = 2.asInstanceOf[`2`]
+  
+  @scala.inline
+  def `270`: `270` = 270.asInstanceOf[`270`]
+  
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @scala.inline
+  def `90`: `90` = 90.asInstanceOf[`90`]
+  
   @js.native
   sealed trait `-1` extends js.Object
   
@@ -38,28 +72,4 @@ object oracleOraclejetNumbers {
   
   @js.native
   sealed trait `90` extends js.Object
-  
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
-  def `180`: `180` = 180.asInstanceOf[`180`]
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
-  @scala.inline
-  def `270`: `270` = 270.asInstanceOf[`270`]
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
-  @scala.inline
-  def `90`: `90` = 90.asInstanceOf[`90`]
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Iampolicies")
 @js.native
 class ResourceIampolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * iam.iamPolicies.lintPolicy
     * @desc Lints a Cloud IAM policy object or its sub fields. Currently
@@ -60,6 +62,7 @@ class ResourceIampolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLintPolicyResponse]
   ): Unit = js.native
+  
   /**
     * iam.iamPolicies.queryAuditableServices
     * @desc Returns a list of services that support service level audit logging
@@ -93,4 +96,3 @@ class ResourceIampolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaQueryAuditableServicesResponse]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "MultiRenderTarget")
 @js.native
@@ -25,4 +25,3 @@ class MultiRenderTarget protected ()
   def this(name: String, size: js.Any, count: Double, scene: Scene) = this()
   def this(name: String, size: js.Any, count: Double, scene: Scene, options: IMultiRenderTargetOptions) = this()
 }
-

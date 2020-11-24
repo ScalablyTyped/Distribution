@@ -2,10 +2,10 @@ package typings.babylonjs.physicsJointMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babylonjs.physicsJointMod.IMotorEnabledJoint because var conflicts: physicsJoint. Inlined setMotor, setMotor, setMotor, setMotor, setLimit, setLimit, setLimit */ @JSImport("babylonjs/Physics/physicsJoint", "MotorEnabledJoint")
+- typings.babylonjs.physicsJointMod.IMotorEnabledJoint because var conflicts: physicsJoint. Inlined setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setLimit, setLimit, setLimit, setLimit */ @JSImport("babylonjs/Physics/physicsJoint", "MotorEnabledJoint")
 @js.native
 class MotorEnabledJoint protected () extends PhysicsJoint {
   /**
@@ -14,6 +14,7 @@ class MotorEnabledJoint protected () extends PhysicsJoint {
     * @param jointData The physica joint data for the joint
     */
   def this(`type`: Double, jointData: PhysicsJointData) = this()
+  
   /**
     * Set the motor's limits.
     * Attention, this function is plugin specific. Engines won't react 100% the same.
@@ -27,8 +28,10 @@ class MotorEnabledJoint protected () extends PhysicsJoint {
     * @param motorIndex The index of the motor
     */
   def setLimit(upperLimit: Double): Unit = js.native
+  def setLimit(upperLimit: Double, lowerLimit: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
   def setLimit(upperLimit: Double, lowerLimit: Double): Unit = js.native
   def setLimit(upperLimit: Double, lowerLimit: Double, motorIndex: Double): Unit = js.native
+  
   /**
     * Set the motor values.
     * Attention, this function is plugin specific. Engines won't react 100% the same.
@@ -42,8 +45,11 @@ class MotorEnabledJoint protected () extends PhysicsJoint {
     * @param motorIndex The index of the motor
     */
   def setMotor(): Unit = js.native
+  def setMotor(force: js.UndefOr[scala.Nothing], maxForce: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
+  def setMotor(force: js.UndefOr[scala.Nothing], maxForce: Double): Unit = js.native
+  def setMotor(force: js.UndefOr[scala.Nothing], maxForce: Double, motorIndex: Double): Unit = js.native
   def setMotor(force: Double): Unit = js.native
+  def setMotor(force: Double, maxForce: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
   def setMotor(force: Double, maxForce: Double): Unit = js.native
   def setMotor(force: Double, maxForce: Double, motorIndex: Double): Unit = js.native
 }
-

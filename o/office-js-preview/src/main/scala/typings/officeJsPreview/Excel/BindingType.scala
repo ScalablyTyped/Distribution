@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BindingType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.BindingType")
 @js.native
 object BindingType extends js.Object {
+  
   @js.native
   sealed trait range extends BindingType
   
@@ -21,6 +21,4 @@ object BindingType extends js.Object {
   
   @js.native
   sealed trait text extends BindingType
-  
 }
-

@@ -2,7 +2,7 @@ package typings.openpgp.mod.crypto
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see module:packet.PublicKeyEncryptedSessionKey
@@ -10,12 +10,14 @@ import scala.scalajs.js.annotation._
 @JSImport("openpgp", "crypto.pkcs5")
 @js.native
 object pkcs5 extends js.Object {
+  
   /**
     * Remove pkcs5 padding from a string.
     * @param msg Text to remove padding from
     * @returns Text with padding removed
     */
   def decode(msg: String): String = js.native
+  
   /**
     * Add pkcs5 padding to a text.
     * @param msg Text to add padding
@@ -23,4 +25,3 @@ object pkcs5 extends js.Object {
     */
   def encode(msg: String): String = js.native
 }
-

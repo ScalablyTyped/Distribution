@@ -6,7 +6,7 @@ import typings.jupyterlabApputils.dialogMod.Dialog.IOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "Dialog")
 @js.native
@@ -19,34 +19,26 @@ class Dialog[T] ()
   extends typings.jupyterlabApputils.dialogMod.Dialog[T] {
   def this(options: Partial[IOptions[T]]) = this()
 }
-
 @JSImport("@jupyterlab/apputils", "Dialog")
 @js.native
 object Dialog extends js.Object {
-  /**
-    * The default implementation of a dialog renderer.
-    */
-  @js.native
-  class Renderer ()
-    extends typings.jupyterlabApputils.dialogMod.Dialog.Renderer
   
-  /**
-    * The default renderer instance.
-    */
-  val defaultRenderer: typings.jupyterlabApputils.dialogMod.Dialog.Renderer = js.native
-  /**
-    * The dialog widget tracker.
-    */
-  val tracker: typings.jupyterlabApputils.widgettrackerMod.WidgetTracker[typings.jupyterlabApputils.dialogMod.Dialog[js.Any]] = js.native
   /**
     * Create a reject button.
     */
   def cancelButton(): ReadonlyIButton = js.native
   def cancelButton(options: PartialIButton): ReadonlyIButton = js.native
+  
   /**
     * Create a button item.
     */
   def createButton(value: PartialIButton): ReadonlyIButton = js.native
+  
+  /**
+    * The default renderer instance.
+    */
+  val defaultRenderer: typings.jupyterlabApputils.dialogMod.Dialog.Renderer = js.native
+  
   /**
     * Disposes all dialog instances.
     *
@@ -55,15 +47,28 @@ object Dialog extends js.Object {
     * may be discarded.
     */
   def flush(): Unit = js.native
+  
   /**
     * Create an accept button.
     */
   def okButton(): ReadonlyIButton = js.native
   def okButton(options: PartialIButton): ReadonlyIButton = js.native
+  
+  /**
+    * The dialog widget tracker.
+    */
+  val tracker: typings.jupyterlabApputils.widgettrackerMod.WidgetTracker[typings.jupyterlabApputils.dialogMod.Dialog[js.Any]] = js.native
+  
   /**
     * Create a warn button.
     */
   def warnButton(): ReadonlyIButton = js.native
   def warnButton(options: PartialIButton): ReadonlyIButton = js.native
+  
+  /**
+    * The default implementation of a dialog renderer.
+    */
+  @js.native
+  class Renderer ()
+    extends typings.jupyterlabApputils.dialogMod.Dialog.Renderer
 }
-

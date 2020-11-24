@@ -1,13 +1,12 @@
 package typings.awsSdkClientXrayNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-xray-node/model/CreateSamplingRuleInput", JSImport.Namespace)
 @js.native
 object createSamplingRuleInputMod extends js.Object {
-  val CreateSamplingRuleInput: Structure = js.native
+  
+  val CreateSamplingRuleInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

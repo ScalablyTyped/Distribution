@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "getParsedCommandLineOfConfigFile")
 @js.native
 object getParsedCommandLineOfConfigFile extends js.Object {
+  
   def apply(configFileName: java.lang.String, optionsToExtend: CompilerOptions, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = js.native
   def apply(
     configFileName: java.lang.String,
@@ -61,4 +62,3 @@ object getParsedCommandLineOfConfigFile extends js.Object {
     extraFileExtensions: js.Array[FileExtensionInfo]
   ): js.UndefOr[ParsedCommandLine] = js.native
 }
-

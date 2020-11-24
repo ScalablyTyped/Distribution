@@ -10,9 +10,9 @@ Convert Windows backslash paths to slash paths
 | ------------------ | :-------------: |
 | Full name          | slash |
 | Keywords           | path, seperator, slash, backslash, windows, convert |
-| # releases         | 3 |
-| # dependents       | 774 |
-| # downloads        | 534656871 |
+| # releases         | 2 |
+| # dependents       | 979 |
+| # downloads        | 1008631546 |
 | # stars            | 13 |
 
 ## Links

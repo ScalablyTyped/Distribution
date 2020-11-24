@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Control extends Element {
+  
   /**
     * The string given as "sStyleClass" will be added to the "class" attribute of this control's root HTML
     * element.This method is intended to be used to mark controls as being of a special type for
@@ -23,6 +24,7 @@ trait Control extends Element {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def addStyleClass(): Control = js.native
+  
   /**
     * Defines whether the user can select text inside this control.Defaults to <code>true</code> as long
     * as this method has not been called.<b>Note:</b>This only works in IE and Safari; for Firefox the
@@ -32,6 +34,7 @@ trait Control extends Element {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def allowTextSelection(bAllow: Boolean): Control = js.native
+  
   /**
     * Allows binding handlers for any native browser event to the root HTML element of this Control. This
     * internally handlesDOM element replacements caused by re-rendering.IMPORTANT:This should be only used
@@ -54,6 +57,7 @@ trait Control extends Element {
   def attachBrowserEvent(sEventType: String, fnHandler: js.UndefOr[scala.Nothing], oListener: js.Any): Control = js.native
   def attachBrowserEvent(sEventType: String, fnHandler: js.Any): Control = js.native
   def attachBrowserEvent(sEventType: String, fnHandler: js.Any, oListener: js.Any): Control = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>validateFieldGroup</code> event of this
     * <code>sap.ui.core.Control</code>.When called, the context of the event handler (its
@@ -70,6 +74,7 @@ trait Control extends Element {
     */
   def attachValidateFieldGroup(oData: js.Any, fnFunction: js.Any): Control = js.native
   def attachValidateFieldGroup(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Control = js.native
+  
   /**
     * Returns whether the control has a given field group.If <code>vFieldGroupIds</code> is not given it
     * checks whether at least one field group ID is given for this control.If <code>vFieldGroupIds</code>
@@ -82,6 +87,7 @@ trait Control extends Element {
     */
   def checkFieldGroupIds(vFieldGroupIds: String): Boolean = js.native
   def checkFieldGroupIds(vFieldGroupIds: js.Array[String]): Boolean = js.native
+  
   /**
     * Removes event handlers which have been previously attached using {@link #attachBrowserEvent}.Note:
     * listeners are only removed, if the same combination of event type, callback functionand context
@@ -94,6 +100,7 @@ trait Control extends Element {
   def detachBrowserEvent(sEventType: String, fnHandler: js.UndefOr[scala.Nothing], oListener: js.Any): Unit = js.native
   def detachBrowserEvent(sEventType: String, fnHandler: js.Any): Unit = js.native
   def detachBrowserEvent(sEventType: String, fnHandler: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>validateFieldGroup</code> event of
     * this <code>sap.ui.core.Control</code>.The passed function and listener object must match the ones
@@ -103,6 +110,7 @@ trait Control extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachValidateFieldGroup(fnFunction: js.Any, oListener: js.Any): Control = js.native
+  
   /**
     * Fires event <code>validateFieldGroup</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fieldGroupIds</code> of type <code>string[]</code>field group IDs of the
@@ -111,6 +119,7 @@ trait Control extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireValidateFieldGroup(mArguments: js.Any): Control = js.native
+  
   /**
     * This function (if available on the concrete control) providesthe current accessibility state of the
     * control.Applications must not call this hook method directly, it is called by the
@@ -136,18 +145,21 @@ trait Control extends Element {
     * @returns Current accessibility state of the control.
     */
   def getAccessibilityInfo(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>busy</code>.Whether the control is currently in busy
     * state.Default value is <code>false</code>.
     * @returns Value of property <code>busy</code>
     */
   def getBusy(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>busyIndicatorDelay</code>.The delay in milliseconds, after
     * which the busy indicator will show up for this control.Default value is <code>1000</code>.
     * @returns Value of property <code>busyIndicatorDelay</code>
     */
   def getBusyIndicatorDelay(): Double = js.native
+  
   /**
     * Returns a list of all child controls with a field group ID.See {@link #checkFieldGroupIds
     * checkFieldGroupIds} for a description of the<code>vFieldGroupIds</code> parameter.Associated
@@ -157,24 +169,28 @@ trait Control extends Element {
     */
   def getControlsByFieldGroupId(vFieldGroupIds: String): js.Array[Control] = js.native
   def getControlsByFieldGroupId(vFieldGroupIds: js.Array[String]): js.Array[Control] = js.native
+  
   /**
     * Returns a copy of the field group IDs array. Modification of the field group IDsneed to call {@link
     * #setFieldGroupIds setFieldGroupIds} to apply the changes.
     * @returns copy of the field group IDs
     */
   def getFieldGroupIds(): js.Array[String] = js.native
+  
   /**
     * Returns the DOMNode Id to be used for the "labelFor" attribute of the label.By default, this is the
     * Id of the control itself.
     * @returns Id to be used for the <code>labelFor</code>
     */
   def getIdForLabel(): String = js.native
+  
   /**
     * Returns a renderer for this control instance.It is retrieved using the RenderManager as done during
     * rendering.
     * @returns a Renderer suitable for this Control instance.
     */
   def getRenderer(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>visible</code>.Whether the control should be visible on the
     * screen. If set to false, a placeholder is rendered instead of the real controlDefault value is
@@ -182,28 +198,33 @@ trait Control extends Element {
     * @returns Value of property <code>visible</code>
     */
   def getVisible(): Boolean = js.native
+  
   /**
     * Returns true if the given style class or all multiple style classes which are generated by splitting
     * the given string with space are already set on the controlvia previous call(s) to addStyleClass().
     * @param sStyleClass the style to check for
     */
   def hasStyleClass(sStyleClass: String): Boolean = js.native
+  
   /**
     * Check if the control is currently in busy state
     */
   def isBusy(): Unit = js.native
+  
   /**
     * Function is called when the rendering of the control is completed.Applications must not call this
     * hook method directly, it is called by the framework.Subclasses of Control should override this hook
     * to implement any necessary actions after the rendering.
     */
   def onAfterRendering(): Unit = js.native
+  
   /**
     * Function is called before the rendering of the control is started.Applications must not call this
     * hook method directly, it is called by the framework.Subclasses of Control should override this hook
     * to implement any necessary actions before the rendering.
     */
   def onBeforeRendering(): Unit = js.native
+  
   /**
     * Puts <code>this</code> control into the specified container (<code>oRef</code>) at the givenposition
     * (<code>oPosition</code>).First it is checked whether <code>oRef</code> is a container element /
@@ -242,6 +263,7 @@ trait Control extends Element {
   def placeAt(oRef: Control, oPosition: Double): Control = js.native
   def placeAt(oRef: Element, oPosition: String): Control = js.native
   def placeAt(oRef: Element, oPosition: Double): Control = js.native
+  
   /**
     * Removes the given string from the list of custom style classes that have been set previously.Regular
     * style classes like "sapUiBtn" cannot be removed.
@@ -249,18 +271,21 @@ trait Control extends Element {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def removeStyleClass(sStyleClass: String): Control = js.native
+  
   /**
     * Set the controls busy state.
     * @param bBusy The new busy state to be set
     * @returns <code>this</code> to allow method chaining
     */
   def setBusy(bBusy: Boolean): Control = js.native
+  
   /**
     * Define the delay, after which the busy indicator will show up
     * @param iDelay The delay in ms
     * @returns <code>this</code> to allow method chaining
     */
   def setBusyIndicatorDelay(iDelay: Double): Control = js.native
+  
   /**
     * Sets a new value for property <code>fieldGroupIds</code>.The IDs of a logical field group that this
     * control belongs to. All fields in a logical field group should share the same
@@ -272,6 +297,7 @@ trait Control extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFieldGroupIds(sFieldGroupIds: js.Array[String]): Control = js.native
+  
   /**
     * Sets a new value for property <code>visible</code>.Whether the control should be visible on the
     * screen. If set to false, a placeholder is rendered instead of the real controlWhen called with a
@@ -281,6 +307,7 @@ trait Control extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVisible(bVisible: Boolean): Control = js.native
+  
   /**
     * The string given as "sStyleClass" will be be either added to or removed from the "class" attribute
     * of this control's root HTML element,depending on the value of "bAdd": if bAdd is true, sStyleClass
@@ -293,6 +320,7 @@ trait Control extends Element {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def toggleStyleClass(sStyleClass: String, bAdd: Boolean): Control = js.native
+  
   /**
     * Triggers the validateFieldGroup event for this control.Called by sap.ui.core.UIArea if a field group
     * should be validated after is loses the focus or a validation key combibation was pressed.The
@@ -300,4 +328,3 @@ trait Control extends Element {
     */
   def triggerValidateFieldGroup(): Unit = js.native
 }
-

@@ -15,7 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of headers and footers.
@@ -26,8 +26,8 @@ trait AccessibleHeaderFooterView
   extends XAccessibleContext
      with XAccessibleComponent
      with XAccessibleEventBroadcaster
-
 object AccessibleHeaderFooterView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -74,4 +74,3 @@ object AccessibleHeaderFooterView {
     __obj.asInstanceOf[AccessibleHeaderFooterView]
   }
 }
-

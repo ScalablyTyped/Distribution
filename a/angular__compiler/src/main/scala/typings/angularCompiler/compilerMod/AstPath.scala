@@ -2,7 +2,7 @@ package typings.angularCompiler.compilerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "AstPath")
 @js.native
@@ -11,4 +11,3 @@ class AstPath[T] protected ()
   def this(path: js.Array[T]) = this()
   def this(path: js.Array[T], position: Double) = this()
 }
-

@@ -6,14 +6,11 @@ import typings.miniStore.typesMod.Store
 import typings.miniStore.typesMod.StoreProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mini-store", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class Provider ()
-    extends typings.miniStore.providerMod.Provider
   
   def connect[TStateProps, TOwnProps, State](): js.Function1[
     /* WrappedComponent */ js.Any, 
@@ -34,6 +31,10 @@ object mod extends js.Object {
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
   ] = js.native
+  
   def create[S](initialState: S): Store[S] = js.native
+  
+  @js.native
+  class Provider ()
+    extends typings.miniStore.providerMod.Provider
 }
-

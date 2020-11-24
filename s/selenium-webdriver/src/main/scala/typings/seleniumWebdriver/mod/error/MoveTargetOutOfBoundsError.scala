@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The target for mouse interaction is not in the browser’s viewport and
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class MoveTargetOutOfBoundsError () extends WebDriverError {
   def this(message: String) = this()
 }
-

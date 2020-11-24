@@ -12,7 +12,7 @@ Webpack plugin that makes the process return an error code on failure
 | Keywords           | webpack |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 137842 |
+| # downloads        | 126441 |
 | # stars            | 0 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.olx.source.TileUTFGridOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,6 +24,7 @@ class TileUTFGrid protected () extends Tile {
     * @api
     */
   def this(options: TileUTFGridOptions) = this()
+  
   /**
     * Calls the callback (synchronously by default) with the available data
     * for given coordinate and resolution (or `null` if not yet loaded or
@@ -58,6 +59,7 @@ class TileUTFGrid protected () extends Tile {
     opt_this: js.Any,
     opt_request: Boolean
   ): Unit = js.native
+  
   /**
     * Return the template from TileJSON.
     * @return The template from TileJSON.
@@ -65,4 +67,3 @@ class TileUTFGrid protected () extends Tile {
     */
   def getTemplate(): String = js.native
 }
-

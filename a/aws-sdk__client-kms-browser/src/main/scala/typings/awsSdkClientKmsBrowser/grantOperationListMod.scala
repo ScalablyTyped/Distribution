@@ -1,14 +1,13 @@
 package typings.awsSdkClientKmsBrowser
 
-import typings.awsSdkTypes.protocolMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/model/_GrantOperationList", JSImport.Namespace)
 @js.native
 object grantOperationListMod extends js.Object {
+  
   @JSName("_GrantOperationList")
-  val GrantOperationList: List = js.native
+  val GrantOperationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }
-

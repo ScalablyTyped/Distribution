@@ -5,7 +5,7 @@ import typings.ethereumProtocol.mod.AbiType.Fallback
 import typings.ethereumProtocol.mod.AbiType.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ethereumProtocol.mod.MethodAbi
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   - typings.ethereumProtocol.mod.FallbackAbi
 */
 trait FunctionAbi extends AbiDefinition
-
 object FunctionAbi {
+  
   @scala.inline
   def MethodAbi(
     constant: Boolean,
@@ -29,6 +29,7 @@ object FunctionAbi {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionAbi]
   }
+  
   @scala.inline
   def ConstructorAbi(
     inputs: js.Array[DataItem],
@@ -40,6 +41,7 @@ object FunctionAbi {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionAbi]
   }
+  
   @scala.inline
   def FallbackAbi(payable: Boolean, `type`: Fallback): FunctionAbi = {
     val __obj = js.Dynamic.literal(payable = payable.asInstanceOf[js.Any])
@@ -47,4 +49,3 @@ object FunctionAbi {
     __obj.asInstanceOf[FunctionAbi]
   }
 }
-

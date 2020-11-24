@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.SoundInstance3d plays a {@link pc.Sound} in 3D.
@@ -41,6 +41,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SoundInstance3d extends SoundInstance {
+  
   /**
     * Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be:
     
@@ -51,25 +52,29 @@ trait SoundInstance3d extends SoundInstance {
     Default is {@link pc.DISTANCE_LINEAR}.
     */
   var distanceModel: String = js.native
+  
   /**
     * The maximum distance from the listener at which audio falloff stops. Note the volume of the audio is not 0 after this distance, but just doesn't fall off anymore.
     */
   var maxDistance: Double = js.native
+  
   /**
     * The position of the sound in 3D space.
     */
   var position: Vec3 = js.native
+  
   /**
     * The reference distance for reducing volume as the sound source moves further from the listener.
     */
   var refDistance: Double = js.native
+  
   /**
     * The factor used in the falloff equation.
     */
   var rollOffFactor: Double = js.native
+  
   /**
     * The velocity of the sound.
     */
   var velocity: Vec3 = js.native
 }
-

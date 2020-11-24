@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.ecsCredentialsMod.ECSCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "ECSCredentials")
 @js.native
@@ -15,4 +15,3 @@ class ECSCredentials ()
   extends typings.awsSdk.mod.ECSCredentials {
   def this(options: ECSCredentialsOptions) = this()
 }
-

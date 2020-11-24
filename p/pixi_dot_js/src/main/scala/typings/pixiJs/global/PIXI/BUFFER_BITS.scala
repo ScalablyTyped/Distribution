@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bitwise OR of masks that indicate the buffers to be cleared.
@@ -18,10 +18,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.BUFFER_BITS")
 @js.native
 object BUFFER_BITS extends js.Object {
-  /* 0 */ val COLOR: typings.pixiJs.PIXI.BUFFER_BITS.COLOR with Double = js.native
-  /* 1 */ val DEPTH: typings.pixiJs.PIXI.BUFFER_BITS.DEPTH with Double = js.native
-  /* 2 */ val STENCIL: typings.pixiJs.PIXI.BUFFER_BITS.STENCIL with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.BUFFER_BITS with Double] = js.native
+  
+  /* 0 */ val COLOR: typings.pixiJs.PIXI.BUFFER_BITS.COLOR with Double = js.native
+  
+  /* 1 */ val DEPTH: typings.pixiJs.PIXI.BUFFER_BITS.DEPTH with Double = js.native
+  
+  /* 2 */ val STENCIL: typings.pixiJs.PIXI.BUFFER_BITS.STENCIL with Double = js.native
 }
-

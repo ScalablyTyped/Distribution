@@ -2,13 +2,14 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.floydWarshall
   */
 @js.native
 trait SearchFloydWarshallResult extends js.Object {
+  
   def distance(fromNode: CollectionSelection, toNode: NodeSingular): Double = js.native
   def distance(fromNode: CollectionSelection, toNode: Selector): Double = js.native
   /**
@@ -16,6 +17,7 @@ trait SearchFloydWarshallResult extends js.Object {
     */
   def distance(fromNode: NodeSingular, toNode: NodeSingular): Double = js.native
   def distance(fromNode: NodeSingular, toNode: Selector): Double = js.native
+  
   def path(fromNode: CollectionSelection, toNode: NodeSingular): CollectionReturnValue = js.native
   def path(fromNode: CollectionSelection, toNode: Selector): CollectionReturnValue = js.native
   /**
@@ -28,4 +30,3 @@ trait SearchFloydWarshallResult extends js.Object {
   def path(fromNode: NodeSingular, toNode: NodeSingular): CollectionReturnValue = js.native
   def path(fromNode: NodeSingular, toNode: Selector): CollectionReturnValue = js.native
 }
-

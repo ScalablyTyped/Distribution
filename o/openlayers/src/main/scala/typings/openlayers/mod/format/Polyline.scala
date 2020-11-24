@@ -10,7 +10,7 @@ import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 class Polyline () extends TextFeature {
   def this(opt_options: PolylineOptions) = this()
+  
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native
   def readFeature(source: String, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: GlobalObject): typings.openlayers.mod.Feature = js.native
@@ -51,6 +52,7 @@ class Polyline () extends TextFeature {
   def readFeature(source: Document, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
+  
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
@@ -68,6 +70,7 @@ class Polyline () extends TextFeature {
   def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  
   def readGeometry(source: String): Geometry = js.native
   def readGeometry(source: String, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: GlobalObject): Geometry = js.native
@@ -84,6 +87,7 @@ class Polyline () extends TextFeature {
   def readGeometry(source: Document, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Node): Geometry = js.native
   def readGeometry(source: Node, opt_options: ReadOptions): Geometry = js.native
+  
   def readProjection(source: String): Projection = js.native
   def readProjection(source: GlobalObject): Projection = js.native
   /**
@@ -95,6 +99,7 @@ class Polyline () extends TextFeature {
     */
   def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
+  
   /**
     * Write a single geometry in Polyline format.
     *
@@ -106,11 +111,11 @@ class Polyline () extends TextFeature {
   def writeGeometry(geometry: Geometry): String = js.native
   def writeGeometry(geometry: Geometry, opt_options: WriteOptions): String = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "format.Polyline")
 @js.native
 object Polyline extends js.Object {
+  
   /**
     * Decode a list of n-dimensional points from an encoded string
     *
@@ -124,6 +129,7 @@ object Polyline extends js.Object {
     */
   def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = js.native
   def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = js.native
+  
   /**
     * Decode a list of floating point numbers from an encoded string
     *
@@ -135,6 +141,7 @@ object Polyline extends js.Object {
     */
   def decodeFloats(encoded: String): js.Array[Double] = js.native
   def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = js.native
+  
   /**
     * Encode a list of n-dimensional points and return an encoded string
     *
@@ -150,6 +157,7 @@ object Polyline extends js.Object {
     */
   def encodeDeltas(numbers: js.Array[Double], stride: Double): String = js.native
   def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = js.native
+  
   /**
     * Encode a list of floating point numbers and return an encoded string
     *
@@ -165,4 +173,3 @@ object Polyline extends js.Object {
   def encodeFloats(numbers: js.Array[Double]): String = js.native
   def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = js.native
 }
-

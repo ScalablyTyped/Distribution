@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Coursework$Studentsubmissions")
 @js.native
 class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.get
     * @desc Returns a student submission.  * `PERMISSION_DENIED` if the
@@ -50,6 +52,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStudentSubmission]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.list
     * @desc Returns a list of student submissions that the requester is
@@ -96,6 +99,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListStudentSubmissionsResponse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.modifyAttachments
     * @desc Modifies attachments of student submission.  Attachments may only
@@ -141,6 +145,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStudentSubmission]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.patch
     * @desc Updates one or more fields of a student submission.  See
@@ -187,6 +192,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStudentSubmission]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.reclaim
     * @desc Reclaims a student submission on behalf of the student that owns
@@ -234,6 +240,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.return
     * @desc Returns a student submission.  Returning a student submission
@@ -281,6 +288,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.studentSubmissions.turnIn
     * @desc Turns in a student submission.  Turning in a student submission
@@ -327,4 +335,3 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

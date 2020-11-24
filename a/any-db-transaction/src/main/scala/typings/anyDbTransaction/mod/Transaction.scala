@@ -4,7 +4,7 @@ import typings.anyDb.mod.Queryable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transaction objects are are simple wrappers around a Connection that also implement the Queryable API,
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Transaction extends Queryable {
+  
   /**
     * Issue a COMMIT (or RELEASE ... in the case of nested transactions) statement to the database.
     * If a continuation is provided it will be called (possibly with an error) after the COMMIT
@@ -41,10 +42,10 @@ trait Transaction extends Queryable {
     */
   def commit(): Unit = js.native
   def commit(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * The same as Transaction.commit but issues a ROLLBACK. Again, the transaction will be unusable after calling this method.
     */
   def rollback(): Unit = js.native
   def rollback(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
 }
-

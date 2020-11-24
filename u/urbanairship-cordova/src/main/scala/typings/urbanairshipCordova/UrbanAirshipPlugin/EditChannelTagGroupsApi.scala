@@ -2,13 +2,14 @@ package typings.urbanairshipCordova.UrbanAirshipPlugin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the chainable API object returned by editChannelTagGroups().
   */
 @js.native
 trait EditChannelTagGroupsApi extends js.Object {
+  
   /**
     * Used to add the given tags to the given tag group.
     *
@@ -18,6 +19,7 @@ trait EditChannelTagGroupsApi extends js.Object {
     * @returns The chainable API instance.
     */
   def addTags(tagGroup: String, tags: js.Array[String]): EditChannelTagGroupsApi = js.native
+  
   /**
     * Used to apply the changes from the chained API call.
     *
@@ -27,6 +29,7 @@ trait EditChannelTagGroupsApi extends js.Object {
   def apply(): Unit = js.native
   @JSName("apply")
   def apply(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Used to remove the given tags from the given tag group.
     *
@@ -37,4 +40,3 @@ trait EditChannelTagGroupsApi extends js.Object {
     */
   def removeTags(tagGroup: String, tags: js.Array[String]): EditChannelTagGroupsApi = js.native
 }
-

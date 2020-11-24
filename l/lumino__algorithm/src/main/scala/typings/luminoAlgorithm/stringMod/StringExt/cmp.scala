@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.stringMod.StringExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/string", "StringExt.cmp")
 @js.native
 object cmp extends js.Object {
+  
   /**
     * A 3-way string comparison function.
     *
@@ -18,4 +19,3 @@ object cmp extends js.Object {
     */
   def apply(a: String, b: String): Double = js.native
 }
-

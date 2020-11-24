@@ -3,12 +3,12 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 import typings.winrt.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScaleAnimation extends IScaleAnimation
-
 object ScaleAnimation {
+  
   @scala.inline
   def apply(
     control1: Point,
@@ -27,4 +27,3 @@ object ScaleAnimation {
     __obj.asInstanceOf[ScaleAnimation]
   }
 }
-

@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.mturkMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "MTurk")
 @js.native
@@ -14,4 +14,3 @@ class MTurk ()
   extends typings.awsSdk.allMod.MTurk {
   def this(options: ClientConfiguration) = this()
 }
-

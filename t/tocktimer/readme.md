@@ -12,7 +12,7 @@ timer object/class. kickass!
 | Keywords           | timer, clock, repetition |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 35309 |
+| # downloads        | 80738 |
 | # stars            | 0 |
 
 ## Links

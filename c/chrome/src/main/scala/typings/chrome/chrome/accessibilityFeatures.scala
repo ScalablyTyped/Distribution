@@ -2,7 +2,7 @@ package typings.chrome.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Accessibility Features
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.accessibilityFeatures")
 @js.native
 object accessibilityFeatures extends js.Object
-

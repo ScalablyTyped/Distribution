@@ -1,7 +1,7 @@
 
 # Scala.js typings for builder-util
 
-Typings are for version 22.8.0
+Typings are for version 22.9.1
 
 ## Library description:
 Various utilities. Used by [electron-builder](https://github.com/electron-userland/electron-builder).
@@ -10,9 +10,9 @@ Various utilities. Used by [electron-builder](https://github.com/electron-userla
 | ------------------ | :-------------: |
 | Full name          | builder-util |
 | Keywords           | - |
-| # releases         | 134 |
-| # dependents       | 19 |
-| # downloads        | 4723730 |
+| # releases         | 66 |
+| # dependents       | 29 |
+| # downloads        | 6728285 |
 | # stars            | 0 |
 
 ## Links

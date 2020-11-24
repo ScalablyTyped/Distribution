@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1alpha", "websecurityscanner_v1alpha.Resource$Projects$Scanconfigs$Scanruns$Findingtypestats")
 @js.native
 class ResourceProjectsScanconfigsScanrunsFindingtypestats protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.scanRuns.findingTypeStats.list
     * @desc List all FindingTypeStats under a given ScanRun.
@@ -46,4 +48,3 @@ class ResourceProjectsScanconfigsScanrunsFindingtypestats protected () extends j
     callback: BodyResponseCallback[SchemaListFindingTypeStatsResponse]
   ): Unit = js.native
 }
-

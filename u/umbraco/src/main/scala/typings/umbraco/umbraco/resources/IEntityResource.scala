@@ -3,7 +3,7 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -40,6 +40,7 @@ import scala.scalajs.js.annotation._
   **/
 @js.native
 trait IEntityResource extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#getEntityById
@@ -66,6 +67,7 @@ trait IEntityResource extends js.Object {
     *
     */
   def getAll(`type`: String, postFilter: String, postFilterParams: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#getAncestors
@@ -80,6 +82,7 @@ trait IEntityResource extends js.Object {
     *
     */
   def getAncestors(id: Double, `type`: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#getById
@@ -104,6 +107,7 @@ trait IEntityResource extends js.Object {
     *
     */
   def getById(id: Double, `type`: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#getByIds
@@ -128,8 +132,10 @@ trait IEntityResource extends js.Object {
     *
     */
   def getByIds(ids: js.Array[Double], `type`: String): IPromise[IResourcePromise] = js.native
+  
   def getByQuery(query: String, nodeContextId: String, `type`: String): IPromise[IResourcePromise] = js.native
   def getByQuery(query: String, nodeContextId: Double, `type`: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#getAncestors
@@ -144,6 +150,7 @@ trait IEntityResource extends js.Object {
     *
     */
   def getChildren(id: Double, `type`: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#getPath
@@ -166,6 +173,7 @@ trait IEntityResource extends js.Object {
     *
     */
   def getPath(id: Double, `type`: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#searchMedia
@@ -189,6 +197,7 @@ trait IEntityResource extends js.Object {
     *
     */
   def search(query: String, `type`: String, searchFrom: js.Any, canceler: js.Any): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.entityResource#searchAll
@@ -212,4 +221,3 @@ trait IEntityResource extends js.Object {
     */
   def searchAll(query: String, canceler: js.Any): IPromise[IResourcePromise] = js.native
 }
-

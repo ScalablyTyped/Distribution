@@ -6,7 +6,7 @@ import typings.phaser.spine.webgl.ManagedWebGLRenderingContext
 import typings.phaser.spine.webgl.SkeletonRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSkeletonRendererInstantiable
@@ -16,6 +16,6 @@ trait TypeofSkeletonRendererInstantiable
       /* twoColorTint */ Boolean, 
       SkeletonRenderer
     ] {
+  
   var QUAD_TRIANGLES: js.Array[Double] = js.native
 }
-

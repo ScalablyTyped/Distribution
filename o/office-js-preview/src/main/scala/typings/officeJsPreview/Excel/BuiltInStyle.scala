@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BuiltInStyle extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.BuiltInStyle")
 @js.native
 object BuiltInStyle extends js.Object {
+  
   @js.native
   sealed trait accent1 extends BuiltInStyle
   
@@ -168,6 +168,4 @@ object BuiltInStyle extends js.Object {
   
   @js.native
   sealed trait wholeDollar extends BuiltInStyle
-  
 }
-

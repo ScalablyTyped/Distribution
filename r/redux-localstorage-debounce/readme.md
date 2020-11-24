@@ -11,8 +11,8 @@ Storage enhancer to debounce persist requests.
 | Full name          | redux-localstorage-debounce |
 | Keywords           | redux, redux-localstorage, storage enhancer, debounce |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 194236 |
+| # dependents       | 14 |
+| # downloads        | 901750 |
 | # stars            | 0 |
 
 ## Links

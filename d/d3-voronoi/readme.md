@@ -10,9 +10,9 @@ Compute the Voronoi diagram of a set of two-dimensional points.
 | ------------------ | :-------------: |
 | Full name          | d3-voronoi |
 | Keywords           | d3, d3-module, voronoi, delaunay |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 26942671 |
+| # releases         | 1 |
+| # dependents       | 67 |
+| # downloads        | 43818424 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Base component for touchable elements
 | Full name          | react-native-material-ripple |
 | Keywords           | react, react-component, react-native, ios, android, ripple, material |
 | # releases         | 3 |
-| # dependents       | 32 |
-| # downloads        | 1473992 |
+| # dependents       | 45 |
+| # downloads        | 1703034 |
 | # stars            | 1 |
 
 ## Links

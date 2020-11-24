@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Play Game Services Publishing API
@@ -27,9 +27,12 @@ import scala.scalajs.js.annotation._
 class Gamesconfiguration protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var achievementConfigurations: ResourceAchievementconfigurations = js.native
+  
   var context: APIRequestContext = js.native
+  
   var imageConfigurations: ResourceImageconfigurations = js.native
+  
   var leaderboardConfigurations: ResourceLeaderboardconfigurations = js.native
 }
-

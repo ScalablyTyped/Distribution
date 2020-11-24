@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ParticleContainer class is a really fast version of the Container built solely for speed,
@@ -33,12 +33,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ParticleContainer extends Container {
+  
   /**
     * If true, container allocates more batches in case there are more than `maxSize` particles.
     * @member {boolean} PIXI.ParticleContainer#autoResize
     * @default false
     */
   var autoResize: Boolean = js.native
+  
   /**
     * The texture used to render the children.
     *
@@ -46,6 +48,7 @@ trait ParticleContainer extends Container {
     * @member {PIXI.BaseTexture} PIXI.ParticleContainer#baseTexture
     */
   val baseTexture: BaseTexture = js.native
+  
   /**
     * The blend mode to be applied to the sprite. Apply a value of `PIXI.BLEND_MODES.NORMAL`
     * to reset the blend mode.
@@ -55,6 +58,7 @@ trait ParticleContainer extends Container {
     * @see PIXI.BLEND_MODES
     */
   var blendMode: Double = js.native
+  
   /**
     * If true PixiJS will Math.floor() x/y values when rendering, stopping pixel interpolation.
     * Advantages can include sharper image quality (like text) and faster rendering on canvas.
@@ -65,6 +69,14 @@ trait ParticleContainer extends Container {
     * @default true
     */
   var roundPixels: Boolean = js.native
+  
+  /**
+    * Sets the private properties array to dynamic / static based on the passed properties object
+    *
+    * @param {object} properties - The properties to be uploaded
+    */
+  def setProperties(properties: js.Any): Unit = js.native
+  
   /**
     * The tint applied to the container. This is a hex value.
     * A value of 0xFFFFFF will remove any tint effect.
@@ -73,11 +85,4 @@ trait ParticleContainer extends Container {
     * @default 0xFFFFFF
     */
   var tint: Double = js.native
-  /**
-    * Sets the private properties array to dynamic / static based on the passed properties object
-    *
-    * @param {object} properties - The properties to be uploaded
-    */
-  def setProperties(properties: js.Any): Unit = js.native
 }
-

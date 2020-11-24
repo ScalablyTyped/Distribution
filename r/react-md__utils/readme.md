@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__utils
 
-Typings are for version 2.1.0
+Typings are for version 2.4.2
 
 ## Library description:
 General utils for react-md.
@@ -10,9 +10,9 @@ General utils for react-md.
 | ------------------ | :-------------: |
 | Full name          | @react-md/utils |
 | Keywords           | accessibility, a11y, react-md, utils, throttled events, rtl, right to left websites, safari scroll fix |
-| # releases         | 20 |
+| # releases         | 28 |
 | # dependents       | 30 |
-| # downloads        | 7320 |
+| # downloads        | 12120 |
 | # stars            | 0 |
 
 ## Links

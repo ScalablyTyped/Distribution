@@ -3,7 +3,7 @@ package typings.phaser.Phaser.Plugins
 import typings.phaser.Phaser.Game
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Global Plugin is installed just once into the Game owned Plugin Manager.
@@ -11,20 +11,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BasePlugin extends js.Object {
-  /**
-    * A reference to the Game instance this plugin is running under.
-    */
-  var game: Game = js.native
-  /**
-    * A handy reference to the Plugin Manager that is responsible for this plugin.
-    * Can be used as a route to gain access to game systems and  events.
-    */
-  var pluginManager: PluginManager = js.native
+  
   /**
     * Game instance has been destroyed.
     * You must release everything in here, all references, all objects, free it all up.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * A reference to the Game instance this plugin is running under.
+    */
+  var game: Game = js.native
+  
   /**
     * The PluginManager calls this method on a Global Plugin when the plugin is first instantiated.
     * It will never be called again on this instance.
@@ -35,6 +33,13 @@ trait BasePlugin extends js.Object {
     */
   def init(): Unit = js.native
   def init(data: js.Any): Unit = js.native
+  
+  /**
+    * A handy reference to the Plugin Manager that is responsible for this plugin.
+    * Can be used as a route to gain access to game systems and  events.
+    */
+  var pluginManager: PluginManager = js.native
+  
   /**
     * The PluginManager calls this method on a Global Plugin when the plugin is started.
     * If a plugin is stopped, and then started again, this will get called again.
@@ -42,6 +47,7 @@ trait BasePlugin extends js.Object {
     * On a Scene Plugin, this method is never called.
     */
   def start(): Unit = js.native
+  
   /**
     * The PluginManager calls this method on a Global Plugin when the plugin is stopped.
     * The game code has requested that your plugin stop doing whatever it does.
@@ -52,4 +58,3 @@ trait BasePlugin extends js.Object {
     */
   def stop(): Unit = js.native
 }
-

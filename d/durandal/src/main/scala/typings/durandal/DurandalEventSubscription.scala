@@ -2,15 +2,17 @@ package typings.durandal
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DurandalEventSubscription extends js.Object {
+  
   /**
     * Cancels the subscription.
     * @chainable
     */
   def off(): DurandalEventSubscription = js.native
+  
   /**
     * Attaches a callback to the event subscription.
     * @param {function} [callback] The callback function to invoke when the event is triggered. If `callback` is not provided, the previous callback will be re-activated.
@@ -19,6 +21,7 @@ trait DurandalEventSubscription extends js.Object {
     */
   def on(thenCallback: js.Function): DurandalEventSubscription = js.native
   def on(thenCallback: js.Function, context: js.Any): DurandalEventSubscription = js.native
+  
   /**
     * Attaches a callback to the event subscription.
     * @param {function} callback The callback function to invoke when the event is triggered.
@@ -28,4 +31,3 @@ trait DurandalEventSubscription extends js.Object {
   def `then`(thenCallback: js.Function): DurandalEventSubscription = js.native
   def `then`(thenCallback: js.Function, context: js.Any): DurandalEventSubscription = js.native
 }
-

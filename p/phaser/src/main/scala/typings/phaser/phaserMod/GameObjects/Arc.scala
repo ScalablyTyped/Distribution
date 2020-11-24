@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Arc Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -51,4 +51,3 @@ class Arc protected ()
     fillAlpha: js.UndefOr[Double]
   ) = this()
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.noop` exported as a module.
 | Full name          | lodash.noop |
 | Keywords           | lodash-modularized, noop |
 | # releases         | 0 |
-| # dependents       | 58 |
-| # downloads        | 32729369 |
+| # dependents       | 63 |
+| # downloads        | 26379764 |
 | # stars            | 2 |
 
 ## Links

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/properties" : "5.0.2"
+      "@ethersproject/properties" : "5.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/properties" : "5.0.2"
+      "@ethersproject/properties" : "5.0.5"
     }
   ],
   "compile-devDependencies" : [

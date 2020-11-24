@@ -3,7 +3,7 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Traffic routing configuration for versions within a single service. Traffic
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaTrafficSplit extends js.Object {
+  
   /**
     * Mapping from version IDs within the service to fractional (0.000, 1]
     * allocations of traffic for that version. Each version can be specified
@@ -22,6 +23,7 @@ trait SchemaTrafficSplit extends js.Object {
     * cookie-based splits.
     */
   var allocations: js.UndefOr[StringDictionary[Double]] = js.native
+  
   /**
     * Mechanism used to determine which version a request is sent to. The
     * traffic selection algorithm will be stable for either type until
@@ -29,33 +31,39 @@ trait SchemaTrafficSplit extends js.Object {
     */
   var shardBy: js.UndefOr[String] = js.native
 }
-
 object SchemaTrafficSplit {
+  
   @scala.inline
   def apply(): SchemaTrafficSplit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrafficSplit]
   }
+  
   @scala.inline
   implicit class SchemaTrafficSplitOps[Self <: SchemaTrafficSplit] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllocations(value: StringDictionary[Double]): Self = this.set("allocations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllocations: Self = this.set("allocations", js.undefined)
+    
     @scala.inline
     def setShardBy(value: String): Self = this.set("shardBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShardBy: Self = this.set("shardBy", js.undefined)
   }
-  
 }
-

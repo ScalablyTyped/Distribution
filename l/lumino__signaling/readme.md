@@ -10,9 +10,9 @@ Lumino Signals and Slots
 | ------------------ | :-------------: |
 | Full name          | @lumino/signaling |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 73 |
-| # downloads        | 326703 |
+| # releases         | 13 |
+| # dependents       | 91 |
+| # downloads        | 658609 |
 | # stars            | 0 |
 
 ## Links

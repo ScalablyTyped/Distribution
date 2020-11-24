@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Frame buffer used by the BaseRenderTexture
@@ -12,6 +12,26 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Framebuffer extends js.Object {
+  
+  /**
+    * Add texture to the colorTexture array
+    *
+    * @param {number} [index=0] - Index of the array to add the texture to
+    * @param {PIXI.BaseTexture} [texture] - Texture to add to the array
+    */
+  def addColorTexture(): Unit = js.native
+  def addColorTexture(index: js.UndefOr[scala.Nothing], texture: BaseTexture): Unit = js.native
+  def addColorTexture(index: Double): Unit = js.native
+  def addColorTexture(index: Double, texture: BaseTexture): Unit = js.native
+  
+  /**
+    * Add a depth texture to the frame buffer
+    *
+    * @param {PIXI.BaseTexture} [texture] - Texture to add
+    */
+  def addDepthTexture(): Unit = js.native
+  def addDepthTexture(texture: BaseTexture): Unit = js.native
+  
   /**
     * Reference to the colorTexture.
     *
@@ -19,11 +39,33 @@ trait Framebuffer extends js.Object {
     * @readonly
     */
   val colorTexture: js.Array[BaseTexture] = js.native
+  
+  /**
+    * Destroys and removes the depth texture added to this framebuffer.
+    */
+  def destroyDepthTexture(): Unit = js.native
+  
+  /**
+    * Disposes WebGL resources that are connected to this geometry
+    */
+  def dispose(): Unit = js.native
+  
+  /**
+    * Enable depth on the frame buffer
+    */
+  def enableDepth(): Unit = js.native
+  
+  /**
+    * Enable stencil on the frame buffer
+    */
+  def enableStencil(): Unit = js.native
+  
   /**
     * Height of framebuffer in pixels
     * @member {number} PIXI.Framebuffer#height
     */
   var height: Double = js.native
+  
   /**
     * Desired number of samples for antialiasing. 0 means AA should not be used.
     *
@@ -42,44 +84,7 @@ trait Framebuffer extends js.Object {
     * @default PIXI.MSAA_QUALITY.NONE
     */
   var multisample: MSAA_QUALITY = js.native
-  /**
-    * Width of framebuffer in pixels
-    * @member {number} PIXI.Framebuffer#width
-    */
-  var width: Double = js.native
-  /**
-    * Add texture to the colorTexture array
-    *
-    * @param {number} [index=0] - Index of the array to add the texture to
-    * @param {PIXI.BaseTexture} [texture] - Texture to add to the array
-    */
-  def addColorTexture(): Unit = js.native
-  def addColorTexture(index: js.UndefOr[scala.Nothing], texture: BaseTexture): Unit = js.native
-  def addColorTexture(index: Double): Unit = js.native
-  def addColorTexture(index: Double, texture: BaseTexture): Unit = js.native
-  /**
-    * Add a depth texture to the frame buffer
-    *
-    * @param {PIXI.BaseTexture} [texture] - Texture to add
-    */
-  def addDepthTexture(): Unit = js.native
-  def addDepthTexture(texture: BaseTexture): Unit = js.native
-  /**
-    * Destroys and removes the depth texture added to this framebuffer.
-    */
-  def destroyDepthTexture(): Unit = js.native
-  /**
-    * Disposes WebGL resources that are connected to this geometry
-    */
-  def dispose(): Unit = js.native
-  /**
-    * Enable depth on the frame buffer
-    */
-  def enableDepth(): Unit = js.native
-  /**
-    * Enable stencil on the frame buffer
-    */
-  def enableStencil(): Unit = js.native
+  
   /**
     * Resize the frame buffer
     *
@@ -87,5 +92,10 @@ trait Framebuffer extends js.Object {
     * @param {number} height - Height of the frame buffer to resize to
     */
   def resize(width: Double, height: Double): Unit = js.native
+  
+  /**
+    * Width of framebuffer in pixels
+    * @member {number} PIXI.Framebuffer#width
+    */
+  var width: Double = js.native
 }
-

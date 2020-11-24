@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.react.mod.DeprecatedLifecycle because Already inherited
@@ -19,11 +19,10 @@ class PersonaCoinBase protected ()
   extends typings.officeUiFabricReact.libPersonaMod.PersonaCoinBase {
   def this(props: IPersonaCoinProps) = this()
 }
-
 /* static members */
 @JSImport("office-ui-fabric-react", "PersonaCoinBase")
 @js.native
 object PersonaCoinBase extends js.Object {
+  
   var defaultProps: IPersonaCoinProps = js.native
 }
-

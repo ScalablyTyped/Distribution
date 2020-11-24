@@ -5,9 +5,70 @@ import typings.reactTable.mod.DefaultFilterTypes
 import typings.reactTable.mod.DefaultSortTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactTableStrings {
+  
+  @scala.inline
+  def Cell: Cell = "Cell".asInstanceOf[Cell]
+  
+  @scala.inline
+  def ColumnWithStrictAccessor: ColumnWithStrictAccessor = "ColumnWithStrictAccessor".asInstanceOf[ColumnWithStrictAccessor]
+  
+  @scala.inline
+  def Footer: Footer = "Footer".asInstanceOf[Footer]
+  
+  @scala.inline
+  def Header: Header = "Header".asInstanceOf[Header]
+  
+  @scala.inline
+  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
+  
+  @scala.inline
+  def average: average = "average".asInstanceOf[average]
+  
+  @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  
+  @scala.inline
+  def between: between = "between".asInstanceOf[between]
+  
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
+  
+  @scala.inline
+  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  
+  @scala.inline
+  def equals: equals = "equals".asInstanceOf[equals]
+  
+  @scala.inline
+  def exact: exact = "exact".asInstanceOf[exact]
+  
+  @scala.inline
+  def exactText: exactText = "exactText".asInstanceOf[exactText]
+  
+  @scala.inline
+  def exactTextCase: exactTextCase = "exactTextCase".asInstanceOf[exactTextCase]
+  
+  @scala.inline
+  def includes: includes = "includes".asInstanceOf[includes]
+  
+  @scala.inline
+  def includesAll: includesAll = "includesAll".asInstanceOf[includesAll]
+  
+  @scala.inline
+  def median: median = "median".asInstanceOf[median]
+  
+  @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def uniqueCount: uniqueCount = "uniqueCount".asInstanceOf[uniqueCount]
+  
   @js.native
   sealed trait Cell extends js.Object
   
@@ -67,46 +128,4 @@ object reactTableStrings {
   
   @js.native
   sealed trait uniqueCount extends DefaultAggregators
-  
-  @scala.inline
-  def Cell: Cell = "Cell".asInstanceOf[Cell]
-  @scala.inline
-  def ColumnWithStrictAccessor: ColumnWithStrictAccessor = "ColumnWithStrictAccessor".asInstanceOf[ColumnWithStrictAccessor]
-  @scala.inline
-  def Footer: Footer = "Footer".asInstanceOf[Footer]
-  @scala.inline
-  def Header: Header = "Header".asInstanceOf[Header]
-  @scala.inline
-  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
-  @scala.inline
-  def average: average = "average".asInstanceOf[average]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def equals: equals = "equals".asInstanceOf[equals]
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
-  @scala.inline
-  def exactText: exactText = "exactText".asInstanceOf[exactText]
-  @scala.inline
-  def exactTextCase: exactTextCase = "exactTextCase".asInstanceOf[exactTextCase]
-  @scala.inline
-  def includes: includes = "includes".asInstanceOf[includes]
-  @scala.inline
-  def includesAll: includesAll = "includesAll".asInstanceOf[includesAll]
-  @scala.inline
-  def median: median = "median".asInstanceOf[median]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def uniqueCount: uniqueCount = "uniqueCount".asInstanceOf[uniqueCount]
 }
-

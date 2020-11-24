@@ -3,7 +3,7 @@ package typings.jsuri.jsUriMod
 import typings.jsuri.jsuri.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsUri", JSImport.Namespace)
 @js.native
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends Uri {
   def this(str: String) = this()
 }
-

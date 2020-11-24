@@ -3,10 +3,11 @@ package typings.semanticRelease.anon
 import typings.semanticRelease.semanticReleaseBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Channel extends js.Object {
+  
   /**
     * The distribution channel on which to publish releases from this
     * branch.
@@ -29,6 +30,7 @@ trait Channel extends js.Object {
     * expanded to `{name: 'next', channel: 'channel-next'}`.
     */
   var channel: js.UndefOr[String | `false`] = js.native
+  
   /**
     * The name of git branch.
     *
@@ -44,6 +46,7 @@ trait Channel extends js.Object {
     * created in the repository.
     */
   var name: String = js.native
+  
   /**
     * The pre-release identifier to append to [semantic versions](https://semver.org/)
     * released from this branch.
@@ -65,6 +68,7 @@ trait Channel extends js.Object {
     * Required for pre-release branches.
     */
   var prerelease: js.UndefOr[String | Boolean] = js.native
+  
   /**
     * The range of [semantic versions](https://semver.org/) to support on
     * this branch.
@@ -80,39 +84,48 @@ trait Channel extends js.Object {
     */
   var range: js.UndefOr[String] = js.native
 }
-
 object Channel {
+  
   @scala.inline
   def apply(name: String): Channel = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
+  
   @scala.inline
   implicit class ChannelOps[Self <: Channel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setChannel(value: String | `false`): Self = this.set("channel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteChannel: Self = this.set("channel", js.undefined)
+    
     @scala.inline
     def setPrerelease(value: String | Boolean): Self = this.set("prerelease", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrerelease: Self = this.set("prerelease", js.undefined)
+    
     @scala.inline
     def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRange: Self = this.set("range", js.undefined)
   }
-  
 }
-

@@ -9,9 +9,9 @@ RADIUS packet encoding/decoding
 | ------------------ | :-------------: |
 | Full name          | radius |
 | Keywords           | radius |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 39904 |
+| # releases         | 0 |
+| # dependents       | 10 |
+| # downloads        | 44466 |
 | # stars            | 4 |
 
 ## Links

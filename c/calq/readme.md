@@ -11,7 +11,7 @@ The simplest crypto calculator out there. Convert between currencies with ease! 
 | Keywords           | crypto, cryptocurrency, calculator, cal, converter, conversion, cli, commandline, node, nodejs, ethereum, financial, ETH, BTC |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 524 |
+| # downloads        | 479 |
 | # stars            | 0 |
 
 ## Links

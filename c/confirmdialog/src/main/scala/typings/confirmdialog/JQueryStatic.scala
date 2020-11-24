@@ -3,10 +3,11 @@ package typings.confirmdialog
 import typings.confirmdialog.options.confirmOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
+  
   /**
     * confirm alert
     *  {any} pMessage
@@ -15,6 +16,7 @@ trait JQueryStatic extends js.Object {
   def alert(pMessage: js.UndefOr[scala.Nothing], title: String): js.Any = js.native
   def alert(pMessage: js.Any): js.Any = js.native
   def alert(pMessage: js.Any, title: String): js.Any = js.native
+  
   def confirm(pOtions: String): js.Any = js.native
   def confirm(pOtions: String, title: String): js.Any = js.native
   /**
@@ -23,6 +25,7 @@ trait JQueryStatic extends js.Object {
     */
   def confirm(pOtions: confirmOptions): js.Any = js.native
   def confirm(pOtions: confirmOptions, title: String): js.Any = js.native
+  
   def dialog(pOtions: String): js.Any = js.native
   /**
     * confirm Dialog
@@ -30,4 +33,3 @@ trait JQueryStatic extends js.Object {
     */
   def dialog(pOtions: confirmOptions): js.Any = js.native
 }
-

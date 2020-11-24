@@ -3,36 +3,33 @@ package typings.bigJs.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Big extends js.Object {
-  /**
-    * Returns an array of single digits
-    */
-  var c: js.Array[Double] = js.native
-  /**
-    * Returns the exponent, Integer, -1e+6 to 1e+6 inclusive
-    */
-  var e: Double = js.native
-  /**
-    * Returns the sign, -1 or 1
-    */
-  var s: Double = js.native
+  
   /** Returns a Big number whose value is the absolute value, i.e. the magnitude, of this Big number. */
   def abs(): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number plus n - alias for .plus().
     *
     * @throws `NaN` if n is invalid.
     */
   def add(n: BigSource): Big = js.native
+  
+  /**
+    * Returns an array of single digits
+    */
+  var c: js.Array[Double] = js.native
+  
   /**
     * Compare the values.
     *
     * @throws `NaN` if n is invalid.
     */
   def cmp(n: BigSource): Comparison = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number divided by n.
     *
@@ -43,42 +40,54 @@ trait Big extends js.Object {
     * @throws `NaN` on division of zero by zero.
     */
   def div(n: BigSource): Big = js.native
+  
+  /**
+    * Returns the exponent, Integer, -1e+6 to 1e+6 inclusive
+    */
+  var e: Double = js.native
+  
   /**
     * Returns true if the value of this Big equals the value of n, otherwise returns false.
     *
     * @throws `NaN` if n is invalid.
     */
   def eq(n: BigSource): Boolean = js.native
+  
   /**
     * Returns true if the value of this Big is greater than the value of n, otherwise returns false.
     *
     * @throws `NaN` if n is invalid.
     */
   def gt(n: BigSource): Boolean = js.native
+  
   /**
     * Returns true if the value of this Big is greater than or equal to the value of n, otherwise returns false.
     *
     * @throws `NaN` if n is invalid.
     */
   def gte(n: BigSource): Boolean = js.native
+  
   /**
     * Returns true if the value of this Big is less than the value of n, otherwise returns false.
     *
     * @throws `NaN` if n is invalid.
     */
   def lt(n: BigSource): Boolean = js.native
+  
   /**
     * Returns true if the value of this Big is less than or equal to the value of n, otherwise returns false.
     *
     * @throws `NaN` if n is invalid.
     */
   def lte(n: BigSource): Boolean = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number minus n.
     *
     * @throws `NaN` if n is invalid.
     */
   def minus(n: BigSource): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number modulo n, i.e. the integer remainder of dividing this Big number by n.
     *
@@ -87,18 +96,21 @@ trait Big extends js.Object {
     * @throws `NaN` if n is negative or otherwise invalid.
     */
   def mod(n: BigSource): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number times n - alias for .times().
     *
     * @throws `NaN` if n is invalid.
     */
   def mul(n: BigSource): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number plus n.
     *
     * @throws `NaN` if n is invalid.
     */
   def plus(n: BigSource): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number raised to the power exp.
     *
@@ -110,6 +122,7 @@ trait Big extends js.Object {
     * Note: High value exponents may cause this method to be slow to return.
     */
   def pow(exp: Double): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number rounded using rounding mode rm to a maximum of dp decimal places.
     *
@@ -122,6 +135,12 @@ trait Big extends js.Object {
   def round(dp: js.UndefOr[scala.Nothing], rm: RoundingMode): Big = js.native
   def round(dp: Double): Big = js.native
   def round(dp: Double, rm: RoundingMode): Big = js.native
+  
+  /**
+    * Returns the sign, -1 or 1
+    */
+  var s: Double = js.native
+  
   /**
     * Returns a Big number whose value is the square root of this Big number.
     *
@@ -130,18 +149,21 @@ trait Big extends js.Object {
     * @throws `NaN` if this Big number is negative.
     */
   def sqrt(): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number minus n - alias for .minus().
     *
     * @throws `NaN` if n is invalid.
     */
   def sub(n: BigSource): Big = js.native
+  
   /**
     * Returns a Big number whose value is the value of this Big number times n.
     *
     * @throws `NaN` if n is invalid.
     */
   def times(n: BigSource): Big = js.native
+  
   /**
     * Returns a string representing the value of this Big number in exponential notation to a fixed number of decimal places dp.
     *
@@ -157,6 +179,7 @@ trait Big extends js.Object {
     */
   def toExponential(): String = js.native
   def toExponential(dp: Double): String = js.native
+  
   /**
     * Returns a string representing the value of this Big number in normal notation to a fixed number of decimal places dp.
     *
@@ -175,6 +198,7 @@ trait Big extends js.Object {
     */
   def toFixed(): String = js.native
   def toFixed(dp: Double): String = js.native
+  
   /**
     * Returns a string representing the value of this Big number.
     *
@@ -184,6 +208,16 @@ trait Big extends js.Object {
     * the value of Big.E_POS and Big.E_NEG. By default, Big numbers correspond to Javascript's number type in this regard.
     */
   def toJSON(): String = js.native
+  
+  /**
+    * Returns a primitive number representing the value of this Big number.
+    *
+    * If Big.strict is true an error will be thrown if toNumber is called on a Big number which cannot be converted to a primitive number without a loss of precision.
+    *
+    * @since 6.0
+    */
+  def toNumber(): Double = js.native
+  
   /**
     * Returns a string representing the value of this Big number to the specified number of significant digits sd.
     *
@@ -201,8 +235,6 @@ trait Big extends js.Object {
   def toPrecision(): String = js.native
   def toPrecision(sd: Double): String = js.native
 }
-
 @JSImport("big.js", "Big")
 @js.native
 object Big extends TopLevel[BigConstructor]
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbuild/v1", "cloudbuild_v1.Resource$Projects$Builds")
 @js.native
 class ResourceProjectsBuilds protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudbuild.projects.builds.cancel
     * @desc Cancels a build in progress.
@@ -43,6 +43,9 @@ class ResourceProjectsBuilds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuild]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudbuild.projects.builds.create
     * @desc Starts a build with the specified configuration.  This method
@@ -75,6 +78,7 @@ class ResourceProjectsBuilds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.builds.get
     * @desc Returns information about a previously requested build.  The
@@ -106,6 +110,7 @@ class ResourceProjectsBuilds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuild]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.builds.list
     * @desc Lists previously requested builds.  Previously requested builds may
@@ -139,6 +144,7 @@ class ResourceProjectsBuilds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListBuildsResponse]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.builds.retry
     * @desc Creates a new build based on the specified build.  This method
@@ -186,4 +192,3 @@ class ResourceProjectsBuilds protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

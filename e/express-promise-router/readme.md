@@ -10,15 +10,15 @@ A lightweight wrapper for Express 4's Router that allows middleware to return pr
 | ------------------ | :-------------: |
 | Full name          | express-promise-router |
 | Keywords           | express, promise, router |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 1170868 |
+| # releases         | 3 |
+| # dependents       | 54 |
+| # downloads        | 1662399 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](https://github.com/alex-whitney/express-promise-router)
-- [Bugs](https://github.com/alex-whitney/express-promise-router/issues)
-- [Repository](https://github.com/alex-whitney/express-promise-router)
+- [Homepage](https://github.com/express-promise-router/express-promise-router)
+- [Bugs](https://github.com/express-promise-router/express-promise-router/issues)
+- [Repository](https://github.com/express-promise-router/express-promise-router)
 - [Npm](https://www.npmjs.com/package/express-promise-router)
     
 

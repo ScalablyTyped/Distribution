@@ -2,23 +2,28 @@ package typings.openfin
 
 import typings.openfin.anon.FnCall
 import typings.openfin.clientMod.RoutingInfo
+import typings.openfin.finMod.default
 import typings.openfin.identityMod.Identity
 import typings.openfin.notificationMod.NotificationOptions
 import typings.openfin.shapesIdentityMod.ProviderIdentity
-import typings.openfin.transportMod.default
 import typings.openfin.wireMod.ConnectConfig
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/main", JSImport.Namespace)
 @js.native
 object v2MainMod extends js.Object {
+  
+  def connect(config: ConnectConfig): js.Promise[default] = js.native
+  
+  def launch(config: ConnectConfig): js.Promise[Double] = js.native
+  
   @js.native
   class Application protected ()
     extends typings.openfin.applicationMod.Application {
-    def this(wire: default, identity: Identity) = this()
+    def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
   }
   
   @js.native
@@ -38,42 +43,37 @@ object v2MainMod extends js.Object {
   }
   
   @js.native
-  class Fin protected ()
-    extends typings.openfin.finMod.default {
-    def this(wire: default) = this()
+  class Fin protected () extends default {
+    def this(wire: typings.openfin.transportMod.default) = this()
   }
   
   @js.native
   class Frame protected ()
     extends typings.openfin.frameFrameMod.Frame {
-    def this(wire: default, identity: Identity) = this()
+    def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
   }
   
   @js.native
   class Notification protected ()
     extends typings.openfin.notificationMod.Notification {
-    def this(wire: default, options: NotificationOptions) = this()
+    def this(wire: typings.openfin.transportMod.default, options: NotificationOptions) = this()
   }
   
   @js.native
   class System protected ()
     extends typings.openfin.systemSystemMod.default {
-    def this(wire: default) = this()
+    def this(wire: typings.openfin.transportMod.default) = this()
   }
   
   @js.native
   class View protected ()
     extends typings.openfin.viewViewMod.View {
-    def this(wire: default, identity: Identity) = this()
+    def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
   }
   
   @js.native
   class Window protected ()
     extends typings.openfin.windowWindowMod.Window {
-    def this(wire: default, identity: Identity) = this()
+    def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
   }
-  
-  def connect(config: ConnectConfig): js.Promise[typings.openfin.finMod.default] = js.native
-  def launch(config: ConnectConfig): js.Promise[Double] = js.native
 }
-

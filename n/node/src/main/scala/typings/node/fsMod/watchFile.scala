@@ -3,11 +3,12 @@ package typings.node.fsMod
 import typings.node.anon.Interval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "watchFile")
 @js.native
 object watchFile extends js.Object {
+  
   def apply(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
   def apply(
     filename: PathLike,
@@ -20,4 +21,3 @@ object watchFile extends js.Object {
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = js.native
 }
-

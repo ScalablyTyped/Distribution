@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.FeatureFormViewModel
 import typings.arcgisJsApi.esri.FeatureFormViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/FeatureForm/FeatureFormViewModel", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends FeatureFormViewModel {
   def this(properties: FeatureFormViewModelProperties) = this()
 }
-

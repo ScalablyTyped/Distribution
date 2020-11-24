@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Skeleton")
 @js.native
@@ -14,4 +14,3 @@ class Skeleton protected ()
     boneInverses: js.Array[typings.three.matrix4Mod.Matrix4]
   ) = this()
 }
-

@@ -8,10 +8,11 @@ import typings.std.stdStrings.UIEvents
 import typings.std.stdStrings.`VRDisplayEvent `
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocumentEvent extends js.Object {
+  
   def createEvent(eventInterface: java.lang.String): Event = js.native
   @JSName("createEvent")
   def createEvent_AnimationEvent(eventInterface: typings.std.stdStrings.AnimationEvent): AnimationEvent = js.native
@@ -80,7 +81,7 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_MediaStreamTrackEvent(eventInterface: typings.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
   @JSName("createEvent")
-  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent = js.native
+  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[_] = js.native
   @JSName("createEvent")
   def createEvent_MouseEvent(eventInterface: typings.std.stdStrings.MouseEvent): MouseEvent = js.native
   @JSName("createEvent")
@@ -168,4 +169,3 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_WheelEvent(eventInterface: typings.std.stdStrings.WheelEvent): WheelEvent = js.native
 }
-

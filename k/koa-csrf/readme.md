@@ -11,8 +11,8 @@ CSRF tokens for Koa
 | Full name          | koa-csrf |
 | Keywords           | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, next, request, security, site |
 | # releases         | 3 |
-| # dependents       | 54 |
-| # downloads        | 400487 |
+| # dependents       | 55 |
+| # downloads        | 868091 |
 | # stars            | 12 |
 
 ## Links

@@ -12,7 +12,7 @@ Compiles an evaluating function for a C expression
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 426443 |
+| # downloads        | 731526 |
 | # stars            | 0 |
 
 ## Links

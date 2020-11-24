@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.ContainerType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Image resource. (== resource_for beta.images ==) (== resource_for
@@ -12,28 +12,34 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaImage extends js.Object {
+  
   /**
     * Size of the image tar.gz archive stored in Google Cloud Storage (in
     * bytes).
     */
   var archiveSizeBytes: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * The deprecation status associated with this image.
     */
   var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * Size of the image when restored onto a persistent disk (in GB).
     */
   var diskSizeGb: js.UndefOr[String] = js.native
+  
   /**
     * The name of the image family to which this image belongs. You can create
     * disks by specifying an image family instead of a specific image name. The
@@ -41,17 +47,20 @@ trait SchemaImage extends js.Object {
     * name of the image family must comply with RFC1035.
     */
   var family: js.UndefOr[String] = js.native
+  
   /**
     * A list of features to enable on the guest operating system. Applicable
     * only for bootable images. Read  Enabling guest operating system features
     * to see a list of available options.
     */
   var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Encrypts the image using a customer-supplied encryption key.  After you
     * encrypt an image with a customer-supplied key, you must provide the same
@@ -62,10 +71,12 @@ trait SchemaImage extends js.Object {
     * key and you do not need to provide a key to use the image later.
     */
   var imageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#image for images.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * A fingerprint for the labels being applied to this image, which is
     * essentially a hash of the labels used for optimistic locking. The
@@ -76,20 +87,24 @@ trait SchemaImage extends js.Object {
     * the latest fingerprint, make a get() request to retrieve an image.
     */
   var labelFingerprint: js.UndefOr[String] = js.native
+  
   /**
     * Labels to apply to this image. These can be later modified by the
     * setLabels method.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Integer license codes indicating which licenses are attached to this
     * image.
     */
   var licenseCodes: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Any applicable license URI.
     */
   var licenses: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Name of the resource; provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -100,22 +115,27 @@ trait SchemaImage extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The parameters of the raw disk image.
     */
   var rawDisk: js.UndefOr[ContainerType] = js.native
+  
   /**
     * [Output Only] Server-defined URL for the resource.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Server-defined URL for this resource&#39;s resource id.
     */
   var selfLinkWithId: js.UndefOr[String] = js.native
+  
   /**
     * Set the secure boot keys of shielded instance.
     */
   var shieldedInstanceInitialState: js.UndefOr[SchemaInitialStateConfig] = js.native
+  
   /**
     * URL of the source disk used to create this image. This can be a full or
     * valid partial URL. You must provide either this property or the
@@ -125,17 +145,20 @@ trait SchemaImage extends js.Object {
     * - projects/project/zones/zone/disks/disk  - zones/zone/disks/disk
     */
   var sourceDisk: js.UndefOr[String] = js.native
+  
   /**
     * The customer-supplied encryption key of the source disk. Required if the
     * source disk is protected by a customer-supplied encryption key.
     */
   var sourceDiskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The ID value of the disk used to create this image. This
     * value may be used to determine whether the image was taken from the
     * current or a previous instance of a given disk name.
     */
   var sourceDiskId: js.UndefOr[String] = js.native
+  
   /**
     * URL of the source image used to create this image. This can be a full or
     * valid partial URL. You must provide exactly one of:   - this property, or
@@ -143,17 +166,20 @@ trait SchemaImage extends js.Object {
     * to create an image.
     */
   var sourceImage: js.UndefOr[String] = js.native
+  
   /**
     * The customer-supplied encryption key of the source image. Required if the
     * source image is protected by a customer-supplied encryption key.
     */
   var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The ID value of the image used to create this image. This
     * value may be used to determine whether the image was taken from the
     * current or a previous instance of a given image name.
     */
   var sourceImageId: js.UndefOr[String] = js.native
+  
   /**
     * URL of the source snapshot used to create this image. This can be a full
     * or valid partial URL. You must provide exactly one of:   - this property,
@@ -161,22 +187,26 @@ trait SchemaImage extends js.Object {
     * - the sourceDisk property   in order to create an image.
     */
   var sourceSnapshot: js.UndefOr[String] = js.native
+  
   /**
     * The customer-supplied encryption key of the source snapshot. Required if
     * the source snapshot is protected by a customer-supplied encryption key.
     */
   var sourceSnapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The ID value of the snapshot used to create this image.
     * This value may be used to determine whether the snapshot was taken from
     * the current or a previous instance of a given snapshot name.
     */
   var sourceSnapshotId: js.UndefOr[String] = js.native
+  
   /**
     * The type of the image used to create this disk. The default and only
     * value is RAW
     */
   var sourceType: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The status of the image. An image can be used to create
     * other resources, such as instances, only after the image has been
@@ -184,162 +214,231 @@ trait SchemaImage extends js.Object {
     * FAILED, PENDING, or READY.
     */
   var status: js.UndefOr[String] = js.native
+  
   /**
     * GCS bucket storage location of the image (regional or multi-regional).
     */
   var storageLocations: js.UndefOr[js.Array[String]] = js.native
 }
-
 object SchemaImage {
+  
   @scala.inline
   def apply(): SchemaImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImage]
   }
+  
   @scala.inline
   implicit class SchemaImageOps[Self <: SchemaImage] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArchiveSizeBytes(value: String): Self = this.set("archiveSizeBytes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteArchiveSizeBytes: Self = this.set("archiveSizeBytes", js.undefined)
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDeprecated(value: SchemaDeprecationStatus): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    
     @scala.inline
     def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFamily: Self = this.set("family", js.undefined)
+    
     @scala.inline
     def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    
     @scala.inline
     def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("imageEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteImageEncryptionKey: Self = this.set("imageEncryptionKey", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setLicenseCodesVarargs(value: String*): Self = this.set("licenseCodes", js.Array(value :_*))
+    
     @scala.inline
     def setLicenseCodes(value: js.Array[String]): Self = this.set("licenseCodes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenseCodes: Self = this.set("licenseCodes", js.undefined)
+    
     @scala.inline
     def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    
     @scala.inline
     def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenses: Self = this.set("licenses", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setRawDisk(value: ContainerType): Self = this.set("rawDisk", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRawDisk: Self = this.set("rawDisk", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
+    
     @scala.inline
     def setShieldedInstanceInitialState(value: SchemaInitialStateConfig): Self = this.set("shieldedInstanceInitialState", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShieldedInstanceInitialState: Self = this.set("shieldedInstanceInitialState", js.undefined)
+    
     @scala.inline
     def setSourceDisk(value: String): Self = this.set("sourceDisk", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDisk: Self = this.set("sourceDisk", js.undefined)
+    
     @scala.inline
     def setSourceDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceDiskEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDiskEncryptionKey: Self = this.set("sourceDiskEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceDiskId(value: String): Self = this.set("sourceDiskId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDiskId: Self = this.set("sourceDiskId", js.undefined)
+    
     @scala.inline
     def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    
     @scala.inline
     def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceImageId(value: String): Self = this.set("sourceImageId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceImageId: Self = this.set("sourceImageId", js.undefined)
+    
     @scala.inline
     def setSourceSnapshot(value: String): Self = this.set("sourceSnapshot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceSnapshot: Self = this.set("sourceSnapshot", js.undefined)
+    
     @scala.inline
     def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceSnapshotEncryptionKey: Self = this.set("sourceSnapshotEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceSnapshotId(value: String): Self = this.set("sourceSnapshotId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceSnapshotId: Self = this.set("sourceSnapshotId", js.undefined)
+    
     @scala.inline
     def setSourceType(value: String): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    
     @scala.inline
     def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatus: Self = this.set("status", js.undefined)
+    
     @scala.inline
     def setStorageLocationsVarargs(value: String*): Self = this.set("storageLocations", js.Array(value :_*))
+    
     @scala.inline
     def setStorageLocations(value: js.Array[String]): Self = this.set("storageLocations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStorageLocations: Self = this.set("storageLocations", js.undefined)
   }
-  
 }
-

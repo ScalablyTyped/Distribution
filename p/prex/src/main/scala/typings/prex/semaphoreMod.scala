@@ -4,11 +4,12 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prex/out/lib/semaphore", JSImport.Namespace)
 @js.native
 object semaphoreMod extends js.Object {
+  
   @js.native
   class Semaphore protected () extends js.Object {
     /**
@@ -19,14 +20,19 @@ object semaphoreMod extends js.Object {
       */
     def this(initialCount: Double) = this()
     def this(initialCount: Double, maxCount: Double) = this()
+    
     var _currentCount: js.Any = js.native
+    
     var _maxCount: js.Any = js.native
+    
     var _waiters: js.Any = js.native
+    
     /**
       * Gets the number of remaining asynchronous operations that can enter
       * the Semaphore.
       */
     def count: Double = js.native
+    
     /**
       * Releases the Semaphore one or more times.
       *
@@ -34,9 +40,8 @@ object semaphoreMod extends js.Object {
       */
     def release(): Unit = js.native
     def release(count: Double): Unit = js.native
+    
     def wait(token: Cancelable): js.Promise[Unit] = js.native
     def wait(token: CancellationToken): js.Promise[Unit] = js.native
   }
-  
 }
-

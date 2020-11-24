@@ -2,30 +2,11 @@ package typings.timeSpan
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("time-span", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  trait TimeEndFunction extends js.Object {
-    /**
-    		@returns Elapsed milliseconds.
-    		*/
-    def apply(): Double = js.native
-    /**
-    		@returns Elapsed nanoseconds.
-    		*/
-    def nanoseconds(): Double = js.native
-    /**
-    		@returns Elapsed milliseconds rounded.
-    		*/
-    def rounded(): Double = js.native
-    /**
-    		@returns Elapsed seconds.
-    		*/
-    def seconds(): Double = js.native
-  }
   
   /**
   Simplified high resolution timing.
@@ -44,5 +25,28 @@ object mod extends js.Object {
   ```
   */
   def apply(): TimeEndFunction = js.native
+  
+  @js.native
+  trait TimeEndFunction extends js.Object {
+    
+    /**
+    		@returns Elapsed milliseconds.
+    		*/
+    def apply(): Double = js.native
+    
+    /**
+    		@returns Elapsed nanoseconds.
+    		*/
+    def nanoseconds(): Double = js.native
+    
+    /**
+    		@returns Elapsed milliseconds rounded.
+    		*/
+    def rounded(): Double = js.native
+    
+    /**
+    		@returns Elapsed seconds.
+    		*/
+    def seconds(): Double = js.native
+  }
 }
-

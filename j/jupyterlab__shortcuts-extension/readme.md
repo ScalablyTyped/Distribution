@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__shortcuts-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Shortcuts Extension
@@ -10,9 +10,9 @@ JupyterLab - Shortcuts Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/shortcuts-extension |
 | Keywords           | - |
-| # releases         | 65 |
+| # releases         | 113 |
 | # dependents       | 1 |
-| # downloads        | 752241 |
+| # downloads        | 1350209 |
 | # stars            | 0 |
 
 ## Links

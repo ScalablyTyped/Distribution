@@ -3,7 +3,7 @@ package typings.promiseQueue.mod
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promise-queue", JSImport.Namespace)
 @js.native
@@ -27,10 +27,10 @@ class ^ () extends PromiseQueue {
   def this(maxPendingPromises: Double, maxQueuedPromises: js.UndefOr[scala.Nothing], options: QueueOptions) = this()
   def this(maxPendingPromises: Double, maxQueuedPromises: Double, options: QueueOptions) = this()
 }
-
 @JSImport("promise-queue", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Set which promise constructor to use for the value returned by PromiseQueue#add.
     * If this isn't called, the global `Promise` constructor is used.
@@ -38,4 +38,3 @@ object ^ extends js.Object {
     */
   def configure(GlobalPromise: PromiseConstructor): Unit = js.native
 }
-

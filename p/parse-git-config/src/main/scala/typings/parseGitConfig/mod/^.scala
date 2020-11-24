@@ -2,11 +2,12 @@ package typings.parseGitConfig.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse-git-config", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(): js.Promise[Config | Null] = js.native
   /**
     * Asynchronously parse a `.git/config` file. If only the callback is passed,
@@ -34,4 +35,3 @@ object ^ extends js.Object {
   def apply(options: Options): js.Promise[Config | Null] = js.native
   def apply(options: Options, cb: ParseCallback): Unit = js.native
 }
-

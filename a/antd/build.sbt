@@ -1,33 +1,37 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "4.5.1-c3e170"
+version := "4.8.5-33a4a9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ant-design__icons" % "4.2.1-ed3c40",
-  "org.scalablytyped" %%% "ant-design__icons-svg" % "4.1.0-8d0ed6",
-  "org.scalablytyped" %%% "ant-design__react-slick" % "0.27.0-207772",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "dayjs" % "1.8.31-c7c1b0",
-  "org.scalablytyped" %%% "moment" % "2.27.0-2a4db1",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "rc-field-form" % "1.8.0-65c5d3",
-  "org.scalablytyped" %%% "rc-mentions" % "1.4.0-6c4e10",
-  "org.scalablytyped" %%% "rc-menu" % "8.5.0-6d368b",
-  "org.scalablytyped" %%% "rc-notification" % "4.4.0-f56b95",
-  "org.scalablytyped" %%% "rc-picker" % "1.15.1-33e1c7",
-  "org.scalablytyped" %%% "rc-select" % "11.1.0-cb3d80",
-  "org.scalablytyped" %%% "rc-table" % "7.8.6-d9c4c0",
-  "org.scalablytyped" %%% "rc-tabs" % "11.5.6-df0054",
-  "org.scalablytyped" %%% "rc-textarea" % "0.3.0-3ac0c4",
-  "org.scalablytyped" %%% "rc-tooltip" % "4.2.1-2b2b08",
-  "org.scalablytyped" %%% "rc-tree" % "3.8.2-f66213",
-  "org.scalablytyped" %%% "rc-tree-select" % "4.1.0-394209",
-  "org.scalablytyped" %%% "rc-trigger" % "4.3.4-643eac",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "scroll-into-view-if-needed" % "2.2.25-523b92",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "ant-design__icons" % "4.3.0-f24b3a",
+  "org.scalablytyped" %%% "ant-design__icons-svg" % "4.1.0-c395eb",
+  "org.scalablytyped" %%% "ant-design__react-slick" % "0.27.14-3ac366",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "dayjs" % "1.9.6-1e410f",
+  "org.scalablytyped" %%% "moment" % "2.29.1-01272f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
+  "org.scalablytyped" %%% "rc-dialog" % "8.4.3-2f76dc",
+  "org.scalablytyped" %%% "rc-field-form" % "1.17.2-dec220",
+  "org.scalablytyped" %%% "rc-image" % "4.0.1-d5edfd",
+  "org.scalablytyped" %%% "rc-mentions" % "1.5.2-d88efe",
+  "org.scalablytyped" %%% "rc-menu" % "8.10.0-381fff",
+  "org.scalablytyped" %%% "rc-motion" % "2.4.1-620b0b",
+  "org.scalablytyped" %%% "rc-notification" % "4.5.4-d4a8dd",
+  "org.scalablytyped" %%% "rc-picker" % "2.4.1-e1d152",
+  "org.scalablytyped" %%% "rc-select" % "11.4.2-eddd3e",
+  "org.scalablytyped" %%% "rc-table" % "7.11.2-800e24",
+  "org.scalablytyped" %%% "rc-tabs" % "11.7.1-603b61",
+  "org.scalablytyped" %%% "rc-textarea" % "0.3.1-58c759",
+  "org.scalablytyped" %%% "rc-tooltip" % "5.0.1-22a9c8",
+  "org.scalablytyped" %%% "rc-tree" % "3.11.0-a7cdc7",
+  "org.scalablytyped" %%% "rc-tree-select" % "4.1.3-db7041",
+  "org.scalablytyped" %%% "rc-trigger" % "5.1.2-46c799",
+  "org.scalablytyped" %%% "rc-util" % "5.5.0-a4d307",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
+  "org.scalablytyped" %%% "scroll-into-view-if-needed" % "2.2.26-61c706",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

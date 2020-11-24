@@ -3,13 +3,13 @@ package typings.awsSdkCredentialProviderCognitoIdentity.fromCognitoIdentityPoolM
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/credential-provider-cognito-identity/build/fromCognitoIdentityPool", "fromCognitoIdentityPool")
+@JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/fromCognitoIdentityPool", "fromCognitoIdentityPool")
 @js.native
 object fromCognitoIdentityPool extends js.Object {
+  
   def apply(
     hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier: FromCognitoIdentityPoolParameters
   ): CredentialProvider = js.native
 }
-

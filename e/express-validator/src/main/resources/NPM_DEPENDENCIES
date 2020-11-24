@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "express-validator" : "6.6.0"
+      "express-validator" : "6.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "express-validator" : "6.6.0"
+      "express-validator" : "6.6.1"
     }
   ],
   "compile-devDependencies" : [

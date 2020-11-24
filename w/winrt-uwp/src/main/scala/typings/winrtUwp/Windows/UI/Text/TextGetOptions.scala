@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextGetOptions extends js.Object
-
 /** Specifies options for retrieving the text in a document or text range. */
 @JSGlobal("Windows.UI.Text.TextGetOptions")
 @js.native
 object TextGetOptions extends js.Object {
+  
   /** If the starting character position is in the middle of a construct such as a CRLF (U+000D U+000A), surrogate pair, variation-selector sequence, or table-row delimiter, move to the beginning of the construct. */
   @js.native
   sealed trait adjustCrlf extends TextGetOptions
@@ -42,6 +42,4 @@ object TextGetOptions extends js.Object {
   /** Retrieve text including the alternate text for the images in the range. */
   @js.native
   sealed trait useObjectText extends TextGetOptions
-  
 }
-

@@ -7,7 +7,7 @@ import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container", "Deque")
 @js.native
@@ -46,11 +46,11 @@ class Deque[T] ()
     */
   def this(size: Double, `val`: T) = this()
 }
-
 /* static members */
 @JSImport("tstl/container", "Deque")
 @js.native
 object Deque extends js.Object {
+  
   val Iterator: Instantiable0[
     ArrayIterator[
       js.Object, 
@@ -70,10 +70,12 @@ object Deque extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * Expansion ratio.
     */
   val MAGNIFIER: /* 1.5 */ Double = js.native
+  
   /**
     * Minimum {@link Deque.capacity}.
     *
@@ -81,6 +83,7 @@ object Deque extends js.Object {
     * keeps the minimum {@link Deque.capacity} at least.
     */
   val MIN_CAPACITY: /* 36 */ Double = js.native
+  
   /**
     * Row size of the {@link Deque.matrix_ matrix} which contains elements.
     *
@@ -93,6 +96,7 @@ object Deque extends js.Object {
     * and inserting element is O(N)).
     */
   val ROW_SIZE: /* 8 */ Double = js.native
+  
   val ReverseIterator: Instantiable0[
     ArrayReverseIterator[
       js.Object, 
@@ -112,6 +116,6 @@ object Deque extends js.Object {
       ]
     ]
   ] = js.native
+  
   var _Emend: js.Any = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AlarmAccessStatus extends js.Object
-
 /** Indicates whether the user has given permission for the app to set alarms. */
 @JSGlobal("Windows.ApplicationModel.Background.AlarmAccessStatus")
 @js.native
 object AlarmAccessStatus extends js.Object {
+  
   /** The user has given permission for the app to set alarms, and alarms can wake up the computer from standby. */
   @js.native
   sealed trait allowedWithWakeupCapability extends AlarmAccessStatus
@@ -26,6 +26,4 @@ object AlarmAccessStatus extends js.Object {
   /** The user has not responded to a permission request for the app to set alarms. */
   @js.native
   sealed trait unspecified extends AlarmAccessStatus
-  
 }
-

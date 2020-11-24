@@ -11,8 +11,8 @@ The modern build of lodash’s `_.isObject` as a module.
 | Full name          | lodash.isobject |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
 | # releases         | 0 |
-| # dependents       | 400 |
-| # downloads        | 78502060 |
+| # dependents       | 433 |
+| # downloads        | 88182408 |
 | # stars            | 1 |
 
 ## Links

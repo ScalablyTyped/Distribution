@@ -11,8 +11,8 @@ Fetches the contents of a file accross node and browsers.
 | Full name          | @protobufjs/fetch |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 54383354 |
+| # dependents       | 33 |
+| # downloads        | 111649088 |
 | # stars            | 0 |
 
 ## Links

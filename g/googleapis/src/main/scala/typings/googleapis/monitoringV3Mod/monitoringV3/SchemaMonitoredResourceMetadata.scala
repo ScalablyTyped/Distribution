@@ -3,7 +3,7 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Auxiliary metadata for a MonitoredResource object. MonitoredResource
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaMonitoredResourceMetadata extends js.Object {
+  
   /**
     * Output only. Values for predefined system metadata labels. System labels
     * are a kind of metadata extracted by Google, including
@@ -25,38 +26,45 @@ trait SchemaMonitoredResourceMetadata extends js.Object {
     * &quot;c&quot;],   &quot;spot_instance&quot;: false }
     */
   var systemLabels: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
   /**
     * Output only. A map of user-defined metadata labels.
     */
   var userLabels: js.UndefOr[StringDictionary[String]] = js.native
 }
-
 object SchemaMonitoredResourceMetadata {
+  
   @scala.inline
   def apply(): SchemaMonitoredResourceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMonitoredResourceMetadata]
   }
+  
   @scala.inline
   implicit class SchemaMonitoredResourceMetadataOps[Self <: SchemaMonitoredResourceMetadata] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSystemLabels(value: StringDictionary[js.Any]): Self = this.set("systemLabels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSystemLabels: Self = this.set("systemLabels", js.undefined)
+    
     @scala.inline
     def setUserLabels(value: StringDictionary[String]): Self = this.set("userLabels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUserLabels: Self = this.set("userLabels", js.undefined)
   }
-  
 }
-

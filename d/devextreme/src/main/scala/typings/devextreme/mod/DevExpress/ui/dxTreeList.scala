@@ -4,55 +4,104 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxTreeList extends GridBase {
+  
   def addColumn(columnOptions: String): Unit = js.native
-  /** @name dxTreeList.addColumn(columnOptions) */
+  /**
+    * [descr:dxTreeList.addColumn(columnOptions)]
+    */
   def addColumn(columnOptions: js.Any): Unit = js.native
-  /** @name dxTreeList.addRow() */
+  
+  /**
+    * [descr:dxTreeList.addRow()]
+    */
   def addRow(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxTreeList.addRow(parentId) */
+  /**
+    * [descr:dxTreeList.addRow(parentId)]
+    */
   def addRow(parentId: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxTreeList.collapseRow(key) */
+  
+  /**
+    * [descr:dxTreeList.collapseRow(key)]
+    */
   def collapseRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxTreeList.expandRow(key) */
+  
+  /**
+    * [descr:dxTreeList.expandRow(key)]
+    */
   def expandRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxTreeList.forEachNode(callback) */
+  
+  /**
+    * [descr:dxTreeList.forEachNode(callback)]
+    */
   def forEachNode(callback: js.Function): Unit = js.native
-  /** @name dxTreeList.forEachNode(nodes, callback) */
+  /**
+    * [descr:dxTreeList.forEachNode(nodes, callback)]
+    */
   def forEachNode(nodes: js.Array[dxTreeListNode], callback: js.Function): Unit = js.native
+  
   def getNodeByKey(key: String): dxTreeListNode = js.native
-  /** @name dxTreeList.getNodeByKey(key) */
+  /**
+    * [descr:dxTreeList.getNodeByKey(key)]
+    */
   def getNodeByKey(key: js.Any): dxTreeListNode = js.native
   def getNodeByKey(key: Double): dxTreeListNode = js.native
-  /** @name dxTreeList.getRootNode() */
+  
+  /**
+    * [descr:dxTreeList.getRootNode()]
+    */
   def getRootNode(): dxTreeListNode = js.native
-  /** @name dxTreeList.getSelectedRowKeys() */
+  
+  /**
+    * [descr:dxTreeList.getSelectedRowKeys()]
+    */
   def getSelectedRowKeys(): js.Array[_] = js.native
-  /** @deprecated */
-  /** @name dxTreeList.getSelectedRowKeys(leavesOnly) */
-  def getSelectedRowKeys(leavesOnly: Boolean): js.Array[_] = js.native
-  /** @name dxTreeList.getSelectedRowKeys(mode) */
+  /**
+    * [descr:dxTreeList.getSelectedRowKeys(mode)]
+    */
   def getSelectedRowKeys(mode: String): js.Array[_] = js.native
-  /** @name dxTreeList.getSelectedRowsData() */
+  
+  /**
+    * [descr:dxTreeList.getSelectedRowsData()]
+    */
   def getSelectedRowsData(): js.Array[_] = js.native
-  /** @name dxTreeList.getSelectedRowsData(mode) */
+  /**
+    * [descr:dxTreeList.getSelectedRowsData(mode)]
+    */
   def getSelectedRowsData(mode: String): js.Array[_] = js.native
-  /** @name dxTreeList.getVisibleColumns() */
+  
+  /**
+    * [descr:dxTreeList.getVisibleColumns()]
+    */
   def getVisibleColumns(): js.Array[dxTreeListColumn] = js.native
-  /** @name dxTreeList.getVisibleColumns(headerLevel) */
+  /**
+    * [descr:dxTreeList.getVisibleColumns(headerLevel)]
+    */
   def getVisibleColumns(headerLevel: Double): js.Array[dxTreeListColumn] = js.native
-  /** @name dxTreeList.getVisibleRows() */
+  
+  /**
+    * [descr:dxTreeList.getVisibleRows()]
+    */
   def getVisibleRows(): js.Array[dxTreeListRowObject] = js.native
-  /** @name dxTreeList.isRowExpanded(key) */
+  
+  /**
+    * [descr:dxTreeList.isRowExpanded(key)]
+    */
   def isRowExpanded(key: js.Any): Boolean = js.native
-  /** @name dxTreeList.loadDescendants() */
+  
+  /**
+    * [descr:dxTreeList.loadDescendants()]
+    */
   def loadDescendants(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxTreeList.loadDescendants(keys) */
+  /**
+    * [descr:dxTreeList.loadDescendants(keys)]
+    */
   def loadDescendants(keys: js.Array[_]): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxTreeList.loadDescendants(keys, childrenOnly) */
+  /**
+    * [descr:dxTreeList.loadDescendants(keys, childrenOnly)]
+    */
   def loadDescendants(keys: js.Array[_], childrenOnly: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
-

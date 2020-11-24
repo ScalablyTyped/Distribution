@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes the model of an {@link ObjectInspector}
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XObjectInspectorModel extends js.Object {
+  
   /**
     * describes a set of factories for creating XPropertyHandlers
     *
@@ -28,6 +29,7 @@ trait XObjectInspectorModel extends js.Object {
     * @see XPropertyHandler.getSupersededProperties
     */
   var HandlerFactories: SafeArray[_] = js.native
+  
   /**
     * indicates that the object inspector should have a help section.
     *
@@ -37,6 +39,7 @@ trait XObjectInspectorModel extends js.Object {
     * @since OOo 2.2
     */
   var HasHelpSection: Boolean = js.native
+  
   /**
     * determines whether the object inspector's UI should be read-only.
     *
@@ -48,6 +51,7 @@ trait XObjectInspectorModel extends js.Object {
     * @see LineDescriptor
     */
   var IsReadOnly: Boolean = js.native
+  
   /**
     * denotes the maximum number of lines of text to be reserved for the help section.
     *
@@ -57,6 +61,7 @@ trait XObjectInspectorModel extends js.Object {
     * @since OOo 2.2
     */
   var MaxHelpTextLines: Double = js.native
+  
   /**
     * denotes the minimum number of lines of text to be reserved for the help section.
     *
@@ -66,6 +71,7 @@ trait XObjectInspectorModel extends js.Object {
     * @since OOo 2.2
     */
   var MinHelpTextLines: Double = js.native
+  
   /**
     * describes the property categories used by the property handlers.
     *
@@ -78,6 +84,7 @@ trait XObjectInspectorModel extends js.Object {
     * @see LineDescriptor.Category
     */
   def describeCategories(): SafeArray[PropertyCategoryDescriptor] = js.native
+  
   /**
     * retrieves an index in a global property ordering, for a given property name
     *
@@ -96,8 +103,8 @@ trait XObjectInspectorModel extends js.Object {
     */
   def getPropertyOrderIndex(PropertyName: String): Double = js.native
 }
-
 object XObjectInspectorModel {
+  
   @scala.inline
   def apply(
     HandlerFactories: SafeArray[_],
@@ -111,32 +118,41 @@ object XObjectInspectorModel {
     val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories.asInstanceOf[js.Any], HasHelpSection = HasHelpSection.asInstanceOf[js.Any], IsReadOnly = IsReadOnly.asInstanceOf[js.Any], MaxHelpTextLines = MaxHelpTextLines.asInstanceOf[js.Any], MinHelpTextLines = MinHelpTextLines.asInstanceOf[js.Any], describeCategories = js.Any.fromFunction0(describeCategories), getPropertyOrderIndex = js.Any.fromFunction1(getPropertyOrderIndex))
     __obj.asInstanceOf[XObjectInspectorModel]
   }
+  
   @scala.inline
   implicit class XObjectInspectorModelOps[Self <: XObjectInspectorModel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHandlerFactories(value: SafeArray[_]): Self = this.set("HandlerFactories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHasHelpSection(value: Boolean): Self = this.set("HasHelpSection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxHelpTextLines(value: Double): Self = this.set("MaxHelpTextLines", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinHelpTextLines(value: Double): Self = this.set("MinHelpTextLines", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescribeCategories(value: () => SafeArray[PropertyCategoryDescriptor]): Self = this.set("describeCategories", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPropertyOrderIndex(value: String => Double): Self = this.set("getPropertyOrderIndex", js.Any.fromFunction1(value))
   }
-  
 }
-

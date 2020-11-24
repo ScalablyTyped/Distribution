@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * YouTube Reporting API
@@ -28,9 +28,12 @@ import scala.scalajs.js.annotation._
 class Youtubereporting protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var jobs: ResourceJobs = js.native
+  
   var media: ResourceMedia = js.native
+  
   var reportTypes: ResourceReporttypes = js.native
 }
-

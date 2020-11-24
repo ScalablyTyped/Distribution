@@ -3,7 +3,7 @@ package typings.nodemailer.dataStreamMod
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Escapes dots in the beginning of lines. Ends the stream with <CR><LF>.<CR><LF>
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("nodemailer/lib/smtp-connection/data-stream", JSImport.Namespace)
 @js.native
 class ^ () extends Transform
-

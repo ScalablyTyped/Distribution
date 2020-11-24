@@ -2,7 +2,7 @@ package typings.ember.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Map stores values indexed by keys. Unlike JavaScript's
@@ -14,11 +14,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Map ()
   extends typings.ember.mod.Ember.Map
-
 /* static members */
 @JSImport("ember", "Map")
 @js.native
 object Map extends js.Object {
+  
   def create(): typings.ember.mod.Ember.Map = js.native
 }
-

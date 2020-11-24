@@ -3,11 +3,12 @@ package typings.geoflatbush
 import typings.flatbush.mod.Flatbush
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("geoflatbush", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def around(index: Flatbush, longitude: Double, latitude: Double): js.Array[Double] = js.native
   def around(
     index: Flatbush,
@@ -51,4 +52,3 @@ object mod extends js.Object {
     filter: js.Function1[/* index */ Double, Boolean]
   ): js.Array[Double] = js.native
 }
-

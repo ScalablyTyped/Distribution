@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import typings.activexLibreoffice.com_.sun.star.view.XControlAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a single pane in a view of a spreadsheet document. */
 @js.native
@@ -16,8 +16,8 @@ trait SpreadsheetViewPane
   extends XViewPane
      with XCellRangeReferrer
      with XControlAccess
-
 object SpreadsheetViewPane {
+  
   @scala.inline
   def apply(
     FirstVisibleColumn: Double,
@@ -39,4 +39,3 @@ object SpreadsheetViewPane {
     __obj.asInstanceOf[SpreadsheetViewPane]
   }
 }
-

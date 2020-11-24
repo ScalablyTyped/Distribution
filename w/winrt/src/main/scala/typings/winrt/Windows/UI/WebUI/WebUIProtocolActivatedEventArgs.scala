@@ -7,14 +7,14 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUIProtocolActivatedEventArgs
   extends IProtocolActivatedEventArgs
      with IActivatedEventArgsDeferral
-
 object WebUIProtocolActivatedEventArgs {
+  
   @scala.inline
   def apply(
     activatedOperation: ActivatedOperation,
@@ -27,4 +27,3 @@ object WebUIProtocolActivatedEventArgs {
     __obj.asInstanceOf[WebUIProtocolActivatedEventArgs]
   }
 }
-

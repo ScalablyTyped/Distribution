@@ -10,9 +10,9 @@ Bluetooth Serial Communication Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-bluetoothclassic-serial |
 | Keywords           | cordova, bluetooth, serial, arduino, ecosystem:cordova |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 108 |
+| # downloads        | 644 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ AMQP driver for node
 | ------------------ | :-------------: |
 | Full name          | amqp |
 | Keywords           | amqp |
-| # releases         | 2 |
-| # dependents       | 255 |
-| # downloads        | 1013116 |
+| # releases         | 0 |
+| # dependents       | 252 |
+| # downloads        | 1036122 |
 | # stars            | 44 |
 
 ## Links

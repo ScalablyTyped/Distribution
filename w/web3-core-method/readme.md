@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-core-method
 
-Typings are for version 1.2.11
+Typings are for version 1.3.0
 
 ## Library description:
 Creates the methods on the web3 modules. This is an internal package.
@@ -10,9 +10,9 @@ Creates the methods on the web3 modules. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core-method |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 37 |
-| # downloads        | 4386303 |
+| # releases         | 41 |
+| # dependents       | 49 |
+| # downloads        | 5974816 |
 | # stars            | 0 |
 
 ## Links

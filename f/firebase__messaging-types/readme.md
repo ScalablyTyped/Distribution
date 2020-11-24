@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__messaging-types
 
-Typings are for version 0.4.5
+Typings are for version 0.5.0
 
 ## Library description:
 @firebase/messaging Types
@@ -10,9 +10,9 @@ Typings are for version 0.4.5
 | ------------------ | :-------------: |
 | Full name          | @firebase/messaging-types |
 | Keywords           | - |
-| # releases         | 896 |
+| # releases         | 1105 |
 | # dependents       | 3 |
-| # downloads        | 16746440 |
+| # downloads        | 29670118 |
 | # stars            | 0 |
 
 ## Links

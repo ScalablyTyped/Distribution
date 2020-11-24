@@ -4,10 +4,11 @@ import typings.officeUiFabricReact.listTypesMod.IList
 import typings.officeUiFabricReact.listTypesMod.ScrollToMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IDetailsList extends IList {
+  
   /**
     * Scroll to and focus the item at the given index. focusIndex will call scrollToIndex on the specified index.
     *
@@ -55,4 +56,3 @@ trait IDetailsList extends IList {
     scrollToMode: ScrollToMode
   ): Unit = js.native
 }
-

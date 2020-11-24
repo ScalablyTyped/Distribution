@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Versions$Files")
 @js.native
 class ResourceSitesVersionsFiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebasehosting.sites.versions.files.list
     * @desc Lists the remaining files to be uploaded for the specified version.
@@ -48,4 +50,3 @@ class ResourceSitesVersionsFiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListVersionFilesResponse]
   ): Unit = js.native
 }
-

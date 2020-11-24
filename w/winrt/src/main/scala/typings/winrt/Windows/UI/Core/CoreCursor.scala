@@ -2,12 +2,12 @@ package typings.winrt.Windows.UI.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CoreCursor extends ICoreCursor
-
 object CoreCursor {
+  
   @scala.inline
   def apply(id: Double, `type`: CoreCursorType): CoreCursor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
@@ -15,4 +15,3 @@ object CoreCursor {
     __obj.asInstanceOf[CoreCursor]
   }
 }
-

@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.anon.Items
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceMapIterator extends IIterator[IKeyValuePair[String, NamedResource]]
-
 object ResourceMapIterator {
+  
   @scala.inline
   def apply(
     current: IKeyValuePair[String, NamedResource],
@@ -22,4 +22,3 @@ object ResourceMapIterator {
     __obj.asInstanceOf[ResourceMapIterator]
   }
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Deobfuscationfiles")
 @js.native
 class ResourceEditsDeobfuscationfiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.deobfuscationfiles.upload
     * @desc Uploads the deobfuscation file of the specified APK. If a
@@ -52,4 +54,3 @@ class ResourceEditsDeobfuscationfiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDeobfuscationFilesUploadResponse]
   ): Unit = js.native
 }
-

@@ -5,12 +5,13 @@ import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/descriptions", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: FC[DescriptionsItemProps] = js.native
+  
   def apply(hasPrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize: DescriptionsProps): Element = js.native
+  
+  var Item: FC[DescriptionsItemProps] = js.native
 }
-

@@ -4,11 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies an interface for executing a system command. */
 @js.native
 trait XSystemShellExecute extends XInterface {
+  
   /**
     * Executes an arbitrary system command.
     * @param aCommand Specifies the command to execute. This may be an executable file or a document which is registered with an application on a specific pla
@@ -20,8 +21,8 @@ trait XSystemShellExecute extends XInterface {
     */
   def execute(aCommand: String, aParameter: String, nFlags: Double): Unit = js.native
 }
-
 object XSystemShellExecute {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -32,20 +33,23 @@ object XSystemShellExecute {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction3(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSystemShellExecute]
   }
+  
   @scala.inline
   implicit class XSystemShellExecuteOps[Self <: XSystemShellExecute] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setExecute(value: (String, String, Double) => Unit): Self = this.set("execute", js.Any.fromFunction3(value))
   }
-  
 }
-

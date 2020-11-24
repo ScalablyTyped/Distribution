@@ -10,9 +10,9 @@ Markdown tables
 | ------------------ | :-------------: |
 | Full name          | markdown-table |
 | Keywords           | text, markdown, table, align, rows, tabular |
-| # releases         | 4 |
-| # dependents       | 110 |
-| # downloads        | 66138301 |
+| # releases         | 3 |
+| # dependents       | 138 |
+| # downloads        | 93392982 |
 | # stars            | 6 |
 
 ## Links

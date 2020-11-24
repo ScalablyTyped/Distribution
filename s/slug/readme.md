@@ -10,15 +10,15 @@ slugifies even utf-8 chars!
 | ------------------ | :-------------: |
 | Full name          | slug |
 | Keywords           | slugify, slug, string, utf8, utf-8, unicode, url |
-| # releases         | 8 |
-| # dependents       | 523 |
-| # downloads        | 4590931 |
+| # releases         | 26 |
+| # dependents       | 549 |
+| # downloads        | 5306061 |
 | # stars            | 106 |
 
 ## Links
-- [Homepage](https://github.com/Trott/node-slug)
-- [Bugs](https://github.com/Trott/node-slug/issues)
-- [Repository](https://github.com/Trott/node-slug)
+- [Homepage](https://github.com/Trott/slug)
+- [Bugs](https://github.com/Trott/slug/issues)
+- [Repository](https://github.com/Trott/slug)
 - [Npm](https://www.npmjs.com/package/slug)
     
 

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Videos")
 @js.native
 class ResourceVideos protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.videos.delete
     * @desc Deletes a YouTube video.
@@ -38,6 +40,7 @@ class ResourceVideos protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceVideosDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceVideosDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * youtube.videos.getRating
     * @desc Retrieves the ratings that the authorized user gave to a list of
@@ -71,6 +74,7 @@ class ResourceVideos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVideoGetRatingResponse]
   ): Unit = js.native
+  
   /**
     * youtube.videos.insert
     * @desc Uploads a video to YouTube and optionally sets the video's
@@ -109,6 +113,7 @@ class ResourceVideos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVideo]
   ): Unit = js.native
+  
   /**
     * youtube.videos.list
     * @desc Returns a list of videos that match the API request parameters.
@@ -149,6 +154,7 @@ class ResourceVideos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVideoListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.videos.rate
     * @desc Add a like or dislike rating to a video or remove a rating from a
@@ -175,6 +181,7 @@ class ResourceVideos protected () extends js.Object {
   ): Unit = js.native
   def rate(params: ParamsResourceVideosRate, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def rate(params: ParamsResourceVideosRate, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * youtube.videos.reportAbuse
     * @desc Report abuse for a video.
@@ -204,6 +211,7 @@ class ResourceVideos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.videos.update
     * @desc Updates a video's metadata.
@@ -235,4 +243,3 @@ class ResourceVideos protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVideo]
   ): Unit = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analyticsreporting/v4", "analyticsreporting_v4.Resource$Reports")
 @js.native
 class ResourceReports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * analyticsreporting.reports.batchGet
     * @desc Returns the Analytics data.
@@ -41,5 +41,6 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetReportsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

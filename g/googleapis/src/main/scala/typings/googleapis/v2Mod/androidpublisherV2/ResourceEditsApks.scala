@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Apks")
 @js.native
 class ResourceEditsApks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.apks.addexternallyhosted
     * @desc Creates a new APK without uploading the APK itself to Google Play,
@@ -49,6 +49,9 @@ class ResourceEditsApks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApksAddExternallyHostedResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.apks.list
     * @alias androidpublisher.edits.apks.list
@@ -77,6 +80,7 @@ class ResourceEditsApks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApksListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.apks.upload
     * @alias androidpublisher.edits.apks.upload
@@ -109,4 +113,3 @@ class ResourceEditsApks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaApk]
   ): Unit = js.native
 }
-

@@ -10,11 +10,12 @@ import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.xyPlotMod.XYPlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots/barPlot", JSImport.Namespace)
 @js.native
 object barPlotMod extends js.Object {
+  
   @js.native
   /**
     * A Bar Plot draws bars growing out from a baseline to some value
@@ -24,23 +25,17 @@ object barPlotMod extends js.Object {
     */
   class Bar[X, Y] () extends XYPlot[X, Y] {
     def this(orientation: BarOrientation) = this()
+    
     var _barAlignment: js.Any = js.native
-    var _baseline: js.Any = js.native
-    var _baselineValue: js.Any = js.native
-    var _baselineValueProvider: js.Any = js.native
-    var _computeBarPixelThickness: js.Any = js.native
-    /**
-      * Whether all the bars in this barPlot have the same pixel thickness.
-      * If so, use the _barPixelThickness property to access the thickness.
-      */
-    var _fixedBarPixelThickness: js.Any = js.native
-    var _hideBarsIfAnyAreTooWide: js.Any = js.native
-    var _isVertical: Boolean = js.native
-    var _labelConfig: js.Any = js.native
-    var _labelFormatter: js.Any = js.native
-    var _labelsEnabled: js.Any = js.native
-    var _labelsPosition: js.Any = js.native
+    
     /* private */ def _barPixelThickness(): js.Any = js.native
+    
+    var _baseline: js.Any = js.native
+    
+    var _baselineValue: js.Any = js.native
+    
+    var _baselineValueProvider: js.Any = js.native
+    
     /* private */ def _calculateLabelProperties(
       barCoordinates: js.Any,
       barDimensions: js.Any,
@@ -48,7 +43,11 @@ object barPlotMod extends js.Object {
       showLabelOnBar: js.Any,
       aboveOrLeftOfBaseline: js.Any
     ): js.Any = js.native
+    
+    var _computeBarPixelThickness: js.Any = js.native
+    
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
+    
     /* private */ def _createLabelContainer(
       labelArea: js.Any,
       labelContainerOrigin: js.Any,
@@ -57,14 +56,27 @@ object barPlotMod extends js.Object {
       showLabelOnBar: js.Any,
       color: js.Any
     ): js.Any = js.native
+    
     /* private */ def _drawLabel(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
+    
     /* protected */ def _drawLabels(): Unit = js.native
+    
     /* private */ def _entitiesIntersecting(xValOrRange: js.Any, yValOrRange: js.Any): js.Any = js.native
+    
+    /**
+      * Whether all the bars in this barPlot have the same pixel thickness.
+      * If so, use the _barPixelThickness property to access the thickness.
+      */
+    var _fixedBarPixelThickness: js.Any = js.native
+    
     /**
       * Return the <rect>'s x or y attr value given the position and thickness of
       * that bar. This method is responsible for account for barAlignment, in particular.
       */
     /* protected */ def _getPositionAttr(position: Double, thickness: Double): Double = js.native
+    
+    var _hideBarsIfAnyAreTooWide: js.Any = js.native
+    
     /* protected */ def _isDatumOnScreen(
       attrToProjector: AttributeToProjector,
       plotWidth: Double,
@@ -73,21 +85,37 @@ object barPlotMod extends js.Object {
       i: Double,
       dataset: Dataset
     ): Boolean = js.native
+    
+    var _isVertical: Boolean = js.native
+    
+    var _labelConfig: js.Any = js.native
+    
+    var _labelFormatter: js.Any = js.native
+    
+    var _labelsEnabled: js.Any = js.native
+    
+    var _labelsPosition: js.Any = js.native
+    
     /**
       * The rectangular bounds of a bar. Note that the x/y coordinates are not the
       * same as the "pixel point" because they are always at the top/left of the
       * bar.
       */
     /* protected */ def _pixelBounds(datum: js.Any, index: Double, dataset: Dataset): Y = js.native
+    
     /* private */ def _pixelPointBar(originalPosition: js.Any, scaledBaseline: js.Any, rect: js.Any): js.Any = js.native
+    
     /**
       * Labels are "on-bar" by default, but if the bar is not long enough to fit the text,
       * we can try putting the label "off-bar", if there's enough space outside of the bar
       * to fit it.
       */
     /* private */ def _shouldShowLabelOnBar(barCoordinates: js.Any, barDimensions: js.Any, labelDimensions: js.Any): js.Any = js.native
+    
     /* private */ def _updateLengthScale(): js.Any = js.native
+    
     /* protected */ def _updateThicknessAttr(): Unit = js.native
+    
     /**
       * Gets the current bar alignment
       */
@@ -104,6 +132,7 @@ object barPlotMod extends js.Object {
       * the x coordinate
       */
     def barAlignment(align: BarAlignment): this.type = js.native
+    
     /**
       * Gets the accessor for the bar "end", which is used to compute the width of
       * each bar on the independent axis.
@@ -131,6 +160,7 @@ object barPlotMod extends js.Object {
       */
     def barEnd(end: Double): this.type = js.native
     def barEnd(end: IAccessor[Double | X]): this.type = js.native
+    
     /**
       * Gets the baseline value.
       * The baseline is the line that the bars are drawn from.
@@ -146,6 +176,7 @@ object barPlotMod extends js.Object {
       * @returns {Bar} The calling Bar Plot.
       */
     def baselineValue(value: X | Y): this.type = js.native
+    
     /**
       * Gets the Formatter for the labels.
       */
@@ -160,6 +191,7 @@ object barPlotMod extends js.Object {
       * @returns {Bar} The calling Bar Plot.
       */
     def labelFormatter(formatter: DatumFormatter): this.type = js.native
+    
     /**
       * Get whether bar labels are enabled.
       *
@@ -175,22 +207,49 @@ object barPlotMod extends js.Object {
       */
     def labelsEnabled(enabled: Boolean): this.type = js.native
     def labelsEnabled(enabled: Boolean, labelsPosition: LabelsPosition): this.type = js.native
+    
     /**
       * The binding associated with bar length. Length is the count or value the bar is trying to show.
       * This is the .y() for a vertical plot and .x() for a horizontal plot.
       */
     /* protected */ def length(): ITransformableAccessorScaleBinding[_, Double] = js.native
+    
     /**
       * Gets the orientation of the plot
       *
       * @return "vertical" | "horizontal"
       */
     def orientation(): BarOrientation = js.native
+    
     /**
       * The binding associated with bar position. Position separates the different bar categories.
       * This is the .x() for a vertical plot and .y() for a horizontal plot.
       */
     /* protected */ def position(): ITransformableAccessorScaleBinding[_, Double] = js.native
+  }
+  /* static members */
+  @js.native
+  object Bar extends js.Object {
+    
+    var _BAR_AREA_CLASS: js.Any = js.native
+    
+    var _BAR_END_KEY: js.Any = js.native
+    
+    var _BAR_GAPLESS_THRESHOLD_PX: Double = js.native
+    
+    var _BAR_THICKNESS_KEY: String = js.native
+    
+    var _BAR_THICKNESS_RATIO: Double = js.native
+    
+    var _LABEL_AREA_CLASS: String = js.native
+    
+    /**
+      * In the case of "start" or "end" LabelPositions, put the label this many px away
+      * from the bar's length distance edge
+      */
+    var _LABEL_MARGIN_INSIDE_BAR: Double = js.native
+    
+    var _SINGLE_BAR_DIMENSION_RATIO: Double = js.native
   }
   
   /* keyof plottable.anon.Middle */ /* Rewritten from type alias, can be one of: 
@@ -199,12 +258,28 @@ object barPlotMod extends js.Object {
     - typings.plottable.plottableStrings.middle
   */
   trait BarAlignment extends js.Object
+  @js.native
+  object BarAlignment extends js.Object {
+    
+    var end: typings.plottable.plottableStrings.end = js.native
+    
+    var middle: typings.plottable.plottableStrings.middle = js.native
+    
+    var start: typings.plottable.plottableStrings.start = js.native
+  }
   
   /* keyof plottable.anon.Horizontal */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.vertical
     - typings.plottable.plottableStrings.horizontal
   */
   trait BarOrientation extends js.Object
+  @js.native
+  object BarOrientation extends js.Object {
+    
+    var horizontal: typings.plottable.plottableStrings.horizontal = js.native
+    
+    var vertical: typings.plottable.plottableStrings.vertical = js.native
+  }
   
   /* keyof plottable.anon.End */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.start
@@ -213,44 +288,15 @@ object barPlotMod extends js.Object {
     - typings.plottable.plottableStrings.outside
   */
   trait LabelsPosition extends js.Object
-  
-  /* static members */
-  @js.native
-  object Bar extends js.Object {
-    var _BAR_AREA_CLASS: js.Any = js.native
-    var _BAR_END_KEY: js.Any = js.native
-    var _BAR_GAPLESS_THRESHOLD_PX: Double = js.native
-    var _BAR_THICKNESS_KEY: String = js.native
-    var _BAR_THICKNESS_RATIO: Double = js.native
-    var _LABEL_AREA_CLASS: String = js.native
-    /**
-      * In the case of "start" or "end" LabelPositions, put the label this many px away
-      * from the bar's length distance edge
-      */
-    var _LABEL_MARGIN_INSIDE_BAR: Double = js.native
-    var _SINGLE_BAR_DIMENSION_RATIO: Double = js.native
-  }
-  
-  @js.native
-  object BarAlignment extends js.Object {
-    var end: typings.plottable.plottableStrings.end = js.native
-    var middle: typings.plottable.plottableStrings.middle = js.native
-    var start: typings.plottable.plottableStrings.start = js.native
-  }
-  
-  @js.native
-  object BarOrientation extends js.Object {
-    var horizontal: typings.plottable.plottableStrings.horizontal = js.native
-    var vertical: typings.plottable.plottableStrings.vertical = js.native
-  }
-  
   @js.native
   object LabelsPosition extends js.Object {
+    
     var end: typings.plottable.plottableStrings.end = js.native
+    
     var middle: typings.plottable.plottableStrings.middle = js.native
+    
     var outside: typings.plottable.plottableStrings.outside = js.native
+    
     var start: typings.plottable.plottableStrings.start = js.native
   }
-  
 }
-

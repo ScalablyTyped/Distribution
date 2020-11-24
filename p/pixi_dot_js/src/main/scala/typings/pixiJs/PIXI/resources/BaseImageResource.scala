@@ -9,7 +9,7 @@ import typings.std.HTMLVideoElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base for all the image/canvas resources
@@ -19,12 +19,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BaseImageResource extends Resource {
+  
   /**
     * The source element
     * @member {HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|SVGElement} PIXI.resources.BaseImageResource#source
     * @readonly
     */
   val source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | SVGElement = js.native
+  
   /**
     * Upload the texture to the GPU.
     * @param {PIXI.Renderer} renderer - Upload to the renderer
@@ -39,4 +41,3 @@ trait BaseImageResource extends Resource {
   def upload(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture, source: HTMLVideoElement): Boolean = js.native
   def upload(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture, source: SVGElement): Boolean = js.native
 }
-

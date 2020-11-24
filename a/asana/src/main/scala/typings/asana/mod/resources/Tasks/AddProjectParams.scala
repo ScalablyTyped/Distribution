@@ -2,28 +2,61 @@ package typings.asana.mod.resources.Tasks
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AddProjectParams extends js.Object {
-  var insertAfter: js.UndefOr[Double] = js.undefined
-  var insertBefore: js.UndefOr[Double] = js.undefined
-  var project: String | Double
-  var section: js.UndefOr[Double] = js.undefined
+  
+  var insertAfter: js.UndefOr[Double] = js.native
+  
+  var insertBefore: js.UndefOr[Double] = js.native
+  
+  var project: String | Double = js.native
+  
+  var section: js.UndefOr[Double] = js.native
 }
-
 object AddProjectParams {
+  
   @scala.inline
-  def apply(
-    project: String | Double,
-    insertAfter: js.UndefOr[Double] = js.undefined,
-    insertBefore: js.UndefOr[Double] = js.undefined,
-    section: js.UndefOr[Double] = js.undefined
-  ): AddProjectParams = {
+  def apply(project: String | Double): AddProjectParams = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertAfter)) __obj.updateDynamic("insertAfter")(insertAfter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertBefore)) __obj.updateDynamic("insertBefore")(insertBefore.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(section)) __obj.updateDynamic("section")(section.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddProjectParams]
   }
+  
+  @scala.inline
+  implicit class AddProjectParamsOps[Self <: AddProjectParams] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setProject(value: String | Double): Self = this.set("project", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInsertAfter(value: Double): Self = this.set("insertAfter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    
+    @scala.inline
+    def setInsertBefore(value: Double): Self = this.set("insertBefore", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    
+    @scala.inline
+    def setSection(value: Double): Self = this.set("section", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSection: Self = this.set("section", js.undefined)
+  }
 }
-

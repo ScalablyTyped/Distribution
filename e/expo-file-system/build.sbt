@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "expo-file-system"
-version := "9.1.0-7f7820"
+version := "9.2.0-b5167a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "react-native" % "0.63-dt-20200723Z-d06c5c",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13",
-  "org.scalablytyped" %%% "unimodules__core" % "5.3.0-738d4d",
-  "org.scalablytyped" %%% "unimodules__react-native-adapter" % "5.4.0-aa9e83")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
+  "org.scalablytyped" %%% "react-native" % "0.63-dt-20201120Z-d8889c",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0",
+  "org.scalablytyped" %%% "unimodules__core" % "5.5.1-ca6319",
+  "org.scalablytyped" %%% "unimodules__react-native-adapter" % "5.6.0-81e893")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

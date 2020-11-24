@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a configuration database composed of one or more storage backends containing settings used by software modules.
@@ -24,8 +24,8 @@ trait Backend
   extends XSchemaSupplier
      with XBackend
      with XBackendEntities
-
 object Backend {
+  
   @scala.inline
   def apply(
     AdminEntity: String,
@@ -47,4 +47,3 @@ object Backend {
     __obj.asInstanceOf[Backend]
   }
 }
-

@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.kinesisanalyticsMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "KinesisAnalytics")
 @js.native
@@ -14,4 +14,3 @@ class KinesisAnalytics ()
   extends typings.awsSdk.allMod.KinesisAnalytics {
   def this(options: ClientConfiguration) = this()
 }
-

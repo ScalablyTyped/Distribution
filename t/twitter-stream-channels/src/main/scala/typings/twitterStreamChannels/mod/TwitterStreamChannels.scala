@@ -3,7 +3,7 @@ package typings.twitterStreamChannels.mod
 import typings.twitterStreamChannels.mod.StreamChannels.StreamChannelsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class TwitterStreamChannels
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TwitterStreamChannels extends js.Object {
+  
   /**
     * Returns a Twitter API client on which you can do pretty much what you want.
     * More here https://github.com/ttezel/twit
@@ -24,6 +25,7 @@ trait TwitterStreamChannels extends js.Object {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/TwitterStreamChannels.js#L113
     */
   def getApiClient(): typings.twit.mod.^ = js.native
+  
   /**
     * Opens a Twitter Stream and returns you an other one on which you'll be able to attach events for each channels
     * @method streamChannels
@@ -39,29 +41,33 @@ trait TwitterStreamChannels extends js.Object {
     */
   def streamChannels(options: StreamChannelsOptions): StreamChannels = js.native
 }
-
 object TwitterStreamChannels {
+  
   @scala.inline
   def apply(getApiClient: () => typings.twit.mod.^, streamChannels: StreamChannelsOptions => StreamChannels): TwitterStreamChannels = {
     val __obj = js.Dynamic.literal(getApiClient = js.Any.fromFunction0(getApiClient), streamChannels = js.Any.fromFunction1(streamChannels))
     __obj.asInstanceOf[TwitterStreamChannels]
   }
+  
   @scala.inline
   implicit class TwitterStreamChannelsOps[Self <: TwitterStreamChannels] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetApiClient(value: () => typings.twit.mod.^): Self = this.set("getApiClient", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setStreamChannels(value: StreamChannelsOptions => StreamChannels): Self = this.set("streamChannels", js.Any.fromFunction1(value))
   }
-  
 }
-

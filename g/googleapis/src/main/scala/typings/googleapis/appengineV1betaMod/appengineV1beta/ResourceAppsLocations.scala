@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Locations")
 @js.native
 class ResourceAppsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.locations.get
     * @desc Gets information about a location.
@@ -42,6 +44,7 @@ class ResourceAppsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.locations.list
     * @desc Lists information about the supported locations for this service.
@@ -77,4 +80,3 @@ class ResourceAppsLocations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListLocationsResponse]
   ): Unit = js.native
 }
-

@@ -4,12 +4,12 @@ import typings.testingLibraryDom.anon.PartialConfig
 import typings.testingLibraryDom.configMod.ConfigFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@testing-library/vue", "configure")
 @js.native
 object configure extends js.Object {
+  
   def apply(configDelta: PartialConfig): Unit = js.native
   def apply(configDelta: ConfigFn): Unit = js.native
 }
-

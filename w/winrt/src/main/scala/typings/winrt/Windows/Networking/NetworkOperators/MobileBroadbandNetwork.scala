@@ -3,12 +3,12 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MobileBroadbandNetwork extends IMobileBroadbandNetwork
-
 object MobileBroadbandNetwork {
+  
   @scala.inline
   def apply(
     accessPointName: String,
@@ -26,4 +26,3 @@ object MobileBroadbandNetwork {
     __obj.asInstanceOf[MobileBroadbandNetwork]
   }
 }
-

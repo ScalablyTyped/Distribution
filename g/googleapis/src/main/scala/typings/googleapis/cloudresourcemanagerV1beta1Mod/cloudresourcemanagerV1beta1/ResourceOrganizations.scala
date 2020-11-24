@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v1beta1", "cloudresourcemanager_v1beta1.Resource$Organizations")
 @js.native
 class ResourceOrganizations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudresourcemanager.organizations.get
     * @desc Fetches an Organization resource identified by the specified
@@ -95,6 +97,7 @@ class ResourceOrganizations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrganization]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.organizations.getIamPolicy
     * @desc Gets the access control policy for an Organization resource. May be
@@ -183,6 +186,7 @@ class ResourceOrganizations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.organizations.list
     * @desc Lists Organization resources that are visible to the user and
@@ -283,6 +287,7 @@ class ResourceOrganizations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOrganizationsResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.organizations.setIamPolicy
     * @desc Sets the access control policy on an Organization resource.
@@ -371,6 +376,7 @@ class ResourceOrganizations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.organizations.testIamPermissions
     * @desc Returns permissions that a caller has on the specified
@@ -463,6 +469,7 @@ class ResourceOrganizations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.organizations.update
     * @desc Updates an Organization resource identified by the specified
@@ -554,4 +561,3 @@ class ResourceOrganizations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrganization]
   ): Unit = js.native
 }
-

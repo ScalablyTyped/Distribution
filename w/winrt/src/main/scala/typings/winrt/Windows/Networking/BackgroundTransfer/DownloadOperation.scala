@@ -6,12 +6,12 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DownloadOperation extends IDownloadOperation
-
 object DownloadOperation {
+  
   @scala.inline
   def apply(
     attachAsync: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation],
@@ -32,4 +32,3 @@ object DownloadOperation {
     __obj.asInstanceOf[DownloadOperation]
   }
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.style.HorizontalAlignment
 import typings.activexLibreoffice.com_.sun.star.style.NumberingAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes the rules for chapter numbering in a text document.
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
 trait ChapterNumberingRule
   extends NumberingAlignment
      with typings.activexLibreoffice.com_.sun.star.style.NumberingLevel {
+  
   /**
     * contains the name of the paragraph style that marks this heading level.
     *
@@ -29,8 +30,8 @@ trait ChapterNumberingRule
     */
   var HeadingStyleName: String = js.native
 }
-
 object ChapterNumberingRule {
+  
   @scala.inline
   def apply(
     Alignment: HorizontalAlignment,
@@ -51,20 +52,23 @@ object ChapterNumberingRule {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], BulletFontName = BulletFontName.asInstanceOf[js.Any], BulletId = BulletId.asInstanceOf[js.Any], CharStyleName = CharStyleName.asInstanceOf[js.Any], GraphicURL = GraphicURL.asInstanceOf[js.Any], HeadingStyleName = HeadingStyleName.asInstanceOf[js.Any], Insertion = Insertion.asInstanceOf[js.Any], NumberingType = NumberingType.asInstanceOf[js.Any], ParentNumbering = ParentNumbering.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any], StartWith = StartWith.asInstanceOf[js.Any], Suffix = Suffix.asInstanceOf[js.Any], TextMarginDistance = TextMarginDistance.asInstanceOf[js.Any], TextNumberingDistance = TextNumberingDistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChapterNumberingRule]
   }
+  
   @scala.inline
   implicit class ChapterNumberingRuleOps[Self <: ChapterNumberingRule] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHeadingStyleName(value: String): Self = this.set("HeadingStyleName", value.asInstanceOf[js.Any])
   }
-  
 }
-

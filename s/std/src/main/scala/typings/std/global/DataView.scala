@@ -5,7 +5,7 @@ import typings.std.ArrayBufferLike
 import typings.std.DataViewConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DataView")
 @js.native
@@ -16,8 +16,6 @@ class DataView protected ()
   def this(buffer: ArrayBufferLike, byteOffset: js.UndefOr[scala.Nothing], byteLength: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, byteLength: Double) = this()
 }
-
 @JSGlobal("DataView")
 @js.native
 object DataView extends TopLevel[DataViewConstructor]
-

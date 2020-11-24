@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Products")
 @js.native
 class ResourceProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.products.get
     * @desc Gets the requested product by id.
@@ -41,6 +43,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.products.search
     * @desc Gets the requested product.
@@ -70,4 +73,3 @@ class ResourceProducts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGetOffersResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The SimplePlane allows you to draw a texture across several points and then manipulate these points
@@ -21,10 +21,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SimplePlane extends Mesh {
+  
   /**
     * Method used for overrides, to do something in case texture frame was changed.
     * Meshes based on plane can override it and change more details based on texture.
     */
   def textureUpdated(): Unit = js.native
 }
-

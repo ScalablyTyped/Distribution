@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "SpotLightHelper")
 @js.native
@@ -13,4 +13,3 @@ class SpotLightHelper protected ()
   def this(light: typings.three.lightMod.Light, color: Double) = this()
   def this(light: typings.three.lightMod.Light, color: typings.three.colorMod.Color) = this()
 }
-

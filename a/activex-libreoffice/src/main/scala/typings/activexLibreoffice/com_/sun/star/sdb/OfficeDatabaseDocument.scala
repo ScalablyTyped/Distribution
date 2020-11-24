@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.script.provider.XScriptProviderS
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a office database document which is a storable document.
@@ -26,4 +26,3 @@ trait OfficeDatabaseDocument
      with XScriptProviderSupplier
      with XLoadable
      with XCloseable
-

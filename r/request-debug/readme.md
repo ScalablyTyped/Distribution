@@ -11,8 +11,8 @@ Library to assist with debugging HTTP(s) requests made by the request module.
 | Full name          | request-debug |
 | Keywords           | request, debug, http, https, headers |
 | # releases         | 0 |
-| # dependents       | 104 |
-| # downloads        | 2493062 |
+| # dependents       | 113 |
+| # downloads        | 2922567 |
 | # stars            | 4 |
 
 ## Links

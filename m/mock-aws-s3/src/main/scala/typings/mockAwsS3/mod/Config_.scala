@@ -1,11 +1,10 @@
 package typings.mockAwsS3.mod
 
 import typings.awsSdk.configMod.APIVersions
-import typings.awsSdk.configMod.ConfigurationOptions
 import typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "Config")
 @js.native
@@ -15,6 +14,5 @@ import scala.scalajs.js.annotation._
   */
 class Config_ ()
   extends typings.awsSdk.mod.Config_ {
-  def this(options: ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
+  def this(options: typings.awsSdk.configBaseMod.ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
 }
-

@@ -5,35 +5,21 @@ import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for enumerating a collection of Pnp device objects, and event handlers for monitoring changes to the objects in the collection asynchronously. */
 @JSGlobal("Windows.Devices.Enumeration.Pnp")
 @js.native
 object Pnp extends js.Object {
+  
   /** Represents a PnP object. This class allows access to well-known properties of a PnP object as well as a property store of additional properties that are specified to be retrieved from the the PnP object. */
   @js.native
   abstract class PnpObject ()
     extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject
-  
-  /** Represents an iterable collection of Pnp device objects. */
-  @js.native
-  abstract class PnpObjectCollection ()
-    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection
-  
-  /** Contains the updated properties of a PnpObject . */
-  @js.native
-  abstract class PnpObjectUpdate ()
-    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate
-  
-  /** Raises events to notify the client that a PnpObject has been added, updated, or removed from an enumerated collection of Pnp device objects in an incremental and asynchronous way. */
-  @js.native
-  abstract class PnpObjectWatcher ()
-    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher
-  
   /* static members */
   @js.native
   object PnpObject extends js.Object {
+    
     /**
       * Creates a PnpObject object asynchronously from a previously saved DeviceInformation ID.
       * @param type The type of the PnpObject .
@@ -42,6 +28,7 @@ object Pnp extends js.Object {
       * @return The PnpObject created from the previously saved DeviceInformation ID.
       */
     def createFromIdAsync(`type`: PnpObjectType, id: String, requestedProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject] = js.native
+    
     /**
       * Returns a PnpObjectWatcher object that is used to enumerate the PnP objects in the collection using events.
       * @param type The type of the PnpObject .
@@ -57,6 +44,7 @@ object Pnp extends js.Object {
       * @return A PnpObjectWatcher object used to enumerate the collection by registering event notification delegates and by issuing start and stop event notifications.
       */
     def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = js.native
+    
     /**
       * Returns all of the PnP objects of a specified type that match the specified criteria.
       * @param type The type of the PnpObject .
@@ -74,20 +62,42 @@ object Pnp extends js.Object {
     def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = js.native
   }
   
+  /** Represents an iterable collection of Pnp device objects. */
+  @js.native
+  abstract class PnpObjectCollection ()
+    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection
+  
   /** Indicates the device type of a PnpObject . */
   @js.native
   object PnpObjectType extends js.Object {
-    /* 5 */ val associationEndpoint: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.associationEndpoint with Double = js.native
-    /* 6 */ val associationEndpointContainer: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.associationEndpointContainer with Double = js.native
-    /* 7 */ val associationEndpointService: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.associationEndpointService with Double = js.native
-    /* 3 */ val device: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.device with Double = js.native
-    /* 2 */ val deviceContainer: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceContainer with Double = js.native
-    /* 1 */ val deviceInterface: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterface with Double = js.native
-    /* 4 */ val deviceInterfaceClass: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterfaceClass with Double = js.native
-    /* 0 */ val unknown: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.unknown with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType with Double] = js.native
+    
+    /* 5 */ val associationEndpoint: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.associationEndpoint with Double = js.native
+    
+    /* 6 */ val associationEndpointContainer: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.associationEndpointContainer with Double = js.native
+    
+    /* 7 */ val associationEndpointService: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.associationEndpointService with Double = js.native
+    
+    /* 3 */ val device: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.device with Double = js.native
+    
+    /* 2 */ val deviceContainer: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceContainer with Double = js.native
+    
+    /* 1 */ val deviceInterface: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterface with Double = js.native
+    
+    /* 4 */ val deviceInterfaceClass: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterfaceClass with Double = js.native
+    
+    /* 0 */ val unknown: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType.unknown with Double = js.native
   }
   
+  /** Contains the updated properties of a PnpObject . */
+  @js.native
+  abstract class PnpObjectUpdate ()
+    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate
+  
+  /** Raises events to notify the client that a PnpObject has been added, updated, or removed from an enumerated collection of Pnp device objects in an incremental and asynchronous way. */
+  @js.native
+  abstract class PnpObjectWatcher ()
+    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher
 }
-

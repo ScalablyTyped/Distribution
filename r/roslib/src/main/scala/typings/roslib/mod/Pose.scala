@@ -3,7 +3,7 @@ package typings.roslib.mod
 import typings.roslib.anon.Orientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "Pose")
 @js.native
@@ -17,13 +17,15 @@ import scala.scalajs.js.annotation._
   */
 class Pose () extends js.Object {
   def this(options: Orientation) = this()
-  var orientation: Quaternion = js.native
-  var position: Vector3 = js.native
+  
   /**
     * Apply a transform against this pose.
     *
     * @param tf the transform
     */
   def applyTransform(tf: Transform): Unit = js.native
+  
+  var orientation: Quaternion = js.native
+  
+  var position: Vector3 = js.native
 }
-

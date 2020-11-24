@@ -2,7 +2,7 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rate limits.  This message determines the maximum rate that tasks can be
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaRateLimits extends js.Object {
+  
   /**
     * Output only. The max burst size.  Max burst size limits how fast tasks in
     * queue are processed when many tasks are in the queue and the rate is
@@ -35,6 +36,7 @@ trait SchemaRateLimits extends js.Object {
     * max_dispatches_per_second is updated.
     */
   var maxBurstSize: js.UndefOr[Double] = js.native
+  
   /**
     * The maximum number of concurrent tasks that Cloud Tasks allows to be
     * dispatched for this queue. After this threshold has been reached, Cloud
@@ -45,6 +47,7 @@ trait SchemaRateLimits extends js.Object {
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#max_concurrent_requests).
     */
   var maxConcurrentDispatches: js.UndefOr[Double] = js.native
+  
   /**
     * The maximum rate at which tasks are dispatched from this queue.  If
     * unspecified when the queue is created, Cloud Tasks will pick the default.
@@ -54,37 +57,45 @@ trait SchemaRateLimits extends js.Object {
     */
   var maxDispatchesPerSecond: js.UndefOr[Double] = js.native
 }
-
 object SchemaRateLimits {
+  
   @scala.inline
   def apply(): SchemaRateLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRateLimits]
   }
+  
   @scala.inline
   implicit class SchemaRateLimitsOps[Self <: SchemaRateLimits] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMaxBurstSize(value: Double): Self = this.set("maxBurstSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxBurstSize: Self = this.set("maxBurstSize", js.undefined)
+    
     @scala.inline
     def setMaxConcurrentDispatches(value: Double): Self = this.set("maxConcurrentDispatches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxConcurrentDispatches: Self = this.set("maxConcurrentDispatches", js.undefined)
+    
     @scala.inline
     def setMaxDispatchesPerSecond(value: Double): Self = this.set("maxDispatchesPerSecond", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxDispatchesPerSecond: Self = this.set("maxDispatchesPerSecond", js.undefined)
   }
-  
 }
-

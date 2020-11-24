@@ -4,15 +4,15 @@
 Typings are for version 1.1
 
 ## Library description:
-This repository is used for publishing the AngularJS Material v1.x library and localized installs using `npm`. The component source-code for this library is in the [AngularJS Material repository](https://github.com/angular/material).
+This repository publishes the AngularJS Material v1.x library and localized installs using `npm`. You can find the component source-code for this library in the [AngularJS Material repository](https://github.com/angular/material).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | angular-material |
 | Keywords           | angularjs, material, browser, client-side, material design, component library, components |
-| # releases         | 15 |
+| # releases         | 20 |
 | # dependents       | 179 |
-| # downloads        | 2364751 |
+| # downloads        | 2347959 |
 | # stars            | 45 |
 
 ## Links

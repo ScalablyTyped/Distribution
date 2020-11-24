@@ -3,10 +3,11 @@ package typings.tslint.formatterMod
 import typings.tslint.ruleMod.RuleFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IFormatter extends js.Object {
+  
   /**
     * Formats linter results
     * @param failures Linter failures that were not fixed
@@ -18,4 +19,3 @@ trait IFormatter extends js.Object {
   def format(failures: js.Array[RuleFailure], fixes: js.Array[RuleFailure]): String = js.native
   def format(failures: js.Array[RuleFailure], fixes: js.Array[RuleFailure], fileNames: js.Array[String]): String = js.native
 }
-

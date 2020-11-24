@@ -2,7 +2,7 @@ package typings.istanbulReports.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.istanbulReports.istanbulReportsStrings.clover
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
   - typings.istanbulReports.istanbulReportsStrings.`text-summary`
 */
 trait ReportType extends js.Object
-

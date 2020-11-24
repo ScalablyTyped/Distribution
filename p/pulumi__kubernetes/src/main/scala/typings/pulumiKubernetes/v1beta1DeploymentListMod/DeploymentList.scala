@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/extensions/v1beta1/deploymentList", "DeploymentList")
 @js.native
@@ -26,28 +26,32 @@ class DeploymentList protected () extends CustomResource {
   def this(name: String, args: DeploymentListArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DeploymentListArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[extensionsSlashv1beta1] = js.native
+  
   /**
     * Items is the list of Deployments.
     */
   val items: Output_[js.Array[Deployment]] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.DeploymentList] = js.native
+  
   /**
     * Standard list metadata.
     */
   val metadata: Output_[ListMeta] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/extensions/v1beta1/deploymentList", "DeploymentList")
 @js.native
 object DeploymentList extends js.Object {
+  
   /**
     * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object DeploymentList extends js.Object {
     */
   def get(name: String, id: Input[ID]): DeploymentList = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): DeploymentList = js.native
+  
   /**
     * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deploymentList.DeploymentList */ Boolean = js.native
 }
-

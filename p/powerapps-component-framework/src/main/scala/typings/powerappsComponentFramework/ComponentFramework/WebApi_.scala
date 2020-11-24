@@ -4,13 +4,14 @@ import typings.powerappsComponentFramework.ComponentFramework.WebApi.Entity
 import typings.powerappsComponentFramework.ComponentFramework.WebApi.RetrieveMultipleResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for context.webApi
   */
 @js.native
 trait WebApi_ extends js.Object {
+  
   /**
     * Creates an entity record.
     * @param entityType logical name of the entity type record to create
@@ -18,6 +19,7 @@ trait WebApi_ extends js.Object {
     * @returns The deferred object for the result of the operation. The created record object will be resolved if successful.
     */
   def createRecord(entityType: String, data: Entity): js.Promise[EntityReference] = js.native
+  
   /**
     * Deletes an entity record.
     * @param id GUID of the entity record you want to delete.
@@ -25,6 +27,7 @@ trait WebApi_ extends js.Object {
     * @returns The deferred object for the result of the operation. The deleted record object will be resolved if successful.
     */
   def deleteRecord(entityType: String, id: String): js.Promise[EntityReference] = js.native
+  
   /**
     * Retrieves a collection of entity records.
     * @param entityType logical name of the entity type record to retrieve
@@ -37,6 +40,7 @@ trait WebApi_ extends js.Object {
   def retrieveMultipleRecords(entityType: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
   def retrieveMultipleRecords(entityType: String, options: String): js.Promise[RetrieveMultipleResponse] = js.native
   def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
+  
   /**
     * Retrieves an entity record.
     * @param id GUID of the entity record you want to retrieve.
@@ -47,6 +51,7 @@ trait WebApi_ extends js.Object {
     */
   def retrieveRecord(entityType: String, id: String): js.Promise[Entity] = js.native
   def retrieveRecord(entityType: String, id: String, options: String): js.Promise[Entity] = js.native
+  
   /**
     * Updates an entity record.
     * @param id GUID of the entity record you want to update.
@@ -56,4 +61,3 @@ trait WebApi_ extends js.Object {
     */
   def updateRecord(entityType: String, id: String, data: Entity): js.Promise[EntityReference] = js.native
 }
-

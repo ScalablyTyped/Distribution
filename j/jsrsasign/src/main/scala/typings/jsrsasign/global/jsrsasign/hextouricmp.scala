@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.hextouricmp")
 @js.native
 object hextouricmp extends js.Object {
+  
   /**
     * convert a hexadecimal string to a URLComponent string such like "%67%68".
     * @param s hexadecimal string
@@ -14,4 +15,3 @@ object hextouricmp extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

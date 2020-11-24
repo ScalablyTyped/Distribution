@@ -10,18 +10,15 @@ import typings.jsrender.JsViews.Templates
 import typings.jsrender.JsViews.Views
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ********************************** JsRender **********************************
 @js.native
 trait JQueryStatic extends js.Object {
+  
   /* var htmlString = $.render.templateName(data, myHelpersObject); // Render named template */
   var render: StringDictionary[TemplateRender] = js.native
-  /* $.templates(...) or $.templates.templateName: Compile/get template */
-  @JSName("templates")
-  var templates_Original: Templates = js.native
-  /* $.views.xxx ... // JsRender/JsViews APIs */
-  var views: Views = js.native
+  
   /**
   	 * Additional $.templates() signature for compiling unnamed template
   	 *
@@ -50,5 +47,10 @@ trait JQueryStatic extends js.Object {
   def templates(namedItems: Hash[TemplateSetter], parentTmpl: Template): Views = js.native
   def templates(name: String, item: js.UndefOr[TemplateSetter], parentTmpl: Template): Template = js.native
   def templates(name: String, item: TemplateSetter): Template = js.native
+  /* $.templates(...) or $.templates.templateName: Compile/get template */
+  @JSName("templates")
+  var templates_Original: Templates = js.native
+  
+  /* $.views.xxx ... // JsRender/JsViews APIs */
+  var views: Views = js.native
 }
-

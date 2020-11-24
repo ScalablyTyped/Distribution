@@ -3,9 +3,1351 @@ package typings.sortablejs
 import typings.sortablejs.mod.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortablejsStrings {
+  
+  @scala.inline
+  def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
+  
+  @scala.inline
+  def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
+  
+  @scala.inline
+  def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
+  
+  @scala.inline
+  def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def animation: animation = "animation".asInstanceOf[animation]
+  
+  @scala.inline
+  def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
+  
+  @scala.inline
+  def animationDirection: animationDirection = "animationDirection".asInstanceOf[animationDirection]
+  
+  @scala.inline
+  def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
+  
+  @scala.inline
+  def animationFillMode: animationFillMode = "animationFillMode".asInstanceOf[animationFillMode]
+  
+  @scala.inline
+  def animationIterationCount: animationIterationCount = "animationIterationCount".asInstanceOf[animationIterationCount]
+  
+  @scala.inline
+  def animationName: animationName = "animationName".asInstanceOf[animationName]
+  
+  @scala.inline
+  def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
+  
+  @scala.inline
+  def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
+  
+  @scala.inline
+  def backfaceVisibility: backfaceVisibility = "backfaceVisibility".asInstanceOf[backfaceVisibility]
+  
+  @scala.inline
+  def background: background = "background".asInstanceOf[background]
+  
+  @scala.inline
+  def backgroundAttachment: backgroundAttachment = "backgroundAttachment".asInstanceOf[backgroundAttachment]
+  
+  @scala.inline
+  def backgroundClip: backgroundClip = "backgroundClip".asInstanceOf[backgroundClip]
+  
+  @scala.inline
+  def backgroundColor: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
+  
+  @scala.inline
+  def backgroundImage: backgroundImage = "backgroundImage".asInstanceOf[backgroundImage]
+  
+  @scala.inline
+  def backgroundOrigin: backgroundOrigin = "backgroundOrigin".asInstanceOf[backgroundOrigin]
+  
+  @scala.inline
+  def backgroundPosition: backgroundPosition = "backgroundPosition".asInstanceOf[backgroundPosition]
+  
+  @scala.inline
+  def backgroundPositionX: backgroundPositionX = "backgroundPositionX".asInstanceOf[backgroundPositionX]
+  
+  @scala.inline
+  def backgroundPositionY: backgroundPositionY = "backgroundPositionY".asInstanceOf[backgroundPositionY]
+  
+  @scala.inline
+  def backgroundRepeat: backgroundRepeat = "backgroundRepeat".asInstanceOf[backgroundRepeat]
+  
+  @scala.inline
+  def backgroundSize: backgroundSize = "backgroundSize".asInstanceOf[backgroundSize]
+  
+  @scala.inline
+  def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
+  
+  @scala.inline
+  def blockSize: blockSize = "blockSize".asInstanceOf[blockSize]
+  
+  @scala.inline
+  def border: border = "border".asInstanceOf[border]
+  
+  @scala.inline
+  def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
+  
+  @scala.inline
+  def borderBlockEndColor: borderBlockEndColor = "borderBlockEndColor".asInstanceOf[borderBlockEndColor]
+  
+  @scala.inline
+  def borderBlockEndStyle: borderBlockEndStyle = "borderBlockEndStyle".asInstanceOf[borderBlockEndStyle]
+  
+  @scala.inline
+  def borderBlockEndWidth: borderBlockEndWidth = "borderBlockEndWidth".asInstanceOf[borderBlockEndWidth]
+  
+  @scala.inline
+  def borderBlockStart: borderBlockStart = "borderBlockStart".asInstanceOf[borderBlockStart]
+  
+  @scala.inline
+  def borderBlockStartColor: borderBlockStartColor = "borderBlockStartColor".asInstanceOf[borderBlockStartColor]
+  
+  @scala.inline
+  def borderBlockStartStyle: borderBlockStartStyle = "borderBlockStartStyle".asInstanceOf[borderBlockStartStyle]
+  
+  @scala.inline
+  def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
+  
+  @scala.inline
+  def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
+  
+  @scala.inline
+  def borderBottomColor: borderBottomColor = "borderBottomColor".asInstanceOf[borderBottomColor]
+  
+  @scala.inline
+  def borderBottomLeftRadius: borderBottomLeftRadius = "borderBottomLeftRadius".asInstanceOf[borderBottomLeftRadius]
+  
+  @scala.inline
+  def borderBottomRightRadius: borderBottomRightRadius = "borderBottomRightRadius".asInstanceOf[borderBottomRightRadius]
+  
+  @scala.inline
+  def borderBottomStyle: borderBottomStyle = "borderBottomStyle".asInstanceOf[borderBottomStyle]
+  
+  @scala.inline
+  def borderBottomWidth: borderBottomWidth = "borderBottomWidth".asInstanceOf[borderBottomWidth]
+  
+  @scala.inline
+  def borderCollapse: borderCollapse = "borderCollapse".asInstanceOf[borderCollapse]
+  
+  @scala.inline
+  def borderColor: borderColor = "borderColor".asInstanceOf[borderColor]
+  
+  @scala.inline
+  def borderImage: borderImage = "borderImage".asInstanceOf[borderImage]
+  
+  @scala.inline
+  def borderImageOutset: borderImageOutset = "borderImageOutset".asInstanceOf[borderImageOutset]
+  
+  @scala.inline
+  def borderImageRepeat: borderImageRepeat = "borderImageRepeat".asInstanceOf[borderImageRepeat]
+  
+  @scala.inline
+  def borderImageSlice: borderImageSlice = "borderImageSlice".asInstanceOf[borderImageSlice]
+  
+  @scala.inline
+  def borderImageSource: borderImageSource = "borderImageSource".asInstanceOf[borderImageSource]
+  
+  @scala.inline
+  def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
+  
+  @scala.inline
+  def borderInlineEnd: borderInlineEnd = "borderInlineEnd".asInstanceOf[borderInlineEnd]
+  
+  @scala.inline
+  def borderInlineEndColor: borderInlineEndColor = "borderInlineEndColor".asInstanceOf[borderInlineEndColor]
+  
+  @scala.inline
+  def borderInlineEndStyle: borderInlineEndStyle = "borderInlineEndStyle".asInstanceOf[borderInlineEndStyle]
+  
+  @scala.inline
+  def borderInlineEndWidth: borderInlineEndWidth = "borderInlineEndWidth".asInstanceOf[borderInlineEndWidth]
+  
+  @scala.inline
+  def borderInlineStart: borderInlineStart = "borderInlineStart".asInstanceOf[borderInlineStart]
+  
+  @scala.inline
+  def borderInlineStartColor: borderInlineStartColor = "borderInlineStartColor".asInstanceOf[borderInlineStartColor]
+  
+  @scala.inline
+  def borderInlineStartStyle: borderInlineStartStyle = "borderInlineStartStyle".asInstanceOf[borderInlineStartStyle]
+  
+  @scala.inline
+  def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
+  
+  @scala.inline
+  def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
+  
+  @scala.inline
+  def borderLeftColor: borderLeftColor = "borderLeftColor".asInstanceOf[borderLeftColor]
+  
+  @scala.inline
+  def borderLeftStyle: borderLeftStyle = "borderLeftStyle".asInstanceOf[borderLeftStyle]
+  
+  @scala.inline
+  def borderLeftWidth: borderLeftWidth = "borderLeftWidth".asInstanceOf[borderLeftWidth]
+  
+  @scala.inline
+  def borderRadius: borderRadius = "borderRadius".asInstanceOf[borderRadius]
+  
+  @scala.inline
+  def borderRight: borderRight = "borderRight".asInstanceOf[borderRight]
+  
+  @scala.inline
+  def borderRightColor: borderRightColor = "borderRightColor".asInstanceOf[borderRightColor]
+  
+  @scala.inline
+  def borderRightStyle: borderRightStyle = "borderRightStyle".asInstanceOf[borderRightStyle]
+  
+  @scala.inline
+  def borderRightWidth: borderRightWidth = "borderRightWidth".asInstanceOf[borderRightWidth]
+  
+  @scala.inline
+  def borderSpacing: borderSpacing = "borderSpacing".asInstanceOf[borderSpacing]
+  
+  @scala.inline
+  def borderStyle: borderStyle = "borderStyle".asInstanceOf[borderStyle]
+  
+  @scala.inline
+  def borderTop: borderTop = "borderTop".asInstanceOf[borderTop]
+  
+  @scala.inline
+  def borderTopColor: borderTopColor = "borderTopColor".asInstanceOf[borderTopColor]
+  
+  @scala.inline
+  def borderTopLeftRadius: borderTopLeftRadius = "borderTopLeftRadius".asInstanceOf[borderTopLeftRadius]
+  
+  @scala.inline
+  def borderTopRightRadius: borderTopRightRadius = "borderTopRightRadius".asInstanceOf[borderTopRightRadius]
+  
+  @scala.inline
+  def borderTopStyle: borderTopStyle = "borderTopStyle".asInstanceOf[borderTopStyle]
+  
+  @scala.inline
+  def borderTopWidth: borderTopWidth = "borderTopWidth".asInstanceOf[borderTopWidth]
+  
+  @scala.inline
+  def borderWidth: borderWidth = "borderWidth".asInstanceOf[borderWidth]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def boxShadow: boxShadow = "boxShadow".asInstanceOf[boxShadow]
+  
+  @scala.inline
+  def boxSizing: boxSizing = "boxSizing".asInstanceOf[boxSizing]
+  
+  @scala.inline
+  def breakAfter: breakAfter = "breakAfter".asInstanceOf[breakAfter]
+  
+  @scala.inline
+  def breakBefore: breakBefore = "breakBefore".asInstanceOf[breakBefore]
+  
+  @scala.inline
+  def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
+  
+  @scala.inline
+  def bubbleScroll: bubbleScroll = "bubbleScroll".asInstanceOf[bubbleScroll]
+  
+  @scala.inline
+  def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
+  
+  @scala.inline
+  def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
+  
+  @scala.inline
+  def chosenClass: chosenClass = "chosenClass".asInstanceOf[chosenClass]
+  
+  @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  
+  @scala.inline
+  def clip: clip = "clip".asInstanceOf[clip]
+  
+  @scala.inline
+  def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
+  
+  @scala.inline
+  def clipRule: clipRule = "clipRule".asInstanceOf[clipRule]
+  
+  @scala.inline
+  def color: color = "color".asInstanceOf[color]
+  
+  @scala.inline
+  def colorInterpolation: colorInterpolation = "colorInterpolation".asInstanceOf[colorInterpolation]
+  
+  @scala.inline
+  def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
+  
+  @scala.inline
+  def columnCount: columnCount = "columnCount".asInstanceOf[columnCount]
+  
+  @scala.inline
+  def columnFill: columnFill = "columnFill".asInstanceOf[columnFill]
+  
+  @scala.inline
+  def columnGap: columnGap = "columnGap".asInstanceOf[columnGap]
+  
+  @scala.inline
+  def columnRule: columnRule = "columnRule".asInstanceOf[columnRule]
+  
+  @scala.inline
+  def columnRuleColor: columnRuleColor = "columnRuleColor".asInstanceOf[columnRuleColor]
+  
+  @scala.inline
+  def columnRuleStyle: columnRuleStyle = "columnRuleStyle".asInstanceOf[columnRuleStyle]
+  
+  @scala.inline
+  def columnRuleWidth: columnRuleWidth = "columnRuleWidth".asInstanceOf[columnRuleWidth]
+  
+  @scala.inline
+  def columnSpan: columnSpan = "columnSpan".asInstanceOf[columnSpan]
+  
+  @scala.inline
+  def columnWidth: columnWidth = "columnWidth".asInstanceOf[columnWidth]
+  
+  @scala.inline
+  def columns: columns = "columns".asInstanceOf[columns]
+  
+  @scala.inline
+  def content: content = "content".asInstanceOf[content]
+  
+  @scala.inline
+  def continue: continue = "continue".asInstanceOf[continue]
+  
+  @scala.inline
+  def counterIncrement: counterIncrement = "counterIncrement".asInstanceOf[counterIncrement]
+  
+  @scala.inline
+  def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
+  
+  @scala.inline
+  def cssFloat: cssFloat = "cssFloat".asInstanceOf[cssFloat]
+  
+  @scala.inline
+  def cssText: cssText = "cssText".asInstanceOf[cssText]
+  
+  @scala.inline
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
+  
+  @scala.inline
+  def dataIdAttr: dataIdAttr = "dataIdAttr".asInstanceOf[dataIdAttr]
+  
+  @scala.inline
+  def delay: delay = "delay".asInstanceOf[delay]
+  
+  @scala.inline
+  def delayOnTouchOnly: delayOnTouchOnly = "delayOnTouchOnly".asInstanceOf[delayOnTouchOnly]
+  
+  @scala.inline
+  def direction: direction = "direction".asInstanceOf[direction]
+  
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @scala.inline
+  def display: display = "display".asInstanceOf[display]
+  
+  @scala.inline
+  def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
+  
+  @scala.inline
+  def dragClass: dragClass = "dragClass".asInstanceOf[dragClass]
+  
+  @scala.inline
+  def draggable: draggable = "draggable".asInstanceOf[draggable]
+  
+  @scala.inline
+  def dragoverBubble: dragoverBubble = "dragoverBubble".asInstanceOf[dragoverBubble]
+  
+  @scala.inline
+  def dropBubble: dropBubble = "dropBubble".asInstanceOf[dropBubble]
+  
+  @scala.inline
+  def easing: easing = "easing".asInstanceOf[easing]
+  
+  @scala.inline
+  def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
+  
+  @scala.inline
+  def emptyInsertThreshold: emptyInsertThreshold = "emptyInsertThreshold".asInstanceOf[emptyInsertThreshold]
+  
+  @scala.inline
+  def fallbackClass: fallbackClass = "fallbackClass".asInstanceOf[fallbackClass]
+  
+  @scala.inline
+  def fallbackOffset: fallbackOffset = "fallbackOffset".asInstanceOf[fallbackOffset]
+  
+  @scala.inline
+  def fallbackOnBody: fallbackOnBody = "fallbackOnBody".asInstanceOf[fallbackOnBody]
+  
+  @scala.inline
+  def fallbackTolerance: fallbackTolerance = "fallbackTolerance".asInstanceOf[fallbackTolerance]
+  
+  @scala.inline
+  def fill: fill = "fill".asInstanceOf[fill]
+  
+  @scala.inline
+  def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
+  
+  @scala.inline
+  def fillRule: fillRule = "fillRule".asInstanceOf[fillRule]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def flex: flex = "flex".asInstanceOf[flex]
+  
+  @scala.inline
+  def flexBasis: flexBasis = "flexBasis".asInstanceOf[flexBasis]
+  
+  @scala.inline
+  def flexDirection: flexDirection = "flexDirection".asInstanceOf[flexDirection]
+  
+  @scala.inline
+  def flexFlow: flexFlow = "flexFlow".asInstanceOf[flexFlow]
+  
+  @scala.inline
+  def flexGrow: flexGrow = "flexGrow".asInstanceOf[flexGrow]
+  
+  @scala.inline
+  def flexShrink: flexShrink = "flexShrink".asInstanceOf[flexShrink]
+  
+  @scala.inline
+  def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
+  
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  
+  @scala.inline
+  def floodColor: floodColor = "floodColor".asInstanceOf[floodColor]
+  
+  @scala.inline
+  def floodOpacity: floodOpacity = "floodOpacity".asInstanceOf[floodOpacity]
+  
+  @scala.inline
+  def font: font = "font".asInstanceOf[font]
+  
+  @scala.inline
+  def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
+  
+  @scala.inline
+  def fontFeatureSettings: fontFeatureSettings = "fontFeatureSettings".asInstanceOf[fontFeatureSettings]
+  
+  @scala.inline
+  def fontKerning: fontKerning = "fontKerning".asInstanceOf[fontKerning]
+  
+  @scala.inline
+  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
+  
+  @scala.inline
+  def fontSizeAdjust: fontSizeAdjust = "fontSizeAdjust".asInstanceOf[fontSizeAdjust]
+  
+  @scala.inline
+  def fontStretch: fontStretch = "fontStretch".asInstanceOf[fontStretch]
+  
+  @scala.inline
+  def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
+  
+  @scala.inline
+  def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
+  
+  @scala.inline
+  def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
+  
+  @scala.inline
+  def fontVariantCaps: fontVariantCaps = "fontVariantCaps".asInstanceOf[fontVariantCaps]
+  
+  @scala.inline
+  def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
+  
+  @scala.inline
+  def fontVariantLigatures: fontVariantLigatures = "fontVariantLigatures".asInstanceOf[fontVariantLigatures]
+  
+  @scala.inline
+  def fontVariantNumeric: fontVariantNumeric = "fontVariantNumeric".asInstanceOf[fontVariantNumeric]
+  
+  @scala.inline
+  def fontVariantPosition: fontVariantPosition = "fontVariantPosition".asInstanceOf[fontVariantPosition]
+  
+  @scala.inline
+  def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
+  
+  @scala.inline
+  def forceFallback: forceFallback = "forceFallback".asInstanceOf[forceFallback]
+  
+  @scala.inline
+  def gap: gap = "gap".asInstanceOf[gap]
+  
+  @scala.inline
+  def ghostClass: ghostClass = "ghostClass".asInstanceOf[ghostClass]
+  
+  @scala.inline
+  def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
+  
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  
+  @scala.inline
+  def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
+  
+  @scala.inline
+  def gridAutoColumns: gridAutoColumns = "gridAutoColumns".asInstanceOf[gridAutoColumns]
+  
+  @scala.inline
+  def gridAutoFlow: gridAutoFlow = "gridAutoFlow".asInstanceOf[gridAutoFlow]
+  
+  @scala.inline
+  def gridAutoRows: gridAutoRows = "gridAutoRows".asInstanceOf[gridAutoRows]
+  
+  @scala.inline
+  def gridColumn: gridColumn = "gridColumn".asInstanceOf[gridColumn]
+  
+  @scala.inline
+  def gridColumnEnd: gridColumnEnd = "gridColumnEnd".asInstanceOf[gridColumnEnd]
+  
+  @scala.inline
+  def gridColumnGap: gridColumnGap = "gridColumnGap".asInstanceOf[gridColumnGap]
+  
+  @scala.inline
+  def gridColumnStart: gridColumnStart = "gridColumnStart".asInstanceOf[gridColumnStart]
+  
+  @scala.inline
+  def gridGap: gridGap = "gridGap".asInstanceOf[gridGap]
+  
+  @scala.inline
+  def gridRow: gridRow = "gridRow".asInstanceOf[gridRow]
+  
+  @scala.inline
+  def gridRowEnd: gridRowEnd = "gridRowEnd".asInstanceOf[gridRowEnd]
+  
+  @scala.inline
+  def gridRowGap: gridRowGap = "gridRowGap".asInstanceOf[gridRowGap]
+  
+  @scala.inline
+  def gridRowStart: gridRowStart = "gridRowStart".asInstanceOf[gridRowStart]
+  
+  @scala.inline
+  def gridTemplate: gridTemplate = "gridTemplate".asInstanceOf[gridTemplate]
+  
+  @scala.inline
+  def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
+  
+  @scala.inline
+  def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
+  
+  @scala.inline
+  def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
+  
+  @scala.inline
+  def group: group = "group".asInstanceOf[group]
+  
+  @scala.inline
+  def handle: handle = "handle".asInstanceOf[handle]
+  
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
+  
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @scala.inline
+  def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
+  
+  @scala.inline
+  def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
+  
+  @scala.inline
+  def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
+  
+  @scala.inline
+  def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
+  
+  @scala.inline
+  def invertedSwapThreshold: invertedSwapThreshold = "invertedSwapThreshold".asInstanceOf[invertedSwapThreshold]
+  
+  @scala.inline
+  def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
+  
+  @scala.inline
+  def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
+  
+  @scala.inline
+  def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def length: length = "length".asInstanceOf[length]
+  
+  @scala.inline
+  def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
+  
+  @scala.inline
+  def lightingColor: lightingColor = "lightingColor".asInstanceOf[lightingColor]
+  
+  @scala.inline
+  def lineBreak: lineBreak = "lineBreak".asInstanceOf[lineBreak]
+  
+  @scala.inline
+  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
+  
+  @scala.inline
+  def listStyle: listStyle = "listStyle".asInstanceOf[listStyle]
+  
+  @scala.inline
+  def listStyleImage: listStyleImage = "listStyleImage".asInstanceOf[listStyleImage]
+  
+  @scala.inline
+  def listStylePosition: listStylePosition = "listStylePosition".asInstanceOf[listStylePosition]
+  
+  @scala.inline
+  def listStyleType: listStyleType = "listStyleType".asInstanceOf[listStyleType]
+  
+  @scala.inline
+  def margin: margin = "margin".asInstanceOf[margin]
+  
+  @scala.inline
+  def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
+  
+  @scala.inline
+  def marginBlockStart: marginBlockStart = "marginBlockStart".asInstanceOf[marginBlockStart]
+  
+  @scala.inline
+  def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
+  
+  @scala.inline
+  def marginInlineEnd: marginInlineEnd = "marginInlineEnd".asInstanceOf[marginInlineEnd]
+  
+  @scala.inline
+  def marginInlineStart: marginInlineStart = "marginInlineStart".asInstanceOf[marginInlineStart]
+  
+  @scala.inline
+  def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
+  
+  @scala.inline
+  def marginRight: marginRight = "marginRight".asInstanceOf[marginRight]
+  
+  @scala.inline
+  def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
+  
+  @scala.inline
+  def marker: marker = "marker".asInstanceOf[marker]
+  
+  @scala.inline
+  def markerEnd: markerEnd = "markerEnd".asInstanceOf[markerEnd]
+  
+  @scala.inline
+  def markerMid: markerMid = "markerMid".asInstanceOf[markerMid]
+  
+  @scala.inline
+  def markerStart: markerStart = "markerStart".asInstanceOf[markerStart]
+  
+  @scala.inline
+  def mask: mask = "mask".asInstanceOf[mask]
+  
+  @scala.inline
+  def maskComposite: maskComposite = "maskComposite".asInstanceOf[maskComposite]
+  
+  @scala.inline
+  def maskImage: maskImage = "maskImage".asInstanceOf[maskImage]
+  
+  @scala.inline
+  def maskPosition: maskPosition = "maskPosition".asInstanceOf[maskPosition]
+  
+  @scala.inline
+  def maskRepeat: maskRepeat = "maskRepeat".asInstanceOf[maskRepeat]
+  
+  @scala.inline
+  def maskSize: maskSize = "maskSize".asInstanceOf[maskSize]
+  
+  @scala.inline
+  def maskType: maskType = "maskType".asInstanceOf[maskType]
+  
+  @scala.inline
+  def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
+  
+  @scala.inline
+  def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
+  
+  @scala.inline
+  def maxInlineSize: maxInlineSize = "maxInlineSize".asInstanceOf[maxInlineSize]
+  
+  @scala.inline
+  def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
+  
+  @scala.inline
+  def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
+  
+  @scala.inline
+  def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
+  
+  @scala.inline
+  def minInlineSize: minInlineSize = "minInlineSize".asInstanceOf[minInlineSize]
+  
+  @scala.inline
+  def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
+  
+  @scala.inline
+  def multiDrag: multiDrag = "multiDrag".asInstanceOf[multiDrag]
+  
+  @scala.inline
+  def multiDragKey: multiDragKey = "multiDragKey".asInstanceOf[multiDragKey]
+  
+  @scala.inline
+  def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
+  
+  @scala.inline
+  def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
+  
+  @scala.inline
+  def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
+  
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  
+  @scala.inline
+  def onChoose: onChoose = "onChoose".asInstanceOf[onChoose]
+  
+  @scala.inline
+  def onClone: onClone = "onClone".asInstanceOf[onClone]
+  
+  @scala.inline
+  def onDeselect: onDeselect = "onDeselect".asInstanceOf[onDeselect]
+  
+  @scala.inline
+  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
+  
+  @scala.inline
+  def onFilter: onFilter = "onFilter".asInstanceOf[onFilter]
+  
+  @scala.inline
+  def onMove: onMove = "onMove".asInstanceOf[onMove]
+  
+  @scala.inline
+  def onRemove: onRemove = "onRemove".asInstanceOf[onRemove]
+  
+  @scala.inline
+  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  
+  @scala.inline
+  def onSort: onSort = "onSort".asInstanceOf[onSort]
+  
+  @scala.inline
+  def onSpill: onSpill = "onSpill".asInstanceOf[onSpill]
+  
+  @scala.inline
+  def onStart: onStart = "onStart".asInstanceOf[onStart]
+  
+  @scala.inline
+  def onUnchoose: onUnchoose = "onUnchoose".asInstanceOf[onUnchoose]
+  
+  @scala.inline
+  def onUpdate: onUpdate = "onUpdate".asInstanceOf[onUpdate]
+  
+  @scala.inline
+  def opacity: opacity = "opacity".asInstanceOf[opacity]
+  
+  @scala.inline
+  def order: order = "order".asInstanceOf[order]
+  
+  @scala.inline
+  def orphans: orphans = "orphans".asInstanceOf[orphans]
+  
+  @scala.inline
+  def outline: outline = "outline".asInstanceOf[outline]
+  
+  @scala.inline
+  def outlineColor: outlineColor = "outlineColor".asInstanceOf[outlineColor]
+  
+  @scala.inline
+  def outlineOffset: outlineOffset = "outlineOffset".asInstanceOf[outlineOffset]
+  
+  @scala.inline
+  def outlineStyle: outlineStyle = "outlineStyle".asInstanceOf[outlineStyle]
+  
+  @scala.inline
+  def outlineWidth: outlineWidth = "outlineWidth".asInstanceOf[outlineWidth]
+  
+  @scala.inline
+  def overflow: overflow = "overflow".asInstanceOf[overflow]
+  
+  @scala.inline
+  def overflowAnchor: overflowAnchor = "overflowAnchor".asInstanceOf[overflowAnchor]
+  
+  @scala.inline
+  def overflowWrap: overflowWrap = "overflowWrap".asInstanceOf[overflowWrap]
+  
+  @scala.inline
+  def overflowX: overflowX = "overflowX".asInstanceOf[overflowX]
+  
+  @scala.inline
+  def overflowY: overflowY = "overflowY".asInstanceOf[overflowY]
+  
+  @scala.inline
+  def overscrollBehavior: overscrollBehavior = "overscrollBehavior".asInstanceOf[overscrollBehavior]
+  
+  @scala.inline
+  def overscrollBehaviorBlock: overscrollBehaviorBlock = "overscrollBehaviorBlock".asInstanceOf[overscrollBehaviorBlock]
+  
+  @scala.inline
+  def overscrollBehaviorInline: overscrollBehaviorInline = "overscrollBehaviorInline".asInstanceOf[overscrollBehaviorInline]
+  
+  @scala.inline
+  def overscrollBehaviorX: overscrollBehaviorX = "overscrollBehaviorX".asInstanceOf[overscrollBehaviorX]
+  
+  @scala.inline
+  def overscrollBehaviorY: overscrollBehaviorY = "overscrollBehaviorY".asInstanceOf[overscrollBehaviorY]
+  
+  @scala.inline
+  def padding: padding = "padding".asInstanceOf[padding]
+  
+  @scala.inline
+  def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
+  
+  @scala.inline
+  def paddingBlockStart: paddingBlockStart = "paddingBlockStart".asInstanceOf[paddingBlockStart]
+  
+  @scala.inline
+  def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
+  
+  @scala.inline
+  def paddingInlineEnd: paddingInlineEnd = "paddingInlineEnd".asInstanceOf[paddingInlineEnd]
+  
+  @scala.inline
+  def paddingInlineStart: paddingInlineStart = "paddingInlineStart".asInstanceOf[paddingInlineStart]
+  
+  @scala.inline
+  def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
+  
+  @scala.inline
+  def paddingRight: paddingRight = "paddingRight".asInstanceOf[paddingRight]
+  
+  @scala.inline
+  def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
+  
+  @scala.inline
+  def pageBreakAfter: pageBreakAfter = "pageBreakAfter".asInstanceOf[pageBreakAfter]
+  
+  @scala.inline
+  def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
+  
+  @scala.inline
+  def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
+  
+  @scala.inline
+  def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
+  
+  @scala.inline
+  def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
+  
+  @scala.inline
+  def perspective: perspective = "perspective".asInstanceOf[perspective]
+  
+  @scala.inline
+  def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
+  
+  @scala.inline
+  def placeContent: placeContent = "placeContent".asInstanceOf[placeContent]
+  
+  @scala.inline
+  def placeItems: placeItems = "placeItems".asInstanceOf[placeItems]
+  
+  @scala.inline
+  def placeSelf: placeSelf = "placeSelf".asInstanceOf[placeSelf]
+  
+  @scala.inline
+  def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
+  
+  @scala.inline
+  def position: position = "position".asInstanceOf[position]
+  
+  @scala.inline
+  def preventOnFilter: preventOnFilter = "preventOnFilter".asInstanceOf[preventOnFilter]
+  
+  @scala.inline
+  def quotes: quotes = "quotes".asInstanceOf[quotes]
+  
+  @scala.inline
+  def removeCloneOnHide: removeCloneOnHide = "removeCloneOnHide".asInstanceOf[removeCloneOnHide]
+  
+  @scala.inline
+  def removeOnSpill: removeOnSpill = "removeOnSpill".asInstanceOf[removeOnSpill]
+  
+  @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
+  
+  @scala.inline
+  def revertOnSpill: revertOnSpill = "revertOnSpill".asInstanceOf[revertOnSpill]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rotate: rotate = "rotate".asInstanceOf[rotate]
+  
+  @scala.inline
+  def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
+  
+  @scala.inline
+  def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
+  
+  @scala.inline
+  def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
+  
+  @scala.inline
+  def scale: scale = "scale".asInstanceOf[scale]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
+  
+  @scala.inline
+  def scrollFn: scrollFn = "scrollFn".asInstanceOf[scrollFn]
+  
+  @scala.inline
+  def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
+  
+  @scala.inline
+  def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
+  
+  @scala.inline
+  def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
+  
+  @scala.inline
+  def setData: setData = "setData".asInstanceOf[setData]
+  
+  @scala.inline
+  def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
+  
+  @scala.inline
+  def sort: sort = "sort".asInstanceOf[sort]
+  
+  @scala.inline
+  def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
+  
+  @scala.inline
+  def stopOpacity: stopOpacity = "stopOpacity".asInstanceOf[stopOpacity]
+  
+  @scala.inline
+  def store: store = "store".asInstanceOf[store]
+  
+  @scala.inline
+  def stroke: stroke = "stroke".asInstanceOf[stroke]
+  
+  @scala.inline
+  def strokeDasharray: strokeDasharray = "strokeDasharray".asInstanceOf[strokeDasharray]
+  
+  @scala.inline
+  def strokeDashoffset: strokeDashoffset = "strokeDashoffset".asInstanceOf[strokeDashoffset]
+  
+  @scala.inline
+  def strokeLinecap: strokeLinecap = "strokeLinecap".asInstanceOf[strokeLinecap]
+  
+  @scala.inline
+  def strokeLinejoin: strokeLinejoin = "strokeLinejoin".asInstanceOf[strokeLinejoin]
+  
+  @scala.inline
+  def strokeMiterlimit: strokeMiterlimit = "strokeMiterlimit".asInstanceOf[strokeMiterlimit]
+  
+  @scala.inline
+  def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
+  
+  @scala.inline
+  def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
+  
+  @scala.inline
+  def swap: swap = "swap".asInstanceOf[swap]
+  
+  @scala.inline
+  def swapClass: swapClass = "swapClass".asInstanceOf[swapClass]
+  
+  @scala.inline
+  def swapThreshold: swapThreshold = "swapThreshold".asInstanceOf[swapThreshold]
+  
+  @scala.inline
+  def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
+  
+  @scala.inline
+  def tableLayout: tableLayout = "tableLayout".asInstanceOf[tableLayout]
+  
+  @scala.inline
+  def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
+  
+  @scala.inline
+  def textAlignLast: textAlignLast = "textAlignLast".asInstanceOf[textAlignLast]
+  
+  @scala.inline
+  def textAnchor: textAnchor = "textAnchor".asInstanceOf[textAnchor]
+  
+  @scala.inline
+  def textCombineUpright: textCombineUpright = "textCombineUpright".asInstanceOf[textCombineUpright]
+  
+  @scala.inline
+  def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
+  
+  @scala.inline
+  def textDecorationColor: textDecorationColor = "textDecorationColor".asInstanceOf[textDecorationColor]
+  
+  @scala.inline
+  def textDecorationLine: textDecorationLine = "textDecorationLine".asInstanceOf[textDecorationLine]
+  
+  @scala.inline
+  def textDecorationStyle: textDecorationStyle = "textDecorationStyle".asInstanceOf[textDecorationStyle]
+  
+  @scala.inline
+  def textEmphasis: textEmphasis = "textEmphasis".asInstanceOf[textEmphasis]
+  
+  @scala.inline
+  def textEmphasisColor: textEmphasisColor = "textEmphasisColor".asInstanceOf[textEmphasisColor]
+  
+  @scala.inline
+  def textEmphasisPosition: textEmphasisPosition = "textEmphasisPosition".asInstanceOf[textEmphasisPosition]
+  
+  @scala.inline
+  def textEmphasisStyle: textEmphasisStyle = "textEmphasisStyle".asInstanceOf[textEmphasisStyle]
+  
+  @scala.inline
+  def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
+  
+  @scala.inline
+  def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
+  
+  @scala.inline
+  def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
+  
+  @scala.inline
+  def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
+  
+  @scala.inline
+  def textRendering: textRendering = "textRendering".asInstanceOf[textRendering]
+  
+  @scala.inline
+  def textShadow: textShadow = "textShadow".asInstanceOf[textShadow]
+  
+  @scala.inline
+  def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
+  
+  @scala.inline
+  def textUnderlinePosition: textUnderlinePosition = "textUnderlinePosition".asInstanceOf[textUnderlinePosition]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
+  
+  @scala.inline
+  def touchStartThreshold: touchStartThreshold = "touchStartThreshold".asInstanceOf[touchStartThreshold]
+  
+  @scala.inline
+  def transform: transform = "transform".asInstanceOf[transform]
+  
+  @scala.inline
+  def transformBox: transformBox = "transformBox".asInstanceOf[transformBox]
+  
+  @scala.inline
+  def transformOrigin: transformOrigin = "transformOrigin".asInstanceOf[transformOrigin]
+  
+  @scala.inline
+  def transformStyle: transformStyle = "transformStyle".asInstanceOf[transformStyle]
+  
+  @scala.inline
+  def transition: transition = "transition".asInstanceOf[transition]
+  
+  @scala.inline
+  def transitionDelay: transitionDelay = "transitionDelay".asInstanceOf[transitionDelay]
+  
+  @scala.inline
+  def transitionDuration: transitionDuration = "transitionDuration".asInstanceOf[transitionDuration]
+  
+  @scala.inline
+  def transitionProperty: transitionProperty = "transitionProperty".asInstanceOf[transitionProperty]
+  
+  @scala.inline
+  def transitionTimingFunction: transitionTimingFunction = "transitionTimingFunction".asInstanceOf[transitionTimingFunction]
+  
+  @scala.inline
+  def translate: translate = "translate".asInstanceOf[translate]
+  
+  @scala.inline
+  def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
+  
+  @scala.inline
+  def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
+  
+  @scala.inline
+  def visibility: visibility = "visibility".asInstanceOf[visibility]
+  
+  @scala.inline
+  def webkitAlignContent: webkitAlignContent = "webkitAlignContent".asInstanceOf[webkitAlignContent]
+  
+  @scala.inline
+  def webkitAlignItems: webkitAlignItems = "webkitAlignItems".asInstanceOf[webkitAlignItems]
+  
+  @scala.inline
+  def webkitAlignSelf: webkitAlignSelf = "webkitAlignSelf".asInstanceOf[webkitAlignSelf]
+  
+  @scala.inline
+  def webkitAnimation: webkitAnimation = "webkitAnimation".asInstanceOf[webkitAnimation]
+  
+  @scala.inline
+  def webkitAnimationDelay: webkitAnimationDelay = "webkitAnimationDelay".asInstanceOf[webkitAnimationDelay]
+  
+  @scala.inline
+  def webkitAnimationDirection: webkitAnimationDirection = "webkitAnimationDirection".asInstanceOf[webkitAnimationDirection]
+  
+  @scala.inline
+  def webkitAnimationDuration: webkitAnimationDuration = "webkitAnimationDuration".asInstanceOf[webkitAnimationDuration]
+  
+  @scala.inline
+  def webkitAnimationFillMode: webkitAnimationFillMode = "webkitAnimationFillMode".asInstanceOf[webkitAnimationFillMode]
+  
+  @scala.inline
+  def webkitAnimationIterationCount: webkitAnimationIterationCount = "webkitAnimationIterationCount".asInstanceOf[webkitAnimationIterationCount]
+  
+  @scala.inline
+  def webkitAnimationName: webkitAnimationName = "webkitAnimationName".asInstanceOf[webkitAnimationName]
+  
+  @scala.inline
+  def webkitAnimationPlayState: webkitAnimationPlayState = "webkitAnimationPlayState".asInstanceOf[webkitAnimationPlayState]
+  
+  @scala.inline
+  def webkitAnimationTimingFunction: webkitAnimationTimingFunction = "webkitAnimationTimingFunction".asInstanceOf[webkitAnimationTimingFunction]
+  
+  @scala.inline
+  def webkitAppearance: webkitAppearance = "webkitAppearance".asInstanceOf[webkitAppearance]
+  
+  @scala.inline
+  def webkitBackfaceVisibility: webkitBackfaceVisibility = "webkitBackfaceVisibility".asInstanceOf[webkitBackfaceVisibility]
+  
+  @scala.inline
+  def webkitBackgroundClip: webkitBackgroundClip = "webkitBackgroundClip".asInstanceOf[webkitBackgroundClip]
+  
+  @scala.inline
+  def webkitBackgroundOrigin: webkitBackgroundOrigin = "webkitBackgroundOrigin".asInstanceOf[webkitBackgroundOrigin]
+  
+  @scala.inline
+  def webkitBackgroundSize: webkitBackgroundSize = "webkitBackgroundSize".asInstanceOf[webkitBackgroundSize]
+  
+  @scala.inline
+  def webkitBorderBottomLeftRadius: webkitBorderBottomLeftRadius = "webkitBorderBottomLeftRadius".asInstanceOf[webkitBorderBottomLeftRadius]
+  
+  @scala.inline
+  def webkitBorderBottomRightRadius: webkitBorderBottomRightRadius = "webkitBorderBottomRightRadius".asInstanceOf[webkitBorderBottomRightRadius]
+  
+  @scala.inline
+  def webkitBorderRadius: webkitBorderRadius = "webkitBorderRadius".asInstanceOf[webkitBorderRadius]
+  
+  @scala.inline
+  def webkitBorderTopLeftRadius: webkitBorderTopLeftRadius = "webkitBorderTopLeftRadius".asInstanceOf[webkitBorderTopLeftRadius]
+  
+  @scala.inline
+  def webkitBorderTopRightRadius: webkitBorderTopRightRadius = "webkitBorderTopRightRadius".asInstanceOf[webkitBorderTopRightRadius]
+  
+  @scala.inline
+  def webkitBoxAlign: webkitBoxAlign = "webkitBoxAlign".asInstanceOf[webkitBoxAlign]
+  
+  @scala.inline
+  def webkitBoxFlex: webkitBoxFlex = "webkitBoxFlex".asInstanceOf[webkitBoxFlex]
+  
+  @scala.inline
+  def webkitBoxOrdinalGroup: webkitBoxOrdinalGroup = "webkitBoxOrdinalGroup".asInstanceOf[webkitBoxOrdinalGroup]
+  
+  @scala.inline
+  def webkitBoxOrient: webkitBoxOrient = "webkitBoxOrient".asInstanceOf[webkitBoxOrient]
+  
+  @scala.inline
+  def webkitBoxPack: webkitBoxPack = "webkitBoxPack".asInstanceOf[webkitBoxPack]
+  
+  @scala.inline
+  def webkitBoxShadow: webkitBoxShadow = "webkitBoxShadow".asInstanceOf[webkitBoxShadow]
+  
+  @scala.inline
+  def webkitBoxSizing: webkitBoxSizing = "webkitBoxSizing".asInstanceOf[webkitBoxSizing]
+  
+  @scala.inline
+  def webkitFilter: webkitFilter = "webkitFilter".asInstanceOf[webkitFilter]
+  
+  @scala.inline
+  def webkitFlex: webkitFlex = "webkitFlex".asInstanceOf[webkitFlex]
+  
+  @scala.inline
+  def webkitFlexBasis: webkitFlexBasis = "webkitFlexBasis".asInstanceOf[webkitFlexBasis]
+  
+  @scala.inline
+  def webkitFlexDirection: webkitFlexDirection = "webkitFlexDirection".asInstanceOf[webkitFlexDirection]
+  
+  @scala.inline
+  def webkitFlexFlow: webkitFlexFlow = "webkitFlexFlow".asInstanceOf[webkitFlexFlow]
+  
+  @scala.inline
+  def webkitFlexGrow: webkitFlexGrow = "webkitFlexGrow".asInstanceOf[webkitFlexGrow]
+  
+  @scala.inline
+  def webkitFlexShrink: webkitFlexShrink = "webkitFlexShrink".asInstanceOf[webkitFlexShrink]
+  
+  @scala.inline
+  def webkitFlexWrap: webkitFlexWrap = "webkitFlexWrap".asInstanceOf[webkitFlexWrap]
+  
+  @scala.inline
+  def webkitJustifyContent: webkitJustifyContent = "webkitJustifyContent".asInstanceOf[webkitJustifyContent]
+  
+  @scala.inline
+  def webkitLineClamp: webkitLineClamp = "webkitLineClamp".asInstanceOf[webkitLineClamp]
+  
+  @scala.inline
+  def webkitMask: webkitMask = "webkitMask".asInstanceOf[webkitMask]
+  
+  @scala.inline
+  def webkitMaskBoxImage: webkitMaskBoxImage = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage]
+  
+  @scala.inline
+  def webkitMaskBoxImageOutset: webkitMaskBoxImageOutset = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset]
+  
+  @scala.inline
+  def webkitMaskBoxImageRepeat: webkitMaskBoxImageRepeat = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat]
+  
+  @scala.inline
+  def webkitMaskBoxImageSlice: webkitMaskBoxImageSlice = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice]
+  
+  @scala.inline
+  def webkitMaskBoxImageSource: webkitMaskBoxImageSource = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource]
+  
+  @scala.inline
+  def webkitMaskBoxImageWidth: webkitMaskBoxImageWidth = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth]
+  
+  @scala.inline
+  def webkitMaskClip: webkitMaskClip = "webkitMaskClip".asInstanceOf[webkitMaskClip]
+  
+  @scala.inline
+  def webkitMaskComposite: webkitMaskComposite = "webkitMaskComposite".asInstanceOf[webkitMaskComposite]
+  
+  @scala.inline
+  def webkitMaskImage: webkitMaskImage = "webkitMaskImage".asInstanceOf[webkitMaskImage]
+  
+  @scala.inline
+  def webkitMaskOrigin: webkitMaskOrigin = "webkitMaskOrigin".asInstanceOf[webkitMaskOrigin]
+  
+  @scala.inline
+  def webkitMaskPosition: webkitMaskPosition = "webkitMaskPosition".asInstanceOf[webkitMaskPosition]
+  
+  @scala.inline
+  def webkitMaskRepeat: webkitMaskRepeat = "webkitMaskRepeat".asInstanceOf[webkitMaskRepeat]
+  
+  @scala.inline
+  def webkitMaskSize: webkitMaskSize = "webkitMaskSize".asInstanceOf[webkitMaskSize]
+  
+  @scala.inline
+  def webkitOrder: webkitOrder = "webkitOrder".asInstanceOf[webkitOrder]
+  
+  @scala.inline
+  def webkitPerspective: webkitPerspective = "webkitPerspective".asInstanceOf[webkitPerspective]
+  
+  @scala.inline
+  def webkitPerspectiveOrigin: webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[webkitPerspectiveOrigin]
+  
+  @scala.inline
+  def webkitTapHighlightColor: webkitTapHighlightColor = "webkitTapHighlightColor".asInstanceOf[webkitTapHighlightColor]
+  
+  @scala.inline
+  def webkitTextFillColor: webkitTextFillColor = "webkitTextFillColor".asInstanceOf[webkitTextFillColor]
+  
+  @scala.inline
+  def webkitTextSizeAdjust: webkitTextSizeAdjust = "webkitTextSizeAdjust".asInstanceOf[webkitTextSizeAdjust]
+  
+  @scala.inline
+  def webkitTextStroke: webkitTextStroke = "webkitTextStroke".asInstanceOf[webkitTextStroke]
+  
+  @scala.inline
+  def webkitTextStrokeColor: webkitTextStrokeColor = "webkitTextStrokeColor".asInstanceOf[webkitTextStrokeColor]
+  
+  @scala.inline
+  def webkitTextStrokeWidth: webkitTextStrokeWidth = "webkitTextStrokeWidth".asInstanceOf[webkitTextStrokeWidth]
+  
+  @scala.inline
+  def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
+  
+  @scala.inline
+  def webkitTransformOrigin: webkitTransformOrigin = "webkitTransformOrigin".asInstanceOf[webkitTransformOrigin]
+  
+  @scala.inline
+  def webkitTransformStyle: webkitTransformStyle = "webkitTransformStyle".asInstanceOf[webkitTransformStyle]
+  
+  @scala.inline
+  def webkitTransition: webkitTransition = "webkitTransition".asInstanceOf[webkitTransition]
+  
+  @scala.inline
+  def webkitTransitionDelay: webkitTransitionDelay = "webkitTransitionDelay".asInstanceOf[webkitTransitionDelay]
+  
+  @scala.inline
+  def webkitTransitionDuration: webkitTransitionDuration = "webkitTransitionDuration".asInstanceOf[webkitTransitionDuration]
+  
+  @scala.inline
+  def webkitTransitionProperty: webkitTransitionProperty = "webkitTransitionProperty".asInstanceOf[webkitTransitionProperty]
+  
+  @scala.inline
+  def webkitTransitionTimingFunction: webkitTransitionTimingFunction = "webkitTransitionTimingFunction".asInstanceOf[webkitTransitionTimingFunction]
+  
+  @scala.inline
+  def webkitUserSelect: webkitUserSelect = "webkitUserSelect".asInstanceOf[webkitUserSelect]
+  
+  @scala.inline
+  def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
+  
+  @scala.inline
+  def widows: widows = "widows".asInstanceOf[widows]
+  
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  
+  @scala.inline
+  def willChange: willChange = "willChange".asInstanceOf[willChange]
+  
+  @scala.inline
+  def wordBreak: wordBreak = "wordBreak".asInstanceOf[wordBreak]
+  
+  @scala.inline
+  def wordSpacing: wordSpacing = "wordSpacing".asInstanceOf[wordSpacing]
+  
+  @scala.inline
+  def wordWrap: wordWrap = "wordWrap".asInstanceOf[wordWrap]
+  
+  @scala.inline
+  def writingMode: writingMode = "writingMode".asInstanceOf[writingMode]
+  
+  @scala.inline
+  def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
+  
+  @scala.inline
+  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  
   @js.native
   sealed trait alignContent extends js.Object
   
@@ -805,6 +2147,21 @@ object sortablejsStrings {
   sealed trait overflowY extends js.Object
   
   @js.native
+  sealed trait overscrollBehavior extends js.Object
+  
+  @js.native
+  sealed trait overscrollBehaviorBlock extends js.Object
+  
+  @js.native
+  sealed trait overscrollBehaviorInline extends js.Object
+  
+  @js.native
+  sealed trait overscrollBehaviorX extends js.Object
+  
+  @js.native
+  sealed trait overscrollBehaviorY extends js.Object
+  
+  @js.native
   sealed trait padding extends js.Object
   
   @js.native
@@ -1334,890 +2691,4 @@ object sortablejsStrings {
   
   @js.native
   sealed trait zoom extends js.Object
-  
-  @scala.inline
-  def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
-  @scala.inline
-  def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
-  @scala.inline
-  def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
-  @scala.inline
-  def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def animation: animation = "animation".asInstanceOf[animation]
-  @scala.inline
-  def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
-  @scala.inline
-  def animationDirection: animationDirection = "animationDirection".asInstanceOf[animationDirection]
-  @scala.inline
-  def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
-  @scala.inline
-  def animationFillMode: animationFillMode = "animationFillMode".asInstanceOf[animationFillMode]
-  @scala.inline
-  def animationIterationCount: animationIterationCount = "animationIterationCount".asInstanceOf[animationIterationCount]
-  @scala.inline
-  def animationName: animationName = "animationName".asInstanceOf[animationName]
-  @scala.inline
-  def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
-  @scala.inline
-  def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
-  @scala.inline
-  def backfaceVisibility: backfaceVisibility = "backfaceVisibility".asInstanceOf[backfaceVisibility]
-  @scala.inline
-  def background: background = "background".asInstanceOf[background]
-  @scala.inline
-  def backgroundAttachment: backgroundAttachment = "backgroundAttachment".asInstanceOf[backgroundAttachment]
-  @scala.inline
-  def backgroundClip: backgroundClip = "backgroundClip".asInstanceOf[backgroundClip]
-  @scala.inline
-  def backgroundColor: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
-  @scala.inline
-  def backgroundImage: backgroundImage = "backgroundImage".asInstanceOf[backgroundImage]
-  @scala.inline
-  def backgroundOrigin: backgroundOrigin = "backgroundOrigin".asInstanceOf[backgroundOrigin]
-  @scala.inline
-  def backgroundPosition: backgroundPosition = "backgroundPosition".asInstanceOf[backgroundPosition]
-  @scala.inline
-  def backgroundPositionX: backgroundPositionX = "backgroundPositionX".asInstanceOf[backgroundPositionX]
-  @scala.inline
-  def backgroundPositionY: backgroundPositionY = "backgroundPositionY".asInstanceOf[backgroundPositionY]
-  @scala.inline
-  def backgroundRepeat: backgroundRepeat = "backgroundRepeat".asInstanceOf[backgroundRepeat]
-  @scala.inline
-  def backgroundSize: backgroundSize = "backgroundSize".asInstanceOf[backgroundSize]
-  @scala.inline
-  def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
-  @scala.inline
-  def blockSize: blockSize = "blockSize".asInstanceOf[blockSize]
-  @scala.inline
-  def border: border = "border".asInstanceOf[border]
-  @scala.inline
-  def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
-  @scala.inline
-  def borderBlockEndColor: borderBlockEndColor = "borderBlockEndColor".asInstanceOf[borderBlockEndColor]
-  @scala.inline
-  def borderBlockEndStyle: borderBlockEndStyle = "borderBlockEndStyle".asInstanceOf[borderBlockEndStyle]
-  @scala.inline
-  def borderBlockEndWidth: borderBlockEndWidth = "borderBlockEndWidth".asInstanceOf[borderBlockEndWidth]
-  @scala.inline
-  def borderBlockStart: borderBlockStart = "borderBlockStart".asInstanceOf[borderBlockStart]
-  @scala.inline
-  def borderBlockStartColor: borderBlockStartColor = "borderBlockStartColor".asInstanceOf[borderBlockStartColor]
-  @scala.inline
-  def borderBlockStartStyle: borderBlockStartStyle = "borderBlockStartStyle".asInstanceOf[borderBlockStartStyle]
-  @scala.inline
-  def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
-  @scala.inline
-  def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
-  @scala.inline
-  def borderBottomColor: borderBottomColor = "borderBottomColor".asInstanceOf[borderBottomColor]
-  @scala.inline
-  def borderBottomLeftRadius: borderBottomLeftRadius = "borderBottomLeftRadius".asInstanceOf[borderBottomLeftRadius]
-  @scala.inline
-  def borderBottomRightRadius: borderBottomRightRadius = "borderBottomRightRadius".asInstanceOf[borderBottomRightRadius]
-  @scala.inline
-  def borderBottomStyle: borderBottomStyle = "borderBottomStyle".asInstanceOf[borderBottomStyle]
-  @scala.inline
-  def borderBottomWidth: borderBottomWidth = "borderBottomWidth".asInstanceOf[borderBottomWidth]
-  @scala.inline
-  def borderCollapse: borderCollapse = "borderCollapse".asInstanceOf[borderCollapse]
-  @scala.inline
-  def borderColor: borderColor = "borderColor".asInstanceOf[borderColor]
-  @scala.inline
-  def borderImage: borderImage = "borderImage".asInstanceOf[borderImage]
-  @scala.inline
-  def borderImageOutset: borderImageOutset = "borderImageOutset".asInstanceOf[borderImageOutset]
-  @scala.inline
-  def borderImageRepeat: borderImageRepeat = "borderImageRepeat".asInstanceOf[borderImageRepeat]
-  @scala.inline
-  def borderImageSlice: borderImageSlice = "borderImageSlice".asInstanceOf[borderImageSlice]
-  @scala.inline
-  def borderImageSource: borderImageSource = "borderImageSource".asInstanceOf[borderImageSource]
-  @scala.inline
-  def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
-  @scala.inline
-  def borderInlineEnd: borderInlineEnd = "borderInlineEnd".asInstanceOf[borderInlineEnd]
-  @scala.inline
-  def borderInlineEndColor: borderInlineEndColor = "borderInlineEndColor".asInstanceOf[borderInlineEndColor]
-  @scala.inline
-  def borderInlineEndStyle: borderInlineEndStyle = "borderInlineEndStyle".asInstanceOf[borderInlineEndStyle]
-  @scala.inline
-  def borderInlineEndWidth: borderInlineEndWidth = "borderInlineEndWidth".asInstanceOf[borderInlineEndWidth]
-  @scala.inline
-  def borderInlineStart: borderInlineStart = "borderInlineStart".asInstanceOf[borderInlineStart]
-  @scala.inline
-  def borderInlineStartColor: borderInlineStartColor = "borderInlineStartColor".asInstanceOf[borderInlineStartColor]
-  @scala.inline
-  def borderInlineStartStyle: borderInlineStartStyle = "borderInlineStartStyle".asInstanceOf[borderInlineStartStyle]
-  @scala.inline
-  def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
-  @scala.inline
-  def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
-  @scala.inline
-  def borderLeftColor: borderLeftColor = "borderLeftColor".asInstanceOf[borderLeftColor]
-  @scala.inline
-  def borderLeftStyle: borderLeftStyle = "borderLeftStyle".asInstanceOf[borderLeftStyle]
-  @scala.inline
-  def borderLeftWidth: borderLeftWidth = "borderLeftWidth".asInstanceOf[borderLeftWidth]
-  @scala.inline
-  def borderRadius: borderRadius = "borderRadius".asInstanceOf[borderRadius]
-  @scala.inline
-  def borderRight: borderRight = "borderRight".asInstanceOf[borderRight]
-  @scala.inline
-  def borderRightColor: borderRightColor = "borderRightColor".asInstanceOf[borderRightColor]
-  @scala.inline
-  def borderRightStyle: borderRightStyle = "borderRightStyle".asInstanceOf[borderRightStyle]
-  @scala.inline
-  def borderRightWidth: borderRightWidth = "borderRightWidth".asInstanceOf[borderRightWidth]
-  @scala.inline
-  def borderSpacing: borderSpacing = "borderSpacing".asInstanceOf[borderSpacing]
-  @scala.inline
-  def borderStyle: borderStyle = "borderStyle".asInstanceOf[borderStyle]
-  @scala.inline
-  def borderTop: borderTop = "borderTop".asInstanceOf[borderTop]
-  @scala.inline
-  def borderTopColor: borderTopColor = "borderTopColor".asInstanceOf[borderTopColor]
-  @scala.inline
-  def borderTopLeftRadius: borderTopLeftRadius = "borderTopLeftRadius".asInstanceOf[borderTopLeftRadius]
-  @scala.inline
-  def borderTopRightRadius: borderTopRightRadius = "borderTopRightRadius".asInstanceOf[borderTopRightRadius]
-  @scala.inline
-  def borderTopStyle: borderTopStyle = "borderTopStyle".asInstanceOf[borderTopStyle]
-  @scala.inline
-  def borderTopWidth: borderTopWidth = "borderTopWidth".asInstanceOf[borderTopWidth]
-  @scala.inline
-  def borderWidth: borderWidth = "borderWidth".asInstanceOf[borderWidth]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def boxShadow: boxShadow = "boxShadow".asInstanceOf[boxShadow]
-  @scala.inline
-  def boxSizing: boxSizing = "boxSizing".asInstanceOf[boxSizing]
-  @scala.inline
-  def breakAfter: breakAfter = "breakAfter".asInstanceOf[breakAfter]
-  @scala.inline
-  def breakBefore: breakBefore = "breakBefore".asInstanceOf[breakBefore]
-  @scala.inline
-  def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
-  @scala.inline
-  def bubbleScroll: bubbleScroll = "bubbleScroll".asInstanceOf[bubbleScroll]
-  @scala.inline
-  def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
-  @scala.inline
-  def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
-  @scala.inline
-  def chosenClass: chosenClass = "chosenClass".asInstanceOf[chosenClass]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def clip: clip = "clip".asInstanceOf[clip]
-  @scala.inline
-  def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
-  @scala.inline
-  def clipRule: clipRule = "clipRule".asInstanceOf[clipRule]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
-  @scala.inline
-  def colorInterpolation: colorInterpolation = "colorInterpolation".asInstanceOf[colorInterpolation]
-  @scala.inline
-  def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
-  @scala.inline
-  def columnCount: columnCount = "columnCount".asInstanceOf[columnCount]
-  @scala.inline
-  def columnFill: columnFill = "columnFill".asInstanceOf[columnFill]
-  @scala.inline
-  def columnGap: columnGap = "columnGap".asInstanceOf[columnGap]
-  @scala.inline
-  def columnRule: columnRule = "columnRule".asInstanceOf[columnRule]
-  @scala.inline
-  def columnRuleColor: columnRuleColor = "columnRuleColor".asInstanceOf[columnRuleColor]
-  @scala.inline
-  def columnRuleStyle: columnRuleStyle = "columnRuleStyle".asInstanceOf[columnRuleStyle]
-  @scala.inline
-  def columnRuleWidth: columnRuleWidth = "columnRuleWidth".asInstanceOf[columnRuleWidth]
-  @scala.inline
-  def columnSpan: columnSpan = "columnSpan".asInstanceOf[columnSpan]
-  @scala.inline
-  def columnWidth: columnWidth = "columnWidth".asInstanceOf[columnWidth]
-  @scala.inline
-  def columns: columns = "columns".asInstanceOf[columns]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def counterIncrement: counterIncrement = "counterIncrement".asInstanceOf[counterIncrement]
-  @scala.inline
-  def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
-  @scala.inline
-  def cssFloat: cssFloat = "cssFloat".asInstanceOf[cssFloat]
-  @scala.inline
-  def cssText: cssText = "cssText".asInstanceOf[cssText]
-  @scala.inline
-  def cursor: cursor = "cursor".asInstanceOf[cursor]
-  @scala.inline
-  def dataIdAttr: dataIdAttr = "dataIdAttr".asInstanceOf[dataIdAttr]
-  @scala.inline
-  def delay: delay = "delay".asInstanceOf[delay]
-  @scala.inline
-  def delayOnTouchOnly: delayOnTouchOnly = "delayOnTouchOnly".asInstanceOf[delayOnTouchOnly]
-  @scala.inline
-  def direction: direction = "direction".asInstanceOf[direction]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def display: display = "display".asInstanceOf[display]
-  @scala.inline
-  def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
-  @scala.inline
-  def dragClass: dragClass = "dragClass".asInstanceOf[dragClass]
-  @scala.inline
-  def draggable: draggable = "draggable".asInstanceOf[draggable]
-  @scala.inline
-  def dragoverBubble: dragoverBubble = "dragoverBubble".asInstanceOf[dragoverBubble]
-  @scala.inline
-  def dropBubble: dropBubble = "dropBubble".asInstanceOf[dropBubble]
-  @scala.inline
-  def easing: easing = "easing".asInstanceOf[easing]
-  @scala.inline
-  def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
-  @scala.inline
-  def emptyInsertThreshold: emptyInsertThreshold = "emptyInsertThreshold".asInstanceOf[emptyInsertThreshold]
-  @scala.inline
-  def fallbackClass: fallbackClass = "fallbackClass".asInstanceOf[fallbackClass]
-  @scala.inline
-  def fallbackOffset: fallbackOffset = "fallbackOffset".asInstanceOf[fallbackOffset]
-  @scala.inline
-  def fallbackOnBody: fallbackOnBody = "fallbackOnBody".asInstanceOf[fallbackOnBody]
-  @scala.inline
-  def fallbackTolerance: fallbackTolerance = "fallbackTolerance".asInstanceOf[fallbackTolerance]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
-  @scala.inline
-  def fillRule: fillRule = "fillRule".asInstanceOf[fillRule]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
-  @scala.inline
-  def flexBasis: flexBasis = "flexBasis".asInstanceOf[flexBasis]
-  @scala.inline
-  def flexDirection: flexDirection = "flexDirection".asInstanceOf[flexDirection]
-  @scala.inline
-  def flexFlow: flexFlow = "flexFlow".asInstanceOf[flexFlow]
-  @scala.inline
-  def flexGrow: flexGrow = "flexGrow".asInstanceOf[flexGrow]
-  @scala.inline
-  def flexShrink: flexShrink = "flexShrink".asInstanceOf[flexShrink]
-  @scala.inline
-  def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def floodColor: floodColor = "floodColor".asInstanceOf[floodColor]
-  @scala.inline
-  def floodOpacity: floodOpacity = "floodOpacity".asInstanceOf[floodOpacity]
-  @scala.inline
-  def font: font = "font".asInstanceOf[font]
-  @scala.inline
-  def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
-  @scala.inline
-  def fontFeatureSettings: fontFeatureSettings = "fontFeatureSettings".asInstanceOf[fontFeatureSettings]
-  @scala.inline
-  def fontKerning: fontKerning = "fontKerning".asInstanceOf[fontKerning]
-  @scala.inline
-  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
-  @scala.inline
-  def fontSizeAdjust: fontSizeAdjust = "fontSizeAdjust".asInstanceOf[fontSizeAdjust]
-  @scala.inline
-  def fontStretch: fontStretch = "fontStretch".asInstanceOf[fontStretch]
-  @scala.inline
-  def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
-  @scala.inline
-  def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
-  @scala.inline
-  def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
-  @scala.inline
-  def fontVariantCaps: fontVariantCaps = "fontVariantCaps".asInstanceOf[fontVariantCaps]
-  @scala.inline
-  def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
-  @scala.inline
-  def fontVariantLigatures: fontVariantLigatures = "fontVariantLigatures".asInstanceOf[fontVariantLigatures]
-  @scala.inline
-  def fontVariantNumeric: fontVariantNumeric = "fontVariantNumeric".asInstanceOf[fontVariantNumeric]
-  @scala.inline
-  def fontVariantPosition: fontVariantPosition = "fontVariantPosition".asInstanceOf[fontVariantPosition]
-  @scala.inline
-  def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
-  @scala.inline
-  def forceFallback: forceFallback = "forceFallback".asInstanceOf[forceFallback]
-  @scala.inline
-  def gap: gap = "gap".asInstanceOf[gap]
-  @scala.inline
-  def ghostClass: ghostClass = "ghostClass".asInstanceOf[ghostClass]
-  @scala.inline
-  def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
-  @scala.inline
-  def gridAutoColumns: gridAutoColumns = "gridAutoColumns".asInstanceOf[gridAutoColumns]
-  @scala.inline
-  def gridAutoFlow: gridAutoFlow = "gridAutoFlow".asInstanceOf[gridAutoFlow]
-  @scala.inline
-  def gridAutoRows: gridAutoRows = "gridAutoRows".asInstanceOf[gridAutoRows]
-  @scala.inline
-  def gridColumn: gridColumn = "gridColumn".asInstanceOf[gridColumn]
-  @scala.inline
-  def gridColumnEnd: gridColumnEnd = "gridColumnEnd".asInstanceOf[gridColumnEnd]
-  @scala.inline
-  def gridColumnGap: gridColumnGap = "gridColumnGap".asInstanceOf[gridColumnGap]
-  @scala.inline
-  def gridColumnStart: gridColumnStart = "gridColumnStart".asInstanceOf[gridColumnStart]
-  @scala.inline
-  def gridGap: gridGap = "gridGap".asInstanceOf[gridGap]
-  @scala.inline
-  def gridRow: gridRow = "gridRow".asInstanceOf[gridRow]
-  @scala.inline
-  def gridRowEnd: gridRowEnd = "gridRowEnd".asInstanceOf[gridRowEnd]
-  @scala.inline
-  def gridRowGap: gridRowGap = "gridRowGap".asInstanceOf[gridRowGap]
-  @scala.inline
-  def gridRowStart: gridRowStart = "gridRowStart".asInstanceOf[gridRowStart]
-  @scala.inline
-  def gridTemplate: gridTemplate = "gridTemplate".asInstanceOf[gridTemplate]
-  @scala.inline
-  def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
-  @scala.inline
-  def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
-  @scala.inline
-  def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def handle: handle = "handle".asInstanceOf[handle]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
-  @scala.inline
-  def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
-  @scala.inline
-  def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
-  @scala.inline
-  def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
-  @scala.inline
-  def invertedSwapThreshold: invertedSwapThreshold = "invertedSwapThreshold".asInstanceOf[invertedSwapThreshold]
-  @scala.inline
-  def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
-  @scala.inline
-  def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
-  @scala.inline
-  def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def length: length = "length".asInstanceOf[length]
-  @scala.inline
-  def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
-  @scala.inline
-  def lightingColor: lightingColor = "lightingColor".asInstanceOf[lightingColor]
-  @scala.inline
-  def lineBreak: lineBreak = "lineBreak".asInstanceOf[lineBreak]
-  @scala.inline
-  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
-  @scala.inline
-  def listStyle: listStyle = "listStyle".asInstanceOf[listStyle]
-  @scala.inline
-  def listStyleImage: listStyleImage = "listStyleImage".asInstanceOf[listStyleImage]
-  @scala.inline
-  def listStylePosition: listStylePosition = "listStylePosition".asInstanceOf[listStylePosition]
-  @scala.inline
-  def listStyleType: listStyleType = "listStyleType".asInstanceOf[listStyleType]
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
-  @scala.inline
-  def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
-  @scala.inline
-  def marginBlockStart: marginBlockStart = "marginBlockStart".asInstanceOf[marginBlockStart]
-  @scala.inline
-  def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
-  @scala.inline
-  def marginInlineEnd: marginInlineEnd = "marginInlineEnd".asInstanceOf[marginInlineEnd]
-  @scala.inline
-  def marginInlineStart: marginInlineStart = "marginInlineStart".asInstanceOf[marginInlineStart]
-  @scala.inline
-  def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
-  @scala.inline
-  def marginRight: marginRight = "marginRight".asInstanceOf[marginRight]
-  @scala.inline
-  def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
-  @scala.inline
-  def marker: marker = "marker".asInstanceOf[marker]
-  @scala.inline
-  def markerEnd: markerEnd = "markerEnd".asInstanceOf[markerEnd]
-  @scala.inline
-  def markerMid: markerMid = "markerMid".asInstanceOf[markerMid]
-  @scala.inline
-  def markerStart: markerStart = "markerStart".asInstanceOf[markerStart]
-  @scala.inline
-  def mask: mask = "mask".asInstanceOf[mask]
-  @scala.inline
-  def maskComposite: maskComposite = "maskComposite".asInstanceOf[maskComposite]
-  @scala.inline
-  def maskImage: maskImage = "maskImage".asInstanceOf[maskImage]
-  @scala.inline
-  def maskPosition: maskPosition = "maskPosition".asInstanceOf[maskPosition]
-  @scala.inline
-  def maskRepeat: maskRepeat = "maskRepeat".asInstanceOf[maskRepeat]
-  @scala.inline
-  def maskSize: maskSize = "maskSize".asInstanceOf[maskSize]
-  @scala.inline
-  def maskType: maskType = "maskType".asInstanceOf[maskType]
-  @scala.inline
-  def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
-  @scala.inline
-  def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
-  @scala.inline
-  def maxInlineSize: maxInlineSize = "maxInlineSize".asInstanceOf[maxInlineSize]
-  @scala.inline
-  def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
-  @scala.inline
-  def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
-  @scala.inline
-  def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
-  @scala.inline
-  def minInlineSize: minInlineSize = "minInlineSize".asInstanceOf[minInlineSize]
-  @scala.inline
-  def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
-  @scala.inline
-  def multiDrag: multiDrag = "multiDrag".asInstanceOf[multiDrag]
-  @scala.inline
-  def multiDragKey: multiDragKey = "multiDragKey".asInstanceOf[multiDragKey]
-  @scala.inline
-  def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
-  @scala.inline
-  def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
-  @scala.inline
-  def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onChoose: onChoose = "onChoose".asInstanceOf[onChoose]
-  @scala.inline
-  def onClone: onClone = "onClone".asInstanceOf[onClone]
-  @scala.inline
-  def onDeselect: onDeselect = "onDeselect".asInstanceOf[onDeselect]
-  @scala.inline
-  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
-  @scala.inline
-  def onFilter: onFilter = "onFilter".asInstanceOf[onFilter]
-  @scala.inline
-  def onMove: onMove = "onMove".asInstanceOf[onMove]
-  @scala.inline
-  def onRemove: onRemove = "onRemove".asInstanceOf[onRemove]
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  @scala.inline
-  def onSort: onSort = "onSort".asInstanceOf[onSort]
-  @scala.inline
-  def onSpill: onSpill = "onSpill".asInstanceOf[onSpill]
-  @scala.inline
-  def onStart: onStart = "onStart".asInstanceOf[onStart]
-  @scala.inline
-  def onUnchoose: onUnchoose = "onUnchoose".asInstanceOf[onUnchoose]
-  @scala.inline
-  def onUpdate: onUpdate = "onUpdate".asInstanceOf[onUpdate]
-  @scala.inline
-  def opacity: opacity = "opacity".asInstanceOf[opacity]
-  @scala.inline
-  def order: order = "order".asInstanceOf[order]
-  @scala.inline
-  def orphans: orphans = "orphans".asInstanceOf[orphans]
-  @scala.inline
-  def outline: outline = "outline".asInstanceOf[outline]
-  @scala.inline
-  def outlineColor: outlineColor = "outlineColor".asInstanceOf[outlineColor]
-  @scala.inline
-  def outlineOffset: outlineOffset = "outlineOffset".asInstanceOf[outlineOffset]
-  @scala.inline
-  def outlineStyle: outlineStyle = "outlineStyle".asInstanceOf[outlineStyle]
-  @scala.inline
-  def outlineWidth: outlineWidth = "outlineWidth".asInstanceOf[outlineWidth]
-  @scala.inline
-  def overflow: overflow = "overflow".asInstanceOf[overflow]
-  @scala.inline
-  def overflowAnchor: overflowAnchor = "overflowAnchor".asInstanceOf[overflowAnchor]
-  @scala.inline
-  def overflowWrap: overflowWrap = "overflowWrap".asInstanceOf[overflowWrap]
-  @scala.inline
-  def overflowX: overflowX = "overflowX".asInstanceOf[overflowX]
-  @scala.inline
-  def overflowY: overflowY = "overflowY".asInstanceOf[overflowY]
-  @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
-  @scala.inline
-  def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
-  @scala.inline
-  def paddingBlockStart: paddingBlockStart = "paddingBlockStart".asInstanceOf[paddingBlockStart]
-  @scala.inline
-  def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
-  @scala.inline
-  def paddingInlineEnd: paddingInlineEnd = "paddingInlineEnd".asInstanceOf[paddingInlineEnd]
-  @scala.inline
-  def paddingInlineStart: paddingInlineStart = "paddingInlineStart".asInstanceOf[paddingInlineStart]
-  @scala.inline
-  def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
-  @scala.inline
-  def paddingRight: paddingRight = "paddingRight".asInstanceOf[paddingRight]
-  @scala.inline
-  def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
-  @scala.inline
-  def pageBreakAfter: pageBreakAfter = "pageBreakAfter".asInstanceOf[pageBreakAfter]
-  @scala.inline
-  def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
-  @scala.inline
-  def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
-  @scala.inline
-  def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
-  @scala.inline
-  def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
-  @scala.inline
-  def perspective: perspective = "perspective".asInstanceOf[perspective]
-  @scala.inline
-  def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
-  @scala.inline
-  def placeContent: placeContent = "placeContent".asInstanceOf[placeContent]
-  @scala.inline
-  def placeItems: placeItems = "placeItems".asInstanceOf[placeItems]
-  @scala.inline
-  def placeSelf: placeSelf = "placeSelf".asInstanceOf[placeSelf]
-  @scala.inline
-  def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
-  @scala.inline
-  def position: position = "position".asInstanceOf[position]
-  @scala.inline
-  def preventOnFilter: preventOnFilter = "preventOnFilter".asInstanceOf[preventOnFilter]
-  @scala.inline
-  def quotes: quotes = "quotes".asInstanceOf[quotes]
-  @scala.inline
-  def removeCloneOnHide: removeCloneOnHide = "removeCloneOnHide".asInstanceOf[removeCloneOnHide]
-  @scala.inline
-  def removeOnSpill: removeOnSpill = "removeOnSpill".asInstanceOf[removeOnSpill]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def revertOnSpill: revertOnSpill = "revertOnSpill".asInstanceOf[revertOnSpill]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rotate: rotate = "rotate".asInstanceOf[rotate]
-  @scala.inline
-  def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
-  @scala.inline
-  def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
-  @scala.inline
-  def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
-  @scala.inline
-  def scale: scale = "scale".asInstanceOf[scale]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
-  @scala.inline
-  def scrollFn: scrollFn = "scrollFn".asInstanceOf[scrollFn]
-  @scala.inline
-  def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
-  @scala.inline
-  def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
-  @scala.inline
-  def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
-  @scala.inline
-  def setData: setData = "setData".asInstanceOf[setData]
-  @scala.inline
-  def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
-  @scala.inline
-  def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
-  @scala.inline
-  def stopOpacity: stopOpacity = "stopOpacity".asInstanceOf[stopOpacity]
-  @scala.inline
-  def store: store = "store".asInstanceOf[store]
-  @scala.inline
-  def stroke: stroke = "stroke".asInstanceOf[stroke]
-  @scala.inline
-  def strokeDasharray: strokeDasharray = "strokeDasharray".asInstanceOf[strokeDasharray]
-  @scala.inline
-  def strokeDashoffset: strokeDashoffset = "strokeDashoffset".asInstanceOf[strokeDashoffset]
-  @scala.inline
-  def strokeLinecap: strokeLinecap = "strokeLinecap".asInstanceOf[strokeLinecap]
-  @scala.inline
-  def strokeLinejoin: strokeLinejoin = "strokeLinejoin".asInstanceOf[strokeLinejoin]
-  @scala.inline
-  def strokeMiterlimit: strokeMiterlimit = "strokeMiterlimit".asInstanceOf[strokeMiterlimit]
-  @scala.inline
-  def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
-  @scala.inline
-  def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
-  @scala.inline
-  def swap: swap = "swap".asInstanceOf[swap]
-  @scala.inline
-  def swapClass: swapClass = "swapClass".asInstanceOf[swapClass]
-  @scala.inline
-  def swapThreshold: swapThreshold = "swapThreshold".asInstanceOf[swapThreshold]
-  @scala.inline
-  def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
-  @scala.inline
-  def tableLayout: tableLayout = "tableLayout".asInstanceOf[tableLayout]
-  @scala.inline
-  def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
-  @scala.inline
-  def textAlignLast: textAlignLast = "textAlignLast".asInstanceOf[textAlignLast]
-  @scala.inline
-  def textAnchor: textAnchor = "textAnchor".asInstanceOf[textAnchor]
-  @scala.inline
-  def textCombineUpright: textCombineUpright = "textCombineUpright".asInstanceOf[textCombineUpright]
-  @scala.inline
-  def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
-  @scala.inline
-  def textDecorationColor: textDecorationColor = "textDecorationColor".asInstanceOf[textDecorationColor]
-  @scala.inline
-  def textDecorationLine: textDecorationLine = "textDecorationLine".asInstanceOf[textDecorationLine]
-  @scala.inline
-  def textDecorationStyle: textDecorationStyle = "textDecorationStyle".asInstanceOf[textDecorationStyle]
-  @scala.inline
-  def textEmphasis: textEmphasis = "textEmphasis".asInstanceOf[textEmphasis]
-  @scala.inline
-  def textEmphasisColor: textEmphasisColor = "textEmphasisColor".asInstanceOf[textEmphasisColor]
-  @scala.inline
-  def textEmphasisPosition: textEmphasisPosition = "textEmphasisPosition".asInstanceOf[textEmphasisPosition]
-  @scala.inline
-  def textEmphasisStyle: textEmphasisStyle = "textEmphasisStyle".asInstanceOf[textEmphasisStyle]
-  @scala.inline
-  def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
-  @scala.inline
-  def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
-  @scala.inline
-  def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
-  @scala.inline
-  def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
-  @scala.inline
-  def textRendering: textRendering = "textRendering".asInstanceOf[textRendering]
-  @scala.inline
-  def textShadow: textShadow = "textShadow".asInstanceOf[textShadow]
-  @scala.inline
-  def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
-  @scala.inline
-  def textUnderlinePosition: textUnderlinePosition = "textUnderlinePosition".asInstanceOf[textUnderlinePosition]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
-  @scala.inline
-  def touchStartThreshold: touchStartThreshold = "touchStartThreshold".asInstanceOf[touchStartThreshold]
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
-  @scala.inline
-  def transformBox: transformBox = "transformBox".asInstanceOf[transformBox]
-  @scala.inline
-  def transformOrigin: transformOrigin = "transformOrigin".asInstanceOf[transformOrigin]
-  @scala.inline
-  def transformStyle: transformStyle = "transformStyle".asInstanceOf[transformStyle]
-  @scala.inline
-  def transition: transition = "transition".asInstanceOf[transition]
-  @scala.inline
-  def transitionDelay: transitionDelay = "transitionDelay".asInstanceOf[transitionDelay]
-  @scala.inline
-  def transitionDuration: transitionDuration = "transitionDuration".asInstanceOf[transitionDuration]
-  @scala.inline
-  def transitionProperty: transitionProperty = "transitionProperty".asInstanceOf[transitionProperty]
-  @scala.inline
-  def transitionTimingFunction: transitionTimingFunction = "transitionTimingFunction".asInstanceOf[transitionTimingFunction]
-  @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
-  @scala.inline
-  def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
-  @scala.inline
-  def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
-  @scala.inline
-  def visibility: visibility = "visibility".asInstanceOf[visibility]
-  @scala.inline
-  def webkitAlignContent: webkitAlignContent = "webkitAlignContent".asInstanceOf[webkitAlignContent]
-  @scala.inline
-  def webkitAlignItems: webkitAlignItems = "webkitAlignItems".asInstanceOf[webkitAlignItems]
-  @scala.inline
-  def webkitAlignSelf: webkitAlignSelf = "webkitAlignSelf".asInstanceOf[webkitAlignSelf]
-  @scala.inline
-  def webkitAnimation: webkitAnimation = "webkitAnimation".asInstanceOf[webkitAnimation]
-  @scala.inline
-  def webkitAnimationDelay: webkitAnimationDelay = "webkitAnimationDelay".asInstanceOf[webkitAnimationDelay]
-  @scala.inline
-  def webkitAnimationDirection: webkitAnimationDirection = "webkitAnimationDirection".asInstanceOf[webkitAnimationDirection]
-  @scala.inline
-  def webkitAnimationDuration: webkitAnimationDuration = "webkitAnimationDuration".asInstanceOf[webkitAnimationDuration]
-  @scala.inline
-  def webkitAnimationFillMode: webkitAnimationFillMode = "webkitAnimationFillMode".asInstanceOf[webkitAnimationFillMode]
-  @scala.inline
-  def webkitAnimationIterationCount: webkitAnimationIterationCount = "webkitAnimationIterationCount".asInstanceOf[webkitAnimationIterationCount]
-  @scala.inline
-  def webkitAnimationName: webkitAnimationName = "webkitAnimationName".asInstanceOf[webkitAnimationName]
-  @scala.inline
-  def webkitAnimationPlayState: webkitAnimationPlayState = "webkitAnimationPlayState".asInstanceOf[webkitAnimationPlayState]
-  @scala.inline
-  def webkitAnimationTimingFunction: webkitAnimationTimingFunction = "webkitAnimationTimingFunction".asInstanceOf[webkitAnimationTimingFunction]
-  @scala.inline
-  def webkitAppearance: webkitAppearance = "webkitAppearance".asInstanceOf[webkitAppearance]
-  @scala.inline
-  def webkitBackfaceVisibility: webkitBackfaceVisibility = "webkitBackfaceVisibility".asInstanceOf[webkitBackfaceVisibility]
-  @scala.inline
-  def webkitBackgroundClip: webkitBackgroundClip = "webkitBackgroundClip".asInstanceOf[webkitBackgroundClip]
-  @scala.inline
-  def webkitBackgroundOrigin: webkitBackgroundOrigin = "webkitBackgroundOrigin".asInstanceOf[webkitBackgroundOrigin]
-  @scala.inline
-  def webkitBackgroundSize: webkitBackgroundSize = "webkitBackgroundSize".asInstanceOf[webkitBackgroundSize]
-  @scala.inline
-  def webkitBorderBottomLeftRadius: webkitBorderBottomLeftRadius = "webkitBorderBottomLeftRadius".asInstanceOf[webkitBorderBottomLeftRadius]
-  @scala.inline
-  def webkitBorderBottomRightRadius: webkitBorderBottomRightRadius = "webkitBorderBottomRightRadius".asInstanceOf[webkitBorderBottomRightRadius]
-  @scala.inline
-  def webkitBorderRadius: webkitBorderRadius = "webkitBorderRadius".asInstanceOf[webkitBorderRadius]
-  @scala.inline
-  def webkitBorderTopLeftRadius: webkitBorderTopLeftRadius = "webkitBorderTopLeftRadius".asInstanceOf[webkitBorderTopLeftRadius]
-  @scala.inline
-  def webkitBorderTopRightRadius: webkitBorderTopRightRadius = "webkitBorderTopRightRadius".asInstanceOf[webkitBorderTopRightRadius]
-  @scala.inline
-  def webkitBoxAlign: webkitBoxAlign = "webkitBoxAlign".asInstanceOf[webkitBoxAlign]
-  @scala.inline
-  def webkitBoxFlex: webkitBoxFlex = "webkitBoxFlex".asInstanceOf[webkitBoxFlex]
-  @scala.inline
-  def webkitBoxOrdinalGroup: webkitBoxOrdinalGroup = "webkitBoxOrdinalGroup".asInstanceOf[webkitBoxOrdinalGroup]
-  @scala.inline
-  def webkitBoxOrient: webkitBoxOrient = "webkitBoxOrient".asInstanceOf[webkitBoxOrient]
-  @scala.inline
-  def webkitBoxPack: webkitBoxPack = "webkitBoxPack".asInstanceOf[webkitBoxPack]
-  @scala.inline
-  def webkitBoxShadow: webkitBoxShadow = "webkitBoxShadow".asInstanceOf[webkitBoxShadow]
-  @scala.inline
-  def webkitBoxSizing: webkitBoxSizing = "webkitBoxSizing".asInstanceOf[webkitBoxSizing]
-  @scala.inline
-  def webkitFilter: webkitFilter = "webkitFilter".asInstanceOf[webkitFilter]
-  @scala.inline
-  def webkitFlex: webkitFlex = "webkitFlex".asInstanceOf[webkitFlex]
-  @scala.inline
-  def webkitFlexBasis: webkitFlexBasis = "webkitFlexBasis".asInstanceOf[webkitFlexBasis]
-  @scala.inline
-  def webkitFlexDirection: webkitFlexDirection = "webkitFlexDirection".asInstanceOf[webkitFlexDirection]
-  @scala.inline
-  def webkitFlexFlow: webkitFlexFlow = "webkitFlexFlow".asInstanceOf[webkitFlexFlow]
-  @scala.inline
-  def webkitFlexGrow: webkitFlexGrow = "webkitFlexGrow".asInstanceOf[webkitFlexGrow]
-  @scala.inline
-  def webkitFlexShrink: webkitFlexShrink = "webkitFlexShrink".asInstanceOf[webkitFlexShrink]
-  @scala.inline
-  def webkitFlexWrap: webkitFlexWrap = "webkitFlexWrap".asInstanceOf[webkitFlexWrap]
-  @scala.inline
-  def webkitJustifyContent: webkitJustifyContent = "webkitJustifyContent".asInstanceOf[webkitJustifyContent]
-  @scala.inline
-  def webkitLineClamp: webkitLineClamp = "webkitLineClamp".asInstanceOf[webkitLineClamp]
-  @scala.inline
-  def webkitMask: webkitMask = "webkitMask".asInstanceOf[webkitMask]
-  @scala.inline
-  def webkitMaskBoxImage: webkitMaskBoxImage = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage]
-  @scala.inline
-  def webkitMaskBoxImageOutset: webkitMaskBoxImageOutset = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset]
-  @scala.inline
-  def webkitMaskBoxImageRepeat: webkitMaskBoxImageRepeat = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat]
-  @scala.inline
-  def webkitMaskBoxImageSlice: webkitMaskBoxImageSlice = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice]
-  @scala.inline
-  def webkitMaskBoxImageSource: webkitMaskBoxImageSource = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource]
-  @scala.inline
-  def webkitMaskBoxImageWidth: webkitMaskBoxImageWidth = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth]
-  @scala.inline
-  def webkitMaskClip: webkitMaskClip = "webkitMaskClip".asInstanceOf[webkitMaskClip]
-  @scala.inline
-  def webkitMaskComposite: webkitMaskComposite = "webkitMaskComposite".asInstanceOf[webkitMaskComposite]
-  @scala.inline
-  def webkitMaskImage: webkitMaskImage = "webkitMaskImage".asInstanceOf[webkitMaskImage]
-  @scala.inline
-  def webkitMaskOrigin: webkitMaskOrigin = "webkitMaskOrigin".asInstanceOf[webkitMaskOrigin]
-  @scala.inline
-  def webkitMaskPosition: webkitMaskPosition = "webkitMaskPosition".asInstanceOf[webkitMaskPosition]
-  @scala.inline
-  def webkitMaskRepeat: webkitMaskRepeat = "webkitMaskRepeat".asInstanceOf[webkitMaskRepeat]
-  @scala.inline
-  def webkitMaskSize: webkitMaskSize = "webkitMaskSize".asInstanceOf[webkitMaskSize]
-  @scala.inline
-  def webkitOrder: webkitOrder = "webkitOrder".asInstanceOf[webkitOrder]
-  @scala.inline
-  def webkitPerspective: webkitPerspective = "webkitPerspective".asInstanceOf[webkitPerspective]
-  @scala.inline
-  def webkitPerspectiveOrigin: webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[webkitPerspectiveOrigin]
-  @scala.inline
-  def webkitTapHighlightColor: webkitTapHighlightColor = "webkitTapHighlightColor".asInstanceOf[webkitTapHighlightColor]
-  @scala.inline
-  def webkitTextFillColor: webkitTextFillColor = "webkitTextFillColor".asInstanceOf[webkitTextFillColor]
-  @scala.inline
-  def webkitTextSizeAdjust: webkitTextSizeAdjust = "webkitTextSizeAdjust".asInstanceOf[webkitTextSizeAdjust]
-  @scala.inline
-  def webkitTextStroke: webkitTextStroke = "webkitTextStroke".asInstanceOf[webkitTextStroke]
-  @scala.inline
-  def webkitTextStrokeColor: webkitTextStrokeColor = "webkitTextStrokeColor".asInstanceOf[webkitTextStrokeColor]
-  @scala.inline
-  def webkitTextStrokeWidth: webkitTextStrokeWidth = "webkitTextStrokeWidth".asInstanceOf[webkitTextStrokeWidth]
-  @scala.inline
-  def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
-  @scala.inline
-  def webkitTransformOrigin: webkitTransformOrigin = "webkitTransformOrigin".asInstanceOf[webkitTransformOrigin]
-  @scala.inline
-  def webkitTransformStyle: webkitTransformStyle = "webkitTransformStyle".asInstanceOf[webkitTransformStyle]
-  @scala.inline
-  def webkitTransition: webkitTransition = "webkitTransition".asInstanceOf[webkitTransition]
-  @scala.inline
-  def webkitTransitionDelay: webkitTransitionDelay = "webkitTransitionDelay".asInstanceOf[webkitTransitionDelay]
-  @scala.inline
-  def webkitTransitionDuration: webkitTransitionDuration = "webkitTransitionDuration".asInstanceOf[webkitTransitionDuration]
-  @scala.inline
-  def webkitTransitionProperty: webkitTransitionProperty = "webkitTransitionProperty".asInstanceOf[webkitTransitionProperty]
-  @scala.inline
-  def webkitTransitionTimingFunction: webkitTransitionTimingFunction = "webkitTransitionTimingFunction".asInstanceOf[webkitTransitionTimingFunction]
-  @scala.inline
-  def webkitUserSelect: webkitUserSelect = "webkitUserSelect".asInstanceOf[webkitUserSelect]
-  @scala.inline
-  def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
-  @scala.inline
-  def widows: widows = "widows".asInstanceOf[widows]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def willChange: willChange = "willChange".asInstanceOf[willChange]
-  @scala.inline
-  def wordBreak: wordBreak = "wordBreak".asInstanceOf[wordBreak]
-  @scala.inline
-  def wordSpacing: wordSpacing = "wordSpacing".asInstanceOf[wordSpacing]
-  @scala.inline
-  def wordWrap: wordWrap = "wordWrap".asInstanceOf[wordWrap]
-  @scala.inline
-  def writingMode: writingMode = "writingMode".asInstanceOf[writingMode]
-  @scala.inline
-  def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
-

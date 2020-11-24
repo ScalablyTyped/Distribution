@@ -3,7 +3,7 @@ package typings.node.eventsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This symbol shall be used to install a listener for only monitoring `'error'`
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object errorMonitor
   extends TopLevel[js.Symbol]
-

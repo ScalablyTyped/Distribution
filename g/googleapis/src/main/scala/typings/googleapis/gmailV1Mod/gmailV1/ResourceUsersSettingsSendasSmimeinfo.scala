@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Sendas$Smimeinfo")
 @js.native
 class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.settings.sendAs.smimeInfo.delete
     * @desc Deletes the specified S/MIME config for the specified send-as
@@ -44,6 +46,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.smimeInfo.get
     * @desc Gets the specified S/MIME config for the specified send-as alias.
@@ -77,6 +80,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSmimeInfo]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.smimeInfo.insert
     * @desc Insert (upload) the given S/MIME config for the specified send-as
@@ -111,6 +115,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSmimeInfo]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.smimeInfo.list
     * @desc Lists S/MIME configs for the specified send-as alias.
@@ -143,6 +148,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSmimeInfoResponse]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.smimeInfo.setDefault
     * @desc Sets the default S/MIME config for the specified send-as alias.
@@ -174,4 +180,3 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ the little xml parser that could
 | ------------------ | :-------------: |
 | Full name          | xml-parser |
 | Keywords           | xml, sucks |
-| # releases         | 1 |
-| # dependents       | 104 |
-| # downloads        | 1366040 |
+| # releases         | 0 |
+| # dependents       | 105 |
+| # downloads        | 1772484 |
 | # stars            | 10 |
 
 ## Links

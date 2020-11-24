@@ -12,7 +12,7 @@ a middleware for koa to cache response with redis.
 | Keywords           | middleware, response, redis, cache, koa |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 41922 |
+| # downloads        | 45828 |
 | # stars            | 0 |
 
 ## Links

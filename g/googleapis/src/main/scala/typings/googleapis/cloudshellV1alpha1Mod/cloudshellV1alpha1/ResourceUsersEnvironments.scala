@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudshell/v1alpha1", "cloudshell_v1alpha1.Resource$Users$Environments")
 @js.native
 class ResourceUsersEnvironments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var publicKeys: ResourceUsersEnvironmentsPublickeys = js.native
+  
   /**
     * cloudshell.users.environments.authorize
     * @desc Sends OAuth credentials to a running environment on behalf of a
@@ -46,6 +45,9 @@ class ResourceUsersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudshell.users.environments.get
     * @desc Gets an environment. Returns NOT_FOUND if the environment does not
@@ -75,6 +77,7 @@ class ResourceUsersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
+  
   /**
     * cloudshell.users.environments.patch
     * @desc Updates an existing environment.
@@ -105,6 +108,9 @@ class ResourceUsersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
+  
+  var publicKeys: ResourceUsersEnvironmentsPublickeys = js.native
+  
   /**
     * cloudshell.users.environments.start
     * @desc Starts an existing environment, allowing clients to connect to it.
@@ -140,4 +146,3 @@ class ResourceUsersEnvironments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

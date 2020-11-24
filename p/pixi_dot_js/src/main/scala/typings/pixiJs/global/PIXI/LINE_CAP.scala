@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Support line caps in `PIXI.LineStyle` for graphics.
@@ -20,10 +20,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.LINE_CAP")
 @js.native
 object LINE_CAP extends js.Object {
-  /* 0 */ val BUTT: typings.pixiJs.PIXI.LINE_CAP.BUTT with Double = js.native
-  /* 1 */ val ROUND: typings.pixiJs.PIXI.LINE_CAP.ROUND with Double = js.native
-  /* 2 */ val SQUARE: typings.pixiJs.PIXI.LINE_CAP.SQUARE with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_CAP with Double] = js.native
+  
+  /* 0 */ val BUTT: typings.pixiJs.PIXI.LINE_CAP.BUTT with Double = js.native
+  
+  /* 1 */ val ROUND: typings.pixiJs.PIXI.LINE_CAP.ROUND with Double = js.native
+  
+  /* 2 */ val SQUARE: typings.pixiJs.PIXI.LINE_CAP.SQUARE with Double = js.native
 }
-

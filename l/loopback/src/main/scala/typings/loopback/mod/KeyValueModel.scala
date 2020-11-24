@@ -4,7 +4,7 @@ import typings.loopback.anon.Match
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data model for key-value databases.
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", "KeyValueModel")
 @js.native
 class KeyValueModel () extends js.Object
-
 /* static members */
 @JSImport("loopback", "KeyValueModel")
 @js.native
 object KeyValueModel extends js.Object {
+  
   /**
     * Set the TTL (time to live) in ms (milliseconds) for a given key.
     * TTL is the remaining time before a key-value pair is discarded from the database.
@@ -34,6 +34,7 @@ object KeyValueModel extends js.Object {
     * @param {() => void} callback
     */
   def expire(key: String, ttl: Double, options: js.Any, callback: js.Function0[Unit]): js.Thenable[_] = js.native
+  
   /**
     * Return the value associated with a given key.
     *
@@ -56,6 +57,7 @@ object KeyValueModel extends js.Object {
   ): js.Thenable[_] = js.native
   def get(key: String, option: js.Any): js.Thenable[_] = js.native
   def get(key: String, option: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Thenable[_] = js.native
+  
   /**
     * Asynchronously iterate all keys in the database. Similar to .keys()
     * but instead allows for iteration over large data sets without having
@@ -96,6 +98,7 @@ object KeyValueModel extends js.Object {
     * @return {any} result AsyncIterator An Object implementing next(cb) -> Promise function that can be used to iterate all keys.
     */
   def iterateKeys(filter: Match): js.Any = js.native
+  
   /**
     * Return all keys in the database.
     * WARNING: This method is not suitable for large data sets as all key-values pairs
@@ -115,6 +118,7 @@ object KeyValueModel extends js.Object {
     * @return {PromiseLike<any>}
     */
   def keys(filter: Match, callback: js.Function0[Unit]): js.Thenable[_] = js.native
+  
   /**
     * Persist a value and associate it with the given key.
     *
@@ -141,6 +145,7 @@ object KeyValueModel extends js.Object {
   def set(key: String, value: js.Any, options: js.Any, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[_] = js.native
   def set(key: String, value: js.Any, options: Double): js.Thenable[_] = js.native
   def set(key: String, value: js.Any, options: Double, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[_] = js.native
+  
   /**
     * Return the TTL (time to live) for a given key.
     * TTL is the remaining time before a key-value pair is discarded from the database.
@@ -158,4 +163,3 @@ object KeyValueModel extends js.Object {
   def ttl(key: String, options: js.Any): js.Thenable[_] = js.native
   def ttl(key: String, options: js.Any, cb: js.Function1[/* error */ Error, Unit]): js.Thenable[_] = js.native
 }
-

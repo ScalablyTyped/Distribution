@@ -2,7 +2,7 @@ package typings.twilioMcsClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc A Client provides an interface for Media Content Service
@@ -18,11 +18,10 @@ class McsClient protected () extends Client {
   def this(token: String, baseUrl: String) = this()
   def this(token: String, baseUrl: String, options: Options) = this()
 }
-
 /* static members */
 @JSImport("twilio-mcs-client", "McsClient")
 @js.native
 object McsClient extends js.Object {
+  
   val version: String = js.native
 }
-

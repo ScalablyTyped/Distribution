@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "ArcRotateCamera")
 @js.native
@@ -36,4 +36,3 @@ class ArcRotateCamera protected ()
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
 }
-

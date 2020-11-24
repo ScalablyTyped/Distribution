@@ -12,7 +12,7 @@ Binary chunking for WebRTC data channels & more.
 | Keywords           | saltyrtc, webrtc, ortc, chunking |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 619 |
+| # downloads        | 283 |
 | # stars            | 1 |
 
 ## Links

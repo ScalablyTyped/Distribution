@@ -4,11 +4,12 @@ import typings.oauth2orize.mod.ExchangeDoneFunction
 import typings.oauth2orize.mod.MiddlewareFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2orize", "exchange.clientCredentials")
 @js.native
 object clientCredentials extends js.Object {
+  
   def apply(issue: js.Function2[/* client */ js.Any, /* issued */ ExchangeDoneFunction, Unit]): MiddlewareFunction = js.native
   def apply(
     issue: js.Function3[
@@ -57,4 +58,3 @@ object clientCredentials extends js.Object {
     ]
   ): MiddlewareFunction = js.native
 }
-

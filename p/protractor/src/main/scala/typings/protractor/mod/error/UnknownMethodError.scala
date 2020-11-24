@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The requested command matched a known URL but did not match an method for
@@ -14,4 +14,3 @@ class UnknownMethodError ()
   extends typings.seleniumWebdriver.mod.error.UnknownMethodError {
   def this(message: String) = this()
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plus/v1", "plus_v1.Resource$People")
 @js.native
 class ResourcePeople protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * plus.people.get
     * @desc Get a person's profile. If your app uses scope
@@ -43,6 +45,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerson]
   ): Unit = js.native
+  
   /**
     * plus.people.list
     * @desc List all of the people in the specified collection.
@@ -75,6 +78,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPeopleFeed]
   ): Unit = js.native
+  
   /**
     * plus.people.listByActivity
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -107,6 +111,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPeopleFeed]
   ): Unit = js.native
+  
   /**
     * plus.people.search
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -140,4 +145,3 @@ class ResourcePeople protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPeopleFeed]
   ): Unit = js.native
 }
-

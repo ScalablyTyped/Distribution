@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.ConferenceData
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConferenceErrorType extends js.Object
-
 /**
   * Enum that defines the types of errors that you can specify in a ConferenceError.
   */
 @JSGlobal("GoogleAppsScript.Conference_Data.ConferenceErrorType")
 @js.native
 object ConferenceErrorType extends js.Object {
+  
   @js.native
   sealed trait AUTHENTICATION extends ConferenceErrorType
   
@@ -30,6 +30,4 @@ object ConferenceErrorType extends js.Object {
   
   @js.native
   sealed trait UNKNOWN extends ConferenceErrorType
-  
 }
-

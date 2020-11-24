@@ -11,8 +11,8 @@ Like `Promise.all()` but for `Map` and `Object`
 | Full name          | p-props |
 | Keywords           | promise, props, map, object, values, properties, entries, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | # releases         | 6 |
-| # dependents       | 35 |
-| # downloads        | 430654 |
+| # dependents       | 40 |
+| # downloads        | 533496 |
 | # stars            | 0 |
 
 ## Links

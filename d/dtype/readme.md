@@ -11,8 +11,8 @@ Return a data type from a string representing the type
 | Full name          | dtype |
 | Keywords           | ndarray, array, typed |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 2860312 |
+| # dependents       | 18 |
+| # downloads        | 3482707 |
 | # stars            | 0 |
 
 ## Links

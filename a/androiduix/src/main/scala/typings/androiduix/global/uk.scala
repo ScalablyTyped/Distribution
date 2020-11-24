@@ -7,20 +7,46 @@ import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("uk")
 @js.native
 object uk extends js.Object {
+  
   @js.native
   object co extends js.Object {
+    
     @js.native
     object senab extends js.Object {
+      
       @js.native
       object photoview extends js.Object {
+        
         @js.native
         class GestureDetector ()
           extends typings.androiduix.uk.co.senab.photoview.GestureDetector
+        /* static members */
+        @js.native
+        object GestureDetector extends js.Object {
+          
+          var INVALID_POINTER_ID: js.Any = js.native
+          
+          var LOG_TAG: js.Any = js.native
+        }
+        
+        @js.native
+        object IPhotoView extends js.Object {
+          
+          var DEFAULT_MAX_SCALE: Double = js.native
+          
+          var DEFAULT_MID_SCALE: Double = js.native
+          
+          var DEFAULT_MIN_SCALE: Double = js.native
+          
+          var DEFAULT_ZOOM_DURATION: Double = js.native
+          
+          def isImpl(obj: js.Any): Boolean = js.native
+        }
         
         @js.native
         class PhotoView protected ()
@@ -37,26 +63,32 @@ object uk extends js.Object {
           def this(imageView: ImageView) = this()
           def this(imageView: ImageView, zoomable: Boolean) = this()
         }
-        
-        /* static members */
-        @js.native
-        object GestureDetector extends js.Object {
-          var INVALID_POINTER_ID: js.Any = js.native
-          var LOG_TAG: js.Any = js.native
-        }
-        
-        @js.native
-        object IPhotoView extends js.Object {
-          var DEFAULT_MAX_SCALE: Double = js.native
-          var DEFAULT_MID_SCALE: Double = js.native
-          var DEFAULT_MIN_SCALE: Double = js.native
-          var DEFAULT_ZOOM_DURATION: Double = js.native
-          def isImpl(obj: js.Any): Boolean = js.native
-        }
-        
         /* static members */
         @js.native
         object PhotoViewAttacher extends js.Object {
+          
+          var DEBUG: js.Any = js.native
+          
+          var EDGE_BOTH: Double = js.native
+          
+          var EDGE_LEFT: Double = js.native
+          
+          var EDGE_NONE: Double = js.native
+          
+          var EDGE_RIGHT: Double = js.native
+          
+          var LOG_TAG: js.Any = js.native
+          
+          /* private */ def checkZoomLevels(minZoom: js.Any, midZoom: js.Any, maxZoom: js.Any): js.Any = js.native
+          
+          /* private */ def hasDrawable(imageView: js.Any): js.Any = js.native
+          
+          /* private */ def isSupportedScaleType(scaleType: js.Any): js.Any = js.native
+          
+          var sInterpolator: Interpolator = js.native
+          
+          /* private */ def setImageViewScaleTypeMatrix(imageView: js.Any): js.Any = js.native
+          
           @js.native
           class AnimatedZoomRunnable protected ()
             extends typings.androiduix.uk.co.senab.photoview.PhotoViewAttacher.AnimatedZoomRunnable {
@@ -80,25 +112,8 @@ object uk extends js.Object {
             extends typings.androiduix.uk.co.senab.photoview.PhotoViewAttacher.FlingRunnable {
             def this(arg: typings.androiduix.uk.co.senab.photoview.PhotoViewAttacher) = this()
           }
-          
-          var DEBUG: js.Any = js.native
-          var EDGE_BOTH: Double = js.native
-          var EDGE_LEFT: Double = js.native
-          var EDGE_NONE: Double = js.native
-          var EDGE_RIGHT: Double = js.native
-          var LOG_TAG: js.Any = js.native
-          var sInterpolator: Interpolator = js.native
-          /* private */ def checkZoomLevels(minZoom: js.Any, midZoom: js.Any, maxZoom: js.Any): js.Any = js.native
-          /* private */ def hasDrawable(imageView: js.Any): js.Any = js.native
-          /* private */ def isSupportedScaleType(scaleType: js.Any): js.Any = js.native
-          /* private */ def setImageViewScaleTypeMatrix(imageView: js.Any): js.Any = js.native
         }
-        
       }
-      
     }
-    
   }
-  
 }
-

@@ -2,9 +2,10 @@ package typings.expressSanitized
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type e = js.Function0[
     js.Function3[
       /* req */ typings.express.mod.Request_[

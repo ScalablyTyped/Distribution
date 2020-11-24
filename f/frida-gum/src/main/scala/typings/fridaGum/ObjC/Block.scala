@@ -4,7 +4,7 @@ import typings.fridaGum.AnyFunction
 import typings.fridaGum.ObjectWrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dynamically generated language binding for any Objective-C block.
@@ -14,15 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Block extends ObjectWrapper {
-  /**
-    * Current implementation. You may replace it by assigning to this property.
-    */
-  @JSName("implementation")
-  var implementation_Original: AnyFunction = js.native
-  /**
-    * Signature, if available.
-    */
-  var types: js.UndefOr[String] = js.native
+  
   /**
     * Declares the signature of an externally defined block. This is needed
     * when working with blocks without signature metadata, i.e. when
@@ -31,9 +23,19 @@ trait Block extends ObjectWrapper {
     * @param signature Signature to use.
     */
   def declare(signature: BlockSignature): Unit = js.native
+  
   /**
     * Current implementation. You may replace it by assigning to this property.
     */
   def implementation(args: js.Any*): js.Any = js.native
+  /**
+    * Current implementation. You may replace it by assigning to this property.
+    */
+  @JSName("implementation")
+  var implementation_Original: AnyFunction = js.native
+  
+  /**
+    * Signature, if available.
+    */
+  var types: js.UndefOr[String] = js.native
 }
-

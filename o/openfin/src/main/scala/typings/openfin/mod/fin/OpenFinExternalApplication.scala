@@ -2,7 +2,7 @@ package typings.openfin.mod.fin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ExternalApplication
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OpenFinExternalApplication extends js.Object {
+  
   /**
     * Registers an event listener on the specified event.
     */
@@ -31,6 +32,7 @@ trait OpenFinExternalApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves information about the application.
     */
@@ -44,6 +46,7 @@ trait OpenFinExternalApplication extends js.Object {
     callback: js.Function1[/* info */ ExternalApplicationInfo, Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Removes a previously registered event listener from the specified event.
     */
@@ -66,4 +69,3 @@ trait OpenFinExternalApplication extends js.Object {
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
 }
-

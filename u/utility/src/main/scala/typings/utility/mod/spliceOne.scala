@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "spliceOne")
 @js.native
 object spliceOne extends js.Object {
+  
   /**
     * Remove one exists element from an array
     * @param {Array} arr
@@ -15,4 +16,3 @@ object spliceOne extends js.Object {
     */
   def apply(arr: js.Array[_], index: Double): js.Array[_] = js.native
 }
-

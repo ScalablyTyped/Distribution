@@ -18,74 +18,12 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.square
 import typings.wechatMiniprogram.wechatMiniprogramStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** canvas 组件的绘图上下文。CanvasContext 是旧版的接口， 新版 Canvas 2D 接口与 Web 一致。 */
 @js.native
 trait CanvasContext extends js.Object {
-  /** 填充颜色。用法同 [CanvasContext.setFillStyle()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setFillStyle.html)。
-    *
-    * 最低基础库： `1.9.90` */
-  var fillStyle: String | CanvasGradient = js.native
-  /** 当前字体样式的属性。符合 [CSS font 语法](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font) 的 DOMString 字符串，至少需要提供字体大小和字体族名。默认值为 10px sans-serif。
-    *
-    * 最低基础库： `1.9.90` */
-  var font: String = js.native
-  /** 全局画笔透明度。范围 0-1，0 表示完全透明，1 表示完全不透明。 */
-  var globalAlpha: Double = js.native
-  /** 在绘制新形状时应用的合成操作的类型。目前安卓版本只适用于 `fill` 填充块的合成，用于 `stroke` 线段的合成效果都是 `source-over`。
-    *
-    * 目前支持的操作有
-    * - 安卓：xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light
-    * - iOS：xor, source-over, source-atop, destination-over, destination-out, lighter, multiply, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, saturation, luminosity
-    *
-    * 最低基础库： `1.9.90` */
-  var globalCompositeOperation: String = js.native
-  /** 线条的端点样式。用法同 [CanvasContext.setLineCap()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineCap.html)。
-    *
-    * 最低基础库： `1.9.90` */
-  var lineCap: String = js.native
-  /** 虚线偏移量，初始值为0
-    *
-    * 最低基础库： `1.9.90` */
-  var lineDashOffset: Double = js.native
-  /** 线条的交点样式。用法同 [CanvasContext.setLineJoin()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineJoin.html)。
-    *
-    * 可选值：
-    * - 'bevel': 斜角;
-    * - 'round': 圆角;
-    * - 'miter': 尖角;
-    *
-    * 最低基础库： `1.9.90` */
-  var lineJoin: bevel | round | miter = js.native
-  /** 线条的宽度。用法同 [CanvasContext.setLineWidth()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineWidth.html)。
-    *
-    * 最低基础库： `1.9.90` */
-  var lineWidth: Double = js.native
-  /** 最大斜接长度。用法同 [CanvasContext.setMiterLimit()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setMiterLimit.html)。
-    *
-    * 最低基础库： `1.9.90` */
-  var miterLimit: Double = js.native
-  /** 阴影的模糊级别
-    *
-    * 最低基础库： `1.9.90` */
-  var shadowBlur: Double = js.native
-  /** 阴影的颜色
-    *
-    * 最低基础库： `1.9.90` */
-  var shadowColor: Double = js.native
-  /** 阴影相对于形状在水平方向的偏移
-    *
-    * 最低基础库： `1.9.90` */
-  var shadowOffsetX: Double = js.native
-  /** 阴影相对于形状在竖直方向的偏移
-    *
-    * 最低基础库： `1.9.90` */
-  var shadowOffsetY: Double = js.native
-  /** 边框颜色。用法同 [CanvasContext.setStrokeStyle()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setStrokeStyle.html)。
-    *
-    * 最低基础库： `1.9.90` */
-  var strokeStyle: String | CanvasGradient = js.native
+  
   /** [CanvasContext.arc(number x, number y, number r, number sAngle, number eAngle, boolean counterclockwise)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.arc.html)
   *
   * 创建一条弧线。
@@ -169,6 +107,7 @@ trait CanvasContext extends js.Object {
     /** 弧度的方向是否是逆时针 */
   counterclockwise: Boolean
   ): Unit = js.native
+  
   /** [CanvasContext.arcTo(number x1, number y1, number x2, number y2, number radius)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.arcTo.html)
     *
     * 根据控制点和半径绘制圆弧路径。
@@ -186,6 +125,7 @@ trait CanvasContext extends js.Object {
     /** 圆弧的半径 */
   radius: Double
   ): Unit = js.native
+  
   /** [CanvasContext.beginPath()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.beginPath.html)
   *
   * 开始创建一个路径。需要调用 `fill` 或者 `stroke` 才会使用路径进行填充或描边
@@ -217,6 +157,7 @@ trait CanvasContext extends js.Object {
   *
   * ![](@program/dev/image/canvas/fill-path.png) */
   def beginPath(): Unit = js.native
+  
   /** [CanvasContext.bezierCurveTo(number cp1x, number cp1y, number cp2x, number cp2y, number x, number y)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.bezierCurveTo.html)
   *
   * 创建三次方贝塞尔曲线路径。曲线的起始点为路径中前一个点。
@@ -282,6 +223,7 @@ trait CanvasContext extends js.Object {
     /** 结束点的 y 坐标 */
   y: Double
   ): Unit = js.native
+  
   /** [CanvasContext.clearRect(number x, number y, number width, number height)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clearRect.html)
   *
   * 清除画布上在该矩形区域内的内容
@@ -313,6 +255,7 @@ trait CanvasContext extends js.Object {
     /** 矩形路径的高度 */
   height: Double
   ): Unit = js.native
+  
   /** [CanvasContext.clip()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clip.html)
   *
   * 从原始画布中剪切任意形状和尺寸。一旦剪切了某个区域，则所有之后的绘图都会被限制在被剪切的区域内（不能访问画布上的其他区域）。可以在使用 `clip` 方法前通过使用 `save` 方法对当前画布区域进行保存，并在以后的任意时间通过`restore`方法对其进行恢复。
@@ -339,6 +282,7 @@ trait CanvasContext extends js.Object {
   *
   * 最低基础库： `1.6.0` */
   def clip(): Unit = js.native
+  
   /** [CanvasContext.closePath()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.closePath.html)
   *
   * 关闭一个路径。会连接起点和终点。如果关闭路径后没有调用 `fill` 或者 `stroke` 并开启了新的路径，那之前的路径将不会被渲染。
@@ -377,6 +321,7 @@ trait CanvasContext extends js.Object {
   *
   * ![](@program/dev/image/canvas/close-path.png) */
   def closePath(): Unit = js.native
+  
   /** [[CanvasGradient](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.html) CanvasContext.createCircularGradient(number x, number y, number r)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.createCircularGradient.html)
   *
   * 创建一个圆形的渐变颜色。起点在圆心，终点在圆环。返回的`CanvasGradient`对象需要使用 [CanvasGradient.addColorStop()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.addColorStop.html) 来指定渐变点，至少要两个。
@@ -400,6 +345,7 @@ trait CanvasContext extends js.Object {
   x: Double, /** 圆心的 y 坐标 */
   y: Double, /** 圆的半径 */
   r: Double): CanvasGradient = js.native
+  
   /** [[CanvasGradient](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.html) CanvasContext.createLinearGradient(number x0, number y0, number x1, number y1)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.createLinearGradient.html)
   *
   * 创建一个线性的渐变颜色。返回的`CanvasGradient`对象需要使用 [CanvasGradient.addColorStop()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.addColorStop.html) 来指定渐变点，至少要两个。
@@ -429,6 +375,7 @@ trait CanvasContext extends js.Object {
     /** 终点的 y 坐标 */
   y1: Double
   ): CanvasGradient = js.native
+  
   @JSName("createPattern")
   def createPattern_norepeat(
     /** 重复的图像源，支持代码包路径和本地临时路径 (本地路径) */
@@ -486,6 +433,7 @@ trait CanvasContext extends js.Object {
     * - 'no-repeat': 不重复; */
   repetition: `repeat-y`
   ): Unit = js.native
+  
   /** [CanvasContext.draw(boolean reserve, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.draw.html)
   *
   * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中。
@@ -536,6 +484,7 @@ trait CanvasContext extends js.Object {
     /** 绘制完成后执行的回调函数 */
   callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   /** [CanvasContext.drawImage(string imageResource, number sx, number sy, number sWidth, number sHeight, number dx, number dy, number dWidth, number dHeight)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.drawImage.html)
   *
   * 绘制图像到画布
@@ -648,6 +597,7 @@ trait CanvasContext extends js.Object {
     /** 在目标画布上绘制imageResource的高度，允许对绘制的imageResource进行缩放 */
   dHeight: Double
   ): Unit = js.native
+  
   /** [CanvasContext.fill()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.fill.html)
   *
   * 对当前路径中的内容进行填充。默认的填充色为黑色。
@@ -692,6 +642,7 @@ trait CanvasContext extends js.Object {
   *
   * ![](@program/dev/image/canvas/fill-path.png) */
   def fill(): Unit = js.native
+  
   /** [CanvasContext.fillRect(number x, number y, number width, number height)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.fillRect.html)
   *
   * 填充一个矩形。用 [`setFillStyle`](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setFillStyle.html) 设置矩形的填充色，如果没设置默认是黑色。
@@ -716,6 +667,12 @@ trait CanvasContext extends js.Object {
     /** 矩形路径的高度 */
   height: Double
   ): Unit = js.native
+  
+  /** 填充颜色。用法同 [CanvasContext.setFillStyle()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setFillStyle.html)。
+    *
+    * 最低基础库： `1.9.90` */
+  var fillStyle: String | CanvasGradient = js.native
+  
   /** [CanvasContext.fillText(string text, number x, number y, number maxWidth)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.fillText.html)
   *
   * 在画布上绘制被填充的文本
@@ -745,6 +702,44 @@ trait CanvasContext extends js.Object {
     /** 需要绘制的最大宽度，可选 */
   maxWidth: Double
   ): Unit = js.native
+  
+  /** 当前字体样式的属性。符合 [CSS font 语法](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font) 的 DOMString 字符串，至少需要提供字体大小和字体族名。默认值为 10px sans-serif。
+    *
+    * 最低基础库： `1.9.90` */
+  var font: String = js.native
+  
+  /** 全局画笔透明度。范围 0-1，0 表示完全透明，1 表示完全不透明。 */
+  var globalAlpha: Double = js.native
+  
+  /** 在绘制新形状时应用的合成操作的类型。目前安卓版本只适用于 `fill` 填充块的合成，用于 `stroke` 线段的合成效果都是 `source-over`。
+    *
+    * 目前支持的操作有
+    * - 安卓：xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light
+    * - iOS：xor, source-over, source-atop, destination-over, destination-out, lighter, multiply, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, saturation, luminosity
+    *
+    * 最低基础库： `1.9.90` */
+  var globalCompositeOperation: String = js.native
+  
+  /** 线条的端点样式。用法同 [CanvasContext.setLineCap()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineCap.html)。
+    *
+    * 最低基础库： `1.9.90` */
+  var lineCap: String = js.native
+  
+  /** 虚线偏移量，初始值为0
+    *
+    * 最低基础库： `1.9.90` */
+  var lineDashOffset: Double = js.native
+  
+  /** 线条的交点样式。用法同 [CanvasContext.setLineJoin()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineJoin.html)。
+    *
+    * 可选值：
+    * - 'bevel': 斜角;
+    * - 'round': 圆角;
+    * - 'miter': 尖角;
+    *
+    * 最低基础库： `1.9.90` */
+  var lineJoin: bevel | round | miter = js.native
+  
   /** [CanvasContext.lineTo(number x, number y)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.lineTo.html)
   *
   * 增加一个新点，然后创建一条从上次指定点到目标点的线。用 `stroke` 方法来画线条
@@ -764,6 +759,12 @@ trait CanvasContext extends js.Object {
   def lineTo(/** 目标位置的 x 坐标 */
   x: Double, /** 目标位置的 y 坐标 */
   y: Double): Unit = js.native
+  
+  /** 线条的宽度。用法同 [CanvasContext.setLineWidth()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineWidth.html)。
+    *
+    * 最低基础库： `1.9.90` */
+  var lineWidth: Double = js.native
+  
   /** [Object CanvasContext.measureText(string text)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.measureText.html)
     *
     * 测量文本尺寸信息。目前仅返回文本宽度。同步接口。
@@ -771,6 +772,12 @@ trait CanvasContext extends js.Object {
     * 最低基础库： `1.9.90` */
   def measureText(/** 要测量的文本 */
   text: String): TextMetrics = js.native
+  
+  /** 最大斜接长度。用法同 [CanvasContext.setMiterLimit()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setMiterLimit.html)。
+    *
+    * 最低基础库： `1.9.90` */
+  var miterLimit: Double = js.native
+  
   /** [CanvasContext.moveTo(number x, number y)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.moveTo.html)
   *
   * 把路径移动到画布中的指定点，不创建线条。用 `stroke` 方法来画线条
@@ -791,6 +798,7 @@ trait CanvasContext extends js.Object {
   def moveTo(/** 目标位置的 x 坐标 */
   x: Double, /** 目标位置的 y 坐标 */
   y: Double): Unit = js.native
+  
   /** [CanvasContext.quadraticCurveTo(number cpx, number cpy, number x, number y)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.quadraticCurveTo.html)
   *
   * 创建二次贝塞尔曲线路径。曲线的起始点为路径中前一个点。
@@ -848,6 +856,7 @@ trait CanvasContext extends js.Object {
     /** 结束点的 y 坐标 */
   y: Double
   ): Unit = js.native
+  
   /** [CanvasContext.rect(number x, number y, number width, number height)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.rect.html)
   *
   * 创建一个矩形路径。需要用 [`fill`](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.fill.html) 或者 [`stroke`](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.stroke.html) 方法将矩形真正的画到 `canvas` 中
@@ -873,6 +882,7 @@ trait CanvasContext extends js.Object {
     /** 矩形路径的高度 */
   height: Double
   ): Unit = js.native
+  
   /** [CanvasContext.restore()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.restore.html)
   *
   * 恢复之前保存的绘图上下文。
@@ -893,6 +903,7 @@ trait CanvasContext extends js.Object {
   ```
   * ![](@program/dev/image/canvas/save-restore.png) */
   def restore(): Unit = js.native
+  
   /** [CanvasContext.rotate(number rotate)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.rotate.html)
   *
   * 以原点为中心顺时针旋转当前坐标轴。多次调用旋转的角度会叠加。原点可以用 `translate` 方法修改。
@@ -912,6 +923,7 @@ trait CanvasContext extends js.Object {
   * ![](@program/dev/image/canvas/rotate.png) */
   def rotate(/** 旋转角度，以弧度计 degrees * Math.PI/180；degrees 范围为 0-360 */
   rotate: Double): Unit = js.native
+  
   /** [CanvasContext.save()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.save.html)
   *
   * 保存绘图上下文。
@@ -932,6 +944,7 @@ trait CanvasContext extends js.Object {
   ```
   * ![](@program/dev/image/canvas/save-restore.png) */
   def save(): Unit = js.native
+  
   /** [CanvasContext.scale(number scaleWidth, number scaleHeight)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.scale.html)
   *
   * 在调用后，之后创建的路径其横纵坐标会被缩放。多次调用倍数会相乘。
@@ -955,6 +968,7 @@ trait CanvasContext extends js.Object {
     /** 纵坐标轴缩放的倍数 (1 = 100%，0.5 = 50%，2 = 200%) */
   scaleHeight: Double
   ): Unit = js.native
+  
   /** [CanvasContext.setFillStyle(string|[CanvasGradient](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.html) color)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setFillStyle.html)
   *
   * 设置填充色。
@@ -968,11 +982,14 @@ trait CanvasContext extends js.Object {
   ctx.fillRect(10, 10, 150, 75)
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/fill-rect.png) */
+  * ![](@program/dev/image/canvas/fill-rect.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.fillStyle](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setFillStyle(/** 填充的颜色，默认颜色为 black。 */
   color: String): Unit = js.native
   def setFillStyle(/** 填充的颜色，默认颜色为 black。 */
   color: CanvasGradient): Unit = js.native
+  
   /** [CanvasContext.setFontSize(number fontSize)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setFontSize.html)
   *
   * 设置字体的字号
@@ -992,9 +1009,12 @@ trait CanvasContext extends js.Object {
   ctx.fillText('50', 90, 90)
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/font-size.png) */
+  * ![](@program/dev/image/canvas/font-size.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.font](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setFontSize(/** 字体的字号 */
   fontSize: Double): Unit = js.native
+  
   /** [CanvasContext.setGlobalAlpha(number alpha)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setGlobalAlpha.html)
   *
   * 设置全局画笔透明度。
@@ -1013,9 +1033,12 @@ trait CanvasContext extends js.Object {
   ctx.fillRect(100, 100, 150, 100)
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/global-alpha.png) */
+  * ![](@program/dev/image/canvas/global-alpha.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.globalAlpha](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setGlobalAlpha(/** 透明度。范围 0-1，0 表示完全透明，1 表示完全不透明。 */
   alpha: Double): Unit = js.native
+  
   /** [CanvasContext.setLineCap(string lineCap)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineCap.html)
   *
   * 设置线条的端点样式
@@ -1049,7 +1072,9 @@ trait CanvasContext extends js.Object {
   ctx.stroke()
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/line-cap.png) */
+  * ![](@program/dev/image/canvas/line-cap.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.lineCap](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   @JSName("setLineCap")
   def setLineCap_butt(
     /** 线条的结束端点样式
@@ -1080,6 +1105,7 @@ trait CanvasContext extends js.Object {
     * - 'square': 向线条的每个末端添加正方形线帽。; */
   lineCap: square
   ): Unit = js.native
+  
   /** [CanvasContext.setLineDash(Array.&lt;number&gt; pattern, number offset)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineDash.html)
   *
   * 设置虚线样式。
@@ -1098,10 +1124,13 @@ trait CanvasContext extends js.Object {
   ```
   * ![](@program/dev/image/canvas/set-line-dash.png)
   *
-  * 最低基础库： `1.6.0` */
+  * 最低基础库： `1.6.0`
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.lineDashOffset](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setLineDash(/** 一组描述交替绘制线段和间距（坐标空间单位）长度的数字 */
   pattern: js.Array[Double], /** 虚线偏移量 */
   offset: Double): Unit = js.native
+  
   /** [CanvasContext.setLineJoin(string lineJoin)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineJoin.html)
   *
   * 设置线条的交点样式
@@ -1139,7 +1168,9 @@ trait CanvasContext extends js.Object {
   ctx.stroke()
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/line-join.png) */
+  * ![](@program/dev/image/canvas/line-join.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.lineJoin](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   @JSName("setLineJoin")
   def setLineJoin_bevel(
     /** 线条的结束交点样式
@@ -1170,6 +1201,7 @@ trait CanvasContext extends js.Object {
     * - 'miter': 尖角; */
   lineJoin: round
   ): Unit = js.native
+  
   /** [CanvasContext.setLineWidth(number lineWidth)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineWidth.html)
   *
   * 设置线条的宽度
@@ -1201,9 +1233,12 @@ trait CanvasContext extends js.Object {
   ctx.draw()
   ```
   *
-  * ![](@program/dev/image/canvas/line-width.png) */
+  * ![](@program/dev/image/canvas/line-width.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.lineWidth](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setLineWidth(/** 线条的宽度，单位px */
   lineWidth: Double): Unit = js.native
+  
   /** [CanvasContext.setMiterLimit(number miterLimit)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setMiterLimit.html)
   *
   * 设置最大斜接长度。斜接长度指的是在两条线交汇处内角和外角之间的距离。当 [CanvasContext.setLineJoin()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineJoin.html) 为 miter 时才有效。超过最大倾斜长度的，连接处将以 lineJoin 为 bevel 来显示。
@@ -1247,9 +1282,12 @@ trait CanvasContext extends js.Object {
   ctx.stroke()
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/miter-limit.png) */
+  * ![](@program/dev/image/canvas/miter-limit.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.miterLimit](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setMiterLimit(/** 最大斜接长度 */
   miterLimit: Double): Unit = js.native
+  
   /** [CanvasContext.setShadow(number offsetX, number offsetY, number blur, string color)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setShadow.html)
   *
   * 设定阴影样式。
@@ -1264,7 +1302,9 @@ trait CanvasContext extends js.Object {
   ctx.fillRect(10, 10, 150, 75)
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/shadow.png) */
+  * ![](@program/dev/image/canvas/shadow.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.shadowOffsetX|CanvasContext.shadowOffsetY|CanvasContext.shadowColor|CanvasContext.shadowBlur](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setShadow(
     /** 阴影相对于形状在水平方向的偏移，默认值为 0。 */
   offsetX: Double,
@@ -1275,6 +1315,7 @@ trait CanvasContext extends js.Object {
     /** 阴影的颜色。默认值为 black。 */
   color: String
   ): Unit = js.native
+  
   /** [CanvasContext.setStrokeStyle(string|[CanvasGradient](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasGradient.html) color)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setStrokeStyle.html)
   *
   * 设置描边颜色。
@@ -1288,11 +1329,14 @@ trait CanvasContext extends js.Object {
   ctx.strokeRect(10, 10, 150, 75)
   ctx.draw()
   ```
-  * ![](@program/dev/image/canvas/stroke-rect.png) */
+  * ![](@program/dev/image/canvas/stroke-rect.png)
+  * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.strokeStyle](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
+  *  */
   def setStrokeStyle(/** 描边的颜色，默认颜色为 black。 */
   color: String): Unit = js.native
   def setStrokeStyle(/** 描边的颜色，默认颜色为 black。 */
   color: CanvasGradient): Unit = js.native
+  
   @JSName("setTextAlign")
   def setTextAlign_center(
     /** 文字的对齐方式
@@ -1350,6 +1394,7 @@ trait CanvasContext extends js.Object {
     * - 'right': 右对齐; */
   align: right
   ): Unit = js.native
+  
   @JSName("setTextBaseline")
   def setTextBaseline_bottom(
     /** 文字的竖直对齐方式
@@ -1421,6 +1466,7 @@ trait CanvasContext extends js.Object {
     * - 'normal': ; */
   textBaseline: top
   ): Unit = js.native
+  
   /** [CanvasContext.setTransform(number scaleX, number skewX, number skewY, number scaleY, number translateX, number translateY)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setTransform.html)
     *
     * 使用矩阵重新设置（覆盖）当前变换的方法
@@ -1440,6 +1486,27 @@ trait CanvasContext extends js.Object {
     /** 垂直移动 */
   translateY: Double
   ): Unit = js.native
+  
+  /** 阴影的模糊级别
+    *
+    * 最低基础库： `1.9.90` */
+  var shadowBlur: Double = js.native
+  
+  /** 阴影的颜色
+    *
+    * 最低基础库： `1.9.90` */
+  var shadowColor: Double = js.native
+  
+  /** 阴影相对于形状在水平方向的偏移
+    *
+    * 最低基础库： `1.9.90` */
+  var shadowOffsetX: Double = js.native
+  
+  /** 阴影相对于形状在竖直方向的偏移
+    *
+    * 最低基础库： `1.9.90` */
+  var shadowOffsetY: Double = js.native
+  
   /** [CanvasContext.stroke()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.stroke.html)
   *
   * 画出当前路径的边框。默认颜色色为黑色。
@@ -1480,6 +1547,7 @@ trait CanvasContext extends js.Object {
   *
   * ![](@program/dev/image/canvas/stroke-path.png) */
   def stroke(): Unit = js.native
+  
   /** [CanvasContext.strokeRect(number x, number y, number width, number height)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.strokeRect.html)
   *
   * 画一个矩形(非填充)。 用 [`setStrokeStyle`](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setStrokeStyle.html) 设置矩形线条的颜色，如果没设置默认是黑色。
@@ -1504,6 +1572,12 @@ trait CanvasContext extends js.Object {
     /** 矩形路径的高度 */
   height: Double
   ): Unit = js.native
+  
+  /** 边框颜色。用法同 [CanvasContext.setStrokeStyle()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setStrokeStyle.html)。
+    *
+    * 最低基础库： `1.9.90` */
+  var strokeStyle: String | CanvasGradient = js.native
+  
   /** [CanvasContext.strokeText(string text, number x, number y, number maxWidth)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.strokeText.html)
     *
     * 给定的 (x, y) 位置绘制文本描边的方法
@@ -1523,6 +1597,7 @@ trait CanvasContext extends js.Object {
     /** 需要绘制的最大宽度，可选 */
   maxWidth: Double
   ): Unit = js.native
+  
   /** [CanvasContext.transform(number scaleX, number skewX, number skewY, number scaleY, number translateX, number translateY)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.transform.html)
     *
     * 使用矩阵多次叠加当前变换的方法
@@ -1542,6 +1617,7 @@ trait CanvasContext extends js.Object {
     /** 垂直移动 */
   translateY: Double
   ): Unit = js.native
+  
   /** [CanvasContext.translate(number x, number y)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.translate.html)
   *
   * 对当前坐标系的原点 (0, 0) 进行变换。默认的坐标系原点为页面左上角。
@@ -1565,4 +1641,3 @@ trait CanvasContext extends js.Object {
   x: Double, /** 竖直坐标平移量 */
   y: Double): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ Packer, 3D-Bin-Packing with multiple Boxes.
 | Keywords           | packer, 3d bin packing, 3d bin packing with multiple boxes, boxing optimization |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4741 |
+| # downloads        | 3446 |
 | # stars            | 2 |
 
 ## Links

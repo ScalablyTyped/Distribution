@@ -2,9 +2,37 @@ package typings.cssom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssomNumbers {
+  
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @scala.inline
+  def `1001`: `1001` = 1001.asInstanceOf[`1001`]
+  
+  @scala.inline
+  def `12`: `12` = 12.asInstanceOf[`12`]
+  
+  @scala.inline
+  def `13`: `13` = 13.asInstanceOf[`13`]
+  
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @scala.inline
+  def `7`: `7` = 7.asInstanceOf[`7`]
+  
+  @scala.inline
+  def `8`: `8` = 8.asInstanceOf[`8`]
+  
   @js.native
   sealed trait `1` extends js.Object
   
@@ -31,24 +59,4 @@ object cssomNumbers {
   
   @js.native
   sealed trait `8` extends js.Object
-  
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
-  def `1001`: `1001` = 1001.asInstanceOf[`1001`]
-  @scala.inline
-  def `12`: `12` = 12.asInstanceOf[`12`]
-  @scala.inline
-  def `13`: `13` = 13.asInstanceOf[`13`]
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
 }
-

@@ -2,7 +2,7 @@ package typings.materialTextfield.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @license
@@ -29,14 +29,24 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/textfield", "strings")
 @js.native
 object strings extends js.Object {
+  
   var ARIA_CONTROLS: String = js.native
+  
+  var ARIA_DESCRIBEDBY: String = js.native
+  
   var INPUT_SELECTOR: String = js.native
+  
   var LABEL_SELECTOR: String = js.native
+  
   var LEADING_ICON_SELECTOR: String = js.native
+  
   var LINE_RIPPLE_SELECTOR: String = js.native
+  
   var OUTLINE_SELECTOR: String = js.native
+  
   var PREFIX_SELECTOR: String = js.native
+  
   var SUFFIX_SELECTOR: String = js.native
+  
   var TRAILING_ICON_SELECTOR: String = js.native
 }
-

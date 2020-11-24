@@ -25,7 +25,7 @@ import typings.stripe.stripeStrings.verification_failed
 import typings.stripe.stripeStrings.verified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Helper
 /* Rewritten from type alias, can be one of: 
@@ -33,8 +33,8 @@ import scala.scalajs.js.annotation._
   - typings.stripe.mod.cards.ICard
 */
 trait IExternalAccount extends js.Object
-
 object IExternalAccount {
+  
   @scala.inline
   def IBankAccount(
     bank_name: String,
@@ -52,6 +52,7 @@ object IExternalAccount {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExternalAccount]
   }
+  
   @scala.inline
   def ICard(
     brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
@@ -70,4 +71,3 @@ object IExternalAccount {
     __obj.asInstanceOf[IExternalAccount]
   }
 }
-

@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PlacementType extends js.Object
-
 /**
   * Types for the placement of popover control.
   */
 @JSGlobal("sap.m.PlacementType")
 @js.native
 object PlacementType extends js.Object {
+  
   @js.native
   sealed trait Auto extends PlacementType
   
@@ -69,6 +69,4 @@ object PlacementType extends js.Object {
   
   @js.native
   sealed trait VerticalPreferredTop extends PlacementType
-  
 }
-

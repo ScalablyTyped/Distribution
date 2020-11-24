@@ -3,22 +3,25 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IconTabBar extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): IconTabBar = js.native
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: IconTab): IconTabBar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>expand</code> event of this
     * <code>sap.m.IconTabBar</code>.When called, the context of the event handler (its <code>this</code>)
@@ -34,6 +37,7 @@ trait IconTabBar extends Control {
     */
   def attachExpand(oData: js.Any, fnFunction: js.Any): IconTabBar = js.native
   def attachExpand(oData: js.Any, fnFunction: js.Any, oListener: js.Any): IconTabBar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.m.IconTabBar</code>.When called, the context of the event handler (its <code>this</code>)
@@ -48,16 +52,19 @@ trait IconTabBar extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): IconTabBar = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): IconTabBar = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): IconTabBar = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): IconTabBar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>expand</code> event of this
     * <code>sap.m.IconTabBar</code>.The passed function and listener object must match the ones used for
@@ -68,6 +75,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachExpand(fnFunction: js.Any, oListener: js.Any): IconTabBar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.m.IconTabBar</code>.The passed function and listener object must match the ones used for
@@ -77,6 +85,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): IconTabBar = js.native
+  
   /**
     * Fires event <code>expand</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>expand</code> of type <code>boolean</code>If the tab will expand, this is
@@ -87,6 +96,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireExpand(mArguments: js.Any): IconTabBar = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>item</code> of type <code>sap.m.IconTabFilter</code>The selected
@@ -98,6 +108,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): IconTabBar = js.native
+  
   /**
     * Gets current value of property <code>applyContentPadding</code>.Determines whether the IconTabBar
     * content fits to the full area.The paddings are removed if it's set to false.Default value is
@@ -106,6 +117,7 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>applyContentPadding</code>
     */
   def getApplyContentPadding(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>backgroundDesign</code>.Specifies the background color of the
     * IconTabBar.Depending on the theme, you can change the state ofthe background color to "Solid",
@@ -114,6 +126,7 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>backgroundDesign</code>
     */
   def getBackgroundDesign(): BackgroundDesign = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.Represents the contents displayed below the
     * IconTabBar.If there are multiple contents, they are rendered after each other.The developer has to
@@ -121,6 +134,7 @@ trait IconTabBar extends Control {
     * be displayed instead if it is set).
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>expandable</code>.Defines if the tabs are collapsible and
     * expandable.Default value is <code>true</code>.
@@ -128,6 +142,7 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>expandable</code>
     */
   def getExpandable(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>expanded</code>.Indicates if the actual tab content is expanded
     * or not.Default value is <code>true</code>.
@@ -135,6 +150,7 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>expanded</code>
     */
   def getExpanded(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>headerMode</code>.Specifies the header mode.<b>Note:</b> The
     * Inline mode works only if no icons are set.Default value is <code>Standard</code>.
@@ -142,21 +158,25 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>headerMode</code>
     */
   def getHeaderMode(): IconTabHeaderMode = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.The items displayed in the IconTabBar.
     */
   def getItems(): js.Array[IconTab] = js.native
+  
   /**
     * Reflector for the internal header's selectedKey property.
     * @returns The current property value
     */
   def getSelectedKey(): String = js.native
+  
   /**
     * Gets current value of property <code>showSelection</code>.Defines whether the current selection
     * should be visualized.Default value is <code>true</code>.
     * @returns Value of property <code>showSelection</code>
     */
   def getShowSelection(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>stretchContentHeight</code>.Determines whether the IconTabBar
     * height is stretched to the maximum possible heightof its parent container. As a prerequisite, the
@@ -165,6 +185,7 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>stretchContentHeight</code>
     */
   def getStretchContentHeight(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>upperCase</code>.Determines whether the text of the icon tab
     * filter (not the count) is displayed in uppercase.Default value is <code>false</code>.
@@ -172,6 +193,7 @@ trait IconTabBar extends Control {
     * @returns Value of property <code>upperCase</code>
     */
   def getUpperCase(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -179,6 +201,7 @@ trait IconTabBar extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.IconTab</code> in the aggregation <code>items</code>.and returns
     * its index if found or -1 otherwise.
@@ -186,6 +209,7 @@ trait IconTabBar extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: IconTab): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -196,6 +220,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): IconTabBar = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -206,18 +231,21 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: IconTab, iIndex: Double): IconTabBar = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[IconTab] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -226,6 +254,7 @@ trait IconTabBar extends Control {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   def removeItem(vItem: String): IconTab = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -234,6 +263,7 @@ trait IconTabBar extends Control {
     */
   def removeItem(vItem: Double): IconTab = js.native
   def removeItem(vItem: IconTab): IconTab = js.native
+  
   /**
     * Sets a new value for property <code>applyContentPadding</code>.Determines whether the IconTabBar
     * content fits to the full area.The paddings are removed if it's set to false.When called with a value
@@ -244,6 +274,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setApplyContentPadding(bApplyContentPadding: Boolean): IconTabBar = js.native
+  
   /**
     * Sets a new value for property <code>backgroundDesign</code>.Specifies the background color of the
     * IconTabBar.Depending on the theme, you can change the state ofthe background color to "Solid",
@@ -255,30 +286,35 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundDesign(sBackgroundDesign: BackgroundDesign): IconTabBar = js.native
+  
   /**
     * Sets the tabs as collapsible and expandable without re-rendering the control.
     * @param bExpandable new parameter value
     * @returns this pointer for chaining
     */
   def setExpandable(bExpandable: Boolean): IconTabBar = js.native
+  
   /**
     * Sets the tab content as expanded.
     * @param bExpanded new parameter value
     * @returns this pointer for chaining
     */
   def setExpanded(bExpanded: Boolean): IconTabBar = js.native
+  
   /**
     * Sets the header mode.
     * @param mode new parameter value
     * @returns this pointer for chaining
     */
   def setHeaderMode(mode: IconTabHeaderMode): IconTabBar = js.native
+  
   /**
     * Reflector for the internal header's selectedKey property.
     * @param sValue the new value
     * @returns this pointer for chaining
     */
   def setSelectedKey(sValue: String): IconTabBar = js.native
+  
   /**
     * Sets a new value for property <code>showSelection</code>.Defines whether the current selection
     * should be visualized.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -287,6 +323,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSelection(bShowSelection: Boolean): IconTabBar = js.native
+  
   /**
     * Sets a new value for property <code>stretchContentHeight</code>.Determines whether the IconTabBar
     * height is stretched to the maximum possible heightof its parent container. As a prerequisite, the
@@ -298,6 +335,7 @@ trait IconTabBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setStretchContentHeight(bStretchContentHeight: Boolean): IconTabBar = js.native
+  
   /**
     * Sets a new value for property <code>upperCase</code>.Determines whether the text of the icon tab
     * filter (not the count) is displayed in uppercase.When called with a value of <code>null</code> or
@@ -309,4 +347,3 @@ trait IconTabBar extends Control {
     */
   def setUpperCase(bUpperCase: Boolean): IconTabBar = js.native
 }
-

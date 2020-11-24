@@ -3,16 +3,20 @@ package typings.hashIt
 import typings.hashIt.mod.hash.is.Comparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hash-it", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     def apply(`object`: js.Any): Double = js.native
+    
     @js.native
     object is extends js.Object {
+      
       /**
         * create a comparator for the object passed to determine if a second is equal
         *
@@ -28,6 +32,7 @@ object mod extends js.Object {
         * @returns are the objects equal
         */
       def apply(`object`: js.Any, anotherObject: js.Any): Boolean = js.native
+      
       /**
         * create a comparator to determine if all of the objects passed are equal in value to the initial
         *
@@ -43,6 +48,7 @@ object mod extends js.Object {
         * @returns are the objects equal
         */
       def all(`object`: js.Any, objects: js.Any*): Boolean = js.native
+      
       /**
         * create a comparator to determine if any objects are equal in value to the initial
         *
@@ -58,6 +64,7 @@ object mod extends js.Object {
         * @returns are the objects equal
         */
       def any(`object`: js.Any, args: js.Any*): Boolean = js.native
+      
       /**
         * create a comparator for the first object passed to determine if a second is not equal
         *
@@ -74,12 +81,13 @@ object mod extends js.Object {
         */
       def not(`object`: js.Any, objects: js.Any*): Boolean = js.native
     }
-    
   }
   
   @js.native
   object hash extends js.Object {
+    
     def apply(`object`: js.Any): Double = js.native
+    
     /**
       * create a comparator for the first object passed to determine if the second is equal
       *
@@ -90,6 +98,7 @@ object mod extends js.Object {
     def is(`object`: js.Any, anotherObject: js.Any): Boolean = js.native
     @js.native
     object is extends js.Object {
+      
       /**
         * create a comparator for the object passed to determine if a second is equal
         *
@@ -97,6 +106,7 @@ object mod extends js.Object {
         * @returns the method to test against the object
         */
       def apply(`object`: js.Any): js.Function1[/* anotherObject */ js.Any, Boolean] = js.native
+      
       /**
         * create a comparator to determine if all of the objects passed are equal in value to the initial
         *
@@ -112,6 +122,7 @@ object mod extends js.Object {
         * @returns are the objects equal
         */
       def all(`object`: js.Any, objects: js.Any*): Boolean = js.native
+      
       /**
         * create a comparator to determine if any objects are equal in value to the initial
         *
@@ -127,6 +138,7 @@ object mod extends js.Object {
         * @returns are the objects equal
         */
       def any(`object`: js.Any, args: js.Any*): Boolean = js.native
+      
       /**
         * create a comparator for the first object passed to determine if a second is not equal
         *
@@ -142,10 +154,8 @@ object mod extends js.Object {
         * @returns are all the objects different from the first
         */
       def not(`object`: js.Any, objects: js.Any*): Boolean = js.native
+      
       type Comparator = js.Function1[/* repeated */ js.Any, Boolean]
     }
-    
   }
-  
 }
-

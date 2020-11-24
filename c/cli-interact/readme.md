@@ -11,8 +11,8 @@ Simple helper tools for interacting synchronously with user at command line
 | Full name          | cli-interact |
 | Keywords           | readline, synchronous, prompt, question, wait, block |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 30593 |
+| # dependents       | 14 |
+| # downloads        | 53924 |
 | # stars            | 1 |
 
 ## Links

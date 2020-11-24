@@ -1,13 +1,12 @@
 package typings.awsSdkClientCodecommitNode
 
-import typings.awsSdkTypes.protocolMod.OperationModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/model/PostCommentForPullRequest", JSImport.Namespace)
 @js.native
 object postCommentForPullRequestMod extends js.Object {
-  val PostCommentForPullRequest: OperationModel = js.native
+  
+  val PostCommentForPullRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }
-

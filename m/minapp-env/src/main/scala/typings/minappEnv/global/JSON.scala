@@ -3,7 +3,7 @@ package typings.minappEnv.global
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object JSON
   extends TopLevel[typings.minappEnv.JSON]
-

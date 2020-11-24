@@ -2,11 +2,12 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lunr", "generateStopWordFilter")
 @js.native
 object generateStopWordFilter extends js.Object {
+  
   /**
     * lunr.generateStopWordFilter builds a stopWordFilter function from the provided
     * list of stop words.
@@ -20,4 +21,3 @@ object generateStopWordFilter extends js.Object {
     */
   def apply(stopWords: js.Array[String]): PipelineFunction = js.native
 }
-

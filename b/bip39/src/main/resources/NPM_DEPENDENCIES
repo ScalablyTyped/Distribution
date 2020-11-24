@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bip39" : "3.0.2"
+      "bip39" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "bip39" : "3.0.2"
+      "bip39" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

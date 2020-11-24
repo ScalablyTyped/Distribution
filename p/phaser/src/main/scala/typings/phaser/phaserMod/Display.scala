@@ -12,11 +12,381 @@ import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Display")
 @js.native
 object Display extends js.Object {
+  
+  @js.native
+  object Align extends js.Object {
+    
+    /**
+      * A constant representing a bottom-center alignment or position.
+      */
+    val BOTTOM_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a bottom-left alignment or position.
+      */
+    val BOTTOM_LEFT: integer = js.native
+    
+    /**
+      * A constant representing a bottom-right alignment or position.
+      */
+    val BOTTOM_RIGHT: integer = js.native
+    
+    /**
+      * A constant representing a center alignment or position.
+      */
+    val CENTER: integer = js.native
+    
+    /**
+      * A constant representing a left-bottom alignment or position.
+      */
+    val LEFT_BOTTOM: integer = js.native
+    
+    /**
+      * A constant representing a left-center alignment or position.
+      */
+    val LEFT_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a left-top alignment or position.
+      */
+    val LEFT_TOP: integer = js.native
+    
+    /**
+      * A constant representing a right-bottom alignment or position.
+      */
+    val RIGHT_BOTTOM: integer = js.native
+    
+    /**
+      * A constant representing a right-center alignment or position.
+      */
+    val RIGHT_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a right-top alignment or position.
+      */
+    val RIGHT_TOP: integer = js.native
+    
+    /**
+      * A constant representing a top-center alignment or position.
+      */
+    val TOP_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a top-left alignment or position.
+      */
+    val TOP_LEFT: integer = js.native
+    
+    /**
+      * A constant representing a top-right alignment or position.
+      */
+    val TOP_RIGHT: integer = js.native
+    
+    @js.native
+    object In extends js.Object {
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the bottom center of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the bottom left of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the bottom right of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the center of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the left center of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned relative to the other.
+        * The alignment used is based on the `position` argument, which is an `ALIGN_CONST` value, such as `LEFT_CENTER` or `TOP_RIGHT`.
+        * @param child The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param position The position to align the Game Object with. This is an align constant, such as `ALIGN_CONST.LEFT_CENTER`.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = js.native
+      def QuickSet[G /* <: GameObject */](
+        child: G,
+        alignIn: GameObject,
+        position: integer,
+        offsetX: js.UndefOr[scala.Nothing],
+        offsetY: Double
+      ): G = js.native
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = js.native
+      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the right center of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the top center of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the top left of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned in the top right of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignIn The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
+    }
+    
+    @js.native
+    object To extends js.Object {
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the bottom center position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the bottom left position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the bottom right position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the left bottom position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the left center position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the left top position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes a Game Object and aligns it next to another, at the given position.
+        * The alignment used is based on the `position` argument, which is a `Phaser.Display.Align` property such as `LEFT_CENTER` or `TOP_RIGHT`.
+        * @param child The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param position The position to align the Game Object with. This is an align constant, such as `Phaser.Display.Align.LEFT_CENTER`.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = js.native
+      def QuickSet[G /* <: GameObject */](
+        child: G,
+        alignTo: GameObject,
+        position: integer,
+        offsetX: js.UndefOr[scala.Nothing],
+        offsetY: Double
+      ): G = js.native
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = js.native
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the right bottom position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the right center position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the right top position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the top center position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the top left position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+      
+      /**
+        * Takes given Game Object and aligns it so that it is positioned next to the top right position of the other.
+        * @param gameObject The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
+    }
+  }
+  
   /**
     * A BaseShader is a small resource class that contains the data required for a WebGL Shader to be created.
     * 
@@ -57,376 +427,9 @@ object Display extends js.Object {
     def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: js.Any) = this()
   }
   
-  /**
-    * The Color class holds a single color value and allows for easy modification and reading of it.
-    */
-  @js.native
-  /**
-    * 
-    * @param red The red color value. A number between 0 and 255. Default 0.
-    * @param green The green color value. A number between 0 and 255. Default 0.
-    * @param blue The blue color value. A number between 0 and 255. Default 0.
-    * @param alpha The alpha value. A number between 0 and 255. Default 255.
-    */
-  class Color ()
-    extends typings.phaser.Phaser.Display.Color {
-    def this(red: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer) = this()
-    def this(red: integer, green: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer) = this()
-    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer) = this()
-    def this(red: integer, green: integer, blue: integer) = this()
-    def this(
-      red: js.UndefOr[scala.Nothing],
-      green: js.UndefOr[scala.Nothing],
-      blue: js.UndefOr[scala.Nothing],
-      alpha: integer
-    ) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
-    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer, alpha: integer) = this()
-    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
-    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
-    def this(red: integer, green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
-    def this(red: integer, green: integer, blue: integer, alpha: integer) = this()
-  }
-  
-  @js.native
-  object Align extends js.Object {
-    /**
-      * A constant representing a bottom-center alignment or position.
-      */
-    val BOTTOM_CENTER: integer = js.native
-    /**
-      * A constant representing a bottom-left alignment or position.
-      */
-    val BOTTOM_LEFT: integer = js.native
-    /**
-      * A constant representing a bottom-right alignment or position.
-      */
-    val BOTTOM_RIGHT: integer = js.native
-    /**
-      * A constant representing a center alignment or position.
-      */
-    val CENTER: integer = js.native
-    /**
-      * A constant representing a left-bottom alignment or position.
-      */
-    val LEFT_BOTTOM: integer = js.native
-    /**
-      * A constant representing a left-center alignment or position.
-      */
-    val LEFT_CENTER: integer = js.native
-    /**
-      * A constant representing a left-top alignment or position.
-      */
-    val LEFT_TOP: integer = js.native
-    /**
-      * A constant representing a right-bottom alignment or position.
-      */
-    val RIGHT_BOTTOM: integer = js.native
-    /**
-      * A constant representing a right-center alignment or position.
-      */
-    val RIGHT_CENTER: integer = js.native
-    /**
-      * A constant representing a right-top alignment or position.
-      */
-    val RIGHT_TOP: integer = js.native
-    /**
-      * A constant representing a top-center alignment or position.
-      */
-    val TOP_CENTER: integer = js.native
-    /**
-      * A constant representing a top-left alignment or position.
-      */
-    val TOP_LEFT: integer = js.native
-    /**
-      * A constant representing a top-right alignment or position.
-      */
-    val TOP_RIGHT: integer = js.native
-    @js.native
-    object In extends js.Object {
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the bottom center of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the bottom left of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the bottom right of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the center of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the left center of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned relative to the other.
-        * The alignment used is based on the `position` argument, which is an `ALIGN_CONST` value, such as `LEFT_CENTER` or `TOP_RIGHT`.
-        * @param child The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param position The position to align the Game Object with. This is an align constant, such as `ALIGN_CONST.LEFT_CENTER`.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = js.native
-      def QuickSet[G /* <: GameObject */](
-        child: G,
-        alignIn: GameObject,
-        position: integer,
-        offsetX: js.UndefOr[scala.Nothing],
-        offsetY: Double
-      ): G = js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the right center of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the top center of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the top left of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned in the top right of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignIn The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
-    }
-    
-    @js.native
-    object To extends js.Object {
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the bottom center position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the bottom left position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the bottom right position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the left bottom position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the left center position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the left top position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes a Game Object and aligns it next to another, at the given position.
-        * The alignment used is based on the `position` argument, which is a `Phaser.Display.Align` property such as `LEFT_CENTER` or `TOP_RIGHT`.
-        * @param child The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param position The position to align the Game Object with. This is an align constant, such as `Phaser.Display.Align.LEFT_CENTER`.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = js.native
-      def QuickSet[G /* <: GameObject */](
-        child: G,
-        alignTo: GameObject,
-        position: integer,
-        offsetX: js.UndefOr[scala.Nothing],
-        offsetY: Double
-      ): G = js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = js.native
-      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the right bottom position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the right center position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the right top position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the top center position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the top left position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-      /**
-        * Takes given Game Object and aligns it so that it is positioned next to the top right position of the other.
-        * @param gameObject The Game Object that will be positioned.
-        * @param alignTo The Game Object to base the alignment position on.
-        * @param offsetX Optional horizontal offset from the position. Default 0.
-        * @param offsetY Optional vertical offset from the position. Default 0.
-        */
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
-      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
-    }
-    
-  }
-  
   @js.native
   object Bounds extends js.Object {
+    
     /**
       * Positions the Game Object so that it is centered on the given coordinates.
       * @param gameObject The Game Object that will be re-positioned.
@@ -434,11 +437,13 @@ object Display extends js.Object {
       * @param y The vertical coordinate to position the Game Object on.
       */
     def CenterOn[G /* <: GameObject */](gameObject: G, x: Double, y: Double): G = js.native
+    
     /**
       * Returns the bottom coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetBottom(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the unrotated bounds of the Game Object as a rectangle.
       * @param gameObject The Game Object to get the bounds value from.
@@ -447,21 +452,25 @@ object Display extends js.Object {
     def GetBounds(gameObject: GameObject): Rectangle | js.Object = js.native
     def GetBounds(gameObject: GameObject, output: js.Object): Rectangle | js.Object = js.native
     def GetBounds(gameObject: GameObject, output: Rectangle): Rectangle | js.Object = js.native
+    
     /**
       * Returns the center x coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetCenterX(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the center y coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetCenterY(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the left coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetLeft(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the amount the Game Object is visually offset from its x coordinate.
       * This is the same as `width * origin.x`.
@@ -469,6 +478,7 @@ object Display extends js.Object {
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetOffsetX(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the amount the Game Object is visually offset from its y coordinate.
       * This is the same as `width * origin.y`.
@@ -476,46 +486,54 @@ object Display extends js.Object {
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetOffsetY(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the right coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetRight(gameObject: GameObject): Double = js.native
+    
     /**
       * Returns the top coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetTop(gameObject: GameObject): Double = js.native
+    
     /**
       * Positions the Game Object so that the bottom of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
     def SetBottom[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    
     /**
       * Positions the Game Object so that the center top of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param x The coordinate to position the Game Object bounds on.
       */
     def SetCenterX[G /* <: GameObject */](gameObject: G, x: Double): G = js.native
+    
     /**
       * Positions the Game Object so that the center top of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param y The coordinate to position the Game Object bounds on.
       */
     def SetCenterY[G /* <: GameObject */](gameObject: G, y: Double): G = js.native
+    
     /**
       * Positions the Game Object so that the left of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
     def SetLeft[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    
     /**
       * Positions the Game Object so that the left of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
     def SetRight[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
+    
     /**
       * Positions the Game Object so that the top of its bounds aligns with the given coordinate.
       * @param gameObject The Game Object that will be re-positioned.
@@ -526,6 +544,7 @@ object Display extends js.Object {
   
   @js.native
   object Canvas extends js.Object {
+    
     /**
       * Sets the touch-action property on the canvas style. Can be used to disable default browser touch actions.
       * @param canvas The canvas element to have the style applied to.
@@ -533,6 +552,7 @@ object Display extends js.Object {
       */
     def TouchAction(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
     def TouchAction(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
+    
     /**
       * Sets the user-select property on the canvas style. Can be used to disable default browser selection actions.
       * @param canvas The canvas element to have the style applied to.
@@ -540,13 +560,16 @@ object Display extends js.Object {
       */
     def UserSelect(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
     def UserSelect(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
+    
     @js.native
     object CanvasInterpolation extends js.Object {
+      
       /**
         * Sets the CSS image-rendering property on the given canvas to be 'bicubic' (aka 'auto').
         * @param canvas The canvas object to have the style set on.
         */
       def setBicubic(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
+      
       /**
         * Sets the CSS image-rendering property on the given canvas to be 'crisp' (aka 'optimize contrast' on webkit).
         * @param canvas The canvas object to have the style set on.
@@ -564,6 +587,7 @@ object Display extends js.Object {
       */
     @js.native
     object CanvasPool extends js.Object {
+      
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
         * @param parent The parent of the Canvas object.
@@ -635,6 +659,7 @@ object Display extends js.Object {
       ): HTMLCanvasElement = js.native
       def create(parent: js.Any, width: integer, height: integer, canvasType: integer): HTMLCanvasElement = js.native
       def create(parent: js.Any, width: integer, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = js.native
+      
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
         * @param parent The parent of the Canvas object.
@@ -645,6 +670,7 @@ object Display extends js.Object {
       def create2D(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
       def create2D(parent: js.Any, width: integer): HTMLCanvasElement = js.native
       def create2D(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
+      
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
         * @param parent The parent of the Canvas object.
@@ -655,30 +681,36 @@ object Display extends js.Object {
       def createWebGL(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
       def createWebGL(parent: js.Any, width: integer): HTMLCanvasElement = js.native
       def createWebGL(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
+      
       /**
         * Disable context smoothing on any new Canvas element created.
         */
       def disableSmoothing(): Unit = js.native
+      
       /**
         * Enable context smoothing on any new Canvas element created.
         */
       def enableSmoothing(): Unit = js.native
+      
       /**
         * Gets the first free canvas index from the pool.
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         */
       def first(): HTMLCanvasElement = js.native
       def first(canvasType: integer): HTMLCanvasElement = js.native
+      
       /**
         * Gets the total number of free canvas elements in the pool.
         */
       def free(): integer = js.native
+      
       /**
         * Looks up a canvas based on its parent, and if found puts it back in the pool, freeing it up for re-use.
         * The canvas has its width and height set to 1, and its parent attribute nulled.
         * @param parent The canvas or the parent of the canvas to free.
         */
       def remove(parent: js.Any): Unit = js.native
+      
       /**
         * Gets the total number of used canvas elements in the pool.
         */
@@ -687,6 +719,7 @@ object Display extends js.Object {
     
     @js.native
     object Smoothing extends js.Object {
+      
       /**
         * Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
         * By default browsers have image smoothing enabled, which isn't always what you visually want, especially
@@ -697,6 +730,7 @@ object Display extends js.Object {
         */
       def disable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = js.native
       def disable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = js.native
+      
       /**
         * Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
         * By default browsers have image smoothing enabled, which isn't always what you visually want, especially
@@ -707,12 +741,14 @@ object Display extends js.Object {
         */
       def enable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = js.native
       def enable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = js.native
+      
       /**
         * Gets the Smoothing Enabled vendor prefix being used on the given context, or null if not set.
         * @param context The canvas context to check.
         */
       def getPrefix(context: CanvasRenderingContext2D): String = js.native
       def getPrefix(context: WebGLRenderingContext): String = js.native
+      
       /**
         * Returns `true` if the given context has image smoothing enabled, otherwise returns `false`.
         * Returns null if no smoothing prefix is available.
@@ -721,22 +757,58 @@ object Display extends js.Object {
       def isEnabled(context: CanvasRenderingContext2D): Boolean = js.native
       def isEnabled(context: WebGLRenderingContext): Boolean = js.native
     }
-    
   }
   
+  /**
+    * The Color class holds a single color value and allows for easy modification and reading of it.
+    */
+  @js.native
+  /**
+    * 
+    * @param red The red color value. A number between 0 and 255. Default 0.
+    * @param green The green color value. A number between 0 and 255. Default 0.
+    * @param blue The blue color value. A number between 0 and 255. Default 0.
+    * @param alpha The alpha value. A number between 0 and 255. Default 255.
+    */
+  class Color ()
+    extends typings.phaser.Phaser.Display.Color {
+    def this(red: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer) = this()
+    def this(red: integer, green: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer) = this()
+    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer) = this()
+    def this(red: integer, green: integer, blue: integer) = this()
+    def this(
+      red: js.UndefOr[scala.Nothing],
+      green: js.UndefOr[scala.Nothing],
+      blue: js.UndefOr[scala.Nothing],
+      alpha: integer
+    ) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer, alpha: integer) = this()
+    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
+    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
+    def this(red: integer, green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
+    def this(red: integer, green: integer, blue: integer, alpha: integer) = this()
+  }
   /* static members */
   @js.native
   object Color extends js.Object {
+    
     /**
       * Converts the given color value into an Object containing r,g,b and a properties.
       * @param color A color value, optionally including the alpha value.
       */
     def ColorToRGBA(color: Double): ColorObject = js.native
+    
     /**
       * Returns a string containing a hex representation of the given color component.
       * @param color The color channel to get the hex value for, must be a value between 0 and 255.
       */
     def ComponentToHex(color: integer): String = js.native
+    
     /**
       * Given 3 separate color values this will return an integer representation of it.
       * @param red The red color value. A number between 0 and 255.
@@ -744,6 +816,7 @@ object Display extends js.Object {
       * @param blue The blue color value. A number between 0 and 255.
       */
     def GetColor(red: integer, green: integer, blue: integer): Double = js.native
+    
     /**
       * Given an alpha and 3 color values this will return an integer representation of it.
       * @param red The red color value. A number between 0 and 255.
@@ -752,6 +825,7 @@ object Display extends js.Object {
       * @param alpha The alpha color value. A number between 0 and 255.
       */
     def GetColor32(red: integer, green: integer, blue: integer, alpha: integer): Double = js.native
+    
     /**
       * Converts HSL (hue, saturation and lightness) values to a Phaser Color object.
       * @param h The hue value in the range 0 to 1.
@@ -759,6 +833,7 @@ object Display extends js.Object {
       * @param l The lightness value in the range 0 to 1.
       */
     def HSLToColor(h: Double, s: Double, l: Double): typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Get HSV color wheel values in an array which will be 360 elements in size.
       * @param s The saturation, in the range 0 - 1. Default 1.
@@ -768,6 +843,7 @@ object Display extends js.Object {
     def HSVColorWheel(s: js.UndefOr[scala.Nothing], v: Double): js.Array[ColorObject] = js.native
     def HSVColorWheel(s: Double): js.Array[ColorObject] = js.native
     def HSVColorWheel(s: Double, v: Double): js.Array[ColorObject] = js.native
+    
     /**
       * Converts an HSV (hue, saturation and value) color value to RGB.
       * Conversion formula from http://en.wikipedia.org/wiki/HSL_color_space.
@@ -781,6 +857,7 @@ object Display extends js.Object {
     def HSVToRGB(h: Double, s: Double, v: Double): ColorObject | typings.phaser.Phaser.Display.Color = js.native
     def HSVToRGB(h: Double, s: Double, v: Double, out: typings.phaser.Phaser.Display.Color): ColorObject | typings.phaser.Phaser.Display.Color = js.native
     def HSVToRGB(h: Double, s: Double, v: Double, out: ColorObject): ColorObject | typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Converts a hex string into a Phaser Color object.
       * 
@@ -790,16 +867,19 @@ object Display extends js.Object {
       * @param hex The hex color value to convert, such as `#0033ff` or the short-hand format: `#03f`.
       */
     def HexStringToColor(hex: String): typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Converts a hue to an RGB color.
       * Based on code by Michael Jackson (https://github.com/mjijackson)
       */
     def HueToComponent(p: Double, q: Double, t: Double): Double = js.native
+    
     /**
       * Converts the given color value into an instance of a Color object.
       * @param input The color value to convert into a Color object.
       */
     def IntegerToColor(input: integer): typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Return the component parts of a color as an Object with the properties alpha, red, green, blue.
       * 
@@ -807,11 +887,13 @@ object Display extends js.Object {
       * @param input The color value to convert into a Color object.
       */
     def IntegerToRGB(input: integer): ColorObject = js.native
+    
     /**
       * Converts an object containing `r`, `g`, `b` and `a` properties into a Color class instance.
       * @param input An object containing `r`, `g`, `b` and `a` properties in the range 0 to 255.
       */
     def ObjectToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Converts a CSS 'web' string into a Phaser Color object.
       * 
@@ -819,6 +901,7 @@ object Display extends js.Object {
       * @param rgb The CSS format color string, using the `rgb` or `rgba` format.
       */
     def RGBStringToColor(rgb: String): typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Converts an RGB color value to HSV (hue, saturation and value).
       * Conversion formula from http://en.wikipedia.org/wiki/HSL_color_space.
@@ -832,6 +915,7 @@ object Display extends js.Object {
     def RGBToHSV(r: integer, g: integer, b: integer): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
     def RGBToHSV(r: integer, g: integer, b: integer, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
     def RGBToHSV(r: integer, g: integer, b: integer, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Converts the color values into an HTML compatible color string, prefixed with either `#` or `0x`.
       * @param r The red color value. A number between 0 and 255.
@@ -844,6 +928,7 @@ object Display extends js.Object {
     def RGBToString(r: integer, g: integer, b: integer, a: js.UndefOr[scala.Nothing], prefix: String): String = js.native
     def RGBToString(r: integer, g: integer, b: integer, a: integer): String = js.native
     def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = js.native
+    
     /**
       * Creates a new Color object where the r, g, and b values have been set to random values
       * based on the given min max values.
@@ -854,6 +939,7 @@ object Display extends js.Object {
     def RandomRGB(min: js.UndefOr[scala.Nothing], max: integer): typings.phaser.Phaser.Display.Color = js.native
     def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = js.native
     def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = js.native
+    
     /**
       * Converts the given source color value into an instance of a Color class.
       * The value can be either a string, prefixed with `rgb` or a hex string, a number or an Object.
@@ -862,8 +948,10 @@ object Display extends js.Object {
     def ValueToColor(input: String): typings.phaser.Phaser.Display.Color = js.native
     def ValueToColor(input: Double): typings.phaser.Phaser.Display.Color = js.native
     def ValueToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
+    
     @js.native
     object Interpolate extends js.Object {
+      
       /**
         * Interpolates between the two given color objects over the length supplied.
         * @param color1 The first Color object.
@@ -889,6 +977,7 @@ object Display extends js.Object {
         length: Double,
         index: Double
       ): ColorObject = js.native
+      
       /**
         * Interpolates between the Color object and color values over the length supplied.
         * @param color1 The first Color object.
@@ -916,6 +1005,7 @@ object Display extends js.Object {
         length: Double,
         index: Double
       ): ColorObject = js.native
+      
       /**
         * Interpolates between the two given color ranges over the length supplied.
         * @param r1 Red value.
@@ -950,11 +1040,11 @@ object Display extends js.Object {
         index: Double
       ): ColorObject = js.native
     }
-    
   }
   
   @js.native
   object Masks extends js.Object {
+    
     /**
       * A Bitmap Mask combines the alpha (opacity) of a masked pixel with the alpha of another pixel.
       * Unlike the Geometry Mask, which is a clipping path, a Bitmap Mask behaves like an alpha mask,
@@ -1019,8 +1109,5 @@ object Display extends js.Object {
         */
       def this(scene: typings.phaser.Phaser.Scene, graphicsGeometry: Graphics) = this()
     }
-    
   }
-  
 }
-

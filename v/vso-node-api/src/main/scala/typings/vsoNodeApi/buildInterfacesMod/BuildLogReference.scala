@@ -2,49 +2,57 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BuildLogReference extends js.Object {
+  
   /**
     * The ID of the log.
     */
   var id: Double = js.native
+  
   /**
     * The type of the log location.
     */
   var `type`: String = js.native
+  
   /**
     * A full link to the log resource.
     */
   var url: String = js.native
 }
-
 object BuildLogReference {
+  
   @scala.inline
   def apply(id: Double, `type`: String, url: String): BuildLogReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildLogReference]
   }
+  
   @scala.inline
   implicit class BuildLogReferenceOps[Self <: BuildLogReference] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
   }
-  
 }
-

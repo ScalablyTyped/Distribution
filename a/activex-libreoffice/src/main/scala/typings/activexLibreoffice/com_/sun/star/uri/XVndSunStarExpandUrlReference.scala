@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.XMacroExpander
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents absolute " vnd.sun.star.expand " URL references.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait XVndSunStarExpandUrlReference
   extends XUriReference
      with XVndSunStarExpandUrl
-
 object XVndSunStarExpandUrlReference {
+  
   @scala.inline
   def apply(
     Authority: String,
@@ -52,4 +52,3 @@ object XVndSunStarExpandUrlReference {
     __obj.asInstanceOf[XVndSunStarExpandUrlReference]
   }
 }
-

@@ -4,7 +4,7 @@ import typings.pixiJs.PIXI.resources.Resource
 import typings.pixiJs.PIXI.utils.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Texture stores the information that represents an image.
@@ -34,18 +34,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BaseTexture extends EventEmitter {
+  
   /**
     * Number of the texture batch, used by multi-texture renderers
     *
     * @member {number} PIXI.BaseTexture#_batchEnabled
     */
   var _batchEnabled: Double = js.native
+  
   /**
     * Location inside texture batch, used by multi-texture renderers
     *
     * @member {number} PIXI.BaseTexture#_batchLocation
     */
   var _batchLocation: Double = js.native
+  
   /**
     * How to treat premultiplied alpha, see {@link PIXI.ALPHA_MODES}.
     *
@@ -53,6 +56,7 @@ trait BaseTexture extends EventEmitter {
     * @default PIXI.ALPHA_MODES.UNPACK
     */
   var alphaMode: ALPHA_MODES = js.native
+  
   /**
     * Anisotropic filtering level of texture
     *
@@ -60,12 +64,26 @@ trait BaseTexture extends EventEmitter {
     * @default PIXI.settings.ANISOTROPIC_LEVEL
     */
   var anisotropicLevel: Double = js.native
+  
   /**
     * Currently default cache ID.
     *
     * @member {string} PIXI.BaseTexture#cacheId
     */
   var cacheId: String = js.native
+  
+  /**
+    * Utility function for BaseTexture|Texture cast
+    */
+  def castToBaseTexture(): Unit = js.native
+  
+  /**
+    * Destroys this base texture.
+    * The method stops if resource doesn't want this texture to be destroyed.
+    * Removes texture from all caches.
+    */
+  def destroy(): Unit = js.native
+  
   /**
     * Flag if BaseTexture has been destroyed.
     *
@@ -73,6 +91,7 @@ trait BaseTexture extends EventEmitter {
     * @readonly
     */
   val destroyed: Boolean = js.native
+  
   /**
     * Used by TextureSystem to only update texture to the GPU when needed.
     * Please call `update()` to increment it.
@@ -81,6 +100,7 @@ trait BaseTexture extends EventEmitter {
     * @member {number} PIXI.BaseTexture#dirtyId
     */
   val dirtyId: Double = js.native
+  
   /**
     * Used by TextureSystem to only update texture style when needed.
     *
@@ -88,6 +108,16 @@ trait BaseTexture extends EventEmitter {
     * @member {number} PIXI.BaseTexture#dirtyStyleId
     */
   var dirtyStyleId: Double = js.native
+  
+  /**
+    * Frees the texture from WebGL memory without destroying this texture object.
+    * This means you can still use the texture later which will upload it to GPU
+    * memory again.
+    *
+    * @fires PIXI.BaseTexture#dispose
+    */
+  def dispose(): Unit = js.native
+  
   /**
     * The pixel format of the texture
     *
@@ -95,6 +125,7 @@ trait BaseTexture extends EventEmitter {
     * @default PIXI.FORMATS.RGBA
     */
   var format: FORMATS = js.native
+  
   /**
     * The height of the base texture set when the image has loaded
     *
@@ -102,6 +133,7 @@ trait BaseTexture extends EventEmitter {
     * @member {number} PIXI.BaseTexture#height
     */
   val height: Double = js.native
+  
   /**
     * Whether or not the texture is a power of two, try to use power of two textures as much
     * as you can
@@ -111,6 +143,7 @@ trait BaseTexture extends EventEmitter {
     * @default false
     */
   val isPowerOfTwo: Boolean = js.native
+  
   /**
     * Mipmap mode of the texture, affects downscaled images
     *
@@ -118,12 +151,14 @@ trait BaseTexture extends EventEmitter {
     * @default PIXI.settings.MIPMAP_TEXTURES
     */
   var mipmap: MIPMAP_MODES = js.native
+  
   /**
     * Whether its a part of another texture, handled by ArrayResource or CubeResource
     *
     * @member {PIXI.BaseTexture} PIXI.BaseTexture#parentTextureArray
     */
   var parentTextureArray: BaseTexture = js.native
+  
   /**
     * Pixel height of the source of this texture
     *
@@ -131,6 +166,7 @@ trait BaseTexture extends EventEmitter {
     * @member {number}
     */
   val realHeight: Double = js.native
+  
   /**
     * Pixel width of the source of this texture
     *
@@ -138,6 +174,7 @@ trait BaseTexture extends EventEmitter {
     * @member {number}
     */
   val realWidth: Double = js.native
+  
   /**
     * The resolution / device pixel ratio of the texture
     *
@@ -145,6 +182,7 @@ trait BaseTexture extends EventEmitter {
     * @default PIXI.settings.RESOLUTION
     */
   var resolution: Double = js.native
+  
   /**
     * The resource used by this BaseTexture, there can only
     * be one resource per BaseTexture, but textures can share
@@ -154,6 +192,7 @@ trait BaseTexture extends EventEmitter {
     * @readonly
     */
   val resource: Resource = js.native
+  
   /**
     * The scale mode to apply when scaling this texture
     *
@@ -161,78 +200,7 @@ trait BaseTexture extends EventEmitter {
     * @default PIXI.settings.SCALE_MODE
     */
   var scaleMode: SCALE_MODES = js.native
-  /**
-    * The target type
-    *
-    * @member {PIXI.TARGETS} PIXI.BaseTexture#target
-    * @default PIXI.TARGETS.TEXTURE_2D
-    */
-  var target: TARGETS = js.native
-  /**
-    * The collection of alternative cache ids, since some BaseTextures
-    * can have more than one ID, short name and longer full URL
-    *
-    * @member {Array<string>} PIXI.BaseTexture#textureCacheIds
-    * @readonly
-    */
-  val textureCacheIds: js.Array[String] = js.native
-  /**
-    * Used by automatic texture Garbage Collection, stores last GC tick when it was bound
-    *
-    * @member {number} PIXI.BaseTexture#touched
-    * @protected
-    */
-  var touched: Double = js.native
-  /**
-    * The type of resource data
-    *
-    * @member {PIXI.TYPES} PIXI.BaseTexture#type
-    * @default PIXI.TYPES.UNSIGNED_BYTE
-    */
-  var `type`: TYPES = js.native
-  /**
-    * Global unique identifier for this BaseTexture
-    *
-    * @member {number} PIXI.BaseTexture#uid
-    * @protected
-    */
-  var uid: Double = js.native
-  /**
-    * Generally speaking means when resource is loaded.
-    * @readonly
-    * @member {boolean} PIXI.BaseTexture#valid
-    */
-  val valid: Boolean = js.native
-  /**
-    * The width of the base texture set when the image has loaded
-    *
-    * @readonly
-    * @member {number} PIXI.BaseTexture#width
-    */
-  val width: Double = js.native
-  /**
-    * How the texture wraps
-    * @member {number} PIXI.BaseTexture#wrapMode
-    */
-  var wrapMode: Double = js.native
-  /**
-    * Utility function for BaseTexture|Texture cast
-    */
-  def castToBaseTexture(): Unit = js.native
-  /**
-    * Destroys this base texture.
-    * The method stops if resource doesn't want this texture to be destroyed.
-    * Removes texture from all caches.
-    */
-  def destroy(): Unit = js.native
-  /**
-    * Frees the texture from WebGL memory without destroying this texture object.
-    * This means you can still use the texture later which will upload it to GPU
-    * memory again.
-    *
-    * @fires PIXI.BaseTexture#dispose
-    */
-  def dispose(): Unit = js.native
+  
   /**
     * Sets real size of baseTexture, preserves current resolution.
     *
@@ -243,6 +211,7 @@ trait BaseTexture extends EventEmitter {
     */
   def setRealSize(realWidth: Double, realHeight: Double): BaseTexture = js.native
   def setRealSize(realWidth: Double, realHeight: Double, resolution: Double): BaseTexture = js.native
+  
   /**
     * Changes resolution
     *
@@ -250,6 +219,7 @@ trait BaseTexture extends EventEmitter {
     * @returns {PIXI.BaseTexture} this
     */
   def setResolution(resolution: Double): BaseTexture = js.native
+  
   /**
     * Sets the resource if it wasn't set. Throws error if resource already present
     *
@@ -257,6 +227,7 @@ trait BaseTexture extends EventEmitter {
     * @returns {PIXI.BaseTexture} this
     */
   def setResource(resource: Resource): BaseTexture = js.native
+  
   /**
     * Changes w/h/resolution. Texture becomes valid if width and height are greater than zero.
     *
@@ -267,6 +238,7 @@ trait BaseTexture extends EventEmitter {
     */
   def setSize(width: Double, height: Double): BaseTexture = js.native
   def setSize(width: Double, height: Double, resolution: Double): BaseTexture = js.native
+  
   /**
     * Changes style options of BaseTexture
     *
@@ -278,9 +250,71 @@ trait BaseTexture extends EventEmitter {
   def setStyle(scaleMode: js.UndefOr[scala.Nothing], mipmap: MIPMAP_MODES): BaseTexture = js.native
   def setStyle(scaleMode: SCALE_MODES): BaseTexture = js.native
   def setStyle(scaleMode: SCALE_MODES, mipmap: MIPMAP_MODES): BaseTexture = js.native
+  
+  /**
+    * The target type
+    *
+    * @member {PIXI.TARGETS} PIXI.BaseTexture#target
+    * @default PIXI.TARGETS.TEXTURE_2D
+    */
+  var target: TARGETS = js.native
+  
+  /**
+    * The collection of alternative cache ids, since some BaseTextures
+    * can have more than one ID, short name and longer full URL
+    *
+    * @member {Array<string>} PIXI.BaseTexture#textureCacheIds
+    * @readonly
+    */
+  val textureCacheIds: js.Array[String] = js.native
+  
+  /**
+    * Used by automatic texture Garbage Collection, stores last GC tick when it was bound
+    *
+    * @member {number} PIXI.BaseTexture#touched
+    * @protected
+    */
+  var touched: Double = js.native
+  
+  /**
+    * The type of resource data
+    *
+    * @member {PIXI.TYPES} PIXI.BaseTexture#type
+    * @default PIXI.TYPES.UNSIGNED_BYTE
+    */
+  var `type`: TYPES = js.native
+  
+  /**
+    * Global unique identifier for this BaseTexture
+    *
+    * @member {number} PIXI.BaseTexture#uid
+    * @protected
+    */
+  var uid: Double = js.native
+  
   /**
     * Invalidates the object. Texture becomes valid if width and height are greater than zero.
     */
   def update(): Unit = js.native
+  
+  /**
+    * Generally speaking means when resource is loaded.
+    * @readonly
+    * @member {boolean} PIXI.BaseTexture#valid
+    */
+  val valid: Boolean = js.native
+  
+  /**
+    * The width of the base texture set when the image has loaded
+    *
+    * @readonly
+    * @member {number} PIXI.BaseTexture#width
+    */
+  val width: Double = js.native
+  
+  /**
+    * How the texture wraps
+    * @member {number} PIXI.BaseTexture#wrapMode
+    */
+  var wrapMode: Double = js.native
 }
-

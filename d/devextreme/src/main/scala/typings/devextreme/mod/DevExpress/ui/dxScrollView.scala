@@ -4,13 +4,18 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxScrollView extends dxScrollable {
-  /** @name dxScrollView.refresh() */
+  
+  /**
+    * [descr:dxScrollView.refresh()]
+    */
   def refresh(): Unit = js.native
-  /** @name dxScrollView.release(preventScrollBottom) */
+  
+  /**
+    * [descr:dxScrollView.release(preventScrollBottom)]
+    */
   def release(preventScrollBottom: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
-

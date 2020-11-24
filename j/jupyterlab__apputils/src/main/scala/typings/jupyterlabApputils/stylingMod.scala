@@ -4,13 +4,15 @@ import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/styling", JSImport.Namespace)
 @js.native
 object stylingMod extends js.Object {
+  
   @js.native
   object Styling extends js.Object {
+    
     /**
       * Style a node and its child elements with the default tag names.
       *
@@ -20,6 +22,7 @@ object stylingMod extends js.Object {
       */
     def styleNode(node: HTMLElement): Unit = js.native
     def styleNode(node: HTMLElement, className: String): Unit = js.native
+    
     /**
       * Style a node and its elements that have a given tag name.
       *
@@ -31,11 +34,10 @@ object stylingMod extends js.Object {
       */
     def styleNodeByTag(node: HTMLElement, tagName: String): Unit = js.native
     def styleNodeByTag(node: HTMLElement, tagName: String, className: String): Unit = js.native
+    
     /**
       * Wrap a select node.
       */
     def wrapSelect(node: HTMLSelectElement): HTMLElement = js.native
   }
-  
 }
-

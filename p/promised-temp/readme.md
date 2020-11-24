@@ -12,7 +12,7 @@ Tool for making temporary files asynchronously that return Promises. Wraps node-
 | Keywords           | tmp, promises, temp, temporary |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 2962 |
+| # downloads        | 6845 |
 | # stars            | 0 |
 
 ## Links

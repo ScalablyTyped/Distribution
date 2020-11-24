@@ -3,7 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enables the user to perform search queries and select suggestions.
@@ -23,16 +23,16 @@ class SearchBox ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.SearchBox")
 @js.native
 object SearchBox extends js.Object {
+  
+  //#endregion Properties
+  def createResultSuggestionImage(url: String): js.Any = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
-  //#endregion Properties
-  def createResultSuggestionImage(url: String): js.Any = js.native
 }
-

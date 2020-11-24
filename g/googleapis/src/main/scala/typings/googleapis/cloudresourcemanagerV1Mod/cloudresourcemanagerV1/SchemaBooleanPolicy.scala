@@ -2,7 +2,7 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used in `policy_type` to specify how `boolean_policy` will behave at this
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaBooleanPolicy extends js.Object {
+  
   /**
     * If `true`, then the `Policy` is enforced. If `false`, then any
     * configuration is acceptable.  Suppose you have a `Constraint`
@@ -40,29 +41,33 @@ trait SchemaBooleanPolicy extends js.Object {
     */
   var enforced: js.UndefOr[Boolean] = js.native
 }
-
 object SchemaBooleanPolicy {
+  
   @scala.inline
   def apply(): SchemaBooleanPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBooleanPolicy]
   }
+  
   @scala.inline
   implicit class SchemaBooleanPolicyOps[Self <: SchemaBooleanPolicy] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEnforced(value: Boolean): Self = this.set("enforced", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnforced: Self = this.set("enforced", js.undefined)
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.googleCloudStorage.aclMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attach functionality to a {@link Storage.acl} instance. This will add an
@@ -22,15 +22,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods")
 @js.native
 class AclRoleAccessorMethods () extends js.Object {
+  
   def _assignAccessMethods(role: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods")
 @js.native
 object AclRoleAccessorMethods extends js.Object {
+  
   var accessMethods: js.Any = js.native
+  
   var entities: js.Any = js.native
+  
   var roles: js.Any = js.native
 }
-

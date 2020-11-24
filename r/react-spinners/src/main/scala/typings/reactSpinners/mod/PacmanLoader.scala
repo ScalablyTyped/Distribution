@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.reactSpinners.interfacesMod.LoaderSizeMarginProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-spinners", "PacmanLoader")
 @js.native
@@ -16,8 +16,6 @@ class PacmanLoader protected ()
   def this(props: LoaderSizeMarginProps) = this()
   def this(props: LoaderSizeMarginProps, context: js.Any) = this()
 }
-
 @JSImport("react-spinners", "PacmanLoader")
 @js.native
 object PacmanLoader extends TopLevel[ComponentClass[LoaderSizeMarginProps, ComponentState]]
-

@@ -11,8 +11,8 @@ The lodash method `_.pad` exported as a module.
 | Full name          | lodash.pad |
 | Keywords           | lodash-modularized, pad |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 28638791 |
+| # dependents       | 19 |
+| # downloads        | 24866793 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Jalaali (Jalali, Persian, Khorshidi, Shamsi) calendar system plugin for moment.j
 | ------------------ | :-------------: |
 | Full name          | moment-jalaali |
 | Keywords           | jalaali, jalali, persian, khorshidi, shamsi, date, calendar, conversion, convert |
-| # releases         | 9 |
-| # dependents       | 82 |
-| # downloads        | 182420 |
+| # releases         | 8 |
+| # dependents       | 111 |
+| # downloads        | 255498 |
 | # stars            | 2 |
 
 ## Links

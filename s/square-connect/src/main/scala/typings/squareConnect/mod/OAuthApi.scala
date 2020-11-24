@@ -2,7 +2,7 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OAuthApi")
 @js.native
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 class OAuthApi () extends js.Object {
   def this(apiClient: ApiClient) = this()
+  
   /**
     * Returns an OAuth access token. The endpoint supports distinct methods of obtaining OAuth access tokens.
     * Applications specify a method by adding the `grant_type` parameter  in the request and also provide relevant information.
@@ -21,6 +22,7 @@ class OAuthApi () extends js.Object {
     * interact directly with OAuth tokens__.
     */
   def obtainToken(body: ObtainTokenRequest): js.Promise[ObtainTokenResponse] = js.native
+  
   /**
     * `RenewToken` is deprecated. For information about refreshing OAuth access tokens,
     * see [Renew OAuth Token](https://developer.squareup.com/docs/oauth-api/cookbook/renew-oauth-tokens).
@@ -33,6 +35,7 @@ class OAuthApi () extends js.Object {
     * with the application secret on the Credentials page in the [application dashboard](https://connect.squareup.com/apps).
     */
   def renewToken(clientId: String, body: RenewTokenRequest): js.Promise[RenewTokenResponse] = js.native
+  
   /**
     * Revokes an access token generated with the OAuth flow. If an account has more than one OAuth access token for
     * your application, this endpoint revokes all of them, regardless of which token you specify. When an OAuth access
@@ -43,4 +46,3 @@ class OAuthApi () extends js.Object {
     */
   def revokeToken(body: RevokeTokenRequest): js.Promise[RevokeTokenResponse] = js.native
 }
-

@@ -2,9 +2,10 @@ package typings.codemirror
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * A function that calls the updateLintingCallback with any errors found during the linting process.
     */
@@ -15,13 +16,16 @@ package object mod {
     /* codeMirror */ typings.codemirror.mod.Editor, 
     scala.Unit
   ]
+  
   type HintFunction = js.Function1[/* cm */ typings.codemirror.mod.Editor, typings.codemirror.mod.Hints]
+  
   type KeyMap = org.scalablytyped.runtime.StringDictionary[
     typings.codemirror.codemirrorBooleans.`false` | java.lang.String | (js.Function1[
       /* instance */ typings.codemirror.mod.Editor, 
       scala.Unit | typings.codemirror.anon.ToString
     ])
   ]
+  
   /**
     * A function that return errors found during the linting process.
     */
@@ -31,7 +35,9 @@ package object mod {
     /* codeMirror */ typings.codemirror.mod.Editor, 
     js.Array[typings.codemirror.mod.Annotation] | js.Thenable[js.Array[typings.codemirror.mod.Annotation]]
   ]
+  
   type MimeModeMap = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   /**
     * A function that, given a CodeMirror configuration object and an optional mode configuration object, returns a mode object.
     */
@@ -40,7 +46,9 @@ package object mod {
     /* modeOptions */ js.UndefOr[js.Any], 
     typings.codemirror.mod.Mode[T]
   ]
+  
   type ModeMap = org.scalablytyped.runtime.StringDictionary[typings.codemirror.mod.ModeFactory[js.Any]]
+  
   /**
     * A function that, given an array of annotations, updates the CodeMirror linting GUI with those annotations
     */

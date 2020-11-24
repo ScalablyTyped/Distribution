@@ -3,13 +3,15 @@ package typings.materialDrawer
 import typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/drawer/modal/foundation", JSImport.Namespace)
 @js.native
 object modalFoundationMod extends js.Object {
+  
   @js.native
   class MDCModalDrawerFoundation () extends MDCDismissibleDrawerFoundation {
+    
     /**
       * Handles click event on scrim.
       */
@@ -18,6 +20,4 @@ object modalFoundationMod extends js.Object {
   
   @js.native
   class default () extends MDCModalDrawerFoundation
-  
 }
-

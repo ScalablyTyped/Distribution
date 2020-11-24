@@ -12,7 +12,7 @@ Get your public IP address
 | Keywords           | ip, ipv6, ipv4, address, public, external, own |
 | # releases         | 3 |
 | # dependents       | 15 |
-| # downloads        | 343605 |
+| # downloads        | 201740 |
 | # stars            | 9 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Stretch extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.Stretch")
 @js.native
 object Stretch extends js.Object {
+  
   //The diagram content is resized to fill the destination dimensions. The aspect ratio is not preserved.
   @js.native
   sealed trait Fill extends Stretch
@@ -26,6 +26,4 @@ object Stretch extends js.Object {
   //source, the source content is clipped to fit in the destination dimensions.
   @js.native
   sealed trait UniformToFill extends Stretch
-  
 }
-

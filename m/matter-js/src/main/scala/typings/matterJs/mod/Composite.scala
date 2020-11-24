@@ -2,11 +2,12 @@ package typings.matterJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Composite")
 @js.native
 class Composite () extends js.Object {
+  
   /**
     * An array of `Body` that are _direct_ children of this composite.
     * To add or remove bodies you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
@@ -17,6 +18,7 @@ class Composite () extends js.Object {
     * @default []
     */
   var bodies: js.Array[Body] = js.native
+  
   /**
     * An array of `Composite` that are _direct_ children of this composite.
     * To add or remove composites you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
@@ -27,6 +29,7 @@ class Composite () extends js.Object {
     * @default []
     */
   var composites: js.Array[Composite] = js.native
+  
   /**
     * An array of `Constraint` that are _direct_ children of this composite.
     * To add or remove constraints you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
@@ -37,6 +40,7 @@ class Composite () extends js.Object {
     * @default []
     */
   var constraints: js.Array[Constraint] = js.native
+  
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
@@ -44,6 +48,7 @@ class Composite () extends js.Object {
     * @type number
     */
   var id: Double = js.native
+  
   /**
     * A flag that specifies whether the composite has been modified during the current step.
     * Most `Matter.Composite` methods will automatically set this flag to `true` to inform the engine of changes to be handled.
@@ -54,6 +59,7 @@ class Composite () extends js.Object {
     * @default false
     */
   var isModified: Boolean = js.native
+  
   /**
     * An arbitrary `String` name to help the user identify and manage composites.
     *
@@ -62,6 +68,7 @@ class Composite () extends js.Object {
     * @default "Composite"
     */
   var label: String = js.native
+  
   /**
     * The `Composite` that is the parent of this composite. It is automatically managed by the `Matter.Composite` methods.
     *
@@ -70,6 +77,7 @@ class Composite () extends js.Object {
     * @default null
     */
   var parent: Composite = js.native
+  
   /**
     * A `String` denoting the type of object.
     *
@@ -79,11 +87,11 @@ class Composite () extends js.Object {
     */
   var `type`: String = js.native
 }
-
 /* static members */
 @JSImport("matter-js", "Composite")
 @js.native
 object Composite extends js.Object {
+  
   /**
     * Generic add function. Adds one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Triggers `beforeAdd` and `afterAdd` events on the `composite`.
@@ -95,6 +103,7 @@ object Composite extends js.Object {
   def add(composite: Composite, `object`: Body): Composite = js.native
   def add(composite: Composite, `object`: Composite): Composite = js.native
   def add(composite: Composite, `object`: Constraint): Composite = js.native
+  
   /**
     * Returns all bodies in the given composite, including all bodies in its children, recursively.
     * @method allBodies
@@ -102,6 +111,7 @@ object Composite extends js.Object {
     * @return {body[]} All the bodies
     */
   def allBodies(composite: Composite): js.Array[Body] = js.native
+  
   /**
     * Returns all composites in the given composite, including all composites in its children, recursively.
     * @method allComposites
@@ -109,6 +119,7 @@ object Composite extends js.Object {
     * @return {composite[]} All the composites
     */
   def allComposites(composite: Composite): js.Array[Composite] = js.native
+  
   /**
     * Returns all constraints in the given composite, including all constraints in its children, recursively.
     * @method allConstraints
@@ -116,6 +127,7 @@ object Composite extends js.Object {
     * @return {constraint[]} All the constraints
     */
   def allConstraints(composite: Composite): js.Array[Composite] = js.native
+  
   /**
     * Removes all bodies, constraints and composites from the given composite.
     * Optionally clearing its children recursively.
@@ -126,6 +138,7 @@ object Composite extends js.Object {
     */
   def clear(composite: Composite, keepStatic: Boolean): Unit = js.native
   def clear(composite: Composite, keepStatic: Boolean, deep: Boolean): Unit = js.native
+  
   /**
     * Creates a new composite. The options parameter is an object that specifies any properties you wish to override the defaults.
     * See the properites section below for detailed information on what you can pass via the `options` object.
@@ -135,6 +148,7 @@ object Composite extends js.Object {
     */
   def create(): Composite = js.native
   def create(options: ICompositeDefinition): Composite = js.native
+  
   /**
     * Searches the composite recursively for an object matching the type and id supplied, null if not found.
     * @method get
@@ -144,6 +158,7 @@ object Composite extends js.Object {
     * @return {object} The requested object, if found
     */
   def get(composite: Composite, id: Double, `type`: String): Body | Composite | Constraint = js.native
+  
   /**
     * Moves the given object(s) from compositeA to compositeB (equal to a remove followed by an add).
     * @method move
@@ -153,6 +168,7 @@ object Composite extends js.Object {
     * @return {composite} Returns compositeA
     */
   def move(compositeA: Composite, objects: js.Array[Body | Composite | Constraint], compositeB: Composite): Composite = js.native
+  
   /**
     * Assigns new ids for all objects in the composite, recursively.
     * @method rebase
@@ -160,6 +176,7 @@ object Composite extends js.Object {
     * @return {composite} Returns composite
     */
   def rebase(composite: Composite): Composite = js.native
+  
   /**
     * Generic remove function. Removes one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Optionally searching its children recursively.
@@ -176,6 +193,7 @@ object Composite extends js.Object {
   def remove(composite: Composite, `object`: Composite, deep: Boolean): Composite = js.native
   def remove(composite: Composite, `object`: Constraint): Composite = js.native
   def remove(composite: Composite, `object`: Constraint, deep: Boolean): Composite = js.native
+  
   /**
     * Rotates all children in the composite by a given angle about the given point, without imparting any angular velocity.
     * @method rotate
@@ -186,6 +204,7 @@ object Composite extends js.Object {
     */
   def rotate(composite: Composite, rotation: Double, point: Vector): Unit = js.native
   def rotate(composite: Composite, rotation: Double, point: Vector, recursive: Boolean): Unit = js.native
+  
   /**
     * Scales all children in the composite, including updating physical properties (mass, area, axes, inertia), from a world-space point.
     * @method scale
@@ -197,6 +216,7 @@ object Composite extends js.Object {
     */
   def scale(composite: Composite, scaleX: Double, scaleY: Double, point: Vector): Unit = js.native
   def scale(composite: Composite, scaleX: Double, scaleY: Double, point: Vector, recursive: Boolean): Unit = js.native
+  
   /**
     * Sets the composite's `isModified` flag.
     * If `updateParents` is true, all parents will be set (default: false).
@@ -216,6 +236,7 @@ object Composite extends js.Object {
   ): Unit = js.native
   def setModified(composite: Composite, isModified: Boolean, updateParents: Boolean): Unit = js.native
   def setModified(composite: Composite, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = js.native
+  
   /**
     * Translates all children in the composite by a given vector relative to their current positions,
     * without imparting any velocity.
@@ -227,4 +248,3 @@ object Composite extends js.Object {
   def translate(composite: Composite, translation: Vector): Unit = js.native
   def translate(composite: Composite, translation: Vector, recursive: Boolean): Unit = js.native
 }
-

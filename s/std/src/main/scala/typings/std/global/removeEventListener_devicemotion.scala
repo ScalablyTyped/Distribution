@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.devicemotion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_devicemotion extends js.Object {
+  
   def apply(
     `type`: devicemotion,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, _]
@@ -25,4 +26,3 @@ object removeEventListener_devicemotion extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

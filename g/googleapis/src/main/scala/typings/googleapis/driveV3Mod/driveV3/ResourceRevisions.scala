@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v3", "drive_v3.Resource$Revisions")
 @js.native
 class ResourceRevisions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.revisions.delete
     * @desc Permanently deletes a file version. You can only delete revisions
@@ -45,6 +47,7 @@ class ResourceRevisions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * drive.revisions.get
     * @desc Gets a revision's metadata or content by ID.
@@ -75,6 +78,7 @@ class ResourceRevisions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevision]
   ): Unit = js.native
+  
   /**
     * drive.revisions.list
     * @desc Lists a file's revisions.
@@ -105,6 +109,7 @@ class ResourceRevisions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevisionList]
   ): Unit = js.native
+  
   /**
     * drive.revisions.update
     * @desc Updates a revision with patch semantics.
@@ -136,4 +141,3 @@ class ResourceRevisions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRevision]
   ): Unit = js.native
 }
-

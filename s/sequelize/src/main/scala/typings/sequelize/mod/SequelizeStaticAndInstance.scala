@@ -3,59 +3,71 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sequelize methods that are available both for the static and the instance class of Sequelize
   */
 @js.native
 trait SequelizeStaticAndInstance extends Errors {
+  
   /**
     * A reference to the deferrable collection. Use this to access the different deferrable options.
     */
   var Deferrable: typings.sequelize.mod.Deferrable = js.native
+  
   /**
     * A reference to the sequelize instance class.
     */
   var Instance: typings.sequelize.mod.Instance[_] = js.native
+  
   /**
     * A Model represents a table in the database. Sometimes you might also see it referred to as model, or
     * simply as factory. This class should not be instantiated directly, it is created using sequelize.define,
     * and already created models can be loaded using sequelize.import
     */
   var Model: typings.sequelize.mod.Model[_, _, _] = js.native
+  
   var Op: Operators = js.native
+  
   /**
     * A modified version of bluebird promises, that allows listening for sql events
     */
   var Promise: Instantiable = js.native
+  
   /**
     * Available query types for use with `sequelize.query`
     */
   var QueryTypes: typings.sequelize.mod.QueryTypes = js.native
+  
   /**
     * A reference to the sequelize transaction class. Use this to access isolationLevels when creating a
     * transaction
     */
   var Transaction: TransactionStatic = js.native
+  
   /**
     * A reference to sequelize utilities. Most users will not need to use these utils directly. However, you
     * might want to use `Sequelize.Utils._`, which is a reference to the lodash library, if you don't already
     * have it imported in your project.
     */
   var Utils: typings.sequelize.mod.Utils = js.native
+  
   /**
     * Exposes the validator.js object, so you can extend it with custom validation functions.
     * The validator is exposed both on the instance, and on the constructor.
     */
   var Validator: typings.sequelize.mod.Validator = js.native
+  
   /**
     * An AND query
     *
     * @param args Each argument will be joined by AND
     */
   def and(args: (String | js.Object)*): typings.sequelize.mod.and = js.native
+  
   def asIs(`val`: js.Any): literal = js.native
+  
   /**
     * Creates a object representing a call to the cast function.
     *
@@ -63,6 +75,7 @@ trait SequelizeStaticAndInstance extends Errors {
     * @param type The type to cast it to
     */
   def cast(`val`: js.Any, `type`: String): typings.sequelize.mod.cast = js.native
+  
   /**
     * Creates a object representing a column in the DB. This is often useful in conjunction with
     * `sequelize.fn`, since raw string arguments to fn will be escaped.
@@ -70,8 +83,10 @@ trait SequelizeStaticAndInstance extends Errors {
     * @param col The name of the column
     */
   def col(col: String): typings.sequelize.mod.col = js.native
+  
   def condition(attr: js.Object, logic: String): where = js.native
   def condition(attr: js.Object, logic: js.Object): where = js.native
+  
   /**
     * Creates a object representing a database function. This can be used in search queries, both in where and
     * order parts, and as default values in column definitions. If you want to refer to columns in your
@@ -88,6 +103,7 @@ trait SequelizeStaticAndInstance extends Errors {
     * @param args All further arguments will be passed as arguments to the function
     */
   def fn(fn: String, args: js.Any*): typings.sequelize.mod.fn = js.native
+  
   /**
     * Creates an object representing nested where conditions for postgres's json data-type.
     *
@@ -104,18 +120,21 @@ trait SequelizeStaticAndInstance extends Errors {
   def json(conditionsOrPath: js.Object, value: String): typings.sequelize.mod.json = js.native
   def json(conditionsOrPath: js.Object, value: Boolean): typings.sequelize.mod.json = js.native
   def json(conditionsOrPath: js.Object, value: Double): typings.sequelize.mod.json = js.native
+  
   /**
     * Creates a object representing a literal, i.e. something that will not be escaped.
     *
     * @param val
     */
   def literal(`val`: js.Any): typings.sequelize.mod.literal = js.native
+  
   /**
     * An OR query
     *
     * @param args Each argument will be joined by OR
     */
   def or(args: (String | js.Object)*): typings.sequelize.mod.or = js.native
+  
   /**
     * A way of specifying attr = condition.
     *
@@ -139,4 +158,3 @@ trait SequelizeStaticAndInstance extends Errors {
   def where(attr: js.Object, logic: String): typings.sequelize.mod.where = js.native
   def where(attr: js.Object, logic: js.Object): typings.sequelize.mod.where = js.native
 }
-

@@ -2,12 +2,12 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DtdNotation extends IDtdNotation
-
 object DtdNotation {
+  
   @scala.inline
   def apply(
     appendChild: IXmlNode => IXmlNode,
@@ -44,4 +44,3 @@ object DtdNotation {
     __obj.asInstanceOf[DtdNotation]
   }
 }
-

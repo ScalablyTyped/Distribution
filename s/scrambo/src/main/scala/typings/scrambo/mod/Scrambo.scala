@@ -2,10 +2,11 @@ package typings.scrambo.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Scrambo extends js.Object {
+  
   /**
     * Returns an array of random scrambles with the given length
     * for the configured scrambler type.
@@ -13,6 +14,7 @@ trait Scrambo extends js.Object {
     */
   def get(): js.Array[String] = js.native
   def get(number: Double): js.Array[String] = js.native
+  
   /**
     * Returns the currently configured scramble length.
     */
@@ -22,6 +24,7 @@ trait Scrambo extends js.Object {
     * @param length
     */
   def length(length: Double): Scrambo = js.native
+  
   /**
     * Returns the current seed type of this scrambler.
     */
@@ -31,6 +34,7 @@ trait Scrambo extends js.Object {
     * @param seed
     */
   def seed(seed: Double): Scrambo = js.native
+  
   /**
     * Returns the currently configured scrambler type.
     */
@@ -41,4 +45,3 @@ trait Scrambo extends js.Object {
     */
   def `type`(`type`: ScrambleType): Scrambo = js.native
 }
-

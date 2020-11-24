@@ -4,9 +4,40 @@ import typings.ravenJs.mod.BreadcrumbType
 import typings.ravenJs.mod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ravenJsStrings {
+  
+  @scala.inline
+  def critical: critical = "critical".asInstanceOf[critical]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  
+  @scala.inline
+  def http: http = "http".asInstanceOf[http]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
+  
+  @scala.inline
+  def navigation: navigation = "navigation".asInstanceOf[navigation]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait critical extends LogLevel
   
@@ -36,26 +67,4 @@ object ravenJsStrings {
   
   @js.native
   sealed trait warning extends LogLevel
-  
-  @scala.inline
-  def critical: critical = "critical".asInstanceOf[critical]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

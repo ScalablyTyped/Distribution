@@ -2,7 +2,7 @@ package typings.obeliskJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "SideY")
 @js.native
@@ -53,4 +53,3 @@ class SideY () extends AbstractPrimitive {
   ) = this()
   def this(dimension: SideYDimension, color: SideColor, border: Boolean, useDefaultCanvas: Boolean) = this()
 }
-

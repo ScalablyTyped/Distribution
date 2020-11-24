@@ -11,8 +11,8 @@ Parse build blocks in HTML files to replace references to non-optimized scripts 
 | Full name          | gulp-useref |
 | Keywords           | gulpplugin, html, scripts, css, optimize, concat |
 | # releases         | 4 |
-| # dependents       | 106 |
-| # downloads        | 1572149 |
+| # dependents       | 210 |
+| # downloads        | 1592556 |
 | # stars            | 155 |
 
 ## Links

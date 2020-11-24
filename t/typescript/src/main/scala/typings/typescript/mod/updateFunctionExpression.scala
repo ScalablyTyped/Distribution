@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateFunctionExpression")
 @js.native
 object updateFunctionExpression extends js.Object {
+  
   def apply(
     node: FunctionExpression,
     modifiers: js.UndefOr[scala.Nothing],
@@ -317,6 +318,7 @@ object updateFunctionExpression extends js.Object {
     `type`: js.UndefOr[scala.Nothing],
     body: Block
   ): FunctionExpression = js.native
+  /** @deprecated Use `factory.updateFunctionExpression` or the factory supplied by your transformation context instead. */
   def apply(
     node: FunctionExpression,
     modifiers: js.Array[Modifier],
@@ -328,4 +330,3 @@ object updateFunctionExpression extends js.Object {
     body: Block
   ): FunctionExpression = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.semanticUiReact.menuMenuMod.MenuComponent
 import typings.semanticUiReact.menuMenuMod.MenuProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Menu")
 @js.native
@@ -16,8 +16,6 @@ class Menu protected ()
   def this(props: MenuProps) = this()
   def this(props: MenuProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Menu")
 @js.native
 object Menu extends TopLevel[MenuComponent]
-

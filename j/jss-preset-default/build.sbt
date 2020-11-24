@@ -1,15 +1,16 @@
 organization := "org.scalablytyped"
 name := "jss-preset-default"
-version := "10.3.0-46943f"
+version := "10.5.0-bf186c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "jss" % "10.3.0-ace8f9",
-  "org.scalablytyped" %%% "jss-plugin-default-unit" % "10.3.0-129eab",
-  "org.scalablytyped" %%% "jss-plugin-rule-value-observable" % "10.3.0-012bbb",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-f50e20",
+  "org.scalablytyped" %%% "jss" % "10.5.0-9884b6",
+  "org.scalablytyped" %%% "jss-plugin-default-unit" % "10.5.0-c53b2d",
+  "org.scalablytyped" %%% "jss-plugin-rule-value-observable" % "10.5.0-3fab9e",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

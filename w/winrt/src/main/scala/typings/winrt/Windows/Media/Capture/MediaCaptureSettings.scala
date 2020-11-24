@@ -2,12 +2,12 @@ package typings.winrt.Windows.Media.Capture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaCaptureSettings extends IMediaCaptureSettings
-
 object MediaCaptureSettings {
+  
   @scala.inline
   def apply(
     audioDeviceId: String,
@@ -20,4 +20,3 @@ object MediaCaptureSettings {
     __obj.asInstanceOf[MediaCaptureSettings]
   }
 }
-

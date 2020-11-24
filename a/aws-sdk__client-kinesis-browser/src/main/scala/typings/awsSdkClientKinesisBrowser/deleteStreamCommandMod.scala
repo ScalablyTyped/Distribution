@@ -5,33 +5,29 @@ import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisResolve
 import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesDeleteStreamInputMod.DeleteStreamInput
 import typings.awsSdkClientKinesisBrowser.typesDeleteStreamOutputMod.DeleteStreamOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kinesis-browser/commands/DeleteStreamCommand", JSImport.Namespace)
 @js.native
 object deleteStreamCommandMod extends js.Object {
+  
   @js.native
   class DeleteStreamCommand protected () extends Command[
           InputTypesUnion, 
           DeleteStreamInput, 
           OutputTypesUnion, 
           DeleteStreamOutput, 
-          KinesisResolvedConfiguration, 
-          Blob
+          KinesisResolvedConfiguration
         ] {
     def this(input: DeleteStreamInput) = this()
-    val middlewareStack: MiddlewareStack[DeleteStreamInput, DeleteStreamOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[DeleteStreamInput, DeleteStreamOutput] = js.native
   }
-  
 }
-

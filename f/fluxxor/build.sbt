@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "fluxxor"
-version := "1.5.2-dt-20200515Z-ac04f8"
+version := "1.5.2-dt-20201002Z-82bea6"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.4-b346ef",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-ed268e",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

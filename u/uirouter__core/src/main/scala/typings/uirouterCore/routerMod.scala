@@ -16,11 +16,12 @@ import typings.uirouterCore.urlServiceMod.UrlService
 import typings.uirouterCore.viewViewMod.ViewService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/router", JSImport.Namespace)
 @js.native
 object routerMod extends js.Object {
+  
   @js.native
   /**
     * Creates a new `UIRouter` object
@@ -33,40 +34,20 @@ object routerMod extends js.Object {
     def this(locationService: LocationServices) = this()
     def this(locationService: js.UndefOr[scala.Nothing], locationConfig: LocationConfig) = this()
     def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
+    
     /** @internal */ @JSName("$id")
     var $id: Double = js.native
+    
     /** @internal */ var _disposables: js.Any = js.native
+    
     /** @internal */ var _disposed: Boolean = js.native
+    
     /** @internal plugin instances are registered here */
     var _plugins: js.Any = js.native
-    /** An object that contains global router state, such as the current state and params */
-    var globals: UIRouterGlobals = js.native
-    var locationConfig: LocationConfig = js.native
-    var locationService: LocationServices = js.native
-    /** Provides a registry for states, and related registration services */
-    var stateRegistry: StateRegistry = js.native
-    /** Provides services related to states */
-    var stateService: StateService = js.native
-    /** Enable/disable tracing to the javascript console */
-    var trace: Trace_ = js.native
-    /** A service that exposes global Transition Hooks */
-    var transitionService: TransitionService = js.native
-    /**
-      * Deprecated for public use. Use [[urlService]] instead.
-      * @deprecated Use [[urlService]] instead
-      */
-    var urlMatcherFactory: UrlMatcherFactory = js.native
-    /**
-      * Deprecated for public use. Use [[urlService]] instead.
-      * @deprecated Use [[urlService]] instead
-      */
-    var urlRouter: UrlRouter = js.native
-    /** Provides services related to the URL */
-    var urlService: UrlService = js.native
-    /** Provides services related to ui-view synchronization */
-    var viewService: ViewService = js.native
+    
     /** Registers an object to be notified when the router is disposed */
     def disposable(disposable: Disposable): Unit = js.native
+    
     /**
       * Disposes this router instance
       *
@@ -80,6 +61,7 @@ object routerMod extends js.Object {
       */
     def dispose(): Unit = js.native
     def dispose(disposable: js.Any): Unit = js.native
+    
     /**
       * Returns all registered plugins
       * @return all registered plugins
@@ -92,6 +74,14 @@ object routerMod extends js.Object {
       * @return the plugin, or undefined
       */
     def getPlugin(pluginName: String): UIRouterPlugin = js.native
+    
+    /** An object that contains global router state, such as the current state and params */
+    var globals: UIRouterGlobals = js.native
+    
+    var locationConfig: LocationConfig = js.native
+    
+    var locationService: LocationServices = js.native
+    
     /** Add plugin (as javascript constructor function) */
     /** Add plugin (as javascript factory function) */
     def plugin[T /* <: UIRouterPlugin */](
@@ -104,8 +94,37 @@ object routerMod extends js.Object {
     /** Add plugin (as ES6 class) */
     def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T]): T = js.native
     def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T], options: js.Any): T = js.native
+    
+    /** Provides a registry for states, and related registration services */
+    var stateRegistry: StateRegistry = js.native
+    
+    /** Provides services related to states */
+    var stateService: StateService = js.native
+    
+    /** Enable/disable tracing to the javascript console */
+    var trace: Trace_ = js.native
+    
+    /** A service that exposes global Transition Hooks */
+    var transitionService: TransitionService = js.native
+    
+    /**
+      * Deprecated for public use. Use [[urlService]] instead.
+      * @deprecated Use [[urlService]] instead
+      */
+    var urlMatcherFactory: UrlMatcherFactory = js.native
+    
+    /**
+      * Deprecated for public use. Use [[urlService]] instead.
+      * @deprecated Use [[urlService]] instead
+      */
+    var urlRouter: UrlRouter = js.native
+    
+    /** Provides services related to the URL */
+    var urlService: UrlService = js.native
+    
+    /** Provides services related to ui-view synchronization */
+    var viewService: ViewService = js.native
   }
   
   type PluginFactory[T] = js.Function2[/* router */ UIRouter, /* options */ js.UndefOr[js.Any], T]
 }
-

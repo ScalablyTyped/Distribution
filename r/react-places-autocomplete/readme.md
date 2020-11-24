@@ -10,9 +10,9 @@ A React component for Google Maps Places Autocomplete
 | ------------------ | :-------------: |
 | Full name          | react-places-autocomplete |
 | Keywords           | React.js, React, react-component, place, places, google-maps, google-map, places-autocomplete, autocomplete, google, maps, latitude, longitude, geocode, geocoder |
-| # releases         | 16 |
-| # dependents       | 24 |
-| # downloads        | 4377002 |
+| # releases         | 3 |
+| # dependents       | 34 |
+| # downloads        | 5304173 |
 | # stars            | 4 |
 
 ## Links

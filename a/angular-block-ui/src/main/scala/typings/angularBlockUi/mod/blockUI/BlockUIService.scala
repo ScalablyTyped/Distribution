@@ -2,11 +2,11 @@ package typings.angularBlockUi.mod.blockUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BlockUIService extends js.Object {
-  var instances: BlockUIInstances = js.native
+  
   /**
     * Queues a callback function to be called when the block has finished.
     *
@@ -14,10 +14,14 @@ trait BlockUIService extends js.Object {
     * to a different location while there are still pending AJAX requests.
     */
   def done(doneCallback: js.Function0[Unit]): Unit = js.native
+  
+  var instances: BlockUIInstances = js.native
+  
   /**
     * Returns whether currently a block is shown for the instance or not.
     */
   def isBlocking(): Boolean = js.native
+  
   /**
     * Allows the message shown in the overlay to be updated
     * while to block is active.
@@ -25,10 +29,12 @@ trait BlockUIService extends js.Object {
     * @param message The message to show in the overlay.
     */
   def message(message: String): Unit = js.native
+  
   /**
     * The reset will force an unblock by setting the block count to 0.
     */
   def reset(): Unit = js.native
+  
   /**
     * The start method will start the user interface block.
     * Because multiple user interface elements can request
@@ -56,6 +62,7 @@ trait BlockUIService extends js.Object {
   def start(): Unit = js.native
   def start(messageOrOptions: String): Unit = js.native
   def start(messageOrOptions: BlockUIConfig): Unit = js.native
+  
   /**
     * This will decrease the block count.
     *
@@ -63,4 +70,3 @@ trait BlockUIService extends js.Object {
     */
   def stop(): Unit = js.native
 }
-

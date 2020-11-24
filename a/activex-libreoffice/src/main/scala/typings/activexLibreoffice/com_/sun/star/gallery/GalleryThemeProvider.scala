@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a container of GalleryThemes and makes it possible for you to manipulate them.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait GalleryThemeProvider
   extends XGalleryThemeProvider
      with XInitialization
-
 object GalleryThemeProvider {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -38,4 +38,3 @@ object GalleryThemeProvider {
     __obj.asInstanceOf[GalleryThemeProvider]
   }
 }
-

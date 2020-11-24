@@ -7,9 +7,64 @@ import typings.detox.mod.global.Detox_.PermissionState
 import typings.detox.mod.global.Detox_.Speed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detoxStrings {
+  
+  @scala.inline
+  def NO: NO = "NO".asInstanceOf[NO]
+  
+  @scala.inline
+  def YES: YES = "YES".asInstanceOf[YES]
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def android: android = "android".asInstanceOf[android]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def fast: fast = "fast".asInstanceOf[fast]
+  
+  @scala.inline
+  def inuse: inuse = "inuse".asInstanceOf[inuse]
+  
+  @scala.inline
+  def ios: ios = "ios".asInstanceOf[ios]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def slow: slow = "slow".asInstanceOf[slow]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def unset: unset = "unset".asInstanceOf[unset]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
   @js.native
   sealed trait NO extends PermissionState
   
@@ -65,42 +120,4 @@ object detoxStrings {
   
   @js.native
   sealed trait up extends Direction
-  
-  @scala.inline
-  def NO: NO = "NO".asInstanceOf[NO]
-  @scala.inline
-  def YES: YES = "YES".asInstanceOf[YES]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def fast: fast = "fast".asInstanceOf[fast]
-  @scala.inline
-  def inuse: inuse = "inuse".asInstanceOf[inuse]
-  @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def slow: slow = "slow".asInstanceOf[slow]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def unset: unset = "unset".asInstanceOf[unset]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
 }
-

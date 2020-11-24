@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.expressionsMod.expressions
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -34,12 +35,15 @@ import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationParame
 import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  *
+  * @ignore
   *
   * In version 7.9.0: introduced
   */
@@ -51,25 +55,22 @@ class NoExpression protected () extends Expression {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FNoExpression: IModel = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.NoExpression")
 @js.native
 object NoExpression extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -79,6 +80,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -88,6 +90,7 @@ object NoExpression extends js.Object {
     *  7.21.0 and higher
     */
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -97,6 +100,7 @@ object NoExpression extends js.Object {
     *  7.9.0 to 7.20.0
     */
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'left' property
@@ -106,6 +110,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'right' property
@@ -115,6 +120,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderRight(container: BinaryExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expressionModel' property
@@ -124,6 +130,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'valueModel' property
@@ -133,6 +140,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeListActionUnderValueModel(container: ChangeListAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'valueModel' property
@@ -142,6 +150,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expressionModel' property
@@ -151,6 +160,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'timeoutModel' property
@@ -160,6 +170,7 @@ object NoExpression extends js.Object {
     *  8.5.0 and higher
     */
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'initialValueModel' property
@@ -169,6 +180,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'limitExpressionModel' property
@@ -178,6 +190,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'offsetExpressionModel' property
@@ -187,6 +200,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -196,6 +210,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'returnValueModel' property
@@ -205,6 +220,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInEndEventUnderReturnValueModel(container: EndEvent): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expressionModel' property
@@ -214,6 +230,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'valueModel' property
@@ -223,6 +240,7 @@ object NoExpression extends js.Object {
     *  8.0.0 and higher
     */
   def createInFormDataPartUnderValueModel(container: FormDataPart): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'arguments' property
@@ -232,6 +250,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'marginBottomInInchModel' property
@@ -241,6 +260,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'marginLeftInInchModel' property
@@ -250,6 +270,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'marginRightInInchModel' property
@@ -259,6 +280,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'marginTopInInchModel' property
@@ -268,6 +290,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'customLocationModel' property
@@ -277,6 +300,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'password' property
@@ -286,6 +310,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'username' property
@@ -295,6 +320,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'valueModel' property
@@ -304,6 +330,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'condition' property
@@ -313,6 +340,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderCondition(container: IfExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'ifFalse' property
@@ -322,6 +350,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfFalse(container: IfExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'ifTrue' property
@@ -331,6 +360,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfTrue(container: IfExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expressionModel' property
@@ -340,6 +370,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'nodeModel' property
@@ -349,6 +380,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'valueModel' property
@@ -358,6 +390,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInMemberChangeUnderValueModel(container: MemberChange): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -367,6 +400,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -376,6 +410,7 @@ object NoExpression extends js.Object {
     *  8.0.0 and higher
     */
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expression' property
@@ -385,6 +420,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'hostExpressionModel' property
@@ -394,6 +430,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'passwordExpressionModel' property
@@ -403,6 +440,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'portExpressionModel' property
@@ -412,6 +450,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'useConfigurationExpressionModel' property
@@ -421,6 +460,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'usernameExpressionModel' property
@@ -430,6 +470,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'timeOutModel' property
@@ -439,6 +480,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -448,6 +490,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expressionModel' property
@@ -457,6 +500,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expression' property
@@ -466,6 +510,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'timeOutModel' property
@@ -475,6 +520,7 @@ object NoExpression extends js.Object {
     *  7.15.0 and higher
     */
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'argumentModel' property
@@ -484,6 +530,7 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): NoExpression = js.native
+  
   /**
     * Creates and returns a new NoExpression instance in the SDK and on the server.
     * The new NoExpression will be automatically stored in the 'expressionModel' property
@@ -493,5 +540,8 @@ object NoExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): NoExpression = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

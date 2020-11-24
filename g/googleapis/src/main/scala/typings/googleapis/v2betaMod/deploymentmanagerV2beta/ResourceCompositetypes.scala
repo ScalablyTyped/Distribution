@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2beta", "deploymentmanager_v2beta.Resource$Compositetypes")
 @js.native
 class ResourceCompositetypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.compositeTypes.delete
     * @desc Deletes a composite type.
@@ -42,6 +44,7 @@ class ResourceCompositetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.compositeTypes.get
     * @desc Gets information about a specific composite type.
@@ -71,6 +74,7 @@ class ResourceCompositetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompositeType]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.compositeTypes.insert
     * @desc Creates a composite type.
@@ -100,6 +104,7 @@ class ResourceCompositetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.compositeTypes.list
     * @desc Lists all composite types for Deployment Manager.
@@ -135,6 +140,7 @@ class ResourceCompositetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompositeTypesListResponse]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.compositeTypes.patch
     * @desc Updates a composite type. This method supports patch semantics.
@@ -165,6 +171,7 @@ class ResourceCompositetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.compositeTypes.update
     * @desc Updates a composite type.
@@ -196,4 +203,3 @@ class ResourceCompositetypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

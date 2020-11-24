@@ -2,10 +2,11 @@ package typings.stripejs.elementMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ElementFactory extends js.Object {
+  
   /**
     * Creates a new StripeJS element
     * @see https://stripe.com/docs/stripe-js/reference#elements-create
@@ -40,4 +41,3 @@ trait ElementFactory extends js.Object {
   def create(`type`: ElementType, options: IdealBankOptions): StripeElement = js.native
   def create(`type`: ElementType, options: PaymentButtonOptions): StripeElement = js.native
 }
-

@@ -12,7 +12,7 @@ Express/connect module for Node i18n and l10n support
 | Keywords           | express, connect, l10n, i18n, gettext |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 124762 |
+| # downloads        | 168034 |
 | # stars            | 5 |
 
 ## Links

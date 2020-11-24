@@ -2,7 +2,7 @@ package typings.materialMenuSurface.utilMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @license
@@ -31,11 +31,11 @@ import scala.scalajs.js.annotation._
   - typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform
 */
 trait CssTransformPropertyName extends js.Object
-
 object CssTransformPropertyName {
+  
   @scala.inline
   def transform: typings.materialMenuSurface.materialMenuSurfaceStrings.transform = "transform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.transform]
+  
   @scala.inline
   def webkitTransform: typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform = "webkitTransform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform]
 }
-

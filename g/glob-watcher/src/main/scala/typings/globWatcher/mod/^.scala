@@ -3,11 +3,12 @@ package typings.globWatcher.mod
 import typings.node.fsMod.FSWatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("glob-watcher", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Watch globs and execute a function upon change, with intelligent defaults for debouncing and queueing.
     * @param globs Takes a glob string or an array of glob strings as the first argument.
@@ -50,4 +51,3 @@ object ^ extends js.Object {
     cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
   ): FSWatcher = js.native
 }
-

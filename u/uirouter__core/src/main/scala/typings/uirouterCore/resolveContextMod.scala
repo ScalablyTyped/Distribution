@@ -10,16 +10,22 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/resolve/resolveContext", JSImport.Namespace)
 @js.native
 object resolveContextMod extends js.Object {
+  
+  val NATIVE_INJECTOR_TOKEN: String = js.native
+  
   @js.native
   class ResolveContext protected () extends js.Object {
     def this(_path: js.Array[PathNode]) = this()
+    
     var _injector: UIInjector = js.native
+    
     var _path: js.Any = js.native
+    
     /**
       * Adds Resolvables to the node that matches the state
       *
@@ -36,15 +42,19 @@ object resolveContextMod extends js.Object {
       * @param state Used to find the node to put the resolvable on
       */
     def addResolvables(newResolvables: js.Array[Resolvable], state: StateObject): Unit = js.native
+    
     def findNode(resolvable: Resolvable): PathNode = js.native
+    
     /**
       * Gets the async dependencies of a Resolvable
       *
       * Given a Resolvable, returns its dependencies as a Resolvable[]
       */
     def getDependencies(resolvable: Resolvable): js.Array[Resolvable] = js.native
+    
     /** Returns the [[ResolvePolicy]] for the given [[Resolvable]] */
     def getPolicy(resolvable: Resolvable): ResolvePolicy = js.native
+    
     /**
       * Gets the Resolvable that matches the token
       *
@@ -52,9 +62,12 @@ object resolveContextMod extends js.Object {
       * Throws an error if it doesn't exist in the ResolveContext
       */
     def getResolvable(token: js.Any): Resolvable = js.native
+    
     /** Gets all the tokens found in the resolve context, de-duplicated */
     def getTokens(): js.Array[_] = js.native
+    
     def injector(): UIInjector = js.native
+    
     /**
       * Returns a promise for an array of resolved path Element promises
       *
@@ -66,6 +79,7 @@ object resolveContextMod extends js.Object {
     def resolvePath(when: js.UndefOr[scala.Nothing], trans: Transition): js.Promise[js.Array[Token]] = js.native
     def resolvePath(when: PolicyWhen): js.Promise[js.Array[Token]] = js.native
     def resolvePath(when: PolicyWhen, trans: Transition): js.Promise[js.Array[Token]] = js.native
+    
     /**
       * Returns a ResolveContext that includes a portion of this one
       *
@@ -91,7 +105,4 @@ object resolveContextMod extends js.Object {
       */
     def subContext(state: StateObject): ResolveContext = js.native
   }
-  
-  val NATIVE_INJECTOR_TOKEN: String = js.native
 }
-

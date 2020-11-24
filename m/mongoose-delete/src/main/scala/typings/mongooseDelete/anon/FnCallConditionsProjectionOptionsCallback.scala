@@ -5,10 +5,11 @@ import typings.mongoose.mod.FilterQuery
 import typings.mongoose.mod.QueryFindOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallConditionsProjectionOptionsCallback extends js.Object {
+  
   def apply(): DocumentQueryArrayanyanyAll = js.native
   def apply(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): DocumentQueryArrayanyanyAll = js.native
   def apply(conditions: FilterQuery[_]): DocumentQueryArrayanyanyAll = js.native
@@ -94,4 +95,3 @@ trait FnCallConditionsProjectionOptionsCallback extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
   ): DocumentQueryArrayanyanyAll = js.native
 }
-

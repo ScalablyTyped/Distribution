@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sorting based on distance to the camera. CPU only.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.PARTICLESORT_DISTANCE")
 @js.native
 object PARTICLESORT_DISTANCE extends TopLevel[Double]
-

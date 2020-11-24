@@ -5,9 +5,34 @@ import typings.smartwizard.JQuerySmartwizard.ToolbarPosition
 import typings.smartwizard.JQuerySmartwizard.TransitionEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smartwizardStrings {
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def fade: fade = "fade".asInstanceOf[fade]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
   @js.native
   sealed trait both extends ToolbarPosition
   
@@ -33,22 +58,4 @@ object smartwizardStrings {
   
   @js.native
   sealed trait top extends ToolbarPosition
-  
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
 }
-

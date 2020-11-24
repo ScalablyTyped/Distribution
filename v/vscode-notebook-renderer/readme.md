@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-notebook-renderer
 
-Typings are for version 1.47
+Typings are for version 1.48
 
 
 

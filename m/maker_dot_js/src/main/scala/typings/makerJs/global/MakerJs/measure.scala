@@ -12,27 +12,11 @@ import typings.makerJs.MakerJs.ISlope
 import typings.makerJs.MakerJs.measure.IBoundingHex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.measure")
 @js.native
 object measure extends js.Object {
-  /**
-    * A list of maps of measurements.
-    *
-    * @param modelToMeasure The model to measure.
-    * @param atlas Optional atlas to save measurements.
-    * @returns object with low and high points.
-    */
-  @js.native
-  class Atlas protected ()
-    extends typings.makerJs.MakerJs.measure.Atlas {
-    /**
-      * Constructor.
-      * @param modelContext The model to measure.
-      */
-    def this(modelContext: IModel) = this()
-  }
   
   /**
     * Measures the minimum bounding hexagon surrounding a model. The hexagon is oriented such that the right and left sides are vertical, and the top and bottom are pointed.
@@ -41,6 +25,7 @@ object measure extends js.Object {
     * @returns IBoundingHex object which is a hexagon model, with an additional radius property.
     */
   def boundingHexagon(modelToMeasure: IModel): IBoundingHex = js.native
+  
   /**
     * Increase a measurement by an additional measurement.
     *
@@ -50,6 +35,7 @@ object measure extends js.Object {
     * @returns The increased original measurement (for cascading).
     */
   def increase(baseMeasure: IMeasure, addMeasure: IMeasure): IMeasure = js.native
+  
   /**
     * Find out if two angles are equal.
     *
@@ -59,6 +45,7 @@ object measure extends js.Object {
     */
   def isAngleEqual(angleA: Double, angleB: Double): Boolean = js.native
   def isAngleEqual(angleA: Double, angleB: Double, accuracy: Double): Boolean = js.native
+  
   /**
     * Check for arc being concave or convex towards a given point.
     *
@@ -67,6 +54,7 @@ object measure extends js.Object {
     * @returns Boolean true if arc is concave towards point.
     */
   def isArcConcaveTowardsPoint(arc: IPathArc, towardsPoint: IPoint): Boolean = js.native
+  
   /**
     * Check for arc overlapping another arc.
     *
@@ -76,6 +64,7 @@ object measure extends js.Object {
     * @returns Boolean true if arcA is overlapped with arcB.
     */
   def isArcOverlapping(arcA: IPathArc, arcB: IPathArc, excludeTangents: Boolean): Boolean = js.native
+  
   /**
     * Check if a given number is between two given limits.
     *
@@ -86,6 +75,7 @@ object measure extends js.Object {
     * @returns Boolean true if value is between (or equal to) the limits.
     */
   def isBetween(valueInQuestion: Double, limitA: Double, limitB: Double, exclusive: Boolean): Boolean = js.native
+  
   /**
     * Check if a given angle is between an arc's start and end angles.
     *
@@ -95,6 +85,7 @@ object measure extends js.Object {
     * @returns Boolean true if angle is between (or equal to) the arc's start and end angles.
     */
   def isBetweenArcAngles(angleInQuestion: Double, arc: IPathArc, exclusive: Boolean): Boolean = js.native
+  
   /**
     * Check if a given point is between a line's end points.
     *
@@ -104,6 +95,7 @@ object measure extends js.Object {
     * @returns Boolean true if point is between (or equal to) the line's origin and end points.
     */
   def isBetweenPoints(pointInQuestion: IPoint, line: IPathLine, exclusive: Boolean): Boolean = js.native
+  
   /**
     * Check if a given bezier seed is simply a line.
     *
@@ -111,6 +103,7 @@ object measure extends js.Object {
     * @returns Boolean true if bezier seed has control points on the line slope and between the line endpoints.
     */
   def isBezierSeedLinear(seed: IPathBezierSeed): Boolean = js.native
+  
   /**
     * Check for line overlapping another line.
     *
@@ -120,6 +113,7 @@ object measure extends js.Object {
     * @returns Boolean true if lineA is overlapped with lineB.
     */
   def isLineOverlapping(lineA: IPathLine, lineB: IPathLine, excludeTangents: Boolean): Boolean = js.native
+  
   /**
     * Check for measurement overlapping another measurement.
     *
@@ -128,6 +122,7 @@ object measure extends js.Object {
     * @returns Boolean true if measureA is overlapped with measureB.
     */
   def isMeasurementOverlapping(measureA: IMeasure, measureB: IMeasure): Boolean = js.native
+  
   /**
     * Find out if two paths are equal.
     *
@@ -161,6 +156,7 @@ object measure extends js.Object {
   ): Boolean = js.native
   def isPathEqual(pathA: IPath, pathB: IPath, withinPointDistance: Double, pathAOffset: IPoint): Boolean = js.native
   def isPathEqual(pathA: IPath, pathB: IPath, withinPointDistance: Double, pathAOffset: IPoint, pathBOffset: IPoint): Boolean = js.native
+  
   /**
     * Find out if two points are equal.
     *
@@ -170,6 +166,7 @@ object measure extends js.Object {
     */
   def isPointEqual(a: IPoint, b: IPoint): Boolean = js.native
   def isPointEqual(a: IPoint, b: IPoint, withinDistance: Double): Boolean = js.native
+  
   /**
     * Find out if point is on a slope.
     *
@@ -179,6 +176,7 @@ object measure extends js.Object {
     */
   def isPointOnSlope(p: IPoint, slope: ISlope): Boolean = js.native
   def isPointOnSlope(p: IPoint, slope: ISlope, withinDistance: Double): Boolean = js.native
+  
   /**
     * Check for slope equality.
     *
@@ -187,10 +185,12 @@ object measure extends js.Object {
     * @returns Boolean true if slopes are equal.
     */
   def isSlopeEqual(slopeA: ISlope, slopeB: ISlope): Boolean = js.native
+  
   /**
     * Gets the slope of a line.
     */
   def lineSlope(line: IPathLine): ISlope = js.native
+  
   /**
     * Measures the smallest rectangle which contains a model.
     *
@@ -200,6 +200,7 @@ object measure extends js.Object {
     */
   def modelExtents(modelToMeasure: IModel): IMeasureWithCenter = js.native
   def modelExtents(modelToMeasure: IModel, atlas: typings.makerJs.MakerJs.measure.Atlas): IMeasureWithCenter = js.native
+  
   /**
     * Calculates the smallest rectangle which contains a path.
     *
@@ -208,6 +209,7 @@ object measure extends js.Object {
     */
   def pathExtents(pathToMeasure: IPath): IMeasure = js.native
   def pathExtents(pathToMeasure: IPath, addOffset: IPoint): IMeasure = js.native
+  
   /**
     * Measures the length of a path.
     *
@@ -215,6 +217,7 @@ object measure extends js.Object {
     * @returns Length of the path.
     */
   def pathLength(pathToMeasure: IPath): Double = js.native
+  
   /**
     * Calculates the distance between two points.
     *
@@ -223,5 +226,21 @@ object measure extends js.Object {
     * @returns Distance between points.
     */
   def pointDistance(a: IPoint, b: IPoint): Double = js.native
+  
+  /**
+    * A list of maps of measurements.
+    *
+    * @param modelToMeasure The model to measure.
+    * @param atlas Optional atlas to save measurements.
+    * @returns object with low and high points.
+    */
+  @js.native
+  class Atlas protected ()
+    extends typings.makerJs.MakerJs.measure.Atlas {
+    /**
+      * Constructor.
+      * @param modelContext The model to measure.
+      */
+    def this(modelContext: IModel) = this()
+  }
 }
-

@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest")
 @js.native
@@ -17,26 +17,30 @@ import scala.scalajs.js.annotation._
   */
 class GossipBlockRequest () extends IGossipBlockRequest {
   def this(properties: IGossipBlockRequest) = this()
+  
   /** GossipBlockRequest blockId. */
   @JSName("blockId")
   var blockId_GossipBlockRequest: String = js.native
+  
   /** GossipBlockRequest nonce. */
   @JSName("nonce")
   var nonce_GossipBlockRequest: String = js.native
+  
   /** GossipBlockRequest timeToLive. */
   @JSName("timeToLive")
   var timeToLive_GossipBlockRequest: Double = js.native
+  
   /**
     * Converts this GossipBlockRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "GossipBlockRequest")
 @js.native
 object GossipBlockRequest extends js.Object {
+  
   /**
     * Creates a new GossipBlockRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -44,6 +48,7 @@ object GossipBlockRequest extends js.Object {
     */
   def create(): GossipBlockRequest = js.native
   def create(properties: IGossipBlockRequest): GossipBlockRequest = js.native
+  
   /**
     * Decodes a GossipBlockRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -56,6 +61,7 @@ object GossipBlockRequest extends js.Object {
   def decode(reader: Reader, length: Double): GossipBlockRequest = js.native
   def decode(reader: Uint8Array): GossipBlockRequest = js.native
   def decode(reader: Uint8Array, length: Double): GossipBlockRequest = js.native
+  
   /**
     * Decodes a GossipBlockRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,6 +71,7 @@ object GossipBlockRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): GossipBlockRequest = js.native
   def decodeDelimited(reader: Uint8Array): GossipBlockRequest = js.native
+  
   /**
     * Encodes the specified GossipBlockRequest message. Does not implicitly {@link GossipBlockRequest.verify|verify} messages.
     * @param message GossipBlockRequest message or plain object to encode
@@ -73,6 +80,7 @@ object GossipBlockRequest extends js.Object {
     */
   def encode(message: IGossipBlockRequest): Writer = js.native
   def encode(message: IGossipBlockRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified GossipBlockRequest message, length delimited. Does not implicitly {@link GossipBlockRequest.verify|verify} messages.
     * @param message GossipBlockRequest message or plain object to encode
@@ -81,12 +89,14 @@ object GossipBlockRequest extends js.Object {
     */
   def encodeDelimited(message: IGossipBlockRequest): Writer = js.native
   def encodeDelimited(message: IGossipBlockRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a GossipBlockRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns GossipBlockRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): GossipBlockRequest = js.native
+  
   /**
     * Creates a plain object from a GossipBlockRequest message. Also converts values to other types if specified.
     * @param message GossipBlockRequest
@@ -95,6 +105,7 @@ object GossipBlockRequest extends js.Object {
     */
   def toObject(message: GossipBlockRequest): StringDictionary[js.Any] = js.native
   def toObject(message: GossipBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a GossipBlockRequest message.
     * @param message Plain object to verify
@@ -102,4 +113,3 @@ object GossipBlockRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies in which way the standard normals for an object are produced. */
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait NormalsKind extends js.Object
-
 object NormalsKind {
+  
   /**
     * forces one normal per flat part.
     *
@@ -23,9 +23,11 @@ object NormalsKind {
     */
   @scala.inline
   def FLAT: `1` = 1.asInstanceOf[`1`]
+  
   /** does not produce standard normals, but leaves the object-specific ones untouched. */
   @scala.inline
   def SPECIFIC: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * forces normals to think that the object is a sphere.
     *
@@ -34,4 +36,3 @@ object NormalsKind {
   @scala.inline
   def SPHERE: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RouteAvoidance extends js.Object
-
 @JSGlobal("Microsoft.Maps.Directions.RouteAvoidance")
 @js.native
 object RouteAvoidance extends js.Object {
+  
   /** Avoid using airlines when calculating the route. This option only affects routes with a transitRouteMode that have the culture set to ja-jp. */
   @js.native
   sealed trait avoidAirline extends RouteAvoidance
@@ -41,6 +41,4 @@ object RouteAvoidance extends js.Object {
   /** Calculate the best route using any travel option available. */
   @js.native
   sealed trait none extends RouteAvoidance
-  
 }
-

@@ -3,11 +3,15 @@ package typings.`3dBinPacking`
 import typings.`3dBinPacking`.bws.packer.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("3d-bin-packing", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  @JSName("_Test")
+  def Test(): Unit = js.native
+  
   @js.native
   class GAWrapperArray protected ()
     extends typings.`3dBinPacking`.bws.packer.GAWrapperArray {
@@ -273,8 +277,4 @@ object mod extends js.Object {
       */
     def this(name: String, price: Double, width: Double, height: Double, length: Double, thickness: Double) = this()
   }
-  
-  @JSName("_Test")
-  def Test(): Unit = js.native
 }
-

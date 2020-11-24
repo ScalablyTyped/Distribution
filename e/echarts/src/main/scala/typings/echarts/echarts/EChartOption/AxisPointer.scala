@@ -7,19 +7,21 @@ import typings.echarts.echartsStrings.mousemoveVerticallineclick
 import typings.echarts.echartsStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @todo describe
   */
 @js.native
 trait AxisPointer extends Pointer {
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component
     * in option or API.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * axisPointers can be linked to each other.
     * The term 'link' represents that axes are synchronized
@@ -51,6 +53,7 @@ trait AxisPointer extends Pointer {
     * @see https://echarts.apache.org/en/option.html#axisPointer.link
     */
   var link: js.UndefOr[js.Array[js.Object]] = js.native
+  
   /**
     * Conditions to trigger tooltip.
     * Options:
@@ -68,39 +71,48 @@ trait AxisPointer extends Pointer {
     */
   var triggerOn: js.UndefOr[mousemove | click | mousemoveVerticallineclick | none] = js.native
 }
-
 object AxisPointer {
+  
   @scala.inline
   def apply(): AxisPointer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisPointer]
   }
+  
   @scala.inline
   implicit class AxisPointerOps[Self <: AxisPointer] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setLinkVarargs(value: js.Object*): Self = this.set("link", js.Array(value :_*))
+    
     @scala.inline
     def setLink(value: js.Array[js.Object]): Self = this.set("link", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLink: Self = this.set("link", js.undefined)
+    
     @scala.inline
     def setTriggerOn(value: mousemove | click | mousemoveVerticallineclick | none): Self = this.set("triggerOn", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTriggerOn: Self = this.set("triggerOn", js.undefined)
   }
-  
 }
-

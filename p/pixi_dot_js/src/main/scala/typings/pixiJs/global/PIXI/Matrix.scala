@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The PixiJS Matrix as a class makes it a lot faster.
@@ -29,11 +29,11 @@ class Matrix protected ()
     ty: js.UndefOr[Double]
   ) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Matrix")
 @js.native
 object Matrix extends js.Object {
+  
   /**
     * A default (identity) matrix
     *
@@ -42,6 +42,7 @@ object Matrix extends js.Object {
     * @member {PIXI.Matrix}
     */
   var IDENTITY: typings.pixiJs.PIXI.Matrix = js.native
+  
   /**
     * A temp matrix
     *
@@ -51,4 +52,3 @@ object Matrix extends js.Object {
     */
   var TEMP_MATRIX: typings.pixiJs.PIXI.Matrix = js.native
 }
-

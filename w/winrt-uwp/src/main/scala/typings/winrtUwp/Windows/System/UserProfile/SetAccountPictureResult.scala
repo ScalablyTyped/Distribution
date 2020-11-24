@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System.UserProfile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SetAccountPictureResult extends js.Object
-
 /** A result that is returned when you try to set the image for a user account. */
 @JSGlobal("Windows.System.UserProfile.SetAccountPictureResult")
 @js.native
 object SetAccountPictureResult extends js.Object {
+  
   /** Indicates that the picture was not set because the AccountPictureChangeEnabled property is disabled, or the user cancelled the consent prompt. */
   @js.native
   sealed trait changeDisabled extends SetAccountPictureResult
@@ -34,6 +34,4 @@ object SetAccountPictureResult extends js.Object {
   /** Indicates that the video was not set because of its frame size was too large. */
   @js.native
   sealed trait videoFrameSizeError extends SetAccountPictureResult
-  
 }
-

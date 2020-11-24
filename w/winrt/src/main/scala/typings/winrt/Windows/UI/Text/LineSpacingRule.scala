@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LineSpacingRule extends js.Object
-
 @JSGlobal("Windows.UI.Text.LineSpacingRule")
 @js.native
 object LineSpacingRule extends js.Object {
+  
   @js.native
   sealed trait atLeast extends LineSpacingRule
   
@@ -33,6 +33,4 @@ object LineSpacingRule extends js.Object {
   
   @js.native
   sealed trait undefined extends LineSpacingRule
-  
 }
-

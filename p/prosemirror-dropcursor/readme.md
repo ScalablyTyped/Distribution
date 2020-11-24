@@ -10,9 +10,9 @@ Drop cursor plugin for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-dropcursor |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 36 |
-| # downloads        | 1872675 |
+| # releases         | 8 |
+| # dependents       | 69 |
+| # downloads        | 3905897 |
 | # stars            | 0 |
 
 ## Links

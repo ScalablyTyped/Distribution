@@ -5,7 +5,7 @@ import typings.std.Blob
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base File class used by all File Types that the Loader can support.
@@ -22,11 +22,11 @@ class File protected ()
     */
   def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, fileConfig: FileConfig) = this()
 }
-
 /* static members */
 @JSGlobal("Phaser.Loader.File")
 @js.native
 object File extends js.Object {
+  
   /**
     * Static method for creating object URL using URL API and setting it as image 'src' attribute.
     * If URL API is not supported (usually on old browsers) it falls back to creating Base64 encoded url using FileReader.
@@ -35,6 +35,7 @@ object File extends js.Object {
     * @param defaultType Default mime type used if blob type is not available.
     */
   def createObjectURL(image: HTMLImageElement, blob: Blob, defaultType: String): Unit = js.native
+  
   /**
     * Static method for releasing an existing object URL which was previously created
     * by calling {@link File#createObjectURL} method.
@@ -42,4 +43,3 @@ object File extends js.Object {
     */
   def revokeObjectURL(image: HTMLImageElement): Unit = js.native
 }
-

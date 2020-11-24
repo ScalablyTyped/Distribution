@@ -13,24 +13,27 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`job-timed-out`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-waiting`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JobInfo
   extends Accessor
      with JSONSupport {
+  
   /**
     * The unique job ID assigned by ArcGIS Server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html#jobId)
     */
   var jobId: String = js.native
+  
   /**
     * The job status.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html#jobStatus)
     */
   var jobStatus: `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting` = js.native
+  
   /**
     * An array of messages that include the message type and a description.
     *
@@ -38,4 +41,3 @@ trait JobInfo
     */
   var messages: js.Array[GPMessage] = js.native
 }
-

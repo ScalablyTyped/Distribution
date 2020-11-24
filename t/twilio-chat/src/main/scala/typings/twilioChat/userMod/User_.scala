@@ -3,7 +3,7 @@ package typings.twilioChat.userMod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc Extended user information.
@@ -35,34 +35,53 @@ class User_ protected () extends EventEmitter {
     * @typedef {('friendlyName' | 'attributes' | 'online' | 'notifiable')} User#UpdateReason
     */
   def this(identity: String, entityName: String, services: UserServices) = this()
-  var entity: js.Any = js.native
-  var promiseToFetch: js.Any = js.native
-  var services: js.Any = js.native
-  var state: js.Any = js.native
-  var subscribed: js.Any = js.native
+  
   def _ensureFetched(): js.Promise[User] = js.native
+  
   def _fetch(): js.Promise[User] = js.native
+  
   def _update(key: String, value: js.Any): Unit = js.native
+  
   def _updateReachabilityInfo(map: js.Any, update: js.Any): js.Any = js.native
+  
   def attributes: js.Any = js.native
+  
+  var entity: js.Any = js.native
+  
   def entityName_=(name: String): Unit = js.native
+  
   def friendlyName: String = js.native
+  
   def identity: String = js.native
   def identity_=(identity: String): Unit = js.native
+  
   def isSubscribed: Boolean = js.native
+  
   def notifiable: Boolean = js.native
+  
   def online: Boolean = js.native
+  
+  var promiseToFetch: js.Any = js.native
+  
+  var services: js.Any = js.native
+  
+  var state: js.Any = js.native
+  
+  var subscribed: js.Any = js.native
+  
   /**
     * Removes User from subscription list.
     * @returns {Promise<void>} Promise of completion
     */
   def unsubscribe(): js.Promise[Unit] = js.native
+  
   /**
     * Updates user attributes.
     * @param {any} attributes new attributes for User.
     * @returns {Promise<User|Error|SessionError>}
     */
   def updateAttributes(attributes: js.Any): js.Promise[this.type] = js.native
+  
   /**
     * Update Users friendlyName.
     * @param {String} friendlyName - Updated friendlyName
@@ -70,4 +89,3 @@ class User_ protected () extends EventEmitter {
     */
   def updateFriendlyName(friendlyName: js.Any): js.Promise[this.type] = js.native
 }
-

@@ -12,7 +12,7 @@ a fast newline (or any delimiter) splitter stream - like require('split') but fa
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 52 |
-| # downloads        | 1372871 |
+| # downloads        | 1349727 |
 | # stars            | 2 |
 
 ## Links

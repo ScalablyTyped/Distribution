@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Licensecodes")
 @js.native
 class ResourceLicensecodes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.licenseCodes.get
     * @desc Return a specified license code. License codes are mirrored across
@@ -43,6 +45,7 @@ class ResourceLicensecodes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicenseCode]
   ): Unit = js.native
+  
   /**
     * compute.licenseCodes.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -77,4 +80,3 @@ class ResourceLicensecodes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

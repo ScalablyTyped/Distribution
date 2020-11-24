@@ -5,14 +5,16 @@ import typings.reactDnd.optionsMod.DragPreviewOptions
 import typings.reactDnd.optionsMod.DragSourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] extends js.Object {
+  
   /**
     * When the dragging starts, beginDrag is called. If an object is returned from this function it will overide the default dragItem
     */
   var begin: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, js.UndefOr[DragObject | Unit]]] = js.native
+  
   /**
     * Optional.
     * Use it to specify whether the dragging is currently allowed. If you want to always allow it, just omit this method.
@@ -20,10 +22,12 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
     * monitor.canDrag() inside this method.
     */
   var canDrag: js.UndefOr[Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean])] = js.native
+  
   /**
     * A function to collect rendering properties
     */
   var collect: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, CollectedProps]] = js.native
+  
   /**
     * Optional.
     * When the dragging stops, endDrag is called. For every beginDrag call, a corresponding endDrag call is guaranteed.
@@ -35,6 +39,7 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
   var end: js.UndefOr[
     js.Function2[/* draggedItem */ js.UndefOr[DragObject], /* monitor */ DragSourceMonitor, Unit]
   ] = js.native
+  
   /**
     * Optional.
     * By default, only the drag source that initiated the drag operation is considered to be dragging. You can
@@ -46,6 +51,7 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
     * Note: You may not call monitor.isDragging() inside this method.
     */
   var isDragging: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, Boolean]] = js.native
+  
   /**
     * A plain javascript item describing the data being dragged.
     * This is the only information available to the drop targets about the drag
@@ -58,66 +64,86 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
     *
     */
   var item: DragObject = js.native
+  
   /**
     * The drag source options
     */
   var options: js.UndefOr[DragSourceOptions] = js.native
+  
   /**
     * DragPreview options
     */
   var previewOptions: js.UndefOr[DragPreviewOptions] = js.native
 }
-
 object DragSourceHookSpec {
+  
   @scala.inline
-  def apply[/* <: typings.reactDnd.hooksApiMod.DragObjectWithType */ DragObject, DropResult, CollectedProps](item: DragObject): DragSourceHookSpec[DragObject, DropResult, CollectedProps] = {
+  def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](item: DragObject): DragSourceHookSpec[DragObject, DropResult, CollectedProps] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]
   }
+  
   @scala.inline
-  implicit class DragSourceHookSpecOps[Self <: DragSourceHookSpec[_, _, _], /* <: typings.reactDnd.hooksApiMod.DragObjectWithType */ DragObject, DropResult, CollectedProps] (val x: Self with (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
+  implicit class DragSourceHookSpecOps[Self <: DragSourceHookSpec[_, _, _], DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] (val x: Self with (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setItem(value: DragObject): Self = this.set("item", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBegin(value: /* monitor */ DragSourceMonitor => js.UndefOr[DragObject | Unit]): Self = this.set("begin", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteBegin: Self = this.set("begin", js.undefined)
+    
     @scala.inline
     def setCanDragFunction1(value: /* monitor */ DragSourceMonitor => Boolean): Self = this.set("canDrag", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCanDrag(value: Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean])): Self = this.set("canDrag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCanDrag: Self = this.set("canDrag", js.undefined)
+    
     @scala.inline
     def setCollect(value: /* monitor */ DragSourceMonitor => CollectedProps): Self = this.set("collect", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteCollect: Self = this.set("collect", js.undefined)
+    
     @scala.inline
     def setEnd(value: (/* draggedItem */ js.UndefOr[DragObject], /* monitor */ DragSourceMonitor) => Unit): Self = this.set("end", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteEnd: Self = this.set("end", js.undefined)
+    
     @scala.inline
     def setIsDragging(value: /* monitor */ DragSourceMonitor => Boolean): Self = this.set("isDragging", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteIsDragging: Self = this.set("isDragging", js.undefined)
+    
     @scala.inline
     def setOptions(value: DragSourceOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOptions: Self = this.set("options", js.undefined)
+    
     @scala.inline
     def setPreviewOptions(value: DragPreviewOptions): Self = this.set("previewOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreviewOptions: Self = this.set("previewOptions", js.undefined)
   }
-  
 }
-

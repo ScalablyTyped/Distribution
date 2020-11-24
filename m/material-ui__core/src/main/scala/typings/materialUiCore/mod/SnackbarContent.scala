@@ -5,9 +5,8 @@ import typings.materialUiCore.snackbarContentSnackbarContentMod.SnackbarContentP
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core", "SnackbarContent")
 @js.native
 object SnackbarContent extends TopLevel[ComponentType[SnackbarContentProps]]
-

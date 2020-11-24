@@ -9,11 +9,20 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/statusbar/lib/components", JSImport.Namespace)
 @js.native
 object componentsMod extends js.Object {
+  
+  def showPopup(options: IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = js.native
+  
+  @js.native
+  object GroupItem extends js.Object {
+    
+    def apply(props: IProps with HTMLAttributes[HTMLDivElement]): ReactElement = js.native
+  }
+  
   @js.native
   class Popup protected ()
     extends typings.jupyterlabStatusbar.hoverMod.Popup {
@@ -23,21 +32,15 @@ object componentsMod extends js.Object {
     def this(options: IOptions) = this()
   }
   
-  def showPopup(options: IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = js.native
-  @js.native
-  object GroupItem extends js.Object {
-    def apply(props: IProps with HTMLAttributes[HTMLDivElement]): ReactElement = js.native
-  }
-  
   @js.native
   object ProgressBar extends js.Object {
+    
     def apply(props: typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps): Element = js.native
   }
   
   @js.native
   object TextItem extends js.Object {
+    
     def apply(props: typings.jupyterlabStatusbar.textMod.TextItem.IProps with HTMLAttributes[HTMLSpanElement]): ReactElement = js.native
   }
-  
 }
-

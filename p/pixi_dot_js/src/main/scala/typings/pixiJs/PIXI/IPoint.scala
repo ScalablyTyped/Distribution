@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common interface for points. Both Point and ObservablePoint implement it
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IPoint extends IPointData {
+  
   /**
     * Copies x and y from the given point
     * @method copyFrom
@@ -20,6 +21,7 @@ trait IPoint extends IPointData {
     * @returns {this} Returns itself.
     */
   def copyFrom(p: IPointData): this.type = js.native
+  
   /**
     * Copies x and y into the given point
     * @method copyTo
@@ -28,6 +30,7 @@ trait IPoint extends IPointData {
     * @returns {PIXI.IPoint} Given point with values updated
     */
   def copyTo(p: IPoint): IPoint = js.native
+  
   /**
     * Returns true if the given point is equal to this point
     *
@@ -37,6 +40,7 @@ trait IPoint extends IPointData {
     * @returns {boolean} Whether the given point equal to this point
     */
   def equals(p: IPointData): Boolean = js.native
+  
   /**
     * Sets the point to a new x and y position.
     * If y is omitted, both x and y will be set to x.
@@ -51,4 +55,3 @@ trait IPoint extends IPointData {
   def set(x: Double): Unit = js.native
   def set(x: Double, y: Double): Unit = js.native
 }
-

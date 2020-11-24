@@ -5,16 +5,18 @@ import typings.mocha.Mocha.Context
 import typings.mocha.Mocha.Runner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * Module for bardjs functions
     */
   @js.native
   object bard extends js.Object {
+    
     /**
       * Add names of globals to list of OK globals for this mocha spec
       * NB: Call this method ONLY if you're using mocha!
@@ -22,6 +24,7 @@ object global extends js.Object {
       * like ` ___browserSync___`
       */
     def addGlobals(globals: js.Any*): Unit = js.native
+    
     /**
       * Prepare ngMocked application feature module
       * along with faked toastr, routehelper,
@@ -33,33 +36,39 @@ object global extends js.Object {
       * Fall back to `angular.mock.module(...)` or just `module(...)`
       */
     def appModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = js.native
+    
     /**
       * Assert a failure in mocha, without condition
       */
     def assertFail(message: String): AssertionError = js.native
+    
     /**
       * Prepare ngMocked module definition that makes real $http and $q calls
       * Also adds fakeLogger to the end of the definition
       * Use it as you would the ngMocks#module method
       */
     def asyncModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = js.native
+    
     /**
       * Get or set bard debugging flag
       */
     def debugging(): Boolean = js.native
     def debugging(newFlag: js.Any): Boolean = js.native
+    
     /**
       * Registers a fake logger service that you can spy on
       */
     def fakeLogger(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
+    
     /**
       * Registers a fake route helper provider service that you can spy on
       */
     def fakeRouteHelperProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
+    
     /**
       * Stub out the $routeProvider so we avoid
       * all routing calls, including the default route
@@ -69,6 +78,7 @@ object global extends js.Object {
     def fakeRouteProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
+    
     /**
       * Stub out the $stateProvider so we avoid
       * all routing calls, including the default state
@@ -78,12 +88,14 @@ object global extends js.Object {
     def fakeStateProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
+    
     /**
       * Registers a fake toastr service that you can spy on
       */
     def fakeToastr(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
+    
     /**
       *  Replaces the ngMock'ed $httpBackend with the real one from ng thus
       *  restoring the ability to issue AJAX calls to the backend with $http.
@@ -97,6 +109,7 @@ object global extends js.Object {
     def httpBackend(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = js.native
+    
     def inject(context: js.UndefOr[scala.Nothing], args: String*): Unit = js.native
     /**
       * Inject selected services into the windows object during test
@@ -117,10 +130,12 @@ object global extends js.Object {
       */
     def inject(context: js.Function, args: String*): Unit = js.native
     def inject(context: Context, args: String*): Unit = js.native
+    
     /**
       * Write to console if bard debugging flag is on
       */
     def log(message: js.Any): Unit = js.native
+    
     /**
       *  Listen to mocha test runner events
       *  Usage in browser:
@@ -128,6 +143,7 @@ object global extends js.Object {
       *     bard.mochaRunnerListener(runner);
       */
     def mochaRunnerListener(runner: Runner): Unit = js.native
+    
     /**
       * Mocks out a service with sinon stubbed functions
       * that return the values specified in the config
@@ -147,6 +163,7 @@ object global extends js.Object {
       * add mocked function to the service using the config value
       */
     def mockService(service: js.Any, config: js.Any): js.Any = js.native
+    
     /**
       *  Replaces the ngMock'ed $q with the real one from ng thus
       *  obviating the need to flush $http and $q queues
@@ -156,6 +173,7 @@ object global extends js.Object {
     def q(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = js.native
+    
     /**
       * Replaces the accented characters of many European languages w/ unaccented chars
       * Use it in JavaScript string sorts where such characters may be encountered
@@ -164,11 +182,13 @@ object global extends js.Object {
       * instead of:            a.Name  <                    b.Name
       */
     def replaceAccentChars(text: String): String = js.native
+    
     /**
       *  Assert that there are no outstanding HTTP requests after test is complete
       *  For use with ngMocks; doesn't work for async server integration tests
       */
     def verifyNoOutstandingHttpRequests(): Unit = js.native
+    
     /**
       * Returns a function that execute a callback function
       * (typically a fn making asserts) within a try/catch
@@ -177,6 +197,4 @@ object global extends js.Object {
       */
     def wrapWithDone(callback: js.Function, done: js.Function): js.Function = js.native
   }
-  
 }
-

@@ -10,8 +10,8 @@ node client for extended StatsD server of Datadog
 | Full name          | node-dogstatsd |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 2689057 |
+| # dependents       | 32 |
+| # downloads        | 4275405 |
 | # stars            | 4 |
 
 ## Links

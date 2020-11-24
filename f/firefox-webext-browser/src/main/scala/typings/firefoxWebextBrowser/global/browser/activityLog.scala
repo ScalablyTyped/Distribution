@@ -1,10 +1,10 @@
 package typings.firefoxWebextBrowser.global.browser
 
-import typings.firefoxWebextBrowser.anon.Data
 import typings.firefoxWebextBrowser.browser.activityLog.ActivityLogOnExtensionActivityEvent
+import typings.firefoxWebextBrowser.browser.activityLog.OnExtensionActivityDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Monitor extension activity
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.activityLog")
 @js.native
 object activityLog extends js.Object {
+  
   /* activityLog events */
   /** Receives an activityItem for each logging event. */
-  val onExtensionActivity: ActivityLogOnExtensionActivityEvent[js.Function1[/* details */ Data, Unit]] = js.native
+  val onExtensionActivity: ActivityLogOnExtensionActivityEvent[js.Function1[/* details */ OnExtensionActivityDetails, Unit]] = js.native
 }
-

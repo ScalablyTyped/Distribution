@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.TypeParameterSyntax")
 @js.native
@@ -15,12 +15,12 @@ class TypeParameterSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.TypeParameterSyntax")
 @js.native
 object TypeParameterSyntax extends js.Object {
+  
   def create(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterSyntax = js.native
+  
   def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterSyntax = js.native
 }
-

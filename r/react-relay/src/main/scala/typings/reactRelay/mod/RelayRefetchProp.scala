@@ -4,12 +4,15 @@ import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RelayRefetchProp extends js.Object {
+  
   var environment: typings.relayRuntime.mod.Environment = js.native
+  
   var hasMore: js.UndefOr[scala.Nothing] = js.native
+  
   def refetch(refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables]): Disposable = js.native
   def refetch(
     refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
@@ -112,4 +115,3 @@ trait RelayRefetchProp extends js.Object {
   ): Disposable = js.native
   def refetch(refetchVariables: Variables, renderVariables: Variables, observerOrCallback: ObserverOrCallback): Disposable = js.native
 }
-

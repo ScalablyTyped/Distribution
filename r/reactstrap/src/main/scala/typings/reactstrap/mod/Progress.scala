@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.progressMod.ProgressProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Progress")
+@JSImport("reactstrap/lib", "Progress")
 @js.native
-class Progress[T] ()
+class Progress ()
   extends Component[ProgressProps, js.Object, js.Any]
-

@@ -5,11 +5,12 @@ import typings.plottable.interfacesMod.Bounds
 import typings.plottable.selectionBoxLayerMod.SelectionBoxLayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/dragBoxLayer", JSImport.Namespace)
 @js.native
 object dragBoxLayerMod extends js.Object {
+  
   @js.native
   /**
     * Constructs a DragBoxLayer.
@@ -21,28 +22,51 @@ object dragBoxLayerMod extends js.Object {
     * @constructor
     */
   class DragBoxLayer () extends SelectionBoxLayer {
+    
     var _detectionCornerBL: js.Any = js.native
+    
     var _detectionCornerBR: js.Any = js.native
+    
     var _detectionCornerTL: js.Any = js.native
+    
     var _detectionCornerTR: js.Any = js.native
+    
     var _detectionEdgeB: js.Any = js.native
+    
     var _detectionEdgeL: js.Any = js.native
+    
     var _detectionEdgeR: js.Any = js.native
+    
     var _detectionEdgeT: js.Any = js.native
+    
     var _detectionRadius: js.Any = js.native
+    
     var _disconnectInteraction: js.Any = js.native
+    
     var _dragCallbacks: js.Any = js.native
+    
     var _dragEndCallbacks: js.Any = js.native
+    
     var _dragInteraction: js.Any = js.native
+    
     var _dragStartCallbacks: js.Any = js.native
-    var _hasCorners: Boolean = js.native
-    var _movable: js.Any = js.native
-    var _resizable: js.Any = js.native
+    
     /* private */ def _getResizingEdges(p: js.Any): js.Any = js.native
+    
+    var _hasCorners: Boolean = js.native
+    
+    var _movable: js.Any = js.native
+    
     /* private */ def _resetState(): js.Any = js.native
+    
+    var _resizable: js.Any = js.native
+    
     /* private */ def _setMovableClass(): js.Any = js.native
+    
     /* protected */ def _setResizableClasses(canResize: Boolean): Unit = js.native
+    
     /* private */ def _setUpCallbacks(): js.Any = js.native
+    
     /**
       * Gets the detection radius of the drag box in pixels.
       */
@@ -54,10 +78,12 @@ object dragBoxLayerMod extends js.Object {
       * @return {DragBoxLayer} The calling DragBoxLayer.
       */
     def detectionRadius(r: Double): this.type = js.native
+    
     /**
       * Gets the internal Interactions.Drag of the DragBoxLayer.
       */
     def dragInteraction(): Drag = js.native
+    
     /**
       * Gets the enabled state.
       */
@@ -66,6 +92,7 @@ object dragBoxLayerMod extends js.Object {
       * Enables or disables the interaction and drag box.
       */
     def enabled(enabled: Boolean): this.type = js.native
+    
     /**
       * Gets whether or not the drag box is movable.
       */
@@ -77,6 +104,7 @@ object dragBoxLayerMod extends js.Object {
       * @return {DragBoxLayer} The calling DragBoxLayer.
       */
     def movable(movable: Boolean): this.type = js.native
+    
     /**
       * Removes a callback to be called during dragging.
       *
@@ -84,6 +112,7 @@ object dragBoxLayerMod extends js.Object {
       * @returns {DragBoxLayer} The calling DragBoxLayer.
       */
     def offDrag(callback: DragBoxCallback): this.type = js.native
+    
     /**
       * Removes a callback to be called when dragging ends.
       *
@@ -91,6 +120,7 @@ object dragBoxLayerMod extends js.Object {
       * @returns {DragBoxLayer} The calling DragBoxLayer.
       */
     def offDragEnd(callback: DragBoxCallback): this.type = js.native
+    
     /**
       * Removes a callback to be called when dragging starts.
       *
@@ -98,6 +128,7 @@ object dragBoxLayerMod extends js.Object {
       * @returns {DragBoxLayer} The calling DragBoxLayer.
       */
     def offDragStart(callback: DragBoxCallback): this.type = js.native
+    
     /**
       * Sets a callback to be called during dragging.
       *
@@ -105,6 +136,7 @@ object dragBoxLayerMod extends js.Object {
       * @returns {DragBoxLayer} The calling DragBoxLayer.
       */
     def onDrag(callback: DragBoxCallback): this.type = js.native
+    
     /**
       * Sets a callback to be called when dragging ends.
       *
@@ -112,6 +144,7 @@ object dragBoxLayerMod extends js.Object {
       * @returns {DragBoxLayer} The calling DragBoxLayer.
       */
     def onDragEnd(callback: DragBoxCallback): this.type = js.native
+    
     /**
       * Sets the callback to be called when dragging starts.
       *
@@ -119,6 +152,7 @@ object dragBoxLayerMod extends js.Object {
       * @returns {DragBoxLayer} The calling DragBoxLayer.
       */
     def onDragStart(callback: DragBoxCallback): this.type = js.native
+    
     /**
       * Gets whether or not the drag box is resizable.
       */
@@ -134,4 +168,3 @@ object dragBoxLayerMod extends js.Object {
   
   type DragBoxCallback = js.Function1[/* bounds */ Bounds, Unit]
 }
-

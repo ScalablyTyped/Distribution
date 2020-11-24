@@ -3,11 +3,12 @@ package typings.utility.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "logDate")
 @js.native
 object logDate extends js.Object {
+  
   /**
     * Normal log format date. format: `moment().format('YYYY-MM-DD HH:mm:ss.SSS')`
     *
@@ -18,4 +19,3 @@ object logDate extends js.Object {
   def apply(d: Date): String = js.native
   def apply(d: Date, msSep: String): String = js.native
 }
-

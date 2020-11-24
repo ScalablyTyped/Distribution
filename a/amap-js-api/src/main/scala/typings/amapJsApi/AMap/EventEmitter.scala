@@ -3,10 +3,11 @@ package typings.amapJsApi.AMap
 import typings.amapJsApi.amapJsApiStrings.mv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventEmitter extends js.Object {
+  
   /**
     * 触发事件
     * @param eventName 事件名称
@@ -14,6 +15,7 @@ trait EventEmitter extends js.Object {
     */
   def emit(eventName: String): this.type = js.native
   def emit(eventName: String, data: js.Any): this.type = js.native
+  
   /**
     * 移除事件绑定
     * @param eventName 事件名称
@@ -26,6 +28,7 @@ trait EventEmitter extends js.Object {
   def off_mv[C](eventName: String, handler: mv): this.type = js.native
   @JSName("off")
   def off_mv[C](eventName: String, handler: mv, context: C): this.type = js.native
+  
   /**
     * 注册事件
     * @param eventName 事件名称
@@ -77,4 +80,3 @@ trait EventEmitter extends js.Object {
     unshift: Boolean
   ): this.type = js.native
 }
-

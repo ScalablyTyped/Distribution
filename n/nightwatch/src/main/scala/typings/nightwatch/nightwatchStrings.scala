@@ -3,9 +3,73 @@ package typings.nightwatch
 import typings.nightwatch.mod.LocateStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nightwatchStrings {
+  
+  @scala.inline
+  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  
+  @scala.inline
+  def INFO: INFO = "INFO".asInstanceOf[INFO]
+  
+  @scala.inline
+  def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
+  
+  @scala.inline
+  def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
+  
+  @scala.inline
+  def SEVERE: SEVERE = "SEVERE".asInstanceOf[SEVERE]
+  
+  @scala.inline
+  def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
+  
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
+  
+  @scala.inline
+  def `class name`: `class name` = ("class name").asInstanceOf[`class name`]
+  
+  @scala.inline
+  def client: client = "client".asInstanceOf[client]
+  
+  @scala.inline
+  def `css selector`: `css selector` = ("css selector").asInstanceOf[`css selector`]
+  
+  @scala.inline
+  def driver: driver = "driver".asInstanceOf[driver]
+  
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `link text`: `link text` = ("link text").asInstanceOf[`link text`]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def `partial link text`: `partial link text` = ("partial link text").asInstanceOf[`partial link text`]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def server: server = "server".asInstanceOf[server]
+  
+  @scala.inline
+  def `tag name`: `tag name` = ("tag name").asInstanceOf[`tag name`]
+  
+  @scala.inline
+  def xpath: xpath = "xpath".asInstanceOf[xpath]
+  
   @js.native
   sealed trait DEBUG extends js.Object
   
@@ -68,48 +132,4 @@ object nightwatchStrings {
   
   @js.native
   sealed trait xpath extends LocateStrategy
-  
-  @scala.inline
-  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
-  @scala.inline
-  def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
-  @scala.inline
-  def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
-  @scala.inline
-  def SEVERE: SEVERE = "SEVERE".asInstanceOf[SEVERE]
-  @scala.inline
-  def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def `class name`: `class name` = ("class name").asInstanceOf[`class name`]
-  @scala.inline
-  def client: client = "client".asInstanceOf[client]
-  @scala.inline
-  def `css selector`: `css selector` = ("css selector").asInstanceOf[`css selector`]
-  @scala.inline
-  def driver: driver = "driver".asInstanceOf[driver]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `link text`: `link text` = ("link text").asInstanceOf[`link text`]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def `partial link text`: `partial link text` = ("partial link text").asInstanceOf[`partial link text`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
-  @scala.inline
-  def `tag name`: `tag name` = ("tag name").asInstanceOf[`tag name`]
-  @scala.inline
-  def xpath: xpath = "xpath".asInstanceOf[xpath]
 }
-

@@ -10,9 +10,9 @@ DuckDuckGo image-search api for node
 | ------------------ | :-------------: |
 | Full name          | duckduckgo-images-api |
 | Keywords           | node, javascript, duckduckgo, image, image-search, api |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 650 |
+| # downloads        | 2123 |
 | # stars            | 0 |
 
 ## Links

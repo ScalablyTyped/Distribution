@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/datastore/v1beta3", "datastore_v1beta3.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * datastore.projects.allocateIds
     * @desc Allocates IDs for the given keys, which is useful for referencing
@@ -46,6 +46,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAllocateIdsResponse]
   ): Unit = js.native
+  
   /**
     * datastore.projects.beginTransaction
     * @desc Begins a new transaction.
@@ -78,6 +79,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBeginTransactionResponse]
   ): Unit = js.native
+  
   /**
     * datastore.projects.commit
     * @desc Commits a transaction, optionally creating, deleting or modifying
@@ -108,6 +110,9 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommitResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * datastore.projects.lookup
     * @desc Looks up entities by key.
@@ -137,6 +142,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLookupResponse]
   ): Unit = js.native
+  
   /**
     * datastore.projects.reserveIds
     * @desc Prevents the supplied keys' IDs from being auto-allocated by Cloud
@@ -167,6 +173,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReserveIdsResponse]
   ): Unit = js.native
+  
   /**
     * datastore.projects.rollback
     * @desc Rolls back a transaction.
@@ -196,6 +203,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRollbackResponse]
   ): Unit = js.native
+  
   /**
     * datastore.projects.runQuery
     * @desc Queries for entities.
@@ -226,4 +234,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRunQueryResponse]
   ): Unit = js.native
 }
-

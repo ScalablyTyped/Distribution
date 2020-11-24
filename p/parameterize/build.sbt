@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parameterize"
-version := "1.0-dt-20200515Z-61f455"
+version := "1.0-dt-20200515Z-2f62f1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

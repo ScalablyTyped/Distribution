@@ -2,10 +2,11 @@ package typings.ascii2mathml.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ascii2mathml extends js.Object {
+  
   /**
     * Converts ASCIIMath expression to MathML markup.
     * @param asciimath ASCIIMath expression
@@ -20,4 +21,3 @@ trait ascii2mathml extends js.Object {
     */
   def apply(options: Options): ascii2mathml = js.native
 }
-

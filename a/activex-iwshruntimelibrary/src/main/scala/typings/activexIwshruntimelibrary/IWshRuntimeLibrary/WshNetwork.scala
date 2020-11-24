@@ -3,19 +3,12 @@ package typings.activexIwshruntimelibrary.IWshRuntimeLibrary
 import typings.activexIwshruntimelibrary.activexIwshruntimelibraryBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Network Object */
 @js.native
 trait WshNetwork extends js.Object {
-  val ComputerName: String = js.native
-  @JSName("IWshRuntimeLibrary.WshNetwork_typekey")
-  var IWshRuntimeLibraryDotWshNetwork_typekey: WshNetwork = js.native
-  val Organization: String = js.native
-  val Site: String = js.native
-  val UserDomain: String = js.native
-  val UserName: String = js.native
-  val UserProfile: String = js.native
+  
   /**
     * Adds a remote MS-DOS-based printer connection to your computer system.
     * @param LocalName Local name to assign to the connected printer.
@@ -50,6 +43,7 @@ trait WshNetwork extends js.Object {
   ): Unit = js.native
   def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String): Unit = js.native
   def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String, Password: String): Unit = js.native
+  
   /**
     * @param string Path to printer connection
     * @param string [DriverName='']
@@ -61,8 +55,16 @@ trait WshNetwork extends js.Object {
   def AddWindowsPrinterConnection(PrinterName: String, DriverName: js.UndefOr[scala.Nothing], Port: String): Unit = js.native
   def AddWindowsPrinterConnection(PrinterName: String, DriverName: String): Unit = js.native
   def AddWindowsPrinterConnection(PrinterName: String, DriverName: String, Port: String): Unit = js.native
+  
+  val ComputerName: String = js.native
+  
   def EnumNetworkDrives(): WshCollection = js.native
+  
   def EnumPrinterConnections(): WshCollection = js.native
+  
+  @JSName("IWshRuntimeLibrary.WshNetwork_typekey")
+  var IWshRuntimeLibraryDotWshNetwork_typekey: WshNetwork = js.native
+  
   /**
     * Adds a remote MS-DOS-based printer connection to your computer system.
     * @param LocalName Name by which the mapped drive will be known locally
@@ -97,6 +99,9 @@ trait WshNetwork extends js.Object {
   ): Unit = js.native
   def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String): Unit = js.native
   def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String, Password: String): Unit = js.native
+  
+  val Organization: String = js.native
+  
   /**
     * Removes a shared network drive from your computer system
     * @param Name Name of the mapped drive you want to remove. This will be the drive letter if the drive has a mapping between a local name (drive letter) and a remote name (UNC name);
@@ -108,6 +113,7 @@ trait WshNetwork extends js.Object {
   def RemoveNetworkDrive(Name: String, Force: js.UndefOr[scala.Nothing], UpdateProfile: Boolean): Unit = js.native
   def RemoveNetworkDrive(Name: String, Force: Boolean): Unit = js.native
   def RemoveNetworkDrive(Name: String, Force: Boolean, UpdateProfile: Boolean): Unit = js.native
+  
   /**
     * Removes a shared network printer connection from your computer system
     * @param Name Name that identifies the printer. Can be a UNC name (in the form `\\xxx\yyy`) or a local name (such as `LPT1`)
@@ -125,6 +131,14 @@ trait WshNetwork extends js.Object {
   def RemovePrinterConnection_true(Name: String, Force: `true`): Unit = js.native
   @JSName("RemovePrinterConnection")
   def RemovePrinterConnection_true(Name: String, Force: `true`, UpdateProfile: `true`): Unit = js.native
+  
   def SetDefaultPrinter(Name: String): Unit = js.native
+  
+  val Site: String = js.native
+  
+  val UserDomain: String = js.native
+  
+  val UserName: String = js.native
+  
+  val UserProfile: String = js.native
 }
-

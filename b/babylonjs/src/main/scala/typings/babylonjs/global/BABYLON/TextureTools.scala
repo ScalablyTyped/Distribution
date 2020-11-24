@@ -2,17 +2,17 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TextureTools")
 @js.native
 class TextureTools ()
   extends typings.babylonjs.BABYLON.TextureTools
-
 /* static members */
 @JSGlobal("BABYLON.TextureTools")
 @js.native
 object TextureTools extends js.Object {
+  
   /**
     * Uses the GPU to create a copy texture rescaled at a given size
     * @param texture Texture to copy from
@@ -29,4 +29,3 @@ object TextureTools extends js.Object {
     useBilinearMode: Boolean
   ): typings.babylonjs.BABYLON.Texture = js.native
 }
-

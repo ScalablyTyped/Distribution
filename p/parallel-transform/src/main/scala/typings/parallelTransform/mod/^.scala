@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parallel-transform", JSImport.Namespace)
 @js.native
@@ -21,7 +21,6 @@ class ^ protected () extends Transform {
   def this(maxParallel: Double, opts: Null, ontransform: OnTransform) = this()
   def this(maxParallel: Double, opts: Options, ontransform: OnTransform) = this()
 }
-
 @JSImport("parallel-transform", JSImport.Namespace)
 @js.native
 object ^
@@ -33,6 +32,7 @@ object ^
         Transform
       ]) with (Instantiable3[/* maxParallel */ Double, /* opts */ Null, /* ontransform */ OnTransform, Transform]) with (Instantiable3[/* maxParallel */ Double, /* opts */ Options, /* ontransform */ OnTransform, Transform])
     ] {
+  
   def apply(maxParallel: Double, opts: js.UndefOr[scala.Nothing], ontransform: OnTransform): Transform = js.native
   def apply(maxParallel: Double, opts: Null, ontransform: OnTransform): Transform = js.native
   def apply(maxParallel: Double, opts: Options, ontransform: OnTransform): Transform = js.native
@@ -42,4 +42,3 @@ object ^
   def apply(opts: Null, ontransform: OnTransform): Transform = js.native
   def apply(opts: Options, ontransform: OnTransform): Transform = js.native
 }
-

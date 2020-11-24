@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `JSONAPIAdapter` is the default adapter used by Ember Data. It
@@ -13,5 +13,4 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "JSONAPIAdapter")
 @js.native
 class JSONAPIAdapter ()
-  extends typings.emberData.mod.DS.JSONAPIAdapter
-
+  extends typings.emberData.mod.DS.RESTAdapter

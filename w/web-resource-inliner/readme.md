@@ -10,9 +10,9 @@ Inlines img, script and link tags into the same file.
 | ------------------ | :-------------: |
 | Full name          | web-resource-inliner |
 | Keywords           | inline, js, css, scripts, stylesheets, html, datauri |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 9458153 |
+| # releases         | 7 |
+| # dependents       | 9 |
+| # downloads        | 14293904 |
 | # stars            | 0 |
 
 ## Links

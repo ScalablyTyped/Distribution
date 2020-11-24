@@ -2,18 +2,17 @@ package typings.arcgisJsApi.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TrackViewModelProperties
   extends GeolocationPositioningProperties
      with GoToProperties
-
 object TrackViewModelProperties {
+  
   @scala.inline
   def apply(): TrackViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackViewModelProperties]
   }
 }
-

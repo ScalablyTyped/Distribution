@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operator/let", JSImport.Namespace)
 @js.native
 object letMod extends js.Object {
+  
   def letProto[T, R](
     func: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* selector */ js.Any, 
@@ -14,4 +15,3 @@ object letMod extends js.Object {
     ]
   ): js.Any = js.native
 }
-

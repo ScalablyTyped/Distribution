@@ -4,7 +4,7 @@ import typings.androiduix.android.widget.ListView.FixedViewInfo
 import typings.androiduix.java_.util.ArrayList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.widget.HeaderViewListAdapter")
 @js.native
@@ -16,11 +16,10 @@ class HeaderViewListAdapter protected ()
     adapter: typings.androiduix.android.widget.ListAdapter
   ) = this()
 }
-
 /* static members */
 @JSGlobal("android.widget.HeaderViewListAdapter")
 @js.native
 object HeaderViewListAdapter extends js.Object {
+  
   var EMPTY_INFO_LIST: ArrayList[FixedViewInfo] = js.native
 }
-

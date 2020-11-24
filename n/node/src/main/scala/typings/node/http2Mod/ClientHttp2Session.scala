@@ -8,10 +8,11 @@ import typings.node.nodeStrings.stream
 import typings.node.tlsMod.TLSSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientHttp2Session extends Http2Session {
+  
   @JSName("addListener")
   def addListener_altsvc(
     event: altsvc,
@@ -34,6 +35,7 @@ trait ClientHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("emit")
   def emit_altsvc(event: altsvc, alt: String, origin: String, stream: Double): Boolean = js.native
   @JSName("emit")
@@ -49,6 +51,7 @@ trait ClientHttp2Session extends Http2Session {
     headers: IncomingHttpHeaders with IncomingHttpStatusHeader,
     flags: Double
   ): Boolean = js.native
+  
   @JSName("on")
   def on_altsvc(
     event: altsvc,
@@ -71,6 +74,7 @@ trait ClientHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
   def once_altsvc(
     event: altsvc,
@@ -93,6 +97,7 @@ trait ClientHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_altsvc(
     event: altsvc,
@@ -115,6 +120,7 @@ trait ClientHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_altsvc(
     event: altsvc,
@@ -137,9 +143,9 @@ trait ClientHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
+  
   def request(): ClientHttp2Stream = js.native
   def request(headers: js.UndefOr[scala.Nothing], options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
   def request(headers: OutgoingHttpHeaders): ClientHttp2Stream = js.native
   def request(headers: OutgoingHttpHeaders, options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
 }
-

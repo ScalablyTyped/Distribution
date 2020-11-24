@@ -3,7 +3,7 @@ package typings.babylonjs.materialsIndexMod
 import typings.babylonjs.mathVectorMod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "TexturePackerFrame")
 @js.native
@@ -18,4 +18,3 @@ class TexturePackerFrame protected ()
     */
   def this(id: Double, scale: Vector2, offset: Vector2) = this()
 }
-

@@ -22,7 +22,7 @@ import typings.chromeApps.chromeAppsStrings.separator_
 import typings.chromeApps.chromeAppsStrings.video_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.contextMenus
@@ -49,6 +49,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.contextMenus")
 @js.native
 object contextMenus extends js.Object {
+  
   /**
     * @since Chrome 38.
     * @default 6
@@ -58,14 +59,17 @@ object contextMenus extends js.Object {
     * Any items beyond this limit will be ignored.
     */
   val ACTION_MENU_TOP_LEVEL_LIMIT: integer = js.native
-  /** Fired when a context menu item is clicked. */
-  val onClicked: MenuClickedEvent = js.native
+  
   /**
     * Creates a new context menu item. Note that if an error occurs during creation, you may not find out until the creation callback fires (the details will be in chrome.runtime.lastError).
     * @param callback Called when the item has been created in the browser. If there were any problems creating the item, details will be available in chrome.runtime.lastError.
     */
   def create(createProperties: CreateProperties): Unit = js.native
   def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = js.native
+  
+  /** Fired when a context menu item is clicked. */
+  val onClicked: MenuClickedEvent = js.native
+  
   def remove(menuItemId: String): Unit = js.native
   def remove(menuItemId: String, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -75,12 +79,14 @@ object contextMenus extends js.Object {
     */
   def remove(menuItemId: integer): Unit = js.native
   def remove(menuItemId: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Removes all context menu items added by this app.
     * @param callback Called when removal is complete.
     */
   def removeAll(): Unit = js.native
   def removeAll(callback: js.Function0[Unit]): Unit = js.native
+  
   def update(id: String, updateProperties: UpdateProperties): Unit = js.native
   def update(id: String, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -91,6 +97,7 @@ object contextMenus extends js.Object {
     */
   def update(id: integer, updateProperties: UpdateProperties): Unit = js.native
   def update(id: integer, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * The different contexts a menu can appear in.
     * Specifying 'all' is equivalent to the combination of all other contexts except for 'launcher'.
@@ -99,17 +106,29 @@ object contextMenus extends js.Object {
     **/
   @js.native
   object ContextType extends js.Object {
+    
     var ALL: all__ = js.native
+    
     var AUDIO: audio_ = js.native
+    
     var BROWSER_ACTION: browser_action_ = js.native
+    
     var EDITABLE: editable_ = js.native
+    
     var FRAME: frame_ = js.native
+    
     var IMAGE: image_ = js.native
+    
     var LAUNCHER: launcher_ = js.native
+    
     var LINK: link_ = js.native
+    
     var PAGE: page_ = js.native
+    
     var PAGE_ACTION: page_action_ = js.native
+    
     var SELECTION: selection_ = js.native
+    
     var VIDEO: video_ = js.native
   }
   
@@ -118,11 +137,13 @@ object contextMenus extends js.Object {
     **/
   @js.native
   object ItemType extends js.Object {
+    
     var CHECKBOX: checkbox_ = js.native
+    
     var NORMAL: normal_ = js.native
+    
     var RADIO: radio_ = js.native
+    
     var SEPARATOR: separator_ = js.native
   }
-  
 }
-

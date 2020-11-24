@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Savedadstyles")
 @js.native
 class ResourceSavedadstyles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.savedadstyles.get
     * @desc Get a specific saved ad style from the user's account.
@@ -41,6 +43,7 @@ class ResourceSavedadstyles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSavedAdStyle]
   ): Unit = js.native
+  
   /**
     * adsense.savedadstyles.list
     * @desc List all saved ad styles in the user's account.
@@ -71,4 +74,3 @@ class ResourceSavedadstyles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSavedAdStyles]
   ): Unit = js.native
 }
-

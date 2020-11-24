@@ -2,9 +2,28 @@ package typings.reactRadioGroup
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRadioGroupStrings {
+  
+  @scala.inline
+  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  
+  @scala.inline
+  def role: role = "role".asInstanceOf[role]
+  
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  
   @js.native
   sealed trait `aria-checked` extends js.Object
   
@@ -22,18 +41,4 @@ object reactRadioGroupStrings {
   
   @js.native
   sealed trait value extends js.Object
-  
-  @scala.inline
-  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def role: role = "role".asInstanceOf[role]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
 }
-

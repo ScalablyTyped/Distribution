@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActi
 import typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActions.styles", JSImport.Namespace)
 @js.native
 object documentCardActionsStylesMod extends js.Object {
+  
   def getStyles(props: IDocumentCardActionsStyleProps): IDocumentCardActionsStyles = js.native
 }
-

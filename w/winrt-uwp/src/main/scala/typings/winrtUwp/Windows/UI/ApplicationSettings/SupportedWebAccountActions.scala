@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.ApplicationSettings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SupportedWebAccountActions extends js.Object
-
 /** Specifies actions that your app enables on an web account instance in the account settings pane. */
 @JSGlobal("Windows.UI.ApplicationSettings.SupportedWebAccountActions")
 @js.native
 object SupportedWebAccountActions extends js.Object {
+  
   /** The app displays UI for managing the web account. */
   @js.native
   sealed trait manage extends SupportedWebAccountActions
@@ -34,6 +34,4 @@ object SupportedWebAccountActions extends js.Object {
   /** The app displays details about the web account. */
   @js.native
   sealed trait viewDetails extends SupportedWebAccountActions
-  
 }
-

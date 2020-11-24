@@ -7,10 +7,11 @@ import typings.googleapis.googleapisStrings.directory_v1
 import typings.googleapis.googleapisStrings.reports_v1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn4 extends js.Object {
+  
   def apply(options: Options): Admin = js.native
   def apply(options: typings.googleapis.directoryV1Mod.adminDirectoryV1.Options): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = js.native
   def apply(options: typings.googleapis.reportsV1Mod.adminReportsV1.Options): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = js.native
@@ -18,4 +19,3 @@ trait Fn4 extends js.Object {
   def apply(version: directory_v1): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = js.native
   def apply(version: reports_v1): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.activexAccess.activexAccessNumbers.`2`
 import typings.activexAccess.activexAccessNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexAccess.activexAccessNumbers.`3`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexAccess.activexAccessNumbers.`1`
 */
 trait AcPrintQuality extends js.Object
-
 object AcPrintQuality {
+  
   @scala.inline
   def acDraft: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def acHigh: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def acLow: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def acMedium: `1` = 1.asInstanceOf[`1`]
 }
-

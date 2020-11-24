@@ -1,30 +1,44 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
+import typings.astTypes.kindsMod.ChainElementKind
+import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.MemberExpressionKind
 import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PrintableKind
+import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/namedTypes.namedTypes.Expression, 'type'> ]: ast-types.ast-types/gen/namedTypes.namedTypes.Expression[P]} */ trait MemberExpression
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Expression, 'type'> */
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.ChainElement, 'type'> */
+@js.native
+trait MemberExpression
   extends ASTNode
+     with ChainElementKind
      with ExpressionKind
      with MemberExpressionKind
      with NodeKind
      with PrintableKind {
-  var computed: js.UndefOr[Boolean] = js.undefined
-  var `object`: ExpressionKind
-  var property: IdentifierKind | ExpressionKind
-  var `type`: typings.astTypes.astTypesStrings.MemberExpression
+  
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  
+  var computed: js.UndefOr[Boolean] = js.native
+  
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  
+  var `object`: ExpressionKind = js.native
+  
+  var optional: js.UndefOr[Boolean] = js.native
+  
+  var property: IdentifierKind | ExpressionKind = js.native
+  
+  var `type`: typings.astTypes.astTypesStrings.MemberExpression = js.native
 }
-
 @JSImport("ast-types/gen/namedTypes", "namedTypes.MemberExpression")
 @js.native
 object MemberExpression extends TopLevel[Type[MemberExpression]]
-

@@ -4,19 +4,28 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UniqueIndex[E /* <: js.Object */] extends js.Object {
-  var field: /* keyof E */ String = js.native
-  var keyMap: StringDictionary[js.UndefOr[E]] = js.native
-  var lokiMap: NumberDictionary[js.UndefOr[String | Double]] = js.native
+  
   def byId(id: Double): js.UndefOr[E] = js.native
+  
   def clear(): Unit = js.native
+  
+  var field: /* keyof E */ String = js.native
+  
   def get(key: String): js.UndefOr[E] = js.native
   def get(key: Double): js.UndefOr[E] = js.native
+  
+  var keyMap: StringDictionary[js.UndefOr[E]] = js.native
+  
+  var lokiMap: NumberDictionary[js.UndefOr[String | Double]] = js.native
+  
   def remove(key: String): Unit = js.native
+  
   def set(obj: E): Unit = js.native
+  
   /**
     * Updates a document's unique index given an updated object.
     * @param  {Object} obj Original document object
@@ -24,4 +33,3 @@ trait UniqueIndex[E /* <: js.Object */] extends js.Object {
     */
   def update(obj: E, doc: js.Any): Unit = js.native
 }
-

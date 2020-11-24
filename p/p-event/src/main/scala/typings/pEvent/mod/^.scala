@@ -4,14 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-event", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var TimeoutError: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass] = js.native
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEvent */ js.Any = js.native
+  
   def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
@@ -87,6 +85,12 @@ object ^ extends js.Object {
     event: js.Symbol,
     options: Options[js.Array[EmittedType]]
   ): CancelablePromise[EmittedType] = js.native
+  
+  var TimeoutError: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass] = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEvent */ js.Any = js.native
+  
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
@@ -151,6 +155,7 @@ object ^ extends js.Object {
     event: js.Symbol,
     options: IteratorOptions[js.Array[EmittedType]]
   ): AsyncIterableIterator[EmittedType] = js.native
+  
   /**
   	Wait for multiple event emissions. Returns an array.
   	*/
@@ -185,4 +190,3 @@ object ^ extends js.Object {
     options: MultipleOptions[js.Array[EmittedType]]
   ): CancelablePromise[js.Array[EmittedType]] = js.native
 }
-

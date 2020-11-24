@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Column")
 @js.native
 class ResourceColumn protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fusiontables.column.delete
     * @desc Deletes the specified column.
@@ -38,6 +40,7 @@ class ResourceColumn protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceColumnDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceColumnDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * fusiontables.column.get
     * @desc Retrieves a specific column by its ID.
@@ -67,6 +70,7 @@ class ResourceColumn protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaColumn]
   ): Unit = js.native
+  
   /**
     * fusiontables.column.insert
     * @desc Adds a new column to the table.
@@ -96,6 +100,7 @@ class ResourceColumn protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaColumn]
   ): Unit = js.native
+  
   /**
     * fusiontables.column.list
     * @desc Retrieves a list of columns.
@@ -126,6 +131,7 @@ class ResourceColumn protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaColumnList]
   ): Unit = js.native
+  
   /**
     * fusiontables.column.patch
     * @desc Updates the name or type of an existing column. This method
@@ -157,6 +163,7 @@ class ResourceColumn protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaColumn]
   ): Unit = js.native
+  
   /**
     * fusiontables.column.update
     * @desc Updates the name or type of an existing column.
@@ -188,4 +195,3 @@ class ResourceColumn protected () extends js.Object {
     callback: BodyResponseCallback[SchemaColumn]
   ): Unit = js.native
 }
-

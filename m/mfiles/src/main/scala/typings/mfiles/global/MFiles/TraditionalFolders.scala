@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.ITraditionalFolders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MFiles.TraditionalFolders")
 @js.native
 class TraditionalFolders () extends ITraditionalFolders
-
 @JSGlobal("MFiles.TraditionalFolders")
 @js.native
 object TraditionalFolders extends Instantiable0[ITraditionalFolders]
-

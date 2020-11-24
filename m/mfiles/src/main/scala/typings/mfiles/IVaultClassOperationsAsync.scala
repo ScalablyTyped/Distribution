@@ -5,10 +5,11 @@ import typings.mfiles.MFiles.MFBuiltInObjectClass
 import typings.mfiles.MFiles.MFBuiltInObjectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultClassOperationsAsync extends js.Object {
+  
   def AddObjectClassAdmin(ObjectClassAdmin: IObjectClassAdmin): Unit = js.native
   def AddObjectClassAdmin(
     ObjectClassAdmin: IObjectClassAdmin,
@@ -48,6 +49,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetAllObjectClasses(): Unit = js.native
   def GetAllObjectClasses(
     successCallback: js.UndefOr[scala.Nothing],
@@ -78,6 +80,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetAllObjectClassesAdmin(): Unit = js.native
   def GetAllObjectClassesAdmin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -108,6 +111,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectClass(ObjectClass: Double): Unit = js.native
   def GetObjectClass(
     ObjectClass: Double,
@@ -219,6 +223,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectClassAdmin(Class: Double): Unit = js.native
   def GetObjectClassAdmin(
     Class: Double,
@@ -327,6 +332,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectClassIDByAlias(Alias: String): Unit = js.native
   def GetObjectClassIDByAlias(
     Alias: String,
@@ -363,6 +369,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectClassIDByGUID(ObjectClassGUID: String): Unit = js.native
   def GetObjectClassIDByGUID(
     ObjectClassGUID: String,
@@ -399,6 +406,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectClasses(ObjectType: Double): Unit = js.native
   def GetObjectClasses(
     ObjectType: Double,
@@ -471,6 +479,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectClassesAdmin(ObjectType: Double): Unit = js.native
   def GetObjectClassesAdmin(
     ObjectType: Double,
@@ -546,6 +555,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveObjectClassAdmin(ObjectClassID: Double): Unit = js.native
   def RemoveObjectClassAdmin(
     ObjectClassID: Double,
@@ -582,6 +592,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateObjectClassAdmin(ObjectClass: IObjectClassAdmin): Unit = js.native
   def UpdateObjectClassAdmin(
     ObjectClass: IObjectClassAdmin,
@@ -618,6 +629,7 @@ trait IVaultClassOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateObjectNames(ObjectClassID: Double): Unit = js.native
   def UpdateObjectNames(
     ObjectClassID: Double,
@@ -655,4 +667,3 @@ trait IVaultClassOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

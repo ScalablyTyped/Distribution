@@ -11,8 +11,8 @@ Check if filepath exists and is a file
 | Full name          | file-exists |
 | Keywords           | file, exists, fs, isfile, is-file |
 | # releases         | 0 |
-| # dependents       | 270 |
-| # downloads        | 2186615 |
+| # dependents       | 274 |
+| # downloads        | 2030963 |
 | # stars            | 6 |
 
 ## Links

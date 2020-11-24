@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events concerned with node processing, and that allow the event's processing to be passed to the server side.
@@ -18,4 +18,3 @@ class ASPxClientTreeViewNodeProcessingModeEventArgs protected ()
     */
   def this(processOnServer: Boolean, node: typings.devexpressWeb.ASPxClientTreeViewNode) = this()
 }
-

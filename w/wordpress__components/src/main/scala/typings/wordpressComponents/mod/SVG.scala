@@ -6,9 +6,8 @@ import typings.react.mod.SVGProps
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components", "SVG")
 @js.native
 object SVG extends TopLevel[ComponentType[SVGProps[SVGSVGElement]]]
-

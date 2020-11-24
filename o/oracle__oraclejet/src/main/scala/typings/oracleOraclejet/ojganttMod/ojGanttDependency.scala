@@ -130,40 +130,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojGanttDependency extends JetElement[ojGanttDependencySettableProperties] {
-  var onPredecessorTaskIdChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onSuccessorTaskIdChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[finishStart | finishFinish | startStart | startFinish], 
-    _
-  ]) | Null = js.native
-  var predecessorTaskId: js.Any = js.native
-  var shortDesc: String | Null = js.native
-  var successorTaskId: js.Any = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object = js.native
-  var `type`: finishStart | finishFinish | startStart | startFinish = js.native
+  
   def addEventListener(
     `type`: predecessorTaskIdChanged,
     listener: js.ThisFunction1[
@@ -1041,6 +1012,7 @@ trait ojGanttDependency extends JetElement[ojGanttDependencySettableProperties] 
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_predecessorTaskId(property: predecessorTaskId): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any = js.native
@@ -1054,7 +1026,41 @@ trait ojGanttDependency extends JetElement[ojGanttDependencySettableProperties] 
   def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): finishStart | finishFinish | startStart | startFinish = js.native
+  
+  var onPredecessorTaskIdChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  
+  var onSuccessorTaskIdChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[finishStart | finishFinish | startStart | startFinish], 
+    _
+  ]) | Null = js.native
+  
+  var predecessorTaskId: js.Any = js.native
+  
   def setProperties(properties: ojGanttDependencySettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: `type`, value: finishFinish): Unit = js.native
   def setProperty(property: `type`, value: finishStart): Unit = js.native
   def setProperty(property: `type`, value: startFinish): Unit = js.native
@@ -1072,5 +1078,14 @@ trait ojGanttDependency extends JetElement[ojGanttDependencySettableProperties] 
   def setProperty_svgClassName(property: svgClassName, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
+  
+  var shortDesc: String | Null = js.native
+  
+  var successorTaskId: js.Any = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object = js.native
+  
+  var `type`: finishStart | finishFinish | startStart | startFinish = js.native
 }
-

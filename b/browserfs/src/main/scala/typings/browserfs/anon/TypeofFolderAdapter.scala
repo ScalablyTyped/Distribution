@@ -9,16 +9,19 @@ import typings.browserfs.folderAdapterMod.FolderAdapterOptions
 import typings.browserfs.folderAdapterMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofFolderAdapter extends Instantiable2[/* folder */ String, /* wrapped */ FileSystem, default] {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   /**
     * Creates a FolderAdapter instance with the given options.
     */
   def Create(opts: FolderAdapterOptions, cb: BFSCallback[FolderAdapter]): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

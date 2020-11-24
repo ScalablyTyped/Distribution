@@ -9,7 +9,7 @@ import typings.boxen.boxenStrings.single
 import typings.boxen.boxenStrings.singleDouble
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.boxen.boxenStrings.single
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.boxen.boxenStrings.classic
 */
 trait BorderStyle extends js.Object
-
 object BorderStyle {
+  
   @scala.inline
   def Bold: bold = "bold".asInstanceOf[bold]
+  
   @scala.inline
   def Classic: classic = "classic".asInstanceOf[classic]
+  
   @scala.inline
   def Double: double = "double".asInstanceOf[double]
+  
   @scala.inline
   def DoubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
+  
   @scala.inline
   def Round: round = "round".asInstanceOf[round]
+  
   @scala.inline
   def Single: single = "single".asInstanceOf[single]
+  
   @scala.inline
   def SingleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
 }
-

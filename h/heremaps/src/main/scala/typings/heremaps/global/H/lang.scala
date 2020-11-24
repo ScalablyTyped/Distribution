@@ -3,11 +3,12 @@ package typings.heremaps.global.H
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("H.lang")
 @js.native
 object lang extends js.Object {
+  
   /**
     * @link https://developer.here.com/documentation/maps/api_reference/H.lang.IllegalOperationError.html
     */
@@ -57,6 +58,4 @@ object lang extends js.Object {
     ) = this()
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _], opt_val: Double, opt_range: js.Array[Double]) = this()
   }
-  
 }
-

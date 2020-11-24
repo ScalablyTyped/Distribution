@@ -2,10 +2,11 @@ package typings.objectMerge.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectMerge extends js.Object {
+  
   /**
     * Merges JavaScript objects recursively without altering the objects merged.
     * @author <a href="mailto:matthewkastor@gmail.com">Matthew Kastor</a>
@@ -120,6 +121,7 @@ trait ObjectMerge extends js.Object {
     *  // out.aps will be equal to z.aps
     */
   def apply(shadows: js.Object*): js.Object = js.native
+  
   /**
     * Creates a new options object suitable for use with objectMerge.
     * @param [opts] An object specifying the options.
@@ -153,4 +155,3 @@ trait ObjectMerge extends js.Object {
     */
   def createOptions(options: js.Object): ObjectMergeOptions = js.native
 }
-

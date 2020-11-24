@@ -3,10 +3,11 @@ package typings.snsValidator.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MessageValidator extends js.Object {
+  
   /**
     * Validates a message's signature and passes it to the provided callback.
     * @param hash Can be the raw or parsed message.
@@ -18,4 +19,3 @@ trait MessageValidator extends js.Object {
     cb: js.Function2[/* err */ Error | Null, /* message */ js.UndefOr[js.Object], Unit]
   ): Unit = js.native
 }
-

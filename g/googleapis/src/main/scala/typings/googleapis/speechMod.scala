@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/speech", JSImport.Namespace)
 @js.native
 object speechMod extends js.Object {
+  
   def speech(options: Options): Speech = js.native
   def speech(options: typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Options): typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech = js.native
   @JSName("speech")
   def speech_v1(version: v1): Speech = js.native
   @JSName("speech")
   def speech_v1p1beta1(version: v1p1beta1): typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Speech {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Speech]
+            ]
     
     @js.native
     class v1p1beta1 protected ()
@@ -37,13 +45,6 @@ object speechMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Speech]
-            ]
-    
     @js.native
     object v1p1beta1
       extends TopLevel[
@@ -53,11 +54,11 @@ object speechMod extends js.Object {
                 typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object speechMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

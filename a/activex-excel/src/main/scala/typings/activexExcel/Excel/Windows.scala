@@ -3,17 +3,16 @@ package typings.activexExcel.Excel
 import typings.activexExcel.activexExcelBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Windows extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
-  var SyncScrollingSideBySide: Boolean = js.native
+  
   def apply(Index: String): Window = js.native
   def apply(Index: Double): Window = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
   /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(): js.Any = js.native
   def Arrange(
@@ -93,11 +92,23 @@ trait Windows extends js.Object {
     SyncHorizontal: Boolean,
     SyncVertical: Boolean
   ): js.Any = js.native
+  
   def BreakSideBySide(): Boolean = js.native
+  
   def CompareSideBySideWith(WindowName: String): Boolean = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: String): Window = js.native
   def Item(Index: Double): Window = js.native
+  
+  val Parent: js.Any = js.native
+  
   def ResetPositionsSideBySide(): Unit = js.native
+  
+  var SyncScrollingSideBySide: Boolean = js.native
+  
   def _Default(Index: js.Any): Window = js.native
 }
-

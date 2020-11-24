@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__expansion-panel
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 Create accessible expansion components for accordions and disclosures.
@@ -10,9 +10,9 @@ Create accessible expansion components for accordions and disclosures.
 | ------------------ | :-------------: |
 | Full name          | @react-md/expansion-panel |
 | Keywords           | react-md, material design, react, expansion panel, accordion, disclosure, component, components |
-| # releases         | 11 |
+| # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 2308 |
+| # downloads        | 5069 |
 | # stars            | 0 |
 
 ## Links

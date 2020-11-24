@@ -1,17 +1,16 @@
 package typings.awsSdk.batchMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Batch extends Service {
-  @JSName("config")
-  var config_Batch: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Cancels a job in an AWS Batch job queue. Jobs that are in the SUBMITTED, PENDING, or RUNNABLE state are cancelled. Jobs that have progressed to STARTING or RUNNING are not cancelled (but the API operation still succeeds, even if no job is cancelled); these jobs must be terminated with the TerminateJob operation.
     */
@@ -25,6 +24,10 @@ trait Batch extends Service {
     params: CancelJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelJobResponse, Unit]
   ): Request[CancelJobResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Batch: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the capacity and instance types of the compute resources within the environment. This is based on the compute resource specification that you define or the launch template that you specify when you create the compute environment. You can choose to use Amazon EC2 On-Demand Instances or Spot Instances in your managed compute environment. You can optionally set a maximum price so that Spot Instances only launch when the Spot Instance price is below a specified percentage of the On-Demand price.  Multi-node parallel jobs are not supported on Spot Instances.  In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it. Then, manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.  AWS Batch does not upgrade the AMIs in a compute environment after it is created (for example, when a newer version of the Amazon ECS-optimized AMI is available). You are responsible for the management of the guest operating system (including updates and security patches) and any additional application software or utilities that you install on the compute resources. To use a new AMI for your AWS Batch jobs:   Create a new compute environment with the new AMI.   Add the compute environment to an existing job queue.   Remove the old compute environment from your job queue.   Delete the old compute environment.   
     */
@@ -38,6 +41,7 @@ trait Batch extends Service {
     params: CreateComputeEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateComputeEnvironmentResponse, Unit]
   ): Request[CreateComputeEnvironmentResponse, AWSError] = js.native
+  
   /**
     * Creates an AWS Batch job queue. When you create a job queue, you associate one or more compute environments to the queue and assign an order of preference for the compute environments. You also set a priority to the job queue that determines the order in which the AWS Batch scheduler places jobs onto its associated compute environments. For example, if a compute environment is associated with more than one job queue, the job queue with a higher priority is given preference for scheduling jobs to that compute environment.
     */
@@ -51,6 +55,7 @@ trait Batch extends Service {
     params: CreateJobQueueRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJobQueueResponse, Unit]
   ): Request[CreateJobQueueResponse, AWSError] = js.native
+  
   /**
     * Deletes an AWS Batch compute environment. Before you can delete a compute environment, you must set its state to DISABLED with the UpdateComputeEnvironment API operation and disassociate it from any job queues with the UpdateJobQueue API operation.
     */
@@ -64,6 +69,7 @@ trait Batch extends Service {
     params: DeleteComputeEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteComputeEnvironmentResponse, Unit]
   ): Request[DeleteComputeEnvironmentResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified job queue. You must first disable submissions for a queue with the UpdateJobQueue operation. All jobs in the queue are terminated when you delete a job queue. It is not necessary to disassociate compute environments from a queue before submitting a DeleteJobQueue request.
     */
@@ -77,6 +83,7 @@ trait Batch extends Service {
     params: DeleteJobQueueRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobQueueResponse, Unit]
   ): Request[DeleteJobQueueResponse, AWSError] = js.native
+  
   /**
     * Deregisters an AWS Batch job definition. Job definitions will be permanently deleted after 180 days.
     */
@@ -90,6 +97,7 @@ trait Batch extends Service {
     params: DeregisterJobDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterJobDefinitionResponse, Unit]
   ): Request[DeregisterJobDefinitionResponse, AWSError] = js.native
+  
   /**
     * Describes one or more of your compute environments. If you are using an unmanaged compute environment, you can use the DescribeComputeEnvironment operation to determine the ecsClusterArn that you should launch your Amazon ECS container instances into.
     */
@@ -103,6 +111,7 @@ trait Batch extends Service {
     params: DescribeComputeEnvironmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeComputeEnvironmentsResponse, Unit]
   ): Request[DescribeComputeEnvironmentsResponse, AWSError] = js.native
+  
   /**
     * Describes a list of job definitions. You can specify a status (such as ACTIVE) to only return job definitions that match that status.
     */
@@ -116,6 +125,7 @@ trait Batch extends Service {
     params: DescribeJobDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobDefinitionsResponse, Unit]
   ): Request[DescribeJobDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Describes one or more of your job queues.
     */
@@ -129,6 +139,7 @@ trait Batch extends Service {
     params: DescribeJobQueuesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobQueuesResponse, Unit]
   ): Request[DescribeJobQueuesResponse, AWSError] = js.native
+  
   /**
     * Describes a list of AWS Batch jobs.
     */
@@ -142,6 +153,7 @@ trait Batch extends Service {
     params: DescribeJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobsResponse, Unit]
   ): Request[DescribeJobsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of AWS Batch jobs. You must specify only one of the following:   a job queue ID to return a list of jobs in that job queue   a multi-node parallel job ID to return a list of that job's nodes   an array job ID to return a list of that job's children   You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
     */
@@ -155,6 +167,21 @@ trait Batch extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]
   ): Request[ListJobsResponse, AWSError] = js.native
+  
+  /**
+    * List the tags for an AWS Batch resource. AWS Batch resources that support tags are compute environments, jobs, job definitions, and job queues. ARNs for child jobs of array and multi-node parallel (MNP) jobs are not supported.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * List the tags for an AWS Batch resource. AWS Batch resources that support tags are compute environments, jobs, job definitions, and job queues. ARNs for child jobs of array and multi-node parallel (MNP) jobs are not supported.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Registers an AWS Batch job definition.
     */
@@ -168,6 +195,7 @@ trait Batch extends Service {
     params: RegisterJobDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterJobDefinitionResponse, Unit]
   ): Request[RegisterJobDefinitionResponse, AWSError] = js.native
+  
   /**
     * Submits an AWS Batch job from a job definition. Parameters specified during SubmitJob override parameters defined in the job definition.
     */
@@ -181,6 +209,21 @@ trait Batch extends Service {
     params: SubmitJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SubmitJobResponse, Unit]
   ): Request[SubmitJobResponse, AWSError] = js.native
+  
+  /**
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well. AWS Batch resources that support tags are compute environments, jobs, job definitions, and job queues. ARNs for child jobs of array and multi-node parallel (MNP) jobs are not supported.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well. AWS Batch resources that support tags are compute environments, jobs, job definitions, and job queues. ARNs for child jobs of array and multi-node parallel (MNP) jobs are not supported.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Terminates a job in a job queue. Jobs that are in the STARTING or RUNNING state are terminated, which causes them to transition to FAILED. Jobs that have not progressed to the STARTING state are cancelled.
     */
@@ -194,6 +237,21 @@ trait Batch extends Service {
     params: TerminateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TerminateJobResponse, Unit]
   ): Request[TerminateJobResponse, AWSError] = js.native
+  
+  /**
+    * Deletes specified tags from an AWS Batch resource.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Deletes specified tags from an AWS Batch resource.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates an AWS Batch compute environment.
     */
@@ -207,6 +265,7 @@ trait Batch extends Service {
     params: UpdateComputeEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateComputeEnvironmentResponse, Unit]
   ): Request[UpdateComputeEnvironmentResponse, AWSError] = js.native
+  
   /**
     * Updates a job queue.
     */
@@ -221,4 +280,3 @@ trait Batch extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateJobQueueResponse, Unit]
   ): Request[UpdateJobQueueResponse, AWSError] = js.native
 }
-

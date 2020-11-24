@@ -2,7 +2,7 @@ package typings.typescriptServices.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ImmutableCompilationSettings")
 @js.native
@@ -30,13 +30,14 @@ class ImmutableCompilationSettings protected ()
     createFileLog: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "ImmutableCompilationSettings")
 @js.native
 object ImmutableCompilationSettings extends js.Object {
+  
   var _defaultSettings: js.Any = js.native
+  
   def defaultSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = js.native
+  
   def fromCompilationSettings(settings: typings.typescriptServices.TypeScript.CompilationSettings): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = js.native
 }
-

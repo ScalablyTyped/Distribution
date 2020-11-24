@@ -5,7 +5,7 @@ import typings.ejWebAll.ej.datavisualization.SunburstChart.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.datavisualization.SunburstChart")
 @js.native
@@ -16,12 +16,12 @@ class SunburstChart protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-
 /* static members */
 @JSGlobal("ej.datavisualization.SunburstChart")
 @js.native
 object SunburstChart extends js.Object {
+  
   var Locale: js.Any = js.native
+  
   var fn: typings.ejWebAll.ej.datavisualization.SunburstChart = js.native
 }
-

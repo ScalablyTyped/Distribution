@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.PdfViewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AnnotationType extends js.Object
-
 @JSGlobal("ej.PdfViewer.AnnotationType")
 @js.native
 object AnnotationType extends js.Object {
+  
   ///Specifies the highlight annotation.
   @js.native
   sealed trait Highlight extends AnnotationType
@@ -21,6 +21,4 @@ object AnnotationType extends js.Object {
   ///Specifies the underline annotation.
   @js.native
   sealed trait Underline extends AnnotationType
-  
 }
-

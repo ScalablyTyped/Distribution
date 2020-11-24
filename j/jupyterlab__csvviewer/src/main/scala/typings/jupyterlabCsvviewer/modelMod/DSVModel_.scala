@@ -10,7 +10,7 @@ import typings.luminoDatagrid.datamodelMod.DataModel.RowRegion
 import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/csvviewer/lib/model", "DSVModel")
 @js.native
@@ -23,7 +23,9 @@ class DSVModel_ protected ()
     * @param options - The options for initializing the data model.
     */
   def this(options: IOptions) = this()
+  
   var _columnCount: js.Any = js.native
+  
   /**
     * The column offset cache, starting with row _columnOffsetsStartingRow
     *
@@ -32,10 +34,12 @@ class DSVModel_ protected ()
     * _columnOffsets[(r-this._columnOffsetsStartingRow)*numColumns+c]
     */
   var _columnOffsets: js.Any = js.native
+  
   /**
     * The row that _columnOffsets[0] represents.
     */
   var _columnOffsetsStartingRow: js.Any = js.native
+  
   /**
     * Compute the row offsets and initialize the column offset cache.
     *
@@ -48,10 +52,15 @@ class DSVModel_ protected ()
     * parsed again.
     */
   var _computeRowOffsets: js.Any = js.native
+  
   var _data: js.Any = js.native
+  
   var _delayedParse: js.Any = js.native
+  
   var _delimiter: js.Any = js.native
+  
   var _doneParsing: js.Any = js.native
+  
   /**
     * Get the parsed string field for a row and column.
     *
@@ -60,6 +69,7 @@ class DSVModel_ protected ()
     * @returns The parsed string for the data item.
     */
   var _getField: js.Any = js.native
+  
   /**
     * Get the index in the data string for the first character of a row and
     * column.
@@ -69,20 +79,25 @@ class DSVModel_ protected ()
     * @returns - The index into the data string where the data item starts.
     */
   var _getOffsetIndex: js.Any = js.native
+  
   /**
     * The header strings.
     */
   var _header: js.Any = js.native
+  
   /**
     * The number of rows to parse initially before doing a delayed parse of the
     * entire data.
     */
   var _initialRows: js.Any = js.native
+  
   var _isDisposed: js.Any = js.native
+  
   /**
     * The maximum number of rows to parse when there is a cache miss.
     */
   var _maxCacheGet: js.Any = js.native
+  
   /**
     * Parse the data string asynchronously.
     *
@@ -92,29 +107,31 @@ class DSVModel_ protected ()
     * parse the full data string asynchronously.
     */
   var _parseAsync: js.Any = js.native
+  
   var _parser: js.Any = js.native
+  
   var _quote: js.Any = js.native
+  
   var _quoteEscaped: js.Any = js.native
+  
   var _ready: js.Any = js.native
+  
   /**
     * Reset the parser state.
     */
   var _resetParser: js.Any = js.native
+  
   var _rowCount: js.Any = js.native
+  
   var _rowDelimiter: js.Any = js.native
+  
   /**
     * The index for the start of each row.
     */
   var _rowOffsets: js.Any = js.native
+  
   var _startedParsing: js.Any = js.native
-  /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
+  
   /**
     * Get the column count for a region in the data model.
     *
@@ -127,6 +144,7 @@ class DSVModel_ protected ()
     */
   /* InferMemberOverrides */
   override def columnCount(region: ColumnRegion): Double = js.native
+  
   /**
     * Get the data value for a cell in the data model.
     *
@@ -145,19 +163,7 @@ class DSVModel_ protected ()
     */
   /* InferMemberOverrides */
   override def data(region: CellRegion, row: Double, column: Double): js.Any = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  
   /**
     * Emit the `changed` signal for the data model.
     *
@@ -167,11 +173,13 @@ class DSVModel_ protected ()
     */
   /* InferMemberOverrides */
   /* protected */ override def emitChanged(args: ChangedArgs): Unit = js.native
+  
   /**
     * Whether this model has been disposed.
     */
   @JSName("isDisposed")
   def isDisposed_MDSVModel_ : Boolean = js.native
+  
   /**
     * Get the metadata for a cell in the data model.
     *
@@ -192,10 +200,12 @@ class DSVModel_ protected ()
     */
   /* InferMemberOverrides */
   override def metadata(region: CellRegion, row: Double, column: Double): Metadata = js.native
+  
   /**
     * A promise that resolves when the model has parsed all of its data.
     */
   def ready: js.Promise[Unit] = js.native
+  
   /**
     * Get the row count for a region in the data model.
     *
@@ -209,4 +219,3 @@ class DSVModel_ protected ()
   /* InferMemberOverrides */
   override def rowCount(region: RowRegion): Double = js.native
 }
-

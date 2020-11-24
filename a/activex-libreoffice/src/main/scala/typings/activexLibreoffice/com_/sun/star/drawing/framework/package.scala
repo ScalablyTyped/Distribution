@@ -2,15 +2,17 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object framework {
+  
   /**
     * Abstraction of tool bars used by the drawing framework.
     * @see XToolBarController
     * @see XToolBarFactory
     */
   type XToolBar = typings.activexLibreoffice.com_.sun.star.drawing.framework.XResource
+  
   /**
     * A view in the drawing framework is any object that paints into a pane.
     *

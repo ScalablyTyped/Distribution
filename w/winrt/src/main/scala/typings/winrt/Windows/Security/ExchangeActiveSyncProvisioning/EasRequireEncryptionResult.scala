@@ -2,14 +2,14 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasRequireEncryptionResult extends js.Object
-
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult")
 @js.native
 object EasRequireEncryptionResult extends js.Object {
+  
   @js.native
   sealed trait canBeCompliant extends EasRequireEncryptionResult
   
@@ -45,6 +45,4 @@ object EasRequireEncryptionResult extends js.Object {
   
   @js.native
   sealed trait osNotProtected extends EasRequireEncryptionResult
-  
 }
-

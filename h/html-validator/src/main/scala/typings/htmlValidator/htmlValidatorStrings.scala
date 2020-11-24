@@ -2,9 +2,52 @@ package typings.htmlValidator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlValidatorStrings {
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  
+  @scala.inline
+  def gnu: gnu = "gnu".asInstanceOf[gnu]
+  
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def internal: internal = "internal".asInstanceOf[internal]
+  
+  @scala.inline
+  def io: io = "io".asInstanceOf[io]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def `non-document-error`: `non-document-error` = "non-document-error".asInstanceOf[`non-document-error`]
+  
+  @scala.inline
+  def schema: schema = "schema".asInstanceOf[schema]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
+  @scala.inline
+  def xhtml: xhtml = "xhtml".asInstanceOf[xhtml]
+  
+  @scala.inline
+  def xml: xml = "xml".asInstanceOf[xml]
+  
   @js.native
   sealed trait error extends js.Object
   
@@ -46,34 +89,4 @@ object htmlValidatorStrings {
   
   @js.native
   sealed trait xml extends js.Object
-  
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def gnu: gnu = "gnu".asInstanceOf[gnu]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
-  @scala.inline
-  def io: io = "io".asInstanceOf[io]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def `non-document-error`: `non-document-error` = "non-document-error".asInstanceOf[`non-document-error`]
-  @scala.inline
-  def schema: schema = "schema".asInstanceOf[schema]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def xhtml: xhtml = "xhtml".asInstanceOf[xhtml]
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
 }
-

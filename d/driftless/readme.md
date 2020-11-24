@@ -10,9 +10,9 @@ Driftless setInterval and setTimeout replacement for Node and the browser
 | ------------------ | :-------------: |
 | Full name          | driftless |
 | Keywords           | setInterval, setTimeout, precise, accurate, drift, driftless |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 703951 |
+| # downloads        | 1449842 |
 | # stars            | 0 |
 
 ## Links

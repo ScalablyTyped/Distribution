@@ -5,13 +5,15 @@ import typings.canvasRenderer.canvasContextMod.CanvasContext
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("canvas-renderer/types/canvas", JSImport.Namespace)
 @js.native
 object canvasMod extends js.Object {
+  
   @js.native
   trait Canvas extends js.Object {
+    
     /**
       * Specifies the background color. Default is fully transparent. Allowed values are:
       * - 32 bit integers on the format `0xRRGGBBAA`
@@ -34,14 +36,7 @@ object canvasMod extends js.Object {
       * - strings on the format `"hwb(134, 50%, 50%, 50%)"`
       */
     var backColor: Double | String = js.native
-    /**
-      * The height of the canvas in pixels.
-      */
-    var height: Double = js.native
-    /**
-      * The width of the canvas in pixels.
-      */
-    var width: Double = js.native
+    
     /**
       * Gets a context used to draw polygons on this canvas.
       * @param contextId Type of context. Only `"2d"` is supported, and also the default value.
@@ -51,6 +46,12 @@ object canvasMod extends js.Object {
     def getContext(contextId: js.UndefOr[scala.Nothing], contextAttributes: js.Object): CanvasContext = js.native
     def getContext(contextId: String): CanvasContext = js.native
     def getContext(contextId: String, contextAttributes: js.Object): CanvasContext = js.native
+    
+    /**
+      * The height of the canvas in pixels.
+      */
+    var height: Double = js.native
+    
     /**
       * Renders the canvas as a data URI.
       * @param type Content type of returned image. Only `"image/png"` is supported, and also the default value.
@@ -60,13 +61,17 @@ object canvasMod extends js.Object {
     def toDataURL(`type`: js.UndefOr[scala.Nothing], encoderOptions: js.Any): String = js.native
     def toDataURL(`type`: String): String = js.native
     def toDataURL(`type`: String, encoderOptions: js.Any): String = js.native
+    
     /**
       * Renders the canvas as a PNG data stream.
       * @param keywords Keywords to be written to the PNG stream. See https://www.w3.org/TR/PNG/#11keywords.
       */
     def toPng(): Buffer = js.native
     def toPng(keywords: StringDictionary[String]): Buffer = js.native
+    
+    /**
+      * The width of the canvas in pixels.
+      */
+    var width: Double = js.native
   }
-  
 }
-

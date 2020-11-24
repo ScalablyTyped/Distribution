@@ -2,7 +2,7 @@ package typings.antd.dropdownDropdownMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.antd.antdStrings.topLeft
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   - typings.antd.antdStrings.bottomRight
 */
 trait Placement extends js.Object
-

@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Camera")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 	 */
 class Camera ()
   extends typings.three.cameraMod.Camera
-

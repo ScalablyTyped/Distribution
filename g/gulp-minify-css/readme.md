@@ -10,8 +10,8 @@ Minify css with clean-css.
 | Full name          | gulp-minify-css |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 454 |
-| # downloads        | 2974759 |
+| # dependents       | 462 |
+| # downloads        | 2917032 |
 | # stars            | 177 |
 
 ## Links

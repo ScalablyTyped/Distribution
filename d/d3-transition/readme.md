@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-transition
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Animated transitions for D3 selections.
@@ -10,9 +10,9 @@ Animated transitions for D3 selections.
 | ------------------ | :-------------: |
 | Full name          | d3-transition |
 | Keywords           | d3, d3-module, dom, transition, animation |
-| # releases         | 8 |
-| # dependents       | 201 |
-| # downloads        | 26204229 |
+| # releases         | 14 |
+| # dependents       | 260 |
+| # downloads        | 40762225 |
 | # stars            | 2 |
 
 ## Links

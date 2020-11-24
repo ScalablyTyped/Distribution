@@ -2,7 +2,7 @@ package typings.awsSdk.personalizeruntimeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/personalizeruntime", JSImport.Namespace)
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends PersonalizeRuntime {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -2,18 +2,19 @@ package typings.zSchema.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("z-schema", JSImport.Namespace)
 @js.native
 class ^ protected () extends Validator {
   def this(options: Options) = this()
 }
-
 @JSImport("z-schema", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def getDefaultOptions(): Options = js.native
+  
   /**
     * Get the list of all registered formats.
     *
@@ -23,6 +24,7 @@ object ^ extends js.Object {
     * @returns {string[]} the list of all registered format names.
     */
   def getRegisteredFormats(): js.Array[String] = js.native
+  
   /**
     * Register a custom format.
     *
@@ -31,6 +33,7 @@ object ^ extends js.Object {
     *   Returns `true` if `value` matches the custom format.
     */
   def registerFormat(formatName: String, validatorFunction: js.Function1[/* value */ js.Any, Boolean]): Unit = js.native
+  
   /**
     * Unregister a format.
     *
@@ -38,4 +41,3 @@ object ^ extends js.Object {
     */
   def unregisterFormat(name: String): Unit = js.native
 }
-

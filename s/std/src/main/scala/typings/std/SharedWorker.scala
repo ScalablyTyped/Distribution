@@ -2,16 +2,13 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SharedWorker
   extends EventTarget
      with AbstractWorker {
-  /**
-    * Returns sharedWorker's MessagePort object which can be used to communicate with the global environment.
-    */
-  val port: MessagePort = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -22,6 +19,12 @@ trait SharedWorker
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /**
+    * Returns sharedWorker's MessagePort object which can be used to communicate with the global environment.
+    */
+  val port: MessagePort = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -33,4 +36,3 @@ trait SharedWorker
     options: EventListenerOptions
   ): Unit = js.native
 }
-

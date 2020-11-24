@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-backend-cpu
 
-Typings are for version 2.0.1
+Typings are for version 2.7.0
 
 ## Library description:
 Vanilla JavaScript backend for TensorFlow.js
@@ -10,9 +10,9 @@ Vanilla JavaScript backend for TensorFlow.js
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-backend-cpu |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 54545 |
+| # downloads        | 93000 |
 | # stars            | 0 |
 
 ## Links

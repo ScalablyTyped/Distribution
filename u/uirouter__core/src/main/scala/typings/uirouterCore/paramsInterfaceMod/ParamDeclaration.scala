@@ -3,10 +3,11 @@ package typings.uirouterCore.paramsInterfaceMod
 import typings.uirouterCore.paramTypeMod.ParamType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamDeclaration extends js.Object {
+  
   /**
     * The parameter's `array` mode
     *
@@ -41,6 +42,7 @@ trait ParamDeclaration extends js.Object {
     * @default `true` if the parameter name ends in `[]`, such as `url: '/foo/{implicitArrayParam:int[]}'`
     */
   var array: js.UndefOr[Boolean] = js.native
+  
   /**
     * Dynamic flag
     *
@@ -62,6 +64,7 @@ trait ParamDeclaration extends js.Object {
     * Default: `false`
     */
   var dynamic: js.UndefOr[Boolean] = js.native
+  
   /**
     * Enables/disables inheriting of this parameter's value
     *
@@ -99,6 +102,7 @@ trait ParamDeclaration extends js.Object {
     * Default: `true`
     */
   var inherit: js.UndefOr[Boolean] = js.native
+  
   /**
     * @internal
     * @internal
@@ -106,6 +110,7 @@ trait ParamDeclaration extends js.Object {
     * This is not part of the declaration; it is a calculated value depending on if a default value was specified or not.
     */
   var isOptional: js.UndefOr[Boolean] = js.native
+  
   /**
     * Disables url-encoding of parameter values
     *
@@ -143,6 +148,7 @@ trait ParamDeclaration extends js.Object {
     * Default: `false`
     */
   var raw: js.UndefOr[Boolean] = js.native
+  
   /**
     * @internal
     *
@@ -161,6 +167,7 @@ trait ParamDeclaration extends js.Object {
     * ```
     */
   var replace: js.UndefOr[js.Array[Replace]] = js.native
+  
   /**
     * Squash mode: omit default parameter values in URL
     *
@@ -215,6 +222,7 @@ trait ParamDeclaration extends js.Object {
     * Default: If squash is not set, it uses the configured default squash policy. (See [[defaultSquashPolicy]]())
     */
   var squash: js.UndefOr[Boolean | String] = js.native
+  
   /**
     * The parameter's type
     *
@@ -235,6 +243,7 @@ trait ParamDeclaration extends js.Object {
     *
     */
   var `type`: js.UndefOr[String | ParamType] = js.native
+  
   /**
     * The default value for this parameter.
     *
@@ -292,63 +301,84 @@ trait ParamDeclaration extends js.Object {
     */
   var value: js.UndefOr[js.Any] = js.native
 }
-
 object ParamDeclaration {
+  
   @scala.inline
   def apply(): ParamDeclaration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamDeclaration]
   }
+  
   @scala.inline
   implicit class ParamDeclarationOps[Self <: ParamDeclaration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArray(value: Boolean): Self = this.set("array", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteArray: Self = this.set("array", js.undefined)
+    
     @scala.inline
     def setDynamic(value: Boolean): Self = this.set("dynamic", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDynamic: Self = this.set("dynamic", js.undefined)
+    
     @scala.inline
     def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInherit: Self = this.set("inherit", js.undefined)
+    
     @scala.inline
     def setIsOptional(value: Boolean): Self = this.set("isOptional", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsOptional: Self = this.set("isOptional", js.undefined)
+    
     @scala.inline
     def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRaw: Self = this.set("raw", js.undefined)
+    
     @scala.inline
     def setReplaceVarargs(value: Replace*): Self = this.set("replace", js.Array(value :_*))
+    
     @scala.inline
     def setReplace(value: js.Array[Replace]): Self = this.set("replace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReplace: Self = this.set("replace", js.undefined)
+    
     @scala.inline
     def setSquash(value: Boolean | String): Self = this.set("squash", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSquash: Self = this.set("squash", js.undefined)
+    
     @scala.inline
     def setType(value: String | ParamType): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValue: Self = this.set("value", js.undefined)
   }
-  
 }
-

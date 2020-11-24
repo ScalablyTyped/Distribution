@@ -7,7 +7,7 @@ import typings.gifwrap.gifwrapNumbers.`3`
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gifwrap", "GifFrame")
 @js.native
@@ -25,25 +25,33 @@ class GifFrame protected ()
   def this(width: Double, height: Double, backgroundRGBA: js.UndefOr[scala.Nothing], options: GifFrameOptions) = this()
   def this(width: Double, height: Double, backgroundRGBA: Double, options: GifFrameOptions) = this()
   def this(width: Double, height: Double, buffer: Buffer, options: GifFrameOptions) = this()
+  
   @JSName("delayCentisecs")
   var delayCentisecs_GifFrame: Double = js.native
+  
   @JSName("disposalMethod")
   var disposalMethod_GifFrame: `0` | `1` | `2` | `3` = js.native
+  
+  def getPalette(): GifPalette = js.native
+  
   var interlaced: Boolean = js.native
+  
   @JSName("xOffset")
   var xOffset_GifFrame: Double = js.native
+  
   @JSName("yOffset")
   var yOffset_GifFrame: Double = js.native
-  def getPalette(): GifPalette = js.native
 }
-
 /* static members */
 @JSImport("gifwrap", "GifFrame")
 @js.native
 object GifFrame extends js.Object {
+  
   val DisposeNothing: `1` = js.native
+  
   val DisposeToAnything: `0` = js.native
+  
   val DisposeToBackgroundColor: `2` = js.native
+  
   val DisposeToPrevious: `3` = js.native
 }
-

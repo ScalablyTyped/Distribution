@@ -12,7 +12,7 @@ Linkify GitHub issue references
 | Keywords           | issue, issues, linkify, link, pr, pull, request, reference, references, github, gh, link |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 6128 |
+| # downloads        | 24775 |
 | # stars            | 1 |
 
 ## Links

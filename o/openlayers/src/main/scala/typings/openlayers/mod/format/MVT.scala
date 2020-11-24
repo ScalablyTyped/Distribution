@@ -9,7 +9,7 @@ import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
   */
 class MVT () extends Feature {
   def this(opt_options: MVTOptions) = this()
+  
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
@@ -43,6 +44,7 @@ class MVT () extends Feature {
   def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  
   def readProjection(source: String): Projection = js.native
   def readProjection(source: GlobalObject): Projection = js.native
   /**
@@ -51,6 +53,7 @@ class MVT () extends Feature {
     */
   def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
+  
   /**
     * Sets the layers that features will be read from.
     * @param layers Layers.
@@ -58,4 +61,3 @@ class MVT () extends Feature {
     */
   def setLayers(layers: js.Array[String]): Unit = js.native
 }
-

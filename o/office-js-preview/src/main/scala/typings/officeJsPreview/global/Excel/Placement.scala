@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,10 +13,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Placement")
 @js.native
 object Placement extends js.Object {
-  /* "Absolute" */ val absolute: typings.officeJsPreview.Excel.Placement.absolute with String = js.native
-  /* "OneCell" */ val oneCell: typings.officeJsPreview.Excel.Placement.oneCell with String = js.native
-  /* "TwoCell" */ val twoCell: typings.officeJsPreview.Excel.Placement.twoCell with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.Placement with String] = js.native
+  
+  /* "Absolute" */ val absolute: typings.officeJsPreview.Excel.Placement.absolute with String = js.native
+  
+  /* "OneCell" */ val oneCell: typings.officeJsPreview.Excel.Placement.oneCell with String = js.native
+  
+  /* "TwoCell" */ val twoCell: typings.officeJsPreview.Excel.Placement.twoCell with String = js.native
 }
-

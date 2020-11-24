@@ -6,7 +6,7 @@ import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a detached signature for a signed CMS message. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CmsDetachedSignature")
@@ -19,11 +19,11 @@ class CmsDetachedSignature protected ()
     */
   def this(inputBlob: IBuffer) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CmsDetachedSignature")
 @js.native
 object CmsDetachedSignature extends js.Object {
+  
   /**
     * Signs the specified input data using the specified signer information and creates a detached signed CMS message.
     * @param data The input data to be signed.
@@ -37,4 +37,3 @@ object CmsDetachedSignature extends js.Object {
     certificates: IIterable[typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate]
   ): IPromiseWithIAsyncOperation[IBuffer] = js.native
 }
-

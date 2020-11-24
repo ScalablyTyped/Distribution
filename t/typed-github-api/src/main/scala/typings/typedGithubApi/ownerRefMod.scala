@@ -17,16 +17,19 @@ import typings.typedGithubApi.typedGithubApiStrings.sources
 import typings.typedGithubApi.typedGithubApiStrings.updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-github-api/dist/interfaces/owner-ref", JSImport.Namespace)
 @js.native
 object ownerRefMod extends js.Object {
+  
   @js.native
   trait OwnerRef extends js.Object {
-    var login: String = js.native
+    
     def getRepository(name: String): RepositoryRef = js.native
+    
     def loadOrganizationAsync(): js.Promise[Organization | Null] = js.native
+    
     /**
       * Loads repositories owned by this organisation.
       * @param type      The type of repository to return (default all)
@@ -39,6 +42,7 @@ object ownerRefMod extends js.Object {
       sort: js.UndefOr[created | updated | pushed | full_name],
       ascending: js.UndefOr[Boolean]
     ): js.Promise[js.Array[Repository]] = js.native
+    
     /**
       * Loads repositories accessible to this user.
       * @param type      The type of search (default owner)
@@ -100,8 +104,9 @@ object ownerRefMod extends js.Object {
     def loadRepositoriesAsync_updated(`type`: js.UndefOr[scala.Nothing], sort: updated): js.Promise[js.Array[Repository]] = js.native
     @JSName("loadRepositoriesAsync")
     def loadRepositoriesAsync_updated(`type`: js.UndefOr[scala.Nothing], sort: updated, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    
     def loadUserAsync(): js.Promise[User | Null] = js.native
+    
+    var login: String = js.native
   }
-  
 }
-

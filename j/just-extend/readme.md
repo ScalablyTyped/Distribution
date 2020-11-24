@@ -10,9 +10,9 @@ extend an object
 | ------------------ | :-------------: |
 | Full name          | just-extend |
 | Keywords           | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
-| # releases         | 6 |
-| # dependents       | 46 |
-| # downloads        | 64720072 |
+| # releases         | 4 |
+| # dependents       | 52 |
+| # downloads        | 89379887 |
 | # stars            | 1 |
 
 ## Links

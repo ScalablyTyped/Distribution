@@ -13,11 +13,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns", JSImport.Namespace)
 @js.native
 object dnsMod extends js.Object {
+  
   def dns(options: Options): Dns = js.native
   def dns(options: typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Options): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = js.native
   def dns(options: typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Options): typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns = js.native
@@ -27,13 +28,20 @@ object dnsMod extends js.Object {
   def dns_v1beta2(version: v1beta2): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = js.native
   @JSName("dns")
   def dns_v2beta1(version: v2beta1): typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Dns {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dns]
+            ]
     
     @js.native
     class v1beta2 protected ()
@@ -41,20 +49,6 @@ object dnsMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v2beta1 protected ()
-      extends typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dns]
-            ]
-    
     @js.native
     object v1beta2
       extends TopLevel[
@@ -66,6 +60,12 @@ object dnsMod extends js.Object {
             ]
     
     @js.native
+    class v2beta1 protected ()
+      extends typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v2beta1
       extends TopLevel[
               Instantiable2[
@@ -74,11 +74,11 @@ object dnsMod extends js.Object {
                 typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -106,8 +106,5 @@ object dnsMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

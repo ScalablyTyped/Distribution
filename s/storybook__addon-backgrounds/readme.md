@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-backgrounds
 
-Typings are for version 5.3.19
+Typings are for version 6.1.2
 
 ## Library description:
 A storybook addon to show different backgrounds for your preview
@@ -10,9 +10,9 @@ A storybook addon to show different backgrounds for your preview
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-backgrounds |
 | Keywords           | addon, background, react, storybook |
-| # releases         | 420 |
-| # dependents       | 22 |
-| # downloads        | 3518492 |
+| # releases         | 563 |
+| # dependents       | 34 |
+| # downloads        | 10812485 |
 | # stars            | 0 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__transform
 
-Typings are for version 24.9.0
+Typings are for version 26.6.2
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/transform |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 13 |
-| # downloads        | 114648628 |
+| # releases         | 35 |
+| # dependents       | 18 |
+| # downloads        | 285229347 |
 | # stars            | 0 |
 
 ## Links

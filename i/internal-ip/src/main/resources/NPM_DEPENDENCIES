@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "internal-ip" : "6.0.0"
+      "internal-ip" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "internal-ip" : "6.0.0"
+      "internal-ip" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

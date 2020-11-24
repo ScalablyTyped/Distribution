@@ -6,11 +6,12 @@ import typings.ssri.anon.Error
 import typings.ssri.ssriBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssri", "checkData")
 @js.native
 object checkData extends js.Object {
+  
   def apply(data: String, sri: String): Hash | `false` = js.native
   def apply(data: String, sri: String, opts: Error): Hash | `false` = js.native
   def apply(data: String, sri: HashLike): Hash | `false` = js.native
@@ -30,4 +31,3 @@ object checkData extends js.Object {
   def apply(data: TypedArray, sri: IntegrityLike): Hash | `false` = js.native
   def apply(data: TypedArray, sri: IntegrityLike, opts: Error): Hash | `false` = js.native
 }
-

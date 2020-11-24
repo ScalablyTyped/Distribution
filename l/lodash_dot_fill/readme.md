@@ -11,8 +11,8 @@ The lodash method `_.fill` exported as a module.
 | Full name          | lodash.fill |
 | Keywords           | lodash-modularized, fill |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 1709346 |
+| # dependents       | 12 |
+| # downloads        | 1306103 |
 | # stars            | 0 |
 
 ## Links

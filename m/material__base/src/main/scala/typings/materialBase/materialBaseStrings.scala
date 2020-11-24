@@ -3,9 +3,271 @@ package typings.materialBase
 import typings.materialBase.typesMod.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialBaseStrings {
+  
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
+  
+  @scala.inline
+  def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
+  
+  @scala.inline
+  def animationend: animationend = "animationend".asInstanceOf[animationend]
+  
+  @scala.inline
+  def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
+  
+  @scala.inline
+  def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
+  
+  @scala.inline
+  def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
+  
+  @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  
+  @scala.inline
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @scala.inline
+  def canplay: canplay = "canplay".asInstanceOf[canplay]
+  
+  @scala.inline
+  def canplaythrough: canplaythrough = "canplaythrough".asInstanceOf[canplaythrough]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  
+  @scala.inline
+  def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
+  
+  @scala.inline
+  def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  
+  @scala.inline
+  def drag: drag = "drag".asInstanceOf[drag]
+  
+  @scala.inline
+  def dragend: dragend = "dragend".asInstanceOf[dragend]
+  
+  @scala.inline
+  def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
+  
+  @scala.inline
+  def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
+  
+  @scala.inline
+  def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
+  
+  @scala.inline
+  def dragover: dragover = "dragover".asInstanceOf[dragover]
+  
+  @scala.inline
+  def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
+  
+  @scala.inline
+  def drop: drop = "drop".asInstanceOf[drop]
+  
+  @scala.inline
+  def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
+  
+  @scala.inline
+  def emptied: emptied = "emptied".asInstanceOf[emptied]
+  
+  @scala.inline
+  def ended: ended = "ended".asInstanceOf[ended]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  
+  @scala.inline
+  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  
+  @scala.inline
+  def focusout: focusout = "focusout".asInstanceOf[focusout]
+  
+  @scala.inline
+  def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
+  
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  
+  @scala.inline
+  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @scala.inline
+  def keydown: keydown = "keydown".asInstanceOf[keydown]
+  
+  @scala.inline
+  def keypress: keypress = "keypress".asInstanceOf[keypress]
+  
+  @scala.inline
+  def keyup: keyup = "keyup".asInstanceOf[keyup]
+  
+  @scala.inline
+  def load: load = "load".asInstanceOf[load]
+  
+  @scala.inline
+  def loadeddata: loadeddata = "loadeddata".asInstanceOf[loadeddata]
+  
+  @scala.inline
+  def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
+  
+  @scala.inline
+  def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
+  
+  @scala.inline
+  def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
+  
+  @scala.inline
+  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  
+  @scala.inline
+  def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
+  
+  @scala.inline
+  def mouseleave: mouseleave = "mouseleave".asInstanceOf[mouseleave]
+  
+  @scala.inline
+  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @scala.inline
+  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
+  
+  @scala.inline
+  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  
+  @scala.inline
+  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  
+  @scala.inline
+  def play: play = "play".asInstanceOf[play]
+  
+  @scala.inline
+  def playing: playing = "playing".asInstanceOf[playing]
+  
+  @scala.inline
+  def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
+  
+  @scala.inline
+  def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
+  
+  @scala.inline
+  def pointerenter: pointerenter = "pointerenter".asInstanceOf[pointerenter]
+  
+  @scala.inline
+  def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
+  
+  @scala.inline
+  def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
+  
+  @scala.inline
+  def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
+  
+  @scala.inline
+  def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
+  
+  @scala.inline
+  def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
+  
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  
+  @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
+  
+  @scala.inline
+  def seeked: seeked = "seeked".asInstanceOf[seeked]
+  
+  @scala.inline
+  def seeking: seeking = "seeking".asInstanceOf[seeking]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  
+  @scala.inline
+  def stalled: stalled = "stalled".asInstanceOf[stalled]
+  
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
+  
+  @scala.inline
+  def suspend: suspend = "suspend".asInstanceOf[suspend]
+  
+  @scala.inline
+  def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
+  
+  @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @scala.inline
+  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
+  
+  @scala.inline
+  def touchend: touchend = "touchend".asInstanceOf[touchend]
+  
+  @scala.inline
+  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  
+  @scala.inline
+  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  
+  @scala.inline
+  def transitioncancel: transitioncancel = "transitioncancel".asInstanceOf[transitioncancel]
+  
+  @scala.inline
+  def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
+  
+  @scala.inline
+  def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
+  
+  @scala.inline
+  def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
+  
+  @scala.inline
+  def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
+  
+  @scala.inline
+  def waiting: waiting = "waiting".asInstanceOf[waiting]
+  
+  @scala.inline
+  def wheel: wheel = "wheel".asInstanceOf[wheel]
+  
   @js.native
   sealed trait abort extends EventType
   
@@ -266,180 +528,4 @@ object materialBaseStrings {
   
   @js.native
   sealed trait wheel extends EventType
-  
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
-  @scala.inline
-  def animationend: animationend = "animationend".asInstanceOf[animationend]
-  @scala.inline
-  def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
-  @scala.inline
-  def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
-  @scala.inline
-  def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def canplay: canplay = "canplay".asInstanceOf[canplay]
-  @scala.inline
-  def canplaythrough: canplaythrough = "canplaythrough".asInstanceOf[canplaythrough]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
-  @scala.inline
-  def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
-  @scala.inline
-  def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
-  @scala.inline
-  def drag: drag = "drag".asInstanceOf[drag]
-  @scala.inline
-  def dragend: dragend = "dragend".asInstanceOf[dragend]
-  @scala.inline
-  def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  @scala.inline
-  def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
-  @scala.inline
-  def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
-  @scala.inline
-  def dragover: dragover = "dragover".asInstanceOf[dragover]
-  @scala.inline
-  def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
-  @scala.inline
-  def drop: drop = "drop".asInstanceOf[drop]
-  @scala.inline
-  def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
-  @scala.inline
-  def emptied: emptied = "emptied".asInstanceOf[emptied]
-  @scala.inline
-  def ended: ended = "ended".asInstanceOf[ended]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def focusin: focusin = "focusin".asInstanceOf[focusin]
-  @scala.inline
-  def focusout: focusout = "focusout".asInstanceOf[focusout]
-  @scala.inline
-  def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
-  @scala.inline
-  def keypress: keypress = "keypress".asInstanceOf[keypress]
-  @scala.inline
-  def keyup: keyup = "keyup".asInstanceOf[keyup]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def loadeddata: loadeddata = "loadeddata".asInstanceOf[loadeddata]
-  @scala.inline
-  def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
-  @scala.inline
-  def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
-  @scala.inline
-  def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
-  @scala.inline
-  def mouseleave: mouseleave = "mouseleave".asInstanceOf[mouseleave]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
-  @scala.inline
-  def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
-  @scala.inline
-  def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
-  @scala.inline
-  def pointerenter: pointerenter = "pointerenter".asInstanceOf[pointerenter]
-  @scala.inline
-  def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
-  @scala.inline
-  def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
-  @scala.inline
-  def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
-  @scala.inline
-  def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
-  @scala.inline
-  def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
-  @scala.inline
-  def seeked: seeked = "seeked".asInstanceOf[seeked]
-  @scala.inline
-  def seeking: seeking = "seeking".asInstanceOf[seeking]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
-  @scala.inline
-  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
-  @scala.inline
-  def stalled: stalled = "stalled".asInstanceOf[stalled]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def suspend: suspend = "suspend".asInstanceOf[suspend]
-  @scala.inline
-  def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
-  @scala.inline
-  def transitioncancel: transitioncancel = "transitioncancel".asInstanceOf[transitioncancel]
-  @scala.inline
-  def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
-  @scala.inline
-  def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
-  @scala.inline
-  def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
-  @scala.inline
-  def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
-  @scala.inline
-  def waiting: waiting = "waiting".asInstanceOf[waiting]
-  @scala.inline
-  def wheel: wheel = "wheel".asInstanceOf[wheel]
 }
-

@@ -2,7 +2,7 @@ package typings.discontinuousRange.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("discontinuous-range", JSImport.Namespace)
 @js.native
@@ -17,4 +17,3 @@ class ^ protected () extends DiscontinuousRange {
   def this(rangeStart: Double) = this()
   def this(rangeStart: Double, rangeEnd: Double) = this()
 }
-

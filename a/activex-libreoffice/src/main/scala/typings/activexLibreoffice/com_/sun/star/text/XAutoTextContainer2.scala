@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
 trait XAutoTextContainer2
   extends XAutoTextContainer
      with XIndexAccess
-
 object XAutoTextContainer2 {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -36,4 +36,3 @@ object XAutoTextContainer2 {
     __obj.asInstanceOf[XAutoTextContainer2]
   }
 }
-

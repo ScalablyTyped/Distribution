@@ -4,11 +4,12 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Transpose_impl", JSImport.Namespace)
 @js.native
 object transposeImplMod extends js.Object {
+  
   def transposeImpl(
     xVals: TypedArray,
     xShape: js.Array[Double],
@@ -17,4 +18,3 @@ object transposeImplMod extends js.Object {
     newShape: js.Array[Double]
   ): TypedArray = js.native
 }
-

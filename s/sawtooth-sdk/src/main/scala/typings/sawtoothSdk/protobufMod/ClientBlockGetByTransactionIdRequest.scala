@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByTransactionIdRequest")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class ClientBlockGetByTransactionIdRequest () extends IClientBlockGetByTransactionIdRequest {
   def this(properties: IClientBlockGetByTransactionIdRequest) = this()
-  /** ClientBlockGetByTransactionIdRequest transactionId. */
-  @JSName("transactionId")
-  var transactionId_ClientBlockGetByTransactionIdRequest: String = js.native
+  
   /**
     * Converts this ClientBlockGetByTransactionIdRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
+  
+  /** ClientBlockGetByTransactionIdRequest transactionId. */
+  @JSName("transactionId")
+  var transactionId_ClientBlockGetByTransactionIdRequest: String = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByTransactionIdRequest")
 @js.native
 object ClientBlockGetByTransactionIdRequest extends js.Object {
+  
   /**
     * Creates a new ClientBlockGetByTransactionIdRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
     */
   def create(): ClientBlockGetByTransactionIdRequest = js.native
   def create(properties: IClientBlockGetByTransactionIdRequest): ClientBlockGetByTransactionIdRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByTransactionIdRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientBlockGetByTransactionIdRequest = js.native
   def decode(reader: Uint8Array): ClientBlockGetByTransactionIdRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientBlockGetByTransactionIdRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByTransactionIdRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientBlockGetByTransactionIdRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientBlockGetByTransactionIdRequest = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByTransactionIdRequest message. Does not implicitly {@link ClientBlockGetByTransactionIdRequest.verify|verify} messages.
     * @param message ClientBlockGetByTransactionIdRequest message or plain object to encode
@@ -67,6 +72,7 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
     */
   def encode(message: IClientBlockGetByTransactionIdRequest): Writer = js.native
   def encode(message: IClientBlockGetByTransactionIdRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByTransactionIdRequest message, length delimited. Does not implicitly {@link ClientBlockGetByTransactionIdRequest.verify|verify} messages.
     * @param message ClientBlockGetByTransactionIdRequest message or plain object to encode
@@ -75,12 +81,14 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
     */
   def encodeDelimited(message: IClientBlockGetByTransactionIdRequest): Writer = js.native
   def encodeDelimited(message: IClientBlockGetByTransactionIdRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientBlockGetByTransactionIdRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBlockGetByTransactionIdRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientBlockGetByTransactionIdRequest = js.native
+  
   /**
     * Creates a plain object from a ClientBlockGetByTransactionIdRequest message. Also converts values to other types if specified.
     * @param message ClientBlockGetByTransactionIdRequest
@@ -89,6 +97,7 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
     */
   def toObject(message: ClientBlockGetByTransactionIdRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientBlockGetByTransactionIdRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientBlockGetByTransactionIdRequest message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object ClientBlockGetByTransactionIdRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

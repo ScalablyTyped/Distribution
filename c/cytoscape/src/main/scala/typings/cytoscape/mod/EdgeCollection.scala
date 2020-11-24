@@ -2,7 +2,7 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * edges -> Cy.EdgeCollection
@@ -27,4 +27,3 @@ trait EdgeCollection
      with CollectionAlgorithms
      with EdgeCollectionTraversing
      with _CollectionArgument
-

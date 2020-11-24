@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.DocumentReady  and ASPxClientReportDesigner.PreviewDocumentReady events.
@@ -19,4 +19,3 @@ class ASPxClientWebDocumentViewerDocumentReadyEventArgs protected ()
     */
   def this(documentId: String, reportId: String, pageCount: Double) = this()
 }
-

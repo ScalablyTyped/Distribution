@@ -3,19 +3,26 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DynamicTexture extends Texture {
+  
+  var _IsCanvasElement: js.Any = js.native
+  
   var _canvas: js.Any = js.native
+  
   var _context: js.Any = js.native
-  var _engine: js.Any = js.native
+  
   var _generateMipMaps: js.Any = js.native
+  
   var _recreate: js.Any = js.native
+  
   /**
     * Clears the texture
     */
   def clear(): Unit = js.native
+  
   /**
     * Draws text onto the texture
     * @param text defines the text to be drawn
@@ -32,46 +39,32 @@ trait DynamicTexture extends Texture {
     x: js.UndefOr[Double | Null],
     y: js.UndefOr[Double | Null],
     font: String,
-    color: String,
-    clearColor: String
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[Double | Null],
-    y: js.UndefOr[Double | Null],
-    font: String,
-    color: String,
+    color: String | Null,
     clearColor: String,
-    invertY: Boolean
+    invertY: js.UndefOr[Boolean],
+    update: js.UndefOr[Boolean]
   ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[Double | Null],
-    y: js.UndefOr[Double | Null],
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
+  
   /**
     * Gets the context of the canvas used by the texture
     * @returns the canvas context of the dynamic texture
     */
   def getContext(): CanvasRenderingContext2D = js.native
+  
   /**
     * Resizes the texture
     * @param width the new width
     * @param height the new height
     */
   def scaleTo(width: Double, height: Double): Unit = js.native
+  
   /**
     * Updates the texture
     * @param invertY defines the direction for the Y axis (default is true - y increases downwards)
     * @param premulAlpha defines if alpha is stored as premultiplied (default is false)
     */
   def update(): Unit = js.native
+  def update(invertY: js.UndefOr[scala.Nothing], premulAlpha: Boolean): Unit = js.native
   def update(invertY: Boolean): Unit = js.native
   def update(invertY: Boolean, premulAlpha: Boolean): Unit = js.native
 }
-

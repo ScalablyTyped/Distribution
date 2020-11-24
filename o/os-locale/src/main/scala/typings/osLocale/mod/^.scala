@@ -2,11 +2,12 @@ package typings.osLocale.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("os-locale", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Get the system [locale](https://en.wikipedia.org/wiki/Locale_(computer_software)).
   	@returns The locale.
@@ -21,6 +22,7 @@ object ^ extends js.Object {
   	*/
   def apply(): js.Promise[String] = js.native
   def apply(options: Options): js.Promise[String] = js.native
+  
   /**
   	Synchronously get the system [locale](https://en.wikipedia.org/wiki/Locale_(computer_software)).
   	@returns The locale.
@@ -28,4 +30,3 @@ object ^ extends js.Object {
   def sync(): String = js.native
   def sync(options: Options): String = js.native
 }
-

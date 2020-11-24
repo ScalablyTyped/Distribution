@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-touchspin"
-version := "0.0-unknown-dt-20200515Z-51a542"
+version := "0.0-unknown-dt-20200923Z-62d050"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.ColumnChartMediaInfo
 import typings.arcgisJsApi.esri.ColumnChartMediaInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/popup/content/ColumnChartMediaInfo", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends ColumnChartMediaInfo {
   def this(properties: ColumnChartMediaInfoProperties) = this()
 }
-

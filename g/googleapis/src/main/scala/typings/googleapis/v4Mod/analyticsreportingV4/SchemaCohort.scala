@@ -2,7 +2,7 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a cohort. A cohort is a group of users who share a common
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaCohort extends js.Object {
+  
   /**
     * This is used for `FIRST_VISIT_DATE` cohort, the cohort selects users
     * whose first visit date is between start date and end date defined in the
@@ -24,11 +25,13 @@ trait SchemaCohort extends js.Object {
     * `reportsRequest.dateRanges` field.
     */
   var dateRange: js.UndefOr[SchemaDateRange] = js.native
+  
   /**
     * A unique name for the cohort. If not defined name will be auto-generated
     * with values cohort_[1234...].
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Type of the cohort. The only supported type as of now is
     * `FIRST_VISIT_DATE`. If this field is unspecified the cohort is treated as
@@ -36,37 +39,45 @@ trait SchemaCohort extends js.Object {
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaCohort {
+  
   @scala.inline
   def apply(): SchemaCohort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCohort]
   }
+  
   @scala.inline
   implicit class SchemaCohortOps[Self <: SchemaCohort] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDateRange(value: SchemaDateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

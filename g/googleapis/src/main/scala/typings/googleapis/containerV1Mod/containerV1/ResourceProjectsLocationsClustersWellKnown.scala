@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1", "container_v1.Resource$Projects$Locations$Clusters$WellKnown")
 @js.native
 class ResourceProjectsLocationsClustersWellKnown protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * container.projects.locations.clusters.well-known.getOpenid-configuration
     * @desc GetOpenIDConfig gets the OIDC discovery document for the cluster.
@@ -52,4 +54,3 @@ class ResourceProjectsLocationsClustersWellKnown protected () extends js.Object 
     callback: BodyResponseCallback[SchemaGetOpenIDConfigResponse]
   ): Unit = js.native
 }
-

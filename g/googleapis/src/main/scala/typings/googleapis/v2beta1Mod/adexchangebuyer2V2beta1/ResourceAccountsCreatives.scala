@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Creatives")
 @js.native
 class ResourceAccountsCreatives protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var dealAssociations: ResourceAccountsCreativesDealassociations = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.create
     * @desc Creates a creative.
@@ -44,6 +45,9 @@ class ResourceAccountsCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
+  var dealAssociations: ResourceAccountsCreativesDealassociations = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.get
     * @desc Gets a creative.
@@ -73,6 +77,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.list
     * @desc Lists creatives.
@@ -107,6 +112,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCreativesResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.stopWatching
     * @desc Stops watching a creative. Will stop push notifications being sent
@@ -138,6 +144,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.update
     * @desc Updates a creative.
@@ -168,6 +175,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.watch
     * @desc Watches a creative. Will result in push notifications being sent to
@@ -200,4 +208,3 @@ class ResourceAccountsCreatives protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

@@ -9,11 +9,12 @@ import typings.three.spriteMod.Sprite
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/math/Frustum", JSImport.Namespace)
 @js.native
 object frustumMod extends js.Object {
+  
   @js.native
   class Frustum protected () extends js.Object {
     def this(
@@ -24,19 +25,26 @@ object frustumMod extends js.Object {
       p4: js.UndefOr[Plane],
       p5: js.UndefOr[Plane]
     ) = this()
+    
+    def containsPoint(point: Vector3): Boolean = js.native
+    
+    def copy(frustum: Frustum): this.type = js.native
+    
+    def intersectsBox(box: Box3): Boolean = js.native
+    
+    def intersectsObject(`object`: Object3D): Boolean = js.native
+    
+    def intersectsSphere(sphere: Sphere): Boolean = js.native
+    
+    def intersectsSprite(sprite: Sprite): Boolean = js.native
+    
     /**
     	 * Array of 6 vectors.
     	 */
     var planes: js.Array[Plane] = js.native
-    def containsPoint(point: Vector3): Boolean = js.native
-    def copy(frustum: Frustum): this.type = js.native
-    def intersectsBox(box: Box3): Boolean = js.native
-    def intersectsObject(`object`: Object3D): Boolean = js.native
-    def intersectsSphere(sphere: Sphere): Boolean = js.native
-    def intersectsSprite(sprite: Sprite): Boolean = js.native
+    
     def set(p0: Plane, p1: Plane, p2: Plane, p3: Plane, p4: Plane, p5: Plane): Frustum = js.native
+    
     def setFromProjectionMatrix(m: Matrix4): this.type = js.native
   }
-  
 }
-

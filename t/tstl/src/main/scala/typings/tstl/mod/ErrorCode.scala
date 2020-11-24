@@ -2,7 +2,7 @@ package typings.tstl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "ErrorCode")
 @js.native
@@ -19,4 +19,3 @@ class ErrorCode ()
     */
   def this(`val`: Double, category: typings.tstl.errorCategoryMod.ErrorCategory) = this()
 }
-

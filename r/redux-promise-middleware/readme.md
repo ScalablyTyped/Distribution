@@ -10,9 +10,9 @@ Enables simple, yet robust handling of async action creators in Redux
 | ------------------ | :-------------: |
 | Full name          | redux-promise-middleware |
 | Keywords           | redux, middleware, middlewares, promise, promises, optimistic update, optimistic updates, async, async functions |
-| # releases         | 10 |
-| # dependents       | 131 |
-| # downloads        | 4038754 |
+| # releases         | 8 |
+| # dependents       | 140 |
+| # downloads        | 4582278 |
 | # stars            | 17 |
 
 ## Links

@@ -11,8 +11,8 @@ Enables developers to use a unified Postman Collection format Object across proj
 | Full name          | postman-collection |
 | Keywords           | postman |
 | # releases         | 47 |
-| # dependents       | 34 |
-| # downloads        | 5645090 |
+| # dependents       | 55 |
+| # downloads        | 8922678 |
 | # stars            | 2 |
 
 ## Links

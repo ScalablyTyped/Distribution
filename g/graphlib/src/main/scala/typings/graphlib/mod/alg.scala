@@ -3,11 +3,12 @@ package typings.graphlib.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("graphlib", "alg")
 @js.native
 object alg extends js.Object {
+  
   /**
     * Finds all connected components in a graph and returns an array of these components.
     * Each component is itself an array that contains the ids of nodes in the component.
@@ -17,6 +18,7 @@ object alg extends js.Object {
     * @returns array of nodes list representing components
     */
   def components(graph: Graph): js.Array[js.Array[String]] = js.native
+  
   /**
     * This function is an implementation of Dijkstra's algorithm which finds the shortest
     * path from source to all other nodes in graph. This function returns a map of
@@ -49,6 +51,7 @@ object alg extends js.Object {
     weightFn: js.Function1[/* e */ Edge, Double],
     edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
   ): StringDictionary[Path] = js.native
+  
   /**
     * This function finds the shortest path from each node to every other reachable node in
     * the graph. It is similar to alg.dijkstra, but instead of returning a single-source
@@ -75,6 +78,7 @@ object alg extends js.Object {
     weightFn: js.Function1[/* e */ Edge, Double],
     edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
   ): StringDictionary[StringDictionary[Path]] = js.native
+  
   /**
     * Given a Graph, graph, this function returns all nodes that are part of a cycle. As there
     * may be more than one cycle in a graph this function return an array of these cycles,
@@ -87,6 +91,7 @@ object alg extends js.Object {
     * @returns cycles list.
     */
   def findCycles(graph: Graph): js.Array[js.Array[String]] = js.native
+  
   /**
     * This function is an implementation of the Floyd-Warshall algorithm, which finds the
     * shortest path from each node to every other reachable node in the graph. It is similar
@@ -118,6 +123,7 @@ object alg extends js.Object {
     weightFn: js.Function1[/* e */ Edge, Double],
     edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
   ): StringDictionary[StringDictionary[Path]] = js.native
+  
   /**
     * Given a Graph, graph, this function returns true if the graph has no cycles and returns false if it
     * does. This algorithm returns as soon as it detects the first cycle. You can use alg.findCycles
@@ -127,6 +133,7 @@ object alg extends js.Object {
     * @returns whether graph contain cycles or not.
     */
   def isAcyclic(graph: Graph): Boolean = js.native
+  
   /**
     * Performs post-order depth first traversal on the input graph. If the graph is
     * undirected then this algorithm will navigate using neighbors. If the graph
@@ -137,6 +144,7 @@ object alg extends js.Object {
     * @returns the nodes in the order they were visited as a list of their names.
     */
   def postorder(graph: Graph, vs: js.Array[String]): js.Array[String] = js.native
+  
   /**
     * Performs pre-order depth first traversal on the input graph. If the graph is
     * undirected then this algorithm will navigate using neighbors. If the graph
@@ -147,6 +155,7 @@ object alg extends js.Object {
     * @returns the nodes in the order they were visited as a list of their names.
     */
   def preorder(graph: Graph, vs: js.Array[String]): js.Array[String] = js.native
+  
   /**
     * Prim's algorithm takes a connected undirected graph and generates a minimum spanning tree. This
     * function returns the minimum spanning tree as an undirected graph. This algorithm is derived
@@ -159,6 +168,7 @@ object alg extends js.Object {
     * @returns minimum spanning tree of graph.
     */
   def prim(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): Graph = js.native
+  
   /**
     * This function is an implementation of Tarjan's algorithm which finds all strongly connected
     * components in the directed graph g. Each strongly connected component is composed of nodes that
@@ -173,6 +183,7 @@ object alg extends js.Object {
     *          the ids of all nodes in the component.
     */
   def tarjan(graph: Graph): js.Array[js.Array[String]] = js.native
+  
   /**
     * Given a Graph graph this function applies topological sorting to it.
     * If the graph has a cycle it is impossible to generate such a list and CycleException is thrown.
@@ -183,4 +194,3 @@ object alg extends js.Object {
     */
   def topsort(graph: Graph): js.Array[String] = js.native
 }
-

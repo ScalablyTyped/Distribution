@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MSAA_QUALITY extends js.Object
-
 /**
   * Constants for multi-sampling antialiasing.
   *
@@ -24,6 +23,7 @@ sealed trait MSAA_QUALITY extends js.Object
 @JSGlobal("PIXI.MSAA_QUALITY")
 @js.native
 object MSAA_QUALITY extends js.Object {
+  
   @js.native
   sealed trait HIGH extends MSAA_QUALITY
   
@@ -35,6 +35,4 @@ object MSAA_QUALITY extends js.Object {
   
   @js.native
   sealed trait NONE extends MSAA_QUALITY
-  
 }
-

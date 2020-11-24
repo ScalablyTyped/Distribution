@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/people/v1", "people_v1.Resource$People$Connections")
 @js.native
 class ResourcePeopleConnections protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * people.people.connections.list
     * @desc Provides a list of the authenticated user's contacts merged with
@@ -54,4 +56,3 @@ class ResourcePeopleConnections protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListConnectionsResponse]
   ): Unit = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.pkijs.mod
 import typings.std.Algorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkijs/src/common", "getAlgorithmByOID")
 @js.native
 object getAlgorithmByOID extends js.Object {
+  
   /**
     * Get WebCrypto algorithm by wel-known OID
     *
@@ -16,4 +17,3 @@ object getAlgorithmByOID extends js.Object {
     */
   def apply(oid: String): Algorithm = js.native
 }
-

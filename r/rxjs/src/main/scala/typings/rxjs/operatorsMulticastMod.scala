@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/multicast", JSImport.Namespace)
 @js.native
 object operatorsMulticastMod extends js.Object {
+  
   def multicast[T](
     SubjectFactory: js.ThisFunction0[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
@@ -39,4 +40,3 @@ object operatorsMulticastMod extends js.Object {
     selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
   ): js.Any = js.native
 }
-

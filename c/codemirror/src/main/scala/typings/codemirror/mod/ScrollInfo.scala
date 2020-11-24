@@ -2,19 +2,25 @@ package typings.codemirror.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScrollInfo extends js.Object {
+  
   var clientHeight: js.Any = js.native
+  
   var clientWidth: js.Any = js.native
+  
   var height: js.Any = js.native
+  
   var left: js.Any = js.native
+  
   var top: js.Any = js.native
+  
   var width: js.Any = js.native
 }
-
 object ScrollInfo {
+  
   @scala.inline
   def apply(
     clientHeight: js.Any,
@@ -27,30 +33,38 @@ object ScrollInfo {
     val __obj = js.Dynamic.literal(clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollInfo]
   }
+  
   @scala.inline
   implicit class ScrollInfoOps[Self <: ScrollInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClientHeight(value: js.Any): Self = this.set("clientHeight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClientWidth(value: js.Any): Self = this.set("clientWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLeft(value: js.Any): Self = this.set("left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTop(value: js.Any): Self = this.set("top", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
   }
-  
 }
-

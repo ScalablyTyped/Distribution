@@ -10,7 +10,7 @@ import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Zone Game Object.
@@ -33,36 +33,38 @@ trait Zone
      with Transform
      with ScrollFactor
      with Visible {
+  
   /**
     * The Blend Mode of the Game Object.
     * Although a Zone never renders, it still has a blend mode to allow it to fit seamlessly into
     * display lists without causing a batch flush.
     */
   var blendMode: integer = js.native
+  
   /**
     * The displayed height of this Game Object.
     * This value takes into account the scale factor.
     */
   var displayHeight: Double = js.native
+  
   /**
     * The displayed width of this Game Object.
     * This value takes into account the scale factor.
     */
   var displayWidth: Double = js.native
+  
   /**
     * The native (un-scaled) height of this Game Object.
     */
   var height: Double = js.native
-  /**
-    * The native (un-scaled) width of this Game Object.
-    */
-  var width: Double = js.native
+  
   /**
     * Sets this Zone to be a Circular Drop Zone.
     * The circle is centered on this Zones `x` and `y` coordinates.
     * @param radius The radius of the Circle that will form the Drop Zone.
     */
   def setCircleDropZone(radius: Double): this.type = js.native
+  
   /**
     * Sets the display size of this Game Object.
     * Calling this will adjust the scale.
@@ -70,12 +72,14 @@ trait Zone
     * @param height The height of this Game Object.
     */
   def setDisplaySize(width: Double, height: Double): this.type = js.native
+  
   /**
     * Allows you to define your own Geometry shape to be used as a Drop Zone.
     * @param shape A Geometry shape instance, such as Phaser.Geom.Ellipse, or your own custom shape.
     * @param callback A function that will return `true` if the given x/y coords it is sent are within the shape.
     */
   def setDropZone(shape: js.Object, callback: HitAreaCallback): this.type = js.native
+  
   /**
     * Sets this Zone to be a Rectangle Drop Zone.
     * The rectangle is centered on this Zones `x` and `y` coordinates.
@@ -83,6 +87,7 @@ trait Zone
     * @param height The height of the rectangle drop zone.
     */
   def setRectangleDropZone(width: Double, height: Double): this.type = js.native
+  
   /**
     * Sets the size of this Game Object.
     * @param width The width of this Game Object.
@@ -91,5 +96,9 @@ trait Zone
     */
   def setSize(width: Double, height: Double): this.type = js.native
   def setSize(width: Double, height: Double, resizeInput: Boolean): this.type = js.native
+  
+  /**
+    * The native (un-scaled) width of this Game Object.
+    */
+  var width: Double = js.native
 }
-

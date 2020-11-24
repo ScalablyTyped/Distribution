@@ -7,27 +7,15 @@ import typings.std.TemplateStringsArray
 import typings.storybookNodeLogger.anon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/node-logger", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object colors extends js.Object {
-    @JSName("blue")
-    var blue_Original: Chalk = js.native
-    @JSName("gray")
-    var gray_Original: Chalk = js.native
-    @JSName("green")
-    var green_Original: Chalk = js.native
-    @JSName("orange")
-    var orange_Original: Chalk = js.native
-    @JSName("pink")
-    var pink_Original: Chalk = js.native
-    @JSName("purple")
-    var purple_Original: Chalk = js.native
-    @JSName("red")
-    var red_Original: Chalk = js.native
+    
     def blue(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -48,6 +36,9 @@ object mod extends js.Object {
     		```
     		*/
     def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("blue")
+    var blue_Original: Chalk = js.native
+    
     def gray(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -68,6 +59,9 @@ object mod extends js.Object {
     		```
     		*/
     def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("gray")
+    var gray_Original: Chalk = js.native
+    
     def green(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -88,6 +82,9 @@ object mod extends js.Object {
     		```
     		*/
     def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("green")
+    var green_Original: Chalk = js.native
+    
     def orange(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -108,6 +105,9 @@ object mod extends js.Object {
     		```
     		*/
     def orange(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("orange")
+    var orange_Original: Chalk = js.native
+    
     def pink(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -128,6 +128,9 @@ object mod extends js.Object {
     		```
     		*/
     def pink(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("pink")
+    var pink_Original: Chalk = js.native
+    
     def purple(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -148,6 +151,9 @@ object mod extends js.Object {
     		```
     		*/
     def purple(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("purple")
+    var purple_Original: Chalk = js.native
+    
     def red(text: js.Any*): String = js.native
     /**
     		Use a template string.
@@ -168,6 +174,8 @@ object mod extends js.Object {
     		```
     		*/
     def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSName("red")
+    var red_Original: Chalk = js.native
   }
   
   @js.native
@@ -175,16 +183,21 @@ object mod extends js.Object {
   
   @js.native
   object logger extends js.Object {
+    
     def error(message: String): Unit = js.native
+    
     def info(message: String): Unit = js.native
+    
     def line(): Unit = js.native
     def line(count: Double): Unit = js.native
+    
     def plain(message: String): Unit = js.native
+    
     def setLevel(): Unit = js.native
     def setLevel(level: String): Unit = js.native
+    
     def trace(hasMessageTime: Message): Unit = js.native
+    
     def warn(message: String): Unit = js.native
   }
-  
 }
-

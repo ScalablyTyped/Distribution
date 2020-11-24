@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactPickerActivatedEventArgs extends IContactPickerActivatedEventArgs
-
 object ContactPickerActivatedEventArgs {
+  
   @scala.inline
   def apply(
     contactPickerUI: ContactPickerUI,
@@ -20,4 +20,3 @@ object ContactPickerActivatedEventArgs {
     __obj.asInstanceOf[ContactPickerActivatedEventArgs]
   }
 }
-

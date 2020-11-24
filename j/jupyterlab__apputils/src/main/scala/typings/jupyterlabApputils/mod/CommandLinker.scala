@@ -3,7 +3,7 @@ package typings.jupyterlabApputils.mod
 import typings.jupyterlabApputils.commandlinkerMod.CommandLinker.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "CommandLinker")
 @js.native
@@ -14,4 +14,3 @@ class CommandLinker protected ()
     */
   def this(options: IOptions) = this()
 }
-

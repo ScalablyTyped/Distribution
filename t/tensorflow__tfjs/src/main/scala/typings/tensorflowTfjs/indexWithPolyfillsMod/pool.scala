@@ -3,16 +3,17 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 import typings.tensorflowTfjs.tensorflowTfjsStrings.avg
 import typings.tensorflowTfjs.tensorflowTfjsStrings.same
 import typings.tensorflowTfjs.tensorflowTfjsStrings.valid
+import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor3D
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "pool")
 @js.native
 object pool extends js.Object {
+  
   def apply[T /* <: Tensor3D | Tensor4D */](
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
@@ -22,4 +23,3 @@ object pool extends js.Object {
     strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double]
   ): T = js.native
 }
-

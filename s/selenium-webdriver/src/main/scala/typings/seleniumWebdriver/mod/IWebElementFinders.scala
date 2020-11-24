@@ -2,10 +2,11 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IWebElementFinders extends js.Object {
+  
   /**
     * Schedule a command to find a descendant of this element. If the element
     * cannot be found, a {@code bot.ErrorCode.NO_SUCH_ELEMENT} result will
@@ -47,6 +48,7 @@ trait IWebElementFinders extends js.Object {
     *     element will be invalidated and all scheduled commands aborted.
     */
   def findElement(locator: Locator): WebElementPromise = js.native
+  
   /**
     * Schedules a command to find all of the descendants of this element that
     * match the given search criteria.
@@ -58,8 +60,8 @@ trait IWebElementFinders extends js.Object {
     */
   def findElements(locator: Locator): js.Promise[js.Array[WebElement]] = js.native
 }
-
 object IWebElementFinders {
+  
   @scala.inline
   def apply(
     findElement: Locator => WebElementPromise,
@@ -68,22 +70,26 @@ object IWebElementFinders {
     val __obj = js.Dynamic.literal(findElement = js.Any.fromFunction1(findElement), findElements = js.Any.fromFunction1(findElements))
     __obj.asInstanceOf[IWebElementFinders]
   }
+  
   @scala.inline
   implicit class IWebElementFindersOps[Self <: IWebElementFinders] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFindElement(value: Locator => WebElementPromise): Self = this.set("findElement", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFindElements(value: Locator => js.Promise[js.Array[WebElement]]): Self = this.set("findElements", js.Any.fromFunction1(value))
   }
-  
 }
-

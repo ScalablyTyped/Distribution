@@ -1,17 +1,19 @@
 package typings.awsSdk.mqMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MQ extends Service {
+  
   @JSName("config")
   var config_MQ: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a broker. Note: This API is asynchronous.
     */
@@ -25,6 +27,7 @@ trait MQ extends Service {
     params: CreateBrokerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBrokerResponse, Unit]
   ): Request[CreateBrokerResponse, AWSError] = js.native
+  
   /**
     * Creates a new configuration for the specified configuration name. Amazon MQ uses the default configuration (the engine type and version).
     */
@@ -38,6 +41,7 @@ trait MQ extends Service {
     params: CreateConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConfigurationResponse, Unit]
   ): Request[CreateConfigurationResponse, AWSError] = js.native
+  
   /**
     * Add a tag to a resource.
     */
@@ -48,6 +52,7 @@ trait MQ extends Service {
     */
   def createTags(params: CreateTagsRequest): Request[js.Object, AWSError] = js.native
   def createTags(params: CreateTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates an ActiveMQ user.
     */
@@ -61,6 +66,7 @@ trait MQ extends Service {
     params: CreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
+  
   /**
     * Deletes a broker. Note: This API is asynchronous.
     */
@@ -74,6 +80,7 @@ trait MQ extends Service {
     params: DeleteBrokerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBrokerResponse, Unit]
   ): Request[DeleteBrokerResponse, AWSError] = js.native
+  
   /**
     * Removes a tag from a resource.
     */
@@ -84,6 +91,7 @@ trait MQ extends Service {
     */
   def deleteTags(params: DeleteTagsRequest): Request[js.Object, AWSError] = js.native
   def deleteTags(params: DeleteTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an ActiveMQ user.
     */
@@ -97,6 +105,7 @@ trait MQ extends Service {
     params: DeleteUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserResponse, Unit]
   ): Request[DeleteUserResponse, AWSError] = js.native
+  
   /**
     * Returns information about the specified broker.
     */
@@ -110,6 +119,7 @@ trait MQ extends Service {
     params: DescribeBrokerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBrokerResponse, Unit]
   ): Request[DescribeBrokerResponse, AWSError] = js.native
+  
   /**
     * Describe available engine types and versions.
     */
@@ -123,6 +133,7 @@ trait MQ extends Service {
     params: DescribeBrokerEngineTypesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBrokerEngineTypesResponse, Unit]
   ): Request[DescribeBrokerEngineTypesResponse, AWSError] = js.native
+  
   /**
     * Describe available broker instance options.
     */
@@ -136,6 +147,7 @@ trait MQ extends Service {
     params: DescribeBrokerInstanceOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBrokerInstanceOptionsResponse, Unit]
   ): Request[DescribeBrokerInstanceOptionsResponse, AWSError] = js.native
+  
   /**
     * Returns information about the specified configuration.
     */
@@ -149,6 +161,7 @@ trait MQ extends Service {
     params: DescribeConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConfigurationResponse, Unit]
   ): Request[DescribeConfigurationResponse, AWSError] = js.native
+  
   /**
     * Returns the specified configuration revision for the specified configuration.
     */
@@ -162,6 +175,7 @@ trait MQ extends Service {
     params: DescribeConfigurationRevisionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConfigurationRevisionResponse, Unit]
   ): Request[DescribeConfigurationRevisionResponse, AWSError] = js.native
+  
   /**
     * Returns information about an ActiveMQ user.
     */
@@ -175,6 +189,7 @@ trait MQ extends Service {
     params: DescribeUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserResponse, Unit]
   ): Request[DescribeUserResponse, AWSError] = js.native
+  
   /**
     * Returns a list of all brokers.
     */
@@ -188,6 +203,7 @@ trait MQ extends Service {
     params: ListBrokersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBrokersResponse, Unit]
   ): Request[ListBrokersResponse, AWSError] = js.native
+  
   /**
     * Returns a list of all revisions for the specified configuration.
     */
@@ -201,6 +217,7 @@ trait MQ extends Service {
     params: ListConfigurationRevisionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationRevisionsResponse, Unit]
   ): Request[ListConfigurationRevisionsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of all configurations.
     */
@@ -214,6 +231,7 @@ trait MQ extends Service {
     params: ListConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationsResponse, Unit]
   ): Request[ListConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Lists tags for a resource.
     */
@@ -227,6 +245,7 @@ trait MQ extends Service {
     params: ListTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of all ActiveMQ users.
     */
@@ -240,6 +259,7 @@ trait MQ extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  
   /**
     * Reboots a broker. Note: This API is asynchronous.
     */
@@ -253,6 +273,7 @@ trait MQ extends Service {
     params: RebootBrokerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootBrokerResponse, Unit]
   ): Request[RebootBrokerResponse, AWSError] = js.native
+  
   /**
     * Adds a pending configuration change to a broker.
     */
@@ -266,6 +287,7 @@ trait MQ extends Service {
     params: UpdateBrokerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBrokerResponse, Unit]
   ): Request[UpdateBrokerResponse, AWSError] = js.native
+  
   /**
     * Updates the specified configuration.
     */
@@ -279,6 +301,7 @@ trait MQ extends Service {
     params: UpdateConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConfigurationResponse, Unit]
   ): Request[UpdateConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates the information for an ActiveMQ user.
     */
@@ -293,4 +316,3 @@ trait MQ extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserResponse, Unit]
   ): Request[UpdateUserResponse, AWSError] = js.native
 }
-

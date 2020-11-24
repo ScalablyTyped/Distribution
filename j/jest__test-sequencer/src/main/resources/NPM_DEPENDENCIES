@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/test-sequencer" : "26.2.2"
+      "@jest/test-sequencer" : "26.6.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/test-sequencer" : "26.2.2"
+      "@jest/test-sequencer" : "26.6.3"
     }
   ],
   "compile-devDependencies" : [

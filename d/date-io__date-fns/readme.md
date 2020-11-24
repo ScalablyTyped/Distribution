@@ -1,7 +1,7 @@
 
 # Scala.js typings for date-io__date-fns
 
-Typings are for version 2.8.0
+Typings are for version 2.10.6
 
 ## Library description:
 Abstraction over common javascript date management libraries
@@ -10,9 +10,9 @@ Abstraction over common javascript date management libraries
 | ------------------ | :-------------: |
 | Full name          | @date-io/date-fns |
 | Keywords           | date, time, date-io, picker, date-fns, moment, luxon |
-| # releases         | 31 |
-| # dependents       | 152 |
-| # downloads        | 5684210 |
+| # releases         | 34 |
+| # dependents       | 224 |
+| # downloads        | 9937579 |
 | # stars            | 0 |
 
 ## Links

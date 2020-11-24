@@ -3,11 +3,12 @@ package typings.tstl
 import typings.tstl.runtimeErrorMod.RuntimeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/exception/RangeError", JSImport.Namespace)
 @js.native
 object rangeErrorMod extends js.Object {
+  
   @js.native
   class RangeError protected () extends RuntimeError {
     /**
@@ -17,6 +18,4 @@ object rangeErrorMod extends js.Object {
       */
     def this(message: String) = this()
   }
-  
 }
-

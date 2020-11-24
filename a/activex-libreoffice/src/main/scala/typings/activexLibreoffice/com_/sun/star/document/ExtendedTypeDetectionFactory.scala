@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * factory to create extended type detection components.
@@ -21,4 +21,3 @@ trait ExtendedTypeDetectionFactory
      with XMultiServiceFactory
      with XContainerQuery
      with XFlushable
-

@@ -2,17 +2,17 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataSourceStatus extends js.Object
-
 /**
   * Describes the status of an IListDataSource.
   **/
 @JSGlobal("WinJS.UI.DataSourceStatus")
 @js.native
 object DataSourceStatus extends js.Object {
+  
   /**
     * The IListDataSource failed to load.
     **/
@@ -30,6 +30,4 @@ object DataSourceStatus extends js.Object {
     **/
   @js.native
   sealed trait waiting extends DataSourceStatus
-  
 }
-

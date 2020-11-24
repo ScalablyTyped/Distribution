@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")
 @js.native
@@ -23,40 +23,57 @@ class VirtualNode protected () extends CustomResource {
     */
   def this(name: String, args: VirtualNodeArgs) = this()
   def this(name: String, args: VirtualNodeArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the virtual node.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The creation date of the virtual node.
     */
   val createdDate: Output_[String] = js.native
+  
   /**
     * The last update date of the virtual node.
     */
   val lastUpdatedDate: Output_[String] = js.native
+  
   /**
-    * The name of the service mesh in which to create the virtual node.
+    * The name of the service mesh in which to create the virtual node. Must be between 1 and 255 characters in length.
     */
   val meshName: Output_[String] = js.native
+  
   /**
-    * The name to use for the virtual node.
+    * The AWS account ID of the service mesh's owner. Defaults to the account ID the [AWS provider](https://www.terraform.io/docs/providers/aws/index.html) is currently connected to.
+    */
+  val meshOwner: Output_[String] = js.native
+  
+  /**
+    * The name to use for the virtual node. Must be between 1 and 255 characters in length.
     */
   val name: Output_[String] = js.native
+  
+  /**
+    * The resource owner's AWS account ID.
+    */
+  val resourceOwner: Output_[String] = js.native
+  
   /**
     * The virtual node specification to apply.
     */
   val spec: Output_[VirtualNodeSpec] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")
 @js.native
 object VirtualNode extends js.Object {
+  
   /**
     * Get an existing VirtualNode resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -70,10 +87,10 @@ object VirtualNode extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VirtualNode = js.native
   def get(name: String, id: Input[ID], state: VirtualNodeState): VirtualNode = js.native
   def get(name: String, id: Input[ID], state: VirtualNodeState, opts: CustomResourceOptions): VirtualNode = js.native
+  
   /**
     * Returns true if the given object is an instance of VirtualNode.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ Boolean = js.native
 }
-

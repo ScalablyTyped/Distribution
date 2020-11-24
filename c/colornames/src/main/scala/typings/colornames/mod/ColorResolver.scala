@@ -2,13 +2,14 @@ package typings.colornames.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Povides the functionality to resolve colors of a specific type by its name.
   */
 @js.native
 trait ColorResolver extends js.Object {
+  
   /**
     * Gets all colors.
     */
@@ -21,4 +22,3 @@ trait ColorResolver extends js.Object {
     */
   def apply(name: String): Color = js.native
 }
-

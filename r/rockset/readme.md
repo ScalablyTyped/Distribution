@@ -10,9 +10,9 @@ Client for querying Rockset and interacting with the Rockset API.
 | ------------------ | :-------------: |
 | Full name          | rockset |
 | Keywords           | rockset, database, REST, information analysis |
-| # releases         | 7 |
+| # releases         | 15 |
 | # dependents       | 0 |
-| # downloads        | 6501 |
+| # downloads        | 20901 |
 | # stars            | 0 |
 
 ## Links

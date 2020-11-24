@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mangopay2NodejsSdk.mod.IPayInPaymentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.PayInPaymentType")
 @js.native
 object PayInPaymentType extends TopLevel[IPayInPaymentType]
-

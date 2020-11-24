@@ -7,13 +7,15 @@ import typings.tstl.icontainerMod.IContainer.ReverseIterator
 import typings.tstl.pairMod.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/associative/ITreeContainer", JSImport.Namespace)
 @js.native
 object itreecontainerMod extends js.Object {
+  
   @js.native
   trait ITreeContainer[Key, T /* <: Elem */, SourceT /* <: ITreeContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] extends IAssociativeContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] {
+    
     /**
       * Get range of equal elements.
       *
@@ -21,12 +23,14 @@ object itreecontainerMod extends js.Object {
       * @return Pair of {@link lower_bound} and {@link upper_bound}.
       */
     def equal_range(key: Key): Pair[IteratorT, IteratorT] = js.native
+    
     /**
       * Get key comparison function.
       *
       * @return The key comparison function.
       */
     def key_comp(): Comparator[Key, Key] = js.native
+    
     /**
       * Get iterator to lower bound.
       *
@@ -34,6 +38,7 @@ object itreecontainerMod extends js.Object {
       * @return Iterator to the first element equal or after to the key.
       */
     def lower_bound(key: Key): IteratorT = js.native
+    
     /**
       * Get iterator to upper bound.
       *
@@ -41,6 +46,7 @@ object itreecontainerMod extends js.Object {
       * @return Iterator to the first element after the key.
       */
     def upper_bound(key: Key): IteratorT = js.native
+    
     /**
       * Get value comparison function.
       *
@@ -48,6 +54,4 @@ object itreecontainerMod extends js.Object {
       */
     def value_comp(): Comparator[Elem, Elem] = js.native
   }
-  
 }
-

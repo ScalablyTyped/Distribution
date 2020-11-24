@@ -39,6 +39,10 @@ import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyForIntercept
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyForInterceptionResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyResponse
+import typings.devtoolsProtocol.mod.Protocol.Network.GetSecurityIsolationStatusRequest
+import typings.devtoolsProtocol.mod.Protocol.Network.GetSecurityIsolationStatusResponse
+import typings.devtoolsProtocol.mod.Protocol.Network.LoadNetworkResourceRequest
+import typings.devtoolsProtocol.mod.Protocol.Network.LoadNetworkResourceResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFailedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFinishedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.ReplayXHRRequest
@@ -51,6 +55,7 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedExtraInfoEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyResponse
+import typings.devtoolsProtocol.mod.Protocol.Network.SetAttachDebugHeaderRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetBlockedURLsRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetBypassServiceWorkerRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCacheDisabledRequest
@@ -73,30 +78,36 @@ import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketHandshakeResponseR
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketWillSendHandshakeRequestEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NetworkApi extends js.Object {
+  
   /**
     * Tells whether clearing browser cache is supported.
     */
   def canClearBrowserCache(): js.Promise[CanClearBrowserCacheResponse] = js.native
+  
   /**
     * Tells whether clearing browser cookies is supported.
     */
   def canClearBrowserCookies(): js.Promise[CanClearBrowserCookiesResponse] = js.native
+  
   /**
     * Tells whether emulation of network conditions is supported.
     */
   def canEmulateNetworkConditions(): js.Promise[CanEmulateNetworkConditionsResponse] = js.native
+  
   /**
     * Clears browser cache.
     */
   def clearBrowserCache(): js.Promise[Unit] = js.native
+  
   /**
     * Clears browser cookies.
     */
   def clearBrowserCookies(): js.Promise[Unit] = js.native
+  
   /**
     * Response to Network.requestIntercepted which either modifies the request to continue with any
     * modifications, or blocks it, or completes it with the provided response bytes. If a network
@@ -105,48 +116,69 @@ trait NetworkApi extends js.Object {
     * Deprecated, use Fetch.continueRequest, Fetch.fulfillRequest and Fetch.failRequest instead.
     */
   def continueInterceptedRequest(params: ContinueInterceptedRequestRequest): js.Promise[Unit] = js.native
+  
   /**
     * Deletes browser cookies with matching name and url or domain/path pair.
     */
   def deleteCookies(params: DeleteCookiesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Disables network tracking, prevents network events from being sent to the client.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Activates emulation of network conditions.
     */
   def emulateNetworkConditions(params: EmulateNetworkConditionsRequest): js.Promise[Unit] = js.native
+  
   /**
     * Enables network tracking, network events will now be delivered to the client.
     */
   def enable(params: EnableRequest): js.Promise[Unit] = js.native
+  
   /**
     * Returns all browser cookies. Depending on the backend support, will return detailed cookie
     * information in the `cookies` field.
     */
   def getAllCookies(): js.Promise[GetAllCookiesResponse] = js.native
+  
   /**
     * Returns the DER-encoded certificate.
     */
   def getCertificate(params: GetCertificateRequest): js.Promise[GetCertificateResponse] = js.native
+  
   /**
     * Returns all browser cookies for the current URL. Depending on the backend support, will return
     * detailed cookie information in the `cookies` field.
     */
   def getCookies(params: GetCookiesRequest): js.Promise[GetCookiesResponse] = js.native
+  
   /**
     * Returns post data sent with the request. Returns an error when no data was sent with the request.
     */
   def getRequestPostData(params: GetRequestPostDataRequest): js.Promise[GetRequestPostDataResponse] = js.native
+  
   /**
     * Returns content served for the given request.
     */
   def getResponseBody(params: GetResponseBodyRequest): js.Promise[GetResponseBodyResponse] = js.native
+  
   /**
     * Returns content served for the given currently intercepted request.
     */
   def getResponseBodyForInterception(params: GetResponseBodyForInterceptionRequest): js.Promise[GetResponseBodyForInterceptionResponse] = js.native
+  
+  /**
+    * Returns information about the COEP/COOP isolation status.
+    */
+  def getSecurityIsolationStatus(params: GetSecurityIsolationStatusRequest): js.Promise[GetSecurityIsolationStatusResponse] = js.native
+  
+  /**
+    * Fetches the resource and returns the content.
+    */
+  def loadNetworkResource(params: LoadNetworkResourceRequest): js.Promise[LoadNetworkResourceResponse] = js.native
+  
   /**
     * Fired when data chunk was received over the network.
     */
@@ -276,53 +308,70 @@ trait NetworkApi extends js.Object {
     event: webSocketWillSendHandshakeRequest,
     listener: js.Function1[/* params */ WebSocketWillSendHandshakeRequestEvent, Unit]
   ): Unit = js.native
+  
   /**
     * This method sends a new XMLHttpRequest which is identical to the original one. The following
     * parameters should be identical: method, url, async, request body, extra headers, withCredentials
     * attribute, user, password.
     */
   def replayXHR(params: ReplayXHRRequest): js.Promise[Unit] = js.native
+  
   /**
     * Searches for given string in response content.
     */
   def searchInResponseBody(params: SearchInResponseBodyRequest): js.Promise[SearchInResponseBodyResponse] = js.native
+  
+  /**
+    * Specifies whether to sned a debug header to all outgoing requests.
+    */
+  def setAttachDebugHeader(params: SetAttachDebugHeaderRequest): js.Promise[Unit] = js.native
+  
   /**
     * Blocks URLs from loading.
     */
   def setBlockedURLs(params: SetBlockedURLsRequest): js.Promise[Unit] = js.native
+  
   /**
     * Toggles ignoring of service worker for each request.
     */
   def setBypassServiceWorker(params: SetBypassServiceWorkerRequest): js.Promise[Unit] = js.native
+  
   /**
     * Toggles ignoring cache for each request. If `true`, cache will not be used.
     */
   def setCacheDisabled(params: SetCacheDisabledRequest): js.Promise[Unit] = js.native
+  
   /**
     * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
     */
   def setCookie(params: SetCookieRequest): js.Promise[SetCookieResponse] = js.native
+  
   /**
     * Sets given cookies.
     */
   def setCookies(params: SetCookiesRequest): js.Promise[Unit] = js.native
+  
   /**
     * For testing.
     */
   def setDataSizeLimitsForTest(params: SetDataSizeLimitsForTestRequest): js.Promise[Unit] = js.native
+  
   /**
     * Specifies whether to always send extra HTTP headers with the requests from this page.
     */
   def setExtraHTTPHeaders(params: SetExtraHTTPHeadersRequest): js.Promise[Unit] = js.native
+  
   /**
     * Sets the requests to intercept that match the provided patterns and optionally resource types.
     * Deprecated, please use Fetch.enable instead.
     */
   def setRequestInterception(params: SetRequestInterceptionRequest): js.Promise[Unit] = js.native
+  
   /**
     * Allows overriding user agent with the given string.
     */
   def setUserAgentOverride(params: SetUserAgentOverrideRequest): js.Promise[Unit] = js.native
+  
   /**
     * Returns a handle to the stream representing the response body. Note that after this command,
     * the intercepted request can't be continued as is -- you either need to cancel it or to provide
@@ -331,4 +380,3 @@ trait NetworkApi extends js.Object {
     */
   def takeResponseBodyForInterceptionAsStream(params: TakeResponseBodyForInterceptionAsStreamRequest): js.Promise[TakeResponseBodyForInterceptionAsStreamResponse] = js.native
 }
-

@@ -10,7 +10,7 @@ import typings.std.MediaStream
 import typings.std.MediaTrackConstraints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/videoTexture", "VideoTexture")
 @js.native
@@ -38,6 +38,13 @@ class VideoTexture protected () extends Texture {
     name: Nullable[String],
     src: String,
     scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
     generateMipMaps: Boolean,
     invertY: Boolean
   ) = this()
@@ -45,7 +52,21 @@ class VideoTexture protected () extends Texture {
     name: Nullable[String],
     src: js.Array[String],
     scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
     generateMipMaps: Boolean,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
     invertY: Boolean
   ) = this()
   def this(
@@ -59,6 +80,30 @@ class VideoTexture protected () extends Texture {
     name: Nullable[String],
     src: String,
     scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
@@ -67,8 +112,56 @@ class VideoTexture protected () extends Texture {
     name: Nullable[String],
     src: js.Array[String],
     scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
     generateMipMaps: Boolean,
     invertY: Boolean,
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
     samplingMode: Double
   ) = this()
   def this(
@@ -83,9 +176,135 @@ class VideoTexture protected () extends Texture {
     name: Nullable[String],
     src: String,
     scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: String,
+    scene: Nullable[Scene],
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: js.Array[String],
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
     settings: VideoTextureSettings
   ) = this()
   def this(
@@ -101,53 +320,133 @@ class VideoTexture protected () extends Texture {
     name: Nullable[String],
     src: HTMLVideoElement,
     scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
+    generateMipMaps: Boolean,
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    settings: VideoTextureSettings
+  ) = this()
+  def this(
+    name: Nullable[String],
+    src: HTMLVideoElement,
+    scene: Nullable[Scene],
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double,
     settings: VideoTextureSettings
   ) = this()
+  
   var _createInternalTexture: js.Any = js.native
+  
   var _createInternalTextureOnEvent: js.Any = js.native
+  
   var _currentSrc: js.Any = js.native
+  
   var _displayingPosterTexture: js.Any = js.native
-  var _engine: js.Any = js.native
+  
   var _frameId: js.Any = js.native
+  
   var _generateMipMaps: js.Any = js.native
+  
   var _getName: js.Any = js.native
+  
   var _getVideo: js.Any = js.native
+  
   var _onUserActionRequestedObservable: js.Any = js.native
+  
   var _settings: js.Any = js.native
+  
   var _stillImageCaptured: js.Any = js.native
+  
+  /* protected */ def _updateInternalTexture(): Unit = js.native
+  
   /**
     * Tells whether textures will be updated automatically or user is required to call `updateTexture` manually
     */
   val autoUpdateTexture: Boolean = js.native
-  var reset: js.Any = js.native
-  /**
-    * The video instance used by the texture internally
-    */
-  val video: HTMLVideoElement = js.native
-  /* protected */ def _updateInternalTexture(): Unit = js.native
+  
   /**
     * Event triggerd when a dom action is required by the user to play the video.
     * This happens due to recent changes in browser policies preventing video to auto start.
     */
   def onUserActionRequestedObservable: Observable[Texture] = js.native
+  
+  var reset: js.Any = js.native
+  
   /**
     * Update Texture in the `auto` mode. Does not do anything if `settings.autoUpdateTexture` is false.
     */
   def update(): Unit = js.native
+  
   /**
     * Update Texture in `manual` mode. Does not do anything if not visible or paused.
     * @param isVisible Visibility state, detected by user using `scene.getActiveMeshes()` or othervise.
     */
   def updateTexture(isVisible: Boolean): Unit = js.native
+  
+  /**
+    * The video instance used by the texture internally
+    */
+  val video: HTMLVideoElement = js.native
 }
-
 /* static members */
 @JSImport("babylonjs/Materials/Textures/videoTexture", "VideoTexture")
 @js.native
 object VideoTexture extends js.Object {
+  
   /**
     * Creates a video texture straight from a stream.
     * @param scene Define the scene the texture should be created in
@@ -155,6 +454,7 @@ object VideoTexture extends js.Object {
     * @returns The created video texture as a promise
     */
   def CreateFromStreamAsync(scene: Scene, stream: MediaStream): js.Promise[VideoTexture] = js.native
+  
   /**
     * Creates a video texture straight from your WebCam video feed.
     * @param scene Define the scene the texture should be created in
@@ -179,6 +479,7 @@ object VideoTexture extends js.Object {
     constraints: minWidthnumbermaxWidthnum,
     audioConstaints: MediaTrackConstraints
   ): Unit = js.native
+  
   /**
     * Creates a video texture straight from your WebCam video feed.
     * @param scene Define the scene the texture should be created in
@@ -190,4 +491,3 @@ object VideoTexture extends js.Object {
   def CreateFromWebCamAsync(scene: Scene, constraints: minWidthnumbermaxWidthnum, audioConstaints: Boolean): js.Promise[VideoTexture] = js.native
   def CreateFromWebCamAsync(scene: Scene, constraints: minWidthnumbermaxWidthnum, audioConstaints: MediaTrackConstraints): js.Promise[VideoTexture] = js.native
 }
-

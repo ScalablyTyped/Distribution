@@ -5,7 +5,7 @@ import typings.openlayers.mod.Object
 import typings.openlayers.mod.olx.interaction.InteractionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -41,6 +41,7 @@ class Interaction protected () extends Object {
     * @api
     */
   def this(options: InteractionOptions) = this()
+  
   /**
     * Return whether the interaction is currently active.
     * @return `true` if the interaction is active, `false` otherwise.
@@ -48,12 +49,14 @@ class Interaction protected () extends Object {
     * @api
     */
   def getActive(): Boolean = js.native
+  
   /**
     * Get the map associated with this interaction.
     * @return Map.
     * @api
     */
   def getMap(): Map = js.native
+  
   /**
     * Activate or deactivate the interaction.
     * @param active Active.
@@ -62,4 +65,3 @@ class Interaction protected () extends Object {
     */
   def setActive(active: Boolean): Unit = js.native
 }
-

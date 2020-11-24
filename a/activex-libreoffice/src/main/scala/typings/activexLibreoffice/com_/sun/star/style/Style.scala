@@ -17,7 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a single style sheet. */
 @js.native
@@ -27,29 +27,34 @@ trait Style
      with XPropertySet
      with XMultiPropertySet
      with XMultiPropertyStates {
+  
   /**
     * contains the name of the style as it is displayed in the user interface.
     *
     * The names of the styles at the API are language independent. The user interface names are localized.
     */
   var DisplayName: String = js.native
+  
   /**
     * contains the name of the style that is applied to the next paragraph.
     *
     * This property is usually available at paragraph styles only.
     */
   var FollowStyle: String = js.native
+  
   /**
     * Flag indicating whether to hide the style in the UI.
     * @since LibreOffice 4.0
     */
   var Hidden: Boolean = js.native
+  
   /**
     * determines if a style is automatically updated, if the properties of an object that the style is applied to are changed.
     *
     * For example, if the style is applied to a paragraph and the properties of the paragraph are changed then the style will be updated accordingly.
     */
   var IsAutoUpdate: String = js.native
+  
   /**
     * determines if a style is physically created.
     *
@@ -57,6 +62,7 @@ trait Style
     * style is created first.
     */
   var IsPhysical: Boolean = js.native
+  
   /**
     * defines the context and styles for conditional paragraphs.
     *
@@ -73,17 +79,20 @@ trait Style
     * @since OOo 2.0.1
     */
   var ParaStyleConditions: SafeArray[NamedValue] = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object to which this interface belongs. NULL is returned if the obj
     * @see XPropertySet.getPropertySetInfo
     */
   /* InferMemberOverrides */
   override val PropertySetInfo: XPropertySetInfo = js.native
+  
   /**
     * Grab bag of style properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
   var StyleInteropGrabBag: SafeArray[PropertyValue] = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -91,8 +100,8 @@ trait Style
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-
 object Style {
+  
   @scala.inline
   def apply(
     DisplayName: String,
@@ -135,36 +144,47 @@ object Style {
     val __obj = js.Dynamic.literal(DisplayName = DisplayName.asInstanceOf[js.Any], FollowStyle = FollowStyle.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], IsAutoUpdate = IsAutoUpdate.asInstanceOf[js.Any], IsPhysical = IsPhysical.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ParaStyleConditions = ParaStyleConditions.asInstanceOf[js.Any], ParentStyle = ParentStyle.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], StyleInteropGrabBag = StyleInteropGrabBag.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getName = js.Any.fromFunction0(getName), getParentStyle = js.Any.fromFunction0(getParentStyle), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), isInUse = js.Any.fromFunction0(isInUse), isUserDefined = js.Any.fromFunction0(isUserDefined), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setName = js.Any.fromFunction1(setName), setParentStyle = js.Any.fromFunction1(setParentStyle), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[Style]
   }
+  
   @scala.inline
   implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFollowStyle(value: String): Self = this.set("FollowStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHidden(value: Boolean): Self = this.set("Hidden", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsAutoUpdate(value: String): Self = this.set("IsAutoUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsPhysical(value: Boolean): Self = this.set("IsPhysical", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleConditions(value: SafeArray[NamedValue]): Self = this.set("ParaStyleConditions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStyleInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("StyleInteropGrabBag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
   }
-  
 }
-

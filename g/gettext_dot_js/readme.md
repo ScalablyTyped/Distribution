@@ -12,7 +12,7 @@ gettext.js is a lightweight (3k minified!) yet complete and accurate GNU gettext
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 53054 |
+| # downloads        | 82635 |
 | # stars            | 0 |
 
 ## Links

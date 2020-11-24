@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/accesscontextmanager/v1", "accesscontextmanager_v1.Resource$Accesspolicies")
 @js.native
 class ResourceAccesspolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var accessLevels: ResourceAccesspoliciesAccesslevels = js.native
+  
   var context: APIRequestContext = js.native
-  var servicePerimeters: ResourceAccesspoliciesServiceperimeters = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.create
     * @desc Create an `AccessPolicy`. Fails if this organization already has a
@@ -47,6 +49,7 @@ class ResourceAccesspolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.delete
     * @desc Delete an AccessPolicy by resource name. The longrunning Operation
@@ -77,6 +80,7 @@ class ResourceAccesspolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.get
     * @desc Get an AccessPolicy by name.
@@ -105,6 +109,7 @@ class ResourceAccesspolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccessPolicy]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.list
     * @desc List all AccessPolicies under a container.
@@ -138,6 +143,7 @@ class ResourceAccesspolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAccessPoliciesResponse]
   ): Unit = js.native
+  
   /**
     * accesscontextmanager.accessPolicies.patch
     * @desc Update an AccessPolicy. The longrunning Operation from this RPC
@@ -171,5 +177,6 @@ class ResourceAccesspolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var servicePerimeters: ResourceAccesspoliciesServiceperimeters = js.native
 }
-

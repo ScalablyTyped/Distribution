@@ -4,7 +4,7 @@ import typings.std.Element
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Clickable Component which is clickable or keyboard actionable,
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClickableComponent extends Component {
+  
   /**
     * Get the localize text to use for the controls on the `Component`.
     *
@@ -19,6 +20,7 @@ trait ClickableComponent extends Component {
     */
   def controlText(): String = js.native
   def controlText(text: String, el: Element): Unit = js.native
+  
   /**
     * Create a control text element on this `Component`
     *
@@ -29,14 +31,17 @@ trait ClickableComponent extends Component {
     */
   def createControlTextEl(): Element = js.native
   def createControlTextEl(el: Element): Element = js.native
+  
   /**
     * Disable this `Component`s element.
     */
   def disable(): Unit = js.native
+  
   /**
     * Enable this `Component`s element.
     */
   def enable(): Unit = js.native
+  
   /**
     * Called when a `ClickableComponent` loses focus. Turns off the listener for
     * `keydown` events. Which Stops `this.handleKeyPress` from getting called.
@@ -47,6 +52,7 @@ trait ClickableComponent extends Component {
     * @listens blur
     */
   def handleBlur(event: Event): Unit = js.native
+  
   /**
     * This gets called when a `ClickableComponent` gets:
     * - Clicked (via the `click` event, listening starts in the constructor)
@@ -69,6 +75,7 @@ trait ClickableComponent extends Component {
     * @listens click
     */
   def handleClick(event: Event): Unit = js.native
+  
   /**
     * This gets called when a `ClickableComponent` gains focus via a `focus` event.
     * Turns on listening for `keydown` events. When they happen it
@@ -80,6 +87,7 @@ trait ClickableComponent extends Component {
     * @listens focus
     */
   def handleFocus(event: Event): Unit = js.native
+  
   /**
     * Called when this ClickableComponent has focus and a key gets pressed down. By
     * default it will call `this.handleClick` when the key is space or enter.
@@ -91,4 +99,3 @@ trait ClickableComponent extends Component {
     */
   def handleKeyPress(event: Event): Unit = js.native
 }
-

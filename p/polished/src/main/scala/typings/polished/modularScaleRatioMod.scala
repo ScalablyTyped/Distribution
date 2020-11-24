@@ -2,11 +2,12 @@ package typings.polished
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("polished/lib/types/modularScaleRatio", JSImport.Namespace)
 @js.native
 object modularScaleRatioMod extends js.Object {
+  
   trait _ModularScaleRatio extends js.Object
   
   /* Rewritten from type alias, can be one of: 
@@ -31,4 +32,3 @@ object modularScaleRatioMod extends js.Object {
   */
   type ModularScaleRatio = _ModularScaleRatio | Double
 }
-

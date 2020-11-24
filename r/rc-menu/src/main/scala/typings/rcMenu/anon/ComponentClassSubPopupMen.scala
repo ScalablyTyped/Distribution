@@ -11,7 +11,7 @@ import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.ValidationMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ComponentClass<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps, any> & {getWrappedInstance (): rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenu} */
 @js.native
@@ -22,14 +22,22 @@ trait ComponentClassSubPopupMen
       /* context */ js.Any, 
       Component[SubPopupMenuProps, js.Any, js.Any]
     ] {
+  
   var childContextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  
   var contextType: js.UndefOr[Context[_]] = js.native
+  
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  
   var defaultProps: js.UndefOr[PartialSubPopupMenuProps] = js.native
+  
   var displayName: js.UndefOr[String] = js.native
+  
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[SubPopupMenuProps, _]] = js.native
+  
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[SubPopupMenuProps, _]] = js.native
-  var propTypes: js.UndefOr[WeakValidationMapSubPopup] = js.native
+  
   def getWrappedInstance(): SubPopupMenu = js.native
+  
+  var propTypes: js.UndefOr[WeakValidationMapSubPopup] = js.native
 }
-

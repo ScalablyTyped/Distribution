@@ -13,11 +13,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin", JSImport.Namespace)
 @js.native
 object osloginMod extends js.Object {
+  
   def oslogin(options: Options): Oslogin = js.native
   def oslogin(options: typings.googleapis.osloginV1alphaMod.osloginV1alpha.Options): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = js.native
   def oslogin(options: typings.googleapis.osloginV1betaMod.osloginV1beta.Options): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = js.native
@@ -27,13 +28,20 @@ object osloginMod extends js.Object {
   def oslogin_v1alpha(version: v1alpha): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = js.native
   @JSName("oslogin")
   def oslogin_v1beta(version: v1beta): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Oslogin {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oslogin]
+            ]
     
     @js.native
     class v1alpha protected ()
@@ -41,20 +49,6 @@ object osloginMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta protected ()
-      extends typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oslogin]
-            ]
-    
     @js.native
     object v1alpha
       extends TopLevel[
@@ -66,6 +60,12 @@ object osloginMod extends js.Object {
             ]
     
     @js.native
+    class v1beta protected ()
+      extends typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta
       extends TopLevel[
               Instantiable2[
@@ -74,11 +74,11 @@ object osloginMod extends js.Object {
                 typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -106,8 +106,5 @@ object osloginMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

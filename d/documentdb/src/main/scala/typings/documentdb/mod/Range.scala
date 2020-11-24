@@ -2,7 +2,7 @@ package typings.documentdb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "Range")
 @js.native
@@ -18,4 +18,3 @@ class Range protected () extends js.Object {
     */
   def this(options: RangeOptions) = this()
 }
-

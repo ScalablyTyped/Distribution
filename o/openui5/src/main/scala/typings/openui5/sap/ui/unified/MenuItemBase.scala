@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.RenderManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MenuItemBase extends Element {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.ui.unified.MenuItemBase</code>.When called, the context of the event handler (its
@@ -24,11 +25,13 @@ trait MenuItemBase extends Element {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): MenuItemBase = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MenuItemBase = js.native
+  
   /**
     * Destroys the submenu in the aggregation <code>submenu</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySubmenu(): MenuItemBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.ui.unified.MenuItemBase</code>.The passed function and listener object must match the ones
@@ -38,6 +41,7 @@ trait MenuItemBase extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): MenuItemBase = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>item</code> of type <code>sap.ui.unified.MenuItemBase</code>The current
@@ -46,6 +50,7 @@ trait MenuItemBase extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): MenuItemBase = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.When an item is disabled the item can not be
     * selected by the user.The enabled property of the item has no effect when the menu of the item is
@@ -54,6 +59,7 @@ trait MenuItemBase extends Element {
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>startsSection</code>.Defines whether a visual separator should
     * be rendered before the item.<b>Note:</b> If an item is invisible also the separator of this item is
@@ -61,33 +67,39 @@ trait MenuItemBase extends Element {
     * @returns Value of property <code>startsSection</code>
     */
   def getStartsSection(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>submenu</code>.An optional submenu of the item which is opened
     * when the item is selected by the user.
     */
   def getSubmenu(): Menu = js.native
+  
   /**
     * Gets current value of property <code>visible</code>.Invisible items do not appear in the
     * menu.Default value is <code>true</code>.
     * @returns Value of property <code>visible</code>
     */
   def getVisible(): Boolean = js.native
+  
   /**
     * Changes the visual hover state of the menu item.Subclasses may override this function.
     * @param bHovered Specifies whether the item is currently hovered or not.
     * @param oMenu The menu to which this item belongs
     */
   def hover(bHovered: Boolean, oMenu: Menu): Unit = js.native
+  
   /**
     * Informs the item that the item HTML is now applied to the DOM.Subclasses may override this function.
     */
   def onAfterRendering(): Unit = js.native
+  
   /**
     * Event handler which is called whenever the submenu of the item is opened or closed.Subclasses may
     * override this function.
     * @param bOpened Specifies whether the submenu of the item is opened or closed
     */
   def onSubmenuToggle(bOpened: Boolean): Unit = js.native
+  
   /**
     * Produces the HTML of an item and writes it to render-output-buffer during the rendering of the
     * corresponding menu.Subclasses may override this function.
@@ -97,6 +109,7 @@ trait MenuItemBase extends Element {
     * @param oMenu The menu to which this item belongs
     */
   def render(oRenderManager: RenderManager, oItem: MenuItemBase, oMenu: Menu): Unit = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.When an item is disabled the item can not be
     * selected by the user.The enabled property of the item has no effect when the menu of the item is
@@ -107,6 +120,7 @@ trait MenuItemBase extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): MenuItemBase = js.native
+  
   /**
     * Sets a new value for property <code>startsSection</code>.Defines whether a visual separator should
     * be rendered before the item.<b>Note:</b> If an item is invisible also the separator of this item is
@@ -116,12 +130,14 @@ trait MenuItemBase extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setStartsSection(bStartsSection: Boolean): MenuItemBase = js.native
+  
   /**
     * Sets the aggregated <code>submenu</code>.
     * @param oSubmenu The submenu to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSubmenu(oSubmenu: Menu): MenuItemBase = js.native
+  
   /**
     * Sets a new value for property <code>visible</code>.Invisible items do not appear in the menu.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -131,4 +147,3 @@ trait MenuItemBase extends Element {
     */
   def setVisible(bVisible: Boolean): MenuItemBase = js.native
 }
-

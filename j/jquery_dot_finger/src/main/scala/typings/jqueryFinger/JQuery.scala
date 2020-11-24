@@ -7,10 +7,11 @@ import typings.jqueryFinger.jqueryFingerStrings.press
 import typings.jqueryFinger.jqueryFingerStrings.tap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   @JSName("on")
   def on_doubletap(
     events: doubletap,
@@ -67,4 +68,3 @@ trait JQuery extends js.Object {
     handler: js.Function2[/* eventObject */ JQueryFingerEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
 }
-

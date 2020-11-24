@@ -6,13 +6,13 @@ import typings.vueI18n.mod.VueI18n.TranslateResult
 import typings.vueI18n.mod.VueI18n.Values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(key: Path): TranslateResult = js.native
   def apply(key: Path, locale: Locale): TranslateResult = js.native
   def apply(key: Path, locale: Locale, values: Values): TranslateResult = js.native
   def apply(key: Path, values: Values): TranslateResult = js.native
 }
-

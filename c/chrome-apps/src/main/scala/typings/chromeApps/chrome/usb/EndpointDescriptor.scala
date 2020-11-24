@@ -35,13 +35,15 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Since Chrome 29. */
 @js.native
 trait EndpointDescriptor extends js.Object {
+  
   /** Transfer type. */
   var address: integer = js.native
+  
   /**
     * Transfer direction.
     * @see Direction
@@ -54,15 +56,19 @@ trait EndpointDescriptor extends js.Object {
       in_ | out_
     ]
   ] = js.native
+  
   /**
     * Extra descriptor data associated with this endpoint.
     * @since Chrome 39.
     */
   var extra_data: ArrayBuffer = js.native
+  
   /** Maximum packet size. */
   var maximumPacketSize: integer = js.native
+  
   /** Polling interval (interrupt and isochronous only). */
   var pollingInterval: js.UndefOr[integer] = js.native
+  
   /**
     * Transfer synchronization mode (isochronous only).
     * @see SynchronizationType
@@ -77,6 +83,7 @@ trait EndpointDescriptor extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * Transfer type.
     * @see TransferType
@@ -90,6 +97,7 @@ trait EndpointDescriptor extends js.Object {
       control_ | interrupt_ | isochronous_ | bulk_
     ]
   ] = js.native
+  
   /**
     * Endpoint usage hint
     * @see UsageType
@@ -105,8 +113,8 @@ trait EndpointDescriptor extends js.Object {
     ]
   ] = js.native
 }
-
 object EndpointDescriptor {
+  
   @scala.inline
   def apply(
     address: integer,
@@ -133,19 +141,25 @@ object EndpointDescriptor {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointDescriptor]
   }
+  
   @scala.inline
   implicit class EndpointDescriptorOps[Self <: EndpointDescriptor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddress(value: integer): Self = this.set("address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDirection(
       value: ToStringLiteral[
@@ -157,10 +171,13 @@ object EndpointDescriptor {
           ]
         ]
     ): Self = this.set("direction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExtra_data(value: ArrayBuffer): Self = this.set("extra_data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaximumPacketSize(value: integer): Self = this.set("maximumPacketSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(
       value: ToStringLiteral[
@@ -172,10 +189,13 @@ object EndpointDescriptor {
           ]
         ]
     ): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPollingInterval(value: integer): Self = this.set("pollingInterval", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePollingInterval: Self = this.set("pollingInterval", js.undefined)
+    
     @scala.inline
     def setSynchronization(
       value: ToStringLiteral[
@@ -187,8 +207,10 @@ object EndpointDescriptor {
           ]
         ]
     ): Self = this.set("synchronization", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSynchronization: Self = this.set("synchronization", js.undefined)
+    
     @scala.inline
     def setUsage(
       value: ToStringLiteral[
@@ -200,9 +222,8 @@ object EndpointDescriptor {
           ]
         ]
     ): Self = this.set("usage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUsage: Self = this.set("usage", js.undefined)
   }
-  
 }
-

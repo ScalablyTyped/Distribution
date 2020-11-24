@@ -1,14 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
-import typings.awsSdkTypes.protocolMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kinesis-browser/model/_PutRecordsRequestEntryList", JSImport.Namespace)
 @js.native
 object putRecordsRequestEntryListMod extends js.Object {
+  
   @JSName("_PutRecordsRequestEntryList")
-  val PutRecordsRequestEntryList: List = js.native
+  val PutRecordsRequestEntryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }
-

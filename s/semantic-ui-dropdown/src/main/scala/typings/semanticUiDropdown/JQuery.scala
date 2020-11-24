@@ -118,12 +118,11 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.values
 import typings.semanticUiDropdown.semanticUiDropdownStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("dropdown")
-  var dropdown_Original: Dropdown = js.native
+  
   def dropdown(): JQuery = js.native
   def dropdown(behavior: setting, name: `match`, value: js.UndefOr[scala.Nothing]): both | value | text = js.native
   def dropdown(behavior: setting, name: `match`, value: both): JQuery = js.native
@@ -330,6 +329,8 @@ trait JQuery extends js.Object {
   def dropdown_JQuery(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
   @JSName("dropdown")
   def dropdown_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  @JSName("dropdown")
+  var dropdown_Original: Dropdown = js.native
   /**
     * Binds a click to document to determine if you click away from a dropdown
     */
@@ -520,4 +521,3 @@ trait JQuery extends js.Object {
   @JSName("dropdown")
   def dropdown_unbindintent(behavior: `unbind intent`): JQuery = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of function descriptions for all built-in functions as well as add-in functions available in the spreadsheet application.
@@ -21,8 +21,8 @@ trait FunctionDescriptions
   extends XFunctionDescriptions
      with XNameAccess
      with XEnumerationAccess
-
 object FunctionDescriptions {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -45,4 +45,3 @@ object FunctionDescriptions {
     __obj.asInstanceOf[FunctionDescriptions]
   }
 }
-

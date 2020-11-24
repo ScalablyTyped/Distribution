@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Abbreviate arbitrary strings.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XStringAbbreviation extends XInterface {
+  
   /**
     * Abbreviate a string, so that the resulting abbreviated string is not wider than some given width.
     *
@@ -28,8 +29,8 @@ trait XStringAbbreviation extends XInterface {
     */
   def abbreviateString(xStringWidth: XStringWidth, nWidth: Double, aString: String): String = js.native
 }
-
 object XStringAbbreviation {
+  
   @scala.inline
   def apply(
     abbreviateString: (XStringWidth, Double, String) => String,
@@ -40,20 +41,23 @@ object XStringAbbreviation {
     val __obj = js.Dynamic.literal(abbreviateString = js.Any.fromFunction3(abbreviateString), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XStringAbbreviation]
   }
+  
   @scala.inline
   implicit class XStringAbbreviationOps[Self <: XStringAbbreviation] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAbbreviateString(value: (XStringWidth, Double, String) => String): Self = this.set("abbreviateString", js.Any.fromFunction3(value))
   }
-  
 }
-

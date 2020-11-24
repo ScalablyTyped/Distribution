@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "BackgroundMaterial")
 @js.native
@@ -15,19 +15,11 @@ class BackgroundMaterial protected ()
     */
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "BackgroundMaterial")
 @js.native
 object BackgroundMaterial extends js.Object {
-  /**
-    * Standard reflectance value at parallel view angle.
-    */
-  var StandardReflectance0: Double = js.native
-  /**
-    * Standard reflectance value at grazing angle.
-    */
-  var StandardReflectance90: Double = js.native
+  
   /**
     * Parse a JSON input to create back a background material.
     * @param source The JSON data to parse
@@ -36,5 +28,14 @@ object BackgroundMaterial extends js.Object {
     * @returns the instantiated BackgroundMaterial.
     */
   def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.backgroundMaterialMod.BackgroundMaterial = js.native
+  
+  /**
+    * Standard reflectance value at parallel view angle.
+    */
+  var StandardReflectance0: Double = js.native
+  
+  /**
+    * Standard reflectance value at grazing angle.
+    */
+  var StandardReflectance90: Double = js.native
 }
-

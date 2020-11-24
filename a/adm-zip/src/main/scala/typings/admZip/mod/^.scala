@@ -3,7 +3,7 @@ package typings.admZip.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("adm-zip", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ class ^ () extends AdmZip {
   def this(fileNameOrRawData: String) = this()
   def this(fileNameOrRawData: Buffer) = this()
 }
-

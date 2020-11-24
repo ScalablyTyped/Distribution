@@ -1,17 +1,19 @@
 package typings.awsSdk.transferMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Transfer extends Service {
+  
   @JSName("config")
   var config_Transfer: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Instantiates an autoscaling virtual server based on the selected file transfer protocol in AWS. When you make updates to your file transfer protocol-enabled server or when you work with users, use the service-generated ServerId property that is assigned to the newly created server.
     */
@@ -25,6 +27,7 @@ trait Transfer extends Service {
     params: CreateServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateServerResponse, Unit]
   ): Request[CreateServerResponse, AWSError] = js.native
+  
   /**
     * Creates a user and associates them with an existing file transfer protocol-enabled server. You can only create and associate users with servers that have the IdentityProviderType set to SERVICE_MANAGED. Using parameters for CreateUser, you can specify the user name, set the home directory, store the user's public key, and assign the user's AWS Identity and Access Management (IAM) role. You can also optionally add a scope-down policy, and assign metadata with tags that can be used to group and search for users.
     */
@@ -38,6 +41,7 @@ trait Transfer extends Service {
     params: CreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
+  
   /**
     * Deletes the file transfer protocol-enabled server that you specify. No response returns from this operation.
     */
@@ -51,6 +55,7 @@ trait Transfer extends Service {
     params: DeleteServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a user's Secure Shell (SSH) public key. No response is returned from this operation.
     */
@@ -64,6 +69,7 @@ trait Transfer extends Service {
     params: DeleteSshPublicKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the user belonging to a file transfer protocol-enabled server you specify. No response returns from this operation.  When you delete a user from a server, the user's information is lost. 
     */
@@ -74,6 +80,21 @@ trait Transfer extends Service {
     */
   def deleteUser(params: DeleteUserRequest): Request[js.Object, AWSError] = js.native
   def deleteUser(params: DeleteUserRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Describes the security policy that is attached to your file transfer protocol-enabled server. The response contains a description of the security policy's properties. For more information about security policies, see Working with security policies.
+    */
+  def describeSecurityPolicy(): Request[DescribeSecurityPolicyResponse, AWSError] = js.native
+  def describeSecurityPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityPolicyResponse, Unit]): Request[DescribeSecurityPolicyResponse, AWSError] = js.native
+  /**
+    * Describes the security policy that is attached to your file transfer protocol-enabled server. The response contains a description of the security policy's properties. For more information about security policies, see Working with security policies.
+    */
+  def describeSecurityPolicy(params: DescribeSecurityPolicyRequest): Request[DescribeSecurityPolicyResponse, AWSError] = js.native
+  def describeSecurityPolicy(
+    params: DescribeSecurityPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityPolicyResponse, Unit]
+  ): Request[DescribeSecurityPolicyResponse, AWSError] = js.native
+  
   /**
     * Describes a file transfer protocol-enabled server that you specify by passing the ServerId parameter. The response contains a description of a server's properties. When you set EndpointType to VPC, the response will contain the EndpointDetails.
     */
@@ -87,6 +108,7 @@ trait Transfer extends Service {
     params: DescribeServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServerResponse, Unit]
   ): Request[DescribeServerResponse, AWSError] = js.native
+  
   /**
     * Describes the user assigned to the specific file transfer protocol-enabled server, as identified by its ServerId property. The response from this call returns the properties of the user associated with the ServerId value that was specified.
     */
@@ -100,6 +122,7 @@ trait Transfer extends Service {
     params: DescribeUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserResponse, Unit]
   ): Request[DescribeUserResponse, AWSError] = js.native
+  
   /**
     * Adds a Secure Shell (SSH) public key to a user account identified by a UserName value assigned to the specific file transfer protocol-enabled server, identified by ServerId. The response returns the UserName value, the ServerId value, and the name of the SshPublicKeyId.
     */
@@ -113,6 +136,21 @@ trait Transfer extends Service {
     params: ImportSshPublicKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportSshPublicKeyResponse, Unit]
   ): Request[ImportSshPublicKeyResponse, AWSError] = js.native
+  
+  /**
+    * Lists the security policies that are attached to your file transfer protocol-enabled servers.
+    */
+  def listSecurityPolicies(): Request[ListSecurityPoliciesResponse, AWSError] = js.native
+  def listSecurityPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListSecurityPoliciesResponse, Unit]): Request[ListSecurityPoliciesResponse, AWSError] = js.native
+  /**
+    * Lists the security policies that are attached to your file transfer protocol-enabled servers.
+    */
+  def listSecurityPolicies(params: ListSecurityPoliciesRequest): Request[ListSecurityPoliciesResponse, AWSError] = js.native
+  def listSecurityPolicies(
+    params: ListSecurityPoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSecurityPoliciesResponse, Unit]
+  ): Request[ListSecurityPoliciesResponse, AWSError] = js.native
+  
   /**
     * Lists the file transfer protocol-enabled servers that are associated with your AWS account.
     */
@@ -126,6 +164,7 @@ trait Transfer extends Service {
     params: ListServersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListServersResponse, Unit]
   ): Request[ListServersResponse, AWSError] = js.native
+  
   /**
     * Lists all of the tags associated with the Amazon Resource Number (ARN) you specify. The resource can be a user, server, or role.
     */
@@ -139,6 +178,7 @@ trait Transfer extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Lists the users for a file transfer protocol-enabled server that you specify by passing the ServerId parameter.
     */
@@ -152,6 +192,7 @@ trait Transfer extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  
   /**
     * Changes the state of a file transfer protocol-enabled server from OFFLINE to ONLINE. It has no impact on a server that is already ONLINE. An ONLINE server can accept and process file transfer jobs. The state of STARTING indicates that the server is in an intermediate state, either not fully able to respond, or not fully online. The values of START_FAILED can indicate an error condition. No response is returned from this call.
     */
@@ -162,16 +203,18 @@ trait Transfer extends Service {
     */
   def startServer(params: StartServerRequest): Request[js.Object, AWSError] = js.native
   def startServer(params: StartServerRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
-    * Changes the state of a file transfer protocol-enabled server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server, such as server and user properties, are not affected by stopping your server. Stopping the server will not reduce or impact your file transfer protocol endpoint billing. The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
+    * Changes the state of a file transfer protocol-enabled server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server, such as server and user properties, are not affected by stopping your server.  Stopping the server will not reduce or impact your file transfer protocol endpoint billing; you must delete the server to stop being billed.  The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
     */
   def stopServer(): Request[js.Object, AWSError] = js.native
   def stopServer(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Changes the state of a file transfer protocol-enabled server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server, such as server and user properties, are not affected by stopping your server. Stopping the server will not reduce or impact your file transfer protocol endpoint billing. The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
+    * Changes the state of a file transfer protocol-enabled server from ONLINE to OFFLINE. An OFFLINE server cannot accept and process file transfer jobs. Information tied to your server, such as server and user properties, are not affected by stopping your server.  Stopping the server will not reduce or impact your file transfer protocol endpoint billing; you must delete the server to stop being billed.  The state of STOPPING indicates that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of STOP_FAILED can indicate an error condition. No response is returned from this call.
     */
   def stopServer(params: StopServerRequest): Request[js.Object, AWSError] = js.native
   def stopServer(params: StopServerRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Attaches a key-value pair to a resource, as identified by its Amazon Resource Name (ARN). Resources are users, servers, roles, and other entities. There is no response returned from this call.
     */
@@ -182,6 +225,7 @@ trait Transfer extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * If the IdentityProviderType of a file transfer protocol-enabled server is API_Gateway, tests whether your API Gateway is set up successfully. We highly recommend that you call this operation to test your authentication method as soon as you create your server. By doing so, you can troubleshoot issues with the API Gateway integration to ensure that your users can successfully use the service.
     */
@@ -195,6 +239,7 @@ trait Transfer extends Service {
     params: TestIdentityProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestIdentityProviderResponse, Unit]
   ): Request[TestIdentityProviderResponse, AWSError] = js.native
+  
   /**
     * Detaches a key-value pair from a resource, as identified by its Amazon Resource Name (ARN). Resources are users, servers, roles, and other entities. No response is returned from this call.
     */
@@ -208,6 +253,7 @@ trait Transfer extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the file transfer protocol-enabled server's properties after that server has been created. The UpdateServer call returns the ServerId of the server you updated.
     */
@@ -221,6 +267,7 @@ trait Transfer extends Service {
     params: UpdateServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateServerResponse, Unit]
   ): Request[UpdateServerResponse, AWSError] = js.native
+  
   /**
     * Assigns new properties to a user. Parameters you pass modify any or all of the following: the home directory, role, and policy for the UserName and ServerId you specify. The response returns the ServerId and the UserName for the updated user.
     */
@@ -235,4 +282,3 @@ trait Transfer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserResponse, Unit]
   ): Request[UpdateUserResponse, AWSError] = js.native
 }
-

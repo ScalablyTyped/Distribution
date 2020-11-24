@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/node-config-provider" : "1.0.0-rc.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/node-config-provider" : "1.0.0-rc.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

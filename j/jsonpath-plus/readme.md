@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonpath-plus
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 A JS implementation of JSONPath with some additional operators
@@ -10,9 +10,9 @@ A JS implementation of JSONPath with some additional operators
 | ------------------ | :-------------: |
 | Full name          | jsonpath-plus |
 | Keywords           | json, jsonpath |
-| # releases         | 10 |
-| # dependents       | 92 |
-| # downloads        | 8086271 |
+| # releases         | 12 |
+| # dependents       | 154 |
+| # downloads        | 20621426 |
 | # stars            | 11 |
 
 ## Links

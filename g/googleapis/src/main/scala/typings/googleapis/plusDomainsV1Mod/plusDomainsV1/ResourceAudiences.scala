@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plusDomains/v1", "plusDomains_v1.Resource$Audiences")
 @js.native
 class ResourceAudiences protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * plusDomains.audiences.list
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -45,4 +47,3 @@ class ResourceAudiences protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAudiencesFeed]
   ): Unit = js.native
 }
-

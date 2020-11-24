@@ -2,9 +2,31 @@ package typings.detectIt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detectItStrings {
+  
+  @scala.inline
+  def coarse: coarse = "coarse".asInstanceOf[coarse]
+  
+  @scala.inline
+  def fine: fine = "fine".asInstanceOf[fine]
+  
+  @scala.inline
+  def hover: hover = "hover".asInstanceOf[hover]
+  
+  @scala.inline
+  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  
+  @scala.inline
+  def mouseOnly: mouseOnly = "mouseOnly".asInstanceOf[mouseOnly]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def touchOnly: touchOnly = "touchOnly".asInstanceOf[touchOnly]
+  
   @js.native
   sealed trait coarse extends js.Object
   
@@ -25,20 +47,4 @@ object detectItStrings {
   
   @js.native
   sealed trait touchOnly extends js.Object
-  
-  @scala.inline
-  def coarse: coarse = "coarse".asInstanceOf[coarse]
-  @scala.inline
-  def fine: fine = "fine".asInstanceOf[fine]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
-  def mouseOnly: mouseOnly = "mouseOnly".asInstanceOf[mouseOnly]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def touchOnly: touchOnly = "touchOnly".asInstanceOf[touchOnly]
 }
-

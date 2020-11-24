@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.std.InstanceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] extends js.Object {
-  /**
-    * Returns a reference to the plain JS object in the store.
-    * Make sure to not mutate this.
-    *
-    * @return a reference to the plain JS object in the store
-    */
-  val ref: Ref[this.type] = js.native
+  
   /**
     * Deletes the record for this {@link Model} instance.
     * Fields and values on the instance are still accessible after the call.
     */
   def delete(): Unit = js.native
+  
   /**
     * Returns a boolean indicating if `otherModel` equals this {@link Model} instance.
     * Equality is determined by shallow comparing their attributes.
@@ -32,16 +27,27 @@ trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap 
     * @return a boolean indicating if the {@link Model} instance's are equal.
     */
   def equals(otherModel: Model[Instantiable0[AnyModel], _]): Boolean = js.native
+  
   /**
     * Gets the id value of the current instance by looking up the id attribute.
     * @return The id value of the current instance.
     */
   def getId[Id /* <: /* import warning: importer.ImportType#apply Failed type conversion: Fields[redux-orm.redux-orm/db/Table.IdAttribute<MClass>] */ js.Any */](): Id | Double = js.native
+  
+  /**
+    * Returns a reference to the plain JS object in the store.
+    * Make sure to not mutate this.
+    *
+    * @return a reference to the plain JS object in the store
+    */
+  val ref: Ref[this.type] = js.native
+  
   /**
     * Updates {@link Model} instance attributes to reflect the
     * database state in the current session.
     */
   def refreshFromState(): Unit = js.native
+  
   /**
     * Updates a property name to given value for this {@link Model} instance.
     * The values are immediately committed to the database.
@@ -50,6 +56,7 @@ trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap 
     * @param value - value assigned to the property
     */
   def set[K /* <: String */](propertyName: K, value: RefPropOrSimple[this.type, K]): Unit = js.native
+  
   /**
     * Assigns multiple fields and corresponding values to this {@link Model} instance.
     * The updates are immediately committed to the database.
@@ -58,4 +65,3 @@ trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap 
     */
   def update(userMergeObj: UpdateProps[InstanceType[MClass]]): Unit = js.native
 }
-

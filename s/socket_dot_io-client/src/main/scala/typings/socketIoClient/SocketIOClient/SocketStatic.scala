@@ -3,7 +3,7 @@ package typings.socketIoClient.SocketIOClient
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Socket static interface
@@ -17,6 +17,7 @@ trait SocketStatic
   * @return A new Socket
   */
 Instantiable2[/* url */ String, /* opts */ js.Any, Manager] {
+  
   /**
     * Creates a new Socket, used for communicating with a specific namespace
     * @param io The Manager that's controlling this socket
@@ -25,4 +26,3 @@ Instantiable2[/* url */ String, /* opts */ js.Any, Manager] {
     */
   def apply(io: Manager, nsp: String): Socket = js.native
 }
-

@@ -10,10 +10,10 @@ Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_cas
 | ------------------ | :-------------: |
 | Full name          | change-case |
 | Keywords           | change, case, convert, transform, camel-case, pascal-case, param-case, kebab-case, header-case |
-| # releases         | 7 |
-| # dependents       | 1084 |
-| # downloads        | 44974173 |
-| # stars            | 37 |
+| # releases         | 6 |
+| # dependents       | 1389 |
+| # downloads        | 67788782 |
+| # stars            | 38 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/camel-case#readme)

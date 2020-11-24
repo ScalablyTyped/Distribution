@@ -11,8 +11,8 @@ A <LinearGradient> element for React Native
 | Full name          | react-native-linear-gradient |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 121 |
-| # downloads        | 4371462 |
+| # dependents       | 178 |
+| # downloads        | 6047441 |
 | # stars            | 8 |
 
 ## Links

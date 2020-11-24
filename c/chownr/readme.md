@@ -11,8 +11,8 @@ like `chown -R`
 | Full name          | chownr |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 83 |
-| # downloads        | 391278059 |
+| # dependents       | 107 |
+| # downloads        | 641195748 |
 | # stars            | 2 |
 
 ## Links

@@ -11,14 +11,14 @@ Node.js pagination middleware and view helpers
 | Full name          | express-paginate |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 157906 |
+| # dependents       | 10 |
+| # downloads        | 165820 |
 | # stars            | 7 |
 
 ## Links
-- [Homepage](https://github.com/niftylettuce/express-paginate)
-- [Bugs](https://github.com/niftylettuce/express-paginate/issues)
-- [Repository](https://github.com/niftylettuce/express-paginate)
+- [Homepage](https://github.com/expressjs/express-paginate)
+- [Bugs](https://github.com/expressjs/express-paginate/issues)
+- [Repository](https://github.com/expressjs/express-paginate)
 - [Npm](https://www.npmjs.com/package/express-paginate)
     
 

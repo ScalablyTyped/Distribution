@@ -3,10 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInUserGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultUserGroupOperationsAsync extends js.Object {
+  
   def AddOrUndeleteUserGroup(UserGroup: IUserGroupAdmin): Unit = js.native
   def AddOrUndeleteUserGroup(
     UserGroup: IUserGroupAdmin,
@@ -43,6 +44,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def AddUserGroupAdmin(UserGroup: IUserGroupAdmin): Unit = js.native
   def AddUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
@@ -79,6 +81,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetGroupsOfUserOrGroup(UserOrGroupID: Double, IsGroup: Boolean): Unit = js.native
   def GetGroupsOfUserOrGroup(
     UserOrGroupID: Double,
@@ -125,6 +128,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroup(UserGroupID: Double): Unit = js.native
   def GetUserGroup(
     UserGroupID: Double,
@@ -197,6 +201,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroupAdmin(UserGroupID: Double): Unit = js.native
   def GetUserGroupAdmin(
     UserGroupID: Double,
@@ -269,6 +274,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroupIDByAlias(Alias: String): Unit = js.native
   def GetUserGroupIDByAlias(
     Alias: String,
@@ -305,6 +311,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroupIDByGUID(UserGroupGUID: String): Unit = js.native
   def GetUserGroupIDByGUID(
     UserGroupGUID: String,
@@ -341,6 +348,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroupList(): Unit = js.native
   def GetUserGroupList(
     successCallback: js.UndefOr[scala.Nothing],
@@ -371,6 +379,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroups(): Unit = js.native
   def GetUserGroups(
     successCallback: js.UndefOr[scala.Nothing],
@@ -401,6 +410,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetUserGroupsAdmin(): Unit = js.native
   def GetUserGroupsAdmin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -431,6 +441,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveUserGroupAdmin(UserGroupID: Double): Unit = js.native
   def RemoveUserGroupAdmin(
     UserGroupID: Double,
@@ -503,6 +514,7 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateUserGroupAdmin(UserGroup: IUserGroupAdmin): Unit = js.native
   def UpdateUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
@@ -540,4 +552,3 @@ trait IVaultUserGroupOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

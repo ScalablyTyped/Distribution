@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object smarttags {
+  
   /**
     * provides one or more actions for smart tags.
     *
@@ -13,6 +14,7 @@ package object smarttags {
     * @since OOo 2.3
     */
   type SmartTagAction = typings.activexLibreoffice.com_.sun.star.smarttags.XSmartTagAction
+  
   /**
     * recognizes smart tags.
     *

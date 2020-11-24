@@ -2,7 +2,7 @@ package typings.obeliskJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "SlopeSouth")
 @js.native
@@ -58,4 +58,3 @@ class SlopeSouth () extends AbstractPrimitive {
   ) = this()
   def this(dimension: SlopeDimension, color: SlopeColor, border: Boolean, useDefaultCanvas: Boolean) = this()
 }
-

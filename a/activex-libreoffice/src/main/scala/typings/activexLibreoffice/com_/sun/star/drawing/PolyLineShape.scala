@@ -36,7 +36,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is for a polyline shape.
@@ -52,8 +52,8 @@ trait PolyLineShape
      with TextProperties
      with ShadowProperties
      with RotationDescriptor
-
 object PolyLineShape {
+  
   @scala.inline
   def apply(
     BorderDistance: Double,
@@ -313,4 +313,3 @@ object PolyLineShape {
     __obj.asInstanceOf[PolyLineShape]
   }
 }
-

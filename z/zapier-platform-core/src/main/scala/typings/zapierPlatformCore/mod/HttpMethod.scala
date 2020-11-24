@@ -2,7 +2,7 @@ package typings.zapierPlatformCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // internal only
 // export const integrationTestHandler: () => any;
@@ -17,21 +17,26 @@ import scala.scalajs.js.annotation._
   - typings.zapierPlatformCore.zapierPlatformCoreStrings.HEAD
 */
 trait HttpMethod extends js.Object
-
 object HttpMethod {
+  
   @scala.inline
   def DELETE: typings.zapierPlatformCore.zapierPlatformCoreStrings.DELETE = "DELETE".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.DELETE]
+  
   @scala.inline
   def GET: typings.zapierPlatformCore.zapierPlatformCoreStrings.GET = "GET".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.GET]
+  
   @scala.inline
   def HEAD: typings.zapierPlatformCore.zapierPlatformCoreStrings.HEAD = "HEAD".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.HEAD]
+  
   @scala.inline
   def OPTIONS: typings.zapierPlatformCore.zapierPlatformCoreStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.OPTIONS]
+  
   @scala.inline
   def PATCH: typings.zapierPlatformCore.zapierPlatformCoreStrings.PATCH = "PATCH".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.PATCH]
+  
   @scala.inline
   def POST: typings.zapierPlatformCore.zapierPlatformCoreStrings.POST = "POST".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.POST]
+  
   @scala.inline
   def PUT: typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT = "PUT".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT]
 }
-

@@ -2,14 +2,16 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SplitApp extends SplitContainer {
+  
   /**
     * Fires the orientationChange event after SplitApp has reacted to the browser orientationChange event.
     */
   def _onOrientationChange(): Unit = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>orientationChange</code> event of this
     * <code>sap.m.SplitApp</code>.When called, the context of the event handler (its <code>this</code>)
@@ -24,6 +26,7 @@ trait SplitApp extends SplitContainer {
     */
   def attachOrientationChange(oData: js.Any, fnFunction: js.Any): SplitApp = js.native
   def attachOrientationChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SplitApp = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>orientationChange</code> event of this
     * <code>sap.m.SplitApp</code>.The passed function and listener object must match the ones used for
@@ -33,6 +36,7 @@ trait SplitApp extends SplitContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachOrientationChange(fnFunction: js.Any, oListener: js.Any): SplitApp = js.native
+  
   /**
     * Fires event <code>orientationChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>landscape</code> of type <code>boolean</code>Returns true if the device is
@@ -41,6 +45,7 @@ trait SplitApp extends SplitContainer {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireOrientationChange(mArguments: js.Any): SplitApp = js.native
+  
   /**
     * Gets current value of property <code>homeIcon</code>.Represents the icon to be displayed on the home
     * screen of iOS devices after the user does "add to home screen".Note that only the first attempt to
@@ -61,6 +66,7 @@ trait SplitApp extends SplitContainer {
     * @returns Value of property <code>homeIcon</code>
     */
   def getHomeIcon(): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>homeIcon</code>.Represents the icon to be displayed on the home
     * screen of iOS devices after the user does "add to home screen".Note that only the first attempt to
@@ -84,4 +90,3 @@ trait SplitApp extends SplitContainer {
     */
   def setHomeIcon(oHomeIcon: js.Any): SplitApp = js.native
 }
-

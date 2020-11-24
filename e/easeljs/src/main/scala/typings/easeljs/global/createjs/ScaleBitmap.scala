@@ -5,7 +5,7 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.ScaleBitmap")
 @js.native
@@ -17,4 +17,3 @@ class ScaleBitmap protected ()
   def this(imageOrUrl: HTMLImageElement, scale9Grid: typings.easeljs.createjs.Rectangle) = this()
   def this(imageOrUrl: HTMLVideoElement, scale9Grid: typings.easeljs.createjs.Rectangle) = this()
 }
-

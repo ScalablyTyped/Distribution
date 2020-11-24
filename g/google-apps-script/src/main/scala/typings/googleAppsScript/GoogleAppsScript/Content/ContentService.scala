@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Content
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Service for returning text content from a script.
@@ -15,8 +15,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ContentService extends js.Object {
+  
   var MimeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MimeType */ js.Any = js.native
+  
   def createTextOutput(): TextOutput = js.native
   def createTextOutput(content: String): TextOutput = js.native
 }
-

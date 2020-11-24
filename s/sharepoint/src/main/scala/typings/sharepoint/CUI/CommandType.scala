@@ -2,14 +2,14 @@ package typings.sharepoint.CUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CommandType extends js.Object
-
 @JSGlobal("CUI.CommandType")
 @js.native
 object CommandType extends js.Object {
+  
   @js.native
   sealed trait general extends CommandType
   
@@ -42,6 +42,4 @@ object CommandType extends js.Object {
   
   @js.native
   sealed trait tabSelection extends CommandType
-  
 }
-

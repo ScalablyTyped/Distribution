@@ -11,8 +11,8 @@ Rsync cli wrapper
 | Full name          | rsync |
 | Keywords           | rsync, wrapper, cli, command |
 | # releases         | 0 |
-| # dependents       | 93 |
-| # downloads        | 446996 |
+| # dependents       | 102 |
+| # downloads        | 576484 |
 | # stars            | 14 |
 
 ## Links

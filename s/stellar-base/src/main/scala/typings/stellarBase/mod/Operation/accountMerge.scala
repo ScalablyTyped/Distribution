@@ -3,11 +3,11 @@ package typings.stellarBase.mod.Operation
 import typings.stellarBase.mod.OperationOptions.AccountMerge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-base", "Operation.accountMerge")
 @js.native
 object accountMerge extends js.Object {
+  
   def apply(options: AccountMerge): typings.stellarBase.xdrMod.default.Operation[AccountMerge_] = js.native
 }
-

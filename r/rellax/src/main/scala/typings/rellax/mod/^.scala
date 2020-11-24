@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rellax", JSImport.Namespace)
 @js.native
@@ -20,8 +20,6 @@ class ^ () extends RellaxInstance {
   def this(el: String, options: RellaxOptions) = this()
   def this(el: Element, options: RellaxOptions) = this()
 }
-
 @JSImport("rellax", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[Rellax]
-

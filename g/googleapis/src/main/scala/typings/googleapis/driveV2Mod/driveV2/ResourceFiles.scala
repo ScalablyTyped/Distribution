@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Files")
 @js.native
 class ResourceFiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.files.copy
     * @desc Creates a copy of the specified file.
@@ -50,6 +52,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.delete
     * @desc Permanently deletes a file by ID. Skips the trash. The currently
@@ -77,6 +80,7 @@ class ResourceFiles protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceFilesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceFilesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.files.emptyTrash
     * @desc Permanently deletes all of the user's trashed files.
@@ -104,6 +108,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * drive.files.export
     * @desc Exports a Google Doc to the requested MIME type and returns the
@@ -131,6 +136,7 @@ class ResourceFiles protected () extends js.Object {
   ): Unit = js.native
   def export(params: ParamsResourceFilesExport, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def export(params: ParamsResourceFilesExport, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.files.generateIds
     * @desc Generates a set of file IDs which can be provided in insert
@@ -161,6 +167,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGeneratedIds]
   ): Unit = js.native
+  
   /**
     * drive.files.get
     * @desc Gets a file's metadata by ID.
@@ -190,6 +197,7 @@ class ResourceFiles protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceFilesGet, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceFilesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
+  
   /**
     * drive.files.insert
     * @desc Insert a new file.
@@ -230,6 +238,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.list
     * @desc Lists the user's files.
@@ -268,6 +277,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFileList]
   ): Unit = js.native
+  
   /**
     * drive.files.patch
     * @desc Updates file metadata and/or content. This method supports patch
@@ -312,6 +322,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.touch
     * @desc Set the file's updated time to the current server time.
@@ -341,6 +352,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.trash
     * @desc Moves a file to the trash. The currently authenticated user must
@@ -372,6 +384,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.untrash
     * @desc Restores a file from the trash.
@@ -401,6 +414,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.update
     * @desc Updates file metadata and/or content.
@@ -447,6 +461,7 @@ class ResourceFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * drive.files.watch
     * @desc Subscribe to changes on a file
@@ -482,4 +497,3 @@ class ResourceFiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.twilioSync.clientMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class Client
@@ -28,11 +28,11 @@ class default protected () extends Client {
   def this(fpaToken: String) = this()
   def this(fpaToken: String, options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/client", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Current version of Sync client.
     * @name Client#version
@@ -41,4 +41,3 @@ object default extends js.Object {
     */
   def version: js.Any = js.native
 }
-

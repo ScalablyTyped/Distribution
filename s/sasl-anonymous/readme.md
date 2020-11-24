@@ -11,8 +11,8 @@ JavaScript implementation of ANONYMOUS SASL mechanism.
 | Full name          | sasl-anonymous |
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 86504 |
+| # dependents       | 4 |
+| # downloads        | 192616 |
 | # stars            | 0 |
 
 ## Links

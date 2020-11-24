@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Determines whether additional metadata is available for queries and for REF CURSORs returned from PL/SQL blocks.
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "extendedMetaData")
 @js.native
 object extendedMetaData extends TopLevel[Boolean]
-

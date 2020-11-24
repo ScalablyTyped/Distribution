@@ -2,34 +2,42 @@ package typings.igniteUi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IgTreeGridColumnFixingMethods extends js.Object {
+  
   def changeGlobalLanguage(): Unit = js.native
+  
   def changeGlobalRegional(): Unit = js.native
+  
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.iggridcolumnfixing#options:language)
     * Note that this method is for rare scenarios, see [language](ui.iggridcolumnfixing#options:language) or [locale](ui.iggridcolumnfixing#options:locale) option setter
     */
   def changeLocale(): Unit = js.native
+  
   /**
     * Checks whether the heights of fixed and unfixed tables are equal - if not sync them. Similar check is made for heights of table rows.
     */
   def checkAndSyncHeights(): Unit = js.native
+  
   /**
     * Checks whether column fixing is allowed for the specified columns. It should not be allowed if there is only one visible column in the unfixed area.
     *
     * @param columns Array of columns and/or column identifiers - could be column indexes, column keys, column object or mixed.
     */
   def checkFixingAllowed(columns: js.Array[_]): Boolean = js.native
+  
   /**
     * Checks whether unfixing is allowed for the specified columns. It should not be allowed if there is only one visible column in the fixed area.
     *
     * @param columns Array of columns and/or column identifiers - could be column indexes, column keys, column object or mixed.
     */
   def checkUnfixingAllowed(columns: js.Array[_]): Boolean = js.native
+  
   def destroy(): Unit = js.native
+  
   /**
     * Fixes a column by specified column identifier - column index or column key.
     *
@@ -41,14 +49,17 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   def fixColumn(colIdentifier: js.Object, target: js.UndefOr[scala.Nothing], after: Boolean): js.Object = js.native
   def fixColumn(colIdentifier: js.Object, target: String): js.Object = js.native
   def fixColumn(colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  
   /**
     * This function is deprecated - use function fixNonDataColumns.
     */
   def fixDataSkippedColumns(): Unit = js.native
+  
   /**
     * Fixes non-data columns (such as the row numbering column of row selectors) if any and if [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is left. Does nothing if the non-data columns are already fixed.
     */
   def fixNonDataColumns(): Unit = js.native
+  
   /**
     * Calculates widths of the fixed columns.
     *
@@ -68,12 +79,14 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: js.UndefOr[scala.Nothing], includeHidden: Boolean): Double = js.native
   def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: Boolean): Double = js.native
   def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
+  
   /**
     * Returns whether the column with the specified key is a column group header, when the [multi-column headers](http://www.igniteui.com/help/iggrid-multicolumnheaders-landingpage) feature is used.
     *
     * @param colKey The key of the column to perform the check for.
     */
   def isGroupHeader(colKey: String): Boolean = js.native
+  
   /**
     * If the 'check' argument is set to true, checks whether the heights of fixed and unfixed tables are equal, if not sync them. Similar check is made for heights of table rows. If the clearRowsHeights argument is set to true, clears rows heights before syncing them.
     *
@@ -84,6 +97,7 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   def syncHeights(check: js.UndefOr[scala.Nothing], clearRowsHeights: Boolean): Unit = js.native
   def syncHeights(check: Boolean): Unit = js.native
   def syncHeights(check: Boolean, clearRowsHeights: Boolean): Unit = js.native
+  
   /**
     * Syncs rows heights between two collections of rows.
     *
@@ -91,10 +105,12 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
     * @param $anotherRows An array of rows of the second(fixed/unfixed) container.
     */
   def syncRowsHeights($trs: js.Array[_], $anotherRows: js.Array[_]): Unit = js.native
+  
   /**
     * Unfixes all fixed columns.
     */
   def unfixAllColumns(): Unit = js.native
+  
   /**
     * Unfixes a column by specified column identifier - column key or column index.
     *
@@ -106,13 +122,14 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   def unfixColumn(colIdentifier: js.Object, target: js.UndefOr[scala.Nothing], after: Boolean): js.Object = js.native
   def unfixColumn(colIdentifier: js.Object, target: String): js.Object = js.native
   def unfixColumn(colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  
   /**
     * This function is deprecated - use function unfixNonDataColumns.
     */
   def unfixDataSkippedColumns(): Unit = js.native
+  
   /**
     * Unfixes non-data columns (such as the row numbering column of row selectors) if any and if [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is left. Does nothing if the non-data columns are already fixed.
     */
   def unfixNonDataColumns(): Unit = js.native
 }
-

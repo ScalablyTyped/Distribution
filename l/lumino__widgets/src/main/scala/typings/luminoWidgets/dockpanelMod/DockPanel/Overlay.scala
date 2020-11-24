@@ -2,7 +2,7 @@ package typings.luminoWidgets.dockpanelMod.DockPanel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A concrete implementation of `IOverlay`.
@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
   * Construct a new overlay.
   */
 class Overlay () extends IOverlay {
+  
   var _hidden: js.Any = js.native
+  
   var _timer: js.Any = js.native
 }
-

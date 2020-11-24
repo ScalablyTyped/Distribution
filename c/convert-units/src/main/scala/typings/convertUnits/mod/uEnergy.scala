@@ -3,7 +3,7 @@ package typings.convertUnits.mod
 import typings.convertUnits.convertUnitsStrings.mWh_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.Wh
@@ -15,21 +15,26 @@ import scala.scalajs.js.annotation._
   - typings.convertUnits.convertUnitsStrings.kJ
 */
 trait uEnergy extends js.Object
-
 object uEnergy {
+  
   @scala.inline
   def GWh: typings.convertUnits.convertUnitsStrings.GWh = "GWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.GWh]
+  
   @scala.inline
   def J: typings.convertUnits.convertUnitsStrings.J = "J".asInstanceOf[typings.convertUnits.convertUnitsStrings.J]
+  
   @scala.inline
   def MWh: typings.convertUnits.convertUnitsStrings.MWh = "MWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.MWh]
+  
   @scala.inline
   def Wh: typings.convertUnits.convertUnitsStrings.Wh = "Wh".asInstanceOf[typings.convertUnits.convertUnitsStrings.Wh]
+  
   @scala.inline
   def kJ: typings.convertUnits.convertUnitsStrings.kJ = "kJ".asInstanceOf[typings.convertUnits.convertUnitsStrings.kJ]
+  
   @scala.inline
   def kWh: typings.convertUnits.convertUnitsStrings.kWh = "kWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.kWh]
+  
   @scala.inline
   def mWh: mWh_ = "mWh".asInstanceOf[mWh_]
 }
-

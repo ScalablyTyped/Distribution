@@ -16,23 +16,28 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the standard model of an {@link UnoControlButton} . */
 @js.native
 trait UnoControlButtonModel extends UnoControlModel {
+  
   /**
     * specifies the horizontal alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
   var Align: Double = js.native
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Color = js.native
+  
   /** specifies that the button is the default button on the document. */
   var DefaultButton: Boolean = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /**
     * specifies whether the button control should grab the focus when clicked.
     *
@@ -41,12 +46,16 @@ trait UnoControlButtonModel extends UnoControlModel {
     * @since OOo 2.0
     */
   var FocusOnClick: Boolean = js.native
+  
   /** specifies the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
   var FontEmphasisMark: Double = js.native
+  
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
   var FontRelief: Double = js.native
+  
   /**
     * specifies a graphic to be displayed at the button
     *
@@ -56,12 +65,16 @@ trait UnoControlButtonModel extends UnoControlModel {
     * @since OOo 2.1
     */
   var Graphic: XGraphic = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /** specifies the alignment of the image inside the button as {@link ImageAlign} value. */
   var ImageAlign: Double = js.native
+  
   /**
     * specifies the position of the image, if any, relative to the text, if any
     *
@@ -71,22 +84,28 @@ trait UnoControlButtonModel extends UnoControlModel {
     * match.
     */
   var ImagePosition: Double = js.native
+  
   /**
     * specifies an URL to an image to use for the button.
     * @see Graphic
     */
   var ImageURL: String = js.native
+  
   /** specifies the label of the control. */
   var Label: String = js.native
+  
   /**
     * specifies that the text may be displayed on more than one line.
     * @since OOo 2.0
     */
   var MultiLine: Boolean = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** specifies the default action of the button as PushButtonType value. */
   var PushButtonType: Double = js.native
+  
   /**
     * specifies whether the control should show repeating behavior.
     *
@@ -95,6 +114,7 @@ trait UnoControlButtonModel extends UnoControlModel {
     * @since OOo 2.0
     */
   var Repeat: Boolean = js.native
+  
   /**
     * specifies the mouse repeat delay, in milliseconds.
     *
@@ -104,6 +124,7 @@ trait UnoControlButtonModel extends UnoControlModel {
     * @since OOo 2.0
     */
   var RepeatDelay: Double = js.native
+  
   /**
     * specifies the state of the control.
     *
@@ -113,12 +134,16 @@ trait UnoControlButtonModel extends UnoControlModel {
     * @see Toggle
     */
   var State: Double = js.native
+  
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: Boolean = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /** specifies the text line color (RGB) of the control. */
   var TextLineColor: Color = js.native
+  
   /**
     * specifies whether the button should toggle on a single operation.
     *
@@ -129,14 +154,15 @@ trait UnoControlButtonModel extends UnoControlModel {
     * @since OOo 2.0
     */
   var Toggle: Boolean = js.native
+  
   /**
     * specifies the vertical alignment of the text in the control.
     * @since OOo 2.0
     */
   var VerticalAlign: VerticalAlignment = js.native
 }
-
 object UnoControlButtonModel {
+  
   @scala.inline
   def apply(
     Align: Double,
@@ -202,70 +228,98 @@ object UnoControlButtonModel {
     val __obj = js.Dynamic.literal(Align = Align.asInstanceOf[js.Any], BackgroundColor = BackgroundColor.asInstanceOf[js.Any], DefaultButton = DefaultButton.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FocusOnClick = FocusOnClick.asInstanceOf[js.Any], FontDescriptor = FontDescriptor.asInstanceOf[js.Any], FontEmphasisMark = FontEmphasisMark.asInstanceOf[js.Any], FontRelief = FontRelief.asInstanceOf[js.Any], Graphic = Graphic.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], ImageAlign = ImageAlign.asInstanceOf[js.Any], ImagePosition = ImagePosition.asInstanceOf[js.Any], ImageURL = ImageURL.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], MultiLine = MultiLine.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], PushButtonType = PushButtonType.asInstanceOf[js.Any], Repeat = Repeat.asInstanceOf[js.Any], RepeatDelay = RepeatDelay.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tabstop = Tabstop.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TextColor = TextColor.asInstanceOf[js.Any], TextLineColor = TextLineColor.asInstanceOf[js.Any], Toggle = Toggle.asInstanceOf[js.Any], VerticalAlign = VerticalAlign.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[UnoControlButtonModel]
   }
+  
   @scala.inline
   implicit class UnoControlButtonModelOps[Self <: UnoControlButtonModel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: Double): Self = this.set("Align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDefaultButton(value: Boolean): Self = this.set("DefaultButton", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFocusOnClick(value: Boolean): Self = this.set("FocusOnClick", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontEmphasisMark(value: Double): Self = this.set("FontEmphasisMark", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontRelief(value: Double): Self = this.set("FontRelief", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGraphic(value: XGraphic): Self = this.set("Graphic", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImageAlign(value: Double): Self = this.set("ImageAlign", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImagePosition(value: Double): Self = this.set("ImagePosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImageURL(value: String): Self = this.set("ImageURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMultiLine(value: Boolean): Self = this.set("MultiLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPushButtonType(value: Double): Self = this.set("PushButtonType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRepeat(value: Boolean): Self = this.set("Repeat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRepeatDelay(value: Double): Self = this.set("RepeatDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setState(value: Double): Self = this.set("State", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextColor(value: Color): Self = this.set("TextColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextLineColor(value: Color): Self = this.set("TextLineColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setToggle(value: Boolean): Self = this.set("Toggle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVerticalAlign(value: VerticalAlignment): Self = this.set("VerticalAlign", value.asInstanceOf[js.Any])
   }
-  
 }
-

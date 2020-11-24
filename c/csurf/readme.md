@@ -1,7 +1,7 @@
 
 # Scala.js typings for csurf
 
-Typings are for version 1.9.0
+Typings are for version 1.11
 
 ## Library description:
 CSRF token middleware
@@ -10,9 +10,9 @@ CSRF token middleware
 | ------------------ | :-------------: |
 | Full name          | csurf |
 | Keywords           | csrf, tokens, middleware, express |
-| # releases         | 2 |
-| # dependents       | 241 |
-| # downloads        | 12939896 |
+| # releases         | 3 |
+| # dependents       | 283 |
+| # downloads        | 14453723 |
 | # stars            | 122 |
 
 ## Links

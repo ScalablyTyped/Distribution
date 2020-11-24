@@ -12,7 +12,7 @@ import typings.openpgp.mod.packet.Userid
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Class that represents an user ID or attribute packet and the relevant signatures.
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("openpgp", "key.User")
 @js.native
 class User () extends js.Object {
-  var userId: Userid = js.native
+  
   def isRevoked(primaryKey: PublicKey, certificate: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: PublicKey, certificate: Signature, key: PublicSubkey, date: Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: PublicKey, certificate: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
@@ -37,6 +37,7 @@ class User () extends js.Object {
   def isRevoked(primaryKey: SecretKey, certificate: Signature, key: PublicSubkey, date: Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretSubkey, date: Date): js.Promise[Boolean] = js.native
+  
   def sign(primaryKey: PublicKey, privateKeys: js.Array[_]): js.Promise[Key] = js.native
   /**
     * Signs user
@@ -45,11 +46,13 @@ class User () extends js.Object {
     * @returns New user with new certificate signatures
     */
   def sign(primaryKey: SecretKey, privateKeys: js.Array[_]): js.Promise[Key] = js.native
+  
   /**
     * Transforms structured user data to packetlist
     * @returns
     */
   def toPacketlist(): List = js.native
+  
   /**
     * Update user with new components from specified user
     * @param user Source user to merge
@@ -58,6 +61,9 @@ class User () extends js.Object {
     */
   def update(user: User, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def update(user: User, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  
+  var userId: Userid = js.native
+  
   def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
   /**
     * Verify User. Checks for existence of self signatures, revocation signatures
@@ -67,6 +73,7 @@ class User () extends js.Object {
     * @returns Status of user
     */
   def verify(primaryKey: SecretKey, date: Date): js.Promise[keyStatus] = js.native
+  
   def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[_], date: Date): js.Promise[js.Array[Keyid]] = js.native
   /**
     * Verifies all user certificates
@@ -76,6 +83,7 @@ class User () extends js.Object {
     * @returns List of signer's keyid and validity of signature
     */
   def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[_], date: Date): js.Promise[js.Array[Keyid]] = js.native
+  
   def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[_], date: Date): js.Promise[keyStatus] = js.native
   /**
     * Verifies the user certificate
@@ -87,4 +95,3 @@ class User () extends js.Object {
     */
   def verifyCertificate(primaryKey: SecretKey, certificate: Signature, keys: js.Array[_], date: Date): js.Promise[keyStatus] = js.native
 }
-

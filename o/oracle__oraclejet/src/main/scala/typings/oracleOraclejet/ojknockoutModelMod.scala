@@ -2,11 +2,12 @@ package typings.oracleOraclejet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@oracle/oraclejet/ojknockout-model", JSImport.Namespace)
 @js.native
 object ojknockoutModelMod extends js.Object {
+  
   def map(m: js.Object): (js.Array[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
   ]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any) = js.native
@@ -20,4 +21,3 @@ object ojknockoutModelMod extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
   ]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any) = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * descriptor for accessing basic data access objects.
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DataAccessDescriptor extends js.Object {
+  
   /**
     * is a connection to use.
     *
@@ -34,6 +35,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see DataSourceName
     */
   var ActiveConnection: XConnection = js.native
+  
   /**
     * specifies how to interpret {@link Selection}
     *
@@ -47,6 +49,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.XResultSetAccess
     */
   var BookmarkSelection: Boolean = js.native
+  
   /**
     * specifies a column object
     *
@@ -57,6 +60,7 @@ trait DataAccessDescriptor extends js.Object {
     * com.sun.star.sdb} module.
     */
   var Column: XPropertySet = js.native
+  
   /**
     * specifies a column name.
     *
@@ -64,6 +68,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see Column
     */
   var ColumnName: String = js.native
+  
   /**
     * specifies the command to execute to retrieve a result set.
     *
@@ -71,6 +76,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see CommandType
     */
   var Command: String = js.native
+  
   /**
     * specifies the type of the command to be executed to retrieve a result set.
     *
@@ -80,6 +86,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.CommandType
     */
   var CommandType: Double = js.native
+  
   /**
     * specifies additional info to use when creating a connection from a `ConnectionResource`
     *
@@ -89,6 +96,7 @@ trait DataAccessDescriptor extends js.Object {
     * If the sequence is empty, it is ignored.
     */
   var ConnectionInfo: SafeArray[PropertyValue] = js.native
+  
   /**
     * specifies the database URL which locates a database driver.
     *
@@ -97,6 +105,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see ActiveConnection
     */
   var ConnectionResource: String = js.native
+  
   /**
     * specifies the name of the datasource to access.
     *
@@ -106,6 +115,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see ActiveConnection
     */
   var DataSourceName: String = js.native
+  
   /**
     * specifies the URL of the database file.
     *
@@ -115,6 +125,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see ActiveConnection
     */
   var DatabaseLocation: String = js.native
+  
   /**
     * specifies if the {@link Command} should be analyzed on the client side before sending it to the database server.
     *
@@ -125,6 +136,7 @@ trait DataAccessDescriptor extends js.Object {
     * CommandType} equals {@link CommandType.COMMAND} .
     */
   var EscapeProcessing: Boolean = js.native
+  
   /**
     * specifies an additional filter to optionally use.
     *
@@ -138,24 +150,28 @@ trait DataAccessDescriptor extends js.Object {
     * @see ResultSet
     */
   var Filter: String = js.native
+  
   /**
     * specifies an additional `GROUP BY` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `GROUP BY` itself is not part of this property.
     */
   var GroupBy: String = js.native
+  
   /**
     * specifies an additional `HAVING` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `HAVING` itself is not part of this property.
     */
   var HavingClause: String = js.native
+  
   /**
     * specifies an additional `ORDER BY` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `ORDER BY` itself is not part of this property.
     */
   var Order: String = js.native
+  
   /**
     * specifies an already existent result set to use.
     *
@@ -171,6 +187,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.XResultSetAccess
     */
   var ResultSet: XResultSet = js.native
+  
   /**
     * specifies a selection to confine the records in a result set.
     *
@@ -186,8 +203,8 @@ trait DataAccessDescriptor extends js.Object {
     */
   var Selection: SafeArray[_] = js.native
 }
-
 object DataAccessDescriptor {
+  
   @scala.inline
   def apply(
     ActiveConnection: XConnection,
@@ -211,52 +228,71 @@ object DataAccessDescriptor {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], BookmarkSelection = BookmarkSelection.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], CommandType = CommandType.asInstanceOf[js.Any], ConnectionInfo = ConnectionInfo.asInstanceOf[js.Any], ConnectionResource = ConnectionResource.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any], DatabaseLocation = DatabaseLocation.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataAccessDescriptor]
   }
+  
   @scala.inline
   implicit class DataAccessDescriptorOps[Self <: DataAccessDescriptor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBookmarkSelection(value: Boolean): Self = this.set("BookmarkSelection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setColumn(value: XPropertySet): Self = this.set("Column", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setColumnName(value: String): Self = this.set("ColumnName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommandType(value: Double): Self = this.set("CommandType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConnectionInfo(value: SafeArray[PropertyValue]): Self = this.set("ConnectionInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConnectionResource(value: String): Self = this.set("ConnectionResource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDatabaseLocation(value: String): Self = this.set("DatabaseLocation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGroupBy(value: String): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHavingClause(value: String): Self = this.set("HavingClause", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResultSet(value: XResultSet): Self = this.set("ResultSet", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelection(value: SafeArray[_]): Self = this.set("Selection", value.asInstanceOf[js.Any])
   }
-  
 }
-

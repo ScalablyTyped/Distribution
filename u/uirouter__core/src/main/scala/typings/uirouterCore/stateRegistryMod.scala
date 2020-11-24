@@ -12,29 +12,27 @@ import typings.uirouterCore.uirouterCoreStrings.deregistered
 import typings.uirouterCore.uirouterCoreStrings.registered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/state/stateRegistry", JSImport.Namespace)
 @js.native
 object stateRegistryMod extends js.Object {
+  
   @js.native
   class StateRegistry protected () extends js.Object {
     /** @internal */
     def this(router: UIRouter) = this()
+    
     /** @internal */
     var _deregisterTree: js.Any = js.native
+    
     /** @internal */
     var _registerRoot: js.Any = js.native
+    
     var _root: js.Any = js.native
+    
     var builder: js.Any = js.native
-    /** @internal */
-    var listeners: js.Array[StateRegistryListener] = js.native
-    /** @internal */
-    var matcher: StateMatcher = js.native
-    var router: js.Any = js.native
-    /** @internal */
-    var stateQueue: StateQueueManager = js.native
-    var states: js.Any = js.native
+    
     /**
       * Registers a [[BuilderFunction]] for a specific [[StateObject]] property (e.g., `parent`, `url`, or `path`).
       * More than one BuilderFunction can be registered for a given property.
@@ -46,6 +44,7 @@ object stateRegistryMod extends js.Object {
       * @returns a function which deregisters the BuilderFunction
       */
     def decorator(property: String, builderFunction: BuilderFunction): js.Function = js.native
+    
     /**
       * Removes a state from the registry
       *
@@ -56,8 +55,10 @@ object stateRegistryMod extends js.Object {
       * @returns {StateObject[]} a list of removed states
       */
     def deregister(stateOrName: StateOrName): js.Array[StateObject] = js.native
+    
     /** @internal */
     def dispose(): Unit = js.native
+    
     /**
       * Gets all registered states
       *
@@ -79,6 +80,13 @@ object stateRegistryMod extends js.Object {
       */
     def get(stateOrName: StateOrName): StateDeclaration = js.native
     def get(stateOrName: StateOrName, base: StateOrName): StateDeclaration = js.native
+    
+    /** @internal */
+    var listeners: js.Array[StateRegistryListener] = js.native
+    
+    /** @internal */
+    var matcher: StateMatcher = js.native
+    
     /**
       * Listen for a State Registry events
       *
@@ -110,6 +118,7 @@ object stateRegistryMod extends js.Object {
       * @return a function that deregisters the listener
       */
     def onStatesChanged(listener: StateRegistryListener): js.Function0[Unit] = js.native
+    
     /**
       * Adds a state to the registry
       *
@@ -123,6 +132,7 @@ object stateRegistryMod extends js.Object {
       *          If the state was only queued, then the object is not fully built.
       */
     def register(stateDefinition: _StateDeclaration): StateObject = js.native
+    
     /**
       * Gets the implicit root state
       *
@@ -133,8 +143,14 @@ object stateRegistryMod extends js.Object {
       * @return the root [[StateObject]]
       */
     def root(): StateObject = js.native
+    
+    var router: js.Any = js.native
+    
+    /** @internal */
+    var stateQueue: StateQueueManager = js.native
+    
+    var states: js.Any = js.native
   }
   
   type StateRegistryListener = js.Function2[/* event */ registered | deregistered, /* states */ js.Array[StateDeclaration], Unit]
 }
-

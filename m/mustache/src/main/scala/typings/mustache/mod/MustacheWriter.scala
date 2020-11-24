@@ -2,7 +2,7 @@ package typings.mustache.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Writer knows how to take a stream of tokens and render them to a `string`, given a context.
@@ -11,10 +11,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MustacheWriter extends js.Object {
+  
   /**
     * Clears all cached templates in this writer.
     */
   def clearCache(): Unit = js.native
+  
   /**
     * Renders an escaped value.
     *
@@ -25,6 +27,7 @@ trait MustacheWriter extends js.Object {
     * The context to use for rendering the token.
     */
   def escapedValue(token: js.Array[String], context: MustacheContext): String = js.native
+  
   /**
     * Adds indentation to each line of the given partial.
     *
@@ -38,6 +41,7 @@ trait MustacheWriter extends js.Object {
     * Whether to indent lines that are empty.
     */
   def indentPartial(partial: String, indentation: String, lineHasNonSpace: Boolean): String = js.native
+  
   /**
     * Parses and caches the given `template` and returns the array of tokens that is generated from the parse.
     *
@@ -49,6 +53,7 @@ trait MustacheWriter extends js.Object {
     */
   def parse(template: String): js.Any = js.native
   def parse(template: String, tags: OpeningAndClosingTags): js.Any = js.native
+  
   /**
     * Renders a raw token.
     *
@@ -56,6 +61,7 @@ trait MustacheWriter extends js.Object {
     * The token to render.
     */
   def rawValue(token: js.Array[String]): String = js.native
+  
   /**
     * High-level method that is used to render the given `template` with the given `view`.
     *
@@ -91,6 +97,7 @@ trait MustacheWriter extends js.Object {
     tags: OpeningAndClosingTags
   ): String = js.native
   def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  
   /**
     * Renders an inverted section block.
     *
@@ -114,6 +121,7 @@ trait MustacheWriter extends js.Object {
     originalTemplate: String
   ): String = js.native
   def renderInverted(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  
   /**
     * Renders a partial.
     *
@@ -137,6 +145,7 @@ trait MustacheWriter extends js.Object {
     tags: OpeningAndClosingTags
   ): String = js.native
   def renderPartial(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  
   /**
     * Renders a section block.
     *
@@ -160,6 +169,7 @@ trait MustacheWriter extends js.Object {
     originalTemplate: String
   ): String = js.native
   def renderSection(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  
   /**
     * Low-level method that renders the given array of `tokens` using the given `context` and `partials`.
     *
@@ -185,6 +195,7 @@ trait MustacheWriter extends js.Object {
     originalTemplate: String
   ): String = js.native
   def renderTokens(tokens: js.Array[js.Array[String]], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  
   /**
     * Renders an unescaped value.
     *
@@ -196,4 +207,3 @@ trait MustacheWriter extends js.Object {
     */
   def unescapedValue(token: js.Array[String], context: MustacheContext): String = js.native
 }
-

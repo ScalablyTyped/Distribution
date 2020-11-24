@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides {@link XDispatch} interfaces for certain functions which are useful at the UI.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDispatchProvider extends XInterface {
+  
   /**
     * searches for an {@link XDispatch} for the specified URL within the specified target frame.
     * @param URL describe the feature which should be supported by returned dispatch object
@@ -25,6 +26,7 @@ trait XDispatchProvider extends XInterface {
     * @see XDispatchProvider.queryDispatches()
     */
   def queryDispatch(URL: URL, TargetFrameName: String, SearchFlags: Double): XDispatch = js.native
+  
   /**
     * actually this method is redundant to {@link XDispatchProvider.queryDispatch()} to avoid multiple remote calls.
     * @param Requests list of dispatch requests
@@ -32,8 +34,8 @@ trait XDispatchProvider extends XInterface {
     */
   def queryDispatches(Requests: SeqEquiv[DispatchDescriptor]): SafeArray[XDispatch] = js.native
 }
-
 object XDispatchProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -45,22 +47,26 @@ object XDispatchProvider {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDispatchProvider]
   }
+  
   @scala.inline
   implicit class XDispatchProviderOps[Self <: XDispatchProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setQueryDispatch(value: (URL, String, Double) => XDispatch): Self = this.set("queryDispatch", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setQueryDispatches(value: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch]): Self = this.set("queryDispatches", js.Any.fromFunction1(value))
   }
-  
 }
-

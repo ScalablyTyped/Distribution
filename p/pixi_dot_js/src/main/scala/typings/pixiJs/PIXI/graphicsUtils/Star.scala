@@ -3,7 +3,7 @@ package typings.pixiJs.PIXI.graphicsUtils
 import typings.pixiJs.PIXI.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Draw a star shape with an arbitrary number of points.
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Star extends Polygon
-
 object Star {
+  
   @scala.inline
   def apply(
     closeStroke: Boolean,
@@ -35,4 +35,3 @@ object Star {
     __obj.asInstanceOf[Star]
   }
 }
-

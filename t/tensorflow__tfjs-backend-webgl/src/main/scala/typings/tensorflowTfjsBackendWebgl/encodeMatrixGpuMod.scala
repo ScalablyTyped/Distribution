@@ -3,11 +3,12 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/encode_matrix_gpu", JSImport.Namespace)
 @js.native
 object encodeMatrixGpuMod extends js.Object {
+  
   @js.native
   class EncodeMatrixProgram protected () extends GPGPUProgram {
     def this(outputShape: js.Tuple3[Double, Double, Double], texShape: js.Tuple2[Double, Double]) = this()
@@ -17,6 +18,4 @@ object encodeMatrixGpuMod extends js.Object {
       inputIsUnsignedByte: Boolean
     ) = this()
   }
-  
 }
-

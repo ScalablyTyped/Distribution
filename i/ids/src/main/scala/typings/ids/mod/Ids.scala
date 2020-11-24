@@ -2,10 +2,11 @@ package typings.ids.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Ids extends js.Object {
+  
   /**
     * Returns true if the given id has already been assigned.
     *
@@ -13,6 +14,7 @@ trait Ids extends js.Object {
     * @return {Boolean}
     */
   def assigned(id: ID): Boolean = js.native
+  
   /**
     * Manually claim an existing id.
     *
@@ -21,10 +23,12 @@ trait Ids extends js.Object {
     */
   def claim(id: ID): Unit = js.native
   def claim(id: ID, element: js.Any): Unit = js.native
+  
   /**
     * Clear all claimed ids.
     */
   def clear(): Unit = js.native
+  
   /**
     * Generate a next id.
     *
@@ -34,6 +38,7 @@ trait Ids extends js.Object {
     */
   def next(): ID = js.native
   def next(element: js.Any): ID = js.native
+  
   /**
     * Generate a next id with a given prefix.
     *
@@ -43,6 +48,7 @@ trait Ids extends js.Object {
     */
   def nextPrefixed(prefix: String): ID = js.native
   def nextPrefixed(prefix: String, element: js.Any): ID = js.native
+  
   /**
     * Unclaim an id.
     *
@@ -50,4 +56,3 @@ trait Ids extends js.Object {
     */
   def unclaim(id: ID): Unit = js.native
 }
-

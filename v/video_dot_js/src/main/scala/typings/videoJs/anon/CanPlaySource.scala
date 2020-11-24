@@ -10,7 +10,7 @@ import typings.videoJs.videoJsStrings.maybe
 import typings.videoJs.videoJsStrings.problably
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CanPlaySource
@@ -26,6 +26,7 @@ trait CanPlaySource
 Instantiable0[Tech]
      with Instantiable1[/* options */ js.Any, Tech]
      with Instantiable2[js.UndefOr[/* options */ js.Any], /* ready */ ReadyCallback, Tech] {
+  
   /**
     * Check if the tech can support the given source
     * @param srcObj
@@ -35,6 +36,7 @@ Instantiable0[Tech]
     * @return 'probably', 'maybe', or '' (empty string)
     */
   def canPlaySource(srcObj: js.Any, options: js.Any): problably | maybe | _empty = js.native
+  
   /**
     * Check if the type is supported by this tech.
     *
@@ -46,6 +48,7 @@ Instantiable0[Tech]
     * @return Returns the native video element's response
     */
   def canPlayType(`type`: String): String = js.native
+  
   /**
     * Get a `Tech` from the shared list by name.
     *
@@ -55,6 +58,7 @@ Instantiable0[Tech]
     * @return The `Tech` or undefined if there was no tech with the name requested.
     */
   def getTech(name: String): js.UndefOr[Tech] = js.native
+  
   /**
     * Return whether the argument is a Tech or not.
     * Can be passed either a Class like `Html5` or a instance like `player.tech_`
@@ -67,6 +71,7 @@ Instantiable0[Tech]
     *         - False if it is not
     */
   def isTech(component: js.Any): Boolean = js.native
+  
   /**
     * Registers a `Tech` into a shared list for videojs.
     *
@@ -77,6 +82,7 @@ Instantiable0[Tech]
     *        The `Tech` class to register.
     */
   def registerTech(name: String, tech: js.Any): Unit = js.native
+  
   /**
     * A functional mixin for techs that want to use the Source Handler pattern.
     * Source handlers are scripts for handling specific formats.
@@ -90,4 +96,3 @@ Instantiable0[Tech]
     */
   def withSourceHandlers(tech: /* import warning: importer.ImportType#apply Failed type conversion: typeof Tech */ js.Any): Unit = js.native
 }
-

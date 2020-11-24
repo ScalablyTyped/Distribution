@@ -2,7 +2,7 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.gapiCalendar.gapiCalendarStrings.freeBusyReader
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.gapiCalendar.gapiCalendarStrings.owner
 */
 trait AccessRoleWithoutNone extends js.Object
-
 object AccessRoleWithoutNone {
+  
   @scala.inline
   def freeBusyReader: typings.gapiCalendar.gapiCalendarStrings.freeBusyReader = "freeBusyReader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.freeBusyReader]
+  
   @scala.inline
   def owner: typings.gapiCalendar.gapiCalendarStrings.owner = "owner".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.owner]
+  
   @scala.inline
   def reader: typings.gapiCalendar.gapiCalendarStrings.reader = "reader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.reader]
+  
   @scala.inline
   def writer: typings.gapiCalendar.gapiCalendarStrings.writer = "writer".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.writer]
 }
-

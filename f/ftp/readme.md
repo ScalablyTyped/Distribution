@@ -11,8 +11,8 @@ An FTP client module for node.js
 | Full name          | ftp |
 | Keywords           | ftp, client, transfer |
 | # releases         | 1 |
-| # dependents       | 304 |
-| # downloads        | 59247311 |
+| # dependents       | 327 |
+| # downloads        | 77182754 |
 | # stars            | 44 |
 
 ## Links

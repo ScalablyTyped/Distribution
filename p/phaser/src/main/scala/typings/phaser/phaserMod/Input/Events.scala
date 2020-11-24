@@ -2,23 +2,26 @@ package typings.phaser.phaserMod.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Input.Events")
 @js.native
 object Events extends js.Object {
+  
   /**
     * The Input Plugin Boot Event.
     * 
     * This internal event is dispatched by the Input Plugin when it boots, signalling to all of its systems to create themselves.
     */
   val BOOT: js.Any = js.native
+  
   /**
     * The Input Plugin Destroy Event.
     * 
     * This internal event is dispatched by the Input Plugin when it is destroyed, signalling to all of its systems to destroy themselves.
     */
   val DESTROY: js.Any = js.native
+  
   /**
     * The Pointer Drag Input Event.
     * 
@@ -31,6 +34,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DRAG]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG} event instead.
     */
   val DRAG: js.Any = js.native
+  
   /**
     * The Pointer Drag End Input Event.
     * 
@@ -41,6 +45,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DRAG_END]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_END} event instead.
     */
   val DRAG_END: js.Any = js.native
+  
   /**
     * The Pointer Drag Enter Input Event.
     * 
@@ -53,6 +58,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DRAG_ENTER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_ENTER} event instead.
     */
   val DRAG_ENTER: js.Any = js.native
+  
   /**
     * The Pointer Drag Leave Input Event.
     * 
@@ -65,6 +71,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DRAG_LEAVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_LEAVE} event instead.
     */
   val DRAG_LEAVE: js.Any = js.native
+  
   /**
     * The Pointer Drag Over Input Event.
     * 
@@ -80,6 +87,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DRAG_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_OVER} event instead.
     */
   val DRAG_OVER: js.Any = js.native
+  
   /**
     * The Pointer Drag Start Input Event.
     * 
@@ -92,6 +100,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DRAG_START]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_START} event instead.
     */
   val DRAG_START: js.Any = js.native
+  
   /**
     * The Pointer Drop Input Event.
     * 
@@ -102,6 +111,7 @@ object Events extends js.Object {
     * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_DROP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DROP} event instead.
     */
   val DROP: js.Any = js.native
+  
   /**
     * The Game Object Down Input Event.
     * 
@@ -124,6 +134,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_DOWN: js.Any = js.native
+  
   /**
     * The Game Object Drag Event.
     * 
@@ -136,6 +147,7 @@ object Events extends js.Object {
     * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
     */
   val GAMEOBJECT_DRAG: js.Any = js.native
+  
   /**
     * The Game Object Drag End Event.
     * 
@@ -148,6 +160,7 @@ object Events extends js.Object {
     * See [GameObject.setInteractive](Phaser.GameObjects.GameObject#setInteractive) for more details.
     */
   val GAMEOBJECT_DRAG_END: js.Any = js.native
+  
   /**
     * The Game Object Drag Enter Event.
     * 
@@ -160,6 +173,7 @@ object Events extends js.Object {
     * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
     */
   val GAMEOBJECT_DRAG_ENTER: js.Any = js.native
+  
   /**
     * The Game Object Drag Leave Event.
     * 
@@ -172,6 +186,7 @@ object Events extends js.Object {
     * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
     */
   val GAMEOBJECT_DRAG_LEAVE: js.Any = js.native
+  
   /**
     * The Game Object Drag Over Event.
     * 
@@ -187,6 +202,7 @@ object Events extends js.Object {
     * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
     */
   val GAMEOBJECT_DRAG_OVER: js.Any = js.native
+  
   /**
     * The Game Object Drag Start Event.
     * 
@@ -202,6 +218,7 @@ object Events extends js.Object {
     * For example, `gameObject.input.dragStartX`, `dragStartY` and so on.
     */
   val GAMEOBJECT_DRAG_START: js.Any = js.native
+  
   /**
     * The Game Object Drop Event.
     * 
@@ -214,6 +231,7 @@ object Events extends js.Object {
     * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
     */
   val GAMEOBJECT_DROP: js.Any = js.native
+  
   /**
     * The Game Object Move Input Event.
     * 
@@ -236,6 +254,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_MOVE: js.Any = js.native
+  
   /**
     * The Game Object Out Input Event.
     * 
@@ -258,6 +277,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_OUT: js.Any = js.native
+  
   /**
     * The Game Object Over Input Event.
     * 
@@ -280,6 +300,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_OVER: js.Any = js.native
+  
   /**
     * The Game Object Pointer Down Event.
     * 
@@ -301,6 +322,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_POINTER_DOWN: js.Any = js.native
+  
   /**
     * The Game Object Pointer Move Event.
     * 
@@ -322,6 +344,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_POINTER_MOVE: js.Any = js.native
+  
   /**
     * The Game Object Pointer Out Event.
     * 
@@ -343,6 +366,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_POINTER_OUT: js.Any = js.native
+  
   /**
     * The Game Object Pointer Over Event.
     * 
@@ -364,6 +388,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_POINTER_OVER: js.Any = js.native
+  
   /**
     * The Game Object Pointer Up Event.
     * 
@@ -385,6 +410,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_POINTER_UP: js.Any = js.native
+  
   /**
     * The Game Object Pointer Wheel Event.
     * 
@@ -406,6 +432,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_POINTER_WHEEL: js.Any = js.native
+  
   /**
     * The Game Object Up Input Event.
     * 
@@ -428,6 +455,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_UP: js.Any = js.native
+  
   /**
     * The Game Object Wheel Input Event.
     * 
@@ -450,6 +478,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val GAMEOBJECT_WHEEL: js.Any = js.native
+  
   /**
     * The Input Plugin Game Out Event.
     * 
@@ -459,6 +488,7 @@ object Events extends js.Object {
     * Listen to this event from within a Scene using: `this.input.on('gameout', listener)`.
     */
   val GAME_OUT: js.Any = js.native
+  
   /**
     * The Input Plugin Game Over Event.
     * 
@@ -468,12 +498,14 @@ object Events extends js.Object {
     * Listen to this event from within a Scene using: `this.input.on('gameover', listener)`.
     */
   val GAME_OVER: js.Any = js.native
+  
   /**
     * The Input Manager Boot Event.
     * 
     * This internal event is dispatched by the Input Manager when it boots.
     */
   val MANAGER_BOOT: js.Any = js.native
+  
   /**
     * The Input Manager Process Event.
     * 
@@ -481,18 +513,21 @@ object Events extends js.Object {
     * and it wants the Input Plugins to update themselves.
     */
   val MANAGER_PROCESS: js.Any = js.native
+  
   /**
     * The Input Manager Update Event.
     * 
     * This internal event is dispatched by the Input Manager as part of its update step.
     */
   val MANAGER_UPDATE: js.Any = js.native
+  
   /**
     * The Input Manager Pointer Lock Change Event.
     * 
     * This event is dispatched by the Input Manager when it is processing a native Pointer Lock Change DOM Event.
     */
   val POINTERLOCK_CHANGE: js.Any = js.native
+  
   /**
     * The Pointer Down Input Event.
     * 
@@ -510,6 +545,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_DOWN: js.Any = js.native
+  
   /**
     * The Pointer Down Outside Input Event.
     * 
@@ -527,6 +563,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_DOWN_OUTSIDE: js.Any = js.native
+  
   /**
     * The Pointer Move Input Event.
     * 
@@ -544,6 +581,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_MOVE: js.Any = js.native
+  
   /**
     * The Pointer Out Input Event.
     * 
@@ -561,6 +599,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_OUT: js.Any = js.native
+  
   /**
     * The Pointer Over Input Event.
     * 
@@ -578,6 +617,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_OVER: js.Any = js.native
+  
   /**
     * The Pointer Up Input Event.
     * 
@@ -595,6 +635,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_UP: js.Any = js.native
+  
   /**
     * The Pointer Up Outside Input Event.
     * 
@@ -612,6 +653,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_UP_OUTSIDE: js.Any = js.native
+  
   /**
     * The Pointer Wheel Input Event.
     * 
@@ -629,6 +671,7 @@ object Events extends js.Object {
     * the propagation of this event.
     */
   val POINTER_WHEEL: js.Any = js.native
+  
   /**
     * The Input Plugin Pre-Update Event.
     * 
@@ -636,12 +679,14 @@ object Events extends js.Object {
     * This hook is designed specifically for input plugins, but can also be listened to from user-land code.
     */
   val PRE_UPDATE: js.Any = js.native
+  
   /**
     * The Input Plugin Shutdown Event.
     * 
     * This internal event is dispatched by the Input Plugin when it shuts down, signalling to all of its systems to shut themselves down.
     */
   val SHUTDOWN: js.Any = js.native
+  
   /**
     * The Input Plugin Start Event.
     * 
@@ -649,6 +694,7 @@ object Events extends js.Object {
     * signalling to all of its internal systems to start.
     */
   val START: js.Any = js.native
+  
   /**
     * The Input Plugin Update Event.
     * 
@@ -657,4 +703,3 @@ object Events extends js.Object {
     */
   val UPDATE: js.Any = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle the case for each character - upper case becomes lower, lower case becomes upper.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ToggleTextCaseCommand ()
   extends typings.devexpressWeb.ToggleTextCaseCommand
-

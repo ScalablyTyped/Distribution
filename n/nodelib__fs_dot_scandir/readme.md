@@ -10,9 +10,9 @@ List files and directories inside the specified directory
 | ------------------ | :-------------: |
 | Full name          | @nodelib/fs.scandir |
 | Keywords           | NodeLib, fs, FileSystem, file system, scandir, readdir, dirent |
-| # releases         | 16 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 27010692 |
+| # downloads        | 144277766 |
 | # stars            | 0 |
 
 ## Links

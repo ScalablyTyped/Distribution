@@ -5,16 +5,27 @@ import typings.rxLite.Rx.IScheduler
 import typings.rxLite.anon.GetDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Rx.internals")
 @js.native
 object internals extends js.Object {
+  
+  def addRef[T](xs: typings.rxLite.Rx.Observable[T], r: GetDisposable): typings.rxLite.Rx.Observable[T] = js.native
+  
+  def isEqual(left: js.Any, right: js.Any): Boolean = js.native
+  
   // Priority Queue for Scheduling
   @js.native
   class PriorityQueue[TTime] protected ()
     extends typings.rxLite.Rx.internals.PriorityQueue[TTime] {
     def this(capacity: Double) = this()
+  }
+  /* static members */
+  @js.native
+  object PriorityQueue extends js.Object {
+    
+    var count: Double = js.native
   }
   
   @js.native
@@ -34,14 +45,4 @@ object internals extends js.Object {
       comparer: js.Function2[/* x */ TTime, /* y */ TTime, Double]
     ) = this()
   }
-  
-  def addRef[T](xs: typings.rxLite.Rx.Observable[T], r: GetDisposable): typings.rxLite.Rx.Observable[T] = js.native
-  def isEqual(left: js.Any, right: js.Any): Boolean = js.native
-  /* static members */
-  @js.native
-  object PriorityQueue extends js.Object {
-    var count: Double = js.native
-  }
-  
 }
-

@@ -5,11 +5,12 @@ import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.bili
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.nearest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/crop_and_resize_gpu", JSImport.Namespace)
 @js.native
 object cropAndResizeGpuMod extends js.Object {
+  
   @js.native
   class CropAndResizeProgram protected () extends GPGPUProgram {
     def this(
@@ -27,6 +28,4 @@ object cropAndResizeGpuMod extends js.Object {
       extrapolationValue: Double
     ) = this()
   }
-  
 }
-

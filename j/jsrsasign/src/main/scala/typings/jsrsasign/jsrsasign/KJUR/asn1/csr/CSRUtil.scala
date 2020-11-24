@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.csr
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Certification Request (CSR/PKCS#10) utilities class
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.csr.CSRUtil")
 @js.native
 object CSRUtil extends js.Object
-

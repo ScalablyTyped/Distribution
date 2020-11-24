@@ -7,11 +7,12 @@ import typings.typescript.mod.Modifier
 import typings.typescript.mod.NamedExportBindings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateExportDeclaration")
 @js.native
 object updateExportDeclaration extends js.Object {
+  
   def apply(
     node: ExportDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -132,6 +133,7 @@ object updateExportDeclaration extends js.Object {
     moduleSpecifier: js.UndefOr[scala.Nothing],
     isTypeOnly: Boolean
   ): ExportDeclaration = js.native
+  /** @deprecated Use `factory.updateExportDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: ExportDeclaration,
     decorators: js.Array[Decorator],
@@ -141,4 +143,3 @@ object updateExportDeclaration extends js.Object {
     isTypeOnly: Boolean
   ): ExportDeclaration = js.native
 }
-

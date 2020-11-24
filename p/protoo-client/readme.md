@@ -10,9 +10,9 @@ protoo JavaScript client module
 | ------------------ | :-------------: |
 | Full name          | protoo-client |
 | Keywords           | nodejs, browser, websocket |
-| # releases         | 9 |
-| # dependents       | 4 |
-| # downloads        | 32999 |
+| # releases         | 8 |
+| # dependents       | 8 |
+| # downloads        | 57213 |
 | # stars            | 0 |
 
 ## Links

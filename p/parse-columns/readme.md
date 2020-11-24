@@ -11,8 +11,8 @@ Parse text columns, like the output of Unix commands
 | Full name          | parse-columns |
 | Keywords           | parse, parser, columns, column, row, text, string, unix, command, output, csv, shell, sh, term, table |
 | # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 3595 |
+| # dependents       | 9 |
+| # downloads        | 2735 |
 | # stars            | 3 |
 
 ## Links

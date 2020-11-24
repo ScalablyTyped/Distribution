@@ -10,9 +10,9 @@ Abstract nodes for ant design icons.
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons-svg |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 163882 |
+| # releases         | 10 |
+| # dependents       | 5 |
+| # downloads        | 4748300 |
 | # stars            | 0 |
 
 ## Links

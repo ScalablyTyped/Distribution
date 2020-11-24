@@ -2,12 +2,13 @@ package typings.egg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IHelper
   extends BaseContextClass
      with PlainObject[js.Any] {
+  
   /**
     * Generate URL path(without host) for route. Takes the route name and a map of named params.
     * @method Helper#pathFor
@@ -24,6 +25,7 @@ trait IHelper
     */
   def pathFor(name: String): String = js.native
   def pathFor(name: String, params: PlainObject[_]): String = js.native
+  
   /**
     * Generate full URL(with host) for route. Takes the route name and a map of named params.
     * @method Helper#urlFor
@@ -40,4 +42,3 @@ trait IHelper
   def urlFor(name: String): String = js.native
   def urlFor(name: String, params: PlainObject[_]): String = js.native
 }
-

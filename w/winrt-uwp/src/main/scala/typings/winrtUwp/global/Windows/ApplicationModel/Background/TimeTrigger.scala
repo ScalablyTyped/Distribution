@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a time event that triggers a background task to run. */
 @JSGlobal("Windows.ApplicationModel.Background.TimeTrigger")
@@ -16,4 +16,3 @@ class TimeTrigger protected ()
     */
   def this(freshnessTime: Double, oneShot: Boolean) = this()
 }
-

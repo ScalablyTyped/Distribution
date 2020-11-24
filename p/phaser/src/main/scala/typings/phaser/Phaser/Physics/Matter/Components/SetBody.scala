@@ -6,13 +6,14 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterSetBodyConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enables a Matter-enabled Game Object to set its Body. Should be used as a mixin and not directly.
   */
 @js.native
 trait SetBody extends js.Object {
+  
   /**
     * Set this Game Object to create and use a new Body based on the configuration object given.
     * 
@@ -25,6 +26,7 @@ trait SetBody extends js.Object {
   def setBody(config: String, options: MatterBodyConfig): GameObject = js.native
   def setBody(config: MatterSetBodyConfig): GameObject = js.native
   def setBody(config: MatterSetBodyConfig, options: MatterBodyConfig): GameObject = js.native
+  
   /**
     * Set the body on a Game Object to a circle.
     * 
@@ -35,6 +37,7 @@ trait SetBody extends js.Object {
     */
   def setCircle(radius: Double): GameObject = js.native
   def setCircle(radius: Double, options: MatterBodyConfig): GameObject = js.native
+  
   /**
     * Set this Game Object to use the given existing Matter Body.
     * 
@@ -44,6 +47,7 @@ trait SetBody extends js.Object {
     */
   def setExistingBody(body: BodyType): GameObject = js.native
   def setExistingBody(body: BodyType, addToWorld: Boolean): GameObject = js.native
+  
   /**
     * Set the body on the Game Object to a polygon shape.
     * 
@@ -55,6 +59,7 @@ trait SetBody extends js.Object {
     */
   def setPolygon(sides: Double, radius: Double): GameObject = js.native
   def setPolygon(sides: Double, radius: Double, options: MatterBodyConfig): GameObject = js.native
+  
   /**
     * Set the body on a Game Object to a rectangle.
     * 
@@ -66,6 +71,7 @@ trait SetBody extends js.Object {
     */
   def setRectangle(width: Double, height: Double): GameObject = js.native
   def setRectangle(width: Double, height: Double, options: MatterBodyConfig): GameObject = js.native
+  
   /**
     * Set the body on the Game Object to a trapezoid shape.
     * 
@@ -79,4 +85,3 @@ trait SetBody extends js.Object {
   def setTrapezoid(width: Double, height: Double, slope: Double): GameObject = js.native
   def setTrapezoid(width: Double, height: Double, slope: Double, options: MatterBodyConfig): GameObject = js.native
 }
-

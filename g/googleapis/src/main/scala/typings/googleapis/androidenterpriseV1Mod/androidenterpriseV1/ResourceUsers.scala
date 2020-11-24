@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Users")
 @js.native
 class ResourceUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.users.delete
     * @desc Deleted an EMM-managed user.
@@ -38,6 +40,7 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceUsersDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * androidenterprise.users.generateAuthenticationToken
     * @desc Generates an authentication token which the device policy client
@@ -74,6 +77,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAuthenticationToken]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.generateToken
     * @desc Generates a token (activation code) to allow this user to configure
@@ -105,6 +109,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserToken]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.get
     * @desc Retrieves a user's details.
@@ -130,6 +135,7 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceUsersGet, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet, options: MethodOptions, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  
   /**
     * androidenterprise.users.getAvailableProductSet
     * @desc Retrieves the set of products a user is entitled to access.
@@ -162,6 +168,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductSet]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.insert
     * @desc Creates a new EMM-managed user.  The Users resource passed in the
@@ -195,6 +202,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUser]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.list
     * @desc Looks up a user by primary email address. This is only supported
@@ -227,6 +235,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUsersListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.patch
     * @desc Updates the details of an EMM-managed user.  Can be used with
@@ -261,6 +270,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUser]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.revokeDeviceAccess
     * @desc Revokes access to all devices currently provisioned to the user.
@@ -292,6 +302,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.revokeToken
     * @desc Revokes a previously generated token (activation code) for the
@@ -322,6 +333,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.setAvailableProductSet
     * @desc Modifies the set of products that a user is entitled to access
@@ -358,6 +370,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductSet]
   ): Unit = js.native
+  
   /**
     * androidenterprise.users.update
     * @desc Updates the details of an EMM-managed user.  Can be used with
@@ -393,4 +406,3 @@ class ResourceUsers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUser]
   ): Unit = js.native
 }
-

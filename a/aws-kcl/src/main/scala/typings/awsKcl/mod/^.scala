@@ -4,11 +4,12 @@ import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-kcl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(recordProcessor: RecordProcessor): KCLManager = js.native
   def apply(
     recordProcessor: RecordProcessor,
@@ -38,4 +39,3 @@ object ^ extends js.Object {
     errorFile: WriteStream
   ): KCLManager = js.native
 }
-

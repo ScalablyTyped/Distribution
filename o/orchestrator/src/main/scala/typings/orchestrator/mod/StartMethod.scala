@@ -2,12 +2,13 @@ package typings.orchestrator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Start running the tasks
   */
 @js.native
 trait StartMethod extends js.Object {
+  
   // TODO: TypeScript 2.1.5 cannot express varargs followed by callback as a last argument...
   def apply(task1: Strings, task2: Strings): Orchestrator = js.native
   def apply(task1: Strings, task2: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], _]): Orchestrator = js.native
@@ -57,4 +58,3 @@ trait StartMethod extends js.Object {
   def apply(tasks: Strings): Orchestrator = js.native
   def apply(tasks: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], _]): Orchestrator = js.native
 }
-

@@ -13,25 +13,29 @@ import typings.pizzip.pizzipStrings.string
 import typings.pizzip.pizzipStrings.uint8array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined pizzip.pizzip.GenerateOptions & {  type :'nodebuffer'} */
 @js.native
 trait GenerateOptionstypenodebu extends js.Object {
+  
   /**
     * @deprecated use `type` instead. If `type` is not used, set to `false` to get the result as a raw byte string, `true` to encode it as base64.
     * @default false
     */
   var base64: js.UndefOr[Boolean] = js.native
+  
   /**
     * The comment to use for the zip file.
     */
   var comment: js.UndefOr[String] = js.native
+  
   /**
     * the default file compression method to use. Available methods are `STORE` and `DEFLATE`. You can also provide your own compression method.
     * @default "STORE"
     */
   var compression: js.UndefOr[Compression] = js.native
+  
   /**
     * the options to use when compressing the file. With `STORE` (no compression), this parameter is ignored.
     * With `DEFLATE`, you can give the compression level with `compressionOptions : {level:6}`
@@ -42,6 +46,7 @@ trait GenerateOptionstypenodebu extends js.Object {
     * The reason is simple : PizZip doesn't know how compressed the content was and how to match the compression level with the implementation we use.
     */
   var compressionOptions: js.UndefOr[Level | Null] = js.native
+  
   /**
     * the function to encode the file name / comment.
     * By default, PizZip uses UTF-8 to encode the file names / comments. You can use this method to force an other encoding.
@@ -49,12 +54,14 @@ trait GenerateOptionstypenodebu extends js.Object {
     * The function takes a string and returns a bytes array (Uint8Array or Array).
     */
   var encodeFileName: js.UndefOr[js.Function1[/* name */ String, Buffer]] = js.native
+  
   /**
     * mime-type for the generated file. Useful when you need to generate a file with a different extension, ie: ".ods".
     *
     * @default "application/zip"
     */
   var mimeType: js.UndefOr[String] = js.native
+  
   /**
     * The platform to use when generating the zip file. When using `DOS`, the attribute `dosPermissions` of each file is used.
     * When using `UNIX`, the attribute `unixPermissions` of each file is used.
@@ -64,6 +71,7 @@ trait GenerateOptionstypenodebu extends js.Object {
     * @default "DOS"
     */
   var platform: js.UndefOr[DOS | UNIX | Platform] = js.native
+  
   /**
     * The type of zip to return. Note : when using type = "uint8array", "arraybuffer" or "blob",
     * be sure to check if the browser supports it (you can use PizZip.support)
@@ -84,8 +92,8 @@ trait GenerateOptionstypenodebu extends js.Object {
     */
   var `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) with nodebuffer = js.native
 }
-
 object GenerateOptionstypenodebu {
+  
   @scala.inline
   def apply(
     `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) with nodebuffer
@@ -94,52 +102,70 @@ object GenerateOptionstypenodebu {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptionstypenodebu]
   }
+  
   @scala.inline
   implicit class GenerateOptionstypenodebuOps[Self <: GenerateOptionstypenodebu] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setType(
       value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) with nodebuffer
     ): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBase64(value: Boolean): Self = this.set("base64", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBase64: Self = this.set("base64", js.undefined)
+    
     @scala.inline
     def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteComment: Self = this.set("comment", js.undefined)
+    
     @scala.inline
     def setCompression(value: Compression): Self = this.set("compression", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompression: Self = this.set("compression", js.undefined)
+    
     @scala.inline
     def setCompressionOptions(value: Level): Self = this.set("compressionOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompressionOptions: Self = this.set("compressionOptions", js.undefined)
+    
     @scala.inline
     def setCompressionOptionsNull: Self = this.set("compressionOptions", null)
+    
     @scala.inline
     def setEncodeFileName(value: /* name */ String => Buffer): Self = this.set("encodeFileName", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteEncodeFileName: Self = this.set("encodeFileName", js.undefined)
+    
     @scala.inline
     def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    
     @scala.inline
     def setPlatform(value: DOS | UNIX | Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePlatform: Self = this.set("platform", js.undefined)
   }
-  
 }
-

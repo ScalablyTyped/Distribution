@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QuickLink extends IQuickLink
-
 object QuickLink {
+  
   @scala.inline
   def apply(
     id: String,
@@ -22,4 +22,3 @@ object QuickLink {
     __obj.asInstanceOf[QuickLink]
   }
 }
-

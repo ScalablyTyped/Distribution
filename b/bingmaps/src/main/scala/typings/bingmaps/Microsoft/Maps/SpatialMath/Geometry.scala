@@ -2,7 +2,7 @@ package typings.bingmaps.Microsoft.Maps.SpatialMath
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //////////////////////////////////////////////
 /// Geometry Calculations
@@ -14,11 +14,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.SpatialMath.Geometry")
 @js.native
 object Geometry extends js.Object {
-  @js.native
-  sealed trait BufferEndCap extends js.Object
   
   @js.native
+  sealed trait BufferEndCap extends js.Object
+  @js.native
   object BufferEndCap extends js.Object {
+    
     /** Adds a flat end to a buffered line that touches the end of the line. */
     @js.native
     sealed trait Flat extends BufferEndCap
@@ -30,8 +31,5 @@ object Geometry extends js.Object {
     /** Adds a square end to a buffered line that has a buffer area at the end of the line. */
     @js.native
     sealed trait Square extends BufferEndCap
-    
   }
-  
 }
-

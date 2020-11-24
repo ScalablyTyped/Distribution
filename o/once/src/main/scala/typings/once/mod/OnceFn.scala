@@ -2,10 +2,11 @@ package typings.once.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OnceFn extends js.Object {
+  
   def apply[R](f: js.Function0[R]): js.Function0[R] with FnProps[R] = js.native
   def apply[R](f: js.Function1[/* repeated */ js.Any, R]): (js.Function1[/* repeated */ js.Any, R]) with FnProps[R] = js.native
   def apply[T1, T2, R](f: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): (js.Function2[/* t1 */ T1, /* t2 */ T2, R]) with FnProps[R] = js.native
@@ -92,4 +93,3 @@ trait OnceFn extends js.Object {
     R
   ]) with FnProps[R] = js.native
 }
-

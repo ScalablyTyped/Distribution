@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExpMatchArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an array of matched values if any.
@@ -17,6 +17,7 @@ trait MatchArray
   * feature is not installed.
   */
 /* propName */ StringDictionary[js.Any] {
+  
   /**
     * This is only present if the the `namespacing` feature is installed
     * using the `XRegExp.install` method.
@@ -24,4 +25,3 @@ trait MatchArray
   @JSName("groups")
   var groups_MatchArray: js.UndefOr[NamedGroupsArray] = js.native
 }
-

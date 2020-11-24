@@ -11,13 +11,14 @@ The lodash method `_.xor` exported as a module.
 | Full name          | lodash.xor |
 | Keywords           | lodash-modularized, xor |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 184068 |
+| # dependents       | 23 |
+| # downloads        | 418201 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.xor)
     
 

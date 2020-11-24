@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.document.XEventsSupplier
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the unified interface of {@link theGlobalEventBroadcaster} singleton.
@@ -26,8 +26,8 @@ trait XGlobalEventBroadcaster
      with XDocumentEventBroadcaster
      with XEventBroadcaster
      with XDocumentEventListener
-
 object XGlobalEventBroadcaster {
+  
   @scala.inline
   def apply(
     ElementType: `type`,
@@ -54,4 +54,3 @@ object XGlobalEventBroadcaster {
     __obj.asInstanceOf[XGlobalEventBroadcaster]
   }
 }
-

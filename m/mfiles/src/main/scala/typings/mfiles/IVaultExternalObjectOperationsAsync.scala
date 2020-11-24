@@ -3,10 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFACLEnforcingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultExternalObjectOperationsAsync extends js.Object {
+  
   def PromoteObject(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
@@ -73,4 +74,3 @@ trait IVaultExternalObjectOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

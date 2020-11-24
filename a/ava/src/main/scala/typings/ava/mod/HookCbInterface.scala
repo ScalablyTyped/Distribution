@@ -2,12 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HookCbInterface[Context] extends js.Object {
-  @JSName("skip")
-  var skip_Original: HookCbSkipInterface[Context] = js.native
+  
   /** Declare a hook that must call `t.end()` when it's done. */
   def apply(implementation: CbImplementation[Context]): Unit = js.native
   /** Declare a hook that must call `t.end()` when it's done. */
@@ -28,6 +27,7 @@ trait HookCbInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  
   /** Skip this hook. */
   def skip(implementation: CbImplementation[Context]): Unit = js.native
   /** Skip this hook. */
@@ -43,5 +43,6 @@ trait HookCbInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("skip")
+  var skip_Original: HookCbSkipInterface[Context] = js.native
 }
-

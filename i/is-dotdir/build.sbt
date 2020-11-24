@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-dotdir"
-version := "1.0-dt-20181225Z-6ea42d"
+version := "1.0-dt-20181225Z-f933b0"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InternalTextureSource extends js.Object
-
 @JSGlobal("BABYLON.InternalTextureSource")
 @js.native
 object InternalTextureSource extends js.Object {
+  
   /**
     * Texture data comes from a cube data file
     */
@@ -93,6 +93,4 @@ object InternalTextureSource extends js.Object {
     */
   @js.native
   sealed trait Url extends InternalTextureSource
-  
 }
-

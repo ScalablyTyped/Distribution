@@ -9,15 +9,15 @@ Animate elements as they scroll into view
 | ------------------ | :-------------: |
 | Full name          | scrollreveal |
 | Keywords           | scroll, animation, reveal, css, transform, transition |
-| # releases         | 15 |
-| # dependents       | 10 |
-| # downloads        | 575650 |
+| # releases         | 8 |
+| # dependents       | 15 |
+| # downloads        | 542227 |
 | # stars            | 10 |
 
 ## Links
 - [Homepage](https://scrollrevealjs.org)
-- [Bugs](https://github.com/scrollreveal/scrollreveal/issues)
-- [Repository](https://github.com/scrollreveal/scrollreveal)
+- [Bugs](https://github.com/jlmakes/scrollreveal/issues)
+- [Repository](https://github.com/jlmakes/scrollreveal)
 - [Npm](https://www.npmjs.com/package/scrollreveal)
     
 

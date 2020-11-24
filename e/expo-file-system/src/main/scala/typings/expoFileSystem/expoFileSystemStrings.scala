@@ -3,9 +3,28 @@ package typings.expoFileSystem
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemAcceptedUploadHttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoFileSystemStrings {
+  
+  @scala.inline
+  def ExponentFileSystem: ExponentFileSystem = "ExponentFileSystem".asInstanceOf[ExponentFileSystem]
+  
+  @scala.inline
+  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
   @js.native
   sealed trait ExponentFileSystem extends js.Object
   
@@ -23,18 +42,4 @@ object expoFileSystemStrings {
   
   @js.native
   sealed trait utf8 extends js.Object
-  
-  @scala.inline
-  def ExponentFileSystem: ExponentFileSystem = "ExponentFileSystem".asInstanceOf[ExponentFileSystem]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

@@ -2,11 +2,12 @@ package typings.rax.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rax", "createElement")
 @js.native
 object createElement extends js.Object {
+  
   def apply[P /* <: js.Object */](`type`: String, props: Attributes with P, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: js.Object */](`type`: String, props: Null, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
@@ -32,23 +33,22 @@ object createElement extends js.Object {
   def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: RaxNode*): DOMElement[P, T] = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ js.Any,
     props: ClassAttributes[T] with P,
     children: RaxNode*
-  ): RaxSVGElement = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+  ): DetailedRaxHTMLElement[P, T] = js.native
+  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ js.Any,
     props: js.UndefOr[scala.Nothing],
     children: RaxNode*
-  ): RaxSVGElement = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+  ): DetailedRaxHTMLElement[P, T] = js.native
+  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ js.Any,
     props: Null,
     children: RaxNode*
-  ): RaxSVGElement = js.native
+  ): DetailedRaxHTMLElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: RaxNode*): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: js.UndefOr[scala.Nothing], children: RaxNode*): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: RaxNode*): CElement[P, T] = js.native
 }
-

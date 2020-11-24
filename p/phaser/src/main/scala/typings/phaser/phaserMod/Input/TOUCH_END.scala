@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A touch pointer has been started.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("phaser", "Input.TOUCH_END")
 @js.native
 object TOUCH_END extends TopLevel[integer]
-

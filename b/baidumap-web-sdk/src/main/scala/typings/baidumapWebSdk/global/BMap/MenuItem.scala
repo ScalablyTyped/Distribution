@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.MenuItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.MenuItem")
 @js.native
@@ -16,4 +16,3 @@ class MenuItem protected ()
     opts: MenuItemOptions
   ) = this()
 }
-

@@ -2,10 +2,11 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaProductsGenerateApprovalUrlResponse extends js.Object {
+  
   /**
     * A URL that can be rendered in an iframe to display the permissions (if
     * any) of a product. This URL can be used to approve the product only once
@@ -18,29 +19,33 @@ trait SchemaProductsGenerateApprovalUrlResponse extends js.Object {
     */
   var url: js.UndefOr[String] = js.native
 }
-
 object SchemaProductsGenerateApprovalUrlResponse {
+  
   @scala.inline
   def apply(): SchemaProductsGenerateApprovalUrlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductsGenerateApprovalUrlResponse]
   }
+  
   @scala.inline
   implicit class SchemaProductsGenerateApprovalUrlResponseOps[Self <: SchemaProductsGenerateApprovalUrlResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUrl: Self = this.set("url", js.undefined)
   }
-  
 }
-

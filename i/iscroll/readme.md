@@ -10,9 +10,9 @@ Smooth scrolling for the web
 | ------------------ | :-------------: |
 | Full name          | iscroll |
 | Keywords           | scrolling, carousel, zoom, iphone, android, mobile, desktop |
-| # releases         | 1 |
-| # dependents       | 115 |
-| # downloads        | 595772 |
+| # releases         | 0 |
+| # dependents       | 123 |
+| # downloads        | 582421 |
 | # stars            | 19 |
 
 ## Links

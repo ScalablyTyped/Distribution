@@ -5,13 +5,31 @@ import typings.tracking.anon.Audio
 import typings.tracking.tracking.ColorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object tracking extends js.Object {
+    
+    def track(element: String, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = js.native
+    def track(element: String, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = js.native
+    /**
+      * Tracks a canvas, image or video element based on the specified `tracker`
+      * instance. This method extract the pixel information of the input element
+      * to pass to the `tracker` instance. When tracking a video, the
+      * `tracker.track(pixels, width, height)` will be in a
+      * `requestAnimationFrame` loop in order to track all video frames.
+      * @param element HTMLElement or CSS3 selector string for the element to track.
+      *                Element must be convas, image, or video.
+      * @param tracker Tracker instance used to track the element.
+      * @param options Optional tracker configuration.
+      */
+    def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = js.native
+    def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = js.native
+    
     /**
       * ColorTracker utility to track colored blobs in a frame using color
       * difference evaluation.
@@ -25,6 +43,25 @@ object global extends js.Object {
       extends typings.tracking.tracking.ColorTracker {
       def this(colors: String) = this()
       def this(colors: js.Array[String]) = this()
+    }
+    /* static members */
+    @js.native
+    object ColorTracker extends js.Object {
+      
+      /**
+        * Gets the known color function that is able to test whether an (r,g,b) is
+        * the desired color.
+        * @param name The color name.
+        */
+      def getColor(name: String): ColorFunction = js.native
+      
+      /**
+        * Registers a color as known color.
+        * @param name The color name.
+        * @param predicate The color function to test if the passed (r,g,b) is
+        *        the desired color.
+        */
+      def registerColor(name: String, predicate: ColorFunction): Unit = js.native
     }
     
     /**
@@ -69,41 +106,5 @@ object global extends js.Object {
         */
       def this(tracker: typings.tracking.tracking.Tracker) = this()
     }
-    
-    def track(element: String, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = js.native
-    def track(element: String, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = js.native
-    /**
-      * Tracks a canvas, image or video element based on the specified `tracker`
-      * instance. This method extract the pixel information of the input element
-      * to pass to the `tracker` instance. When tracking a video, the
-      * `tracker.track(pixels, width, height)` will be in a
-      * `requestAnimationFrame` loop in order to track all video frames.
-      * @param element HTMLElement or CSS3 selector string for the element to track.
-      *                Element must be convas, image, or video.
-      * @param tracker Tracker instance used to track the element.
-      * @param options Optional tracker configuration.
-      */
-    def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = js.native
-    def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = js.native
-    /* static members */
-    @js.native
-    object ColorTracker extends js.Object {
-      /**
-        * Gets the known color function that is able to test whether an (r,g,b) is
-        * the desired color.
-        * @param name The color name.
-        */
-      def getColor(name: String): ColorFunction = js.native
-      /**
-        * Registers a color as known color.
-        * @param name The color name.
-        * @param predicate The color function to test if the passed (r,g,b) is
-        *        the desired color.
-        */
-      def registerColor(name: String, predicate: ColorFunction): Unit = js.native
-    }
-    
   }
-  
 }
-

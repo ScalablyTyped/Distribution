@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input handler for accessing GamePad input.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class GamePads ()
   extends typings.playcanvas.pc.GamePads
-

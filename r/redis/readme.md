@@ -4,21 +4,21 @@
 Typings are for version 2.8
 
 ## Library description:
-Redis client library
+A high performance Redis client.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | redis |
 | Keywords           | database, redis, transaction, pipelining, performance, queue, nodejs, pubsub, backpressure |
-| # releases         | 1 |
-| # dependents       | 4447 |
-| # downloads        | 58676851 |
-| # stars            | 448 |
+| # releases         | 4 |
+| # dependents       | 4781 |
+| # downloads        | 73392256 |
+| # stars            | 447 |
 
 ## Links
-- [Homepage](https://github.com/NodeRedis/node_redis)
-- [Bugs](https://github.com/NodeRedis/node_redis/issues)
-- [Repository](https://github.com/NodeRedis/node_redis)
+- [Homepage](https://github.com/NodeRedis/node-redis)
+- [Bugs](https://github.com/NodeRedis/node-redis/issues)
+- [Repository](https://github.com/NodeRedis/node-redis)
 - [Npm](https://www.npmjs.com/package/redis)
     
 

@@ -3,7 +3,7 @@ package typings.vitalsigns.mod
 import typings.vitalsigns.mod.vitalsigns.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VitalSigns instance.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends VitalSigns_ {
   def this(options: Options) = this()
 }
-

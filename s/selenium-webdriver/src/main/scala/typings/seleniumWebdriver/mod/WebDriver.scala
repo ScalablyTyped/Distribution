@@ -7,7 +7,7 @@ import typings.seleniumWebdriver.commandMod.Command
 import typings.seleniumWebdriver.httpMod.Executor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
@@ -21,6 +21,7 @@ class WebDriver protected () extends js.Object {
     *     commands to the browser.
     */
   def this(session: Session, executor: Executor) = this()
+  
   /**
     * Creates a new action sequence using this driver. The sequence will not be
     * scheduled for execution until {@link actions.ActionSequence#perform} is
@@ -38,12 +39,14 @@ class WebDriver protected () extends js.Object {
   def actions(options: Async): typings.seleniumWebdriver.inputMod.Actions = js.native
   def actions(options: AsyncBoolean): typings.seleniumWebdriver.inputMod.Actions = js.native
   def actions(options: Bridge): typings.seleniumWebdriver.inputMod.Actions = js.native
+  
   /**
     * Schedules a command to close the current window.
     * @return {!Promise.<void>} A promise that will be resolved
     *     when this command has completed.
     */
   def close(): js.Promise[Unit] = js.native
+  
   // endregion
   // region Methods
   /**
@@ -58,6 +61,7 @@ class WebDriver protected () extends js.Object {
     */
   def execute[T](command: Command): js.Promise[T] = js.native
   def execute[T](command: Command, description: String): js.Promise[T] = js.native
+  
   /**
     * Schedules a command to execute asynchronous JavaScript in the context of
     * the currently selected frame or window. The script fragment will be
@@ -136,6 +140,7 @@ class WebDriver protected () extends js.Object {
     */
   def executeAsyncScript[T](script: String, var_args: js.Any*): js.Promise[T] = js.native
   def executeAsyncScript[T](script: js.Function, var_args: js.Any*): js.Promise[T] = js.native
+  
   /**
     * Schedules a command to execute JavaScript in the context of the currently
     * selected frame or window. The script fragment will be executed as the body
@@ -175,6 +180,7 @@ class WebDriver protected () extends js.Object {
     */
   def executeScript[T](script: String, var_args: js.Any*): js.Promise[T] = js.native
   def executeScript[T](script: js.Function, var_args: js.Any*): js.Promise[T] = js.native
+  
   /**
     * Schedule a command to find an element on the page. If the element cannot be
     * found, a {@link bot.ErrorCode.NO_SUCH_ELEMENT} result will be returned
@@ -212,6 +218,7 @@ class WebDriver protected () extends js.Object {
     *     element will be invalidated and all scheduled commands aborted.
     */
   def findElement(locator: Locator): WebElementPromise = js.native
+  
   /**
     * Schedule a command to search for multiple elements on the page.
     *
@@ -220,6 +227,7 @@ class WebDriver protected () extends js.Object {
     *     promise that will resolve to an array of WebElements.
     */
   def findElements(locator: Locator): js.Promise[js.Array[WebElement]] = js.native
+  
   /**
     * Schedules a command to navigate to the given URL.
     * @param {string} url The fully qualified URL to open.
@@ -227,6 +235,7 @@ class WebDriver protected () extends js.Object {
     *     when the document has finished loading.
     */
   def get(url: String): js.Promise[Unit] = js.native
+  
   /**
     * Schedules a command to retrieve the current list of available window
     * handles.
@@ -234,18 +243,22 @@ class WebDriver protected () extends js.Object {
     *     be resolved with an array of window handles.
     */
   def getAllWindowHandles(): js.Promise[js.Array[String]] = js.native
+  
   /**
     * @return {!Promise.<!Capabilities>} A promise
     *     that will resolve with the this instance's capabilities.
     */
   def getCapabilities(): js.Promise[typings.seleniumWebdriver.capabilitiesMod.Capabilities] = js.native
+  
   /**
     * Schedules a command to retrieve the URL of the current page.
     * @return {!Promise.<string>} A promise that will be
     *     resolved with the current URL.
     */
   def getCurrentUrl(): js.Promise[String] = js.native
+  
   def getExecutor(): typings.seleniumWebdriver.commandMod.Executor = js.native
+  
   /**
     * Schedules a command to retrieve the current page's source. The page source
     * returned is a representation of the underlying DOM: do not expect it to be
@@ -255,33 +268,39 @@ class WebDriver protected () extends js.Object {
     *     resolved with the current page source.
     */
   def getPageSource(): js.Promise[String] = js.native
+  
   /**
     * @return {!Promise.<!Session>} A promise for this
     *     client's session.
     */
   def getSession(): js.Promise[Session] = js.native
+  
   /**
     * Schedules a command to retrieve the current page's title.
     * @return {!Promise.<string>} A promise that will be
     *     resolved with the current page's title.
     */
   def getTitle(): js.Promise[String] = js.native
+  
   /**
     * Schedules a command to retrieve they current window handle.
     * @return {!Promise.<string>} A promise that will be
     *     resolved with the current window handle.
     */
   def getWindowHandle(): js.Promise[String] = js.native
+  
   /**
     * @return {!Options} The options interface for this
     *     instance.
     */
   def manage(): Options = js.native
+  
   /**
     * @return {!Navigation} The navigation interface for this
     *     instance.
     */
   def navigate(): Navigation = js.native
+  
   /**
     * Schedules a command to quit the current session. After calling quit, this
     * instance will be invalidated and may no longer be used to issue commands
@@ -290,12 +309,14 @@ class WebDriver protected () extends js.Object {
     *     when the command has completed.
     */
   def quit(): js.Promise[Unit] = js.native
+  
   /**
     * Sets the {@linkplain input.FileDetector file detector} that should be
     * used with this instance.
     * @param {input.FileDetector} detector The detector to use or {@code null}.
     */
   def setFileDetector(detector: FileDetector): Unit = js.native
+  
   /**
     * Schedules a command to make the driver sleep for the given amount of time.
     * @param {number} ms The amount of time, in milliseconds, to sleep.
@@ -303,11 +324,13 @@ class WebDriver protected () extends js.Object {
     *     when the sleep has finished.
     */
   def sleep(ms: Double): js.Promise[Unit] = js.native
+  
   /**
     * @return {!TargetLocator} The target locator interface for
     *     this instance.
     */
   def switchTo(): TargetLocator = js.native
+  
   /**
     * Schedule a command to take a screenshot. The driver makes a best effort to
     * return a screenshot of the following, in order of preference:
@@ -321,6 +344,7 @@ class WebDriver protected () extends js.Object {
     *     resolved to the screenshot as a base-64 encoded PNG.
     */
   def takeScreenshot(): js.Promise[String] = js.native
+  
   /**
     * Schedules a command to wait for a condition to hold. The condition may be
     * specified by a {@link Condition}, as a custom function, or
@@ -448,11 +472,11 @@ class WebDriver protected () extends js.Object {
   def wait[T](condition: Condition[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
 }
-
 /* static members */
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
 object WebDriver extends js.Object {
+  
   // endregion
   // region StaticMethods
   /**
@@ -516,4 +540,3 @@ object WebDriver extends js.Object {
   // incompatible signatures.
   def createSession(var_args: js.Any*): WebDriver = js.native
 }
-

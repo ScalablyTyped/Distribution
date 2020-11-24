@@ -10,9 +10,9 @@ Google Sheets API (v4) -- simple interface to read/write data and manage sheets
 | ------------------ | :-------------: |
 | Full name          | google-spreadsheet |
 | Keywords           | google spreadsheets, google sheets, google docs, google, spreadsheet, spreadsheets, sheets, gdata, api, googleapis |
-| # releases         | 16 |
-| # dependents       | 144 |
-| # downloads        | 1514263 |
+| # releases         | 19 |
+| # dependents       | 151 |
+| # downloads        | 1651340 |
 | # stars            | 46 |
 
 ## Links

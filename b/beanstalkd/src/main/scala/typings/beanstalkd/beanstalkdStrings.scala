@@ -3,9 +3,55 @@ package typings.beanstalkd
 import typings.beanstalkd.mod.BeanstalkdJobState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beanstalkdStrings {
+  
+  @scala.inline
+  def buried: buried = "buried".asInstanceOf[buried]
+  
+  @scala.inline
+  def call: call = "call".asInstanceOf[call]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def delayed: delayed = "delayed".asInstanceOf[delayed]
+  
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def reserved: reserved = "reserved".asInstanceOf[reserved]
+  
+  @scala.inline
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @scala.inline
+  def unref: unref = "unref".asInstanceOf[unref]
+  
   @js.native
   sealed trait buried extends BeanstalkdJobState
   
@@ -50,36 +96,4 @@ object beanstalkdStrings {
   
   @js.native
   sealed trait unref extends js.Object
-  
-  @scala.inline
-  def buried: buried = "buried".asInstanceOf[buried]
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def delayed: delayed = "delayed".asInstanceOf[delayed]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def reserved: reserved = "reserved".asInstanceOf[reserved]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def unref: unref = "unref".asInstanceOf[unref]
 }
-

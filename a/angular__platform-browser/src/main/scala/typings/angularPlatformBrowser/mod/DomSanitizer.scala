@@ -4,11 +4,12 @@ import typings.angularCore.mod.Sanitizer
 import typings.angularCore.mod.SecurityContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "DomSanitizer")
 @js.native
 abstract class DomSanitizer () extends Sanitizer {
+  
   /**
     * Bypass security and trust the given value to be safe HTML. Only use this when the bound HTML
     * is unsafe (e.g. contains `<script>` tags) and the code should be executed. The sanitizer will
@@ -18,6 +19,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustHtml(value: String): SafeHtml = js.native
+  
   /**
     * Bypass security and trust the given value to be a safe resource URL, i.e. a location that may
     * be used to load executable code from, like `<script src>`, or `<iframe src>`.
@@ -26,6 +28,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustResourceUrl(value: String): SafeResourceUrl = js.native
+  
   /**
     * Bypass security and trust the given value to be safe JavaScript.
     *
@@ -33,6 +36,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustScript(value: String): SafeScript = js.native
+  
   /**
     * Bypass security and trust the given value to be safe style value (CSS).
     *
@@ -40,6 +44,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustStyle(value: String): SafeStyle = js.native
+  
   /**
     * Bypass security and trust the given value to be a safe style URL, i.e. a value that can be used
     * in hyperlinks or `<img src>`.
@@ -48,6 +53,6 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustUrl(value: String): SafeUrl = js.native
+  
   def sanitize(context: SecurityContext, value: SafeValue): String | Null = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.meteor.global.Meteor
 import typings.meteor.globalError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Meteor.loginWithToken")
 @js.native
 object loginWithToken extends js.Object {
+  
   def apply(token: String): Unit = js.native
   def apply(
     token: String,
@@ -17,4 +18,3 @@ object loginWithToken extends js.Object {
     ]
   ): Unit = js.native
 }
-

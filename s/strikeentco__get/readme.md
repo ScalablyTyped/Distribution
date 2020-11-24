@@ -10,9 +10,9 @@ Get a property from a nested object using a dot path or custom separator
 | ------------------ | :-------------: |
 | Full name          | @strikeentco/get |
 | Keywords           | obj, object, prop, property, dot, path, get, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 23656 |
+| # releases         | 0 |
+| # dependents       | 4 |
+| # downloads        | 46780 |
 | # stars            | 0 |
 
 ## Links

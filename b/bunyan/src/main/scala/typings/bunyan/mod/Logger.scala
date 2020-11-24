@@ -4,16 +4,18 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Logger extends EventEmitter {
-  var fields: js.Any = js.native
-  var src: Boolean = js.native
+  
   def addSerializers(serializers: Serializers): Unit = js.native
+  
   def addStream(stream: Stream): Unit = js.native
+  
   def child(options: js.Object): Logger = js.native
   def child(options: js.Object, simple: Boolean): Logger = js.native
+  
   /**
     * Returns a boolean: is the `debug` level enabled?
     *
@@ -39,6 +41,7 @@ trait Logger extends EventEmitter {
     * field name for the Error instance.
     */
   def debug(obj: js.Object, params: js.Any*): Unit = js.native
+  
   /**
     * Returns a boolean: is the `error` level enabled?
     *
@@ -64,6 +67,7 @@ trait Logger extends EventEmitter {
     * field name for the Error instance.
     */
   def error(obj: js.Object, params: js.Any*): Unit = js.native
+  
   /**
     * Returns a boolean: is the `fatal` level enabled?
     *
@@ -89,6 +93,9 @@ trait Logger extends EventEmitter {
     * field name for the Error instance.
     */
   def fatal(obj: js.Object, params: js.Any*): Unit = js.native
+  
+  var fields: js.Any = js.native
+  
   /**
     * Returns a boolean: is the `info` level enabled?
     *
@@ -114,14 +121,20 @@ trait Logger extends EventEmitter {
     * field name for the Error instance.
     */
   def info(obj: js.Object, params: js.Any*): Unit = js.native
+  
   def level(): Double = js.native
   def level(value: LogLevel): Unit = js.native
+  
   def levels(): js.Array[Double] = js.native
   def levels(name: String): Double = js.native
   def levels(name: String, value: LogLevel): Unit = js.native
   def levels(name: Double): Double = js.native
   def levels(name: Double, value: LogLevel): Unit = js.native
+  
   def reopenFileStreams(): Unit = js.native
+  
+  var src: Boolean = js.native
+  
   /**
     * Returns a boolean: is the `trace` level enabled?
     *
@@ -147,6 +160,7 @@ trait Logger extends EventEmitter {
     * field name for the Error instance.
     */
   def trace(obj: js.Object, params: js.Any*): Unit = js.native
+  
   /**
     * Returns a boolean: is the `warn` level enabled?
     *
@@ -173,4 +187,3 @@ trait Logger extends EventEmitter {
     */
   def warn(obj: js.Object, params: js.Any*): Unit = js.native
 }
-

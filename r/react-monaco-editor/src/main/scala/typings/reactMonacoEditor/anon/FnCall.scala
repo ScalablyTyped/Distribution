@@ -6,10 +6,11 @@ import typings.monacoEditor.mod.editor.IStandaloneEditorConstructionOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(domElement: HTMLElement): IStandaloneCodeEditor = js.native
   def apply(domElement: HTMLElement, options: js.UndefOr[scala.Nothing], `override`: IEditorOverrideServices): IStandaloneCodeEditor = js.native
   def apply(domElement: HTMLElement, options: IStandaloneEditorConstructionOptions): IStandaloneCodeEditor = js.native
@@ -19,4 +20,3 @@ trait FnCall extends js.Object {
     `override`: IEditorOverrideServices
   ): IStandaloneCodeEditor = js.native
 }
-

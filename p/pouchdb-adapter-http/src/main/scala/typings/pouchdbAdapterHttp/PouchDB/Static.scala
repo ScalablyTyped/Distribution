@@ -5,7 +5,7 @@ import typings.pouchdbAdapterHttp.PouchDB.HttpAdapter.HttpAdapterConfiguration
 import typings.pouchdbCore.PouchDB.Database
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static
@@ -14,4 +14,3 @@ trait Static
       /* options */ HttpAdapterConfiguration, 
       Database[js.Object]
     ]
-

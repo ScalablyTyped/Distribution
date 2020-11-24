@@ -4,11 +4,12 @@ import typings.jest.jestStrings.get
 import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest", "jest.spyOn")
 @js.native
 object spyOn_get extends js.Object {
+  
   /**
     * Creates a mock function similar to jest.fn but also tracks calls to `object[methodName]`
     *
@@ -35,4 +36,3 @@ object spyOn_get extends js.Object {
     js.Array[js.Any]
   ] = js.native
 }
-

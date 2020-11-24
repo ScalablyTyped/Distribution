@@ -2,14 +2,14 @@ package typings.officeJs.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCodes extends js.Object
-
 @JSGlobal("Word.ErrorCodes")
 @js.native
 object ErrorCodes extends js.Object {
+  
   @js.native
   sealed trait accessDenied extends ErrorCodes
   
@@ -30,6 +30,4 @@ object ErrorCodes extends js.Object {
   
   @js.native
   sealed trait searchStringInvalidOrTooLong extends ErrorCodes
-  
 }
-

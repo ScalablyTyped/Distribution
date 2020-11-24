@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.devicelight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("addEventListener")
 @js.native
 object addEventListener_devicelight extends js.Object {
+  
   def apply(
     `type`: devicelight,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceLightEvent, _]
@@ -25,4 +26,3 @@ object addEventListener_devicelight extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
 }
-

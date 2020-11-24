@@ -5,11 +5,27 @@ import typings.hyperlorisTyson.typeTokenMod.ClassType
 import typings.hyperlorisTyson.typeTokenMod.TypeToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@hyperloris/tyson", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def JsonProperty(): js.Any = js.native
+  def JsonProperty(options: String): js.Any = js.native
+  def JsonProperty(options: JsonPropertyOptions): js.Any = js.native
+  
+  @js.native
+  object Access extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.hyperlorisTyson.jsonPropertyMod.Access with String] = js.native
+    
+    /* "FROMJSON_ONLY" */ val FROMJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.FROMJSON_ONLY with String = js.native
+    
+    /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY with String = js.native
+  }
+  
   @js.native
   abstract class TypeAdapter[T] ()
     extends typings.hyperlorisTyson.typeAdapterMod.TypeAdapter[T]
@@ -23,10 +39,13 @@ object mod extends js.Object {
     */
   class Tyson () extends js.Object {
     def this(builder: typings.hyperlorisTyson.tysonBuilderMod.TysonBuilder) = this()
+    
     var _factories: js.Any = js.native
+    
     var _serializeNulls: js.Any = js.native
+    
     var _typeTokenCache: js.Any = js.native
-    val serializeNulls: Boolean = js.native
+    
     /**
       * This method deserializes the specified JSON into an object|array of the specified type.
       *
@@ -39,6 +58,7 @@ object mod extends js.Object {
     def fromJson[T](json: js.Array[_], `type`: js.Array[_]): js.Array[_] = js.native
     def fromJson[T](json: js.Array[_], `type`: ClassType[T]): js.Array[T] = js.native
     def fromJson[T](json: js.Object, `type`: ClassType[T]): T = js.native
+    
     /**
       * Returns the type adapter for the specified typeToken.
       * This method uses a cache to avoid re-creating a new adapter
@@ -51,6 +71,9 @@ object mod extends js.Object {
       * @memberof Tyson
       */
     def getAdapter[T](typeToken: TypeToken[T]): typings.hyperlorisTyson.typeAdapterMod.TypeAdapter[T] = js.native
+    
+    val serializeNulls: Boolean = js.native
+    
     def toJson(src: js.Array[_], `type`: js.Array[_]): js.Array[_] = js.native
     /**
       * This method serializes the specified object, into its equivalent JSON representation.
@@ -68,17 +91,4 @@ object mod extends js.Object {
   @js.native
   class TysonBuilder ()
     extends typings.hyperlorisTyson.tysonBuilderMod.TysonBuilder
-  
-  def JsonProperty(): js.Any = js.native
-  def JsonProperty(options: String): js.Any = js.native
-  def JsonProperty(options: JsonPropertyOptions): js.Any = js.native
-  @js.native
-  object Access extends js.Object {
-    /* "FROMJSON_ONLY" */ val FROMJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.FROMJSON_ONLY with String = js.native
-    /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.hyperlorisTyson.jsonPropertyMod.Access with String] = js.native
-  }
-  
 }
-

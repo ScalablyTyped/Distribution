@@ -9,14 +9,16 @@ import typings.chosenJs.chosenJsStrings.destroy
 import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def chosen(): JQuery = js.native
   def chosen(options: Options): JQuery = js.native
   @JSName("chosen")
   def chosen_destroy(options: destroy): JQuery = js.native
+  
   /**
     * * `chosen:ready` Triggered after Chosen has been fully instantiated.
     * * `chosen:maxselected` Triggered if max_selected_options is set and that total is broken.
@@ -33,6 +35,7 @@ trait JQuery extends js.Object {
     events: change,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* args */ SelectedData, _]
   ): JQuery = js.native
+  
   /**
     * * `chosen:updated` This event should be triggered whenever Chosen’s underlying select element changes (such as a change in selected options).
     * * `chosen:activate` This is the equivalant of focusing a standard HTML select field. When activated, Chosen will capure keypress events as if you had clicked the field directly.
@@ -41,4 +44,3 @@ trait JQuery extends js.Object {
     */
   def trigger(eventType: TriggerEvent): JQuery = js.native
 }
-

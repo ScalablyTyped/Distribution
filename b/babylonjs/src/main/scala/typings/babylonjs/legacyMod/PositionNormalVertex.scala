@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PositionNormalVertex")
 @js.native
@@ -17,9 +17,14 @@ class PositionNormalVertex ()
   position: typings.babylonjs.mathVectorMod.Vector3) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
+  position: js.UndefOr[scala.Nothing],
+    /** the normal of the vertex (defaut: 0,1,0) */
+  normal: typings.babylonjs.mathVectorMod.Vector3
+  ) = this()
+  def this(
+    /** the position of the vertex (defaut: 0,0,0) */
   position: typings.babylonjs.mathVectorMod.Vector3,
     /** the normal of the vertex (defaut: 0,1,0) */
   normal: typings.babylonjs.mathVectorMod.Vector3
   ) = this()
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HatchStyle extends js.Object
-
 @JSGlobal("ej.HatchStyle")
 @js.native
 object HatchStyle extends js.Object {
+  
   //Set background as BackwardDiagonal to Captcha
   @js.native
   sealed trait BackwardDiagonal extends HatchStyle
@@ -157,6 +157,4 @@ object HatchStyle extends js.Object {
   //Set background as ZigZag to Captcha
   @js.native
   sealed trait ZigZag extends HatchStyle
-  
 }
-

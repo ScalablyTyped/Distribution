@@ -11,7 +11,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/core/v1/persistentVolume", "PersistentVolume")
 @js.native
@@ -27,32 +27,37 @@ class PersistentVolume protected () extends CustomResource {
   def this(name: String, args: PersistentVolumeArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PersistentVolumeArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[v1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolume] = js.native
+  
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * Spec defines a specification of a persistent volume owned by the cluster. Provisioned by an administrator. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
     */
   val spec: Output_[PersistentVolumeSpec] = js.native
+  
   /**
     * Status represents the current information/status for the persistent volume. Populated by the system. Read-only. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
     */
   val status: Output_[PersistentVolumeStatus] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/core/v1/persistentVolume", "PersistentVolume")
 @js.native
 object PersistentVolume extends js.Object {
+  
   /**
     * Get an existing PersistentVolume resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -63,10 +68,10 @@ object PersistentVolume extends js.Object {
     */
   def get(name: String, id: Input[ID]): PersistentVolume = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): PersistentVolume = js.native
+  
   /**
     * Returns true if the given object is an instance of PersistentVolume.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolume.PersistentVolume */ Boolean = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.std.ArrayLike
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Matrix")
 @js.native
@@ -16,13 +16,11 @@ import scala.scalajs.js.annotation._
   */
 class Matrix ()
   extends typings.babylonjs.mathVectorMod.Matrix
-
 /* static members */
 @JSImport("babylonjs/Maths/math", "Matrix")
 @js.native
 object Matrix extends js.Object {
-  var _identityReadOnly: js.Any = js.native
-  var _updateFlagSeed: js.Any = js.native
+  
   /**
     * Creates a new matrix composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
     * @param scale defines the scale vector3
@@ -35,6 +33,7 @@ object Matrix extends js.Object {
     rotation: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     translation: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Sets a matrix to a value composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
     * @param scale defines the scale vector3
@@ -48,6 +47,7 @@ object Matrix extends js.Object {
     translation: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Builds a new matrix whose values are computed by:
     * * decomposing the the "startValue" and "endValue" matrices into their respective scale, rotation and translation matrices
@@ -63,6 +63,7 @@ object Matrix extends js.Object {
     endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     gradient: Double
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Update a matrix to values which are computed by:
     * * decomposing the the "startValue" and "endValue" matrices into their respective scale, rotation and translation matrices
@@ -79,6 +80,7 @@ object Matrix extends js.Object {
     gradient: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates a matrix from an array
     * @param array defines the source array
@@ -87,6 +89,7 @@ object Matrix extends js.Object {
     */
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Matrix = js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Copy the content of an array into a given matrix
     * @param array defines the source array
@@ -98,6 +101,7 @@ object Matrix extends js.Object {
     offset: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Stores an array into a matrix after having multiplied each component by a given factor
     * @param array defines the source array
@@ -106,11 +110,12 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     */
   def FromFloat32ArrayToRefScaled(
-    array: DeepImmutable[Float32Array],
+    array: DeepImmutable[Float32Array | js.Array[Double]],
     offset: Double,
     scale: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates a rotation matrix from a quaternion and stores it in a target matrix
     * @param quat defines the quaternion to use
@@ -120,6 +125,7 @@ object Matrix extends js.Object {
     quat: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates new matrix from a list of values (16)
     * @param initialM11 defines 1st value of 1st row
@@ -158,6 +164,7 @@ object Matrix extends js.Object {
     initialM43: Double,
     initialM44: Double
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Stores a list of values (16) inside a given matrix
     * @param initialM11 defines 1st value of 1st row
@@ -197,6 +204,7 @@ object Matrix extends js.Object {
     initialM44: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Sets the given matrix as a rotation matrix composed from the 3 left handed axes
     * @param xaxis defines the value of the 1st axis
@@ -210,18 +218,21 @@ object Matrix extends js.Object {
     zaxis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Extracts a 2x2 matrix from a given matrix and store the result in a Float32Array
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the given matrix
     */
-  def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array = js.native
+  def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array | js.Array[Double] = js.native
+  
   /**
     * Extracts a 3x3 matrix from a given matrix and store the result in a Float32Array
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the given matrix
     */
-  def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array = js.native
+  def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array | js.Array[Double] = js.native
+  
   /**
     * Computes a complete transformation matrix
     * @param viewport defines the viewport to use
@@ -240,26 +251,31 @@ object Matrix extends js.Object {
     zmin: Double,
     zmax: Double
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a new identity matrix
     * @returns a new identity matrix
     */
   def Identity(): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Gets an identity matrix that must not be updated
     */
   def IdentityReadOnly: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix] = js.native
+  
   /**
     * Creates a new identity matrix and stores the result in a given matrix
     * @param result defines the target matrix
     */
   def IdentityToRef(result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Creates a new matrix as the invert of a given matrix
     * @param source defines the source matrix
     * @returns the new matrix
     */
   def Invert(source: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Returns a new Matrix whose values are the interpolated values for "gradient" (float) between the ones of the matrices "startValue" and "endValue".
     * @param startValue defines the start value
@@ -272,6 +288,7 @@ object Matrix extends js.Object {
     endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     gradient: Double
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Set the given matrix "result" as the interpolated values for "gradient" (float) between the ones of the matrices "startValue" and "endValue".
     * @param startValue defines the start value
@@ -285,6 +302,7 @@ object Matrix extends js.Object {
     gradient: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Gets a new rotation matrix used to rotate an entity so as it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up"
     * This function works in left handed mode
@@ -298,6 +316,7 @@ object Matrix extends js.Object {
     target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up".
     * This function works in left handed mode
@@ -312,6 +331,7 @@ object Matrix extends js.Object {
     up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Gets a new rotation matrix used to rotate an entity so as it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up"
     * This function works in right handed mode
@@ -325,6 +345,7 @@ object Matrix extends js.Object {
     target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
   ): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up".
     * This function works in right handed mode
@@ -339,6 +360,7 @@ object Matrix extends js.Object {
     up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Create a left-handed orthographic projection matrix
     * @param width defines the viewport width
@@ -348,6 +370,7 @@ object Matrix extends js.Object {
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
   def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Store a left-handed orthographic projection to a given matrix
     * @param width defines the viewport width
@@ -363,6 +386,7 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Create a left-handed orthographic projection matrix
     * @param left defines the viewport left coordinate
@@ -374,6 +398,7 @@ object Matrix extends js.Object {
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
   def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Stores a left-handed orthographic projection into a given matrix
     * @param left defines the viewport left coordinate
@@ -393,6 +418,7 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates a right-handed orthographic projection matrix
     * @param left defines the viewport left coordinate
@@ -404,6 +430,7 @@ object Matrix extends js.Object {
     * @returns a new matrix as a right-handed orthographic projection matrix
     */
   def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Stores a right-handed orthographic projection into a given matrix
     * @param left defines the viewport left coordinate
@@ -423,6 +450,7 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates a left-handed perspective projection matrix
     * @param fov defines the horizontal field of view
@@ -432,6 +460,7 @@ object Matrix extends js.Object {
     * @returns a new matrix as a left-handed perspective projection matrix
     */
   def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Stores a left-handed perspective projection into a given matrix
     * @param fov defines the horizontal field of view
@@ -456,6 +485,7 @@ object Matrix extends js.Object {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = js.native
+  
   /**
     * Creates a right-handed perspective projection matrix
     * @param fov defines the horizontal field of view
@@ -465,6 +495,7 @@ object Matrix extends js.Object {
     * @returns a new matrix as a right-handed perspective projection matrix
     */
   def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Stores a right-handed perspective projection into a given matrix
     * @param fov defines the horizontal field of view
@@ -489,6 +520,7 @@ object Matrix extends js.Object {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = js.native
+  
   /**
     * Stores a left-handed perspective projection into a given matrix with depth reversed
     * @param fov defines the horizontal field of view
@@ -513,6 +545,7 @@ object Matrix extends js.Object {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = js.native
+  
   /**
     * Stores a right-handed perspective projection into a given matrix
     * @param fov defines the horizontal field of view
@@ -537,6 +570,7 @@ object Matrix extends js.Object {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = js.native
+  
   /**
     * Stores a perspective projection for WebVR info a given matrix
     * @param fov defines the field of view
@@ -553,6 +587,7 @@ object Matrix extends js.Object {
     result: typings.babylonjs.mathVectorMod.Matrix,
     rightHanded: Boolean
   ): Unit = js.native
+  
   /**
     * Creates a left-handed perspective projection matrix
     * @param width defines the viewport width
@@ -562,18 +597,21 @@ object Matrix extends js.Object {
     * @returns a new matrix as a left-handed perspective projection matrix
     */
   def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Computes a reflection matrix from a plane
     * @param plane defines the reflection plane
     * @returns a new matrix
     */
   def Reflection(plane: DeepImmutable[IPlaneLike]): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Computes a reflection matrix from a plane
     * @param plane defines the reflection plane
     * @param result defines the target matrix
     */
   def ReflectionToRef(plane: DeepImmutable[IPlaneLike], result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Takes normalised vectors and returns a rotation matrix to align "from" with "to".
     * Taken from http://www.iquilezles.org/www/articles/noacos/noacos.htm
@@ -586,6 +624,7 @@ object Matrix extends js.Object {
     to: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the given axis
     * @param axis defines the axis to use
@@ -593,6 +632,7 @@ object Matrix extends js.Object {
     * @return the new matrix
     */
   def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the given axis and stores it in a given matrix
     * @param axis defines the axis to use
@@ -604,58 +644,67 @@ object Matrix extends js.Object {
     angle: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the X axis
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
   def RotationX(angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the X axis and stores it in a given matrix
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
   def RotationXToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the Y axis
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
   def RotationY(angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the Y axis and stores it in a given matrix
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
   def RotationYToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Creates a rotation matrix
     * @param yaw defines the yaw angle in radians (Y axis)
     * @param pitch defines the pitch angle in radians (X axis)
-    * @param roll defines the roll angle in radians (X axis)
+    * @param roll defines the roll angle in radians (Z axis)
     * @returns the new rotation matrix
     */
   def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a rotation matrix and stores it in a given matrix
     * @param yaw defines the yaw angle in radians (Y axis)
     * @param pitch defines the pitch angle in radians (X axis)
-    * @param roll defines the roll angle in radians (X axis)
+    * @param roll defines the roll angle in radians (Z axis)
     * @param result defines the target matrix
     */
   def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the Z axis
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
   def RotationZ(angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a new rotation matrix for "angle" radians around the Z axis and stores it in a given matrix
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
   def RotationZToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Creates a scaling matrix
     * @param x defines the scale factor on X axis
@@ -664,6 +713,7 @@ object Matrix extends js.Object {
     * @returns the new matrix
     */
   def Scaling(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a scaling matrix and stores it in a given matrix
     * @param x defines the scale factor on X axis
@@ -672,6 +722,7 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     */
   def ScalingToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Creates a translation matrix
     * @param x defines the translation on X axis
@@ -680,6 +731,7 @@ object Matrix extends js.Object {
     * @returns the new matrix
     */
   def Translation(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Creates a translation matrix and stores it in a given matrix
     * @param x defines the translation on X axis
@@ -688,12 +740,14 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     */
   def TranslationToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  
   /**
     * Compute the transpose of a given matrix
     * @param matrix defines the matrix to transpose
     * @returns the new matrix
     */
   def Transpose(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
   /**
     * Compute the transpose of a matrix and store it in a target matrix
     * @param matrix defines the matrix to transpose
@@ -703,10 +757,19 @@ object Matrix extends js.Object {
     matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  
+  /**
+    * Gets the precision of matrix computations
+    */
+  def Use64Bits: Boolean = js.native
+  
   /**
     * Creates a new zero matrix
     * @returns a new zero matrix
     */
   def Zero(): typings.babylonjs.mathVectorMod.Matrix = js.native
+  
+  var _identityReadOnly: js.Any = js.native
+  
+  var _updateFlagSeed: js.Any = js.native
 }
-

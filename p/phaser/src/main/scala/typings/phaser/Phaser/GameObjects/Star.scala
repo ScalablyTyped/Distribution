@@ -3,7 +3,7 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Star Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -23,30 +23,36 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Star extends Shape {
+  
   /**
     * The inner radius of the Star shape.
     */
   var innerRadius: Double = js.native
+  
   /**
     * The outer radius of the Star shape.
     */
   var outerRadius: Double = js.native
+  
   /**
     * The number of points that make up the Star shape.
     */
   var points: integer = js.native
+  
   /**
     * Sets the inner radius of the Star shape.
     * This call can be chained.
     * @param value The amount to set the inner radius to.
     */
   def setInnerRadius(value: Double): this.type = js.native
+  
   /**
     * Sets the outer radius of the Star shape.
     * This call can be chained.
     * @param value The amount to set the outer radius to.
     */
   def setOuterRadius(value: Double): this.type = js.native
+  
   /**
     * Sets the number of points that make up the Star shape.
     * This call can be chained.
@@ -54,4 +60,3 @@ trait Star extends Shape {
     */
   def setPoints(value: integer): this.type = js.native
 }
-

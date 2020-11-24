@@ -12,13 +12,15 @@ import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/policy/operations", JSImport.Namespace)
 @js.native
 object policyOperationsMod extends js.Object {
+  
   @js.native
   trait PolicyAssignments extends js.Object {
+    
     /**
       * @summary Creates or updates a policy assignment.
       *
@@ -118,6 +120,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignment]
     ): Unit = js.native
+    
     /**
       * @summary Creates or updates a policy assignment.
       *
@@ -217,6 +220,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignment]
     ): Unit = js.native
+    
     /**
       * @summary Creates or updates a policy assignment.
       *
@@ -289,6 +293,7 @@ object policyOperationsMod extends js.Object {
       */
     def createByIdWithHttpOperationResponse(policyAssignmentId: String, parameters: PolicyAssignment): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
     def createByIdWithHttpOperationResponse(policyAssignmentId: String, parameters: PolicyAssignment, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
+    
     /**
       * @summary Creates or updates a policy assignment.
       *
@@ -359,6 +364,7 @@ object policyOperationsMod extends js.Object {
       */
     def createWithHttpOperationResponse(scope: String, policyAssignmentName: String, parameters: PolicyAssignment): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
     def createWithHttpOperationResponse(scope: String, policyAssignmentName: String, parameters: PolicyAssignment, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
+    
     /**
       * @summary Deletes a policy assignment.
       *
@@ -408,6 +414,7 @@ object policyOperationsMod extends js.Object {
     def deleteById(policyAssignmentId: String, callback: ServiceCallback[PolicyAssignment]): Unit = js.native
     def deleteById(policyAssignmentId: String, options: CustomHeaders): js.Promise[PolicyAssignment] = js.native
     def deleteById(policyAssignmentId: String, options: CustomHeaders, callback: ServiceCallback[PolicyAssignment]): Unit = js.native
+    
     /**
       * @summary Deletes a policy assignment.
       *
@@ -439,6 +446,7 @@ object policyOperationsMod extends js.Object {
       */
     def deleteByIdWithHttpOperationResponse(policyAssignmentId: String): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
     def deleteByIdWithHttpOperationResponse(policyAssignmentId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
+    
     /**
       * @summary Deletes a policy assignment.
       *
@@ -495,6 +503,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignment]
     ): Unit = js.native
+    
     /**
       * @summary Deletes a policy assignment.
       *
@@ -528,6 +537,7 @@ object policyOperationsMod extends js.Object {
       */
     def deleteMethodWithHttpOperationResponse(scope: String, policyAssignmentName: String): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
     def deleteMethodWithHttpOperationResponse(scope: String, policyAssignmentName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
+    
     /**
       * @summary Retrieves a policy assignment.
       *
@@ -582,6 +592,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignment]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves the policy assignment with the given ID.
       *
@@ -631,6 +642,7 @@ object policyOperationsMod extends js.Object {
     def getById(policyAssignmentId: String, callback: ServiceCallback[PolicyAssignment]): Unit = js.native
     def getById(policyAssignmentId: String, options: CustomHeaders): js.Promise[PolicyAssignment] = js.native
     def getById(policyAssignmentId: String, options: CustomHeaders, callback: ServiceCallback[PolicyAssignment]): Unit = js.native
+    
     /**
       * @summary Retrieves the policy assignment with the given ID.
       *
@@ -662,6 +674,7 @@ object policyOperationsMod extends js.Object {
       */
     def getByIdWithHttpOperationResponse(policyAssignmentId: String): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
     def getByIdWithHttpOperationResponse(policyAssignmentId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
+    
     /**
       * @summary Retrieves a policy assignment.
       *
@@ -693,6 +706,7 @@ object policyOperationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(scope: String, policyAssignmentName: String): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
     def getWithHttpOperationResponse(scope: String, policyAssignmentName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignment]] = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a subscription.
       *
@@ -746,6 +760,7 @@ object policyOperationsMod extends js.Object {
     def list(callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
     def list(options: Filter): js.Promise[PolicyAssignmentListResult] = js.native
     def list(options: Filter, callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource.
       *
@@ -856,6 +871,7 @@ object policyOperationsMod extends js.Object {
       options: Filter,
       callback: ServiceCallback[PolicyAssignmentListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource group.
       *
@@ -912,6 +928,7 @@ object policyOperationsMod extends js.Object {
     def listForResourceGroup(resourceGroupName: String, callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
     def listForResourceGroup(resourceGroupName: String, options: Filter): js.Promise[PolicyAssignmentListResult] = js.native
     def listForResourceGroup(resourceGroupName: String, options: Filter, callback: ServiceCallback[PolicyAssignmentListResult]): Unit = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource group.
       *
@@ -968,6 +985,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignmentListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource group.
       *
@@ -1001,6 +1019,7 @@ object policyOperationsMod extends js.Object {
       */
     def listForResourceGroupNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
     def listForResourceGroupNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource group.
       *
@@ -1038,6 +1057,7 @@ object policyOperationsMod extends js.Object {
       */
     def listForResourceGroupWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
     def listForResourceGroupWithHttpOperationResponse(resourceGroupName: String, options: Filter): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource.
       *
@@ -1108,6 +1128,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignmentListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource.
       *
@@ -1155,6 +1176,7 @@ object policyOperationsMod extends js.Object {
       */
     def listForResourceNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
     def listForResourceNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a resource.
       *
@@ -1231,6 +1253,7 @@ object policyOperationsMod extends js.Object {
       resourceName: String,
       options: Filter
     ): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a subscription.
       *
@@ -1287,6 +1310,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyAssignmentListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a subscription.
       *
@@ -1320,6 +1344,7 @@ object policyOperationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyAssignmentListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy assignments that apply to a subscription.
       *
@@ -1358,6 +1383,7 @@ object policyOperationsMod extends js.Object {
   
   @js.native
   trait PolicyDefinitions extends js.Object {
+    
     /**
       * @summary Creates or updates a policy definition in a subscription.
       *
@@ -1429,6 +1455,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Creates or updates a policy definition in a management group.
       *
@@ -1509,6 +1536,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Creates or updates a policy definition in a management group.
       *
@@ -1560,6 +1588,7 @@ object policyOperationsMod extends js.Object {
       managementGroupId: String,
       options: CustomHeaders
     ): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
+    
     /**
       * @summary Creates or updates a policy definition in a subscription.
       *
@@ -1604,6 +1633,7 @@ object policyOperationsMod extends js.Object {
       */
     def createOrUpdateWithHttpOperationResponse(policyDefinitionName: String, parameters: PolicyDefinition): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
     def createOrUpdateWithHttpOperationResponse(policyDefinitionName: String, parameters: PolicyDefinition, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
+    
     /**
       * @summary Deletes a policy definition in a management group.
       *
@@ -1650,6 +1680,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
+    
     /**
       * @summary Deletes a policy definition in a management group.
       *
@@ -1674,6 +1705,7 @@ object policyOperationsMod extends js.Object {
       */
     def deleteAtManagementGroupWithHttpOperationResponse(policyDefinitionName: String, managementGroupId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteAtManagementGroupWithHttpOperationResponse(policyDefinitionName: String, managementGroupId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * @summary Deletes a policy definition in a subscription.
       *
@@ -1713,6 +1745,7 @@ object policyOperationsMod extends js.Object {
     def deleteMethod(policyDefinitionName: String, callback: ServiceCallback[Unit]): Unit = js.native
     def deleteMethod(policyDefinitionName: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def deleteMethod(policyDefinitionName: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    
     /**
       * @summary Deletes a policy definition in a subscription.
       *
@@ -1735,6 +1768,7 @@ object policyOperationsMod extends js.Object {
       */
     def deleteMethodWithHttpOperationResponse(policyDefinitionName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteMethodWithHttpOperationResponse(policyDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * @summary Retrieves a policy definition in a subscription.
       *
@@ -1775,6 +1809,7 @@ object policyOperationsMod extends js.Object {
     def get(policyDefinitionName: String, callback: ServiceCallback[PolicyDefinition]): Unit = js.native
     def get(policyDefinitionName: String, options: CustomHeaders): js.Promise[PolicyDefinition] = js.native
     def get(policyDefinitionName: String, options: CustomHeaders, callback: ServiceCallback[PolicyDefinition]): Unit = js.native
+    
     /**
       * @summary Retrieve a policy definition in a management group.
       *
@@ -1826,6 +1861,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Retrieve a policy definition in a management group.
       *
@@ -1850,6 +1886,7 @@ object policyOperationsMod extends js.Object {
       */
     def getAtManagementGroupWithHttpOperationResponse(policyDefinitionName: String, managementGroupId: String): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
     def getAtManagementGroupWithHttpOperationResponse(policyDefinitionName: String, managementGroupId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
+    
     /**
       * @summary Retrieves a built-in policy definition.
       *
@@ -1889,6 +1926,7 @@ object policyOperationsMod extends js.Object {
     def getBuiltIn(policyDefinitionName: String, callback: ServiceCallback[PolicyDefinition]): Unit = js.native
     def getBuiltIn(policyDefinitionName: String, options: CustomHeaders): js.Promise[PolicyDefinition] = js.native
     def getBuiltIn(policyDefinitionName: String, options: CustomHeaders, callback: ServiceCallback[PolicyDefinition]): Unit = js.native
+    
     /**
       * @summary Retrieves a built-in policy definition.
       *
@@ -1910,6 +1948,7 @@ object policyOperationsMod extends js.Object {
       */
     def getBuiltInWithHttpOperationResponse(policyDefinitionName: String): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
     def getBuiltInWithHttpOperationResponse(policyDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
+    
     /**
       * @summary Retrieves a policy definition in a subscription.
       *
@@ -1932,6 +1971,7 @@ object policyOperationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(policyDefinitionName: String): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
     def getWithHttpOperationResponse(policyDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinition]] = js.native
+    
     /**
       * @summary Retrieves policy definitions in a subscription
       *
@@ -1970,6 +2010,7 @@ object policyOperationsMod extends js.Object {
     def list(callback: ServiceCallback[PolicyDefinitionListResult]): Unit = js.native
     def list(options: CustomHeaders): js.Promise[PolicyDefinitionListResult] = js.native
     def list(options: CustomHeaders, callback: ServiceCallback[PolicyDefinitionListResult]): Unit = js.native
+    
     /**
       * @summary Retrieve built-in policy definitions
       *
@@ -2007,6 +2048,7 @@ object policyOperationsMod extends js.Object {
     def listBuiltIn(callback: ServiceCallback[PolicyDefinitionListResult]): Unit = js.native
     def listBuiltIn(options: CustomHeaders): js.Promise[PolicyDefinitionListResult] = js.native
     def listBuiltIn(options: CustomHeaders, callback: ServiceCallback[PolicyDefinitionListResult]): Unit = js.native
+    
     /**
       * @summary Retrieve built-in policy definitions
       *
@@ -2051,6 +2093,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieve built-in policy definitions
       *
@@ -2072,6 +2115,7 @@ object policyOperationsMod extends js.Object {
       */
     def listBuiltInNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
     def listBuiltInNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieve built-in policy definitions
       *
@@ -2090,6 +2134,7 @@ object policyOperationsMod extends js.Object {
       */
     def listBuiltInWithHttpOperationResponse(): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
     def listBuiltInWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieve policy definitions in a management group
       *
@@ -2134,6 +2179,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieve policy definitions in a management group
       *
@@ -2179,6 +2225,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieve policy definitions in a management group
       *
@@ -2201,6 +2248,7 @@ object policyOperationsMod extends js.Object {
       */
     def listByManagementGroupNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
     def listByManagementGroupNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieve policy definitions in a management group
       *
@@ -2222,6 +2270,7 @@ object policyOperationsMod extends js.Object {
       */
     def listByManagementGroupWithHttpOperationResponse(managementGroupId: String): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
     def listByManagementGroupWithHttpOperationResponse(managementGroupId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves policy definitions in a subscription
       *
@@ -2267,6 +2316,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicyDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves policy definitions in a subscription
       *
@@ -2289,6 +2339,7 @@ object policyOperationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicyDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves policy definitions in a subscription
       *
@@ -2312,6 +2363,7 @@ object policyOperationsMod extends js.Object {
   
   @js.native
   trait PolicySetDefinitions extends js.Object {
+    
     /**
       * @summary Creates or updates a policy set definition.
       *
@@ -2381,6 +2433,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Creates or updates a policy set definition.
       *
@@ -2459,6 +2512,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Creates or updates a policy set definition.
       *
@@ -2508,6 +2562,7 @@ object policyOperationsMod extends js.Object {
       managementGroupId: String,
       options: CustomHeaders
     ): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
+    
     /**
       * @summary Creates or updates a policy set definition.
       *
@@ -2550,6 +2605,7 @@ object policyOperationsMod extends js.Object {
       */
     def createOrUpdateWithHttpOperationResponse(policySetDefinitionName: String, parameters: PolicySetDefinition): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
     def createOrUpdateWithHttpOperationResponse(policySetDefinitionName: String, parameters: PolicySetDefinition, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
+    
     /**
       * @summary Deletes a policy set definition.
       *
@@ -2596,6 +2652,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
+    
     /**
       * @summary Deletes a policy set definition.
       *
@@ -2620,6 +2677,7 @@ object policyOperationsMod extends js.Object {
       */
     def deleteAtManagementGroupWithHttpOperationResponse(policySetDefinitionName: String, managementGroupId: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteAtManagementGroupWithHttpOperationResponse(policySetDefinitionName: String, managementGroupId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * @summary Deletes a policy set definition.
       *
@@ -2659,6 +2717,7 @@ object policyOperationsMod extends js.Object {
     def deleteMethod(policySetDefinitionName: String, callback: ServiceCallback[Unit]): Unit = js.native
     def deleteMethod(policySetDefinitionName: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def deleteMethod(policySetDefinitionName: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    
     /**
       * @summary Deletes a policy set definition.
       *
@@ -2681,6 +2740,7 @@ object policyOperationsMod extends js.Object {
       */
     def deleteMethodWithHttpOperationResponse(policySetDefinitionName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
     def deleteMethodWithHttpOperationResponse(policySetDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    
     /**
       * @summary Retrieves a policy set definition.
       *
@@ -2725,6 +2785,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves a policy set definition.
       *
@@ -2776,6 +2837,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves a policy set definition.
       *
@@ -2800,6 +2862,7 @@ object policyOperationsMod extends js.Object {
       */
     def getAtManagementGroupWithHttpOperationResponse(policySetDefinitionName: String, managementGroupId: String): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
     def getAtManagementGroupWithHttpOperationResponse(policySetDefinitionName: String, managementGroupId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
+    
     /**
       * @summary Retrieves a built in policy set definition.
       *
@@ -2844,6 +2907,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinition]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves a built in policy set definition.
       *
@@ -2866,6 +2930,7 @@ object policyOperationsMod extends js.Object {
       */
     def getBuiltInWithHttpOperationResponse(policySetDefinitionName: String): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
     def getBuiltInWithHttpOperationResponse(policySetDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
+    
     /**
       * @summary Retrieves a policy set definition.
       *
@@ -2888,6 +2953,7 @@ object policyOperationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(policySetDefinitionName: String): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
     def getWithHttpOperationResponse(policySetDefinitionName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinition]] = js.native
+    
     /**
       * @summary Retrieves the policy set definitions for a subscription.
       *
@@ -2926,6 +2992,7 @@ object policyOperationsMod extends js.Object {
     def list(callback: ServiceCallback[PolicySetDefinitionListResult]): Unit = js.native
     def list(options: CustomHeaders): js.Promise[PolicySetDefinitionListResult] = js.native
     def list(options: CustomHeaders, callback: ServiceCallback[PolicySetDefinitionListResult]): Unit = js.native
+    
     /**
       * @summary Retrieves built-in policy set definitions.
       *
@@ -2963,6 +3030,7 @@ object policyOperationsMod extends js.Object {
     def listBuiltIn(callback: ServiceCallback[PolicySetDefinitionListResult]): Unit = js.native
     def listBuiltIn(options: CustomHeaders): js.Promise[PolicySetDefinitionListResult] = js.native
     def listBuiltIn(options: CustomHeaders, callback: ServiceCallback[PolicySetDefinitionListResult]): Unit = js.native
+    
     /**
       * @summary Retrieves built-in policy set definitions.
       *
@@ -3007,6 +3075,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves built-in policy set definitions.
       *
@@ -3028,6 +3097,7 @@ object policyOperationsMod extends js.Object {
       */
     def listBuiltInNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
     def listBuiltInNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves built-in policy set definitions.
       *
@@ -3046,6 +3116,7 @@ object policyOperationsMod extends js.Object {
       */
     def listBuiltInWithHttpOperationResponse(): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
     def listBuiltInWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy set definitions in management group.
       *
@@ -3090,6 +3161,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves all policy set definitions in management group.
       *
@@ -3135,6 +3207,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves all policy set definitions in management group.
       *
@@ -3157,6 +3230,7 @@ object policyOperationsMod extends js.Object {
       */
     def listByManagementGroupNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
     def listByManagementGroupNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves all policy set definitions in management group.
       *
@@ -3178,6 +3252,7 @@ object policyOperationsMod extends js.Object {
       */
     def listByManagementGroupWithHttpOperationResponse(managementGroupId: String): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
     def listByManagementGroupWithHttpOperationResponse(managementGroupId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves the policy set definitions for a subscription.
       *
@@ -3223,6 +3298,7 @@ object policyOperationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[PolicySetDefinitionListResult]
     ): Unit = js.native
+    
     /**
       * @summary Retrieves the policy set definitions for a subscription.
       *
@@ -3245,6 +3321,7 @@ object policyOperationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
+    
     /**
       * @summary Retrieves the policy set definitions for a subscription.
       *
@@ -3265,6 +3342,4 @@ object policyOperationsMod extends js.Object {
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
     def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[PolicySetDefinitionListResult]] = js.native
   }
-  
 }
-

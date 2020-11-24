@@ -4,21 +4,19 @@
 Typings are for version 0.3
 
 ## Library description:
-A library to evaluate 3, 5 or 7 card poker hands
+A library to evaluate 3, 5, 6 or 7 card poker hands
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | poker-evaluator |
-| Keywords           | poker, games |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 3668 |
+| Keywords           | - |
+| # releases         | 4 |
+| # dependents       | 4 |
+| # downloads        | 4369 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](http://github.com/chenosaurus/poker-evaluator)
-- [Bugs](https://github.com/chenosaurus/poker-evaluator/issues)
-- [Repository](https://github.com/chenosaurus/poker-evaluator)
+- [Homepage](https://github.com/Sukhmai/poker-evaluator)
 - [Npm](https://www.npmjs.com/package/poker-evaluator)
     
 

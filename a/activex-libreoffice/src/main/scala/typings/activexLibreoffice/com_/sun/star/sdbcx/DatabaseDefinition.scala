@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * could be used as an extension for performing data definition tasks on databases, and to control the access rights on database objects.
@@ -22,8 +22,8 @@ trait DatabaseDefinition
      with XViewsSupplier
      with XUsersSupplier
      with XGroupsSupplier
-
 object DatabaseDefinition {
+  
   @scala.inline
   def apply(
     Groups: XNameAccess,
@@ -42,4 +42,3 @@ object DatabaseDefinition {
     __obj.asInstanceOf[DatabaseDefinition]
   }
 }
-

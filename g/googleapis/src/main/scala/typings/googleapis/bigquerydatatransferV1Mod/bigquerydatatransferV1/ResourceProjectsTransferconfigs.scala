@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Transferconfigs")
 @js.native
 class ResourceProjectsTransferconfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var runs: ResourceProjectsTransferconfigsRuns = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.create
     * @desc Creates a new data transfer configuration.
@@ -48,6 +49,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransferConfig]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.delete
     * @desc Deletes a data transfer configuration, including any associated
@@ -77,6 +79,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.get
     * @desc Returns information about a data transfer config.
@@ -108,6 +111,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransferConfig]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.list
     * @desc Returns information about all data transfers in the project.
@@ -142,6 +146,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTransferConfigsResponse]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.patch
     * @desc Updates a data transfer configuration. All fields must be set, even
@@ -178,6 +183,9 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransferConfig]
   ): Unit = js.native
+  
+  var runs: ResourceProjectsTransferconfigsRuns = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.scheduleRuns
     * @desc Creates transfer runs for a time range [start_time, end_time]. For
@@ -213,6 +221,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScheduleTransferRunsResponse]
   ): Unit = js.native
+  
   /**
     * bigquerydatatransfer.projects.transferConfigs.startManualRuns
     * @desc Start manual transfer runs to be executed now with schedule_time
@@ -249,4 +258,3 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaStartManualTransferRunsResponse]
   ): Unit = js.native
 }
-

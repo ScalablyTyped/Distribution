@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Entity is the core primitive of a PlayCanvas game. Generally speaking an object in your game will consist of an {@link pc.Entity},
@@ -62,74 +62,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Entity extends GraphNode {
-  /**
-    * Gets the {@link pc.AnimationComponent} attached to this entity. [read only]
-    */
-  var animation: js.UndefOr[AnimationComponent] = js.native
-  /**
-    * Gets the {@link pc.AudioSourceComponent} attached to this entity. [read only]
-    */
-  var audiolistener: js.UndefOr[AudioListenerComponent] = js.native
-  /**
-    * Gets the {@link pc.ButtonComponent} attached to this entity. [read only]
-    */
-  var button: js.UndefOr[ButtonComponent] = js.native
-  /**
-    * Gets the {@link pc.CameraComponent} attached to this entity. [read only]
-    */
-  var camera: js.UndefOr[CameraComponent] = js.native
-  /**
-    * Gets the {@link pc.CollisionComponent} attached to this entity. [read only]
-    */
-  var collision: js.UndefOr[CollisionComponent] = js.native
-  /**
-    * Gets the {@link pc.ElementComponent} attached to this entity. [read only]
-    */
-  var element: js.UndefOr[ElementComponent] = js.native
-  /**
-    * Gets the {@link pc.LayoutChildComponent} attached to this entity. [read only]
-    */
-  var layoutchild: js.UndefOr[LayoutChildComponent] = js.native
-  /**
-    * Gets the {@link pc.LayoutGroupComponent} attached to this entity. [read only]
-    */
-  var layoutgroup: js.UndefOr[LayoutGroupComponent] = js.native
-  /**
-    * Gets the {@link pc.LightComponent} attached to this entity. [read only]
-    */
-  var light: js.UndefOr[LightComponent] = js.native
-  /**
-    * Gets the {@link pc.ModelComponent} attached to this entity. [read only]
-    */
-  var model: js.UndefOr[ModelComponent] = js.native
-  /**
-    * Gets the {@link pc.ParticleSystemComponent} attached to this entity. [read only]
-    */
-  var particlesystem: js.UndefOr[ParticleSystemComponent] = js.native
-  /**
-    * Gets the {@link pc.RigidBodyComponent} attached to this entity. [read only]
-    */
-  var rigidbody: js.UndefOr[RigidBodyComponent] = js.native
-  /**
-    * Gets the {@link pc.ScreenComponent} attached to this entity. [read only]
-    */
-  var screen: js.UndefOr[ScreenComponent] = js.native
-  /**
-    * Gets the {@link pc.ScriptComponent} attached to this entity. [read only]
-    */
-  var script: js.UndefOr[ScriptComponent] = js.native
-  /**
-    * Gets the {@link pc.ScrollViewComponent} attached to this entity. [read only]
-    */
-  var scrollview: js.UndefOr[ScrollViewComponent] = js.native
-  /**
-    * Gets the {@link pc.SoundComponent} attached to this entity. [read only]
-    */
-  var sound: js.UndefOr[SoundComponent] = js.native
-  /**
-    * Gets the {@link pc.SpriteComponent} attached to this entity. [read only]
-    */
-  var sprite: js.UndefOr[SpriteComponent] = js.native
+  
   /**
     * Create a new component and add it to the entity.
     * Use this to add functionality to the entity like rendering a model, playing sounds and so on.
@@ -171,6 +104,32 @@ trait Entity extends GraphNode {
     */
   def addComponent(`type`: String): Component = js.native
   def addComponent(`type`: String, data: js.Any): Component = js.native
+  
+  /**
+    * Gets the {@link pc.AnimationComponent} attached to this entity. [read only]
+    */
+  var animation: js.UndefOr[AnimationComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.AudioSourceComponent} attached to this entity. [read only]
+    */
+  var audiolistener: js.UndefOr[AudioListenerComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.ButtonComponent} attached to this entity. [read only]
+    */
+  var button: js.UndefOr[ButtonComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.CameraComponent} attached to this entity. [read only]
+    */
+  var camera: js.UndefOr[CameraComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.CollisionComponent} attached to this entity. [read only]
+    */
+  var collision: js.UndefOr[CollisionComponent] = js.native
+  
   /**
     * Remove all components from the Entity and detach it from the Entity hierarchy. Then recursively destroy all ancestor Entities.
     * @example
@@ -178,12 +137,19 @@ trait Entity extends GraphNode {
     * firstChild.destroy(); // delete child, all components and remove from hierarchy
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * Gets the {@link pc.ElementComponent} attached to this entity. [read only]
+    */
+  var element: js.UndefOr[ElementComponent] = js.native
+  
   /**
     * Find a descendant of this Entity with the GUID.
     * @param guid - The GUID to search for.
     * @returns The Entity with the GUID or null.
     */
   def findByGuid(guid: String): Entity = js.native
+  
   /**
     * Search the entity and all of its descendants for the first component of specified type.
     * @example
@@ -194,6 +160,7 @@ trait Entity extends GraphNode {
     * one. Returns undefined otherwise.
     */
   def findComponent(`type`: String): Component = js.native
+  
   /**
     * Search the entity and all of its descendants for all components of specified type.
     * @example
@@ -203,7 +170,33 @@ trait Entity extends GraphNode {
     * @returns All components of specified type in the entity or any of its descendants.
     * Returns empty array if none found.
     */
-  def findComponents(`type`: String): Component = js.native
+  def findComponents(`type`: String): js.Array[Component] = js.native
+  
+  /**
+    * Gets the {@link pc.LayoutChildComponent} attached to this entity. [read only]
+    */
+  var layoutchild: js.UndefOr[LayoutChildComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.LayoutGroupComponent} attached to this entity. [read only]
+    */
+  var layoutgroup: js.UndefOr[LayoutGroupComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.LightComponent} attached to this entity. [read only]
+    */
+  var light: js.UndefOr[LightComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.ModelComponent} attached to this entity. [read only]
+    */
+  var model: js.UndefOr[ModelComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.ParticleSystemComponent} attached to this entity. [read only]
+    */
+  var particlesystem: js.UndefOr[ParticleSystemComponent] = js.native
+  
   /**
     * Remove a component from the Entity.
     * @example
@@ -214,5 +207,34 @@ trait Entity extends GraphNode {
     * @param type - The name of the Component type.
     */
   def removeComponent(`type`: String): Unit = js.native
+  
+  /**
+    * Gets the {@link pc.RigidBodyComponent} attached to this entity. [read only]
+    */
+  var rigidbody: js.UndefOr[RigidBodyComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.ScreenComponent} attached to this entity. [read only]
+    */
+  var screen: js.UndefOr[ScreenComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.ScriptComponent} attached to this entity. [read only]
+    */
+  var script: js.UndefOr[ScriptComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.ScrollViewComponent} attached to this entity. [read only]
+    */
+  var scrollview: js.UndefOr[ScrollViewComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.SoundComponent} attached to this entity. [read only]
+    */
+  var sound: js.UndefOr[SoundComponent] = js.native
+  
+  /**
+    * Gets the {@link pc.SpriteComponent} attached to this entity. [read only]
+    */
+  var sprite: js.UndefOr[SpriteComponent] = js.native
 }
-

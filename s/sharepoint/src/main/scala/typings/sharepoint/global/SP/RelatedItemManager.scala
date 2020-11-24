@@ -2,17 +2,17 @@ package typings.sharepoint.global.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.RelatedItemManager")
 @js.native
 class RelatedItemManager ()
   extends typings.sharepoint.SP.ClientObject
-
 /* static members */
 @JSGlobal("SP.RelatedItemManager")
 @js.native
 object RelatedItemManager extends js.Object {
+  
   def addSingleLink(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceListName: String,
@@ -23,6 +23,7 @@ object RelatedItemManager extends js.Object {
     TargetWebUrl: String,
     TryAddReverseLink: Boolean
   ): Unit = js.native
+  
   def addSingleLinkFromUrl(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceItemUrl: String,
@@ -30,6 +31,7 @@ object RelatedItemManager extends js.Object {
     TargetItemID: Double,
     TryAddReverseLink: Boolean
   ): Unit = js.native
+  
   def addSingleLinkToUrl(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceListName: String,
@@ -37,6 +39,7 @@ object RelatedItemManager extends js.Object {
     TargetItemUrl: String,
     TryAddReverseLink: Boolean
   ): Unit = js.native
+  
   def deleteSingleLink(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceListName: String,
@@ -47,7 +50,8 @@ object RelatedItemManager extends js.Object {
     TargetWebUrl: String,
     TryDeleteReverseLink: Boolean
   ): Unit = js.native
+  
   def getPageOneRelatedItems(context: typings.sharepoint.SP.ClientRuntimeContext, SourceListName: String, SourceItemID: Double): js.Array[typings.sharepoint.SP.RelatedItem] = js.native
+  
   def getRelatedItems(context: typings.sharepoint.SP.ClientRuntimeContext, SourceListName: String, SourceItemID: Double): js.Array[typings.sharepoint.SP.RelatedItem] = js.native
 }
-

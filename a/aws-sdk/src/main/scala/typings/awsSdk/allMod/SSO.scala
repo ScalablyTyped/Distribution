@@ -4,7 +4,7 @@ import typings.awsSdk.ssoMod.ClientConfiguration
 import typings.awsSdk.ssoMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "SSO")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class SSO () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

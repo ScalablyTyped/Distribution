@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-jsonschema-parameters
 
-Typings are for version 7.0.0
+Typings are for version 7.0.2
 
 ## Library description:
 Converts openapi parameters to a jsonschema format.
@@ -10,9 +10,9 @@ Converts openapi parameters to a jsonschema format.
 | ------------------ | :-------------: |
 | Full name          | openapi-jsonschema-parameters |
 | Keywords           | openapi, parameters, jsonschema, convert, converter |
-| # releases         | 15 |
+| # releases         | 8 |
 | # dependents       | 6 |
-| # downloads        | 499042 |
+| # downloads        | 964968 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations$Products$Referenceimages")
 @js.native
 class ResourceProjectsLocationsProductsReferenceimages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * vision.projects.locations.products.referenceImages.create
     * @desc Creates and returns a new ReferenceImage resource.  The
@@ -58,6 +60,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReferenceImage]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.referenceImages.delete
     * @desc Permanently deletes a reference image.  The image metadata will be
@@ -93,6 +96,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.referenceImages.get
     * @desc Gets information associated with a ReferenceImage.  Possible
@@ -125,6 +129,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReferenceImage]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.referenceImages.list
     * @desc Lists reference images.  Possible errors:  * Returns NOT_FOUND if
@@ -161,4 +166,3 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     callback: BodyResponseCallback[SchemaListReferenceImagesResponse]
   ): Unit = js.native
 }
-

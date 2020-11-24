@@ -2,11 +2,12 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection of HTML form control elements.  */
 @js.native
 trait HTMLFormControlsCollection extends HTMLCollectionBase {
+  
   /**
     * Returns the item with ID or name name from the collection.
     * 
@@ -14,4 +15,3 @@ trait HTMLFormControlsCollection extends HTMLCollectionBase {
     */
   def namedItem(name: java.lang.String): RadioNodeList | Element | Null = js.native
 }
-

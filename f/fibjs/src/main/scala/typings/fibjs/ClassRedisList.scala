@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassRedisList extends ClassObject {
+  
   /**
     * 
     * @brief 返回列表中，下标为 index 的元素
@@ -20,6 +21,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def get(index: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 将值 value 插入到列表当中，位于值 pivot 之后
@@ -30,6 +32,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def insertAfter(pivot: ClassBuffer, value: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 将值 value 插入到列表当中，位于值 pivot 之前
@@ -40,6 +43,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def insertBefore(pivot: ClassBuffer, value: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 返回列表的长度
@@ -48,6 +52,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def len(): Double = js.native
+  
   /**
     * 
     * @brief 移除并返回列表 key 的头元素
@@ -56,6 +61,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def pop(): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 将一个或多个值 value 插入到列表的表头
@@ -74,6 +80,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def push(values: js.Array[_]): Double = js.native
+  
   /**
     * 
     * @brief 返回列表中指定区间内的元素，区间以偏移量 start 和 stop 指定，包含 start 和 stop 的元素
@@ -84,6 +91,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def range(start: Double, stop: Double): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 根据参数 count 的值，移除列表中与参数 value 相等的元素
@@ -94,6 +102,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def remove(count: Double, value: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 移除并返回列表 key 的表尾(最右边)元素
@@ -102,6 +111,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def rpop(): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 将一个或多个值 value 插入到列表的表尾(最右边)
@@ -120,6 +130,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def rpush(values: js.Array[_]): Double = js.native
+  
   /**
     * 
     * @brief 将列表下标为 index 的元素的值设置为 value
@@ -129,6 +140,7 @@ trait ClassRedisList extends ClassObject {
     * 
     */
   def set(index: Double, value: ClassBuffer): Unit = js.native
+  
   /**
     * 
     * @brief 对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除
@@ -139,4 +151,3 @@ trait ClassRedisList extends ClassObject {
     */
   def trim(start: Double, stop: Double): Unit = js.native
 }
-

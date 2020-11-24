@@ -3,11 +3,12 @@ package typings.awsSdk
 import typings.awsSdk.credentialsMod.Credentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/credentials/environment_credentials", JSImport.Namespace)
 @js.native
 object environmentCredentialsMod extends js.Object {
+  
   @js.native
   class EnvironmentCredentials protected () extends Credentials {
     /**
@@ -16,6 +17,4 @@ object environmentCredentialsMod extends js.Object {
       */
     def this(envPrefix: String) = this()
   }
-  
 }
-

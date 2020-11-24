@@ -2,7 +2,7 @@ package typings.microsoftAjax.Sys.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a profile group.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ProfileGroup extends js.Object
-

@@ -2,7 +2,7 @@ package typings.openlayers.mod.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The coordinate layout for geometries, indicating whether a 3rd or 4th z ('Z')
@@ -16,15 +16,17 @@ import scala.scalajs.js.annotation._
   - typings.openlayers.openlayersStrings.XYZM
 */
 trait GeometryLayout extends js.Object
-
 object GeometryLayout {
+  
   @scala.inline
   def XY: typings.openlayers.openlayersStrings.XY = "XY".asInstanceOf[typings.openlayers.openlayersStrings.XY]
+  
   @scala.inline
   def XYM: typings.openlayers.openlayersStrings.XYM = "XYM".asInstanceOf[typings.openlayers.openlayersStrings.XYM]
+  
   @scala.inline
   def XYZ: typings.openlayers.openlayersStrings.XYZ = "XYZ".asInstanceOf[typings.openlayers.openlayersStrings.XYZ]
+  
   @scala.inline
   def XYZM: typings.openlayers.openlayersStrings.XYZM = "XYZM".asInstanceOf[typings.openlayers.openlayersStrings.XYZM]
 }
-

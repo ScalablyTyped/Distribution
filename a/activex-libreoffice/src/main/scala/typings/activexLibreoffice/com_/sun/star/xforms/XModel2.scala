@@ -10,15 +10,15 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.xml.dom.XDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
 trait XModel2
   extends XPropertySet
      with XModel
-
 object XModel2 {
+  
   @scala.inline
   def apply(
     Bindings: XSet,
@@ -64,4 +64,3 @@ object XModel2 {
     __obj.asInstanceOf[XModel2]
   }
 }
-

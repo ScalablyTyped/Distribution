@@ -10,13 +10,15 @@ An SDK for interacting with the Hyperledger Sawtooth distributed ledger.
 | ------------------ | :-------------: |
 | Full name          | sawtooth-sdk |
 | Keywords           | hyperledger, blockchain, signing, crypto, protobuf |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 34611 |
+| # downloads        | 36235 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://www.hyperledger.org/projects/sawtooth)
+- [Bugs](https://github.com/hyperledger/sawtooth-core/issues)
+- [Repository](https://github.com/hyperledger/sawtooth-core)
 - [Npm](https://www.npmjs.com/package/sawtooth-sdk)
     
 

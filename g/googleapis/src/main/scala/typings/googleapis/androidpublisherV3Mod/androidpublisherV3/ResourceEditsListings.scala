@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Listings")
 @js.native
 class ResourceEditsListings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.listings.delete
     * @desc Deletes the specified localized store listing from an edit.
@@ -43,6 +45,7 @@ class ResourceEditsListings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.listings.deleteall
     * @desc Deletes all localized listings from an edit.
@@ -72,6 +75,7 @@ class ResourceEditsListings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.listings.get
     * @desc Fetches information about a localized store listing.
@@ -102,6 +106,7 @@ class ResourceEditsListings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListing]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.listings.list
     * @desc Returns all of the localized store listings attached to this edit.
@@ -134,6 +139,7 @@ class ResourceEditsListings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListingsListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.listings.patch
     * @desc Creates or updates a localized store listing. This method supports
@@ -166,6 +172,7 @@ class ResourceEditsListings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListing]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.listings.update
     * @desc Creates or updates a localized store listing.
@@ -198,4 +205,3 @@ class ResourceEditsListings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListing]
   ): Unit = js.native
 }
-

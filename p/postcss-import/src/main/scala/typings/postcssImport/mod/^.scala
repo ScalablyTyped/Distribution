@@ -3,11 +3,12 @@ package typings.postcssImport.mod
 import typings.postcss.mod.Transformer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss-import", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * This plugin can consume local files, node modules or web_modules. To resolve path of an `@import` rule, it can look into root directory (by default `process.cwd()`), `web_modules`, `node_modules`
     * or local modules. _When importing a module, it will look for `index.css` or file referenced in `package.json` in the `style` or `main` fields._ You can also provide manually multiples paths where
@@ -28,4 +29,3 @@ object ^ extends js.Object {
   def apply(): Transformer = js.native
   def apply(options: AtImportOptions): Transformer = js.native
 }
-

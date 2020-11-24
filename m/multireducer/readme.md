@@ -10,9 +10,9 @@ A utility to wrap many copies of a single Redux reducer into a single key-based 
 | ------------------ | :-------------: |
 | Full name          | multireducer |
 | Keywords           | react, reactjs, flux, redux, react-redux, multireducer, decorator |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 202331 |
+| # releases         | 0 |
+| # dependents       | 20 |
+| # downloads        | 225070 |
 | # stars            | 3 |
 
 ## Links

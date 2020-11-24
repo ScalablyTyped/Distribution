@@ -11,13 +11,14 @@ The lodash method `_.unset` exported as a module.
 | Full name          | lodash.unset |
 | Keywords           | lodash-modularized, unset |
 | # releases         | 0 |
-| # dependents       | 87 |
-| # downloads        | 2332254 |
+| # dependents       | 105 |
+| # downloads        | 2659961 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.unset)
     
 

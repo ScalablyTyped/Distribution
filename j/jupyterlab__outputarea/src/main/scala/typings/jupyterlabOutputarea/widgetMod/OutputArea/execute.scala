@@ -5,11 +5,12 @@ import typings.jupyterlabServices.messagesMod.IExecuteReplyMsg
 import typings.luminoCoreutils.jsonMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/outputarea/lib/widget", "OutputArea.execute")
 @js.native
 object execute extends js.Object {
+  
   /**
     * Execute code on an output area.
     */
@@ -25,4 +26,3 @@ object execute extends js.Object {
     metadata: JSONObject
   ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
 }
-

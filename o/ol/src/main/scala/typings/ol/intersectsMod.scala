@@ -2,11 +2,12 @@ package typings.ol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/format/filter/Intersects", JSImport.Namespace)
 @js.native
 object intersectsMod extends js.Object {
+  
   @js.native
   class default protected ()
     extends typings.ol.spatialMod.default {
@@ -16,4 +17,3 @@ object intersectsMod extends js.Object {
   
   type Intersects = typings.ol.spatialMod.default
 }
-

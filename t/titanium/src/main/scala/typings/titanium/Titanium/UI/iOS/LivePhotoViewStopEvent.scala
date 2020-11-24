@@ -2,39 +2,43 @@ package typings.titanium.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when the Live Photo playback stops.
   */
 @js.native
 trait LivePhotoViewStopEvent extends LivePhotoViewBaseEvent {
+  
   /**
     * Returns the `playbackStyle` that was provided to start the playback.
     */
   var playbackStyle: Double = js.native
 }
-
 object LivePhotoViewStopEvent {
+  
   @scala.inline
   def apply(playbackStyle: Double, source: LivePhotoView): LivePhotoViewStopEvent = {
     val __obj = js.Dynamic.literal(playbackStyle = playbackStyle.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LivePhotoViewStopEvent]
   }
+  
   @scala.inline
   implicit class LivePhotoViewStopEventOps[Self <: LivePhotoViewStopEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPlaybackStyle(value: Double): Self = this.set("playbackStyle", value.asInstanceOf[js.Any])
   }
-  
 }
-

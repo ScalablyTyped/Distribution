@@ -7,12 +7,12 @@ import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataProtectionProvider extends IDataProtectionProvider
-
 object DataProtectionProvider {
+  
   @scala.inline
   def apply(
     protectAsync: IBuffer => IAsyncOperation[IBuffer],
@@ -24,4 +24,3 @@ object DataProtectionProvider {
     __obj.asInstanceOf[DataProtectionProvider]
   }
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Dlpjobs")
 @js.native
 class ResourceProjectsDlpjobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.dlpJobs.cancel
     * @desc Starts asynchronous cancellation on a long-running DlpJob. The
@@ -48,6 +48,9 @@ class ResourceProjectsDlpjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.dlpJobs.create
     * @desc Creates a new job to inspect storage or calculate risk metrics. See
@@ -85,6 +88,7 @@ class ResourceProjectsDlpjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DlpJob]
   ): Unit = js.native
+  
   /**
     * dlp.projects.dlpJobs.delete
     * @desc Deletes a long-running DlpJob. This method indicates that the
@@ -120,6 +124,7 @@ class ResourceProjectsDlpjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dlp.projects.dlpJobs.get
     * @desc Gets the latest state of a long-running DlpJob. See
@@ -153,6 +158,7 @@ class ResourceProjectsDlpjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DlpJob]
   ): Unit = js.native
+  
   /**
     * dlp.projects.dlpJobs.list
     * @desc Lists DlpJobs that match the specified filter in the request. See
@@ -192,4 +198,3 @@ class ResourceProjectsDlpjobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListDlpJobsResponse]
   ): Unit = js.native
 }
-

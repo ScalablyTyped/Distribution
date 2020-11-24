@@ -2,7 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.SourceMapper")
 @js.native
@@ -17,11 +17,10 @@ class SourceMapper protected ()
     resolvePath: js.Function1[/* path */ String, String]
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.SourceMapper")
 @js.native
 object SourceMapper extends js.Object {
+  
   var MapFileExtension: String = js.native
 }
-

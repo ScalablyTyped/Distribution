@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Performancereport")
 @js.native
 class ResourcePerformancereport protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.performanceReport.list
     * @desc Retrieves the authenticated user's list of performance metrics.
@@ -49,4 +51,3 @@ class ResourcePerformancereport protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPerformanceReportList]
   ): Unit = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "merge")
 @js.native
 object merge extends js.Object {
+  
   def apply[T](observables: (Double | ObservableInput[T] | SchedulerLike)*): Observable[T] = js.native
   def apply[T](v1: ObservableInput[T]): Observable[T] = js.native
   def apply[T](v1: ObservableInput[T], concurrent: Double): Observable[T] = js.native
@@ -121,4 +122,3 @@ object merge extends js.Object {
     scheduler: SchedulerLike
   ): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
 }
-

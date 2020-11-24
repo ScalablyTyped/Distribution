@@ -3,11 +3,12 @@ package typings.jupyterlabApputils.inputdialogMod.InputDialog
 import typings.jupyterlabApputils.dialogMod.Dialog.IResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/inputdialog", "InputDialog.getItem")
 @js.native
 object getItem extends js.Object {
+  
   /**
     * Create and show a input dialog for a choice.
     *
@@ -17,4 +18,3 @@ object getItem extends js.Object {
     */
   def apply(options: IItemOptions): js.Promise[IResult[String]] = js.native
 }
-

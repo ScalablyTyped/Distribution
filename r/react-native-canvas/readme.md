@@ -11,8 +11,8 @@ Typings are for version 0.1
 | Full name          | react-native-canvas |
 | Keywords           | - |
 | # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 36130 |
+| # dependents       | 4 |
+| # downloads        | 45322 |
 | # stars            | 1 |
 
 ## Links

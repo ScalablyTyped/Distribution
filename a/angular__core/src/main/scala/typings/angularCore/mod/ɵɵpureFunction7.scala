@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275\u0275pureFunction7")
 @js.native
 object ɵɵpureFunction7 extends js.Object {
+  
   def apply(
     slotOffset: Double,
     pureFn: js.Function7[
@@ -49,4 +50,3 @@ object ɵɵpureFunction7 extends js.Object {
     thisArg: js.Any
   ): js.Any = js.native
 }
-

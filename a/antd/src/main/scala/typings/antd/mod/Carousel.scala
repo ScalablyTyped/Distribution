@@ -1,22 +1,13 @@
 package typings.antd.mod
 
-import typings.antd.anon.Arrows
+import org.scalablytyped.runtime.TopLevel
 import typings.antd.carouselMod.CarouselProps
-import typings.antd.carouselMod.default
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Carousel")
 @js.native
-class Carousel protected () extends default {
-  def this(props: CarouselProps) = this()
-}
-
-/* static members */
-@JSImport("antd", "Carousel")
-@js.native
-object Carousel extends js.Object {
-  var defaultProps: Arrows = js.native
-}
-
+object Carousel extends TopLevel[ForwardRefExoticComponent[CarouselProps with RefAttributes[_]]]

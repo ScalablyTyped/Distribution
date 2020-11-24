@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.tabPaneMod.TabPaneProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "TabPane")
+@JSImport("reactstrap/lib", "TabPane")
 @js.native
-class TabPane[T] ()
+class TabPane ()
   extends Component[TabPaneProps, js.Object, js.Any]
-

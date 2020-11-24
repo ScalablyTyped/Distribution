@@ -7,28 +7,18 @@ import typings.sxml.mod.XML
 import typings.tstl.mod.HashMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/DistributedSystemArray", JSImport.Namespace)
 @js.native
 object distributedSystemArrayMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
     */
   abstract class DistributedSystemArray[System /* <: DistributedSystem */] () extends ParallelSystemArray[System] {
-    /**
-      * @hidden
-      */
-    var estimate_process_resource: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var estimate_system_performance: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var process_map_ : js.Any = js.native
+    
     /**
       * Factory method creating a child {@link DistributedProcess process} object.
       *
@@ -36,12 +26,24 @@ object distributedSystemArrayMod extends js.Object {
       * @return A new {@link DistributedProcess} object.
       */
     /* protected */ def createProcess(xml: XML): DistributedProcess = js.native
+    
     /**
       * Erase a process.
       *
       * @param name Name, identifier of target {@link DistributedProcess process}.
       */
     def eraseProcess(name: String): Boolean = js.native
+    
+    /**
+      * @hidden
+      */
+    var estimate_process_resource: js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var estimate_system_performance: js.Any = js.native
+    
     /**
       * Get a process.
       *
@@ -50,6 +52,7 @@ object distributedSystemArrayMod extends js.Object {
       * @return The specified process.
       */
     def getProcess(name: String): DistributedProcess = js.native
+    
     /**
       * Get process map.
       *
@@ -58,6 +61,7 @@ object distributedSystemArrayMod extends js.Object {
       * @return An {@link HasmMap> containing pairs of string and {@link DistributedProcess} object.
       */
     def getProcessMap(): HashMap[String, DistributedProcess] = js.native
+    
     /**
       * Test whether the process exists.
       *
@@ -66,6 +70,7 @@ object distributedSystemArrayMod extends js.Object {
       * @return Whether the process has or not.
       */
     def hasProcess(name: String): Boolean = js.native
+    
     /**
       * Insert a process.
       *
@@ -73,7 +78,10 @@ object distributedSystemArrayMod extends js.Object {
       * @return Success flag.
       */
     def insertProcess(process: DistributedProcess): Boolean = js.native
+    
+    /**
+      * @hidden
+      */
+    var process_map_ : js.Any = js.native
   }
-  
 }
-

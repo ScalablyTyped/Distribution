@@ -2,7 +2,7 @@ package typings.googleVisualization.global.google.visualization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.visualization.DataView")
 @js.native
@@ -11,4 +11,3 @@ class DataView protected ()
   def this(data: typings.googleVisualization.google.visualization.DataTable) = this()
   def this(data: typings.googleVisualization.google.visualization.DataView) = this()
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a stream which allows writing the data of persistent objects.
@@ -23,8 +23,8 @@ trait ObjectOutputStream
   extends XObjectOutputStream
      with XActiveDataSource
      with XConnectable
-
 object ObjectOutputStream {
+  
   @scala.inline
   def apply(
     OutputStream: XOutputStream,
@@ -57,4 +57,3 @@ object ObjectOutputStream {
     __obj.asInstanceOf[ObjectOutputStream]
   }
 }
-

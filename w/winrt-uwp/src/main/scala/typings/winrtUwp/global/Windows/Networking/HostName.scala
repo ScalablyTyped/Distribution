@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Networking
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a hostname or an IP address. */
 @JSGlobal("Windows.Networking.HostName")
@@ -15,11 +15,11 @@ class HostName protected ()
     */
   def this(hostName: String) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Networking.HostName")
 @js.native
 object HostName extends js.Object {
+  
   /**
     * Compares two strings to determine if they represent the same hostname.
     * @param value1 A hostname or IP address.
@@ -28,4 +28,3 @@ object HostName extends js.Object {
     */
   def compare(value1: String, value2: String): Double = js.native
 }
-

@@ -2,16 +2,17 @@ package typings.electron.Electron
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebRequest extends js.Object {
+  
   /**
     * The `listener` will be called with `listener(details)` when a server initiated
     * redirect is about to occur.
     */
   def onBeforeRedirect(): Unit = js.native
-  // Docs: http://electronjs.org/docs/api/web-request
+  // Docs: https://electronjs.org/docs/api/web-request
   /**
     * The `listener` will be called with `listener(details)` when a server initiated
     * redirect is about to occur.
@@ -19,6 +20,7 @@ trait WebRequest extends js.Object {
   def onBeforeRedirect(filter: Filter): Unit = js.native
   def onBeforeRedirect(filter: Filter, listener: js.Function1[/* details */ OnBeforeRedirectListenerDetails, Unit]): Unit = js.native
   def onBeforeRedirect(listener: js.Function1[/* details */ OnBeforeRedirectListenerDetails, Unit]): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details, callback)` when a request
     * is about to occur.
@@ -56,6 +58,7 @@ trait WebRequest extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details, callback)` before sending
     * an HTTP request, once the request headers are available. This may occur after a
@@ -87,6 +90,7 @@ trait WebRequest extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details)` when a request is
     * completed.
@@ -99,6 +103,7 @@ trait WebRequest extends js.Object {
   def onCompleted(filter: Filter): Unit = js.native
   def onCompleted(filter: Filter, listener: js.Function1[/* details */ OnCompletedListenerDetails, Unit]): Unit = js.native
   def onCompleted(listener: js.Function1[/* details */ OnCompletedListenerDetails, Unit]): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details)` when an error occurs.
     */
@@ -109,6 +114,7 @@ trait WebRequest extends js.Object {
   def onErrorOccurred(filter: Filter): Unit = js.native
   def onErrorOccurred(filter: Filter, listener: js.Function1[/* details */ OnErrorOccurredListenerDetails, Unit]): Unit = js.native
   def onErrorOccurred(listener: js.Function1[/* details */ OnErrorOccurredListenerDetails, Unit]): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details, callback)` when HTTP
     * response headers of a request have been received.
@@ -138,6 +144,7 @@ trait WebRequest extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details)` when first byte of the
     * response body is received. For HTTP requests, this means that the status line
@@ -152,6 +159,7 @@ trait WebRequest extends js.Object {
   def onResponseStarted(filter: Filter): Unit = js.native
   def onResponseStarted(filter: Filter, listener: js.Function1[/* details */ OnResponseStartedListenerDetails, Unit]): Unit = js.native
   def onResponseStarted(listener: js.Function1[/* details */ OnResponseStartedListenerDetails, Unit]): Unit = js.native
+  
   /**
     * The `listener` will be called with `listener(details)` just before a request is
     * going to be sent to the server, modifications of previous `onBeforeSendHeaders`
@@ -167,4 +175,3 @@ trait WebRequest extends js.Object {
   def onSendHeaders(filter: Filter, listener: js.Function1[/* details */ OnSendHeadersListenerDetails, Unit]): Unit = js.native
   def onSendHeaders(listener: js.Function1[/* details */ OnSendHeadersListenerDetails, Unit]): Unit = js.native
 }
-

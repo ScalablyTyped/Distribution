@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
@@ -15,8 +15,8 @@ trait XEmbeddedObjectCreator
      with XEmbedObjectFactory
      with XLinkCreator
      with XLinkFactory
-
 object XEmbeddedObjectCreator {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -33,4 +33,3 @@ object XEmbeddedObjectCreator {
     __obj.asInstanceOf[XEmbeddedObjectCreator]
   }
 }
-

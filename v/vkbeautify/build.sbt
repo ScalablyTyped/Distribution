@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vkbeautify"
-version := "0.99-dt-20200227Z-d2dd0f"
+version := "0.99-dt-20200227Z-8e3570"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

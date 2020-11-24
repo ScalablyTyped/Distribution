@@ -12,7 +12,7 @@ Create an array of dates.
 | Keywords           | date, date range, array, time |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 8061 |
+| # downloads        | 8867 |
 | # stars            | 0 |
 
 ## Links

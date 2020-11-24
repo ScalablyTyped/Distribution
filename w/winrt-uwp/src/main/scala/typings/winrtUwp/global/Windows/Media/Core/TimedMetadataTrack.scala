@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a timed metadata track. The track contains a list of IMediaCue objects and raises events at the beginning and end of the time window of each cue. */
 @JSGlobal("Windows.Media.Core.TimedMetadataTrack")
@@ -17,4 +17,3 @@ class TimedMetadataTrack protected ()
     */
   def this(id: String, language: String, kind: typings.winrtUwp.Windows.Media.Core.TimedMetadataKind) = this()
 }
-

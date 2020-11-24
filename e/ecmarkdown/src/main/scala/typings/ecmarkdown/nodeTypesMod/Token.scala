@@ -13,7 +13,7 @@ import typings.ecmarkdown.ecmarkdownStrings.ul
 import typings.ecmarkdown.ecmarkdownStrings.whitespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ecmarkdown.nodeTypesMod.EOFToken
@@ -29,62 +29,71 @@ import scala.scalajs.js.annotation._
   - typings.ecmarkdown.nodeTypesMod.OpaqueTagToken
 */
 trait Token extends js.Object
-
 object Token {
+  
   @scala.inline
-  def CommentToken(contents: String, name: comment): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def CommentToken(contents: String, location: LocationRange, name: comment): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def ParabreakToken(contents: String, name: parabreak): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def ParabreakToken(contents: String, location: LocationRange, name: parabreak): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def OrderedListToken(contents: String, name: ol): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def OrderedListToken(contents: String, location: LocationRange, name: ol): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def WhitespaceToken(contents: String, name: whitespace): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def WhitespaceToken(contents: String, location: LocationRange, name: whitespace): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def FormatToken(contents: String, name: Format): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def FormatToken(contents: String, location: LocationRange, name: Format): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def EOFToken(done: `true`, name: EOF): Token = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def EOFToken(done: `true`, location: LocationRange, name: EOF): Token = {
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def OpaqueTagToken(contents: String, name: opaqueTag): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def OpaqueTagToken(contents: String, location: LocationRange, name: opaqueTag): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def TextToken(contents: String, name: text): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def TextToken(contents: String, location: LocationRange, name: text): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def LinebreakToken(contents: String, name: linebreak): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def LinebreakToken(contents: String, location: LocationRange, name: linebreak): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def UnorderedListToken(contents: String, name: ul): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def UnorderedListToken(contents: String, location: LocationRange, name: ul): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
-  def TagToken(contents: String, name: tag): Token = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def TagToken(contents: String, location: LocationRange, name: tag): Token = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }
-

@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodemailer/lib/shared", "resolveContent")
 @js.native
 object resolveContent extends js.Object {
+  
   def apply(data: js.Array[_], key: String): js.Promise[Buffer | String] = js.native
   def apply(
     data: js.Array[_],
@@ -34,4 +35,3 @@ object resolveContent extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* value */ Buffer | String, Unit]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Accessibility manager recreates the ability to tab and have content read by screen readers.
@@ -22,4 +22,3 @@ class AccessibilityManager protected ()
   extends typings.pixiJs.PIXI.AccessibilityManager {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-

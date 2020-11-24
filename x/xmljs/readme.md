@@ -12,7 +12,7 @@ A small and simple package which can traverse a XML document
 | Keywords           | xml, xmljs, soap |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14225 |
+| # downloads        | 34667 |
 | # stars            | 0 |
 
 ## Links

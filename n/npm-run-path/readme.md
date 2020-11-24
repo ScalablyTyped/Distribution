@@ -10,9 +10,9 @@ Get your PATH prepended with locally installed binaries
 | ------------------ | :-------------: |
 | Full name          | npm-run-path |
 | Keywords           | npm, run, path, package, bin, binary, binaries, script, cli, command-line, execute, executable |
-| # releases         | 3 |
-| # dependents       | 102 |
-| # downloads        | 443268028 |
+| # releases         | 5 |
+| # dependents       | 165 |
+| # downloads        | 817742669 |
 | # stars            | 2 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Thumbnails")
 @js.native
 class ResourceThumbnails protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.thumbnails.set
     * @desc Uploads a custom video thumbnail to YouTube and sets it for a
@@ -47,4 +49,3 @@ class ResourceThumbnails protected () extends js.Object {
     callback: BodyResponseCallback[SchemaThumbnailSetResponse]
   ): Unit = js.native
 }
-

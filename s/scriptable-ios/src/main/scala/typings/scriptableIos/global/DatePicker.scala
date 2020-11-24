@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Presents a date picker._
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
   */
 class DatePicker ()
   extends typings.scriptableIos.DatePicker
-

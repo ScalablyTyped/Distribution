@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a specialized interface for a 2D poly-polygon containing straight line and Bezier segments.
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XBezierPolyPolygon2D extends XPolyPolygon2D {
+  
   /**
     * Get a single point from the poly-polygon.
     * @param nPolygonIndex The index of the polygon where the point to be extract is contained within. This index must be in the range [0,numPolygons-1].
@@ -29,6 +30,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
   def getBezierSegment(nPolygonIndex: Double, nPointIndex: Double): RealBezierSegment2D = js.native
+  
   /**
     * Query subset of this poly-polygon.
     *
@@ -42,6 +44,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
   def getBezierSegments(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealBezierSegment2D]] = js.native
+  
   /**
     * Set a single point on the poly-polygon.
     *
@@ -53,6 +56,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
   def setBezierSegment(point: RealBezierSegment2D, nPolygonIndex: Double, nPointIndex: Double): Unit = js.native
+  
   /**
     * Set the specified sequence of Bezier segments to the poly-polygon.
     *
@@ -63,8 +67,8 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     */
   def setBezierSegments(points: SeqEquiv[SeqEquiv[RealBezierSegment2D]], nPolygonIndex: Double): Unit = js.native
 }
-
 object XBezierPolyPolygon2D {
+  
   @scala.inline
   def apply(
     FillRule: FillRule,
@@ -87,26 +91,32 @@ object XBezierPolyPolygon2D {
     val __obj = js.Dynamic.literal(FillRule = FillRule.asInstanceOf[js.Any], NumberOfPolygons = NumberOfPolygons.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPolyPolygon = js.Any.fromFunction2(addPolyPolygon), getBezierSegment = js.Any.fromFunction2(getBezierSegment), getBezierSegments = js.Any.fromFunction4(getBezierSegments), getFillRule = js.Any.fromFunction0(getFillRule), getNumberOfPolygonPoints = js.Any.fromFunction1(getNumberOfPolygonPoints), getNumberOfPolygons = js.Any.fromFunction0(getNumberOfPolygons), isClosed = js.Any.fromFunction1(isClosed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setBezierSegment = js.Any.fromFunction3(setBezierSegment), setBezierSegments = js.Any.fromFunction2(setBezierSegments), setClosed = js.Any.fromFunction2(setClosed), setFillRule = js.Any.fromFunction1(setFillRule))
     __obj.asInstanceOf[XBezierPolyPolygon2D]
   }
+  
   @scala.inline
   implicit class XBezierPolyPolygon2DOps[Self <: XBezierPolyPolygon2D] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetBezierSegment(value: (Double, Double) => RealBezierSegment2D): Self = this.set("getBezierSegment", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetBezierSegments(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealBezierSegment2D]]): Self = this.set("getBezierSegments", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setSetBezierSegment(value: (RealBezierSegment2D, Double, Double) => Unit): Self = this.set("setBezierSegment", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setSetBezierSegments(value: (SeqEquiv[SeqEquiv[RealBezierSegment2D]], Double) => Unit): Self = this.set("setBezierSegments", js.Any.fromFunction2(value))
   }
-  
 }
-

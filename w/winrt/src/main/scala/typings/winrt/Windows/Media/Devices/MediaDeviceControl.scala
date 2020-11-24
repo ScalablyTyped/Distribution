@@ -4,12 +4,12 @@ import typings.winrt.anon.SucceededBoolean
 import typings.winrt.anon.SucceededValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaDeviceControl extends IMediaDeviceControl
-
 object MediaDeviceControl {
+  
   @scala.inline
   def apply(
     capabilities: MediaDeviceControlCapabilities,
@@ -22,4 +22,3 @@ object MediaDeviceControl {
     __obj.asInstanceOf[MediaDeviceControl]
   }
 }
-

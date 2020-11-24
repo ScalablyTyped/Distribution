@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PostProcessRenderPipeline")
 @js.native
@@ -15,4 +15,3 @@ class PostProcessRenderPipeline protected ()
     */
   def this(engine: typings.babylonjs.BABYLON.Engine, name: String) = this()
 }
-

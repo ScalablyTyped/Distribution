@@ -10,9 +10,9 @@ Makes executables from your scripts with Webpack
 | ------------------ | :-------------: |
 | Full name          | webpack-pkg-plugin-v4 |
 | Keywords           | webpack, webpack-plugin, pkg, executable, binary |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 11544 |
+| # downloads        | 10747 |
 | # stars            | 0 |
 
 ## Links

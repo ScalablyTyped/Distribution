@@ -2,7 +2,7 @@ package typings.playerframework.global.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class InteractiveViewModel ()
   extends typings.playerframework.PlayerFramework.InteractiveViewModel
-

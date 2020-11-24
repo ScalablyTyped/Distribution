@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fact Check Tools API
@@ -27,8 +27,10 @@ import scala.scalajs.js.annotation._
 class Factchecktools protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var claims: ResourceClaims = js.native
+  
   var context: APIRequestContext = js.native
+  
   var pages: ResourcePages = js.native
 }
-

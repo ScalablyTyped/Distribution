@@ -2,11 +2,12 @@ package typings.jsrsasign.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "readFileUTF8")
 @js.native
 object readFileUTF8 extends js.Object {
+  
   /**
     * read file and return file contents as utf-8 string
     * @param utf8File file name to be read
@@ -16,4 +17,3 @@ object readFileUTF8 extends js.Object {
     */
   def apply(utf8File: String): String = js.native
 }
-

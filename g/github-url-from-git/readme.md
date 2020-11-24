@@ -11,8 +11,8 @@ Parse a github git url and return the github repo url
 | Full name          | github-url-from-git |
 | Keywords           | github, git, url, parser |
 | # releases         | 0 |
-| # dependents       | 110 |
-| # downloads        | 3948854 |
+| # dependents       | 119 |
+| # downloads        | 4932322 |
 | # stars            | 1 |
 
 ## Links

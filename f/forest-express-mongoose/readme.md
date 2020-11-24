@@ -10,9 +10,9 @@ Official Express/Mongoose Liana for Forest
 | ------------------ | :-------------: |
 | Full name          | forest-express-mongoose |
 | Keywords           | forest, admin, panel, interface, mongoose |
-| # releases         | 69 |
+| # releases         | 63 |
 | # dependents       | 2 |
-| # downloads        | 86765 |
+| # downloads        | 84845 |
 | # stars            | 0 |
 
 ## Links

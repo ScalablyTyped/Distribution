@@ -3,7 +3,7 @@ package typings.typeahead
 import typings.jquery.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bloodhound is the typeahead.js suggestion engine. Bloodhound is robust,
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Bloodhound_[T] extends js.Object {
+  
   /**
     * Takes one argument, data, which is expected to be an array.
     * The data passed in will get added to the internal search index.
@@ -19,24 +20,29 @@ trait Bloodhound_[T] extends js.Object {
     * @param data Data to be added to the internal search index.
     */
   def add(data: js.Array[T]): Unit = js.native
+  
   /**
     * Returns all items from the internal search index.
     */
   def all(): js.Array[T] = js.native
+  
   /**
     * Clears the internal search index that's powered by local, prefetch, and #add.
     */
   def clear(): Bloodhound[T] = js.native
+  
   /**
     * If you're using prefetch, data gets cached in local storage in an effort to cut down on unnecessary network requests.
     * clearPrefetchCache offers a way to programmatically clear said cache.
     */
   def clearPrefetchCache(): Bloodhound[T] = js.native
+  
   /**
     * If you're using remote, Bloodhound will cache the 10 most recent responses in an effort to provide a better user experience.
     * clearRemoteCache offers a way to programmatically clear said cache.
     */
   def clearRemoteCache(): Bloodhound[T] = js.native
+  
   /**
     * Returns the data in the local search index corresponding to ids.
     *
@@ -44,6 +50,7 @@ trait Bloodhound_[T] extends js.Object {
     * @returns The corresponding data.
     */
   def get(ids: js.Array[Double]): js.Array[T] = js.native
+  
   /**
     * Kicks off the initialization of the suggestion engine. Initialization
     * entails adding the data provided by local and prefetch to the internal
@@ -63,6 +70,7 @@ trait Bloodhound_[T] extends js.Object {
     */
   def initialize(): JQueryPromise[T] = js.native
   def initialize(reinitialize: Boolean): JQueryPromise[T] = js.native
+  
   /**
     * Returns the data that matches query. Matches found in the local search
     * index will be passed to the sync callback. If the data passed to sync
@@ -80,9 +88,9 @@ trait Bloodhound_[T] extends js.Object {
     sync: js.Function1[/* datums */ js.Array[T], Unit],
     async: js.Function1[/* datums */ js.Array[T], Unit]
   ): js.Array[T] = js.native
+  
   /*
     * DEPRECATED: wraps the suggestion engine in an adapter that is compatible with the typeahead jQuery plugin
     */
   def ttAdapter(): js.Any = js.native
 }
-

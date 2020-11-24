@@ -7,10 +7,11 @@ import typings.qlikVisualizationextensions.TableAPI.IQTable
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRoot extends js.Object {
+  
   /**
     * promise object
     * Promise utility that can be used for asynchronous operations.
@@ -22,7 +23,7 @@ trait IRoot extends js.Object {
     * reject
     */
   var Promise: PromiseConstructor = js.native
-  var navigation: INavigation = js.native
+  
   /**
     * Calls the Qlik Sense repository.
     * @param path - Path to the Qlik Sense repository.
@@ -35,6 +36,7 @@ trait IRoot extends js.Object {
   def callRepository(path: String, method: js.UndefOr[scala.Nothing], body: String): IPromise[_] = js.native
   def callRepository(path: String, method: String): IPromise[_] = js.native
   def callRepository(path: String, method: String, body: String): IPromise[_] = js.native
+  
   /**
     * Gets a reference to the current app. Use the currApp method in an extension to get a reference to the app currently displayed.
     * @param [reference] - Optional. Reference to extension object. Introduced in version 1.1.
@@ -42,6 +44,7 @@ trait IRoot extends js.Object {
     */
   def currApp(): IApp = js.native
   def currApp(`object`: js.Any): IApp = js.native
+  
   /**
     * Gets a list of Qlik Sense apps that you potentially can connect to and registers a callback to receive the data.
     * The getAppList method opens a WebSocket, gets the app list, and then closes the WebSocket.
@@ -57,6 +60,7 @@ trait IRoot extends js.Object {
     */
   def getAppList(callback: js.Any): Unit = js.native
   def getAppList(callback: js.Any, config: js.Any): Unit = js.native
+  
   /**
     * Gets a list of extensions installed for Qlik Sense. The reply contains all extensions,
     * that is widget libraries, visualization extensions and mashups.
@@ -65,6 +69,7 @@ trait IRoot extends js.Object {
     */
   def getExtensionList(): IPromise[_] = js.native
   def getExtensionList(callback: js.Any): IPromise[_] = js.native
+  
   /**
     * Opens a WebSocekt connection to the Qlik engine for global methods.
     * @param [config] - Optional. Parameters:
@@ -77,6 +82,9 @@ trait IRoot extends js.Object {
     * @return - A global JavaScript object with global methods.
     */
   def getGlobal(config: js.Any): js.Any = js.native
+  
+  var navigation: INavigation = js.native
+  
   /**
     * Opens a Qlik Sense app. You can open multiple apps.
     * Most other methods are defined on the app.
@@ -94,6 +102,7 @@ trait IRoot extends js.Object {
     */
   def openApp(appId: String): js.Any = js.native
   def openApp(appId: String, config: js.Any): js.Any = js.native
+  
   /**
     * Registers an extension for use in this mashup. The extension is not installed on the
     * Qlik Sense server and only available in the session where it is created.
@@ -105,12 +114,14 @@ trait IRoot extends js.Object {
     */
   def registerExtension(id: String, impl: js.Any): Unit = js.native
   def registerExtension(id: String, impl: js.Any, metadata: js.Any): Unit = js.native
+  
   /**
     * Sends a resize event to all Qlik Sense objects.
     * @param [ID] - Object id. Optional: if no ID resize event will be sent to all objects.
     */
   def resize(): Unit = js.native
   def resize(ID: String): Unit = js.native
+  
   /**
     * Creates a session app JavaScript object with app methods.
     * @param [config] - Additional configuration parameters
@@ -118,6 +129,7 @@ trait IRoot extends js.Object {
     */
   def sessionApp(): IApp = js.native
   def sessionApp(config: ISessionAppConfig): IApp = js.native
+  
   /**
     * Creates a session app JavaScript object with app methods from an existing app. You can create one session app per app.
     * @param [appId] - App id of the app to base the session app upon.
@@ -126,6 +138,7 @@ trait IRoot extends js.Object {
     */
   def sessionAppFromApp(appId: String): IApp = js.native
   def sessionAppFromApp(appId: String, config: ISessionAppConfig): IApp = js.native
+  
   /**
     * Sets a specific language for the Qlik Sense session.
     * Language should be defined before the app is opened meaning the setLanguage
@@ -148,6 +161,7 @@ trait IRoot extends js.Object {
     *       # Traditional Chinese: (introduced in version 3.0) short: Do not use! long: zh-TW
     */
   def setLanguage(lang: String): Unit = js.native
+  
   /**
     * Registers a callback for error handling. Standard Qlik Sense error
     * handling is used if this method is not called.
@@ -156,6 +170,7 @@ trait IRoot extends js.Object {
     */
   def setOnError(onError: js.Any): Unit = js.native
   def setOnError(onError: js.Any, onWarning: js.Any): Unit = js.native
+  
   /**
     * Create a QTable object that wraps data in your extension and provides an object oriented interface.
     * @param ext - Extension or angular scope for the extension.
@@ -165,4 +180,3 @@ trait IRoot extends js.Object {
   def table(ext: js.Any): IQTable = js.native
   def table(ext: js.Any, path: String): IQTable = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.virtualDom.VirtualDOM
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.virtualDom.VirtualDOM.VText
@@ -12,14 +12,15 @@ import scala.scalajs.js.annotation._
   - typings.virtualDom.VirtualDOM.Thunk
 */
 trait VTree extends js.Object
-
 object VTree {
+  
   @scala.inline
   def VText(text: String, `type`: String, version: String): VTree = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VTree]
   }
+  
   @scala.inline
   def VNode(
     children: js.Array[VTree],
@@ -37,6 +38,7 @@ object VTree {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VTree]
   }
+  
   @scala.inline
   def Widget(
     destroy: Element => Unit,
@@ -48,6 +50,7 @@ object VTree {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VTree]
   }
+  
   @scala.inline
   def Thunk(render: VTree => VTree, `type`: String, vnode: VTree): VTree = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), vnode = vnode.asInstanceOf[js.Any])
@@ -55,4 +58,3 @@ object VTree {
     __obj.asInstanceOf[VTree]
   }
 }
-

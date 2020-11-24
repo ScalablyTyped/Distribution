@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a dictionary used for spell checking and hyphenation.
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 trait Dictionary
   extends XSearchableDictionary
      with XStorable
-
 object Dictionary {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -62,4 +62,3 @@ object Dictionary {
     __obj.asInstanceOf[Dictionary]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Audio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a limiter effect definition supported by the audio graph. */
 @JSGlobal("Windows.Media.Audio.LimiterEffectDefinition")
@@ -15,4 +15,3 @@ class LimiterEffectDefinition protected ()
     */
   def this(audioGraph: typings.winrtUwp.Windows.Media.Audio.AudioGraph) = this()
 }
-

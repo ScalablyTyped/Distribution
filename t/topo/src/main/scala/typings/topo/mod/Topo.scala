@@ -3,17 +3,14 @@ package typings.topo.mod
 import typings.topo.anon.After
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Topo object is the container for topologically sorting a list of nodes with non-circular interdependencies.
   */
 @js.native
 trait Topo[TNode, TGroup] extends js.Object {
-  /**
-    * An array of the topologically sorted nodes. This list is renewed upon each call to `topo.add()`.
-    */
-  var nodes: js.Array[TNode] = js.native
+  
   /**
     * Specifies an additional node or list of nodes to be topologically sorted.
     *
@@ -29,6 +26,7 @@ trait Topo[TNode, TGroup] extends js.Object {
   def add(nodes: TNode, options: After[TGroup]): js.Array[TNode] = js.native
   def add(nodes: js.Array[TNode]): js.Array[TNode] = js.native
   def add(nodes: js.Array[TNode], options: After[TGroup]): js.Array[TNode] = js.native
+  
   def merge(others: js.Array[Topo[TNode, TGroup]]): js.Array[TNode] = js.native
   /**
     * Merges another `Topo` object into the current object.
@@ -39,5 +37,9 @@ trait Topo[TNode, TGroup] extends js.Object {
     * @returns an array of the topologically sorted nodes. Will throw if a dependency error is found as a result of the combined items.
     */
   def merge(others: Topo[TNode, TGroup]): js.Array[TNode] = js.native
+  
+  /**
+    * An array of the topologically sorted nodes. This list is renewed upon each call to `topo.add()`.
+    */
+  var nodes: js.Array[TNode] = js.native
 }
-

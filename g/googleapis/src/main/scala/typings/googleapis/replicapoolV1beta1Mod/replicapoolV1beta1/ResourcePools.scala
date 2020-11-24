@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/replicapool/v1beta1", "replicapool_v1beta1.Resource$Pools")
 @js.native
 class ResourcePools protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * replicapool.pools.delete
     * @desc Deletes a replica pool.
@@ -40,6 +42,7 @@ class ResourcePools protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourcePoolsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePoolsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * replicapool.pools.get
     * @desc Gets information about a single replica pool.
@@ -66,6 +69,7 @@ class ResourcePools protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourcePoolsGet, options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
   def get(params: ParamsResourcePoolsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaPool]): Unit = js.native
+  
   /**
     * replicapool.pools.insert
     * @desc Inserts a new replica pool.
@@ -96,6 +100,7 @@ class ResourcePools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPool]
   ): Unit = js.native
+  
   /**
     * replicapool.pools.list
     * @desc List all replica pools.
@@ -127,6 +132,7 @@ class ResourcePools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPoolsListResponse]
   ): Unit = js.native
+  
   /**
     * replicapool.pools.resize
     * @desc Resize a pool. This is an asynchronous operation, and multiple
@@ -160,6 +166,7 @@ class ResourcePools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPool]
   ): Unit = js.native
+  
   /**
     * replicapool.pools.updatetemplate
     * @desc Update the template used by the pool.
@@ -192,4 +199,3 @@ class ResourcePools protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

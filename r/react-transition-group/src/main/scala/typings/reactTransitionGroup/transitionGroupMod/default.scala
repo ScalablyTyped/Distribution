@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.reactTransitionGroup.reactTransitionGroupStrings.div
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `<TransitionGroup>` component manages a set of `<Transition>` components
@@ -67,4 +67,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class default ()
   extends Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
-

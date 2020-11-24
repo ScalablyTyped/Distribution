@@ -2,13 +2,14 @@ package typings.d3Delaunay.mod.Delaunay
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface for the arc() method of the CanvasPathMethods API.
   */
 @js.native
 trait ArcContext extends js.Object {
+  
   /**
     * arc() method of the CanvasPathMethods API.
     */
@@ -22,4 +23,3 @@ trait ArcContext extends js.Object {
     counterclockwise: Boolean
   ): Unit = js.native
 }
-

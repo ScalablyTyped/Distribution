@@ -4,7 +4,7 @@ import typings.tensorflowTfjsLayers.baseCallbacksMod.CustomCallbackArgs
 import typings.tensorflowTfjsLayers.baseCallbacksMod.YieldEveryOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "CustomCallback")
 @js.native
@@ -13,4 +13,3 @@ class CustomCallback protected ()
   def this(args: CustomCallbackArgs) = this()
   def this(args: CustomCallbackArgs, yieldEvery: YieldEveryOptions) = this()
 }
-

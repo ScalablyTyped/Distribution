@@ -11,8 +11,8 @@ Optimised tokenizer/lexer generator! 🐄 Much performance. Moo!
 | Full name          | moo |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 69 |
-| # downloads        | 78599153 |
+| # dependents       | 107 |
+| # downloads        | 102120127 |
 | # stars            | 2 |
 
 ## Links

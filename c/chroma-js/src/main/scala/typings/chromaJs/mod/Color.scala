@@ -13,17 +13,20 @@ import typings.chromaJs.chromaJsStrings.rgb
 import typings.chromaJs.chromaJsStrings.rgba
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Color extends js.Object {
+  
   def alpha(): Double = js.native
   /**
     * Get and set the color opacity.
     */
   def alpha(a: Double): Color = js.native
+  
   def brighten(): Color = js.native
   def brighten(f: Double): Color = js.native
+  
   /**
     * Just like color.rgb but adds the alpha channel to the returned
     * array.
@@ -33,6 +36,7 @@ trait Color extends js.Object {
     * chroma('hsla(20, 100%, 40%, 0.5)').rgba() === [204,68,0,0.5]
     */
   def cmyk(): js.Tuple4[Double, Double, Double, Double] = js.native
+  
   /**
     * Returns a RGB() or HSL() string representation that can be used as CSS-color definition.
     * mode defaults to <code>'rgb'</code>
@@ -40,18 +44,22 @@ trait Color extends js.Object {
   def css(): String = js.native
   @JSName("css")
   def css_hsl(mode: hsl): String = js.native
+  
   def darken(): Color = js.native
   def darken(f: Double): Color = js.native
+  
   /**
     * Similar to saturate, but the opposite direction.
     */
   def desaturate(): Color = js.native
   def desaturate(s: Double): Color = js.native
+  
   /**
     * Returns a single channel value.
-    * @see set
+    * Also @see set
     */
   def get(modechan: String): Double = js.native
+  
   /**
     * Returns an array with the cyan, magenta, yellow, and key (black)
     * components, each as a normalized value between 0 and 1.
@@ -60,6 +68,7 @@ trait Color extends js.Object {
     * chroma('33cc00').gl() === [0.2,0.8,0,1]
     */
   def gl(): js.Tuple4[Double, Double, Double, Double] = js.native
+  
   /**
     * Alias of [lch](#color-lch), but with the components in reverse
     * order.
@@ -68,6 +77,7 @@ trait Color extends js.Object {
     * chroma('skyblue').hcl() === [235.11,25.94,79.21]
     */
   def hcl(): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Get color as hexadecimal string.
     *
@@ -87,6 +97,7 @@ trait Color extends js.Object {
   def hex_rgb(mode: rgb): String = js.native
   @JSName("hex")
   def hex_rgba(mode: rgba): String = js.native
+  
   /**
     * Returns an array with the `hue`, `saturation`, and `intensity`
     * components, each as number between 0 and 255. Note that for hue-less
@@ -97,6 +108,7 @@ trait Color extends js.Object {
     * chroma('white').hsi() === [NaN,0,1]
     */
   def hsi(): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Returns an array with the `hue`, `saturation`, and `lightness`
     * component. Hue is the color angle in degree (`0..360`), saturation
@@ -108,6 +120,7 @@ trait Color extends js.Object {
     * chroma('white').hsl() === [NaN,0,1,1]
     */
   def hsl(): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Returns an array with the `hue`, `saturation`, and `value`
     * components. Hue is the color angle in degree (`0..360`),
@@ -119,6 +132,7 @@ trait Color extends js.Object {
     * chroma('white').hsv() === [NaN,0,1]
     */
   def hsv(): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Returns an array with the **L**, **a**, and **b** components.
     *
@@ -126,6 +140,7 @@ trait Color extends js.Object {
     * chroma('orange').lab() === [74.94,23.93,78.95]
     */
   def lab(): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Returns an array with the **Lightness**, **chroma**, and **hue**
     * components.
@@ -134,6 +149,7 @@ trait Color extends js.Object {
     * chroma('skyblue').lch() === [79.21,25.94,235.11]
     */
   def lch(): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Relative brightness, according to the
     * [WCAG]{@link http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef} definition. Normalized to
@@ -145,11 +161,38 @@ trait Color extends js.Object {
     * The color space used defaults to RGB.
     */
   def luminance(l: Double): Color = js.native
-  def luminance(l: Double, colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl): Color = js.native
+  def luminance(l: Double, colorSpace: InterpolationMode): Color = js.native
+  
+  def mix(targetColor: String): Color = js.native
+  def mix(
+    targetColor: String,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
+  def mix(targetColor: String, f: Double): Color = js.native
+  def mix(
+    targetColor: String,
+    f: Double,
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
+  def mix(targetColor: Color): Color = js.native
+  def mix(
+    targetColor: Color,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
+  def mix(targetColor: Color, f: Double): Color = js.native
+  def mix(
+    targetColor: Color,
+    f: Double,
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
+  
   /**
     * Returns the named color. Falls back to hexadecimal RGB string, if the color isn't present.
     */
   def name(): String = js.native
+  
   /**
     * Returns the numeric representation of the hexadecimal RGB color.
     *
@@ -160,6 +203,7 @@ trait Color extends js.Object {
     * chroma('#ff0000').num() === 16711680
     */
   def num(): Double = js.native
+  
   /**
     * Returns an array with the red, green, and blue component, each as
     * number within the range 0..255. Chroma internally stores RGB
@@ -173,6 +217,7 @@ trait Color extends js.Object {
     */
   def rgb(): js.Tuple3[Double, Double, Double] = js.native
   def rgb(round: Boolean): js.Tuple3[Double, Double, Double] = js.native
+  
   /**
     * Just like color.rgb but adds the alpha channel to the returned array.
     *
@@ -182,11 +227,13 @@ trait Color extends js.Object {
     */
   def rgba(): js.Tuple4[Double, Double, Double, Double] = js.native
   def rgba(round: Boolean): js.Tuple4[Double, Double, Double, Double] = js.native
+  
   /**
     * Changes the saturation of a color by manipulating the Lch chromacity.
     */
   def saturate(): Color = js.native
   def saturate(s: Double): Color = js.native
+  
   def set(modechan: String, v: String): Color = js.native
   /**
     * Changes a single channel and returns the result a new chroma object.
@@ -198,10 +245,10 @@ trait Color extends js.Object {
     * chroma('darkseagreen').set('lch.c', '*2')
     */
   def set(modechan: String, v: Double): Color = js.native
+  
   /**
     * Estimate the temperature in Kelvin of any given color, though this makes the only sense for colors from the
     * [temperature gradient]{@link ChromaStatic.temperature} above.
     */
   def temperature(): Double = js.native
 }
-

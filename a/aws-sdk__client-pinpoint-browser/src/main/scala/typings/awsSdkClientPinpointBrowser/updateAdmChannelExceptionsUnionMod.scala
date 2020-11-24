@@ -2,11 +2,12 @@ package typings.awsSdkClientPinpointBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser/types/UpdateAdmChannelExceptionsUnion", JSImport.Namespace)
 @js.native
 object updateAdmChannelExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientPinpointBrowser.typesBadRequestExceptionMod.BadRequestException
     - typings.awsSdkClientPinpointBrowser.typesInternalServerErrorExceptionMod.InternalServerErrorException
@@ -16,6 +17,4 @@ object updateAdmChannelExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientPinpointBrowser.typesTooManyRequestsExceptionMod.TooManyRequestsException
   */
   trait UpdateAdmChannelExceptionsUnion extends js.Object
-  
 }
-

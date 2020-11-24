@@ -10,9 +10,9 @@ PouchDB adapter using HTTP (e.g. a remote CouchDB) as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-http |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 51 |
-| # downloads        | 381988 |
+| # releases         | 5 |
+| # dependents       | 61 |
+| # downloads        | 494630 |
 | # stars            | 1 |
 
 ## Links

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "multimap"
-version := "1.1-dt-20191216Z-0c1753"
+version := "1.1-dt-20191216Z-6512c2"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

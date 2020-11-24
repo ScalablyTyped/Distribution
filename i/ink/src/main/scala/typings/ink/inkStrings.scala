@@ -4,9 +4,118 @@ import typings.ink.colorizeMod.ColorType
 import typings.ink.domMod.ElementNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inkStrings {
+  
+  @scala.inline
+  def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
+  
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def background: background = "background".asInstanceOf[background]
+  
+  @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def classic: classic = "classic".asInstanceOf[classic]
+  
+  @scala.inline
+  def column: column = "column".asInstanceOf[column]
+  
+  @scala.inline
+  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
+  
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  
+  @scala.inline
+  def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def flex: flex = "flex".asInstanceOf[flex]
+  
+  @scala.inline
+  def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
+  
+  @scala.inline
+  def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
+  
+  @scala.inline
+  def foreground: foreground = "foreground".asInstanceOf[foreground]
+  
+  @scala.inline
+  def `ink-box`: `ink-box` = "ink-box".asInstanceOf[`ink-box`]
+  
+  @scala.inline
+  def `ink-root`: `ink-root` = "ink-root".asInstanceOf[`ink-root`]
+  
+  @scala.inline
+  def `ink-text`: `ink-text` = "ink-text".asInstanceOf[`ink-text`]
+  
+  @scala.inline
+  def `ink-virtual-text`: `ink-virtual-text` = "ink-virtual-text".asInstanceOf[`ink-virtual-text`]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def relative: relative = "relative".asInstanceOf[relative]
+  
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  
+  @scala.inline
+  def row: row = "row".asInstanceOf[row]
+  
+  @scala.inline
+  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
+  
+  @scala.inline
+  def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
+  
+  @scala.inline
+  def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
+  
+  @scala.inline
+  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @scala.inline
+  def truncate: truncate = "truncate".asInstanceOf[truncate]
+  
+  @scala.inline
+  def `truncate-end`: `truncate-end` = "truncate-end".asInstanceOf[`truncate-end`]
+  
+  @scala.inline
+  def `truncate-middle`: `truncate-middle` = "truncate-middle".asInstanceOf[`truncate-middle`]
+  
+  @scala.inline
+  def `truncate-start`: `truncate-start` = "truncate-start".asInstanceOf[`truncate-start`]
+  
+  @scala.inline
+  def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
   @js.native
   sealed trait Numbersigntext extends js.Object
   
@@ -114,78 +223,4 @@ object inkStrings {
   
   @js.native
   sealed trait wrap extends js.Object
-  
-  @scala.inline
-  def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def background: background = "background".asInstanceOf[background]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def classic: classic = "classic".asInstanceOf[classic]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
-  @scala.inline
-  def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
-  @scala.inline
-  def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
-  @scala.inline
-  def foreground: foreground = "foreground".asInstanceOf[foreground]
-  @scala.inline
-  def `ink-box`: `ink-box` = "ink-box".asInstanceOf[`ink-box`]
-  @scala.inline
-  def `ink-root`: `ink-root` = "ink-root".asInstanceOf[`ink-root`]
-  @scala.inline
-  def `ink-text`: `ink-text` = "ink-text".asInstanceOf[`ink-text`]
-  @scala.inline
-  def `ink-virtual-text`: `ink-virtual-text` = "ink-virtual-text".asInstanceOf[`ink-virtual-text`]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
-  @scala.inline
-  def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
-  @scala.inline
-  def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def truncate: truncate = "truncate".asInstanceOf[truncate]
-  @scala.inline
-  def `truncate-end`: `truncate-end` = "truncate-end".asInstanceOf[`truncate-end`]
-  @scala.inline
-  def `truncate-middle`: `truncate-middle` = "truncate-middle".asInstanceOf[`truncate-middle`]
-  @scala.inline
-  def `truncate-start`: `truncate-start` = "truncate-start".asInstanceOf[`truncate-start`]
-  @scala.inline
-  def wrap: wrap = "wrap".asInstanceOf[wrap]
 }
-

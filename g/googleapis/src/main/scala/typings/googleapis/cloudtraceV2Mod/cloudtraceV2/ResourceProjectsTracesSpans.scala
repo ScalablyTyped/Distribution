@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtrace/v2", "cloudtrace_v2.Resource$Projects$Traces$Spans")
 @js.native
 class ResourceProjectsTracesSpans protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudtrace.projects.traces.spans.createSpan
     * @desc Creates a new span.
@@ -43,4 +45,3 @@ class ResourceProjectsTracesSpans protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSpan]
   ): Unit = js.native
 }
-

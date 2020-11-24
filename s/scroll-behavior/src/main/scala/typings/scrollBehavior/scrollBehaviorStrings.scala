@@ -2,13 +2,12 @@ package typings.scrollBehavior
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollBehaviorStrings {
-  @js.native
-  sealed trait PUSH extends js.Object
   
   @scala.inline
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
+  @js.native
+  sealed trait PUSH extends js.Object
 }
-

@@ -12,7 +12,7 @@ The lodash method `_.forInRight` exported as a module.
 | Keywords           | lodash-modularized, forinright |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1410 |
+| # downloads        | 1246 |
 | # stars            | 0 |
 
 ## Links

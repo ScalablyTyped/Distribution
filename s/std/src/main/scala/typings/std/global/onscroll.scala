@@ -5,7 +5,7 @@ import typings.std.Event
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fires when the user repositions the scroll box in the scroll bar on the object.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object onscroll
   extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null]
-

@@ -12,7 +12,7 @@ React component to render math using MathJax
 | Keywords           | react, mathjax, math |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 2595770 |
+| # downloads        | 2617068 |
 | # stars            | 0 |
 
 ## Links

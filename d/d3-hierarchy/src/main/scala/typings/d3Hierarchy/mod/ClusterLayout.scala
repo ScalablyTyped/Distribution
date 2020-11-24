@@ -2,10 +2,11 @@ package typings.d3Hierarchy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClusterLayout[Datum] extends js.Object {
+  
   /**
     * Lays out the specified root hierarchy.
     * You may want to call `root.sort` before passing the hierarchy to the cluster layout.
@@ -13,6 +14,7 @@ trait ClusterLayout[Datum] extends js.Object {
     * @param root The specified root hierarchy.
     */
   def apply(root: HierarchyNode[Datum]): HierarchyPointNode[Datum] = js.native
+  
   /**
     * Returns the current node size, which defaults to null. A node size of null indicates that a layout size will be used instead.
     */
@@ -24,6 +26,7 @@ trait ClusterLayout[Datum] extends js.Object {
     * @param size The specified two-element size array.
     */
   def nodeSize(size: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current separation accessor, which defaults to: `(a, b) => a.parent == b.parent ? 1 : 2`.
     */
@@ -38,6 +41,7 @@ trait ClusterLayout[Datum] extends js.Object {
   def separation(
     separation: js.Function2[/* a */ HierarchyPointNode[Datum], /* b */ HierarchyPointNode[Datum], Double]
   ): this.type = js.native
+  
   /**
     * Returns the current layout size, which defaults to [1, 1]. A layout size of null indicates that a node size will be used instead.
     */
@@ -51,4 +55,3 @@ trait ClusterLayout[Datum] extends js.Object {
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
 }
-

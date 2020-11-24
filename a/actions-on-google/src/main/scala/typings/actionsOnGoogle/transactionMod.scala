@@ -9,11 +9,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", JSImport.Namespace)
 @js.native
 object transactionMod extends js.Object {
+  
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
@@ -69,6 +70,4 @@ object transactionMod extends js.Object {
     def this(options: GoogleActionsTransactionsV3TransactionRequirementsCheckSpec) = this()
     def this(options: GoogleActionsV2TransactionRequirementsCheckSpec) = this()
   }
-  
 }
-

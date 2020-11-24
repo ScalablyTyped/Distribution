@@ -3,12 +3,12 @@ package typings.kendoUi.kendo.effects
 import typings.kendoUi.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Transfer extends Effect
-
 object Transfer {
+  
   @scala.inline
   def apply(
     add: Effect => Effect,
@@ -21,4 +21,3 @@ object Transfer {
     __obj.asInstanceOf[Transfer]
   }
 }
-

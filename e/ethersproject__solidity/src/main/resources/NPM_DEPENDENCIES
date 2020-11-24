@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/solidity" : "5.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/solidity" : "5.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

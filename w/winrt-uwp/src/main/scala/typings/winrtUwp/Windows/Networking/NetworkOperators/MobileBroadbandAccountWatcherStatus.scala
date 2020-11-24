@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MobileBroadbandAccountWatcherStatus extends js.Object
-
 /** Describes different states of a MobileBroadbandAccountWatcherStatus object. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus")
 @js.native
 object MobileBroadbandAccountWatcherStatus extends js.Object {
+  
   /** The watcher has aborted its watching operation due to an unexpected error condition. No events will be delivered while the watcher is in this state. */
   @js.native
   sealed trait aborted extends MobileBroadbandAccountWatcherStatus
@@ -30,6 +30,4 @@ object MobileBroadbandAccountWatcherStatus extends js.Object {
   /** The watcher has been stopped. No events will be delivered while the watcher is in this state. */
   @js.native
   sealed trait stopped extends MobileBroadbandAccountWatcherStatus
-  
 }
-

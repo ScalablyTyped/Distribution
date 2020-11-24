@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO(yavanosta): conflict with base class properties
 // Since there is no support for this class in any browser, it's better
@@ -17,8 +17,9 @@ import scala.scalajs.js.annotation._
 // };
 @js.native
 trait CSSNumericArray extends /* index */ NumberDictionary[CSSNumericValue] {
+  
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[CSSNumericValue]] = js.native
+  
   val length: Double = js.native
 }
-

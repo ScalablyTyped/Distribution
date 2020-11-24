@@ -10,11 +10,15 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "cur")
 @js.native
 object cur extends js.Object {
+  
+  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = js.native
+  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = js.native
+  
   @js.native
   class ReportDefinition protected ()
     extends typings.pulumiAws.curMod.ReportDefinition {
@@ -28,12 +32,10 @@ object cur extends js.Object {
     def this(name: String, args: ReportDefinitionArgs) = this()
     def this(name: String, args: ReportDefinitionArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = js.native
-  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = js.native
   /* static members */
   @js.native
   object ReportDefinition extends js.Object {
+    
     /**
       * Get an existing ReportDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,12 +49,11 @@ object cur extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
     def get(name: String, id: Input[ID], state: ReportDefinitionState): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
     def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
+    
     /**
       * Returns true if the given object is an instance of ReportDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = js.native
   }
-  
 }
-

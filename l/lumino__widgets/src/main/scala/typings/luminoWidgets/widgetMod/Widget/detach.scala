@@ -2,11 +2,12 @@ package typings.luminoWidgets.widgetMod.Widget
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/widget", "Widget.detach")
 @js.native
 object detach extends js.Object {
+  
   /**
     * Detach the widget from its host DOM node.
     *
@@ -18,4 +19,3 @@ object detach extends js.Object {
     */
   def apply(widget: typings.luminoWidgets.widgetMod.Widget): Unit = js.native
 }
-

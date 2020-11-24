@@ -2,11 +2,12 @@ package typings.jsrsasign.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "hextob64u")
 @js.native
 object hextob64u extends js.Object {
+  
   /**
     * convert a hexadecimal string to a Base64URL encoded string.
     * @param s hexadecimal string
@@ -18,4 +19,3 @@ object hextob64u extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

@@ -9,10 +9,10 @@ Amazon Connect Streams Library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | amazon-connect-streams |
-| Keywords           | streams, softphone, rintone, connect |
-| # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 11 |
+| Keywords           | streams, softphone, ringtone, connect |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 12432 |
 | # stars            | 0 |
 
 ## Links

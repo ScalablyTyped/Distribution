@@ -3,11 +3,12 @@ package typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime
 import typings.luminoDatagrid.textrendererMod.TextRenderer.FormatFunc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatISODateTime")
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Create an ISO datetime format function.
     *
@@ -26,4 +27,3 @@ object ^ extends js.Object {
   def apply(): FormatFunc = js.native
   def apply(options: IOptions): FormatFunc = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "loglevel" : "1.6.8"
+      "loglevel" : "1.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "loglevel" : "1.6.8"
+      "loglevel" : "1.7.0"
     }
   ],
   "compile-devDependencies" : [

@@ -10,10 +10,11 @@ import typings.sparkpost.mod.TemplateMeta
 import typings.sparkpost.mod.UpdateTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Preview extends js.Object {
+  
   /**
     * Create a new template
     *
@@ -28,6 +29,7 @@ trait Preview extends js.Object {
     * @param callback The request callback with template id results
     */
   def create(template: CreateTemplate, callback: ResultsCallback[Id]): Unit = js.native
+  
   /**
     * Delete an existing template
     *
@@ -41,6 +43,7 @@ trait Preview extends js.Object {
     * @param callback The request callback
     */
   def delete(id: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Retrieve details about a specified template by its id
     *
@@ -65,6 +68,7 @@ trait Preview extends js.Object {
     * @param callback The request callback with Template results
     */
   def get(id: String, options: Draft, callback: ResultsCallback[Template]): Unit = js.native
+  
   /**
     * List a summary of all templates.
     *
@@ -76,6 +80,7 @@ trait Preview extends js.Object {
     * @param callback The request callback with TemplateMeta results array
     */
   def list(callback: ResultsCallback[js.Array[TemplateMeta]]): Unit = js.native
+  
   /**
     * Preview the most recent version of an existing template by id
     *
@@ -99,6 +104,7 @@ trait Preview extends js.Object {
     * @param callback The request callback with webhook id results
     */
   def preview(id: String, options: Substitutiondata, callback: ResultsCallback[TemplateContent]): Unit = js.native
+  
   /**
     * Update an existing template
     *
@@ -127,4 +133,3 @@ trait Preview extends js.Object {
     */
   def update(id: String, template: UpdateTemplate, options: Updatepublished, callback: ResultsCallback[Id]): Unit = js.native
 }
-

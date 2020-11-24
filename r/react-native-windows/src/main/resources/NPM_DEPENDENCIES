@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-windows" : "0.63.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-windows" : "0.63.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

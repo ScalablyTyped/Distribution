@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MethodMode denotes the mode in which method calls are run, i.e. either oneway or twoway. Mode oneway denotes that a call may be run asynchronously
@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait MethodMode extends js.Object
-
 object MethodMode {
+  
   /** method may be run asynchronously */
   @scala.inline
   def ONEWAY: `0` = 0.asInstanceOf[`0`]
+  
   /** method is run The */
   @scala.inline
   def TWOWAY: `1` = 1.asInstanceOf[`1`]
 }
-

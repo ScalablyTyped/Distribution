@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v3", "drive_v3.Resource$Comments")
 @js.native
 class ResourceComments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.comments.create
     * @desc Creates a new comment on a file.
@@ -42,6 +44,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
   /**
     * drive.comments.delete
     * @desc Deletes a comment.
@@ -67,6 +70,7 @@ class ResourceComments protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceCommentsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.comments.get
     * @desc Gets a comment by ID.
@@ -97,6 +101,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
   /**
     * drive.comments.list
     * @desc Lists a file's comments.
@@ -129,6 +134,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentList]
   ): Unit = js.native
+  
   /**
     * drive.comments.update
     * @desc Updates a comment with patch semantics.
@@ -160,4 +166,3 @@ class ResourceComments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
 }
-

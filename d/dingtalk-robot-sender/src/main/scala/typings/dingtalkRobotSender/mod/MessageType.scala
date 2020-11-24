@@ -12,7 +12,7 @@ import typings.dingtalkRobotSender.dingtalkRobotSenderStrings.markdown
 import typings.dingtalkRobotSender.dingtalkRobotSenderStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.dingtalkRobotSender.mod.Message.Text
@@ -22,32 +22,35 @@ import scala.scalajs.js.annotation._
   - typings.dingtalkRobotSender.mod.Message.FeedCardItem
 */
 trait MessageType extends js.Object
-
 object MessageType {
+  
   @scala.inline
   def FeedCardItem(feedCard: MessageURL_, msgtype: feedCard): MessageType = {
     val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
+  
   @scala.inline
   def Link(link: MessageUrl, msgtype: link): MessageType = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
+  
   @scala.inline
   def Text(msgtype: text, text: Content): MessageType = {
     val __obj = js.Dynamic.literal(msgtype = msgtype.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
+  
   @scala.inline
   def Markdown(markdown: IsAtAll, msgtype: markdown): MessageType = {
     val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
+  
   @scala.inline
   def ActionCard(actionCard: BtnOrientation, msgtype: actionCard): MessageType = {
     val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
 }
-

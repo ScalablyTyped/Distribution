@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/appmesh/mesh", "Mesh")
 @js.native
@@ -25,36 +25,52 @@ class Mesh protected () extends CustomResource {
   def this(name: String, args: MeshArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: MeshArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the service mesh.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The creation date of the service mesh.
     */
   val createdDate: Output_[String] = js.native
+  
   /**
     * The last update date of the service mesh.
     */
   val lastUpdatedDate: Output_[String] = js.native
+  
   /**
-    * The name to use for the service mesh.
+    * The AWS account ID of the service mesh's owner.
+    */
+  val meshOwner: Output_[String] = js.native
+  
+  /**
+    * The name to use for the service mesh. Must be between 1 and 255 characters in length.
     */
   val name: Output_[String] = js.native
+  
+  /**
+    * The resource owner's AWS account ID.
+    */
+  val resourceOwner: Output_[String] = js.native
+  
   /**
     * The service mesh specification to apply.
     */
   val spec: Output_[js.UndefOr[MeshSpec]] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/appmesh/mesh", "Mesh")
 @js.native
 object Mesh extends js.Object {
+  
   /**
     * Get an existing Mesh resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -68,10 +84,10 @@ object Mesh extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Mesh = js.native
   def get(name: String, id: Input[ID], state: MeshState): Mesh = js.native
   def get(name: String, id: Input[ID], state: MeshState, opts: CustomResourceOptions): Mesh = js.native
+  
   /**
     * Returns true if the given object is an instance of Mesh.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean = js.native
 }
-

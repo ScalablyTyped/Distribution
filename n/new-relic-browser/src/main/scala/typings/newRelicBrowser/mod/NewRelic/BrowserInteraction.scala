@@ -2,10 +2,11 @@ package typings.newRelicBrowser.mod.NewRelic
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BrowserInteraction extends js.Object {
+  
   /**
     * Times sub-components of a SPA interaction separately, including wait time and JS execution time.
     *
@@ -19,6 +20,7 @@ trait BrowserInteraction extends js.Object {
     */
   def createTracer(name: String): js.Function0[Unit] = js.native
   def createTracer(name: String, callback: js.Function0[Unit]): js.Function0[Unit] = js.native
+  
   /**
     * Ends the New Relic SPA interaction at the current time.
     *
@@ -26,6 +28,7 @@ trait BrowserInteraction extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-end
     */
   def end(): BrowserInteraction = js.native
+  
   /**
     * Stores values across the current SPA interaction asynchronously in New Relic Browser.
     *
@@ -35,6 +38,7 @@ trait BrowserInteraction extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-get-context
     */
   def getContext(callback: js.Function1[/* contextObject */ js.Any, Unit]): BrowserInteraction = js.native
+  
   /**
     * Overrides other SPA save() calls; ignores an interaction so it is not saved or sent to New Relic.
     *
@@ -42,6 +46,7 @@ trait BrowserInteraction extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-ignore-browser
     */
   def ignore(): BrowserInteraction = js.native
+  
   /**
     * Adds custom attributes for SPA interactions to the end of an event. It is called when the interaction
     * has finished. You can invoke methods to modify the interaction, but methods that have asynchronous
@@ -51,6 +56,7 @@ trait BrowserInteraction extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-on-end
     */
   def onEnd(callback: js.Function1[/* contextObject */ js.Any, Unit]): BrowserInteraction = js.native
+  
   /**
     * Ensures a SPA browser interaction will be saved when it ends.
     *
@@ -58,6 +64,7 @@ trait BrowserInteraction extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-save
     */
   def save(): BrowserInteraction = js.native
+  
   /**
     * Adds a custom SPA attribute only to the current interaction in New Relic Browser.
     *
@@ -68,6 +75,7 @@ trait BrowserInteraction extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-set-attribute
     */
   def setAttribute(key: String, value: js.Any): BrowserInteraction = js.native
+  
   /**
     * Sets the name and trigger of a SPA's browser interaction that is not a route change or URL change.
     *
@@ -80,4 +88,3 @@ trait BrowserInteraction extends js.Object {
   def setName(name: String): BrowserInteraction = js.native
   def setName(name: String, trigger: String): BrowserInteraction = js.native
 }
-

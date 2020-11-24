@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "estree-walker" : "0.6.1"
+      "estree-walker" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "estree-walker" : "0.6.1"
+      "estree-walker" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

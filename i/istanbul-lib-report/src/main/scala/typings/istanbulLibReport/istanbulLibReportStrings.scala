@@ -3,9 +3,34 @@ package typings.istanbulLibReport
 import typings.istanbulLibReport.mod.Summarizers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object istanbulLibReportStrings {
+  
+  @scala.inline
+  def branches: branches = "branches".asInstanceOf[branches]
+  
+  @scala.inline
+  def defaultSummarizer: defaultSummarizer = "defaultSummarizer".asInstanceOf[defaultSummarizer]
+  
+  @scala.inline
+  def flat: flat = "flat".asInstanceOf[flat]
+  
+  @scala.inline
+  def functions: functions = "functions".asInstanceOf[functions]
+  
+  @scala.inline
+  def lines: lines = "lines".asInstanceOf[lines]
+  
+  @scala.inline
+  def nested: nested = "nested".asInstanceOf[nested]
+  
+  @scala.inline
+  def pkg: pkg = "pkg".asInstanceOf[pkg]
+  
+  @scala.inline
+  def statements: statements = "statements".asInstanceOf[statements]
+  
   @js.native
   sealed trait branches extends js.Object
   
@@ -29,22 +54,4 @@ object istanbulLibReportStrings {
   
   @js.native
   sealed trait statements extends js.Object
-  
-  @scala.inline
-  def branches: branches = "branches".asInstanceOf[branches]
-  @scala.inline
-  def defaultSummarizer: defaultSummarizer = "defaultSummarizer".asInstanceOf[defaultSummarizer]
-  @scala.inline
-  def flat: flat = "flat".asInstanceOf[flat]
-  @scala.inline
-  def functions: functions = "functions".asInstanceOf[functions]
-  @scala.inline
-  def lines: lines = "lines".asInstanceOf[lines]
-  @scala.inline
-  def nested: nested = "nested".asInstanceOf[nested]
-  @scala.inline
-  def pkg: pkg = "pkg".asInstanceOf[pkg]
-  @scala.inline
-  def statements: statements = "statements".asInstanceOf[statements]
 }
-

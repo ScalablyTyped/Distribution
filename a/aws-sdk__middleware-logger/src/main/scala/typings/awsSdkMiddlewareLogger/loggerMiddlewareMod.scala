@@ -1,0 +1,26 @@
+package typings.awsSdkMiddlewareLogger
+
+import typings.awsSdkTypes.middlewareMod.AbsoluteLocation
+import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
+import typings.awsSdkTypes.middlewareMod.InitializeHandler
+import typings.awsSdkTypes.middlewareMod.InitializeHandlerOptions
+import typings.awsSdkTypes.middlewareMod.Pluggable
+import typings.awsSdkTypes.responseMod.MetadataBearer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@aws-sdk/middleware-logger/dist/cjs/loggerMiddleware", JSImport.Namespace)
+@js.native
+object loggerMiddlewareMod extends js.Object {
+  
+  def getLoggerPlugin(options: js.Any): Pluggable[_, _] = js.native
+  
+  def loggerMiddleware(): js.Function2[
+    /* next */ InitializeHandler[_, MetadataBearer], 
+    /* context */ HandlerExecutionContext, 
+    InitializeHandler[_, MetadataBearer]
+  ] = js.native
+  
+  val loggerMiddlewareOptions: InitializeHandlerOptions with AbsoluteLocation = js.native
+}

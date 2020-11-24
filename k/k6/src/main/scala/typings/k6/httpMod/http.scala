@@ -2,7 +2,7 @@ package typings.k6.httpMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The http module contains functionality for performing HTTP transactions.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/http", "http")
 @js.native
 object http extends js.Object
-

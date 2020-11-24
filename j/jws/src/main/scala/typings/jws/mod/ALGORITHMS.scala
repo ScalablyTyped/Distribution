@@ -15,7 +15,7 @@ import typings.jws.jwsStrings.RS384
 import typings.jws.jwsStrings.RS512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jws", "ALGORITHMS")
 @js.native
@@ -23,4 +23,3 @@ object ALGORITHMS
   extends TopLevel[
       js.Tuple12[HS256, HS384, HS512, RS256, RS384, RS512, PS256, PS384, PS512, ES256, ES384, ES512]
     ]
-

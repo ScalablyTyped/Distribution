@@ -6,9 +6,40 @@ import typings.reactGoogleRecaptcha.mod.Theme
 import typings.reactGoogleRecaptcha.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactGoogleRecaptchaStrings {
+  
+  @scala.inline
+  def audio: audio = "audio".asInstanceOf[audio]
+  
+  @scala.inline
+  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
+  
+  @scala.inline
+  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
+  
+  @scala.inline
+  def compact: compact = "compact".asInstanceOf[compact]
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def invisible: invisible = "invisible".asInstanceOf[invisible]
+  
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
   @js.native
   sealed trait audio extends Type
   
@@ -38,26 +69,4 @@ object reactGoogleRecaptchaStrings {
   
   @js.native
   sealed trait normal extends Size
-  
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
-  @scala.inline
-  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
-  @scala.inline
-  def compact: compact = "compact".asInstanceOf[compact]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def invisible: invisible = "invisible".asInstanceOf[invisible]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.compact` exported as a module.
 | Full name          | lodash.compact |
 | Keywords           | lodash-modularized, compact |
 | # releases         | 0 |
-| # dependents       | 156 |
-| # downloads        | 2982606 |
+| # dependents       | 188 |
+| # downloads        | 5823652 |
 | # stars            | 0 |
 
 ## Links

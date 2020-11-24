@@ -3,7 +3,7 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message code is used to report status and error messages to the service.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaWorkerMessageCode extends js.Object {
+  
   /**
     * The code is a string intended for consumption by a machine that
     * identifies the type of message being sent. Examples:  1.
@@ -25,6 +26,7 @@ trait SchemaWorkerMessageCode extends js.Object {
     * make it easy to add new codes without waiting for an API change.
     */
   var code: js.UndefOr[String] = js.native
+  
   /**
     * Parameters contains specific information about the code.  This is a
     * struct to allow parameters of different types.  Examples:  1. For a
@@ -42,33 +44,39 @@ trait SchemaWorkerMessageCode extends js.Object {
     */
   var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
-
 object SchemaWorkerMessageCode {
+  
   @scala.inline
   def apply(): SchemaWorkerMessageCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerMessageCode]
   }
+  
   @scala.inline
   implicit class SchemaWorkerMessageCodeOps[Self <: SchemaWorkerMessageCode] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCode: Self = this.set("code", js.undefined)
+    
     @scala.inline
     def setParameters(value: StringDictionary[js.Any]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParameters: Self = this.set("parameters", js.undefined)
   }
-  
 }
-

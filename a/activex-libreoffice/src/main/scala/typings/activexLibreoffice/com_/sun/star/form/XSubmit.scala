@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XControl
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functionality to submit data from a component.
@@ -17,18 +17,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSubmit extends XInterface {
+  
   /**
     * adds the specified listener to receive the "approveSubmit" event.
     * @param aListener the listener to add.
     * @see com.sun.star.form.XSubmitListener
     */
   def addSubmitListener(aListener: XSubmitListener): Unit = js.native
+  
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XSubmitListener
     */
   def removeSubmitListener(aListener: XSubmitListener): Unit = js.native
+  
   /**
     * submits the component's data to a specified target.
     * @param aControl the control whose data is to be submitted
@@ -37,8 +40,8 @@ trait XSubmit extends XInterface {
     */
   def submit(aControl: XControl, aMouseEvt: MouseEvent): Unit = js.native
 }
-
 object XSubmit {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -51,24 +54,29 @@ object XSubmit {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSubmitListener = js.Any.fromFunction1(addSubmitListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSubmitListener = js.Any.fromFunction1(removeSubmitListener), submit = js.Any.fromFunction2(submit))
     __obj.asInstanceOf[XSubmit]
   }
+  
   @scala.inline
   implicit class XSubmitOps[Self <: XSubmit] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddSubmitListener(value: XSubmitListener => Unit): Self = this.set("addSubmitListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveSubmitListener(value: XSubmitListener => Unit): Self = this.set("removeSubmitListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSubmit(value: (XControl, MouseEvent) => Unit): Self = this.set("submit", js.Any.fromFunction2(value))
   }
-  
 }
-

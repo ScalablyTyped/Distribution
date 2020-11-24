@@ -2,11 +2,12 @@ package typings.materialDrawer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/drawer/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2016 Google Inc.
@@ -31,22 +32,31 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ANIMATE: String = js.native
+    
     var CLOSING: String = js.native
+    
     var DISMISSIBLE: String = js.native
+    
     var MODAL: String = js.native
+    
     var OPEN: String = js.native
+    
     var OPENING: String = js.native
+    
     var ROOT: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var APP_CONTENT_SELECTOR: String = js.native
+    
     var CLOSE_EVENT: String = js.native
+    
     var OPEN_EVENT: String = js.native
+    
     var SCRIM_SELECTOR: String = js.native
   }
-  
 }
-

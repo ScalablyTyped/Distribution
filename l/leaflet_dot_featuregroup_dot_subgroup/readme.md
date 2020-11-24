@@ -11,8 +11,8 @@ Creates a Leaflet Feature Group that adds its child layers into a parent group w
 | Full name          | leaflet.featuregroup.subgroup |
 | Keywords           | leaflet, leaflet.markercluster, plugins, maps, subgroup |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 39153 |
+| # dependents       | 5 |
+| # downloads        | 63856 |
 | # stars            | 1 |
 
 ## Links

@@ -2,9 +2,49 @@ package typings.jsreportChromePdf
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsreportChromePdfStrings {
+  
+  @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  
+  @scala.inline
+  def chrome: chrome = "chrome".asInstanceOf[chrome]
+  
+  @scala.inline
+  def `chrome-image`: `chrome-image` = "chrome-image".asInstanceOf[`chrome-image`]
+  
+  @scala.inline
+  def `chrome-pdf`: `chrome-pdf` = "chrome-pdf".asInstanceOf[`chrome-pdf`]
+  
+  @scala.inline
+  def `dedicated-process`: `dedicated-process` = "dedicated-process".asInstanceOf[`dedicated-process`]
+  
+  @scala.inline
+  def firefox: firefox = "firefox".asInstanceOf[firefox]
+  
+  @scala.inline
+  def `http-server`: `http-server` = "http-server".asInstanceOf[`http-server`]
+  
+  @scala.inline
+  def `in-process`: `in-process` = "in-process".asInstanceOf[`in-process`]
+  
+  @scala.inline
+  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def print: print = "print".asInstanceOf[print]
+  
+  @scala.inline
+  def screen: screen = "screen".asInstanceOf[screen]
+  
   @js.native
   sealed trait base64 extends js.Object
   
@@ -43,32 +83,4 @@ object jsreportChromePdfStrings {
   
   @js.native
   sealed trait screen extends js.Object
-  
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def chrome: chrome = "chrome".asInstanceOf[chrome]
-  @scala.inline
-  def `chrome-image`: `chrome-image` = "chrome-image".asInstanceOf[`chrome-image`]
-  @scala.inline
-  def `chrome-pdf`: `chrome-pdf` = "chrome-pdf".asInstanceOf[`chrome-pdf`]
-  @scala.inline
-  def `dedicated-process`: `dedicated-process` = "dedicated-process".asInstanceOf[`dedicated-process`]
-  @scala.inline
-  def firefox: firefox = "firefox".asInstanceOf[firefox]
-  @scala.inline
-  def `http-server`: `http-server` = "http-server".asInstanceOf[`http-server`]
-  @scala.inline
-  def `in-process`: `in-process` = "in-process".asInstanceOf[`in-process`]
-  @scala.inline
-  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
 }
-

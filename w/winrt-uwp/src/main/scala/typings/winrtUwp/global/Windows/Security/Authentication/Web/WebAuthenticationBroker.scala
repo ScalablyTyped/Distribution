@@ -5,18 +5,18 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Starts the authentication operation. You can call the methods of this class multiple times in a single application or across multiple applications at the same time. */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
 @js.native
 abstract class WebAuthenticationBroker ()
   extends typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationBroker
-
 /* static members */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
 @js.native
 object WebAuthenticationBroker extends js.Object {
+  
   /**
     * Starts the authentication operation with one input.
     * @param requestUri The starting URI of the web service. This URI must be a secure address of https://.
@@ -41,6 +41,7 @@ object WebAuthenticationBroker extends js.Object {
     continuationData: ValueSet,
     options: typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions
   ): Unit = js.native
+  
   /**
     * Starts the asynchronous authentication operation with two inputs. You can call this method multiple times in a single application or across multiple applications at the same time.
     * @param options The options for the authentication operation.
@@ -63,6 +64,7 @@ object WebAuthenticationBroker extends js.Object {
     requestUri: Uri,
     callbackUri: Uri
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = js.native
+  
   /**
     * Starts the asynchronous authentication operation silently (no UI will be shown) with one input. You can call this method multiple times in a single application or across multiple applications at the same time.
     * @param requestUri The starting URI of the web service. This URI must be a secure address of https://.
@@ -79,10 +81,10 @@ object WebAuthenticationBroker extends js.Object {
     requestUri: Uri,
     options: typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = js.native
+  
   /**
     * Gets the current application callback URI.
     * @return The URI of the current application.
     */
   def getCurrentApplicationCallbackUri(): Uri = js.native
 }
-

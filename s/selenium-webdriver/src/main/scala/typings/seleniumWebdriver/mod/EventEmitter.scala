@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "EventEmitter")
 @js.native
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class EventEmitter () extends js.Object {
+  
   /**
     * Registers a listener.
     * @param {string} type The type of event to listen for.
@@ -26,6 +27,7 @@ class EventEmitter () extends js.Object {
   def addListener(`type`: String, fn: js.Function, opt_scope: js.UndefOr[scala.Nothing], opt_oneshot: Boolean): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: js.Any, opt_oneshot: Boolean): EventEmitter = js.native
+  
   // endregion
   // region Methods
   /**
@@ -34,6 +36,7 @@ class EventEmitter () extends js.Object {
     * @param {...*} var_args Any arguments to pass to each listener.
     */
   def emit(`type`: String, var_args: js.Any*): Unit = js.native
+  
   /**
     * Returns a mutable list of listeners for a specific type of event.
     * @param {string} type The type of event to retrieve the listeners for.
@@ -41,6 +44,7 @@ class EventEmitter () extends js.Object {
     *     type.
     */
   def listeners(`type`: String): js.Any = js.native
+  
   /**
     * An alias for {@code #addListener()}.
     * @param {string} type The type of event to listen for.
@@ -51,6 +55,7 @@ class EventEmitter () extends js.Object {
     */
   def on(`type`: String, fn: js.Function): EventEmitter = js.native
   def on(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
+  
   /**
     * Registers a one-time listener which will be called only the first time an
     * event is emitted, after which it will be removed.
@@ -62,6 +67,7 @@ class EventEmitter () extends js.Object {
     */
   def once(`type`: String, fn: js.Any): EventEmitter = js.native
   def once(`type`: String, fn: js.Any, opt_scope: js.Any): EventEmitter = js.native
+  
   /**
     * Removes all listeners for a specific type of event. If no event is
     * specified, all listeners across all types will be removed.
@@ -70,6 +76,7 @@ class EventEmitter () extends js.Object {
     */
   def removeAllListeners(): EventEmitter = js.native
   def removeAllListeners(opt_type: String): EventEmitter = js.native
+  
   /**
     * Removes a previously registered event listener.
     * @param {string} type The type of event to unregister.
@@ -78,4 +85,3 @@ class EventEmitter () extends js.Object {
     */
   def removeListener(`type`: String, listenerFn: js.Function): EventEmitter = js.native
 }
-

@@ -11,7 +11,7 @@ import typings.figma.figmaStrings.ON_HOVER
 import typings.figma.figmaStrings.ON_PRESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.figma.anon.`1`
@@ -19,20 +19,22 @@ import scala.scalajs.js.annotation._
   - typings.figma.anon.Delay
 */
 trait Trigger extends js.Object
-
 object Trigger {
+  
   @scala.inline
   def `1`(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): Trigger = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
+  
   @scala.inline
   def Timeout(timeout: Double, `type`: AFTER_TIMEOUT): Trigger = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
+  
   @scala.inline
   def Delay(delay: Double, `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): Trigger = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
@@ -40,4 +42,3 @@ object Trigger {
     __obj.asInstanceOf[Trigger]
   }
 }
-

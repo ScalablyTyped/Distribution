@@ -14,12 +14,13 @@ import typings.mobx.observablevalueMod.IValueWillChange
 import typings.mobx.utilsMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/api/intercept", JSImport.Namespace)
 @js.native
 object interceptMod extends js.Object {
-  def intercept(`object`: js.Object, handler: IInterceptor[IObjectWillChange]): Lambda = js.native
+  
+  def intercept(`object`: js.Object, handler: IInterceptor[IObjectWillChange[_]]): Lambda = js.native
   def intercept[T](
     observableArray: IObservableArray[T],
     handler: IInterceptor[IArrayWillChange[T] | IArrayWillSplice[T]]
@@ -30,4 +31,3 @@ object interceptMod extends js.Object {
   def intercept[K, V](observableMap: ObservableMap[K, V], handler: IInterceptor[IMapWillChange[K, V]]): Lambda = js.native
   def intercept[K, V](observableMap: ObservableMap[K, V], property: K, handler: IInterceptor[IValueWillChange[V]]): Lambda = js.native
 }
-

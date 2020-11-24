@@ -2,7 +2,7 @@ package typings.emotionStylis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.emotionStylis.mod.Context.PROPS
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   - typings.emotionStylis.mod.Context.ATRUL
 */
 trait PrefixContext extends js.Object
-

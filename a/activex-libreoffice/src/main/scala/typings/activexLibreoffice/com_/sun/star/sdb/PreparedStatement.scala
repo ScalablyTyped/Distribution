@@ -22,7 +22,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a precompiled SQL statement. The service differs only in the access of the columns and parameters to the service {@link
@@ -32,8 +32,8 @@ import scala.scalajs.js.annotation._
 trait PreparedStatement
   extends typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement
      with XColumnsSupplier
-
 object PreparedStatement {
+  
   @scala.inline
   def apply(
     Columns: XNameAccess,
@@ -109,4 +109,3 @@ object PreparedStatement {
     __obj.asInstanceOf[PreparedStatement]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.restler.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for resler class.
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RestlerStatic extends js.Object {
+  
   /**
     * Create a DELETE request.
     * @param {string}          url     A url address.
@@ -18,6 +19,7 @@ trait RestlerStatic extends js.Object {
     */
   def del(url: String): RestlerResult = js.native
   def del(url: String, options: js.Object): RestlerResult = js.native
+  
   /**
     * Create a GET request.
     * @param {string}          url     A url address.
@@ -26,6 +28,7 @@ trait RestlerStatic extends js.Object {
     */
   def get(url: String): RestlerResult = js.native
   def get(url: String, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Create a HEAD request.
     * @param {string}          url     A url address.
@@ -34,6 +37,7 @@ trait RestlerStatic extends js.Object {
     */
   def head(url: String): RestlerResult = js.native
   def head(url: String, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Send json data via GET method.
     * @param {string}          url     A url address.
@@ -49,6 +53,7 @@ trait RestlerStatic extends js.Object {
   def json(url: String, data: js.Any, options: js.UndefOr[scala.Nothing], method: String): RestlerResult = js.native
   def json(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
   def json(url: String, data: js.Any, options: RestlerOptions, method: String): RestlerResult = js.native
+  
   /**
     * Create a PATCH request.
     * @param {string}          url     A url address.
@@ -57,6 +62,7 @@ trait RestlerStatic extends js.Object {
     */
   def patch(url: String): RestlerResult = js.native
   def patch(url: String, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Send json  data  via PATCH method.
     * @param {string}          url     A url address.
@@ -68,6 +74,7 @@ trait RestlerStatic extends js.Object {
   def patchJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
   def patchJson(url: String, data: js.Any): RestlerResult = js.native
   def patchJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Create a POST request.
     * @param {string}          url     A url address.
@@ -76,6 +83,7 @@ trait RestlerStatic extends js.Object {
     */
   def post(url: String): RestlerResult = js.native
   def post(url: String, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Send json data via POST method.
     * @param {string}          url     A url address.
@@ -87,6 +95,7 @@ trait RestlerStatic extends js.Object {
   def postJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
   def postJson(url: String, data: js.Any): RestlerResult = js.native
   def postJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Create a PUT request.
     * @param {string}          url     A url address.
@@ -95,6 +104,7 @@ trait RestlerStatic extends js.Object {
     */
   def put(url: String): RestlerResult = js.native
   def put(url: String, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Send json data via PUT method.
     * @param {string}          url     A url address.
@@ -106,6 +116,7 @@ trait RestlerStatic extends js.Object {
   def putJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
   def putJson(url: String, data: js.Any): RestlerResult = js.native
   def putJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+  
   /**
     * Create a PUT request.
     * @param {string}          url     A url address.
@@ -115,4 +126,3 @@ trait RestlerStatic extends js.Object {
   def service(url: String): RestlerResult = js.native
   def service(url: String, options: RestlerOptions): RestlerResult = js.native
 }
-

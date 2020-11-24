@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configure data types to be returned as a Buffer instead of the default representation when queried with execute() or queryStream().
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object fetchAsBuffer
   extends TopLevel[js.Array[Double]]
-

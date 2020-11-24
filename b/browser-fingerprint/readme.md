@@ -12,7 +12,7 @@ Generate a fingerprint of a browser
 | Keywords           | browser, fingerprint |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3141148 |
+| # downloads        | 3452166 |
 | # stars            | 0 |
 
 ## Links

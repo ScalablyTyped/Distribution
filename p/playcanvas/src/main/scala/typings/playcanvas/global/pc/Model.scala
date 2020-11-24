@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new model.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Model ()
   extends typings.playcanvas.pc.Model
-

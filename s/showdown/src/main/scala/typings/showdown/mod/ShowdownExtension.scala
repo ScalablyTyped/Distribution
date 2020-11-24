@@ -2,7 +2,7 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a plugin/extension
@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation._
 - typings.showdown.mod.Extension_ because Already inherited
 - typings.showdown.mod.FilterExtension because var conflicts: listeners, `type`. Inlined filter */ @js.native
 trait ShowdownExtension extends RegexReplaceExtension {
+  
   var filter: js.UndefOr[
     js.Function3[
       /* text */ String, 
@@ -45,32 +46,36 @@ trait ShowdownExtension extends RegexReplaceExtension {
     ]
   ] = js.native
 }
-
 object ShowdownExtension {
+  
   @scala.inline
   def apply(`type`: String): ShowdownExtension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowdownExtension]
   }
+  
   @scala.inline
   implicit class ShowdownExtensionOps[Self <: ShowdownExtension] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFilter(
       value: (/* text */ String, /* converter */ Converter, /* options */ js.UndefOr[ConverterOptions]) => String
     ): Self = this.set("filter", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
   }
-  
 }
-

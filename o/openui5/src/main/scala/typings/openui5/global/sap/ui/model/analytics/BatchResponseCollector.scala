@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model.analytics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.analytics.BatchResponseCollector")
 @js.native
@@ -14,4 +14,3 @@ class BatchResponseCollector protected ()
     */
   def this(mParams: js.Any) = this()
 }
-

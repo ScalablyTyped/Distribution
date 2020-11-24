@@ -2,10 +2,11 @@ package typings.ejWebAll.ej.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XLSort extends js.Object {
+  
   /** This method is used to sort a particular range of cells based on its cell or font color in the Spreadsheet.
     * @param {string} Pass {{'`PutCellColor`' | markdownify}} to sort by cell color or {{'`PutFontColor`' | markdownify}} for sort by font color.
     * @param {Spreadsheet.ColorOptions} Pass Object ColorOptions.
@@ -13,6 +14,7 @@ trait XLSort extends js.Object {
     * @returns {void}
     */
   def sortByColor(operation: String, color: ColorOptions, range: String): Unit = js.native
+  
   def sortByRange(range: String, columnName: String, direction: String): Boolean = js.native
   /** This method is used to sort a particular range of cells based on its values in the Spreadsheet.
     * @param {any[]|string} Pass the range to sort.
@@ -22,4 +24,3 @@ trait XLSort extends js.Object {
     */
   def sortByRange(range: js.Array[_], columnName: String, direction: String): Boolean = js.native
 }
-

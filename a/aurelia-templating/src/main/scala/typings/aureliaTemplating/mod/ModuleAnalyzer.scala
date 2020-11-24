@@ -2,7 +2,7 @@ package typings.aureliaTemplating.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ModuleAnalyzer")
 @js.native
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * Creates an instance of ModuleAnalyzer.
   */
 class ModuleAnalyzer () extends js.Object {
+  
   /**
     * Analyzes a module.
     * @param moduleId The id of the module to analyze.
@@ -19,6 +20,7 @@ class ModuleAnalyzer () extends js.Object {
     */
   def analyze(moduleId: String, moduleInstance: js.Any): ResourceModule = js.native
   def analyze(moduleId: String, moduleInstance: js.Any, mainResourceKey: String): ResourceModule = js.native
+  
   /**
     * Retrieves the ResourceModule analysis for a previously analyzed module.
     * @param moduleId The id of the module to lookup.
@@ -26,4 +28,3 @@ class ModuleAnalyzer () extends js.Object {
     */
   def getAnalysis(moduleId: String): ResourceModule = js.native
 }
-

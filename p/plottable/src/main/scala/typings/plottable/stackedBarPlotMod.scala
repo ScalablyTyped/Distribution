@@ -6,11 +6,12 @@ import typings.plottable.formattersMod.Formatter
 import typings.plottable.stackingUtilsMod.IStackingOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots/stackedBarPlot", JSImport.Namespace)
 @js.native
 object stackedBarPlotMod extends js.Object {
+  
   @js.native
   /**
     * A StackedBar Plot stacks bars across Datasets based on the primary value of the bars.
@@ -24,13 +25,21 @@ object stackedBarPlotMod extends js.Object {
     */
   class StackedBar[X, Y] () extends Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
+    
     var _extremaFormatter: js.Any = js.native
+    
     var _labelArea: js.Any = js.native
+    
     var _measurer: js.Any = js.native
+    
     var _stackedExtent: js.Any = js.native
+    
     var _stackingOrder: js.Any = js.native
+    
     var _stackingResult: js.Any = js.native
+    
     var _writer: js.Any = js.native
+    
     /**
       * Gets the Formatter for the stacked bar extrema labels.
       */
@@ -45,6 +54,7 @@ object stackedBarPlotMod extends js.Object {
       * @returns {this}
       */
     def extremaFormatter(formatter: Formatter): this.type = js.native
+    
     /**
       * Gets the stacking order of the plot.
       */
@@ -61,12 +71,10 @@ object stackedBarPlotMod extends js.Object {
       */
     def stackingOrder(stackingOrder: IStackingOrder): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object StackedBar extends js.Object {
+    
     var _EXTREMA_LABEL_MARGIN_FROM_BAR: Double = js.native
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Contacts")
 @js.native
 class ResourceContacts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.contacts.delete
     * @desc Deletes a contact.
@@ -37,6 +39,7 @@ class ResourceContacts protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceContactsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceContactsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * mirror.contacts.get
     * @desc Gets a single contact by ID.
@@ -65,6 +68,7 @@ class ResourceContacts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContact]
   ): Unit = js.native
+  
   /**
     * mirror.contacts.insert
     * @desc Inserts a new contact.
@@ -93,6 +97,7 @@ class ResourceContacts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContact]
   ): Unit = js.native
+  
   /**
     * mirror.contacts.list
     * @desc Retrieves a list of contacts for the authenticated user.
@@ -120,6 +125,7 @@ class ResourceContacts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContactsListResponse]
   ): Unit = js.native
+  
   /**
     * mirror.contacts.patch
     * @desc Updates a contact in place. This method supports patch semantics.
@@ -149,6 +155,7 @@ class ResourceContacts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContact]
   ): Unit = js.native
+  
   /**
     * mirror.contacts.update
     * @desc Updates a contact in place.
@@ -179,4 +186,3 @@ class ResourceContacts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaContact]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feImage> element. */
 @js.native
@@ -10,7 +10,7 @@ trait SVGFEImageElement
   extends SVGElement
      with SVGFilterPrimitiveStandardAttributes
      with SVGURIReference {
-  val preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -21,6 +21,9 @@ trait SVGFEImageElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  val preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -32,4 +35,3 @@ trait SVGFEImageElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-

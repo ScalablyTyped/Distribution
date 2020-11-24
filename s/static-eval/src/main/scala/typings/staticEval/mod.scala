@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.estree.mod.Expression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("static-eval", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   * Evaluates the given ESTree.Expression, with the given named variables in place.
   * @param ast [ESTree.Expression] An esprima expression derived from parse.body[].expression
@@ -16,4 +17,3 @@ object mod extends js.Object {
   */
   def apply(ast: Expression, vars: StringDictionary[js.Any]): js.Any = js.native
 }
-

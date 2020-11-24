@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.Rectangle.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Rectangle")
 @js.native
@@ -15,4 +15,3 @@ class Rectangle[ExtraData] ()
   extends typings.amapJsApi.AMap.Rectangle[ExtraData] {
   def this(options: Options[ExtraData]) = this()
 }
-

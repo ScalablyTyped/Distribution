@@ -4,12 +4,14 @@ import typings.autobahn.mod.ISubscribeOptions
 import typings.rx.Rx.IObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.wamp", "Subscriber")
 @js.native
 class Subscriber () extends js.Object {
+  
   def dispose(): Unit = js.native
+  
   def to(topic: String, options: ISubscribeOptions): Subscriber = js.native
   def to(
     topic: String,
@@ -78,4 +80,3 @@ class Subscriber () extends js.Object {
     onCompleted: js.Function0[Unit]
   ): Subscriber = js.native
 }
-

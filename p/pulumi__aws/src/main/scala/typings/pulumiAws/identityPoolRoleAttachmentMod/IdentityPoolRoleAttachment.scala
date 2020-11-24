@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment")
 @js.native
@@ -23,24 +23,27 @@ class IdentityPoolRoleAttachment protected () extends CustomResource {
     */
   def this(name: String, args: IdentityPoolRoleAttachmentArgs) = this()
   def this(name: String, args: IdentityPoolRoleAttachmentArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * An identity pool ID in the format REGION:GUID.
     */
   val identityPoolId: Output_[String] = js.native
+  
   /**
     * A List of Role Mapping.
     */
   val roleMappings: Output_[js.UndefOr[js.Array[IdentityPoolRoleAttachmentRoleMapping]]] = js.native
+  
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
   val roles: Output_[StringDictionary[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment")
 @js.native
 object IdentityPoolRoleAttachment extends js.Object {
+  
   /**
     * Get an existing IdentityPoolRoleAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -54,10 +57,10 @@ object IdentityPoolRoleAttachment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityPoolRoleAttachment = js.native
   def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): IdentityPoolRoleAttachment = js.native
   def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): IdentityPoolRoleAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = js.native
 }
-

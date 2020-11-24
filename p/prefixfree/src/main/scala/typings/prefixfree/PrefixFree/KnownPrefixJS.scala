@@ -2,7 +2,7 @@ package typings.prefixfree.PrefixFree
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The known prefixes used for CSS properties in `CSSStyleDeclaration`. */
 /* Rewritten from type alias, can be one of: 
@@ -12,15 +12,17 @@ import scala.scalajs.js.annotation._
   - typings.prefixfree.prefixfreeStrings.Webkit
 */
 trait KnownPrefixJS extends js.Object
-
 object KnownPrefixJS {
+  
   @scala.inline
   def Moz: typings.prefixfree.prefixfreeStrings.Moz = "Moz".asInstanceOf[typings.prefixfree.prefixfreeStrings.Moz]
+  
   @scala.inline
   def Ms: typings.prefixfree.prefixfreeStrings.Ms = "Ms".asInstanceOf[typings.prefixfree.prefixfreeStrings.Ms]
+  
   @scala.inline
   def O: typings.prefixfree.prefixfreeStrings.O = "O".asInstanceOf[typings.prefixfree.prefixfreeStrings.O]
+  
   @scala.inline
   def Webkit: typings.prefixfree.prefixfreeStrings.Webkit = "Webkit".asInstanceOf[typings.prefixfree.prefixfreeStrings.Webkit]
 }
-

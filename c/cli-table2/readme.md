@@ -10,9 +10,9 @@ Pretty unicode tables for the command line. Based on the original cli-table.
 | ------------------ | :-------------: |
 | Full name          | cli-table2 |
 | Keywords           | node, command, line, cli, table, tables, tabular, unicode, colors, grid |
-| # releases         | 1 |
-| # dependents       | 384 |
-| # downloads        | 10855511 |
+| # releases         | 0 |
+| # dependents       | 386 |
+| # downloads        | 8143560 |
 | # stars            | 22 |
 
 ## Links

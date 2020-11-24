@@ -3,13 +3,18 @@ package typings.devextreme.mod.DevExpress
 import typings.devextreme.mod.DevExpress.core.dxElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DOMComponent extends Component {
-  /** @name DOMComponent.dispose() */
+  
+  /**
+    * [descr:DOMComponent.dispose()]
+    */
   def dispose(): Unit = js.native
-  /** @name DOMComponent.element() */
+  
+  /**
+    * [descr:DOMComponent.element()]
+    */
   def element(): dxElement = js.native
 }
-

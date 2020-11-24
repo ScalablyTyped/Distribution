@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.EffectLayer")
 @js.native
@@ -19,11 +19,11 @@ abstract class EffectLayer protected ()
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.EffectLayer")
 @js.native
 object EffectLayer extends js.Object {
+  
   /**
     * Creates an effect layer from parsed effect layer data
     * @param parsedEffectLayer defines effect layer data
@@ -32,7 +32,7 @@ object EffectLayer extends js.Object {
     * @returns a parsed effect Layer
     */
   def Parse(parsedEffectLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.EffectLayer = js.native
+  
   /** @hidden */
   def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
 }
-

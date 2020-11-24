@@ -2,39 +2,17 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ColorCurves")
 @js.native
 class ColorCurves ()
   extends typings.babylonjs.BABYLON.ColorCurves
-
 /* static members */
 @JSGlobal("BABYLON.ColorCurves")
 @js.native
 object ColorCurves extends js.Object {
-  /**
-    * Takes an input slider value and returns an adjusted value that provides extra control near the centre.
-    * @param value The input slider value in range [-100,100].
-    * @returns Adjusted value.
-    */
-  var applyColorGradingSliderNonlinear: js.Any = js.native
-  /**
-    * Returns a value clamped between min and max
-    * @param value The value to clamp
-    * @param min The minimum of value
-    * @param max The maximum of value
-    * @returns The clamped value.
-    */
-  var clamp: js.Any = js.native
-  /**
-    * Returns an RGBA Color4 based on Hue, Saturation and Brightness (also referred to as value, HSV).
-    * @param hue The hue (H) input.
-    * @param saturation The saturation (S) input.
-    * @param brightness The brightness (B) input.
-    * @result An RGBA color represented as Vector4.
-    */
-  var fromHSBToRef: js.Any = js.native
+  
   /**
     * Binds the color curves to the shader.
     * @param colorCurves The color curve to bind
@@ -47,7 +25,34 @@ object ColorCurves extends js.Object {
   def Bind(
     colorCurves: typings.babylonjs.BABYLON.ColorCurves,
     effect: typings.babylonjs.BABYLON.Effect,
+    positiveUniform: js.UndefOr[scala.Nothing],
+    neutralUniform: js.UndefOr[scala.Nothing],
+    negativeUniform: String
+  ): Unit = js.native
+  def Bind(
+    colorCurves: typings.babylonjs.BABYLON.ColorCurves,
+    effect: typings.babylonjs.BABYLON.Effect,
+    positiveUniform: js.UndefOr[scala.Nothing],
+    neutralUniform: String
+  ): Unit = js.native
+  def Bind(
+    colorCurves: typings.babylonjs.BABYLON.ColorCurves,
+    effect: typings.babylonjs.BABYLON.Effect,
+    positiveUniform: js.UndefOr[scala.Nothing],
+    neutralUniform: String,
+    negativeUniform: String
+  ): Unit = js.native
+  def Bind(
+    colorCurves: typings.babylonjs.BABYLON.ColorCurves,
+    effect: typings.babylonjs.BABYLON.Effect,
     positiveUniform: String
+  ): Unit = js.native
+  def Bind(
+    colorCurves: typings.babylonjs.BABYLON.ColorCurves,
+    effect: typings.babylonjs.BABYLON.Effect,
+    positiveUniform: String,
+    neutralUniform: js.UndefOr[scala.Nothing],
+    negativeUniform: String
   ): Unit = js.native
   def Bind(
     colorCurves: typings.babylonjs.BABYLON.ColorCurves,
@@ -62,16 +67,42 @@ object ColorCurves extends js.Object {
     neutralUniform: String,
     negativeUniform: String
   ): Unit = js.native
+  
   /**
     * Parses the color curve from a json representation.
     * @param source the JSON source to parse
     * @return The parsed curves
     */
   def Parse(source: js.Any): typings.babylonjs.BABYLON.ColorCurves = js.native
+  
   /**
     * Prepare the list of uniforms associated with the ColorCurves effects.
     * @param uniformsList The list of uniforms used in the effect
     */
   def PrepareUniforms(uniformsList: js.Array[String]): Unit = js.native
+  
+  /**
+    * Takes an input slider value and returns an adjusted value that provides extra control near the centre.
+    * @param value The input slider value in range [-100,100].
+    * @returns Adjusted value.
+    */
+  var applyColorGradingSliderNonlinear: js.Any = js.native
+  
+  /**
+    * Returns a value clamped between min and max
+    * @param value The value to clamp
+    * @param min The minimum of value
+    * @param max The maximum of value
+    * @returns The clamped value.
+    */
+  var clamp: js.Any = js.native
+  
+  /**
+    * Returns an RGBA Color4 based on Hue, Saturation and Brightness (also referred to as value, HSV).
+    * @param hue The hue (H) input.
+    * @param saturation The saturation (S) input.
+    * @param brightness The brightness (B) input.
+    * @result An RGBA color represented as Vector4.
+    */
+  var fromHSBToRef: js.Any = js.native
 }
-

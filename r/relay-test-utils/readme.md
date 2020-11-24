@@ -10,9 +10,9 @@ Utilities for testing Relay applications.
 | ------------------ | :-------------: |
 | Full name          | relay-test-utils |
 | Keywords           | graphql, relay |
-| # releases         | 187 |
-| # dependents       | 1 |
-| # downloads        | 227766 |
+| # releases         | 1242 |
+| # dependents       | 2 |
+| # downloads        | 3376115 |
 | # stars            | 0 |
 
 ## Links

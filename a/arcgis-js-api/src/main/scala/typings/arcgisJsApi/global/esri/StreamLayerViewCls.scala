@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.StreamLayerViewProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.StreamLayerView")
 @js.native
@@ -16,4 +16,3 @@ class StreamLayerViewCls ()
   extends typings.arcgisJsApi.esri.StreamLayerView {
   def this(properties: StreamLayerViewProperties) = this()
 }
-

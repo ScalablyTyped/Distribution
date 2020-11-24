@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1beta1", "containeranalysis_v1beta1.Resource$Projects$Notes")
 @js.native
 class ResourceProjectsNotes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var occurrences: ResourceProjectsNotesOccurrences = js.native
+  
   /**
     * containeranalysis.projects.notes.batchCreate
     * @desc Creates new notes in batch.
@@ -46,6 +45,9 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchCreateNotesResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * containeranalysis.projects.notes.create
     * @desc Creates a new note.
@@ -76,6 +78,7 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.notes.delete
     * @desc Deletes the specified note.
@@ -104,6 +107,7 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.notes.get
     * @desc Gets the specified note.
@@ -132,6 +136,7 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.notes.getIamPolicy
     * @desc Gets the access control policy for a note or an occurrence
@@ -166,6 +171,7 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.notes.list
     * @desc Lists notes for the specified project.
@@ -197,6 +203,9 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListNotesResponse]
   ): Unit = js.native
+  
+  var occurrences: ResourceProjectsNotesOccurrences = js.native
+  
   /**
     * containeranalysis.projects.notes.patch
     * @desc Updates the specified note.
@@ -227,6 +236,7 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.notes.setIamPolicy
     * @desc Sets the access control policy on the specified note or occurrence.
@@ -261,6 +271,7 @@ class ResourceProjectsNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.notes.testIamPermissions
     * @desc Returns the permissions that a caller has on the specified note or
@@ -298,4 +309,3 @@ class ResourceProjectsNotes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

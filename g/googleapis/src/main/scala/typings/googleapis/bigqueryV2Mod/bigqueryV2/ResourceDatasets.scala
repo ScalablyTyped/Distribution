@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Datasets")
 @js.native
 class ResourceDatasets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigquery.datasets.delete
     * @desc Deletes the dataset specified by the datasetId value. Before you
@@ -95,6 +97,7 @@ class ResourceDatasets protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceDatasetsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDatasetsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * bigquery.datasets.get
     * @desc Returns the dataset specified by datasetID.
@@ -180,6 +183,7 @@ class ResourceDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
+  
   /**
     * bigquery.datasets.insert
     * @desc Creates a new empty dataset.
@@ -266,6 +270,7 @@ class ResourceDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
+  
   /**
     * bigquery.datasets.list
     * @desc Lists all datasets in the specified project to which you have been
@@ -365,6 +370,7 @@ class ResourceDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatasetList]
   ): Unit = js.native
+  
   /**
     * bigquery.datasets.patch
     * @desc Updates information in an existing dataset. The update method
@@ -460,6 +466,7 @@ class ResourceDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
+  
   /**
     * bigquery.datasets.update
     * @desc Updates information in an existing dataset. The update method
@@ -555,4 +562,3 @@ class ResourceDatasets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
 }
-

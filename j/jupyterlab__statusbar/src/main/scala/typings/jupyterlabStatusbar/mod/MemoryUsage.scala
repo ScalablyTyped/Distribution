@@ -3,7 +3,7 @@ package typings.jupyterlabStatusbar.mod
 import typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/statusbar", "MemoryUsage")
 @js.native
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
   */
 class MemoryUsage ()
   extends typings.jupyterlabStatusbar.defaultsMod.MemoryUsage
-
 @JSImport("@jupyterlab/statusbar", "MemoryUsage")
 @js.native
 object MemoryUsage extends js.Object {
+  
   /**
     * A VDomModel for the memory usage status item.
     */
@@ -29,12 +29,9 @@ object MemoryUsage extends js.Object {
       */
     def this(options: IOptions) = this()
   }
-  
   /**
     * A namespace for Model statics.
     */
   @js.native
   object Model extends js.Object
-  
 }
-

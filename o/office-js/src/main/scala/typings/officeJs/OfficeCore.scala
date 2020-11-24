@@ -3,7 +3,7 @@ package typings.officeJs
 import typings.officeJs.OfficeExtension.ClientRequestContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////
 ///////////////// End OfficeExtension runtime //////////////////
@@ -15,6 +15,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("OfficeCore")
 @js.native
 object OfficeCore extends js.Object {
+  
   type RequestContext = ClientRequestContext
 }
-

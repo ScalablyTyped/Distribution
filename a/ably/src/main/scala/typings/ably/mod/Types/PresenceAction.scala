@@ -7,15 +7,19 @@ import typings.ably.ablyStrings.present
 import typings.ably.ablyStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ably", "Types.PresenceAction")
 @js.native
 object PresenceAction extends js.Object {
+  
   type ABSENT = absent
+  
   type ENTER = enter
+  
   type LEAVE = leave
+  
   type PRESENT = present
+  
   type UPDATE = update
 }
-

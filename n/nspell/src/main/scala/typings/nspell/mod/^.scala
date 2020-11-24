@@ -3,7 +3,7 @@ package typings.nspell.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes instance of NSpell, which is returned by the default factory function.
@@ -20,10 +20,10 @@ class ^ protected () extends NSpell {
   def this(aff: Buffer, dic: String) = this()
   def this(aff: Buffer, dic: Buffer) = this()
 }
-
 @JSImport("nspell", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(aff: String): NSpell = js.native
   def apply(aff: String, dic: String): NSpell = js.native
   def apply(aff: String, dic: Buffer): NSpell = js.native
@@ -33,4 +33,3 @@ object ^ extends js.Object {
   def apply(dictionary: js.Array[Dictionary]): NSpell = js.native
   def apply(dictionary: Dictionary): NSpell = js.native
 }
-

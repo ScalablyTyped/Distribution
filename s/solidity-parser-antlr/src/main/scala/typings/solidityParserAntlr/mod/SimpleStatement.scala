@@ -2,15 +2,15 @@ package typings.solidityParserAntlr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.solidityParserAntlr.mod.VariableDeclarationStatement
   - typings.solidityParserAntlr.mod.ExpressionStatement
 */
 trait SimpleStatement extends Statement
-
 object SimpleStatement {
+  
   @scala.inline
   def VariableDeclarationStatement(
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement,
@@ -20,6 +20,7 @@ object SimpleStatement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleStatement]
   }
+  
   @scala.inline
   def ExpressionStatement(
     expression: Expression,
@@ -30,4 +31,3 @@ object SimpleStatement {
     __obj.asInstanceOf[SimpleStatement]
   }
 }
-

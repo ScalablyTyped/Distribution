@@ -7,42 +7,14 @@ import typings.steamClient.steamClientBooleans.`false`
 import typings.steamClient.steamClientStrings.message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("steam-client", "CMClient")
 @js.native
 // Default is TCP. UDP support is experimental
 class CMClient () extends EventEmitter {
   def this(protocol: EConnectionProtocol) = this()
-  /**
-    * A boolean that indicates whether you are currently connected and the encryption handshake is complete.
-    * 'connected' is emitted when it changes to true, and 'error' is emitted when it changes to false unless you called disconnect.
-    * Sending any client messages is only allowed while this is true.
-    */
-  var connected: Boolean = js.native
-  /**
-    * A boolean that indicates whether you are currently logged on.
-    * Calling any handler methods except for methods to log on is only allowed while logged on.
-    */
-  var loggedOn: Boolean = js.native
-  /**
-    * If we've initiated a connection previously, a string containing "ipv4:port" for the server we're connecting/connected to.
-    * Also contains the address of the last host we were connected to if we're currently disconnected.
-    */
-  var remoteAddress: String = js.native
-  /**
-    *
-    * @param header
-    * @param body
-    * @param callback
-    */
-  @JSName("send")
-  var send_Original: SendMessage = js.native
-  /**
-    * Your own SteamID while logged on, otherwise unspecified.
-    * Must be set to a valid initial value before sending a logon message.
-    */
-  var steamID: String = js.native
+  
   /**
     * Override the address and/or port that will be used for the outgoing connection.
     * Takes effect the next time you connect.
@@ -56,6 +28,7 @@ class CMClient () extends EventEmitter {
   def bind(localAddress: String): Unit = js.native
   def bind(localAddress: String, localPort: String): Unit = js.native
   def bind(localAddress: String, localPort: Double): Unit = js.native
+  
   /**
     * Connects to Steam.It will keep trying to reconnect (provided autoRetry is not false) until encryption handshake is complete (see 'connected'), unless you cancel it with disconnect.
     *
@@ -68,12 +41,21 @@ class CMClient () extends EventEmitter {
   def connect(server: js.UndefOr[scala.Nothing], autoRetry: Boolean): Unit = js.native
   def connect(server: Server): Unit = js.native
   def connect(server: Server, autoRetry: Boolean): Unit = js.native
+  
+  /**
+    * A boolean that indicates whether you are currently connected and the encryption handshake is complete.
+    * 'connected' is emitted when it changes to true, and 'error' is emitted when it changes to false unless you called disconnect.
+    * Sending any client messages is only allowed while this is true.
+    */
+  var connected: Boolean = js.native
+  
   /**
     * Immediately terminates the connection and prevents any events (including 'error') from being emitted until you connect again.
     * If you are already disconnected, does nothing.
     * If there is an ongoing connection attempt, cancels it.
     */
   def disconnect(): Unit = js.native
+  
   def logOn(details: CMsgClientLogonLoginKey): Unit = js.native
   /**
     * Send a logon message to the CM.
@@ -83,9 +65,23 @@ class CMClient () extends EventEmitter {
     * @param details An object containing your logon parameters
     */
   def logOn(details: CMsgClientLogonPassword): Unit = js.native
+  
+  /**
+    * A boolean that indicates whether you are currently logged on.
+    * Calling any handler methods except for methods to log on is only allowed while logged on.
+    */
+  var loggedOn: Boolean = js.native
+  
   // Events
   @JSName("on")
   def on_message(eventType: message, callback: SendMessage): this.type = js.native
+  
+  /**
+    * If we've initiated a connection previously, a string containing "ipv4:port" for the server we're connecting/connected to.
+    * Also contains the address of the last host we were connected to if we're currently disconnected.
+    */
+  var remoteAddress: String = js.native
+  
   def send(
     /**
     * An object containing the message header. It has the following properties:
@@ -148,6 +144,14 @@ class CMClient () extends EventEmitter {
     */
   callback: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object
   ): Unit = js.native
+  /**
+    *
+    * @param header
+    * @param body
+    * @param callback
+    */
+  @JSName("send")
+  var send_Original: SendMessage = js.native
   @JSName("send")
   def send_false(
     /**
@@ -182,5 +186,10 @@ class CMClient () extends EventEmitter {
     */
   callback: `false`
   ): Unit = js.native
+  
+  /**
+    * Your own SteamID while logged on, otherwise unspecified.
+    * Must be set to a valid initial value before sending a logon message.
+    */
+  var steamID: String = js.native
 }
-

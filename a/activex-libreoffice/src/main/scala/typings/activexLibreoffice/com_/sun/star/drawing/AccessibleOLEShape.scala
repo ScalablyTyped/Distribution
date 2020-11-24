@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AccessibleOLEShape} service is implemented by OLE shapes.
@@ -36,8 +36,8 @@ trait AccessibleOLEShape
      with XAccessible
      with XAccessibleContext
      with XAccessibleAction
-
 object AccessibleOLEShape {
+  
   @scala.inline
   def apply(
     AccessibleActionCount: Double,
@@ -95,4 +95,3 @@ object AccessibleOLEShape {
     __obj.asInstanceOf[AccessibleOLEShape]
   }
 }
-

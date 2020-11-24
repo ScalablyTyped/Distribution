@@ -2,35 +2,80 @@ package typings.babylonjs.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait SubdivisionsX extends js.Object {
-  var height: js.UndefOr[Double] = js.undefined
-  var subdivisions: js.UndefOr[Double] = js.undefined
-  var subdivisionsX: js.UndefOr[Double] = js.undefined
-  var subdivisionsY: js.UndefOr[Double] = js.undefined
-  var updatable: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  
+  var height: js.UndefOr[Double] = js.native
+  
+  var subdivisions: js.UndefOr[Double] = js.native
+  
+  var subdivisionsX: js.UndefOr[Double] = js.native
+  
+  var subdivisionsY: js.UndefOr[Double] = js.native
+  
+  var updatable: js.UndefOr[Boolean] = js.native
+  
+  var width: js.UndefOr[Double] = js.native
 }
-
 object SubdivisionsX {
+  
   @scala.inline
-  def apply(
-    height: js.UndefOr[Double] = js.undefined,
-    subdivisions: js.UndefOr[Double] = js.undefined,
-    subdivisionsX: js.UndefOr[Double] = js.undefined,
-    subdivisionsY: js.UndefOr[Double] = js.undefined,
-    updatable: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): SubdivisionsX = {
+  def apply(): SubdivisionsX = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subdivisions)) __obj.updateDynamic("subdivisions")(subdivisions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subdivisionsX)) __obj.updateDynamic("subdivisionsX")(subdivisionsX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subdivisionsY)) __obj.updateDynamic("subdivisionsY")(subdivisionsY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubdivisionsX]
   }
+  
+  @scala.inline
+  implicit class SubdivisionsXOps[Self <: SubdivisionsX] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    
+    @scala.inline
+    def setSubdivisions(value: Double): Self = this.set("subdivisions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSubdivisions: Self = this.set("subdivisions", js.undefined)
+    
+    @scala.inline
+    def setSubdivisionsX(value: Double): Self = this.set("subdivisionsX", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSubdivisionsX: Self = this.set("subdivisionsX", js.undefined)
+    
+    @scala.inline
+    def setSubdivisionsY(value: Double): Self = this.set("subdivisionsY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSubdivisionsY: Self = this.set("subdivisionsY", js.undefined)
+    
+    @scala.inline
+    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpdatable: Self = this.set("updatable", js.undefined)
+    
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
 }
-

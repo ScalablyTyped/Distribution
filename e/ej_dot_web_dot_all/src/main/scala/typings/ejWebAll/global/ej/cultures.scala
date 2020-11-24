@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.ejWebAll.ej.culture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.cultures")
 @js.native
 object cultures extends TopLevel[culture]
-

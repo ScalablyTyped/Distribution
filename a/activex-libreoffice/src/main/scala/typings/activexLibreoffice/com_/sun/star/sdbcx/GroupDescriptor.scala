@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to create a new group in a database.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GroupDescriptor extends Descriptor
-
 object GroupDescriptor {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -35,4 +35,3 @@ object GroupDescriptor {
     __obj.asInstanceOf[GroupDescriptor]
   }
 }
-

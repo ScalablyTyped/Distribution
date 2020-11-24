@@ -2,10 +2,11 @@ package typings.protractor.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofpromise extends js.Object {
+  
   /**
     * Wraps a function that expects a node-style callback as its final
     * argument. This callback expects two arguments: an error value (which will
@@ -13,12 +14,13 @@ trait Typeofpromise extends js.Object {
     * argument. The callback will the resolve or reject the returned promise,
     * based on its arguments.
     */
-  // tslint:disable-next-line:no-any  Variable args have variable types.
   def checkedNodeCall[T](fn: js.Function, varArgs: js.Any*): js.Promise[T] = js.native
+  
   /**
     * Creates a promise that will be resolved at a set time in the future.
     */
   def delayed(ms: Double): js.Promise[Unit] = js.native
+  
   /**
     * Calls a function for each element in an array, and if the function returns
     * true adds the element to a new array.
@@ -39,8 +41,7 @@ trait Typeofpromise extends js.Object {
   def filter[T, V](
     arr: js.Array[T],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
-    // tslint:disable-next-line:no-any The type of archaic `self` adds no
-  // value
+    // value
   optSelf: js.Any
   ): js.Promise[js.Array[V]] = js.native
   def filter[T, V](
@@ -50,10 +51,10 @@ trait Typeofpromise extends js.Object {
   def filter[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
-    // tslint:disable-next-line:no-any The type of archaic `self` adds no
-  // value
+    // value
   optSelf: js.Any
   ): js.Promise[js.Array[V]] = js.native
+  
   /**
     * Returns a promise that will be resolved with the input value in a
     * fully-resolved state. If the value is an array, each element will be fully
@@ -69,8 +70,8 @@ trait Typeofpromise extends js.Object {
     *     value['self'] = value;
     *     promise.fullyResolved(value);  // Stack overflow.
     */
-  // tslint:disable-next-line:no-any Complex relation between input and output
   def fullyResolved(value: js.Any): js.Promise[_] = js.native
+  
   // region Functions
   /**
     * Determines whether a {@code value} should be treated as a promise.
@@ -78,6 +79,7 @@ trait Typeofpromise extends js.Object {
     * promise.
     */
   def isPromise(value: js.Any): Boolean = js.native
+  
   /**
     * Calls a function for each element in an array and inserts the result into a
     * new array, which is used as the fulfillment value of the promise returned
@@ -91,7 +93,6 @@ trait Typeofpromise extends js.Object {
     * Only the first failure will be reported; all subsequent errors will be
     * silently ignored.
     */
-  // tslint:disable-next-line:no-any The type of archaic `self` adds no value
   def map[T, V](
     arr: js.Array[T],
     fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
@@ -110,6 +111,7 @@ trait Typeofpromise extends js.Object {
     fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
     optSelf: js.Any
   ): js.Promise[js.Array[V]] = js.native
+  
   /**
     * Registers a listener to invoke when a promise is resolved, regardless
     * of whether the promise's value was successfully computed. This function
@@ -142,4 +144,3 @@ trait Typeofpromise extends js.Object {
     */
   def thenFinally[R](promise: js.Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = js.native
 }
-

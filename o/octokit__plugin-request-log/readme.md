@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__plugin-request-log
 
-Typings are for version 1.0.0
+Typings are for version 1.0.2
 
 ## Library description:
 Log all requests and request errors
@@ -11,8 +11,8 @@ Log all requests and request errors
 | Full name          | @octokit/plugin-request-log |
 | Keywords           | github, api, sdk, toolkit |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 884561 |
+| # dependents       | 3 |
+| # downloads        | 46061308 |
 | # stars            | 0 |
 
 ## Links

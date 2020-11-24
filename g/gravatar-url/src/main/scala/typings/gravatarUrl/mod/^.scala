@@ -2,11 +2,12 @@ package typings.gravatarUrl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gravatar-url", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Get the URL to a Gravatar image from an identifier, such as an email.
   @param identifier - Identifier for which to get the Gravatar image. This will typically be an email matching a Gravatar profile, but can technically be any string. The Gravatar service only sees a hash of the identifier, so you could actually use this to get pseudo-random avatars for any entity, e.g. based on its ID. Note that if the identifier contains an `@`, it is assumed to be an email, and will therefore be lower-cased and trimmed before hashing, as per the Gravatar instructions - otherwise it will be hashed as-is.
@@ -20,4 +21,3 @@ object ^ extends js.Object {
   def apply(identifier: String): String = js.native
   def apply(identifier: String, options: Options): String = js.native
 }
-

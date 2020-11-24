@@ -6,11 +6,11 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-select/lib/generate", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[OptionsType /* <: js.Array[Disabled] */](config: GenerateConfig[OptionsType]): ForwardRefExoticComponent[(SelectProps[OptionsType, DefaultValueType]) with RefAttributes[RefSelectProps]] = js.native
 }
-

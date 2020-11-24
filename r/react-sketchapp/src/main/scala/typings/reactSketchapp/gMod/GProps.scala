@@ -8,7 +8,7 @@ import typings.reactSketchapp.propsMod.StrokeProps
 import typings.reactSketchapp.propsMod.TransformProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GProps
@@ -18,12 +18,11 @@ trait GProps
      with TransformProps
      with DefinationProps
      with FontProps
-
 object GProps {
+  
   @scala.inline
   def apply(): GProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GProps]
   }
 }
-

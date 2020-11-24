@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.AnimationEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AnimationEvent")
 @js.native
@@ -14,7 +14,6 @@ class AnimationEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, animationEventInitDict: AnimationEventInit) = this()
 }
-
 @JSGlobal("AnimationEvent")
 @js.native
 object AnimationEvent
@@ -24,4 +23,3 @@ object AnimationEvent
       /* animationEventInitDict */ AnimationEventInit, 
       typings.std.AnimationEvent
     ]
-

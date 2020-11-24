@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DeploymentOptions extends js.Object
-
 /** Specifies the package deployment options. */
 @JSGlobal("Windows.Management.Deployment.DeploymentOptions")
 @js.native
 object DeploymentOptions extends js.Object {
+  
   /** When you set this option, the app is installed in development mode. For info about development mode, see Remarks. Use this option to enable key app development scenarios. */
   @js.native
   sealed trait developmentMode extends DeploymentOptions
@@ -30,6 +30,4 @@ object DeploymentOptions extends js.Object {
   /** The default behavior is used. */
   @js.native
   sealed trait none extends DeploymentOptions
-  
 }
-

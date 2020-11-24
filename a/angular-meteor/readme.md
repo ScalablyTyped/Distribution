@@ -12,7 +12,7 @@ Combining the simplicity and power of AngularJS and Meteor
 | Keywords           | AngularJS, Meteor, angular-meteor, angular |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 11850 |
+| # downloads        | 9143 |
 | # stars            | 0 |
 
 ## Links

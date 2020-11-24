@@ -18,13 +18,14 @@ import typings.xrm.Xrm.Utility.OpenParameters
 import typings.xrm.XrmEnum.OpenFileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.Navigation API
   */
 @js.native
 trait Navigation_ extends js.Object {
+  
   def navigateTo(pageInput: PageInputEntityList): PromiseLike[_] = js.native
   def navigateTo(pageInput: PageInputEntityList, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
   /**
@@ -36,6 +37,7 @@ trait Navigation_ extends js.Object {
   def navigateTo(pageInput: PageInputEntityRecord, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
   def navigateTo(pageInput: PageInputHtmlWebResource): PromiseLike[_] = js.native
   def navigateTo(pageInput: PageInputHtmlWebResource, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
+  
   /**
     * Displays an alert dialog containing a message and a button.
     * @param alertStrings The strings to be used in the alert dialog.
@@ -43,6 +45,7 @@ trait Navigation_ extends js.Object {
     */
   def openAlertDialog(alertStrings: AlertStrings): PromiseLike[_] = js.native
   def openAlertDialog(alertStrings: AlertStrings, alertOptions: DialogSizeOptions): PromiseLike[_] = js.native
+  
   /**
     * Displays a confirmation dialog box containing a message and two buttons.
     * @param confirmStrings The strings to be used in the confirm dialog.
@@ -50,21 +53,25 @@ trait Navigation_ extends js.Object {
     */
   def openConfirmDialog(confirmStrings: ConfirmStrings): PromiseLike[ConfirmResult] = js.native
   def openConfirmDialog(confirmStrings: ConfirmStrings, confirmOptions: DialogSizeOptions): PromiseLike[ConfirmResult] = js.native
+  
   /**
     * Displays an error dialog.
     * @param errorOptions An object to specify the options for error dialog.
     */
   def openErrorDialog(errorOptions: ErrorDialogOptions): PromiseLike[_] = js.native
+  
   /**
     * Opens a file.
     */
   def openFile(file: FileDetails): Unit = js.native
   def openFile(file: FileDetails, openFileOptions: OpenFileOptions): Unit = js.native
+  
   /**
     * Opens an entity form or a quick create form.
     */
   def openForm(entityFormOptions: EntityFormOptions): PromiseLike[OpenFormResult] = js.native
   def openForm(entityFormOptions: EntityFormOptions, formParameters: OpenParameters): PromiseLike[OpenFormResult] = js.native
+  
   /**
     * Opens a URL, including file URLs.
     * @param url URL to open.
@@ -72,6 +79,7 @@ trait Navigation_ extends js.Object {
     */
   def openUrl(url: String): Unit = js.native
   def openUrl(url: String, openUrlOptions: DialogSizeOptions): Unit = js.native
+  
   /**
     * Opens an HTML web resource.
     * @param webResourceName Name of the HTML web resource.
@@ -83,4 +91,3 @@ trait Navigation_ extends js.Object {
   def openWebResource(webResourceName: String, windowOptions: OpenWebresourceOptions): Unit = js.native
   def openWebResource(webResourceName: String, windowOptions: OpenWebresourceOptions, data: String): Unit = js.native
 }
-

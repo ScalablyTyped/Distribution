@@ -3,9 +3,73 @@ package typings.mpvScript
 import typings.mpvScript.mp.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mpvScriptStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def `ass-events`: `ass-events` = "ass-events".asInstanceOf[`ass-events`]
+  
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def dirs: dirs = "dirs".asInstanceOf[dirs]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  
+  @scala.inline
+  def files: files = "files".asInstanceOf[files]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def native: native = "native".asInstanceOf[native]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def press: press = "press".asInstanceOf[press]
+  
+  @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def v: v = "v".asInstanceOf[v]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait all extends js.Object
   
@@ -68,48 +132,4 @@ object mpvScriptStrings {
   
   @js.native
   sealed trait warn extends LogLevel
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def `ass-events`: `ass-events` = "ass-events".asInstanceOf[`ass-events`]
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def dirs: dirs = "dirs".asInstanceOf[dirs]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def press: press = "press".asInstanceOf[press]
-  @scala.inline
-  def repeat: repeat = "repeat".asInstanceOf[repeat]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def v: v = "v".asInstanceOf[v]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

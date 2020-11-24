@@ -2,25 +2,37 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkbookConnection extends js.Object {
+  
   val Application: typings.activexExcel.Excel.Application = js.native
+  
   val Creator: XlCreator = js.native
+  
+  def Delete(): Unit = js.native
+  
   var Description: String = js.native
+  
   @JSName("Excel.WorkbookConnection_typekey")
   var ExcelDotWorkbookConnection_typekey: WorkbookConnection = js.native
+  
   var Name: String = js.native
+  
   val ODBCConnection: typings.activexExcel.Excel.ODBCConnection = js.native
+  
   val OLEDBConnection: typings.activexExcel.Excel.OLEDBConnection = js.native
+  
   val Parent: js.Any = js.native
+  
+  def Ranges(Index: js.Any): Range = js.native
   @JSName("Ranges")
   val Ranges_Original: Ranges = js.native
-  val Type: XlConnectionType = js.native
-  var _Default: String = js.native
-  def Delete(): Unit = js.native
-  def Ranges(Index: js.Any): Range = js.native
+  
   def Refresh(): Unit = js.native
+  
+  val Type: XlConnectionType = js.native
+  
+  var _Default: String = js.native
 }
-

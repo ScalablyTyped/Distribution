@@ -10,9 +10,9 @@ A json validator that has an option to check for duplicated keys
 | ------------------ | :-------------: |
 | Full name          | gulp-json-validator |
 | Keywords           | jsonvalidator, json, validator, validation, gulpplugin |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 8220 |
+| # downloads        | 10242 |
 | # stars            | 1 |
 
 ## Links

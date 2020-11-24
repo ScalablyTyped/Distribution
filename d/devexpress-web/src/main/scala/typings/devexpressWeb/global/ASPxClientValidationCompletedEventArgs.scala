@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGlobalEvents.ValidationCompleted client event that allows you to centrally validate user input within all DevExpress web controls to which validation is applied.
@@ -29,4 +29,3 @@ class ASPxClientValidationCompletedEventArgs protected ()
     firstVisibleInvalidControl: typings.devexpressWeb.ASPxClientControl
   ) = this()
 }
-

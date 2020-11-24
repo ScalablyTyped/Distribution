@@ -1,17 +1,16 @@
 package typings.awsSdk.cognitosyncMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CognitoSync extends Service {
-  @JSName("config")
-  var config_CognitoSync: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Initiates a bulk publish of all existing datasets for an Identity Pool to the configured stream. Customers are limited to one successful bulk publish per 24 hours. Bulk publish is an asynchronous request, customers can see the status of the request via the GetBulkPublishDetails operation. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -25,6 +24,10 @@ trait CognitoSync extends Service {
     params: BulkPublishRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BulkPublishResponse, Unit]
   ): Request[BulkPublishResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CognitoSync: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deletes the specific dataset. The dataset will be deleted permanently, and the action can't be undone. Datasets that this dataset was merged with will no longer report the merge. Any subsequent operation on this dataset will result in a ResourceNotFoundException. This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials.
     */
@@ -38,6 +41,7 @@ trait CognitoSync extends Service {
     params: DeleteDatasetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDatasetResponse, Unit]
   ): Request[DeleteDatasetResponse, AWSError] = js.native
+  
   /**
     * Gets meta data about a dataset by identity and dataset name. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data. This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use Cognito Identity credentials to make this API call.
     */
@@ -51,6 +55,7 @@ trait CognitoSync extends Service {
     params: DescribeDatasetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDatasetResponse, Unit]
   ): Request[DescribeDatasetResponse, AWSError] = js.native
+  
   /**
     * Gets usage details (for example, data storage) about a particular identity pool. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -64,6 +69,7 @@ trait CognitoSync extends Service {
     params: DescribeIdentityPoolUsageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityPoolUsageResponse, Unit]
   ): Request[DescribeIdentityPoolUsageResponse, AWSError] = js.native
+  
   /**
     * Gets usage information for an identity, including number of datasets and data usage. This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials.
     */
@@ -77,6 +83,7 @@ trait CognitoSync extends Service {
     params: DescribeIdentityUsageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityUsageResponse, Unit]
   ): Request[DescribeIdentityUsageResponse, AWSError] = js.native
+  
   /**
     * Get the status of the last BulkPublish operation for an identity pool. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -90,6 +97,7 @@ trait CognitoSync extends Service {
     params: GetBulkPublishDetailsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBulkPublishDetailsResponse, Unit]
   ): Request[GetBulkPublishDetailsResponse, AWSError] = js.native
+  
   /**
     * Gets the events and the corresponding Lambda functions associated with an identity pool. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -103,6 +111,7 @@ trait CognitoSync extends Service {
     params: GetCognitoEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCognitoEventsResponse, Unit]
   ): Request[GetCognitoEventsResponse, AWSError] = js.native
+  
   /**
     * Gets the configuration settings of an identity pool. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -116,6 +125,7 @@ trait CognitoSync extends Service {
     params: GetIdentityPoolConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIdentityPoolConfigurationResponse, Unit]
   ): Request[GetIdentityPoolConfigurationResponse, AWSError] = js.native
+  
   /**
     * Lists datasets for an identity. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data. ListDatasets can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use the Cognito Identity credentials to make this API call.
     */
@@ -129,6 +139,7 @@ trait CognitoSync extends Service {
     params: ListDatasetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetsResponse, Unit]
   ): Request[ListDatasetsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of identity pools registered with Cognito. ListIdentityPoolUsage can only be called with developer credentials. You cannot make this API call with the temporary user credentials provided by Cognito Identity.
     */
@@ -142,6 +153,7 @@ trait CognitoSync extends Service {
     params: ListIdentityPoolUsageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListIdentityPoolUsageResponse, Unit]
   ): Request[ListIdentityPoolUsageResponse, AWSError] = js.native
+  
   /**
     * Gets paginated records, optionally changed after a particular sync count for a dataset and identity. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data. ListRecords can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use Cognito Identity credentials to make this API call.
     */
@@ -155,6 +167,7 @@ trait CognitoSync extends Service {
     params: ListRecordsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRecordsResponse, Unit]
   ): Request[ListRecordsResponse, AWSError] = js.native
+  
   /**
     * Registers a device to receive push sync notifications. This API can only be called with temporary credentials provided by Cognito Identity. You cannot call this API with developer credentials.
     */
@@ -168,6 +181,7 @@ trait CognitoSync extends Service {
     params: RegisterDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterDeviceResponse, Unit]
   ): Request[RegisterDeviceResponse, AWSError] = js.native
+  
   /**
     * Sets the AWS Lambda function for a given event type for an identity pool. This request only updates the key/value pair specified. Other key/values pairs are not updated. To remove a key value pair, pass a empty value for the particular key. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -181,6 +195,7 @@ trait CognitoSync extends Service {
     params: SetCognitoEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Sets the necessary configuration for push sync. This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.
     */
@@ -194,6 +209,7 @@ trait CognitoSync extends Service {
     params: SetIdentityPoolConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetIdentityPoolConfigurationResponse, Unit]
   ): Request[SetIdentityPoolConfigurationResponse, AWSError] = js.native
+  
   /**
     * Subscribes to receive notifications when a dataset is modified by another device. This API can only be called with temporary credentials provided by Cognito Identity. You cannot call this API with developer credentials.
     */
@@ -207,6 +223,7 @@ trait CognitoSync extends Service {
     params: SubscribeToDatasetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SubscribeToDatasetResponse, Unit]
   ): Request[SubscribeToDatasetResponse, AWSError] = js.native
+  
   /**
     * Unsubscribes from receiving notifications when a dataset is modified by another device. This API can only be called with temporary credentials provided by Cognito Identity. You cannot call this API with developer credentials.
     */
@@ -220,6 +237,7 @@ trait CognitoSync extends Service {
     params: UnsubscribeFromDatasetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UnsubscribeFromDatasetResponse, Unit]
   ): Request[UnsubscribeFromDatasetResponse, AWSError] = js.native
+  
   /**
     * Posts updates to records and adds and deletes records for a dataset and user. The sync count in the record patch is your last known sync count for that record. The server will reject an UpdateRecords request with a ResourceConflictException if you try to patch a record with a new value but a stale sync count. For example, if the sync count on the server is 5 for a key called highScore and you try and submit a new highScore with sync count of 4, the request will be rejected. To obtain the current sync count for a record, call ListRecords. On a successful update of the record, the response returns the new sync count for that record. You should present that sync count the next time you try to update that same record. When the record does not exist, specify the sync count as 0. This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials.
     */
@@ -234,4 +252,3 @@ trait CognitoSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecordsResponse, Unit]
   ): Request[UpdateRecordsResponse, AWSError] = js.native
 }
-

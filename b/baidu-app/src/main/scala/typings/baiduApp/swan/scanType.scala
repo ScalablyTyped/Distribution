@@ -2,7 +2,7 @@ package typings.baiduApp.swan
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 设备-----扫码
 /* Rewritten from type alias, can be one of: 
@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   - typings.baiduApp.baiduAppStrings.barCode
 */
 trait scanType extends js.Object
-
 object scanType {
+  
   @scala.inline
   def barCode: typings.baiduApp.baiduAppStrings.barCode = "barCode".asInstanceOf[typings.baiduApp.baiduAppStrings.barCode]
+  
   @scala.inline
   def qrCode: typings.baiduApp.baiduAppStrings.qrCode = "qrCode".asInstanceOf[typings.baiduApp.baiduAppStrings.qrCode]
 }
-

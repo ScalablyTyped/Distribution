@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Userprofiles")
 @js.native
 class ResourceUserprofiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.userProfiles.get
     * @desc Gets one user profile by ID.
@@ -41,6 +43,7 @@ class ResourceUserprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserProfile]
   ): Unit = js.native
+  
   /**
     * dfareporting.userProfiles.list
     * @desc Retrieves list of user profiles for a user.
@@ -69,4 +72,3 @@ class ResourceUserprofiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUserProfileList]
   ): Unit = js.native
 }
-

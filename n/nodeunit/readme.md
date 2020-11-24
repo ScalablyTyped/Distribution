@@ -9,9 +9,9 @@ Easy unit testing for node.js and the browser.
 | ------------------ | :-------------: |
 | Full name          | nodeunit |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 189 |
-| # downloads        | 1826303 |
+| # releases         | 1 |
+| # dependents       | 184 |
+| # downloads        | 1773408 |
 | # stars            | 24 |
 
 ## Links

@@ -10,7 +10,7 @@ import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.output
 import typings.awsSdkTypes.middlewareMod.Step
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdkBuildTypes.customizationMod.ConfigCustomizationDefinition
@@ -20,32 +20,36 @@ import scala.scalajs.js.annotation._
   - typings.awsSdkBuildTypes.customizationMod.ParameterSuppressionCustomizationDefinition
 */
 trait CustomizationDefinition extends js.Object
-
 object CustomizationDefinition {
+  
   @scala.inline
   def ConfigCustomizationDefinition(configuration: ConfigurationDefinition, `type`: Configuration): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
+  
   @scala.inline
   def MiddlewareCustomizationDefinition(expression: String, priority: Double, step: Step, `type`: Middleware): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
+  
   @scala.inline
   def ParameterSuppressionCustomizationDefinition(location: input | output, name: String, `type`: ParameterSuppression): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
+  
   @scala.inline
   def ParserDecoratorCustomizationDefinition(expression: String, priority: Double, `type`: ParserDecorator): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
+  
   @scala.inline
   def SyntheticParameterCustomizationDefinition(
     documentation: String,
@@ -59,4 +63,3 @@ object CustomizationDefinition {
     __obj.asInstanceOf[CustomizationDefinition]
   }
 }
-

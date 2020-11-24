@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "iam.Role")
 @js.native
@@ -23,11 +23,11 @@ class Role protected ()
   def this(name: String, args: RoleArgs) = this()
   def this(name: String, args: RoleArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "iam.Role")
 @js.native
 object Role extends js.Object {
+  
   /**
     * Get an existing Role resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object Role extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.roleMod.Role = js.native
   def get(name: String, id: Input[ID], state: RoleState): typings.pulumiAws.roleMod.Role = js.native
   def get(name: String, id: Input[ID], state: RoleState, opts: CustomResourceOptions): typings.pulumiAws.roleMod.Role = js.native
+  
   /**
     * Returns true if the given object is an instance of Role.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean = js.native
 }
-

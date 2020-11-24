@@ -1,22 +1,27 @@
 package typings.jupyterlabCsvviewer
 
+import typings.jupyterlabCsvviewer.parseMod.IParser.IOptions
 import typings.jupyterlabCsvviewer.parseMod.IParser.IResults
-import typings.jupyterlabCsvviewer.toolbarMod.CSVToolbar.IOptions
 import typings.luminoDatagrid.mod.DataGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/csvviewer", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def parseDSV(options: IOptions): IResults = js.native
+  
+  def parseDSVNoQuotes(options: IOptions): IResults = js.native
+  
   @js.native
   class CSVDelimiter protected ()
     extends typings.jupyterlabCsvviewer.toolbarMod.CSVDelimiter {
     /**
       * Construct a new csv table widget.
       */
-    def this(options: IOptions) = this()
+    def this(options: typings.jupyterlabCsvviewer.toolbarMod.CSVToolbar.IOptions) = this()
   }
   
   @js.native
@@ -62,8 +67,4 @@ object mod extends js.Object {
   @js.native
   class TextRenderConfig ()
     extends typings.jupyterlabCsvviewer.widgetMod.TextRenderConfig
-  
-  def parseDSV(options: typings.jupyterlabCsvviewer.parseMod.IParser.IOptions): IResults = js.native
-  def parseDSVNoQuotes(options: typings.jupyterlabCsvviewer.parseMod.IParser.IOptions): IResults = js.native
 }
-

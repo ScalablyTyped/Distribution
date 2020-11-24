@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The TextItem type allows you to create typography. Its functionality
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextItem ()
   extends typings.paper.paper.TextItem
-

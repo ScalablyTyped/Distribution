@@ -5,11 +5,12 @@ import typings.officeJsPreview.OfficeExtension.ClientRequestContext
 import typings.officeJsPreview.OfficeExtension.EmbeddedSession
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Visio.run")
 @js.native
 object run extends js.Object {
+  
   /**
     * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
@@ -55,4 +56,3 @@ object run extends js.Object {
     batch: js.Function1[/* context */ typings.officeJsPreview.Visio.RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
 }
-

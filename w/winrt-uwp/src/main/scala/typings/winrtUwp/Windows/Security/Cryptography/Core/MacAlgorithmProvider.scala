@@ -3,30 +3,34 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a message authentication code (MAC). A MAC uses symmetric key cryptography to prevent message tampering. For more information, see MACs, hashes, and signatures. */
 @js.native
 trait MacAlgorithmProvider extends js.Object {
+  
   /** Gets the name of the open MAC algorithm. */
   var algorithmName: String = js.native
-  /** Gets the length, in bytes, of the message authentication code. */
-  var macLength: Double = js.native
+  
   /**
     * Creates a CryptographicHash object that supports incremental hash operations.
     * @param keyMaterial Random data used to help generate the hash. You can call the GenerateRandom method to create the random data.
     * @return A CryptographicHash object that supports incremental hash operations.
     */
   def createHash(keyMaterial: IBuffer): CryptographicHash = js.native
+  
   /**
     * Creates a symmetric key that can be used to create the MAC value.
     * @param keyMaterial Random data used to help generate the key. You can call the GenerateRandom method to create the random data.
     * @return Symmetric key.
     */
   def createKey(keyMaterial: IBuffer): CryptographicKey = js.native
+  
+  /** Gets the length, in bytes, of the message authentication code. */
+  var macLength: Double = js.native
 }
-
 object MacAlgorithmProvider {
+  
   @scala.inline
   def apply(
     algorithmName: String,
@@ -37,26 +41,32 @@ object MacAlgorithmProvider {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createHash = js.Any.fromFunction1(createHash), createKey = js.Any.fromFunction1(createKey), macLength = macLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacAlgorithmProvider]
   }
+  
   @scala.inline
   implicit class MacAlgorithmProviderOps[Self <: MacAlgorithmProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlgorithmName(value: String): Self = this.set("algorithmName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateHash(value: IBuffer => CryptographicHash): Self = this.set("createHash", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateKey(value: IBuffer => CryptographicKey): Self = this.set("createKey", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setMacLength(value: Double): Self = this.set("macLength", value.asInstanceOf[js.Any])
   }
-  
 }
-

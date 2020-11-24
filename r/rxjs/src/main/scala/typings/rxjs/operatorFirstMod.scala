@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operator/first", JSImport.Namespace)
 @js.native
 object operatorFirstMod extends js.Object {
+  
   def first[T, D](): js.Any = js.native
   def first[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
   def first[T, S /* <: T */](
@@ -47,4 +48,3 @@ object operatorFirstMod extends js.Object {
     defaultValue: D
   ): js.Any = js.native
 }
-

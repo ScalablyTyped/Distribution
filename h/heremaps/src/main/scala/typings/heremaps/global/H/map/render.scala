@@ -3,11 +3,12 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.render.RenderEngine.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("H.map.render")
 @js.native
 object render extends js.Object {
+  
   /**
     * This is an abstract class representing a render engine. Render engines are used to render the geographical position from a view model on the
     * screen (viewport element). The rendered result may be different for different engines, because every engine uses its own capabilities and
@@ -31,23 +32,28 @@ object render extends js.Object {
       options: Options
     ) = this()
   }
-  
   @js.native
   object RenderEngine extends js.Object {
+    
     /**
       * This object defines the modifiers to use for H.map.ViewPort#startInteraction.
       */
     @js.native
     object InteractionModifiers extends js.Object {
-      /* 4 */ val COORD: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.COORD with Double = js.native
-      /* 1 */ val HEADING: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.HEADING with Double = js.native
-      /* 3 */ val INCLINE: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.INCLINE with Double = js.native
-      /* 2 */ val TILT: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.TILT with Double = js.native
-      /* 0 */ val ZOOM: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.ZOOM with Double = js.native
+      
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderEngine.InteractionModifiers with Double] = js.native
+      
+      /* 4 */ val COORD: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.COORD with Double = js.native
+      
+      /* 1 */ val HEADING: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.HEADING with Double = js.native
+      
+      /* 3 */ val INCLINE: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.INCLINE with Double = js.native
+      
+      /* 2 */ val TILT: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.TILT with Double = js.native
+      
+      /* 0 */ val ZOOM: typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.ZOOM with Double = js.native
     }
-    
   }
   
   /**
@@ -55,11 +61,15 @@ object render extends js.Object {
     */
   @js.native
   object RenderState extends js.Object {
-    /* 1 */ val ACTIVE: typings.heremaps.H.map.render.RenderState.ACTIVE with Double = js.native
-    /* 2 */ val DONE: typings.heremaps.H.map.render.RenderState.DONE with Double = js.native
-    /* 0 */ val PENDING: typings.heremaps.H.map.render.RenderState.PENDING with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderState with Double] = js.native
+    
+    /* 1 */ val ACTIVE: typings.heremaps.H.map.render.RenderState.ACTIVE with Double = js.native
+    
+    /* 2 */ val DONE: typings.heremaps.H.map.render.RenderState.DONE with Double = js.native
+    
+    /* 0 */ val PENDING: typings.heremaps.H.map.render.RenderState.PENDING with Double = js.native
   }
   
   /**
@@ -67,6 +77,7 @@ object render extends js.Object {
     */
   @js.native
   object p2d extends js.Object {
+    
     /**
       * This class implements a map render engine. It presents a geographic location (camera data from a view model) and renders all map layers in
       * the order in which they are provided in a single 2D canvas element.
@@ -88,8 +99,5 @@ object render extends js.Object {
         options: Options
       ) = this()
     }
-    
   }
-  
 }
-

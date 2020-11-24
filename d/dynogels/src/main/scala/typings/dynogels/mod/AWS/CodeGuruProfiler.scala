@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.codeguruprofilerMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.CodeGuruProfiler")
 @js.native
@@ -14,4 +14,3 @@ class CodeGuruProfiler ()
   extends typings.awsSdk.mod.CodeGuruProfiler {
   def this(options: ClientConfiguration) = this()
 }
-

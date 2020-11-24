@@ -10,9 +10,9 @@ A Base32-Crockford encoded API Key generator, validator, and converter to turn U
 | ------------------ | :-------------: |
 | Full name          | uuid-apikey |
 | Keywords           | uuid, apikey, human-readable |
-| # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 43593 |
+| # releases         | 7 |
+| # dependents       | 15 |
+| # downloads        | 114592 |
 | # stars            | 1 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.rxjs
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/pluck", JSImport.Namespace)
 @js.native
 object pluckMod extends js.Object {
+  
   def pluck[T, K1 /* <: /* keyof T */ String */](k1: K1): OperatorFunction[
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: T[K1] */ js.Any
@@ -34,4 +35,3 @@ object pluckMod extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: T[K1][K2][K3][K4][K5][K6] */ js.Any
   ] = js.native
 }
-

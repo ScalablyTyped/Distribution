@@ -15,7 +15,7 @@ import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`storage-open`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`storage-set`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`registration-window`
@@ -33,33 +33,44 @@ import scala.scalajs.js.annotation._
   - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-status`
 */
 trait ErrorCode extends js.Object
-
 object ErrorCode {
+  
   @scala.inline
   def FETCH_NETWORK: `fetch-client-network` = "fetch-client-network".asInstanceOf[`fetch-client-network`]
+  
   @scala.inline
   def FETCH_PARSE: `fetch-client-parse` = "fetch-client-parse".asInstanceOf[`fetch-client-parse`]
+  
   @scala.inline
   def FETCH_STATUS: `fetch-status` = "fetch-status".asInstanceOf[`fetch-status`]
+  
   @scala.inline
   def FETCH_THROTTLE: `fetch-throttle` = "fetch-throttle".asInstanceOf[`fetch-throttle`]
+  
   @scala.inline
   def FETCH_TIMEOUT: `fetch-timeout` = "fetch-timeout".asInstanceOf[`fetch-timeout`]
+  
   @scala.inline
   def REGISTRATION_API_KEY: `registration-api-key` = "registration-api-key".asInstanceOf[`registration-api-key`]
+  
   @scala.inline
   def REGISTRATION_APP_ID: `registration-app-id` = "registration-app-id".asInstanceOf[`registration-app-id`]
+  
   @scala.inline
   def REGISTRATION_PROJECT_ID: `registration-project-id` = "registration-project-id".asInstanceOf[`registration-project-id`]
+  
   @scala.inline
   def REGISTRATION_WINDOW: `registration-window` = "registration-window".asInstanceOf[`registration-window`]
+  
   @scala.inline
   def STORAGE_DELETE: `storage-delete` = "storage-delete".asInstanceOf[`storage-delete`]
+  
   @scala.inline
   def STORAGE_GET: `storage-get` = "storage-get".asInstanceOf[`storage-get`]
+  
   @scala.inline
   def STORAGE_OPEN: `storage-open` = "storage-open".asInstanceOf[`storage-open`]
+  
   @scala.inline
   def STORAGE_SET: `storage-set` = "storage-set".asInstanceOf[`storage-set`]
 }
-

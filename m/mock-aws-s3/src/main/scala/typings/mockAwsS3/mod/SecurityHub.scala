@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.securityhubMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "SecurityHub")
 @js.native
@@ -14,4 +14,3 @@ class SecurityHub ()
   extends typings.awsSdk.mod.SecurityHub {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SnapConstraints extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.SnapConstraints")
 @js.native
 object SnapConstraints extends js.Object {
+  
   //Enable all the constraints
   @js.native
   sealed trait All extends SnapConstraints
@@ -41,6 +41,4 @@ object SnapConstraints extends js.Object {
   //Enables node to be snapped to horizontal gridlines
   @js.native
   sealed trait SnapToVerticalLines extends SnapConstraints
-  
 }
-

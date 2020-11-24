@@ -12,7 +12,7 @@ Parity's native market data protocol
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 608 |
+| # downloads        | 524 |
 | # stars            | 0 |
 
 ## Links

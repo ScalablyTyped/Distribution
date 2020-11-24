@@ -2,13 +2,16 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CanvasImageData extends js.Object {
+  
   def createImageData(imagedata: ImageData): ImageData = js.native
   def createImageData(sw: Double, sh: Double): ImageData = js.native
+  
   def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ImageData = js.native
+  
   def putImageData(imagedata: ImageData, dx: Double, dy: Double): Unit = js.native
   def putImageData(
     imagedata: ImageData,
@@ -20,4 +23,3 @@ trait CanvasImageData extends js.Object {
     dirtyHeight: Double
   ): Unit = js.native
 }
-

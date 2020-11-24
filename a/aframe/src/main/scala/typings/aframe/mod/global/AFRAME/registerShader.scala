@@ -6,7 +6,7 @@ import typings.aframe.mod.ShaderConstructor
 import typings.aframe.mod.ShaderDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.registerShader")
 @js.native
@@ -18,4 +18,3 @@ object registerShader
         ShaderConstructor[MinimalShaderDefinition with js.Object]
       ]
     ]
-

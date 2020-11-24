@@ -2,11 +2,10 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ProjectProjectFields extends js.Object
-
 /**
   * Specifies the project fields that are available as a parameter for the {@link Office.Document | Document}.getProjectFieldAsync method.
   *
@@ -17,6 +16,7 @@ sealed trait ProjectProjectFields extends js.Object
 @JSGlobal("Office.ProjectProjectFields")
 @js.native
 object ProjectProjectFields extends js.Object {
+  
   /**
     * The number of digits after the decimal for the currency.
     */
@@ -92,6 +92,4 @@ object ProjectProjectFields extends js.Object {
     */
   @js.native
   sealed trait WorkUnits extends ProjectProjectFields
-  
 }
-

@@ -9,10 +9,11 @@ import typings.activexShell.activexShellStrings.SelectionChanged
 import typings.activexShell.activexShellStrings.VerbInvoked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   @JSName("on")
   def on_BeginDrag(
     obj: ShellFolderViewOC,
@@ -74,4 +75,3 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ ShellFolderView, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Find the root directory of a `git` repository
 | Full name          | git-root-dir |
 | Keywords           | .git, dir, directory, entry, file, find-up, find, findup, folder, git, look-up, look, match, parent, parents, path, resolve, root, search, up, walk, walking |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 8182 |
+| # dependents       | 12 |
+| # downloads        | 13730 |
 | # stars            | 0 |
 
 ## Links

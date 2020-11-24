@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByIdRequest")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class ClientBlockGetByIdRequest () extends IClientBlockGetByIdRequest {
   def this(properties: IClientBlockGetByIdRequest) = this()
+  
   /** ClientBlockGetByIdRequest blockId. */
   @JSName("blockId")
   var blockId_ClientBlockGetByIdRequest: String = js.native
+  
   /**
     * Converts this ClientBlockGetByIdRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByIdRequest")
 @js.native
 object ClientBlockGetByIdRequest extends js.Object {
+  
   /**
     * Creates a new ClientBlockGetByIdRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object ClientBlockGetByIdRequest extends js.Object {
     */
   def create(): ClientBlockGetByIdRequest = js.native
   def create(properties: IClientBlockGetByIdRequest): ClientBlockGetByIdRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByIdRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object ClientBlockGetByIdRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientBlockGetByIdRequest = js.native
   def decode(reader: Uint8Array): ClientBlockGetByIdRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientBlockGetByIdRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByIdRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object ClientBlockGetByIdRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientBlockGetByIdRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientBlockGetByIdRequest = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByIdRequest message. Does not implicitly {@link ClientBlockGetByIdRequest.verify|verify} messages.
     * @param message ClientBlockGetByIdRequest message or plain object to encode
@@ -67,6 +72,7 @@ object ClientBlockGetByIdRequest extends js.Object {
     */
   def encode(message: IClientBlockGetByIdRequest): Writer = js.native
   def encode(message: IClientBlockGetByIdRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByIdRequest message, length delimited. Does not implicitly {@link ClientBlockGetByIdRequest.verify|verify} messages.
     * @param message ClientBlockGetByIdRequest message or plain object to encode
@@ -75,12 +81,14 @@ object ClientBlockGetByIdRequest extends js.Object {
     */
   def encodeDelimited(message: IClientBlockGetByIdRequest): Writer = js.native
   def encodeDelimited(message: IClientBlockGetByIdRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientBlockGetByIdRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBlockGetByIdRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientBlockGetByIdRequest = js.native
+  
   /**
     * Creates a plain object from a ClientBlockGetByIdRequest message. Also converts values to other types if specified.
     * @param message ClientBlockGetByIdRequest
@@ -89,6 +97,7 @@ object ClientBlockGetByIdRequest extends js.Object {
     */
   def toObject(message: ClientBlockGetByIdRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientBlockGetByIdRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientBlockGetByIdRequest message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object ClientBlockGetByIdRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

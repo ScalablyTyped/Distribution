@@ -10,9 +10,9 @@ A node.js client for graphite.
 | ------------------ | :-------------: |
 | Full name          | graphite |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 25 |
-| # downloads        | 1002598 |
+| # releases         | 3 |
+| # dependents       | 24 |
+| # downloads        | 1397350 |
 | # stars            | 1 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.minappEnv.Array
 import typings.minappEnv.Intl.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.DateTimeFormat")
 @js.native
@@ -16,4 +16,3 @@ class DateTimeFormatCls ()
   def this(locales: String, options: DateTimeFormatOptions) = this()
   def this(locales: Array[String], options: DateTimeFormatOptions) = this()
 }
-

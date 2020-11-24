@@ -9,11 +9,12 @@ import typings.merkle.merkleStrings.sha512
 import typings.merkle.merkleStrings.whirlpool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("merkle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(hashname: md5): MerkleStream = js.native
   def apply(hashname: md5, useUpperCaseForHash: Boolean): MerkleStream = js.native
   def apply(hashname: none): MerkleStream = js.native
@@ -29,4 +30,3 @@ object ^ extends js.Object {
   def apply(hashname: whirlpool): MerkleStream = js.native
   def apply(hashname: whirlpool, useUpperCaseForHash: Boolean): MerkleStream = js.native
 }
-

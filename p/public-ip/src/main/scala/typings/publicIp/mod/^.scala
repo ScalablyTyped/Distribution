@@ -2,11 +2,12 @@ package typings.publicIp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("public-ip", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Get your public IP address - very fast!
   	In Node.js, it queries the DNS records of OpenDNS, Google DNS, and HTTPS services to determine your IP address. In browsers, it uses the excellent [icanhaz](https://github.com/major/icanhaz) and [ipify](https://ipify.org) services through HTTPS.
@@ -23,6 +24,7 @@ object ^ extends js.Object {
   	*/
   def v4(): CancelablePromise[String] = js.native
   def v4(options: Options): CancelablePromise[String] = js.native
+  
   /**
   	Get your public IP address - very fast!
   	In Node.js, it queries the DNS records of OpenDNS, Google DNS, and HTTPS services to determine your IP address. In browsers, it uses the excellent [icanhaz](https://github.com/major/icanhaz) and [ipify](https://ipify.org) services through HTTPS.
@@ -40,4 +42,3 @@ object ^ extends js.Object {
   def v6(): CancelablePromise[String] = js.native
   def v6(options: Options): CancelablePromise[String] = js.native
 }
-

@@ -6,18 +6,17 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "ShapeBuilder")
 @js.native
 class ShapeBuilder ()
   extends typings.babylonjs.buildersIndexMod.ShapeBuilder
-
 /* static members */
 @JSImport("babylonjs/Meshes/index", "ShapeBuilder")
 @js.native
 object ShapeBuilder extends js.Object {
-  var _ExtrudeShapeGeneric: js.Any = js.native
+  
   /**
     * Creates an extruded shape mesh. The extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
     * * The parameter `shape` is a required array of successive Vector3. This array depicts the shape to be extruded in its local space : the shape must be designed in the xOy plane and will be extruded along the Z axis.
@@ -40,6 +39,7 @@ object ShapeBuilder extends js.Object {
     */
   def ExtrudeShape(name: String, options: InvertUV): typings.babylonjs.meshMod.Mesh = js.native
   def ExtrudeShape(name: String, options: InvertUV, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  
   /**
     * Creates an custom extruded shape mesh.
     * The custom extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
@@ -68,5 +68,6 @@ object ShapeBuilder extends js.Object {
     */
   def ExtrudeShapeCustom(name: String, options: Path): typings.babylonjs.meshMod.Mesh = js.native
   def ExtrudeShapeCustom(name: String, options: Path, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  
+  var _ExtrudeShapeGeneric: js.Any = js.native
 }
-

@@ -12,7 +12,7 @@ Map an array n items at a time with promises
 | Keywords           | promise, limit, limited, concurrency, throttle, rate, batch, ratelimit, queue, async, await, promises |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 26298 |
+| # downloads        | 25932 |
 | # stars            | 2 |
 
 ## Links

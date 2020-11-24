@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Beacons$Diagnostics")
 @js.native
 class ResourceBeaconsDiagnostics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * proximitybeacon.beacons.diagnostics.list
     * @desc List the diagnostics for a single beacon. You can also list
@@ -55,4 +57,3 @@ class ResourceBeaconsDiagnostics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListDiagnosticsResponse]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Fastest memoization lib that supports N arguments
 | ------------------ | :-------------: |
 | Full name          | fast-memoize |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 115 |
-| # downloads        | 10882880 |
+| # releases         | 2 |
+| # dependents       | 156 |
+| # downloads        | 14342619 |
 | # stars            | 5 |
 
 ## Links

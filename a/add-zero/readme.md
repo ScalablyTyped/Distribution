@@ -11,8 +11,8 @@ Add a leading zero to a number.
 | Full name          | add-zero |
 | Keywords           | zero, leading, places, decimal, number, format, formatter, digits |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 134985 |
+| # dependents       | 13 |
+| # downloads        | 71623 |
 | # stars            | 1 |
 
 ## Links

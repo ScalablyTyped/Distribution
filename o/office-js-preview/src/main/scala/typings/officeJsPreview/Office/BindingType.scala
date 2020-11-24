@@ -2,17 +2,17 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BindingType extends js.Object
-
 /**
   * Specifies the type of the binding object that should be returned.
   */
 @JSGlobal("Office.BindingType")
 @js.native
 object BindingType extends js.Object {
+  
   /**
     * Tabular data without a header row. Data is returned as an array of arrays, for example in this form:
     * [[row1column1, row1column2],[row2column1, row2column2]]
@@ -31,6 +31,4 @@ object BindingType extends js.Object {
     */
   @js.native
   sealed trait Text extends BindingType
-  
 }
-

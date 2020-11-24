@@ -10,9 +10,9 @@ Tree View for Twitter Bootstrap
 | ------------------ | :-------------: |
 | Full name          | bootstrap-treeview |
 | Keywords           | twitter, bootstrap, tree, treeview, tree-view, navigation, javascript, jquery, jquery-plugin |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 21082 |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 25858 |
 | # stars            | 2 |
 
 ## Links

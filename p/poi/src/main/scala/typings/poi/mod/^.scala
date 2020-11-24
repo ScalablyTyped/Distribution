@@ -2,7 +2,7 @@ package typings.poi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * https://poi.js.org/api.html#constructor-argv
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends PoiCore {
   def this(argv: js.Array[String]) = this()
 }
-

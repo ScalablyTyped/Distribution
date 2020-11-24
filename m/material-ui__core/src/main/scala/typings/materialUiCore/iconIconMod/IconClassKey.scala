@@ -2,7 +2,7 @@ package typings.materialUiCore.iconIconMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.materialUiCore.materialUiCoreStrings.root
@@ -16,25 +16,32 @@ import scala.scalajs.js.annotation._
   - typings.materialUiCore.materialUiCoreStrings.fontSizeLarge
 */
 trait IconClassKey extends js.Object
-
 object IconClassKey {
+  
   @scala.inline
   def colorAction: typings.materialUiCore.materialUiCoreStrings.colorAction = "colorAction".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorAction]
+  
   @scala.inline
   def colorDisabled: typings.materialUiCore.materialUiCoreStrings.colorDisabled = "colorDisabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorDisabled]
+  
   @scala.inline
   def colorError: typings.materialUiCore.materialUiCoreStrings.colorError = "colorError".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorError]
+  
   @scala.inline
   def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+  
   @scala.inline
   def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+  
   @scala.inline
   def fontSizeInherit: typings.materialUiCore.materialUiCoreStrings.fontSizeInherit = "fontSizeInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fontSizeInherit]
+  
   @scala.inline
   def fontSizeLarge: typings.materialUiCore.materialUiCoreStrings.fontSizeLarge = "fontSizeLarge".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fontSizeLarge]
+  
   @scala.inline
   def fontSizeSmall: typings.materialUiCore.materialUiCoreStrings.fontSizeSmall = "fontSizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fontSizeSmall]
+  
   @scala.inline
   def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
-

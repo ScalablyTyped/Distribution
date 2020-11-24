@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a container of number formats. */
 @js.native
 trait NumberFormats
   extends XNumberFormats
      with XNumberFormatTypes
-
 object NumberFormats {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -37,4 +37,3 @@ object NumberFormats {
     __obj.asInstanceOf[NumberFormats]
   }
 }
-

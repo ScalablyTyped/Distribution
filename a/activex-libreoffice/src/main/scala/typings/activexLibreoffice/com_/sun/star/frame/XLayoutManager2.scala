@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.ui.XUIElement
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unified interface for {@link LayoutManager} service.
@@ -27,8 +27,8 @@ trait XLayoutManager2
      with XUIConfigurationListener
      with XMenuBarMergingAcceptor
      with XLayoutManagerEventBroadcaster
-
 object XLayoutManager2 {
+  
   @scala.inline
   def apply(
     CurrentDockingArea: Rectangle,
@@ -82,4 +82,3 @@ object XLayoutManager2 {
     __obj.asInstanceOf[XLayoutManager2]
   }
 }
-

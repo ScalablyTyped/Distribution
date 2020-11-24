@@ -10,14 +10,14 @@ A React layer component responsible for the position of an element on a page
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/layer |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 47 |
-| # dependents       | 4 |
-| # downloads        | 2057503 |
+| # releases         | 22 |
+| # dependents       | 2 |
+| # downloads        | 1598031 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://bitbucket.org/atlassian/atlaskit-mk-2#readme)
-- [Repository](https://bitbucket.org/atlassian/atlaskit-mk-2)
+- [Homepage](https://bitbucket.org/atlassian/atlassian-frontend#readme)
+- [Repository](https://bitbucket.org/atlassian/atlassian-frontend)
 - [Npm](https://www.npmjs.com/package/%40atlaskit%2Flayer)
     
 

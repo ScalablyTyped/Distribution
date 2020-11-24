@@ -3,7 +3,7 @@ package typings.multiProgress.mod
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("multi-progress", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends MultiProgress {
   def this(stream: Stream) = this()
 }
-

@@ -1,17 +1,19 @@
 package typings.awsSdk.apigatewayv2Mod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApiGatewayV2 extends Service {
+  
   @JSName("config")
   var config_ApiGatewayV2: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an Api resource.
     */
@@ -25,6 +27,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApiResponse, Unit]
   ): Request[CreateApiResponse, AWSError] = js.native
+  
   /**
     * Creates an API mapping.
     */
@@ -38,6 +41,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateApiMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApiMappingResponse, Unit]
   ): Request[CreateApiMappingResponse, AWSError] = js.native
+  
   /**
     * Creates an Authorizer for an API.
     */
@@ -51,6 +55,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAuthorizerResponse, Unit]
   ): Request[CreateAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Creates a Deployment for an API.
     */
@@ -64,6 +69,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentResponse, Unit]
   ): Request[CreateDeploymentResponse, AWSError] = js.native
+  
   /**
     * Creates a domain name.
     */
@@ -77,6 +83,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainNameResponse, Unit]
   ): Request[CreateDomainNameResponse, AWSError] = js.native
+  
   /**
     * Creates an Integration.
     */
@@ -90,6 +97,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIntegrationResult, Unit]
   ): Request[CreateIntegrationResult, AWSError] = js.native
+  
   /**
     * Creates an IntegrationResponses.
     */
@@ -103,6 +111,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIntegrationResponseResponse, Unit]
   ): Request[CreateIntegrationResponseResponse, AWSError] = js.native
+  
   /**
     * Creates a Model for an API.
     */
@@ -116,6 +125,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateModelResponse, Unit]
   ): Request[CreateModelResponse, AWSError] = js.native
+  
   /**
     * Creates a Route for an API.
     */
@@ -129,6 +139,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateRouteRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResult, Unit]
   ): Request[CreateRouteResult, AWSError] = js.native
+  
   /**
     * Creates a RouteResponse for a Route.
     */
@@ -142,6 +153,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateRouteResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResponseResponse, Unit]
   ): Request[CreateRouteResponseResponse, AWSError] = js.native
+  
   /**
     * Creates a Stage for an API.
     */
@@ -155,6 +167,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateStageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStageResponse, Unit]
   ): Request[CreateStageResponse, AWSError] = js.native
+  
   /**
     * Creates a VPC link.
     */
@@ -168,6 +181,7 @@ trait ApiGatewayV2 extends Service {
     params: CreateVpcLinkRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcLinkResponse, Unit]
   ): Request[CreateVpcLinkResponse, AWSError] = js.native
+  
   /**
     * Deletes the AccessLogSettings for a Stage. To disable access logging for a Stage, delete its AccessLogSettings.
     */
@@ -181,6 +195,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteAccessLogSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an Api resource.
     */
@@ -191,6 +206,7 @@ trait ApiGatewayV2 extends Service {
     */
   def deleteApi(params: DeleteApiRequest): Request[js.Object, AWSError] = js.native
   def deleteApi(params: DeleteApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an API mapping.
     */
@@ -204,6 +220,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteApiMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an Authorizer.
     */
@@ -217,6 +234,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a CORS configuration.
     */
@@ -230,6 +248,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteCorsConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Deployment.
     */
@@ -243,6 +262,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a domain name.
     */
@@ -256,6 +276,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an Integration.
     */
@@ -269,6 +290,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an IntegrationResponses.
     */
@@ -282,6 +304,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Model.
     */
@@ -292,6 +315,7 @@ trait ApiGatewayV2 extends Service {
     */
   def deleteModel(params: DeleteModelRequest): Request[js.Object, AWSError] = js.native
   def deleteModel(params: DeleteModelRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Route.
     */
@@ -302,6 +326,7 @@ trait ApiGatewayV2 extends Service {
     */
   def deleteRoute(params: DeleteRouteRequest): Request[js.Object, AWSError] = js.native
   def deleteRoute(params: DeleteRouteRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a route request parameter.
     */
@@ -315,6 +340,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteRouteRequestParameterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a RouteResponse.
     */
@@ -328,6 +354,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteRouteResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the RouteSettings for a stage.
     */
@@ -341,6 +368,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteRouteSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Stage.
     */
@@ -351,6 +379,7 @@ trait ApiGatewayV2 extends Service {
     */
   def deleteStage(params: DeleteStageRequest): Request[js.Object, AWSError] = js.native
   def deleteStage(params: DeleteStageRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a VPC link.
     */
@@ -364,6 +393,7 @@ trait ApiGatewayV2 extends Service {
     params: DeleteVpcLinkRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcLinkResponse, Unit]
   ): Request[DeleteVpcLinkResponse, AWSError] = js.native
+  
   /**
     * 
     */
@@ -377,6 +407,7 @@ trait ApiGatewayV2 extends Service {
     params: ExportApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportApiResponse, Unit]
   ): Request[ExportApiResponse, AWSError] = js.native
+  
   /**
     * Gets an Api resource.
     */
@@ -387,6 +418,7 @@ trait ApiGatewayV2 extends Service {
     */
   def getApi(params: GetApiRequest): Request[GetApiResponse, AWSError] = js.native
   def getApi(params: GetApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetApiResponse, Unit]): Request[GetApiResponse, AWSError] = js.native
+  
   /**
     * Gets an API mapping.
     */
@@ -400,6 +432,7 @@ trait ApiGatewayV2 extends Service {
     params: GetApiMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApiMappingResponse, Unit]
   ): Request[GetApiMappingResponse, AWSError] = js.native
+  
   /**
     * Gets API mappings.
     */
@@ -413,6 +446,7 @@ trait ApiGatewayV2 extends Service {
     params: GetApiMappingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApiMappingsResponse, Unit]
   ): Request[GetApiMappingsResponse, AWSError] = js.native
+  
   /**
     * Gets a collection of Api resources.
     */
@@ -426,6 +460,7 @@ trait ApiGatewayV2 extends Service {
     params: GetApisRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApisResponse, Unit]
   ): Request[GetApisResponse, AWSError] = js.native
+  
   /**
     * Gets an Authorizer.
     */
@@ -439,6 +474,7 @@ trait ApiGatewayV2 extends Service {
     params: GetAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizerResponse, Unit]
   ): Request[GetAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Gets the Authorizers for an API.
     */
@@ -452,6 +488,7 @@ trait ApiGatewayV2 extends Service {
     params: GetAuthorizersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizersResponse, Unit]
   ): Request[GetAuthorizersResponse, AWSError] = js.native
+  
   /**
     * Gets a Deployment.
     */
@@ -465,6 +502,7 @@ trait ApiGatewayV2 extends Service {
     params: GetDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentResponse, Unit]
   ): Request[GetDeploymentResponse, AWSError] = js.native
+  
   /**
     * Gets the Deployments for an API.
     */
@@ -478,6 +516,7 @@ trait ApiGatewayV2 extends Service {
     params: GetDeploymentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentsResponse, Unit]
   ): Request[GetDeploymentsResponse, AWSError] = js.native
+  
   /**
     * Gets a domain name.
     */
@@ -491,6 +530,7 @@ trait ApiGatewayV2 extends Service {
     params: GetDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainNameResponse, Unit]
   ): Request[GetDomainNameResponse, AWSError] = js.native
+  
   /**
     * Gets the domain names for an AWS account.
     */
@@ -504,6 +544,7 @@ trait ApiGatewayV2 extends Service {
     params: GetDomainNamesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainNamesResponse, Unit]
   ): Request[GetDomainNamesResponse, AWSError] = js.native
+  
   /**
     * Gets an Integration.
     */
@@ -517,6 +558,7 @@ trait ApiGatewayV2 extends Service {
     params: GetIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResult, Unit]
   ): Request[GetIntegrationResult, AWSError] = js.native
+  
   /**
     * Gets an IntegrationResponses.
     */
@@ -530,6 +572,7 @@ trait ApiGatewayV2 extends Service {
     params: GetIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResponseResponse, Unit]
   ): Request[GetIntegrationResponseResponse, AWSError] = js.native
+  
   /**
     * Gets the IntegrationResponses for an Integration.
     */
@@ -543,6 +586,7 @@ trait ApiGatewayV2 extends Service {
     params: GetIntegrationResponsesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResponsesResponse, Unit]
   ): Request[GetIntegrationResponsesResponse, AWSError] = js.native
+  
   /**
     * Gets the Integrations for an API.
     */
@@ -556,6 +600,7 @@ trait ApiGatewayV2 extends Service {
     params: GetIntegrationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationsResponse, Unit]
   ): Request[GetIntegrationsResponse, AWSError] = js.native
+  
   /**
     * Gets a Model.
     */
@@ -569,6 +614,7 @@ trait ApiGatewayV2 extends Service {
     params: GetModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetModelResponse, Unit]
   ): Request[GetModelResponse, AWSError] = js.native
+  
   /**
     * Gets a model template.
     */
@@ -582,6 +628,7 @@ trait ApiGatewayV2 extends Service {
     params: GetModelTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetModelTemplateResponse, Unit]
   ): Request[GetModelTemplateResponse, AWSError] = js.native
+  
   /**
     * Gets the Models for an API.
     */
@@ -595,6 +642,7 @@ trait ApiGatewayV2 extends Service {
     params: GetModelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetModelsResponse, Unit]
   ): Request[GetModelsResponse, AWSError] = js.native
+  
   /**
     * Gets a Route.
     */
@@ -608,6 +656,7 @@ trait ApiGatewayV2 extends Service {
     params: GetRouteRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResult, Unit]
   ): Request[GetRouteResult, AWSError] = js.native
+  
   /**
     * Gets a RouteResponse.
     */
@@ -621,6 +670,7 @@ trait ApiGatewayV2 extends Service {
     params: GetRouteResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResponseResponse, Unit]
   ): Request[GetRouteResponseResponse, AWSError] = js.native
+  
   /**
     * Gets the RouteResponses for a Route.
     */
@@ -634,6 +684,7 @@ trait ApiGatewayV2 extends Service {
     params: GetRouteResponsesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResponsesResponse, Unit]
   ): Request[GetRouteResponsesResponse, AWSError] = js.native
+  
   /**
     * Gets the Routes for an API.
     */
@@ -647,6 +698,7 @@ trait ApiGatewayV2 extends Service {
     params: GetRoutesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRoutesResponse, Unit]
   ): Request[GetRoutesResponse, AWSError] = js.native
+  
   /**
     * Gets a Stage.
     */
@@ -660,6 +712,7 @@ trait ApiGatewayV2 extends Service {
     params: GetStageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetStageResponse, Unit]
   ): Request[GetStageResponse, AWSError] = js.native
+  
   /**
     * Gets the Stages for an API.
     */
@@ -673,6 +726,7 @@ trait ApiGatewayV2 extends Service {
     params: GetStagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetStagesResponse, Unit]
   ): Request[GetStagesResponse, AWSError] = js.native
+  
   /**
     * Gets a collection of Tag resources.
     */
@@ -686,6 +740,7 @@ trait ApiGatewayV2 extends Service {
     params: GetTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTagsResponse, Unit]
   ): Request[GetTagsResponse, AWSError] = js.native
+  
   /**
     * Gets a VPC link.
     */
@@ -699,6 +754,7 @@ trait ApiGatewayV2 extends Service {
     params: GetVpcLinkRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVpcLinkResponse, Unit]
   ): Request[GetVpcLinkResponse, AWSError] = js.native
+  
   /**
     * Gets a collection of VPC links.
     */
@@ -712,6 +768,7 @@ trait ApiGatewayV2 extends Service {
     params: GetVpcLinksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVpcLinksResponse, Unit]
   ): Request[GetVpcLinksResponse, AWSError] = js.native
+  
   /**
     * Imports an API.
     */
@@ -725,6 +782,7 @@ trait ApiGatewayV2 extends Service {
     params: ImportApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportApiResponse, Unit]
   ): Request[ImportApiResponse, AWSError] = js.native
+  
   /**
     * Puts an Api resource.
     */
@@ -738,6 +796,21 @@ trait ApiGatewayV2 extends Service {
     params: ReimportApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ReimportApiResponse, Unit]
   ): Request[ReimportApiResponse, AWSError] = js.native
+  
+  /**
+    * Resets all authorizer cache entries on a stage. Supported only for HTTP APIs.
+    */
+  def resetAuthorizersCache(): Request[js.Object, AWSError] = js.native
+  def resetAuthorizersCache(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Resets all authorizer cache entries on a stage. Supported only for HTTP APIs.
+    */
+  def resetAuthorizersCache(params: ResetAuthorizersCacheRequest): Request[js.Object, AWSError] = js.native
+  def resetAuthorizersCache(
+    params: ResetAuthorizersCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates a new Tag resource to represent a tag.
     */
@@ -751,6 +824,7 @@ trait ApiGatewayV2 extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Deletes a Tag.
     */
@@ -764,6 +838,7 @@ trait ApiGatewayV2 extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates an Api resource.
     */
@@ -777,6 +852,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiResponse, Unit]
   ): Request[UpdateApiResponse, AWSError] = js.native
+  
   /**
     * The API mapping.
     */
@@ -790,6 +866,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateApiMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiMappingResponse, Unit]
   ): Request[UpdateApiMappingResponse, AWSError] = js.native
+  
   /**
     * Updates an Authorizer.
     */
@@ -803,6 +880,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuthorizerResponse, Unit]
   ): Request[UpdateAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Updates a Deployment.
     */
@@ -816,6 +894,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeploymentResponse, Unit]
   ): Request[UpdateDeploymentResponse, AWSError] = js.native
+  
   /**
     * Updates a domain name.
     */
@@ -829,6 +908,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainNameResponse, Unit]
   ): Request[UpdateDomainNameResponse, AWSError] = js.native
+  
   /**
     * Updates an Integration.
     */
@@ -842,6 +922,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIntegrationResult, Unit]
   ): Request[UpdateIntegrationResult, AWSError] = js.native
+  
   /**
     * Updates an IntegrationResponses.
     */
@@ -855,6 +936,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIntegrationResponseResponse, Unit]
   ): Request[UpdateIntegrationResponseResponse, AWSError] = js.native
+  
   /**
     * Updates a Model.
     */
@@ -868,6 +950,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelResponse, Unit]
   ): Request[UpdateModelResponse, AWSError] = js.native
+  
   /**
     * Updates a Route.
     */
@@ -881,6 +964,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateRouteRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRouteResult, Unit]
   ): Request[UpdateRouteResult, AWSError] = js.native
+  
   /**
     * Updates a RouteResponse.
     */
@@ -894,6 +978,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateRouteResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRouteResponseResponse, Unit]
   ): Request[UpdateRouteResponseResponse, AWSError] = js.native
+  
   /**
     * Updates a Stage.
     */
@@ -907,6 +992,7 @@ trait ApiGatewayV2 extends Service {
     params: UpdateStageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateStageResponse, Unit]
   ): Request[UpdateStageResponse, AWSError] = js.native
+  
   /**
     * Updates a VPC link.
     */
@@ -921,4 +1007,3 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcLinkResponse, Unit]
   ): Request[UpdateVpcLinkResponse, AWSError] = js.native
 }
-

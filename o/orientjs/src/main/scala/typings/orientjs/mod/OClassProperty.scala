@@ -5,27 +5,19 @@ import typings.orientjs.anon.Force
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OClassProperty")
 @js.native
 class OClassProperty () extends js.Object {
-  var `class`: js.UndefOr[OClass] = js.native
-  var collate: js.UndefOr[String] = js.native
-  var custom: js.UndefOr[Fields] = js.native
-  var linkedClass: js.UndefOr[String] = js.native
-  var linkedType: js.UndefOr[PropertyType] = js.native
-  var mandatory: js.UndefOr[Boolean] = js.native
-  var max: js.UndefOr[Double] = js.native
-  var min: js.UndefOr[Double] = js.native
-  var name: js.UndefOr[String] = js.native
-  var notNull: js.UndefOr[Boolean] = js.native
-  var originalName: js.UndefOr[String] = js.native
-  var readonly: js.UndefOr[Boolean] = js.native
-  var regexp: js.UndefOr[RegExp | String] = js.native
-  var `type`: js.UndefOr[PropertyType] = js.native
+  
   def alter(name: String): js.Promise[OClass] = js.native
   def alter(name: String, setting: js.Any): js.Promise[OClass] = js.native
+  
+  var `class`: js.UndefOr[OClass] = js.native
+  
+  var collate: js.UndefOr[String] = js.native
+  
   /**
     * Create a new property.
     *
@@ -41,8 +33,12 @@ class OClassProperty () extends js.Object {
   def create(config: js.Array[PropertyCreateConfig], reload: Boolean): js.Promise[js.Array[OClassProperty]] = js.native
   def create(config: PropertyCreateConfig): js.Promise[OClassProperty] = js.native
   def create(config: PropertyCreateConfig, reload: Boolean): js.Promise[OClassProperty] = js.native
+  
+  var custom: js.UndefOr[Fields] = js.native
+  
   def drop(name: String): js.Promise[OClass] = js.native
   def drop(name: String, config: Force): js.Promise[OClass] = js.native
+  
   /**
     * Get the property with the given name.
     *
@@ -50,10 +46,36 @@ class OClassProperty () extends js.Object {
     * @promise {Object|null}   The retrieved property.
     */
   def get(name: String): js.Promise[OClassProperty] = js.native
+  
+  var linkedClass: js.UndefOr[String] = js.native
+  
+  var linkedType: js.UndefOr[PropertyType] = js.native
+  
   def list(): js.Promise[js.Array[OClassProperty]] = js.native
+  
+  var mandatory: js.UndefOr[Boolean] = js.native
+  
+  var max: js.UndefOr[Double] = js.native
+  
+  var min: js.UndefOr[Double] = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
+  var notNull: js.UndefOr[Boolean] = js.native
+  
+  var originalName: js.UndefOr[String] = js.native
+  
+  var readonly: js.UndefOr[Boolean] = js.native
+  
+  var regexp: js.UndefOr[RegExp | String] = js.native
+  
   def reload(): js.Promise[OClassProperty] = js.native
+  
   def rename(oldName: String): js.Promise[OClassProperty] = js.native
   def rename(oldName: String, newName: String): js.Promise[OClassProperty] = js.native
+  
+  var `type`: js.UndefOr[PropertyType] = js.native
+  
   /**
     * Update the given property.
     *
@@ -64,4 +86,3 @@ class OClassProperty () extends js.Object {
   def update(config: PropertyUpdateConfig): js.Promise[OClassProperty] = js.native
   def update(config: PropertyUpdateConfig, reload: Boolean): js.Promise[OClassProperty] = js.native
 }
-

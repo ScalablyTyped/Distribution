@@ -16,14 +16,21 @@ import typings.materialSelect.iconAdapterMod.MDCSelectIconAdapter
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCSelect ()
     extends typings.materialSelect.componentMod.MDCSelect
+  /* static members */
+  @js.native
+  object MDCSelect extends js.Object {
+    
+    def attachTo(root: Element): typings.materialSelect.componentMod.MDCSelect = js.native
+  }
   
   @js.native
   /**
@@ -36,75 +43,75 @@ object mod extends js.Object {
     def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
   }
+  /* static members */
+  @js.native
+  object MDCSelectFoundation extends js.Object {
+    
+    def cssClasses: ACTIVATED = js.native
+    
+    /**
+      * See {@link MDCSelectAdapter} for typing information on parameters and return types.
+      */
+    def defaultAdapter: MDCSelectAdapter = js.native
+    
+    def numbers: LABELSCALE = js.native
+    
+    def strings: ARIACONTROLS = js.native
+  }
   
   @js.native
   class MDCSelectHelperText ()
     extends typings.materialSelect.indexMod.MDCSelectHelperText
+  /* static members */
+  @js.native
+  object MDCSelectHelperText extends js.Object {
+    
+    def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
+  }
   
   @js.native
   class MDCSelectHelperTextFoundation ()
     extends typings.materialSelect.indexMod.MDCSelectHelperTextFoundation {
     def this(adapter: PartialMDCSelectHelperTex) = this()
   }
+  /* static members */
+  @js.native
+  object MDCSelectHelperTextFoundation extends js.Object {
+    
+    def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
+    
+    /**
+      * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
+      */
+    def defaultAdapter: MDCSelectHelperTextAdapter = js.native
+    
+    def strings: ARIAHIDDEN = js.native
+  }
   
   @js.native
   class MDCSelectIcon ()
     extends typings.materialSelect.iconIndexMod.MDCSelectIcon
+  /* static members */
+  @js.native
+  object MDCSelectIcon extends js.Object {
+    
+    def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
+  }
   
   @js.native
   class MDCSelectIconFoundation ()
     extends typings.materialSelect.iconIndexMod.MDCSelectIconFoundation {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCSelect extends js.Object {
-    def attachTo(root: Element): typings.materialSelect.componentMod.MDCSelect = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCSelectFoundation extends js.Object {
-    def cssClasses: ACTIVATED = js.native
-    /**
-      * See {@link MDCSelectAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectAdapter = js.native
-    def numbers: LABELSCALE = js.native
-    def strings: ARIACONTROLS = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCSelectHelperText extends js.Object {
-    def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCSelectHelperTextFoundation extends js.Object {
-    def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
-    /**
-      * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectHelperTextAdapter = js.native
-    def strings: ARIAHIDDEN = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCSelectIcon extends js.Object {
-    def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCSelectIconFoundation extends js.Object {
+    
     /**
       * See {@link MDCSelectIconAdapter} for typing information on parameters and return types.
       */
     def defaultAdapter: MDCSelectIconAdapter = js.native
+    
     def strings: ICONEVENT = js.native
   }
   
@@ -132,21 +139,31 @@ object mod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ACTIVATED: String = js.native
+    
     var DISABLED: String = js.native
+    
     var FOCUSED: String = js.native
+    
     var INVALID: String = js.native
+    
     var MENU_INVALID: String = js.native
+    
     var OUTLINED: String = js.native
+    
     var REQUIRED: String = js.native
+    
     var ROOT: String = js.native
-    var SELECTED_ITEM_CLASS: String = js.native
+    
     var WITH_LEADING_ICON: String = js.native
   }
   
   @js.native
   object helperTextCssClasses extends js.Object {
+    
     var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    
     var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
   }
   
@@ -174,7 +191,9 @@ object mod extends js.Object {
     */
   @js.native
   object helperTextStrings extends js.Object {
+    
     var ARIA_HIDDEN: String = js.native
+    
     var ROLE: String = js.native
   }
   
@@ -202,31 +221,47 @@ object mod extends js.Object {
     */
   @js.native
   object iconStrings extends js.Object {
+    
     var ICON_EVENT: String = js.native
+    
     var ICON_ROLE: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
+    
     var LABEL_SCALE: Double = js.native
+    
     var UNSET_INDEX: Double = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ARIA_CONTROLS: String = js.native
+    
+    var ARIA_DESCRIBEDBY: String = js.native
+    
     var ARIA_SELECTED_ATTR: String = js.native
+    
     var CHANGE_EVENT: String = js.native
+    
+    var HIDDEN_INPUT_SELECTOR: String = js.native
+    
     var LABEL_SELECTOR: String = js.native
+    
     var LEADING_ICON_SELECTOR: String = js.native
+    
     var LINE_RIPPLE_SELECTOR: String = js.native
+    
     var MENU_SELECTOR: String = js.native
+    
     var OUTLINE_SELECTOR: String = js.native
-    var SELECTED_ITEM_SELECTOR: String = js.native
+    
     var SELECTED_TEXT_SELECTOR: String = js.native
+    
     var SELECT_ANCHOR_SELECTOR: String = js.native
+    
     var VALUE_ATTR: String = js.native
   }
-  
 }
-

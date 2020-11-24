@@ -9,9 +9,9 @@ Connect middleware for node-sass
 | ------------------ | :-------------: |
 | Full name          | node-sass-middleware |
 | Keywords           | sass, css, libsass |
-| # releases         | 1 |
-| # dependents       | 81 |
-| # downloads        | 528470 |
+| # releases         | 0 |
+| # dependents       | 88 |
+| # downloads        | 513130 |
 | # stars            | 20 |
 
 ## Links

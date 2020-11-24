@@ -2,11 +2,12 @@ package typings.rfdc.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rfdc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Really Fast Deep Clone
     *
@@ -51,4 +52,3 @@ object ^ extends js.Object {
   def apply(): js.Function1[/* obj */ js.Any, _] = js.native
   def apply(opts: Options): js.Function1[/* obj */ js.Any, _] = js.native
 }
-

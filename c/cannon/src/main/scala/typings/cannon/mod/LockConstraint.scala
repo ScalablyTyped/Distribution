@@ -3,7 +3,7 @@ package typings.cannon.mod
 import typings.cannon.CANNON.ILockConstraintOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "LockConstraint")
 @js.native
@@ -16,4 +16,3 @@ class LockConstraint protected ()
     options: ILockConstraintOptions
   ) = this()
 }
-

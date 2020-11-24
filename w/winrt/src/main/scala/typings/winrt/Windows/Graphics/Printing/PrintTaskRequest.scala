@@ -3,12 +3,12 @@ package typings.winrt.Windows.Graphics.Printing
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrintTaskRequest extends IPrintTaskRequest
-
 object PrintTaskRequest {
+  
   @scala.inline
   def apply(
     createPrintTask: (String, PrintTaskSourceRequestedHandler) => PrintTask,
@@ -19,4 +19,3 @@ object PrintTaskRequest {
     __obj.asInstanceOf[PrintTaskRequest]
   }
 }
-

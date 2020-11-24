@@ -2,7 +2,7 @@ package typings.typescriptServices.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "LabeledStatement")
 @js.native
@@ -13,4 +13,3 @@ class LabeledStatement protected ()
     statement: typings.typescriptServices.TypeScript.AST
   ) = this()
 }
-

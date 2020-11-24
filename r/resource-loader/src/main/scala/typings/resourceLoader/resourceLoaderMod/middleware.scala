@@ -2,7 +2,7 @@ package typings.resourceLoader.resourceLoaderMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @namespace middleware
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("resource-loader", "middleware")
 @js.native
 object middleware extends js.Object {
+  
   /**
     * A simple in-memory cache for resource.
     *
@@ -23,6 +24,7 @@ object middleware extends js.Object {
     * @param {function} next - Callback when complete
     */
   def caching(resource: Resource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  
   /**
     * A middleware for transforming XHR loaded Blobs into more useful objects
     *
@@ -37,4 +39,3 @@ object middleware extends js.Object {
     */
   def parsing(resource: Resource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }
-

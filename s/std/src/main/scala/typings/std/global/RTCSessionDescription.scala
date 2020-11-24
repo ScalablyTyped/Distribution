@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.RTCSessionDescriptionInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCSessionDescription")
 @js.native
@@ -13,7 +13,6 @@ class RTCSessionDescription ()
   extends typings.std.RTCSessionDescription {
   def this(descriptionInitDict: RTCSessionDescriptionInit) = this()
 }
-
 @JSGlobal("RTCSessionDescription")
 @js.native
 object RTCSessionDescription
@@ -22,4 +21,3 @@ object RTCSessionDescription
       /* descriptionInitDict */ RTCSessionDescriptionInit, 
       typings.std.RTCSessionDescription
     ]
-

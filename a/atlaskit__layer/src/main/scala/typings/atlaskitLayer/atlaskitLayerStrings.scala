@@ -6,9 +6,73 @@ import typings.atlaskitLayer.mod.FlipPositionType
 import typings.atlaskitLayer.mod.PositionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object atlaskitLayerStrings {
+  
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def `bottom center`: `bottom center` = ("bottom center").asInstanceOf[`bottom center`]
+  
+  @scala.inline
+  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
+  
+  @scala.inline
+  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
+  
+  @scala.inline
+  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
+  
+  @scala.inline
+  def `left middle`: `left middle` = ("left middle").asInstanceOf[`left middle`]
+  
+  @scala.inline
+  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
+  
+  @scala.inline
+  def `right middle`: `right middle` = ("right middle").asInstanceOf[`right middle`]
+  
+  @scala.inline
+  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
+  
+  @scala.inline
+  def scrollParent: scrollParent = "scrollParent".asInstanceOf[scrollParent]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top center`: `top center` = ("top center").asInstanceOf[`top center`]
+  
+  @scala.inline
+  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
+  
+  @scala.inline
+  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
+  
+  @scala.inline
+  def viewport: viewport = "viewport".asInstanceOf[viewport]
+  
+  @scala.inline
+  def window: window = "window".asInstanceOf[window]
+  
   @js.native
   sealed trait absolute extends CSSPositionType
   
@@ -71,48 +135,4 @@ object atlaskitLayerStrings {
   
   @js.native
   sealed trait window extends BoundariesElementType
-  
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom center`: `bottom center` = ("bottom center").asInstanceOf[`bottom center`]
-  @scala.inline
-  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
-  @scala.inline
-  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
-  @scala.inline
-  def `left middle`: `left middle` = ("left middle").asInstanceOf[`left middle`]
-  @scala.inline
-  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
-  @scala.inline
-  def `right middle`: `right middle` = ("right middle").asInstanceOf[`right middle`]
-  @scala.inline
-  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
-  @scala.inline
-  def scrollParent: scrollParent = "scrollParent".asInstanceOf[scrollParent]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top center`: `top center` = ("top center").asInstanceOf[`top center`]
-  @scala.inline
-  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
-  @scala.inline
-  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
-  @scala.inline
-  def viewport: viewport = "viewport".asInstanceOf[viewport]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
 }
-

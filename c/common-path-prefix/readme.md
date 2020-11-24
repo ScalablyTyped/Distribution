@@ -12,7 +12,7 @@ Computes the longest prefix string that is common to each path, excluding the ba
 | Keywords           | common, path, directory, dir, file, root, typescript, common prefix, common path, common path start, common root |
 | # releases         | 3 |
 | # dependents       | 25 |
-| # downloads        | 9779498 |
+| # downloads        | 10418892 |
 | # stars            | 2 |
 
 ## Links

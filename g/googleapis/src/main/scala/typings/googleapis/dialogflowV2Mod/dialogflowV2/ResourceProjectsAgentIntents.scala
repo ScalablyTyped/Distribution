@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects$Agent$Intents")
 @js.native
 class ResourceProjectsAgentIntents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.intents.batchDelete
     * @desc Deletes intents in the specified agent.  Operation <response:
@@ -46,6 +46,7 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.intents.batchUpdate
     * @desc Updates/Creates multiple intents in the specified agent.  Operation
@@ -79,6 +80,9 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.intents.create
     * @desc Creates an intent in the specified agent.
@@ -113,6 +117,7 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.intents.delete
     * @desc Deletes the specified intent and its direct or indirect followup
@@ -145,6 +150,7 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.intents.get
     * @desc Retrieves the specified intent.
@@ -178,6 +184,7 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.intents.list
     * @desc Returns the list of all intents in the specified agent.
@@ -213,6 +220,7 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListIntentsResponse]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.intents.patch
     * @desc Updates the specified intent.
@@ -249,4 +257,3 @@ class ResourceProjectsAgentIntents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
 }
-

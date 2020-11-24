@@ -1,14 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.awsSdkTypes.protocolMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser/model/_ListOfApplicationResponse", JSImport.Namespace)
 @js.native
 object listOfApplicationResponseMod extends js.Object {
+  
   @JSName("_ListOfApplicationResponse")
-  val ListOfApplicationResponse: List = js.native
+  val ListOfApplicationResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }
-

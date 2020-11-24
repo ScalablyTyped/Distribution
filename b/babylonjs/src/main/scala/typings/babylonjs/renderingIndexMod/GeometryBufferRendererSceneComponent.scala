@@ -3,7 +3,7 @@ package typings.babylonjs.renderingIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Rendering/index", "GeometryBufferRendererSceneComponent")
 @js.native
@@ -15,4 +15,3 @@ class GeometryBufferRendererSceneComponent protected ()
     */
   def this(scene: Scene) = this()
 }
-

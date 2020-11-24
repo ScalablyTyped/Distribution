@@ -3,7 +3,7 @@ package typings.smartFoxServer.global.SFS2X
 import typings.smartFoxServer.SFS2X.IconfigObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.SmartFox")
 @js.native
@@ -15,4 +15,3 @@ class SmartFox ()
   extends typings.smartFoxServer.SFS2X.SmartFox {
   def this(configObj: IconfigObj) = this()
 }
-

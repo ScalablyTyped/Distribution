@@ -11,8 +11,8 @@ Filter out system junk files like .DS_Store and Thumbs.db
 | Full name          | junk |
 | Keywords           | junk, trash, garbage, files, os, ignore, exclude, filter, temp, tmp, system, clean, cleanup |
 | # releases         | 3 |
-| # dependents       | 113 |
-| # downloads        | 14607036 |
+| # dependents       | 126 |
+| # downloads        | 23875447 |
 | # stars            | 7 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.reactSelect.utilsMod
 import typings.reactSelect.typesMod.ClassNamesState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-select/src/utils", "classNames")
 @js.native
 object classNames extends js.Object {
+  
   def apply(): String = js.native
   def apply(
     prefix: js.UndefOr[scala.Nothing],
@@ -57,4 +58,3 @@ object classNames extends js.Object {
   def apply(prefix: Null, cssKey: Null, state: js.UndefOr[ClassNamesState], className: String): String = js.native
   def apply(prefix: Null, cssKey: Null, state: ClassNamesState): String = js.native
 }
-

@@ -8,26 +8,21 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports network communication using a stream socket over TCP or Bluetooth RFCOMM in Windows Store apps. */
 @js.native
 trait StreamSocket extends js.Object {
-  /** Gets socket control data on a StreamSocket object. */
-  var control: StreamSocketControl = js.native
-  /** Gets socket information on a StreamSocket object. */
-  var information: StreamSocketInformation = js.native
-  /** Gets the input stream to read from the remote destination on a StreamSocket object. */
-  var inputStream: IInputStream = js.native
-  /** Gets the output stream to write to the remote host on a StreamSocket object. */
-  var outputStream: IOutputStream = js.native
+  
   /**
     * Cancels pending reads and writes over a StreamSocket object.
     * @return An asynchronous cancel operation on a StreamSocket object.
     */
   def cancelIOAsync(): IPromiseWithIAsyncAction = js.native
+  
   /** Closes the StreamSocket object. */
   def close(): Unit = js.native
+  
   /**
     * Starts an asynchronous operation on a StreamSocket object to connect to a remote network destination specified as an EndpointPair object.
     * @param endpointPair An EndpointPair object that specifies the local hostname or IP address, the local service name or TCP port, the remote hostname or remote IP address, and the remote service name or remote TCP port for the remote network destination.
@@ -70,6 +65,10 @@ trait StreamSocket extends js.Object {
     protectionLevel: SocketProtectionLevel,
     adapter: NetworkAdapter
   ): IPromiseWithIAsyncAction = js.native
+  
+  /** Gets socket control data on a StreamSocket object. */
+  var control: StreamSocketControl = js.native
+  
   /**
     * Enables your app's background task to be triggered by the socket broker when traffic for this StreamSocket arrives while the app is not active.
     * @param taskId The IBackgroundTaskRegistration.TaskId of the background task that will be triggered by the socket broker when traffic arrives for this StreamSocket .
@@ -81,6 +80,16 @@ trait StreamSocket extends js.Object {
     * @param connectedStandbyAction Specifies whether to enable or disable the activation of the background task when traffic arrives.
     */
   def enableTransferOwnership(taskId: String, connectedStandbyAction: SocketActivityConnectedStandbyAction): Unit = js.native
+  
+  /** Gets socket information on a StreamSocket object. */
+  var information: StreamSocketInformation = js.native
+  
+  /** Gets the input stream to read from the remote destination on a StreamSocket object. */
+  var inputStream: IInputStream = js.native
+  
+  /** Gets the output stream to write to the remote host on a StreamSocket object. */
+  var outputStream: IOutputStream = js.native
+  
   /**
     * Transfers ownership of the StreamSocket to the socket brokering service, which monitors socket activity and notifies the app through a background task if there is any activity.
     * @param socketId A string the app uses to identify the transferred socket. The string should identify this socket uniquely within the app. When activity occurs on this socket, this string will be provided to the app to identify the socket.
@@ -99,6 +108,7 @@ trait StreamSocket extends js.Object {
     * @param keepAliveTime How long the socket brokering service should monitor the socket for activity.
     */
   def transferOwnership(socketId: String, data: SocketActivityContext, keepAliveTime: Double): Unit = js.native
+  
   /**
     * Starts an asynchronous operation to upgrade a connected socket to use SSL on a StreamSocket object.
     * @param protectionLevel The protection level that represents the integrity and encryption on the StreamSocket object.
@@ -107,4 +117,3 @@ trait StreamSocket extends js.Object {
     */
   def upgradeToSslAsync(protectionLevel: SocketProtectionLevel, validationHostName: HostName): IPromiseWithIAsyncAction = js.native
 }
-

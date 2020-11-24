@@ -2,42 +2,53 @@ package typings.aureliaTemplating.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TargetInstruction")
 @js.native
 class TargetInstruction () extends js.Object {
+  
   var anchorIsContainer: Boolean = js.native
+  
   var behaviorInstructions: js.Array[BehaviorInstruction] = js.native
+  
   /**
     * Indicates if this instruction is targeting a text node
     */
   var contentExpression: js.Any = js.native
+  
   var elementInstruction: BehaviorInstruction = js.native
+  
   var expressions: js.Array[js.Object] = js.native
+  
   var injectorId: Double = js.native
+  
   /**
     * Indicates if this instruction is a let element instruction
     */
   var letElement: Boolean = js.native
+  
   var lifting: Boolean = js.native
+  
   var parentInjectorId: Double = js.native
+  
   var providers: js.Array[js.Function] = js.native
+  
   var shadowSlot: Boolean = js.native
+  
   var slotFallbackFactory: js.Any = js.native
+  
   var slotName: String = js.native
+  
   var values: js.Object = js.native
+  
   var viewFactory: ViewFactory = js.native
 }
-
 /* static members */
 @JSImport("aurelia-templating", "TargetInstruction")
 @js.native
 object TargetInstruction extends js.Object {
-  /**
-    * An empty array used to represent a target with no binding expressions.
-    */
-  var noExpressions: js.Any = js.native
+  
   /**
     * Creates an instruction that represents a binding expression in the content of an element.
     * @param expression The binding expression.
@@ -45,6 +56,7 @@ object TargetInstruction extends js.Object {
     */
   def contentExpression(): TargetInstruction = js.native
   def contentExpression(expression: js.Any): TargetInstruction = js.native
+  
   /**
     * Creates an instruction that represents an element with behaviors and bindings.
     * @param injectorId The id of the dependency injection container.
@@ -56,6 +68,7 @@ object TargetInstruction extends js.Object {
     * @return The created instruction.
     */
   def letElement(expressions: js.Array[js.Object]): TargetInstruction = js.native
+  
   /**
     * Creates an instruction that represents content that was lifted out of the DOM and into a ViewFactory.
     * @param parentInjectorId The id of the parent dependency injection container.
@@ -63,6 +76,12 @@ object TargetInstruction extends js.Object {
     * @return The created instruction.
     */
   def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = js.native
+  
+  /**
+    * An empty array used to represent a target with no binding expressions.
+    */
+  var noExpressions: js.Any = js.native
+  
   /**
     * Creates an instruction that represents an element with behaviors and bindings.
     * @param injectorId The id of the dependency injection container.
@@ -81,12 +100,14 @@ object TargetInstruction extends js.Object {
     expressions: js.Array[js.Object],
     elementInstruction: BehaviorInstruction
   ): TargetInstruction = js.native
+  
   /**
     * Creates an instruction that represents a shadow dom slot.
     * @param parentInjectorId The id of the parent dependency injection container.
     * @return The created instruction.
     */
   def shadowSlot(parentInjectorId: Double): TargetInstruction = js.native
+  
   /**
     * Creates an instruction that represents the surrogate behaviors and bindings for an element.
     * @param providers The types which will provide behavior for this element.
@@ -102,4 +123,3 @@ object TargetInstruction extends js.Object {
     values: js.Object
   ): TargetInstruction = js.native
 }
-

@@ -10,9 +10,9 @@ Error handler for use in development and production environments.
 | ------------------ | :-------------: |
 | Full name          | strong-error-handler |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 59 |
-| # downloads        | 2199957 |
+| # downloads        | 2553564 |
 | # stars            | 1 |
 
 ## Links

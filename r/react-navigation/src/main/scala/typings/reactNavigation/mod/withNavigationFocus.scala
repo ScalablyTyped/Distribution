@@ -8,11 +8,12 @@ import typings.reactNavigation.reactNavigationStrings.isFocused
 import typings.reactNavigation.reactNavigationStrings.navigation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation", "withNavigationFocus")
 @js.native
 object withNavigationFocus extends js.Object {
+  
   def apply[P /* <: NavigationFocusInjectedProps[NavigationParams] */](Component: ComponentType[P]): ComponentType[
     Omit[
       P, 
@@ -26,4 +27,3 @@ object withNavigationFocus extends js.Object {
     ]) with (`4`[T, P])
   ] = js.native
 }
-

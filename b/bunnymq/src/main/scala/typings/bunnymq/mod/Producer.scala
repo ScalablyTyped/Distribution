@@ -2,10 +2,11 @@ package typings.bunnymq.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Producer extends js.Object {
+  
   /**
     * Send messages to a named queue.
     *
@@ -16,4 +17,3 @@ trait Producer extends js.Object {
   def produce[T](queue: String, message: js.Any): js.Promise[T] = js.native
   def produce[T](queue: String, message: js.Any, options: ProducerOptions): js.Promise[T] = js.native
 }
-

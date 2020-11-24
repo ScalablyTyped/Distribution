@@ -10,10 +10,10 @@ Minify images seamlessly
 | ------------------ | :-------------: |
 | Full name          | imagemin |
 | Keywords           | minify, compress, image, images, jpeg, jpg, png, gif, svg |
-| # releases         | 5 |
-| # dependents       | 527 |
-| # downloads        | 34413926 |
-| # stars            | 117 |
+| # releases         | 3 |
+| # dependents       | 643 |
+| # downloads        | 49245804 |
+| # stars            | 118 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin#readme)

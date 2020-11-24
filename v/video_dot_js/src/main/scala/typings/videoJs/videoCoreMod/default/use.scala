@@ -3,11 +3,12 @@ package typings.videoJs.videoCoreMod.default
 import typings.videoJs.mod.videojs.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "use")
 @js.native
 object use extends js.Object {
+  
   /**
     * Register a middleware to a source type.
     *
@@ -19,4 +20,3 @@ object use extends js.Object {
     middleware: js.Function1[/* player */ typings.videoJs.mod.videojs.Player, Middleware]
   ): Unit = js.native
 }
-

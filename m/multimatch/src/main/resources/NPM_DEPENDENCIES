@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "multimatch" : "4.0.0"
+      "multimatch" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "multimatch" : "4.0.0"
+      "multimatch" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

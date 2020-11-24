@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SmartCardReaderKind extends js.Object
-
 /** Represents the smart card reader's type. */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardReaderKind")
 @js.native
 object SmartCardReaderKind extends js.Object {
+  
   /** This value is never returned. */
   @js.native
   sealed trait any extends SmartCardReaderKind
@@ -30,6 +30,4 @@ object SmartCardReaderKind extends js.Object {
   /** A Universal Integrated Circuit Card (UICC) smart card reader. */
   @js.native
   sealed trait uicc extends SmartCardReaderKind
-  
 }
-

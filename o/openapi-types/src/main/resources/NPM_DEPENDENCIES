@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-types" : "7.0.0"
+      "openapi-types" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-types" : "7.0.0"
+      "openapi-types" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

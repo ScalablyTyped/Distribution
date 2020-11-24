@@ -3,7 +3,7 @@ package typings.paper.paper
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * An affine transformation matrix performs a linear mapping from 2D
@@ -28,57 +28,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Matrix extends js.Object {
+  
   /** 
     * The value that affects the transformation along the x axis when scaling
     * or rotating, positioned at (0, 0) in the transformation matrix.
     */
   var a: Double = js.native
-  /** 
-    * The value that affects the transformation along the y axis when rotating
-    * or skewing, positioned at (1, 0) in the transformation matrix.
-    */
-  var b: Double = js.native
-  /** 
-    * The value that affects the transformation along the x axis when rotating
-    * or skewing, positioned at (0, 1) in the transformation matrix.
-    */
-  var c: Double = js.native
-  /** 
-    * The value that affects the transformation along the y axis when scaling
-    * or rotating, positioned at (1, 1) in the transformation matrix.
-    */
-  var d: Double = js.native
-  /** 
-    * The rotation angle of the matrix, if it can be decomposed.
-    * 
-    * @see #decompose()
-    */
-  val rotation: Double = js.native
-  /** 
-    * The scaling values of the matrix, if it can be decomposed.
-    * 
-    * @see #decompose()
-    */
-  val scaling: Point = js.native
-  /** 
-    * The translation of the matrix as a vector.
-    */
-  val translation: Point = js.native
-  /** 
-    * The distance by which to translate along the x axis, positioned at (2, 0)
-    * in the transformation matrix.
-    */
-  var tx: Double = js.native
-  /** 
-    * The distance by which to translate along the y axis, positioned at (2, 1)
-    * in the transformation matrix.
-    */
-  var ty: Double = js.native
-  /** 
-    * The matrix values as an array, in the same sequence as they are passed
-    * to {@link #initialize}.
-    */
-  val values: js.Array[Double] = js.native
+  
   /** 
     * Appends the specified matrix to this matrix. This is the equivalent of
     * multiplying `(this matrix) * (specified matrix)`.
@@ -88,6 +44,7 @@ trait Matrix extends js.Object {
     * @return this matrix, modified
     */
   def append(matrix: Matrix): Matrix = js.native
+  
   /** 
     * Returns a new matrix as the result of appending the specified matrix to
     * this matrix. This is the equivalent of multiplying
@@ -98,6 +55,7 @@ trait Matrix extends js.Object {
     * @return the newly created matrix
     */
   def appended(matrix: Matrix): Matrix = js.native
+  
   /** 
     * Attempts to apply the matrix to the content of item that it belongs to,
     * meaning its transformation is baked into the item's content or children.
@@ -111,10 +69,30 @@ trait Matrix extends js.Object {
   def apply(): Boolean = js.native
   @JSName("apply")
   def apply(recursively: Boolean): Boolean = js.native
+  
   /** 
     * Applies this matrix to the specified Canvas Context.
     */
   def applyToContext(ctx: CanvasRenderingContext2D): Unit = js.native
+  
+  /** 
+    * The value that affects the transformation along the y axis when rotating
+    * or skewing, positioned at (1, 0) in the transformation matrix.
+    */
+  var b: Double = js.native
+  
+  /** 
+    * The value that affects the transformation along the x axis when rotating
+    * or skewing, positioned at (0, 1) in the transformation matrix.
+    */
+  var c: Double = js.native
+  
+  /** 
+    * The value that affects the transformation along the y axis when scaling
+    * or rotating, positioned at (1, 1) in the transformation matrix.
+    */
+  var d: Double = js.native
+  
   /** 
     * Decomposes the affine transformation described by this matrix into
     * `scaling`, `rotation` and `skewing`, and returns an object with
@@ -123,6 +101,7 @@ trait Matrix extends js.Object {
     * @return the decomposed matrix
     */
   def decompose(): js.Object = js.native
+  
   /** 
     * Checks whether the two matrices describe the same transformation.
     * 
@@ -131,12 +110,14 @@ trait Matrix extends js.Object {
     * @return true if the matrices are equal
     */
   def equals(matrix: Matrix): Boolean = js.native
+  
   /** 
     * Inverse transforms a point and returns the result.
     * 
     * @param point - the point to be transformed
     */
   def inverseTransform(point: Point): Point = js.native
+  
   /** 
     * Inverts the matrix, causing it to perform the opposite transformation.
     * If the matrix is not invertible (in which case {@link #isSingular}
@@ -145,6 +126,7 @@ trait Matrix extends js.Object {
     * @return this matrix, or `null`, if the matrix is singular.
     */
   def invert(): Matrix = js.native
+  
   /** 
     * Creates a new matrix that is the inversion of this matrix, causing it to
     * perform the opposite transformation. If the matrix is not invertible (in
@@ -153,10 +135,12 @@ trait Matrix extends js.Object {
     * @return this matrix, or `null`, if the matrix is singular.
     */
   def inverted(): Matrix = js.native
+  
   /** 
     * @return whether this matrix is the identity matrix
     */
   def isIdentity(): Boolean = js.native
+  
   /** 
     * Checks whether the matrix is invertible. A matrix is not invertible if
     * the determinant is 0 or any value is infinite or NaN.
@@ -164,6 +148,7 @@ trait Matrix extends js.Object {
     * @return whether the matrix is invertible
     */
   def isInvertible(): Boolean = js.native
+  
   /** 
     * Checks whether the matrix is singular or not. Singular matrices cannot be
     * inverted.
@@ -171,6 +156,7 @@ trait Matrix extends js.Object {
     * @return whether the matrix is singular
     */
   def isSingular(): Boolean = js.native
+  
   /** 
     * Prepends the specified matrix to this matrix. This is the equivalent of
     * multiplying `(specified matrix) * (this matrix)`.
@@ -180,6 +166,7 @@ trait Matrix extends js.Object {
     * @return this matrix, modified
     */
   def prepend(matrix: Matrix): Matrix = js.native
+  
   /** 
     * Returns a new matrix as the result of prepending the specified matrix
     * to this matrix. This is the equivalent of multiplying
@@ -190,11 +177,13 @@ trait Matrix extends js.Object {
     * @return the newly created matrix
     */
   def prepended(matrix: Matrix): Matrix = js.native
+  
   /** 
     * Resets the matrix by setting its values to the ones of the identity
     * matrix that results in no transformation.
     */
   def reset(): Unit = js.native
+  
   /** 
     * Concatenates this matrix with a rotation transformation around an
     * anchor point.
@@ -216,6 +205,14 @@ trait Matrix extends js.Object {
     * @return this affine transform
     */
   def rotate(angle: Double, x: Double, y: Double): Matrix = js.native
+  
+  /** 
+    * The rotation angle of the matrix, if it can be decomposed.
+    * 
+    * @see #decompose()
+    */
+  val rotation: Double = js.native
+  
   /** 
     * Concatenates this matrix with a scaling transformation.
     * 
@@ -237,12 +234,21 @@ trait Matrix extends js.Object {
     */
   def scale(scale: Double): Matrix = js.native
   def scale(scale: Double, center: Point): Matrix = js.native
+  
+  /** 
+    * The scaling values of the matrix, if it can be decomposed.
+    * 
+    * @see #decompose()
+    */
+  val scaling: Point = js.native
+  
   /** 
     * Sets the matrix to the passed values. Note that any sequence of
     * parameters that is supported by the various {@link Matrix} constructors
     * also work for calls of `set()`.
     */
   def set(values: js.Any*): Point = js.native
+  
   /** 
     * Concatenates this matrix with a shear transformation.
     * 
@@ -264,6 +270,7 @@ trait Matrix extends js.Object {
     */
   def shear(shear: Point): Matrix = js.native
   def shear(shear: Point, center: Point): Matrix = js.native
+  
   /** 
     * Concatenates this matrix with a skew transformation.
     * 
@@ -285,6 +292,7 @@ trait Matrix extends js.Object {
     */
   def skew(skew: Point): Matrix = js.native
   def skew(skew: Point, center: Point): Matrix = js.native
+  
   /** 
     * Transforms a point and returns the result.
     * 
@@ -306,6 +314,7 @@ trait Matrix extends js.Object {
     * @return the dst array, containing the transformed coordinates
     */
   def transform(src: js.Array[Double], dst: js.Array[Double], count: Double): js.Array[Double] = js.native
+  
   /** 
     * Concatenates this matrix with a translate transformation.
     * 
@@ -323,5 +332,27 @@ trait Matrix extends js.Object {
     * @return this affine transform
     */
   def translate(point: Point): Matrix = js.native
+  
+  /** 
+    * The translation of the matrix as a vector.
+    */
+  val translation: Point = js.native
+  
+  /** 
+    * The distance by which to translate along the x axis, positioned at (2, 0)
+    * in the transformation matrix.
+    */
+  var tx: Double = js.native
+  
+  /** 
+    * The distance by which to translate along the y axis, positioned at (2, 1)
+    * in the transformation matrix.
+    */
+  var ty: Double = js.native
+  
+  /** 
+    * The matrix values as an array, in the same sequence as they are passed
+    * to {@link #initialize}.
+    */
+  val values: js.Array[Double] = js.native
 }
-

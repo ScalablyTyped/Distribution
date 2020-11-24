@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines how the texture is mapped to the object.
@@ -18,11 +18,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait TextureProjectionMode extends js.Object
-
 object TextureProjectionMode {
+  
   /** This value specifies that the standard object projection method is used. */
   @scala.inline
   def OBJECTSPECIFIC: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the 3D objects are drawn in the parallel projection.
     *
@@ -30,6 +31,7 @@ object TextureProjectionMode {
     */
   @scala.inline
   def PARALLEL: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * forces normals to think that the object is a sphere.
     *
@@ -38,4 +40,3 @@ object TextureProjectionMode {
   @scala.inline
   def SPHERE: `2` = 2.asInstanceOf[`2`]
 }
-

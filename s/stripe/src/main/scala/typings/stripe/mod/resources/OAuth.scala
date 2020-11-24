@@ -9,11 +9,12 @@ import typings.stripe.mod.oauth.IOAuthRefreshTokenRequest
 import typings.stripe.mod.oauth.IOAuthToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.OAuth")
 @js.native
 class OAuth () extends StripeResource {
+  
   def deauthorize(client_id: String, stripe_user_id: String): js.Promise[IOAuthDeauthorizationResponse] = js.native
   /**
     * When revoking access to an account, you must use an API key that matches the mode—live or test—of the authorization code (which depends on whether the client_id used was production or development).
@@ -29,6 +30,7 @@ class OAuth () extends StripeResource {
     response: IResponseFn[IOAuthDeauthorizationResponse]
   ): js.Promise[IOAuthDeauthorizationResponse] = js.native
   def deauthorize(client_id: String, stripe_user_id: String, response: IResponseFn[IOAuthDeauthorizationResponse]): js.Promise[IOAuthDeauthorizationResponse] = js.native
+  
   def token(data: IOAuthAuthorizationCodeTokenRequest): js.Promise[IOAuthToken] = js.native
   /**
     * Used both for turning an authorization_code into an access_token, and for getting a new access token using a refresh_token.
@@ -46,4 +48,3 @@ class OAuth () extends StripeResource {
   def token(data: IOAuthRefreshTokenRequest, options: HeaderOptions, response: IResponseFn[IOAuthToken]): js.Promise[IOAuthToken] = js.native
   def token(data: IOAuthRefreshTokenRequest, response: IResponseFn[IOAuthToken]): js.Promise[IOAuthToken] = js.native
 }
-

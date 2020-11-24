@@ -14,11 +14,12 @@ import typings.wordpressBlocks.parserMod.Schema.Tag
 import typings.wordpressBlocks.parserMod.Schema.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
 @js.native
 object parseWithAttributeSchema extends js.Object {
+  
   def apply(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = js.native
   def apply(innerHTML: String, schema: Attribute): js.UndefOr[String] = js.native
   def apply(innerHTML: String, schema: Children): js.Array[ReactChild] = js.native
@@ -32,4 +33,3 @@ object parseWithAttributeSchema extends js.Object {
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema with TopLevel[T] = js.native
 }
-

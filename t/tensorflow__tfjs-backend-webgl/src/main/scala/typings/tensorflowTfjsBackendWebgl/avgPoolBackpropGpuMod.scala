@@ -5,11 +5,12 @@ import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/avg_pool_backprop_gpu", JSImport.Namespace)
 @js.native
 object avgPoolBackpropGpuMod extends js.Object {
+  
   @js.native
   class AvgPool2DBackpropProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -19,6 +20,4 @@ object avgPoolBackpropGpuMod extends js.Object {
   class AvgPool3DBackpropProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()
   }
-  
 }
-

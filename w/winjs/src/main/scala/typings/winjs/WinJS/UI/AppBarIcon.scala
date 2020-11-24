@@ -2,11 +2,10 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppBarIcon extends js.Object
-
 //#region Enumerations
 /**
   * Specifies an icon that appears in an AppBarCommand object.
@@ -14,6 +13,7 @@ sealed trait AppBarIcon extends js.Object
 @JSGlobal("WinJS.UI.AppBarIcon")
 @js.native
 object AppBarIcon extends js.Object {
+  
   @js.native
   sealed trait accept extends AppBarIcon
   
@@ -604,6 +604,4 @@ object AppBarIcon extends js.Object {
   
   @js.native
   sealed trait zoomout extends AppBarIcon
-  
 }
-

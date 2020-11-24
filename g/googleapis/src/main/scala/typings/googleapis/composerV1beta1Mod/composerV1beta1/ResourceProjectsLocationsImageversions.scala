@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/composer/v1beta1", "composer_v1beta1.Resource$Projects$Locations$Imageversions")
 @js.native
 class ResourceProjectsLocationsImageversions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * composer.projects.locations.imageVersions.list
     * @desc List ImageVersions for provided location.
@@ -47,4 +49,3 @@ class ResourceProjectsLocationsImageversions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListImageVersionsResponse]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Fetch via HTTP/HTTPS using got with automatic resume after network failures
 | ------------------ | :-------------: |
 | Full name          | got-resume |
 | Keywords           | download, resume, stream, http, https, got, url, get, fetch |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 505 |
+| # downloads        | 540 |
 | # stars            | 0 |
 
 ## Links

@@ -5,33 +5,29 @@ import typings.awsSdkClientLambdaNode.lambdaConfigurationMod.LambdaResolvedConfi
 import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientLambdaNode.typesDeleteFunctionInputMod.DeleteFunctionInput
 import typings.awsSdkClientLambdaNode.typesDeleteFunctionOutputMod.DeleteFunctionOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/commands/DeleteFunctionCommand", JSImport.Namespace)
 @js.native
 object deleteFunctionCommandMod extends js.Object {
+  
   @js.native
   class DeleteFunctionCommand protected () extends Command[
           InputTypesUnion, 
           DeleteFunctionInput, 
           OutputTypesUnion, 
           DeleteFunctionOutput, 
-          LambdaResolvedConfiguration, 
-          Readable
+          LambdaResolvedConfiguration
         ] {
     def this(input: DeleteFunctionInput) = this()
-    val middlewareStack: MiddlewareStack[DeleteFunctionInput, DeleteFunctionOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[DeleteFunctionInput, DeleteFunctionOutput] = js.native
   }
-  
 }
-

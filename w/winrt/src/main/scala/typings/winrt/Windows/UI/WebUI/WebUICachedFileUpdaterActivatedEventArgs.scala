@@ -7,14 +7,14 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Storage.Provider.CachedFileUpdaterUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUICachedFileUpdaterActivatedEventArgs
   extends ICachedFileUpdaterActivatedEventArgs
      with IActivatedEventArgsDeferral
-
 object WebUICachedFileUpdaterActivatedEventArgs {
+  
   @scala.inline
   def apply(
     activatedOperation: ActivatedOperation,
@@ -27,4 +27,3 @@ object WebUICachedFileUpdaterActivatedEventArgs {
     __obj.asInstanceOf[WebUICachedFileUpdaterActivatedEventArgs]
   }
 }
-

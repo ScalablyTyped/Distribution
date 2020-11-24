@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration")
 @js.native
@@ -23,28 +23,32 @@ class NotebookInstanceLifecycleConfiguration protected () extends CustomResource
   def this(name: String, args: NotebookInstanceLifecycleConfigurationArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: NotebookInstanceLifecycleConfigurationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The Amazon Resource Name (ARN) assigned by AWS to this lifecycle configuration.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The name of the lifecycle configuration (must be unique). If omitted, this provider will assign a random, unique name.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A shell script (base64-encoded) that runs only once when the SageMaker Notebook Instance is created.
     */
   val onCreate: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * A shell script (base64-encoded) that runs every time the SageMaker Notebook Instance is started including the time it's created.
     */
   val onStart: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration")
 @js.native
 object NotebookInstanceLifecycleConfiguration extends js.Object {
+  
   /**
     * Get an existing NotebookInstanceLifecycleConfiguration resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -63,10 +67,10 @@ object NotebookInstanceLifecycleConfiguration extends js.Object {
     state: NotebookInstanceLifecycleConfigurationState,
     opts: CustomResourceOptions
   ): NotebookInstanceLifecycleConfiguration = js.native
+  
   /**
     * Returns true if the given object is an instance of NotebookInstanceLifecycleConfiguration.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = js.native
 }
-

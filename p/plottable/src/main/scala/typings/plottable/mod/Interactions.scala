@@ -5,19 +5,34 @@ import typings.plottable.interfacesMod.Point
 import typings.plottable.scaleMod.TransformableScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Interactions")
 @js.native
 object Interactions extends js.Object {
+  
+  def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
+  
   @js.native
   class Click ()
     extends typings.plottable.interactionsMod.Click
+  /* static members */
+  @js.native
+  object Click extends js.Object {
+    
+    /* private */ def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
+  }
   
   @js.native
   class Drag ()
     extends typings.plottable.interactionsMod.Drag {
     def this(mouseButton: Double) = this()
+  }
+  /* static members */
+  @js.native
+  object Drag extends js.Object {
+    
+    var _DEFAULT_MOUSE_FILTER: js.Any = js.native
   }
   
   @js.native
@@ -39,34 +54,21 @@ object Interactions extends js.Object {
     def this(xScale: js.UndefOr[scala.Nothing], yScale: TransformableScale[_, Double]) = this()
     def this(xScale: TransformableScale[_, Double], yScale: TransformableScale[_, Double]) = this()
   }
-  
-  @js.native
-  class Pointer ()
-    extends typings.plottable.pointerInteractionMod.Pointer
-  
-  def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
-  /* static members */
-  @js.native
-  object Click extends js.Object {
-    /* private */ def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Drag extends js.Object {
-    var _DEFAULT_MOUSE_FILTER: js.Any = js.native
-  }
-  
   /* static members */
   @js.native
   object PanZoom extends js.Object {
+    
     /**
       * The number of pixels occupied in a line.
       */
     var _PIXELS_PER_LINE: js.Any = js.native
+    
     /* private */ def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
+    
     def centerPoint(point1: Point, point2: Point): X = js.native
   }
   
+  @js.native
+  class Pointer ()
+    extends typings.plottable.pointerInteractionMod.Pointer
 }
-

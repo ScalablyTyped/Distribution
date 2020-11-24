@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant to identify the Renderer Type.
@@ -18,10 +18,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.RENDERER_TYPE")
 @js.native
 object RENDERER_TYPE extends js.Object {
-  /* 2 */ val CANVAS: typings.pixiJs.PIXI.RENDERER_TYPE.CANVAS with Double = js.native
-  /* 0 */ val UNKNOWN: typings.pixiJs.PIXI.RENDERER_TYPE.UNKNOWN with Double = js.native
-  /* 1 */ val WEBGL: typings.pixiJs.PIXI.RENDERER_TYPE.WEBGL with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.RENDERER_TYPE with Double] = js.native
+  
+  /* 2 */ val CANVAS: typings.pixiJs.PIXI.RENDERER_TYPE.CANVAS with Double = js.native
+  
+  /* 0 */ val UNKNOWN: typings.pixiJs.PIXI.RENDERER_TYPE.UNKNOWN with Double = js.native
+  
+  /* 1 */ val WEBGL: typings.pixiJs.PIXI.RENDERER_TYPE.WEBGL with Double = js.native
 }
-

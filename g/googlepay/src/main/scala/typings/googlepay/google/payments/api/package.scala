@@ -2,9 +2,10 @@ package typings.googlepay.google.payments
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object api {
+  
   /**
     * This handler is used when a payment is authorized in the payment sheet.
     */
@@ -32,6 +33,7 @@ package object api {
     /* paymentData */ typings.googlepay.google.payments.api.PaymentData, 
     js.Promise[typings.googlepay.google.payments.api.PaymentAuthorizationResult] | typings.googlepay.google.payments.api.PaymentAuthorizationResult
   ]
+  
   /**
     * This handler is used when payment data changes in the payment sheet
     * such as shipping address and shipping options.
@@ -55,6 +57,7 @@ package object api {
     /* intermediatePaymentData */ typings.googlepay.google.payments.api.IntermediatePaymentData, 
     js.Promise[typings.googlepay.google.payments.api.PaymentDataRequestUpdate] | typings.googlepay.google.payments.api.PaymentDataRequestUpdate
   ]
+  
   /**
     * Specific tokenization parameters used for
     * [[PaymentMethodTokenizationType|`PAYMENT_GATEWAY`]]

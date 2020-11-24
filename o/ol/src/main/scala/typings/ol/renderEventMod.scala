@@ -6,16 +6,31 @@ import typings.ol.renderEventTypeMod.EventType
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/render/Event", JSImport.Namespace)
 @js.native
 object renderEventMod extends js.Object {
+  
   @js.native
   trait RenderEvent
     extends typings.ol.eventMod.default {
+    
+    /**
+      * Canvas context. Not available when the event is dispatched by the map. Only available
+      * when a Canvas renderer is used, null otherwise.
+      */
     var context: CanvasRenderingContext2D = js.native
+    
+    /**
+      * An object representing the current render frame state.
+      */
     var frameState: FrameState = js.native
+    
+    /**
+      * Transform from CSS pixels (relative to the top-left corner of the map viewport)
+      * to rendered pixels on this event's context.
+      */
     var inversePixelTransform: Transform = js.native
   }
   
@@ -54,6 +69,4 @@ object renderEventMod extends js.Object {
       opt_context: CanvasRenderingContext2D
     ) = this()
   }
-  
 }
-

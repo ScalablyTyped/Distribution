@@ -11,8 +11,8 @@ Implement spellchecking, correctly
 | Full name          | electron-spellchecker |
 | Keywords           | spelling, electron, rx |
 | # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 73625 |
+| # dependents       | 4 |
+| # downloads        | 193293 |
 | # stars            | 3 |
 
 ## Links

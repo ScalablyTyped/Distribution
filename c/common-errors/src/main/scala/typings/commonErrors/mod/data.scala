@@ -2,11 +2,12 @@ package typings.commonErrors.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("common-errors", "data")
 @js.native
 object data extends js.Object {
+  
   /**
     * Applicable when an error occurs on or with an external data source.
     *
@@ -119,6 +120,4 @@ object data extends js.Object {
     def this(message: String) = this()
     def this(message: String, inner_error: Error) = this()
   }
-  
 }
-

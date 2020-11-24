@@ -2,11 +2,12 @@ package typings.trimNewlines
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("trim-newlines", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Trim from the start and end of a string.
   	@example
@@ -17,6 +18,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(string: String): String = js.native
+  
   /**
   	Trim from the end of a string.
   	@example
@@ -27,6 +29,7 @@ object mod extends js.Object {
   	```
   	*/
   def end(string: String): String = js.native
+  
   /**
   	Trim from the start of a string.
   	@example
@@ -38,4 +41,3 @@ object mod extends js.Object {
   	*/
   def start(string: String): String = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.gulpTypedoc.mod
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gulp-typedoc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * The plugin takes an object, of which all properties are passed transparently to typedoc. Pipe in TypeScript files.
     * The documentation files are not piped out.
@@ -17,4 +18,3 @@ object ^ extends js.Object {
     */
   def apply(options: Options): ReadWriteStream = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-providers-ws
 
-Typings are for version 1.2.11
+Typings are for version 1.3.0
 
 ## Library description:
 Module to handle web3 RPC connections over WebSockets.
@@ -10,9 +10,9 @@ Module to handle web3 RPC connections over WebSockets.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-ws |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 19 |
-| # downloads        | 3547881 |
+| # releases         | 21 |
+| # dependents       | 22 |
+| # downloads        | 5571317 |
 | # stars            | 0 |
 
 ## Links

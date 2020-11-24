@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/s3", "AccountPublicAccessBlock")
 @js.native
@@ -25,11 +25,11 @@ class AccountPublicAccessBlock protected ()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AccountPublicAccessBlockArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/s3", "AccountPublicAccessBlock")
 @js.native
 object AccountPublicAccessBlock extends js.Object {
+  
   /**
     * Get an existing AccountPublicAccessBlock resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -43,10 +43,10 @@ object AccountPublicAccessBlock extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = js.native
   def get(name: String, id: Input[ID], state: AccountPublicAccessBlockState): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = js.native
   def get(name: String, id: Input[ID], state: AccountPublicAccessBlockState, opts: CustomResourceOptions): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = js.native
+  
   /**
     * Returns true if the given object is an instance of AccountPublicAccessBlock.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accountPublicAccessBlock.AccountPublicAccessBlock */ Boolean = js.native
 }
-

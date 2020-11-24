@@ -24,10 +24,6 @@ import typings.oracleOraclejet.ojchartMod.ojChart.LegendItemContext
 import typings.oracleOraclejet.ojchartMod.ojChart.PieCenterLabelContext
 import typings.oracleOraclejet.ojchartMod.ojChart.ReferenceObject
 import typings.oracleOraclejet.ojchartMod.ojChart.SeriesContext
-import typings.oracleOraclejet.ojchartMod.ojChart.ojDrill
-import typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput
-import typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange
-import typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
 import typings.oracleOraclejet.oracleOraclejetStrings.`type`
@@ -101,6 +97,10 @@ import typings.oracleOraclejet.oracleOraclejetStrings.mixedFrequency
 import typings.oracleOraclejet.oracleOraclejetStrings.multiple
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.off
+import typings.oracleOraclejet.oracleOraclejetStrings.ojDrill
+import typings.oracleOraclejet.oracleOraclejetStrings.ojSelectInput
+import typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChange
+import typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChangeInput
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.orientation
 import typings.oracleOraclejet.oracleOraclejetStrings.orientationChanged
@@ -179,125 +179,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
-  var animationOnDataChange: auto | slideToLeft | slideToRight | none = js.native
-  var animationOnDisplay: auto | alphaFade | zoom | none = js.native
-  var as: String = js.native
-  var coordinateSystem: polar | cartesian = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var dataCursor: off | on | auto = js.native
-  var dataCursorBehavior: smooth | snap | auto = js.native
-  var dataCursorPosition: X = js.native
-  var dnd: Drag = js.native
-  var dragMode: pan | zoom | select | off | user = js.native
-  var drilling: on | seriesOnly | groupsOnly | off = js.native
-  var groupComparator: (js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var hideAndShowBehavior: withRescale | withoutRescale | none = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var initialZooming: first | last | none = js.native
-  var legend: BackgroundColor = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | alphaFade | zoom | none], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCoordinateSystemChanged: (js.Function1[/* event */ JetElementCustomEvent[polar | cartesian], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDataCursorBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[smooth | snap | auto], _]) | Null = js.native
-  var onDataCursorChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on | auto], _]) | Null = js.native
-  var onDataCursorPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[X], _]) | Null = js.native
-  var onDataLabelChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]], 
-    _
-  ]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drag], _]) | Null = js.native
-  var onDragModeChanged: (js.Function1[/* event */ JetElementCustomEvent[pan | zoom | select | off | user], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | seriesOnly | groupsOnly | off], _]) | Null = js.native
-  var onGroupComparatorChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-    _
-  ]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHideAndShowBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[withRescale | withoutRescale | none], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[first | last | none], _]) | Null = js.native
-  var onLegendChanged: (js.Function1[/* event */ JetElementCustomEvent[BackgroundColor], _]) | Null = js.native
-  var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
-  var onOjSelectInput: (js.Function1[/* event */ ojSelectInput, _]) | Null = js.native
-  var onOjViewportChange: (js.Function1[/* event */ ojViewportChange, _]) | Null = js.native
-  var onOjViewportChangeInput: (js.Function1[/* event */ ojViewportChangeInput, _]) | Null = js.native
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
-  var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Content], _]) | Null = js.native
-  var onPieCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter], _]) | Null = js.native
-  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[BorderWidth], _]) | Null = js.native
-  var onPolarGridShapeChanged: (js.Function1[/* event */ JetElementCustomEvent[polygon | circle], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onSeriesComparatorChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-    _
-  ]) | Null = js.native
-  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[ascending | descending | off], _]) | Null = js.native
-  var onSplitDualYChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], _]) | Null = js.native
-  var onSplitterPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onStackChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onStackLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDownColor], _]) | Null = js.native
-  var onTimeAxisTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto], 
-    _
-  ]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Renderer], _]) | Null = js.native
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
-  var onTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
-    ], 
-    _
-  ]) | Null = js.native
-  var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[Close], _]) | Null = js.native
-  var onXAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AxisLine], _]) | Null = js.native
-  var onY2AxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AlignTickMarks], _]) | Null = js.native
-  var onYAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineScaling], _]) | Null = js.native
-  var onZoomAndScrollChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off], 
-    _
-  ]) | Null = js.native
-  var onZoomDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], _]) | Null = js.native
-  var orientation: horizontal | vertical = js.native
-  var otherThreshold: Double = js.native
-  var overview: Content = js.native
-  var pieCenter: Converter = js.native
-  var plotArea: BorderWidth = js.native
-  var polarGridShape: polygon | circle = js.native
-  var selection: js.Array[K] = js.native
-  var selectionMode: single | multiple | none = js.native
-  var seriesComparator: (js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null = js.native
-  var sorting: ascending | descending | off = js.native
-  var splitDualY: on | off | auto = js.native
-  var splitterPosition: Double = js.native
-  var stack: on | off = js.native
-  var stackLabel: on | off = js.native
-  var styleDefaults: AnimationDownColor = js.native
-  var timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto = js.native
-  var tooltip: Renderer = js.native
-  var touchResponse: touchStart | auto = js.native
-  @JSName("translations")
-  var translations_ojChart_ : ComponentName = js.native
-  var `type`: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar = js.native
-  var valueFormats: Close = js.native
-  var xAxis: AxisLine = js.native
-  var y2Axis: AlignTickMarks = js.native
-  var yAxis: BaselineScaling = js.native
-  var zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off = js.native
-  var zoomDirection: x | y | auto = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[
@@ -706,46 +592,78 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _]
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _],
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSelectInput(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSelectInput,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSelectInput, _]
+    `type`: ojSelectInput,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSelectInput(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSelectInput,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSelectInput, _],
+    `type`: ojSelectInput,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewportChange(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChange,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewportChange, _]
+    `type`: ojViewportChange,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewportChange(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChange,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewportChange, _],
+    `type`: ojViewportChange,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewportChangeInput(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChangeInput,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewportChangeInput, _]
+    `type`: ojViewportChangeInput,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewportChangeInput(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChangeInput,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewportChangeInput, _],
+    `type`: ojViewportChangeInput,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -899,13 +817,43 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BaselineScaling], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationOnDataChange: auto | slideToLeft | slideToRight | none = js.native
+  
+  var animationOnDisplay: auto | alphaFade | zoom | none = js.native
+  
+  var as: String = js.native
+  
+  var coordinateSystem: polar | cartesian = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var dataCursor: off | on | auto = js.native
+  
+  var dataCursorBehavior: smooth | snap | auto = js.native
+  
+  var dataCursorPosition: X = js.native
+  
   def dataLabel(context: DataLabelContext): Insert | PreventDefault = js.native
+  
+  var dnd: Drag = js.native
+  
+  var dragMode: pan | zoom | select | off | user = js.native
+  
+  var drilling: on | seriesOnly | groupsOnly | off = js.native
+  
   def getContextByNode(node: Element): PieCenterLabelContext | LegendItemContext | ReferenceObject | GroupContext | AxisTitleContext | ItemContext | SeriesContext = js.native
+  
   def getDataItem(seriesIndex: Double, groupIndex: Double): js.Object | Null = js.native
+  
   def getGroup(groupIndex: String): String = js.native
+  
   def getGroupCount(): Double = js.native
+  
   def getLegend(): js.Object = js.native
+  
   def getPlotArea(): js.Object = js.native
+  
   @JSName("getProperty")
   def getProperty_animationOnDataChange(property: animationOnDataChange): auto | slideToLeft | slideToRight | none = js.native
   @JSName("getProperty")
@@ -994,13 +942,173 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   def getProperty_zoomAndScroll(property: zoomAndScroll): delayedScrollOnly | liveScrollOnly | delayed | live | off = js.native
   @JSName("getProperty")
   def getProperty_zoomDirection(property: zoomDirection): x | y | auto = js.native
+  
   def getSeries(seriesIndex: String): String = js.native
+  
   def getSeriesCount(): Double = js.native
+  
   def getValuesAt(x: Double, y: Double): js.Object = js.native
+  
   def getXAxis(): js.Object = js.native
+  
   def getY2Axis(): js.Object = js.native
+  
   def getYAxis(): js.Object = js.native
+  
+  var groupComparator: (js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var hideAndShowBehavior: withRescale | withoutRescale | none = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var initialZooming: first | last | none = js.native
+  
+  var legend: BackgroundColor = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | alphaFade | zoom | none], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onCoordinateSystemChanged: (js.Function1[/* event */ JetElementCustomEvent[polar | cartesian], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDataCursorBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[smooth | snap | auto], _]) | Null = js.native
+  
+  var onDataCursorChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on | auto], _]) | Null = js.native
+  
+  var onDataCursorPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[X], _]) | Null = js.native
+  
+  var onDataLabelChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]], 
+    _
+  ]) | Null = js.native
+  
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drag], _]) | Null = js.native
+  
+  var onDragModeChanged: (js.Function1[/* event */ JetElementCustomEvent[pan | zoom | select | off | user], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | seriesOnly | groupsOnly | off], _]) | Null = js.native
+  
+  var onGroupComparatorChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
+    _
+  ]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHideAndShowBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[withRescale | withoutRescale | none], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[first | last | none], _]) | Null = js.native
+  
+  var onLegendChanged: (js.Function1[/* event */ JetElementCustomEvent[BackgroundColor], _]) | Null = js.native
+  
+  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, _]) | Null = js.native
+  
+  var onOjSelectInput: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, _]) | Null = js.native
+  
+  var onOjViewportChange: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, _]) | Null = js.native
+  
+  var onOjViewportChangeInput: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, _]) | Null = js.native
+  
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+  
+  var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Content], _]) | Null = js.native
+  
+  var onPieCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter], _]) | Null = js.native
+  
+  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[BorderWidth], _]) | Null = js.native
+  
+  var onPolarGridShapeChanged: (js.Function1[/* event */ JetElementCustomEvent[polygon | circle], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
+  
+  var onSeriesComparatorChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
+    _
+  ]) | Null = js.native
+  
+  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[ascending | descending | off], _]) | Null = js.native
+  
+  var onSplitDualYChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], _]) | Null = js.native
+  
+  var onSplitterPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onStackChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onStackLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDownColor], _]) | Null = js.native
+  
+  var onTimeAxisTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto], 
+    _
+  ]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Renderer], _]) | Null = js.native
+  
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  
+  var onTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[Close], _]) | Null = js.native
+  
+  var onXAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AxisLine], _]) | Null = js.native
+  
+  var onY2AxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AlignTickMarks], _]) | Null = js.native
+  
+  var onYAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineScaling], _]) | Null = js.native
+  
+  var onZoomAndScrollChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off], 
+    _
+  ]) | Null = js.native
+  
+  var onZoomDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], _]) | Null = js.native
+  
+  var orientation: horizontal | vertical = js.native
+  
+  var otherThreshold: Double = js.native
+  
+  var overview: Content = js.native
+  
+  var pieCenter: Converter = js.native
+  
+  var plotArea: BorderWidth = js.native
+  
+  var polarGridShape: polygon | circle = js.native
+  
+  var selection: js.Array[K] = js.native
+  
+  var selectionMode: single | multiple | none = js.native
+  
+  var seriesComparator: (js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null = js.native
+  
   def setProperties(properties: ojChartSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: `type`, value: area): Unit = js.native
   def setProperty(property: `type`, value: bar): Unit = js.native
   def setProperty(property: `type`, value: boxPlot): Unit = js.native
@@ -1136,5 +1244,39 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   def setProperty_y2Axis(property: y2Axis, value: AlignTickMarks): Unit = js.native
   @JSName("setProperty")
   def setProperty_yAxis(property: yAxis, value: BaselineScaling): Unit = js.native
+  
+  var sorting: ascending | descending | off = js.native
+  
+  var splitDualY: on | off | auto = js.native
+  
+  var splitterPosition: Double = js.native
+  
+  var stack: on | off = js.native
+  
+  var stackLabel: on | off = js.native
+  
+  var styleDefaults: AnimationDownColor = js.native
+  
+  var timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto = js.native
+  
+  var tooltip: Renderer = js.native
+  
+  var touchResponse: touchStart | auto = js.native
+  
+  @JSName("translations")
+  var translations_ojChart_ : ComponentName = js.native
+  
+  var `type`: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar = js.native
+  
+  var valueFormats: Close = js.native
+  
+  var xAxis: AxisLine = js.native
+  
+  var y2Axis: AlignTickMarks = js.native
+  
+  var yAxis: BaselineScaling = js.native
+  
+  var zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off = js.native
+  
+  var zoomDirection: x | y | auto = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regionsslcertificates")
 @js.native
 class ResourceRegionsslcertificates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionSslCertificates.delete
     * @desc Deletes the specified SslCertificate resource in the region.
@@ -44,6 +46,7 @@ class ResourceRegionsslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionSslCertificates.get
     * @desc Returns the specified SslCertificate resource in the specified
@@ -79,6 +82,7 @@ class ResourceRegionsslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertificate]
   ): Unit = js.native
+  
   /**
     * compute.regionSslCertificates.insert
     * @desc Creates a SslCertificate resource in the specified project and
@@ -111,6 +115,7 @@ class ResourceRegionsslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionSslCertificates.list
     * @desc Retrieves the list of SslCertificate resources available to the
@@ -148,6 +153,7 @@ class ResourceRegionsslcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertificateList]
   ): Unit = js.native
+  
   /**
     * compute.regionSslCertificates.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource and
@@ -184,4 +190,3 @@ class ResourceRegionsslcertificates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

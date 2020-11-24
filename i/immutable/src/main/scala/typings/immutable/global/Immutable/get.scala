@@ -3,11 +3,12 @@ package typings.immutable.global.Immutable
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Immutable.get")
 @js.native
 object get extends js.Object {
+  
   def apply[V](collection: js.Array[V], key: Double): js.UndefOr[V] = js.native
   def apply[V](collection: StringDictionary[V], key: String): js.UndefOr[V] = js.native
   def apply[V, NSV](collection: js.Array[V], key: Double, notSetValue: NSV): V | NSV = js.native
@@ -17,4 +18,3 @@ object get extends js.Object {
   def apply[TProps, K /* <: /* keyof TProps */ String */](record: typings.immutable.Immutable.Record[TProps], key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any = js.native
   def apply[K, V, NSV](collection: typings.immutable.Immutable.Collection[K, V], key: K, notSetValue: NSV): V | NSV = js.native
 }
-

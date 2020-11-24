@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-data
 
-Typings are for version 2.0.1
+Typings are for version 2.7.0
 
 ## Library description:
 TensorFlow Data API in JavaScript
@@ -10,9 +10,9 @@ TensorFlow Data API in JavaScript
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-data |
 | Keywords           | - |
-| # releases         | 42 |
+| # releases         | 58 |
 | # dependents       | 2 |
-| # downloads        | 386318 |
+| # downloads        | 697297 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.ionicCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core", "getTimeGivenProgression")
 @js.native
 object getTimeGivenProgression extends js.Object {
+  
   def apply(
     p0: js.Array[Double],
     p1: js.Array[Double],
@@ -15,4 +16,3 @@ object getTimeGivenProgression extends js.Object {
     progression: Double
   ): js.Array[Double] = js.native
 }
-

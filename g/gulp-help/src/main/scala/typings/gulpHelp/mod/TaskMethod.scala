@@ -3,10 +3,11 @@ package typings.gulpHelp.mod
 import typings.gulp.mod.TaskCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TaskMethod extends js.Object {
+  
   /**
     * Define a task.
     *
@@ -62,4 +63,3 @@ trait TaskMethod extends js.Object {
   def apply(name: String, help: HelpOption, fn: TaskCallback): js.Any = js.native
   def apply(name: String, help: HelpOption, fn: TaskCallback, option: TaskOptions): js.Any = js.native
 }
-

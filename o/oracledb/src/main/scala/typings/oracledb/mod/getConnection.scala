@@ -2,11 +2,12 @@ package typings.oracledb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oracledb", "getConnection")
 @js.native
 object getConnection extends js.Object {
+  
   /**
     * Obtains a connection from the default pool.
     *
@@ -39,4 +40,3 @@ object getConnection extends js.Object {
   def apply(poolAlias: String): js.Promise[Connection] = js.native
   def apply(poolAlias: String, callback: js.Function2[/* error */ DBError, /* connection */ Connection, Unit]): Unit = js.native
 }
-

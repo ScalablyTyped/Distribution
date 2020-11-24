@@ -10,13 +10,6 @@ import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
 import typings.oracleOraclejet.ojkeysetMod.KeySet
 import typings.oracleOraclejet.ojsunburstMod.ojSunburst.DataContext
 import typings.oracleOraclejet.ojsunburstMod.ojSunburst.NodeContext
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeCollapse
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeDrill
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeExpand
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojCollapse
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojDrill
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojExpand
-import typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojRotateInput
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.animationDuration
 import typings.oracleOraclejet.oracleOraclejetStrings.animationDurationChanged
@@ -56,6 +49,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.nodeDefaults
 import typings.oracleOraclejet.oracleOraclejetStrings.nodeDefaultsChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.off
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCollapse
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDrill
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeExpand
+import typings.oracleOraclejet.oracleOraclejetStrings.ojCollapse
+import typings.oracleOraclejet.oracleOraclejetStrings.ojDrill
+import typings.oracleOraclejet.oracleOraclejetStrings.ojExpand
+import typings.oracleOraclejet.oracleOraclejetStrings.ojRotateInput
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.rootNode
 import typings.oracleOraclejet.oracleOraclejetStrings.rootNodeChanged
@@ -84,76 +84,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K, D]] {
-  var animationDuration: Double = js.native
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | none = js.native
-  var animationUpdateColor: String = js.native
-  var as: String = js.native
-  var colorLabel: String = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var displayLevels: Double = js.native
-  var drilling: on | off = js.native
-  var expanded: KeySet[K] = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var hoverBehaviorDelay: Double = js.native
-  var nodeDefaults: HoverColor = js.native
-  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationUpdateColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColorLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDisplayLevelsChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], _]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onNodeDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[HoverColor], _]) | Null = js.native
-  var onOjBeforeCollapse: (js.Function1[/* event */ ojBeforeCollapse, _]) | Null = js.native
-  var onOjBeforeDrill: (js.Function1[/* event */ ojBeforeDrill, _]) | Null = js.native
-  var onOjBeforeExpand: (js.Function1[/* event */ ojBeforeExpand, _]) | Null = js.native
-  var onOjCollapse: (js.Function1[/* event */ ojCollapse, _]) | Null = js.native
-  var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
-  var onOjExpand: (js.Function1[/* event */ ojExpand, _]) | Null = js.native
-  var onOjRotateInput: (js.Function1[/* event */ ojRotateInput, _]) | Null = js.native
-  var onRootNodeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onRootNodeContentChanged: (js.Function1[/* event */ JetElementCustomEvent[`18`[K, D]], _]) | Null = js.native
-  var onRotationChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
-  var onSizeLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onStartAngleChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`19`[K, D]], _]) | Null = js.native
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
-  var rootNode: js.Any = js.native
-  var rootNodeContent: `18`[K, D] = js.native
-  var rotation: off | on = js.native
-  var selection: js.Array[_] = js.native
-  var selectionMode: none | single | multiple = js.native
-  var sizeLabel: String = js.native
-  var sorting: on | off = js.native
-  var startAngle: Double = js.native
-  var tooltip: `19`[K, D] = js.native
-  var touchResponse: touchStart | auto = js.native
-  @JSName("translations")
-  var translations_ojSunburst_ : LabelColor = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -387,79 +322,135 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCollapse, _]
+    `type`: ojBeforeCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeCollapse, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCollapse, _],
+    `type`: ojBeforeCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeCollapse, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeDrill, _]
+    `type`: ojBeforeDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeDrill, _],
+    `type`: ojBeforeDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeExpand, _]
+    `type`: ojBeforeExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeExpand, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeExpand, _],
+    `type`: ojBeforeExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeExpand, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojCollapse, _]
+    `type`: ojCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojCollapse, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojCollapse, _],
+    `type`: ojCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojCollapse, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _]
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _],
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojExpand, _]
+    `type`: ojExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojExpand, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojExpand, _],
+    `type`: ojExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojExpand, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojRotateInput(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojRotateInput,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojRotateInput, _]
+    `type`: ojRotateInput,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojRotateInput, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojRotateInput(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojRotateInput,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojRotateInput, _],
+    `type`: ojRotateInput,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojRotateInput, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -517,8 +508,31 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`19`[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationDuration: Double = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var animationUpdateColor: String = js.native
+  
+  var as: String = js.native
+  
+  var colorLabel: String = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var displayLevels: Double = js.native
+  
+  var drilling: on | off = js.native
+  
+  var expanded: KeySet[K] = js.native
+  
   def getContextByNode(node: Element): NodeContext | Null = js.native
+  
   def getNode(subIdPath: js.Array[_]): DataContext | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_animationDuration(property: animationDuration): Double = js.native
   @JSName("getProperty")
@@ -571,7 +585,102 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   def getProperty_tooltip(property: tooltip): `19`[K, D] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var hoverBehaviorDelay: Double = js.native
+  
+  var nodeDefaults: HoverColor = js.native
+  
+  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationUpdateColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onColorLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDisplayLevelsChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], _]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onNodeDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[HoverColor], _]) | Null = js.native
+  
+  var onOjBeforeCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeCollapse, _]) | Null = js.native
+  
+  var onOjBeforeDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeDrill, _]) | Null = js.native
+  
+  var onOjBeforeExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeExpand, _]) | Null = js.native
+  
+  var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojCollapse, _]) | Null = js.native
+  
+  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojDrill, _]) | Null = js.native
+  
+  var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojExpand, _]) | Null = js.native
+  
+  var onOjRotateInput: (js.Function1[/* event */ typings.oracleOraclejet.ojsunburstMod.ojSunburst.ojRotateInput, _]) | Null = js.native
+  
+  var onRootNodeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onRootNodeContentChanged: (js.Function1[/* event */ JetElementCustomEvent[`18`[K, D]], _]) | Null = js.native
+  
+  var onRotationChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
+  
+  var onSizeLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onStartAngleChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`19`[K, D]], _]) | Null = js.native
+  
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  
+  var rootNode: js.Any = js.native
+  
+  var rootNodeContent: `18`[K, D] = js.native
+  
+  var rotation: off | on = js.native
+  
+  var selection: js.Array[_] = js.native
+  
+  var selectionMode: none | single | multiple = js.native
+  
   def setProperties(properties: ojSunburstSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
@@ -629,5 +738,17 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   def setProperty_tooltip(property: tooltip, value: `19`[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelColor): Unit = js.native
+  
+  var sizeLabel: String = js.native
+  
+  var sorting: on | off = js.native
+  
+  var startAngle: Double = js.native
+  
+  var tooltip: `19`[K, D] = js.native
+  
+  var touchResponse: touchStart | auto = js.native
+  
+  @JSName("translations")
+  var translations_ojSunburst_ : LabelColor = js.native
 }
-

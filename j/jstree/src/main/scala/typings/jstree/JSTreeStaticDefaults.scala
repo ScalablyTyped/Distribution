@@ -2,14 +2,16 @@ package typings.jstree
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSTreeStaticDefaults extends js.Object {
+  
   /**
     * stores all defaults for the checkbox plugin
     */
   var checkbox: js.UndefOr[JSTreeStaticDefaultsCheckbox] = js.native
+  
   /**
     * a callback (function) which is invoked in the instance's scope and receives two arguments
     * - the node and the event that triggered the `close_node` call.
@@ -19,6 +21,7 @@ trait JSTreeStaticDefaults extends js.Object {
     * @plugin conditionalclose
     */
   var conditionalclose: js.UndefOr[js.Function0[Boolean]] = js.native
+  
   /**
     * a callback (function) which is invoked in the instance's scope and receives two arguments
     * - the node and the event that triggered the `activate_node` call.
@@ -28,23 +31,28 @@ trait JSTreeStaticDefaults extends js.Object {
     * @plugin conditionalselect
     */
   var conditionalselect: js.UndefOr[js.Function0[Boolean]] = js.native
+  
   /**
     * stores all defaults for the contextmenu plugin
     */
   var contextmenu: js.UndefOr[JSTreeStaticDefaultsContextMenu] = js.native
+  
   /**
     * stores all defaults for the core
     * @name $.jstree.defaults.core
     */
   var core: JSTreeStaticDefaultsCore = js.native
+  
   /**
     * stores all defaults for the drag'n'drop plugin
     */
   var dnd: js.UndefOr[JSTreeStaticDefaultsDragNDrop] = js.native
+  
   /**
     * Adds massload functionality to jsTree, so that multiple nodes can be loaded in a single request (only useful with lazy loading).
     */
   var massload: js.UndefOr[JSTreeStaticDefaultsMassload] = js.native
+  
   /**
     * configure which plugins will be active on an instance.
     * Should be an array of strings, where each element is a plugin name.
@@ -52,10 +60,12 @@ trait JSTreeStaticDefaults extends js.Object {
     * @name $.jstree.defaults.plugins
     */
   var plugins: js.Array[String] = js.native
+  
   /**
     * stores all defaults for the search plugin
     */
   var search: js.UndefOr[JSTreeStaticDefaultsSearch] = js.native
+  
   /**
     * the settings function used to sort the nodes.
     * It is executed in the tree's context, accepts two nodes as arguments and should return `1` or `-1`.
@@ -63,10 +73,12 @@ trait JSTreeStaticDefaults extends js.Object {
     * @plugin sort
     */
   var sort: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.native
+  
   /**
     * stores all defaults for the state plugin
     */
   var state: js.UndefOr[JSTreeStaticDefaultsState] = js.native
+  
   /**
     * An object storing all types as key value pairs,
     * where the key is the type name and the value is an object
@@ -86,6 +98,7 @@ trait JSTreeStaticDefaults extends js.Object {
     * default represents the default node - any settings here will be applied to all nodes that do not have a type specified.
     */
   var types: js.UndefOr[js.Any] = js.native
+  
   /**
     * stores all defaults for the unique plugin
     * @name $.jstree.defaults.unique
@@ -93,75 +106,102 @@ trait JSTreeStaticDefaults extends js.Object {
     */
   var unique: js.UndefOr[JSTreeStaticDefaultsUnique] = js.native
 }
-
 object JSTreeStaticDefaults {
+  
   @scala.inline
   def apply(core: JSTreeStaticDefaultsCore, plugins: js.Array[String]): JSTreeStaticDefaults = {
     val __obj = js.Dynamic.literal(core = core.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaults]
   }
+  
   @scala.inline
   implicit class JSTreeStaticDefaultsOps[Self <: JSTreeStaticDefaults] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCore(value: JSTreeStaticDefaultsCore): Self = this.set("core", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPluginsVarargs(value: String*): Self = this.set("plugins", js.Array(value :_*))
+    
     @scala.inline
     def setPlugins(value: js.Array[String]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCheckbox(value: JSTreeStaticDefaultsCheckbox): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCheckbox: Self = this.set("checkbox", js.undefined)
+    
     @scala.inline
     def setConditionalclose(value: () => Boolean): Self = this.set("conditionalclose", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteConditionalclose: Self = this.set("conditionalclose", js.undefined)
+    
     @scala.inline
     def setConditionalselect(value: () => Boolean): Self = this.set("conditionalselect", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteConditionalselect: Self = this.set("conditionalselect", js.undefined)
+    
     @scala.inline
     def setContextmenu(value: JSTreeStaticDefaultsContextMenu): Self = this.set("contextmenu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteContextmenu: Self = this.set("contextmenu", js.undefined)
+    
     @scala.inline
     def setDnd(value: JSTreeStaticDefaultsDragNDrop): Self = this.set("dnd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDnd: Self = this.set("dnd", js.undefined)
+    
     @scala.inline
     def setMassload(value: JSTreeStaticDefaultsMassload): Self = this.set("massload", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMassload: Self = this.set("massload", js.undefined)
+    
     @scala.inline
     def setSearch(value: JSTreeStaticDefaultsSearch): Self = this.set("search", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSearch: Self = this.set("search", js.undefined)
+    
     @scala.inline
     def setSort(value: (/* x */ js.Any, /* y */ js.Any) => Double): Self = this.set("sort", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteSort: Self = this.set("sort", js.undefined)
+    
     @scala.inline
     def setState(value: JSTreeStaticDefaultsState): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
+    
     @scala.inline
     def setTypes(value: js.Any): Self = this.set("types", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTypes: Self = this.set("types", js.undefined)
+    
     @scala.inline
     def setUnique(value: JSTreeStaticDefaultsUnique): Self = this.set("unique", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUnique: Self = this.set("unique", js.undefined)
   }
-  
 }
-

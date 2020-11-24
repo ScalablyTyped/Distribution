@@ -10,9 +10,9 @@ DOM-less simple JavaScript BDD testing framework for Node
 | ------------------ | :-------------: |
 | Full name          | jasmine-node |
 | Keywords           | testing, bdd |
-| # releases         | 8 |
+| # releases         | 2 |
 | # dependents       | 182 |
-| # downloads        | 1945380 |
+| # downloads        | 1911732 |
 | # stars            | 30 |
 
 ## Links

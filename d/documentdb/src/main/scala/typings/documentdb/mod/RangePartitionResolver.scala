@@ -2,7 +2,7 @@ package typings.documentdb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "RangePartitionResolver")
 @js.native
@@ -34,10 +34,10 @@ class RangePartitionResolver protected () extends PartitionResolver {
     partitionKeyMap: js.Array[PartitionKeyMap],
     compareFunction: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
   ) = this()
+  
   /**
     * Given a partition key, returns a list of collection links to read from.
     * @param partitionKey - The partition key used to determine the target collection for query
     */
   def resolveForRead(partitionKey: String): js.Array[String] = js.native
 }
-

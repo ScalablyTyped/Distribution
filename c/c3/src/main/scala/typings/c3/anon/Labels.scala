@@ -2,17 +2,20 @@ package typings.c3.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Labels extends js.Object {
+  
   def apply(): Unit = js.native
+  
   /**
     * Get and set axis labels.
     * @param labels If labels is given, specified axis' label will be updated.
     */
   def labels(): Unit = js.native
   def labels(labels: keyinAxisNamestring): Unit = js.native
+  
   /**
     * Get and set axis max value.
     * @param max If an object is given, specified axis' max value will be updated. If a number is given, the max values for y and y2 will be updated.
@@ -21,6 +24,7 @@ trait Labels extends js.Object {
   def max(): keyinAxisNamenumber = js.native
   def max(max: Double): Unit = js.native
   def max(max: keyinAxisNamenumberX): Unit = js.native
+  
   /**
     * Get and set axis min value.
     * @param min If an object is given, specified axis' min value will be updated. If a number is given, the min values for y and y2 will be updated.
@@ -29,6 +33,7 @@ trait Labels extends js.Object {
   def min(): keyinAxisNamenumber = js.native
   def min(min: Double): Unit = js.native
   def min(min: keyinAxisNamenumberX): Unit = js.native
+  
   /**
     * Get and set axis min and max values.
     * @param range If range is given, specified axis' min and max value will be updated.
@@ -36,5 +41,6 @@ trait Labels extends js.Object {
     */
   def range(): MaxMin = js.native
   def range(range: `4`): Unit = js.native
+  
+  def types(types: keyinAxisNameXAxisTypeYAx): Unit = js.native
 }
-

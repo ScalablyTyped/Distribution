@@ -2,11 +2,12 @@ package typings.fridaGum.global.Java
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.deoptimizeEverything")
 @js.native
 object deoptimizeEverything extends js.Object {
+  
   /**
     * Forces the VM to execute everything with its interpreter. Necessary to
     * prevent optimizations from bypassing method hooks in some cases, and
@@ -14,4 +15,3 @@ object deoptimizeEverything extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

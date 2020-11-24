@@ -2,10 +2,11 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AccessibilityOptions extends js.Object {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for announcing new data
     * to screen reader users. Useful for dynamic data applications and
@@ -17,6 +18,7 @@ trait AccessibilityOptions extends js.Object {
     * announcements in batches.
     */
   var announceNewData: js.UndefOr[AccessibilityAnnounceNewDataOptionsObject] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A hook for adding custom
     * components to the accessibility module. Should be an object mapping
@@ -26,6 +28,7 @@ trait AccessibilityOptions extends js.Object {
     * be usable.
     */
   var customComponents: js.UndefOr[js.Any] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text description of the chart.
     *
@@ -42,21 +45,25 @@ trait AccessibilityOptions extends js.Object {
     * ignored, and the caption is hidden from screen reader users.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable accessibility
     * functionality for the chart.
     */
   var enabled: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Theme to apply to the chart when
     * Windows High Contrast Mode is detected. By default, a high contrast theme
     * matching the high contrast system system colors is used.
     */
   var highContrastTheme: js.UndefOr[js.Any] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for keyboard navigation.
     */
   var keyboardNavigation: js.UndefOr[KeyboardNavigationOptionsObject] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Amount of landmarks/regions to
     * create for screen reader users. More landmarks can make navigation with
@@ -70,6 +77,7 @@ trait AccessibilityOptions extends js.Object {
     * - `disabled`: No landmarks are added.
     */
   var landmarkVerbosity: js.UndefOr[OptionsLandmarkVerbosityValue] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Link the chart to an HTML
     * element describing the contents of the chart.
@@ -99,22 +107,26 @@ trait AccessibilityOptions extends js.Object {
     * accessibility.description option.
     */
   var linkedDescription: js.UndefOr[String | HTMLDOMElement] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for descriptions of
     * individual data points.
     */
   var point: js.UndefOr[AccessibilityPointOptions] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for the
     * screen reader information sections added before and after the chart.
     */
   var screenReaderSection: js.UndefOr[AccessibilityScreenReaderSectionOptions] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options global to
     * all data series. Individual series can also have specific accessibility
     * options set.
     */
   var series: js.UndefOr[AccessibilitySeriesOptions] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text description of the chart
     * type.
@@ -127,73 +139,99 @@ trait AccessibilityOptions extends js.Object {
     */
   var typeDescription: js.UndefOr[String] = js.native
 }
-
 object AccessibilityOptions {
+  
   @scala.inline
   def apply(): AccessibilityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityOptions]
   }
+  
   @scala.inline
   implicit class AccessibilityOptionsOps[Self <: AccessibilityOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnnounceNewData(value: AccessibilityAnnounceNewDataOptionsObject): Self = this.set("announceNewData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnnounceNewData: Self = this.set("announceNewData", js.undefined)
+    
     @scala.inline
     def setCustomComponents(value: js.Any): Self = this.set("customComponents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCustomComponents: Self = this.set("customComponents", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnabled: Self = this.set("enabled", js.undefined)
+    
     @scala.inline
     def setHighContrastTheme(value: js.Any): Self = this.set("highContrastTheme", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHighContrastTheme: Self = this.set("highContrastTheme", js.undefined)
+    
     @scala.inline
     def setKeyboardNavigation(value: KeyboardNavigationOptionsObject): Self = this.set("keyboardNavigation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKeyboardNavigation: Self = this.set("keyboardNavigation", js.undefined)
+    
     @scala.inline
     def setLandmarkVerbosity(value: OptionsLandmarkVerbosityValue): Self = this.set("landmarkVerbosity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLandmarkVerbosity: Self = this.set("landmarkVerbosity", js.undefined)
+    
     @scala.inline
     def setLinkedDescription(value: String | HTMLDOMElement): Self = this.set("linkedDescription", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLinkedDescription: Self = this.set("linkedDescription", js.undefined)
+    
     @scala.inline
     def setPoint(value: AccessibilityPointOptions): Self = this.set("point", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePoint: Self = this.set("point", js.undefined)
+    
     @scala.inline
     def setScreenReaderSection(value: AccessibilityScreenReaderSectionOptions): Self = this.set("screenReaderSection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScreenReaderSection: Self = this.set("screenReaderSection", js.undefined)
+    
     @scala.inline
     def setSeries(value: AccessibilitySeriesOptions): Self = this.set("series", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSeries: Self = this.set("series", js.undefined)
+    
     @scala.inline
     def setTypeDescription(value: String): Self = this.set("typeDescription", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTypeDescription: Self = this.set("typeDescription", js.undefined)
   }
-  
 }
-

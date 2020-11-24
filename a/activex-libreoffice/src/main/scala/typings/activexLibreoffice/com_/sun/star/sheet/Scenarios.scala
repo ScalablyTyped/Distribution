@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a collection of scenarios. */
 @js.native
@@ -17,8 +17,8 @@ trait Scenarios
   extends XScenarios
      with XEnumerationAccess
      with XIndexAccess
-
 object Scenarios {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -42,4 +42,3 @@ object Scenarios {
     __obj.asInstanceOf[Scenarios]
   }
 }
-

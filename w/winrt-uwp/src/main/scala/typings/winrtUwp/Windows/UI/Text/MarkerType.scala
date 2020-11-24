@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MarkerType extends js.Object
-
 /** Specifies the kind of characters used to mark the item paragraphs in a list. */
 @JSGlobal("Windows.UI.Text.MarkerType")
 @js.native
 object MarkerType extends js.Object {
+  
   /** The list is numbered with Arabic numerals (0, 1, 2, ...). */
   @js.native
   sealed trait arabic extends MarkerType
@@ -110,6 +110,4 @@ object MarkerType extends js.Object {
   /** The list is ordered with Wingdings white circled digits */
   @js.native
   sealed trait whiteCircleWingding extends MarkerType
-  
 }
-

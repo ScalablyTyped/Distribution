@@ -10,9 +10,9 @@ clojure.spec for Javascript
 | ------------------ | :-------------: |
 | Full name          | js.spec |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6033 |
+| # downloads        | 11052 |
 | # stars            | 0 |
 
 ## Links

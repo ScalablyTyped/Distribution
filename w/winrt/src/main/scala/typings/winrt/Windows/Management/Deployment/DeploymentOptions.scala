@@ -2,14 +2,14 @@ package typings.winrt.Windows.Management.Deployment
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DeploymentOptions extends js.Object
-
 @JSGlobal("Windows.Management.Deployment.DeploymentOptions")
 @js.native
 object DeploymentOptions extends js.Object {
+  
   @js.native
   sealed trait developmentMode extends DeploymentOptions
   
@@ -18,6 +18,4 @@ object DeploymentOptions extends js.Object {
   
   @js.native
   sealed trait none extends DeploymentOptions
-  
 }
-

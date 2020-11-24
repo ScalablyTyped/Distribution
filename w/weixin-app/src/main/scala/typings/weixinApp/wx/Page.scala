@@ -2,15 +2,17 @@ package typings.weixinApp.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Page[D, P]
   extends Component[D, P, js.Array[js.Any]] {
+  
   /**
     * 强制更新
     */
   def forceUpdate(): Unit = js.native
+  
   /**
     * 将页面滚动到目标位置。
     *
@@ -20,13 +22,14 @@ trait Page[D, P]
     */
   def pageScrollTo(): Unit = js.native
   def pageScrollTo(option: PageScrollToOptions): Unit = js.native
+  
   /**
     * 字段可以获取到当前页面的路径。
     */
   def route(): Unit = js.native
+  
   /**
     * 更新
     */
   def update(): Unit = js.native
 }
-

@@ -4,11 +4,12 @@ import typings.std.Element
 import typings.videoJs.mod.videojs.EventTarget.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "one")
 @js.native
 object one extends js.Object {
+  
   /**
     * Trigger a listener only once for an event
     *
@@ -24,4 +25,3 @@ object one extends js.Object {
   def apply(elem: Element, `type`: String, fn: EventListener): Unit = js.native
   def apply(elem: Element, `type`: js.Array[String], fn: EventListener): Unit = js.native
 }
-

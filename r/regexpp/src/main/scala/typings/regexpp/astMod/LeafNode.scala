@@ -9,7 +9,7 @@ import typings.regexpp.regexppStrings.start
 import typings.regexpp.regexppStrings.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.BoundaryAssertion
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
   - typings.regexpp.astMod.Flags
 */
 trait LeafNode extends Node
-
 object LeafNode {
+  
   @scala.inline
   def AnyCharacterSet(
     end: Double,
@@ -34,6 +34,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def WordBoundaryAssertion(
     end: Double,
@@ -48,6 +49,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def Backreference(
     end: Double,
@@ -62,6 +64,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def EscapeCharacterSet(
     end: Double,
@@ -76,6 +79,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def UnicodePropertyCharacterSet(
     end: Double,
@@ -91,6 +95,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def Character(
     end: Double,
@@ -104,6 +109,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def Flags(
     dotAll: Boolean,
@@ -121,6 +127,7 @@ object LeafNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafNode]
   }
+  
   @scala.inline
   def EdgeAssertion(
     end: Double,
@@ -135,4 +142,3 @@ object LeafNode {
     __obj.asInstanceOf[LeafNode]
   }
 }
-

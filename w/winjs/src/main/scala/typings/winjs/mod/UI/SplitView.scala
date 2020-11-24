@@ -6,7 +6,7 @@ import typings.winjs.anon.Left
 import typings.winjs.anon.Overlay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
@@ -25,26 +25,28 @@ class SplitView ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.SplitView")
 @js.native
 object SplitView extends js.Object {
+  
   /**
     * Display options for a SplitView's pane when it is closed.
     **/
   var ClosedDisplayMode: Inline = js.native
+  
   /**
     * Display options for a SplitView's pane when it is open.
     **/
   var OpenedDisplayMode: Overlay = js.native
+  
   /**
     * Placement options for a SplitView's pane.
     **/
   var PanePlacement: Left = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

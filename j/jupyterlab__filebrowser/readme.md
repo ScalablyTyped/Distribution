@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__filebrowser
 
-Typings are for version 2.1.2
+Typings are for version 2.2.5
 
 ## Library description:
 JupyterLab - FileBrowser Widget
@@ -10,9 +10,9 @@ JupyterLab - FileBrowser Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/filebrowser |
 | Keywords           | - |
-| # releases         | 71 |
-| # dependents       | 95 |
-| # downloads        | 819007 |
+| # releases         | 115 |
+| # dependents       | 129 |
+| # downloads        | 1570582 |
 | # stars            | 0 |
 
 ## Links

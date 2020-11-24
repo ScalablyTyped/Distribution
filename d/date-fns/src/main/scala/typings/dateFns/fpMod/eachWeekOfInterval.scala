@@ -6,10 +6,9 @@ import typings.dateFns.Interval
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm/fp", "eachWeekOfInterval")
 @js.native
 object eachWeekOfInterval
   extends TopLevel[CurriedFn1[Interval, js.Array[Date]]]
-

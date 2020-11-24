@@ -12,7 +12,7 @@ Regular expression for testing if a file path is a windows UNC file path. Can al
 | Keywords           | absolute, expression, file, filepath, match, matching, path, regex, regexp, regular, unc, win, windows |
 | # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 102678366 |
+| # downloads        | 131257004 |
 | # stars            | 0 |
 
 ## Links

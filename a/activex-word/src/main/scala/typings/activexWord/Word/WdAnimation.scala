@@ -9,7 +9,7 @@ import typings.activexWord.activexWordNumbers.`5`
 import typings.activexWord.activexWordNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`2`
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`3`
 */
 trait WdAnimation extends js.Object
-
 object WdAnimation {
+  
   @scala.inline
   def wdAnimationBlinkingBackground: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def wdAnimationLasVegasLights: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def wdAnimationMarchingBlackAnts: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def wdAnimationMarchingRedAnts: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def wdAnimationNone: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def wdAnimationShimmer: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def wdAnimationSparkleText: `3` = 3.asInstanceOf[`3`]
 }
-

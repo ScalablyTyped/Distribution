@@ -2,11 +2,12 @@ package typings.winrtUwp.global.Windows.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.UI.Composition")
 @js.native
 object Composition extends js.Object {
+  
   /** Represents an animation. */
   @js.native
   abstract class CompositionAnimation ()
@@ -16,6 +17,4 @@ object Composition extends js.Object {
   @js.native
   abstract class CompositionEasingFunction ()
     extends typings.winrtUwp.Windows.UI.Composition.CompositionEasingFunction
-  
 }
-

@@ -3,11 +3,12 @@ package typings.jest.mod.jest
 import typings.jest.anon.Typeofjest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest", "jest.restoreAllMocks")
 @js.native
 object restoreAllMocks extends js.Object {
+  
   /**
     * available since Jest 21.1.0
     * Restores all mocks back to their original value.
@@ -17,4 +18,3 @@ object restoreAllMocks extends js.Object {
     */
   def apply(): Typeofjest = js.native
 }
-

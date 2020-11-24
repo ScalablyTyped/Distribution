@@ -7,7 +7,7 @@ import typings.std.HTMLVideoElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base for all the image/canvas resources
@@ -24,11 +24,11 @@ class BaseImageResource protected ()
   def this(source: HTMLVideoElement) = this()
   def this(source: SVGElement) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "resources.BaseImageResource")
 @js.native
 object BaseImageResource extends js.Object {
+  
   /**
     * Set cross origin based detecting the url and the crossorigin
     * @protected
@@ -40,4 +40,3 @@ object BaseImageResource extends js.Object {
   /* protected */ def crossOrigin(element: HTMLElement, url: String, crossorigin: String): Unit = js.native
   /* protected */ def crossOrigin(element: HTMLElement, url: String, crossorigin: Boolean): Unit = js.native
 }
-

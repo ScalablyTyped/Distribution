@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NetworkConnectivityLevel extends js.Object
-
 /** Defines the level of connectivity currently available. */
 @JSGlobal("Windows.Networking.Connectivity.NetworkConnectivityLevel")
 @js.native
 object NetworkConnectivityLevel extends js.Object {
+  
   /** Limited internet access. */
   @js.native
   sealed trait constrainedInternetAccess extends NetworkConnectivityLevel
@@ -26,6 +26,4 @@ object NetworkConnectivityLevel extends js.Object {
   /** No connectivity. */
   @js.native
   sealed trait none extends NetworkConnectivityLevel
-  
 }
-

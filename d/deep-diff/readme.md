@@ -10,9 +10,9 @@ Javascript utility for calculating deep difference, capturing changes, and apply
 | ------------------ | :-------------: |
 | Full name          | deep-diff |
 | Keywords           | diff, difference, compare, change-tracking |
-| # releases         | 6 |
-| # dependents       | 458 |
-| # downloads        | 38721069 |
+| # releases         | 1 |
+| # dependents       | 524 |
+| # downloads        | 47320385 |
 | # stars            | 47 |
 
 ## Links

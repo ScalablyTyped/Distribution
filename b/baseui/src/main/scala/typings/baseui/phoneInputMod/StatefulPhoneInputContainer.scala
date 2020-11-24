@@ -8,14 +8,16 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui/phone-input", "StatefulPhoneInputContainer")
 @js.native
 class StatefulPhoneInputContainer ()
   extends Component[StatefulPhoneInputContainerProps, State, js.Any] {
+  
   def internalSetState(`type`: StateChange, nextState: ReadonlyState): Unit = js.native
+  
   def onCountryChange(event: OnChangeParams): Unit = js.native
+  
   def onTextChange(event: SyntheticEvent[HTMLInputElement, Event]): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Utility class for maintaining reference to a collection
@@ -37,11 +37,11 @@ class Spritesheet protected ()
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()
   def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any, resolutionFilename: String) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "Spritesheet")
 @js.native
 object Spritesheet extends js.Object {
+  
   /**
     * The maximum number of Textures to build per process.
     *
@@ -50,4 +50,3 @@ object Spritesheet extends js.Object {
     */
   var BATCH_SIZE: Double = js.native
 }
-

@@ -5,13 +5,14 @@ import typings.kiiCloudSdk.anon.`30`
 import typings.kiiCloudSdk.anon.`31`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Topic object.
   */
 @js.native
 trait KiiTopic extends js.Object {
+  
   /**
     * Get ACL object of this topic.
     * Access to topic can be configured by adding/removing KiiACLEntry
@@ -20,6 +21,7 @@ trait KiiTopic extends js.Object {
     * @return acl object of this topic.
     */
   def acl(): KiiACL = js.native
+  
   /**
     * Delete the topic.
     *
@@ -61,6 +63,7 @@ trait KiiTopic extends js.Object {
     */
   def deleteTopic(): js.Promise[KiiTopic] = js.native
   def deleteTopic(callbacks: `30`): js.Promise[KiiTopic] = js.native
+  
   /**
     * Checks whether the topic already exists or not.
     *
@@ -99,12 +102,14 @@ trait KiiTopic extends js.Object {
     */
   def exists(): js.Promise[Boolean] = js.native
   def exists(callbacks: `29`): js.Promise[Boolean] = js.native
+  
   /**
     * get name of this topic
     *
     * @return name of this topic.
     */
   def getName(): String = js.native
+  
   /**
     * Save this topic on Kii Cloud.
     * Note that only app admin can save application scope topic.
@@ -147,6 +152,7 @@ trait KiiTopic extends js.Object {
     */
   def save(): js.Promise[KiiTopic] = js.native
   def save(callbacks: `30`): js.Promise[KiiTopic] = js.native
+  
   /**
     * Send message to the topic.
     *
@@ -203,4 +209,3 @@ trait KiiTopic extends js.Object {
   def sendMessage[T](message: T): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
   def sendMessage[T](message: T, callbacks: `31`[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.yadda.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yadda", "FileSearch")
 @js.native
@@ -12,4 +12,3 @@ class FileSearch protected ()
   def this(directories: String) = this()
   def this(directories: String, patterns: RegExp) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "ThemeColor")
 @js.native
@@ -13,4 +13,3 @@ class ThemeColor protected () extends js.Object {
     */
   def this(id: String) = this()
 }
-

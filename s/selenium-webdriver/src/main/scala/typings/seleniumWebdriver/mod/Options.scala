@@ -3,7 +3,7 @@ package typings.seleniumWebdriver.mod
 import typings.seleniumWebdriver.capabilitiesMod.ITimeouts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Options")
 @js.native
@@ -14,6 +14,7 @@ class Options protected () extends js.Object {
     * @constructor
     */
   def this(driver: WebDriver) = this()
+  
   // endregion
   // region Methods
   /**
@@ -26,12 +27,14 @@ class Options protected () extends js.Object {
     * @throws {TypeError} if `spec` is not a cookie object.
     */
   def addCookie(spec: IWebDriverOptionsCookie): js.Promise[Unit] = js.native
+  
   /**
     * Schedules a command to delete all cookies visible to the current page.
     * @return {!Promise} A promise that will be resolved when all
     *     cookies have been deleted.
     */
   def deleteAllCookies(): js.Promise[Unit] = js.native
+  
   /**
     * Schedules a command to delete the cookie with the given name. This command
     * is a no-op if there is no cookie with the given name visible to the current
@@ -41,6 +44,7 @@ class Options protected () extends js.Object {
     *     cookie has been deleted.
     */
   def deleteCookie(name: String): js.Promise[Unit] = js.native
+  
   /**
     * Schedules a command to retrieve the cookie with the given name. Returns
     * null if there is no such cookie. The cookie will be returned as a JSON
@@ -51,6 +55,7 @@ class Options protected () extends js.Object {
     * @see http://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object
     */
   def getCookie(name: String): js.Promise[IWebDriverCookie] = js.native
+  
   /**
     * Schedules a command to retrieve all cookies visible to the current page.
     * Each cookie will be returned as a JSON object as described by the WebDriver
@@ -60,23 +65,26 @@ class Options protected () extends js.Object {
     * @see http://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object
     */
   def getCookies(): js.Promise[js.Array[IWebDriverCookie]] = js.native
+  
   /**
     * The current timeouts
     */
   def getTimeouts(): js.Promise[ITimeouts] = js.native
+  
   /**
     * @return {!Logs} The interface for managing driver
     *     logs.
     */
   def logs(): Logs = js.native
+  
   /**
     * Set current timeouts
     */
   def setTimeouts(timeouts: ITimeouts): js.Promise[Unit] = js.native
+  
   /**
     * @return {!Window} The interface for managing the
     *     current window.
     */
   def window(): Window = js.native
 }
-

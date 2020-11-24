@@ -3,7 +3,7 @@ package typings.asn1js.mod
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "LocalOctetStringValueBlock")
 @js.native
@@ -11,13 +11,17 @@ class LocalOctetStringValueBlock ()
   extends LocalConstructedValueBlock
      with ILocalHexBlock {
   def this(params: LocalOctetStringValueBlockParams) = this()
-  var isConstructed: scala.Boolean = js.native
+  
   /* InferMemberOverrides */
   override def fromBER(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): Unit with Double = js.native
+  
+  var isConstructed: scala.Boolean = js.native
+  
   /* InferMemberOverrides */
   override def toBER(): ArrayBuffer = js.native
   /* InferMemberOverrides */
   override def toBER(sizeOnly: scala.Boolean): ArrayBuffer = js.native
+  
   /**
     * Convertion for the block to JSON object
     * 
@@ -28,4 +32,3 @@ class LocalOctetStringValueBlock ()
   /* InferMemberOverrides */
   override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
 }
-

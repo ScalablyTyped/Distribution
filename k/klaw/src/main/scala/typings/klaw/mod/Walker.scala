@@ -9,10 +9,11 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Walker extends Readable {
+  
   def on(event: Event, listener: js.Function): this.type = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
@@ -25,4 +26,3 @@ trait Walker extends Readable {
   @JSName("on")
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
 }
-

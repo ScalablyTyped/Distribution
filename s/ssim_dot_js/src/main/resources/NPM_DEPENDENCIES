@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ssim.js" : "3.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ssim.js" : "3.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

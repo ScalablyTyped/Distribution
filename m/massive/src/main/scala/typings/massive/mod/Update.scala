@@ -2,7 +2,7 @@ package typings.massive.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a UPDATE query. */
 @JSImport("massive", "Update")
@@ -16,7 +16,7 @@ class Update protected () extends js.Object {
     criteria: AnyObject[_],
     options: ResultProcessingOptions with PersistenceUpdateDocOptions
   ) = this()
+  
   /** Format this object into a SQL SELECT. */
   def format(): String = js.native
 }
-

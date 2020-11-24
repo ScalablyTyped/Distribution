@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.DragAxis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PointerDragBehavior")
 @js.native
@@ -15,12 +15,12 @@ class PointerDragBehavior ()
   extends typings.babylonjs.behaviorsIndexMod.PointerDragBehavior {
   def this(options: DragAxis) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "PointerDragBehavior")
 @js.native
 object PointerDragBehavior extends js.Object {
+  
   var _AnyMouseID: js.Any = js.native
+  
   var _planeScene: js.Any = js.native
 }
-

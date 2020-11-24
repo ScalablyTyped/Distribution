@@ -14,7 +14,7 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/dockpanel", "DockPanel")
 @js.native
@@ -25,76 +25,99 @@ import scala.scalajs.js.annotation._
   */
 class DockPanel_ () extends Widget {
   def this(options: IOptions) = this()
+  
   /**
     * Create a new handle for use by the panel.
     */
   var _createHandle: js.Any = js.native
+  
   /**
     * Create a new tab bar for use by the panel.
     */
   var _createTabBar: js.Any = js.native
+  
   var _drag: js.Any = js.native
+  
   var _edges: js.Any = js.native
+  
   /**
     * Handle the `'lm-dragenter'` event for the dock panel.
     */
   var _evtDragEnter: js.Any = js.native
+  
   /**
     * Handle the `'lm-dragleave'` event for the dock panel.
     */
   var _evtDragLeave: js.Any = js.native
+  
   /**
     * Handle the `'lm-dragover'` event for the dock panel.
     */
   var _evtDragOver: js.Any = js.native
+  
   /**
     * Handle the `'lm-drop'` event for the dock panel.
     */
   var _evtDrop: js.Any = js.native
+  
   /**
     * Handle the `'keydown'` event for the dock panel.
     */
   var _evtKeyDown: js.Any = js.native
+  
   /**
     * Handle the `'mousedown'` event for the dock panel.
     */
   var _evtMouseDown: js.Any = js.native
+  
   /**
     * Handle the `'mousemove'` event for the dock panel.
     */
   var _evtMouseMove: js.Any = js.native
+  
   /**
     * Handle the `'mouseup'` event for the dock panel.
     */
   var _evtMouseUp: js.Any = js.native
+  
   var _layoutModified: js.Any = js.native
+  
   var _mode: js.Any = js.native
+  
   /**
     * Handle the `currentChanged` signal from a tab bar.
     */
   var _onCurrentChanged: js.Any = js.native
+  
   /**
     * Handle the `tabActivateRequested` signal from a tab bar.
     */
   var _onTabActivateRequested: js.Any = js.native
+  
   /**
     * Handle the `tabCloseRequested` signal from a tab bar.
     */
   var _onTabCloseRequested: js.Any = js.native
+  
   /**
     * Handle the `tabDetachRequested` signal from a tab bar.
     */
   var _onTabDetachRequested: js.Any = js.native
+  
   /**
     * Handle the `tabMoved` signal from a tab bar.
     */
   var _onTabMoved: js.Any = js.native
+  
   var _pressData: js.Any = js.native
+  
   /**
     * Release the mouse grab for the dock panel.
     */
   var _releaseMouse: js.Any = js.native
+  
   var _renderer: js.Any = js.native
+  
   /**
     * Show the overlay indicator at the given client position.
     *
@@ -104,57 +127,9 @@ class DockPanel_ () extends Widget {
     * If the position is not over a valid zone, the overlay is hidden.
     */
   var _showOverlay: js.Any = js.native
+  
   var _tabsMovable: js.Any = js.native
-  /**
-    * Whether the dock panel is empty.
-    */
-  val isEmpty: Boolean = js.native
-  /**
-    * A signal emitted when the layout configuration is modified.
-    *
-    * #### Notes
-    * This signal is emitted whenever the current layout configuration
-    * may have changed.
-    *
-    * This signal is emitted asynchronously in a collapsed fashion, so
-    * that multiple synchronous modifications results in only a single
-    * emit of the signal.
-    */
-  val layoutModified: ISignal[this.type, Unit] = js.native
-  /**
-    * Get the mode for the dock panel.
-    */
-  /**
-    * Set the mode for the dock panel.
-    *
-    * #### Notes
-    * Changing the mode is a destructive operation with respect to the
-    * panel's layout configuration. If layout state must be preserved,
-    * save the current layout config before changing the mode.
-    */
-  var mode: Mode = js.native
-  /**
-    * The overlay used by the dock panel.
-    */
-  val overlay: IOverlay = js.native
-  /**
-    * The renderer used by the dock panel.
-    */
-  val renderer: IRenderer = js.native
-  /**
-    * Get the spacing between the widgets.
-    */
-  /**
-    * Set the spacing between the widgets.
-    */
-  var spacing: Double = js.native
-  /**
-    * Whether the tabs can be dragged / moved at runtime.
-    */
-  /**
-    * Enable / Disable draggable / movable tabs.
-    */
-  var tabsMovable: Boolean = js.native
+  
   /**
     * Activate a specified widget in the dock panel.
     *
@@ -164,6 +139,7 @@ class DockPanel_ () extends Widget {
     * This will select and activate the given widget.
     */
   def activateWidget(widget: Widget): Unit = js.native
+  
   /**
     * Add a widget to the dock panel.
     *
@@ -177,6 +153,7 @@ class DockPanel_ () extends Widget {
     */
   def addWidget(widget: Widget): Unit = js.native
   def addWidget(widget: Widget, options: IAddOptions): Unit = js.native
+  
   /**
     * Handle the DOM events for the dock panel.
     *
@@ -188,12 +165,55 @@ class DockPanel_ () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * Create an iterator over the handles in the panel.
     *
     * @returns A new iterator over the handles in the panel.
     */
   def handles(): IIterator[HTMLDivElement] = js.native
+  
+  /**
+    * Whether the dock panel is empty.
+    */
+  val isEmpty: Boolean = js.native
+  
+  /**
+    * A signal emitted when the layout configuration is modified.
+    *
+    * #### Notes
+    * This signal is emitted whenever the current layout configuration
+    * may have changed.
+    *
+    * This signal is emitted asynchronously in a collapsed fashion, so
+    * that multiple synchronous modifications results in only a single
+    * emit of the signal.
+    */
+  val layoutModified: ISignal[this.type, Unit] = js.native
+  
+  /**
+    * Get the mode for the dock panel.
+    */
+  /**
+    * Set the mode for the dock panel.
+    *
+    * #### Notes
+    * Changing the mode is a destructive operation with respect to the
+    * panel's layout configuration. If layout state must be preserved,
+    * save the current layout config before changing the mode.
+    */
+  var mode: Mode = js.native
+  
+  /**
+    * The overlay used by the dock panel.
+    */
+  val overlay: IOverlay = js.native
+  
+  /**
+    * The renderer used by the dock panel.
+    */
+  val renderer: IRenderer = js.native
+  
   /**
     * Restore the layout to a previously saved configuration.
     *
@@ -207,6 +227,7 @@ class DockPanel_ () extends Widget {
     * mode when a layout config is restored.
     */
   def restoreLayout(config: ILayoutConfig): Unit = js.native
+  
   /**
     * Save the current layout configuration of the dock panel.
     *
@@ -217,6 +238,7 @@ class DockPanel_ () extends Widget {
     * in order to restore the layout to its current configuration.
     */
   def saveLayout(): ILayoutConfig = js.native
+  
   /**
     * Select a specific widget in the dock panel.
     *
@@ -226,6 +248,7 @@ class DockPanel_ () extends Widget {
     * This will make the widget the current widget in its tab area.
     */
   def selectWidget(widget: Widget): Unit = js.native
+  
   /**
     * Create an iterator over the selected widgets in the panel.
     *
@@ -236,6 +259,15 @@ class DockPanel_ () extends Widget {
     * of each tab bar in the panel.
     */
   def selectedWidgets(): IIterator[Widget] = js.native
+  
+  /**
+    * Get the spacing between the widgets.
+    */
+  /**
+    * Set the spacing between the widgets.
+    */
+  var spacing: Double = js.native
+  
   /**
     * Create an iterator over the tab bars in the panel.
     *
@@ -245,6 +277,15 @@ class DockPanel_ () extends Widget {
     * This iterator does not include the user widgets.
     */
   def tabBars(): IIterator[TabBar[Widget]] = js.native
+  
+  /**
+    * Whether the tabs can be dragged / moved at runtime.
+    */
+  /**
+    * Enable / Disable draggable / movable tabs.
+    */
+  var tabsMovable: Boolean = js.native
+  
   /**
     * Create an iterator over the user widgets in the panel.
     *
@@ -255,4 +296,3 @@ class DockPanel_ () extends Widget {
     */
   def widgets(): IIterator[Widget] = js.native
 }
-

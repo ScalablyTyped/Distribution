@@ -3,11 +3,12 @@ package typings.jest.mod.jest
 import typings.jest.anon.Typeofjest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest", "jest.runOnlyPendingTimers")
 @js.native
 object runOnlyPendingTimers extends js.Object {
+  
   /**
     * Executes only the macro-tasks that are currently pending (i.e., only the
     * tasks that have been queued by setTimeout() or setInterval() up to this point).
@@ -16,4 +17,3 @@ object runOnlyPendingTimers extends js.Object {
     */
   def apply(): Typeofjest = js.native
 }
-

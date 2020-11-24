@@ -2,17 +2,17 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SelectionMode extends js.Object
-
 /**
   * Specifies the selection mode of a ListView.
   **/
 @JSGlobal("WinJS.UI.SelectionMode")
 @js.native
 object SelectionMode extends js.Object {
+  
   /**
     * Multiple items may be selected. Clicking additional items adds them to the selection.
     **/
@@ -30,6 +30,4 @@ object SelectionMode extends js.Object {
     **/
   @js.native
   sealed trait single extends SelectionMode
-  
 }
-

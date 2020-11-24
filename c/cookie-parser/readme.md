@@ -10,9 +10,9 @@ Parse HTTP request cookies
 | ------------------ | :-------------: |
 | Full name          | cookie-parser |
 | Keywords           | cookie, middleware |
-| # releases         | 2 |
-| # dependents       | 4168 |
-| # downloads        | 60063187 |
+| # releases         | 3 |
+| # dependents       | 4569 |
+| # downloads        | 73413143 |
 | # stars            | 238 |
 
 ## Links

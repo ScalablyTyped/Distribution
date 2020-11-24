@@ -9,10 +9,10 @@ Edit Post module for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/edit-post |
-| Keywords           | wordpress, editor |
-| # releases         | 65 |
-| # dependents       | 2 |
-| # downloads        | 120360 |
+| Keywords           | wordpress, gutenberg, editor, post |
+| # releases         | 77 |
+| # dependents       | 4 |
+| # downloads        | 253177 |
 | # stars            | 0 |
 
 ## Links

@@ -5,9 +5,8 @@ import typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDeta
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "DocumentCardDetails")
 @js.native
 object DocumentCardDetails extends TopLevel[FunctionComponent[IDocumentCardDetailsProps]]
-

@@ -2,7 +2,7 @@ package typings.amazonConnectStreams.global.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ChatConnection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular chat connection within a contact.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChatConnection ()
   extends typings.amazonConnectStreams.connect.ChatConnection
-

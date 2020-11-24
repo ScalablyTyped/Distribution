@@ -3,7 +3,7 @@ package typings.amcharts.mod.AmCharts
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set it to true if you have base href set for your page.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("amcharts", "AmCharts.baseHref")
 @js.native
 object baseHref extends TopLevel[Boolean]
-

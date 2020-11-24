@@ -4,10 +4,11 @@ import typings.hexo.hexoBooleans.`false`
 import typings.hexo.hexoBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Renderer extends js.Object {
+  
   def register(
     srcExt: String,
     outExt: String,
@@ -28,4 +29,3 @@ trait Renderer extends js.Object {
     sync: `true`
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Strophe.js is an XMPP library for JavaScript
 | Full name          | strophe.js |
 | Keywords           | xmpp, message, bosh, websocket, browser |
 | # releases         | 8 |
-| # dependents       | 37 |
-| # downloads        | 131154 |
+| # dependents       | 43 |
+| # downloads        | 204121 |
 | # stars            | 1 |
 
 ## Links

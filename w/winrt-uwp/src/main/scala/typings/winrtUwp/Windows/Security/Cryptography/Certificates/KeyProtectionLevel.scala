@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KeyProtectionLevel extends js.Object
-
 /** Specifies the key protection level. This enumeration type is used in the KeyProtectionLevel property of a CertificateRequestProperties object. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyProtectionLevel")
 @js.native
 object KeyProtectionLevel extends js.Object {
+  
   /** The user is notified through a dialog box when the private key is created or used. */
   @js.native
   sealed trait consentOnly extends KeyProtectionLevel
@@ -26,6 +26,4 @@ object KeyProtectionLevel extends js.Object {
   /** No strong key protection. */
   @js.native
   sealed trait noConsent extends KeyProtectionLevel
-  
 }
-

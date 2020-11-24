@@ -5,9 +5,25 @@ import typings.reactPortalTooltip.cardMod.Card._Align
 import typings.reactPortalTooltip.cardMod.Card._Arrow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactPortalTooltipStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
   @js.native
   sealed trait bottom
     extends Position
@@ -34,16 +50,4 @@ object reactPortalTooltipStrings {
   sealed trait top
     extends Position
        with _Arrow
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
 }
-

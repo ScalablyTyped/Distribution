@@ -3,11 +3,12 @@ package typings.decompressResponse
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("decompress-response", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   Decompress a HTTP response if needed.
   @param response - The HTTP incoming stream with compressed data.
@@ -23,4 +24,3 @@ object mod extends js.Object {
   */
   def apply(response: IncomingMessage): IncomingMessage = js.native
 }
-

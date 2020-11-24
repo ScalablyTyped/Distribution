@@ -4,7 +4,7 @@ import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roads/types/client/pjax", JSImport.Default)
 @js.native
@@ -18,4 +18,3 @@ class default protected () extends RoadsPjax {
     */
   def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
 }
-

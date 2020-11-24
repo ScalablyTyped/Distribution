@@ -6,10 +6,11 @@ import typings.redux.mod.Func2
 import typings.redux.mod.Func3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(): js.Function1[/* a */ js.Any, _] = js.native
   def apply[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
   def apply[F /* <: js.Function */](f: F): F = js.native
@@ -47,4 +48,3 @@ trait FnCall extends js.Object {
     f4: Func3[T1, T2, T3, A]
   ): Func3[T1, T2, T3, R] = js.native
 }
-

@@ -7,12 +7,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileOpenPicker extends IFileOpenPicker
-
 object FileOpenPicker {
+  
   @scala.inline
   def apply(
     commitButtonText: String,
@@ -30,4 +30,3 @@ object FileOpenPicker {
     __obj.asInstanceOf[FileOpenPicker]
   }
 }
-

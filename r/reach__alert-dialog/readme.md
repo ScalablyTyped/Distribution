@@ -10,9 +10,9 @@ Accessible React Alert Dialog.
 | ------------------ | :-------------: |
 | Full name          | @reach/alert-dialog |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 8 |
-| # downloads        | 67527 |
+| # releases         | 47 |
+| # dependents       | 10 |
+| # downloads        | 195354 |
 | # stars            | 0 |
 
 ## Links

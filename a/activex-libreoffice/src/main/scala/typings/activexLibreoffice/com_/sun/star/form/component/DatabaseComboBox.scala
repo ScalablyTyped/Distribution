@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies a combo box which is data-aware, and can be bound to a database field.
@@ -39,22 +39,27 @@ import scala.scalajs.js.annotation._
 trait DatabaseComboBox
   extends DataAwareControlModel
      with XItemList {
+  
   /**
     * specifies the horizontal alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
   var Align: Double = js.native
+  
   /** specifies whether automatic completion of text is enabled. */
   var Autocomplete: Boolean = js.native
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Color = js.native
+  
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
   var Border: Double = js.native
+  
   /**
     * specifies the color of the border, if present
     *
@@ -62,6 +67,7 @@ trait DatabaseComboBox
     * @since OOo 2.0
     */
   var BorderColor: Double = js.native
+  
   /**
     * determines if an empty text should be treated as a `NULL` value.
     *
@@ -71,6 +77,7 @@ trait DatabaseComboBox
     * If the property is set to `TRUE` , and an empty text is to be committed, this is converted into `NULL` , else it is written as empty string.
     */
   var ConvertEmptyToNull: Boolean = js.native
+  
   /**
     * contains a default value for the control.
     *
@@ -79,33 +86,44 @@ trait DatabaseComboBox
     * @see com.sun.star.form.XReset
     */
   var DefaultText: String = js.native
+  
   /** specifies if the control has a drop down button. */
   var Dropdown: Boolean = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /** specifies the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
   var FontEmphasisMark: Double = js.native
+  
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
   var FontRelief: Double = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /**
     * specifies whether the selection in the control should be hidden when the control is not active (focused).
     * @since OOo 2.0
     */
   var HideInactiveSelection: Boolean = js.native
+  
   /** specifies the maximum line count displayed in the drop down box. */
   var LineCount: Double = js.native
+  
   /**
     * describes the source of items in the combo box's list.
     *
     * The concrete meaning of this property depends on the value of {@link ListSourceType}
     */
   var ListSource: String = js.native
+  
   /**
     * specifies the kind of list source.
     *
@@ -113,12 +131,14 @@ trait DatabaseComboBox
     * usually ignore it and leave the list empty.
     */
   var ListSourceType: typings.activexLibreoffice.com_.sun.star.form.ListSourceType = js.native
+  
   /**
     * specifies the maximum character count.
     *
     * There's no limitation, if set to 0.
     */
   var MaxTextLen: Double = js.native
+  
   /**
     * defines how the mouse wheel can be used to scroll through the control's content.
     *
@@ -126,20 +146,28 @@ trait DatabaseComboBox
     * control under which circumstances this is possible.
     */
   var MouseWheelBehavior: Double = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** specifies that the content of the control cannot be modified by the user. */
   var ReadOnly: Boolean = js.native
+  
   /** specifies the list of items. */
   var StringItemList: SafeArray[String] = js.native
+  
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: Boolean = js.native
+  
   /** specifies the text displayed in the control. */
   var Text: String = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /** specifies the text line color (RGB) of the control. */
   var TextLineColor: Color = js.native
+  
   /**
     * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
     *
@@ -147,6 +175,7 @@ trait DatabaseComboBox
     * @since OOo 3.1
     */
   var WritingMode: Double = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -154,4 +183,3 @@ trait DatabaseComboBox
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

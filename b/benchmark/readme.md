@@ -1,7 +1,7 @@
 
 # Scala.js typings for benchmark
 
-Typings are for version v1.0.0
+Typings are for version v2.1.4
 
 ## Library description:
 A benchmarking library that supports high-resolution timers & returns statistically significant results.
@@ -11,8 +11,8 @@ A benchmarking library that supports high-resolution timers & returns statistica
 | Full name          | benchmark |
 | Keywords           | benchmark, performance, speed |
 | # releases         | 1 |
-| # dependents       | 148 |
-| # downloads        | 7359276 |
+| # dependents       | 166 |
+| # downloads        | 7763941 |
 | # stars            | 89 |
 
 ## Links

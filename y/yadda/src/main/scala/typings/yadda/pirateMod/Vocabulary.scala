@@ -2,17 +2,20 @@ package typings.yadda.pirateMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Vocabulary
   extends typings.yadda.englishMod.Vocabulary {
+  
   var giveth: String = js.native
+  
   var thence: String = js.native
+  
   var whence: String = js.native
 }
-
 object Vocabulary {
+  
   @scala.inline
   def apply(
     _steps: js.Array[String],
@@ -33,24 +36,29 @@ object Vocabulary {
     __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
+  
   @scala.inline
   implicit class VocabularyOps[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGiveth(value: String): Self = this.set("giveth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setThence(value: String): Self = this.set("thence", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWhence(value: String): Self = this.set("whence", value.asInstanceOf[js.Any])
   }
-  
 }
-

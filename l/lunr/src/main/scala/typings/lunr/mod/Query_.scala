@@ -3,7 +3,7 @@ package typings.lunr.mod
 import typings.lunr.mod.Query.Clause
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A lunr.Query provides a programmatic way of defining queries to be performed
@@ -19,14 +19,12 @@ class Query_ protected () extends js.Object {
     * @param allFields An array of all available fields in a lunr.Index.
     */
   def this(allFields: js.Array[String]) = this()
+  
   /**
     * An array of all available fields in a lunr.Index.
     */
   var allFields: js.Array[String] = js.native
-  /**
-    * An array of query clauses.
-    */
-  var clauses: js.Array[Clause] = js.native
+  
   /**
     * Adds a {@link lunr.Query~Clause} to this query.
     *
@@ -37,6 +35,12 @@ class Query_ protected () extends js.Object {
     * @see lunr.Query~Clause
     */
   def clause(clause: Clause): Query = js.native
+  
+  /**
+    * An array of query clauses.
+    */
+  var clauses: js.Array[Clause] = js.native
+  
   /**
     * Adds a term to the current query, under the covers this will create a {@link lunr.Query~Clause}
     * to the list of clauses that make up this query.
@@ -64,4 +68,3 @@ class Query_ protected () extends js.Object {
   def term(term: js.Array[String | Token], options: js.Object): Query = js.native
   def term(term: Token, options: js.Object): Query = js.native
 }
-

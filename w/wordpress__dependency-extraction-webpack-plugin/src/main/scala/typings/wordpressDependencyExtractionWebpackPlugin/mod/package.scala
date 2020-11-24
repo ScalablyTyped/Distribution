@@ -2,9 +2,10 @@ package typings.wordpressDependencyExtractionWebpackPlugin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Map module request to an external.
     */
@@ -12,11 +13,14 @@ package object mod {
     /* request */ java.lang.String, 
     java.lang.String | scala.Unit | js.Array[java.lang.String]
   ]
+  
   /**
     * Map module request to a script handle.
     */
   type RequestToHandle = js.Function1[/* request */ java.lang.String, java.lang.String | scala.Unit]
+  
   type WebpackCompiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
+  
   type WebpackExternalsFunction = js.Function3[
     /* context */ js.Any, 
     /* request */ js.Any, 

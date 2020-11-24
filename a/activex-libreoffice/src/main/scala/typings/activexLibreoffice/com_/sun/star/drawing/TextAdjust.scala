@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This enumeration specifies the position of a text inside a shape in relation to the shape.
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 */
 trait TextAdjust extends js.Object
-
 object TextAdjust {
+  
   /**
     * The text extends from the left to the right edge of the shape.
     *
@@ -30,9 +30,11 @@ object TextAdjust {
     */
   @scala.inline
   def BLOCK: `3` = 3.asInstanceOf[`3`]
+  
   /** The text is centered inside the shape. */
   @scala.inline
   def CENTER: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * the connection line leaves the connected object to the left,
     *
@@ -42,6 +44,7 @@ object TextAdjust {
     */
   @scala.inline
   def LEFT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the connection line leaves the connected object to the right,
     *
@@ -51,6 +54,7 @@ object TextAdjust {
     */
   @scala.inline
   def RIGHT: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * the bitmap is stretched to fill the area.
     *
@@ -59,4 +63,3 @@ object TextAdjust {
   @scala.inline
   def STRETCH: `4` = 4.asInstanceOf[`4`]
 }
-

@@ -2,12 +2,12 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactLocationField extends IContactLocationField
-
 object ContactLocationField {
+  
   @scala.inline
   def apply(
     category: ContactFieldCategory,
@@ -26,4 +26,3 @@ object ContactLocationField {
     __obj.asInstanceOf[ContactLocationField]
   }
 }
-

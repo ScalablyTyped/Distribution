@@ -5,11 +5,12 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/onErrorResumeNext", JSImport.Namespace)
 @js.native
 object operatorsOnErrorResumeNextMod extends js.Object {
+  
   def onErrorResumeNext[T](): OperatorFunction[T, T] = js.native
   def onErrorResumeNext[T, R](array: js.Array[ObservableInput[_]]): OperatorFunction[T, T | R] = js.native
   def onErrorResumeNext[T, R](observables: ObservableInput[_]*): OperatorFunction[T, T | R] = js.native
@@ -32,6 +33,7 @@ object operatorsOnErrorResumeNextMod extends js.Object {
     v5: ObservableInput[T6],
     v6: ObservableInput[T7]
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6 | T7] = js.native
+  
   def onErrorResumeNextStatic[R](array: js.Array[ObservableInput[_]]): Observable[R] = js.native
   def onErrorResumeNextStatic[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = js.native
   def onErrorResumeNextStatic[R](v: ObservableInput[R]): Observable[R] = js.native
@@ -46,4 +48,3 @@ object operatorsOnErrorResumeNextMod extends js.Object {
     v6: ObservableInput[T6]
   ): Observable[R] = js.native
 }
-

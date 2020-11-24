@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdb.tools
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * encapsulates functionality which you might find useful when writing a database application which deals with query and table names.
@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XObjectNames extends js.Object {
+  
   /**
     * checks whether a given name is allowed for a to-be-created table or query in the database.
     *
@@ -36,6 +37,7 @@ trait XObjectNames extends js.Object {
     * @see com.sun.star.sdb.InteractionHandler
     */
   def checkNameForCreate(CommandType: Double, Name: String): Unit = js.native
+  
   /**
     * converts the given object name to a name which is valid in the database.
     *
@@ -44,6 +46,7 @@ trait XObjectNames extends js.Object {
     * @see com.sun.star.sdbc.XDatabaseMetaData.getExtraNameCharacters
     */
   def convertToSQLName(Name: String): String = js.native
+  
   /**
     * checks whether a given name is used as table respectively query name in the database.
     *
@@ -58,6 +61,7 @@ trait XObjectNames extends js.Object {
     * @throws com::sun::star::lang::IllegalArgumentException if {@link CommandType} specifies an invalid command type.
     */
   def isNameUsed(CommandType: Double, Name: String): Boolean = js.native
+  
   /**
     * checks whether a given name is valid as table or query name
     *
@@ -67,6 +71,7 @@ trait XObjectNames extends js.Object {
     * @see com.sun.star.sdbc.XDatabaseMetaData.getExtraNameCharacters
     */
   def isNameValid(CommandType: Double, Name: String): Boolean = js.native
+  
   /**
     * suggests a (unique) table or query name
     *
@@ -84,8 +89,8 @@ trait XObjectNames extends js.Object {
     */
   def suggestName(CommandType: Double, BaseName: String): String = js.native
 }
-
 object XObjectNames {
+  
   @scala.inline
   def apply(
     checkNameForCreate: (Double, String) => Unit,
@@ -97,28 +102,35 @@ object XObjectNames {
     val __obj = js.Dynamic.literal(checkNameForCreate = js.Any.fromFunction2(checkNameForCreate), convertToSQLName = js.Any.fromFunction1(convertToSQLName), isNameUsed = js.Any.fromFunction2(isNameUsed), isNameValid = js.Any.fromFunction2(isNameValid), suggestName = js.Any.fromFunction2(suggestName))
     __obj.asInstanceOf[XObjectNames]
   }
+  
   @scala.inline
   implicit class XObjectNamesOps[Self <: XObjectNames] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCheckNameForCreate(value: (Double, String) => Unit): Self = this.set("checkNameForCreate", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setConvertToSQLName(value: String => String): Self = this.set("convertToSQLName", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsNameUsed(value: (Double, String) => Boolean): Self = this.set("isNameUsed", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setIsNameValid(value: (Double, String) => Boolean): Self = this.set("isNameValid", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSuggestName(value: (Double, String) => String): Self = this.set("suggestName", js.Any.fromFunction2(value))
   }
-  
 }
-

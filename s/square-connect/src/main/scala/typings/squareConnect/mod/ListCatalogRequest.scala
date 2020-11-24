@@ -10,16 +10,18 @@ import typings.squareConnect.squareConnectStrings.MODIFIER_LIST
 import typings.squareConnect.squareConnectStrings.TAX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListCatalogRequest")
 @js.native
 class ListCatalogRequest () extends js.Object {
+  
   /**
     * TThe pagination cursor returned in the previous response. Leave unset for an initial request.
     * See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
+  
   /**
     * An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY,IMAGE`.
     */
@@ -27,4 +29,3 @@ class ListCatalogRequest () extends js.Object {
     ITEM | ITEM_VARIATION | CATEGORY | DISCOUNT | TAX | MODIFIER | MODIFIER_LIST | IMAGE
   ] = js.native
 }
-

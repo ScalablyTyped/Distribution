@@ -3,44 +3,37 @@ package typings.socketIoClient.SocketIOClient
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Manager class handles all the Namespaces and Sockets that we're using
   */
 @js.native
 trait Manager extends Emitter {
+  
   /**
     * If we should auto connect (also used when creating Sockets). Set via the
     * opts object
     */
   var autoConnect: Boolean = js.native
-  /**
-    * The currently connected sockets
-    */
-  var connecting: js.Array[Socket] = js.native
-  /**
-    * All the namespaces currently controlled by this Manager, and the Sockets
-    * that we're using to communicate with them
-    */
-  var nsps: StringDictionary[Socket] = js.native
-  /**
-    * The connect options that we used when creating this Manager
-    */
-  var opts: ConnectOpts = js.native
-  /**
-    * The state of the Manager. Either 'closed', 'opening', or 'open'
-    */
-  var readyState: String = js.native
-  /**
-    * The URI that this manager is for (host + port), e.g. 'http://localhost:4000'
-    */
-  var uri: String = js.native
+  
   /**
     * @see open( fn );
     */
   def connect(): Manager = js.native
   def connect(fn: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Manager = js.native
+  
+  /**
+    * The currently connected sockets
+    */
+  var connecting: js.Array[Socket] = js.native
+  
+  /**
+    * All the namespaces currently controlled by this Manager, and the Sockets
+    * that we're using to communicate with them
+    */
+  var nsps: StringDictionary[Socket] = js.native
+  
   /**
     * Sets the current transport socket and opens our connection
     * @param fn An optional callback to call when our socket has either opened, or
@@ -49,6 +42,12 @@ trait Manager extends Emitter {
     */
   def open(): Manager = js.native
   def open(fn: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Manager = js.native
+  
+  /**
+    * The connect options that we used when creating this Manager
+    */
+  var opts: ConnectOpts = js.native
+  
   /**
     * Gets the randomisation factor used in the exponential backoff jitter
     * when reconnecting
@@ -63,6 +62,12 @@ trait Manager extends Emitter {
     * @return This Manager
     */
   def randomizationFactor(v: Double): Manager = js.native
+  
+  /**
+    * The state of the Manager. Either 'closed', 'opening', or 'open'
+    */
+  var readyState: String = js.native
+  
   /**
     * Gets if we should reconnect automatically
     * @default true
@@ -75,6 +80,7 @@ trait Manager extends Emitter {
     * @return This Manager
     */
   def reconnection(v: Boolean): Manager = js.native
+  
   /**
     * Gets the number of reconnection attempts we should try before giving up
     * @default Infinity
@@ -87,6 +93,7 @@ trait Manager extends Emitter {
     * @return This Manager
     */
   def reconnectionAttempts(v: Double): Manager = js.native
+  
   /**
     * Gets the delay in milliseconds between each reconnection attempt
     * @default 1000
@@ -99,6 +106,7 @@ trait Manager extends Emitter {
     * @return This Manager
     */
   def reconnectionDelay(v: Double): Manager = js.native
+  
   /**
     * Gets the max reconnection delay in milliseconds between each reconnection
     * attempt
@@ -112,6 +120,7 @@ trait Manager extends Emitter {
     * @return This Manager
     */
   def reconnectionDelayMax(v: Double): Manager = js.native
+  
   /**
     * Creates a new Socket for the given namespace
     * @param nsp The namespace that this Socket is for
@@ -119,6 +128,7 @@ trait Manager extends Emitter {
     * an existing one
     */
   def socket(nsp: String): Socket = js.native
+  
   /**
     * Gets the timeout in milliseconds for our connection attempts
     * @default 20000
@@ -130,5 +140,9 @@ trait Manager extends Emitter {
     * @return This Manager
     */
   def timeout(v: Double): Manager = js.native
+  
+  /**
+    * The URI that this manager is for (host + port), e.g. 'http://localhost:4000'
+    */
+  var uri: String = js.native
 }
-

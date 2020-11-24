@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.jws
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IntDate class for time representation for JSON Web Token(JWT)
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.jws.IntDate")
 @js.native
 object IntDate extends js.Object
-

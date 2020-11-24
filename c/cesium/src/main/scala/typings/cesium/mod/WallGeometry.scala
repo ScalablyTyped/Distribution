@@ -3,19 +3,20 @@ package typings.cesium.mod
 import typings.cesium.anon.MaximumHeights
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "WallGeometry")
 @js.native
 class WallGeometry protected () extends Packable {
   def this(options: MaximumHeights) = this()
 }
-
 /* static members */
 @JSImport("cesium", "WallGeometry")
 @js.native
 object WallGeometry extends js.Object {
+  
   def createGeometry(wallGeometry: WallGeometry): Geometry = js.native
+  
   def fromConstantHeights(positions: js.Array[Cartesian3]): WallGeometry = js.native
   def fromConstantHeights(
     positions: js.Array[Cartesian3],
@@ -44,9 +45,9 @@ object WallGeometry extends js.Object {
     minimumHeight: Double,
     ellipsoid: Ellipsoid
   ): WallGeometry = js.native
+  
   def unpack(array: js.Array[Double]): WallGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: WallGeometry): WallGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): WallGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: WallGeometry): WallGeometry = js.native
 }
-

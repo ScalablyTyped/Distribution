@@ -8,11 +8,12 @@ import typings.std.MouseEvent
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd-html5-backend/lib/OffsetUtils", JSImport.Namespace)
 @js.native
 object offsetUtilsMod extends js.Object {
+  
   def getDragPreviewOffset(
     sourceNode: HTMLElement,
     dragPreview: HTMLElement,
@@ -20,7 +21,8 @@ object offsetUtilsMod extends js.Object {
     anchorPoint: AnchorX,
     offsetPoint: OffsetX
   ): XYCoord = js.native
+  
   def getEventClientOffset(e: MouseEvent): XYCoord = js.native
+  
   def getNodeClientOffset(node: Node): XYCoord | Null = js.native
 }
-

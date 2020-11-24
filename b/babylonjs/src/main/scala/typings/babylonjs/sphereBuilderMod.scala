@@ -6,17 +6,18 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/sphereBuilder", JSImport.Namespace)
 @js.native
 object sphereBuilderMod extends js.Object {
+  
   @js.native
   class SphereBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object SphereBuilder extends js.Object {
+    
     /**
       * Creates a sphere mesh
       * * The parameter `diameter` sets the diameter size (float) of the sphere (default 1)
@@ -36,6 +37,4 @@ object sphereBuilderMod extends js.Object {
     def CreateSphere(name: String, options: DiameterX): Mesh = js.native
     def CreateSphere(name: String, options: DiameterX, scene: Nullable[Scene]): Mesh = js.native
   }
-  
 }
-

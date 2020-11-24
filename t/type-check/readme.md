@@ -10,9 +10,9 @@ type-check allows you to check the types of JavaScript values at runtime with a 
 | ------------------ | :-------------: |
 | Full name          | type-check |
 | Keywords           | type, check, checking, library |
-| # releases         | 1 |
-| # dependents       | 94 |
-| # downloads        | 363740866 |
+| # releases         | 2 |
+| # dependents       | 137 |
+| # downloads        | 540016173 |
 | # stars            | 10 |
 
 ## Links

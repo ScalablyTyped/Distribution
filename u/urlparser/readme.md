@@ -12,7 +12,7 @@ Url parser
 | Keywords           | url, parse |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 3289 |
+| # downloads        | 2245 |
 | # stars            | 2 |
 
 ## Links

@@ -2,9 +2,10 @@ package typings.instagramPrivateApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object graphqlRequestOptionsMod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.instagramPrivateApi.instagramPrivateApiStrings.IgInsightsAccountInsightsSurfaceQuery
     - typings.instagramPrivateApi.instagramPrivateApiStrings.IgInsightsAccountInsightsWithTabsQuery
@@ -14,6 +15,7 @@ package object graphqlRequestOptionsMod {
     - java.lang.String
   */
   type InsightsFriendlyName = typings.instagramPrivateApi.graphqlRequestOptionsMod._InsightsFriendlyName | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.instagramPrivateApi.instagramPrivateApiStrings.account
     - typings.instagramPrivateApi.instagramPrivateApiStrings.post

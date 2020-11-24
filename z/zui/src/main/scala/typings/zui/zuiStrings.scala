@@ -2,13 +2,12 @@ package typings.zui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zuiStrings {
-  @js.native
-  sealed trait DateTimePicker extends js.Object
   
   @scala.inline
   def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
+  @js.native
+  sealed trait DateTimePicker extends js.Object
 }
-

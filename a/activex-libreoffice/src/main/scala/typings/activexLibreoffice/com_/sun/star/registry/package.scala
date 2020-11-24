@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object registry {
+  
   /**
     * is thrown when an application tries to register a new component (implementation) using the {@link
     * XImplementationRegistration.registerImplementation()} method, but the component cannot be registered. The reason for this exception could be: ; ; the
@@ -13,6 +14,7 @@ package object registry {
     * a jar file)).;
     */
   type CannotRegisterImplementationException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * implicitly supports a local registry and a read-only system registry for global information. In the context of this service, the functions `open` ,
     * `close` , and `destroy` from {@link XSimpleRegistry} are not supported and throw an exception if they are used.
@@ -57,6 +59,7 @@ package object registry {
     * -thread safe
     */
   type DefaultRegistry = typings.activexLibreoffice.com_.sun.star.registry.XSimpleRegistry
+  
   /**
     * is the implementation of the interface {@link XImplementationRegistration} . This service can be used to install or uninstall components
     * (implementations). Further, it is possible to check if all runtime dependencies (needed services) are available to use a specified component.
@@ -64,12 +67,16 @@ package object registry {
     * Guarantees: -thread safe
     */
   type ImplementationRegistration = typings.activexLibreoffice.com_.sun.star.registry.XImplementationRegistration
+  
   /** signals that the registry is invalid or an operation on the registry failed. */
   type InvalidRegistryException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /** signals that the value of the key is invalid or does not have the appropriate key type. */
   type InvalidValueException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /** is thrown if entries of two registries are contradictory in the context of {@link XSimpleRegistry.mergeKey()} e() method. */
   type MergeConflictException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * makes it possible to create, open, or close a registry. Further, it is possible to merge a registry under a specified key in the open registry.
     *

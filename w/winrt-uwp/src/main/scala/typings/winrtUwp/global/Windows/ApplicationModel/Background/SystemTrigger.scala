@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a system event that triggers a background task to run. */
 @JSGlobal("Windows.ApplicationModel.Background.SystemTrigger")
@@ -19,4 +19,3 @@ class SystemTrigger protected ()
     oneShot: Boolean
   ) = this()
 }
-

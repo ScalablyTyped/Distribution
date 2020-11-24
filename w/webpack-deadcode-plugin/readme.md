@@ -12,7 +12,7 @@ Webpack plugin to detect unused files and unused exports in used files
 | Keywords           | webpack, plugin, unused, deadcode |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 949783 |
+| # downloads        | 969753 |
 | # stars            | 0 |
 
 ## Links

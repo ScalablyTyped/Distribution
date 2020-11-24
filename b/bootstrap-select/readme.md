@@ -10,9 +10,9 @@ The jQuery plugin that brings select elements into the 21st century with intuiti
 | ------------------ | :-------------: |
 | Full name          | bootstrap-select |
 | Keywords           | javascript, jquery, form, bootstrap, dropdown, select, replacement |
-| # releases         | 15 |
-| # dependents       | 198 |
-| # downloads        | 2521402 |
+| # releases         | 17 |
+| # dependents       | 256 |
+| # downloads        | 3659920 |
 | # stars            | 9 |
 
 ## Links

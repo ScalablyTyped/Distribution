@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nColumnsPanel extends P13nPanel {
+  
   /**
     * Add ColumnsItem to columnsItems aggregation
     * @since 1.26.0
@@ -13,6 +14,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns <code>this</code> to allow method chaining.
     */
   def addColumnsItem(oColumnsItem: P13nColumnsItem): P13nColumnsPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>addColumnsItem</code> event of this
     * <code>sap.m.P13nColumnsPanel</code>.When called, the context of the event handler (its
@@ -29,6 +31,7 @@ trait P13nColumnsPanel extends P13nPanel {
     */
   def attachAddColumnsItem(oData: js.Any, fnFunction: js.Any): P13nColumnsPanel = js.native
   def attachAddColumnsItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>changeColumnsItems</code> event of this
     * <code>sap.m.P13nColumnsPanel</code>.When called, the context of the event handler (its
@@ -45,6 +48,7 @@ trait P13nColumnsPanel extends P13nPanel {
     */
   def attachChangeColumnsItems(oData: js.Any, fnFunction: js.Any): P13nColumnsPanel = js.native
   def attachChangeColumnsItems(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>setData</code> event of this
     * <code>sap.m.P13nColumnsPanel</code>.When called, the context of the event handler (its
@@ -62,6 +66,7 @@ trait P13nColumnsPanel extends P13nPanel {
     */
   def attachSetData(oData: js.Any, fnFunction: js.Any): P13nColumnsPanel = js.native
   def attachSetData(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Binds aggregation <code>columnsItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -71,12 +76,14 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindColumnsItems(oBindingInfo: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Destroy all instances from columnsItems aggregation
     * @since 1.26.0
     * @returns <code>this</code> to allow method chaining.
     */
   def destroyColumnsItems(): P13nColumnsPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>addColumnsItem</code> event of this
     * <code>sap.m.P13nColumnsPanel</code>.The passed function and listener object must match the ones used
@@ -87,6 +94,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAddColumnsItem(fnFunction: js.Any, oListener: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>changeColumnsItems</code> event of
     * this <code>sap.m.P13nColumnsPanel</code>.The passed function and listener object must match the ones
@@ -97,6 +105,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChangeColumnsItems(fnFunction: js.Any, oListener: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>setData</code> event of this
     * <code>sap.m.P13nColumnsPanel</code>.The passed function and listener object must match the ones used
@@ -107,6 +116,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSetData(fnFunction: js.Any, oListener: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Fires event <code>addColumnsItem</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>newItem</code> of type
@@ -117,6 +127,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAddColumnsItem(mArguments: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Fires event <code>changeColumnsItems</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>newItems</code> of type <code>sap.m.P13nColumnsItem[]</code>Contains
@@ -128,6 +139,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChangeColumnsItems(mArguments: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Fires event <code>setData</code> to attached listeners.
     * @since 1.26.7
@@ -135,11 +147,13 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSetData(mArguments: js.Any): P13nColumnsPanel = js.native
+  
   /**
     * Gets content of aggregation <code>columnsItems</code>.List of columns that has been changed.
     * @since 1.26.0
     */
   def getColumnsItems(): js.Array[P13nColumnsItem] = js.native
+  
   /**
     * Gets current value of property <code>visibleItemsThreshold</code>.Specifies a threshold of visible
     * items. If the end user makes a lot of columns visible, this might cause performance to slow
@@ -155,6 +169,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Value of property <code>visibleItemsThreshold</code>
     */
   def getVisibleItemsThreshold(): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.P13nColumnsItem</code> in the aggregation
     * <code>columnsItems</code>.and returns its index if found or -1 otherwise.
@@ -163,6 +178,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfColumnsItem(oColumnsItem: P13nColumnsItem): Double = js.native
+  
   /**
     * Insert ColumnsItem to columnsItems aggregation
     * @since 1.26.0
@@ -171,17 +187,20 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns <code>this</code> to allow method chaining.
     */
   def insertColumnsItem(iIndex: Double, oColumnsItem: P13nColumnsItem): P13nColumnsPanel = js.native
+  
   /**
     * This method does a re-initialization of the panel
     * @since 1.28
     */
   def reInitialize(): Unit = js.native
+  
   /**
     * Remove all ColumnsItems from columnsItems aggregation
     * @since 1.26.0
     * @returns An array of the removed items (might be empty).
     */
   def removeAllColumnsItems(): js.Array[P13nColumnsItem] = js.native
+  
   /**
     * Remove ColumnsItem from columnsItems aggregation
     * @since 1.26.0
@@ -189,6 +208,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns The removed item or null.
     */
   def removeColumnsItem(oColumnsItem: P13nColumnsItem): P13nColumnsItem = js.native
+  
   /**
     * Sets a new value for property <code>visibleItemsThreshold</code>.Specifies a threshold of visible
     * items. If the end user makes a lot of columns visible, this might cause performance to slow
@@ -206,6 +226,7 @@ trait P13nColumnsPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVisibleItemsThreshold(iVisibleItemsThreshold: Double): P13nColumnsPanel = js.native
+  
   /**
     * Unbinds aggregation <code>columnsItems</code> from model data.
     * @since 1.26.0
@@ -213,4 +234,3 @@ trait P13nColumnsPanel extends P13nPanel {
     */
   def unbindColumnsItems(): P13nColumnsPanel = js.native
 }
-

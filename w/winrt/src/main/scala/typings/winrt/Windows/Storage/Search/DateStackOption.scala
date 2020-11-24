@@ -2,14 +2,14 @@ package typings.winrt.Windows.Storage.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DateStackOption extends js.Object
-
 @JSGlobal("Windows.Storage.Search.DateStackOption")
 @js.native
 object DateStackOption extends js.Object {
+  
   @js.native
   sealed trait month extends DateStackOption
   
@@ -18,6 +18,4 @@ object DateStackOption extends js.Object {
   
   @js.native
   sealed trait year extends DateStackOption
-  
 }
-

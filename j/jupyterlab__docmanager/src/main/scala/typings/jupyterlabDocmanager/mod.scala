@@ -5,11 +5,22 @@ import typings.jupyterlabServices.contentsMod.Contents.IModel
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/docmanager", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val IDocumentManager: Token[typings.jupyterlabDocmanager.tokensMod.IDocumentManager] = js.native
+  
+  def isValidFileName(name: String): Boolean = js.native
+  
+  def renameDialog(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String): js.Promise[IModel | Null] = js.native
+  
+  def renameFile(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String, newPath: String): js.Promise[IModel | Null] = js.native
+  
+  def shouldOverwrite(path: String): js.Promise[Boolean] = js.native
+  
   @js.native
   class DocumentManager protected ()
     extends typings.jupyterlabDocmanager.managerMod.DocumentManager {
@@ -36,6 +47,24 @@ object mod extends js.Object {
       */
     def this(opts: typings.jupyterlabDocmanager.pathstatusMod.PathStatus.IOptions) = this()
   }
+  @js.native
+  object PathStatus extends js.Object {
+    
+    /**
+      * A VDomModel for rendering the PathStatus status item.
+      */
+    @js.native
+    class Model protected ()
+      extends typings.jupyterlabDocmanager.pathstatusMod.PathStatus.Model {
+      /**
+        * Construct a new model.
+        *
+        * @param docManager: the application document manager. Used to check
+        *   whether the current widget is a document.
+        */
+      def this(docManager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager) = this()
+    }
+  }
   
   @js.native
   class SaveHandler protected ()
@@ -54,33 +83,9 @@ object mod extends js.Object {
       */
     def this(opts: typings.jupyterlabDocmanager.savingstatusMod.SavingStatus.IOptions) = this()
   }
-  
-  val IDocumentManager: Token[typings.jupyterlabDocmanager.tokensMod.IDocumentManager] = js.native
-  def isValidFileName(name: String): Boolean = js.native
-  def renameDialog(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String): js.Promise[IModel | Null] = js.native
-  def renameFile(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String, newPath: String): js.Promise[IModel | Null] = js.native
-  def shouldOverwrite(path: String): js.Promise[Boolean] = js.native
-  @js.native
-  object PathStatus extends js.Object {
-    /**
-      * A VDomModel for rendering the PathStatus status item.
-      */
-    @js.native
-    class Model protected ()
-      extends typings.jupyterlabDocmanager.pathstatusMod.PathStatus.Model {
-      /**
-        * Construct a new model.
-        *
-        * @param docManager: the application document manager. Used to check
-        *   whether the current widget is a document.
-        */
-      def this(docManager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager) = this()
-    }
-    
-  }
-  
   @js.native
   object SavingStatus extends js.Object {
+    
     /**
       * A VDomModel for the SavingStatus item.
       */
@@ -92,8 +97,5 @@ object mod extends js.Object {
         */
       def this(docManager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager) = this()
     }
-    
   }
-  
 }
-

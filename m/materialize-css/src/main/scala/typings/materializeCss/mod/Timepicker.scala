@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialTimepickerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("materialize-css", "Timepicker")
 @js.native
 class Timepicker ()
   extends typings.materializeCss.M.Timepicker
-
 /* static members */
 @JSImport("materialize-css", "Timepicker")
 @js.native
 object Timepicker extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.Timepicker = js.native
+  
   /**
     * Init Timepickers
     */
@@ -35,4 +36,3 @@ object Timepicker extends js.Object {
   def init(els: Element): typings.materializeCss.M.Timepicker = js.native
   def init(els: Element, options: PartialTimepickerOptions): typings.materializeCss.M.Timepicker = js.native
 }
-

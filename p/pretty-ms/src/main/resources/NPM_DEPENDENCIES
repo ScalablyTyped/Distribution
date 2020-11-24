@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pretty-ms" : "7.0.0"
+      "pretty-ms" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "pretty-ms" : "7.0.0"
+      "pretty-ms" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

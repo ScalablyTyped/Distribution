@@ -11,8 +11,8 @@ A function that accepts the full name of a person in any format, parses it, and 
 | Full name          | parse-full-name |
 | Keywords           | parse, parser, name, full name, first name, middle name, last name, nickname |
 | # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 449109 |
+| # dependents       | 9 |
+| # downloads        | 597483 |
 | # stars            | 4 |
 
 ## Links

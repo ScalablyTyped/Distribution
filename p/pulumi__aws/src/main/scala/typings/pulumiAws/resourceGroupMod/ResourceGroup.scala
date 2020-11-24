@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/inspector/resourceGroup", "ResourceGroup")
 @js.native
@@ -22,20 +22,22 @@ class ResourceGroup protected () extends CustomResource {
     */
   def this(name: String, args: ResourceGroupArgs) = this()
   def this(name: String, args: ResourceGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The resource group ARN.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Key-value map of tags that are used to select the EC2 instances to be included in an `Amazon Inspector assessment target` resource.
     */
   val tags: Output_[StringDictionary[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/inspector/resourceGroup", "ResourceGroup")
 @js.native
 object ResourceGroup extends js.Object {
+  
   /**
     * Get an existing ResourceGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -49,10 +51,10 @@ object ResourceGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceGroup = js.native
   def get(name: String, id: Input[ID], state: ResourceGroupState): ResourceGroup = js.native
   def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): ResourceGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of ResourceGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean = js.native
 }
-

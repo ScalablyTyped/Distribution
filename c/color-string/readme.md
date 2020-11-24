@@ -10,9 +10,9 @@ Parser and generator for CSS color strings
 | ------------------ | :-------------: |
 | Full name          | color-string |
 | Keywords           | color, colour, rgb, css |
-| # releases         | 2 |
-| # dependents       | 76 |
-| # downloads        | 275727205 |
+| # releases         | 1 |
+| # dependents       | 101 |
+| # downloads        | 394128761 |
 | # stars            | 3 |
 
 ## Links

@@ -3,12 +3,12 @@ package typings.winrt.Windows.Networking.Connectivity
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NetworkAdapter extends INetworkAdapter
-
 object NetworkAdapter {
+  
   @scala.inline
   def apply(
     getConnectedProfileAsync: () => IAsyncOperation[ConnectionProfile],
@@ -22,4 +22,3 @@ object NetworkAdapter {
     __obj.asInstanceOf[NetworkAdapter]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.phaser.global.spine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.Color")
 @js.native
@@ -29,17 +29,22 @@ class Color ()
   def this(r: Double, g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
 }
-
 /* static members */
 @JSGlobal("spine.Color")
 @js.native
 object Color extends js.Object {
+  
   var BLUE: typings.phaser.spine.Color = js.native
+  
   var GREEN: typings.phaser.spine.Color = js.native
+  
   var MAGENTA: typings.phaser.spine.Color = js.native
+  
   var RED: typings.phaser.spine.Color = js.native
+  
   var WHITE: typings.phaser.spine.Color = js.native
+  
   def rgb888ToColor(color: typings.phaser.spine.Color, value: Double): Unit = js.native
+  
   def rgba8888ToColor(color: typings.phaser.spine.Color, value: Double): Unit = js.native
 }
-

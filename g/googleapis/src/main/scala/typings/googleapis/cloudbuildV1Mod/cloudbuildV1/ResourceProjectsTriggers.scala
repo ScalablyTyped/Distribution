@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbuild/v1", "cloudbuild_v1.Resource$Projects$Triggers")
 @js.native
 class ResourceProjectsTriggers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudbuild.projects.triggers.create
     * @desc Creates a new `BuildTrigger`.  This API is experimental.
@@ -42,6 +44,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildTrigger]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.triggers.delete
     * @desc Deletes a `BuildTrigger` by its project ID and trigger ID.  This
@@ -72,6 +75,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.triggers.get
     * @desc Returns information about a `BuildTrigger`.  This API is
@@ -102,6 +106,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildTrigger]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.triggers.list
     * @desc Lists existing `BuildTrigger`s.  This API is experimental.
@@ -135,6 +140,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListBuildTriggersResponse]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.triggers.patch
     * @desc Updates a `BuildTrigger` by its project ID and trigger ID.  This
@@ -166,6 +172,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildTrigger]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.triggers.run
     * @desc Runs a `BuildTrigger` at a particular source revision.
@@ -197,4 +204,3 @@ class ResourceProjectsTriggers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

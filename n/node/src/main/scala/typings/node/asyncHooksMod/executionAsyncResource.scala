@@ -2,11 +2,12 @@ package typings.node.asyncHooksMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async_hooks", "executionAsyncResource")
 @js.native
 object executionAsyncResource extends js.Object {
+  
   /**
     * The resource representing the current execution.
     *  Useful to store data within the resource.
@@ -21,4 +22,3 @@ object executionAsyncResource extends js.Object {
     */
   def apply(): js.Object = js.native
 }
-

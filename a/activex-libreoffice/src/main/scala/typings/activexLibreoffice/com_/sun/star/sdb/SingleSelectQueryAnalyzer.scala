@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XTablesSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a service for analyzing a single select statement.
@@ -24,8 +24,8 @@ trait SingleSelectQueryAnalyzer
      with XTablesSupplier
      with XColumnsSupplier
      with XParametersSupplier
-
 object SingleSelectQueryAnalyzer {
+  
   @scala.inline
   def apply(
     Columns: XNameAccess,
@@ -64,4 +64,3 @@ object SingleSelectQueryAnalyzer {
     __obj.asInstanceOf[SingleSelectQueryAnalyzer]
   }
 }
-

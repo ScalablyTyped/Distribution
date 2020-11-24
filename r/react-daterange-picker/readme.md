@@ -10,9 +10,9 @@ A React based date range picker
 | ------------------ | :-------------: |
 | Full name          | react-daterange-picker |
 | Keywords           | react, datepicker, calendar, date, range, react-component |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 286929 |
+| # downloads        | 448356 |
 | # stars            | 1 |
 
 ## Links

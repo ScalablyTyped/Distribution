@@ -10,9 +10,9 @@ A complex number library
 | ------------------ | :-------------: |
 | Full name          | complex.js |
 | Keywords           | complex numbers, math, complex, number, calculus, parser, arithmetic |
-| # releases         | 7 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 6470068 |
+| # downloads        | 9313057 |
 | # stars            | 4 |
 
 ## Links

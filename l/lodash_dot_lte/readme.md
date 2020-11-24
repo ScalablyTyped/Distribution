@@ -11,8 +11,8 @@ The lodash method `_.lte` exported as a module.
 | Full name          | lodash.lte |
 | Keywords           | lodash-modularized, lte |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1548 |
+| # dependents       | 4 |
+| # downloads        | 3034 |
 | # stars            | 0 |
 
 ## Links

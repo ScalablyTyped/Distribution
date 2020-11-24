@@ -119,17 +119,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojValidationGroup extends JetElement[ojValidationGroupSettableProperties] {
-  var onValidChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
-    ], 
-    _
-  ]) | Null = js.native
-  val valid: typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown = js.native
+  
   def addEventListener(
     `type`: validChanged,
     listener: js.ThisFunction1[
@@ -926,13 +920,24 @@ trait ojValidationGroup extends JetElement[ojValidationGroupSettableProperties] 
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def focusOn(): Unit = js.native
   @JSName("focusOn")
   def focusOn_firstInvalidShown(key: `@firstInvalidShown`): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_valid(property: typings.oracleOraclejet.oracleOraclejetStrings.valid): typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown = js.native
+  
+  var onValidChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
+    ], 
+    _
+  ]) | Null = js.native
+  
   def setProperties(properties: ojValidationGroupSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: typings.oracleOraclejet.oracleOraclejetStrings.valid, value: invalidHidden): Unit = js.native
   def setProperty(property: typings.oracleOraclejet.oracleOraclejetStrings.valid, value: invalidShown): Unit = js.native
   def setProperty(property: typings.oracleOraclejet.oracleOraclejetStrings.valid, value: pending): Unit = js.native
@@ -942,6 +947,8 @@ trait ojValidationGroup extends JetElement[ojValidationGroupSettableProperties] 
     property: typings.oracleOraclejet.oracleOraclejetStrings.valid,
     value: typings.oracleOraclejet.oracleOraclejetStrings.valid
   ): Unit = js.native
+  
   def showMessages(): Unit = js.native
+  
+  val valid: typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown = js.native
 }
-

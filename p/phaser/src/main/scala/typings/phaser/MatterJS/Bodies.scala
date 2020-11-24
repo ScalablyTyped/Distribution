@@ -2,7 +2,7 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Bodies` module contains factory methods for creating rigid body models
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Bodies extends js.Object
-

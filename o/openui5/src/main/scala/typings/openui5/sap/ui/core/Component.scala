@@ -4,28 +4,32 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.ManagedObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Component extends ManagedObject {
+  
   /**
     * Cleans up the Component instance before destruction.Applications must not call this hook method
     * directly, it is called by theframework when the element is {@link #destroy destroyed}.Subclasses of
     * Component should override this hook to implement any necessarycleanup.
     */
   def exit(): Unit = js.native
+  
   /**
     * Returns user specific data object
     * @since 1.15.0
     * @returns componentData
     */
   def getComponentData(): js.Any = js.native
+  
   /**
     * Returns the event bus of this component.
     * @since 1.20.0
     * @returns the event bus
     */
   def getEventBus(): EventBus = js.native
+  
   /**
     * Returns the manifest defined in the metadata of the component.If not specified, the return value is
     * null.
@@ -33,6 +37,7 @@ trait Component extends ManagedObject {
     * @returns manifest.
     */
   def getManifest(): js.Any = js.native
+  
   /**
     * Returns the configuration of a manifest section or the value for aspecific path. If no section or
     * key is specified, the return value is null.Example:<code>  {    "sap.ui5": {      "dependencies": { 
@@ -48,12 +53,14 @@ trait Component extends ManagedObject {
     * @returns Value of the manifest section or the key (could be any kind of value)
     */
   def getManifestEntry(sKey: String): js.Any = js.native
+  
   /**
     * Returns the manifest object.
     * @since 1.33.0
     * @returns manifest.
     */
   def getManifestObject(): Manifest = js.native
+  
   /**
     * Returns the Component instance in whose "context" the given ManagedObject has been createdor
     * <code>undefined</code>.This is a convenience wrapper around {@link
@@ -65,6 +72,7 @@ trait Component extends ManagedObject {
     * @returns the owner Component or <code>undefined</code>.
     */
   def getOwnerComponentFor(oObject: ManagedObject): Component = js.native
+  
   /**
     * Returns the ID of the object in whose "context" the given ManagedObject has been created.For objects
     * that are not ManagedObjects or for which the owner is unknown,<code>undefined</code> will be
@@ -88,6 +96,7 @@ trait Component extends ManagedObject {
     * @returns ID of the owner or <code>undefined</code>
     */
   def getOwnerIdFor(oObject: ManagedObject): String = js.native
+  
   /**
     * Returns a service interface for the {@link sap.ui.core.service.Service Service}declared in the
     * descriptor for components (manifest.json). The declaration needsto be done in the
@@ -116,12 +125,14 @@ trait Component extends ManagedObject {
     * @returns Promise which will be resolved with the Service interface
     */
   def getService(sLocalServiceAlias: String): JQueryPromise[_] = js.native
+  
   /**
     * Initializes the Component instance after creation.Applications must not call this hook method
     * directly, it is called by theframework while the constructor of an Component is executed.Subclasses
     * of Component should override this hook to implement any necessaryinitialization.
     */
   def init(): Unit = js.native
+  
   /**
     * The hook which gets called when the static configuration of the componenthas been changed by some
     * configuration extension.
@@ -129,6 +140,7 @@ trait Component extends ManagedObject {
     * @param sConfigKey Error message.
     */
   def onConfigChange(sConfigKey: String): Unit = js.native
+  
   /**
     * The window before unload hook. Override this method in your Component classimplementation, to handle
     * cleanup before the real unload or to prompt a questionto the user, if the component should be
@@ -138,6 +150,7 @@ trait Component extends ManagedObject {
     * Component (e.g. when the Component is not yet saved).
     */
   def onWindowBeforeUnload(): String = js.native
+  
   /**
     * The window error hook. Override this method in your Component class implementationto listen to
     * unhandled errors.
@@ -147,12 +160,14 @@ trait Component extends ManagedObject {
     * @param iLine Line number of the error
     */
   def onWindowError(sMessage: String, sFile: String, iLine: Double): Unit = js.native
+  
   /**
     * The window unload hook. Override this method in your Component classimplementation, to handle
     * cleanup of the component once the windowwill be unloaded (e.g. closed).
     * @since 1.15.1
     */
   def onWindowUnload(): Unit = js.native
+  
   /**
     * Calls the function <code>fn</code> once and marks all ManagedObjectscreated during that call as
     * "owned" by this Component.Nested calls of this method are supported (e.g. inside a newly
@@ -164,4 +179,3 @@ trait Component extends ManagedObject {
     */
   def runAsOwner(fn: js.Any): js.Any = js.native
 }
-

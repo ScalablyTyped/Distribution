@@ -3,11 +3,12 @@ package typings.tstl
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/thread/Latch", JSImport.Namespace)
 @js.native
 object latchMod extends js.Object {
+  
   @js.native
   class Latch protected () extends js.Object {
     /**
@@ -16,9 +17,9 @@ object latchMod extends js.Object {
       * @param size Size of the downward counter.
       */
     def this(size: Double) = this()
+    
     var _Try_wait: js.Any = js.native
-    var count_ : js.Any = js.native
-    var cv_ : js.Any = js.native
+    
     /**
       * Decrements the counter and waits until the counter to be zero.
       *
@@ -32,6 +33,9 @@ object latchMod extends js.Object {
       */
     def arrive_and_wait(): js.Promise[Unit] = js.native
     def arrive_and_wait(n: Double): js.Promise[Unit] = js.native
+    
+    var count_ : js.Any = js.native
+    
     /**
       * Derecements the counter.
       *
@@ -45,6 +49,9 @@ object latchMod extends js.Object {
       */
     def count_down(): js.Promise[Unit] = js.native
     def count_down(n: Double): js.Promise[Unit] = js.native
+    
+    var cv_ : js.Any = js.native
+    
     /**
       * Test whether the counter has been reached to the zero.
       *
@@ -54,6 +61,7 @@ object latchMod extends js.Object {
       * @return Whether reached to zero or not.
       */
     def try_wait(): js.Promise[Boolean] = js.native
+    
     /**
       * Tries to wait until the counter to be zero in timeout.
       *
@@ -68,6 +76,7 @@ object latchMod extends js.Object {
       * @return Whether succeeded to waiting in the given time.
       */
     def wait_for(ms: Double): js.Promise[Boolean] = js.native
+    
     /**
       * Tries to wait until the counter to be zero in time expiration.
       *
@@ -83,6 +92,4 @@ object latchMod extends js.Object {
       */
     def wait_until(at: Date): js.Promise[Boolean] = js.native
   }
-  
 }
-

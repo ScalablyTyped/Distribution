@@ -2,10 +2,11 @@ package typings.reactSideEffect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WithSideEffect extends js.Object {
+  
   def apply[TProp, TState](
     reducePropsToState: js.Function1[/* propsList */ js.Array[TProp], TState],
     handleStateChangeOnClient: js.Function1[/* state */ TState, Unit]
@@ -16,4 +17,3 @@ trait WithSideEffect extends js.Object {
     mapStateOnServer: js.Function1[/* state */ TState, TServerState]
   ): typings.std.ClassDecorator = js.native
 }
-

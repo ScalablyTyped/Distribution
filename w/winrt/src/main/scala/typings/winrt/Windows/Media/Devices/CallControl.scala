@@ -2,12 +2,12 @@ package typings.winrt.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CallControl extends ICallControl
-
 object CallControl {
+  
   @scala.inline
   def apply(
     endCall: Double => Unit,
@@ -26,4 +26,3 @@ object CallControl {
     __obj.asInstanceOf[CallControl]
   }
 }
-

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.HTML
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SandboxMode extends js.Object
-
 /**
   * An enum representing the sandbox modes that can be used for client-side HtmlService
   * scripts. These values can be accessed from HtmlService.SandboxMode, and set by calling
@@ -35,6 +34,7 @@ sealed trait SandboxMode extends js.Object
 @JSGlobal("GoogleAppsScript.HTML.SandboxMode")
 @js.native
 object SandboxMode extends js.Object {
+  
   @js.native
   sealed trait EMULATED extends SandboxMode
   
@@ -43,6 +43,4 @@ object SandboxMode extends js.Object {
   
   @js.native
   sealed trait NATIVE extends SandboxMode
-  
 }
-

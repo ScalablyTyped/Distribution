@@ -3,7 +3,7 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.rawlist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options for a question for the `RawListPrompt`.
@@ -13,34 +13,38 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RawListQuestion[T /* <: Answers */] extends ListQuestionOptions[T] {
+  
   /**
     * @inheritdoc
     */
   @JSName("type")
   var type_RawListQuestion: rawlist = js.native
 }
-
 object RawListQuestion {
+  
   @scala.inline
-  def apply[/* <: typings.inquirer.mod.Answers */ T](`type`: rawlist): RawListQuestion[T] = {
+  def apply[T /* <: Answers */](`type`: rawlist): RawListQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawListQuestion[T]]
   }
+  
   @scala.inline
-  implicit class RawListQuestionOps[Self <: RawListQuestion[_], /* <: typings.inquirer.mod.Answers */ T] (val x: Self with RawListQuestion[T]) extends AnyVal {
+  implicit class RawListQuestionOps[Self <: RawListQuestion[_], T /* <: Answers */] (val x: Self with RawListQuestion[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setType(value: rawlist): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

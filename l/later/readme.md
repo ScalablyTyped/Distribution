@@ -10,9 +10,9 @@ Determine later (or previous) occurrences of recurring schedules
 | ------------------ | :-------------: |
 | Full name          | later |
 | Keywords           | schedule, occurrences, recur, cron |
-| # releases         | 1 |
-| # dependents       | 107 |
-| # downloads        | 1222747 |
+| # releases         | 0 |
+| # dependents       | 112 |
+| # downloads        | 1750148 |
 | # stars            | 20 |
 
 ## Links

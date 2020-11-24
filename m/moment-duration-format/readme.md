@@ -3,24 +3,6 @@
 
 Typings are for version 2.2
 
-## Library description:
-A moment.js plugin for formatting durations.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | moment-duration-format |
-| Keywords           | moment, duration, format |
-| # releases         | 7 |
-| # dependents       | 219 |
-| # downloads        | 8047590 |
-| # stars            | 6 |
-
-## Links
-- [Homepage](https://github.com/jsmreese/moment-duration-format)
-- [Bugs](https://github.com/jsmreese/moment-duration-format/issues)
-- [Repository](https://github.com/jsmreese/moment-duration-format)
-- [Npm](https://www.npmjs.com/package/moment-duration-format)
-    
 
 
 ## Note

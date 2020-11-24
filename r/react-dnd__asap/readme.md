@@ -12,7 +12,7 @@ High-priority task queue for Node.js and browsers
 | Keywords           | event, task, queue |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 2804100 |
+| # downloads        | 3941333 |
 | # stars            | 0 |
 
 ## Links

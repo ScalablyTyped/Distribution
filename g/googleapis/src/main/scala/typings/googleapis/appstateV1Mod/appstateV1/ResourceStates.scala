@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appstate/v1", "appstate_v1.Resource$States")
 @js.native
 class ResourceStates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * appstate.states.clear
     * @desc Clears (sets to empty) the data for the passed key if and only if
@@ -44,6 +44,9 @@ class ResourceStates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWriteResult]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * appstate.states.delete
     * @desc Deletes a key and the data associated with it. The key is removed
@@ -72,6 +75,7 @@ class ResourceStates protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceStatesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStatesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * appstate.states.get
     * @desc Retrieves the data corresponding to the passed key. If the key does
@@ -101,6 +105,7 @@ class ResourceStates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetResponse]
   ): Unit = js.native
+  
   /**
     * appstate.states.list
     * @desc Lists all the states keys, and optionally the state data.
@@ -129,6 +134,7 @@ class ResourceStates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListResponse]
   ): Unit = js.native
+  
   /**
     * appstate.states.update
     * @desc Update the data associated with the input key if and only if the
@@ -162,4 +168,3 @@ class ResourceStates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWriteResult]
   ): Unit = js.native
 }
-

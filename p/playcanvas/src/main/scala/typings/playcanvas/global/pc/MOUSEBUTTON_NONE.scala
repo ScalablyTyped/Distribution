@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * No mouse buttons pressed.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.MOUSEBUTTON_NONE")
 @js.native
 object MOUSEBUTTON_NONE extends TopLevel[Double]
-

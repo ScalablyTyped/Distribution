@@ -2,11 +2,12 @@ package typings.inAppPurchase.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("in-app-purchase", "validate")
 @js.native
 object validate extends js.Object {
+  
   def apply(receipt: Receipt): js.Promise[ValidationResponse] = js.native
   def apply(receipt: Receipt, callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]): Unit = js.native
   def apply(
@@ -15,4 +16,3 @@ object validate extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
   ): Unit = js.native
 }
-

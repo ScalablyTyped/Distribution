@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Externalvpngateways")
 @js.native
 class ResourceExternalvpngateways protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.externalVpnGateways.delete
     * @desc Deletes the specified externalVpnGateway.
@@ -43,6 +45,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.externalVpnGateways.get
     * @desc Returns the specified externalVpnGateway. Get a list of available
@@ -76,6 +79,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExternalVpnGateway]
   ): Unit = js.native
+  
   /**
     * compute.externalVpnGateways.insert
     * @desc Creates a ExternalVpnGateway in the specified project using the
@@ -107,6 +111,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.externalVpnGateways.list
     * @desc Retrieves the list of ExternalVpnGateway available to the specified
@@ -143,6 +148,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExternalVpnGatewayList]
   ): Unit = js.native
+  
   /**
     * compute.externalVpnGateways.setLabels
     * @desc Sets the labels on an ExternalVpnGateway. To learn more about
@@ -177,6 +183,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.externalVpnGateways.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -211,4 +218,3 @@ class ResourceExternalvpngateways protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

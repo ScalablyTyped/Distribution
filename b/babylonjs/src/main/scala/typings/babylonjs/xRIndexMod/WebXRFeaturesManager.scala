@@ -4,7 +4,7 @@ import typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature
 import typings.babylonjs.webXRFeaturesManagerMod.WebXRFeatureConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRFeaturesManager")
 @js.native
@@ -17,12 +17,11 @@ class WebXRFeaturesManager protected ()
     */
   def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/XR/index", "WebXRFeaturesManager")
 @js.native
 object WebXRFeaturesManager extends js.Object {
-  val _AvailableFeatures: js.Any = js.native
+  
   /**
     * Used to register a module. After calling this function a developer can use this feature in the scene.
     * Mainly used internally.
@@ -33,6 +32,12 @@ object WebXRFeaturesManager extends js.Object {
     * @param stable is that a stable version of this module
     */
   def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor): Unit = js.native
+  def AddWebXRFeature(
+    featureName: String,
+    constructorFunction: WebXRFeatureConstructor,
+    version: js.UndefOr[scala.Nothing],
+    stable: Boolean
+  ): Unit = js.native
   def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Double): Unit = js.native
   def AddWebXRFeature(
     featureName: String,
@@ -40,6 +45,18 @@ object WebXRFeaturesManager extends js.Object {
     version: Double,
     stable: Boolean
   ): Unit = js.native
+  
+  def ConstructFeature(
+    featureName: String,
+    version: js.UndefOr[scala.Nothing],
+    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+  ): js.Function0[IWebXRFeature] = js.native
+  def ConstructFeature(
+    featureName: String,
+    version: js.UndefOr[scala.Nothing],
+    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    options: js.Any
+  ): js.Function0[IWebXRFeature] = js.native
   /**
     * Returns a constructor of a specific feature.
     *
@@ -51,38 +68,43 @@ object WebXRFeaturesManager extends js.Object {
     */
   def ConstructFeature(
     featureName: String,
-    version: js.UndefOr[Double],
+    version: Double,
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
   ): js.Function0[IWebXRFeature] = js.native
   def ConstructFeature(
     featureName: String,
-    version: js.UndefOr[Double],
+    version: Double,
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
     options: js.Any
   ): js.Function0[IWebXRFeature] = js.native
+  
   /**
     * Can be used to return the list of features currently registered
     *
     * @returns an Array of available features
     */
   def GetAvailableFeatures(): js.Array[String] = js.native
+  
   /**
     * Gets the versions available for a specific feature
     * @param featureName the name of the feature
     * @returns an array with the available versions
     */
   def GetAvailableVersions(featureName: String): js.Array[String] = js.native
+  
   /**
     * Return the latest unstable version of this feature
     * @param featureName the name of the feature to search
     * @returns the version number. if not found will return -1
     */
   def GetLatestVersionOfFeature(featureName: String): Double = js.native
+  
   /**
     * Return the latest stable version of this feature
     * @param featureName the name of the feature to search
     * @returns the version number. if not found will return -1
     */
   def GetStableVersionOfFeature(featureName: String): Double = js.native
+  
+  val _AvailableFeatures: js.Any = js.native
 }
-

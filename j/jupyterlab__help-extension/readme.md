@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__help-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Help Extension
@@ -10,9 +10,9 @@ JupyterLab - Help Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/help-extension |
 | Keywords           | - |
-| # releases         | 64 |
+| # releases         | 114 |
 | # dependents       | 2 |
-| # downloads        | 751152 |
+| # downloads        | 1350972 |
 | # stars            | 0 |
 
 ## Links

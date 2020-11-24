@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides information about a dynamic element that can be inserted into a homogeneous set of elements within a hierarchy.
@@ -56,8 +56,8 @@ trait SetElement
      with XChild
      with XComponent
      with XTemplateInstance
-
 object SetElement {
+  
   @scala.inline
   def apply(
     AsProperty: Property,
@@ -89,4 +89,3 @@ object SetElement {
     __obj.asInstanceOf[SetElement]
   }
 }
-

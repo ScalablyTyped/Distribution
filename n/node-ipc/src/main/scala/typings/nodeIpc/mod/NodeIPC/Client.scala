@@ -10,16 +10,19 @@ import typings.nodeIpc.nodeIpcStrings.error
 import typings.nodeIpc.nodeIpcStrings.socketDotdisconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Client extends js.Object {
+  
   def emit(event: String): Client = js.native
   def emit(event: String, value: js.Any): Client = js.native
+  
   /**
     * Unbind subscribed events
     */
   def off(event: String, handler: js.Any): Client = js.native
+  
   /**
     * triggered when a JSON message is received. The event name will be the type string from your message
     * and the param will be the data object from your message eg : { type:'myEvent',data:{a:1}}
@@ -55,4 +58,3 @@ trait Client extends js.Object {
     callback: js.Function2[/* socket */ Socket, /* destroyedSocketID */ String, Unit]
   ): Client = js.native
 }
-

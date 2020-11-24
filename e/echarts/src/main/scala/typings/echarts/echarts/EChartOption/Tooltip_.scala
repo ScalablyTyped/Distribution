@@ -9,10 +9,11 @@ import typings.echarts.echartsStrings.mousemoveVerticallineclick
 import typings.echarts.echartsStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tooltip_ extends BaseTooltip {
+  
   /**
     * Whether to show tooltip content all the time.
     * By default, it will be hidden after `tooltip.hideDelay`.
@@ -22,6 +23,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default false
     */
   var alwaysShowContent: js.UndefOr[Boolean] = js.native
+  
   /**
     * `axisPointer` is a tool for displaying reference line
     * and axis value under mouse pointer.
@@ -40,6 +42,7 @@ trait Tooltip_ extends BaseTooltip {
     * @see https://echarts.apache.org/en/option.html#tooltip.axisPointer
     */
   var axisPointer: js.UndefOr[typings.echarts.echarts.EChartOption.Tooltip.AxisPointer] = js.native
+  
   /**
     * Whether confine tooltip content in the view rect
     * of chart instance.
@@ -50,6 +53,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default false
     */
   var confine: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether mouse is allowed to enter the floating layer
     * of tooltip, whose default value is false.
@@ -59,6 +63,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default true
     */
   var enterable: js.UndefOr[Boolean] = js.native
+  
   /**
     * Delay time for hiding tooltip, in ms.
     * It will be invalid when `alwaysShowContent` is `true`.
@@ -66,6 +71,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default 100
     */
   var hideDelay: js.UndefOr[Double] = js.native
+  
   /**
     * Render mode for tooltip.
     * By default, it is set to be `'html'` so that extra DOM element
@@ -79,6 +85,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default 'html'
     */
   var renderMode: js.UndefOr[html] = js.native
+  
   /**
     * Whether to show the tooltip component,
     * including tooltip floating layer and `axisPointer`.
@@ -86,6 +93,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default true
     */
   var show: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether to show the tooltip floating layer,
     * whose default value is true.
@@ -96,6 +104,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default true
     */
   var showContent: js.UndefOr[Boolean] = js.native
+  
   /**
     * Delay time for showing tooltip, in ms.
     * No delay by default, and it is not recommended to set.
@@ -104,6 +113,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default 0
     */
   var showDelay: js.UndefOr[Double] = js.native
+  
   /**
     * The transition duration of tooltip's animation, in seconds.
     * When it is set to be 0, it would move closely with the mouse.
@@ -111,6 +121,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default 0.4
     */
   var transitionDuration: js.UndefOr[Double] = js.native
+  
   /**
     * Type of triggering.
     * Options:
@@ -128,6 +139,7 @@ trait Tooltip_ extends BaseTooltip {
     * @default 'item'
     */
   var trigger: js.UndefOr[item | axis | none] = js.native
+  
   /**
     * Conditions to trigger tooltip.
     * Options:
@@ -145,73 +157,99 @@ trait Tooltip_ extends BaseTooltip {
     */
   var triggerOn: js.UndefOr[mousemove | click | mousemoveVerticallineclick | none] = js.native
 }
-
 object Tooltip_ {
+  
   @scala.inline
   def apply(): Tooltip_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tooltip_]
   }
+  
   @scala.inline
   implicit class Tooltip_Ops[Self <: Tooltip_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlwaysShowContent(value: Boolean): Self = this.set("alwaysShowContent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlwaysShowContent: Self = this.set("alwaysShowContent", js.undefined)
+    
     @scala.inline
     def setAxisPointer(value: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer): Self = this.set("axisPointer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAxisPointer: Self = this.set("axisPointer", js.undefined)
+    
     @scala.inline
     def setConfine(value: Boolean): Self = this.set("confine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConfine: Self = this.set("confine", js.undefined)
+    
     @scala.inline
     def setEnterable(value: Boolean): Self = this.set("enterable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnterable: Self = this.set("enterable", js.undefined)
+    
     @scala.inline
     def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    
     @scala.inline
     def setRenderMode(value: html): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRenderMode: Self = this.set("renderMode", js.undefined)
+    
     @scala.inline
     def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShow: Self = this.set("show", js.undefined)
+    
     @scala.inline
     def setShowContent(value: Boolean): Self = this.set("showContent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowContent: Self = this.set("showContent", js.undefined)
+    
     @scala.inline
     def setShowDelay(value: Double): Self = this.set("showDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowDelay: Self = this.set("showDelay", js.undefined)
+    
     @scala.inline
     def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    
     @scala.inline
     def setTrigger(value: item | axis | none): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTrigger: Self = this.set("trigger", js.undefined)
+    
     @scala.inline
     def setTriggerOn(value: mousemove | click | mousemoveVerticallineclick | none): Self = this.set("triggerOn", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTriggerOn: Self = this.set("triggerOn", js.undefined)
   }
-  
 }
-

@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActionSheet extends Control {
+  
   /**
     * Adds some button to the aggregation <code>buttons</code>.
     * @param oButton the button to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addButton(oButton: Button): ActionSheet = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterClose</code> event of this
     * <code>sap.m.ActionSheet</code>.When called, the context of the event handler (its <code>this</code>)
@@ -27,6 +29,7 @@ trait ActionSheet extends Control {
     */
   def attachAfterClose(oData: js.Any, fnFunction: js.Any): ActionSheet = js.native
   def attachAfterClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterOpen</code> event of this
     * <code>sap.m.ActionSheet</code>.When called, the context of the event handler (its <code>this</code>)
@@ -41,6 +44,7 @@ trait ActionSheet extends Control {
     */
   def attachAfterOpen(oData: js.Any, fnFunction: js.Any): ActionSheet = js.native
   def attachAfterOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeClose</code> event of this
     * <code>sap.m.ActionSheet</code>.When called, the context of the event handler (its <code>this</code>)
@@ -55,6 +59,7 @@ trait ActionSheet extends Control {
     */
   def attachBeforeClose(oData: js.Any, fnFunction: js.Any): ActionSheet = js.native
   def attachBeforeClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeOpen</code> event of this
     * <code>sap.m.ActionSheet</code>.When called, the context of the event handler (its <code>this</code>)
@@ -69,6 +74,7 @@ trait ActionSheet extends Control {
     */
   def attachBeforeOpen(oData: js.Any, fnFunction: js.Any): ActionSheet = js.native
   def attachBeforeOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancelButtonPress</code> event of this
     * <code>sap.m.ActionSheet</code>.When called, the context of the event handler (its <code>this</code>)
@@ -85,6 +91,7 @@ trait ActionSheet extends Control {
     */
   def attachCancelButtonPress(oData: js.Any, fnFunction: js.Any): ActionSheet = js.native
   def attachCancelButtonPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancelButtonTap</code> event of this
     * <code>sap.m.ActionSheet</code>.When called, the context of the event handler (its <code>this</code>)
@@ -101,15 +108,18 @@ trait ActionSheet extends Control {
     */
   def attachCancelButtonTap(oData: js.Any, fnFunction: js.Any): ActionSheet = js.native
   def attachCancelButtonTap(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Calling this method will make the ActionSheet disappear from the screen.
     */
   def close(): Unit = js.native
+  
   /**
     * Destroys all the buttons in the aggregation <code>buttons</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyButtons(): ActionSheet = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterClose</code> event of this
     * <code>sap.m.ActionSheet</code>.The passed function and listener object must match the ones used for
@@ -119,6 +129,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterClose(fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterOpen</code> event of this
     * <code>sap.m.ActionSheet</code>.The passed function and listener object must match the ones used for
@@ -128,6 +139,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterOpen(fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeClose</code> event of this
     * <code>sap.m.ActionSheet</code>.The passed function and listener object must match the ones used for
@@ -137,6 +149,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeClose(fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeOpen</code> event of this
     * <code>sap.m.ActionSheet</code>.The passed function and listener object must match the ones used for
@@ -146,6 +159,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeOpen(fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancelButtonPress</code> event of this
     * <code>sap.m.ActionSheet</code>.The passed function and listener object must match the ones used for
@@ -155,6 +169,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachCancelButtonPress(fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancelButtonTap</code> event of this
     * <code>sap.m.ActionSheet</code>.The passed function and listener object must match the ones used for
@@ -164,48 +179,56 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachCancelButtonTap(fnFunction: js.Any, oListener: js.Any): ActionSheet = js.native
+  
   /**
     * Fires event <code>afterClose</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterClose(mArguments: js.Any): ActionSheet = js.native
+  
   /**
     * Fires event <code>afterOpen</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterOpen(mArguments: js.Any): ActionSheet = js.native
+  
   /**
     * Fires event <code>beforeClose</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeClose(mArguments: js.Any): ActionSheet = js.native
+  
   /**
     * Fires event <code>beforeOpen</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeOpen(mArguments: js.Any): ActionSheet = js.native
+  
   /**
     * Fires event <code>cancelButtonPress</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireCancelButtonPress(mArguments: js.Any): ActionSheet = js.native
+  
   /**
     * Fires event <code>cancelButtonTap</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireCancelButtonTap(mArguments: js.Any): ActionSheet = js.native
+  
   /**
     * Gets content of aggregation <code>buttons</code>.These buttons are added to the content area in
     * ActionSheet control. When button is tapped, the ActionSheet is closed before the tap event listener
     * is called.
     */
   def getButtons(): js.Array[Button] = js.native
+  
   /**
     * Gets current value of property <code>cancelButtonText</code>.This is the text displayed in the
     * cancelButton. Default value is "Cancel", and it's translated according to the current locale
@@ -214,6 +237,7 @@ trait ActionSheet extends Control {
     * @returns Value of property <code>cancelButtonText</code>
     */
   def getCancelButtonText(): String = js.native
+  
   /**
     * Gets current value of property <code>placement</code>.The ActionSheet behaves as a sap.m.Popover in
     * iPad and this property is the information about on which side will the popover be placed at.
@@ -226,6 +250,7 @@ trait ActionSheet extends Control {
     * @returns Value of property <code>placement</code>
     */
   def getPlacement(): PlacementType = js.native
+  
   /**
     * Gets current value of property <code>showCancelButton</code>.If this is set to true, there will be a
     * cancel button shown below the action buttons. There won't be any cancel button shown in iPad
@@ -233,12 +258,14 @@ trait ActionSheet extends Control {
     * @returns Value of property <code>showCancelButton</code>
     */
   def getShowCancelButton(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Title will be shown in the header area in iPhone
     * and every Android devices. This property will be ignored in tablets and desktop browser.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Button</code> in the aggregation <code>buttons</code>.and
     * returns its index if found or -1 otherwise.
@@ -246,6 +273,7 @@ trait ActionSheet extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfButton(oButton: Button): Double = js.native
+  
   /**
     * Inserts a button into the aggregation <code>buttons</code>.
     * @param oButton the button to insert; if empty, nothing is inserted
@@ -256,11 +284,13 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertButton(oButton: Button, iIndex: Double): ActionSheet = js.native
+  
   /**
     * The method checks if the ActionSheet is open. It returns true when the ActionSheet is currently open
     * (this includes opening and closing animations), otherwise it returns false.
     */
   def isOpen(): Boolean = js.native
+  
   /**
     * Calling this method will make the ActionSheet visible on the screen.
     * @param oControl The ActionSheet behaves as a sap.m.Popover in iPad and the control parameter is the
@@ -270,12 +300,14 @@ trait ActionSheet extends Control {
     * dialog is aligned to the screen.
     */
   def openBy(oControl: js.Any): Unit = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>buttons</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllButtons(): js.Array[Button] = js.native
+  
   def removeButton(vButton: String): Button = js.native
   /**
     * Removes a button from the aggregation <code>buttons</code>.
@@ -284,6 +316,7 @@ trait ActionSheet extends Control {
     */
   def removeButton(vButton: Double): Button = js.native
   def removeButton(vButton: Button): Button = js.native
+  
   /**
     * Sets a new value for property <code>cancelButtonText</code>.This is the text displayed in the
     * cancelButton. Default value is "Cancel", and it's translated according to the current locale
@@ -294,6 +327,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCancelButtonText(sCancelButtonText: String): ActionSheet = js.native
+  
   /**
     * Sets a new value for property <code>placement</code>.The ActionSheet behaves as a sap.m.Popover in
     * iPad and this property is the information about on which side will the popover be placed at.
@@ -308,6 +342,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPlacement(sPlacement: PlacementType): ActionSheet = js.native
+  
   /**
     * Sets a new value for property <code>showCancelButton</code>.If this is set to true, there will be a
     * cancel button shown below the action buttons. There won't be any cancel button shown in iPad
@@ -318,6 +353,7 @@ trait ActionSheet extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowCancelButton(bShowCancelButton: Boolean): ActionSheet = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Title will be shown in the header area in iPhone
     * and every Android devices. This property will be ignored in tablets and desktop browser.When called
@@ -328,4 +364,3 @@ trait ActionSheet extends Control {
     */
   def setTitle(sTitle: String): ActionSheet = js.native
 }
-

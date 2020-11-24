@@ -2,7 +2,7 @@ package typings.rxjs.rxMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @typedef {Object} Rx.Symbol
@@ -20,8 +20,10 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/Rx", "Symbol")
 @js.native
 object Symbol extends js.Object {
+  
   var iterator: js.Symbol = js.native
+  
   var observable: String | js.Symbol = js.native
+  
   var rxSubscriber: String | js.Symbol = js.native
 }
-

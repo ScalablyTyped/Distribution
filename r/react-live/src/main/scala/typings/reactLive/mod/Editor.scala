@@ -6,7 +6,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-live", "Editor")
 @js.native
@@ -15,8 +15,6 @@ class Editor protected ()
   def this(props: EditorProps) = this()
   def this(props: EditorProps, context: js.Any) = this()
 }
-
 @JSImport("react-live", "Editor")
 @js.native
 object Editor extends TopLevel[ComponentClass[EditorProps, ComponentState]]
-

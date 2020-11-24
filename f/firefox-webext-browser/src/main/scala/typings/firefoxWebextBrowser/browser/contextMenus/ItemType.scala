@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.browser.contextMenus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The type of menu item. */
 /* Rewritten from type alias, can be one of: 
@@ -12,15 +12,17 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator
 */
 trait ItemType extends js.Object
-
 object ItemType {
+  
   @scala.inline
   def checkbox: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox = "checkbox".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox]
+  
   @scala.inline
   def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+  
   @scala.inline
   def radio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio = "radio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio]
+  
   @scala.inline
   def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = "separator".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator]
 }
-

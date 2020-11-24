@@ -8,7 +8,7 @@ import typings.openlayers.mod.ModifyEventType
 import typings.openlayers.mod.olx.interaction.ModifyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -30,6 +30,7 @@ class Modify protected () extends Pointer {
     * @api
     */
   def this(options: ModifyOptions) = this()
+  
   /**
     * Removes the vertex currently being pointed.
     * @return True when a vertex was removed.
@@ -37,10 +38,10 @@ class Modify protected () extends Pointer {
     */
   def removePoint(): Boolean = js.native
 }
-
 @JSImport("openlayers", "interaction.Modify")
 @js.native
 object Modify extends js.Object {
+  
   /**
     * @classdesc
     * Events emitted by {@link ol.interaction.Modify} instances are instances of
@@ -69,17 +70,17 @@ object Modify extends js.Object {
       features: Collection[Feature],
       mapBrowserPointerEvent: MapBrowserPointerEvent
     ) = this()
+    
     /**
       * The features being modified.
       * @api
       */
     var features: Collection[Feature] = js.native
+    
     /**
       * Associated {@link ol.MapBrowserEvent}.
       * @api
       */
     var mapBrowserEvent: MapBrowserEvent = js.native
   }
-  
 }
-

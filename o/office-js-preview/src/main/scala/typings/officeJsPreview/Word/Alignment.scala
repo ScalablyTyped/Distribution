@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Alignment extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.Alignment")
 @js.native
 object Alignment extends js.Object {
+  
   /**
     * Alignment to the center.
     *
@@ -50,6 +50,4 @@ object Alignment extends js.Object {
     */
   @js.native
   sealed trait unknown extends Alignment
-  
 }
-

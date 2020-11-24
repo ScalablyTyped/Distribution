@@ -10,13 +10,13 @@ a simple priority queue data structure
 | ------------------ | :-------------: |
 | Full name          | priorityqueuejs |
 | Keywords           | heap, priority, queue, priority queue, data structure |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 23 |
-| # downloads        | 2067386 |
+| # downloads        | 2577763 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/janogonzalez/priorityqueuejs)
+- [Homepage](https://github.com/janogonzalez/priorityqueuejs#readme)
 - [Bugs](https://github.com/janogonzalez/priorityqueuejs/issues)
 - [Repository](https://github.com/janogonzalez/priorityqueuejs)
 - [Npm](https://www.npmjs.com/package/priorityqueuejs)

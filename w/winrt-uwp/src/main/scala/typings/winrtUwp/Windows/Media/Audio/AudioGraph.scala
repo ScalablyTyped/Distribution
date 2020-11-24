@@ -15,32 +15,12 @@ import typings.winrtUwp.winrtUwpStrings.quantumstarted
 import typings.winrtUwp.winrtUwpStrings.unrecoverableerroroccurred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio graph of connected input, output, and submix nodes that manipulate and route audio. */
 @js.native
 trait AudioGraph extends js.Object {
-  /** Gets the completed quantum count for the audio graph. */
-  var completedQuantumCount: Double = js.native
-  /** Gets the encoding properties for the audio graph. */
-  var encodingProperties: AudioEncodingProperties = js.native
-  /** Gets the latency in samples that the audio graph supports. */
-  var latencyInSamples: Double = js.native
-  /** Notifies that the audio graph has processed the specified quantum. */
-  @JSName("onquantumprocessed")
-  var onquantumprocessed_Original: TypedEventHandler[AudioGraph, _] = js.native
-  /** Notifies that the audio graph has started processing a new quantum. */
-  @JSName("onquantumstarted")
-  var onquantumstarted_Original: TypedEventHandler[AudioGraph, _] = js.native
-  /** Notifies of an unrecoverable audio error in audio graph operation. */
-  @JSName("onunrecoverableerroroccurred")
-  var onunrecoverableerroroccurred_Original: TypedEventHandler[AudioGraph, AudioGraphUnrecoverableErrorOccurredEventArgs] = js.native
-  /** Gets the primary render device for the audio graph. */
-  var primaryRenderDevice: DeviceInformation = js.native
-  /** Gets a value that indicates the audio processing mode for the audio graph. */
-  var renderDeviceAudioProcessing: AudioProcessing = js.native
-  /** Gets the number of samples per quantum at which the audio graph is currently operating. */
-  var samplesPerQuantum: Double = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_quantumprocessed(`type`: quantumprocessed, listener: TypedEventHandler[AudioGraph, _]): Unit = js.native
@@ -51,8 +31,13 @@ trait AudioGraph extends js.Object {
     `type`: unrecoverableerroroccurred,
     listener: TypedEventHandler[AudioGraph, AudioGraphUnrecoverableErrorOccurredEventArgs]
   ): Unit = js.native
+  
   /** Closes the audio graph. */
   def close(): Unit = js.native
+  
+  /** Gets the completed quantum count for the audio graph. */
+  var completedQuantumCount: Double = js.native
+  
   /**
     * Creates a device input node for the indicated media.
     * @param category An enumeration value indicating the media category.
@@ -74,17 +59,20 @@ trait AudioGraph extends js.Object {
     * @return An asynchronous operation that returns a CreateAudioDeviceInputNodeResult on completion. This object exposes a Status property, that indicates either that the operation was successful or the reason why the operation failed. The DeviceInputNode property provides a reference to the created input node on success.
     */
   def createDeviceInputNodeAsync(category: MediaCategory, encodingProperties: AudioEncodingProperties, device: DeviceInformation): IPromiseWithIAsyncOperation[CreateAudioDeviceInputNodeResult] = js.native
+  
   /**
     * Creates a new device output node for the audio graph.
     * @return An asynchronous operation that returns a CreateAudioDeviceOutputNodeResult on completion. This object exposes a Status property, that indicates either that the operation was successful or the reason why the operation failed. The DeviceOutputNode property provides a reference to the created output node on success.
     */
   def createDeviceOutputNodeAsync(): IPromiseWithIAsyncOperation[CreateAudioDeviceOutputNodeResult] = js.native
+  
   /**
     * Creates a file input node for the audio graph.
     * @param file A IStorageFile object representing the file associated with the file input node.
     * @return When this operation completes, a CreateAudioFileInputNodeResult object is returned.
     */
   def createFileInputNodeAsync(file: IStorageFile): IPromiseWithIAsyncOperation[CreateAudioFileInputNodeResult] = js.native
+  
   /**
     * Creates a file output node for the indicated file.
     * @param file A StorageFile object representing the file.
@@ -98,6 +86,7 @@ trait AudioGraph extends js.Object {
     * @return When this operation completes, a CreateAudioFileOutputNodeResult object is returned.
     */
   def createFileOutputNodeAsync(file: IStorageFile, fileEncodingProfile: MediaEncodingProfile): IPromiseWithIAsyncOperation[CreateAudioFileOutputNodeResult] = js.native
+  
   /**
     * Creates a simple audio frame input node for the audio graph.
     * @return An audio frame input node.
@@ -109,6 +98,7 @@ trait AudioGraph extends js.Object {
     * @return An audio frame input node.
     */
   def createFrameInputNode(encodingProperties: AudioEncodingProperties): AudioFrameInputNode = js.native
+  
   /**
     * Creates a simple frame output node for the audio graph.
     * @return An audio frame output node.
@@ -120,6 +110,7 @@ trait AudioGraph extends js.Object {
     * @return An audio frame output node.
     */
   def createFrameOutputNode(encodingProperties: AudioEncodingProperties): AudioFrameOutputNode = js.native
+  
   /**
     * Creates an audio graph submix node that mixes the output of one or more nodes into single output that can be connected to output nodes or other submix nodes.
     * @return An audio submix node.
@@ -131,12 +122,34 @@ trait AudioGraph extends js.Object {
     * @return An audio submix node.
     */
   def createSubmixNode(encodingProperties: AudioEncodingProperties): AudioSubmixNode = js.native
+  
+  /** Gets the encoding properties for the audio graph. */
+  var encodingProperties: AudioEncodingProperties = js.native
+  
+  /** Gets the latency in samples that the audio graph supports. */
+  var latencyInSamples: Double = js.native
+  
   /** Notifies that the audio graph has processed the specified quantum. */
   def onquantumprocessed(ev: js.Any with WinRTEvent[AudioGraph]): Unit = js.native
+  /** Notifies that the audio graph has processed the specified quantum. */
+  @JSName("onquantumprocessed")
+  var onquantumprocessed_Original: TypedEventHandler[AudioGraph, _] = js.native
+  
   /** Notifies that the audio graph has started processing a new quantum. */
   def onquantumstarted(ev: js.Any with WinRTEvent[AudioGraph]): Unit = js.native
+  /** Notifies that the audio graph has started processing a new quantum. */
+  @JSName("onquantumstarted")
+  var onquantumstarted_Original: TypedEventHandler[AudioGraph, _] = js.native
+  
   /** Notifies of an unrecoverable audio error in audio graph operation. */
   def onunrecoverableerroroccurred(ev: AudioGraphUnrecoverableErrorOccurredEventArgs with WinRTEvent[AudioGraph]): Unit = js.native
+  /** Notifies of an unrecoverable audio error in audio graph operation. */
+  @JSName("onunrecoverableerroroccurred")
+  var onunrecoverableerroroccurred_Original: TypedEventHandler[AudioGraph, AudioGraphUnrecoverableErrorOccurredEventArgs] = js.native
+  
+  /** Gets the primary render device for the audio graph. */
+  var primaryRenderDevice: DeviceInformation = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_quantumprocessed(`type`: quantumprocessed, listener: TypedEventHandler[AudioGraph, _]): Unit = js.native
@@ -147,11 +160,19 @@ trait AudioGraph extends js.Object {
     `type`: unrecoverableerroroccurred,
     listener: TypedEventHandler[AudioGraph, AudioGraphUnrecoverableErrorOccurredEventArgs]
   ): Unit = js.native
+  
+  /** Gets a value that indicates the audio processing mode for the audio graph. */
+  var renderDeviceAudioProcessing: AudioProcessing = js.native
+  
   /** Resets all nodes in the audio graph. */
   def resetAllNodes(): Unit = js.native
+  
+  /** Gets the number of samples per quantum at which the audio graph is currently operating. */
+  var samplesPerQuantum: Double = js.native
+  
   /** Starts the audio graph. */
   def start(): Unit = js.native
+  
   /** Stops the audio graph. */
   def stop(): Unit = js.native
 }
-

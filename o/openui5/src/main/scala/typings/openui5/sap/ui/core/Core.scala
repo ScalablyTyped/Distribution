@@ -7,15 +7,17 @@ import typings.openui5.sap.ui.core.message.MessageManager
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Core extends Object {
+  
   /**
     * Enforces an immediate update of the visible UI (aka "rendering").In general, applications should
     * avoid calling this method andinstead let the framework manage any necessary rendering.
     */
   def applyChanges(): Unit = js.native
+  
   /**
     * Applies the theme with the given name (by loading the respective style sheets, which does not
     * disrupt the application).By default, the theme files are expected to be located at path relative to
@@ -36,6 +38,7 @@ trait Core extends Object {
     */
   def applyTheme(sThemeName: String): Unit = js.native
   def applyTheme(sThemeName: String, sThemeBaseUrl: String): Unit = js.native
+  
   /**
     * Registers a listener for control events.
     * @param fnFunction callback to be called for each control event
@@ -43,6 +46,7 @@ trait Core extends Object {
     */
   def attachControlEvent(fnFunction: js.Any): Unit = js.native
   def attachControlEvent(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'formatError' event of
     * <code>sap.ui.core.Core</code>.<br/>Please note that this event is a bubbling event and may already
@@ -54,6 +58,7 @@ trait Core extends Object {
     */
   def attachFormatError(fnFunction: js.Any): Core = js.native
   def attachFormatError(fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Attaches a given function to the <code>initEvent</code> event of the core.The given callback
     * function will either be called once the Core has been initializedor, if it has been initialized
@@ -62,12 +67,14 @@ trait Core extends Object {
     * @param fnFunction the callback function to be called on event firing.
     */
   def attachInit(fnFunction: js.Any): Unit = js.native
+  
   /**
     * Attaches a given function to the <code>initEvent</code> event of the core.This event will only be
     * fired once; you can check if it has been fired alreadyby calling {@link #isInitialized}.
     * @param fnFunction the function to be called on event firing.
     */
   def attachInitEvent(fnFunction: js.Any): Unit = js.native
+  
   /**
     * Registers a listener to the central interval timer.
     * @since 1.16.0
@@ -76,12 +83,14 @@ trait Core extends Object {
     */
   def attachIntervalTimer(fnFunction: js.Any): Unit = js.native
   def attachIntervalTimer(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Register a listener for the <code>localizationChanged</code> event.
     * @param fnFunction callback to be called
     * @param oListener context object to cal lthe function on.
     */
   def attachLocalizationChanged(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'parseError' event of
     * <code>sap.ui.core.Core</code>.<br/>Please note that this event is a bubbling event and may already
@@ -94,6 +103,7 @@ trait Core extends Object {
     */
   def attachParseError(oData: js.Any, fnFunction: js.Any): Core = js.native
   def attachParseError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'validationError' event of
     * <code>sap.ui.core.Core</code>.<br/>Please note that this event is a bubbling event and may already
@@ -106,6 +116,7 @@ trait Core extends Object {
     */
   def attachValidationError(oData: js.Any, fnFunction: js.Any): Core = js.native
   def attachValidationError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'validationSuccess' event of
     * <code>sap.ui.core.Core</code>.<br/>Please note that this event is a bubbling event and may already
@@ -118,6 +129,7 @@ trait Core extends Object {
     */
   def attachValidationSuccess(oData: js.Any, fnFunction: js.Any): Core = js.native
   def attachValidationSuccess(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Returns a list of all controls with a field group ID.See {@link
     * sap.ui.core.Control#checkFieldGroupIds Control.prototype.checkFieldGroupIds} for a description of
@@ -127,12 +139,14 @@ trait Core extends Object {
     */
   def byFieldGroupId(vFieldGroupIds: String): js.Array[Control] = js.native
   def byFieldGroupId(vFieldGroupIds: js.Array[String]): js.Array[Control] = js.native
+  
   /**
     * Returns the registered element for the given id, if any.
     * @param sId undefined
     * @returns the element for the given id
     */
   def byId(sId: String): Element = js.native
+  
   /**
     * Creates a component with the provided id and settings.When the optional parameter <code>sUrl</code>
     * is given, then all request for resources of thelibrary will be redirected to the given Url. This is
@@ -168,11 +182,13 @@ trait Core extends Object {
   def createComponent(vComponent: js.Any, sUrl: String, sId: js.UndefOr[scala.Nothing], mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String, sId: String): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String, sId: String, mSettings: js.Any): Unit = js.native
+  
   /**
     * Returns a new instance of the RenderManager interface.
     * @returns the new instance of the RenderManager interface.
     */
   def createRenderManager(): RenderManager = js.native
+  
   /**
     * Creates a new sap.ui.core.UIArea.
     * @param oDomRef a DOM Element or ID string of the UIArea
@@ -180,6 +196,7 @@ trait Core extends Object {
     */
   def createUIArea(oDomRef: String): UIArea = js.native
   def createUIArea(oDomRef: Element): UIArea = js.native
+  
   /**
     * Unregisters a listener for control events.A listener will only be unregistered if the same
     * function/context combinationis given as in the attachControlEvent call.
@@ -188,6 +205,7 @@ trait Core extends Object {
     */
   def detachControlEvent(fnFunction: js.Any): Unit = js.native
   def detachControlEvent(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'formatError' event of
     * <code>sap.ui.core.Core</code>.<br/>The passed function and listener object must match the ones
@@ -197,6 +215,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def detachFormatError(fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Unregisters a listener for the central interval timer.A listener will only be unregistered if the
     * same function/context combinationis given as in the attachIntervalTimer call.
@@ -206,6 +225,7 @@ trait Core extends Object {
     */
   def detachIntervalTimer(fnFunction: js.Any): Unit = js.native
   def detachIntervalTimer(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Unregister a listener from the <code>localizationChanged</code> event.The listener will only be
     * unregistered if the same function/context combinationis given as in the call to
@@ -214,6 +234,7 @@ trait Core extends Object {
     * @param oListener context object given in a previous call to attachLocalizationChanged.
     */
   def detachLocalizationChanged(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'parseError' event of
     * <code>sap.ui.core.Core</code>.<br/>The passed function and listener object must match the ones
@@ -223,6 +244,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def detachParseError(fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'validationError' event of
     * <code>sap.ui.core.Core</code>.<br/>The passed function and listener object must match the ones
@@ -232,6 +254,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def detachValidationError(fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'validationSuccess' event of
     * <code>sap.ui.core.Core</code>.<br/>The passed function and listener object must match the ones
@@ -241,6 +264,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def detachValidationSuccess(fnFunction: js.Any, oListener: js.Any): Core = js.native
+  
   /**
     * Fire event formatError to attached listeners.Expects following event parameters:<ul><li>'element' of
     * type <code>sap.ui.core.Element</code> </li><li>'property' of type <code>string</code>
@@ -251,6 +275,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def fireFormatError(mArguments: js.Any): Core = js.native
+  
   /**
     * Fire event parseError to attached listeners.Expects following event parameters:<ul><li>'element' of
     * type <code>sap.ui.core.Element</code> </li><li>'property' of type <code>string</code>
@@ -261,6 +286,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def fireParseError(mArguments: js.Any): Core = js.native
+  
   /**
     * Fire event validationError to attached listeners.Expects following event
     * parameters:<ul><li>'element' of type <code>sap.ui.core.Element</code> </li><li>'property' of type
@@ -271,6 +297,7 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def fireValidationError(mArguments: js.Any): Core = js.native
+  
   /**
     * Fire event validationSuccess to attached listeners.Expects following event
     * parameters:<ul><li>'element' of type <code>sap.ui.core.Element</code> </li><li>'property' of type
@@ -280,45 +307,53 @@ trait Core extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def fireValidationSuccess(mArguments: js.Any): Core = js.native
+  
   /**
     * Returns the instance of the application (if exists).
     * @returns instance of the current application
     */
   def getApplication(): js.Any = js.native
+  
   /**
     * Returns the registered component for the given id, if any.
     * @param sId undefined
     * @returns the component for the given id
     */
   def getComponent(sId: String): Component = js.native
+  
   /**
     * Returns the Configuration of the Core.
     * @returns the Configuration of the current Core.
     */
   def getConfiguration(): Configuration = js.native
+  
   /**
     * Returns the registered element for the given ID, if any.
     * @param sId undefined
     * @returns the element for the given id
     */
   def getControl(sId: String): Element = js.native
+  
   /**
     * Returns the Id of the control/element currently in focus.
     * @returns the Id of the control/element currently in focus.
     */
   def getCurrentFocusedControlId(): String = js.native
+  
   /**
     * Returns the registered element for the given ID, if any.
     * @param sId undefined
     * @returns the element for the given id
     */
   def getElementById(sId: String): Element = js.native
+  
   /**
     * Returns the event bus.
     * @since 1.8.0
     * @returns the event bus
     */
   def getEventBus(): EventBus = js.native
+  
   /**
     * Retrieves a resource bundle for the given library and locale.If only one argument is given, it is
     * assumed to be the libraryName. The localethen falls back to the current {@link
@@ -330,6 +365,7 @@ trait Core extends Object {
     */
   def getLibraryResourceBundle(sLibraryName: String): js.Any = js.native
   def getLibraryResourceBundle(sLibraryName: String, sLocale: String): js.Any = js.native
+  
   /**
     * Returns a map of library info objects for all currently loaded libraries,keyed by their names.The
     * structure of the library info objects matches the structure of the info objectthat the {@link
@@ -342,11 +378,13 @@ trait Core extends Object {
     * @returns Map of library info objects keyed by the library names.
     */
   def getLoadedLibraries(): js.Any = js.native
+  
   /**
     * Returns the active <code>MessageManager</code> instance.
     * @since 1.33.0
     */
   def getMessageManager(): MessageManager = js.native
+  
   /**
     * Get the model with the given model name.The name can be omitted to reference the default model or it
     * must be a non-empty string.Note: to be compatible with future versions of this API, applications
@@ -357,14 +395,17 @@ trait Core extends Object {
     */
   def getModel(sName: String): Model = js.native
   def getModel(sName: js.Any): Model = js.native
+  
   /**
     */
   def getRenderManager(): Unit = js.native
+  
   /**
     * Returns the instance of the root component (if exists).
     * @returns instance of the current root component
     */
   def getRootComponent(): Component = js.native
+  
   /**
     * Returns the static, hidden area DOM element belonging to this core instance.It can be used e.g. for
     * hiding elements like Popups, Shadow, Blocklayer etc.If it is not yet available, a DIV is created and
@@ -372,12 +413,14 @@ trait Core extends Object {
     * @returns the static, hidden area DOM element belonging to this core instance.
     */
   def getStaticAreaRef(): Element = js.native
+  
   /**
     * Returns the registered template for the given id, if any.
     * @param sId undefined
     * @returns the template for the given id
     */
   def getTemplate(sId: String): Component = js.native
+  
   /**
     * Returns a UIArea if the given ID/Element belongs to one.
     * @param o a DOM Element or ID string of the UIArea
@@ -385,17 +428,20 @@ trait Core extends Object {
     */
   def getUIArea(o: String): UIArea = js.native
   def getUIArea(o: Element): UIArea = js.native
+  
   /**
     * Returns <code>true</code> if there are any pending rendering tasks or whensuch rendering tasks are
     * currently being executed.
     * @returns true if there are pending (or executing) rendering tasks.
     */
   def getUIDirty(): Boolean = js.native
+  
   /**
     * Check if a Model is set to the core
     * @returns true or false
     */
   def hasModel(): Boolean = js.native
+  
   /**
     * Includes a library theme into the current page (if a variant is specified itwill include the variant
     * library theme)
@@ -407,6 +453,7 @@ trait Core extends Object {
   def includeLibraryTheme(sLibName: String, sVariant: js.UndefOr[scala.Nothing], sQuery: String): Unit = js.native
   def includeLibraryTheme(sLibName: String, sVariant: String): Unit = js.native
   def includeLibraryTheme(sLibName: String, sVariant: String, sQuery: String): Unit = js.native
+  
   /**
     * Provides the framework with information about a library.This method is intended to be called exactly
     * once while the main module of a library(its <code>library.js</code> module) is executing, typically
@@ -452,28 +499,33 @@ trait Core extends Object {
     * @param oLibInfo Info object for the library
     */
   def initLibrary(oLibInfo: js.Any): Unit = js.native
+  
   /**
     * Returns true if the Core has already been initialized. This means that instancesof RenderManager
     * etc. do already exist and the init event has already been fired(and will not be fired again).
     * @returns whether the Core has already been initialized
     */
   def isInitialized(): Boolean = js.native
+  
   /**
     * Returns the locked state of the <code>sap.ui.core.Core</code>
     * @returns locked state
     */
   def isLocked(): Boolean = js.native
+  
   /**
     * Check if the script is running on mobile
     * @returns true or false
     */
   def isMobile(): Boolean = js.native
+  
   /**
     * Used to find out whether a certain DOM element is the static area
     * @param oDomRef undefined
     * @returns whether the given DomRef is the StaticAreaRef
     */
   def isStaticAreaRef(oDomRef: js.Any): Boolean = js.native
+  
   /**
     * Returns true, if the styles of the current theme are already applied, false otherwise.This function
     * must not be used before the init event of the Core.If the styles are not yet applied an theme
@@ -481,6 +533,7 @@ trait Core extends Object {
     * @returns whether the styles of the current theme are already applied
     */
   def isThemeApplied(): Boolean = js.native
+  
   /**
     * Loads a set of libraries, preferably asynchronously.The module loading is still synchronous, so if a
     * library loads additional modules besidesits library.js file, those modules might be loaded
@@ -495,6 +548,7 @@ trait Core extends Object {
     */
   def loadLibraries(aLibraries: js.Array[String]): JQueryPromise[_] | js.Any = js.native
   def loadLibraries(aLibraries: js.Array[String], mOptions: js.Any): JQueryPromise[_] | js.Any = js.native
+  
   /**
     * Synchronously loads the given library and makes it available to the application.Loads the *.library
     * module, which contains all preload modules (enums, types, content of a shared.jsif it exists). The
@@ -510,12 +564,14 @@ trait Core extends Object {
     */
   def loadLibrary(sLibrary: String): Unit = js.native
   def loadLibrary(sLibrary: String, sUrl: String): Unit = js.native
+  
   /**
     * Locks the Core. No browser events are dispatched to the controls.Lock should be called before and
     * after the dom is modified for rendering, roundtrips...Exceptions might be the case for asynchronous
     * UI behavior
     */
   def lock(): Unit = js.native
+  
   /**
     * Registers a Plugin to the <code>sap.ui.core.Core</code>, which lifecyclewill be managed (start and
     * stop).<br/>Plugin object need to implement two methods:<ul>  <li><code>startPlugin(oCore)</code>:
@@ -524,6 +580,7 @@ trait Core extends Object {
     * @param oPlugin reference to a Plugin object
     */
   def registerPlugin(oPlugin: js.Any): Unit = js.native
+  
   /**
     * Sets or unsets a model for the given model name.The <code>sName</code> must either be
     * <code>undefined</code> (or omitted) or a non-empty string.When the name is omitted, the default
@@ -539,6 +596,7 @@ trait Core extends Object {
     */
   def setModel(oModel: Model): Core = js.native
   def setModel(oModel: Model, sName: String): Core = js.native
+  
   /**
     * Implicitly creates a new <code>UIArea</code> (or reuses an exiting one) for the given DOM reference
     * andadds the given control reference to the UIAreas content (existing content will be removed).
@@ -549,6 +607,7 @@ trait Core extends Object {
   def setRoot(oDomRef: String, oControl: Control): Unit = js.native
   def setRoot(oDomRef: Element, oControl: Interface): Unit = js.native
   def setRoot(oDomRef: Element, oControl: Control): Unit = js.native
+  
   /**
     * Defines the root directory from below which UI5 should load the theme with the given name.Optionally
     * allows restricting the setting to parts of a theme covering specific control
@@ -576,14 +635,15 @@ trait Core extends Object {
     * @returns the Core, to allow method chaining
     */
   def setThemeRoot(sThemeName: String, aLibraryNames: js.Array[String], sThemeBaseUrl: String): Core = js.native
+  
   /**
     * Unlocks the Core.Browser events are dispatched to the controls again after this method is called.
     */
   def unlock(): Unit = js.native
+  
   /**
     * Unregisters a Plugin out of the <code>sap.ui.core.Core</code>
     * @param oPlugin reference to a Plugin object
     */
   def unregisterPlugin(oPlugin: js.Any): Unit = js.native
 }
-

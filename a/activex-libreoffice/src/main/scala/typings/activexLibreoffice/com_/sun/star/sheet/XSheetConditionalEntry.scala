@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access the cell style name for a condition in a conditional format.
@@ -12,15 +12,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSheetConditionalEntry extends XInterface {
+  
   /** returns the name of the cell style that is used when the condition is fulfilled. */
   var StyleName: String = js.native
+  
   /** returns the name of the cell style that is used when the condition is fulfilled. */
   def getStyleName(): String = js.native
+  
   /** sets the name of the cell style that is used when the condition is fulfilled. */
   def setStyleName(aStyleName: String): Unit = js.native
 }
-
 object XSheetConditionalEntry {
+  
   @scala.inline
   def apply(
     StyleName: String,
@@ -33,24 +36,29 @@ object XSheetConditionalEntry {
     val __obj = js.Dynamic.literal(StyleName = StyleName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getStyleName = js.Any.fromFunction0(getStyleName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setStyleName = js.Any.fromFunction1(setStyleName))
     __obj.asInstanceOf[XSheetConditionalEntry]
   }
+  
   @scala.inline
   implicit class XSheetConditionalEntryOps[Self <: XSheetConditionalEntry] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setStyleName(value: String): Self = this.set("StyleName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetStyleName(value: () => String): Self = this.set("getStyleName", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetStyleName(value: String => Unit): Self = this.set("setStyleName", js.Any.fromFunction1(value))
   }
-  
 }
-

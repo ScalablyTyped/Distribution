@@ -6,7 +6,7 @@ import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-google-oauth", "OAuthStrategy")
 @js.native
@@ -21,8 +21,9 @@ class OAuthStrategy protected () extends Strategy {
         Unit
       ]
   ) = this()
+  
+  def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+  
   @JSName("name")
   var name_OAuthStrategy: String = js.native
-  def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
 }
-

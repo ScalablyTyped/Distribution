@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.marketplacemeteringMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.MarketplaceMetering")
 @js.native
@@ -14,4 +14,3 @@ class MarketplaceMetering ()
   extends typings.awsSdk.mod.MarketplaceMetering {
   def this(options: ClientConfiguration) = this()
 }
-

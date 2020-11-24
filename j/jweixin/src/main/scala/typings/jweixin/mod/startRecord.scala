@@ -2,11 +2,12 @@ package typings.jweixin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jweixin", "startRecord")
 @js.native
 object startRecord extends js.Object {
+  
   /*=============================图像接口================================*/
   /*=============================音频接口================================*/
   /**
@@ -14,4 +15,3 @@ object startRecord extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

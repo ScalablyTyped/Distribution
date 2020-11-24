@@ -6,11 +6,12 @@ import typings.std.Window
 import typings.std.stdStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("addEventListener")
 @js.native
 object addEventListener_input extends js.Object {
+  
   def apply(`type`: input, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
   def apply(
     `type`: input,
@@ -23,4 +24,3 @@ object addEventListener_input extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
 }
-

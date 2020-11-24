@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents XR hit test source, which provides access to hit results of real world geometry from AR session.
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XrHitTestSource extends EventHandler {
+  
   /**
     * Stop and remove hit test source.
     */
   def remove(): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ A cross-browser / node.js validator powered by JSON Schema
 | Full name          | revalidator |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 28211806 |
+| # dependents       | 73 |
+| # downloads        | 31033711 |
 | # stars            | 8 |
 
 ## Links

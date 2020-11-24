@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides a high level API to organize document templates
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDocumentTemplates extends XInterface {
+  
   /**
     * provides access to the root of internal used hierarchy
     *
@@ -23,12 +24,14 @@ trait XDocumentTemplates extends XInterface {
     * @returns the ucb content for template configuration
     */
   val Content: XContent = js.native
+  
   /**
     * creates a new group
     * @param GroupName the name of the group to be created
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
   def addGroup(GroupName: String): Boolean = js.native
+  
   /**
     * creates the template with the given name in the given group using the given URL
     * @param GroupName specifies the group
@@ -38,6 +41,7 @@ trait XDocumentTemplates extends XInterface {
     * @see XDocumentTemplates.storeTemplate()
     */
   def addTemplate(GroupName: String, TemplateName: String, SourceURL: String): Boolean = js.native
+  
   /**
     * provides access to the root of internal used hierarchy
     *
@@ -45,12 +49,14 @@ trait XDocumentTemplates extends XInterface {
     * @returns the ucb content for template configuration
     */
   def getContent(): XContent = js.native
+  
   /**
     * remove an existing group
     * @param GroupName the name of the group to be removed
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
   def removeGroup(GroupName: String): Boolean = js.native
+  
   /**
     * remove a template from specified group
     * @param GroupName specifies the group which include the template
@@ -58,6 +64,7 @@ trait XDocumentTemplates extends XInterface {
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
   def removeTemplate(GroupName: String, TemplateName: String): Boolean = js.native
+  
   /**
     * rename an existing group
     * @param OldGroupName the old name of the group
@@ -65,6 +72,7 @@ trait XDocumentTemplates extends XInterface {
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
   def renameGroup(OldGroupName: String, NewGroupName: String): Boolean = js.native
+  
   /**
     * rename a template inside specified group
     * @param GroupName specifies the group which include the template
@@ -73,6 +81,7 @@ trait XDocumentTemplates extends XInterface {
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
   def renameTemplate(GroupName: String, OldTemplateName: String, NewTemplateName: String): Boolean = js.native
+  
   /**
     * creates the template with the given name in the given group using the data from the storable
     * @param GroupName specifies the group
@@ -82,6 +91,7 @@ trait XDocumentTemplates extends XInterface {
     * @see XDocumentTemplates.addTemplate()
     */
   def storeTemplate(GroupName: String, TemplateName: String, Storable: XStorable): Boolean = js.native
+  
   /**
     * force an update for internal structures
     *
@@ -90,8 +100,8 @@ trait XDocumentTemplates extends XInterface {
     */
   def update(): Unit = js.native
 }
-
 object XDocumentTemplates {
+  
   @scala.inline
   def apply(
     Content: XContent,
@@ -111,38 +121,50 @@ object XDocumentTemplates {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addGroup = js.Any.fromFunction1(addGroup), addTemplate = js.Any.fromFunction3(addTemplate), getContent = js.Any.fromFunction0(getContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeGroup = js.Any.fromFunction1(removeGroup), removeTemplate = js.Any.fromFunction2(removeTemplate), renameGroup = js.Any.fromFunction2(renameGroup), renameTemplate = js.Any.fromFunction3(renameTemplate), storeTemplate = js.Any.fromFunction3(storeTemplate), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[XDocumentTemplates]
   }
+  
   @scala.inline
   implicit class XDocumentTemplatesOps[Self <: XDocumentTemplates] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContent(value: XContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddGroup(value: String => Boolean): Self = this.set("addGroup", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddTemplate(value: (String, String, String) => Boolean): Self = this.set("addTemplate", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetContent(value: () => XContent): Self = this.set("getContent", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRemoveGroup(value: String => Boolean): Self = this.set("removeGroup", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveTemplate(value: (String, String) => Boolean): Self = this.set("removeTemplate", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRenameGroup(value: (String, String) => Boolean): Self = this.set("renameGroup", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRenameTemplate(value: (String, String, String) => Boolean): Self = this.set("renameTemplate", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setStoreTemplate(value: (String, String, XStorable) => Boolean): Self = this.set("storeTemplate", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
   }
-  
 }
-

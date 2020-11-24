@@ -4,7 +4,7 @@ import typings.protobufjs.mod.Buffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/light", "Reader")
 @js.native
@@ -16,11 +16,11 @@ class Reader protected ()
     */
   def this(buffer: Uint8Array) = this()
 }
-
 /* static members */
 @JSImport("protobufjs/light", "Reader")
 @js.native
 object Reader extends js.Object {
+  
   /**
     * Creates a new reader using the specified buffer.
     * @param buffer Buffer to read from
@@ -29,4 +29,3 @@ object Reader extends js.Object {
     */
   def create(buffer: Buffer | Uint8Array): typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader = js.native
 }
-

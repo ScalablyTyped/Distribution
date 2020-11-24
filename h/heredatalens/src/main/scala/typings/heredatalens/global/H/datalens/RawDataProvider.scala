@@ -3,7 +3,7 @@ package typings.heredatalens.global.H.datalens
 import typings.heredatalens.H.datalens.RawDataProvider.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines how to load data from a raw data file
@@ -19,4 +19,3 @@ class RawDataProvider protected ()
     */
   def this(options: Options) = this()
 }
-

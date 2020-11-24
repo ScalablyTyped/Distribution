@@ -2,9 +2,10 @@ package typings.jshamcrest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object JsHamcrest {
+  
   //
   // Description
   //
@@ -12,6 +13,7 @@ package object JsHamcrest {
     * Defines the method for describing the object to a description.
     */
   type DescribeTo = js.Function1[/* description */ typings.jshamcrest.JsHamcrest.Description, scala.Unit]
+  
   /**
     * Defines the method for describing a value to a description.
     */
@@ -20,6 +22,7 @@ package object JsHamcrest {
     /* description */ typings.jshamcrest.JsHamcrest.Description, 
     scala.Unit
   ]
+  
   //
   // Matcher
   //

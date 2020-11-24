@@ -10,9 +10,9 @@ Typings are for version 0.4
 | ------------------ | :-------------: |
 | Full name          | datadog-tracer |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 55056 |
+| # downloads        | 72799 |
 | # stars            | 0 |
 
 ## Links

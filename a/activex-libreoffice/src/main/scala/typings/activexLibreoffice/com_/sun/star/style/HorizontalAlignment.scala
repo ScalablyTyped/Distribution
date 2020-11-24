@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** values specify the horizontal alignment of an object within a container object. */
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait HorizontalAlignment extends js.Object
-
 object HorizontalAlignment {
+  
   /**
     * set the horizontal alignment to the center between the margins from the container object
     *
@@ -25,6 +25,7 @@ object HorizontalAlignment {
     */
   @scala.inline
   def CENTER: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * set the horizontal alignment to the left margin from the container object
     *
@@ -36,6 +37,7 @@ object HorizontalAlignment {
     */
   @scala.inline
   def LEFT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * set the horizontal alignment to the right margin from the container object
     *
@@ -48,4 +50,3 @@ object HorizontalAlignment {
   @scala.inline
   def RIGHT: `2` = 2.asInstanceOf[`2`]
 }
-

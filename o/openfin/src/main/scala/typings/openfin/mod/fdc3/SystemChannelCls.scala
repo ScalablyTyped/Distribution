@@ -3,7 +3,7 @@ package typings.openfin.mod.fdc3
 import typings.openfin.contextChannelsMod.SystemChannelTransport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin", "fdc3.SystemChannel")
 @js.native
@@ -16,4 +16,3 @@ class SystemChannelCls protected ()
     */
   def this(transport: SystemChannelTransport) = this()
 }
-

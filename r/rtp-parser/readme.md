@@ -12,10 +12,13 @@ RTP packets parser
 | Keywords           | rtp, parser |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3237 |
+| # downloads        | 2800 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/fleg/rtp-parser#readme)
+- [Bugs](https://github.com/fleg/rtp-parser/issues)
+- [Repository](https://github.com/fleg/rtp-parser)
 - [Npm](https://www.npmjs.com/package/rtp-parser)
     
 

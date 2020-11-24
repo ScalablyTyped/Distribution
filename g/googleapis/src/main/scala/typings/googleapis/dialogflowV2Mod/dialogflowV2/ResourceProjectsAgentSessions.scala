@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects$Agent$Sessions")
 @js.native
 class ResourceProjectsAgentSessions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var contexts: ResourceProjectsAgentSessionsContexts = js.native
-  var entityTypes: ResourceProjectsAgentSessionsEntitytypes = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.deleteContexts
     * @desc Deletes all active contexts in the specified session.
@@ -46,6 +48,7 @@ class ResourceProjectsAgentSessions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.detectIntent
     * @desc Processes a natural language query and returns structured,
@@ -81,5 +84,6 @@ class ResourceProjectsAgentSessions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2DetectIntentResponse]
   ): Unit = js.native
+  
+  var entityTypes: ResourceProjectsAgentSessionsEntitytypes = js.native
 }
-

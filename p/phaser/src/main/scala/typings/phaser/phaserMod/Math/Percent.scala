@@ -2,11 +2,12 @@ package typings.phaser.phaserMod.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Math.Percent")
 @js.native
 object Percent extends js.Object {
+  
   /**
     * Work out what percentage `value` is of the range between `min` and `max`.
     * If `max` isn't given then it will return the percentage of `value` to `min`.
@@ -22,4 +23,3 @@ object Percent extends js.Object {
   def apply(value: Double, min: Double, max: Double): Double = js.native
   def apply(value: Double, min: Double, max: Double, upperMax: Double): Double = js.native
 }
-

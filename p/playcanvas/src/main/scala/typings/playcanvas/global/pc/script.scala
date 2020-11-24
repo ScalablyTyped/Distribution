@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.callbacks.CreateScreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The pc.script namespace holds the createLoadingScreen function that
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.script")
 @js.native
 object script extends js.Object {
+  
   /**
     * Handles the creation of the loading screen of the application. A script can subscribe to
     * the events of a {@link pc.Application} to show a loading screen, progress bar etc. In order for this to work
@@ -29,4 +30,3 @@ object script extends js.Object {
     */
   def createLoadingScreen(callback: CreateScreen): Unit = js.native
 }
-

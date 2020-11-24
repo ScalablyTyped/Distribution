@@ -11,8 +11,8 @@ Create an array with values that are present in the first input array but not ad
 | Full name          | array-differ |
 | Keywords           | array, difference, diff, differ, filter, exclude |
 | # releases         | 3 |
-| # dependents       | 44 |
-| # downloads        | 124286975 |
+| # dependents       | 47 |
+| # downloads        | 158911278 |
 | # stars            | 4 |
 
 ## Links

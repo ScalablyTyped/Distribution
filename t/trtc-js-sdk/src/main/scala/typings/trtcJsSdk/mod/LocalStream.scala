@@ -10,10 +10,11 @@ import typings.trtcJsSdk.trtcJsSdkStrings.text
 import typings.trtcJsSdk.trtcJsSdkStrings.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalStream extends Stream {
+  
   /**
     * 添加音频或视频轨道
     *
@@ -49,8 +50,10 @@ trait LocalStream extends Stream {
     * ```
     */
   def addTrack(track: MediaStreamTrack): js.Promise[Unit] = js.native
+  
   /** 初始化本地音视频流对象, 初始化失败的错误信息请参考 [getUserMedia异常](https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/getUserMedia#%E8%AF%AD%E6%B3%95)。 */
   def initialize(): js.Promise[Unit] = js.native
+  
   /**
     * 移除视频轨道
     *
@@ -73,6 +76,7 @@ trait LocalStream extends Stream {
     * ```
     */
   def removeTrack(track: MediaStreamTrack): js.Promise[Unit] = js.native
+  
   /**
     * 更换音频或视频轨道
     *
@@ -88,6 +92,7 @@ trait LocalStream extends Stream {
     * - 支持 Chrome 65+、Safari 浏览器。
     */
   def replaceTrack(track: MediaStreamTrack): js.Promise[Unit] = js.native
+  
   @JSName("setAudioProfile")
   def setAudioProfile_high(profile: high): Unit = js.native
   /**
@@ -98,9 +103,11 @@ trait LocalStream extends Stream {
     */
   @JSName("setAudioProfile")
   def setAudioProfile_standard(profile: standard): Unit = js.native
+  
   def setScreenProfile(profile: Profile): Unit = js.native
   /** 设置屏幕分享 Profile,该方法需要在调用 `initialize()` 之前调用。 */
   def setScreenProfile(profile: ScreenProfileString): Unit = js.native
+  
   @JSName("setVideoContentHint")
   def setVideoContentHint_detail(hint: detail): Unit = js.native
   /**
@@ -114,6 +121,7 @@ trait LocalStream extends Stream {
   def setVideoContentHint_motion(hint: motion): Unit = js.native
   @JSName("setVideoContentHint")
   def setVideoContentHint_text(hint: text): Unit = js.native
+  
   def setVideoProfile(profile: Profile): Unit = js.native
   /**
     * 设置视频 Profile,该方法需要在调用 `initialize()` 之前调用。
@@ -138,6 +146,7 @@ trait LocalStream extends Stream {
     * ```
     */
   def setVideoProfile(profile: VideoProfileString): Unit = js.native
+  
   /**
     * 切换本地流的媒体输入设备,该方法仅适用于从摄像头和麦克风采集音视频的本地流。
     *
@@ -154,4 +163,3 @@ trait LocalStream extends Stream {
   @JSName("switchDevice")
   def switchDevice_video(`type`: video, deviceId: String): js.Promise[Unit] = js.native
 }
-

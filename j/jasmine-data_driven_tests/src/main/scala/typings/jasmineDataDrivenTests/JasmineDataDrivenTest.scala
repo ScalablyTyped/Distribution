@@ -2,10 +2,11 @@ package typings.jasmineDataDrivenTests
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JasmineDataDrivenTest extends js.Object {
+  
   def apply[T](
     description: String,
     dataset: js.Array[js.Array[T] | T],
@@ -76,4 +77,3 @@ trait JasmineDataDrivenTest extends js.Object {
     ]
   ): Unit = js.native
 }
-

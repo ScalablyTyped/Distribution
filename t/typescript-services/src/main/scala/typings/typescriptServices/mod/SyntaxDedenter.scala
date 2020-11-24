@@ -4,7 +4,7 @@ import typings.typescriptServices.FormattingOptions
 import typings.typescriptServices.TypeScript.ISyntaxNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "SyntaxDedenter")
 @js.native
@@ -17,11 +17,11 @@ class SyntaxDedenter protected ()
     options: FormattingOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "SyntaxDedenter")
 @js.native
 object SyntaxDedenter extends js.Object {
+  
   def dedentNode(
     node: ISyntaxNode,
     dedentFirstToken: Boolean,
@@ -30,4 +30,3 @@ object SyntaxDedenter extends js.Object {
     options: FormattingOptions
   ): ISyntaxNode = js.native
 }
-

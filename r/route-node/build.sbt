@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "route-node"
-version := "4.1.1-c69ba4"
+version := "4.1.1-fce761"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "path-parser" % "6.1.0-60ec03",
-  "org.scalablytyped" %%% "search-params" % "3.0.0-ce0bf0",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "path-parser" % "6.1.0-df5ef5",
+  "org.scalablytyped" %%% "search-params" % "3.0.0-87ec43",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

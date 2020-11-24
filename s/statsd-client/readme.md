@@ -10,9 +10,9 @@ Yet another client for Etsy's statsd
 | ------------------ | :-------------: |
 | Full name          | statsd-client |
 | Keywords           | statsd, client, metrics, udp, tcp |
-| # releases         | 5 |
-| # dependents       | 65 |
-| # downloads        | 1035581 |
+| # releases         | 4 |
+| # dependents       | 71 |
+| # downloads        | 2038895 |
 | # stars            | 9 |
 
 ## Links

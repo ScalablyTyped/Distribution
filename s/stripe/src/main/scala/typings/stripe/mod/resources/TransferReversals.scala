@@ -12,11 +12,12 @@ import typings.stripe.mod.transferReversals.IReversalCreationOptions
 import typings.stripe.mod.transferReversals.IReversalUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.TransferReversals")
 @js.native
 class TransferReversals () extends StripeResource {
+  
   def create(): js.Promise[IReversal] = js.native
   /**
     * When you create a new reversal, you must specify a transfer to create it on.
@@ -35,6 +36,7 @@ class TransferReversals () extends StripeResource {
   def create(options: HeaderOptions): js.Promise[IReversal] = js.native
   def create(options: HeaderOptions, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
   def create(response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
+  
   def list(): IListPromise[IReversal] = js.native
   def list(data: IListOptions): IListPromise[IReversal] = js.native
   /**
@@ -48,6 +50,7 @@ class TransferReversals () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IReversal] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IReversal]]): IListPromise[IReversal] = js.native
   def list(response: IResponseFn[IList[IReversal]]): IListPromise[IReversal] = js.native
+  
   def retrieve(reversalId: String): js.Promise[IReversal] = js.native
   def retrieve(reversalId: String, data: IDataOptions): js.Promise[IReversal] = js.native
   /**
@@ -60,6 +63,7 @@ class TransferReversals () extends StripeResource {
   def retrieve(reversalId: String, options: HeaderOptions): js.Promise[IReversal] = js.native
   def retrieve(reversalId: String, options: HeaderOptions, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
   def retrieve(reversalId: String, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
+  
   def update(reversalId: String, data: IReversalUpdateOptions): js.Promise[IReversal] = js.native
   /**
     * Updates the specified reversal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -75,4 +79,3 @@ class TransferReversals () extends StripeResource {
   ): js.Promise[IReversal] = js.native
   def update(reversalId: String, data: IReversalUpdateOptions, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
 }
-

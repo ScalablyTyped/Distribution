@@ -3,7 +3,7 @@ package typings.fabric.fabricImplMod
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
@@ -20,21 +20,24 @@ class Path () extends Object {
   def this(path: js.UndefOr[scala.Nothing], options: IPathOptions) = this()
   def this(path: String, options: IPathOptions) = this()
   def this(path: js.Array[Point], options: IPathOptions) = this()
+  
   /**
     * Array of path points
     */
   var path: js.UndefOr[js.Array[Point]] = js.native
+  
   var pathOffset: Point = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Path")
 @js.native
 object Path extends js.Object {
+  
   /**
     * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
     */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  
   /**
     * Creates an instance of fabric.Path from an SVG <path> element
     * @param element to parse
@@ -43,10 +46,10 @@ object Path extends js.Object {
     */
   def fromElement(element: SVGElement, callback: js.Function): Path = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): Path = js.native
+  
   /**
     * Creates an instance of fabric.Path from an object
     * @param callback Callback to invoke when an fabric.Path instance is created
     */
   def fromObject(`object`: js.Any, callback: js.Function): Path = js.native
 }
-

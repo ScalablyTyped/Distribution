@@ -2,7 +2,7 @@ package typings.fibers.futureMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // In the future we can use this to extend the type of FutureObject if typescript
 // support for dynamic types improves
@@ -14,8 +14,10 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait Function extends js.Object {
+    
     /**
       * Returns a future-function which, when run, starts running the target
       * function and returns a future for the result.
@@ -32,6 +34,6 @@ object global extends js.Object {
   }
   
   type FutureFunction[T] = js.Function1[/* repeated */ js.Any, Future[T]]
+  
   type FutureObject[T] = T with js.Any
 }
-

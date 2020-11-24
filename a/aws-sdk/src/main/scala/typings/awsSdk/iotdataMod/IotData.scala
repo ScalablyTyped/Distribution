@@ -1,17 +1,19 @@
 package typings.awsSdk.iotdataMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IotData extends Service {
+  
   @JSName("config")
   var config_IotData: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deletes the shadow for the specified thing. For more information, see DeleteThingShadow in the AWS IoT Developer Guide.
     */
@@ -25,6 +27,7 @@ trait IotData extends Service {
     params: DeleteThingShadowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThingShadowResponse, Unit]
   ): Request[DeleteThingShadowResponse, AWSError] = js.native
+  
   /**
     * Gets the shadow for the specified thing. For more information, see GetThingShadow in the AWS IoT Developer Guide.
     */
@@ -38,6 +41,7 @@ trait IotData extends Service {
     params: GetThingShadowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetThingShadowResponse, Unit]
   ): Request[GetThingShadowResponse, AWSError] = js.native
+  
   /**
     * Lists the shadows for the specified thing.
     */
@@ -51,6 +55,7 @@ trait IotData extends Service {
     params: ListNamedShadowsForThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListNamedShadowsForThingResponse, Unit]
   ): Request[ListNamedShadowsForThingResponse, AWSError] = js.native
+  
   /**
     * Publishes state information. For more information, see HTTP Protocol in the AWS IoT Developer Guide.
     */
@@ -61,6 +66,7 @@ trait IotData extends Service {
     */
   def publish(params: PublishRequest): Request[js.Object, AWSError] = js.native
   def publish(params: PublishRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the shadow for the specified thing. For more information, see UpdateThingShadow in the AWS IoT Developer Guide.
     */
@@ -75,4 +81,3 @@ trait IotData extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingShadowResponse, Unit]
   ): Request[UpdateThingShadowResponse, AWSError] = js.native
 }
-

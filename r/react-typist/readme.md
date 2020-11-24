@@ -11,8 +11,8 @@ Typing animations with React
 | Full name          | react-typist |
 | Keywords           | react, reactjs, react-typist, react typist, typing, typing animation, typing animations, animation, animations, typist, typewriter, typewriter animation, typewriter animations |
 | # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 378426 |
+| # dependents       | 24 |
+| # downloads        | 453073 |
 | # stars            | 4 |
 
 ## Links

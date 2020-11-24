@@ -2,10 +2,11 @@ package typings.ably.mod.Types
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AuthCallbacks extends AuthBase {
+  
   def authorize(): Unit = js.native
   def authorize(
     tokenParams: js.UndefOr[scala.Nothing],
@@ -40,6 +41,7 @@ trait AuthCallbacks extends AuthBase {
     authOptions: tokenDetailsCallback,
     callback: tokenDetailsCallback
   ): Unit = js.native
+  
   def createTokenRequest(): Unit = js.native
   def createTokenRequest(
     tokenParams: js.UndefOr[scala.Nothing],
@@ -74,6 +76,7 @@ trait AuthCallbacks extends AuthBase {
     authOptions: tokenRequestCallback,
     callback: tokenRequestCallback
   ): Unit = js.native
+  
   def requestToken(): Unit = js.native
   def requestToken(
     TokenParams: js.UndefOr[scala.Nothing],
@@ -109,4 +112,3 @@ trait AuthCallbacks extends AuthBase {
     callback: tokenDetailsCallback
   ): Unit = js.native
 }
-

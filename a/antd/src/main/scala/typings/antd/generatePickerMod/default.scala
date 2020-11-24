@@ -5,11 +5,11 @@ import typings.rcPicker.generateMod.GenerateConfig
 import typings.react.mod.ComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/date-picker/generatePicker", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[DateType](generateConfig: GenerateConfig[DateType]): (ComponentClass[PickerProps[DateType], _]) with MonthPicker[DateType] = js.native
 }
-

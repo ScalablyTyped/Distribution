@@ -3,7 +3,7 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ForwardingRule resource. A ForwardingRule resource specifies which pool
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaForwardingRule extends js.Object {
+  
   /**
     * The IP address that this forwarding rule is serving on behalf of.
     * Addresses are restricted based on the forwarding rule&#39;s load
@@ -42,6 +43,7 @@ trait SchemaForwardingRule extends js.Object {
     * regions/region/addresses/address  - global/addresses/address  - address
     */
   var IPAddress: js.UndefOr[String] = js.native
+  
   /**
     * The IP protocol to which this rule applies. Valid options are TCP, UDP,
     * ESP, AH, SCTP or ICMP.  When the load balancing scheme is INTERNAL, only
@@ -49,6 +51,7 @@ trait SchemaForwardingRule extends js.Object {
     * INTERNAL_SELF_MANAGED, only TCPis valid.
     */
   var IPProtocol: js.UndefOr[String] = js.native
+  
   /**
     * This field is used along with the backend_service field for internal load
     * balancing or with the target field for internal TargetInstance. This
@@ -58,6 +61,7 @@ trait SchemaForwardingRule extends js.Object {
     * configured with this forwarding rule.
     */
   var allPorts: js.UndefOr[Boolean] = js.native
+  
   /**
     * This field is used along with the backend_service field for internal load
     * balancing or with the target field for internal TargetInstance. If the
@@ -66,21 +70,25 @@ trait SchemaForwardingRule extends js.Object {
     * balancer.
     */
   var allowGlobalAccess: js.UndefOr[Boolean] = js.native
+  
   /**
     * This field is only used for INTERNAL load balancing.  For internal load
     * balancing, this field identifies the BackendService resource to receive
     * the matched traffic.
     */
   var backendService: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * Fingerprint of this resource. A hash of the contents stored in this
     * object. This field is used in optimistic locking. This field will be
@@ -90,22 +98,26 @@ trait SchemaForwardingRule extends js.Object {
     * get() request to retrieve a ForwardingRule.
     */
   var fingerprint: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * The IP Version that will be used by this forwarding rule. Valid options
     * are IPV4 or IPV6. This can only be specified for an external global
     * forwarding rule.
     */
   var ipVersion: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#forwardingRule for
     * Forwarding Rule resources.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * A fingerprint for the labels being applied to this resource, which is
     * essentially a hash of the labels set used for optimistic locking. The
@@ -117,12 +129,14 @@ trait SchemaForwardingRule extends js.Object {
     * ForwardingRule.
     */
   var labelFingerprint: js.UndefOr[String] = js.native
+  
   /**
     * Labels to apply to this resource. These can be later modified by the
     * setLabels method. Each label key/value pair must comply with RFC1035.
     * Label values may be empty.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * This signifies what the ForwardingRule will be used for and can only take
     * the following values: INTERNAL, INTERNAL_SELF_MANAGED, EXTERNAL. The
@@ -133,6 +147,7 @@ trait SchemaForwardingRule extends js.Object {
     * TCP/UDP LB, SSL Proxy)
     */
   var loadBalancingScheme: js.UndefOr[String] = js.native
+  
   /**
     * Name of the resource; provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -143,6 +158,7 @@ trait SchemaForwardingRule extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * This field is not used for external load balancing.  For INTERNAL and
     * INTERNAL_SELF_MANAGED load balancing, this field identifies the network
@@ -150,6 +166,7 @@ trait SchemaForwardingRule extends js.Object {
     * this field is not specified, the default network will be used.
     */
   var network: js.UndefOr[String] = js.native
+  
   /**
     * This signifies the networking tier used for configuring this load
     * balancer and can only take the following values: PREMIUM , STANDARD.  For
@@ -159,6 +176,7 @@ trait SchemaForwardingRule extends js.Object {
     * value must be equal to the networkTier of the Address.
     */
   var networkTier: js.UndefOr[String] = js.native
+  
   /**
     * This field is used along with the target field for TargetHttpProxy,
     * TargetHttpsProxy, TargetSslProxy, TargetTcpProxy, TargetVpnGateway,
@@ -173,6 +191,7 @@ trait SchemaForwardingRule extends js.Object {
     * 1688, 1883, 5222  - TargetVpnGateway: 500, 4500
     */
   var portRange: js.UndefOr[String] = js.native
+  
   /**
     * This field is used along with the backend_service field for internal load
     * balancing.  When the load balancing scheme is INTERNAL, a list of ports
@@ -182,6 +201,7 @@ trait SchemaForwardingRule extends js.Object {
     * rule.  You may specify a maximum of up to 5 ports.
     */
   var ports: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * [Output Only] URL of the region where the regional forwarding rule
     * resides. This field is not applicable to global forwarding rules. You
@@ -189,10 +209,12 @@ trait SchemaForwardingRule extends js.Object {
     * settable as a field in the request body.
     */
   var region: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Server-defined URL for the resource.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * An optional prefix to the service name for this Forwarding Rule. If
     * specified, will be the first label of the fully qualified service name.
@@ -204,11 +226,13 @@ trait SchemaForwardingRule extends js.Object {
     * cannot be a dash.  This field is only used for internal load balancing.
     */
   var serviceLabel: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The internal fully qualified service name for this
     * Forwarding Rule.  This field is only used for internal load balancing.
     */
   var serviceName: js.UndefOr[String] = js.native
+  
   /**
     * This field is only used for INTERNAL load balancing.  For internal load
     * balancing, this field identifies the subnetwork that the load balanced IP
@@ -217,6 +241,7 @@ trait SchemaForwardingRule extends js.Object {
     * in custom subnet mode, a subnetwork must be specified.
     */
   var subnetwork: js.UndefOr[String] = js.native
+  
   /**
     * The URL of the target resource to receive the matched traffic. For
     * regional forwarding rules, this target must live in the same region as
@@ -227,127 +252,180 @@ trait SchemaForwardingRule extends js.Object {
     */
   var target: js.UndefOr[String] = js.native
 }
-
 object SchemaForwardingRule {
+  
   @scala.inline
   def apply(): SchemaForwardingRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaForwardingRule]
   }
+  
   @scala.inline
   implicit class SchemaForwardingRuleOps[Self <: SchemaForwardingRule] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIPAddress(value: String): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    
     @scala.inline
     def setIPProtocol(value: String): Self = this.set("IPProtocol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIPProtocol: Self = this.set("IPProtocol", js.undefined)
+    
     @scala.inline
     def setAllPorts(value: Boolean): Self = this.set("allPorts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllPorts: Self = this.set("allPorts", js.undefined)
+    
     @scala.inline
     def setAllowGlobalAccess(value: Boolean): Self = this.set("allowGlobalAccess", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowGlobalAccess: Self = this.set("allowGlobalAccess", js.undefined)
+    
     @scala.inline
     def setBackendService(value: String): Self = this.set("backendService", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackendService: Self = this.set("backendService", js.undefined)
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setIpVersion(value: String): Self = this.set("ipVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIpVersion: Self = this.set("ipVersion", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setLoadBalancingScheme(value: String): Self = this.set("loadBalancingScheme", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLoadBalancingScheme: Self = this.set("loadBalancingScheme", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetwork: Self = this.set("network", js.undefined)
+    
     @scala.inline
     def setNetworkTier(value: String): Self = this.set("networkTier", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetworkTier: Self = this.set("networkTier", js.undefined)
+    
     @scala.inline
     def setPortRange(value: String): Self = this.set("portRange", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePortRange: Self = this.set("portRange", js.undefined)
+    
     @scala.inline
     def setPortsVarargs(value: String*): Self = this.set("ports", js.Array(value :_*))
+    
     @scala.inline
     def setPorts(value: js.Array[String]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePorts: Self = this.set("ports", js.undefined)
+    
     @scala.inline
     def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegion: Self = this.set("region", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setServiceLabel(value: String): Self = this.set("serviceLabel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteServiceLabel: Self = this.set("serviceLabel", js.undefined)
+    
     @scala.inline
     def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    
     @scala.inline
     def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    
     @scala.inline
     def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTarget: Self = this.set("target", js.undefined)
   }
-  
 }
-

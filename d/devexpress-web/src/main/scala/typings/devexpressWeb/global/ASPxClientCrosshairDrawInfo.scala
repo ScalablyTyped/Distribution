@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information for custom drawing a crosshair cursor on the client side.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientCrosshairDrawInfo ()
   extends typings.devexpressWeb.ASPxClientCrosshairDrawInfo
-

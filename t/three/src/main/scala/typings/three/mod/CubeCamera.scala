@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "CubeCamera")
 @js.native
@@ -14,4 +14,3 @@ class CubeCamera protected ()
     renderTarget: typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
   ) = this()
 }
-

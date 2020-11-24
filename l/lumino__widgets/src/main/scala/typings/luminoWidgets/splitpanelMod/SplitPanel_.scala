@@ -9,7 +9,7 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/splitpanel", "SplitPanel")
 @js.native
@@ -20,27 +20,34 @@ import scala.scalajs.js.annotation._
   */
 class SplitPanel_ () extends Panel {
   def this(options: IOptions) = this()
+  
   /**
     * Handle the `'keydown'` event for the split panel.
     */
   var _evtKeyDown: js.Any = js.native
+  
   /**
     * Handle the `'mousedown'` event for the split panel.
     */
   var _evtMouseDown: js.Any = js.native
+  
   /**
     * Handle the `'mousemove'` event for the split panel.
     */
   var _evtMouseMove: js.Any = js.native
+  
   /**
     * Handle the `'mouseup'` event for the split panel.
     */
   var _evtMouseUp: js.Any = js.native
+  
   var _pressData: js.Any = js.native
+  
   /**
     * Release the mouse grab for the split panel.
     */
   var _releaseMouse: js.Any = js.native
+  
   /**
     * Get the content alignment for the split panel.
     *
@@ -60,28 +67,7 @@ class SplitPanel_ () extends Panel {
     * entire split panel.
     */
   var alignment: Alignment = js.native
-  /**
-    * A read-only array of the split handles in the panel.
-    */
-  val handles: js.Array[HTMLDivElement] = js.native
-  /**
-    * Get the layout orientation for the split panel.
-    */
-  /**
-    * Set the layout orientation for the split panel.
-    */
-  var orientation: Orientation = js.native
-  /**
-    * The renderer used by the split panel.
-    */
-  val renderer: IRenderer = js.native
-  /**
-    * Get the inter-element spacing for the split panel.
-    */
-  /**
-    * Set the inter-element spacing for the split panel.
-    */
-  var spacing: Double = js.native
+  
   /**
     * Handle the DOM events for the split panel.
     *
@@ -93,6 +79,20 @@ class SplitPanel_ () extends Panel {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
+  /**
+    * A read-only array of the split handles in the panel.
+    */
+  val handles: js.Array[HTMLDivElement] = js.native
+  
+  /**
+    * Get the layout orientation for the split panel.
+    */
+  /**
+    * Set the layout orientation for the split panel.
+    */
+  var orientation: Orientation = js.native
+  
   /**
     * Get the relative sizes of the widgets in the panel.
     *
@@ -105,6 +105,12 @@ class SplitPanel_ () extends Panel {
     * This method **does not** measure the DOM nodes.
     */
   def relativeSizes(): js.Array[Double] = js.native
+  
+  /**
+    * The renderer used by the split panel.
+    */
+  val renderer: IRenderer = js.native
+  
   /**
     * Set the relative sizes for the widgets in the panel.
     *
@@ -116,5 +122,12 @@ class SplitPanel_ () extends Panel {
     * The actual geometry of the DOM nodes is updated asynchronously.
     */
   def setRelativeSizes(sizes: js.Array[Double]): Unit = js.native
+  
+  /**
+    * Get the inter-element spacing for the split panel.
+    */
+  /**
+    * Set the inter-element spacing for the split panel.
+    */
+  var spacing: Double = js.native
 }
-

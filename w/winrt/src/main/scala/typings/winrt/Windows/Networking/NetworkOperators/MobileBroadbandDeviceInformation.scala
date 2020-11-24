@@ -4,12 +4,12 @@ import typings.winrt.Windows.Devices.Sms.CellularClass
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MobileBroadbandDeviceInformation extends IMobileBroadbandDeviceInformation
-
 object MobileBroadbandDeviceInformation {
+  
   @scala.inline
   def apply(
     cellularClass: CellularClass,
@@ -31,4 +31,3 @@ object MobileBroadbandDeviceInformation {
     __obj.asInstanceOf[MobileBroadbandDeviceInformation]
   }
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/config-resolver" : "0.1.0-preview.1"
+      "@aws-sdk/config-resolver" : "1.0.0-rc.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/config-resolver" : "0.1.0-preview.1"
+      "@aws-sdk/config-resolver" : "1.0.0-rc.7"
     }
   ],
   "compile-devDependencies" : [

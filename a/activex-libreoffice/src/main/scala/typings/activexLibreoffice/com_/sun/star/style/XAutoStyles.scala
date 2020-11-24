@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service contains the collection of automatic style families within the container document. */
 @js.native
 trait XAutoStyles
   extends XNameAccess
      with XIndexAccess
-
 object XAutoStyles {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -35,4 +35,3 @@ object XAutoStyles {
     __obj.asInstanceOf[XAutoStyles]
   }
 }
-

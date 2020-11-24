@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "frac"
-version := "1.1.2-2853f2"
+version := "1.1.2-707916"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.typescriptCollections.linkedListMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/LinkedList", JSImport.Default)
 @js.native
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class default[T] () extends LinkedList[T]
-

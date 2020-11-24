@@ -4,14 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularAnimations.mod.AnimationPlayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations/browser/testing", JSImport.Namespace)
 @js.native
 object testingMod extends js.Object {
+  
   @js.native
   class MockAnimationDriver ()
     extends typings.angularAnimations.testingTestingMod.MockAnimationDriver
+  /* static members */
+  @js.native
+  object MockAnimationDriver extends js.Object {
+    
+    var log: js.Array[AnimationPlayer] = js.native
+  }
   
   @js.native
   class MockAnimationPlayer protected ()
@@ -25,12 +32,4 @@ object testingMod extends js.Object {
       previousPlayers: js.Array[_]
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MockAnimationDriver extends js.Object {
-    var log: js.Array[AnimationPlayer] = js.native
-  }
-  
 }
-

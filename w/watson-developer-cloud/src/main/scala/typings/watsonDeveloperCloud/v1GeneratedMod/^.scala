@@ -2,7 +2,7 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Discovery Service is a cognitive search and content analytics engine that you can add to applications to identify patterns, trends and actionable insights to drive better decision-making. Securely unify structured and unstructured data with pre-enriched content, and use a simplified query language to eliminate the need for manual filtering of results.
@@ -30,10 +30,9 @@ class ^ protected () extends DiscoveryV1 {
     */
   def this(options: Options) = this()
 }
-
 @JSImport("watson-developer-cloud/discovery/v1-generated", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var URL: String = js.native
 }
-

@@ -4,13 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to set and remove seekable marks to a stream. */
 @js.native
 trait XMarkableStream extends XInterface {
+  
   /** creates a mark of the current position and returns an identifier to it. */
   def createMark(): Double = js.native
+  
   /**
     * deletes the mark that you previously created with {@link XMarkableStream.createMark()} .
     *
@@ -18,6 +20,7 @@ trait XMarkableStream extends XInterface {
     * all others after this mark.
     */
   def deleteMark(Mark: Double): Unit = js.native
+  
   /**
     * jumps to the furthest position of the stream.
     *
@@ -25,8 +28,10 @@ trait XMarkableStream extends XInterface {
     * call will add new data at the end of the stream without overwriting existing data.
     */
   def jumpToFurthest(): Unit = js.native
+  
   /** jumps to a previously created mark. */
   def jumpToMark(nMark: Double): Unit = js.native
+  
   /**
     * @param nMark identifies the mark which is used as a base to calculate the offset of the current position.
     * @returns the offset from the current stream position to the mark ("current position" - "mark position").
@@ -35,8 +40,8 @@ trait XMarkableStream extends XInterface {
     */
   def offsetToMark(nMark: Double): Double = js.native
 }
-
 object XMarkableStream {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -51,28 +56,35 @@ object XMarkableStream {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createMark = js.Any.fromFunction0(createMark), deleteMark = js.Any.fromFunction1(deleteMark), jumpToFurthest = js.Any.fromFunction0(jumpToFurthest), jumpToMark = js.Any.fromFunction1(jumpToMark), offsetToMark = js.Any.fromFunction1(offsetToMark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XMarkableStream]
   }
+  
   @scala.inline
   implicit class XMarkableStreamOps[Self <: XMarkableStream] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateMark(value: () => Double): Self = this.set("createMark", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setDeleteMark(value: Double => Unit): Self = this.set("deleteMark", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setJumpToFurthest(value: () => Unit): Self = this.set("jumpToFurthest", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setJumpToMark(value: Double => Unit): Self = this.set("jumpToMark", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setOffsetToMark(value: Double => Double): Self = this.set("offsetToMark", js.Any.fromFunction1(value))
   }
-  
 }
-

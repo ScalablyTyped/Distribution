@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-dedent" : "1.1.1"
+      "ts-dedent" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-dedent" : "1.1.1"
+      "ts-dedent" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

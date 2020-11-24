@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlideDate extends js.Object {
+  
   /**
     * Gets the date in the specified date format.
     *
@@ -19,6 +20,7 @@ trait GlideDate extends js.Object {
     * // 01-01-2015
     */
   def getByFormat(format: String): String = js.native
+  
   /**
     * Gets the day of the month stored by the GlideDate object, expressed in the UTC time
     * zone.
@@ -32,6 +34,7 @@ trait GlideDate extends js.Object {
     * // 13
     */
   def getDayOfMonthNoTZ(): Double = js.native
+  
   /**
     * Gets the date in the current user's display format and time zone.
     *
@@ -46,6 +49,7 @@ trait GlideDate extends js.Object {
     * // 2015-01-01
     */
   def getDisplayValue(): String = js.native
+  
   /**
     * Gets the display value in the internal format (yyyy-MM-dd).
     *
@@ -58,6 +62,7 @@ trait GlideDate extends js.Object {
     * // 2014-10-22
     */
   def getDisplayValueInternal(): String = js.native
+  
   /**
     * Gets the month stored by the GlideDate object, expressed in the UTC time zone.
     * @returns The numerical value of the month from 1 to 12.
@@ -70,6 +75,7 @@ trait GlideDate extends js.Object {
     * // 5
     */
   def getMonthNoTZ(): Double = js.native
+  
   /**
     * Gets the date value stored in the database by the GlideDate object in the internal
     * format, yyyy-MM-dd, and the system time zone, UTC by default.
@@ -83,6 +89,7 @@ trait GlideDate extends js.Object {
     * // 2015-01-01
     */
   def getValue(): String = js.native
+  
   /**
     * Gets the year stored by the GlideDate object, expressed in the UTC time zone.
     *
@@ -95,6 +102,7 @@ trait GlideDate extends js.Object {
     * // 5
     */
   def getYearNoTZ(): Double = js.native
+  
   /**
     * Sets a date value using the current user's display format and time zone.
     *
@@ -109,6 +117,7 @@ trait GlideDate extends js.Object {
     * // 2011-01-01
     */
   def setDisplayValue(asDisplayed: String): Unit = js.native
+  
   /**
     * Sets the date of the GlideDate object.
     *
@@ -123,8 +132,8 @@ trait GlideDate extends js.Object {
     */
   def setValue(o: String): Unit = js.native
 }
-
 object GlideDate {
+  
   @scala.inline
   def apply(
     getByFormat: String => String,
@@ -140,36 +149,47 @@ object GlideDate {
     val __obj = js.Dynamic.literal(getByFormat = js.Any.fromFunction1(getByFormat), getDayOfMonthNoTZ = js.Any.fromFunction0(getDayOfMonthNoTZ), getDisplayValue = js.Any.fromFunction0(getDisplayValue), getDisplayValueInternal = js.Any.fromFunction0(getDisplayValueInternal), getMonthNoTZ = js.Any.fromFunction0(getMonthNoTZ), getValue = js.Any.fromFunction0(getValue), getYearNoTZ = js.Any.fromFunction0(getYearNoTZ), setDisplayValue = js.Any.fromFunction1(setDisplayValue), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[GlideDate]
   }
+  
   @scala.inline
   implicit class GlideDateOps[Self <: GlideDate] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetByFormat(value: String => String): Self = this.set("getByFormat", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetDayOfMonthNoTZ(value: () => Double): Self = this.set("getDayOfMonthNoTZ", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDisplayValue(value: () => String): Self = this.set("getDisplayValue", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDisplayValueInternal(value: () => String): Self = this.set("getDisplayValueInternal", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetMonthNoTZ(value: () => Double): Self = this.set("getMonthNoTZ", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetYearNoTZ(value: () => Double): Self = this.set("getYearNoTZ", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetDisplayValue(value: String => Unit): Self = this.set("setDisplayValue", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetValue(value: String => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
   }
-  
 }
-

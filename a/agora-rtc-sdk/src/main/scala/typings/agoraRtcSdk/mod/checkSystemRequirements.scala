@@ -2,11 +2,12 @@ package typings.agoraRtcSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agora-rtc-sdk", "checkSystemRequirements")
 @js.native
 object checkSystemRequirements extends js.Object {
+  
   /**
     * Checks the Web Browser Compatibility
     *
@@ -23,4 +24,3 @@ object checkSystemRequirements extends js.Object {
     */
   def apply(): Boolean = js.native
 }
-

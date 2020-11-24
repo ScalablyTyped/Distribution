@@ -3,7 +3,7 @@ package typings.timezonecomplete.tzDatabaseMod
 import typings.timezonecomplete.durationMod.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete/dist/lib/tz-database", "ZoneInfo")
 @js.native
@@ -90,6 +90,7 @@ class ZoneInfo protected () extends js.Object {
     */
   until: Double
   ) = this()
+  
   /**
     * The FORMAT column specifies the usual abbreviation of the time zone name. It can have one of four forms:
     * the string, “zzz,” which is a kind of null value (don’t ask)
@@ -99,20 +100,24 @@ class ZoneInfo protected () extends js.Object {
     * a string containing “%s,” in which case the “%s” will be replaced by the text in the appropriate Rule’s LETTER column
     */
   var format: String = js.native
+  
   /**
     * GMT offset in fractional minutes, POSITIVE to UTC (note JavaScript.Date gives offsets
     * contrary to what you might expect).  E.g. Europe/Amsterdam has +60 minutes in this field because
     * it is one hour ahead of UTC
     */
   var gmtoff: Duration = js.native
+  
   /**
     * If the rule column is a rule name, this is the rule name
     */
   var ruleName: String = js.native
+  
   /**
     * If the rule column is an offset, this is the offset
     */
   var ruleOffset: Duration = js.native
+  
   /**
     * The RULES column tells us whether daylight saving time is being observed:
     * A hyphen, a kind of null value, means that we have not set our clocks ahead of standard time.
@@ -121,6 +126,7 @@ class ZoneInfo protected () extends js.Object {
     * the name of which is the given alphabetic string.
     */
   var ruleType: RuleType = js.native
+  
   /**
     * Until timestamp in unix utc millis. The zone info is valid up to
     * and excluding this timestamp.
@@ -128,4 +134,3 @@ class ZoneInfo protected () extends js.Object {
     */
   var until: js.UndefOr[Double] = js.native
 }
-

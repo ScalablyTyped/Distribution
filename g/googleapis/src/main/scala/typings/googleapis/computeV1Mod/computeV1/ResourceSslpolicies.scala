@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Sslpolicies")
 @js.native
 class ResourceSslpolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.sslPolicies.delete
     * @desc Deletes the specified SSL policy. The SSL policy resource can be
@@ -45,6 +47,7 @@ class ResourceSslpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.sslPolicies.get
     * @desc Lists all of the ordered rules present in a single specified
@@ -75,6 +78,7 @@ class ResourceSslpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslPolicy]
   ): Unit = js.native
+  
   /**
     * compute.sslPolicies.insert
     * @desc Returns the specified SSL policy resource. Gets a list of available
@@ -106,6 +110,7 @@ class ResourceSslpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.sslPolicies.list
     * @desc Lists all the SSL policies that have been configured for the
@@ -139,6 +144,7 @@ class ResourceSslpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslPoliciesList]
   ): Unit = js.native
+  
   /**
     * compute.sslPolicies.listAvailableFeatures
     * @desc Lists all features that can be specified in the SSL policy when
@@ -175,6 +181,7 @@ class ResourceSslpolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslPoliciesListAvailableFeaturesResponse]
   ): Unit = js.native
+  
   /**
     * compute.sslPolicies.patch
     * @desc Patches the specified SSL policy with the data included in the
@@ -208,4 +215,3 @@ class ResourceSslpolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

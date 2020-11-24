@@ -4,11 +4,12 @@ import typings.plottable.componentMod.Component
 import typings.plottable.scaleMod.Scale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/gridlines", JSImport.Namespace)
 @js.native
 object gridlinesMod extends js.Object {
+  
   @js.native
   /**
     * @constructor
@@ -19,15 +20,25 @@ object gridlinesMod extends js.Object {
     def this(xScale: Scale[_, _]) = this()
     def this(xScale: Null, yScale: Scale[_, _]) = this()
     def this(xScale: Scale[_, _], yScale: Scale[_, _]) = this()
+    
     var _betweenX: js.Any = js.native
+    
     var _betweenY: js.Any = js.native
-    var _renderCallback: js.Any = js.native
-    var _xLinesContainer: js.Any = js.native
-    var _xScale: js.Any = js.native
-    var _yLinesContainer: js.Any = js.native
-    var _yScale: js.Any = js.native
+    
     /* private */ def _redrawXLines(): js.Any = js.native
+    
     /* private */ def _redrawYLines(): js.Any = js.native
+    
+    var _renderCallback: js.Any = js.native
+    
+    var _xLinesContainer: js.Any = js.native
+    
+    var _xScale: js.Any = js.native
+    
+    var _yLinesContainer: js.Any = js.native
+    
+    var _yScale: js.Any = js.native
+    
     /**
       * Gets the between flag for the x axis.
       *
@@ -43,6 +54,7 @@ object gridlinesMod extends js.Object {
       * @returns {Gridlines} The calling Gridlines.
       */
     def betweenX(_betweenX: Boolean): this.type = js.native
+    
     /**
       * Gets the between flag for the y axis.
       *
@@ -59,6 +71,4 @@ object gridlinesMod extends js.Object {
       */
     def betweenY(_betweenY: Boolean): this.type = js.native
   }
-  
 }
-

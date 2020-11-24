@@ -3,7 +3,7 @@ package typings.officeJs.OfficeExtension
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An abstract RequestContext object that facilitates requests to the host Office application. 
@@ -11,12 +11,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClientRequestContext extends js.Object {
+  
   /** Debug information */
   val debugInfo: RequestContextDebugInfo = js.native
-  /** Request headers */
-  var requestHeaders: StringDictionary[String] = js.native
-  /** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
-  var trackedObjects: TrackedObjects = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties. 
     * 
@@ -28,6 +26,7 @@ trait ClientRequestContext extends js.Object {
   def load(`object`: ClientObject, option: String): Unit = js.native
   def load(`object`: ClientObject, option: js.Array[String]): Unit = js.native
   def load(`object`: ClientObject, option: LoadOption): Unit = js.native
+  
   /**
     * Queues up a command to recursively load the specified properties of the object and its navigation properties.
     * 
@@ -44,6 +43,10 @@ trait ClientRequestContext extends js.Object {
     options: StringDictionary[String | js.Array[String] | LoadOption],
     maxDepth: Double
   ): Unit = js.native
+  
+  /** Request headers */
+  var requestHeaders: StringDictionary[String] = js.native
+  
   /**
     * Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context 
     * and retrieving properties of loaded Office objects for use in your code. 
@@ -51,11 +54,14 @@ trait ClientRequestContext extends js.Object {
     */
   def sync[T](): js.Promise[T] = js.native
   def sync[T](passThroughValue: T): js.Promise[T] = js.native
+  
   /**
     * Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages" 
     * array to the OfficeExtension.Error object, containing all trace messages that were executed. 
     * These messages can help you monitor the program execution sequence and detect the cause of the error. 
     */
   def trace(message: String): Unit = js.native
+  
+  /** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
+  var trackedObjects: TrackedObjects = js.native
 }
-

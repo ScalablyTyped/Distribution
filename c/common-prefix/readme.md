@@ -12,7 +12,7 @@ Retrieve the common prefix across multiple strings
 | Keywords           | common, prefix, string, start, first, same |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 505594 |
+| # downloads        | 800927 |
 | # stars            | 1 |
 
 ## Links

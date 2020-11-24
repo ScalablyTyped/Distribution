@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Urlchannels")
 @js.native
 class ResourceUrlchannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.urlchannels.list
     * @desc List all URL channels in the specified ad client for this AdSense
@@ -45,4 +47,3 @@ class ResourceUrlchannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUrlChannels]
   ): Unit = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription")
 @js.native
@@ -21,16 +21,17 @@ class StandardsSubscription protected () extends CustomResource {
     */
   def this(name: String, args: StandardsSubscriptionArgs) = this()
   def this(name: String, args: StandardsSubscriptionArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of a standard - see below.
     */
   val standardsArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription")
 @js.native
 object StandardsSubscription extends js.Object {
+  
   /**
     * Get an existing StandardsSubscription resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -44,10 +45,10 @@ object StandardsSubscription extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StandardsSubscription = js.native
   def get(name: String, id: Input[ID], state: StandardsSubscriptionState): StandardsSubscription = js.native
   def get(name: String, id: Input[ID], state: StandardsSubscriptionState, opts: CustomResourceOptions): StandardsSubscription = js.native
+  
   /**
     * Returns true if the given object is an instance of StandardsSubscription.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean = js.native
 }
-

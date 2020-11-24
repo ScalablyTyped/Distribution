@@ -52,12 +52,11 @@ import typings.semanticUiTransition.semanticUiTransitionStrings.useFailSafe
 import typings.semanticUiTransition.semanticUiTransitionStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("transition")
-  var transition_Original: Transition = js.native
+  
   def transition(): JQuery = js.native
   def transition(behavior: setting, name: allowRepeats, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: allowRepeats, value: Boolean): JQuery = js.native
@@ -105,6 +104,8 @@ trait JQuery extends js.Object {
   def transition_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
   @JSName("transition")
   def transition_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  @JSName("transition")
+  var transition_Original: Transition = js.native
   /**
     * Clears all queued animations
     */
@@ -220,4 +221,3 @@ trait JQuery extends js.Object {
   @JSName("transition")
   def transition_toggle(behavior: toggle): JQuery = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Tables")
 @js.native
 class ResourceTables protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigquery.tables.delete
     * @desc Deletes the table specified by tableId from the dataset. If the
@@ -96,6 +98,7 @@ class ResourceTables protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTablesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTablesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * bigquery.tables.get
     * @desc Gets the specified table resource by table ID. This method does not
@@ -188,6 +191,7 @@ class ResourceTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * bigquery.tables.insert
     * @desc Creates a new, empty table in the dataset.
@@ -278,6 +282,7 @@ class ResourceTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * bigquery.tables.list
     * @desc Lists all tables in the specified dataset. Requires the READER
@@ -379,6 +384,7 @@ class ResourceTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTableList]
   ): Unit = js.native
+  
   /**
     * bigquery.tables.patch
     * @desc Updates information in an existing table. The update method
@@ -478,6 +484,7 @@ class ResourceTables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * bigquery.tables.update
     * @desc Updates information in an existing table. The update method
@@ -577,4 +584,3 @@ class ResourceTables protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
 }
-

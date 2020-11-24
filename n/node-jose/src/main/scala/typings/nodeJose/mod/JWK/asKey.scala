@@ -12,15 +12,15 @@ import typings.nodeJose.nodeJoseStrings.x509
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-jose", "JWK.asKey")
 @js.native
 object asKey extends js.Object {
+  
   def apply(
     key: String | Buffer | js.Object | RawKey,
     form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
     extras: js.UndefOr[Record[String, _]]
   ): js.Promise[Key] = js.native
 }
-

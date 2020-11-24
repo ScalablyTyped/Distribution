@@ -4,11 +4,12 @@ import typings.babylonjs.anon.DragAxis
 import typings.babylonjs.transformNodeMod.TransformNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Behaviors/Meshes/index", JSImport.Namespace)
 @js.native
 object meshesIndexMod extends js.Object {
+  
   @js.native
   class AttachToBoxBehavior protected ()
     extends typings.babylonjs.attachToBoxBehaviorMod.AttachToBoxBehavior {
@@ -42,6 +43,14 @@ object meshesIndexMod extends js.Object {
     extends typings.babylonjs.pointerDragBehaviorMod.PointerDragBehavior {
     def this(options: DragAxis) = this()
   }
+  /* static members */
+  @js.native
+  object PointerDragBehavior extends js.Object {
+    
+    var _AnyMouseID: js.Any = js.native
+    
+    var _planeScene: js.Any = js.native
+  }
   
   @js.native
   /**
@@ -49,19 +58,10 @@ object meshesIndexMod extends js.Object {
     */
   class SixDofDragBehavior ()
     extends typings.babylonjs.sixDofDragBehaviorMod.SixDofDragBehavior
-  
-  /* static members */
-  @js.native
-  object PointerDragBehavior extends js.Object {
-    var _AnyMouseID: js.Any = js.native
-    var _planeScene: js.Any = js.native
-  }
-  
   /* static members */
   @js.native
   object SixDofDragBehavior extends js.Object {
+    
     var _virtualScene: js.Any = js.native
   }
-  
 }
-

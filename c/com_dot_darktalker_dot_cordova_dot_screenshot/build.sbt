@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "com_dot_darktalker_dot_cordova_dot_screenshot"
-version := "v0.1.5-dt-20200515Z-243b5c"
+version := "v0.1.5-dt-20200925Z-6b5bbf"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Subscriptions")
 @js.native
 class ResourceSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.subscriptions.delete
     * @desc Deletes a subscription.
@@ -41,6 +43,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.subscriptions.insert
     * @desc Adds a subscription for the authenticated user's channel.
@@ -70,6 +73,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * youtube.subscriptions.list
     * @desc Returns subscription resources that match the API request criteria.
@@ -113,4 +117,3 @@ class ResourceSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSubscriptionListResponse]
   ): Unit = js.native
 }
-

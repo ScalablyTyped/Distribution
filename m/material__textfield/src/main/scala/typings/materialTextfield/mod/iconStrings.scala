@@ -2,7 +2,7 @@ package typings.materialTextfield.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @license
@@ -29,7 +29,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/textfield", "iconStrings")
 @js.native
 object iconStrings extends js.Object {
+  
   var ICON_EVENT: String = js.native
+  
   var ICON_ROLE: String = js.native
 }
-

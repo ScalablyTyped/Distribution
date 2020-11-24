@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Bluetooth
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BluetoothMinorClass extends js.Object
-
 /** Indicates the Minor Class code of the device. These are interpreted in the context of the Major Class codes. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothMinorClass")
 @js.native
 object BluetoothMinorClass extends js.Object {
+  
   /** A camcorder. */
   @js.native
   sealed trait audioVideoCamcorder extends BluetoothMinorClass
@@ -294,6 +294,4 @@ object BluetoothMinorClass extends js.Object {
   /** A wristwatch. */
   @js.native
   sealed trait wearableWristwatch extends BluetoothMinorClass
-  
 }
-

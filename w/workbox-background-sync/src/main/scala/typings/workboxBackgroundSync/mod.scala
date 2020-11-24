@@ -3,11 +3,12 @@ package typings.workboxBackgroundSync
 import typings.workboxBackgroundSync.queueMod.QueueOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("workbox-background-sync", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Plugin protected ()
     extends typings.workboxBackgroundSync.pluginMod.Plugin {
@@ -21,6 +22,4 @@ object mod extends js.Object {
     def this(name: String) = this()
     def this(name: String, options: QueueOptions) = this()
   }
-  
 }
-

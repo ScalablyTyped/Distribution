@@ -8,7 +8,7 @@ import typings.reduxOrm.modelMod.SessionBoundModel
 import typings.reduxOrm.querySetMod.QuerySet.QueryBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm/QuerySet", "QuerySet")
 @js.native
@@ -23,6 +23,7 @@ class QuerySet_[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected
     */
   def this(modelClass: ModelClass[M], clauses: js.Array[QueryClause[js.Object]]) = this()
   def this(modelClass: ModelClass[M], clauses: js.Array[QueryClause[js.Object]], opts: js.Object) = this()
+  
   /**
     * Checks if the {@link QuerySet} instance has any records matching the query
     * in the database.
@@ -30,12 +31,14 @@ class QuerySet_[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected
     * @return `true` if the {@link QuerySet} instance contains entities, else `false`.
     */
   def exists(): Boolean = js.native
+  
   /**
     * Returns an array of {@link SessionBoundModel} instances represented by the QuerySet.
     *
     * @return session bound model instances represented by the QuerySet
     */
   def toModelArray(): js.Array[SessionBoundModel[M, InstanceProps]] = js.native
+  
   /**
     * Returns an array of the plain objects represented by the QuerySet.
     * The plain objects are direct references to the store.
@@ -44,4 +47,3 @@ class QuerySet_[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected
     */
   def toRefArray(): js.Array[Ref[M] with InstanceProps] = js.native
 }
-

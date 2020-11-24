@@ -2,12 +2,13 @@ package typings.phonegap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileTransfer extends js.Object {
-  var onprogress: js.Function = js.native
+  
   def abort(): Unit = js.native
+  
   def download(
     source: String,
     target: String,
@@ -21,6 +22,9 @@ trait FileTransfer extends js.Object {
     errorCallback: js.Function1[/* error */ FileError, Unit],
     options: js.Any
   ): Unit = js.native
+  
+  var onprogress: js.Function = js.native
+  
   //upload(filePath: string, server: string, successCallback: (metadata: Metadata) => void , errorCallback: (error: FileError) => void , options?: any): void;
   def upload(
     filePath: String,
@@ -36,4 +40,3 @@ trait FileTransfer extends js.Object {
     options: js.Any
   ): Unit = js.native
 }
-

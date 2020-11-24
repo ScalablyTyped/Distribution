@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to run custom handlers when prefetching web resources. */
 @JSGlobal("Windows.ApplicationModel.Background.ContentPrefetchTrigger")
@@ -16,4 +16,3 @@ class ContentPrefetchTrigger ()
     */
   def this(waitInterval: Double) = this()
 }
-

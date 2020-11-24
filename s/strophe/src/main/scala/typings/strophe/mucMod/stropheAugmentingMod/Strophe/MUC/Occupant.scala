@@ -2,10 +2,11 @@ package typings.strophe.mucMod.stropheAugmentingMod.Strophe.MUC
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Occupant extends OccupantInfo {
+  
   def admin(): String = js.native
   def admin(reason: js.UndefOr[scala.Nothing], success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def admin(reason: js.UndefOr[scala.Nothing], success_cb: js.Function): String = js.native
@@ -14,6 +15,7 @@ trait Occupant extends OccupantInfo {
   def admin(reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def admin(reason: String, success_cb: js.Function): String = js.native
   def admin(reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def ban(): String = js.native
   def ban(reason: js.UndefOr[scala.Nothing], success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def ban(reason: js.UndefOr[scala.Nothing], success_cb: js.Function): String = js.native
@@ -22,6 +24,7 @@ trait Occupant extends OccupantInfo {
   def ban(reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def ban(reason: String, success_cb: js.Function): String = js.native
   def ban(reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def deop(): String = js.native
   def deop(reason: js.UndefOr[scala.Nothing], handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def deop(reason: js.UndefOr[scala.Nothing], handler_cb: js.Function): String = js.native
@@ -30,6 +33,7 @@ trait Occupant extends OccupantInfo {
   def deop(reason: String, handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def deop(reason: String, handler_cb: js.Function): String = js.native
   def deop(reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def kick(): String = js.native
   def kick(reason: js.UndefOr[scala.Nothing], handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def kick(reason: js.UndefOr[scala.Nothing], handler_cb: js.Function): String = js.native
@@ -38,6 +42,7 @@ trait Occupant extends OccupantInfo {
   def kick(reason: String, handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def kick(reason: String, handler_cb: js.Function): String = js.native
   def kick(reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def member(): String = js.native
   def member(reason: js.UndefOr[scala.Nothing], success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def member(reason: js.UndefOr[scala.Nothing], success_cb: js.Function): String = js.native
@@ -46,6 +51,7 @@ trait Occupant extends OccupantInfo {
   def member(reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def member(reason: String, success_cb: js.Function): String = js.native
   def member(reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def modifyAffiliation(affiliation: String): String = js.native
   def modifyAffiliation(
     affiliation: String,
@@ -64,6 +70,7 @@ trait Occupant extends OccupantInfo {
   def modifyAffiliation(affiliation: String, reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def modifyAffiliation(affiliation: String, reason: String, success_cb: js.Function): String = js.native
   def modifyAffiliation(affiliation: String, reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def modifyRole(role: String): String = js.native
   def modifyRole(
     role: String,
@@ -77,6 +84,7 @@ trait Occupant extends OccupantInfo {
   def modifyRole(role: String, reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def modifyRole(role: String, reason: String, success_cb: js.Function): String = js.native
   def modifyRole(role: String, reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def mute(): String = js.native
   def mute(reason: js.UndefOr[scala.Nothing], handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def mute(reason: js.UndefOr[scala.Nothing], handler_cb: js.Function): String = js.native
@@ -85,6 +93,7 @@ trait Occupant extends OccupantInfo {
   def mute(reason: String, handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def mute(reason: String, handler_cb: js.Function): String = js.native
   def mute(reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def op(): String = js.native
   def op(reason: js.UndefOr[scala.Nothing], handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def op(reason: js.UndefOr[scala.Nothing], handler_cb: js.Function): String = js.native
@@ -93,6 +102,7 @@ trait Occupant extends OccupantInfo {
   def op(reason: String, handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def op(reason: String, handler_cb: js.Function): String = js.native
   def op(reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def owner(): String = js.native
   def owner(reason: js.UndefOr[scala.Nothing], success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def owner(reason: js.UndefOr[scala.Nothing], success_cb: js.Function): String = js.native
@@ -101,6 +111,7 @@ trait Occupant extends OccupantInfo {
   def owner(reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def owner(reason: String, success_cb: js.Function): String = js.native
   def owner(reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def revoke(): String = js.native
   def revoke(reason: js.UndefOr[scala.Nothing], success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def revoke(reason: js.UndefOr[scala.Nothing], success_cb: js.Function): String = js.native
@@ -109,7 +120,9 @@ trait Occupant extends OccupantInfo {
   def revoke(reason: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def revoke(reason: String, success_cb: js.Function): String = js.native
   def revoke(reason: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   def update(data: OccupantInfo): Unit = js.native
+  
   def voice(): String = js.native
   def voice(reason: js.UndefOr[scala.Nothing], handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def voice(reason: js.UndefOr[scala.Nothing], handler_cb: js.Function): String = js.native
@@ -119,4 +132,3 @@ trait Occupant extends OccupantInfo {
   def voice(reason: String, handler_cb: js.Function): String = js.native
   def voice(reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
 }
-

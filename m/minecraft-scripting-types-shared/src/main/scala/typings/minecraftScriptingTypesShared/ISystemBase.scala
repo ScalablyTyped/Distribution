@@ -5,21 +5,24 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.item_entity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISystemBase extends js.Object {
+  
   /**
     * By default no filters are added. This will allow queries to capture all entities.
     * @param ComponentName This is the identifier of the component that will be added to the filter list. Only entities that have that component will be listed in the view
     */
   def addFilterToQuery(query: IQuery, ComponentName: String): Unit = js.native
+  
   /**
     * Applies the component and any changes made to it in script back to the entity. What this means for each component can be slightly 
     * different: it makes the component reload on the entity with the new data as if it had just been added to the entity.
     * @param component The component object retrieved from the entity that was returned by either createComponent() or getComponent()
     */
   def applyComponentChanges(entity: IEntity, component: IComponent[_]): `true` | Null = js.native
+  
   /**
     * Creates an empty entity with no components and does not place it in the world.
     */
@@ -35,12 +38,14 @@ trait ISystemBase extends js.Object {
   def createEntity_entity(`type`: entity, templateIdentifier: String): IEntity | Null = js.native
   @JSName("createEntity")
   def createEntity_itementity(`type`: item_entity, templateIdentifier: String): IEntity | Null = js.native
+  
   /**
     * Removes the specified component from the given entity. If the entity has the component, it will be removed. Currently this only works with custom components and can't be used to remove components defined for an entity in JSON.
     * @param entity The EntityObject that was retrieved from a call to createEntity() or retrieved from an event
     * @param componentIdentifier The name of the component to remove from the entity. This is either the name of a built-in component (check the Script Components section) or a custom component created with a call to registerComponent()
     */
   def destroyComponent(entity: IEntity, componentIdentifier: String): `true` | Null = js.native
+  
   /**
     * Destroys an entity identified by the EntityObject. If the entity exists in the world this will remove it from the world and 
     * destroy it. This also makes the EntityObject no longer valid - you should only destroy an entity after you are done with it and 
@@ -48,6 +53,7 @@ trait ISystemBase extends js.Object {
     * @param entity The IEntityObject that was retrieved from a call to createEntity() or retrieved from an event
     */
   def destroyEntity(entity: IEntity): `true` | Null = js.native
+  
   /**
     * Allows you to fetch the entities captured by a query.
     * @param query This is the query you registered earlier using `registerQuery()`
@@ -73,11 +79,13 @@ trait ISystemBase extends js.Object {
     componentField2Max: Double,
     componentField3Max: Double
   ): js.Array[IEntity] = js.native
+  
   /**
     * Checks if the given EntityObject corresponds to a valid entity.
     * @param entity The EntityObject that was retrieved from a call to createEntity() or retrieved from an event
     */
   def isValidEntity(entity: IEntity): Boolean | Null = js.native
+  
   /**
     * User-Defined components are a special kind of component that can be defined in script and no built-in game system acts on it.
     * The component needs to be registered with the Script Engine by giving it a name and a set of fields in the format name:value. 
@@ -92,4 +100,3 @@ trait ISystemBase extends js.Object {
     */
   def registerComponent(componentIdentifier: String, componentData: js.Object): `true` | Null = js.native
 }
-

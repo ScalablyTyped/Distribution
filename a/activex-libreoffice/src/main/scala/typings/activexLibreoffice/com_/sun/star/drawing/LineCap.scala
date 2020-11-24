@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The LineCap defines rendering of ends of thick lines */
 /* Rewritten from type alias, can be one of: 
@@ -14,11 +14,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait LineCap extends js.Object
-
 object LineCap {
+  
   /** the line will end without any additional shape */
   @scala.inline
   def BUTT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the dash is a point
     *
@@ -28,6 +29,7 @@ object LineCap {
     */
   @scala.inline
   def ROUND: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * the line will get a half square as additional cap
     *
@@ -36,4 +38,3 @@ object LineCap {
   @scala.inline
   def SQUARE: `2` = 2.asInstanceOf[`2`]
 }
-

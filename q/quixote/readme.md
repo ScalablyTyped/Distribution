@@ -10,9 +10,9 @@ CSS unit and integration testing
 | ------------------ | :-------------: |
 | Full name          | quixote |
 | Keywords           | css, test, tdd |
-| # releases         | 1 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 5087 |
+| # downloads        | 5120 |
 | # stars            | 2 |
 
 ## Links

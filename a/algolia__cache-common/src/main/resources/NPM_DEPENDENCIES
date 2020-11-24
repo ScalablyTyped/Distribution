@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/cache-common" : "4.3.1"
+      "@algolia/cache-common" : "4.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/cache-common" : "4.3.1"
+      "@algolia/cache-common" : "4.8.0"
     }
   ],
   "compile-devDependencies" : [

@@ -6,10 +6,11 @@ import typings.electron.Electron.MenuItem
 import typings.electron.Electron.MenuItemConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofMenu extends Instantiable0[Menu] {
+  
   /**
     * Generally, the `template` is an array of `options` for constructing a MenuItem.
     * The usage can be referenced above.
@@ -18,6 +19,7 @@ trait TypeofMenu extends Instantiable0[Menu] {
     * become properties of the constructed menu items.
     */
   def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | MenuItem]): Menu = js.native
+  
   /**
     * The application menu, if set, or `null`, if not set.
     *
@@ -25,6 +27,7 @@ trait TypeofMenu extends Instantiable0[Menu] {
     * removal of menu items. Instance properties can still be dynamically modified.
     */
   def getApplicationMenu(): Menu | Null = js.native
+  
   /**
     * Sends the `action` to the first responder of application. This is used for
     * emulating default macOS menu behaviors. Usually you would use the `role`
@@ -36,6 +39,7 @@ trait TypeofMenu extends Instantiable0[Menu] {
     * @platform darwin
     */
   def sendActionToFirstResponder(action: String): Unit = js.native
+  
   /**
     * Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu`
     * will be set as each window's top menu.
@@ -56,4 +60,3 @@ trait TypeofMenu extends Instantiable0[Menu] {
   def setApplicationMenu(): Unit = js.native
   def setApplicationMenu(menu: Menu): Unit = js.native
 }
-

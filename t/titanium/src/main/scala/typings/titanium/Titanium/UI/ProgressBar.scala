@@ -19,45 +19,19 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A progress bar.
   */
 @js.native
 trait ProgressBar extends View {
+  
   /**
     * Color of the progress bar message, as a color name or hex triplet.
     */
-  var color: String = js.native
-  /**
-    * Font for the progress bar text.
-    */
-  var font: Font = js.native
-  /**
-    * Maximum value of the progress bar.
-    */
-  var max: Double = js.native
-  /**
-    * Progress bar text.
-    */
-  var message: String = js.native
-  /**
-    * Minimum value of the progress bar.
-    */
-  var min: Double = js.native
-  /**
-    * Style of the progress bar.
-    */
-  var style: Double = js.native
-  /**
-    * The color shown for the portion of the progress bar that is not filled.
-    */
-  var trackTintColor: String = js.native
-  /**
-    * Current value of the progress bar.
-    */
-  var value: Double = js.native
+  var color: String | Color = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: ProgressBarClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -90,85 +64,137 @@ trait ProgressBar extends View {
   def fireEvent_touchstart(name: touchstart, event: ProgressBarTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: ProgressBarTwofingertapEvent): Unit = js.native
+  
+  /**
+    * Font for the progress bar text.
+    */
+  var font: Font = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.color> property.
     * @deprecated Access <Titanium.UI.ProgressBar.color> instead.
     */
-  def getColor(): String = js.native
+  def getColor(): String | Color = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.font> property.
     * @deprecated Access <Titanium.UI.ProgressBar.font> instead.
     */
   def getFont(): Font = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.max> property.
     * @deprecated Access <Titanium.UI.ProgressBar.max> instead.
     */
   def getMax(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.message> property.
     * @deprecated Access <Titanium.UI.ProgressBar.message> instead.
     */
   def getMessage(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.min> property.
     * @deprecated Access <Titanium.UI.ProgressBar.min> instead.
     */
   def getMin(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.style> property.
     * @deprecated Access <Titanium.UI.ProgressBar.style> instead.
     */
   def getStyle(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.trackTintColor> property.
     * @deprecated Access <Titanium.UI.ProgressBar.trackTintColor> instead.
     */
-  def getTrackTintColor(): String = js.native
+  def getTrackTintColor(): String | Color = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.ProgressBar.value> property.
     * @deprecated Access <Titanium.UI.ProgressBar.value> instead.
     */
   def getValue(): Double = js.native
+  
+  /**
+    * Maximum value of the progress bar.
+    */
+  var max: Double = js.native
+  
+  /**
+    * Progress bar text.
+    */
+  var message: String = js.native
+  
+  /**
+    * Minimum value of the progress bar.
+    */
+  var min: Double = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.color> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.color> instead.
     */
   def setColor(color: String): Unit = js.native
+  def setColor(color: Color): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.font> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.font> instead.
     */
   def setFont(font: Font): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.max> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.max> instead.
     */
   def setMax(max: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.message> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.message> instead.
     */
   def setMessage(message: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.min> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.min> instead.
     */
   def setMin(min: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.style> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.style> instead.
     */
   def setStyle(style: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.trackTintColor> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.trackTintColor> instead.
     */
   def setTrackTintColor(trackTintColor: String): Unit = js.native
+  def setTrackTintColor(trackTintColor: Color): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.ProgressBar.value> property.
     * @deprecated Set the value using <Titanium.UI.ProgressBar.value> instead.
     */
   def setValue(value: Double): Unit = js.native
+  
+  /**
+    * Style of the progress bar.
+    */
+  var style: Double = js.native
+  
+  /**
+    * The color shown for the portion of the progress bar that is not filled.
+    */
+  var trackTintColor: String | Color = js.native
+  
+  /**
+    * Current value of the progress bar.
+    */
+  var value: Double = js.native
 }
-

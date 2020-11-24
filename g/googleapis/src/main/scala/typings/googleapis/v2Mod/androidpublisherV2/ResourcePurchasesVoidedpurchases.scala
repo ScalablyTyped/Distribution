@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Purchases$Voidedpurchases")
 @js.native
 class ResourcePurchasesVoidedpurchases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.purchases.voidedpurchases.list
     * @desc Lists the purchases that were canceled, refunded or charged-back.
@@ -50,4 +52,3 @@ class ResourcePurchasesVoidedpurchases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVoidedPurchasesListResponse]
   ): Unit = js.native
 }
-

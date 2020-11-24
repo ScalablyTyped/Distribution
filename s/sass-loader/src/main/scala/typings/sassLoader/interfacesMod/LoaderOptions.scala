@@ -5,10 +5,11 @@ import typings.sassLoader.interfacesMod.LoaderOptions.Callback
 import typings.sassLoader.interfacesMod.LoaderOptions.SassOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LoaderOptions extends js.Object {
+  
   /**
     * The special `implementation` option determines which implementation of Sass
     * to use.
@@ -157,6 +158,7 @@ trait LoaderOptions extends js.Object {
     * ```
     */
   var implementation: js.UndefOr[js.Any] = js.native
+  
   /**
     * Prepends `Sass`/`SCSS` code before the actual entry file. In this case, the
     * `sass-loader` will not override the `data` option but just append the entry's
@@ -231,6 +233,7 @@ trait LoaderOptions extends js.Object {
     * undefined
     */
   var prependData: js.UndefOr[String | Callback[String]] = js.native
+  
   /**
     * Options for [Node Sass](https://github.com/sass/node-sass) or [Dart Sass](http://sass-lang.com/dart-sass)
     * implementation.
@@ -324,6 +327,7 @@ trait LoaderOptions extends js.Object {
     * ```
     */
   var sassOptions: js.UndefOr[SassOptions | Callback[SassOptions]] = js.native
+  
   /**
     * Enables/Disables generation of source maps.
     *
@@ -369,6 +373,7 @@ trait LoaderOptions extends js.Object {
     * Depends on the `compiler.devtool` value.
     */
   var sourceMap: js.UndefOr[Boolean] = js.native
+  
   /**
     * Enables/Disables the default Webpack importer.
     *
@@ -405,14 +410,14 @@ trait LoaderOptions extends js.Object {
     */
   var webpackImporter: js.UndefOr[Boolean] = js.native
 }
-
 @JSImport("sass-loader/interfaces", "LoaderOptions")
 @js.native
 object LoaderOptions extends js.Object {
+  
   type Callback[T] = js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ js.Any, 
     T
   ]
+  
   type SassOptions = Options | typings.sass.mod.Options
 }
-

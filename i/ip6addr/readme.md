@@ -11,8 +11,8 @@ IPv6/IPv4 address parsing and manipulation
 | Full name          | ip6addr |
 | Keywords           | ip, ipv4, ipv6, cidr, subnet |
 | # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 464568 |
+| # dependents       | 18 |
+| # downloads        | 853729 |
 | # stars            | 0 |
 
 ## Links

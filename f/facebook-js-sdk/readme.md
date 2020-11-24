@@ -10,9 +10,9 @@ Simple JavaScript SDK to interact with Facebook API.
 | ------------------ | :-------------: |
 | Full name          | facebook-js-sdk |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 42 |
+| # downloads        | 237 |
 | # stars            | 0 |
 
 ## Links

@@ -3,15 +3,17 @@ package typings.beanstalkdWorker.mod
 import typings.beanstalkdWorker.beanstalkdWorkerNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WatcherJob extends Job {
+  
   /**
     * Advanced use only! Mainly internal usage.
     * Cancel the configured timeout.
     */
   def cancelTimeout(): Unit = js.native
+  
   /**
     * Spawn a new child Job on given Tube and make this Job to wait for its resolution.
     * This automatically touch this Job during the wait time.
@@ -22,6 +24,7 @@ trait WatcherJob extends Job {
     */
   def child(tube: String, payload: js.Object): js.Promise[Unit] = js.native
   def child(tube: String, payload: js.Object, options: BeanstalkdSpawnOptions): js.Promise[Unit] = js.native
+  
   /**
     * Puts current job back in queue with delay (in milliseconds), does not affect retries counter.
     *
@@ -32,11 +35,13 @@ trait WatcherJob extends Job {
   def delay(delay: js.UndefOr[scala.Nothing], exponent: Double): js.Promise[`1`] = js.native
   def delay(delay: Double): js.Promise[`1`] = js.native
   def delay(delay: Double, exponent: Double): js.Promise[`1`] = js.native
+  
   /**
     * Advanced use only! Mainly internal usage.
     * Reset the configured timeout.
     */
   def refreshTimeout(): Unit = js.native
+  
   /**
     * Spawn a new Job on given Tube.
     *
@@ -46,6 +51,7 @@ trait WatcherJob extends Job {
     */
   def spawn(tube: String, payload: js.Object): js.Promise[Job] = js.native
   def spawn(tube: String, payload: js.Object, options: BeanstalkdSpawnOptions): js.Promise[Job] = js.native
+  
   /**
     * Initialize a timeout with given delay for this Job.
     *
@@ -60,8 +66,10 @@ trait WatcherJob extends Job {
     */
   def timeout[T](delay: Double, action: T): js.Promise[T] = js.native
   def timeout[T](delay: Double, action: js.Promise[T]): js.Promise[T] = js.native
+  
   /** Inform the server that the client is still processing this job, thus requesting more time to work on it. */
   def touch(): Unit = js.native
+  
   /**
     * Wait for the given job on specifed tube to be done.
     * This automatically touch this Job during the wait time.
@@ -71,4 +79,3 @@ trait WatcherJob extends Job {
     */
   def wait(tube: String, jobId: String): js.Promise[Unit] = js.native
 }
-

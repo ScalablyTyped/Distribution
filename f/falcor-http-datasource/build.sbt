@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "falcor-http-datasource"
-version := "0.1.3-dt-20200515Z-aba1a6"
+version := "0.1.3-dt-20201002Z-cba388"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

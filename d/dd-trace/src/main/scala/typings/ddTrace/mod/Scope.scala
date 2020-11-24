@@ -2,10 +2,11 @@ package typings.ddTrace.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Scope extends js.Object {
+  
   /**
     * Activate a span in the scope of a function.
     *
@@ -14,12 +15,14 @@ trait Scope extends js.Object {
     * @returns The return value of the provided function.
     */
   def activate[T](span: Span, fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  
   /**
     * Get the current active span or null if there is none.
     *
     * @returns {Span} The active span.
     */
   def active(): Span | Null = js.native
+  
   def bind(emitter: EventEmitter): EventEmitter = js.native
   def bind(emitter: EventEmitter, span: Span): EventEmitter = js.native
   /**
@@ -38,4 +41,3 @@ trait Scope extends js.Object {
   @JSName("bind")
   def bind_VT_Function1AnyV[V, T /* <: js.Function1[/* repeated */ js.Any, V] */](fn: T, span: Span): T = js.native
 }
-

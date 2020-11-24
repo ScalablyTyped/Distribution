@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Dynamictargetingkeys")
 @js.native
 class ResourceDynamictargetingkeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.dynamicTargetingKeys.delete
     * @desc Deletes an existing dynamic targeting key.
@@ -44,6 +46,7 @@ class ResourceDynamictargetingkeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.dynamicTargetingKeys.insert
     * @desc Inserts a new dynamic targeting key. Keys must be created at the
@@ -80,6 +83,7 @@ class ResourceDynamictargetingkeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDynamicTargetingKey]
   ): Unit = js.native
+  
   /**
     * dfareporting.dynamicTargetingKeys.list
     * @desc Retrieves a list of dynamic targeting keys.
@@ -116,4 +120,3 @@ class ResourceDynamictargetingkeys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDynamicTargetingKeysListResponse]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Promisify an event by waiting for it to be emitted
 | ------------------ | :-------------: |
 | Full name          | p-event |
 | Keywords           | promise, events, event, emitter, eventemitter, event-emitter, emit, emits, listener, promisify, addlistener, addeventlistener, wait, waits, on, browser, dom, async, await, promises, bluebird |
-| # releases         | 9 |
-| # dependents       | 75 |
-| # downloads        | 46302806 |
+| # releases         | 8 |
+| # dependents       | 92 |
+| # downloads        | 100497915 |
 | # stars            | 2 |
 
 ## Links

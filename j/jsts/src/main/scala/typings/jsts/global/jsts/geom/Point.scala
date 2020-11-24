@@ -2,7 +2,7 @@ package typings.jsts.global.jsts.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsts.geom.Point")
 @js.native
@@ -14,4 +14,3 @@ class Point protected ()
   def this(coordinate: typings.jsts.jsts.geom.Coordinate) = this()
   def this(coordinate: typings.jsts.jsts.geom.Coordinate, factory: js.Any) = this()
 }
-

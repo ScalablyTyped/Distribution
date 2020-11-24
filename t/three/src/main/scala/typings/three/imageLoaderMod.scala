@@ -8,14 +8,16 @@ import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/loaders/ImageLoader", JSImport.Namespace)
 @js.native
 object imageLoaderMod extends js.Object {
+  
   @js.native
   class ImageLoader () extends Loader {
     def this(manager: LoadingManager) = this()
+    
     def load(url: String): HTMLImageElement = js.native
     def load(
       url: String,
@@ -53,6 +55,4 @@ object imageLoaderMod extends js.Object {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): HTMLImageElement = js.native
   }
-  
 }
-

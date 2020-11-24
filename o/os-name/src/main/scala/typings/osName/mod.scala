@@ -3,11 +3,12 @@ package typings.osName
 import typings.node.processMod.global.NodeJS.Platform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("os-name", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   Get the name of the current operating system.
   By default, the name of the current operating system is returned.
@@ -33,4 +34,3 @@ object mod extends js.Object {
   def apply(): String = js.native
   def apply(platform: Platform, release: String): String = js.native
 }
-

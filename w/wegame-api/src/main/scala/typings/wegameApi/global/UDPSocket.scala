@@ -2,7 +2,7 @@ package typings.wegameApi.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 一个 UDP Socket 实例，默认使用 IPv4 协议。
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class UDPSocket ()
   extends typings.wegameApi.UDPSocket
-

@@ -3,9 +3,28 @@ package typings.atlaskitCalendar
 import typings.atlaskitCalendar.mod.ArrowKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object atlaskitCalendarStrings {
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  
+  @scala.inline
+  def prev: prev = "prev".asInstanceOf[prev]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
   @js.native
   sealed trait down extends ArrowKeys
   
@@ -23,18 +42,4 @@ object atlaskitCalendarStrings {
   
   @js.native
   sealed trait up extends ArrowKeys
-  
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
 }
-

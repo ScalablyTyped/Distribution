@@ -2,11 +2,12 @@ package typings.fluentFfmpeg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fluent-ffmpeg", "ffprobe")
 @js.native
 object ffprobe extends js.Object {
+  
   def apply(file: String, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = js.native
   def apply(
     file: String,
@@ -25,4 +26,3 @@ object ffprobe extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
   ): Unit = js.native
 }
-

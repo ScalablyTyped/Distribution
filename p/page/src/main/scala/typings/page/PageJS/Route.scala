@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Route
@@ -15,6 +15,7 @@ trait Route
   */
 Instantiable1[/* path */ String, Route]
      with Instantiable2[/* path */ String, /* options */ RouteOptions, Route] {
+  
   /**
     * Check if this route matches `path`, if so populate `params`.
     * @param  {string}  path   path
@@ -23,10 +24,10 @@ Instantiable1[/* path */ String, Route]
     */
   def `match`(path: String): Boolean = js.native
   def `match`(path: String, params: js.Object): Boolean = js.native
+  
   /**
     * Return route middleware with the given callback `fn()`.
     * @param {Callback} callback Callback
     */
   def middleware(fn: Callback): Callback = js.native
 }
-

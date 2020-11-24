@@ -2,24 +2,28 @@ package typings.vscodeLanguageserverTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeAction extends js.Object {
+  
   /**
     * A command this code action executes. If a code action
     * provides a edit and a command, first the edit is
     * executed and then the command.
     */
   var command: js.UndefOr[Command] = js.native
+  
   /**
     * The diagnostics that this code action resolves.
     */
   var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
+  
   /**
     * The workspace edit this code action performs.
     */
   var edit: js.UndefOr[WorkspaceEdit] = js.native
+  
   /**
     * Marks this as a preferred action. Preferred actions are used by the `auto fix` command and can be targeted
     * by keybindings.
@@ -30,21 +34,23 @@ trait CodeAction extends js.Object {
     * @since 3.15.0
     */
   var isPreferred: js.UndefOr[Boolean] = js.native
+  
   /**
     * The kind of the code action.
     *
     * Used to filter code actions.
     */
   var kind: js.UndefOr[CodeActionKind] = js.native
+  
   /**
     * A short, human-readable, title for this code action.
     */
   var title: String = js.native
 }
-
 @JSImport("vscode-languageserver-types", "CodeAction")
 @js.native
 object CodeAction extends js.Object {
+  
   /**
     * Creates a new code action.
     *
@@ -63,6 +69,6 @@ object CodeAction extends js.Object {
     */
   def create(title: String, edit: WorkspaceEdit): CodeAction = js.native
   def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = js.native
+  
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = js.native
 }
-

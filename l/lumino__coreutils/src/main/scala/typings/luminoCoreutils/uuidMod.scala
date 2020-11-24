@@ -2,13 +2,15 @@ package typings.luminoCoreutils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/coreutils/types/uuid", JSImport.Namespace)
 @js.native
 object uuidMod extends js.Object {
+  
   @js.native
   object UUID extends js.Object {
+    
     /**
       * A function which generates UUID v4 identifiers.
       *
@@ -23,6 +25,4 @@ object uuidMod extends js.Object {
       */
     def uuid4(): String = js.native
   }
-  
 }
-

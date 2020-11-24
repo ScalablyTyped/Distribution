@@ -2,17 +2,19 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SemanticTokensBuilder")
 @js.native
 class SemanticTokensBuilder () extends js.Object {
   def this(legend: SemanticTokensLegend) = this()
+  
   /**
     * Finish and create a `SemanticTokens` instance.
     */
   def build(): SemanticTokens = js.native
   def build(resultId: String): SemanticTokens = js.native
+  
   /**
     * Add another token.
     *
@@ -34,4 +36,3 @@ class SemanticTokensBuilder () extends js.Object {
   def push(range: Range, tokenType: String): Unit = js.native
   def push(range: Range, tokenType: String, tokenModifiers: js.Array[String]): Unit = js.native
 }
-

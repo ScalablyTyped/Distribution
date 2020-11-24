@@ -2,7 +2,7 @@ package typings.socketIoP2p.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates the P2P object
@@ -18,4 +18,3 @@ class ^ protected () extends SocketioP2PStatic {
   def this(socket: js.Any, opts: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]) = this()
   def this(socket: js.Any, opts: P2POptions, cb: js.Function0[Unit]) = this()
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocketActivityTriggerReason extends js.Object
-
 /** The reason why a SocketActivityTrigger occurred. */
 @JSGlobal("Windows.Networking.Sockets.SocketActivityTriggerReason")
 @js.native
 object SocketActivityTriggerReason extends js.Object {
+  
   /** A connection was accepted by the socket brokering service for a StreamSocketListener . */
   @js.native
   sealed trait connectionAccepted extends SocketActivityTriggerReason
@@ -30,6 +30,4 @@ object SocketActivityTriggerReason extends js.Object {
   /** A StreamSocket was closed. */
   @js.native
   sealed trait socketClosed extends SocketActivityTriggerReason
-  
 }
-

@@ -10,9 +10,9 @@ Reports test progress statistics and lists failures at the end of a Karma test r
 | ------------------ | :-------------: |
 | Full name          | karma-brief-reporter |
 | Keywords           | karma-plugin, karma-reporter, progress, brief, test |
-| # releases         | 15 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 45881 |
+| # downloads        | 61969 |
 | # stars            | 0 |
 
 ## Links

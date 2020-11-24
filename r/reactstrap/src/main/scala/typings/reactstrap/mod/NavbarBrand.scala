@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.navbarBrandMod.NavbarBrandProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "NavbarBrand")
+@JSImport("reactstrap/lib", "NavbarBrand")
 @js.native
-class NavbarBrand[T] ()
+class NavbarBrand ()
   extends Component[NavbarBrandProps, js.Object, js.Any]
-

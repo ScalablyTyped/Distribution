@@ -3,7 +3,7 @@ package typings.emberData.mod.DS
 import typings.emberObject.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `DS.UnauthorizedError` equates to a HTTP `401 Unauthorized` response
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.UnauthorizedError")
 @js.native
 class UnauthorizedError () extends default
-

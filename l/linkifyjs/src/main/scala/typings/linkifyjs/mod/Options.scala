@@ -12,10 +12,11 @@ import typings.linkifyjs.linkifyjsStrings.https
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options extends js.Object {
+  
   /**
     * Object of attributes to add to each new link. Note: the class and target
     * attributes have dedicated options.
@@ -28,6 +29,7 @@ trait Options extends js.Object {
   var attributes: js.UndefOr[
     (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]]) | Null
   ] = js.native
+  
   /**
     * class attribute to use for newly created links.
     *
@@ -40,6 +42,7 @@ trait Options extends js.Object {
   var className: js.UndefOr[
     String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String])
   ] = js.native
+  
   /**
     * Protocol that should be used in href attributes for URLs without a
     * protocol (e.g., github.com).
@@ -47,6 +50,7 @@ trait Options extends js.Object {
     * @default 'http'
     */
   var defaultProtocol: js.UndefOr[http | https | ftp | ftps | String] = js.native
+  
   /**
     * Format the text displayed by a linkified entity. e.g., truncate a long URL.
     *
@@ -58,6 +62,7 @@ trait Options extends js.Object {
   var format: js.UndefOr[
     (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail | Null
   ] = js.native
+  
   /**
     * Similar to format, except the result of this function will be used as the
     * href attribute of the new link.
@@ -73,12 +78,14 @@ trait Options extends js.Object {
   var formatHref: js.UndefOr[
     (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail | Null
   ] = js.native
+  
   /**
     * If `true`, \n line breaks will automatically be converted to `<br>` tags.
     *
     * @default false
     */
   var nl2br: js.UndefOr[Boolean] = js.native
+  
   /**
     * The tag name to use for each link.
     * For cases where you can’t use anchor tags.
@@ -94,6 +101,7 @@ trait Options extends js.Object {
   var tagName: js.UndefOr[
     String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag
   ] = js.native
+  
   /**
     * target attribute for generated link.
     *
@@ -108,6 +116,7 @@ trait Options extends js.Object {
   var target: js.UndefOr[
     String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyMention
   ] = js.native
+  
   /**
     * validate
     * - Type: Boolean | Function (String value, String type) | Object
@@ -129,97 +138,128 @@ trait Options extends js.Object {
     Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyUrl | Null
   ] = js.native
 }
-
 object Options {
+  
   @scala.inline
   def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
+  
   @scala.inline
   implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAttributesFunction2(value: (/* href */ String, /* type */ LinkEntityType) => Record[String, String]): Self = this.set("attributes", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setAttributes(
       value: (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]])
     ): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAttributes: Self = this.set("attributes", js.undefined)
+    
     @scala.inline
     def setAttributesNull: Self = this.set("attributes", null)
+    
     @scala.inline
     def setClassNameFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = this.set("className", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setClassName(
       value: String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String])
     ): Self = this.set("className", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClassName: Self = this.set("className", js.undefined)
+    
     @scala.inline
     def setDefaultProtocol(value: http | https | ftp | ftps | String): Self = this.set("defaultProtocol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDefaultProtocol: Self = this.set("defaultProtocol", js.undefined)
+    
     @scala.inline
     def setFormatFunction2(value: (/* value */ String, /* type */ LinkEntityType) => String): Self = this.set("format", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setFormat(
       value: (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail
     ): Self = this.set("format", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFormat: Self = this.set("format", js.undefined)
+    
     @scala.inline
     def setFormatNull: Self = this.set("format", null)
+    
     @scala.inline
     def setFormatHrefFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = this.set("formatHref", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setFormatHref(
       value: (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail
     ): Self = this.set("formatHref", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFormatHref: Self = this.set("formatHref", js.undefined)
+    
     @scala.inline
     def setFormatHrefNull: Self = this.set("formatHref", null)
+    
     @scala.inline
     def setNl2br(value: Boolean): Self = this.set("nl2br", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNl2br: Self = this.set("nl2br", js.undefined)
+    
     @scala.inline
     def setTagNameFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = this.set("tagName", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setTagName(
       value: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag
     ): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTagName: Self = this.set("tagName", js.undefined)
+    
     @scala.inline
     def setTargetFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = this.set("target", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setTarget(
       value: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyMention
     ): Self = this.set("target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTarget: Self = this.set("target", js.undefined)
+    
     @scala.inline
     def setValidateFunction2(value: (/* href */ String, /* type */ LinkEntityType) => Boolean): Self = this.set("validate", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setValidate(
       value: Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyUrl
     ): Self = this.set("validate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValidate: Self = this.set("validate", js.undefined)
+    
     @scala.inline
     def setValidateNull: Self = this.set("validate", null)
   }
-  
 }
-

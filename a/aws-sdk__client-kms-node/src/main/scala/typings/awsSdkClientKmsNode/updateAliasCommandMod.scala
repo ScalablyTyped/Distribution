@@ -5,33 +5,29 @@ import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSResolvedConfiguration
 import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsNode.typesUpdateAliasInputMod.UpdateAliasInput
 import typings.awsSdkClientKmsNode.typesUpdateAliasOutputMod.UpdateAliasOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/commands/UpdateAliasCommand", JSImport.Namespace)
 @js.native
 object updateAliasCommandMod extends js.Object {
+  
   @js.native
   class UpdateAliasCommand protected () extends Command[
           InputTypesUnion, 
           UpdateAliasInput, 
           OutputTypesUnion, 
           UpdateAliasOutput, 
-          KMSResolvedConfiguration, 
-          Readable
+          KMSResolvedConfiguration
         ] {
     def this(input: UpdateAliasInput) = this()
-    val middlewareStack: MiddlewareStack[UpdateAliasInput, UpdateAliasOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[UpdateAliasInput, UpdateAliasOutput] = js.native
   }
-  
 }
-

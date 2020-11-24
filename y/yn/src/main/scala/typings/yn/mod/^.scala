@@ -2,11 +2,12 @@ package typings.yn.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yn", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(input: js.Any): js.UndefOr[Boolean] = js.native
   def apply(input: js.Any, options: Options): js.UndefOr[Boolean] = js.native
   /**
@@ -33,4 +34,3 @@ object ^ extends js.Object {
   */
   def apply(input: js.Any, options: OptionsWithDefault): Boolean = js.native
 }
-

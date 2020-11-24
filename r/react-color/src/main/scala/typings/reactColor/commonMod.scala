@@ -8,11 +8,12 @@ import typings.reactColor.hueMod.HueProps
 import typings.reactColor.saturationMod.SaturationProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-color/lib/components/common", JSImport.Namespace)
 @js.native
 object commonMod extends js.Object {
+  
   @js.native
   class Alpha ()
     extends Component[AlphaProps, js.Object, js.Any]
@@ -32,6 +33,4 @@ object commonMod extends js.Object {
   @js.native
   class Saturation ()
     extends Component[SaturationProps, js.Object, js.Any]
-  
 }
-

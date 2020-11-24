@@ -11,8 +11,8 @@ A simple, lightweight url parser for JavaScript (~1.7 Kb minified, ~0.7Kb gzippe
 | Full name          | js-url |
 | Keywords           | js, url |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 76497 |
+| # dependents       | 5 |
+| # downloads        | 99696 |
 | # stars            | 0 |
 
 ## Links

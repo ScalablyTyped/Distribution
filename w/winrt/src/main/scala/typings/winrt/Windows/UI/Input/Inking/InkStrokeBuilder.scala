@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.UI.Input.PointerPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InkStrokeBuilder extends IInkStrokeBuilder
-
 object InkStrokeBuilder {
+  
   @scala.inline
   def apply(
     appendToStroke: PointerPoint => PointerPoint,
@@ -23,4 +23,3 @@ object InkStrokeBuilder {
     __obj.asInstanceOf[InkStrokeBuilder]
   }
 }
-

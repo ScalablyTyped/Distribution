@@ -10,13 +10,13 @@ A simple, powerful, view-agnostic, modular and extensible router
 | ------------------ | :-------------: |
 | Full name          | router5 |
 | Keywords           | router, routing, html5, functional, reactive, universal, isomorphic |
-| # releases         | 31 |
-| # dependents       | 18 |
-| # downloads        | 723104 |
+| # releases         | 12 |
+| # dependents       | 26 |
+| # downloads        | 893682 |
 | # stars            | 5 |
 
 ## Links
-- [Homepage](https://router5.js.org/)
+- [Homepage](https://router5.js.org)
 - [Bugs](https://github.com/router5/router5/issues)
 - [Repository](https://github.com/router5/router5)
 - [Npm](https://www.npmjs.com/package/router5)

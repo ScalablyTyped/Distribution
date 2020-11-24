@@ -12,7 +12,7 @@ Check if JPEG images are progressive
 | Keywords           | jpg, jpeg, progressive, file, image, img, pic, picture, photo, detect, check, is, exif, buffer, stream, fs |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 3838 |
+| # downloads        | 3906 |
 | # stars            | 0 |
 
 ## Links

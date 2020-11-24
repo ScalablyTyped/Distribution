@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates a {@linkplain ./webdriver.WebElement#click click command} could
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ElementClickInterceptedError () extends WebDriverError {
   def this(message: String) = this()
 }
-

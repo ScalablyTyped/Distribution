@@ -2,11 +2,12 @@ package typings.materialSelect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2016 Google Inc.
@@ -31,39 +32,61 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ACTIVATED: String = js.native
+    
     var DISABLED: String = js.native
+    
     var FOCUSED: String = js.native
+    
     var INVALID: String = js.native
+    
     var MENU_INVALID: String = js.native
+    
     var OUTLINED: String = js.native
+    
     var REQUIRED: String = js.native
+    
     var ROOT: String = js.native
-    var SELECTED_ITEM_CLASS: String = js.native
+    
     var WITH_LEADING_ICON: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
+    
     var LABEL_SCALE: Double = js.native
+    
     var UNSET_INDEX: Double = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ARIA_CONTROLS: String = js.native
+    
+    var ARIA_DESCRIBEDBY: String = js.native
+    
     var ARIA_SELECTED_ATTR: String = js.native
+    
     var CHANGE_EVENT: String = js.native
+    
+    var HIDDEN_INPUT_SELECTOR: String = js.native
+    
     var LABEL_SELECTOR: String = js.native
+    
     var LEADING_ICON_SELECTOR: String = js.native
+    
     var LINE_RIPPLE_SELECTOR: String = js.native
+    
     var MENU_SELECTOR: String = js.native
+    
     var OUTLINE_SELECTOR: String = js.native
-    var SELECTED_ITEM_SELECTOR: String = js.native
+    
     var SELECTED_TEXT_SELECTOR: String = js.native
+    
     var SELECT_ANCHOR_SELECTOR: String = js.native
+    
     var VALUE_ATTR: String = js.native
   }
-  
 }
-

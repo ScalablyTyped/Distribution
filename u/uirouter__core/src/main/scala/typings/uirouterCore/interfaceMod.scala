@@ -3,13 +3,15 @@ package typings.uirouterCore
 import typings.uirouterCore.routerMod.UIRouter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/interface", JSImport.Namespace)
 @js.native
 object interfaceMod extends js.Object {
+  
   @js.native
   trait Disposable extends js.Object {
+    
     /** Instructs the Disposable to clean up any resources */
     def dispose(): js.Any = js.native
     def dispose(router: UIRouter): js.Any = js.native
@@ -17,6 +19,7 @@ object interfaceMod extends js.Object {
   
   @js.native
   trait UIInjector extends js.Object {
+    
     /**
       * Gets a value from the injector.
       *
@@ -55,6 +58,7 @@ object interfaceMod extends js.Object {
       * @return the Dependency Injection value that matches the token
       */
     def get(token: js.Any): js.Any = js.native
+    
     /**
       * Asynchronously gets a value from the injector
       *
@@ -75,6 +79,7 @@ object interfaceMod extends js.Object {
     /** Asynchronously gets a value as type `T` (generics parameter) */
     @JSName("getAsync")
     def getAsync_T[T](token: js.Any): js.Promise[T] = js.native
+    
     /**
       * Gets a value from the native injector
       *
@@ -91,6 +96,7 @@ object interfaceMod extends js.Object {
     def getNative(token: js.Any): js.Any = js.native
     @JSName("getNative")
     def getNative_T_T[T](token: js.Any): T = js.native
+    
     /** Gets a value as type `T` (generics parameter) */
     @JSName("get")
     def get_T_T[T](token: js.Any): T = js.native
@@ -98,11 +104,10 @@ object interfaceMod extends js.Object {
   
   @js.native
   trait UIRouterPlugin extends Disposable {
+    
     var name: String = js.native
   }
   
   @js.native
   abstract class UIRouterPluginBase () extends UIRouterPlugin
-  
 }
-

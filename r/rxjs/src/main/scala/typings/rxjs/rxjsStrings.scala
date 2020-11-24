@@ -3,9 +3,34 @@ package typings.rxjs
 import typings.rxjs.ajaxObservableMod.AjaxErrorNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rxjsStrings {
+  
+  @scala.inline
+  def AjaxError: AjaxError = "AjaxError".asInstanceOf[AjaxError]
+  
+  @scala.inline
+  def AjaxTimeoutError: AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[AjaxTimeoutError]
+  
+  @scala.inline
+  def C: C = "C".asInstanceOf[C]
+  
+  @scala.inline
+  def E: E = "E".asInstanceOf[E]
+  
+  @scala.inline
+  def N: N = "N".asInstanceOf[N]
+  
+  @scala.inline
+  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  
+  @scala.inline
+  def blob: blob = "blob".asInstanceOf[blob]
+  
+  @scala.inline
+  def forkJoin: forkJoin = "forkJoin".asInstanceOf[forkJoin]
+  
   @js.native
   sealed trait AjaxError extends AjaxErrorNames
   
@@ -29,22 +54,4 @@ object rxjsStrings {
   
   @js.native
   sealed trait forkJoin extends js.Object
-  
-  @scala.inline
-  def AjaxError: AjaxError = "AjaxError".asInstanceOf[AjaxError]
-  @scala.inline
-  def AjaxTimeoutError: AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[AjaxTimeoutError]
-  @scala.inline
-  def C: C = "C".asInstanceOf[C]
-  @scala.inline
-  def E: E = "E".asInstanceOf[E]
-  @scala.inline
-  def N: N = "N".asInstanceOf[N]
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def forkJoin: forkJoin = "forkJoin".asInstanceOf[forkJoin]
 }
-

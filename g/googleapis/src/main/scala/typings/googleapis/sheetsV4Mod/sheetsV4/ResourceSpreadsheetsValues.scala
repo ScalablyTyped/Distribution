@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Values")
 @js.native
 class ResourceSpreadsheetsValues protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * sheets.spreadsheets.values.append
     * @desc Appends values to a spreadsheet. The input range is used to search
@@ -124,6 +124,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppendValuesResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.batchClear
     * @desc Clears one or more ranges of values from a spreadsheet. The caller
@@ -214,6 +215,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchClearValuesResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.batchClearByDataFilter
     * @desc Clears one or more ranges of values from a spreadsheet. The caller
@@ -305,6 +307,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchClearValuesByDataFilterResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.batchGet
     * @desc Returns one or more ranges of values from a spreadsheet. The caller
@@ -408,6 +411,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetValuesResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.batchGetByDataFilter
     * @desc Returns one or more ranges of values that match the specified data
@@ -514,6 +518,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetValuesByDataFilterResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.batchUpdate
     * @desc Sets values in one or more ranges of a spreadsheet. The caller must
@@ -606,6 +611,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdateValuesResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.batchUpdateByDataFilter
     * @desc Sets values in one or more ranges of a spreadsheet. The caller must
@@ -701,6 +707,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdateValuesByDataFilterResponse]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.clear
     * @desc Clears values from a spreadsheet. The caller must specify the
@@ -793,6 +800,9 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClearValuesResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * sheets.spreadsheets.values.get
     * @desc Returns a range of values from a spreadsheet. The caller must
@@ -893,6 +903,7 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaValueRange]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.values.update
     * @desc Sets values in a range of a spreadsheet. The caller must specify
@@ -994,4 +1005,3 @@ class ResourceSpreadsheetsValues protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUpdateValuesResponse]
   ): Unit = js.native
 }
-

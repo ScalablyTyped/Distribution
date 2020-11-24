@@ -5,16 +5,17 @@ import typings.baseui.baseuiStrings.`flex-end`
 import typings.baseui.baseuiStrings.`flex-start`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ALIGN extends js.Object {
+  
   var center: typings.baseui.baseuiStrings.center = js.native
+  
   var left: `flex-start` = js.native
+  
   var right: `flex-end` = js.native
 }
-
 @JSImport("baseui/header-navigation", "ALIGN")
 @js.native
 object ALIGN extends TopLevel[ALIGN]
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vanilla-swipe
 
-Typings are for version 1.2.0
+Typings are for version 2.2.0
 
 ## Library description:
 Tiny vanilla JS library to detect swipe direction.
@@ -10,9 +10,9 @@ Tiny vanilla JS library to detect swipe direction.
 | ------------------ | :-------------: |
 | Full name          | vanilla-swipe |
 | Keywords           | swipe, touch, touchable, swipeable, drag and drop |
-| # releases         | 12 |
-| # dependents       | 2 |
-| # downloads        | 36369 |
+| # releases         | 17 |
+| # dependents       | 6 |
+| # downloads        | 445066 |
 | # stars            | 0 |
 
 ## Links

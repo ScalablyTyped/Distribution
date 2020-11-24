@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Invitations")
 @js.native
 class ResourceInvitations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * classroom.invitations.accept
     * @desc Accepts an invitation, removing it and adding the invited user to
@@ -49,6 +49,9 @@ class ResourceInvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * classroom.invitations.create
     * @desc Creates an invitation. Only one invitation for a user and course
@@ -85,6 +88,7 @@ class ResourceInvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInvitation]
   ): Unit = js.native
+  
   /**
     * classroom.invitations.delete
     * @desc Deletes an invitation.  This method returns the following error
@@ -116,6 +120,7 @@ class ResourceInvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.invitations.get
     * @desc Returns an invitation.  This method returns the following error
@@ -147,6 +152,7 @@ class ResourceInvitations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInvitation]
   ): Unit = js.native
+  
   /**
     * classroom.invitations.list
     * @desc Returns a list of invitations that the requesting user is permitted
@@ -186,4 +192,3 @@ class ResourceInvitations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListInvitationsResponse]
   ): Unit = js.native
 }
-

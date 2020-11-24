@@ -11,33 +11,15 @@ import typings.webicon.svgIconSetMod.SvgIconSet
 import typings.webicon.urlConfigMod.UrlConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webicon/System/PublicApi", JSImport.Namespace)
 @js.native
 object publicApiMod extends js.Object {
+  
   @js.native
   trait PublicApi extends js.Object {
-    /**
-      * An alias of the `defaultSource`-method.
-      */
-    var default: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any = js.native
-    /**
-      * An alias of the `defaultSvgSetUrl`-method.
-      */
-    var defaultSvgIconSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
-    /**
-      * An alias of the `defaultSvgSetUrl`-method.
-      */
-    var defaultSvgSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
-    /**
-      * An alias of the `svgSet`-method.
-      */
-    var iconSet: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSet'] */ js.Any = js.native
-    /**
-      * An alias of the `alias`-method.
-      */
-    var sourceAlias: /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any = js.native
+    
     /**
       * Adds a link to the `alias` icon-set.
       *
@@ -48,6 +30,12 @@ object publicApiMod extends js.Object {
       * The id of the icon-set to refer to.
       */
     def alias(id: String, alias: String): this.type = js.native
+    
+    /**
+      * An alias of the `defaultSource`-method.
+      */
+    var default: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any = js.native
+    
     /**
       * Adds a default svg-set.
       *
@@ -60,6 +48,7 @@ object publicApiMod extends js.Object {
     def defaultIconSetUrl(url: String): this.type = js.native
     def defaultIconSetUrl(url: String, options: SvgCumulativeIconSet): this.type = js.native
     def defaultIconSetUrl(url: String, options: SvgIconSet): this.type = js.native
+    
     /**
       * Sets a default icon-set.
       *
@@ -67,6 +56,12 @@ object publicApiMod extends js.Object {
       * The id of the default icon-set.
       */
     def defaultSource(id: String): this.type = js.native
+    
+    /**
+      * An alias of the `defaultSvgSetUrl`-method.
+      */
+    var defaultSvgIconSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
+    
     /**
       * Sets the default icon-size for svg-icons.
       *
@@ -74,6 +69,12 @@ object publicApiMod extends js.Object {
       * The default svg icon-size.
       */
     def defaultSvgIconSize(size: Double): this.type = js.native
+    
+    /**
+      * An alias of the `defaultSvgSetUrl`-method.
+      */
+    var defaultSvgSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
+    
     /**
       * Adds a font icon-set.
       *
@@ -88,6 +89,7 @@ object publicApiMod extends js.Object {
       */
     def font(id: String, cssClassConfig: CssClassConfig): this.type = js.native
     def font(id: String, cssClassConfig: CssClassConfig, options: CssIconSet): this.type = js.native
+    
     /**
       * Adds a new icon.
       *
@@ -103,6 +105,12 @@ object publicApiMod extends js.Object {
     def icon(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]]): this.type = js.native
     def icon(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]], options: ImageIcon): this.type = js.native
     def icon(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]], options: SvgIcon): this.type = js.native
+    
+    /**
+      * An alias of the `svgSet`-method.
+      */
+    var iconSet: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSet'] */ js.Any = js.native
+    
     /**
       * Preloads the icons.
       *
@@ -126,6 +134,7 @@ object publicApiMod extends js.Object {
     def preload(names: js.Array[String], eventHandler: IconLoadedEventHandler): this.type = js.native
     def preload(names: Boolean): this.type = js.native
     def preload(names: Boolean, eventHandler: IconLoadedEventHandler): this.type = js.native
+    
     /**
       * Adds an event-handler to the `ready`-event.
       *
@@ -133,6 +142,12 @@ object publicApiMod extends js.Object {
       * THe event-handler for handling the `ready`-event.
       */
     def ready(eventHandler: js.Function1[/* injector */ Injector, Unit]): this.type = js.native
+    
+    /**
+      * An alias of the `alias`-method.
+      */
+    var sourceAlias: /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any = js.native
+    
     /**
       * Adds a sprite icon-set.
       *
@@ -147,6 +162,7 @@ object publicApiMod extends js.Object {
       */
     def sprite(id: String, cssClassConfig: CssClassConfig): this.type = js.native
     def sprite(id: String, cssClassConfig: CssClassConfig, options: CssIconSet): this.type = js.native
+    
     /**
       * Adds an icon-set.
       *
@@ -163,6 +179,4 @@ object publicApiMod extends js.Object {
     def svgSet(id: String, urlConfig: UrlConfig[js.Array[String]], options: SvgCumulativeIconSet): this.type = js.native
     def svgSet(id: String, urlConfig: UrlConfig[js.UndefOr[scala.Nothing]], options: SvgIconSet): this.type = js.native
   }
-  
 }
-

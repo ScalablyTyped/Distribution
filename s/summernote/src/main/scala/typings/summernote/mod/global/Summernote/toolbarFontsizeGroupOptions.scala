@@ -4,7 +4,7 @@ import typings.summernote.summernoteStrings.fontname_
 import typings.summernote.summernoteStrings.fontsize_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.summernote.summernoteStrings.fontsize_
@@ -12,13 +12,14 @@ import scala.scalajs.js.annotation._
   - typings.summernote.summernoteStrings.color
 */
 trait toolbarFontsizeGroupOptions extends js.Object
-
 object toolbarFontsizeGroupOptions {
+  
   @scala.inline
   def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
+  
   @scala.inline
   def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
+  
   @scala.inline
   def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
 }
-

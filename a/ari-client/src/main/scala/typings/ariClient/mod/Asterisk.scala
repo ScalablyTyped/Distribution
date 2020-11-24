@@ -10,10 +10,11 @@ import typings.ariClient.anon.Value
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Asterisk extends js.Object {
+  
   /**
     * Adds a log channel.
     *
@@ -28,6 +29,7 @@ trait Asterisk extends js.Object {
     * @param params.configuration - levels of the log channel.
     */
   def addLog(params: Configuration, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Deletes a log channel.
     *
@@ -40,6 +42,7 @@ trait Asterisk extends js.Object {
     * @param params.logChannelName - Log channels name.
     */
   def deleteLog(params: LogChannelName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Delete a dynamic configuration object.
     *
@@ -56,6 +59,7 @@ trait Asterisk extends js.Object {
     * @param params.id - The unique identifier of the object to delete.
     */
   def deleteObject(params: ConfigClass, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Get the value of a global variable.
     *
@@ -71,6 +75,7 @@ trait Asterisk extends js.Object {
     params: typings.ariClient.anon.Variable,
     callback: js.Function2[/* err */ Error, /* variable */ Variable, Unit]
   ): Unit = js.native
+  
   /**
     * Gets Asterisk system information.
     *
@@ -88,6 +93,7 @@ trait Asterisk extends js.Object {
     * @param [params.only] - Filter information returned.
     */
   def getInfo(params: Only, callback: js.Function2[/* err */ Error, /* asteriskinfo */ AsteriskInfo, Unit]): Unit = js.native
+  
   /**
     * Get Asterisk module information.
     *
@@ -100,6 +106,7 @@ trait Asterisk extends js.Object {
     * @param params.moduleName - Modules name.
     */
   def getModule(params: ModuleName, callback: js.Function2[/* err */ Error, /* module */ Module, Unit]): Unit = js.native
+  
   /**
     * Retrieve a dynamic configuration object.
     *
@@ -119,6 +126,7 @@ trait Asterisk extends js.Object {
     params: ConfigClass,
     callback: js.Function2[/* err */ Error, /* configtuples */ js.Array[ConfigTuple], Unit]
   ): Unit = js.native
+  
   /**
     * Gets Asterisk log channel information.
     */
@@ -127,6 +135,7 @@ trait Asterisk extends js.Object {
     * Gets Asterisk log channel information.
     */
   def listLogChannels(callback: js.Function2[/* err */ Error, /* logchannels */ js.Array[LogChannel], Unit]): Unit = js.native
+  
   /**
     * List Asterisk modules.
     */
@@ -135,6 +144,7 @@ trait Asterisk extends js.Object {
     * List Asterisk modules.
     */
   def listModules(callback: js.Function2[/* err */ Error, /* modules */ js.Array[Module], Unit]): Unit = js.native
+  
   /**
     * Load an Asterisk module.
     *
@@ -147,6 +157,7 @@ trait Asterisk extends js.Object {
     * @param params.moduleName - Modules name.
     */
   def loadModule(params: ModuleName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Response pong message.
     */
@@ -155,6 +166,7 @@ trait Asterisk extends js.Object {
     * Response pong message.
     */
   def ping(callback: js.Function2[/* err */ Error, /* asteriskping */ AsteriskPing, Unit]): Unit = js.native
+  
   /**
     * Reload an Asterisk module.
     *
@@ -167,6 +179,7 @@ trait Asterisk extends js.Object {
     * @param params.moduleName - Modules name.
     */
   def reloadModule(params: ModuleName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Rotates a log channel.
     *
@@ -179,6 +192,7 @@ trait Asterisk extends js.Object {
     * @param params.logChannelName - Log channels name.
     */
   def rotateLog(params: LogChannelName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Set the value of a global variable.
     *
@@ -193,6 +207,7 @@ trait Asterisk extends js.Object {
     * @param [params.value] - The value to set the variable to.
     */
   def setGlobalVar(params: Value, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Unload an Asterisk module.
     *
@@ -205,6 +220,7 @@ trait Asterisk extends js.Object {
     * @param params.moduleName - Modules name.
     */
   def unloadModule(params: ModuleName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Create or update a dynamic configuration object.
     *
@@ -227,4 +243,3 @@ trait Asterisk extends js.Object {
     callback: js.Function2[/* err */ Error, /* configtuples */ js.Array[ConfigTuple], Unit]
   ): Unit = js.native
 }
-

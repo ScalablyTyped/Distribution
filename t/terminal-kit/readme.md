@@ -9,10 +9,10 @@ Typings are for version 1.28
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | terminal-kit |
-| Keywords           | terminal, console, ansi, xterm, color, 256 colors, true color, style, input, input field, mouse, gpm, cursor, menu, progress bar, screenbuffer, textbuffer, 32-bit, composition, image, png, jpeg, gif |
-| # releases         | 113 |
-| # dependents       | 224 |
-| # downloads        | 661330 |
+| Keywords           | terminal, console, ansi, cli, xterm, color, 256 colors, true color, style, input, input field, mouse, gpm, cursor, menu, spinner, progress bar, screenbuffer, textbuffer, 32-bit, composition, image, png, jpeg, gif |
+| # releases         | 119 |
+| # dependents       | 266 |
+| # downloads        | 922570 |
 | # stars            | 45 |
 
 ## Links

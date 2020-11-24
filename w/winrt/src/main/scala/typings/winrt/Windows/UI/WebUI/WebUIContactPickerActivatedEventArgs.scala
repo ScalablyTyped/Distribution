@@ -7,14 +7,14 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUIContactPickerActivatedEventArgs
   extends IContactPickerActivatedEventArgs
      with IActivatedEventArgsDeferral
-
 object WebUIContactPickerActivatedEventArgs {
+  
   @scala.inline
   def apply(
     activatedOperation: ActivatedOperation,
@@ -27,4 +27,3 @@ object WebUIContactPickerActivatedEventArgs {
     __obj.asInstanceOf[WebUIContactPickerActivatedEventArgs]
   }
 }
-

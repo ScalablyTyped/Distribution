@@ -1,7 +1,7 @@
 
 # Scala.js typings for numbro
 
-Typings are for version 2.3.1
+Typings are for version 2.3.2
 
 ## Library description:
 Format and manipulate numbers.
@@ -10,9 +10,9 @@ Format and manipulate numbers.
 | ------------------ | :-------------: |
 | Full name          | numbro |
 | Keywords           | numeral, numbro, number, format, time, money, percentage |
-| # releases         | 11 |
-| # dependents       | 96 |
-| # downloads        | 5145470 |
+| # releases         | 6 |
+| # dependents       | 111 |
+| # downloads        | 7098855 |
 | # stars            | 3 |
 
 ## Links

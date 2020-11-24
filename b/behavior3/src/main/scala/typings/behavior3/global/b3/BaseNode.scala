@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.Category
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The BaseNode class is used as super class to all nodes in BehaviorJS. It
@@ -33,4 +33,3 @@ class BaseNode ()
   extends typings.behavior3.b3.BaseNode {
   def this(hasCategoryNameTitleDescriptionProperties: Category) = this()
 }
-

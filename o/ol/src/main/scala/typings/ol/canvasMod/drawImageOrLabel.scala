@@ -1,17 +1,19 @@
 package typings.ol.canvasMod
 
 import typings.ol.olMod.Transform
+import typings.ol.sizeMod.Size
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/render/canvas", "drawImageOrLabel")
 @js.native
 object drawImageOrLabel extends js.Object {
+  
   def apply(
     context: CanvasRenderingContext2D,
     transform: Null,
@@ -23,7 +25,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -36,7 +38,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -49,7 +51,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -62,7 +64,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -75,7 +77,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -88,7 +90,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -101,7 +103,7 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
   def apply(
     context: CanvasRenderingContext2D,
@@ -114,7 +116,6 @@ object drawImageOrLabel extends js.Object {
     h: Double,
     x: Double,
     y: Double,
-    scale: Double
+    scale: Size
   ): Unit = js.native
 }
-

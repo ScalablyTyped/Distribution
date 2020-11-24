@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * supports simple query feature on a container
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XContainerQuery extends XInterface {
+  
   /**
     * creates a sub set of container items which supports searched properties as minimum
     *
@@ -24,6 +25,7 @@ trait XContainerQuery extends XInterface {
     * @returns an sub set of container items as an enumeration.
     */
   def createSubSetEnumerationByProperties(Properties: SeqEquiv[NamedValue]): XEnumeration = js.native
+  
   /**
     * creates a sub set of container items which match given query command
     *
@@ -34,8 +36,8 @@ trait XContainerQuery extends XInterface {
     */
   def createSubSetEnumerationByQuery(Query: String): XEnumeration = js.native
 }
-
 object XContainerQuery {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -47,22 +49,26 @@ object XContainerQuery {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSubSetEnumerationByProperties = js.Any.fromFunction1(createSubSetEnumerationByProperties), createSubSetEnumerationByQuery = js.Any.fromFunction1(createSubSetEnumerationByQuery), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XContainerQuery]
   }
+  
   @scala.inline
   implicit class XContainerQueryOps[Self <: XContainerQuery] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateSubSetEnumerationByProperties(value: SeqEquiv[NamedValue] => XEnumeration): Self = this.set("createSubSetEnumerationByProperties", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateSubSetEnumerationByQuery(value: String => XEnumeration): Self = this.set("createSubSetEnumerationByQuery", js.Any.fromFunction1(value))
   }
-  
 }
-

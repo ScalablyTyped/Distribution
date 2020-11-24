@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains information considered the view state.
@@ -13,12 +13,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ViewState extends js.Object {
+  
   /**
     * The affine transform associated with the view.
     *
     * This member is used to transform coordinates of draw operations from user space to screen space.
     */
   var AffineTransform: AffineMatrix2D = js.native
+  
   /**
     * The clipping area associated with the view.
     *
@@ -30,29 +32,33 @@ trait ViewState extends js.Object {
     */
   var Clip: XPolyPolygon2D = js.native
 }
-
 object ViewState {
+  
   @scala.inline
   def apply(AffineTransform: AffineMatrix2D, Clip: XPolyPolygon2D): ViewState = {
     val __obj = js.Dynamic.literal(AffineTransform = AffineTransform.asInstanceOf[js.Any], Clip = Clip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewState]
   }
+  
   @scala.inline
   implicit class ViewStateOps[Self <: ViewState] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAffineTransform(value: AffineMatrix2D): Self = this.set("AffineTransform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClip(value: XPolyPolygon2D): Self = this.set("Clip", value.asInstanceOf[js.Any])
   }
-  
 }
-

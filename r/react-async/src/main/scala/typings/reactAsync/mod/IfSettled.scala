@@ -5,7 +5,7 @@ import typings.reactAsync.anon.Persist
 import typings.reactAsync.anon.PersistState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Renders only when promise is fulfilled or rejected.
@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-async", "IfSettled")
 @js.native
 object IfSettled extends js.Object {
-  var propTypes: Persist = js.native
+  
   def apply[T /* <: js.Object */](hasChildrenPersistState: PersistState[T]): Element = js.native
+  
+  var propTypes: Persist = js.native
 }
-

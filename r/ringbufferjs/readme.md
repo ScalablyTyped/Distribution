@@ -10,13 +10,13 @@ a simple ring buffer data structure
 | ------------------ | :-------------: |
 | Full name          | ringbufferjs |
 | Keywords           | ring, buffer, circular, queue, ring buffer, circular buffer, data structure |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 6225632 |
+| # releases         | 2 |
+| # dependents       | 10 |
+| # downloads        | 8687819 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/janogonzalez/ringbufferjs#readme)
+- [Homepage](https://github.com/janogonzalez/ringbufferjs)
 - [Bugs](https://github.com/janogonzalez/ringbufferjs/issues)
 - [Repository](https://github.com/janogonzalez/ringbufferjs)
 - [Npm](https://www.npmjs.com/package/ringbufferjs)

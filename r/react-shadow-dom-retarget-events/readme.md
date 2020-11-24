@@ -10,9 +10,9 @@ Retargets event in a shadow root to react
 | ------------------ | :-------------: |
 | Full name          | react-shadow-dom-retarget-events |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 106311 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 247211 |
 | # stars            | 0 |
 
 ## Links

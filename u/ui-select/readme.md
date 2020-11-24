@@ -11,7 +11,7 @@ Typings are for version 0.19.8
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 43 |
-| # downloads        | 3161357 |
+| # downloads        | 4008892 |
 | # stars            | 3 |
 
 ## Links

@@ -6,125 +6,184 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeListColumn
 import typings.devextreme.mod.DevExpress.ui.dxTreeListRowObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataDisplayValue extends js.Object {
+  
   var cellElement: js.UndefOr[dxElement] = js.native
+  
   var column: js.UndefOr[dxTreeListColumn] = js.native
+  
   var columnIndex: js.UndefOr[Double] = js.native
+  
   var component: js.UndefOr[dxTreeList] = js.native
+  
   var data: js.UndefOr[js.Any] = js.native
+  
   var displayValue: js.UndefOr[js.Any] = js.native
+  
   var element: js.UndefOr[dxElement] = js.native
+  
   var isExpanded: js.UndefOr[Boolean] = js.native
+  
   var isNewRow: js.UndefOr[Boolean] = js.native
+  
   var isSelected: js.UndefOr[Boolean] = js.native
+  
   var key: js.UndefOr[js.Any] = js.native
+  
   var model: js.UndefOr[js.Any] = js.native
+  
   var oldValue: js.UndefOr[js.Any] = js.native
+  
   var row: js.UndefOr[dxTreeListRowObject] = js.native
+  
   var rowIndex: js.UndefOr[Double] = js.native
+  
   var rowType: js.UndefOr[String] = js.native
+  
   var text: js.UndefOr[String] = js.native
+  
   var value: js.UndefOr[js.Any] = js.native
+  
   var watch: js.UndefOr[js.Function] = js.native
 }
-
 object DataDisplayValue {
+  
   @scala.inline
   def apply(): DataDisplayValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataDisplayValue]
   }
+  
   @scala.inline
   implicit class DataDisplayValueOps[Self <: DataDisplayValue] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCellElement(value: dxElement): Self = this.set("cellElement", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCellElement: Self = this.set("cellElement", js.undefined)
+    
     @scala.inline
     def setColumn(value: dxTreeListColumn): Self = this.set("column", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumn: Self = this.set("column", js.undefined)
+    
     @scala.inline
     def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    
     @scala.inline
     def setComponent(value: dxTreeList): Self = this.set("component", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteComponent: Self = this.set("component", js.undefined)
+    
     @scala.inline
     def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDisplayValue(value: js.Any): Self = this.set("displayValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisplayValue: Self = this.set("displayValue", js.undefined)
+    
     @scala.inline
     def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteElement: Self = this.set("element", js.undefined)
+    
     @scala.inline
     def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsExpanded: Self = this.set("isExpanded", js.undefined)
+    
     @scala.inline
     def setIsNewRow(value: Boolean): Self = this.set("isNewRow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsNewRow: Self = this.set("isNewRow", js.undefined)
+    
     @scala.inline
     def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsSelected: Self = this.set("isSelected", js.undefined)
+    
     @scala.inline
     def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKey: Self = this.set("key", js.undefined)
+    
     @scala.inline
     def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteModel: Self = this.set("model", js.undefined)
+    
     @scala.inline
     def setOldValue(value: js.Any): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOldValue: Self = this.set("oldValue", js.undefined)
+    
     @scala.inline
     def setRow(value: dxTreeListRowObject): Self = this.set("row", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRow: Self = this.set("row", js.undefined)
+    
     @scala.inline
     def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    
     @scala.inline
     def setRowType(value: String): Self = this.set("rowType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRowType: Self = this.set("rowType", js.undefined)
+    
     @scala.inline
     def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteText: Self = this.set("text", js.undefined)
+    
     @scala.inline
     def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValue: Self = this.set("value", js.undefined)
+    
     @scala.inline
     def setWatch(value: js.Function): Self = this.set("watch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWatch: Self = this.set("watch", js.undefined)
   }
-  
 }
-

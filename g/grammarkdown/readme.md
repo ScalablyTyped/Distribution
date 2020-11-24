@@ -1,7 +1,7 @@
 
 # Scala.js typings for grammarkdown
 
-Typings are for version 2.2.0
+Typings are for version 2.2.7
 
 ## Library description:
 Markdown-like DSL for defining syntactic grammars for programming languages.
@@ -10,9 +10,9 @@ Markdown-like DSL for defining syntactic grammars for programming languages.
 | ------------------ | :-------------: |
 | Full name          | grammarkdown |
 | Keywords           | grammar, language, syntax, dsl, javascript, typescript, ecmascript |
-| # releases         | 15 |
+| # releases         | 23 |
 | # dependents       | 1 |
-| # downloads        | 7323 |
+| # downloads        | 11157 |
 | # stars            | 1 |
 
 ## Links

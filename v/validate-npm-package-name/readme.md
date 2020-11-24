@@ -10,9 +10,9 @@ Give me a string and I'll tell you if it's a valid npm package name
 | ------------------ | :-------------: |
 | Full name          | validate-npm-package-name |
 | Keywords           | npm, package, names, validation |
-| # releases         | 0 |
-| # dependents       | 1107 |
-| # downloads        | 86682698 |
+| # releases         | 1 |
+| # dependents       | 1468 |
+| # downloads        | 142634192 |
 | # stars            | 6 |
 
 ## Links

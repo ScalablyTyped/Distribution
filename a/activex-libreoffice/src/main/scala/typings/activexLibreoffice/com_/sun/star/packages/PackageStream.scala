@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service represents a stream contained within a {@link Package} . Instances of this class can only be constructed by the implementation of the
@@ -24,8 +24,8 @@ trait PackageStream
      with XChild
      with XActiveDataSink
      with XPropertySet
-
 object PackageStream {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -53,4 +53,3 @@ object PackageStream {
     __obj.asInstanceOf[PackageStream]
   }
 }
-

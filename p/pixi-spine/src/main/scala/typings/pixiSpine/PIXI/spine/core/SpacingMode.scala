@@ -2,14 +2,14 @@ package typings.pixiSpine.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SpacingMode extends js.Object
-
 @JSGlobal("PIXI.spine.core.SpacingMode")
 @js.native
 object SpacingMode extends js.Object {
+  
   @js.native
   sealed trait Fixed extends SpacingMode
   
@@ -18,6 +18,4 @@ object SpacingMode extends js.Object {
   
   @js.native
   sealed trait Percent extends SpacingMode
-  
 }
-

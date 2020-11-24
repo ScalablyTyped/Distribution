@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CashDrawerStatusKind extends js.Object
-
 /** Defines the constants that indicate the cash drawer power status. */
 @JSGlobal("Windows.Devices.PointOfService.CashDrawerStatusKind")
 @js.native
 object CashDrawerStatusKind extends js.Object {
+  
   /** The device status is not any of the above states. This is available so a POS driver can provide custom notifications to the app. */
   @js.native
   sealed trait extended extends CashDrawerStatusKind
@@ -30,6 +30,4 @@ object CashDrawerStatusKind extends js.Object {
   /** The device is powered on and ready to use. */
   @js.native
   sealed trait online extends CashDrawerStatusKind
-  
 }
-

@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Conversion factor for converting degrees to radians.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.DEG_TO_RAD")
 @js.native
 object DEG_TO_RAD extends TopLevel[Double]
-

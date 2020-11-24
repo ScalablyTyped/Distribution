@@ -5,11 +5,12 @@ import typings.emberData.emberDataStrings.string
 import typings.emberData.mod.DS.AttrOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember-data", "attr")
 @js.native
 object attr_string extends js.Object {
+  
   /**
     * `DS.attr` defines an attribute on a [DS.Model](/api/data/classes/DS.Model.html).
     * By default, attributes are passed through as-is, however you can specify an
@@ -21,4 +22,3 @@ object attr_string extends js.Object {
   def apply(`type`: string): ComputedProperty[String, String] = js.native
   def apply(`type`: string, options: AttrOptions[String]): ComputedProperty[String, String] = js.native
 }
-

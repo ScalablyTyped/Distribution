@@ -2,15 +2,15 @@ package typings.emittery.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("emittery", JSImport.Namespace)
 @js.native
 class ^ () extends Emittery
-
 @JSImport("emittery", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Fires when an event listener was added.
   	An object with `listener` and `eventName` (if `on` or `off` was used) is provided as event data.
@@ -30,6 +30,7 @@ object ^ extends js.Object {
   	```
   	*/
   val listenerAdded: js.Symbol = js.native
+  
   /**
   	Fires when an event listener was removed.
   	An object with `listener` and `eventName` (if `on` or `off` was used) is provided as event data.
@@ -50,6 +51,7 @@ object ^ extends js.Object {
   	```
   	*/
   val listenerRemoved: js.Symbol = js.native
+  
   /**
   	In TypeScript, it returns a decorator which mixins `Emittery` as property `emitteryPropertyName` and `methodNames`, or all `Emittery` methods if `methodNames` is not defined, into the target class.
   	@example
@@ -63,5 +65,6 @@ object ^ extends js.Object {
   	*/
   def mixin(emitteryPropertyName: String): js.Function = js.native
   def mixin(emitteryPropertyName: String, methodNames: js.Array[String]): js.Function = js.native
+  def mixin(emitteryPropertyName: js.Symbol): js.Function = js.native
+  def mixin(emitteryPropertyName: js.Symbol, methodNames: js.Array[String]): js.Function = js.native
 }
-

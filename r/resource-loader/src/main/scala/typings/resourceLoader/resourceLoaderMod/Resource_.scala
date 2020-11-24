@@ -12,7 +12,7 @@ import typings.std.Error
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @param {string} name - The name of the resource to load.
@@ -37,6 +37,14 @@ class Resource_ protected () extends js.Object {
   def this(name: String, url: js.Array[String]) = this()
   def this(name: String, url: String, options: CrossOrigin) = this()
   def this(name: String, url: js.Array[String], options: CrossOrigin) = this()
+  
+  /**
+    * Aborts the loading of this resource, with an optional message.
+    *
+    * @param {string} message - The message to use for the error
+    */
+  def abort(message: String): Unit = js.native
+  
   /**
     * The child resources this resource owns.
     *
@@ -44,18 +52,27 @@ class Resource_ protected () extends js.Object {
     * @member {Resource[]}
     */
   val children: js.Array[Resource] = js.native
+  
+  /**
+    * Marks the resource as complete.
+    *
+    */
+  def complete(): Unit = js.native
+  
   /**
     * Is this request cross-origin? If unset, determined automatically.
     *
     * @member {string}
     */
   var crossOrigin: String = js.native
+  
   /**
     * The data that was loaded by the resource.
     *
     * @member {any}
     */
   var data: js.Any = js.native
+  
   /**
     * The error that occurred while loading (if any).
     *
@@ -63,6 +80,7 @@ class Resource_ protected () extends js.Object {
     * @member {Error}
     */
   val error: Error = js.native
+  
   /**
     * The extension used to load this resource.
     *
@@ -70,6 +88,7 @@ class Resource_ protected () extends js.Object {
     * @member {string}
     */
   val extension: String = js.native
+  
   /**
     * Describes if this resource has finished loading. Is true when the resource has completely
     * loaded.
@@ -78,6 +97,7 @@ class Resource_ protected () extends js.Object {
     * @member {boolean}
     */
   val isComplete: Boolean = js.native
+  
   /**
     * Stores whether or not this url is a data url.
     *
@@ -85,6 +105,7 @@ class Resource_ protected () extends js.Object {
     * @member {boolean}
     */
   val isDataUrl: Boolean = js.native
+  
   /**
     * Describes if this resource is currently loading. Is true when the resource starts loading,
     * and is false again when complete.
@@ -93,12 +114,22 @@ class Resource_ protected () extends js.Object {
     * @member {boolean}
     */
   val isLoading: Boolean = js.native
+  
+  /**
+    * Kicks off loading of this resource. This method is asynchronous.
+    *
+    * @param {Resource.OnCompleteSignal} [cb] - Optional callback to call once the resource is loaded.
+    */
+  def load(): Unit = js.native
+  def load(cb: OnCompleteSignal): Unit = js.native
+  
   /**
     * The method of loading to use for this resource.
     *
     * @member {Resource.LOAD_TYPE}
     */
   var loadType: LOAD_TYPE = js.native
+  
   /**
     * Extra info for middleware, and controlling specifics about how the resource loads.
     *
@@ -108,6 +139,7 @@ class Resource_ protected () extends js.Object {
     * @member {Resource.IMetadata}
     */
   var metadata: IMetadata = js.native
+  
   /**
     * The name of this resource.
     *
@@ -115,6 +147,7 @@ class Resource_ protected () extends js.Object {
     * @member {string}
     */
   val name: String = js.native
+  
   /**
     * Dispatched after this resource has had all the *after* middleware run on it.
     *
@@ -123,6 +156,7 @@ class Resource_ protected () extends js.Object {
     * @member {Signal<Resource.OnCompleteSignal>}
     */
   var onAfterMiddleware: default[OnCompleteSignal] = js.native
+  
   /**
     * Dispatched once this resource has loaded, if there was an error it will
     * be in the `error` property.
@@ -132,6 +166,7 @@ class Resource_ protected () extends js.Object {
     * @member {Signal<Resource.OnCompleteSignal>}
     */
   var onComplete: default[OnCompleteSignal] = js.native
+  
   /**
     * Dispatched each time progress of this resource load updates.
     * Not all resources types and loader systems can support this event
@@ -144,6 +179,7 @@ class Resource_ protected () extends js.Object {
     * @member {Signal<Resource.OnProgressSignal>}
     */
   var onProgress: default[OnProgressSignal] = js.native
+  
   /**
     * Dispatched when the resource beings to load.
     *
@@ -152,6 +188,7 @@ class Resource_ protected () extends js.Object {
     * @member {Signal<Resource.OnStartSignal>}
     */
   var onStart: default[OnStartSignal] = js.native
+  
   /**
     * The progress chunk owned by this resource.
     *
@@ -159,6 +196,7 @@ class Resource_ protected () extends js.Object {
     * @member {number}
     */
   val progressChunk: Double = js.native
+  
   /**
     * A timeout in milliseconds for the load. If the load takes longer than this time
     * it is cancelled and the load is considered a failure. If this value is set to `0`
@@ -167,6 +205,7 @@ class Resource_ protected () extends js.Object {
     * @member {number}
     */
   var timeout: Double = js.native
+  
   /**
     * The resource type.
     *
@@ -174,6 +213,7 @@ class Resource_ protected () extends js.Object {
     * @member {Resource.TYPE}
     */
   val `type`: TYPE = js.native
+  
   /**
     * The url used to load this resource.
     *
@@ -181,6 +221,7 @@ class Resource_ protected () extends js.Object {
     * @member {string}
     */
   val url: String = js.native
+  
   /**
     * The XHR object that was used to load this resource. This is only set
     * when `loadType` is `Resource.LOAD_TYPE.XHR`.
@@ -189,29 +230,11 @@ class Resource_ protected () extends js.Object {
     * @member {XMLHttpRequest}
     */
   val xhr: XMLHttpRequest = js.native
+  
   /**
     * The type used to load the resource via XHR. If unset, determined automatically.
     *
     * @member {string}
     */
   var xhrType: String = js.native
-  /**
-    * Aborts the loading of this resource, with an optional message.
-    *
-    * @param {string} message - The message to use for the error
-    */
-  def abort(message: String): Unit = js.native
-  /**
-    * Marks the resource as complete.
-    *
-    */
-  def complete(): Unit = js.native
-  /**
-    * Kicks off loading of this resource. This method is asynchronous.
-    *
-    * @param {Resource.OnCompleteSignal} [cb] - Optional callback to call once the resource is loaded.
-    */
-  def load(): Unit = js.native
-  def load(cb: OnCompleteSignal): Unit = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.ejWebAll.ej.datavisualization.RangeNavigator
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofRangeNavigator
@@ -18,7 +18,8 @@ trait TypeofRangeNavigator
       /* options */ Model, 
       RangeNavigator
     ] {
+  
   var Locale: js.Any = js.native
+  
   var fn: RangeNavigator = js.native
 }
-

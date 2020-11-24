@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a map between keys and values.
@@ -17,23 +17,27 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XMap extends XElementAccess {
+  
   /**
     * denotes the type of the keys in the map.
     *
     * Implementations are free to accept any supertype of `KeyType` as keys.
     */
   var KeyType: `type` = js.native
+  
   /**
     * denotes the type of the values in the map.
     *
     * Implementations are free to accept any supertype of the `ValueType` as values.
     */
   var ValueType: `type` = js.native
+  
   /**
     * clears the map, removing all key-value pairs from it.
     * @throws com::sun::star::lang::NoSupportException if the map is not mutable.
     */
   def clear(): Unit = js.native
+  
   /**
     * determines whether a mapping for the given key exists in the map
     * @param Key is the key whose presence in the map is to be tested.
@@ -42,6 +46,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::lang::IllegalArgumentException if the given key is not supported to be put into the map. It's up to the service implementing the
     */
   def containsKey(Key: js.Any): Boolean = js.native
+  
   /**
     * determines whether the map contains a mapping to a given value.
     * @param Value is the value whose presence in the map is to be tested.
@@ -50,6 +55,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::lang::IllegalArgumentException if the given value is not supported to be put into the map.
     */
   def containsValue(Value: js.Any): Boolean = js.native
+  
   /**
     * gets the value to which a given key maps.
     * @param Key they key whose associated value is to be returned.
@@ -59,6 +65,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::container::NoSuchElementException if there is no value associated with the given key
     */
   def get(Key: js.Any): js.Any = js.native
+  
   /**
     * associates a given key with a given value
     *
@@ -71,6 +78,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::lang::NoSupportException if the map does not support putting new mappings into it
     */
   def put(Key: js.Any, Value: js.Any): js.Any = js.native
+  
   /**
     * removes a key-value mapping, given by key, from the map.
     * @param Key is the key whose mapping should be removed from the map
@@ -82,8 +90,8 @@ trait XMap extends XElementAccess {
     */
   def remove(Key: js.Any): js.Any = js.native
 }
-
 object XMap {
+  
   @scala.inline
   def apply(
     ElementType: `type`,
@@ -104,34 +112,44 @@ object XMap {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[XMap]
   }
+  
   @scala.inline
   implicit class XMapOps[Self <: XMap] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKeyType(value: `type`): Self = this.set("KeyType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValueType(value: `type`): Self = this.set("ValueType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setContainsKey(value: js.Any => Boolean): Self = this.set("containsKey", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setContainsValue(value: js.Any => Boolean): Self = this.set("containsValue", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGet(value: js.Any => js.Any): Self = this.set("get", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setPut(value: (js.Any, js.Any) => js.Any): Self = this.set("put", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemove(value: js.Any => js.Any): Self = this.set("remove", js.Any.fromFunction1(value))
   }
-  
 }
-

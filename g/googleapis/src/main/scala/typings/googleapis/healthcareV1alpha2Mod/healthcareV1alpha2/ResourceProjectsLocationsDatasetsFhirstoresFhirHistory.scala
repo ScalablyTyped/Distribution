@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$_history")
 @js.native
 class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.fhir._history.get
     * @desc Gets a version (current or historical) of FHIR resource by version
@@ -46,6 +48,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extend
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.fhir._history.list
     * @desc Lists all the versions of a resource (including the current version
@@ -84,4 +87,3 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extend
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

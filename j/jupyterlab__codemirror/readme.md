@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__codemirror
 
-Typings are for version 2.1.1
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - CodeMirror Editor Provider
@@ -10,9 +10,9 @@ JupyterLab - CodeMirror Editor Provider
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/codemirror |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 40 |
-| # downloads        | 1033919 |
+| # releases         | 111 |
+| # dependents       | 49 |
+| # downloads        | 1741870 |
 | # stars            | 0 |
 
 ## Links

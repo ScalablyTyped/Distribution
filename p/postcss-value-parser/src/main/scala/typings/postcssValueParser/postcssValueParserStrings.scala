@@ -2,9 +2,37 @@ package typings.postcssValueParser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postcssValueParserStrings {
+  
+  @scala.inline
+  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
+  
+  @scala.inline
+  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
+  
+  @scala.inline
+  def comment: comment = "comment".asInstanceOf[comment]
+  
+  @scala.inline
+  def div: div = "div".asInstanceOf[div]
+  
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  
+  @scala.inline
+  def space: space = "space".asInstanceOf[space]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def `unicode-range`: `unicode-range` = "unicode-range".asInstanceOf[`unicode-range`]
+  
+  @scala.inline
+  def word: word = "word".asInstanceOf[word]
+  
   @js.native
   sealed trait Apostrophe extends js.Object
   
@@ -31,24 +59,4 @@ object postcssValueParserStrings {
   
   @js.native
   sealed trait word extends js.Object
-  
-  @scala.inline
-  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  @scala.inline
-  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def `unicode-range`: `unicode-range` = "unicode-range".asInstanceOf[`unicode-range`]
-  @scala.inline
-  def word: word = "word".asInstanceOf[word]
 }
-

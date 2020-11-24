@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NetworkDeviceStatus extends js.Object
-
 /** Describes the readiness of a device to connect to a wireless network. */
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkDeviceStatus")
 @js.native
 object NetworkDeviceStatus extends js.Object {
+  
   /** A subscription account for the mobile broadband device is not active. */
   @js.native
   sealed trait accountNotActivated extends NetworkDeviceStatus
@@ -42,6 +42,4 @@ object NetworkDeviceStatus extends js.Object {
   /** The mobile broadband device does not have a SIM card. */
   @js.native
   sealed trait simNotInserted extends NetworkDeviceStatus
-  
 }
-

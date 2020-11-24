@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.TreeGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SummaryType extends js.Object
-
 @JSGlobal("ej.TreeGrid.SummaryType")
 @js.native
 object SummaryType extends js.Object {
+  
   ///Displays the average of summary column
   @js.native
   sealed trait Average extends SummaryType
@@ -49,6 +49,4 @@ object SummaryType extends js.Object {
   ///Displays the true count value for boolean summary columns
   @js.native
   sealed trait TrueCount extends SummaryType
-  
 }
-

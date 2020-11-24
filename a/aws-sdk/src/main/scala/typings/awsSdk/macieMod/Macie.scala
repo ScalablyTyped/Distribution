@@ -1,17 +1,16 @@
 package typings.awsSdk.macieMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Macie extends Service {
-  @JSName("config")
-  var config_Macie: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Associates a specified AWS account with Amazon Macie Classic as a member account.
     */
@@ -25,6 +24,7 @@ trait Macie extends Service {
     params: AssociateMemberAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Associates specified S3 resources with Amazon Macie Classic for monitoring and data classification. If memberAccountId isn't specified, the action associates specified S3 resources with Macie Classic for the current master account. If memberAccountId is specified, the action associates specified S3 resources with Macie Classic for the specified member account. 
     */
@@ -38,6 +38,10 @@ trait Macie extends Service {
     params: AssociateS3ResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateS3ResourcesResult, Unit]
   ): Request[AssociateS3ResourcesResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Macie: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Removes the specified member account from Amazon Macie Classic.
     */
@@ -51,6 +55,7 @@ trait Macie extends Service {
     params: DisassociateMemberAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes specified S3 resources from being monitored by Amazon Macie Classic. If memberAccountId isn't specified, the action removes specified S3 resources from Macie Classic for the current master account. If memberAccountId is specified, the action removes specified S3 resources from Macie Classic for the specified member account.
     */
@@ -64,6 +69,7 @@ trait Macie extends Service {
     params: DisassociateS3ResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateS3ResourcesResult, Unit]
   ): Request[DisassociateS3ResourcesResult, AWSError] = js.native
+  
   /**
     * Lists all Amazon Macie Classic member accounts for the current Amazon Macie Classic master account.
     */
@@ -77,6 +83,7 @@ trait Macie extends Service {
     params: ListMemberAccountsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMemberAccountsResult, Unit]
   ): Request[ListMemberAccountsResult, AWSError] = js.native
+  
   /**
     * Lists all the S3 resources associated with Amazon Macie Classic. If memberAccountId isn't specified, the action lists the S3 resources associated with Amazon Macie Classic for the current master account. If memberAccountId is specified, the action lists the S3 resources associated with Amazon Macie Classic for the specified member account. 
     */
@@ -90,6 +97,7 @@ trait Macie extends Service {
     params: ListS3ResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListS3ResourcesResult, Unit]
   ): Request[ListS3ResourcesResult, AWSError] = js.native
+  
   /**
     * Updates the classification types for the specified S3 resources. If memberAccountId isn't specified, the action updates the classification types of the S3 resources associated with Amazon Macie Classic for the current master account. If memberAccountId is specified, the action updates the classification types of the S3 resources associated with Amazon Macie Classic for the specified member account. 
     */
@@ -104,4 +112,3 @@ trait Macie extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateS3ResourcesResult, Unit]
   ): Request[UpdateS3ResourcesResult, AWSError] = js.native
 }
-

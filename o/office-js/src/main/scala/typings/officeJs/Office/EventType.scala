@@ -2,11 +2,10 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EventType extends js.Object
-
 /**
   * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
   * 
@@ -23,6 +22,7 @@ sealed trait EventType extends js.Object
 @JSGlobal("Office.EventType")
 @js.native
 object EventType extends js.Object {
+  
   /**
     * A Document.ActiveViewChanged event was raised.
     * 
@@ -89,6 +89,12 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait DialogMessageReceived extends EventType
+  
+  /**
+    * Triggers when a host page sends a message to a child dialog box with `messageChild`.
+    */
+  @js.native
+  sealed trait DialogParentMessageReceived extends EventType
   
   /**
     * Triggers when a document-level selection happens.
@@ -186,6 +192,4 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait ViewSelectionChanged extends EventType
-  
 }
-

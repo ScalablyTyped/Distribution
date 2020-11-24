@@ -4,7 +4,7 @@ import typings.lokijs.anon.PartialGetDataOptions
 import typings.lokijs.anon.PartialSimplesortOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resultset class allowing chainable queries.  Intended to be instanced internally.
@@ -18,26 +18,29 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Resultset[E /* <: js.Object */] extends js.Object {
+  
+  @JSName("$and")
+  def $and(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
   @JSName("$and")
   var $and_Original: js.Function1[/* expressionArray */ js.Array[LokiQuery[E]], this.type] = js.native
+  
+  @JSName("$or")
+  def $or(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
   @JSName("$or")
   var $or_Original: js.Function1[/* expressionArray */ js.Array[LokiQuery[E]], this.type] = js.native
+  
+  /**
+    * Alias of copy()
+    */
+  def branch(): Resultset[E] = js.native
   /**
     * Alias of copy()
     */
   @JSName("branch")
   var branch_Original: js.Function0[Resultset[E]] = js.native
+  
   var collection: Collection[E] = js.native
-  var filterInitialized: Boolean = js.native
-  var filteredrows: js.Array[Double] = js.native
-  @JSName("$and")
-  def $and(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
-  @JSName("$or")
-  def $or(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
-  /**
-    * Alias of copy()
-    */
-  def branch(): Resultset[E] = js.native
+  
   /**
     * Allows sorting a resultset based on multiple columns.
     * @example
@@ -50,18 +53,21 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
   def compoundsort(properties: js.Array[js.Tuple2[/* keyof E */ String, Boolean]]): this.type = js.native
+  
   /**
     * copy() - To support reuse of resultset in branched query situations.
     *
     * @returns Returns a copy of the resultset (set) but the underlying document references will be the same.
     */
   def copy(): Resultset[E] = js.native
+  
   /**
     * count() - returns the number of documents in the resultset.
     *
     * @returns The number of documents in the resultset.
     */
   def count(): Double = js.native
+  
   /**
     * Terminates the chain and returns array of filtered documents
     *
@@ -76,6 +82,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     */
   def data(): js.Array[E with LokiObj] = js.native
   def data(options: PartialGetDataOptions): js.Array[E with LokiObj] = js.native
+  
   def eqJoin(joinData: js.Array[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
   def eqJoin(
     joinData: js.Array[_],
@@ -353,6 +360,11 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
     dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
+  
+  var filterInitialized: Boolean = js.native
+  
+  var filteredrows: js.Array[Double] = js.native
+  
   /**
     * Used for querying via a mongo-style query object.
     *
@@ -364,6 +376,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
   def find(query: js.UndefOr[scala.Nothing], firstOnly: Boolean): this.type = js.native
   def find(query: LokiQuery[E]): this.type = js.native
   def find(query: LokiQuery[E], firstOnly: Boolean): this.type = js.native
+  
   /**
     * findAnd() - oversee the operation of AND'ed query expressions.
     *    AND'ed expression evaluation runs each expression progressively against the full collection,
@@ -374,6 +387,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def findAnd(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
+  
   /**
     * findOr() - oversee the operation of OR'ed query expressions.
     *    OR'ed expression evaluation runs each expression individually against the full collection,
@@ -384,6 +398,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def findOr(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
+  
   /**
     * Allows you to limit the number of documents passed to next chain operation.
     *    A resultset copy() is made to avoid altering original resultset.
@@ -392,6 +407,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns Returns a copy of the resultset, limited by qty, for subsequent chain ops.
     */
   def limit(qty: Double): Resultset[E] = js.native
+  
   /**
     * Applies a map function into a new collection for further chaining.
     * @param mapFun - javascript map function
@@ -405,6 +421,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     mapFun: js.Function3[/* value */ E, /* index */ Double, /* array */ js.Array[E], U],
     dataOptions: PartialGetDataOptions
   ): Resultset[U] = js.native
+  
   /**
     * data transformation via user supplied functions
     *
@@ -416,6 +433,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     mapFunction: js.Function3[/* value */ E, /* index */ Double, /* array */ js.Array[E], U],
     reduceFunction: js.Function1[/* ary */ js.Array[U], R]
   ): R = js.native
+  
   /**
     * Used for skipping 'pos' number of documents in the resultset.
     *
@@ -423,18 +441,21 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns Returns a copy of the resultset, containing docs starting at 'pos' for subsequent chain ops.
     */
   def offset(pos: Double): Resultset[E] = js.native
+  
   /**
     * Removes all document objects which are currently in resultset from collection (as well as resultset)
     *
     * @returns this (empty) resultset for further chain ops.
     */
   def remove(): this.type = js.native
+  
   /**
     * reset() - Reset the resultset to its initial state.
     *
     * @returns Reference to this resultset, for future chain operations.
     */
   def reset(): this.type = js.native
+  
   /**
     * Simpler, loose evaluation for user to sort based on a property name. (chainable).
     *    Sorting based on the same lt/gt helper functions used for binary indices.
@@ -450,6 +471,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
   def simplesort(propname: /* keyof E */ String): this.type = js.native
   def simplesort(propname: /* keyof E */ String, options: Boolean): this.type = js.native
   def simplesort(propname: /* keyof E */ String, options: PartialSimplesortOptions): this.type = js.native
+  
   /**
     * User supplied compare function is provided two documents to compare. (chainable)
     * @example
@@ -463,10 +485,12 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
   def sort(comparefun: js.Function2[/* a */ E with LokiObj, /* b */ E with LokiObj, Double]): this.type = js.native
+  
   /**
     * toJSON() - Override of toJSON to avoid circular references
     */
   def toJSON(): Resultset[E] = js.native
+  
   /**
     * transform() - executes a named collection transform or raw array of transform steps against the resultset.
     *
@@ -478,6 +502,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
   def transform(transform: String, parameters: js.Object): Resultset[_] = js.native
   def transform(transform: js.Array[String | Transform]): Resultset[_] = js.native
   def transform(transform: js.Array[String | Transform], parameters: js.Object): Resultset[_] = js.native
+  
   /**
     * Used to run an update operation on all documents currently in the resultset.
     *
@@ -485,6 +510,7 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def update(updateFunction: js.Function1[/* obj */ E, Unit]): this.type = js.native
+  
   /**
     * where() - Used for filtering via a javascript filter function.
     *
@@ -493,4 +519,3 @@ trait Resultset[E /* <: js.Object */] extends js.Object {
     */
   def where(fun: js.Function1[/* data */ E with LokiObj, Boolean]): this.type = js.native
 }
-

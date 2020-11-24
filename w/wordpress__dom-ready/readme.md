@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__dom-ready
 
-Typings are for version 2.10.0
+Typings are for version 2.11.0
 
 ## Library description:
 Execute callback after the DOM is loaded.
@@ -9,15 +9,16 @@ Execute callback after the DOM is loaded.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/dom-ready |
-| Keywords           | wordpress, dom-ready |
-| # releases         | 18 |
-| # dependents       | 5 |
-| # downloads        | 190918 |
+| Keywords           | wordpress, gutenberg, dom-ready |
+| # releases         | 14 |
+| # dependents       | 8 |
+| # downloads        | 566021 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/dom-ready/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdom-ready)
     
 

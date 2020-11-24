@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "constantinople" : "3.1.2"
+      "constantinople" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "constantinople" : "3.1.2"
+      "constantinople" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

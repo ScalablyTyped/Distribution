@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.form.XBoundComponent
 import typings.activexLibreoffice.com_.sun.star.form.XLoadListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a text field which is data-aware, and can be bound to a database field. */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -33,6 +33,7 @@ trait DatabaseTextField
   extends TextField
      with XBoundComponent
      with XLoadListener {
+  
   /**
     * references to the cursor field to which the control is bound.
     *
@@ -41,6 +42,7 @@ trait DatabaseTextField
     * @see DataAwareControlModel.DataField
     */
   var BoundField: XPropertySet = js.native
+  
   /**
     * determines if an empty text should be treated as a `NULL` value.
     *
@@ -50,6 +52,7 @@ trait DatabaseTextField
     * If the property is set to `TRUE` , and an empty text is to be committed, this is converted into `NULL` , else it is written as empty string.
     */
   var ConvertEmptyToNull: Boolean = js.native
+  
   /**
     * specifies the name of the bound database field.
     *
@@ -62,6 +65,7 @@ trait DatabaseTextField
     * @see DataAwareControlModel.BoundField
     */
   var DataField: String = js.native
+  
   /**
     * determines whether or not input into this field is required, when it is actually bound to a database field.
     *
@@ -71,6 +75,7 @@ trait DatabaseTextField
     * @since OOo 3.1
     */
   var InputRequired: Boolean = js.native
+  
   /**
     * references to a control model within the same document which should be used as a label.
     *
@@ -91,6 +96,7 @@ trait DatabaseTextField
     * com.sun.star.form.component.GroupBox} ) only.
     */
   var LabelControl: XPropertySet = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -98,4 +104,3 @@ trait DatabaseTextField
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

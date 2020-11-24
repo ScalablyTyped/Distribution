@@ -3,7 +3,7 @@ package typings.delaunator.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("delaunator", JSImport.Namespace)
 @js.native
@@ -14,10 +14,10 @@ class ^[P] protected () extends Delaunator[P] {
     */
   def this(points: ArrayLike[Double]) = this()
 }
-
 @JSImport("delaunator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Constructs a delaunay triangulation object given an array of points ([x, y] by default).
     */
@@ -32,4 +32,3 @@ object ^ extends js.Object {
     getY: js.Function1[/* point */ P, Double]
   ): Delaunator[P] = js.native
 }
-

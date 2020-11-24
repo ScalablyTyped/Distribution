@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebaserules/v1", "firebaserules_v1.Resource$Projects$Rulesets")
 @js.native
 class ResourceProjectsRulesets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebaserules.projects.rulesets.create
     * @desc Create a `Ruleset` from `Source`.  The `Ruleset` is given a unique
@@ -46,6 +48,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRuleset]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.rulesets.delete
     * @desc Delete a `Ruleset` by resource name.  If the `Ruleset` is
@@ -75,6 +78,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.rulesets.get
     * @desc Get a `Ruleset` by name including the full `Source` contents.
@@ -103,6 +107,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRuleset]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.rulesets.list
     * @desc List `Ruleset` metadata only and optionally filter the results by
@@ -140,4 +145,3 @@ class ResourceProjectsRulesets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListRulesetsResponse]
   ): Unit = js.native
 }
-

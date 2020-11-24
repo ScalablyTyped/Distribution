@@ -11,8 +11,8 @@ Fast Javascript text diff
 | Full name          | fast-diff |
 | Keywords           | diff |
 | # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 93408288 |
+| # dependents       | 65 |
+| # downloads        | 163135801 |
 | # stars            | 6 |
 
 ## Links

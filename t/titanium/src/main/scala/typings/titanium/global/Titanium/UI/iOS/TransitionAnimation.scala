@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transition animation when opening or closing windows in a
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransitionAnimation ()
   extends typings.titanium.Titanium.UI.iOS.TransitionAnimation
-

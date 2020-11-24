@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the text sections in a text document. */
 @js.native
 trait TextSections
   extends XIndexAccess
      with XNameAccess
-
 object TextSections {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -35,4 +35,3 @@ object TextSections {
     __obj.asInstanceOf[TextSections]
   }
 }
-

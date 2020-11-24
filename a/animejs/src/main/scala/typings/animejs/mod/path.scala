@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("animejs", "path")
 @js.native
 object path extends js.Object {
+  
   def apply(): js.Function1[/* prop */ String, El] = js.native
   def apply(path: String): js.Function1[/* prop */ String, El] = js.native
   def apply(path: String, percent: Double): js.Function1[/* prop */ String, El] = js.native
@@ -19,4 +20,3 @@ object path extends js.Object {
   def apply(path: SVGElement): js.Function1[/* prop */ String, El] = js.native
   def apply(path: SVGElement, percent: Double): js.Function1[/* prop */ String, El] = js.native
 }
-

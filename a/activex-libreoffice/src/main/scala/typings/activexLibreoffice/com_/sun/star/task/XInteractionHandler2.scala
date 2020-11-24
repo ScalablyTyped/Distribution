@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interaction request handler.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XInteractionHandler2 extends XInteractionHandler {
+  
   /**
     * Handle an interaction request.
     * @param Request the inteaction request to handle.
@@ -21,8 +22,8 @@ trait XInteractionHandler2 extends XInteractionHandler {
     */
   def handleInteractionRequest(Request: XInteractionRequest): Boolean = js.native
 }
-
 object XInteractionHandler2 {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -34,20 +35,23 @@ object XInteractionHandler2 {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XInteractionHandler2]
   }
+  
   @scala.inline
   implicit class XInteractionHandler2Ops[Self <: XInteractionHandler2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHandleInteractionRequest(value: XInteractionRequest => Boolean): Self = this.set("handleInteractionRequest", js.Any.fromFunction1(value))
   }
-  
 }
-

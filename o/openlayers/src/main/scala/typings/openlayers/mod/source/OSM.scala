@@ -4,7 +4,7 @@ import typings.openlayers.mod.Attribution
 import typings.openlayers.mod.olx.source.OSMOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -25,11 +25,11 @@ import scala.scalajs.js.annotation._
 class OSM () extends XYZ {
   def this(opt_options: OSMOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "source.OSM")
 @js.native
 object OSM extends js.Object {
+  
   /**
     * The attribution containing a link to the OpenStreetMap Copyright and License
     * page.
@@ -38,4 +38,3 @@ object OSM extends js.Object {
     */
   var ATTRIBUTION: Attribution = js.native
 }
-

@@ -2,13 +2,15 @@ package typings.inquirer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object prompts {
+  
   /**
     * Provides a set of prompt-constructors.
     */
   type PromptCollection = typings.std.Record[java.lang.String, typings.inquirer.mod.prompts.PromptConstructor]
+  
   /**
     * Provides a base for and prompt-options.
     *
@@ -16,6 +18,7 @@ package object prompts {
     * The type of the answers.
     */
   type PromptOptions[T /* <: typings.inquirer.mod.Question[typings.inquirer.mod.Answers] */] = T with typings.inquirer.anon.Choices
+  
   /**
     * Represents the state of a prompt.
     */

@@ -5,10 +5,11 @@ import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallManifestFilePathPrefixWeightNamesRequestInit extends js.Object {
+  
   def apply(manifest: WeightsManifestConfig): js.Promise[NamedTensorMap] = js.native
   def apply(
     manifest: WeightsManifestConfig,
@@ -42,4 +43,3 @@ trait FnCallManifestFilePathPrefixWeightNamesRequestInit extends js.Object {
     requestInit: RequestInit
   ): js.Promise[NamedTensorMap] = js.native
 }
-

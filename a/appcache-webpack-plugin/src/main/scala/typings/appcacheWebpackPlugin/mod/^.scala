@@ -2,7 +2,7 @@ package typings.appcacheWebpackPlugin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generate an HTML5 Application Cache for a Webpack build
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends AppCachePlugin {
   def this(options: Options) = this()
 }
-

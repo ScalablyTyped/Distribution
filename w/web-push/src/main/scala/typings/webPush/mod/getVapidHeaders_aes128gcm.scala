@@ -4,11 +4,12 @@ import typings.webPush.anon.Authorization
 import typings.webPush.webPushStrings.aes128gcm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web-push", "getVapidHeaders")
 @js.native
 object getVapidHeaders_aes128gcm extends js.Object {
+  
   def apply(
     audience: String,
     subject: String,
@@ -25,4 +26,3 @@ object getVapidHeaders_aes128gcm extends js.Object {
     expiration: Double
   ): Authorization = js.native
 }
-

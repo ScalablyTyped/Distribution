@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor/components", "withFontSizes")
 @js.native
@@ -15,4 +15,3 @@ object withFontSizes
         js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
       ]
     ]
-

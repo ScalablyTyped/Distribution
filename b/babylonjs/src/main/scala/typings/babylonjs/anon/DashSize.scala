@@ -4,37 +4,88 @@ import typings.babylonjs.linesMeshMod.LinesMesh
 import typings.babylonjs.mathVectorMod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DashSize extends js.Object {
-  var dashNb: js.UndefOr[Double] = js.undefined
-  var dashSize: js.UndefOr[Double] = js.undefined
-  var gapSize: js.UndefOr[Double] = js.undefined
-  var instance: js.UndefOr[LinesMesh] = js.undefined
-  var points: js.Array[Vector3]
-  var updatable: js.UndefOr[Boolean] = js.undefined
-  var useVertexAlpha: js.UndefOr[Boolean] = js.undefined
+  
+  var dashNb: js.UndefOr[Double] = js.native
+  
+  var dashSize: js.UndefOr[Double] = js.native
+  
+  var gapSize: js.UndefOr[Double] = js.native
+  
+  var instance: js.UndefOr[LinesMesh] = js.native
+  
+  var points: js.Array[Vector3] = js.native
+  
+  var updatable: js.UndefOr[Boolean] = js.native
+  
+  var useVertexAlpha: js.UndefOr[Boolean] = js.native
 }
-
 object DashSize {
+  
   @scala.inline
-  def apply(
-    points: js.Array[Vector3],
-    dashNb: js.UndefOr[Double] = js.undefined,
-    dashSize: js.UndefOr[Double] = js.undefined,
-    gapSize: js.UndefOr[Double] = js.undefined,
-    instance: LinesMesh = null,
-    updatable: js.UndefOr[Boolean] = js.undefined,
-    useVertexAlpha: js.UndefOr[Boolean] = js.undefined
-  ): DashSize = {
+  def apply(points: js.Array[Vector3]): DashSize = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashNb)) __obj.updateDynamic("dashNb")(dashNb.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashSize)) __obj.updateDynamic("dashSize")(dashSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gapSize)) __obj.updateDynamic("gapSize")(gapSize.get.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useVertexAlpha)) __obj.updateDynamic("useVertexAlpha")(useVertexAlpha.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashSize]
   }
+  
+  @scala.inline
+  implicit class DashSizeOps[Self <: DashSize] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setPointsVarargs(value: Vector3*): Self = this.set("points", js.Array(value :_*))
+    
+    @scala.inline
+    def setPoints(value: js.Array[Vector3]): Self = this.set("points", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDashNb(value: Double): Self = this.set("dashNb", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDashNb: Self = this.set("dashNb", js.undefined)
+    
+    @scala.inline
+    def setDashSize(value: Double): Self = this.set("dashSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDashSize: Self = this.set("dashSize", js.undefined)
+    
+    @scala.inline
+    def setGapSize(value: Double): Self = this.set("gapSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteGapSize: Self = this.set("gapSize", js.undefined)
+    
+    @scala.inline
+    def setInstance(value: LinesMesh): Self = this.set("instance", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    
+    @scala.inline
+    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpdatable: Self = this.set("updatable", js.undefined)
+    
+    @scala.inline
+    def setUseVertexAlpha(value: Boolean): Self = this.set("useVertexAlpha", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUseVertexAlpha: Self = this.set("useVertexAlpha", js.undefined)
+  }
 }
-

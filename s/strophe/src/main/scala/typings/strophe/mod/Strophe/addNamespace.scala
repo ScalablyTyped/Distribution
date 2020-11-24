@@ -2,11 +2,12 @@ package typings.strophe.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.addNamespace")
 @js.native
 object addNamespace extends js.Object {
+  
   /** Function: addNamespace
     *  This function is used to extend the current namespaces in
     *  Strophe.NS.  It takes a key and a value with the key being the
@@ -21,4 +22,3 @@ object addNamespace extends js.Object {
     */
   def apply(name: String, value: String): Unit = js.native
 }
-

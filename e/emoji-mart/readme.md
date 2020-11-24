@@ -10,9 +10,9 @@ Customizable Slack-like emoji picker for React
 | ------------------ | :-------------: |
 | Full name          | emoji-mart |
 | Keywords           | react, emoji, picker |
-| # releases         | 17 |
-| # dependents       | 58 |
-| # downloads        | 1806394 |
+| # releases         | 9 |
+| # dependents       | 75 |
+| # downloads        | 3161709 |
 | # stars            | 1 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a set of methods and properties to work with the document selection.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class RichEditSelection ()
   extends typings.devexpressWeb.RichEditSelection
-

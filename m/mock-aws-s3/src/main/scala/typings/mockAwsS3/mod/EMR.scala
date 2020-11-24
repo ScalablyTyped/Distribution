@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.emrMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "EMR")
 @js.native
@@ -14,4 +14,3 @@ class EMR ()
   extends typings.awsSdk.mod.EMR {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -5,11 +5,12 @@ import typings.std.RegExp
 import typings.yadda.libMod.StepFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Library
   extends typings.yadda.languageMod.Library {
+  
   def given(step: String): this.type = js.native
   def given(
     step: String,
@@ -244,6 +245,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def `then`(step: String): this.type = js.native
   def `then`(
     step: String,
@@ -478,6 +480,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def when(step: String): this.type = js.native
   def when(
     step: String,
@@ -713,4 +716,3 @@ trait Library
     ]
   ): this.type = js.native
 }
-

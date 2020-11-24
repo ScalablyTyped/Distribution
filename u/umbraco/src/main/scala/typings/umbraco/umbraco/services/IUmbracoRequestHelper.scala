@@ -6,7 +6,7 @@ import typings.umbraco.anon.ErrorMsg
 import typings.umbraco.mod.resources.IResourcePromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IUmbracoRequestHelper extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.umbRequestHelper#convertVirtualToAbsolutePath
@@ -27,6 +28,7 @@ trait IUmbracoRequestHelper extends js.Object {
     * @param {string} a virtual path, if this is already an absolute path it will just be returned, if this is a relative path an exception will be thrown
     */
   def convertVirtualToAbsolutePath(virtualPath: String): String = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.umbRequestHelper#dictionaryToQueryString
@@ -39,6 +41,7 @@ trait IUmbracoRequestHelper extends js.Object {
     * @param {Array} queryStrings An array of key/value pairs
     */
   def dictionaryToQueryString(queryStrings: js.Array[KeyValuePair[String]]): String = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.umbRequestHelper#getApiUrl
@@ -54,6 +57,7 @@ trait IUmbracoRequestHelper extends js.Object {
     */
   def getApiUrl(apiName: String, actionName: String, queryStrings: String): String = js.native
   def getApiUrl(apiName: String, actionName: String, queryStrings: js.Array[KeyValuePair[String]]): String = js.native
+  
   /**
     * @ngdoc function
     * @name umbraco.services.umbRequestHelper#resourcePromise
@@ -79,4 +83,3 @@ trait IUmbracoRequestHelper extends js.Object {
   def resourcePromise[T](httpPromise: IPromise[T], opts: Error[T]): IResourcePromise | js.Object = js.native
   def resourcePromise[T](httpPromise: IPromise[T], opts: ErrorMsg[T]): IResourcePromise | js.Object = js.native
 }
-

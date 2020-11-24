@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/people/v1", "people_v1.Resource$Contactgroups")
 @js.native
 class ResourceContactgroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var members: ResourceContactgroupsMembers = js.native
+  
   /**
     * people.contactGroups.batchGet
     * @desc Get a list of contact groups owned by the authenticated user by
@@ -47,6 +46,9 @@ class ResourceContactgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetContactGroupsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * people.contactGroups.create
     * @desc Create a new contact group owned by the authenticated user.
@@ -75,6 +77,7 @@ class ResourceContactgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContactGroup]
   ): Unit = js.native
+  
   /**
     * people.contactGroups.delete
     * @desc Delete an existing contact group owned by the authenticated user by
@@ -105,6 +108,7 @@ class ResourceContactgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * people.contactGroups.get
     * @desc Get a specific contact group owned by the authenticated user by
@@ -135,6 +139,7 @@ class ResourceContactgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContactGroup]
   ): Unit = js.native
+  
   /**
     * people.contactGroups.list
     * @desc List all contact groups owned by the authenticated user. Members of
@@ -169,6 +174,9 @@ class ResourceContactgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListContactGroupsResponse]
   ): Unit = js.native
+  
+  var members: ResourceContactgroupsMembers = js.native
+  
   /**
     * people.contactGroups.update
     * @desc Update the name of an existing contact group owned by the
@@ -200,4 +208,3 @@ class ResourceContactgroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaContactGroup]
   ): Unit = js.native
 }
-

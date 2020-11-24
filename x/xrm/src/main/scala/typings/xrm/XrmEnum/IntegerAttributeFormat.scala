@@ -4,7 +4,7 @@ import typings.xrm.xrmStrings.duration
 import typings.xrm.xrmStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Integer attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.NumberAttribute NumberAttribute}.
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.none
 */
 trait IntegerAttributeFormat extends js.Object
-
 object IntegerAttributeFormat {
+  
   @scala.inline
   def Duration: duration = "duration".asInstanceOf[duration]
+  
   @scala.inline
   def None: none = "none".asInstanceOf[none]
 }
-

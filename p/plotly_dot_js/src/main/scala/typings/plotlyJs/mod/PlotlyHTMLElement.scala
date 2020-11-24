@@ -26,16 +26,18 @@ import typings.plotlyJs.plotlyJsStrings.plotly_selecting
 import typings.plotlyJs.plotlyJsStrings.plotly_sliderchange
 import typings.plotlyJs.plotlyJsStrings.plotly_sliderend
 import typings.plotlyJs.plotlyJsStrings.plotly_sliderstart
+import typings.plotlyJs.plotlyJsStrings.plotly_sunburstclick
 import typings.plotlyJs.plotlyJsStrings.plotly_transitioning
 import typings.plotlyJs.plotlyJsStrings.plotly_transitioninterrupted
 import typings.plotlyJs.plotlyJsStrings.plotly_unhover
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlotlyHTMLElement extends HTMLElement {
+  
   @JSName("on")
   def on_plotlyafterexport(event: plotly_afterexport, callback: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -89,11 +91,13 @@ trait PlotlyHTMLElement extends HTMLElement {
   @JSName("on")
   def on_plotlysliderstart(event: plotly_sliderstart, callback: js.Function1[/* event */ SliderStartEvent, Unit]): Unit = js.native
   @JSName("on")
+  def on_plotlysunburstclick(event: plotly_sunburstclick, callback: js.Function1[/* event */ SunburstClickEvent, Unit]): Unit = js.native
+  @JSName("on")
   def on_plotlytransitioning(event: plotly_transitioning, callback: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_plotlytransitioninterrupted(event: plotly_transitioninterrupted, callback: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_plotlyunhover(event: plotly_unhover, callback: js.Function1[/* event */ PlotMouseEvent, Unit]): Unit = js.native
+  
   def removeAllListeners(handler: String): Unit = js.native
 }
-

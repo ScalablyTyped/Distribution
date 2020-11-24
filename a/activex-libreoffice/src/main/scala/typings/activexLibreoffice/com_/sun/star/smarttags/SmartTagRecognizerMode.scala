@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies the which type of text is passed to {@link XSmartTagRecognizer.recognize()}
@@ -19,15 +19,17 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait SmartTagRecognizerMode extends js.Object
-
 object SmartTagRecognizerMode {
+  
   @scala.inline
   def CELL: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def CHAR: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def PARAGRAPH: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def SINGLE_WORD: `1` = 1.asInstanceOf[`1`]
 }
-

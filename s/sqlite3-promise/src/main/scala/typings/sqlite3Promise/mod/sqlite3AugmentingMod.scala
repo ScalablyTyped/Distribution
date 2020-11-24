@@ -3,16 +3,20 @@ package typings.sqlite3Promise.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("sqlite3", JSImport.Namespace)
 @js.native
 object sqlite3AugmentingMod extends js.Object {
+  
   @js.native
   trait Database extends js.Object {
+    
     def allAsync(sql: String): js.Promise[js.Array[_]] = js.native
+    
     def closeAsync(): js.Promise[Unit] = js.native
+    
     def eachAsync(sql: String): js.Promise[Double] = js.native
     def eachAsync(
       sql: String,
@@ -34,10 +38,11 @@ object sqlite3AugmentingMod extends js.Object {
           Unit
         ]
     ): js.Promise[Double] = js.native
+    
     def execAsync(sql: String): js.Promise[typings.sqlite3.mod.Statement] = js.native
+    
     def getAsync(sql: String): js.Promise[_] = js.native
+    
     def runAsync(sql: String): js.Promise[Unit] = js.native
   }
-  
 }
-

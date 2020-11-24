@@ -5,7 +5,7 @@ import typings.grammarkdown.tokensMod.SyntaxKind.ButKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.NotKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "ButNotSymbol")
 @js.native
@@ -48,4 +48,3 @@ class ButNotSymbol protected ()
     right: LexicalSymbol
   ) = this()
 }
-

@@ -7,11 +7,12 @@ import typings.jupyterlabApputils.inputdialogMod.InputDialog.INumberOptions
 import typings.jupyterlabApputils.inputdialogMod.InputDialog.ITextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "InputDialog")
 @js.native
 object InputDialog extends js.Object {
+  
   /**
     * Create and show a input dialog for a boolean.
     *
@@ -20,6 +21,7 @@ object InputDialog extends js.Object {
     * @returns A promise that resolves with whether the dialog was accepted
     */
   def getBoolean(options: IBooleanOptions): js.Promise[IResult[Boolean]] = js.native
+  
   /**
     * Create and show a input dialog for a choice.
     *
@@ -28,6 +30,7 @@ object InputDialog extends js.Object {
     * @returns A promise that resolves with whether the dialog was accepted
     */
   def getItem(options: IItemOptions): js.Promise[IResult[String]] = js.native
+  
   /**
     * Create and show a input dialog for a number.
     *
@@ -36,6 +39,7 @@ object InputDialog extends js.Object {
     * @returns A promise that resolves with whether the dialog was accepted
     */
   def getNumber(options: INumberOptions): js.Promise[IResult[Double]] = js.native
+  
   /**
     * Create and show a input dialog for a password.
     *
@@ -44,6 +48,7 @@ object InputDialog extends js.Object {
     * @returns A promise that resolves with whether the dialog was accepted
     */
   def getPassword(options: ITextOptions): js.Promise[IResult[String]] = js.native
+  
   /**
     * Create and show a input dialog for a text.
     *
@@ -53,4 +58,3 @@ object InputDialog extends js.Object {
     */
   def getText(options: ITextOptions): js.Promise[IResult[String]] = js.native
 }
-

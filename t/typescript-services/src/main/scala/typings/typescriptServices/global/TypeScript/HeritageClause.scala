@@ -2,7 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.HeritageClause")
 @js.native
@@ -13,4 +13,3 @@ class HeritageClause protected ()
     typeNames: typings.typescriptServices.TypeScript.ISeparatedSyntaxList2
   ) = this()
 }
-

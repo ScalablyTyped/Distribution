@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.kendraMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Kendra")
 @js.native
@@ -14,4 +14,3 @@ class Kendra ()
   extends typings.awsSdk.mod.Kendra {
   def this(options: ClientConfiguration) = this()
 }
-

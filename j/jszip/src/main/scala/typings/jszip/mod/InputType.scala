@@ -2,7 +2,7 @@ package typings.jszip.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.jszip.jszipStrings.base64
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
   - typings.jszip.jszipStrings.stream
 */
 trait InputType extends js.Object
-

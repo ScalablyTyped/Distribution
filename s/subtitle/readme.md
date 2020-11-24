@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-Parse and manipulate SRT (SubRip)
+Stream-based library for parsing and manipulating subtitles
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | subtitle |
-| Keywords           | subtitle, webvtt, srt, captions, subrip, parser, stringify |
-| # releases         | 8 |
-| # dependents       | 11 |
-| # downloads        | 51348 |
+| Keywords           | subtitle, webvtt, srt, vtt, captions, subrip, parse, parser, stringify, validate, validation, stream, streams, read, write, map, filter |
+| # releases         | 6 |
+| # dependents       | 21 |
+| # downloads        | 100369 |
 | # stars            | 1 |
 
 ## Links

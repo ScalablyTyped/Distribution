@@ -8,7 +8,7 @@ import typings.relayRuntime.readerNodeMod.ReaderSelection
 import typings.relayRuntime.relayRuntimeStrings.InlineDataFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation
 */
 trait GeneratedNode extends js.Object
-
 object GeneratedNode {
+  
   @scala.inline
   def ConcreteRequest(
     fragment: ReaderFragment,
@@ -29,6 +29,7 @@ object GeneratedNode {
     val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }
+  
   @scala.inline
   def ReaderFragment(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
@@ -41,15 +42,16 @@ object GeneratedNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }
+  
   @scala.inline
   def ReaderInlineDataFragment(kind: InlineDataFragment, name: String): GeneratedNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }
+  
   @scala.inline
   def NormalizationSplitOperation(kind: String, name: String, selections: js.Array[NormalizationSelection]): GeneratedNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }
 }
-

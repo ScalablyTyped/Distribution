@@ -16,21 +16,25 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Server extends EventEmitter {
+  
   def addListener(event: String, listener: js.Function0[Unit]): this.type = js.native
+  
   /**
     * A function that closes the inner webserver and stops listening on given port
     */
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * A function that wraps the object in a webserver, for your convenience
     * @param port - Port to listen on
     */
   def listen(port: Double): Server = js.native
+  
   def on(event: String, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_close(
@@ -98,8 +102,11 @@ trait Server extends EventEmitter {
     event: start,
     listener: js.Function3[/* req */ IncomingMessage, /* res */ ServerResponse, /* target */ ProxyTargetUrl, Unit]
   ): this.type = js.native
+  
   def once(event: String, listener: js.Function0[Unit]): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function0[Unit]): this.type = js.native
+  
   /**
     * Used for proxying regular HTTP(S) requests
     * @param req - Client request.
@@ -115,6 +122,7 @@ trait Server extends EventEmitter {
   ): Unit = js.native
   def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions): Unit = js.native
   def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions, callback: ErrorCallback): Unit = js.native
+  
   /**
     * Used for proxying regular HTTP(S) requests
     * @param req - Client request.
@@ -139,4 +147,3 @@ trait Server extends EventEmitter {
     callback: ErrorCallback
   ): Unit = js.native
 }
-

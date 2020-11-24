@@ -2,14 +2,14 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BootstrapSchedulerGroupType extends js.Object
-
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerGroupType")
 @js.native
 object BootstrapSchedulerGroupType extends js.Object {
+  
   @js.native
   sealed trait Date extends BootstrapSchedulerGroupType
   
@@ -18,6 +18,4 @@ object BootstrapSchedulerGroupType extends js.Object {
   
   @js.native
   sealed trait Resource extends BootstrapSchedulerGroupType
-  
 }
-

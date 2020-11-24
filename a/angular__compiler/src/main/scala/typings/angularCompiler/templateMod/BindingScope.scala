@@ -5,35 +5,54 @@ import typings.angularCompiler.expressionConverterMod.LocalResolver
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.ReadVarExpr
 import typings.angularCompiler.outputAstMod.Statement
+import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
 @js.native
 class BindingScope protected () extends LocalResolver {
+  
   var bindingLevel: Double = js.native
-  /** Keeps a map from local variables to their BindingData. */
-  var map: js.Any = js.native
-  var parent: js.Any = js.native
-  var referenceNameIndex: js.Any = js.native
-  var restoreViewVariable: js.Any = js.native
+  
   def freshReferenceName(): String = js.native
+  
   def generateSharedContextVar(retrievalLevel: Double): Unit = js.native
+  
   def get(name: String): Expression | Null = js.native
+  
   def getComponentProperty(name: String): Expression = js.native
+  
   /**
     * Gets or creates a shared context variable and returns its expression. Note that
     * this does not mean that the shared variable will be declared. Variables in the
     * binding scope will be only declared if they are used.
     */
   def getOrCreateSharedContextVar(retrievalLevel: Double): ReadVarExpr = js.native
+  
   def getSharedContextName(retrievalLevel: Double): ReadVarExpr | Null = js.native
+  
   def isListenerScope(): Boolean | Null = js.native
+  
+  /** Keeps a map from local variables to their BindingData. */
+  var map: js.Any = js.native
+  
   def maybeGenerateSharedContextVar(value: BindingData): Unit = js.native
+  
   def maybeRestoreView(retrievalLevel: Double, localRefLookup: Boolean): Unit = js.native
+  
   def nestedScope(level: Double): BindingScope = js.native
+  def nestedScope(level: Double, globals: Set[String]): BindingScope = js.native
+  
+  var parent: js.Any = js.native
+  
+  var referenceNameIndex: js.Any = js.native
+  
   def restoreViewStatement(): js.Array[Statement] = js.native
+  
+  var restoreViewVariable: js.Any = js.native
+  
   /**
     * Create a local variable for later reference.
     *
@@ -96,14 +115,15 @@ class BindingScope protected () extends LocalResolver {
     declareLocalCallback: DeclareLocalVarCallback,
     localRef: `true`
   ): BindingScope = js.native
+  
   def variableDeclarations(): js.Array[Statement] = js.native
+  
   def viewSnapshotStatements(): js.Array[Statement] = js.native
 }
-
 /* static members */
 @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
 @js.native
 object BindingScope extends js.Object {
+  
   def createRootScope(): BindingScope = js.native
 }
-

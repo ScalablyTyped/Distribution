@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Quests")
 @js.native
 class ResourceQuests protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * games.quests.accept
     * @desc Indicates that the currently authorized user will participate in
@@ -43,6 +43,9 @@ class ResourceQuests protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQuest]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * games.quests.list
     * @desc Get a list of quests for your application and the currently
@@ -76,4 +79,3 @@ class ResourceQuests protected () extends js.Object {
     callback: BodyResponseCallback[SchemaQuestListResponse]
   ): Unit = js.native
 }
-

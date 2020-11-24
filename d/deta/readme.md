@@ -12,7 +12,7 @@ Deta library for Javascript
 | Keywords           | Deta, SDK, for, Node.js |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 670 |
+| # downloads        | 882 |
 | # stars            | 0 |
 
 ## Links

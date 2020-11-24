@@ -2,10 +2,11 @@ package typings.aureliaPal.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Performance extends js.Object {
+  
   /**
     * Removes the given mark from the browser's performance entry buffer.
     *
@@ -14,6 +15,7 @@ trait Performance extends js.Object {
     */
   def clearMarks(): Unit = js.native
   def clearMarks(markName: String): Unit = js.native
+  
   /**
     * Removes the given measure from the browser's performance entry buffer.
     *
@@ -22,6 +24,7 @@ trait Performance extends js.Object {
     */
   def clearMeasures(): Unit = js.native
   def clearMeasures(measureName: String): Unit = js.native
+  
   /**
     * Returns a list of PerformanceEntry objects based on the given name and entry type.
     *
@@ -32,6 +35,7 @@ trait Performance extends js.Object {
     */
   def getEntriesByName(name: String): js.Any = js.native
   def getEntriesByName(name: String, entryType: String): js.Any = js.native
+  
   /**
     * Returns a list of PerformanceEntry objects of the given entry type.
     *
@@ -40,6 +44,7 @@ trait Performance extends js.Object {
     * @memberof IPerformance
     */
   def getEntriesByType(entryType: String): js.Any = js.native
+  
   /**
     * Creates a timestamp in the browser's performance entry buffer with the given name.
     *
@@ -47,6 +52,7 @@ trait Performance extends js.Object {
     * @memberof IPerformance
     */
   def mark(markName: String): Unit = js.native
+  
   /**
     * Creates a named timestamp in the browser's performance entry buffer between two specified marks (known as the start mark and end mark, respectively).
     *
@@ -59,10 +65,10 @@ trait Performance extends js.Object {
   def measure(measureName: String, startMarkName: js.UndefOr[scala.Nothing], endMarkName: String): Unit = js.native
   def measure(measureName: String, startMarkName: String): Unit = js.native
   def measure(measureName: String, startMarkName: String, endMarkName: String): Unit = js.native
+  
   /**
     * Gets a DOMHighResTimeStamp.
     * @return The timestamp, measured in milliseconds, accurate to one thousandth of a millisecond.
     */
   def now(): Double = js.native
 }
-

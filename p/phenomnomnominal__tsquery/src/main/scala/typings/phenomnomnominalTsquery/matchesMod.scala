@@ -6,11 +6,12 @@ import typings.phenomnomnominalTsquery.tsqueryTypesMod.TSQuerySelectorNode
 import typings.typescript.mod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@phenomnomnominal/tsquery/dist/src/matchers/matches", JSImport.Namespace)
 @js.native
 object matchesMod extends js.Object {
+  
   @JSName("matches")
   def matches_every(modifier: every): js.Function3[
     /* node */ Node, 
@@ -26,4 +27,3 @@ object matchesMod extends js.Object {
     Boolean
   ] = js.native
 }
-

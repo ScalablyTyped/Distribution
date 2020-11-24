@@ -3,15 +3,18 @@ package typings.loginWithAmazonSdkBrowser
 import typings.loginWithAmazonSdkBrowser.amazon.Login.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object amazon extends js.Object {
+    
     @js.native
     object Login extends js.Object {
+      
       def authorize(options: AccessTokenAuthorizeOptions): AccessTokenRequest = js.native
       def authorize(options: AccessTokenAuthorizeOptions, next: String): AccessTokenRequest = js.native
       def authorize(options: AccessTokenAuthorizeOptions, next: NextCallback[AccessTokenRequest]): AccessTokenRequest = js.native
@@ -21,15 +24,18 @@ object global extends js.Object {
       def authorize(options: CodeAuthorizeOptions): CodeRequest = js.native
       def authorize(options: CodeAuthorizeOptions, next: String): CodeRequest = js.native
       def authorize(options: CodeAuthorizeOptions, next: NextCallback[CodeRequest]): CodeRequest = js.native
+      
       /**
         * Gets the client identifier that will be used to request authorization.
         * You must call `setClientId` before calling this function.
         */
       def getClientId(): String = js.native
+      
       /**
         * Logs out the current user after a call to `authorize`.
         */
       def logout(): Unit = js.native
+      
       /**
         * Retrieves the customer profile and passes it to a callback function.
         * Uses an access token provided by `authorize`.
@@ -45,11 +51,13 @@ object global extends js.Object {
         * @param callback Called with the profile data or an error string
         */
       def retrieveProfile(callback: RetrieveProfileCallback): Unit = js.native
+      
       /**
         * Sets the client identifier that will be used to request authorization.
         * You must call this function before calling `authorize`.
         */
       def setClientId(clientId: String): Unit = js.native
+      
       /**
         * Login With Amazon has multiple authorization and resource endpoints.
         * This API determines the region of the authorization and resource
@@ -58,12 +66,14 @@ object global extends js.Object {
         * When not set, it defaults to “NorthAmerica”
         */
       def setRegion(region: Region): Unit = js.native
+      
       /**
         * Determines whether or not Login with Amazon should use the
         * Amazon Pay sandbox for requests. To use the Amazon Pay sandbox,
         * call `setSandboxMode(true)` before calling `authorize`.
         */
       def setSandboxMode(sandboxMode: Boolean): Unit = js.native
+      
       /**
         * Sets the domain to use for saving cookies.
         * The domain must match the origin of the current page.
@@ -75,6 +85,7 @@ object global extends js.Object {
         * to the same cached tokens.
         */
       def setSiteDomain(siteDomain: String): Unit = js.native
+      
       /**
         * Determines whether or not Login with Amazon should use access tokens
         * written to the `amazon_Login_accessToken` cookie. You can use this
@@ -85,18 +96,19 @@ object global extends js.Object {
         * tokens in that cookie.
         */
       def setUseCookie(useCookie: Boolean): Unit = js.native
+      
       @js.native
       object Region extends js.Object {
-        /* 2 */ val AsiaPacific: typings.loginWithAmazonSdkBrowser.amazon.Login.Region.AsiaPacific with Double = js.native
-        /* 1 */ val Europe: typings.loginWithAmazonSdkBrowser.amazon.Login.Region.Europe with Double = js.native
-        /* 0 */ val NorthAmerica: typings.loginWithAmazonSdkBrowser.amazon.Login.Region.NorthAmerica with Double = js.native
+        
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[typings.loginWithAmazonSdkBrowser.amazon.Login.Region with Double] = js.native
+        
+        /* 2 */ val AsiaPacific: typings.loginWithAmazonSdkBrowser.amazon.Login.Region.AsiaPacific with Double = js.native
+        
+        /* 1 */ val Europe: typings.loginWithAmazonSdkBrowser.amazon.Login.Region.Europe with Double = js.native
+        
+        /* 0 */ val NorthAmerica: typings.loginWithAmazonSdkBrowser.amazon.Login.Region.NorthAmerica with Double = js.native
       }
-      
     }
-    
   }
-  
 }
-

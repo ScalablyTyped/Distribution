@@ -3,7 +3,7 @@ package typings.actionsOnGoogle.actionssdkMod
 import typings.actionsOnGoogle.permissionPermissionMod.PermissionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk", "Permission")
 @js.native
@@ -15,4 +15,3 @@ class Permission protected ()
     */
   def this(options: PermissionOptions) = this()
 }
-

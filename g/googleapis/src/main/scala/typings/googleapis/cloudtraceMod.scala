@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtrace", JSImport.Namespace)
 @js.native
 object cloudtraceMod extends js.Object {
+  
   def cloudtrace(options: Options): Cloudtrace = js.native
   def cloudtrace(options: typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Options): typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace = js.native
   @JSName("cloudtrace")
   def cloudtrace_v1(version: v1): Cloudtrace = js.native
   @JSName("cloudtrace")
   def cloudtrace_v2(version: v2): typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Cloudtrace {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtrace]
+            ]
     
     @js.native
     class v2 protected ()
@@ -37,13 +45,6 @@ object cloudtraceMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtrace]
-            ]
-    
     @js.native
     object v2
       extends TopLevel[
@@ -53,11 +54,11 @@ object cloudtraceMod extends js.Object {
                 typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object cloudtraceMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

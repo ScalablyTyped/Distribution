@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-nested" : "4.2.3"
+      "postcss-nested" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-nested" : "4.2.3"
+      "postcss-nested" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-what" : "3.11.0"
+      "is-what" : "3.12.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-what" : "3.11.0"
+      "is-what" : "3.12.0"
     }
   ],
   "compile-devDependencies" : [

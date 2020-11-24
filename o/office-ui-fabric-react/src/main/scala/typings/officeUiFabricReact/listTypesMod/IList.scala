@@ -2,22 +2,26 @@ package typings.officeUiFabricReact.listTypesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IList extends js.Object {
-  /**
-    * Get the current height the list and it's pages.
-    */
-  var getTotalListHeight: js.UndefOr[js.Function0[Double]] = js.native
+  
   /**
     * Force the component to update.
     */
   def forceUpdate(): Unit = js.native
+  
   /**
     * Get the start index of the page that is currently in view
     */
   def getStartItemIndexInView(): Double = js.native
+  
+  /**
+    * Get the current height the list and it's pages.
+    */
+  var getTotalListHeight: js.UndefOr[js.Function0[Double]] = js.native
+  
   /**
     * Scroll to the given index. By default will bring the page the specified item is on into the view. If a callback
     * to measure the height of an individual item is specified, will only scroll to bring the specific item into view.
@@ -39,4 +43,3 @@ trait IList extends js.Object {
     scrollToMode: ScrollToMode
   ): Unit = js.native
 }
-

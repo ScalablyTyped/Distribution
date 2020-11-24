@@ -11,7 +11,7 @@ Sweet notifications for your angular app
 | Keywords           | angular, notifications |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1805 |
+| # downloads        | 1436 |
 | # stars            | 0 |
 
 ## Links

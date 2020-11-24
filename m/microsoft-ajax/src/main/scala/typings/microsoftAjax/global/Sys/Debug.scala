@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides debugging and tracing functionality for client ECMAScript (JavaScript) code. This class is static and can be invoked directly without creating an instance of the class.
@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
   */
 class Debug ()
   extends typings.microsoftAjax.Sys.Debug
-
 /* static members */
 @JSGlobal("Sys.Debug")
 @js.native
 object Debug extends js.Object {
+  
   //#endregion
   //#region Methods
   /**
@@ -40,22 +40,26 @@ object Debug extends js.Object {
   def assert(condition: Boolean, message: js.UndefOr[scala.Nothing], displayCaller: Boolean): Unit = js.native
   def assert(condition: Boolean, message: String): Unit = js.native
   def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = js.native
+  
   /**
     * Clears all trace messages from the trace console.
     */
   def clearTrace(): Unit = js.native
+  
   /**
     * Displays a message in the debugger's output window and breaks into the debugger.
     * @param message
     *           The message to display.
     */
   def fail(message: String): Unit = js.native
+  
   /**
     * Appends a text line to the debugger console and to the trace console, if available.
     * @param text
     *       The text to display.
     */
   def trace(text: String): Unit = js.native
+  
   /**
     * Dumps an object to the debugger console and to the trace console, if available.
     * @param object
@@ -66,4 +70,3 @@ object Debug extends js.Object {
   def traceDump(`object`: js.Any): Unit = js.native
   def traceDump(`object`: js.Any, name: String): Unit = js.native
 }
-

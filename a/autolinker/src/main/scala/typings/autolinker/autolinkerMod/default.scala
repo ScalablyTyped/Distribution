@@ -8,7 +8,7 @@ import typings.autolinker.htmlTagMod.HtmlTagCfg
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/autolinker", JSImport.Default)
 @js.native
@@ -20,11 +20,11 @@ import scala.scalajs.js.annotation._
 class default () extends Autolinker {
   def this(cfg: AutolinkerConfig) = this()
 }
-
 /* static members */
 @JSImport("autolinker/dist/commonjs/autolinker", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * For backwards compatibility with Autolinker 1.x, the AnchorTagBuilder
     * class is provided as a static on the Autolinker class.
@@ -33,30 +33,13 @@ object default extends js.Object {
     /* cfg */ js.UndefOr[AnchorTagBuilderCfg], 
     typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
   ] = js.native
+  
   /**
     * For backwards compatibility with Autolinker 1.x, the HtmlTag class is
     * provided as a static on the Autolinker class.
     */
   val HtmlTag: Instantiable1[/* cfg */ js.UndefOr[HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
-  /**
-    * For backwards compatibility with Autolinker 1.x, the Match classes are
-    * provided as statics on the Autolinker class.
-    */
-  val `match`: Hashtag = js.native
-  /**
-    * For backwards compatibility with Autolinker 1.x, the Matcher classes are
-    * provided as statics on the Autolinker class.
-    */
-  val matcher: Email = js.native
-  /**
-    * @static
-    * @property {String} version
-    *
-    * The Autolinker version number in the form major.minor.patch
-    *
-    * Ex: 0.25.1
-    */
-  val version: /* "3.14.1" */ String = js.native
+  
   /**
     * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
     * Hashtags, and Mentions found in the given chunk of HTML. Does not link URLs
@@ -81,6 +64,19 @@ object default extends js.Object {
     */
   def link(textOrHtml: String): String = js.native
   def link(textOrHtml: String, options: AutolinkerConfig): String = js.native
+  
+  /**
+    * For backwards compatibility with Autolinker 1.x, the Match classes are
+    * provided as statics on the Autolinker class.
+    */
+  val `match`: Hashtag = js.native
+  
+  /**
+    * For backwards compatibility with Autolinker 1.x, the Matcher classes are
+    * provided as statics on the Autolinker class.
+    */
+  val matcher: Email = js.native
+  
   /**
     * Parses the input `textOrHtml` looking for URLs, email addresses, phone
     * numbers, username handles, and hashtags (depending on the configuration
@@ -115,5 +111,14 @@ object default extends js.Object {
     *   given input `textOrHtml`.
     */
   def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[Match] = js.native
+  
+  /**
+    * @static
+    * @property {String} version
+    *
+    * The Autolinker version number in the form major.minor.patch
+    *
+    * Ex: 0.25.1
+    */
+  val version: /* "3.14.2" */ String = js.native
 }
-

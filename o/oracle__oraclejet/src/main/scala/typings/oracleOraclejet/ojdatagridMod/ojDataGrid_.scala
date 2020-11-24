@@ -19,12 +19,6 @@ import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.HeaderContext
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.LabelContext
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.Selection
-import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell
-import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit
-import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd
-import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize
-import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll
-import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.bandingInterval
@@ -47,6 +41,12 @@ import typings.oracleOraclejet.oracleOraclejetStrings.header
 import typings.oracleOraclejet.oracleOraclejetStrings.headerChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.loadMoreOnScroll
 import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentCell
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeEdit
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeEditEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojResize
+import typings.oracleOraclejet.oracleOraclejetStrings.ojScroll
+import typings.oracleOraclejet.oracleOraclejetStrings.ojSort
 import typings.oracleOraclejet.oracleOraclejetStrings.scroll
 import typings.oracleOraclejet.oracleOraclejetStrings.scrollPolicy
 import typings.oracleOraclejet.oracleOraclejetStrings.scrollPolicyChanged
@@ -63,44 +63,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]] {
-  var bandingInterval: Column = js.native
-  var cell: ClassName[K, D] = js.native
-  var currentCell: CurrentCell[K] | Null = js.native
-  var data: DataProvider[K, D] = js.native
-  var dnd: Reorder = js.native
-  var editMode: none | cellNavigation | cellEdit = js.native
-  var gridlines: Horizontal = js.native
-  var header: ColumnEnd[K, D] = js.native
-  var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], _]) | Null = js.native
-  var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], _]) | Null = js.native
-  var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], _]) | Null = js.native
-  var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], _]) | Null = js.native
-  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], _]) | Null = js.native
-  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], _]) | Null = js.native
-  var onOjBeforeCurrentCell: (js.Function1[/* event */ ojBeforeCurrentCell[K], _]) | Null = js.native
-  var onOjBeforeEdit: (js.Function1[/* event */ ojBeforeEdit[K, D], _]) | Null = js.native
-  var onOjBeforeEditEnd: (js.Function1[/* event */ ojBeforeEditEnd[K, D], _]) | Null = js.native
-  var onOjResize: (js.Function1[/* event */ ojResize, _]) | Null = js.native
-  var onOjScroll: (js.Function1[/* event */ ojScroll, _]) | Null = js.native
-  var onOjSort: (js.Function1[/* event */ ojSort, _]) | Null = js.native
-  var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], _]) | Null = js.native
-  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], _]) | Null = js.native
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], _]) | Null = js.native
-  var scrollPolicy: auto | loadMoreOnScroll | scroll = js.native
-  var scrollPolicyOptions: MaxColumnCount = js.native
-  var scrollPosition: ColumnIndex[K] = js.native
-  var selection: js.Array[Selection[K]] = js.native
-  var selectionMode: Cell = js.native
-  @JSName("translations")
-  var translations_ojDataGrid_ : AccessibleActionableMode = js.native
+  
   def addEventListener(
     `type`: editModeChanged,
     listener: js.ThisFunction1[
@@ -214,68 +181,116 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentCell(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentCell,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentCell[K], _]
+    `type`: ojBeforeCurrentCell,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentCell(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentCell,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentCell[K], _],
+    `type`: ojBeforeCurrentCell,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeEdit(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeEdit,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeEdit[K, D], _]
+    `type`: ojBeforeEdit,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeEdit(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeEdit,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeEdit[K, D], _],
+    `type`: ojBeforeEdit,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeEditEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeEditEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeEditEnd[K, D], _]
+    `type`: ojBeforeEditEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeEditEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeEditEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeEditEnd[K, D], _],
+    `type`: ojBeforeEditEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojResize(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojResize,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojResize, _]
+    `type`: ojResize,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojResize(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojResize,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojResize, _],
+    `type`: ojResize,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojScroll(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojScroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojScroll, _]
+    `type`: ojScroll,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojScroll(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojScroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojScroll, _],
+    `type`: ojScroll,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSort(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSort,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSort, _]
+    `type`: ojSort,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSort(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSort,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSort, _],
+    `type`: ojSort,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -322,7 +337,21 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var bandingInterval: Column = js.native
+  
+  var cell: ClassName[K, D] = js.native
+  
+  var currentCell: CurrentCell[K] | Null = js.native
+  
+  var data: DataProvider[K, D] = js.native
+  
+  var dnd: Reorder = js.native
+  
+  var editMode: none | cellNavigation | cellEdit = js.native
+  
   def getContextByNode(node: Element): ((CellContext[K, D]) with SubId) | ((HeaderContext[K, D]) with `2`) | ((LabelContext[K, D]) with `3`) = js.native
+  
   @JSName("getProperty")
   def getProperty_bandingInterval(property: bandingInterval): Column = js.native
   @JSName("getProperty")
@@ -349,7 +378,67 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   def getProperty_selection(property: selection): js.Array[Selection[K]] = js.native
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): Cell = js.native
+  
+  var gridlines: Horizontal = js.native
+  
+  var header: ColumnEnd[K, D] = js.native
+  
+  var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], _]) | Null = js.native
+  
+  var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], _]) | Null = js.native
+  
+  var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], _]) | Null = js.native
+  
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], _]) | Null = js.native
+  
+  var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], _]) | Null = js.native
+  
+  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], _]) | Null = js.native
+  
+  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], _]) | Null = js.native
+  
+  var onOjBeforeCurrentCell: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeEdit: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], _]) | Null = js.native
+  
+  var onOjBeforeEditEnd: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
+    _
+  ]) | Null = js.native
+  
+  var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, _]) | Null = js.native
+  
+  var onOjScroll: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, _]) | Null = js.native
+  
+  var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, _]) | Null = js.native
+  
+  var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], _]) | Null = js.native
+  
+  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], _]) | Null = js.native
+  
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], _]) | Null = js.native
+  
+  var scrollPolicy: auto | loadMoreOnScroll | scroll = js.native
+  
+  var scrollPolicyOptions: MaxColumnCount = js.native
+  
+  var scrollPosition: ColumnIndex[K] = js.native
+  
+  var selection: js.Array[Selection[K]] = js.native
+  
+  var selectionMode: Cell = js.native
+  
   def setProperties(properties: ojDataGridSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: editMode, value: cellEdit): Unit = js.native
   def setProperty(property: editMode, value: cellNavigation): Unit = js.native
   def setProperty(property: editMode, value: none): Unit = js.native
@@ -384,5 +473,7 @@ trait ojDataGrid_[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]
   def setProperty_selectionMode(property: selectionMode, value: Cell): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: AccessibleActionableMode): Unit = js.native
+  
+  @JSName("translations")
+  var translations_ojDataGrid_ : AccessibleActionableMode = js.native
 }
-

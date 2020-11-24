@@ -6,10 +6,11 @@ import typings.std.Blob
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IUploadService extends js.Object {
+  
   def base64DataUrl(files: js.Array[File]): IPromise[js.Array[String] | String] = js.native
   /**
     * Convert a single file or array of files to a single or array of
@@ -20,6 +21,7 @@ trait IUploadService extends js.Object {
     * @return {angular.IPromise}
     */
   def base64DataUrl(files: File): IPromise[js.Array[String] | String] = js.native
+  
   /**
     * Convert the file to blob url object or base64 data url based on boolean disallowObjectUrl value
     *
@@ -29,6 +31,7 @@ trait IUploadService extends js.Object {
     */
   def dataUrl(file: File): IPromise[Blob | String] = js.native
   def dataUrl(file: File, disallowObjectUrl: Boolean): IPromise[Blob | String] = js.native
+  
   /**
     * Alternative way of uploading, send the file binary with the file's content-type.
     * Could be used to upload files to CouchDB, imgur, etc... html5 FileReader is needed.
@@ -38,6 +41,7 @@ trait IUploadService extends js.Object {
     * @return {angular.IPromise<ImageDimensions>}
     */
   def http[T](config: IRequestConfig): IUploadPromise[T] = js.native
+  
   /**
     * Get image file dimensions
     *
@@ -45,24 +49,28 @@ trait IUploadService extends js.Object {
     * @return {angular.IPromise<ImageDimensions>}
     */
   def imageDimensions(file: File): IPromise[ImageDimensions] = js.native
+  
   /**
     * Returns boolean showing if image resize is supported by this browser
     *
     * @return {boolean}
     */
   def isResizeSupported(): Boolean = js.native
+  
   /**
     * Returns boolean showing if resumable upload is supported by this browser
     *
     * @return {boolean}
     */
   def isResumeSupported(): Boolean = js.native
+  
   /**
     * Returns true if there is an upload in progress. Can be used to prompt user before closing browser tab
     *
     * @return {boolean}
     */
   def isUploadInProgress(): Boolean = js.native
+  
   /**
     * Converts the value to json to send data as json string. Same as angular.toJson(obj)
     *
@@ -70,6 +78,7 @@ trait IUploadService extends js.Object {
     * @return {string}
     */
   def json(obj: js.Object): String = js.native
+  
   /**
     * Converts the object to a Blob object with application/json content type
     * for jsob byte streaming support
@@ -78,6 +87,7 @@ trait IUploadService extends js.Object {
     * @return {Blob}
     */
   def jsonBlob(obj: js.Object): Blob = js.native
+  
   /**
     * Returns a file which will be uploaded with the newName instead of original file name
     *
@@ -86,6 +96,7 @@ trait IUploadService extends js.Object {
     * @return {File}
     */
   def rename(file: File, newName: String): Blob = js.native
+  
   /**
     * Resizes an image. Returns a promise
     *
@@ -99,12 +110,14 @@ trait IUploadService extends js.Object {
     * @return {angular.IPromise<string>}
     */
   def resize(file: File, options: FileResizeOptions): IPromise[File] = js.native
+  
   /**
     * Set the default values for ngf-select and ngf-drop directives
     *
     * @param {FileUploadOptions} defaultFileUploadOptions
     */
   def setDefaults(defaultFileUploadOptions: FileUploadOptions): Unit = js.native
+  
   /**
     * Upload a file. Returns a Promise,
     *
@@ -113,4 +126,3 @@ trait IUploadService extends js.Object {
     */
   def upload[T](config: IFileUploadConfigFile): IUploadPromise[T] = js.native
 }
-

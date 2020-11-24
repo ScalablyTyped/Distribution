@@ -3,7 +3,7 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Spatial.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a spatial map object which provides its projected geometry.
@@ -20,4 +20,3 @@ class Spatial protected ()
   def this(isClosed: Boolean) = this()
   def this(isClosed: Boolean, opt_options: Options) = this()
 }
-

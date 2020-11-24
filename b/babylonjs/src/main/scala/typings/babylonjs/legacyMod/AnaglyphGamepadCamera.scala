@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "AnaglyphGamepadCamera")
 @js.native
@@ -22,4 +22,3 @@ class AnaglyphGamepadCamera protected ()
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }
-

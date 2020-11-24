@@ -11,8 +11,8 @@ A lightweight, pause-able timer class
 | Full name          | timer-machine |
 | Keywords           | timer, time, pause, stopwatch |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 18277 |
+| # dependents       | 8 |
+| # downloads        | 16610 |
 | # stars            | 2 |
 
 ## Links

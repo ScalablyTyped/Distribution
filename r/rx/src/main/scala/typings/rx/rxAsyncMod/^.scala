@@ -20,28 +20,45 @@ import typings.rx.Rx.SubjectStatic
 import typings.rx.Rx.SubscriptionStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.async", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var AnonymousObserver: AnonymousObserverStatic = js.native
+  
   var AnonymousSubject: AnonymousSubjectStatic = js.native
+  
   var AsyncSubject: AsyncSubjectStatic = js.native
+  
   var BehaviorSubject: BehaviorSubjectStatic = js.native
+  
   var CompositeDisposable: CompositeDisposableStatic = js.native
+  
   var Disposable: DisposableStatic = js.native
+  
   var MockObserver: MockObserverStatic = js.native
+  
   var Notification: NotificationStatic = js.native
+  
   var Observable: ObservableStatic = js.native
+  
   var Observer: ObserverStatic = js.native
+  
   var Recorded: RecordedStatic = js.native
+  
   var RefCountDisposable: RefCountDisposableStatic = js.native
+  
   var ReplaySubject: ReplaySubjectStatic = js.native
+  
   var Scheduler: SchedulerStatic = js.native
+  
   var SerialDisposable: SerialDisposableStatic = js.native
+  
   var SingleAssignmentDisposable: SingleAssignmentDisposableStatic = js.native
+  
   var Subject: SubjectStatic = js.native
+  
   var Subscription: SubscriptionStatic = js.native
 }
-

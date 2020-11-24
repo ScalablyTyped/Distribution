@@ -2,7 +2,7 @@ package typings.jointjs.mod.anchors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.jointjs.jointjsStrings.center
@@ -23,4 +23,3 @@ import scala.scalajs.js.annotation._
   - typings.jointjs.jointjsStrings.connectionClosest
 */
 trait AnchorType extends js.Object
-

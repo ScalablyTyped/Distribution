@@ -10,9 +10,9 @@ Automatically update markdown files with content from external sources
 | ------------------ | :-------------: |
 | Full name          | markdown-magic |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 773660 |
+| # releases         | 4 |
+| # dependents       | 4 |
+| # downloads        | 338026 |
 | # stars            | 1 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "EmployeesApi")
 @js.native
@@ -12,13 +12,14 @@ import scala.scalajs.js.annotation._
   */
 class EmployeesApi () extends js.Object {
   def this(apiClient: ApiClient) = this()
+  
   /**
     * Gets a list of `Employee` objects for a business.
     */
   def listEmployees(params: ListEmployeesRequest): js.Promise[ListEmployeesResponse] = js.native
+  
   /**
     * Gets an `Employee` by Square-assigned employee `ID` (UUID).
     */
   def retrieveEmployee(id: String): js.Promise[RetrieveEmployeeResponse] = js.native
 }
-

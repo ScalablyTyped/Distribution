@@ -2,7 +2,7 @@ package typings.jquery.JQuery
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // region Animation
 // #region Animation
@@ -12,11 +12,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AnimationStatic extends js.Object {
+  
   /**
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
     * @since 1.8
     */
   def apply[TElement](element: TElement, props: PlainObject[_], opts: EffectsOptions[TElement]): Animation[TElement] = js.native
+  
   /**
     * During the initial setup, `jQuery.Animation` will call any callbacks that have been registered through `jQuery.Animation.prefilter( function( element, props, opts ) )`.
     * @param callback The prefilter will have `this` set to an animation object, and you can modify any of the `props` or
@@ -45,6 +47,7 @@ trait AnimationStatic extends js.Object {
     ],
     prepend: Boolean
   ): Unit = js.native
+  
   /**
     * A "Tweener" is a function responsible for creating a tween object, and you might want to override these if you want to implement complex values ( like a clip/transform array matrix ) in a single property.
     *
@@ -59,4 +62,3 @@ trait AnimationStatic extends js.Object {
     */
   def tweener(props: String, callback: Tweener[_]): Unit = js.native
 }
-

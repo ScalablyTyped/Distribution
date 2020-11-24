@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.rdsdataserviceMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "RDSDataService")
 @js.native
@@ -14,4 +14,3 @@ class RDSDataService ()
   extends typings.awsSdk.mod.RDSDataService {
   def this(options: ClientConfiguration) = this()
 }
-

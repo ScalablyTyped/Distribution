@@ -2,7 +2,7 @@ package typings.wpapi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * REST API Client for WordPress
@@ -19,10 +19,10 @@ import scala.scalajs.js.annotation._
 class ^ () extends WPAPI {
   def this(options: WPAPIOptions) = this()
 }
-
 @JSImport("wpapi", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Take an arbitrary WordPress site, deduce the WP REST API root endpoint,
     * query that endpoint, and parse the response JSON. Use the returned JSON
@@ -32,4 +32,3 @@ object ^ extends js.Object {
     */
   def discover(url: String): js.Promise[WPAPI] = js.native
 }
-

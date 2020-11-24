@@ -2,21 +2,17 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DiagnosticCollection extends js.Object {
-  /**
-    * The name of this diagnostic collection, for instance `typescript`. Every diagnostic
-    * from this collection will be associated with this name. Also, the task framework uses this
-    * name when defining [problem matchers](https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher).
-    */
-  val name: String = js.native
+  
   /**
     * Remove all diagnostics from this collection. The same
     * as calling `#set(undefined)`;
     */
   def clear(): Unit = js.native
+  
   /**
     * Remove all diagnostics from this collection that belong
     * to the provided `uri`. The same as `#set(uri, undefined)`.
@@ -24,11 +20,13 @@ trait DiagnosticCollection extends js.Object {
     * @param uri A resource identifier.
     */
   def delete(uri: Uri): Unit = js.native
+  
   /**
     * Dispose and free associated resources. Calls
     * [clear](#DiagnosticCollection.clear).
     */
   def dispose(): Unit = js.native
+  
   /**
     * Iterate over each entry in this collection.
     *
@@ -42,6 +40,7 @@ trait DiagnosticCollection extends js.Object {
     callback: js.Function3[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic], /* collection */ this.type, _],
     thisArg: js.Any
   ): Unit = js.native
+  
   /**
     * Get the diagnostics for a given resource. *Note* that you cannot
     * modify the diagnostics-array returned from this call.
@@ -50,6 +49,7 @@ trait DiagnosticCollection extends js.Object {
     * @returns An immutable array of [diagnostics](#Diagnostic) or `undefined`.
     */
   def get(uri: Uri): js.UndefOr[js.Array[Diagnostic]] = js.native
+  
   /**
     * Check if this collection contains diagnostics for a
     * given resource.
@@ -58,6 +58,14 @@ trait DiagnosticCollection extends js.Object {
     * @returns `true` if this collection has diagnostic for the given resource.
     */
   def has(uri: Uri): Boolean = js.native
+  
+  /**
+    * The name of this diagnostic collection, for instance `typescript`. Every diagnostic
+    * from this collection will be associated with this name. Also, the task framework uses this
+    * name when defining [problem matchers](https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher).
+    */
+  val name: String = js.native
+  
   /**
     * Replace all entries in this collection.
     *
@@ -79,4 +87,3 @@ trait DiagnosticCollection extends js.Object {
   def set(uri: Uri): Unit = js.native
   def set(uri: Uri, diagnostics: js.Array[Diagnostic]): Unit = js.native
 }
-

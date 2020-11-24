@@ -5,7 +5,7 @@ import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "SwitchStatementSyntax")
 @js.native
@@ -22,11 +22,11 @@ class SwitchStatementSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "SwitchStatementSyntax")
 @js.native
 object SwitchStatementSyntax extends js.Object {
+  
   def create(
     switchKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
@@ -35,6 +35,6 @@ object SwitchStatementSyntax extends js.Object {
     openBraceToken: ISyntaxToken,
     closeBraceToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.SwitchStatementSyntax = js.native
+  
   def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.SwitchStatementSyntax = js.native
 }
-

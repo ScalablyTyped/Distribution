@@ -6,17 +6,17 @@ import typings.babylonjs.anon.DashSizeGapSize
 import typings.babylonjs.anon.UseVertexAlpha
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.LinesBuilder")
 @js.native
 class LinesBuilder ()
   extends typings.babylonjs.BABYLON.LinesBuilder
-
 /* static members */
 @JSGlobal("BABYLON.LinesBuilder")
 @js.native
 object LinesBuilder extends js.Object {
+  
   /**
     * Creates a dashed line mesh
     * * A dashed line mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of points as an input parameter
@@ -37,6 +37,7 @@ object LinesBuilder extends js.Object {
     */
   def CreateDashedLines(name: String, options: DashSizeGapSize): typings.babylonjs.BABYLON.LinesMesh = js.native
   def CreateDashedLines(name: String, options: DashSizeGapSize, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  
   /**
     * Creates a line system mesh. A line system is a pool of many lines gathered in a single mesh
     * * A line system mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of lines as an input parameter
@@ -55,6 +56,7 @@ object LinesBuilder extends js.Object {
     * @returns a new line system mesh
     */
   def CreateLineSystem(name: String, options: UseVertexAlpha, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  
   /**
     * Creates a line mesh
     * A line mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of points as an input parameter
@@ -74,4 +76,3 @@ object LinesBuilder extends js.Object {
   def CreateLines(name: String, options: ColorsInstance): typings.babylonjs.BABYLON.LinesMesh = js.native
   def CreateLines(name: String, options: ColorsInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
 }
-

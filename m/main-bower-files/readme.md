@@ -10,8 +10,8 @@ Get main files from your installed bower packages.
 | Full name          | main-bower-files |
 | Keywords           | bower, gulp, gulpfriendly, gruntplugin |
 | # releases         | 2 |
-| # dependents       | 123 |
-| # downloads        | 1494513 |
+| # dependents       | 122 |
+| # downloads        | 1453324 |
 | # stars            | 70 |
 
 ## Links

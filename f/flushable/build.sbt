@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flushable"
-version := "1.0-dt-20190312Z-128168"
+version := "1.0-dt-20190312Z-dafa3a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

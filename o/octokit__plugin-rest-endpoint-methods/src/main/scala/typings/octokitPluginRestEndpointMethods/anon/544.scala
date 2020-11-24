@@ -1,50 +1,82 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
+import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.body
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ActionsCreateRegistrationTokenForRepoEndpoint
-import typings.octokitTypes.endpointsMod.ActionsCreateRegistrationTokenForRepoResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.method
+import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.request
+import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.url
+import typings.octokitTypes.anon.Method
+import typings.octokitTypes.anon.UrlString
+import typings.octokitTypes.endpointInterfaceMod.EndpointInterface
+import typings.octokitTypes.requestInterfaceMod.RequestInterface
+import typings.octokitTypes.requestOptionsMod.RequestOptions
 import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.routeMod.Route
 import typings.std.Omit
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `544` extends js.Object {
-  var parameters: RequestParameters with (Omit[ActionsCreateRegistrationTokenForRepoEndpoint, baseUrl | headers | mediaType]) = js.native
-  var response: OctokitResponse[ActionsCreateRegistrationTokenForRepoResponseData] = js.native
-}
-
-object `544` {
-  @scala.inline
-  def apply(
-    parameters: RequestParameters with (Omit[ActionsCreateRegistrationTokenForRepoEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[ActionsCreateRegistrationTokenForRepoResponseData]
-  ): `544` = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`544`]
-  }
-  @scala.inline
-  implicit class `544Ops`[Self <: `544`] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setParameters(
-      value: RequestParameters with (Omit[ActionsCreateRegistrationTokenForRepoEndpoint, baseUrl | headers | mediaType])
-    ): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsCreateRegistrationTokenForRepoResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
-  }
   
+  def apply(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/blocks/:username']['response'] */ js.Any
+  ] = js.native
+  def apply(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/blocks/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/blocks/:username']['response'] */ js.Any
+  ] = js.native
+  
+  def defaults[O /* <: RequestParameters */](newDefaults: O): RequestInterface[js.Object with O] = js.native
+  @JSName("defaults")
+  var defaults_Original: js.Function1[
+    /* newDefaults */ RequestParameters, 
+    RequestInterface[js.Object with RequestParameters]
+  ] = js.native
+  
+  def endpoint[R /* <: Route */, P /* <: RequestParameters */](route: R): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
+    P, 
+    /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
+  ]) = js.native
+  def endpoint[R /* <: Route */, P /* <: RequestParameters */](route: R, parameters: P): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
+    P, 
+    /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
+  ]) = js.native
+  /**
+    * Transforms a GitHub REST API endpoint into generic request options
+    *
+    * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
+    * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+    */
+  def endpoint[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
+    P, 
+    /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
+  ]) = js.native
+  def endpoint[R /* <: Route */, P /* <: RequestParameters */](
+    route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any,
+    parameters: P
+  ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
+    P, 
+    /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
+  ]) = js.native
+  @JSName("endpoint")
+  var endpoint_Original: EndpointInterface[Url] = js.native
+  /**
+    * Transforms a GitHub REST API endpoint into generic request options
+    *
+    * @param {object} endpoint Must set `url` unless it's set defaults. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+    */
+  @JSName("endpoint")
+  def endpoint_url[O /* <: RequestParameters */](options: O with Method with (UrlString | typings.octokitTypes.anon.Url)): RequestOptions with (Pick[
+    Url with O, 
+    /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
+  ]) = js.native
 }
-

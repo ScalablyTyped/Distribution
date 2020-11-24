@@ -10,9 +10,9 @@ Implementation of the SPDY protocol on node.js.
 | ------------------ | :-------------: |
 | Full name          | spdy |
 | Keywords           | spdy |
-| # releases         | 3 |
-| # dependents       | 206 |
-| # downloads        | 228481762 |
+| # releases         | 4 |
+| # dependents       | 230 |
+| # downloads        | 304617449 |
 | # stars            | 40 |
 
 ## Links

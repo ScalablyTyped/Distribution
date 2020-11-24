@@ -10,13 +10,13 @@ Transfer static files
 | ------------------ | :-------------: |
 | Full name          | koa-send |
 | Keywords           | koa, file, static, sendfile |
-| # releases         | 5 |
-| # dependents       | 340 |
-| # downloads        | 7475938 |
+| # releases         | 2 |
+| # dependents       | 396 |
+| # downloads        | 10112461 |
 | # stars            | 13 |
 
 ## Links
-- [Homepage](https://github.com/koajs/send#readme)
+- [Homepage](https://github.com/koajs/send)
 - [Bugs](https://github.com/koajs/send/issues)
 - [Repository](https://github.com/koajs/send)
 - [Npm](https://www.npmjs.com/package/koa-send)

@@ -10,9 +10,9 @@ Remove duplicate values from an array. Fastest ES5 implementation.
 | ------------------ | :-------------: |
 | Full name          | array-unique |
 | Keywords           | array, unique |
-| # releases         | 1 |
-| # dependents       | 183 |
-| # downloads        | 639816384 |
+| # releases         | 0 |
+| # dependents       | 229 |
+| # downloads        | 731452867 |
 | # stars            | 4 |
 
 ## Links

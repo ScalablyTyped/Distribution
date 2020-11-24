@@ -11,8 +11,8 @@ WebGL shader wrapper
 | Full name          | gl-shader |
 | Keywords           | webgl, shader, fragment, vertex, uniform, attribute, wrap, 3d, gl |
 | # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 2018020 |
+| # dependents       | 87 |
+| # downloads        | 2913895 |
 | # stars            | 4 |
 
 ## Links

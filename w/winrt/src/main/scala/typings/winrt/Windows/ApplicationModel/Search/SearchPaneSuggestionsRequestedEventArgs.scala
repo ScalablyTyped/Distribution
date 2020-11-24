@@ -2,12 +2,12 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchPaneSuggestionsRequestedEventArgs extends ISearchPaneSuggestionsRequestedEventArgs
-
 object SearchPaneSuggestionsRequestedEventArgs {
+  
   @scala.inline
   def apply(
     language: String,
@@ -19,4 +19,3 @@ object SearchPaneSuggestionsRequestedEventArgs {
     __obj.asInstanceOf[SearchPaneSuggestionsRequestedEventArgs]
   }
 }
-

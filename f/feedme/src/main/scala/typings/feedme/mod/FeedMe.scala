@@ -13,16 +13,18 @@ import typings.node.streamMod.Writable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeedMe extends Writable {
+  
   /**
     * Can only be used if buffer is true. It returns the feed as a Javascript object, should be called after end is emitted from the parser.
     * Subelements are put as children objects with their names as keys. When one object has more than one child of the same name, they are
     * put into an array. Items are always put into an array.
     */
   def done(): Document = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -40,4 +42,3 @@ trait FeedMe extends Writable {
   @JSName("on")
   def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
 }
-

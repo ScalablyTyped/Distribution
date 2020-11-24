@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model.analytics.odata4analytics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.analytics.odata4analytics.Model")
 @js.native
@@ -22,10 +22,10 @@ class Model protected ()
   def this(oModelReference: js.Any) = this()
   def this(oModelReference: js.Any, mParameter: js.Any) = this()
 }
-
 @JSGlobal("sap.ui.model.analytics.odata4analytics.Model")
 @js.native
 object Model extends js.Object {
+  
   @js.native
   class ReferenceByModel protected ()
     extends typings.openui5.sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel {
@@ -64,6 +64,4 @@ object Model extends js.Object {
       */
     def this(oModel: js.Any, aWorkaroundID: js.Array[String]) = this()
   }
-  
 }
-

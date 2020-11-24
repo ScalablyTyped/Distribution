@@ -3,13 +3,13 @@ package typings.semanticUiShape.anon
 import typings.semanticUiShape.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-shape.SemanticUI.ShapeSettings._Impl, 'beforeChange'> */
 @js.native
 trait PickImplbeforeChange extends js.Object {
+  
+  def beforeChange(): Unit = js.native
   @JSName("beforeChange")
   var beforeChange_Original: js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def beforeChange(): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.microsoftLoadThemedStyles.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@microsoft/load-themed-styles", "configureLoadStyles")
 @js.native
 object configureLoadStyles extends js.Object {
+  
   def apply(): Unit = js.native
   def apply(
     loadStylesFn: js.Function2[
@@ -16,4 +17,3 @@ object configureLoadStyles extends js.Object {
     ]
   ): Unit = js.native
 }
-

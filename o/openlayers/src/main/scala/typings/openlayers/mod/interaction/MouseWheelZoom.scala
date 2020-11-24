@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.olx.interaction.MouseWheelZoomOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   */
 class MouseWheelZoom () extends Interaction {
   def this(opt_options: MouseWheelZoomOptions) = this()
+  
   /**
     * Enable or disable using the mouse's location as an anchor when zooming
     * @param useAnchor true to zoom to the mouse's location, false
@@ -32,11 +33,11 @@ class MouseWheelZoom () extends Interaction {
     */
   def setMouseAnchor(useAnchor: Boolean): Unit = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "interaction.MouseWheelZoom")
 @js.native
 object MouseWheelZoom extends js.Object {
+  
   /**
     * Handles the {@link ol.MapBrowserEvent map browser event} (if it was a
     * mousewheel-event) and eventually zooms the map.
@@ -46,4 +47,3 @@ object MouseWheelZoom extends js.Object {
     */
   def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
 }
-

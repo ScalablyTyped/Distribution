@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `DS.Transform` class is used to serialize and deserialize model
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Transform ()
   extends typings.emberData.mod.DS.Transform
-

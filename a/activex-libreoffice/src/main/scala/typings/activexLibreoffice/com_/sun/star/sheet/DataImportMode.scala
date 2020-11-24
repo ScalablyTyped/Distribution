@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** used to specify which database contents are imported. */
 /* Rewritten from type alias, can be one of: 
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait DataImportMode extends js.Object
-
 object DataImportMode {
+  
   /**
     * no cells are moved.
     *
@@ -33,14 +33,16 @@ object DataImportMode {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /** the name of a database query is supplied. */
   @scala.inline
   def QUERY: `3` = 3.asInstanceOf[`3`]
+  
   /** a SQL query string is supplied. */
   @scala.inline
   def SQL: `1` = 1.asInstanceOf[`1`]
+  
   /** the name of a database table is supplied. */
   @scala.inline
   def TABLE: `2` = 2.asInstanceOf[`2`]
 }
-

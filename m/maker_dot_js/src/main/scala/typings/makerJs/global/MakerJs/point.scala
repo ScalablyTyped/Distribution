@@ -8,11 +8,12 @@ import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.point")
 @js.native
 object point extends js.Object {
+  
   /**
     * Add two points together and return the result as a new point object.
     *
@@ -23,6 +24,7 @@ object point extends js.Object {
     */
   def add(a: IPoint, b: IPoint): IPoint = js.native
   def add(a: IPoint, b: IPoint, subtract: Boolean): IPoint = js.native
+  
   /**
     * Get the average of two points.
     *
@@ -31,6 +33,7 @@ object point extends js.Object {
     * @returns New point object which is the average of a and b.
     */
   def average(a: IPoint, b: IPoint): IPoint = js.native
+  
   /**
     * Clone a point into a new point.
     *
@@ -38,6 +41,7 @@ object point extends js.Object {
     * @returns A new point with same values as the original.
     */
   def clone(pointToClone: IPoint): IPoint = js.native
+  
   /**
     * From an array of points, find the closest point to a given reference point.
     *
@@ -46,6 +50,7 @@ object point extends js.Object {
     * @returns The first closest point from the pointOptions.
     */
   def closest(referencePoint: IPoint, pointOptions: js.Array[IPoint]): IPoint = js.native
+  
   /**
     * Distort a point's coordinates.
     *
@@ -55,6 +60,7 @@ object point extends js.Object {
     * @returns A new point.
     */
   def distort(pointToDistort: IPoint, scaleX: Double, scaleY: Double): IPoint = js.native
+  
   /**
     * Get a point on a circle or arc path, at a given angle.
     * @param angleInDegrees The angle at which you want to find the point, in degrees.
@@ -62,6 +68,7 @@ object point extends js.Object {
     * @returns A new point object.
     */
   def fromAngleOnCircle(angleInDegrees: Double, circle: IPathCircle): IPoint = js.native
+  
   /**
     * Get the two end points of an arc path.
     *
@@ -69,6 +76,7 @@ object point extends js.Object {
     * @returns Array with 2 elements: [0] is the point object corresponding to the start angle, [1] is the point object corresponding to the end angle.
     */
   def fromArc(arc: IPathArc): js.Array[IPoint] = js.native
+  
   /**
     * Get the two end points of a path.
     *
@@ -77,6 +85,7 @@ object point extends js.Object {
     */
   def fromPathEnds(pathContext: IPath): js.Array[IPoint] = js.native
   def fromPathEnds(pathContext: IPath, pathOffset: IPoint): js.Array[IPoint] = js.native
+  
   /**
     * Get a point from its polar coordinates.
     *
@@ -85,6 +94,7 @@ object point extends js.Object {
     * @returns A new point object.
     */
   def fromPolar(angleInRadians: Double, radius: Double): IPoint = js.native
+  
   /**
     * Calculates the intersection of slopes of two lines.
     *
@@ -95,6 +105,7 @@ object point extends js.Object {
     */
   def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine): IPoint = js.native
   def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine, options: IPathIntersectionBaseOptions): IPoint = js.native
+  
   /**
     * Get the middle point of a path.
     *
@@ -104,6 +115,7 @@ object point extends js.Object {
     */
   def middle(pathContext: IPath): IPoint = js.native
   def middle(pathContext: IPath, ratio: Double): IPoint = js.native
+  
   /**
     * Create a clone of a point, mirrored on either or both x and y axes.
     *
@@ -113,6 +125,7 @@ object point extends js.Object {
     * @returns Mirrored point.
     */
   def mirror(pointToMirror: IPoint, mirrorX: Boolean, mirrorY: Boolean): IPoint = js.native
+  
   /**
     * Rotate a point.
     *
@@ -123,6 +136,7 @@ object point extends js.Object {
     */
   def rotate(pointToRotate: IPoint, angleInDegrees: Double): IPoint = js.native
   def rotate(pointToRotate: IPoint, angleInDegrees: Double, rotationOrigin: IPoint): IPoint = js.native
+  
   /**
     * Round the values of a point.
     *
@@ -132,6 +146,7 @@ object point extends js.Object {
     */
   def rounded(pointContext: IPoint): IPoint = js.native
   def rounded(pointContext: IPoint, accuracy: Double): IPoint = js.native
+  
   /**
     * Scale a point's coordinates.
     *
@@ -140,6 +155,7 @@ object point extends js.Object {
     * @returns A new point.
     */
   def scale(pointToScale: IPoint, scaleValue: Double): IPoint = js.native
+  
   /**
     * Subtract a point from another point, and return the result as a new point. Shortcut to Add(a, b, subtract = true).
     *
@@ -148,6 +164,7 @@ object point extends js.Object {
     * @returns A new point object.
     */
   def subtract(a: IPoint, b: IPoint): IPoint = js.native
+  
   /**
     * A point at 0,0 coordinates.
     * NOTE: It is important to call this as a method, with the empty parentheses.
@@ -156,4 +173,3 @@ object point extends js.Object {
     */
   def zero(): IPoint = js.native
 }
-

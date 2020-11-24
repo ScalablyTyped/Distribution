@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Structs.ProcessQueue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Update List plugin.
@@ -16,14 +16,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UpdateList extends ProcessQueue[GameObject] {
+  
   /**
     * The Scene that the Update List belongs to.
     */
   var scene: Scene = js.native
-  /**
-    * The Scene's Systems.
-    */
-  var systems: Systems = js.native
+  
   /**
     * The update step.
     * 
@@ -32,5 +30,9 @@ trait UpdateList extends ProcessQueue[GameObject] {
     * @param delta The delta time elapsed since the last frame.
     */
   def sceneUpdate(time: Double, delta: Double): Unit = js.native
+  
+  /**
+    * The Scene's Systems.
+    */
+  var systems: Systems = js.native
 }
-

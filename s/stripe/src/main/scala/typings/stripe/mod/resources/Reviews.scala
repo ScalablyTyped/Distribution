@@ -9,11 +9,12 @@ import typings.stripe.mod.StripeResource
 import typings.stripe.mod.reviews.IReview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Reviews")
 @js.native
 class Reviews () extends StripeResource {
+  
   def approve(id: String): js.Promise[IReview] = js.native
   /**
     * Approves a Review object, closing it and removing it from the list of reviews. Returns the approved
@@ -23,6 +24,7 @@ class Reviews () extends StripeResource {
   def approve(id: String, options: HeaderOptions): js.Promise[IReview] = js.native
   def approve(id: String, options: HeaderOptions, response: IResponseFn[IReview]): js.Promise[IReview] = js.native
   def approve(id: String, response: IResponseFn[IReview]): js.Promise[IReview] = js.native
+  
   def list(): IListPromise[IReview] = js.native
   def list(data: IListOptionsCreated): IListPromise[IReview] = js.native
   /**
@@ -35,9 +37,9 @@ class Reviews () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IReview] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IReview]]): IListPromise[IReview] = js.native
   def list(response: IResponseFn[IList[IReview]]): IListPromise[IReview] = js.native
+  
   def retrieve(id: String): js.Promise[IReview] = js.native
   def retrieve(id: String, options: HeaderOptions): js.Promise[IReview] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IReview]): js.Promise[IReview] = js.native
   def retrieve(id: String, response: IResponseFn[IReview]): js.Promise[IReview] = js.native
 }
-

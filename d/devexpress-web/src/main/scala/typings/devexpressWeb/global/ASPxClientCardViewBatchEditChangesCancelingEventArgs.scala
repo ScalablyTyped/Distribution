@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditChangesCanceling event.
@@ -19,4 +19,3 @@ class ASPxClientCardViewBatchEditChangesCancelingEventArgs protected ()
     */
   def this(insertedValues: js.Any, deletedValues: js.Any, updatedValues: js.Any) = this()
 }
-

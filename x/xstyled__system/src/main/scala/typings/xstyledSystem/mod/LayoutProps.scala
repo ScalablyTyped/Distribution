@@ -2,7 +2,7 @@ package typings.xstyledSystem.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayoutProps
@@ -15,12 +15,11 @@ trait LayoutProps
      with MinHeightProps[StyledSystemLength]
      with SizeProps[StyledSystemLength]
      with VerticalAlignProps[StyledSystemLength]
-
 object LayoutProps {
+  
   @scala.inline
   def apply(): LayoutProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutProps]
   }
 }
-

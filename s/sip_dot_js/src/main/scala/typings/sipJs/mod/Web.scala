@@ -13,11 +13,41 @@ import typings.std.RTCConfiguration
 import typings.std.RTCSessionDescriptionInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Web")
 @js.native
 object Web extends js.Object {
+  
+  def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
+  def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
+  def defaultMediaStreamFactory(): MediaStreamFactory = js.native
+  
+  def defaultPeerConnectionConfiguration(): RTCConfiguration = js.native
+  
+  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = js.native
+  def defaultSessionDescriptionHandlerFactory(
+    mediaStreamFactory: js.Function2[
+      /* constraints */ MediaStreamConstraints, 
+      /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
+      js.Promise[MediaStream]
+    ]
+  ): SessionDescriptionHandlerFactory = js.native
+  
+  def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
+  def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
+  def stripRtpPayload(payload: String): SessionDescriptionHandlerModifier = js.native
+  
+  def stripTcpCandidates(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
+  def stripTelephoneEvent(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
+  def stripVideo(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
+  
   @js.native
   class SessionDescriptionHandler protected ()
     extends typings.sipJs.webMod.SessionDescriptionHandler {
@@ -33,6 +63,14 @@ object Web extends js.Object {
       mediaStreamFactory: MediaStreamFactory,
       sessionDescriptionHandlerConfiguration: SessionDescriptionHandlerConfiguration
     ) = this()
+  }
+  /* static members */
+  @js.native
+  object SessionDescriptionHandler extends js.Object {
+    
+    var dispatchAddTrackEvent: js.Any = js.native
+    
+    var dispatchRemoveTrackEvent: js.Any = js.native
   }
   
   @js.native
@@ -53,37 +91,10 @@ object Web extends js.Object {
     def this(logger: Logger) = this()
     def this(logger: Logger, options: TransportOptions) = this()
   }
-  
-  def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  def defaultMediaStreamFactory(): MediaStreamFactory = js.native
-  def defaultPeerConnectionConfiguration(): RTCConfiguration = js.native
-  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = js.native
-  def defaultSessionDescriptionHandlerFactory(
-    mediaStreamFactory: js.Function2[
-      /* constraints */ MediaStreamConstraints, 
-      /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
-      js.Promise[MediaStream]
-    ]
-  ): SessionDescriptionHandlerFactory = js.native
-  def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  def stripRtpPayload(payload: String): SessionDescriptionHandlerModifier = js.native
-  def stripTcpCandidates(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  def stripTelephoneEvent(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  def stripVideo(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
-  /* static members */
-  @js.native
-  object SessionDescriptionHandler extends js.Object {
-    var dispatchAddTrackEvent: js.Any = js.native
-    var dispatchRemoveTrackEvent: js.Any = js.native
-  }
-  
   /* static members */
   @js.native
   object Transport extends js.Object {
+    
     var defaultOptions: js.Any = js.native
   }
-  
 }
-

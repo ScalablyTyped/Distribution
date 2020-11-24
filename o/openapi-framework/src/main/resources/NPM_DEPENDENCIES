@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-framework" : "7.0.0"
+      "openapi-framework" : "7.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-framework" : "7.0.0"
+      "openapi-framework" : "7.2.0"
     }
   ],
   "compile-devDependencies" : [

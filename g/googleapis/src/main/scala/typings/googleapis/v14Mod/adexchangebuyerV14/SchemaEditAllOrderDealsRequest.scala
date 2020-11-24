@@ -2,10 +2,11 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaEditAllOrderDealsRequest extends js.Object {
+  
   /**
     * List of deals to edit. Service may perform 3 different operations based
     * on comparison of deals in this list vs deals already persisted in
@@ -20,58 +21,72 @@ trait SchemaEditAllOrderDealsRequest extends js.Object {
     * from the proposal. Validation will follow DeleteOrderDealsRequest.
     */
   var deals: js.UndefOr[js.Array[SchemaMarketplaceDeal]] = js.native
+  
   /**
     * If specified, also updates the proposal in the batch transaction. This is
     * useful when the proposal and the deals need to be updated in one
     * transaction.
     */
   var proposal: js.UndefOr[SchemaProposal] = js.native
+  
   /**
     * The last known revision number for the proposal.
     */
   var proposalRevisionNumber: js.UndefOr[String] = js.native
+  
   /**
     * Indicates an optional action to take on the proposal
     */
   var updateAction: js.UndefOr[String] = js.native
 }
-
 object SchemaEditAllOrderDealsRequest {
+  
   @scala.inline
   def apply(): SchemaEditAllOrderDealsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEditAllOrderDealsRequest]
   }
+  
   @scala.inline
   implicit class SchemaEditAllOrderDealsRequestOps[Self <: SchemaEditAllOrderDealsRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = this.set("deals", js.Array(value :_*))
+    
     @scala.inline
     def setDeals(value: js.Array[SchemaMarketplaceDeal]): Self = this.set("deals", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeals: Self = this.set("deals", js.undefined)
+    
     @scala.inline
     def setProposal(value: SchemaProposal): Self = this.set("proposal", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProposal: Self = this.set("proposal", js.undefined)
+    
     @scala.inline
     def setProposalRevisionNumber(value: String): Self = this.set("proposalRevisionNumber", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProposalRevisionNumber: Self = this.set("proposalRevisionNumber", js.undefined)
+    
     @scala.inline
     def setUpdateAction(value: String): Self = this.set("updateAction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUpdateAction: Self = this.set("updateAction", js.undefined)
   }
-  
 }
-

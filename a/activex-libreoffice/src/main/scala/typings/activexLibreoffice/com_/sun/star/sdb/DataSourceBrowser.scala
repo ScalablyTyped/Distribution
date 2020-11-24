@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.ui.XContextMenuInterception
 import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements a component which allows browsing the data sources registered on the system.
@@ -75,10 +75,10 @@ trait DataSourceBrowser
      with XController
      with XInitialization
      with XContextMenuInterception {
+  
   /** returns the tab controller model. */
   /* InferMemberOverrides */
   override def getModel(): XTabControllerModel with XModel = js.native
   @JSName("getModel")
   def getModel_XTabControllerModel(): XTabControllerModel = js.native
 }
-

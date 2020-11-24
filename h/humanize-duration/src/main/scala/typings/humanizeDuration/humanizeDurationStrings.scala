@@ -4,9 +4,142 @@ import typings.humanizeDuration.mod.LanguageCode
 import typings.humanizeDuration.mod.Unit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object humanizeDurationStrings {
+  
+  @scala.inline
+  def ar: ar = "ar".asInstanceOf[ar]
+  
+  @scala.inline
+  def bg: bg = "bg".asInstanceOf[bg]
+  
+  @scala.inline
+  def ca: ca = "ca".asInstanceOf[ca]
+  
+  @scala.inline
+  def cs: cs = "cs".asInstanceOf[cs]
+  
+  @scala.inline
+  def d: d = "d".asInstanceOf[d]
+  
+  @scala.inline
+  def da: da = "da".asInstanceOf[da]
+  
+  @scala.inline
+  def de: de = "de".asInstanceOf[de]
+  
+  @scala.inline
+  def el: el = "el".asInstanceOf[el]
+  
+  @scala.inline
+  def en: en = "en".asInstanceOf[en]
+  
+  @scala.inline
+  def es: es = "es".asInstanceOf[es]
+  
+  @scala.inline
+  def fa: fa = "fa".asInstanceOf[fa]
+  
+  @scala.inline
+  def fi: fi = "fi".asInstanceOf[fi]
+  
+  @scala.inline
+  def fr: fr = "fr".asInstanceOf[fr]
+  
+  @scala.inline
+  def h: h = "h".asInstanceOf[h]
+  
+  @scala.inline
+  def hr: hr = "hr".asInstanceOf[hr]
+  
+  @scala.inline
+  def hu: hu = "hu".asInstanceOf[hu]
+  
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  
+  @scala.inline
+  def is: is = "is".asInstanceOf[is]
+  
+  @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  
+  @scala.inline
+  def ja: ja = "ja".asInstanceOf[ja]
+  
+  @scala.inline
+  def ko: ko = "ko".asInstanceOf[ko]
+  
+  @scala.inline
+  def lo: lo = "lo".asInstanceOf[lo]
+  
+  @scala.inline
+  def lt: lt = "lt".asInstanceOf[lt]
+  
+  @scala.inline
+  def m: m = "m".asInstanceOf[m]
+  
+  @scala.inline
+  def mo: mo = "mo".asInstanceOf[mo]
+  
+  @scala.inline
+  def ms: ms = "ms".asInstanceOf[ms]
+  
+  @scala.inline
+  def nl: nl = "nl".asInstanceOf[nl]
+  
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  
+  @scala.inline
+  def pl: pl = "pl".asInstanceOf[pl]
+  
+  @scala.inline
+  def pt: pt = "pt".asInstanceOf[pt]
+  
+  @scala.inline
+  def ro: ro = "ro".asInstanceOf[ro]
+  
+  @scala.inline
+  def ru: ru = "ru".asInstanceOf[ru]
+  
+  @scala.inline
+  def s: s = "s".asInstanceOf[s]
+  
+  @scala.inline
+  def sk: sk = "sk".asInstanceOf[sk]
+  
+  @scala.inline
+  def sv: sv = "sv".asInstanceOf[sv]
+  
+  @scala.inline
+  def th: th = "th".asInstanceOf[th]
+  
+  @scala.inline
+  def tr: tr = "tr".asInstanceOf[tr]
+  
+  @scala.inline
+  def uk: uk = "uk".asInstanceOf[uk]
+  
+  @scala.inline
+  def ur: ur = "ur".asInstanceOf[ur]
+  
+  @scala.inline
+  def vi: vi = "vi".asInstanceOf[vi]
+  
+  @scala.inline
+  def w: w = "w".asInstanceOf[w]
+  
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
+  
+  @scala.inline
+  def zh_CN: zh_CN = "zh_CN".asInstanceOf[zh_CN]
+  
+  @scala.inline
+  def zh_TW: zh_TW = "zh_TW".asInstanceOf[zh_TW]
+  
   @js.native
   sealed trait ar extends LanguageCode
   
@@ -140,94 +273,4 @@ object humanizeDurationStrings {
   
   @js.native
   sealed trait zh_TW extends LanguageCode
-  
-  @scala.inline
-  def ar: ar = "ar".asInstanceOf[ar]
-  @scala.inline
-  def bg: bg = "bg".asInstanceOf[bg]
-  @scala.inline
-  def ca: ca = "ca".asInstanceOf[ca]
-  @scala.inline
-  def cs: cs = "cs".asInstanceOf[cs]
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
-  @scala.inline
-  def da: da = "da".asInstanceOf[da]
-  @scala.inline
-  def de: de = "de".asInstanceOf[de]
-  @scala.inline
-  def el: el = "el".asInstanceOf[el]
-  @scala.inline
-  def en: en = "en".asInstanceOf[en]
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
-  @scala.inline
-  def fa: fa = "fa".asInstanceOf[fa]
-  @scala.inline
-  def fi: fi = "fi".asInstanceOf[fi]
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
-  @scala.inline
-  def h: h = "h".asInstanceOf[h]
-  @scala.inline
-  def hr: hr = "hr".asInstanceOf[hr]
-  @scala.inline
-  def hu: hu = "hu".asInstanceOf[hu]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def is: is = "is".asInstanceOf[is]
-  @scala.inline
-  def it: it = "it".asInstanceOf[it]
-  @scala.inline
-  def ja: ja = "ja".asInstanceOf[ja]
-  @scala.inline
-  def ko: ko = "ko".asInstanceOf[ko]
-  @scala.inline
-  def lo: lo = "lo".asInstanceOf[lo]
-  @scala.inline
-  def lt: lt = "lt".asInstanceOf[lt]
-  @scala.inline
-  def m: m = "m".asInstanceOf[m]
-  @scala.inline
-  def mo: mo = "mo".asInstanceOf[mo]
-  @scala.inline
-  def ms: ms = "ms".asInstanceOf[ms]
-  @scala.inline
-  def nl: nl = "nl".asInstanceOf[nl]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def pl: pl = "pl".asInstanceOf[pl]
-  @scala.inline
-  def pt: pt = "pt".asInstanceOf[pt]
-  @scala.inline
-  def ro: ro = "ro".asInstanceOf[ro]
-  @scala.inline
-  def ru: ru = "ru".asInstanceOf[ru]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def sk: sk = "sk".asInstanceOf[sk]
-  @scala.inline
-  def sv: sv = "sv".asInstanceOf[sv]
-  @scala.inline
-  def th: th = "th".asInstanceOf[th]
-  @scala.inline
-  def tr: tr = "tr".asInstanceOf[tr]
-  @scala.inline
-  def uk: uk = "uk".asInstanceOf[uk]
-  @scala.inline
-  def ur: ur = "ur".asInstanceOf[ur]
-  @scala.inline
-  def vi: vi = "vi".asInstanceOf[vi]
-  @scala.inline
-  def w: w = "w".asInstanceOf[w]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def zh_CN: zh_CN = "zh_CN".asInstanceOf[zh_CN]
-  @scala.inline
-  def zh_TW: zh_TW = "zh_TW".asInstanceOf[zh_TW]
 }
-

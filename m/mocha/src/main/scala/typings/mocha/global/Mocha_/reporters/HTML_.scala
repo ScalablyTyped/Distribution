@@ -3,7 +3,7 @@ package typings.mocha.global.Mocha_.reporters
 import typings.mocha.Mocha.reporters.HTML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `HTML` reporter.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha.reporters.HTML")
 @js.native
 class HTML_ () extends HTML
-

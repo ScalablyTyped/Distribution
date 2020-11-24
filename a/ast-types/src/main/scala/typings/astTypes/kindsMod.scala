@@ -9,6 +9,8 @@ import typings.astTypes.namedTypesMod.namedTypes.AssignmentExpression
 import typings.astTypes.namedTypesMod.namedTypes.AssignmentPattern
 import typings.astTypes.namedTypesMod.namedTypes.AwaitExpression
 import typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral
+import typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation
+import typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation
 import typings.astTypes.namedTypesMod.namedTypes.BinaryExpression
 import typings.astTypes.namedTypesMod.namedTypes.BindExpression
 import typings.astTypes.namedTypesMod.namedTypes.Block
@@ -18,6 +20,7 @@ import typings.astTypes.namedTypesMod.namedTypes.BooleanLiteralTypeAnnotation
 import typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation
 import typings.astTypes.namedTypesMod.namedTypes.BreakStatement
 import typings.astTypes.namedTypesMod.namedTypes.CatchClause
+import typings.astTypes.namedTypesMod.namedTypes.ChainExpression
 import typings.astTypes.namedTypesMod.namedTypes.ClassBody
 import typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration
 import typings.astTypes.namedTypesMod.namedTypes.ClassExpression
@@ -51,6 +54,15 @@ import typings.astTypes.namedTypesMod.namedTypes.DoExpression
 import typings.astTypes.namedTypesMod.namedTypes.DoWhileStatement
 import typings.astTypes.namedTypesMod.namedTypes.EmptyStatement
 import typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation
+import typings.astTypes.namedTypesMod.namedTypes.EnumBooleanBody
+import typings.astTypes.namedTypesMod.namedTypes.EnumBooleanMember
+import typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration
+import typings.astTypes.namedTypesMod.namedTypes.EnumDefaultedMember
+import typings.astTypes.namedTypesMod.namedTypes.EnumNumberBody
+import typings.astTypes.namedTypesMod.namedTypes.EnumNumberMember
+import typings.astTypes.namedTypesMod.namedTypes.EnumStringBody
+import typings.astTypes.namedTypesMod.namedTypes.EnumStringMember
+import typings.astTypes.namedTypesMod.namedTypes.EnumSymbolBody
 import typings.astTypes.namedTypesMod.namedTypes.ExistentialTypeParam
 import typings.astTypes.namedTypesMod.namedTypes.ExistsTypeAnnotation
 import typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
@@ -77,6 +89,7 @@ import typings.astTypes.namedTypesMod.namedTypes.IfStatement
 import typings.astTypes.namedTypesMod.namedTypes.Import
 import typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration
 import typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier
+import typings.astTypes.namedTypesMod.namedTypes.ImportExpression
 import typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
 import typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier
 import typings.astTypes.namedTypesMod.namedTypes.InferredPredicate
@@ -126,7 +139,6 @@ import typings.astTypes.namedTypesMod.namedTypes.ObjectTypeIndexer
 import typings.astTypes.namedTypesMod.namedTypes.ObjectTypeInternalSlot
 import typings.astTypes.namedTypesMod.namedTypes.ObjectTypeProperty
 import typings.astTypes.namedTypesMod.namedTypes.ObjectTypeSpreadProperty
-import typings.astTypes.namedTypesMod.namedTypes.OpaqueType
 import typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
 import typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
 import typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression
@@ -152,6 +164,7 @@ import typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation
 import typings.astTypes.namedTypesMod.namedTypes.Super
 import typings.astTypes.namedTypesMod.namedTypes.SwitchCase
 import typings.astTypes.namedTypesMod.namedTypes.SwitchStatement
+import typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation
 import typings.astTypes.namedTypesMod.namedTypes.TSAnyKeyword
 import typings.astTypes.namedTypesMod.namedTypes.TSArrayType
 import typings.astTypes.namedTypesMod.namedTypes.TSAsExpression
@@ -182,6 +195,7 @@ import typings.astTypes.namedTypesMod.namedTypes.TSMappedType
 import typings.astTypes.namedTypesMod.namedTypes.TSMethodSignature
 import typings.astTypes.namedTypesMod.namedTypes.TSModuleBlock
 import typings.astTypes.namedTypesMod.namedTypes.TSModuleDeclaration
+import typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember
 import typings.astTypes.namedTypesMod.namedTypes.TSNamespaceExportDeclaration
 import typings.astTypes.namedTypesMod.namedTypes.TSNeverKeyword
 import typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression
@@ -238,16 +252,26 @@ import typings.astTypes.namedTypesMod.namedTypes.WithStatement
 import typings.astTypes.namedTypesMod.namedTypes.YieldExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ast-types/gen/kinds", JSImport.Namespace)
 @js.native
 object kindsMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.CallExpression
     - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
   */
   trait CallExpressionKind extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.astTypes.namedTypesMod.namedTypes.MemberExpression
+    - typings.astTypes.namedTypesMod.namedTypes.CallExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
+    - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
+  */
+  trait ChainElementKind extends js.Object
   
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.ClassProperty
@@ -272,21 +296,22 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.ClassBody
     - typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.DeclareInterface
     - typings.astTypes.namedTypesMod.namedTypes.TypeAlias
-    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias
+    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareClass
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportAllDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.ClassMethod
     - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod
     - typings.astTypes.namedTypesMod.namedTypes.TSDeclareFunction
@@ -328,22 +353,25 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.GeneratorExpression
     - typings.astTypes.namedTypesMod.namedTypes.ComprehensionExpression
     - typings.astTypes.namedTypesMod.namedTypes.ClassExpression
+    - typings.astTypes.namedTypesMod.namedTypes.Super
     - typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression
     - typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral
+    - typings.astTypes.namedTypesMod.namedTypes.MetaProperty
     - typings.astTypes.namedTypesMod.namedTypes.AwaitExpression
+    - typings.astTypes.namedTypesMod.namedTypes.ImportExpression
+    - typings.astTypes.namedTypesMod.namedTypes.ChainExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier
     - typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer
-    - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXElement
     - typings.astTypes.namedTypesMod.namedTypes.JSXFragment
+    - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXText
-    - typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression
-    - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild
+    - typings.astTypes.namedTypesMod.namedTypes.PrivateName
     - typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression
     - typings.astTypes.namedTypesMod.namedTypes.DoExpression
-    - typings.astTypes.namedTypesMod.namedTypes.Super
     - typings.astTypes.namedTypesMod.namedTypes.BindExpression
-    - typings.astTypes.namedTypesMod.namedTypes.MetaProperty
     - typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression
     - typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral
     - typings.astTypes.namedTypesMod.namedTypes.StringLiteral
@@ -352,14 +380,11 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.NullLiteral
     - typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral
     - typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral
-    - typings.astTypes.namedTypesMod.namedTypes.PrivateName
     - typings.astTypes.namedTypesMod.namedTypes.Import
     - typings.astTypes.namedTypesMod.namedTypes.TSAsExpression
     - typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeAssertion
-    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
-    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
   */
   trait ExpressionKind extends js.Object
   
@@ -368,9 +393,12 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation
@@ -408,9 +436,12 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation
@@ -473,15 +504,15 @@ object kindsMod extends js.Object {
   
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.MemberExpression
-    - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
+    - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
   */
   trait MemberExpressionKind extends js.Object
   
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier
-    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier
+    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier
   */
   trait ModuleSpecifierKind extends js.Object
@@ -542,39 +573,52 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.PropertyPattern
     - typings.astTypes.namedTypesMod.namedTypes.ObjectPattern
     - typings.astTypes.namedTypesMod.namedTypes.ArrayPattern
-    - typings.astTypes.namedTypesMod.namedTypes.MethodDefinition
     - typings.astTypes.namedTypesMod.namedTypes.SpreadElement
     - typings.astTypes.namedTypesMod.namedTypes.AssignmentPattern
+    - typings.astTypes.namedTypesMod.namedTypes.MethodDefinition
     - typings.astTypes.namedTypesMod.namedTypes.ClassPropertyDefinition
     - typings.astTypes.namedTypesMod.namedTypes.ClassProperty
     - typings.astTypes.namedTypesMod.namedTypes.ClassBody
     - typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ClassExpression
+    - typings.astTypes.namedTypesMod.namedTypes.Super
     - typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier
-    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier
+    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier
+    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression
     - typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral
     - typings.astTypes.namedTypesMod.namedTypes.TemplateElement
+    - typings.astTypes.namedTypesMod.namedTypes.MetaProperty
+    - typings.astTypes.namedTypesMod.namedTypes.AwaitExpression
     - typings.astTypes.namedTypesMod.namedTypes.SpreadProperty
     - typings.astTypes.namedTypesMod.namedTypes.SpreadPropertyPattern
-    - typings.astTypes.namedTypesMod.namedTypes.AwaitExpression
+    - typings.astTypes.namedTypesMod.namedTypes.ImportExpression
+    - typings.astTypes.namedTypesMod.namedTypes.ChainExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXAttribute
     - typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier
     - typings.astTypes.namedTypesMod.namedTypes.JSXNamespacedName
     - typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer
+    - typings.astTypes.namedTypesMod.namedTypes.JSXElement
+    - typings.astTypes.namedTypesMod.namedTypes.JSXFragment
     - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadAttribute
-    - typings.astTypes.namedTypesMod.namedTypes.JSXElement
+    - typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression
+    - typings.astTypes.namedTypesMod.namedTypes.JSXText
+    - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild
     - typings.astTypes.namedTypesMod.namedTypes.JSXOpeningElement
     - typings.astTypes.namedTypesMod.namedTypes.JSXClosingElement
-    - typings.astTypes.namedTypesMod.namedTypes.JSXFragment
-    - typings.astTypes.namedTypesMod.namedTypes.JSXText
     - typings.astTypes.namedTypesMod.namedTypes.JSXOpeningFragment
     - typings.astTypes.namedTypesMod.namedTypes.JSXClosingFragment
-    - typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression
-    - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild
+    - typings.astTypes.namedTypesMod.namedTypes.Decorator
+    - typings.astTypes.namedTypesMod.namedTypes.PrivateName
+    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.TypeParameterDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TypeParameterInstantiation
@@ -585,9 +629,12 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation
@@ -620,8 +667,8 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.DeclareInterface
     - typings.astTypes.namedTypesMod.namedTypes.TypeAlias
-    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias
+    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression
     - typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation
@@ -631,24 +678,18 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.DeclareModule
     - typings.astTypes.namedTypesMod.namedTypes.DeclareModuleExports
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportBatchSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportAllDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.InferredPredicate
     - typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate
+    - typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.Noop
     - typings.astTypes.namedTypesMod.namedTypes.DoExpression
-    - typings.astTypes.namedTypesMod.namedTypes.Super
     - typings.astTypes.namedTypesMod.namedTypes.BindExpression
-    - typings.astTypes.namedTypesMod.namedTypes.Decorator
-    - typings.astTypes.namedTypesMod.namedTypes.MetaProperty
     - typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression
-    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ExportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultSpecifier
-    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.Directive
     - typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral
     - typings.astTypes.namedTypesMod.namedTypes.InterpreterDirective
@@ -659,10 +700,8 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral
     - typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral
     - typings.astTypes.namedTypesMod.namedTypes.ObjectMethod
-    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.ClassMethod
     - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod
-    - typings.astTypes.namedTypesMod.namedTypes.PrivateName
     - typings.astTypes.namedTypesMod.namedTypes.RestProperty
     - typings.astTypes.namedTypesMod.namedTypes.ForAwaitStatement
     - typings.astTypes.namedTypesMod.namedTypes.Import
@@ -697,6 +736,7 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod
     - typings.astTypes.namedTypesMod.namedTypes.TSMappedType
     - typings.astTypes.namedTypesMod.namedTypes.TSTupleType
+    - typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember
     - typings.astTypes.namedTypesMod.namedTypes.TSRestType
     - typings.astTypes.namedTypesMod.namedTypes.TSOptionalType
     - typings.astTypes.namedTypesMod.namedTypes.TSIndexedAccessType
@@ -723,10 +763,14 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.TSInterfaceBody
     - typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TSParameterProperty
-    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
-    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
   */
   trait NodeKind extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
+    - typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType
+  */
+  trait OpaqueTypeKind extends js.Object
   
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.Identifier
@@ -803,39 +847,52 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.PropertyPattern
     - typings.astTypes.namedTypesMod.namedTypes.ObjectPattern
     - typings.astTypes.namedTypesMod.namedTypes.ArrayPattern
-    - typings.astTypes.namedTypesMod.namedTypes.MethodDefinition
     - typings.astTypes.namedTypesMod.namedTypes.SpreadElement
     - typings.astTypes.namedTypesMod.namedTypes.AssignmentPattern
+    - typings.astTypes.namedTypesMod.namedTypes.MethodDefinition
     - typings.astTypes.namedTypesMod.namedTypes.ClassPropertyDefinition
     - typings.astTypes.namedTypesMod.namedTypes.ClassProperty
     - typings.astTypes.namedTypesMod.namedTypes.ClassBody
     - typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ClassExpression
+    - typings.astTypes.namedTypesMod.namedTypes.Super
     - typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier
-    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier
+    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier
+    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression
     - typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral
     - typings.astTypes.namedTypesMod.namedTypes.TemplateElement
+    - typings.astTypes.namedTypesMod.namedTypes.MetaProperty
+    - typings.astTypes.namedTypesMod.namedTypes.AwaitExpression
     - typings.astTypes.namedTypesMod.namedTypes.SpreadProperty
     - typings.astTypes.namedTypesMod.namedTypes.SpreadPropertyPattern
-    - typings.astTypes.namedTypesMod.namedTypes.AwaitExpression
+    - typings.astTypes.namedTypesMod.namedTypes.ImportExpression
+    - typings.astTypes.namedTypesMod.namedTypes.ChainExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
+    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXAttribute
     - typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier
     - typings.astTypes.namedTypesMod.namedTypes.JSXNamespacedName
     - typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer
+    - typings.astTypes.namedTypesMod.namedTypes.JSXElement
+    - typings.astTypes.namedTypesMod.namedTypes.JSXFragment
     - typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression
     - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadAttribute
-    - typings.astTypes.namedTypesMod.namedTypes.JSXElement
+    - typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression
+    - typings.astTypes.namedTypesMod.namedTypes.JSXText
+    - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild
     - typings.astTypes.namedTypesMod.namedTypes.JSXOpeningElement
     - typings.astTypes.namedTypesMod.namedTypes.JSXClosingElement
-    - typings.astTypes.namedTypesMod.namedTypes.JSXFragment
-    - typings.astTypes.namedTypesMod.namedTypes.JSXText
     - typings.astTypes.namedTypesMod.namedTypes.JSXOpeningFragment
     - typings.astTypes.namedTypesMod.namedTypes.JSXClosingFragment
-    - typings.astTypes.namedTypesMod.namedTypes.JSXEmptyExpression
-    - typings.astTypes.namedTypesMod.namedTypes.JSXSpreadChild
+    - typings.astTypes.namedTypesMod.namedTypes.Decorator
+    - typings.astTypes.namedTypesMod.namedTypes.PrivateName
+    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.TypeParameterDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TypeParameterInstantiation
@@ -846,9 +903,12 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation
+    - typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation
     - typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation
@@ -881,8 +941,8 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.DeclareInterface
     - typings.astTypes.namedTypesMod.namedTypes.TypeAlias
-    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias
+    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression
     - typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation
@@ -892,26 +952,20 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.DeclareModule
     - typings.astTypes.namedTypesMod.namedTypes.DeclareModuleExports
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportBatchSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportAllDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.InferredPredicate
     - typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate
+    - typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.Block
     - typings.astTypes.namedTypesMod.namedTypes.Line
     - typings.astTypes.namedTypesMod.namedTypes.Noop
     - typings.astTypes.namedTypesMod.namedTypes.DoExpression
-    - typings.astTypes.namedTypesMod.namedTypes.Super
     - typings.astTypes.namedTypesMod.namedTypes.BindExpression
-    - typings.astTypes.namedTypesMod.namedTypes.Decorator
-    - typings.astTypes.namedTypesMod.namedTypes.MetaProperty
     - typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression
-    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ExportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultSpecifier
-    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.CommentBlock
     - typings.astTypes.namedTypesMod.namedTypes.CommentLine
     - typings.astTypes.namedTypesMod.namedTypes.Directive
@@ -924,10 +978,8 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral
     - typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral
     - typings.astTypes.namedTypesMod.namedTypes.ObjectMethod
-    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.ClassMethod
     - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod
-    - typings.astTypes.namedTypesMod.namedTypes.PrivateName
     - typings.astTypes.namedTypesMod.namedTypes.RestProperty
     - typings.astTypes.namedTypesMod.namedTypes.ForAwaitStatement
     - typings.astTypes.namedTypesMod.namedTypes.Import
@@ -962,6 +1014,7 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod
     - typings.astTypes.namedTypesMod.namedTypes.TSMappedType
     - typings.astTypes.namedTypesMod.namedTypes.TSTupleType
+    - typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember
     - typings.astTypes.namedTypesMod.namedTypes.TSRestType
     - typings.astTypes.namedTypesMod.namedTypes.TSOptionalType
     - typings.astTypes.namedTypesMod.namedTypes.TSIndexedAccessType
@@ -988,15 +1041,13 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.TSInterfaceBody
     - typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.TSParameterProperty
-    - typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
-    - typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression
   */
   trait PrintableKind extends js.Object
   
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier
-    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier
+    - typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportBatchSpecifier
     - typings.astTypes.namedTypesMod.namedTypes.ExportNamespaceSpecifier
@@ -1031,12 +1082,16 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.ClassBody
     - typings.astTypes.namedTypesMod.namedTypes.ClassDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ImportDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeParameterDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.DeclareInterface
     - typings.astTypes.namedTypesMod.namedTypes.TypeAlias
-    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias
+    - typings.astTypes.namedTypesMod.namedTypes.OpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType
     - typings.astTypes.namedTypesMod.namedTypes.DeclareVariable
     - typings.astTypes.namedTypesMod.namedTypes.DeclareFunction
@@ -1045,12 +1100,9 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.DeclareModuleExports
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.DeclareExportAllDeclaration
+    - typings.astTypes.namedTypesMod.namedTypes.EnumDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration
     - typings.astTypes.namedTypesMod.namedTypes.Noop
-    - typings.astTypes.namedTypesMod.namedTypes.ExportDefaultDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ExportAllDeclaration
-    - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty
     - typings.astTypes.namedTypesMod.namedTypes.ClassMethod
     - typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod
     - typings.astTypes.namedTypesMod.namedTypes.ForAwaitStatement
@@ -1136,10 +1188,12 @@ object kindsMod extends js.Object {
     - typings.astTypes.namedTypesMod.namedTypes.TSConstructorType
     - typings.astTypes.namedTypesMod.namedTypes.TSMappedType
     - typings.astTypes.namedTypesMod.namedTypes.TSTupleType
+    - typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember
     - typings.astTypes.namedTypesMod.namedTypes.TSRestType
     - typings.astTypes.namedTypesMod.namedTypes.TSOptionalType
     - typings.astTypes.namedTypesMod.namedTypes.TSIndexedAccessType
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeOperator
+    - typings.astTypes.namedTypesMod.namedTypes.TSTypePredicate
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeQuery
     - typings.astTypes.namedTypesMod.namedTypes.TSImportType
     - typings.astTypes.namedTypesMod.namedTypes.TSTypeLiteral
@@ -1149,245 +1203,506 @@ object kindsMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - typings.astTypes.namedTypesMod.namedTypes.TypeAlias
     - typings.astTypes.namedTypesMod.namedTypes.DeclareTypeAlias
-    - typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType
   */
   trait TypeAliasKind extends js.Object
   
   type AnyTypeAnnotationKind = AnyTypeAnnotation
+  
   type ArrayExpressionKind = ArrayExpression
+  
   type ArrayPatternKind = ArrayPattern
+  
   type ArrayTypeAnnotationKind = ArrayTypeAnnotation
+  
   type ArrowFunctionExpressionKind = ArrowFunctionExpression
+  
   type AssignmentExpressionKind = AssignmentExpression
+  
   type AssignmentPatternKind = AssignmentPattern
+  
   type AwaitExpressionKind = AwaitExpression
+  
   type BigIntLiteralKind = BigIntLiteral
+  
+  type BigIntLiteralTypeAnnotationKind = BigIntLiteralTypeAnnotation
+  
+  type BigIntTypeAnnotationKind = BigIntTypeAnnotation
+  
   type BinaryExpressionKind = BinaryExpression
+  
   type BindExpressionKind = BindExpression
+  
   type BlockKind = Block
+  
   type BlockStatementKind = BlockStatement
+  
   type BooleanLiteralKind = BooleanLiteral
+  
   type BooleanLiteralTypeAnnotationKind = BooleanLiteralTypeAnnotation
+  
   type BooleanTypeAnnotationKind = BooleanTypeAnnotation
+  
   type BreakStatementKind = BreakStatement
+  
   type CatchClauseKind = CatchClause
+  
+  type ChainExpressionKind = ChainExpression
+  
   type ClassBodyKind = ClassBody
+  
   type ClassDeclarationKind = ClassDeclaration
+  
   type ClassExpressionKind = ClassExpression
+  
   type ClassImplementsKind = ClassImplements
+  
   type ClassMethodKind = ClassMethod
+  
   type ClassPrivateMethodKind = ClassPrivateMethod
+  
   type ClassPrivatePropertyKind = ClassPrivateProperty
+  
   type ClassPropertyDefinitionKind = ClassPropertyDefinition
+  
   type CommentBlockKind = CommentBlock
+  
   type CommentLineKind = CommentLine
+  
   type ComprehensionBlockKind = ComprehensionBlock
+  
   type ComprehensionExpressionKind = ComprehensionExpression
+  
   type ConditionalExpressionKind = ConditionalExpression
+  
   type ContinueStatementKind = ContinueStatement
+  
   type DebuggerStatementKind = DebuggerStatement
+  
   type DeclareClassKind = DeclareClass
+  
   type DeclareExportAllDeclarationKind = DeclareExportAllDeclaration
+  
   type DeclareExportDeclarationKind = DeclareExportDeclaration
+  
   type DeclareFunctionKind = DeclareFunction
+  
   type DeclareInterfaceKind = DeclareInterface
+  
   type DeclareModuleExportsKind = DeclareModuleExports
+  
   type DeclareModuleKind = DeclareModule
+  
   type DeclareOpaqueTypeKind = DeclareOpaqueType
+  
   type DeclareTypeAliasKind = DeclareTypeAlias
+  
   type DeclareVariableKind = DeclareVariable
+  
   type DeclaredPredicateKind = DeclaredPredicate
+  
   type DecoratorKind = Decorator
+  
   type DirectiveKind = Directive
+  
   type DirectiveLiteralKind = DirectiveLiteral
+  
   type DoExpressionKind = DoExpression
+  
   type DoWhileStatementKind = DoWhileStatement
+  
   type EmptyStatementKind = EmptyStatement
+  
   type EmptyTypeAnnotationKind = EmptyTypeAnnotation
+  
+  type EnumBooleanBodyKind = EnumBooleanBody
+  
+  type EnumBooleanMemberKind = EnumBooleanMember
+  
+  type EnumDeclarationKind = EnumDeclaration
+  
+  type EnumDefaultedMemberKind = EnumDefaultedMember
+  
+  type EnumNumberBodyKind = EnumNumberBody
+  
+  type EnumNumberMemberKind = EnumNumberMember
+  
+  type EnumStringBodyKind = EnumStringBody
+  
+  type EnumStringMemberKind = EnumStringMember
+  
+  type EnumSymbolBodyKind = EnumSymbolBody
+  
   type ExistentialTypeParamKind = ExistentialTypeParam
+  
   type ExistsTypeAnnotationKind = ExistsTypeAnnotation
+  
   type ExportAllDeclarationKind = ExportAllDeclaration
+  
   type ExportBatchSpecifierKind = ExportBatchSpecifier
+  
   type ExportDeclarationKind = ExportDeclaration
+  
   type ExportDefaultDeclarationKind = ExportDefaultDeclaration
+  
   type ExportDefaultSpecifierKind = ExportDefaultSpecifier
+  
   type ExportNamedDeclarationKind = ExportNamedDeclaration
+  
   type ExportNamespaceSpecifierKind = ExportNamespaceSpecifier
+  
   type ExportSpecifierKind = ExportSpecifier
+  
   type ExpressionStatementKind = ExpressionStatement
+  
   type FileKind = File
+  
   type ForAwaitStatementKind = ForAwaitStatement
+  
   type ForInStatementKind = ForInStatement
+  
   type ForOfStatementKind = ForOfStatement
+  
   type ForStatementKind = ForStatement
+  
   type FunctionDeclarationKind = FunctionDeclaration
+  
   type FunctionExpressionKind = FunctionExpression
+  
   type FunctionTypeAnnotationKind = FunctionTypeAnnotation
+  
   type FunctionTypeParamKind = FunctionTypeParam
+  
   type GeneratorExpressionKind = GeneratorExpression
+  
   type GenericTypeAnnotationKind = GenericTypeAnnotation
+  
   type IfStatementKind = IfStatement
+  
   type ImportDeclarationKind = ImportDeclaration
+  
   type ImportDefaultSpecifierKind = ImportDefaultSpecifier
+  
+  type ImportExpressionKind = ImportExpression
+  
   type ImportKind = Import
+  
   type ImportNamespaceSpecifierKind = ImportNamespaceSpecifier
+  
   type ImportSpecifierKind = ImportSpecifier
+  
   type InferredPredicateKind = InferredPredicate
+  
   type InterfaceExtendsKind = InterfaceExtends
+  
   type InterfaceTypeAnnotationKind = InterfaceTypeAnnotation
+  
   type InterpreterDirectiveKind = InterpreterDirective
+  
   type IntersectionTypeAnnotationKind = IntersectionTypeAnnotation
+  
   type JSXAttributeKind = JSXAttribute
+  
   type JSXClosingElementKind = JSXClosingElement
+  
   type JSXClosingFragmentKind = JSXClosingFragment
+  
   type JSXElementKind = JSXElement
+  
   type JSXEmptyExpressionKind = JSXEmptyExpression
+  
   type JSXExpressionContainerKind = JSXExpressionContainer
+  
   type JSXFragmentKind = JSXFragment
+  
   type JSXIdentifierKind = JSXIdentifier
+  
   type JSXMemberExpressionKind = JSXMemberExpression
+  
   type JSXNamespacedNameKind = JSXNamespacedName
+  
   type JSXOpeningElementKind = JSXOpeningElement
+  
   type JSXOpeningFragmentKind = JSXOpeningFragment
+  
   type JSXSpreadAttributeKind = JSXSpreadAttribute
+  
   type JSXSpreadChildKind = JSXSpreadChild
+  
   type JSXTextKind = JSXText
+  
   type LabeledStatementKind = LabeledStatement
+  
   type LineKind = Line
+  
   type LogicalExpressionKind = LogicalExpression
+  
   type MemberTypeAnnotationKind = MemberTypeAnnotation
+  
   type MetaPropertyKind = MetaProperty
+  
   type MethodDefinitionKind = MethodDefinition
+  
   type MixedTypeAnnotationKind = MixedTypeAnnotation
+  
   type NewExpressionKind = NewExpression
+  
   type NoopKind = Noop
+  
   type NullLiteralKind = NullLiteral
+  
   type NullLiteralTypeAnnotationKind = NullLiteralTypeAnnotation
+  
   type NullTypeAnnotationKind = NullTypeAnnotation
+  
   type NullableTypeAnnotationKind = NullableTypeAnnotation
+  
   type NumberLiteralTypeAnnotationKind = NumberLiteralTypeAnnotation
+  
   type NumberTypeAnnotationKind = NumberTypeAnnotation
+  
   type NumericLiteralKind = NumericLiteral
+  
   type NumericLiteralTypeAnnotationKind = NumericLiteralTypeAnnotation
+  
   type ObjectExpressionKind = ObjectExpression
+  
   type ObjectMethodKind = ObjectMethod
+  
   type ObjectPatternKind = ObjectPattern
+  
   type ObjectPropertyKind = ObjectProperty
+  
   type ObjectTypeAnnotationKind = ObjectTypeAnnotation
+  
   type ObjectTypeCallPropertyKind = ObjectTypeCallProperty
+  
   type ObjectTypeIndexerKind = ObjectTypeIndexer
+  
   type ObjectTypeInternalSlotKind = ObjectTypeInternalSlot
+  
   type ObjectTypePropertyKind = ObjectTypeProperty
+  
   type ObjectTypeSpreadPropertyKind = ObjectTypeSpreadProperty
-  type OpaqueTypeKind = OpaqueType
+  
   type OptionalCallExpressionKind = OptionalCallExpression
+  
   type OptionalMemberExpressionKind = OptionalMemberExpression
+  
   type ParenthesizedExpressionKind = ParenthesizedExpression
+  
   type PositionKind = Position
+  
   type PrivateNameKind = PrivateName
+  
   type ProgramKind = Program
+  
   type PropertyKind = Property
+  
   type PropertyPatternKind = PropertyPattern
+  
   type QualifiedTypeIdentifierKind = QualifiedTypeIdentifier
+  
   type RegExpLiteralKind = RegExpLiteral
+  
   type RestElementKind = RestElement
+  
   type RestPropertyKind = RestProperty
+  
   type ReturnStatementKind = ReturnStatement
+  
   type SequenceExpressionKind = SequenceExpression
+  
   type SourceLocationKind = SourceLocation
+  
   type SpreadElementKind = SpreadElement
+  
   type SpreadElementPatternKind = SpreadElementPattern
+  
   type SpreadPropertyKind = SpreadProperty
+  
   type SpreadPropertyPatternKind = SpreadPropertyPattern
+  
   type StringLiteralKind = StringLiteral
+  
   type StringLiteralTypeAnnotationKind = StringLiteralTypeAnnotation
+  
   type StringTypeAnnotationKind = StringTypeAnnotation
+  
   type SuperKind = Super
+  
   type SwitchCaseKind = SwitchCase
+  
   type SwitchStatementKind = SwitchStatement
+  
+  type SymbolTypeAnnotationKind = SymbolTypeAnnotation
+  
   type TSAnyKeywordKind = TSAnyKeyword
+  
   type TSArrayTypeKind = TSArrayType
+  
   type TSAsExpressionKind = TSAsExpression
+  
   type TSBigIntKeywordKind = TSBigIntKeyword
+  
   type TSBooleanKeywordKind = TSBooleanKeyword
+  
   type TSCallSignatureDeclarationKind = TSCallSignatureDeclaration
+  
   type TSConditionalTypeKind = TSConditionalType
+  
   type TSConstructSignatureDeclarationKind = TSConstructSignatureDeclaration
+  
   type TSConstructorTypeKind = TSConstructorType
+  
   type TSDeclareFunctionKind = TSDeclareFunction
+  
   type TSDeclareMethodKind = TSDeclareMethod
+  
   type TSEnumDeclarationKind = TSEnumDeclaration
+  
   type TSEnumMemberKind = TSEnumMember
+  
   type TSExportAssignmentKind = TSExportAssignment
+  
   type TSExpressionWithTypeArgumentsKind = TSExpressionWithTypeArguments
+  
   type TSExternalModuleReferenceKind = TSExternalModuleReference
+  
   type TSFunctionTypeKind = TSFunctionType
+  
   type TSImportEqualsDeclarationKind = TSImportEqualsDeclaration
+  
   type TSImportTypeKind = TSImportType
+  
   type TSIndexSignatureKind = TSIndexSignature
+  
   type TSIndexedAccessTypeKind = TSIndexedAccessType
+  
   type TSInferTypeKind = TSInferType
+  
   type TSInterfaceBodyKind = TSInterfaceBody
+  
   type TSInterfaceDeclarationKind = TSInterfaceDeclaration
+  
   type TSIntersectionTypeKind = TSIntersectionType
+  
   type TSLiteralTypeKind = TSLiteralType
+  
   type TSMappedTypeKind = TSMappedType
+  
   type TSMethodSignatureKind = TSMethodSignature
+  
   type TSModuleBlockKind = TSModuleBlock
+  
   type TSModuleDeclarationKind = TSModuleDeclaration
+  
+  type TSNamedTupleMemberKind = TSNamedTupleMember
+  
   type TSNamespaceExportDeclarationKind = TSNamespaceExportDeclaration
+  
   type TSNeverKeywordKind = TSNeverKeyword
+  
   type TSNonNullExpressionKind = TSNonNullExpression
+  
   type TSNullKeywordKind = TSNullKeyword
+  
   type TSNumberKeywordKind = TSNumberKeyword
+  
   type TSObjectKeywordKind = TSObjectKeyword
+  
   type TSOptionalTypeKind = TSOptionalType
+  
   type TSParameterPropertyKind = TSParameterProperty
+  
   type TSParenthesizedTypeKind = TSParenthesizedType
+  
   type TSPropertySignatureKind = TSPropertySignature
+  
   type TSQualifiedNameKind = TSQualifiedName
+  
   type TSRestTypeKind = TSRestType
+  
   type TSStringKeywordKind = TSStringKeyword
+  
   type TSSymbolKeywordKind = TSSymbolKeyword
+  
   type TSThisTypeKind = TSThisType
+  
   type TSTupleTypeKind = TSTupleType
+  
   type TSTypeAliasDeclarationKind = TSTypeAliasDeclaration
+  
   type TSTypeAssertionKind = TSTypeAssertion
+  
   type TSTypeLiteralKind = TSTypeLiteral
+  
   type TSTypeOperatorKind = TSTypeOperator
+  
   type TSTypeParameterDeclarationKind = TSTypeParameterDeclaration
+  
   type TSTypeParameterInstantiationKind = TSTypeParameterInstantiation
+  
   type TSTypeParameterKind = TSTypeParameter
+  
   type TSTypePredicateKind = TSTypePredicate
+  
   type TSTypeQueryKind = TSTypeQuery
+  
   type TSTypeReferenceKind = TSTypeReference
+  
   type TSUndefinedKeywordKind = TSUndefinedKeyword
+  
   type TSUnionTypeKind = TSUnionType
+  
   type TSUnknownKeywordKind = TSUnknownKeyword
+  
   type TSVoidKeywordKind = TSVoidKeyword
+  
   type TaggedTemplateExpressionKind = TaggedTemplateExpression
+  
   type TemplateElementKind = TemplateElement
+  
   type TemplateLiteralKind = TemplateLiteral
+  
   type ThisExpressionKind = ThisExpression
+  
   type ThisTypeAnnotationKind = ThisTypeAnnotation
+  
   type ThrowStatementKind = ThrowStatement
+  
   type TryStatementKind = TryStatement
+  
   type TupleTypeAnnotationKind = TupleTypeAnnotation
+  
   type TypeAnnotationKind = TypeAnnotation
+  
   type TypeCastExpressionKind = TypeCastExpression
+  
   type TypeParameterDeclarationKind = TypeParameterDeclaration
+  
   type TypeParameterInstantiationKind = TypeParameterInstantiation
+  
   type TypeParameterKind = TypeParameter
+  
   type TypeofTypeAnnotationKind = TypeofTypeAnnotation
+  
   type UnaryExpressionKind = UnaryExpression
+  
   type UnionTypeAnnotationKind = UnionTypeAnnotation
+  
   type UpdateExpressionKind = UpdateExpression
+  
   type VariableDeclarationKind = VariableDeclaration
+  
   type VariableDeclaratorKind = VariableDeclarator
+  
   type VarianceKind = Variance
+  
   type VoidTypeAnnotationKind = VoidTypeAnnotation
+  
   type WhileStatementKind = WhileStatement
+  
   type WithStatementKind = WithStatement
+  
   type YieldExpressionKind = YieldExpression
 }
-

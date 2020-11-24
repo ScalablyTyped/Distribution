@@ -11,8 +11,8 @@ A Simple yet powerful plugin system for node applications
 | Full name          | architect |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 26906 |
+| # dependents       | 33 |
+| # downloads        | 39988 |
 | # stars            | 6 |
 
 ## Links

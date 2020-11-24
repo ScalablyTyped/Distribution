@@ -58,22 +58,12 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/components/dropdown/dropdown", "Dropdown")
 @js.native
 object Dropdown extends js.Object {
-  var Container: TypeofDropdownContainer = js.native
-  var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  var Context: typings.react.mod.Context[DropdownContextValue] = js.native
-  var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
-  var Item: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[_]] = js.native
-  var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  var Trigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[_]] = js.native
-  var defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
-  var displayName: js.UndefOr[String] = js.native
+  
   def apply[TAsComponent /* <: ElementType[_] */](
     props: `6`[TAsComponent] with PickDropdownContainerProp with (Pick[
       ComponentProps[TAsComponent], 
@@ -83,5 +73,25 @@ object Dropdown extends js.Object {
       ]
     ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
   ): Element | Null = js.native
+  
+  var Container: TypeofDropdownContainer = js.native
+  
+  var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  var Context: typings.react.mod.Context[DropdownContextValue] = js.native
+  
+  var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  @JSName("$$typeof")
+  var DollarDollartypeof: js.Symbol = js.native
+  
+  var Item: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[_]] = js.native
+  
+  var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+  
+  var Trigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[_]] = js.native
+  
+  var defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
+  
+  var displayName: js.UndefOr[String] = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.when.mod
 import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("when", "map")
 @js.native
 object map extends js.Object {
+  
   /**
     * Promise-aware array map function, similar to `Array.prototype.map()`,
     * but input array may contain promises or values.
@@ -18,4 +19,3 @@ object map extends js.Object {
     */
   def apply[T](promisesOrValues: js.Array[_], mapFunc: js.Function2[/* value */ js.Any, /* index */ Double, _]): Promise[T] = js.native
 }
-

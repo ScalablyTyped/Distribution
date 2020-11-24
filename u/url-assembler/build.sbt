@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "url-assembler"
-version := "1.2-dt-20200515Z-a9ed86"
+version := "1.2-dt-20200515Z-91b4e9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

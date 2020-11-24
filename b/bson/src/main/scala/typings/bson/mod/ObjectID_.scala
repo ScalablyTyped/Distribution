@@ -3,7 +3,7 @@ package typings.bson.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "ObjectID")
 @js.native
@@ -16,25 +16,28 @@ class ObjectID_ () extends ObjectId {
   def this(id: scala.Double) = this()
   def this(id: ObjectId) = this()
 }
-
 /* static members */
 @JSImport("bson", "ObjectID")
 @js.native
 object ObjectID_ extends js.Object {
+  
   /** If true cache the hex string representation of ObjectId */
   var cacheHexString: js.UndefOr[Boolean] = js.native
+  
   /**
     * Creates an ObjectId from a hex string representation of an ObjectId.
     * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
     * @return {ObjectId} return the created ObjectId
     */
   def createFromHexString(hexString: String): ObjectId = js.native
+  
   /**
     * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
     * @param {number} time an integer number representing a number of seconds.
     * @return {ObjectId} return the created ObjectId
     */
   def createFromTime(time: scala.Double): ObjectId = js.native
+  
   /**
     * Generate a 12 byte id string used in ObjectId's
     * @param {number} time optional parameter allowing to pass in a second based timestamp.
@@ -42,6 +45,7 @@ object ObjectID_ extends js.Object {
     */
   def generate(): Buffer = js.native
   def generate(time: scala.Double): Buffer = js.native
+  
   /**
     * Checks if a value is a valid bson ObjectId
     *
@@ -51,4 +55,3 @@ object ObjectID_ extends js.Object {
   def isValid(id: scala.Double): Boolean = js.native
   def isValid(id: ObjectId): Boolean = js.native
 }
-

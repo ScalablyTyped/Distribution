@@ -6,7 +6,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * JSnoX requires an object with a createElement method.
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ReactLikeObject extends js.Object {
+  
   def createElement[P](`type`: String, props: P, children: ReactNode): ReactElement = js.native
   def createElement[P](`type`: ComponentClass[P, ComponentState], props: P, children: ReactNode): ReactElement = js.native
 }
-

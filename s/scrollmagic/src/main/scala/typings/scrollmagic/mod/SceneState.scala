@@ -2,7 +2,7 @@ package typings.scrollmagic.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.scrollmagic.scrollmagicStrings.BEFORE
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.scrollmagic.scrollmagicStrings.AFTER
 */
 trait SceneState extends js.Object
-
 object SceneState {
+  
   @scala.inline
   def AFTER: typings.scrollmagic.scrollmagicStrings.AFTER = "AFTER".asInstanceOf[typings.scrollmagic.scrollmagicStrings.AFTER]
+  
   @scala.inline
   def BEFORE: typings.scrollmagic.scrollmagicStrings.BEFORE = "BEFORE".asInstanceOf[typings.scrollmagic.scrollmagicStrings.BEFORE]
+  
   @scala.inline
   def DURING: typings.scrollmagic.scrollmagicStrings.DURING = "DURING".asInstanceOf[typings.scrollmagic.scrollmagicStrings.DURING]
 }
-

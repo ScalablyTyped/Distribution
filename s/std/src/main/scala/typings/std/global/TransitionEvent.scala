@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.TransitionEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TransitionEvent")
 @js.native
@@ -14,7 +14,6 @@ class TransitionEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, transitionEventInitDict: TransitionEventInit) = this()
 }
-
 @JSGlobal("TransitionEvent")
 @js.native
 object TransitionEvent
@@ -24,4 +23,3 @@ object TransitionEvent
       /* transitionEventInitDict */ TransitionEventInit, 
       typings.std.TransitionEvent
     ]
-

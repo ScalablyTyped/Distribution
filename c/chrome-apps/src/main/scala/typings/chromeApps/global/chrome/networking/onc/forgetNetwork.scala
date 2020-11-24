@@ -2,11 +2,12 @@ package typings.chromeApps.global.chrome.networking.onc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.networking.onc.forgetNetwork")
 @js.native
 object forgetNetwork extends js.Object {
+  
   /**
     * Forgets a network configuration by clearing any configured properties for the network with GUID networkGuid.
     * This may also include any other networks with matching identifiers (e.g. WiFi SSID and Security).
@@ -18,4 +19,3 @@ object forgetNetwork extends js.Object {
   def apply(networkGuid: String): Unit = js.native
   def apply(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
 }
-

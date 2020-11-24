@@ -2,18 +2,19 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/observable/UsingObservable", JSImport.Namespace)
 @js.native
 object usingObservableMod extends js.Object {
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
   class UsingObservable[T] () extends js.Object
-  
   /* static members */
   @js.native
   object UsingObservable extends js.Object {
+    
     def create[T](
       resourceFactory: js.Function0[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Unsubscribable */ _) | Unit
@@ -24,6 +25,4 @@ object usingObservableMod extends js.Object {
         ]
     ): js.Any = js.native
   }
-  
 }
-

@@ -5,9 +5,31 @@ import typings.classValidator.isISBNMod.IsISBNVersion
 import typings.classValidator.isUUIDMod.UUIDVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classValidatorStrings {
+  
+  @scala.inline
+  def `10`: `10` = "10".asInstanceOf[`10`]
+  
+  @scala.inline
+  def `13`: `13` = "13".asInstanceOf[`13`]
+  
+  @scala.inline
+  def `3`: `3` = "3".asInstanceOf[`3`]
+  
+  @scala.inline
+  def `4`: `4` = "4".asInstanceOf[`4`]
+  
+  @scala.inline
+  def `5`: `5` = "5".asInstanceOf[`5`]
+  
+  @scala.inline
+  def `6`: `6` = "6".asInstanceOf[`6`]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
   @js.native
   sealed trait `10` extends IsISBNVersion
   
@@ -30,20 +52,4 @@ object classValidatorStrings {
   
   @js.native
   sealed trait all extends UUIDVersion
-  
-  @scala.inline
-  def `10`: `10` = "10".asInstanceOf[`10`]
-  @scala.inline
-  def `13`: `13` = "13".asInstanceOf[`13`]
-  @scala.inline
-  def `3`: `3` = "3".asInstanceOf[`3`]
-  @scala.inline
-  def `4`: `4` = "4".asInstanceOf[`4`]
-  @scala.inline
-  def `5`: `5` = "5".asInstanceOf[`5`]
-  @scala.inline
-  def `6`: `6` = "6".asInstanceOf[`6`]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
 }
-

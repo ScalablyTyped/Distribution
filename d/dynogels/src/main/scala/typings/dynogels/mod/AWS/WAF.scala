@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.wafMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.WAF")
 @js.native
@@ -14,4 +14,3 @@ class WAF ()
   extends typings.awsSdk.mod.WAF {
   def this(options: ClientConfiguration) = this()
 }
-

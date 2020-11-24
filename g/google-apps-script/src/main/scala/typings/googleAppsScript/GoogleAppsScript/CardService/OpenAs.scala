@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait OpenAs extends js.Object
-
 /**
   * An enum that specifies how to open a URL.
   *
@@ -20,11 +19,10 @@ sealed trait OpenAs extends js.Object
 @JSGlobal("GoogleAppsScript.Card_Service.OpenAs")
 @js.native
 object OpenAs extends js.Object {
+  
   @js.native
   sealed trait FULL_SIZE extends OpenAs
   
   @js.native
   sealed trait OVERLAY extends OpenAs
-  
 }
-

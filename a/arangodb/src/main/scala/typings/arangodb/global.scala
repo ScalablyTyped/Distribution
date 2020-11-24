@@ -5,13 +5,15 @@ import typings.arangodb.Foxx.Handler
 import typings.arangodb.Foxx.SimpleMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Foxx extends js.Object {
+    
     def route(handler: Handler): Endpoint = js.native
     def route(handler: Handler, name: String): Endpoint = js.native
     def route(pathOrMiddleware: String, handler: Handler): Endpoint = js.native
@@ -343,6 +345,4 @@ object global extends js.Object {
     def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
     def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = js.native
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Query
 import typings.microsoftSdkSoap.mod.global.Sdk.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Query.QueryExpression")
 @js.native
@@ -13,6 +13,7 @@ class QueryExpression protected () extends QueryBase {
     * @param entityName The name of the entity.
     */
   def this(entityName: String) = this()
+  
   /// prototype methods
   /**
     *  Contains a condition expression used to filter the results of the query.
@@ -34,6 +35,7 @@ class QueryExpression protected () extends QueryBase {
     *          Sdk.Query.Strings
     */
   def addCondition(entityName: String, attributeName: String, conditionOperator: ConditionOperator, values: ValueBase): Unit = js.native
+  
   /**
     * Adds the specified link to the query expression setting the entity name to link to, the attribute name to link from and the attribute name to link to.
     * @param firstParam The name of entity to link from.
@@ -52,41 +54,48 @@ class QueryExpression protected () extends QueryBase {
     * @param firstParam An Sdk.Query.LinkEntity instance.
     */
   def addLink(firstParam: LinkEntity): Unit = js.native
+  
   /**
     * Adds the specified order expression to the query expression.
     * @param attributeName The name of the attribute.
     * @param orderType The order, ascending or descending. Ascending is the default if not specified.
     */
   def addOrder(attributeName: String, orderType: OrderType): Unit = js.native
+  
   /**
     * Gets the complex condition and logical filter expressions that filter the results of the query.
     */
   def getCriteria(): FilterExpression = js.native
+  
   /**
     * Gets whether the results of the query contain duplicate entity instances.
     */
   def getDistinct(): Boolean = js.native
+  
   /**
     * Gets an Sdk.Collection of Sdk.Query.LinkEntity instances.
     */
   def getLinkEntities(): Collection[LinkEntity] = js.native
+  
   /**
     * Gets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
     */
   def getNoLock(): Boolean = js.native
+  
   /**
     * Sets the complex condition and logical filter expressions that filter the results of the query.
     * @param criteria The query condition and filter criteria.
     */
   def setCriteria(criteria: FilterExpression): Unit = js.native
+  
   /**
     * Sets whether the results of the query contain duplicate entity instances.
     */
   def setDistinct(isDistinct: Boolean): Unit = js.native
+  
   /**
     * Sets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
     * @param isNoLock True if there are no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query; otherwise, false.
     */
   def setNoLock(isNoLock: Boolean): Unit = js.native
 }
-

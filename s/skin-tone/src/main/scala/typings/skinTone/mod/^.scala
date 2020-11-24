@@ -2,11 +2,12 @@ package typings.skinTone.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("skin-tone", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Change the skin tone of an emoji 👌👌🏻👌🏼👌🏽👌🏾👌🏿.
   @param emoji - Emoji to modify.
@@ -34,4 +35,3 @@ object ^ extends js.Object {
   */
   def apply(emoji: String, tone: Tone): String = js.native
 }
-

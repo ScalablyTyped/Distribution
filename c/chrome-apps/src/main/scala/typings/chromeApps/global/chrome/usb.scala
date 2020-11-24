@@ -38,7 +38,7 @@ import typings.chromeApps.chromeAppsStrings.synchronous_
 import typings.chromeApps.chromeAppsStrings.vendor_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.usb
@@ -59,21 +59,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.usb")
 @js.native
 object usb extends js.Object {
-  /**
-    * Event generated when a device is added to the system.
-    * Events are only broadcast to apps that have permission to access the device.
-    * Permission may have been granted at install time, when the user accepted an optional permission
-    * (@see[permissions.request]{https://developer.chrome.com/apps/permissions#method-request}),
-    * or through **getUserSelectedDevices**.
-    * @since Chrome 42.
-    */
-  val onDeviceAdded: DeviceEvent = js.native
-  /**
-    * Event generated when a device is removed from the system.
-    * See **onDeviceAdded** for which events are delivered.
-    * @since Chrome 42.
-    */
-  val onDeviceRemoved: DeviceEvent = js.native
+  
   /**
     * @description Performs a bulk transfer on the specified device.
     * @param handle An open connection to the device.
@@ -85,6 +71,7 @@ object usb extends js.Object {
     transferInfo: GenericTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Claims an interface on a USB device.
     * Before data can be transfered to an interface or associated endpoints the interface must be claimed.
@@ -97,6 +84,7 @@ object usb extends js.Object {
     * @param callback
     */
   def claimInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Closes a connection handle.
     * Invoking operations on a handle after it has been closed is a safe operation but causes no action to be taken.
@@ -105,6 +93,7 @@ object usb extends js.Object {
     */
   def closeDevice(handle: ConnectionHandle): Unit = js.native
   def closeDevice(handle: ConnectionHandle, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Performs a control transfer on the specified device.
     * Control transfers refer to either the device, an interface or an endpoint.
@@ -118,6 +107,7 @@ object usb extends js.Object {
     transferInfo: TransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
     * If the access request is rejected or the device fails to be opened a connection handle will not be created or returned.
@@ -140,6 +130,7 @@ object usb extends js.Object {
     * @param callback
     */
   def findDevices(options: ProductId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = js.native
+  
   /**
     * Gets the configuration descriptor for the currently selected configuration.
     * @since Chrome 39.
@@ -147,6 +138,7 @@ object usb extends js.Object {
     * @param callback
     */
   def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, Unit]): Unit = js.native
+  
   /**
     * Returns the full set of device configuration descriptors.
     * @since Chrome 47.
@@ -154,6 +146,7 @@ object usb extends js.Object {
     * @param callback
     */
   def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], Unit]): Unit = js.native
+  
   /**
     * @description Enumerates connected USB devices.
     * @since Chrome 39.
@@ -161,6 +154,7 @@ object usb extends js.Object {
     * @param callback
     */
   def getDevices(options: Filters, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  
   /**
     * Presents a device picker to the user and returns the Devices selected.
     * If the user cancels the picker devices will be empty.
@@ -174,6 +168,7 @@ object usb extends js.Object {
     * @param callback Invoked with a list of chosen Devices.
     */
   def getUserSelectedDevices(options: Multiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  
   /**
     * @description Performs an interrupt transfer on the specified device.
     * @param handle An open connection to the device.
@@ -185,6 +180,7 @@ object usb extends js.Object {
     transferInfo: GenericTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
   ): Unit = js.native
+  
   /**
     * @description Performs an isochronous transfer on the specific device.
     * @param handle An open connection to the device.
@@ -196,6 +192,7 @@ object usb extends js.Object {
     transferInfo: IsochronousTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
   ): Unit = js.native
+  
   /**
     * @description Lists all interfaces on a USB device.
     * @param handle An open connection to the device.
@@ -205,6 +202,24 @@ object usb extends js.Object {
     handle: ConnectionHandle,
     callback: js.Function1[/* descriptors */ js.Array[InterfaceDescriptor], Unit]
   ): Unit = js.native
+  
+  /**
+    * Event generated when a device is added to the system.
+    * Events are only broadcast to apps that have permission to access the device.
+    * Permission may have been granted at install time, when the user accepted an optional permission
+    * (@see[permissions.request]{https://developer.chrome.com/apps/permissions#method-request}),
+    * or through **getUserSelectedDevices**.
+    * @since Chrome 42.
+    */
+  val onDeviceAdded: DeviceEvent = js.native
+  
+  /**
+    * Event generated when a device is removed from the system.
+    * See **onDeviceAdded** for which events are delivered.
+    * @since Chrome 42.
+    */
+  val onDeviceRemoved: DeviceEvent = js.native
+  
   /**
     * Opens a USB device returned by *getDevices*
     * @since Chrome 31.
@@ -212,6 +227,7 @@ object usb extends js.Object {
     * @param callback
     */
   def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, Unit]): Unit = js.native
+  
   /**
     * @description Releases a claimed interface.
     * @param handle An open connection to the device.
@@ -219,11 +235,13 @@ object usb extends js.Object {
     * @param callback
     */
   def releaseInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * @deprecated Since Chrome 40.
     * @requires(CrOS) Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
     */
   def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Tries to reset the USB device. If the reset fails, the given connection handle will be closed
     * and the USB device will appear to be disconnected then reconnected.
@@ -232,6 +250,7 @@ object usb extends js.Object {
     * @param callback
     */
   def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Select a device configuration.
     * This function effectively resets the device by selecting one of the
@@ -244,6 +263,7 @@ object usb extends js.Object {
     * @param callback
     */
   def setConfiguration(handle: ConnectionHandle, configurationValue: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * @description Selects an alternate setting on a previously claimed interface.
     * @param handle An open connection to the device where this interface has been claimed.
@@ -257,55 +277,76 @@ object usb extends js.Object {
     alternateSetting: integer,
     callback: js.Function0[Unit]
   ): Unit = js.native
+  
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   @js.native
   object Direction extends js.Object {
+    
     var IN: in_ = js.native
+    
     var OUT: out_ = js.native
   }
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   @js.native
   object Recipient extends js.Object {
+    
     var DEVICE: device__ = js.native
+    
     var ENDPOINT: endpoint_ = js.native
+    
     var INTERFACE: interface_ = js.native
+    
     var OTHER: other_ = js.native
   }
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   @js.native
   object RequestType extends js.Object {
+    
     var CLASS: class_ = js.native
+    
     var RESERVED: reserved_ = js.native
+    
     var STANDARD: standard_ = js.native
+    
     var VENDOR: vendor_ = js.native
   }
   
   @js.native
   object SynchronizationType extends js.Object {
+    
     var ADAPTIVE: adaptive_ = js.native
+    
     var ASYNCHRONOUS: asynchronous_ = js.native
+    
     var SYNCHRONOUS: synchronous_ = js.native
   }
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   @js.native
   object TransferType extends js.Object {
+    
     var BULK: bulk_ = js.native
+    
     var CONTROL: control_ = js.native
+    
     var INTERRUPT: interrupt_ = js.native
+    
     var ISOCHRONOUS: isochronous_ = js.native
   }
   
   @js.native
   object UsageType extends js.Object {
+    
     var DATA: data_ = js.native
+    
     var EXPLICIT_FEEDBACK: explicitFeedback = js.native
+    
     var FEEDBACK: feedback_ = js.native
+    
     var NOTIFICATION: notification_ = js.native
+    
     var PERIODIC: periodic_ = js.native
   }
-  
 }
-

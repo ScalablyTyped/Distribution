@@ -2,11 +2,12 @@ package typings.reduxActions.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-actions", "createAction")
 @js.native
 object createAction extends js.Object {
+  
   def apply(actionType: String): ActionFunctionAny[Action[_]] = js.native
   def apply[Meta](
     actionType: String,
@@ -40,4 +41,3 @@ object createAction extends js.Object {
     metaCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Meta]
   ): ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]] = js.native
 }
-

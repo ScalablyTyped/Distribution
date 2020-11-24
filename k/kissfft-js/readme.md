@@ -12,7 +12,7 @@ Javascript port of KissFFT via Emscripten
 | Keywords           | FFT, DSP, fast-fourier-transform, digital-signal-processing |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3919 |
+| # downloads        | 3341 |
 | # stars            | 0 |
 
 ## Links

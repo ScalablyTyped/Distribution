@@ -2,7 +2,7 @@ package typings.listr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.listr.listrStrings.silent
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   - typings.listr.mod.ListrRendererClass[Ctx]
 */
 trait ListrRendererValue[Ctx] extends js.Object
-

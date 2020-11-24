@@ -2,11 +2,12 @@ package typings.stropheJs.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe.js", "Strophe.xmlunescape")
 @js.native
 object xmlunescape extends js.Object {
+  
   /*  Function: xmlunescape
     *  Unexcapes invalid xml characters.
     *
@@ -18,4 +19,3 @@ object xmlunescape extends js.Object {
     */
   def apply(text: String): String = js.native
 }
-

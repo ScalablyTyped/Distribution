@@ -2,15 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactStateType extends js.Object
-
 /** An enumeration listing the different high-level states that a contact can have. */
 @JSGlobal("connect.ContactStateType")
 @js.native
 object ContactStateType extends js.Object {
+  
   /** Indicates the contact is connected. */
   @js.native
   sealed trait CONNECTED extends ContactStateType
@@ -49,6 +49,4 @@ object ContactStateType extends js.Object {
   /** Indicates the contact is pending. */
   @js.native
   sealed trait PENDING extends ContactStateType
-  
 }
-

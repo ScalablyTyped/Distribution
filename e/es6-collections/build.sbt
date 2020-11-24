@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "es6-collections"
-version := "v0.5.1-dt-20200515Z-8d74da"
+version := "v0.5.1-dt-20201002Z-f7ab1a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

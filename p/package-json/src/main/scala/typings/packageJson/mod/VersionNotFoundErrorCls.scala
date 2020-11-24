@@ -2,7 +2,7 @@ package typings.packageJson.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	The error thrown when the given package version cannot be found.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class VersionNotFoundErrorCls protected () extends VersionNotFoundErrorClass {
   def this(packageName: String, version: String) = this()
 }
-

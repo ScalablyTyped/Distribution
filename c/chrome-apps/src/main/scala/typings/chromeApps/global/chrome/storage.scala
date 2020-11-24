@@ -8,7 +8,7 @@ import typings.chromeApps.chrome.storage.StorageChange
 import typings.chromeApps.chrome.storage.SyncStorageArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.sockets.*
 // #region chrome.storage
@@ -23,8 +23,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.storage")
 @js.native
 object storage extends js.Object {
+  
   /** Items in the local storage area are local to each machine. */
   val local: LocalStorageArea = js.native
+  
   /**
     * Items in the managed storage area are set by the domain administrator,
     * and are read-only for the extension; trying to modify this namespace
@@ -32,11 +34,12 @@ object storage extends js.Object {
     * @since Chrome 33.
     */
   val managed: ManagedStorageArea = js.native
+  
   /** Fired when one or more items change. */
   val onChanged: typings.chromeApps.chrome.events.Event[
     js.Function2[/* changes */ StringDictionary[StorageChange], /* areaName */ StorageAreas, Unit]
   ] = js.native
+  
   /** Items in the sync storage area are synced using Chrome Sync. */
   val sync: SyncStorageArea = js.native
 }
-

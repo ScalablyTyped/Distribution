@@ -6,9 +6,6 @@ import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
 import typings.oracleOraclejet.ojmessageMod.ojMessage.DisplayOptions
 import typings.oracleOraclejet.ojmessageMod.ojMessage.Message
-import typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateEnd
-import typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateStart
-import typings.oracleOraclejet.ojmessageMod.ojMessage.ojClose
 import typings.oracleOraclejet.oracleOraclejetStrings.abort
 import typings.oracleOraclejet.oracleOraclejetStrings.animationcancel
 import typings.oracleOraclejet.oracleOraclejetStrings.animationend
@@ -66,6 +63,9 @@ import typings.oracleOraclejet.oracleOraclejetStrings.mousemove
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseout
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseover
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseup
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart
+import typings.oracleOraclejet.oracleOraclejetStrings.ojClose
 import typings.oracleOraclejet.oracleOraclejetStrings.paste
 import typings.oracleOraclejet.oracleOraclejetStrings.pause
 import typings.oracleOraclejet.oracleOraclejetStrings.play
@@ -126,19 +126,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
-  var displayOptions: DisplayOptions = js.native
-  var message: Message = js.native
-  var onDisplayOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[DisplayOptions], _]) | Null = js.native
-  var onMessageChanged: (js.Function1[/* event */ JetElementCustomEvent[Message], _]) | Null = js.native
-  var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onOjClose: (js.Function1[/* event */ ojClose, _]) | Null = js.native
-  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[CategoriesLabelCloseIcon], _]) | Null = js.native
-  var translations: CategoriesLabelCloseIcon = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -605,35 +597,59 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _]
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateEnd, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _],
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateEnd, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _]
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateStart, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _],
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateStart, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojClose(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojClose,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojClose, _]
+    `type`: ojClose,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojClose, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojClose(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojClose,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojClose, _],
+    `type`: ojClose,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojClose, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -980,7 +996,11 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def close(): Unit = js.native
+  
+  var displayOptions: DisplayOptions = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_displayOptions(property: displayOptions): DisplayOptions = js.native
@@ -988,7 +1008,23 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   def getProperty_message(property: message): Message = js.native
   @JSName("getProperty")
   def getProperty_translations(property: translations): CategoriesLabelCloseIcon = js.native
+  
+  var message: Message = js.native
+  
+  var onDisplayOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[DisplayOptions], _]) | Null = js.native
+  
+  var onMessageChanged: (js.Function1[/* event */ JetElementCustomEvent[Message], _]) | Null = js.native
+  
+  var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateEnd, _]) | Null = js.native
+  
+  var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojAnimateStart, _]) | Null = js.native
+  
+  var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojmessageMod.ojMessage.ojClose, _]) | Null = js.native
+  
+  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[CategoriesLabelCloseIcon], _]) | Null = js.native
+  
   def setProperties(properties: ojMessageSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojMessageSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_displayOptions(property: displayOptions, value: DisplayOptions): Unit = js.native
@@ -996,5 +1032,6 @@ trait ojMessage_ extends JetElement[ojMessageSettableProperties] {
   def setProperty_message(property: message, value: Message): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: CategoriesLabelCloseIcon): Unit = js.native
+  
+  var translations: CategoriesLabelCloseIcon = js.native
 }
-

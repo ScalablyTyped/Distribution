@@ -12,7 +12,7 @@ core method for otplib
 | Keywords           | otplib-core |
 | # releases         | 6 |
 | # dependents       | 9 |
-| # downloads        | 422226 |
+| # downloads        | 637934 |
 | # stars            | 0 |
 
 ## Links

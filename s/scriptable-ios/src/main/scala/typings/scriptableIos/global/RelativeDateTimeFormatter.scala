@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Creates a textual representation of the amount of time between two dates._
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
   */
 class RelativeDateTimeFormatter ()
   extends typings.scriptableIos.RelativeDateTimeFormatter
-

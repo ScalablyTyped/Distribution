@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.checkboxControlMod.CheckboxControl.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components", "CheckboxControl")
 @js.native
 object CheckboxControl extends TopLevel[ComponentType[Props]]
-

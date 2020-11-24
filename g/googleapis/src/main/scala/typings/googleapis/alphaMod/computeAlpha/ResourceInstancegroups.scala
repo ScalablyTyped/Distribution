@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Instancegroups")
 @js.native
 class ResourceInstancegroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.instanceGroups.addInstances
     * @desc Adds a list of instances to the specified instance group. All of
@@ -47,6 +47,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.aggregatedList
     * @desc Retrieves the list of instance groups and sorts them by zone.
@@ -82,6 +83,9 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.instanceGroups.delete
     * @desc Deletes the specified instance group. The instances in the group
@@ -115,6 +119,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.get
     * @desc Returns the specified instance group. Gets a list of available
@@ -146,6 +151,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroup]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.insert
     * @desc Creates an instance group in the specified project using the
@@ -178,6 +184,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.list
     * @desc Retrieves the list of instance groups that are located in the
@@ -212,6 +219,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupList]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.listInstances
     * @desc Lists the instances in the specified instance group.
@@ -250,6 +258,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupsListInstances]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.removeInstances
     * @desc Removes one or more instances from the specified instance group,
@@ -289,6 +298,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.setNamedPorts
     * @desc Sets the named ports for the specified instance group.
@@ -321,6 +331,7 @@ class ResourceInstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroups.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -356,4 +367,3 @@ class ResourceInstancegroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.packageJson.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	The error thrown when the given package name cannot be found.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class PackageNotFoundErrorCls protected () extends PackageNotFoundErrorClass {
   def this(packageName: String) = this()
 }
-

@@ -4,12 +4,15 @@ import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Reshape")
 @js.native
 class Reshape protected () extends Layer {
   def this(args: ReshapeLayerArgs) = this()
+  
+  def computeOutputShape(inputShape: Shape): Shape = js.native
+  
   /**
     * Finds and replaces a missing dimension in output shape.
     *
@@ -25,16 +28,16 @@ class Reshape protected () extends Layer {
     * @throws: ValueError: If `inputShape` and `outputShape` do not match.
     */
   var fixUnknownDimension: js.Any = js.native
+  
   var isUnknown: js.Any = js.native
+  
   var targetShape: js.Any = js.native
-  def computeOutputShape(inputShape: Shape): Shape = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Reshape")
 @js.native
 object Reshape extends js.Object {
+  
   /** @nocollapse */
   var className: String = js.native
 }
-

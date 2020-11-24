@@ -6,7 +6,7 @@ import typings.stellarBase.mod.AssetType.credit4
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.changeTrust
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChangeTrustOperationResponse
@@ -14,15 +14,21 @@ trait ChangeTrustOperationResponse
       changeTrust, 
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.changeTrust
     ] {
+  
   var asset_code: String = js.native
+  
   var asset_issuer: String = js.native
+  
   var asset_type: credit4 | credit12 = js.native
+  
   var limit: String = js.native
+  
   var trustee: String = js.native
+  
   var trustor: String = js.native
 }
-
 object ChangeTrustOperationResponse {
+  
   @scala.inline
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -46,30 +52,38 @@ object ChangeTrustOperationResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeTrustOperationResponse]
   }
+  
   @scala.inline
   implicit class ChangeTrustOperationResponseOps[Self <: ChangeTrustOperationResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAsset_code(value: String): Self = this.set("asset_code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAsset_issuer(value: String): Self = this.set("asset_issuer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAsset_type(value: credit4 | credit12): Self = this.set("asset_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrustee(value: String): Self = this.set("trustee", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrustor(value: String): Self = this.set("trustor", value.asInstanceOf[js.Any])
   }
-  
 }
-

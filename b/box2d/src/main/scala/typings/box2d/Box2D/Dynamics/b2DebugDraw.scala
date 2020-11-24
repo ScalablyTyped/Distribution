@@ -6,20 +6,23 @@ import typings.box2d.Box2D.Common.b2Color
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait b2DebugDraw extends js.Object {
+  
   /**
     * Append flags to the current flags.
     * @param flags Flags to add.
     **/
   def AppendFlags(flags: Double): Unit = js.native
+  
   /**
     * Clear flags from the current flags.
     * @param flags flags to clear.
     **/
   def ClearFlags(flags: Double): Unit = js.native
+  
   /**
     * Draw a circle.
     * @param center Circle center point.
@@ -27,6 +30,7 @@ trait b2DebugDraw extends js.Object {
     * @param color Circle draw color.
     **/
   def DrawCircle(center: b2Vec2, radius: Double, color: b2Color): Unit = js.native
+  
   /**
     * Draw a closed polygon provided in CCW order.
     * @param vertices Polygon verticies.
@@ -34,6 +38,7 @@ trait b2DebugDraw extends js.Object {
     * @param color Polygon draw color.
     **/
   def DrawPolygon(vertices: js.Array[b2Vec2], vertexCount: Double, color: b2Color): Unit = js.native
+  
   /**
     * Draw a line segment.
     * @param p1 Line beginpoint.
@@ -41,6 +46,7 @@ trait b2DebugDraw extends js.Object {
     * @param color Line color.
     **/
   def DrawSegment(p1: b2Vec2, p2: b2Vec2, color: b2Color): Unit = js.native
+  
   /**
     * Draw a solid circle.
     * @param center Circle center point.
@@ -49,6 +55,7 @@ trait b2DebugDraw extends js.Object {
     * @param color Circle color.
     **/
   def DrawSolidCircle(center: b2Vec2, radius: Double, axis: b2Vec2, color: b2Color): Unit = js.native
+  
   /**
     * Draw a solid closed polygon provided in CCW order.
     * @param vertices Polygon verticies.
@@ -56,86 +63,101 @@ trait b2DebugDraw extends js.Object {
     * @param color Polygon draw color.
     **/
   def DrawSolidPolygon(vertices: js.Array[b2Vec2], vertexCount: Double, color: b2Color): Unit = js.native
+  
   /**
     * Draw a transform. Choose your own length scale.
     * @param xf Transform to draw.
     **/
   def DrawTransform(xf: b2Transform): Unit = js.native
+  
   /**
     * Get the alpha value used for lines.
     * @return Alpha value used for drawing lines.
     **/
   def GetAlpha(): Double = js.native
+  
   /**
     * Get the draw scale.
     * @return Draw scale ratio.
     **/
   def GetDrawScale(): Double = js.native
+  
   /**
     * Get the alpha value used for fills.
     * @return Alpha value used for drawing fills.
     **/
   def GetFillAlpha(): Double = js.native
+  
   /**
     * Get the drawing flags.
     * @return Drawing flags.
     **/
   def GetFlags(): Double = js.native
+  
   /**
     * Get the line thickness.
     * @return Line thickness.
     **/
   def GetLineThickness(): Double = js.native
+  
   /**
     * Get the HTML Canvas Element for drawing.
     * @note box2dflash uses Sprite object, box2dweb uses CanvasRenderingContext2D, that is why this function is called GetSprite().
     * @return The HTML Canvas Element used for debug drawing.
     **/
   def GetSprite(): CanvasRenderingContext2D = js.native
+  
   /**
     * Get the scale used for drawing XForms.
     * @return Scale for drawing transforms.
     **/
   def GetXFormScale(): Double = js.native
+  
   /**
     * Set the alpha value used for lines.
     * @param alpha Alpha value for drawing lines.
     **/
   def SetAlpha(alpha: Double): Unit = js.native
+  
   /**
     * Set the draw scale.
     * @param drawScale Draw scale ratio.
     **/
   def SetDrawScale(drawScale: Double): Unit = js.native
+  
   /**
     * Set the alpha value used for fills.
     * @param alpha Alpha value for drawing fills.
     **/
   def SetFillAlpha(alpha: Double): Unit = js.native
+  
   /**
     * Set the drawing flags.
     * @param flags Sets the drawing flags.
     **/
   def SetFlags(flags: Double): Unit = js.native
+  
   /**
     * Set the line thickness.
     * @param lineThickness The new line thickness.
     **/
   def SetLineThickness(lineThickness: Double): Unit = js.native
+  
   /**
     * Set the HTML Canvas Element for drawing.
     * @note box2dflash uses Sprite object, box2dweb uses CanvasRenderingContext2D, that is why this function is called SetSprite().
     * @param canvas HTML Canvas Element to draw debug information to.
     **/
   def SetSprite(canvas: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * Set the scale used for drawing XForms.
     * @param xformScale The transform scale.
     **/
   def SetXFormScale(xformScale: Double): Unit = js.native
 }
-
 object b2DebugDraw {
+  
   @scala.inline
   def apply(
     AppendFlags: Double => Unit,
@@ -164,62 +186,86 @@ object b2DebugDraw {
     val __obj = js.Dynamic.literal(AppendFlags = js.Any.fromFunction1(AppendFlags), ClearFlags = js.Any.fromFunction1(ClearFlags), DrawCircle = js.Any.fromFunction3(DrawCircle), DrawPolygon = js.Any.fromFunction3(DrawPolygon), DrawSegment = js.Any.fromFunction3(DrawSegment), DrawSolidCircle = js.Any.fromFunction4(DrawSolidCircle), DrawSolidPolygon = js.Any.fromFunction3(DrawSolidPolygon), DrawTransform = js.Any.fromFunction1(DrawTransform), GetAlpha = js.Any.fromFunction0(GetAlpha), GetDrawScale = js.Any.fromFunction0(GetDrawScale), GetFillAlpha = js.Any.fromFunction0(GetFillAlpha), GetFlags = js.Any.fromFunction0(GetFlags), GetLineThickness = js.Any.fromFunction0(GetLineThickness), GetSprite = js.Any.fromFunction0(GetSprite), GetXFormScale = js.Any.fromFunction0(GetXFormScale), SetAlpha = js.Any.fromFunction1(SetAlpha), SetDrawScale = js.Any.fromFunction1(SetDrawScale), SetFillAlpha = js.Any.fromFunction1(SetFillAlpha), SetFlags = js.Any.fromFunction1(SetFlags), SetLineThickness = js.Any.fromFunction1(SetLineThickness), SetSprite = js.Any.fromFunction1(SetSprite), SetXFormScale = js.Any.fromFunction1(SetXFormScale))
     __obj.asInstanceOf[b2DebugDraw]
   }
+  
   @scala.inline
   implicit class b2DebugDrawOps[Self <: b2DebugDraw] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppendFlags(value: Double => Unit): Self = this.set("AppendFlags", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setClearFlags(value: Double => Unit): Self = this.set("ClearFlags", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDrawCircle(value: (b2Vec2, Double, b2Color) => Unit): Self = this.set("DrawCircle", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setDrawPolygon(value: (js.Array[b2Vec2], Double, b2Color) => Unit): Self = this.set("DrawPolygon", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setDrawSegment(value: (b2Vec2, b2Vec2, b2Color) => Unit): Self = this.set("DrawSegment", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setDrawSolidCircle(value: (b2Vec2, Double, b2Vec2, b2Color) => Unit): Self = this.set("DrawSolidCircle", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setDrawSolidPolygon(value: (js.Array[b2Vec2], Double, b2Color) => Unit): Self = this.set("DrawSolidPolygon", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setDrawTransform(value: b2Transform => Unit): Self = this.set("DrawTransform", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetAlpha(value: () => Double): Self = this.set("GetAlpha", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDrawScale(value: () => Double): Self = this.set("GetDrawScale", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFillAlpha(value: () => Double): Self = this.set("GetFillAlpha", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFlags(value: () => Double): Self = this.set("GetFlags", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetLineThickness(value: () => Double): Self = this.set("GetLineThickness", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetSprite(value: () => CanvasRenderingContext2D): Self = this.set("GetSprite", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetXFormScale(value: () => Double): Self = this.set("GetXFormScale", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetAlpha(value: Double => Unit): Self = this.set("SetAlpha", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetDrawScale(value: Double => Unit): Self = this.set("SetDrawScale", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetFillAlpha(value: Double => Unit): Self = this.set("SetFillAlpha", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetFlags(value: Double => Unit): Self = this.set("SetFlags", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetLineThickness(value: Double => Unit): Self = this.set("SetLineThickness", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetSprite(value: CanvasRenderingContext2D => Unit): Self = this.set("SetSprite", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetXFormScale(value: Double => Unit): Self = this.set("SetXFormScale", js.Any.fromFunction1(value))
   }
-  
 }
-

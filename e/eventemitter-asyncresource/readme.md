@@ -12,7 +12,7 @@ AsyncResource integration for EventEmitter
 | Keywords           | EventEmitter, AsyncResource, async_hooks, events |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 11605 |
+| # downloads        | 20525 |
 | # stars            | 0 |
 
 ## Links

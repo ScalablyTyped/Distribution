@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "pbkdf2")
 @js.native
 object pbkdf2 extends js.Object {
+  
   def apply(
     password: String,
     salt: String,
@@ -25,4 +26,3 @@ object pbkdf2 extends js.Object {
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, _]
   ): Unit = js.native
 }
-

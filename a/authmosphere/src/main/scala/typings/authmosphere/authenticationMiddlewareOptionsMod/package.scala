@@ -2,9 +2,10 @@ package typings.authmosphere
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object authenticationMiddlewareOptionsMod {
+  
   type onNotAuthenticatedHandler = js.Function4[
     /* request */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 

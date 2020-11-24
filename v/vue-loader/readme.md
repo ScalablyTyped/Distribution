@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-loader
 
-Typings are for version 15.9.3
+Typings are for version 15.9.5
 
 ## Library description:
 Vue single-file component loader for Webpack
@@ -10,14 +10,15 @@ Vue single-file component loader for Webpack
 | ------------------ | :-------------: |
 | Full name          | vue-loader |
 | Keywords           | - |
-| # releases         | 66 |
-| # dependents       | 1385 |
-| # downloads        | 46348189 |
+| # releases         | 37 |
+| # dependents       | 1857 |
+| # downloads        | 77086811 |
 | # stars            | 26 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vue-loader)
 - [Bugs](https://github.com/vuejs/vue-loader/issues)
+- [Repository](https://github.com/vuejs/vue-loader)
 - [Npm](https://www.npmjs.com/package/vue-loader)
     
 

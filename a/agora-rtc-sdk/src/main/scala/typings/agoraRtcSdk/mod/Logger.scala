@@ -7,7 +7,7 @@ import typings.agoraRtcSdk.agoraRtcSdkNumbers.`3`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Logger Settings
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("agora-rtc-sdk", "Logger")
 @js.native
 object Logger extends js.Object {
+  
   /**
     * Disables Log Upload
     *
@@ -26,6 +27,7 @@ object Logger extends js.Object {
     * @example `AgoraRTC.Logger.disableLogUpload();`
     */
   def disableLogUpload(): Unit = js.native
+  
   /**
     * Enables Log Upload
     *
@@ -39,6 +41,7 @@ object Logger extends js.Object {
     * @example `AgoraRTC.Logger.enableLogUpload();`
     */
   def enableLogUpload(): Unit = js.native
+  
   /**
     * Sets the Log Level
     *
@@ -53,15 +56,19 @@ object Logger extends js.Object {
   def setLogLevel(level: INFO): Unit = js.native
   def setLogLevel(level: NONE): Unit = js.native
   def setLogLevel(level: WARNING): Unit = js.native
+  
   /** Outputs all logs. */
   type DEBUG = `0`
+  
   /** Outputs logs of the ERROR level. */
   type ERROR = `3`
+  
   /** Outputs logs of the INFO, WARNING and ERROR levels. */
   type INFO = `1`
+  
   /** Outputs no log. */
   type NONE = `4`
+  
   /** Outputs logs of the WARNING and ERROR levels. */
   type WARNING = `2`
 }
-

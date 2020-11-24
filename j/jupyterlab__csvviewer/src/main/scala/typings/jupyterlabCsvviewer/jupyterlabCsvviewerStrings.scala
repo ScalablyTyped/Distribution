@@ -2,9 +2,19 @@ package typings.jupyterlabCsvviewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabCsvviewerStrings {
+  
+  @scala.inline
+  def Carriagereturn: Carriagereturn = "\r".asInstanceOf[Carriagereturn]
+  
+  @scala.inline
+  def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
+  
+  @scala.inline
+  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
+  
   @js.native
   sealed trait Carriagereturn extends js.Object
   
@@ -13,12 +23,4 @@ object jupyterlabCsvviewerStrings {
   
   @js.native
   sealed trait Linefeed extends js.Object
-  
-  @scala.inline
-  def Carriagereturn: Carriagereturn = "\r".asInstanceOf[Carriagereturn]
-  @scala.inline
-  def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
-  @scala.inline
-  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
 }
-

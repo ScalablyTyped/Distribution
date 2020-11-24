@@ -3,7 +3,7 @@ package typings.koa.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface can be augmented by users to add types to Koa's default context
@@ -15,12 +15,11 @@ trait DefaultContext
   * Custom properties.
   */
 /* key */ StringDictionary[js.Any]
-
 object DefaultContext {
+  
   @scala.inline
   def apply(): DefaultContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultContext]
   }
 }
-

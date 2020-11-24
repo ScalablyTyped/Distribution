@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Body Bounds class contains methods to help you extract the world coordinates from various points around
@@ -22,14 +22,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BodyBounds extends js.Object {
+  
   /**
     * A Vector2 that stores the temporary bounds center value during calculations by methods in this class.
     */
   var boundsCenter: Vector2 = js.native
+  
   /**
     * A Vector2 that stores the temporary center diff values during calculations by methods in this class.
     */
   var centerDiff: Vector2 = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the bottom-center of its _bounds_.
     * 
@@ -43,6 +46,7 @@ trait BodyBounds extends js.Object {
   def getBottomCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getBottomCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getBottomCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the bottom-left of its _bounds_.
     * 
@@ -56,6 +60,7 @@ trait BodyBounds extends js.Object {
   def getBottomLeft(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getBottomLeft(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getBottomLeft(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the bottom-right of its _bounds_.
     * 
@@ -69,6 +74,7 @@ trait BodyBounds extends js.Object {
   def getBottomRight(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getBottomRight(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getBottomRight(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the center of its _bounds_.
     * 
@@ -82,6 +88,7 @@ trait BodyBounds extends js.Object {
   def getCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the left-center of its _bounds_.
     * 
@@ -95,6 +102,7 @@ trait BodyBounds extends js.Object {
   def getLeftCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getLeftCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getLeftCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the right-center of its _bounds_.
     * 
@@ -108,6 +116,7 @@ trait BodyBounds extends js.Object {
   def getRightCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getRightCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getRightCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the top-center of its _bounds_.
     * 
@@ -121,6 +130,7 @@ trait BodyBounds extends js.Object {
   def getTopCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getTopCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getTopCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the top-left of its _bounds_.
     * 
@@ -134,6 +144,7 @@ trait BodyBounds extends js.Object {
   def getTopLeft(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getTopLeft(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getTopLeft(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Takes a Body and returns the world coordinates of the top-right of its _bounds_.
     * 
@@ -147,6 +158,7 @@ trait BodyBounds extends js.Object {
   def getTopRight(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getTopRight(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getTopRight(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
+  
   /**
     * Parses the given body to get the bounds diff values from it.
     * 
@@ -157,4 +169,3 @@ trait BodyBounds extends js.Object {
     */
   def parseBody(body: MatterBody): Boolean = js.native
 }
-

@@ -12,7 +12,7 @@ Convert json to HTML table
 | Keywords           | html, tableify, json |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 10007 |
+| # downloads        | 10315 |
 | # stars            | 0 |
 
 ## Links

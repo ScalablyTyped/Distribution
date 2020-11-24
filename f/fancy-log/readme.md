@@ -11,8 +11,8 @@ Log things, prefixed with a timestamp.
 | Full name          | fancy-log |
 | Keywords           | console.log, log, logger, logging, pretty, timestamp |
 | # releases         | 2 |
-| # dependents       | 605 |
-| # downloads        | 99184324 |
+| # dependents       | 694 |
+| # downloads        | 108882229 |
 | # stars            | 13 |
 
 ## Links

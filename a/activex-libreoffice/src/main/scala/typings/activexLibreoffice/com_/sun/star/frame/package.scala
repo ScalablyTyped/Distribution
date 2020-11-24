@@ -2,19 +2,23 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object frame {
+  
   /** @since LibreOffice 4.2 */
   type AppDispatchProvider = typings.activexLibreoffice.com_.sun.star.frame.XAppDispatchProvider
+  
   /**
     * A legacy (single-instance) service-variant of {@link theAutoRecovery} singleton.
     * @deprecated DeprecatedUse theAutoRecovery singleton instead.
     * @since LibreOffice 4.0
     */
   type AutoRecovery = typings.activexLibreoffice.com_.sun.star.frame.XDispatch
+  
   /** @since LibreOffice 4.1 */
   type Bibliography = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * specifies a collection of components
     *
@@ -23,6 +27,7 @@ package object frame {
     * @see XDesktop
     */
   type Components = typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
+  
   /**
     * special dispatcher for non visible contents, e.g. sounds
     *
@@ -32,6 +37,7 @@ package object frame {
     * @see com.sun.star.document.TypeDetection
     */
   type ContentHandler = typings.activexLibreoffice.com_.sun.star.frame.XNotifyingDispatch
+  
   /**
     * factory to create content loader
     *
@@ -39,13 +45,16 @@ package object frame {
     * namequery for a content handler by using special query or property description.
     */
   type ContentHandlerFactory = typings.activexLibreoffice.com_.sun.star.frame.XLoaderFactory
+  
   /**
     * A legacy (single-instance) service-variant of {@link theDesktop} singleton.
     * @deprecated DeprecatedUse theDesktop singleton instead.
     */
   type Desktop = typings.activexLibreoffice.com_.sun.star.frame.XDesktop2
+  
   /** @deprecated Deprecated */
   type DesktopTasks = typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
+  
   /**
     * provides an easy way to dispatch an URL using one call instead of multiple ones.
     *
@@ -57,6 +66,7 @@ package object frame {
     * @since OOo 1.1.2
     */
   type DispatchHelper = typings.activexLibreoffice.com_.sun.star.frame.XDispatchHelper
+  
   /**
     * provides functionality to record {@link XDispatch.dispatch()} requests
     *
@@ -69,6 +79,7 @@ package object frame {
     * @since OOo 1.1.2
     */
   type DispatchRecorder = typings.activexLibreoffice.com_.sun.star.frame.XDispatchRecorder
+  
   /**
     * provides a {@link DispatchRecorder}
     *
@@ -81,17 +92,20 @@ package object frame {
     * @since OOo 1.1.2
     */
   type DispatchRecorderSupplier = typings.activexLibreoffice.com_.sun.star.frame.XDispatchRecorderSupplier
+  
   /**
     * is a service for accessing the document templates of the office and manipulate them ( add or rename or remove templates )
     *
     * It implements a high level interface on top of an ucb content provider which is used for template configuration.
     */
   type DocumentTemplates = typings.activexLibreoffice.com_.sun.star.frame.XDocumentTemplates
+  
   /**
     * This exception can be thrown in case an object is initialized second time.
     * @since OOo 1.1.2
     */
   type DoubleInitializationException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * represents the environment for a desktop component
     *
@@ -101,6 +115,7 @@ package object frame {
     * @see Desktop
     */
   type Frame = typings.activexLibreoffice.com_.sun.star.frame.XFrame2
+  
   /**
     * factory to create frame loader
     *
@@ -108,6 +123,7 @@ package object frame {
     * namequery for a frame loader by using special query or property description.
     */
   type FrameLoaderFactory = typings.activexLibreoffice.com_.sun.star.frame.XLoaderFactory
+  
   /**
     * this is a special container which can contain frames
     *
@@ -115,16 +131,19 @@ package object frame {
     * @see XFramesSupplier
     */
   type FramesContainer = typings.activexLibreoffice.com_.sun.star.frame.XFrames
+  
   /**
     * A legacy (single-instance) service-variant of {@link theGlobalEventBroadcaster} singleton.
     * @deprecated DeprecatedUse theGlobalEventBroadcaster singleton instead.
     */
   type GlobalEventBroadcaster = typings.activexLibreoffice.com_.sun.star.frame.XGlobalEventBroadcaster
+  
   /**
     * This exception can be thrown in case arguments are wrong.
     * @since OOo 1.1.2
     */
   type IllegalArgumentIOException = typings.activexLibreoffice.com_.sun.star.io.IOException
+  
   /**
     * controls the layout of user interface elements which are part of a frame.
     *
@@ -134,6 +153,7 @@ package object frame {
     * @since OOo 2.0
     */
   type LayoutManager = typings.activexLibreoffice.com_.sun.star.frame.XLayoutManager2
+  
   /**
     * provides for mapping a given sequence of content identifier strings to a sequence of respective media (mime) types
     *
@@ -141,6 +161,7 @@ package object frame {
     * [out] list.
     */
   type MediaTypeDetectionHelper = typings.activexLibreoffice.com_.sun.star.util.XStringMapping
+  
   /**
     * can be used to identify office modules.
     *
@@ -148,14 +169,17 @@ package object frame {
     * @since OOo 2.0
     */
   type ModuleManager = typings.activexLibreoffice.com_.sun.star.frame.XModuleManager2
+  
   /** @since LibreOffice 4.2 */
   type OfficeFrameLoader = typings.activexLibreoffice.com_.sun.star.frame.XSynchronousFrameLoader
+  
   /**
     * A legacy (single-instance) service-variant of {@link thePopupMenuControllerFactory} singleton.
     * @deprecated DeprecatedUse thePopupMenuControllerFactory singleton instead.
     * @since OOo 2.0
     */
   type PopupMenuControllerFactory = typings.activexLibreoffice.com_.sun.star.frame.XUIControllerFactory
+  
   /**
     * The {@link SessionManager} service provides an interface to the session manager of the desktop. A session manager keeps track of applications that are
     * running when the desktop shuts down and starts them again in the same state they were left when the desktop starts up the next time. To be able to do
@@ -171,8 +195,10 @@ package object frame {
     * kills all remaining applications and finally lets the desktop shut down.
     */
   type SessionManager = typings.activexLibreoffice.com_.sun.star.frame.XSessionManagerClient
+  
   /** @deprecated Deprecated */
   type Settings = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * is an abstract service for a component which offers a more complex user interface to users within a status bar.
     *
@@ -184,14 +210,17 @@ package object frame {
     * @since OOo 2.0
     */
   type StatusbarController = typings.activexLibreoffice.com_.sun.star.frame.XStatusbarController
+  
   /**
     * A legacy (single-instance) service-variant of {@link theStatusbarControllerFactory} singleton.
     * @deprecated DeprecatedUse theStatusbarControllerFactory singleton instead.
     * @since OOo 2.0
     */
   type StatusbarControllerFactory = typings.activexLibreoffice.com_.sun.star.frame.XUIControllerFactory
+  
   /** @since LibreOffice 4.1 */
   type TaskCreator = typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
+  
   /**
     * can be thrown by a {@link XTerminateListener} to prevent the environment (e.g., desktop) from terminating
     *
@@ -204,33 +233,39 @@ package object frame {
     * @see XTerminateListener
     */
   type TerminationVetoException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * A legacy (single-instance) service-variant of {@link theToolbarControllerFactory} singleton.
     * @deprecated DeprecatedUse theToolbarControllerFactory singleton instead.
     * @since OOo 2.0
     */
   type ToolbarControllerFactory = typings.activexLibreoffice.com_.sun.star.frame.XUIControllerFactory
+  
   /**
     * specifies a factory for com::sun::star::ucb::TransientDocumentsDocumentContents.
     * @since OOo 2.0
     */
   type TransientDocumentsDocumentContentFactory = typings.activexLibreoffice.com_.sun.star.frame.XTransientDocumentsDocumentContentFactory
+  
   /**
     * A legacy (single-instance) service-variant of {@link theUICommandDescription} singleton.
     * @deprecated DeprecatedUse theUICommandDescription singleton instead.
     * @since OOo 2.0
     */
   type UICommandDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * This exception can be thrown in case an office module could not be classified or does not have a valid configuration.
     * @since OOo 2.0
     */
   type UnknownModuleException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * Prior to LibreOffice 4.3, this singleton was only available as a (single-instance) {@link AutoRecovery} service.
     * @since LibreOffice 4.3
     */
   type theAutoRecovery = typings.activexLibreoffice.com_.sun.star.frame.XDispatch
+  
   /**
     * is the environment for components which can instantiate within frames
     *
@@ -241,6 +276,7 @@ package object frame {
     * @since LibreOffice 4.3
     */
   type theDesktop = typings.activexLibreoffice.com_.sun.star.frame.XDesktop2
+  
   /**
     * This singleton offers the document event functionality that can be found at any {@link com.sun.star.document.OfficeDocument} , but it does it for all
     * existing documents.
@@ -251,6 +287,7 @@ package object frame {
     * @since LibreOffice 4.3
     */
   type theGlobalEventBroadcaster = typings.activexLibreoffice.com_.sun.star.frame.XGlobalEventBroadcaster
+  
   /**
     * specifies a factory that creates instances of registered popup menu controller.
     *
@@ -261,6 +298,7 @@ package object frame {
     * @since LibreOffice 4.3
     */
   type thePopupMenuControllerFactory = typings.activexLibreoffice.com_.sun.star.frame.XUIControllerFactory
+  
   /**
     * specifies a factory that creates instances of registered status bar controller.
     *
@@ -271,6 +309,7 @@ package object frame {
     * @since LibreOffice 4.3
     */
   type theStatusbarControllerFactory = typings.activexLibreoffice.com_.sun.star.frame.XUIControllerFactory
+  
   /**
     * specifies a factory that creates instances of registered toolbar controller.
     *
@@ -280,6 +319,7 @@ package object frame {
     * @since LibreOffice 4.3
     */
   type theToolbarControllerFactory = typings.activexLibreoffice.com_.sun.star.frame.XUIControllerFactory
+  
   /**
     * a singleton which provides information about user interface commands of modules.
     *

@@ -5,12 +5,33 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a unified interface to the compression features included in Windows that frees developers from responsibility for managing block sizes, compression parameters, and other details that the native compression API requires. */
 @JSGlobal("Windows.Storage.Compression")
 @js.native
 object Compression extends js.Object {
+  
+  /** Identifies a compression algorithm to use when creating an instance of a compressor. */
+  @js.native
+  object CompressAlgorithm extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm with Double] = js.native
+    
+    /* 0 */ val invalidAlgorithm: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.invalidAlgorithm with Double = js.native
+    
+    /* 5 */ val lzms: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.lzms with Double = js.native
+    
+    /* 2 */ val mszip: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.mszip with Double = js.native
+    
+    /* 1 */ val nullAlgorithm: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.nullAlgorithm with Double = js.native
+    
+    /* 3 */ val xpress: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.xpress with Double = js.native
+    
+    /* 4 */ val xpressHuff: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.xpressHuff with Double = js.native
+  }
+  
   /** A compressor takes information written to a stream and compresses it using a compression algorithm. */
   @js.native
   class Compressor protected ()
@@ -39,19 +60,4 @@ object Compression extends js.Object {
       */
     def this(underlyingStream: IInputStream) = this()
   }
-  
-  /** Identifies a compression algorithm to use when creating an instance of a compressor. */
-  @js.native
-  object CompressAlgorithm extends js.Object {
-    /* 0 */ val invalidAlgorithm: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.invalidAlgorithm with Double = js.native
-    /* 5 */ val lzms: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.lzms with Double = js.native
-    /* 2 */ val mszip: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.mszip with Double = js.native
-    /* 1 */ val nullAlgorithm: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.nullAlgorithm with Double = js.native
-    /* 3 */ val xpress: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.xpress with Double = js.native
-    /* 4 */ val xpressHuff: typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm.xpressHuff with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm with Double] = js.native
-  }
-  
 }
-

@@ -5,17 +5,19 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.SchedulerAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/scheduler/Action", JSImport.Namespace)
 @js.native
 object actionMod extends js.Object {
+  
   @js.native
   class Action[T] protected () extends Subscription {
     def this(
       scheduler: Scheduler,
       work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit]
     ) = this()
+    
     /**
       * Schedules this action on its parent {@link SchedulerLike} for execution. May be passed
       * some context object, `state`. May happen at some point in the future,
@@ -31,6 +33,4 @@ object actionMod extends js.Object {
     def schedule(state: T, delay: Double): Subscription = js.native
     def schedule(state: js.UndefOr[scala.Nothing], delay: Double): Subscription = js.native
   }
-  
 }
-

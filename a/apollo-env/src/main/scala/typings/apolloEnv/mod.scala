@@ -13,11 +13,21 @@ import typings.std.Iterable
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("apollo-env", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def createHash(kind: String): Hash = js.native
+  
+  val isNodeLike: Boolean = js.native
+  
+  def isNotNullOrUndefined[T](): /* is T */ Boolean = js.native
+  def isNotNullOrUndefined[T](value: T): /* is T */ Boolean = js.native
+  
+  def mapValues[T, U](`object`: Record[String, T], callback: js.Function1[/* value */ T, U]): Record[String, U] = js.native
+  
   @js.native
   class Body ()
     extends typings.apolloEnv.fetchMod.Body {
@@ -45,6 +55,14 @@ object mod extends js.Object {
     def this(body: BodyInit) = this()
     def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
   }
+  /* static members */
+  @js.native
+  object Response extends js.Object {
+    
+    def error(): typings.nodeFetch.mod.Response = js.native
+    
+    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
+  }
   
   @js.native
   class URL protected ()
@@ -64,24 +82,12 @@ object mod extends js.Object {
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }
   
-  val isNodeLike: Boolean = js.native
-  def createHash(kind: String): Hash = js.native
-  def isNotNullOrUndefined[T](): /* is T */ Boolean = js.native
-  def isNotNullOrUndefined[T](value: T): /* is T */ Boolean = js.native
-  def mapValues[T, U](`object`: Record[String, T], callback: js.Function1[/* value */ T, U]): Record[String, U] = js.native
-  /* static members */
-  @js.native
-  object Response extends js.Object {
-    def error(): typings.nodeFetch.mod.Response = js.native
-    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
-  }
-  
   @js.native
   object fetch extends js.Object {
+    
     def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = js.native
     def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = js.native
+    
     def isRedirect(code: Double): Boolean = js.native
   }
-  
 }
-

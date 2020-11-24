@@ -2,11 +2,12 @@ package typings.babylonjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", JSImport.Namespace)
 @js.native
 object fragmentIndexMod extends js.Object {
+  
   @js.native
   class DerivativeBlock protected ()
     extends typings.babylonjs.derivativeBlockMod.DerivativeBlock {
@@ -22,6 +23,16 @@ object fragmentIndexMod extends js.Object {
     extends typings.babylonjs.discardBlockMod.DiscardBlock {
     /**
       * Create a new DiscardBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
+  @js.native
+  class FragCoordBlock protected ()
+    extends typings.babylonjs.fragCoordBlockMod.FragCoordBlock {
+    /**
+      * Creates a new FragCoordBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
@@ -67,5 +78,13 @@ object fragmentIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @js.native
+  class ScreenSizeBlock protected ()
+    extends typings.babylonjs.screenSizeBlockMod.ScreenSizeBlock {
+    /**
+      * Creates a new ScreenSizeBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
 }
-

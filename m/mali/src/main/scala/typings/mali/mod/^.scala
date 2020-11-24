@@ -2,7 +2,7 @@ package typings.mali.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mali", JSImport.Namespace)
 @js.native
@@ -19,4 +19,3 @@ class ^ () extends Mali {
   def this(path: js.Any, name: String, options: js.Any) = this()
   def this(path: js.Any, name: js.Array[String], options: js.Any) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enables automatic Google account login. If set, the service will
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGoogleAuto extends js.Object
-

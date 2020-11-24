@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-amplitude"
-version := "0.1-dt-20200518Z-ab80f5"
+version := "0.1-dt-20200518Z-10edf1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

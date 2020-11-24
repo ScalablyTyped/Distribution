@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PCP Folder is a container for other PCP Folders and PCP Streams.
@@ -32,8 +32,8 @@ trait PackageFolderContent
      with XCommandInfoChangeNotifier
      with XChild
      with XContentCreator
-
 object PackageFolderContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -70,4 +70,3 @@ object PackageFolderContent {
     __obj.asInstanceOf[PackageFolderContent]
   }
 }
-

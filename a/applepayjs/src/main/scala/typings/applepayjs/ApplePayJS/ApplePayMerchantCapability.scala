@@ -2,7 +2,7 @@ package typings.applepayjs.ApplePayJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The payment capabilities supported by the merchant.
@@ -14,15 +14,17 @@ import scala.scalajs.js.annotation._
   - typings.applepayjs.applepayjsStrings.supportsDebit
 */
 trait ApplePayMerchantCapability extends js.Object
-
 object ApplePayMerchantCapability {
+  
   @scala.inline
   def supports3DS: typings.applepayjs.applepayjsStrings.supports3DS = "supports3DS".asInstanceOf[typings.applepayjs.applepayjsStrings.supports3DS]
+  
   @scala.inline
   def supportsCredit: typings.applepayjs.applepayjsStrings.supportsCredit = "supportsCredit".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsCredit]
+  
   @scala.inline
   def supportsDebit: typings.applepayjs.applepayjsStrings.supportsDebit = "supportsDebit".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsDebit]
+  
   @scala.inline
   def supportsEMV: typings.applepayjs.applepayjsStrings.supportsEMV = "supportsEMV".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsEMV]
 }
-

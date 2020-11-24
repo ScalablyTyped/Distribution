@@ -2,7 +2,7 @@ package typings.phaser.global.Phaser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Facebook Instant Games Plugin for Phaser 3 provides a seamless bridge between Phaser
@@ -48,4 +48,3 @@ class FacebookInstantGamesPlugin protected ()
     */
   def this(game: typings.phaser.Phaser.Game) = this()
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.cloudtasks" : "2.0.20201111"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.cloudtasks" : "2.0.20201111"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

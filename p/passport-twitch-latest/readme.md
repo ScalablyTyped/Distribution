@@ -12,7 +12,7 @@ Twitch (OAuth) authentication strategies for Passport.
 | Keywords           | passport, twitch, auth, authn, authentication, identity, oauth, oauth2, strategy |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 480 |
+| # downloads        | 632 |
 | # stars            | 0 |
 
 ## Links

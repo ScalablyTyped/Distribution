@@ -10,9 +10,9 @@ Buffer List: collect buffers and access with a standard readable Buffer interfac
 | ------------------ | :-------------: |
 | Full name          | bl |
 | Keywords           | buffer, buffers, stream, awesomesauce |
-| # releases         | 10 |
-| # dependents       | 425 |
-| # downloads        | 206410605 |
+| # releases         | 12 |
+| # dependents       | 466 |
+| # downloads        | 337144789 |
 | # stars            | 64 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.eggCookies.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EggCookies extends js.Object {
+  
   /**
     * Get the Egg's cookies by name with optional options.
     * @param name The Egg's cookie's unique name.
@@ -14,6 +15,7 @@ trait EggCookies extends js.Object {
     */
   def get(name: String): String = js.native
   def get(name: String, opts: CookieGetOptions): String = js.native
+  
   /**
     * Set the Egg's cookies by name with optional options.
     * @param name The Egg cookie's unique name.
@@ -27,4 +29,3 @@ trait EggCookies extends js.Object {
   def set(name: String, value: String, opts: CookieSetOptions): this.type = js.native
   def set(name: String, value: Null, opts: CookieSetOptions): this.type = js.native
 }
-

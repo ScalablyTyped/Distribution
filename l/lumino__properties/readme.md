@@ -10,9 +10,9 @@ Lumino Attached Properties
 | ------------------ | :-------------: |
 | Full name          | @lumino/properties |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 320002 |
+| # releases         | 11 |
+| # dependents       | 18 |
+| # downloads        | 723659 |
 | # stars            | 0 |
 
 ## Links

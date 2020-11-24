@@ -11,8 +11,8 @@ The lodash method `_.nth` exported as a module.
 | Full name          | lodash.nth |
 | Keywords           | lodash-modularized, nth |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 28639 |
+| # dependents       | 4 |
+| # downloads        | 53047 |
 | # stars            | 0 |
 
 ## Links

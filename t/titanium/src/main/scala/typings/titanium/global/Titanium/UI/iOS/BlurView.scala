@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A <Titanium.UI.iOS.BlurView> object gives you an easy way implement some complex visual effects.
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class BlurView ()
   extends typings.titanium.Titanium.UI.iOS.BlurView
-

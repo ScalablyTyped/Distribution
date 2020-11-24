@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/fms/adminAccount", "AdminAccount")
 @js.native
@@ -23,16 +23,17 @@ class AdminAccount protected () extends CustomResource {
   def this(name: String, args: AdminAccountArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AdminAccountArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The AWS account ID to associate with AWS Firewall Manager as the AWS Firewall Manager administrator account. This can be an AWS Organizations master account or a member account. Defaults to the current account. Must be configured to perform drift detection.
     */
   val accountId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/fms/adminAccount", "AdminAccount")
 @js.native
 object AdminAccount extends js.Object {
+  
   /**
     * Get an existing AdminAccount resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -46,10 +47,10 @@ object AdminAccount extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AdminAccount = js.native
   def get(name: String, id: Input[ID], state: AdminAccountState): AdminAccount = js.native
   def get(name: String, id: Input[ID], state: AdminAccountState, opts: CustomResourceOptions): AdminAccount = js.native
+  
   /**
     * Returns true if the given object is an instance of AdminAccount.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fms/adminAccount.AdminAccount */ Boolean = js.native
 }
-

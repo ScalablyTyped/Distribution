@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/vdom" : "2.1.2"
+      "@jupyterlab/vdom" : "2.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/vdom" : "2.1.2"
+      "@jupyterlab/vdom" : "2.2.6"
     }
   ],
   "compile-devDependencies" : [

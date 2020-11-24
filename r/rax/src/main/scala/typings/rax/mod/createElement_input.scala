@@ -3,11 +3,12 @@ package typings.rax.mod
 import typings.rax.raxStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rax", "createElement")
 @js.native
 object createElement_input extends js.Object {
+  
   /**
     * ======================================================================
     * Rax Top Level API
@@ -23,4 +24,3 @@ object createElement_input extends js.Object {
   def apply(`type`: input, props: js.UndefOr[scala.Nothing], children: RaxNode*): DetailedRaxHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
   def apply(`type`: input, props: Null, children: RaxNode*): DetailedRaxHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
 }
-

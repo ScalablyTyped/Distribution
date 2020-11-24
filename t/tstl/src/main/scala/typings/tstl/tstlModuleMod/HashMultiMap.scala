@@ -9,7 +9,7 @@ import typings.tstl.ipairMod.IPair
 import typings.tstl.mapContainerMod.MapContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "HashMultiMap")
 @js.native
@@ -48,6 +48,7 @@ class HashMultiMap[Key, T] ()
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
   ) = this()
+  def this(hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
   def this(hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
   def this(items: js.Array[IPair[Key, T]], hash: Hasher[Key]) = this()
   def this(
@@ -55,7 +56,14 @@ class HashMultiMap[Key, T] ()
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     hash: Hasher[Key]
   ) = this()
+  def this(items: js.Array[IPair[Key, T]], hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
   def this(items: js.Array[IPair[Key, T]], hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
+  def this(
+    first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
+    last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
+    hash: js.UndefOr[scala.Nothing],
+    equal: BinaryPredicator[Key, Key]
+  ) = this()
   def this(
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
@@ -63,10 +71,10 @@ class HashMultiMap[Key, T] ()
     equal: BinaryPredicator[Key, Key]
   ) = this()
 }
-
 @JSImport("tstl/module", "HashMultiMap")
 @js.native
 object HashMultiMap extends js.Object {
+  
   val Iterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.Iterator[
       js.Object, 
@@ -87,6 +95,7 @@ object HashMultiMap extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
       js.Object, 
@@ -108,4 +117,3 @@ object HashMultiMap extends js.Object {
     ]
   ] = js.native
 }
-

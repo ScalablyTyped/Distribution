@@ -7,10 +7,11 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.skeletonMod.Skeleton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISceneLoaderPlugin extends ISceneLoaderPluginBase {
+  
   /**
     * Import meshes into a scene.
     * @param meshesNames An array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -42,6 +43,7 @@ trait ISceneLoaderPlugin extends ISceneLoaderPluginBase {
     skeletons: js.Array[Skeleton],
     onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
   ): Boolean = js.native
+  
   /**
     * Load into a scene.
     * @param scene The scene to load into
@@ -57,6 +59,7 @@ trait ISceneLoaderPlugin extends ISceneLoaderPluginBase {
     rootUrl: String,
     onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
   ): Boolean = js.native
+  
   /**
     * Load into an asset container.
     * @param scene The scene to load into
@@ -73,4 +76,3 @@ trait ISceneLoaderPlugin extends ISceneLoaderPluginBase {
     onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
   ): AssetContainer = js.native
 }
-

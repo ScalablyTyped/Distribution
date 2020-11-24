@@ -10,9 +10,9 @@ Extension for require.resolve which will resolve directories as well as files
 | ------------------ | :-------------: |
 | Full name          | dir-resolve |
 | Keywords           | require, resolve, directory |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 9593 |
+| # downloads        | 15490 |
 | # stars            | 1 |
 
 ## Links

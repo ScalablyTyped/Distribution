@@ -19,12 +19,13 @@ import typings.ssh2.ssh2Strings.tcpip
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Connection extends EventEmitter {
+  
   var authenticated: Boolean = js.native
-  var noMoreSessions: Boolean = js.native
+  
   // Connection methods
   /**
     * Closes the client connection.
@@ -32,6 +33,7 @@ trait Connection extends EventEmitter {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def end(): Boolean = js.native
+  
   /**
     * Alert the client of an incoming TCP connection on `boundAddr` on port `boundPort` from
     * `remoteAddr` on port `remotePort`.
@@ -45,6 +47,9 @@ trait Connection extends EventEmitter {
     remotePort: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ServerChannel, Unit]
   ): Boolean = js.native
+  
+  var noMoreSessions: Boolean = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
@@ -150,12 +155,14 @@ trait Connection extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Alert the client of an incoming UNIX domain socket connection on socketPath.
     *
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def openssh_forwardOutStreamLocal(socketPath: String, callback: js.Function2[/* err */ Error, /* channel */ ServerChannel, Unit]): Boolean = js.native
+  
   /**
     * Initiates a rekeying with the client.
     *
@@ -165,6 +172,7 @@ trait Connection extends EventEmitter {
     */
   def rekey(): Boolean = js.native
   def rekey(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  
   /**
     * Alert the client of an incoming X11 client connection from `originAddr` on port `originPort`.
     *
@@ -176,4 +184,3 @@ trait Connection extends EventEmitter {
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ServerChannel, Unit]
   ): Boolean = js.native
 }
-

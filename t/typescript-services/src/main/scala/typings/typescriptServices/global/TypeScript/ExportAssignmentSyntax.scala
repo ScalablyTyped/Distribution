@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.ExportAssignmentSyntax")
 @js.native
@@ -17,11 +17,10 @@ class ExportAssignmentSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.ExportAssignmentSyntax")
 @js.native
 object ExportAssignmentSyntax extends js.Object {
+  
   def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.ExportAssignmentSyntax = js.native
 }
-

@@ -5,26 +5,16 @@ import typings.ariClient.anon.Variables
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Endpoint extends Resource {
+  
   /**
     * Ids of channels associated with this endpoint.
     */
   var channel_ids: String | js.Array[String] = js.native
-  /**
-    * Identifier of the endpoint, specific to the given technology.
-    */
-  var resource: String = js.native
-  /**
-    * Endpoints state.
-    */
-  var state: js.UndefOr[String] = js.native
-  /**
-    * Technology of the endpoint.
-    */
-  var technology: String = js.native
+  
   /**
     * Details for an endpoint.
     */
@@ -33,6 +23,7 @@ trait Endpoint extends Resource {
     * Details for an endpoint.
     */
   def get(callback: js.Function2[/* err */ Error, /* endpoint */ this.type, Unit]): Unit = js.native
+  
   /**
     * List all endpoints.
     */
@@ -41,6 +32,7 @@ trait Endpoint extends Resource {
     * List all endpoints.
     */
   def list(callback: js.Function2[/* err */ Error, /* endpoints */ js.Array[this.type], Unit]): Unit = js.native
+  
   /**
     * List available endoints for a given endpoint technology.
     */
@@ -49,6 +41,12 @@ trait Endpoint extends Resource {
     * List available endoints for a given endpoint technology.
     */
   def listByTech(callback: js.Function2[/* err */ Error, /* endpoints */ js.Array[this.type], Unit]): Unit = js.native
+  
+  /**
+    * Identifier of the endpoint, specific to the given technology.
+    */
+  var resource: String = js.native
+  
   /**
     * Send a message to some technology URI or endpoint.
     *
@@ -69,6 +67,7 @@ trait Endpoint extends Resource {
     * resource types; for example, pjsip and sip resource types will add the key/value pairs as SIP headers.
     */
   def sendMessage(params: Body, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Send a message to some endpoint in a technology.
     *
@@ -87,5 +86,14 @@ trait Endpoint extends Resource {
     * resource types; for example, pjsip and sip resource types will add the key/value pairs as SIP headers.
     */
   def sendMessageToEndpoint(params: Variables, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /**
+    * Endpoints state.
+    */
+  var state: js.UndefOr[String] = js.native
+  
+  /**
+    * Technology of the endpoint.
+    */
+  var technology: String = js.native
 }
-

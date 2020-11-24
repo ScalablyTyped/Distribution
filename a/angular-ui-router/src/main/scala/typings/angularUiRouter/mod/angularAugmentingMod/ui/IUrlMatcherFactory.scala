@@ -2,10 +2,11 @@ package typings.angularUiRouter.mod.angularAugmentingMod.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IUrlMatcherFactory extends js.Object {
+  
   /**
     * Defines whether URL matching should be case sensitive (the default behavior), or not.
     *
@@ -15,6 +16,7 @@ trait IUrlMatcherFactory extends js.Object {
     */
   def caseInsensitive(): Boolean = js.native
   def caseInsensitive(value: Boolean): Boolean = js.native
+  
   /**
     * Creates a UrlMatcher for the specified pattern.
     *
@@ -23,12 +25,14 @@ trait IUrlMatcherFactory extends js.Object {
     * @returns {IUrlMatcher} The UrlMatcher.
     */
   def compile(pattern: String): IUrlMatcher = js.native
+  
   /**
     * Sets the default behavior when generating or matching URLs with default parameter values
     *
     * @param value {string} A string that defines the default parameter URL squashing behavior. nosquash: When generating an href with a default parameter value, do not squash the parameter value from the URL slash: When generating an href with a default parameter value, squash (remove) the parameter value, and, if the parameter is surrounded by slashes, squash (remove) one slash from the URL any other string, e.g. "~": When generating an href with a default parameter value, squash (remove) the parameter value from the URL and replace it with this string.
     */
   def defaultSquashPolicy(value: String): Unit = js.native
+  
   /**
     * Returns true if the specified object is a UrlMatcher, or false otherwise.
     *
@@ -37,6 +41,7 @@ trait IUrlMatcherFactory extends js.Object {
     * @returns {boolean} Returns true if the object matches the IUrlMatcher interface, by implementing all the same methods.
     */
   def isMatcher(o: js.Any): Boolean = js.native
+  
   /**
     * Defines whether URLs should match trailing slashes, or not (the default behavior).
     *
@@ -46,6 +51,7 @@ trait IUrlMatcherFactory extends js.Object {
     */
   def strictMode(): Boolean = js.native
   def strictMode(value: Boolean): Boolean = js.native
+  
   /**
     * Returns a type definition for the specified name
     *
@@ -66,4 +72,3 @@ trait IUrlMatcherFactory extends js.Object {
   def `type`(name: String, definition: IType, definitionFn: js.Function1[/* repeated */ js.Any, IType]): IUrlMatcherFactory = js.native
   def `type`(name: String, definition: IType, inlineAnnotedDefinitionFn: js.Array[_]): IUrlMatcherFactory = js.native
 }
-

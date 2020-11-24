@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.DateConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Date")
 @js.native
@@ -230,8 +230,6 @@ class Date ()
     ms: Double
   ) = this()
 }
-
 @JSGlobal("Date")
 @js.native
 object Date extends TopLevel[DateConstructor]
-

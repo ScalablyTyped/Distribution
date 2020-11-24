@@ -12,7 +12,7 @@ import typings.node.nodeStrings.SRV
 import typings.node.nodeStrings.TXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.node.dnsMod.AnyARecord
@@ -27,14 +27,15 @@ import scala.scalajs.js.annotation._
   - typings.node.dnsMod.AnyTxtRecord
 */
 trait AnyRecord extends js.Object
-
 object AnyRecord {
+  
   @scala.inline
   def AnyMxRecord(exchange: String, priority: Double, `type`: MX): AnyRecord = {
     val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyNaptrRecord(
     flags: String,
@@ -49,36 +50,42 @@ object AnyRecord {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyARecord(address: String, ttl: Double, `type`: A): AnyRecord = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyPtrRecord(`type`: PTR, value: String): AnyRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyTxtRecord(entries: js.Array[String], `type`: TXT): AnyRecord = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyCnameRecord(`type`: CNAME, value: String): AnyRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnySrvRecord(name: String, port: Double, priority: Double, `type`: SRV, weight: Double): AnyRecord = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnySoaRecord(
     expire: Double,
@@ -94,12 +101,14 @@ object AnyRecord {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyNsRecord(`type`: NS, value: String): AnyRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
+  
   @scala.inline
   def AnyAaaaRecord(address: String, ttl: Double, `type`: AAAA): AnyRecord = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
@@ -107,4 +116,3 @@ object AnyRecord {
     __obj.asInstanceOf[AnyRecord]
   }
 }
-

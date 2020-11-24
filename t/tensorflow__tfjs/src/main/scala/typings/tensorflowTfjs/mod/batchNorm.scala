@@ -1,15 +1,16 @@
 package typings.tensorflowTfjs.mod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor
-import typings.tensorflowTfjsCore.tensorMod.Tensor1D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "batchNorm")
 @js.native
 object batchNorm extends js.Object {
+  
   def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
     x: Tensor[R] | TensorLike,
     mean: Tensor[R] | Tensor1D | TensorLike,
@@ -19,4 +20,3 @@ object batchNorm extends js.Object {
     varianceEpsilon: js.UndefOr[Double]
   ): Tensor[R] = js.native
 }
-

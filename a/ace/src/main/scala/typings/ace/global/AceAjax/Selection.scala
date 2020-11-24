@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.ace.AceAjax.IEditSession
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.Selection")
 @js.native
@@ -14,4 +14,3 @@ object Selection
   * @param session The session to use
   **/
 Instantiable1[/* session */ IEditSession, typings.ace.AceAjax.Selection]
-

@@ -2,7 +2,7 @@ package typings.algoliaClientSearch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.algoliaClientSearch.algoliaClientSearchStrings.settings
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.algoliaClientSearch.algoliaClientSearchStrings.rules
 */
 trait ScopeType extends js.Object
-
 object ScopeType {
+  
   @scala.inline
   def rules: typings.algoliaClientSearch.algoliaClientSearchStrings.rules = "rules".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.rules]
+  
   @scala.inline
   def settings: typings.algoliaClientSearch.algoliaClientSearchStrings.settings = "settings".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.settings]
+  
   @scala.inline
   def synonyms: typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms = "synonyms".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms]
 }
-

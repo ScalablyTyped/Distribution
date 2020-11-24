@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a configuration data layer that is stored in a stream in OOR {@link Update} XML format.
@@ -24,8 +24,8 @@ trait LayerParser
   extends XLayer
      with XActiveDataSink
      with XInitialization
-
 object LayerParser {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -41,4 +41,3 @@ object LayerParser {
     __obj.asInstanceOf[LayerParser]
   }
 }
-

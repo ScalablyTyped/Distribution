@@ -2,9 +2,19 @@ package typings.hapiH2o2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapiH2o2Strings {
+  
+  @scala.inline
+  def http: http = "http".asInstanceOf[http]
+  
+  @scala.inline
+  def https: https = "https".asInstanceOf[https]
+  
+  @scala.inline
+  def upstream: upstream = "upstream".asInstanceOf[upstream]
+  
   @js.native
   sealed trait http extends js.Object
   
@@ -13,12 +23,4 @@ object hapiH2o2Strings {
   
   @js.native
   sealed trait upstream extends js.Object
-  
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
-  @scala.inline
-  def upstream: upstream = "upstream".asInstanceOf[upstream]
 }
-

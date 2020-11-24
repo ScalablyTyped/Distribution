@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PointStyle extends js.Object
-
 /**
   * An enumeration of the styles of points in a line.
   */
 @JSGlobal("GoogleAppsScript.Charts.PointStyle")
 @js.native
 object PointStyle extends js.Object {
+  
   @js.native
   sealed trait HUGE extends PointStyle
   
@@ -27,6 +27,4 @@ object PointStyle extends js.Object {
   
   @js.native
   sealed trait TINY extends PointStyle
-  
 }
-

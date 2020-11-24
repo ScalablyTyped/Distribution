@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.IncrementValueAction")
 @js.native
@@ -25,4 +25,3 @@ class IncrementValueAction protected ()
     condition: typings.babylonjs.BABYLON.Condition
   ) = this()
 }
-

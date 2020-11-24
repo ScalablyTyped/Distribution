@@ -10,9 +10,9 @@ IRI parsing and IRI-URI conversion utilities
 | ------------------ | :-------------: |
 | Full name          | iri |
 | Keywords           | IRI |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 7019 |
+| # downloads        | 8569 |
 | # stars            | 0 |
 
 ## Links

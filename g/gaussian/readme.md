@@ -11,8 +11,8 @@ A JavaScript model of a Gaussian distribution
 | Full name          | gaussian |
 | Keywords           | gaussian, normal, distribution |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 229330 |
+| # dependents       | 39 |
+| # downloads        | 455527 |
 | # stars            | 5 |
 
 ## Links

@@ -11,7 +11,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/policy/v1beta1/podDisruptionBudget", "PodDisruptionBudget")
 @js.native
@@ -27,29 +27,34 @@ class PodDisruptionBudget protected () extends CustomResource {
   def this(name: String, args: PodDisruptionBudgetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PodDisruptionBudgetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[policySlashv1beta1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.PodDisruptionBudget] = js.native
+  
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * Specification of the desired behavior of the PodDisruptionBudget.
     */
   val spec: Output_[PodDisruptionBudgetSpec] = js.native
+  
   /**
     * Most recently observed status of the PodDisruptionBudget.
     */
   val status: Output_[PodDisruptionBudgetStatus] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/policy/v1beta1/podDisruptionBudget", "PodDisruptionBudget")
 @js.native
 object PodDisruptionBudget extends js.Object {
+  
   /**
     * Get an existing PodDisruptionBudget resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -60,10 +65,10 @@ object PodDisruptionBudget extends js.Object {
     */
   def get(name: String, id: Input[ID]): PodDisruptionBudget = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): PodDisruptionBudget = js.native
+  
   /**
     * Returns true if the given object is an instance of PodDisruptionBudget.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudget.PodDisruptionBudget */ Boolean = js.native
 }
-

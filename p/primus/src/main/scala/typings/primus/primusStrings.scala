@@ -2,9 +2,82 @@ package typings.primus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object primusStrings {
+  
+  @scala.inline
+  def browserchannel: browserchannel = "browserchannel".asInstanceOf[browserchannel]
+  
+  @scala.inline
+  def connection: connection = "connection".asInstanceOf[connection]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  
+  @scala.inline
+  def disconnection: disconnection = "disconnection".asInstanceOf[disconnection]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def engineDotio: engineDotio = "engine.io".asInstanceOf[engineDotio]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def faye: faye = "faye".asInstanceOf[faye]
+  
+  @scala.inline
+  def incoming: incoming = "incoming".asInstanceOf[incoming]
+  
+  @scala.inline
+  def online: online = "online".asInstanceOf[online]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def outgoing: outgoing = "outgoing".asInstanceOf[outgoing]
+  
+  @scala.inline
+  def plugin: plugin = "plugin".asInstanceOf[plugin]
+  
+  @scala.inline
+  def plugout: plugout = "plugout".asInstanceOf[plugout]
+  
+  @scala.inline
+  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  
+  @scala.inline
+  def `reconnect failed`: `reconnect failed` = ("reconnect failed").asInstanceOf[`reconnect failed`]
+  
+  @scala.inline
+  def `reconnect scheduled`: `reconnect scheduled` = ("reconnect scheduled").asInstanceOf[`reconnect scheduled`]
+  
+  @scala.inline
+  def `reconnect timeout`: `reconnect timeout` = ("reconnect timeout").asInstanceOf[`reconnect timeout`]
+  
+  @scala.inline
+  def reconnected: reconnected = "reconnected".asInstanceOf[reconnected]
+  
+  @scala.inline
+  def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
+  
+  @scala.inline
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @scala.inline
+  def uws: uws = "uws".asInstanceOf[uws]
+  
+  @scala.inline
+  def websockets: websockets = "websockets".asInstanceOf[websockets]
+  
   @js.native
   sealed trait browserchannel extends js.Object
   
@@ -76,54 +149,4 @@ object primusStrings {
   
   @js.native
   sealed trait websockets extends js.Object
-  
-  @scala.inline
-  def browserchannel: browserchannel = "browserchannel".asInstanceOf[browserchannel]
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def disconnection: disconnection = "disconnection".asInstanceOf[disconnection]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def engineDotio: engineDotio = "engine.io".asInstanceOf[engineDotio]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def faye: faye = "faye".asInstanceOf[faye]
-  @scala.inline
-  def incoming: incoming = "incoming".asInstanceOf[incoming]
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def outgoing: outgoing = "outgoing".asInstanceOf[outgoing]
-  @scala.inline
-  def plugin: plugin = "plugin".asInstanceOf[plugin]
-  @scala.inline
-  def plugout: plugout = "plugout".asInstanceOf[plugout]
-  @scala.inline
-  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
-  @scala.inline
-  def `reconnect failed`: `reconnect failed` = ("reconnect failed").asInstanceOf[`reconnect failed`]
-  @scala.inline
-  def `reconnect scheduled`: `reconnect scheduled` = ("reconnect scheduled").asInstanceOf[`reconnect scheduled`]
-  @scala.inline
-  def `reconnect timeout`: `reconnect timeout` = ("reconnect timeout").asInstanceOf[`reconnect timeout`]
-  @scala.inline
-  def reconnected: reconnected = "reconnected".asInstanceOf[reconnected]
-  @scala.inline
-  def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def uws: uws = "uws".asInstanceOf[uws]
-  @scala.inline
-  def websockets: websockets = "websockets".asInstanceOf[websockets]
 }
-

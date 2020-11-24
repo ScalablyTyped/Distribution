@@ -7,19 +7,22 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json2csv/JSON2CSVTransform", JSImport.Namespace)
 @js.native
 object json2csvtransformMod extends js.Object {
+  
   @js.native
   trait JSON2CSVTransform[T] extends Transform {
+    
     /**
       * Create the title row with all the provided fields as column headings
       *
       * @returns {string} titles as a string
       */
     /* protected */ def getHeader(): String = js.native
+    
     /**
       * Check and normalize the fields configuration.
       *
@@ -28,6 +31,7 @@ object json2csvtransformMod extends js.Object {
       * @returns {json2csv.NormalizedFieldInfo} preprocessed FieldsInfo array
       */
     def preprocessFieldsInfo[T](fields: js.Array[String | FieldInfo[T]]): js.Array[NormalizedFieldInfo[T]] = js.native
+    
     /*******************************************************************************
       * Everything below is copy-pasted from JSON2CSVBase and should be keep in sync *
       ********************************************************************************/
@@ -40,12 +44,14 @@ object json2csvtransformMod extends js.Object {
       */
     /* protected */ def preprocessOpts(): Options[T] = js.native
     /* protected */ def preprocessOpts(opts: Options[T]): Options[T] = js.native
+    
     /**
       * Preprocess each object according to the give opts (unwind, flatten, etc.).
       *
       * @param {object} row JSON object to be converted in a CSV row
       */
     /* protected */ def preprocessRow(row: T): js.Object = js.native
+    
     /**
       * Create the content of a specfic CSV row cell
       *
@@ -54,6 +60,7 @@ object json2csvtransformMod extends js.Object {
       * @returns {string} CSV string (cell)
       */
     /* protected */ def processCell(row: T, fieldInfo: NormalizedFieldInfo[T]): String = js.native
+    
     /**
       * Create the content of a specific CSV row
       *
@@ -61,6 +68,7 @@ object json2csvtransformMod extends js.Object {
       * @returns {string} CSV string (row)
       */
     /* protected */ def processRow(row: T): String = js.native
+    
     /**
       * Create the content of a specfic CSV row cell
       *
@@ -68,6 +76,7 @@ object json2csvtransformMod extends js.Object {
       * @returns {string} Value stringified and processed
       */
     /* protected */ def processValue(value: js.Any): String = js.native
+    
     /**
       * Transforms an incoming json data to csv and pushes it downstream.
       *
@@ -83,6 +92,4 @@ object json2csvtransformMod extends js.Object {
     def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
-  
 }
-

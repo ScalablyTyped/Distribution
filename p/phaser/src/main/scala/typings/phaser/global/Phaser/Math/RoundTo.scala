@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.RoundTo")
 @js.native
 object RoundTo extends js.Object {
+  
   /**
     * Round a value to the given precision.
     * 
@@ -36,4 +37,3 @@ object RoundTo extends js.Object {
   def apply(value: Double, place: integer): Double = js.native
   def apply(value: Double, place: integer, base: integer): Double = js.native
 }
-

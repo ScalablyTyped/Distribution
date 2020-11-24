@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PackageState extends js.Object
-
 /** Represents the state of the package. */
 @JSGlobal("Windows.Management.Deployment.PackageState")
 @js.native
 object PackageState extends js.Object {
+  
   /** The license of the package is not valid. */
   @js.native
   sealed trait licenseInvalid extends PackageState
@@ -26,6 +26,4 @@ object PackageState extends js.Object {
   /** The package payload was tampered with intentionally. */
   @js.native
   sealed trait tampered extends PackageState
-  
 }
-

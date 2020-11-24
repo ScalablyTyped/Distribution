@@ -6,7 +6,7 @@ import typings.fabric.anon.X1
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
@@ -21,44 +21,52 @@ class Line () extends Object {
   def this(points: js.Array[Double]) = this()
   def this(points: js.UndefOr[scala.Nothing], objObjects: ILineOptions) = this()
   def this(points: js.Array[Double], objObjects: ILineOptions) = this()
-  /**
-    * x value or first line edge
-    */
-  var x1: js.UndefOr[Double] = js.native
-  /**
-    * x value or second line edge
-    */
-  var x2: js.UndefOr[Double] = js.native
-  /**
-    * y value or first line edge
-    */
-  var y1: js.UndefOr[Double] = js.native
-  /**
-    * y value or second line edge
-    */
-  var y2: js.UndefOr[Double] = js.native
+  
   /**
     * Returns svg representation of an instance
     * @return {Array} an array of strings with the specific svg representation
     * of the instance
     */
   def _toSVG(): String = js.native
+  
   /**
     * Recalculates line points given width and height
     * @private
     */
   def calcLinePoints(): X1 = js.native
+  
   /**
     * Produces a function that calculates distance from canvas edge to Line origin.
     */
   def makeEdgeToOriginGetter(propertyNames: Axis1, originValues: Center): js.Function = js.native
+  
+  /**
+    * x value or first line edge
+    */
+  var x1: js.UndefOr[Double] = js.native
+  
+  /**
+    * x value or second line edge
+    */
+  var x2: js.UndefOr[Double] = js.native
+  
+  /**
+    * y value or first line edge
+    */
+  var y1: js.UndefOr[Double] = js.native
+  
+  /**
+    * y value or second line edge
+    */
+  var y2: js.UndefOr[Double] = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Line")
 @js.native
 object Line extends js.Object {
+  
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  
   /**
     * Returns fabric.Line instance from an SVG element
     * @static
@@ -71,10 +79,10 @@ object Line extends js.Object {
   def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: ILineOptions): Line = js.native
   def fromElement(element: SVGElement, callback: js.Function): Line = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): Line = js.native
+  
   /**
     * Returns fabric.Line instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): Line = js.native
 }
-

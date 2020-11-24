@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Channels")
 @js.native
 class ResourceChannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.channels.list
     * @desc Returns a collection of zero or more channel resources that match
@@ -52,6 +54,7 @@ class ResourceChannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChannelListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.channels.update
     * @desc Updates a channel's metadata. Note that this method currently only
@@ -85,4 +88,3 @@ class ResourceChannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

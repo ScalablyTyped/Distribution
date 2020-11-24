@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-i18next" : "11.7.0"
+      "react-i18next" : "11.7.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-i18next" : "11.7.0"
+      "react-i18next" : "11.7.3"
     }
   ],
   "compile-devDependencies" : [

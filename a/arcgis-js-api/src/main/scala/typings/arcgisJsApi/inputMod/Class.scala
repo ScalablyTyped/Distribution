@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.Input
 import typings.arcgisJsApi.esri.InputProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/form/elements/inputs/Input", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends Input {
   def this(properties: InputProperties) = this()
 }
-

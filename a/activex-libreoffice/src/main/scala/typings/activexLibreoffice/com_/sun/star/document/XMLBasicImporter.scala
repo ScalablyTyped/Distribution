@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter for importing Basic macros from the OpenOffice.org file format.
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 trait XMLBasicImporter
   extends XImporter
      with XDocumentHandler
-
 object XMLBasicImporter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -41,4 +41,3 @@ object XMLBasicImporter {
     __obj.asInstanceOf[XMLBasicImporter]
   }
 }
-

@@ -7,17 +7,21 @@ import typings.ionicUtilsSubprocess.mod.SubprocessOptions
 import typings.node.childProcessMod.SpawnOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/shell", "Shell")
 @js.native
 class Shell protected () extends IShell {
   def this(e: ShellDeps) = this()
   def this(e: ShellDeps, options: ShellOptions) = this()
-  val e: ShellDeps = js.native
+  
   def createSubprocess(command: String): js.Promise[Subprocess] = js.native
   def createSubprocess(command: String, args: js.UndefOr[scala.Nothing], options: SubprocessOptions): js.Promise[Subprocess] = js.native
+  
+  val e: ShellDeps = js.native
+  
   /* protected */ def prepareSpawnOptions(options: IShellSpawnOptions): Unit = js.native
+  
   /**
     * When `child_process.spawn` isn't provided a full path to the command
     * binary, it behaves differently on Windows than other platforms. For
@@ -28,4 +32,3 @@ class Shell protected () extends IShell {
     */
   def resolveCommandPath(command: String, options: SpawnOptions): js.Promise[String] = js.native
 }
-

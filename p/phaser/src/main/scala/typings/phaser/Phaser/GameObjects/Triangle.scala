@@ -2,7 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Triangle Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Triangle extends Shape {
+  
   /**
     * Sets the data for the lines that make up this Triangle shape.
     * @param x1 The horizontal position of the first point in the triangle. Default 0.
@@ -36,4 +37,3 @@ trait Triangle extends Shape {
     y3: js.UndefOr[Double]
   ): this.type = js.native
 }
-

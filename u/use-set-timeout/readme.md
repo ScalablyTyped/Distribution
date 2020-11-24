@@ -12,7 +12,7 @@ A React Hook (using useEffect) which uses window.setTimeout().
 | Keywords           | react, hook, hooks, react-hook, react-hooks |
 | # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 1092 |
+| # downloads        | 1672 |
 | # stars            | 0 |
 
 ## Links

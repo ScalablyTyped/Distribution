@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Regionoperations")
 @js.native
 class ResourceRegionoperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionOperations.delete
     * @desc Deletes the specified region-specific Operations resource.
@@ -99,6 +101,7 @@ class ResourceRegionoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * compute.regionOperations.get
     * @desc Retrieves the specified region-specific Operations resource.
@@ -188,6 +191,7 @@ class ResourceRegionoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionOperations.list
     * @desc Retrieves a list of Operation resources contained within the
@@ -292,4 +296,3 @@ class ResourceRegionoperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperationList]
   ): Unit = js.native
 }
-

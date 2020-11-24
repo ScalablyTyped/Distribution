@@ -2,10 +2,11 @@ package typings.firebaseTokenGenerator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FirebaseTokenGenerator extends js.Object {
+  
   /**
     * Creates a token that authenticates a client with arbitrary data "data", and the specified options.
     *
@@ -27,4 +28,3 @@ trait FirebaseTokenGenerator extends js.Object {
   def createToken(data: js.Any): String = js.native
   def createToken(data: js.Any, options: TokenOptions): String = js.native
 }
-

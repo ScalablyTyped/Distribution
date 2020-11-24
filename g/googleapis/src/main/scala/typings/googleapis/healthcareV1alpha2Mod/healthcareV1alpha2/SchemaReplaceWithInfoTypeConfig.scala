@@ -2,7 +2,7 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * When using the INSPECT_AND_TRANSFORM action, each match is replaced with
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaReplaceWithInfoTypeConfig extends js.Object
-

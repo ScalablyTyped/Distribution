@@ -6,7 +6,7 @@ import typings.activexAccess.activexAccessNumbers.`2`
 import typings.activexAccess.activexAccessNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexAccess.activexAccessNumbers.`2`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexAccess.activexAccessNumbers.`1`
 */
 trait AcImeSentenceMode extends js.Object
-
 object AcImeSentenceMode {
+  
   @scala.inline
   def acImeSentenceModeConversation: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def acImeSentenceModeNone: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def acImeSentenceModePhrasePredict: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def acImeSentenceModePluralClause: `1` = 1.asInstanceOf[`1`]
 }
-

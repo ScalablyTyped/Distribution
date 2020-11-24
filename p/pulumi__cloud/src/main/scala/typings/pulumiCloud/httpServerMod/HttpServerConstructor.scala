@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HttpServerConstructor
@@ -23,4 +23,3 @@ Instantiable2[/* name */ String, /* createRequestListener */ RequestListenerFact
       /* opts */ ResourceOptions, 
       HttpServer
     ]
-

@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class ClientBlockGetByNumRequest () extends IClientBlockGetByNumRequest {
   def this(properties: IClientBlockGetByNumRequest) = this()
+  
   /** ClientBlockGetByNumRequest blockNum. */
   @JSName("blockNum")
   var blockNum_ClientBlockGetByNumRequest: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /**
     * Converts this ClientBlockGetByNumRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest")
 @js.native
 object ClientBlockGetByNumRequest extends js.Object {
+  
   /**
     * Creates a new ClientBlockGetByNumRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object ClientBlockGetByNumRequest extends js.Object {
     */
   def create(): ClientBlockGetByNumRequest = js.native
   def create(properties: IClientBlockGetByNumRequest): ClientBlockGetByNumRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByNumRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object ClientBlockGetByNumRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientBlockGetByNumRequest = js.native
   def decode(reader: Uint8Array): ClientBlockGetByNumRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientBlockGetByNumRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByNumRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object ClientBlockGetByNumRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientBlockGetByNumRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientBlockGetByNumRequest = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByNumRequest message. Does not implicitly {@link ClientBlockGetByNumRequest.verify|verify} messages.
     * @param message ClientBlockGetByNumRequest message or plain object to encode
@@ -67,6 +72,7 @@ object ClientBlockGetByNumRequest extends js.Object {
     */
   def encode(message: IClientBlockGetByNumRequest): Writer = js.native
   def encode(message: IClientBlockGetByNumRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByNumRequest message, length delimited. Does not implicitly {@link ClientBlockGetByNumRequest.verify|verify} messages.
     * @param message ClientBlockGetByNumRequest message or plain object to encode
@@ -75,12 +81,14 @@ object ClientBlockGetByNumRequest extends js.Object {
     */
   def encodeDelimited(message: IClientBlockGetByNumRequest): Writer = js.native
   def encodeDelimited(message: IClientBlockGetByNumRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientBlockGetByNumRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBlockGetByNumRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientBlockGetByNumRequest = js.native
+  
   /**
     * Creates a plain object from a ClientBlockGetByNumRequest message. Also converts values to other types if specified.
     * @param message ClientBlockGetByNumRequest
@@ -89,6 +97,7 @@ object ClientBlockGetByNumRequest extends js.Object {
     */
   def toObject(message: ClientBlockGetByNumRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientBlockGetByNumRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientBlockGetByNumRequest message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object ClientBlockGetByNumRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

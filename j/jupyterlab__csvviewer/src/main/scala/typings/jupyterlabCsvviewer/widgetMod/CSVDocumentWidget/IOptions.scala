@@ -1,37 +1,45 @@
 package typings.jupyterlabCsvviewer.widgetMod.CSVDocumentWidget
 
-import typings.jupyterlabApputils.toolbarMod.Toolbar
 import typings.jupyterlabCsvviewer.widgetMod.CSVViewer
 import typings.jupyterlabDocregistry.defaultMod.DocumentWidget.IOptionsOptionalContent
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IContext
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
-import typings.luminoWidgets.mod.Widget
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IOptions extends IOptionsOptionalContent[CSVViewer, IModel] {
-  var delimiter: js.UndefOr[String] = js.undefined
+  
+  var delimiter: js.UndefOr[String] = js.native
 }
-
 object IOptions {
+  
   @scala.inline
-  def apply(
-    context: IContext[IModel],
-    content: CSVViewer = null,
-    delimiter: String = null,
-    node: HTMLElement = null,
-    reveal: js.Promise[_] = null,
-    toolbar: Toolbar[Widget] = null
-  ): IOptions = {
+  def apply(context: IContext[IModel]): IOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (reveal != null) __obj.updateDynamic("reveal")(reveal.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+  }
 }
-

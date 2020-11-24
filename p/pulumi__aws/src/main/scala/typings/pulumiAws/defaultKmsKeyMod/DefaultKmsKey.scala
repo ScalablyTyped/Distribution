@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey")
 @js.native
@@ -21,16 +21,17 @@ class DefaultKmsKey protected () extends CustomResource {
     */
   def this(name: String, args: DefaultKmsKeyArgs) = this()
   def this(name: String, args: DefaultKmsKeyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the EBS volume.
     */
   val keyArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey")
 @js.native
 object DefaultKmsKey extends js.Object {
+  
   /**
     * Get an existing DefaultKmsKey resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -44,10 +45,10 @@ object DefaultKmsKey extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DefaultKmsKey = js.native
   def get(name: String, id: Input[ID], state: DefaultKmsKeyState): DefaultKmsKey = js.native
   def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): DefaultKmsKey = js.native
+  
   /**
     * Returns true if the given object is an instance of DefaultKmsKey.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = js.native
 }
-

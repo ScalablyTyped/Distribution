@@ -4,7 +4,7 @@ import typings.angularCore.mod.NgZone
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "EventManager")
 @js.native
@@ -13,9 +13,13 @@ class EventManager protected () extends js.Object {
     * Initializes an instance of the event-manager service.
     */
   def this(plugins: js.Array[ɵangularPackagesPlatformBrowserPlatformBrowserG], _zone: NgZone) = this()
+  
   var _eventNameToPlugin: js.Any = js.native
+  
   var _plugins: js.Any = js.native
+  
   var _zone: js.Any = js.native
+  
   /**
     * Registers a handler for a specific element and event.
     *
@@ -26,6 +30,7 @@ class EventManager protected () extends js.Object {
     * @returns  A callback function that can be used to remove the handler.
     */
   def addEventListener(element: HTMLElement, eventName: String, handler: js.Function): js.Function = js.native
+  
   /**
     * Registers a global handler for an event in a target view.
     *
@@ -36,9 +41,9 @@ class EventManager protected () extends js.Object {
     * @returns A callback function that can be used to remove the handler.
     */
   def addGlobalEventListener(target: String, eventName: String, handler: js.Function): js.Function = js.native
+  
   /**
     * Retrieves the compilation zone in which event listeners are registered.
     */
   def getZone(): NgZone = js.native
 }
-

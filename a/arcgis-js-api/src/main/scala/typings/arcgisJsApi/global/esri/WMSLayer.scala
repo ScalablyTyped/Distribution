@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.esri.WMSLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.WMSLayer")
 @js.native
 object WMSLayer extends TopLevel[WMSLayerConstructor]
-

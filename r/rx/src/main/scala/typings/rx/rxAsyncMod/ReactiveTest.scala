@@ -2,17 +2,18 @@ package typings.rx.rxAsyncMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.async", "ReactiveTest")
 @js.native
 object ReactiveTest extends js.Object {
+  
   /** Default virtual time used for creation of observable sequences in unit tests. */
   var created: Double = js.native
+  
   /** Default virtual time used to dispose subscriptions in unit tests. */
   var disposed: Double = js.native
-  /** Default virtual time used to subscribe to observable sequences in unit tests. */
-  var subscribed: Double = js.native
+  
   /**
     * Factory method for an OnCompleted notification record at a given time.
     *
@@ -20,6 +21,7 @@ object ReactiveTest extends js.Object {
     * @return Recorded OnCompleted notification.
     */
   def onCompleted(ticks: Double): typings.rx.Rx.Recorded = js.native
+  
   /**
     * Factory method for an OnError notification record at a given time with a given error.
     *
@@ -42,6 +44,7 @@ object ReactiveTest extends js.Object {
     * @return Recorded OnError notification.
     */
   def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): typings.rx.Rx.Recorded = js.native
+  
   /**
     * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
     *
@@ -64,6 +67,7 @@ object ReactiveTest extends js.Object {
     * @return Recorded OnNext notification.
     */
   def onNext(ticks: Double, value: js.Any): typings.rx.Rx.Recorded = js.native
+  
   /**
     * Factory method for a subscription record based on a given subscription and disposal time.
     *
@@ -73,5 +77,7 @@ object ReactiveTest extends js.Object {
     */
   def subscribe(subscribeAt: Double): typings.rx.Rx.Subscription = js.native
   def subscribe(subscribeAt: Double, unsubscribeAt: Double): typings.rx.Rx.Subscription = js.native
+  
+  /** Default virtual time used to subscribe to observable sequences in unit tests. */
+  var subscribed: Double = js.native
 }
-

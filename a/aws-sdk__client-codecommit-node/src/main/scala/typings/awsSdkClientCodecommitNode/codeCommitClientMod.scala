@@ -4,22 +4,25 @@ import typings.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitC
 import typings.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitResolvedConfiguration
 import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/CodeCommitClient", JSImport.Namespace)
 @js.native
 object codeCommitClientMod extends js.Object {
+  
   @js.native
   class CodeCommitClient protected () extends js.Object {
     def this(configuration: CodeCommitConfiguration) = this()
+    
     val config: CodeCommitResolvedConfiguration = js.native
-    val middlewareStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable] = js.native
+    
     def destroy(): Unit = js.native
+    
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any = js.native
+    
     /**
       * This will need to be revised when the command interface lands.
       */
@@ -29,8 +32,7 @@ object codeCommitClientMod extends js.Object {
           InputType, 
           OutputTypesUnion, 
           OutputType, 
-          CodeCommitResolvedConfiguration, 
-          Readable
+          CodeCommitResolvedConfiguration
         ]
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
@@ -39,12 +41,9 @@ object codeCommitClientMod extends js.Object {
           InputType, 
           OutputTypesUnion, 
           OutputType, 
-          CodeCommitResolvedConfiguration, 
-          Readable
+          CodeCommitResolvedConfiguration
         ],
       cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
-  
 }
-

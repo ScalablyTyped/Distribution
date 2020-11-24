@@ -12,7 +12,7 @@ Karma reporter that save JSON messages from log to file
 | Keywords           | karma-plugin, karma-reporter, json, karma, file |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 213301 |
+| # downloads        | 234794 |
 | # stars            | 0 |
 
 ## Links

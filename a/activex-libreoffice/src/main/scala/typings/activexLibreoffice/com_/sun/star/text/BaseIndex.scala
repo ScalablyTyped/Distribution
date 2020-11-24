@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies the basic service of different indexes within a document.
@@ -24,31 +24,41 @@ import scala.scalajs.js.annotation._
 trait BaseIndex
   extends XDocumentIndex
      with XRefreshable {
+  
   /** specifies the color of the background. */
   var BackColor: Color = js.native
+  
   /** contains the name of the filter of the graphic file that is displayed as background graphic */
   var BackGraphicFilter: String = js.native
+  
   /**
     * determines the position of the background graphic.
     * @see GraphicLocation
     */
   var BackGraphicLocation: GraphicLocation = js.native
+  
   /** contains the URL of a graphic file that is displayed as background graphic */
   var BackGraphicURL: String = js.native
+  
   /** If `TRUE` , the background color value in "BackColor" is not visible. */
   var BackTransparent: Boolean = js.native
+  
   /** the text section containing the content of the index */
   var ContentSection: XTextSection = js.native
+  
   /**
     * determines if the content of the document index is created from the complete document content or from the current chapter only.
     *
     * It is not available in the bibliography
     */
   var CreateFromChapter: Boolean = js.native
+  
   /** the text section containing the header of the index */
   var HeaderSection: XTextSection = js.native
+  
   /** determines if the index is protected. */
   var IsProtected: Boolean = js.native
+  
   /**
     * returns the interface of the level format of the index.
     *
@@ -56,37 +66,51 @@ trait BaseIndex
     * @see DocumentIndexLevelFormat
     */
   var LevelFormat: XIndexReplace = js.native
+  
   /** contains the name of the paragraph style that is applied to the heading. */
   var ParaStyleHeading: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 1st level. */
   var ParaStyleLevel1: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 10th level. */
   var ParaStyleLevel10: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 2nd level. */
   var ParaStyleLevel2: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 3rd level. */
   var ParaStyleLevel3: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 4th level. */
   var ParaStyleLevel4: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 5th level. */
   var ParaStyleLevel5: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 6th level. */
   var ParaStyleLevel6: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 7th level. */
   var ParaStyleLevel7: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 8th level. */
   var ParaStyleLevel8: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the 9th level. */
   var ParaStyleLevel9: String = js.native
+  
   /** contains the name of the paragraph style that is applied to the separator level. */
   var ParaStyleSeparator: String = js.native
+  
   /** contains the column interface. */
   var TextColumns: XTextColumns = js.native
+  
   /** contains the title of the index. */
   var Title: String = js.native
 }
-
 object BaseIndex {
+  
   @scala.inline
   def apply(
     Anchor: XTextRange,
@@ -132,66 +156,92 @@ object BaseIndex {
     val __obj = js.Dynamic.literal(Anchor = Anchor.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackGraphicFilter = BackGraphicFilter.asInstanceOf[js.Any], BackGraphicLocation = BackGraphicLocation.asInstanceOf[js.Any], BackGraphicURL = BackGraphicURL.asInstanceOf[js.Any], BackTransparent = BackTransparent.asInstanceOf[js.Any], ContentSection = ContentSection.asInstanceOf[js.Any], CreateFromChapter = CreateFromChapter.asInstanceOf[js.Any], HeaderSection = HeaderSection.asInstanceOf[js.Any], IsProtected = IsProtected.asInstanceOf[js.Any], LevelFormat = LevelFormat.asInstanceOf[js.Any], ParaStyleHeading = ParaStyleHeading.asInstanceOf[js.Any], ParaStyleLevel1 = ParaStyleLevel1.asInstanceOf[js.Any], ParaStyleLevel10 = ParaStyleLevel10.asInstanceOf[js.Any], ParaStyleLevel2 = ParaStyleLevel2.asInstanceOf[js.Any], ParaStyleLevel3 = ParaStyleLevel3.asInstanceOf[js.Any], ParaStyleLevel4 = ParaStyleLevel4.asInstanceOf[js.Any], ParaStyleLevel5 = ParaStyleLevel5.asInstanceOf[js.Any], ParaStyleLevel6 = ParaStyleLevel6.asInstanceOf[js.Any], ParaStyleLevel7 = ParaStyleLevel7.asInstanceOf[js.Any], ParaStyleLevel8 = ParaStyleLevel8.asInstanceOf[js.Any], ParaStyleLevel9 = ParaStyleLevel9.asInstanceOf[js.Any], ParaStyleSeparator = ParaStyleSeparator.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], TextColumns = TextColumns.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addRefreshListener = js.Any.fromFunction1(addRefreshListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[BaseIndex]
   }
+  
   @scala.inline
   implicit class BaseIndexOps[Self <: BaseIndex] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBackGraphicFilter(value: String): Self = this.set("BackGraphicFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBackGraphicLocation(value: GraphicLocation): Self = this.set("BackGraphicLocation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBackGraphicURL(value: String): Self = this.set("BackGraphicURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setContentSection(value: XTextSection): Self = this.set("ContentSection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateFromChapter(value: Boolean): Self = this.set("CreateFromChapter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeaderSection(value: XTextSection): Self = this.set("HeaderSection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsProtected(value: Boolean): Self = this.set("IsProtected", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLevelFormat(value: XIndexReplace): Self = this.set("LevelFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleHeading(value: String): Self = this.set("ParaStyleHeading", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel1(value: String): Self = this.set("ParaStyleLevel1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel10(value: String): Self = this.set("ParaStyleLevel10", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel2(value: String): Self = this.set("ParaStyleLevel2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel3(value: String): Self = this.set("ParaStyleLevel3", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel4(value: String): Self = this.set("ParaStyleLevel4", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel5(value: String): Self = this.set("ParaStyleLevel5", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel6(value: String): Self = this.set("ParaStyleLevel6", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel7(value: String): Self = this.set("ParaStyleLevel7", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel8(value: String): Self = this.set("ParaStyleLevel8", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleLevel9(value: String): Self = this.set("ParaStyleLevel9", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParaStyleSeparator(value: String): Self = this.set("ParaStyleSeparator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextColumns(value: XTextColumns): Self = this.set("TextColumns", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -5,17 +5,28 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxDrawer extends Widget {
-  /** @name dxDrawer.content() */
+  
+  /**
+    * [descr:dxDrawer.content()]
+    */
   def content(): dxElement = js.native
-  /** @name dxDrawer.hide() */
+  
+  /**
+    * [descr:dxDrawer.hide()]
+    */
   def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxDrawer.show() */
+  
+  /**
+    * [descr:dxDrawer.show()]
+    */
   def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxDrawer.toggle() */
+  
+  /**
+    * [descr:dxDrawer.toggle()]
+    */
   def toggle(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
-

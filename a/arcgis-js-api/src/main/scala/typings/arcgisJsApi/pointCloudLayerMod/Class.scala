@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.PointCloudLayer
 import typings.arcgisJsApi.esri.PointCloudLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/layers/PointCloudLayer", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends PointCloudLayer {
   def this(properties: PointCloudLayerProperties) = this()
 }
-

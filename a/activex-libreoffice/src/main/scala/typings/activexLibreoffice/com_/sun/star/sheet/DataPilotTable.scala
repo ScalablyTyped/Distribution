@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a data pilot table on a spreadsheet. */
 @js.native
@@ -15,8 +15,8 @@ trait DataPilotTable
   extends XDataPilotDescriptor
      with XDataPilotTable
      with XModifyBroadcaster
-
 object DataPilotTable {
+  
   @scala.inline
   def apply(
     ColumnFields: XIndexAccess,
@@ -55,4 +55,3 @@ object DataPilotTable {
     __obj.asInstanceOf[DataPilotTable]
   }
 }
-

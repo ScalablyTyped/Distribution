@@ -5,7 +5,7 @@ import typings.relayRuntime.relayModernStoreMod.default
 import typings.relayRuntime.relayStoreTypesMod.MutableRecordSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime", "Store")
 @js.native
@@ -13,4 +13,3 @@ class Store protected () extends default {
   def this(source: MutableRecordSource) = this()
   def this(source: MutableRecordSource, options: GcReleaseBufferSize) = this()
 }
-

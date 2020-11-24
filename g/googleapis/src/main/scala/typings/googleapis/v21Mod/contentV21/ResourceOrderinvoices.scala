@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Orderinvoices")
 @js.native
 class ResourceOrderinvoices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.orderinvoices.createchargeinvoice
     * @desc Creates a charge invoice for a shipment group, and triggers a
@@ -47,6 +49,7 @@ class ResourceOrderinvoices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrderinvoicesCreateChargeInvoiceResponse]
   ): Unit = js.native
+  
   /**
     * content.orderinvoices.createrefundinvoice
     * @desc Creates a refund invoice for one or more shipment groups, and
@@ -85,4 +88,3 @@ class ResourceOrderinvoices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrderinvoicesCreateRefundInvoiceResponse]
   ): Unit = js.native
 }
-

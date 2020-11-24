@@ -2,9 +2,127 @@ package typings.slickCarousel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slickCarouselStrings {
+  
+  @scala.inline
+  def `-moz-transform`: `-moz-transform` = "-moz-transform".asInstanceOf[`-moz-transform`]
+  
+  @scala.inline
+  def `-ms-transform`: `-ms-transform` = "-ms-transform".asInstanceOf[`-ms-transform`]
+  
+  @scala.inline
+  def `-o-transform`: `-o-transform` = "-o-transform".asInstanceOf[`-o-transform`]
+  
+  @scala.inline
+  def `-webkit-transform`: `-webkit-transform` = "-webkit-transform".asInstanceOf[`-webkit-transform`]
+  
+  @scala.inline
+  def MozTransform: MozTransform = "MozTransform".asInstanceOf[MozTransform]
+  
+  @scala.inline
+  def MozTransition: MozTransition = "MozTransition".asInstanceOf[MozTransition]
+  
+  @scala.inline
+  def OTransform: OTransform = "OTransform".asInstanceOf[OTransform]
+  
+  @scala.inline
+  def OTransition: OTransition = "OTransition".asInstanceOf[OTransition]
+  
+  @scala.inline
+  def getSlick: getSlick = "getSlick".asInstanceOf[getSlick]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def mozHidden: mozHidden = "mozHidden".asInstanceOf[mozHidden]
+  
+  @scala.inline
+  def mozvisibilitychange: mozvisibilitychange = "mozvisibilitychange".asInstanceOf[mozvisibilitychange]
+  
+  @scala.inline
+  def msTransform: msTransform = "msTransform".asInstanceOf[msTransform]
+  
+  @scala.inline
+  def msTransition: msTransition = "msTransition".asInstanceOf[msTransition]
+  
+  @scala.inline
+  def slickAdd: slickAdd = "slickAdd".asInstanceOf[slickAdd]
+  
+  @scala.inline
+  def slickCurrentSlide: slickCurrentSlide = "slickCurrentSlide".asInstanceOf[slickCurrentSlide]
+  
+  @scala.inline
+  def slickFilter: slickFilter = "slickFilter".asInstanceOf[slickFilter]
+  
+  @scala.inline
+  def slickGetOption: slickGetOption = "slickGetOption".asInstanceOf[slickGetOption]
+  
+  @scala.inline
+  def slickGoTo: slickGoTo = "slickGoTo".asInstanceOf[slickGoTo]
+  
+  @scala.inline
+  def slickNext: slickNext = "slickNext".asInstanceOf[slickNext]
+  
+  @scala.inline
+  def slickPause: slickPause = "slickPause".asInstanceOf[slickPause]
+  
+  @scala.inline
+  def slickPlay: slickPlay = "slickPlay".asInstanceOf[slickPlay]
+  
+  @scala.inline
+  def slickPrev: slickPrev = "slickPrev".asInstanceOf[slickPrev]
+  
+  @scala.inline
+  def slickRemove: slickRemove = "slickRemove".asInstanceOf[slickRemove]
+  
+  @scala.inline
+  def slickSetOption: slickSetOption = "slickSetOption".asInstanceOf[slickSetOption]
+  
+  @scala.inline
+  def slickUnfilter: slickUnfilter = "slickUnfilter".asInstanceOf[slickUnfilter]
+  
+  @scala.inline
+  def slider: slider = "slider".asInstanceOf[slider]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def transform: transform = "transform".asInstanceOf[transform]
+  
+  @scala.inline
+  def transition: transition = "transition".asInstanceOf[transition]
+  
+  @scala.inline
+  def unslick: unslick = "unslick".asInstanceOf[unslick]
+  
+  @scala.inline
+  def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
+  
+  @scala.inline
+  def webkitHidden: webkitHidden = "webkitHidden".asInstanceOf[webkitHidden]
+  
+  @scala.inline
+  def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
+  
+  @scala.inline
+  def webkitTransition: webkitTransition = "webkitTransition".asInstanceOf[webkitTransition]
+  
+  @scala.inline
+  def webkitvisibilitychange: webkitvisibilitychange = "webkitvisibilitychange".asInstanceOf[webkitvisibilitychange]
+  
+  @scala.inline
+  def window: window = "window".asInstanceOf[window]
+  
   @js.native
   sealed trait `-moz-transform` extends js.Object
   
@@ -121,84 +239,4 @@ object slickCarouselStrings {
   
   @js.native
   sealed trait window extends js.Object
-  
-  @scala.inline
-  def `-moz-transform`: `-moz-transform` = "-moz-transform".asInstanceOf[`-moz-transform`]
-  @scala.inline
-  def `-ms-transform`: `-ms-transform` = "-ms-transform".asInstanceOf[`-ms-transform`]
-  @scala.inline
-  def `-o-transform`: `-o-transform` = "-o-transform".asInstanceOf[`-o-transform`]
-  @scala.inline
-  def `-webkit-transform`: `-webkit-transform` = "-webkit-transform".asInstanceOf[`-webkit-transform`]
-  @scala.inline
-  def MozTransform: MozTransform = "MozTransform".asInstanceOf[MozTransform]
-  @scala.inline
-  def MozTransition: MozTransition = "MozTransition".asInstanceOf[MozTransition]
-  @scala.inline
-  def OTransform: OTransform = "OTransform".asInstanceOf[OTransform]
-  @scala.inline
-  def OTransition: OTransition = "OTransition".asInstanceOf[OTransition]
-  @scala.inline
-  def getSlick: getSlick = "getSlick".asInstanceOf[getSlick]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def mozHidden: mozHidden = "mozHidden".asInstanceOf[mozHidden]
-  @scala.inline
-  def mozvisibilitychange: mozvisibilitychange = "mozvisibilitychange".asInstanceOf[mozvisibilitychange]
-  @scala.inline
-  def msTransform: msTransform = "msTransform".asInstanceOf[msTransform]
-  @scala.inline
-  def msTransition: msTransition = "msTransition".asInstanceOf[msTransition]
-  @scala.inline
-  def slickAdd: slickAdd = "slickAdd".asInstanceOf[slickAdd]
-  @scala.inline
-  def slickCurrentSlide: slickCurrentSlide = "slickCurrentSlide".asInstanceOf[slickCurrentSlide]
-  @scala.inline
-  def slickFilter: slickFilter = "slickFilter".asInstanceOf[slickFilter]
-  @scala.inline
-  def slickGetOption: slickGetOption = "slickGetOption".asInstanceOf[slickGetOption]
-  @scala.inline
-  def slickGoTo: slickGoTo = "slickGoTo".asInstanceOf[slickGoTo]
-  @scala.inline
-  def slickNext: slickNext = "slickNext".asInstanceOf[slickNext]
-  @scala.inline
-  def slickPause: slickPause = "slickPause".asInstanceOf[slickPause]
-  @scala.inline
-  def slickPlay: slickPlay = "slickPlay".asInstanceOf[slickPlay]
-  @scala.inline
-  def slickPrev: slickPrev = "slickPrev".asInstanceOf[slickPrev]
-  @scala.inline
-  def slickRemove: slickRemove = "slickRemove".asInstanceOf[slickRemove]
-  @scala.inline
-  def slickSetOption: slickSetOption = "slickSetOption".asInstanceOf[slickSetOption]
-  @scala.inline
-  def slickUnfilter: slickUnfilter = "slickUnfilter".asInstanceOf[slickUnfilter]
-  @scala.inline
-  def slider: slider = "slider".asInstanceOf[slider]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
-  @scala.inline
-  def transition: transition = "transition".asInstanceOf[transition]
-  @scala.inline
-  def unslick: unslick = "unslick".asInstanceOf[unslick]
-  @scala.inline
-  def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
-  @scala.inline
-  def webkitHidden: webkitHidden = "webkitHidden".asInstanceOf[webkitHidden]
-  @scala.inline
-  def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
-  @scala.inline
-  def webkitTransition: webkitTransition = "webkitTransition".asInstanceOf[webkitTransition]
-  @scala.inline
-  def webkitvisibilitychange: webkitvisibilitychange = "webkitvisibilitychange".asInstanceOf[webkitvisibilitychange]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
 }
-

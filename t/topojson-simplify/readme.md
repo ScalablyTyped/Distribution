@@ -12,7 +12,7 @@ Topology-preserving simplification and filtering for TopoJSON.
 | Keywords           | topojson, geojson, simplification |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 1539096 |
+| # downloads        | 2590356 |
 | # stars            | 1 |
 
 ## Links

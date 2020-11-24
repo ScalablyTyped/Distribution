@@ -3,7 +3,7 @@ package typings.openlayers.mod.format.filter
 import typings.openlayers.mod.Extent_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,4 +33,3 @@ class Bbox_ protected () extends Filter {
   def this(geometryName: String, extent: Extent_) = this()
   def this(geometryName: String, extent: Extent_, opt_srsName: String) = this()
 }
-

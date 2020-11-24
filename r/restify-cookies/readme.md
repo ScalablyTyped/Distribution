@@ -10,9 +10,9 @@ Adds cookie parsing/setting to restify
 | ------------------ | :-------------: |
 | Full name          | restify-cookies |
 | Keywords           | restify, cookies, cookie |
-| # releases         | 5 |
-| # dependents       | 24 |
-| # downloads        | 207316 |
+| # releases         | 2 |
+| # dependents       | 28 |
+| # downloads        | 293587 |
 | # stars            | 2 |
 
 ## Links

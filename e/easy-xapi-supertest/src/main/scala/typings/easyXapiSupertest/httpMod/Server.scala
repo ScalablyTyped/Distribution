@@ -4,14 +4,16 @@ import typings.easyXapiSupertest.anon.Address
 import typings.easyXapiSupertest.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Server extends EventEmitter {
-  var maxHeadersCount: Double = js.native
+  
   def address(): Address = js.native
+  
   def close(): Server = js.native
   def close(cb: js.Any): Server = js.native
+  
   def listen(handle: js.Any): Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function): Server = js.native
   def listen(path: String): Server = js.native
@@ -31,5 +33,6 @@ trait Server extends EventEmitter {
   def listen(port: Double, hostname: String, backlog: Double): Server = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): Server = js.native
   def listen(port: Double, hostname: String, callback: js.Function): Server = js.native
+  
+  var maxHeadersCount: Double = js.native
 }
-

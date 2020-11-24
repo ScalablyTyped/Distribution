@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SmartCardReaderStatus extends js.Object
-
 /** Specifies the smart card reader's status. */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardReaderStatus")
 @js.native
 object SmartCardReaderStatus extends js.Object {
+  
   /** The smart card reader is disconnected. */
   @js.native
   sealed trait disconnected extends SmartCardReaderStatus
@@ -22,6 +22,4 @@ object SmartCardReaderStatus extends js.Object {
   /** The smart card reader is ready. */
   @js.native
   sealed trait ready extends SmartCardReaderStatus
-  
 }
-

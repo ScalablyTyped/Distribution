@@ -10,9 +10,9 @@ The default blueprint for ember-cli addons.
 | ------------------ | :-------------: |
 | Full name          | @ember-data/store |
 | Keywords           | ember-addon |
-| # releases         | 50 |
-| # dependents       | 6 |
-| # downloads        | 833872 |
+| # releases         | 85 |
+| # dependents       | 5 |
+| # downloads        | 2340391 |
 | # stars            | 0 |
 
 ## Links

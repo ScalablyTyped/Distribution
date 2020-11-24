@@ -2,12 +2,12 @@ package typings.androiduix.android.view.ScaleGestureDetector
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleOnScaleGestureListener extends OnScaleGestureListener
-
 object SimpleOnScaleGestureListener {
+  
   @scala.inline
   def apply(
     onScale: typings.androiduix.android.view.ScaleGestureDetector => Boolean,
@@ -18,4 +18,3 @@ object SimpleOnScaleGestureListener {
     __obj.asInstanceOf[SimpleOnScaleGestureListener]
   }
 }
-

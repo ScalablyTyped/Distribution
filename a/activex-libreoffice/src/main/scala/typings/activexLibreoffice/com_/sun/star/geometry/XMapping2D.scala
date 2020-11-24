@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface defining an arbitrary bijective mapping from R^2 to R^2.
@@ -17,8 +17,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XMapping2D extends XInterface {
+  
   /** Forward 2D mapping function */
   def map(aPoint: RealPoint2D): RealPoint2D = js.native
+  
   /**
     * Inverse 2D mapping function.
     *
@@ -26,8 +28,8 @@ trait XMapping2D extends XInterface {
     */
   def mapInverse(aPoint: RealPoint2D): RealPoint2D = js.native
 }
-
 object XMapping2D {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -39,22 +41,26 @@ object XMapping2D {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), map = js.Any.fromFunction1(map), mapInverse = js.Any.fromFunction1(mapInverse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XMapping2D]
   }
+  
   @scala.inline
   implicit class XMapping2DOps[Self <: XMapping2D] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMap(value: RealPoint2D => RealPoint2D): Self = this.set("map", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setMapInverse(value: RealPoint2D => RealPoint2D): Self = this.set("mapInverse", js.Any.fromFunction1(value))
   }
-  
 }
-

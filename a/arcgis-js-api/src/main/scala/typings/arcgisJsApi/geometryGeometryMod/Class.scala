@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.GeometryProperties
 import typings.arcgisJsApi.esri.Geometry_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/geometry/Geometry", JSImport.Namespace)
 @js.native
 class Class () extends Geometry_ {
   def this(properties: GeometryProperties) = this()
 }
-

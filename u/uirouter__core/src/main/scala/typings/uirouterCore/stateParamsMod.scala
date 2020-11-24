@@ -5,15 +5,17 @@ import typings.uirouterCore.commonCommonMod.Obj
 import typings.uirouterCore.stateObjectMod.StateObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/params/stateParams", JSImport.Namespace)
 @js.native
 object stateParamsMod extends js.Object {
+  
   @js.native
   class StateParams ()
     extends /* key */ StringDictionary[js.Any] {
     def this(params: Obj) = this()
+    
     /**
       * Merges a set of parameters with all parameters inherited between the common parents of the
       * current state and a given destination state.
@@ -25,6 +27,4 @@ object stateParamsMod extends js.Object {
     @JSName("$inherit")
     def $inherit(newParams: Obj, $current: StateObject, $to: StateObject): js.Any = js.native
   }
-  
 }
-

@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MatchCode extends js.Object
-
 @JSGlobal("Microsoft.Maps.Search.MatchCode")
 @js.native
 object MatchCode extends js.Object {
+  
   /** The match was ambiguous. Multiple results were returned. */
   @js.native
   sealed trait ambiguous extends MatchCode
@@ -29,6 +29,4 @@ object MatchCode extends js.Object {
   /** The match was found by a broader search. */
   @js.native
   sealed trait upHierarchy extends MatchCode
-  
 }
-

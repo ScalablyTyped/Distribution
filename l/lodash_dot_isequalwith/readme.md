@@ -11,8 +11,8 @@ The lodash method `_.isEqualWith` exported as a module.
 | Full name          | lodash.isequalwith |
 | Keywords           | lodash-modularized, isequalwith |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 294196 |
+| # dependents       | 24 |
+| # downloads        | 370706 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/safebrowsing/v4", "safebrowsing_v4.Resource$Threathits")
 @js.native
 class ResourceThreathits protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * safebrowsing.threatHits.create
     * @desc Reports a Safe Browsing threat list hit to Google. Only projects
@@ -43,4 +45,3 @@ class ResourceThreathits protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

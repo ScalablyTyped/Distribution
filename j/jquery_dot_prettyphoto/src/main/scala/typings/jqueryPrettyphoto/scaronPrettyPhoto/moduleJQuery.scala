@@ -3,10 +3,11 @@ package typings.jqueryPrettyphoto.scaronPrettyPhoto
 import typings.jqueryPrettyphoto.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait moduleJQuery extends js.Object {
+  
   /**
     * Initialises prettyPhoto
     */
@@ -17,4 +18,3 @@ trait moduleJQuery extends js.Object {
     */
   def apply(pp_settings: PrettyPhotoSettings): JQuery = js.native
 }
-

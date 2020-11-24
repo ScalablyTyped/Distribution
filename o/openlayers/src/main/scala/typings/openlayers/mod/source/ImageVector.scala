@@ -5,7 +5,7 @@ import typings.openlayers.mod.olx.source.ImageVectorOptions
 import typings.openlayers.mod.style.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -41,12 +41,14 @@ class ImageVector protected () extends ImageCanvas {
     * @api
     */
   def this(options: ImageVectorOptions) = this()
+  
   /**
     * Get a reference to the wrapped source.
     * @return Source.
     * @api
     */
   def getSource(): Vector = js.native
+  
   /**
     * Get the style for features.  This returns whatever was passed to the `style`
     * option at construction or to the `setStyle` method.
@@ -54,12 +56,14 @@ class ImageVector protected () extends ImageCanvas {
     * @api stable
     */
   def getStyle(): Style | js.Array[Style] | StyleFunction = js.native
+  
   /**
     * Get the style function.
     * @return Layer style function.
     * @api stable
     */
   def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
+  
   /**
     * Set the style for features.  This can be a single style object, an array
     * of styles, or a function that takes a feature and resolution and returns
@@ -75,4 +79,3 @@ class ImageVector protected () extends ImageCanvas {
   def setStyle(style: StyleFunction): Unit = js.native
   def setStyle(style: Style): Unit = js.native
 }
-

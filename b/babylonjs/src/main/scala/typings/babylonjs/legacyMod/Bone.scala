@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Bone")
 @js.native
@@ -37,7 +37,7 @@ class Bone protected ()
     */
   name: String,
     skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+    parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
     localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
   ) = this()
   def this(
@@ -46,8 +46,8 @@ class Bone protected ()
     */
   name: String,
     skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
+    localMatrix: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Matrix]],
     restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix]
   ) = this()
   def this(
@@ -56,9 +56,9 @@ class Bone protected ()
     */
   name: String,
     skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
+    localMatrix: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Matrix]],
+    restPose: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Matrix]],
     baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
   ) = this()
   def this(
@@ -67,20 +67,21 @@ class Bone protected ()
     */
   name: String,
     skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
+    localMatrix: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Matrix]],
+    restPose: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Matrix]],
+    baseMatrix: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Matrix]],
     index: Nullable[Double]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "Bone")
 @js.native
 object Bone extends js.Object {
+  
   var _tmpMats: js.Any = js.native
+  
   var _tmpQuat: js.Any = js.native
+  
   var _tmpVecs: js.Any = js.native
 }
-

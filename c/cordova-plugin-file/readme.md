@@ -10,9 +10,9 @@ Cordova File Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-file |
 | Keywords           | cordova, file, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-osx, cordova-windows |
-| # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 1974937 |
+| # releases         | 2 |
+| # dependents       | 50 |
+| # downloads        | 2233521 |
 | # stars            | 26 |
 
 ## Links

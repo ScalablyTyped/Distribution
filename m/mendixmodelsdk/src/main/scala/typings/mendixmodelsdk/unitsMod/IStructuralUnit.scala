@@ -5,14 +5,14 @@ import typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IStructuralUnit
   extends IAbstractUnit
      with IContainer
-
 object IStructuralUnit {
+  
   @scala.inline
   def apply(
     allProperties: () => js.Array[AbstractProperty[_, _]],
@@ -36,4 +36,3 @@ object IStructuralUnit {
     __obj.asInstanceOf[IStructuralUnit]
   }
 }
-

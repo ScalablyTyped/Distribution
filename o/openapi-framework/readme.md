@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-framework
 
-Typings are for version 7.0.0
+Typings are for version 7.2.0
 
 ## Library description:
 An OpenAPI framework for any web framework
@@ -10,9 +10,9 @@ An OpenAPI framework for any web framework
 | ------------------ | :-------------: |
 | Full name          | openapi-framework |
 | Keywords           | openapi, swagger, framework |
-| # releases         | 52 |
-| # dependents       | 2 |
-| # downloads        | 377348 |
+| # releases         | 31 |
+| # dependents       | 4 |
+| # downloads        | 694794 |
 | # stars            | 0 |
 
 ## Links

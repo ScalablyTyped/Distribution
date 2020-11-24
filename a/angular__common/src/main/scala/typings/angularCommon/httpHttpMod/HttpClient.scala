@@ -12,7 +12,6 @@ import typings.angularCommon.anon.ObserveParams
 import typings.angularCommon.anon.ObserveParamsReportProgress
 import typings.angularCommon.anon.ObserveParamsReportProgressResponseType
 import typings.angularCommon.anon.ObserveParamsReportProgressResponseTypeWithCredentials
-import typings.angularCommon.anon.ObserveResponseType
 import typings.angularCommon.anon.ParamsReportProgress
 import typings.angularCommon.anon.ParamsReportProgressResponseType
 import typings.angularCommon.anon.ParamsReportProgressResponseTypeWithCredentials
@@ -31,13 +30,13 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpClient")
 @js.native
 class HttpClient protected () extends js.Object {
   def this(handler: HttpHandler) = this()
-  var handler: js.Any = js.native
+  
   /**
     * Constructs a `DELETE` request that interprets the body as a JSON object and
     * returns the response body as a JSON object.
@@ -200,6 +199,7 @@ class HttpClient protected () extends js.Object {
   def delete_T[T](url: String, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("delete")
   def delete_T[T](url: String, options: `3`): Observable_[T] = js.native
+  
   /**
     * Constructs a `GET` request that interprets the body as a JSON object and
     * returns the response body as a JSON object.
@@ -363,6 +363,9 @@ class HttpClient protected () extends js.Object {
   def get_T[T](url: String, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("get")
   def get_T[T](url: String, options: `3`): Observable_[T] = js.native
+  
+  var handler: js.Any = js.native
+  
   /**
     * Constructs a `HEAD` request that interprets the body as a JSON object and
     * returns the response body as a JSON object.
@@ -530,6 +533,7 @@ class HttpClient protected () extends js.Object {
   def head_T[T](url: String, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("head")
   def head_T[T](url: String, options: `3`): Observable_[T] = js.native
+  
   /**
     * Constructs a `JSONP` request for the given URL and name of the callback parameter.
     *
@@ -553,6 +557,7 @@ class HttpClient protected () extends js.Object {
     */
   @JSName("jsonp")
   def jsonp_T[T](url: String, callbackParam: String): Observable_[T] = js.native
+  
   /**
     * Constructs an `OPTIONS` request that interprets the body as a JSON object and returns the
     * response body as a JSON object.
@@ -719,6 +724,7 @@ class HttpClient protected () extends js.Object {
   def options_T[T](url: String, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("options")
   def options_T[T](url: String, options: `3`): Observable_[T] = js.native
+  
   /**
     * Constructs a `PATCH` request that interprets the body as a JSON object and
     * returns the response body as a JSON object.
@@ -922,6 +928,7 @@ class HttpClient protected () extends js.Object {
   def patch_T[T](url: String, body: Null, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("patch")
   def patch_T[T](url: String, body: Null, options: `3`): Observable_[T] = js.native
+  
   /**
     * Constructs a `POST` request that interprets the body as a
     * JSON object and returns the response body as a JSON object.
@@ -1125,15 +1132,16 @@ class HttpClient protected () extends js.Object {
   def post_T[T](url: String, body: Null, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("post")
   def post_T[T](url: String, body: Null, options: `3`): Observable_[T] = js.native
+  
   /**
-    * Constructs a `PUT` request that interprets the body as a JSON object and returns the response
-    * body as a JSON object.
+    * Constructs a `PUT` request that interprets the body as a JSON object
+    * and returns an observable of JSON object.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
     * @param options HTTP options
     *
-    * @return An `Observable` of the response, with the response body as a JSON object.
+    * @return An `Observable` of the response as a JSON object.
     */
   def put(url: String): Observable_[js.Object] = js.native
   def put(url: String, body: js.Any): Observable_[js.Object] = js.native
@@ -1280,6 +1288,20 @@ class HttpClient protected () extends js.Object {
   def put(url: String, body: Null, options: `2`): Observable_[HttpResponse[js.Object]] = js.native
   def put(url: String, body: Null, options: `3`): Observable_[js.Object] = js.native
   /**
+    * Constructs a `PUT` request that interprets the body as an instance of the requested type
+    * and returns an observable of the requested type.
+    *
+    * @param url The endpoint URL.
+    * @param body The resources to add/update.
+    * @param options HTTP options
+    *
+    * @return An `Observable` of the requested type.
+    */
+  @JSName("put")
+  def put_T[T](url: String): Observable_[T] = js.native
+  @JSName("put")
+  def put_T[T](url: String, body: js.Any): Observable_[T] = js.native
+  /**
     * Constructs a `PUT` request that interprets the body as a JSON object and returns the
     * full event stream.
     *
@@ -1290,26 +1312,11 @@ class HttpClient protected () extends js.Object {
     * @return An `Observable` of all `HttpEvents` for the request,
     * with a response body in the requested type.
     */
-  def put[T](url: String, body: js.Any, options: ObserveResponseType): Observable_[HttpEvent[T]] = js.native
-  def put[T](url: String, body: Null, options: ObserveResponseType): Observable_[HttpEvent[T]] = js.native
-  /**
-    * Constructs a `PUT` request that interprets the body as a JSON object
-    * and returns an observable of the response.
-    *
-    * @param url The endpoint URL.
-    * @param body The resources to add/update.
-    * @param options HTTP options
-    *
-    * @return An `Observable` of the `HTTPResponse` for the request, with a response body in the
-    *     requested type.
-    */
   @JSName("put")
-  def put_T[T](url: String): Observable_[T] = js.native
-  @JSName("put")
-  def put_T[T](url: String, body: js.Any): Observable_[T] = js.native
+  def put_T[T](url: String, body: js.Any, options: ObserveParamsReportProgressResponseTypeWithCredentials): Observable_[HttpEvent[T]] = js.native
   /**
-    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full HTTP
-    * response.
+    * Constructs a `PUT` request that interprets the body as an instance of the requested type and
+    * returns the full HTTP response.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
@@ -1323,9 +1330,12 @@ class HttpClient protected () extends js.Object {
   @JSName("put")
   def put_T[T](url: String, body: js.Any, options: `3`): Observable_[T] = js.native
   @JSName("put")
+  def put_T[T](url: String, body: Null, options: ObserveParamsReportProgressResponseTypeWithCredentials): Observable_[HttpEvent[T]] = js.native
+  @JSName("put")
   def put_T[T](url: String, body: Null, options: `2`): Observable_[HttpResponse[T]] = js.native
   @JSName("put")
   def put_T[T](url: String, body: Null, options: `3`): Observable_[T] = js.native
+  
   /**
     * Constructs a request which interprets the body as a JSON object and returns the full
     * `HTTPResponse` as a JSON object.
@@ -1521,4 +1531,3 @@ class HttpClient protected () extends js.Object {
   @JSName("request")
   def request_R[R](method: String, url: String, options: ObserveParams): Observable_[HttpEvent[R]] = js.native
 }
-

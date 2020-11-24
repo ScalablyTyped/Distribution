@@ -5,11 +5,12 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Cameras/Stereoscopic/anaglyphFreeCamera", JSImport.Namespace)
 @js.native
 object anaglyphFreeCameraMod extends js.Object {
+  
   @js.native
   class AnaglyphFreeCamera protected () extends FreeCamera {
     /**
@@ -21,6 +22,4 @@ object anaglyphFreeCameraMod extends js.Object {
       */
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
   }
-  
 }
-

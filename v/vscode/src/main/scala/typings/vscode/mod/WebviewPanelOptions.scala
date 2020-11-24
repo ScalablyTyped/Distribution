@@ -2,16 +2,18 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebviewPanelOptions extends js.Object {
+  
   /**
     * Controls if the find widget is enabled in the panel.
     *
     * Defaults to false.
     */
   val enableFindWidget: js.UndefOr[Boolean] = js.native
+  
   /**
     * Controls if the webview panel's content (iframe) is kept around even when the panel
     * is no longer visible.
@@ -30,33 +32,39 @@ trait WebviewPanelOptions extends js.Object {
     */
   val retainContextWhenHidden: js.UndefOr[Boolean] = js.native
 }
-
 object WebviewPanelOptions {
+  
   @scala.inline
   def apply(): WebviewPanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebviewPanelOptions]
   }
+  
   @scala.inline
   implicit class WebviewPanelOptionsOps[Self <: WebviewPanelOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEnableFindWidget(value: Boolean): Self = this.set("enableFindWidget", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnableFindWidget: Self = this.set("enableFindWidget", js.undefined)
+    
     @scala.inline
     def setRetainContextWhenHidden(value: Boolean): Self = this.set("retainContextWhenHidden", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRetainContextWhenHidden: Self = this.set("retainContextWhenHidden", js.undefined)
   }
-  
 }
-

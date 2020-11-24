@@ -4,7 +4,7 @@ import typings.bingmaps.Microsoft.Maps.IKmlScreenOverlayOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.KmlScreenOverlay")
 @js.native
@@ -21,4 +21,3 @@ class KmlScreenOverlay ()
   def this(htmlElement: String, options: IKmlScreenOverlayOptions) = this()
   def this(htmlElement: HTMLElement, options: IKmlScreenOverlayOptions) = this()
 }
-

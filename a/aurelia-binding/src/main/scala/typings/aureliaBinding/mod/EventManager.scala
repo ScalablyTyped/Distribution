@@ -6,13 +6,13 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "EventManager")
 @js.native
 class EventManager () extends js.Object {
   def this(escapeShadowRoot: Boolean) = this()
-  var escapeShadowRoot: Boolean = js.native
+  
   def addEventListener(
     target: EventTarget,
     targetEvent: String,
@@ -36,6 +36,8 @@ class EventManager () extends js.Object {
     delegate: delegationStrategy,
     disposable: `true`
   ): Disposable = js.native
+  
+  var escapeShadowRoot: Boolean = js.native
+  
   def registerElementConfig(config: Properties): Unit = js.native
 }
-

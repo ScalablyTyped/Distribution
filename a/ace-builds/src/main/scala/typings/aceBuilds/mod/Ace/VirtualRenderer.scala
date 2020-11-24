@@ -26,31 +26,50 @@ import typings.aceBuilds.anon.PageX
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VirtualRenderer
   extends OptionsProvider
      with EventEmitter {
-  var container: HTMLElement = js.native
+  
   def adjustWrapLimit(): Boolean = js.native
+  
   def alignCursor(cursor: Double, alignment: Double): Double = js.native
   def alignCursor(cursor: Point, alignment: Double): Double = js.native
+  
   def animateScrolling(fromValue: Double, callback: js.Function0[Unit]): Unit = js.native
+  
   def attachToShadowRoot(): Unit = js.native
+  
+  var container: HTMLElement = js.native
+  
   def destroy(): Unit = js.native
+  
   def freeze(): Unit = js.native
+  
   def getAnimatedScroll(): Boolean = js.native
+  
   def getContainerElement(): HTMLElement = js.native
+  
   def getDisplayIndentGuides(): Boolean = js.native
+  
   def getFadeFoldWidgets(): Boolean = js.native
+  
   def getFirstFullyVisibleRow(): Double = js.native
+  
   def getFirstVisibleRow(): Double = js.native
+  
   def getHScrollBarAlwaysVisible(): Boolean = js.native
+  
   def getHighlightGutterLine(): Boolean = js.native
+  
   def getLastFullyVisibleRow(): Double = js.native
+  
   def getLastVisibleRow(): Double = js.native
+  
   def getMouseEventTarget(): HTMLElement = js.native
+  
   @JSName("getOption")
   def getOption_animatedScroll(name: animatedScroll): Boolean = js.native
   @JSName("getOption")
@@ -95,39 +114,71 @@ trait VirtualRenderer
   def getOption_theme(name: theme): String = js.native
   @JSName("getOption")
   def getOption_vScrollBarAlwaysVisible(name: vScrollBarAlwaysVisible): Boolean = js.native
+  
   def getPrintMarginColumn(): Boolean = js.native
+  
   def getScrollBottomRow(): Double = js.native
+  
   def getScrollLeft(): Double = js.native
+  
   def getScrollTop(): Double = js.native
+  
   def getScrollTopRow(): Double = js.native
+  
   def getShowGutter(): Boolean = js.native
+  
   def getShowInvisibles(): Boolean = js.native
+  
   def getShowPrintMargin(): Boolean = js.native
+  
   def getTextAreaContainer(): HTMLElement = js.native
+  
   def getTheme(): String = js.native
+  
   def getVScrollBarAlwaysVisible(): Boolean = js.native
+  
   def hideComposition(): Unit = js.native
+  
   def hideCursor(): Unit = js.native
+  
   def isScrollableBy(deltaX: Double, deltaY: Double): Boolean = js.native
+  
   def scrollBy(deltaX: Double, deltaY: Double): Unit = js.native
+  
   def scrollCursorIntoView(cursor: Point): Unit = js.native
   def scrollCursorIntoView(cursor: Point, offset: Double): Unit = js.native
+  
   def scrollSelectionIntoView(anchor: Point, lead: Point): Unit = js.native
   def scrollSelectionIntoView(anchor: Point, lead: Point, offset: Double): Unit = js.native
+  
   def scrollTo(x: Double, y: Double): Unit = js.native
+  
   def scrollToLine(line: Double, center: Boolean, animate: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  
   def scrollToRow(row: Double): Unit = js.native
+  
   def scrollToX(scrollLeft: Double): Unit = js.native
+  
   def scrollToY(scrollTop: Double): Unit = js.native
+  
   def setAnimatedScroll(shouldAnimate: Boolean): Unit = js.native
+  
   def setAnnotations(annotations: js.Array[Annotation]): Unit = js.native
+  
   def setCompositionText(text: String): Unit = js.native
+  
   def setCursorStyle(style: String): Unit = js.native
+  
   def setDisplayIndentGuides(display: Boolean): Unit = js.native
+  
   def setFadeFoldWidgets(show: Boolean): Unit = js.native
+  
   def setHScrollBarAlwaysVisible(alwaysVisible: Boolean): Unit = js.native
+  
   def setHighlightGutterLine(shouldHighlight: Boolean): Unit = js.native
+  
   def setMouseCursor(cursorStyle: String): Unit = js.native
+  
   @JSName("setOption")
   def setOption_animatedScroll(name: animatedScroll, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -174,34 +225,58 @@ trait VirtualRenderer
   def setOption_theme(name: theme, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_vScrollBarAlwaysVisible(name: vScrollBarAlwaysVisible, value: Boolean): Unit = js.native
+  
   def setPadding(padding: Double): Unit = js.native
+  
   def setPrintMarginColumn(showPrintMargin: Boolean): Unit = js.native
+  
   def setScrollMargin(top: Double, bottom: Double, left: Double, right: Double): Unit = js.native
+  
   def setSession(session: EditSession): Unit = js.native
+  
   def setShowGutter(show: Boolean): Unit = js.native
+  
   def setShowInvisibles(showInvisibles: Boolean): Unit = js.native
+  
   def setShowPrintMargin(showPrintMargin: Boolean): Unit = js.native
+  
   def setStyle(style: String): Unit = js.native
   def setStyle(style: String, include: Boolean): Unit = js.native
+  
   def setTheme(theme: String): Unit = js.native
   def setTheme(theme: String, callback: js.Function0[Unit]): Unit = js.native
+  
   def setVScrollBarAlwaysVisible(alwaysVisible: Boolean): Unit = js.native
+  
   def showComposition(position: Double): Unit = js.native
+  
   def showCursor(): Unit = js.native
+  
   def textToScreenCoordinates(row: Double, column: Double): PageX = js.native
+  
   def unfreeze(): Unit = js.native
+  
   def unsetStyle(style: String): Unit = js.native
+  
   def updateBackMarkers(): Unit = js.native
+  
   def updateBreakpoints(): Unit = js.native
+  
   def updateCursor(): Unit = js.native
+  
   def updateFontSize(): Unit = js.native
+  
   def updateFrontMarkers(): Unit = js.native
+  
   def updateFull(): Unit = js.native
   def updateFull(force: Boolean): Unit = js.native
+  
   def updateLines(firstRow: Double, lastRow: Double): Unit = js.native
   def updateLines(firstRow: Double, lastRow: Double, force: Boolean): Unit = js.native
+  
   def updateText(): Unit = js.native
+  
   def visualizeBlur(): Unit = js.native
+  
   def visualizeFocus(): Unit = js.native
 }
-

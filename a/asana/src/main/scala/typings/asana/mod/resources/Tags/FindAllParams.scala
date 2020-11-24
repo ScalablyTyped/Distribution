@@ -3,31 +3,48 @@ package typings.asana.mod.resources.Tags
 import typings.asana.mod.resources.PaginationParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait FindAllParams extends PaginationParams {
-  var archived: js.UndefOr[Boolean] = js.undefined
-  var team: js.UndefOr[Double] = js.undefined
+  
+  var archived: js.UndefOr[Boolean] = js.native
+  
+  var team: js.UndefOr[String | Double] = js.native
 }
-
 object FindAllParams {
+  
   @scala.inline
-  def apply(
-    archived: js.UndefOr[Boolean] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined,
-    offset: String = null,
-    opt_expand: String = null,
-    opt_fields: String = null,
-    team: js.UndefOr[Double] = js.undefined
-  ): FindAllParams = {
+  def apply(): FindAllParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opt_expand != null) __obj.updateDynamic("opt_expand")(opt_expand.asInstanceOf[js.Any])
-    if (opt_fields != null) __obj.updateDynamic("opt_fields")(opt_fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(team)) __obj.updateDynamic("team")(team.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindAllParams]
   }
+  
+  @scala.inline
+  implicit class FindAllParamsOps[Self <: FindAllParams] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    
+    @scala.inline
+    def setTeam(value: String | Double): Self = this.set("team", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTeam: Self = this.set("team", js.undefined)
+  }
 }
-

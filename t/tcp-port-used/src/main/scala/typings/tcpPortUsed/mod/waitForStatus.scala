@@ -2,11 +2,12 @@ package typings.tcpPortUsed.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tcp-port-used", "waitForStatus")
 @js.native
 object waitForStatus extends js.Object {
+  
   def apply(port: Double): js.Promise[Unit] = js.native
   def apply(
     port: Double,
@@ -134,4 +135,3 @@ object waitForStatus extends js.Object {
   def apply(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = js.native
   def apply(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
 }
-

@@ -5,9 +5,148 @@ import typings.hapiJoi.mod.PresenceMode
 import typings.hapiJoi.mod.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapiJoiStrings {
+  
+  @scala.inline
+  def NFC: NFC = "NFC".asInstanceOf[NFC]
+  
+  @scala.inline
+  def NFD: NFD = "NFD".asInstanceOf[NFD]
+  
+  @scala.inline
+  def NFKC: NFKC = "NFKC".asInstanceOf[NFKC]
+  
+  @scala.inline
+  def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
+  
+  @scala.inline
+  def SchemaMap: SchemaMap = "SchemaMap".asInstanceOf[SchemaMap]
+  
+  @scala.inline
+  def ValidationError: ValidationError = "ValidationError".asInstanceOf[ValidationError]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def alternatives: alternatives = "alternatives".asInstanceOf[alternatives]
+  
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  
+  @scala.inline
+  def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
+  
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  
+  @scala.inline
+  def iso: iso = "iso".asInstanceOf[iso]
+  
+  @scala.inline
+  def javascript: javascript = "javascript".asInstanceOf[javascript]
+  
+  @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def lower: lower = "lower".asInstanceOf[lower]
+  
+  @scala.inline
+  def map: map = "map".asInstanceOf[map]
+  
+  @scala.inline
+  def negative: negative = "negative".asInstanceOf[negative]
+  
+  @scala.inline
+  def now: now = "now".asInstanceOf[now]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @scala.inline
+  def one: one = "one".asInstanceOf[one]
+  
+  @scala.inline
+  def optional: optional = "optional".asInstanceOf[optional]
+  
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
+  
+  @scala.inline
+  def positive: positive = "positive".asInstanceOf[positive]
+  
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
+  
+  @scala.inline
+  def schema: schema = "schema".asInstanceOf[schema]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def unix: unix = "unix".asInstanceOf[unix]
+  
+  @scala.inline
+  def upper: upper = "upper".asInstanceOf[upper]
+  
+  @scala.inline
+  def utc: utc = "utc".asInstanceOf[utc]
+  
+  @scala.inline
+  def uuidv1: uuidv1 = "uuidv1".asInstanceOf[uuidv1]
+  
+  @scala.inline
+  def uuidv2: uuidv2 = "uuidv2".asInstanceOf[uuidv2]
+  
+  @scala.inline
+  def uuidv3: uuidv3 = "uuidv3".asInstanceOf[uuidv3]
+  
+  @scala.inline
+  def uuidv4: uuidv4 = "uuidv4".asInstanceOf[uuidv4]
+  
+  @scala.inline
+  def uuidv5: uuidv5 = "uuidv5".asInstanceOf[uuidv5]
+  
   @js.native
   sealed trait NFC extends js.Object
   
@@ -145,98 +284,4 @@ object hapiJoiStrings {
   
   @js.native
   sealed trait uuidv5 extends GuidVersions
-  
-  @scala.inline
-  def NFC: NFC = "NFC".asInstanceOf[NFC]
-  @scala.inline
-  def NFD: NFD = "NFD".asInstanceOf[NFD]
-  @scala.inline
-  def NFKC: NFKC = "NFKC".asInstanceOf[NFKC]
-  @scala.inline
-  def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
-  @scala.inline
-  def SchemaMap: SchemaMap = "SchemaMap".asInstanceOf[SchemaMap]
-  @scala.inline
-  def ValidationError: ValidationError = "ValidationError".asInstanceOf[ValidationError]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def alternatives: alternatives = "alternatives".asInstanceOf[alternatives]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
-  @scala.inline
-  def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def iso: iso = "iso".asInstanceOf[iso]
-  @scala.inline
-  def javascript: javascript = "javascript".asInstanceOf[javascript]
-  @scala.inline
-  def key: key = "key".asInstanceOf[key]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def lower: lower = "lower".asInstanceOf[lower]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def negative: negative = "negative".asInstanceOf[negative]
-  @scala.inline
-  def now: now = "now".asInstanceOf[now]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
-  @scala.inline
-  def optional: optional = "optional".asInstanceOf[optional]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def positive: positive = "positive".asInstanceOf[positive]
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
-  def schema: schema = "schema".asInstanceOf[schema]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def unix: unix = "unix".asInstanceOf[unix]
-  @scala.inline
-  def upper: upper = "upper".asInstanceOf[upper]
-  @scala.inline
-  def utc: utc = "utc".asInstanceOf[utc]
-  @scala.inline
-  def uuidv1: uuidv1 = "uuidv1".asInstanceOf[uuidv1]
-  @scala.inline
-  def uuidv2: uuidv2 = "uuidv2".asInstanceOf[uuidv2]
-  @scala.inline
-  def uuidv3: uuidv3 = "uuidv3".asInstanceOf[uuidv3]
-  @scala.inline
-  def uuidv4: uuidv4 = "uuidv4".asInstanceOf[uuidv4]
-  @scala.inline
-  def uuidv5: uuidv5 = "uuidv5".asInstanceOf[uuidv5]
 }
-

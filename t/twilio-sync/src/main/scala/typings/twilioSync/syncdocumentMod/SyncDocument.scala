@@ -4,7 +4,7 @@ import typings.std.Date
 import typings.twilioSync.mutatorMod.Mutator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -25,10 +25,13 @@ import scala.scalajs.js.annotation._
 class SyncDocument protected ()
   extends typings.twilioSync.closeableMod.default {
   def this(syncDocumentImpl: SyncDocumentImpl) = this()
-  val syncDocumentImpl: js.Any = js.native
+  
   def dateExpires: String = js.native
+  
   def dateUpdated: Date = js.native
+  
   def lastEventId: Double = js.native
+  
   /**
     * Schedules a modification to this document that will apply a mutation function.
     * @param {Document~Mutator} mutator A function that outputs a new value based on the existing value.
@@ -54,6 +57,7 @@ class SyncDocument protected ()
     */
   def mutate(mutator: Mutator): js.Promise[js.Object] = js.native
   def mutate(mutator: Mutator, metadataUpdates: DocumentMetadata): js.Promise[js.Object] = js.native
+  
   /**
     * Delete a document.
     * @return {Promise<void>} A promise which resolves if (and only if) the document is ultimately deleted.
@@ -68,7 +72,9 @@ class SyncDocument protected ()
     *   });
     */
   def removeDocument(): js.Promise[scala.Nothing] = js.native
+  
   def revision: String = js.native
+  
   /**
     * Assign new contents to this document. The current value will be overwritten.
     * @param {Object} value The new contents to assign.
@@ -88,6 +94,7 @@ class SyncDocument protected ()
     */
   def set(value: js.Object): js.Promise[js.Object] = js.native
   def set(value: js.Object, metadataUpdates: DocumentMetadata): js.Promise[js.Object] = js.native
+  
   /**
     * Update the time-to-live of the document.
     * @param {Number} ttl Specifies the time-to-live in seconds after which the document is subject to automatic deletion. The value 0 means infinity.
@@ -103,9 +110,15 @@ class SyncDocument protected ()
     *   });
     */
   def setTtl(ttl: Double): js.Promise[Unit] = js.native
+  
   def sid: String = js.native
+  
+  val syncDocumentImpl: js.Any = js.native
+  
   def `type`: String = js.native
+  
   def uniqueName: String = js.native
+  
   /**
     * Modify a document by appending new fields (or by overwriting existing ones) with the values from the provided Object.
     * This is equivalent to
@@ -131,14 +144,15 @@ class SyncDocument protected ()
     */
   def update(obj: js.Object): js.Promise[js.Object] = js.native
   def update(obj: js.Object, metadataUpdates: DocumentMetadata): js.Promise[js.Object] = js.native
+  
   def uri: String = js.native
+  
   def value: js.Object = js.native
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/syncdocument", "SyncDocument")
 @js.native
 object SyncDocument extends js.Object {
+  
   def `type`: String = js.native
 }
-

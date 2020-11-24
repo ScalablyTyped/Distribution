@@ -10,13 +10,13 @@ Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,
 | ------------------ | :-------------: |
 | Full name          | chunk |
 | Keywords           | array, chunk |
-| # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 165433 |
+| # releases         | 0 |
+| # dependents       | 38 |
+| # downloads        | 198107 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/ryancole/chunk)
+- [Homepage](https://github.com/ryancole/chunk#readme)
 - [Bugs](https://github.com/ryancole/chunk/issues)
 - [Repository](https://github.com/ryancole/chunk)
 - [Npm](https://www.npmjs.com/package/chunk)

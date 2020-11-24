@@ -2,7 +2,7 @@ package typings.micromodal.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MicroModal controller
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSImport("micromodal", "MicroModal")
 @js.native
 object MicroModal extends js.Object
-

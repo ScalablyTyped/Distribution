@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.animationend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_animationend extends js.Object {
+  
   def apply(
     `type`: animationend,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, _]
@@ -25,4 +26,3 @@ object removeEventListener_animationend extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

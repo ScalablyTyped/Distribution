@@ -11,8 +11,8 @@ JavaScript framework for SASL authentication.
 | Full name          | saslmechanisms |
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 90170 |
+| # dependents       | 8 |
+| # downloads        | 187361 |
 | # stars            | 0 |
 
 ## Links

@@ -14,10 +14,11 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_WINDOW_COLOR_KEY
 import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_WINDOW_OPACITY_KEY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TVInfoManager extends js.Object {
+  
   /**
     * Adds a listener to be called when given caption menu key value changes.
     * @returns CaptionValue value for given caption menu key
@@ -51,6 +52,7 @@ trait TVInfoManager extends js.Object {
   def addCaptionValueChangeListener_CAPTIONWINDOWCOLORKEY(key: CAPTION_WINDOW_COLOR_KEY, callback: CaptionValueChangeCallback): Double = js.native
   @JSName("addCaptionValueChangeListener")
   def addCaptionValueChangeListener_CAPTIONWINDOWOPACITYKEY(key: CAPTION_WINDOW_OPACITY_KEY, callback: CaptionValueChangeCallback): Double = js.native
+  
   /**
     * Method returns the value for corresponding caption menu key.
     * @returns CaptionValue value for given caption menu key
@@ -83,6 +85,7 @@ trait TVInfoManager extends js.Object {
   def getCaptionValue_CAPTIONWINDOWCOLORKEY(key: CAPTION_WINDOW_COLOR_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
   @JSName("getCaptionValue")
   def getCaptionValue_CAPTIONWINDOWOPACITYKEY(key: CAPTION_WINDOW_OPACITY_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  
   /**
     * Removes a listener.
     * Calling this function has no effect if there is no listener with given id.
@@ -92,4 +95,3 @@ trait TVInfoManager extends js.Object {
     */
   def removeCaptionValueChangeListener(watchId: Double): Unit = js.native
 }
-

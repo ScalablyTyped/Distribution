@@ -2,7 +2,7 @@ package typings.angularResource.mod.angularAugmentingMod.resource
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // ResourceService
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IResourceService extends js.Object {
+  
   /**
     * A factory which creates a resource object that lets you interact with RESTful server-side data sources.
     * @param url A parameterized URL template with parameters prefixed by : as in /user/:username
@@ -39,4 +40,3 @@ trait IResourceService extends js.Object {
   def apply(url: String, paramDefaults: js.Any, actions: IActionHash): IResourceClass[IResource[_]] = js.native
   def apply(url: String, paramDefaults: js.Any, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[_]] = js.native
 }
-

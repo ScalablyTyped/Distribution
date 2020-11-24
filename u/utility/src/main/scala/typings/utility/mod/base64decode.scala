@@ -3,11 +3,12 @@ package typings.utility.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "base64decode")
 @js.native
 object base64decode extends js.Object {
+  
   /**
     * Base64 string decode.
     *
@@ -20,4 +21,3 @@ object base64decode extends js.Object {
   def apply(encode: String): String | Buffer = js.native
   def apply(encode: String, urlsafe: Boolean): String | Buffer = js.native
 }
-

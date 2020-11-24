@@ -10,9 +10,9 @@ Channel object for Asyngular
 | ------------------ | :-------------: |
 | Full name          | ag-channel |
 | Keywords           | channel, asyngular, socketcluster, pubsub, publish, subscribe |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 56673 |
+| # releases         | 10 |
+| # dependents       | 4 |
+| # downloads        | 77320 |
 | # stars            | 0 |
 
 ## Links

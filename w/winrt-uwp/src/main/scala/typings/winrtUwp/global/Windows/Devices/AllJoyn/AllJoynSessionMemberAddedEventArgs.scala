@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a peer that was added to a session. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionMemberAddedEventArgs")
@@ -15,4 +15,3 @@ class AllJoynSessionMemberAddedEventArgs protected ()
     */
   def this(uniqueName: String) = this()
 }
-

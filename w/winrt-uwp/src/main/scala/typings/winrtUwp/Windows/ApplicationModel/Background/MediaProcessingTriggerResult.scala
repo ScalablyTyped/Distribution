@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaProcessingTriggerResult extends js.Object
-
 /** Specifies the result of a call to MediaProcessingTrigger::RequestAsync . */
 @JSGlobal("Windows.ApplicationModel.Background.MediaProcessingTriggerResult")
 @js.native
 object MediaProcessingTriggerResult extends js.Object {
+  
   /** The media processing trigger request was successful. */
   @js.native
   sealed trait allowed extends MediaProcessingTriggerResult
@@ -26,6 +26,4 @@ object MediaProcessingTriggerResult extends js.Object {
   /** An unknown error occurred. */
   @js.native
   sealed trait unknownError extends MediaProcessingTriggerResult
-  
 }
-

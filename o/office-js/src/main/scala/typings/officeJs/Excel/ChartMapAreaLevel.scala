@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartMapAreaLevel extends js.Object
-
 /**
   *
   * Represents the mapping level of a chart series. This only applies to region map charts.
@@ -16,6 +15,7 @@ sealed trait ChartMapAreaLevel extends js.Object
 @JSGlobal("Excel.ChartMapAreaLevel")
 @js.native
 object ChartMapAreaLevel extends js.Object {
+  
   @js.native
   sealed trait automatic extends ChartMapAreaLevel
   
@@ -39,6 +39,4 @@ object ChartMapAreaLevel extends js.Object {
   
   @js.native
   sealed trait world extends ChartMapAreaLevel
-  
 }
-

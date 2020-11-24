@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.mobile.ui.ActionSheetOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofActionSheet
   extends Instantiable1[/* element */ Element, ActionSheet]
      with Instantiable2[/* element */ Element, /* options */ ActionSheetOptions, ActionSheet] {
-  var fn: ActionSheet = js.native
+  
   def extend(proto: js.Object): ActionSheet = js.native
+  
+  var fn: ActionSheet = js.native
 }
-

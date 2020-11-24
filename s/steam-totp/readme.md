@@ -10,9 +10,9 @@ Generate Steam-style TOTP codes given a secret
 | ------------------ | :-------------: |
 | Full name          | steam-totp |
 | Keywords           | steam, steam client, steam guard |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 123417 |
+| # releases         | 2 |
+| # dependents       | 33 |
+| # downloads        | 459412 |
 | # stars            | 5 |
 
 ## Links

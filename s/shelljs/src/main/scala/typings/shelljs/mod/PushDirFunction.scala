@@ -4,10 +4,11 @@ import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PushDirFunction extends js.Object {
+  
   /**
     * Saves the current directory on the top of the directory stack and then cd to dir.
     * With no arguments, `pushd` exchanges the top two directories.
@@ -82,4 +83,3 @@ trait PushDirFunction extends js.Object {
     */
   def apply(options: String, dir: `-N`): ShellArray = js.native
 }
-

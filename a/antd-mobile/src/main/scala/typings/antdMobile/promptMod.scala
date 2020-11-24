@@ -6,11 +6,12 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile/lib/modal/prompt", JSImport.Namespace)
 @js.native
 object promptMod extends js.Object {
+  
   def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = js.native
   def default(
     title: ReactNode,
@@ -137,4 +138,3 @@ object promptMod extends js.Object {
     platform: String
   ): Close = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.oauth2Server.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseModel extends js.Object {
+  
   /**
     * Invoked to generate a new access token.
     *
@@ -19,12 +20,14 @@ trait BaseModel extends js.Object {
       js.Promise[String]
     ]
   ] = js.native
+  
   /**
     * Invoked to retrieve a client using a client id or a client id/client secret combination, depending on the grant type.
     *
     */
   def getClient(clientId: String, clientSecret: String): js.Promise[Client | Falsey] = js.native
   def getClient(clientId: String, clientSecret: String, callback: Callback[Client | Falsey]): js.Promise[Client | Falsey] = js.native
+  
   /**
     * Invoked to save an access token and optionally a refresh token, depending on the grant type.
     *
@@ -32,4 +35,3 @@ trait BaseModel extends js.Object {
   def saveToken(token: Token, client: Client, user: User): js.Promise[Token | Falsey] = js.native
   def saveToken(token: Token, client: Client, user: User, callback: Callback[Token]): js.Promise[Token | Falsey] = js.native
 }
-

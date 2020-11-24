@@ -2,7 +2,7 @@ package typings.routeParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("route-parser", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ class ^[TParams /* <: js.Object */] protected () extends Route[TParams] {
     */
   def this(spec: String) = this()
 }
-

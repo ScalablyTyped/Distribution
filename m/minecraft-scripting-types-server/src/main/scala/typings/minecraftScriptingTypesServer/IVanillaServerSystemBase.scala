@@ -52,10 +52,11 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IEventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVanillaServerSystemBase extends js.Object {
+  
   /**
     * 
     * @param eventIdentifier Allows you to trigger an event with the desired data from script. 
@@ -104,6 +105,7 @@ trait IVanillaServerSystemBase extends js.Object {
     eventIdentifier: minecraftColonspawn_particle_in_world,
     eventData: IEventData[ISpawnParticleInWorldParameters]
   ): Boolean | Null = js.native
+  
   /**
     * Creates a component of the specified name and adds it to the entity. This should only be used with custom components which need 
     * to be registered first. If the entity already has the component, this will retrieve the component already there instead.
@@ -156,6 +158,7 @@ trait IVanillaServerSystemBase extends js.Object {
   def createComponent_minecraftteleport(entity: IEntity, componentName: minecraftColonteleport): IComponent[ITeleportComponent] | Null = js.native
   @JSName("createComponent")
   def createComponent_minecrafttickworld(entity: IEntity, componentName: minecraftColontick_world): IComponent[ITickWorldComponent] | Null = js.native
+  
   /**
     * Creates an object with all the required fields and default data for the specified event. If the event is a custom event, it needs to have been previously registered.
     * 
@@ -194,6 +197,7 @@ trait IVanillaServerSystemBase extends js.Object {
     */
   @JSName("createEventData")
   def createEventData_minecraftspawnparticleinworld(eventIdentifier: minecraftColonspawn_particle_in_world): IEventData[ISpawnParticleInWorldParameters] | Null = js.native
+  
   def getComponent[TComponent](entity: IEntity, componentIdentifier: String): IComponent[TComponent] | Null = js.native
   /**
     * Looks for the specified component in the entity. If it exists, retrieves the data from the component and returns it.
@@ -246,6 +250,7 @@ trait IVanillaServerSystemBase extends js.Object {
   def getComponent_minecraftteleport(entity: IEntity, componentName: minecraftColonteleport): IComponent[ITeleportComponent] | Null = js.native
   @JSName("getComponent")
   def getComponent_minecrafttickworld(entity: IEntity, componentName: minecraftColontick_world): IComponent[ITickWorldComponent] | Null = js.native
+  
   /**
     * Allows you to register a JavaScript object that gets called whenever the specified event is broadcast. The event can either be a built-in event or an event specified in script.
     * @param eventIdentifier This is the name of the event to which we want to react. Can be the identifier of a built-in event or a custom one from script
@@ -406,6 +411,7 @@ trait IVanillaServerSystemBase extends js.Object {
     eventIdentifier: minecraftColonweather_changed,
     callback: js.Function1[/* eventData */ IEventData[IWeatherChangedEventData], Unit]
   ): Boolean | Null = js.native
+  
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Generic method for other custom events
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -417,4 +423,3 @@ trait IVanillaServerSystemBase extends js.Object {
     */
   def registerEventData[TEventDataType](eventIdentifier: String, eventData: TEventDataType): `true` | Null = js.native
 }
-

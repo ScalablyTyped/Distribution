@@ -8,7 +8,7 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ConditionalFormatRule extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ConditionalFormatRule: RequestContext = js.native
+  
   /**
     *
     * The formula, if required, to evaluate the conditional format rule on.
@@ -28,6 +30,7 @@ trait ConditionalFormatRule extends ClientObject {
     * [Api set: ExcelApi 1.6]
     */
   var formula: String = js.native
+  
   /**
     *
     * The formula, if required, to evaluate the conditional format rule on in the user's language.
@@ -35,6 +38,7 @@ trait ConditionalFormatRule extends ClientObject {
     * [Api set: ExcelApi 1.6]
     */
   var formulaLocal: String = js.native
+  
   /**
     *
     * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
@@ -42,6 +46,7 @@ trait ConditionalFormatRule extends ClientObject {
     * [Api set: ExcelApi 1.6]
     */
   var formulaR1C1: String = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -52,6 +57,7 @@ trait ConditionalFormatRule extends ClientObject {
   def load(propertyNamesAndPaths: Expand): ConditionalFormatRule = js.native
   def load(propertyNames: String): ConditionalFormatRule = js.native
   def load(propertyNames: js.Array[String]): ConditionalFormatRule = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalFormatRule): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -67,10 +73,10 @@ trait ConditionalFormatRule extends ClientObject {
     */
   def set(properties: ConditionalFormatRuleUpdateData): Unit = js.native
   def set(properties: ConditionalFormatRuleUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.ConditionalFormatRule object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ConditionalFormatRuleData = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.std.Pick
 import typings.superstruct.structMod.Struct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/structs/utilities", JSImport.Namespace)
 @js.native
 object utilitiesMod extends js.Object {
+  
   def assign[A /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, B /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
     Structs: js.Tuple2[
       Struct[
@@ -94,6 +95,7 @@ object utilitiesMod extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<Assign<Assign<A, B>, C>, D>, E>> */ _, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<Assign<Assign<A, B>, C>, D>, E> */ _
   ] = js.native
+  
   def dynamic[T](
     fn: js.Function2[
       /* value */ js.Any, 
@@ -101,7 +103,9 @@ object utilitiesMod extends js.Object {
       Struct[T, _]
     ]
   ): Struct[T, Null] = js.native
+  
   def `lazy`[T](fn: js.Function0[Struct[T, _]]): Struct[T, Null] = js.native
+  
   def omit[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, K /* <: /* keyof S */ String */](
     struct: Struct[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ _, 
@@ -112,6 +116,7 @@ object utilitiesMod extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Omit<S, K>> */ _, 
     Omit[S, K]
   ] = js.native
+  
   def partial[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](struct: S): Struct[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<PartialObjectSchema<S>> */ _, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObjectSchema<S> */ _
@@ -125,6 +130,7 @@ object utilitiesMod extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<PartialObjectSchema<S>> */ _, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObjectSchema<S> */ _
   ] = js.native
+  
   def pick[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, K /* <: /* keyof S */ String */](
     struct: Struct[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ _, 
@@ -135,9 +141,9 @@ object utilitiesMod extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Pick<S, K>> */ _, 
     Pick[S, K]
   ] = js.native
+  
   def struct[T](
     name: String,
     validator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Validator<T, null> */ js.Any
   ): Struct[T, Null] = js.native
 }
-

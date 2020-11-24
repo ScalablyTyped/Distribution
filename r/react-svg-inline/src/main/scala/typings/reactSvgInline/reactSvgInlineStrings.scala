@@ -2,9 +2,40 @@ package typings.reactSvgInline
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSvgInlineStrings {
+  
+  @scala.inline
+  def comment: comment = "comment".asInstanceOf[comment]
+  
+  @scala.inline
+  def defs: defs = "defs".asInstanceOf[defs]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def fill: fill = "fill".asInstanceOf[fill]
+  
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
+  
+  @scala.inline
+  def sketchMSLayerGroup: sketchMSLayerGroup = "sketchMSLayerGroup".asInstanceOf[sketchMSLayerGroup]
+  
+  @scala.inline
+  def sketchMSPage: sketchMSPage = "sketchMSPage".asInstanceOf[sketchMSPage]
+  
+  @scala.inline
+  def sketchMSShapeGroup: sketchMSShapeGroup = "sketchMSShapeGroup".asInstanceOf[sketchMSShapeGroup]
+  
+  @scala.inline
+  def title: title = "title".asInstanceOf[title]
+  
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  
   @js.native
   sealed trait comment extends js.Object
   
@@ -34,26 +65,4 @@ object reactSvgInlineStrings {
   
   @js.native
   sealed trait width extends js.Object
-  
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def defs: defs = "defs".asInstanceOf[defs]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def sketchMSLayerGroup: sketchMSLayerGroup = "sketchMSLayerGroup".asInstanceOf[sketchMSLayerGroup]
-  @scala.inline
-  def sketchMSPage: sketchMSPage = "sketchMSPage".asInstanceOf[sketchMSPage]
-  @scala.inline
-  def sketchMSShapeGroup: sketchMSShapeGroup = "sketchMSShapeGroup".asInstanceOf[sketchMSShapeGroup]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
 }
-

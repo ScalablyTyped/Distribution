@@ -10,9 +10,9 @@ A component wrapper that provides click outside detection.
 | ------------------ | :-------------: |
 | Full name          | react-click-outside |
 | Keywords           | click outside, higher order component, onclickoutside, react |
-| # releases         | 2 |
-| # dependents       | 225 |
-| # downloads        | 4012646 |
+| # releases         | 0 |
+| # dependents       | 240 |
+| # downloads        | 4629725 |
 | # stars            | 9 |
 
 ## Links

@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a dropdown combo box.
@@ -30,8 +30,8 @@ trait AccessibleDropDownComboBox
      with XAccessibleContext
      with XAccessibleEventBroadcaster
      with XAccessibleAction
-
 object AccessibleDropDownComboBox {
+  
   @scala.inline
   def apply(
     AccessibleActionCount: Double,
@@ -89,4 +89,3 @@ object AccessibleDropDownComboBox {
     __obj.asInstanceOf[AccessibleDropDownComboBox]
   }
 }
-

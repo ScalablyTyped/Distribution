@@ -5,7 +5,7 @@ import typings.luminoWidgets.layoutMod.Layout.IOptions
 import typings.luminoWidgets.layoutMod.Layout.VerticalAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "Layout")
 @js.native
@@ -18,10 +18,10 @@ abstract class Layout ()
   extends typings.luminoWidgets.layoutMod.Layout {
   def this(options: IOptions) = this()
 }
-
 @JSImport("@lumino/widgets", "Layout")
 @js.native
 object Layout extends js.Object {
+  
   /**
     * Get the horizontal alignment for a widget.
     *
@@ -40,6 +40,7 @@ object Layout extends js.Object {
     * Some layout implementations may ignore horizontal alignment.
     */
   def getHorizontalAlignment(widget: typings.luminoWidgets.widgetMod.Widget): HorizontalAlignment = js.native
+  
   /**
     * Get the vertical alignment for a widget.
     *
@@ -58,6 +59,7 @@ object Layout extends js.Object {
     * Some layout implementations may ignore vertical alignment.
     */
   def getVerticalAlignment(widget: typings.luminoWidgets.widgetMod.Widget): VerticalAlignment = js.native
+  
   /**
     * Set the horizontal alignment for a widget.
     *
@@ -80,6 +82,7 @@ object Layout extends js.Object {
     * installed.
     */
   def setHorizontalAlignment(widget: typings.luminoWidgets.widgetMod.Widget, value: HorizontalAlignment): Unit = js.native
+  
   /**
     * Set the vertical alignment for a widget.
     *
@@ -103,4 +106,3 @@ object Layout extends js.Object {
     */
   def setVerticalAlignment(widget: typings.luminoWidgets.widgetMod.Widget, value: VerticalAlignment): Unit = js.native
 }
-

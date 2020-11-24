@@ -2,11 +2,12 @@ package typings.tstl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/thread/Singleton", JSImport.Namespace)
 @js.native
 object singletonMod extends js.Object {
+  
   @js.native
   class Singleton[T] protected () extends js.Object {
     /**
@@ -17,18 +18,7 @@ object singletonMod extends js.Object {
       * @param lazyConstructor Lazy constructor function returning the promised value.
       */
     def this(lazyConstructor: js.Function0[js.Promise[T]]) = this()
-    /**
-      * @hidden
-      */
-    var lazy_constructor: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var mutex_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var value_ : js.Any = js.native
+    
     /**
       * Get promised value.
       *
@@ -49,6 +39,17 @@ object singletonMod extends js.Object {
       * @return The *lazy constructed* value.
       */
     def get(): js.Promise[T] = js.native
+    
+    /**
+      * @hidden
+      */
+    var lazy_constructor_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var mutex_ : js.Any = js.native
+    
     /**
       * Reload value.
       *
@@ -64,7 +65,10 @@ object singletonMod extends js.Object {
       * @return Re-constructed value.
       */
     def reload(): js.Promise[T] = js.native
+    
+    /**
+      * @hidden
+      */
+    var value_ : js.Any = js.native
   }
-  
 }
-

@@ -2,18 +2,20 @@ package typings.simpleOauth2.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("simple-oauth2", "ResourceOwnerPassword")
 @js.native
 class ResourceOwnerPassword[ClientIdName /* <: String */] protected () extends js.Object {
   def this(options: ModuleOptions[ClientIdName]) = this()
+  
   /**
     * Creates a new access token by providing a token object as specified by RFC6750.
     *
     * @param token Plain object representation of an access token
     */
   def createToken(token: Token): AccessToken = js.native
+  
   /**
     * Requests and returns an access token from the authorization server
     *
@@ -26,4 +28,3 @@ class ResourceOwnerPassword[ClientIdName /* <: String */] protected () extends j
   def getToken(params: PasswordTokenConfig): js.Promise[AccessToken] = js.native
   def getToken(params: PasswordTokenConfig, httpOptions: WreckHttpOptions): js.Promise[AccessToken] = js.native
 }
-

@@ -9,15 +9,16 @@ Utility to make WordPress REST API requests.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/api-fetch |
-| Keywords           | wordpress, rest-api, fetch |
-| # releases         | 35 |
-| # dependents       | 16 |
-| # downloads        | 270010 |
+| Keywords           | wordpress, gutenberg, rest-api, fetch |
+| # releases         | 40 |
+| # dependents       | 20 |
+| # downloads        | 661030 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/api-fetch/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fapi-fetch)
     
 

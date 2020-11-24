@@ -2,11 +2,12 @@ package typings.fileUrl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("file-url", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Convert a file path to a file URL.
   @param filePath - File path to convert.
@@ -25,4 +26,3 @@ object ^ extends js.Object {
   def apply(filePath: String): String = js.native
   def apply(filePath: String, options: Options): String = js.native
 }
-

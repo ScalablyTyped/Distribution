@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Expansionfiles")
 @js.native
 class ResourceEditsExpansionfiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.expansionfiles.get
     * @desc Fetches the Expansion File configuration for the APK specified.
@@ -44,6 +46,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExpansionFile]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.expansionfiles.patch
     * @desc Updates the APK's Expansion File configuration to reference another
@@ -81,6 +84,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExpansionFile]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.expansionfiles.update
     * @desc Updates the APK's Expansion File configuration to reference another
@@ -117,6 +121,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExpansionFile]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.expansionfiles.upload
     * @desc Uploads and attaches a new Expansion File to the APK specified.
@@ -155,4 +160,3 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaExpansionFilesUploadResponse]
   ): Unit = js.native
 }
-

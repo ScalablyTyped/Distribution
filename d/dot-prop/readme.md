@@ -1,7 +1,7 @@
 
 # Scala.js typings for dot-prop
 
-Typings are for version 5.2.0
+Typings are for version 6.0.1
 
 ## Library description:
 Get, set, or delete a property from a nested object using a dot path
@@ -10,9 +10,9 @@ Get, set, or delete a property from a nested object using a dot path
 | ------------------ | :-------------: |
 | Full name          | dot-prop |
 | Keywords           | object, prop, property, dot, path, get, set, delete, access, notation, dotty |
-| # releases         | 6 |
-| # dependents       | 352 |
-| # downloads        | 333111760 |
+| # releases         | 8 |
+| # dependents       | 478 |
+| # downloads        | 683262525 |
 | # stars            | 14 |
 
 ## Links

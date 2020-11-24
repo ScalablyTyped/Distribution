@@ -6,11 +6,12 @@ import typings.babylonjs.easingMod.ExponentialEase
 import typings.babylonjs.transformNodeMod.TransformNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Behaviors/index", JSImport.Namespace)
 @js.native
 object behaviorsIndexMod extends js.Object {
+  
   @js.native
   class AttachToBoxBehavior protected ()
     extends typings.babylonjs.meshesIndexMod.AttachToBoxBehavior {
@@ -28,6 +29,20 @@ object behaviorsIndexMod extends js.Object {
   @js.native
   class BouncingBehavior ()
     extends typings.babylonjs.camerasIndexMod.BouncingBehavior
+  /* static members */
+  @js.native
+  object BouncingBehavior extends js.Object {
+    
+    /**
+      * The easing function used by animations
+      */
+    var EasingFunction: BackEase = js.native
+    
+    /**
+      * The easing mode used by animations
+      */
+    var EasingMode: Double = js.native
+  }
   
   @js.native
   /**
@@ -39,6 +54,30 @@ object behaviorsIndexMod extends js.Object {
   @js.native
   class FramingBehavior ()
     extends typings.babylonjs.camerasIndexMod.FramingBehavior
+  /* static members */
+  @js.native
+  object FramingBehavior extends js.Object {
+    
+    /**
+      * The easing function used by animations
+      */
+    var EasingFunction: ExponentialEase = js.native
+    
+    /**
+      * The easing mode used by animations
+      */
+    var EasingMode: Double = js.native
+    
+    /**
+      * The camera is not allowed to zoom closer to the mesh than the point at which the adjusted bounding sphere touches the frustum sides
+      */
+    var FitFrustumSidesMode: Double = js.native
+    
+    /**
+      * The camera can move all the way towards the mesh.
+      */
+    var IgnoreBoundsSizeMode: Double = js.native
+  }
   
   @js.native
   /**
@@ -56,6 +95,14 @@ object behaviorsIndexMod extends js.Object {
     extends typings.babylonjs.meshesIndexMod.PointerDragBehavior {
     def this(options: DragAxis) = this()
   }
+  /* static members */
+  @js.native
+  object PointerDragBehavior extends js.Object {
+    
+    var _AnyMouseID: js.Any = js.native
+    
+    var _planeScene: js.Any = js.native
+  }
   
   @js.native
   /**
@@ -63,53 +110,10 @@ object behaviorsIndexMod extends js.Object {
     */
   class SixDofDragBehavior ()
     extends typings.babylonjs.meshesIndexMod.SixDofDragBehavior
-  
-  /* static members */
-  @js.native
-  object BouncingBehavior extends js.Object {
-    /**
-      * The easing function used by animations
-      */
-    var EasingFunction: BackEase = js.native
-    /**
-      * The easing mode used by animations
-      */
-    var EasingMode: Double = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object FramingBehavior extends js.Object {
-    /**
-      * The easing function used by animations
-      */
-    var EasingFunction: ExponentialEase = js.native
-    /**
-      * The easing mode used by animations
-      */
-    var EasingMode: Double = js.native
-    /**
-      * The camera is not allowed to zoom closer to the mesh than the point at which the adjusted bounding sphere touches the frustum sides
-      */
-    var FitFrustumSidesMode: Double = js.native
-    /**
-      * The camera can move all the way towards the mesh.
-      */
-    var IgnoreBoundsSizeMode: Double = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PointerDragBehavior extends js.Object {
-    var _AnyMouseID: js.Any = js.native
-    var _planeScene: js.Any = js.native
-  }
-  
   /* static members */
   @js.native
   object SixDofDragBehavior extends js.Object {
+    
     var _virtualScene: js.Any = js.native
   }
-  
 }
-

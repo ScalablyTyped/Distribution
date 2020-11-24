@@ -2,11 +2,12 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateOrderRequest")
 @js.native
 class CreateOrderRequest () extends js.Object {
+  
   /**
     * A value you specify that uniquely identifies this order among orders you've created.
     * If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency
@@ -14,9 +15,14 @@ class CreateOrderRequest () extends js.Object {
     * See [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
     */
   var idempotency_key: js.UndefOr[String] = js.native
+  
+  /**
+    * The ID of the business location to associate the order with.
+    */
+  var location_id: js.UndefOr[String] = js.native
+  
   /**
     * The order to create. If this field is set, then the only other top-level field that can be set is the idempotency_key.
     */
   var order: js.UndefOr[Order] = js.native
 }
-

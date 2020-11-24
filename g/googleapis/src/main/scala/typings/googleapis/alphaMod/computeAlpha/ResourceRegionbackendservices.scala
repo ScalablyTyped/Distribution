@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regionbackendservices")
 @js.native
 class ResourceRegionbackendservices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionBackendServices.delete
     * @desc Deletes the specified regional BackendService resource.
@@ -44,6 +46,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.get
     * @desc Returns the specified regional BackendService resource.
@@ -77,6 +80,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendService]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.getHealth
     * @desc Gets the most recent health check results for this regional
@@ -112,6 +116,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendServiceGroupHealth]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.insert
     * @desc Creates a regional BackendService resource in the specified project
@@ -146,6 +151,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.list
     * @desc Retrieves the list of regional BackendService resources available
@@ -183,6 +189,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendServiceList]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.patch
     * @desc Updates the specified regional BackendService resource with the
@@ -220,6 +227,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -254,6 +262,7 @@ class ResourceRegionbackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.regionBackendServices.update
     * @desc Updates the specified regional BackendService resource with the
@@ -290,4 +299,3 @@ class ResourceRegionbackendservices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

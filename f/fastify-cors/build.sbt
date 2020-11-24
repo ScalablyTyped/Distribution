@@ -1,16 +1,18 @@
 organization := "org.scalablytyped"
 name := "fastify-cors"
-version := "2.1.3-53c7f9"
-scalaVersion := "2.12.8"
+version := "4.1.0-50430c"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "fastify" % "2.4.1-69b92d",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "ajv" % "6.12.6-6699f6",
+  "org.scalablytyped" %%% "fastify" % "3.8.0-6d7776",
+  "org.scalablytyped" %%% "fastify-error" % "0.2.0-dee7e5",
+  "org.scalablytyped" %%% "light-my-request" % "4.3.0-1e538a",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

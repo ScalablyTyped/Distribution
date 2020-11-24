@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Perfsampleseries$Samples")
 @js.native
 class ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.perfSampleSeries.samples.batchCreate
     * @desc Creates a batch of PerfSamples - a client can submit multiple
@@ -60,6 +60,9 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples protected 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchCreatePerfSamplesResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.perfSampleSeries.samples.list
     * @desc Lists the Performance Samples of a given Sample Series - The list
@@ -110,4 +113,3 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples protected 
     callback: BodyResponseCallback[SchemaListPerfSamplesResponse]
   ): Unit = js.native
 }
-

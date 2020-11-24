@@ -7,7 +7,7 @@ import typings.navigation.navigationStrings.none
 import typings.navigation.navigationStrings.replace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("navigation", "StateNavigator")
 @js.native
@@ -22,23 +22,13 @@ class StateNavigator () extends js.Object {
   def this(stateInfos: js.UndefOr[scala.Nothing], historyManager: HistoryManager) = this()
   def this(stateInfos: js.Array[StateInfo], historyManager: HistoryManager) = this()
   def this(stateInfos: StateNavigator, historyManager: HistoryManager) = this()
-  /**
-    * Gets the browser Url manager
-    */
-  var historyManager: HistoryManager = js.native
-  /**
-    * Provides access to context sensitive navigation information
-    */
-  var stateContext: StateContext = js.native
-  /**
-    * Gets a list of States
-    */
-  var states: StringDictionary[State] = js.native
+  
   /**
     * Determines if the distance specified is within the bounds of the
     * crumb trail represented by the Crumbs collection
     */
   def canNavigateBack(distance: Double): Boolean = js.native
+  
   /**
     * Configures the StateNavigator
     * @param stateInfos A collection of State Infos or another State Navigator
@@ -48,6 +38,7 @@ class StateNavigator () extends js.Object {
   def configure(stateInfos: js.Array[StateInfo], historyManager: HistoryManager): Unit = js.native
   def configure(stateInfos: StateNavigator): Unit = js.native
   def configure(stateInfos: StateNavigator, historyManager: HistoryManager): Unit = js.native
+  
   /**
     * Creates a FluentNavigator
     * @param withContext a value indicating whether to inherit the current
@@ -56,12 +47,14 @@ class StateNavigator () extends js.Object {
     */
   def fluent(): FluentNavigator = js.native
   def fluent(withContext: Boolean): FluentNavigator = js.native
+  
   /**
     * Gets a Url to navigate back along the crumb trail
     * @param distance Starting at 1, the number of Crumb steps to go back
     * @throws canNavigateBack returns false for this distance
     */
   def getNavigationBackLink(distance: Double): String = js.native
+  
   /**
     * Gets a Url to navigate to a State
     * @param stateKey The key of a State
@@ -73,6 +66,7 @@ class StateNavigator () extends js.Object {
     */
   def getNavigationLink(stateKey: String): String = js.native
   def getNavigationLink(stateKey: String, navigationData: js.Any): String = js.native
+  
   /**
     * Gets a Url to navigate to the current State
     * @param navigationData The NavigationData to be passed to the current
@@ -82,6 +76,12 @@ class StateNavigator () extends js.Object {
     */
   def getRefreshLink(): String = js.native
   def getRefreshLink(navigationData: js.Any): String = js.native
+  
+  /**
+    * Gets the browser Url manager
+    */
+  var historyManager: HistoryManager = js.native
+  
   /**
     * Navigates to a State
     * @param stateKey The key of a State
@@ -94,6 +94,7 @@ class StateNavigator () extends js.Object {
     */
   def navigate(stateKey: String): Unit = js.native
   def navigate(stateKey: String, navigationData: js.Any): Unit = js.native
+  
   /**
     * Navigates back along the crumb trail
     * @param distance Starting at 1, the number of Crumb steps to go back
@@ -108,6 +109,7 @@ class StateNavigator () extends js.Object {
   def navigateBack_none(distance: Double, historyAction: none): Unit = js.native
   @JSName("navigateBack")
   def navigateBack_replace(distance: Double, historyAction: replace): Unit = js.native
+  
   /**
     * Navigates to the url
     * @param url The target location
@@ -308,6 +310,7 @@ class StateNavigator () extends js.Object {
     suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
     currentContext: StateContext
   ): Unit = js.native
+  
   @JSName("navigate")
   def navigate_add(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: add): Unit = js.native
   @JSName("navigate")
@@ -320,6 +323,7 @@ class StateNavigator () extends js.Object {
   def navigate_replace(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: replace): Unit = js.native
   @JSName("navigate")
   def navigate_replace(stateKey: String, navigationData: js.Any, historyAction: replace): Unit = js.native
+  
   /**
     * Unregisters a before navigate event listener
     * @param handler The before navigate event listener
@@ -334,6 +338,7 @@ class StateNavigator () extends js.Object {
       Boolean
     ]
   ): Unit = js.native
+  
   /**
     * Unregisters a navigate event listener
     * @param handler The navigate event listener
@@ -348,6 +353,7 @@ class StateNavigator () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Registers a before navigate event listener
     * @param handler The before navigate event listener
@@ -362,6 +368,7 @@ class StateNavigator () extends js.Object {
       Boolean
     ]
   ): Unit = js.native
+  
   /**
     * Registers a navigate event listener
     * @param handler The navigate event listener
@@ -376,11 +383,13 @@ class StateNavigator () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Parses the url out into State and Navigation Data
     * @param url The url to parse
     */
   def parseLink(url: String): Crumbs = js.native
+  
   /**
     * Navigates to the current State
     * @param navigationData The NavigationData to be passed to the current
@@ -403,11 +412,21 @@ class StateNavigator () extends js.Object {
   def refresh_replace(navigationData: js.UndefOr[scala.Nothing], historyAction: replace): Unit = js.native
   @JSName("refresh")
   def refresh_replace(navigationData: js.Any, historyAction: replace): Unit = js.native
+  
   /**
     * Navigates to the passed in url
     * @param url The url to navigate to
     */
   def start(): Unit = js.native
   def start(url: String): Unit = js.native
+  
+  /**
+    * Provides access to context sensitive navigation information
+    */
+  var stateContext: StateContext = js.native
+  
+  /**
+    * Gets a list of States
+    */
+  var states: StringDictionary[State] = js.native
 }
-

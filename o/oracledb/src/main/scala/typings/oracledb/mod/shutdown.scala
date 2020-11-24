@@ -3,11 +3,12 @@ package typings.oracledb.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oracledb", "shutdown")
 @js.native
 object shutdown extends js.Object {
+  
   /**
     * This is the simplified form of connection.shutdown() used for shutting down a database instance. It accepts connection
     * credentials and shuts the database instance completely down.
@@ -22,4 +23,3 @@ object shutdown extends js.Object {
   def apply(creds: DBCredentials, mode: Double): js.Promise[Unit] = js.native
   def apply(creds: DBCredentials, mode: Double, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

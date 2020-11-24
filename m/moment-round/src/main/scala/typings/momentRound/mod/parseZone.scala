@@ -5,11 +5,12 @@ import typings.moment.mod.MomentFormatSpecification
 import typings.moment.mod.MomentInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("moment-round", "parseZone")
 @js.native
 object parseZone extends js.Object {
+  
   def apply(): Moment = js.native
   def apply(
     inp: js.UndefOr[MomentInput],
@@ -28,4 +29,3 @@ object parseZone extends js.Object {
   def apply(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
   def apply(inp: MomentInput): Moment = js.native
 }
-

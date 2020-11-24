@@ -3,11 +3,12 @@ package typings.samchon
 import typings.samchon.invokeMod.Invoke
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/slave", JSImport.Namespace)
 @js.native
 object slaveMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -59,6 +60,4 @@ object slaveMod extends js.Object {
     */
   abstract class SlaveSystem ()
     extends typings.samchon.slaveSystemMod.SlaveSystem
-  
 }
-

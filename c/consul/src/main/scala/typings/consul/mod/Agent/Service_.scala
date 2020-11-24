@@ -8,11 +8,13 @@ import typings.consul.mod.Consul
 import typings.consul.mod.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Service_ extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Deregister a local service
     */
@@ -29,6 +31,7 @@ trait Service_ extends js.Object {
     * Deregister a local service
     */
   def deregister[TData](opts: DeregisterOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the services local agent is managing
     */
@@ -42,6 +45,7 @@ trait Service_ extends js.Object {
     * Returns the services local agent is managing
     */
   def list[TData](opts: ListOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Manages node maintenance mode
     */
@@ -50,6 +54,7 @@ trait Service_ extends js.Object {
     * Manages node maintenance mode
     */
   def maintenance[TData](opts: typings.consul.mod.Agent.Service.MaintenanceOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Registers a new local service
     */
@@ -67,4 +72,3 @@ trait Service_ extends js.Object {
     */
   def register[TData](opts: RegisterOptions, callback: Callback[TData]): Unit = js.native
 }
-

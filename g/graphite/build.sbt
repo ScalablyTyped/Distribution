@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphite"
-version := "0.1-dt-20200206Z-6dfd7f"
+version := "0.1-dt-20200206Z-5206cd"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

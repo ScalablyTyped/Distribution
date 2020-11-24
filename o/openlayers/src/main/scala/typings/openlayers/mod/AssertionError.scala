@@ -3,7 +3,7 @@ package typings.openlayers.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "AssertionError")
 @js.native
@@ -15,6 +15,7 @@ class AssertionError protected () extends Error {
     * @param code Error code.
     */
   def this(code: Double) = this()
+  
   /**
     * Error code. The meaning of the code can be found on
     * {@link http://openlayers.org/en/latest/errors.html} (replace `latest` with
@@ -24,4 +25,3 @@ class AssertionError protected () extends Error {
     */
   var code: Double = js.native
 }
-

@@ -10,9 +10,9 @@ Simple webpack plugin that generates VERSION and COMMITHASH files during build
 | ------------------ | :-------------: |
 | Full name          | git-revision-webpack-plugin |
 | Keywords           | git, git-describe, plugin, version, webpack |
-| # releases         | 6 |
-| # dependents       | 24 |
-| # downloads        | 2667682 |
+| # releases         | 4 |
+| # dependents       | 31 |
+| # downloads        | 4514347 |
 | # stars            | 5 |
 
 ## Links

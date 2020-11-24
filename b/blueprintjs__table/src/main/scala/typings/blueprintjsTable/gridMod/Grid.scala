@@ -5,7 +5,7 @@ import typings.blueprintjsTable.rectMod.Rect
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid")
 @js.native
@@ -55,16 +55,15 @@ class Grid protected () extends js.Object {
     ghostHeight: Double,
     ghostWidth: Double
   ) = this()
+  
   var bleed: js.Any = js.native
+  
   var columnWidths: js.Any = js.native
+  
   var cumulativeColumnWidths: js.Any = js.native
+  
   var cumulativeRowHeights: js.Any = js.native
-  var getIndicesInInterval: js.Any = js.native
-  var ghostHeight: js.Any = js.native
-  var ghostWidth: js.Any = js.native
-  var numCols: Double = js.native
-  var numRows: Double = js.native
-  var rowHeights: js.Any = js.native
+  
   /**
     * Returns the `Rect` bounds of a cell in scrollpane client space.
     *
@@ -77,6 +76,7 @@ class Grid protected () extends js.Object {
     * at, e.g., 100,0.
     */
   def getCellRect(rowIndex: Double, columnIndex: Double): Rect = js.native
+  
   /**
     * Returns the start and end indices of columns that intersect with the
     * given `Rect` argument.
@@ -85,15 +85,22 @@ class Grid protected () extends js.Object {
   def getColumnIndicesInRect(rect: Rect, includeGhostCells: js.UndefOr[scala.Nothing], limit: Double): IColumnIndices = js.native
   def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean): IColumnIndices = js.native
   def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IColumnIndices = js.native
+  
   /**
     * Returns the `Rect` with the base coordinate and width of the specified column.
     */
   def getColumnRect(columnIndex: Double): Rect = js.native
+  
   def getCumulativeHeightAt(index: Double): Double = js.native
+  
   def getCumulativeHeightBefore(index: Double): Double = js.native
+  
   def getCumulativeWidthAt(index: Double): Double = js.native
+  
   def getCumulativeWidthBefore(index: Double): Double = js.native
+  
   def getExtremaClasses(rowIndex: Double, columnIndex: Double, rowEnd: Double, columnEnd: Double): js.Array[String] = js.native
+  
   /**
     * Returns the `Rect` bounds of a cell in scrollpane client space.
     *
@@ -102,15 +109,21 @@ class Grid protected () extends js.Object {
     * row/column, we use the default width/height.
     */
   def getGhostCellRect(rowIndex: Double, columnIndex: Double): Rect = js.native
+  
   /**
     * Returns the total width of the entire grid
     */
   def getHeight(): Double = js.native
+  
+  var getIndicesInInterval: js.Any = js.native
+  
   /**
     * Returns the `Rect` bounds of entire grid
     */
   def getRect(): Rect = js.native
+  
   def getRegionStyle(region: IRegion): CSSProperties = js.native
+  
   /**
     * Returns the start and end indices of rows that intersect with the given
     * `Rect` argument.
@@ -119,16 +132,25 @@ class Grid protected () extends js.Object {
   def getRowIndicesInRect(rect: Rect, includeGhostCells: js.UndefOr[scala.Nothing], limit: Double): IRowIndices = js.native
   def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean): IRowIndices = js.native
   def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IRowIndices = js.native
+  
   /**
     * Returns the `Rect` with the base coordinate and height of the specified row.
     */
   def getRowRect(rowIndex: Double): Rect = js.native
+  
   /**
     * Returns the total width of the entire grid
     */
   def getWidth(): Double = js.native
+  
+  var ghostHeight: js.Any = js.native
+  
+  var ghostWidth: js.Any = js.native
+  
   def isGhostColumn(columnIndex: Double): Boolean = js.native
+  
   def isGhostIndex(rowIndex: Double, columnIndex: Double): Boolean = js.native
+  
   /**
     * Maps each cell that intersects with the given `Rect` argument. The
     * indices of iteration are extended in both directions by the integer
@@ -140,28 +162,39 @@ class Grid protected () extends js.Object {
     * iteration of intersecting cells.
     */
   def mapCellsInRect[T](rect: Rect, callback: ICellMapper[T]): js.Array[T] = js.native
+  
   /**
     * Maps each column that intersects with the given `Rect` argument.
     *
     * See Grid.mapCellsInRect for more details.
     */
   def mapColumnsInRect[T](rect: Rect, callback: IColumnMapper[T]): js.Array[T] = js.native
+  
   /**
     * Maps each row that intersects with the given `Rect` argument.
     *
     * See Grid.mapCellsInRect for more details.
     */
   def mapRowsInRect[T](rect: Rect, callback: IRowMapper[T]): js.Array[T] = js.native
+  
+  var numCols: Double = js.native
+  
+  var numRows: Double = js.native
+  
+  var rowHeights: js.Any = js.native
 }
-
 /* static members */
 @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid")
 @js.native
 object Grid extends js.Object {
+  
   var DEFAULT_BLEED: Double = js.native
+  
   var DEFAULT_GHOST_HEIGHT: Double = js.native
+  
   var DEFAULT_GHOST_WIDTH: Double = js.native
+  
   var DEFAULT_MAX_COLUMNS: Double = js.native
+  
   var DEFAULT_MAX_ROWS: Double = js.native
 }
-

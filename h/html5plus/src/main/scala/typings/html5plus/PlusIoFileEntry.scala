@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 文件系统中的文件对象，用于管理特定的本地文件
@@ -11,36 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusIoFileEntry extends js.Object {
-  /**
-    * 文件操作对象所属的文件系统对象，参考FileSystem
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var fileSystem: js.UndefOr[PlusIoFileSystem] = js.native
-  /**
-    * 文件操作对象的完整路径，文件系统的绝对路径
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var fullPath: js.UndefOr[String] = js.native
-  /**
-    * 文件操作对象是否为目录，FileEntry对象固定其值为false
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var isDirectory: js.UndefOr[Boolean] = js.native
-  /**
-    * 文件操作对象的是否为文件，FileEntry对象固定其值为true
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var isFile: js.UndefOr[Boolean] = js.native
-  /**
-    * 文件操作对象的名称，不包括路径
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var name: js.UndefOr[String] = js.native
+  
   /**
     * 拷贝文件
     * 以下情况拷贝文件将会导致失败：
@@ -122,6 +93,7 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 获取文件关联的写文件操作对象FileWriter
     * 获取写文件操作对象成功通过succesCB回调返回，失败则通过errorCB返回。
@@ -135,6 +107,7 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoFileWriter, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 获取文件数据对象
     * 获取文件数据对象成功通过succesCB回调返回，失败则通过errorCB返回。
@@ -148,6 +121,21 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoFile, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
+  /**
+    * 文件操作对象所属的文件系统对象，参考FileSystem
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var fileSystem: js.UndefOr[PlusIoFileSystem] = js.native
+  
+  /**
+    * 文件操作对象的完整路径，文件系统的绝对路径
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var fullPath: js.UndefOr[String] = js.native
+  
   /**
     * 获取文件的属性信息
     * 用于获取文件的属性信息。
@@ -162,6 +150,7 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoMetadata, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 获取文件所属的父目录
     * 获取父目录成功通过succesCB回调返回，失败则通过errorCB返回。
@@ -175,6 +164,21 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
+  /**
+    * 文件操作对象是否为目录，FileEntry对象固定其值为false
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var isDirectory: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * 文件操作对象的是否为文件，FileEntry对象固定其值为true
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var isFile: js.UndefOr[Boolean] = js.native
+  
   /**
     * 移动文件
     * 以下情况移动目录将会导致失败：
@@ -256,6 +260,14 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
+  /**
+    * 文件操作对象的名称，不包括路径
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var name: js.UndefOr[String] = js.native
+  
   /**
     * 删除文件
     * 删除文件成功通过succesCB回调返回，失败则通过errorCB返回。
@@ -269,12 +281,14 @@ trait PlusIoFileEntry extends js.Object {
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 获取文件路径转换为本地路径URL地址
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def toLocalURL(): String = js.native
+  
   /**
     * 获取文件路径转换为网络路径URL地址
     * URL地址格式为以“http://localhost:13131/”开头的网络路径。
@@ -282,6 +296,7 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def toRemoteURL(): String = js.native
+  
   /**
     * 获取文件路径转换为URL地址
     * 
@@ -289,4 +304,3 @@ trait PlusIoFileEntry extends js.Object {
     */
   def toURL(): String = js.native
 }
-

@@ -11,8 +11,8 @@ Babel Types is a Lodash-esque utility library for AST nodes
 | Full name          | babel-types |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 733 |
-| # downloads        | 278706091 |
+| # dependents       | 777 |
+| # downloads        | 272220250 |
 | # stars            | 5 |
 
 ## Links

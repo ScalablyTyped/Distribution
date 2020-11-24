@@ -5,7 +5,7 @@ import typings.bigJs.mod.BigSource
 import typings.bigJs.mod.global.BigJs.BigConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Big")
 @js.native
@@ -23,8 +23,6 @@ class Big protected ()
     */
   def this(value: BigSource) = this()
 }
-
 @JSGlobal("Big")
 @js.native
 object Big extends TopLevel[BigConstructor]
-

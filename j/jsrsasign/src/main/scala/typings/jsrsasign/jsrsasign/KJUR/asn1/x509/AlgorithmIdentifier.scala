@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AlgorithmIdentifier ASN.1 structure class
@@ -31,8 +31,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AlgorithmIdentifier extends ASN1Object
-
 object AlgorithmIdentifier {
+  
   @scala.inline
   def apply(
     getEncodedHex: () => String,
@@ -49,4 +49,3 @@ object AlgorithmIdentifier {
     __obj.asInstanceOf[AlgorithmIdentifier]
   }
 }
-

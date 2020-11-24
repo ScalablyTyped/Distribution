@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects$Agent$Entitytypes")
 @js.native
 class ResourceProjectsAgentEntitytypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var entities: ResourceProjectsAgentEntitytypesEntities = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.batchDelete
     * @desc Deletes entity types in the specified agent.  Operation <response:
@@ -47,6 +46,7 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.batchUpdate
     * @desc Updates/Creates multiple entity types in the specified agent.
@@ -80,6 +80,9 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.create
     * @desc Creates an entity type in the specified agent.
@@ -113,6 +116,7 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2EntityType]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.delete
     * @desc Deletes the specified entity type.
@@ -144,6 +148,9 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var entities: ResourceProjectsAgentEntitytypesEntities = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.get
     * @desc Retrieves the specified entity type.
@@ -176,6 +183,7 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2EntityType]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.list
     * @desc Returns the list of all entity types in the specified agent.
@@ -210,6 +218,7 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListEntityTypesResponse]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.patch
     * @desc Updates the specified entity type.
@@ -245,4 +254,3 @@ class ResourceProjectsAgentEntitytypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2EntityType]
   ): Unit = js.native
 }
-

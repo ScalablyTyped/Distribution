@@ -10,9 +10,9 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLParagraphElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Paragraph")
+@JSImport("grommet", "Paragraph")
 @js.native
 object Paragraph extends TopLevel[
       FC[
@@ -22,4 +22,3 @@ object Paragraph extends TopLevel[
         ])
       ]
     ]
-

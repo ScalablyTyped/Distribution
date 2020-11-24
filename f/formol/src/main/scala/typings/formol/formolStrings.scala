@@ -2,13 +2,12 @@ package typings.formol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formolStrings {
-  @js.native
-  sealed trait FormolProps extends js.Object
   
   @scala.inline
   def FormolProps: FormolProps = "FormolProps".asInstanceOf[FormolProps]
+  @js.native
+  sealed trait FormolProps extends js.Object
 }
-

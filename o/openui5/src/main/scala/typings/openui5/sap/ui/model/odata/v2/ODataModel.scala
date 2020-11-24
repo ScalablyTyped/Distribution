@@ -6,10 +6,11 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ODataModel extends Model {
+  
   /**
     * Adds (a) new URL(s) to the be parsed for OData annotations, which are then merged into the
     * annotations objectwhich can be retrieved by calling the getServiceAnnotations()-method. If a
@@ -25,6 +26,7 @@ trait ODataModel extends Model {
     */
   def addAnnotationUrl(vUrl: String): JQueryPromise[_] = js.native
   def addAnnotationUrl(vUrl: js.Array[String]): JQueryPromise[_] = js.native
+  
   /**
     * Adds new xml content to be parsed for OData annotations, which are then merged into the annotations
     * object whichcan be retrieved by calling the getServiceAnnotations()-method.
@@ -35,6 +37,7 @@ trait ODataModel extends Model {
     */
   def addAnnotationXML(sXMLContent: String): JQueryPromise[_] = js.native
   def addAnnotationXML(sXMLContent: String, bSuppressEvents: Boolean): JQueryPromise[_] = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'annotationsFailed' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -47,6 +50,7 @@ trait ODataModel extends Model {
     */
   def attachAnnotationsFailed(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachAnnotationsFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'annotationsLoaded' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -59,6 +63,7 @@ trait ODataModel extends Model {
     */
   def attachAnnotationsLoaded(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachAnnotationsLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'batchRequestCompleted' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -71,6 +76,7 @@ trait ODataModel extends Model {
     */
   def attachBatchRequestCompleted(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachBatchRequestCompleted(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'batchRequestFailed' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.<br/>
@@ -82,6 +88,7 @@ trait ODataModel extends Model {
     */
   def attachBatchRequestFailed(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachBatchRequestFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'requestSent' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -94,6 +101,7 @@ trait ODataModel extends Model {
     */
   def attachBatchRequestSent(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachBatchRequestSent(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'metadataFailed' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -106,6 +114,7 @@ trait ODataModel extends Model {
     */
   def attachMetadataFailed(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachMetadataFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'metadataLoaded' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -118,6 +127,7 @@ trait ODataModel extends Model {
     */
   def attachMetadataLoaded(oData: js.Any, fnFunction: js.Any): ODataModel = js.native
   def attachMetadataLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Trigger a request to the function import odata service that was specified in the model
     * constructor.If the ReturnType of the function import is either an EntityType or a collection of
@@ -132,6 +142,7 @@ trait ODataModel extends Model {
     */
   def callFunction(sFunctionName: String): js.Any = js.native
   def callFunction(sFunctionName: String, mParameters: js.Any): js.Any = js.native
+  
   /**
     * Trigger a POST request to the odata service that was specified in the model constructor. Please note
     * that deep creates are not supportedand may not work.
@@ -143,6 +154,7 @@ trait ODataModel extends Model {
     */
   def create(sPath: String, oData: js.Any): js.Any = js.native
   def create(sPath: String, oData: js.Any, mParameters: js.Any): js.Any = js.native
+  
   /**
     * Creates a new entry object which is described by the metadata of the entity type of thespecified
     * sPath Name. A context object is returned which can be used to bindagainst the newly created
@@ -160,6 +172,7 @@ trait ODataModel extends Model {
     * @returns oContext A Context object that point to the new created entry.
     */
   def createEntry(sPath: String, mParameters: js.Any): Context = js.native
+  
   /**
     * Creates the key from the given collection name and property map. Please make sure that the metadata
     * document is loaded before using this function.
@@ -168,11 +181,13 @@ trait ODataModel extends Model {
     * @returns [sKey] key of the entry
     */
   def createKey(sCollection: String, oKeyProperties: js.Any): String = js.native
+  
   /**
     * Deletes a created entry from the request queue and the model.
     * @param oContext The context object pointing to the created entry
     */
   def deleteCreatedEntry(oContext: Context): Unit = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'annotationsFailed' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.The passed function and listener object must match the
@@ -182,6 +197,7 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachAnnotationsFailed(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'annotationsLoaded' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.
@@ -190,6 +206,7 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachAnnotationsLoaded(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'batchRequestCompleted' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.The passed function and listener object must match the
@@ -199,6 +216,7 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachBatchRequestCompleted(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'batchRequestFailed' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.<br/>The passed function and listener object must
@@ -208,6 +226,7 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachBatchRequestFailed(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'batchRequestSent' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.The passed function and listener object must match the
@@ -217,6 +236,7 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachBatchRequestSent(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'metadataFailed' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.The passed function and listener object must match the
@@ -226,6 +246,7 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachMetadataFailed(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'metadataLoaded' event of this
     * <code>sap.ui.model.odata.v2.ODataModel</code>.The passed function and listener object must match the
@@ -235,64 +256,75 @@ trait ODataModel extends Model {
     * @returns <code>this</code> to allow method chaining
     */
   def detachMetadataLoaded(fnFunction: js.Any, oListener: js.Any): ODataModel = js.native
+  
   /**
     * Fire event annotationsFailed to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireAnnotationsFailed(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Fire event annotationsLoaded to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireAnnotationsLoaded(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Fire event batchRequestCompleted to attached listeners.
     * @param mArguments parameters to add to the fired event
     * @returns <code>this</code> to allow method chaining
     */
   def fireBatchRequestCompleted(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Fire event batchRequestFailed to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireBatchRequestFailed(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Fire event batchRequestSent to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireBatchRequestSent(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Fire event metadataFailed to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireMetadataFailed(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Fire event metadataLoaded to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireMetadataLoaded(mArguments: js.Any): ODataModel = js.native
+  
   /**
     * Force the update on the server of an entity by setting its ETag to '*'.ETag handling must be active
     * so the force update will work.
     * @param sKey The key to an Entity e.g.: Customer(4711)
     */
   def forceEntityUpdate(sKey: String): Unit = js.native
+  
   /**
     * Returns the definition of batchGroups per EntityType for TwoWay changes
     * @returns mChangeBatchGroups Definition of bactchGRoups for "TwoWay" changes
     */
   def getChangeBatchGroups(): js.Any = js.native
+  
   /**
     * Returns the definition of groups per EntityType for TwoWay changes
     * @returns mChangeGroups Definition of Groups for "TwoWay" changes
     */
   def getChangeGroups(): js.Any = js.native
+  
   /**
     * Return requested data as object if the data has already been loaded and stored in the model.
     * @param sPath A string containing the path to the data object that should be returned.
@@ -309,22 +341,26 @@ trait ODataModel extends Model {
   def getData(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getData(sPath: String, oContext: js.Any): js.Any = js.native
   def getData(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
+  
   /**
     * Returns the default count mode for retrieving the count of collections
     * @since 1.20
     * @returns sCountMode returns defaultCountMode
     */
   def getDefaultCountMode(): TypeofCountMode = js.native
+  
   /**
     * Returns the array of batchGroupIds that are set as deferred
     * @returns aGroupIds The array of deferred batchGroupIds
     */
   def getDeferredBatchGroups(): js.Array[_] = js.native
+  
   /**
     * Returns the array of GroupIds that are set as deferred
     * @returns aGroupIds The array of deferred GroupIds
     */
   def getDeferredGroups(): js.Array[_] = js.native
+  
   /**
     * Returns the ETag for a given binding path/context or data object
     * @param sPath The binding path
@@ -336,11 +372,13 @@ trait ODataModel extends Model {
   def getETag(sPath: String, oContext: js.UndefOr[scala.Nothing], oEntity: js.Any): String = js.native
   def getETag(sPath: String, oContext: Context): String = js.native
   def getETag(sPath: String, oContext: Context, oEntity: js.Any): String = js.native
+  
   /**
     * Returns all headers and custom headers which are stored in the OData model.
     * @returns the header map
     */
   def getHeaders(): js.Any = js.native
+  
   /**
     * Returns the key part from the entry URI or the given context or object
     * @param vValue A string representation of an URI, the context or entry object
@@ -349,14 +387,17 @@ trait ODataModel extends Model {
   def getKey(vValue: String): String = js.native
   def getKey(vValue: js.Any): String = js.native
   def getKey(vValue: Context): String = js.native
+  
   def getProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getProperty(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
+  
   /**
     * Returns the current security token. If the token has not been requested from the server it will be
     * requested first.
     * @returns the CSRF security token
     */
   def getSecurityToken(): String = js.native
+  
   /**
     * Return the annotation object. Please note that the metadata is loaded asynchronously and this
     * function might return undefined because themetadata has not been loaded yet.In this case attach to
@@ -365,6 +406,7 @@ trait ODataModel extends Model {
     * @returns metdata object
     */
   def getServiceAnnotations(): js.Any = js.native
+  
   /**
     * Return the parsed XML metadata as a Javascript object. Please note that the metadata is loaded
     * asynchronously and this function might return undefined because themetadata has not been loaded
@@ -373,22 +415,26 @@ trait ODataModel extends Model {
     * @returns metdata object
     */
   def getServiceMetadata(): js.Any = js.native
+  
   /**
     * Checks if there exist pending changes in the model created by the setProperty method.
     * @returns true/false
     */
   def hasPendingChanges(): Boolean = js.native
+  
   /**
     * Checks if there are pending requests, either ongoing or sequential
     * @returns true/false
     */
   def hasPendingRequests(): Boolean = js.native
+  
   /**
     * Checks whether metadata loading has failed in the past.
     * @since 1.38
     * @returns returns whether metadata request has failed
     */
   def isMetadataLoadingFailed(): Boolean = js.native
+  
   /**
     * Returns a promise for the loaded state of the metadata. The promise won't get rejected in case the
     * metadata loading failed butis only resolved if the metadata is loaded successfully.If
@@ -399,6 +445,7 @@ trait ODataModel extends Model {
     * @returns returns a promise on metadata loaded state
     */
   def metadataLoaded(): JQueryPromise[_] = js.native
+  
   /**
     * Trigger a GET request to the odata service that was specified in the model constructor.The data will
     * be stored in the model. The requested data is returned with the response.
@@ -409,9 +456,11 @@ trait ODataModel extends Model {
     */
   def read(sPath: String): js.Any = js.native
   def read(sPath: String, mParameters: js.Any): js.Any = js.native
+  
   def refresh(bForceUpdate: Boolean, bRemoveData: js.UndefOr[scala.Nothing], sGroupId: String): Unit = js.native
   def refresh(bForceUpdate: Boolean, bRemoveData: Boolean): Unit = js.native
   def refresh(bForceUpdate: Boolean, bRemoveData: Boolean, sGroupId: String): Unit = js.native
+  
   /**
     * Refreshes the metadata for model, e.g. in case the request for metadata has failed.Returns a new
     * promise which can be resolved or rejected depending on the metadata loading state.
@@ -419,6 +468,7 @@ trait ODataModel extends Model {
     * currently refreshed.
     */
   def refreshMetadata(): JQueryPromise[_] = js.native
+  
   /**
     * refresh XSRF token by performing a GET request against the service root URL.
     * @param fnSuccess a callback function which is called when the data has                                been
@@ -429,6 +479,7 @@ trait ODataModel extends Model {
     */
   def refreshSecurityToken(fnSuccess: js.Any): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any, fnError: js.Any): js.Any = js.native
+  
   /**
     * Trigger a DELETE request to the odata service that was specified in the model constructor.
     * @param sPath A string containing the path to the data that should be removed.        The path is
@@ -438,17 +489,20 @@ trait ODataModel extends Model {
     */
   def remove(sPath: String): js.Any = js.native
   def remove(sPath: String, mParameters: js.Any): js.Any = js.native
+  
   /**
     * Resets the collected changes by the setProperty method.
     * @param aPath Array of paths that should be resetted.                            If no array is passed all changes will be
     * resetted.
     */
   def resetChanges(aPath: js.Array[_]): Unit = js.native
+  
   /**
     * Returns a promise, which will resolve with the security token as soon as it is available
     * @returns the CSRF security token
     */
   def securityTokenAvailable(): JQueryPromise[_] = js.native
+  
   /**
     * Definition of batchGroups per EntityType for "TwoWay" changes
     * @param mGroups A map containing the definition of bacthGroups for TwoWay changes. The Map has
@@ -458,6 +512,7 @@ trait ODataModel extends Model {
     * Defines if every change will get an own changeSet (true)
     */
   def setChangeBatchGroups(mGroups: js.Any): Unit = js.native
+  
   /**
     * Definition of groups per EntityType for "TwoWay" changes
     * @param mGroups A map containing the definition of bacthGroups for TwoWay changes. The Map has
@@ -467,6 +522,7 @@ trait ODataModel extends Model {
     * will get an own changeSet (true)
     */
   def setChangeGroups(mGroups: js.Any): Unit = js.native
+  
   /**
     * Sets the default way to retrieve the count of collections in this model.Count can be determined
     * either by sending a separate $count request, including$inlinecount=allpages in data requests, both
@@ -475,18 +531,21 @@ trait ODataModel extends Model {
     * @param sCountMode sets default count mode
     */
   def setDefaultCountMode(sCountMode: TypeofCountMode): Unit = js.native
+  
   /**
     * Setting batch groups as deferred. Requests that belongs to a deferred batch group will be sent
     * manuallyvia a submitChanges call.
     * @param aGroupIds Array of batchGroupIds that should be set as deferred
     */
   def setDeferredBatchGroups(aGroupIds: js.Array[_]): Unit = js.native
+  
   /**
     * Setting request groups as deferred. Requests that belongs to a deferred group will be sent
     * manuallyvia a submitChanges call.
     * @param aGroupIds Array of GroupIds that should be set as deferred
     */
   def setDeferredGroups(aGroupIds: js.Array[_]): Unit = js.native
+  
   /**
     * Set custom headers which are provided in a key/value map. These headers are used for requests
     * against the OData backend.Private headers which are set in the ODataModel cannot be modified.These
@@ -497,6 +556,7 @@ trait ODataModel extends Model {
     * @param mHeaders the header name/value map.
     */
   def setHeaders(mHeaders: js.Any): Unit = js.native
+  
   /**
     * Sets a new value for the given property <code>sPropertyName</code> in the model.If the
     * changeBatchGroup for the changed EntityType is set to deferred changes could be submittedwith
@@ -512,21 +572,25 @@ trait ODataModel extends Model {
   def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
+  
   /**
     * Enable/Disable automatic updates of all Bindings after change operations
     * @since 1.16.3
     * @param bRefreshAfterChange Refresh after change
     */
   def setRefreshAfterChange(bRefreshAfterChange: Boolean): Unit = js.native
+  
   /**
     * Enable/Disable XCSRF-Token handling
     * @param bTokenHandling whether to use token handling or not
     */
   def setTokenHandlingEnabled(bTokenHandling: Boolean): Unit = js.native
+  
   /**
     * @param bUseBatch whether the requests should be encapsulated in a batch request
     */
   def setUseBatch(bUseBatch: Boolean): Unit = js.native
+  
   /**
     * Submits the collected changes which were collected by the setProperty method. The update method is
     * defined by the global <code>defaultUpdateMethod</code>parameter which is
@@ -540,6 +604,7 @@ trait ODataModel extends Model {
     * @returns an object which has an <code>abort</code> function to abort the current request or requests
     */
   def submitChanges(mParameters: js.Any): js.Any = js.native
+  
   /**
     * Trigger a PUT/MERGE request to the odata service that was specified in the model constructor.The
     * update method used is defined by the global <code>defaultUpdateMethod</code> parameter which is
@@ -553,6 +618,7 @@ trait ODataModel extends Model {
     */
   def update(sPath: String, oData: js.Any): js.Any = js.native
   def update(sPath: String, oData: js.Any, mParameters: js.Any): js.Any = js.native
+  
   /**
     * update all bindings
     * @param bForceUpdate If set to false an update  will only be done when the value of a binding
@@ -560,4 +626,3 @@ trait ODataModel extends Model {
     */
   def updateBindings(bForceUpdate: Boolean): Unit = js.native
 }
-

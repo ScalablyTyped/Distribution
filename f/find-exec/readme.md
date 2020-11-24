@@ -12,7 +12,7 @@ Finds first available shell command from a list.
 | Keywords           | find, executable, shell, minimalistic, command, line |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 92171 |
+| # downloads        | 94952 |
 | # stars            | 1 |
 
 ## Links

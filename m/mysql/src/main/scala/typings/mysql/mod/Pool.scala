@@ -7,17 +7,18 @@ import typings.mysql.mysqlStrings.error
 import typings.mysql.mysqlStrings.release
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pool extends EscapeFunctions {
-  var config: PoolActualConfig = js.native
-  @JSName("query")
-  var query_Original: QueryFunction = js.native
+  
   def acquireConnection(
     connection: PoolConnection,
     callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, Unit]
   ): Unit = js.native
+  
+  var config: PoolActualConfig = js.native
+  
   /**
     * Close the connection. Any queued data (eg queries) will be sent first. If
     * there are any fatal errors, the connection will be immediately closed.
@@ -25,7 +26,9 @@ trait Pool extends EscapeFunctions {
     */
   def end(): Unit = js.native
   def end(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  
   def getConnection(callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, Unit]): Unit = js.native
+  
   /**
     * Set handler to be run on a certain event.
     */
@@ -64,6 +67,7 @@ trait Pool extends EscapeFunctions {
   // tslint:disable-next-line:unified-signatures
   @JSName("on")
   def on_release(ev: release, callback: js.Function1[/* connection */ PoolConnection, Unit]): Pool = js.native
+  
   def query(options: String): Query = js.native
   def query(options: String, callback: queryCallback): Query = js.native
   def query(options: String, values: js.Any): Query = js.native
@@ -73,6 +77,8 @@ trait Pool extends EscapeFunctions {
   def query(options: QueryOptions, values: js.Any): Query = js.native
   def query(options: QueryOptions, values: js.Any, callback: queryCallback): Query = js.native
   def query(query: Query): Query = js.native
+  @JSName("query")
+  var query_Original: QueryFunction = js.native
+  
   def releaseConnection(connection: PoolConnection): Unit = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies the model of a control used for displaying images stored in a database.
@@ -53,14 +53,17 @@ import scala.scalajs.js.annotation._
 trait DatabaseImageControl
   extends DataAwareControlModel
      with XImageProducerSupplier {
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Color = js.native
+  
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
   var Border: Double = js.native
+  
   /**
     * specifies the color of the border, if present
     *
@@ -68,8 +71,10 @@ trait DatabaseImageControl
     * @since OOo 2.0
     */
   var BorderColor: Double = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /**
     * specifies a graphic to be displayed on the control
     *
@@ -79,21 +84,28 @@ trait DatabaseImageControl
     * @since OOo 2.1
     */
   var Graphic: XGraphic = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /**
     * specifies an URL to an image to use for the control.
     * @see Graphic
     */
   var ImageURL: String = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** indicates if it is possible to change the image being displayed. */
   var ReadOnly: Boolean = js.native
+  
   /** specifies if the image is automatically scaled to the size of the control. */
   var ScaleImage: Boolean = js.native
+  
   /**
     * defines how to scale the image
     *
@@ -103,11 +115,13 @@ trait DatabaseImageControl
     * @since OOo 3.1
     */
   var ScaleMode: Double = js.native
+  
   /**
     * specifies that the control can be reached with the TAB key.
     * @since OOo 1.1.2
     */
   var Tabstop: Boolean = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -115,4 +129,3 @@ trait DatabaseImageControl
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

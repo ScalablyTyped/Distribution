@@ -11,7 +11,7 @@ Cordova Websql Plugin
 | Keywords           | cordova, websql, ecosystem:cordova, cordova-windows8, cordova-windows, cordova-wp8 |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3232 |
+| # downloads        | 3015 |
 | # stars            | 1 |
 
 ## Links

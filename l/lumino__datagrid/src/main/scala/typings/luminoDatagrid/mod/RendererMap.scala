@@ -3,7 +3,7 @@ package typings.luminoDatagrid.mod
 import typings.luminoDatagrid.renderermapMod.RendererMap.Values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid", "RendererMap")
 @js.native
@@ -20,4 +20,3 @@ class RendererMap ()
   def this(values: js.UndefOr[scala.Nothing], fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
   def this(values: Values, fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
 }
-

@@ -11,7 +11,7 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.FULLSTRING
 import typings.tizenCommonWeb.tizenCommonWebStrings.STARTSWITH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AttributeFilterConstructor
@@ -29,4 +29,3 @@ trait AttributeFilterConstructor
       /* matchValue */ js.Any, 
       AttributeFilter
     ]
-

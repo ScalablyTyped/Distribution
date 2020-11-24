@@ -11,8 +11,8 @@ Convert directories to glob compatible strings
 | Full name          | dir-glob |
 | Keywords           | convert, directory, extensions, files, glob |
 | # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 287315854 |
+| # dependents       | 44 |
+| # downloads        | 522785599 |
 | # stars            | 1 |
 
 ## Links

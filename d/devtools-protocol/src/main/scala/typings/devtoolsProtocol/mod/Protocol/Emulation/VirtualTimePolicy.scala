@@ -2,7 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.advance
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.pauseIfNetworkFetchesPending
 */
 trait VirtualTimePolicy extends js.Object
-
 object VirtualTimePolicy {
+  
   @scala.inline
   def advance: typings.devtoolsProtocol.devtoolsProtocolStrings.advance = "advance".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.advance]
+  
   @scala.inline
   def pause: typings.devtoolsProtocol.devtoolsProtocolStrings.pause = "pause".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pause]
+  
   @scala.inline
   def pauseIfNetworkFetchesPending: typings.devtoolsProtocol.devtoolsProtocolStrings.pauseIfNetworkFetchesPending = "pauseIfNetworkFetchesPending".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pauseIfNetworkFetchesPending]
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHandler extends ClassObject {
+  
   /**
     * 
     * @brief 处理一个消息或对象
@@ -22,4 +23,3 @@ trait ClassHandler extends ClassObject {
     */
   def invoke(v: ClassObject): ClassHandler = js.native
 }
-

@@ -5,11 +5,11 @@ import typings.googleapis.v1configurationMod.gamesConfigurationV1configuration.G
 import typings.googleapis.v1configurationMod.gamesConfigurationV1configuration.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn75 extends js.Object {
+  
   def apply(options: Options): Gamesconfiguration = js.native
   def apply(version: v1configuration): Gamesconfiguration = js.native
 }
-

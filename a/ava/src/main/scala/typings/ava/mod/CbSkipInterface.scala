@@ -2,10 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CbSkipInterface[Context] extends js.Object {
+  
   /** Skip this test. */
   def apply(title: String, implementation: CbImplementation[Context]): Unit = js.native
   /** Skip this test. */
@@ -20,4 +21,3 @@ trait CbSkipInterface[Context] extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
 }
-

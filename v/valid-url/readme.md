@@ -10,9 +10,9 @@ URI validation functions
 | ------------------ | :-------------: |
 | Full name          | valid-url |
 | Keywords           | url, validation, check, checker, pattern |
-| # releases         | 1 |
-| # dependents       | 531 |
-| # downloads        | 34388456 |
+| # releases         | 0 |
+| # dependents       | 606 |
+| # downloads        | 61479591 |
 | # stars            | 22 |
 
 ## Links

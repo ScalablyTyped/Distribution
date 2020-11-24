@@ -10,9 +10,9 @@ PouchDB adapter using fruitdown as the data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-fruitdown |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2070 |
+| # downloads        | 1375 |
 | # stars            | 0 |
 
 ## Links

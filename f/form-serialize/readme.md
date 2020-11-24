@@ -10,9 +10,9 @@ serialize html forms
 | ------------------ | :-------------: |
 | Full name          | form-serialize |
 | Keywords           | form, serialize |
-| # releases         | 1 |
-| # dependents       | 92 |
-| # downloads        | 1588933 |
+| # releases         | 0 |
+| # dependents       | 95 |
+| # downloads        | 2343775 |
 | # stars            | 24 |
 
 ## Links

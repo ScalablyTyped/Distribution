@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Regioninstancegroupmanagers")
 @js.native
 class ResourceRegioninstancegroupmanagers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.abandonInstances
     * @desc Flags the specified instances to be immediately removed from the
@@ -122,6 +122,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.applyUpdatesToInstances
     * @desc Apply updates to selected instances the managed instance group.
@@ -156,6 +157,9 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.delete
     * @desc Deletes the specified managed instance group and all of the
@@ -249,6 +253,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.deleteInstances
     * @desc Flags the specified instances in the managed instance group to be
@@ -357,6 +362,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.get
     * @desc Returns all of the details about the specified managed instance
@@ -449,6 +455,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupManager]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.insert
     * @desc Creates a managed instance group using the information that you
@@ -547,6 +554,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.list
     * @desc Retrieves the list of managed instance groups that are contained
@@ -653,6 +661,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegionInstanceGroupManagerList]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.listManagedInstances
     * @desc Lists the instances in the managed instance group and instances
@@ -768,6 +777,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegionInstanceGroupManagersListInstancesResponse]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.patch
     * @desc Updates a managed instance group using the information that you
@@ -873,6 +883,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.recreateInstances
     * @desc Flags the specified instances in the managed instance group to be
@@ -979,6 +990,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.resize
     * @desc Changes the intended size of the managed instance group. If you
@@ -1084,6 +1096,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.setAutoHealingPolicies
     * @desc Modifies the autohealing policy for the instances in this managed
@@ -1183,6 +1196,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.setInstanceTemplate
     * @desc Sets the instance template to use when creating new instances or
@@ -1281,6 +1295,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.setTargetPools
     * @desc Modifies the target pools to which all new instances in this group
@@ -1379,6 +1394,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -1474,6 +1490,7 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroupManagers.update
     * @desc Updates a managed instance group using the information that you
@@ -1578,4 +1595,3 @@ class ResourceRegioninstancegroupmanagers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

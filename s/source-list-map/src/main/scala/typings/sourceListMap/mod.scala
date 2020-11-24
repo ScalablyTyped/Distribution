@@ -5,30 +5,44 @@ import typings.sourceListMap.anon.Map
 import typings.sourceListMap.anon.Sources
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("source-list-map", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = js.native
+  
   @js.native
   class CodeNode protected () extends js.Object {
     def this(generatedCode: String) = this()
-    var generatedCode: String = js.native
+    
     def addGeneratedCode(generatedCode: String): Unit = js.native
+    
+    var generatedCode: String = js.native
+    
     def getGeneratedCode(): String = js.native
+    
     def getMappings(): String = js.native
     def getMappings(mappingsContext: MappingsContext): String = js.native
+    
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
   }
   
   @js.native
   class MappingsContext () extends js.Object {
+    
     var currentOriginalLine: Double = js.native
+    
     var currentSource: Double = js.native
-    var hasSourceContent: Boolean = js.native
-    var sources: js.Array[String] = js.native
-    var sourcesContent: js.Array[String] = js.native
+    
     def ensureSource(source: String, originalSource: String): Double = js.native
+    
+    var hasSourceContent: Boolean = js.native
+    
+    var sources: js.Array[String] = js.native
+    
+    var sourcesContent: js.Array[String] = js.native
   }
   
   @js.native
@@ -57,7 +71,7 @@ object mod extends js.Object {
     def this(generatedCode: SourceListMap, source: String, originalSource: String) = this()
     def this(generatedCode: SourceNode, source: js.UndefOr[scala.Nothing], originalSource: String) = this()
     def this(generatedCode: SourceNode, source: String, originalSource: String) = this()
-    var children: js.Array[SourceNode | CodeNode] = js.native
+    
     def add(generatedCode: String): Unit = js.native
     def add(generatedCode: String, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def add(generatedCode: String, source: String): Unit = js.native
@@ -74,7 +88,11 @@ object mod extends js.Object {
     def add(generatedCode: SourceNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def add(generatedCode: SourceNode, source: String): Unit = js.native
     def add(generatedCode: SourceNode, source: String, originalSource: String): Unit = js.native
+    
+    var children: js.Array[SourceNode | CodeNode] = js.native
+    
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
+    
     def prepend(generatedCode: CodeNode): Unit = js.native
     def prepend(generatedCode: CodeNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def prepend(generatedCode: CodeNode, source: String): Unit = js.native
@@ -87,6 +105,7 @@ object mod extends js.Object {
     def prepend(generatedCode: SourceNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def prepend(generatedCode: SourceNode, source: String): Unit = js.native
     def prepend(generatedCode: SourceNode, source: String, originalSource: String): Unit = js.native
+    
     def toStringWithSourceMap(options: File): Map = js.native
   }
   
@@ -94,15 +113,19 @@ object mod extends js.Object {
   class SourceNode protected () extends js.Object {
     def this(generatedCode: String, source: String, originalSource: String) = this()
     def this(generatedCode: String, source: String, originalSource: String, startingLine: Double) = this()
+    
     var generatedCode: String = js.native
-    var originalSource: String = js.native
-    var source: String = js.native
-    var startingLine: Double = js.native
+    
     def getGeneratedCode(): String = js.native
+    
     def getMappings(mappingsContext: MappingsContext): String = js.native
+    
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
+    
+    var originalSource: String = js.native
+    
+    var source: String = js.native
+    
+    var startingLine: Double = js.native
   }
-  
-  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = js.native
 }
-

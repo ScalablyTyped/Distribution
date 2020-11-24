@@ -2,7 +2,7 @@ package typings.systemLogger.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("system-logger", "Logger")
 @js.native
@@ -30,9 +30,9 @@ class Logger () extends js.Object {
     fileConfig: FileConfiguration,
     sourceConfig: SourcesConfiguration
   ) = this()
+  
   def log(level: String, message: String): Unit = js.native
   def log(level: String, message: String, optional: js.Any): Unit = js.native
   def log(level: level, message: String): Unit = js.native
   def log(level: level, message: String, optional: js.Any): Unit = js.native
 }
-

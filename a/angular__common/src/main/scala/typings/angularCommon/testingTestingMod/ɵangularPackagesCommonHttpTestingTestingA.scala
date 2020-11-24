@@ -7,21 +7,20 @@ import typings.angularCommon.httpMod.HttpRequest
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCommon.testingTestingMod.HttpTestingController because Inheritance from two classes. Inlined `match`, `match`, `match`, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, verify, verify */ @JSImport("@angular/common/http/testing/testing", "\u0275angular_packages_common_http_testing_testing_a")
 @js.native
 class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
+  
   /**
     * Helper function to search for requests in the list of open requests.
     */
   var _match: js.Any = js.native
+  
   var descriptionFromMatcher: js.Any = js.native
-  /**
-    * List of pending requests which have not yet been expected.
-    */
-  var open: js.Any = js.native
+  
   /**
     * Expect that no outstanding requests match the given matcher, and throw an error
     * if any do.
@@ -56,6 +55,7 @@ class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
     */
   def expectNone(`match`: RequestMatch): Unit = js.native
   def expectNone(`match`: RequestMatch, description: String): Unit = js.native
+  
   /**
     * Expect that a single outstanding request matches the given matcher, and return
     * it.
@@ -97,10 +97,12 @@ class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
     */
   def expectOne(`match`: RequestMatch): TestRequest = js.native
   def expectOne(`match`: RequestMatch, description: String): TestRequest = js.native
+  
   /**
     * Handle an incoming request by queueing it in the list of open requests.
     */
   def handle(req: HttpRequest[_]): Observable_[HttpEvent[_]] = js.native
+  
   /**
     * Search for requests in the list of open requests, and return all that match
     * without asserting anything about the number of matches.
@@ -111,6 +113,12 @@ class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
   def `match`(`match`: String): js.Array[TestRequest] = js.native
   def `match`(`match`: js.Function1[/* req */ HttpRequest[_], Boolean]): js.Array[TestRequest] = js.native
   def `match`(`match`: RequestMatch): js.Array[TestRequest] = js.native
+  
+  /**
+    * List of pending requests which have not yet been expected.
+    */
+  var open: js.Any = js.native
+  
   /**
     * Validate that there are no outstanding requests.
     */
@@ -126,4 +134,3 @@ class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
   def verify(): Unit = js.native
   def verify(opts: IgnoreCancelled): Unit = js.native
 }
-

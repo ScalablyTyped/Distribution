@@ -5,9 +5,136 @@ import typings.ansiFragments.fixedMod.Bias
 import typings.ansiFragments.modifierMod.AnsiModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ansiFragmentsStrings {
+  
+  @scala.inline
+  def bgBlack: bgBlack = "bgBlack".asInstanceOf[bgBlack]
+  
+  @scala.inline
+  def bgBlue: bgBlue = "bgBlue".asInstanceOf[bgBlue]
+  
+  @scala.inline
+  def bgBrightBlack: bgBrightBlack = "bgBrightBlack".asInstanceOf[bgBrightBlack]
+  
+  @scala.inline
+  def bgBrightBlue: bgBrightBlue = "bgBrightBlue".asInstanceOf[bgBrightBlue]
+  
+  @scala.inline
+  def bgBrightCyan: bgBrightCyan = "bgBrightCyan".asInstanceOf[bgBrightCyan]
+  
+  @scala.inline
+  def bgBrightGreen: bgBrightGreen = "bgBrightGreen".asInstanceOf[bgBrightGreen]
+  
+  @scala.inline
+  def bgBrightMagenta: bgBrightMagenta = "bgBrightMagenta".asInstanceOf[bgBrightMagenta]
+  
+  @scala.inline
+  def bgBrightRed: bgBrightRed = "bgBrightRed".asInstanceOf[bgBrightRed]
+  
+  @scala.inline
+  def bgBrightWhite: bgBrightWhite = "bgBrightWhite".asInstanceOf[bgBrightWhite]
+  
+  @scala.inline
+  def bgBrightYellow: bgBrightYellow = "bgBrightYellow".asInstanceOf[bgBrightYellow]
+  
+  @scala.inline
+  def bgCyan: bgCyan = "bgCyan".asInstanceOf[bgCyan]
+  
+  @scala.inline
+  def bgGreen: bgGreen = "bgGreen".asInstanceOf[bgGreen]
+  
+  @scala.inline
+  def bgMagenta: bgMagenta = "bgMagenta".asInstanceOf[bgMagenta]
+  
+  @scala.inline
+  def bgRed: bgRed = "bgRed".asInstanceOf[bgRed]
+  
+  @scala.inline
+  def bgWhite: bgWhite = "bgWhite".asInstanceOf[bgWhite]
+  
+  @scala.inline
+  def bgYellow: bgYellow = "bgYellow".asInstanceOf[bgYellow]
+  
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
+  
+  @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
+  
+  @scala.inline
+  def brightBlack: brightBlack = "brightBlack".asInstanceOf[brightBlack]
+  
+  @scala.inline
+  def brightBlue: brightBlue = "brightBlue".asInstanceOf[brightBlue]
+  
+  @scala.inline
+  def brightCyan: brightCyan = "brightCyan".asInstanceOf[brightCyan]
+  
+  @scala.inline
+  def brightGreen: brightGreen = "brightGreen".asInstanceOf[brightGreen]
+  
+  @scala.inline
+  def brightMagenta: brightMagenta = "brightMagenta".asInstanceOf[brightMagenta]
+  
+  @scala.inline
+  def brightRed: brightRed = "brightRed".asInstanceOf[brightRed]
+  
+  @scala.inline
+  def brightWhite: brightWhite = "brightWhite".asInstanceOf[brightWhite]
+  
+  @scala.inline
+  def brightYellow: brightYellow = "brightYellow".asInstanceOf[brightYellow]
+  
+  @scala.inline
+  def cyan: cyan = "cyan".asInstanceOf[cyan]
+  
+  @scala.inline
+  def dim: dim = "dim".asInstanceOf[dim]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def gray: gray = "gray".asInstanceOf[gray]
+  
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def italic: italic = "italic".asInstanceOf[italic]
+  
+  @scala.inline
+  def magenta: magenta = "magenta".asInstanceOf[magenta]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def red: red = "red".asInstanceOf[red]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
+  
+  @scala.inline
+  def underline: underline = "underline".asInstanceOf[underline]
+  
+  @scala.inline
+  def white: white = "white".asInstanceOf[white]
+  
+  @scala.inline
+  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  
   @js.native
   sealed trait bgBlack extends AnsiColor
   
@@ -135,90 +262,4 @@ object ansiFragmentsStrings {
   
   @js.native
   sealed trait yellow extends AnsiColor
-  
-  @scala.inline
-  def bgBlack: bgBlack = "bgBlack".asInstanceOf[bgBlack]
-  @scala.inline
-  def bgBlue: bgBlue = "bgBlue".asInstanceOf[bgBlue]
-  @scala.inline
-  def bgBrightBlack: bgBrightBlack = "bgBrightBlack".asInstanceOf[bgBrightBlack]
-  @scala.inline
-  def bgBrightBlue: bgBrightBlue = "bgBrightBlue".asInstanceOf[bgBrightBlue]
-  @scala.inline
-  def bgBrightCyan: bgBrightCyan = "bgBrightCyan".asInstanceOf[bgBrightCyan]
-  @scala.inline
-  def bgBrightGreen: bgBrightGreen = "bgBrightGreen".asInstanceOf[bgBrightGreen]
-  @scala.inline
-  def bgBrightMagenta: bgBrightMagenta = "bgBrightMagenta".asInstanceOf[bgBrightMagenta]
-  @scala.inline
-  def bgBrightRed: bgBrightRed = "bgBrightRed".asInstanceOf[bgBrightRed]
-  @scala.inline
-  def bgBrightWhite: bgBrightWhite = "bgBrightWhite".asInstanceOf[bgBrightWhite]
-  @scala.inline
-  def bgBrightYellow: bgBrightYellow = "bgBrightYellow".asInstanceOf[bgBrightYellow]
-  @scala.inline
-  def bgCyan: bgCyan = "bgCyan".asInstanceOf[bgCyan]
-  @scala.inline
-  def bgGreen: bgGreen = "bgGreen".asInstanceOf[bgGreen]
-  @scala.inline
-  def bgMagenta: bgMagenta = "bgMagenta".asInstanceOf[bgMagenta]
-  @scala.inline
-  def bgRed: bgRed = "bgRed".asInstanceOf[bgRed]
-  @scala.inline
-  def bgWhite: bgWhite = "bgWhite".asInstanceOf[bgWhite]
-  @scala.inline
-  def bgYellow: bgYellow = "bgYellow".asInstanceOf[bgYellow]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def brightBlack: brightBlack = "brightBlack".asInstanceOf[brightBlack]
-  @scala.inline
-  def brightBlue: brightBlue = "brightBlue".asInstanceOf[brightBlue]
-  @scala.inline
-  def brightCyan: brightCyan = "brightCyan".asInstanceOf[brightCyan]
-  @scala.inline
-  def brightGreen: brightGreen = "brightGreen".asInstanceOf[brightGreen]
-  @scala.inline
-  def brightMagenta: brightMagenta = "brightMagenta".asInstanceOf[brightMagenta]
-  @scala.inline
-  def brightRed: brightRed = "brightRed".asInstanceOf[brightRed]
-  @scala.inline
-  def brightWhite: brightWhite = "brightWhite".asInstanceOf[brightWhite]
-  @scala.inline
-  def brightYellow: brightYellow = "brightYellow".asInstanceOf[brightYellow]
-  @scala.inline
-  def cyan: cyan = "cyan".asInstanceOf[cyan]
-  @scala.inline
-  def dim: dim = "dim".asInstanceOf[dim]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def gray: gray = "gray".asInstanceOf[gray]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def italic: italic = "italic".asInstanceOf[italic]
-  @scala.inline
-  def magenta: magenta = "magenta".asInstanceOf[magenta]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
 }
-

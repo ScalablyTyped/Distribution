@@ -9,7 +9,7 @@ import typings.phaser.Purchase
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Facebook Instant Games Plugin for Phaser 3 provides a seamless bridge between Phaser
@@ -47,123 +47,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FacebookInstantGamesPlugin extends EventEmitter {
+  
   /**
     * Contains AdInstance objects, as created by the `preloadAds()` method.
     */
   var ads: js.Array[AdInstance] = js.native
-  /**
-    * The set of products that are registered to the game.
-    */
-  var catalog: js.Array[Product] = js.native
-  /**
-    * A unique identifier for the current game context. This represents a specific context
-    * that the game is being played in (for example, a particular messenger conversation or facebook post).
-    * The identifier will be null if game is being played in a solo context.
-    * This value is populated automatically during boot.
-    */
-  var contextID: String = js.native
-  /**
-    * The current context in which your game is running. This can be either `null` or
-    * one of:
-    * 
-    * `POST` - The game is running inside of a Facebook post.
-    * `THREAD` - The game is running inside a Facebook Messenger thread.
-    * `GROUP` - The game is running inside a Facebook Group.
-    * `SOLO` - This is the default context, the player is the only participant.
-    * 
-    * This value is populated automatically during boot.
-    */
-  var contextType: String = js.native
-  /**
-    * A Data Manager instance.
-    * It allows you to store, query and retrieve any key/value data you may need to store.
-    * It's also used internally by the plugin to store FBIG API data.
-    */
-  var data: DataManager = js.native
-  /**
-    * Is the Data Manager currently locked?
-    */
-  var dataLocked: Boolean = js.native
-  /**
-    * Holds the entry point that the game was launched from.
-    * This value is populated automatically during boot.
-    */
-  var entryPoint: String = js.native
-  /**
-    * An object that contains any data associated with the entry point that the game was launched from.
-    * The contents of the object are developer-defined, and can occur from entry points on different platforms.
-    * This will return null for older mobile clients, as well as when there is no data associated with the particular entry point.
-    * This value is populated automatically during boot.
-    */
-  var entryPointData: js.Any = js.native
-  /**
-    * A reference to the Phaser.Game instance.
-    */
-  val game: Game = js.native
-  /**
-    * Has the Facebook Instant Games API loaded yet?
-    * This is set automatically during the boot process.
-    */
-  var hasLoaded: Boolean = js.native
-  /**
-    * Contains all of the leaderboard data, as populated by the `getLeaderboard()` method.
-    */
-  var leaderboards: js.Array[FacebookInstantGamesLeaderboard] = js.native
-  /**
-    * The current locale.
-    * See https://origincache.facebook.com/developers/resources/?id=FacebookLocales.xml for a complete list of supported locale values.
-    * Use this to determine what languages the current game should be localized with.
-    * This value is populated automatically during boot.
-    */
-  var locale: String = js.native
-  /**
-    * Does the current platform and context allow for use of the payments API?
-    * Currently this is only available on Facebook.com and Android 6+.
-    */
-  var paymentsReady: Boolean = js.native
-  /**
-    * The platform on which the game is currently running, i.e. `IOS`.
-    * This value is populated automatically during boot.
-    */
-  var platform: String = js.native
-  /**
-    * Whether a player can subscribe to the game bot or not.
-    */
-  var playerCanSubscribeBot: Boolean = js.native
-  /**
-    * Holds the id of the player. This is a string based ID, the same as `FBInstant.player.getID()`.
-    * This value is populated automatically during boot if the API is supported.
-    */
-  var playerID: String = js.native
-  /**
-    * The player's localized display name.
-    * This value is populated automatically during boot if the API is supported.
-    */
-  var playerName: String = js.native
-  /**
-    * A url to the player's public profile photo. The photo will always be a square, and with dimensions
-    * of at least 200x200. When rendering it in the game, the exact dimensions should never be assumed to be constant.
-    * It's recommended to always scale the image to a desired size before rendering.
-    * This value is populated automatically during boot if the API is supported.
-    */
-  var playerPhotoURL: String = js.native
-  /**
-    * Contains all of the player's unconsumed purchases.
-    * The game must fetch the current player's purchases as soon as the client indicates that it is ready to perform payments-related operations,
-    * i.e. at game start. The game can then process and consume any purchases that are waiting to be consumed.
-    */
-  var purchases: js.Array[Purchase] = js.native
-  /**
-    * A list of the Facebook Instant Games APIs that are available,
-    * based on the given platform, context and user privacy settings.
-    * This value is populated automatically during boot.
-    */
-  var supportedAPIs: js.Array[String] = js.native
-  /**
-    * The string representation of the Facebook Instant Games SDK version being used.
-    * This value is populated automatically during boot.
-    */
-  var version: String = js.native
+  
   /**
     * Checks if the current player can subscribe to the game bot.
     * 
@@ -176,11 +65,18 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * was rejected, it will emit a `cansubscribebotfail` event instead.
     */
   def canSubscribeBot(): this.type = js.native
+  
+  /**
+    * The set of products that are registered to the game.
+    */
+  var catalog: js.Array[Product] = js.native
+  
   /**
     * Checks to see if a given Facebook Instant Games API is available or not.
     * @param api The API to check for, i.e. `player.getID`.
     */
   def checkAPI(api: String): Boolean = js.native
+  
   /**
     * Opens a context selection dialog for the player. If the player selects an available context,
     * the client will attempt to switch into that context, and emit the `choose` event if successful.
@@ -189,6 +85,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def chooseContext(): this.type = js.native
   def chooseContext(options: ChooseContextConfig): this.type = js.native
+  
   /**
     * Consumes a specific purchase belonging to the current player. Before provisioning a product's effects to the player,
     * the game should request the consumption of the purchased product. Once the purchase is successfully consumed,
@@ -204,6 +101,28 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param purchaseToken The purchase token of the purchase that should be consumed.
     */
   def consumePurchase(purchaseToken: String): this.type = js.native
+  
+  /**
+    * A unique identifier for the current game context. This represents a specific context
+    * that the game is being played in (for example, a particular messenger conversation or facebook post).
+    * The identifier will be null if game is being played in a solo context.
+    * This value is populated automatically during boot.
+    */
+  var contextID: String = js.native
+  
+  /**
+    * The current context in which your game is running. This can be either `null` or
+    * one of:
+    * 
+    * `POST` - The game is running inside of a Facebook post.
+    * `THREAD` - The game is running inside a Facebook Messenger thread.
+    * `GROUP` - The game is running inside a Facebook Group.
+    * `SOLO` - This is the default context, the player is the only participant.
+    * 
+    * This value is populated automatically during boot.
+    */
+  var contextType: String = js.native
+  
   /**
     * Attempts to create or switch into a context between a specified player and the current player.
     * This plugin will emit the `create` event once the context switch is completed.
@@ -212,6 +131,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param playerID ID of the player.
     */
   def createContext(playerID: String): this.type = js.native
+  
   /**
     * Prompts the user to create a shortcut to the game if they are eligible to.
     * Can only be called once per session.
@@ -224,6 +144,33 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * was rejected, it will emit a `shortcutcreatedfail` event instead.
     */
   def createShortcut(): this.type = js.native
+  
+  /**
+    * A Data Manager instance.
+    * It allows you to store, query and retrieve any key/value data you may need to store.
+    * It's also used internally by the plugin to store FBIG API data.
+    */
+  var data: DataManager = js.native
+  
+  /**
+    * Is the Data Manager currently locked?
+    */
+  var dataLocked: Boolean = js.native
+  
+  /**
+    * Holds the entry point that the game was launched from.
+    * This value is populated automatically during boot.
+    */
+  var entryPoint: String = js.native
+  
+  /**
+    * An object that contains any data associated with the entry point that the game was launched from.
+    * The contents of the object are developer-defined, and can occur from entry points on different platforms.
+    * This will return null for older mobile clients, as well as when there is no data associated with the particular entry point.
+    * This value is populated automatically during boot.
+    */
+  var entryPointData: js.Any = js.native
+  
   /**
     * Immediately flushes any changes to the player data to the designated cloud storage.
     * This function is expensive, and should primarily be used for critical changes where persistence needs to be immediate
@@ -237,6 +184,12 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * reason it will emit `flushdatafail` instead.
     */
   def flushData(): this.type = js.native
+  
+  /**
+    * A reference to the Phaser.Game instance.
+    */
+  val game: Game = js.native
+  
   /**
     * This method is called automatically when the game has finished loading,
     * if you used the `showLoadProgress` method. If your game doesn't need to
@@ -247,6 +200,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * which you should listen for.
     */
   def gameStarted(): Unit = js.native
+  
   /**
     * Fetches the game's product catalog.
     * 
@@ -259,6 +213,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * was rejected, it will emit a `getcatalogfail` event instead.
     */
   def getCatalog(): this.type = js.native
+  
   /**
     * Gets the associated data from the player based on the given key, or array of keys.
     * 
@@ -270,6 +225,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def getData(keys: String): this.type = js.native
   def getData(keys: js.Array[String]): this.type = js.native
+  
   /**
     * Returns the unique identifier for the current game context. This represents a specific context
     * that the game is being played in (for example, a particular messenger conversation or facebook post).
@@ -278,6 +234,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * It is only populated if `contextGetID` is in the list of supported APIs.
     */
   def getID(): String = js.native
+  
   /**
     * Fetch a specific leaderboard belonging to this Instant Game.
     * 
@@ -287,6 +244,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param name The name of the leaderboard. Each leaderboard for an Instant Game must have its own distinct name.
     */
   def getLeaderboard(name: String): this.type = js.native
+  
   /**
     * Returns the current locale.
     * See https://origincache.facebook.com/developers/resources/?id=FacebookLocales.xml for a complete list of supported locale values.
@@ -294,21 +252,25 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * It is only populated if `getLocale` is in the list of supported APIs.
     */
   def getLocale(): String = js.native
+  
   /**
     * Returns the platform on which the game is currently running, i.e. `IOS`.
     * It is only populated if `getPlatform` is in the list of supported APIs.
     */
   def getPlatform(): String = js.native
+  
   /**
     * Returns the id of the player. This is a string based ID, the same as `FBInstant.player.getID()`.
     * It is only populated if `playerGetID` is in the list of supported APIs.
     */
   def getPlayerID(): String = js.native
+  
   /**
     * Returns the player's localized display name.
     * It is only populated if `playerGetName` is in the list of supported APIs.
     */
   def getPlayerName(): String = js.native
+  
   /**
     * Returns the url to the player's public profile photo. The photo will always be a square, and with dimensions
     * of at least 200x200. When rendering it in the game, the exact dimensions should never be assumed to be constant.
@@ -316,6 +278,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * It is only populated if `playerGetPhoto` is in the list of supported APIs.
     */
   def getPlayerPhotoURL(): String = js.native
+  
   /**
     * Fetches an array of ConnectedPlayer objects containing information about active players
     * (people who played the game in the last 90 days) that are connected to the current player.
@@ -329,6 +292,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * was rejected, it will emit a `playersfail` event instead.
     */
   def getPlayers(): this.type = js.native
+  
   /**
     * Fetches a single Product from the game's product catalog.
     * 
@@ -338,6 +302,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param productID The Product ID of the item to get from the catalog.
     */
   def getProduct(productID: String): Product = js.native
+  
   /**
     * Fetches all of the player's unconsumed purchases. The game must fetch the current player's purchases
     * as soon as the client indicates that it is ready to perform payments-related operations,
@@ -352,11 +317,13 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * was rejected, it will emit a `getpurchasesfail` event instead.
     */
   def getPurchases(): this.type = js.native
+  
   /**
     * Returns the string representation of the Facebook Instant Games SDK version being used.
     * It is only populated if `getSDKVersion` is in the list of supported APIs.
     */
   def getSDKVersion(): String = js.native
+  
   /**
     * Retrieve stats from the designated cloud storage of the current player.
     * 
@@ -370,6 +337,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def getStats(): this.type = js.native
   def getStats(keys: js.Array[String]): this.type = js.native
+  
   /**
     * Returns the current context in which your game is running. This can be either `null` or one of:
     * 
@@ -381,6 +349,13 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * It is only populated if `contextGetType` is in the list of supported APIs.
     */
   def getType(): String = js.native
+  
+  /**
+    * Has the Facebook Instant Games API loaded yet?
+    * This is set automatically during the boot process.
+    */
+  var hasLoaded: Boolean = js.native
+  
   /**
     * Increment the stats of the current player and save them to the designated cloud storage.
     * 
@@ -406,6 +381,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param data An object containing a set of key-value pairs indicating how much to increment each stat in cloud storage. Note that only numerical values are processed.
     */
   def incStats(data: js.Object): this.type = js.native
+  
   /**
     * This function determines whether the number of participants in the current game context is between a given minimum and maximum, inclusive.
     * If one of the bounds is null only the other bound will be checked against.
@@ -418,6 +394,12 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def isSizeBetween(min: js.UndefOr[scala.Nothing], max: integer): js.Object = js.native
   def isSizeBetween(min: integer): js.Object = js.native
   def isSizeBetween(min: integer, max: integer): js.Object = js.native
+  
+  /**
+    * Contains all of the leaderboard data, as populated by the `getLeaderboard()` method.
+    */
+  var leaderboards: js.Array[FacebookInstantGamesLeaderboard] = js.native
+  
   /**
     * Load the player's photo and store it in the Texture Manager, ready for use in-game.
     * 
@@ -435,6 +417,15 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param key The key to use when storing the photo in the Texture Manager.
     */
   def loadPlayerPhoto(scene: Scene, key: String): this.type = js.native
+  
+  /**
+    * The current locale.
+    * See https://origincache.facebook.com/developers/resources/?id=FacebookLocales.xml for a complete list of supported locale values.
+    * Use this to determine what languages the current game should be localized with.
+    * This value is populated automatically during boot.
+    */
+  var locale: String = js.native
+  
   /**
     * Log an app event with FB Analytics.
     * 
@@ -447,6 +438,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def log(name: String, value: js.UndefOr[scala.Nothing], params: js.Object): this.type = js.native
   def log(name: String, value: Double): this.type = js.native
   def log(name: String, value: Double, params: js.Object): this.type = js.native
+  
   /**
     * Attempts to match the current player with other users looking for people to play with.
     * If successful, a new Messenger group thread will be created containing the matched players and the player will
@@ -463,6 +455,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def matchPlayer(matchTag: js.UndefOr[scala.Nothing], switchImmediately: Boolean): this.type = js.native
   def matchPlayer(matchTag: String): this.type = js.native
   def matchPlayer(matchTag: String, switchImmediately: Boolean): this.type = js.native
+  
   /**
     * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
     * 
@@ -482,6 +475,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def openChallenge(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openChallenge(text: String, key: String, frame: String): this.type = js.native
   def openChallenge(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  
   /**
     * This invokes a dialog to let the user invite a friend to play this game, either as a message in Messenger or as a post on the user's timeline.
     * 
@@ -501,6 +495,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def openInvite(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openInvite(text: String, key: String, frame: String): this.type = js.native
   def openInvite(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  
   /**
     * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
     * 
@@ -520,6 +515,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def openRequest(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openRequest(text: String, key: String, frame: String): this.type = js.native
   def openRequest(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  
   /**
     * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
     * 
@@ -539,6 +535,44 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
   def openShare(text: String, key: String, frame: js.UndefOr[scala.Nothing], sessionData: js.Object): this.type = js.native
   def openShare(text: String, key: String, frame: String): this.type = js.native
   def openShare(text: String, key: String, frame: String, sessionData: js.Object): this.type = js.native
+  
+  /**
+    * Does the current platform and context allow for use of the payments API?
+    * Currently this is only available on Facebook.com and Android 6+.
+    */
+  var paymentsReady: Boolean = js.native
+  
+  /**
+    * The platform on which the game is currently running, i.e. `IOS`.
+    * This value is populated automatically during boot.
+    */
+  var platform: String = js.native
+  
+  /**
+    * Whether a player can subscribe to the game bot or not.
+    */
+  var playerCanSubscribeBot: Boolean = js.native
+  
+  /**
+    * Holds the id of the player. This is a string based ID, the same as `FBInstant.player.getID()`.
+    * This value is populated automatically during boot if the API is supported.
+    */
+  var playerID: String = js.native
+  
+  /**
+    * The player's localized display name.
+    * This value is populated automatically during boot if the API is supported.
+    */
+  var playerName: String = js.native
+  
+  /**
+    * A url to the player's public profile photo. The photo will always be a square, and with dimensions
+    * of at least 200x200. When rendering it in the game, the exact dimensions should never be assumed to be constant.
+    * It's recommended to always scale the image to a desired size before rendering.
+    * This value is populated automatically during boot if the API is supported.
+    */
+  var playerPhotoURL: String = js.native
+  
   /**
     * Attempt to create an instance of an interstitial ad.
     * 
@@ -551,6 +585,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def preloadAds(placementID: String): this.type = js.native
   def preloadAds(placementID: js.Array[String]): this.type = js.native
+  
   /**
     * Attempt to create an instance of an rewarded video ad.
     * 
@@ -563,6 +598,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def preloadVideoAds(placementID: String): this.type = js.native
   def preloadVideoAds(placementID: js.Array[String]): this.type = js.native
+  
   /**
     * Begins the purchase flow for a specific product.
     * 
@@ -578,10 +614,19 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def purchase(productID: String): this.type = js.native
   def purchase(productID: String, developerPayload: String): this.type = js.native
+  
+  /**
+    * Contains all of the player's unconsumed purchases.
+    * The game must fetch the current player's purchases as soon as the client indicates that it is ready to perform payments-related operations,
+    * i.e. at game start. The game can then process and consume any purchases that are waiting to be consumed.
+    */
+  var purchases: js.Array[Purchase] = js.native
+  
   /**
     * Quits the game.
     */
   def quit(): Unit = js.native
+  
   /**
     * Set data to be saved to the designated cloud storage of the current player. The game can store up to 1MB of data for each unique player.
     * 
@@ -599,6 +644,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * The object must contain only serializable values - any non-serializable values will cause the entire modification to be rejected.
     */
   def saveData(data: js.Object): this.type = js.native
+  
   /**
     * Sets the data associated with the individual gameplay session for the current context.
     * 
@@ -608,6 +654,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param data An arbitrary data object, which must be less than or equal to 1000 characters when stringified.
     */
   def saveSession(data: js.Object): this.type = js.native
+  
   /**
     * Save the stats of the current player to the designated cloud storage.
     * 
@@ -623,6 +670,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param data An object containing a set of key-value pairs that should be persisted to cloud storage as stats. Note that only numerical values are stored.
     */
   def saveStats(data: js.Object): this.type = js.native
+  
   /**
     * Displays a previously loaded interstitial ad.
     * 
@@ -632,6 +680,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param placementID The ad placement ID to display.
     */
   def showAd(placementID: String): this.type = js.native
+  
   /**
     * Call this method from your `Scene.preload` in order to sync the load progress
     * of the Phaser Loader with the Facebook Instant Games loader display, i.e.:
@@ -643,6 +692,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param scene The Scene for which you want to show loader progress for.
     */
   def showLoadProgress(scene: Scene): this.type = js.native
+  
   /**
     * Displays a previously loaded interstitial video ad.
     * 
@@ -652,6 +702,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param placementID The ad placement ID to display.
     */
   def showVideo(placementID: String): this.type = js.native
+  
   /**
     * Subscribes the current player to the game bot.
     * 
@@ -663,6 +714,14 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * was rejected, it will emit a `subscribebotfail` event instead.
     */
   def subscribeBot(): this.type = js.native
+  
+  /**
+    * A list of the Facebook Instant Games APIs that are available,
+    * based on the given platform, context and user privacy settings.
+    * This value is populated automatically during boot.
+    */
+  var supportedAPIs: js.Array[String] = js.native
+  
   /**
     * Request a switch into a specific context. If the player does not have permission to enter that context,
     * or if the player does not provide permission for the game to enter that context, this will emit a `switchfail` event.
@@ -671,6 +730,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     * @param contextID The ID of the desired context.
     */
   def switchContext(contextID: String): this.type = js.native
+  
   /**
     * Request that the client switch to a different Instant Game.
     * 
@@ -685,6 +745,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def switchGame(appID: String): this.type = js.native
   def switchGame(appID: String, data: js.Object): this.type = js.native
+  
   /**
     * Informs Facebook of a custom update that occurred in the game.
     * This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
@@ -714,6 +775,7 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def update(cta: String, text: js.Object, key: String, frame: String, template: String, updateData: js.Object): this.type = js.native
   def update(cta: String, text: js.Object, key: String, frame: integer, template: String, updateData: js.Object): this.type = js.native
+  
   /**
     * Informs Facebook of a leaderboard update that occurred in the game.
     * This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
@@ -743,5 +805,10 @@ trait FacebookInstantGamesPlugin extends EventEmitter {
     */
   def updateLeaderboard(cta: String, text: js.Object, key: String, frame: String, template: String, updateData: js.Object): this.type = js.native
   def updateLeaderboard(cta: String, text: js.Object, key: String, frame: integer, template: String, updateData: js.Object): this.type = js.native
+  
+  /**
+    * The string representation of the Facebook Instant Games SDK version being used.
+    * This value is populated automatically during boot.
+    */
+  var version: String = js.native
 }
-

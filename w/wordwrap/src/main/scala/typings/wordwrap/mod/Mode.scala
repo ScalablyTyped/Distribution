@@ -2,7 +2,7 @@ package typings.wordwrap.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In "soft" mode, split chunks by `/(\S+\s+/` and don't break up chunks
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
   - typings.wordwrap.wordwrapStrings.hard
 */
 trait Mode extends js.Object
-
 object Mode {
+  
   @scala.inline
   def hard: typings.wordwrap.wordwrapStrings.hard = "hard".asInstanceOf[typings.wordwrap.wordwrapStrings.hard]
+  
   @scala.inline
   def soft: typings.wordwrap.wordwrapStrings.soft = "soft".asInstanceOf[typings.wordwrap.wordwrapStrings.soft]
 }
-

@@ -2,7 +2,7 @@ package typings.makerJs.global.MakerJs.models
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.Dogbone")
 @js.native
@@ -33,4 +33,3 @@ class Dogbone protected ()
   ) = this()
   def this(width: Double, height: Double, radius: Double, style: Double, bottomless: Boolean) = this()
 }
-

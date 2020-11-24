@@ -2,10 +2,11 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeferrableSetImmediate extends DeferrableAbstract {
+  
   /**
     * A property that will trigger an additional query at the beginning of a
     * transaction which sets the constraints to immediately.
@@ -14,4 +15,3 @@ trait DeferrableSetImmediate extends DeferrableAbstract {
     */
   def apply(constraints: js.Array[String]): DeferrableSetImmediate = js.native
 }
-

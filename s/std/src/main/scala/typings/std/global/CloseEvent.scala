@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.CloseEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CloseEvent")
 @js.native
@@ -14,7 +14,6 @@ class CloseEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: CloseEventInit) = this()
 }
-
 @JSGlobal("CloseEvent")
 @js.native
 object CloseEvent
@@ -24,4 +23,3 @@ object CloseEvent
       /* eventInitDict */ CloseEventInit, 
       typings.std.CloseEvent
     ]
-

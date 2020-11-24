@@ -8,16 +8,18 @@ import typings.rdfJs.mod.BaseQuad
 import typings.rdfJs.mod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TripleToQuadTransform[Q /* <: BaseQuad */]
   extends Transform
      with Stream[Q] {
+  
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
   /**
     * This method pulls a quad out of the internal buffer and returns it.
     * If there is no quad available, then it will return null.
@@ -27,4 +29,3 @@ trait TripleToQuadTransform[Q /* <: BaseQuad */]
   /* InferMemberOverrides */
   override def read(): (Q | Null) with (String | Buffer) = js.native
 }
-

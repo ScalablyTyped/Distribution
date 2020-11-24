@@ -6,11 +6,12 @@ import typings.ol.sizeMod.Size
 import typings.ol.tilegridTileGridMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/tilegrid", "createForExtent")
 @js.native
 object createForExtent extends js.Object {
+  
   def apply(extent: Extent): default = js.native
   def apply(
     extent: Extent,
@@ -29,4 +30,3 @@ object createForExtent extends js.Object {
   def apply(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size): default = js.native
   def apply(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size, opt_corner: Corner): default = js.native
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "timeout"
-version := "0.2-dt-20200413Z-b5ac32"
+version := "0.2-dt-20200413Z-611b15"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

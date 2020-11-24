@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Graphics class contains methods used to draw primitive shapes such as lines, circles and
@@ -19,11 +19,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class GraphicsGeometry ()
   extends typings.pixiJs.PIXI.GraphicsGeometry
-
 /* static members */
 @JSGlobal("PIXI.GraphicsGeometry")
 @js.native
 object GraphicsGeometry extends js.Object {
+  
   /**
     * The maximum number of points to consider an object "batchable",
     * able to be batched by the renderer's batch system.
@@ -35,4 +35,3 @@ object GraphicsGeometry extends js.Object {
     */
   var BATCHABLE_SIZE: Double = js.native
 }
-

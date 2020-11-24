@@ -6,21 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts$Filtersets")
 @js.native
 class ResourceBiddersAccountsFiltersets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var bidMetrics: ResourceBiddersAccountsFiltersetsBidmetrics = js.native
+  
   var bidResponseErrors: ResourceBiddersAccountsFiltersetsBidresponseerrors = js.native
+  
   var bidResponsesWithoutBids: ResourceBiddersAccountsFiltersetsBidresponseswithoutbids = js.native
+  
   var context: APIRequestContext = js.native
-  var filteredBidRequests: ResourceBiddersAccountsFiltersetsFilteredbidrequests = js.native
-  var filteredBids: ResourceBiddersAccountsFiltersetsFilteredbids = js.native
-  var impressionMetrics: ResourceBiddersAccountsFiltersetsImpressionmetrics = js.native
-  var losingBids: ResourceBiddersAccountsFiltersetsLosingbids = js.native
-  var nonBillableWinningBids: ResourceBiddersAccountsFiltersetsNonbillablewinningbids = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.create
     * @desc Creates the specified filter set for the account with the given
@@ -55,6 +55,7 @@ class ResourceBiddersAccountsFiltersets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilterSet]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.delete
     * @desc Deletes the requested filter set from the account with the given
@@ -84,6 +85,11 @@ class ResourceBiddersAccountsFiltersets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var filteredBidRequests: ResourceBiddersAccountsFiltersetsFilteredbidrequests = js.native
+  
+  var filteredBids: ResourceBiddersAccountsFiltersetsFilteredbids = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.get
     * @desc Retrieves the requested filter set for the account with the given
@@ -116,6 +122,9 @@ class ResourceBiddersAccountsFiltersets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilterSet]
   ): Unit = js.native
+  
+  var impressionMetrics: ResourceBiddersAccountsFiltersetsImpressionmetrics = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.list
     * @desc Lists all filter sets for the account with the given account ID.
@@ -149,5 +158,8 @@ class ResourceBiddersAccountsFiltersets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListFilterSetsResponse]
   ): Unit = js.native
+  
+  var losingBids: ResourceBiddersAccountsFiltersetsLosingbids = js.native
+  
+  var nonBillableWinningBids: ResourceBiddersAccountsFiltersetsNonbillablewinningbids = js.native
 }
-

@@ -17,7 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XViewsSupplier
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a component, which supplies and stores additional information related to a certain database connection, such as, DatabaseQueries,
@@ -40,8 +40,8 @@ trait DatabaseAccessConnection
      with XChild
      with XSQLQueryComposerFactory
      with XQueriesSupplier
-
 object DatabaseAccessConnection {
+  
   @scala.inline
   def apply(
     AutoCommit: Boolean,
@@ -96,4 +96,3 @@ object DatabaseAccessConnection {
     __obj.asInstanceOf[DatabaseAccessConnection]
   }
 }
-

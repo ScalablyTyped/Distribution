@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialFormSelectOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("materialize-css", "FormSelect")
 @js.native
 class FormSelect ()
   extends typings.materializeCss.M.FormSelect
-
 /* static members */
 @JSImport("materialize-css", "FormSelect")
 @js.native
 object FormSelect extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.FormSelect = js.native
+  
   /**
     * Init FormSelects
     */
@@ -35,4 +36,3 @@ object FormSelect extends js.Object {
   def init(els: Element): typings.materializeCss.M.FormSelect = js.native
   def init(els: Element, options: PartialFormSelectOptions): typings.materializeCss.M.FormSelect = js.native
 }
-

@@ -5,18 +5,24 @@ import typings.q.mod.Promise
 import typings.seleniumWebdriver.mod.WebDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/driverProviders/driverProvider", JSImport.Namespace)
 @js.native
 object driverProviderMod extends js.Object {
+  
   @js.native
   abstract class DriverProvider protected () extends js.Object {
     def this(config: Config) = this()
+    
     var bpRunner: js.Any = js.native
+    
     var config_ : Config = js.native
+    
     var drivers_ : js.Array[WebDriver] = js.native
+    
     def getBPUrl(): String = js.native
+    
     /**
       * Get all existing drivers.
       *
@@ -24,6 +30,7 @@ object driverProviderMod extends js.Object {
       * @return array of webdriver instances
       */
     def getExistingDrivers(): js.Array[WebDriver] = js.native
+    
     /**
       * Create a new driver.
       *
@@ -31,6 +38,7 @@ object driverProviderMod extends js.Object {
       * @return webdriver instance
       */
     def getNewDriver(): WebDriver = js.native
+    
     /**
       * Quit a driver.
       *
@@ -38,15 +46,18 @@ object driverProviderMod extends js.Object {
       * @param webdriver instance
       */
     def quitDriver(driver: WebDriver): js.Promise[Unit] = js.native
+    
     /**
       * Set up environment specific to a particular driver provider. Overridden
       * by each driver provider.
       */
     /* protected */ def setupDriverEnv(): Promise[_] = js.native
+    
     /**
       * Default setup environment method, common to all driver providers.
       */
     def setupEnv(): Promise[_] = js.native
+    
     /**
       * Teardown and destroy the environment and do any associated cleanup.
       * Shuts down the drivers.
@@ -55,16 +66,17 @@ object driverProviderMod extends js.Object {
       * @return {q.Promise<any>} A promise which will resolve when the environment is down.
       */
     def teardownEnv(): Promise[_] = js.native
+    
     /**
       * Default update job method.
       * @return a promise
       */
     def updateJob(update: js.Any): Promise[_] = js.native
   }
-  
   /* static members */
   @js.native
   object DriverProvider extends js.Object {
+    
     /**
       * Quits an array of drivers and returns a q promise instead of a webdriver one
       *
@@ -72,6 +84,4 @@ object driverProviderMod extends js.Object {
       */
     def quitDrivers(provider: DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = js.native
   }
-  
 }
-

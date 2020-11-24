@@ -12,7 +12,7 @@ Sticky session balancer, 10x faster and with much better scattering than `sticky
 | Keywords           | cluster, sticky, sticky-session, sticky-cluster |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 17506 |
+| # downloads        | 18465 |
 | # stars            | 1 |
 
 ## Links

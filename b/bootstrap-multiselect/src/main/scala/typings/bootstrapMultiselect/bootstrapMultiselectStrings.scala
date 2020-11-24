@@ -2,9 +2,58 @@ package typings.bootstrapMultiselect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapMultiselectStrings {
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def dataprovider: dataprovider = "dataprovider".asInstanceOf[dataprovider]
+  
+  @scala.inline
+  def deselect: deselect = "deselect".asInstanceOf[deselect]
+  
+  @scala.inline
+  def deselectAll: deselectAll = "deselectAll".asInstanceOf[deselectAll]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def disable: disable = "disable".asInstanceOf[disable]
+  
+  @scala.inline
+  def enable: enable = "enable".asInstanceOf[enable]
+  
+  @scala.inline
+  def rebuild: rebuild = "rebuild".asInstanceOf[rebuild]
+  
+  @scala.inline
+  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
+  
+  @scala.inline
+  def setAllSelectedText: setAllSelectedText = "setAllSelectedText".asInstanceOf[setAllSelectedText]
+  
+  @scala.inline
+  def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def updateButtonText: updateButtonText = "updateButtonText".asInstanceOf[updateButtonText]
+  
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  
   @js.native
   sealed trait both extends js.Object
   
@@ -52,38 +101,4 @@ object bootstrapMultiselectStrings {
   
   @js.native
   sealed trait value extends js.Object
-  
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def dataprovider: dataprovider = "dataprovider".asInstanceOf[dataprovider]
-  @scala.inline
-  def deselect: deselect = "deselect".asInstanceOf[deselect]
-  @scala.inline
-  def deselectAll: deselectAll = "deselectAll".asInstanceOf[deselectAll]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def rebuild: rebuild = "rebuild".asInstanceOf[rebuild]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
-  @scala.inline
-  def setAllSelectedText: setAllSelectedText = "setAllSelectedText".asInstanceOf[setAllSelectedText]
-  @scala.inline
-  def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def updateButtonText: updateButtonText = "updateButtonText".asInstanceOf[updateButtonText]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
 }
-

@@ -9,12 +9,12 @@ import typings.winrt.Windows.Web.Syndication.SyndicationAttribute
 import typings.winrt.Windows.Web.Syndication.SyndicationFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceDocument extends IServiceDocument
-
 object ServiceDocument {
+  
   @scala.inline
   def apply(
     attributeExtensions: IVector[SyndicationAttribute],
@@ -31,4 +31,3 @@ object ServiceDocument {
     __obj.asInstanceOf[ServiceDocument]
   }
 }
-

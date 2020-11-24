@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.RotateTo")
 @js.native
 object RotateTo extends js.Object {
+  
   /**
     * Position a `point` at the given `angle` and `distance` to (`x`, `y`).
     * @param point The point to be positioned.
@@ -18,4 +19,3 @@ object RotateTo extends js.Object {
     */
   def apply[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double, distance: Double): T = js.native
 }
-

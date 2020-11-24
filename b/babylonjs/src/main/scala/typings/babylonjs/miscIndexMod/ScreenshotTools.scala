@@ -5,23 +5,25 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.screenshotSizeMod.IScreenshotSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "ScreenshotTools")
 @js.native
 class ScreenshotTools ()
   extends typings.babylonjs.screenshotToolsMod.ScreenshotTools
-
 /* static members */
 @JSImport("babylonjs/Misc/index", "ScreenshotTools")
 @js.native
 object ScreenshotTools extends js.Object {
-  /**
-    * Gets height and width for screenshot size
-    * @private
-    */
-  var _getScreenshotSize: js.Any = js.native
+  
   def CreateScreenshot(engine: Engine, camera: Camera, size: Double): Unit = js.native
+  def CreateScreenshot(
+    engine: Engine,
+    camera: Camera,
+    size: Double,
+    successCallback: js.UndefOr[scala.Nothing],
+    mimeType: String
+  ): Unit = js.native
   def CreateScreenshot(
     engine: Engine,
     camera: Camera,
@@ -37,7 +39,7 @@ object ScreenshotTools extends js.Object {
   ): Unit = js.native
   /**
     * Captures a screenshot of the current rendering
-    * @see http://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
     * @param engine defines the rendering engine
     * @param camera defines the source camera
     * @param size This parameter can be set to a single number or to an object with the
@@ -56,6 +58,13 @@ object ScreenshotTools extends js.Object {
     engine: Engine,
     camera: Camera,
     size: IScreenshotSize,
+    successCallback: js.UndefOr[scala.Nothing],
+    mimeType: String
+  ): Unit = js.native
+  def CreateScreenshot(
+    engine: Engine,
+    camera: Camera,
+    size: IScreenshotSize,
     successCallback: js.Function1[/* data */ String, Unit]
   ): Unit = js.native
   def CreateScreenshot(
@@ -65,9 +74,10 @@ object ScreenshotTools extends js.Object {
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: String
   ): Unit = js.native
+  
   /**
     * Captures a screenshot of the current rendering
-    * @see http://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
     * @param engine defines the rendering engine
     * @param camera defines the source camera
     * @param size This parameter can be set to a single number or to an object with the
@@ -82,20 +92,10 @@ object ScreenshotTools extends js.Object {
     */
   def CreateScreenshotAsync(engine: Engine, camera: Camera, size: js.Any): js.Promise[String] = js.native
   def CreateScreenshotAsync(engine: Engine, camera: Camera, size: js.Any, mimeType: String): js.Promise[String] = js.native
-  def CreateScreenshotUsingRenderTarget(
-    engine: Engine,
-    camera: Camera,
-    size: Double,
-    successCallback: js.UndefOr[js.Function1[/* data */ String, Unit]],
-    mimeType: js.UndefOr[String],
-    samples: js.UndefOr[Double],
-    antialiasing: js.UndefOr[Boolean],
-    fileName: js.UndefOr[String],
-    renderSprites: js.UndefOr[Boolean]
-  ): Unit = js.native
+  
   /**
     * Generates an image screenshot from the specified camera.
-    * @see http://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
     * @param engine The engine to use for rendering
     * @param camera The camera to use for rendering
     * @param size This parameter can be set to a single number or to an object with the
@@ -112,21 +112,24 @@ object ScreenshotTools extends js.Object {
     * @param antialiasing Whether antialiasing should be turned on or not (default: false)
     * @param fileName A name for for the downloaded file.
     * @param renderSprites Whether the sprites should be rendered or not (default: false)
+    * @param enableStencilBuffer Whether the stencil buffer should be enabled or not (default: false)
     */
   def CreateScreenshotUsingRenderTarget(
     engine: Engine,
     camera: Camera,
-    size: IScreenshotSize,
+    size: IScreenshotSize | Double,
     successCallback: js.UndefOr[js.Function1[/* data */ String, Unit]],
     mimeType: js.UndefOr[String],
     samples: js.UndefOr[Double],
     antialiasing: js.UndefOr[Boolean],
     fileName: js.UndefOr[String],
-    renderSprites: js.UndefOr[Boolean]
+    renderSprites: js.UndefOr[Boolean],
+    enableStencilBuffer: js.UndefOr[Boolean]
   ): Unit = js.native
+  
   /**
     * Generates an image screenshot from the specified camera.
-    * @see http://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
     * @param engine The engine to use for rendering
     * @param camera The camera to use for rendering
     * @param size This parameter can be set to a single number or to an object with the
@@ -144,7 +147,206 @@ object ScreenshotTools extends js.Object {
     * to the src parameter of an <img> to display it
     */
   def CreateScreenshotUsingRenderTargetAsync(engine: Engine, camera: Camera, size: js.Any): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean,
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean,
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(engine: Engine, camera: Camera, size: js.Any, mimeType: js.UndefOr[scala.Nothing], samples: Double): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: js.UndefOr[scala.Nothing],
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
   def CreateScreenshotUsingRenderTargetAsync(engine: Engine, camera: Camera, size: js.Any, mimeType: String): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean,
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean,
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: js.UndefOr[scala.Nothing],
+    antialiasing: Boolean,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
   def CreateScreenshotUsingRenderTargetAsync(engine: Engine, camera: Camera, size: js.Any, mimeType: String, samples: Double): js.Promise[String] = js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: Engine,
@@ -152,7 +354,46 @@ object ScreenshotTools extends js.Object {
     size: js.Any,
     mimeType: String,
     samples: Double,
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: js.UndefOr[scala.Nothing],
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
     antialiasing: Boolean
+  ): js.Promise[String] = js.native
+  def CreateScreenshotUsingRenderTargetAsync(
+    engine: Engine,
+    camera: Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: js.UndefOr[scala.Nothing],
+    renderSprites: Boolean
   ): js.Promise[String] = js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: Engine,
@@ -173,5 +414,10 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  
+  /**
+    * Gets height and width for screenshot size
+    * @private
+    */
+  var _getScreenshotSize: js.Any = js.native
 }
-

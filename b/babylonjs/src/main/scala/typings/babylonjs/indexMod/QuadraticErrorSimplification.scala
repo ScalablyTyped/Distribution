@@ -1,0 +1,16 @@
+package typings.babylonjs.indexMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("babylonjs/index", "QuadraticErrorSimplification")
+@js.native
+class QuadraticErrorSimplification protected ()
+  extends typings.babylonjs.babylonjsIndexMod.QuadraticErrorSimplification {
+  /**
+    * Creates a new QuadraticErrorSimplification
+    * @param _mesh defines the target mesh
+    */
+  def this(_mesh: typings.babylonjs.meshMod.Mesh) = this()
+}

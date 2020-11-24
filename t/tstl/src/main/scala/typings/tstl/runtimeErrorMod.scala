@@ -3,11 +3,12 @@ package typings.tstl
 import typings.tstl.exceptionExceptionMod.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/exception/RuntimeError", JSImport.Namespace)
 @js.native
 object runtimeErrorMod extends js.Object {
+  
   @js.native
   class RuntimeError protected () extends Exception {
     /**
@@ -17,6 +18,4 @@ object runtimeErrorMod extends js.Object {
       */
     def this(message: String) = this()
   }
-  
 }
-

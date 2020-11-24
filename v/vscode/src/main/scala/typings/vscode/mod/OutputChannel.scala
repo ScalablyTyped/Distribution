@@ -2,20 +2,18 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OutputChannel extends js.Object {
-  /**
-    * The human-readable name of this output channel.
-    */
-  val name: String = js.native
+  
   /**
     * Append the given value to the channel.
     *
     * @param value A string, falsy values will not be printed.
     */
   def append(value: String): Unit = js.native
+  
   /**
     * Append the given value and a line feed character
     * to the channel.
@@ -23,18 +21,27 @@ trait OutputChannel extends js.Object {
     * @param value A string, falsy values will be printed.
     */
   def appendLine(value: String): Unit = js.native
+  
   /**
     * Removes all output from the channel.
     */
   def clear(): Unit = js.native
+  
   /**
     * Dispose and free associated resources.
     */
   def dispose(): Unit = js.native
+  
   /**
     * Hide this channel from the UI.
     */
   def hide(): Unit = js.native
+  
+  /**
+    * The human-readable name of this output channel.
+    */
+  val name: String = js.native
+  
   /**
     * Reveal this channel in the UI.
     *
@@ -46,4 +53,3 @@ trait OutputChannel extends js.Object {
   def show(column: ViewColumn, preserveFocus: Boolean): Unit = js.native
   def show(preserveFocus: Boolean): Unit = js.native
 }
-

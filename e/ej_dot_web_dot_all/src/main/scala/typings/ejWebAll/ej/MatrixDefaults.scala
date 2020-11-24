@@ -2,14 +2,14 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MatrixDefaults extends js.Object
-
 @JSGlobal("ej.MatrixDefaults")
 @js.native
 object MatrixDefaults extends js.Object {
+  
   @js.native
   sealed trait m11 extends MatrixDefaults
   
@@ -30,6 +30,4 @@ object MatrixDefaults extends js.Object {
   
   @js.native
   sealed trait `type` extends MatrixDefaults
-  
 }
-

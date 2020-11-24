@@ -11,11 +11,12 @@ import typings.tstl.tstlBooleans.`true`
 import typings.tstl.uniqueTreeSetMod.UniqueTreeSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/TreeSet", JSImport.Namespace)
 @js.native
 object treeSetMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -54,11 +55,12 @@ object treeSetMod extends js.Object {
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
       comp: Comparator[Key, Key]
     ) = this()
+    
     var tree_ : js.Any = js.native
   }
-  
   @js.native
   object TreeSet extends js.Object {
+    
     val Iterator: Instantiable0[
         typings.tstl.setElementListMod.SetElementList.Iterator[
           js.Object, 
@@ -76,6 +78,7 @@ object treeSetMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           js.Object, 
@@ -93,15 +96,15 @@ object treeSetMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     /**
       * Iterator of {@link TreeSet}
       */
     type Iterator[Key] = typings.tstl.setElementListMod.SetElementList.Iterator[Key, `true`, TreeSet[Key]]
+    
     /**
       * Reverse iterator of {@link TreeSet}
       */
     type ReverseIterator[Key] = typings.tstl.setElementListMod.SetElementList.ReverseIterator[Key, `true`, TreeSet[Key]]
   }
-  
 }
-

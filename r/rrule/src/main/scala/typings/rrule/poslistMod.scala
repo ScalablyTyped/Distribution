@@ -5,11 +5,12 @@ import typings.rrule.iterinfoMod.default
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rrule/dist/esm/src/iter/poslist", JSImport.Namespace)
 @js.native
 object poslistMod extends js.Object {
+  
   def buildPoslist(
     bysetpos: js.Array[Double],
     timeset: js.Array[Time],
@@ -19,4 +20,3 @@ object poslistMod extends js.Object {
     dayset: js.Array[Double | Null]
   ): js.Array[Date] = js.native
 }
-

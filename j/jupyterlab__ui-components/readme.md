@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__ui-components
 
-Typings are for version 2.1.1
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - UI components written in React
@@ -10,9 +10,9 @@ JupyterLab - UI components written in React
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/ui-components |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 19 |
-| # downloads        | 468237 |
+| # releases         | 98 |
+| # dependents       | 102 |
+| # downloads        | 1628066 |
 | # stars            | 0 |
 
 ## Links

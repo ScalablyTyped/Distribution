@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Comments")
 @js.native
 class ResourceComments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * blogger.comments.approve
     * @desc Marks a comment as not spam.
@@ -43,6 +43,9 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * blogger.comments.delete
     * @desc Delete a comment by ID.
@@ -69,6 +72,7 @@ class ResourceComments protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceCommentsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * blogger.comments.get
     * @desc Gets one comment by ID.
@@ -100,6 +104,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
   /**
     * blogger.comments.list
     * @desc Retrieves the comments for a post, possibly filtered.
@@ -136,6 +141,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentList]
   ): Unit = js.native
+  
   /**
     * blogger.comments.listByBlog
     * @desc Retrieves the comments for a blog, across all posts, possibly
@@ -171,6 +177,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentList]
   ): Unit = js.native
+  
   /**
     * blogger.comments.markAsSpam
     * @desc Marks a comment as spam.
@@ -201,6 +208,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
   /**
     * blogger.comments.removeContent
     * @desc Removes the content of a comment.
@@ -232,4 +240,3 @@ class ResourceComments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
 }
-

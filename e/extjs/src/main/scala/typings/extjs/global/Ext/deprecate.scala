@@ -2,11 +2,12 @@ package typings.extjs.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.deprecate")
 @js.native
 object deprecate extends js.Object {
+  
   def apply(): Unit = js.native
   def apply(
     packageName: js.UndefOr[scala.Nothing],
@@ -49,4 +50,3 @@ object deprecate extends js.Object {
   def apply(packageName: java.lang.String, since: java.lang.String, closure: js.Any): Unit = js.native
   def apply(packageName: java.lang.String, since: java.lang.String, closure: js.Any, scope: js.Any): Unit = js.native
 }
-

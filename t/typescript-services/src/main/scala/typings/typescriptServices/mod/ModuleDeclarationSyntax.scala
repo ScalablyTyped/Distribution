@@ -5,7 +5,7 @@ import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ModuleDeclarationSyntax")
 @js.native
@@ -22,12 +22,12 @@ class ModuleDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "ModuleDeclarationSyntax")
 @js.native
 object ModuleDeclarationSyntax extends js.Object {
+  
   def create(moduleKeyword: ISyntaxToken, openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = js.native
+  
   def create1(): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = js.native
 }
-

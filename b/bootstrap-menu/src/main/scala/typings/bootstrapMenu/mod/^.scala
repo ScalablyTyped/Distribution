@@ -2,7 +2,7 @@ package typings.bootstrapMenu.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bootstrap-menu", JSImport.Namespace)
 @js.native
@@ -13,4 +13,3 @@ class ^ protected () extends BootstrapMenu {
     */
   def this(selector: String, options: BootstrapMenuOptions) = this()
 }
-

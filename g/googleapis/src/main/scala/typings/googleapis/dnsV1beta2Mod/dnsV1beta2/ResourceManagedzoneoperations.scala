@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1beta2", "dns_v1beta2.Resource$Managedzoneoperations")
 @js.native
 class ResourceManagedzoneoperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.managedZoneOperations.get
     * @alias dns.managedZoneOperations.get
@@ -43,6 +45,7 @@ class ResourceManagedzoneoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dns.managedZoneOperations.list
     * @alias dns.managedZoneOperations.list
@@ -78,4 +81,3 @@ class ResourceManagedzoneoperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaManagedZoneOperationsListResponse]
   ): Unit = js.native
 }
-

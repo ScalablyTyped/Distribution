@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Item type allows you to access and modify the items in
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Item ()
   extends typings.paper.paper.Item
-

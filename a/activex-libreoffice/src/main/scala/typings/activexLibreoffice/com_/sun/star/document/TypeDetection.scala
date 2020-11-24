@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * encapsulate a type detection service and provide read/write access on it's configuration data.
@@ -27,8 +27,8 @@ trait TypeDetection
      with XTypeDetection
      with XContainerQuery
      with XFlushable
-
 object TypeDetection {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -56,4 +56,3 @@ object TypeDetection {
     __obj.asInstanceOf[TypeDetection]
   }
 }
-

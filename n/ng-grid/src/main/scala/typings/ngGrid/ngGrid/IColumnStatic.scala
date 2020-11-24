@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable6
 import typings.ngGrid.ngGrid.service.IDomUtilityService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IColumnStatic
@@ -17,4 +17,3 @@ trait IColumnStatic
       /* $utils */ js.Any, 
       IColumn
     ]
-

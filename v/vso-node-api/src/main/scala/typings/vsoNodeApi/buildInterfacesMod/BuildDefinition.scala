@@ -7,65 +7,84 @@ import typings.vsoNodeApi.distributedTaskCommonInterfacesMod.ProcessParameters
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BuildDefinition extends BuildDefinitionReference {
+  
   /**
     * Indicates whether badges are enabled for this definition.
     */
   var badgeEnabled: Boolean = js.native
+  
   /**
     * The build number format.
     */
   var buildNumberFormat: String = js.native
+  
   /**
     * A save-time comment for the definition.
     */
   var comment: String = js.native
+  
   var demands: js.Array[_] = js.native
+  
   /**
     * The description.
     */
   var description: String = js.native
+  
   /**
     * The drop location for the definition.
     */
   var dropLocation: String = js.native
+  
   /**
     * The job authorization scope for builds queued against this definition.
     */
   var jobAuthorizationScope: BuildAuthorizationScope = js.native
+  
   /**
     * The job cancel timeout (in minutes) for builds cancelled by user for this definition.
     */
   var jobCancelTimeoutInMinutes: Double = js.native
+  
   /**
     * The job execution timeout (in minutes) for builds queued against this definition.
     */
   var jobTimeoutInMinutes: Double = js.native
+  
   var options: js.Array[BuildOption] = js.native
+  
   /**
     * The build process.
     */
   var process: BuildProcess = js.native
+  
   /**
     * The process parameters for this definition.
     */
   var processParameters: ProcessParameters = js.native
+  
   var properties: js.Any = js.native
+  
   /**
     * The repository.
     */
   var repository: BuildRepository = js.native
+  
   var retentionRules: js.Array[RetentionPolicy] = js.native
+  
   var tags: js.Array[String] = js.native
+  
   var triggers: js.Array[BuildTrigger] = js.native
+  
   var variableGroups: js.Array[VariableGroup] = js.native
+  
   var variables: StringDictionary[BuildDefinitionVariable] = js.native
 }
-
 object BuildDefinition {
+  
   @scala.inline
   def apply(
     _links: js.Any,
@@ -111,68 +130,95 @@ object BuildDefinition {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildDefinition]
   }
+  
   @scala.inline
   implicit class BuildDefinitionOps[Self <: BuildDefinition] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBadgeEnabled(value: Boolean): Self = this.set("badgeEnabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBuildNumberFormat(value: String): Self = this.set("buildNumberFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = this.set("demands", js.Array(value :_*))
+    
     @scala.inline
     def setDemands(value: js.Array[_]): Self = this.set("demands", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropLocation(value: String): Self = this.set("dropLocation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setJobAuthorizationScope(value: BuildAuthorizationScope): Self = this.set("jobAuthorizationScope", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setJobCancelTimeoutInMinutes(value: Double): Self = this.set("jobCancelTimeoutInMinutes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setJobTimeoutInMinutes(value: Double): Self = this.set("jobTimeoutInMinutes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOptionsVarargs(value: BuildOption*): Self = this.set("options", js.Array(value :_*))
+    
     @scala.inline
     def setOptions(value: js.Array[BuildOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProcess(value: BuildProcess): Self = this.set("process", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProcessParameters(value: ProcessParameters): Self = this.set("processParameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRepository(value: BuildRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRetentionRulesVarargs(value: RetentionPolicy*): Self = this.set("retentionRules", js.Array(value :_*))
+    
     @scala.inline
     def setRetentionRules(value: js.Array[RetentionPolicy]): Self = this.set("retentionRules", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    
     @scala.inline
     def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTriggersVarargs(value: BuildTrigger*): Self = this.set("triggers", js.Array(value :_*))
+    
     @scala.inline
     def setTriggers(value: js.Array[BuildTrigger]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVariableGroupsVarargs(value: VariableGroup*): Self = this.set("variableGroups", js.Array(value :_*))
+    
     @scala.inline
     def setVariableGroups(value: js.Array[VariableGroup]): Self = this.set("variableGroups", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVariables(value: StringDictionary[BuildDefinitionVariable]): Self = this.set("variables", value.asInstanceOf[js.Any])
   }
-  
 }
-

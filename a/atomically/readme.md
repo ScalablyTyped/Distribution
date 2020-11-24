@@ -1,7 +1,7 @@
 
 # Scala.js typings for atomically
 
-Typings are for version 1.3.2
+Typings are for version 1.7.0
 
 ## Library description:
 Read and write files atomically and reliably.
@@ -10,9 +10,9 @@ Read and write files atomically and reliably.
 | ------------------ | :-------------: |
 | Full name          | atomically |
 | Keywords           | atomic, read, write, file, reliable |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 1019 |
+| # downloads        | 153652 |
 | # stars            | 0 |
 
 ## Links

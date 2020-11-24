@@ -2,7 +2,7 @@ package typings.officeJs.global.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,10 +13,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ContentControlAppearance")
 @js.native
 object ContentControlAppearance extends js.Object {
-  /* "BoundingBox" */ val boundingBox: typings.officeJs.Word.ContentControlAppearance.boundingBox with String = js.native
-  /* "Hidden" */ val hidden: typings.officeJs.Word.ContentControlAppearance.hidden with String = js.native
-  /* "Tags" */ val tags: typings.officeJs.Word.ContentControlAppearance.tags with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Word.ContentControlAppearance with String] = js.native
+  
+  /* "BoundingBox" */ val boundingBox: typings.officeJs.Word.ContentControlAppearance.boundingBox with String = js.native
+  
+  /* "Hidden" */ val hidden: typings.officeJs.Word.ContentControlAppearance.hidden with String = js.native
+  
+  /* "Tags" */ val tags: typings.officeJs.Word.ContentControlAppearance.tags with String = js.native
 }
-

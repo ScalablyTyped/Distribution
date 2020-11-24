@@ -4,7 +4,7 @@ import typings.fabric.fabricImplMod.TextOptions
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Text")
 @js.native
@@ -18,12 +18,13 @@ class Text protected ()
   def this(text: String) = this()
   def this(text: String, options: TextOptions) = this()
 }
-
 /* static members */
 @JSImport("fabric", "fabric.Text")
 @js.native
 object Text extends js.Object {
+  
   var DEFAULT_SVG_FONT_SIZE: Double = js.native
+  
   /**
     * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
     * @static
@@ -36,6 +37,7 @@ object Text extends js.Object {
   def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: TextOptions): typings.fabric.fabricImplMod.Text = js.native
   def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Text = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): typings.fabric.fabricImplMod.Text = js.native
+  
   /**
     * Returns fabric.Text instance from an object representation
     * @static
@@ -46,4 +48,3 @@ object Text extends js.Object {
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Text = js.native
   def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Text = js.native
 }
-

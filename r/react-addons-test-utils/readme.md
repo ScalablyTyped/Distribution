@@ -10,9 +10,9 @@ This package provides the React TestUtils add-on.
 | ------------------ | :-------------: |
 | Full name          | react-addons-test-utils |
 | Keywords           | react, react-addon |
-| # releases         | 1 |
-| # dependents       | 309 |
-| # downloads        | 14594933 |
+| # releases         | 0 |
+| # dependents       | 312 |
+| # downloads        | 12845437 |
 | # stars            | 15 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.when.global.When
 import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("When.reduceRight")
 @js.native
 object reduceRight extends js.Object {
+  
   /**
     * Traditional reduce function, similar to `Array.prototype.reduceRight()`, but
     * input may contain promises and/or values, and reduceFunc
@@ -24,4 +25,3 @@ object reduceRight extends js.Object {
     initialValue: T
   ): Promise[T] = js.native
 }
-

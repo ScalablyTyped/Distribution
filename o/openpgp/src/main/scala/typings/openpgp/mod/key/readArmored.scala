@@ -3,11 +3,12 @@ package typings.openpgp.mod.key
 import typings.openpgp.mod.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "key.readArmored")
 @js.native
 object readArmored extends js.Object {
+  
   /**
     * Reads an OpenPGP armored text and returns one or multiple key objects
     * @param armoredText text to be parsed
@@ -16,4 +17,3 @@ object readArmored extends js.Object {
   def apply(armoredText: String): js.Promise[KeyResult] = js.native
   def apply(armoredText: ReadableStream[String]): js.Promise[KeyResult] = js.native
 }
-

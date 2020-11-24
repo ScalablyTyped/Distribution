@@ -31,26 +31,11 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, ^, ^] {
-  var labelDisplay: auto | off = js.native
-  var labelledBy: String | Null = js.native
-  var layout: grid | list = js.native
-  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], _]) | Null = js.native
-  var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[grid | list], _]) | Null = js.native
-  @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojColorPalette: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojColorPalette: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onPaletteChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Label]], _]) | Null = js.native
-  var onSwatchSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xs | sm | lg], _]) | Null = js.native
-  var palette: js.Array[Label] = js.native
-  var swatchSize: xs | sm | lg = js.native
-  @JSName("translations")
-  var translations_ojColorPalette: LabelNone = js.native
+  
   def addEventListener(
     `type`: labelDisplayChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], _]
@@ -100,6 +85,7 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
   @JSName("getProperty")
   def getProperty_labelDisplay(property: labelDisplay): auto | off = js.native
   @JSName("getProperty")
@@ -110,7 +96,33 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
   def getProperty_palette(property: palette): js.Array[Label] = js.native
   @JSName("getProperty")
   def getProperty_swatchSize(property: swatchSize): xs | sm | lg = js.native
+  
+  var labelDisplay: auto | off = js.native
+  
+  var labelledBy: String | Null = js.native
+  
+  var layout: grid | list = js.native
+  
+  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], _]) | Null = js.native
+  
+  var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  
+  var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[grid | list], _]) | Null = js.native
+  
+  @JSName("onOjAnimateEnd")
+  var onOjAnimateEnd_ojColorPalette: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  
+  @JSName("onOjAnimateStart")
+  var onOjAnimateStart_ojColorPalette: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  
+  var onPaletteChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Label]], _]) | Null = js.native
+  
+  var onSwatchSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xs | sm | lg], _]) | Null = js.native
+  
+  var palette: js.Array[Label] = js.native
+  
   def setProperties(properties: ojColorPaletteSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: labelDisplay, value: auto): Unit = js.native
   def setProperty(property: labelDisplay, value: off): Unit = js.native
   def setProperty(property: layout, value: grid): Unit = js.native
@@ -126,12 +138,17 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
   def setProperty_palette(property: palette, value: js.Array[Label]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelNone): Unit = js.native
+  
+  var swatchSize: xs | sm | lg = js.native
+  
+  @JSName("translations")
+  var translations_ojColorPalette: LabelNone = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojcolorpalette", "ojColorPalette")
 @js.native
 object ojColorPalette extends js.Object {
+  
   type ojAnimateEnd = CustomEvent[Action]
+  
   type ojAnimateStart = CustomEvent[Element]
 }
-

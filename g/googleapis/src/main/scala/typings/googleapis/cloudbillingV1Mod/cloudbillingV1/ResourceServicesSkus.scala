@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbilling/v1", "cloudbilling_v1.Resource$Services$Skus")
 @js.native
 class ResourceServicesSkus protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudbilling.services.skus.list
     * @desc Lists all publicly available SKUs for a given cloud service.
@@ -114,4 +116,3 @@ class ResourceServicesSkus protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListSkusResponse]
   ): Unit = js.native
 }
-

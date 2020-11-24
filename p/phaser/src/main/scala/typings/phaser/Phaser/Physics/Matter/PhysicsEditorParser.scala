@@ -2,7 +2,7 @@ package typings.phaser.Phaser.Physics.Matter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use PhysicsEditorParser.parseBody() to build a Matter body object, based on a physics data file
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Phaser.Physics.Matter.PhysicsEditorParser")
 @js.native
 object PhysicsEditorParser extends js.Object
-

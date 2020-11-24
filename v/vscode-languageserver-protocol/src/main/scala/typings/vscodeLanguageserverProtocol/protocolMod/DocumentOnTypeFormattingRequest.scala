@@ -5,12 +5,14 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverTypes.mod.TextEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentOnTypeFormattingRequest")
 @js.native
 object DocumentOnTypeFormattingRequest extends js.Object {
+  
   val method: textDocumentSlashonTypeFormatting = js.native
+  
   val `type`: ProtocolRequestType[
     DocumentOnTypeFormattingParams, 
     js.Array[TextEdit] | Null, 
@@ -19,4 +21,3 @@ object DocumentOnTypeFormattingRequest extends js.Object {
     DocumentOnTypeFormattingRegistrationOptions
   ] = js.native
 }
-

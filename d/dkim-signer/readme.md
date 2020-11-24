@@ -11,8 +11,8 @@ DKIM signing code extracted from mailcomposer
 | Full name          | dkim-signer |
 | Keywords           | DKIM, SMTP, mailcomposer |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1974316 |
+| # dependents       | 5 |
+| # downloads        | 3423653 |
 | # stars            | 0 |
 
 ## Links

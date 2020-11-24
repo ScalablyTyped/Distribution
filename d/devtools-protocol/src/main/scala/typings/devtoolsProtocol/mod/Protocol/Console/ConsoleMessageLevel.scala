@@ -7,7 +7,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.log
 import typings.devtoolsProtocol.devtoolsProtocolStrings.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.log
@@ -17,17 +17,20 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.info
 */
 trait ConsoleMessageLevel extends js.Object
-
 object ConsoleMessageLevel {
+  
   @scala.inline
   def Debug: debug = "debug".asInstanceOf[debug]
+  
   @scala.inline
   def Error: error = "error".asInstanceOf[error]
+  
   @scala.inline
   def Info: info = "info".asInstanceOf[info]
+  
   @scala.inline
   def Log: log = "log".asInstanceOf[log]
+  
   @scala.inline
   def Warning: warning = "warning".asInstanceOf[warning]
 }
-

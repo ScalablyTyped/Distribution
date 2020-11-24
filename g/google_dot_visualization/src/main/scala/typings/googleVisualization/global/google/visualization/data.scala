@@ -9,19 +9,21 @@ import typings.googleVisualization.googleVisualizationStrings.right
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.visualization.data")
 @js.native
 class data ()
   extends typings.googleVisualization.google.visualization.data
-
 /* static members */
 @JSGlobal("google.visualization.data")
 @js.native
 object data extends js.Object {
+  
   def avg(values: js.Array[Date | Double | String]): Double = js.native
+  
   def count(values: js.Array[_]): Double = js.native
+  
   def group(
     data: typings.googleVisualization.google.visualization.DataTable,
     keys: js.Array[Double | GroupKeyOptions]
@@ -40,6 +42,7 @@ object data extends js.Object {
     keys: js.Array[Double | GroupKeyOptions],
     columns: js.Array[GroupColumnOptions]
   ): typings.googleVisualization.google.visualization.DataTable = js.native
+  
   // https://developers.google.com/chart/interactive/docs/reference#join
   @JSName("join")
   def join_full(
@@ -185,11 +188,14 @@ object data extends js.Object {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = js.native
+  
   def max(values: js.Array[Date | Double | String]): Double | String | Date = js.native
+  
   def min(values: js.Array[Date | Double | String]): Double | String | Date = js.native
+  
   // https://developers.google.com/chart/interactive/docs/reference#data_modifier_functions
   def month(value: Date): Double = js.native
+  
   // https://developers.google.com/chart/interactive/docs/reference#group
   def sum(values: js.Array[Date | Double | String]): Double = js.native
 }
-

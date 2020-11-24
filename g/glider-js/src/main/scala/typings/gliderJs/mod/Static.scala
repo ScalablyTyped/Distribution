@@ -5,35 +5,45 @@ import typings.std.HTMLCollection
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static[T /* <: HTMLElement */] extends // tslint:disable-next-line no-misused-new
 Instantiable2[/* ref */ HTMLElement, /* options */ Options, Static[HTMLElement]] {
-  var animate_id: Double = js.native
-  var arrows: js.Object = js.native
-  var breakpoint: Double = js.native
-  var containerWidth: Double = js.native
-  var dots: HTMLElement = js.native
-  var ele: T = js.native
-  var isDrag: Boolean = js.native
-  var itemWidth: Double = js.native
-  var opt: Options = js.native
-  var page: Double = js.native
-  var preventClick: Boolean = js.native
-  var slide: Double = js.native
-  var slides: HTMLCollection = js.native
-  var track: HTMLElement = js.native
-  var trackWidth: Double = js.native
+  
   /**
     * Add an item to the list
     * @param element HTMLElement
     */
   def addItem(element: HTMLElement): Unit = js.native
+  
+  var animate_id: Double = js.native
+  
+  var arrows: js.Object = js.native
+  
+  var breakpoint: Double = js.native
+  
+  var containerWidth: Double = js.native
+  
   /**
     * Destroy Glider.js.
     */
   def destroy(): Unit = js.native
+  
+  var dots: HTMLElement = js.native
+  
+  var ele: T = js.native
+  
+  var isDrag: Boolean = js.native
+  
+  var itemWidth: Double = js.native
+  
+  var opt: Options = js.native
+  
+  var page: Double = js.native
+  
+  var preventClick: Boolean = js.native
+  
   /**
     * Force a refresh of Glider.js. If rebuildPaging is true, paging
     * controls will force a rebuild as well. This arument must be true
@@ -42,11 +52,13 @@ Instantiable2[/* ref */ HTMLElement, /* options */ Options, Static[HTMLElement]]
     * @param rebuildPaging boolean
     */
   def refresh(rebuildPaging: Boolean): Unit = js.native
+  
   /**
     * Remove an item from the list
     * @param itemIndex number
     */
   def removeItem(itemIndex: Double): Unit = js.native
+  
   /**
     * Scroll to any slide or page. If second argument is explicitly
     * true, then the first argument will refer to the page to scroll
@@ -56,11 +68,13 @@ Instantiable2[/* ref */ HTMLElement, /* options */ Options, Static[HTMLElement]]
     */
   def scrollItem(slideIndex: String, isActuallyDotIndex: Boolean): Unit = js.native
   def scrollItem(slideIndex: Double, isActuallyDotIndex: Boolean): Unit = js.native
+  
   /**
     * Scroll directly to supplied scroll position in pixels
     * @param pixelOffset number
     */
   def scrollTo(pixelOffset: Double): Unit = js.native
+  
   /**
     * Overrides options set during initialization. If called when a
     * breakpoint is active, the settings for the active breakpoint are
@@ -72,9 +86,17 @@ Instantiable2[/* ref */ HTMLElement, /* options */ Options, Static[HTMLElement]]
     */
   def setOption(arguments: Options): Unit = js.native
   def setOption(arguments: Options, global: Boolean): Unit = js.native
+  
+  var slide: Double = js.native
+  
+  var slides: HTMLCollection = js.native
+  
+  var track: HTMLElement = js.native
+  
+  var trackWidth: Double = js.native
+  
   /**
     * Force a refresh of Glider.js navigation controls
     */
   def updateControls(): Unit = js.native
 }
-

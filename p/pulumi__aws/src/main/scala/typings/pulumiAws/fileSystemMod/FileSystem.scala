@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/efs/fileSystem", "FileSystem")
 @js.native
@@ -25,10 +25,12 @@ class FileSystem protected () extends CustomResource {
   def this(name: String, args: FileSystemArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: FileSystemArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Amazon Resource Name of the file system.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * A unique name (a maximum of 64 characters are allowed)
     * used as reference when creating the Elastic File System to ensure idempotent file
@@ -36,44 +38,52 @@ class FileSystem protected () extends CustomResource {
     * (http://docs.aws.amazon.com/efs/latest/ug/) user guide for more information.
     */
   val creationToken: Output_[String] = js.native
+  
   /**
     * The DNS name for the filesystem per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
     */
   val dnsName: Output_[String] = js.native
+  
   /**
     * If true, the disk will be encrypted.
     */
   val encrypted: Output_[Boolean] = js.native
+  
   /**
     * The ARN for the KMS encryption key. When specifying kms_key_id, encrypted needs to be set to true.
     */
   val kmsKeyId: Output_[String] = js.native
+  
   /**
     * A file system [lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/API_LifecyclePolicy.html) object (documented below).
     */
   val lifecyclePolicy: Output_[js.UndefOr[FileSystemLifecyclePolicy]] = js.native
+  
   /**
     * The file system performance mode. Can be either `"generalPurpose"` or `"maxIO"` (Default: `"generalPurpose"`).
     */
   val performanceMode: Output_[String] = js.native
+  
   /**
     * The throughput, measured in MiB/s, that you want to provision for the file system. Only applicable with `throughputMode` set to `provisioned`.
     */
   val provisionedThroughputInMibps: Output_[js.UndefOr[Double]] = js.native
+  
   /**
     * A map of tags to assign to the file system.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * Throughput mode for the file system. Defaults to `bursting`. Valid values: `bursting`, `provisioned`. When using `provisioned`, also set `provisionedThroughputInMibps`.
     */
   val throughputMode: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/efs/fileSystem", "FileSystem")
 @js.native
 object FileSystem extends js.Object {
+  
   /**
     * Get an existing FileSystem resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -87,10 +97,10 @@ object FileSystem extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FileSystem = js.native
   def get(name: String, id: Input[ID], state: FileSystemState): FileSystem = js.native
   def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): FileSystem = js.native
+  
   /**
     * Returns true if the given object is an instance of FileSystem.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = js.native
 }
-

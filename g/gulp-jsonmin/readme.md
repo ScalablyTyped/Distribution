@@ -10,9 +10,9 @@ Minifies json files by parsing and re-stringifying them.
 | ------------------ | :-------------: |
 | Full name          | gulp-jsonmin |
 | Keywords           | gulp, gulpplugin, json, jsonmin, min, minify |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 39723 |
+| # downloads        | 46682 |
 | # stars            | 1 |
 
 ## Links

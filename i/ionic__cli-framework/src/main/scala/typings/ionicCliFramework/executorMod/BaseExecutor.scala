@@ -13,17 +13,18 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/cli-framework/lib/executor", "BaseExecutor")
 @js.native
 class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends AbstractExecutor[C, N, M, I, O] {
   def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[C, N, M, I, O]) = this()
+  
   val colors: Colors = js.native
-  val stderr: WriteStream = js.native
-  val stdout: WriteStream = js.native
+  
   @JSName("emit")
   def emit_operationrpc(event: `operation-rpc`, rpc: RPCProcess): Boolean = js.native
+  
   /**
     * Locate and execute a command given an array of positional command
     * arguments (argv) and a set of environment variables.
@@ -37,10 +38,13 @@ class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, 
     */
   def execute(argvOrLocation: js.Array[String]): js.Promise[Unit] = js.native
   def execute(argvOrLocation: NamespaceLocateResult[C, N, M, I, O], env: ProcessEnv): js.Promise[Unit] = js.native
+  
   def formatHelp(location: NamespaceLocateResult[C, N, M, I, O]): js.Promise[String] = js.native
   def formatHelp(location: NamespaceLocateResult[C, N, M, I, O], hasFormat: BaseExecutorFormatHelpOptions): js.Promise[String] = js.native
+  
   @JSName("on")
   def on_operationrpc(event: `operation-rpc`, callback: js.Function1[/* rpc */ RPCProcess, Unit]): this.type = js.native
+  
   /**
     * Initiate RPC operation.
     *
@@ -48,5 +52,8 @@ class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, 
     * channel, allowing request/response communication via RPC.
     */
   def rpc(): js.Promise[Unit] = js.native
+  
+  val stderr: WriteStream = js.native
+  
+  val stdout: WriteStream = js.native
 }
-

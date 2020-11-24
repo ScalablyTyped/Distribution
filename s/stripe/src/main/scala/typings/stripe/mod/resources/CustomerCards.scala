@@ -12,11 +12,12 @@ import typings.stripe.mod.cards.ICard
 import typings.stripe.mod.cards.ICardUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CustomerCards")
 @js.native
 class CustomerCards () extends StripeResource {
+  
   def create(data: Card): js.Promise[ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
@@ -28,6 +29,7 @@ class CustomerCards () extends StripeResource {
   def create(data: Card, options: HeaderOptions): js.Promise[ICard] = js.native
   def create(data: Card, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def create(data: Card, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  
   def del(cardId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete cards from a customer or recipient. If you delete a card that is currently the
@@ -46,6 +48,7 @@ class CustomerCards () extends StripeResource {
   def del(cardId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def del(cardId: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def del(cardId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[ICard] = js.native
   def list(data: IListOptions): IListPromise[ICard] = js.native
   /**
@@ -65,6 +68,7 @@ class CustomerCards () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ICard] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
   def list(response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  
   def retrieve(cardId: String): js.Promise[ICard] = js.native
   /**
     * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
@@ -77,6 +81,7 @@ class CustomerCards () extends StripeResource {
   def retrieve(cardId: String, options: HeaderOptions): js.Promise[ICard] = js.native
   def retrieve(cardId: String, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def retrieve(cardId: String, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  
   def update(cardId: String, data: ICardUpdateOptions): js.Promise[ICard] = js.native
   /**
     * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
@@ -91,4 +96,3 @@ class CustomerCards () extends StripeResource {
   def update(cardId: String, data: ICardUpdateOptions, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def update(cardId: String, data: ICardUpdateOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
 }
-

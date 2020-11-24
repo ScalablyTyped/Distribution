@@ -10,9 +10,9 @@ Run Node.JS programs as native Operating System Services.
 | ------------------ | :-------------: |
 | Full name          | os-service |
 | Keywords           | background-process, background-service, daemon, linux-daemon, linux-service, service, windows, windows-daemon, windows-service |
-| # releases         | 5 |
-| # dependents       | 21 |
-| # downloads        | 15426 |
+| # releases         | 2 |
+| # dependents       | 27 |
+| # downloads        | 17253 |
 | # stars            | 11 |
 
 ## Links

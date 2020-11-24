@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v3p1beta1", "jobs_v3p1beta1.Resource$Projects$Companies")
 @js.native
 class ResourceProjectsCompanies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * jobs.projects.companies.create
     * @desc Creates a new company entity.
@@ -42,6 +44,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
+  
   /**
     * jobs.projects.companies.delete
     * @desc Deletes specified company. Prerequisite: The company has no jobs
@@ -71,6 +74,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * jobs.projects.companies.get
     * @desc Retrieves specified company.
@@ -99,6 +103,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
+  
   /**
     * jobs.projects.companies.list
     * @desc Lists all companies associated with the service account.
@@ -133,6 +138,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCompaniesResponse]
   ): Unit = js.native
+  
   /**
     * jobs.projects.companies.patch
     * @desc Updates specified company. Company names can't be updated. To
@@ -165,4 +171,3 @@ class ResourceProjectsCompanies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCompany]
   ): Unit = js.native
 }
-

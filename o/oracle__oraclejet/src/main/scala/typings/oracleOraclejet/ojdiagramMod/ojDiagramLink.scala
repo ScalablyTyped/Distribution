@@ -149,56 +149,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojDiagramLink extends JetElement[ojDiagramLinkSettableProperties] {
-  var categories: js.Array[String] = js.native
-  var color: js.UndefOr[String] = js.native
-  var endConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.native
-  var endNode: js.Any = js.native
-  var label: js.UndefOr[String] = js.native
-  var labelStyle: js.UndefOr[js.Object | Null] = js.native
-  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onEndConnectorTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
-    ], 
-    _
-  ]) | Null = js.native
-  var onEndNodeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['endNode'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object | Null]], _]) | Null = js.native
-  var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[auto | off]], _]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onStartConnectorTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
-    ], 
-    _
-  ]) | Null = js.native
-  var onStartNodeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['startNode'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var selectable: js.UndefOr[auto | off] = js.native
-  var shortDesc: js.UndefOr[String] = js.native
-  var startConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.native
-  var startNode: js.Any = js.native
-  var svgClassName: js.UndefOr[String] = js.native
-  var svgStyle: js.UndefOr[js.Object] = js.native
-  var width: js.UndefOr[Double] = js.native
+  
   def addEventListener(
     `type`: endConnectorTypeChanged,
     listener: js.ThisFunction1[
@@ -1163,6 +1118,15 @@ trait ojDiagramLink extends JetElement[ojDiagramLinkSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[Double]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var categories: js.Array[String] = js.native
+  
+  var color: js.UndefOr[String] = js.native
+  
+  var endConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.native
+  
+  var endNode: js.Any = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_categories(property: categories): js.Array[String] = js.native
@@ -1190,7 +1154,61 @@ trait ojDiagramLink extends JetElement[ojDiagramLinkSettableProperties] {
   def getProperty_svgStyle(property: svgStyle): js.UndefOr[js.Object] = js.native
   @JSName("getProperty")
   def getProperty_width(property: width): js.UndefOr[Double] = js.native
+  
+  var label: js.UndefOr[String] = js.native
+  
+  var labelStyle: js.UndefOr[js.Object | Null] = js.native
+  
+  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onEndConnectorTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onEndNodeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['endNode'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object | Null]], _]) | Null = js.native
+  
+  var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[auto | off]], _]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onStartConnectorTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onStartNodeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['startNode'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var selectable: js.UndefOr[auto | off] = js.native
+  
   def setProperties(properties: ojDiagramLinkSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: endConnectorType, value: arrow): Unit = js.native
   def setProperty(property: endConnectorType, value: arrowConcave): Unit = js.native
   def setProperty(property: endConnectorType, value: arrowOpen): Unit = js.native
@@ -1248,5 +1266,16 @@ trait ojDiagramLink extends JetElement[ojDiagramLinkSettableProperties] {
   def setProperty_width(property: width): Unit = js.native
   @JSName("setProperty")
   def setProperty_width(property: width, value: Double): Unit = js.native
+  
+  var shortDesc: js.UndefOr[String] = js.native
+  
+  var startConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.native
+  
+  var startNode: js.Any = js.native
+  
+  var svgClassName: js.UndefOr[String] = js.native
+  
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  
+  var width: js.UndefOr[Double] = js.native
 }
-

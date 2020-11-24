@@ -2,7 +2,7 @@ package typings.codemirror.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("codemirror", "Doc")
 @js.native
@@ -21,4 +21,3 @@ class DocCls protected () extends Doc {
   def this(text: String, mode: js.Any, firstLineNumber: js.UndefOr[scala.Nothing], lineSep: String) = this()
   def this(text: String, mode: js.Any, firstLineNumber: Double, lineSep: String) = this()
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Gantt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RowPosition extends js.Object
-
 @JSGlobal("ej.Gantt.RowPosition")
 @js.native
 object RowPosition extends js.Object {
+  
   ///you can add a new row to above selected row.
   @js.native
   sealed trait AboveSelectedRow extends RowPosition
@@ -29,6 +29,4 @@ object RowPosition extends js.Object {
   ///you can add a new row at top.
   @js.native
   sealed trait Top extends RowPosition
-  
 }
-

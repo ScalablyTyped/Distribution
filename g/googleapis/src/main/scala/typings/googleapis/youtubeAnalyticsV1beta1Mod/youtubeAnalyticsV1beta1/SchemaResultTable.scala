@@ -3,7 +3,7 @@ package typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1
 import typings.googleapis.anon.ColumnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a single result table. The table is returned as an array of rows
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaResultTable extends js.Object {
+  
   /**
     * This value specifies information about the data returned in the rows
     * fields. Each item in the columnHeaders list identifies a field returned
@@ -26,12 +27,14 @@ trait SchemaResultTable extends js.Object {
     * ageGroup,gender,viewerPercentage.
     */
   var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.native
+  
   /**
     * This value specifies the type of data included in the API response. For
     * the query method, the kind property value will be
     * youtubeAnalytics#resultTable.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * The list contains all rows of the result table. Each item in the list is
     * an array that contains comma-delimited data corresponding to a single row
@@ -43,41 +46,51 @@ trait SchemaResultTable extends js.Object {
     */
   var rows: js.UndefOr[js.Array[js.Array[_]]] = js.native
 }
-
 object SchemaResultTable {
+  
   @scala.inline
   def apply(): SchemaResultTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultTable]
   }
+  
   @scala.inline
   implicit class SchemaResultTableOps[Self <: SchemaResultTable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setColumnHeadersVarargs(value: ColumnType*): Self = this.set("columnHeaders", js.Array(value :_*))
+    
     @scala.inline
     def setColumnHeaders(value: js.Array[ColumnType]): Self = this.set("columnHeaders", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumnHeaders: Self = this.set("columnHeaders", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setRowsVarargs(value: js.Array[js.Any]*): Self = this.set("rows", js.Array(value :_*))
+    
     @scala.inline
     def setRows(value: js.Array[js.Array[_]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRows: Self = this.set("rows", js.undefined)
   }
-  
 }
-

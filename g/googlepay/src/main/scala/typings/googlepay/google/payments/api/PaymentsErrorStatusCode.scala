@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This object contains details about errors returned by client JavaScript
@@ -37,15 +37,17 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.INTERNAL_ERROR
 */
 trait PaymentsErrorStatusCode extends js.Object
-
 object PaymentsErrorStatusCode {
+  
   @scala.inline
   def BUYER_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR]
+  
   @scala.inline
   def DEVELOPER_ERROR: typings.googlepay.googlepayStrings.DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.DEVELOPER_ERROR]
+  
   @scala.inline
   def INTERNAL_ERROR: typings.googlepay.googlepayStrings.INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.INTERNAL_ERROR]
+  
   @scala.inline
   def MERCHANT_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR]
 }
-

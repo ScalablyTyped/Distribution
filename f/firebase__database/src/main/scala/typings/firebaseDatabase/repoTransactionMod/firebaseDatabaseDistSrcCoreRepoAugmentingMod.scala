@@ -5,14 +5,16 @@ import typings.firebaseDatabase.pathMod.Path
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("@firebase/database/dist/src/core/Repo", JSImport.Namespace)
 @js.native
 object firebaseDatabaseDistSrcCoreRepoAugmentingMod extends js.Object {
+  
   @js.native
   trait Repo extends js.Object {
+    
     def startTransaction(
       path: Path,
       transactionUpdate: js.Function1[/* a */ js.Any, Unit],
@@ -26,6 +28,4 @@ object firebaseDatabaseDistSrcCoreRepoAugmentingMod extends js.Object {
       applyLocally: Boolean
     ): Unit = js.native
   }
-  
 }
-

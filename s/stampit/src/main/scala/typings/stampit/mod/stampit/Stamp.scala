@@ -9,7 +9,7 @@ import typings.stampit.mod.StampSignature
 import typings.stampit.mod.StampType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A factory function to create plain object instances.
@@ -22,21 +22,23 @@ trait Stamp[Obj]
   extends FactoryFunction[Obj]
      with Chainables[StampObjectType[Obj], StampType[Obj]]
      with StampSignature {
+  
+  /* InferMemberOverrides */
+  override def apply(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] with js.Any = js.native
+  /* InferMemberOverrides */
+  override def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] with js.Any = js.native
+  
   /**
     * A function which creates a new `Stamp`s from a list of `Composable`s.
     * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
     */
   @JSName("compose")
   var compose_Stamp: ComposeMethod with (Descriptor[StampObjectType[Obj], Stamp[StampObjectType[Obj]]]) = js.native
-  /** Just like calling stamp(), stamp.create() invokes the stamp and returns a new instance. */
-  @JSName("create")
-  var create_Original: FactoryFunction[Obj] = js.native
-  /* InferMemberOverrides */
-  override def apply(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] with js.Any = js.native
-  /* InferMemberOverrides */
-  override def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] with js.Any = js.native
+  
   def create(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] = js.native
   /** Just like calling stamp(), stamp.create() invokes the stamp and returns a new instance. */
   def create(options: PropertyMap, args: js.Any*): StampObjectType[Obj] = js.native
+  /** Just like calling stamp(), stamp.create() invokes the stamp and returns a new instance. */
+  @JSName("create")
+  var create_Original: FactoryFunction[Obj] = js.native
 }
-

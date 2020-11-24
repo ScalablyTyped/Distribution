@@ -4,11 +4,12 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.ProjectionLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "proj.fromLonLat")
 @js.native
 object fromLonLat extends js.Object {
+  
   /**
     * Transforms a coordinate from longitude/latitude to a different projection.
     * @param coordinate Coordinate as longitude and latitude, i.e.
@@ -21,4 +22,3 @@ object fromLonLat extends js.Object {
   def apply(coordinate: Coordinate_): Coordinate_ = js.native
   def apply(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = js.native
 }
-

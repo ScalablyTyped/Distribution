@@ -2,7 +2,7 @@ package typings.zfont.mod.zdogAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Horizontal text alignment (equivalent to the CSS `text-align` property).
@@ -15,13 +15,14 @@ import scala.scalajs.js.annotation._
   - typings.zfont.zfontStrings.right
 */
 trait TextAlign extends js.Object
-
 object TextAlign {
+  
   @scala.inline
   def center: typings.zfont.zfontStrings.center = "center".asInstanceOf[typings.zfont.zfontStrings.center]
+  
   @scala.inline
   def left: typings.zfont.zfontStrings.left = "left".asInstanceOf[typings.zfont.zfontStrings.left]
+  
   @scala.inline
   def right: typings.zfont.zfontStrings.right = "right".asInstanceOf[typings.zfont.zfontStrings.right]
 }
-

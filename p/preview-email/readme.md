@@ -10,9 +10,9 @@ Automatically opens your browser to preview Node.js email messages sent with Nod
 | ------------------ | :-------------: |
 | Full name          | preview-email |
 | Keywords           | auto, automatic, automatically, browser, chrome, demo, email, emails, engine, express, koa, lad, lass, letter, litmus, mail, mailer, nodemailer, open, open, opener, opn, preview, pug, render, show, smtp, template, templates, test |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 2214629 |
+| # downloads        | 2407070 |
 | # stars            | 0 |
 
 ## Links

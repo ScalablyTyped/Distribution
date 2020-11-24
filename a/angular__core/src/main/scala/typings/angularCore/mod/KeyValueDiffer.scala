@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KeyValueDiffer[K, V] extends js.Object {
+  
   /**
     * Compute a difference between the previous state and the new `object` state.
     *
@@ -25,4 +26,3 @@ trait KeyValueDiffer[K, V] extends js.Object {
     */
   def diff(`object`: Map[K, V]): (KeyValueChanges[K, V]) | Null = js.native
 }
-

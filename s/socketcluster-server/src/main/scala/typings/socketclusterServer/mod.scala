@@ -5,24 +5,15 @@ import typings.socketclusterServer.serverMod.AGServerOptions
 import typings.socketclusterServer.serverMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("socketcluster-server", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class AGServer () extends ^ {
-    def this(options: AGServerOptions) = this()
-  }
-  
-  @js.native
-  class AGServerSocket protected ()
-    extends typings.socketclusterServer.serversocketMod.^ {
-    def this(id: String, server: ^, socket: typings.ws.mod.^, protocolVersion: Double) = this()
-  }
   
   def attach(server: Server): AGServer = js.native
   def attach(server: Server, options: AGServerOptions): AGServer = js.native
+  
   def listen(): AGServer = js.native
   def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): AGServer = js.native
   def listen(
@@ -37,5 +28,15 @@ object mod extends js.Object {
   def listen(port: Double, options: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): AGServer = js.native
   def listen(port: Double, options: AGServerOptions): AGServer = js.native
   def listen(port: Double, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = js.native
+  
+  @js.native
+  class AGServer () extends ^ {
+    def this(options: AGServerOptions) = this()
+  }
+  
+  @js.native
+  class AGServerSocket protected ()
+    extends typings.socketclusterServer.serversocketMod.^ {
+    def this(id: String, server: ^, socket: typings.ws.mod.^, protocolVersion: Double) = this()
+  }
 }
-

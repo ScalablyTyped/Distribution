@@ -3,9 +3,8 @@ package typings.kendoUi.global.kendo.data.binders
 import typings.kendoUi.kendo.data.Binder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.data.binders.events")
 @js.native
 class events () extends Binder
-

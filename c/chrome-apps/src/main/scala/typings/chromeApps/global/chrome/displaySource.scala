@@ -10,7 +10,7 @@ import typings.chromeApps.chromeAppsStrings.timeout_error_
 import typings.chromeApps.chromeAppsStrings.unknown_error_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.displaySource
@@ -26,13 +26,21 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.displaySource")
 @js.native
 object displaySource extends js.Object {
+  
   val getAvailableSinks: js.Function = js.native
+  
   val onSessionErrorOccured: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  
   val onSessionTerminated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  
   val onSinksUpdated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  
   val requestAuthentication: js.Function = js.native
+  
   val startSession: js.Function = js.native
+  
   val terminateSession: js.Function = js.native
+  
   /**
     * @enum
     * @description
@@ -45,7 +53,9 @@ object displaySource extends js.Object {
     */
   @js.native
   object AuthenticationMethod extends js.Object {
+    
     var PBC: typings.chromeApps.chromeAppsStrings.PBC = js.native
+    
     var PIN: typings.chromeApps.chromeAppsStrings.PIN = js.native
   }
   
@@ -72,10 +82,15 @@ object displaySource extends js.Object {
     */
   @js.native
   object ErrorType extends js.Object {
+    
     var CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error_ = js.native
+    
     var CONNECTION_ERROR: connection_error_ = js.native
+    
     var MEDIA_PIPELINE_ERROR: media_pipeline_error_ = js.native
+    
     var TIMEOUT_ERROR: timeout_error_ = js.native
+    
     var UNKNOWN_ERROR: unknown_error_ = js.native
   }
   
@@ -93,10 +108,11 @@ object displaySource extends js.Object {
     */
   @js.native
   object SinkState extends js.Object {
+    
     var CONNECTED: Connected_ = js.native
+    
     var CONNECTING: Connecting_ = js.native
+    
     var DISCONNECTED: Disconnected_ = js.native
   }
-  
 }
-

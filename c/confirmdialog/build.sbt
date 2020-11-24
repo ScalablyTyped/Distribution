@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "confirmdialog"
-version := "1.0.2-f4c7d8"
+version := "1.0.2-4d2bb4"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

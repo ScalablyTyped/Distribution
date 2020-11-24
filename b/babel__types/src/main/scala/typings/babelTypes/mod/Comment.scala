@@ -2,15 +2,15 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.CommentBlock
   - typings.babelTypes.mod.CommentLine
 */
 trait Comment extends js.Object
-
 object Comment {
+  
   @scala.inline
   def CommentBlock(
     end: Double,
@@ -23,6 +23,7 @@ object Comment {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
+  
   @scala.inline
   def CommentLine(
     end: Double,
@@ -36,4 +37,3 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
 }
-

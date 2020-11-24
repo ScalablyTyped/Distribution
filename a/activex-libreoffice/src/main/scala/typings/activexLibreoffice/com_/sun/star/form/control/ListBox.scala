@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.form.XBoundControl
 import typings.activexLibreoffice.com_.sun.star.form.XChangeBroadcaster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a list box control which can (but not necessarily has to) be bound to a database field.
@@ -19,4 +19,3 @@ trait ListBox
   extends UnoControlListBox
      with XBoundControl
      with XChangeBroadcaster
-

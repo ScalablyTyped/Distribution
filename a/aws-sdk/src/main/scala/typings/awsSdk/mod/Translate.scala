@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.translateMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Translate")
 @js.native
@@ -14,4 +14,3 @@ class Translate ()
   extends typings.awsSdk.allMod.Translate {
   def this(options: ClientConfiguration) = this()
 }
-

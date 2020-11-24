@@ -1,19 +1,28 @@
 package typings.ethers.mod
 
-import typings.ethers.utilsMod.types.BigNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethers", "constants")
 @js.native
 object constants extends js.Object {
-  var AddressZero: String = js.native
-  var HashZero: String = js.native
-  var NegativeOne: BigNumber = js.native
-  var One: BigNumber = js.native
-  var Two: BigNumber = js.native
-  var WeiPerEther: BigNumber = js.native
-  var Zero: BigNumber = js.native
+  
+  val AddressZero: /* "0x0000000000000000000000000000000000000000" */ String = js.native
+  
+  val EtherSymbol: /* "\\u039E" */ String = js.native
+  
+  val HashZero: /* "0x0000000000000000000000000000000000000000000000000000000000000000" */ String = js.native
+  
+  val MaxUint256: typings.ethersprojectBignumber.mod.BigNumber = js.native
+  
+  val NegativeOne: typings.ethersprojectBignumber.mod.BigNumber = js.native
+  
+  val One: typings.ethersprojectBignumber.mod.BigNumber = js.native
+  
+  val Two: typings.ethersprojectBignumber.mod.BigNumber = js.native
+  
+  val WeiPerEther: typings.ethersprojectBignumber.mod.BigNumber = js.native
+  
+  val Zero: typings.ethersprojectBignumber.mod.BigNumber = js.native
 }
-

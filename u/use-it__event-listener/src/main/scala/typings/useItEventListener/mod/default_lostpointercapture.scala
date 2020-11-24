@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.lostpointercapture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_lostpointercapture extends js.Object {
+  
   def apply(eventName: lostpointercapture, handler: PointerEvent): Unit = js.native
   def apply(
     eventName: lostpointercapture,
@@ -44,4 +45,3 @@ object default_lostpointercapture extends js.Object {
   def apply(eventName: lostpointercapture, handler: PointerEvent, element: Window): Unit = js.native
   def apply(eventName: lostpointercapture, handler: PointerEvent, element: Window, options: Options): Unit = js.native
 }
-

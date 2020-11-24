@@ -2,11 +2,12 @@ package typings.yeomanAssert.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yeoman-assert", "objectContent")
 @js.native
 object objectContent extends js.Object {
+  
   /**
     * Assert an object contains the provided keys
     * @param obj Object that should match the given pattern
@@ -14,4 +15,3 @@ object objectContent extends js.Object {
     */
   def apply(obj: js.Object, content: js.Object): Unit = js.native
 }
-

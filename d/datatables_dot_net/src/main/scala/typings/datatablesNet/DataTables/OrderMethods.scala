@@ -4,18 +4,20 @@ import typings.datatablesNet.JQuery
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "ajax-methods"
 //#region "order-methods"
 @js.native
 trait OrderMethods extends js.Object {
+  
   /**
     * Get the ordering applied to the table.
     */
   def apply(): js.Array[js.Array[String | Double]] = js.native
   def apply(order: js.Array[(js.Array[String | Double]) | Double | String]): Api = js.native
   def apply(order: js.Array[String | Double], args: js.Any*): Api = js.native
+  
   /**
     * Get the fixed ordering that is applied to the table. If there is more than one table in the API's context,
     * the ordering of the first table will be returned only (use table() if you require the ordering of a different table in the API's context).
@@ -25,6 +27,7 @@ trait OrderMethods extends js.Object {
     * Set the table's fixed ordering. Note this doesn't actually perform the order, but rather queues it up - use draw() to perform the ordering.
     */
   def fixed(order: ObjectOrderFixed): Api = js.native
+  
   /**
     * Add an ordering listener to an element, for a given column.
     *
@@ -36,4 +39,3 @@ trait OrderMethods extends js.Object {
   def listener(node: JQuery, column: Double, callback: js.Function0[Unit]): Api = js.native
   def listener(node: Node, column: Double, callback: js.Function0[Unit]): Api = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.materialsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "PowBlock")
 @js.native
@@ -14,4 +14,3 @@ class PowBlock protected ()
     */
   def this(name: String) = this()
 }
-

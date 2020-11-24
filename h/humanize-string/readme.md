@@ -10,9 +10,9 @@ Convert a camelized/dasherized/underscored string into a humanized one: `fooBar-
 | ------------------ | :-------------: |
 | Full name          | humanize-string |
 | Keywords           | humanize, human, pretty, capitalize, uppercase, case, camelcase, dash, hyphen, underscore, string, text, convert |
-| # releases         | 4 |
-| # dependents       | 45 |
-| # downloads        | 4817214 |
+| # releases         | 3 |
+| # dependents       | 53 |
+| # downloads        | 6489015 |
 | # stars            | 1 |
 
 ## Links

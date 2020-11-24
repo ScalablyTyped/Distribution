@@ -2,7 +2,7 @@ package typings.slickgrid.global.Slick
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Slick.Range")
 @js.native
@@ -21,4 +21,3 @@ class Range protected ()
   def this(fromRow: Double, fromCell: Double, toRow: js.UndefOr[scala.Nothing], toCell: Double) = this()
   def this(fromRow: Double, fromCell: Double, toRow: Double, toCell: Double) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "DebugAdapterInlineImplementation")
 @js.native
@@ -12,4 +12,3 @@ class DebugAdapterInlineImplementation protected () extends DebugAdapterDescript
     */
   def this(implementation: DebugAdapter) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The target for mouse interaction is not in the browser’s viewport and
@@ -14,4 +14,3 @@ class MoveTargetOutOfBoundsError ()
   extends typings.seleniumWebdriver.mod.error.MoveTargetOutOfBoundsError {
   def this(message: String) = this()
 }
-

@@ -10,13 +10,13 @@ import typings.rdfjsFetchLite.mod.RdfFetchResponse
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@rdfjs/fetch", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(url: String): js.Promise[RdfFetchResponse[Quad]] = js.native
   def apply(url: String, options: PartialFormatsInit): js.Promise[RdfFetchResponse[Quad]] = js.native
   def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String, options: Partial[FactoryInit[D, OutQuad, InQuad]]): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = js.native
 }
-

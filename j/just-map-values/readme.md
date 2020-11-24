@@ -10,9 +10,9 @@ map an object, predicate updates values, recieves (value, key, object)
 | ------------------ | :-------------: |
 | Full name          | just-map-values |
 | Keywords           | object, map, values, no-dependencies, just |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 274034 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 12124 |
 | # stars            | 0 |
 
 ## Links

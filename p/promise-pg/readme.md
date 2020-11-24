@@ -11,7 +11,7 @@ Promise wrapper for node-postgres
 | Keywords           | postgres, promise |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1698 |
+| # downloads        | 2179 |
 | # stars            | 1 |
 
 ## Links

@@ -13,11 +13,15 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "inspector")
 @js.native
 object inspector extends js.Object {
+  
+  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = js.native
+  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
+  
   @js.native
   class AssessmentTarget protected ()
     extends typings.pulumiAws.inspectorMod.AssessmentTarget {
@@ -33,6 +37,30 @@ object inspector extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AssessmentTargetArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object AssessmentTarget extends js.Object {
+    
+    /**
+      * Get an existing AssessmentTarget resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    def get(name: String, id: Input[ID], state: AssessmentTargetState): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    
+    /**
+      * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean = js.native
+  }
   
   @js.native
   class AssessmentTemplate protected ()
@@ -46,6 +74,30 @@ object inspector extends js.Object {
       */
     def this(name: String, args: AssessmentTemplateArgs) = this()
     def this(name: String, args: AssessmentTemplateArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object AssessmentTemplate extends js.Object {
+    
+    /**
+      * Get an existing AssessmentTemplate resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    def get(name: String, id: Input[ID], state: AssessmentTemplateState): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    
+    /**
+      * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = js.native
   }
   
   @js.native
@@ -61,58 +113,10 @@ object inspector extends js.Object {
     def this(name: String, args: ResourceGroupArgs) = this()
     def this(name: String, args: ResourceGroupArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = js.native
-  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
-  /* static members */
-  @js.native
-  object AssessmentTarget extends js.Object {
-    /**
-      * Get an existing AssessmentTarget resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
-    def get(name: String, id: Input[ID], state: AssessmentTargetState): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
-    def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
-    /**
-      * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object AssessmentTemplate extends js.Object {
-    /**
-      * Get an existing AssessmentTemplate resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
-    def get(name: String, id: Input[ID], state: AssessmentTemplateState): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
-    def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
-    /**
-      * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object ResourceGroup extends js.Object {
+    
     /**
       * Get an existing ResourceGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -126,12 +130,11 @@ object inspector extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
     def get(name: String, id: Input[ID], state: ResourceGroupState): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
     def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
+    
     /**
       * Returns true if the given object is an instance of ResourceGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean = js.native
   }
-  
 }
-

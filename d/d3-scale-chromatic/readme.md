@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-scale-chromatic
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
 Sequential, diverging and categorical color schemes.
@@ -10,9 +10,9 @@ Sequential, diverging and categorical color schemes.
 | ------------------ | :-------------: |
 | Full name          | d3-scale-chromatic |
 | Keywords           | d3, d3-module, color, scale, sequential, colorbrewer |
-| # releases         | 8 |
-| # dependents       | 135 |
-| # downloads        | 15694741 |
+| # releases         | 6 |
+| # dependents       | 178 |
+| # downloads        | 27058770 |
 | # stars            | 0 |
 
 ## Links

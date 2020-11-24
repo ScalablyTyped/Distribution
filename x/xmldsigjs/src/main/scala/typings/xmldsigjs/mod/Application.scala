@@ -4,22 +4,24 @@ import typings.std.Crypto
 import typings.xmldsigjs.applicationMod.CryptoEx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "Application")
 @js.native
 class Application ()
   extends typings.xmldsigjs.applicationMod.Application
-
 /* static members */
 @JSImport("xmldsigjs", "Application")
 @js.native
 object Application extends js.Object {
+  
   /**
     * Gets the crypto module from the Application
     */
   def crypto: CryptoEx = js.native
+  
   def isNodePlugin(): Boolean = js.native
+  
   /**
     * Sets crypto engine for the current Application
     * @param  {string} name
@@ -28,4 +30,3 @@ object Application extends js.Object {
     */
   def setEngine(name: String, crypto: Crypto): Unit = js.native
 }
-

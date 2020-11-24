@@ -10,9 +10,9 @@ Display express server routes in your terminal
 | ------------------ | :-------------: |
 | Full name          | express-routemap |
 | Keywords           | express, routes |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 25796 |
+| # releases         | 3 |
+| # dependents       | 1 |
+| # downloads        | 37549 |
 | # stars            | 1 |
 
 ## Links

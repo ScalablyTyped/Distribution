@@ -3,7 +3,7 @@ package typings.heredatalens.H.datalens
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies how to access layer data (shapes, geometries) using the Data Lens REST API.
@@ -12,10 +12,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SpatialTileProvider_ extends RemoteTileProvider {
+  
   /**
     * Updates the layer name to be used in the next call of the Data Lens REST API. Note that new data will be fetched only after the reload method is called.
     */
   def setLayerName(layerName: String): Unit = js.native
+  
   /**
     * Updates the query's dynamic parameters to be used in the next call of the Data Lens REST API. Note that new data will be fetched only after the reload method is called.
     * This method is normally used when updating your visualization.
@@ -23,4 +25,3 @@ trait SpatialTileProvider_ extends RemoteTileProvider {
   def setQueryParams(): Unit = js.native
   def setQueryParams(queryParams: js.Any): Unit = js.native
 }
-

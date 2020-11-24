@@ -3,7 +3,7 @@ package typings.inputmask.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inputmask", JSImport.Namespace)
 @js.native
@@ -23,8 +23,6 @@ class ^ () extends Instance {
   def this(opts: Options) = this()
   def this(maskOrAlias: String, opts: Options) = this()
 }
-
 @JSImport("inputmask", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[Static]
-

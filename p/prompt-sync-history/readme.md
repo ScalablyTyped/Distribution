@@ -11,8 +11,8 @@ History manager for `prompt-sync`
 | Full name          | prompt-sync-history |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 42773 |
+| # dependents       | 9 |
+| # downloads        | 60620 |
 | # stars            | 0 |
 
 ## Links

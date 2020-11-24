@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iso8601-localizer"
-version := "v1.2.1-dt-20200515Z-83a20e"
+version := "v1.2.1-dt-20201002Z-e75cc3"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

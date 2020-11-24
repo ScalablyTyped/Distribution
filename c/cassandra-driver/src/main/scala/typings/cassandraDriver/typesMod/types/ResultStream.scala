@@ -4,12 +4,14 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResultStream extends Readable {
-  var buffer: Buffer = js.native
-  var paused: Boolean = js.native
+  
   def add(chunk: Buffer): Unit = js.native
+  
+  var buffer: Buffer = js.native
+  
+  var paused: Boolean = js.native
 }
-

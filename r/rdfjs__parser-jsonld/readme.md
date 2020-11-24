@@ -10,9 +10,9 @@ JSON-LD parser that implements the RDFJS Sink interface using jsonld.js
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/parser-jsonld |
 | Keywords           | rdf, rdfjs, parser, jsonld |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 6580 |
+| # releases         | 4 |
+| # dependents       | 6 |
+| # downloads        | 21726 |
 | # stars            | 0 |
 
 ## Links

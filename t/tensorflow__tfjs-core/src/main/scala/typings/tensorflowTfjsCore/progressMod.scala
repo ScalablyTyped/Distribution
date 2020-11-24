@@ -3,11 +3,12 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.typesMod.OnProgressCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/io/progress", JSImport.Namespace)
 @js.native
 object progressMod extends js.Object {
+  
   def monitorPromisesProgress(promises: js.Array[js.Promise[js.Object | Unit]], onProgress: OnProgressCallback): js.Promise[js.Array[js.Object]] = js.native
   def monitorPromisesProgress(
     promises: js.Array[js.Promise[js.Object | Unit]],
@@ -27,4 +28,3 @@ object progressMod extends js.Object {
     endFraction: Double
   ): js.Promise[js.Array[js.Object]] = js.native
 }
-

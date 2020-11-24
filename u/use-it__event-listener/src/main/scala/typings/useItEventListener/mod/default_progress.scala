@@ -8,11 +8,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.progress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_progress extends js.Object {
+  
   def apply(eventName: progress, handler: ProgressEvent[EventTarget | Window]): Unit = js.native
   def apply(
     eventName: progress,
@@ -45,4 +46,3 @@ object default_progress extends js.Object {
   def apply(eventName: progress, handler: ProgressEvent[Window], element: Window): Unit = js.native
   def apply(eventName: progress, handler: ProgressEvent[Window], element: Window, options: Options): Unit = js.native
 }
-

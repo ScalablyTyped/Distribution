@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -8,9 +9,10 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon")
 @js.native
@@ -20,27 +22,25 @@ class GlyphIcon protected () extends Icon {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FGlyphIcon: IModel = js.native
+  
   def code: Double = js.native
   def code_=(newValue: Double): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon")
 @js.native
 object GlyphIcon extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): GlyphIcon = js.native
+  
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
     * The new GlyphIcon will be automatically stored in the 'icon' property
@@ -50,24 +50,28 @@ object GlyphIcon extends js.Object {
     *  8.0.0 and higher
     */
   def createInBottomBarItemUnderIcon(container: BottomBarItem): GlyphIcon = js.native
+  
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
     * The new GlyphIcon will be automatically stored in the 'icon' property
     * of the parent Button element passed as argument.
     */
   def createInButtonUnderIcon(container: Button): GlyphIcon = js.native
+  
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
     * The new GlyphIcon will be automatically stored in the 'icon' property
     * of the parent ControlBarButton element passed as argument.
     */
   def createInControlBarButtonUnderIcon(container: ControlBarButton): GlyphIcon = js.native
+  
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
     * The new GlyphIcon will be automatically stored in the 'icon' property
     * of the parent menus.MenuItem element passed as argument.
     */
   def createInMenuItemUnderIcon(container: MenuItem): GlyphIcon = js.native
+  
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
     * The new GlyphIcon will be automatically stored in the 'icon' property
@@ -77,5 +81,8 @@ object GlyphIcon extends js.Object {
     *  8.0.0 and higher
     */
   def createInWidgetValueUnderIcon(container: WidgetValue): GlyphIcon = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

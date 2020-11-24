@@ -2,7 +2,7 @@ package typings.ibmMobilefirst.global.WL
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WL.BusyIndicator")
 @js.native
@@ -12,4 +12,3 @@ class BusyIndicator ()
   def this(containerId: js.UndefOr[scala.Nothing], options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
   def this(containerId: String, options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
 }
-

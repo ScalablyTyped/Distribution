@@ -1,7 +1,7 @@
 
 # Scala.js typings for ratelimiter
 
-Typings are for version 2.1.1
+Typings are for version 3.4
 
 ## Library description:
 abstract rate limiter backed by redis
@@ -10,9 +10,9 @@ abstract rate limiter backed by redis
 | ------------------ | :-------------: |
 | Full name          | ratelimiter |
 | Keywords           | rate, ratelimit, limiter, limit |
-| # releases         | 6 |
-| # dependents       | 29 |
-| # downloads        | 421041 |
+| # releases         | 5 |
+| # dependents       | 31 |
+| # downloads        | 788216 |
 | # stars            | 29 |
 
 ## Links

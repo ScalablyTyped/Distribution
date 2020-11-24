@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @memberof PIXI
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IBitmapFontOptions extends js.Object
-

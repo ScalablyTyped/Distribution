@@ -2,11 +2,12 @@ package typings.phaser.Phaser.Display
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Display.Canvas")
 @js.native
 object Canvas extends js.Object {
+  
   /**
     * The CanvasPool is a global static object, that allows Phaser to recycle and pool 2D Context Canvas DOM elements.
     * It does not pool WebGL Contexts, because once the context options are set they cannot be modified again, 
@@ -17,6 +18,4 @@ object Canvas extends js.Object {
     */
   @js.native
   object CanvasPool extends js.Object
-  
 }
-

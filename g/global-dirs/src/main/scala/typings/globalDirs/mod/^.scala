@@ -2,11 +2,12 @@ package typings.globalDirs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("global-dirs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Get the directory of globally installed packages and binaries.
   	@example
@@ -19,6 +20,7 @@ object ^ extends js.Object {
   	```
   	*/
   val npm: GlobalDirectories = js.native
+  
   /**
   	Get the directory of globally installed packages and binaries.
   	@example
@@ -32,4 +34,3 @@ object ^ extends js.Object {
   	*/
   val yarn: GlobalDirectories = js.native
 }
-

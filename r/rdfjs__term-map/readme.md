@@ -12,7 +12,7 @@ Map for RDF/JS Terms keys
 | Keywords           | map, rdf, rdfjs, term |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 748 |
+| # downloads        | 1102 |
 | # stars            | 0 |
 
 ## Links

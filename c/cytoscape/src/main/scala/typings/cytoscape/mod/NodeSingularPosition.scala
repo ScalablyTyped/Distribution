@@ -3,28 +3,32 @@ package typings.cytoscape.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/position--dimensions
   */
 @js.native
 trait NodeSingularPosition extends js.Object {
+  
   /**
     * Get whether the user can grab a node.
     * http://js.cytoscape.org/#node.grabbable
     */
   def grabbable(): Boolean = js.native
+  
   /**
     * Get whether a node is currently grabbed, meaning the user has hold of the node.
     * http://js.cytoscape.org/#node.grabbed
     */
   def grabbed(): Boolean = js.native
+  
   /**
     * Get whether a node is locked, meaning that its position can not be changed.
     * http://js.cytoscape.org/#node.locked
     */
   def locked(): Boolean = js.native
+  
   /**
     * Get the (model) position of a node.
     */
@@ -46,6 +50,7 @@ trait NodeSingularPosition extends js.Object {
     * @param pos An object specifying name-value pairs representing dimensions to set.
     */
   def modelPosition(pos: Position): this.type = js.native
+  
   /**
     * Get the (model) position of a node.
     */
@@ -67,6 +72,7 @@ trait NodeSingularPosition extends js.Object {
     * @param pos An object specifying name-value pairs representing dimensions to set.
     */
   def point(pos: Position): this.type = js.native
+  
   /**
     * Get the (model) position of a node.
     */
@@ -88,6 +94,7 @@ trait NodeSingularPosition extends js.Object {
     * @param pos An object specifying name-value pairs representing dimensions to set.
     */
   def position(pos: Position): this.type = js.native
+  
   /**
     * Get the value of a specified relative position dimension.
     * @param dimension The position dimension to get.
@@ -98,6 +105,7 @@ trait NodeSingularPosition extends js.Object {
   def relativePoint(dimension: PositionDimension): Position = js.native
   def relativePoint(dimension: PositionDimension, value: Position): this.type = js.native
   def relativePoint(pos: StringDictionary[Double]): this.type = js.native
+  
   /**
     *
     * http://js.cytoscape.org/#node.relativePosition
@@ -112,6 +120,7 @@ trait NodeSingularPosition extends js.Object {
   def relativePosition(dimension: PositionDimension): Position = js.native
   def relativePosition(dimension: PositionDimension, value: Position): this.type = js.native
   def relativePosition(pos: StringDictionary[Double]): this.type = js.native
+  
   /**
     * Set the value of a specified rendered position dimension.
     * @param dimension The position dimension to set.
@@ -122,6 +131,7 @@ trait NodeSingularPosition extends js.Object {
   def renderedPoint(dimension: PositionDimension): Position = js.native
   def renderedPoint(dimension: PositionDimension, value: Position): this.type = js.native
   def renderedPoint(pos: StringDictionary[Double]): this.type = js.native
+  
   /**
     * Get or set the rendered (on-screen) position of a node.
     * http://js.cytoscape.org/#node.renderedPosition
@@ -137,4 +147,3 @@ trait NodeSingularPosition extends js.Object {
   def renderedPosition(dimension: PositionDimension, value: Position): this.type = js.native
   def renderedPosition(pos: StringDictionary[Double]): this.type = js.native
 }
-

@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of named ranges in a spreadsheet document.
@@ -24,8 +24,8 @@ trait NamedRanges
      with XIndexAccess
      with XEnumerationAccess
      with XActionLockable
-
 object NamedRanges {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -56,4 +56,3 @@ object NamedRanges {
     __obj.asInstanceOf[NamedRanges]
   }
 }
-

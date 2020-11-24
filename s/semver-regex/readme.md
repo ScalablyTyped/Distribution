@@ -11,8 +11,8 @@ Regular expression for matching semver versions
 | Full name          | semver-regex |
 | Keywords           | semver, version, versions, regex, regexp, match, matching, semantic |
 | # releases         | 4 |
-| # dependents       | 86 |
-| # downloads        | 54742332 |
+| # dependents       | 110 |
+| # downloads        | 104388514 |
 | # stars            | 2 |
 
 ## Links

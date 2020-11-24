@@ -3,13 +3,14 @@ package typings.kiiCloudSdk.KiiCloud
 import typings.kiiCloudSdk.anon.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a KiiThingContext object
   */
 @js.native
 trait KiiThingContext extends js.Object {
+  
   /**
     * Creates a reference to a bucket in App scope operated by thing.
     *
@@ -28,6 +29,7 @@ trait KiiThingContext extends js.Object {
     *         });
     */
   def bucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Creates a reference to a encrypted bucket in App scope operated by thing.
     *     <br><br>The bucket will be created/accessed within this app's scope
@@ -47,6 +49,7 @@ trait KiiThingContext extends js.Object {
     *         });
     */
   def encryptedBucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Gets authenticated KiiThing instance.
     * <br>Returned thing instance only have thingID, vendorThingID and accessToken.
@@ -57,6 +60,7 @@ trait KiiThingContext extends js.Object {
     * @return return authenticated KiiThing instance.
     */
   def getAuthenticatedThing(): KiiThing = js.native
+  
   /**
     * Gets a list of topics in app scope
     *
@@ -127,6 +131,7 @@ trait KiiThingContext extends js.Object {
   def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  
   /**
     * Creates a reference to an object operated by thing using object`s URI.
     *
@@ -137,12 +142,14 @@ trait KiiThingContext extends js.Object {
     * @throws If the URI is null, empty or does not have correct format.
     */
   def objectWithURI(`object`: String): KiiObject = js.native
+  
   /**
     * Instantiate push installation for this thing.
     *
     * @return push installation object.
     */
   def pushInstallation(): KiiPushInstallation = js.native
+  
   /**
     * Creates a reference to a topic in App scope operated by thing.
     * <br><br>The Topic will be created/accessed within this app's scope
@@ -153,4 +160,3 @@ trait KiiThingContext extends js.Object {
     */
   def topicWithName(topicName: String): KiiTopic = js.native
 }
-

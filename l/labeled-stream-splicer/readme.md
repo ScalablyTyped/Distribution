@@ -10,9 +10,9 @@ stream splicer with labels
 | ------------------ | :-------------: |
 | Full name          | labeled-stream-splicer |
 | Keywords           | splice, stream, labels, mutable, pipeline |
-| # releases         | 3 |
-| # dependents       | 41 |
-| # downloads        | 26427760 |
+| # releases         | 2 |
+| # dependents       | 44 |
+| # downloads        | 30619880 |
 | # stars            | 5 |
 
 ## Links

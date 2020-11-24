@@ -2,11 +2,12 @@ package typings.materialTabScroller
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/tab-scroller/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2018 Google Inc.
@@ -31,16 +32,19 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ANIMATING: String = js.native
+    
     var SCROLL_AREA_SCROLL: String = js.native
+    
     var SCROLL_TEST: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var AREA_SELECTOR: String = js.native
+    
     var CONTENT_SELECTOR: String = js.native
   }
-  
 }
-

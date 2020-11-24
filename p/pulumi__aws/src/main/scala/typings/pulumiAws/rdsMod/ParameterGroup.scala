@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/rds", "ParameterGroup")
 @js.native
@@ -23,11 +23,11 @@ class ParameterGroup protected ()
   def this(name: String, args: ParameterGroupArgs) = this()
   def this(name: String, args: ParameterGroupArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/rds", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {
+  
   /**
     * Get an existing ParameterGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object ParameterGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.rdsParameterGroupMod.ParameterGroup = js.native
   def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.rdsParameterGroupMod.ParameterGroup = js.native
   def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.rdsParameterGroupMod.ParameterGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/parameterGroup.ParameterGroup */ Boolean = js.native
 }
-

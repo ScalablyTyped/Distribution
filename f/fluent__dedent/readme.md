@@ -10,9 +10,9 @@ A template literal tag for dedenting Fluent code
 | ------------------ | :-------------: |
 | Full name          | @fluent/dedent |
 | Keywords           | dedent, fluent, ftl |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 1376 |
+| # downloads        | 5374 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.mathjax.MathJax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSMath2jaxPreprocessor extends js.Object {
+  
   /*This controls whether jsMath2jax inserts MathJax_Preview spans to make a preview available, and what preview
     * to use, when it locates in-line or display mathematics in the page. The default is "TeX", which means use the
     * TeX code as the preview (which will be visible until it is processed by MathJax). Set to "none" to prevent
@@ -14,27 +15,30 @@ trait JSMath2jaxPreprocessor extends js.Object {
     */
   var preview: js.Any = js.native
 }
-
 object JSMath2jaxPreprocessor {
+  
   @scala.inline
   def apply(preview: js.Any): JSMath2jaxPreprocessor = {
     val __obj = js.Dynamic.literal(preview = preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSMath2jaxPreprocessor]
   }
+  
   @scala.inline
   implicit class JSMath2jaxPreprocessorOps[Self <: JSMath2jaxPreprocessor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPreview(value: js.Any): Self = this.set("preview", value.asInstanceOf[js.Any])
   }
-  
 }
-

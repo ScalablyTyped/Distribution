@@ -12,7 +12,7 @@ Library to help monitor operating system memory
 | Keywords           | memory, monitoring, lib |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 427 |
+| # downloads        | 523 |
 | # stars            | 0 |
 
 ## Links

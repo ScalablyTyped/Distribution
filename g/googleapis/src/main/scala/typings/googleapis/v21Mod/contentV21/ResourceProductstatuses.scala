@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Productstatuses")
 @js.native
 class ResourceProductstatuses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.productstatuses.custombatch
     * @desc Gets the statuses of multiple products in a single request.
@@ -44,6 +46,7 @@ class ResourceProductstatuses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductstatusesCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.productstatuses.get
     * @desc Gets the status of a product from your Merchant Center account.
@@ -74,6 +77,7 @@ class ResourceProductstatuses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductStatus]
   ): Unit = js.native
+  
   /**
     * content.productstatuses.list
     * @desc Lists the statuses of the products in your Merchant Center account.
@@ -109,4 +113,3 @@ class ResourceProductstatuses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProductstatusesListResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.materialTextfield.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @license
@@ -29,8 +29,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/textfield", "helperTextCssClasses")
 @js.native
 object helperTextCssClasses extends js.Object {
+  
   var HELPER_TEXT_PERSISTENT: String = js.native
+  
   var HELPER_TEXT_VALIDATION_MSG: String = js.native
+  
   var ROOT: String = js.native
 }
-

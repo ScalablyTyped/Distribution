@@ -7,11 +7,14 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/resolve/resolvable", JSImport.Namespace)
 @js.native
 object resolvableMod extends js.Object {
+  
+  var defaultResolvePolicy: ResolvePolicy = js.native
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.uirouterCore.stateInterfaceMod.ResolveTypes because Already inherited */ @js.native
   class Resolvable protected () extends ResolvableLiteral {
@@ -64,12 +67,10 @@ object resolvableMod extends js.Object {
       data: js.Any
     ) = this()
     def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
+    
     @JSName("deps")
     var deps_Resolvable: js.Array[_] = js.native
-    @JSName("policy")
-    var policy_Resolvable: ResolvePolicy = js.native
-    var promise: js.Promise[_] = js.native
-    var resolved: Boolean = js.native
+    
     /**
       * Gets a promise for this Resolvable's data.
       *
@@ -78,7 +79,14 @@ object resolvableMod extends js.Object {
       */
     def get(resolveContext: ResolveContext): js.Promise[_] = js.native
     def get(resolveContext: ResolveContext, trans: Transition): js.Promise[_] = js.native
+    
     def getPolicy(state: StateObject): ResolvePolicy = js.native
+    
+    @JSName("policy")
+    var policy_Resolvable: ResolvePolicy = js.native
+    
+    var promise: js.Promise[_] = js.native
+    
     /**
       * Asynchronously resolve this Resolvable's data
       *
@@ -88,14 +96,13 @@ object resolvableMod extends js.Object {
       */
     def resolve(resolveContext: ResolveContext): js.Promise[_] = js.native
     def resolve(resolveContext: ResolveContext, trans: Transition): js.Promise[_] = js.native
+    
+    var resolved: Boolean = js.native
   }
-  
-  var defaultResolvePolicy: ResolvePolicy = js.native
   /* static members */
   @js.native
   object Resolvable extends js.Object {
+    
     def fromData(token: js.Any, data: js.Any): Resolvable = js.native
   }
-  
 }
-

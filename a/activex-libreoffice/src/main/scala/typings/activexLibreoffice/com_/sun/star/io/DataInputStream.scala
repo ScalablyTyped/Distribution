@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * reads structured data from a chained {@link XInputStream} .
@@ -17,8 +17,8 @@ trait DataInputStream
   extends XDataInputStream
      with XActiveDataSink
      with XConnectable
-
 object DataInputStream {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -52,4 +52,3 @@ object DataInputStream {
     __obj.asInstanceOf[DataInputStream]
   }
 }
-

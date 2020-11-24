@@ -3,22 +3,54 @@ package typings.sequelize.mod
 import typings.sequelize.sequelizeStrings.check
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AddCheckConstraintOptions extends AddConstraintOptions {
-  var name: js.UndefOr[String] = js.undefined
-  var `type`: check
-  var where: js.UndefOr[AnyWhereOptions] = js.undefined
+  
+  var name: js.UndefOr[String] = js.native
+  
+  var `type`: check = js.native
+  
+  var where: js.UndefOr[AnyWhereOptions] = js.native
 }
-
 object AddCheckConstraintOptions {
+  
   @scala.inline
-  def apply(`type`: check, name: String = null, where: AnyWhereOptions = null): AddCheckConstraintOptions = {
+  def apply(`type`: check): AddCheckConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCheckConstraintOptions]
   }
+  
+  @scala.inline
+  implicit class AddCheckConstraintOptionsOps[Self <: AddCheckConstraintOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setType(value: check): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    
+    @scala.inline
+    def setWhere(value: AnyWhereOptions): Self = this.set("where", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWhere: Self = this.set("where", js.undefined)
+  }
 }
-

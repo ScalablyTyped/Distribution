@@ -3,7 +3,7 @@ package typings.angularCompiler.mod
 import typings.angularCompiler.astMod.TemplateBindingIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "VariableBinding")
 @js.native
@@ -21,4 +21,3 @@ class VariableBinding protected ()
     value: TemplateBindingIdentifier
   ) = this()
 }
-

@@ -11,8 +11,8 @@ Blazing fast unique hash generator
 | Full name          | hash-sum |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 479 |
-| # downloads        | 46258133 |
+| # dependents       | 595 |
+| # downloads        | 92834273 |
 | # stars            | 6 |
 
 ## Links

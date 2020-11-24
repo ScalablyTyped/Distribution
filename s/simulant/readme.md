@@ -12,7 +12,7 @@ Simulated DOM events for automated testing
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 682804 |
+| # downloads        | 536362 |
 | # stars            | 1 |
 
 ## Links

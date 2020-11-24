@@ -4,13 +4,12 @@ import typings.xmlCore.mod.XmlCollection
 import typings.xmldsigjs.transformMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs/build/types/xml/transform_collection", JSImport.Namespace)
 @js.native
 object transformCollectionMod extends js.Object {
+  
   @js.native
   class Transforms () extends XmlCollection[Transform]
-  
 }
-

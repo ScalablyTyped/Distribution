@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextScript extends js.Object
-
 /** Specifies the character repertoire (typically the script) for a run of character formatting. */
 @JSGlobal("Windows.UI.Text.TextScript")
 @js.native
 object TextScript extends js.Object {
+  
   /** Aboriginal */
   @js.native
   sealed trait aboriginal extends TextScript
@@ -266,6 +266,4 @@ object TextScript extends js.Object {
   /** Yi */
   @js.native
   sealed trait yi extends TextScript
-  
 }
-

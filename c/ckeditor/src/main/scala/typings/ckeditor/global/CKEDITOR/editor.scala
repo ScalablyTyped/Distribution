@@ -2,7 +2,7 @@ package typings.ckeditor.global.CKEDITOR
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CKEDITOR.editor")
 @js.native
@@ -24,4 +24,3 @@ class editor ()
     mode: Double
   ) = this()
 }
-

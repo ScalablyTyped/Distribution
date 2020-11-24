@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChangeType extends js.Object
-
 @JSGlobal("SP.ChangeType")
 @js.native
 object ChangeType extends js.Object {
+  
   @js.native
   sealed trait add extends ChangeType
   
@@ -72,6 +72,4 @@ object ChangeType extends js.Object {
   
   @js.native
   sealed trait update extends ChangeType
-  
 }
-

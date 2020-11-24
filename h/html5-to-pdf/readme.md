@@ -10,9 +10,9 @@ HTML5 to PDF converter
 | ------------------ | :-------------: |
 | Full name          | html5-to-pdf |
 | Keywords           | html5, pdf, convert, template, generator |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 42432 |
+| # downloads        | 55907 |
 | # stars            | 15 |
 
 ## Links

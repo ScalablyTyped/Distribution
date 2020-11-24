@@ -5,15 +5,13 @@ import typings.virtualDom.VirtualDOM.VText
 import typings.virtualDom.VirtualDOM.VTextConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("virtual-dom/vnode/vtext", JSImport.Namespace)
 @js.native
 class ^ protected () extends VText {
   def this(text: String) = this()
 }
-
 @JSImport("virtual-dom/vnode/vtext", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[VTextConstructor]
-

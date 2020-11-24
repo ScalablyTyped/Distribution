@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.MapTypeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.MapType")
 @js.native
@@ -14,4 +14,3 @@ class MapType protected ()
   def this(name: String, layers: js.Array[typings.baidumapWebSdk.BMap.TileLayer], opts: MapTypeOptions) = this()
   def this(name: String, layers: typings.baidumapWebSdk.BMap.TileLayer, opts: MapTypeOptions) = this()
 }
-

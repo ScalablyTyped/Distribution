@@ -3,10 +3,11 @@ package typings.cloudmersiveVirusApiClient.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebsiteScanResult extends VirusScanResult {
+  
   /**
     * @param WebsiteHttpResponseCode number (int32)
     * The remote server URL HTTP reasponse code; useful for debugging issues with scanning;
@@ -15,14 +16,13 @@ trait WebsiteScanResult extends VirusScanResult {
     * remote server for the provided URL.
     */
   var WebsiteHttpResponseCode: Double = js.native
+  
   /**
     * @param WebsiteThreatType None, Malware, Phishing, ForcedDownload, UnableToConnect
     * Type of threat returned; can be None, Malware, ForcedDownload or Phishing
     */
   var WebsiteThreatType: typings.cloudmersiveVirusApiClient.mod.WebsiteThreatType = js.native
 }
-
 @JSImport("cloudmersive-virus-api-client", "WebsiteScanResult")
 @js.native
 object WebsiteScanResult extends TopLevel[WebsiteScanResult]
-

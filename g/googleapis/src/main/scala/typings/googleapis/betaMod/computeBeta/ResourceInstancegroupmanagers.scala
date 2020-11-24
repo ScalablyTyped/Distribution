@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Instancegroupmanagers")
 @js.native
 class ResourceInstancegroupmanagers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.instanceGroupManagers.abandonInstances
     * @desc Flags the specified instances to be removed from the managed
@@ -122,6 +122,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.aggregatedList
     * @desc Retrieves the list of managed instance groups and groups them by
@@ -225,6 +226,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupManagerAggregatedList]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.applyUpdatesToInstances
     * @desc Apply changes to selected instances on the managed instance group.
@@ -260,6 +262,9 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.instanceGroupManagers.delete
     * @desc Deletes the specified managed instance group and all of the
@@ -353,6 +358,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.deleteInstances
     * @desc Flags the specified instances in the managed instance group for
@@ -460,6 +466,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.get
     * @desc Returns all of the details about the specified managed instance
@@ -555,6 +562,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupManager]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.insert
     * @desc Creates a managed instance group using the information that you
@@ -653,6 +661,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.list
     * @desc Retrieves a list of managed instance groups that are contained
@@ -759,6 +768,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupManagerList]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.listManagedInstances
     * @desc Lists all of the instances in the managed instance group. Each
@@ -877,6 +887,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroupManagersListManagedInstancesResponse]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.patch
     * @desc Updates a managed instance group using the information that you
@@ -981,6 +992,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.recreateInstances
     * @desc Flags the specified instances in the managed instance group to be
@@ -1087,6 +1099,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.resize
     * @desc Resizes the managed instance group. If you increase the size, the
@@ -1200,6 +1213,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.resizeAdvanced
     * @desc Resizes the managed instance group with advanced configuration
@@ -1308,6 +1322,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.setAutoHealingPolicies
     * @desc Modifies the autohealing policies. [Deprecated] This method is
@@ -1406,6 +1421,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.setInstanceTemplate
     * @desc Specifies the instance template to use when creating new instances
@@ -1505,6 +1521,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.setTargetPools
     * @desc Modifies the target pools to which all instances in this managed
@@ -1607,6 +1624,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -1702,6 +1720,7 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.instanceGroupManagers.update
     * @desc Updates a managed instance group using the information that you
@@ -1805,4 +1824,3 @@ class ResourceInstancegroupmanagers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

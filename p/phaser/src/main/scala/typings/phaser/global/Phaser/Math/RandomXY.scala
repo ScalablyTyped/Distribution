@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.RandomXY")
 @js.native
 object RandomXY extends js.Object {
+  
   /**
     * Compute a random unit vector.
     * 
@@ -19,4 +20,3 @@ object RandomXY extends js.Object {
   def apply(vector: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = js.native
   def apply(vector: typings.phaser.Phaser.Math.Vector2, scale: Double): typings.phaser.Phaser.Math.Vector2 = js.native
 }
-

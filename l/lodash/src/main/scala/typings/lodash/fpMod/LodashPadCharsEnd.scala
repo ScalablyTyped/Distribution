@@ -3,10 +3,11 @@ package typings.lodash.fpMod
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashPadCharsEnd extends LodashConvertible {
+trait LodashPadCharsEnd extends js.Object {
+  
   def apply(chars: String): LodashPadCharsEnd1x1 = js.native
   def apply(chars: String, length: Double): LodashPadCharsEnd1x3 = js.native
   def apply(chars: String, length: Double, string: String): String = js.native
@@ -15,4 +16,3 @@ trait LodashPadCharsEnd extends LodashConvertible {
   def apply(chars: __, length: Double, string: String): LodashPadCharsEnd1x6 = js.native
   def apply(chars: __, length: __, string: String): LodashPadCharsEnd1x4 = js.native
 }
-

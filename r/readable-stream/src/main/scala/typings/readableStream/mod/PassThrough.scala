@@ -4,13 +4,14 @@ import typings.node.BufferEncoding
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== _stream_passthrough ====
 @JSImport("readable-stream", "PassThrough")
 @js.native
 class PassThrough () extends Transform {
   def this(options: TransformOptions) = this()
+  
   def _transform[T](
     chunk: T,
     encoding: js.UndefOr[scala.Nothing],
@@ -32,4 +33,3 @@ class PassThrough () extends Transform {
     callback: js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[T], Unit]
   ): Unit = js.native
 }
-

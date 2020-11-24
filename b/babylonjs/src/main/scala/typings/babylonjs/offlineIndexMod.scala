@@ -2,11 +2,12 @@ package typings.babylonjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Offline/index", JSImport.Namespace)
 @js.native
 object offlineIndexMod extends js.Object {
+  
   @js.native
   class Database protected ()
     extends typings.babylonjs.databaseMod.Database {
@@ -23,18 +24,22 @@ object offlineIndexMod extends js.Object {
       disableManifestCheck: Boolean
     ) = this()
   }
-  
   /* static members */
   @js.native
   object Database extends js.Object {
+    
     /**
       * Gets a boolean indicating if Database storate is enabled (off by default)
       */
     var IDBStorageEnabled: Boolean = js.native
+    
     /** Gets a boolean indicating if the user agent supports blob storage (this value will be updated after creating the first Database object) */
     var IsUASupportingBlobStorage: js.Any = js.native
+    
     var _ParseURL: js.Any = js.native
+    
     var _ReturnFullUrlLocation: js.Any = js.native
+    
     /**
       * Validates if xhr data is correct
       * @param xhr defines the request to validate
@@ -43,6 +48,4 @@ object offlineIndexMod extends js.Object {
       */
     var _ValidateXHRData: js.Any = js.native
   }
-  
 }
-

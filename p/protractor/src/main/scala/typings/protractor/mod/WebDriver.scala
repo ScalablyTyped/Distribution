@@ -3,7 +3,7 @@ package typings.protractor.mod
 import typings.seleniumWebdriver.httpMod.Executor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "WebDriver")
 @js.native
@@ -19,11 +19,11 @@ class WebDriver protected ()
     */
   def this(session: typings.seleniumWebdriver.mod.Session, executor: Executor) = this()
 }
-
 /* static members */
 @JSImport("protractor", "WebDriver")
 @js.native
 object WebDriver extends js.Object {
+  
   // endregion
   // region StaticMethods
   /**
@@ -87,4 +87,3 @@ object WebDriver extends js.Object {
   // incompatible signatures.
   def createSession(var_args: js.Any*): typings.seleniumWebdriver.mod.WebDriver = js.native
 }
-

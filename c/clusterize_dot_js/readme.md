@@ -10,9 +10,9 @@ Tiny vanilla JS plugin to display large data sets easily
 | ------------------ | :-------------: |
 | Full name          | clusterize.js |
 | Keywords           | large, vanillajs, table, grid, list, scroll, cluster |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 55494 |
+| # releases         | 0 |
+| # dependents       | 9 |
+| # downloads        | 69625 |
 | # stars            | 3 |
 
 ## Links

@@ -12,7 +12,7 @@ Native toast for react-native. In Android it's just native toast, in iOS it's ht
 | Keywords           | react-native, native, toast |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 16470 |
+| # downloads        | 10522 |
 | # stars            | 1 |
 
 ## Links

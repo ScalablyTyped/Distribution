@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A color space for integer bitmap formats
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XIntegerBitmapColorSpace extends XColorSpace {
+  
   /**
     * Query number of bits used per bitmap pixel.
     *
@@ -24,6 +25,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * Similarly, the color conversion expect input data in multiples of ceil(BitsPerPixel/8), and also return converted data in chunks of this.
     */
   val BitsPerPixel: Double = js.native
+  
   /**
     * Query the number of bits used for each component.
     *
@@ -38,11 +40,13 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * 0x8000 for alpha, 0x7C for red, 0x3E for green and 0x1F for blue, the values would be 5, 5, 5, 1, in that order.
     */
   val ComponentBitCounts: SafeArray[Double] = js.native
+  
   /**
     * Query whether color data bytes need to be swapped.
     * @returns `TRUE` , This method returns the endianness of the color data. The value is one of the Endianness constants. If color data is represented using m
     */
   val Endianness: Double = js.native
+  
   /**
     * Convert integer bitmap color to generic IEEE double device color of another color space.
     *
@@ -53,6 +57,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertFromIntegerColorSpace(deviceColor: SeqEquiv[Double], targetColorSpace: XColorSpace): SafeArray[ColorComponent] = js.native
+  
   /**
     * Convert sRGB color with linear alpha into this color space.
     *
@@ -63,6 +68,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertIntegerFromARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[Double] = js.native
+  
   /**
     * Convert premultiplied sRGB color with linear alpha into this color space.
     *
@@ -73,6 +79,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertIntegerFromPARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[Double] = js.native
+  
   /**
     * Convert sRGB color to an integer representation in this color space.
     *
@@ -83,6 +90,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertIntegerFromRGB(rgbColor: SeqEquiv[RGBColor]): SafeArray[Double] = js.native
+  
   /**
     * Convert color value in this color space to sRGB color values, with linear alpha.
     *
@@ -93,6 +101,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertIntegerToARGB(deviceColor: SeqEquiv[Double]): SafeArray[ARGBColor] = js.native
+  
   /**
     * Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
     *
@@ -104,6 +113,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertIntegerToPARGB(deviceColor: SeqEquiv[Double]): SafeArray[ARGBColor] = js.native
+  
   /**
     * Convert color value in this color space to sRGB color values.
     *
@@ -115,6 +125,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertIntegerToRGB(deviceColor: SeqEquiv[Double]): SafeArray[RGBColor] = js.native
+  
   /**
     * Convert integer bitmap color to integer bitmap color of another integer bitmap color space.
     *
@@ -125,6 +136,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertToIntegerColorSpace(deviceColor: SeqEquiv[Double], targetColorSpace: XIntegerBitmapColorSpace): SafeArray[Double] = js.native
+  
   /**
     * Query number of bits used per bitmap pixel.
     *
@@ -133,6 +145,7 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * Similarly, the color conversion expect input data in multiples of ceil(BitsPerPixel/8), and also return converted data in chunks of this.
     */
   def getBitsPerPixel(): Double = js.native
+  
   /**
     * Query the number of bits used for each component.
     *
@@ -147,14 +160,15 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
     * 0x8000 for alpha, 0x7C for red, 0x3E for green and 0x1F for blue, the values would be 5, 5, 5, 1, in that order.
     */
   def getComponentBitCounts(): SafeArray[Double] = js.native
+  
   /**
     * Query whether color data bytes need to be swapped.
     * @returns `TRUE` , This method returns the endianness of the color data. The value is one of the Endianness constants. If color data is represented using m
     */
   def getEndianness(): Double = js.native
 }
-
 object XIntegerBitmapColorSpace {
+  
   @scala.inline
   def apply(
     BitsPerPixel: Double,
@@ -190,46 +204,62 @@ object XIntegerBitmapColorSpace {
     val __obj = js.Dynamic.literal(BitsPerPixel = BitsPerPixel.asInstanceOf[js.Any], ComponentBitCounts = ComponentBitCounts.asInstanceOf[js.Any], ComponentTags = ComponentTags.asInstanceOf[js.Any], Endianness = Endianness.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], RenderingIntent = RenderingIntent.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], convertColorSpace = js.Any.fromFunction2(convertColorSpace), convertFromARGB = js.Any.fromFunction1(convertFromARGB), convertFromIntegerColorSpace = js.Any.fromFunction2(convertFromIntegerColorSpace), convertFromPARGB = js.Any.fromFunction1(convertFromPARGB), convertFromRGB = js.Any.fromFunction1(convertFromRGB), convertIntegerFromARGB = js.Any.fromFunction1(convertIntegerFromARGB), convertIntegerFromPARGB = js.Any.fromFunction1(convertIntegerFromPARGB), convertIntegerFromRGB = js.Any.fromFunction1(convertIntegerFromRGB), convertIntegerToARGB = js.Any.fromFunction1(convertIntegerToARGB), convertIntegerToPARGB = js.Any.fromFunction1(convertIntegerToPARGB), convertIntegerToRGB = js.Any.fromFunction1(convertIntegerToRGB), convertToARGB = js.Any.fromFunction1(convertToARGB), convertToIntegerColorSpace = js.Any.fromFunction2(convertToIntegerColorSpace), convertToPARGB = js.Any.fromFunction1(convertToPARGB), convertToRGB = js.Any.fromFunction1(convertToRGB), getBitsPerPixel = js.Any.fromFunction0(getBitsPerPixel), getComponentBitCounts = js.Any.fromFunction0(getComponentBitCounts), getComponentTags = js.Any.fromFunction0(getComponentTags), getEndianness = js.Any.fromFunction0(getEndianness), getProperties = js.Any.fromFunction0(getProperties), getRenderingIntent = js.Any.fromFunction0(getRenderingIntent), getType = js.Any.fromFunction0(getType))
     __obj.asInstanceOf[XIntegerBitmapColorSpace]
   }
+  
   @scala.inline
   implicit class XIntegerBitmapColorSpaceOps[Self <: XIntegerBitmapColorSpace] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBitsPerPixel(value: Double): Self = this.set("BitsPerPixel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setComponentBitCounts(value: SafeArray[Double]): Self = this.set("ComponentBitCounts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndianness(value: Double): Self = this.set("Endianness", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConvertFromIntegerColorSpace(value: (SeqEquiv[Double], XColorSpace) => SafeArray[ColorComponent]): Self = this.set("convertFromIntegerColorSpace", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setConvertIntegerFromARGB(value: SeqEquiv[ARGBColor] => SafeArray[Double]): Self = this.set("convertIntegerFromARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertIntegerFromPARGB(value: SeqEquiv[ARGBColor] => SafeArray[Double]): Self = this.set("convertIntegerFromPARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertIntegerFromRGB(value: SeqEquiv[RGBColor] => SafeArray[Double]): Self = this.set("convertIntegerFromRGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertIntegerToARGB(value: SeqEquiv[Double] => SafeArray[ARGBColor]): Self = this.set("convertIntegerToARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertIntegerToPARGB(value: SeqEquiv[Double] => SafeArray[ARGBColor]): Self = this.set("convertIntegerToPARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertIntegerToRGB(value: SeqEquiv[Double] => SafeArray[RGBColor]): Self = this.set("convertIntegerToRGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertToIntegerColorSpace(value: (SeqEquiv[Double], XIntegerBitmapColorSpace) => SafeArray[Double]): Self = this.set("convertToIntegerColorSpace", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetBitsPerPixel(value: () => Double): Self = this.set("getBitsPerPixel", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetComponentBitCounts(value: () => SafeArray[Double]): Self = this.set("getComponentBitCounts", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetEndianness(value: () => Double): Self = this.set("getEndianness", js.Any.fromFunction0(value))
   }
-  
 }
-

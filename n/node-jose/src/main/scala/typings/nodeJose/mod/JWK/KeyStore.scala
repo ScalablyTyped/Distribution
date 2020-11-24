@@ -13,10 +13,11 @@ import typings.nodeJose.nodeJoseStrings.x509
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KeyStore extends js.Object {
+  
   /**
     * @param key
     *  String serialization of a JSON JWK/(base64-encoded) PEM/(binary-encoded) DER
@@ -38,8 +39,10 @@ trait KeyStore extends js.Object {
     extras: js.UndefOr[Record[String, _]]
   ): js.Promise[Key] = js.native
   def add(key: RawKey): js.Promise[Key] = js.native
+  
   def all(): js.Array[RawKey] = js.native
   def all(options: PartialKeyStoreGetOptions): js.Array[RawKey] = js.native
+  
   /**
     * Generates a new random Key into this KeyStore.
     *
@@ -63,17 +66,19 @@ trait KeyStore extends js.Object {
   def generate(kty: String, size: String, props: js.Any): js.Promise[Key] = js.native
   def generate(kty: String, size: Double): js.Promise[Key] = js.native
   def generate(kty: String, size: Double, props: js.Any): js.Promise[Key] = js.native
+  
   /**
     * To retrieve a key from a keystore
     */
   def get(kid: String): RawKey = js.native
   def get(kid: String, filter: KeyStoreGetFilter): RawKey = js.native
   def get(options: KeyStoreGetOptions): RawKey = js.native
+  
   def remove(key: Key): Unit = js.native
+  
   /**
     * To export the public keys of a keystore as a JWK-set
     */
   def toJSON(): js.Object = js.native
   def toJSON(exportPrivateKeys: Boolean): js.Object = js.native
 }
-

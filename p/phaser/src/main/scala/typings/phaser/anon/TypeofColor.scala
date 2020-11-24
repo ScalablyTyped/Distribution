@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.phaser.spine.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofColor
@@ -23,12 +23,18 @@ trait TypeofColor
       /* a */ Double, 
       Color
     ] {
+  
   var BLUE: Color = js.native
+  
   var GREEN: Color = js.native
+  
   var MAGENTA: Color = js.native
+  
   var RED: Color = js.native
+  
   var WHITE: Color = js.native
+  
   def rgb888ToColor(color: Color, value: Double): Unit = js.native
+  
   def rgba8888ToColor(color: Color, value: Double): Unit = js.native
 }
-

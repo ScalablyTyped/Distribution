@@ -10,9 +10,9 @@ Resposive fontSize, height and width for your react-native components.
 | ------------------ | :-------------: |
 | Full name          | react-native-responsive-dimensions |
 | Keywords           | react-native, responsive, responsive-height, responsive-width, responsive-font-size, fontSize, responsive-dimensions |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 50733 |
+| # releases         | 9 |
+| # dependents       | 4 |
+| # downloads        | 124555 |
 | # stars            | 1 |
 
 ## Links

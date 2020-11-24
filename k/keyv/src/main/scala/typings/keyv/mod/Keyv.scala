@@ -4,20 +4,24 @@ import typings.keyv.keyvBooleans.`true`
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Keyv[TValue] extends EventEmitter {
+  
   /** Delete all entries in the current namespace. */
   def clear(): js.Promise[Unit] = js.native
+  
   /**
     * Deletes an entry.
     *
     * Returns `true` if the key existed, `false` if not.
     */
   def delete(key: String): js.Promise[Boolean] = js.native
+  
   /** Returns the value. */
   def get(key: String): js.Promise[js.UndefOr[TValue]] = js.native
+  
   /**
     * Set a value.
     *
@@ -26,4 +30,3 @@ trait Keyv[TValue] extends EventEmitter {
   def set(key: String, value: TValue): js.Promise[`true`] = js.native
   def set(key: String, value: TValue, ttl: Double): js.Promise[`true`] = js.native
 }
-

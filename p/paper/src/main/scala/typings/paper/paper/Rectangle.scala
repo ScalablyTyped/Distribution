@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A Rectangle specifies an area that is enclosed by it's top-left
@@ -11,97 +11,38 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Rectangle extends js.Object {
+  
   /** 
     * The area of the rectangle.
     */
   val area: Double = js.native
+  
   /** 
     * The bottom coordinate of the rectangle. Note that this doesn't move the
     * whole rectangle: the top won't move.
     */
   var bottom: Double = js.native
+  
   /** 
     * The bottom-center point of the rectangle.
     */
   var bottomCenter: Point = js.native
+  
   /** 
     * The bottom-left point of the rectangle.
     */
   var bottomLeft: Point = js.native
+  
   /** 
     * The bottom-right point of the rectangle.
     */
   var bottomRight: Point = js.native
+  
   /** 
     * The center point of the rectangle.
     */
   var center: Point = js.native
-  /** 
-    * The height of the rectangle.
-    */
-  var height: Double = js.native
-  /** 
-    * The position of the left hand side of the rectangle. Note that this
-    * doesn't move the whole rectangle; the right hand side stays where it was.
-    */
-  var left: Double = js.native
-  /** 
-    * The left-center point of the rectangle.
-    */
-  var leftCenter: Point = js.native
-  /** 
-    * The top-left point of the rectangle
-    */
-  var point: Point = js.native
-  /** 
-    * The position of the right hand side of the rectangle. Note that this
-    * doesn't move the whole rectangle; the left hand side stays where it was.
-    */
-  var right: Double = js.native
-  /** 
-    * The right-center point of the rectangle.
-    */
-  var rightCenter: Point = js.native
-  /** 
-    * Specifies whether an item's bounds are to appear as selected.
-    * 
-    * Paper.js draws the bounds of items with selected bounds on top of
-    * your project. This is very useful when debugging.
-    */
-  var selected: Boolean = js.native
-  /** 
-    * The size of the rectangle
-    */
-  var size: Size = js.native
-  /** 
-    * The top coordinate of the rectangle. Note that this doesn't move the
-    * whole rectangle: the bottom won't move.
-    */
-  var top: Double = js.native
-  /** 
-    * The top-center point of the rectangle.
-    */
-  var topCenter: Point = js.native
-  /** 
-    * The top-left point of the rectangle.
-    */
-  var topLeft: Point = js.native
-  /** 
-    * The top-right point of the rectangle.
-    */
-  var topRight: Point = js.native
-  /** 
-    * The width of the rectangle.
-    */
-  var width: Double = js.native
-  /** 
-    * The x position of the rectangle.
-    */
-  var x: Double = js.native
-  /** 
-    * The y position of the rectangle.
-    */
-  var y: Double = js.native
+  
   /** 
     * Tests if the specified point is inside the boundary of the rectangle.
     * 
@@ -120,6 +61,7 @@ trait Rectangle extends js.Object {
     * rectangle
     */
   def contains(rect: Rectangle): Boolean = js.native
+  
   /** 
     * Checks whether the coordinates and size of the rectangle are equal to
     * that of the supplied rectangle.
@@ -127,6 +69,7 @@ trait Rectangle extends js.Object {
     * @return true if the rectangles are equal
     */
   def equals(rect: Rectangle): Boolean = js.native
+  
   /** 
     * Returns a new rectangle expanded by the specified amount in horizontal
     * and vertical directions.
@@ -151,6 +94,12 @@ trait Rectangle extends js.Object {
     * @return the expanded rectangle
     */
   def expand(hor: Double, ver: Double): Rectangle = js.native
+  
+  /** 
+    * The height of the rectangle.
+    */
+  var height: Double = js.native
+  
   /** 
     * Adds a point to this rectangle. The resulting rectangle is the smallest
     * rectangle that contains both the original rectangle and the specified
@@ -167,6 +116,7 @@ trait Rectangle extends js.Object {
     * original rectangle and the specified point
     */
   def include(point: Point): Rectangle = js.native
+  
   /** 
     * Returns a new rectangle representing the intersection of this rectangle
     * with the specified rectangle.
@@ -178,6 +128,7 @@ trait Rectangle extends js.Object {
     * rectangle and in this rectangle
     */
   def intersect(rect: Rectangle): Rectangle = js.native
+  
   /** 
     * Tests if the interior of this rectangle intersects the interior of
     * another rectangle. Rectangles just touching each other are considered as
@@ -193,10 +144,39 @@ trait Rectangle extends js.Object {
     */
   def intersects(rect: Rectangle): Boolean = js.native
   def intersects(rect: Rectangle, epsilon: Double): Boolean = js.native
+  
   /** 
     * @return true if the rectangle is empty
     */
   def isEmpty(): Boolean = js.native
+  
+  /** 
+    * The position of the left hand side of the rectangle. Note that this
+    * doesn't move the whole rectangle; the right hand side stays where it was.
+    */
+  var left: Double = js.native
+  
+  /** 
+    * The left-center point of the rectangle.
+    */
+  var leftCenter: Point = js.native
+  
+  /** 
+    * The top-left point of the rectangle
+    */
+  var point: Point = js.native
+  
+  /** 
+    * The position of the right hand side of the rectangle. Note that this
+    * doesn't move the whole rectangle; the left hand side stays where it was.
+    */
+  var right: Double = js.native
+  
+  /** 
+    * The right-center point of the rectangle.
+    */
+  var rightCenter: Point = js.native
+  
   /** 
     * Returns a new rectangle scaled by the specified amount from its center.
     * 
@@ -211,12 +191,48 @@ trait Rectangle extends js.Object {
     * @return the scaled rectangle
     */
   def scale(hor: Double, ver: Double): Rectangle = js.native
+  
+  /** 
+    * Specifies whether an item's bounds are to appear as selected.
+    * 
+    * Paper.js draws the bounds of items with selected bounds on top of
+    * your project. This is very useful when debugging.
+    */
+  var selected: Boolean = js.native
+  
   /** 
     * Sets the rectangle to the passed values. Note that any sequence of
     * parameters that is supported by the various {@link Rectangle}
     * constructors also work for calls of `set()`.
     */
   def set(values: js.Any*): Rectangle = js.native
+  
+  /** 
+    * The size of the rectangle
+    */
+  var size: Size = js.native
+  
+  /** 
+    * The top coordinate of the rectangle. Note that this doesn't move the
+    * whole rectangle: the bottom won't move.
+    */
+  var top: Double = js.native
+  
+  /** 
+    * The top-center point of the rectangle.
+    */
+  var topCenter: Point = js.native
+  
+  /** 
+    * The top-left point of the rectangle.
+    */
+  var topLeft: Point = js.native
+  
+  /** 
+    * The top-right point of the rectangle.
+    */
+  var topRight: Point = js.native
+  
   /** 
     * Returns a new rectangle representing the union of this rectangle with the
     * specified rectangle.
@@ -227,5 +243,19 @@ trait Rectangle extends js.Object {
     * rectangle and this rectangle
     */
   def unite(rect: Rectangle): Rectangle = js.native
+  
+  /** 
+    * The width of the rectangle.
+    */
+  var width: Double = js.native
+  
+  /** 
+    * The x position of the rectangle.
+    */
+  var x: Double = js.native
+  
+  /** 
+    * The y position of the rectangle.
+    */
+  var y: Double = js.native
 }
-

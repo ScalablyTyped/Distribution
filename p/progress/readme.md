@@ -11,8 +11,8 @@ Flexible ascii progress bar
 | Full name          | progress |
 | Keywords           | cli, progress |
 | # releases         | 4 |
-| # dependents       | 2014 |
-| # downloads        | 398349701 |
+| # dependents       | 2265 |
+| # downloads        | 540662865 |
 | # stars            | 125 |
 
 ## Links

@@ -13,7 +13,7 @@ import typings.chromeApps.chrome.sockets.tcp.SecureOptions
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.socket
@@ -40,6 +40,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.sockets")
 @js.native
 object sockets extends js.Object {
+  
   /**
     * Use the chrome.sockets.tcp API to send and receive data over the network using TCP connections.
     * This API supersedes the TCP functionality previously found in the chrome.socket API.
@@ -48,15 +49,7 @@ object sockets extends js.Object {
     */
   @js.native
   object tcp extends js.Object {
-    /** Event raised when data has been received for a given socket. */
-    val onReceive: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
-    /**
-      * Event raised when a network error occured while the runtime was
-      * waiting for data on the socket address and port. Once this event
-      * is raised, the socket is set to paused and no more onReceive
-      * events are raised for this socket.
-      */
-    val onReceiveError: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+    
     /**
       * Closes the socket and releases the address/port the socket is bound to.
       * Each socket created should be closed after use. The socket id is no longer
@@ -67,6 +60,7 @@ object sockets extends js.Object {
       */
     def close(socketId: integer): Unit = js.native
     def close(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Connects the socket to a remote machine.
       * When the connect operation completes successfully,
@@ -87,6 +81,7 @@ object sockets extends js.Object {
       peerPort: integer,
       callback: js.Function1[/* result */ integer, Unit]
     ): Unit = js.native
+    
     /** Creates a TCP socket. */
     def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
     /**
@@ -94,6 +89,7 @@ object sockets extends js.Object {
       * @param properties The socket properties (optional).
       */
     def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
+    
     /**
       * @description Disconnects the socket.
       * @param socketId The socket identifier.
@@ -101,17 +97,31 @@ object sockets extends js.Object {
       */
     def disconnect(socketId: integer): Unit = js.native
     def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Retrieves the state of the given socket.
       * @param socketId The socket identifier.
       * @param callback Called when the socket state is available. Provides an object containing the socket information.
       */
     def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = js.native
+    
     /**
       * @description Retrieves the list of currently opened sockets owned by the application.
       * @param callback Called when the list of sockets is available. Provides an array of socket info.
       */
     def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = js.native
+    
+    /** Event raised when data has been received for a given socket. */
+    val onReceive: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
+    
+    /**
+      * Event raised when a network error occured while the runtime was
+      * waiting for data on the socket address and port. Once this event
+      * is raised, the socket is set to paused and no more onReceive
+      * events are raised for this socket.
+      */
+    val onReceiveError: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+    
     /**
       * Start a TLS client connection over the connected TCP client socket.
       * @since Chrome 38.
@@ -127,6 +137,7 @@ object sockets extends js.Object {
       * @param callback Called when the connection attempt is complete.
       */
     def secure(socketId: integer, options: SecureOptions, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
     /**
       * @description Sends data on the given TCP socket.
       * @param socketId The socket identifier.
@@ -134,6 +145,7 @@ object sockets extends js.Object {
       * @param callback Called when the send operation completes.
       */
     def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ SendInfo, Unit]): Unit = js.native
+    
     /**
       * @description Enables or disables the keep-alive functionality for a TCP connection.
       * @param socketId The socket identifier.
@@ -154,6 +166,7 @@ object sockets extends js.Object {
       delay: integer,
       callback: js.Function1[/* result */ integer, Unit]
     ): Unit = js.native
+    
     /**
       * Sets or clears TCP_NODELAY for a TCP connection.
       * Nagle's algorithm will be disabled when TCP_NODELAY is set.
@@ -163,6 +176,7 @@ object sockets extends js.Object {
       *                 from the underlying network call. A negative value indicates an error.
       */
     def setNoDelay(socketId: integer, noDelay: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
     /**
       * Enables or disables the application from receiving messages from its peer.
       * The default value is 'false'. Pausing a socket is typically used by an
@@ -172,6 +186,7 @@ object sockets extends js.Object {
       */
     def setPaused(socketId: integer, paused: Boolean): Unit = js.native
     def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    
     /** Updates the socket properties. */
     def update(socketId: integer, properties: SocketProperties): Unit = js.native
     def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = js.native
@@ -187,21 +202,7 @@ object sockets extends js.Object {
     */
   @js.native
   object tcpServer extends js.Object {
-    /**
-      * Event raised when a connection has been made to the server socket.
-      *
-      * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAccept
-      */
-    val onAccept: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ AcceptEventArgs, Unit]] = js.native
-    /**
-      * Event raised when a network error occured while the runtime was waiting
-      * for new connections on the socket address and port. Once this event is
-      * raised, the socket is set to paused and no more onAccept events are
-      * raised for this socket until the socket is resumed.
-      *
-      * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAcceptError
-      */
-    val onAcceptError: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ AcceptErrorEventArgs, Unit]] = js.native
+    
     /**
       * Disconnects and destroys the socket. Each socket created should be closed
       * after use. The socket id is no longer valid as soon at the function is
@@ -214,6 +215,7 @@ object sockets extends js.Object {
       */
     def close(socketId: integer): Unit = js.native
     def close(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Creates a TCP server socket.
       *
@@ -232,6 +234,7 @@ object sockets extends js.Object {
       properties: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties,
       callback: js.Function1[/* createInfo */ CreateInfo, Unit]
     ): Unit = js.native
+    
     /**
       * Disconnects the listening socket, i.e. stops accepting new connections
       * and releases the address/port the socket is bound to. The socket
@@ -244,6 +247,7 @@ object sockets extends js.Object {
       */
     def disconnect(socketId: integer): Unit = js.native
     def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Retrieves the state of the given socket.
       *
@@ -255,6 +259,7 @@ object sockets extends js.Object {
       socketId: integer,
       callback: js.Function1[/* socketInfo */ typings.chromeApps.chrome.sockets.tcpServer.SocketInfo, Unit]
     ): Unit = js.native
+    
     /**
       * Retrieves the list of currently opened sockets owned by the application.
       *
@@ -267,6 +272,7 @@ object sockets extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * Listens for connections on the specified port and address. If the
       * port/address is in use, the callback indicates a failure.
@@ -307,6 +313,24 @@ object sockets extends js.Object {
       port: integer,
       callback: js.Function1[/* result */ integer, Unit]
     ): Unit = js.native
+    
+    /**
+      * Event raised when a connection has been made to the server socket.
+      *
+      * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAccept
+      */
+    val onAccept: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ AcceptEventArgs, Unit]] = js.native
+    
+    /**
+      * Event raised when a network error occured while the runtime was waiting
+      * for new connections on the socket address and port. Once this event is
+      * raised, the socket is set to paused and no more onAccept events are
+      * raised for this socket until the socket is resumed.
+      *
+      * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAcceptError
+      */
+    val onAcceptError: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ AcceptErrorEventArgs, Unit]] = js.native
+    
     /**
       * Enables or disables a listening socket from accepting new connections.
       * When paused, a listening socket accepts new connections until its backlog
@@ -318,6 +342,7 @@ object sockets extends js.Object {
       */
     def setPaused(socketId: integer, paused: Boolean): Unit = js.native
     def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Updates the socket properties.
       *
@@ -344,21 +369,7 @@ object sockets extends js.Object {
     */
   @js.native
   object udp extends js.Object {
-    /**
-      * Event raised when a UDP packet has been received for the given socket.
-      *
-      * @see https://developer.chrome.com/apps/sockets_udp#event-onReceive
-      */
-    val onReceive: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
-    /**
-      * Event raised when a network error occured while the runtime was waiting
-      * for data on the socket address and port. Once this event is raised, the
-      * socket is paused and no more onReceive events will be raised for this
-      * socket until the socket is resumed.
-      *
-      * @see https://developer.chrome.com/apps/sockets_udp#event-onReceiveError
-      */
-    val onReceiveError: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+    
     /**
       * Binds the local address and port for the socket. For a client socket, it
       * is recommended to use port 0 to let the platform pick a free port.
@@ -382,6 +393,7 @@ object sockets extends js.Object {
       port: integer,
       callback: js.Function1[/* result */ integer, Unit]
     ): Unit = js.native
+    
     /**
       * Closes the socket and releases the address/port the socket is bound to.
       * Each socket created should be closed after use. The socket id is no
@@ -394,6 +406,7 @@ object sockets extends js.Object {
       */
     def close(socketId: integer): Unit = js.native
     def close(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Creates a UDP socket with default properties.
       *
@@ -409,6 +422,7 @@ object sockets extends js.Object {
       * @param createInfo.socketId The ID of the newly created socket.
       */
     def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
+    
     /**
       * Retrieves the state of the given socket.
       *
@@ -417,6 +431,7 @@ object sockets extends js.Object {
       * @param callback Called when the socket state is available.
       */
     def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = js.native
+    
     /**
       * Gets the multicast group addresses the socket is currently joined to.
       *
@@ -425,6 +440,7 @@ object sockets extends js.Object {
       * @param callback Called with an array of strings of the result.
       */
     def getJoinedGroups(socketId: integer, callback: js.Function1[/* groups */ js.Array[String], Unit]): Unit = js.native
+    
     /**
       * Retrieves the list of currently opened sockets owned by the application.
       *
@@ -432,6 +448,7 @@ object sockets extends js.Object {
       * @param callback Called when the list of sockets is available.
       */
     def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = js.native
+    
     /**
       * Joins the multicast group and starts to receive packets from that group.
       * The socket must be bound to a local port before calling this method.
@@ -442,6 +459,7 @@ object sockets extends js.Object {
       * @param callback Called when the joinGroup operation completes.
       */
     def joinGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
     /**
       * Leaves the multicast group previously joined using joinGroup. This is
       * only necessary to call if you plan to keep using the socket afterwards,
@@ -458,6 +476,24 @@ object sockets extends js.Object {
       * @param callback Called when the leaveGroup operation completes.
       */
     def leaveGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
+    /**
+      * Event raised when a UDP packet has been received for the given socket.
+      *
+      * @see https://developer.chrome.com/apps/sockets_udp#event-onReceive
+      */
+    val onReceive: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
+    
+    /**
+      * Event raised when a network error occured while the runtime was waiting
+      * for data on the socket address and port. Once this event is raised, the
+      * socket is paused and no more onReceive events will be raised for this
+      * socket until the socket is resumed.
+      *
+      * @see https://developer.chrome.com/apps/sockets_udp#event-onReceiveError
+      */
+    val onReceiveError: typings.chromeApps.chrome.events.Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+    
     /**
       * Sends data on the given socket to the given address and port. The socket
       * must be bound to a local port before calling this method.
@@ -476,6 +512,7 @@ object sockets extends js.Object {
       port: integer,
       callback: js.Function1[/* sendInfo */ SendInfo, Unit]
     ): Unit = js.native
+    
     /**
       * Enables or disables broadcast packets on this socket.
       *
@@ -487,6 +524,7 @@ object sockets extends js.Object {
       */
     def setBroadcast(socketId: integer, enabled: Boolean): Unit = js.native
     def setBroadcast(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
     /**
       * Sets whether multicast packets sent from the host to the multicast group
       * will be looped back to the host.
@@ -509,6 +547,7 @@ object sockets extends js.Object {
       * @param callback Called when the configuration operation completes.
       */
     def setMulticastLoopbackMode(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
     /**
       * Sets the time-to-live of multicast packets sent to the multicast group.
       *
@@ -520,6 +559,7 @@ object sockets extends js.Object {
       * @param callback Called when the configuration operation completes.
       */
     def setMulticastTimeToLive(socketId: integer, ttl: integer, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+    
     /**
       * Pauses or unpauses a socket. A paused socket is blocked from firing
       * onReceive events.
@@ -532,6 +572,7 @@ object sockets extends js.Object {
       */
     def setPaused(socketId: integer, paused: Boolean): Unit = js.native
     def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Updates the socket properties.
       *
@@ -543,6 +584,4 @@ object sockets extends js.Object {
     def update(socketId: integer, properties: SocketProperties): Unit = js.native
     def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = js.native
   }
-  
 }
-

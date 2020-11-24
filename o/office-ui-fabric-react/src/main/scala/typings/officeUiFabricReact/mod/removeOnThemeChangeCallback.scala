@@ -1,13 +1,13 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricStyling.ithemeMod.ITheme
+import typings.fluentuiTheme.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "removeOnThemeChangeCallback")
 @js.native
 object removeOnThemeChangeCallback extends js.Object {
+  
   def apply(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
 }
-

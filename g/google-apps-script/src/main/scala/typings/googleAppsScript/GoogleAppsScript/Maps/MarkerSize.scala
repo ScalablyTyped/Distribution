@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MarkerSize extends js.Object
-
 /**
   * An enum representing the size of a marker added to a map.
   * See also
@@ -16,6 +15,7 @@ sealed trait MarkerSize extends js.Object
 @JSGlobal("GoogleAppsScript.Maps.MarkerSize")
 @js.native
 object MarkerSize extends js.Object {
+  
   @js.native
   sealed trait MID extends MarkerSize
   
@@ -24,6 +24,4 @@ object MarkerSize extends js.Object {
   
   @js.native
   sealed trait TINY extends MarkerSize
-  
 }
-

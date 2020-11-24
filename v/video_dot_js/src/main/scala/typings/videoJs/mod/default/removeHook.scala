@@ -2,11 +2,12 @@ package typings.videoJs.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "removeHook")
 @js.native
 object removeHook extends js.Object {
+  
   /**
     * Remove a hook from a specific videojs lifecycle.
     *
@@ -20,4 +21,3 @@ object removeHook extends js.Object {
     */
   def apply(`type`: String, fn: js.Function0[_]): Boolean = js.native
 }
-

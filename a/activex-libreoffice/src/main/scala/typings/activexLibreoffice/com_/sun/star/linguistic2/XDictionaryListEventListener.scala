@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interfaces allows the object to act according to dictionary-list events.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDictionaryListEventListener extends XEventListener {
+  
   /**
     * is used to notify the object about dictionary-list events.
     * @param aDicListEvent the event to be notified of.
@@ -24,8 +25,8 @@ trait XDictionaryListEventListener extends XEventListener {
     */
   def processDictionaryListEvent(aDicListEvent: DictionaryListEvent): Unit = js.native
 }
-
 object XDictionaryListEventListener {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -37,20 +38,23 @@ object XDictionaryListEventListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), processDictionaryListEvent = js.Any.fromFunction1(processDictionaryListEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDictionaryListEventListener]
   }
+  
   @scala.inline
   implicit class XDictionaryListEventListenerOps[Self <: XDictionaryListEventListener] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProcessDictionaryListEvent(value: DictionaryListEvent => Unit): Self = this.set("processDictionaryListEvent", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -9,10 +9,11 @@ import typings.chromeApps.chromeAppsStrings.textPlain
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdditionalItems extends js.Object {
+  
   /**
     * Content of the additional data item.
     * Either the plain text string if *type* is 'textPlain' or
@@ -20,6 +21,7 @@ trait AdditionalItems extends js.Object {
     * The data can not exceed 2MB.
     */
   var data: String = js.native
+  
   /**
     * Type of the additional data item.
     * @see DataItemType
@@ -30,8 +32,8 @@ trait AdditionalItems extends js.Object {
     Exclude[/* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, textPlain | textHtml]
   ] = js.native
 }
-
 object AdditionalItems {
+  
   @scala.inline
   def apply(
     data: String,
@@ -45,19 +47,25 @@ object AdditionalItems {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalItems]
   }
+  
   @scala.inline
   implicit class AdditionalItemsOps[Self <: AdditionalItems] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(
       value: ToStringLiteral[
@@ -67,6 +75,4 @@ object AdditionalItems {
         ]
     ): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

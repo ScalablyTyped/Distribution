@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRCamera")
 @js.native
@@ -20,4 +20,3 @@ class WebXRCamera protected ()
     _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
   ) = this()
 }
-

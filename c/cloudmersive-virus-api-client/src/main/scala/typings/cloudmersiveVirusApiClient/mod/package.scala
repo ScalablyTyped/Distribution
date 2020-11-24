@@ -2,9 +2,10 @@ package typings.cloudmersiveVirusApiClient
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type ScanFile = js.Function2[
     /* inputFile */ typings.node.Buffer, 
     /* callback */ js.Function3[
@@ -15,6 +16,7 @@ package object mod {
     ], 
     js.Any
   ]
+  
   type ScanFileAdvanced = js.Function3[
     /* inputFile */ typings.node.Buffer, 
     /* opts */ typings.cloudmersiveVirusApiClient.mod.ScanFileAdvancedOptions, 
@@ -26,8 +28,9 @@ package object mod {
     ], 
     js.Any
   ]
+  
   type ScanWebsite = js.Function2[
-    /* input */ java.lang.String, 
+    /* input */ typings.cloudmersiveVirusApiClient.mod.WebsiteScanRequest, 
     /* callback */ js.Function3[
       /* error */ js.Any, 
       /* data */ typings.cloudmersiveVirusApiClient.mod.WebsiteScanResult, 

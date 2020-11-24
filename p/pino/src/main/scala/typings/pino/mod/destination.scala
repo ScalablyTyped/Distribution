@@ -3,11 +3,12 @@ package typings.pino.mod
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pino", "destination")
 @js.native
 object destination extends js.Object {
+  
   /**
     * Create a Pino Destination instance: a stream-like object with significantly more throughput (over 30%) than a standard Node.js stream.
     * @param [dest]: The `destination` parameter, at a minimum must be an object with a `write` method. An ordinary Node.js
@@ -22,4 +23,3 @@ object destination extends js.Object {
   def apply(dest: DestinationObjectOptions): typings.sonicBoom.mod.^ = js.native
   def apply(dest: DestinationStream): typings.sonicBoom.mod.^ = js.native
 }
-

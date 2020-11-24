@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Players")
 @js.native
 class ResourcePlayers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.players.get
     * @desc Retrieves the Player resource with the given ID. To retrieve the
@@ -43,6 +45,7 @@ class ResourcePlayers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayer]
   ): Unit = js.native
+  
   /**
     * games.players.list
     * @desc Get the collection of players for the currently authenticated user.
@@ -75,4 +78,3 @@ class ResourcePlayers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlayerListResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.actionsOnGoogle.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "Confirmation")
 @js.native
@@ -15,4 +15,3 @@ class Confirmation protected ()
     */
   def this(text: String) = this()
 }
-

@@ -2,86 +2,227 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait NewsRepositoryInboxResponseArgs extends js.Object {
-  var actions: js.UndefOr[js.Array[String]] = js.undefined
-  var aymt_channel_id: js.UndefOr[String] = js.undefined
-  var aymt_notif_id: js.UndefOr[String] = js.undefined
-  var aymt_notif_type: js.UndefOr[String] = js.undefined
-  var clicked: Boolean
-  var comment_id: js.UndefOr[String] = js.undefined
-  var comment_ids: js.UndefOr[js.Array[String]] = js.undefined
-  var comment_notif_type: js.UndefOr[String] = js.undefined
-  var destination: js.UndefOr[String] = js.undefined
-  var hashtag_follow: js.UndefOr[NewsRepositoryInboxResponseHashtagFollow] = js.undefined
-  var icon_url: js.UndefOr[String] = js.undefined
-  var latest_reel_media: js.UndefOr[Double] = js.undefined
-  var links: js.UndefOr[js.Array[NewsRepositoryInboxResponseLinksItem]] = js.undefined
-  var media: js.UndefOr[js.Array[NewsRepositoryInboxResponseMediaItem]] = js.undefined
-  var profile_id: js.UndefOr[Double] = js.undefined
-  var profile_image: js.UndefOr[String] = js.undefined
-  var profile_image_destination: js.UndefOr[String] = js.undefined
-  var profile_name: js.UndefOr[String] = js.undefined
-  var rich_text: js.UndefOr[String] = js.undefined
-  var second_profile_id: js.UndefOr[Double] = js.undefined
-  var second_profile_image: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var timestamp: String
-  var tuuid: String
+  
+  var actions: js.UndefOr[js.Array[String]] = js.native
+  
+  var aymt_channel_id: js.UndefOr[String] = js.native
+  
+  var aymt_notif_id: js.UndefOr[String] = js.native
+  
+  var aymt_notif_type: js.UndefOr[String] = js.native
+  
+  var clicked: Boolean = js.native
+  
+  var comment_id: js.UndefOr[String] = js.native
+  
+  var comment_ids: js.UndefOr[js.Array[String]] = js.native
+  
+  var comment_notif_type: js.UndefOr[String] = js.native
+  
+  var destination: js.UndefOr[String] = js.native
+  
+  var hashtag_follow: js.UndefOr[NewsRepositoryInboxResponseHashtagFollow] = js.native
+  
+  var icon_url: js.UndefOr[String] = js.native
+  
+  var latest_reel_media: js.UndefOr[Double] = js.native
+  
+  var links: js.UndefOr[js.Array[NewsRepositoryInboxResponseLinksItem]] = js.native
+  
+  var media: js.UndefOr[js.Array[NewsRepositoryInboxResponseMediaItem]] = js.native
+  
+  var profile_id: js.UndefOr[Double] = js.native
+  
+  var profile_image: js.UndefOr[String] = js.native
+  
+  var profile_image_destination: js.UndefOr[String] = js.native
+  
+  var profile_name: js.UndefOr[String] = js.native
+  
+  var rich_text: js.UndefOr[String] = js.native
+  
+  var second_profile_id: js.UndefOr[Double] = js.native
+  
+  var second_profile_image: js.UndefOr[String] = js.native
+  
+  var text: js.UndefOr[String] = js.native
+  
+  var timestamp: String = js.native
+  
+  var tuuid: String = js.native
 }
-
 object NewsRepositoryInboxResponseArgs {
+  
   @scala.inline
-  def apply(
-    clicked: Boolean,
-    timestamp: String,
-    tuuid: String,
-    actions: js.Array[String] = null,
-    aymt_channel_id: String = null,
-    aymt_notif_id: String = null,
-    aymt_notif_type: String = null,
-    comment_id: String = null,
-    comment_ids: js.Array[String] = null,
-    comment_notif_type: String = null,
-    destination: String = null,
-    hashtag_follow: NewsRepositoryInboxResponseHashtagFollow = null,
-    icon_url: String = null,
-    latest_reel_media: js.UndefOr[Double] = js.undefined,
-    links: js.Array[NewsRepositoryInboxResponseLinksItem] = null,
-    media: js.Array[NewsRepositoryInboxResponseMediaItem] = null,
-    profile_id: js.UndefOr[Double] = js.undefined,
-    profile_image: String = null,
-    profile_image_destination: String = null,
-    profile_name: String = null,
-    rich_text: String = null,
-    second_profile_id: js.UndefOr[Double] = js.undefined,
-    second_profile_image: String = null,
-    text: String = null
-  ): NewsRepositoryInboxResponseArgs = {
+  def apply(clicked: Boolean, timestamp: String, tuuid: String): NewsRepositoryInboxResponseArgs = {
     val __obj = js.Dynamic.literal(clicked = clicked.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tuuid = tuuid.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (aymt_channel_id != null) __obj.updateDynamic("aymt_channel_id")(aymt_channel_id.asInstanceOf[js.Any])
-    if (aymt_notif_id != null) __obj.updateDynamic("aymt_notif_id")(aymt_notif_id.asInstanceOf[js.Any])
-    if (aymt_notif_type != null) __obj.updateDynamic("aymt_notif_type")(aymt_notif_type.asInstanceOf[js.Any])
-    if (comment_id != null) __obj.updateDynamic("comment_id")(comment_id.asInstanceOf[js.Any])
-    if (comment_ids != null) __obj.updateDynamic("comment_ids")(comment_ids.asInstanceOf[js.Any])
-    if (comment_notif_type != null) __obj.updateDynamic("comment_notif_type")(comment_notif_type.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (hashtag_follow != null) __obj.updateDynamic("hashtag_follow")(hashtag_follow.asInstanceOf[js.Any])
-    if (icon_url != null) __obj.updateDynamic("icon_url")(icon_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(latest_reel_media)) __obj.updateDynamic("latest_reel_media")(latest_reel_media.get.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile_id)) __obj.updateDynamic("profile_id")(profile_id.get.asInstanceOf[js.Any])
-    if (profile_image != null) __obj.updateDynamic("profile_image")(profile_image.asInstanceOf[js.Any])
-    if (profile_image_destination != null) __obj.updateDynamic("profile_image_destination")(profile_image_destination.asInstanceOf[js.Any])
-    if (profile_name != null) __obj.updateDynamic("profile_name")(profile_name.asInstanceOf[js.Any])
-    if (rich_text != null) __obj.updateDynamic("rich_text")(rich_text.asInstanceOf[js.Any])
-    if (!js.isUndefined(second_profile_id)) __obj.updateDynamic("second_profile_id")(second_profile_id.get.asInstanceOf[js.Any])
-    if (second_profile_image != null) __obj.updateDynamic("second_profile_image")(second_profile_image.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseArgs]
   }
+  
+  @scala.inline
+  implicit class NewsRepositoryInboxResponseArgsOps[Self <: NewsRepositoryInboxResponseArgs] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setClicked(value: Boolean): Self = this.set("clicked", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTuuid(value: String): Self = this.set("tuuid", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    
+    @scala.inline
+    def setActions(value: js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    
+    @scala.inline
+    def setAymt_channel_id(value: String): Self = this.set("aymt_channel_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAymt_channel_id: Self = this.set("aymt_channel_id", js.undefined)
+    
+    @scala.inline
+    def setAymt_notif_id(value: String): Self = this.set("aymt_notif_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAymt_notif_id: Self = this.set("aymt_notif_id", js.undefined)
+    
+    @scala.inline
+    def setAymt_notif_type(value: String): Self = this.set("aymt_notif_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAymt_notif_type: Self = this.set("aymt_notif_type", js.undefined)
+    
+    @scala.inline
+    def setComment_id(value: String): Self = this.set("comment_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteComment_id: Self = this.set("comment_id", js.undefined)
+    
+    @scala.inline
+    def setComment_idsVarargs(value: String*): Self = this.set("comment_ids", js.Array(value :_*))
+    
+    @scala.inline
+    def setComment_ids(value: js.Array[String]): Self = this.set("comment_ids", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteComment_ids: Self = this.set("comment_ids", js.undefined)
+    
+    @scala.inline
+    def setComment_notif_type(value: String): Self = this.set("comment_notif_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteComment_notif_type: Self = this.set("comment_notif_type", js.undefined)
+    
+    @scala.inline
+    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    
+    @scala.inline
+    def setHashtag_follow(value: NewsRepositoryInboxResponseHashtagFollow): Self = this.set("hashtag_follow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHashtag_follow: Self = this.set("hashtag_follow", js.undefined)
+    
+    @scala.inline
+    def setIcon_url(value: String): Self = this.set("icon_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIcon_url: Self = this.set("icon_url", js.undefined)
+    
+    @scala.inline
+    def setLatest_reel_media(value: Double): Self = this.set("latest_reel_media", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLatest_reel_media: Self = this.set("latest_reel_media", js.undefined)
+    
+    @scala.inline
+    def setLinksVarargs(value: NewsRepositoryInboxResponseLinksItem*): Self = this.set("links", js.Array(value :_*))
+    
+    @scala.inline
+    def setLinks(value: js.Array[NewsRepositoryInboxResponseLinksItem]): Self = this.set("links", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    
+    @scala.inline
+    def setMediaVarargs(value: NewsRepositoryInboxResponseMediaItem*): Self = this.set("media", js.Array(value :_*))
+    
+    @scala.inline
+    def setMedia(value: js.Array[NewsRepositoryInboxResponseMediaItem]): Self = this.set("media", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    
+    @scala.inline
+    def setProfile_id(value: Double): Self = this.set("profile_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_id: Self = this.set("profile_id", js.undefined)
+    
+    @scala.inline
+    def setProfile_image(value: String): Self = this.set("profile_image", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_image: Self = this.set("profile_image", js.undefined)
+    
+    @scala.inline
+    def setProfile_image_destination(value: String): Self = this.set("profile_image_destination", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_image_destination: Self = this.set("profile_image_destination", js.undefined)
+    
+    @scala.inline
+    def setProfile_name(value: String): Self = this.set("profile_name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_name: Self = this.set("profile_name", js.undefined)
+    
+    @scala.inline
+    def setRich_text(value: String): Self = this.set("rich_text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRich_text: Self = this.set("rich_text", js.undefined)
+    
+    @scala.inline
+    def setSecond_profile_id(value: Double): Self = this.set("second_profile_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSecond_profile_id: Self = this.set("second_profile_id", js.undefined)
+    
+    @scala.inline
+    def setSecond_profile_image(value: String): Self = this.set("second_profile_image", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSecond_profile_image: Self = this.set("second_profile_image", js.undefined)
+    
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
 }
-

@@ -10,9 +10,9 @@ Webpack plugins for common Bugsnag actions
 | ------------------ | :-------------: |
 | Full name          | webpack-bugsnag-plugins |
 | Keywords           | bugsnag, webpack |
-| # releases         | 19 |
-| # dependents       | 8 |
-| # downloads        | 1517841 |
+| # releases         | 8 |
+| # dependents       | 10 |
+| # downloads        | 2647765 |
 | # stars            | 0 |
 
 ## Links

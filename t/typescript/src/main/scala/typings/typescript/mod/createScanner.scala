@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createScanner")
 @js.native
 object createScanner extends js.Object {
+  
   def apply(languageVersion: ScriptTarget, skipTrivia: Boolean): Scanner = js.native
   def apply(
     languageVersion: ScriptTarget,
@@ -258,4 +259,3 @@ object createScanner extends js.Object {
     length: Double
   ): Scanner = js.native
 }
-

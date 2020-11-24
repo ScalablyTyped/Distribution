@@ -10,9 +10,9 @@ mongoose-unique-validator is a plugin which adds pre-save validation for unique 
 | ------------------ | :-------------: |
 | Full name          | mongoose-unique-validator |
 | Keywords           | mongoose, unique, validator |
-| # releases         | 5 |
-| # dependents       | 76 |
-| # downloads        | 774882 |
+| # releases         | 2 |
+| # dependents       | 87 |
+| # downloads        | 1018888 |
 | # stars            | 24 |
 
 ## Links

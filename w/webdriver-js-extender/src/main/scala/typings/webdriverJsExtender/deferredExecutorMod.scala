@@ -2,11 +2,12 @@ package typings.webdriverJsExtender
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webdriver-js-extender/built/lib/deferred_executor", JSImport.Namespace)
 @js.native
 object deferredExecutorMod extends js.Object {
+  
   @js.native
   class DeferredExecutor protected () extends js.Object {
     /**
@@ -14,9 +15,9 @@ object deferredExecutorMod extends js.Object {
       *     may be provided by any promise-like thenable object.
       */
     def this(delegate: js.Promise[_]) = this()
+    
     def defineCommand(name: String, method: String, path: String): Unit = js.native
+    
     def execute(command: js.Any): js.Promise[_] = js.native
   }
-  
 }
-

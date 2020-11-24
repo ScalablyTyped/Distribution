@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk.microflowsMod.microflows
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
@@ -9,10 +8,10 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/nanoflows relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/nanoflows relevant section in reference guide}
   *
   * In version 7.12.0: removed experimental
   * In version 7.10.0: introduced
@@ -37,34 +36,37 @@ class Nanoflow protected () extends MicroflowBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  
+  /**
+    * In version 7.23.0: added public
+    */
+  def allowedModuleRoles: IList[IModuleRole] = js.native
+  
+  def allowedModuleRolesQualifiedNames: js.Array[String] = js.native
   @JSName("allowedModuleRolesQualifiedNames")
   val allowedModuleRolesQualifiedNames_FNanoflow: js.Array[String] = js.native
+  
   /**
     * In version 7.23.0: added public
     */
   @JSName("allowedModuleRoles")
   val allowedModuleRoles_FNanoflow: IList[IModuleRole] = js.native
-  @JSName("model")
-  var model_FNanoflow: IModel = js.native
-  /**
-    * In version 7.23.0: added public
-    */
-  def allowedModuleRoles: IList[IModuleRole] = js.native
-  def allowedModuleRolesQualifiedNames: js.Array[String] = js.native
+  
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MNanoflow: FolderBase = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Nanoflow")
 @js.native
 object Nanoflow extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates a new Nanoflow unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   def createIn(container: IFolderBase): Nanoflow = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

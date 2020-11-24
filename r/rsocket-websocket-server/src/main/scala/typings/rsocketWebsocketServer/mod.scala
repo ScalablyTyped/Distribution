@@ -6,11 +6,12 @@ import typings.ws.mod.Server
 import typings.ws.mod.ServerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-websocket-server", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class default protected () extends RSocketWebSocketServer {
     def this(options: ServerOptions) = this()
@@ -26,6 +27,4 @@ object mod extends js.Object {
       factory: js.Function1[/* options */ ServerOptions, Server]
     ) = this()
   }
-  
 }
-

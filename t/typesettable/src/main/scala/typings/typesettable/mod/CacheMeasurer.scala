@@ -4,7 +4,7 @@ import typings.typesettable.abstractMeasurerMod.IRuler
 import typings.typesettable.contextsMod.IRulerFactoryContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "CacheMeasurer")
 @js.native
@@ -13,4 +13,3 @@ class CacheMeasurer protected ()
   def this(ruler: IRuler) = this()
   def this(ruler: IRulerFactoryContext) = this()
 }
-

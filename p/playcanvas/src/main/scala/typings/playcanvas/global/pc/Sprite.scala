@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.Atlas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.Sprite is contains references to one or more frames of a {@link pc.TextureAtlas}.
@@ -40,4 +40,3 @@ class Sprite protected ()
   def this(device: typings.playcanvas.pc.GraphicsDevice) = this()
   def this(device: typings.playcanvas.pc.GraphicsDevice, options: Atlas) = this()
 }
-

@@ -4,10 +4,9 @@ import typings.std.Error
 import typings.std.ErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EmptyResultError
   extends Error
      with ErrorConstructor
-

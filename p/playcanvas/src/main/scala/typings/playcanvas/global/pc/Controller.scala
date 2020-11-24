@@ -4,7 +4,7 @@ import typings.playcanvas.anon.Gamepads
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new instance of a Controller.
@@ -27,4 +27,3 @@ class Controller ()
   def this(element: js.UndefOr[scala.Nothing], options: Gamepads) = this()
   def this(element: Element, options: Gamepads) = this()
 }
-

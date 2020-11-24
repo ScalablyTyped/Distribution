@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Properties")
 @js.native
 class ResourceProperties protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.properties.delete
     * @desc Deletes a property.
@@ -43,6 +45,7 @@ class ResourceProperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * drive.properties.get
     * @desc Gets a property by its key.
@@ -73,6 +76,7 @@ class ResourceProperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProperty]
   ): Unit = js.native
+  
   /**
     * drive.properties.insert
     * @desc Adds a property to a file, or updates it if it already exists.
@@ -102,6 +106,7 @@ class ResourceProperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProperty]
   ): Unit = js.native
+  
   /**
     * drive.properties.list
     * @desc Lists a file's properties.
@@ -130,6 +135,7 @@ class ResourceProperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPropertyList]
   ): Unit = js.native
+  
   /**
     * drive.properties.patch
     * @desc Updates a property.
@@ -161,6 +167,7 @@ class ResourceProperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProperty]
   ): Unit = js.native
+  
   /**
     * drive.properties.update
     * @desc Updates a property.
@@ -193,4 +200,3 @@ class ResourceProperties protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProperty]
   ): Unit = js.native
 }
-

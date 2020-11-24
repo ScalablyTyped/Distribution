@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.FilesUploading event.
@@ -18,4 +18,3 @@ class ASPxClientFileManagerFilesUploadingEventArgs protected ()
     */
   def this(folder: String, fileNames: js.Array[String]) = this()
 }
-

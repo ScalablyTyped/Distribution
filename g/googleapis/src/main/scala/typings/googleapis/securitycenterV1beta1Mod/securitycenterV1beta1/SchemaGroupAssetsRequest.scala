@@ -2,13 +2,14 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for grouping by assets.
   */
 @js.native
 trait SchemaGroupAssetsRequest extends js.Object {
+  
   /**
     * When compare_duration is set, the Asset&#39;s &quot;state&quot; property
     * is updated to indicate whether the asset was added, removed, or remained
@@ -28,6 +29,7 @@ trait SchemaGroupAssetsRequest extends js.Object {
     * This field is ignored if `state` is not a field in `group_by`.
     */
   var compareDuration: js.UndefOr[String] = js.native
+  
   /**
     * Expression that defines the filter to apply across assets. The expression
     * is a list of zero or more restrictions combined via logical operators
@@ -45,6 +47,7 @@ trait SchemaGroupAssetsRequest extends js.Object {
     * `resource_properties.size = 100` is a valid filter string.
     */
   var filter: js.UndefOr[String] = js.native
+  
   /**
     * Expression that defines what assets fields to use for grouping. The
     * string value should follow SQL syntax: comma separated list of fields.
@@ -58,17 +61,20 @@ trait SchemaGroupAssetsRequest extends js.Object {
     * security_center_properties.resource_type
     */
   var groupBy: js.UndefOr[String] = js.native
+  
   /**
     * The maximum number of results to return in a single response. Default is
     * 10, minimum is 1, maximum is 1000.
     */
   var pageSize: js.UndefOr[Double] = js.native
+  
   /**
     * The value returned by the last `GroupAssetsResponse`; indicates that this
     * is a continuation of a prior `GroupAssets` call, and that the system
     * should return the next page of data.
     */
   var pageToken: js.UndefOr[String] = js.native
+  
   /**
     * Time used as a reference point when filtering assets. The filter is
     * limited to assets existing at the supplied time and their values are
@@ -77,49 +83,63 @@ trait SchemaGroupAssetsRequest extends js.Object {
     */
   var readTime: js.UndefOr[String] = js.native
 }
-
 object SchemaGroupAssetsRequest {
+  
   @scala.inline
   def apply(): SchemaGroupAssetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupAssetsRequest]
   }
+  
   @scala.inline
   implicit class SchemaGroupAssetsRequestOps[Self <: SchemaGroupAssetsRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCompareDuration(value: String): Self = this.set("compareDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompareDuration: Self = this.set("compareDuration", js.undefined)
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setGroupBy(value: String): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    
     @scala.inline
     def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageSize: Self = this.set("pageSize", js.undefined)
+    
     @scala.inline
     def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageToken: Self = this.set("pageToken", js.undefined)
+    
     @scala.inline
     def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReadTime: Self = this.set("readTime", js.undefined)
   }
-  
 }
-

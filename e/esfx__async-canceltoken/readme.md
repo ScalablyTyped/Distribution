@@ -12,7 +12,7 @@ CancelToken async coordination primitive.
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 21033 |
+| # downloads        | 28620 |
 | # stars            | 0 |
 
 ## Links

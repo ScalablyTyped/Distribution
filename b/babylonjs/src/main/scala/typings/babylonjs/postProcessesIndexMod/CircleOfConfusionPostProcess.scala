@@ -7,7 +7,7 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "CircleOfConfusionPostProcess")
 @js.native
@@ -28,104 +28,12 @@ class CircleOfConfusionPostProcess protected ()
   def this(
     name: String,
     depthTexture: Nullable[RenderTargetTexture],
-    options: Double,
-    camera: Nullable[Camera]
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: PostProcessOptions,
-    camera: Nullable[Camera]
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: Double,
+    options: Double | PostProcessOptions,
     camera: Nullable[Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    name: String,
-    depthTexture: Nullable[RenderTargetTexture],
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
+    samplingMode: js.UndefOr[Double],
+    engine: js.UndefOr[Engine],
+    reusable: js.UndefOr[Boolean],
+    textureType: js.UndefOr[Double],
+    blockCompilation: js.UndefOr[Boolean]
   ) = this()
 }
-

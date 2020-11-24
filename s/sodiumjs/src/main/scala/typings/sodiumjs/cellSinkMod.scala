@@ -4,11 +4,12 @@ import typings.sodiumjs.cellMod.Cell
 import typings.sodiumjs.lambdaMod.Lambda2_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sodiumjs/dist/typings/sodium/CellSink", JSImport.Namespace)
 @js.native
 object cellSinkMod extends js.Object {
+  
   @js.native
   class CellSink[A] protected () extends Cell[A] {
     /**
@@ -20,6 +21,7 @@ object cellSinkMod extends js.Object {
     def this(initValue: A) = this()
     def this(initValue: A, f: js.Function2[/* l */ A, /* r */ A, A]) = this()
     def this(initValue: A, f: Lambda2_[A, A, A]) = this()
+    
     /**
       * Send a value, modifying the value of the cell. send(A) may not be used inside
       * handlers registered with {@link Stream#listen(Handler)} or {@link Cell#listen(Handler)}.
@@ -29,6 +31,4 @@ object cellSinkMod extends js.Object {
       */
     def send(a: A): Unit = js.native
   }
-  
 }
-

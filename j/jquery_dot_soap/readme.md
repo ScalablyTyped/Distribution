@@ -10,9 +10,9 @@ jQuery plugin for communicating with a web service using SOAP. This script uses 
 | ------------------ | :-------------: |
 | Full name          | jquery.soap |
 | Keywords           | jquery, soap, ajax, wss, jquery-plugin, ecosystem:jquery |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 9195 |
+| # downloads        | 6673 |
 | # stars            | 2 |
 
 ## Links

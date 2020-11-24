@@ -10,15 +10,15 @@ React Interactive
 | ------------------ | :-------------: |
 | Full name          | react-interactive |
 | Keywords           | react, interactive, touch, hover, active, focus, keyboard |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 6 |
-| # downloads        | 12170 |
+| # downloads        | 39830 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/rafrex/react-interactive#readme)
-- [Bugs](https://github.com/rafrex/react-interactive/issues)
-- [Repository](https://github.com/rafrex/react-interactive)
+- [Homepage](https://github.com/rafgraph/react-interactive#readme)
+- [Bugs](https://github.com/rafgraph/react-interactive/issues)
+- [Repository](https://github.com/rafgraph/react-interactive)
 - [Npm](https://www.npmjs.com/package/react-interactive)
     
 

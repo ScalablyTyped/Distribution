@@ -2,13 +2,15 @@ package typings.bearcatEs6.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AsyncScriptLoader extends js.Object {
+  
   var applicationContext: ApplicationContext = js.native
+  
   var cacheModules: js.Object = js.native
-  var loaderDir: String = js.native
+  
   /**
     * AsyncScriptLoader get script from cache or new.
     *
@@ -18,6 +20,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def get(uri: String, deps: js.Array[String]): js.Object = js.native
+  
   /**
     * AsyncScriptLoader get loaded beans list.
     *
@@ -25,6 +28,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def getLoadBeans(): js.Array[js.Object] = js.native
+  
   /**
     * AsyncScriptLoader get bean path through bean id.
     *
@@ -33,6 +37,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def getPathById(id: String): String = js.native
+  
   /**
     * AsyncScriptLoader load beans asynchronously.
     *
@@ -42,6 +47,9 @@ trait AsyncScriptLoader extends js.Object {
     */
   def load(ids: js.Array[String]): Unit = js.native
   def load(ids: js.Array[String], cb: CallbackFunc): Unit = js.native
+  
+  var loaderDir: String = js.native
+  
   /**
     * AsyncScriptLoader register script with id, meta.
     *
@@ -50,6 +58,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def module(id: String, beanMeta: js.Object): Unit = js.native
+  
   /**
     * AsyncScriptLoader resolve uri path with refUri.
     *
@@ -59,6 +68,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def resolve(id: String, refUri: String): String = js.native
+  
   /**
     * AsyncScriptLoader resolve deps through bean meta.
     *
@@ -67,6 +77,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def resolveDeps(beanMeta: js.Object): js.Array[String] = js.native
+  
   /**
     * AsyncScriptLoader save load script with uri meta.
     *
@@ -75,6 +86,7 @@ trait AsyncScriptLoader extends js.Object {
     * @api     public
     */
   def save(uri: String, meta: js.Object): Unit = js.native
+  
   /**
     * AsyncScriptLoader set applicationContext reference.
     *
@@ -83,4 +95,3 @@ trait AsyncScriptLoader extends js.Object {
     */
   def setApplicationContext(applicationContext: ApplicationContext): Unit = js.native
 }
-

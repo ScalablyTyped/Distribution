@@ -10,9 +10,9 @@ A node.js package for Steven Levithan's excellent dateFormat() function.
 | ------------------ | :-------------: |
 | Full name          | dateformat |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1445 |
-| # downloads        | 194762648 |
+| # releases         | 0 |
+| # dependents       | 1643 |
+| # downloads        | 244378294 |
 | # stars            | 97 |
 
 ## Links

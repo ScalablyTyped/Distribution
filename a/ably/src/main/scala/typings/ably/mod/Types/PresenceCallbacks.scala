@@ -2,10 +2,11 @@ package typings.ably.mod.Types
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PresenceCallbacks extends js.Object {
+  
   def get(): Unit = js.native
   def get(paramsOrCallback: js.UndefOr[scala.Nothing], callback: paginatedResultCallback[PresenceMessage]): Unit = js.native
   def get(paramsOrCallback: RestPresenceParams): Unit = js.native
@@ -15,6 +16,7 @@ trait PresenceCallbacks extends js.Object {
     paramsOrCallback: paginatedResultCallback[PresenceMessage],
     callback: paginatedResultCallback[PresenceMessage]
   ): Unit = js.native
+  
   def history(paramsOrCallback: RestHistoryParams): Unit = js.native
   def history(paramsOrCallback: RestHistoryParams, callback: paginatedResultCallback[PresenceMessage]): Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[PresenceMessage]): Unit = js.native
@@ -23,4 +25,3 @@ trait PresenceCallbacks extends js.Object {
     callback: paginatedResultCallback[PresenceMessage]
   ): Unit = js.native
 }
-

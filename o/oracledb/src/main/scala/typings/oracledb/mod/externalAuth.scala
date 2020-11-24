@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If true, connections will be established using external authentication.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "externalAuth")
 @js.native
 object externalAuth extends TopLevel[Boolean]
-

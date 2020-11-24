@@ -2,14 +2,14 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SoftphoneErrorTypes extends js.Object
-
 @JSGlobal("connect.SoftphoneErrorTypes")
 @js.native
 object SoftphoneErrorTypes extends js.Object {
+  
   @js.native
   sealed trait ICE_COLLECTION_TIMEOUT extends SoftphoneErrorTypes
   
@@ -36,6 +36,4 @@ object SoftphoneErrorTypes extends js.Object {
   
   @js.native
   sealed trait WEBRTC_ERROR extends SoftphoneErrorTypes
-  
 }
-

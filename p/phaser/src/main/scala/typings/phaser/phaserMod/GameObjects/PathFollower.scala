@@ -6,7 +6,7 @@ import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PathFollower Game Object.
@@ -40,4 +40,3 @@ class PathFollower protected ()
   def this(scene: Scene, path: Path, x: Double, y: Double, texture: Texture, frame: String) = this()
   def this(scene: Scene, path: Path, x: Double, y: Double, texture: Texture, frame: integer) = this()
 }
-

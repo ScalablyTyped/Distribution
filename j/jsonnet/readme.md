@@ -11,7 +11,7 @@ jsonnet wrapper for Node.js
 | Keywords           | jsonnet, json |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 2902 |
+| # downloads        | 5130 |
 | # stars            | 0 |
 
 ## Links

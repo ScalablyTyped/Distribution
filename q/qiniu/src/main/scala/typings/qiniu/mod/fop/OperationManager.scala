@@ -5,7 +5,7 @@ import typings.qiniu.mod.callback
 import typings.qiniu.mod.conf.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "fop.OperationManager")
 @js.native
@@ -13,8 +13,11 @@ class OperationManager () extends js.Object {
   def this(mac: Mac) = this()
   def this(mac: js.UndefOr[scala.Nothing], config: Config) = this()
   def this(mac: Mac, config: Config) = this()
+  
   var config: Config = js.native
+  
   var mac: Mac = js.native
+  
   def pfop(
     bucket: String,
     key: String,
@@ -40,6 +43,7 @@ class OperationManager () extends js.Object {
     options: PfopOptions,
     callback: callback
   ): Unit = js.native
+  
   /**
     * 查询持久化数据处理进度
     * @param persistentId pfop操作返回的持久化处理ID
@@ -47,4 +51,3 @@ class OperationManager () extends js.Object {
     */
   def prefop(persistentId: String, callback: callback): Unit = js.native
 }
-

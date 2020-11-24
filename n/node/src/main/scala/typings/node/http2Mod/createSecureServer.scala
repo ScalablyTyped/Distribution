@@ -2,11 +2,12 @@ package typings.node.http2Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("http2", "createSecureServer")
 @js.native
 object createSecureServer extends js.Object {
+  
   def apply(): Http2SecureServer = js.native
   def apply(
     onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
@@ -17,4 +18,3 @@ object createSecureServer extends js.Object {
     onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): Http2SecureServer = js.native
 }
-

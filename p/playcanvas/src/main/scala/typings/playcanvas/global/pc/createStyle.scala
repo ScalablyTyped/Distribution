@@ -3,11 +3,12 @@ package typings.playcanvas.global.pc
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("pc.createStyle")
 @js.native
 object createStyle extends js.Object {
+  
   /**
     * Creates a &lt;style&gt; DOM element from a string that contains CSS.
     * @example
@@ -19,4 +20,3 @@ object createStyle extends js.Object {
     */
   def apply(cssString: String): Element = js.native
 }
-

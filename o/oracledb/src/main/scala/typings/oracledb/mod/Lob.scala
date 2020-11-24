@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lob objects can be used to access Oracle Database CLOB and BLOB data.
@@ -13,34 +13,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Lob extends Duplex {
+  
   /**
     * This corresponds to the size used by the Oracle LOB layer when accessing or modifying the LOB value.
     */
   val chunkSize: Double = js.native
-  /**
-    * Length of a queried LOB in bytes (for BLOBs) or characters (for CLOBs).
-    */
-  val length: Double = js.native
-  /**
-    * The number of bytes (for BLOBs) or characters (for CLOBs) to read for each Stream ‘data’ event of a queried LOB.
-    *
-    * For efficiency, it is recommended that pieceSize be a multiple of chunkSize.
-    *
-    * The property should not be reset in the middle of streaming since data will be lost when
-    * internal buffers are resized.
-    *
-    * The maximum value for pieceSize is limited to the value of UINT_MAX.
-    *
-    * @default chunkSize
-    */
-  var pieceSize: Double = js.native
-  /**
-    * The type of Lob being used. It will have the value of one of the constants BLOB or CLOB.
-    *
-    * The value is derived from the bind type when using LOB bind variables, or from the column
-    * type when a LOB is returned by a query.
-    */
-  val `type`: Double = js.native
+  
   /**
     * Explicitly closes a Lob.
     *
@@ -66,6 +44,7 @@ trait Lob extends Duplex {
     */
   def close(): js.Promise[Unit] = js.native
   def close(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Return all the LOB data. CLOBs and NCLOBs will be returned as strings. BLOBs will be returned as a Buffer.
     * 
@@ -79,5 +58,31 @@ trait Lob extends Duplex {
     */
   def getData(): js.Promise[String | Buffer] = js.native
   def getData(callback: js.Function2[/* error */ DBError, /* data */ String | Buffer, Unit]): Unit = js.native
+  
+  /**
+    * Length of a queried LOB in bytes (for BLOBs) or characters (for CLOBs).
+    */
+  val length: Double = js.native
+  
+  /**
+    * The number of bytes (for BLOBs) or characters (for CLOBs) to read for each Stream ‘data’ event of a queried LOB.
+    *
+    * For efficiency, it is recommended that pieceSize be a multiple of chunkSize.
+    *
+    * The property should not be reset in the middle of streaming since data will be lost when
+    * internal buffers are resized.
+    *
+    * The maximum value for pieceSize is limited to the value of UINT_MAX.
+    *
+    * @default chunkSize
+    */
+  var pieceSize: Double = js.native
+  
+  /**
+    * The type of Lob being used. It will have the value of one of the constants BLOB or CLOB.
+    *
+    * The value is derived from the bind type when using LOB bind variables, or from the column
+    * type when a LOB is returned by a query.
+    */
+  val `type`: Double = js.native
 }
-

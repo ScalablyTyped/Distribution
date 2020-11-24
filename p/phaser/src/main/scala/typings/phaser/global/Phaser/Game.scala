@@ -2,7 +2,7 @@ package typings.phaser.global.Phaser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Phaser.Game instance is the main controller for the entire Phaser game. It is responsible
@@ -23,4 +23,3 @@ class Game ()
   extends typings.phaser.Phaser.Game {
   def this(GameConfig: typings.phaser.Phaser.Types.Core.GameConfig) = this()
 }
-

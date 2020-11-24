@@ -2,13 +2,14 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to start the mail merge process and save the resulting merged document to the server.
   */
 @js.native
 trait MailMergeAndSaveAsCommand extends js.Object {
+  
   /**
     * Executes the MailMergeAndSaveAsCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param filePath The path to a saved file, or an object that contains the saved file information.
@@ -18,9 +19,9 @@ trait MailMergeAndSaveAsCommand extends js.Object {
   def execute(filePath: String, settings: MailMergeSettings): Boolean = js.native
   def execute(filePath: RichEditFileInfo): Boolean = js.native
   def execute(filePath: RichEditFileInfo, settings: MailMergeSettings): Boolean = js.native
+  
   /**
     * Gets information about the command's state.
     */
   def getState(): CommandState[MailMergeSettings] = js.native
 }
-

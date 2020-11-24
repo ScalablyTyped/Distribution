@@ -7,25 +7,19 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for a contents manager.
   */
 @js.native
 trait IManager extends IDisposable {
-  /**
-    * A signal emitted when a file operation takes place.
-    */
-  val fileChanged: ISignal[IManager, IChangedArgs] = js.native
-  /**
-    * The server settings associated with the manager.
-    */
-  val serverSettings: ISettings = js.native
+  
   /**
     * Add an `IDrive` to the manager.
     */
   def addDrive(drive: IDrive): Unit = js.native
+  
   /**
     * Copy a file into a given directory.
     *
@@ -37,6 +31,7 @@ trait IManager extends IDisposable {
     *  file is copied.
     */
   def copy(path: String, toDir: String): js.Promise[IModel] = js.native
+  
   /**
     * Create a checkpoint for a file.
     *
@@ -46,6 +41,7 @@ trait IManager extends IDisposable {
     *   checkpoint is created.
     */
   def createCheckpoint(path: String): js.Promise[ICheckpointModel] = js.native
+  
   /**
     * Delete a file.
     *
@@ -54,6 +50,7 @@ trait IManager extends IDisposable {
     * @returns A promise which resolves when the file is deleted.
     */
   def delete(path: String): js.Promise[Unit] = js.native
+  
   /**
     * Delete a checkpoint for a file.
     *
@@ -64,6 +61,7 @@ trait IManager extends IDisposable {
     * @returns A promise which resolves when the checkpoint is deleted.
     */
   def deleteCheckpoint(path: String, checkpointID: String): js.Promise[Unit] = js.native
+  
   /**
     * Given a path of the form `drive:local/portion/of/it.txt`
     * get the name of the drive. If the path is missing
@@ -74,6 +72,12 @@ trait IManager extends IDisposable {
     * @returns The drive name for the path, or the empty string.
     */
   def driveName(path: String): String = js.native
+  
+  /**
+    * A signal emitted when a file operation takes place.
+    */
+  val fileChanged: ISignal[IManager, IChangedArgs] = js.native
+  
   /**
     * Get a file or directory.
     *
@@ -85,6 +89,7 @@ trait IManager extends IDisposable {
     */
   def get(path: String): js.Promise[IModel] = js.native
   def get(path: String, options: IFetchOptions): js.Promise[IModel] = js.native
+  
   /**
     * Get an encoded download url given a file path.
     *
@@ -95,12 +100,14 @@ trait IManager extends IDisposable {
     * The returned URL may include a query parameter.
     */
   def getDownloadUrl(path: String): js.Promise[String] = js.native
+  
   /**
     * Given a path, get a ModelDB.IFactory from the
     * relevant backend. Returns `null` if the backend
     * does not provide one.
     */
   def getModelDBFactory(path: String): IFactory | Null = js.native
+  
   /**
     * List available checkpoints for a file.
     *
@@ -110,6 +117,7 @@ trait IManager extends IDisposable {
     *    the file.
     */
   def listCheckpoints(path: String): js.Promise[js.Array[ICheckpointModel]] = js.native
+  
   /**
     * Given a path of the form `drive:local/portion/of/it.txt`
     * get the local part of it.
@@ -119,6 +127,7 @@ trait IManager extends IDisposable {
     * @returns The local part of the path.
     */
   def localPath(path: String): String = js.native
+  
   /**
     * Create a new untitled file or directory in the specified directory path.
     *
@@ -129,6 +138,7 @@ trait IManager extends IDisposable {
     */
   def newUntitled(): js.Promise[IModel] = js.native
   def newUntitled(options: ICreateOptions): js.Promise[IModel] = js.native
+  
   /**
     * Normalize a global path. Reduces '..' and '.' parts, and removes
     * leading slashes from the local part of the path, while retaining
@@ -139,6 +149,7 @@ trait IManager extends IDisposable {
     * @returns The normalized path.
     */
   def normalize(path: String): String = js.native
+  
   /**
     * Rename a file or directory.
     *
@@ -150,6 +161,20 @@ trait IManager extends IDisposable {
     *   file is renamed.
     */
   def rename(path: String, newPath: String): js.Promise[IModel] = js.native
+  
+  /**
+    * Resolve a global path, starting from the root path. Behaves like
+    * posix-path.resolve, with 3 differences:
+    *  - will never prepend cwd
+    *  - if root has a drive name, the result is prefixed with "<drive>:"
+    *  - before adding drive name, leading slashes are removed
+    *
+    * @param path: the path.
+    *
+    * @returns The normalized path.
+    */
+  def resolvePath(root: String, path: String): String = js.native
+  
   /**
     * Restore a file to a known checkpoint state.
     *
@@ -160,6 +185,7 @@ trait IManager extends IDisposable {
     * @returns A promise which resolves when the checkpoint is restored.
     */
   def restoreCheckpoint(path: String, checkpointID: String): js.Promise[Unit] = js.native
+  
   /**
     * Save a file.
     *
@@ -172,5 +198,9 @@ trait IManager extends IDisposable {
     */
   def save(path: String): js.Promise[IModel] = js.native
   def save(path: String, options: PartialIModel): js.Promise[IModel] = js.native
+  
+  /**
+    * The server settings associated with the manager.
+    */
+  val serverSettings: ISettings = js.native
 }
-

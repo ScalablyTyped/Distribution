@@ -10,16 +10,17 @@ import typings.std.Headers
 import typings.std.ResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DatasetResponse[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends RdfFetchResponse[OutQuad] {
+  
   def dataset(): js.Promise[D] = js.native
 }
-
 object DatasetResponse {
+  
   @scala.inline
-  def apply[/* <: typings.rdfJs.mod.DatasetCore[OutQuad, InQuad] */ D, /* <: typings.rdfJs.mod.BaseQuad */ OutQuad, /* <: typings.rdfJs.mod.BaseQuad */ InQuad](
+  def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](
     arrayBuffer: () => js.Promise[ArrayBuffer],
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,
@@ -41,20 +42,23 @@ object DatasetResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetResponse[D, OutQuad, InQuad]]
   }
+  
   @scala.inline
-  implicit class DatasetResponseOps[Self <: DatasetResponse[_, _, _], /* <: typings.rdfJs.mod.DatasetCore[OutQuad, InQuad] */ D, /* <: typings.rdfJs.mod.BaseQuad */ OutQuad, /* <: typings.rdfJs.mod.BaseQuad */ InQuad] (val x: Self with (DatasetResponse[D, OutQuad, InQuad])) extends AnyVal {
+  implicit class DatasetResponseOps[Self <: DatasetResponse[_, _, _], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self with (DatasetResponse[D, OutQuad, InQuad])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDataset(value: () => js.Promise[D]): Self = this.set("dataset", js.Any.fromFunction0(value))
   }
-  
 }
-

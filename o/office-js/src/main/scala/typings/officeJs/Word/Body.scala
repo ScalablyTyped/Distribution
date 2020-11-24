@@ -29,7 +29,7 @@ import typings.officeJs.officeJsStrings.Unknown_
 import typings.officeJs.officeJsStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -39,6 +39,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Body extends ClientObject {
+  
+  /**
+    * Clears the contents of the body object. The user can perform the undo operation on the cleared content.
+    *
+    * [Api set: WordApi 1.1]
+    */
+  def clear(): Unit = js.native
+  
   /**
     *
     * Gets the collection of rich text content control objects in the body. Read-only.
@@ -46,9 +54,11 @@ trait Body extends ClientObject {
     * [Api set: WordApi 1.1]
     */
   val contentControls: ContentControlCollection = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Body: RequestContext = js.native
+  
   /**
     *
     * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
@@ -56,122 +66,21 @@ trait Body extends ClientObject {
     * [Api set: WordApi 1.1]
     */
   val font: Font = js.native
-  /**
-    *
-    * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val inlinePictures: InlinePictureCollection = js.native
-  /**
-    *
-    * Gets the collection of list objects in the body. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val lists: ListCollection = js.native
-  /**
-    *
-    * Gets the collection of paragraph objects in the body. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val paragraphs: ParagraphCollection = js.native
-  /**
-    *
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentBody: Body = js.native
-  /**
-    *
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentBodyOrNullObject: Body = js.native
-  /**
-    *
-    * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val parentContentControl: ContentControl = js.native
-  /**
-    *
-    * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentContentControlOrNullObject: ContentControl = js.native
-  /**
-    *
-    * Gets the parent section of the body. Throws an error if there isn't a parent section. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentSection: Section = js.native
-  /**
-    *
-    * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentSectionOrNullObject: Section = js.native
-  /**
-    *
-    * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var style: String = js.native
-  /**
-    *
-    * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ js.Any = js.native
-  /**
-    *
-    * Gets the collection of table objects in the body. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val tables: TableCollection = js.native
-  /**
-    *
-    * Gets the text of the body. Use the insertText method to insert text. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val text: String = js.native
-  /**
-    *
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val `type`: BodyType | Unknown_ | MainDoc | typings.officeJs.officeJsStrings.Section | Header | Footer | typings.officeJs.officeJsStrings.TableCell = js.native
-  /**
-    * Clears the contents of the body object. The user can perform the undo operation on the cleared content.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  def clear(): Unit = js.native
+  
   /**
     * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
   def getHtml(): ClientResult[String] = js.native
+  
   /**
     * Gets the OOXML (Office Open XML) representation of the body object.
     *
     * [Api set: WordApi 1.1]
     */
   def getOoxml(): ClientResult[String] = js.native
+  
   /**
     * Gets the whole body, or the starting or ending point of the body, as a range.
     *
@@ -193,6 +102,15 @@ trait Body extends ClientObject {
   def getRange_Start(rangeLocation: Start): Range = js.native
   @JSName("getRange")
   def getRange_Whole(rangeLocation: Whole): Range = js.native
+  
+  /**
+    *
+    * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+    *
+    * [Api set: WordApi 1.1]
+    */
+  val inlinePictures: InlinePictureCollection = js.native
+  
   /**
     * Inserts a break at the specified location in the main document.
     *
@@ -245,12 +163,14 @@ trait Body extends ClientObject {
   def insertBreak(breakType: SectionOdd, insertLocation: End): Unit = js.native
   def insertBreak(breakType: SectionOdd, insertLocation: Replace): Unit = js.native
   def insertBreak(breakType: SectionOdd, insertLocation: Start): Unit = js.native
+  
   /**
     * Wraps the body object with a Rich Text content control.
     *
     * [Api set: WordApi 1.1]
     */
   def insertContentControl(): ContentControl = js.native
+  
   /**
     * Inserts a document into the body at the specified location.
     *
@@ -278,6 +198,7 @@ trait Body extends ClientObject {
   def insertFileFromBase64_Replace(base64File: String, insertLocation: Replace): Range = js.native
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
+  
   /**
     * Inserts HTML at the specified location.
     *
@@ -305,6 +226,7 @@ trait Body extends ClientObject {
   def insertHtml_Replace(html: String, insertLocation: Replace): Range = js.native
   @JSName("insertHtml")
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
+  
   /**
     * Inserts a picture into the body at the specified location.
     *
@@ -332,6 +254,7 @@ trait Body extends ClientObject {
   def insertInlinePictureFromBase64_Replace(base64EncodedImage: String, insertLocation: Replace): InlinePicture = js.native
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
+  
   /**
     * Inserts OOXML at the specified location.
     *
@@ -359,6 +282,7 @@ trait Body extends ClientObject {
   def insertOoxml_Replace(ooxml: String, insertLocation: Replace): Range = js.native
   @JSName("insertOoxml")
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
+  
   /**
     * Inserts a paragraph at the specified location.
     *
@@ -386,6 +310,7 @@ trait Body extends ClientObject {
   def insertParagraph_Replace(paragraphText: String, insertLocation: Replace): Paragraph = js.native
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
+  
   /**
     * Inserts a table with the specified number of rows and columns.
     *
@@ -433,6 +358,7 @@ trait Body extends ClientObject {
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start): Table = js.native
   @JSName("insertTable")
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
+  
   /**
     * Inserts text into the body at the specified location.
     *
@@ -460,6 +386,15 @@ trait Body extends ClientObject {
   def insertText_Replace(text: String, insertLocation: Replace): Range = js.native
   @JSName("insertText")
   def insertText_Start(text: String, insertLocation: Start): Range = js.native
+  
+  /**
+    *
+    * Gets the collection of list objects in the body. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val lists: ListCollection = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -470,6 +405,63 @@ trait Body extends ClientObject {
   def load(propertyNamesAndPaths: Expand): Body = js.native
   def load(propertyNames: String): Body = js.native
   def load(propertyNames: js.Array[String]): Body = js.native
+  
+  /**
+    *
+    * Gets the collection of paragraph objects in the body. Read-only.
+    *
+    * [Api set: WordApi 1.1]
+    */
+  val paragraphs: ParagraphCollection = js.native
+  
+  /**
+    *
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentBody: Body = js.native
+  
+  /**
+    *
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentBodyOrNullObject: Body = js.native
+  
+  /**
+    *
+    * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
+    *
+    * [Api set: WordApi 1.1]
+    */
+  val parentContentControl: ContentControl = js.native
+  
+  /**
+    *
+    * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentContentControlOrNullObject: ContentControl = js.native
+  
+  /**
+    *
+    * Gets the parent section of the body. Throws an error if there isn't a parent section. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentSection: Section = js.native
+  
+  /**
+    *
+    * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val parentSectionOrNullObject: Section = js.native
+  
   /**
     * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects.
     *
@@ -481,6 +473,7 @@ trait Body extends ClientObject {
   def search(searchText: String): RangeCollection = js.native
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
   def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
+  
   /**
     * Selects the body and navigates the Word UI to it.
     *
@@ -496,6 +489,7 @@ trait Body extends ClientObject {
   def select_Select(selectionMode: Select): Unit = js.native
   @JSName("select")
   def select_Start(selectionMode: Start): Unit = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Body): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -511,18 +505,60 @@ trait Body extends ClientObject {
     */
   def set(properties: BodyUpdateData): Unit = js.native
   def set(properties: BodyUpdateData, options: UpdateOptions): Unit = js.native
+  
+  /**
+    *
+    * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    *
+    * [Api set: WordApi 1.1]
+    */
+  var style: String = js.native
+  
+  /**
+    *
+    * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ js.Any = js.native
+  
+  /**
+    *
+    * Gets the collection of table objects in the body. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val tables: TableCollection = js.native
+  
+  /**
+    *
+    * Gets the text of the body. Use the insertText method to insert text. Read-only.
+    *
+    * [Api set: WordApi 1.1]
+    */
+  val text: String = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): BodyData = js.native
+  
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Body = js.native
+  
+  /**
+    *
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val `type`: BodyType | Unknown_ | MainDoc | typings.officeJs.officeJsStrings.Section | Header | Footer | typings.officeJs.officeJsStrings.TableCell = js.native
+  
   /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Body = js.native
 }
-

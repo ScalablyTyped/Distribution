@@ -4,11 +4,12 @@ import typings.rxjs.fromEventMod.NodeEventHandler
 import typings.rxjs.internalObservableMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/fromEventPattern", JSImport.Namespace)
 @js.native
 object fromEventPatternMod extends js.Object {
+  
   def fromEventPattern[T](addHandler: js.Function1[/* handler */ NodeEventHandler, _]): Observable[T] = js.native
   def fromEventPattern[T](
     addHandler: js.Function1[/* handler */ NodeEventHandler, _],
@@ -25,4 +26,3 @@ object fromEventPatternMod extends js.Object {
     resultSelector: js.Function1[/* repeated */ js.Any, T]
   ): Observable[T] = js.native
 }
-

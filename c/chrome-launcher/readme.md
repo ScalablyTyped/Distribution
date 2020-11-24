@@ -10,9 +10,9 @@ Launch latest Chrome with the Devtools Protocol port open
 | ------------------ | :-------------: |
 | Full name          | chrome-launcher |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 227 |
-| # downloads        | 16081247 |
+| # releases         | 15 |
+| # dependents       | 234 |
+| # downloads        | 18910267 |
 | # stars            | 13 |
 
 ## Links

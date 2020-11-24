@@ -12,7 +12,7 @@ jQuery fullscreen plugin for all browsers
 | Keywords           | jquery-plugin, ecosystem:jquery |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1270 |
+| # downloads        | 594 |
 | # stars            | 0 |
 
 ## Links

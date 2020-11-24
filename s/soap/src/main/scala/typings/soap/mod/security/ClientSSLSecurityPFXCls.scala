@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.soap.securityMod.ClientSSLSecurityPFX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("soap", "security.ClientSSLSecurityPFX")
 @js.native
@@ -14,4 +14,3 @@ class ClientSSLSecurityPFXCls protected () extends ClientSSLSecurityPFX {
   def this(pfx: String, defaults: js.Any) = this()
   def this(pfx: Buffer, defaults: js.Any) = this()
 }
-

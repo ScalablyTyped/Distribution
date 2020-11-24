@@ -10,9 +10,9 @@ Generate URL-encoded query string from the object (php's http_build_query() in j
 | ------------------ | :-------------: |
 | Full name          | http-build-query |
 | Keywords           | http, build, query, url |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 40103 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 61448 |
 | # stars            | 0 |
 
 ## Links

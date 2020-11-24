@@ -5,7 +5,7 @@ import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("log4javascript", "InPageAppender")
 @js.native
@@ -235,6 +235,7 @@ class InPageAppender protected () extends Appender {
     width: Double,
     height: Double
   ) = this()
+  
   /**
   	 * Adds a function with the name specified to the list of functions available on the command line. This feature may be used
   	 * to add custom functions to the command line.
@@ -243,129 +244,158 @@ class InPageAppender protected () extends Appender {
     functionName: String,
     commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, _]
   ): Unit = js.native
+  
   /**
   	 * Sets a CSS style property on the HTML element containing the console iframe.
   	 */
   def addCssProperty(name: String, value: String): Unit = js.native
+  
   /**
   	 * Clears all messages from the console window.
   	 */
   def clear(): Unit = js.native
+  
   /**
   	 * Closes the pop-up window.
   	 */
   def close(): Unit = js.native
+  
   /**
   	 * Evaluates the expression and appends the result to the console.
   	 */
   def evalCommandAndAppend(expr: String): Unit = js.native
+  
   /**
   	 * Brings the console window to the top and gives it the focus.
   	 */
   def focus(): Unit = js.native
+  
   /**
   	 * Brings the console window to the top and gives the focus to the command line.
   	 */
   def focusCommandLine(): Unit = js.native
+  
   /**
   	 * Brings the console window to the top and gives the focus to the search box.
   	 */
   def focusSearch(): Unit = js.native
+  
   /**
   	 * Returns the layout used to format the output for commands typed into the command line. The default value is a
   	 * PatternLayout with pattern string %m
   	 */
   def getCommandLayout(): Layout = js.native
+  
   /**
   	 * Returns the number of levels to expand when an object value is logged to the console. Each property of an object above
   	 * this threshold will be expanded if it is itself an object or array, otherwise its string representation will be displayed.
   	 * Default value is 1 (i.e. the properties of the object logged will be displayed in their string representation but not expanded).
   	 */
   def getCommandLineObjectExpansionDepth(): Double = js.native
+  
   /**
   	 * Returns a reference to the window in which commands typed into the command line are currently being executed.
   	 */
   def getCommandWindow(): Window = js.native
+  
   /**
   	 * Returns the outer height of the console window.
   	 */
   def getHeight(): Double = js.native
+  
   /**
   	 * Returns the largest number of messages displayed and stored by the console window.
   	 */
   def getMaxMessages(): Double = js.native
+  
   /**
   	 * Returns the outer width of the console window.
   	 */
   def getWidth(): Double = js.native
+  
   /**
   	 * Hides / minimizes the console window.
   	 */
   def hide(): Unit = js.native
+  
   /**
   	 * Returns whether the console window starts off hidden / minimized.
   	 */
   def isInitiallyMinimized(): Boolean = js.native
+  
   /**
   	 * Returns whether new log messages are displayed at the top of the pop-up window. Default value is false (i.e. log messages
   	 * are appended to the bottom of the window).
   	 */
   def isNewestMessageAtTop(): Boolean = js.native
+  
   /**
   	 * Returns whether the pop-up window scrolls to display the latest log message when a new message is logged. Default value is true.
   	 */
   def isScrollToLatestMessage(): Boolean = js.native
+  
   /**
   	 * Returns whether the console includes a command line. Default value is true.
   	 */
   def isShowCommandLine(): Boolean = js.native
+  
   /**
   	 * Returns whether the console window is currently visible.
   	 */
   def isVisible(): Boolean = js.native
+  
   /**
   	 * Sets the layout used to format the output for commands typed into the command line.
   	 */
   def setCommandLayout(commandLayout: Layout): Unit = js.native
+  
   /**
   	 * Sets the number of levels to expand when an object value is logged to the console.
   	 */
   def setCommandLineObjectExpansionDepth(expansionDepth: Double): Unit = js.native
+  
   /**
   	 * Sets the window in which commands typed into the command line are executed.
   	 */
   def setCommandWindow(commandWindow: Window): Unit = js.native
+  
   /**
   	 * Sets the outer height of the console window. Any valid CSS length may be used.
   	 */
   def setHeight(height: Double): Unit = js.native
+  
   /**
   	 * Sets whether the console window should start off hidden / minimized.
   	 */
   def setInitiallyMinimized(initiallyMinimized: Boolean): Unit = js.native
+  
   /**
   	 * Sets the largest number of messages displayed and stored by the console window. Set this to null to make this number unlimited.
   	 */
   def setMaxMessages(maxMessages: Double): Unit = js.native
+  
   /**
   	 * Sets whether to display new log messages at the top inside the pop-up window.
   	 */
   def setNewestMessageAtTop(newestMessageAtTop: Boolean): Unit = js.native
+  
   /**
   	 * Sets whether to scroll the pop-up window to display the latest log message when a new message is logged.
   	 */
   def setScrollToLatestMessage(scrollToLatestMessage: Boolean): Unit = js.native
+  
   /**
   	 * Sets whether the console includes a command line.
   	 */
   def setShowCommandLine(showCommandLine: Boolean): Unit = js.native
+  
   /**
   	 * Sets the outer width of the console window. Any valid CSS length may be used.
   	 */
   def setWidth(width: Double): Unit = js.native
+  
   /**
   	 * Shows / unhides the console window.
   	 */
   def show(): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.ckeditorCkeditor5Engine.mod.view
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.children
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text
 */
 trait ChangeType extends js.Object
-
 object ChangeType {
+  
   @scala.inline
   def attributes: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributes = "attributes".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributes]
+  
   @scala.inline
   def children: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.children = "children".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.children]
+  
   @scala.inline
   def text: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text = "text".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text]
 }
-

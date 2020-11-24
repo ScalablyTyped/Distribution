@@ -8,15 +8,15 @@ import typings.httpProxyAgent.mod.HttpProxyAgentOptions
 import typings.node.netMod.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("http-proxy-agent/dist/agent", JSImport.Namespace)
 @js.native
 object agentMod extends js.Object {
+  
   @js.native
   trait HttpProxyAgent extends Agent {
-    var proxy: js.Any = js.native
-    var secureProxy: js.Any = js.native
+    
     /**
       * Called when the node-core HTTP client library is creating a
       * new HTTP request.
@@ -24,14 +24,22 @@ object agentMod extends js.Object {
       * @api protected
       */
     def callback(req: HttpProxyAgentClientRequest, opts: RequestOptions): js.Promise[Socket] = js.native
+    
+    var proxy: js.Any = js.native
+    
+    var secureProxy: js.Any = js.native
   }
   
   @js.native
   trait HttpProxyAgentClientRequest extends ClientRequest {
+    
     var _header: js.UndefOr[String | Null] = js.native
-    var output: js.UndefOr[js.Array[String]] = js.native
-    var outputData: js.UndefOr[js.Array[Data]] = js.native
+    
     def _implicitHeader(): Unit = js.native
+    
+    var output: js.UndefOr[js.Array[String]] = js.native
+    
+    var outputData: js.UndefOr[js.Array[Data]] = js.native
   }
   
   @js.native
@@ -39,6 +47,4 @@ object agentMod extends js.Object {
     def this(_opts: String) = this()
     def this(_opts: HttpProxyAgentOptions) = this()
   }
-  
 }
-

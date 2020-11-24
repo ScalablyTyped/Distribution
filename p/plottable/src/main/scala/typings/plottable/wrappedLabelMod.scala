@@ -3,14 +3,17 @@ package typings.plottable
 import typings.plottable.labelMod.Label
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/wrappedLabel", JSImport.Namespace)
 @js.native
 object wrappedLabelMod extends js.Object {
+  
   @js.native
   class WrappedLabel () extends Label {
+    
     var _maxLines: Double = js.native
+    
     /**
       * Get the label max number of wrapped lines.
       */
@@ -21,6 +24,4 @@ object wrappedLabelMod extends js.Object {
       */
     def maxLines(maxLines: Double): this.type = js.native
   }
-  
 }
-

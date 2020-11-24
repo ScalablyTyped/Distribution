@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudfunctions/v1", "cloudfunctions_v1.Resource$Projects$Locations$Functions")
 @js.native
 class ResourceProjectsLocationsFunctions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.call
     * @desc Synchronously invokes a deployed Cloud Function. To be used for
@@ -48,6 +48,9 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCallFunctionResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.create
     * @desc Creates a new function. If a function with the given name already
@@ -82,6 +85,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.delete
     * @desc Deletes a function with the given name from the specified project.
@@ -115,6 +119,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.generateDownloadUrl
     * @desc Returns a signed URL for downloading deployed function source code.
@@ -150,6 +155,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateDownloadUrlResponse]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.generateUploadUrl
     * @desc Returns a signed URL for uploading a function source code. For more
@@ -197,6 +203,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateUploadUrlResponse]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.get
     * @desc Returns a function with the given name from the requested project.
@@ -228,6 +235,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCloudFunction]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.getIamPolicy
     * @desc Gets the IAM access control policy for a function. Returns an empty
@@ -260,6 +268,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.list
     * @desc Returns a list of functions that belong to the requested project.
@@ -293,6 +302,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListFunctionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.patch
     * @desc Updates existing function.
@@ -326,6 +336,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.setIamPolicy
     * @desc Sets the IAM access control policy on the specified function.
@@ -359,6 +370,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudfunctions.projects.locations.functions.testIamPermissions
     * @desc Tests the specified permissions against the IAM access control
@@ -394,4 +406,3 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

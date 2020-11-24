@@ -4,10 +4,11 @@ import typings.atom.anon.Instantiable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewRegistry extends js.Object {
+  
   /**
     *  Add a provider that will be used to construct views in the workspace's view
     *  layer based on model objects in its model layer.
@@ -22,8 +23,8 @@ trait ViewRegistry extends js.Object {
     modelConstructor: Instantiable[T],
     createView: js.Function1[/* instance */ T, js.UndefOr[HTMLElement]]
   ): Disposable = js.native
+  
   def getView(obj: js.Object): HTMLElement = js.native
   /** Get the view associated with an object in the workspace. */
   def getView(obj: TextEditor): TextEditorElement = js.native
 }
-

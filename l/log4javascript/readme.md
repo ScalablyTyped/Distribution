@@ -12,7 +12,7 @@ log4javascript
 | Keywords           | log4javascript, logging, js, json |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 118662 |
+| # downloads        | 181843 |
 | # stars            | 0 |
 
 ## Links

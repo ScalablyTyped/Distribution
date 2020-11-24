@@ -1,8 +1,9 @@
 package typings.highcharts.mod
 
+import typings.highcharts.anon.PartialAnimationOptionsOb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "SVGRenderer")
 @js.native
@@ -155,34 +156,13 @@ class SVGRenderer protected () extends js.Object {
     allowHTML: Boolean,
     styledMode: Boolean
   ) = this()
+  
   /**
     * A pointer to the renderer's associated Element class. The VMLRenderer
     * will have a pointer to VMLElement here.
     */
   var Element: SVGElement = js.native
-  /**
-    * The root `svg` node of the renderer.
-    */
-  var box: SVGDOMElement = js.native
-  /**
-    * The wrapper for the root `svg` node of the renderer.
-    */
-  var boxWrapper: SVGElement = js.native
-  /**
-    * A pointer to the `defs` node of the root SVG.
-    */
-  var defs: SVGElement = js.native
-  /**
-    * A collection of characters mapped to HTML entities. When `useHTML` on an
-    * element is true, these entities will be rendered correctly by HTML. In
-    * the SVG pseudo-HTML, they need to be unescaped back to simple characters,
-    * so for example `&lt;` will render as `<`.
-    */
-  var escapes: Dictionary[String] = js.native
-  /**
-    * An extendable collection of functions for defining symbol paths.
-    */
-  var symbols: SymbolDictionary = js.native
+  
   /**
     * Draw and return an arc. Overloaded function that takes arguments object.
     *
@@ -225,6 +205,17 @@ class SVGRenderer protected () extends js.Object {
     start: js.UndefOr[Double],
     end: js.UndefOr[Double]
   ): SVGElement = js.native
+  
+  /**
+    * The root `svg` node of the renderer.
+    */
+  var box: SVGDOMElement = js.native
+  
+  /**
+    * The wrapper for the root `svg` node of the renderer.
+    */
+  var boxWrapper: SVGElement = js.native
+  
   /**
     * Create a button with preset states.
     *
@@ -272,6 +263,7 @@ class SVGRenderer protected () extends js.Object {
     shape: js.UndefOr[SymbolKeyValue],
     useHTML: js.UndefOr[Boolean]
   ): SVGElement = js.native
+  
   /**
     * Draw a circle, wraps the SVG `circle` element.
     *
@@ -289,6 +281,7 @@ class SVGRenderer protected () extends js.Object {
   def circle(x: Double, y: js.UndefOr[scala.Nothing], r: Double): SVGElement = js.native
   def circle(x: Double, y: Double): SVGElement = js.native
   def circle(x: Double, y: Double, r: Double): SVGElement = js.native
+  
   /**
     * Define a clipping rectangle. The clipping rectangle is later applied to
     * SVGElement objects through the SVGElement#clip function.
@@ -316,6 +309,7 @@ class SVGRenderer protected () extends js.Object {
   def clipRect(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): ClipRectElement = js.native
   def clipRect(x: Double, y: Double, width: Double): ClipRectElement = js.native
   def clipRect(x: Double, y: Double, width: Double, height: Double): ClipRectElement = js.native
+  
   /**
     * Create a wrapper for an SVG element. Serves as a factory for SVGElement,
     * but this function is itself mostly called from primitive factories like
@@ -327,6 +321,7 @@ class SVGRenderer protected () extends js.Object {
     * @return The generated SVGElement.
     */
   def createElement(nodeName: String): SVGElement = js.native
+  
   /**
     * Make a straight line crisper by not spilling out to neighbour pixels.
     *
@@ -343,6 +338,7 @@ class SVGRenderer protected () extends js.Object {
     * @return The original points array, but modified to render crisply.
     */
   def crispLine(points: SVGPathArray, width: Double, roundingFunction: String): SVGPathArray = js.native
+  
   /**
     * General method for adding a definition to the SVG `defs` tag. Can be used
     * for gradients, fills, filters etc. Styled mode only. A hook for adding
@@ -356,15 +352,31 @@ class SVGRenderer protected () extends js.Object {
     * @return The inserted node.
     */
   def definition(`def`: SVGDefinitionObject): SVGElement = js.native
+  
+  /**
+    * A pointer to the `defs` node of the root SVG.
+    */
+  var defs: SVGElement = js.native
+  
   /**
     * Destroys the renderer and its allocated members.
     */
   def destroy(): Null = js.native
+  
   /**
     * Dummy function for plugins, called every time the renderer is updated.
     * Prior to Highcharts 5, this was used for the canvg renderer.
     */
   def draw(): Unit = js.native
+  
+  /**
+    * A collection of characters mapped to HTML entities. When `useHTML` on an
+    * element is true, these entities will be rendered correctly by HTML. In
+    * the SVG pseudo-HTML, they need to be unescaped back to simple characters,
+    * so for example `&lt;` will render as `<`.
+    */
+  var escapes: Dictionary[String] = js.native
+  
   /**
     * Utility to return the baseline offset and total line height from the font
     * size.
@@ -387,6 +399,7 @@ class SVGRenderer protected () extends js.Object {
   def fontMetrics(fontSize: Double): FontMetricsObject = js.native
   def fontMetrics(fontSize: Double, elem: SVGDOMElement): FontMetricsObject = js.native
   def fontMetrics(fontSize: Double, elem: SVGElement): FontMetricsObject = js.native
+  
   /**
     * Create and return an svg group element. Child Highcharts.SVGElement
     * objects are added to the group by using the group as the first parameter
@@ -400,6 +413,7 @@ class SVGRenderer protected () extends js.Object {
     */
   def g(): SVGElement = js.native
   def g(name: String): SVGElement = js.native
+  
   /**
     * Returns white for dark colors and black for bright colors.
     *
@@ -409,6 +423,7 @@ class SVGRenderer protected () extends js.Object {
     * @return The contrast color, either `#000000` or `#FFFFFF`.
     */
   def getContrast(rgba: ColorString): ColorString = js.native
+  
   /**
     * Display an image.
     *
@@ -593,6 +608,7 @@ class SVGRenderer protected () extends js.Object {
   ): SVGElement = js.native
   def image(src: String, x: Double, y: Double, width: Double, height: Double): SVGElement = js.native
   def image(src: String, x: Double, y: Double, width: Double, height: Double, onload: js.Function): SVGElement = js.native
+  
   /**
     * Initialize the SVGRenderer. Overridable initializer function that takes
     * the same parameters as the constructor.
@@ -735,6 +751,7 @@ class SVGRenderer protected () extends js.Object {
     allowHTML: Boolean,
     styledMode: Boolean
   ): Unit = js.native
+  
   /**
     * Detect whether the renderer is hidden. This happens when one of the
     * parent elements has `display: none`. Used internally to detect when we
@@ -744,6 +761,7 @@ class SVGRenderer protected () extends js.Object {
     * @return True if it is hidden.
     */
   def isHidden(): Boolean = js.native
+  
   /**
     * Draw a label, which is an extended text element with support for border
     * and background. Highcharts creates a `g` element with a text and a `path`
@@ -798,6 +816,7 @@ class SVGRenderer protected () extends js.Object {
     baseline: js.UndefOr[Boolean],
     className: js.UndefOr[String]
   ): SVGElement = js.native
+  
   /**
     * Draw a path, wraps the SVG `path` element.
     *
@@ -809,6 +828,7 @@ class SVGRenderer protected () extends js.Object {
   def path(): SVGElement = js.native
   def path(attribs: SVGAttributes): SVGElement = js.native
   def path(path: SVGPathArray): SVGElement = js.native
+  
   /**
     * Draw and return a rectangle.
     *
@@ -850,6 +870,7 @@ class SVGRenderer protected () extends js.Object {
     r: js.UndefOr[Double],
     strokeWidth: js.UndefOr[Double]
   ): SVGElement = js.native
+  
   /**
     * Resize the SVGRenderer#box and re-align all aligned child elements.
     *
@@ -864,7 +885,8 @@ class SVGRenderer protected () extends js.Object {
     */
   def setSize(width: Double, height: Double): Unit = js.native
   def setSize(width: Double, height: Double, animate: Boolean): Unit = js.native
-  def setSize(width: Double, height: Double, animate: AnimationOptionsObject): Unit = js.native
+  def setSize(width: Double, height: Double, animate: PartialAnimationOptionsOb): Unit = js.native
+  
   /**
     * Apply the global style on the renderer, mixed with the default styles.
     *
@@ -872,6 +894,7 @@ class SVGRenderer protected () extends js.Object {
     *        CSS to apply.
     */
   def setStyle(style: CSSObject): Unit = js.native
+  
   /**
     * Draw a symbol out of pre-defined shape paths from SVGRenderer#symbols. It
     * is used in Highcharts for point makers, which cake a `symbol` option, and
@@ -1056,6 +1079,12 @@ class SVGRenderer protected () extends js.Object {
   ): SVGElement = js.native
   def symbol(symbol: String, x: Double, y: Double, width: Double, height: Double): SVGElement = js.native
   def symbol(symbol: String, x: Double, y: Double, width: Double, height: Double, options: SymbolOptionsObject): SVGElement = js.native
+  
+  /**
+    * An extendable collection of functions for defining symbol paths.
+    */
+  var symbols: SymbolDictionary = js.native
+  
   /**
     * Draw text. The text can contain a subset of HTML, like spans and anchors
     * and some basic text styling of these. For more advanced features like
@@ -1098,4 +1127,3 @@ class SVGRenderer protected () extends js.Object {
   def text(str: String, x: Double, y: Double): SVGElement = js.native
   def text(str: String, x: Double, y: Double, useHTML: Boolean): SVGElement = js.native
 }
-

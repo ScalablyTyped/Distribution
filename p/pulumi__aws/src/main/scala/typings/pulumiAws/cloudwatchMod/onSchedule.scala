@@ -5,11 +5,12 @@ import typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscriptionArgs
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch", "onSchedule")
 @js.native
 object onSchedule extends js.Object {
+  
   def apply(name: String, schedule: String, handler: EventRuleEventHandler): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
   def apply(
     name: String,
@@ -32,4 +33,3 @@ object onSchedule extends js.Object {
     opts: ComponentResourceOptions
   ): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
 }
-

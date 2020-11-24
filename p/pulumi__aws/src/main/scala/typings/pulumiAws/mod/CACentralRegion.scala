@@ -1,12 +1,11 @@
 package typings.pulumiAws.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pulumiAws.regionMod.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "CACentralRegion")
 @js.native
-object CACentralRegion extends TopLevel[Region]
-
+object CACentralRegion
+  extends TopLevel[typings.pulumiAws.enumsMod.Region]

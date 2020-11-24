@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.fluentuiKeyboardKey.fluentuiKeyboardKeyNumbers.`54`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@fluentui/keyboard-key", "CaretKey")
 @js.native
 object CaretKey extends TopLevel[`54`]
-

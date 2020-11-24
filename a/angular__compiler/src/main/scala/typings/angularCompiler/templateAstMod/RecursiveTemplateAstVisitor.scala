@@ -2,11 +2,12 @@ package typings.angularCompiler.templateAstMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/template_ast", "RecursiveTemplateAstVisitor")
 @js.native
 class RecursiveTemplateAstVisitor () extends NullTemplateVisitor {
+  
   /* protected */ def visitChildren(
     context: js.Any,
     cb: js.Function1[
@@ -15,4 +16,3 @@ class RecursiveTemplateAstVisitor () extends NullTemplateVisitor {
     ]
   ): js.Array[_] = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.yadda.contextMod.Properties
 import typings.yadda.yaddaMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yadda/lib", "Yadda")
 @js.native
@@ -16,4 +16,3 @@ class Yadda protected () extends ^ {
   def this(libraries: typings.yadda.libraryMod.^, interpreter_context: Properties) = this()
   def this(libraries: typings.yadda.libraryMod.^, interpreter_context: typings.yadda.contextMod.^) = this()
 }
-

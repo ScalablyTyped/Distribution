@@ -11,8 +11,8 @@ a knex mock adapter for simulating a db during testing
 | Full name          | mock-knex |
 | Keywords           | knex, mock, bookshelf |
 | # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 897161 |
+| # dependents       | 5 |
+| # downloads        | 1522710 |
 | # stars            | 6 |
 
 ## Links

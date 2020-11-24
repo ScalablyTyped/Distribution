@@ -8,11 +8,12 @@ import typings.tstl.itreemapMod.ITreeMap
 import typings.tstl.itreesetMod.ITreeSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/experimental/container", JSImport.Namespace)
 @js.native
 object experimentalContainerMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -52,6 +53,63 @@ object experimentalContainerMod extends js.Object {
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       comp: Comparator[Key, Key]
     ) = this()
+  }
+  @js.native
+  object FlatMap extends js.Object {
+    
+    val Iterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    
+    val ReverseIterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    
+    val __MODULE: /* "experimental" */ String = js.native
   }
   
   @js.native
@@ -94,6 +152,63 @@ object experimentalContainerMod extends js.Object {
       comp: Comparator[Key, Key]
     ) = this()
   }
+  @js.native
+  object FlatMultiMap extends js.Object {
+    
+    val Iterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    
+    val ReverseIterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    
+    val __MODULE: /* "experimental" */ String = js.native
+  }
   
   @js.native
   /**
@@ -134,6 +249,55 @@ object experimentalContainerMod extends js.Object {
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
       comp: Comparator[Key, Key]
     ) = this()
+  }
+  @js.native
+  object FlatMultiSet extends js.Object {
+    
+    val Iterator: Instantiable0[
+        typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+          js.Object, 
+          Boolean, 
+          ITreeSet[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    
+    val ReverseIterator: Instantiable0[
+        typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+          js.Object, 
+          Boolean, 
+          ITreeSet[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    
+    val __MODULE: /* "experimental" */ String = js.native
   }
   
   @js.native
@@ -176,166 +340,9 @@ object experimentalContainerMod extends js.Object {
       comp: Comparator[Key, Key]
     ) = this()
   }
-  
-  @js.native
-  object FlatMap extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          ITreeMap[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          ITreeMap[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val __MODULE: /* "experimental" */ String = js.native
-  }
-  
-  @js.native
-  object FlatMultiMap extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          ITreeMap[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          ITreeMap[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val __MODULE: /* "experimental" */ String = js.native
-  }
-  
-  @js.native
-  object FlatMultiSet extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.setElementVectorMod.SetElementVector.Iterator[
-          js.Object, 
-          Boolean, 
-          ITreeSet[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
-          js.Object, 
-          Boolean, 
-          ITreeSet[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val __MODULE: /* "experimental" */ String = js.native
-  }
-  
   @js.native
   object FlatSet extends js.Object {
+    
     val Iterator: Instantiable0[
         typings.tstl.setElementVectorMod.SetElementVector.Iterator[
           js.Object, 
@@ -357,6 +364,7 @@ object experimentalContainerMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
           js.Object, 
@@ -378,8 +386,7 @@ object experimentalContainerMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val __MODULE: /* "experimental" */ String = js.native
   }
-  
 }
-

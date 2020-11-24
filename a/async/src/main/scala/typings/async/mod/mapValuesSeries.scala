@@ -2,11 +2,12 @@ package typings.async.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async", "mapValuesSeries")
 @js.native
 object mapValuesSeries extends js.Object {
+  
   def apply[T, R, E](
     obj: Dictionary[T],
     iteratee: js.Function3[/* value */ T, /* key */ String, /* callback */ AsyncResultCallback[R, E], Unit]
@@ -17,4 +18,3 @@ object mapValuesSeries extends js.Object {
     callback: AsyncResultObjectCallback[R, E]
   ): Unit = js.native
 }
-

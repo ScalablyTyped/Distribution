@@ -4,7 +4,7 @@ import typings.openlayers.mod.Feature
 import typings.openlayers.mod.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -27,10 +27,10 @@ class VectorEvent protected () extends Event {
     */
   def this(`type`: String) = this()
   def this(`type`: String, opt_feature: Feature) = this()
+  
   /**
     * The feature being added or removed.
     * @api stable
     */
   var feature: Feature = js.native
 }
-

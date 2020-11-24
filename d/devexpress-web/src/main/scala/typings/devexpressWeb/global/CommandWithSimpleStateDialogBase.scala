@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for dialog-related commands with a simple common command state.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CommandWithSimpleStateDialogBase ()
   extends typings.devexpressWeb.CommandWithSimpleStateDialogBase
-

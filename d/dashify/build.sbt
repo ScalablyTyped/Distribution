@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dashify"
-version := "1.0-dt-20200515Z-3567a3"
+version := "1.0-dt-20200515Z-567d32"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

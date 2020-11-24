@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("string_decoder", JSImport.Namespace)
 @js.native
 object stringDecoderMod extends js.Object {
+  
   @js.native
   class StringDecoder () extends ClassStringDecoder
-  
 }
-

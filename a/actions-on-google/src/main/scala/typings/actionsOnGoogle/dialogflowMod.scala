@@ -7,11 +7,14 @@ import typings.actionsOnGoogle.dialogflowDialogflowMod.Dialogflow_
 import typings.actionsOnGoogle.v1Mod.DialogflowV1Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/dialogflow", JSImport.Namespace)
 @js.native
 object dialogflowMod extends js.Object {
+  
+  val dialogflow: Dialogflow_ = js.native
+  
   @js.native
   /** @hidden */
   class ContextValues[TContexts /* <: Contexts */] ()
@@ -27,7 +30,4 @@ object dialogflowMod extends js.Object {
     extends typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversation[TConvData, TUserStorage, TContexts] {
     def this(options: DialogflowConversationOptions[TConvData, TUserStorage]) = this()
   }
-  
-  val dialogflow: Dialogflow_ = js.native
 }
-

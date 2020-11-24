@@ -10,9 +10,9 @@ Slice a string with ANSI escape codes
 | ------------------ | :-------------: |
 | Full name          | slice-ansi |
 | Keywords           | slice, string, ansi, styles, color, colour, colors, terminal, console, cli, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 4 |
-| # dependents       | 54 |
-| # downloads        | 440063743 |
+| # releases         | 5 |
+| # dependents       | 91 |
+| # downloads        | 682155124 |
 | # stars            | 1 |
 
 ## Links

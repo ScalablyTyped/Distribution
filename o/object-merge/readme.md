@@ -11,8 +11,8 @@ Merges JavaScript objects recursively without altering the objects merged.
 | Full name          | object-merge |
 | Keywords           | object-merge, atropa |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 300140 |
+| # dependents       | 82 |
+| # downloads        | 381863 |
 | # stars            | 7 |
 
 ## Links

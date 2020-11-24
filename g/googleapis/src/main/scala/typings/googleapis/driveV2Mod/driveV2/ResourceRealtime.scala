@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Realtime")
 @js.native
 class ResourceRealtime protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.realtime.get
     * @desc Exports the contents of the Realtime API data model associated with
@@ -39,6 +41,7 @@ class ResourceRealtime protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceRealtimeGet, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def get(params: ParamsResourceRealtimeGet, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.realtime.update
     * @desc Overwrites the Realtime API data model associated with this file
@@ -69,4 +72,3 @@ class ResourceRealtime protected () extends js.Object {
   def update(params: ParamsResourceRealtimeUpdate, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourceRealtimeUpdate, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
 }
-

@@ -10,18 +10,17 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/button", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   val Button: ForwardRefExoticComponent[ButtonProps with RefAttributes[HTMLButtonElement]] = js.native
+  
   val FAB: ForwardRefExoticComponent[FABProps with RefAttributes[HTMLSpanElement]] = js.native
-  /**
-    * The unstyled button is a really simple button element that resets the default
-    * browser button styles into a clear clickable element.
-    */
+  
   val UnstyledButton: ForwardRefExoticComponent[PickButtonHTMLAttributesH] = js.native
-  def buttonThemeClassNames(props: ButtonThemeProps): String = js.native
+  
+  def buttonThemeClassNames(hasThemeThemeTypeButtonTypeDisabledClassName: ButtonThemeProps): String = js.native
 }
-

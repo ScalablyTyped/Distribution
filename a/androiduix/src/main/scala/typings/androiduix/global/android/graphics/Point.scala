@@ -2,7 +2,7 @@ package typings.androiduix.global.android.graphics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.graphics.Point")
 @js.native
@@ -11,4 +11,3 @@ class Point ()
   def this(src: typings.androiduix.android.graphics.Point) = this()
   def this(x: Double, y: Double) = this()
 }
-

@@ -5,7 +5,7 @@ import typings.screeps.Id
 import typings.screeps.StructureSpawnConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Spawn")
 @js.native
@@ -13,8 +13,6 @@ class Spawn protected ()
   extends typings.screeps.StructureSpawn {
   def this(id: Id[typings.screeps.StructureSpawn]) = this()
 }
-
 @JSGlobal("Spawn")
 @js.native
 object Spawn extends TopLevel[StructureSpawnConstructor]
-

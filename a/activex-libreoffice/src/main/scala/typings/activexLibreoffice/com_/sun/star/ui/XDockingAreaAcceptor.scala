@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * this interface enables developer to implement different docking area acceptors which are used by the frame based layout manager.
@@ -19,18 +19,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDockingAreaAcceptor extends XInterface {
+  
   /**
     * provide the container window where the layout manager can request border space for docking windows.
     *
     * Additionally the layout manager uses this window to create its own child windows for docking purposes.
     */
   val ContainerWindow: XWindow = js.native
+  
   /**
     * provide the container window where the layout manager can request border space for docking windows.
     *
     * Additionally the layout manager uses this window to create its own child windows for docking purposes.
     */
   def getContainerWindow(): XWindow = js.native
+  
   /**
     * method to ask an implementation if the provided space for docking windows is available or not.
     *
@@ -39,6 +42,7 @@ trait XDockingAreaAcceptor extends XInterface {
     * pixel)Height = requested area on bottom side (in pixel)
     */
   def requestDockingAreaSpace(RequestedSpace: Rectangle): Boolean = js.native
+  
   /**
     * method to brief an implementation that we need new border space.
     *
@@ -48,8 +52,8 @@ trait XDockingAreaAcceptor extends XInterface {
     */
   def setDockingAreaSpace(BorderSpace: Rectangle): Unit = js.native
 }
-
 object XDockingAreaAcceptor {
+  
   @scala.inline
   def apply(
     ContainerWindow: XWindow,
@@ -63,26 +67,32 @@ object XDockingAreaAcceptor {
     val __obj = js.Dynamic.literal(ContainerWindow = ContainerWindow.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getContainerWindow = js.Any.fromFunction0(getContainerWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), requestDockingAreaSpace = js.Any.fromFunction1(requestDockingAreaSpace), setDockingAreaSpace = js.Any.fromFunction1(setDockingAreaSpace))
     __obj.asInstanceOf[XDockingAreaAcceptor]
   }
+  
   @scala.inline
   implicit class XDockingAreaAcceptorOps[Self <: XDockingAreaAcceptor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContainerWindow(value: XWindow): Self = this.set("ContainerWindow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetContainerWindow(value: () => XWindow): Self = this.set("getContainerWindow", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRequestDockingAreaSpace(value: Rectangle => Boolean): Self = this.set("requestDockingAreaSpace", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetDockingAreaSpace(value: Rectangle => Unit): Self = this.set("setDockingAreaSpace", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * App Engine HTTP request.  The message defines the HTTP request that is sent
@@ -43,12 +43,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaAppEngineHttpRequest extends js.Object {
+  
   /**
     * Task-level setting for App Engine routing.  If set,
     * app_engine_routing_override is used for all tasks in the queue, no matter
     * what the setting is for the task-level app_engine_routing.
     */
   var appEngineRouting: js.UndefOr[SchemaAppEngineRouting] = js.native
+  
   /**
     * HTTP request headers.  This map contains the header field names and
     * values. Headers can be set when the task is created. Repeated headers are
@@ -76,6 +78,7 @@ trait SchemaAppEngineHttpRequest extends js.Object {
     * see the CreateTask documentation.
     */
   var headers: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * The HTTP method to use for the request. The default is POST.  The
     * app&#39;s request handler for the task&#39;s target URL must be able to
@@ -88,6 +91,7 @@ trait SchemaAppEngineHttpRequest extends js.Object {
     * Handler](https://cloud.google.com/appengine/docs/python/tools/webapp/requesthandlerclass).
     */
   var httpMethod: js.UndefOr[String] = js.native
+  
   /**
     * Payload.  The payload will be sent as the HTTP message body. A message
     * body, and thus a payload, is allowed only if the HTTP method is POST or
@@ -95,6 +99,7 @@ trait SchemaAppEngineHttpRequest extends js.Object {
     * HttpMethod.
     */
   var payload: js.UndefOr[String] = js.native
+  
   /**
     * The relative URL.  The relative URL must begin with &quot;/&quot; and
     * must be a valid HTTP relative URL. It can contain a path and query string
@@ -104,45 +109,57 @@ trait SchemaAppEngineHttpRequest extends js.Object {
     */
   var relativeUrl: js.UndefOr[String] = js.native
 }
-
 object SchemaAppEngineHttpRequest {
+  
   @scala.inline
   def apply(): SchemaAppEngineHttpRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppEngineHttpRequest]
   }
+  
   @scala.inline
   implicit class SchemaAppEngineHttpRequestOps[Self <: SchemaAppEngineHttpRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppEngineRouting(value: SchemaAppEngineRouting): Self = this.set("appEngineRouting", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppEngineRouting: Self = this.set("appEngineRouting", js.undefined)
+    
     @scala.inline
     def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeaders: Self = this.set("headers", js.undefined)
+    
     @scala.inline
     def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    
     @scala.inline
     def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePayload: Self = this.set("payload", js.undefined)
+    
     @scala.inline
     def setRelativeUrl(value: String): Self = this.set("relativeUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRelativeUrl: Self = this.set("relativeUrl", js.undefined)
   }
-  
 }
-

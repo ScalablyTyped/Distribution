@@ -12,7 +12,7 @@ The lodash method `_.methodOf` exported as a module.
 | Keywords           | lodash-modularized, methodof |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 989 |
+| # downloads        | 1085 |
 | # stars            | 0 |
 
 ## Links

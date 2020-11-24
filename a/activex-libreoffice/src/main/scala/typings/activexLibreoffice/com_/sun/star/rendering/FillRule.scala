@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Determines which algorithm to use when determining inside and outside of filled poly-polygons.
@@ -15,11 +15,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait FillRule extends js.Object
-
 object FillRule {
+  
   /** Fill every area, where, when traveling along a line, an uneven number of intersections with polygon edges have happened. */
   @scala.inline
   def EVEN_ODD: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * Fill every area, where, when traveling along a line, the summed winding number (that is, -1 for a counter-clockwise-oriented polygon, and +1 for a
     * clockwise-oriented) is non-zero.
@@ -30,4 +31,3 @@ object FillRule {
   @scala.inline
   def NON_ZERO: `0` = 0.asInstanceOf[`0`]
 }
-

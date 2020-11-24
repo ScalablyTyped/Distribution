@@ -4,7 +4,7 @@ import typings.amapJsSdk.anon.AutoRefresh
 import typings.amapJsSdk.anon.DetectRetina
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.TileLayer")
 @js.native
@@ -12,10 +12,10 @@ class TileLayer ()
   extends typings.amapJsSdk.AMap.Layer {
   def this(tileOpt: DetectRetina) = this()
 }
-
 @JSGlobal("AMap.TileLayer")
 @js.native
 object TileLayer extends js.Object {
+  
   @js.native
   abstract class MapTypeLayer ()
     extends typings.amapJsSdk.AMap.Layer {
@@ -35,6 +35,4 @@ object TileLayer extends js.Object {
     extends typings.amapJsSdk.AMap.TileLayer.Traffic {
     def this(options: AutoRefresh) = this()
   }
-  
 }
-

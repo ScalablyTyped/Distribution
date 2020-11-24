@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XTimeField
 import typings.activexLibreoffice.com_.sun.star.form.XBoundControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a control for inputting time values which can (but not necessarily has to) be bound to a database field.
@@ -21,4 +21,3 @@ trait TimeField
      with XSpinField
      with XTimeField
      with XBoundControl
-

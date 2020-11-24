@@ -1,21 +1,22 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.anon.Grad
-import typings.tensorflowTfjsCore.anon.GradsValue
+import typings.tensorflowTfjsCore.anon.Grads
 import typings.tensorflowTfjsCore.anon.Value
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import typings.tensorflowTfjsCore.distTensorMod.Variable
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.engineMod.CustomGradientFunc
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Tensor
-import typings.tensorflowTfjsCore.tensorMod.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/gradients", JSImport.Namespace)
 @js.native
 object gradientsMod extends js.Object {
+  
   /**
     * Overrides the gradient computation of a function `f`.
     *
@@ -53,9 +54,11 @@ object gradientsMod extends js.Object {
     * @param f The function to evaluate in forward mode, which should return
     *     `{value: Tensor, gradFunc: (dy, saved) => Tensor[]}`, where `gradFunc`
     *     returns the custom gradients of `f` with respect to its inputs.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank], T] = js.native
+  
   /**
     * Provided `f(x)`, returns another function `g(x, dy?)`, which gives the
     * gradient of `f(x)` with respect to `x`.
@@ -87,13 +90,15 @@ object gradientsMod extends js.Object {
     * ```
     *
     * @param f The function f(x), to compute gradient for.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def grad(f: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* x */ TensorLike | Tensor[Rank], 
     /* dy */ js.UndefOr[TensorLike | Tensor[Rank]], 
     Tensor[Rank]
   ] = js.native
+  
   /**
     * Provided `f(x1, x2,...)`, returns another function `g([x1, x2,...], dy?)`,
     * which gives an array of gradients of `f()` with respect to each input
@@ -120,13 +125,15 @@ object gradientsMod extends js.Object {
     * ```
     *
     * @param f The function `f(x1, x2,...)` to compute gradients for.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def grads(f: js.Function1[/* repeated */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* args */ js.Array[Tensor[Rank] | TensorLike], 
     /* dy */ js.UndefOr[Tensor[Rank] | TensorLike], 
     js.Array[Tensor[Rank]]
   ] = js.native
+  
   /**
     * Like `tf.grad`, but also returns the value of `f()`. Useful when `f()`
     * returns a metric you want to show.
@@ -149,9 +156,11 @@ object gradientsMod extends js.Object {
     * console.log('grad');
     * grad.print();
     * ```
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def valueAndGrad[I /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = js.native
+  
   /**
     * Like `tf.grads`, but returns also the value of `f()`. Useful when `f()`
     * returns a metric you want to show.
@@ -180,9 +189,11 @@ object gradientsMod extends js.Object {
     * console.log('db');
     * db.print();
     * ```
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
-  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], GradsValue[O]] = js.native
+  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]] = js.native
+  
   /**
     * Computes and returns the gradient of f(x) with respect to the list of
     * trainable variables provided by `varList`. If no list is provided, it
@@ -210,9 +221,9 @@ object gradientsMod extends js.Object {
     *     If the `varList` argument is provided explicitly and contains a subset of
     *     non-trainable variables, this map in the return value will contain keys
     *     that map the names of the non-trainable variables to `null`.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def variableGrads(f: js.Function0[Scalar]): Value = js.native
   def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): Value = js.native
 }
-

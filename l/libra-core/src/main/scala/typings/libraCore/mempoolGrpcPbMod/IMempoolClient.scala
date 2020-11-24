@@ -14,10 +14,11 @@ import typings.libraCore.mempoolPbMod.HealthCheckRequest
 import typings.libraCore.mempoolPbMod.HealthCheckResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IMempoolClient extends js.Object {
+  
   def addTransactionWithValidation(
     request: AddTransactionWithValidationRequest,
     callback: js.Function2[
@@ -45,6 +46,7 @@ trait IMempoolClient extends js.Object {
       Unit
     ]
   ): ClientUnaryCall = js.native
+  
   def commitTransactions(
     request: CommitTransactionsRequest,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ CommitTransactionsResponse, Unit]
@@ -60,6 +62,7 @@ trait IMempoolClient extends js.Object {
     options: PartialCallOptions,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ CommitTransactionsResponse, Unit]
   ): ClientUnaryCall = js.native
+  
   def getBlock(
     request: GetBlockRequest,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ GetBlockResponse, Unit]
@@ -75,6 +78,7 @@ trait IMempoolClient extends js.Object {
     options: PartialCallOptions,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ GetBlockResponse, Unit]
   ): ClientUnaryCall = js.native
+  
   def healthCheck(
     request: HealthCheckRequest,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ HealthCheckResponse, Unit]
@@ -91,4 +95,3 @@ trait IMempoolClient extends js.Object {
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ HealthCheckResponse, Unit]
   ): ClientUnaryCall = js.native
 }
-

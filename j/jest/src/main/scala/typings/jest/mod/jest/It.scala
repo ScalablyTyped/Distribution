@@ -2,17 +2,31 @@ package typings.jest.mod.jest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a test closure
   */
 @js.native
 trait It extends js.Object {
+  
+  /**
+    * Creates a test closure.
+    *
+    * @param name The name of your test
+    * @param fn The function for your test
+    * @param timeout The timeout for an async function test
+    */
+  def apply(name: String): Unit = js.native
+  def apply(name: String, fn: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
+  def apply(name: String, fn: ProvidesCallback): Unit = js.native
+  def apply(name: String, fn: ProvidesCallback, timeout: Double): Unit = js.native
+  
   /**
     * Experimental and should be avoided.
     */
   var concurrent: It = js.native
+  
   /**
     * Use if you keep duplicating the same test with different data. `.each` allows you to write the
     * test once and pass data in.
@@ -54,28 +68,19 @@ trait It extends js.Object {
     *
     */
   var each: Each = js.native
+  
   /**
     * Only runs this test in the current file.
     */
   var only: It = js.native
+  
   /**
     * Skips running this test in the current file.
     */
   var skip: It = js.native
+  
   /**
     * Sketch out which tests to write in the future.
     */
   var todo: It = js.native
-  /**
-    * Creates a test closure.
-    *
-    * @param name The name of your test
-    * @param fn The function for your test
-    * @param timeout The timeout for an async function test
-    */
-  def apply(name: String): Unit = js.native
-  def apply(name: String, fn: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  def apply(name: String, fn: ProvidesCallback): Unit = js.native
-  def apply(name: String, fn: ProvidesCallback, timeout: Double): Unit = js.native
 }
-

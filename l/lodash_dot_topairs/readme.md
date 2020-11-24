@@ -11,8 +11,8 @@ The lodash method `_.toPairs` exported as a module.
 | Full name          | lodash.topairs |
 | Keywords           | lodash-modularized, topairs |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 4426174 |
+| # dependents       | 51 |
+| # downloads        | 7139341 |
 | # stars            | 0 |
 
 ## Links

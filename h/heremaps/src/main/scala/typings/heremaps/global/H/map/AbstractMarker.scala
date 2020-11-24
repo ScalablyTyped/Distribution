@@ -4,7 +4,7 @@ import typings.heremaps.H.geo.IPoint
 import typings.heremaps.H.map.AbstractMarker.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents marker, which offers a means of identifying a location on the map with an icon.
@@ -21,4 +21,3 @@ abstract class AbstractMarker protected ()
   def this(position: IPoint) = this()
   def this(position: IPoint, opt_options: Options) = this()
 }
-

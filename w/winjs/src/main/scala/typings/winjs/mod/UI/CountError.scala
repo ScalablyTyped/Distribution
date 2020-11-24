@@ -2,7 +2,7 @@ package typings.winjs.mod.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates that the IListDataAdapter was unable to provide a count.
@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "UI.CountError")
 @js.native
 object CountError extends js.Object {
-  /* 0 */ val noResponse: typings.winjs.WinJS.UI.CountError.noResponse with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.CountError with Double] = js.native
+  
+  /* 0 */ val noResponse: typings.winjs.WinJS.UI.CountError.noResponse with Double = js.native
 }
-

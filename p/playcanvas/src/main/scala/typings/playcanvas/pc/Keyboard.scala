@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Keyboard object.
@@ -17,27 +17,32 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Keyboard extends EventHandler {
+  
   /**
     * Attach the keyboard event handlers to an Element.
     * @param element - The element to listen for keyboard events on.
     */
   def attach(element: Element): Unit = js.native
+  
   /**
     * Detach the keyboard event handlers from the element it is attached to.
     */
   def detach(): Unit = js.native
+  
   /**
     * Return true if the key is currently down.
     * @param key - The keyCode of the key to test. See the pc.KEY_* constants.
     * @returns True if the key was pressed, false if not.
     */
   def isPressed(key: Double): Boolean = js.native
+  
   /**
     * Returns true if the key was pressed since the last update.
     * @param key - The keyCode of the key to test. See the pc.KEY_* constants.
     * @returns True if the key was pressed.
     */
   def wasPressed(key: Double): Boolean = js.native
+  
   /**
     * Returns true if the key was released since the last update.
     * @param key - The keyCode of the key to test. See the pc.KEY_* constants.
@@ -45,4 +50,3 @@ trait Keyboard extends EventHandler {
     */
   def wasReleased(key: Double): Boolean = js.native
 }
-

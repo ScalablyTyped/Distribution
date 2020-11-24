@@ -2,15 +2,18 @@ package typings.nodeGcm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-gcm", "Sender")
 @js.native
 class Sender protected () extends js.Object {
   def this(key: String) = this()
   def this(key: String, options: ISenderOptions) = this()
+  
   var key: String = js.native
+  
   var options: ISenderOptions = js.native
+  
   def send(
     message: Message,
     registrationIds: String,
@@ -62,6 +65,7 @@ class Sender protected () extends js.Object {
     retries: Double,
     callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
   ): Unit = js.native
+  
   def sendNoRetry(
     message: Message,
     registrationIds: String,
@@ -78,4 +82,3 @@ class Sender protected () extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
   ): Unit = js.native
 }
-

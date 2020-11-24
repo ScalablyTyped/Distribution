@@ -12,7 +12,7 @@ Complete and opinionated testkit for testing Redux projects (reducers, selectors
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 420618 |
+| # downloads        | 547165 |
 | # stars            | 2 |
 
 ## Links

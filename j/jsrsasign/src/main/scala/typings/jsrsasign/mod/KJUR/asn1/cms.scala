@@ -17,7 +17,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.TypeParam
 import typings.jsrsasign.jsrsasignStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for Cryptographic Message Syntax(CMS)
@@ -51,6 +51,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "KJUR.asn1.cms")
 @js.native
 object cms extends js.Object {
+  
   /**
     * Attribute class for base of CMS attribute
     * @param params associative array of parameters
@@ -90,6 +91,63 @@ object cms extends js.Object {
   class AttributeList ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.AttributeList {
     def this(params: Sorted) = this()
+  }
+  
+  @js.native
+  object CMSUtil extends js.Object {
+    
+    /**
+      * generate SignedData object specified by JSON parameters
+      * @param param JSON parameter to generate CMS SignedData
+      * @return object just generated
+      * @description
+      * This method provides more easy way to genereate
+      * CMS SignedData ASN.1 structure by JSON data.
+      * @example
+      * var sd = KJUR.asn1.cms.CMSUtil.newSignedData({
+      *   content: {str: "jsrsasign"},
+      *   certs: [certPEM],
+      *   signerInfos: [{
+      *     hashAlg: 'sha256',
+      *     sAttr: {
+      *       SigningTime: {}
+      *       SigningCertificateV2: {array: [certPEM]},
+      *     },
+      *     signerCert: certPEM,
+      *     sigAlg: 'SHA256withRSA',
+      *     signerPrvKey: prvPEM
+      *   }]
+      * });
+      */
+    def SignedData(): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
+    def SignedData(param: Certs): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
+    
+    /**
+      * verify SignedData specified by JSON parameters
+      *
+      * @param param JSON parameter to verify CMS SignedData
+      * @return JSON data as the result of validation
+      * @description
+      * This method provides validation for CMS SignedData.
+      * Following parameters can be applied:
+      *
+      * - cms - hexadecimal data of DER CMS SignedData (aka. PKCS#7 or p7s)
+      *     to verify (OPTION)
+      *
+      * @example
+      * KJUR.asn1.cms.CMSUtil.verifySignedData({ cms: "3082058a..." })
+      * →
+      * {
+      *   isValid: true,
+      *   parse: ... // parsed data
+      *   signerInfos: [
+      *     {
+      *     }
+      *   ]
+      * }
+      */
+    def verifySignedData(): IsValid = js.native
+    def verifySignedData(param: Cms): IsValid = js.native
   }
   
   /**
@@ -360,61 +418,4 @@ object cms extends js.Object {
     def this(params: StringParam) = this()
     def this(params: TypeParam) = this()
   }
-  
-  @js.native
-  object CMSUtil extends js.Object {
-    /**
-      * generate SignedData object specified by JSON parameters
-      * @param param JSON parameter to generate CMS SignedData
-      * @return object just generated
-      * @description
-      * This method provides more easy way to genereate
-      * CMS SignedData ASN.1 structure by JSON data.
-      * @example
-      * var sd = KJUR.asn1.cms.CMSUtil.newSignedData({
-      *   content: {str: "jsrsasign"},
-      *   certs: [certPEM],
-      *   signerInfos: [{
-      *     hashAlg: 'sha256',
-      *     sAttr: {
-      *       SigningTime: {}
-      *       SigningCertificateV2: {array: [certPEM]},
-      *     },
-      *     signerCert: certPEM,
-      *     sigAlg: 'SHA256withRSA',
-      *     signerPrvKey: prvPEM
-      *   }]
-      * });
-      */
-    def SignedData(): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
-    def SignedData(param: Certs): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
-    /**
-      * verify SignedData specified by JSON parameters
-      *
-      * @param param JSON parameter to verify CMS SignedData
-      * @return JSON data as the result of validation
-      * @description
-      * This method provides validation for CMS SignedData.
-      * Following parameters can be applied:
-      *
-      * - cms - hexadecimal data of DER CMS SignedData (aka. PKCS#7 or p7s)
-      *     to verify (OPTION)
-      *
-      * @example
-      * KJUR.asn1.cms.CMSUtil.verifySignedData({ cms: "3082058a..." })
-      * →
-      * {
-      *   isValid: true,
-      *   parse: ... // parsed data
-      *   signerInfos: [
-      *     {
-      *     }
-      *   ]
-      * }
-      */
-    def verifySignedData(): IsValid = js.native
-    def verifySignedData(param: Cms): IsValid = js.native
-  }
-  
 }
-

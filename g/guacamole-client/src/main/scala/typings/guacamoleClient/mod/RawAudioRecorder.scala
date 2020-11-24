@@ -3,7 +3,7 @@ package typings.guacamoleClient.mod
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "RawAudioRecorder")
 @js.native
@@ -18,13 +18,11 @@ class RawAudioRecorder protected ()
     */
   def this(stream: typings.guacamoleClient.outputStreamMod.OutputStream, mimetype: Mimetype) = this()
 }
-
 /* static members */
 @JSImport("guacamole-client", "RawAudioRecorder")
 @js.native
 object RawAudioRecorder extends js.Object {
-  @JSName("isSupportedType")
-  var isSupportedType_Original: js.Function1[/* mimetype */ Mimetype, Boolean] = js.native
+  
   /**
     * Returns a list of all mimetypes supported by Guacamole.RawAudioRecorder. Only
     * the core mimetypes themselves will be listed. Any mimetype parameters, even
@@ -39,6 +37,8 @@ object RawAudioRecorder extends js.Object {
     *     raw audio are absent, this list will be empty.
     */
   def getSupportedTypes(): js.Array[String] = js.native
+  
   def isSupportedType(mimetype: Mimetype): Boolean = js.native
+  @JSName("isSupportedType")
+  var isSupportedType_Original: js.Function1[/* mimetype */ Mimetype, Boolean] = js.native
 }
-

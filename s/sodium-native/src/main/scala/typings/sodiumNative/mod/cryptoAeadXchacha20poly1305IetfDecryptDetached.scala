@@ -3,11 +3,12 @@ package typings.sodiumNative.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sodium-native", "crypto_aead_xchacha20poly1305_ietf_decrypt_detached")
 @js.native
 object cryptoAeadXchacha20poly1305IetfDecryptDetached extends js.Object {
+  
   def apply(
     message: Buffer,
     nullValue: Null,
@@ -27,4 +28,3 @@ object cryptoAeadXchacha20poly1305IetfDecryptDetached extends js.Object {
     key: Buffer
   ): Unit = js.native
 }
-

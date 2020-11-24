@@ -1,15 +1,15 @@
 package typings.awsSdk.guarddutyMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GuardDuty extends Service {
-  var config: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Accepts the invitation to be monitored by a master GuardDuty account.
     */
@@ -23,6 +23,7 @@ trait GuardDuty extends Service {
     params: AcceptInvitationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptInvitationResponse, Unit]
   ): Request[AcceptInvitationResponse, AWSError] = js.native
+  
   /**
     * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the master account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
     */
@@ -36,6 +37,9 @@ trait GuardDuty extends Service {
     params: ArchiveFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, Unit]
   ): Request[ArchiveFindingsResponse, AWSError] = js.native
+  
+  var config: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.
     */
@@ -49,6 +53,7 @@ trait GuardDuty extends Service {
     params: CreateDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDetectorResponse, Unit]
   ): Request[CreateDetectorResponse, AWSError] = js.native
+  
   /**
     * Creates a filter using the specified finding criteria.
     */
@@ -62,6 +67,7 @@ trait GuardDuty extends Service {
     params: CreateFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]
   ): Request[CreateFilterResponse, AWSError] = js.native
+  
   /**
     * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with AWS infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the master account can use this operation.
     */
@@ -75,6 +81,7 @@ trait GuardDuty extends Service {
     params: CreateIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIPSetResponse, Unit]
   ): Request[CreateIPSetResponse, AWSError] = js.native
+  
   /**
     * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization master account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
     */
@@ -88,6 +95,7 @@ trait GuardDuty extends Service {
     params: CreateMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMembersResponse, Unit]
   ): Request[CreateMembersResponse, AWSError] = js.native
+  
   /**
     * Creates a publishing destination to export findings to. The resource to export findings to must exist before you use this operation.
     */
@@ -101,6 +109,7 @@ trait GuardDuty extends Service {
     params: CreatePublishingDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePublishingDestinationResponse, Unit]
   ): Request[CreatePublishingDestinationResponse, AWSError] = js.native
+  
   /**
     * Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.
     */
@@ -114,6 +123,7 @@ trait GuardDuty extends Service {
     params: CreateSampleFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSampleFindingsResponse, Unit]
   ): Request[CreateSampleFindingsResponse, AWSError] = js.native
+  
   /**
     * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
     */
@@ -127,6 +137,7 @@ trait GuardDuty extends Service {
     params: CreateThreatIntelSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateThreatIntelSetResponse, Unit]
   ): Request[CreateThreatIntelSetResponse, AWSError] = js.native
+  
   /**
     * Declines invitations sent to the current member account by AWS accounts specified by their account IDs.
     */
@@ -140,6 +151,7 @@ trait GuardDuty extends Service {
     params: DeclineInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeclineInvitationsResponse, Unit]
   ): Request[DeclineInvitationsResponse, AWSError] = js.native
+  
   /**
     * Deletes an Amazon GuardDuty detector that is specified by the detector ID.
     */
@@ -153,6 +165,7 @@ trait GuardDuty extends Service {
     params: DeleteDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDetectorResponse, Unit]
   ): Request[DeleteDetectorResponse, AWSError] = js.native
+  
   /**
     * Deletes the filter specified by the filter name.
     */
@@ -166,6 +179,7 @@ trait GuardDuty extends Service {
     params: DeleteFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFilterResponse, Unit]
   ): Request[DeleteFilterResponse, AWSError] = js.native
+  
   /**
     * Deletes the IPSet specified by the ipSetId. IPSets are called trusted IP lists in the console user interface.
     */
@@ -179,6 +193,7 @@ trait GuardDuty extends Service {
     params: DeleteIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteIPSetResponse, Unit]
   ): Request[DeleteIPSetResponse, AWSError] = js.native
+  
   /**
     * Deletes invitations sent to the current member account by AWS accounts specified by their account IDs.
     */
@@ -192,6 +207,7 @@ trait GuardDuty extends Service {
     params: DeleteInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInvitationsResponse, Unit]
   ): Request[DeleteInvitationsResponse, AWSError] = js.native
+  
   /**
     * Deletes GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
@@ -205,6 +221,7 @@ trait GuardDuty extends Service {
     params: DeleteMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteMembersResponse, Unit]
   ): Request[DeleteMembersResponse, AWSError] = js.native
+  
   /**
     * Deletes the publishing definition with the specified destinationId.
     */
@@ -218,6 +235,7 @@ trait GuardDuty extends Service {
     params: DeletePublishingDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePublishingDestinationResponse, Unit]
   ): Request[DeletePublishingDestinationResponse, AWSError] = js.native
+  
   /**
     * Deletes the ThreatIntelSet specified by the ThreatIntelSet ID.
     */
@@ -231,6 +249,7 @@ trait GuardDuty extends Service {
     params: DeleteThreatIntelSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThreatIntelSetResponse, Unit]
   ): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
+  
   /**
     * Returns information about the account selected as the delegated administrator for GuardDuty.
     */
@@ -246,6 +265,7 @@ trait GuardDuty extends Service {
     params: DescribeOrganizationConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, Unit]
   ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
+  
   /**
     * Returns information about the publishing destination specified by the provided destinationId.
     */
@@ -259,6 +279,7 @@ trait GuardDuty extends Service {
     params: DescribePublishingDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePublishingDestinationResponse, Unit]
   ): Request[DescribePublishingDestinationResponse, AWSError] = js.native
+  
   /**
     * Disables an AWS account within the Organization as the GuardDuty delegated administrator.
     */
@@ -274,6 +295,7 @@ trait GuardDuty extends Service {
     params: DisableOrganizationAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableOrganizationAdminAccountResponse, Unit]
   ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
+  
   /**
     * Disassociates the current GuardDuty member account from its master account.
     */
@@ -287,6 +309,7 @@ trait GuardDuty extends Service {
     params: DisassociateFromMasterAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFromMasterAccountResponse, Unit]
   ): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
+  
   /**
     * Disassociates GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
@@ -300,6 +323,7 @@ trait GuardDuty extends Service {
     params: DisassociateMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateMembersResponse, Unit]
   ): Request[DisassociateMembersResponse, AWSError] = js.native
+  
   /**
     * Enables an AWS account within the organization as the GuardDuty delegated administrator.
     */
@@ -315,6 +339,7 @@ trait GuardDuty extends Service {
     params: EnableOrganizationAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, Unit]
   ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
+  
   /**
     * Retrieves an Amazon GuardDuty detector specified by the detectorId.
     */
@@ -328,6 +353,7 @@ trait GuardDuty extends Service {
     params: GetDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorResponse, Unit]
   ): Request[GetDetectorResponse, AWSError] = js.native
+  
   /**
     * Returns the details of the filter specified by the filter name.
     */
@@ -341,6 +367,7 @@ trait GuardDuty extends Service {
     params: GetFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFilterResponse, Unit]
   ): Request[GetFilterResponse, AWSError] = js.native
+  
   /**
     * Describes Amazon GuardDuty findings specified by finding IDs.
     */
@@ -354,6 +381,7 @@ trait GuardDuty extends Service {
     params: GetFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsResponse, Unit]
   ): Request[GetFindingsResponse, AWSError] = js.native
+  
   /**
     * Lists Amazon GuardDuty findings statistics for the specified detector ID.
     */
@@ -367,6 +395,7 @@ trait GuardDuty extends Service {
     params: GetFindingsStatisticsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsStatisticsResponse, Unit]
   ): Request[GetFindingsStatisticsResponse, AWSError] = js.native
+  
   /**
     * Retrieves the IPSet specified by the ipSetId.
     */
@@ -380,6 +409,7 @@ trait GuardDuty extends Service {
     params: GetIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIPSetResponse, Unit]
   ): Request[GetIPSetResponse, AWSError] = js.native
+  
   /**
     * Returns the count of all GuardDuty membership invitations that were sent to the current member account except the currently accepted invitation.
     */
@@ -393,6 +423,7 @@ trait GuardDuty extends Service {
     params: GetInvitationsCountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInvitationsCountResponse, Unit]
   ): Request[GetInvitationsCountResponse, AWSError] = js.native
+  
   /**
     * Provides the details for the GuardDuty master account associated with the current GuardDuty member account.
     */
@@ -406,6 +437,7 @@ trait GuardDuty extends Service {
     params: GetMasterAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMasterAccountResponse, Unit]
   ): Request[GetMasterAccountResponse, AWSError] = js.native
+  
   /**
     * Describes which data sources are enabled for the member account's detector.
     */
@@ -419,6 +451,7 @@ trait GuardDuty extends Service {
     params: GetMemberDetectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMemberDetectorsResponse, Unit]
   ): Request[GetMemberDetectorsResponse, AWSError] = js.native
+  
   /**
     * Retrieves GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
@@ -432,6 +465,7 @@ trait GuardDuty extends Service {
     params: GetMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMembersResponse, Unit]
   ): Request[GetMembersResponse, AWSError] = js.native
+  
   /**
     * Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
     */
@@ -445,6 +479,7 @@ trait GuardDuty extends Service {
     params: GetThreatIntelSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetThreatIntelSetResponse, Unit]
   ): Request[GetThreatIntelSetResponse, AWSError] = js.native
+  
   /**
     * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources the cost returned will include only the usage so far under 30 days, this may differ from the cost metrics in the console, which projects usage over 30 days to provide a monthly cost estimate. For more information see Understanding How Usage Costs are Calculated.
     */
@@ -458,6 +493,7 @@ trait GuardDuty extends Service {
     params: GetUsageStatisticsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUsageStatisticsResponse, Unit]
   ): Request[GetUsageStatisticsResponse, AWSError] = js.native
+  
   /**
     * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty, and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
     */
@@ -471,6 +507,7 @@ trait GuardDuty extends Service {
     params: InviteMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InviteMembersResponse, Unit]
   ): Request[InviteMembersResponse, AWSError] = js.native
+  
   /**
     * Lists detectorIds of all the existing Amazon GuardDuty detector resources.
     */
@@ -484,6 +521,7 @@ trait GuardDuty extends Service {
     params: ListDetectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDetectorsResponse, Unit]
   ): Request[ListDetectorsResponse, AWSError] = js.native
+  
   /**
     * Returns a paginated list of the current filters.
     */
@@ -497,6 +535,7 @@ trait GuardDuty extends Service {
     params: ListFiltersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFiltersResponse, Unit]
   ): Request[ListFiltersResponse, AWSError] = js.native
+  
   /**
     * Lists Amazon GuardDuty findings for the specified detector ID.
     */
@@ -510,6 +549,7 @@ trait GuardDuty extends Service {
     params: ListFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFindingsResponse, Unit]
   ): Request[ListFindingsResponse, AWSError] = js.native
+  
   /**
     * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated master account.
     */
@@ -523,6 +563,7 @@ trait GuardDuty extends Service {
     params: ListIPSetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListIPSetsResponse, Unit]
   ): Request[ListIPSetsResponse, AWSError] = js.native
+  
   /**
     * Lists all GuardDuty membership invitations that were sent to the current AWS account.
     */
@@ -536,6 +577,7 @@ trait GuardDuty extends Service {
     params: ListInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListInvitationsResponse, Unit]
   ): Request[ListInvitationsResponse, AWSError] = js.native
+  
   /**
     * Lists details about all member accounts for the current GuardDuty master account.
     */
@@ -549,6 +591,7 @@ trait GuardDuty extends Service {
     params: ListMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, Unit]
   ): Request[ListMembersResponse, AWSError] = js.native
+  
   /**
     * Lists the accounts configured as GuardDuty delegated administrators.
     */
@@ -562,6 +605,7 @@ trait GuardDuty extends Service {
     params: ListOrganizationAdminAccountsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationAdminAccountsResponse, Unit]
   ): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of publishing destinations associated with the specified dectectorId.
     */
@@ -575,6 +619,7 @@ trait GuardDuty extends Service {
     params: ListPublishingDestinationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPublishingDestinationsResponse, Unit]
   ): Request[ListPublishingDestinationsResponse, AWSError] = js.native
+  
   /**
     * Lists tags for a resource. Tagging is currently supported for detectors, finding filters, IP sets, and threat intel sets, with a limit of 50 tags per resource. When invoked, this operation returns all assigned tags for a given resource.
     */
@@ -588,6 +633,7 @@ trait GuardDuty extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the master account are returned.
     */
@@ -601,6 +647,7 @@ trait GuardDuty extends Service {
     params: ListThreatIntelSetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThreatIntelSetsResponse, Unit]
   ): Request[ListThreatIntelSetsResponse, AWSError] = js.native
+  
   /**
     * Turns on GuardDuty monitoring of the specified member accounts. Use this operation to restart monitoring of accounts that you stopped monitoring with the StopMonitoringMembers operation.
     */
@@ -614,6 +661,7 @@ trait GuardDuty extends Service {
     params: StartMonitoringMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartMonitoringMembersResponse, Unit]
   ): Request[StartMonitoringMembersResponse, AWSError] = js.native
+  
   /**
     * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts.
     */
@@ -627,6 +675,7 @@ trait GuardDuty extends Service {
     params: StopMonitoringMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopMonitoringMembersResponse, Unit]
   ): Request[StopMonitoringMembersResponse, AWSError] = js.native
+  
   /**
     * Adds tags to a resource.
     */
@@ -640,6 +689,7 @@ trait GuardDuty extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Unarchives GuardDuty findings specified by the findingIds.
     */
@@ -653,6 +703,7 @@ trait GuardDuty extends Service {
     params: UnarchiveFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UnarchiveFindingsResponse, Unit]
   ): Request[UnarchiveFindingsResponse, AWSError] = js.native
+  
   /**
     * Removes tags from a resource.
     */
@@ -666,6 +717,7 @@ trait GuardDuty extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the Amazon GuardDuty detector specified by the detectorId.
     */
@@ -679,6 +731,7 @@ trait GuardDuty extends Service {
     params: UpdateDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDetectorResponse, Unit]
   ): Request[UpdateDetectorResponse, AWSError] = js.native
+  
   /**
     * Updates the filter specified by the filter name.
     */
@@ -692,6 +745,7 @@ trait GuardDuty extends Service {
     params: UpdateFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFilterResponse, Unit]
   ): Request[UpdateFilterResponse, AWSError] = js.native
+  
   /**
     * Marks the specified GuardDuty findings as useful or not useful.
     */
@@ -705,6 +759,7 @@ trait GuardDuty extends Service {
     params: UpdateFindingsFeedbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFindingsFeedbackResponse, Unit]
   ): Request[UpdateFindingsFeedbackResponse, AWSError] = js.native
+  
   /**
     * Updates the IPSet specified by the IPSet ID.
     */
@@ -718,6 +773,7 @@ trait GuardDuty extends Service {
     params: UpdateIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIPSetResponse, Unit]
   ): Request[UpdateIPSetResponse, AWSError] = js.native
+  
   /**
     * Contains information on member accounts to be updated.
     */
@@ -731,6 +787,7 @@ trait GuardDuty extends Service {
     params: UpdateMemberDetectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberDetectorsResponse, Unit]
   ): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
+  
   /**
     * Updates the delegated administrator account with the values provided.
     */
@@ -746,6 +803,7 @@ trait GuardDuty extends Service {
     params: UpdateOrganizationConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrganizationConfigurationResponse, Unit]
   ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates information about the publishing destination specified by the destinationId.
     */
@@ -759,6 +817,7 @@ trait GuardDuty extends Service {
     params: UpdatePublishingDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePublishingDestinationResponse, Unit]
   ): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
+  
   /**
     * Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
     */
@@ -773,4 +832,3 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateThreatIntelSetResponse, Unit]
   ): Request[UpdateThreatIntelSetResponse, AWSError] = js.native
 }
-

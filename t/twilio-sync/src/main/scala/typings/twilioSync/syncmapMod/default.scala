@@ -2,7 +2,7 @@ package typings.twilioSync.syncmapMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -24,11 +24,10 @@ import scala.scalajs.js.annotation._
 class default protected () extends SyncMap {
   def this(syncMapImpl: SyncMapImpl) = this()
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/syncmap", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def `type`: String = js.native
 }
-

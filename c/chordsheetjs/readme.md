@@ -10,9 +10,9 @@ A JavaScript library for parsing and formatting chord sheets
 | ------------------ | :-------------: |
 | Full name          | chordsheetjs |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 8672 |
+| # downloads        | 5601 |
 | # stars            | 0 |
 
 ## Links

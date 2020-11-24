@@ -2,10 +2,11 @@ package typings.gaeChannelApi.goog.appengine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Channel extends js.Object {
+  
   /**
     * Open a socket on this channel. open() returns a goog.appengine.Socket object.
     * You can set the callback properties directly on the returned socket object or set them using an optional object handler with the following properties:
@@ -20,4 +21,3 @@ trait Channel extends js.Object {
   def open(): Socket = js.native
   def open(handler: js.Function): Socket = js.native
 }
-

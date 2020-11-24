@@ -2,11 +2,13 @@ package typings.igniteUi.Infragistics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait igTemplating extends js.Object {
+  
   def clearTmplCache(): Unit = js.native
+  
   /**
     * Populates the given template with the provided data. If data is a function that requires arguments, the arguments need to be provided as an array following the data. tmpl(template, data[, args])
     *
@@ -17,4 +19,3 @@ trait igTemplating extends js.Object {
   def tmpl(template: String, data: js.Object): String = js.native
   def tmpl(template: String, data: js.Object, args: js.Array[_]): String = js.native
 }
-

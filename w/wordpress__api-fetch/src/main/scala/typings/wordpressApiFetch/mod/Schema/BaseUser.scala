@@ -4,32 +4,49 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseUser[T /* <: Context */] extends BaseResponse {
+  
   var avatar_urls: Record[Double, String] = js.native
+  
   var capabilities: Record[String, Boolean] = js.native
+  
   var description: String = js.native
+  
   var email: String = js.native
+  
   var extra_capabilities: Record[String, Boolean] = js.native
+  
   var first_name: String = js.native
+  
   var id: Double = js.native
+  
   var last_name: String = js.native
+  
   var link: String = js.native
+  
   var meta: js.Array[_] = js.native
+  
   var name: String = js.native
+  
   var nickname: String = js.native
+  
   var registered_date: String = js.native
+  
   var roles: js.Array[String] = js.native
+  
   var slug: String = js.native
+  
   var url: String = js.native
+  
   var username: String = js.native
 }
-
 object BaseUser {
+  
   @scala.inline
-  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
+  def apply[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
     avatar_urls: Record[Double, String],
     capabilities: Record[String, Boolean],
@@ -52,56 +69,77 @@ object BaseUser {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], avatar_urls = avatar_urls.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], extra_capabilities = extra_capabilities.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], registered_date = registered_date.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseUser[T]]
   }
+  
   @scala.inline
-  implicit class BaseUserOps[Self <: BaseUser[_], /* <: typings.wordpressApiFetch.mod.Schema.Context */ T] (val x: Self with BaseUser[T]) extends AnyVal {
+  implicit class BaseUserOps[Self <: BaseUser[_], T /* <: Context */] (val x: Self with BaseUser[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAvatar_urls(value: Record[Double, String]): Self = this.set("avatar_urls", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCapabilities(value: Record[String, Boolean]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExtra_capabilities(value: Record[String, Boolean]): Self = this.set("extra_capabilities", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = this.set("meta", js.Array(value :_*))
+    
     @scala.inline
     def setMeta(value: js.Array[_]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRegistered_date(value: String): Self = this.set("registered_date", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
+    
     @scala.inline
     def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
   }
-  
 }
-

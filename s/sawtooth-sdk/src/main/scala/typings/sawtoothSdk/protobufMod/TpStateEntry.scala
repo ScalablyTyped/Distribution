@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TpStateEntry")
 @js.native
@@ -17,23 +17,26 @@ import scala.scalajs.js.annotation._
   */
 class TpStateEntry () extends ITpStateEntry {
   def this(properties: ITpStateEntry) = this()
+  
   /** TpStateEntry address. */
   @JSName("address")
   var address_TpStateEntry: String = js.native
+  
   /** TpStateEntry data. */
   @JSName("data")
   var data_TpStateEntry: Uint8Array = js.native
+  
   /**
     * Converts this TpStateEntry to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "TpStateEntry")
 @js.native
 object TpStateEntry extends js.Object {
+  
   /**
     * Creates a new TpStateEntry instance using the specified properties.
     * @param [properties] Properties to set
@@ -41,6 +44,7 @@ object TpStateEntry extends js.Object {
     */
   def create(): TpStateEntry = js.native
   def create(properties: ITpStateEntry): TpStateEntry = js.native
+  
   /**
     * Decodes a TpStateEntry message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,6 +57,7 @@ object TpStateEntry extends js.Object {
   def decode(reader: Reader, length: Double): TpStateEntry = js.native
   def decode(reader: Uint8Array): TpStateEntry = js.native
   def decode(reader: Uint8Array, length: Double): TpStateEntry = js.native
+  
   /**
     * Decodes a TpStateEntry message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -62,6 +67,7 @@ object TpStateEntry extends js.Object {
     */
   def decodeDelimited(reader: Reader): TpStateEntry = js.native
   def decodeDelimited(reader: Uint8Array): TpStateEntry = js.native
+  
   /**
     * Encodes the specified TpStateEntry message. Does not implicitly {@link TpStateEntry.verify|verify} messages.
     * @param message TpStateEntry message or plain object to encode
@@ -70,6 +76,7 @@ object TpStateEntry extends js.Object {
     */
   def encode(message: ITpStateEntry): Writer = js.native
   def encode(message: ITpStateEntry, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpStateEntry message, length delimited. Does not implicitly {@link TpStateEntry.verify|verify} messages.
     * @param message TpStateEntry message or plain object to encode
@@ -78,12 +85,14 @@ object TpStateEntry extends js.Object {
     */
   def encodeDelimited(message: ITpStateEntry): Writer = js.native
   def encodeDelimited(message: ITpStateEntry, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpStateEntry message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpStateEntry
     */
   def fromObject(`object`: StringDictionary[js.Any]): TpStateEntry = js.native
+  
   /**
     * Creates a plain object from a TpStateEntry message. Also converts values to other types if specified.
     * @param message TpStateEntry
@@ -92,6 +101,7 @@ object TpStateEntry extends js.Object {
     */
   def toObject(message: TpStateEntry): StringDictionary[js.Any] = js.native
   def toObject(message: TpStateEntry, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpStateEntry message.
     * @param message Plain object to verify
@@ -99,4 +109,3 @@ object TpStateEntry extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

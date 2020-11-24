@@ -2,51 +2,16 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocumentSemanticTokensProvider extends js.Object {
+  
   /**
     * An optional event to signal that the semantic tokens from this provider have changed.
     */
   var onDidChangeSemanticTokens: js.UndefOr[Event[Unit]] = js.native
-  /**
-    * Instead of always returning all the tokens in a file, it is possible for a `DocumentSemanticTokensProvider` to implement
-    * this method (`provideDocumentSemanticTokensEdits`) and then return incremental updates to the previously provided semantic tokens.
-    *
-    * ---
-    * ### How tokens change when the document changes
-    *
-    * Suppose that `provideDocumentSemanticTokens` has previously returned the following semantic tokens:
-    * ```
-    *    // 1st token,  2nd token,  3rd token
-    *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
-    * ```
-    *
-    * Also suppose that after some edits, the new semantic tokens in a file are:
-    * ```
-    *    // 1st token,  2nd token,  3rd token
-    *    [  3,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
-    * ```
-    * It is possible to express these new tokens in terms of an edit applied to the previous tokens:
-    * ```
-    *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ] // old tokens
-    *    [  3,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ] // new tokens
-    *
-    *    edit: { start:  0, deleteCount: 1, data: [3] } // replace integer at offset 0 with 3
-    * ```
-    *
-    * *NOTE*: If the provider cannot compute `SemanticTokensEdits`, it can "give up" and return all the tokens in the document again.
-    * *NOTE*: All edits in `SemanticTokensEdits` contain indices in the old integers array, so they all refer to the previous result state.
-    */
-  var provideDocumentSemanticTokensEdits: js.UndefOr[
-    js.Function3[
-      /* document */ TextDocument, 
-      /* previousResultId */ String, 
-      /* token */ CancellationToken, 
-      ProviderResult[SemanticTokens | SemanticTokensEdits]
-    ]
-  ] = js.native
+  
   /**
     * Tokens in a file are represented as an array of integers. The position of each token is expressed relative to
     * the token before it, because most tokens remain stable relative to each other when edits are made in a file.
@@ -107,40 +72,85 @@ trait DocumentSemanticTokensProvider extends js.Object {
     * *NOTE*: If the provider cannot temporarily compute semantic tokens, it can indicate this by throwing an error with the message 'Busy'.
     */
   def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
+  
+  /**
+    * Instead of always returning all the tokens in a file, it is possible for a `DocumentSemanticTokensProvider` to implement
+    * this method (`provideDocumentSemanticTokensEdits`) and then return incremental updates to the previously provided semantic tokens.
+    *
+    * ---
+    * ### How tokens change when the document changes
+    *
+    * Suppose that `provideDocumentSemanticTokens` has previously returned the following semantic tokens:
+    * ```
+    *    // 1st token,  2nd token,  3rd token
+    *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
+    * ```
+    *
+    * Also suppose that after some edits, the new semantic tokens in a file are:
+    * ```
+    *    // 1st token,  2nd token,  3rd token
+    *    [  3,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
+    * ```
+    * It is possible to express these new tokens in terms of an edit applied to the previous tokens:
+    * ```
+    *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ] // old tokens
+    *    [  3,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ] // new tokens
+    *
+    *    edit: { start:  0, deleteCount: 1, data: [3] } // replace integer at offset 0 with 3
+    * ```
+    *
+    * *NOTE*: If the provider cannot compute `SemanticTokensEdits`, it can "give up" and return all the tokens in the document again.
+    * *NOTE*: All edits in `SemanticTokensEdits` contain indices in the old integers array, so they all refer to the previous result state.
+    */
+  var provideDocumentSemanticTokensEdits: js.UndefOr[
+    js.Function3[
+      /* document */ TextDocument, 
+      /* previousResultId */ String, 
+      /* token */ CancellationToken, 
+      ProviderResult[SemanticTokens | SemanticTokensEdits]
+    ]
+  ] = js.native
 }
-
 object DocumentSemanticTokensProvider {
+  
   @scala.inline
   def apply(provideDocumentSemanticTokens: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): DocumentSemanticTokensProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSemanticTokens = js.Any.fromFunction2(provideDocumentSemanticTokens))
     __obj.asInstanceOf[DocumentSemanticTokensProvider]
   }
+  
   @scala.inline
   implicit class DocumentSemanticTokensProviderOps[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = this.set("provideDocumentSemanticTokens", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setOnDidChangeSemanticTokens(
       value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = this.set("onDidChangeSemanticTokens", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteOnDidChangeSemanticTokens: Self = this.set("onDidChangeSemanticTokens", js.undefined)
+    
     @scala.inline
     def setProvideDocumentSemanticTokensEdits(
       value: (/* document */ TextDocument, /* previousResultId */ String, /* token */ CancellationToken) => ProviderResult[SemanticTokens | SemanticTokensEdits]
     ): Self = this.set("provideDocumentSemanticTokensEdits", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteProvideDocumentSemanticTokensEdits: Self = this.set("provideDocumentSemanticTokensEdits", js.undefined)
   }
-  
 }
-

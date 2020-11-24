@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v1", "fusiontables_v1.Resource$Table")
 @js.native
 class ResourceTable protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fusiontables.table.copy
     * @desc Copies a table.
@@ -42,6 +44,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.delete
     * @desc Deletes a table.
@@ -66,6 +69,7 @@ class ResourceTable protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTableDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTableDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * fusiontables.table.get
     * @desc Retrieves a specific table by its id.
@@ -94,6 +98,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.importRows
     * @desc Import more rows into a table.
@@ -130,6 +135,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImport]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.importTable
     * @desc Import a new table.
@@ -163,6 +169,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.insert
     * @desc Creates a new table.
@@ -191,6 +198,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.list
     * @desc Retrieves a list of tables a user owns.
@@ -220,6 +228,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTableList]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.patch
     * @desc Updates an existing table. Unless explicitly requested, only the
@@ -252,6 +261,7 @@ class ResourceTable protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
+  
   /**
     * fusiontables.table.update
     * @desc Updates an existing table. Unless explicitly requested, only the
@@ -284,4 +294,3 @@ class ResourceTable protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTable]
   ): Unit = js.native
 }
-

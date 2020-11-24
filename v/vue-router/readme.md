@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-router
 
-Typings are for version 3.3.4
+Typings are for version 3.4.9
 
 ## Library description:
 Official router for Vue.js 2
@@ -10,9 +10,9 @@ Official router for Vue.js 2
 | ------------------ | :-------------: |
 | Full name          | vue-router |
 | Keywords           | vue, router, routing |
-| # releases         | 11 |
-| # dependents       | 5647 |
-| # downloads        | 34238269 |
+| # releases         | 51 |
+| # dependents       | 8288 |
+| # downloads        | 54355763 |
 | # stars            | 40 |
 
 ## Links

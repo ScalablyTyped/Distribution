@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Enrollmenttokens")
 @js.native
 class ResourceEnterprisesEnrollmenttokens protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.enterprises.enrollmentTokens.create
     * @desc Creates an enrollment token for a given enterprise.
@@ -45,6 +47,7 @@ class ResourceEnterprisesEnrollmenttokens protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnrollmentToken]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.enrollmentTokens.delete
     * @desc Deletes an enrollment token. This operation invalidates the token,
@@ -78,4 +81,3 @@ class ResourceEnterprisesEnrollmenttokens protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

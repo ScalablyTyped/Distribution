@@ -3,11 +3,12 @@ package typings.plottable
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/scales/modifiedLogScale", JSImport.Namespace)
 @js.native
 object modifiedLogScaleMod extends js.Object {
+  
   @js.native
   /**
     * A ModifiedLog Scale acts as a regular log scale for large numbers.
@@ -39,11 +40,7 @@ object modifiedLogScaleMod extends js.Object {
     */
   class ModifiedLog () extends QuantitativeScale[Double] {
     def this(base: Double) = this()
-    var _base: js.Any = js.native
-    var _d3Scale: js.Any = js.native
-    var _logTickGenerator: js.Any = js.native
-    var _pivot: js.Any = js.native
-    var _untransformedDomain: js.Any = js.native
+    
     /**
       * Returns an adjusted log10 value for graphing purposes.  The first
       * adjustment is that negative values are changed to positive during
@@ -53,6 +50,11 @@ object modifiedLogScaleMod extends js.Object {
       * adjusted to 1, resulting in a returned result of 0.
       */
     /* private */ def _adjustedLog(x: js.Any): js.Any = js.native
+    
+    var _base: js.Any = js.native
+    
+    var _d3Scale: js.Any = js.native
+    
     /**
       * How many ticks does the range [lower, upper] deserve?
       *
@@ -61,7 +63,11 @@ object modifiedLogScaleMod extends js.Object {
       * distance when plotted.
       */
     /* private */ def _howManyTicks(lower: js.Any, upper: js.Any): js.Any = js.native
+    
     /* private */ def _invertedAdjustedLog(x: js.Any): js.Any = js.native
+    
+    var _logTickGenerator: js.Any = js.native
+    
     /**
       * Return an appropriate number of ticks from lower to upper.
       *
@@ -76,7 +82,9 @@ object modifiedLogScaleMod extends js.Object {
       * drastically exceeding its number of ticks.
       */
     /* private */ def _logTicks(lower: js.Any, upper: js.Any): js.Any = js.native
+    
+    var _pivot: js.Any = js.native
+    
+    var _untransformedDomain: js.Any = js.native
   }
-  
 }
-

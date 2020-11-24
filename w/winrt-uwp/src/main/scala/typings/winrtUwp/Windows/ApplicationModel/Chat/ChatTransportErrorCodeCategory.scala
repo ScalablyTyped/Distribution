@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChatTransportErrorCodeCategory extends js.Object
-
 /** Specifies the category of a transport error. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatTransportErrorCodeCategory")
 @js.native
 object ChatTransportErrorCodeCategory extends js.Object {
+  
   /** An HTTP error */
   @js.native
   sealed trait http extends ChatTransportErrorCodeCategory
@@ -26,6 +26,4 @@ object ChatTransportErrorCodeCategory extends js.Object {
   /** No specific category for the error code */
   @js.native
   sealed trait none extends ChatTransportErrorCodeCategory
-  
 }
-

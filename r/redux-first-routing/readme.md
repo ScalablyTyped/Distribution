@@ -12,7 +12,7 @@ Redux-first routing
 | Keywords           | redux, first, routing, router, middleware, history |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 57078 |
+| # downloads        | 40725 |
 | # stars            | 0 |
 
 ## Links

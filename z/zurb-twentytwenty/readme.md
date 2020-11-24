@@ -12,7 +12,7 @@ Zurb TwentyTwenty plugin
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 1001 |
+| # downloads        | 3020 |
 | # stars            | 0 |
 
 ## Links

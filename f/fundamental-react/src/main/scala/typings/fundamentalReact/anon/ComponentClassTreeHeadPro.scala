@@ -12,7 +12,7 @@ import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.ValidationMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeHeadProps, react.react.ComponentState> & {  displayName :'TreeView.Head'} */
 @js.native
@@ -23,13 +23,20 @@ trait ComponentClassTreeHeadPro
       /* context */ js.Any, 
       Component[TreeHeadProps, ComponentState, js.Any]
     ] {
+  
   var childContextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  
   var contextType: js.UndefOr[Context[_]] = js.native
+  
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  
   var defaultProps: js.UndefOr[PartialTreeHeadProps] = js.native
+  
   var displayName: js.UndefOr[String] with TreeViewDotHead = js.native
+  
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[TreeHeadProps, ComponentState]] = js.native
+  
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[TreeHeadProps, ComponentState]] = js.native
+  
   var propTypes: js.UndefOr[WeakValidationMapTreeHead] = js.native
 }
-

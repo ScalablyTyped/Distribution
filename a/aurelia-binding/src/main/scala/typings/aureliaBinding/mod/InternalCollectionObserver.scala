@@ -4,18 +4,21 @@ import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InternalCollectionObserver extends js.Object {
+  
   /**
     * This will flush the change records of this observer and call any subscribers if applicable.
     */
   def flushChangeRecords(): Unit = js.native
+  
   /**
     * Get a length observer for this collection.
     */
   def getLengthObserver(): js.Any = js.native
+  
   /**
     * Reset the observer to the passed collection and call any subscribers with changes between the current collection and the reset collection.
     * @param oldCollection 
@@ -23,6 +26,7 @@ trait InternalCollectionObserver extends js.Object {
   def reset(oldCollection: js.Array[_]): Unit = js.native
   def reset(oldCollection: Map[_, _]): Unit = js.native
   def reset(oldCollection: Set[_]): Unit = js.native
+  
   /**
     * Subscribe to collection mutation events with a callback function.
     */
@@ -33,6 +37,7 @@ trait InternalCollectionObserver extends js.Object {
     * @param callable A callable object.
     */
   def subscribe(context: js.Any, callable: Callable): Unit = js.native
+  
   /**
     * Unsubscribes a callback function from collection mutation changes.
     */
@@ -44,4 +49,3 @@ trait InternalCollectionObserver extends js.Object {
     */
   def unsubscribe(context: js.Any, callable: Callable): Unit = js.native
 }
-

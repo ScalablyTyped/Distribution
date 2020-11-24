@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__url-parser-browser
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.7
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/url-parser-browser |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 367 |
-| # downloads        | 5001 |
+| # releases         | 24 |
+| # dependents       | 409 |
+| # downloads        | 1689406 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The wrap modes that are supported by pixi.
@@ -25,10 +25,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.WRAP_MODES")
 @js.native
 object WRAP_MODES extends js.Object {
-  /* 0 */ val CLAMP: typings.pixiJs.PIXI.WRAP_MODES.CLAMP with Double = js.native
-  /* 2 */ val MIRRORED_REPEAT: typings.pixiJs.PIXI.WRAP_MODES.MIRRORED_REPEAT with Double = js.native
-  /* 1 */ val REPEAT: typings.pixiJs.PIXI.WRAP_MODES.REPEAT with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.WRAP_MODES with Double] = js.native
+  
+  /* 0 */ val CLAMP: typings.pixiJs.PIXI.WRAP_MODES.CLAMP with Double = js.native
+  
+  /* 2 */ val MIRRORED_REPEAT: typings.pixiJs.PIXI.WRAP_MODES.MIRRORED_REPEAT with Double = js.native
+  
+  /* 1 */ val REPEAT: typings.pixiJs.PIXI.WRAP_MODES.REPEAT with Double = js.native
 }
-

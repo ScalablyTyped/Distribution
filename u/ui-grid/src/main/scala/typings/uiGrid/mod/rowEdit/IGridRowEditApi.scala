@@ -6,12 +6,11 @@ import typings.uiGrid.mod.IGridInstanceOf
 import typings.uiGrid.mod.IGridRowOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridRowEditApi[TEntity] extends js.Object {
-  // Events
-  var on: SaveRow[TEntity] = js.native
+  
   // Methods
   /**
     * Triggers a save event for all currently dirty rows.
@@ -22,6 +21,7 @@ trait IGridRowEditApi[TEntity] extends js.Object {
     */
   def flushDirtyRows(): IPromise[js.Array[_]] = js.native
   def flushDirtyRows(grid: IGridInstanceOf[TEntity]): IPromise[js.Array[_]] = js.native
+  
   /**
     * Returns all currently dirty rows
     * @param {IGridInstance} grid The target grid
@@ -29,6 +29,7 @@ trait IGridRowEditApi[TEntity] extends js.Object {
     */
   def getDirtyRows(): js.Array[IGridRowOf[TEntity]] = js.native
   def getDirtyRows(grid: IGridInstanceOf[TEntity]): js.Array[IGridRowOf[TEntity]] = js.native
+  
   /**
     * Returns all currently errored rows
     * @param {IGridInstance} grid The target grid
@@ -36,6 +37,10 @@ trait IGridRowEditApi[TEntity] extends js.Object {
     */
   def getErrorRows(): js.Array[IGridRowOf[TEntity]] = js.native
   def getErrorRows(grid: IGridInstanceOf[TEntity]): js.Array[IGridRowOf[TEntity]] = js.native
+  
+  // Events
+  var on: SaveRow[TEntity] = js.native
+  
   /**
     * Sets each of the rows passed in dataRows to be clean,
     * removing them from the dirty cache and the error cache,
@@ -43,6 +48,7 @@ trait IGridRowEditApi[TEntity] extends js.Object {
     * @param {Array<TEntity>} dataRows the data entities for which the gridRows should be set clean
     */
   def setRowsClean(dataRows: js.Array[TEntity]): Unit = js.native
+  
   /**
     * Sets each of the rows passed in dataRows to be dirty,
     * Note that if you have only just inserted the rows into your data,
@@ -51,6 +57,7 @@ trait IGridRowEditApi[TEntity] extends js.Object {
     * @param {Array<TEntity>} dataRows the data entities for which the gridRows should be set dirty
     */
   def setRowsDirty(dataRows: js.Array[TEntity]): Unit = js.native
+  
   /**
     * Sets the promise associated with the row save, mandatory that the saveRow event handler calls this method
     * somewhere before returning
@@ -60,4 +67,3 @@ trait IGridRowEditApi[TEntity] extends js.Object {
     */
   def setSavePromise(rowEntity: js.Object, savePromise: IPromise[_]): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ Add source maps of multiple files, offset them and then combine them into one so
 | Keywords           | source, map, sourcemap, bundle, combine, cat, sourceMappingUrl, browserify |
 | # releases         | 0 |
 | # dependents       | 61 |
-| # downloads        | 30503813 |
+| # downloads        | 34529330 |
 | # stars            | 1 |
 
 ## Links

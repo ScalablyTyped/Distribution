@@ -3,7 +3,7 @@ package typings.nameAllModulesPlugin.mod
 import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Names all remaining modules that do not get named via NamedModulesPlugin
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("name-all-modules-plugin", JSImport.Namespace)
 @js.native
 class ^ () extends Plugin
-

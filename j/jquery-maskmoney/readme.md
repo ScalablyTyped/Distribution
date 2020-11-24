@@ -12,7 +12,7 @@ jQuery plugin to mask data entry in the input text in the form of money (currenc
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 96461 |
+| # downloads        | 104304 |
 | # stars            | 4 |
 
 ## Links

@@ -11,8 +11,8 @@ B-spline interpolation
 | Full name          | b-spline |
 | Keywords           | b-spline, interpolation, non-uniform, rational, nurbs, curve |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 11580 |
+| # dependents       | 4 |
+| # downloads        | 15326 |
 | # stars            | 0 |
 
 ## Links

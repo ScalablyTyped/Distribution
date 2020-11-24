@@ -11,7 +11,7 @@ Bindings to Google's Closure Compiler
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 791909 |
+| # downloads        | 1002904 |
 | # stars            | 9 |
 
 ## Links

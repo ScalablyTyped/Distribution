@@ -2,7 +2,7 @@ package typings.surveyKnockout.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "JsonMetadataClass")
 @js.native
@@ -16,20 +16,26 @@ class JsonMetadataClass protected () extends js.Object {
     creator: js.Function1[/* json */ js.UndefOr[js.Any], _],
     parentName: String
   ) = this()
-  var name: String = js.native
-  var parentName: String = js.native
-  var properties: js.Array[JsonObjectProperty] = js.native
+  
   def createProperty(propInfo: js.Any): JsonObjectProperty = js.native
+  
   def creator(): js.Any = js.native
   def creator(json: js.Any): js.Any = js.native
+  
   def find(name: String): JsonObjectProperty = js.native
+  
+  var name: String = js.native
+  
+  var parentName: String = js.native
+  
+  var properties: js.Array[JsonObjectProperty] = js.native
 }
-
 /* static members */
 @JSImport("survey-knockout", "JsonMetadataClass")
 @js.native
 object JsonMetadataClass extends js.Object {
+  
   var requiredSymbol: String = js.native
+  
   var typeSymbol: String = js.native
 }
-

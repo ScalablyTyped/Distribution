@@ -8,12 +8,14 @@ import typings.pgPool.pgPoolStrings.remove
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pool[T /* <: typings.pg.mod.Client */]
   extends typings.pg.mod.Pool {
+  
   val Client: ClientLikeCtr[T] = js.native
+  
   @JSName("on")
   def on_acquire(event: acquire, listener: js.Function1[/* client */ T with PoolClient, Unit]): this.type = js.native
   @JSName("on")
@@ -23,4 +25,3 @@ trait Pool[T /* <: typings.pg.mod.Client */]
   @JSName("on")
   def on_remove(event: remove, listener: js.Function1[/* client */ T with PoolClient, Unit]): this.type = js.native
 }
-

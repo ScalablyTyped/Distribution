@@ -10,11 +10,14 @@ import typings.reactTransitionGroup.transitionMod.TransitionProps
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-transition-group", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val config: Config = js.native
+  
   @js.native
   class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] ()
     extends Component[CSSTransitionProps[Ref], js.Object, js.Any]
@@ -153,7 +156,4 @@ object mod extends js.Object {
   @js.native
   class TransitionGroup ()
     extends Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
-  
-  val config: Config = js.native
 }
-

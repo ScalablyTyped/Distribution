@@ -11,8 +11,8 @@ JSON parse & stringify that supports binary via bops & base64
 | Full name          | json-buffer |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 49 |
-| # downloads        | 86201499 |
+| # dependents       | 62 |
+| # downloads        | 172801233 |
 | # stars            | 3 |
 
 ## Links

@@ -2,21 +2,24 @@ package typings.typedRestClient
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-rest-client/Handlers", JSImport.Namespace)
 @js.native
 object handlersMod extends js.Object {
+  
   @js.native
   class BasicCredentialHandler protected ()
     extends typings.typedRestClient.mod.BasicCredentialHandler {
     def this(username: String, password: String) = this()
+    def this(username: String, password: String, allowCrossOriginAuthentication: Boolean) = this()
   }
   
   @js.native
   class BearerCredentialHandler protected ()
     extends typings.typedRestClient.bearertokenMod.BearerCredentialHandler {
     def this(token: String) = this()
+    def this(token: String, allowCrossOriginAuthentication: Boolean) = this()
   }
   
   @js.native
@@ -32,7 +35,6 @@ object handlersMod extends js.Object {
   class PersonalAccessTokenCredentialHandler protected ()
     extends typings.typedRestClient.personalaccesstokenMod.PersonalAccessTokenCredentialHandler {
     def this(token: String) = this()
+    def this(token: String, allowCrossOriginAuthentication: Boolean) = this()
   }
-  
 }
-

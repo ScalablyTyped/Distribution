@@ -3,10 +3,11 @@ package typings.simmerjs.mod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options extends js.Object {
+  
   /**
     * How deep into the DOM hierarchy should Simmer go in order to reach a
     * unique selector. This is a delicate game because the higher the number
@@ -18,6 +19,7 @@ trait Options extends js.Object {
     * @default 3
     */
   var depth: js.UndefOr[Double] = js.native
+  
   /**
     * How to handle errors which occur during the analysis
     *
@@ -28,6 +30,7 @@ trait Options extends js.Object {
     *    exception and the element being analyzed
     */
   var errorHandling: js.UndefOr[Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])] = js.native
+  
   /**
     * A maximum length for the CSS selector can be specified - if no specific
     * selector can be found which is shorter than this length then it is
@@ -36,6 +39,7 @@ trait Options extends js.Object {
     * @default 520
     */
   var selectorMaxLength: js.UndefOr[Double] = js.native
+  
   /**
     * A minimum specificty level. Once the parser reaches this level it starts
     * verifying the selector after every method is called. This can cut down
@@ -48,43 +52,54 @@ trait Options extends js.Object {
     */
   var specificityThreshold: js.UndefOr[Double] = js.native
 }
-
 object Options {
+  
   @scala.inline
   def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
+  
   @scala.inline
   implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDepth: Self = this.set("depth", js.undefined)
+    
     @scala.inline
     def setErrorHandlingFunction2(value: (/* error */ js.Any, /* element */ Element) => Unit): Self = this.set("errorHandling", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setErrorHandling(value: Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])): Self = this.set("errorHandling", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteErrorHandling: Self = this.set("errorHandling", js.undefined)
+    
     @scala.inline
     def setSelectorMaxLength(value: Double): Self = this.set("selectorMaxLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelectorMaxLength: Self = this.set("selectorMaxLength", js.undefined)
+    
     @scala.inline
     def setSpecificityThreshold(value: Double): Self = this.set("specificityThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSpecificityThreshold: Self = this.set("specificityThreshold", js.undefined)
   }
-  
 }
-

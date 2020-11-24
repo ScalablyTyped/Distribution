@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Customers$Configurations")
 @js.native
 class ResourceCustomersConfigurations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.customers.configurations.create
     * @desc Creates a new configuration. Once created, a customer can apply the
@@ -46,6 +48,7 @@ class ResourceCustomersConfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConfiguration]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.configurations.delete
     * @desc Deletes an unused configuration. The API call fails if the customer
@@ -75,6 +78,7 @@ class ResourceCustomersConfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.configurations.get
     * @desc Gets the details of a configuration.
@@ -106,6 +110,7 @@ class ResourceCustomersConfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConfiguration]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.configurations.list
     * @desc Lists a customer's configurations.
@@ -137,6 +142,7 @@ class ResourceCustomersConfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomerListConfigurationsResponse]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.customers.configurations.patch
     * @desc Updates a configuration's field values.
@@ -171,4 +177,3 @@ class ResourceCustomersConfigurations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaConfiguration]
   ): Unit = js.native
 }
-

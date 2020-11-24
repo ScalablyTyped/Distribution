@@ -10,9 +10,9 @@ Vector drawing plugin for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-draw |
 | Keywords           | maps, leaflet, client, vector, drawing, draw |
-| # releases         | 7 |
-| # dependents       | 66 |
-| # downloads        | 1089903 |
+| # releases         | 2 |
+| # dependents       | 89 |
+| # downloads        | 1545740 |
 | # stars            | 1 |
 
 ## Links

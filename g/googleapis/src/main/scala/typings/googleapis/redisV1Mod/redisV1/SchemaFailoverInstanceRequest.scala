@@ -2,13 +2,14 @@ package typings.googleapis.redisV1Mod.redisV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for Failover.
   */
 @js.native
 trait SchemaFailoverInstanceRequest extends js.Object {
+  
   /**
     * Optional. Available data protection modes that the user can choose. If
     * it&#39;s unspecified, data protection mode will be LIMITED_DATA_LOSS by
@@ -16,29 +17,33 @@ trait SchemaFailoverInstanceRequest extends js.Object {
     */
   var dataProtectionMode: js.UndefOr[String] = js.native
 }
-
 object SchemaFailoverInstanceRequest {
+  
   @scala.inline
   def apply(): SchemaFailoverInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFailoverInstanceRequest]
   }
+  
   @scala.inline
   implicit class SchemaFailoverInstanceRequestOps[Self <: SchemaFailoverInstanceRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDataProtectionMode(value: String): Self = this.set("dataProtectionMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDataProtectionMode: Self = this.set("dataProtectionMode", js.undefined)
   }
-  
 }
-

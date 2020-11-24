@@ -4,11 +4,12 @@ import typings.jake.mod.global.jake.Task
 import typings.jake.mod.global.jake.TaskOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("task")
 @js.native
 object task extends js.Object {
+  
   /**
     * @param name The name of the Task
     * @param prereqs Prerequisites to be run before this task
@@ -60,4 +61,3 @@ object task extends js.Object {
     opts: TaskOptions
   ): Task = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.PointProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.Point")
 @js.native
@@ -16,4 +16,3 @@ class PointCls ()
   extends typings.arcgisJsApi.esri.Point {
   def this(properties: PointProperties) = this()
 }
-

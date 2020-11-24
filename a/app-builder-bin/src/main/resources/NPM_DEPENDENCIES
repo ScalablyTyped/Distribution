@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "app-builder-bin" : "3.5.9"
+      "app-builder-bin" : "3.5.10"
     }
   ],
   "test-dependencies" : [
     {
-      "app-builder-bin" : "3.5.9"
+      "app-builder-bin" : "3.5.10"
     }
   ],
   "compile-devDependencies" : [

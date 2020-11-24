@@ -2,9 +2,10 @@ package typings.conventionalRecommendedBump.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Options {
+  
   type WhatBump = js.Function1[
     /* commits */ js.Array[
       typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol]

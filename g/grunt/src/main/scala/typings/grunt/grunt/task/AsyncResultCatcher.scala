@@ -3,10 +3,11 @@ package typings.grunt.grunt.task
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AsyncResultCatcher extends js.Object {
+  
   def apply(): Unit = js.native
   def apply(error: Error): Unit = js.native
   def apply(result: js.Any): Unit = js.native
@@ -16,4 +17,3 @@ trait AsyncResultCatcher extends js.Object {
     */
   def apply(success: Boolean): Unit = js.native
 }
-

@@ -2,20 +2,21 @@ package typings.guacamoleClient.clientMod.Client
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.guacamoleClient.clientMod.Client.ExportLayerBase
   - typings.guacamoleClient.anon.ExportLayerBasexnumberynu
 */
 trait ExportLayer extends js.Object
-
 object ExportLayer {
+  
   @scala.inline
   def ExportLayerBase(height: Double, width: Double): ExportLayer = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportLayer]
   }
+  
   @scala.inline
   def ExportLayerBasexnumberynu(
     alpha: Double,
@@ -31,4 +32,3 @@ object ExportLayer {
     __obj.asInstanceOf[ExportLayer]
   }
 }
-

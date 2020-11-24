@@ -5,38 +5,41 @@ import typings.ariClient.anon.`1`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Application extends Resource {
+  
   /**
     * Ids for bridges subscribed to.
     */
   var bridge_ids: String | js.Array[String] = js.native
+  
   /**
     * Ids for channels subscribed to.
     */
   var channel_ids: String | js.Array[String] = js.native
+  
   /**
     * Names of the devices subscribed to.
     */
   var device_names: String | js.Array[String] = js.native
+  
   /**
     * {tech}/{resource} for endpoints subscribed to.
     */
   var endpoint_ids: String | js.Array[String] = js.native
+  
   /**
     * Event types sent to the application.
     */
   var events_allowed: IndexableObject | js.Array[IndexableObject] = js.native
+  
   /**
     * Event types not sent to the application.
     */
   var events_disallowed: IndexableObject | js.Array[IndexableObject] = js.native
-  /**
-    * Name of this application.
-    */
-  var name: String = js.native
+  
   /**
     * Filter application events types.
     * Allowed and/or disallowed event type filtering can be done. The body (parameter) should specify a JSON key/value object that describes the type of event filtering needed. One, or
@@ -81,6 +84,7 @@ trait Application extends Resource {
     * @param [params.filter] - Specify which event types to allow/disallow.
     */
   def filter(params: `1`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  
   /**
     * Get details of an application.
     */
@@ -89,6 +93,7 @@ trait Application extends Resource {
     * Get details of an application.
     */
   def get(callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  
   /**
     * List all applications.
     */
@@ -97,6 +102,12 @@ trait Application extends Resource {
     * List all applications.
     */
   def list(callback: js.Function2[/* err */ Error, /* applications */ js.Array[this.type], Unit]): Unit = js.native
+  
+  /**
+    * Name of this application.
+    */
+  var name: String = js.native
+  
   /**
     * Subscribe an application to a event source.
     * Returns the state of the application after the subscriptions have changed.
@@ -111,6 +122,7 @@ trait Application extends Resource {
     * @param params.eventSource - URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}.
     */
   def subscribe(params: `0`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
+  
   /**
     * Unsubscribe an application from an event source.
     * Returns the state of the application after the subscriptions have changed.
@@ -126,4 +138,3 @@ trait Application extends Resource {
     */
   def unsubscribe(params: `0`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
 }
-

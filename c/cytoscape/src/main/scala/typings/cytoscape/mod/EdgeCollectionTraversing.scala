@@ -2,10 +2,11 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EdgeCollectionTraversing extends js.Object {
+  
   /**
     * Get edges codirected to those in the collection.
     *
@@ -18,6 +19,7 @@ trait EdgeCollectionTraversing extends js.Object {
     */
   def codirectedEdges(): EdgeCollection = js.native
   def codirectedEdges(selector: Selector): EdgeCollection = js.native
+  
   // http://js.cytoscape.org/#collection/traversing
   /**
     * Get the nodes connected to the edges in the collection
@@ -26,6 +28,7 @@ trait EdgeCollectionTraversing extends js.Object {
     */
   def connectedNodes(): NodeCollection = js.native
   def connectedNodes(selector: Selector): NodeCollection = js.native
+  
   /**
     * Get edges parallel to those in the collection.
     *
@@ -43,6 +46,7 @@ trait EdgeCollectionTraversing extends js.Object {
     */
   def parallelEdges(): EdgeCollection = js.native
   def parallelEdges(selector: Selector): EdgeCollection = js.native
+  
   /**
     * Get source nodes connected to the edges in the collection.
     *
@@ -50,6 +54,7 @@ trait EdgeCollectionTraversing extends js.Object {
     */
   def sources(): NodeCollection = js.native
   def sources(selector: Selector): NodeCollection = js.native
+  
   /**
     * Get target nodes connected to the edges in the collection.
     *
@@ -58,4 +63,3 @@ trait EdgeCollectionTraversing extends js.Object {
   def targets(): NodeCollection = js.native
   def targets(selector: Selector): NodeCollection = js.native
 }
-

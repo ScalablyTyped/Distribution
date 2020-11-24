@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Grid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EditMode extends js.Object
-
 @JSGlobal("ej.Grid.EditMode")
 @js.native
 object EditMode extends js.Object {
+  
   ///Edit mode is batch.
   @js.native
   sealed trait Batch extends EditMode
@@ -41,6 +41,4 @@ object EditMode extends js.Object {
   ///Edit mode is normal.
   @js.native
   sealed trait Normal extends EditMode
-  
 }
-

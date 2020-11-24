@@ -5,11 +5,12 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/gamepadManager", JSImport.Namespace)
 @js.native
 object gamepadManagerMod extends js.Object {
+  
   @js.native
   /**
     * Initializes the gamepad manager
@@ -17,37 +18,45 @@ object gamepadManagerMod extends js.Object {
     */
   class GamepadManager () extends js.Object {
     def this(_scene: Scene) = this()
+    
     var _addNewGamepad: js.Any = js.native
+    
     var _babylonGamepads: js.Any = js.native
-    var _gamepadEventSupported: js.Any = js.native
-    var _gamepadSupport: js.UndefOr[js.Any] = js.native
-    /** @hidden */
-    var _isMonitoring: Boolean = js.native
-    var _onGamepadConnectedEvent: js.Any = js.native
-    var _onGamepadDisconnectedEvent: js.Any = js.native
-    var _oneGamepadConnected: js.Any = js.native
-    var _scene: js.UndefOr[js.Any] = js.native
-    var _startMonitoringGamepads: js.Any = js.native
-    var _stopMonitoringGamepads: js.Any = js.native
-    var _updateGamepadObjects: js.Any = js.native
-    /**
-      * observable to be triggered when the gamepad controller has been connected
-      */
-    var onGamepadConnectedObservable: Observable[typings.babylonjs.gamepadMod.Gamepad] = js.native
-    /**
-      * observable to be triggered when the gamepad controller has been disconnected
-      */
-    var onGamepadDisconnectedObservable: Observable[typings.babylonjs.gamepadMod.Gamepad] = js.native
+    
     /** @hidden */
     def _checkGamepadsStatus(): Unit = js.native
+    
+    var _gamepadEventSupported: js.Any = js.native
+    
+    var _gamepadSupport: js.Any = js.native
+    
+    /** @hidden */
+    var _isMonitoring: Boolean = js.native
+    
+    var _onGamepadConnectedEvent: js.Any = js.native
+    
+    var _onGamepadDisconnectedEvent: js.Any = js.native
+    
+    var _oneGamepadConnected: js.Any = js.native
+    
+    var _scene: js.Any = js.native
+    
+    var _startMonitoringGamepads: js.Any = js.native
+    
+    var _stopMonitoringGamepads: js.Any = js.native
+    
+    var _updateGamepadObjects: js.Any = js.native
+    
     /**
       * Disposes the gamepad manager
       */
     def dispose(): Unit = js.native
+    
     /**
       * The gamepads in the game pad manager
       */
     def gamepads: js.Array[typings.babylonjs.gamepadMod.Gamepad] = js.native
+    
     /**
       * Get the gamepad controllers based on type
       * @param type The type of gamepad controller
@@ -55,7 +64,15 @@ object gamepadManagerMod extends js.Object {
       */
     def getGamepadByType(): Nullable[typings.babylonjs.gamepadMod.Gamepad] = js.native
     def getGamepadByType(`type`: Double): Nullable[typings.babylonjs.gamepadMod.Gamepad] = js.native
+    
+    /**
+      * observable to be triggered when the gamepad controller has been connected
+      */
+    var onGamepadConnectedObservable: Observable[typings.babylonjs.gamepadMod.Gamepad] = js.native
+    
+    /**
+      * observable to be triggered when the gamepad controller has been disconnected
+      */
+    var onGamepadDisconnectedObservable: Observable[typings.babylonjs.gamepadMod.Gamepad] = js.native
   }
-  
 }
-

@@ -10,9 +10,9 @@ node style hmacs in the browser
 | ------------------ | :-------------: |
 | Full name          | create-hmac |
 | Keywords           | crypto, hmac |
-| # releases         | 2 |
-| # dependents       | 382 |
-| # downloads        | 285923225 |
+| # releases         | 1 |
+| # dependents       | 439 |
+| # downloads        | 407741152 |
 | # stars            | 0 |
 
 ## Links

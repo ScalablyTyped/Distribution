@@ -4,9 +4,43 @@ import typings.seneca.mod.LogLevel
 import typings.seneca.mod.LogSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object senecaStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  
+  @scala.inline
+  def debugPlussign: debugPlussign = "debug+".asInstanceOf[debugPlussign]
+  
+  @scala.inline
+  def infoPlussign: infoPlussign = "info+".asInstanceOf[infoPlussign]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def print: print = "print".asInstanceOf[print]
+  
+  @scala.inline
+  def quiet: quiet = "quiet".asInstanceOf[quiet]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
+  
+  @scala.inline
+  def test: test = "test".asInstanceOf[test]
+  
+  @scala.inline
+  def warnPlussign: warnPlussign = "warn+".asInstanceOf[warnPlussign]
+  
   @js.native
   sealed trait all extends LogSpec
   
@@ -39,28 +73,4 @@ object senecaStrings {
   
   @js.native
   sealed trait warnPlussign extends LogLevel
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def debugPlussign: debugPlussign = "debug+".asInstanceOf[debugPlussign]
-  @scala.inline
-  def infoPlussign: infoPlussign = "info+".asInstanceOf[infoPlussign]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
-  @scala.inline
-  def quiet: quiet = "quiet".asInstanceOf[quiet]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
-  @scala.inline
-  def warnPlussign: warnPlussign = "warn+".asInstanceOf[warnPlussign]
 }
-

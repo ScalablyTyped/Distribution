@@ -48,44 +48,11 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettableProperties, Double | Null, String] {
-  var asyncValidators: js.Array[AsyncValidator[Double]] = js.native
-  var autocomplete: on | off | String = js.native
-  var converter: Converter[Double] | RegisteredConverter = js.native
-  var max: Double | Null = js.native
-  var min: Double | Null = js.native
-  var onAsyncValidatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AsyncValidator[Double]]], _]) | Null = js.native
-  var onAutocompleteChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | String], _]) | Null = js.native
-  var onAutofocusChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[Double] | RegisteredConverter], _]) | Null = js.native
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputNumber: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputNumber: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean | Null], _]) | Null = js.native
-  var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onValidatorsChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.Array[Validator[Double] | RegisteredValidator]], 
-    _
-  ]) | Null = js.native
-  var onVirtualKeyboardChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | number | text], _]) | Null = js.native
-  var placeholder: String | Null = js.native
-  val rawValue: String = js.native
-  var readonly: Boolean | Null = js.native
-  var required: Boolean = js.native
-  var step: Double | Null = js.native
-  @JSName("translations")
-  var translations_ojInputNumber: NumberRange = js.native
-  var validators: js.Array[Validator[Double] | RegisteredValidator] = js.native
-  var virtualKeyboard: auto | number | text = js.native
+  
   def addEventListener(
     `type`: autocompleteChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | String], _]
@@ -249,6 +216,13 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
     ],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var asyncValidators: js.Array[AsyncValidator[Double]] = js.native
+  
+  var autocomplete: on | off | String = js.native
+  
+  var converter: Converter[Double] | RegisteredConverter = js.native
+  
   @JSName("getProperty")
   def getProperty_asyncValidators(property: asyncValidators): js.Array[AsyncValidator[Double]] = js.native
   @JSName("getProperty")
@@ -275,7 +249,56 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   def getProperty_validators(property: validators): js.Array[Validator[Double] | RegisteredValidator] = js.native
   @JSName("getProperty")
   def getProperty_virtualKeyboard(property: virtualKeyboard): auto | number | text = js.native
+  
+  var max: Double | Null = js.native
+  
+  var min: Double | Null = js.native
+  
+  var onAsyncValidatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AsyncValidator[Double]]], _]) | Null = js.native
+  
+  var onAutocompleteChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | String], _]) | Null = js.native
+  
+  var onAutofocusChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[Double] | RegisteredConverter], _]) | Null = js.native
+  
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  @JSName("onOjAnimateEnd")
+  var onOjAnimateEnd_ojInputNumber: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  
+  @JSName("onOjAnimateStart")
+  var onOjAnimateStart_ojInputNumber: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  
+  var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  
+  var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean | Null], _]) | Null = js.native
+  
+  var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onValidatorsChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[js.Array[Validator[Double] | RegisteredValidator]], 
+    _
+  ]) | Null = js.native
+  
+  var onVirtualKeyboardChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | number | text], _]) | Null = js.native
+  
+  var placeholder: String | Null = js.native
+  
+  val rawValue: String = js.native
+  
+  var readonly: Boolean | Null = js.native
+  
+  var required: Boolean = js.native
+  
   def setProperties(properties: ojInputNumberSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: autocomplete, value: off): Unit = js.native
   def setProperty(property: autocomplete, value: on): Unit = js.native
   def setProperty(property: virtualKeyboard, value: auto): Unit = js.native
@@ -323,17 +346,29 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var step: Double | Null = js.native
+  
   def stepDown(): Unit = js.native
   def stepDown(steps: Double): Unit = js.native
+  
   def stepUp(): Unit = js.native
   def stepUp(steps: Double): Unit = js.native
+  
+  @JSName("translations")
+  var translations_ojInputNumber: NumberRange = js.native
+  
   def validate(): js.Promise[String] = js.native
+  
+  var validators: js.Array[Validator[Double] | RegisteredValidator] = js.native
+  
+  var virtualKeyboard: auto | number | text = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojinputnumber", "ojInputNumber")
 @js.native
 object ojInputNumber extends js.Object {
+  
   type ojAnimateEnd = CustomEvent[Action]
+  
   type ojAnimateStart = CustomEvent[Element]
 }
-

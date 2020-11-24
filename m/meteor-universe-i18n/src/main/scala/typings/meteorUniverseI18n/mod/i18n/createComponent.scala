@@ -7,11 +7,12 @@ import typings.react.mod.Component
 import typings.react.mod.ReactInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/universe:i18n", "i18n.createComponent")
 @js.native
 object createComponent extends js.Object {
+  
   // component functions
   def apply(): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
   def apply(
@@ -41,4 +42,3 @@ object createComponent extends js.Object {
   def apply(translator: Translator, locale: String, reactjs: js.UndefOr[ReactInstance], `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
   def apply(translator: Translator, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
 }
-

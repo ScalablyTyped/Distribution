@@ -2,7 +2,7 @@ package typings.bson.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "Code")
 @js.native
@@ -15,7 +15,8 @@ class Code protected () extends js.Object {
   def this(code: js.Function) = this()
   def this(code: String, scope: js.Any) = this()
   def this(code: js.Function, scope: js.Any) = this()
+  
   val code: String | js.Function = js.native
+  
   val scope: js.UndefOr[js.Any] = js.native
 }
-

@@ -1,14 +1,17 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.awsSdkTypes.protocolMod.Map
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser/model/_MapOfEndpointMessageResult", JSImport.Namespace)
 @js.native
 object mapOfEndpointMessageResultMod extends js.Object {
+  
   @JSName("_MapOfEndpointMessageResult")
-  val MapOfEndpointMessageResult: Map = js.native
+  val MapOfEndpointMessageResult: Map[
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+  ] = js.native
 }
-

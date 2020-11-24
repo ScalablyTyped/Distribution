@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BooleanCriteria extends js.Object
-
 /**
   * An enumeration representing the boolean criteria that can be used in conditional format or
   * filter.
@@ -14,6 +13,7 @@ sealed trait BooleanCriteria extends js.Object
 @JSGlobal("GoogleAppsScript.Spreadsheet.BooleanCriteria")
 @js.native
 object BooleanCriteria extends js.Object {
+  
   @js.native
   sealed trait CELL_EMPTY extends BooleanCriteria
   
@@ -79,6 +79,4 @@ object BooleanCriteria extends js.Object {
   
   @js.native
   sealed trait TEXT_STARTS_WITH extends BooleanCriteria
-  
 }
-

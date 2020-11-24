@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Applications")
 @js.native
 class ResourceApplications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.applications.get
     * @desc Retrieves the metadata of the application with the given ID. If the
@@ -45,6 +47,7 @@ class ResourceApplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApplication]
   ): Unit = js.native
+  
   /**
     * games.applications.played
     * @desc Indicate that the the currently authenticated user is playing your
@@ -74,6 +77,7 @@ class ResourceApplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * games.applications.verify
     * @desc Verifies the auth token provided with this request is for the
@@ -108,4 +112,3 @@ class ResourceApplications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaApplicationVerifyResponse]
   ): Unit = js.native
 }
-

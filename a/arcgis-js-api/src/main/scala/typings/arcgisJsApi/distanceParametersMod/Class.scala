@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.DistanceParameters
 import typings.arcgisJsApi.esri.DistanceParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/tasks/support/DistanceParameters", JSImport.Namespace)
 @js.native
 class Class () extends DistanceParameters {
   def this(properties: DistanceParametersProperties) = this()
 }
-

@@ -9,14 +9,16 @@ import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofplatformKeysClientCertificateType extends js.Object {
+  
   /**
     * @enum
     */
   val ClientCertificateType: ECDSASIGN = js.native
+  
   /**
     * @description
     * Passes the key pair of *certificate* for usage with
@@ -45,6 +47,7 @@ trait TypeofplatformKeysClientCertificateType extends js.Object {
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = js.native
+  
   /**
     * This function filters from a list of client certificates the ones that
     * are known to the platform, match *request* and for which the
@@ -57,6 +60,7 @@ trait TypeofplatformKeysClientCertificateType extends js.Object {
     *                 app has permission for and, if *interactive* is true, that were selected by the user.
     */
   def selectClientCertificates(details: SelectDetails, callback: js.Function1[/* matches */ js.Array[Match], Unit]): Unit = js.native
+  
   /**
     * An implementation of WebCrypto's SubtleCrypto
     * that allows crypto operations on keys of client
@@ -64,6 +68,7 @@ trait TypeofplatformKeysClientCertificateType extends js.Object {
     * @see[SubtleCrypto]{@link http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface}
     */
   def subtleCrypto(): SubtleCrypto = js.native
+  
   /**
     * Checks whether *details.serverCertificateChain* can be trusted
     * for *details.hostname* according to the trust settings of the
@@ -77,8 +82,8 @@ trait TypeofplatformKeysClientCertificateType extends js.Object {
     */
   def verifyTLSServerCertificate(details: VerificationDetails, callback: js.Function1[/* result */ VerificationResult, Unit]): Unit = js.native
 }
-
 object TypeofplatformKeysClientCertificateType {
+  
   @scala.inline
   def apply(
     ClientCertificateType: ECDSASIGN,
@@ -90,30 +95,37 @@ object TypeofplatformKeysClientCertificateType {
     val __obj = js.Dynamic.literal(ClientCertificateType = ClientCertificateType.asInstanceOf[js.Any], getKeyPair = js.Any.fromFunction3(getKeyPair), selectClientCertificates = js.Any.fromFunction2(selectClientCertificates), subtleCrypto = js.Any.fromFunction0(subtleCrypto), verifyTLSServerCertificate = js.Any.fromFunction2(verifyTLSServerCertificate))
     __obj.asInstanceOf[TypeofplatformKeysClientCertificateType]
   }
+  
   @scala.inline
   implicit class TypeofplatformKeysClientCertificateTypeOps[Self <: TypeofplatformKeysClientCertificateType] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClientCertificateType(value: ECDSASIGN): Self = this.set("ClientCertificateType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetKeyPair(
       value: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
     ): Self = this.set("getKeyPair", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setSelectClientCertificates(value: (SelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit): Self = this.set("selectClientCertificates", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSubtleCrypto(value: () => SubtleCrypto): Self = this.set("subtleCrypto", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setVerifyTLSServerCertificate(value: (VerificationDetails, js.Function1[/* result */ VerificationResult, Unit]) => Unit): Self = this.set("verifyTLSServerCertificate", js.Any.fromFunction2(value))
   }
-  
 }
-

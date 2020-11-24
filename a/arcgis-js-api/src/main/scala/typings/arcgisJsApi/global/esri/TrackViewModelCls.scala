@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.TrackViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.TrackViewModel")
 @js.native
@@ -16,4 +16,3 @@ class TrackViewModelCls ()
   extends typings.arcgisJsApi.esri.TrackViewModel {
   def this(properties: TrackViewModelProperties) = this()
 }
-

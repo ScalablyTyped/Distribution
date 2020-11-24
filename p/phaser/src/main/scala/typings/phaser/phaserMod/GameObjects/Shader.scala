@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Display.BaseShader
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Shader Game Object.
@@ -72,4 +72,3 @@ class Shader protected ()
     textureData: js.UndefOr[js.Any]
   ) = this()
 }
-

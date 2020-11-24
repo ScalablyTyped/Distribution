@@ -1,7 +1,7 @@
 
 # Scala.js typings for zone_dot_js
 
-Typings are for version 0.10.3
+Typings are for version 0.11.3
 
 ## Library description:
 Zones for JavaScript
@@ -10,9 +10,9 @@ Zones for JavaScript
 | ------------------ | :-------------: |
 | Full name          | zone.js |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 7038 |
-| # downloads        | 52534713 |
+| # releases         | 10 |
+| # dependents       | 7834 |
+| # downloads        | 69596179 |
 | # stars            | 25 |
 
 ## Links

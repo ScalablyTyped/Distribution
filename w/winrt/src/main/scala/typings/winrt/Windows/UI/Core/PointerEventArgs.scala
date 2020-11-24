@@ -5,12 +5,12 @@ import typings.winrt.Windows.System.VirtualKeyModifiers
 import typings.winrt.Windows.UI.Input.PointerPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointerEventArgs extends IPointerEventArgs
-
 object PointerEventArgs {
+  
   @scala.inline
   def apply(
     currentPoint: PointerPoint,
@@ -22,4 +22,3 @@ object PointerEventArgs {
     __obj.asInstanceOf[PointerEventArgs]
   }
 }
-

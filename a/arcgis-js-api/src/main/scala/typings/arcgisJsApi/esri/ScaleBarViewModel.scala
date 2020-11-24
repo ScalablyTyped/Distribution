@@ -2,10 +2,11 @@ package typings.arcgisJsApi.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScaleBarViewModel extends Accessor {
+  
   /**
     * The view from which the widget will operate.
     *
@@ -13,4 +14,3 @@ trait ScaleBarViewModel extends Accessor {
     */
   var view: MapView = js.native
 }
-

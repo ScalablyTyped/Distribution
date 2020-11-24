@@ -12,7 +12,7 @@ An express.js middleware for fis widget pipline output.
 | Keywords           | fis, bigpipe, middleware |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 4811 |
+| # downloads        | 5163 |
 | # stars            | 0 |
 
 ## Links

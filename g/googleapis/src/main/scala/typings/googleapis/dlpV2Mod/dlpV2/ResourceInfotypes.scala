@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Infotypes")
 @js.native
 class ResourceInfotypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dlp.infoTypes.list
     * @desc Returns a list of the sensitive information types that the DLP API
@@ -48,4 +50,3 @@ class ResourceInfotypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListInfoTypesResponse]
   ): Unit = js.native
 }
-

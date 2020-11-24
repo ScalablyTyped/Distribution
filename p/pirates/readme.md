@@ -10,9 +10,9 @@ Properly hijack require
 | ------------------ | :-------------: |
 | Full name          | pirates |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 78 |
-| # downloads        | 136518604 |
+| # releases         | 2 |
+| # dependents       | 115 |
+| # downloads        | 277962603 |
 | # stars            | 5 |
 
 ## Links

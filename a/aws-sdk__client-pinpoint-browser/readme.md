@@ -12,7 +12,7 @@ Browser SDK for Amazon Pinpoint
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 741 |
+| # downloads        | 917 |
 | # stars            | 0 |
 
 ## Links

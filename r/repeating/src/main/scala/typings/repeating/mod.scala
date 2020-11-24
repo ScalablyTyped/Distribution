@@ -2,11 +2,12 @@ package typings.repeating
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("repeating", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Repeat a string - fast
     *
@@ -16,4 +17,3 @@ object mod extends js.Object {
   def apply(count: Double): String = js.native
   def apply(count: Double, str: String): String = js.native
 }
-

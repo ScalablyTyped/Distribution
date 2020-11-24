@@ -2,11 +2,12 @@ package typings.promisifyNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promisify-node", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Public API for Promisify.  Will resolve modules names using `require`.
     *
@@ -28,4 +29,3 @@ object mod extends js.Object {
   def apply(name: js.Object, test: js.Function): js.Any = js.native
   def apply(name: js.Object, test: js.Function, noMutate: Boolean): js.Any = js.native
 }
-

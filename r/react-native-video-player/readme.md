@@ -12,7 +12,7 @@ A video player for React Native with controls
 | Keywords           | react-component, react-native, ios, android |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 60329 |
+| # downloads        | 69859 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.ethereumjsCommon.mod
 import typings.ethereumjsCommon.anon.PartialChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethereumjs-common", JSImport.Default)
 @js.native
@@ -30,12 +30,13 @@ class default protected () extends Common {
   def this(chain: Double, hardfork: String, supportedHardforks: js.Array[String]) = this()
   def this(chain: Double, hardfork: Null, supportedHardforks: js.Array[String]) = this()
 }
-
 /* static members */
 @JSImport("ethereumjs-common", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var _getChainParams: js.Any = js.native
+  
   /**
     * Creates a Common object for a custom chain, based on a standard one. It uses all the [[Chain]]
     * params from [[baseChain]] except the ones overridden in [[customChainParams]].
@@ -87,4 +88,3 @@ object default extends js.Object {
     supportedHardforks: js.Array[String]
   ): Common = js.native
 }
-

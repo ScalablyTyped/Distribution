@@ -4,9 +4,40 @@ import typings.jupyterlabObservables.modeldbMod.ObservableType
 import typings.jupyterlabObservables.observablemapMod.IObservableMap.ChangeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabObservablesStrings {
+  
+  @scala.inline
+  def List: List = "List".asInstanceOf[List]
+  
+  @scala.inline
+  def Map: Map = "Map".asInstanceOf[Map]
+  
+  @scala.inline
+  def String: String = "String".asInstanceOf[String]
+  
+  @scala.inline
+  def Value: Value = "Value".asInstanceOf[Value]
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
   @js.native
   sealed trait List extends ObservableType
   
@@ -45,26 +76,4 @@ object jupyterlabObservablesStrings {
   sealed trait set
     extends typings.jupyterlabObservables.observablelistMod.IObservableList.ChangeType
        with typings.jupyterlabObservables.observablestringMod.IObservableString.ChangeType
-  
-  @scala.inline
-  def List: List = "List".asInstanceOf[List]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def Value: Value = "Value".asInstanceOf[Value]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
 }
-

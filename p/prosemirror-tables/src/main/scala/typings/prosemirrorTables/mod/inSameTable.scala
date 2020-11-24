@@ -4,11 +4,11 @@ import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-tables", "inSameTable")
 @js.native
 object inSameTable extends js.Object {
+  
   def apply[S /* <: Schema[_, _] */]($a: ResolvedPos[S], $b: ResolvedPos[S]): Boolean = js.native
 }
-

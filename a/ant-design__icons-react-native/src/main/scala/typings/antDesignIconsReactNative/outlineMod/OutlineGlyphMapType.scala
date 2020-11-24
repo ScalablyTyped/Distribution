@@ -2,7 +2,7 @@ package typings.antDesignIconsReactNative.outlineMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* keyof @ant-design/icons-react-native.anon.Aim */ /* Rewritten from type alias, can be one of: 
   - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`account-book`
@@ -427,4 +427,3 @@ import scala.scalajs.js.annotation._
   - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`zoom-out`
 */
 trait OutlineGlyphMapType extends js.Object
-

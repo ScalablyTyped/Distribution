@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.core
 import typings.openui5.sap.ui.base.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventBus extends Object {
+  
   /**
     * Fires an event using the specified settings and notifies all attached event handlers.
     * @param sChannelId The channel of the event to fire. If not given, the default channel is used. The
@@ -18,6 +19,7 @@ trait EventBus extends Object {
     */
   def publish(sChannelId: String, sEventId: String): Unit = js.native
   def publish(sChannelId: String, sEventId: String, oData: js.Any): Unit = js.native
+  
   /**
     * Attaches an event handler to the event with the given identifier on the given event channel.
     * @param sChannelId The channel of the event to subscribe to. If not given, the default channel is
@@ -38,6 +40,7 @@ trait EventBus extends Object {
     */
   def subscribe(sChannelId: String, sEventId: String, fnFunction: js.Any): EventBus = js.native
   def subscribe(sChannelId: String, sEventId: String, fnFunction: js.Any, oListener: js.Any): EventBus = js.native
+  
   /**
     * Attaches an event handler, called one time only, to the event with the given identifier on the given
     * event channel.When the event occurs, the handler function is called and the handler registration is
@@ -61,6 +64,7 @@ trait EventBus extends Object {
     */
   def subscribeOnce(sChannelId: String, sEventId: String, fnFunction: js.Any): EventBus = js.native
   def subscribeOnce(sChannelId: String, sEventId: String, fnFunction: js.Any, oListener: js.Any): EventBus = js.native
+  
   /**
     * Removes a previously subscribed event handler from the event with the given identifier on the given
     * event channel.The passed parameters must match those used for registration with {@link #subscribe }
@@ -75,4 +79,3 @@ trait EventBus extends Object {
   def unsubscribe(sChannelId: String, sEventId: String, fnFunction: js.Any): EventBus = js.native
   def unsubscribe(sChannelId: String, sEventId: String, fnFunction: js.Any, oListener: js.Any): EventBus = js.native
 }
-

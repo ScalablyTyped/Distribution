@@ -8,7 +8,7 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google OAuth2 API
@@ -30,8 +30,9 @@ import scala.scalajs.js.annotation._
 class Oauth2 protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
-  var userinfo: ResourceUserinfo = js.native
+  
   /**
     * oauth2.getCertForOpenIdConnect
     * @alias oauth2.getCertForOpenIdConnect
@@ -58,6 +59,7 @@ class Oauth2 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJwk]
   ): Unit = js.native
+  
   /**
     * oauth2.tokeninfo
     * @alias oauth2.tokeninfo
@@ -83,5 +85,6 @@ class Oauth2 protected () extends js.Object {
   ): Unit = js.native
   def tokeninfo(params: ParamsTokeninfo, options: MethodOptions): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(params: ParamsTokeninfo, options: MethodOptions, callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
+  
+  var userinfo: ResourceUserinfo = js.native
 }
-

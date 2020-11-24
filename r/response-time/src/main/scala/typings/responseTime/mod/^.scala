@@ -9,11 +9,12 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("response-time", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Response time header for node.js
     * Returns middleware that adds a X-Response-Time header to responses.
@@ -39,4 +40,3 @@ object ^ extends js.Object {
     _
   ] = js.native
 }
-

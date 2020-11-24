@@ -2,7 +2,7 @@ package typings.angular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * $location - $locationProvider - service in module ng
@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ILocationService extends js.Object {
+  
   def absUrl(): String = js.native
+  
   /**
     * Returns the hash fragment
     */
@@ -21,7 +23,9 @@ trait ILocationService extends js.Object {
     */
   @JSName("hash")
   def hash_ILocationService(): ILocationService = js.native
+  
   def host(): String = js.native
+  
   /**
     * Return path of current url
     */
@@ -33,9 +37,13 @@ trait ILocationService extends js.Object {
     * @param path New path
     */
   def path(path: String): ILocationService = js.native
+  
   def port(): Double = js.native
+  
   def protocol(): String = js.native
+  
   def replace(): ILocationService = js.native
+  
   /**
     * Return search part (as object) of current url
     */
@@ -59,9 +67,10 @@ trait ILocationService extends js.Object {
     * If the argument is a hash object containing an array of values, these values will be encoded as duplicate search parameters in the url.
     */
   def search(search: js.Any): ILocationService = js.native
+  
   def state(): js.Any = js.native
   def state(state: js.Any): ILocationService = js.native
+  
   def url(): String = js.native
   def url(url: String): ILocationService = js.native
 }
-

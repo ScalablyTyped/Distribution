@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.System.RemoteSystems
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An IRemoteSystemFilter that limits the set of discoverable remote systems by allowing only those of a specific discovery type. */
 @JSGlobal("Windows.System.RemoteSystems.RemoteSystemDiscoveryTypeFilter")
@@ -12,4 +12,3 @@ class RemoteSystemDiscoveryTypeFilter protected ()
   /** Initializes an instance of the RemoteSystemDiscoveryTypeFilter class. */
   def this(discoveryType: typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemDiscoveryType) = this()
 }
-

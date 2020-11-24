@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation")
 @js.native
@@ -22,25 +22,29 @@ class LocalGatewayRouteTableVpcAssociation protected () extends CustomResource {
     */
   def this(name: String, args: LocalGatewayRouteTableVpcAssociationArgs) = this()
   def this(name: String, args: LocalGatewayRouteTableVpcAssociationArgs, opts: CustomResourceOptions) = this()
+  
   val localGatewayId: Output_[String] = js.native
+  
   /**
     * Identifier of EC2 Local Gateway Route Table.
     */
   val localGatewayRouteTableId: Output_[String] = js.native
+  
   /**
     * Key-value map of resource tags.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * Identifier of EC2 VPC.
     */
   val vpcId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation")
 @js.native
 object LocalGatewayRouteTableVpcAssociation extends js.Object {
+  
   /**
     * Get an existing LocalGatewayRouteTableVpcAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -59,10 +63,10 @@ object LocalGatewayRouteTableVpcAssociation extends js.Object {
     state: LocalGatewayRouteTableVpcAssociationState,
     opts: CustomResourceOptions
   ): LocalGatewayRouteTableVpcAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of LocalGatewayRouteTableVpcAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Local - represents a tracking space with a native origin near the viewer at the time of creation.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.XRSPACE_LOCAL")
 @js.native
 object XRSPACE_LOCAL extends TopLevel[String]
-

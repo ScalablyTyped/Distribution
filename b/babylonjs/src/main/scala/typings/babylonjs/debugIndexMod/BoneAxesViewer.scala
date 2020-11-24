@@ -5,7 +5,7 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Debug/index", "BoneAxesViewer")
 @js.native
@@ -21,4 +21,3 @@ class BoneAxesViewer protected ()
   def this(scene: Scene, bone: Bone, mesh: Mesh) = this()
   def this(scene: Scene, bone: Bone, mesh: Mesh, scaleLines: Double) = this()
 }
-

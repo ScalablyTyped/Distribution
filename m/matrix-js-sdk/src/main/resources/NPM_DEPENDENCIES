@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "matrix-js-sdk" : "8.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "matrix-js-sdk" : "8.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,7 +2,7 @@ package typings.mocha.NodeJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Forward declaration for `NodeJS.EventEmitter` from node.d.ts.
 // Required by Mocha.Runnable, Mocha.Runner, and Mocha.Suite.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line no-empty-interface
 @js.native
 trait EventEmitter extends js.Object
-

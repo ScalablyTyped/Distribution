@@ -6,10 +6,11 @@ import typings.openui5.sap.ui.unified.CalendarLegend
 import typings.openui5.sap.ui.unified.DateTypeRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlanningCalendar extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.40.0
@@ -18,30 +19,35 @@ trait PlanningCalendar extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): PlanningCalendar = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): PlanningCalendar = js.native
+  
   /**
     * Adds some row to the aggregation <code>rows</code>.
     * @param oRow the row to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addRow(oRow: PlanningCalendarRow): PlanningCalendar = js.native
+  
   /**
     * Adds some specialDate to the aggregation <code>specialDates</code>.
     * @param oSpecialDate the specialDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addSpecialDate(oSpecialDate: DateTypeRange): PlanningCalendar = js.native
+  
   /**
     * Adds some toolbarContent to the aggregation <code>toolbarContent</code>.
     * @param oToolbarContent the toolbarContent to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addToolbarContent(oToolbarContent: Control): PlanningCalendar = js.native
+  
   /**
     * Adds some view to the aggregation <code>views</code>.
     * @param oView the view to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addView(oView: PlanningCalendarView): PlanningCalendar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>appointmentSelect</code> event of this
     * <code>sap.m.PlanningCalendar</code>.When called, the context of the event handler (its
@@ -56,6 +62,7 @@ trait PlanningCalendar extends Control {
     */
   def attachAppointmentSelect(oData: js.Any, fnFunction: js.Any): PlanningCalendar = js.native
   def attachAppointmentSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>intervalSelect</code> event of this
     * <code>sap.m.PlanningCalendar</code>.When called, the context of the event handler (its
@@ -71,6 +78,7 @@ trait PlanningCalendar extends Control {
     */
   def attachIntervalSelect(oData: js.Any, fnFunction: js.Any): PlanningCalendar = js.native
   def attachIntervalSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>rowSelectionChange</code> event of this
     * <code>sap.m.PlanningCalendar</code>.When called, the context of the event handler (its
@@ -85,6 +93,7 @@ trait PlanningCalendar extends Control {
     */
   def attachRowSelectionChange(oData: js.Any, fnFunction: js.Any): PlanningCalendar = js.native
   def attachRowSelectionChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>startDateChange</code> event of this
     * <code>sap.m.PlanningCalendar</code>.When called, the context of the event handler (its
@@ -100,6 +109,7 @@ trait PlanningCalendar extends Control {
     */
   def attachStartDateChange(oData: js.Any, fnFunction: js.Any): PlanningCalendar = js.native
   def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>viewChange</code> event of this
     * <code>sap.m.PlanningCalendar</code>.When called, the context of the event handler (its
@@ -115,26 +125,31 @@ trait PlanningCalendar extends Control {
     */
   def attachViewChange(oData: js.Any, fnFunction: js.Any): PlanningCalendar = js.native
   def attachViewChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Destroys all the rows in the aggregation <code>rows</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyRows(): PlanningCalendar = js.native
+  
   /**
     * Destroys all the specialDates in the aggregation <code>specialDates</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySpecialDates(): PlanningCalendar = js.native
+  
   /**
     * Destroys all the toolbarContent in the aggregation <code>toolbarContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyToolbarContent(): PlanningCalendar = js.native
+  
   /**
     * Destroys all the views in the aggregation <code>views</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyViews(): PlanningCalendar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>appointmentSelect</code> event of this
     * <code>sap.m.PlanningCalendar</code>.The passed function and listener object must match the ones used
@@ -144,6 +159,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAppointmentSelect(fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>intervalSelect</code> event of this
     * <code>sap.m.PlanningCalendar</code>.The passed function and listener object must match the ones used
@@ -153,6 +169,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachIntervalSelect(fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>rowSelectionChange</code> event of
     * this <code>sap.m.PlanningCalendar</code>.The passed function and listener object must match the ones
@@ -162,6 +179,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachRowSelectionChange(fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>startDateChange</code> event of this
     * <code>sap.m.PlanningCalendar</code>.The passed function and listener object must match the ones used
@@ -171,6 +189,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>viewChange</code> event of this
     * <code>sap.m.PlanningCalendar</code>.The passed function and listener object must match the ones used
@@ -180,6 +199,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachViewChange(fnFunction: js.Any, oListener: js.Any): PlanningCalendar = js.native
+  
   /**
     * Fires event <code>appointmentSelect</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>appointment</code> of type
@@ -193,6 +213,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAppointmentSelect(mArguments: js.Any): PlanningCalendar = js.native
+  
   /**
     * Fires event <code>intervalSelect</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>startDate</code> of type <code>object</code>Start date of the selected
@@ -204,6 +225,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireIntervalSelect(mArguments: js.Any): PlanningCalendar = js.native
+  
   /**
     * Fires event <code>rowSelectionChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>rows</code> of type <code>sap.m.PlanningCalendarRow[]</code>Array of rows
@@ -212,18 +234,21 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireRowSelectionChange(mArguments: js.Any): PlanningCalendar = js.native
+  
   /**
     * Fires event <code>startDateChange</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireStartDateChange(mArguments: js.Any): PlanningCalendar = js.native
+  
   /**
     * Fires event <code>viewChange</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireViewChange(mArguments: js.Any): PlanningCalendar = js.native
+  
   /**
     * Gets current value of property <code>appointmentsReducedHeight</code>.If set the appointments
     * without text (only title) are rendered with a smaller height.<b>Note:</b> On phone devices this
@@ -233,6 +258,7 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>appointmentsReducedHeight</code>
     */
   def getAppointmentsReducedHeight(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>appointmentsVisualization</code>.Defines the visualization of
     * the <code>CalendarAppoinment</code><b>Note:</b> The real visualization depends on the used
@@ -241,23 +267,27 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>appointmentsVisualization</code>
     */
   def getAppointmentsVisualization(): CalendarAppointmentVisualization = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     * @since 1.40.0
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>height</code>.Height of the <code>PlanningCalendar</code>
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>legend</code>, or
     * <code>null</code>.
     * @since 1.40.0
     */
   def getLegend(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the <code>PlanningCalendar</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -267,6 +297,7 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>maxDate</code>
     */
   def getMaxDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>minDate</code>.Minimum date that can be shown and selected in
     * the <code>PlanningCalendar</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -276,21 +307,25 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>minDate</code>
     */
   def getMinDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>noDataText</code>.This text is displayed when no rows are
     * assigned.
     * @returns Value of property <code>noDataText</code>
     */
   def getNoDataText(): String = js.native
+  
   /**
     * Gets content of aggregation <code>rows</code>.rows of the <code>PlanningCalendar</code>
     */
   def getRows(): js.Array[PlanningCalendarRow] = js.native
+  
   /**
     * Returns an array containing the selected rows. If no row is selected, an empty array is returned.
     * @returns selected rows
     */
   def getSelectedRows(): js.Array[PlanningCalendarRow] = js.native
+  
   /**
     * Gets current value of property <code>showEmptyIntervalHeaders</code>.If set, interval headers are
     * shown even if no <code>intervalHeaders</code> are assigned to the visible time frame.If not set, no
@@ -301,6 +336,7 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>showEmptyIntervalHeaders</code>
     */
   def getShowEmptyIntervalHeaders(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showIntervalHeaders</code>.If set, interval headers are shown
     * like specified in <code>showEmptyIntervalHeaders</code>.If not set, no interval headers are shown
@@ -308,6 +344,7 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>showIntervalHeaders</code>
     */
   def getShowIntervalHeaders(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showRowHeaders</code>.If set, headers of the
     * <code>PlanningCalendarRows</code> are shown. This means the column with the headers is shown.If not
@@ -316,28 +353,33 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>showRowHeaders</code>
     */
   def getShowRowHeaders(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>singleSelection</code>.If set, only a single row can be
     * selectedDefault value is <code>true</code>.
     * @returns Value of property <code>singleSelection</code>
     */
   def getSingleSelection(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>specialDates</code>.Date range along with a type to visualize
     * special days in the header calendar.If one day is assigned to more than one type, only the first one
     * will be used.
     */
   def getSpecialDates(): js.Array[DateTypeRange] = js.native
+  
   /**
     * Gets current value of property <code>startDate</code>.Start date of the row, as JavaScript date
     * object. As a default the current date is used.
     * @returns Value of property <code>startDate</code>
     */
   def getStartDate(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>toolbarContent</code>.The content of the toolbar.
     */
   def getToolbarContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>viewKey</code>.Key of the <code>PlanningCalendarView</code>
     * used for the output. The default value uses a default view.If you are using own views, the keys of
@@ -346,17 +388,20 @@ trait PlanningCalendar extends Control {
     * @returns Value of property <code>viewKey</code>
     */
   def getViewKey(): String = js.native
+  
   /**
     * Gets content of aggregation <code>views</code>.Views of the <code>PlanningCalendar</code>.If not
     * set, three default views are used to allow you to switch between hour, day and month granularity.The
     * default views have the keys defined in </code>sap.ui.unified.CalendarIntervalType</code>
     */
   def getViews(): js.Array[PlanningCalendarView] = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Width of the <code>PlanningCalendar</code>
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.m.PlanningCalendarRow</code> in the aggregation
     * <code>rows</code>.and returns its index if found or -1 otherwise.
@@ -364,6 +409,7 @@ trait PlanningCalendar extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfRow(oRow: PlanningCalendarRow): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.DateTypeRange</code> in the aggregation
     * <code>specialDates</code>.and returns its index if found or -1 otherwise.
@@ -371,6 +417,7 @@ trait PlanningCalendar extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSpecialDate(oSpecialDate: DateTypeRange): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>toolbarContent</code>.and returns its index if found or -1 otherwise.
@@ -378,6 +425,7 @@ trait PlanningCalendar extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfToolbarContent(oToolbarContent: Control): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.PlanningCalendarView</code> in the aggregation
     * <code>views</code>.and returns its index if found or -1 otherwise.
@@ -385,6 +433,7 @@ trait PlanningCalendar extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfView(oView: PlanningCalendarView): Double = js.native
+  
   /**
     * Inserts a row into the aggregation <code>rows</code>.
     * @param oRow the row to insert; if empty, nothing is inserted
@@ -395,6 +444,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertRow(oRow: PlanningCalendarRow, iIndex: Double): PlanningCalendar = js.native
+  
   /**
     * Inserts a specialDate into the aggregation <code>specialDates</code>.
     * @param oSpecialDate the specialDate to insert; if empty, nothing is inserted
@@ -405,6 +455,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: Double): PlanningCalendar = js.native
+  
   /**
     * Inserts a toolbarContent into the aggregation <code>toolbarContent</code>.
     * @param oToolbarContent the toolbarContent to insert; if empty, nothing is inserted
@@ -415,6 +466,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertToolbarContent(oToolbarContent: Control, iIndex: Double): PlanningCalendar = js.native
+  
   /**
     * Inserts a view into the aggregation <code>views</code>.
     * @param oView the view to insert; if empty, nothing is inserted
@@ -425,36 +477,42 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertView(oView: PlanningCalendarView, iIndex: Double): PlanningCalendar = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.40.0
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>rows</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllRows(): js.Array[PlanningCalendarRow] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>specialDates</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSpecialDates(): js.Array[DateTypeRange] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>toolbarContent</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllToolbarContent(): js.Array[Control] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>views</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllViews(): js.Array[PlanningCalendarView] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -464,6 +522,7 @@ trait PlanningCalendar extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeRow(vRow: String): PlanningCalendarRow = js.native
   /**
     * Removes a row from the aggregation <code>rows</code>.
@@ -472,6 +531,7 @@ trait PlanningCalendar extends Control {
     */
   def removeRow(vRow: Double): PlanningCalendarRow = js.native
   def removeRow(vRow: PlanningCalendarRow): PlanningCalendarRow = js.native
+  
   def removeSpecialDate(vSpecialDate: String): DateTypeRange = js.native
   /**
     * Removes a specialDate from the aggregation <code>specialDates</code>.
@@ -480,6 +540,7 @@ trait PlanningCalendar extends Control {
     */
   def removeSpecialDate(vSpecialDate: Double): DateTypeRange = js.native
   def removeSpecialDate(vSpecialDate: DateTypeRange): DateTypeRange = js.native
+  
   def removeToolbarContent(vToolbarContent: String): Control = js.native
   /**
     * Removes a toolbarContent from the aggregation <code>toolbarContent</code>.
@@ -488,6 +549,7 @@ trait PlanningCalendar extends Control {
     */
   def removeToolbarContent(vToolbarContent: Double): Control = js.native
   def removeToolbarContent(vToolbarContent: Control): Control = js.native
+  
   def removeView(vView: String): PlanningCalendarView = js.native
   /**
     * Removes a view from the aggregation <code>views</code>.
@@ -496,6 +558,7 @@ trait PlanningCalendar extends Control {
     */
   def removeView(vView: Double): PlanningCalendarView = js.native
   def removeView(vView: PlanningCalendarView): PlanningCalendarView = js.native
+  
   /**
     * Selects or deselects all <code>PlanningCalendarRows</code>.<b>Note:</b> Selection only works if
     * <code>singleSelection</code> is not set
@@ -504,6 +567,7 @@ trait PlanningCalendar extends Control {
     * @returns <code>this</code> to allow method chaining
     */
   def selectAllRows(bSelect: Boolean): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>appointmentsReducedHeight</code>.If set the appointments without
     * text (only title) are rendered with a smaller height.<b>Note:</b> On phone devices this property is
@@ -515,6 +579,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAppointmentsReducedHeight(bAppointmentsReducedHeight: Boolean): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>appointmentsVisualization</code>.Defines the visualization of
     * the <code>CalendarAppoinment</code><b>Note:</b> The real visualization depends on the used
@@ -525,6 +590,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAppointmentsVisualization(sAppointmentsVisualization: CalendarAppointmentVisualization): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.Height of the <code>PlanningCalendar</code>When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -533,6 +599,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): PlanningCalendar = js.native
+  
   /**
     * Sets the associated <code>legend</code>.
     * @since 1.40.0
@@ -542,6 +609,7 @@ trait PlanningCalendar extends Control {
     */
   def setLegend(oLegend: js.Any): PlanningCalendar = js.native
   def setLegend(oLegend: CalendarLegend): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the <code>PlanningCalendar</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -553,6 +621,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxDate(oMaxDate: js.Any): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>minDate</code>.Minimum date that can be shown and selected in
     * the <code>PlanningCalendar</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -564,6 +633,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMinDate(oMinDate: js.Any): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>noDataText</code>.This text is displayed when no rows are
     * assigned.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -572,6 +642,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNoDataText(sNoDataText: String): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>showEmptyIntervalHeaders</code>.If set, interval headers are
     * shown even if no <code>intervalHeaders</code> are assigned to the visible time frame.If not set, no
@@ -584,6 +655,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowEmptyIntervalHeaders(bShowEmptyIntervalHeaders: Boolean): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>showIntervalHeaders</code>.If set, interval headers are shown
     * like specified in <code>showEmptyIntervalHeaders</code>.If not set, no interval headers are shown
@@ -594,6 +666,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowIntervalHeaders(bShowIntervalHeaders: Boolean): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>showRowHeaders</code>.If set, headers of the
     * <code>PlanningCalendarRows</code> are shown. This means the column with the headers is shown.If not
@@ -604,6 +677,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowRowHeaders(bShowRowHeaders: Boolean): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>singleSelection</code>.If set, only a single row can be
     * selectedWhen called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -612,6 +686,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSingleSelection(bSingleSelection: Boolean): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>startDate</code>.Start date of the row, as JavaScript date
     * object. As a default the current date is used.When called with a value of <code>null</code> or
@@ -620,6 +695,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setStartDate(oStartDate: js.Any): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>viewKey</code>.Key of the <code>PlanningCalendarView</code> used
     * for the output. The default value uses a default view.If you are using own views, the keys of these
@@ -630,6 +706,7 @@ trait PlanningCalendar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setViewKey(sViewKey: String): PlanningCalendar = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Width of the <code>PlanningCalendar</code>When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -639,4 +716,3 @@ trait PlanningCalendar extends Control {
     */
   def setWidth(sWidth: js.Any): PlanningCalendar = js.native
 }
-

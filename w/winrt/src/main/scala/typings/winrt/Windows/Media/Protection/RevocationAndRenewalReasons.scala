@@ -2,14 +2,14 @@ package typings.winrt.Windows.Media.Protection
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RevocationAndRenewalReasons extends js.Object
-
 @JSGlobal("Windows.Media.Protection.RevocationAndRenewalReasons")
 @js.native
 object RevocationAndRenewalReasons extends js.Object {
+  
   @js.native
   sealed trait appComponent extends RevocationAndRenewalReasons
   
@@ -54,6 +54,4 @@ object RevocationAndRenewalReasons extends js.Object {
   
   @js.native
   sealed trait userModeComponentLoad extends RevocationAndRenewalReasons
-  
 }
-

@@ -3,11 +3,12 @@ package typings.runJxa
 import typings.typeFest.basicMod.JsonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("run-jxa", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Run [JXA](https://github.com/dtinth/JXA-Cookbook) code and get the result.
   	@param input - If a function, it's stringified and passed to JXA. It should be [pure](https://en.wikipedia.org/wiki/Pure_function), meaning it doesn't access anything outside its body.
@@ -39,6 +40,7 @@ object mod extends js.Object {
   def apply[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): js.Promise[ReturnType] = js.native
   def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): js.Promise[ReturnType] = js.native
   def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): js.Promise[ReturnType] = js.native
+  
   /**
   	Synchronously run [JXA](https://github.com/dtinth/JXA-Cookbook) code and get the result.
   	@param input - If a function, it's stringified and passed to JXA. It should be [pure](https://en.wikipedia.org/wiki/Pure_function), meaning it doesn't access anything outside its body.
@@ -53,4 +55,3 @@ object mod extends js.Object {
   def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): ReturnType = js.native
   def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): ReturnType = js.native
 }
-

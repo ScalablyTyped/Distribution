@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/reports_v1", "admin_reports_v1.Resource$Activities")
 @js.native
 class ResourceActivities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * reports.activities.list
     * @desc Retrieves a list of activities for a specific customer and
@@ -52,6 +54,7 @@ class ResourceActivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaActivities]
   ): Unit = js.native
+  
   /**
     * reports.activities.watch
     * @desc Push changes to activities
@@ -92,4 +95,3 @@ class ResourceActivities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

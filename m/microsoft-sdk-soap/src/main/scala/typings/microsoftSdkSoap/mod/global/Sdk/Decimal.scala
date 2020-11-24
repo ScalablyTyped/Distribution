@@ -2,7 +2,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Decimal")
 @js.native
@@ -14,10 +14,10 @@ class Decimal protected () extends AttributeBase {
     */
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, value: scala.Double) = this()
+  
   /**
     * Sets the value of a Decimal attribute.
     * @param value The value to set.
     */
   def setValue(value: scala.Double): Unit = js.native
 }
-

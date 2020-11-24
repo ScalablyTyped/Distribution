@@ -2,20 +2,18 @@ package typings.grunt.grunt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("grunt.option")
 @js.native
 object option extends js.Object {
+  
   /**
     * {@link http://gruntjs.com/api/grunt.option}
     */
   @js.native
   trait OptionModule extends js.Object {
-    /**
-      * Returns the options as an array of command line parameters.
-      */
-    var flags: js.Array[IFlag] = js.native
+    
     def apply[T](key: String): T = js.native
     /**
       * Gets or sets an option.
@@ -26,6 +24,12 @@ object option extends js.Object {
       * assert(isDev === true)
       */
     def apply[T](key: String, value: T): Unit = js.native
+    
+    /**
+      * Returns the options as an array of command line parameters.
+      */
+    var flags: js.Array[IFlag] = js.native
+    
     /**
       * Initialize grunt.option.
       * If initObject is omitted option will be initialized to an empty object
@@ -34,6 +38,4 @@ object option extends js.Object {
     def init(): Unit = js.native
     def init(initObject: js.Any): Unit = js.native
   }
-  
 }
-

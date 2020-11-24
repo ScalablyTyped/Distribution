@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User tapped the back or forward button.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object WEBVIEW_NAVIGATIONTYPE_BACK_FORWARD
   extends TopLevel[scala.Nothing]
-

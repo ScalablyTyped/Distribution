@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XLockable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the undo/redo stacks of a document
@@ -45,28 +45,33 @@ import scala.scalajs.js.annotation._
 trait XUndoManager
   extends XChild
      with XLockable {
+  
   /**
     * returns the titles of all actions currently on the Redo stack, from top to bottom
     * @see XUndoAction.Title
     */
   val AllRedoActionTitles: SafeArray[String] = js.native
+  
   /**
     * returns the titles of all actions currently on the undo stack, from top to bottom
     * @see XUndoAction.Title
     */
   val AllUndoActionTitles: SafeArray[String] = js.native
+  
   /**
     * returns the title of the top-most action on the Redo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the Redo stack is currently empty
     */
   val CurrentRedoActionTitle: String = js.native
+  
   /**
     * returns the title of the top-most action on the undo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the undo stack is currently empty
     */
   val CurrentUndoActionTitle: String = js.native
+  
   /**
     * adds the given undo action to the undo stack.
     *
@@ -81,8 +86,10 @@ trait XUndoManager
     * @throws com::sun::star::lang::IllegalArgumentException if the given undo action is `NULL` .
     */
   def addUndoAction(iAction: XUndoAction): Unit = js.native
+  
   /** adds a listener to be notified of changes in the Undo/Redo stacks. */
   def addUndoManagerListener(iListener: XUndoManagerListener): Unit = js.native
+  
   /**
     * clears the undo and the redo stack.
     *
@@ -91,6 +98,7 @@ trait XUndoManager
     * @throws UndoContextNotClosedException if the method is invoked while an undo context is still open
     */
   def clear(): Unit = js.native
+  
   /**
     * clears the redo stack.
     *
@@ -98,6 +106,7 @@ trait XUndoManager
     * @throws UndoContextNotClosedException if the method is invoked while an undo context is still open
     */
   def clearRedo(): Unit = js.native
+  
   /**
     * enters a new undo context, creating a hidden undo action.
     *
@@ -122,6 +131,7 @@ trait XUndoManager
     * @throws EmptyUndoStackException if the undo stack is currently empty, in which case it is impossible to push a hidden undo action onto it.
     */
   def enterHiddenUndoContext(): Unit = js.native
+  
   /**
     * enters a new undo context.
     *
@@ -137,38 +147,45 @@ trait XUndoManager
     * @see leaveUndoContext
     */
   def enterUndoContext(iTitle: String): Unit = js.native
+  
   /**
     * returns the titles of all actions currently on the Redo stack, from top to bottom
     * @see XUndoAction.Title
     */
   def getAllRedoActionTitles(): SafeArray[String] = js.native
+  
   /**
     * returns the titles of all actions currently on the undo stack, from top to bottom
     * @see XUndoAction.Title
     */
   def getAllUndoActionTitles(): SafeArray[String] = js.native
+  
   /**
     * returns the title of the top-most action on the Redo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the Redo stack is currently empty
     */
   def getCurrentRedoActionTitle(): String = js.native
+  
   /**
     * returns the title of the top-most action on the undo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the undo stack is currently empty
     */
   def getCurrentUndoActionTitle(): String = js.native
+  
   /**
     * determines whether {@link redo()} can reasonably be expected to succeed.
     * @returns `FALSE` if and only if the redo stack is currently empty, or there is an open and not-yet-closed undo context.
     */
   def isRedoPossible(): Boolean = js.native
+  
   /**
     * determines whether {@link undo()} can reasonably be expected to succeed.
     * @returns `FALSE` if and only if the undo stack is currently empty, or there is an open and not-yet-closed undo context.
     */
   def isUndoPossible(): Boolean = js.native
+  
   /**
     * leaves the undo context previously opened via {@link enterUndoContext()} respectively {@link enterHiddenUndoContext()} .
     *
@@ -182,6 +199,7 @@ trait XUndoManager
     * @throws com::sun::star::util::InvalidStateException if no undo context is currently open.
     */
   def leaveUndoContext(): Unit = js.native
+  
   /**
     * replays the action on the document which has most recently been undone
     *
@@ -193,8 +211,10 @@ trait XUndoManager
     * @throws UndoFailedException if the invocation of {@link XUndoAction.redo()} raised this exception. In this case, the redo stack of the undo manager will
     */
   def redo(): Unit = js.native
+  
   /** removes a previously added listener */
   def removeUndoManagerListener(iListener: XUndoManagerListener): Unit = js.native
+  
   /**
     * resets the Undo manager
     *
@@ -205,6 +225,7 @@ trait XUndoManager
     * the reset by calling their {@link XUndoManagerListener.resetAll()} method.
     */
   def reset(): Unit = js.native
+  
   /**
     * reverts the most recent action on the document.
     *
@@ -218,8 +239,8 @@ trait XUndoManager
     */
   def undo(): Unit = js.native
 }
-
 object XUndoManager {
+  
   @scala.inline
   def apply(
     AllRedoActionTitles: SafeArray[String],
@@ -256,60 +277,83 @@ object XUndoManager {
     val __obj = js.Dynamic.literal(AllRedoActionTitles = AllRedoActionTitles.asInstanceOf[js.Any], AllUndoActionTitles = AllUndoActionTitles.asInstanceOf[js.Any], CurrentRedoActionTitle = CurrentRedoActionTitle.asInstanceOf[js.Any], CurrentUndoActionTitle = CurrentUndoActionTitle.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addUndoAction = js.Any.fromFunction1(addUndoAction), addUndoManagerListener = js.Any.fromFunction1(addUndoManagerListener), clear = js.Any.fromFunction0(clear), clearRedo = js.Any.fromFunction0(clearRedo), enterHiddenUndoContext = js.Any.fromFunction0(enterHiddenUndoContext), enterUndoContext = js.Any.fromFunction1(enterUndoContext), getAllRedoActionTitles = js.Any.fromFunction0(getAllRedoActionTitles), getAllUndoActionTitles = js.Any.fromFunction0(getAllUndoActionTitles), getCurrentRedoActionTitle = js.Any.fromFunction0(getCurrentRedoActionTitle), getCurrentUndoActionTitle = js.Any.fromFunction0(getCurrentUndoActionTitle), getParent = js.Any.fromFunction0(getParent), isLocked = js.Any.fromFunction0(isLocked), isRedoPossible = js.Any.fromFunction0(isRedoPossible), isUndoPossible = js.Any.fromFunction0(isUndoPossible), leaveUndoContext = js.Any.fromFunction0(leaveUndoContext), lock = js.Any.fromFunction0(lock), queryInterface = js.Any.fromFunction1(queryInterface), redo = js.Any.fromFunction0(redo), release = js.Any.fromFunction0(release), removeUndoManagerListener = js.Any.fromFunction1(removeUndoManagerListener), reset = js.Any.fromFunction0(reset), setParent = js.Any.fromFunction1(setParent), undo = js.Any.fromFunction0(undo), unlock = js.Any.fromFunction0(unlock))
     __obj.asInstanceOf[XUndoManager]
   }
+  
   @scala.inline
   implicit class XUndoManagerOps[Self <: XUndoManager] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllRedoActionTitles(value: SafeArray[String]): Self = this.set("AllRedoActionTitles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAllUndoActionTitles(value: SafeArray[String]): Self = this.set("AllUndoActionTitles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCurrentRedoActionTitle(value: String): Self = this.set("CurrentRedoActionTitle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCurrentUndoActionTitle(value: String): Self = this.set("CurrentUndoActionTitle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddUndoAction(value: XUndoAction => Unit): Self = this.set("addUndoAction", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddUndoManagerListener(value: XUndoManagerListener => Unit): Self = this.set("addUndoManagerListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setClearRedo(value: () => Unit): Self = this.set("clearRedo", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setEnterHiddenUndoContext(value: () => Unit): Self = this.set("enterHiddenUndoContext", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setEnterUndoContext(value: String => Unit): Self = this.set("enterUndoContext", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetAllRedoActionTitles(value: () => SafeArray[String]): Self = this.set("getAllRedoActionTitles", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAllUndoActionTitles(value: () => SafeArray[String]): Self = this.set("getAllUndoActionTitles", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCurrentRedoActionTitle(value: () => String): Self = this.set("getCurrentRedoActionTitle", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCurrentUndoActionTitle(value: () => String): Self = this.set("getCurrentUndoActionTitle", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsRedoPossible(value: () => Boolean): Self = this.set("isRedoPossible", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsUndoPossible(value: () => Boolean): Self = this.set("isUndoPossible", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setLeaveUndoContext(value: () => Unit): Self = this.set("leaveUndoContext", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRedo(value: () => Unit): Self = this.set("redo", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRemoveUndoManagerListener(value: XUndoManagerListener => Unit): Self = this.set("removeUndoManagerListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setUndo(value: () => Unit): Self = this.set("undo", js.Any.fromFunction0(value))
   }
-  
 }
-

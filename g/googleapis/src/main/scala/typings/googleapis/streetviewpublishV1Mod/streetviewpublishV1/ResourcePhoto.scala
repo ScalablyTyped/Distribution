@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/streetviewpublish/v1", "streetviewpublish_v1.Resource$Photo")
 @js.native
 class ResourcePhoto protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * streetviewpublish.photo.create
     * @desc After the client finishes uploading the photo with the returned
@@ -52,6 +54,7 @@ class ResourcePhoto protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPhoto]
   ): Unit = js.native
+  
   /**
     * streetviewpublish.photo.delete
     * @desc Deletes a Photo and its metadata.  This method returns the
@@ -83,6 +86,7 @@ class ResourcePhoto protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * streetviewpublish.photo.get
     * @desc Gets the metadata of the specified Photo.  This method returns the
@@ -118,6 +122,7 @@ class ResourcePhoto protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPhoto]
   ): Unit = js.native
+  
   /**
     * streetviewpublish.photo.startUpload
     * @desc Creates an upload session to start uploading photo bytes.  The
@@ -158,6 +163,7 @@ class ResourcePhoto protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUploadRef]
   ): Unit = js.native
+  
   /**
     * streetviewpublish.photo.update
     * @desc Updates the metadata of a Photo, such as pose, place association,
@@ -198,4 +204,3 @@ class ResourcePhoto protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPhoto]
   ): Unit = js.native
 }
-

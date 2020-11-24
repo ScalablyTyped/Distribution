@@ -3,9 +3,5413 @@ package typings.uifabricIcons
 import typings.uifabricIcons.iconNamesMod.IconNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uifabricIconsStrings {
+  
+  @scala.inline
+  def AADLogo: AADLogo = "AADLogo".asInstanceOf[AADLogo]
+  
+  @scala.inline
+  def ATPLogo: ATPLogo = "ATPLogo".asInstanceOf[ATPLogo]
+  
+  @scala.inline
+  def Accept: Accept = "Accept".asInstanceOf[Accept]
+  
+  @scala.inline
+  def AccessLogo: AccessLogo = "AccessLogo".asInstanceOf[AccessLogo]
+  
+  @scala.inline
+  def AccessLogoFill: AccessLogoFill = "AccessLogoFill".asInstanceOf[AccessLogoFill]
+  
+  @scala.inline
+  def AccessibiltyChecker: AccessibiltyChecker = "AccessibiltyChecker".asInstanceOf[AccessibiltyChecker]
+  
+  @scala.inline
+  def AccountActivity: AccountActivity = "AccountActivity".asInstanceOf[AccountActivity]
+  
+  @scala.inline
+  def AccountBrowser: AccountBrowser = "AccountBrowser".asInstanceOf[AccountBrowser]
+  
+  @scala.inline
+  def AccountManagement: AccountManagement = "AccountManagement".asInstanceOf[AccountManagement]
+  
+  @scala.inline
+  def Accounts: Accounts = "Accounts".asInstanceOf[Accounts]
+  
+  @scala.inline
+  def ActionCenter: ActionCenter = "ActionCenter".asInstanceOf[ActionCenter]
+  
+  @scala.inline
+  def ActivateOrders: ActivateOrders = "ActivateOrders".asInstanceOf[ActivateOrders]
+  
+  @scala.inline
+  def ActivityFeed: ActivityFeed = "ActivityFeed".asInstanceOf[ActivityFeed]
+  
+  @scala.inline
+  def Add: Add = "Add".asInstanceOf[Add]
+  
+  @scala.inline
+  def AddBookmark: AddBookmark = "AddBookmark".asInstanceOf[AddBookmark]
+  
+  @scala.inline
+  def AddEvent: AddEvent = "AddEvent".asInstanceOf[AddEvent]
+  
+  @scala.inline
+  def AddFavorite: AddFavorite = "AddFavorite".asInstanceOf[AddFavorite]
+  
+  @scala.inline
+  def AddFavoriteFill: AddFavoriteFill = "AddFavoriteFill".asInstanceOf[AddFavoriteFill]
+  
+  @scala.inline
+  def AddFriend: AddFriend = "AddFriend".asInstanceOf[AddFriend]
+  
+  @scala.inline
+  def AddGroup: AddGroup = "AddGroup".asInstanceOf[AddGroup]
+  
+  @scala.inline
+  def AddHome: AddHome = "AddHome".asInstanceOf[AddHome]
+  
+  @scala.inline
+  def AddIn: AddIn = "AddIn".asInstanceOf[AddIn]
+  
+  @scala.inline
+  def AddLink: AddLink = "AddLink".asInstanceOf[AddLink]
+  
+  @scala.inline
+  def AddNotes: AddNotes = "AddNotes".asInstanceOf[AddNotes]
+  
+  @scala.inline
+  def AddOnlineMeeting: AddOnlineMeeting = "AddOnlineMeeting".asInstanceOf[AddOnlineMeeting]
+  
+  @scala.inline
+  def AddPhone: AddPhone = "AddPhone".asInstanceOf[AddPhone]
+  
+  @scala.inline
+  def AddReaction: AddReaction = "AddReaction".asInstanceOf[AddReaction]
+  
+  @scala.inline
+  def AddTo: AddTo = "AddTo".asInstanceOf[AddTo]
+  
+  @scala.inline
+  def AddToShoppingList: AddToShoppingList = "AddToShoppingList".asInstanceOf[AddToShoppingList]
+  
+  @scala.inline
+  def AddWork: AddWork = "AddWork".asInstanceOf[AddWork]
+  
+  @scala.inline
+  def Admin: Admin = "Admin".asInstanceOf[Admin]
+  
+  @scala.inline
+  def AdminALogo32: AdminALogo32 = "AdminALogo32".asInstanceOf[AdminALogo32]
+  
+  @scala.inline
+  def AdminALogoFill32: AdminALogoFill32 = "AdminALogoFill32".asInstanceOf[AdminALogoFill32]
+  
+  @scala.inline
+  def AdminALogoInverse32: AdminALogoInverse32 = "AdminALogoInverse32".asInstanceOf[AdminALogoInverse32]
+  
+  @scala.inline
+  def AdminCLogoInverse32: AdminCLogoInverse32 = "AdminCLogoInverse32".asInstanceOf[AdminCLogoInverse32]
+  
+  @scala.inline
+  def AdminDLogoInverse32: AdminDLogoInverse32 = "AdminDLogoInverse32".asInstanceOf[AdminDLogoInverse32]
+  
+  @scala.inline
+  def AdminELogoInverse32: AdminELogoInverse32 = "AdminELogoInverse32".asInstanceOf[AdminELogoInverse32]
+  
+  @scala.inline
+  def AdminLLogoInverse32: AdminLLogoInverse32 = "AdminLLogoInverse32".asInstanceOf[AdminLLogoInverse32]
+  
+  @scala.inline
+  def AdminMLogoInverse32: AdminMLogoInverse32 = "AdminMLogoInverse32".asInstanceOf[AdminMLogoInverse32]
+  
+  @scala.inline
+  def AdminOLogoInverse32: AdminOLogoInverse32 = "AdminOLogoInverse32".asInstanceOf[AdminOLogoInverse32]
+  
+  @scala.inline
+  def AdminPLogoInverse32: AdminPLogoInverse32 = "AdminPLogoInverse32".asInstanceOf[AdminPLogoInverse32]
+  
+  @scala.inline
+  def AdminSLogoInverse32: AdminSLogoInverse32 = "AdminSLogoInverse32".asInstanceOf[AdminSLogoInverse32]
+  
+  @scala.inline
+  def AdminYLogoInverse32: AdminYLogoInverse32 = "AdminYLogoInverse32".asInstanceOf[AdminYLogoInverse32]
+  
+  @scala.inline
+  def AirTickets: AirTickets = "AirTickets".asInstanceOf[AirTickets]
+  
+  @scala.inline
+  def Airplane: Airplane = "Airplane".asInstanceOf[Airplane]
+  
+  @scala.inline
+  def AirplaneSolid: AirplaneSolid = "AirplaneSolid".asInstanceOf[AirplaneSolid]
+  
+  @scala.inline
+  def AlarmClock: AlarmClock = "AlarmClock".asInstanceOf[AlarmClock]
+  
+  @scala.inline
+  def Album: Album = "Album".asInstanceOf[Album]
+  
+  @scala.inline
+  def AlbumRemove: AlbumRemove = "AlbumRemove".asInstanceOf[AlbumRemove]
+  
+  @scala.inline
+  def AlertSettings: AlertSettings = "AlertSettings".asInstanceOf[AlertSettings]
+  
+  @scala.inline
+  def AlertSolid: AlertSolid = "AlertSolid".asInstanceOf[AlertSolid]
+  
+  @scala.inline
+  def AlignCenter: AlignCenter = "AlignCenter".asInstanceOf[AlignCenter]
+  
+  @scala.inline
+  def AlignHorizontalCenter: AlignHorizontalCenter = "AlignHorizontalCenter".asInstanceOf[AlignHorizontalCenter]
+  
+  @scala.inline
+  def AlignHorizontalLeft: AlignHorizontalLeft = "AlignHorizontalLeft".asInstanceOf[AlignHorizontalLeft]
+  
+  @scala.inline
+  def AlignHorizontalRight: AlignHorizontalRight = "AlignHorizontalRight".asInstanceOf[AlignHorizontalRight]
+  
+  @scala.inline
+  def AlignJustify: AlignJustify = "AlignJustify".asInstanceOf[AlignJustify]
+  
+  @scala.inline
+  def AlignLeft: AlignLeft = "AlignLeft".asInstanceOf[AlignLeft]
+  
+  @scala.inline
+  def AlignRight: AlignRight = "AlignRight".asInstanceOf[AlignRight]
+  
+  @scala.inline
+  def AlignVerticalBottom: AlignVerticalBottom = "AlignVerticalBottom".asInstanceOf[AlignVerticalBottom]
+  
+  @scala.inline
+  def AlignVerticalCenter: AlignVerticalCenter = "AlignVerticalCenter".asInstanceOf[AlignVerticalCenter]
+  
+  @scala.inline
+  def AlignVerticalTop: AlignVerticalTop = "AlignVerticalTop".asInstanceOf[AlignVerticalTop]
+  
+  @scala.inline
+  def AllApps: AllApps = "AllApps".asInstanceOf[AllApps]
+  
+  @scala.inline
+  def AllAppsMirrored: AllAppsMirrored = "AllAppsMirrored".asInstanceOf[AllAppsMirrored]
+  
+  @scala.inline
+  def AllCurrency: AllCurrency = "AllCurrency".asInstanceOf[AllCurrency]
+  
+  @scala.inline
+  def AnalyticsLogo: AnalyticsLogo = "AnalyticsLogo".asInstanceOf[AnalyticsLogo]
+  
+  @scala.inline
+  def AnalyticsQuery: AnalyticsQuery = "AnalyticsQuery".asInstanceOf[AnalyticsQuery]
+  
+  @scala.inline
+  def AnalyticsReport: AnalyticsReport = "AnalyticsReport".asInstanceOf[AnalyticsReport]
+  
+  @scala.inline
+  def AnalyticsView: AnalyticsView = "AnalyticsView".asInstanceOf[AnalyticsView]
+  
+  @scala.inline
+  def AnchorLock: AnchorLock = "AnchorLock".asInstanceOf[AnchorLock]
+  
+  @scala.inline
+  def Annotation: Annotation = "Annotation".asInstanceOf[Annotation]
+  
+  @scala.inline
+  def AppIconDefault: AppIconDefault = "AppIconDefault".asInstanceOf[AppIconDefault]
+  
+  @scala.inline
+  def AppIconDefaultAdd: AppIconDefaultAdd = "AppIconDefaultAdd".asInstanceOf[AppIconDefaultAdd]
+  
+  @scala.inline
+  def AppIconDefaultList: AppIconDefaultList = "AppIconDefaultList".asInstanceOf[AppIconDefaultList]
+  
+  @scala.inline
+  def Archive: Archive = "Archive".asInstanceOf[Archive]
+  
+  @scala.inline
+  def AreaChart: AreaChart = "AreaChart".asInstanceOf[AreaChart]
+  
+  @scala.inline
+  def ArrangeBringForward: ArrangeBringForward = "ArrangeBringForward".asInstanceOf[ArrangeBringForward]
+  
+  @scala.inline
+  def ArrangeBringToFront: ArrangeBringToFront = "ArrangeBringToFront".asInstanceOf[ArrangeBringToFront]
+  
+  @scala.inline
+  def ArrangeByFrom: ArrangeByFrom = "ArrangeByFrom".asInstanceOf[ArrangeByFrom]
+  
+  @scala.inline
+  def ArrangeSendBackward: ArrangeSendBackward = "ArrangeSendBackward".asInstanceOf[ArrangeSendBackward]
+  
+  @scala.inline
+  def ArrangeSendToBack: ArrangeSendToBack = "ArrangeSendToBack".asInstanceOf[ArrangeSendToBack]
+  
+  @scala.inline
+  def Arrivals: Arrivals = "Arrivals".asInstanceOf[Arrivals]
+  
+  @scala.inline
+  def ArrowDownRight8: ArrowDownRight8 = "ArrowDownRight8".asInstanceOf[ArrowDownRight8]
+  
+  @scala.inline
+  def ArrowDownRightMirrored8: ArrowDownRightMirrored8 = "ArrowDownRightMirrored8".asInstanceOf[ArrowDownRightMirrored8]
+  
+  @scala.inline
+  def ArrowTallDownLeft: ArrowTallDownLeft = "ArrowTallDownLeft".asInstanceOf[ArrowTallDownLeft]
+  
+  @scala.inline
+  def ArrowTallDownRight: ArrowTallDownRight = "ArrowTallDownRight".asInstanceOf[ArrowTallDownRight]
+  
+  @scala.inline
+  def ArrowTallUpLeft: ArrowTallUpLeft = "ArrowTallUpLeft".asInstanceOf[ArrowTallUpLeft]
+  
+  @scala.inline
+  def ArrowTallUpRight: ArrowTallUpRight = "ArrowTallUpRight".asInstanceOf[ArrowTallUpRight]
+  
+  @scala.inline
+  def ArrowUpRight: ArrowUpRight = "ArrowUpRight".asInstanceOf[ArrowUpRight]
+  
+  @scala.inline
+  def ArrowUpRight8: ArrowUpRight8 = "ArrowUpRight8".asInstanceOf[ArrowUpRight8]
+  
+  @scala.inline
+  def ArrowUpRightMirrored8: ArrowUpRightMirrored8 = "ArrowUpRightMirrored8".asInstanceOf[ArrowUpRightMirrored8]
+  
+  @scala.inline
+  def Articles: Articles = "Articles".asInstanceOf[Articles]
+  
+  @scala.inline
+  def Ascending: Ascending = "Ascending".asInstanceOf[Ascending]
+  
+  @scala.inline
+  def AspectRatio: AspectRatio = "AspectRatio".asInstanceOf[AspectRatio]
+  
+  @scala.inline
+  def AssessmentGroup: AssessmentGroup = "AssessmentGroup".asInstanceOf[AssessmentGroup]
+  
+  @scala.inline
+  def AssessmentGroupTemplate: AssessmentGroupTemplate = "AssessmentGroupTemplate".asInstanceOf[AssessmentGroupTemplate]
+  
+  @scala.inline
+  def AssetLibrary: AssetLibrary = "AssetLibrary".asInstanceOf[AssetLibrary]
+  
+  @scala.inline
+  def Assign: Assign = "Assign".asInstanceOf[Assign]
+  
+  @scala.inline
+  def Asterisk: Asterisk = "Asterisk".asInstanceOf[Asterisk]
+  
+  @scala.inline
+  def AsteriskSolid: AsteriskSolid = "AsteriskSolid".asInstanceOf[AsteriskSolid]
+  
+  @scala.inline
+  def Attach: Attach = "Attach".asInstanceOf[Attach]
+  
+  @scala.inline
+  def AustralianRules: AustralianRules = "AustralianRules".asInstanceOf[AustralianRules]
+  
+  @scala.inline
+  def AuthenticatorApp: AuthenticatorApp = "AuthenticatorApp".asInstanceOf[AuthenticatorApp]
+  
+  @scala.inline
+  def AutoEnhanceOff: AutoEnhanceOff = "AutoEnhanceOff".asInstanceOf[AutoEnhanceOff]
+  
+  @scala.inline
+  def AutoEnhanceOn: AutoEnhanceOn = "AutoEnhanceOn".asInstanceOf[AutoEnhanceOn]
+  
+  @scala.inline
+  def AutoFillTemplate: AutoFillTemplate = "AutoFillTemplate".asInstanceOf[AutoFillTemplate]
+  
+  @scala.inline
+  def AutoHeight: AutoHeight = "AutoHeight".asInstanceOf[AutoHeight]
+  
+  @scala.inline
+  def AutoRacing: AutoRacing = "AutoRacing".asInstanceOf[AutoRacing]
+  
+  @scala.inline
+  def AwayStatus: AwayStatus = "AwayStatus".asInstanceOf[AwayStatus]
+  
+  @scala.inline
+  def AzureAPIManagement: AzureAPIManagement = "AzureAPIManagement".asInstanceOf[AzureAPIManagement]
+  
+  @scala.inline
+  def AzureKeyVault: AzureKeyVault = "AzureKeyVault".asInstanceOf[AzureKeyVault]
+  
+  @scala.inline
+  def AzureLogo: AzureLogo = "AzureLogo".asInstanceOf[AzureLogo]
+  
+  @scala.inline
+  def AzureServiceEndpoint: AzureServiceEndpoint = "AzureServiceEndpoint".asInstanceOf[AzureServiceEndpoint]
+  
+  @scala.inline
+  def BIDashboard: BIDashboard = "BIDashboard".asInstanceOf[BIDashboard]
+  
+  @scala.inline
+  def Back: Back = "Back".asInstanceOf[Back]
+  
+  @scala.inline
+  def BackToWindow: BackToWindow = "BackToWindow".asInstanceOf[BackToWindow]
+  
+  @scala.inline
+  def BackgroundColor: BackgroundColor = "BackgroundColor".asInstanceOf[BackgroundColor]
+  
+  @scala.inline
+  def Backlog: Backlog = "Backlog".asInstanceOf[Backlog]
+  
+  @scala.inline
+  def BacklogBoard: BacklogBoard = "BacklogBoard".asInstanceOf[BacklogBoard]
+  
+  @scala.inline
+  def BacklogList: BacklogList = "BacklogList".asInstanceOf[BacklogList]
+  
+  @scala.inline
+  def Badge: Badge = "Badge".asInstanceOf[Badge]
+  
+  @scala.inline
+  def Balloons: Balloons = "Balloons".asInstanceOf[Balloons]
+  
+  @scala.inline
+  def Bank: Bank = "Bank".asInstanceOf[Bank]
+  
+  @scala.inline
+  def BankSolid: BankSolid = "BankSolid".asInstanceOf[BankSolid]
+  
+  @scala.inline
+  def BarChart4: BarChart4 = "BarChart4".asInstanceOf[BarChart4]
+  
+  @scala.inline
+  def BarChartHorizontal: BarChartHorizontal = "BarChartHorizontal".asInstanceOf[BarChartHorizontal]
+  
+  @scala.inline
+  def BarChartVertical: BarChartVertical = "BarChartVertical".asInstanceOf[BarChartVertical]
+  
+  @scala.inline
+  def BarChartVerticalEdit: BarChartVerticalEdit = "BarChartVerticalEdit".asInstanceOf[BarChartVerticalEdit]
+  
+  @scala.inline
+  def BarChartVerticalFill: BarChartVerticalFill = "BarChartVerticalFill".asInstanceOf[BarChartVerticalFill]
+  
+  @scala.inline
+  def BarChartVerticalFilter: BarChartVerticalFilter = "BarChartVerticalFilter".asInstanceOf[BarChartVerticalFilter]
+  
+  @scala.inline
+  def BarChartVerticalFilterSolid: BarChartVerticalFilterSolid = "BarChartVerticalFilterSolid".asInstanceOf[BarChartVerticalFilterSolid]
+  
+  @scala.inline
+  def Baseball: Baseball = "Baseball".asInstanceOf[Baseball]
+  
+  @scala.inline
+  def BeerMug: BeerMug = "BeerMug".asInstanceOf[BeerMug]
+  
+  @scala.inline
+  def BidiLtr: BidiLtr = "BidiLtr".asInstanceOf[BidiLtr]
+  
+  @scala.inline
+  def BidiRtl: BidiRtl = "BidiRtl".asInstanceOf[BidiRtl]
+  
+  @scala.inline
+  def BingLogo: BingLogo = "BingLogo".asInstanceOf[BingLogo]
+  
+  @scala.inline
+  def BirthdayCake: BirthdayCake = "BirthdayCake".asInstanceOf[BirthdayCake]
+  
+  @scala.inline
+  def BlockContact: BlockContact = "BlockContact".asInstanceOf[BlockContact]
+  
+  @scala.inline
+  def Blocked: Blocked = "Blocked".asInstanceOf[Blocked]
+  
+  @scala.inline
+  def Blocked12: Blocked12 = "Blocked12".asInstanceOf[Blocked12]
+  
+  @scala.inline
+  def Blocked2: Blocked2 = "Blocked2".asInstanceOf[Blocked2]
+  
+  @scala.inline
+  def Blocked2Solid: Blocked2Solid = "Blocked2Solid".asInstanceOf[Blocked2Solid]
+  
+  @scala.inline
+  def BlockedSite: BlockedSite = "BlockedSite".asInstanceOf[BlockedSite]
+  
+  @scala.inline
+  def BlockedSiteSolid12: BlockedSiteSolid12 = "BlockedSiteSolid12".asInstanceOf[BlockedSiteSolid12]
+  
+  @scala.inline
+  def BlockedSolid: BlockedSolid = "BlockedSolid".asInstanceOf[BlockedSolid]
+  
+  @scala.inline
+  def Blog: Blog = "Blog".asInstanceOf[Blog]
+  
+  @scala.inline
+  def BlowingSnow: BlowingSnow = "BlowingSnow".asInstanceOf[BlowingSnow]
+  
+  @scala.inline
+  def Blur: Blur = "Blur".asInstanceOf[Blur]
+  
+  @scala.inline
+  def Boards: Boards = "Boards".asInstanceOf[Boards]
+  
+  @scala.inline
+  def Bold: Bold = "Bold".asInstanceOf[Bold]
+  
+  @scala.inline
+  def BookAnswers: BookAnswers = "BookAnswers".asInstanceOf[BookAnswers]
+  
+  @scala.inline
+  def BookingsLogo: BookingsLogo = "BookingsLogo".asInstanceOf[BookingsLogo]
+  
+  @scala.inline
+  def BookmarkReport: BookmarkReport = "BookmarkReport".asInstanceOf[BookmarkReport]
+  
+  @scala.inline
+  def Bookmarks: Bookmarks = "Bookmarks".asInstanceOf[Bookmarks]
+  
+  @scala.inline
+  def BookmarksMirrored: BookmarksMirrored = "BookmarksMirrored".asInstanceOf[BookmarksMirrored]
+  
+  @scala.inline
+  def BorderDash: BorderDash = "BorderDash".asInstanceOf[BorderDash]
+  
+  @scala.inline
+  def BorderDot: BorderDot = "BorderDot".asInstanceOf[BorderDot]
+  
+  @scala.inline
+  def BoxAdditionSolid: BoxAdditionSolid = "BoxAdditionSolid".asInstanceOf[BoxAdditionSolid]
+  
+  @scala.inline
+  def BoxCheckmarkSolid: BoxCheckmarkSolid = "BoxCheckmarkSolid".asInstanceOf[BoxCheckmarkSolid]
+  
+  @scala.inline
+  def BoxMultiplySolid: BoxMultiplySolid = "BoxMultiplySolid".asInstanceOf[BoxMultiplySolid]
+  
+  @scala.inline
+  def BoxPlaySolid: BoxPlaySolid = "BoxPlaySolid".asInstanceOf[BoxPlaySolid]
+  
+  @scala.inline
+  def BoxSubtractSolid: BoxSubtractSolid = "BoxSubtractSolid".asInstanceOf[BoxSubtractSolid]
+  
+  @scala.inline
+  def BranchCommit: BranchCommit = "BranchCommit".asInstanceOf[BranchCommit]
+  
+  @scala.inline
+  def BranchCompare: BranchCompare = "BranchCompare".asInstanceOf[BranchCompare]
+  
+  @scala.inline
+  def BranchFork: BranchFork = "BranchFork".asInstanceOf[BranchFork]
+  
+  @scala.inline
+  def BranchFork2: BranchFork2 = "BranchFork2".asInstanceOf[BranchFork2]
+  
+  @scala.inline
+  def BranchLocked: BranchLocked = "BranchLocked".asInstanceOf[BranchLocked]
+  
+  @scala.inline
+  def BranchMerge: BranchMerge = "BranchMerge".asInstanceOf[BranchMerge]
+  
+  @scala.inline
+  def BranchPullRequest: BranchPullRequest = "BranchPullRequest".asInstanceOf[BranchPullRequest]
+  
+  @scala.inline
+  def BranchSearch: BranchSearch = "BranchSearch".asInstanceOf[BranchSearch]
+  
+  @scala.inline
+  def BranchShelveset: BranchShelveset = "BranchShelveset".asInstanceOf[BranchShelveset]
+  
+  @scala.inline
+  def Breadcrumb: Breadcrumb = "Breadcrumb".asInstanceOf[Breadcrumb]
+  
+  @scala.inline
+  def Breakfast: Breakfast = "Breakfast".asInstanceOf[Breakfast]
+  
+  @scala.inline
+  def Brightness: Brightness = "Brightness".asInstanceOf[Brightness]
+  
+  @scala.inline
+  def Broom: Broom = "Broom".asInstanceOf[Broom]
+  
+  @scala.inline
+  def BrowserScreenShot: BrowserScreenShot = "BrowserScreenShot".asInstanceOf[BrowserScreenShot]
+  
+  @scala.inline
+  def BrowserTab: BrowserTab = "BrowserTab".asInstanceOf[BrowserTab]
+  
+  @scala.inline
+  def BrowserTabScreenshot: BrowserTabScreenshot = "BrowserTabScreenshot".asInstanceOf[BrowserTabScreenshot]
+  
+  @scala.inline
+  def Brunch: Brunch = "Brunch".asInstanceOf[Brunch]
+  
+  @scala.inline
+  def Brush: Brush = "Brush".asInstanceOf[Brush]
+  
+  @scala.inline
+  def BucketColor: BucketColor = "BucketColor".asInstanceOf[BucketColor]
+  
+  @scala.inline
+  def BucketColorFill: BucketColorFill = "BucketColorFill".asInstanceOf[BucketColorFill]
+  
+  @scala.inline
+  def BufferTimeAfter: BufferTimeAfter = "BufferTimeAfter".asInstanceOf[BufferTimeAfter]
+  
+  @scala.inline
+  def BufferTimeBefore: BufferTimeBefore = "BufferTimeBefore".asInstanceOf[BufferTimeBefore]
+  
+  @scala.inline
+  def BufferTimeBoth: BufferTimeBoth = "BufferTimeBoth".asInstanceOf[BufferTimeBoth]
+  
+  @scala.inline
+  def Bug: Bug = "Bug".asInstanceOf[Bug]
+  
+  @scala.inline
+  def BugSolid: BugSolid = "BugSolid".asInstanceOf[BugSolid]
+  
+  @scala.inline
+  def Build: Build = "Build".asInstanceOf[Build]
+  
+  @scala.inline
+  def BuildDefinition: BuildDefinition = "BuildDefinition".asInstanceOf[BuildDefinition]
+  
+  @scala.inline
+  def BuildIssue: BuildIssue = "BuildIssue".asInstanceOf[BuildIssue]
+  
+  @scala.inline
+  def BuildQueue: BuildQueue = "BuildQueue".asInstanceOf[BuildQueue]
+  
+  @scala.inline
+  def BuildQueueNew: BuildQueueNew = "BuildQueueNew".asInstanceOf[BuildQueueNew]
+  
+  @scala.inline
+  def BulkUpload: BulkUpload = "BulkUpload".asInstanceOf[BulkUpload]
+  
+  @scala.inline
+  def BulletedList: BulletedList = "BulletedList".asInstanceOf[BulletedList]
+  
+  @scala.inline
+  def BulletedList2: BulletedList2 = "BulletedList2".asInstanceOf[BulletedList2]
+  
+  @scala.inline
+  def BulletedList2Mirrored: BulletedList2Mirrored = "BulletedList2Mirrored".asInstanceOf[BulletedList2Mirrored]
+  
+  @scala.inline
+  def BulletedListBullet: BulletedListBullet = "BulletedListBullet".asInstanceOf[BulletedListBullet]
+  
+  @scala.inline
+  def BulletedListBulletMirrored: BulletedListBulletMirrored = "BulletedListBulletMirrored".asInstanceOf[BulletedListBulletMirrored]
+  
+  @scala.inline
+  def BulletedListMirrored: BulletedListMirrored = "BulletedListMirrored".asInstanceOf[BulletedListMirrored]
+  
+  @scala.inline
+  def BulletedListText: BulletedListText = "BulletedListText".asInstanceOf[BulletedListText]
+  
+  @scala.inline
+  def BulletedListTextMirrored: BulletedListTextMirrored = "BulletedListTextMirrored".asInstanceOf[BulletedListTextMirrored]
+  
+  @scala.inline
+  def BulletedTreeList: BulletedTreeList = "BulletedTreeList".asInstanceOf[BulletedTreeList]
+  
+  @scala.inline
+  def Bullseye: Bullseye = "Bullseye".asInstanceOf[Bullseye]
+  
+  @scala.inline
+  def BullseyeTarget: BullseyeTarget = "BullseyeTarget".asInstanceOf[BullseyeTarget]
+  
+  @scala.inline
+  def BullseyeTargetEdit: BullseyeTargetEdit = "BullseyeTargetEdit".asInstanceOf[BullseyeTargetEdit]
+  
+  @scala.inline
+  def Bus: Bus = "Bus".asInstanceOf[Bus]
+  
+  @scala.inline
+  def BusSolid: BusSolid = "BusSolid".asInstanceOf[BusSolid]
+  
+  @scala.inline
+  def BusinessCenterLogo: BusinessCenterLogo = "BusinessCenterLogo".asInstanceOf[BusinessCenterLogo]
+  
+  @scala.inline
+  def BusinessHoursSign: BusinessHoursSign = "BusinessHoursSign".asInstanceOf[BusinessHoursSign]
+  
+  @scala.inline
+  def ButtonControl: ButtonControl = "ButtonControl".asInstanceOf[ButtonControl]
+  
+  @scala.inline
+  def CPlusPlus: CPlusPlus = "CPlusPlus".asInstanceOf[CPlusPlus]
+  
+  @scala.inline
+  def CPlusPlusLanguage: CPlusPlusLanguage = "CPlusPlusLanguage".asInstanceOf[CPlusPlusLanguage]
+  
+  @scala.inline
+  def CRMCustomerInsightsApp: CRMCustomerInsightsApp = "CRMCustomerInsightsApp".asInstanceOf[CRMCustomerInsightsApp]
+  
+  @scala.inline
+  def CRMProcesses: CRMProcesses = "CRMProcesses".asInstanceOf[CRMProcesses]
+  
+  @scala.inline
+  def CRMReport: CRMReport = "CRMReport".asInstanceOf[CRMReport]
+  
+  @scala.inline
+  def CRMServices: CRMServices = "CRMServices".asInstanceOf[CRMServices]
+  
+  @scala.inline
+  def CSS: CSS = "CSS".asInstanceOf[CSS]
+  
+  @scala.inline
+  def CSharp: CSharp = "CSharp".asInstanceOf[CSharp]
+  
+  @scala.inline
+  def CSharpLanguage: CSharpLanguage = "CSharpLanguage".asInstanceOf[CSharpLanguage]
+  
+  @scala.inline
+  def Cafe: Cafe = "Cafe".asInstanceOf[Cafe]
+  
+  @scala.inline
+  def Cake: Cake = "Cake".asInstanceOf[Cake]
+  
+  @scala.inline
+  def Calculator: Calculator = "Calculator".asInstanceOf[Calculator]
+  
+  @scala.inline
+  def CalculatorAddition: CalculatorAddition = "CalculatorAddition".asInstanceOf[CalculatorAddition]
+  
+  @scala.inline
+  def CalculatorEqualTo: CalculatorEqualTo = "CalculatorEqualTo".asInstanceOf[CalculatorEqualTo]
+  
+  @scala.inline
+  def CalculatorMultiply: CalculatorMultiply = "CalculatorMultiply".asInstanceOf[CalculatorMultiply]
+  
+  @scala.inline
+  def CalculatorNotEqualTo: CalculatorNotEqualTo = "CalculatorNotEqualTo".asInstanceOf[CalculatorNotEqualTo]
+  
+  @scala.inline
+  def CalculatorPercentage: CalculatorPercentage = "CalculatorPercentage".asInstanceOf[CalculatorPercentage]
+  
+  @scala.inline
+  def CalculatorSubtract: CalculatorSubtract = "CalculatorSubtract".asInstanceOf[CalculatorSubtract]
+  
+  @scala.inline
+  def Calendar: Calendar = "Calendar".asInstanceOf[Calendar]
+  
+  @scala.inline
+  def CalendarAgenda: CalendarAgenda = "CalendarAgenda".asInstanceOf[CalendarAgenda]
+  
+  @scala.inline
+  def CalendarDay: CalendarDay = "CalendarDay".asInstanceOf[CalendarDay]
+  
+  @scala.inline
+  def CalendarMirrored: CalendarMirrored = "CalendarMirrored".asInstanceOf[CalendarMirrored]
+  
+  @scala.inline
+  def CalendarReply: CalendarReply = "CalendarReply".asInstanceOf[CalendarReply]
+  
+  @scala.inline
+  def CalendarSettings: CalendarSettings = "CalendarSettings".asInstanceOf[CalendarSettings]
+  
+  @scala.inline
+  def CalendarSettingsMirrored: CalendarSettingsMirrored = "CalendarSettingsMirrored".asInstanceOf[CalendarSettingsMirrored]
+  
+  @scala.inline
+  def CalendarWeek: CalendarWeek = "CalendarWeek".asInstanceOf[CalendarWeek]
+  
+  @scala.inline
+  def CalendarWorkWeek: CalendarWorkWeek = "CalendarWorkWeek".asInstanceOf[CalendarWorkWeek]
+  
+  @scala.inline
+  def Calories: Calories = "Calories".asInstanceOf[Calories]
+  
+  @scala.inline
+  def CaloriesAdd: CaloriesAdd = "CaloriesAdd".asInstanceOf[CaloriesAdd]
+  
+  @scala.inline
+  def Camera: Camera = "Camera".asInstanceOf[Camera]
+  
+  @scala.inline
+  def CampaignTemplate: CampaignTemplate = "CampaignTemplate".asInstanceOf[CampaignTemplate]
+  
+  @scala.inline
+  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
+  
+  @scala.inline
+  def CannedChat: CannedChat = "CannedChat".asInstanceOf[CannedChat]
+  
+  @scala.inline
+  def Car: Car = "Car".asInstanceOf[Car]
+  
+  @scala.inline
+  def CaretBottomLeftCenter8: CaretBottomLeftCenter8 = "CaretBottomLeftCenter8".asInstanceOf[CaretBottomLeftCenter8]
+  
+  @scala.inline
+  def CaretBottomLeftSolid8: CaretBottomLeftSolid8 = "CaretBottomLeftSolid8".asInstanceOf[CaretBottomLeftSolid8]
+  
+  @scala.inline
+  def CaretBottomRightCenter8: CaretBottomRightCenter8 = "CaretBottomRightCenter8".asInstanceOf[CaretBottomRightCenter8]
+  
+  @scala.inline
+  def CaretBottomRightSolid8: CaretBottomRightSolid8 = "CaretBottomRightSolid8".asInstanceOf[CaretBottomRightSolid8]
+  
+  @scala.inline
+  def CaretDown8: CaretDown8 = "CaretDown8".asInstanceOf[CaretDown8]
+  
+  @scala.inline
+  def CaretDownSolid8: CaretDownSolid8 = "CaretDownSolid8".asInstanceOf[CaretDownSolid8]
+  
+  @scala.inline
+  def CaretHollow: CaretHollow = "CaretHollow".asInstanceOf[CaretHollow]
+  
+  @scala.inline
+  def CaretHollowMirrored: CaretHollowMirrored = "CaretHollowMirrored".asInstanceOf[CaretHollowMirrored]
+  
+  @scala.inline
+  def CaretLeft8: CaretLeft8 = "CaretLeft8".asInstanceOf[CaretLeft8]
+  
+  @scala.inline
+  def CaretLeftSolid8: CaretLeftSolid8 = "CaretLeftSolid8".asInstanceOf[CaretLeftSolid8]
+  
+  @scala.inline
+  def CaretRight: CaretRight = "CaretRight".asInstanceOf[CaretRight]
+  
+  @scala.inline
+  def CaretRight8: CaretRight8 = "CaretRight8".asInstanceOf[CaretRight8]
+  
+  @scala.inline
+  def CaretRightSolid8: CaretRightSolid8 = "CaretRightSolid8".asInstanceOf[CaretRightSolid8]
+  
+  @scala.inline
+  def CaretSolid: CaretSolid = "CaretSolid".asInstanceOf[CaretSolid]
+  
+  @scala.inline
+  def CaretSolid16: CaretSolid16 = "CaretSolid16".asInstanceOf[CaretSolid16]
+  
+  @scala.inline
+  def CaretSolidDown: CaretSolidDown = "CaretSolidDown".asInstanceOf[CaretSolidDown]
+  
+  @scala.inline
+  def CaretSolidLeft: CaretSolidLeft = "CaretSolidLeft".asInstanceOf[CaretSolidLeft]
+  
+  @scala.inline
+  def CaretSolidMirrored: CaretSolidMirrored = "CaretSolidMirrored".asInstanceOf[CaretSolidMirrored]
+  
+  @scala.inline
+  def CaretSolidRight: CaretSolidRight = "CaretSolidRight".asInstanceOf[CaretSolidRight]
+  
+  @scala.inline
+  def CaretSolidUp: CaretSolidUp = "CaretSolidUp".asInstanceOf[CaretSolidUp]
+  
+  @scala.inline
+  def CaretTopLeftCenter8: CaretTopLeftCenter8 = "CaretTopLeftCenter8".asInstanceOf[CaretTopLeftCenter8]
+  
+  @scala.inline
+  def CaretTopLeftSolid8: CaretTopLeftSolid8 = "CaretTopLeftSolid8".asInstanceOf[CaretTopLeftSolid8]
+  
+  @scala.inline
+  def CaretTopRightCenter8: CaretTopRightCenter8 = "CaretTopRightCenter8".asInstanceOf[CaretTopRightCenter8]
+  
+  @scala.inline
+  def CaretTopRightSolid8: CaretTopRightSolid8 = "CaretTopRightSolid8".asInstanceOf[CaretTopRightSolid8]
+  
+  @scala.inline
+  def CaretUp8: CaretUp8 = "CaretUp8".asInstanceOf[CaretUp8]
+  
+  @scala.inline
+  def CaretUpSolid8: CaretUpSolid8 = "CaretUpSolid8".asInstanceOf[CaretUpSolid8]
+  
+  @scala.inline
+  def Cat: Cat = "Cat".asInstanceOf[Cat]
+  
+  @scala.inline
+  def CellPhone: CellPhone = "CellPhone".asInstanceOf[CellPhone]
+  
+  @scala.inline
+  def Certificate: Certificate = "Certificate".asInstanceOf[Certificate]
+  
+  @scala.inline
+  def CertifiedDatabase: CertifiedDatabase = "CertifiedDatabase".asInstanceOf[CertifiedDatabase]
+  
+  @scala.inline
+  def ChangeEntitlements: ChangeEntitlements = "ChangeEntitlements".asInstanceOf[ChangeEntitlements]
+  
+  @scala.inline
+  def Chart: Chart = "Chart".asInstanceOf[Chart]
+  
+  @scala.inline
+  def ChartSeries: ChartSeries = "ChartSeries".asInstanceOf[ChartSeries]
+  
+  @scala.inline
+  def ChartTemplate: ChartTemplate = "ChartTemplate".asInstanceOf[ChartTemplate]
+  
+  @scala.inline
+  def ChartXAngle: ChartXAngle = "ChartXAngle".asInstanceOf[ChartXAngle]
+  
+  @scala.inline
+  def ChartYAngle: ChartYAngle = "ChartYAngle".asInstanceOf[ChartYAngle]
+  
+  @scala.inline
+  def Chat: Chat = "Chat".asInstanceOf[Chat]
+  
+  @scala.inline
+  def ChatBot: ChatBot = "ChatBot".asInstanceOf[ChatBot]
+  
+  @scala.inline
+  def ChatInviteFriend: ChatInviteFriend = "ChatInviteFriend".asInstanceOf[ChatInviteFriend]
+  
+  @scala.inline
+  def ChatSolid: ChatSolid = "ChatSolid".asInstanceOf[ChatSolid]
+  
+  @scala.inline
+  def CheckList: CheckList = "CheckList".asInstanceOf[CheckList]
+  
+  @scala.inline
+  def CheckListCheck: CheckListCheck = "CheckListCheck".asInstanceOf[CheckListCheck]
+  
+  @scala.inline
+  def CheckListCheckMirrored: CheckListCheckMirrored = "CheckListCheckMirrored".asInstanceOf[CheckListCheckMirrored]
+  
+  @scala.inline
+  def CheckListText: CheckListText = "CheckListText".asInstanceOf[CheckListText]
+  
+  @scala.inline
+  def CheckListTextMirrored: CheckListTextMirrored = "CheckListTextMirrored".asInstanceOf[CheckListTextMirrored]
+  
+  @scala.inline
+  def CheckMark: CheckMark = "CheckMark".asInstanceOf[CheckMark]
+  
+  @scala.inline
+  def Checkbox: Checkbox = "Checkbox".asInstanceOf[Checkbox]
+  
+  @scala.inline
+  def CheckboxComposite: CheckboxComposite = "CheckboxComposite".asInstanceOf[CheckboxComposite]
+  
+  @scala.inline
+  def CheckboxCompositeReversed: CheckboxCompositeReversed = "CheckboxCompositeReversed".asInstanceOf[CheckboxCompositeReversed]
+  
+  @scala.inline
+  def CheckboxFill: CheckboxFill = "CheckboxFill".asInstanceOf[CheckboxFill]
+  
+  @scala.inline
+  def CheckboxIndeterminate: CheckboxIndeterminate = "CheckboxIndeterminate".asInstanceOf[CheckboxIndeterminate]
+  
+  @scala.inline
+  def CheckedOutByOther12: CheckedOutByOther12 = "CheckedOutByOther12".asInstanceOf[CheckedOutByOther12]
+  
+  @scala.inline
+  def CheckedOutByYou12: CheckedOutByYou12 = "CheckedOutByYou12".asInstanceOf[CheckedOutByYou12]
+  
+  @scala.inline
+  def ChevronDown: ChevronDown = "ChevronDown".asInstanceOf[ChevronDown]
+  
+  @scala.inline
+  def ChevronDownEnd6: ChevronDownEnd6 = "ChevronDownEnd6".asInstanceOf[ChevronDownEnd6]
+  
+  @scala.inline
+  def ChevronDownMed: ChevronDownMed = "ChevronDownMed".asInstanceOf[ChevronDownMed]
+  
+  @scala.inline
+  def ChevronDownSmall: ChevronDownSmall = "ChevronDownSmall".asInstanceOf[ChevronDownSmall]
+  
+  @scala.inline
+  def ChevronFold10: ChevronFold10 = "ChevronFold10".asInstanceOf[ChevronFold10]
+  
+  @scala.inline
+  def ChevronLeft: ChevronLeft = "ChevronLeft".asInstanceOf[ChevronLeft]
+  
+  @scala.inline
+  def ChevronLeftEnd6: ChevronLeftEnd6 = "ChevronLeftEnd6".asInstanceOf[ChevronLeftEnd6]
+  
+  @scala.inline
+  def ChevronLeftMed: ChevronLeftMed = "ChevronLeftMed".asInstanceOf[ChevronLeftMed]
+  
+  @scala.inline
+  def ChevronLeftSmall: ChevronLeftSmall = "ChevronLeftSmall".asInstanceOf[ChevronLeftSmall]
+  
+  @scala.inline
+  def ChevronRight: ChevronRight = "ChevronRight".asInstanceOf[ChevronRight]
+  
+  @scala.inline
+  def ChevronRightEnd6: ChevronRightEnd6 = "ChevronRightEnd6".asInstanceOf[ChevronRightEnd6]
+  
+  @scala.inline
+  def ChevronRightMed: ChevronRightMed = "ChevronRightMed".asInstanceOf[ChevronRightMed]
+  
+  @scala.inline
+  def ChevronRightSmall: ChevronRightSmall = "ChevronRightSmall".asInstanceOf[ChevronRightSmall]
+  
+  @scala.inline
+  def ChevronUnfold10: ChevronUnfold10 = "ChevronUnfold10".asInstanceOf[ChevronUnfold10]
+  
+  @scala.inline
+  def ChevronUp: ChevronUp = "ChevronUp".asInstanceOf[ChevronUp]
+  
+  @scala.inline
+  def ChevronUpEnd6: ChevronUpEnd6 = "ChevronUpEnd6".asInstanceOf[ChevronUpEnd6]
+  
+  @scala.inline
+  def ChevronUpMed: ChevronUpMed = "ChevronUpMed".asInstanceOf[ChevronUpMed]
+  
+  @scala.inline
+  def ChevronUpSmall: ChevronUpSmall = "ChevronUpSmall".asInstanceOf[ChevronUpSmall]
+  
+  @scala.inline
+  def Childof: Childof = "Childof".asInstanceOf[Childof]
+  
+  @scala.inline
+  def Chopsticks: Chopsticks = "Chopsticks".asInstanceOf[Chopsticks]
+  
+  @scala.inline
+  def ChromeBack: ChromeBack = "ChromeBack".asInstanceOf[ChromeBack]
+  
+  @scala.inline
+  def ChromeBackMirrored: ChromeBackMirrored = "ChromeBackMirrored".asInstanceOf[ChromeBackMirrored]
+  
+  @scala.inline
+  def ChromeClose: ChromeClose = "ChromeClose".asInstanceOf[ChromeClose]
+  
+  @scala.inline
+  def ChromeFullScreen: ChromeFullScreen = "ChromeFullScreen".asInstanceOf[ChromeFullScreen]
+  
+  @scala.inline
+  def ChromeMinimize: ChromeMinimize = "ChromeMinimize".asInstanceOf[ChromeMinimize]
+  
+  @scala.inline
+  def ChromeRestore: ChromeRestore = "ChromeRestore".asInstanceOf[ChromeRestore]
+  
+  @scala.inline
+  def CircleAddition: CircleAddition = "CircleAddition".asInstanceOf[CircleAddition]
+  
+  @scala.inline
+  def CircleAdditionSolid: CircleAdditionSolid = "CircleAdditionSolid".asInstanceOf[CircleAdditionSolid]
+  
+  @scala.inline
+  def CircleFill: CircleFill = "CircleFill".asInstanceOf[CircleFill]
+  
+  @scala.inline
+  def CircleHalfFull: CircleHalfFull = "CircleHalfFull".asInstanceOf[CircleHalfFull]
+  
+  @scala.inline
+  def CirclePause: CirclePause = "CirclePause".asInstanceOf[CirclePause]
+  
+  @scala.inline
+  def CirclePauseSolid: CirclePauseSolid = "CirclePauseSolid".asInstanceOf[CirclePauseSolid]
+  
+  @scala.inline
+  def CirclePlus: CirclePlus = "CirclePlus".asInstanceOf[CirclePlus]
+  
+  @scala.inline
+  def CircleRing: CircleRing = "CircleRing".asInstanceOf[CircleRing]
+  
+  @scala.inline
+  def CircleShapeSolid: CircleShapeSolid = "CircleShapeSolid".asInstanceOf[CircleShapeSolid]
+  
+  @scala.inline
+  def CircleStop: CircleStop = "CircleStop".asInstanceOf[CircleStop]
+  
+  @scala.inline
+  def CircleStopSolid: CircleStopSolid = "CircleStopSolid".asInstanceOf[CircleStopSolid]
+  
+  @scala.inline
+  def CityNext: CityNext = "CityNext".asInstanceOf[CityNext]
+  
+  @scala.inline
+  def CityNext2: CityNext2 = "CityNext2".asInstanceOf[CityNext2]
+  
+  @scala.inline
+  def ClassNotebookLogo16: ClassNotebookLogo16 = "ClassNotebookLogo16".asInstanceOf[ClassNotebookLogo16]
+  
+  @scala.inline
+  def ClassNotebookLogo32: ClassNotebookLogo32 = "ClassNotebookLogo32".asInstanceOf[ClassNotebookLogo32]
+  
+  @scala.inline
+  def ClassNotebookLogoFill16: ClassNotebookLogoFill16 = "ClassNotebookLogoFill16".asInstanceOf[ClassNotebookLogoFill16]
+  
+  @scala.inline
+  def ClassNotebookLogoFill32: ClassNotebookLogoFill32 = "ClassNotebookLogoFill32".asInstanceOf[ClassNotebookLogoFill32]
+  
+  @scala.inline
+  def ClassNotebookLogoInverse: ClassNotebookLogoInverse = "ClassNotebookLogoInverse".asInstanceOf[ClassNotebookLogoInverse]
+  
+  @scala.inline
+  def ClassNotebookLogoInverse16: ClassNotebookLogoInverse16 = "ClassNotebookLogoInverse16".asInstanceOf[ClassNotebookLogoInverse16]
+  
+  @scala.inline
+  def ClassNotebookLogoInverse32: ClassNotebookLogoInverse32 = "ClassNotebookLogoInverse32".asInstanceOf[ClassNotebookLogoInverse32]
+  
+  @scala.inline
+  def ClassroomLogo: ClassroomLogo = "ClassroomLogo".asInstanceOf[ClassroomLogo]
+  
+  @scala.inline
+  def Clear: Clear = "Clear".asInstanceOf[Clear]
+  
+  @scala.inline
+  def ClearFilter: ClearFilter = "ClearFilter".asInstanceOf[ClearFilter]
+  
+  @scala.inline
+  def ClearFormatting: ClearFormatting = "ClearFormatting".asInstanceOf[ClearFormatting]
+  
+  @scala.inline
+  def ClearFormattingA: ClearFormattingA = "ClearFormattingA".asInstanceOf[ClearFormattingA]
+  
+  @scala.inline
+  def ClearFormattingEraser: ClearFormattingEraser = "ClearFormattingEraser".asInstanceOf[ClearFormattingEraser]
+  
+  @scala.inline
+  def ClearNight: ClearNight = "ClearNight".asInstanceOf[ClearNight]
+  
+  @scala.inline
+  def ClearSelection: ClearSelection = "ClearSelection".asInstanceOf[ClearSelection]
+  
+  @scala.inline
+  def ClearSelectionMirrored: ClearSelectionMirrored = "ClearSelectionMirrored".asInstanceOf[ClearSelectionMirrored]
+  
+  @scala.inline
+  def ClipboardList: ClipboardList = "ClipboardList".asInstanceOf[ClipboardList]
+  
+  @scala.inline
+  def ClipboardListMirrored: ClipboardListMirrored = "ClipboardListMirrored".asInstanceOf[ClipboardListMirrored]
+  
+  @scala.inline
+  def ClipboardSolid: ClipboardSolid = "ClipboardSolid".asInstanceOf[ClipboardSolid]
+  
+  @scala.inline
+  def Clock: Clock = "Clock".asInstanceOf[Clock]
+  
+  @scala.inline
+  def CloneToDesktop: CloneToDesktop = "CloneToDesktop".asInstanceOf[CloneToDesktop]
+  
+  @scala.inline
+  def ClosePane: ClosePane = "ClosePane".asInstanceOf[ClosePane]
+  
+  @scala.inline
+  def ClosePaneMirrored: ClosePaneMirrored = "ClosePaneMirrored".asInstanceOf[ClosePaneMirrored]
+  
+  @scala.inline
+  def ClosedCaption: ClosedCaption = "ClosedCaption".asInstanceOf[ClosedCaption]
+  
+  @scala.inline
+  def Cloud: Cloud = "Cloud".asInstanceOf[Cloud]
+  
+  @scala.inline
+  def CloudAdd: CloudAdd = "CloudAdd".asInstanceOf[CloudAdd]
+  
+  @scala.inline
+  def CloudDownload: CloudDownload = "CloudDownload".asInstanceOf[CloudDownload]
+  
+  @scala.inline
+  def CloudImportExport: CloudImportExport = "CloudImportExport".asInstanceOf[CloudImportExport]
+  
+  @scala.inline
+  def CloudUpload: CloudUpload = "CloudUpload".asInstanceOf[CloudUpload]
+  
+  @scala.inline
+  def CloudWeather: CloudWeather = "CloudWeather".asInstanceOf[CloudWeather]
+  
+  @scala.inline
+  def Cloudy: Cloudy = "Cloudy".asInstanceOf[Cloudy]
+  
+  @scala.inline
+  def Cocktails: Cocktails = "Cocktails".asInstanceOf[Cocktails]
+  
+  @scala.inline
+  def Code: Code = "Code".asInstanceOf[Code]
+  
+  @scala.inline
+  def CodeEdit: CodeEdit = "CodeEdit".asInstanceOf[CodeEdit]
+  
+  @scala.inline
+  def Coffee: Coffee = "Coffee".asInstanceOf[Coffee]
+  
+  @scala.inline
+  def CoffeeScript: CoffeeScript = "CoffeeScript".asInstanceOf[CoffeeScript]
+  
+  @scala.inline
+  def CollapseContent: CollapseContent = "CollapseContent".asInstanceOf[CollapseContent]
+  
+  @scala.inline
+  def CollapseContentSingle: CollapseContentSingle = "CollapseContentSingle".asInstanceOf[CollapseContentSingle]
+  
+  @scala.inline
+  def CollapseMenu: CollapseMenu = "CollapseMenu".asInstanceOf[CollapseMenu]
+  
+  @scala.inline
+  def CollegeFootball: CollegeFootball = "CollegeFootball".asInstanceOf[CollegeFootball]
+  
+  @scala.inline
+  def CollegeHoops: CollegeHoops = "CollegeHoops".asInstanceOf[CollegeHoops]
+  
+  @scala.inline
+  def Color: Color = "Color".asInstanceOf[Color]
+  
+  @scala.inline
+  def ColorSolid: ColorSolid = "ColorSolid".asInstanceOf[ColorSolid]
+  
+  @scala.inline
+  def ColumnLeftTwoThirds: ColumnLeftTwoThirds = "ColumnLeftTwoThirds".asInstanceOf[ColumnLeftTwoThirds]
+  
+  @scala.inline
+  def ColumnLeftTwoThirdsEdit: ColumnLeftTwoThirdsEdit = "ColumnLeftTwoThirdsEdit".asInstanceOf[ColumnLeftTwoThirdsEdit]
+  
+  @scala.inline
+  def ColumnOptions: ColumnOptions = "ColumnOptions".asInstanceOf[ColumnOptions]
+  
+  @scala.inline
+  def ColumnRightTwoThirds: ColumnRightTwoThirds = "ColumnRightTwoThirds".asInstanceOf[ColumnRightTwoThirds]
+  
+  @scala.inline
+  def ColumnRightTwoThirdsEdit: ColumnRightTwoThirdsEdit = "ColumnRightTwoThirdsEdit".asInstanceOf[ColumnRightTwoThirdsEdit]
+  
+  @scala.inline
+  def ColumnVerticalSection: ColumnVerticalSection = "ColumnVerticalSection".asInstanceOf[ColumnVerticalSection]
+  
+  @scala.inline
+  def ColumnVerticalSectionEdit: ColumnVerticalSectionEdit = "ColumnVerticalSectionEdit".asInstanceOf[ColumnVerticalSectionEdit]
+  
+  @scala.inline
+  def Combine: Combine = "Combine".asInstanceOf[Combine]
+  
+  @scala.inline
+  def Combobox: Combobox = "Combobox".asInstanceOf[Combobox]
+  
+  @scala.inline
+  def CommandPrompt: CommandPrompt = "CommandPrompt".asInstanceOf[CommandPrompt]
+  
+  @scala.inline
+  def Comment: Comment = "Comment".asInstanceOf[Comment]
+  
+  @scala.inline
+  def CommentActive: CommentActive = "CommentActive".asInstanceOf[CommentActive]
+  
+  @scala.inline
+  def CommentAdd: CommentAdd = "CommentAdd".asInstanceOf[CommentAdd]
+  
+  @scala.inline
+  def CommentNext: CommentNext = "CommentNext".asInstanceOf[CommentNext]
+  
+  @scala.inline
+  def CommentPrevious: CommentPrevious = "CommentPrevious".asInstanceOf[CommentPrevious]
+  
+  @scala.inline
+  def CommentSolid: CommentSolid = "CommentSolid".asInstanceOf[CommentSolid]
+  
+  @scala.inline
+  def CommentUrgent: CommentUrgent = "CommentUrgent".asInstanceOf[CommentUrgent]
+  
+  @scala.inline
+  def Commitments: Commitments = "Commitments".asInstanceOf[Commitments]
+  
+  @scala.inline
+  def Communications: Communications = "Communications".asInstanceOf[Communications]
+  
+  @scala.inline
+  def CompanyDirectory: CompanyDirectory = "CompanyDirectory".asInstanceOf[CompanyDirectory]
+  
+  @scala.inline
+  def CompanyDirectoryMirrored: CompanyDirectoryMirrored = "CompanyDirectoryMirrored".asInstanceOf[CompanyDirectoryMirrored]
+  
+  @scala.inline
+  def Compare: Compare = "Compare".asInstanceOf[Compare]
+  
+  @scala.inline
+  def CompassNW: CompassNW = "CompassNW".asInstanceOf[CompassNW]
+  
+  @scala.inline
+  def Completed: Completed = "Completed".asInstanceOf[Completed]
+  
+  @scala.inline
+  def CompletedSolid: CompletedSolid = "CompletedSolid".asInstanceOf[CompletedSolid]
+  
+  @scala.inline
+  def ComplianceAudit: ComplianceAudit = "ComplianceAudit".asInstanceOf[ComplianceAudit]
+  
+  @scala.inline
+  def ConfigurationSolid: ConfigurationSolid = "ConfigurationSolid".asInstanceOf[ConfigurationSolid]
+  
+  @scala.inline
+  def ConnectContacts: ConnectContacts = "ConnectContacts".asInstanceOf[ConnectContacts]
+  
+  @scala.inline
+  def ConnectVirtualMachine: ConnectVirtualMachine = "ConnectVirtualMachine".asInstanceOf[ConnectVirtualMachine]
+  
+  @scala.inline
+  def ConstructionCone: ConstructionCone = "ConstructionCone".asInstanceOf[ConstructionCone]
+  
+  @scala.inline
+  def ConstructionConeSolid: ConstructionConeSolid = "ConstructionConeSolid".asInstanceOf[ConstructionConeSolid]
+  
+  @scala.inline
+  def Contact: Contact = "Contact".asInstanceOf[Contact]
+  
+  @scala.inline
+  def ContactCard: ContactCard = "ContactCard".asInstanceOf[ContactCard]
+  
+  @scala.inline
+  def ContactCardSettings: ContactCardSettings = "ContactCardSettings".asInstanceOf[ContactCardSettings]
+  
+  @scala.inline
+  def ContactCardSettingsMirrored: ContactCardSettingsMirrored = "ContactCardSettingsMirrored".asInstanceOf[ContactCardSettingsMirrored]
+  
+  @scala.inline
+  def ContactHeart: ContactHeart = "ContactHeart".asInstanceOf[ContactHeart]
+  
+  @scala.inline
+  def ContactInfo: ContactInfo = "ContactInfo".asInstanceOf[ContactInfo]
+  
+  @scala.inline
+  def ContactLink: ContactLink = "ContactLink".asInstanceOf[ContactLink]
+  
+  @scala.inline
+  def ContactList: ContactList = "ContactList".asInstanceOf[ContactList]
+  
+  @scala.inline
+  def ContextMenu: ContextMenu = "ContextMenu".asInstanceOf[ContextMenu]
+  
+  @scala.inline
+  def Contrast: Contrast = "Contrast".asInstanceOf[Contrast]
+  
+  @scala.inline
+  def Copy: Copy = "Copy".asInstanceOf[Copy]
+  
+  @scala.inline
+  def Cotton: Cotton = "Cotton".asInstanceOf[Cotton]
+  
+  @scala.inline
+  def Coupon: Coupon = "Coupon".asInstanceOf[Coupon]
+  
+  @scala.inline
+  def CreateMailRule: CreateMailRule = "CreateMailRule".asInstanceOf[CreateMailRule]
+  
+  @scala.inline
+  def Cricket: Cricket = "Cricket".asInstanceOf[Cricket]
+  
+  @scala.inline
+  def Crop: Crop = "Crop".asInstanceOf[Crop]
+  
+  @scala.inline
+  def Crown: Crown = "Crown".asInstanceOf[Crown]
+  
+  @scala.inline
+  def CrownSolid: CrownSolid = "CrownSolid".asInstanceOf[CrownSolid]
+  
+  @scala.inline
+  def CubeShape: CubeShape = "CubeShape".asInstanceOf[CubeShape]
+  
+  @scala.inline
+  def CustomList: CustomList = "CustomList".asInstanceOf[CustomList]
+  
+  @scala.inline
+  def CustomListMirrored: CustomListMirrored = "CustomListMirrored".asInstanceOf[CustomListMirrored]
+  
+  @scala.inline
+  def CustomizeToolbar: CustomizeToolbar = "CustomizeToolbar".asInstanceOf[CustomizeToolbar]
+  
+  @scala.inline
+  def Cut: Cut = "Cut".asInstanceOf[Cut]
+  
+  @scala.inline
+  def Cycling: Cycling = "Cycling".asInstanceOf[Cycling]
+  
+  @scala.inline
+  def D365TalentHRCore: D365TalentHRCore = "D365TalentHRCore".asInstanceOf[D365TalentHRCore]
+  
+  @scala.inline
+  def D365TalentInsight: D365TalentInsight = "D365TalentInsight".asInstanceOf[D365TalentInsight]
+  
+  @scala.inline
+  def D365TalentLearn: D365TalentLearn = "D365TalentLearn".asInstanceOf[D365TalentLearn]
+  
+  @scala.inline
+  def DOM: DOM = "DOM".asInstanceOf[DOM]
+  
+  @scala.inline
+  def DRM: DRM = "DRM".asInstanceOf[DRM]
+  
+  @scala.inline
+  def DashboardAdd: DashboardAdd = "DashboardAdd".asInstanceOf[DashboardAdd]
+  
+  @scala.inline
+  def DataConnectionLibrary: DataConnectionLibrary = "DataConnectionLibrary".asInstanceOf[DataConnectionLibrary]
+  
+  @scala.inline
+  def DataManagementSettings: DataManagementSettings = "DataManagementSettings".asInstanceOf[DataManagementSettings]
+  
+  @scala.inline
+  def Database: Database = "Database".asInstanceOf[Database]
+  
+  @scala.inline
+  def DatabaseSync: DatabaseSync = "DatabaseSync".asInstanceOf[DatabaseSync]
+  
+  @scala.inline
+  def Dataflows: Dataflows = "Dataflows".asInstanceOf[Dataflows]
+  
+  @scala.inline
+  def DataflowsLink: DataflowsLink = "DataflowsLink".asInstanceOf[DataflowsLink]
+  
+  @scala.inline
+  def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
+  
+  @scala.inline
+  def DateTime2: DateTime2 = "DateTime2".asInstanceOf[DateTime2]
+  
+  @scala.inline
+  def DateTimeMirrored: DateTimeMirrored = "DateTimeMirrored".asInstanceOf[DateTimeMirrored]
+  
+  @scala.inline
+  def DeactivateOrders: DeactivateOrders = "DeactivateOrders".asInstanceOf[DeactivateOrders]
+  
+  @scala.inline
+  def Decimals: Decimals = "Decimals".asInstanceOf[Decimals]
+  
+  @scala.inline
+  def DecisionSolid: DecisionSolid = "DecisionSolid".asInstanceOf[DecisionSolid]
+  
+  @scala.inline
+  def DeclineCall: DeclineCall = "DeclineCall".asInstanceOf[DeclineCall]
+  
+  @scala.inline
+  def DecreaseIndentArrow: DecreaseIndentArrow = "DecreaseIndentArrow".asInstanceOf[DecreaseIndentArrow]
+  
+  @scala.inline
+  def DecreaseIndentArrowMirrored: DecreaseIndentArrowMirrored = "DecreaseIndentArrowMirrored".asInstanceOf[DecreaseIndentArrowMirrored]
+  
+  @scala.inline
+  def DecreaseIndentLegacy: DecreaseIndentLegacy = "DecreaseIndentLegacy".asInstanceOf[DecreaseIndentLegacy]
+  
+  @scala.inline
+  def DecreaseIndentText: DecreaseIndentText = "DecreaseIndentText".asInstanceOf[DecreaseIndentText]
+  
+  @scala.inline
+  def DecreaseIndentTextMirrored: DecreaseIndentTextMirrored = "DecreaseIndentTextMirrored".asInstanceOf[DecreaseIndentTextMirrored]
+  
+  @scala.inline
+  def DefaultRatio: DefaultRatio = "DefaultRatio".asInstanceOf[DefaultRatio]
+  
+  @scala.inline
+  def DefectSolid: DefectSolid = "DefectSolid".asInstanceOf[DefectSolid]
+  
+  @scala.inline
+  def DefenderTVM: DefenderTVM = "DefenderTVM".asInstanceOf[DefenderTVM]
+  
+  @scala.inline
+  def Delete: Delete = "Delete".asInstanceOf[Delete]
+  
+  @scala.inline
+  def DeleteColumns: DeleteColumns = "DeleteColumns".asInstanceOf[DeleteColumns]
+  
+  @scala.inline
+  def DeleteRows: DeleteRows = "DeleteRows".asInstanceOf[DeleteRows]
+  
+  @scala.inline
+  def DeleteRowsMirrored: DeleteRowsMirrored = "DeleteRowsMirrored".asInstanceOf[DeleteRowsMirrored]
+  
+  @scala.inline
+  def DeleteTable: DeleteTable = "DeleteTable".asInstanceOf[DeleteTable]
+  
+  @scala.inline
+  def DeliveryTruck: DeliveryTruck = "DeliveryTruck".asInstanceOf[DeliveryTruck]
+  
+  @scala.inline
+  def DelveAnalytics: DelveAnalytics = "DelveAnalytics".asInstanceOf[DelveAnalytics]
+  
+  @scala.inline
+  def DelveAnalyticsLogo: DelveAnalyticsLogo = "DelveAnalyticsLogo".asInstanceOf[DelveAnalyticsLogo]
+  
+  @scala.inline
+  def DelveLogo: DelveLogo = "DelveLogo".asInstanceOf[DelveLogo]
+  
+  @scala.inline
+  def DelveLogoFill: DelveLogoFill = "DelveLogoFill".asInstanceOf[DelveLogoFill]
+  
+  @scala.inline
+  def DelveLogoInverse: DelveLogoInverse = "DelveLogoInverse".asInstanceOf[DelveLogoInverse]
+  
+  @scala.inline
+  def DependencyAdd: DependencyAdd = "DependencyAdd".asInstanceOf[DependencyAdd]
+  
+  @scala.inline
+  def DependencyRemove: DependencyRemove = "DependencyRemove".asInstanceOf[DependencyRemove]
+  
+  @scala.inline
+  def Deploy: Deploy = "Deploy".asInstanceOf[Deploy]
+  
+  @scala.inline
+  def Descending: Descending = "Descending".asInstanceOf[Descending]
+  
+  @scala.inline
+  def Design: Design = "Design".asInstanceOf[Design]
+  
+  @scala.inline
+  def DesktopScreenshot: DesktopScreenshot = "DesktopScreenshot".asInstanceOf[DesktopScreenshot]
+  
+  @scala.inline
+  def DeveloperTools: DeveloperTools = "DeveloperTools".asInstanceOf[DeveloperTools]
+  
+  @scala.inline
+  def Devices2: Devices2 = "Devices2".asInstanceOf[Devices2]
+  
+  @scala.inline
+  def Devices3: Devices3 = "Devices3".asInstanceOf[Devices3]
+  
+  @scala.inline
+  def Devices4: Devices4 = "Devices4".asInstanceOf[Devices4]
+  
+  @scala.inline
+  def Diagnostic: Diagnostic = "Diagnostic".asInstanceOf[Diagnostic]
+  
+  @scala.inline
+  def DiagnosticDataBarTooltip: DiagnosticDataBarTooltip = "DiagnosticDataBarTooltip".asInstanceOf[DiagnosticDataBarTooltip]
+  
+  @scala.inline
+  def Dialpad: Dialpad = "Dialpad".asInstanceOf[Dialpad]
+  
+  @scala.inline
+  def Diamond: Diamond = "Diamond".asInstanceOf[Diamond]
+  
+  @scala.inline
+  def DiamondSolid: DiamondSolid = "DiamondSolid".asInstanceOf[DiamondSolid]
+  
+  @scala.inline
+  def Dictionary: Dictionary = "Dictionary".asInstanceOf[Dictionary]
+  
+  @scala.inline
+  def DictionaryRemove: DictionaryRemove = "DictionaryRemove".asInstanceOf[DictionaryRemove]
+  
+  @scala.inline
+  def DietPlanNotebook: DietPlanNotebook = "DietPlanNotebook".asInstanceOf[DietPlanNotebook]
+  
+  @scala.inline
+  def DiffInline: DiffInline = "DiffInline".asInstanceOf[DiffInline]
+  
+  @scala.inline
+  def DiffSideBySide: DiffSideBySide = "DiffSideBySide".asInstanceOf[DiffSideBySide]
+  
+  @scala.inline
+  def DisableUpdates: DisableUpdates = "DisableUpdates".asInstanceOf[DisableUpdates]
+  
+  @scala.inline
+  def DisconnectVirtualMachine: DisconnectVirtualMachine = "DisconnectVirtualMachine".asInstanceOf[DisconnectVirtualMachine]
+  
+  @scala.inline
+  def Dislike: Dislike = "Dislike".asInstanceOf[Dislike]
+  
+  @scala.inline
+  def DislikeSolid: DislikeSolid = "DislikeSolid".asInstanceOf[DislikeSolid]
+  
+  @scala.inline
+  def DistributeDown: DistributeDown = "DistributeDown".asInstanceOf[DistributeDown]
+  
+  @scala.inline
+  def DocLibrary: DocLibrary = "DocLibrary".asInstanceOf[DocLibrary]
+  
+  @scala.inline
+  def DockLeft: DockLeft = "DockLeft".asInstanceOf[DockLeft]
+  
+  @scala.inline
+  def DockLeftMirrored: DockLeftMirrored = "DockLeftMirrored".asInstanceOf[DockLeftMirrored]
+  
+  @scala.inline
+  def DockRight: DockRight = "DockRight".asInstanceOf[DockRight]
+  
+  @scala.inline
+  def DocsLogoInverse: DocsLogoInverse = "DocsLogoInverse".asInstanceOf[DocsLogoInverse]
+  
+  @scala.inline
+  def Document: Document = "Document".asInstanceOf[Document]
+  
+  @scala.inline
+  def DocumentApproval: DocumentApproval = "DocumentApproval".asInstanceOf[DocumentApproval]
+  
+  @scala.inline
+  def DocumentManagement: DocumentManagement = "DocumentManagement".asInstanceOf[DocumentManagement]
+  
+  @scala.inline
+  def DocumentReply: DocumentReply = "DocumentReply".asInstanceOf[DocumentReply]
+  
+  @scala.inline
+  def DocumentSearch: DocumentSearch = "DocumentSearch".asInstanceOf[DocumentSearch]
+  
+  @scala.inline
+  def DocumentSet: DocumentSet = "DocumentSet".asInstanceOf[DocumentSet]
+  
+  @scala.inline
+  def Documentation: Documentation = "Documentation".asInstanceOf[Documentation]
+  
+  @scala.inline
+  def DonutChart: DonutChart = "DonutChart".asInstanceOf[DonutChart]
+  
+  @scala.inline
+  def Door: Door = "Door".asInstanceOf[Door]
+  
+  @scala.inline
+  def DoubleBookmark: DoubleBookmark = "DoubleBookmark".asInstanceOf[DoubleBookmark]
+  
+  @scala.inline
+  def DoubleChevronDown: DoubleChevronDown = "DoubleChevronDown".asInstanceOf[DoubleChevronDown]
+  
+  @scala.inline
+  def DoubleChevronDown12: DoubleChevronDown12 = "DoubleChevronDown12".asInstanceOf[DoubleChevronDown12]
+  
+  @scala.inline
+  def DoubleChevronDown8: DoubleChevronDown8 = "DoubleChevronDown8".asInstanceOf[DoubleChevronDown8]
+  
+  @scala.inline
+  def DoubleChevronLeft: DoubleChevronLeft = "DoubleChevronLeft".asInstanceOf[DoubleChevronLeft]
+  
+  @scala.inline
+  def DoubleChevronLeft12: DoubleChevronLeft12 = "DoubleChevronLeft12".asInstanceOf[DoubleChevronLeft12]
+  
+  @scala.inline
+  def DoubleChevronLeft8: DoubleChevronLeft8 = "DoubleChevronLeft8".asInstanceOf[DoubleChevronLeft8]
+  
+  @scala.inline
+  def DoubleChevronLeftMed: DoubleChevronLeftMed = "DoubleChevronLeftMed".asInstanceOf[DoubleChevronLeftMed]
+  
+  @scala.inline
+  def DoubleChevronLeftMedMirrored: DoubleChevronLeftMedMirrored = "DoubleChevronLeftMedMirrored".asInstanceOf[DoubleChevronLeftMedMirrored]
+  
+  @scala.inline
+  def DoubleChevronRight: DoubleChevronRight = "DoubleChevronRight".asInstanceOf[DoubleChevronRight]
+  
+  @scala.inline
+  def DoubleChevronRight12: DoubleChevronRight12 = "DoubleChevronRight12".asInstanceOf[DoubleChevronRight12]
+  
+  @scala.inline
+  def DoubleChevronRight8: DoubleChevronRight8 = "DoubleChevronRight8".asInstanceOf[DoubleChevronRight8]
+  
+  @scala.inline
+  def DoubleChevronUp: DoubleChevronUp = "DoubleChevronUp".asInstanceOf[DoubleChevronUp]
+  
+  @scala.inline
+  def DoubleChevronUp12: DoubleChevronUp12 = "DoubleChevronUp12".asInstanceOf[DoubleChevronUp12]
+  
+  @scala.inline
+  def DoubleChevronUp8: DoubleChevronUp8 = "DoubleChevronUp8".asInstanceOf[DoubleChevronUp8]
+  
+  @scala.inline
+  def DoubleColumn: DoubleColumn = "DoubleColumn".asInstanceOf[DoubleColumn]
+  
+  @scala.inline
+  def DoubleColumnEdit: DoubleColumnEdit = "DoubleColumnEdit".asInstanceOf[DoubleColumnEdit]
+  
+  @scala.inline
+  def DoubleDownArrow: DoubleDownArrow = "DoubleDownArrow".asInstanceOf[DoubleDownArrow]
+  
+  @scala.inline
+  def Down: Down = "Down".asInstanceOf[Down]
+  
+  @scala.inline
+  def Download: Download = "Download".asInstanceOf[Download]
+  
+  @scala.inline
+  def DownloadDocument: DownloadDocument = "DownloadDocument".asInstanceOf[DownloadDocument]
+  
+  @scala.inline
+  def DragObject: DragObject = "DragObject".asInstanceOf[DragObject]
+  
+  @scala.inline
+  def DrillDown: DrillDown = "DrillDown".asInstanceOf[DrillDown]
+  
+  @scala.inline
+  def DrillDownSolid: DrillDownSolid = "DrillDownSolid".asInstanceOf[DrillDownSolid]
+  
+  @scala.inline
+  def DrillExpand: DrillExpand = "DrillExpand".asInstanceOf[DrillExpand]
+  
+  @scala.inline
+  def DrillShow: DrillShow = "DrillShow".asInstanceOf[DrillShow]
+  
+  @scala.inline
+  def DrillThrough: DrillThrough = "DrillThrough".asInstanceOf[DrillThrough]
+  
+  @scala.inline
+  def Drop: Drop = "Drop".asInstanceOf[Drop]
+  
+  @scala.inline
+  def DropShapeSolid: DropShapeSolid = "DropShapeSolid".asInstanceOf[DropShapeSolid]
+  
+  @scala.inline
+  def Dropdown: Dropdown = "Dropdown".asInstanceOf[Dropdown]
+  
+  @scala.inline
+  def DuplicateRow: DuplicateRow = "DuplicateRow".asInstanceOf[DuplicateRow]
+  
+  @scala.inline
+  def Duststorm: Duststorm = "Duststorm".asInstanceOf[Duststorm]
+  
+  @scala.inline
+  def DynamicSMBLogo: DynamicSMBLogo = "DynamicSMBLogo".asInstanceOf[DynamicSMBLogo]
+  
+  @scala.inline
+  def Dynamics365Logo: Dynamics365Logo = "Dynamics365Logo".asInstanceOf[Dynamics365Logo]
+  
+  @scala.inline
+  def EMI: EMI = "EMI".asInstanceOf[EMI]
+  
+  @scala.inline
+  def EaseOfAccess: EaseOfAccess = "EaseOfAccess".asInstanceOf[EaseOfAccess]
+  
+  @scala.inline
+  def EatDrink: EatDrink = "EatDrink".asInstanceOf[EatDrink]
+  
+  @scala.inline
+  def EdgeLogo: EdgeLogo = "EdgeLogo".asInstanceOf[EdgeLogo]
+  
+  @scala.inline
+  def Edit: Edit = "Edit".asInstanceOf[Edit]
+  
+  @scala.inline
+  def EditContact: EditContact = "EditContact".asInstanceOf[EditContact]
+  
+  @scala.inline
+  def EditCreate: EditCreate = "EditCreate".asInstanceOf[EditCreate]
+  
+  @scala.inline
+  def EditMail: EditMail = "EditMail".asInstanceOf[EditMail]
+  
+  @scala.inline
+  def EditMirrored: EditMirrored = "EditMirrored".asInstanceOf[EditMirrored]
+  
+  @scala.inline
+  def EditNote: EditNote = "EditNote".asInstanceOf[EditNote]
+  
+  @scala.inline
+  def EditPhoto: EditPhoto = "EditPhoto".asInstanceOf[EditPhoto]
+  
+  @scala.inline
+  def EditSolid12: EditSolid12 = "EditSolid12".asInstanceOf[EditSolid12]
+  
+  @scala.inline
+  def EditSolidMirrored12: EditSolidMirrored12 = "EditSolidMirrored12".asInstanceOf[EditSolidMirrored12]
+  
+  @scala.inline
+  def EditStyle: EditStyle = "EditStyle".asInstanceOf[EditStyle]
+  
+  @scala.inline
+  def Education: Education = "Education".asInstanceOf[Education]
+  
+  @scala.inline
+  def Ellipse: Ellipse = "Ellipse".asInstanceOf[Ellipse]
+  
+  @scala.inline
+  def Embed: Embed = "Embed".asInstanceOf[Embed]
+  
+  @scala.inline
+  def Emoji: Emoji = "Emoji".asInstanceOf[Emoji]
+  
+  @scala.inline
+  def Emoji2: Emoji2 = "Emoji2".asInstanceOf[Emoji2]
+  
+  @scala.inline
+  def EmojiDisappointed: EmojiDisappointed = "EmojiDisappointed".asInstanceOf[EmojiDisappointed]
+  
+  @scala.inline
+  def EmojiNeutral: EmojiNeutral = "EmojiNeutral".asInstanceOf[EmojiNeutral]
+  
+  @scala.inline
+  def EmojiTabSymbols: EmojiTabSymbols = "EmojiTabSymbols".asInstanceOf[EmojiTabSymbols]
+  
+  @scala.inline
+  def EmptyRecycleBin: EmptyRecycleBin = "EmptyRecycleBin".asInstanceOf[EmptyRecycleBin]
+  
+  @scala.inline
+  def Encryption: Encryption = "Encryption".asInstanceOf[Encryption]
+  
+  @scala.inline
+  def EngineeringGroup: EngineeringGroup = "EngineeringGroup".asInstanceOf[EngineeringGroup]
+  
+  @scala.inline
+  def EntitlementPolicy: EntitlementPolicy = "EntitlementPolicy".asInstanceOf[EntitlementPolicy]
+  
+  @scala.inline
+  def EntitlementRedemption: EntitlementRedemption = "EntitlementRedemption".asInstanceOf[EntitlementRedemption]
+  
+  @scala.inline
+  def EntryDecline: EntryDecline = "EntryDecline".asInstanceOf[EntryDecline]
+  
+  @scala.inline
+  def EntryView: EntryView = "EntryView".asInstanceOf[EntryView]
+  
+  @scala.inline
+  def Equalizer: Equalizer = "Equalizer".asInstanceOf[Equalizer]
+  
+  @scala.inline
+  def EraseTool: EraseTool = "EraseTool".asInstanceOf[EraseTool]
+  
+  @scala.inline
+  def Error: Error = "Error".asInstanceOf[Error]
+  
+  @scala.inline
+  def ErrorBadge: ErrorBadge = "ErrorBadge".asInstanceOf[ErrorBadge]
+  
+  @scala.inline
+  def Event: Event = "Event".asInstanceOf[Event]
+  
+  @scala.inline
+  def Event12: Event12 = "Event12".asInstanceOf[Event12]
+  
+  @scala.inline
+  def EventAccepted: EventAccepted = "EventAccepted".asInstanceOf[EventAccepted]
+  
+  @scala.inline
+  def EventDate: EventDate = "EventDate".asInstanceOf[EventDate]
+  
+  @scala.inline
+  def EventDateMissed12: EventDateMissed12 = "EventDateMissed12".asInstanceOf[EventDateMissed12]
+  
+  @scala.inline
+  def EventDeclined: EventDeclined = "EventDeclined".asInstanceOf[EventDeclined]
+  
+  @scala.inline
+  def EventInfo: EventInfo = "EventInfo".asInstanceOf[EventInfo]
+  
+  @scala.inline
+  def EventTentative: EventTentative = "EventTentative".asInstanceOf[EventTentative]
+  
+  @scala.inline
+  def EventTentativeMirrored: EventTentativeMirrored = "EventTentativeMirrored".asInstanceOf[EventTentativeMirrored]
+  
+  @scala.inline
+  def EventToDoLogo: EventToDoLogo = "EventToDoLogo".asInstanceOf[EventToDoLogo]
+  
+  @scala.inline
+  def ExcelDocument: ExcelDocument = "ExcelDocument".asInstanceOf[ExcelDocument]
+  
+  @scala.inline
+  def ExcelLogo: ExcelLogo = "ExcelLogo".asInstanceOf[ExcelLogo]
+  
+  @scala.inline
+  def ExcelLogo16: ExcelLogo16 = "ExcelLogo16".asInstanceOf[ExcelLogo16]
+  
+  @scala.inline
+  def ExcelLogoFill: ExcelLogoFill = "ExcelLogoFill".asInstanceOf[ExcelLogoFill]
+  
+  @scala.inline
+  def ExcelLogoFill16: ExcelLogoFill16 = "ExcelLogoFill16".asInstanceOf[ExcelLogoFill16]
+  
+  @scala.inline
+  def ExcelLogoInverse: ExcelLogoInverse = "ExcelLogoInverse".asInstanceOf[ExcelLogoInverse]
+  
+  @scala.inline
+  def ExcelLogoInverse16: ExcelLogoInverse16 = "ExcelLogoInverse16".asInstanceOf[ExcelLogoInverse16]
+  
+  @scala.inline
+  def ExchangeLogo: ExchangeLogo = "ExchangeLogo".asInstanceOf[ExchangeLogo]
+  
+  @scala.inline
+  def ExchangeLogoFill: ExchangeLogoFill = "ExchangeLogoFill".asInstanceOf[ExchangeLogoFill]
+  
+  @scala.inline
+  def ExchangeLogoInverse: ExchangeLogoInverse = "ExchangeLogoInverse".asInstanceOf[ExchangeLogoInverse]
+  
+  @scala.inline
+  def ExerciseTracker: ExerciseTracker = "ExerciseTracker".asInstanceOf[ExerciseTracker]
+  
+  @scala.inline
+  def ExpandMenu: ExpandMenu = "ExpandMenu".asInstanceOf[ExpandMenu]
+  
+  @scala.inline
+  def ExploreContent: ExploreContent = "ExploreContent".asInstanceOf[ExploreContent]
+  
+  @scala.inline
+  def ExploreContentSingle: ExploreContentSingle = "ExploreContentSingle".asInstanceOf[ExploreContentSingle]
+  
+  @scala.inline
+  def ExploreData: ExploreData = "ExploreData".asInstanceOf[ExploreData]
+  
+  @scala.inline
+  def Export: Export = "Export".asInstanceOf[Export]
+  
+  @scala.inline
+  def ExportMirrored: ExportMirrored = "ExportMirrored".asInstanceOf[ExportMirrored]
+  
+  @scala.inline
+  def ExternalBuild: ExternalBuild = "ExternalBuild".asInstanceOf[ExternalBuild]
+  
+  @scala.inline
+  def ExternalTFVC: ExternalTFVC = "ExternalTFVC".asInstanceOf[ExternalTFVC]
+  
+  @scala.inline
+  def ExternalXAML: ExternalXAML = "ExternalXAML".asInstanceOf[ExternalXAML]
+  
+  @scala.inline
+  def EyeShadow: EyeShadow = "EyeShadow".asInstanceOf[EyeShadow]
+  
+  @scala.inline
+  def Eyedropper: Eyedropper = "Eyedropper".asInstanceOf[Eyedropper]
+  
+  @scala.inline
+  def F12DevTools: F12DevTools = "F12DevTools".asInstanceOf[F12DevTools]
+  
+  @scala.inline
+  def FSharp: FSharp = "FSharp".asInstanceOf[FSharp]
+  
+  @scala.inline
+  def FSharpLanguage: FSharpLanguage = "FSharpLanguage".asInstanceOf[FSharpLanguage]
+  
+  @scala.inline
+  def FabricAssetLibrary: FabricAssetLibrary = "FabricAssetLibrary".asInstanceOf[FabricAssetLibrary]
+  
+  @scala.inline
+  def FabricDataConnectionLibrary: FabricDataConnectionLibrary = "FabricDataConnectionLibrary".asInstanceOf[FabricDataConnectionLibrary]
+  
+  @scala.inline
+  def FabricDocLibrary: FabricDocLibrary = "FabricDocLibrary".asInstanceOf[FabricDocLibrary]
+  
+  @scala.inline
+  def FabricFolder: FabricFolder = "FabricFolder".asInstanceOf[FabricFolder]
+  
+  @scala.inline
+  def FabricFolderConfirm: FabricFolderConfirm = "FabricFolderConfirm".asInstanceOf[FabricFolderConfirm]
+  
+  @scala.inline
+  def FabricFolderFill: FabricFolderFill = "FabricFolderFill".asInstanceOf[FabricFolderFill]
+  
+  @scala.inline
+  def FabricFolderSearch: FabricFolderSearch = "FabricFolderSearch".asInstanceOf[FabricFolderSearch]
+  
+  @scala.inline
+  def FabricFormLibrary: FabricFormLibrary = "FabricFormLibrary".asInstanceOf[FabricFormLibrary]
+  
+  @scala.inline
+  def FabricFormLibraryMirrored: FabricFormLibraryMirrored = "FabricFormLibraryMirrored".asInstanceOf[FabricFormLibraryMirrored]
+  
+  @scala.inline
+  def FabricMovetoFolder: FabricMovetoFolder = "FabricMovetoFolder".asInstanceOf[FabricMovetoFolder]
+  
+  @scala.inline
+  def FabricNetworkFolder: FabricNetworkFolder = "FabricNetworkFolder".asInstanceOf[FabricNetworkFolder]
+  
+  @scala.inline
+  def FabricNewFolder: FabricNewFolder = "FabricNewFolder".asInstanceOf[FabricNewFolder]
+  
+  @scala.inline
+  def FabricOpenFolderHorizontal: FabricOpenFolderHorizontal = "FabricOpenFolderHorizontal".asInstanceOf[FabricOpenFolderHorizontal]
+  
+  @scala.inline
+  def FabricPictureLibrary: FabricPictureLibrary = "FabricPictureLibrary".asInstanceOf[FabricPictureLibrary]
+  
+  @scala.inline
+  def FabricPublicFolder: FabricPublicFolder = "FabricPublicFolder".asInstanceOf[FabricPublicFolder]
+  
+  @scala.inline
+  def FabricReportLibrary: FabricReportLibrary = "FabricReportLibrary".asInstanceOf[FabricReportLibrary]
+  
+  @scala.inline
+  def FabricReportLibraryMirrored: FabricReportLibraryMirrored = "FabricReportLibraryMirrored".asInstanceOf[FabricReportLibraryMirrored]
+  
+  @scala.inline
+  def FabricSyncFolder: FabricSyncFolder = "FabricSyncFolder".asInstanceOf[FabricSyncFolder]
+  
+  @scala.inline
+  def FabricTextHighlight: FabricTextHighlight = "FabricTextHighlight".asInstanceOf[FabricTextHighlight]
+  
+  @scala.inline
+  def FabricTextHighlightComposite: FabricTextHighlightComposite = "FabricTextHighlightComposite".asInstanceOf[FabricTextHighlightComposite]
+  
+  @scala.inline
+  def FabricUnsyncFolder: FabricUnsyncFolder = "FabricUnsyncFolder".asInstanceOf[FabricUnsyncFolder]
+  
+  @scala.inline
+  def FabricUserFolder: FabricUserFolder = "FabricUserFolder".asInstanceOf[FabricUserFolder]
+  
+  @scala.inline
+  def Family: Family = "Family".asInstanceOf[Family]
+  
+  @scala.inline
+  def FangBody: FangBody = "FangBody".asInstanceOf[FangBody]
+  
+  @scala.inline
+  def FastForward: FastForward = "FastForward".asInstanceOf[FastForward]
+  
+  @scala.inline
+  def FastMode: FastMode = "FastMode".asInstanceOf[FastMode]
+  
+  @scala.inline
+  def Favicon: Favicon = "Favicon".asInstanceOf[Favicon]
+  
+  @scala.inline
+  def FavoriteList: FavoriteList = "FavoriteList".asInstanceOf[FavoriteList]
+  
+  @scala.inline
+  def FavoriteStar: FavoriteStar = "FavoriteStar".asInstanceOf[FavoriteStar]
+  
+  @scala.inline
+  def FavoriteStarFill: FavoriteStarFill = "FavoriteStarFill".asInstanceOf[FavoriteStarFill]
+  
+  @scala.inline
+  def Fax: Fax = "Fax".asInstanceOf[Fax]
+  
+  @scala.inline
+  def Feedback: Feedback = "Feedback".asInstanceOf[Feedback]
+  
+  @scala.inline
+  def FeedbackRequestMirroredSolid: FeedbackRequestMirroredSolid = "FeedbackRequestMirroredSolid".asInstanceOf[FeedbackRequestMirroredSolid]
+  
+  @scala.inline
+  def FeedbackRequestSolid: FeedbackRequestSolid = "FeedbackRequestSolid".asInstanceOf[FeedbackRequestSolid]
+  
+  @scala.inline
+  def FeedbackResponseSolid: FeedbackResponseSolid = "FeedbackResponseSolid".asInstanceOf[FeedbackResponseSolid]
+  
+  @scala.inline
+  def Ferry: Ferry = "Ferry".asInstanceOf[Ferry]
+  
+  @scala.inline
+  def FerrySolid: FerrySolid = "FerrySolid".asInstanceOf[FerrySolid]
+  
+  @scala.inline
+  def FieldChanged: FieldChanged = "FieldChanged".asInstanceOf[FieldChanged]
+  
+  @scala.inline
+  def FieldEmpty: FieldEmpty = "FieldEmpty".asInstanceOf[FieldEmpty]
+  
+  @scala.inline
+  def FieldFilled: FieldFilled = "FieldFilled".asInstanceOf[FieldFilled]
+  
+  @scala.inline
+  def FieldNotChanged: FieldNotChanged = "FieldNotChanged".asInstanceOf[FieldNotChanged]
+  
+  @scala.inline
+  def FieldReadOnly: FieldReadOnly = "FieldReadOnly".asInstanceOf[FieldReadOnly]
+  
+  @scala.inline
+  def FieldRequired: FieldRequired = "FieldRequired".asInstanceOf[FieldRequired]
+  
+  @scala.inline
+  def FileASPX: FileASPX = "FileASPX".asInstanceOf[FileASPX]
+  
+  @scala.inline
+  def FileBug: FileBug = "FileBug".asInstanceOf[FileBug]
+  
+  @scala.inline
+  def FileCSS: FileCSS = "FileCSS".asInstanceOf[FileCSS]
+  
+  @scala.inline
+  def FileCode: FileCode = "FileCode".asInstanceOf[FileCode]
+  
+  @scala.inline
+  def FileComment: FileComment = "FileComment".asInstanceOf[FileComment]
+  
+  @scala.inline
+  def FileHTML: FileHTML = "FileHTML".asInstanceOf[FileHTML]
+  
+  @scala.inline
+  def FileImage: FileImage = "FileImage".asInstanceOf[FileImage]
+  
+  @scala.inline
+  def FileJAVA: FileJAVA = "FileJAVA".asInstanceOf[FileJAVA]
+  
+  @scala.inline
+  def FileLess: FileLess = "FileLess".asInstanceOf[FileLess]
+  
+  @scala.inline
+  def FilePDB: FilePDB = "FilePDB".asInstanceOf[FilePDB]
+  
+  @scala.inline
+  def FileRequest: FileRequest = "FileRequest".asInstanceOf[FileRequest]
+  
+  @scala.inline
+  def FileSQL: FileSQL = "FileSQL".asInstanceOf[FileSQL]
+  
+  @scala.inline
+  def FileSass: FileSass = "FileSass".asInstanceOf[FileSass]
+  
+  @scala.inline
+  def FileSymlink: FileSymlink = "FileSymlink".asInstanceOf[FileSymlink]
+  
+  @scala.inline
+  def FileTemplate: FileTemplate = "FileTemplate".asInstanceOf[FileTemplate]
+  
+  @scala.inline
+  def FileTypeSolution: FileTypeSolution = "FileTypeSolution".asInstanceOf[FileTypeSolution]
+  
+  @scala.inline
+  def FileYML: FileYML = "FileYML".asInstanceOf[FileYML]
+  
+  @scala.inline
+  def Filter: Filter = "Filter".asInstanceOf[Filter]
+  
+  @scala.inline
+  def FilterSettings: FilterSettings = "FilterSettings".asInstanceOf[FilterSettings]
+  
+  @scala.inline
+  def FilterSolid: FilterSolid = "FilterSolid".asInstanceOf[FilterSolid]
+  
+  @scala.inline
+  def Filters: Filters = "Filters".asInstanceOf[Filters]
+  
+  @scala.inline
+  def FiltersSolid: FiltersSolid = "FiltersSolid".asInstanceOf[FiltersSolid]
+  
+  @scala.inline
+  def Financial: Financial = "Financial".asInstanceOf[Financial]
+  
+  @scala.inline
+  def FinancialMirroredSolid: FinancialMirroredSolid = "FinancialMirroredSolid".asInstanceOf[FinancialMirroredSolid]
+  
+  @scala.inline
+  def FinancialSolid: FinancialSolid = "FinancialSolid".asInstanceOf[FinancialSolid]
+  
+  @scala.inline
+  def Fingerprint: Fingerprint = "Fingerprint".asInstanceOf[Fingerprint]
+  
+  @scala.inline
+  def FitPage: FitPage = "FitPage".asInstanceOf[FitPage]
+  
+  @scala.inline
+  def FitWidth: FitWidth = "FitWidth".asInstanceOf[FitWidth]
+  
+  @scala.inline
+  def FiveTileGrid: FiveTileGrid = "FiveTileGrid".asInstanceOf[FiveTileGrid]
+  
+  @scala.inline
+  def Flag: Flag = "Flag".asInstanceOf[Flag]
+  
+  @scala.inline
+  def FlameSolid: FlameSolid = "FlameSolid".asInstanceOf[FlameSolid]
+  
+  @scala.inline
+  def Flashlight: Flashlight = "Flashlight".asInstanceOf[Flashlight]
+  
+  @scala.inline
+  def FlickDown: FlickDown = "FlickDown".asInstanceOf[FlickDown]
+  
+  @scala.inline
+  def FlickLeft: FlickLeft = "FlickLeft".asInstanceOf[FlickLeft]
+  
+  @scala.inline
+  def FlickRight: FlickRight = "FlickRight".asInstanceOf[FlickRight]
+  
+  @scala.inline
+  def FlickUp: FlickUp = "FlickUp".asInstanceOf[FlickUp]
+  
+  @scala.inline
+  def Flow: Flow = "Flow".asInstanceOf[Flow]
+  
+  @scala.inline
+  def FlowChart: FlowChart = "FlowChart".asInstanceOf[FlowChart]
+  
+  @scala.inline
+  def Flower: Flower = "Flower".asInstanceOf[Flower]
+  
+  @scala.inline
+  def FocalPoint: FocalPoint = "FocalPoint".asInstanceOf[FocalPoint]
+  
+  @scala.inline
+  def Focus: Focus = "Focus".asInstanceOf[Focus]
+  
+  @scala.inline
+  def Fog: Fog = "Fog".asInstanceOf[Fog]
+  
+  @scala.inline
+  def Folder: Folder = "Folder".asInstanceOf[Folder]
+  
+  @scala.inline
+  def FolderFill: FolderFill = "FolderFill".asInstanceOf[FolderFill]
+  
+  @scala.inline
+  def FolderHorizontal: FolderHorizontal = "FolderHorizontal".asInstanceOf[FolderHorizontal]
+  
+  @scala.inline
+  def FolderList: FolderList = "FolderList".asInstanceOf[FolderList]
+  
+  @scala.inline
+  def FolderListMirrored: FolderListMirrored = "FolderListMirrored".asInstanceOf[FolderListMirrored]
+  
+  @scala.inline
+  def FolderOpen: FolderOpen = "FolderOpen".asInstanceOf[FolderOpen]
+  
+  @scala.inline
+  def FolderQuery: FolderQuery = "FolderQuery".asInstanceOf[FolderQuery]
+  
+  @scala.inline
+  def FolderSearch: FolderSearch = "FolderSearch".asInstanceOf[FolderSearch]
+  
+  @scala.inline
+  def FollowUser: FollowUser = "FollowUser".asInstanceOf[FollowUser]
+  
+  @scala.inline
+  def Font: Font = "Font".asInstanceOf[Font]
+  
+  @scala.inline
+  def FontColor: FontColor = "FontColor".asInstanceOf[FontColor]
+  
+  @scala.inline
+  def FontColorA: FontColorA = "FontColorA".asInstanceOf[FontColorA]
+  
+  @scala.inline
+  def FontColorSwatch: FontColorSwatch = "FontColorSwatch".asInstanceOf[FontColorSwatch]
+  
+  @scala.inline
+  def FontDecrease: FontDecrease = "FontDecrease".asInstanceOf[FontDecrease]
+  
+  @scala.inline
+  def FontIncrease: FontIncrease = "FontIncrease".asInstanceOf[FontIncrease]
+  
+  @scala.inline
+  def FontSize: FontSize = "FontSize".asInstanceOf[FontSize]
+  
+  @scala.inline
+  def Footer: Footer = "Footer".asInstanceOf[Footer]
+  
+  @scala.inline
+  def FormLibrary: FormLibrary = "FormLibrary".asInstanceOf[FormLibrary]
+  
+  @scala.inline
+  def FormLibraryMirrored: FormLibraryMirrored = "FormLibraryMirrored".asInstanceOf[FormLibraryMirrored]
+  
+  @scala.inline
+  def Forward: Forward = "Forward".asInstanceOf[Forward]
+  
+  @scala.inline
+  def ForwardEvent: ForwardEvent = "ForwardEvent".asInstanceOf[ForwardEvent]
+  
+  @scala.inline
+  def Freezing: Freezing = "Freezing".asInstanceOf[Freezing]
+  
+  @scala.inline
+  def Frigid: Frigid = "Frigid".asInstanceOf[Frigid]
+  
+  @scala.inline
+  def FrontCamera: FrontCamera = "FrontCamera".asInstanceOf[FrontCamera]
+  
+  @scala.inline
+  def FullCircleMask: FullCircleMask = "FullCircleMask".asInstanceOf[FullCircleMask]
+  
+  @scala.inline
+  def FullHistory: FullHistory = "FullHistory".asInstanceOf[FullHistory]
+  
+  @scala.inline
+  def FullScreen: FullScreen = "FullScreen".asInstanceOf[FullScreen]
+  
+  @scala.inline
+  def FullWidth: FullWidth = "FullWidth".asInstanceOf[FullWidth]
+  
+  @scala.inline
+  def FullWidthEdit: FullWidthEdit = "FullWidthEdit".asInstanceOf[FullWidthEdit]
+  
+  @scala.inline
+  def FunctionalManagerDashboard: FunctionalManagerDashboard = "FunctionalManagerDashboard".asInstanceOf[FunctionalManagerDashboard]
+  
+  @scala.inline
+  def FunnelChart: FunnelChart = "FunnelChart".asInstanceOf[FunnelChart]
+  
+  @scala.inline
+  def GIF: GIF = "GIF".asInstanceOf[GIF]
+  
+  @scala.inline
+  def GUID: GUID = "GUID".asInstanceOf[GUID]
+  
+  @scala.inline
+  def GallatinLogo: GallatinLogo = "GallatinLogo".asInstanceOf[GallatinLogo]
+  
+  @scala.inline
+  def Game: Game = "Game".asInstanceOf[Game]
+  
+  @scala.inline
+  def Generate: Generate = "Generate".asInstanceOf[Generate]
+  
+  @scala.inline
+  def GenericScan: GenericScan = "GenericScan".asInstanceOf[GenericScan]
+  
+  @scala.inline
+  def GenericScanFilled: GenericScanFilled = "GenericScanFilled".asInstanceOf[GenericScanFilled]
+  
+  @scala.inline
+  def GiftBoxSolid: GiftBoxSolid = "GiftBoxSolid".asInstanceOf[GiftBoxSolid]
+  
+  @scala.inline
+  def GiftCard: GiftCard = "GiftCard".asInstanceOf[GiftCard]
+  
+  @scala.inline
+  def Giftbox: Giftbox = "Giftbox".asInstanceOf[Giftbox]
+  
+  @scala.inline
+  def GiftboxOpen: GiftboxOpen = "GiftboxOpen".asInstanceOf[GiftboxOpen]
+  
+  @scala.inline
+  def GitGraph: GitGraph = "GitGraph".asInstanceOf[GitGraph]
+  
+  @scala.inline
+  def Glasses: Glasses = "Glasses".asInstanceOf[Glasses]
+  
+  @scala.inline
+  def Glimmer: Glimmer = "Glimmer".asInstanceOf[Glimmer]
+  
+  @scala.inline
+  def GlobalNavButton: GlobalNavButton = "GlobalNavButton".asInstanceOf[GlobalNavButton]
+  
+  @scala.inline
+  def GlobalNavButtonActive: GlobalNavButtonActive = "GlobalNavButtonActive".asInstanceOf[GlobalNavButtonActive]
+  
+  @scala.inline
+  def Globe: Globe = "Globe".asInstanceOf[Globe]
+  
+  @scala.inline
+  def Globe2: Globe2 = "Globe2".asInstanceOf[Globe2]
+  
+  @scala.inline
+  def GlobeFavorite: GlobeFavorite = "GlobeFavorite".asInstanceOf[GlobeFavorite]
+  
+  @scala.inline
+  def Go: Go = "Go".asInstanceOf[Go]
+  
+  @scala.inline
+  def GoMirrored: GoMirrored = "GoMirrored".asInstanceOf[GoMirrored]
+  
+  @scala.inline
+  def GoToDashboard: GoToDashboard = "GoToDashboard".asInstanceOf[GoToDashboard]
+  
+  @scala.inline
+  def Golf: Golf = "Golf".asInstanceOf[Golf]
+  
+  @scala.inline
+  def GotoToday: GotoToday = "GotoToday".asInstanceOf[GotoToday]
+  
+  @scala.inline
+  def GreetingCard: GreetingCard = "GreetingCard".asInstanceOf[GreetingCard]
+  
+  @scala.inline
+  def GridViewLarge: GridViewLarge = "GridViewLarge".asInstanceOf[GridViewLarge]
+  
+  @scala.inline
+  def GridViewMedium: GridViewMedium = "GridViewMedium".asInstanceOf[GridViewMedium]
+  
+  @scala.inline
+  def GridViewSmall: GridViewSmall = "GridViewSmall".asInstanceOf[GridViewSmall]
+  
+  @scala.inline
+  def GripperBarHorizontal: GripperBarHorizontal = "GripperBarHorizontal".asInstanceOf[GripperBarHorizontal]
+  
+  @scala.inline
+  def GripperBarVertical: GripperBarVertical = "GripperBarVertical".asInstanceOf[GripperBarVertical]
+  
+  @scala.inline
+  def GripperDotsVertical: GripperDotsVertical = "GripperDotsVertical".asInstanceOf[GripperDotsVertical]
+  
+  @scala.inline
+  def GripperTool: GripperTool = "GripperTool".asInstanceOf[GripperTool]
+  
+  @scala.inline
+  def Group: Group = "Group".asInstanceOf[Group]
+  
+  @scala.inline
+  def GroupList: GroupList = "GroupList".asInstanceOf[GroupList]
+  
+  @scala.inline
+  def GroupObject: GroupObject = "GroupObject".asInstanceOf[GroupObject]
+  
+  @scala.inline
+  def GroupedAscending: GroupedAscending = "GroupedAscending".asInstanceOf[GroupedAscending]
+  
+  @scala.inline
+  def GroupedDescending: GroupedDescending = "GroupedDescending".asInstanceOf[GroupedDescending]
+  
+  @scala.inline
+  def GroupedList: GroupedList = "GroupedList".asInstanceOf[GroupedList]
+  
+  @scala.inline
+  def Guitar: Guitar = "Guitar".asInstanceOf[Guitar]
+  
+  @scala.inline
+  def HailDay: HailDay = "HailDay".asInstanceOf[HailDay]
+  
+  @scala.inline
+  def HailNight: HailNight = "HailNight".asInstanceOf[HailNight]
+  
+  @scala.inline
+  def HalfAlpha: HalfAlpha = "HalfAlpha".asInstanceOf[HalfAlpha]
+  
+  @scala.inline
+  def HalfCircle: HalfCircle = "HalfCircle".asInstanceOf[HalfCircle]
+  
+  @scala.inline
+  def HandsFree: HandsFree = "HandsFree".asInstanceOf[HandsFree]
+  
+  @scala.inline
+  def Handwriting: Handwriting = "Handwriting".asInstanceOf[Handwriting]
+  
+  @scala.inline
+  def HardDrive: HardDrive = "HardDrive".asInstanceOf[HardDrive]
+  
+  @scala.inline
+  def HardDriveGroup: HardDriveGroup = "HardDriveGroup".asInstanceOf[HardDriveGroup]
+  
+  @scala.inline
+  def HardDriveLock: HardDriveLock = "HardDriveLock".asInstanceOf[HardDriveLock]
+  
+  @scala.inline
+  def HardDriveUnlock: HardDriveUnlock = "HardDriveUnlock".asInstanceOf[HardDriveUnlock]
+  
+  @scala.inline
+  def Header: Header = "Header".asInstanceOf[Header]
+  
+  @scala.inline
+  def Header1: Header1 = "Header1".asInstanceOf[Header1]
+  
+  @scala.inline
+  def Header2: Header2 = "Header2".asInstanceOf[Header2]
+  
+  @scala.inline
+  def Header3: Header3 = "Header3".asInstanceOf[Header3]
+  
+  @scala.inline
+  def Header4: Header4 = "Header4".asInstanceOf[Header4]
+  
+  @scala.inline
+  def Headset: Headset = "Headset".asInstanceOf[Headset]
+  
+  @scala.inline
+  def HeadsetSolid: HeadsetSolid = "HeadsetSolid".asInstanceOf[HeadsetSolid]
+  
+  @scala.inline
+  def Health: Health = "Health".asInstanceOf[Health]
+  
+  @scala.inline
+  def HealthSolid: HealthSolid = "HealthSolid".asInstanceOf[HealthSolid]
+  
+  @scala.inline
+  def Heart: Heart = "Heart".asInstanceOf[Heart]
+  
+  @scala.inline
+  def HeartBroken: HeartBroken = "HeartBroken".asInstanceOf[HeartBroken]
+  
+  @scala.inline
+  def HeartFill: HeartFill = "HeartFill".asInstanceOf[HeartFill]
+  
+  @scala.inline
+  def Help: Help = "Help".asInstanceOf[Help]
+  
+  @scala.inline
+  def HelpMirrored: HelpMirrored = "HelpMirrored".asInstanceOf[HelpMirrored]
+  
+  @scala.inline
+  def Hexagon: Hexagon = "Hexagon".asInstanceOf[Hexagon]
+  
+  @scala.inline
+  def Hide: Hide = "Hide".asInstanceOf[Hide]
+  
+  @scala.inline
+  def Hide2: Hide2 = "Hide2".asInstanceOf[Hide2]
+  
+  @scala.inline
+  def Hide3: Hide3 = "Hide3".asInstanceOf[Hide3]
+  
+  @scala.inline
+  def Highlight: Highlight = "Highlight".asInstanceOf[Highlight]
+  
+  @scala.inline
+  def HighlightMappedShapes: HighlightMappedShapes = "HighlightMappedShapes".asInstanceOf[HighlightMappedShapes]
+  
+  @scala.inline
+  def HintText: HintText = "HintText".asInstanceOf[HintText]
+  
+  @scala.inline
+  def HistoricalWeather: HistoricalWeather = "HistoricalWeather".asInstanceOf[HistoricalWeather]
+  
+  @scala.inline
+  def History: History = "History".asInstanceOf[History]
+  
+  @scala.inline
+  def Home: Home = "Home".asInstanceOf[Home]
+  
+  @scala.inline
+  def HomeGroup: HomeGroup = "HomeGroup".asInstanceOf[HomeGroup]
+  
+  @scala.inline
+  def HomeSolid: HomeSolid = "HomeSolid".asInstanceOf[HomeSolid]
+  
+  @scala.inline
+  def HomeVerify: HomeVerify = "HomeVerify".asInstanceOf[HomeVerify]
+  
+  @scala.inline
+  def HorizontalDistributeCenter: HorizontalDistributeCenter = "HorizontalDistributeCenter".asInstanceOf[HorizontalDistributeCenter]
+  
+  @scala.inline
+  def HorizontalTabKey: HorizontalTabKey = "HorizontalTabKey".asInstanceOf[HorizontalTabKey]
+  
+  @scala.inline
+  def Hospital: Hospital = "Hospital".asInstanceOf[Hospital]
+  
+  @scala.inline
+  def Hotel: Hotel = "Hotel".asInstanceOf[Hotel]
+  
+  @scala.inline
+  def HourGlass: HourGlass = "HourGlass".asInstanceOf[HourGlass]
+  
+  @scala.inline
+  def IDBadge: IDBadge = "IDBadge".asInstanceOf[IDBadge]
+  
+  @scala.inline
+  def IRMForward: IRMForward = "IRMForward".asInstanceOf[IRMForward]
+  
+  @scala.inline
+  def IRMForwardMirrored: IRMForwardMirrored = "IRMForwardMirrored".asInstanceOf[IRMForwardMirrored]
+  
+  @scala.inline
+  def IRMReply: IRMReply = "IRMReply".asInstanceOf[IRMReply]
+  
+  @scala.inline
+  def IRMReplyMirrored: IRMReplyMirrored = "IRMReplyMirrored".asInstanceOf[IRMReplyMirrored]
+  
+  @scala.inline
+  def IconSetsFlag: IconSetsFlag = "IconSetsFlag".asInstanceOf[IconSetsFlag]
+  
+  @scala.inline
+  def ImageCrosshair: ImageCrosshair = "ImageCrosshair".asInstanceOf[ImageCrosshair]
+  
+  @scala.inline
+  def ImageDiff: ImageDiff = "ImageDiff".asInstanceOf[ImageDiff]
+  
+  @scala.inline
+  def ImagePixel: ImagePixel = "ImagePixel".asInstanceOf[ImagePixel]
+  
+  @scala.inline
+  def ImageSearch: ImageSearch = "ImageSearch".asInstanceOf[ImageSearch]
+  
+  @scala.inline
+  def Import: Import = "Import".asInstanceOf[Import]
+  
+  @scala.inline
+  def ImportAllMirrored: ImportAllMirrored = "ImportAllMirrored".asInstanceOf[ImportAllMirrored]
+  
+  @scala.inline
+  def ImportMirrored: ImportMirrored = "ImportMirrored".asInstanceOf[ImportMirrored]
+  
+  @scala.inline
+  def Important: Important = "Important".asInstanceOf[Important]
+  
+  @scala.inline
+  def Inbox: Inbox = "Inbox".asInstanceOf[Inbox]
+  
+  @scala.inline
+  def InboxCheck: InboxCheck = "InboxCheck".asInstanceOf[InboxCheck]
+  
+  @scala.inline
+  def IncidentTriangle: IncidentTriangle = "IncidentTriangle".asInstanceOf[IncidentTriangle]
+  
+  @scala.inline
+  def IncomingCall: IncomingCall = "IncomingCall".asInstanceOf[IncomingCall]
+  
+  @scala.inline
+  def IncreaseIndentArrow: IncreaseIndentArrow = "IncreaseIndentArrow".asInstanceOf[IncreaseIndentArrow]
+  
+  @scala.inline
+  def IncreaseIndentArrowMirrored: IncreaseIndentArrowMirrored = "IncreaseIndentArrowMirrored".asInstanceOf[IncreaseIndentArrowMirrored]
+  
+  @scala.inline
+  def IncreaseIndentLegacy: IncreaseIndentLegacy = "IncreaseIndentLegacy".asInstanceOf[IncreaseIndentLegacy]
+  
+  @scala.inline
+  def IncreaseIndentText: IncreaseIndentText = "IncreaseIndentText".asInstanceOf[IncreaseIndentText]
+  
+  @scala.inline
+  def IncreaseIndentTextMirrored: IncreaseIndentTextMirrored = "IncreaseIndentTextMirrored".asInstanceOf[IncreaseIndentTextMirrored]
+  
+  @scala.inline
+  def Info: Info = "Info".asInstanceOf[Info]
+  
+  @scala.inline
+  def Info2: Info2 = "Info2".asInstanceOf[Info2]
+  
+  @scala.inline
+  def InfoSolid: InfoSolid = "InfoSolid".asInstanceOf[InfoSolid]
+  
+  @scala.inline
+  def InformationBarriers: InformationBarriers = "InformationBarriers".asInstanceOf[InformationBarriers]
+  
+  @scala.inline
+  def InkingTool: InkingTool = "InkingTool".asInstanceOf[InkingTool]
+  
+  @scala.inline
+  def Insert: Insert = "Insert".asInstanceOf[Insert]
+  
+  @scala.inline
+  def InsertColumnsLeft: InsertColumnsLeft = "InsertColumnsLeft".asInstanceOf[InsertColumnsLeft]
+  
+  @scala.inline
+  def InsertColumnsRight: InsertColumnsRight = "InsertColumnsRight".asInstanceOf[InsertColumnsRight]
+  
+  @scala.inline
+  def InsertRowsAbove: InsertRowsAbove = "InsertRowsAbove".asInstanceOf[InsertRowsAbove]
+  
+  @scala.inline
+  def InsertRowsBelow: InsertRowsBelow = "InsertRowsBelow".asInstanceOf[InsertRowsBelow]
+  
+  @scala.inline
+  def InsertSignatureLine: InsertSignatureLine = "InsertSignatureLine".asInstanceOf[InsertSignatureLine]
+  
+  @scala.inline
+  def InsertTextBox: InsertTextBox = "InsertTextBox".asInstanceOf[InsertTextBox]
+  
+  @scala.inline
+  def InstallToDrive: InstallToDrive = "InstallToDrive".asInstanceOf[InstallToDrive]
+  
+  @scala.inline
+  def Installation: Installation = "Installation".asInstanceOf[Installation]
+  
+  @scala.inline
+  def InternalInvestigation: InternalInvestigation = "InternalInvestigation".asInstanceOf[InternalInvestigation]
+  
+  @scala.inline
+  def InternetSharing: InternetSharing = "InternetSharing".asInstanceOf[InternetSharing]
+  
+  @scala.inline
+  def IssueSolid: IssueSolid = "IssueSolid".asInstanceOf[IssueSolid]
+  
+  @scala.inline
+  def IssueTracking: IssueTracking = "IssueTracking".asInstanceOf[IssueTracking]
+  
+  @scala.inline
+  def IssueTrackingMirrored: IssueTrackingMirrored = "IssueTrackingMirrored".asInstanceOf[IssueTrackingMirrored]
+  
+  @scala.inline
+  def Italic: Italic = "Italic".asInstanceOf[Italic]
+  
+  @scala.inline
+  def JS: JS = "JS".asInstanceOf[JS]
+  
+  @scala.inline
+  def JavaScriptLanguage: JavaScriptLanguage = "JavaScriptLanguage".asInstanceOf[JavaScriptLanguage]
+  
+  @scala.inline
+  def JoinOnlineMeeting: JoinOnlineMeeting = "JoinOnlineMeeting".asInstanceOf[JoinOnlineMeeting]
+  
+  @scala.inline
+  def KaizalaLogo: KaizalaLogo = "KaizalaLogo".asInstanceOf[KaizalaLogo]
+  
+  @scala.inline
+  def KeyboardClassic: KeyboardClassic = "KeyboardClassic".asInstanceOf[KeyboardClassic]
+  
+  @scala.inline
+  def KnowledgeArticle: KnowledgeArticle = "KnowledgeArticle".asInstanceOf[KnowledgeArticle]
+  
+  @scala.inline
+  def Label: Label = "Label".asInstanceOf[Label]
+  
+  @scala.inline
+  def LadybugSolid: LadybugSolid = "LadybugSolid".asInstanceOf[LadybugSolid]
+  
+  @scala.inline
+  def Lamp: Lamp = "Lamp".asInstanceOf[Lamp]
+  
+  @scala.inline
+  def LandscapeOrientation: LandscapeOrientation = "LandscapeOrientation".asInstanceOf[LandscapeOrientation]
+  
+  @scala.inline
+  def LaptopSecure: LaptopSecure = "LaptopSecure".asInstanceOf[LaptopSecure]
+  
+  @scala.inline
+  def LaptopSelected: LaptopSelected = "LaptopSelected".asInstanceOf[LaptopSelected]
+  
+  @scala.inline
+  def LargeGrid: LargeGrid = "LargeGrid".asInstanceOf[LargeGrid]
+  
+  @scala.inline
+  def Leave: Leave = "Leave".asInstanceOf[Leave]
+  
+  @scala.inline
+  def Library: Library = "Library".asInstanceOf[Library]
+  
+  @scala.inline
+  def Lifesaver: Lifesaver = "Lifesaver".asInstanceOf[Lifesaver]
+  
+  @scala.inline
+  def LifesaverLock: LifesaverLock = "LifesaverLock".asInstanceOf[LifesaverLock]
+  
+  @scala.inline
+  def Light: Light = "Light".asInstanceOf[Light]
+  
+  @scala.inline
+  def LightWeight: LightWeight = "LightWeight".asInstanceOf[LightWeight]
+  
+  @scala.inline
+  def Lightbulb: Lightbulb = "Lightbulb".asInstanceOf[Lightbulb]
+  
+  @scala.inline
+  def LightningBolt: LightningBolt = "LightningBolt".asInstanceOf[LightningBolt]
+  
+  @scala.inline
+  def Like: Like = "Like".asInstanceOf[Like]
+  
+  @scala.inline
+  def LikeSolid: LikeSolid = "LikeSolid".asInstanceOf[LikeSolid]
+  
+  @scala.inline
+  def Line: Line = "Line".asInstanceOf[Line]
+  
+  @scala.inline
+  def LineChart: LineChart = "LineChart".asInstanceOf[LineChart]
+  
+  @scala.inline
+  def LineSpacing: LineSpacing = "LineSpacing".asInstanceOf[LineSpacing]
+  
+  @scala.inline
+  def LineStyle: LineStyle = "LineStyle".asInstanceOf[LineStyle]
+  
+  @scala.inline
+  def LineThickness: LineThickness = "LineThickness".asInstanceOf[LineThickness]
+  
+  @scala.inline
+  def Link: Link = "Link".asInstanceOf[Link]
+  
+  @scala.inline
+  def Link12: Link12 = "Link12".asInstanceOf[Link12]
+  
+  @scala.inline
+  def LinkedDatabase: LinkedDatabase = "LinkedDatabase".asInstanceOf[LinkedDatabase]
+  
+  @scala.inline
+  def LinkedInLogo: LinkedInLogo = "LinkedInLogo".asInstanceOf[LinkedInLogo]
+  
+  @scala.inline
+  def List: List = "List".asInstanceOf[List]
+  
+  @scala.inline
+  def ListMirrored: ListMirrored = "ListMirrored".asInstanceOf[ListMirrored]
+  
+  @scala.inline
+  def LocaleLanguage: LocaleLanguage = "LocaleLanguage".asInstanceOf[LocaleLanguage]
+  
+  @scala.inline
+  def Location: Location = "Location".asInstanceOf[Location]
+  
+  @scala.inline
+  def LocationCircle: LocationCircle = "LocationCircle".asInstanceOf[LocationCircle]
+  
+  @scala.inline
+  def LocationDot: LocationDot = "LocationDot".asInstanceOf[LocationDot]
+  
+  @scala.inline
+  def LocationFill: LocationFill = "LocationFill".asInstanceOf[LocationFill]
+  
+  @scala.inline
+  def LocationOutline: LocationOutline = "LocationOutline".asInstanceOf[LocationOutline]
+  
+  @scala.inline
+  def Lock: Lock = "Lock".asInstanceOf[Lock]
+  
+  @scala.inline
+  def Lock12: Lock12 = "Lock12".asInstanceOf[Lock12]
+  
+  @scala.inline
+  def LockSolid: LockSolid = "LockSolid".asInstanceOf[LockSolid]
+  
+  @scala.inline
+  def LogRemove: LogRemove = "LogRemove".asInstanceOf[LogRemove]
+  
+  @scala.inline
+  def LookupEntities: LookupEntities = "LookupEntities".asInstanceOf[LookupEntities]
+  
+  @scala.inline
+  def LowerBrightness: LowerBrightness = "LowerBrightness".asInstanceOf[LowerBrightness]
+  
+  @scala.inline
+  def LyncLogo: LyncLogo = "LyncLogo".asInstanceOf[LyncLogo]
+  
+  @scala.inline
+  def M365InvoicingLogo: M365InvoicingLogo = "M365InvoicingLogo".asInstanceOf[M365InvoicingLogo]
+  
+  @scala.inline
+  def MSNLogo: MSNLogo = "MSNLogo".asInstanceOf[MSNLogo]
+  
+  @scala.inline
+  def MSNVideos: MSNVideos = "MSNVideos".asInstanceOf[MSNVideos]
+  
+  @scala.inline
+  def MSNVideosSolid: MSNVideosSolid = "MSNVideosSolid".asInstanceOf[MSNVideosSolid]
+  
+  @scala.inline
+  def Mail: Mail = "Mail".asInstanceOf[Mail]
+  
+  @scala.inline
+  def MailAlert: MailAlert = "MailAlert".asInstanceOf[MailAlert]
+  
+  @scala.inline
+  def MailAttached: MailAttached = "MailAttached".asInstanceOf[MailAttached]
+  
+  @scala.inline
+  def MailCheck: MailCheck = "MailCheck".asInstanceOf[MailCheck]
+  
+  @scala.inline
+  def MailFill: MailFill = "MailFill".asInstanceOf[MailFill]
+  
+  @scala.inline
+  def MailForward: MailForward = "MailForward".asInstanceOf[MailForward]
+  
+  @scala.inline
+  def MailForwardMirrored: MailForwardMirrored = "MailForwardMirrored".asInstanceOf[MailForwardMirrored]
+  
+  @scala.inline
+  def MailLowImportance: MailLowImportance = "MailLowImportance".asInstanceOf[MailLowImportance]
+  
+  @scala.inline
+  def MailOptions: MailOptions = "MailOptions".asInstanceOf[MailOptions]
+  
+  @scala.inline
+  def MailPause: MailPause = "MailPause".asInstanceOf[MailPause]
+  
+  @scala.inline
+  def MailReminder: MailReminder = "MailReminder".asInstanceOf[MailReminder]
+  
+  @scala.inline
+  def MailRepeat: MailRepeat = "MailRepeat".asInstanceOf[MailRepeat]
+  
+  @scala.inline
+  def MailReply: MailReply = "MailReply".asInstanceOf[MailReply]
+  
+  @scala.inline
+  def MailReplyAll: MailReplyAll = "MailReplyAll".asInstanceOf[MailReplyAll]
+  
+  @scala.inline
+  def MailReplyAllMirrored: MailReplyAllMirrored = "MailReplyAllMirrored".asInstanceOf[MailReplyAllMirrored]
+  
+  @scala.inline
+  def MailReplyMirrored: MailReplyMirrored = "MailReplyMirrored".asInstanceOf[MailReplyMirrored]
+  
+  @scala.inline
+  def MailSchedule: MailSchedule = "MailSchedule".asInstanceOf[MailSchedule]
+  
+  @scala.inline
+  def MailSolid: MailSolid = "MailSolid".asInstanceOf[MailSolid]
+  
+  @scala.inline
+  def MailTentative: MailTentative = "MailTentative".asInstanceOf[MailTentative]
+  
+  @scala.inline
+  def MailTentativeMirrored: MailTentativeMirrored = "MailTentativeMirrored".asInstanceOf[MailTentativeMirrored]
+  
+  @scala.inline
+  def MailUndelivered: MailUndelivered = "MailUndelivered".asInstanceOf[MailUndelivered]
+  
+  @scala.inline
+  def ManagerSelfService: ManagerSelfService = "ManagerSelfService".asInstanceOf[ManagerSelfService]
+  
+  @scala.inline
+  def Manufacturing: Manufacturing = "Manufacturing".asInstanceOf[Manufacturing]
+  
+  @scala.inline
+  def MapDirections: MapDirections = "MapDirections".asInstanceOf[MapDirections]
+  
+  @scala.inline
+  def MapLayers: MapLayers = "MapLayers".asInstanceOf[MapLayers]
+  
+  @scala.inline
+  def MapPin: MapPin = "MapPin".asInstanceOf[MapPin]
+  
+  @scala.inline
+  def MapPinSolid: MapPinSolid = "MapPinSolid".asInstanceOf[MapPinSolid]
+  
+  @scala.inline
+  def MarkAsProtected: MarkAsProtected = "MarkAsProtected".asInstanceOf[MarkAsProtected]
+  
+  @scala.inline
+  def MarkDownLanguage: MarkDownLanguage = "MarkDownLanguage".asInstanceOf[MarkDownLanguage]
+  
+  @scala.inline
+  def Market: Market = "Market".asInstanceOf[Market]
+  
+  @scala.inline
+  def MarketDown: MarketDown = "MarketDown".asInstanceOf[MarketDown]
+  
+  @scala.inline
+  def MasterDatabase: MasterDatabase = "MasterDatabase".asInstanceOf[MasterDatabase]
+  
+  @scala.inline
+  def MaximumValue: MaximumValue = "MaximumValue".asInstanceOf[MaximumValue]
+  
+  @scala.inline
+  def Medal: Medal = "Medal".asInstanceOf[Medal]
+  
+  @scala.inline
+  def MedalSolid: MedalSolid = "MedalSolid".asInstanceOf[MedalSolid]
+  
+  @scala.inline
+  def Media: Media = "Media".asInstanceOf[Media]
+  
+  @scala.inline
+  def MediaAdd: MediaAdd = "MediaAdd".asInstanceOf[MediaAdd]
+  
+  @scala.inline
+  def Medical: Medical = "Medical".asInstanceOf[Medical]
+  
+  @scala.inline
+  def Megaphone: Megaphone = "Megaphone".asInstanceOf[Megaphone]
+  
+  @scala.inline
+  def MegaphoneSolid: MegaphoneSolid = "MegaphoneSolid".asInstanceOf[MegaphoneSolid]
+  
+  @scala.inline
+  def Memo: Memo = "Memo".asInstanceOf[Memo]
+  
+  @scala.inline
+  def Merge: Merge = "Merge".asInstanceOf[Merge]
+  
+  @scala.inline
+  def MergeDuplicate: MergeDuplicate = "MergeDuplicate".asInstanceOf[MergeDuplicate]
+  
+  @scala.inline
+  def Message: Message = "Message".asInstanceOf[Message]
+  
+  @scala.inline
+  def MessageFill: MessageFill = "MessageFill".asInstanceOf[MessageFill]
+  
+  @scala.inline
+  def MicOff: MicOff = "MicOff".asInstanceOf[MicOff]
+  
+  @scala.inline
+  def MicOff2: MicOff2 = "MicOff2".asInstanceOf[MicOff2]
+  
+  @scala.inline
+  def Microphone: Microphone = "Microphone".asInstanceOf[Microphone]
+  
+  @scala.inline
+  def MicrosoftFlowLogo: MicrosoftFlowLogo = "MicrosoftFlowLogo".asInstanceOf[MicrosoftFlowLogo]
+  
+  @scala.inline
+  def MicrosoftStaffhubLogo: MicrosoftStaffhubLogo = "MicrosoftStaffhubLogo".asInstanceOf[MicrosoftStaffhubLogo]
+  
+  @scala.inline
+  def MicrosoftTranslatorLogo: MicrosoftTranslatorLogo = "MicrosoftTranslatorLogo".asInstanceOf[MicrosoftTranslatorLogo]
+  
+  @scala.inline
+  def MicrosoftTranslatorLogoBlue: MicrosoftTranslatorLogoBlue = "MicrosoftTranslatorLogoBlue".asInstanceOf[MicrosoftTranslatorLogoBlue]
+  
+  @scala.inline
+  def MicrosoftTranslatorLogoGreen: MicrosoftTranslatorLogoGreen = "MicrosoftTranslatorLogoGreen".asInstanceOf[MicrosoftTranslatorLogoGreen]
+  
+  @scala.inline
+  def MiniContract: MiniContract = "MiniContract".asInstanceOf[MiniContract]
+  
+  @scala.inline
+  def MiniContractMirrored: MiniContractMirrored = "MiniContractMirrored".asInstanceOf[MiniContractMirrored]
+  
+  @scala.inline
+  def MiniExpand: MiniExpand = "MiniExpand".asInstanceOf[MiniExpand]
+  
+  @scala.inline
+  def MiniExpandMirrored: MiniExpandMirrored = "MiniExpandMirrored".asInstanceOf[MiniExpandMirrored]
+  
+  @scala.inline
+  def MiniLink: MiniLink = "MiniLink".asInstanceOf[MiniLink]
+  
+  @scala.inline
+  def MinimumValue: MinimumValue = "MinimumValue".asInstanceOf[MinimumValue]
+  
+  @scala.inline
+  def MobileReport: MobileReport = "MobileReport".asInstanceOf[MobileReport]
+  
+  @scala.inline
+  def MobileSelected: MobileSelected = "MobileSelected".asInstanceOf[MobileSelected]
+  
+  @scala.inline
+  def ModelingView: ModelingView = "ModelingView".asInstanceOf[ModelingView]
+  
+  @scala.inline
+  def Money: Money = "Money".asInstanceOf[Money]
+  
+  @scala.inline
+  def More: More = "More".asInstanceOf[More]
+  
+  @scala.inline
+  def MoreSports: MoreSports = "MoreSports".asInstanceOf[MoreSports]
+  
+  @scala.inline
+  def MoreVertical: MoreVertical = "MoreVertical".asInstanceOf[MoreVertical]
+  
+  @scala.inline
+  def MountainClimbing: MountainClimbing = "MountainClimbing".asInstanceOf[MountainClimbing]
+  
+  @scala.inline
+  def Move: Move = "Move".asInstanceOf[Move]
+  
+  @scala.inline
+  def MoveToFolder: MoveToFolder = "MoveToFolder".asInstanceOf[MoveToFolder]
+  
+  @scala.inline
+  def Movers: Movers = "Movers".asInstanceOf[Movers]
+  
+  @scala.inline
+  def MultiSelect: MultiSelect = "MultiSelect".asInstanceOf[MultiSelect]
+  
+  @scala.inline
+  def MultiSelectMirrored: MultiSelectMirrored = "MultiSelectMirrored".asInstanceOf[MultiSelectMirrored]
+  
+  @scala.inline
+  def MusicInCollection: MusicInCollection = "MusicInCollection".asInstanceOf[MusicInCollection]
+  
+  @scala.inline
+  def MusicInCollectionFill: MusicInCollectionFill = "MusicInCollectionFill".asInstanceOf[MusicInCollectionFill]
+  
+  @scala.inline
+  def MusicNote: MusicNote = "MusicNote".asInstanceOf[MusicNote]
+  
+  @scala.inline
+  def MuteChat: MuteChat = "MuteChat".asInstanceOf[MuteChat]
+  
+  @scala.inline
+  def MyMoviesTV: MyMoviesTV = "MyMoviesTV".asInstanceOf[MyMoviesTV]
+  
+  @scala.inline
+  def Nav2DMapView: Nav2DMapView = "Nav2DMapView".asInstanceOf[Nav2DMapView]
+  
+  @scala.inline
+  def NavigateBack: NavigateBack = "NavigateBack".asInstanceOf[NavigateBack]
+  
+  @scala.inline
+  def NavigateBackMirrored: NavigateBackMirrored = "NavigateBackMirrored".asInstanceOf[NavigateBackMirrored]
+  
+  @scala.inline
+  def NavigateExternalInline: NavigateExternalInline = "NavigateExternalInline".asInstanceOf[NavigateExternalInline]
+  
+  @scala.inline
+  def NavigateForward: NavigateForward = "NavigateForward".asInstanceOf[NavigateForward]
+  
+  @scala.inline
+  def NavigateForwardMirrored: NavigateForwardMirrored = "NavigateForwardMirrored".asInstanceOf[NavigateForwardMirrored]
+  
+  @scala.inline
+  def NavigationFlipper: NavigationFlipper = "NavigationFlipper".asInstanceOf[NavigationFlipper]
+  
+  @scala.inline
+  def NetworkTower: NetworkTower = "NetworkTower".asInstanceOf[NetworkTower]
+  
+  @scala.inline
+  def NewAnalyticsQuery: NewAnalyticsQuery = "NewAnalyticsQuery".asInstanceOf[NewAnalyticsQuery]
+  
+  @scala.inline
+  def NewFolder: NewFolder = "NewFolder".asInstanceOf[NewFolder]
+  
+  @scala.inline
+  def NewMail: NewMail = "NewMail".asInstanceOf[NewMail]
+  
+  @scala.inline
+  def NewTeamProject: NewTeamProject = "NewTeamProject".asInstanceOf[NewTeamProject]
+  
+  @scala.inline
+  def News: News = "News".asInstanceOf[News]
+  
+  @scala.inline
+  def NewsSearch: NewsSearch = "NewsSearch".asInstanceOf[NewsSearch]
+  
+  @scala.inline
+  def Next: Next = "Next".asInstanceOf[Next]
+  
+  @scala.inline
+  def NormalWeight: NormalWeight = "NormalWeight".asInstanceOf[NormalWeight]
+  
+  @scala.inline
+  def NotExecuted: NotExecuted = "NotExecuted".asInstanceOf[NotExecuted]
+  
+  @scala.inline
+  def NotImpactedSolid: NotImpactedSolid = "NotImpactedSolid".asInstanceOf[NotImpactedSolid]
+  
+  @scala.inline
+  def NoteForward: NoteForward = "NoteForward".asInstanceOf[NoteForward]
+  
+  @scala.inline
+  def NotePinned: NotePinned = "NotePinned".asInstanceOf[NotePinned]
+  
+  @scala.inline
+  def NoteReply: NoteReply = "NoteReply".asInstanceOf[NoteReply]
+  
+  @scala.inline
+  def NugetLogo: NugetLogo = "NugetLogo".asInstanceOf[NugetLogo]
+  
+  @scala.inline
+  def NumberField: NumberField = "NumberField".asInstanceOf[NumberField]
+  
+  @scala.inline
+  def NumberSequence: NumberSequence = "NumberSequence".asInstanceOf[NumberSequence]
+  
+  @scala.inline
+  def NumberSymbol: NumberSymbol = "NumberSymbol".asInstanceOf[NumberSymbol]
+  
+  @scala.inline
+  def NumberedList: NumberedList = "NumberedList".asInstanceOf[NumberedList]
+  
+  @scala.inline
+  def NumberedListNumber: NumberedListNumber = "NumberedListNumber".asInstanceOf[NumberedListNumber]
+  
+  @scala.inline
+  def NumberedListNumberMirrored: NumberedListNumberMirrored = "NumberedListNumberMirrored".asInstanceOf[NumberedListNumberMirrored]
+  
+  @scala.inline
+  def NumberedListText: NumberedListText = "NumberedListText".asInstanceOf[NumberedListText]
+  
+  @scala.inline
+  def NumberedListTextMirrored: NumberedListTextMirrored = "NumberedListTextMirrored".asInstanceOf[NumberedListTextMirrored]
+  
+  @scala.inline
+  def OEM: OEM = "OEM".asInstanceOf[OEM]
+  
+  @scala.inline
+  def Octagon: Octagon = "Octagon".asInstanceOf[Octagon]
+  
+  @scala.inline
+  def OfficeAddinsLogo: OfficeAddinsLogo = "OfficeAddinsLogo".asInstanceOf[OfficeAddinsLogo]
+  
+  @scala.inline
+  def OfficeAssistantLogo: OfficeAssistantLogo = "OfficeAssistantLogo".asInstanceOf[OfficeAssistantLogo]
+  
+  @scala.inline
+  def OfficeChat: OfficeChat = "OfficeChat".asInstanceOf[OfficeChat]
+  
+  @scala.inline
+  def OfficeChatSolid: OfficeChatSolid = "OfficeChatSolid".asInstanceOf[OfficeChatSolid]
+  
+  @scala.inline
+  def OfficeFormsLogo: OfficeFormsLogo = "OfficeFormsLogo".asInstanceOf[OfficeFormsLogo]
+  
+  @scala.inline
+  def OfficeFormsLogo16: OfficeFormsLogo16 = "OfficeFormsLogo16".asInstanceOf[OfficeFormsLogo16]
+  
+  @scala.inline
+  def OfficeFormsLogo24: OfficeFormsLogo24 = "OfficeFormsLogo24".asInstanceOf[OfficeFormsLogo24]
+  
+  @scala.inline
+  def OfficeFormsLogoFill: OfficeFormsLogoFill = "OfficeFormsLogoFill".asInstanceOf[OfficeFormsLogoFill]
+  
+  @scala.inline
+  def OfficeFormsLogoFill16: OfficeFormsLogoFill16 = "OfficeFormsLogoFill16".asInstanceOf[OfficeFormsLogoFill16]
+  
+  @scala.inline
+  def OfficeFormsLogoFill24: OfficeFormsLogoFill24 = "OfficeFormsLogoFill24".asInstanceOf[OfficeFormsLogoFill24]
+  
+  @scala.inline
+  def OfficeFormsLogoInverse: OfficeFormsLogoInverse = "OfficeFormsLogoInverse".asInstanceOf[OfficeFormsLogoInverse]
+  
+  @scala.inline
+  def OfficeFormsLogoInverse16: OfficeFormsLogoInverse16 = "OfficeFormsLogoInverse16".asInstanceOf[OfficeFormsLogoInverse16]
+  
+  @scala.inline
+  def OfficeFormsLogoInverse24: OfficeFormsLogoInverse24 = "OfficeFormsLogoInverse24".asInstanceOf[OfficeFormsLogoInverse24]
+  
+  @scala.inline
+  def OfficeLogo: OfficeLogo = "OfficeLogo".asInstanceOf[OfficeLogo]
+  
+  @scala.inline
+  def OfficeStoreLogo: OfficeStoreLogo = "OfficeStoreLogo".asInstanceOf[OfficeStoreLogo]
+  
+  @scala.inline
+  def OfficeVideoLogo: OfficeVideoLogo = "OfficeVideoLogo".asInstanceOf[OfficeVideoLogo]
+  
+  @scala.inline
+  def OfficeVideoLogoFill: OfficeVideoLogoFill = "OfficeVideoLogoFill".asInstanceOf[OfficeVideoLogoFill]
+  
+  @scala.inline
+  def OfficeVideoLogoInverse: OfficeVideoLogoInverse = "OfficeVideoLogoInverse".asInstanceOf[OfficeVideoLogoInverse]
+  
+  @scala.inline
+  def OfflineOneDriveParachute: OfflineOneDriveParachute = "OfflineOneDriveParachute".asInstanceOf[OfflineOneDriveParachute]
+  
+  @scala.inline
+  def OfflineOneDriveParachuteDisabled: OfflineOneDriveParachuteDisabled = "OfflineOneDriveParachuteDisabled".asInstanceOf[OfflineOneDriveParachuteDisabled]
+  
+  @scala.inline
+  def OfflineStorage: OfflineStorage = "OfflineStorage".asInstanceOf[OfflineStorage]
+  
+  @scala.inline
+  def OfflineStorageSolid: OfflineStorageSolid = "OfflineStorageSolid".asInstanceOf[OfflineStorageSolid]
+  
+  @scala.inline
+  def Onboarding: Onboarding = "Onboarding".asInstanceOf[Onboarding]
+  
+  @scala.inline
+  def OneDriveAdd: OneDriveAdd = "OneDriveAdd".asInstanceOf[OneDriveAdd]
+  
+  @scala.inline
+  def OneDriveFolder16: OneDriveFolder16 = "OneDriveFolder16".asInstanceOf[OneDriveFolder16]
+  
+  @scala.inline
+  def OneDriveLogo: OneDriveLogo = "OneDriveLogo".asInstanceOf[OneDriveLogo]
+  
+  @scala.inline
+  def OneNoteEduLogoInverse: OneNoteEduLogoInverse = "OneNoteEduLogoInverse".asInstanceOf[OneNoteEduLogoInverse]
+  
+  @scala.inline
+  def OneNoteLogo: OneNoteLogo = "OneNoteLogo".asInstanceOf[OneNoteLogo]
+  
+  @scala.inline
+  def OneNoteLogo16: OneNoteLogo16 = "OneNoteLogo16".asInstanceOf[OneNoteLogo16]
+  
+  @scala.inline
+  def OneNoteLogoFill: OneNoteLogoFill = "OneNoteLogoFill".asInstanceOf[OneNoteLogoFill]
+  
+  @scala.inline
+  def OneNoteLogoFill16: OneNoteLogoFill16 = "OneNoteLogoFill16".asInstanceOf[OneNoteLogoFill16]
+  
+  @scala.inline
+  def OneNoteLogoInverse: OneNoteLogoInverse = "OneNoteLogoInverse".asInstanceOf[OneNoteLogoInverse]
+  
+  @scala.inline
+  def OneNoteLogoInverse16: OneNoteLogoInverse16 = "OneNoteLogoInverse16".asInstanceOf[OneNoteLogoInverse16]
+  
+  @scala.inline
+  def OpenEnrollment: OpenEnrollment = "OpenEnrollment".asInstanceOf[OpenEnrollment]
+  
+  @scala.inline
+  def OpenFile: OpenFile = "OpenFile".asInstanceOf[OpenFile]
+  
+  @scala.inline
+  def OpenFolderHorizontal: OpenFolderHorizontal = "OpenFolderHorizontal".asInstanceOf[OpenFolderHorizontal]
+  
+  @scala.inline
+  def OpenInNewTab: OpenInNewTab = "OpenInNewTab".asInstanceOf[OpenInNewTab]
+  
+  @scala.inline
+  def OpenInNewWindow: OpenInNewWindow = "OpenInNewWindow".asInstanceOf[OpenInNewWindow]
+  
+  @scala.inline
+  def OpenPane: OpenPane = "OpenPane".asInstanceOf[OpenPane]
+  
+  @scala.inline
+  def OpenPaneMirrored: OpenPaneMirrored = "OpenPaneMirrored".asInstanceOf[OpenPaneMirrored]
+  
+  @scala.inline
+  def OpenSource: OpenSource = "OpenSource".asInstanceOf[OpenSource]
+  
+  @scala.inline
+  def Org: Org = "Org".asInstanceOf[Org]
+  
+  @scala.inline
+  def Orientation: Orientation = "Orientation".asInstanceOf[Orientation]
+  
+  @scala.inline
+  def Orientation2: Orientation2 = "Orientation2".asInstanceOf[Orientation2]
+  
+  @scala.inline
+  def OutOfOffice: OutOfOffice = "OutOfOffice".asInstanceOf[OutOfOffice]
+  
+  @scala.inline
+  def OutlookLogo: OutlookLogo = "OutlookLogo".asInstanceOf[OutlookLogo]
+  
+  @scala.inline
+  def OutlookLogo16: OutlookLogo16 = "OutlookLogo16".asInstanceOf[OutlookLogo16]
+  
+  @scala.inline
+  def OutlookLogoFill: OutlookLogoFill = "OutlookLogoFill".asInstanceOf[OutlookLogoFill]
+  
+  @scala.inline
+  def OutlookLogoFill16: OutlookLogoFill16 = "OutlookLogoFill16".asInstanceOf[OutlookLogoFill16]
+  
+  @scala.inline
+  def OutlookLogoInverse: OutlookLogoInverse = "OutlookLogoInverse".asInstanceOf[OutlookLogoInverse]
+  
+  @scala.inline
+  def OutlookLogoInverse16: OutlookLogoInverse16 = "OutlookLogoInverse16".asInstanceOf[OutlookLogoInverse16]
+  
+  @scala.inline
+  def PC1: PC1 = "PC1".asInstanceOf[PC1]
+  
+  @scala.inline
+  def PDF: PDF = "PDF".asInstanceOf[PDF]
+  
+  @scala.inline
+  def POI: POI = "POI".asInstanceOf[POI]
+  
+  @scala.inline
+  def POISolid: POISolid = "POISolid".asInstanceOf[POISolid]
+  
+  @scala.inline
+  def PY: PY = "PY".asInstanceOf[PY]
+  
+  @scala.inline
+  def Package: Package = "Package".asInstanceOf[Package]
+  
+  @scala.inline
+  def Packages: Packages = "Packages".asInstanceOf[Packages]
+  
+  @scala.inline
+  def Padding: Padding = "Padding".asInstanceOf[Padding]
+  
+  @scala.inline
+  def PaddingBottom: PaddingBottom = "PaddingBottom".asInstanceOf[PaddingBottom]
+  
+  @scala.inline
+  def PaddingLeft: PaddingLeft = "PaddingLeft".asInstanceOf[PaddingLeft]
+  
+  @scala.inline
+  def PaddingRight: PaddingRight = "PaddingRight".asInstanceOf[PaddingRight]
+  
+  @scala.inline
+  def PaddingTop: PaddingTop = "PaddingTop".asInstanceOf[PaddingTop]
+  
+  @scala.inline
+  def Page: Page = "Page".asInstanceOf[Page]
+  
+  @scala.inline
+  def PageAdd: PageAdd = "PageAdd".asInstanceOf[PageAdd]
+  
+  @scala.inline
+  def PageArrowRight: PageArrowRight = "PageArrowRight".asInstanceOf[PageArrowRight]
+  
+  @scala.inline
+  def PageCheckedOut: PageCheckedOut = "PageCheckedOut".asInstanceOf[PageCheckedOut]
+  
+  @scala.inline
+  def PageCheckedin: PageCheckedin = "PageCheckedin".asInstanceOf[PageCheckedin]
+  
+  @scala.inline
+  def PageData: PageData = "PageData".asInstanceOf[PageData]
+  
+  @scala.inline
+  def PageEdit: PageEdit = "PageEdit".asInstanceOf[PageEdit]
+  
+  @scala.inline
+  def PageHeader: PageHeader = "PageHeader".asInstanceOf[PageHeader]
+  
+  @scala.inline
+  def PageHeaderEdit: PageHeaderEdit = "PageHeaderEdit".asInstanceOf[PageHeaderEdit]
+  
+  @scala.inline
+  def PageLeft: PageLeft = "PageLeft".asInstanceOf[PageLeft]
+  
+  @scala.inline
+  def PageLink: PageLink = "PageLink".asInstanceOf[PageLink]
+  
+  @scala.inline
+  def PageList: PageList = "PageList".asInstanceOf[PageList]
+  
+  @scala.inline
+  def PageListFilter: PageListFilter = "PageListFilter".asInstanceOf[PageListFilter]
+  
+  @scala.inline
+  def PageListMirroredSolid: PageListMirroredSolid = "PageListMirroredSolid".asInstanceOf[PageListMirroredSolid]
+  
+  @scala.inline
+  def PageListSolid: PageListSolid = "PageListSolid".asInstanceOf[PageListSolid]
+  
+  @scala.inline
+  def PageLock: PageLock = "PageLock".asInstanceOf[PageLock]
+  
+  @scala.inline
+  def PageRemove: PageRemove = "PageRemove".asInstanceOf[PageRemove]
+  
+  @scala.inline
+  def PageRight: PageRight = "PageRight".asInstanceOf[PageRight]
+  
+  @scala.inline
+  def PageShared: PageShared = "PageShared".asInstanceOf[PageShared]
+  
+  @scala.inline
+  def PageSolid: PageSolid = "PageSolid".asInstanceOf[PageSolid]
+  
+  @scala.inline
+  def PanoIndicator: PanoIndicator = "PanoIndicator".asInstanceOf[PanoIndicator]
+  
+  @scala.inline
+  def Parachute: Parachute = "Parachute".asInstanceOf[Parachute]
+  
+  @scala.inline
+  def ParachuteSolid: ParachuteSolid = "ParachuteSolid".asInstanceOf[ParachuteSolid]
+  
+  @scala.inline
+  def Parameter: Parameter = "Parameter".asInstanceOf[Parameter]
+  
+  @scala.inline
+  def ParkingLocation: ParkingLocation = "ParkingLocation".asInstanceOf[ParkingLocation]
+  
+  @scala.inline
+  def ParkingLocationMirrored: ParkingLocationMirrored = "ParkingLocationMirrored".asInstanceOf[ParkingLocationMirrored]
+  
+  @scala.inline
+  def ParkingMirroredSolid: ParkingMirroredSolid = "ParkingMirroredSolid".asInstanceOf[ParkingMirroredSolid]
+  
+  @scala.inline
+  def ParkingSolid: ParkingSolid = "ParkingSolid".asInstanceOf[ParkingSolid]
+  
+  @scala.inline
+  def PartlyCloudyDay: PartlyCloudyDay = "PartlyCloudyDay".asInstanceOf[PartlyCloudyDay]
+  
+  @scala.inline
+  def PartlyCloudyNight: PartlyCloudyNight = "PartlyCloudyNight".asInstanceOf[PartlyCloudyNight]
+  
+  @scala.inline
+  def PartyLeader: PartyLeader = "PartyLeader".asInstanceOf[PartyLeader]
+  
+  @scala.inline
+  def PassiveAuthentication: PassiveAuthentication = "PassiveAuthentication".asInstanceOf[PassiveAuthentication]
+  
+  @scala.inline
+  def PasswordField: PasswordField = "PasswordField".asInstanceOf[PasswordField]
+  
+  @scala.inline
+  def Paste: Paste = "Paste".asInstanceOf[Paste]
+  
+  @scala.inline
+  def PasteAsCode: PasteAsCode = "PasteAsCode".asInstanceOf[PasteAsCode]
+  
+  @scala.inline
+  def PasteAsText: PasteAsText = "PasteAsText".asInstanceOf[PasteAsText]
+  
+  @scala.inline
+  def Pause: Pause = "Pause".asInstanceOf[Pause]
+  
+  @scala.inline
+  def PaymentCard: PaymentCard = "PaymentCard".asInstanceOf[PaymentCard]
+  
+  @scala.inline
+  def PenWorkspace: PenWorkspace = "PenWorkspace".asInstanceOf[PenWorkspace]
+  
+  @scala.inline
+  def PencilReply: PencilReply = "PencilReply".asInstanceOf[PencilReply]
+  
+  @scala.inline
+  def Pentagon: Pentagon = "Pentagon".asInstanceOf[Pentagon]
+  
+  @scala.inline
+  def People: People = "People".asInstanceOf[People]
+  
+  @scala.inline
+  def PeopleAdd: PeopleAdd = "PeopleAdd".asInstanceOf[PeopleAdd]
+  
+  @scala.inline
+  def PeopleAlert: PeopleAlert = "PeopleAlert".asInstanceOf[PeopleAlert]
+  
+  @scala.inline
+  def PeopleBlock: PeopleBlock = "PeopleBlock".asInstanceOf[PeopleBlock]
+  
+  @scala.inline
+  def PeoplePause: PeoplePause = "PeoplePause".asInstanceOf[PeoplePause]
+  
+  @scala.inline
+  def PeopleRepeat: PeopleRepeat = "PeopleRepeat".asInstanceOf[PeopleRepeat]
+  
+  @scala.inline
+  def Permissions: Permissions = "Permissions".asInstanceOf[Permissions]
+  
+  @scala.inline
+  def PermissionsSolid: PermissionsSolid = "PermissionsSolid".asInstanceOf[PermissionsSolid]
+  
+  @scala.inline
+  def Personalize: Personalize = "Personalize".asInstanceOf[Personalize]
+  
+  @scala.inline
+  def Phishing: Phishing = "Phishing".asInstanceOf[Phishing]
+  
+  @scala.inline
+  def Phone: Phone = "Phone".asInstanceOf[Phone]
+  
+  @scala.inline
+  def Photo: Photo = "Photo".asInstanceOf[Photo]
+  
+  @scala.inline
+  def Photo2: Photo2 = "Photo2".asInstanceOf[Photo2]
+  
+  @scala.inline
+  def Photo2Add: Photo2Add = "Photo2Add".asInstanceOf[Photo2Add]
+  
+  @scala.inline
+  def Photo2Fill: Photo2Fill = "Photo2Fill".asInstanceOf[Photo2Fill]
+  
+  @scala.inline
+  def Photo2Remove: Photo2Remove = "Photo2Remove".asInstanceOf[Photo2Remove]
+  
+  @scala.inline
+  def PhotoCollection: PhotoCollection = "PhotoCollection".asInstanceOf[PhotoCollection]
+  
+  @scala.inline
+  def PhotoVideoMedia: PhotoVideoMedia = "PhotoVideoMedia".asInstanceOf[PhotoVideoMedia]
+  
+  @scala.inline
+  def Picture: Picture = "Picture".asInstanceOf[Picture]
+  
+  @scala.inline
+  def PictureCenter: PictureCenter = "PictureCenter".asInstanceOf[PictureCenter]
+  
+  @scala.inline
+  def PictureFill: PictureFill = "PictureFill".asInstanceOf[PictureFill]
+  
+  @scala.inline
+  def PictureLibrary: PictureLibrary = "PictureLibrary".asInstanceOf[PictureLibrary]
+  
+  @scala.inline
+  def PicturePosition: PicturePosition = "PicturePosition".asInstanceOf[PicturePosition]
+  
+  @scala.inline
+  def PictureStretch: PictureStretch = "PictureStretch".asInstanceOf[PictureStretch]
+  
+  @scala.inline
+  def PictureTile: PictureTile = "PictureTile".asInstanceOf[PictureTile]
+  
+  @scala.inline
+  def PieDouble: PieDouble = "PieDouble".asInstanceOf[PieDouble]
+  
+  @scala.inline
+  def PieSingle: PieSingle = "PieSingle".asInstanceOf[PieSingle]
+  
+  @scala.inline
+  def PieSingleSolid: PieSingleSolid = "PieSingleSolid".asInstanceOf[PieSingleSolid]
+  
+  @scala.inline
+  def Pill: Pill = "Pill".asInstanceOf[Pill]
+  
+  @scala.inline
+  def Pin: Pin = "Pin".asInstanceOf[Pin]
+  
+  @scala.inline
+  def PinSolid12: PinSolid12 = "PinSolid12".asInstanceOf[PinSolid12]
+  
+  @scala.inline
+  def PinSolidOff12: PinSolidOff12 = "PinSolidOff12".asInstanceOf[PinSolidOff12]
+  
+  @scala.inline
+  def Pinned: Pinned = "Pinned".asInstanceOf[Pinned]
+  
+  @scala.inline
+  def PinnedFill: PinnedFill = "PinnedFill".asInstanceOf[PinnedFill]
+  
+  @scala.inline
+  def PinnedSolid: PinnedSolid = "PinnedSolid".asInstanceOf[PinnedSolid]
+  
+  @scala.inline
+  def PivotChart: PivotChart = "PivotChart".asInstanceOf[PivotChart]
+  
+  @scala.inline
+  def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
+  
+  @scala.inline
+  def PlanView: PlanView = "PlanView".asInstanceOf[PlanView]
+  
+  @scala.inline
+  def PlannerLogo: PlannerLogo = "PlannerLogo".asInstanceOf[PlannerLogo]
+  
+  @scala.inline
+  def Play: Play = "Play".asInstanceOf[Play]
+  
+  @scala.inline
+  def PlayResume: PlayResume = "PlayResume".asInstanceOf[PlayResume]
+  
+  @scala.inline
+  def PlayReverse: PlayReverse = "PlayReverse".asInstanceOf[PlayReverse]
+  
+  @scala.inline
+  def PlayReverseResume: PlayReverseResume = "PlayReverseResume".asInstanceOf[PlayReverseResume]
+  
+  @scala.inline
+  def PlaybackRate1x: PlaybackRate1x = "PlaybackRate1x".asInstanceOf[PlaybackRate1x]
+  
+  @scala.inline
+  def PlayerSettings: PlayerSettings = "PlayerSettings".asInstanceOf[PlayerSettings]
+  
+  @scala.inline
+  def Plug: Plug = "Plug".asInstanceOf[Plug]
+  
+  @scala.inline
+  def PlugConnected: PlugConnected = "PlugConnected".asInstanceOf[PlugConnected]
+  
+  @scala.inline
+  def PlugDisconnected: PlugDisconnected = "PlugDisconnected".asInstanceOf[PlugDisconnected]
+  
+  @scala.inline
+  def PlugSolid: PlugSolid = "PlugSolid".asInstanceOf[PlugSolid]
+  
+  @scala.inline
+  def PollResults: PollResults = "PollResults".asInstanceOf[PollResults]
+  
+  @scala.inline
+  def PostUpdate: PostUpdate = "PostUpdate".asInstanceOf[PostUpdate]
+  
+  @scala.inline
+  def PowerApps: PowerApps = "PowerApps".asInstanceOf[PowerApps]
+  
+  @scala.inline
+  def PowerApps2Logo: PowerApps2Logo = "PowerApps2Logo".asInstanceOf[PowerApps2Logo]
+  
+  @scala.inline
+  def PowerAppsLogo: PowerAppsLogo = "PowerAppsLogo".asInstanceOf[PowerAppsLogo]
+  
+  @scala.inline
+  def PowerBILogo: PowerBILogo = "PowerBILogo".asInstanceOf[PowerBILogo]
+  
+  @scala.inline
+  def PowerBILogo16: PowerBILogo16 = "PowerBILogo16".asInstanceOf[PowerBILogo16]
+  
+  @scala.inline
+  def PowerBILogoBackplate16: PowerBILogoBackplate16 = "PowerBILogoBackplate16".asInstanceOf[PowerBILogoBackplate16]
+  
+  @scala.inline
+  def PowerButton: PowerButton = "PowerButton".asInstanceOf[PowerButton]
+  
+  @scala.inline
+  def PowerPointDocument: PowerPointDocument = "PowerPointDocument".asInstanceOf[PowerPointDocument]
+  
+  @scala.inline
+  def PowerPointLogo: PowerPointLogo = "PowerPointLogo".asInstanceOf[PowerPointLogo]
+  
+  @scala.inline
+  def PowerPointLogo16: PowerPointLogo16 = "PowerPointLogo16".asInstanceOf[PowerPointLogo16]
+  
+  @scala.inline
+  def PowerPointLogoFill: PowerPointLogoFill = "PowerPointLogoFill".asInstanceOf[PowerPointLogoFill]
+  
+  @scala.inline
+  def PowerPointLogoFill16: PowerPointLogoFill16 = "PowerPointLogoFill16".asInstanceOf[PowerPointLogoFill16]
+  
+  @scala.inline
+  def PowerPointLogoInverse: PowerPointLogoInverse = "PowerPointLogoInverse".asInstanceOf[PowerPointLogoInverse]
+  
+  @scala.inline
+  def PowerPointLogoInverse16: PowerPointLogoInverse16 = "PowerPointLogoInverse16".asInstanceOf[PowerPointLogoInverse16]
+  
+  @scala.inline
+  def Precipitation: Precipitation = "Precipitation".asInstanceOf[Precipitation]
+  
+  @scala.inline
+  def PresenceChickletVideo: PresenceChickletVideo = "PresenceChickletVideo".asInstanceOf[PresenceChickletVideo]
+  
+  @scala.inline
+  def Presentation: Presentation = "Presentation".asInstanceOf[Presentation]
+  
+  @scala.inline
+  def Presentation12: Presentation12 = "Presentation12".asInstanceOf[Presentation12]
+  
+  @scala.inline
+  def Preview: Preview = "Preview".asInstanceOf[Preview]
+  
+  @scala.inline
+  def PreviewLink: PreviewLink = "PreviewLink".asInstanceOf[PreviewLink]
+  
+  @scala.inline
+  def Previous: Previous = "Previous".asInstanceOf[Previous]
+  
+  @scala.inline
+  def PrimaryCalendar: PrimaryCalendar = "PrimaryCalendar".asInstanceOf[PrimaryCalendar]
+  
+  @scala.inline
+  def Print: Print = "Print".asInstanceOf[Print]
+  
+  @scala.inline
+  def PrintfaxPrinterFile: PrintfaxPrinterFile = "PrintfaxPrinterFile".asInstanceOf[PrintfaxPrinterFile]
+  
+  @scala.inline
+  def ProFootball: ProFootball = "ProFootball".asInstanceOf[ProFootball]
+  
+  @scala.inline
+  def ProHockey: ProHockey = "ProHockey".asInstanceOf[ProHockey]
+  
+  @scala.inline
+  def ProcessMetaTask: ProcessMetaTask = "ProcessMetaTask".asInstanceOf[ProcessMetaTask]
+  
+  @scala.inline
+  def Processing: Processing = "Processing".asInstanceOf[Processing]
+  
+  @scala.inline
+  def Product: Product = "Product".asInstanceOf[Product]
+  
+  @scala.inline
+  def ProductCatalog: ProductCatalog = "ProductCatalog".asInstanceOf[ProductCatalog]
+  
+  @scala.inline
+  def ProductList: ProductList = "ProductList".asInstanceOf[ProductList]
+  
+  @scala.inline
+  def ProductRelease: ProductRelease = "ProductRelease".asInstanceOf[ProductRelease]
+  
+  @scala.inline
+  def ProductVariant: ProductVariant = "ProductVariant".asInstanceOf[ProductVariant]
+  
+  @scala.inline
+  def ProductionFloorManagement: ProductionFloorManagement = "ProductionFloorManagement".asInstanceOf[ProductionFloorManagement]
+  
+  @scala.inline
+  def ProfileSearch: ProfileSearch = "ProfileSearch".asInstanceOf[ProfileSearch]
+  
+  @scala.inline
+  def ProgressLoopInner: ProgressLoopInner = "ProgressLoopInner".asInstanceOf[ProgressLoopInner]
+  
+  @scala.inline
+  def ProgressLoopOuter: ProgressLoopOuter = "ProgressLoopOuter".asInstanceOf[ProgressLoopOuter]
+  
+  @scala.inline
+  def ProgressRingDots: ProgressRingDots = "ProgressRingDots".asInstanceOf[ProgressRingDots]
+  
+  @scala.inline
+  def ProjectCollection: ProjectCollection = "ProjectCollection".asInstanceOf[ProjectCollection]
+  
+  @scala.inline
+  def ProjectDocument: ProjectDocument = "ProjectDocument".asInstanceOf[ProjectDocument]
+  
+  @scala.inline
+  def ProjectLogo16: ProjectLogo16 = "ProjectLogo16".asInstanceOf[ProjectLogo16]
+  
+  @scala.inline
+  def ProjectLogo32: ProjectLogo32 = "ProjectLogo32".asInstanceOf[ProjectLogo32]
+  
+  @scala.inline
+  def ProjectLogoFill16: ProjectLogoFill16 = "ProjectLogoFill16".asInstanceOf[ProjectLogoFill16]
+  
+  @scala.inline
+  def ProjectLogoFill32: ProjectLogoFill32 = "ProjectLogoFill32".asInstanceOf[ProjectLogoFill32]
+  
+  @scala.inline
+  def ProjectLogoInverse: ProjectLogoInverse = "ProjectLogoInverse".asInstanceOf[ProjectLogoInverse]
+  
+  @scala.inline
+  def PromotedDatabase: PromotedDatabase = "PromotedDatabase".asInstanceOf[PromotedDatabase]
+  
+  @scala.inline
+  def ProtectRestrict: ProtectRestrict = "ProtectRestrict".asInstanceOf[ProtectRestrict]
+  
+  @scala.inline
+  def ProtectedDocument: ProtectedDocument = "ProtectedDocument".asInstanceOf[ProtectedDocument]
+  
+  @scala.inline
+  def ProtectionCenterLogo32: ProtectionCenterLogo32 = "ProtectionCenterLogo32".asInstanceOf[ProtectionCenterLogo32]
+  
+  @scala.inline
+  def PublicCalendar: PublicCalendar = "PublicCalendar".asInstanceOf[PublicCalendar]
+  
+  @scala.inline
+  def PublicContactCard: PublicContactCard = "PublicContactCard".asInstanceOf[PublicContactCard]
+  
+  @scala.inline
+  def PublicContactCardMirrored: PublicContactCardMirrored = "PublicContactCardMirrored".asInstanceOf[PublicContactCardMirrored]
+  
+  @scala.inline
+  def PublicEmail: PublicEmail = "PublicEmail".asInstanceOf[PublicEmail]
+  
+  @scala.inline
+  def PublicFolder: PublicFolder = "PublicFolder".asInstanceOf[PublicFolder]
+  
+  @scala.inline
+  def PublishContent: PublishContent = "PublishContent".asInstanceOf[PublishContent]
+  
+  @scala.inline
+  def PublishCourse: PublishCourse = "PublishCourse".asInstanceOf[PublishCourse]
+  
+  @scala.inline
+  def PublisherLogo: PublisherLogo = "PublisherLogo".asInstanceOf[PublisherLogo]
+  
+  @scala.inline
+  def PublisherLogo16: PublisherLogo16 = "PublisherLogo16".asInstanceOf[PublisherLogo16]
+  
+  @scala.inline
+  def PublisherLogoFill: PublisherLogoFill = "PublisherLogoFill".asInstanceOf[PublisherLogoFill]
+  
+  @scala.inline
+  def PublisherLogoFill16: PublisherLogoFill16 = "PublisherLogoFill16".asInstanceOf[PublisherLogoFill16]
+  
+  @scala.inline
+  def PublisherLogoInverse16: PublisherLogoInverse16 = "PublisherLogoInverse16".asInstanceOf[PublisherLogoInverse16]
+  
+  @scala.inline
+  def Puzzle: Puzzle = "Puzzle".asInstanceOf[Puzzle]
+  
+  @scala.inline
+  def PythonLanguage: PythonLanguage = "PythonLanguage".asInstanceOf[PythonLanguage]
+  
+  @scala.inline
+  def QRCode: QRCode = "QRCode".asInstanceOf[QRCode]
+  
+  @scala.inline
+  def QandA: QandA = "QandA".asInstanceOf[QandA]
+  
+  @scala.inline
+  def QandAMirror: QandAMirror = "QandAMirror".asInstanceOf[QandAMirror]
+  
+  @scala.inline
+  def QuadColumn: QuadColumn = "QuadColumn".asInstanceOf[QuadColumn]
+  
+  @scala.inline
+  def Quantity: Quantity = "Quantity".asInstanceOf[Quantity]
+  
+  @scala.inline
+  def QuarterCircle: QuarterCircle = "QuarterCircle".asInstanceOf[QuarterCircle]
+  
+  @scala.inline
+  def QueryList: QueryList = "QueryList".asInstanceOf[QueryList]
+  
+  @scala.inline
+  def Questionnaire: Questionnaire = "Questionnaire".asInstanceOf[Questionnaire]
+  
+  @scala.inline
+  def QuestionnaireMirrored: QuestionnaireMirrored = "QuestionnaireMirrored".asInstanceOf[QuestionnaireMirrored]
+  
+  @scala.inline
+  def QuickNote: QuickNote = "QuickNote".asInstanceOf[QuickNote]
+  
+  @scala.inline
+  def QuickNoteSolid: QuickNoteSolid = "QuickNoteSolid".asInstanceOf[QuickNoteSolid]
+  
+  @scala.inline
+  def R: R = "R".asInstanceOf[R]
+  
+  @scala.inline
+  def RadioBtnOff: RadioBtnOff = "RadioBtnOff".asInstanceOf[RadioBtnOff]
+  
+  @scala.inline
+  def RadioBtnOn: RadioBtnOn = "RadioBtnOn".asInstanceOf[RadioBtnOn]
+  
+  @scala.inline
+  def RadioBullet: RadioBullet = "RadioBullet".asInstanceOf[RadioBullet]
+  
+  @scala.inline
+  def Rain: Rain = "Rain".asInstanceOf[Rain]
+  
+  @scala.inline
+  def RainShowersDay: RainShowersDay = "RainShowersDay".asInstanceOf[RainShowersDay]
+  
+  @scala.inline
+  def RainShowersNight: RainShowersNight = "RainShowersNight".asInstanceOf[RainShowersNight]
+  
+  @scala.inline
+  def RainSnow: RainSnow = "RainSnow".asInstanceOf[RainSnow]
+  
+  @scala.inline
+  def RawSource: RawSource = "RawSource".asInstanceOf[RawSource]
+  
+  @scala.inline
+  def Read: Read = "Read".asInstanceOf[Read]
+  
+  @scala.inline
+  def ReadOutLoud: ReadOutLoud = "ReadOutLoud".asInstanceOf[ReadOutLoud]
+  
+  @scala.inline
+  def ReadingMode: ReadingMode = "ReadingMode".asInstanceOf[ReadingMode]
+  
+  @scala.inline
+  def ReadingModeSolid: ReadingModeSolid = "ReadingModeSolid".asInstanceOf[ReadingModeSolid]
+  
+  @scala.inline
+  def RealEstate: RealEstate = "RealEstate".asInstanceOf[RealEstate]
+  
+  @scala.inline
+  def ReceiptCheck: ReceiptCheck = "ReceiptCheck".asInstanceOf[ReceiptCheck]
+  
+  @scala.inline
+  def ReceiptForward: ReceiptForward = "ReceiptForward".asInstanceOf[ReceiptForward]
+  
+  @scala.inline
+  def ReceiptReply: ReceiptReply = "ReceiptReply".asInstanceOf[ReceiptReply]
+  
+  @scala.inline
+  def ReceiptTentative: ReceiptTentative = "ReceiptTentative".asInstanceOf[ReceiptTentative]
+  
+  @scala.inline
+  def ReceiptTentativeMirrored: ReceiptTentativeMirrored = "ReceiptTentativeMirrored".asInstanceOf[ReceiptTentativeMirrored]
+  
+  @scala.inline
+  def ReceiptUndelivered: ReceiptUndelivered = "ReceiptUndelivered".asInstanceOf[ReceiptUndelivered]
+  
+  @scala.inline
+  def Recent: Recent = "Recent".asInstanceOf[Recent]
+  
+  @scala.inline
+  def Record2: Record2 = "Record2".asInstanceOf[Record2]
+  
+  @scala.inline
+  def RecruitmentManagement: RecruitmentManagement = "RecruitmentManagement".asInstanceOf[RecruitmentManagement]
+  
+  @scala.inline
+  def RectangleShape: RectangleShape = "RectangleShape".asInstanceOf[RectangleShape]
+  
+  @scala.inline
+  def RectangleShapeSolid: RectangleShapeSolid = "RectangleShapeSolid".asInstanceOf[RectangleShapeSolid]
+  
+  @scala.inline
+  def RectangularClipping: RectangularClipping = "RectangularClipping".asInstanceOf[RectangularClipping]
+  
+  @scala.inline
+  def RecurringEvent: RecurringEvent = "RecurringEvent".asInstanceOf[RecurringEvent]
+  
+  @scala.inline
+  def RecurringTask: RecurringTask = "RecurringTask".asInstanceOf[RecurringTask]
+  
+  @scala.inline
+  def RecycleBin: RecycleBin = "RecycleBin".asInstanceOf[RecycleBin]
+  
+  @scala.inline
+  def RedEye: RedEye = "RedEye".asInstanceOf[RedEye]
+  
+  @scala.inline
+  def Redeploy: Redeploy = "Redeploy".asInstanceOf[Redeploy]
+  
+  @scala.inline
+  def Redo: Redo = "Redo".asInstanceOf[Redo]
+  
+  @scala.inline
+  def Refresh: Refresh = "Refresh".asInstanceOf[Refresh]
+  
+  @scala.inline
+  def Relationship: Relationship = "Relationship".asInstanceOf[Relationship]
+  
+  @scala.inline
+  def ReleaseDefinition: ReleaseDefinition = "ReleaseDefinition".asInstanceOf[ReleaseDefinition]
+  
+  @scala.inline
+  def ReleaseGate: ReleaseGate = "ReleaseGate".asInstanceOf[ReleaseGate]
+  
+  @scala.inline
+  def ReleaseGateCheck: ReleaseGateCheck = "ReleaseGateCheck".asInstanceOf[ReleaseGateCheck]
+  
+  @scala.inline
+  def ReleaseGateError: ReleaseGateError = "ReleaseGateError".asInstanceOf[ReleaseGateError]
+  
+  @scala.inline
+  def ReminderGroup: ReminderGroup = "ReminderGroup".asInstanceOf[ReminderGroup]
+  
+  @scala.inline
+  def ReminderPerson: ReminderPerson = "ReminderPerson".asInstanceOf[ReminderPerson]
+  
+  @scala.inline
+  def ReminderTime: ReminderTime = "ReminderTime".asInstanceOf[ReminderTime]
+  
+  @scala.inline
+  def Remote: Remote = "Remote".asInstanceOf[Remote]
+  
+  @scala.inline
+  def Remove: Remove = "Remove".asInstanceOf[Remove]
+  
+  @scala.inline
+  def RemoveEvent: RemoveEvent = "RemoveEvent".asInstanceOf[RemoveEvent]
+  
+  @scala.inline
+  def RemoveFilter: RemoveFilter = "RemoveFilter".asInstanceOf[RemoveFilter]
+  
+  @scala.inline
+  def RemoveFromShoppingList: RemoveFromShoppingList = "RemoveFromShoppingList".asInstanceOf[RemoveFromShoppingList]
+  
+  @scala.inline
+  def RemoveFromTrash: RemoveFromTrash = "RemoveFromTrash".asInstanceOf[RemoveFromTrash]
+  
+  @scala.inline
+  def RemoveLink: RemoveLink = "RemoveLink".asInstanceOf[RemoveLink]
+  
+  @scala.inline
+  def RemoveLinkChain: RemoveLinkChain = "RemoveLinkChain".asInstanceOf[RemoveLinkChain]
+  
+  @scala.inline
+  def RemoveLinkX: RemoveLinkX = "RemoveLinkX".asInstanceOf[RemoveLinkX]
+  
+  @scala.inline
+  def RemoveOccurrence: RemoveOccurrence = "RemoveOccurrence".asInstanceOf[RemoveOccurrence]
+  
+  @scala.inline
+  def Rename: Rename = "Rename".asInstanceOf[Rename]
+  
+  @scala.inline
+  def RenewalCurrent: RenewalCurrent = "RenewalCurrent".asInstanceOf[RenewalCurrent]
+  
+  @scala.inline
+  def RenewalFuture: RenewalFuture = "RenewalFuture".asInstanceOf[RenewalFuture]
+  
+  @scala.inline
+  def ReopenPages: ReopenPages = "ReopenPages".asInstanceOf[ReopenPages]
+  
+  @scala.inline
+  def Repair: Repair = "Repair".asInstanceOf[Repair]
+  
+  @scala.inline
+  def RepeatAll: RepeatAll = "RepeatAll".asInstanceOf[RepeatAll]
+  
+  @scala.inline
+  def RepeatOne: RepeatOne = "RepeatOne".asInstanceOf[RepeatOne]
+  
+  @scala.inline
+  def Reply: Reply = "Reply".asInstanceOf[Reply]
+  
+  @scala.inline
+  def ReplyAll: ReplyAll = "ReplyAll".asInstanceOf[ReplyAll]
+  
+  @scala.inline
+  def ReplyAllAlt: ReplyAllAlt = "ReplyAllAlt".asInstanceOf[ReplyAllAlt]
+  
+  @scala.inline
+  def ReplyAllMirrored: ReplyAllMirrored = "ReplyAllMirrored".asInstanceOf[ReplyAllMirrored]
+  
+  @scala.inline
+  def ReplyAlt: ReplyAlt = "ReplyAlt".asInstanceOf[ReplyAlt]
+  
+  @scala.inline
+  def ReplyMirrored: ReplyMirrored = "ReplyMirrored".asInstanceOf[ReplyMirrored]
+  
+  @scala.inline
+  def Repo: Repo = "Repo".asInstanceOf[Repo]
+  
+  @scala.inline
+  def RepoSolid: RepoSolid = "RepoSolid".asInstanceOf[RepoSolid]
+  
+  @scala.inline
+  def ReportAdd: ReportAdd = "ReportAdd".asInstanceOf[ReportAdd]
+  
+  @scala.inline
+  def ReportDocument: ReportDocument = "ReportDocument".asInstanceOf[ReportDocument]
+  
+  @scala.inline
+  def ReportHacked: ReportHacked = "ReportHacked".asInstanceOf[ReportHacked]
+  
+  @scala.inline
+  def ReportLibrary: ReportLibrary = "ReportLibrary".asInstanceOf[ReportLibrary]
+  
+  @scala.inline
+  def ReportLibraryMirrored: ReportLibraryMirrored = "ReportLibraryMirrored".asInstanceOf[ReportLibraryMirrored]
+  
+  @scala.inline
+  def ReportLock: ReportLock = "ReportLock".asInstanceOf[ReportLock]
+  
+  @scala.inline
+  def ReportWarning: ReportWarning = "ReportWarning".asInstanceOf[ReportWarning]
+  
+  @scala.inline
+  def Rerun: Rerun = "Rerun".asInstanceOf[Rerun]
+  
+  @scala.inline
+  def ReservationOrders: ReservationOrders = "ReservationOrders".asInstanceOf[ReservationOrders]
+  
+  @scala.inline
+  def ResponsesMenu: ResponsesMenu = "ResponsesMenu".asInstanceOf[ResponsesMenu]
+  
+  @scala.inline
+  def ReturnKey: ReturnKey = "ReturnKey".asInstanceOf[ReturnKey]
+  
+  @scala.inline
+  def ReturnToSession: ReturnToSession = "ReturnToSession".asInstanceOf[ReturnToSession]
+  
+  @scala.inline
+  def RevToggleKey: RevToggleKey = "RevToggleKey".asInstanceOf[RevToggleKey]
+  
+  @scala.inline
+  def ReviewRequestMirroredSolid: ReviewRequestMirroredSolid = "ReviewRequestMirroredSolid".asInstanceOf[ReviewRequestMirroredSolid]
+  
+  @scala.inline
+  def ReviewRequestSolid: ReviewRequestSolid = "ReviewRequestSolid".asInstanceOf[ReviewRequestSolid]
+  
+  @scala.inline
+  def ReviewResponseSolid: ReviewResponseSolid = "ReviewResponseSolid".asInstanceOf[ReviewResponseSolid]
+  
+  @scala.inline
+  def ReviewSolid: ReviewSolid = "ReviewSolid".asInstanceOf[ReviewSolid]
+  
+  @scala.inline
+  def Rewind: Rewind = "Rewind".asInstanceOf[Rewind]
+  
+  @scala.inline
+  def Ribbon: Ribbon = "Ribbon".asInstanceOf[Ribbon]
+  
+  @scala.inline
+  def RibbonSolid: RibbonSolid = "RibbonSolid".asInstanceOf[RibbonSolid]
+  
+  @scala.inline
+  def RightDoubleQuote: RightDoubleQuote = "RightDoubleQuote".asInstanceOf[RightDoubleQuote]
+  
+  @scala.inline
+  def RightTriangle: RightTriangle = "RightTriangle".asInstanceOf[RightTriangle]
+  
+  @scala.inline
+  def Ringer: Ringer = "Ringer".asInstanceOf[Ringer]
+  
+  @scala.inline
+  def RingerOff: RingerOff = "RingerOff".asInstanceOf[RingerOff]
+  
+  @scala.inline
+  def RingerRemove: RingerRemove = "RingerRemove".asInstanceOf[RingerRemove]
+  
+  @scala.inline
+  def RingerSolid: RingerSolid = "RingerSolid".asInstanceOf[RingerSolid]
+  
+  @scala.inline
+  def Robot: Robot = "Robot".asInstanceOf[Robot]
+  
+  @scala.inline
+  def Rocket: Rocket = "Rocket".asInstanceOf[Rocket]
+  
+  @scala.inline
+  def Room: Room = "Room".asInstanceOf[Room]
+  
+  @scala.inline
+  def Rotate: Rotate = "Rotate".asInstanceOf[Rotate]
+  
+  @scala.inline
+  def Rotate90Clockwise: Rotate90Clockwise = "Rotate90Clockwise".asInstanceOf[Rotate90Clockwise]
+  
+  @scala.inline
+  def Rotate90CounterClockwise: Rotate90CounterClockwise = "Rotate90CounterClockwise".asInstanceOf[Rotate90CounterClockwise]
+  
+  @scala.inline
+  def RowsChild: RowsChild = "RowsChild".asInstanceOf[RowsChild]
+  
+  @scala.inline
+  def RowsGroup: RowsGroup = "RowsGroup".asInstanceOf[RowsGroup]
+  
+  @scala.inline
+  def Rugby: Rugby = "Rugby".asInstanceOf[Rugby]
+  
+  @scala.inline
+  def Running: Running = "Running".asInstanceOf[Running]
+  
+  @scala.inline
+  def SIPMove: SIPMove = "SIPMove".asInstanceOf[SIPMove]
+  
+  @scala.inline
+  def Sad: Sad = "Sad".asInstanceOf[Sad]
+  
+  @scala.inline
+  def SadSolid: SadSolid = "SadSolid".asInstanceOf[SadSolid]
+  
+  @scala.inline
+  def Save: Save = "Save".asInstanceOf[Save]
+  
+  @scala.inline
+  def SaveAll: SaveAll = "SaveAll".asInstanceOf[SaveAll]
+  
+  @scala.inline
+  def SaveAndClose: SaveAndClose = "SaveAndClose".asInstanceOf[SaveAndClose]
+  
+  @scala.inline
+  def SaveAs: SaveAs = "SaveAs".asInstanceOf[SaveAs]
+  
+  @scala.inline
+  def SaveTemplate: SaveTemplate = "SaveTemplate".asInstanceOf[SaveTemplate]
+  
+  @scala.inline
+  def SaveToMobile: SaveToMobile = "SaveToMobile".asInstanceOf[SaveToMobile]
+  
+  @scala.inline
+  def Savings: Savings = "Savings".asInstanceOf[Savings]
+  
+  @scala.inline
+  def ScaleUp: ScaleUp = "ScaleUp".asInstanceOf[ScaleUp]
+  
+  @scala.inline
+  def ScaleVolume: ScaleVolume = "ScaleVolume".asInstanceOf[ScaleVolume]
+  
+  @scala.inline
+  def ScatterChart: ScatterChart = "ScatterChart".asInstanceOf[ScatterChart]
+  
+  @scala.inline
+  def ScheduleEventAction: ScheduleEventAction = "ScheduleEventAction".asInstanceOf[ScheduleEventAction]
+  
+  @scala.inline
+  def SchoolDataSyncLogo: SchoolDataSyncLogo = "SchoolDataSyncLogo".asInstanceOf[SchoolDataSyncLogo]
+  
+  @scala.inline
+  def ScopeTemplate: ScopeTemplate = "ScopeTemplate".asInstanceOf[ScopeTemplate]
+  
+  @scala.inline
+  def ScreenCast: ScreenCast = "ScreenCast".asInstanceOf[ScreenCast]
+  
+  @scala.inline
+  def Script: Script = "Script".asInstanceOf[Script]
+  
+  @scala.inline
+  def ScrollUpDown: ScrollUpDown = "ScrollUpDown".asInstanceOf[ScrollUpDown]
+  
+  @scala.inline
+  def Search: Search = "Search".asInstanceOf[Search]
+  
+  @scala.inline
+  def SearchAndApps: SearchAndApps = "SearchAndApps".asInstanceOf[SearchAndApps]
+  
+  @scala.inline
+  def SearchBookmark: SearchBookmark = "SearchBookmark".asInstanceOf[SearchBookmark]
+  
+  @scala.inline
+  def SearchCalendar: SearchCalendar = "SearchCalendar".asInstanceOf[SearchCalendar]
+  
+  @scala.inline
+  def SearchData: SearchData = "SearchData".asInstanceOf[SearchData]
+  
+  @scala.inline
+  def SearchIssue: SearchIssue = "SearchIssue".asInstanceOf[SearchIssue]
+  
+  @scala.inline
+  def SearchIssueMirrored: SearchIssueMirrored = "SearchIssueMirrored".asInstanceOf[SearchIssueMirrored]
+  
+  @scala.inline
+  def SearchNearby: SearchNearby = "SearchNearby".asInstanceOf[SearchNearby]
+  
+  @scala.inline
+  def SecondaryNav: SecondaryNav = "SecondaryNav".asInstanceOf[SecondaryNav]
+  
+  @scala.inline
+  def Section: Section = "Section".asInstanceOf[Section]
+  
+  @scala.inline
+  def Sections: Sections = "Sections".asInstanceOf[Sections]
+  
+  @scala.inline
+  def SecurityGroup: SecurityGroup = "SecurityGroup".asInstanceOf[SecurityGroup]
+  
+  @scala.inline
+  def SeeDo: SeeDo = "SeeDo".asInstanceOf[SeeDo]
+  
+  @scala.inline
+  def SelectAll: SelectAll = "SelectAll".asInstanceOf[SelectAll]
+  
+  @scala.inline
+  def Sell: Sell = "Sell".asInstanceOf[Sell]
+  
+  @scala.inline
+  def SemiboldWeight: SemiboldWeight = "SemiboldWeight".asInstanceOf[SemiboldWeight]
+  
+  @scala.inline
+  def Send: Send = "Send".asInstanceOf[Send]
+  
+  @scala.inline
+  def SendMirrored: SendMirrored = "SendMirrored".asInstanceOf[SendMirrored]
+  
+  @scala.inline
+  def Separator: Separator = "Separator".asInstanceOf[Separator]
+  
+  @scala.inline
+  def Server: Server = "Server".asInstanceOf[Server]
+  
+  @scala.inline
+  def ServerEnviroment: ServerEnviroment = "ServerEnviroment".asInstanceOf[ServerEnviroment]
+  
+  @scala.inline
+  def ServerProcesses: ServerProcesses = "ServerProcesses".asInstanceOf[ServerProcesses]
+  
+  @scala.inline
+  def SetAction: SetAction = "SetAction".asInstanceOf[SetAction]
+  
+  @scala.inline
+  def Settings: Settings = "Settings".asInstanceOf[Settings]
+  
+  @scala.inline
+  def ShakeDevice: ShakeDevice = "ShakeDevice".asInstanceOf[ShakeDevice]
+  
+  @scala.inline
+  def Shapes: Shapes = "Shapes".asInstanceOf[Shapes]
+  
+  @scala.inline
+  def Share: Share = "Share".asInstanceOf[Share]
+  
+  @scala.inline
+  def ShareiOS: ShareiOS = "ShareiOS".asInstanceOf[ShareiOS]
+  
+  @scala.inline
+  def SharepointAppIcon16: SharepointAppIcon16 = "SharepointAppIcon16".asInstanceOf[SharepointAppIcon16]
+  
+  @scala.inline
+  def SharepointLogo: SharepointLogo = "SharepointLogo".asInstanceOf[SharepointLogo]
+  
+  @scala.inline
+  def SharepointLogoFill: SharepointLogoFill = "SharepointLogoFill".asInstanceOf[SharepointLogoFill]
+  
+  @scala.inline
+  def SharepointLogoInverse: SharepointLogoInverse = "SharepointLogoInverse".asInstanceOf[SharepointLogoInverse]
+  
+  @scala.inline
+  def Shield: Shield = "Shield".asInstanceOf[Shield]
+  
+  @scala.inline
+  def ShieldAlert: ShieldAlert = "ShieldAlert".asInstanceOf[ShieldAlert]
+  
+  @scala.inline
+  def ShieldSolid: ShieldSolid = "ShieldSolid".asInstanceOf[ShieldSolid]
+  
+  @scala.inline
+  def Shirt: Shirt = "Shirt".asInstanceOf[Shirt]
+  
+  @scala.inline
+  def Shop: Shop = "Shop".asInstanceOf[Shop]
+  
+  @scala.inline
+  def ShopServer: ShopServer = "ShopServer".asInstanceOf[ShopServer]
+  
+  @scala.inline
+  def ShoppingCart: ShoppingCart = "ShoppingCart".asInstanceOf[ShoppingCart]
+  
+  @scala.inline
+  def ShoppingCartSolid: ShoppingCartSolid = "ShoppingCartSolid".asInstanceOf[ShoppingCartSolid]
+  
+  @scala.inline
+  def ShowGrid: ShowGrid = "ShowGrid".asInstanceOf[ShowGrid]
+  
+  @scala.inline
+  def ShowResults: ShowResults = "ShowResults".asInstanceOf[ShowResults]
+  
+  @scala.inline
+  def ShowResultsMirrored: ShowResultsMirrored = "ShowResultsMirrored".asInstanceOf[ShowResultsMirrored]
+  
+  @scala.inline
+  def ShowTimeAs: ShowTimeAs = "ShowTimeAs".asInstanceOf[ShowTimeAs]
+  
+  @scala.inline
+  def SidePanel: SidePanel = "SidePanel".asInstanceOf[SidePanel]
+  
+  @scala.inline
+  def SidePanelMirrored: SidePanelMirrored = "SidePanelMirrored".asInstanceOf[SidePanelMirrored]
+  
+  @scala.inline
+  def SignOut: SignOut = "SignOut".asInstanceOf[SignOut]
+  
+  @scala.inline
+  def Signin: Signin = "Signin".asInstanceOf[Signin]
+  
+  @scala.inline
+  def SingleBookmark: SingleBookmark = "SingleBookmark".asInstanceOf[SingleBookmark]
+  
+  @scala.inline
+  def SingleBookmarkSolid: SingleBookmarkSolid = "SingleBookmarkSolid".asInstanceOf[SingleBookmarkSolid]
+  
+  @scala.inline
+  def SingleColumn: SingleColumn = "SingleColumn".asInstanceOf[SingleColumn]
+  
+  @scala.inline
+  def SingleColumnEdit: SingleColumnEdit = "SingleColumnEdit".asInstanceOf[SingleColumnEdit]
+  
+  @scala.inline
+  def SiteScan: SiteScan = "SiteScan".asInstanceOf[SiteScan]
+  
+  @scala.inline
+  def SixPointStar: SixPointStar = "SixPointStar".asInstanceOf[SixPointStar]
+  
+  @scala.inline
+  def SizeLegacy: SizeLegacy = "SizeLegacy".asInstanceOf[SizeLegacy]
+  
+  @scala.inline
+  def SkiResorts: SkiResorts = "SkiResorts".asInstanceOf[SkiResorts]
+  
+  @scala.inline
+  def SkypeArrow: SkypeArrow = "SkypeArrow".asInstanceOf[SkypeArrow]
+  
+  @scala.inline
+  def SkypeCheck: SkypeCheck = "SkypeCheck".asInstanceOf[SkypeCheck]
+  
+  @scala.inline
+  def SkypeCircleArrow: SkypeCircleArrow = "SkypeCircleArrow".asInstanceOf[SkypeCircleArrow]
+  
+  @scala.inline
+  def SkypeCircleCheck: SkypeCircleCheck = "SkypeCircleCheck".asInstanceOf[SkypeCircleCheck]
+  
+  @scala.inline
+  def SkypeCircleClock: SkypeCircleClock = "SkypeCircleClock".asInstanceOf[SkypeCircleClock]
+  
+  @scala.inline
+  def SkypeCircleMinus: SkypeCircleMinus = "SkypeCircleMinus".asInstanceOf[SkypeCircleMinus]
+  
+  @scala.inline
+  def SkypeCircleSlash: SkypeCircleSlash = "SkypeCircleSlash".asInstanceOf[SkypeCircleSlash]
+  
+  @scala.inline
+  def SkypeClock: SkypeClock = "SkypeClock".asInstanceOf[SkypeClock]
+  
+  @scala.inline
+  def SkypeForBusinessLogo: SkypeForBusinessLogo = "SkypeForBusinessLogo".asInstanceOf[SkypeForBusinessLogo]
+  
+  @scala.inline
+  def SkypeForBusinessLogo16: SkypeForBusinessLogo16 = "SkypeForBusinessLogo16".asInstanceOf[SkypeForBusinessLogo16]
+  
+  @scala.inline
+  def SkypeForBusinessLogoFill: SkypeForBusinessLogoFill = "SkypeForBusinessLogoFill".asInstanceOf[SkypeForBusinessLogoFill]
+  
+  @scala.inline
+  def SkypeForBusinessLogoFill16: SkypeForBusinessLogoFill16 = "SkypeForBusinessLogoFill16".asInstanceOf[SkypeForBusinessLogoFill16]
+  
+  @scala.inline
+  def SkypeLogo: SkypeLogo = "SkypeLogo".asInstanceOf[SkypeLogo]
+  
+  @scala.inline
+  def SkypeLogo16: SkypeLogo16 = "SkypeLogo16".asInstanceOf[SkypeLogo16]
+  
+  @scala.inline
+  def SkypeMessage: SkypeMessage = "SkypeMessage".asInstanceOf[SkypeMessage]
+  
+  @scala.inline
+  def SkypeMinus: SkypeMinus = "SkypeMinus".asInstanceOf[SkypeMinus]
+  
+  @scala.inline
+  def SkypeSlash: SkypeSlash = "SkypeSlash".asInstanceOf[SkypeSlash]
+  
+  @scala.inline
+  def Slider: Slider = "Slider".asInstanceOf[Slider]
+  
+  @scala.inline
+  def SliderHandleSize: SliderHandleSize = "SliderHandleSize".asInstanceOf[SliderHandleSize]
+  
+  @scala.inline
+  def SliderThumb: SliderThumb = "SliderThumb".asInstanceOf[SliderThumb]
+  
+  @scala.inline
+  def Slideshow: Slideshow = "Slideshow".asInstanceOf[Slideshow]
+  
+  @scala.inline
+  def SmartGlassRemote: SmartGlassRemote = "SmartGlassRemote".asInstanceOf[SmartGlassRemote]
+  
+  @scala.inline
+  def SnapToGrid: SnapToGrid = "SnapToGrid".asInstanceOf[SnapToGrid]
+  
+  @scala.inline
+  def Snooze: Snooze = "Snooze".asInstanceOf[Snooze]
+  
+  @scala.inline
+  def Snow: Snow = "Snow".asInstanceOf[Snow]
+  
+  @scala.inline
+  def SnowShowerDay: SnowShowerDay = "SnowShowerDay".asInstanceOf[SnowShowerDay]
+  
+  @scala.inline
+  def SnowShowerNight: SnowShowerNight = "SnowShowerNight".asInstanceOf[SnowShowerNight]
+  
+  @scala.inline
+  def Snowflake: Snowflake = "Snowflake".asInstanceOf[Snowflake]
+  
+  @scala.inline
+  def Soccer: Soccer = "Soccer".asInstanceOf[Soccer]
+  
+  @scala.inline
+  def SocialListeningLogo: SocialListeningLogo = "SocialListeningLogo".asInstanceOf[SocialListeningLogo]
+  
+  @scala.inline
+  def Sort: Sort = "Sort".asInstanceOf[Sort]
+  
+  @scala.inline
+  def SortDown: SortDown = "SortDown".asInstanceOf[SortDown]
+  
+  @scala.inline
+  def SortLines: SortLines = "SortLines".asInstanceOf[SortLines]
+  
+  @scala.inline
+  def SortUp: SortUp = "SortUp".asInstanceOf[SortUp]
+  
+  @scala.inline
+  def Source: Source = "Source".asInstanceOf[Source]
+  
+  @scala.inline
+  def Spacer: Spacer = "Spacer".asInstanceOf[Spacer]
+  
+  @scala.inline
+  def Speakers: Speakers = "Speakers".asInstanceOf[Speakers]
+  
+  @scala.inline
+  def SpecialEvent: SpecialEvent = "SpecialEvent".asInstanceOf[SpecialEvent]
+  
+  @scala.inline
+  def SpeedHigh: SpeedHigh = "SpeedHigh".asInstanceOf[SpeedHigh]
+  
+  @scala.inline
+  def Split: Split = "Split".asInstanceOf[Split]
+  
+  @scala.inline
+  def SplitObject: SplitObject = "SplitObject".asInstanceOf[SplitObject]
+  
+  @scala.inline
+  def Sprint: Sprint = "Sprint".asInstanceOf[Sprint]
+  
+  @scala.inline
+  def Squalls: Squalls = "Squalls".asInstanceOf[Squalls]
+  
+  @scala.inline
+  def SquareShapeSolid: SquareShapeSolid = "SquareShapeSolid".asInstanceOf[SquareShapeSolid]
+  
+  @scala.inline
+  def Stack: Stack = "Stack".asInstanceOf[Stack]
+  
+  @scala.inline
+  def StackColumnChart: StackColumnChart = "StackColumnChart".asInstanceOf[StackColumnChart]
+  
+  @scala.inline
+  def StackIndicator: StackIndicator = "StackIndicator".asInstanceOf[StackIndicator]
+  
+  @scala.inline
+  def StackedBarChart: StackedBarChart = "StackedBarChart".asInstanceOf[StackedBarChart]
+  
+  @scala.inline
+  def StackedColumnChart2: StackedColumnChart2 = "StackedColumnChart2".asInstanceOf[StackedColumnChart2]
+  
+  @scala.inline
+  def StackedColumnChart2Fill: StackedColumnChart2Fill = "StackedColumnChart2Fill".asInstanceOf[StackedColumnChart2Fill]
+  
+  @scala.inline
+  def StackedLineChart: StackedLineChart = "StackedLineChart".asInstanceOf[StackedLineChart]
+  
+  @scala.inline
+  def StaffNotebookLogo16: StaffNotebookLogo16 = "StaffNotebookLogo16".asInstanceOf[StaffNotebookLogo16]
+  
+  @scala.inline
+  def StaffNotebookLogo32: StaffNotebookLogo32 = "StaffNotebookLogo32".asInstanceOf[StaffNotebookLogo32]
+  
+  @scala.inline
+  def StaffNotebookLogoFill16: StaffNotebookLogoFill16 = "StaffNotebookLogoFill16".asInstanceOf[StaffNotebookLogoFill16]
+  
+  @scala.inline
+  def StaffNotebookLogoFill32: StaffNotebookLogoFill32 = "StaffNotebookLogoFill32".asInstanceOf[StaffNotebookLogoFill32]
+  
+  @scala.inline
+  def StaffNotebookLogoInverted16: StaffNotebookLogoInverted16 = "StaffNotebookLogoInverted16".asInstanceOf[StaffNotebookLogoInverted16]
+  
+  @scala.inline
+  def StaffNotebookLogoInverted32: StaffNotebookLogoInverted32 = "StaffNotebookLogoInverted32".asInstanceOf[StaffNotebookLogoInverted32]
+  
+  @scala.inline
+  def Starburst: Starburst = "Starburst".asInstanceOf[Starburst]
+  
+  @scala.inline
+  def StarburstSolid: StarburstSolid = "StarburstSolid".asInstanceOf[StarburstSolid]
+  
+  @scala.inline
+  def StatusCircleBlock: StatusCircleBlock = "StatusCircleBlock".asInstanceOf[StatusCircleBlock]
+  
+  @scala.inline
+  def StatusCircleBlock2: StatusCircleBlock2 = "StatusCircleBlock2".asInstanceOf[StatusCircleBlock2]
+  
+  @scala.inline
+  def StatusCircleCheckmark: StatusCircleCheckmark = "StatusCircleCheckmark".asInstanceOf[StatusCircleCheckmark]
+  
+  @scala.inline
+  def StatusCircleErrorX: StatusCircleErrorX = "StatusCircleErrorX".asInstanceOf[StatusCircleErrorX]
+  
+  @scala.inline
+  def StatusCircleExclamation: StatusCircleExclamation = "StatusCircleExclamation".asInstanceOf[StatusCircleExclamation]
+  
+  @scala.inline
+  def StatusCircleInfo: StatusCircleInfo = "StatusCircleInfo".asInstanceOf[StatusCircleInfo]
+  
+  @scala.inline
+  def StatusCircleInner: StatusCircleInner = "StatusCircleInner".asInstanceOf[StatusCircleInner]
+  
+  @scala.inline
+  def StatusCircleOuter: StatusCircleOuter = "StatusCircleOuter".asInstanceOf[StatusCircleOuter]
+  
+  @scala.inline
+  def StatusCircleQuestionMark: StatusCircleQuestionMark = "StatusCircleQuestionMark".asInstanceOf[StatusCircleQuestionMark]
+  
+  @scala.inline
+  def StatusCircleRing: StatusCircleRing = "StatusCircleRing".asInstanceOf[StatusCircleRing]
+  
+  @scala.inline
+  def StatusCircleSync: StatusCircleSync = "StatusCircleSync".asInstanceOf[StatusCircleSync]
+  
+  @scala.inline
+  def StatusErrorFull: StatusErrorFull = "StatusErrorFull".asInstanceOf[StatusErrorFull]
+  
+  @scala.inline
+  def StatusTriangle: StatusTriangle = "StatusTriangle".asInstanceOf[StatusTriangle]
+  
+  @scala.inline
+  def StatusTriangleExclamation: StatusTriangleExclamation = "StatusTriangleExclamation".asInstanceOf[StatusTriangleExclamation]
+  
+  @scala.inline
+  def StatusTriangleInner: StatusTriangleInner = "StatusTriangleInner".asInstanceOf[StatusTriangleInner]
+  
+  @scala.inline
+  def StatusTriangleOuter: StatusTriangleOuter = "StatusTriangleOuter".asInstanceOf[StatusTriangleOuter]
+  
+  @scala.inline
+  def Step: Step = "Step".asInstanceOf[Step]
+  
+  @scala.inline
+  def StepInsert: StepInsert = "StepInsert".asInstanceOf[StepInsert]
+  
+  @scala.inline
+  def StepShared: StepShared = "StepShared".asInstanceOf[StepShared]
+  
+  @scala.inline
+  def StepSharedAdd: StepSharedAdd = "StepSharedAdd".asInstanceOf[StepSharedAdd]
+  
+  @scala.inline
+  def StepSharedInsert: StepSharedInsert = "StepSharedInsert".asInstanceOf[StepSharedInsert]
+  
+  @scala.inline
+  def StockDown: StockDown = "StockDown".asInstanceOf[StockDown]
+  
+  @scala.inline
+  def StockUp: StockUp = "StockUp".asInstanceOf[StockUp]
+  
+  @scala.inline
+  def Stop: Stop = "Stop".asInstanceOf[Stop]
+  
+  @scala.inline
+  def StopSolid: StopSolid = "StopSolid".asInstanceOf[StopSolid]
+  
+  @scala.inline
+  def Stopwatch: Stopwatch = "Stopwatch".asInstanceOf[Stopwatch]
+  
+  @scala.inline
+  def StorageOptical: StorageOptical = "StorageOptical".asInstanceOf[StorageOptical]
+  
+  @scala.inline
+  def StoreLogo16: StoreLogo16 = "StoreLogo16".asInstanceOf[StoreLogo16]
+  
+  @scala.inline
+  def StoreLogoMed20: StoreLogoMed20 = "StoreLogoMed20".asInstanceOf[StoreLogoMed20]
+  
+  @scala.inline
+  def Storyboard: Storyboard = "Storyboard".asInstanceOf[Storyboard]
+  
+  @scala.inline
+  def StreamLogo: StreamLogo = "StreamLogo".asInstanceOf[StreamLogo]
+  
+  @scala.inline
+  def Streaming: Streaming = "Streaming".asInstanceOf[Streaming]
+  
+  @scala.inline
+  def StreamingOff: StreamingOff = "StreamingOff".asInstanceOf[StreamingOff]
+  
+  @scala.inline
+  def Street: Street = "Street".asInstanceOf[Street]
+  
+  @scala.inline
+  def StreetsideSplitMinimize: StreetsideSplitMinimize = "StreetsideSplitMinimize".asInstanceOf[StreetsideSplitMinimize]
+  
+  @scala.inline
+  def Strikethrough: Strikethrough = "Strikethrough".asInstanceOf[Strikethrough]
+  
+  @scala.inline
+  def Subscribe: Subscribe = "Subscribe".asInstanceOf[Subscribe]
+  
+  @scala.inline
+  def Subscript: Subscript = "Subscript".asInstanceOf[Subscript]
+  
+  @scala.inline
+  def SubstitutionsIn: SubstitutionsIn = "SubstitutionsIn".asInstanceOf[SubstitutionsIn]
+  
+  @scala.inline
+  def Suitcase: Suitcase = "Suitcase".asInstanceOf[Suitcase]
+  
+  @scala.inline
+  def SunAdd: SunAdd = "SunAdd".asInstanceOf[SunAdd]
+  
+  @scala.inline
+  def SunQuestionMark: SunQuestionMark = "SunQuestionMark".asInstanceOf[SunQuestionMark]
+  
+  @scala.inline
+  def Sunny: Sunny = "Sunny".asInstanceOf[Sunny]
+  
+  @scala.inline
+  def Superscript: Superscript = "Superscript".asInstanceOf[Superscript]
+  
+  @scala.inline
+  def SurveyQuestions: SurveyQuestions = "SurveyQuestions".asInstanceOf[SurveyQuestions]
+  
+  @scala.inline
+  def SwayLogo16: SwayLogo16 = "SwayLogo16".asInstanceOf[SwayLogo16]
+  
+  @scala.inline
+  def SwayLogo32: SwayLogo32 = "SwayLogo32".asInstanceOf[SwayLogo32]
+  
+  @scala.inline
+  def SwayLogoFill16: SwayLogoFill16 = "SwayLogoFill16".asInstanceOf[SwayLogoFill16]
+  
+  @scala.inline
+  def SwayLogoFill32: SwayLogoFill32 = "SwayLogoFill32".asInstanceOf[SwayLogoFill32]
+  
+  @scala.inline
+  def SwayLogoInverse: SwayLogoInverse = "SwayLogoInverse".asInstanceOf[SwayLogoInverse]
+  
+  @scala.inline
+  def Switch: Switch = "Switch".asInstanceOf[Switch]
+  
+  @scala.inline
+  def SwitcherStartEnd: SwitcherStartEnd = "SwitcherStartEnd".asInstanceOf[SwitcherStartEnd]
+  
+  @scala.inline
+  def Sync: Sync = "Sync".asInstanceOf[Sync]
+  
+  @scala.inline
+  def SyncFolder: SyncFolder = "SyncFolder".asInstanceOf[SyncFolder]
+  
+  @scala.inline
+  def SyncOccurence: SyncOccurence = "SyncOccurence".asInstanceOf[SyncOccurence]
+  
+  @scala.inline
+  def SyncStatus: SyncStatus = "SyncStatus".asInstanceOf[SyncStatus]
+  
+  @scala.inline
+  def SyncStatusSolid: SyncStatusSolid = "SyncStatusSolid".asInstanceOf[SyncStatusSolid]
+  
+  @scala.inline
+  def SyncToPC: SyncToPC = "SyncToPC".asInstanceOf[SyncToPC]
+  
+  @scala.inline
+  def System: System = "System".asInstanceOf[System]
+  
+  @scala.inline
+  def TFVCLogo: TFVCLogo = "TFVCLogo".asInstanceOf[TFVCLogo]
+  
+  @scala.inline
+  def TVMonitor: TVMonitor = "TVMonitor".asInstanceOf[TVMonitor]
+  
+  @scala.inline
+  def TVMonitorSelected: TVMonitorSelected = "TVMonitorSelected".asInstanceOf[TVMonitorSelected]
+  
+  @scala.inline
+  def Tab: Tab = "Tab".asInstanceOf[Tab]
+  
+  @scala.inline
+  def TabCenter: TabCenter = "TabCenter".asInstanceOf[TabCenter]
+  
+  @scala.inline
+  def TabOneColumn: TabOneColumn = "TabOneColumn".asInstanceOf[TabOneColumn]
+  
+  @scala.inline
+  def TabThreeColumn: TabThreeColumn = "TabThreeColumn".asInstanceOf[TabThreeColumn]
+  
+  @scala.inline
+  def TabTwoColumn: TabTwoColumn = "TabTwoColumn".asInstanceOf[TabTwoColumn]
+  
+  @scala.inline
+  def Table: Table = "Table".asInstanceOf[Table]
+  
+  @scala.inline
+  def TableComputed: TableComputed = "TableComputed".asInstanceOf[TableComputed]
+  
+  @scala.inline
+  def TableGroup: TableGroup = "TableGroup".asInstanceOf[TableGroup]
+  
+  @scala.inline
+  def TableLink: TableLink = "TableLink".asInstanceOf[TableLink]
+  
+  @scala.inline
+  def Tablet: Tablet = "Tablet".asInstanceOf[Tablet]
+  
+  @scala.inline
+  def TabletMode: TabletMode = "TabletMode".asInstanceOf[TabletMode]
+  
+  @scala.inline
+  def TabletSelected: TabletSelected = "TabletSelected".asInstanceOf[TabletSelected]
+  
+  @scala.inline
+  def Tag: Tag = "Tag".asInstanceOf[Tag]
+  
+  @scala.inline
+  def TagSolid: TagSolid = "TagSolid".asInstanceOf[TagSolid]
+  
+  @scala.inline
+  def TagUnknown: TagUnknown = "TagUnknown".asInstanceOf[TagUnknown]
+  
+  @scala.inline
+  def TagUnknown12: TagUnknown12 = "TagUnknown12".asInstanceOf[TagUnknown12]
+  
+  @scala.inline
+  def TagUnknown12Mirror: TagUnknown12Mirror = "TagUnknown12Mirror".asInstanceOf[TagUnknown12Mirror]
+  
+  @scala.inline
+  def TagUnknownMirror: TagUnknownMirror = "TagUnknownMirror".asInstanceOf[TagUnknownMirror]
+  
+  @scala.inline
+  def TaskGroup: TaskGroup = "TaskGroup".asInstanceOf[TaskGroup]
+  
+  @scala.inline
+  def TaskGroupMirrored: TaskGroupMirrored = "TaskGroupMirrored".asInstanceOf[TaskGroupMirrored]
+  
+  @scala.inline
+  def TaskLogo: TaskLogo = "TaskLogo".asInstanceOf[TaskLogo]
+  
+  @scala.inline
+  def TaskManager: TaskManager = "TaskManager".asInstanceOf[TaskManager]
+  
+  @scala.inline
+  def TaskManagerMirrored: TaskManagerMirrored = "TaskManagerMirrored".asInstanceOf[TaskManagerMirrored]
+  
+  @scala.inline
+  def TaskSolid: TaskSolid = "TaskSolid".asInstanceOf[TaskSolid]
+  
+  @scala.inline
+  def Taskboard: Taskboard = "Taskboard".asInstanceOf[Taskboard]
+  
+  @scala.inline
+  def Taxi: Taxi = "Taxi".asInstanceOf[Taxi]
+  
+  @scala.inline
+  def TeamFavorite: TeamFavorite = "TeamFavorite".asInstanceOf[TeamFavorite]
+  
+  @scala.inline
+  def TeamsLogo: TeamsLogo = "TeamsLogo".asInstanceOf[TeamsLogo]
+  
+  @scala.inline
+  def TeamsLogo16: TeamsLogo16 = "TeamsLogo16".asInstanceOf[TeamsLogo16]
+  
+  @scala.inline
+  def TeamsLogoFill: TeamsLogoFill = "TeamsLogoFill".asInstanceOf[TeamsLogoFill]
+  
+  @scala.inline
+  def TeamsLogoFill16: TeamsLogoFill16 = "TeamsLogoFill16".asInstanceOf[TeamsLogoFill16]
+  
+  @scala.inline
+  def TeamsLogoInverse: TeamsLogoInverse = "TeamsLogoInverse".asInstanceOf[TeamsLogoInverse]
+  
+  @scala.inline
+  def Teamwork: Teamwork = "Teamwork".asInstanceOf[Teamwork]
+  
+  @scala.inline
+  def Teeth: Teeth = "Teeth".asInstanceOf[Teeth]
+  
+  @scala.inline
+  def Telemarketer: Telemarketer = "Telemarketer".asInstanceOf[Telemarketer]
+  
+  @scala.inline
+  def TemporaryUser: TemporaryUser = "TemporaryUser".asInstanceOf[TemporaryUser]
+  
+  @scala.inline
+  def Tennis: Tennis = "Tennis".asInstanceOf[Tennis]
+  
+  @scala.inline
+  def TestAutoSolid: TestAutoSolid = "TestAutoSolid".asInstanceOf[TestAutoSolid]
+  
+  @scala.inline
+  def TestBeaker: TestBeaker = "TestBeaker".asInstanceOf[TestBeaker]
+  
+  @scala.inline
+  def TestBeakerSolid: TestBeakerSolid = "TestBeakerSolid".asInstanceOf[TestBeakerSolid]
+  
+  @scala.inline
+  def TestCase: TestCase = "TestCase".asInstanceOf[TestCase]
+  
+  @scala.inline
+  def TestExploreSolid: TestExploreSolid = "TestExploreSolid".asInstanceOf[TestExploreSolid]
+  
+  @scala.inline
+  def TestImpactSolid: TestImpactSolid = "TestImpactSolid".asInstanceOf[TestImpactSolid]
+  
+  @scala.inline
+  def TestParameter: TestParameter = "TestParameter".asInstanceOf[TestParameter]
+  
+  @scala.inline
+  def TestPlan: TestPlan = "TestPlan".asInstanceOf[TestPlan]
+  
+  @scala.inline
+  def TestStep: TestStep = "TestStep".asInstanceOf[TestStep]
+  
+  @scala.inline
+  def TestSuite: TestSuite = "TestSuite".asInstanceOf[TestSuite]
+  
+  @scala.inline
+  def TestUserSolid: TestUserSolid = "TestUserSolid".asInstanceOf[TestUserSolid]
+  
+  @scala.inline
+  def TextBox: TextBox = "TextBox".asInstanceOf[TextBox]
+  
+  @scala.inline
+  def TextCallout: TextCallout = "TextCallout".asInstanceOf[TextCallout]
+  
+  @scala.inline
+  def TextDocument: TextDocument = "TextDocument".asInstanceOf[TextDocument]
+  
+  @scala.inline
+  def TextDocumentShared: TextDocumentShared = "TextDocumentShared".asInstanceOf[TextDocumentShared]
+  
+  @scala.inline
+  def TextField: TextField = "TextField".asInstanceOf[TextField]
+  
+  @scala.inline
+  def TextOverflow: TextOverflow = "TextOverflow".asInstanceOf[TextOverflow]
+  
+  @scala.inline
+  def ThisPC: ThisPC = "ThisPC".asInstanceOf[ThisPC]
+  
+  @scala.inline
+  def ThreeQuarterCircle: ThreeQuarterCircle = "ThreeQuarterCircle".asInstanceOf[ThreeQuarterCircle]
+  
+  @scala.inline
+  def ThumbnailView: ThumbnailView = "ThumbnailView".asInstanceOf[ThumbnailView]
+  
+  @scala.inline
+  def ThumbnailViewMirrored: ThumbnailViewMirrored = "ThumbnailViewMirrored".asInstanceOf[ThumbnailViewMirrored]
+  
+  @scala.inline
+  def Thunderstorms: Thunderstorms = "Thunderstorms".asInstanceOf[Thunderstorms]
+  
+  @scala.inline
+  def Ticket: Ticket = "Ticket".asInstanceOf[Ticket]
+  
+  @scala.inline
+  def Tiles: Tiles = "Tiles".asInstanceOf[Tiles]
+  
+  @scala.inline
+  def Tiles2: Tiles2 = "Tiles2".asInstanceOf[Tiles2]
+  
+  @scala.inline
+  def TimeEntry: TimeEntry = "TimeEntry".asInstanceOf[TimeEntry]
+  
+  @scala.inline
+  def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
+  
+  @scala.inline
+  def TimeSheet: TimeSheet = "TimeSheet".asInstanceOf[TimeSheet]
+  
+  @scala.inline
+  def Timeline: Timeline = "Timeline".asInstanceOf[Timeline]
+  
+  @scala.inline
+  def TimelineDelivery: TimelineDelivery = "TimelineDelivery".asInstanceOf[TimelineDelivery]
+  
+  @scala.inline
+  def TimelineMatrixView: TimelineMatrixView = "TimelineMatrixView".asInstanceOf[TimelineMatrixView]
+  
+  @scala.inline
+  def TimelineProgress: TimelineProgress = "TimelineProgress".asInstanceOf[TimelineProgress]
+  
+  @scala.inline
+  def Timer: Timer = "Timer".asInstanceOf[Timer]
+  
+  @scala.inline
+  def ToDoLogoBottom: ToDoLogoBottom = "ToDoLogoBottom".asInstanceOf[ToDoLogoBottom]
+  
+  @scala.inline
+  def ToDoLogoInverse: ToDoLogoInverse = "ToDoLogoInverse".asInstanceOf[ToDoLogoInverse]
+  
+  @scala.inline
+  def ToDoLogoOutline: ToDoLogoOutline = "ToDoLogoOutline".asInstanceOf[ToDoLogoOutline]
+  
+  @scala.inline
+  def ToDoLogoTop: ToDoLogoTop = "ToDoLogoTop".asInstanceOf[ToDoLogoTop]
+  
+  @scala.inline
+  def ToggleBorder: ToggleBorder = "ToggleBorder".asInstanceOf[ToggleBorder]
+  
+  @scala.inline
+  def ToggleFilled: ToggleFilled = "ToggleFilled".asInstanceOf[ToggleFilled]
+  
+  @scala.inline
+  def ToggleLeft: ToggleLeft = "ToggleLeft".asInstanceOf[ToggleLeft]
+  
+  @scala.inline
+  def ToggleRight: ToggleRight = "ToggleRight".asInstanceOf[ToggleRight]
+  
+  @scala.inline
+  def ToggleThumb: ToggleThumb = "ToggleThumb".asInstanceOf[ToggleThumb]
+  
+  @scala.inline
+  def Toll: Toll = "Toll".asInstanceOf[Toll]
+  
+  @scala.inline
+  def Toolbox: Toolbox = "Toolbox".asInstanceOf[Toolbox]
+  
+  @scala.inline
+  def Touch: Touch = "Touch".asInstanceOf[Touch]
+  
+  @scala.inline
+  def TouchPointer: TouchPointer = "TouchPointer".asInstanceOf[TouchPointer]
+  
+  @scala.inline
+  def Trackers: Trackers = "Trackers".asInstanceOf[Trackers]
+  
+  @scala.inline
+  def TrackersMirrored: TrackersMirrored = "TrackersMirrored".asInstanceOf[TrackersMirrored]
+  
+  @scala.inline
+  def Train: Train = "Train".asInstanceOf[Train]
+  
+  @scala.inline
+  def TrainSolid: TrainSolid = "TrainSolid".asInstanceOf[TrainSolid]
+  
+  @scala.inline
+  def TransferCall: TransferCall = "TransferCall".asInstanceOf[TransferCall]
+  
+  @scala.inline
+  def Transition: Transition = "Transition".asInstanceOf[Transition]
+  
+  @scala.inline
+  def TransitionEffect: TransitionEffect = "TransitionEffect".asInstanceOf[TransitionEffect]
+  
+  @scala.inline
+  def TransitionPop: TransitionPop = "TransitionPop".asInstanceOf[TransitionPop]
+  
+  @scala.inline
+  def TransitionPush: TransitionPush = "TransitionPush".asInstanceOf[TransitionPush]
+  
+  @scala.inline
+  def Translate: Translate = "Translate".asInstanceOf[Translate]
+  
+  @scala.inline
+  def Trending12: Trending12 = "Trending12".asInstanceOf[Trending12]
+  
+  @scala.inline
+  def TriangleDown12: TriangleDown12 = "TriangleDown12".asInstanceOf[TriangleDown12]
+  
+  @scala.inline
+  def TriangleLeft12: TriangleLeft12 = "TriangleLeft12".asInstanceOf[TriangleLeft12]
+  
+  @scala.inline
+  def TriangleRight12: TriangleRight12 = "TriangleRight12".asInstanceOf[TriangleRight12]
+  
+  @scala.inline
+  def TriangleShape: TriangleShape = "TriangleShape".asInstanceOf[TriangleShape]
+  
+  @scala.inline
+  def TriangleShapeSolid: TriangleShapeSolid = "TriangleShapeSolid".asInstanceOf[TriangleShapeSolid]
+  
+  @scala.inline
+  def TriangleSolid: TriangleSolid = "TriangleSolid".asInstanceOf[TriangleSolid]
+  
+  @scala.inline
+  def TriangleSolidDown12: TriangleSolidDown12 = "TriangleSolidDown12".asInstanceOf[TriangleSolidDown12]
+  
+  @scala.inline
+  def TriangleSolidLeft12: TriangleSolidLeft12 = "TriangleSolidLeft12".asInstanceOf[TriangleSolidLeft12]
+  
+  @scala.inline
+  def TriangleSolidRight12: TriangleSolidRight12 = "TriangleSolidRight12".asInstanceOf[TriangleSolidRight12]
+  
+  @scala.inline
+  def TriangleSolidUp12: TriangleSolidUp12 = "TriangleSolidUp12".asInstanceOf[TriangleSolidUp12]
+  
+  @scala.inline
+  def TriangleUp12: TriangleUp12 = "TriangleUp12".asInstanceOf[TriangleUp12]
+  
+  @scala.inline
+  def TriggerApproval: TriggerApproval = "TriggerApproval".asInstanceOf[TriggerApproval]
+  
+  @scala.inline
+  def TriggerAuto: TriggerAuto = "TriggerAuto".asInstanceOf[TriggerAuto]
+  
+  @scala.inline
+  def TriggerUser: TriggerUser = "TriggerUser".asInstanceOf[TriggerUser]
+  
+  @scala.inline
+  def Trim: Trim = "Trim".asInstanceOf[Trim]
+  
+  @scala.inline
+  def TrimEnd: TrimEnd = "TrimEnd".asInstanceOf[TrimEnd]
+  
+  @scala.inline
+  def TrimStart: TrimStart = "TrimStart".asInstanceOf[TrimStart]
+  
+  @scala.inline
+  def TripleColumn: TripleColumn = "TripleColumn".asInstanceOf[TripleColumn]
+  
+  @scala.inline
+  def TripleColumnEdit: TripleColumnEdit = "TripleColumnEdit".asInstanceOf[TripleColumnEdit]
+  
+  @scala.inline
+  def TripleColumnWide: TripleColumnWide = "TripleColumnWide".asInstanceOf[TripleColumnWide]
+  
+  @scala.inline
+  def Trophy: Trophy = "Trophy".asInstanceOf[Trophy]
+  
+  @scala.inline
+  def Trophy2: Trophy2 = "Trophy2".asInstanceOf[Trophy2]
+  
+  @scala.inline
+  def Trophy2Solid: Trophy2Solid = "Trophy2Solid".asInstanceOf[Trophy2Solid]
+  
+  @scala.inline
+  def TurnRight: TurnRight = "TurnRight".asInstanceOf[TurnRight]
+  
+  @scala.inline
+  def TwelvePointStar: TwelvePointStar = "TwelvePointStar".asInstanceOf[TwelvePointStar]
+  
+  @scala.inline
+  def TypeScriptLanguage: TypeScriptLanguage = "TypeScriptLanguage".asInstanceOf[TypeScriptLanguage]
+  
+  @scala.inline
+  def USB: USB = "USB".asInstanceOf[USB]
+  
+  @scala.inline
+  def Umbrella: Umbrella = "Umbrella".asInstanceOf[Umbrella]
+  
+  @scala.inline
+  def UnSetColor: UnSetColor = "UnSetColor".asInstanceOf[UnSetColor]
+  
+  @scala.inline
+  def Underline: Underline = "Underline".asInstanceOf[Underline]
+  
+  @scala.inline
+  def Undo: Undo = "Undo".asInstanceOf[Undo]
+  
+  @scala.inline
+  def Uneditable: Uneditable = "Uneditable".asInstanceOf[Uneditable]
+  
+  @scala.inline
+  def Uneditable2: Uneditable2 = "Uneditable2".asInstanceOf[Uneditable2]
+  
+  @scala.inline
+  def Uneditable2Mirrored: Uneditable2Mirrored = "Uneditable2Mirrored".asInstanceOf[Uneditable2Mirrored]
+  
+  @scala.inline
+  def UneditableMirrored: UneditableMirrored = "UneditableMirrored".asInstanceOf[UneditableMirrored]
+  
+  @scala.inline
+  def UneditableSolid12: UneditableSolid12 = "UneditableSolid12".asInstanceOf[UneditableSolid12]
+  
+  @scala.inline
+  def UneditableSolidMirrored12: UneditableSolidMirrored12 = "UneditableSolidMirrored12".asInstanceOf[UneditableSolidMirrored12]
+  
+  @scala.inline
+  def Unfavorite: Unfavorite = "Unfavorite".asInstanceOf[Unfavorite]
+  
+  @scala.inline
+  def UngroupObject: UngroupObject = "UngroupObject".asInstanceOf[UngroupObject]
+  
+  @scala.inline
+  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  
+  @scala.inline
+  def UnknownCall: UnknownCall = "UnknownCall".asInstanceOf[UnknownCall]
+  
+  @scala.inline
+  def UnknownMirrored: UnknownMirrored = "UnknownMirrored".asInstanceOf[UnknownMirrored]
+  
+  @scala.inline
+  def UnknownMirroredSolid: UnknownMirroredSolid = "UnknownMirroredSolid".asInstanceOf[UnknownMirroredSolid]
+  
+  @scala.inline
+  def UnknownSolid: UnknownSolid = "UnknownSolid".asInstanceOf[UnknownSolid]
+  
+  @scala.inline
+  def Unlock: Unlock = "Unlock".asInstanceOf[Unlock]
+  
+  @scala.inline
+  def UnlockSolid: UnlockSolid = "UnlockSolid".asInstanceOf[UnlockSolid]
+  
+  @scala.inline
+  def Unpin: Unpin = "Unpin".asInstanceOf[Unpin]
+  
+  @scala.inline
+  def UnpublishContent: UnpublishContent = "UnpublishContent".asInstanceOf[UnpublishContent]
+  
+  @scala.inline
+  def UnstackSelected: UnstackSelected = "UnstackSelected".asInstanceOf[UnstackSelected]
+  
+  @scala.inline
+  def Unsubscribe: Unsubscribe = "Unsubscribe".asInstanceOf[Unsubscribe]
+  
+  @scala.inline
+  def UnsyncFolder: UnsyncFolder = "UnsyncFolder".asInstanceOf[UnsyncFolder]
+  
+  @scala.inline
+  def UnsyncOccurence: UnsyncOccurence = "UnsyncOccurence".asInstanceOf[UnsyncOccurence]
+  
+  @scala.inline
+  def Untag: Untag = "Untag".asInstanceOf[Untag]
+  
+  @scala.inline
+  def Up: Up = "Up".asInstanceOf[Up]
+  
+  @scala.inline
+  def UpgradeAnalysis: UpgradeAnalysis = "UpgradeAnalysis".asInstanceOf[UpgradeAnalysis]
+  
+  @scala.inline
+  def Upload: Upload = "Upload".asInstanceOf[Upload]
+  
+  @scala.inline
+  def UserEvent: UserEvent = "UserEvent".asInstanceOf[UserEvent]
+  
+  @scala.inline
+  def UserFollowed: UserFollowed = "UserFollowed".asInstanceOf[UserFollowed]
+  
+  @scala.inline
+  def UserGauge: UserGauge = "UserGauge".asInstanceOf[UserGauge]
+  
+  @scala.inline
+  def UserOptional: UserOptional = "UserOptional".asInstanceOf[UserOptional]
+  
+  @scala.inline
+  def UserPause: UserPause = "UserPause".asInstanceOf[UserPause]
+  
+  @scala.inline
+  def UserRemove: UserRemove = "UserRemove".asInstanceOf[UserRemove]
+  
+  @scala.inline
+  def UserSync: UserSync = "UserSync".asInstanceOf[UserSync]
+  
+  @scala.inline
+  def UserWarning: UserWarning = "UserWarning".asInstanceOf[UserWarning]
+  
+  @scala.inline
+  def VB: VB = "VB".asInstanceOf[VB]
+  
+  @scala.inline
+  def VSTSAltLogo1: VSTSAltLogo1 = "VSTSAltLogo1".asInstanceOf[VSTSAltLogo1]
+  
+  @scala.inline
+  def VSTSAltLogo2: VSTSAltLogo2 = "VSTSAltLogo2".asInstanceOf[VSTSAltLogo2]
+  
+  @scala.inline
+  def VSTSLogo: VSTSLogo = "VSTSLogo".asInstanceOf[VSTSLogo]
+  
+  @scala.inline
+  def Vacation: Vacation = "Vacation".asInstanceOf[Vacation]
+  
+  @scala.inline
+  def Variable: Variable = "Variable".asInstanceOf[Variable]
+  
+  @scala.inline
+  def Variable2: Variable2 = "Variable2".asInstanceOf[Variable2]
+  
+  @scala.inline
+  def VariableGroup: VariableGroup = "VariableGroup".asInstanceOf[VariableGroup]
+  
+  @scala.inline
+  def VennDiagram: VennDiagram = "VennDiagram".asInstanceOf[VennDiagram]
+  
+  @scala.inline
+  def VerifiedBrand: VerifiedBrand = "VerifiedBrand".asInstanceOf[VerifiedBrand]
+  
+  @scala.inline
+  def VerifiedBrandSolid: VerifiedBrandSolid = "VerifiedBrandSolid".asInstanceOf[VerifiedBrandSolid]
+  
+  @scala.inline
+  def VersionControlPush: VersionControlPush = "VersionControlPush".asInstanceOf[VersionControlPush]
+  
+  @scala.inline
+  def VerticalDistributeCenter: VerticalDistributeCenter = "VerticalDistributeCenter".asInstanceOf[VerticalDistributeCenter]
+  
+  @scala.inline
+  def Video: Video = "Video".asInstanceOf[Video]
+  
+  @scala.inline
+  def Video360Generic: Video360Generic = "Video360Generic".asInstanceOf[Video360Generic]
+  
+  @scala.inline
+  def VideoLightOff: VideoLightOff = "VideoLightOff".asInstanceOf[VideoLightOff]
+  
+  @scala.inline
+  def VideoOff: VideoOff = "VideoOff".asInstanceOf[VideoOff]
+  
+  @scala.inline
+  def VideoSearch: VideoSearch = "VideoSearch".asInstanceOf[VideoSearch]
+  
+  @scala.inline
+  def VideoSolid: VideoSolid = "VideoSolid".asInstanceOf[VideoSolid]
+  
+  @scala.inline
+  def View: View = "View".asInstanceOf[View]
+  
+  @scala.inline
+  def ViewAll: ViewAll = "ViewAll".asInstanceOf[ViewAll]
+  
+  @scala.inline
+  def ViewAll2: ViewAll2 = "ViewAll2".asInstanceOf[ViewAll2]
+  
+  @scala.inline
+  def ViewDashboard: ViewDashboard = "ViewDashboard".asInstanceOf[ViewDashboard]
+  
+  @scala.inline
+  def ViewList: ViewList = "ViewList".asInstanceOf[ViewList]
+  
+  @scala.inline
+  def ViewListGroup: ViewListGroup = "ViewListGroup".asInstanceOf[ViewListGroup]
+  
+  @scala.inline
+  def ViewListTree: ViewListTree = "ViewListTree".asInstanceOf[ViewListTree]
+  
+  @scala.inline
+  def ViewOriginal: ViewOriginal = "ViewOriginal".asInstanceOf[ViewOriginal]
+  
+  @scala.inline
+  def VisioDiagram: VisioDiagram = "VisioDiagram".asInstanceOf[VisioDiagram]
+  
+  @scala.inline
+  def VisioDiagramSync: VisioDiagramSync = "VisioDiagramSync".asInstanceOf[VisioDiagramSync]
+  
+  @scala.inline
+  def VisioDocument: VisioDocument = "VisioDocument".asInstanceOf[VisioDocument]
+  
+  @scala.inline
+  def VisioLogo: VisioLogo = "VisioLogo".asInstanceOf[VisioLogo]
+  
+  @scala.inline
+  def VisioLogo16: VisioLogo16 = "VisioLogo16".asInstanceOf[VisioLogo16]
+  
+  @scala.inline
+  def VisioLogoFill: VisioLogoFill = "VisioLogoFill".asInstanceOf[VisioLogoFill]
+  
+  @scala.inline
+  def VisioLogoFill16: VisioLogoFill16 = "VisioLogoFill16".asInstanceOf[VisioLogoFill16]
+  
+  @scala.inline
+  def VisioLogoInverse: VisioLogoInverse = "VisioLogoInverse".asInstanceOf[VisioLogoInverse]
+  
+  @scala.inline
+  def VisioLogoInverse16: VisioLogoInverse16 = "VisioLogoInverse16".asInstanceOf[VisioLogoInverse16]
+  
+  @scala.inline
+  def VisioOnlineLogo32: VisioOnlineLogo32 = "VisioOnlineLogo32".asInstanceOf[VisioOnlineLogo32]
+  
+  @scala.inline
+  def VisioOnlineLogoCloud32: VisioOnlineLogoCloud32 = "VisioOnlineLogoCloud32".asInstanceOf[VisioOnlineLogoCloud32]
+  
+  @scala.inline
+  def VisioOnlineLogoFill32: VisioOnlineLogoFill32 = "VisioOnlineLogoFill32".asInstanceOf[VisioOnlineLogoFill32]
+  
+  @scala.inline
+  def VisualBasicLanguage: VisualBasicLanguage = "VisualBasicLanguage".asInstanceOf[VisualBasicLanguage]
+  
+  @scala.inline
+  def VisualStudioIDELogo32: VisualStudioIDELogo32 = "VisualStudioIDELogo32".asInstanceOf[VisualStudioIDELogo32]
+  
+  @scala.inline
+  def VisualStudioLogo: VisualStudioLogo = "VisualStudioLogo".asInstanceOf[VisualStudioLogo]
+  
+  @scala.inline
+  def VisuallyImpaired: VisuallyImpaired = "VisuallyImpaired".asInstanceOf[VisuallyImpaired]
+  
+  @scala.inline
+  def VisualsFolder: VisualsFolder = "VisualsFolder".asInstanceOf[VisualsFolder]
+  
+  @scala.inline
+  def VisualsStore: VisualsStore = "VisualsStore".asInstanceOf[VisualsStore]
+  
+  @scala.inline
+  def VoicemailForward: VoicemailForward = "VoicemailForward".asInstanceOf[VoicemailForward]
+  
+  @scala.inline
+  def VoicemailIRM: VoicemailIRM = "VoicemailIRM".asInstanceOf[VoicemailIRM]
+  
+  @scala.inline
+  def VoicemailReply: VoicemailReply = "VoicemailReply".asInstanceOf[VoicemailReply]
+  
+  @scala.inline
+  def Volume0: Volume0 = "Volume0".asInstanceOf[Volume0]
+  
+  @scala.inline
+  def Volume1: Volume1 = "Volume1".asInstanceOf[Volume1]
+  
+  @scala.inline
+  def Volume2: Volume2 = "Volume2".asInstanceOf[Volume2]
+  
+  @scala.inline
+  def Volume3: Volume3 = "Volume3".asInstanceOf[Volume3]
+  
+  @scala.inline
+  def VolumeDisabled: VolumeDisabled = "VolumeDisabled".asInstanceOf[VolumeDisabled]
+  
+  @scala.inline
+  def Waffle: Waffle = "Waffle".asInstanceOf[Waffle]
+  
+  @scala.inline
+  def WaffleOffice365: WaffleOffice365 = "WaffleOffice365".asInstanceOf[WaffleOffice365]
+  
+  @scala.inline
+  def WaitlistConfirm: WaitlistConfirm = "WaitlistConfirm".asInstanceOf[WaitlistConfirm]
+  
+  @scala.inline
+  def WaitlistConfirmMirrored: WaitlistConfirmMirrored = "WaitlistConfirmMirrored".asInstanceOf[WaitlistConfirmMirrored]
+  
+  @scala.inline
+  def Warning: Warning = "Warning".asInstanceOf[Warning]
+  
+  @scala.inline
+  def Warning12: Warning12 = "Warning12".asInstanceOf[Warning12]
+  
+  @scala.inline
+  def WarningSolid: WarningSolid = "WarningSolid".asInstanceOf[WarningSolid]
+  
+  @scala.inline
+  def WavingHand: WavingHand = "WavingHand".asInstanceOf[WavingHand]
+  
+  @scala.inline
+  def WebAppBuilderFragment: WebAppBuilderFragment = "WebAppBuilderFragment".asInstanceOf[WebAppBuilderFragment]
+  
+  @scala.inline
+  def WebAppBuilderFragmentCreate: WebAppBuilderFragmentCreate = "WebAppBuilderFragmentCreate".asInstanceOf[WebAppBuilderFragmentCreate]
+  
+  @scala.inline
+  def WebAppBuilderModule: WebAppBuilderModule = "WebAppBuilderModule".asInstanceOf[WebAppBuilderModule]
+  
+  @scala.inline
+  def WebAppBuilderSlot: WebAppBuilderSlot = "WebAppBuilderSlot".asInstanceOf[WebAppBuilderSlot]
+  
+  @scala.inline
+  def WebComponents: WebComponents = "WebComponents".asInstanceOf[WebComponents]
+  
+  @scala.inline
+  def WebPublish: WebPublish = "WebPublish".asInstanceOf[WebPublish]
+  
+  @scala.inline
+  def WebTemplate: WebTemplate = "WebTemplate".asInstanceOf[WebTemplate]
+  
+  @scala.inline
+  def Webcam2: Webcam2 = "Webcam2".asInstanceOf[Webcam2]
+  
+  @scala.inline
+  def Website: Website = "Website".asInstanceOf[Website]
+  
+  @scala.inline
+  def Weights: Weights = "Weights".asInstanceOf[Weights]
+  
+  @scala.inline
+  def Wheelchair: Wheelchair = "Wheelchair".asInstanceOf[Wheelchair]
+  
+  @scala.inline
+  def WhiteBoardApp16: WhiteBoardApp16 = "WhiteBoardApp16".asInstanceOf[WhiteBoardApp16]
+  
+  @scala.inline
+  def WhiteBoardApp32: WhiteBoardApp32 = "WhiteBoardApp32".asInstanceOf[WhiteBoardApp32]
+  
+  @scala.inline
+  def WifiEthernet: WifiEthernet = "WifiEthernet".asInstanceOf[WifiEthernet]
+  
+  @scala.inline
+  def WifiWarning4: WifiWarning4 = "WifiWarning4".asInstanceOf[WifiWarning4]
+  
+  @scala.inline
+  def WindDirection: WindDirection = "WindDirection".asInstanceOf[WindDirection]
+  
+  @scala.inline
+  def WindowEdit: WindowEdit = "WindowEdit".asInstanceOf[WindowEdit]
+  
+  @scala.inline
+  def WindowsLogo: WindowsLogo = "WindowsLogo".asInstanceOf[WindowsLogo]
+  
+  @scala.inline
+  def Wines: Wines = "Wines".asInstanceOf[Wines]
+  
+  @scala.inline
+  def WipePhone: WipePhone = "WipePhone".asInstanceOf[WipePhone]
+  
+  @scala.inline
+  def WordDocument: WordDocument = "WordDocument".asInstanceOf[WordDocument]
+  
+  @scala.inline
+  def WordLogo: WordLogo = "WordLogo".asInstanceOf[WordLogo]
+  
+  @scala.inline
+  def WordLogo16: WordLogo16 = "WordLogo16".asInstanceOf[WordLogo16]
+  
+  @scala.inline
+  def WordLogoFill: WordLogoFill = "WordLogoFill".asInstanceOf[WordLogoFill]
+  
+  @scala.inline
+  def WordLogoFill16: WordLogoFill16 = "WordLogoFill16".asInstanceOf[WordLogoFill16]
+  
+  @scala.inline
+  def WordLogoInverse: WordLogoInverse = "WordLogoInverse".asInstanceOf[WordLogoInverse]
+  
+  @scala.inline
+  def WordLogoInverse16: WordLogoInverse16 = "WordLogoInverse16".asInstanceOf[WordLogoInverse16]
+  
+  @scala.inline
+  def Work: Work = "Work".asInstanceOf[Work]
+  
+  @scala.inline
+  def WorkFlow: WorkFlow = "WorkFlow".asInstanceOf[WorkFlow]
+  
+  @scala.inline
+  def WorkItem: WorkItem = "WorkItem".asInstanceOf[WorkItem]
+  
+  @scala.inline
+  def WorkItemAlert: WorkItemAlert = "WorkItemAlert".asInstanceOf[WorkItemAlert]
+  
+  @scala.inline
+  def WorkItemBar: WorkItemBar = "WorkItemBar".asInstanceOf[WorkItemBar]
+  
+  @scala.inline
+  def WorkItemBarSolid: WorkItemBarSolid = "WorkItemBarSolid".asInstanceOf[WorkItemBarSolid]
+  
+  @scala.inline
+  def WorkItemBug: WorkItemBug = "WorkItemBug".asInstanceOf[WorkItemBug]
+  
+  @scala.inline
+  def WorkforceManagement: WorkforceManagement = "WorkforceManagement".asInstanceOf[WorkforceManagement]
+  
+  @scala.inline
+  def World: World = "World".asInstanceOf[World]
+  
+  @scala.inline
+  def WorldClock: WorldClock = "WorldClock".asInstanceOf[WorldClock]
+  
+  @scala.inline
+  def YammerLogo: YammerLogo = "YammerLogo".asInstanceOf[YammerLogo]
+  
+  @scala.inline
+  def ZipFolder: ZipFolder = "ZipFolder".asInstanceOf[ZipFolder]
+  
+  @scala.inline
+  def Zoom: Zoom = "Zoom".asInstanceOf[Zoom]
+  
+  @scala.inline
+  def ZoomIn: ZoomIn = "ZoomIn".asInstanceOf[ZoomIn]
+  
+  @scala.inline
+  def ZoomOut: ZoomOut = "ZoomOut".asInstanceOf[ZoomOut]
+  
+  @scala.inline
+  def ZoomToFit: ZoomToFit = "ZoomToFit".asInstanceOf[ZoomToFit]
+  
   @js.native
   sealed trait AADLogo extends IconNames
   
@@ -5408,3608 +10812,4 @@ object uifabricIconsStrings {
   
   @js.native
   sealed trait ZoomToFit extends IconNames
-  
-  @scala.inline
-  def AADLogo: AADLogo = "AADLogo".asInstanceOf[AADLogo]
-  @scala.inline
-  def ATPLogo: ATPLogo = "ATPLogo".asInstanceOf[ATPLogo]
-  @scala.inline
-  def Accept: Accept = "Accept".asInstanceOf[Accept]
-  @scala.inline
-  def AccessLogo: AccessLogo = "AccessLogo".asInstanceOf[AccessLogo]
-  @scala.inline
-  def AccessLogoFill: AccessLogoFill = "AccessLogoFill".asInstanceOf[AccessLogoFill]
-  @scala.inline
-  def AccessibiltyChecker: AccessibiltyChecker = "AccessibiltyChecker".asInstanceOf[AccessibiltyChecker]
-  @scala.inline
-  def AccountActivity: AccountActivity = "AccountActivity".asInstanceOf[AccountActivity]
-  @scala.inline
-  def AccountBrowser: AccountBrowser = "AccountBrowser".asInstanceOf[AccountBrowser]
-  @scala.inline
-  def AccountManagement: AccountManagement = "AccountManagement".asInstanceOf[AccountManagement]
-  @scala.inline
-  def Accounts: Accounts = "Accounts".asInstanceOf[Accounts]
-  @scala.inline
-  def ActionCenter: ActionCenter = "ActionCenter".asInstanceOf[ActionCenter]
-  @scala.inline
-  def ActivateOrders: ActivateOrders = "ActivateOrders".asInstanceOf[ActivateOrders]
-  @scala.inline
-  def ActivityFeed: ActivityFeed = "ActivityFeed".asInstanceOf[ActivityFeed]
-  @scala.inline
-  def Add: Add = "Add".asInstanceOf[Add]
-  @scala.inline
-  def AddBookmark: AddBookmark = "AddBookmark".asInstanceOf[AddBookmark]
-  @scala.inline
-  def AddEvent: AddEvent = "AddEvent".asInstanceOf[AddEvent]
-  @scala.inline
-  def AddFavorite: AddFavorite = "AddFavorite".asInstanceOf[AddFavorite]
-  @scala.inline
-  def AddFavoriteFill: AddFavoriteFill = "AddFavoriteFill".asInstanceOf[AddFavoriteFill]
-  @scala.inline
-  def AddFriend: AddFriend = "AddFriend".asInstanceOf[AddFriend]
-  @scala.inline
-  def AddGroup: AddGroup = "AddGroup".asInstanceOf[AddGroup]
-  @scala.inline
-  def AddHome: AddHome = "AddHome".asInstanceOf[AddHome]
-  @scala.inline
-  def AddIn: AddIn = "AddIn".asInstanceOf[AddIn]
-  @scala.inline
-  def AddLink: AddLink = "AddLink".asInstanceOf[AddLink]
-  @scala.inline
-  def AddNotes: AddNotes = "AddNotes".asInstanceOf[AddNotes]
-  @scala.inline
-  def AddOnlineMeeting: AddOnlineMeeting = "AddOnlineMeeting".asInstanceOf[AddOnlineMeeting]
-  @scala.inline
-  def AddPhone: AddPhone = "AddPhone".asInstanceOf[AddPhone]
-  @scala.inline
-  def AddReaction: AddReaction = "AddReaction".asInstanceOf[AddReaction]
-  @scala.inline
-  def AddTo: AddTo = "AddTo".asInstanceOf[AddTo]
-  @scala.inline
-  def AddToShoppingList: AddToShoppingList = "AddToShoppingList".asInstanceOf[AddToShoppingList]
-  @scala.inline
-  def AddWork: AddWork = "AddWork".asInstanceOf[AddWork]
-  @scala.inline
-  def Admin: Admin = "Admin".asInstanceOf[Admin]
-  @scala.inline
-  def AdminALogo32: AdminALogo32 = "AdminALogo32".asInstanceOf[AdminALogo32]
-  @scala.inline
-  def AdminALogoFill32: AdminALogoFill32 = "AdminALogoFill32".asInstanceOf[AdminALogoFill32]
-  @scala.inline
-  def AdminALogoInverse32: AdminALogoInverse32 = "AdminALogoInverse32".asInstanceOf[AdminALogoInverse32]
-  @scala.inline
-  def AdminCLogoInverse32: AdminCLogoInverse32 = "AdminCLogoInverse32".asInstanceOf[AdminCLogoInverse32]
-  @scala.inline
-  def AdminDLogoInverse32: AdminDLogoInverse32 = "AdminDLogoInverse32".asInstanceOf[AdminDLogoInverse32]
-  @scala.inline
-  def AdminELogoInverse32: AdminELogoInverse32 = "AdminELogoInverse32".asInstanceOf[AdminELogoInverse32]
-  @scala.inline
-  def AdminLLogoInverse32: AdminLLogoInverse32 = "AdminLLogoInverse32".asInstanceOf[AdminLLogoInverse32]
-  @scala.inline
-  def AdminMLogoInverse32: AdminMLogoInverse32 = "AdminMLogoInverse32".asInstanceOf[AdminMLogoInverse32]
-  @scala.inline
-  def AdminOLogoInverse32: AdminOLogoInverse32 = "AdminOLogoInverse32".asInstanceOf[AdminOLogoInverse32]
-  @scala.inline
-  def AdminPLogoInverse32: AdminPLogoInverse32 = "AdminPLogoInverse32".asInstanceOf[AdminPLogoInverse32]
-  @scala.inline
-  def AdminSLogoInverse32: AdminSLogoInverse32 = "AdminSLogoInverse32".asInstanceOf[AdminSLogoInverse32]
-  @scala.inline
-  def AdminYLogoInverse32: AdminYLogoInverse32 = "AdminYLogoInverse32".asInstanceOf[AdminYLogoInverse32]
-  @scala.inline
-  def AirTickets: AirTickets = "AirTickets".asInstanceOf[AirTickets]
-  @scala.inline
-  def Airplane: Airplane = "Airplane".asInstanceOf[Airplane]
-  @scala.inline
-  def AirplaneSolid: AirplaneSolid = "AirplaneSolid".asInstanceOf[AirplaneSolid]
-  @scala.inline
-  def AlarmClock: AlarmClock = "AlarmClock".asInstanceOf[AlarmClock]
-  @scala.inline
-  def Album: Album = "Album".asInstanceOf[Album]
-  @scala.inline
-  def AlbumRemove: AlbumRemove = "AlbumRemove".asInstanceOf[AlbumRemove]
-  @scala.inline
-  def AlertSettings: AlertSettings = "AlertSettings".asInstanceOf[AlertSettings]
-  @scala.inline
-  def AlertSolid: AlertSolid = "AlertSolid".asInstanceOf[AlertSolid]
-  @scala.inline
-  def AlignCenter: AlignCenter = "AlignCenter".asInstanceOf[AlignCenter]
-  @scala.inline
-  def AlignHorizontalCenter: AlignHorizontalCenter = "AlignHorizontalCenter".asInstanceOf[AlignHorizontalCenter]
-  @scala.inline
-  def AlignHorizontalLeft: AlignHorizontalLeft = "AlignHorizontalLeft".asInstanceOf[AlignHorizontalLeft]
-  @scala.inline
-  def AlignHorizontalRight: AlignHorizontalRight = "AlignHorizontalRight".asInstanceOf[AlignHorizontalRight]
-  @scala.inline
-  def AlignJustify: AlignJustify = "AlignJustify".asInstanceOf[AlignJustify]
-  @scala.inline
-  def AlignLeft: AlignLeft = "AlignLeft".asInstanceOf[AlignLeft]
-  @scala.inline
-  def AlignRight: AlignRight = "AlignRight".asInstanceOf[AlignRight]
-  @scala.inline
-  def AlignVerticalBottom: AlignVerticalBottom = "AlignVerticalBottom".asInstanceOf[AlignVerticalBottom]
-  @scala.inline
-  def AlignVerticalCenter: AlignVerticalCenter = "AlignVerticalCenter".asInstanceOf[AlignVerticalCenter]
-  @scala.inline
-  def AlignVerticalTop: AlignVerticalTop = "AlignVerticalTop".asInstanceOf[AlignVerticalTop]
-  @scala.inline
-  def AllApps: AllApps = "AllApps".asInstanceOf[AllApps]
-  @scala.inline
-  def AllAppsMirrored: AllAppsMirrored = "AllAppsMirrored".asInstanceOf[AllAppsMirrored]
-  @scala.inline
-  def AllCurrency: AllCurrency = "AllCurrency".asInstanceOf[AllCurrency]
-  @scala.inline
-  def AnalyticsLogo: AnalyticsLogo = "AnalyticsLogo".asInstanceOf[AnalyticsLogo]
-  @scala.inline
-  def AnalyticsQuery: AnalyticsQuery = "AnalyticsQuery".asInstanceOf[AnalyticsQuery]
-  @scala.inline
-  def AnalyticsReport: AnalyticsReport = "AnalyticsReport".asInstanceOf[AnalyticsReport]
-  @scala.inline
-  def AnalyticsView: AnalyticsView = "AnalyticsView".asInstanceOf[AnalyticsView]
-  @scala.inline
-  def AnchorLock: AnchorLock = "AnchorLock".asInstanceOf[AnchorLock]
-  @scala.inline
-  def Annotation: Annotation = "Annotation".asInstanceOf[Annotation]
-  @scala.inline
-  def AppIconDefault: AppIconDefault = "AppIconDefault".asInstanceOf[AppIconDefault]
-  @scala.inline
-  def AppIconDefaultAdd: AppIconDefaultAdd = "AppIconDefaultAdd".asInstanceOf[AppIconDefaultAdd]
-  @scala.inline
-  def AppIconDefaultList: AppIconDefaultList = "AppIconDefaultList".asInstanceOf[AppIconDefaultList]
-  @scala.inline
-  def Archive: Archive = "Archive".asInstanceOf[Archive]
-  @scala.inline
-  def AreaChart: AreaChart = "AreaChart".asInstanceOf[AreaChart]
-  @scala.inline
-  def ArrangeBringForward: ArrangeBringForward = "ArrangeBringForward".asInstanceOf[ArrangeBringForward]
-  @scala.inline
-  def ArrangeBringToFront: ArrangeBringToFront = "ArrangeBringToFront".asInstanceOf[ArrangeBringToFront]
-  @scala.inline
-  def ArrangeByFrom: ArrangeByFrom = "ArrangeByFrom".asInstanceOf[ArrangeByFrom]
-  @scala.inline
-  def ArrangeSendBackward: ArrangeSendBackward = "ArrangeSendBackward".asInstanceOf[ArrangeSendBackward]
-  @scala.inline
-  def ArrangeSendToBack: ArrangeSendToBack = "ArrangeSendToBack".asInstanceOf[ArrangeSendToBack]
-  @scala.inline
-  def Arrivals: Arrivals = "Arrivals".asInstanceOf[Arrivals]
-  @scala.inline
-  def ArrowDownRight8: ArrowDownRight8 = "ArrowDownRight8".asInstanceOf[ArrowDownRight8]
-  @scala.inline
-  def ArrowDownRightMirrored8: ArrowDownRightMirrored8 = "ArrowDownRightMirrored8".asInstanceOf[ArrowDownRightMirrored8]
-  @scala.inline
-  def ArrowTallDownLeft: ArrowTallDownLeft = "ArrowTallDownLeft".asInstanceOf[ArrowTallDownLeft]
-  @scala.inline
-  def ArrowTallDownRight: ArrowTallDownRight = "ArrowTallDownRight".asInstanceOf[ArrowTallDownRight]
-  @scala.inline
-  def ArrowTallUpLeft: ArrowTallUpLeft = "ArrowTallUpLeft".asInstanceOf[ArrowTallUpLeft]
-  @scala.inline
-  def ArrowTallUpRight: ArrowTallUpRight = "ArrowTallUpRight".asInstanceOf[ArrowTallUpRight]
-  @scala.inline
-  def ArrowUpRight: ArrowUpRight = "ArrowUpRight".asInstanceOf[ArrowUpRight]
-  @scala.inline
-  def ArrowUpRight8: ArrowUpRight8 = "ArrowUpRight8".asInstanceOf[ArrowUpRight8]
-  @scala.inline
-  def ArrowUpRightMirrored8: ArrowUpRightMirrored8 = "ArrowUpRightMirrored8".asInstanceOf[ArrowUpRightMirrored8]
-  @scala.inline
-  def Articles: Articles = "Articles".asInstanceOf[Articles]
-  @scala.inline
-  def Ascending: Ascending = "Ascending".asInstanceOf[Ascending]
-  @scala.inline
-  def AspectRatio: AspectRatio = "AspectRatio".asInstanceOf[AspectRatio]
-  @scala.inline
-  def AssessmentGroup: AssessmentGroup = "AssessmentGroup".asInstanceOf[AssessmentGroup]
-  @scala.inline
-  def AssessmentGroupTemplate: AssessmentGroupTemplate = "AssessmentGroupTemplate".asInstanceOf[AssessmentGroupTemplate]
-  @scala.inline
-  def AssetLibrary: AssetLibrary = "AssetLibrary".asInstanceOf[AssetLibrary]
-  @scala.inline
-  def Assign: Assign = "Assign".asInstanceOf[Assign]
-  @scala.inline
-  def Asterisk: Asterisk = "Asterisk".asInstanceOf[Asterisk]
-  @scala.inline
-  def AsteriskSolid: AsteriskSolid = "AsteriskSolid".asInstanceOf[AsteriskSolid]
-  @scala.inline
-  def Attach: Attach = "Attach".asInstanceOf[Attach]
-  @scala.inline
-  def AustralianRules: AustralianRules = "AustralianRules".asInstanceOf[AustralianRules]
-  @scala.inline
-  def AuthenticatorApp: AuthenticatorApp = "AuthenticatorApp".asInstanceOf[AuthenticatorApp]
-  @scala.inline
-  def AutoEnhanceOff: AutoEnhanceOff = "AutoEnhanceOff".asInstanceOf[AutoEnhanceOff]
-  @scala.inline
-  def AutoEnhanceOn: AutoEnhanceOn = "AutoEnhanceOn".asInstanceOf[AutoEnhanceOn]
-  @scala.inline
-  def AutoFillTemplate: AutoFillTemplate = "AutoFillTemplate".asInstanceOf[AutoFillTemplate]
-  @scala.inline
-  def AutoHeight: AutoHeight = "AutoHeight".asInstanceOf[AutoHeight]
-  @scala.inline
-  def AutoRacing: AutoRacing = "AutoRacing".asInstanceOf[AutoRacing]
-  @scala.inline
-  def AwayStatus: AwayStatus = "AwayStatus".asInstanceOf[AwayStatus]
-  @scala.inline
-  def AzureAPIManagement: AzureAPIManagement = "AzureAPIManagement".asInstanceOf[AzureAPIManagement]
-  @scala.inline
-  def AzureKeyVault: AzureKeyVault = "AzureKeyVault".asInstanceOf[AzureKeyVault]
-  @scala.inline
-  def AzureLogo: AzureLogo = "AzureLogo".asInstanceOf[AzureLogo]
-  @scala.inline
-  def AzureServiceEndpoint: AzureServiceEndpoint = "AzureServiceEndpoint".asInstanceOf[AzureServiceEndpoint]
-  @scala.inline
-  def BIDashboard: BIDashboard = "BIDashboard".asInstanceOf[BIDashboard]
-  @scala.inline
-  def Back: Back = "Back".asInstanceOf[Back]
-  @scala.inline
-  def BackToWindow: BackToWindow = "BackToWindow".asInstanceOf[BackToWindow]
-  @scala.inline
-  def BackgroundColor: BackgroundColor = "BackgroundColor".asInstanceOf[BackgroundColor]
-  @scala.inline
-  def Backlog: Backlog = "Backlog".asInstanceOf[Backlog]
-  @scala.inline
-  def BacklogBoard: BacklogBoard = "BacklogBoard".asInstanceOf[BacklogBoard]
-  @scala.inline
-  def BacklogList: BacklogList = "BacklogList".asInstanceOf[BacklogList]
-  @scala.inline
-  def Badge: Badge = "Badge".asInstanceOf[Badge]
-  @scala.inline
-  def Balloons: Balloons = "Balloons".asInstanceOf[Balloons]
-  @scala.inline
-  def Bank: Bank = "Bank".asInstanceOf[Bank]
-  @scala.inline
-  def BankSolid: BankSolid = "BankSolid".asInstanceOf[BankSolid]
-  @scala.inline
-  def BarChart4: BarChart4 = "BarChart4".asInstanceOf[BarChart4]
-  @scala.inline
-  def BarChartHorizontal: BarChartHorizontal = "BarChartHorizontal".asInstanceOf[BarChartHorizontal]
-  @scala.inline
-  def BarChartVertical: BarChartVertical = "BarChartVertical".asInstanceOf[BarChartVertical]
-  @scala.inline
-  def BarChartVerticalEdit: BarChartVerticalEdit = "BarChartVerticalEdit".asInstanceOf[BarChartVerticalEdit]
-  @scala.inline
-  def BarChartVerticalFill: BarChartVerticalFill = "BarChartVerticalFill".asInstanceOf[BarChartVerticalFill]
-  @scala.inline
-  def BarChartVerticalFilter: BarChartVerticalFilter = "BarChartVerticalFilter".asInstanceOf[BarChartVerticalFilter]
-  @scala.inline
-  def BarChartVerticalFilterSolid: BarChartVerticalFilterSolid = "BarChartVerticalFilterSolid".asInstanceOf[BarChartVerticalFilterSolid]
-  @scala.inline
-  def Baseball: Baseball = "Baseball".asInstanceOf[Baseball]
-  @scala.inline
-  def BeerMug: BeerMug = "BeerMug".asInstanceOf[BeerMug]
-  @scala.inline
-  def BidiLtr: BidiLtr = "BidiLtr".asInstanceOf[BidiLtr]
-  @scala.inline
-  def BidiRtl: BidiRtl = "BidiRtl".asInstanceOf[BidiRtl]
-  @scala.inline
-  def BingLogo: BingLogo = "BingLogo".asInstanceOf[BingLogo]
-  @scala.inline
-  def BirthdayCake: BirthdayCake = "BirthdayCake".asInstanceOf[BirthdayCake]
-  @scala.inline
-  def BlockContact: BlockContact = "BlockContact".asInstanceOf[BlockContact]
-  @scala.inline
-  def Blocked: Blocked = "Blocked".asInstanceOf[Blocked]
-  @scala.inline
-  def Blocked12: Blocked12 = "Blocked12".asInstanceOf[Blocked12]
-  @scala.inline
-  def Blocked2: Blocked2 = "Blocked2".asInstanceOf[Blocked2]
-  @scala.inline
-  def Blocked2Solid: Blocked2Solid = "Blocked2Solid".asInstanceOf[Blocked2Solid]
-  @scala.inline
-  def BlockedSite: BlockedSite = "BlockedSite".asInstanceOf[BlockedSite]
-  @scala.inline
-  def BlockedSiteSolid12: BlockedSiteSolid12 = "BlockedSiteSolid12".asInstanceOf[BlockedSiteSolid12]
-  @scala.inline
-  def BlockedSolid: BlockedSolid = "BlockedSolid".asInstanceOf[BlockedSolid]
-  @scala.inline
-  def Blog: Blog = "Blog".asInstanceOf[Blog]
-  @scala.inline
-  def BlowingSnow: BlowingSnow = "BlowingSnow".asInstanceOf[BlowingSnow]
-  @scala.inline
-  def Blur: Blur = "Blur".asInstanceOf[Blur]
-  @scala.inline
-  def Boards: Boards = "Boards".asInstanceOf[Boards]
-  @scala.inline
-  def Bold: Bold = "Bold".asInstanceOf[Bold]
-  @scala.inline
-  def BookAnswers: BookAnswers = "BookAnswers".asInstanceOf[BookAnswers]
-  @scala.inline
-  def BookingsLogo: BookingsLogo = "BookingsLogo".asInstanceOf[BookingsLogo]
-  @scala.inline
-  def BookmarkReport: BookmarkReport = "BookmarkReport".asInstanceOf[BookmarkReport]
-  @scala.inline
-  def Bookmarks: Bookmarks = "Bookmarks".asInstanceOf[Bookmarks]
-  @scala.inline
-  def BookmarksMirrored: BookmarksMirrored = "BookmarksMirrored".asInstanceOf[BookmarksMirrored]
-  @scala.inline
-  def BorderDash: BorderDash = "BorderDash".asInstanceOf[BorderDash]
-  @scala.inline
-  def BorderDot: BorderDot = "BorderDot".asInstanceOf[BorderDot]
-  @scala.inline
-  def BoxAdditionSolid: BoxAdditionSolid = "BoxAdditionSolid".asInstanceOf[BoxAdditionSolid]
-  @scala.inline
-  def BoxCheckmarkSolid: BoxCheckmarkSolid = "BoxCheckmarkSolid".asInstanceOf[BoxCheckmarkSolid]
-  @scala.inline
-  def BoxMultiplySolid: BoxMultiplySolid = "BoxMultiplySolid".asInstanceOf[BoxMultiplySolid]
-  @scala.inline
-  def BoxPlaySolid: BoxPlaySolid = "BoxPlaySolid".asInstanceOf[BoxPlaySolid]
-  @scala.inline
-  def BoxSubtractSolid: BoxSubtractSolid = "BoxSubtractSolid".asInstanceOf[BoxSubtractSolid]
-  @scala.inline
-  def BranchCommit: BranchCommit = "BranchCommit".asInstanceOf[BranchCommit]
-  @scala.inline
-  def BranchCompare: BranchCompare = "BranchCompare".asInstanceOf[BranchCompare]
-  @scala.inline
-  def BranchFork: BranchFork = "BranchFork".asInstanceOf[BranchFork]
-  @scala.inline
-  def BranchFork2: BranchFork2 = "BranchFork2".asInstanceOf[BranchFork2]
-  @scala.inline
-  def BranchLocked: BranchLocked = "BranchLocked".asInstanceOf[BranchLocked]
-  @scala.inline
-  def BranchMerge: BranchMerge = "BranchMerge".asInstanceOf[BranchMerge]
-  @scala.inline
-  def BranchPullRequest: BranchPullRequest = "BranchPullRequest".asInstanceOf[BranchPullRequest]
-  @scala.inline
-  def BranchSearch: BranchSearch = "BranchSearch".asInstanceOf[BranchSearch]
-  @scala.inline
-  def BranchShelveset: BranchShelveset = "BranchShelveset".asInstanceOf[BranchShelveset]
-  @scala.inline
-  def Breadcrumb: Breadcrumb = "Breadcrumb".asInstanceOf[Breadcrumb]
-  @scala.inline
-  def Breakfast: Breakfast = "Breakfast".asInstanceOf[Breakfast]
-  @scala.inline
-  def Brightness: Brightness = "Brightness".asInstanceOf[Brightness]
-  @scala.inline
-  def Broom: Broom = "Broom".asInstanceOf[Broom]
-  @scala.inline
-  def BrowserScreenShot: BrowserScreenShot = "BrowserScreenShot".asInstanceOf[BrowserScreenShot]
-  @scala.inline
-  def BrowserTab: BrowserTab = "BrowserTab".asInstanceOf[BrowserTab]
-  @scala.inline
-  def BrowserTabScreenshot: BrowserTabScreenshot = "BrowserTabScreenshot".asInstanceOf[BrowserTabScreenshot]
-  @scala.inline
-  def Brunch: Brunch = "Brunch".asInstanceOf[Brunch]
-  @scala.inline
-  def Brush: Brush = "Brush".asInstanceOf[Brush]
-  @scala.inline
-  def BucketColor: BucketColor = "BucketColor".asInstanceOf[BucketColor]
-  @scala.inline
-  def BucketColorFill: BucketColorFill = "BucketColorFill".asInstanceOf[BucketColorFill]
-  @scala.inline
-  def BufferTimeAfter: BufferTimeAfter = "BufferTimeAfter".asInstanceOf[BufferTimeAfter]
-  @scala.inline
-  def BufferTimeBefore: BufferTimeBefore = "BufferTimeBefore".asInstanceOf[BufferTimeBefore]
-  @scala.inline
-  def BufferTimeBoth: BufferTimeBoth = "BufferTimeBoth".asInstanceOf[BufferTimeBoth]
-  @scala.inline
-  def Bug: Bug = "Bug".asInstanceOf[Bug]
-  @scala.inline
-  def BugSolid: BugSolid = "BugSolid".asInstanceOf[BugSolid]
-  @scala.inline
-  def Build: Build = "Build".asInstanceOf[Build]
-  @scala.inline
-  def BuildDefinition: BuildDefinition = "BuildDefinition".asInstanceOf[BuildDefinition]
-  @scala.inline
-  def BuildIssue: BuildIssue = "BuildIssue".asInstanceOf[BuildIssue]
-  @scala.inline
-  def BuildQueue: BuildQueue = "BuildQueue".asInstanceOf[BuildQueue]
-  @scala.inline
-  def BuildQueueNew: BuildQueueNew = "BuildQueueNew".asInstanceOf[BuildQueueNew]
-  @scala.inline
-  def BulkUpload: BulkUpload = "BulkUpload".asInstanceOf[BulkUpload]
-  @scala.inline
-  def BulletedList: BulletedList = "BulletedList".asInstanceOf[BulletedList]
-  @scala.inline
-  def BulletedList2: BulletedList2 = "BulletedList2".asInstanceOf[BulletedList2]
-  @scala.inline
-  def BulletedList2Mirrored: BulletedList2Mirrored = "BulletedList2Mirrored".asInstanceOf[BulletedList2Mirrored]
-  @scala.inline
-  def BulletedListBullet: BulletedListBullet = "BulletedListBullet".asInstanceOf[BulletedListBullet]
-  @scala.inline
-  def BulletedListBulletMirrored: BulletedListBulletMirrored = "BulletedListBulletMirrored".asInstanceOf[BulletedListBulletMirrored]
-  @scala.inline
-  def BulletedListMirrored: BulletedListMirrored = "BulletedListMirrored".asInstanceOf[BulletedListMirrored]
-  @scala.inline
-  def BulletedListText: BulletedListText = "BulletedListText".asInstanceOf[BulletedListText]
-  @scala.inline
-  def BulletedListTextMirrored: BulletedListTextMirrored = "BulletedListTextMirrored".asInstanceOf[BulletedListTextMirrored]
-  @scala.inline
-  def BulletedTreeList: BulletedTreeList = "BulletedTreeList".asInstanceOf[BulletedTreeList]
-  @scala.inline
-  def Bullseye: Bullseye = "Bullseye".asInstanceOf[Bullseye]
-  @scala.inline
-  def BullseyeTarget: BullseyeTarget = "BullseyeTarget".asInstanceOf[BullseyeTarget]
-  @scala.inline
-  def BullseyeTargetEdit: BullseyeTargetEdit = "BullseyeTargetEdit".asInstanceOf[BullseyeTargetEdit]
-  @scala.inline
-  def Bus: Bus = "Bus".asInstanceOf[Bus]
-  @scala.inline
-  def BusSolid: BusSolid = "BusSolid".asInstanceOf[BusSolid]
-  @scala.inline
-  def BusinessCenterLogo: BusinessCenterLogo = "BusinessCenterLogo".asInstanceOf[BusinessCenterLogo]
-  @scala.inline
-  def BusinessHoursSign: BusinessHoursSign = "BusinessHoursSign".asInstanceOf[BusinessHoursSign]
-  @scala.inline
-  def ButtonControl: ButtonControl = "ButtonControl".asInstanceOf[ButtonControl]
-  @scala.inline
-  def CPlusPlus: CPlusPlus = "CPlusPlus".asInstanceOf[CPlusPlus]
-  @scala.inline
-  def CPlusPlusLanguage: CPlusPlusLanguage = "CPlusPlusLanguage".asInstanceOf[CPlusPlusLanguage]
-  @scala.inline
-  def CRMCustomerInsightsApp: CRMCustomerInsightsApp = "CRMCustomerInsightsApp".asInstanceOf[CRMCustomerInsightsApp]
-  @scala.inline
-  def CRMProcesses: CRMProcesses = "CRMProcesses".asInstanceOf[CRMProcesses]
-  @scala.inline
-  def CRMReport: CRMReport = "CRMReport".asInstanceOf[CRMReport]
-  @scala.inline
-  def CRMServices: CRMServices = "CRMServices".asInstanceOf[CRMServices]
-  @scala.inline
-  def CSS: CSS = "CSS".asInstanceOf[CSS]
-  @scala.inline
-  def CSharp: CSharp = "CSharp".asInstanceOf[CSharp]
-  @scala.inline
-  def CSharpLanguage: CSharpLanguage = "CSharpLanguage".asInstanceOf[CSharpLanguage]
-  @scala.inline
-  def Cafe: Cafe = "Cafe".asInstanceOf[Cafe]
-  @scala.inline
-  def Cake: Cake = "Cake".asInstanceOf[Cake]
-  @scala.inline
-  def Calculator: Calculator = "Calculator".asInstanceOf[Calculator]
-  @scala.inline
-  def CalculatorAddition: CalculatorAddition = "CalculatorAddition".asInstanceOf[CalculatorAddition]
-  @scala.inline
-  def CalculatorEqualTo: CalculatorEqualTo = "CalculatorEqualTo".asInstanceOf[CalculatorEqualTo]
-  @scala.inline
-  def CalculatorMultiply: CalculatorMultiply = "CalculatorMultiply".asInstanceOf[CalculatorMultiply]
-  @scala.inline
-  def CalculatorNotEqualTo: CalculatorNotEqualTo = "CalculatorNotEqualTo".asInstanceOf[CalculatorNotEqualTo]
-  @scala.inline
-  def CalculatorPercentage: CalculatorPercentage = "CalculatorPercentage".asInstanceOf[CalculatorPercentage]
-  @scala.inline
-  def CalculatorSubtract: CalculatorSubtract = "CalculatorSubtract".asInstanceOf[CalculatorSubtract]
-  @scala.inline
-  def Calendar: Calendar = "Calendar".asInstanceOf[Calendar]
-  @scala.inline
-  def CalendarAgenda: CalendarAgenda = "CalendarAgenda".asInstanceOf[CalendarAgenda]
-  @scala.inline
-  def CalendarDay: CalendarDay = "CalendarDay".asInstanceOf[CalendarDay]
-  @scala.inline
-  def CalendarMirrored: CalendarMirrored = "CalendarMirrored".asInstanceOf[CalendarMirrored]
-  @scala.inline
-  def CalendarReply: CalendarReply = "CalendarReply".asInstanceOf[CalendarReply]
-  @scala.inline
-  def CalendarSettings: CalendarSettings = "CalendarSettings".asInstanceOf[CalendarSettings]
-  @scala.inline
-  def CalendarSettingsMirrored: CalendarSettingsMirrored = "CalendarSettingsMirrored".asInstanceOf[CalendarSettingsMirrored]
-  @scala.inline
-  def CalendarWeek: CalendarWeek = "CalendarWeek".asInstanceOf[CalendarWeek]
-  @scala.inline
-  def CalendarWorkWeek: CalendarWorkWeek = "CalendarWorkWeek".asInstanceOf[CalendarWorkWeek]
-  @scala.inline
-  def Calories: Calories = "Calories".asInstanceOf[Calories]
-  @scala.inline
-  def CaloriesAdd: CaloriesAdd = "CaloriesAdd".asInstanceOf[CaloriesAdd]
-  @scala.inline
-  def Camera: Camera = "Camera".asInstanceOf[Camera]
-  @scala.inline
-  def CampaignTemplate: CampaignTemplate = "CampaignTemplate".asInstanceOf[CampaignTemplate]
-  @scala.inline
-  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
-  @scala.inline
-  def CannedChat: CannedChat = "CannedChat".asInstanceOf[CannedChat]
-  @scala.inline
-  def Car: Car = "Car".asInstanceOf[Car]
-  @scala.inline
-  def CaretBottomLeftCenter8: CaretBottomLeftCenter8 = "CaretBottomLeftCenter8".asInstanceOf[CaretBottomLeftCenter8]
-  @scala.inline
-  def CaretBottomLeftSolid8: CaretBottomLeftSolid8 = "CaretBottomLeftSolid8".asInstanceOf[CaretBottomLeftSolid8]
-  @scala.inline
-  def CaretBottomRightCenter8: CaretBottomRightCenter8 = "CaretBottomRightCenter8".asInstanceOf[CaretBottomRightCenter8]
-  @scala.inline
-  def CaretBottomRightSolid8: CaretBottomRightSolid8 = "CaretBottomRightSolid8".asInstanceOf[CaretBottomRightSolid8]
-  @scala.inline
-  def CaretDown8: CaretDown8 = "CaretDown8".asInstanceOf[CaretDown8]
-  @scala.inline
-  def CaretDownSolid8: CaretDownSolid8 = "CaretDownSolid8".asInstanceOf[CaretDownSolid8]
-  @scala.inline
-  def CaretHollow: CaretHollow = "CaretHollow".asInstanceOf[CaretHollow]
-  @scala.inline
-  def CaretHollowMirrored: CaretHollowMirrored = "CaretHollowMirrored".asInstanceOf[CaretHollowMirrored]
-  @scala.inline
-  def CaretLeft8: CaretLeft8 = "CaretLeft8".asInstanceOf[CaretLeft8]
-  @scala.inline
-  def CaretLeftSolid8: CaretLeftSolid8 = "CaretLeftSolid8".asInstanceOf[CaretLeftSolid8]
-  @scala.inline
-  def CaretRight: CaretRight = "CaretRight".asInstanceOf[CaretRight]
-  @scala.inline
-  def CaretRight8: CaretRight8 = "CaretRight8".asInstanceOf[CaretRight8]
-  @scala.inline
-  def CaretRightSolid8: CaretRightSolid8 = "CaretRightSolid8".asInstanceOf[CaretRightSolid8]
-  @scala.inline
-  def CaretSolid: CaretSolid = "CaretSolid".asInstanceOf[CaretSolid]
-  @scala.inline
-  def CaretSolid16: CaretSolid16 = "CaretSolid16".asInstanceOf[CaretSolid16]
-  @scala.inline
-  def CaretSolidDown: CaretSolidDown = "CaretSolidDown".asInstanceOf[CaretSolidDown]
-  @scala.inline
-  def CaretSolidLeft: CaretSolidLeft = "CaretSolidLeft".asInstanceOf[CaretSolidLeft]
-  @scala.inline
-  def CaretSolidMirrored: CaretSolidMirrored = "CaretSolidMirrored".asInstanceOf[CaretSolidMirrored]
-  @scala.inline
-  def CaretSolidRight: CaretSolidRight = "CaretSolidRight".asInstanceOf[CaretSolidRight]
-  @scala.inline
-  def CaretSolidUp: CaretSolidUp = "CaretSolidUp".asInstanceOf[CaretSolidUp]
-  @scala.inline
-  def CaretTopLeftCenter8: CaretTopLeftCenter8 = "CaretTopLeftCenter8".asInstanceOf[CaretTopLeftCenter8]
-  @scala.inline
-  def CaretTopLeftSolid8: CaretTopLeftSolid8 = "CaretTopLeftSolid8".asInstanceOf[CaretTopLeftSolid8]
-  @scala.inline
-  def CaretTopRightCenter8: CaretTopRightCenter8 = "CaretTopRightCenter8".asInstanceOf[CaretTopRightCenter8]
-  @scala.inline
-  def CaretTopRightSolid8: CaretTopRightSolid8 = "CaretTopRightSolid8".asInstanceOf[CaretTopRightSolid8]
-  @scala.inline
-  def CaretUp8: CaretUp8 = "CaretUp8".asInstanceOf[CaretUp8]
-  @scala.inline
-  def CaretUpSolid8: CaretUpSolid8 = "CaretUpSolid8".asInstanceOf[CaretUpSolid8]
-  @scala.inline
-  def Cat: Cat = "Cat".asInstanceOf[Cat]
-  @scala.inline
-  def CellPhone: CellPhone = "CellPhone".asInstanceOf[CellPhone]
-  @scala.inline
-  def Certificate: Certificate = "Certificate".asInstanceOf[Certificate]
-  @scala.inline
-  def CertifiedDatabase: CertifiedDatabase = "CertifiedDatabase".asInstanceOf[CertifiedDatabase]
-  @scala.inline
-  def ChangeEntitlements: ChangeEntitlements = "ChangeEntitlements".asInstanceOf[ChangeEntitlements]
-  @scala.inline
-  def Chart: Chart = "Chart".asInstanceOf[Chart]
-  @scala.inline
-  def ChartSeries: ChartSeries = "ChartSeries".asInstanceOf[ChartSeries]
-  @scala.inline
-  def ChartTemplate: ChartTemplate = "ChartTemplate".asInstanceOf[ChartTemplate]
-  @scala.inline
-  def ChartXAngle: ChartXAngle = "ChartXAngle".asInstanceOf[ChartXAngle]
-  @scala.inline
-  def ChartYAngle: ChartYAngle = "ChartYAngle".asInstanceOf[ChartYAngle]
-  @scala.inline
-  def Chat: Chat = "Chat".asInstanceOf[Chat]
-  @scala.inline
-  def ChatBot: ChatBot = "ChatBot".asInstanceOf[ChatBot]
-  @scala.inline
-  def ChatInviteFriend: ChatInviteFriend = "ChatInviteFriend".asInstanceOf[ChatInviteFriend]
-  @scala.inline
-  def ChatSolid: ChatSolid = "ChatSolid".asInstanceOf[ChatSolid]
-  @scala.inline
-  def CheckList: CheckList = "CheckList".asInstanceOf[CheckList]
-  @scala.inline
-  def CheckListCheck: CheckListCheck = "CheckListCheck".asInstanceOf[CheckListCheck]
-  @scala.inline
-  def CheckListCheckMirrored: CheckListCheckMirrored = "CheckListCheckMirrored".asInstanceOf[CheckListCheckMirrored]
-  @scala.inline
-  def CheckListText: CheckListText = "CheckListText".asInstanceOf[CheckListText]
-  @scala.inline
-  def CheckListTextMirrored: CheckListTextMirrored = "CheckListTextMirrored".asInstanceOf[CheckListTextMirrored]
-  @scala.inline
-  def CheckMark: CheckMark = "CheckMark".asInstanceOf[CheckMark]
-  @scala.inline
-  def Checkbox: Checkbox = "Checkbox".asInstanceOf[Checkbox]
-  @scala.inline
-  def CheckboxComposite: CheckboxComposite = "CheckboxComposite".asInstanceOf[CheckboxComposite]
-  @scala.inline
-  def CheckboxCompositeReversed: CheckboxCompositeReversed = "CheckboxCompositeReversed".asInstanceOf[CheckboxCompositeReversed]
-  @scala.inline
-  def CheckboxFill: CheckboxFill = "CheckboxFill".asInstanceOf[CheckboxFill]
-  @scala.inline
-  def CheckboxIndeterminate: CheckboxIndeterminate = "CheckboxIndeterminate".asInstanceOf[CheckboxIndeterminate]
-  @scala.inline
-  def CheckedOutByOther12: CheckedOutByOther12 = "CheckedOutByOther12".asInstanceOf[CheckedOutByOther12]
-  @scala.inline
-  def CheckedOutByYou12: CheckedOutByYou12 = "CheckedOutByYou12".asInstanceOf[CheckedOutByYou12]
-  @scala.inline
-  def ChevronDown: ChevronDown = "ChevronDown".asInstanceOf[ChevronDown]
-  @scala.inline
-  def ChevronDownEnd6: ChevronDownEnd6 = "ChevronDownEnd6".asInstanceOf[ChevronDownEnd6]
-  @scala.inline
-  def ChevronDownMed: ChevronDownMed = "ChevronDownMed".asInstanceOf[ChevronDownMed]
-  @scala.inline
-  def ChevronDownSmall: ChevronDownSmall = "ChevronDownSmall".asInstanceOf[ChevronDownSmall]
-  @scala.inline
-  def ChevronFold10: ChevronFold10 = "ChevronFold10".asInstanceOf[ChevronFold10]
-  @scala.inline
-  def ChevronLeft: ChevronLeft = "ChevronLeft".asInstanceOf[ChevronLeft]
-  @scala.inline
-  def ChevronLeftEnd6: ChevronLeftEnd6 = "ChevronLeftEnd6".asInstanceOf[ChevronLeftEnd6]
-  @scala.inline
-  def ChevronLeftMed: ChevronLeftMed = "ChevronLeftMed".asInstanceOf[ChevronLeftMed]
-  @scala.inline
-  def ChevronLeftSmall: ChevronLeftSmall = "ChevronLeftSmall".asInstanceOf[ChevronLeftSmall]
-  @scala.inline
-  def ChevronRight: ChevronRight = "ChevronRight".asInstanceOf[ChevronRight]
-  @scala.inline
-  def ChevronRightEnd6: ChevronRightEnd6 = "ChevronRightEnd6".asInstanceOf[ChevronRightEnd6]
-  @scala.inline
-  def ChevronRightMed: ChevronRightMed = "ChevronRightMed".asInstanceOf[ChevronRightMed]
-  @scala.inline
-  def ChevronRightSmall: ChevronRightSmall = "ChevronRightSmall".asInstanceOf[ChevronRightSmall]
-  @scala.inline
-  def ChevronUnfold10: ChevronUnfold10 = "ChevronUnfold10".asInstanceOf[ChevronUnfold10]
-  @scala.inline
-  def ChevronUp: ChevronUp = "ChevronUp".asInstanceOf[ChevronUp]
-  @scala.inline
-  def ChevronUpEnd6: ChevronUpEnd6 = "ChevronUpEnd6".asInstanceOf[ChevronUpEnd6]
-  @scala.inline
-  def ChevronUpMed: ChevronUpMed = "ChevronUpMed".asInstanceOf[ChevronUpMed]
-  @scala.inline
-  def ChevronUpSmall: ChevronUpSmall = "ChevronUpSmall".asInstanceOf[ChevronUpSmall]
-  @scala.inline
-  def Childof: Childof = "Childof".asInstanceOf[Childof]
-  @scala.inline
-  def Chopsticks: Chopsticks = "Chopsticks".asInstanceOf[Chopsticks]
-  @scala.inline
-  def ChromeBack: ChromeBack = "ChromeBack".asInstanceOf[ChromeBack]
-  @scala.inline
-  def ChromeBackMirrored: ChromeBackMirrored = "ChromeBackMirrored".asInstanceOf[ChromeBackMirrored]
-  @scala.inline
-  def ChromeClose: ChromeClose = "ChromeClose".asInstanceOf[ChromeClose]
-  @scala.inline
-  def ChromeFullScreen: ChromeFullScreen = "ChromeFullScreen".asInstanceOf[ChromeFullScreen]
-  @scala.inline
-  def ChromeMinimize: ChromeMinimize = "ChromeMinimize".asInstanceOf[ChromeMinimize]
-  @scala.inline
-  def ChromeRestore: ChromeRestore = "ChromeRestore".asInstanceOf[ChromeRestore]
-  @scala.inline
-  def CircleAddition: CircleAddition = "CircleAddition".asInstanceOf[CircleAddition]
-  @scala.inline
-  def CircleAdditionSolid: CircleAdditionSolid = "CircleAdditionSolid".asInstanceOf[CircleAdditionSolid]
-  @scala.inline
-  def CircleFill: CircleFill = "CircleFill".asInstanceOf[CircleFill]
-  @scala.inline
-  def CircleHalfFull: CircleHalfFull = "CircleHalfFull".asInstanceOf[CircleHalfFull]
-  @scala.inline
-  def CirclePause: CirclePause = "CirclePause".asInstanceOf[CirclePause]
-  @scala.inline
-  def CirclePauseSolid: CirclePauseSolid = "CirclePauseSolid".asInstanceOf[CirclePauseSolid]
-  @scala.inline
-  def CirclePlus: CirclePlus = "CirclePlus".asInstanceOf[CirclePlus]
-  @scala.inline
-  def CircleRing: CircleRing = "CircleRing".asInstanceOf[CircleRing]
-  @scala.inline
-  def CircleShapeSolid: CircleShapeSolid = "CircleShapeSolid".asInstanceOf[CircleShapeSolid]
-  @scala.inline
-  def CircleStop: CircleStop = "CircleStop".asInstanceOf[CircleStop]
-  @scala.inline
-  def CircleStopSolid: CircleStopSolid = "CircleStopSolid".asInstanceOf[CircleStopSolid]
-  @scala.inline
-  def CityNext: CityNext = "CityNext".asInstanceOf[CityNext]
-  @scala.inline
-  def CityNext2: CityNext2 = "CityNext2".asInstanceOf[CityNext2]
-  @scala.inline
-  def ClassNotebookLogo16: ClassNotebookLogo16 = "ClassNotebookLogo16".asInstanceOf[ClassNotebookLogo16]
-  @scala.inline
-  def ClassNotebookLogo32: ClassNotebookLogo32 = "ClassNotebookLogo32".asInstanceOf[ClassNotebookLogo32]
-  @scala.inline
-  def ClassNotebookLogoFill16: ClassNotebookLogoFill16 = "ClassNotebookLogoFill16".asInstanceOf[ClassNotebookLogoFill16]
-  @scala.inline
-  def ClassNotebookLogoFill32: ClassNotebookLogoFill32 = "ClassNotebookLogoFill32".asInstanceOf[ClassNotebookLogoFill32]
-  @scala.inline
-  def ClassNotebookLogoInverse: ClassNotebookLogoInverse = "ClassNotebookLogoInverse".asInstanceOf[ClassNotebookLogoInverse]
-  @scala.inline
-  def ClassNotebookLogoInverse16: ClassNotebookLogoInverse16 = "ClassNotebookLogoInverse16".asInstanceOf[ClassNotebookLogoInverse16]
-  @scala.inline
-  def ClassNotebookLogoInverse32: ClassNotebookLogoInverse32 = "ClassNotebookLogoInverse32".asInstanceOf[ClassNotebookLogoInverse32]
-  @scala.inline
-  def ClassroomLogo: ClassroomLogo = "ClassroomLogo".asInstanceOf[ClassroomLogo]
-  @scala.inline
-  def Clear: Clear = "Clear".asInstanceOf[Clear]
-  @scala.inline
-  def ClearFilter: ClearFilter = "ClearFilter".asInstanceOf[ClearFilter]
-  @scala.inline
-  def ClearFormatting: ClearFormatting = "ClearFormatting".asInstanceOf[ClearFormatting]
-  @scala.inline
-  def ClearFormattingA: ClearFormattingA = "ClearFormattingA".asInstanceOf[ClearFormattingA]
-  @scala.inline
-  def ClearFormattingEraser: ClearFormattingEraser = "ClearFormattingEraser".asInstanceOf[ClearFormattingEraser]
-  @scala.inline
-  def ClearNight: ClearNight = "ClearNight".asInstanceOf[ClearNight]
-  @scala.inline
-  def ClearSelection: ClearSelection = "ClearSelection".asInstanceOf[ClearSelection]
-  @scala.inline
-  def ClearSelectionMirrored: ClearSelectionMirrored = "ClearSelectionMirrored".asInstanceOf[ClearSelectionMirrored]
-  @scala.inline
-  def ClipboardList: ClipboardList = "ClipboardList".asInstanceOf[ClipboardList]
-  @scala.inline
-  def ClipboardListMirrored: ClipboardListMirrored = "ClipboardListMirrored".asInstanceOf[ClipboardListMirrored]
-  @scala.inline
-  def ClipboardSolid: ClipboardSolid = "ClipboardSolid".asInstanceOf[ClipboardSolid]
-  @scala.inline
-  def Clock: Clock = "Clock".asInstanceOf[Clock]
-  @scala.inline
-  def CloneToDesktop: CloneToDesktop = "CloneToDesktop".asInstanceOf[CloneToDesktop]
-  @scala.inline
-  def ClosePane: ClosePane = "ClosePane".asInstanceOf[ClosePane]
-  @scala.inline
-  def ClosePaneMirrored: ClosePaneMirrored = "ClosePaneMirrored".asInstanceOf[ClosePaneMirrored]
-  @scala.inline
-  def ClosedCaption: ClosedCaption = "ClosedCaption".asInstanceOf[ClosedCaption]
-  @scala.inline
-  def Cloud: Cloud = "Cloud".asInstanceOf[Cloud]
-  @scala.inline
-  def CloudAdd: CloudAdd = "CloudAdd".asInstanceOf[CloudAdd]
-  @scala.inline
-  def CloudDownload: CloudDownload = "CloudDownload".asInstanceOf[CloudDownload]
-  @scala.inline
-  def CloudImportExport: CloudImportExport = "CloudImportExport".asInstanceOf[CloudImportExport]
-  @scala.inline
-  def CloudUpload: CloudUpload = "CloudUpload".asInstanceOf[CloudUpload]
-  @scala.inline
-  def CloudWeather: CloudWeather = "CloudWeather".asInstanceOf[CloudWeather]
-  @scala.inline
-  def Cloudy: Cloudy = "Cloudy".asInstanceOf[Cloudy]
-  @scala.inline
-  def Cocktails: Cocktails = "Cocktails".asInstanceOf[Cocktails]
-  @scala.inline
-  def Code: Code = "Code".asInstanceOf[Code]
-  @scala.inline
-  def CodeEdit: CodeEdit = "CodeEdit".asInstanceOf[CodeEdit]
-  @scala.inline
-  def Coffee: Coffee = "Coffee".asInstanceOf[Coffee]
-  @scala.inline
-  def CoffeeScript: CoffeeScript = "CoffeeScript".asInstanceOf[CoffeeScript]
-  @scala.inline
-  def CollapseContent: CollapseContent = "CollapseContent".asInstanceOf[CollapseContent]
-  @scala.inline
-  def CollapseContentSingle: CollapseContentSingle = "CollapseContentSingle".asInstanceOf[CollapseContentSingle]
-  @scala.inline
-  def CollapseMenu: CollapseMenu = "CollapseMenu".asInstanceOf[CollapseMenu]
-  @scala.inline
-  def CollegeFootball: CollegeFootball = "CollegeFootball".asInstanceOf[CollegeFootball]
-  @scala.inline
-  def CollegeHoops: CollegeHoops = "CollegeHoops".asInstanceOf[CollegeHoops]
-  @scala.inline
-  def Color: Color = "Color".asInstanceOf[Color]
-  @scala.inline
-  def ColorSolid: ColorSolid = "ColorSolid".asInstanceOf[ColorSolid]
-  @scala.inline
-  def ColumnLeftTwoThirds: ColumnLeftTwoThirds = "ColumnLeftTwoThirds".asInstanceOf[ColumnLeftTwoThirds]
-  @scala.inline
-  def ColumnLeftTwoThirdsEdit: ColumnLeftTwoThirdsEdit = "ColumnLeftTwoThirdsEdit".asInstanceOf[ColumnLeftTwoThirdsEdit]
-  @scala.inline
-  def ColumnOptions: ColumnOptions = "ColumnOptions".asInstanceOf[ColumnOptions]
-  @scala.inline
-  def ColumnRightTwoThirds: ColumnRightTwoThirds = "ColumnRightTwoThirds".asInstanceOf[ColumnRightTwoThirds]
-  @scala.inline
-  def ColumnRightTwoThirdsEdit: ColumnRightTwoThirdsEdit = "ColumnRightTwoThirdsEdit".asInstanceOf[ColumnRightTwoThirdsEdit]
-  @scala.inline
-  def ColumnVerticalSection: ColumnVerticalSection = "ColumnVerticalSection".asInstanceOf[ColumnVerticalSection]
-  @scala.inline
-  def ColumnVerticalSectionEdit: ColumnVerticalSectionEdit = "ColumnVerticalSectionEdit".asInstanceOf[ColumnVerticalSectionEdit]
-  @scala.inline
-  def Combine: Combine = "Combine".asInstanceOf[Combine]
-  @scala.inline
-  def Combobox: Combobox = "Combobox".asInstanceOf[Combobox]
-  @scala.inline
-  def CommandPrompt: CommandPrompt = "CommandPrompt".asInstanceOf[CommandPrompt]
-  @scala.inline
-  def Comment: Comment = "Comment".asInstanceOf[Comment]
-  @scala.inline
-  def CommentActive: CommentActive = "CommentActive".asInstanceOf[CommentActive]
-  @scala.inline
-  def CommentAdd: CommentAdd = "CommentAdd".asInstanceOf[CommentAdd]
-  @scala.inline
-  def CommentNext: CommentNext = "CommentNext".asInstanceOf[CommentNext]
-  @scala.inline
-  def CommentPrevious: CommentPrevious = "CommentPrevious".asInstanceOf[CommentPrevious]
-  @scala.inline
-  def CommentSolid: CommentSolid = "CommentSolid".asInstanceOf[CommentSolid]
-  @scala.inline
-  def CommentUrgent: CommentUrgent = "CommentUrgent".asInstanceOf[CommentUrgent]
-  @scala.inline
-  def Commitments: Commitments = "Commitments".asInstanceOf[Commitments]
-  @scala.inline
-  def Communications: Communications = "Communications".asInstanceOf[Communications]
-  @scala.inline
-  def CompanyDirectory: CompanyDirectory = "CompanyDirectory".asInstanceOf[CompanyDirectory]
-  @scala.inline
-  def CompanyDirectoryMirrored: CompanyDirectoryMirrored = "CompanyDirectoryMirrored".asInstanceOf[CompanyDirectoryMirrored]
-  @scala.inline
-  def Compare: Compare = "Compare".asInstanceOf[Compare]
-  @scala.inline
-  def CompassNW: CompassNW = "CompassNW".asInstanceOf[CompassNW]
-  @scala.inline
-  def Completed: Completed = "Completed".asInstanceOf[Completed]
-  @scala.inline
-  def CompletedSolid: CompletedSolid = "CompletedSolid".asInstanceOf[CompletedSolid]
-  @scala.inline
-  def ComplianceAudit: ComplianceAudit = "ComplianceAudit".asInstanceOf[ComplianceAudit]
-  @scala.inline
-  def ConfigurationSolid: ConfigurationSolid = "ConfigurationSolid".asInstanceOf[ConfigurationSolid]
-  @scala.inline
-  def ConnectContacts: ConnectContacts = "ConnectContacts".asInstanceOf[ConnectContacts]
-  @scala.inline
-  def ConnectVirtualMachine: ConnectVirtualMachine = "ConnectVirtualMachine".asInstanceOf[ConnectVirtualMachine]
-  @scala.inline
-  def ConstructionCone: ConstructionCone = "ConstructionCone".asInstanceOf[ConstructionCone]
-  @scala.inline
-  def ConstructionConeSolid: ConstructionConeSolid = "ConstructionConeSolid".asInstanceOf[ConstructionConeSolid]
-  @scala.inline
-  def Contact: Contact = "Contact".asInstanceOf[Contact]
-  @scala.inline
-  def ContactCard: ContactCard = "ContactCard".asInstanceOf[ContactCard]
-  @scala.inline
-  def ContactCardSettings: ContactCardSettings = "ContactCardSettings".asInstanceOf[ContactCardSettings]
-  @scala.inline
-  def ContactCardSettingsMirrored: ContactCardSettingsMirrored = "ContactCardSettingsMirrored".asInstanceOf[ContactCardSettingsMirrored]
-  @scala.inline
-  def ContactHeart: ContactHeart = "ContactHeart".asInstanceOf[ContactHeart]
-  @scala.inline
-  def ContactInfo: ContactInfo = "ContactInfo".asInstanceOf[ContactInfo]
-  @scala.inline
-  def ContactLink: ContactLink = "ContactLink".asInstanceOf[ContactLink]
-  @scala.inline
-  def ContactList: ContactList = "ContactList".asInstanceOf[ContactList]
-  @scala.inline
-  def ContextMenu: ContextMenu = "ContextMenu".asInstanceOf[ContextMenu]
-  @scala.inline
-  def Contrast: Contrast = "Contrast".asInstanceOf[Contrast]
-  @scala.inline
-  def Copy: Copy = "Copy".asInstanceOf[Copy]
-  @scala.inline
-  def Cotton: Cotton = "Cotton".asInstanceOf[Cotton]
-  @scala.inline
-  def Coupon: Coupon = "Coupon".asInstanceOf[Coupon]
-  @scala.inline
-  def CreateMailRule: CreateMailRule = "CreateMailRule".asInstanceOf[CreateMailRule]
-  @scala.inline
-  def Cricket: Cricket = "Cricket".asInstanceOf[Cricket]
-  @scala.inline
-  def Crop: Crop = "Crop".asInstanceOf[Crop]
-  @scala.inline
-  def Crown: Crown = "Crown".asInstanceOf[Crown]
-  @scala.inline
-  def CrownSolid: CrownSolid = "CrownSolid".asInstanceOf[CrownSolid]
-  @scala.inline
-  def CubeShape: CubeShape = "CubeShape".asInstanceOf[CubeShape]
-  @scala.inline
-  def CustomList: CustomList = "CustomList".asInstanceOf[CustomList]
-  @scala.inline
-  def CustomListMirrored: CustomListMirrored = "CustomListMirrored".asInstanceOf[CustomListMirrored]
-  @scala.inline
-  def CustomizeToolbar: CustomizeToolbar = "CustomizeToolbar".asInstanceOf[CustomizeToolbar]
-  @scala.inline
-  def Cut: Cut = "Cut".asInstanceOf[Cut]
-  @scala.inline
-  def Cycling: Cycling = "Cycling".asInstanceOf[Cycling]
-  @scala.inline
-  def D365TalentHRCore: D365TalentHRCore = "D365TalentHRCore".asInstanceOf[D365TalentHRCore]
-  @scala.inline
-  def D365TalentInsight: D365TalentInsight = "D365TalentInsight".asInstanceOf[D365TalentInsight]
-  @scala.inline
-  def D365TalentLearn: D365TalentLearn = "D365TalentLearn".asInstanceOf[D365TalentLearn]
-  @scala.inline
-  def DOM: DOM = "DOM".asInstanceOf[DOM]
-  @scala.inline
-  def DRM: DRM = "DRM".asInstanceOf[DRM]
-  @scala.inline
-  def DashboardAdd: DashboardAdd = "DashboardAdd".asInstanceOf[DashboardAdd]
-  @scala.inline
-  def DataConnectionLibrary: DataConnectionLibrary = "DataConnectionLibrary".asInstanceOf[DataConnectionLibrary]
-  @scala.inline
-  def DataManagementSettings: DataManagementSettings = "DataManagementSettings".asInstanceOf[DataManagementSettings]
-  @scala.inline
-  def Database: Database = "Database".asInstanceOf[Database]
-  @scala.inline
-  def DatabaseSync: DatabaseSync = "DatabaseSync".asInstanceOf[DatabaseSync]
-  @scala.inline
-  def Dataflows: Dataflows = "Dataflows".asInstanceOf[Dataflows]
-  @scala.inline
-  def DataflowsLink: DataflowsLink = "DataflowsLink".asInstanceOf[DataflowsLink]
-  @scala.inline
-  def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
-  @scala.inline
-  def DateTime2: DateTime2 = "DateTime2".asInstanceOf[DateTime2]
-  @scala.inline
-  def DateTimeMirrored: DateTimeMirrored = "DateTimeMirrored".asInstanceOf[DateTimeMirrored]
-  @scala.inline
-  def DeactivateOrders: DeactivateOrders = "DeactivateOrders".asInstanceOf[DeactivateOrders]
-  @scala.inline
-  def Decimals: Decimals = "Decimals".asInstanceOf[Decimals]
-  @scala.inline
-  def DecisionSolid: DecisionSolid = "DecisionSolid".asInstanceOf[DecisionSolid]
-  @scala.inline
-  def DeclineCall: DeclineCall = "DeclineCall".asInstanceOf[DeclineCall]
-  @scala.inline
-  def DecreaseIndentArrow: DecreaseIndentArrow = "DecreaseIndentArrow".asInstanceOf[DecreaseIndentArrow]
-  @scala.inline
-  def DecreaseIndentArrowMirrored: DecreaseIndentArrowMirrored = "DecreaseIndentArrowMirrored".asInstanceOf[DecreaseIndentArrowMirrored]
-  @scala.inline
-  def DecreaseIndentLegacy: DecreaseIndentLegacy = "DecreaseIndentLegacy".asInstanceOf[DecreaseIndentLegacy]
-  @scala.inline
-  def DecreaseIndentText: DecreaseIndentText = "DecreaseIndentText".asInstanceOf[DecreaseIndentText]
-  @scala.inline
-  def DecreaseIndentTextMirrored: DecreaseIndentTextMirrored = "DecreaseIndentTextMirrored".asInstanceOf[DecreaseIndentTextMirrored]
-  @scala.inline
-  def DefaultRatio: DefaultRatio = "DefaultRatio".asInstanceOf[DefaultRatio]
-  @scala.inline
-  def DefectSolid: DefectSolid = "DefectSolid".asInstanceOf[DefectSolid]
-  @scala.inline
-  def DefenderTVM: DefenderTVM = "DefenderTVM".asInstanceOf[DefenderTVM]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def DeleteColumns: DeleteColumns = "DeleteColumns".asInstanceOf[DeleteColumns]
-  @scala.inline
-  def DeleteRows: DeleteRows = "DeleteRows".asInstanceOf[DeleteRows]
-  @scala.inline
-  def DeleteRowsMirrored: DeleteRowsMirrored = "DeleteRowsMirrored".asInstanceOf[DeleteRowsMirrored]
-  @scala.inline
-  def DeleteTable: DeleteTable = "DeleteTable".asInstanceOf[DeleteTable]
-  @scala.inline
-  def DeliveryTruck: DeliveryTruck = "DeliveryTruck".asInstanceOf[DeliveryTruck]
-  @scala.inline
-  def DelveAnalytics: DelveAnalytics = "DelveAnalytics".asInstanceOf[DelveAnalytics]
-  @scala.inline
-  def DelveAnalyticsLogo: DelveAnalyticsLogo = "DelveAnalyticsLogo".asInstanceOf[DelveAnalyticsLogo]
-  @scala.inline
-  def DelveLogo: DelveLogo = "DelveLogo".asInstanceOf[DelveLogo]
-  @scala.inline
-  def DelveLogoFill: DelveLogoFill = "DelveLogoFill".asInstanceOf[DelveLogoFill]
-  @scala.inline
-  def DelveLogoInverse: DelveLogoInverse = "DelveLogoInverse".asInstanceOf[DelveLogoInverse]
-  @scala.inline
-  def DependencyAdd: DependencyAdd = "DependencyAdd".asInstanceOf[DependencyAdd]
-  @scala.inline
-  def DependencyRemove: DependencyRemove = "DependencyRemove".asInstanceOf[DependencyRemove]
-  @scala.inline
-  def Deploy: Deploy = "Deploy".asInstanceOf[Deploy]
-  @scala.inline
-  def Descending: Descending = "Descending".asInstanceOf[Descending]
-  @scala.inline
-  def Design: Design = "Design".asInstanceOf[Design]
-  @scala.inline
-  def DesktopScreenshot: DesktopScreenshot = "DesktopScreenshot".asInstanceOf[DesktopScreenshot]
-  @scala.inline
-  def DeveloperTools: DeveloperTools = "DeveloperTools".asInstanceOf[DeveloperTools]
-  @scala.inline
-  def Devices2: Devices2 = "Devices2".asInstanceOf[Devices2]
-  @scala.inline
-  def Devices3: Devices3 = "Devices3".asInstanceOf[Devices3]
-  @scala.inline
-  def Devices4: Devices4 = "Devices4".asInstanceOf[Devices4]
-  @scala.inline
-  def Diagnostic: Diagnostic = "Diagnostic".asInstanceOf[Diagnostic]
-  @scala.inline
-  def DiagnosticDataBarTooltip: DiagnosticDataBarTooltip = "DiagnosticDataBarTooltip".asInstanceOf[DiagnosticDataBarTooltip]
-  @scala.inline
-  def Dialpad: Dialpad = "Dialpad".asInstanceOf[Dialpad]
-  @scala.inline
-  def Diamond: Diamond = "Diamond".asInstanceOf[Diamond]
-  @scala.inline
-  def DiamondSolid: DiamondSolid = "DiamondSolid".asInstanceOf[DiamondSolid]
-  @scala.inline
-  def Dictionary: Dictionary = "Dictionary".asInstanceOf[Dictionary]
-  @scala.inline
-  def DictionaryRemove: DictionaryRemove = "DictionaryRemove".asInstanceOf[DictionaryRemove]
-  @scala.inline
-  def DietPlanNotebook: DietPlanNotebook = "DietPlanNotebook".asInstanceOf[DietPlanNotebook]
-  @scala.inline
-  def DiffInline: DiffInline = "DiffInline".asInstanceOf[DiffInline]
-  @scala.inline
-  def DiffSideBySide: DiffSideBySide = "DiffSideBySide".asInstanceOf[DiffSideBySide]
-  @scala.inline
-  def DisableUpdates: DisableUpdates = "DisableUpdates".asInstanceOf[DisableUpdates]
-  @scala.inline
-  def DisconnectVirtualMachine: DisconnectVirtualMachine = "DisconnectVirtualMachine".asInstanceOf[DisconnectVirtualMachine]
-  @scala.inline
-  def Dislike: Dislike = "Dislike".asInstanceOf[Dislike]
-  @scala.inline
-  def DislikeSolid: DislikeSolid = "DislikeSolid".asInstanceOf[DislikeSolid]
-  @scala.inline
-  def DistributeDown: DistributeDown = "DistributeDown".asInstanceOf[DistributeDown]
-  @scala.inline
-  def DocLibrary: DocLibrary = "DocLibrary".asInstanceOf[DocLibrary]
-  @scala.inline
-  def DockLeft: DockLeft = "DockLeft".asInstanceOf[DockLeft]
-  @scala.inline
-  def DockLeftMirrored: DockLeftMirrored = "DockLeftMirrored".asInstanceOf[DockLeftMirrored]
-  @scala.inline
-  def DockRight: DockRight = "DockRight".asInstanceOf[DockRight]
-  @scala.inline
-  def DocsLogoInverse: DocsLogoInverse = "DocsLogoInverse".asInstanceOf[DocsLogoInverse]
-  @scala.inline
-  def Document: Document = "Document".asInstanceOf[Document]
-  @scala.inline
-  def DocumentApproval: DocumentApproval = "DocumentApproval".asInstanceOf[DocumentApproval]
-  @scala.inline
-  def DocumentManagement: DocumentManagement = "DocumentManagement".asInstanceOf[DocumentManagement]
-  @scala.inline
-  def DocumentReply: DocumentReply = "DocumentReply".asInstanceOf[DocumentReply]
-  @scala.inline
-  def DocumentSearch: DocumentSearch = "DocumentSearch".asInstanceOf[DocumentSearch]
-  @scala.inline
-  def DocumentSet: DocumentSet = "DocumentSet".asInstanceOf[DocumentSet]
-  @scala.inline
-  def Documentation: Documentation = "Documentation".asInstanceOf[Documentation]
-  @scala.inline
-  def DonutChart: DonutChart = "DonutChart".asInstanceOf[DonutChart]
-  @scala.inline
-  def Door: Door = "Door".asInstanceOf[Door]
-  @scala.inline
-  def DoubleBookmark: DoubleBookmark = "DoubleBookmark".asInstanceOf[DoubleBookmark]
-  @scala.inline
-  def DoubleChevronDown: DoubleChevronDown = "DoubleChevronDown".asInstanceOf[DoubleChevronDown]
-  @scala.inline
-  def DoubleChevronDown12: DoubleChevronDown12 = "DoubleChevronDown12".asInstanceOf[DoubleChevronDown12]
-  @scala.inline
-  def DoubleChevronDown8: DoubleChevronDown8 = "DoubleChevronDown8".asInstanceOf[DoubleChevronDown8]
-  @scala.inline
-  def DoubleChevronLeft: DoubleChevronLeft = "DoubleChevronLeft".asInstanceOf[DoubleChevronLeft]
-  @scala.inline
-  def DoubleChevronLeft12: DoubleChevronLeft12 = "DoubleChevronLeft12".asInstanceOf[DoubleChevronLeft12]
-  @scala.inline
-  def DoubleChevronLeft8: DoubleChevronLeft8 = "DoubleChevronLeft8".asInstanceOf[DoubleChevronLeft8]
-  @scala.inline
-  def DoubleChevronLeftMed: DoubleChevronLeftMed = "DoubleChevronLeftMed".asInstanceOf[DoubleChevronLeftMed]
-  @scala.inline
-  def DoubleChevronLeftMedMirrored: DoubleChevronLeftMedMirrored = "DoubleChevronLeftMedMirrored".asInstanceOf[DoubleChevronLeftMedMirrored]
-  @scala.inline
-  def DoubleChevronRight: DoubleChevronRight = "DoubleChevronRight".asInstanceOf[DoubleChevronRight]
-  @scala.inline
-  def DoubleChevronRight12: DoubleChevronRight12 = "DoubleChevronRight12".asInstanceOf[DoubleChevronRight12]
-  @scala.inline
-  def DoubleChevronRight8: DoubleChevronRight8 = "DoubleChevronRight8".asInstanceOf[DoubleChevronRight8]
-  @scala.inline
-  def DoubleChevronUp: DoubleChevronUp = "DoubleChevronUp".asInstanceOf[DoubleChevronUp]
-  @scala.inline
-  def DoubleChevronUp12: DoubleChevronUp12 = "DoubleChevronUp12".asInstanceOf[DoubleChevronUp12]
-  @scala.inline
-  def DoubleChevronUp8: DoubleChevronUp8 = "DoubleChevronUp8".asInstanceOf[DoubleChevronUp8]
-  @scala.inline
-  def DoubleColumn: DoubleColumn = "DoubleColumn".asInstanceOf[DoubleColumn]
-  @scala.inline
-  def DoubleColumnEdit: DoubleColumnEdit = "DoubleColumnEdit".asInstanceOf[DoubleColumnEdit]
-  @scala.inline
-  def DoubleDownArrow: DoubleDownArrow = "DoubleDownArrow".asInstanceOf[DoubleDownArrow]
-  @scala.inline
-  def Down: Down = "Down".asInstanceOf[Down]
-  @scala.inline
-  def Download: Download = "Download".asInstanceOf[Download]
-  @scala.inline
-  def DownloadDocument: DownloadDocument = "DownloadDocument".asInstanceOf[DownloadDocument]
-  @scala.inline
-  def DragObject: DragObject = "DragObject".asInstanceOf[DragObject]
-  @scala.inline
-  def DrillDown: DrillDown = "DrillDown".asInstanceOf[DrillDown]
-  @scala.inline
-  def DrillDownSolid: DrillDownSolid = "DrillDownSolid".asInstanceOf[DrillDownSolid]
-  @scala.inline
-  def DrillExpand: DrillExpand = "DrillExpand".asInstanceOf[DrillExpand]
-  @scala.inline
-  def DrillShow: DrillShow = "DrillShow".asInstanceOf[DrillShow]
-  @scala.inline
-  def DrillThrough: DrillThrough = "DrillThrough".asInstanceOf[DrillThrough]
-  @scala.inline
-  def Drop: Drop = "Drop".asInstanceOf[Drop]
-  @scala.inline
-  def DropShapeSolid: DropShapeSolid = "DropShapeSolid".asInstanceOf[DropShapeSolid]
-  @scala.inline
-  def Dropdown: Dropdown = "Dropdown".asInstanceOf[Dropdown]
-  @scala.inline
-  def DuplicateRow: DuplicateRow = "DuplicateRow".asInstanceOf[DuplicateRow]
-  @scala.inline
-  def Duststorm: Duststorm = "Duststorm".asInstanceOf[Duststorm]
-  @scala.inline
-  def DynamicSMBLogo: DynamicSMBLogo = "DynamicSMBLogo".asInstanceOf[DynamicSMBLogo]
-  @scala.inline
-  def Dynamics365Logo: Dynamics365Logo = "Dynamics365Logo".asInstanceOf[Dynamics365Logo]
-  @scala.inline
-  def EMI: EMI = "EMI".asInstanceOf[EMI]
-  @scala.inline
-  def EaseOfAccess: EaseOfAccess = "EaseOfAccess".asInstanceOf[EaseOfAccess]
-  @scala.inline
-  def EatDrink: EatDrink = "EatDrink".asInstanceOf[EatDrink]
-  @scala.inline
-  def EdgeLogo: EdgeLogo = "EdgeLogo".asInstanceOf[EdgeLogo]
-  @scala.inline
-  def Edit: Edit = "Edit".asInstanceOf[Edit]
-  @scala.inline
-  def EditContact: EditContact = "EditContact".asInstanceOf[EditContact]
-  @scala.inline
-  def EditCreate: EditCreate = "EditCreate".asInstanceOf[EditCreate]
-  @scala.inline
-  def EditMail: EditMail = "EditMail".asInstanceOf[EditMail]
-  @scala.inline
-  def EditMirrored: EditMirrored = "EditMirrored".asInstanceOf[EditMirrored]
-  @scala.inline
-  def EditNote: EditNote = "EditNote".asInstanceOf[EditNote]
-  @scala.inline
-  def EditPhoto: EditPhoto = "EditPhoto".asInstanceOf[EditPhoto]
-  @scala.inline
-  def EditSolid12: EditSolid12 = "EditSolid12".asInstanceOf[EditSolid12]
-  @scala.inline
-  def EditSolidMirrored12: EditSolidMirrored12 = "EditSolidMirrored12".asInstanceOf[EditSolidMirrored12]
-  @scala.inline
-  def EditStyle: EditStyle = "EditStyle".asInstanceOf[EditStyle]
-  @scala.inline
-  def Education: Education = "Education".asInstanceOf[Education]
-  @scala.inline
-  def Ellipse: Ellipse = "Ellipse".asInstanceOf[Ellipse]
-  @scala.inline
-  def Embed: Embed = "Embed".asInstanceOf[Embed]
-  @scala.inline
-  def Emoji: Emoji = "Emoji".asInstanceOf[Emoji]
-  @scala.inline
-  def Emoji2: Emoji2 = "Emoji2".asInstanceOf[Emoji2]
-  @scala.inline
-  def EmojiDisappointed: EmojiDisappointed = "EmojiDisappointed".asInstanceOf[EmojiDisappointed]
-  @scala.inline
-  def EmojiNeutral: EmojiNeutral = "EmojiNeutral".asInstanceOf[EmojiNeutral]
-  @scala.inline
-  def EmojiTabSymbols: EmojiTabSymbols = "EmojiTabSymbols".asInstanceOf[EmojiTabSymbols]
-  @scala.inline
-  def EmptyRecycleBin: EmptyRecycleBin = "EmptyRecycleBin".asInstanceOf[EmptyRecycleBin]
-  @scala.inline
-  def Encryption: Encryption = "Encryption".asInstanceOf[Encryption]
-  @scala.inline
-  def EngineeringGroup: EngineeringGroup = "EngineeringGroup".asInstanceOf[EngineeringGroup]
-  @scala.inline
-  def EntitlementPolicy: EntitlementPolicy = "EntitlementPolicy".asInstanceOf[EntitlementPolicy]
-  @scala.inline
-  def EntitlementRedemption: EntitlementRedemption = "EntitlementRedemption".asInstanceOf[EntitlementRedemption]
-  @scala.inline
-  def EntryDecline: EntryDecline = "EntryDecline".asInstanceOf[EntryDecline]
-  @scala.inline
-  def EntryView: EntryView = "EntryView".asInstanceOf[EntryView]
-  @scala.inline
-  def Equalizer: Equalizer = "Equalizer".asInstanceOf[Equalizer]
-  @scala.inline
-  def EraseTool: EraseTool = "EraseTool".asInstanceOf[EraseTool]
-  @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
-  @scala.inline
-  def ErrorBadge: ErrorBadge = "ErrorBadge".asInstanceOf[ErrorBadge]
-  @scala.inline
-  def Event: Event = "Event".asInstanceOf[Event]
-  @scala.inline
-  def Event12: Event12 = "Event12".asInstanceOf[Event12]
-  @scala.inline
-  def EventAccepted: EventAccepted = "EventAccepted".asInstanceOf[EventAccepted]
-  @scala.inline
-  def EventDate: EventDate = "EventDate".asInstanceOf[EventDate]
-  @scala.inline
-  def EventDateMissed12: EventDateMissed12 = "EventDateMissed12".asInstanceOf[EventDateMissed12]
-  @scala.inline
-  def EventDeclined: EventDeclined = "EventDeclined".asInstanceOf[EventDeclined]
-  @scala.inline
-  def EventInfo: EventInfo = "EventInfo".asInstanceOf[EventInfo]
-  @scala.inline
-  def EventTentative: EventTentative = "EventTentative".asInstanceOf[EventTentative]
-  @scala.inline
-  def EventTentativeMirrored: EventTentativeMirrored = "EventTentativeMirrored".asInstanceOf[EventTentativeMirrored]
-  @scala.inline
-  def EventToDoLogo: EventToDoLogo = "EventToDoLogo".asInstanceOf[EventToDoLogo]
-  @scala.inline
-  def ExcelDocument: ExcelDocument = "ExcelDocument".asInstanceOf[ExcelDocument]
-  @scala.inline
-  def ExcelLogo: ExcelLogo = "ExcelLogo".asInstanceOf[ExcelLogo]
-  @scala.inline
-  def ExcelLogo16: ExcelLogo16 = "ExcelLogo16".asInstanceOf[ExcelLogo16]
-  @scala.inline
-  def ExcelLogoFill: ExcelLogoFill = "ExcelLogoFill".asInstanceOf[ExcelLogoFill]
-  @scala.inline
-  def ExcelLogoFill16: ExcelLogoFill16 = "ExcelLogoFill16".asInstanceOf[ExcelLogoFill16]
-  @scala.inline
-  def ExcelLogoInverse: ExcelLogoInverse = "ExcelLogoInverse".asInstanceOf[ExcelLogoInverse]
-  @scala.inline
-  def ExcelLogoInverse16: ExcelLogoInverse16 = "ExcelLogoInverse16".asInstanceOf[ExcelLogoInverse16]
-  @scala.inline
-  def ExchangeLogo: ExchangeLogo = "ExchangeLogo".asInstanceOf[ExchangeLogo]
-  @scala.inline
-  def ExchangeLogoFill: ExchangeLogoFill = "ExchangeLogoFill".asInstanceOf[ExchangeLogoFill]
-  @scala.inline
-  def ExchangeLogoInverse: ExchangeLogoInverse = "ExchangeLogoInverse".asInstanceOf[ExchangeLogoInverse]
-  @scala.inline
-  def ExerciseTracker: ExerciseTracker = "ExerciseTracker".asInstanceOf[ExerciseTracker]
-  @scala.inline
-  def ExpandMenu: ExpandMenu = "ExpandMenu".asInstanceOf[ExpandMenu]
-  @scala.inline
-  def ExploreContent: ExploreContent = "ExploreContent".asInstanceOf[ExploreContent]
-  @scala.inline
-  def ExploreContentSingle: ExploreContentSingle = "ExploreContentSingle".asInstanceOf[ExploreContentSingle]
-  @scala.inline
-  def ExploreData: ExploreData = "ExploreData".asInstanceOf[ExploreData]
-  @scala.inline
-  def Export: Export = "Export".asInstanceOf[Export]
-  @scala.inline
-  def ExportMirrored: ExportMirrored = "ExportMirrored".asInstanceOf[ExportMirrored]
-  @scala.inline
-  def ExternalBuild: ExternalBuild = "ExternalBuild".asInstanceOf[ExternalBuild]
-  @scala.inline
-  def ExternalTFVC: ExternalTFVC = "ExternalTFVC".asInstanceOf[ExternalTFVC]
-  @scala.inline
-  def ExternalXAML: ExternalXAML = "ExternalXAML".asInstanceOf[ExternalXAML]
-  @scala.inline
-  def EyeShadow: EyeShadow = "EyeShadow".asInstanceOf[EyeShadow]
-  @scala.inline
-  def Eyedropper: Eyedropper = "Eyedropper".asInstanceOf[Eyedropper]
-  @scala.inline
-  def F12DevTools: F12DevTools = "F12DevTools".asInstanceOf[F12DevTools]
-  @scala.inline
-  def FSharp: FSharp = "FSharp".asInstanceOf[FSharp]
-  @scala.inline
-  def FSharpLanguage: FSharpLanguage = "FSharpLanguage".asInstanceOf[FSharpLanguage]
-  @scala.inline
-  def FabricAssetLibrary: FabricAssetLibrary = "FabricAssetLibrary".asInstanceOf[FabricAssetLibrary]
-  @scala.inline
-  def FabricDataConnectionLibrary: FabricDataConnectionLibrary = "FabricDataConnectionLibrary".asInstanceOf[FabricDataConnectionLibrary]
-  @scala.inline
-  def FabricDocLibrary: FabricDocLibrary = "FabricDocLibrary".asInstanceOf[FabricDocLibrary]
-  @scala.inline
-  def FabricFolder: FabricFolder = "FabricFolder".asInstanceOf[FabricFolder]
-  @scala.inline
-  def FabricFolderConfirm: FabricFolderConfirm = "FabricFolderConfirm".asInstanceOf[FabricFolderConfirm]
-  @scala.inline
-  def FabricFolderFill: FabricFolderFill = "FabricFolderFill".asInstanceOf[FabricFolderFill]
-  @scala.inline
-  def FabricFolderSearch: FabricFolderSearch = "FabricFolderSearch".asInstanceOf[FabricFolderSearch]
-  @scala.inline
-  def FabricFormLibrary: FabricFormLibrary = "FabricFormLibrary".asInstanceOf[FabricFormLibrary]
-  @scala.inline
-  def FabricFormLibraryMirrored: FabricFormLibraryMirrored = "FabricFormLibraryMirrored".asInstanceOf[FabricFormLibraryMirrored]
-  @scala.inline
-  def FabricMovetoFolder: FabricMovetoFolder = "FabricMovetoFolder".asInstanceOf[FabricMovetoFolder]
-  @scala.inline
-  def FabricNetworkFolder: FabricNetworkFolder = "FabricNetworkFolder".asInstanceOf[FabricNetworkFolder]
-  @scala.inline
-  def FabricNewFolder: FabricNewFolder = "FabricNewFolder".asInstanceOf[FabricNewFolder]
-  @scala.inline
-  def FabricOpenFolderHorizontal: FabricOpenFolderHorizontal = "FabricOpenFolderHorizontal".asInstanceOf[FabricOpenFolderHorizontal]
-  @scala.inline
-  def FabricPictureLibrary: FabricPictureLibrary = "FabricPictureLibrary".asInstanceOf[FabricPictureLibrary]
-  @scala.inline
-  def FabricPublicFolder: FabricPublicFolder = "FabricPublicFolder".asInstanceOf[FabricPublicFolder]
-  @scala.inline
-  def FabricReportLibrary: FabricReportLibrary = "FabricReportLibrary".asInstanceOf[FabricReportLibrary]
-  @scala.inline
-  def FabricReportLibraryMirrored: FabricReportLibraryMirrored = "FabricReportLibraryMirrored".asInstanceOf[FabricReportLibraryMirrored]
-  @scala.inline
-  def FabricSyncFolder: FabricSyncFolder = "FabricSyncFolder".asInstanceOf[FabricSyncFolder]
-  @scala.inline
-  def FabricTextHighlight: FabricTextHighlight = "FabricTextHighlight".asInstanceOf[FabricTextHighlight]
-  @scala.inline
-  def FabricTextHighlightComposite: FabricTextHighlightComposite = "FabricTextHighlightComposite".asInstanceOf[FabricTextHighlightComposite]
-  @scala.inline
-  def FabricUnsyncFolder: FabricUnsyncFolder = "FabricUnsyncFolder".asInstanceOf[FabricUnsyncFolder]
-  @scala.inline
-  def FabricUserFolder: FabricUserFolder = "FabricUserFolder".asInstanceOf[FabricUserFolder]
-  @scala.inline
-  def Family: Family = "Family".asInstanceOf[Family]
-  @scala.inline
-  def FangBody: FangBody = "FangBody".asInstanceOf[FangBody]
-  @scala.inline
-  def FastForward: FastForward = "FastForward".asInstanceOf[FastForward]
-  @scala.inline
-  def FastMode: FastMode = "FastMode".asInstanceOf[FastMode]
-  @scala.inline
-  def Favicon: Favicon = "Favicon".asInstanceOf[Favicon]
-  @scala.inline
-  def FavoriteList: FavoriteList = "FavoriteList".asInstanceOf[FavoriteList]
-  @scala.inline
-  def FavoriteStar: FavoriteStar = "FavoriteStar".asInstanceOf[FavoriteStar]
-  @scala.inline
-  def FavoriteStarFill: FavoriteStarFill = "FavoriteStarFill".asInstanceOf[FavoriteStarFill]
-  @scala.inline
-  def Fax: Fax = "Fax".asInstanceOf[Fax]
-  @scala.inline
-  def Feedback: Feedback = "Feedback".asInstanceOf[Feedback]
-  @scala.inline
-  def FeedbackRequestMirroredSolid: FeedbackRequestMirroredSolid = "FeedbackRequestMirroredSolid".asInstanceOf[FeedbackRequestMirroredSolid]
-  @scala.inline
-  def FeedbackRequestSolid: FeedbackRequestSolid = "FeedbackRequestSolid".asInstanceOf[FeedbackRequestSolid]
-  @scala.inline
-  def FeedbackResponseSolid: FeedbackResponseSolid = "FeedbackResponseSolid".asInstanceOf[FeedbackResponseSolid]
-  @scala.inline
-  def Ferry: Ferry = "Ferry".asInstanceOf[Ferry]
-  @scala.inline
-  def FerrySolid: FerrySolid = "FerrySolid".asInstanceOf[FerrySolid]
-  @scala.inline
-  def FieldChanged: FieldChanged = "FieldChanged".asInstanceOf[FieldChanged]
-  @scala.inline
-  def FieldEmpty: FieldEmpty = "FieldEmpty".asInstanceOf[FieldEmpty]
-  @scala.inline
-  def FieldFilled: FieldFilled = "FieldFilled".asInstanceOf[FieldFilled]
-  @scala.inline
-  def FieldNotChanged: FieldNotChanged = "FieldNotChanged".asInstanceOf[FieldNotChanged]
-  @scala.inline
-  def FieldReadOnly: FieldReadOnly = "FieldReadOnly".asInstanceOf[FieldReadOnly]
-  @scala.inline
-  def FieldRequired: FieldRequired = "FieldRequired".asInstanceOf[FieldRequired]
-  @scala.inline
-  def FileASPX: FileASPX = "FileASPX".asInstanceOf[FileASPX]
-  @scala.inline
-  def FileBug: FileBug = "FileBug".asInstanceOf[FileBug]
-  @scala.inline
-  def FileCSS: FileCSS = "FileCSS".asInstanceOf[FileCSS]
-  @scala.inline
-  def FileCode: FileCode = "FileCode".asInstanceOf[FileCode]
-  @scala.inline
-  def FileComment: FileComment = "FileComment".asInstanceOf[FileComment]
-  @scala.inline
-  def FileHTML: FileHTML = "FileHTML".asInstanceOf[FileHTML]
-  @scala.inline
-  def FileImage: FileImage = "FileImage".asInstanceOf[FileImage]
-  @scala.inline
-  def FileJAVA: FileJAVA = "FileJAVA".asInstanceOf[FileJAVA]
-  @scala.inline
-  def FileLess: FileLess = "FileLess".asInstanceOf[FileLess]
-  @scala.inline
-  def FilePDB: FilePDB = "FilePDB".asInstanceOf[FilePDB]
-  @scala.inline
-  def FileRequest: FileRequest = "FileRequest".asInstanceOf[FileRequest]
-  @scala.inline
-  def FileSQL: FileSQL = "FileSQL".asInstanceOf[FileSQL]
-  @scala.inline
-  def FileSass: FileSass = "FileSass".asInstanceOf[FileSass]
-  @scala.inline
-  def FileSymlink: FileSymlink = "FileSymlink".asInstanceOf[FileSymlink]
-  @scala.inline
-  def FileTemplate: FileTemplate = "FileTemplate".asInstanceOf[FileTemplate]
-  @scala.inline
-  def FileTypeSolution: FileTypeSolution = "FileTypeSolution".asInstanceOf[FileTypeSolution]
-  @scala.inline
-  def FileYML: FileYML = "FileYML".asInstanceOf[FileYML]
-  @scala.inline
-  def Filter: Filter = "Filter".asInstanceOf[Filter]
-  @scala.inline
-  def FilterSettings: FilterSettings = "FilterSettings".asInstanceOf[FilterSettings]
-  @scala.inline
-  def FilterSolid: FilterSolid = "FilterSolid".asInstanceOf[FilterSolid]
-  @scala.inline
-  def Filters: Filters = "Filters".asInstanceOf[Filters]
-  @scala.inline
-  def FiltersSolid: FiltersSolid = "FiltersSolid".asInstanceOf[FiltersSolid]
-  @scala.inline
-  def Financial: Financial = "Financial".asInstanceOf[Financial]
-  @scala.inline
-  def FinancialMirroredSolid: FinancialMirroredSolid = "FinancialMirroredSolid".asInstanceOf[FinancialMirroredSolid]
-  @scala.inline
-  def FinancialSolid: FinancialSolid = "FinancialSolid".asInstanceOf[FinancialSolid]
-  @scala.inline
-  def Fingerprint: Fingerprint = "Fingerprint".asInstanceOf[Fingerprint]
-  @scala.inline
-  def FitPage: FitPage = "FitPage".asInstanceOf[FitPage]
-  @scala.inline
-  def FitWidth: FitWidth = "FitWidth".asInstanceOf[FitWidth]
-  @scala.inline
-  def FiveTileGrid: FiveTileGrid = "FiveTileGrid".asInstanceOf[FiveTileGrid]
-  @scala.inline
-  def Flag: Flag = "Flag".asInstanceOf[Flag]
-  @scala.inline
-  def FlameSolid: FlameSolid = "FlameSolid".asInstanceOf[FlameSolid]
-  @scala.inline
-  def Flashlight: Flashlight = "Flashlight".asInstanceOf[Flashlight]
-  @scala.inline
-  def FlickDown: FlickDown = "FlickDown".asInstanceOf[FlickDown]
-  @scala.inline
-  def FlickLeft: FlickLeft = "FlickLeft".asInstanceOf[FlickLeft]
-  @scala.inline
-  def FlickRight: FlickRight = "FlickRight".asInstanceOf[FlickRight]
-  @scala.inline
-  def FlickUp: FlickUp = "FlickUp".asInstanceOf[FlickUp]
-  @scala.inline
-  def Flow: Flow = "Flow".asInstanceOf[Flow]
-  @scala.inline
-  def FlowChart: FlowChart = "FlowChart".asInstanceOf[FlowChart]
-  @scala.inline
-  def Flower: Flower = "Flower".asInstanceOf[Flower]
-  @scala.inline
-  def FocalPoint: FocalPoint = "FocalPoint".asInstanceOf[FocalPoint]
-  @scala.inline
-  def Focus: Focus = "Focus".asInstanceOf[Focus]
-  @scala.inline
-  def Fog: Fog = "Fog".asInstanceOf[Fog]
-  @scala.inline
-  def Folder: Folder = "Folder".asInstanceOf[Folder]
-  @scala.inline
-  def FolderFill: FolderFill = "FolderFill".asInstanceOf[FolderFill]
-  @scala.inline
-  def FolderHorizontal: FolderHorizontal = "FolderHorizontal".asInstanceOf[FolderHorizontal]
-  @scala.inline
-  def FolderList: FolderList = "FolderList".asInstanceOf[FolderList]
-  @scala.inline
-  def FolderListMirrored: FolderListMirrored = "FolderListMirrored".asInstanceOf[FolderListMirrored]
-  @scala.inline
-  def FolderOpen: FolderOpen = "FolderOpen".asInstanceOf[FolderOpen]
-  @scala.inline
-  def FolderQuery: FolderQuery = "FolderQuery".asInstanceOf[FolderQuery]
-  @scala.inline
-  def FolderSearch: FolderSearch = "FolderSearch".asInstanceOf[FolderSearch]
-  @scala.inline
-  def FollowUser: FollowUser = "FollowUser".asInstanceOf[FollowUser]
-  @scala.inline
-  def Font: Font = "Font".asInstanceOf[Font]
-  @scala.inline
-  def FontColor: FontColor = "FontColor".asInstanceOf[FontColor]
-  @scala.inline
-  def FontColorA: FontColorA = "FontColorA".asInstanceOf[FontColorA]
-  @scala.inline
-  def FontColorSwatch: FontColorSwatch = "FontColorSwatch".asInstanceOf[FontColorSwatch]
-  @scala.inline
-  def FontDecrease: FontDecrease = "FontDecrease".asInstanceOf[FontDecrease]
-  @scala.inline
-  def FontIncrease: FontIncrease = "FontIncrease".asInstanceOf[FontIncrease]
-  @scala.inline
-  def FontSize: FontSize = "FontSize".asInstanceOf[FontSize]
-  @scala.inline
-  def Footer: Footer = "Footer".asInstanceOf[Footer]
-  @scala.inline
-  def FormLibrary: FormLibrary = "FormLibrary".asInstanceOf[FormLibrary]
-  @scala.inline
-  def FormLibraryMirrored: FormLibraryMirrored = "FormLibraryMirrored".asInstanceOf[FormLibraryMirrored]
-  @scala.inline
-  def Forward: Forward = "Forward".asInstanceOf[Forward]
-  @scala.inline
-  def ForwardEvent: ForwardEvent = "ForwardEvent".asInstanceOf[ForwardEvent]
-  @scala.inline
-  def Freezing: Freezing = "Freezing".asInstanceOf[Freezing]
-  @scala.inline
-  def Frigid: Frigid = "Frigid".asInstanceOf[Frigid]
-  @scala.inline
-  def FrontCamera: FrontCamera = "FrontCamera".asInstanceOf[FrontCamera]
-  @scala.inline
-  def FullCircleMask: FullCircleMask = "FullCircleMask".asInstanceOf[FullCircleMask]
-  @scala.inline
-  def FullHistory: FullHistory = "FullHistory".asInstanceOf[FullHistory]
-  @scala.inline
-  def FullScreen: FullScreen = "FullScreen".asInstanceOf[FullScreen]
-  @scala.inline
-  def FullWidth: FullWidth = "FullWidth".asInstanceOf[FullWidth]
-  @scala.inline
-  def FullWidthEdit: FullWidthEdit = "FullWidthEdit".asInstanceOf[FullWidthEdit]
-  @scala.inline
-  def FunctionalManagerDashboard: FunctionalManagerDashboard = "FunctionalManagerDashboard".asInstanceOf[FunctionalManagerDashboard]
-  @scala.inline
-  def FunnelChart: FunnelChart = "FunnelChart".asInstanceOf[FunnelChart]
-  @scala.inline
-  def GIF: GIF = "GIF".asInstanceOf[GIF]
-  @scala.inline
-  def GUID: GUID = "GUID".asInstanceOf[GUID]
-  @scala.inline
-  def GallatinLogo: GallatinLogo = "GallatinLogo".asInstanceOf[GallatinLogo]
-  @scala.inline
-  def Game: Game = "Game".asInstanceOf[Game]
-  @scala.inline
-  def Generate: Generate = "Generate".asInstanceOf[Generate]
-  @scala.inline
-  def GenericScan: GenericScan = "GenericScan".asInstanceOf[GenericScan]
-  @scala.inline
-  def GenericScanFilled: GenericScanFilled = "GenericScanFilled".asInstanceOf[GenericScanFilled]
-  @scala.inline
-  def GiftBoxSolid: GiftBoxSolid = "GiftBoxSolid".asInstanceOf[GiftBoxSolid]
-  @scala.inline
-  def GiftCard: GiftCard = "GiftCard".asInstanceOf[GiftCard]
-  @scala.inline
-  def Giftbox: Giftbox = "Giftbox".asInstanceOf[Giftbox]
-  @scala.inline
-  def GiftboxOpen: GiftboxOpen = "GiftboxOpen".asInstanceOf[GiftboxOpen]
-  @scala.inline
-  def GitGraph: GitGraph = "GitGraph".asInstanceOf[GitGraph]
-  @scala.inline
-  def Glasses: Glasses = "Glasses".asInstanceOf[Glasses]
-  @scala.inline
-  def Glimmer: Glimmer = "Glimmer".asInstanceOf[Glimmer]
-  @scala.inline
-  def GlobalNavButton: GlobalNavButton = "GlobalNavButton".asInstanceOf[GlobalNavButton]
-  @scala.inline
-  def GlobalNavButtonActive: GlobalNavButtonActive = "GlobalNavButtonActive".asInstanceOf[GlobalNavButtonActive]
-  @scala.inline
-  def Globe: Globe = "Globe".asInstanceOf[Globe]
-  @scala.inline
-  def Globe2: Globe2 = "Globe2".asInstanceOf[Globe2]
-  @scala.inline
-  def GlobeFavorite: GlobeFavorite = "GlobeFavorite".asInstanceOf[GlobeFavorite]
-  @scala.inline
-  def Go: Go = "Go".asInstanceOf[Go]
-  @scala.inline
-  def GoMirrored: GoMirrored = "GoMirrored".asInstanceOf[GoMirrored]
-  @scala.inline
-  def GoToDashboard: GoToDashboard = "GoToDashboard".asInstanceOf[GoToDashboard]
-  @scala.inline
-  def Golf: Golf = "Golf".asInstanceOf[Golf]
-  @scala.inline
-  def GotoToday: GotoToday = "GotoToday".asInstanceOf[GotoToday]
-  @scala.inline
-  def GreetingCard: GreetingCard = "GreetingCard".asInstanceOf[GreetingCard]
-  @scala.inline
-  def GridViewLarge: GridViewLarge = "GridViewLarge".asInstanceOf[GridViewLarge]
-  @scala.inline
-  def GridViewMedium: GridViewMedium = "GridViewMedium".asInstanceOf[GridViewMedium]
-  @scala.inline
-  def GridViewSmall: GridViewSmall = "GridViewSmall".asInstanceOf[GridViewSmall]
-  @scala.inline
-  def GripperBarHorizontal: GripperBarHorizontal = "GripperBarHorizontal".asInstanceOf[GripperBarHorizontal]
-  @scala.inline
-  def GripperBarVertical: GripperBarVertical = "GripperBarVertical".asInstanceOf[GripperBarVertical]
-  @scala.inline
-  def GripperDotsVertical: GripperDotsVertical = "GripperDotsVertical".asInstanceOf[GripperDotsVertical]
-  @scala.inline
-  def GripperTool: GripperTool = "GripperTool".asInstanceOf[GripperTool]
-  @scala.inline
-  def Group: Group = "Group".asInstanceOf[Group]
-  @scala.inline
-  def GroupList: GroupList = "GroupList".asInstanceOf[GroupList]
-  @scala.inline
-  def GroupObject: GroupObject = "GroupObject".asInstanceOf[GroupObject]
-  @scala.inline
-  def GroupedAscending: GroupedAscending = "GroupedAscending".asInstanceOf[GroupedAscending]
-  @scala.inline
-  def GroupedDescending: GroupedDescending = "GroupedDescending".asInstanceOf[GroupedDescending]
-  @scala.inline
-  def GroupedList: GroupedList = "GroupedList".asInstanceOf[GroupedList]
-  @scala.inline
-  def Guitar: Guitar = "Guitar".asInstanceOf[Guitar]
-  @scala.inline
-  def HailDay: HailDay = "HailDay".asInstanceOf[HailDay]
-  @scala.inline
-  def HailNight: HailNight = "HailNight".asInstanceOf[HailNight]
-  @scala.inline
-  def HalfAlpha: HalfAlpha = "HalfAlpha".asInstanceOf[HalfAlpha]
-  @scala.inline
-  def HalfCircle: HalfCircle = "HalfCircle".asInstanceOf[HalfCircle]
-  @scala.inline
-  def HandsFree: HandsFree = "HandsFree".asInstanceOf[HandsFree]
-  @scala.inline
-  def Handwriting: Handwriting = "Handwriting".asInstanceOf[Handwriting]
-  @scala.inline
-  def HardDrive: HardDrive = "HardDrive".asInstanceOf[HardDrive]
-  @scala.inline
-  def HardDriveGroup: HardDriveGroup = "HardDriveGroup".asInstanceOf[HardDriveGroup]
-  @scala.inline
-  def HardDriveLock: HardDriveLock = "HardDriveLock".asInstanceOf[HardDriveLock]
-  @scala.inline
-  def HardDriveUnlock: HardDriveUnlock = "HardDriveUnlock".asInstanceOf[HardDriveUnlock]
-  @scala.inline
-  def Header: Header = "Header".asInstanceOf[Header]
-  @scala.inline
-  def Header1: Header1 = "Header1".asInstanceOf[Header1]
-  @scala.inline
-  def Header2: Header2 = "Header2".asInstanceOf[Header2]
-  @scala.inline
-  def Header3: Header3 = "Header3".asInstanceOf[Header3]
-  @scala.inline
-  def Header4: Header4 = "Header4".asInstanceOf[Header4]
-  @scala.inline
-  def Headset: Headset = "Headset".asInstanceOf[Headset]
-  @scala.inline
-  def HeadsetSolid: HeadsetSolid = "HeadsetSolid".asInstanceOf[HeadsetSolid]
-  @scala.inline
-  def Health: Health = "Health".asInstanceOf[Health]
-  @scala.inline
-  def HealthSolid: HealthSolid = "HealthSolid".asInstanceOf[HealthSolid]
-  @scala.inline
-  def Heart: Heart = "Heart".asInstanceOf[Heart]
-  @scala.inline
-  def HeartBroken: HeartBroken = "HeartBroken".asInstanceOf[HeartBroken]
-  @scala.inline
-  def HeartFill: HeartFill = "HeartFill".asInstanceOf[HeartFill]
-  @scala.inline
-  def Help: Help = "Help".asInstanceOf[Help]
-  @scala.inline
-  def HelpMirrored: HelpMirrored = "HelpMirrored".asInstanceOf[HelpMirrored]
-  @scala.inline
-  def Hexagon: Hexagon = "Hexagon".asInstanceOf[Hexagon]
-  @scala.inline
-  def Hide: Hide = "Hide".asInstanceOf[Hide]
-  @scala.inline
-  def Hide2: Hide2 = "Hide2".asInstanceOf[Hide2]
-  @scala.inline
-  def Hide3: Hide3 = "Hide3".asInstanceOf[Hide3]
-  @scala.inline
-  def Highlight: Highlight = "Highlight".asInstanceOf[Highlight]
-  @scala.inline
-  def HighlightMappedShapes: HighlightMappedShapes = "HighlightMappedShapes".asInstanceOf[HighlightMappedShapes]
-  @scala.inline
-  def HintText: HintText = "HintText".asInstanceOf[HintText]
-  @scala.inline
-  def HistoricalWeather: HistoricalWeather = "HistoricalWeather".asInstanceOf[HistoricalWeather]
-  @scala.inline
-  def History: History = "History".asInstanceOf[History]
-  @scala.inline
-  def Home: Home = "Home".asInstanceOf[Home]
-  @scala.inline
-  def HomeGroup: HomeGroup = "HomeGroup".asInstanceOf[HomeGroup]
-  @scala.inline
-  def HomeSolid: HomeSolid = "HomeSolid".asInstanceOf[HomeSolid]
-  @scala.inline
-  def HomeVerify: HomeVerify = "HomeVerify".asInstanceOf[HomeVerify]
-  @scala.inline
-  def HorizontalDistributeCenter: HorizontalDistributeCenter = "HorizontalDistributeCenter".asInstanceOf[HorizontalDistributeCenter]
-  @scala.inline
-  def HorizontalTabKey: HorizontalTabKey = "HorizontalTabKey".asInstanceOf[HorizontalTabKey]
-  @scala.inline
-  def Hospital: Hospital = "Hospital".asInstanceOf[Hospital]
-  @scala.inline
-  def Hotel: Hotel = "Hotel".asInstanceOf[Hotel]
-  @scala.inline
-  def HourGlass: HourGlass = "HourGlass".asInstanceOf[HourGlass]
-  @scala.inline
-  def IDBadge: IDBadge = "IDBadge".asInstanceOf[IDBadge]
-  @scala.inline
-  def IRMForward: IRMForward = "IRMForward".asInstanceOf[IRMForward]
-  @scala.inline
-  def IRMForwardMirrored: IRMForwardMirrored = "IRMForwardMirrored".asInstanceOf[IRMForwardMirrored]
-  @scala.inline
-  def IRMReply: IRMReply = "IRMReply".asInstanceOf[IRMReply]
-  @scala.inline
-  def IRMReplyMirrored: IRMReplyMirrored = "IRMReplyMirrored".asInstanceOf[IRMReplyMirrored]
-  @scala.inline
-  def IconSetsFlag: IconSetsFlag = "IconSetsFlag".asInstanceOf[IconSetsFlag]
-  @scala.inline
-  def ImageCrosshair: ImageCrosshair = "ImageCrosshair".asInstanceOf[ImageCrosshair]
-  @scala.inline
-  def ImageDiff: ImageDiff = "ImageDiff".asInstanceOf[ImageDiff]
-  @scala.inline
-  def ImagePixel: ImagePixel = "ImagePixel".asInstanceOf[ImagePixel]
-  @scala.inline
-  def ImageSearch: ImageSearch = "ImageSearch".asInstanceOf[ImageSearch]
-  @scala.inline
-  def Import: Import = "Import".asInstanceOf[Import]
-  @scala.inline
-  def ImportAllMirrored: ImportAllMirrored = "ImportAllMirrored".asInstanceOf[ImportAllMirrored]
-  @scala.inline
-  def ImportMirrored: ImportMirrored = "ImportMirrored".asInstanceOf[ImportMirrored]
-  @scala.inline
-  def Important: Important = "Important".asInstanceOf[Important]
-  @scala.inline
-  def Inbox: Inbox = "Inbox".asInstanceOf[Inbox]
-  @scala.inline
-  def InboxCheck: InboxCheck = "InboxCheck".asInstanceOf[InboxCheck]
-  @scala.inline
-  def IncidentTriangle: IncidentTriangle = "IncidentTriangle".asInstanceOf[IncidentTriangle]
-  @scala.inline
-  def IncomingCall: IncomingCall = "IncomingCall".asInstanceOf[IncomingCall]
-  @scala.inline
-  def IncreaseIndentArrow: IncreaseIndentArrow = "IncreaseIndentArrow".asInstanceOf[IncreaseIndentArrow]
-  @scala.inline
-  def IncreaseIndentArrowMirrored: IncreaseIndentArrowMirrored = "IncreaseIndentArrowMirrored".asInstanceOf[IncreaseIndentArrowMirrored]
-  @scala.inline
-  def IncreaseIndentLegacy: IncreaseIndentLegacy = "IncreaseIndentLegacy".asInstanceOf[IncreaseIndentLegacy]
-  @scala.inline
-  def IncreaseIndentText: IncreaseIndentText = "IncreaseIndentText".asInstanceOf[IncreaseIndentText]
-  @scala.inline
-  def IncreaseIndentTextMirrored: IncreaseIndentTextMirrored = "IncreaseIndentTextMirrored".asInstanceOf[IncreaseIndentTextMirrored]
-  @scala.inline
-  def Info: Info = "Info".asInstanceOf[Info]
-  @scala.inline
-  def Info2: Info2 = "Info2".asInstanceOf[Info2]
-  @scala.inline
-  def InfoSolid: InfoSolid = "InfoSolid".asInstanceOf[InfoSolid]
-  @scala.inline
-  def InformationBarriers: InformationBarriers = "InformationBarriers".asInstanceOf[InformationBarriers]
-  @scala.inline
-  def InkingTool: InkingTool = "InkingTool".asInstanceOf[InkingTool]
-  @scala.inline
-  def Insert: Insert = "Insert".asInstanceOf[Insert]
-  @scala.inline
-  def InsertColumnsLeft: InsertColumnsLeft = "InsertColumnsLeft".asInstanceOf[InsertColumnsLeft]
-  @scala.inline
-  def InsertColumnsRight: InsertColumnsRight = "InsertColumnsRight".asInstanceOf[InsertColumnsRight]
-  @scala.inline
-  def InsertRowsAbove: InsertRowsAbove = "InsertRowsAbove".asInstanceOf[InsertRowsAbove]
-  @scala.inline
-  def InsertRowsBelow: InsertRowsBelow = "InsertRowsBelow".asInstanceOf[InsertRowsBelow]
-  @scala.inline
-  def InsertSignatureLine: InsertSignatureLine = "InsertSignatureLine".asInstanceOf[InsertSignatureLine]
-  @scala.inline
-  def InsertTextBox: InsertTextBox = "InsertTextBox".asInstanceOf[InsertTextBox]
-  @scala.inline
-  def InstallToDrive: InstallToDrive = "InstallToDrive".asInstanceOf[InstallToDrive]
-  @scala.inline
-  def Installation: Installation = "Installation".asInstanceOf[Installation]
-  @scala.inline
-  def InternalInvestigation: InternalInvestigation = "InternalInvestigation".asInstanceOf[InternalInvestigation]
-  @scala.inline
-  def InternetSharing: InternetSharing = "InternetSharing".asInstanceOf[InternetSharing]
-  @scala.inline
-  def IssueSolid: IssueSolid = "IssueSolid".asInstanceOf[IssueSolid]
-  @scala.inline
-  def IssueTracking: IssueTracking = "IssueTracking".asInstanceOf[IssueTracking]
-  @scala.inline
-  def IssueTrackingMirrored: IssueTrackingMirrored = "IssueTrackingMirrored".asInstanceOf[IssueTrackingMirrored]
-  @scala.inline
-  def Italic: Italic = "Italic".asInstanceOf[Italic]
-  @scala.inline
-  def JS: JS = "JS".asInstanceOf[JS]
-  @scala.inline
-  def JavaScriptLanguage: JavaScriptLanguage = "JavaScriptLanguage".asInstanceOf[JavaScriptLanguage]
-  @scala.inline
-  def JoinOnlineMeeting: JoinOnlineMeeting = "JoinOnlineMeeting".asInstanceOf[JoinOnlineMeeting]
-  @scala.inline
-  def KaizalaLogo: KaizalaLogo = "KaizalaLogo".asInstanceOf[KaizalaLogo]
-  @scala.inline
-  def KeyboardClassic: KeyboardClassic = "KeyboardClassic".asInstanceOf[KeyboardClassic]
-  @scala.inline
-  def KnowledgeArticle: KnowledgeArticle = "KnowledgeArticle".asInstanceOf[KnowledgeArticle]
-  @scala.inline
-  def Label: Label = "Label".asInstanceOf[Label]
-  @scala.inline
-  def LadybugSolid: LadybugSolid = "LadybugSolid".asInstanceOf[LadybugSolid]
-  @scala.inline
-  def Lamp: Lamp = "Lamp".asInstanceOf[Lamp]
-  @scala.inline
-  def LandscapeOrientation: LandscapeOrientation = "LandscapeOrientation".asInstanceOf[LandscapeOrientation]
-  @scala.inline
-  def LaptopSecure: LaptopSecure = "LaptopSecure".asInstanceOf[LaptopSecure]
-  @scala.inline
-  def LaptopSelected: LaptopSelected = "LaptopSelected".asInstanceOf[LaptopSelected]
-  @scala.inline
-  def LargeGrid: LargeGrid = "LargeGrid".asInstanceOf[LargeGrid]
-  @scala.inline
-  def Leave: Leave = "Leave".asInstanceOf[Leave]
-  @scala.inline
-  def Library: Library = "Library".asInstanceOf[Library]
-  @scala.inline
-  def Lifesaver: Lifesaver = "Lifesaver".asInstanceOf[Lifesaver]
-  @scala.inline
-  def LifesaverLock: LifesaverLock = "LifesaverLock".asInstanceOf[LifesaverLock]
-  @scala.inline
-  def Light: Light = "Light".asInstanceOf[Light]
-  @scala.inline
-  def LightWeight: LightWeight = "LightWeight".asInstanceOf[LightWeight]
-  @scala.inline
-  def Lightbulb: Lightbulb = "Lightbulb".asInstanceOf[Lightbulb]
-  @scala.inline
-  def LightningBolt: LightningBolt = "LightningBolt".asInstanceOf[LightningBolt]
-  @scala.inline
-  def Like: Like = "Like".asInstanceOf[Like]
-  @scala.inline
-  def LikeSolid: LikeSolid = "LikeSolid".asInstanceOf[LikeSolid]
-  @scala.inline
-  def Line: Line = "Line".asInstanceOf[Line]
-  @scala.inline
-  def LineChart: LineChart = "LineChart".asInstanceOf[LineChart]
-  @scala.inline
-  def LineSpacing: LineSpacing = "LineSpacing".asInstanceOf[LineSpacing]
-  @scala.inline
-  def LineStyle: LineStyle = "LineStyle".asInstanceOf[LineStyle]
-  @scala.inline
-  def LineThickness: LineThickness = "LineThickness".asInstanceOf[LineThickness]
-  @scala.inline
-  def Link: Link = "Link".asInstanceOf[Link]
-  @scala.inline
-  def Link12: Link12 = "Link12".asInstanceOf[Link12]
-  @scala.inline
-  def LinkedDatabase: LinkedDatabase = "LinkedDatabase".asInstanceOf[LinkedDatabase]
-  @scala.inline
-  def LinkedInLogo: LinkedInLogo = "LinkedInLogo".asInstanceOf[LinkedInLogo]
-  @scala.inline
-  def List: List = "List".asInstanceOf[List]
-  @scala.inline
-  def ListMirrored: ListMirrored = "ListMirrored".asInstanceOf[ListMirrored]
-  @scala.inline
-  def LocaleLanguage: LocaleLanguage = "LocaleLanguage".asInstanceOf[LocaleLanguage]
-  @scala.inline
-  def Location: Location = "Location".asInstanceOf[Location]
-  @scala.inline
-  def LocationCircle: LocationCircle = "LocationCircle".asInstanceOf[LocationCircle]
-  @scala.inline
-  def LocationDot: LocationDot = "LocationDot".asInstanceOf[LocationDot]
-  @scala.inline
-  def LocationFill: LocationFill = "LocationFill".asInstanceOf[LocationFill]
-  @scala.inline
-  def LocationOutline: LocationOutline = "LocationOutline".asInstanceOf[LocationOutline]
-  @scala.inline
-  def Lock: Lock = "Lock".asInstanceOf[Lock]
-  @scala.inline
-  def Lock12: Lock12 = "Lock12".asInstanceOf[Lock12]
-  @scala.inline
-  def LockSolid: LockSolid = "LockSolid".asInstanceOf[LockSolid]
-  @scala.inline
-  def LogRemove: LogRemove = "LogRemove".asInstanceOf[LogRemove]
-  @scala.inline
-  def LookupEntities: LookupEntities = "LookupEntities".asInstanceOf[LookupEntities]
-  @scala.inline
-  def LowerBrightness: LowerBrightness = "LowerBrightness".asInstanceOf[LowerBrightness]
-  @scala.inline
-  def LyncLogo: LyncLogo = "LyncLogo".asInstanceOf[LyncLogo]
-  @scala.inline
-  def M365InvoicingLogo: M365InvoicingLogo = "M365InvoicingLogo".asInstanceOf[M365InvoicingLogo]
-  @scala.inline
-  def MSNLogo: MSNLogo = "MSNLogo".asInstanceOf[MSNLogo]
-  @scala.inline
-  def MSNVideos: MSNVideos = "MSNVideos".asInstanceOf[MSNVideos]
-  @scala.inline
-  def MSNVideosSolid: MSNVideosSolid = "MSNVideosSolid".asInstanceOf[MSNVideosSolid]
-  @scala.inline
-  def Mail: Mail = "Mail".asInstanceOf[Mail]
-  @scala.inline
-  def MailAlert: MailAlert = "MailAlert".asInstanceOf[MailAlert]
-  @scala.inline
-  def MailAttached: MailAttached = "MailAttached".asInstanceOf[MailAttached]
-  @scala.inline
-  def MailCheck: MailCheck = "MailCheck".asInstanceOf[MailCheck]
-  @scala.inline
-  def MailFill: MailFill = "MailFill".asInstanceOf[MailFill]
-  @scala.inline
-  def MailForward: MailForward = "MailForward".asInstanceOf[MailForward]
-  @scala.inline
-  def MailForwardMirrored: MailForwardMirrored = "MailForwardMirrored".asInstanceOf[MailForwardMirrored]
-  @scala.inline
-  def MailLowImportance: MailLowImportance = "MailLowImportance".asInstanceOf[MailLowImportance]
-  @scala.inline
-  def MailOptions: MailOptions = "MailOptions".asInstanceOf[MailOptions]
-  @scala.inline
-  def MailPause: MailPause = "MailPause".asInstanceOf[MailPause]
-  @scala.inline
-  def MailReminder: MailReminder = "MailReminder".asInstanceOf[MailReminder]
-  @scala.inline
-  def MailRepeat: MailRepeat = "MailRepeat".asInstanceOf[MailRepeat]
-  @scala.inline
-  def MailReply: MailReply = "MailReply".asInstanceOf[MailReply]
-  @scala.inline
-  def MailReplyAll: MailReplyAll = "MailReplyAll".asInstanceOf[MailReplyAll]
-  @scala.inline
-  def MailReplyAllMirrored: MailReplyAllMirrored = "MailReplyAllMirrored".asInstanceOf[MailReplyAllMirrored]
-  @scala.inline
-  def MailReplyMirrored: MailReplyMirrored = "MailReplyMirrored".asInstanceOf[MailReplyMirrored]
-  @scala.inline
-  def MailSchedule: MailSchedule = "MailSchedule".asInstanceOf[MailSchedule]
-  @scala.inline
-  def MailSolid: MailSolid = "MailSolid".asInstanceOf[MailSolid]
-  @scala.inline
-  def MailTentative: MailTentative = "MailTentative".asInstanceOf[MailTentative]
-  @scala.inline
-  def MailTentativeMirrored: MailTentativeMirrored = "MailTentativeMirrored".asInstanceOf[MailTentativeMirrored]
-  @scala.inline
-  def MailUndelivered: MailUndelivered = "MailUndelivered".asInstanceOf[MailUndelivered]
-  @scala.inline
-  def ManagerSelfService: ManagerSelfService = "ManagerSelfService".asInstanceOf[ManagerSelfService]
-  @scala.inline
-  def Manufacturing: Manufacturing = "Manufacturing".asInstanceOf[Manufacturing]
-  @scala.inline
-  def MapDirections: MapDirections = "MapDirections".asInstanceOf[MapDirections]
-  @scala.inline
-  def MapLayers: MapLayers = "MapLayers".asInstanceOf[MapLayers]
-  @scala.inline
-  def MapPin: MapPin = "MapPin".asInstanceOf[MapPin]
-  @scala.inline
-  def MapPinSolid: MapPinSolid = "MapPinSolid".asInstanceOf[MapPinSolid]
-  @scala.inline
-  def MarkAsProtected: MarkAsProtected = "MarkAsProtected".asInstanceOf[MarkAsProtected]
-  @scala.inline
-  def MarkDownLanguage: MarkDownLanguage = "MarkDownLanguage".asInstanceOf[MarkDownLanguage]
-  @scala.inline
-  def Market: Market = "Market".asInstanceOf[Market]
-  @scala.inline
-  def MarketDown: MarketDown = "MarketDown".asInstanceOf[MarketDown]
-  @scala.inline
-  def MasterDatabase: MasterDatabase = "MasterDatabase".asInstanceOf[MasterDatabase]
-  @scala.inline
-  def MaximumValue: MaximumValue = "MaximumValue".asInstanceOf[MaximumValue]
-  @scala.inline
-  def Medal: Medal = "Medal".asInstanceOf[Medal]
-  @scala.inline
-  def MedalSolid: MedalSolid = "MedalSolid".asInstanceOf[MedalSolid]
-  @scala.inline
-  def Media: Media = "Media".asInstanceOf[Media]
-  @scala.inline
-  def MediaAdd: MediaAdd = "MediaAdd".asInstanceOf[MediaAdd]
-  @scala.inline
-  def Medical: Medical = "Medical".asInstanceOf[Medical]
-  @scala.inline
-  def Megaphone: Megaphone = "Megaphone".asInstanceOf[Megaphone]
-  @scala.inline
-  def MegaphoneSolid: MegaphoneSolid = "MegaphoneSolid".asInstanceOf[MegaphoneSolid]
-  @scala.inline
-  def Memo: Memo = "Memo".asInstanceOf[Memo]
-  @scala.inline
-  def Merge: Merge = "Merge".asInstanceOf[Merge]
-  @scala.inline
-  def MergeDuplicate: MergeDuplicate = "MergeDuplicate".asInstanceOf[MergeDuplicate]
-  @scala.inline
-  def Message: Message = "Message".asInstanceOf[Message]
-  @scala.inline
-  def MessageFill: MessageFill = "MessageFill".asInstanceOf[MessageFill]
-  @scala.inline
-  def MicOff: MicOff = "MicOff".asInstanceOf[MicOff]
-  @scala.inline
-  def MicOff2: MicOff2 = "MicOff2".asInstanceOf[MicOff2]
-  @scala.inline
-  def Microphone: Microphone = "Microphone".asInstanceOf[Microphone]
-  @scala.inline
-  def MicrosoftFlowLogo: MicrosoftFlowLogo = "MicrosoftFlowLogo".asInstanceOf[MicrosoftFlowLogo]
-  @scala.inline
-  def MicrosoftStaffhubLogo: MicrosoftStaffhubLogo = "MicrosoftStaffhubLogo".asInstanceOf[MicrosoftStaffhubLogo]
-  @scala.inline
-  def MicrosoftTranslatorLogo: MicrosoftTranslatorLogo = "MicrosoftTranslatorLogo".asInstanceOf[MicrosoftTranslatorLogo]
-  @scala.inline
-  def MicrosoftTranslatorLogoBlue: MicrosoftTranslatorLogoBlue = "MicrosoftTranslatorLogoBlue".asInstanceOf[MicrosoftTranslatorLogoBlue]
-  @scala.inline
-  def MicrosoftTranslatorLogoGreen: MicrosoftTranslatorLogoGreen = "MicrosoftTranslatorLogoGreen".asInstanceOf[MicrosoftTranslatorLogoGreen]
-  @scala.inline
-  def MiniContract: MiniContract = "MiniContract".asInstanceOf[MiniContract]
-  @scala.inline
-  def MiniContractMirrored: MiniContractMirrored = "MiniContractMirrored".asInstanceOf[MiniContractMirrored]
-  @scala.inline
-  def MiniExpand: MiniExpand = "MiniExpand".asInstanceOf[MiniExpand]
-  @scala.inline
-  def MiniExpandMirrored: MiniExpandMirrored = "MiniExpandMirrored".asInstanceOf[MiniExpandMirrored]
-  @scala.inline
-  def MiniLink: MiniLink = "MiniLink".asInstanceOf[MiniLink]
-  @scala.inline
-  def MinimumValue: MinimumValue = "MinimumValue".asInstanceOf[MinimumValue]
-  @scala.inline
-  def MobileReport: MobileReport = "MobileReport".asInstanceOf[MobileReport]
-  @scala.inline
-  def MobileSelected: MobileSelected = "MobileSelected".asInstanceOf[MobileSelected]
-  @scala.inline
-  def ModelingView: ModelingView = "ModelingView".asInstanceOf[ModelingView]
-  @scala.inline
-  def Money: Money = "Money".asInstanceOf[Money]
-  @scala.inline
-  def More: More = "More".asInstanceOf[More]
-  @scala.inline
-  def MoreSports: MoreSports = "MoreSports".asInstanceOf[MoreSports]
-  @scala.inline
-  def MoreVertical: MoreVertical = "MoreVertical".asInstanceOf[MoreVertical]
-  @scala.inline
-  def MountainClimbing: MountainClimbing = "MountainClimbing".asInstanceOf[MountainClimbing]
-  @scala.inline
-  def Move: Move = "Move".asInstanceOf[Move]
-  @scala.inline
-  def MoveToFolder: MoveToFolder = "MoveToFolder".asInstanceOf[MoveToFolder]
-  @scala.inline
-  def Movers: Movers = "Movers".asInstanceOf[Movers]
-  @scala.inline
-  def MultiSelect: MultiSelect = "MultiSelect".asInstanceOf[MultiSelect]
-  @scala.inline
-  def MultiSelectMirrored: MultiSelectMirrored = "MultiSelectMirrored".asInstanceOf[MultiSelectMirrored]
-  @scala.inline
-  def MusicInCollection: MusicInCollection = "MusicInCollection".asInstanceOf[MusicInCollection]
-  @scala.inline
-  def MusicInCollectionFill: MusicInCollectionFill = "MusicInCollectionFill".asInstanceOf[MusicInCollectionFill]
-  @scala.inline
-  def MusicNote: MusicNote = "MusicNote".asInstanceOf[MusicNote]
-  @scala.inline
-  def MuteChat: MuteChat = "MuteChat".asInstanceOf[MuteChat]
-  @scala.inline
-  def MyMoviesTV: MyMoviesTV = "MyMoviesTV".asInstanceOf[MyMoviesTV]
-  @scala.inline
-  def Nav2DMapView: Nav2DMapView = "Nav2DMapView".asInstanceOf[Nav2DMapView]
-  @scala.inline
-  def NavigateBack: NavigateBack = "NavigateBack".asInstanceOf[NavigateBack]
-  @scala.inline
-  def NavigateBackMirrored: NavigateBackMirrored = "NavigateBackMirrored".asInstanceOf[NavigateBackMirrored]
-  @scala.inline
-  def NavigateExternalInline: NavigateExternalInline = "NavigateExternalInline".asInstanceOf[NavigateExternalInline]
-  @scala.inline
-  def NavigateForward: NavigateForward = "NavigateForward".asInstanceOf[NavigateForward]
-  @scala.inline
-  def NavigateForwardMirrored: NavigateForwardMirrored = "NavigateForwardMirrored".asInstanceOf[NavigateForwardMirrored]
-  @scala.inline
-  def NavigationFlipper: NavigationFlipper = "NavigationFlipper".asInstanceOf[NavigationFlipper]
-  @scala.inline
-  def NetworkTower: NetworkTower = "NetworkTower".asInstanceOf[NetworkTower]
-  @scala.inline
-  def NewAnalyticsQuery: NewAnalyticsQuery = "NewAnalyticsQuery".asInstanceOf[NewAnalyticsQuery]
-  @scala.inline
-  def NewFolder: NewFolder = "NewFolder".asInstanceOf[NewFolder]
-  @scala.inline
-  def NewMail: NewMail = "NewMail".asInstanceOf[NewMail]
-  @scala.inline
-  def NewTeamProject: NewTeamProject = "NewTeamProject".asInstanceOf[NewTeamProject]
-  @scala.inline
-  def News: News = "News".asInstanceOf[News]
-  @scala.inline
-  def NewsSearch: NewsSearch = "NewsSearch".asInstanceOf[NewsSearch]
-  @scala.inline
-  def Next: Next = "Next".asInstanceOf[Next]
-  @scala.inline
-  def NormalWeight: NormalWeight = "NormalWeight".asInstanceOf[NormalWeight]
-  @scala.inline
-  def NotExecuted: NotExecuted = "NotExecuted".asInstanceOf[NotExecuted]
-  @scala.inline
-  def NotImpactedSolid: NotImpactedSolid = "NotImpactedSolid".asInstanceOf[NotImpactedSolid]
-  @scala.inline
-  def NoteForward: NoteForward = "NoteForward".asInstanceOf[NoteForward]
-  @scala.inline
-  def NotePinned: NotePinned = "NotePinned".asInstanceOf[NotePinned]
-  @scala.inline
-  def NoteReply: NoteReply = "NoteReply".asInstanceOf[NoteReply]
-  @scala.inline
-  def NugetLogo: NugetLogo = "NugetLogo".asInstanceOf[NugetLogo]
-  @scala.inline
-  def NumberField: NumberField = "NumberField".asInstanceOf[NumberField]
-  @scala.inline
-  def NumberSequence: NumberSequence = "NumberSequence".asInstanceOf[NumberSequence]
-  @scala.inline
-  def NumberSymbol: NumberSymbol = "NumberSymbol".asInstanceOf[NumberSymbol]
-  @scala.inline
-  def NumberedList: NumberedList = "NumberedList".asInstanceOf[NumberedList]
-  @scala.inline
-  def NumberedListNumber: NumberedListNumber = "NumberedListNumber".asInstanceOf[NumberedListNumber]
-  @scala.inline
-  def NumberedListNumberMirrored: NumberedListNumberMirrored = "NumberedListNumberMirrored".asInstanceOf[NumberedListNumberMirrored]
-  @scala.inline
-  def NumberedListText: NumberedListText = "NumberedListText".asInstanceOf[NumberedListText]
-  @scala.inline
-  def NumberedListTextMirrored: NumberedListTextMirrored = "NumberedListTextMirrored".asInstanceOf[NumberedListTextMirrored]
-  @scala.inline
-  def OEM: OEM = "OEM".asInstanceOf[OEM]
-  @scala.inline
-  def Octagon: Octagon = "Octagon".asInstanceOf[Octagon]
-  @scala.inline
-  def OfficeAddinsLogo: OfficeAddinsLogo = "OfficeAddinsLogo".asInstanceOf[OfficeAddinsLogo]
-  @scala.inline
-  def OfficeAssistantLogo: OfficeAssistantLogo = "OfficeAssistantLogo".asInstanceOf[OfficeAssistantLogo]
-  @scala.inline
-  def OfficeChat: OfficeChat = "OfficeChat".asInstanceOf[OfficeChat]
-  @scala.inline
-  def OfficeChatSolid: OfficeChatSolid = "OfficeChatSolid".asInstanceOf[OfficeChatSolid]
-  @scala.inline
-  def OfficeFormsLogo: OfficeFormsLogo = "OfficeFormsLogo".asInstanceOf[OfficeFormsLogo]
-  @scala.inline
-  def OfficeFormsLogo16: OfficeFormsLogo16 = "OfficeFormsLogo16".asInstanceOf[OfficeFormsLogo16]
-  @scala.inline
-  def OfficeFormsLogo24: OfficeFormsLogo24 = "OfficeFormsLogo24".asInstanceOf[OfficeFormsLogo24]
-  @scala.inline
-  def OfficeFormsLogoFill: OfficeFormsLogoFill = "OfficeFormsLogoFill".asInstanceOf[OfficeFormsLogoFill]
-  @scala.inline
-  def OfficeFormsLogoFill16: OfficeFormsLogoFill16 = "OfficeFormsLogoFill16".asInstanceOf[OfficeFormsLogoFill16]
-  @scala.inline
-  def OfficeFormsLogoFill24: OfficeFormsLogoFill24 = "OfficeFormsLogoFill24".asInstanceOf[OfficeFormsLogoFill24]
-  @scala.inline
-  def OfficeFormsLogoInverse: OfficeFormsLogoInverse = "OfficeFormsLogoInverse".asInstanceOf[OfficeFormsLogoInverse]
-  @scala.inline
-  def OfficeFormsLogoInverse16: OfficeFormsLogoInverse16 = "OfficeFormsLogoInverse16".asInstanceOf[OfficeFormsLogoInverse16]
-  @scala.inline
-  def OfficeFormsLogoInverse24: OfficeFormsLogoInverse24 = "OfficeFormsLogoInverse24".asInstanceOf[OfficeFormsLogoInverse24]
-  @scala.inline
-  def OfficeLogo: OfficeLogo = "OfficeLogo".asInstanceOf[OfficeLogo]
-  @scala.inline
-  def OfficeStoreLogo: OfficeStoreLogo = "OfficeStoreLogo".asInstanceOf[OfficeStoreLogo]
-  @scala.inline
-  def OfficeVideoLogo: OfficeVideoLogo = "OfficeVideoLogo".asInstanceOf[OfficeVideoLogo]
-  @scala.inline
-  def OfficeVideoLogoFill: OfficeVideoLogoFill = "OfficeVideoLogoFill".asInstanceOf[OfficeVideoLogoFill]
-  @scala.inline
-  def OfficeVideoLogoInverse: OfficeVideoLogoInverse = "OfficeVideoLogoInverse".asInstanceOf[OfficeVideoLogoInverse]
-  @scala.inline
-  def OfflineOneDriveParachute: OfflineOneDriveParachute = "OfflineOneDriveParachute".asInstanceOf[OfflineOneDriveParachute]
-  @scala.inline
-  def OfflineOneDriveParachuteDisabled: OfflineOneDriveParachuteDisabled = "OfflineOneDriveParachuteDisabled".asInstanceOf[OfflineOneDriveParachuteDisabled]
-  @scala.inline
-  def OfflineStorage: OfflineStorage = "OfflineStorage".asInstanceOf[OfflineStorage]
-  @scala.inline
-  def OfflineStorageSolid: OfflineStorageSolid = "OfflineStorageSolid".asInstanceOf[OfflineStorageSolid]
-  @scala.inline
-  def Onboarding: Onboarding = "Onboarding".asInstanceOf[Onboarding]
-  @scala.inline
-  def OneDriveAdd: OneDriveAdd = "OneDriveAdd".asInstanceOf[OneDriveAdd]
-  @scala.inline
-  def OneDriveFolder16: OneDriveFolder16 = "OneDriveFolder16".asInstanceOf[OneDriveFolder16]
-  @scala.inline
-  def OneDriveLogo: OneDriveLogo = "OneDriveLogo".asInstanceOf[OneDriveLogo]
-  @scala.inline
-  def OneNoteEduLogoInverse: OneNoteEduLogoInverse = "OneNoteEduLogoInverse".asInstanceOf[OneNoteEduLogoInverse]
-  @scala.inline
-  def OneNoteLogo: OneNoteLogo = "OneNoteLogo".asInstanceOf[OneNoteLogo]
-  @scala.inline
-  def OneNoteLogo16: OneNoteLogo16 = "OneNoteLogo16".asInstanceOf[OneNoteLogo16]
-  @scala.inline
-  def OneNoteLogoFill: OneNoteLogoFill = "OneNoteLogoFill".asInstanceOf[OneNoteLogoFill]
-  @scala.inline
-  def OneNoteLogoFill16: OneNoteLogoFill16 = "OneNoteLogoFill16".asInstanceOf[OneNoteLogoFill16]
-  @scala.inline
-  def OneNoteLogoInverse: OneNoteLogoInverse = "OneNoteLogoInverse".asInstanceOf[OneNoteLogoInverse]
-  @scala.inline
-  def OneNoteLogoInverse16: OneNoteLogoInverse16 = "OneNoteLogoInverse16".asInstanceOf[OneNoteLogoInverse16]
-  @scala.inline
-  def OpenEnrollment: OpenEnrollment = "OpenEnrollment".asInstanceOf[OpenEnrollment]
-  @scala.inline
-  def OpenFile: OpenFile = "OpenFile".asInstanceOf[OpenFile]
-  @scala.inline
-  def OpenFolderHorizontal: OpenFolderHorizontal = "OpenFolderHorizontal".asInstanceOf[OpenFolderHorizontal]
-  @scala.inline
-  def OpenInNewTab: OpenInNewTab = "OpenInNewTab".asInstanceOf[OpenInNewTab]
-  @scala.inline
-  def OpenInNewWindow: OpenInNewWindow = "OpenInNewWindow".asInstanceOf[OpenInNewWindow]
-  @scala.inline
-  def OpenPane: OpenPane = "OpenPane".asInstanceOf[OpenPane]
-  @scala.inline
-  def OpenPaneMirrored: OpenPaneMirrored = "OpenPaneMirrored".asInstanceOf[OpenPaneMirrored]
-  @scala.inline
-  def OpenSource: OpenSource = "OpenSource".asInstanceOf[OpenSource]
-  @scala.inline
-  def Org: Org = "Org".asInstanceOf[Org]
-  @scala.inline
-  def Orientation: Orientation = "Orientation".asInstanceOf[Orientation]
-  @scala.inline
-  def Orientation2: Orientation2 = "Orientation2".asInstanceOf[Orientation2]
-  @scala.inline
-  def OutOfOffice: OutOfOffice = "OutOfOffice".asInstanceOf[OutOfOffice]
-  @scala.inline
-  def OutlookLogo: OutlookLogo = "OutlookLogo".asInstanceOf[OutlookLogo]
-  @scala.inline
-  def OutlookLogo16: OutlookLogo16 = "OutlookLogo16".asInstanceOf[OutlookLogo16]
-  @scala.inline
-  def OutlookLogoFill: OutlookLogoFill = "OutlookLogoFill".asInstanceOf[OutlookLogoFill]
-  @scala.inline
-  def OutlookLogoFill16: OutlookLogoFill16 = "OutlookLogoFill16".asInstanceOf[OutlookLogoFill16]
-  @scala.inline
-  def OutlookLogoInverse: OutlookLogoInverse = "OutlookLogoInverse".asInstanceOf[OutlookLogoInverse]
-  @scala.inline
-  def OutlookLogoInverse16: OutlookLogoInverse16 = "OutlookLogoInverse16".asInstanceOf[OutlookLogoInverse16]
-  @scala.inline
-  def PC1: PC1 = "PC1".asInstanceOf[PC1]
-  @scala.inline
-  def PDF: PDF = "PDF".asInstanceOf[PDF]
-  @scala.inline
-  def POI: POI = "POI".asInstanceOf[POI]
-  @scala.inline
-  def POISolid: POISolid = "POISolid".asInstanceOf[POISolid]
-  @scala.inline
-  def PY: PY = "PY".asInstanceOf[PY]
-  @scala.inline
-  def Package: Package = "Package".asInstanceOf[Package]
-  @scala.inline
-  def Packages: Packages = "Packages".asInstanceOf[Packages]
-  @scala.inline
-  def Padding: Padding = "Padding".asInstanceOf[Padding]
-  @scala.inline
-  def PaddingBottom: PaddingBottom = "PaddingBottom".asInstanceOf[PaddingBottom]
-  @scala.inline
-  def PaddingLeft: PaddingLeft = "PaddingLeft".asInstanceOf[PaddingLeft]
-  @scala.inline
-  def PaddingRight: PaddingRight = "PaddingRight".asInstanceOf[PaddingRight]
-  @scala.inline
-  def PaddingTop: PaddingTop = "PaddingTop".asInstanceOf[PaddingTop]
-  @scala.inline
-  def Page: Page = "Page".asInstanceOf[Page]
-  @scala.inline
-  def PageAdd: PageAdd = "PageAdd".asInstanceOf[PageAdd]
-  @scala.inline
-  def PageArrowRight: PageArrowRight = "PageArrowRight".asInstanceOf[PageArrowRight]
-  @scala.inline
-  def PageCheckedOut: PageCheckedOut = "PageCheckedOut".asInstanceOf[PageCheckedOut]
-  @scala.inline
-  def PageCheckedin: PageCheckedin = "PageCheckedin".asInstanceOf[PageCheckedin]
-  @scala.inline
-  def PageData: PageData = "PageData".asInstanceOf[PageData]
-  @scala.inline
-  def PageEdit: PageEdit = "PageEdit".asInstanceOf[PageEdit]
-  @scala.inline
-  def PageHeader: PageHeader = "PageHeader".asInstanceOf[PageHeader]
-  @scala.inline
-  def PageHeaderEdit: PageHeaderEdit = "PageHeaderEdit".asInstanceOf[PageHeaderEdit]
-  @scala.inline
-  def PageLeft: PageLeft = "PageLeft".asInstanceOf[PageLeft]
-  @scala.inline
-  def PageLink: PageLink = "PageLink".asInstanceOf[PageLink]
-  @scala.inline
-  def PageList: PageList = "PageList".asInstanceOf[PageList]
-  @scala.inline
-  def PageListFilter: PageListFilter = "PageListFilter".asInstanceOf[PageListFilter]
-  @scala.inline
-  def PageListMirroredSolid: PageListMirroredSolid = "PageListMirroredSolid".asInstanceOf[PageListMirroredSolid]
-  @scala.inline
-  def PageListSolid: PageListSolid = "PageListSolid".asInstanceOf[PageListSolid]
-  @scala.inline
-  def PageLock: PageLock = "PageLock".asInstanceOf[PageLock]
-  @scala.inline
-  def PageRemove: PageRemove = "PageRemove".asInstanceOf[PageRemove]
-  @scala.inline
-  def PageRight: PageRight = "PageRight".asInstanceOf[PageRight]
-  @scala.inline
-  def PageShared: PageShared = "PageShared".asInstanceOf[PageShared]
-  @scala.inline
-  def PageSolid: PageSolid = "PageSolid".asInstanceOf[PageSolid]
-  @scala.inline
-  def PanoIndicator: PanoIndicator = "PanoIndicator".asInstanceOf[PanoIndicator]
-  @scala.inline
-  def Parachute: Parachute = "Parachute".asInstanceOf[Parachute]
-  @scala.inline
-  def ParachuteSolid: ParachuteSolid = "ParachuteSolid".asInstanceOf[ParachuteSolid]
-  @scala.inline
-  def Parameter: Parameter = "Parameter".asInstanceOf[Parameter]
-  @scala.inline
-  def ParkingLocation: ParkingLocation = "ParkingLocation".asInstanceOf[ParkingLocation]
-  @scala.inline
-  def ParkingLocationMirrored: ParkingLocationMirrored = "ParkingLocationMirrored".asInstanceOf[ParkingLocationMirrored]
-  @scala.inline
-  def ParkingMirroredSolid: ParkingMirroredSolid = "ParkingMirroredSolid".asInstanceOf[ParkingMirroredSolid]
-  @scala.inline
-  def ParkingSolid: ParkingSolid = "ParkingSolid".asInstanceOf[ParkingSolid]
-  @scala.inline
-  def PartlyCloudyDay: PartlyCloudyDay = "PartlyCloudyDay".asInstanceOf[PartlyCloudyDay]
-  @scala.inline
-  def PartlyCloudyNight: PartlyCloudyNight = "PartlyCloudyNight".asInstanceOf[PartlyCloudyNight]
-  @scala.inline
-  def PartyLeader: PartyLeader = "PartyLeader".asInstanceOf[PartyLeader]
-  @scala.inline
-  def PassiveAuthentication: PassiveAuthentication = "PassiveAuthentication".asInstanceOf[PassiveAuthentication]
-  @scala.inline
-  def PasswordField: PasswordField = "PasswordField".asInstanceOf[PasswordField]
-  @scala.inline
-  def Paste: Paste = "Paste".asInstanceOf[Paste]
-  @scala.inline
-  def PasteAsCode: PasteAsCode = "PasteAsCode".asInstanceOf[PasteAsCode]
-  @scala.inline
-  def PasteAsText: PasteAsText = "PasteAsText".asInstanceOf[PasteAsText]
-  @scala.inline
-  def Pause: Pause = "Pause".asInstanceOf[Pause]
-  @scala.inline
-  def PaymentCard: PaymentCard = "PaymentCard".asInstanceOf[PaymentCard]
-  @scala.inline
-  def PenWorkspace: PenWorkspace = "PenWorkspace".asInstanceOf[PenWorkspace]
-  @scala.inline
-  def PencilReply: PencilReply = "PencilReply".asInstanceOf[PencilReply]
-  @scala.inline
-  def Pentagon: Pentagon = "Pentagon".asInstanceOf[Pentagon]
-  @scala.inline
-  def People: People = "People".asInstanceOf[People]
-  @scala.inline
-  def PeopleAdd: PeopleAdd = "PeopleAdd".asInstanceOf[PeopleAdd]
-  @scala.inline
-  def PeopleAlert: PeopleAlert = "PeopleAlert".asInstanceOf[PeopleAlert]
-  @scala.inline
-  def PeopleBlock: PeopleBlock = "PeopleBlock".asInstanceOf[PeopleBlock]
-  @scala.inline
-  def PeoplePause: PeoplePause = "PeoplePause".asInstanceOf[PeoplePause]
-  @scala.inline
-  def PeopleRepeat: PeopleRepeat = "PeopleRepeat".asInstanceOf[PeopleRepeat]
-  @scala.inline
-  def Permissions: Permissions = "Permissions".asInstanceOf[Permissions]
-  @scala.inline
-  def PermissionsSolid: PermissionsSolid = "PermissionsSolid".asInstanceOf[PermissionsSolid]
-  @scala.inline
-  def Personalize: Personalize = "Personalize".asInstanceOf[Personalize]
-  @scala.inline
-  def Phishing: Phishing = "Phishing".asInstanceOf[Phishing]
-  @scala.inline
-  def Phone: Phone = "Phone".asInstanceOf[Phone]
-  @scala.inline
-  def Photo: Photo = "Photo".asInstanceOf[Photo]
-  @scala.inline
-  def Photo2: Photo2 = "Photo2".asInstanceOf[Photo2]
-  @scala.inline
-  def Photo2Add: Photo2Add = "Photo2Add".asInstanceOf[Photo2Add]
-  @scala.inline
-  def Photo2Fill: Photo2Fill = "Photo2Fill".asInstanceOf[Photo2Fill]
-  @scala.inline
-  def Photo2Remove: Photo2Remove = "Photo2Remove".asInstanceOf[Photo2Remove]
-  @scala.inline
-  def PhotoCollection: PhotoCollection = "PhotoCollection".asInstanceOf[PhotoCollection]
-  @scala.inline
-  def PhotoVideoMedia: PhotoVideoMedia = "PhotoVideoMedia".asInstanceOf[PhotoVideoMedia]
-  @scala.inline
-  def Picture: Picture = "Picture".asInstanceOf[Picture]
-  @scala.inline
-  def PictureCenter: PictureCenter = "PictureCenter".asInstanceOf[PictureCenter]
-  @scala.inline
-  def PictureFill: PictureFill = "PictureFill".asInstanceOf[PictureFill]
-  @scala.inline
-  def PictureLibrary: PictureLibrary = "PictureLibrary".asInstanceOf[PictureLibrary]
-  @scala.inline
-  def PicturePosition: PicturePosition = "PicturePosition".asInstanceOf[PicturePosition]
-  @scala.inline
-  def PictureStretch: PictureStretch = "PictureStretch".asInstanceOf[PictureStretch]
-  @scala.inline
-  def PictureTile: PictureTile = "PictureTile".asInstanceOf[PictureTile]
-  @scala.inline
-  def PieDouble: PieDouble = "PieDouble".asInstanceOf[PieDouble]
-  @scala.inline
-  def PieSingle: PieSingle = "PieSingle".asInstanceOf[PieSingle]
-  @scala.inline
-  def PieSingleSolid: PieSingleSolid = "PieSingleSolid".asInstanceOf[PieSingleSolid]
-  @scala.inline
-  def Pill: Pill = "Pill".asInstanceOf[Pill]
-  @scala.inline
-  def Pin: Pin = "Pin".asInstanceOf[Pin]
-  @scala.inline
-  def PinSolid12: PinSolid12 = "PinSolid12".asInstanceOf[PinSolid12]
-  @scala.inline
-  def PinSolidOff12: PinSolidOff12 = "PinSolidOff12".asInstanceOf[PinSolidOff12]
-  @scala.inline
-  def Pinned: Pinned = "Pinned".asInstanceOf[Pinned]
-  @scala.inline
-  def PinnedFill: PinnedFill = "PinnedFill".asInstanceOf[PinnedFill]
-  @scala.inline
-  def PinnedSolid: PinnedSolid = "PinnedSolid".asInstanceOf[PinnedSolid]
-  @scala.inline
-  def PivotChart: PivotChart = "PivotChart".asInstanceOf[PivotChart]
-  @scala.inline
-  def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
-  @scala.inline
-  def PlanView: PlanView = "PlanView".asInstanceOf[PlanView]
-  @scala.inline
-  def PlannerLogo: PlannerLogo = "PlannerLogo".asInstanceOf[PlannerLogo]
-  @scala.inline
-  def Play: Play = "Play".asInstanceOf[Play]
-  @scala.inline
-  def PlayResume: PlayResume = "PlayResume".asInstanceOf[PlayResume]
-  @scala.inline
-  def PlayReverse: PlayReverse = "PlayReverse".asInstanceOf[PlayReverse]
-  @scala.inline
-  def PlayReverseResume: PlayReverseResume = "PlayReverseResume".asInstanceOf[PlayReverseResume]
-  @scala.inline
-  def PlaybackRate1x: PlaybackRate1x = "PlaybackRate1x".asInstanceOf[PlaybackRate1x]
-  @scala.inline
-  def PlayerSettings: PlayerSettings = "PlayerSettings".asInstanceOf[PlayerSettings]
-  @scala.inline
-  def Plug: Plug = "Plug".asInstanceOf[Plug]
-  @scala.inline
-  def PlugConnected: PlugConnected = "PlugConnected".asInstanceOf[PlugConnected]
-  @scala.inline
-  def PlugDisconnected: PlugDisconnected = "PlugDisconnected".asInstanceOf[PlugDisconnected]
-  @scala.inline
-  def PlugSolid: PlugSolid = "PlugSolid".asInstanceOf[PlugSolid]
-  @scala.inline
-  def PollResults: PollResults = "PollResults".asInstanceOf[PollResults]
-  @scala.inline
-  def PostUpdate: PostUpdate = "PostUpdate".asInstanceOf[PostUpdate]
-  @scala.inline
-  def PowerApps: PowerApps = "PowerApps".asInstanceOf[PowerApps]
-  @scala.inline
-  def PowerApps2Logo: PowerApps2Logo = "PowerApps2Logo".asInstanceOf[PowerApps2Logo]
-  @scala.inline
-  def PowerAppsLogo: PowerAppsLogo = "PowerAppsLogo".asInstanceOf[PowerAppsLogo]
-  @scala.inline
-  def PowerBILogo: PowerBILogo = "PowerBILogo".asInstanceOf[PowerBILogo]
-  @scala.inline
-  def PowerBILogo16: PowerBILogo16 = "PowerBILogo16".asInstanceOf[PowerBILogo16]
-  @scala.inline
-  def PowerBILogoBackplate16: PowerBILogoBackplate16 = "PowerBILogoBackplate16".asInstanceOf[PowerBILogoBackplate16]
-  @scala.inline
-  def PowerButton: PowerButton = "PowerButton".asInstanceOf[PowerButton]
-  @scala.inline
-  def PowerPointDocument: PowerPointDocument = "PowerPointDocument".asInstanceOf[PowerPointDocument]
-  @scala.inline
-  def PowerPointLogo: PowerPointLogo = "PowerPointLogo".asInstanceOf[PowerPointLogo]
-  @scala.inline
-  def PowerPointLogo16: PowerPointLogo16 = "PowerPointLogo16".asInstanceOf[PowerPointLogo16]
-  @scala.inline
-  def PowerPointLogoFill: PowerPointLogoFill = "PowerPointLogoFill".asInstanceOf[PowerPointLogoFill]
-  @scala.inline
-  def PowerPointLogoFill16: PowerPointLogoFill16 = "PowerPointLogoFill16".asInstanceOf[PowerPointLogoFill16]
-  @scala.inline
-  def PowerPointLogoInverse: PowerPointLogoInverse = "PowerPointLogoInverse".asInstanceOf[PowerPointLogoInverse]
-  @scala.inline
-  def PowerPointLogoInverse16: PowerPointLogoInverse16 = "PowerPointLogoInverse16".asInstanceOf[PowerPointLogoInverse16]
-  @scala.inline
-  def Precipitation: Precipitation = "Precipitation".asInstanceOf[Precipitation]
-  @scala.inline
-  def PresenceChickletVideo: PresenceChickletVideo = "PresenceChickletVideo".asInstanceOf[PresenceChickletVideo]
-  @scala.inline
-  def Presentation: Presentation = "Presentation".asInstanceOf[Presentation]
-  @scala.inline
-  def Presentation12: Presentation12 = "Presentation12".asInstanceOf[Presentation12]
-  @scala.inline
-  def Preview: Preview = "Preview".asInstanceOf[Preview]
-  @scala.inline
-  def PreviewLink: PreviewLink = "PreviewLink".asInstanceOf[PreviewLink]
-  @scala.inline
-  def Previous: Previous = "Previous".asInstanceOf[Previous]
-  @scala.inline
-  def PrimaryCalendar: PrimaryCalendar = "PrimaryCalendar".asInstanceOf[PrimaryCalendar]
-  @scala.inline
-  def Print: Print = "Print".asInstanceOf[Print]
-  @scala.inline
-  def PrintfaxPrinterFile: PrintfaxPrinterFile = "PrintfaxPrinterFile".asInstanceOf[PrintfaxPrinterFile]
-  @scala.inline
-  def ProFootball: ProFootball = "ProFootball".asInstanceOf[ProFootball]
-  @scala.inline
-  def ProHockey: ProHockey = "ProHockey".asInstanceOf[ProHockey]
-  @scala.inline
-  def ProcessMetaTask: ProcessMetaTask = "ProcessMetaTask".asInstanceOf[ProcessMetaTask]
-  @scala.inline
-  def Processing: Processing = "Processing".asInstanceOf[Processing]
-  @scala.inline
-  def Product: Product = "Product".asInstanceOf[Product]
-  @scala.inline
-  def ProductCatalog: ProductCatalog = "ProductCatalog".asInstanceOf[ProductCatalog]
-  @scala.inline
-  def ProductList: ProductList = "ProductList".asInstanceOf[ProductList]
-  @scala.inline
-  def ProductRelease: ProductRelease = "ProductRelease".asInstanceOf[ProductRelease]
-  @scala.inline
-  def ProductVariant: ProductVariant = "ProductVariant".asInstanceOf[ProductVariant]
-  @scala.inline
-  def ProductionFloorManagement: ProductionFloorManagement = "ProductionFloorManagement".asInstanceOf[ProductionFloorManagement]
-  @scala.inline
-  def ProfileSearch: ProfileSearch = "ProfileSearch".asInstanceOf[ProfileSearch]
-  @scala.inline
-  def ProgressLoopInner: ProgressLoopInner = "ProgressLoopInner".asInstanceOf[ProgressLoopInner]
-  @scala.inline
-  def ProgressLoopOuter: ProgressLoopOuter = "ProgressLoopOuter".asInstanceOf[ProgressLoopOuter]
-  @scala.inline
-  def ProgressRingDots: ProgressRingDots = "ProgressRingDots".asInstanceOf[ProgressRingDots]
-  @scala.inline
-  def ProjectCollection: ProjectCollection = "ProjectCollection".asInstanceOf[ProjectCollection]
-  @scala.inline
-  def ProjectDocument: ProjectDocument = "ProjectDocument".asInstanceOf[ProjectDocument]
-  @scala.inline
-  def ProjectLogo16: ProjectLogo16 = "ProjectLogo16".asInstanceOf[ProjectLogo16]
-  @scala.inline
-  def ProjectLogo32: ProjectLogo32 = "ProjectLogo32".asInstanceOf[ProjectLogo32]
-  @scala.inline
-  def ProjectLogoFill16: ProjectLogoFill16 = "ProjectLogoFill16".asInstanceOf[ProjectLogoFill16]
-  @scala.inline
-  def ProjectLogoFill32: ProjectLogoFill32 = "ProjectLogoFill32".asInstanceOf[ProjectLogoFill32]
-  @scala.inline
-  def ProjectLogoInverse: ProjectLogoInverse = "ProjectLogoInverse".asInstanceOf[ProjectLogoInverse]
-  @scala.inline
-  def PromotedDatabase: PromotedDatabase = "PromotedDatabase".asInstanceOf[PromotedDatabase]
-  @scala.inline
-  def ProtectRestrict: ProtectRestrict = "ProtectRestrict".asInstanceOf[ProtectRestrict]
-  @scala.inline
-  def ProtectedDocument: ProtectedDocument = "ProtectedDocument".asInstanceOf[ProtectedDocument]
-  @scala.inline
-  def ProtectionCenterLogo32: ProtectionCenterLogo32 = "ProtectionCenterLogo32".asInstanceOf[ProtectionCenterLogo32]
-  @scala.inline
-  def PublicCalendar: PublicCalendar = "PublicCalendar".asInstanceOf[PublicCalendar]
-  @scala.inline
-  def PublicContactCard: PublicContactCard = "PublicContactCard".asInstanceOf[PublicContactCard]
-  @scala.inline
-  def PublicContactCardMirrored: PublicContactCardMirrored = "PublicContactCardMirrored".asInstanceOf[PublicContactCardMirrored]
-  @scala.inline
-  def PublicEmail: PublicEmail = "PublicEmail".asInstanceOf[PublicEmail]
-  @scala.inline
-  def PublicFolder: PublicFolder = "PublicFolder".asInstanceOf[PublicFolder]
-  @scala.inline
-  def PublishContent: PublishContent = "PublishContent".asInstanceOf[PublishContent]
-  @scala.inline
-  def PublishCourse: PublishCourse = "PublishCourse".asInstanceOf[PublishCourse]
-  @scala.inline
-  def PublisherLogo: PublisherLogo = "PublisherLogo".asInstanceOf[PublisherLogo]
-  @scala.inline
-  def PublisherLogo16: PublisherLogo16 = "PublisherLogo16".asInstanceOf[PublisherLogo16]
-  @scala.inline
-  def PublisherLogoFill: PublisherLogoFill = "PublisherLogoFill".asInstanceOf[PublisherLogoFill]
-  @scala.inline
-  def PublisherLogoFill16: PublisherLogoFill16 = "PublisherLogoFill16".asInstanceOf[PublisherLogoFill16]
-  @scala.inline
-  def PublisherLogoInverse16: PublisherLogoInverse16 = "PublisherLogoInverse16".asInstanceOf[PublisherLogoInverse16]
-  @scala.inline
-  def Puzzle: Puzzle = "Puzzle".asInstanceOf[Puzzle]
-  @scala.inline
-  def PythonLanguage: PythonLanguage = "PythonLanguage".asInstanceOf[PythonLanguage]
-  @scala.inline
-  def QRCode: QRCode = "QRCode".asInstanceOf[QRCode]
-  @scala.inline
-  def QandA: QandA = "QandA".asInstanceOf[QandA]
-  @scala.inline
-  def QandAMirror: QandAMirror = "QandAMirror".asInstanceOf[QandAMirror]
-  @scala.inline
-  def QuadColumn: QuadColumn = "QuadColumn".asInstanceOf[QuadColumn]
-  @scala.inline
-  def Quantity: Quantity = "Quantity".asInstanceOf[Quantity]
-  @scala.inline
-  def QuarterCircle: QuarterCircle = "QuarterCircle".asInstanceOf[QuarterCircle]
-  @scala.inline
-  def QueryList: QueryList = "QueryList".asInstanceOf[QueryList]
-  @scala.inline
-  def Questionnaire: Questionnaire = "Questionnaire".asInstanceOf[Questionnaire]
-  @scala.inline
-  def QuestionnaireMirrored: QuestionnaireMirrored = "QuestionnaireMirrored".asInstanceOf[QuestionnaireMirrored]
-  @scala.inline
-  def QuickNote: QuickNote = "QuickNote".asInstanceOf[QuickNote]
-  @scala.inline
-  def QuickNoteSolid: QuickNoteSolid = "QuickNoteSolid".asInstanceOf[QuickNoteSolid]
-  @scala.inline
-  def R: R = "R".asInstanceOf[R]
-  @scala.inline
-  def RadioBtnOff: RadioBtnOff = "RadioBtnOff".asInstanceOf[RadioBtnOff]
-  @scala.inline
-  def RadioBtnOn: RadioBtnOn = "RadioBtnOn".asInstanceOf[RadioBtnOn]
-  @scala.inline
-  def RadioBullet: RadioBullet = "RadioBullet".asInstanceOf[RadioBullet]
-  @scala.inline
-  def Rain: Rain = "Rain".asInstanceOf[Rain]
-  @scala.inline
-  def RainShowersDay: RainShowersDay = "RainShowersDay".asInstanceOf[RainShowersDay]
-  @scala.inline
-  def RainShowersNight: RainShowersNight = "RainShowersNight".asInstanceOf[RainShowersNight]
-  @scala.inline
-  def RainSnow: RainSnow = "RainSnow".asInstanceOf[RainSnow]
-  @scala.inline
-  def RawSource: RawSource = "RawSource".asInstanceOf[RawSource]
-  @scala.inline
-  def Read: Read = "Read".asInstanceOf[Read]
-  @scala.inline
-  def ReadOutLoud: ReadOutLoud = "ReadOutLoud".asInstanceOf[ReadOutLoud]
-  @scala.inline
-  def ReadingMode: ReadingMode = "ReadingMode".asInstanceOf[ReadingMode]
-  @scala.inline
-  def ReadingModeSolid: ReadingModeSolid = "ReadingModeSolid".asInstanceOf[ReadingModeSolid]
-  @scala.inline
-  def RealEstate: RealEstate = "RealEstate".asInstanceOf[RealEstate]
-  @scala.inline
-  def ReceiptCheck: ReceiptCheck = "ReceiptCheck".asInstanceOf[ReceiptCheck]
-  @scala.inline
-  def ReceiptForward: ReceiptForward = "ReceiptForward".asInstanceOf[ReceiptForward]
-  @scala.inline
-  def ReceiptReply: ReceiptReply = "ReceiptReply".asInstanceOf[ReceiptReply]
-  @scala.inline
-  def ReceiptTentative: ReceiptTentative = "ReceiptTentative".asInstanceOf[ReceiptTentative]
-  @scala.inline
-  def ReceiptTentativeMirrored: ReceiptTentativeMirrored = "ReceiptTentativeMirrored".asInstanceOf[ReceiptTentativeMirrored]
-  @scala.inline
-  def ReceiptUndelivered: ReceiptUndelivered = "ReceiptUndelivered".asInstanceOf[ReceiptUndelivered]
-  @scala.inline
-  def Recent: Recent = "Recent".asInstanceOf[Recent]
-  @scala.inline
-  def Record2: Record2 = "Record2".asInstanceOf[Record2]
-  @scala.inline
-  def RecruitmentManagement: RecruitmentManagement = "RecruitmentManagement".asInstanceOf[RecruitmentManagement]
-  @scala.inline
-  def RectangleShape: RectangleShape = "RectangleShape".asInstanceOf[RectangleShape]
-  @scala.inline
-  def RectangleShapeSolid: RectangleShapeSolid = "RectangleShapeSolid".asInstanceOf[RectangleShapeSolid]
-  @scala.inline
-  def RectangularClipping: RectangularClipping = "RectangularClipping".asInstanceOf[RectangularClipping]
-  @scala.inline
-  def RecurringEvent: RecurringEvent = "RecurringEvent".asInstanceOf[RecurringEvent]
-  @scala.inline
-  def RecurringTask: RecurringTask = "RecurringTask".asInstanceOf[RecurringTask]
-  @scala.inline
-  def RecycleBin: RecycleBin = "RecycleBin".asInstanceOf[RecycleBin]
-  @scala.inline
-  def RedEye: RedEye = "RedEye".asInstanceOf[RedEye]
-  @scala.inline
-  def Redeploy: Redeploy = "Redeploy".asInstanceOf[Redeploy]
-  @scala.inline
-  def Redo: Redo = "Redo".asInstanceOf[Redo]
-  @scala.inline
-  def Refresh: Refresh = "Refresh".asInstanceOf[Refresh]
-  @scala.inline
-  def Relationship: Relationship = "Relationship".asInstanceOf[Relationship]
-  @scala.inline
-  def ReleaseDefinition: ReleaseDefinition = "ReleaseDefinition".asInstanceOf[ReleaseDefinition]
-  @scala.inline
-  def ReleaseGate: ReleaseGate = "ReleaseGate".asInstanceOf[ReleaseGate]
-  @scala.inline
-  def ReleaseGateCheck: ReleaseGateCheck = "ReleaseGateCheck".asInstanceOf[ReleaseGateCheck]
-  @scala.inline
-  def ReleaseGateError: ReleaseGateError = "ReleaseGateError".asInstanceOf[ReleaseGateError]
-  @scala.inline
-  def ReminderGroup: ReminderGroup = "ReminderGroup".asInstanceOf[ReminderGroup]
-  @scala.inline
-  def ReminderPerson: ReminderPerson = "ReminderPerson".asInstanceOf[ReminderPerson]
-  @scala.inline
-  def ReminderTime: ReminderTime = "ReminderTime".asInstanceOf[ReminderTime]
-  @scala.inline
-  def Remote: Remote = "Remote".asInstanceOf[Remote]
-  @scala.inline
-  def Remove: Remove = "Remove".asInstanceOf[Remove]
-  @scala.inline
-  def RemoveEvent: RemoveEvent = "RemoveEvent".asInstanceOf[RemoveEvent]
-  @scala.inline
-  def RemoveFilter: RemoveFilter = "RemoveFilter".asInstanceOf[RemoveFilter]
-  @scala.inline
-  def RemoveFromShoppingList: RemoveFromShoppingList = "RemoveFromShoppingList".asInstanceOf[RemoveFromShoppingList]
-  @scala.inline
-  def RemoveFromTrash: RemoveFromTrash = "RemoveFromTrash".asInstanceOf[RemoveFromTrash]
-  @scala.inline
-  def RemoveLink: RemoveLink = "RemoveLink".asInstanceOf[RemoveLink]
-  @scala.inline
-  def RemoveLinkChain: RemoveLinkChain = "RemoveLinkChain".asInstanceOf[RemoveLinkChain]
-  @scala.inline
-  def RemoveLinkX: RemoveLinkX = "RemoveLinkX".asInstanceOf[RemoveLinkX]
-  @scala.inline
-  def RemoveOccurrence: RemoveOccurrence = "RemoveOccurrence".asInstanceOf[RemoveOccurrence]
-  @scala.inline
-  def Rename: Rename = "Rename".asInstanceOf[Rename]
-  @scala.inline
-  def RenewalCurrent: RenewalCurrent = "RenewalCurrent".asInstanceOf[RenewalCurrent]
-  @scala.inline
-  def RenewalFuture: RenewalFuture = "RenewalFuture".asInstanceOf[RenewalFuture]
-  @scala.inline
-  def ReopenPages: ReopenPages = "ReopenPages".asInstanceOf[ReopenPages]
-  @scala.inline
-  def Repair: Repair = "Repair".asInstanceOf[Repair]
-  @scala.inline
-  def RepeatAll: RepeatAll = "RepeatAll".asInstanceOf[RepeatAll]
-  @scala.inline
-  def RepeatOne: RepeatOne = "RepeatOne".asInstanceOf[RepeatOne]
-  @scala.inline
-  def Reply: Reply = "Reply".asInstanceOf[Reply]
-  @scala.inline
-  def ReplyAll: ReplyAll = "ReplyAll".asInstanceOf[ReplyAll]
-  @scala.inline
-  def ReplyAllAlt: ReplyAllAlt = "ReplyAllAlt".asInstanceOf[ReplyAllAlt]
-  @scala.inline
-  def ReplyAllMirrored: ReplyAllMirrored = "ReplyAllMirrored".asInstanceOf[ReplyAllMirrored]
-  @scala.inline
-  def ReplyAlt: ReplyAlt = "ReplyAlt".asInstanceOf[ReplyAlt]
-  @scala.inline
-  def ReplyMirrored: ReplyMirrored = "ReplyMirrored".asInstanceOf[ReplyMirrored]
-  @scala.inline
-  def Repo: Repo = "Repo".asInstanceOf[Repo]
-  @scala.inline
-  def RepoSolid: RepoSolid = "RepoSolid".asInstanceOf[RepoSolid]
-  @scala.inline
-  def ReportAdd: ReportAdd = "ReportAdd".asInstanceOf[ReportAdd]
-  @scala.inline
-  def ReportDocument: ReportDocument = "ReportDocument".asInstanceOf[ReportDocument]
-  @scala.inline
-  def ReportHacked: ReportHacked = "ReportHacked".asInstanceOf[ReportHacked]
-  @scala.inline
-  def ReportLibrary: ReportLibrary = "ReportLibrary".asInstanceOf[ReportLibrary]
-  @scala.inline
-  def ReportLibraryMirrored: ReportLibraryMirrored = "ReportLibraryMirrored".asInstanceOf[ReportLibraryMirrored]
-  @scala.inline
-  def ReportLock: ReportLock = "ReportLock".asInstanceOf[ReportLock]
-  @scala.inline
-  def ReportWarning: ReportWarning = "ReportWarning".asInstanceOf[ReportWarning]
-  @scala.inline
-  def Rerun: Rerun = "Rerun".asInstanceOf[Rerun]
-  @scala.inline
-  def ReservationOrders: ReservationOrders = "ReservationOrders".asInstanceOf[ReservationOrders]
-  @scala.inline
-  def ResponsesMenu: ResponsesMenu = "ResponsesMenu".asInstanceOf[ResponsesMenu]
-  @scala.inline
-  def ReturnKey: ReturnKey = "ReturnKey".asInstanceOf[ReturnKey]
-  @scala.inline
-  def ReturnToSession: ReturnToSession = "ReturnToSession".asInstanceOf[ReturnToSession]
-  @scala.inline
-  def RevToggleKey: RevToggleKey = "RevToggleKey".asInstanceOf[RevToggleKey]
-  @scala.inline
-  def ReviewRequestMirroredSolid: ReviewRequestMirroredSolid = "ReviewRequestMirroredSolid".asInstanceOf[ReviewRequestMirroredSolid]
-  @scala.inline
-  def ReviewRequestSolid: ReviewRequestSolid = "ReviewRequestSolid".asInstanceOf[ReviewRequestSolid]
-  @scala.inline
-  def ReviewResponseSolid: ReviewResponseSolid = "ReviewResponseSolid".asInstanceOf[ReviewResponseSolid]
-  @scala.inline
-  def ReviewSolid: ReviewSolid = "ReviewSolid".asInstanceOf[ReviewSolid]
-  @scala.inline
-  def Rewind: Rewind = "Rewind".asInstanceOf[Rewind]
-  @scala.inline
-  def Ribbon: Ribbon = "Ribbon".asInstanceOf[Ribbon]
-  @scala.inline
-  def RibbonSolid: RibbonSolid = "RibbonSolid".asInstanceOf[RibbonSolid]
-  @scala.inline
-  def RightDoubleQuote: RightDoubleQuote = "RightDoubleQuote".asInstanceOf[RightDoubleQuote]
-  @scala.inline
-  def RightTriangle: RightTriangle = "RightTriangle".asInstanceOf[RightTriangle]
-  @scala.inline
-  def Ringer: Ringer = "Ringer".asInstanceOf[Ringer]
-  @scala.inline
-  def RingerOff: RingerOff = "RingerOff".asInstanceOf[RingerOff]
-  @scala.inline
-  def RingerRemove: RingerRemove = "RingerRemove".asInstanceOf[RingerRemove]
-  @scala.inline
-  def RingerSolid: RingerSolid = "RingerSolid".asInstanceOf[RingerSolid]
-  @scala.inline
-  def Robot: Robot = "Robot".asInstanceOf[Robot]
-  @scala.inline
-  def Rocket: Rocket = "Rocket".asInstanceOf[Rocket]
-  @scala.inline
-  def Room: Room = "Room".asInstanceOf[Room]
-  @scala.inline
-  def Rotate: Rotate = "Rotate".asInstanceOf[Rotate]
-  @scala.inline
-  def Rotate90Clockwise: Rotate90Clockwise = "Rotate90Clockwise".asInstanceOf[Rotate90Clockwise]
-  @scala.inline
-  def Rotate90CounterClockwise: Rotate90CounterClockwise = "Rotate90CounterClockwise".asInstanceOf[Rotate90CounterClockwise]
-  @scala.inline
-  def RowsChild: RowsChild = "RowsChild".asInstanceOf[RowsChild]
-  @scala.inline
-  def RowsGroup: RowsGroup = "RowsGroup".asInstanceOf[RowsGroup]
-  @scala.inline
-  def Rugby: Rugby = "Rugby".asInstanceOf[Rugby]
-  @scala.inline
-  def Running: Running = "Running".asInstanceOf[Running]
-  @scala.inline
-  def SIPMove: SIPMove = "SIPMove".asInstanceOf[SIPMove]
-  @scala.inline
-  def Sad: Sad = "Sad".asInstanceOf[Sad]
-  @scala.inline
-  def SadSolid: SadSolid = "SadSolid".asInstanceOf[SadSolid]
-  @scala.inline
-  def Save: Save = "Save".asInstanceOf[Save]
-  @scala.inline
-  def SaveAll: SaveAll = "SaveAll".asInstanceOf[SaveAll]
-  @scala.inline
-  def SaveAndClose: SaveAndClose = "SaveAndClose".asInstanceOf[SaveAndClose]
-  @scala.inline
-  def SaveAs: SaveAs = "SaveAs".asInstanceOf[SaveAs]
-  @scala.inline
-  def SaveTemplate: SaveTemplate = "SaveTemplate".asInstanceOf[SaveTemplate]
-  @scala.inline
-  def SaveToMobile: SaveToMobile = "SaveToMobile".asInstanceOf[SaveToMobile]
-  @scala.inline
-  def Savings: Savings = "Savings".asInstanceOf[Savings]
-  @scala.inline
-  def ScaleUp: ScaleUp = "ScaleUp".asInstanceOf[ScaleUp]
-  @scala.inline
-  def ScaleVolume: ScaleVolume = "ScaleVolume".asInstanceOf[ScaleVolume]
-  @scala.inline
-  def ScatterChart: ScatterChart = "ScatterChart".asInstanceOf[ScatterChart]
-  @scala.inline
-  def ScheduleEventAction: ScheduleEventAction = "ScheduleEventAction".asInstanceOf[ScheduleEventAction]
-  @scala.inline
-  def SchoolDataSyncLogo: SchoolDataSyncLogo = "SchoolDataSyncLogo".asInstanceOf[SchoolDataSyncLogo]
-  @scala.inline
-  def ScopeTemplate: ScopeTemplate = "ScopeTemplate".asInstanceOf[ScopeTemplate]
-  @scala.inline
-  def ScreenCast: ScreenCast = "ScreenCast".asInstanceOf[ScreenCast]
-  @scala.inline
-  def Script: Script = "Script".asInstanceOf[Script]
-  @scala.inline
-  def ScrollUpDown: ScrollUpDown = "ScrollUpDown".asInstanceOf[ScrollUpDown]
-  @scala.inline
-  def Search: Search = "Search".asInstanceOf[Search]
-  @scala.inline
-  def SearchAndApps: SearchAndApps = "SearchAndApps".asInstanceOf[SearchAndApps]
-  @scala.inline
-  def SearchBookmark: SearchBookmark = "SearchBookmark".asInstanceOf[SearchBookmark]
-  @scala.inline
-  def SearchCalendar: SearchCalendar = "SearchCalendar".asInstanceOf[SearchCalendar]
-  @scala.inline
-  def SearchData: SearchData = "SearchData".asInstanceOf[SearchData]
-  @scala.inline
-  def SearchIssue: SearchIssue = "SearchIssue".asInstanceOf[SearchIssue]
-  @scala.inline
-  def SearchIssueMirrored: SearchIssueMirrored = "SearchIssueMirrored".asInstanceOf[SearchIssueMirrored]
-  @scala.inline
-  def SearchNearby: SearchNearby = "SearchNearby".asInstanceOf[SearchNearby]
-  @scala.inline
-  def SecondaryNav: SecondaryNav = "SecondaryNav".asInstanceOf[SecondaryNav]
-  @scala.inline
-  def Section: Section = "Section".asInstanceOf[Section]
-  @scala.inline
-  def Sections: Sections = "Sections".asInstanceOf[Sections]
-  @scala.inline
-  def SecurityGroup: SecurityGroup = "SecurityGroup".asInstanceOf[SecurityGroup]
-  @scala.inline
-  def SeeDo: SeeDo = "SeeDo".asInstanceOf[SeeDo]
-  @scala.inline
-  def SelectAll: SelectAll = "SelectAll".asInstanceOf[SelectAll]
-  @scala.inline
-  def Sell: Sell = "Sell".asInstanceOf[Sell]
-  @scala.inline
-  def SemiboldWeight: SemiboldWeight = "SemiboldWeight".asInstanceOf[SemiboldWeight]
-  @scala.inline
-  def Send: Send = "Send".asInstanceOf[Send]
-  @scala.inline
-  def SendMirrored: SendMirrored = "SendMirrored".asInstanceOf[SendMirrored]
-  @scala.inline
-  def Separator: Separator = "Separator".asInstanceOf[Separator]
-  @scala.inline
-  def Server: Server = "Server".asInstanceOf[Server]
-  @scala.inline
-  def ServerEnviroment: ServerEnviroment = "ServerEnviroment".asInstanceOf[ServerEnviroment]
-  @scala.inline
-  def ServerProcesses: ServerProcesses = "ServerProcesses".asInstanceOf[ServerProcesses]
-  @scala.inline
-  def SetAction: SetAction = "SetAction".asInstanceOf[SetAction]
-  @scala.inline
-  def Settings: Settings = "Settings".asInstanceOf[Settings]
-  @scala.inline
-  def ShakeDevice: ShakeDevice = "ShakeDevice".asInstanceOf[ShakeDevice]
-  @scala.inline
-  def Shapes: Shapes = "Shapes".asInstanceOf[Shapes]
-  @scala.inline
-  def Share: Share = "Share".asInstanceOf[Share]
-  @scala.inline
-  def ShareiOS: ShareiOS = "ShareiOS".asInstanceOf[ShareiOS]
-  @scala.inline
-  def SharepointAppIcon16: SharepointAppIcon16 = "SharepointAppIcon16".asInstanceOf[SharepointAppIcon16]
-  @scala.inline
-  def SharepointLogo: SharepointLogo = "SharepointLogo".asInstanceOf[SharepointLogo]
-  @scala.inline
-  def SharepointLogoFill: SharepointLogoFill = "SharepointLogoFill".asInstanceOf[SharepointLogoFill]
-  @scala.inline
-  def SharepointLogoInverse: SharepointLogoInverse = "SharepointLogoInverse".asInstanceOf[SharepointLogoInverse]
-  @scala.inline
-  def Shield: Shield = "Shield".asInstanceOf[Shield]
-  @scala.inline
-  def ShieldAlert: ShieldAlert = "ShieldAlert".asInstanceOf[ShieldAlert]
-  @scala.inline
-  def ShieldSolid: ShieldSolid = "ShieldSolid".asInstanceOf[ShieldSolid]
-  @scala.inline
-  def Shirt: Shirt = "Shirt".asInstanceOf[Shirt]
-  @scala.inline
-  def Shop: Shop = "Shop".asInstanceOf[Shop]
-  @scala.inline
-  def ShopServer: ShopServer = "ShopServer".asInstanceOf[ShopServer]
-  @scala.inline
-  def ShoppingCart: ShoppingCart = "ShoppingCart".asInstanceOf[ShoppingCart]
-  @scala.inline
-  def ShoppingCartSolid: ShoppingCartSolid = "ShoppingCartSolid".asInstanceOf[ShoppingCartSolid]
-  @scala.inline
-  def ShowGrid: ShowGrid = "ShowGrid".asInstanceOf[ShowGrid]
-  @scala.inline
-  def ShowResults: ShowResults = "ShowResults".asInstanceOf[ShowResults]
-  @scala.inline
-  def ShowResultsMirrored: ShowResultsMirrored = "ShowResultsMirrored".asInstanceOf[ShowResultsMirrored]
-  @scala.inline
-  def ShowTimeAs: ShowTimeAs = "ShowTimeAs".asInstanceOf[ShowTimeAs]
-  @scala.inline
-  def SidePanel: SidePanel = "SidePanel".asInstanceOf[SidePanel]
-  @scala.inline
-  def SidePanelMirrored: SidePanelMirrored = "SidePanelMirrored".asInstanceOf[SidePanelMirrored]
-  @scala.inline
-  def SignOut: SignOut = "SignOut".asInstanceOf[SignOut]
-  @scala.inline
-  def Signin: Signin = "Signin".asInstanceOf[Signin]
-  @scala.inline
-  def SingleBookmark: SingleBookmark = "SingleBookmark".asInstanceOf[SingleBookmark]
-  @scala.inline
-  def SingleBookmarkSolid: SingleBookmarkSolid = "SingleBookmarkSolid".asInstanceOf[SingleBookmarkSolid]
-  @scala.inline
-  def SingleColumn: SingleColumn = "SingleColumn".asInstanceOf[SingleColumn]
-  @scala.inline
-  def SingleColumnEdit: SingleColumnEdit = "SingleColumnEdit".asInstanceOf[SingleColumnEdit]
-  @scala.inline
-  def SiteScan: SiteScan = "SiteScan".asInstanceOf[SiteScan]
-  @scala.inline
-  def SixPointStar: SixPointStar = "SixPointStar".asInstanceOf[SixPointStar]
-  @scala.inline
-  def SizeLegacy: SizeLegacy = "SizeLegacy".asInstanceOf[SizeLegacy]
-  @scala.inline
-  def SkiResorts: SkiResorts = "SkiResorts".asInstanceOf[SkiResorts]
-  @scala.inline
-  def SkypeArrow: SkypeArrow = "SkypeArrow".asInstanceOf[SkypeArrow]
-  @scala.inline
-  def SkypeCheck: SkypeCheck = "SkypeCheck".asInstanceOf[SkypeCheck]
-  @scala.inline
-  def SkypeCircleArrow: SkypeCircleArrow = "SkypeCircleArrow".asInstanceOf[SkypeCircleArrow]
-  @scala.inline
-  def SkypeCircleCheck: SkypeCircleCheck = "SkypeCircleCheck".asInstanceOf[SkypeCircleCheck]
-  @scala.inline
-  def SkypeCircleClock: SkypeCircleClock = "SkypeCircleClock".asInstanceOf[SkypeCircleClock]
-  @scala.inline
-  def SkypeCircleMinus: SkypeCircleMinus = "SkypeCircleMinus".asInstanceOf[SkypeCircleMinus]
-  @scala.inline
-  def SkypeCircleSlash: SkypeCircleSlash = "SkypeCircleSlash".asInstanceOf[SkypeCircleSlash]
-  @scala.inline
-  def SkypeClock: SkypeClock = "SkypeClock".asInstanceOf[SkypeClock]
-  @scala.inline
-  def SkypeForBusinessLogo: SkypeForBusinessLogo = "SkypeForBusinessLogo".asInstanceOf[SkypeForBusinessLogo]
-  @scala.inline
-  def SkypeForBusinessLogo16: SkypeForBusinessLogo16 = "SkypeForBusinessLogo16".asInstanceOf[SkypeForBusinessLogo16]
-  @scala.inline
-  def SkypeForBusinessLogoFill: SkypeForBusinessLogoFill = "SkypeForBusinessLogoFill".asInstanceOf[SkypeForBusinessLogoFill]
-  @scala.inline
-  def SkypeForBusinessLogoFill16: SkypeForBusinessLogoFill16 = "SkypeForBusinessLogoFill16".asInstanceOf[SkypeForBusinessLogoFill16]
-  @scala.inline
-  def SkypeLogo: SkypeLogo = "SkypeLogo".asInstanceOf[SkypeLogo]
-  @scala.inline
-  def SkypeLogo16: SkypeLogo16 = "SkypeLogo16".asInstanceOf[SkypeLogo16]
-  @scala.inline
-  def SkypeMessage: SkypeMessage = "SkypeMessage".asInstanceOf[SkypeMessage]
-  @scala.inline
-  def SkypeMinus: SkypeMinus = "SkypeMinus".asInstanceOf[SkypeMinus]
-  @scala.inline
-  def SkypeSlash: SkypeSlash = "SkypeSlash".asInstanceOf[SkypeSlash]
-  @scala.inline
-  def Slider: Slider = "Slider".asInstanceOf[Slider]
-  @scala.inline
-  def SliderHandleSize: SliderHandleSize = "SliderHandleSize".asInstanceOf[SliderHandleSize]
-  @scala.inline
-  def SliderThumb: SliderThumb = "SliderThumb".asInstanceOf[SliderThumb]
-  @scala.inline
-  def Slideshow: Slideshow = "Slideshow".asInstanceOf[Slideshow]
-  @scala.inline
-  def SmartGlassRemote: SmartGlassRemote = "SmartGlassRemote".asInstanceOf[SmartGlassRemote]
-  @scala.inline
-  def SnapToGrid: SnapToGrid = "SnapToGrid".asInstanceOf[SnapToGrid]
-  @scala.inline
-  def Snooze: Snooze = "Snooze".asInstanceOf[Snooze]
-  @scala.inline
-  def Snow: Snow = "Snow".asInstanceOf[Snow]
-  @scala.inline
-  def SnowShowerDay: SnowShowerDay = "SnowShowerDay".asInstanceOf[SnowShowerDay]
-  @scala.inline
-  def SnowShowerNight: SnowShowerNight = "SnowShowerNight".asInstanceOf[SnowShowerNight]
-  @scala.inline
-  def Snowflake: Snowflake = "Snowflake".asInstanceOf[Snowflake]
-  @scala.inline
-  def Soccer: Soccer = "Soccer".asInstanceOf[Soccer]
-  @scala.inline
-  def SocialListeningLogo: SocialListeningLogo = "SocialListeningLogo".asInstanceOf[SocialListeningLogo]
-  @scala.inline
-  def Sort: Sort = "Sort".asInstanceOf[Sort]
-  @scala.inline
-  def SortDown: SortDown = "SortDown".asInstanceOf[SortDown]
-  @scala.inline
-  def SortLines: SortLines = "SortLines".asInstanceOf[SortLines]
-  @scala.inline
-  def SortUp: SortUp = "SortUp".asInstanceOf[SortUp]
-  @scala.inline
-  def Source: Source = "Source".asInstanceOf[Source]
-  @scala.inline
-  def Spacer: Spacer = "Spacer".asInstanceOf[Spacer]
-  @scala.inline
-  def Speakers: Speakers = "Speakers".asInstanceOf[Speakers]
-  @scala.inline
-  def SpecialEvent: SpecialEvent = "SpecialEvent".asInstanceOf[SpecialEvent]
-  @scala.inline
-  def SpeedHigh: SpeedHigh = "SpeedHigh".asInstanceOf[SpeedHigh]
-  @scala.inline
-  def Split: Split = "Split".asInstanceOf[Split]
-  @scala.inline
-  def SplitObject: SplitObject = "SplitObject".asInstanceOf[SplitObject]
-  @scala.inline
-  def Sprint: Sprint = "Sprint".asInstanceOf[Sprint]
-  @scala.inline
-  def Squalls: Squalls = "Squalls".asInstanceOf[Squalls]
-  @scala.inline
-  def SquareShapeSolid: SquareShapeSolid = "SquareShapeSolid".asInstanceOf[SquareShapeSolid]
-  @scala.inline
-  def Stack: Stack = "Stack".asInstanceOf[Stack]
-  @scala.inline
-  def StackColumnChart: StackColumnChart = "StackColumnChart".asInstanceOf[StackColumnChart]
-  @scala.inline
-  def StackIndicator: StackIndicator = "StackIndicator".asInstanceOf[StackIndicator]
-  @scala.inline
-  def StackedBarChart: StackedBarChart = "StackedBarChart".asInstanceOf[StackedBarChart]
-  @scala.inline
-  def StackedColumnChart2: StackedColumnChart2 = "StackedColumnChart2".asInstanceOf[StackedColumnChart2]
-  @scala.inline
-  def StackedColumnChart2Fill: StackedColumnChart2Fill = "StackedColumnChart2Fill".asInstanceOf[StackedColumnChart2Fill]
-  @scala.inline
-  def StackedLineChart: StackedLineChart = "StackedLineChart".asInstanceOf[StackedLineChart]
-  @scala.inline
-  def StaffNotebookLogo16: StaffNotebookLogo16 = "StaffNotebookLogo16".asInstanceOf[StaffNotebookLogo16]
-  @scala.inline
-  def StaffNotebookLogo32: StaffNotebookLogo32 = "StaffNotebookLogo32".asInstanceOf[StaffNotebookLogo32]
-  @scala.inline
-  def StaffNotebookLogoFill16: StaffNotebookLogoFill16 = "StaffNotebookLogoFill16".asInstanceOf[StaffNotebookLogoFill16]
-  @scala.inline
-  def StaffNotebookLogoFill32: StaffNotebookLogoFill32 = "StaffNotebookLogoFill32".asInstanceOf[StaffNotebookLogoFill32]
-  @scala.inline
-  def StaffNotebookLogoInverted16: StaffNotebookLogoInverted16 = "StaffNotebookLogoInverted16".asInstanceOf[StaffNotebookLogoInverted16]
-  @scala.inline
-  def StaffNotebookLogoInverted32: StaffNotebookLogoInverted32 = "StaffNotebookLogoInverted32".asInstanceOf[StaffNotebookLogoInverted32]
-  @scala.inline
-  def Starburst: Starburst = "Starburst".asInstanceOf[Starburst]
-  @scala.inline
-  def StarburstSolid: StarburstSolid = "StarburstSolid".asInstanceOf[StarburstSolid]
-  @scala.inline
-  def StatusCircleBlock: StatusCircleBlock = "StatusCircleBlock".asInstanceOf[StatusCircleBlock]
-  @scala.inline
-  def StatusCircleBlock2: StatusCircleBlock2 = "StatusCircleBlock2".asInstanceOf[StatusCircleBlock2]
-  @scala.inline
-  def StatusCircleCheckmark: StatusCircleCheckmark = "StatusCircleCheckmark".asInstanceOf[StatusCircleCheckmark]
-  @scala.inline
-  def StatusCircleErrorX: StatusCircleErrorX = "StatusCircleErrorX".asInstanceOf[StatusCircleErrorX]
-  @scala.inline
-  def StatusCircleExclamation: StatusCircleExclamation = "StatusCircleExclamation".asInstanceOf[StatusCircleExclamation]
-  @scala.inline
-  def StatusCircleInfo: StatusCircleInfo = "StatusCircleInfo".asInstanceOf[StatusCircleInfo]
-  @scala.inline
-  def StatusCircleInner: StatusCircleInner = "StatusCircleInner".asInstanceOf[StatusCircleInner]
-  @scala.inline
-  def StatusCircleOuter: StatusCircleOuter = "StatusCircleOuter".asInstanceOf[StatusCircleOuter]
-  @scala.inline
-  def StatusCircleQuestionMark: StatusCircleQuestionMark = "StatusCircleQuestionMark".asInstanceOf[StatusCircleQuestionMark]
-  @scala.inline
-  def StatusCircleRing: StatusCircleRing = "StatusCircleRing".asInstanceOf[StatusCircleRing]
-  @scala.inline
-  def StatusCircleSync: StatusCircleSync = "StatusCircleSync".asInstanceOf[StatusCircleSync]
-  @scala.inline
-  def StatusErrorFull: StatusErrorFull = "StatusErrorFull".asInstanceOf[StatusErrorFull]
-  @scala.inline
-  def StatusTriangle: StatusTriangle = "StatusTriangle".asInstanceOf[StatusTriangle]
-  @scala.inline
-  def StatusTriangleExclamation: StatusTriangleExclamation = "StatusTriangleExclamation".asInstanceOf[StatusTriangleExclamation]
-  @scala.inline
-  def StatusTriangleInner: StatusTriangleInner = "StatusTriangleInner".asInstanceOf[StatusTriangleInner]
-  @scala.inline
-  def StatusTriangleOuter: StatusTriangleOuter = "StatusTriangleOuter".asInstanceOf[StatusTriangleOuter]
-  @scala.inline
-  def Step: Step = "Step".asInstanceOf[Step]
-  @scala.inline
-  def StepInsert: StepInsert = "StepInsert".asInstanceOf[StepInsert]
-  @scala.inline
-  def StepShared: StepShared = "StepShared".asInstanceOf[StepShared]
-  @scala.inline
-  def StepSharedAdd: StepSharedAdd = "StepSharedAdd".asInstanceOf[StepSharedAdd]
-  @scala.inline
-  def StepSharedInsert: StepSharedInsert = "StepSharedInsert".asInstanceOf[StepSharedInsert]
-  @scala.inline
-  def StockDown: StockDown = "StockDown".asInstanceOf[StockDown]
-  @scala.inline
-  def StockUp: StockUp = "StockUp".asInstanceOf[StockUp]
-  @scala.inline
-  def Stop: Stop = "Stop".asInstanceOf[Stop]
-  @scala.inline
-  def StopSolid: StopSolid = "StopSolid".asInstanceOf[StopSolid]
-  @scala.inline
-  def Stopwatch: Stopwatch = "Stopwatch".asInstanceOf[Stopwatch]
-  @scala.inline
-  def StorageOptical: StorageOptical = "StorageOptical".asInstanceOf[StorageOptical]
-  @scala.inline
-  def StoreLogo16: StoreLogo16 = "StoreLogo16".asInstanceOf[StoreLogo16]
-  @scala.inline
-  def StoreLogoMed20: StoreLogoMed20 = "StoreLogoMed20".asInstanceOf[StoreLogoMed20]
-  @scala.inline
-  def Storyboard: Storyboard = "Storyboard".asInstanceOf[Storyboard]
-  @scala.inline
-  def StreamLogo: StreamLogo = "StreamLogo".asInstanceOf[StreamLogo]
-  @scala.inline
-  def Streaming: Streaming = "Streaming".asInstanceOf[Streaming]
-  @scala.inline
-  def StreamingOff: StreamingOff = "StreamingOff".asInstanceOf[StreamingOff]
-  @scala.inline
-  def Street: Street = "Street".asInstanceOf[Street]
-  @scala.inline
-  def StreetsideSplitMinimize: StreetsideSplitMinimize = "StreetsideSplitMinimize".asInstanceOf[StreetsideSplitMinimize]
-  @scala.inline
-  def Strikethrough: Strikethrough = "Strikethrough".asInstanceOf[Strikethrough]
-  @scala.inline
-  def Subscribe: Subscribe = "Subscribe".asInstanceOf[Subscribe]
-  @scala.inline
-  def Subscript: Subscript = "Subscript".asInstanceOf[Subscript]
-  @scala.inline
-  def SubstitutionsIn: SubstitutionsIn = "SubstitutionsIn".asInstanceOf[SubstitutionsIn]
-  @scala.inline
-  def Suitcase: Suitcase = "Suitcase".asInstanceOf[Suitcase]
-  @scala.inline
-  def SunAdd: SunAdd = "SunAdd".asInstanceOf[SunAdd]
-  @scala.inline
-  def SunQuestionMark: SunQuestionMark = "SunQuestionMark".asInstanceOf[SunQuestionMark]
-  @scala.inline
-  def Sunny: Sunny = "Sunny".asInstanceOf[Sunny]
-  @scala.inline
-  def Superscript: Superscript = "Superscript".asInstanceOf[Superscript]
-  @scala.inline
-  def SurveyQuestions: SurveyQuestions = "SurveyQuestions".asInstanceOf[SurveyQuestions]
-  @scala.inline
-  def SwayLogo16: SwayLogo16 = "SwayLogo16".asInstanceOf[SwayLogo16]
-  @scala.inline
-  def SwayLogo32: SwayLogo32 = "SwayLogo32".asInstanceOf[SwayLogo32]
-  @scala.inline
-  def SwayLogoFill16: SwayLogoFill16 = "SwayLogoFill16".asInstanceOf[SwayLogoFill16]
-  @scala.inline
-  def SwayLogoFill32: SwayLogoFill32 = "SwayLogoFill32".asInstanceOf[SwayLogoFill32]
-  @scala.inline
-  def SwayLogoInverse: SwayLogoInverse = "SwayLogoInverse".asInstanceOf[SwayLogoInverse]
-  @scala.inline
-  def Switch: Switch = "Switch".asInstanceOf[Switch]
-  @scala.inline
-  def SwitcherStartEnd: SwitcherStartEnd = "SwitcherStartEnd".asInstanceOf[SwitcherStartEnd]
-  @scala.inline
-  def Sync: Sync = "Sync".asInstanceOf[Sync]
-  @scala.inline
-  def SyncFolder: SyncFolder = "SyncFolder".asInstanceOf[SyncFolder]
-  @scala.inline
-  def SyncOccurence: SyncOccurence = "SyncOccurence".asInstanceOf[SyncOccurence]
-  @scala.inline
-  def SyncStatus: SyncStatus = "SyncStatus".asInstanceOf[SyncStatus]
-  @scala.inline
-  def SyncStatusSolid: SyncStatusSolid = "SyncStatusSolid".asInstanceOf[SyncStatusSolid]
-  @scala.inline
-  def SyncToPC: SyncToPC = "SyncToPC".asInstanceOf[SyncToPC]
-  @scala.inline
-  def System: System = "System".asInstanceOf[System]
-  @scala.inline
-  def TFVCLogo: TFVCLogo = "TFVCLogo".asInstanceOf[TFVCLogo]
-  @scala.inline
-  def TVMonitor: TVMonitor = "TVMonitor".asInstanceOf[TVMonitor]
-  @scala.inline
-  def TVMonitorSelected: TVMonitorSelected = "TVMonitorSelected".asInstanceOf[TVMonitorSelected]
-  @scala.inline
-  def Tab: Tab = "Tab".asInstanceOf[Tab]
-  @scala.inline
-  def TabCenter: TabCenter = "TabCenter".asInstanceOf[TabCenter]
-  @scala.inline
-  def TabOneColumn: TabOneColumn = "TabOneColumn".asInstanceOf[TabOneColumn]
-  @scala.inline
-  def TabThreeColumn: TabThreeColumn = "TabThreeColumn".asInstanceOf[TabThreeColumn]
-  @scala.inline
-  def TabTwoColumn: TabTwoColumn = "TabTwoColumn".asInstanceOf[TabTwoColumn]
-  @scala.inline
-  def Table: Table = "Table".asInstanceOf[Table]
-  @scala.inline
-  def TableComputed: TableComputed = "TableComputed".asInstanceOf[TableComputed]
-  @scala.inline
-  def TableGroup: TableGroup = "TableGroup".asInstanceOf[TableGroup]
-  @scala.inline
-  def TableLink: TableLink = "TableLink".asInstanceOf[TableLink]
-  @scala.inline
-  def Tablet: Tablet = "Tablet".asInstanceOf[Tablet]
-  @scala.inline
-  def TabletMode: TabletMode = "TabletMode".asInstanceOf[TabletMode]
-  @scala.inline
-  def TabletSelected: TabletSelected = "TabletSelected".asInstanceOf[TabletSelected]
-  @scala.inline
-  def Tag: Tag = "Tag".asInstanceOf[Tag]
-  @scala.inline
-  def TagSolid: TagSolid = "TagSolid".asInstanceOf[TagSolid]
-  @scala.inline
-  def TagUnknown: TagUnknown = "TagUnknown".asInstanceOf[TagUnknown]
-  @scala.inline
-  def TagUnknown12: TagUnknown12 = "TagUnknown12".asInstanceOf[TagUnknown12]
-  @scala.inline
-  def TagUnknown12Mirror: TagUnknown12Mirror = "TagUnknown12Mirror".asInstanceOf[TagUnknown12Mirror]
-  @scala.inline
-  def TagUnknownMirror: TagUnknownMirror = "TagUnknownMirror".asInstanceOf[TagUnknownMirror]
-  @scala.inline
-  def TaskGroup: TaskGroup = "TaskGroup".asInstanceOf[TaskGroup]
-  @scala.inline
-  def TaskGroupMirrored: TaskGroupMirrored = "TaskGroupMirrored".asInstanceOf[TaskGroupMirrored]
-  @scala.inline
-  def TaskLogo: TaskLogo = "TaskLogo".asInstanceOf[TaskLogo]
-  @scala.inline
-  def TaskManager: TaskManager = "TaskManager".asInstanceOf[TaskManager]
-  @scala.inline
-  def TaskManagerMirrored: TaskManagerMirrored = "TaskManagerMirrored".asInstanceOf[TaskManagerMirrored]
-  @scala.inline
-  def TaskSolid: TaskSolid = "TaskSolid".asInstanceOf[TaskSolid]
-  @scala.inline
-  def Taskboard: Taskboard = "Taskboard".asInstanceOf[Taskboard]
-  @scala.inline
-  def Taxi: Taxi = "Taxi".asInstanceOf[Taxi]
-  @scala.inline
-  def TeamFavorite: TeamFavorite = "TeamFavorite".asInstanceOf[TeamFavorite]
-  @scala.inline
-  def TeamsLogo: TeamsLogo = "TeamsLogo".asInstanceOf[TeamsLogo]
-  @scala.inline
-  def TeamsLogo16: TeamsLogo16 = "TeamsLogo16".asInstanceOf[TeamsLogo16]
-  @scala.inline
-  def TeamsLogoFill: TeamsLogoFill = "TeamsLogoFill".asInstanceOf[TeamsLogoFill]
-  @scala.inline
-  def TeamsLogoFill16: TeamsLogoFill16 = "TeamsLogoFill16".asInstanceOf[TeamsLogoFill16]
-  @scala.inline
-  def TeamsLogoInverse: TeamsLogoInverse = "TeamsLogoInverse".asInstanceOf[TeamsLogoInverse]
-  @scala.inline
-  def Teamwork: Teamwork = "Teamwork".asInstanceOf[Teamwork]
-  @scala.inline
-  def Teeth: Teeth = "Teeth".asInstanceOf[Teeth]
-  @scala.inline
-  def Telemarketer: Telemarketer = "Telemarketer".asInstanceOf[Telemarketer]
-  @scala.inline
-  def TemporaryUser: TemporaryUser = "TemporaryUser".asInstanceOf[TemporaryUser]
-  @scala.inline
-  def Tennis: Tennis = "Tennis".asInstanceOf[Tennis]
-  @scala.inline
-  def TestAutoSolid: TestAutoSolid = "TestAutoSolid".asInstanceOf[TestAutoSolid]
-  @scala.inline
-  def TestBeaker: TestBeaker = "TestBeaker".asInstanceOf[TestBeaker]
-  @scala.inline
-  def TestBeakerSolid: TestBeakerSolid = "TestBeakerSolid".asInstanceOf[TestBeakerSolid]
-  @scala.inline
-  def TestCase: TestCase = "TestCase".asInstanceOf[TestCase]
-  @scala.inline
-  def TestExploreSolid: TestExploreSolid = "TestExploreSolid".asInstanceOf[TestExploreSolid]
-  @scala.inline
-  def TestImpactSolid: TestImpactSolid = "TestImpactSolid".asInstanceOf[TestImpactSolid]
-  @scala.inline
-  def TestParameter: TestParameter = "TestParameter".asInstanceOf[TestParameter]
-  @scala.inline
-  def TestPlan: TestPlan = "TestPlan".asInstanceOf[TestPlan]
-  @scala.inline
-  def TestStep: TestStep = "TestStep".asInstanceOf[TestStep]
-  @scala.inline
-  def TestSuite: TestSuite = "TestSuite".asInstanceOf[TestSuite]
-  @scala.inline
-  def TestUserSolid: TestUserSolid = "TestUserSolid".asInstanceOf[TestUserSolid]
-  @scala.inline
-  def TextBox: TextBox = "TextBox".asInstanceOf[TextBox]
-  @scala.inline
-  def TextCallout: TextCallout = "TextCallout".asInstanceOf[TextCallout]
-  @scala.inline
-  def TextDocument: TextDocument = "TextDocument".asInstanceOf[TextDocument]
-  @scala.inline
-  def TextDocumentShared: TextDocumentShared = "TextDocumentShared".asInstanceOf[TextDocumentShared]
-  @scala.inline
-  def TextField: TextField = "TextField".asInstanceOf[TextField]
-  @scala.inline
-  def TextOverflow: TextOverflow = "TextOverflow".asInstanceOf[TextOverflow]
-  @scala.inline
-  def ThisPC: ThisPC = "ThisPC".asInstanceOf[ThisPC]
-  @scala.inline
-  def ThreeQuarterCircle: ThreeQuarterCircle = "ThreeQuarterCircle".asInstanceOf[ThreeQuarterCircle]
-  @scala.inline
-  def ThumbnailView: ThumbnailView = "ThumbnailView".asInstanceOf[ThumbnailView]
-  @scala.inline
-  def ThumbnailViewMirrored: ThumbnailViewMirrored = "ThumbnailViewMirrored".asInstanceOf[ThumbnailViewMirrored]
-  @scala.inline
-  def Thunderstorms: Thunderstorms = "Thunderstorms".asInstanceOf[Thunderstorms]
-  @scala.inline
-  def Ticket: Ticket = "Ticket".asInstanceOf[Ticket]
-  @scala.inline
-  def Tiles: Tiles = "Tiles".asInstanceOf[Tiles]
-  @scala.inline
-  def Tiles2: Tiles2 = "Tiles2".asInstanceOf[Tiles2]
-  @scala.inline
-  def TimeEntry: TimeEntry = "TimeEntry".asInstanceOf[TimeEntry]
-  @scala.inline
-  def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
-  @scala.inline
-  def TimeSheet: TimeSheet = "TimeSheet".asInstanceOf[TimeSheet]
-  @scala.inline
-  def Timeline: Timeline = "Timeline".asInstanceOf[Timeline]
-  @scala.inline
-  def TimelineDelivery: TimelineDelivery = "TimelineDelivery".asInstanceOf[TimelineDelivery]
-  @scala.inline
-  def TimelineMatrixView: TimelineMatrixView = "TimelineMatrixView".asInstanceOf[TimelineMatrixView]
-  @scala.inline
-  def TimelineProgress: TimelineProgress = "TimelineProgress".asInstanceOf[TimelineProgress]
-  @scala.inline
-  def Timer: Timer = "Timer".asInstanceOf[Timer]
-  @scala.inline
-  def ToDoLogoBottom: ToDoLogoBottom = "ToDoLogoBottom".asInstanceOf[ToDoLogoBottom]
-  @scala.inline
-  def ToDoLogoInverse: ToDoLogoInverse = "ToDoLogoInverse".asInstanceOf[ToDoLogoInverse]
-  @scala.inline
-  def ToDoLogoOutline: ToDoLogoOutline = "ToDoLogoOutline".asInstanceOf[ToDoLogoOutline]
-  @scala.inline
-  def ToDoLogoTop: ToDoLogoTop = "ToDoLogoTop".asInstanceOf[ToDoLogoTop]
-  @scala.inline
-  def ToggleBorder: ToggleBorder = "ToggleBorder".asInstanceOf[ToggleBorder]
-  @scala.inline
-  def ToggleFilled: ToggleFilled = "ToggleFilled".asInstanceOf[ToggleFilled]
-  @scala.inline
-  def ToggleLeft: ToggleLeft = "ToggleLeft".asInstanceOf[ToggleLeft]
-  @scala.inline
-  def ToggleRight: ToggleRight = "ToggleRight".asInstanceOf[ToggleRight]
-  @scala.inline
-  def ToggleThumb: ToggleThumb = "ToggleThumb".asInstanceOf[ToggleThumb]
-  @scala.inline
-  def Toll: Toll = "Toll".asInstanceOf[Toll]
-  @scala.inline
-  def Toolbox: Toolbox = "Toolbox".asInstanceOf[Toolbox]
-  @scala.inline
-  def Touch: Touch = "Touch".asInstanceOf[Touch]
-  @scala.inline
-  def TouchPointer: TouchPointer = "TouchPointer".asInstanceOf[TouchPointer]
-  @scala.inline
-  def Trackers: Trackers = "Trackers".asInstanceOf[Trackers]
-  @scala.inline
-  def TrackersMirrored: TrackersMirrored = "TrackersMirrored".asInstanceOf[TrackersMirrored]
-  @scala.inline
-  def Train: Train = "Train".asInstanceOf[Train]
-  @scala.inline
-  def TrainSolid: TrainSolid = "TrainSolid".asInstanceOf[TrainSolid]
-  @scala.inline
-  def TransferCall: TransferCall = "TransferCall".asInstanceOf[TransferCall]
-  @scala.inline
-  def Transition: Transition = "Transition".asInstanceOf[Transition]
-  @scala.inline
-  def TransitionEffect: TransitionEffect = "TransitionEffect".asInstanceOf[TransitionEffect]
-  @scala.inline
-  def TransitionPop: TransitionPop = "TransitionPop".asInstanceOf[TransitionPop]
-  @scala.inline
-  def TransitionPush: TransitionPush = "TransitionPush".asInstanceOf[TransitionPush]
-  @scala.inline
-  def Translate: Translate = "Translate".asInstanceOf[Translate]
-  @scala.inline
-  def Trending12: Trending12 = "Trending12".asInstanceOf[Trending12]
-  @scala.inline
-  def TriangleDown12: TriangleDown12 = "TriangleDown12".asInstanceOf[TriangleDown12]
-  @scala.inline
-  def TriangleLeft12: TriangleLeft12 = "TriangleLeft12".asInstanceOf[TriangleLeft12]
-  @scala.inline
-  def TriangleRight12: TriangleRight12 = "TriangleRight12".asInstanceOf[TriangleRight12]
-  @scala.inline
-  def TriangleShape: TriangleShape = "TriangleShape".asInstanceOf[TriangleShape]
-  @scala.inline
-  def TriangleShapeSolid: TriangleShapeSolid = "TriangleShapeSolid".asInstanceOf[TriangleShapeSolid]
-  @scala.inline
-  def TriangleSolid: TriangleSolid = "TriangleSolid".asInstanceOf[TriangleSolid]
-  @scala.inline
-  def TriangleSolidDown12: TriangleSolidDown12 = "TriangleSolidDown12".asInstanceOf[TriangleSolidDown12]
-  @scala.inline
-  def TriangleSolidLeft12: TriangleSolidLeft12 = "TriangleSolidLeft12".asInstanceOf[TriangleSolidLeft12]
-  @scala.inline
-  def TriangleSolidRight12: TriangleSolidRight12 = "TriangleSolidRight12".asInstanceOf[TriangleSolidRight12]
-  @scala.inline
-  def TriangleSolidUp12: TriangleSolidUp12 = "TriangleSolidUp12".asInstanceOf[TriangleSolidUp12]
-  @scala.inline
-  def TriangleUp12: TriangleUp12 = "TriangleUp12".asInstanceOf[TriangleUp12]
-  @scala.inline
-  def TriggerApproval: TriggerApproval = "TriggerApproval".asInstanceOf[TriggerApproval]
-  @scala.inline
-  def TriggerAuto: TriggerAuto = "TriggerAuto".asInstanceOf[TriggerAuto]
-  @scala.inline
-  def TriggerUser: TriggerUser = "TriggerUser".asInstanceOf[TriggerUser]
-  @scala.inline
-  def Trim: Trim = "Trim".asInstanceOf[Trim]
-  @scala.inline
-  def TrimEnd: TrimEnd = "TrimEnd".asInstanceOf[TrimEnd]
-  @scala.inline
-  def TrimStart: TrimStart = "TrimStart".asInstanceOf[TrimStart]
-  @scala.inline
-  def TripleColumn: TripleColumn = "TripleColumn".asInstanceOf[TripleColumn]
-  @scala.inline
-  def TripleColumnEdit: TripleColumnEdit = "TripleColumnEdit".asInstanceOf[TripleColumnEdit]
-  @scala.inline
-  def TripleColumnWide: TripleColumnWide = "TripleColumnWide".asInstanceOf[TripleColumnWide]
-  @scala.inline
-  def Trophy: Trophy = "Trophy".asInstanceOf[Trophy]
-  @scala.inline
-  def Trophy2: Trophy2 = "Trophy2".asInstanceOf[Trophy2]
-  @scala.inline
-  def Trophy2Solid: Trophy2Solid = "Trophy2Solid".asInstanceOf[Trophy2Solid]
-  @scala.inline
-  def TurnRight: TurnRight = "TurnRight".asInstanceOf[TurnRight]
-  @scala.inline
-  def TwelvePointStar: TwelvePointStar = "TwelvePointStar".asInstanceOf[TwelvePointStar]
-  @scala.inline
-  def TypeScriptLanguage: TypeScriptLanguage = "TypeScriptLanguage".asInstanceOf[TypeScriptLanguage]
-  @scala.inline
-  def USB: USB = "USB".asInstanceOf[USB]
-  @scala.inline
-  def Umbrella: Umbrella = "Umbrella".asInstanceOf[Umbrella]
-  @scala.inline
-  def UnSetColor: UnSetColor = "UnSetColor".asInstanceOf[UnSetColor]
-  @scala.inline
-  def Underline: Underline = "Underline".asInstanceOf[Underline]
-  @scala.inline
-  def Undo: Undo = "Undo".asInstanceOf[Undo]
-  @scala.inline
-  def Uneditable: Uneditable = "Uneditable".asInstanceOf[Uneditable]
-  @scala.inline
-  def Uneditable2: Uneditable2 = "Uneditable2".asInstanceOf[Uneditable2]
-  @scala.inline
-  def Uneditable2Mirrored: Uneditable2Mirrored = "Uneditable2Mirrored".asInstanceOf[Uneditable2Mirrored]
-  @scala.inline
-  def UneditableMirrored: UneditableMirrored = "UneditableMirrored".asInstanceOf[UneditableMirrored]
-  @scala.inline
-  def UneditableSolid12: UneditableSolid12 = "UneditableSolid12".asInstanceOf[UneditableSolid12]
-  @scala.inline
-  def UneditableSolidMirrored12: UneditableSolidMirrored12 = "UneditableSolidMirrored12".asInstanceOf[UneditableSolidMirrored12]
-  @scala.inline
-  def Unfavorite: Unfavorite = "Unfavorite".asInstanceOf[Unfavorite]
-  @scala.inline
-  def UngroupObject: UngroupObject = "UngroupObject".asInstanceOf[UngroupObject]
-  @scala.inline
-  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
-  @scala.inline
-  def UnknownCall: UnknownCall = "UnknownCall".asInstanceOf[UnknownCall]
-  @scala.inline
-  def UnknownMirrored: UnknownMirrored = "UnknownMirrored".asInstanceOf[UnknownMirrored]
-  @scala.inline
-  def UnknownMirroredSolid: UnknownMirroredSolid = "UnknownMirroredSolid".asInstanceOf[UnknownMirroredSolid]
-  @scala.inline
-  def UnknownSolid: UnknownSolid = "UnknownSolid".asInstanceOf[UnknownSolid]
-  @scala.inline
-  def Unlock: Unlock = "Unlock".asInstanceOf[Unlock]
-  @scala.inline
-  def UnlockSolid: UnlockSolid = "UnlockSolid".asInstanceOf[UnlockSolid]
-  @scala.inline
-  def Unpin: Unpin = "Unpin".asInstanceOf[Unpin]
-  @scala.inline
-  def UnpublishContent: UnpublishContent = "UnpublishContent".asInstanceOf[UnpublishContent]
-  @scala.inline
-  def UnstackSelected: UnstackSelected = "UnstackSelected".asInstanceOf[UnstackSelected]
-  @scala.inline
-  def Unsubscribe: Unsubscribe = "Unsubscribe".asInstanceOf[Unsubscribe]
-  @scala.inline
-  def UnsyncFolder: UnsyncFolder = "UnsyncFolder".asInstanceOf[UnsyncFolder]
-  @scala.inline
-  def UnsyncOccurence: UnsyncOccurence = "UnsyncOccurence".asInstanceOf[UnsyncOccurence]
-  @scala.inline
-  def Untag: Untag = "Untag".asInstanceOf[Untag]
-  @scala.inline
-  def Up: Up = "Up".asInstanceOf[Up]
-  @scala.inline
-  def UpgradeAnalysis: UpgradeAnalysis = "UpgradeAnalysis".asInstanceOf[UpgradeAnalysis]
-  @scala.inline
-  def Upload: Upload = "Upload".asInstanceOf[Upload]
-  @scala.inline
-  def UserEvent: UserEvent = "UserEvent".asInstanceOf[UserEvent]
-  @scala.inline
-  def UserFollowed: UserFollowed = "UserFollowed".asInstanceOf[UserFollowed]
-  @scala.inline
-  def UserGauge: UserGauge = "UserGauge".asInstanceOf[UserGauge]
-  @scala.inline
-  def UserOptional: UserOptional = "UserOptional".asInstanceOf[UserOptional]
-  @scala.inline
-  def UserPause: UserPause = "UserPause".asInstanceOf[UserPause]
-  @scala.inline
-  def UserRemove: UserRemove = "UserRemove".asInstanceOf[UserRemove]
-  @scala.inline
-  def UserSync: UserSync = "UserSync".asInstanceOf[UserSync]
-  @scala.inline
-  def UserWarning: UserWarning = "UserWarning".asInstanceOf[UserWarning]
-  @scala.inline
-  def VB: VB = "VB".asInstanceOf[VB]
-  @scala.inline
-  def VSTSAltLogo1: VSTSAltLogo1 = "VSTSAltLogo1".asInstanceOf[VSTSAltLogo1]
-  @scala.inline
-  def VSTSAltLogo2: VSTSAltLogo2 = "VSTSAltLogo2".asInstanceOf[VSTSAltLogo2]
-  @scala.inline
-  def VSTSLogo: VSTSLogo = "VSTSLogo".asInstanceOf[VSTSLogo]
-  @scala.inline
-  def Vacation: Vacation = "Vacation".asInstanceOf[Vacation]
-  @scala.inline
-  def Variable: Variable = "Variable".asInstanceOf[Variable]
-  @scala.inline
-  def Variable2: Variable2 = "Variable2".asInstanceOf[Variable2]
-  @scala.inline
-  def VariableGroup: VariableGroup = "VariableGroup".asInstanceOf[VariableGroup]
-  @scala.inline
-  def VennDiagram: VennDiagram = "VennDiagram".asInstanceOf[VennDiagram]
-  @scala.inline
-  def VerifiedBrand: VerifiedBrand = "VerifiedBrand".asInstanceOf[VerifiedBrand]
-  @scala.inline
-  def VerifiedBrandSolid: VerifiedBrandSolid = "VerifiedBrandSolid".asInstanceOf[VerifiedBrandSolid]
-  @scala.inline
-  def VersionControlPush: VersionControlPush = "VersionControlPush".asInstanceOf[VersionControlPush]
-  @scala.inline
-  def VerticalDistributeCenter: VerticalDistributeCenter = "VerticalDistributeCenter".asInstanceOf[VerticalDistributeCenter]
-  @scala.inline
-  def Video: Video = "Video".asInstanceOf[Video]
-  @scala.inline
-  def Video360Generic: Video360Generic = "Video360Generic".asInstanceOf[Video360Generic]
-  @scala.inline
-  def VideoLightOff: VideoLightOff = "VideoLightOff".asInstanceOf[VideoLightOff]
-  @scala.inline
-  def VideoOff: VideoOff = "VideoOff".asInstanceOf[VideoOff]
-  @scala.inline
-  def VideoSearch: VideoSearch = "VideoSearch".asInstanceOf[VideoSearch]
-  @scala.inline
-  def VideoSolid: VideoSolid = "VideoSolid".asInstanceOf[VideoSolid]
-  @scala.inline
-  def View: View = "View".asInstanceOf[View]
-  @scala.inline
-  def ViewAll: ViewAll = "ViewAll".asInstanceOf[ViewAll]
-  @scala.inline
-  def ViewAll2: ViewAll2 = "ViewAll2".asInstanceOf[ViewAll2]
-  @scala.inline
-  def ViewDashboard: ViewDashboard = "ViewDashboard".asInstanceOf[ViewDashboard]
-  @scala.inline
-  def ViewList: ViewList = "ViewList".asInstanceOf[ViewList]
-  @scala.inline
-  def ViewListGroup: ViewListGroup = "ViewListGroup".asInstanceOf[ViewListGroup]
-  @scala.inline
-  def ViewListTree: ViewListTree = "ViewListTree".asInstanceOf[ViewListTree]
-  @scala.inline
-  def ViewOriginal: ViewOriginal = "ViewOriginal".asInstanceOf[ViewOriginal]
-  @scala.inline
-  def VisioDiagram: VisioDiagram = "VisioDiagram".asInstanceOf[VisioDiagram]
-  @scala.inline
-  def VisioDiagramSync: VisioDiagramSync = "VisioDiagramSync".asInstanceOf[VisioDiagramSync]
-  @scala.inline
-  def VisioDocument: VisioDocument = "VisioDocument".asInstanceOf[VisioDocument]
-  @scala.inline
-  def VisioLogo: VisioLogo = "VisioLogo".asInstanceOf[VisioLogo]
-  @scala.inline
-  def VisioLogo16: VisioLogo16 = "VisioLogo16".asInstanceOf[VisioLogo16]
-  @scala.inline
-  def VisioLogoFill: VisioLogoFill = "VisioLogoFill".asInstanceOf[VisioLogoFill]
-  @scala.inline
-  def VisioLogoFill16: VisioLogoFill16 = "VisioLogoFill16".asInstanceOf[VisioLogoFill16]
-  @scala.inline
-  def VisioLogoInverse: VisioLogoInverse = "VisioLogoInverse".asInstanceOf[VisioLogoInverse]
-  @scala.inline
-  def VisioLogoInverse16: VisioLogoInverse16 = "VisioLogoInverse16".asInstanceOf[VisioLogoInverse16]
-  @scala.inline
-  def VisioOnlineLogo32: VisioOnlineLogo32 = "VisioOnlineLogo32".asInstanceOf[VisioOnlineLogo32]
-  @scala.inline
-  def VisioOnlineLogoCloud32: VisioOnlineLogoCloud32 = "VisioOnlineLogoCloud32".asInstanceOf[VisioOnlineLogoCloud32]
-  @scala.inline
-  def VisioOnlineLogoFill32: VisioOnlineLogoFill32 = "VisioOnlineLogoFill32".asInstanceOf[VisioOnlineLogoFill32]
-  @scala.inline
-  def VisualBasicLanguage: VisualBasicLanguage = "VisualBasicLanguage".asInstanceOf[VisualBasicLanguage]
-  @scala.inline
-  def VisualStudioIDELogo32: VisualStudioIDELogo32 = "VisualStudioIDELogo32".asInstanceOf[VisualStudioIDELogo32]
-  @scala.inline
-  def VisualStudioLogo: VisualStudioLogo = "VisualStudioLogo".asInstanceOf[VisualStudioLogo]
-  @scala.inline
-  def VisuallyImpaired: VisuallyImpaired = "VisuallyImpaired".asInstanceOf[VisuallyImpaired]
-  @scala.inline
-  def VisualsFolder: VisualsFolder = "VisualsFolder".asInstanceOf[VisualsFolder]
-  @scala.inline
-  def VisualsStore: VisualsStore = "VisualsStore".asInstanceOf[VisualsStore]
-  @scala.inline
-  def VoicemailForward: VoicemailForward = "VoicemailForward".asInstanceOf[VoicemailForward]
-  @scala.inline
-  def VoicemailIRM: VoicemailIRM = "VoicemailIRM".asInstanceOf[VoicemailIRM]
-  @scala.inline
-  def VoicemailReply: VoicemailReply = "VoicemailReply".asInstanceOf[VoicemailReply]
-  @scala.inline
-  def Volume0: Volume0 = "Volume0".asInstanceOf[Volume0]
-  @scala.inline
-  def Volume1: Volume1 = "Volume1".asInstanceOf[Volume1]
-  @scala.inline
-  def Volume2: Volume2 = "Volume2".asInstanceOf[Volume2]
-  @scala.inline
-  def Volume3: Volume3 = "Volume3".asInstanceOf[Volume3]
-  @scala.inline
-  def VolumeDisabled: VolumeDisabled = "VolumeDisabled".asInstanceOf[VolumeDisabled]
-  @scala.inline
-  def Waffle: Waffle = "Waffle".asInstanceOf[Waffle]
-  @scala.inline
-  def WaffleOffice365: WaffleOffice365 = "WaffleOffice365".asInstanceOf[WaffleOffice365]
-  @scala.inline
-  def WaitlistConfirm: WaitlistConfirm = "WaitlistConfirm".asInstanceOf[WaitlistConfirm]
-  @scala.inline
-  def WaitlistConfirmMirrored: WaitlistConfirmMirrored = "WaitlistConfirmMirrored".asInstanceOf[WaitlistConfirmMirrored]
-  @scala.inline
-  def Warning: Warning = "Warning".asInstanceOf[Warning]
-  @scala.inline
-  def Warning12: Warning12 = "Warning12".asInstanceOf[Warning12]
-  @scala.inline
-  def WarningSolid: WarningSolid = "WarningSolid".asInstanceOf[WarningSolid]
-  @scala.inline
-  def WavingHand: WavingHand = "WavingHand".asInstanceOf[WavingHand]
-  @scala.inline
-  def WebAppBuilderFragment: WebAppBuilderFragment = "WebAppBuilderFragment".asInstanceOf[WebAppBuilderFragment]
-  @scala.inline
-  def WebAppBuilderFragmentCreate: WebAppBuilderFragmentCreate = "WebAppBuilderFragmentCreate".asInstanceOf[WebAppBuilderFragmentCreate]
-  @scala.inline
-  def WebAppBuilderModule: WebAppBuilderModule = "WebAppBuilderModule".asInstanceOf[WebAppBuilderModule]
-  @scala.inline
-  def WebAppBuilderSlot: WebAppBuilderSlot = "WebAppBuilderSlot".asInstanceOf[WebAppBuilderSlot]
-  @scala.inline
-  def WebComponents: WebComponents = "WebComponents".asInstanceOf[WebComponents]
-  @scala.inline
-  def WebPublish: WebPublish = "WebPublish".asInstanceOf[WebPublish]
-  @scala.inline
-  def WebTemplate: WebTemplate = "WebTemplate".asInstanceOf[WebTemplate]
-  @scala.inline
-  def Webcam2: Webcam2 = "Webcam2".asInstanceOf[Webcam2]
-  @scala.inline
-  def Website: Website = "Website".asInstanceOf[Website]
-  @scala.inline
-  def Weights: Weights = "Weights".asInstanceOf[Weights]
-  @scala.inline
-  def Wheelchair: Wheelchair = "Wheelchair".asInstanceOf[Wheelchair]
-  @scala.inline
-  def WhiteBoardApp16: WhiteBoardApp16 = "WhiteBoardApp16".asInstanceOf[WhiteBoardApp16]
-  @scala.inline
-  def WhiteBoardApp32: WhiteBoardApp32 = "WhiteBoardApp32".asInstanceOf[WhiteBoardApp32]
-  @scala.inline
-  def WifiEthernet: WifiEthernet = "WifiEthernet".asInstanceOf[WifiEthernet]
-  @scala.inline
-  def WifiWarning4: WifiWarning4 = "WifiWarning4".asInstanceOf[WifiWarning4]
-  @scala.inline
-  def WindDirection: WindDirection = "WindDirection".asInstanceOf[WindDirection]
-  @scala.inline
-  def WindowEdit: WindowEdit = "WindowEdit".asInstanceOf[WindowEdit]
-  @scala.inline
-  def WindowsLogo: WindowsLogo = "WindowsLogo".asInstanceOf[WindowsLogo]
-  @scala.inline
-  def Wines: Wines = "Wines".asInstanceOf[Wines]
-  @scala.inline
-  def WipePhone: WipePhone = "WipePhone".asInstanceOf[WipePhone]
-  @scala.inline
-  def WordDocument: WordDocument = "WordDocument".asInstanceOf[WordDocument]
-  @scala.inline
-  def WordLogo: WordLogo = "WordLogo".asInstanceOf[WordLogo]
-  @scala.inline
-  def WordLogo16: WordLogo16 = "WordLogo16".asInstanceOf[WordLogo16]
-  @scala.inline
-  def WordLogoFill: WordLogoFill = "WordLogoFill".asInstanceOf[WordLogoFill]
-  @scala.inline
-  def WordLogoFill16: WordLogoFill16 = "WordLogoFill16".asInstanceOf[WordLogoFill16]
-  @scala.inline
-  def WordLogoInverse: WordLogoInverse = "WordLogoInverse".asInstanceOf[WordLogoInverse]
-  @scala.inline
-  def WordLogoInverse16: WordLogoInverse16 = "WordLogoInverse16".asInstanceOf[WordLogoInverse16]
-  @scala.inline
-  def Work: Work = "Work".asInstanceOf[Work]
-  @scala.inline
-  def WorkFlow: WorkFlow = "WorkFlow".asInstanceOf[WorkFlow]
-  @scala.inline
-  def WorkItem: WorkItem = "WorkItem".asInstanceOf[WorkItem]
-  @scala.inline
-  def WorkItemAlert: WorkItemAlert = "WorkItemAlert".asInstanceOf[WorkItemAlert]
-  @scala.inline
-  def WorkItemBar: WorkItemBar = "WorkItemBar".asInstanceOf[WorkItemBar]
-  @scala.inline
-  def WorkItemBarSolid: WorkItemBarSolid = "WorkItemBarSolid".asInstanceOf[WorkItemBarSolid]
-  @scala.inline
-  def WorkItemBug: WorkItemBug = "WorkItemBug".asInstanceOf[WorkItemBug]
-  @scala.inline
-  def WorkforceManagement: WorkforceManagement = "WorkforceManagement".asInstanceOf[WorkforceManagement]
-  @scala.inline
-  def World: World = "World".asInstanceOf[World]
-  @scala.inline
-  def WorldClock: WorldClock = "WorldClock".asInstanceOf[WorldClock]
-  @scala.inline
-  def YammerLogo: YammerLogo = "YammerLogo".asInstanceOf[YammerLogo]
-  @scala.inline
-  def ZipFolder: ZipFolder = "ZipFolder".asInstanceOf[ZipFolder]
-  @scala.inline
-  def Zoom: Zoom = "Zoom".asInstanceOf[Zoom]
-  @scala.inline
-  def ZoomIn: ZoomIn = "ZoomIn".asInstanceOf[ZoomIn]
-  @scala.inline
-  def ZoomOut: ZoomOut = "ZoomOut".asInstanceOf[ZoomOut]
-  @scala.inline
-  def ZoomToFit: ZoomToFit = "ZoomToFit".asInstanceOf[ZoomToFit]
 }
-

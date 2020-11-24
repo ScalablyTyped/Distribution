@@ -10,9 +10,9 @@ Typings are for version 1.1.0
 | ------------------ | :-------------: |
 | Full name          | react-sortable-pane |
 | Keywords           | React |
-| # releases         | 15 |
-| # dependents       | 6 |
-| # downloads        | 50590 |
+| # releases         | 4 |
+| # dependents       | 7 |
+| # downloads        | 63532 |
 | # stars            | 0 |
 
 ## Links

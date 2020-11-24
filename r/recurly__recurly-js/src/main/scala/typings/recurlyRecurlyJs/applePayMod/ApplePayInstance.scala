@@ -4,13 +4,17 @@ import typings.recurlyRecurlyJs.emitterMod.Emitter
 import typings.std.VoidFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplePayInstance extends Emitter[ApplePayEvent] {
+  
   def begin(): Unit = js.native
   def begin(cb: VoidFunction): Unit = js.native
+  
+  /**
+    * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#fn-applepayready|ApplePay.ready}
+    */
   def ready(): Unit = js.native
   def ready(cb: VoidFunction): Unit = js.native
 }
-

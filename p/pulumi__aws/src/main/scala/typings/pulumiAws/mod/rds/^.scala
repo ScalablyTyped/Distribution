@@ -1,20 +1,24 @@
 package typings.pulumiAws.mod.rds
 
-import typings.pulumiAws.engineModeMod.EngineMode
-import typings.pulumiAws.engineTypeMod.EngineType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "rds")
 @js.native
 object ^ extends js.Object {
-  var AuroraEngine: EngineType = js.native
-  var AuroraMysqlEngine: EngineType = js.native
-  var AuroraPostgresqlEngine: EngineType = js.native
-  var GlobalEngine: EngineMode = js.native
-  var ParallelQueryEngine: EngineMode = js.native
-  var ProvisionedEngine: EngineMode = js.native
-  var ServerlessEngine: EngineMode = js.native
+  
+  var AuroraEngine: typings.pulumiAws.enumsRdsMod.EngineType = js.native
+  
+  var AuroraMysqlEngine: typings.pulumiAws.enumsRdsMod.EngineType = js.native
+  
+  var AuroraPostgresqlEngine: typings.pulumiAws.enumsRdsMod.EngineType = js.native
+  
+  var GlobalEngine: typings.pulumiAws.enumsRdsMod.EngineMode = js.native
+  
+  var ParallelQueryEngine: typings.pulumiAws.enumsRdsMod.EngineMode = js.native
+  
+  var ProvisionedEngine: typings.pulumiAws.enumsRdsMod.EngineMode = js.native
+  
+  var ServerlessEngine: typings.pulumiAws.enumsRdsMod.EngineMode = js.native
 }
-

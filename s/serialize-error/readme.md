@@ -10,9 +10,9 @@ Serialize/deserialize an error into a plain object
 | ------------------ | :-------------: |
 | Full name          | serialize-error |
 | Keywords           | error, serialize, stringify, object, convert, process, send, deserialize |
-| # releases         | 5 |
-| # dependents       | 283 |
-| # downloads        | 42391731 |
+| # releases         | 8 |
+| # dependents       | 375 |
+| # downloads        | 78905080 |
 | # stars            | 10 |
 
 ## Links

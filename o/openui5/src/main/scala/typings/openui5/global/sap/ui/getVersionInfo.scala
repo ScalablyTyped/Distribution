@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui
 import typings.jquery.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.getVersionInfo")
 @js.native
 object getVersionInfo extends js.Object {
+  
   // Loads the version info file (resources/sap-ui-version.json):void;
   def apply(): Unit = js.native
   /**
@@ -22,4 +23,3 @@ object getVersionInfo extends js.Object {
   def apply(mOptions: String): js.Any | JQueryPromise[_] = js.native
   def apply(mOptions: js.Any): js.Any | JQueryPromise[_] = js.native
 }
-

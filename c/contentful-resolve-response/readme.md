@@ -4,15 +4,15 @@
 Typings are for version v0.1.2
 
 ## Library description:
-[![npm](https://img.shields.io/npm/v/contentful-resolve-response.svg)](https://www.npmjs.com/package/contentful-resolve-response) [![Build Status](https://travis-ci.org/contentful/contentful-resolve-response.svg?branch=master)](https://travis-ci.org/conte
+[![npm](https://img.shields.io/npm/v/contentful-resolve-response.svg)](https://www.npmjs.com/package/contentful-resolve-response)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | contentful-resolve-response |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 5971064 |
+| # releases         | 2 |
+| # dependents       | 5 |
+| # downloads        | 10186158 |
 | # stars            | 1 |
 
 ## Links

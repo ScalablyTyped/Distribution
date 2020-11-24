@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NewsContent extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
     * <code>sap.m.NewsContent</code>.When called, the context of the event handler (its <code>this</code>)
@@ -21,6 +22,7 @@ trait NewsContent extends Control {
     */
   def attachPress(oData: js.Any, fnFunction: js.Any): NewsContent = js.native
   def attachPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): NewsContent = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>press</code> event of this
     * <code>sap.m.NewsContent</code>.The passed function and listener object must match the ones used for
@@ -30,28 +32,33 @@ trait NewsContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPress(fnFunction: js.Any, oListener: js.Any): NewsContent = js.native
+  
   /**
     * Fires event <code>press</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePress(mArguments: js.Any): NewsContent = js.native
+  
   /**
     * Gets current value of property <code>contentText</code>.The content text.
     * @returns Value of property <code>contentText</code>
     */
   def getContentText(): String = js.native
+  
   /**
     * Gets current value of property <code>size</code>.Updates the size of the chart. If not set then the
     * default size is applied based on the device tile.Default value is <code>Auto</code>.
     * @returns Value of property <code>size</code>
     */
   def getSize(): Size = js.native
+  
   /**
     * Gets current value of property <code>subheader</code>.The subheader.
     * @returns Value of property <code>subheader</code>
     */
   def getSubheader(): String = js.native
+  
   /**
     * Sets a new value for property <code>size</code>.Updates the size of the chart. If not set then the
     * default size is applied based on the device tile.When called with a value of <code>null</code> or
@@ -61,6 +68,7 @@ trait NewsContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSize(sSize: Size): NewsContent = js.native
+  
   /**
     * Sets a new value for property <code>subheader</code>.The subheader.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -69,4 +77,3 @@ trait NewsContent extends Control {
     */
   def setSubheader(sSubheader: String): NewsContent = js.native
 }
-

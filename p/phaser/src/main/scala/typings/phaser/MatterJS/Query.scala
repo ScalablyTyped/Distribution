@@ -2,7 +2,7 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Query` module contains methods for performing collision queries.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Query extends js.Object
-

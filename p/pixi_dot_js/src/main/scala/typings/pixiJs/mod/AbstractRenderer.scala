@@ -3,7 +3,7 @@ package typings.pixiJs.mod
 import typings.pixiJs.anon.AutoDensity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The AbstractRenderer is the base for a PixiJS Renderer. It is extended by the {@link PIXI.CanvasRenderer}
@@ -21,4 +21,3 @@ class AbstractRenderer protected ()
   def this(system: String) = this()
   def this(system: String, options: AutoDensity) = this()
 }
-

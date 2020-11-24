@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.postcssValueParser.postcssValueParserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValueParser extends /**
@@ -13,12 +13,14 @@ trait ValueParser extends /**
   * @param value The value to parse
   */
 Instantiable1[/* value */ String, ParsedValue] {
+  
   /**
     * Parse a CSS value into a series of nodes to operate on
     *
     * @param value The value to parse
     */
   def apply(value: String): ParsedValue = js.native
+  
   def stringify(nodes: js.Array[Node]): String = js.native
   def stringify(nodes: js.Array[Node], custom: CustomStringifierCallback): String = js.native
   /**
@@ -30,6 +32,7 @@ Instantiable1[/* value */ String, ParsedValue] {
     */
   def stringify(nodes: Node): String = js.native
   def stringify(nodes: Node, custom: CustomStringifierCallback): String = js.native
+  
   /**
     * Decompose a CSS dimension into its numeric and unit part
     *
@@ -37,6 +40,7 @@ Instantiable1[/* value */ String, ParsedValue] {
     * @returns An object representing `number` and `unit` part of the dimension or `false` if the decomposing fails
     */
   def unit(value: String): Dimension | `false` = js.native
+  
   /**
     * Walk a series of nodes, applying a callback
     *
@@ -47,4 +51,3 @@ Instantiable1[/* value */ String, ParsedValue] {
   def walk(nodes: js.Array[Node], callback: WalkCallback): Unit = js.native
   def walk(nodes: js.Array[Node], callback: WalkCallback, bubble: Boolean): Unit = js.native
 }
-

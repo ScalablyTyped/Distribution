@@ -9,7 +9,7 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for SignerInfo ASN.1 structure of CMS SignedData
@@ -35,7 +35,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SignerInfo extends ASN1Object {
+  
   def addUnsigned(attr: Attribute): Unit = js.native
+  
   /**
     * set ContentType/MessageDigest/DigestAlgorithms for SignerInfo/SignedData
     * @param params JSON parameter to set content related field
@@ -61,7 +63,9 @@ trait SignerInfo extends ASN1Object {
     *                                  hashAlg: 'sha256'});
     */
   def setForContentAndHash(params: EciObj): Unit = js.native
+  
   def setSignerIdentifier(params: String): Unit = js.native
+  
   def sign(keyParam: String, sigAlg: String): Unit = js.native
   def sign(keyParam: E, sigAlg: String): Unit = js.native
   def sign(keyParam: DSA, sigAlg: String): Unit = js.native
@@ -69,4 +73,3 @@ trait SignerInfo extends ASN1Object {
   def sign(keyParam: JsonWebKey, sigAlg: String): Unit = js.native
   def sign(keyParam: RSAKey, sigAlg: String): Unit = js.native
 }
-

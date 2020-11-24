@@ -11,8 +11,8 @@ Mutator for setting a field as "touched" in 🏁 Final Form
 | Full name          | final-form-set-field-touched |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 86251 |
+| # dependents       | 8 |
+| # downloads        | 113341 |
 | # stars            | 0 |
 
 ## Links

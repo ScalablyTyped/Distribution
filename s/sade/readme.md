@@ -11,8 +11,8 @@ Smooth (CLI) operator 🎶
 | Full name          | sade |
 | Keywords           | cli, cli-app, commander, arguments, parser, yargs, argv |
 | # releases         | 12 |
-| # dependents       | 125 |
-| # downloads        | 1313939 |
+| # dependents       | 215 |
+| # downloads        | 3522000 |
 | # stars            | 2 |
 
 ## Links

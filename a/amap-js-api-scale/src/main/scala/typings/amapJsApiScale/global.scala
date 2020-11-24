@@ -3,13 +3,15 @@ package typings.amapJsApiScale
 import typings.amapJsApiScale.AMap.Scale.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object AMap extends js.Object {
+    
     /**
       * 比例尺插件
       */
@@ -18,8 +20,5 @@ object global extends js.Object {
       extends typings.amapJsApiScale.AMap.Scale {
       def this(options: Options) = this()
     }
-    
   }
-  
 }
-

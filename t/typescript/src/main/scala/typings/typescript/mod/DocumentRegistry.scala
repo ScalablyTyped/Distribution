@@ -2,7 +2,7 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The document registry represents a store of SourceFile objects that can be shared between
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DocumentRegistry extends js.Object {
+  
   /**
     * Request a stored SourceFile with a given fileName and compilationSettings.
     * The first call to acquire will call createLanguageServiceSourceFile to generate
@@ -48,6 +49,7 @@ trait DocumentRegistry extends js.Object {
     version: java.lang.String,
     scriptKind: ScriptKind
   ): SourceFile = js.native
+  
   def acquireDocumentWithKey(
     fileName: java.lang.String,
     path: Path,
@@ -65,7 +67,9 @@ trait DocumentRegistry extends js.Object {
     version: java.lang.String,
     scriptKind: ScriptKind
   ): SourceFile = js.native
+  
   def getKeyForCompilationSettings(settings: CompilerOptions): DocumentRegistryBucketKey = js.native
+  
   /**
     * Informs the DocumentRegistry that a file is not needed any longer.
     *
@@ -76,8 +80,11 @@ trait DocumentRegistry extends js.Object {
     * @param compilationSettings The compilation settings used to acquire the file
     */
   def releaseDocument(fileName: java.lang.String, compilationSettings: CompilerOptions): Unit = js.native
+  
   def releaseDocumentWithKey(path: Path, key: DocumentRegistryBucketKey): Unit = js.native
+  
   def reportStats(): java.lang.String = js.native
+  
   /**
     * Request an updated version of an already existing SourceFile with a given fileName
     * and compilationSettings. The update will in-turn call updateLanguageServiceSourceFile
@@ -103,6 +110,7 @@ trait DocumentRegistry extends js.Object {
     version: java.lang.String,
     scriptKind: ScriptKind
   ): SourceFile = js.native
+  
   def updateDocumentWithKey(
     fileName: java.lang.String,
     path: Path,
@@ -121,4 +129,3 @@ trait DocumentRegistry extends js.Object {
     scriptKind: ScriptKind
   ): SourceFile = js.native
 }
-

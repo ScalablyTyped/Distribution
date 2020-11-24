@@ -2,7 +2,7 @@ package typings.makerJs.global.MakerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * String-based enumeration of all paths types.
@@ -16,9 +16,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MakerJs.pathType")
 @js.native
 object pathType extends js.Object {
+  
   var Arc: String = js.native
+  
   var BezierSeed: String = js.native
+  
   var Circle: String = js.native
+  
   var Line: String = js.native
 }
-

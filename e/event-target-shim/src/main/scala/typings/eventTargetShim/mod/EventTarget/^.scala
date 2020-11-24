@@ -6,12 +6,11 @@ import typings.eventTargetShim.anon.EventTargetloose
 import typings.eventTargetShim.mod.EventTargetConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("event-target-shim", "EventTarget")
 @js.native
 class ^ () extends EventTargetloose
-
 @JSImport("event-target-shim", "EventTarget")
 @js.native
 object ^
@@ -31,6 +30,7 @@ object ^
   */
 Instantiable0[typings.eventTargetShim.mod.EventTarget[EventDefinition, EventDefinition, Mode]]) with Instantiable0[EventTargetloose]
     ] {
+  
   /**
     * Define an `EventTarget` constructor with attribute events and detailed event definition.
     *
@@ -60,4 +60,3 @@ Instantiable0[typings.eventTargetShim.mod.EventTarget[EventDefinition, EventDefi
     */
   def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = js.native
 }
-

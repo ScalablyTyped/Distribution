@@ -2,14 +2,14 @@ package typings.sharepoint.CUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MenuLauncher
   extends Control
      with IModalController
-
 object MenuLauncher {
+  
   @scala.inline
   def apply(
     createComponentForDisplayMode: String => js.Any,
@@ -23,4 +23,3 @@ object MenuLauncher {
     __obj.asInstanceOf[MenuLauncher]
   }
 }
-

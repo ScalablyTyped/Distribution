@@ -3,31 +3,36 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a provider of asymmetric (public) key algorithms. For more information, see Cryptographic keys. */
 @js.native
 trait AsymmetricKeyAlgorithmProvider extends js.Object {
+  
   /** Gets the name of the open asymmetric algorithm. */
   var algorithmName: String = js.native
+  
   /**
     * Creates a public/private key pair.
     * @param keySize Size, in bits, of the key. Typical key sizes are 512, 1024, 2048, or 4096 bits.
     * @return Represents the asymmetric key pair.
     */
   def createKeyPair(keySize: Double): CryptographicKey = js.native
+  
   /**
     * Creates a public/private key pair using a curve name.
     * @param curveName The name of the curve.
     * @return Represents the asymmetric key pair.
     */
   def createKeyPairWithCurveName(curveName: String): CryptographicKey = js.native
+  
   /**
     * Creates a public/private key pair using curve parameters.
     * @param parameters The curve parameters.
     * @return Represents the asymmetric key pair.
     */
   def createKeyPairWithCurveParameters(parameters: js.Array[Double]): CryptographicKey = js.native
+  
   /**
     * Imports a public/private key pair from a buffer.
     * @param keyBlob Buffer that contains the key pair to import.
@@ -41,6 +46,7 @@ trait AsymmetricKeyAlgorithmProvider extends js.Object {
     * @return Represents the imported key pair.
     */
   def importKeyPair(keyBlob: IBuffer, BlobType: CryptographicPrivateKeyBlobType): CryptographicKey = js.native
+  
   /**
     * Imports a public key into a buffer.
     * @param keyBlob Buffer that contains the key to import.
@@ -55,4 +61,3 @@ trait AsymmetricKeyAlgorithmProvider extends js.Object {
     */
   def importPublicKey(keyBlob: IBuffer, BlobType: CryptographicPublicKeyBlobType): CryptographicKey = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.node.Buffer
 import typings.node.childProcessMod.ExecException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gfc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(): js.Promise[Stderr] = js.native
   def apply(cwd: String): js.Promise[Stderr] = js.native
   def apply(
@@ -34,4 +35,3 @@ object ^ extends js.Object {
   ): Unit = js.native
   def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = js.native
 }
-

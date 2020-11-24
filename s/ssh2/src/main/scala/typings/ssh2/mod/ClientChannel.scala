@@ -6,16 +6,11 @@ import typings.ssh2.ssh2Strings.close
 import typings.ssh2.ssh2Strings.exit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientChannel extends Channel {
-  /** Indicates whether this is a server or client channel. */
-  @JSName("server")
-  var server_ClientChannel: `false` = js.native
-  /** Standard error for the Channel. */
-  @JSName("stderr")
-  var stderr_ClientChannel: Readable = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
@@ -39,12 +34,18 @@ trait ClientChannel extends Channel {
       Unit
     ]
   ): this.type = js.native
+  
+  /** Indicates whether this is a server or client channel. */
+  @JSName("server")
+  var server_ClientChannel: `false` = js.native
+  
   /**
     * Lets the server know that the local terminal window has been resized.
     *
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def setWindow(rows: Double, cols: Double, height: Double, width: Double): Boolean = js.native
+  
   /**
     * Sends a POSIX signal to the current process on the server. Valid signal names are:
     * 'ABRT', 'ALRM', 'FPE', 'HUP', 'ILL', 'INT', 'KILL', 'PIPE', 'QUIT', 'SEGV', 'TERM',
@@ -58,5 +59,8 @@ trait ClientChannel extends Channel {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def signal(signalName: String): Boolean = js.native
+  
+  /** Standard error for the Channel. */
+  @JSName("stderr")
+  var stderr_ClientChannel: Readable = js.native
 }
-

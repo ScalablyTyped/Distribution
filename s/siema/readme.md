@@ -10,13 +10,13 @@ Lightweight and simple carousel with no dependencies
 | ------------------ | :-------------: |
 | Full name          | siema |
 | Keywords           | slider, carousel, lightweight |
-| # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 637388 |
+| # releases         | 0 |
+| # dependents       | 20 |
+| # downloads        | 725076 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://pawelgrzybek.com/siema)
+- [Homepage](https://github.com/pawelgrzybek/siema#readme)
 - [Bugs](https://github.com/pawelgrzybek/siema/issues)
 - [Repository](https://github.com/pawelgrzybek/siema)
 - [Npm](https://www.npmjs.com/package/siema)

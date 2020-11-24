@@ -6,11 +6,12 @@ import typings.relayRuntime.relayProfilerMod.Handler
 import typings.relayRuntime.relayProfilerMod.ProfileHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime", "RelayProfiler")
 @js.native
 object RelayProfiler extends js.Object {
+  
   /**
     * Attaches a handler to all methods instrumented with the supplied name.
     *
@@ -28,19 +29,23 @@ object RelayProfiler extends js.Object {
     *
     */
   def attachAggregateHandler(name: String, handler: Handler): Unit = js.native
+  
   /**
     * Attaches a handler to profiles with the supplied name. You can also
     * attach to the special name '*' which is a catch all.
     */
   def attachProfileHandler(name: String, handler: ProfileHandler): Unit = js.native
+  
   /**
     * Detaches a handler attached via `attachAggregateHandler`.
     */
   def detachAggregateHandler(name: String, handler: Handler): Unit = js.native
+  
   /**
     * Detaches a handler attached via `attachProfileHandler`.
     */
   def detachProfileHandler(name: String, handler: ProfileHandler): Unit = js.native
+  
   /**
     * Wraps the supplied function with one that provides the `attachHandler` and
     * `detachHandler` methods. Example usage:
@@ -54,6 +59,7 @@ object RelayProfiler extends js.Object {
     * in the course of executing another handler.
     */
   def instrument[T /* <: js.Function0[Unit] */](name: String, originalFunction: T): T = js.native
+  
   /**
     * Instruments methods on a class or object. This re-assigns the method in
     * order to preserve function names in stack traces (which are detected by
@@ -70,6 +76,7 @@ object RelayProfiler extends js.Object {
     * `attachHandler` and `detachHandler` methods.
     */
   def instrumentMethods(`object`: js.Function0[Unit | js.Object], names: StringDictionary[String]): Unit = js.native
+  
   /**
     * Instruments profiling for arbitrarily asynchronous code by a name.
     *
@@ -86,4 +93,3 @@ object RelayProfiler extends js.Object {
   def profile(name: String): Stop = js.native
   def profile(name: String, state: js.Any): Stop = js.native
 }
-

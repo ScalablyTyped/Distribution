@@ -52,11 +52,12 @@ import typings.leaflet.leafletStrings.zoomlevelschange
 import typings.leaflet.leafletStrings.zoomstart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Evented")
 @js.native
 abstract class Evented () extends Class {
+  
   /**
     * Alias for on(...)
     *
@@ -274,11 +275,13 @@ abstract class Evented () extends Class {
   def addEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+  
   // tslint:enable:unified-signatures
   /**
     * Adds an event parent - an Evented that will receive propagated events
     */
   def addEventParent(obj: Evented): this.type = js.native
+  
   /**
     * Alias for once(...)
     *
@@ -493,6 +496,7 @@ abstract class Evented () extends Class {
   def addOneTimeEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
   @JSName("addOneTimeEventListener")
   def addOneTimeEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+  
   // tslint:enable:unified-signatures
   /**
     * Alias for off()
@@ -500,6 +504,7 @@ abstract class Evented () extends Class {
     * Removes all listeners to all events on the object.
     */
   def clearAllEventListeners(): this.type = js.native
+  
   // tslint:enable:unified-signatures
   /**
     * Fires an event of the specified type. You can optionally provide a data
@@ -510,6 +515,7 @@ abstract class Evented () extends Class {
   def fire(`type`: String, data: js.UndefOr[scala.Nothing], propagate: Boolean): this.type = js.native
   def fire(`type`: String, data: js.Any): this.type = js.native
   def fire(`type`: String, data: js.Any, propagate: Boolean): this.type = js.native
+  
   // tslint:enable:unified-signatures
   /**
     * Alias for fire(...)
@@ -522,16 +528,19 @@ abstract class Evented () extends Class {
   def fireEvent(`type`: String, data: js.UndefOr[scala.Nothing], propagate: Boolean): this.type = js.native
   def fireEvent(`type`: String, data: js.Any): this.type = js.native
   def fireEvent(`type`: String, data: js.Any, propagate: Boolean): this.type = js.native
+  
   /**
     * Alias for listens(...)
     *
     * Returns true if a particular event type has any listeners attached to it.
     */
   def hasEventListeners(`type`: String): Boolean = js.native
+  
   /**
     * Returns true if a particular event type has any listeners attached to it.
     */
   def listens(`type`: String): Boolean = js.native
+  
   /**
     * Removes all listeners to all events on the object.
     */
@@ -798,6 +807,7 @@ abstract class Evented () extends Class {
   def off_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
   @JSName("off")
   def off_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
+  
   /**
     * Adds a set of type/listener pairs, e.g. {click: onClick, mousemove: onMouseMove}
     */
@@ -1011,6 +1021,7 @@ abstract class Evented () extends Class {
   def on_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
   @JSName("on")
   def on_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+  
   /**
     * Behaves as on(...), except the listener will only get fired once and then removed.
     */
@@ -1221,6 +1232,7 @@ abstract class Evented () extends Class {
   def once_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
   @JSName("once")
   def once_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+  
   /**
     * Alias for off(...)
     *
@@ -1486,9 +1498,9 @@ abstract class Evented () extends Class {
   def removeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
+  
   /**
     * Removes an event parent, so it will stop receiving propagated events
     */
   def removeEventParent(obj: Evented): this.type = js.native
 }
-

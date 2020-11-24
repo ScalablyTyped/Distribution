@@ -1,7 +1,7 @@
 
 # Scala.js typings for umzug
 
-Typings are for version v2.2.0
+Typings are for version v2.3.0
 
 ## Library description:
 Framework agnostic migration tool for Node.JS
@@ -10,9 +10,9 @@ Framework agnostic migration tool for Node.JS
 | ------------------ | :-------------: |
 | Full name          | umzug |
 | Keywords           | migrate, migration, migrations, sequelize |
-| # releases         | 2 |
-| # dependents       | 118 |
-| # downloads        | 7829093 |
+| # releases         | 11 |
+| # dependents       | 162 |
+| # downloads        | 14162239 |
 | # stars            | 4 |
 
 ## Links

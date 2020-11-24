@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Extern Game Object is a special type of Game Object that allows you to pass
@@ -32,4 +32,3 @@ class Extern protected ()
     */
   def this(scene: Scene) = this()
 }
-

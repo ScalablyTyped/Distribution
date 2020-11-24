@@ -10,9 +10,9 @@ HTTP Server framework
 | ------------------ | :-------------: |
 | Full name          | hapi |
 | Keywords           | framework, http, api, web |
-| # releases         | 32 |
-| # dependents       | 838 |
-| # downloads        | 11069047 |
+| # releases         | 20 |
+| # dependents       | 829 |
+| # downloads        | 8912551 |
 | # stars            | 349 |
 
 ## Links

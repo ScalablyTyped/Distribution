@@ -3,16 +3,17 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playcanvas", "createCapsule")
 @js.native
 object createCapsule extends js.Object {
+  
   /**
     * Creates a procedural capsule-shaped mesh.
     *
     * The size, shape and tesselation properties of the capsule can be controlled via function
-    * parameters. By default, the function will create a capsule standing vertically centred
+    * parameters. By default, the function will create a capsule standing vertically centered
     * on the XZ-plane with a radius of 0.25, a height of 1.0, 1 height segment and 10 cap
     * segments.
     *
@@ -29,4 +30,3 @@ object createCapsule extends js.Object {
   def apply(device: typings.playcanvas.pc.GraphicsDevice): typings.playcanvas.pc.Mesh = js.native
   def apply(device: typings.playcanvas.pc.GraphicsDevice, opts: Height): typings.playcanvas.pc.Mesh = js.native
 }
-

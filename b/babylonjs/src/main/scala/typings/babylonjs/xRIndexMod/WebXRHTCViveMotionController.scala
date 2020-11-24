@@ -2,10 +2,10 @@ package typings.babylonjs.xRIndexMod
 
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandness
+import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRHTCViveMotionController")
 @js.native
@@ -15,22 +15,26 @@ class WebXRHTCViveMotionController protected ()
     * Create a new Vive motion controller object
     * @param scene the scene to use to create this controller
     * @param gamepadObject the corresponding gamepad object
-    * @param handness the handness of the controller
+    * @param handedness the handedness of the controller
     */
-  def this(scene: Scene, gamepadObject: IMinimalMotionControllerObject, handness: MotionControllerHandness) = this()
+  def this(
+    scene: Scene,
+    gamepadObject: IMinimalMotionControllerObject,
+    handedness: MotionControllerHandedness
+  ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/XR/index", "WebXRHTCViveMotionController")
 @js.native
 object WebXRHTCViveMotionController extends js.Object {
+  
   /**
     * The base url used to load the left and right controller models
     */
   var MODEL_BASE_URL: String = js.native
+  
   /**
     * File name for the controller model.
     */
   var MODEL_FILENAME: String = js.native
 }
-

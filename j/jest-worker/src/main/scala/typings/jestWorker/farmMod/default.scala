@@ -2,7 +2,7 @@ package typings.jestWorker.farmMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest-worker/build/Farm", JSImport.Default)
 @js.native
@@ -14,4 +14,3 @@ class default protected () extends Farm {
     computeWorkerKey: js.UndefOr[js.Function2[/* method */ String, /* repeated */ js.Any, String | Null]]
   ) = this()
 }
-

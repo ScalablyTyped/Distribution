@@ -5,7 +5,7 @@ import typings.winjs.anon.Bottom
 import typings.winjs.anon.Compact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Interfaces
 //#region Objects
@@ -27,22 +27,23 @@ class AppBar ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.AppBar")
 @js.native
 object AppBar extends js.Object {
+  
   /**
     * Display options for the AppBar when closed.
     **/
   var ClosedDisplayMode: Compact = js.native
+  
   /**
     * Display options for AppBar placement in relation to the main view.
     */
   var Placement: Bottom = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

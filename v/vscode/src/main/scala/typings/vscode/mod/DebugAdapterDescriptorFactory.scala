@@ -2,10 +2,11 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DebugAdapterDescriptorFactory extends js.Object {
+  
   /**
     * 'createDebugAdapterDescriptor' is called at the start of a debug session to provide details about the debug adapter to use.
     * These details must be returned as objects of type [DebugAdapterDescriptor](#DebugAdapterDescriptor).
@@ -26,4 +27,3 @@ trait DebugAdapterDescriptorFactory extends js.Object {
   def createDebugAdapterDescriptor(session: DebugSession): ProviderResult[DebugAdapterDescriptor] = js.native
   def createDebugAdapterDescriptor(session: DebugSession, executable: DebugAdapterExecutable): ProviderResult[DebugAdapterDescriptor] = js.native
 }
-

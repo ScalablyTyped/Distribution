@@ -12,7 +12,7 @@ Helpers for testing Ember.js applications
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 1056760 |
+| # downloads        | 787606 |
 | # stars            | 0 |
 
 ## Links

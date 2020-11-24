@@ -12,7 +12,7 @@ A low-level API for defining equality.
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 12 |
-| # downloads        | 21833 |
+| # downloads        | 29652 |
 | # stars            | 0 |
 
 ## Links

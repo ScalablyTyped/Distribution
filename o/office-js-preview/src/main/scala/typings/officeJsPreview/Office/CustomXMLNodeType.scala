@@ -2,17 +2,17 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CustomXMLNodeType extends js.Object
-
 /**
   * Specifies the type of the XML node.
   */
 @JSGlobal("Office.CustomXMLNodeType")
 @js.native
 object CustomXMLNodeType extends js.Object {
+  
   /**
     * The node is an attribute.
     */
@@ -54,6 +54,4 @@ object CustomXMLNodeType extends js.Object {
     */
   @js.native
   sealed trait Text extends CustomXMLNodeType
-  
 }
-

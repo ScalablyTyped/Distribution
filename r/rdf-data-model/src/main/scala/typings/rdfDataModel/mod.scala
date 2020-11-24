@@ -9,22 +9,29 @@ import typings.rdfJs.mod.Term
 import typings.rdfJs.mod.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rdf-data-model", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val defaultGraphInstance: DefaultGraph = js.native
+  
   def blankNode(): BlankNode = js.native
   def blankNode(value: String): BlankNode = js.native
+  
   def defaultGraph(): DefaultGraph = js.native
+  
+  val defaultGraphInstance: DefaultGraph = js.native
+  
   def literal(value: String): Literal = js.native
   def literal(value: String, languageOrDatatype: String): Literal = js.native
   def literal(value: String, languageOrDatatype: NamedNode[String]): Literal = js.native
+  
   def namedNode(value: String): NamedNode[String] = js.native
+  
   def quad(subject: Term, predicate: Term, `object`: Term): Quad = js.native
   def quad(subject: Term, predicate: Term, `object`: Term, graph: Term): Quad = js.native
+  
   def triple(subject: Term, predicate: Term, `object`: Term): Quad = js.native
+  
   def variable(value: String): Variable = js.native
 }
-

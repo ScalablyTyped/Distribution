@@ -3,18 +3,11 @@ package typings.nodePowershell.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NodePowershell extends js.Object {
-  /**
-    * An array containing the command history ever added to the shell instance.
-    */
-  var history: js.Array[String] = js.native
-  /**
-    * An object containing the sdtio (in,out,err) [stream.Readable] of the PowerShell Instance.
-    */
-  var streams: ShellStream = js.native
+  
   /**
     * Adds a command to the end of the pipeline of the shell object.
     * @param {string} required - PowerShell command - PowerShell script
@@ -23,16 +16,24 @@ trait NodePowershell extends js.Object {
     */
   def addCommand(command: String): js.Promise[js.Array[String]] = js.native
   def addCommand(command: String, params: js.Array[String | StringDictionary[String]]): js.Promise[js.Array[String]] = js.native
+  
   /**
     * Releases all resources used by the shell object and closes the PowerShell child_process.
     * @returns Promise with the error message.
     */
   def dispose(): js.Promise[String] = js.native
+  
+  /**
+    * An array containing the command history ever added to the shell instance.
+    */
+  var history: js.Array[String] = js.native
+  
   /**
     * Runs the commands of the shell object pipeline.
     * @returns Promise with the command output.
     */
   def invoke(): js.Promise[String] = js.native
+  
   /**
     * Listens to events emitted from the shell.
     * @param eventName required - Possible events:
@@ -42,5 +43,9 @@ trait NodePowershell extends js.Object {
     * @param callback required - Callback function to be called when the event emits.
     */
   def on(eventName: String, callback: js.Function1[/* output */ String, Unit]): Unit = js.native
+  
+  /**
+    * An object containing the sdtio (in,out,err) [stream.Readable] of the PowerShell Instance.
+    */
+  var streams: ShellStream = js.native
 }
-

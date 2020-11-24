@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.PIXI.GD8Symmetry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implements the dihedral group D8, which is similar to
@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.groupD8")
 @js.native
 object groupD8 extends js.Object {
+  
   /**
     * | Rotation | Direction |
     * |----------|-----------|
@@ -42,6 +43,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var E: GD8Symmetry = js.native
+  
   /**
     * Reflection about the main diagonal.
     *
@@ -49,6 +51,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var MAIN_DIAGONAL: GD8Symmetry = js.native
+  
   /**
     * Reflection about X-axis.
     *
@@ -56,6 +59,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var MIRROR_HORIZONTAL: GD8Symmetry = js.native
+  
   /**
     * Reflection about Y-axis.
     *
@@ -63,6 +67,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var MIRROR_VERTICAL: GD8Symmetry = js.native
+  
   /**
     * | Rotation    | Direction    |
     * |-------------|--------------|
@@ -72,6 +77,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var N: GD8Symmetry = js.native
+  
   /**
     * | Rotation    | Direction    |
     * |-------------|--------------|
@@ -81,6 +87,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var NE: GD8Symmetry = js.native
+  
   /**
     * | Rotation    | Direction    |
     * |-------------|--------------|
@@ -90,6 +97,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var NW: GD8Symmetry = js.native
+  
   /**
     * Reflection about reverse diagonal.
     *
@@ -97,6 +105,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var REVERSE_DIAGONAL: GD8Symmetry = js.native
+  
   /**
     * | Rotation | Direction |
     * |----------|-----------|
@@ -106,6 +115,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var S: GD8Symmetry = js.native
+  
   /**
     * | Rotation | Direction |
     * |----------|-----------|
@@ -115,6 +125,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var SE: GD8Symmetry = js.native
+  
   /**
     * | Rotation | Direction |
     * |----------|-----------|
@@ -124,6 +135,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var SW: GD8Symmetry = js.native
+  
   /**
     * | Rotation | Direction |
     * |----------|-----------|
@@ -133,6 +145,7 @@ object groupD8 extends js.Object {
     * @constant {PIXI.GD8Symmetry}
     */
   var W: GD8Symmetry = js.native
+  
   /**
     * Composes the two D8 operations.
     *
@@ -158,6 +171,7 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} Composed operation
     */
   def add(rotationSecond: GD8Symmetry, rotationFirst: GD8Symmetry): GD8Symmetry = js.native
+  
   /**
     * Approximates the vector `V(dx,dy)` into one of the
     * eight directions provided by `groupD8`.
@@ -169,6 +183,7 @@ object groupD8 extends js.Object {
     *  one of the eight symmetries.
     */
   def byDirection(dx: Double, dy: Double): GD8Symmetry = js.native
+  
   /**
     * @memberof PIXI.groupD8
     * @param {PIXI.GD8Symmetry} rotation - symmetry whose opposite
@@ -177,6 +192,7 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} The opposite symmetry of `rotation`
     */
   def inv(rotation: GD8Symmetry): GD8Symmetry = js.native
+  
   /**
     * Checks if the rotation angle is vertical, i.e. south
     * or north. It doesn't work for reflections.
@@ -186,6 +202,7 @@ object groupD8 extends js.Object {
     * @returns {boolean} Whether or not the direction is vertical
     */
   def isVertical(rotation: GD8Symmetry): Boolean = js.native
+  
   /**
     * Helps sprite to compensate texture packer rotation.
     *
@@ -196,6 +213,7 @@ object groupD8 extends js.Object {
     * @param {number} ty - sprite anchoring
     */
   def matrixAppendRotationInv(matrix: typings.pixiJs.PIXI.Matrix, rotation: GD8Symmetry, tx: Double, ty: Double): Unit = js.native
+  
   /**
     * Adds 180 degrees to rotation, which is a commutative
     * operation.
@@ -205,6 +223,7 @@ object groupD8 extends js.Object {
     * @returns {number} Rotated number
     */
   def rotate180(rotation: Double): Double = js.native
+  
   /**
     * Reverse of `add`.
     *
@@ -214,6 +233,7 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} Result
     */
   def sub(rotationSecond: GD8Symmetry, rotationFirst: GD8Symmetry): GD8Symmetry = js.native
+  
   /**
     * @memberof PIXI.groupD8
     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
@@ -221,6 +241,7 @@ object groupD8 extends js.Object {
     *    after rotating the axes.
     */
   def uX(ind: GD8Symmetry): GD8Symmetry = js.native
+  
   /**
     * @memberof PIXI.groupD8
     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
@@ -228,6 +249,7 @@ object groupD8 extends js.Object {
     *    after rotating the axes.
     */
   def uY(ind: GD8Symmetry): GD8Symmetry = js.native
+  
   /**
     * @memberof PIXI.groupD8
     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
@@ -235,6 +257,7 @@ object groupD8 extends js.Object {
     *    after rotating the axes.
     */
   def vX(ind: GD8Symmetry): GD8Symmetry = js.native
+  
   /**
     * @memberof PIXI.groupD8
     * @param {PIXI.GD8Symmetry} ind - sprite rotation angle.
@@ -243,4 +266,3 @@ object groupD8 extends js.Object {
     */
   def vY(ind: GD8Symmetry): GD8Symmetry = js.native
 }
-

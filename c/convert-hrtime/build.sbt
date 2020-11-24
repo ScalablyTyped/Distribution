@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "convert-hrtime"
-version := "3.0.0-227421"
+version := "3.0.0-b284ab"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

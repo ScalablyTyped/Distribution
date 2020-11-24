@@ -5,7 +5,7 @@ import typings.jestHasteMap.anon.TypeofHasteModuleMap
 import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HasteMap is a JavaScript implementation of Facebook's haste module system.
@@ -90,17 +90,19 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends HasteMap {
   def this(options: Options) = this()
 }
-
 @JSImport("jest-haste-map", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var DuplicateError: Instantiable2[
     /* mockPath1 */ String, 
     /* mockPath2 */ String, 
     typings.jestHasteMap.mod.DuplicateError
   ] = js.native
+  
   var H: HType = js.native
+  
   var ModuleMap: TypeofHasteModuleMap = js.native
+  
   def getCacheFilePath(tmpdir: Path, name: String, extra: String*): String = js.native
 }
-

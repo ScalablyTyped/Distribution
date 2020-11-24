@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TDCP Root Folder is the root container for all other TDCP contents.
@@ -36,8 +36,8 @@ trait TransientDocumentsRootContent
      with XPropertySetInfoChangeNotifier
      with XCommandInfoChangeNotifier
      with XChild
-
 object TransientDocumentsRootContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -72,4 +72,3 @@ object TransientDocumentsRootContent {
     __obj.asInstanceOf[TransientDocumentsRootContent]
   }
 }
-

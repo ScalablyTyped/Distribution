@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "ses.ReceiptRule")
 @js.native
@@ -23,11 +23,11 @@ class ReceiptRule protected ()
   def this(name: String, args: ReceiptRuleArgs) = this()
   def this(name: String, args: ReceiptRuleArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "ses.ReceiptRule")
 @js.native
 object ReceiptRule extends js.Object {
+  
   /**
     * Get an existing ReceiptRule resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object ReceiptRule extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.receiptRuleMod.ReceiptRule = js.native
   def get(name: String, id: Input[ID], state: ReceiptRuleState): typings.pulumiAws.receiptRuleMod.ReceiptRule = js.native
   def get(name: String, id: Input[ID], state: ReceiptRuleState, opts: CustomResourceOptions): typings.pulumiAws.receiptRuleMod.ReceiptRule = js.native
+  
   /**
     * Returns true if the given object is an instance of ReceiptRule.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRule.ReceiptRule */ Boolean = js.native
 }
-

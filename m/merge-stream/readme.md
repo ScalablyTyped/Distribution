@@ -11,8 +11,8 @@ Create a stream that emits events from multiple other streams
 | Full name          | merge-stream |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 561 |
-| # downloads        | 243441401 |
+| # dependents       | 616 |
+| # downloads        | 450955768 |
 | # stars            | 57 |
 
 ## Links

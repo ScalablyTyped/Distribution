@@ -10,9 +10,9 @@ The pirate bay client
 | ------------------ | :-------------: |
 | Full name          | thepiratebay |
 | Keywords           | thepiratebay, pirate bay, torrent, api, client, scraper |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 20 |
-| # downloads        | 29652 |
+| # downloads        | 35199 |
 | # stars            | 11 |
 
 ## Links

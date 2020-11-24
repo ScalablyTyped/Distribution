@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Dicomstores$Dicomweb")
 @js.native
 class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var studies: ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.searchForInstances
     * @desc SearchForInstances returns a list of matching instances. See
@@ -51,6 +52,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.searchForSeries
     * @desc SearchForSeries returns a list of matching series. See
@@ -88,6 +90,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.searchForStudies
     * @desc SearchForStudies returns a list of matching studies. See
@@ -125,6 +128,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.dicomWeb.storeInstances
     * @desc StoreInstances stores DICOM instances associated with study
@@ -164,5 +168,6 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
+  var studies: ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudies = js.native
 }
-

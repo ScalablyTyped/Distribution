@@ -2,7 +2,7 @@ package typings.winjs.mod.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
@@ -19,14 +19,13 @@ class CellSpanningLayout ()
   extends typings.winjs.WinJS.UI.CellSpanningLayout {
   def this(options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.CellSpanningLayout")
 @js.native
 object CellSpanningLayout extends js.Object {
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

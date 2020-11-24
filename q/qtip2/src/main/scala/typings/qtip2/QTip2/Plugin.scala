@@ -65,11 +65,11 @@ import typings.qtip2.qtip2Strings.toggle
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Plugin extends js.Object {
-  var defaults: QTipOptions = js.native
+  
   def apply(): JQuery = js.native
   def apply(methodName: String): js.Any = js.native
   def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
@@ -238,5 +238,6 @@ trait Plugin extends js.Object {
   def apply(methodName: toggle, state: Boolean): JQuery = js.native
   def apply(methodName: toggle, state: Boolean, event: Event): JQuery = js.native
   def apply(options: QTipOptions): JQuery = js.native
+  
+  var defaults: QTipOptions = js.native
 }
-

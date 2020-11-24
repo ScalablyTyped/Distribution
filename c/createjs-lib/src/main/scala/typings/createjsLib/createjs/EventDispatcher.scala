@@ -4,10 +4,11 @@ import typings.createjsLib.anon.HandleEvent
 import typings.createjsLib.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventDispatcher extends js.Object {
+  
   // methods
   def addEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
   def addEventListener(
@@ -19,13 +20,16 @@ trait EventDispatcher extends js.Object {
   def addEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): js.Object = js.native
   def addEventListener(`type`: String, listener: `0`): js.Object = js.native
   def addEventListener(`type`: String, listener: `0`, useCapture: Boolean): js.Object = js.native
+  
   def dispatchEvent(eventObj: String): Boolean = js.native
   def dispatchEvent(eventObj: String, target: js.Object): Boolean = js.native
   def dispatchEvent(eventObj: js.Object): Boolean = js.native
   def dispatchEvent(eventObj: js.Object, target: js.Object): Boolean = js.native
   def dispatchEvent(eventObj: Event): Boolean = js.native
   def dispatchEvent(eventObj: Event, target: js.Object): Boolean = js.native
+  
   def hasEventListener(`type`: String): Boolean = js.native
+  
   def off(`type`: String, listener: js.Function): Unit = js.native
   def off(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = js.native
   def off(
@@ -38,6 +42,7 @@ trait EventDispatcher extends js.Object {
   def off(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = js.native
   def off(`type`: String, listener: `0`): Unit = js.native
   def off(`type`: String, listener: `0`, useCapture: Boolean): Unit = js.native
+  
    // It is necessary for "arguments.callee"
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
   def on(
@@ -306,8 +311,10 @@ trait EventDispatcher extends js.Object {
   ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+  
   def removeAllEventListeners(): Unit = js.native
   def removeAllEventListeners(`type`: String): Unit = js.native
+  
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = js.native
   def removeEventListener(
@@ -320,6 +327,6 @@ trait EventDispatcher extends js.Object {
   def removeEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = js.native
   def removeEventListener(`type`: String, listener: `0`): Unit = js.native
   def removeEventListener(`type`: String, listener: `0`, useCapture: Boolean): Unit = js.native
+  
   def willTrigger(`type`: String): Boolean = js.native
 }
-

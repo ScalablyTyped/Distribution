@@ -10,9 +10,9 @@ Little switch-case React component to render nested components.
 | ------------------ | :-------------: |
 | Full name          | react-switch-case |
 | Keywords           | react, react-component, state, ui |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 22116 |
+| # downloads        | 23734 |
 | # stars            | 0 |
 
 ## Links

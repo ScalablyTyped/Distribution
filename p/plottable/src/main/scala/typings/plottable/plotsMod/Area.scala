@@ -2,7 +2,7 @@ package typings.plottable.plotsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots", "Area")
 @js.native
@@ -13,11 +13,10 @@ import scala.scalajs.js.annotation._
   */
 class Area[X] ()
   extends typings.plottable.areaPlotMod.Area[X]
-
 /* static members */
 @JSImport("plottable/build/src/plots", "Area")
 @js.native
 object Area extends js.Object {
+  
   var _Y0_KEY: js.Any = js.native
 }
-

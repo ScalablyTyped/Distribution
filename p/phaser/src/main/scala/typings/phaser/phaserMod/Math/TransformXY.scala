@@ -3,11 +3,12 @@ package typings.phaser.phaserMod.Math
 import typings.phaser.Phaser.Geom.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Math.TransformXY")
 @js.native
 object TransformXY extends js.Object {
+  
   /**
     * Takes the `x` and `y` coordinates and transforms them into the same space as
     * defined by the position, rotation and scale values.
@@ -60,4 +61,3 @@ object TransformXY extends js.Object {
     output: typings.phaser.Phaser.Math.Vector2
   ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = js.native
 }
-

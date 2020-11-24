@@ -12,7 +12,7 @@ import typings.ionic.definitionsMod.Snapshot
 import typings.ionic.httpMod.ResourceClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/snapshot", "SnapshotClient")
 @js.native
@@ -21,10 +21,14 @@ class SnapshotClient protected ()
      with ResourceClientLoad[Snapshot]
      with ResourceClientPaginate[Snapshot] {
   def this(hasClientAppToken: SnapshotClientDeps) = this()
+  
   var app: IdString = js.native
+  
   var client: IClient = js.native
-  var token: String = js.native
+  
   def load(id: String): js.Promise[Snapshot] = js.native
+  
   def paginate(args: PartialPaginateArgsResponGuard): IPaginator[Response[js.Array[Snapshot]], PaginatorState] = js.native
+  
+  var token: String = js.native
 }
-

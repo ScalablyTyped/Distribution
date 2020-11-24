@@ -2,10 +2,11 @@ package typings.jqueryJoyride.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Joyride extends js.Object {
+  
   /**
     * Default function, no options
     * @method
@@ -28,4 +29,3 @@ trait Joyride extends js.Object {
     */
   def apply(options: JoyrideOptions): JQuery = js.native
 }
-

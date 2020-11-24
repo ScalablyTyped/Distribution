@@ -3,11 +3,12 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "classPrivateMethod")
 @js.native
 object classPrivateMethod_set extends js.Object {
+  
   def apply(
     kind: set,
     key: PrivateName_,
@@ -22,4 +23,3 @@ object classPrivateMethod_set extends js.Object {
     _static: Boolean
   ): ClassPrivateMethod_ = js.native
 }
-

@@ -5,17 +5,17 @@ import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver", "types.TimeUuid")
 @js.native
 class TimeUuid ()
   extends typings.cassandraDriver.typesMod.types.TimeUuid
-
 /* static members */
 @JSImport("cassandra-driver", "types.TimeUuid")
 @js.native
 object TimeUuid extends js.Object {
+  
   def fromDate(date: Date): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
@@ -62,9 +62,13 @@ object TimeUuid extends js.Object {
     clockId: Buffer,
     callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]
   ): Unit = js.native
+  
   def fromString(value: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  
   def max(date: Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  
   def min(date: Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  
   def now(): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def now(callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]): Unit = js.native
   def now(nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
@@ -94,4 +98,3 @@ object TimeUuid extends js.Object {
     callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]
   ): Unit = js.native
 }
-

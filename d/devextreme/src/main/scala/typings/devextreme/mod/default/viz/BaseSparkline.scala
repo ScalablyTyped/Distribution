@@ -5,7 +5,7 @@ import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "viz.BaseSparkline")
 @js.native
@@ -22,4 +22,3 @@ class BaseSparkline protected ()
     options: BaseSparklineOptions[typings.devextreme.mod.DevExpress.viz.BaseSparkline]
   ) = this()
 }
-

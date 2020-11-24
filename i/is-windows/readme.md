@@ -10,9 +10,9 @@ Returns true if the platform is windows. UMD module, works with node.js, commonj
 | ------------------ | :-------------: |
 | Full name          | is-windows |
 | Keywords           | check, cywin, is, is-windows, nix, operating system, os, platform, process, unix, win, win32, windows |
-| # releases         | 2 |
-| # dependents       | 154 |
-| # downloads        | 446000070 |
+| # releases         | 0 |
+| # dependents       | 225 |
+| # downloads        | 605724885 |
 | # stars            | 3 |
 
 ## Links

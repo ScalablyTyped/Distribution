@@ -10,9 +10,9 @@ Single component release of api
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-api |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 26343 |
+| # downloads        | 19407 |
 | # stars            | 0 |
 
 ## Links

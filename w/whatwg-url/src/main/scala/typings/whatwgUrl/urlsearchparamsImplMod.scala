@@ -5,21 +5,30 @@ import typings.std.IterableIterator
 import typings.whatwgUrl.anon.DoNotStripQMark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("whatwg-url/lib/URLSearchParams-impl", JSImport.Namespace)
 @js.native
 object urlsearchparamsImplMod extends js.Object {
+  
   @js.native
   trait URLSearchParamsImpl extends js.Object {
+    
+    def append(name: String, value: String): Unit = js.native
+    
+    def delete(name: String): Unit = js.native
+    
+    def get(name: String): String | Null = js.native
+    
+    def getAll(name: String): js.Array[String] = js.native
+    
+    def has(name: String): Boolean = js.native
+    
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
-    def append(name: String, value: String): Unit = js.native
-    def delete(name: String): Unit = js.native
-    def get(name: String): String | Null = js.native
-    def getAll(name: String): js.Array[String] = js.native
-    def has(name: String): Boolean = js.native
+    
     def set(name: String, value: String): Unit = js.native
+    
     def sort(): Unit = js.native
   }
   
@@ -31,6 +40,4 @@ object urlsearchparamsImplMod extends js.Object {
       privateData: DoNotStripQMark
     ) = this()
   }
-  
 }
-

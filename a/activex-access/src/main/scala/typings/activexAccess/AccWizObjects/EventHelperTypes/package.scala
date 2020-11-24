@@ -2,9 +2,10 @@ package typings.activexAccess.AccWizObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object EventHelperTypes {
+  
   type FieldListDragOverArgNames = js.Tuple6[
     typings.activexAccess.activexAccessStrings.SourceCtlName, 
     typings.activexAccess.activexAccessStrings.SourceFieldList, 
@@ -13,6 +14,7 @@ package object EventHelperTypes {
     typings.activexAccess.activexAccessStrings.X, 
     typings.activexAccess.activexAccessStrings.Y
   ]
+  
   type FieldListFldListDragDropArgNames = js.Tuple6[
     typings.activexAccess.activexAccessStrings.SourceCtlName, 
     typings.activexAccess.activexAccessStrings.SourceFieldList, 
@@ -21,6 +23,7 @@ package object EventHelperTypes {
     typings.activexAccess.activexAccessStrings.TargetFieldList, 
     typings.activexAccess.activexAccessStrings.TargetRow
   ]
+  
   type FieldListFldListDragOverArgNames = js.Tuple7[
     typings.activexAccess.activexAccessStrings.SourceCtlName, 
     typings.activexAccess.activexAccessStrings.SourceFieldList, 

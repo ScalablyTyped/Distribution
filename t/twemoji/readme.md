@@ -10,9 +10,9 @@ A Unicode 12.0 standard based way to implement emoji across all platforms.
 | ------------------ | :-------------: |
 | Full name          | twemoji |
 | Keywords           | emoji, DOM, parser, images, retina, Twitter, unicode |
-| # releases         | 20 |
-| # dependents       | 63 |
-| # downloads        | 1284728 |
+| # releases         | 23 |
+| # dependents       | 82 |
+| # downloads        | 1337297 |
 | # stars            | 14 |
 
 ## Links

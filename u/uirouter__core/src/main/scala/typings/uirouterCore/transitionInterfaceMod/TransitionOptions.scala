@@ -11,16 +11,19 @@ import typings.uirouterCore.uirouterCoreStrings.unknown
 import typings.uirouterCore.uirouterCoreStrings.url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TransitionOptions extends js.Object {
+  
   /** @internal */
   var current: js.UndefOr[js.Function0[Transition]] = js.native
+  
   /**
     * You can define your own Transition Options inside this property and use them, e.g., from a Transition Hook
     */
   var custom: js.UndefOr[js.Any] = js.native
+  
   /**
     * This option sets whether or not the transition's parameter values should be inherited from
     * the current parameter values.
@@ -31,6 +34,7 @@ trait TransitionOptions extends js.Object {
     * @default `false`
     */
   var inherit: js.UndefOr[Boolean] = js.native
+  
   /**
     * This option changes how the Transition interacts with the browser's location bar (URL).
     *
@@ -41,20 +45,24 @@ trait TransitionOptions extends js.Object {
     * @default `true`
     */
   var location: js.UndefOr[Boolean | replace] = js.native
+  
   /**
     * @deprecated
     */
   @JSName("notify")
   var notify_FTransitionOptions: js.UndefOr[Boolean] = js.native
+  
   /** @internal
     * If this transition is a redirect, this property should be the original Transition (which was redirected to this one)
     */
   var redirectedFrom: js.UndefOr[Transition] = js.native
+  
   /**
     * When transitioning to relative path (e.g '`^`'), this option defines which state to be relative from.
     * @default `$state.current`
     */
   var relative: js.UndefOr[String | StateDeclaration | StateObject] = js.native
+  
   /**
     * This option may be used to force states which are currently active to reload.
     *
@@ -76,10 +84,13 @@ trait TransitionOptions extends js.Object {
     * @default `false`
     */
   var reload: js.UndefOr[Boolean | String | StateDeclaration | StateObject] = js.native
+  
   /** @internal */
   var reloadState: js.UndefOr[StateObject] = js.native
+  
   /** @internal */
   var source: js.UndefOr[sref | url | redirect | otherwise | unknown] = js.native
+  
   /**
     * This option may be used to cancel the active transition (if one is active) in favour of the this one.
     * This is the default behaviour or ui-router.
@@ -93,69 +104,93 @@ trait TransitionOptions extends js.Object {
     */
   var supercede: js.UndefOr[Boolean] = js.native
 }
-
 object TransitionOptions {
+  
   @scala.inline
   def apply(): TransitionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionOptions]
   }
+  
   @scala.inline
   implicit class TransitionOptionsOps[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCurrent(value: () => Transition): Self = this.set("current", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteCurrent: Self = this.set("current", js.undefined)
+    
     @scala.inline
     def setCustom(value: js.Any): Self = this.set("custom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCustom: Self = this.set("custom", js.undefined)
+    
     @scala.inline
     def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInherit: Self = this.set("inherit", js.undefined)
+    
     @scala.inline
     def setLocation(value: Boolean | replace): Self = this.set("location", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLocation: Self = this.set("location", js.undefined)
+    
     @scala.inline
     def setNotify(value: Boolean): Self = this.set("notify", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNotify: Self = this.set("notify", js.undefined)
+    
     @scala.inline
     def setRedirectedFrom(value: Transition): Self = this.set("redirectedFrom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRedirectedFrom: Self = this.set("redirectedFrom", js.undefined)
+    
     @scala.inline
     def setRelative(value: String | StateDeclaration | StateObject): Self = this.set("relative", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRelative: Self = this.set("relative", js.undefined)
+    
     @scala.inline
     def setReload(value: Boolean | String | StateDeclaration | StateObject): Self = this.set("reload", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReload: Self = this.set("reload", js.undefined)
+    
     @scala.inline
     def setReloadState(value: StateObject): Self = this.set("reloadState", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReloadState: Self = this.set("reloadState", js.undefined)
+    
     @scala.inline
     def setSource(value: sref | url | redirect | otherwise | unknown): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
+    
     @scala.inline
     def setSupercede(value: Boolean): Self = this.set("supercede", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSupercede: Self = this.set("supercede", js.undefined)
   }
-  
 }
-

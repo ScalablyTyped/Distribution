@@ -5,10 +5,11 @@ import typings.immutable.Immutable.Set
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OrderedSet[T] extends Set[T] {
+  
   /**
     * Returns a new OrderedSet with only the values for which the `predicate`
     * function returns true.
@@ -23,6 +24,7 @@ trait OrderedSet[T] extends Set[T] {
     predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
   ): typings.immutable.Immutable.OrderedSet[F] = js.native
+  
   def zip(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.OrderedSet[_] = js.native
   /**
     * Returns an OrderedSet of the same type "zipped" with the provided
@@ -42,6 +44,7 @@ trait OrderedSet[T] extends Set[T] {
     other1: typings.immutable.Immutable.Collection[_, U],
     other2: typings.immutable.Immutable.Collection[_, V]
   ): typings.immutable.Immutable.OrderedSet[js.Tuple3[T, U, V]] = js.native
+  
   def zipAll(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.OrderedSet[_] = js.native
   /**
     * Returns a OrderedSet of the same type "zipped" with the provided
@@ -65,6 +68,7 @@ trait OrderedSet[T] extends Set[T] {
     other1: typings.immutable.Immutable.Collection[_, U],
     other2: typings.immutable.Immutable.Collection[_, V]
   ): typings.immutable.Immutable.OrderedSet[js.Tuple3[T, U, V]] = js.native
+  
   def zipWith[Z](
     zipper: js.Function1[/* repeated */ js.Any, Z],
     collections: (typings.immutable.Immutable.Collection[_, _])*
@@ -85,25 +89,27 @@ trait OrderedSet[T] extends Set[T] {
     thirdCollection: typings.immutable.Immutable.Collection[_, V]
   ): typings.immutable.Immutable.OrderedSet[Z] = js.native
 }
-
 @JSImport("immutable", "OrderedSet")
 @js.native
 object OrderedSet extends js.Object {
+  
   def apply(): typings.immutable.Immutable.OrderedSet[_] = js.native
   def apply[T](collection: Iterable[T]): typings.immutable.Immutable.OrderedSet[T] = js.native
+  
   def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.Immutable.OrderedSet[String] = js.native
   /**
     * `OrderedSet.fromKeys()` creates a new immutable OrderedSet containing
     * the keys from this Collection or JavaScript Object.
     */
   def fromKeys[T](iter: typings.immutable.Immutable.Collection[T, _]): typings.immutable.Immutable.OrderedSet[T] = js.native
+  
   /**
     * True if the provided value is an OrderedSet.
     */
   def isOrderedSet(maybeOrderedSet: js.Any): Boolean = js.native
+  
   /**
     * Creates a new OrderedSet containing `values`.
     */
   def of[T](values: T*): typings.immutable.Immutable.OrderedSet[T] = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Connectiontypes")
 @js.native
 class ResourceConnectiontypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.connectionTypes.get
     * @desc Gets one connection type by ID.
@@ -42,6 +44,7 @@ class ResourceConnectiontypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConnectionType]
   ): Unit = js.native
+  
   /**
     * dfareporting.connectionTypes.list
     * @desc Retrieves a list of connection types.
@@ -74,4 +77,3 @@ class ResourceConnectiontypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaConnectionTypesListResponse]
   ): Unit = js.native
 }
-

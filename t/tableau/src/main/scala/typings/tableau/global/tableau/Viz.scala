@@ -4,7 +4,7 @@ import typings.std.HTMLElement
 import typings.tableau.tableau.VizCreateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("tableau.Viz")
 @js.native
@@ -19,4 +19,3 @@ class Viz protected ()
   def this(node: HTMLElement, url: String) = this()
   def this(node: HTMLElement, url: String, options: VizCreateOptions) = this()
 }
-

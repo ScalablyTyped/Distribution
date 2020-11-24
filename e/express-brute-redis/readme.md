@@ -11,8 +11,8 @@ A Redis store for express-brute
 | Full name          | express-brute-redis |
 | Keywords           | express, brute, redis |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 153014 |
+| # dependents       | 3 |
+| # downloads        | 220320 |
 | # stars            | 3 |
 
 ## Links

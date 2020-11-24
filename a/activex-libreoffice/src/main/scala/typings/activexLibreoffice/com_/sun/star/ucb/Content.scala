@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link Content} is a service that provides access to data of a content provided by an implementation of the service {@link ContentProvider} . */
 @js.native
@@ -28,8 +28,8 @@ trait Content
      with XCommandInfoChangeNotifier
      with XContentCreator
      with XChild
-
 object Content {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -66,4 +66,3 @@ object Content {
     __obj.asInstanceOf[Content]
   }
 }
-

@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.fontSizePickerMod.FontSizePicker.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components/font-size-picker", JSImport.Default)
 @js.native
 object default extends TopLevel[ComponentType[Props]]
-

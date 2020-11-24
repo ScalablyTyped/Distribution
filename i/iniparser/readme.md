@@ -10,8 +10,8 @@ a simple .ini parser
 | Full name          | iniparser |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 347 |
-| # downloads        | 385100 |
+| # dependents       | 349 |
+| # downloads        | 352719 |
 | # stars            | 0 |
 
 ## Links

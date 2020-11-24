@@ -11,8 +11,8 @@ Returns `true` if the string is lower case only
 | Full name          | is-lower-case |
 | Keywords           | is, lower, case, check, boolean |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 40884455 |
+| # dependents       | 4 |
+| # downloads        | 54867440 |
 | # stars            | 1 |
 
 ## Links

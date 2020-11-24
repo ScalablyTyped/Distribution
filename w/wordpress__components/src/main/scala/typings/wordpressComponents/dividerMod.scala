@@ -180,18 +180,21 @@ import typings.wordpressComponents.wordpressComponentsStrings.wbr
 import typings.wordpressComponents.wordpressComponentsStrings.webview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components/card/divider", JSImport.Namespace)
 @js.native
 object dividerMod extends js.Object {
+  
   @js.native
   object CardDivider extends js.Object {
+    
     type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = Children[T] with (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   }
   
   @js.native
   object default extends js.Object {
+    
     // tslint:disable:no-unnecessary-generics
     def apply(
       props: Props[
@@ -199,6 +202,4 @@ object dividerMod extends js.Object {
         ]
     ): Element = js.native
   }
-  
 }
-

@@ -6,17 +6,18 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/planeBuilder", JSImport.Namespace)
 @js.native
 object planeBuilderMod extends js.Object {
+  
   @js.native
   class PlaneBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object PlaneBuilder extends js.Object {
+    
     /**
       * Creates a plane mesh
       * * The parameter `size` sets the size (float) of both sides of the plane at once (default 1)
@@ -34,6 +35,4 @@ object planeBuilderMod extends js.Object {
     def CreatePlane(name: String, options: Size): Mesh = js.native
     def CreatePlane(name: String, options: Size, scene: Nullable[Scene]): Mesh = js.native
   }
-  
 }
-

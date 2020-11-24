@@ -3,12 +3,14 @@ package typings.ol
 import typings.ol.extentMod.Extent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/geom/flat/intersectsextent", JSImport.Namespace)
 @js.native
 object intersectsextentMod extends js.Object {
+  
   def intersectsLineString(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, extent: Extent): Boolean = js.native
+  
   def intersectsLineStringArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -16,7 +18,9 @@ object intersectsextentMod extends js.Object {
     stride: Double,
     extent: Extent
   ): Boolean = js.native
+  
   def intersectsLinearRing(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, extent: Extent): Boolean = js.native
+  
   def intersectsLinearRingArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -24,6 +28,7 @@ object intersectsextentMod extends js.Object {
     stride: Double,
     extent: Extent
   ): Boolean = js.native
+  
   def intersectsLinearRingMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -32,4 +37,3 @@ object intersectsextentMod extends js.Object {
     extent: Extent
   ): Boolean = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/civicinfo/v2", "civicinfo_v2.Resource$Representatives")
 @js.native
 class ResourceRepresentatives protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * civicinfo.representatives.representativeInfoByAddress
     * @desc Looks up political geography and representative information for a
@@ -49,6 +51,7 @@ class ResourceRepresentatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRepresentativeInfoResponse]
   ): Unit = js.native
+  
   /**
     * civicinfo.representatives.representativeInfoByDivision
     * @desc Looks up representative information for a single geographic
@@ -86,4 +89,3 @@ class ResourceRepresentatives protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRepresentativeInfoData]
   ): Unit = js.native
 }
-

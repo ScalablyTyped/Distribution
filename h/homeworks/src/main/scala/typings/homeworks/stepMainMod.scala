@@ -4,11 +4,12 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("homeworks/lib/ng2-homeworks/src/components/step/main", JSImport.Namespace)
 @js.native
 object stepMainMod extends js.Object {
+  
   @js.native
   class WorksStep protected ()
     extends typings.homeworks.componentStepMod.WorksStep {
@@ -26,6 +27,4 @@ object stepMainMod extends js.Object {
     extends typings.homeworks.componentStepMod.WorksStepTitle {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
   }
-  
 }
-

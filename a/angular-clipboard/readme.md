@@ -11,8 +11,8 @@ Copy to clipboard with AngularJS directive, without using Flash.
 | Full name          | angular-clipboard |
 | Keywords           | angular, clipboard, copy, paste, selection |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 576231 |
+| # dependents       | 3 |
+| # downloads        | 676404 |
 | # stars            | 3 |
 
 ## Links

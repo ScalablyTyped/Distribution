@@ -9,9 +9,9 @@ Lightweight URL manipulation with JavaScript.
 | ------------------ | :-------------: |
 | Full name          | domurl |
 | Keywords           | url, querystring |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 626959 |
+| # releases         | 9 |
+| # dependents       | 6 |
+| # downloads        | 867835 |
 | # stars            | 1 |
 
 ## Links

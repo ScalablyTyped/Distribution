@@ -2,11 +2,12 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lunr", "trimmer")
 @js.native
 object trimmer extends js.Object {
+  
   /**
     * lunr.trimmer is a pipeline function for trimming non word
     * characters from the beginning and end of tokens before they
@@ -23,4 +24,3 @@ object trimmer extends js.Object {
     */
   def apply(token: Token): Token = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PostProcess")
 @js.native
@@ -25,34 +25,15 @@ class PostProcess protected ()
     * @param textureType Type of textures used when performing the post process. (default: 0)
     * @param vertexUrl The url of the vertex shader to be used. (default: "postprocess")
     * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
-    * @param blockCompilation If the shader should not be compiled imediatly. (default: false)
+    * @param blockCompilation If the shader should not be compiled immediatly. (default: false)
     * @param textureFormat Format of textures used when performing the post process. (default: TEXTUREFORMAT_RGBA)
     */
   def this(
-    /** Name of the PostProcess. */
-  name: String,
+    name: String,
     fragmentUrl: String,
     parameters: Nullable[js.Array[String]],
     samplers: Nullable[js.Array[String]],
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
-    reusable: js.UndefOr[Boolean],
-    defines: js.UndefOr[Nullable[String]],
-    textureType: js.UndefOr[Double],
-    vertexUrl: js.UndefOr[String],
-    indexParameters: js.UndefOr[js.Any],
-    blockCompilation: js.UndefOr[Boolean],
-    textureFormat: js.UndefOr[Double]
-  ) = this()
-  def this(
-    /** Name of the PostProcess. */
-  name: String,
-    fragmentUrl: String,
-    parameters: Nullable[js.Array[String]],
-    samplers: Nullable[js.Array[String]],
-    options: PostProcessOptions,
+    options: Double | PostProcessOptions,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
     samplingMode: js.UndefOr[Double],
     engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
@@ -65,4 +46,17 @@ class PostProcess protected ()
     textureFormat: js.UndefOr[Double]
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/Legacy/legacy", "PostProcess")
+@js.native
+object PostProcess extends js.Object {
+  
+  /**
+    * Creates a material from parsed material data
+    * @param parsedPostProcess defines parsed post process data
+    * @param scene defines the hosting scene
+    * @param rootUrl defines the root URL to use to load textures
+    * @returns a new post process
+    */
+  def Parse(parsedPostProcess: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.postProcessMod.PostProcess] = js.native
+}

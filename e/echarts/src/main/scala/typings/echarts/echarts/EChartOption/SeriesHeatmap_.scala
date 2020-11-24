@@ -9,7 +9,7 @@ import typings.echarts.anon.`7`
 import typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * **heat map**
@@ -43,6 +43,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesHeatmap_ extends js.Object {
+  
   /**
     * Blur size of each data point. It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -54,6 +55,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.blurSize
     */
   var blurSize: js.UndefOr[Double] = js.native
+  
   /**
     * Index of
     * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
@@ -64,6 +66,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.calendarIndex
     */
   var calendarIndex: js.UndefOr[Double] = js.native
+  
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -88,6 +91,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.native
+  
   /**
     * Data array of series, which can be in the following forms:
     *
@@ -225,10 +229,12 @@ trait SeriesHeatmap_ extends js.Object {
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ]
   ] = js.native
+  
   /**
     * @see https://echarts.apache.org/en/option.html#series-heatmap.emphasis
     */
   var emphasis: js.UndefOr[`7`] = js.native
+  
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -239,6 +245,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -248,6 +255,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.id
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Work for
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -257,6 +265,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.native
+  
   /**
     * Work for
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -266,6 +275,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.label
     */
   var label: js.UndefOr[Distance] = js.native
+  
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -274,6 +284,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markArea
     */
   var markArea: js.UndefOr[AnimationThreshold] = js.native
+  
   /**
     * Use a line in the chart to illustrate.
     *
@@ -281,6 +292,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markLine
     */
   var markLine: js.UndefOr[AnimationEasingUpdate] = js.native
+  
   /**
     * Mark point in a chart.
     *
@@ -288,6 +300,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markPoint
     */
   var markPoint: js.UndefOr[AnimationEasing] = js.native
+  
   /**
     * Maximum opacity. It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -299,6 +312,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.maxOpacity
     */
   var maxOpacity: js.UndefOr[Double] = js.native
+  
   /**
     * Minimum opacity. It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -308,6 +322,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.minOpacity
     */
   var minOpacity: js.UndefOr[Double] = js.native
+  
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -319,6 +334,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -328,6 +344,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.silent
     */
   var silent: js.UndefOr[Boolean] = js.native
+  
   /**
     * tooltip settings in this series.
     *
@@ -335,12 +352,14 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * @default
     * "heatmap"
     * @see https://echarts.apache.org/en/option.html#series-heatmap.type
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -350,6 +369,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -359,6 +379,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * `z` value of all graghical elements in heatmap, which controls
     * order of drawing graphical components.
@@ -374,6 +395,7 @@ trait SeriesHeatmap_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-heatmap.z
     */
   var z: js.UndefOr[Double] = js.native
+  
   /**
     * `zlevel` value of all graghical elements in heatmap.
     *
@@ -393,119 +415,166 @@ trait SeriesHeatmap_ extends js.Object {
     */
   var zlevel: js.UndefOr[Double] = js.native
 }
-
 object SeriesHeatmap_ {
+  
   @scala.inline
   def apply(): SeriesHeatmap_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesHeatmap_]
   }
+  
   @scala.inline
   implicit class SeriesHeatmap_Ops[Self <: SeriesHeatmap_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBlurSize(value: Double): Self = this.set("blurSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBlurSize: Self = this.set("blurSize", js.undefined)
+    
     @scala.inline
     def setCalendarIndex(value: Double): Self = this.set("calendarIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCalendarIndex: Self = this.set("calendarIndex", js.undefined)
+    
     @scala.inline
     def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: ((js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit)*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(
       value: js.Array[
           (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
         ]
     ): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: `7`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setGeoIndex(value: Double): Self = this.set("geoIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGeoIndex: Self = this.set("geoIndex", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setLabel(value: Distance): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabel: Self = this.set("label", js.undefined)
+    
     @scala.inline
     def setMarkArea(value: AnimationThreshold): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    
     @scala.inline
     def setMarkLine(value: AnimationEasingUpdate): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    
     @scala.inline
     def setMarkPoint(value: AnimationEasing): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    
     @scala.inline
     def setMaxOpacity(value: Double): Self = this.set("maxOpacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxOpacity: Self = this.set("maxOpacity", js.undefined)
+    
     @scala.inline
     def setMinOpacity(value: Double): Self = this.set("minOpacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMinOpacity: Self = this.set("minOpacity", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSilent: Self = this.set("silent", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    
     @scala.inline
     def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    
     @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZ: Self = this.set("z", js.undefined)
+    
     @scala.inline
     def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZlevel: Self = this.set("zlevel", js.undefined)
   }
-  
 }
-

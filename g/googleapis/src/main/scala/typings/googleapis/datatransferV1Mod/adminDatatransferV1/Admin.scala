@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Admin Data Transfer API
@@ -27,8 +27,10 @@ import scala.scalajs.js.annotation._
 class Admin protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var applications: ResourceApplications = js.native
+  
   var context: APIRequestContext = js.native
+  
   var transfers: ResourceTransfers = js.native
 }
-

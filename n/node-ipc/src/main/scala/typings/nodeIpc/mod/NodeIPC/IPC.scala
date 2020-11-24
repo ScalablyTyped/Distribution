@@ -4,23 +4,16 @@ import typings.nodeIpc.nodeIpcStrings.udp4
 import typings.nodeIpc.nodeIpcStrings.udp6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPC extends js.Object {
+  
   /**
     * Set these variables in the ipc.config scope to overwrite or set default values
     */
   var config: Config = js.native
-  /**
-    * This is where socket connection refrences will be stored when connecting to them as a client via the ipc.connectTo
-    * or iupc.connectToNet. They will be stored based on the ID used to create them, eg : ipc.of.mySocket
-    */
-  var of: js.Any = js.native
-  /**
-    * This is a refrence to the server created by ipc.serve or ipc.serveNet
-    */
-  var server: Server = js.native
+  
   /**
     * https://www.npmjs.com/package/node-ipc#connectto
     * Used for connecting as a client to local Unix Sockets and Windows Sockets.
@@ -38,6 +31,7 @@ trait IPC extends js.Object {
   def connectTo(id: String, path: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def connectTo(id: String, path: String): Unit = js.native
   def connectTo(id: String, path: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * https://www.npmjs.com/package/node-ipc#connecttonet
     * Used to connect as a client to a TCP or TLS socket via the network card.
@@ -82,6 +76,7 @@ trait IPC extends js.Object {
   def connectToNet(id: String, host: String, port: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def connectToNet(id: String, host: String, port: Double): Unit = js.native
   def connectToNet(id: String, host: String, port: Double, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * https://www.npmjs.com/package/node-ipc#disconnect
     * Used to disconnect a client from a Unix, Windows, TCP or TLS socket.
@@ -90,10 +85,18 @@ trait IPC extends js.Object {
     * @param id is the string id of the socket from which to disconnect
     */
   def disconnect(id: String): Unit = js.native
+  
   /**
     * https://www.npmjs.com/package/node-ipc#log
     */
   def log(args: js.Any*): Unit = js.native
+  
+  /**
+    * This is where socket connection refrences will be stored when connecting to them as a client via the ipc.connectTo
+    * or iupc.connectToNet. They will be stored based on the ID used to create them, eg : ipc.of.mySocket
+    */
+  var of: js.Any = js.native
+  
   /**
     * https://www.npmjs.com/package/node-ipc#serve
     * Used to create local Unix Socket Server or Windows Socket Server to which Clients can bind.
@@ -121,6 +124,7 @@ trait IPC extends js.Object {
     */
   def serve(path: String): Unit = js.native
   def serve(path: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
     * @param host If not specified this defaults to the first address in os.networkInterfaces().
@@ -217,5 +221,9 @@ trait IPC extends js.Object {
   def serveNet_udp6(host: String, port: Double, UDPType: udp6): Unit = js.native
   @JSName("serveNet")
   def serveNet_udp6(host: String, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * This is a refrence to the server created by ipc.serve or ipc.serveNet
+    */
+  var server: Server = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.bluebird.mod
 import typings.bluebird.anon.TypeofBluebird
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bluebird", "noConflict")
 @js.native
 object noConflict extends js.Object {
+  
   /**
     * This is relevant to browser environments with no module loader.
     *
@@ -16,4 +17,3 @@ object noConflict extends js.Object {
     */
   def apply(): TypeofBluebird = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.lowdb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FpReturnBase[PathT] extends js.Object {
+  
   def apply(funcs: js.Array[js.Function1[/* a */ _, _]]): js.Any = js.native
   /**
     * Execute a series of functions on the data at a given path.
@@ -61,4 +62,3 @@ trait FpReturnBase[PathT] extends js.Object {
     ]
   ): R7 = js.native
 }
-

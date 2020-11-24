@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metrics global to the font, i.e. not specific to single glyphs. The font height is defined as ascent+descent+internalLeading, and therefore not
@@ -18,15 +18,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FontMetrics extends js.Object {
+  
   var Ascent: Double = js.native
+  
   var Descent: Double = js.native
+  
   /**
     * Extra space outside the font cells.
     *
     * It should not contain ink marks and is typically used by the font designer to modify the line distance.
     */
   var ExternalLeading: Double = js.native
+  
   var InternalLeading: Double = js.native
+  
   /**
     * This value specifies the reference character width of the font.
     *
@@ -34,13 +39,15 @@ trait FontMetrics extends js.Object {
     * doubled.
     */
   var ReferenceCharSize: Double = js.native
+  
   /** Specifies the offset to be added to the baseline when striking through the text. */
   var StrikeThroughOffset: Double = js.native
+  
   /** Specifies the offset to be added to the baseline when drawing underlined text. */
   var UnderlineOffset: Double = js.native
 }
-
 object FontMetrics {
+  
   @scala.inline
   def apply(
     Ascent: Double,
@@ -54,32 +61,41 @@ object FontMetrics {
     val __obj = js.Dynamic.literal(Ascent = Ascent.asInstanceOf[js.Any], Descent = Descent.asInstanceOf[js.Any], ExternalLeading = ExternalLeading.asInstanceOf[js.Any], InternalLeading = InternalLeading.asInstanceOf[js.Any], ReferenceCharSize = ReferenceCharSize.asInstanceOf[js.Any], StrikeThroughOffset = StrikeThroughOffset.asInstanceOf[js.Any], UnderlineOffset = UnderlineOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontMetrics]
   }
+  
   @scala.inline
   implicit class FontMetricsOps[Self <: FontMetrics] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAscent(value: Double): Self = this.set("Ascent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescent(value: Double): Self = this.set("Descent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExternalLeading(value: Double): Self = this.set("ExternalLeading", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInternalLeading(value: Double): Self = this.set("InternalLeading", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReferenceCharSize(value: Double): Self = this.set("ReferenceCharSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStrikeThroughOffset(value: Double): Self = this.set("StrikeThroughOffset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUnderlineOffset(value: Double): Self = this.set("UnderlineOffset", value.asInstanceOf[js.Any])
   }
-  
 }
-

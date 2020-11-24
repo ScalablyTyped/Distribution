@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1", "container_v1.Resource$Projects$Zones")
 @js.native
 class ResourceProjectsZones protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var clusters: ResourceProjectsZonesClusters = js.native
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceProjectsZonesOperations = js.native
+  
   /**
     * container.projects.zones.getServerconfig
     * @desc Returns configuration info about the Kubernetes Engine service.
@@ -105,5 +107,6 @@ class ResourceProjectsZones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServerConfig]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsZonesOperations = js.native
 }
-

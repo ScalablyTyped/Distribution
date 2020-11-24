@@ -2,7 +2,7 @@ package typings.rxLiteTesting.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx-lite-testing", "Recorded")
 @js.native
@@ -15,4 +15,3 @@ class Recorded protected ()
     equalityComparer: js.Function2[/* x */ js.Any, /* y */ js.Any, Boolean]
   ) = this()
 }
-

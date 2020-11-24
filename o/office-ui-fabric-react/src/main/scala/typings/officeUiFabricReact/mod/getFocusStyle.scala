@@ -1,17 +1,18 @@
 package typings.officeUiFabricReact.mod
 
+import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.officeUiFabricReactStrings.absolute
 import typings.officeUiFabricReact.officeUiFabricReactStrings.relative
-import typings.uifabricMergeStyles.istyleMod.IRawStyle
+import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import typings.uifabricStyling.igetfocusstylesMod.IGetFocusStylesOptions
-import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "getFocusStyle")
 @js.native
 object getFocusStyle extends js.Object {
+  
   def apply(theme: ITheme): IRawStyle = js.native
   def apply(
     theme: ITheme,
@@ -24,4 +25,3 @@ object getFocusStyle extends js.Object {
   ): IRawStyle = js.native
   def apply(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * broadcasts each tried closing of an object to all interest listener
@@ -17,19 +17,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XCloseBroadcaster extends XInterface {
+  
   /**
     * adds the specified listener to receive or have a veto for "close" events
     * @param Listener the listener which is interest on closing events
     */
   def addCloseListener(Listener: XCloseListener): Unit = js.native
+  
   /**
     * removes the specified listener
     * @param Listener the listener which isn't interest on closing events any longer
     */
   def removeCloseListener(Listener: XCloseListener): Unit = js.native
 }
-
 object XCloseBroadcaster {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -41,22 +43,26 @@ object XCloseBroadcaster {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addCloseListener = js.Any.fromFunction1(addCloseListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCloseListener = js.Any.fromFunction1(removeCloseListener))
     __obj.asInstanceOf[XCloseBroadcaster]
   }
+  
   @scala.inline
   implicit class XCloseBroadcasterOps[Self <: XCloseBroadcaster] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddCloseListener(value: XCloseListener => Unit): Self = this.set("addCloseListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveCloseListener(value: XCloseListener => Unit): Self = this.set("removeCloseListener", js.Any.fromFunction1(value))
   }
-  
 }
-

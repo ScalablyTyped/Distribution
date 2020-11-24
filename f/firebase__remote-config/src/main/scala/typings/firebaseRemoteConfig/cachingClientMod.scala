@@ -6,18 +6,18 @@ import typings.firebaseRemoteConfig.storageCacheMod.StorageCache
 import typings.firebaseRemoteConfig.storageMod.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/remote-config/dist/src/client/caching_client", JSImport.Namespace)
 @js.native
 object cachingClientMod extends js.Object {
+  
   @js.native
   class CachingClient protected () extends RemoteConfigFetchClient {
     def this(client: RemoteConfigFetchClient, storage: Storage, storageCache: StorageCache, logger: Logger) = this()
+    
     val client: js.Any = js.native
-    val logger: js.Any = js.native
-    val storage: js.Any = js.native
-    val storageCache: js.Any = js.native
+    
     /**
       * Returns true if the age of the cached fetched configs is less than or equal to
       * {@link Settings#minimumFetchIntervalInSeconds}.
@@ -29,7 +29,11 @@ object cachingClientMod extends js.Object {
       */
     def isCachedDataFresh(cacheMaxAgeMillis: Double): Boolean = js.native
     def isCachedDataFresh(cacheMaxAgeMillis: Double, lastSuccessfulFetchTimestampMillis: Double): Boolean = js.native
+    
+    val logger: js.Any = js.native
+    
+    val storage: js.Any = js.native
+    
+    val storageCache: js.Any = js.native
   }
-  
 }
-

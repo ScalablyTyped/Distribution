@@ -7,13 +7,11 @@ import typings.actionsOnGoogle.frameworkFrameworkMod.StandardHandler
 import typings.actionsOnGoogle.frameworkFrameworkMod.StandardResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceBaseApp extends js.Object {
-  /** @public */
-  @JSName("handler")
-  var handler_Original: StandardHandler = js.native
+  
   /** @public */
   def handler(/** @public */
   body: JsonObject, /** @public */
@@ -26,5 +24,7 @@ trait ServiceBaseApp extends js.Object {
     /** @public */
   metadata: BuiltinFrameworkMetadata
   ): js.Promise[StandardResponse] = js.native
+  /** @public */
+  @JSName("handler")
+  var handler_Original: StandardHandler = js.native
 }
-

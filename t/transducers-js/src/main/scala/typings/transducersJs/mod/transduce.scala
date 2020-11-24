@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("transducers-js", "transduce")
 @js.native
 object transduce extends js.Object {
+  
   def apply[TResult, TInput, TOutput](
     xf: Transducer[js.Tuple2[String, TInput], TOutput],
     f: Reducer[TResult, TOutput],
@@ -44,4 +45,3 @@ object transduce extends js.Object {
     coll: Iterable[TInput]
   ): TCompleteResult = js.native
 }
-

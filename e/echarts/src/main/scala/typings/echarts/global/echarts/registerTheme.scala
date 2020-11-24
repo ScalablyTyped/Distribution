@@ -2,11 +2,12 @@ package typings.echarts.global.echarts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("echarts.registerTheme")
 @js.native
 object registerTheme extends js.Object {
+  
   /**
     * Registers a theme, should be specified when
     * [initialize the chart instance](https://echarts.apache.org/api.html#echarts.init).
@@ -16,4 +17,3 @@ object registerTheme extends js.Object {
     */
   def apply(themeName: String, theme: js.Object): Unit = js.native
 }
-

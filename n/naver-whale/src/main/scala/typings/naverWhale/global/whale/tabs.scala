@@ -2,7 +2,7 @@ package typings.naverWhale.global.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Tabs
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.tabs")
 @js.native
 object tabs extends js.Object
-

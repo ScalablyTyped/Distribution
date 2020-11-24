@@ -7,11 +7,12 @@ import typings.typesettable.mod.Wrapper
 import typings.typesettable.mod.Writer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/label", JSImport.Namespace)
 @js.native
 object labelMod extends js.Object {
+  
   @js.native
   /**
     * @constructor
@@ -22,6 +23,12 @@ object labelMod extends js.Object {
     def this(text: String) = this()
     def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(text: String, angle: Double) = this()
+  }
+  /* static members */
+  @js.native
+  object AxisLabel extends js.Object {
+    
+    var AXIS_LABEL_CLASS: String = js.native
   }
   
   @js.native
@@ -36,13 +43,21 @@ object labelMod extends js.Object {
     def this(displayText: String) = this()
     def this(displayText: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(displayText: String, angle: Double) = this()
+    
     var _angle: Double = js.native
+    
     var _measurer: CacheMeasurer = js.native
+    
     var _padding: Double = js.native
+    
     var _text: String = js.native
+    
     var _textContainer: SimpleSelection[Unit] = js.native
+    
     var _wrapper: Wrapper = js.native
+    
     var _writer: Writer = js.native
+    
     /**
       * Gets the angle of the Label in degrees.
       */
@@ -54,6 +69,7 @@ object labelMod extends js.Object {
       * @returns {Label} The calling Label.
       */
     def angle(angle: Double): this.type = js.native
+    
     /**
       * Gets the amount of padding around the Label in pixels.
       */
@@ -65,6 +81,7 @@ object labelMod extends js.Object {
       * @returns {Label} The calling Label.
       */
     def padding(padAmount: Double): this.type = js.native
+    
     /**
       * Gets the Label's text.
       */
@@ -89,18 +106,10 @@ object labelMod extends js.Object {
     def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(text: String, angle: Double) = this()
   }
-  
-  /* static members */
-  @js.native
-  object AxisLabel extends js.Object {
-    var AXIS_LABEL_CLASS: String = js.native
-  }
-  
   /* static members */
   @js.native
   object TitleLabel extends js.Object {
+    
     var TITLE_LABEL_CLASS: String = js.native
   }
-  
 }
-

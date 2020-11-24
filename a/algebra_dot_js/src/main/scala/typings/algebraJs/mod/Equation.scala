@@ -2,7 +2,7 @@ package typings.algebraJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("algebra.js", "Equation")
 @js.native
@@ -15,4 +15,3 @@ class Equation protected ()
   ) = this()
   def this(lhs: typings.algebraJs.mod.algebra.js_.Expression, rhs: typings.algebraJs.mod.algebra.js_.Fraction) = this()
 }
-

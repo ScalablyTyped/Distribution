@@ -2,11 +2,12 @@ package typings.echarts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("echarts", "registerMap")
 @js.native
 object registerMap extends js.Object {
+  
   /**
     * Registers available maps. This can only be used after including
     * [geo](https://echarts.apache.org/option.html#geo)
@@ -26,4 +27,3 @@ object registerMap extends js.Object {
   def apply(mapName: String, geoJson: js.Object): Unit = js.native
   def apply(mapName: String, geoJson: js.Object, specialAreas: js.Object): Unit = js.native
 }
-

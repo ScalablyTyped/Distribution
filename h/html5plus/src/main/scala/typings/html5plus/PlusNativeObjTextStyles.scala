@@ -13,7 +13,7 @@ import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 绘制文本样式对象
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusNativeObjTextStyles extends js.Object {
+  
   /**
     * 水平对齐方式
     * 可取值：
@@ -37,6 +38,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var align: js.UndefOr[left | center | right] = js.native
+  
   /**
     * 字体颜色
     * 可取值：
@@ -47,6 +49,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var color: js.UndefOr[String] = js.native
+  
   /**
     * 文本装饰
     * 可取值：
@@ -67,6 +70,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var decoration: js.UndefOr[none | underline | `line-through`] = js.native
+  
   /**
     * 字体名称
     * 例如"Times New Roman"，    如果指定名称的字体不存在，则使用默认字体。
@@ -74,6 +78,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var family: js.UndefOr[String] = js.native
+  
   /**
     * 字体文件路径
     * 加载字体文件路径。
@@ -81,6 +86,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var fontSrc: js.UndefOr[String] = js.native
+  
   /**
     * 文本的行间距
     * 可取值：
@@ -90,6 +96,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var lineSpacing: js.UndefOr[String] = js.native
+  
   /**
     * 字体的边距
     * 用于设置字体在绘制目标区域四个方向（top/right/bottom/left）的边距，可取值：像素值，如"10px"；百分比，相对于绘制目标区域，如"5%"；
@@ -98,6 +105,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var margin: js.UndefOr[String] = js.native
+  
   /**
     * 文本内容超出显示区域时处理方式
     * 可取值：
@@ -111,6 +119,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var overflow: js.UndefOr[clip] = js.native
+  
   /**
     * 字体大小
     * 可取值：字体高度像素值，数字加"px"格式字符串，如"12px"。
@@ -119,6 +128,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var size: js.UndefOr[String] = js.native
+  
   /**
     * 字体样式
     * 可取值："normal" - 正常字体样式；"italic" - 斜体样式。默认值为"normal"。
@@ -128,6 +138,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var style: js.UndefOr[normal | italic] = js.native
+  
   /**
     * 垂直对齐方式
     * 文本内容在指定绘制区域中的垂直对齐方式，可取值：
@@ -139,6 +150,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var verticalAlign: js.UndefOr[String] = js.native
+  
   /**
     * 字体粗细
     * 可取值："normal" - 普通字体；"bold" - 粗字体。默认值为"normal"。
@@ -148,6 +160,7 @@ trait PlusNativeObjTextStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var weight: js.UndefOr[normal | bold] = js.native
+  
   /**
     * 文本换行模式
     * 可取值：
@@ -165,77 +178,105 @@ trait PlusNativeObjTextStyles extends js.Object {
     */
   var whiteSpace: js.UndefOr[nowrap | normal] = js.native
 }
-
 object PlusNativeObjTextStyles {
+  
   @scala.inline
   def apply(): PlusNativeObjTextStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjTextStyles]
   }
+  
   @scala.inline
   implicit class PlusNativeObjTextStylesOps[Self <: PlusNativeObjTextStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlign: Self = this.set("align", js.undefined)
+    
     @scala.inline
     def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColor: Self = this.set("color", js.undefined)
+    
     @scala.inline
     def setDecoration(value: none | underline | `line-through`): Self = this.set("decoration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDecoration: Self = this.set("decoration", js.undefined)
+    
     @scala.inline
     def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFamily: Self = this.set("family", js.undefined)
+    
     @scala.inline
     def setFontSrc(value: String): Self = this.set("fontSrc", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFontSrc: Self = this.set("fontSrc", js.undefined)
+    
     @scala.inline
     def setLineSpacing(value: String): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLineSpacing: Self = this.set("lineSpacing", js.undefined)
+    
     @scala.inline
     def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMargin: Self = this.set("margin", js.undefined)
+    
     @scala.inline
     def setOverflow(value: clip): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOverflow: Self = this.set("overflow", js.undefined)
+    
     @scala.inline
     def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSize: Self = this.set("size", js.undefined)
+    
     @scala.inline
     def setStyle(value: normal | italic): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
+    
     @scala.inline
     def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    
     @scala.inline
     def setWeight(value: normal | bold): Self = this.set("weight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWeight: Self = this.set("weight", js.undefined)
+    
     @scala.inline
     def setWhiteSpace(value: nowrap | normal): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWhiteSpace: Self = this.set("whiteSpace", js.undefined)
   }
-  
 }
-

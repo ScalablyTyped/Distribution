@@ -2,10 +2,11 @@ package typings.rx.Rx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IObservable[T] extends ObservableOrPromise[T] {
+  
   /**
     *  Subscribes an o to the observable sequence.
     *  @param {Mixed} [oOrOnNext] The object that is to receive notifications or an action to invoke for each element in the observable sequence.
@@ -46,4 +47,3 @@ trait IObservable[T] extends ObservableOrPromise[T] {
     onCompleted: js.Function0[Unit]
   ): IDisposable = js.native
 }
-

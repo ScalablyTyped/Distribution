@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a pop-up menu.
@@ -25,8 +25,8 @@ trait AccessiblePopupMenu
      with XAccessibleContext
      with XAccessibleEventBroadcaster
      with XAccessibleSelection
-
 object AccessiblePopupMenu {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -87,4 +87,3 @@ object AccessiblePopupMenu {
     __obj.asInstanceOf[AccessiblePopupMenu]
   }
 }
-

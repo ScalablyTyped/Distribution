@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Mobiledevices")
 @js.native
 class ResourceMobiledevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * directory.mobiledevices.action
     * @desc Take action on Mobile Device
@@ -43,6 +43,9 @@ class ResourceMobiledevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * directory.mobiledevices.delete
     * @desc Delete Mobile Device
@@ -72,6 +75,7 @@ class ResourceMobiledevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.mobiledevices.get
     * @desc Retrieve Mobile Device
@@ -102,6 +106,7 @@ class ResourceMobiledevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMobileDevice]
   ): Unit = js.native
+  
   /**
     * directory.mobiledevices.list
     * @desc Retrieve all Mobile Devices of a customer (paginated)
@@ -137,4 +142,3 @@ class ResourceMobiledevices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMobileDevices]
   ): Unit = js.native
 }
-

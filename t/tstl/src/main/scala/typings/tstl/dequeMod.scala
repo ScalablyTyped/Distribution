@@ -10,11 +10,12 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ifrontMod.IFront
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/Deque", JSImport.Namespace)
 @js.native
 object dequeMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -62,39 +63,25 @@ object dequeMod extends js.Object {
       * @param val Value to fill.
       */
     def this(size: Double, `val`: T) = this()
+    
     var _Compute_col_size: js.Any = js.native
+    
     var _Fetch_index: js.Any = js.native
+    
     var _Insert_to_end: js.Any = js.native
+    
     var _Insert_to_middle: js.Any = js.native
+    
     var _Reserve: js.Any = js.native
+    
     var _Swap: js.Any = js.native
+    
     var _Try_add_row_at_back: js.Any = js.native
+    
     var _Try_add_row_at_front: js.Any = js.native
+    
     var _Try_expand_capacity: js.Any = js.native
-    /**
-      * Maximum capacity that current {@link matrix_} can store in.
-      */
-    var capacity_ : js.Any = js.native
-    /**
-      * A matrix containing elements.
-      *
-      * This {@link matrix_} is the biggest difference one between {@link Vector} and {@link Deque}.
-      * Its number of rows follows {@link ROW_SIZE} and number of columns follows {@link get_col_size} which
-      * returns divide of {@link capacity} and {@link ROW_SIZE}.
-      *
-      * By separating segment of elements (segment: row, elements in a segment: col), {@link Deque} takes
-      * advantage of time complexity on inserting element in middle position. {@link Deque} is {@link ROW_SIZE}
-      * times faster than {@link Vector} when inserting elements in middle position.
-      *
-      * However, separating segment of elements from matrix, {@link Deque} also takes disadvantage of
-      * time complexity on accessing element. {@link Deque} is {@link ROW_SIZE} times slower than {@link Vector}
-      * when accessing element.
-      */
-    var matrix_ : js.Any = js.native
-    /**
-      * Number of elements stored in the {@link Deque}
-      */
-    var size_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
@@ -107,17 +94,22 @@ object dequeMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * The capacity to store elements.
       *
       * @return The capacity.
       */
     def capacity(): Double = js.native
+    
+    var capacity_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -135,6 +127,7 @@ object dequeMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: Iterator[T]): Iterator[T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -145,24 +138,33 @@ object dequeMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def front(`val`: T): Unit = js.native
+    
+    var matrix_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
     def pop_front(): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     def push_front(`val`: T): Unit = js.native
+    
     /**
       * Reserve {@link capacity} enable to store *n* elements.
       *
       * @param n The capacity to reserve.
       */
     def reserve(n: Double): Unit = js.native
+    
     /**
       * Shrink {@link capacity} to actual {@link size}.
       */
     def shrink_to_fit(): Unit = js.native
+    
+    var size_ : js.Any = js.native
+    
     /**
       * Swap elements.
       *
@@ -170,6 +172,7 @@ object dequeMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: Deque[T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -178,10 +181,10 @@ object dequeMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   /* static members */
   @js.native
   object Deque extends js.Object {
+    
     val Iterator: Instantiable0[
         ArrayIterator[
           js.Object, 
@@ -201,10 +204,12 @@ object dequeMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     /**
       * Expansion ratio.
       */
     val MAGNIFIER: /* 1.5 */ Double = js.native
+    
     /**
       * Minimum {@link Deque.capacity}.
       *
@@ -212,6 +217,7 @@ object dequeMod extends js.Object {
       * keeps the minimum {@link Deque.capacity} at least.
       */
     val MIN_CAPACITY: /* 36 */ Double = js.native
+    
     /**
       * Row size of the {@link Deque.matrix_ matrix} which contains elements.
       *
@@ -224,6 +230,7 @@ object dequeMod extends js.Object {
       * and inserting element is O(N)).
       */
     val ROW_SIZE: /* 8 */ Double = js.native
+    
     val ReverseIterator: Instantiable0[
         ArrayReverseIterator[
           js.Object, 
@@ -243,16 +250,17 @@ object dequeMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     var _Emend: js.Any = js.native
+    
     /**
       * Iterator of {@link Deque}
       */
     type Iterator[T] = ArrayIterator[T, Deque[T]]
+    
     /**
       * Reverse iterator of {@link Deque}
       */
     type ReverseIterator[T] = ArrayReverseIterator[T, Deque[T]]
   }
-  
 }
-

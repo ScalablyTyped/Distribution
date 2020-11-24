@@ -7,9 +7,9 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy")
+@JSImport("@pulumi/aws/s3control/bucketPolicy", "BucketPolicy")
 @js.native
 class BucketPolicy protected () extends CustomResource {
   /**
@@ -21,20 +21,19 @@ class BucketPolicy protected () extends CustomResource {
     */
   def this(name: String, args: BucketPolicyArgs) = this()
   def this(name: String, args: BucketPolicyArgs, opts: CustomResourceOptions) = this()
+  
   /**
-    * The name of the bucket to which to apply the policy.
+    * Amazon Resource Name (ARN) of the bucket.
     */
   val bucket: Output_[String] = js.native
-  /**
-    * The text of the policy.
-    */
+  
   val policy: Output_[String] = js.native
 }
-
 /* static members */
-@JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy")
+@JSImport("@pulumi/aws/s3control/bucketPolicy", "BucketPolicy")
 @js.native
 object BucketPolicy extends js.Object {
+  
   /**
     * Get an existing BucketPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +47,10 @@ object BucketPolicy extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketPolicy = js.native
   def get(name: String, id: Input[ID], state: BucketPolicyState): BucketPolicy = js.native
   def get(name: String, id: Input[ID], state: BucketPolicyState, opts: CustomResourceOptions): BucketPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of BucketPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3control/bucketPolicy.BucketPolicy */ Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a pattern field control.
@@ -14,4 +14,3 @@ trait UnoControlPatternField
   extends UnoControlEdit
      with XSpinField
      with XPatternField
-

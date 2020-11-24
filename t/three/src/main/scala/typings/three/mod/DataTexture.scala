@@ -3,12 +3,26 @@ package typings.three.mod
 import typings.three.polyfillsMod.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "DataTexture")
 @js.native
 class DataTexture protected ()
   extends typings.three.dataTextureMod.DataTexture {
+  /**
+  	 * @param data
+  	 * @param width
+  	 * @param height
+  	 * @param [format=THREE.RGBAFormat]
+  	 * @param [type=THREE.UnsignedByteType]
+  	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+  	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+  	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+  	 * @param [magFilter=THREE.NearestFilter]
+  	 * @param [minFilter=THREE.NearestFilter]
+  	 * @param [anisotropy=1]
+  	 * @param [encoding=THREE.LinearEncoding]
+  	 */
   def this(
     data: TypedArray,
     width: Double,
@@ -24,4 +38,3 @@ class DataTexture protected ()
     encoding: js.UndefOr[typings.three.constantsMod.TextureEncoding]
   ) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.commonErrors.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "ArgumentError")
@@ -16,4 +16,3 @@ class ArgumentError protected () extends js.Object {
   def this(argumentName: String) = this()
   def this(argumentName: String, inner_error: Error) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.NodeMaterialBlock")
 @js.native
@@ -17,7 +17,21 @@ class NodeMaterialBlock protected ()
     */
   def this(name: String) = this()
   def this(name: String, target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets) = this()
+  def this(name: String, target: js.UndefOr[scala.Nothing], isFinalMerger: Boolean) = this()
   def this(name: String, target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets, isFinalMerger: Boolean) = this()
+  def this(
+    name: String,
+    target: js.UndefOr[scala.Nothing],
+    isFinalMerger: js.UndefOr[scala.Nothing],
+    isInput: Boolean
+  ) = this()
+  def this(name: String, target: js.UndefOr[scala.Nothing], isFinalMerger: Boolean, isInput: Boolean) = this()
+  def this(
+    name: String,
+    target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets,
+    isFinalMerger: js.UndefOr[scala.Nothing],
+    isInput: Boolean
+  ) = this()
   def this(
     name: String,
     target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets,
@@ -25,4 +39,3 @@ class NodeMaterialBlock protected ()
     isInput: Boolean
   ) = this()
 }
-

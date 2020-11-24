@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Shape Game Object is a base class for the various different shapes, such as the Arc, Star or Polygon.
@@ -24,4 +24,3 @@ class Shape protected ()
   def this(scene: Scene, `type`: js.UndefOr[scala.Nothing], data: js.Any) = this()
   def this(scene: Scene, `type`: String, data: js.Any) = this()
 }
-

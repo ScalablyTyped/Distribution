@@ -5,14 +5,15 @@ import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait shortcode extends js.Object {
+  
   var attrs: ShortcodeAttrs = js.native
+  
   var content: js.UndefOr[String] = js.native
-  var tag: js.UndefOr[String] = js.native
-  var `type`: js.UndefOr[closed | `self-closing` | single] = js.native
+  
   /**
     * Get a shortcode attribute.
     *
@@ -24,6 +25,7 @@ trait shortcode extends js.Object {
     */
   def get(attr: String): js.UndefOr[String] = js.native
   def get(attr: Double): js.UndefOr[String] = js.native
+  
   /**
     * Set a shortcode attribute.
     *
@@ -37,11 +39,15 @@ trait shortcode extends js.Object {
     */
   def set(attr: String, value: String): this.type = js.native
   def set(attr: Double, value: String): this.type = js.native
+  
   /**
     * Transform the shortcode into a string.
     *
     * @returns String representation of the shortcode.
     */
   def string(): String = js.native
+  
+  var tag: js.UndefOr[String] = js.native
+  
+  var `type`: js.UndefOr[closed | `self-closing` | single] = js.native
 }
-

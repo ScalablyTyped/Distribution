@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation")
 @js.native
@@ -21,24 +21,32 @@ class ZoneAssociation protected () extends CustomResource {
     */
   def this(name: String, args: ZoneAssociationArgs) = this()
   def this(name: String, args: ZoneAssociationArgs, opts: CustomResourceOptions) = this()
+  
+  /**
+    * The account ID of the account that created the hosted zone.
+    */
+  val owningAccount: Output_[String] = js.native
+  
   /**
     * The VPC to associate with the private hosted zone.
     */
   val vpcId: Output_[String] = js.native
+  
   /**
     * The VPC's region. Defaults to the region of the AWS provider.
     */
   val vpcRegion: Output_[String] = js.native
+  
   /**
     * The private hosted zone to associate.
     */
   val zoneId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation")
 @js.native
 object ZoneAssociation extends js.Object {
+  
   /**
     * Get an existing ZoneAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +60,10 @@ object ZoneAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ZoneAssociation = js.native
   def get(name: String, id: Input[ID], state: ZoneAssociationState): ZoneAssociation = js.native
   def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): ZoneAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = js.native
 }
-

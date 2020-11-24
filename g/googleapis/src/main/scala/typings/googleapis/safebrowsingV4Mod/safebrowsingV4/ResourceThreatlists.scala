@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/safebrowsing/v4", "safebrowsing_v4.Resource$Threatlists")
 @js.native
 class ResourceThreatlists protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * safebrowsing.threatLists.list
     * @desc Lists the Safe Browsing threat lists available for download.
@@ -44,4 +46,3 @@ class ResourceThreatlists protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListThreatListsResponse]
   ): Unit = js.native
 }
-

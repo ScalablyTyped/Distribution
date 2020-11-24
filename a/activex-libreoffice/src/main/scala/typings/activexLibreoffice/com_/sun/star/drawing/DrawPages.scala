@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a container of {@link DrawPages} and makes it possible for you to manipulate them.
@@ -15,8 +15,8 @@ trait DrawPages
   extends XDrawPages
      with XDrawPageSummarizer
      with XDrawPageExpander
-
 object DrawPages {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -37,4 +37,3 @@ object DrawPages {
     __obj.asInstanceOf[DrawPages]
   }
 }
-

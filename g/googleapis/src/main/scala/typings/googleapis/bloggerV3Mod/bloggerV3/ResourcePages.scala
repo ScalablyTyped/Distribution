@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Pages")
 @js.native
 class ResourcePages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.pages.delete
     * @desc Delete a page by ID.
@@ -38,6 +40,7 @@ class ResourcePages protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourcePagesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePagesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * blogger.pages.get
     * @desc Gets one blog page by ID.
@@ -64,6 +67,7 @@ class ResourcePages protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourcePagesGet, options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def get(params: ParamsResourcePagesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  
   /**
     * blogger.pages.insert
     * @desc Add a page.
@@ -94,6 +98,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPage]
   ): Unit = js.native
+  
   /**
     * blogger.pages.list
     * @desc Retrieves the pages for a blog, optionally including non-LIVE
@@ -128,6 +133,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPageList]
   ): Unit = js.native
+  
   /**
     * blogger.pages.patch
     * @desc Update a page. This method supports patch semantics.
@@ -160,6 +166,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPage]
   ): Unit = js.native
+  
   /**
     * blogger.pages.publish
     * @desc Publishes a draft page.
@@ -189,6 +196,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPage]
   ): Unit = js.native
+  
   /**
     * blogger.pages.revert
     * @desc Revert a published or scheduled page to draft state.
@@ -218,6 +226,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPage]
   ): Unit = js.native
+  
   /**
     * blogger.pages.update
     * @desc Update a page.
@@ -251,4 +260,3 @@ class ResourcePages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPage]
   ): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dayjs
 
-Typings are for version 1.8.31
+Typings are for version 1.9.6
 
 ## Library description:
 2KB immutable date time library alternative to Moment.js with the same modern API
@@ -10,13 +10,13 @@ Typings are for version 1.8.31
 | ------------------ | :-------------: |
 | Full name          | dayjs |
 | Keywords           | dayjs, date, time, immutable, moment |
-| # releases         | 73 |
-| # dependents       | 866 |
-| # downloads        | 14193458 |
+| # releases         | 38 |
+| # dependents       | 1595 |
+| # downloads        | 70684620 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/iamkun/dayjs#readme)
+- [Homepage](https://day.js.org)
 - [Bugs](https://github.com/iamkun/dayjs/issues)
 - [Repository](https://github.com/iamkun/dayjs)
 - [Npm](https://www.npmjs.com/package/dayjs)

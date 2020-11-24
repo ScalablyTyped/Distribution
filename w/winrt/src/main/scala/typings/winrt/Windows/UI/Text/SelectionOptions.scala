@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SelectionOptions extends js.Object
-
 @JSGlobal("Windows.UI.Text.SelectionOptions")
 @js.native
 object SelectionOptions extends js.Object {
+  
   @js.native
   sealed trait active extends SelectionOptions
   
@@ -24,6 +24,4 @@ object SelectionOptions extends js.Object {
   
   @js.native
   sealed trait startActive extends SelectionOptions
-  
 }
-

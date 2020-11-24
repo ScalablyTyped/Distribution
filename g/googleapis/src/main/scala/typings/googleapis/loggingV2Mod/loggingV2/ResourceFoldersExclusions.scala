@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2", "logging_v2.Resource$Folders$Exclusions")
 @js.native
 class ResourceFoldersExclusions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * logging.folders.exclusions.create
     * @desc Creates a new exclusion in a specified parent resource. Only log
@@ -44,6 +46,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogExclusion]
   ): Unit = js.native
+  
   /**
     * logging.folders.exclusions.delete
     * @desc Deletes an exclusion.
@@ -72,6 +75,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * logging.folders.exclusions.get
     * @desc Gets the description of an exclusion.
@@ -100,6 +104,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogExclusion]
   ): Unit = js.native
+  
   /**
     * logging.folders.exclusions.list
     * @desc Lists all the exclusions in a parent resource.
@@ -133,6 +138,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListExclusionsResponse]
   ): Unit = js.native
+  
   /**
     * logging.folders.exclusions.patch
     * @desc Changes one or more properties of an existing exclusion.
@@ -164,4 +170,3 @@ class ResourceFoldersExclusions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLogExclusion]
   ): Unit = js.native
 }
-

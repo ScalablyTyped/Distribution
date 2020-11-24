@@ -11,8 +11,8 @@ Check whether a string has any emoji
 | Full name          | has-emoji |
 | Keywords           | emoji, emojis, string, text, has, contains, includes, detect, is |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 30227 |
+| # dependents       | 3 |
+| # downloads        | 41317 |
 | # stars            | 0 |
 
 ## Links

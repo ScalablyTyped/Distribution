@@ -3,15 +3,15 @@ package typings.devexpressWeb
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapDateEdit control.
   */
 @js.native
 trait BootstrapClientDateEdit extends ASPxClientDateEdit
-
 object BootstrapClientDateEdit {
+  
   @scala.inline
   def apply(
     AdjustControl: () => Unit,
@@ -88,4 +88,3 @@ object BootstrapClientDateEdit {
     __obj.asInstanceOf[BootstrapClientDateEdit]
   }
 }
-

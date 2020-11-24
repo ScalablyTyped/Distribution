@@ -1,11 +1,11 @@
 package typings.angularPlatformBrowser.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.NgZone
+import typings.angularPlatformBrowser.anon.DomEventName
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin")
 @js.native
@@ -16,11 +16,11 @@ class ɵKeyEventsPlugin protected () extends ɵangularPackagesPlatformBrowserPla
     */
   def this(doc: js.Any) = this()
 }
-
 /* static members */
 @JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin")
 @js.native
 object ɵKeyEventsPlugin extends js.Object {
+  
   /**
     * Configures a handler callback for a key event.
     * @param fullKey The event name that combines all simultaneous keystrokes.
@@ -29,7 +29,8 @@ object ɵKeyEventsPlugin extends js.Object {
     * @returns A callback function.
     */
   def eventCallback(fullKey: js.Any, handler: js.Function, zone: NgZone): js.Function = js.native
+  
   def getEventFullKey(event: KeyboardEvent): String = js.native
-  def parseEventName(eventName: String): StringDictionary[String] | Null = js.native
+  
+  def parseEventName(eventName: String): DomEventName | Null = js.native
 }
-

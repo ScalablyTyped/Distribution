@@ -2,15 +2,13 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PivotFilters extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: Double): PivotFilter = js.native
+  
   def Add(
     Type: XlPivotFilterType,
     DataField: js.UndefOr[js.Any],
@@ -21,7 +19,16 @@ trait PivotFilters extends js.Object {
     Description: js.UndefOr[js.Any],
     MemberPropertyField: js.UndefOr[js.Any]
   ): PivotFilter = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: Double): PivotFilter = js.native
+  
+  val Parent: js.Any = js.native
+  
   def _Default(Index: js.Any): PivotFilter = js.native
 }
-

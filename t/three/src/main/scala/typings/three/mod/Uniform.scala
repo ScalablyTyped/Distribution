@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Uniform")
 @js.native
@@ -14,4 +14,3 @@ class Uniform protected ()
   	 */
   def this(`type`: String, value: js.Any) = this()
 }
-

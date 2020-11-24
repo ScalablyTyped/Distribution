@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Attribute extends js.Object
-
 /**
   * An enumeration of the element attributes.
   *
@@ -25,6 +24,7 @@ sealed trait Attribute extends js.Object
 @JSGlobal("GoogleAppsScript.Document.Attribute")
 @js.native
 object Attribute extends js.Object {
+  
   @js.native
   sealed trait BACKGROUND_COLOR extends Attribute
   
@@ -138,6 +138,4 @@ object Attribute extends js.Object {
   
   @js.native
   sealed trait WIDTH extends Attribute
-  
 }
-

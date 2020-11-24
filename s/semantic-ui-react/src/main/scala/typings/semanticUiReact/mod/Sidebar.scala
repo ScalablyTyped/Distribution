@@ -7,7 +7,7 @@ import typings.semanticUiReact.sidebarSidebarMod.SidebarComponent
 import typings.semanticUiReact.sidebarSidebarMod.SidebarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Sidebar")
 @js.native
@@ -16,8 +16,6 @@ class Sidebar protected ()
   def this(props: SidebarProps) = this()
   def this(props: SidebarProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Sidebar")
 @js.native
 object Sidebar extends TopLevel[SidebarComponent]
-

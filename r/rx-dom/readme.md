@@ -10,9 +10,9 @@ Library for using DOM elements as well as Ajax requests
 | ------------------ | :-------------: |
 | Full name          | rx-dom |
 | Keywords           | Reactive, FRP, Rx, RxJS, DOM, Ajax, JSONP, HTML5, requestAnimationFrame, WebSockets, WebWorkers, Geolocation |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 53249 |
+| # downloads        | 63179 |
 | # stars            | 2 |
 
 ## Links

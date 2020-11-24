@@ -4,11 +4,12 @@ import typings.samchon.dedicatedWorkerCommunicatorMod.DedicatedWorkerCommunicato
 import typings.samchon.iprotocolMod.IProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/server_connector/DedicatedWorkerServerConnector", JSImport.Namespace)
 @js.native
 object dedicatedWorkerServerConnectorMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -21,14 +22,7 @@ object dedicatedWorkerServerConnectorMod extends js.Object {
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
     def this(listener: IProtocol) = this()
-    /**
-      * @inheritdoc
-      */
-    var onConnect: js.Function = js.native
-    /**
-      * @hidden
-      */
-    var worker_ : js.Any = js.native
+    
     /**
       * Connect to a server.
       *
@@ -53,7 +47,15 @@ object dedicatedWorkerServerConnectorMod extends js.Object {
       * @inheritdoc
       */
     def connect(jsFile: String): Unit = js.native
+    
+    /**
+      * @inheritdoc
+      */
+    var onConnect: js.Function = js.native
+    
+    /**
+      * @hidden
+      */
+    var worker_ : js.Any = js.native
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.makerJs.global.MakerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.extendObject")
 @js.native
 object extendObject extends js.Object {
+  
   /**
     * Copy the properties from one object to another object.
     *
@@ -21,4 +22,3 @@ object extendObject extends js.Object {
     */
   def apply(target: js.Object, other: js.Object): js.Object = js.native
 }
-

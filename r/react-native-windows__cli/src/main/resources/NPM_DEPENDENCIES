@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native-windows/cli" : "0.63.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native-windows/cli" : "0.63.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

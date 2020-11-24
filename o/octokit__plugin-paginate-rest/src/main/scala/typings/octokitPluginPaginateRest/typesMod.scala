@@ -1,5 +1,6 @@
 package typings.octokitPluginPaginateRest
 
+import typings.octokitCore.mod.Octokit
 import typings.octokitPluginPaginateRest.anon.Data
 import typings.octokitPluginPaginateRest.anon.DataArray
 import typings.octokitPluginPaginateRest.anon.DataGetResultsType
@@ -17,6 +18,9 @@ import typings.octokitPluginPaginateRest.anon.`19`
 import typings.octokitPluginPaginateRest.anon.`1`
 import typings.octokitPluginPaginateRest.anon.`20`
 import typings.octokitPluginPaginateRest.anon.`21`
+import typings.octokitPluginPaginateRest.anon.`22`
+import typings.octokitPluginPaginateRest.anon.`23`
+import typings.octokitPluginPaginateRest.anon.`24`
 import typings.octokitPluginPaginateRest.anon.`2`
 import typings.octokitPluginPaginateRest.anon.`3`
 import typings.octokitPluginPaginateRest.anon.`4`
@@ -28,6 +32,11 @@ import typings.octokitPluginPaginateRest.anon.`9`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashinstallations`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashapplicationsSlashgrants`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET Slashauthorizations`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashgistsSlashColongist_idSlashcomments`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashgistsSlashColongist_idSlashcommits`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashgistsSlashColongist_idSlashforks`
@@ -42,6 +51,9 @@ import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET S
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET Slashmarketplace_listingSlashstubbedSlashplans`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET Slashnotifications`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET Slashorganizations`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunners`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`
@@ -89,6 +101,7 @@ import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET S
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`
+import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`
 import typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcomments`
@@ -196,6 +209,8 @@ import typings.octokitTypes.endpointsMod.ActionsListJobsForWorkflowRunEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListJobsForWorkflowRunResponseData
 import typings.octokitTypes.endpointsMod.ActionsListOrgSecretsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListOrgSecretsResponseData
+import typings.octokitTypes.endpointsMod.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData
 import typings.octokitTypes.endpointsMod.ActionsListRepoSecretsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListRepoSecretsResponseData
 import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowsEndpoint
@@ -206,10 +221,14 @@ import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForRepoEnd
 import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForRepoResponseData
 import typings.octokitTypes.endpointsMod.ActionsListSelectedReposForOrgSecretEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListSelectedReposForOrgSecretResponseData
+import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnerGroupsForOrgEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnerGroupsForOrgResponseData
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForOrgEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForOrgResponseData
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForRepoEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForRepoResponseData
+import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersInGroupForOrgEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersInGroupForOrgResponseData
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunArtifactsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunArtifactsResponseData
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsEndpoint
@@ -265,10 +284,22 @@ import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefEndpoint
 import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefResponseData
 import typings.octokitTypes.endpointsMod.CodeScanningListAlertsForRepoEndpoint
 import typings.octokitTypes.endpointsMod.CodeScanningListAlertsForRepoResponseData
+import typings.octokitTypes.endpointsMod.CodeScanningListRecentAnalysesEndpoint
+import typings.octokitTypes.endpointsMod.CodeScanningListRecentAnalysesResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData
 import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
 import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData
 import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
 import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData
 import typings.octokitTypes.endpointsMod.GistsListCommentsEndpoint
 import typings.octokitTypes.endpointsMod.GistsListCommentsResponseData
 import typings.octokitTypes.endpointsMod.GistsListCommitsEndpoint
@@ -531,13 +562,6536 @@ import typings.std.Extract
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@octokit/plugin-paginate-rest/dist-types/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
+  
+  @js.native
+  trait ComposePaginateInterface extends js.Object {
+    
+    /**
+      * Paginate a request using an known endpoint route string
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
+      * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      */
+    def apply(octokit: Octokit, route: `GET SlashappSlashinstallations`): js.Promise[AppsListInstallationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashappSlashinstallations`,
+      parameters: AppsListInstallationsEndpoint
+    ): js.Promise[AppsListInstallationsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashapplicationsSlashgrants`): js.Promise[OauthAuthorizationsListGrantsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashapplicationsSlashgrants`,
+      parameters: OauthAuthorizationsListGrantsEndpoint
+    ): js.Promise[OauthAuthorizationsListGrantsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashauthorizations`): js.Promise[OauthAuthorizationsListAuthorizationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashauthorizations`,
+      parameters: OauthAuthorizationsListAuthorizationsEndpoint
+    ): js.Promise[OauthAuthorizationsListAuthorizationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`
+    ): js.Promise[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
+    ): js.Promise[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashColongist_idSlashcomments`): js.Promise[GistsListCommentsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcomments`,
+      parameters: GistsListCommentsEndpoint
+    ): js.Promise[GistsListCommentsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashColongist_idSlashcommits`): js.Promise[GistsListCommitsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcommits`,
+      parameters: GistsListCommitsEndpoint
+    ): js.Promise[GistsListCommitsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashColongist_idSlashforks`): js.Promise[GistsListForksResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashforks`,
+      parameters: GistsListForksEndpoint
+    ): js.Promise[GistsListForksResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashpublic`): js.Promise[GistsListPublicResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashpublic`, parameters: GistsListPublicEndpoint): js.Promise[GistsListPublicResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashstarred`): js.Promise[GistsListStarredResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashgistsSlashstarred`, parameters: GistsListStarredEndpoint): js.Promise[GistsListStarredResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashgists`): js.Promise[GistsListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashgists`, parameters: GistsListEndpoint): js.Promise[GistsListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashinstallationSlashrepositories`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashinstallationSlashrepositories`,
+      parameters: AppsListReposAccessibleToInstallationEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET Slashissues`): js.Promise[IssuesListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashissues`, parameters: IssuesListEndpoint): js.Promise[IssuesListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`): js.Promise[AppsListAccountsForPlanResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
+      parameters: AppsListAccountsForPlanEndpoint
+    ): js.Promise[AppsListAccountsForPlanResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashmarketplace_listingSlashplans`): js.Promise[AppsListPlansResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplans`,
+      parameters: AppsListPlansEndpoint
+    ): js.Promise[AppsListPlansResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`
+    ): js.Promise[AppsListAccountsForPlanStubbedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
+      parameters: AppsListAccountsForPlanStubbedEndpoint
+    ): js.Promise[AppsListAccountsForPlanStubbedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashmarketplace_listingSlashstubbedSlashplans`): js.Promise[AppsListPlansStubbedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
+      parameters: AppsListPlansStubbedEndpoint
+    ): js.Promise[AppsListPlansStubbedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashnotifications`): js.Promise[ActivityListNotificationsForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET Slashnotifications`,
+      parameters: ActivityListNotificationsForAuthenticatedUserEndpoint
+    ): js.Promise[ActivityListNotificationsForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashorganizations`): js.Promise[OrgsListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashorganizations`, parameters: OrgsListEndpoint): js.Promise[OrgsListResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`): js.Promise[ActionsListRunnerApplicationsForOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
+      parameters: ActionsListRunnerApplicationsForOrgEndpoint
+    ): js.Promise[ActionsListRunnerApplicationsForOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersForOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      parameters: ActionsListSelectedReposForOrgSecretEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      parameters: ActionsListOrgSecretsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashblocks`): js.Promise[OrgsListBlockedUsersResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashblocks`,
+      parameters: OrgsListBlockedUsersEndpoint
+    ): js.Promise[OrgsListBlockedUsersResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`): js.Promise[OrgsListSamlSsoAuthorizationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
+      parameters: OrgsListSamlSsoAuthorizationsEndpoint
+    ): js.Promise[OrgsListSamlSsoAuthorizationsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashhooks`): js.Promise[OrgsListWebhooksResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashhooks`,
+      parameters: OrgsListWebhooksEndpoint
+    ): js.Promise[OrgsListWebhooksResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashinstallations`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinstallations`,
+      parameters: OrgsListAppInstallationsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`
+    ): js.Promise[OrgsListInvitationTeamsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
+      parameters: OrgsListInvitationTeamsEndpoint
+    ): js.Promise[OrgsListInvitationTeamsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashinvitations`): js.Promise[OrgsListPendingInvitationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitations`,
+      parameters: OrgsListPendingInvitationsEndpoint
+    ): js.Promise[OrgsListPendingInvitationsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashissues`): js.Promise[IssuesListForOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashissues`,
+      parameters: IssuesListForOrgEndpoint
+    ): js.Promise[IssuesListForOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashmembers`): js.Promise[OrgsListMembersResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmembers`,
+      parameters: OrgsListMembersEndpoint
+    ): js.Promise[OrgsListMembersResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`
+    ): js.Promise[MigrationsListReposForOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForOrgEndpoint
+    ): js.Promise[MigrationsListReposForOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashmigrations`): js.Promise[MigrationsListForOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrations`,
+      parameters: MigrationsListForOrgEndpoint
+    ): js.Promise[MigrationsListForOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`): js.Promise[OrgsListOutsideCollaboratorsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
+      parameters: OrgsListOutsideCollaboratorsEndpoint
+    ): js.Promise[OrgsListOutsideCollaboratorsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashprojects`): js.Promise[ProjectsListForOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashprojects`,
+      parameters: ProjectsListForOrgEndpoint
+    ): js.Promise[ProjectsListForOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashpublic_members`): js.Promise[OrgsListPublicMembersResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashpublic_members`,
+      parameters: OrgsListPublicMembersEndpoint
+    ): js.Promise[OrgsListPublicMembersResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashrepos`): js.Promise[ReposListForOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashrepos`,
+      parameters: ReposListForOrgEndpoint
+    ): js.Promise[ReposListForOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
+      parameters: TeamsListIdPGroupsForOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
+    ): js.Promise[ReactionsListForTeamDiscussionCommentInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionCommentInOrgEndpoint
+    ): js.Promise[ReactionsListForTeamDiscussionCommentInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`
+    ): js.Promise[TeamsListDiscussionCommentsInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      parameters: TeamsListDiscussionCommentsInOrgEndpoint
+    ): js.Promise[TeamsListDiscussionCommentsInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`
+    ): js.Promise[ReactionsListForTeamDiscussionInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionInOrgEndpoint
+    ): js.Promise[ReactionsListForTeamDiscussionInOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`): js.Promise[TeamsListDiscussionsInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
+      parameters: TeamsListDiscussionsInOrgEndpoint
+    ): js.Promise[TeamsListDiscussionsInOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`): js.Promise[TeamsListPendingInvitationsInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
+      parameters: TeamsListPendingInvitationsInOrgEndpoint
+    ): js.Promise[TeamsListPendingInvitationsInOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`): js.Promise[TeamsListMembersInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
+      parameters: TeamsListMembersInOrgEndpoint
+    ): js.Promise[TeamsListMembersInOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`): js.Promise[TeamsListProjectsInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
+      parameters: TeamsListProjectsInOrgEndpoint
+    ): js.Promise[TeamsListProjectsInOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`): js.Promise[TeamsListReposInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
+      parameters: TeamsListReposInOrgEndpoint
+    ): js.Promise[TeamsListReposInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
+      parameters: TeamsListIdPGroupsInOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`): js.Promise[TeamsListChildInOrgResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
+      parameters: TeamsListChildInOrgEndpoint
+    ): js.Promise[TeamsListChildInOrgResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteams`): js.Promise[TeamsListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteams`, parameters: TeamsListEndpoint): js.Promise[TeamsListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`): js.Promise[ProjectsListCollaboratorsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
+      parameters: ProjectsListCollaboratorsEndpoint
+    ): js.Promise[ProjectsListCollaboratorsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashprojectsSlashColonproject_idSlashcolumns`): js.Promise[ProjectsListColumnsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
+      parameters: ProjectsListColumnsEndpoint
+    ): js.Promise[ProjectsListColumnsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`): js.Promise[ProjectsListCardsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
+      parameters: ProjectsListCardsEndpoint
+    ): js.Promise[ProjectsListCardsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
+      parameters: ActionsListArtifactsForRepoEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`
+    ): js.Promise[ActionsListRunnerApplicationsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
+      parameters: ActionsListRunnerApplicationsForRepoEndpoint
+    ): js.Promise[ActionsListRunnerApplicationsForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersForRepoEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
+      parameters: ActionsListWorkflowRunArtifactsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
+      parameters: ActionsListJobsForWorkflowRunEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
+      parameters: ActionsListWorkflowRunsForRepoEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
+      parameters: ActionsListRepoSecretsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
+      parameters: ActionsListWorkflowRunsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
+      parameters: ActionsListRepoWorkflowsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`): js.Promise[IssuesListAssigneesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
+      parameters: IssuesListAssigneesEndpoint
+    ): js.Promise[IssuesListAssigneesResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`): js.Promise[ReposListBranchesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
+      parameters: ReposListBranchesEndpoint
+    ): js.Promise[ReposListBranchesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`
+    ): js.Promise[ChecksListAnnotationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
+      parameters: ChecksListAnnotationsEndpoint
+    ): js.Promise[ChecksListAnnotationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
+      parameters: ChecksListForSuiteEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`
+    ): js.Promise[CodeScanningListAlertsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      parameters: CodeScanningListAlertsForRepoEndpoint
+    ): js.Promise[CodeScanningListAlertsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`
+    ): js.Promise[CodeScanningListRecentAnalysesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      parameters: CodeScanningListRecentAnalysesEndpoint
+    ): js.Promise[CodeScanningListRecentAnalysesResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`): js.Promise[ReposListCollaboratorsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
+      parameters: ReposListCollaboratorsEndpoint
+    ): js.Promise[ReposListCollaboratorsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`
+    ): js.Promise[ReactionsListForCommitCommentResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForCommitCommentEndpoint
+    ): js.Promise[ReactionsListForCommitCommentResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`): js.Promise[ReposListCommitCommentsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
+      parameters: ReposListCommitCommentsForRepoEndpoint
+    ): js.Promise[ReposListCommitCommentsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`
+    ): js.Promise[ReposListBranchesForHeadCommitResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
+      parameters: ReposListBranchesForHeadCommitEndpoint
+    ): js.Promise[ReposListBranchesForHeadCommitResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`
+    ): js.Promise[ReposListCommentsForCommitResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
+      parameters: ReposListCommentsForCommitEndpoint
+    ): js.Promise[ReposListCommentsForCommitResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`
+    ): js.Promise[ReposListPullRequestsAssociatedWithCommitResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
+      parameters: ReposListPullRequestsAssociatedWithCommitEndpoint
+    ): js.Promise[ReposListPullRequestsAssociatedWithCommitResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
+      parameters: ChecksListForRefEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
+      parameters: ChecksListSuitesForRefEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`
+    ): js.Promise[ReposListCommitStatusesForRefResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
+      parameters: ReposListCommitStatusesForRefEndpoint
+    ): js.Promise[ReposListCommitStatusesForRefResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`): js.Promise[ReposListCommitsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
+      parameters: ReposListCommitsEndpoint
+    ): js.Promise[ReposListCommitsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`): js.Promise[ReposListContributorsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
+      parameters: ReposListContributorsEndpoint
+    ): js.Promise[ReposListContributorsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`
+    ): js.Promise[ReposListDeploymentStatusesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
+      parameters: ReposListDeploymentStatusesEndpoint
+    ): js.Promise[ReposListDeploymentStatusesResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`): js.Promise[ReposListDeploymentsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
+      parameters: ReposListDeploymentsEndpoint
+    ): js.Promise[ReposListDeploymentsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`): js.Promise[ReposListForksResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
+      parameters: ReposListForksEndpoint
+    ): js.Promise[ReposListForksResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`
+    ): js.Promise[GitListMatchingRefsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
+      parameters: GitListMatchingRefsEndpoint
+    ): js.Promise[GitListMatchingRefsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`): js.Promise[ReposListWebhooksResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
+      parameters: ReposListWebhooksEndpoint
+    ): js.Promise[ReposListWebhooksResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`): js.Promise[ReposListInvitationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
+      parameters: ReposListInvitationsEndpoint
+    ): js.Promise[ReposListInvitationsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`
+    ): js.Promise[IssuesListCommentsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
+      parameters: IssuesListCommentsEndpoint
+    ): js.Promise[IssuesListCommentsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`
+    ): js.Promise[IssuesListEventsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
+      parameters: IssuesListEventsEndpoint
+    ): js.Promise[IssuesListEventsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`
+    ): js.Promise[IssuesListLabelsOnIssueResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
+      parameters: IssuesListLabelsOnIssueEndpoint
+    ): js.Promise[IssuesListLabelsOnIssueResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`
+    ): js.Promise[ReactionsListForIssueResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
+      parameters: ReactionsListForIssueEndpoint
+    ): js.Promise[ReactionsListForIssueResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`
+    ): js.Promise[IssuesListEventsForTimelineResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
+      parameters: IssuesListEventsForTimelineEndpoint
+    ): js.Promise[IssuesListEventsForTimelineResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`
+    ): js.Promise[ReactionsListForIssueCommentResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForIssueCommentEndpoint
+    ): js.Promise[ReactionsListForIssueCommentResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`): js.Promise[IssuesListCommentsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
+      parameters: IssuesListCommentsForRepoEndpoint
+    ): js.Promise[IssuesListCommentsForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`): js.Promise[IssuesListEventsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
+      parameters: IssuesListEventsForRepoEndpoint
+    ): js.Promise[IssuesListEventsForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`): js.Promise[IssuesListForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
+      parameters: IssuesListForRepoEndpoint
+    ): js.Promise[IssuesListForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`): js.Promise[ReposListDeployKeysResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
+      parameters: ReposListDeployKeysEndpoint
+    ): js.Promise[ReposListDeployKeysResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`): js.Promise[IssuesListLabelsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
+      parameters: IssuesListLabelsForRepoEndpoint
+    ): js.Promise[IssuesListLabelsForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`): js.Promise[ReposListLanguagesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
+      parameters: ReposListLanguagesEndpoint
+    ): js.Promise[ReposListLanguagesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`
+    ): js.Promise[IssuesListLabelsForMilestoneResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
+      parameters: IssuesListLabelsForMilestoneEndpoint
+    ): js.Promise[IssuesListLabelsForMilestoneResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`): js.Promise[IssuesListMilestonesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
+      parameters: IssuesListMilestonesEndpoint
+    ): js.Promise[IssuesListMilestonesResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`): js.Promise[ActivityListRepoNotificationsForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
+      parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint
+    ): js.Promise[ActivityListRepoNotificationsForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`): js.Promise[ReposListPagesBuildsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
+      parameters: ReposListPagesBuildsEndpoint
+    ): js.Promise[ReposListPagesBuildsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`): js.Promise[ProjectsListForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
+      parameters: ProjectsListForRepoEndpoint
+    ): js.Promise[ProjectsListForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`
+    ): js.Promise[PullsListReviewCommentsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
+      parameters: PullsListReviewCommentsEndpoint
+    ): js.Promise[PullsListReviewCommentsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`
+    ): js.Promise[PullsListCommitsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
+      parameters: PullsListCommitsEndpoint
+    ): js.Promise[PullsListCommitsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`
+    ): js.Promise[PullsListFilesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
+      parameters: PullsListFilesEndpoint
+    ): js.Promise[PullsListFilesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
+      parameters: PullsListRequestedReviewersEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`
+    ): js.Promise[PullsListCommentsForReviewResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      parameters: PullsListCommentsForReviewEndpoint
+    ): js.Promise[PullsListCommentsForReviewResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`
+    ): js.Promise[PullsListReviewsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
+      parameters: PullsListReviewsEndpoint
+    ): js.Promise[PullsListReviewsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`
+    ): js.Promise[ReactionsListForPullRequestReviewCommentResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForPullRequestReviewCommentEndpoint
+    ): js.Promise[ReactionsListForPullRequestReviewCommentResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`): js.Promise[PullsListReviewCommentsForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
+      parameters: PullsListReviewCommentsForRepoEndpoint
+    ): js.Promise[PullsListReviewCommentsForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`): js.Promise[PullsListResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
+      parameters: PullsListEndpoint
+    ): js.Promise[PullsListResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`
+    ): js.Promise[ReposListReleaseAssetsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
+      parameters: ReposListReleaseAssetsEndpoint
+    ): js.Promise[ReposListReleaseAssetsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`): js.Promise[ReposListReleasesResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
+      parameters: ReposListReleasesEndpoint
+    ): js.Promise[ReposListReleasesResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`): js.Promise[
+        ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
+      parameters: ActivityListStargazersForRepoEndpoint
+    ): js.Promise[
+        ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`): js.Promise[ActivityListWatchersForRepoResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
+      parameters: ActivityListWatchersForRepoEndpoint
+    ): js.Promise[ActivityListWatchersForRepoResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`): js.Promise[ReposListTagsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
+      parameters: ReposListTagsEndpoint
+    ): js.Promise[ReposListTagsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`): js.Promise[ReposListTeamsResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
+      parameters: ReposListTeamsEndpoint
+    ): js.Promise[ReposListTeamsResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashrepositories`): js.Promise[ReposListPublicResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashrepositories`, parameters: ReposListPublicEndpoint): js.Promise[ReposListPublicResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
+      parameters: ScimListProvisionedIdentitiesEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashcode`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashcode`, parameters: SearchCodeEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashcommits`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashcommits`, parameters: SearchCommitsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashissues`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashsearchSlashissues`,
+      parameters: SearchIssuesAndPullRequestsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashlabels`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashlabels`, parameters: SearchLabelsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashrepositories`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashrepositories`, parameters: SearchReposEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashtopics`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashtopics`, parameters: SearchTopicsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashusers`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashsearchSlashusers`, parameters: SearchUsersEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
+    ): js.Promise[ReactionsListForTeamDiscussionCommentLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionCommentLegacyEndpoint
+    ): js.Promise[ReactionsListForTeamDiscussionCommentLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`
+    ): js.Promise[TeamsListDiscussionCommentsLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      parameters: TeamsListDiscussionCommentsLegacyEndpoint
+    ): js.Promise[TeamsListDiscussionCommentsLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`
+    ): js.Promise[ReactionsListForTeamDiscussionLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionLegacyEndpoint
+    ): js.Promise[ReactionsListForTeamDiscussionLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashdiscussions`): js.Promise[TeamsListDiscussionsLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
+      parameters: TeamsListDiscussionsLegacyEndpoint
+    ): js.Promise[TeamsListDiscussionsLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashinvitations`): js.Promise[TeamsListPendingInvitationsLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
+      parameters: TeamsListPendingInvitationsLegacyEndpoint
+    ): js.Promise[TeamsListPendingInvitationsLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashmembers`): js.Promise[TeamsListMembersLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashmembers`,
+      parameters: TeamsListMembersLegacyEndpoint
+    ): js.Promise[TeamsListMembersLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashprojects`): js.Promise[TeamsListProjectsLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashprojects`,
+      parameters: TeamsListProjectsLegacyEndpoint
+    ): js.Promise[TeamsListProjectsLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashrepos`): js.Promise[TeamsListReposLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashrepos`,
+      parameters: TeamsListReposLegacyEndpoint
+    ): js.Promise[TeamsListReposLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
+      parameters: TeamsListIdPGroupsForLegacyEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashteams`): js.Promise[TeamsListChildLegacyResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteams`,
+      parameters: TeamsListChildLegacyEndpoint
+    ): js.Promise[TeamsListChildLegacyResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashblocks`): js.Promise[UsersListBlockedByAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashblocks`,
+      parameters: UsersListBlockedByAuthenticatedEndpoint
+    ): js.Promise[UsersListBlockedByAuthenticatedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashemails`): js.Promise[UsersListEmailsForAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashemails`,
+      parameters: UsersListEmailsForAuthenticatedEndpoint
+    ): js.Promise[UsersListEmailsForAuthenticatedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashfollowers`): js.Promise[UsersListFollowersForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowers`,
+      parameters: UsersListFollowersForAuthenticatedUserEndpoint
+    ): js.Promise[UsersListFollowersForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashfollowing`): js.Promise[UsersListFollowedByAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowing`,
+      parameters: UsersListFollowedByAuthenticatedEndpoint
+    ): js.Promise[UsersListFollowedByAuthenticatedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashgpg_keys`): js.Promise[UsersListGpgKeysForAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashgpg_keys`,
+      parameters: UsersListGpgKeysForAuthenticatedEndpoint
+    ): js.Promise[UsersListGpgKeysForAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
+      parameters: AppsListInstallationReposForAuthenticatedUserEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashinstallations`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallations`,
+      parameters: AppsListInstallationsForAuthenticatedUserEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashissues`): js.Promise[IssuesListForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashissues`,
+      parameters: IssuesListForAuthenticatedUserEndpoint
+    ): js.Promise[IssuesListForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashkeys`): js.Promise[UsersListPublicSshKeysForAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashkeys`,
+      parameters: UsersListPublicSshKeysForAuthenticatedEndpoint
+    ): js.Promise[UsersListPublicSshKeysForAuthenticatedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`): js.Promise[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
+      parameters: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint
+    ): js.Promise[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashmarketplace_purchases`): js.Promise[AppsListSubscriptionsForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchases`,
+      parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint
+    ): js.Promise[AppsListSubscriptionsForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashmembershipsSlashorgs`): js.Promise[OrgsListMembershipsForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmembershipsSlashorgs`,
+      parameters: OrgsListMembershipsForAuthenticatedUserEndpoint
+    ): js.Promise[OrgsListMembershipsForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`): js.Promise[MigrationsListReposForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForUserEndpoint
+    ): js.Promise[MigrationsListReposForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashmigrations`): js.Promise[MigrationsListForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrations`,
+      parameters: MigrationsListForAuthenticatedUserEndpoint
+    ): js.Promise[MigrationsListForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashorgs`): js.Promise[OrgsListForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashorgs`,
+      parameters: OrgsListForAuthenticatedUserEndpoint
+    ): js.Promise[OrgsListForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashpublic_emails`): js.Promise[UsersListPublicEmailsForAuthenticatedResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashpublic_emails`,
+      parameters: UsersListPublicEmailsForAuthenticatedEndpoint
+    ): js.Promise[UsersListPublicEmailsForAuthenticatedResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashrepository_invitations`): js.Promise[ReposListInvitationsForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashrepository_invitations`,
+      parameters: ReposListInvitationsForAuthenticatedUserEndpoint
+    ): js.Promise[ReposListInvitationsForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashstarred`): js.Promise[
+        ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashstarred`,
+      parameters: ActivityListReposStarredByAuthenticatedUserEndpoint
+    ): js.Promise[
+        ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashsubscriptions`): js.Promise[ActivityListWatchedReposForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashsubscriptions`,
+      parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint
+    ): js.Promise[ActivityListWatchedReposForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashuserSlashteams`): js.Promise[TeamsListForAuthenticatedUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashuserSlashteams`,
+      parameters: TeamsListForAuthenticatedUserEndpoint
+    ): js.Promise[TeamsListForAuthenticatedUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashfollowers`): js.Promise[UsersListFollowersForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowers`,
+      parameters: UsersListFollowersForUserEndpoint
+    ): js.Promise[UsersListFollowersForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashfollowing`): js.Promise[UsersListFollowingForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowing`,
+      parameters: UsersListFollowingForUserEndpoint
+    ): js.Promise[UsersListFollowingForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashgists`): js.Promise[GistsListForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgists`,
+      parameters: GistsListForUserEndpoint
+    ): js.Promise[GistsListForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashgpg_keys`): js.Promise[UsersListGpgKeysForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
+      parameters: UsersListGpgKeysForUserEndpoint
+    ): js.Promise[UsersListGpgKeysForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashkeys`): js.Promise[UsersListPublicKeysForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashkeys`,
+      parameters: UsersListPublicKeysForUserEndpoint
+    ): js.Promise[UsersListPublicKeysForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashorgs`): js.Promise[OrgsListForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashorgs`,
+      parameters: OrgsListForUserEndpoint
+    ): js.Promise[OrgsListForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashprojects`): js.Promise[ProjectsListForUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashprojects`,
+      parameters: ProjectsListForUserEndpoint
+    ): js.Promise[ProjectsListForUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashstarred`): js.Promise[
+        ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
+      ] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashstarred`,
+      parameters: ActivityListReposStarredByUserEndpoint
+    ): js.Promise[
+        ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
+      ] = js.native
+    def apply(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashsubscriptions`): js.Promise[ActivityListReposWatchedByUserResponseData] = js.native
+    def apply(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
+      parameters: ActivityListReposWatchedByUserEndpoint
+    ): js.Promise[ActivityListReposWatchedByUserResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashusers`): js.Promise[UsersListResponseData] = js.native
+    def apply(octokit: Octokit, route: `GET Slashusers`, parameters: UsersListEndpoint): js.Promise[UsersListResponseData] = js.native
+    /**
+      * Paginate a request using endpoint options
+      *
+      * @param {object} octokit Octokit instance
+      * @param {object} endpoint Must set `method` and `url`. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      */
+    def apply[T](octokit: Octokit, options: EndpointOptions): js.Promise[PaginationResults[T]] = js.native
+    /**
+      * Paginate a request using an endpoint method and parameters
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} request Request method (`octokit.request` or `@octokit/request`)
+      * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      */
+    def apply[R /* <: RequestInterface[js.Object] */](octokit: Octokit, request: R): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+      ] = js.native
+    def apply[R /* <: RequestInterface[js.Object] */](
+      octokit: Octokit,
+      request: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+      ] = js.native
+    /**
+      * Paginate a request using a known endpoint route string and map each response to a custom array
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashappSlashinstallations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListInstallationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    /**
+      * Paginate a request using a known endpoint route string and parameters, and map each response to a custom array
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
+      * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashappSlashinstallations`,
+      parameters: AppsListInstallationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListInstallationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashapplicationsSlashgrants`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OauthAuthorizationsListGrantsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashapplicationsSlashgrants`,
+      parameters: OauthAuthorizationsListGrantsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OauthAuthorizationsListGrantsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashauthorizations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashauthorizations`,
+      parameters: OauthAuthorizationsListAuthorizationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListCommentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcomments`,
+      parameters: GistsListCommentsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListCommentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcommits`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListCommitsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcommits`,
+      parameters: GistsListCommitsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListCommitsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashforks`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListForksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashforks`,
+      parameters: GistsListForksEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListForksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashpublic`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListPublicResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashpublic`,
+      parameters: GistsListPublicEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListPublicResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashstarred`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListStarredResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashgistsSlashstarred`,
+      parameters: GistsListStarredEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListStarredResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashgists`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashgists`,
+      parameters: GistsListEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashinstallationSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashinstallationSlashrepositories`,
+      parameters: AppsListReposAccessibleToInstallationEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashissues`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashissues`,
+      parameters: IssuesListEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListAccountsForPlanResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
+      parameters: AppsListAccountsForPlanEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListAccountsForPlanResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplans`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListPlansResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplans`,
+      parameters: AppsListPlansEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListPlansResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListAccountsForPlanStubbedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
+      parameters: AppsListAccountsForPlanStubbedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListAccountsForPlanStubbedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListPlansStubbedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
+      parameters: AppsListPlansStubbedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListPlansStubbedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashnotifications`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListNotificationsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashnotifications`,
+      parameters: ActivityListNotificationsForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListNotificationsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashorganizations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashorganizations`,
+      parameters: OrgsListEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRunnerApplicationsForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
+      parameters: ActionsListRunnerApplicationsForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRunnerApplicationsForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      parameters: ActionsListSelectedReposForOrgSecretEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      parameters: ActionsListOrgSecretsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashblocks`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListBlockedUsersResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashblocks`,
+      parameters: OrgsListBlockedUsersEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListBlockedUsersResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
+      parameters: OrgsListSamlSsoAuthorizationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashhooks`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListWebhooksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashhooks`,
+      parameters: OrgsListWebhooksEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListWebhooksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinstallations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinstallations`,
+      parameters: OrgsListAppInstallationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListInvitationTeamsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
+      parameters: OrgsListInvitationTeamsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListInvitationTeamsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListPendingInvitationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitations`,
+      parameters: OrgsListPendingInvitationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListPendingInvitationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashissues`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashissues`,
+      parameters: IssuesListForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmembers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListMembersResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmembers`,
+      parameters: OrgsListMembersEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListMembersResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListReposForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListReposForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrations`,
+      parameters: MigrationsListForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListOutsideCollaboratorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
+      parameters: OrgsListOutsideCollaboratorsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListOutsideCollaboratorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashprojects`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashprojects`,
+      parameters: ProjectsListForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashpublic_members`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListPublicMembersResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashpublic_members`,
+      parameters: OrgsListPublicMembersEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListPublicMembersResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashrepos`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashrepos`,
+      parameters: ReposListForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListForOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
+      parameters: TeamsListIdPGroupsForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionCommentInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionCommentInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionCommentInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionCommentsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      parameters: TeamsListDiscussionCommentsInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionCommentsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
+      parameters: TeamsListDiscussionsInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListPendingInvitationsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
+      parameters: TeamsListPendingInvitationsInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListPendingInvitationsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListMembersInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
+      parameters: TeamsListMembersInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListMembersInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListProjectsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
+      parameters: TeamsListProjectsInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListProjectsInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListReposInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
+      parameters: TeamsListReposInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListReposInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
+      parameters: TeamsListIdPGroupsInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListChildInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
+      parameters: TeamsListChildInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListChildInOrgResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteams`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteams`,
+      parameters: TeamsListEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListCollaboratorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
+      parameters: ProjectsListCollaboratorsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListCollaboratorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListColumnsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
+      parameters: ProjectsListColumnsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListColumnsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListCardsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
+      parameters: ProjectsListCardsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListCardsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
+      parameters: ActionsListArtifactsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
+      parameters: ActionsListRunnerApplicationsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
+      parameters: ActionsListWorkflowRunArtifactsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
+      parameters: ActionsListJobsForWorkflowRunEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
+      parameters: ActionsListWorkflowRunsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
+      parameters: ActionsListRepoSecretsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
+      parameters: ActionsListWorkflowRunsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
+      parameters: ActionsListRepoWorkflowsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListAssigneesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
+      parameters: IssuesListAssigneesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListAssigneesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListBranchesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
+      parameters: ReposListBranchesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListBranchesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListAnnotationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
+      parameters: ChecksListAnnotationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListAnnotationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
+      parameters: ChecksListForSuiteEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListAlertsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      parameters: CodeScanningListAlertsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListAlertsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListRecentAnalysesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      parameters: CodeScanningListRecentAnalysesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListRecentAnalysesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCollaboratorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
+      parameters: ReposListCollaboratorsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCollaboratorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForCommitCommentResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForCommitCommentEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForCommitCommentResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommitCommentsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
+      parameters: ReposListCommitCommentsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommitCommentsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListBranchesForHeadCommitResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
+      parameters: ReposListBranchesForHeadCommitEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListBranchesForHeadCommitResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommentsForCommitResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
+      parameters: ReposListCommentsForCommitEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommentsForCommitResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
+      parameters: ReposListPullRequestsAssociatedWithCommitEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
+      parameters: ChecksListForRefEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
+      parameters: ChecksListSuitesForRefEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommitStatusesForRefResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
+      parameters: ReposListCommitStatusesForRefEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommitStatusesForRefResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommitsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
+      parameters: ReposListCommitsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListCommitsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListContributorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
+      parameters: ReposListContributorsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListContributorsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListDeploymentStatusesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
+      parameters: ReposListDeploymentStatusesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListDeploymentStatusesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListDeploymentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
+      parameters: ReposListDeploymentsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListDeploymentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListForksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
+      parameters: ReposListForksEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListForksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GitListMatchingRefsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
+      parameters: GitListMatchingRefsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GitListMatchingRefsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListWebhooksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
+      parameters: ReposListWebhooksEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListWebhooksResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListInvitationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
+      parameters: ReposListInvitationsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListInvitationsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListCommentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
+      parameters: IssuesListCommentsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListCommentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListEventsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
+      parameters: IssuesListEventsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListEventsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListLabelsOnIssueResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
+      parameters: IssuesListLabelsOnIssueEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListLabelsOnIssueResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForIssueResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
+      parameters: ReactionsListForIssueEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForIssueResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListEventsForTimelineResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
+      parameters: IssuesListEventsForTimelineEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListEventsForTimelineResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForIssueCommentResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForIssueCommentEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForIssueCommentResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListCommentsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
+      parameters: IssuesListCommentsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListCommentsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListEventsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
+      parameters: IssuesListEventsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListEventsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
+      parameters: IssuesListForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListDeployKeysResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
+      parameters: ReposListDeployKeysEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListDeployKeysResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListLabelsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
+      parameters: IssuesListLabelsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListLabelsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListLanguagesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
+      parameters: ReposListLanguagesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListLanguagesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListLabelsForMilestoneResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
+      parameters: IssuesListLabelsForMilestoneEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListLabelsForMilestoneResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListMilestonesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
+      parameters: IssuesListMilestonesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListMilestonesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
+      parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListPagesBuildsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
+      parameters: ReposListPagesBuildsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListPagesBuildsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
+      parameters: ProjectsListForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListReviewCommentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
+      parameters: PullsListReviewCommentsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListReviewCommentsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListCommitsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
+      parameters: PullsListCommitsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListCommitsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListFilesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
+      parameters: PullsListFilesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListFilesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
+      parameters: PullsListRequestedReviewersEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListCommentsForReviewResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      parameters: PullsListCommentsForReviewEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListCommentsForReviewResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListReviewsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
+      parameters: PullsListReviewsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListReviewsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForPullRequestReviewCommentResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForPullRequestReviewCommentEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForPullRequestReviewCommentResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListReviewCommentsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
+      parameters: PullsListReviewCommentsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListReviewCommentsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
+      parameters: PullsListEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListReleaseAssetsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
+      parameters: ReposListReleaseAssetsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListReleaseAssetsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListReleasesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
+      parameters: ReposListReleasesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListReleasesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[
+            ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
+          ], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
+      parameters: ActivityListStargazersForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[
+            ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
+          ], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListWatchersForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
+      parameters: ActivityListWatchersForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListWatchersForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListTagsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
+      parameters: ReposListTagsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListTagsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListTeamsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
+      parameters: ReposListTeamsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListTeamsResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListPublicResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashrepositories`,
+      parameters: ReposListPublicEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListPublicResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
+      parameters: ScimListProvisionedIdentitiesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashcode`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashcode`,
+      parameters: SearchCodeEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashcommits`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashcommits`,
+      parameters: SearchCommitsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashissues`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashissues`,
+      parameters: SearchIssuesAndPullRequestsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashlabels`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashlabels`,
+      parameters: SearchLabelsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashrepositories`,
+      parameters: SearchReposEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashtopics`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashtopics`,
+      parameters: SearchTopicsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashusers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashsearchSlashusers`,
+      parameters: SearchUsersEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionCommentLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionCommentLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionCommentLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionCommentsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      parameters: TeamsListDiscussionCommentsLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionCommentsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReactionsListForTeamDiscussionLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
+      parameters: TeamsListDiscussionsLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListDiscussionsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListPendingInvitationsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
+      parameters: TeamsListPendingInvitationsLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListPendingInvitationsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashmembers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListMembersLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashmembers`,
+      parameters: TeamsListMembersLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListMembersLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashprojects`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListProjectsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashprojects`,
+      parameters: TeamsListProjectsLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListProjectsLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashrepos`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListReposLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashrepos`,
+      parameters: TeamsListReposLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListReposLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
+      parameters: TeamsListIdPGroupsForLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteams`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListChildLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteams`,
+      parameters: TeamsListChildLegacyEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListChildLegacyResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashblocks`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListBlockedByAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashblocks`,
+      parameters: UsersListBlockedByAuthenticatedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListBlockedByAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashemails`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListEmailsForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashemails`,
+      parameters: UsersListEmailsForAuthenticatedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListEmailsForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowersForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowers`,
+      parameters: UsersListFollowersForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowersForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowing`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowedByAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowing`,
+      parameters: UsersListFollowedByAuthenticatedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowedByAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashgpg_keys`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashgpg_keys`,
+      parameters: UsersListGpgKeysForAuthenticatedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
+      parameters: AppsListInstallationReposForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallations`,
+      parameters: AppsListInstallationsForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashissues`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashissues`,
+      parameters: IssuesListForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[IssuesListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashkeys`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashkeys`,
+      parameters: UsersListPublicSshKeysForAuthenticatedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
+      parameters: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchases`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchases`,
+      parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmembershipsSlashorgs`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmembershipsSlashorgs`,
+      parameters: OrgsListMembershipsForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrations`,
+      parameters: MigrationsListForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashorgs`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashorgs`,
+      parameters: OrgsListForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashpublic_emails`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashpublic_emails`,
+      parameters: UsersListPublicEmailsForAuthenticatedEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashrepository_invitations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashrepository_invitations`,
+      parameters: ReposListInvitationsForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashstarred`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[
+            ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
+          ], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashstarred`,
+      parameters: ActivityListReposStarredByAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[
+            ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
+          ], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashsubscriptions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashsubscriptions`,
+      parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashteams`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashuserSlashteams`,
+      parameters: TeamsListForAuthenticatedUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[TeamsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowersForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowers`,
+      parameters: UsersListFollowersForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowersForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowing`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowingForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowing`,
+      parameters: UsersListFollowingForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListFollowingForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgists`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgists`,
+      parameters: GistsListForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[GistsListForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListGpgKeysForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
+      parameters: UsersListGpgKeysForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListGpgKeysForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashkeys`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListPublicKeysForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashkeys`,
+      parameters: UsersListPublicKeysForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListPublicKeysForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashorgs`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashorgs`,
+      parameters: OrgsListForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[OrgsListForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashprojects`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashprojects`,
+      parameters: ProjectsListForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ProjectsListForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashstarred`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[
+            ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
+          ], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashstarred`,
+      parameters: ActivityListReposStarredByUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[
+            ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
+          ], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListReposWatchedByUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
+      parameters: ActivityListReposWatchedByUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActivityListReposWatchedByUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashusers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      route: `GET Slashusers`,
+      parameters: UsersListEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[UsersListResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    /**
+      * Paginate a request using endpoint options and map each response to a custom array
+      *
+      * @param {object} octokit Octokit instance
+      * @param {object} endpoint Must set `method` and `url`. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
+    def apply[T, R](octokit: Octokit, options: EndpointOptions, mapFn: MapFunction[T, R]): js.Promise[PaginationResults[R]] = js.native
+    /**
+      * Paginate a request using an endpoint method and a map function
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} request Request method (`octokit.request` or `@octokit/request`)
+      * @param {function} mapFn? Optional method to map each response to a custom array
+      */
+    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      request: R,
+      mapFn: js.Function2[
+          /* response */ NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    /**
+      * Paginate a request using an endpoint method, parameters, and a map function
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} request Request method (`octokit.request` or `@octokit/request`)
+      * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      * @param {function} mapFn? Optional method to map each response to a custom array
+      */
+    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[_] */](
+      octokit: Octokit,
+      request: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
+      mapFn: js.Function2[
+          /* response */ NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
+          /* done */ js.UndefOr[js.Function0[Unit]], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[T, R /* <: Route */](
+      octokit: Octokit,
+      route: R,
+      parameters: RequestParameters | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any)
+    ): js.Promise[js.Array[T]] = js.native
+    
+    def iterator[T](octokit: Octokit, EndpointOptions: EndpointOptions): AsyncIterableIterator[OctokitResponse[PaginationResults[T]]] = js.native
+    def iterator[R /* <: RequestInterface[js.Object] */](octokit: Octokit, request: R): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
+    def iterator[T, R /* <: Route */](
+      octokit: Octokit,
+      route: R,
+      parameters: RequestParameters | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any)
+    ): AsyncIterableIterator[OctokitResponse[PaginationResults[T]]] = js.native
+    @JSName("iterator")
+    def iterator_0[R /* <: RequestInterface[js.Object] */](
+      octokit: Octokit,
+      request: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
+    ): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
+    @JSName("iterator")
+    def iterator_GETappinstallations(octokit: Octokit, route: `GET SlashappSlashinstallations`): AsyncIterableIterator[OctokitResponse[AppsListInstallationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETappinstallations(
+      octokit: Octokit,
+      route: `GET SlashappSlashinstallations`,
+      parameters: AppsListInstallationsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListInstallationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETapplicationsgrants(octokit: Octokit, route: `GET SlashapplicationsSlashgrants`): AsyncIterableIterator[OctokitResponse[OauthAuthorizationsListGrantsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETapplicationsgrants(
+      octokit: Octokit,
+      route: `GET SlashapplicationsSlashgrants`,
+      parameters: OauthAuthorizationsListGrantsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OauthAuthorizationsListGrantsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETauthorizations(octokit: Octokit, route: `GET Slashauthorizations`): AsyncIterableIterator[OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETauthorizations(
+      octokit: Octokit,
+      route: `GET Slashauthorizations`,
+      parameters: OauthAuthorizationsListAuthorizationsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroups(octokit: Octokit, route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroups(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidorganizations(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidorganizations(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidrunners(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidrunners(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunners(octokit: Octokit, route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunners(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnersdownloads(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`
+    ): AsyncIterableIterator[OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnersdownloads(
+      octokit: Octokit,
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
+    ): AsyncIterableIterator[OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgists(octokit: Octokit, route: `GET Slashgists`): AsyncIterableIterator[OctokitResponse[GistsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgists(octokit: Octokit, route: `GET Slashgists`, parameters: GistsListEndpoint): AsyncIterableIterator[OctokitResponse[GistsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsgistidcomments(octokit: Octokit, route: `GET SlashgistsSlashColongist_idSlashcomments`): AsyncIterableIterator[OctokitResponse[GistsListCommentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsgistidcomments(
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcomments`,
+      parameters: GistsListCommentsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[GistsListCommentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsgistidcommits(octokit: Octokit, route: `GET SlashgistsSlashColongist_idSlashcommits`): AsyncIterableIterator[OctokitResponse[GistsListCommitsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsgistidcommits(
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashcommits`,
+      parameters: GistsListCommitsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[GistsListCommitsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsgistidforks(octokit: Octokit, route: `GET SlashgistsSlashColongist_idSlashforks`): AsyncIterableIterator[OctokitResponse[GistsListForksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsgistidforks(
+      octokit: Octokit,
+      route: `GET SlashgistsSlashColongist_idSlashforks`,
+      parameters: GistsListForksEndpoint
+    ): AsyncIterableIterator[OctokitResponse[GistsListForksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistspublic(octokit: Octokit, route: `GET SlashgistsSlashpublic`): AsyncIterableIterator[OctokitResponse[GistsListPublicResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistspublic(octokit: Octokit, route: `GET SlashgistsSlashpublic`, parameters: GistsListPublicEndpoint): AsyncIterableIterator[OctokitResponse[GistsListPublicResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsstarred(octokit: Octokit, route: `GET SlashgistsSlashstarred`): AsyncIterableIterator[OctokitResponse[GistsListStarredResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETgistsstarred(octokit: Octokit, route: `GET SlashgistsSlashstarred`, parameters: GistsListStarredEndpoint): AsyncIterableIterator[OctokitResponse[GistsListStarredResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETinstallationrepositories(octokit: Octokit, route: `GET SlashinstallationSlashrepositories`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETinstallationrepositories(
+      octokit: Octokit,
+      route: `GET SlashinstallationSlashrepositories`,
+      parameters: AppsListReposAccessibleToInstallationEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETissues(octokit: Octokit, route: `GET Slashissues`): AsyncIterableIterator[OctokitResponse[IssuesListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETissues(octokit: Octokit, route: `GET Slashissues`, parameters: IssuesListEndpoint): AsyncIterableIterator[OctokitResponse[IssuesListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingplans(octokit: Octokit, route: `GET Slashmarketplace_listingSlashplans`): AsyncIterableIterator[OctokitResponse[AppsListPlansResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingplans(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplans`,
+      parameters: AppsListPlansEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListPlansResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingplansplanidaccounts(octokit: Octokit, route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`): AsyncIterableIterator[OctokitResponse[AppsListAccountsForPlanResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingplansplanidaccounts(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
+      parameters: AppsListAccountsForPlanEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListAccountsForPlanResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingstubbedplans(octokit: Octokit, route: `GET Slashmarketplace_listingSlashstubbedSlashplans`): AsyncIterableIterator[OctokitResponse[AppsListPlansStubbedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingstubbedplans(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
+      parameters: AppsListPlansStubbedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListPlansStubbedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingstubbedplansplanidaccounts(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`
+    ): AsyncIterableIterator[OctokitResponse[AppsListAccountsForPlanStubbedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETmarketplacelistingstubbedplansplanidaccounts(
+      octokit: Octokit,
+      route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
+      parameters: AppsListAccountsForPlanStubbedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListAccountsForPlanStubbedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETnotifications(octokit: Octokit, route: `GET Slashnotifications`): AsyncIterableIterator[OctokitResponse[ActivityListNotificationsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETnotifications(
+      octokit: Octokit,
+      route: `GET Slashnotifications`,
+      parameters: ActivityListNotificationsForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActivityListNotificationsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorganizations(octokit: Octokit, route: `GET Slashorganizations`): AsyncIterableIterator[OctokitResponse[OrgsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorganizations(octokit: Octokit, route: `GET Slashorganizations`, parameters: OrgsListEndpoint): AsyncIterableIterator[OctokitResponse[OrgsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroups(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroups(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrepositories(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrepositories(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrunners(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrunners(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunners(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunners(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersForOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnersdownloads(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`): AsyncIterableIterator[OctokitResponse[ActionsListRunnerApplicationsForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnersdownloads(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
+      parameters: ActionsListRunnerApplicationsForOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActionsListRunnerApplicationsForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionssecrets(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionssecrets(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      parameters: ActionsListOrgSecretsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionssecretssecretnamerepositories(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionssecretssecretnamerepositories(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      parameters: ActionsListSelectedReposForOrgSecretEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgblocks(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashblocks`): AsyncIterableIterator[OctokitResponse[OrgsListBlockedUsersResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgblocks(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashblocks`,
+      parameters: OrgsListBlockedUsersEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListBlockedUsersResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgcredentialauthorizations(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`): AsyncIterableIterator[OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgcredentialauthorizations(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
+      parameters: OrgsListSamlSsoAuthorizationsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorghooks(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashhooks`): AsyncIterableIterator[OctokitResponse[OrgsListWebhooksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorghooks(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashhooks`,
+      parameters: OrgsListWebhooksEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListWebhooksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorginstallations(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashinstallations`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorginstallations(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinstallations`,
+      parameters: OrgsListAppInstallationsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorginvitations(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashinvitations`): AsyncIterableIterator[OctokitResponse[OrgsListPendingInvitationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorginvitations(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitations`,
+      parameters: OrgsListPendingInvitationsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListPendingInvitationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorginvitationsinvitationidteams(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`
+    ): AsyncIterableIterator[OctokitResponse[OrgsListInvitationTeamsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorginvitationsinvitationidteams(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
+      parameters: OrgsListInvitationTeamsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListInvitationTeamsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgissues(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashissues`): AsyncIterableIterator[OctokitResponse[IssuesListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgissues(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashissues`,
+      parameters: IssuesListForOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgmembers(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashmembers`): AsyncIterableIterator[OctokitResponse[OrgsListMembersResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgmembers(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmembers`,
+      parameters: OrgsListMembersEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListMembersResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgmigrations(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashmigrations`): AsyncIterableIterator[OctokitResponse[MigrationsListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgmigrations(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrations`,
+      parameters: MigrationsListForOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[MigrationsListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgmigrationsmigrationidrepositories(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`
+    ): AsyncIterableIterator[OctokitResponse[MigrationsListReposForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgmigrationsmigrationidrepositories(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[MigrationsListReposForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgoutsidecollaborators(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`): AsyncIterableIterator[OctokitResponse[OrgsListOutsideCollaboratorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgoutsidecollaborators(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
+      parameters: OrgsListOutsideCollaboratorsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListOutsideCollaboratorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgprojects(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashprojects`): AsyncIterableIterator[OctokitResponse[ProjectsListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgprojects(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashprojects`,
+      parameters: ProjectsListForOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ProjectsListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgpublicmembers(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashpublic_members`): AsyncIterableIterator[OctokitResponse[OrgsListPublicMembersResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgpublicmembers(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashpublic_members`,
+      parameters: OrgsListPublicMembersEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListPublicMembersResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgrepos(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashrepos`): AsyncIterableIterator[OctokitResponse[ReposListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgrepos(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashrepos`,
+      parameters: ReposListForOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListForOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteams(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteams`): AsyncIterableIterator[OctokitResponse[TeamsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteams(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteams`, parameters: TeamsListEndpoint): AsyncIterableIterator[OctokitResponse[TeamsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussions(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussions(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
+      parameters: TeamsListDiscussionsInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussionsdiscussionnumbercomments(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`
+    ): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionCommentsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussionsdiscussionnumbercomments(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      parameters: TeamsListDiscussionCommentsInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionCommentsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussionsdiscussionnumbercommentscommentnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionCommentInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussionsdiscussionnumbercommentscommentnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionCommentInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionCommentInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussionsdiscussionnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugdiscussionsdiscussionnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamsluginvitations(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`): AsyncIterableIterator[OctokitResponse[TeamsListPendingInvitationsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamsluginvitations(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
+      parameters: TeamsListPendingInvitationsInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListPendingInvitationsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugmembers(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`): AsyncIterableIterator[OctokitResponse[TeamsListMembersInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugmembers(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
+      parameters: TeamsListMembersInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListMembersInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugprojects(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`): AsyncIterableIterator[OctokitResponse[TeamsListProjectsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugprojects(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
+      parameters: TeamsListProjectsInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListProjectsInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugrepos(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`): AsyncIterableIterator[OctokitResponse[TeamsListReposInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugrepos(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
+      parameters: TeamsListReposInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListReposInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugteams(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`): AsyncIterableIterator[OctokitResponse[TeamsListChildInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugteams(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
+      parameters: TeamsListChildInOrgEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListChildInOrgResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugteamsyncgroupmappings(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsteamslugteamsyncgroupmappings(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
+      parameters: TeamsListIdPGroupsInOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsyncgroups(octokit: Octokit, route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgteamsyncgroups(
+      octokit: Octokit,
+      route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
+      parameters: TeamsListIdPGroupsForOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETprojectscolumnscolumnidcards(octokit: Octokit, route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`): AsyncIterableIterator[OctokitResponse[ProjectsListCardsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETprojectscolumnscolumnidcards(
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
+      parameters: ProjectsListCardsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ProjectsListCardsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETprojectsprojectidcollaborators(octokit: Octokit, route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`): AsyncIterableIterator[OctokitResponse[ProjectsListCollaboratorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETprojectsprojectidcollaborators(
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
+      parameters: ProjectsListCollaboratorsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ProjectsListCollaboratorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETprojectsprojectidcolumns(octokit: Octokit, route: `GET SlashprojectsSlashColonproject_idSlashcolumns`): AsyncIterableIterator[OctokitResponse[ProjectsListColumnsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETprojectsprojectidcolumns(
+      octokit: Octokit,
+      route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
+      parameters: ProjectsListColumnsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ProjectsListColumnsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETrepositories(octokit: Octokit, route: `GET Slashrepositories`): AsyncIterableIterator[OctokitResponse[ReposListPublicResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETrepositories(octokit: Octokit, route: `GET Slashrepositories`, parameters: ReposListPublicEndpoint): AsyncIterableIterator[OctokitResponse[ReposListPublicResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsartifacts(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsartifacts(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
+      parameters: ActionsListArtifactsForRepoEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunners(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunners(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersForRepoEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunnersdownloads(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`
+    ): AsyncIterableIterator[OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunnersdownloads(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
+      parameters: ActionsListRunnerApplicationsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsruns(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
+      parameters: ActionsListWorkflowRunsForRepoEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunsrunidartifacts(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunsrunidartifacts(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
+      parameters: ActionsListWorkflowRunArtifactsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunsrunidjobs(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsrunsrunidjobs(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
+      parameters: ActionsListJobsForWorkflowRunEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionssecrets(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionssecrets(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
+      parameters: ActionsListRepoSecretsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsworkflows(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsworkflows(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
+      parameters: ActionsListRepoWorkflowsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsworkflowsworkflowidruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoactionsworkflowsworkflowidruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
+      parameters: ActionsListWorkflowRunsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoassignees(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`): AsyncIterableIterator[OctokitResponse[IssuesListAssigneesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoassignees(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
+      parameters: IssuesListAssigneesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListAssigneesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepobranches(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`): AsyncIterableIterator[OctokitResponse[ReposListBranchesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepobranches(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
+      parameters: ReposListBranchesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListBranchesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocheckrunscheckrunidannotations(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`
+    ): AsyncIterableIterator[OctokitResponse[ChecksListAnnotationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocheckrunscheckrunidannotations(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
+      parameters: ChecksListAnnotationsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ChecksListAnnotationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepochecksuiteschecksuiteidcheckruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepochecksuiteschecksuiteidcheckruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
+      parameters: ChecksListForSuiteEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocodescanningalerts(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`
+    ): AsyncIterableIterator[OctokitResponse[CodeScanningListAlertsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocodescanningalerts(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      parameters: CodeScanningListAlertsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[CodeScanningListAlertsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocodescanninganalyses(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`
+    ): AsyncIterableIterator[OctokitResponse[CodeScanningListRecentAnalysesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocodescanninganalyses(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      parameters: CodeScanningListRecentAnalysesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[CodeScanningListRecentAnalysesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocollaborators(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`): AsyncIterableIterator[OctokitResponse[ReposListCollaboratorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocollaborators(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
+      parameters: ReposListCollaboratorsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListCollaboratorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocomments(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`): AsyncIterableIterator[OctokitResponse[ReposListCommitCommentsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
+      parameters: ReposListCommitCommentsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListCommitCommentsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommentscommentidreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForCommitCommentResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommentscommentidreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForCommitCommentEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForCommitCommentResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommits(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`): AsyncIterableIterator[OctokitResponse[ReposListCommitsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommits(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
+      parameters: ReposListCommitsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListCommitsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitscommitshabrancheswherehead(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`
+    ): AsyncIterableIterator[OctokitResponse[ReposListBranchesForHeadCommitResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitscommitshabrancheswherehead(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
+      parameters: ReposListBranchesForHeadCommitEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListBranchesForHeadCommitResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitscommitshacomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`
+    ): AsyncIterableIterator[OctokitResponse[ReposListCommentsForCommitResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitscommitshacomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
+      parameters: ReposListCommentsForCommitEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListCommentsForCommitResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitscommitshapulls(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`
+    ): AsyncIterableIterator[OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitscommitshapulls(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
+      parameters: ReposListPullRequestsAssociatedWithCommitEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitsrefcheckruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitsrefcheckruns(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
+      parameters: ChecksListForRefEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitsrefchecksuites(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitsrefchecksuites(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
+      parameters: ChecksListSuitesForRefEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitsrefstatuses(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`
+    ): AsyncIterableIterator[OctokitResponse[ReposListCommitStatusesForRefResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocommitsrefstatuses(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
+      parameters: ReposListCommitStatusesForRefEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListCommitStatusesForRefResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocontributors(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`): AsyncIterableIterator[OctokitResponse[ReposListContributorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocontributors(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
+      parameters: ReposListContributorsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListContributorsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepodeployments(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`): AsyncIterableIterator[OctokitResponse[ReposListDeploymentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepodeployments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
+      parameters: ReposListDeploymentsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListDeploymentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepodeploymentsdeploymentidstatuses(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`
+    ): AsyncIterableIterator[OctokitResponse[ReposListDeploymentStatusesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepodeploymentsdeploymentidstatuses(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
+      parameters: ReposListDeploymentStatusesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListDeploymentStatusesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoforks(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`): AsyncIterableIterator[OctokitResponse[ReposListForksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoforks(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
+      parameters: ReposListForksEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListForksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepogitmatchingrefsref(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`
+    ): AsyncIterableIterator[OctokitResponse[GitListMatchingRefsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepogitmatchingrefsref(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
+      parameters: GitListMatchingRefsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[GitListMatchingRefsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepohooks(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`): AsyncIterableIterator[OctokitResponse[ReposListWebhooksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepohooks(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
+      parameters: ReposListWebhooksEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListWebhooksResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoinvitations(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`): AsyncIterableIterator[OctokitResponse[ReposListInvitationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoinvitations(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
+      parameters: ReposListInvitationsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListInvitationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissues(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`): AsyncIterableIterator[OctokitResponse[IssuesListForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissues(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
+      parameters: IssuesListForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuescomments(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`): AsyncIterableIterator[OctokitResponse[IssuesListCommentsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuescomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
+      parameters: IssuesListCommentsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListCommentsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuescommentscommentidreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForIssueCommentResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuescommentscommentidreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForIssueCommentEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForIssueCommentResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesevents(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`): AsyncIterableIterator[OctokitResponse[IssuesListEventsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesevents(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
+      parameters: IssuesListEventsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListEventsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumbercomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`
+    ): AsyncIterableIterator[OctokitResponse[IssuesListCommentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumbercomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
+      parameters: IssuesListCommentsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListCommentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumberevents(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`
+    ): AsyncIterableIterator[OctokitResponse[IssuesListEventsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumberevents(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
+      parameters: IssuesListEventsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListEventsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumberlabels(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`
+    ): AsyncIterableIterator[OctokitResponse[IssuesListLabelsOnIssueResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumberlabels(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
+      parameters: IssuesListLabelsOnIssueEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListLabelsOnIssueResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumberreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForIssueResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumberreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
+      parameters: ReactionsListForIssueEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForIssueResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumbertimeline(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`
+    ): AsyncIterableIterator[OctokitResponse[IssuesListEventsForTimelineResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoissuesissuenumbertimeline(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
+      parameters: IssuesListEventsForTimelineEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListEventsForTimelineResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepokeys(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`): AsyncIterableIterator[OctokitResponse[ReposListDeployKeysResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepokeys(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
+      parameters: ReposListDeployKeysEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListDeployKeysResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepolabels(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`): AsyncIterableIterator[OctokitResponse[IssuesListLabelsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepolabels(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
+      parameters: IssuesListLabelsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListLabelsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepolanguages(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`): AsyncIterableIterator[OctokitResponse[ReposListLanguagesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepolanguages(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
+      parameters: ReposListLanguagesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListLanguagesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepomilestones(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`): AsyncIterableIterator[OctokitResponse[IssuesListMilestonesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepomilestones(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
+      parameters: IssuesListMilestonesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListMilestonesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepomilestonesmilestonenumberlabels(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`
+    ): AsyncIterableIterator[OctokitResponse[IssuesListLabelsForMilestoneResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepomilestonesmilestonenumberlabels(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
+      parameters: IssuesListLabelsForMilestoneEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListLabelsForMilestoneResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreponotifications(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`): AsyncIterableIterator[OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreponotifications(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
+      parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopagesbuilds(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`): AsyncIterableIterator[OctokitResponse[ReposListPagesBuildsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopagesbuilds(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
+      parameters: ReposListPagesBuildsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListPagesBuildsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoprojects(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`): AsyncIterableIterator[OctokitResponse[ProjectsListForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoprojects(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
+      parameters: ProjectsListForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ProjectsListForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopulls(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`): AsyncIterableIterator[OctokitResponse[PullsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopulls(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
+      parameters: PullsListEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullscomments(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`): AsyncIterableIterator[OctokitResponse[PullsListReviewCommentsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullscomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
+      parameters: PullsListReviewCommentsForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListReviewCommentsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullscommentscommentidreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForPullRequestReviewCommentResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullscommentscommentidreactions(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
+      parameters: ReactionsListForPullRequestReviewCommentEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForPullRequestReviewCommentResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumbercomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`
+    ): AsyncIterableIterator[OctokitResponse[PullsListReviewCommentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumbercomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
+      parameters: PullsListReviewCommentsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListReviewCommentsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumbercommits(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`
+    ): AsyncIterableIterator[OctokitResponse[PullsListCommitsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumbercommits(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
+      parameters: PullsListCommitsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListCommitsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberfiles(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`
+    ): AsyncIterableIterator[OctokitResponse[PullsListFilesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberfiles(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
+      parameters: PullsListFilesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListFilesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberrequestedreviewers(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberrequestedreviewers(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
+      parameters: PullsListRequestedReviewersEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberreviews(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`
+    ): AsyncIterableIterator[OctokitResponse[PullsListReviewsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberreviews(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
+      parameters: PullsListReviewsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListReviewsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberreviewsreviewidcomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`
+    ): AsyncIterableIterator[OctokitResponse[PullsListCommentsForReviewResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepopullspullnumberreviewsreviewidcomments(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      parameters: PullsListCommentsForReviewEndpoint
+    ): AsyncIterableIterator[OctokitResponse[PullsListCommentsForReviewResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreporeleases(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`): AsyncIterableIterator[OctokitResponse[ReposListReleasesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreporeleases(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
+      parameters: ReposListReleasesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListReleasesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreporeleasesreleaseidassets(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`
+    ): AsyncIterableIterator[OctokitResponse[ReposListReleaseAssetsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreporeleasesreleaseidassets(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
+      parameters: ReposListReleaseAssetsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListReleaseAssetsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepostargazers(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`): AsyncIterableIterator[
+        OctokitResponse[
+          ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepostargazers(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
+      parameters: ActivityListStargazersForRepoEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreposubscribers(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`): AsyncIterableIterator[OctokitResponse[ActivityListWatchersForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerreposubscribers(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
+      parameters: ActivityListWatchersForRepoEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActivityListWatchersForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepotags(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`): AsyncIterableIterator[OctokitResponse[ReposListTagsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepotags(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
+      parameters: ReposListTagsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListTagsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoteams(octokit: Octokit, route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`): AsyncIterableIterator[OctokitResponse[ReposListTeamsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepoteams(
+      octokit: Octokit,
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
+      parameters: ReposListTeamsEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListTeamsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETscimv2enterprisesenterpriseGroups(octokit: Octokit, route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETscimv2enterprisesenterpriseGroups(
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETscimv2enterprisesenterpriseUsers(octokit: Octokit, route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETscimv2enterprisesenterpriseUsers(
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETscimv2organizationsorgUsers(octokit: Octokit, route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETscimv2organizationsorgUsers(
+      octokit: Octokit,
+      route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
+      parameters: ScimListProvisionedIdentitiesEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchcode(octokit: Octokit, route: `GET SlashsearchSlashcode`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchcode(octokit: Octokit, route: `GET SlashsearchSlashcode`, parameters: SearchCodeEndpoint): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchcommits(octokit: Octokit, route: `GET SlashsearchSlashcommits`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchcommits(octokit: Octokit, route: `GET SlashsearchSlashcommits`, parameters: SearchCommitsEndpoint): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchissues(octokit: Octokit, route: `GET SlashsearchSlashissues`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchissues(
+      octokit: Octokit,
+      route: `GET SlashsearchSlashissues`,
+      parameters: SearchIssuesAndPullRequestsEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchlabels(octokit: Octokit, route: `GET SlashsearchSlashlabels`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchlabels(octokit: Octokit, route: `GET SlashsearchSlashlabels`, parameters: SearchLabelsEndpoint): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchrepositories(octokit: Octokit, route: `GET SlashsearchSlashrepositories`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchrepositories(octokit: Octokit, route: `GET SlashsearchSlashrepositories`, parameters: SearchReposEndpoint): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchtopics(octokit: Octokit, route: `GET SlashsearchSlashtopics`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchtopics(octokit: Octokit, route: `GET SlashsearchSlashtopics`, parameters: SearchTopicsEndpoint): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchusers(octokit: Octokit, route: `GET SlashsearchSlashusers`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETsearchusers(octokit: Octokit, route: `GET SlashsearchSlashusers`, parameters: SearchUsersEndpoint): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussions(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashdiscussions`): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussions(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
+      parameters: TeamsListDiscussionsLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussionsdiscussionnumbercomments(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`
+    ): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionCommentsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussionsdiscussionnumbercomments(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
+      parameters: TeamsListDiscussionCommentsLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListDiscussionCommentsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussionsdiscussionnumbercommentscommentnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionCommentLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussionsdiscussionnumbercommentscommentnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionCommentLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionCommentLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussionsdiscussionnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamiddiscussionsdiscussionnumberreactions(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
+      parameters: ReactionsListForTeamDiscussionLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReactionsListForTeamDiscussionLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidinvitations(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashinvitations`): AsyncIterableIterator[OctokitResponse[TeamsListPendingInvitationsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidinvitations(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
+      parameters: TeamsListPendingInvitationsLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListPendingInvitationsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidmembers(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashmembers`): AsyncIterableIterator[OctokitResponse[TeamsListMembersLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidmembers(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashmembers`,
+      parameters: TeamsListMembersLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListMembersLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidprojects(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashprojects`): AsyncIterableIterator[OctokitResponse[TeamsListProjectsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidprojects(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashprojects`,
+      parameters: TeamsListProjectsLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListProjectsLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidrepos(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashrepos`): AsyncIterableIterator[OctokitResponse[TeamsListReposLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidrepos(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashrepos`,
+      parameters: TeamsListReposLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListReposLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidteams(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashteams`): AsyncIterableIterator[OctokitResponse[TeamsListChildLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidteams(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteams`,
+      parameters: TeamsListChildLegacyEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListChildLegacyResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidteamsyncgroupmappings(octokit: Octokit, route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETteamsteamidteamsyncgroupmappings(
+      octokit: Octokit,
+      route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
+      parameters: TeamsListIdPGroupsForLegacyEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETuserblocks(octokit: Octokit, route: `GET SlashuserSlashblocks`): AsyncIterableIterator[OctokitResponse[UsersListBlockedByAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserblocks(
+      octokit: Octokit,
+      route: `GET SlashuserSlashblocks`,
+      parameters: UsersListBlockedByAuthenticatedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListBlockedByAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuseremails(octokit: Octokit, route: `GET SlashuserSlashemails`): AsyncIterableIterator[OctokitResponse[UsersListEmailsForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuseremails(
+      octokit: Octokit,
+      route: `GET SlashuserSlashemails`,
+      parameters: UsersListEmailsForAuthenticatedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListEmailsForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserfollowers(octokit: Octokit, route: `GET SlashuserSlashfollowers`): AsyncIterableIterator[OctokitResponse[UsersListFollowersForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserfollowers(
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowers`,
+      parameters: UsersListFollowersForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListFollowersForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserfollowing(octokit: Octokit, route: `GET SlashuserSlashfollowing`): AsyncIterableIterator[OctokitResponse[UsersListFollowedByAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserfollowing(
+      octokit: Octokit,
+      route: `GET SlashuserSlashfollowing`,
+      parameters: UsersListFollowedByAuthenticatedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListFollowedByAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusergpgkeys(octokit: Octokit, route: `GET SlashuserSlashgpg_keys`): AsyncIterableIterator[OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusergpgkeys(
+      octokit: Octokit,
+      route: `GET SlashuserSlashgpg_keys`,
+      parameters: UsersListGpgKeysForAuthenticatedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserinstallations(octokit: Octokit, route: `GET SlashuserSlashinstallations`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETuserinstallations(
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallations`,
+      parameters: AppsListInstallationsForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETuserinstallationsinstallationidrepositories(
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETuserinstallationsinstallationidrepositories(
+      octokit: Octokit,
+      route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
+      parameters: AppsListInstallationReposForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETuserissues(octokit: Octokit, route: `GET SlashuserSlashissues`): AsyncIterableIterator[OctokitResponse[IssuesListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserissues(
+      octokit: Octokit,
+      route: `GET SlashuserSlashissues`,
+      parameters: IssuesListForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[IssuesListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserkeys(octokit: Octokit, route: `GET SlashuserSlashkeys`): AsyncIterableIterator[OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserkeys(
+      octokit: Octokit,
+      route: `GET SlashuserSlashkeys`,
+      parameters: UsersListPublicSshKeysForAuthenticatedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermarketplacepurchases(octokit: Octokit, route: `GET SlashuserSlashmarketplace_purchases`): AsyncIterableIterator[OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermarketplacepurchases(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchases`,
+      parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermarketplacepurchasesstubbed(octokit: Octokit, route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`): AsyncIterableIterator[OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermarketplacepurchasesstubbed(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
+      parameters: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermembershipsorgs(octokit: Octokit, route: `GET SlashuserSlashmembershipsSlashorgs`): AsyncIterableIterator[OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermembershipsorgs(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmembershipsSlashorgs`,
+      parameters: OrgsListMembershipsForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermigrations(octokit: Octokit, route: `GET SlashuserSlashmigrations`): AsyncIterableIterator[OctokitResponse[MigrationsListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermigrations(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrations`,
+      parameters: MigrationsListForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[MigrationsListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermigrationsmigrationidrepositories(octokit: Octokit, route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`): AsyncIterableIterator[OctokitResponse[MigrationsListReposForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusermigrationsmigrationidrepositories(
+      octokit: Octokit,
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[MigrationsListReposForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserorgs(octokit: Octokit, route: `GET SlashuserSlashorgs`): AsyncIterableIterator[OctokitResponse[OrgsListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserorgs(
+      octokit: Octokit,
+      route: `GET SlashuserSlashorgs`,
+      parameters: OrgsListForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserpublicemails(octokit: Octokit, route: `GET SlashuserSlashpublic_emails`): AsyncIterableIterator[OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserpublicemails(
+      octokit: Octokit,
+      route: `GET SlashuserSlashpublic_emails`,
+      parameters: UsersListPublicEmailsForAuthenticatedEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserrepositoryinvitations(octokit: Octokit, route: `GET SlashuserSlashrepository_invitations`): AsyncIterableIterator[OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserrepositoryinvitations(
+      octokit: Octokit,
+      route: `GET SlashuserSlashrepository_invitations`,
+      parameters: ReposListInvitationsForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusers(octokit: Octokit, route: `GET Slashusers`): AsyncIterableIterator[OctokitResponse[UsersListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusers(octokit: Octokit, route: `GET Slashusers`, parameters: UsersListEndpoint): AsyncIterableIterator[OctokitResponse[UsersListResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserstarred(octokit: Octokit, route: `GET SlashuserSlashstarred`): AsyncIterableIterator[
+        OctokitResponse[
+          ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETuserstarred(
+      octokit: Octokit,
+      route: `GET SlashuserSlashstarred`,
+      parameters: ActivityListReposStarredByAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETusersubscriptions(octokit: Octokit, route: `GET SlashuserSlashsubscriptions`): AsyncIterableIterator[OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersubscriptions(
+      octokit: Octokit,
+      route: `GET SlashuserSlashsubscriptions`,
+      parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamefollowers(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashfollowers`): AsyncIterableIterator[OctokitResponse[UsersListFollowersForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamefollowers(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowers`,
+      parameters: UsersListFollowersForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListFollowersForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamefollowing(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashfollowing`): AsyncIterableIterator[OctokitResponse[UsersListFollowingForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamefollowing(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashfollowing`,
+      parameters: UsersListFollowingForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListFollowingForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamegists(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashgists`): AsyncIterableIterator[OctokitResponse[GistsListForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamegists(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgists`,
+      parameters: GistsListForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[GistsListForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamegpgkeys(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashgpg_keys`): AsyncIterableIterator[OctokitResponse[UsersListGpgKeysForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamegpgkeys(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
+      parameters: UsersListGpgKeysForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListGpgKeysForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamekeys(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashkeys`): AsyncIterableIterator[OctokitResponse[UsersListPublicKeysForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamekeys(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashkeys`,
+      parameters: UsersListPublicKeysForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[UsersListPublicKeysForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernameorgs(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashorgs`): AsyncIterableIterator[OctokitResponse[OrgsListForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernameorgs(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashorgs`,
+      parameters: OrgsListForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[OrgsListForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernameprojects(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashprojects`): AsyncIterableIterator[OctokitResponse[ProjectsListForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernameprojects(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashprojects`,
+      parameters: ProjectsListForUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ProjectsListForUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamestarred(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashstarred`): AsyncIterableIterator[
+        OctokitResponse[
+          ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamestarred(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashstarred`,
+      parameters: ActivityListReposStarredByUserEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamesubscriptions(octokit: Octokit, route: `GET SlashusersSlashColonusernameSlashsubscriptions`): AsyncIterableIterator[OctokitResponse[ActivityListReposWatchedByUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETusersusernamesubscriptions(
+      octokit: Octokit,
+      route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
+      parameters: ActivityListReposWatchedByUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[ActivityListReposWatchedByUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserteams(octokit: Octokit, route: `GET SlashuserSlashteams`): AsyncIterableIterator[OctokitResponse[TeamsListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETuserteams(
+      octokit: Octokit,
+      route: `GET SlashuserSlashteams`,
+      parameters: TeamsListForAuthenticatedUserEndpoint
+    ): AsyncIterableIterator[OctokitResponse[TeamsListForAuthenticatedUserResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_TR_Route[T, R /* <: Route */](octokit: Octokit, route: R): AsyncIterableIterator[OctokitResponse[PaginationResults[T]]] = js.native
+  }
+  
   @js.native
   trait PaginateInterface extends js.Object {
+    
     /**
       * Paginate a request using an known endpoint route string
       *
@@ -550,6 +7104,51 @@ object typesMod extends js.Object {
     def apply(route: `GET SlashapplicationsSlashgrants`, parameters: OauthAuthorizationsListGrantsEndpoint): js.Promise[OauthAuthorizationsListGrantsResponseData] = js.native
     def apply(route: `GET Slashauthorizations`): js.Promise[OauthAuthorizationsListAuthorizationsResponseData] = js.native
     def apply(route: `GET Slashauthorizations`, parameters: OauthAuthorizationsListAuthorizationsEndpoint): js.Promise[OauthAuthorizationsListAuthorizationsResponseData] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+      ] = js.native
+    def apply(route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`): js.Promise[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
+    ): js.Promise[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData] = js.native
+    def apply(route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
     def apply(route: `GET SlashgistsSlashColongist_idSlashcomments`): js.Promise[GistsListCommentsResponseData] = js.native
     def apply(route: `GET SlashgistsSlashColongist_idSlashcomments`, parameters: GistsListCommentsEndpoint): js.Promise[GistsListCommentsResponseData] = js.native
     def apply(route: `GET SlashgistsSlashColongist_idSlashcommits`): js.Promise[GistsListCommitsResponseData] = js.native
@@ -563,13 +7162,13 @@ object typesMod extends js.Object {
     def apply(route: `GET Slashgists`): js.Promise[GistsListResponseData] = js.native
     def apply(route: `GET Slashgists`, parameters: GistsListEndpoint): js.Promise[GistsListResponseData] = js.native
     def apply(route: `GET SlashinstallationSlashrepositories`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashinstallationSlashrepositories`,
       parameters: AppsListReposAccessibleToInstallationEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
       ] = js.native
     def apply(route: `GET Slashissues`): js.Promise[IssuesListResponseData] = js.native
     def apply(route: `GET Slashissues`, parameters: IssuesListEndpoint): js.Promise[IssuesListResponseData] = js.native
@@ -594,37 +7193,68 @@ object typesMod extends js.Object {
     def apply(route: `GET Slashnotifications`, parameters: ActivityListNotificationsForAuthenticatedUserEndpoint): js.Promise[ActivityListNotificationsForAuthenticatedUserResponseData] = js.native
     def apply(route: `GET Slashorganizations`): js.Promise[OrgsListResponseData] = js.native
     def apply(route: `GET Slashorganizations`, parameters: OrgsListEndpoint): js.Promise[OrgsListResponseData] = js.native
+    def apply(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    def apply(route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+      ] = js.native
+    def apply(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+      ] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`): js.Promise[ActionsListRunnerApplicationsForOrgResponseData] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
       parameters: ActionsListRunnerApplicationsForOrgEndpoint
     ): js.Promise[ActionsListRunnerApplicationsForOrgResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForOrgEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       parameters: ActionsListSelectedReposForOrgSecretEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       parameters: ActionsListOrgSecretsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashblocks`): js.Promise[OrgsListBlockedUsersResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashblocks`, parameters: OrgsListBlockedUsersEndpoint): js.Promise[OrgsListBlockedUsersResponseData] = js.native
@@ -636,13 +7266,13 @@ object typesMod extends js.Object {
     def apply(route: `GET SlashorgsSlashColonorgSlashhooks`): js.Promise[OrgsListWebhooksResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashhooks`, parameters: OrgsListWebhooksEndpoint): js.Promise[OrgsListWebhooksResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashinstallations`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       parameters: OrgsListAppInstallationsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`): js.Promise[OrgsListInvitationTeamsResponseData] = js.native
     def apply(
@@ -677,13 +7307,13 @@ object typesMod extends js.Object {
     def apply(route: `GET SlashorgsSlashColonorgSlashrepos`): js.Promise[ReposListForOrgResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashrepos`, parameters: ReposListForOrgEndpoint): js.Promise[ReposListForOrgResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       parameters: TeamsListIdPGroupsForOrgEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
@@ -732,13 +7362,13 @@ object typesMod extends js.Object {
       parameters: TeamsListReposInOrgEndpoint
     ): js.Promise[TeamsListReposInOrgResponseData] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsInOrgEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`): js.Promise[TeamsListChildInOrgResponseData] = js.native
     def apply(
@@ -763,13 +7393,13 @@ object typesMod extends js.Object {
       parameters: ProjectsListCardsEndpoint
     ): js.Promise[ProjectsListCardsResponseData] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       parameters: ActionsListArtifactsForRepoEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`): js.Promise[ActionsListRunnerApplicationsForRepoResponseData] = js.native
     def apply(
@@ -777,71 +7407,71 @@ object typesMod extends js.Object {
       parameters: ActionsListRunnerApplicationsForRepoEndpoint
     ): js.Promise[ActionsListRunnerApplicationsForRepoResponseData] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForRepoEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       parameters: ActionsListWorkflowRunArtifactsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       parameters: ActionsListJobsForWorkflowRunEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       parameters: ActionsListWorkflowRunsForRepoEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       parameters: ActionsListRepoSecretsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       parameters: ActionsListWorkflowRunsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       parameters: ActionsListRepoWorkflowsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`): js.Promise[IssuesListAssigneesResponseData] = js.native
     def apply(
@@ -863,19 +7493,24 @@ object typesMod extends js.Object {
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       parameters: ChecksListForSuiteEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`): js.Promise[CodeScanningListAlertsForRepoResponseData] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
       parameters: CodeScanningListAlertsForRepoEndpoint
     ): js.Promise[CodeScanningListAlertsForRepoResponseData] = js.native
+    def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`): js.Promise[CodeScanningListRecentAnalysesResponseData] = js.native
+    def apply(
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      parameters: CodeScanningListRecentAnalysesEndpoint
+    ): js.Promise[CodeScanningListRecentAnalysesResponseData] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`): js.Promise[ReposListCollaboratorsResponseData] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
@@ -911,22 +7546,22 @@ object typesMod extends js.Object {
       parameters: ReposListPullRequestsAssociatedWithCommitEndpoint
     ): js.Promise[ReposListPullRequestsAssociatedWithCommitResponseData] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       parameters: ChecksListForRefEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       parameters: ChecksListSuitesForRefEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`): js.Promise[ReposListCommitStatusesForRefResponseData] = js.native
     def apply(
@@ -1081,13 +7716,13 @@ object typesMod extends js.Object {
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       parameters: PullsListRequestedReviewersEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`
@@ -1146,73 +7781,73 @@ object typesMod extends js.Object {
     def apply(route: `GET Slashrepositories`): js.Promise[ReposListPublicResponseData] = js.native
     def apply(route: `GET Slashrepositories`, parameters: ReposListPublicEndpoint): js.Promise[ReposListPublicResponseData] = js.native
     def apply(route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       parameters: ScimListProvisionedIdentitiesEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashcode`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashcode`, parameters: SearchCodeEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashcommits`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashcommits`, parameters: SearchCommitsEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashissues`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashissues`, parameters: SearchIssuesAndPullRequestsEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashlabels`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashlabels`, parameters: SearchLabelsEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashrepositories`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashrepositories`, parameters: SearchReposEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashtopics`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashtopics`, parameters: SearchTopicsEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashusers`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashsearchSlashusers`, parameters: SearchUsersEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
@@ -1248,13 +7883,13 @@ object typesMod extends js.Object {
     def apply(route: `GET SlashteamsSlashColonteam_idSlashrepos`): js.Promise[TeamsListReposLegacyResponseData] = js.native
     def apply(route: `GET SlashteamsSlashColonteam_idSlashrepos`, parameters: TeamsListReposLegacyEndpoint): js.Promise[TeamsListReposLegacyResponseData] = js.native
     def apply(route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsForLegacyEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashteamsSlashColonteam_idSlashteams`): js.Promise[TeamsListChildLegacyResponseData] = js.native
     def apply(route: `GET SlashteamsSlashColonteam_idSlashteams`, parameters: TeamsListChildLegacyEndpoint): js.Promise[TeamsListChildLegacyResponseData] = js.native
@@ -1269,22 +7904,22 @@ object typesMod extends js.Object {
     def apply(route: `GET SlashuserSlashgpg_keys`): js.Promise[UsersListGpgKeysForAuthenticatedResponseData] = js.native
     def apply(route: `GET SlashuserSlashgpg_keys`, parameters: UsersListGpgKeysForAuthenticatedEndpoint): js.Promise[UsersListGpgKeysForAuthenticatedResponseData] = js.native
     def apply(route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashuserSlashinstallations`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
       ] = js.native
     def apply(
       route: `GET SlashuserSlashinstallations`,
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
       ] = js.native
     def apply(route: `GET SlashuserSlashissues`): js.Promise[IssuesListForAuthenticatedUserResponseData] = js.native
     def apply(route: `GET SlashuserSlashissues`, parameters: IssuesListForAuthenticatedUserEndpoint): js.Promise[IssuesListForAuthenticatedUserResponseData] = js.native
@@ -1465,6 +8100,91 @@ object typesMod extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
       route: `GET SlashgistsSlashColongist_idSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListCommentsResponseData], 
@@ -1569,7 +8289,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashinstallationSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with Data, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1578,7 +8298,7 @@ object typesMod extends js.Object {
       route: `GET SlashinstallationSlashrepositories`,
       parameters: AppsListReposAccessibleToInstallationEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with Data, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1703,6 +8423,57 @@ object typesMod extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActionsListRunnerApplicationsForOrgResponseData], 
@@ -1722,7 +8493,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with DataArray, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1731,7 +8502,7 @@ object typesMod extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with DataArray, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1739,7 +8510,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `1`, 
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1748,7 +8519,7 @@ object typesMod extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       parameters: ActionsListSelectedReposForOrgSecretEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `1`, 
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1756,7 +8527,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1765,7 +8536,7 @@ object typesMod extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       parameters: ActionsListOrgSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1824,7 +8595,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `2`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1833,7 +8604,7 @@ object typesMod extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       parameters: OrgsListAppInstallationsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `2`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2011,7 +8782,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2020,7 +8791,7 @@ object typesMod extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       parameters: TeamsListIdPGroupsForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2164,7 +8935,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2173,7 +8944,7 @@ object typesMod extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsInOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2266,7 +9037,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2275,7 +9046,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       parameters: ActionsListArtifactsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2300,7 +9071,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with DataArray, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2309,7 +9080,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with DataArray, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2317,7 +9088,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2326,7 +9097,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       parameters: ActionsListWorkflowRunArtifactsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2334,7 +9105,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `6`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2343,7 +9114,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       parameters: ActionsListJobsForWorkflowRunEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `6`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2351,7 +9122,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2360,7 +9131,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       parameters: ActionsListWorkflowRunsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2368,7 +9139,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `7`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2377,7 +9148,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       parameters: ActionsListRepoSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `7`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2385,7 +9156,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2394,7 +9165,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       parameters: ActionsListWorkflowRunsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2402,7 +9173,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2411,7 +9182,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       parameters: ActionsListRepoWorkflowsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2470,7 +9241,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `9`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2479,7 +9250,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       parameters: ChecksListForSuiteEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `9`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2497,6 +9268,23 @@ object typesMod extends js.Object {
       parameters: CodeScanningListAlertsForRepoEndpoint,
       mapFn: js.Function2[
           /* response */ OctokitResponse[CodeScanningListAlertsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListRecentAnalysesResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    def apply[MR /* <: js.Array[_] */](
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      parameters: CodeScanningListRecentAnalysesEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListRecentAnalysesResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2606,7 +9394,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `9`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2615,7 +9403,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       parameters: ChecksListForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `9`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2623,7 +9411,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `10`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2632,7 +9420,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       parameters: ChecksListSuitesForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `10`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3133,7 +9921,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `11`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3142,7 +9930,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       parameters: PullsListRequestedReviewersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `11`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3358,7 +10146,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `12`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3367,7 +10155,7 @@ object typesMod extends js.Object {
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `12`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3375,7 +10163,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `12`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3384,7 +10172,7 @@ object typesMod extends js.Object {
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `12`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3392,7 +10180,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `12`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3401,7 +10189,7 @@ object typesMod extends js.Object {
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       parameters: ScimListProvisionedIdentitiesEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `12`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3409,7 +10197,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashcode`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCodeResponseData] with `13`, 
+          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3418,7 +10206,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashcode`,
       parameters: SearchCodeEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCodeResponseData] with `13`, 
+          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3426,7 +10214,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashcommits`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCommitsResponseData] with `14`, 
+          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3435,7 +10223,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashcommits`,
       parameters: SearchCommitsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCommitsResponseData] with `14`, 
+          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3443,7 +10231,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashissues`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `15`, 
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3452,7 +10240,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashissues`,
       parameters: SearchIssuesAndPullRequestsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `15`, 
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3460,7 +10248,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashlabels`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchLabelsResponseData] with `16`, 
+          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3469,7 +10257,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashlabels`,
       parameters: SearchLabelsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchLabelsResponseData] with `16`, 
+          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3477,7 +10265,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchReposResponseData] with `17`, 
+          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3486,7 +10274,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashrepositories`,
       parameters: SearchReposEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchReposResponseData] with `17`, 
+          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3494,7 +10282,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashtopics`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchTopicsResponseData] with `18`, 
+          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3503,7 +10291,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashtopics`,
       parameters: SearchTopicsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchTopicsResponseData] with `18`, 
+          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3511,7 +10299,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashsearchSlashusers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchUsersResponseData] with `19`, 
+          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3520,7 +10308,7 @@ object typesMod extends js.Object {
       route: `GET SlashsearchSlashusers`,
       parameters: SearchUsersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchUsersResponseData] with `19`, 
+          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3664,7 +10452,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `3`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3673,7 +10461,7 @@ object typesMod extends js.Object {
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsForLegacyEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `3`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3783,7 +10571,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `21`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3792,7 +10580,7 @@ object typesMod extends js.Object {
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `21`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3800,7 +10588,7 @@ object typesMod extends js.Object {
     def apply[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `20`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3809,7 +10597,7 @@ object typesMod extends js.Object {
       route: `GET SlashuserSlashinstallations`,
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `20`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4254,6 +11042,7 @@ object typesMod extends js.Object {
       route: R,
       parameters: RequestParameters | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any)
     ): js.Promise[js.Array[T]] = js.native
+    
     def iterator[T](EndpointOptions: EndpointOptions): AsyncIterableIterator[OctokitResponse[PaginationResults[T]]] = js.native
     def iterator[R /* <: RequestInterface[js.Object] */](request: R): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
     def iterator[T, R /* <: Route */](
@@ -4277,6 +11066,77 @@ object typesMod extends js.Object {
     def iterator_GETauthorizations(route: `GET Slashauthorizations`): AsyncIterableIterator[OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]] = js.native
     @JSName("iterator")
     def iterator_GETauthorizations(route: `GET Slashauthorizations`, parameters: OauthAuthorizationsListAuthorizationsEndpoint): AsyncIterableIterator[OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroups(route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroups(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
+      parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidorganizations(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidorganizations(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
+      parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidrunners(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnergroupsrunnergroupidrunners(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunners(route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunners(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
+      parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnersdownloads(route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`): AsyncIterableIterator[OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETenterprisesenterpriseactionsrunnersdownloads(
+      route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
+      parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
+    ): AsyncIterableIterator[OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData]] = js.native
     @JSName("iterator")
     def iterator_GETgists(route: `GET Slashgists`): AsyncIterableIterator[OctokitResponse[GistsListResponseData]] = js.native
     @JSName("iterator")
@@ -4304,7 +11164,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETinstallationrepositories(route: `GET SlashinstallationSlashrepositories`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4313,7 +11173,7 @@ object typesMod extends js.Object {
       parameters: AppsListReposAccessibleToInstallationEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4354,9 +11214,58 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETorganizations(route: `GET Slashorganizations`, parameters: OrgsListEndpoint): AsyncIterableIterator[OctokitResponse[OrgsListResponseData]] = js.native
     @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroups(route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroups(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
+      parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnerGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrepositories(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrepositories(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
+      parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrunners(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
+    def iterator_GETorgsorgactionsrunnergroupsrunnergroupidrunners(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
+      parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint
+    ): AsyncIterableIterator[
+        OctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersInGroupForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        ]
+      ] = js.native
+    @JSName("iterator")
     def iterator_GETorgsorgactionsrunners(route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4365,7 +11274,7 @@ object typesMod extends js.Object {
       parameters: ActionsListSelfHostedRunnersForOrgEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForOrgResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4378,7 +11287,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETorgsorgactionssecrets(route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4387,13 +11296,13 @@ object typesMod extends js.Object {
       parameters: ActionsListOrgSecretsEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETorgsorgactionssecretssecretnamerepositories(route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4402,7 +11311,7 @@ object typesMod extends js.Object {
       parameters: ActionsListSelectedReposForOrgSecretEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4423,7 +11332,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETorgsorginstallations(route: `GET SlashorgsSlashColonorgSlashinstallations`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4432,7 +11341,7 @@ object typesMod extends js.Object {
       parameters: OrgsListAppInstallationsEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4563,7 +11472,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETorgsorgteamsteamslugteamsyncgroupmappings(route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4572,13 +11481,13 @@ object typesMod extends js.Object {
       parameters: TeamsListIdPGroupsInOrgEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETorgsorgteamsyncgroups(route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4587,7 +11496,7 @@ object typesMod extends js.Object {
       parameters: TeamsListIdPGroupsForOrgEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4618,7 +11527,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETreposownerrepoactionsartifacts(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4627,13 +11536,13 @@ object typesMod extends js.Object {
       parameters: ActionsListArtifactsForRepoEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETreposownerrepoactionsrunners(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4642,7 +11551,7 @@ object typesMod extends js.Object {
       parameters: ActionsListSelfHostedRunnersForRepoEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.DataArray['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelfHostedRunnersForRepoResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4655,7 +11564,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETreposownerrepoactionsruns(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4664,7 +11573,7 @@ object typesMod extends js.Object {
       parameters: ActionsListWorkflowRunsForRepoEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4672,7 +11581,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4681,13 +11590,13 @@ object typesMod extends js.Object {
       parameters: ActionsListWorkflowRunArtifactsEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETreposownerrepoactionsrunsrunidjobs(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4696,13 +11605,13 @@ object typesMod extends js.Object {
       parameters: ActionsListJobsForWorkflowRunEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETreposownerrepoactionssecrets(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4711,13 +11620,13 @@ object typesMod extends js.Object {
       parameters: ActionsListRepoSecretsEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETreposownerrepoactionsworkflows(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4726,7 +11635,7 @@ object typesMod extends js.Object {
       parameters: ActionsListRepoWorkflowsEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4734,7 +11643,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4743,7 +11652,7 @@ object typesMod extends js.Object {
       parameters: ActionsListWorkflowRunsEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4774,7 +11683,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4783,7 +11692,7 @@ object typesMod extends js.Object {
       parameters: ChecksListForSuiteEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4793,6 +11702,13 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
       parameters: CodeScanningListAlertsForRepoEndpoint
     ): AsyncIterableIterator[OctokitResponse[CodeScanningListAlertsForRepoResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocodescanninganalyses(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`): AsyncIterableIterator[OctokitResponse[CodeScanningListRecentAnalysesResponseData]] = js.native
+    @JSName("iterator")
+    def iterator_GETreposownerrepocodescanninganalyses(
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
+      parameters: CodeScanningListRecentAnalysesEndpoint
+    ): AsyncIterableIterator[OctokitResponse[CodeScanningListRecentAnalysesResponseData]] = js.native
     @JSName("iterator")
     def iterator_GETreposownerrepocollaborators(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`): AsyncIterableIterator[OctokitResponse[ReposListCollaboratorsResponseData]] = js.native
     @JSName("iterator")
@@ -4849,7 +11765,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETreposownerrepocommitsrefcheckruns(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4858,13 +11774,13 @@ object typesMod extends js.Object {
       parameters: ChecksListForRefEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETreposownerrepocommitsrefchecksuites(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -4873,7 +11789,7 @@ object typesMod extends js.Object {
       parameters: ChecksListSuitesForRefEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5102,7 +12018,7 @@ object typesMod extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5111,7 +12027,7 @@ object typesMod extends js.Object {
       parameters: PullsListRequestedReviewersEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5177,7 +12093,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETscimv2enterprisesenterpriseGroups(route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5186,13 +12102,13 @@ object typesMod extends js.Object {
       parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETscimv2enterprisesenterpriseUsers(route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5201,13 +12117,13 @@ object typesMod extends js.Object {
       parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETscimv2organizationsorgUsers(route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5216,91 +12132,91 @@ object typesMod extends js.Object {
       parameters: ScimListProvisionedIdentitiesEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchcode(route: `GET SlashsearchSlashcode`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchcode(route: `GET SlashsearchSlashcode`, parameters: SearchCodeEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchcommits(route: `GET SlashsearchSlashcommits`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchcommits(route: `GET SlashsearchSlashcommits`, parameters: SearchCommitsEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchissues(route: `GET SlashsearchSlashissues`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchissues(route: `GET SlashsearchSlashissues`, parameters: SearchIssuesAndPullRequestsEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchlabels(route: `GET SlashsearchSlashlabels`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchlabels(route: `GET SlashsearchSlashlabels`, parameters: SearchLabelsEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchrepositories(route: `GET SlashsearchSlashrepositories`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchrepositories(route: `GET SlashsearchSlashrepositories`, parameters: SearchReposEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchtopics(route: `GET SlashsearchSlashtopics`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchtopics(route: `GET SlashsearchSlashtopics`, parameters: SearchTopicsEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.22['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchusers(route: `GET SlashsearchSlashusers`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETsearchusers(route: `GET SlashsearchSlashusers`, parameters: SearchUsersEndpoint): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.23['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5359,7 +12275,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETteamsteamidteamsyncgroupmappings(route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5368,7 +12284,7 @@ object typesMod extends js.Object {
       parameters: TeamsListIdPGroupsForLegacyEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5394,7 +12310,7 @@ object typesMod extends js.Object {
     @JSName("iterator")
     def iterator_GETuserinstallations(route: `GET SlashuserSlashinstallations`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5403,13 +12319,13 @@ object typesMod extends js.Object {
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.24['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
     def iterator_GETuserinstallationsinstallationidrepositories(route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5418,7 +12334,7 @@ object typesMod extends js.Object {
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint
     ): AsyncIterableIterator[
         OctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
         ]
       ] = js.native
     @JSName("iterator")
@@ -5573,15 +12489,20 @@ object typesMod extends js.Object {
   }
   
   type GetResultsType[T] = /* import warning: importer.ImportType#apply Failed type conversion: T['data'][@octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.KnownKeysMatching<T['data'], std.Array<any>>] */ js.Any
+  
   type KeysMatching[T, V] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends V? K : never}[keyof T] */ js.Any
+  
   type KnownKeys[T] = Extract[js.Any, /* keyof T */ String]
+  
   type KnownKeysMatching[T, V] = KeysMatching[Pick[T, KnownKeys[T]], V]
+  
   type MapFunction[T, R] = js.Function2[
     /* response */ OctokitResponse[PaginationResults[T]], 
     /* done */ js.Function0[Unit], 
     js.Array[R]
   ]
+  
   type NormalizeResponse[T] = T with DataGetResultsType[T]
+  
   type PaginationResults[T] = js.Array[T]
 }
-

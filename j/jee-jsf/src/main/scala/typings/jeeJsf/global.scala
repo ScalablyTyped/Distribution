@@ -4,25 +4,30 @@ import typings.jeeJsf.jsf.ajax.RequestData
 import typings.jeeJsf.jsf.ajax.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object jsf extends js.Object {
+    
     @js.native
     object ajax extends js.Object {
+      
       /**
         * Register a callback for error handling.
         * @param callback a reference to a function to call on an error
         */
       def addOnError(callback: js.Function1[/* data */ RequestData, Unit]): Unit = js.native
+      
       /**
         * Register a callback for event handling.
         * @param callback a reference to a function to call on an event
         */
       def addOnEvent(callback: js.Function1[/* data */ RequestData, Unit]): Unit = js.native
+      
       /**
         * Send an asynchronous Ajax request to the server.
         * @param source The DOM element that triggered this Ajax request, or an id string of the element to use as the triggering element.
@@ -33,6 +38,7 @@ object global extends js.Object {
       def request(source: js.Any, event: js.UndefOr[scala.Nothing], options: RequestOptions): Unit = js.native
       def request(source: js.Any, event: String): Unit = js.native
       def request(source: js.Any, event: String, options: RequestOptions): Unit = js.native
+      
       /**
         * Receive an Ajax response from the server.
         * @param request The XMLHttpRequest instance that contains the status code and response message from the server.
@@ -41,8 +47,5 @@ object global extends js.Object {
         */
       def response(request: js.Any, context: js.Any): Unit = js.native
     }
-    
   }
-  
 }
-

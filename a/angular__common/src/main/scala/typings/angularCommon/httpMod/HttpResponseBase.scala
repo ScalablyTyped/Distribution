@@ -3,7 +3,7 @@ package typings.angularCommon.httpMod
 import typings.angularCommon.anon.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpResponseBase")
 @js.native
@@ -20,4 +20,3 @@ abstract class HttpResponseBase protected ()
   def this(init: Headers, defaultStatus: js.UndefOr[scala.Nothing], defaultStatusText: String) = this()
   def this(init: Headers, defaultStatus: Double, defaultStatusText: String) = this()
 }
-

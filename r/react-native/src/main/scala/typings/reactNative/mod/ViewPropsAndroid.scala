@@ -2,20 +2,23 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewPropsAndroid extends js.Object {
+  
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
     * may be automatically removed from the native hierarchy as an optimization.
     * Set this property to false to disable this optimization and ensure that this View exists in the native view hierarchy.
     */
   var collapsable: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
     */
   var focusable: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether this view needs to rendered offscreen and composited with an alpha in order to preserve 100% correct colors and blending behavior.
     * The default (false) falls back to drawing the component and its children
@@ -31,6 +34,7 @@ trait ViewPropsAndroid extends js.Object {
     * saved in a hardware texture, and then composited onto the screen with an alpha each frame without having to switch rendering targets on the GPU.
     */
   var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether this view should render itself (and all of its children) into a single hardware texture on the GPU.
     *
@@ -40,41 +44,51 @@ trait ViewPropsAndroid extends js.Object {
     */
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
 }
-
 object ViewPropsAndroid {
+  
   @scala.inline
   def apply(): ViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewPropsAndroid]
   }
+  
   @scala.inline
   implicit class ViewPropsAndroidOps[Self <: ViewPropsAndroid] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCollapsable(value: Boolean): Self = this.set("collapsable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCollapsable: Self = this.set("collapsable", js.undefined)
+    
     @scala.inline
     def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFocusable: Self = this.set("focusable", js.undefined)
+    
     @scala.inline
     def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = this.set("needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNeedsOffscreenAlphaCompositing: Self = this.set("needsOffscreenAlphaCompositing", js.undefined)
+    
     @scala.inline
     def setRenderToHardwareTextureAndroid(value: Boolean): Self = this.set("renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRenderToHardwareTextureAndroid: Self = this.set("renderToHardwareTextureAndroid", js.undefined)
   }
-  
 }
-

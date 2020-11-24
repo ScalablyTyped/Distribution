@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "jsxFragment")
 @js.native
 object jsxFragment extends js.Object {
+  
   def apply(
     openingFragment: JSXOpeningFragment_,
     closingFragment: JSXClosingFragment_,
@@ -15,4 +16,3 @@ object jsxFragment extends js.Object {
     ]
   ): JSXFragment_ = js.native
 }
-

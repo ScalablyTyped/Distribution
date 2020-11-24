@@ -5,15 +5,12 @@ import typings.std.Record
 import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("define-properties", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /**
-    * Whether the current environment correctly supports property descriptors.
-    */
-  val supportsDescriptors: Boolean = js.native
+  
   /**
     * Defines new properties in `map` as non-enumerable if they don't already
     * exist on `object`.
@@ -28,5 +25,9 @@ object mod extends js.Object {
     map: M with ThisType[_],
     predicates: Partial[Record[/* keyof M */ String, js.Function0[Boolean]]]
   ): Unit = js.native
+  
+  /**
+    * Whether the current environment correctly supports property descriptors.
+    */
+  val supportsDescriptors: Boolean = js.native
 }
-

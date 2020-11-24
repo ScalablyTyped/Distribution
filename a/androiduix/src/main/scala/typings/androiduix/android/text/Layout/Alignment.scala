@@ -2,14 +2,14 @@ package typings.androiduix.android.text.Layout
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Alignment extends js.Object
-
 @JSGlobal("android.text.Layout.Alignment")
 @js.native
 object Alignment extends js.Object {
+  
   @js.native
   sealed trait ALIGN_CENTER extends Alignment
   
@@ -24,6 +24,4 @@ object Alignment extends js.Object {
   
   @js.native
   sealed trait ALIGN_RIGHT extends Alignment
-  
 }
-

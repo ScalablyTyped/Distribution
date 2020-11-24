@@ -3,9 +3,22 @@ package typings.mermaid
 import typings.mermaid.mermaidAPIMod.mermaidAPI.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mermaidStrings {
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def forest: forest = "forest".asInstanceOf[forest]
+  
+  @scala.inline
+  def neutral: neutral = "neutral".asInstanceOf[neutral]
+  
   @js.native
   sealed trait dark extends Theme
   
@@ -17,14 +30,4 @@ object mermaidStrings {
   
   @js.native
   sealed trait neutral extends Theme
-  
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def forest: forest = "forest".asInstanceOf[forest]
-  @scala.inline
-  def neutral: neutral = "neutral".asInstanceOf[neutral]
 }
-

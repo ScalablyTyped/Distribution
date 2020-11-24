@@ -2,11 +2,12 @@ package typings.vscodeLanguageclient.clientMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "SignatureInformation")
 @js.native
 object SignatureInformation extends js.Object {
+  
   def create(
     label: String,
     documentation: js.UndefOr[scala.Nothing],
@@ -18,4 +19,3 @@ object SignatureInformation extends js.Object {
     parameters: typings.vscodeLanguageserverTypes.mod.ParameterInformation*
   ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = js.native
 }
-

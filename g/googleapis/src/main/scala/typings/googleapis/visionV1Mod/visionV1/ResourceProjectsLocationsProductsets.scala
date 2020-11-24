@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations$Productsets")
 @js.native
 class ResourceProjectsLocationsProductsets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var products: ResourceProjectsLocationsProductsetsProducts = js.native
+  
   /**
     * vision.projects.locations.productSets.addProduct
     * @desc Adds a Product to the specified ProductSet. If the Product is
@@ -49,6 +48,9 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * vision.projects.locations.productSets.create
     * @desc Creates and returns a new ProductSet resource.  Possible errors:  *
@@ -84,6 +86,7 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductSet]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.productSets.delete
     * @desc Permanently deletes a ProductSet. Products and ReferenceImages in
@@ -118,6 +121,7 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.productSets.get
     * @desc Gets information associated with a ProductSet.  Possible errors:  *
@@ -150,6 +154,7 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductSet]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.productSets.import
     * @desc Asynchronous API that imports a list of reference images to specified
@@ -189,6 +194,7 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.productSets.list
     * @desc Lists ProductSets in an unspecified order.  Possible errors:  * Returns INVALID_ARGUMENT if page_size is greater than 100, or less   than 1.
@@ -222,6 +228,7 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListProductSetsResponse]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.productSets.patch
     * @desc Makes changes to a ProductSet resource. Only display_name can be
@@ -259,6 +266,9 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductSet]
   ): Unit = js.native
+  
+  var products: ResourceProjectsLocationsProductsetsProducts = js.native
+  
   /**
     * vision.projects.locations.productSets.removeProduct
     * @desc Removes a Product from the specified ProductSet.  Possible errors:
@@ -293,4 +303,3 @@ class ResourceProjectsLocationsProductsets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

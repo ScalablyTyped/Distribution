@@ -13,10 +13,11 @@ import typings.rpio.rpioStrings.gpio
 import typings.rpio.rpioStrings.physical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options extends js.Object {
+  
   /**
     * There are two device nodes for GPIO access. The default is /dev/gpiomem which, when configured with gpio group access, allows users in that group to read/write directly to that device. This removes the need to run as root, but is limited to GPIO functions.
     * For non-GPIO functions (i²c, PWM, SPI) the /dev/mem device is required for full access to the Broadcom peripheral address range and the program needs to be executed as the root user (e.g. via sudo). If you do not explicitly call .init() when using those functions, the library will do it for you with gpiomem: false.
@@ -28,6 +29,7 @@ trait Options extends js.Object {
     * false: use /dev/mem for full access but requires root
     */
   var gpiomem: js.UndefOr[Boolean] = js.native
+  
   /**
     * There are two naming schemes when referring to GPIO pins:
     * By their physical header location: Pins 1 to 26 (A/B) or Pins 1 to 40 (A+/B+)
@@ -42,6 +44,7 @@ trait Options extends js.Object {
     * physical: use the physical P01-P40 header layou
     */
   var mapping: js.UndefOr[gpio | physical] = js.native
+  
   /**
     * Mock mode is a dry-run environment where everything except pin access is performed. This is useful for testing scripts, and can also be used on systems which do not support GPIO at all.
     * If rpio is executed on unsupported hardware it will automatically start up in mock mode, and a warn event is emitted. By default the warn event is handled by a simple logger to stdout, but this can be overridden by the user creating their own warn handler.
@@ -51,39 +54,47 @@ trait Options extends js.Object {
     `raspi-b-r1` | `raspi-a` | `raspi-b` | `raspi-aPlussign` | `raspi-bPlussign` | `raspi-2` | `raspi-3` | `raspi-zero` | `raspi-zero-w`
   ] = js.native
 }
-
 object Options {
+  
   @scala.inline
   def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
+  
   @scala.inline
   implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGpiomem(value: Boolean): Self = this.set("gpiomem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGpiomem: Self = this.set("gpiomem", js.undefined)
+    
     @scala.inline
     def setMapping(value: gpio | physical): Self = this.set("mapping", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMapping: Self = this.set("mapping", js.undefined)
+    
     @scala.inline
     def setMock(
       value: `raspi-b-r1` | `raspi-a` | `raspi-b` | `raspi-aPlussign` | `raspi-bPlussign` | `raspi-2` | `raspi-3` | `raspi-zero` | `raspi-zero-w`
     ): Self = this.set("mock", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMock: Self = this.set("mock", js.undefined)
   }
-  
 }
-

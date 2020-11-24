@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FloatingObjectRelativeWidthType extends js.Object
-
 /**
   * Lists values specifying to what element the floating object width is relative.
   */
 @JSGlobal("FloatingObjectRelativeWidthType")
 @js.native
 object FloatingObjectRelativeWidthType extends js.Object {
+  
   /**
     * Relative to inside margin.
     */
@@ -48,6 +48,4 @@ object FloatingObjectRelativeWidthType extends js.Object {
     */
   @js.native
   sealed trait RightMargin extends FloatingObjectRelativeWidthType
-  
 }
-

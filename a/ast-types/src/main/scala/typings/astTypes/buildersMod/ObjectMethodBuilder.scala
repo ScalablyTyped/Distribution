@@ -1,6 +1,6 @@
 package typings.astTypes.buildersMod
 
-import typings.astTypes.AnonAccessibilityAsync
+import typings.astTypes.anon.ReturnType
 import typings.astTypes.astTypesStrings.get
 import typings.astTypes.astTypesStrings.method
 import typings.astTypes.astTypesStrings.set
@@ -12,10 +12,11 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.namedTypesMod.namedTypes.ObjectMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectMethodBuilder extends js.Object {
+  
   def apply(kind: get, key: ExpressionKind, params: js.Array[PatternKind], body: BlockStatementKind): ObjectMethod = js.native
   def apply(
     kind: get,
@@ -88,6 +89,6 @@ trait ObjectMethodBuilder extends js.Object {
     body: BlockStatementKind,
     computed: Boolean
   ): ObjectMethod = js.native
-  def from(params: AnonAccessibilityAsync): ObjectMethod = js.native
+  
+  def from(params: ReturnType): ObjectMethod = js.native
 }
-

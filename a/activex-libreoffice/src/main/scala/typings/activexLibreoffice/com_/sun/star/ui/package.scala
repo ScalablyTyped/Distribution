@@ -2,22 +2,26 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object ui {
+  
   /**
     * Multiplex events for context changes.
     *
     * A typical listener for context changes is the sidebar.
     */
   type ContextChangeEventMultiplexer = typings.activexLibreoffice.com_.sun.star.ui.XContextChangeEventMultiplexer
+  
   /**
     * provides access to the global accelerator (aka shortcut) configuration set.
     * @since OOo 2.0
     */
   type GlobalAcceleratorConfiguration = typings.activexLibreoffice.com_.sun.star.ui.XAcceleratorConfiguration
+  
   /** @since LibreOffice 4.1 */
   type ImageManager = typings.activexLibreoffice.com_.sun.star.ui.XImageManager
+  
   /**
     * a service which provides information about the user interface command categories of a single module.
     *
@@ -26,6 +30,7 @@ package object ui {
     * @since OOo 2.0
     */
   type ModuleUICategoryDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * a service which provides information about the user interface commands of a single module.
     *
@@ -34,6 +39,7 @@ package object ui {
     * @since OOo 2.0
     */
   type ModuleUICommandDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * a service which provides window based information about user interface elements of a single application module.
     *
@@ -43,17 +49,20 @@ package object ui {
     * @since OOo 2.0
     */
   type ModuleWindowStateConfiguration = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+  
   /**
     * A legacy (single-instance) service-variant of {@link theUICategoryDescription} singleton.
     * @deprecated DeprecatedUse theUICategoryDescription singleton instead.
     * @since OOo 2.0
     */
   type UICategoryDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * specifies a user interface configuration manager which controls all customizable user interface elements of an object.
     * @since OOo 2.0
     */
   type UIConfigurationManager = typings.activexLibreoffice.com_.sun.star.ui.XUIConfigurationManager2
+  
   /**
     * specifies a user interface element factory that can create and initialize a user interface element type.
     *
@@ -63,12 +72,14 @@ package object ui {
     * @since OOo 2.0
     */
   type UIElementFactory = typings.activexLibreoffice.com_.sun.star.ui.XUIElementFactory
+  
   /**
     * A legacy (single-instance) service-variant of {@link theUIElementFactoryManager} singleton.
     * @deprecated DeprecatedUse theUIElementFactoryManager singleton instead.
     * @since OOo 2.0
     */
   type UIElementFactoryManager = typings.activexLibreoffice.com_.sun.star.ui.XUIElementFactoryManager
+  
   /**
     * specifies a factory which creates a window that is a container for user interface elements. Dependent on the provided arguments different window types
     * can be created. This container window must be capable of being integrated into another window (e.g. docking or floating windows).
@@ -77,18 +88,21 @@ package object ui {
     * @since OOo 3.1
     */
   type WindowContentFactory = typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
+  
   /**
     * A legacy (single-instance) service-variant of {@link theWindowContentFactoryManager} singleton.
     * @deprecated DeprecatedUse theWindowContentFactoryManager singleton instead.
     * @since LibreOffice 4.1
     */
   type WindowContentFactoryManager = typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
+  
   /**
     * A legacy (single-instance) service-variant of {@link theWindowStateConfiguration} singleton.
     * @deprecated DeprecatedUse theWindowStateConfiguration singleton instead.
     * @since OOo 2.0
     */
   type WindowStateConfiguration = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * specifies a central user interface configuration provider which gives access to module based user interface configuration managers.
     *
@@ -101,6 +115,7 @@ package object ui {
     * @since LibreOffice 4.3
     */
   type theModuleUIConfigurationManagerSupplier = typings.activexLibreoffice.com_.sun.star.ui.XModuleUIConfigurationManagerSupplier
+  
   /**
     * a singleton which provides information about user interface command categories.
     *
@@ -117,6 +132,7 @@ package object ui {
     * @since LibreOffice 4.3
     */
   type theUICategoryDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+  
   /**
     * specifies a user interface factory manager that controls all registered user interface element factories.
     *
@@ -124,6 +140,7 @@ package object ui {
     * @since LibreOffice 4.3
     */
   type theUIElementFactoryManager = typings.activexLibreoffice.com_.sun.star.ui.XUIElementFactoryManager
+  
   /**
     * This interface could be incomplete since I derived it from its sole place of use.
     *
@@ -131,6 +148,7 @@ package object ui {
     * @since LibreOffice 4.3
     */
   type theWindowContentFactoryManager = typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
+  
   /**
     * a singleton which provides window based information about user interface elements.
     *

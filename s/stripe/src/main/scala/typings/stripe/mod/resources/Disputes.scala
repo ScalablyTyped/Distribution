@@ -11,11 +11,12 @@ import typings.stripe.mod.disputes.IDispute
 import typings.stripe.mod.disputes.IDisputeUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Disputes")
 @js.native
 class Disputes () extends StripeResource {
+  
   def close(disputeId: String): js.Promise[IDispute] = js.native
   /**
     * Closing the dispute for a charge indicates that you do not have any evidence to submit and are
@@ -28,8 +29,10 @@ class Disputes () extends StripeResource {
   def close(disputeId: String, options: HeaderOptions): js.Promise[IDispute] = js.native
   def close(disputeId: String, options: HeaderOptions, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
   def close(disputeId: String, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
+  
    // TODO: Implement placeholder method
   def getMetadata(): Unit = js.native
+  
   def list(): IListPromise[IDispute] = js.native
   def list(data: IListOptionsCreated): IListPromise[IDispute] = js.native
   /**
@@ -41,6 +44,7 @@ class Disputes () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IDispute] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IDispute]]): IListPromise[IDispute] = js.native
   def list(response: IResponseFn[IList[IDispute]]): IListPromise[IDispute] = js.native
+  
   def retrieve(disputeId: String): js.Promise[IDispute] = js.native
   def retrieve(disputeId: String, data: IDataOptions): js.Promise[IDispute] = js.native
   /**
@@ -52,7 +56,9 @@ class Disputes () extends StripeResource {
   def retrieve(disputeId: String, options: HeaderOptions): js.Promise[IDispute] = js.native
   def retrieve(disputeId: String, options: HeaderOptions, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
   def retrieve(disputeId: String, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
+  
   def setMetadata(): Unit = js.native
+  
   def update(disputeId: String, data: IDisputeUpdateOptions): js.Promise[IDispute] = js.native
   /**
     * When you get a dispute, contacting your customer is always the best first step. If that doesn't work, you can submit evidence in
@@ -72,4 +78,3 @@ class Disputes () extends StripeResource {
   ): js.Promise[IDispute] = js.native
   def update(disputeId: String, data: IDisputeUpdateOptions, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
 }
-

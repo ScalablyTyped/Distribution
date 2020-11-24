@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.lightsailMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Lightsail")
 @js.native
@@ -14,4 +14,3 @@ class Lightsail ()
   extends typings.awsSdk.allMod.Lightsail {
   def this(options: ClientConfiguration) = this()
 }
-

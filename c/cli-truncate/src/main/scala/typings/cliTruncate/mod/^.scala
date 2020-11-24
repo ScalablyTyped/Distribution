@@ -2,11 +2,12 @@ package typings.cliTruncate.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cli-truncate", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Truncate a string to a specific width in the terminal.
   @param text - Text to truncate.
@@ -38,4 +39,3 @@ object ^ extends js.Object {
   def apply(text: String, columns: Double): String = js.native
   def apply(text: String, columns: Double, options: Options): String = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.winrt.global.Windows.Networking
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Networking.EndpointPair")
 @js.native
@@ -15,4 +15,3 @@ class EndpointPair protected ()
     remoteServiceName: String
   ) = this()
 }
-

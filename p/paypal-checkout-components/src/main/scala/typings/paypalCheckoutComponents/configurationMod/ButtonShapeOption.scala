@@ -3,14 +3,17 @@ package typings.paypalCheckoutComponents.configurationMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ButtonShapeOption extends js.Object
-
 @JSImport("paypal-checkout-components/modules/configuration", "ButtonShapeOption")
 @js.native
 object ButtonShapeOption extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ButtonShapeOption with String] = js.native
+  
   /**
     * Recommended
     * Whenever possible, use the pill-shaped button.
@@ -18,6 +21,8 @@ object ButtonShapeOption extends js.Object {
     */
   @js.native
   sealed trait Pill extends ButtonShapeOption
+  /* "pill" */ @js.native
+  object Pill extends TopLevel[Pill with String]
   
   /**
     * Use the rectangular button as an alternative for media such as mobile
@@ -25,14 +30,6 @@ object ButtonShapeOption extends js.Object {
     */
   @js.native
   sealed trait Rect extends ButtonShapeOption
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ButtonShapeOption with String] = js.native
-  /* "pill" */ @js.native
-  object Pill extends TopLevel[Pill with String]
-  
   /* "rect" */ @js.native
   object Rect extends TopLevel[Rect with String]
-  
 }
-

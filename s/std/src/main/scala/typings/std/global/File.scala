@@ -6,7 +6,7 @@ import typings.std.BlobPart
 import typings.std.FilePropertyBag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("File")
 @js.native
@@ -15,7 +15,6 @@ class File protected ()
   def this(fileBits: js.Array[BlobPart], fileName: java.lang.String) = this()
   def this(fileBits: js.Array[BlobPart], fileName: java.lang.String, options: FilePropertyBag) = this()
 }
-
 @JSGlobal("File")
 @js.native
 object File
@@ -26,4 +25,3 @@ object File
       /* options */ FilePropertyBag, 
       typings.std.File
     ]
-

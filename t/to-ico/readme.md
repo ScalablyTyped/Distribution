@@ -11,8 +11,8 @@ Convert PNG to ICO in memory
 | Full name          | to-ico |
 | Keywords           | buffer, convert, fast, ico, png |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 4494922 |
+| # dependents       | 33 |
+| # downloads        | 4956287 |
 | # stars            | 3 |
 
 ## Links

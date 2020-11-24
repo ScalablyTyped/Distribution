@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PredicateFactory
@@ -17,11 +17,13 @@ trait PredicateFactory
       /* value */ js.Any, 
       Predicate
     ] {
+  
   def and(andStatements: js.Any): IExecutable = js.native
+  
   def create(propertyOrPredicate: js.Any): IExecutable = js.native
   def create(propertyOrPredicate: js.Any, operatorOrValue: js.UndefOr[scala.Nothing], value: js.Any): IExecutable = js.native
   def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
   def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
+  
   def or(orStatements: js.Array[_]): IExecutable = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__commands
 
-Typings are for version 1.11.3
+Typings are for version 1.11.4
 
 ## Library description:
 Lumino Commands
@@ -10,9 +10,9 @@ Lumino Commands
 | ------------------ | :-------------: |
 | Full name          | @lumino/commands |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 29 |
-| # downloads        | 331500 |
+| # releases         | 18 |
+| # dependents       | 52 |
+| # downloads        | 982213 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.mvc.View
 import typings.openui5.sap.ui.core.mvc.XMLView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.xmlview")
 @js.native
 object xmlview extends js.Object {
+  
   /**
     * Instantiates an XMLView of the given name and with the given ID.The <code>viewName</code> must
     * either correspond to an XML module that can be loadedvia the module system (viewName + suffix
@@ -35,4 +36,3 @@ object xmlview extends js.Object {
   //  Instantiates an XMLView of the given name and with the given id.
   def apply(vView: js.Any): View = js.native
 }
-

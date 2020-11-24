@@ -2,9 +2,40 @@ package typings.webpackDevServer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackDevServerStrings {
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
+  
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
+  @scala.inline
+  def ws: ws = "ws".asInstanceOf[ws]
+  
   @js.native
   sealed trait debug extends js.Object
   
@@ -34,26 +65,4 @@ object webpackDevServerStrings {
   
   @js.native
   sealed trait ws extends js.Object
-  
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def ws: ws = "ws".asInstanceOf[ws]
 }
-

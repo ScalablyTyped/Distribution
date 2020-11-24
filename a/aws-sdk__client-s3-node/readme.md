@@ -12,7 +12,7 @@ Node SDK for Amazon Simple Storage Service
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 4982 |
+| # downloads        | 28611 |
 | # stars            | 0 |
 
 ## Links

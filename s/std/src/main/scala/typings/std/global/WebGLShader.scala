@@ -3,15 +3,13 @@ package typings.std.global
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WebGLShader")
 @js.native
 class WebGLShader ()
   extends typings.std.WebGLObject
-
 @JSGlobal("WebGLShader")
 @js.native
 object WebGLShader
   extends Instantiable0[typings.std.WebGLShader]
-

@@ -2,11 +2,12 @@ package typings.yeomanAssert.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yeoman-assert", "noFile")
 @js.native
 object noFile extends js.Object {
+  
   /**
     * Assert that a file doesn't exist
     * @param file path to a file
@@ -17,4 +18,3 @@ object noFile extends js.Object {
   def apply(file: String): Unit = js.native
   def apply(file: js.Array[String]): Unit = js.native
 }
-

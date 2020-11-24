@@ -2,11 +2,12 @@ package typings.kefir.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kefir", "combine")
 @js.native
 object combine_0 extends js.Object {
+  
   def apply[T /* <: js.Array[Observable[_, _]] */, P /* <: js.Array[Observable[_, _]] */, K](
     obss: T,
     obssP: P,
@@ -17,4 +18,3 @@ object combine_0 extends js.Object {
     ]
   ): Observable[K, _] = js.native
 }
-

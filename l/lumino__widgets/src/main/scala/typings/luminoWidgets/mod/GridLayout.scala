@@ -5,7 +5,7 @@ import typings.luminoWidgets.gridlayoutMod.GridLayout.ICellConfig
 import typings.luminoWidgets.gridlayoutMod.GridLayout.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "GridLayout")
 @js.native
@@ -18,10 +18,10 @@ class GridLayout ()
   extends typings.luminoWidgets.gridlayoutMod.GridLayout {
   def this(options: IOptions) = this()
 }
-
 @JSImport("@lumino/widgets", "GridLayout")
 @js.native
 object GridLayout extends js.Object {
+  
   /**
     * Get the cell config for the given widget.
     *
@@ -30,6 +30,7 @@ object GridLayout extends js.Object {
     * @returns The cell config for the widget.
     */
   def getCellConfig(widget: typings.luminoWidgets.widgetMod.Widget): ICellConfig = js.native
+  
   /**
     * Set the cell config for the given widget.
     *
@@ -39,4 +40,3 @@ object GridLayout extends js.Object {
     */
   def setCellConfig(widget: typings.luminoWidgets.widgetMod.Widget, value: PartialICellConfig): Unit = js.native
 }
-

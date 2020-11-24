@@ -2,9 +2,37 @@ package typings.chokidar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chokidarStrings {
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def addDir: addDir = "addDir".asInstanceOf[addDir]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def unlink: unlink = "unlink".asInstanceOf[unlink]
+  
+  @scala.inline
+  def unlinkDir: unlinkDir = "unlinkDir".asInstanceOf[unlinkDir]
+  
   @js.native
   sealed trait add extends js.Object
   
@@ -31,24 +59,4 @@ object chokidarStrings {
   
   @js.native
   sealed trait unlinkDir extends js.Object
-  
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def addDir: addDir = "addDir".asInstanceOf[addDir]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def unlink: unlink = "unlink".asInstanceOf[unlink]
-  @scala.inline
-  def unlinkDir: unlinkDir = "unlinkDir".asInstanceOf[unlinkDir]
 }
-

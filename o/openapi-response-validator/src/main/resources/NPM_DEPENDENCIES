@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-response-validator" : "7.0.0"
+      "openapi-response-validator" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-response-validator" : "7.0.0"
+      "openapi-response-validator" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

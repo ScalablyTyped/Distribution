@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** {@link ChartType} service */
 @js.native
@@ -17,8 +17,8 @@ trait ChartType
   extends XChartType
      with XDataSeriesContainer
      with XPropertySet
-
 object ChartType {
+  
   @scala.inline
   def apply(
     ChartType: String,
@@ -53,4 +53,3 @@ object ChartType {
     __obj.asInstanceOf[ChartType]
   }
 }
-

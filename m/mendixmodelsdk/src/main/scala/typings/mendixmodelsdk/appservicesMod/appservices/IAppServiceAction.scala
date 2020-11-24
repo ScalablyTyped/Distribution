@@ -6,7 +6,7 @@ import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.instancesMod.IList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `AppServices`.
@@ -15,10 +15,13 @@ import scala.scalajs.js.annotation._
 trait IAppServiceAction
   extends IElement
      with IByNameReferrable {
+  
   val containerAsConsumedAppService: IConsumedAppService = js.native
+  
   @JSName("model")
   val model_IAppServiceAction: IModel = js.native
+  
   val name: String = js.native
+  
   val parameters: IList[IAppServiceActionParameter] = js.native
 }
-

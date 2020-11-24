@@ -27,11 +27,12 @@ import typings.officeJsPreview.officeJsPreviewStrings.Triple
 import typings.officeJsPreview.officeJsPreviewStrings.Wave
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`. */
 @js.native
 trait TableBorderUpdateData extends js.Object {
+  
   /**
     *
     * Gets or sets the table border color.
@@ -39,6 +40,7 @@ trait TableBorderUpdateData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var color: js.UndefOr[String] = js.native
+  
   /**
     *
     * Gets or sets the type of the table border.
@@ -48,6 +50,7 @@ trait TableBorderUpdateData extends js.Object {
   var `type`: js.UndefOr[
     BorderType | Mixed | None | Single | Double | Dotted | Dashed | DotDashed | Dot2Dashed | Triple | ThinThickSmall | ThickThinSmall | ThinThickThinSmall | ThinThickMed | ThickThinMed | ThinThickThinMed | ThinThickLarge | ThickThinLarge | ThinThickThinLarge | Wave | DoubleWave | DashedSmall | DashDotStroked | ThreeDEmboss | ThreeDEngrave
   ] = js.native
+  
   /**
     *
     * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
@@ -56,39 +59,47 @@ trait TableBorderUpdateData extends js.Object {
     */
   var width: js.UndefOr[scala.Double] = js.native
 }
-
 object TableBorderUpdateData {
+  
   @scala.inline
   def apply(): TableBorderUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableBorderUpdateData]
   }
+  
   @scala.inline
   implicit class TableBorderUpdateDataOps[Self <: TableBorderUpdateData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColor: Self = this.set("color", js.undefined)
+    
     @scala.inline
     def setType(
       value: BorderType | Mixed | None | Single | Double | Dotted | Dashed | DotDashed | Dot2Dashed | Triple | ThinThickSmall | ThickThinSmall | ThinThickThinSmall | ThinThickMed | ThickThinMed | ThinThickThinMed | ThinThickLarge | ThickThinLarge | ThinThickThinLarge | Wave | DoubleWave | DashedSmall | DashDotStroked | ThreeDEmboss | ThreeDEngrave
     ): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setWidth(value: scala.Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }
-  
 }
-

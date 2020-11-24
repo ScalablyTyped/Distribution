@@ -2,9 +2,10 @@ package typings.actionsOnGoogle
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object richMod {
+  
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.actionsOnGoogle.simpleMod.SimpleResponse

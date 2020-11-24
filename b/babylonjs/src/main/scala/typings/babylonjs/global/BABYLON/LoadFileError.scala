@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.LoadFileError")
 @js.native
@@ -18,9 +18,4 @@ class LoadFileError protected ()
   def this(message: String) = this()
   def this(message: String, `object`: typings.babylonjs.BABYLON.WebRequest) = this()
   def this(message: String, `object`: File) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
-

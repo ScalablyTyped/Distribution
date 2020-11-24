@@ -4,7 +4,7 @@ import typings.awsSdk.iotsecuretunnelingMod.ClientConfiguration
 import typings.awsSdk.iotsecuretunnelingMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "IoTSecureTunneling")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class IoTSecureTunneling () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

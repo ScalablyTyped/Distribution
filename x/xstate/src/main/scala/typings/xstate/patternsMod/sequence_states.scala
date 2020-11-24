@@ -6,11 +6,12 @@ import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.StateSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xstate/lib/patterns", "sequence")
 @js.native
 object sequence_states extends js.Object {
+  
   def apply[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
@@ -23,4 +24,3 @@ object sequence_states extends js.Object {
     options: Partial[SequencePatternOptions[TEvent]]
   ): Initial[TStateSchema, TEvent] = js.native
 }
-

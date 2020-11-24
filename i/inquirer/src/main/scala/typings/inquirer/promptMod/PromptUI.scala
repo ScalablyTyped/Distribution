@@ -8,7 +8,7 @@ import typings.inquirer.mod.ui.FetchedQuestion
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the prompt ui.
@@ -16,18 +16,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PromptUI
   extends typings.inquirer.baseUIMod.^ {
+  
   /**
     * Gets or sets the answers provided by the user.
     */
   var answers: Answers = js.native
-  /**
-    * Gets or sets the event-flow of the process.
-    */
-  var process: Observable_[Answers] = js.native
-  /**
-    * Gets or sets the prompts of the ui.
-    */
-  var prompts: PromptCollection = js.native
+  
   /**
     * Fetches the answer to a question.
     *
@@ -38,6 +32,7 @@ trait PromptUI
     * The answer to the question.
     */
   /* protected */ def fetchAnswer(question: FetchedQuestion[Answers]): Observable_[FetchedAnswer] = js.native
+  
   /**
     * Filters the question if it is runnable.
     *
@@ -48,10 +43,17 @@ trait PromptUI
     * Either the event-flow of the question if it is runnable or an empty event-flow.
     */
   /* protected */ def filterIfRunnable(question: DistinctQuestion[Answers]): Observable_[DistinctQuestion[Answers]] = js.native
+  
   /**
     * Finishes the process.
     */
   /* protected */ def onCompletion(): Answers = js.native
+  
+  /**
+    * Gets or sets the event-flow of the process.
+    */
+  var process: Observable_[Answers] = js.native
+  
   /**
     * Processes a question.
     *
@@ -62,6 +64,12 @@ trait PromptUI
     * The answer to the question.
     */
   /* protected */ def processQuestion(question: DistinctQuestion[Answers]): Observable_[FetchedAnswer] = js.native
+  
+  /**
+    * Gets or sets the prompts of the ui.
+    */
+  var prompts: PromptCollection = js.native
+  
   /**
     * Runs the prompt-UI.
     *
@@ -72,6 +80,7 @@ trait PromptUI
     * The answers provided by the user.
     */
   def run(questions: js.Array[DistinctQuestion[Answers]]): js.Promise[Answers] = js.native
+  
   /**
     * Sets the type of the question if no question-type is specified.
     *
@@ -83,4 +92,3 @@ trait PromptUI
     */
   /* protected */ def setDefaultType(question: DistinctQuestion[Answers]): Observable_[DistinctQuestion[Answers]] = js.native
 }
-

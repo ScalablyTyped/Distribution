@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-template-compiler" : "2.6.11"
+      "vue-template-compiler" : "2.6.12"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-template-compiler" : "2.6.11"
+      "vue-template-compiler" : "2.6.12"
     }
   ],
   "compile-devDependencies" : [

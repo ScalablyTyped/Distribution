@@ -2,7 +2,7 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for enum properties, which allow you to define a restricted set of
@@ -17,10 +17,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaEnumPropertyOptions extends js.Object {
+  
   /**
     * If set, describes how the enum should be used as a search operator.
     */
   var operatorOptions: js.UndefOr[SchemaEnumOperatorOptions] = js.native
+  
   /**
     * Used to specify the ordered ranking for the enumeration that determines
     * how the integer values provided in the possible EnumValuePairs are used
@@ -29,6 +31,7 @@ trait SchemaEnumPropertyOptions extends js.Object {
     * if isRepeatable is false.
     */
   var orderedRanking: js.UndefOr[String] = js.native
+  
   /**
     * The list of possible values for the enumeration property. All
     * EnumValuePairs must provide a string value. If you specify an integer
@@ -42,39 +45,48 @@ trait SchemaEnumPropertyOptions extends js.Object {
     */
   var possibleValues: js.UndefOr[js.Array[SchemaEnumValuePair]] = js.native
 }
-
 object SchemaEnumPropertyOptions {
+  
   @scala.inline
   def apply(): SchemaEnumPropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnumPropertyOptions]
   }
+  
   @scala.inline
   implicit class SchemaEnumPropertyOptionsOps[Self <: SchemaEnumPropertyOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOperatorOptions(value: SchemaEnumOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
+    
     @scala.inline
     def setOrderedRanking(value: String): Self = this.set("orderedRanking", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrderedRanking: Self = this.set("orderedRanking", js.undefined)
+    
     @scala.inline
     def setPossibleValuesVarargs(value: SchemaEnumValuePair*): Self = this.set("possibleValues", js.Array(value :_*))
+    
     @scala.inline
     def setPossibleValues(value: js.Array[SchemaEnumValuePair]): Self = this.set("possibleValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePossibleValues: Self = this.set("possibleValues", js.undefined)
   }
-  
 }
-

@@ -3,11 +3,12 @@ package typings.webgme.global
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Toolbar")
 @js.native
 object Toolbar extends js.Object {
+  
   @js.native
   class Toolbar protected ()
     extends typings.webgme.Toolbar.Toolbar {
@@ -53,6 +54,4 @@ object Toolbar extends js.Object {
   @js.native
   class ToolbarToggleButton ()
     extends typings.webgme.Toolbar.ToolbarItem
-  
 }
-

@@ -11,8 +11,8 @@ Recursively omit empty properties from an object. Omits empty objects, arrays, s
 | Full name          | omit-empty |
 | Keywords           | clear, delete, empty, find, has, hasown, javascript, js, key, keys, node, node-js, object, omit, properties, property, remove, util, utilities, utility, value |
 | # releases         | 2 |
-| # dependents       | 31 |
-| # downloads        | 3387984 |
+| # dependents       | 35 |
+| # downloads        | 2896408 |
 | # stars            | 0 |
 
 ## Links

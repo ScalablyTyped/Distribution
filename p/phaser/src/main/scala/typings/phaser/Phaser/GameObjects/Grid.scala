@@ -2,7 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Grid Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -22,45 +22,40 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Grid extends Shape {
+  
   /**
     * The alpha the alternating grid cells will be filled with.
     * You can also set the alpha of the overall Shape using its `alpha` property.
     */
   var altFillAlpha: Double = js.native
+  
   /**
     * The color the alternating grid cells will be filled with, i.e. 0xff0000 for red.
     */
   var altFillColor: Double = js.native
+  
   /**
     * The height of each grid cell.
     * Must be a positive value.
     */
   var cellHeight: Double = js.native
+  
   /**
     * The width of each grid cell.
     * Must be a positive value.
     */
   var cellWidth: Double = js.native
+  
   /**
     * The alpha value for the color of the lines between each grid cell.
     */
   var outlineFillAlpha: Double = js.native
+  
   /**
     * The color of the lines between each grid cell.
     */
   var outlineFillColor: Double = js.native
-  /**
-    * Will the grid render the alternating cells in the `altFillColor`?
-    */
-  var showAltCells: Boolean = js.native
-  /**
-    * Will the grid render its cells in the `fillColor`?
-    */
-  var showCells: Boolean = js.native
-  /**
-    * Will the grid display the lines between each cell when it renders?
-    */
-  var showOutline: Boolean = js.native
+  
   /**
     * Sets the fill color and alpha level that the alternating grid cells will use.
     * 
@@ -76,6 +71,7 @@ trait Grid extends Shape {
   def setAltFillStyle(fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): this.type = js.native
   def setAltFillStyle(fillColor: Double): this.type = js.native
   def setAltFillStyle(fillColor: Double, fillAlpha: Double): this.type = js.native
+  
   /**
     * Sets the fill color and alpha level that the lines between each grid cell will use.
     * 
@@ -92,5 +88,19 @@ trait Grid extends Shape {
   def setOutlineStyle(fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): this.type = js.native
   def setOutlineStyle(fillColor: Double): this.type = js.native
   def setOutlineStyle(fillColor: Double, fillAlpha: Double): this.type = js.native
+  
+  /**
+    * Will the grid render the alternating cells in the `altFillColor`?
+    */
+  var showAltCells: Boolean = js.native
+  
+  /**
+    * Will the grid render its cells in the `fillColor`?
+    */
+  var showCells: Boolean = js.native
+  
+  /**
+    * Will the grid display the lines between each cell when it renders?
+    */
+  var showOutline: Boolean = js.native
 }
-

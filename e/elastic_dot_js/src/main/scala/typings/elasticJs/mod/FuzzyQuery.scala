@@ -2,7 +2,7 @@ package typings.elasticJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "FuzzyQuery")
 @js.native
@@ -11,31 +11,38 @@ class FuzzyQuery protected () extends Query {
     Constructs a query where each documents returned are “like” provided text
     */
   def this(field: String, value: String) = this()
+  
   /*
     The type of ejs object.  For internal use only.
     */
   def _type(): String = js.native
+  
   /*
     Sets the boost value of the Query.
     */
   def boost(boost: Double): FuzzyQuery = js.native
+  
   /*
     The field to run the query against.
     */
   def field(f: String): FuzzyQuery = js.native
+  
   /*
     The maximum number of query terms that will be included in any
     generated query. Defaults to 50.
     */
   def maxExpansions(max: Double): FuzzyQuery = js.native
+  
   /*
     The minimum similarity of the term variants. Defaults to 0.5.
     */
   def minSimilarity(min: Double): FuzzyQuery = js.native
+  
   /*
     Length of required common prefix on variant terms. Defaults to 0.
     */
   def prefixLength(len: Double): FuzzyQuery = js.native
+  
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -56,18 +63,20 @@ class FuzzyQuery protected () extends Query {
     This is an advanced option, use with care.
     */
   def rewrite(m: String): FuzzyQuery = js.native
+  
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
   def toJSON(): js.Any = js.native
+  
   /*
     Set to false to use classic Levenshtein edit distance.
     */
   def transpositions(trueFalse: Boolean): FuzzyQuery = js.native
+  
   /*
     The query text to fuzzify.
     */
   def value(s: String): FuzzyQuery = js.native
 }
-

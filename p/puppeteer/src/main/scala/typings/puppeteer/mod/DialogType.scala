@@ -2,7 +2,7 @@ package typings.puppeteer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.puppeteer.puppeteerStrings.alert
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.puppeteer.puppeteerStrings.prompt
 */
 trait DialogType extends js.Object
-
 object DialogType {
+  
   @scala.inline
   def alert: typings.puppeteer.puppeteerStrings.alert = "alert".asInstanceOf[typings.puppeteer.puppeteerStrings.alert]
+  
   @scala.inline
   def beforeunload: typings.puppeteer.puppeteerStrings.beforeunload = "beforeunload".asInstanceOf[typings.puppeteer.puppeteerStrings.beforeunload]
+  
   @scala.inline
   def confirm: typings.puppeteer.puppeteerStrings.confirm = "confirm".asInstanceOf[typings.puppeteer.puppeteerStrings.confirm]
+  
   @scala.inline
   def prompt: typings.puppeteer.puppeteerStrings.prompt = "prompt".asInstanceOf[typings.puppeteer.puppeteerStrings.prompt]
 }
-

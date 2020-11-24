@@ -2,11 +2,12 @@ package typings.makeDir.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("make-dir", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Make a directory and its parents if needed - Think `mkdir -p`.
   	@param path - Directory to create.
@@ -33,6 +34,7 @@ object ^ extends js.Object {
   	*/
   def apply(path: String): js.Promise[String] = js.native
   def apply(path: String, options: Options): js.Promise[String] = js.native
+  
   /**
   	Synchronously make a directory and its parents if needed - Think `mkdir -p`.
   	@param path - Directory to create.
@@ -41,4 +43,3 @@ object ^ extends js.Object {
   def sync(path: String): String = js.native
   def sync(path: String, options: Options): String = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.abstractLeveldown.mod.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("levelup", JSImport.Default)
 @js.native
@@ -16,4 +16,3 @@ class defaultCls[DB /* <: AbstractLevelDOWN[_, _] */] protected ()
   def this(db: DB, options: js.Any) = this()
   def this(db: DB, options: js.Any, cb: ErrorCallback) = this()
 }
-

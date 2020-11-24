@@ -11,8 +11,8 @@ Yet Another Linked List
 | Full name          | yallist |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 70 |
-| # downloads        | 817812120 |
+| # dependents       | 102 |
+| # downloads        | 1268575575 |
 | # stars            | 4 |
 
 ## Links

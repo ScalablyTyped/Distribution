@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/binaryauthorization/v1beta1", "binaryauthorization_v1beta1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var attestors: ResourceProjectsAttestors = js.native
+  
   var context: APIRequestContext = js.native
-  var policy: ResourceProjectsPolicy = js.native
+  
   /**
     * binaryauthorization.projects.getPolicy
     * @desc Gets the policy for this project. Returns a default policy if the
@@ -44,6 +46,9 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var policy: ResourceProjectsPolicy = js.native
+  
   /**
     * binaryauthorization.projects.updatePolicy
     * @desc Creates or updates a project's policy, and returns a copy of the
@@ -78,4 +83,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
 }
-

@@ -15,7 +15,7 @@ import typings.phaser.Phaser.Types.Scenes.SettingsObject
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Input Plugin belongs to a Scene and handles all input related events and operations for it.
@@ -48,163 +48,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InputPlugin extends EventEmitter {
+  
   /**
     * The current active input Pointer.
     */
   val activePointer: Pointer = js.native
-  /**
-    * A reference to the Scene Cameras Manager. This property is set during the `boot` method.
-    */
-  var cameras: CameraManager = js.native
-  /**
-    * A reference to the Scene Display List. This property is set during the `boot` method.
-    */
-  var displayList: DisplayList = js.native
-  /**
-    * The distance, in pixels, a pointer has to move while being held down, before it thinks it is being dragged.
-    */
-  var dragDistanceThreshold: Double = js.native
-  /**
-    * The amount of time, in ms, a pointer has to be held down before it thinks it is dragging.
-    * 
-    * The default polling rate is to poll only on move so once the time threshold is reached the
-    * drag event will not start until you move the mouse. If you want it to start immediately
-    * when the time threshold is reached, you must increase the polling rate by calling
-    * [setPollAlways]{@linkcode Phaser.Input.InputPlugin#setPollAlways} or
-    * [setPollRate]{@linkcode Phaser.Input.InputPlugin#setPollRate}.
-    */
-  var dragTimeThreshold: Double = js.native
-  /**
-    * If `true` this Input Plugin will process DOM input events.
-    */
-  var enabled: Boolean = js.native
-  /**
-    * An instance of the Gamepad Plugin class, if enabled via the `input.gamepad` Scene or Game Config property.
-    * Use this to create access Gamepads connected to the browser and respond to gamepad buttons.
-    */
-  var gamepad: GamepadPlugin = js.native
-  /**
-    * Are any mouse or touch pointers currently over the game canvas?
-    */
-  val isOver: Boolean = js.native
-  /**
-    * An instance of the Keyboard Plugin class, if enabled via the `input.keyboard` Scene or Game Config property.
-    * Use this to create Key objects and listen for keyboard specific events.
-    */
-  var keyboard: KeyboardPlugin = js.native
-  /**
-    * A reference to the Game Input Manager.
-    */
-  var manager: InputManager = js.native
-  /**
-    * A reference to the Mouse Manager.
-    * 
-    * This property is only set if Mouse support has been enabled in your Game Configuration file.
-    * 
-    * If you just wish to get access to the mouse pointer, use the `mousePointer` property instead.
-    */
-  var mouse: MouseManager = js.native
-  /**
-    * The mouse has its own unique Pointer object, which you can reference directly if making a _desktop specific game_.
-    * If you are supporting both desktop and touch devices then do not use this property, instead use `activePointer`
-    * which will always map to the most recently interacted pointer.
-    */
-  val mousePointer: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer1: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer10: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer2: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer3: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer4: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer5: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer6: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer7: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer8: Pointer = js.native
-  /**
-    * A touch-based Pointer object.
-    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
-    */
-  val pointer9: Pointer = js.native
-  /**
-    * How often should the Pointers be checked?
-    * 
-    * The value is a time, given in ms, and is the time that must have elapsed between game steps before
-    * the Pointers will be polled again. When a pointer is polled it runs a hit test to see which Game
-    * Objects are currently below it, or being interacted with it.
-    * 
-    * Pointers will *always* be checked if they have been moved by the user, or press or released.
-    * 
-    * This property only controls how often they will be polled if they have not been updated.
-    * You should set this if you want to have Game Objects constantly check against the pointers, even
-    * if the pointer didn't itself move.
-    * 
-    * Set to 0 to poll constantly. Set to -1 to only poll on user movement.
-    */
-  var pollRate: integer = js.native
-  /**
-    * A reference to the Scene that this Input Plugin is responsible for.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene Systems Settings.
-    */
-  var settings: SettingsObject = js.native
-  /**
-    * A reference to the Scene Systems class.
-    */
-  var systems: Systems = js.native
-  /**
-    * When set to `true` (the default) the Input Plugin will emulate DOM behavior by only emitting events from
-    * the top-most Game Objects in the Display List.
-    * 
-    * If set to `false` it will emit events from all Game Objects below a Pointer, not just the top one.
-    */
-  var topOnly: Boolean = js.native
-  /**
-    * The x coordinates of the ActivePointer based on the first camera in the camera list.
-    * This is only safe to use if your game has just 1 non-transformed camera and doesn't use multi-touch.
-    */
-  val x: Double = js.native
-  /**
-    * The y coordinates of the ActivePointer based on the first camera in the camera list.
-    * This is only safe to use if your game has just 1 non-transformed camera and doesn't use multi-touch.
-    */
-  val y: Double = js.native
+  
   /**
     * Adds new Pointer objects to the Input Manager.
     * 
@@ -219,6 +68,12 @@ trait InputPlugin extends EventEmitter {
     */
   def addPointer(): js.Array[Pointer] = js.native
   def addPointer(quantity: integer): js.Array[Pointer] = js.native
+  
+  /**
+    * A reference to the Scene Cameras Manager. This property is set during the `boot` method.
+    */
+  var cameras: CameraManager = js.native
+  
   /**
     * Clears a Game Object so it no longer has an Interactive Object associated with it.
     * The Game Object is then queued for removal from the Input Plugin on the next update.
@@ -227,6 +82,7 @@ trait InputPlugin extends EventEmitter {
     */
   def clear(gameObject: GameObject): GameObject = js.native
   def clear(gameObject: GameObject, skipQueue: Boolean): GameObject = js.native
+  
   /**
     * Disables Input on a single Game Object.
     * 
@@ -235,6 +91,28 @@ trait InputPlugin extends EventEmitter {
     * @param gameObject The Game Object to have its input system disabled.
     */
   def disable(gameObject: GameObject): Unit = js.native
+  
+  /**
+    * A reference to the Scene Display List. This property is set during the `boot` method.
+    */
+  var displayList: DisplayList = js.native
+  
+  /**
+    * The distance, in pixels, a pointer has to move while being held down, before it thinks it is being dragged.
+    */
+  var dragDistanceThreshold: Double = js.native
+  
+  /**
+    * The amount of time, in ms, a pointer has to be held down before it thinks it is dragging.
+    * 
+    * The default polling rate is to poll only on move so once the time threshold is reached the
+    * drag event will not start until you move the mouse. If you want it to start immediately
+    * when the time threshold is reached, you must increase the polling rate by calling
+    * [setPollAlways]{@linkcode Phaser.Input.InputPlugin#setPollAlways} or
+    * [setPollRate]{@linkcode Phaser.Input.InputPlugin#setPollRate}.
+    */
+  var dragTimeThreshold: Double = js.native
+  
   /**
     * Enable a Game Object for interaction.
     * 
@@ -283,6 +161,7 @@ trait InputPlugin extends EventEmitter {
   ): this.type = js.native
   def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
   def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  
   /**
     * Creates an Input Debug Shape for the given Game Object.
     * 
@@ -312,6 +191,18 @@ trait InputPlugin extends EventEmitter {
     */
   def enableDebug(gameObject: GameObject): this.type = js.native
   def enableDebug(gameObject: GameObject, color: Double): this.type = js.native
+  
+  /**
+    * If `true` this Input Plugin will process DOM input events.
+    */
+  var enabled: Boolean = js.native
+  
+  /**
+    * An instance of the Gamepad Plugin class, if enabled via the `input.gamepad` Scene or Game Config property.
+    * Use this to create access Gamepads connected to the browser and respond to gamepad buttons.
+    */
+  var gamepad: GamepadPlugin = js.native
+  
   /**
     * Returns the drag state of the given Pointer for this Input Plugin.
     * 
@@ -326,6 +217,7 @@ trait InputPlugin extends EventEmitter {
     * @param pointer The Pointer to get the drag state for.
     */
   def getDragState(pointer: Pointer): integer = js.native
+  
   /**
     * Takes the given Pointer and performs a hit test against it, to see which interactive Game Objects
     * it is currently above.
@@ -335,10 +227,23 @@ trait InputPlugin extends EventEmitter {
     * @param pointer The Pointer to check against the Game Objects.
     */
   def hitTestPointer(pointer: Pointer): js.Array[GameObject] = js.native
+  
   /**
     * Checks to see if both this plugin and the Scene to which it belongs is active.
     */
   def isActive(): Boolean = js.native
+  
+  /**
+    * Are any mouse or touch pointers currently over the game canvas?
+    */
+  val isOver: Boolean = js.native
+  
+  /**
+    * An instance of the Keyboard Plugin class, if enabled via the `input.keyboard` Scene or Game Config property.
+    * Use this to create Key objects and listen for keyboard specific events.
+    */
+  var keyboard: KeyboardPlugin = js.native
+  
   /**
     * Creates a function that can be passed to `setInteractive`, `enable` or `setHitArea` that will handle
     * pixel-perfect input detection on an Image or Sprite based Game Object, or any custom class that extends them.
@@ -368,6 +273,105 @@ trait InputPlugin extends EventEmitter {
     */
   def makePixelPerfect(): js.Function = js.native
   def makePixelPerfect(alphaTolerance: integer): js.Function = js.native
+  
+  /**
+    * A reference to the Game Input Manager.
+    */
+  var manager: InputManager = js.native
+  
+  /**
+    * A reference to the Mouse Manager.
+    * 
+    * This property is only set if Mouse support has been enabled in your Game Configuration file.
+    * 
+    * If you just wish to get access to the mouse pointer, use the `mousePointer` property instead.
+    */
+  var mouse: MouseManager = js.native
+  
+  /**
+    * The mouse has its own unique Pointer object, which you can reference directly if making a _desktop specific game_.
+    * If you are supporting both desktop and touch devices then do not use this property, instead use `activePointer`
+    * which will always map to the most recently interacted pointer.
+    */
+  val mousePointer: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer1: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer10: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer2: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer3: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer4: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer5: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer6: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer7: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer8: Pointer = js.native
+  
+  /**
+    * A touch-based Pointer object.
+    * This will be `undefined` by default unless you add a new Pointer using `addPointer`.
+    */
+  val pointer9: Pointer = js.native
+  
+  /**
+    * How often should the Pointers be checked?
+    * 
+    * The value is a time, given in ms, and is the time that must have elapsed between game steps before
+    * the Pointers will be polled again. When a pointer is polled it runs a hit test to see which Game
+    * Objects are currently below it, or being interacted with it.
+    * 
+    * Pointers will *always* be checked if they have been moved by the user, or press or released.
+    * 
+    * This property only controls how often they will be polled if they have not been updated.
+    * You should set this if you want to have Game Objects constantly check against the pointers, even
+    * if the pointer didn't itself move.
+    * 
+    * Set to 0 to poll constantly. Set to -1 to only poll on user movement.
+    */
+  var pollRate: integer = js.native
+  
   /**
     * Removes an Input Debug Shape from the given Game Object.
     * 
@@ -375,6 +379,12 @@ trait InputPlugin extends EventEmitter {
     * @param gameObject The Game Object to remove the input debug shape from.
     */
   def removeDebug(gameObject: GameObject): this.type = js.native
+  
+  /**
+    * A reference to the Scene that this Input Plugin is responsible for.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Tells the Input system to set a custom cursor.
     * 
@@ -397,6 +407,7 @@ trait InputPlugin extends EventEmitter {
     * @param cursor The CSS to be used when setting the default cursor.
     */
   def setDefaultCursor(cursor: String): this.type = js.native
+  
   /**
     * Sets the drag state of the given Pointer for this Input Plugin.
     * 
@@ -412,6 +423,7 @@ trait InputPlugin extends EventEmitter {
     * @param state The drag state value. An integer between 0 and 5.
     */
   def setDragState(pointer: Pointer, state: integer): Unit = js.native
+  
   def setDraggable(gameObjects: js.Array[GameObject]): this.type = js.native
   def setDraggable(gameObjects: js.Array[GameObject], value: Boolean): this.type = js.native
   /**
@@ -425,6 +437,7 @@ trait InputPlugin extends EventEmitter {
     */
   def setDraggable(gameObjects: GameObject): this.type = js.native
   def setDraggable(gameObjects: GameObject, value: Boolean): this.type = js.native
+  
   /**
     * When set to `true` the global Input Manager will emulate DOM behavior by only emitting events from
     * the top-most Scene in the Scene List. By default, if a Scene receives an input event it will then stop the event
@@ -432,6 +445,7 @@ trait InputPlugin extends EventEmitter {
     * @param value Set to `true` to stop processing input events on the Scene that receives it, or `false` to let the event continue down the Scene list.
     */
   def setGlobalTopOnly(value: Boolean): this.type = js.native
+  
   def setHitArea(gameObjects: js.Array[GameObject]): this.type = js.native
   def setHitArea(gameObjects: js.Array[GameObject], shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
   def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any): this.type = js.native
@@ -460,6 +474,7 @@ trait InputPlugin extends EventEmitter {
   def setHitArea(gameObjects: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
   def setHitArea(gameObjects: GameObject, shape: InputConfiguration): this.type = js.native
   def setHitArea(gameObjects: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
+  
   def setHitAreaCircle(gameObjects: js.Array[GameObject], x: Double, y: Double, radius: Double): this.type = js.native
   def setHitAreaCircle(gameObjects: js.Array[GameObject], x: Double, y: Double, radius: Double, callback: HitAreaCallback): this.type = js.native
   /**
@@ -473,6 +488,7 @@ trait InputPlugin extends EventEmitter {
     */
   def setHitAreaCircle(gameObjects: GameObject, x: Double, y: Double, radius: Double): this.type = js.native
   def setHitAreaCircle(gameObjects: GameObject, x: Double, y: Double, radius: Double, callback: HitAreaCallback): this.type = js.native
+  
   def setHitAreaEllipse(gameObjects: js.Array[GameObject], x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setHitAreaEllipse(
     gameObjects: js.Array[GameObject],
@@ -501,6 +517,7 @@ trait InputPlugin extends EventEmitter {
     height: Double,
     callback: HitAreaCallback
   ): this.type = js.native
+  
   def setHitAreaFromTexture(gameObjects: js.Array[GameObject]): this.type = js.native
   def setHitAreaFromTexture(gameObjects: js.Array[GameObject], callback: HitAreaCallback): this.type = js.native
   /**
@@ -511,6 +528,7 @@ trait InputPlugin extends EventEmitter {
     */
   def setHitAreaFromTexture(gameObjects: GameObject): this.type = js.native
   def setHitAreaFromTexture(gameObjects: GameObject, callback: HitAreaCallback): this.type = js.native
+  
   def setHitAreaRectangle(gameObjects: js.Array[GameObject], x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setHitAreaRectangle(
     gameObjects: js.Array[GameObject],
@@ -539,6 +557,7 @@ trait InputPlugin extends EventEmitter {
     height: Double,
     callback: HitAreaCallback
   ): this.type = js.native
+  
   def setHitAreaTriangle(
     gameObjects: js.Array[GameObject],
     x1: Double,
@@ -581,6 +600,7 @@ trait InputPlugin extends EventEmitter {
     y3: Double,
     callback: HitAreaCallback
   ): this.type = js.native
+  
   /**
     * Sets the Pointers to always poll.
     * 
@@ -592,6 +612,7 @@ trait InputPlugin extends EventEmitter {
     * costs, especially if there are a large number of interactive objects in your game.
     */
   def setPollAlways(): this.type = js.native
+  
   /**
     * Sets the Pointers to only poll when they are moved or updated.
     * 
@@ -599,12 +620,14 @@ trait InputPlugin extends EventEmitter {
     * or being interacted with it.
     */
   def setPollOnMove(): this.type = js.native
+  
   /**
     * Sets the poll rate value. This is the amount of time that should have elapsed before a pointer
     * will be polled again. See the `setPollAlways` and `setPollOnMove` methods.
     * @param value The amount of time, in ms, that should elapsed before re-polling the pointers.
     */
   def setPollRate(value: Double): this.type = js.native
+  
   /**
     * When set to `true` this Input Plugin will emulate DOM behavior by only emitting events from
     * the top-most Game Objects in the Display List.
@@ -613,12 +636,19 @@ trait InputPlugin extends EventEmitter {
     * @param value `true` to only include the top-most Game Object, or `false` to include all Game Objects in a hit test.
     */
   def setTopOnly(value: Boolean): this.type = js.native
+  
+  /**
+    * A reference to the Scene Systems Settings.
+    */
+  var settings: SettingsObject = js.native
+  
   /**
     * Given an array of Game Objects, sort the array and return it, so that the objects are in depth index order
     * with the lowest at the bottom.
     * @param gameObjects An array of Game Objects to be sorted.
     */
   def sortGameObjects(gameObjects: js.Array[GameObject]): js.Array[GameObject] = js.native
+  
   /**
     * This method should be called from within an input event handler, such as `pointerdown`.
     * 
@@ -626,6 +656,20 @@ trait InputPlugin extends EventEmitter {
     * not yet handled in the scene list.
     */
   def stopPropagation(): this.type = js.native
+  
+  /**
+    * A reference to the Scene Systems class.
+    */
+  var systems: Systems = js.native
+  
+  /**
+    * When set to `true` (the default) the Input Plugin will emulate DOM behavior by only emitting events from
+    * the top-most Game Objects in the Display List.
+    * 
+    * If set to `false` it will emit events from all Game Objects below a Pointer, not just the top one.
+    */
+  var topOnly: Boolean = js.native
+  
   /**
     * This is called automatically by the Input Manager.
     * It emits events for plugins to listen to and also handles polling updates, if enabled.
@@ -633,5 +677,16 @@ trait InputPlugin extends EventEmitter {
     * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
     */
   def updatePoll(time: Double, delta: Double): Boolean = js.native
+  
+  /**
+    * The x coordinates of the ActivePointer based on the first camera in the camera list.
+    * This is only safe to use if your game has just 1 non-transformed camera and doesn't use multi-touch.
+    */
+  val x: Double = js.native
+  
+  /**
+    * The y coordinates of the ActivePointer based on the first camera in the camera list.
+    * This is only safe to use if your game has just 1 non-transformed camera and doesn't use multi-touch.
+    */
+  val y: Double = js.native
 }
-

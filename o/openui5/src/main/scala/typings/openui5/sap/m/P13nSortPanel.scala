@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nSortPanel extends P13nPanel {
+  
   /**
     * Adds some sortItem to the aggregation <code>sortItems</code>.
     * @since 1.26
@@ -13,6 +14,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addSortItem(oSortItem: P13nSortItem): P13nSortPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>addSortItem</code> event of this
     * <code>sap.m.P13nSortPanel</code>.When called, the context of the event handler (its
@@ -28,6 +30,7 @@ trait P13nSortPanel extends P13nPanel {
     */
   def attachAddSortItem(oData: js.Any, fnFunction: js.Any): P13nSortPanel = js.native
   def attachAddSortItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nSortPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>removeSortItem</code> event of this
     * <code>sap.m.P13nSortPanel</code>.When called, the context of the event handler (its
@@ -43,6 +46,7 @@ trait P13nSortPanel extends P13nPanel {
     */
   def attachRemoveSortItem(oData: js.Any, fnFunction: js.Any): P13nSortPanel = js.native
   def attachRemoveSortItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nSortPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>updateSortItem</code> event of this
     * <code>sap.m.P13nSortPanel</code>.When called, the context of the event handler (its
@@ -58,6 +62,7 @@ trait P13nSortPanel extends P13nPanel {
     */
   def attachUpdateSortItem(oData: js.Any, fnFunction: js.Any): P13nSortPanel = js.native
   def attachUpdateSortItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nSortPanel = js.native
+  
   /**
     * Binds aggregation <code>sortItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -67,12 +72,14 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindSortItems(oBindingInfo: js.Any): P13nSortPanel = js.native
+  
   /**
     * Destroys all the sortItems in the aggregation <code>sortItems</code>.
     * @since 1.26
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySortItems(): P13nSortPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>addSortItem</code> event of this
     * <code>sap.m.P13nSortPanel</code>.The passed function and listener object must match the ones used
@@ -83,6 +90,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAddSortItem(fnFunction: js.Any, oListener: js.Any): P13nSortPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>removeSortItem</code> event of this
     * <code>sap.m.P13nSortPanel</code>.The passed function and listener object must match the ones used
@@ -93,6 +101,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachRemoveSortItem(fnFunction: js.Any, oListener: js.Any): P13nSortPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>updateSortItem</code> event of this
     * <code>sap.m.P13nSortPanel</code>.The passed function and listener object must match the ones used
@@ -103,6 +112,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUpdateSortItem(fnFunction: js.Any, oListener: js.Any): P13nSortPanel = js.native
+  
   /**
     * Fires event <code>addSortItem</code> to attached listeners.
     * @since 1.26
@@ -110,6 +120,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAddSortItem(mArguments: js.Any): P13nSortPanel = js.native
+  
   /**
     * Fires event <code>removeSortItem</code> to attached listeners.
     * @since 1.26
@@ -117,6 +128,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireRemoveSortItem(mArguments: js.Any): P13nSortPanel = js.native
+  
   /**
     * Fires event <code>updateSortItem</code> to attached listeners.
     * @since 1.26
@@ -124,6 +136,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUpdateSortItem(mArguments: js.Any): P13nSortPanel = js.native
+  
   /**
     * Gets current value of property <code>containerQuery</code>.defines if the mediaQuery or a
     * ContainerResize will be used for layout update. When the ConditionPanel is used on a dialog
@@ -132,6 +145,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Value of property <code>containerQuery</code>
     */
   def getContainerQuery(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>layoutMode</code>.can be used to control the layout behavior.
     * Default is "" which will automatically change the layout. With "Desktop", "Table"or"Phone" you can
@@ -140,11 +154,13 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Value of property <code>layoutMode</code>
     */
   def getLayoutMode(): String = js.native
+  
   /**
     * Gets content of aggregation <code>sortItems</code>.defined Sort Items
     * @since 1.26
     */
   def getSortItems(): js.Array[P13nSortItem] = js.native
+  
   /**
     * Checks for the provided <code>sap.m.P13nSortItem</code> in the aggregation
     * <code>sortItems</code>.and returns its index if found or -1 otherwise.
@@ -153,6 +169,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSortItem(oSortItem: P13nSortItem): Double = js.native
+  
   /**
     * Inserts a sortItem into the aggregation <code>sortItems</code>.
     * @since 1.26
@@ -164,6 +181,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSortItem(oSortItem: P13nSortItem, iIndex: Double): P13nSortPanel = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>sortItems</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -171,11 +189,13 @@ trait P13nSortPanel extends P13nPanel {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSortItems(): js.Array[P13nSortItem] = js.native
+  
   /**
     * removes all invalid sort conditions.
     * @since 1.28
     */
   def removeInvalidConditions(): Unit = js.native
+  
   def removeSortItem(vSortItem: String): P13nSortItem = js.native
   /**
     * Removes a sortItem from the aggregation <code>sortItems</code>.
@@ -185,11 +205,13 @@ trait P13nSortPanel extends P13nPanel {
     */
   def removeSortItem(vSortItem: Double): P13nSortItem = js.native
   def removeSortItem(vSortItem: P13nSortItem): P13nSortItem = js.native
+  
   /**
     * removes all errors/warning states from of all sort conditions.
     * @since 1.28
     */
   def removeValidationErrors(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>containerQuery</code>.defines if the mediaQuery or a
     * ContainerResize will be used for layout update. When the ConditionPanel is used on a dialog
@@ -201,6 +223,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContainerQuery(bContainerQuery: Boolean): P13nSortPanel = js.native
+  
   /**
     * Sets a new value for property <code>layoutMode</code>.can be used to control the layout behavior.
     * Default is "" which will automatically change the layout. With "Desktop", "Table"or"Phone" you can
@@ -211,6 +234,7 @@ trait P13nSortPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLayoutMode(sLayoutMode: String): P13nSortPanel = js.native
+  
   /**
     * setter for the supported operations array
     * @since 1.26
@@ -218,12 +242,14 @@ trait P13nSortPanel extends P13nPanel {
     * @returns this for chaining
     */
   def setOperations(array: js.Array[_]): P13nSortPanel = js.native
+  
   /**
     * Unbinds aggregation <code>sortItems</code> from model data.
     * @since 1.26
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindSortItems(): P13nSortPanel = js.native
+  
   /**
     * check if the entered/modified conditions are correct, marks invalid fields yellow (Warning state)
     * and opens a popup message dialog to give theuser the feedback that some values are wrong or missing.
@@ -231,4 +257,3 @@ trait P13nSortPanel extends P13nPanel {
     */
   def validateConditions(): Unit = js.native
 }
-

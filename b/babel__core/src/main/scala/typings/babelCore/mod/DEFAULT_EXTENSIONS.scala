@@ -8,10 +8,9 @@ import typings.babelCore.babelCoreStrings.Dotjsx
 import typings.babelCore.babelCoreStrings.Dotmjs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/core", "DEFAULT_EXTENSIONS")
 @js.native
 object DEFAULT_EXTENSIONS
   extends TopLevel[js.Tuple5[Dotjs, Dotjsx, Dotes6, Dotes, Dotmjs]]
-

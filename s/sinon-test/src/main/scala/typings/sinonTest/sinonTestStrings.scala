@@ -2,9 +2,28 @@ package typings.sinonTest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sinonTestStrings {
+  
+  @scala.inline
+  def clock: clock = "clock".asInstanceOf[clock]
+  
+  @scala.inline
+  def mock: mock = "mock".asInstanceOf[mock]
+  
+  @scala.inline
+  def requests: requests = "requests".asInstanceOf[requests]
+  
+  @scala.inline
+  def server: server = "server".asInstanceOf[server]
+  
+  @scala.inline
+  def spy: spy = "spy".asInstanceOf[spy]
+  
+  @scala.inline
+  def stub: stub = "stub".asInstanceOf[stub]
+  
   @js.native
   sealed trait clock extends js.Object
   
@@ -22,18 +41,4 @@ object sinonTestStrings {
   
   @js.native
   sealed trait stub extends js.Object
-  
-  @scala.inline
-  def clock: clock = "clock".asInstanceOf[clock]
-  @scala.inline
-  def mock: mock = "mock".asInstanceOf[mock]
-  @scala.inline
-  def requests: requests = "requests".asInstanceOf[requests]
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
-  @scala.inline
-  def spy: spy = "spy".asInstanceOf[spy]
-  @scala.inline
-  def stub: stub = "stub".asInstanceOf[stub]
 }
-

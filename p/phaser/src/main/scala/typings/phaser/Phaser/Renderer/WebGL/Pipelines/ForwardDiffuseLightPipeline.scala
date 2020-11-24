@@ -7,7 +7,7 @@ import typings.phaser.integer
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ForwardDiffuseLightPipeline implements a forward rendering approach for 2D lights.
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ForwardDiffuseLightPipeline extends TextureTintPipeline {
+  
   /**
     * Generic function for batching a textured quad
     * @param gameObject Source GameObject
@@ -81,11 +82,13 @@ trait ForwardDiffuseLightPipeline extends TextureTintPipeline {
     camera: Camera,
     parentTransformMatrix: TransformMatrix
   ): Unit = js.native
+  
   /**
     * Sets the Game Objects normal map as the active texture.
     * @param gameObject The Game Object to update.
     */
   def setNormalMap(gameObject: GameObject): Unit = js.native
+  
   /**
     * Rotates the normal map vectors inversely by the given angle.
     * Only works in 2D space.
@@ -93,4 +96,3 @@ trait ForwardDiffuseLightPipeline extends TextureTintPipeline {
     */
   def setNormalMapRotation(rotation: Double): Unit = js.native
 }
-

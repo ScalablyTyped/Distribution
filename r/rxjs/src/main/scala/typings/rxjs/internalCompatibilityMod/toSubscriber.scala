@@ -3,11 +3,12 @@ package typings.rxjs.internalCompatibilityMod
 import typings.rxjs.typesMod.PartialObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal-compatibility", "toSubscriber")
 @js.native
 object toSubscriber extends js.Object {
+  
   def apply[T](): typings.rxjs.subscriberMod.Subscriber[T] = js.native
   def apply[T](
     nextOrObserver: js.UndefOr[scala.Nothing],
@@ -41,4 +42,3 @@ object toSubscriber extends js.Object {
     complete: js.Function0[Unit]
   ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
 }
-

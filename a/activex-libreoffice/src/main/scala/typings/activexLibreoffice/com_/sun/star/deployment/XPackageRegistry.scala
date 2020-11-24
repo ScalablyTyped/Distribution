@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to bind an UNO package.
@@ -12,11 +12,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPackageRegistry extends js.Object {
+  
   /**
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
   val SupportedPackageTypes: SafeArray[XPackageTypeInfo] = js.native
+  
   /**
     * binds a package URL to a {@link XPackage} handle. The returned UNO package handle ought to late-initialize itself, thus the process of binding must
     * not be an expensive operation, because it is not abortable.
@@ -44,15 +46,17 @@ trait XPackageRegistry extends js.Object {
     * @returns {@link XPackage} handle
     */
   def bindPackage(url: String, mediaType: String, removed: Boolean, identifier: String, xCmdEnv: XCommandEnvironment): XPackage = js.native
+  
   /**
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
   def getSupportedPackageTypes(): SafeArray[XPackageTypeInfo] = js.native
+  
   def packageRemoved(url: String, mediaType: String): Unit = js.native
 }
-
 object XPackageRegistry {
+  
   @scala.inline
   def apply(
     SupportedPackageTypes: SafeArray[XPackageTypeInfo],
@@ -63,26 +67,32 @@ object XPackageRegistry {
     val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes.asInstanceOf[js.Any], bindPackage = js.Any.fromFunction5(bindPackage), getSupportedPackageTypes = js.Any.fromFunction0(getSupportedPackageTypes), packageRemoved = js.Any.fromFunction2(packageRemoved))
     __obj.asInstanceOf[XPackageRegistry]
   }
+  
   @scala.inline
   implicit class XPackageRegistryOps[Self <: XPackageRegistry] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = this.set("SupportedPackageTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBindPackage(value: (String, String, Boolean, String, XCommandEnvironment) => XPackage): Self = this.set("bindPackage", js.Any.fromFunction5(value))
+    
     @scala.inline
     def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = this.set("getSupportedPackageTypes", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setPackageRemoved(value: (String, String) => Unit): Self = this.set("packageRemoved", js.Any.fromFunction2(value))
   }
-  
 }
-

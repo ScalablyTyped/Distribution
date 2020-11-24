@@ -4,9 +4,22 @@ import typings.polyfillService.mod.PolyfillFlag
 import typings.polyfillService.mod.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polyfillServiceStrings {
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def gated: gated = "gated".asInstanceOf[gated]
+  
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @scala.inline
+  def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
+  
   @js.native
   sealed trait always extends PolyfillFlag
   
@@ -18,14 +31,4 @@ object polyfillServiceStrings {
   
   @js.native
   sealed trait polyfill extends Unknown
-  
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def gated: gated = "gated".asInstanceOf[gated]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
 }
-

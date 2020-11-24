@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/slides/v1", "slides_v1.Resource$Presentations")
 @js.native
 class ResourcePresentations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var pages: ResourcePresentationsPages = js.native
+  
   /**
     * slides.presentations.batchUpdate
     * @desc Applies one or more updates to the presentation.  Each request is
@@ -59,6 +58,9 @@ class ResourcePresentations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdatePresentationResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * slides.presentations.create
     * @desc Creates a blank presentation using the title given in the request.
@@ -91,6 +93,7 @@ class ResourcePresentations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPresentation]
   ): Unit = js.native
+  
   /**
     * slides.presentations.get
     * @desc Gets the latest version of the specified presentation.
@@ -119,5 +122,6 @@ class ResourcePresentations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPresentation]
   ): Unit = js.native
+  
+  var pages: ResourcePresentationsPages = js.native
 }
-

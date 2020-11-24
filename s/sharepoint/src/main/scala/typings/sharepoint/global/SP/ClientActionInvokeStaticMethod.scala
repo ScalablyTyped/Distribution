@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.ClientActionInvokeStaticMethod")
 @js.native
@@ -15,4 +15,3 @@ class ClientActionInvokeStaticMethod protected ()
     parameters: js.Array[_]
   ) = this()
 }
-

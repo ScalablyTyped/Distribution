@@ -3,13 +3,14 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A widget which displays the contents of a mime model.
   */
 @js.native
 trait IRenderer extends Widget {
+  
   /**
     * Render a mime model.
     *
@@ -23,4 +24,3 @@ trait IRenderer extends Widget {
     */
   def renderModel(model: IMimeModel): js.Promise[Unit] = js.native
 }
-

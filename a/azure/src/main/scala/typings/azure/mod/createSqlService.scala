@@ -2,11 +2,12 @@ package typings.azure.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "createSqlService")
 @js.native
 object createSqlService extends js.Object {
+  
   def apply(serverName: String, administratorLogin: String, administratorLoginPassword: String): SqlService = js.native
   def apply(
     serverName: String,
@@ -56,4 +57,3 @@ object createSqlService extends js.Object {
     authenticationProvider: String
   ): SqlService = js.native
 }
-

@@ -10,9 +10,9 @@ mutex lock for javascript
 | ------------------ | :-------------: |
 | Full name          | mutexify |
 | Keywords           | mutex, lock |
-| # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 620608 |
+| # releases         | 1 |
+| # dependents       | 82 |
+| # downloads        | 747294 |
 | # stars            | 3 |
 
 ## Links

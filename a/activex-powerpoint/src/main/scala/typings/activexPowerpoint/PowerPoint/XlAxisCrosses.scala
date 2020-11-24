@@ -6,7 +6,7 @@ import typings.activexPowerpoint.activexPowerpointNumbers.`2`
 import typings.activexPowerpoint.activexPowerpointNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexPowerpoint.activexPowerpointNumbers.`-4105`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexPowerpoint.activexPowerpointNumbers.`4`
 */
 trait XlAxisCrosses extends js.Object
-
 object XlAxisCrosses {
+  
   @scala.inline
   def xlAxisCrossesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
   @scala.inline
   def xlAxisCrossesCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  
   @scala.inline
   def xlAxisCrossesMaximum: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def xlAxisCrossesMinimum: `4` = 4.asInstanceOf[`4`]
 }
-

@@ -7,12 +7,13 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mailparser", "MailParser")
 @js.native
 class MailParser () extends Transform {
   def this(options: TransformOptions) = this()
+  
   @JSName("on")
   def on_data(event: data, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
   @JSName("on")
@@ -20,4 +21,3 @@ class MailParser () extends Transform {
   @JSName("on")
   def on_readable(event: readable, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
 }
-

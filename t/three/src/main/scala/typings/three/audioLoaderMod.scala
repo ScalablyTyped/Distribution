@@ -8,14 +8,16 @@ import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/loaders/AudioLoader", JSImport.Namespace)
 @js.native
 object audioLoaderMod extends js.Object {
+  
   @js.native
   class AudioLoader () extends Loader {
     def this(manager: LoadingManager) = this()
+    
     def load(url: String, onLoad: js.Function1[/* audioBuffer */ AudioBuffer, Unit]): Unit = js.native
     def load(
       url: String,
@@ -35,6 +37,4 @@ object audioLoaderMod extends js.Object {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
   }
-  
 }
-

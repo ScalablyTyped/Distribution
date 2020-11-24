@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AdaptiveMediaSourceCreationStatus extends js.Object
-
 /** Specifies the result of an attempt to create a AdaptiveMediaSource object. */
 @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationStatus")
 @js.native
 object AdaptiveMediaSourceCreationStatus extends js.Object {
+  
   /** The creation of the AdaptiveMediaSource object failed as the result of a failure in downloading the adaptive streaming manifest. */
   @js.native
   sealed trait manifestDownloadFailure extends AdaptiveMediaSourceCreationStatus
@@ -38,6 +38,4 @@ object AdaptiveMediaSourceCreationStatus extends js.Object {
   /** The creation of the AdaptiveMediaSource object failed because the version of the adaptive streaming manifest is unsupported. */
   @js.native
   sealed trait unsupportedManifestVersion extends AdaptiveMediaSourceCreationStatus
-  
 }
-

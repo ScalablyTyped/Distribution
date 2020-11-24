@@ -7,11 +7,12 @@ import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/pool_gpu", JSImport.Namespace)
 @js.native
 object poolGpuMod extends js.Object {
+  
   @js.native
   class Pool2DProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv2DInfo, poolType: avg, computePositions: Boolean) = this()
@@ -83,6 +84,4 @@ object poolGpuMod extends js.Object {
       includeBatchInIndex: Boolean
     ) = this()
   }
-  
 }
-

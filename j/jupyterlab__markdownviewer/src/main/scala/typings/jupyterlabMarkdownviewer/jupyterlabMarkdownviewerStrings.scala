@@ -2,9 +2,28 @@ package typings.jupyterlabMarkdownviewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabMarkdownviewerStrings {
+  
+  @scala.inline
+  def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
+  
+  @scala.inline
+  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
+  
+  @scala.inline
+  def hideFrontMatter: hideFrontMatter = "hideFrontMatter".asInstanceOf[hideFrontMatter]
+  
+  @scala.inline
+  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
+  
+  @scala.inline
+  def lineWidth: lineWidth = "lineWidth".asInstanceOf[lineWidth]
+  
+  @scala.inline
+  def renderTimeout: renderTimeout = "renderTimeout".asInstanceOf[renderTimeout]
+  
   @js.native
   sealed trait fontFamily extends js.Object
   
@@ -22,18 +41,4 @@ object jupyterlabMarkdownviewerStrings {
   
   @js.native
   sealed trait renderTimeout extends js.Object
-  
-  @scala.inline
-  def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
-  @scala.inline
-  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
-  @scala.inline
-  def hideFrontMatter: hideFrontMatter = "hideFrontMatter".asInstanceOf[hideFrontMatter]
-  @scala.inline
-  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
-  @scala.inline
-  def lineWidth: lineWidth = "lineWidth".asInstanceOf[lineWidth]
-  @scala.inline
-  def renderTimeout: renderTimeout = "renderTimeout".asInstanceOf[renderTimeout]
 }
-

@@ -4,7 +4,7 @@ import typings.orientjs.orientjsStrings.CACHED
 import typings.orientjs.orientjsStrings.ORDERED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The sequence constructor.
@@ -13,13 +13,9 @@ import scala.scalajs.js.annotation._
 @JSImport("orientjs", "OSequence")
 @js.native
 class OSequence () extends js.Object {
+  
   var cache: js.UndefOr[Double] = js.native
-  var db: js.UndefOr[ODB] = js.native
-  var incr: js.UndefOr[Double] = js.native
-  var name: js.UndefOr[String] = js.native
-  var start: js.UndefOr[Double] = js.native
-  var `type`: js.UndefOr[String] = js.native
-  var value: js.UndefOr[Double] = js.native
+  
   /**
     * Cache the given class data for fast lookup later.
     *
@@ -27,6 +23,7 @@ class OSequence () extends js.Object {
     * @return                The db instance.
     */
   def cacheData(sequences: js.Array[OSequence]): ODB = js.native
+  
   @JSName("create")
   def create_CACHED(name: String, `type`: CACHED): js.Promise[OSequence] = js.native
   @JSName("create")
@@ -81,6 +78,9 @@ class OSequence () extends js.Object {
   def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Double): js.Promise[OSequence] = js.native
   @JSName("create")
   def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  
+  var db: js.UndefOr[ODB] = js.native
+  
   /**
     * Delete a sequence.
     *
@@ -90,6 +90,7 @@ class OSequence () extends js.Object {
     */
   def drop(name: String): js.Promise[ODB] = js.native
   def drop(name: String, config: js.Object): js.Promise[ODB] = js.native
+  
   /**
     * Get a sequence by name.
     *
@@ -99,6 +100,9 @@ class OSequence () extends js.Object {
     */
   def get(name: String): js.Promise[OSequence] = js.native
   def get(name: String, refresh: Boolean): js.Promise[OSequence] = js.native
+  
+  var incr: js.UndefOr[Double] = js.native
+  
   /**
     * Configure the sequence instance.
     * @param  config The configuration object.
@@ -110,12 +114,20 @@ class OSequence () extends js.Object {
     * @promise {Object[]}       An array of class objects.
     */
   def list(refresh: Boolean): js.Promise[js.Array[OSequence]] = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
   /**
     * Reload the sequence instance.
     *
     * @promise {Sequence} The class instance.
     */
   def reload(): js.Promise[js.Array[OSequence]] = js.native
+  
+  var start: js.UndefOr[Double] = js.native
+  
+  var `type`: js.UndefOr[String] = js.native
+  
   /**
     * update a  sequence.
     *
@@ -138,5 +150,6 @@ class OSequence () extends js.Object {
   def update(name: String, start: Double, incerement: js.UndefOr[scala.Nothing], cache: Double): js.Promise[OSequence] = js.native
   def update(name: String, start: Double, incerement: Double): js.Promise[OSequence] = js.native
   def update(name: String, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  
+  var value: js.UndefOr[Double] = js.native
 }
-

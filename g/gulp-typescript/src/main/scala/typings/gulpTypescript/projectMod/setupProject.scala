@@ -7,11 +7,12 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ProjectReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gulp-typescript/release/project", "setupProject")
 @js.native
 object setupProject extends js.Object {
+  
   def apply(
     projectDirectory: String,
     configFileName: String,
@@ -23,4 +24,3 @@ object setupProject extends js.Object {
     finalTransformers: FinalTransformers
   ): Project = js.native
 }
-

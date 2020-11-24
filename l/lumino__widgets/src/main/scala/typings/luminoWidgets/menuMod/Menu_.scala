@@ -14,7 +14,7 @@ import typings.std.Event
 import typings.std.HTMLUListElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/menu", "Menu")
 @js.native
@@ -25,25 +25,34 @@ class Menu_ protected () extends Widget {
     * @param options - The options for initializing the menu.
     */
   def this(options: IOptions) = this()
+  
   var _aboutToClose: js.Any = js.native
+  
   var _activeIndex: js.Any = js.native
+  
   /**
     * Cancel the close timer, if the timer is pending.
     */
   var _cancelCloseTimer: js.Any = js.native
+  
   /**
     * Cancel the open timer, if the timer is pending.
     */
   var _cancelOpenTimer: js.Any = js.native
+  
   var _childIndex: js.Any = js.native
+  
   var _childMenu: js.Any = js.native
+  
   /**
     * Close the child menu immediately.
     *
     * This is a no-op if a child menu is not open.
     */
   var _closeChildMenu: js.Any = js.native
+  
   var _closeTimerID: js.Any = js.native
+  
   /**
     * Handle the `'keydown'` event for the menu.
     *
@@ -51,6 +60,7 @@ class Menu_ protected () extends Widget {
     * This listener is attached to the menu node.
     */
   var _evtKeyDown: js.Any = js.native
+  
   /**
     * Handle the `'mousedown'` event for the menu.
     *
@@ -58,6 +68,7 @@ class Menu_ protected () extends Widget {
     * This listener is attached to the document node.
     */
   var _evtMouseDown: js.Any = js.native
+  
   /**
     * Handle the `'mouseenter'` event for the menu.
     *
@@ -65,6 +76,7 @@ class Menu_ protected () extends Widget {
     * This listener is attached to the menu node.
     */
   var _evtMouseEnter: js.Any = js.native
+  
   /**
     * Handle the `'mouseleave'` event for the menu.
     *
@@ -72,6 +84,7 @@ class Menu_ protected () extends Widget {
     * This listener is attached to the menu node.
     */
   var _evtMouseLeave: js.Any = js.native
+  
   /**
     * Handle the `'mousemove'` event for the menu.
     *
@@ -79,6 +92,7 @@ class Menu_ protected () extends Widget {
     * This listener is attached to the menu node.
     */
   var _evtMouseMove: js.Any = js.native
+  
   /**
     * Handle the `'mouseup'` event for the menu.
     *
@@ -86,8 +100,11 @@ class Menu_ protected () extends Widget {
     * This listener is attached to the menu node.
     */
   var _evtMouseUp: js.Any = js.native
+  
   var _items: js.Any = js.native
+  
   var _menuRequested: js.Any = js.native
+  
   /**
     * Open the child menu at the active index immediately.
     *
@@ -95,16 +112,21 @@ class Menu_ protected () extends Widget {
     * even if the active item is not a valid submenu.
     */
   var _openChildMenu: js.Any = js.native
+  
   var _openTimerID: js.Any = js.native
+  
   var _parentMenu: js.Any = js.native
+  
   /**
     * Start the close timer, unless it is already pending.
     */
   var _startCloseTimer: js.Any = js.native
+  
   /**
     * Start the open timer, unless it is already pending.
     */
   var _startOpenTimer: js.Any = js.native
+  
   /**
     * A signal emitted just before the menu is closed.
     *
@@ -116,6 +138,23 @@ class Menu_ protected () extends Widget {
     * the DOM when it receives the `'close-request'` message.
     */
   val aboutToClose: ISignal[this.type, Unit] = js.native
+  
+  /**
+    * Activate the next selectable item in the menu.
+    *
+    * #### Notes
+    * If no item is selectable, the index will be set to `-1`.
+    */
+  def activateNextItem(): Unit = js.native
+  
+  /**
+    * Activate the previous selectable item in the menu.
+    *
+    * #### Notes
+    * If no item is selectable, the index will be set to `-1`.
+    */
+  def activatePreviousItem(): Unit = js.native
+  
   /**
     * Get the index of the currently active menu item.
     *
@@ -129,6 +168,7 @@ class Menu_ protected () extends Widget {
     * If the item cannot be activated, the index will be set to `-1`.
     */
   var activeIndex: Double = js.native
+  
   /**
     * Get the currently active menu item.
     */
@@ -139,6 +179,16 @@ class Menu_ protected () extends Widget {
     * If the item cannot be activated, the item will be set to `null`.
     */
   var activeItem: IItem | Null = js.native
+  
+  /**
+    * Add a menu item to the end of the menu.
+    *
+    * @param options - The options for creating the menu item.
+    *
+    * @returns The menu item added to the menu.
+    */
+  def addItem(options: IItemOptions): IItem = js.native
+  
   /**
     * The child menu of the menu.
     *
@@ -146,10 +196,17 @@ class Menu_ protected () extends Widget {
     * This is `null` unless the menu has an open submenu.
     */
   val childMenu: Menu | Null = js.native
+  
+  /**
+    * Remove all menu items from the menu.
+    */
+  def clearItems(): Unit = js.native
+  
   /**
     * The command registry used by the menu.
     */
   val commands: CommandRegistry = js.native
+  
   /**
     * The menu content node.
     *
@@ -159,68 +216,7 @@ class Menu_ protected () extends Widget {
     * Modifying this node directly can lead to undefined behavior.
     */
   val contentNode: HTMLUListElement = js.native
-  /**
-    * A read-only array of the menu items in the menu.
-    */
-  val items: js.Array[IItem] = js.native
-  /**
-    * The leaf menu of the menu hierarchy.
-    */
-  val leafMenu: Menu = js.native
-  /**
-    * A signal emitted when a new menu is requested by the user.
-    *
-    * #### Notes
-    * This signal is emitted whenever the user presses the right or left
-    * arrow keys, and a submenu cannot be opened or closed in response.
-    *
-    * This signal is useful when implementing menu bars in order to open
-    * the next or previous menu in response to a user key press.
-    *
-    * This signal is only emitted for the root menu in a hierarchy.
-    */
-  val menuRequested: ISignal[this.type, next | previous] = js.native
-  /**
-    * The parent menu of the menu.
-    *
-    * #### Notes
-    * This is `null` unless the menu is an open submenu.
-    */
-  val parentMenu: Menu | Null = js.native
-  /**
-    * The renderer used by the menu.
-    */
-  val renderer: IRenderer = js.native
-  /**
-    * The root menu of the menu hierarchy.
-    */
-  val rootMenu: Menu = js.native
-  /**
-    * Activate the next selectable item in the menu.
-    *
-    * #### Notes
-    * If no item is selectable, the index will be set to `-1`.
-    */
-  def activateNextItem(): Unit = js.native
-  /**
-    * Activate the previous selectable item in the menu.
-    *
-    * #### Notes
-    * If no item is selectable, the index will be set to `-1`.
-    */
-  def activatePreviousItem(): Unit = js.native
-  /**
-    * Add a menu item to the end of the menu.
-    *
-    * @param options - The options for creating the menu item.
-    *
-    * @returns The menu item added to the menu.
-    */
-  def addItem(options: IItemOptions): IItem = js.native
-  /**
-    * Remove all menu items from the menu.
-    */
-  def clearItems(): Unit = js.native
+  
   /**
     * Handle the DOM events for the menu.
     *
@@ -232,6 +228,7 @@ class Menu_ protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * Insert a menu item into the menu at the specified index.
     *
@@ -245,6 +242,31 @@ class Menu_ protected () extends Widget {
     * The index will be clamped to the bounds of the items.
     */
   def insertItem(index: Double, options: IItemOptions): IItem = js.native
+  
+  /**
+    * A read-only array of the menu items in the menu.
+    */
+  val items: js.Array[IItem] = js.native
+  
+  /**
+    * The leaf menu of the menu hierarchy.
+    */
+  val leafMenu: Menu = js.native
+  
+  /**
+    * A signal emitted when a new menu is requested by the user.
+    *
+    * #### Notes
+    * This signal is emitted whenever the user presses the right or left
+    * arrow keys, and a submenu cannot be opened or closed in response.
+    *
+    * This signal is useful when implementing menu bars in order to open
+    * the next or previous menu in response to a user key press.
+    *
+    * This signal is only emitted for the root menu in a hierarchy.
+    */
+  val menuRequested: ISignal[this.type, next | previous] = js.native
+  
   /**
     * Open the menu at the specified location.
     *
@@ -263,6 +285,15 @@ class Menu_ protected () extends Widget {
     */
   def open(x: Double, y: Double): Unit = js.native
   def open(x: Double, y: Double, options: IOpenOptions): Unit = js.native
+  
+  /**
+    * The parent menu of the menu.
+    *
+    * #### Notes
+    * This is `null` unless the menu is an open submenu.
+    */
+  val parentMenu: Menu | Null = js.native
+  
   /**
     * Remove an item from the menu.
     *
@@ -272,6 +303,7 @@ class Menu_ protected () extends Widget {
     * This is a no-op if the item is not in the menu.
     */
   def removeItem(item: IItem): Unit = js.native
+  
   /**
     * Remove the item at a given index from the menu.
     *
@@ -281,6 +313,17 @@ class Menu_ protected () extends Widget {
     * This is a no-op if the index is out of range.
     */
   def removeItemAt(index: Double): Unit = js.native
+  
+  /**
+    * The renderer used by the menu.
+    */
+  val renderer: IRenderer = js.native
+  
+  /**
+    * The root menu of the menu hierarchy.
+    */
+  val rootMenu: Menu = js.native
+  
   /**
     * Trigger the active menu item.
     *
@@ -296,4 +339,3 @@ class Menu_ protected () extends Widget {
     */
   def triggerActiveItem(): Unit = js.native
 }
-

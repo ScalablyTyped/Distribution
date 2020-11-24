@@ -6,10 +6,11 @@ import typings.nightwatch.nightwatchStrings.driver
 import typings.nightwatch.nightwatchStrings.server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientCommands extends js.Object {
+  
   /**
     * Close the current window. This can be useful when you're working with multiple windows open (e.g. an OAuth login).
     * Uses `window` protocol command.
@@ -25,6 +26,7 @@ trait ClientCommands extends js.Object {
   def closeWindow(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
+  
   /**
     * Delete the cookie with the given name. This command is a no-op if there is no such cookie visible to the current page.
     *
@@ -42,6 +44,7 @@ trait ClientCommands extends js.Object {
     cookieName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
+  
   /**
     * Delete all cookies visible to the current page.
     *
@@ -58,6 +61,7 @@ trait ClientCommands extends js.Object {
   def deleteCookies(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
+  
   /**
     * Ends the session. Uses session protocol command.
     *
@@ -72,6 +76,7 @@ trait ClientCommands extends js.Object {
   def end(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve a single cookie visible to the current page. The cookie is returned as a cookie JSON object,
     * as defined [here](https://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object).
@@ -93,6 +98,7 @@ trait ClientCommands extends js.Object {
     name: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Cookie], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve all cookies visible to the current page. The cookies are returned as an array of cookie JSON object,
     * as defined [here](https://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object).
@@ -117,6 +123,7 @@ trait ClientCommands extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Gets a log from Selenium.
     *
@@ -137,6 +144,7 @@ trait ClientCommands extends js.Object {
     typestring: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
   ): this.type = js.native
+  
   /**
     * Gets the available log types. More info about log types in WebDriver can be found here: https://github.com/SeleniumHQ/selenium/wiki/Logging
     *
@@ -157,6 +165,7 @@ trait ClientCommands extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Returns the title of the current page. Uses title protocol command.
     *
@@ -172,6 +181,7 @@ trait ClientCommands extends js.Object {
     */
   def getTitle(): this.type = js.native
   def getTitle(callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ js.UndefOr[String], Unit]): this.type = js.native
+  
   /**
     * This command is an alias to url and also a convenience method when called without any arguments in the sense
     * that it performs a call to .url() with passing the value of `launch_url` field from the settings file.
@@ -186,6 +196,7 @@ trait ClientCommands extends js.Object {
     */
   def init(): this.type = js.native
   def init(url: String): this.type = js.native
+  
   /**
     * Utility command to load an external script into the page specified by url.
     *
@@ -208,6 +219,7 @@ trait ClientCommands extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Utility command to test if the log type is available.
     *
@@ -225,6 +237,7 @@ trait ClientCommands extends js.Object {
     typeString: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ Boolean, Unit]
   ): this.type = js.native
+  
   /**
     * Maximizes the current window.
     *
@@ -239,6 +252,7 @@ trait ClientCommands extends js.Object {
   def maximizeWindow(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Suspends the test for the given time in milliseconds. If the milliseconds argument is missing it will suspend the test indefinitely
     *
@@ -253,6 +267,7 @@ trait ClientCommands extends js.Object {
   def pause(ms: js.UndefOr[scala.Nothing], callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
   def pause(ms: Double): this.type = js.native
   def pause(ms: Double, callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
+  
   /**
     * A simple perform command which allows access to the Nightwatch API in a callback. Can be useful if you want to read variables set by other commands.
     *
@@ -298,6 +313,7 @@ trait ClientCommands extends js.Object {
   def perform(callback: js.Function0[js.UndefOr[js.Promise[_]]]): this.type = js.native
   def perform(callback: js.Function1[/* done */ js.Function0[Unit], Unit]): this.type = js.native
   def perform(callback: js.Function2[/* client */ NightwatchAPI, /* done */ js.Function0[Unit], Unit]): this.type = js.native
+  
   /**
     * Resizes the current window.
     *
@@ -314,6 +330,7 @@ trait ClientCommands extends js.Object {
     height: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Take a screenshot of the current page and saves it as the given filename.
     *
@@ -329,6 +346,7 @@ trait ClientCommands extends js.Object {
     fileName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Set a cookie, specified as a cookie JSON object, as defined [here](https://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object).
     *
@@ -354,6 +372,7 @@ trait ClientCommands extends js.Object {
     cookie: Cookie,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Sets the current window position.
     *
@@ -370,6 +389,7 @@ trait ClientCommands extends js.Object {
     offsetY: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Change focus to another window. The window to change focus to may be specified by its server assigned window handle, or by the value of its name attribute.
     *
@@ -396,6 +416,7 @@ trait ClientCommands extends js.Object {
     handleOrName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Convenience command that adds the specified hash (i.e. url fragment) to the current value of the `launch_url` as set in `nightwatch.json`.
     *
@@ -413,6 +434,7 @@ trait ClientCommands extends js.Object {
     hash: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Sets the locate strategy for selectors to `css selector`, therefore every following selector needs to be specified as css.
     *
@@ -425,6 +447,7 @@ trait ClientCommands extends js.Object {
     */
   def useCss(): this.type = js.native
   def useCss(callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
+  
   /**
     * Sets the locate strategy for selectors to xpath, therefore every following selector needs to be specified as xpath.
     *
@@ -438,4 +461,3 @@ trait ClientCommands extends js.Object {
   def useXpath(): this.type = js.native
   def useXpath(callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
 }
-

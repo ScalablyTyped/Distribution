@@ -7,7 +7,7 @@ import typings.semanticUiReact.messageMessageMod.MessageComponent
 import typings.semanticUiReact.messageMessageMod.MessageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Message")
 @js.native
@@ -16,8 +16,6 @@ class Message protected ()
   def this(props: MessageProps) = this()
   def this(props: MessageProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Message")
 @js.native
 object Message extends TopLevel[MessageComponent]
-

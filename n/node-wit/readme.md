@@ -11,8 +11,8 @@ Wit.ai Node.js SDK
 | Full name          | node-wit |
 | Keywords           | wit, wit.ai, bot, botengine, bots, nlp, automation |
 | # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 138441 |
+| # dependents       | 34 |
+| # downloads        | 308225 |
 | # stars            | 14 |
 
 ## Links

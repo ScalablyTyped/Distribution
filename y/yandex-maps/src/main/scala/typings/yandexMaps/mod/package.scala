@@ -2,19 +2,30 @@ package typings.yandexMaps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type IChildOnMap = typings.yandexMaps.mod.IChild[typings.yandexMaps.mod.IControlParent]
+  
   type IControl = typings.yandexMaps.mod.IChildOnMap
+  
   type ICopyrightsAccessor = typings.yandexMaps.mod.ICopyrightsProvider
+  
   type IDomEventEmitter = typings.yandexMaps.mod.IEventEmitter
+  
   type IExpandableControlLayout = typings.yandexMaps.mod.ILayout
+  
   type IGeometryEditorRootModel = typings.yandexMaps.mod.IGeometryEditorModel
+  
   type IHintManager[T] = typings.yandexMaps.mod.IPopupManager[T]
+  
   type IMultiRouteReferencePoint = java.lang.String | js.Array[scala.Double] | typings.yandexMaps.mod.geometry.Point
+  
   type ISearchControlLayout = typings.yandexMaps.mod.IExpandableControlLayout
+  
   type ISelectableControlLayout = typings.yandexMaps.mod.ILayout
+  
   /* Rewritten from type alias, can be one of: 
     - typings.yandexMaps.yandexMapsStrings.defaultNumbersignopaque
     - typings.yandexMaps.yandexMapsStrings.defaultNumbersigngeoObject
@@ -24,6 +35,7 @@ package object mod {
     - java.lang.String
   */
   type InteractivityModelKey = typings.yandexMaps.mod._InteractivityModelKey | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.yandexMaps.yandexMapsStrings.defaultNumbersignplacemark
     - typings.yandexMaps.yandexMapsStrings.defaultNumbersignpin
@@ -58,5 +70,6 @@ package object mod {
       java.lang.String | typings.yandexMaps.mod.IClassConstructor[typings.yandexMaps.mod.IOverlay]
     ]
   ]) | java.lang.String
+  
   type PresetKey = java.lang.String
 }

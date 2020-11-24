@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WebXRState extends js.Object
-
 @JSGlobal("BABYLON.WebXRState")
 @js.native
 object WebXRState extends js.Object {
+  
   /**
     * Transitioning to being in XR mode
     */
@@ -33,6 +33,4 @@ object WebXRState extends js.Object {
     */
   @js.native
   sealed trait NOT_IN_XR extends WebXRState
-  
 }
-

@@ -10,9 +10,9 @@ React component that displays a spinner via spin.js until your component is load
 | ------------------ | :-------------: |
 | Full name          | react-loader |
 | Keywords           | react, component, react-component, loader, spinner, spin, spinjs, spin.js |
-| # releases         | 5 |
-| # dependents       | 35 |
-| # downloads        | 934784 |
+| # releases         | 3 |
+| # dependents       | 39 |
+| # downloads        | 1081512 |
 | # stars            | 4 |
 
 ## Links

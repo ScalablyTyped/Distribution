@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "buffer-compare"
-version := "0.0-unknown-dt-20200515Z-df50f1"
+version := "0.0-unknown-dt-20200923Z-679f96"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

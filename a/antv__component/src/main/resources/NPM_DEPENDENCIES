@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/component" : "0.8.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/component" : "0.8.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Original
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to a texture parser. Implementations of this interface handle the loading
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextureParser extends js.Object {
+  
   /**
     * Load the texture from the remote URL. When loaded (or failed),
     * use the callback to return an the raw resource data (or error).
@@ -22,6 +23,7 @@ trait TextureParser extends js.Object {
     */
   def load(url: Original, callback: typings.playcanvas.pc.callbacks.ResourceHandler): Unit = js.native
   def load(url: Original, callback: typings.playcanvas.pc.callbacks.ResourceHandler, asset: Asset): Unit = js.native
+  
   def open(url: String, data: js.Any, asset: Null, device: GraphicsDevice): Texture = js.native
   /**
     * Convert raw resource data into a resource instance. E.g. Take 3D model format JSON and return a pc.Model.
@@ -33,4 +35,3 @@ trait TextureParser extends js.Object {
     */
   def open(url: String, data: js.Any, asset: Asset, device: GraphicsDevice): Texture = js.native
 }
-

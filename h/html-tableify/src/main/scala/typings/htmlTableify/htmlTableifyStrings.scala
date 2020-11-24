@@ -3,9 +3,22 @@ package typings.htmlTableify
 import typings.htmlTableify.mod.Alignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlTableifyStrings {
+  
+  @scala.inline
+  def Datum: Datum = "Datum".asInstanceOf[Datum]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
   @js.native
   sealed trait Datum extends js.Object
   
@@ -17,14 +30,4 @@ object htmlTableifyStrings {
   
   @js.native
   sealed trait right extends Alignment
-  
-  @scala.inline
-  def Datum: Datum = "Datum".asInstanceOf[Datum]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
 }
-

@@ -10,11 +10,12 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/depthOfFieldBlurPostProcess", JSImport.Namespace)
 @js.native
 object depthOfFieldBlurPostProcessMod extends js.Object {
+  
   @js.native
   class DepthOfFieldBlurPostProcess protected () extends BlurPostProcess {
     /**
@@ -38,22 +39,7 @@ object depthOfFieldBlurPostProcessMod extends js.Object {
       scene: Scene,
       direction: Vector2,
       kernel: Double,
-      options: Double,
-      camera: Nullable[Camera],
-      circleOfConfusion: PostProcess,
-      imageToBlur: js.UndefOr[Nullable[PostProcess]],
-      samplingMode: js.UndefOr[Double],
-      engine: js.UndefOr[Engine],
-      reusable: js.UndefOr[Boolean],
-      textureType: js.UndefOr[Double],
-      blockCompilation: js.UndefOr[Boolean]
-    ) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      direction: Vector2,
-      kernel: Double,
-      options: PostProcessOptions,
+      options: Double | PostProcessOptions,
       camera: Nullable[Camera],
       circleOfConfusion: PostProcess,
       imageToBlur: js.UndefOr[Nullable[PostProcess]],
@@ -64,6 +50,4 @@ object depthOfFieldBlurPostProcessMod extends js.Object {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
   }
-  
 }
-

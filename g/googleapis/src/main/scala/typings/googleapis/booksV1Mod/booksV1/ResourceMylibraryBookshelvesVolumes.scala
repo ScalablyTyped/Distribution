@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Bookshelves$Volumes")
 @js.native
 class ResourceMylibraryBookshelvesVolumes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.mylibrary.bookshelves.volumes.list
     * @desc Gets volume information for volumes on a bookshelf.
@@ -52,4 +54,3 @@ class ResourceMylibraryBookshelvesVolumes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVolumes]
   ): Unit = js.native
 }
-

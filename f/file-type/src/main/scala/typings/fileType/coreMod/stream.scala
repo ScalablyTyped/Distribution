@@ -3,11 +3,12 @@ package typings.fileType.coreMod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("file-type/core", "stream")
 @js.native
 object stream extends js.Object {
+  
   /**
   	Detect the file type of a readable stream.
   	@param readableStream - A [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable) containing a file to examine.
@@ -30,4 +31,3 @@ object stream extends js.Object {
   	*/
   def apply(readableStream: Readable): js.Promise[ReadableStreamWithFileType] = js.native
 }
-

@@ -2,49 +2,107 @@ package typings.devextreme.mod.DevExpress.viz
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxTreeMapNode extends js.Object {
-  /** @name dxTreeMapNode.data */
-  var data: js.UndefOr[js.Any] = js.native
-  /** @name dxTreeMapNode.index */
-  var index: js.UndefOr[Double] = js.native
-  /** @name dxTreeMapNode.level */
-  var level: js.UndefOr[Double] = js.native
-  /** @name dxTreeMapNode.customize(options) */
+  
+  /**
+    * [descr:dxTreeMapNode.customize(options)]
+    */
   def customize(options: js.Any): Unit = js.native
-  /** @name dxTreeMapNode.drillDown() */
+  
+  /**
+    * [descr:dxTreeMapNode.data]
+    */
+  var data: js.UndefOr[js.Any] = js.native
+  
+  /**
+    * [descr:dxTreeMapNode.drillDown()]
+    */
   def drillDown(): Unit = js.native
-  /** @name dxTreeMapNode.getAllChildren() */
+  
+  /**
+    * [descr:dxTreeMapNode.getAllChildren()]
+    */
   def getAllChildren(): js.Array[dxTreeMapNode] = js.native
-  /** @name dxTreeMapNode.getAllNodes() */
+  
+  /**
+    * [descr:dxTreeMapNode.getAllNodes()]
+    */
   def getAllNodes(): js.Array[dxTreeMapNode] = js.native
-  /** @name dxTreeMapNode.getChild(index) */
+  
+  /**
+    * [descr:dxTreeMapNode.getChild(index)]
+    */
   def getChild(index: Double): dxTreeMapNode = js.native
-  /** @name dxTreeMapNode.getChildrenCount() */
+  
+  /**
+    * [descr:dxTreeMapNode.getChildrenCount()]
+    */
   def getChildrenCount(): Double = js.native
-  /** @name dxTreeMapNode.getParent() */
+  
+  /**
+    * [descr:dxTreeMapNode.getParent()]
+    */
   def getParent(): dxTreeMapNode = js.native
-  /** @name dxTreeMapNode.isActive() */
+  
+  /**
+    * [descr:dxTreeMapNode.index]
+    */
+  var index: js.UndefOr[Double] = js.native
+  
+  /**
+    * [descr:dxTreeMapNode.isActive()]
+    */
   def isActive(): Boolean = js.native
-  /** @name dxTreeMapNode.isHovered() */
+  
+  /**
+    * [descr:dxTreeMapNode.isHovered()]
+    */
   def isHovered(): Boolean = js.native
-  /** @name dxTreeMapNode.isLeaf() */
+  
+  /**
+    * [descr:dxTreeMapNode.isLeaf()]
+    */
   def isLeaf(): Boolean = js.native
-  /** @name dxTreeMapNode.isSelected() */
+  
+  /**
+    * [descr:dxTreeMapNode.isSelected()]
+    */
   def isSelected(): Boolean = js.native
-  /** @name dxTreeMapNode.label() */
+  
+  /**
+    * [descr:dxTreeMapNode.label()]
+    */
   def label(): String = js.native
-  /** @name dxTreeMapNode.label(label) */
+  /**
+    * [descr:dxTreeMapNode.label(label)]
+    */
   def label(label: String): Unit = js.native
-  /** @name dxTreeMapNode.resetCustomization() */
+  
+  /**
+    * [descr:dxTreeMapNode.level]
+    */
+  var level: js.UndefOr[Double] = js.native
+  
+  /**
+    * [descr:dxTreeMapNode.resetCustomization()]
+    */
   def resetCustomization(): Unit = js.native
-  /** @name dxTreeMapNode.select(state) */
+  
+  /**
+    * [descr:dxTreeMapNode.select(state)]
+    */
   def select(state: Boolean): Unit = js.native
-  /** @name dxTreeMapNode.showTooltip() */
+  
+  /**
+    * [descr:dxTreeMapNode.showTooltip()]
+    */
   def showTooltip(): Unit = js.native
-  /** @name dxTreeMapNode.value() */
+  
+  /**
+    * [descr:dxTreeMapNode.value()]
+    */
   def value(): Double = js.native
 }
-

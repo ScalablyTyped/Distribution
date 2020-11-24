@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chess.js", "Chess")
 @js.native
@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
 class Chess () extends ChessInstance {
   def this(fen: String) = this()
 }
-
 @JSImport("chess.js", "Chess")
 @js.native
 object Chess
@@ -27,6 +26,7 @@ object Chess
   */
 Instantiable0[ChessInstance]
      with Instantiable1[/* fen */ String, ChessInstance] {
+  
   /**
     * The Chess() constructor takes an optional parameter which specifies
     * the board configuration in Forsyth-Edwards Notation.
@@ -35,4 +35,3 @@ Instantiable0[ChessInstance]
   def apply(): ChessInstance = js.native
   def apply(fen: String): ChessInstance = js.native
 }
-

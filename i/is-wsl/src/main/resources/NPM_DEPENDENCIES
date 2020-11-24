@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-wsl" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-wsl" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

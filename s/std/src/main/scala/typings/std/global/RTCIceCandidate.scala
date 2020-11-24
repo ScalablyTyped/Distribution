@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.RTCIceCandidateInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCIceCandidate")
 @js.native
@@ -13,10 +13,8 @@ class RTCIceCandidate ()
   extends typings.std.RTCIceCandidate {
   def this(candidateInitDict: RTCIceCandidateInit) = this()
 }
-
 @JSGlobal("RTCIceCandidate")
 @js.native
 object RTCIceCandidate
   extends Instantiable0[typings.std.RTCIceCandidate]
      with Instantiable1[/* candidateInitDict */ RTCIceCandidateInit, typings.std.RTCIceCandidate]
-

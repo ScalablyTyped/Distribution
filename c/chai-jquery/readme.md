@@ -12,7 +12,7 @@ jQuery assertions for the Chai assertion library
 | Keywords           | chai, chai-plugin, vendor, browser-only, dom, test, assertion, assert, testing, jQuery |
 | # releases         | 2 |
 | # dependents       | 16 |
-| # downloads        | 1428011 |
+| # downloads        | 1587844 |
 | # stars            | 4 |
 
 ## Links

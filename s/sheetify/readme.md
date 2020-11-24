@@ -10,9 +10,9 @@ Modular CSS bundler
 | ------------------ | :-------------: |
 | Full name          | sheetify |
 | Keywords           | modular, css, bundle, browserify, css-modules |
-| # releases         | 11 |
-| # dependents       | 36 |
-| # downloads        | 111821 |
+| # releases         | 4 |
+| # dependents       | 37 |
+| # downloads        | 18976 |
 | # stars            | 10 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.std.WebGLRenderingContextBase
 import typings.std.WebGLRenderingContextOverloads
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IOS及安卓不支持：
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 trait WxWebGLRenderingContext
   extends WebGLRenderingContextBase
      with WebGLRenderingContextOverloads {
+  
   /**
     * 将一个Canvas对应的Texture绑定到WebGL上下文。(目前该方法仅支持 iOS 6.6.6 以上版本，Android/开发者工具暂不支持。)
     *   示例：gl.wxBindCanvasTexture(gl.TEXTURE_2D, canvas)
@@ -27,4 +28,3 @@ trait WxWebGLRenderingContext
     */
   def wxBindCanvasTexture(texture: Double, canvas: Canvas): Unit = js.native
 }
-

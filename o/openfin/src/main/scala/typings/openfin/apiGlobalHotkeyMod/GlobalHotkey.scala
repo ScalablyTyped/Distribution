@@ -4,10 +4,11 @@ import typings.openfin.baseMod.EmitterBase
 import typings.openfin.globalHotkeyMod.GlobalHotkeyEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlobalHotkey extends EmitterBase[GlobalHotkeyEvents] {
+  
   /**
     * Checks if a given hotkey has been registered
     * @param { string } hotkey a hotkey string
@@ -15,6 +16,7 @@ trait GlobalHotkey extends EmitterBase[GlobalHotkeyEvents] {
     * @tutorial GlobalHotkey.isRegistered
     */
   def isRegistered(hotkey: String): js.Promise[Boolean] = js.native
+  
   /**
     * Registers a global hotkey with the operating system.
     * @param { string } hotkey a hotkey string
@@ -23,6 +25,7 @@ trait GlobalHotkey extends EmitterBase[GlobalHotkeyEvents] {
     * @tutorial GlobalHotkey.register
     */
   def register(hotkey: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Unregisters a global hotkey with the operating system.
     * @param { string } hotkey a hotkey string
@@ -30,6 +33,7 @@ trait GlobalHotkey extends EmitterBase[GlobalHotkeyEvents] {
     * @tutorial GlobalHotkey.unregister
     */
   def unregister(hotkey: String): js.Promise[Unit] = js.native
+  
   /**
     * Unregisters all global hotkeys for the current application.
     * @return {Promise.<void>}
@@ -37,4 +41,3 @@ trait GlobalHotkey extends EmitterBase[GlobalHotkeyEvents] {
     */
   def unregisterAll(): js.Promise[Unit] = js.native
 }
-

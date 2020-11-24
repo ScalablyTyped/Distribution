@@ -11,8 +11,8 @@ A hook based router for React
 | Full name          | hookrouter |
 | Keywords           | - |
 | # releases         | 18 |
-| # dependents       | 4 |
-| # downloads        | 100659 |
+| # dependents       | 5 |
+| # downloads        | 245150 |
 | # stars            | 0 |
 
 ## Links

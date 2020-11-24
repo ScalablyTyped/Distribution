@@ -6,7 +6,7 @@ import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Networking.HostNameSortOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports network communication using a UDP datagram socket. */
 @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 /** Creates a new DatagramSocket object. */
 class DatagramSocket ()
   extends typings.winrtUwp.Windows.Networking.Sockets.DatagramSocket
-
 /* static members */
 @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
 @js.native
 object DatagramSocket extends js.Object {
+  
   /**
     * Gets a list of EndpointPair objects based on a remote hostname and remote service name that can be used to send datagrams to a remote network destination.
     * @param remoteHostName The remote hostname or IP address.
@@ -35,4 +35,3 @@ object DatagramSocket extends js.Object {
     */
   def getEndpointPairsAsync(remoteHostName: HostName, remoteServiceName: String, sortOptions: HostNameSortOptions): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
 }
-

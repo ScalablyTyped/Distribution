@@ -12,7 +12,7 @@ Wrapper for nssm.exe to manage windows services
 | Keywords           | nssm.exe,nssm,windows,service,services,manager,install,remove,start,restart,stop,status,svc,winsvc |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1536 |
+| # downloads        | 2442 |
 | # stars            | 0 |
 
 ## Links

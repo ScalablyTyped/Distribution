@@ -2,9 +2,31 @@ package typings.bang88ReactNativeDrawerLayout
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bang88ReactNativeDrawerLayoutStrings {
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
+  
+  @scala.inline
+  def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
+  
   @js.native
   sealed trait left extends js.Object
   
@@ -25,20 +47,4 @@ object bang88ReactNativeDrawerLayoutStrings {
   
   @js.native
   sealed trait unlocked extends js.Object
-  
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
-  @scala.inline
-  def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
 }
-

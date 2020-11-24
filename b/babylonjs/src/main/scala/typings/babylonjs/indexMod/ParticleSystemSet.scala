@@ -2,21 +2,22 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ParticleSystemSet")
 @js.native
 class ParticleSystemSet ()
   extends typings.babylonjs.particlesIndexMod.ParticleSystemSet
-
 /* static members */
 @JSImport("babylonjs/index", "ParticleSystemSet")
 @js.native
 object ParticleSystemSet extends js.Object {
+  
   /**
     * Gets or sets base Assets URL
     */
   var BaseAssetsUrl: String = js.native
+  
   /**
     * Parse a new ParticleSystemSet from a serialized source
     * @param data defines a JSON compatible representation of the set
@@ -27,4 +28,3 @@ object ParticleSystemSet extends js.Object {
   def Parse(data: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = js.native
   def Parse(data: js.Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = js.native
 }
-

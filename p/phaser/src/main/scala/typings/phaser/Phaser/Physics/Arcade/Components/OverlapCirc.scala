@@ -2,7 +2,7 @@ package typings.phaser.Phaser.Physics.Arcade.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This method will search the given circular area and return an array of all physics bodies that
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OverlapCirc extends js.Object
-

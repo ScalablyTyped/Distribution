@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An adapter is an object that receives requests from a store and
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Adapter ()
   extends typings.emberData.mod.DS.Adapter
-

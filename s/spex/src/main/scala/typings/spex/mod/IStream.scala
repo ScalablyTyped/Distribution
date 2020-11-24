@@ -2,11 +2,12 @@ package typings.spex.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // API: http://vitaly-t.github.io/spex/stream.html
 @js.native
 trait IStream extends js.Object {
+  
   // API: http://vitaly-t.github.io/spex/stream.html#.read
   def read(
     stream: js.Any,
@@ -18,4 +19,3 @@ trait IStream extends js.Object {
     options: IStreamReadOptions
   ): js.Promise[IStreamReadResult] = js.native
 }
-

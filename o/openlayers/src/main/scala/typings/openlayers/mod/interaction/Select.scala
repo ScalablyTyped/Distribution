@@ -8,7 +8,7 @@ import typings.openlayers.mod.layer.Vector
 import typings.openlayers.mod.olx.interaction.SelectOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -46,12 +46,14 @@ import scala.scalajs.js.annotation._
   */
 class Select () extends Interaction {
   def this(opt_options: SelectOptions) = this()
+  
   /**
     * Get the selected features.
     * @return Features collection.
     * @api stable
     */
   def getFeatures(): Collection[Feature] = js.native
+  
   /**
     * Returns the associated {@link ol.layer.Vector vectorlayer} of
     * the (last) selected feature. Note that this will not work with any
@@ -63,6 +65,7 @@ class Select () extends Interaction {
     */
   def getLayer(feature: Feature): Vector = js.native
   def getLayer(feature: typings.openlayers.mod.render.Feature): Vector = js.native
+  
   /**
     * Remove the interaction from its current map, if any,  and attach it to a new
     * map, if any. Pass `null` to just remove the interaction from the current map.
@@ -71,11 +74,20 @@ class Select () extends Interaction {
     */
   def setMap(map: Map): Unit = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "interaction.Select")
 @js.native
 object Select extends js.Object {
+  
+  /**
+    * Handles the {@link ol.MapBrowserEvent map browser event} and may change the
+    * selected state of features.
+    * @param mapBrowserEvent Map browser event.
+    * @return `false` to stop event propagation.
+    * @api
+    */
+  def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+  
   /**
     * @classdesc
     * Events emitted by {@link ol.interaction.Select} instances are instances of
@@ -107,30 +119,23 @@ object Select extends js.Object {
       deselected: js.Array[Feature],
       mapBrowserEvent: MapBrowserEvent
     ) = this()
+    
     /**
       * Deselected features array.
       * @api
       */
     var deselected: js.Array[Feature] = js.native
+    
     /**
       * Associated {@link ol.MapBrowserEvent}.
       * @api
       */
     var mapBrowserEvent: MapBrowserEvent = js.native
+    
     /**
       * Selected features array.
       * @api
       */
     var selected: js.Array[Feature] = js.native
   }
-  
-  /**
-    * Handles the {@link ol.MapBrowserEvent map browser event} and may change the
-    * selected state of features.
-    * @param mapBrowserEvent Map browser event.
-    * @return `false` to stop event propagation.
-    * @api
-    */
-  def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
 }
-

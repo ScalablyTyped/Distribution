@@ -12,7 +12,7 @@ Show some HTML before visitors leave your site.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 297511 |
+| # downloads        | 258116 |
 | # stars            | 0 |
 
 ## Links

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unorm"
-version := "1.3.3-dt-20200515Z-95191d"
+version := "1.3.3-dt-20201002Z-2d08cf"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

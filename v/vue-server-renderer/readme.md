@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-server-renderer
 
-Typings are for version 2.6.11
+Typings are for version 2.6.12
 
 ## Library description:
 server renderer for Vue 2.0
@@ -10,9 +10,9 @@ server renderer for Vue 2.0
 | ------------------ | :-------------: |
 | Full name          | vue-server-renderer |
 | Keywords           | vue, server, ssr |
-| # releases         | 27 |
-| # dependents       | 282 |
-| # downloads        | 10005209 |
+| # releases         | 21 |
+| # dependents       | 332 |
+| # downloads        | 14459159 |
 | # stars            | 25 |
 
 ## Links

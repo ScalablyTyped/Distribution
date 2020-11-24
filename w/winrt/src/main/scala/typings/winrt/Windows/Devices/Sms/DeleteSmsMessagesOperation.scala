@@ -5,11 +5,11 @@ import typings.winrt.Windows.Foundation.IPromise
 import typings.winrt.anon.CompletedGetResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeleteSmsMessagesOperation extends IAsyncAction {
-  var operation: CompletedGetResults = js.native
+  
   @JSName("done")
   def done_MDeleteSmsMessagesOperation[U](): Unit = js.native
   @JSName("done")
@@ -42,6 +42,9 @@ trait DeleteSmsMessagesOperation extends IAsyncAction {
     error: js.Function1[/* error */ js.Any, _],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): Unit = js.native
+  
+  var operation: CompletedGetResults = js.native
+  
   def `then`[U](success: js.Function1[/* value */ js.Any, IPromise[U] | U]): IPromise[U] = js.native
   def `then`[U](
     success: js.Function1[/* value */ js.Any, IPromise[U] | U],
@@ -58,4 +61,3 @@ trait DeleteSmsMessagesOperation extends IAsyncAction {
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[U] = js.native
 }
-

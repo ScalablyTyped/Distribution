@@ -1,9 +1,0 @@
-package typings.twilsock.protocolMod.Protocol
-
-import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-@js.native
-trait Payload extends js.Object
-

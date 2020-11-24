@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ManagedObject extends EventProvider {
+  
   /**
     * Adds some entity <code>oObject</code> to the aggregation identified by
     * <code>sAggregationName</code>.If the given object is not valid with regard to the aggregation (if it
@@ -29,6 +30,7 @@ trait ManagedObject extends EventProvider {
     */
   def addAggregation(sAggregationName: String, oObject: ManagedObject): ManagedObject = js.native
   def addAggregation(sAggregationName: String, oObject: ManagedObject, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Adds some object with the ID <code>sId</code> to the association identified by
     * <code>sAssociationName</code> andmarks this ManagedObject as changed.This method does not avoid
@@ -47,6 +49,7 @@ trait ManagedObject extends EventProvider {
   def addAssociation(sAssociationName: String, sId: String, bSuppressInvalidate: Boolean): ManagedObject = js.native
   def addAssociation(sAssociationName: String, sId: ManagedObject): ManagedObject = js.native
   def addAssociation(sAssociationName: String, sId: ManagedObject, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Sets all the properties, aggregations, associations and event handlers as given inthe object literal
     * <code>mSettings</code>. If a property, aggregation, etc.is not listed in <code>mSettings</code>,
@@ -61,6 +64,7 @@ trait ManagedObject extends EventProvider {
     */
   def applySettings(mSettings: js.Any): ManagedObject = js.native
   def applySettings(mSettings: js.Any, oScope: js.Any): ManagedObject = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>formatError</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.When called, the context of the event handler (its
@@ -76,6 +80,7 @@ trait ManagedObject extends EventProvider {
     */
   def attachFormatError(oData: js.Any, fnFunction: js.Any): ManagedObject = js.native
   def attachFormatError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>modelContextChange</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.When called, the context of the event handler (its
@@ -91,6 +96,7 @@ trait ManagedObject extends EventProvider {
     */
   def attachModelContextChange(oData: js.Any, fnFunction: js.Any): ManagedObject = js.native
   def attachModelContextChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>parseError</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.When called, the context of the event handler (its
@@ -106,6 +112,7 @@ trait ManagedObject extends EventProvider {
     */
   def attachParseError(oData: js.Any, fnFunction: js.Any): ManagedObject = js.native
   def attachParseError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>validationError</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.When called, the context of the event handler (its
@@ -121,6 +128,7 @@ trait ManagedObject extends EventProvider {
     */
   def attachValidationError(oData: js.Any, fnFunction: js.Any): ManagedObject = js.native
   def attachValidationError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>validationSuccess</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.When called, the context of the event handler (its
@@ -136,6 +144,7 @@ trait ManagedObject extends EventProvider {
     */
   def attachValidationSuccess(oData: js.Any, fnFunction: js.Any): ManagedObject = js.native
   def attachValidationSuccess(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Bind an aggregation to the model.The bound aggregation will use the given template, clone it for
     * each itemwhich exists in the bound list and set the appropriate binding context.This is a generic
@@ -147,6 +156,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def bindAggregation(sName: String, oBindingInfo: js.Any): ManagedObject = js.native
+  
   /**
     * Bind the object to the referenced entity in the model, which is used as the binding contextto
     * resolve bound properties or aggregations of the object itself and all of its childrenrelatively to
@@ -155,6 +165,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def bindContext(sPath: String): ManagedObject = js.native
+  
   /**
     * Bind the object to the referenced entity in the model, which is used as the binding contextto
     * resolve bound properties or aggregations of the object itself and all of its childrenrelatively to
@@ -171,6 +182,7 @@ trait ManagedObject extends EventProvider {
   def bindObject(vPath: String, mParameters: js.Any): ManagedObject = js.native
   def bindObject(vPath: js.Any): ManagedObject = js.native
   def bindObject(vPath: js.Any, mParameters: js.Any): ManagedObject = js.native
+  
   /**
     * Bind a property to the model.The Setter for the given property will be called with the value
     * retrievedfrom the data model.This is a generic method which can be used to bind any property to
@@ -183,6 +195,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def bindProperty(sName: String, oBindingInfo: js.Any): ManagedObject = js.native
+  
   /**
     * Clones a tree of objects starting with the object on which clone is called first (root object).The
     * ids within the newly created clone tree are derived from the original ids by appendingthe given
@@ -223,6 +236,7 @@ trait ManagedObject extends EventProvider {
   def clone(sIdSuffix: String, aLocalIds: js.UndefOr[scala.Nothing], oOptions: js.Any): ManagedObject = js.native
   def clone(sIdSuffix: String, aLocalIds: js.Array[String]): ManagedObject = js.native
   def clone(sIdSuffix: String, aLocalIds: js.Array[String], oOptions: js.Any): ManagedObject = js.native
+  
   def create(vData: js.Any, oKeyInfo: js.Any): Unit = js.native
   def create(vData: js.Any, oKeyInfo: js.Any, oScope: js.Any): Unit = js.native
   /**
@@ -236,6 +250,7 @@ trait ManagedObject extends EventProvider {
     */
   def create(vData: ManagedObject, oKeyInfo: js.Any): Unit = js.native
   def create(vData: ManagedObject, oKeyInfo: js.Any, oScope: js.Any): Unit = js.native
+  
   /**
     * Destroys (all) the managed object(s) in the aggregation named <code>sAggregationName</code> and
     * empties theaggregation. If the aggregation did contain any object, this ManagedObject is marked as
@@ -248,6 +263,7 @@ trait ManagedObject extends EventProvider {
     */
   def destroyAggregation(sAggregationName: String): ManagedObject = js.native
   def destroyAggregation(sAggregationName: String, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>formatError</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.The passed function and listener object must match the ones
@@ -257,6 +273,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFormatError(fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>modelContextChange</code> event of
     * this <code>sap.ui.base.ManagedObject</code>.The passed function and listener object must match the
@@ -266,6 +283,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachModelContextChange(fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>parseError</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.The passed function and listener object must match the ones
@@ -275,6 +293,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachParseError(fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>validationError</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.The passed function and listener object must match the ones
@@ -284,6 +303,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachValidationError(fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>validationSuccess</code> event of this
     * <code>sap.ui.base.ManagedObject</code>.The passed function and listener object must match the ones
@@ -293,6 +313,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachValidationSuccess(fnFunction: js.Any, oListener: js.Any): ManagedObject = js.native
+  
   /**
     * Searches and returns an array of child elements and controls which arereferenced within an
     * aggregation or aggregations of child elements/controls.This can be either done recursive or not.
@@ -303,6 +324,7 @@ trait ManagedObject extends EventProvider {
     * @returns array of child elements and controls
     */
   def findAggregatedObjects(bRecursive: Boolean, fnCondition: Boolean): js.Array[ManagedObject] = js.native
+  
   /**
     * Fires event <code>formatError</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>element</code> of type <code>sap.ui.base.ManagedObject</code>ManagedObject
@@ -317,12 +339,14 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFormatError(mArguments: js.Any): ManagedObject = js.native
+  
   /**
     * Fires event <code>modelContextChange</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireModelContextChange(mArguments: js.Any): ManagedObject = js.native
+  
   /**
     * Fires event <code>parseError</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>element</code> of type <code>sap.ui.base.ManagedObject</code>ManagedObject
@@ -337,6 +361,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireParseError(mArguments: js.Any): ManagedObject = js.native
+  
   /**
     * Fires event <code>validationError</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>element</code> of type <code>sap.ui.base.ManagedObject</code>ManagedObject
@@ -352,6 +377,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireValidationError(mArguments: js.Any): ManagedObject = js.native
+  
   /**
     * Fires event <code>validationSuccess</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>element</code> of type <code>sap.ui.base.ManagedObject</code>ManagedObject
@@ -367,6 +393,7 @@ trait ManagedObject extends EventProvider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireValidationSuccess(mArguments: js.Any): ManagedObject = js.native
+  
   def getAggregation(sAggregationName: String, oDefaultForCreation: js.Array[_]): ManagedObject | js.Array[_] = js.native
   /**
     * Returns the aggregated object(s) for the named aggregation of this ManagedObject.If the aggregation
@@ -383,6 +410,7 @@ trait ManagedObject extends EventProvider {
     * 0..1-aggregations
     */
   def getAggregation(sAggregationName: String, oDefaultForCreation: ManagedObject): ManagedObject | js.Array[_] = js.native
+  
   /**
     * Returns the content of the association wit hthe given name.For associations of cardinality 0..1, a
     * single string with the ID of an associatedobject is returned (if any). For cardinality 0..n, an
@@ -404,12 +432,14 @@ trait ManagedObject extends EventProvider {
     * association has not been populated
     */
   def getAssociation(sAssociationName: String, oDefaultForCreation: js.Any): String | js.Array[String] = js.native
+  
   /**
     * Get the binding object for a specific aggregation/property
     * @param sName the name of the property or aggregation
     * @returns the binding for the given name
     */
   def getBinding(sName: String): Binding = js.native
+  
   /**
     * Get the binding context of this object for the given model name.If the object does not have a
     * binding context set on itself and has no own Model set,it will use the first binding context defined
@@ -421,6 +451,7 @@ trait ManagedObject extends EventProvider {
     * @returns oContext The binding context of this object
     */
   def getBindingContext(sModelName: String): Context = js.native
+  
   /**
     * Returns the binding infos for the given property or aggregation. The binding info contains
     * information about path, binding object, format options,sorter, filter etc. for the property or
@@ -430,17 +461,20 @@ trait ManagedObject extends EventProvider {
     * dependant of the binding type, additional properties
     */
   def getBindingInfo(sName: String): js.Any = js.native
+  
   /**
     * Get the binding path for a specific aggregation/property
     * @param sName the name of the property or aggregation
     * @returns the binding path for the given name
     */
   def getBindingPath(sName: String): String = js.native
+  
   /**
     * Returns the object's Id.
     * @returns the objects's Id.
     */
   def getId(): String = js.native
+  
   /**
     * Get the model to be used for data bindings with the given model name.If the object does not have a
     * model set on itself, it will use the firstmodel defined in its parent hierarchy.The name can be
@@ -453,12 +487,14 @@ trait ManagedObject extends EventProvider {
     */
   def getModel(sName: String): Model = js.native
   def getModel(sName: js.Any): Model = js.native
+  
   /**
     * Get the object binding object for a specific model
     * @param sModelName the name of the model
     * @returns the element binding for the given model name
     */
   def getObjectBinding(sModelName: String): Binding = js.native
+  
   /**
     * Returns the origin info for the value of the given property.The origin info might contain additional
     * information for translatabletexts. The bookkeeping of this information is not active by default and
@@ -468,12 +504,14 @@ trait ManagedObject extends EventProvider {
     * @returns a map of properties describing the origin of this property value or null
     */
   def getOriginInfo(sPropertyName: String): js.Any = js.native
+  
   /**
     * Returns the parent managed object or <code>null</code> if this object hasn't been added to a parent
     * yet.
     * @returns The parent managed object or <code>null</code>
     */
   def getParent(): ManagedObject = js.native
+  
   /**
     * Returns the value for the property with the given <code>sPropertyName</code>.<b>Note:</b> This
     * method is a low-level API as described in <a href="#lowlevelapi">the class
@@ -482,12 +520,14 @@ trait ManagedObject extends EventProvider {
     * @param sPropertyName the name of the property
     */
   def getProperty(sPropertyName: String): js.Any = js.native
+  
   /**
     * Check if any model is set to the ManagedObject or to one of its parents (including UIArea and
     * Core).Note: A ManagedObject inherits models from the Core only when it is a descendant of an UIArea.
     * @returns whether a model reference exists or not
     */
   def hasModel(): Boolean = js.native
+  
   /**
     * Searches for the provided ManagedObject in the named aggregation and returns its0-based index if
     * found, or -1 otherwise. Returns -2 if the given named aggregationis of cardinality 0..1 and doesn't
@@ -500,6 +540,7 @@ trait ManagedObject extends EventProvider {
     * @returns the index of the provided managed object in the aggregation.
     */
   def indexOfAggregation(sAggregationName: String, oObject: ManagedObject): Double = js.native
+  
   /**
     * Inserts managed object <code>oObject</code> to the aggregation named <code>sAggregationName</code>
     * atposition <code>iIndex</code>.If the given object is not valid with regard to the aggregation (if
@@ -525,6 +566,7 @@ trait ManagedObject extends EventProvider {
     */
   def insertAggregation(sAggregationName: String, oObject: ManagedObject, iIndex: Double): ManagedObject = js.native
   def insertAggregation(sAggregationName: String, oObject: ManagedObject, iIndex: Double, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * This triggers rerendering of itself and its children.<br/> As <code>sap.ui.base.ManagedObject</code>
     * "bubbles up" theinvalidate, changes to child-<code>Elements</code> will also result in rerendering
@@ -532,16 +574,19 @@ trait ManagedObject extends EventProvider {
     */
   def invalidate(): Unit = js.native
   def invalidate(oOrigin: js.Any): Unit = js.native
+  
   /**
     * Find out whether a property or aggregation is bound
     * @param sName the name of the property or aggregation
     * @returns whether a binding exists for the given name
     */
   def isBound(sName: String): Boolean = js.native
+  
   /**
     * Returns whether rerendering is currently suppressed on this ManagedObject
     */
   def isInvalidateSuppressed(): Unit = js.native
+  
   /**
     * This method is used internally and should only be overridden by a tree managed object which utilizes
     * the tree binding. In this case and if the aggregation is a tree node the overridden method should
@@ -551,6 +596,7 @@ trait ManagedObject extends EventProvider {
     * change this behavior.
     */
   def isTreeBinding(sName: String): Boolean = js.native
+  
   /**
     * Generic method which is called, whenever messages for this object exists.
     * @since 1.28
@@ -558,6 +604,7 @@ trait ManagedObject extends EventProvider {
     * @param aMessages The messages
     */
   def propagateMessages(sName: String, aMessages: js.Array[_]): Unit = js.native
+  
   def removeAggregation(sAggregationName: String, vObject: String): ManagedObject = js.native
   def removeAggregation(sAggregationName: String, vObject: String, bSuppressInvalidate: Boolean): ManagedObject = js.native
   /**
@@ -582,6 +629,7 @@ trait ManagedObject extends EventProvider {
   def removeAggregation(sAggregationName: String, vObject: Double, bSuppressInvalidate: Boolean): ManagedObject = js.native
   def removeAggregation(sAggregationName: String, vObject: ManagedObject): ManagedObject = js.native
   def removeAggregation(sAggregationName: String, vObject: ManagedObject, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Removes all objects from the 0..n-aggregation named <code>sAggregationName</code>.The removed
     * objects are not destroyed nor are they marked as changed.Additionally, it clears the parent
@@ -597,6 +645,7 @@ trait ManagedObject extends EventProvider {
     */
   def removeAllAggregation(sAggregationName: String): js.Array[_] = js.native
   def removeAllAggregation(sAggregationName: String, bSuppressInvalidate: Boolean): js.Array[_] = js.native
+  
   /**
     * Removes all the objects in the 0..n-association named <code>sAssociationName</code> and returns an
     * arraywith their IDs. This ManagedObject is marked as changed, if the association contained any
@@ -610,6 +659,7 @@ trait ManagedObject extends EventProvider {
     */
   def removeAllAssociation(sAssociationName: String): js.Array[_] = js.native
   def removeAllAssociation(sAssociationName: String, bSuppressInvalidate: Boolean): js.Array[_] = js.native
+  
   def removeAssociation(sAssociationName: String, vObject: String): Unit = js.native
   def removeAssociation(sAssociationName: String, vObject: String, bSuppressInvalidate: Boolean): Unit = js.native
   /**
@@ -634,6 +684,7 @@ trait ManagedObject extends EventProvider {
   def removeAssociation(sAssociationName: String, vObject: Double, bSuppressInvalidate: Boolean): Unit = js.native
   def removeAssociation(sAssociationName: String, vObject: ManagedObject): Unit = js.native
   def removeAssociation(sAssociationName: String, vObject: ManagedObject, bSuppressInvalidate: Boolean): Unit = js.native
+  
   /**
     * Sets a new object in the named 0..1 aggregation of this ManagedObject andmarks this ManagedObject as
     * changed.If the given object is not valid with regard to the aggregation (if it is not an instanceof
@@ -660,6 +711,7 @@ trait ManagedObject extends EventProvider {
     */
   def setAggregation(sAggregationName: String, oObject: js.Any): ManagedObject = js.native
   def setAggregation(sAggregationName: String, oObject: js.Any, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Sets the associatied object for the given managed association of cardinality '0..1' andmarks this
     * ManagedObject as changed.The associated object can either be given by itself or by its id. If
@@ -678,6 +730,7 @@ trait ManagedObject extends EventProvider {
   def setAssociation(sAssociationName: String, sId: String, bSuppressInvalidate: Boolean): ManagedObject = js.native
   def setAssociation(sAssociationName: String, sId: ManagedObject): ManagedObject = js.native
   def setAssociation(sAssociationName: String, sId: ManagedObject, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Set the binding context for this ManagedObject for the model with the given name.Note: to be
     * compatible with future versions of this API, applications must not use the value
@@ -690,6 +743,7 @@ trait ManagedObject extends EventProvider {
     */
   def setBindingContext(oContext: js.Any): ManagedObject = js.native
   def setBindingContext(oContext: js.Any, sModelName: String): ManagedObject = js.native
+  
   /**
     * Sets or unsets a model for the given model name for this ManagedObject.The <code>sName</code> must
     * either be <code>undefined</code> (or omitted) or a non-empty string.When the name is omitted, the
@@ -712,6 +766,7 @@ trait ManagedObject extends EventProvider {
     */
   def setModel(oModel: Model): ManagedObject = js.native
   def setModel(oModel: Model, sName: String): ManagedObject = js.native
+  
   /**
     * Sets the given value for the given property after validating and normalizing it,marks this object as
     * changed.If the value is not valid with regard to the declared data type of the property,an Error is
@@ -734,6 +789,7 @@ trait ManagedObject extends EventProvider {
     */
   def setProperty(sPropertyName: String, oValue: js.Any): ManagedObject = js.native
   def setProperty(sPropertyName: String, oValue: js.Any, bSuppressInvalidate: Boolean): ManagedObject = js.native
+  
   /**
     * Unbind the aggregation from the model
     * @param sName the name of the aggregation
@@ -741,6 +797,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def unbindAggregation(sName: String, bSuppressReset: Boolean): ManagedObject = js.native
+  
   /**
     * Removes the defined binding context of this object, all bindings will now resolverelative to the
     * parent context again.
@@ -748,6 +805,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def unbindContext(sModelName: String): ManagedObject = js.native
+  
   /**
     * Removes the defined binding context of this object, all bindings will now resolverelative to the
     * parent context again.
@@ -755,6 +813,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def unbindObject(sModelName: String): ManagedObject = js.native
+  
   /**
     * Unbind the property from the model
     * @param sName the name of the property
@@ -762,6 +821,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the instance itself
     */
   def unbindProperty(sName: String, bSuppressReset: Boolean): ManagedObject = js.native
+  
   def validateAggregation(sAggregationName: String, oObject: js.Any, bMultiple: Boolean): ManagedObject | js.Any = js.native
   /**
     * Checks whether the given value is of the proper type for the given aggregation name.This method is
@@ -773,6 +833,7 @@ trait ManagedObject extends EventProvider {
     * @returns the passed object
     */
   def validateAggregation(sAggregationName: String, oObject: ManagedObject, bMultiple: Boolean): ManagedObject | js.Any = js.native
+  
   /**
     * Checks whether the given value is of the proper type for the given property name.In case
     * <code>null</code> or <code>undefined</code> is passed, the default value forthis property is used as
@@ -789,4 +850,3 @@ trait ManagedObject extends EventProvider {
     */
   def validateProperty(sPropertyName: String, oValue: js.Any): js.Any = js.native
 }
-

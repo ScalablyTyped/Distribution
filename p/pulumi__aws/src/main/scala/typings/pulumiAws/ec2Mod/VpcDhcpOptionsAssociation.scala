@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation")
 @js.native
@@ -23,11 +23,11 @@ class VpcDhcpOptionsAssociation protected ()
   def this(name: String, args: VpcDhcpOptionsAssociationArgs) = this()
   def this(name: String, args: VpcDhcpOptionsAssociationArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation")
 @js.native
 object VpcDhcpOptionsAssociation extends js.Object {
+  
   /**
     * Get an existing VpcDhcpOptionsAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object VpcDhcpOptionsAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
   def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
   def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of VpcDhcpOptionsAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.openlayers.mod.interaction
 import typings.openlayers.mod.olx.interaction.DragPanOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 class DragPan () extends Pointer {
   def this(opt_options: DragPanOptions) = this()
 }
-

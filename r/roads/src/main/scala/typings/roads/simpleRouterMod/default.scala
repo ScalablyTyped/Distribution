@@ -2,7 +2,7 @@ package typings.roads.simpleRouterMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roads/types/middleware/simpleRouter", JSImport.Default)
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class default () extends SimpleRouter {
   def this(road: typings.roads.roadMod.default) = this()
 }
-

@@ -6,14 +6,15 @@ import typings.ffi.Buffer
 import typings.ref.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForeignFunction extends js.Object {
+  
   def apply(args: js.Any*): js.Any = js.native
+  
   def async(args: js.Any*): Unit = js.native
 }
-
 @JSImport("ffi", "ForeignFunction")
 @js.native
 object ForeignFunction
@@ -30,9 +31,9 @@ object ForeignFunction
       /* abi */ Double, 
       ForeignFunction
     ] {
+  
   def apply(ptr: Buffer, retType: String, argTypes: js.Array[_]): ForeignFunction = js.native
   def apply(ptr: Buffer, retType: String, argTypes: js.Array[_], abi: Double): ForeignFunction = js.native
   def apply(ptr: Buffer, retType: Type, argTypes: js.Array[_]): ForeignFunction = js.native
   def apply(ptr: Buffer, retType: Type, argTypes: js.Array[_], abi: Double): ForeignFunction = js.native
 }
-

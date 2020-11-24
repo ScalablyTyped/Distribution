@@ -2,15 +2,22 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object devicefarmMod {
+  
   type AWSAccountNumber = java.lang.String
+  
   type AccountsCleanup = scala.Boolean
+  
   type AmazonResourceName = java.lang.String
+  
   type AmazonResourceNames = js.Array[typings.awsSdk.devicefarmMod.AmazonResourceName]
+  
   type AndroidPaths = js.Array[typings.awsSdk.devicefarmMod.String]
+  
   type AppPackagesCleanup = scala.Boolean
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SCREENSHOT
     - typings.awsSdk.awsSdkStrings.FILE
@@ -18,6 +25,7 @@ package object devicefarmMod {
     - java.lang.String
   */
   type ArtifactCategory = typings.awsSdk.devicefarmMod._ArtifactCategory | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNKNOWN
     - typings.awsSdk.awsSdkStrings.SCREENSHOT
@@ -50,19 +58,28 @@ package object devicefarmMod {
     - java.lang.String
   */
   type ArtifactType = typings.awsSdk.devicefarmMod._ArtifactType | java.lang.String
+  
   type Artifacts = js.Array[typings.awsSdk.devicefarmMod.Artifact]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.METERED
     - typings.awsSdk.awsSdkStrings.UNMETERED
     - java.lang.String
   */
   type BillingMethod = typings.awsSdk.devicefarmMod._BillingMethod | java.lang.String
+  
   type Boolean = scala.Boolean
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.devicefarmMod.ClientApiVersions
+  
   type ClientId = java.lang.String
+  
   type ContentType = java.lang.String
+  
   type CurrencyCode = typings.awsSdk.awsSdkStrings.USD | java.lang.String
+  
   type DateTime = typings.std.Date
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ARN
     - typings.awsSdk.awsSdkStrings.PLATFORM
@@ -80,6 +97,7 @@ package object devicefarmMod {
     - java.lang.String
   */
   type DeviceAttribute = typings.awsSdk.devicefarmMod._DeviceAttribute | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TEMPORARY_NOT_AVAILABLE
     - typings.awsSdk.awsSdkStrings.BUSY
@@ -88,7 +106,9 @@ package object devicefarmMod {
     - java.lang.String
   */
   type DeviceAvailability = typings.awsSdk.devicefarmMod._DeviceAvailability | java.lang.String
+  
   type DeviceFarmArn = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ARN
     - typings.awsSdk.awsSdkStrings.PLATFORM
@@ -105,32 +125,44 @@ package object devicefarmMod {
     - java.lang.String
   */
   type DeviceFilterAttribute = typings.awsSdk.devicefarmMod._DeviceFilterAttribute | java.lang.String
+  
   type DeviceFilterValues = js.Array[typings.awsSdk.devicefarmMod.String]
+  
   type DeviceFilters = js.Array[typings.awsSdk.devicefarmMod.DeviceFilter]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PHONE
     - typings.awsSdk.awsSdkStrings.TABLET
     - java.lang.String
   */
   type DeviceFormFactor = typings.awsSdk.devicefarmMod._DeviceFormFactor | java.lang.String
+  
   type DeviceHostPaths = js.Array[typings.awsSdk.devicefarmMod.String]
+  
   type DeviceInstances = js.Array[typings.awsSdk.devicefarmMod.DeviceInstance]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ANDROID
     - typings.awsSdk.awsSdkStrings.IOS
     - java.lang.String
   */
   type DevicePlatform = typings.awsSdk.devicefarmMod._DevicePlatform | java.lang.String
+  
   type DevicePoolCompatibilityResults = js.Array[typings.awsSdk.devicefarmMod.DevicePoolCompatibilityResult]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CURATED
     - typings.awsSdk.awsSdkStrings.PRIVATE
     - java.lang.String
   */
   type DevicePoolType = typings.awsSdk.devicefarmMod._DevicePoolType | java.lang.String
+  
   type DevicePools = js.Array[typings.awsSdk.devicefarmMod.DevicePool]
+  
   type Devices = js.Array[typings.awsSdk.devicefarmMod.Device]
+  
   type Double = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING
     - typings.awsSdk.awsSdkStrings.PASSED
@@ -142,12 +174,14 @@ package object devicefarmMod {
     - java.lang.String
   */
   type ExecutionResult = typings.awsSdk.devicefarmMod._ExecutionResult | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PARSING_FAILED
     - typings.awsSdk.awsSdkStrings.VPC_ENDPOINT_SETUP_FAILED
     - java.lang.String
   */
   type ExecutionResultCode = typings.awsSdk.devicefarmMod._ExecutionResultCode | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING
     - typings.awsSdk.awsSdkStrings.PENDING_CONCURRENCY
@@ -161,11 +195,17 @@ package object devicefarmMod {
     - java.lang.String
   */
   type ExecutionStatus = typings.awsSdk.devicefarmMod._ExecutionStatus | java.lang.String
+  
   type Filter = java.lang.String
+  
   type HostAddress = java.lang.String
+  
   type IncompatibilityMessages = js.Array[typings.awsSdk.devicefarmMod.IncompatibilityMessage]
+  
   type InstanceLabels = js.Array[typings.awsSdk.devicefarmMod.String]
+  
   type InstanceProfiles = js.Array[typings.awsSdk.devicefarmMod.InstanceProfile]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.IN_USE
     - typings.awsSdk.awsSdkStrings.PREPARING
@@ -174,7 +214,9 @@ package object devicefarmMod {
     - java.lang.String
   */
   type InstanceStatus = typings.awsSdk.devicefarmMod._InstanceStatus | java.lang.String
+  
   type Integer = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.INTERACTIVE
     - typings.awsSdk.awsSdkStrings.NO_VIDEO
@@ -182,26 +224,42 @@ package object devicefarmMod {
     - java.lang.String
   */
   type InteractionMode = typings.awsSdk.devicefarmMod._InteractionMode | java.lang.String
+  
   type IosPaths = js.Array[typings.awsSdk.devicefarmMod.String]
+  
   type JobTimeoutMinutes = scala.Double
+  
   type Jobs = js.Array[typings.awsSdk.devicefarmMod.Job]
+  
   type Long = scala.Double
+  
   type MaxPageSize = scala.Double
+  
   type MaxSlotMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.devicefarmMod.Integer]
+  
   type Message = java.lang.String
+  
   type Metadata = java.lang.String
+  
   type Name = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CURATED
     - typings.awsSdk.awsSdkStrings.PRIVATE
     - java.lang.String
   */
   type NetworkProfileType = typings.awsSdk.devicefarmMod._NetworkProfileType | java.lang.String
+  
   type NetworkProfiles = js.Array[typings.awsSdk.devicefarmMod.NetworkProfile]
+  
   type OfferingIdentifier = java.lang.String
+  
   type OfferingPromotionIdentifier = java.lang.String
+  
   type OfferingPromotions = js.Array[typings.awsSdk.devicefarmMod.OfferingPromotion]
+  
   type OfferingStatusMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.devicefarmMod.OfferingStatus]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PURCHASE
     - typings.awsSdk.awsSdkStrings.RENEW
@@ -209,21 +267,37 @@ package object devicefarmMod {
     - java.lang.String
   */
   type OfferingTransactionType = typings.awsSdk.devicefarmMod._OfferingTransactionType | java.lang.String
+  
   type OfferingTransactions = js.Array[typings.awsSdk.devicefarmMod.OfferingTransaction]
+  
   type OfferingType = typings.awsSdk.awsSdkStrings.RECURRING | java.lang.String
+  
   type Offerings = js.Array[typings.awsSdk.devicefarmMod.Offering]
+  
   type PackageIds = js.Array[typings.awsSdk.devicefarmMod.String]
+  
   type PaginationToken = java.lang.String
+  
   type PercentInteger = scala.Double
+  
   type Problems = js.Array[typings.awsSdk.devicefarmMod.Problem]
+  
   type Projects = js.Array[typings.awsSdk.devicefarmMod.Project]
+  
   type PurchasedDevicesMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.devicefarmMod.Integer]
+  
   type RecurringChargeFrequency = typings.awsSdk.awsSdkStrings.MONTHLY | java.lang.String
+  
   type RecurringCharges = js.Array[typings.awsSdk.devicefarmMod.RecurringCharge]
+  
   type RemoteAccessSessions = js.Array[typings.awsSdk.devicefarmMod.RemoteAccessSession]
+  
   type ResourceDescription = java.lang.String
+  
   type ResourceId = java.lang.String
+  
   type ResourceName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EQUALS
     - typings.awsSdk.awsSdkStrings.LESS_THAN
@@ -236,8 +310,11 @@ package object devicefarmMod {
     - java.lang.String
   */
   type RuleOperator = typings.awsSdk.devicefarmMod._RuleOperator | java.lang.String
+  
   type Rules = js.Array[typings.awsSdk.devicefarmMod.Rule]
+  
   type Runs = js.Array[typings.awsSdk.devicefarmMod.Run]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CPU
     - typings.awsSdk.awsSdkStrings.MEMORY
@@ -259,24 +336,38 @@ package object devicefarmMod {
     - java.lang.String
   */
   type SampleType = typings.awsSdk.devicefarmMod._SampleType | java.lang.String
+  
   type Samples = js.Array[typings.awsSdk.devicefarmMod.Sample]
+  
   type ServiceDnsName = java.lang.String
+  
   type SkipAppResign = scala.Boolean
+  
   type SshPublicKey = java.lang.String
+  
   type String = java.lang.String
+  
   type Suites = js.Array[typings.awsSdk.devicefarmMod.Suite]
+  
   type TagKey = java.lang.String
+  
   type TagKeyList = js.Array[typings.awsSdk.devicefarmMod.TagKey]
+  
   type TagList = js.Array[typings.awsSdk.devicefarmMod.Tag]
+  
   type TagValue = java.lang.String
+  
   type TestGridProjects = js.Array[typings.awsSdk.devicefarmMod.TestGridProject]
+  
   type TestGridSessionActions = js.Array[typings.awsSdk.devicefarmMod.TestGridSessionAction]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.VIDEO
     - typings.awsSdk.awsSdkStrings.LOG
     - java.lang.String
   */
   type TestGridSessionArtifactCategory = typings.awsSdk.devicefarmMod._TestGridSessionArtifactCategory | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNKNOWN
     - typings.awsSdk.awsSdkStrings.VIDEO
@@ -284,7 +375,9 @@ package object devicefarmMod {
     - java.lang.String
   */
   type TestGridSessionArtifactType = typings.awsSdk.devicefarmMod._TestGridSessionArtifactType | java.lang.String
+  
   type TestGridSessionArtifacts = js.Array[typings.awsSdk.devicefarmMod.TestGridSessionArtifact]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVE
     - typings.awsSdk.awsSdkStrings.CLOSED
@@ -292,9 +385,13 @@ package object devicefarmMod {
     - java.lang.String
   */
   type TestGridSessionStatus = typings.awsSdk.devicefarmMod._TestGridSessionStatus | java.lang.String
+  
   type TestGridSessions = js.Array[typings.awsSdk.devicefarmMod.TestGridSession]
+  
   type TestGridUrlExpiresInSecondsInput = scala.Double
+  
   type TestParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.devicefarmMod.String]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BUILTIN_FUZZ
     - typings.awsSdk.awsSdkStrings.BUILTIN_EXPLORER
@@ -320,17 +417,24 @@ package object devicefarmMod {
     - java.lang.String
   */
   type TestType = typings.awsSdk.devicefarmMod._TestType | java.lang.String
+  
   type Tests = js.Array[typings.awsSdk.devicefarmMod.Test]
+  
   type TransactionIdentifier = java.lang.String
+  
   type URL = java.lang.String
+  
   type UniqueProblems = js.Array[typings.awsSdk.devicefarmMod.UniqueProblem]
+  
   type UniqueProblemsByExecutionResultMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.devicefarmMod.UniqueProblems]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CURATED
     - typings.awsSdk.awsSdkStrings.PRIVATE
     - java.lang.String
   */
   type UploadCategory = typings.awsSdk.devicefarmMod._UploadCategory | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.INITIALIZED
     - typings.awsSdk.awsSdkStrings.PROCESSING
@@ -339,6 +443,7 @@ package object devicefarmMod {
     - java.lang.String
   */
   type UploadStatus = typings.awsSdk.devicefarmMod._UploadStatus | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ANDROID_APP
     - typings.awsSdk.awsSdkStrings.IOS_APP
@@ -375,12 +480,19 @@ package object devicefarmMod {
     - java.lang.String
   */
   type UploadType = typings.awsSdk.devicefarmMod._UploadType | java.lang.String
+  
   type Uploads = js.Array[typings.awsSdk.devicefarmMod.Upload]
+  
   type VPCEConfigurationDescription = java.lang.String
+  
   type VPCEConfigurationName = java.lang.String
+  
   type VPCEConfigurations = js.Array[typings.awsSdk.devicefarmMod.VPCEConfiguration]
+  
   type VPCEServiceName = java.lang.String
+  
   type VideoCapture = scala.Boolean
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2015-06-23`
     - typings.awsSdk.awsSdkStrings.latest_

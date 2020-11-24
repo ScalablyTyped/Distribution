@@ -11,8 +11,8 @@ A minimal base64 implementation for number arrays.
 | Full name          | @protobufjs/base64 |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 57493270 |
+| # dependents       | 38 |
+| # downloads        | 107674620 |
 | # stars            | 0 |
 
 ## Links

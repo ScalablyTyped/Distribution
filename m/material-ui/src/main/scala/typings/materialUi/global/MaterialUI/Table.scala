@@ -10,11 +10,12 @@ import typings.materialUi.MaterialUI.Table.TableRowProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__MaterialUI.Table")
 @js.native
 object Table extends js.Object {
+  
   @js.native
   class Table ()
     extends Component[TableProps, js.Object, js.Any]
@@ -42,6 +43,4 @@ object Table extends js.Object {
   @js.native
   class TableRowColumn ()
     extends Component[TableRowColumnProps, js.Object, js.Any]
-  
 }
-

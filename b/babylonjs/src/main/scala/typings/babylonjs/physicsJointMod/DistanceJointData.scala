@@ -1,36 +1,41 @@
 package typings.babylonjs.physicsJointMod
 
-import typings.babylonjs.mathVectorMod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DistanceJointData extends PhysicsJointData {
+  
   /**
     * Max distance the 2 joint objects can be apart
     */
-  var maxDistance: Double
+  var maxDistance: Double = js.native
 }
-
 object DistanceJointData {
+  
   @scala.inline
-  def apply(
-    maxDistance: Double,
-    collision: js.UndefOr[Boolean] = js.undefined,
-    connectedAxis: Vector3 = null,
-    connectedPivot: Vector3 = null,
-    mainAxis: Vector3 = null,
-    mainPivot: Vector3 = null,
-    nativeParams: js.Any = null
-  ): DistanceJointData = {
+  def apply(maxDistance: Double): DistanceJointData = {
     val __obj = js.Dynamic.literal(maxDistance = maxDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision.get.asInstanceOf[js.Any])
-    if (connectedAxis != null) __obj.updateDynamic("connectedAxis")(connectedAxis.asInstanceOf[js.Any])
-    if (connectedPivot != null) __obj.updateDynamic("connectedPivot")(connectedPivot.asInstanceOf[js.Any])
-    if (mainAxis != null) __obj.updateDynamic("mainAxis")(mainAxis.asInstanceOf[js.Any])
-    if (mainPivot != null) __obj.updateDynamic("mainPivot")(mainPivot.asInstanceOf[js.Any])
-    if (nativeParams != null) __obj.updateDynamic("nativeParams")(nativeParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceJointData]
   }
+  
+  @scala.inline
+  implicit class DistanceJointDataOps[Self <: DistanceJointData] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+  }
 }
-

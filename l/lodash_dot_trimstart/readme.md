@@ -11,8 +11,8 @@ The lodash method `_.trimStart` exported as a module.
 | Full name          | lodash.trimstart |
 | Keywords           | lodash-modularized, trimstart |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 1592324 |
+| # dependents       | 21 |
+| # downloads        | 1870187 |
 | # stars            | 0 |
 
 ## Links

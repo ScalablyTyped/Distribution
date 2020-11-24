@@ -5,7 +5,7 @@ import typings.openlayers.mod.Color_
 import typings.openlayers.mod.olx.style.FillOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -25,12 +25,14 @@ import scala.scalajs.js.annotation._
   */
 class Fill () extends js.Object {
   def this(opt_options: FillOptions) = this()
+  
   /**
     * Get the fill color.
     * @return Color.
     * @api
     */
   def getColor(): Color_ | ColorLike_ = js.native
+  
   /**
     * Set the color.
     *
@@ -39,4 +41,3 @@ class Fill () extends js.Object {
     */
   def setColor(color: ColorLike_ | Color_): Unit = js.native
 }
-

@@ -2,13 +2,12 @@ package typings.jsonquery
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonqueryStrings {
-  @js.native
-  sealed trait QueryValue extends js.Object
   
   @scala.inline
   def QueryValue: QueryValue = "QueryValue".asInstanceOf[QueryValue]
+  @js.native
+  sealed trait QueryValue extends js.Object
 }
-

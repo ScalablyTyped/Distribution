@@ -3,7 +3,7 @@ package typings.pixiJs.PIXI
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Builder' pattern for bounds rectangles.
@@ -16,40 +16,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Bounds extends js.Object {
-  /**
-    * @member {number} PIXI.Bounds#maxX
-    * @default 0
-    */
-  var maxX: Double = js.native
-  /**
-    * @member {number} PIXI.Bounds#maxY
-    * @default 0
-    */
-  var maxY: Double = js.native
-  /**
-    * @member {number} PIXI.Bounds#minX
-    * @default 0
-    */
-  var minX: Double = js.native
-  /**
-    * @member {number} PIXI.Bounds#minY
-    * @default 0
-    */
-  var minY: Double = js.native
-  /**
-    * It is updated to _boundsID of corresponding object to keep bounds in sync with content.
-    * Updated from outside, thus public modifier.
-    *
-    * @member {number} PIXI.Bounds#updateID
-    * @public
-    */
-  var updateID: Double = js.native
+  
   /**
     * Adds other Bounds.
     *
     * @param {PIXI.Bounds} bounds - The Bounds to be added
     */
   def addBounds(bounds: Bounds): Unit = js.native
+  
   /**
     * Adds other Bounds, masked with Rectangle.
     *
@@ -57,6 +31,7 @@ trait Bounds extends js.Object {
     * @param {PIXI.Rectangle} area - TODO
     */
   def addBoundsArea(bounds: Bounds, area: Rectangle): Unit = js.native
+  
   /**
     * Adds other Bounds, masked with Bounds.
     *
@@ -64,6 +39,7 @@ trait Bounds extends js.Object {
     * @param {PIXI.Bounds} mask - TODO
     */
   def addBoundsMask(bounds: Bounds, mask: Bounds): Unit = js.native
+  
   /**
     * Adds other Bounds, multiplied by matrix. Bounds shouldn't be empty.
     *
@@ -71,6 +47,7 @@ trait Bounds extends js.Object {
     * @param {PIXI.Matrix} matrix - multiplicator
     */
   def addBoundsMatrix(bounds: Bounds, matrix: Matrix): Unit = js.native
+  
   /**
     * Adds sprite frame, transformed.
     *
@@ -81,6 +58,7 @@ trait Bounds extends js.Object {
     * @param {number} y1 - bottom Y of frame
     */
   def addFrame(transform: Transform, x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  
   /**
     * Adds sprite frame, multiplied by matrix
     *
@@ -91,6 +69,7 @@ trait Bounds extends js.Object {
     * @param {number} y1 - bottom Y of frame
     */
   def addFrameMatrix(matrix: Matrix, x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  
   /**
     * Adds padded frame. (x0, y0) should be strictly less than (x1, y1)
     *
@@ -102,18 +81,21 @@ trait Bounds extends js.Object {
     * @param {number} padY - padding Y
     */
   def addFramePad(x0: Double, y0: Double, x1: Double, y1: Double, padX: Double, padY: Double): Unit = js.native
+  
   /**
     * This function should be inlined when its possible.
     *
     * @param {PIXI.IPointData} point - The point to add.
     */
   def addPoint(point: IPointData): Unit = js.native
+  
   /**
     * Adds a quad, not transformed
     *
     * @param {Float32Array} vertices - The verts to add.
     */
   def addQuad(vertices: Float32Array): Unit = js.native
+  
   /**
     * Adds screen vertices from array
     *
@@ -122,6 +104,7 @@ trait Bounds extends js.Object {
     * @param {number} endOffset - end offset, excluded
     */
   def addVertexData(vertexData: Float32Array, beginOffset: Double, endOffset: Double): Unit = js.native
+  
   /**
     * Add an array of mesh vertices
     *
@@ -131,6 +114,7 @@ trait Bounds extends js.Object {
     * @param {number} endOffset - end offset, excluded
     */
   def addVertices(transform: Transform, vertices: Float32Array, beginOffset: Double, endOffset: Double): Unit = js.native
+  
   /**
     * Add an array of mesh vertices.
     *
@@ -159,11 +143,13 @@ trait Bounds extends js.Object {
     padX: Double,
     padY: Double
   ): Unit = js.native
+  
   /**
     * Clears the bounds and resets.
     *
     */
   def clear(): Unit = js.native
+  
   /**
     * Can return Rectangle.EMPTY constant, either construct new rectangle, either use your rectangle
     * It is not guaranteed that it will return tempRect
@@ -172,12 +158,38 @@ trait Bounds extends js.Object {
     * @returns {PIXI.Rectangle} A rectangle of the bounds
     */
   def getRectangle(rect: Rectangle): Rectangle = js.native
+  
   /**
     * Checks if bounds are empty.
     *
     * @return {boolean} True if empty.
     */
   def isEmpty(): Boolean = js.native
+  
+  /**
+    * @member {number} PIXI.Bounds#maxX
+    * @default 0
+    */
+  var maxX: Double = js.native
+  
+  /**
+    * @member {number} PIXI.Bounds#maxY
+    * @default 0
+    */
+  var maxY: Double = js.native
+  
+  /**
+    * @member {number} PIXI.Bounds#minX
+    * @default 0
+    */
+  var minX: Double = js.native
+  
+  /**
+    * @member {number} PIXI.Bounds#minY
+    * @default 0
+    */
+  var minY: Double = js.native
+  
   /**
     * Pads bounds object, making it grow in all directions.
     * If paddingY is omitted, both paddingX and paddingY will be set to paddingX.
@@ -189,5 +201,13 @@ trait Bounds extends js.Object {
   def pad(paddingX: js.UndefOr[scala.Nothing], paddingY: Double): Unit = js.native
   def pad(paddingX: Double): Unit = js.native
   def pad(paddingX: Double, paddingY: Double): Unit = js.native
+  
+  /**
+    * It is updated to _boundsID of corresponding object to keep bounds in sync with content.
+    * Updated from outside, thus public modifier.
+    *
+    * @member {number} PIXI.Bounds#updateID
+    * @public
+    */
+  var updateID: Double = js.native
 }
-

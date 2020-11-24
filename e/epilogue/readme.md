@@ -12,7 +12,7 @@ Create REST resources and controllers with Sequelize and Express or Restify
 | Keywords           | sequelize, sequelizejs, rest, restful, epilogue, json, api |
 | # releases         | 1 |
 | # dependents       | 8 |
-| # downloads        | 36934 |
+| # downloads        | 23852 |
 | # stars            | 10 |
 
 ## Links

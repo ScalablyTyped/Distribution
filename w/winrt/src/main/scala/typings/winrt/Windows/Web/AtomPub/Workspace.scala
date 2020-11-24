@@ -10,12 +10,12 @@ import typings.winrt.Windows.Web.Syndication.SyndicationAttribute
 import typings.winrt.Windows.Web.Syndication.SyndicationFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Workspace extends IWorkspace
-
 object Workspace {
+  
   @scala.inline
   def apply(
     attributeExtensions: IVector[SyndicationAttribute],
@@ -33,4 +33,3 @@ object Workspace {
     __obj.asInstanceOf[Workspace]
   }
 }
-

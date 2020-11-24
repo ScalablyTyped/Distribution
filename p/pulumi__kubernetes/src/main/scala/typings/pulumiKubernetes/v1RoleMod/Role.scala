@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/rbac/v1/role", "Role")
 @js.native
@@ -26,28 +26,32 @@ class Role protected () extends CustomResource {
   def this(name: String, args: RoleArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: RoleArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[rbacDotauthorizationDotk8sDotioSlashv1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.Role] = js.native
+  
   /**
     * Standard object's metadata.
     */
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * Rules holds all the PolicyRules for this Role
     */
   val rules: Output_[js.Array[PolicyRule]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/rbac/v1/role", "Role")
 @js.native
 object Role extends js.Object {
+  
   /**
     * Get an existing Role resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object Role extends js.Object {
     */
   def get(name: String, id: Input[ID]): Role = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): Role = js.native
+  
   /**
     * Returns true if the given object is an instance of Role.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/role.Role */ Boolean = js.native
 }
-

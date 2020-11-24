@@ -10,9 +10,9 @@ Convenience package that includes all the most common webpack blocks.
 | ------------------ | :-------------: |
 | Full name          | webpack-blocks |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 6 |
-| # dependents       | 12 |
-| # downloads        | 112071 |
+| # releases         | 5 |
+| # dependents       | 34 |
+| # downloads        | 95472 |
 | # stars            | 0 |
 
 ## Links

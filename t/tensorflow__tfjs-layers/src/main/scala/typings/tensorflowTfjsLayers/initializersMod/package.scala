@@ -2,9 +2,10 @@ package typings.tensorflowTfjsLayers
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object initializersMod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.constant_
     - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.glorotNormal

@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SetErrorFilter")
 @js.native
 object SetErrorFilter extends js.Object {
+  
   /**
     * 错误信息过滤
     *
@@ -18,4 +19,3 @@ object SetErrorFilter extends js.Object {
     */
   def apply(RegEx: String): Unit = js.native
 }
-

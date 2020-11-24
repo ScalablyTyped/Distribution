@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RangeValueType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
   */
 @JSGlobal("Excel.RangeValueType")
 @js.native
 object RangeValueType extends js.Object {
+  
   @js.native
   sealed trait boolean extends RangeValueType
   
@@ -36,6 +36,4 @@ object RangeValueType extends js.Object {
   
   @js.native
   sealed trait unknown extends RangeValueType
-  
 }
-

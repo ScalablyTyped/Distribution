@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@alloc/types" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@alloc/types" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

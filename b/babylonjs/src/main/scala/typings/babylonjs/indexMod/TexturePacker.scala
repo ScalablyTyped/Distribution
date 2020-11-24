@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.packerMod.ITexturePackerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "TexturePacker")
 @js.native
@@ -24,22 +24,26 @@ class TexturePacker protected ()
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "TexturePacker")
 @js.native
 object TexturePacker extends js.Object {
+  
   /** Packer Layout Constant 2 */
   val LAYOUT_COLNUM: Double = js.native
+  
   /** Packer Layout Constant 1 */
   val LAYOUT_POWER2: Double = js.native
+  
   /** Packer Layout Constant 0 */
   val LAYOUT_STRIP: Double = js.native
+  
   /** Packer Layout Constant 2 */
   val SUBUV_COLOR: Double = js.native
+  
   /** Packer Layout Constant 1 */
   val SUBUV_EXTEND: Double = js.native
+  
   /** Packer Layout Constant 0 */
   val SUBUV_WRAP: Double = js.native
 }
-

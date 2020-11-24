@@ -12,7 +12,7 @@ The lodash method `_.isInteger` exported as a module.
 | Keywords           | lodash-modularized, isinteger |
 | # releases         | 0 |
 | # dependents       | 38 |
-| # downloads        | 89726572 |
+| # downloads        | 153070867 |
 | # stars            | 0 |
 
 ## Links

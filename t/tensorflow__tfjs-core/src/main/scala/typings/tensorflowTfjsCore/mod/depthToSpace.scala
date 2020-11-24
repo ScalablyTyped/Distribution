@@ -1,13 +1,13 @@
 package typings.tensorflowTfjsCore.mod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core", "depthToSpace")
 @js.native
@@ -20,4 +20,3 @@ object depthToSpace
         Tensor4D
       ]
     ]
-

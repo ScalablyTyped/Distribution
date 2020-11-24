@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for objects implementing different element styles.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class StyleBase ()
   extends typings.devexpressWeb.StyleBase
-

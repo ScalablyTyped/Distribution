@@ -19,13 +19,14 @@ import typings.titanium.titaniumStrings.tiledialogpositive
 import typings.titanium.titaniumStrings.tileremoved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Android service for creating custom quick settings tiles and handling user's interaction with them.
   */
 @js.native
 trait QuickSettingsService extends Service {
+  
   @JSName("addEventListener")
   def addEventListener_startlistening(
     name: startlistening,
@@ -75,6 +76,7 @@ trait QuickSettingsService extends Service {
     name: tileremoved,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ QuickSettingsServiceTileremovedEvent, Unit]
   ): Unit = js.native
+  
   @JSName("fireEvent")
   def fireEvent_pause(name: pause, event: QuickSettingsServicePauseEvent): Unit = js.native
   @JSName("fireEvent")
@@ -121,26 +123,32 @@ trait QuickSettingsService extends Service {
   def fireEvent_tileremoved(name: tileremoved): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_tileremoved(name: tileremoved, event: QuickSettingsServiceTileremovedEvent): Unit = js.native
+  
   /**
     * Returns the Tile's current icon.
     */
   def getIcon(): String | Blob | File = js.native
+  
   /**
     * Returns the Tile's current label.
     */
   def getLabel(): String = js.native
+  
   /**
     * Returns the Tile's current state.
     */
   def getState(): Double = js.native
+  
   /**
     * Returns 'true' if the device is currently locked, 'false' otherwise.
     */
   def isLocked(): Boolean = js.native
+  
   /**
     * Returns 'true' if the device is in secure state, 'false' otherwise.
     */
   def isSecure(): Boolean = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_startlistening(
     name: startlistening,
@@ -190,35 +198,41 @@ trait QuickSettingsService extends Service {
     name: tileremoved,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ QuickSettingsServiceTileremovedEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Changes the Tile's icon.
     */
   def setIcon(icon: String): Unit = js.native
   def setIcon(icon: Blob): Unit = js.native
   def setIcon(icon: File): Unit = js.native
+  
   /**
     * Changes the Tile's label.
     */
   def setLabel(label: String): Unit = js.native
+  
   /**
     * Sets the state of the Tile.
     */
   def setState(state: Double): Unit = js.native
+  
   /**
     * Opens an Alert dialog.
     */
   def showDialog(options: showParams): Unit = js.native
+  
   /**
     * Colapses the quick settings menu and starts an activity for the passed Intent.
     */
   def startActivityAndCollapse(intent: Intent): Unit = js.native
+  
   /**
     * Prompts the user to unlock the device and runs the JS code.
     */
   def unlockAndRun(jsCode: String): Unit = js.native
+  
   /**
     * Applies current tile's properties.
     */
   def updateTile(): Unit = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BPMNEvents extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BPMNEvents")
 @js.native
 object BPMNEvents extends js.Object {
+  
   //Used to set BPMN Event as End
   @js.native
   sealed trait End extends BPMNEvents
@@ -33,6 +33,4 @@ object BPMNEvents extends js.Object {
   //Used to set BPMN Event as ThrowingIntermediate
   @js.native
   sealed trait ThrowingIntermediate extends BPMNEvents
-  
 }
-

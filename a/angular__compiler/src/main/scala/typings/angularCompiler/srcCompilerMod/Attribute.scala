@@ -3,7 +3,7 @@ package typings.angularCompiler.srcCompilerMod
 import typings.angularCompiler.i18nAstMod.I18nMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "Attribute")
 @js.native
@@ -31,4 +31,3 @@ class Attribute protected ()
     i18n: I18nMeta
   ) = this()
 }
-

@@ -10,9 +10,9 @@ An utility that allows developers to declare InversifyJS bindings using ES2016 d
 | ------------------ | :-------------: |
 | Full name          | inversify-binding-decorators |
 | Keywords           | InversifyJS |
-| # releases         | 2 |
-| # dependents       | 50 |
-| # downloads        | 333568 |
+| # releases         | 0 |
+| # dependents       | 52 |
+| # downloads        | 482444 |
 | # stars            | 1 |
 
 ## Links

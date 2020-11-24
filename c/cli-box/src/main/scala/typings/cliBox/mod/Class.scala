@@ -2,7 +2,7 @@ package typings.cliBox.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cli-box", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ class Class protected () extends Box {
   def this(options: Options, text: String) = this()
   def this(options: Options, text: Text) = this()
 }
-

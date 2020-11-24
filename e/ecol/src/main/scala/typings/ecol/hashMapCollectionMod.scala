@@ -3,8 +3,6 @@ package typings.ecol
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
 import typings.ecol.collectionEventMod.CollectionEvent
-import typings.ecol.collectionEventMod.CollectionEvent.Listener
-import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
 import typings.tstl.anon.Iteratoranyanyanyany
 import typings.tstl.entryMod.Entry
@@ -20,11 +18,12 @@ import typings.tstl.pairMod.Pair
 import typings.tstl.tstlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecol/lib/maps/HashMapCollection", JSImport.Namespace)
 @js.native
 object hashMapCollectionMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -37,27 +36,24 @@ object hashMapCollectionMod extends js.Object {
   class HashMapCollection[Key, T] ()
     extends HashMap[Key, T]
        with IEventDispatcher[Entry[Key, T], HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T]] {
-    /**
-      * @hidden
-      */
-    var dispatcher_ : js.Any = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_key(key: Key): Double = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_range(first: Iterator[Key, T]): Iterator[Key, T] = js.native
     /* InferMemberOverrides */
     /* protected */ override def _Erase_by_range(first: Iterator[Key, T], last: Iterator[Key, T]): Iterator[Key, T] = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Handle_erase(first: Iterator[Key, T], last: Iterator[Key, T]): Unit = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Handle_insert(first: Iterator[Key, T], last: Iterator[Key, T]): Unit = js.native
+    
     /* InferMemberOverrides */
     /* protected */ override def _Insert_by_range[InputIterator /* <: IForwardIterator[IPair[Key, T], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    /* CompleteClass */
-    override def addEventListener(
-      `type`: Type,
-      listener: Listener[Entry[Key, T], HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T]]
-    ): Unit = js.native
+    
     /**
       * Range Assigner.
       *
@@ -66,19 +62,13 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[IPair[Key, T], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.icontainerMod.IContainer.Iterator[Entry[Key, T], HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T], IPair[Key, T]] = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -90,25 +80,18 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def count(key: Key): Double = js.native
-    /* CompleteClass */
-    override def dispatchEvent(event: CollectionEvent[Entry[Key, T], HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T]]): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var dispatcher_ : js.Any = js.native
+    
     /* InferMemberOverrides */
     override def emplace(key: Key, `val`: T): InsertRet[Key, T, `true`, HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T]] = js.native
+    
     /* InferMemberOverrides */
     override def emplace_hint(hint: Iterator[Key, T], key: Key, `val`: T): Iterator[Key, T] = js.native
-    /**
-      * Test whether container is empty.
-      */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.icontainerMod.IContainer.Iterator[Entry[Key, T], HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T], IPair[Key, T]] = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -132,6 +115,7 @@ object hashMapCollectionMod extends js.Object {
     /* InferMemberOverrides */
     @JSName("erase")
     override def erase_IteratorT(it: Iterator[Key, T]): Iterator[Key, T] = js.native
+    
     /**
       * Extract an element by key.
       *
@@ -149,6 +133,7 @@ object hashMapCollectionMod extends js.Object {
     /* InferMemberOverrides */
     @JSName("extract")
     override def extract_Iterator(pos: Iterator[Key, T]): Iterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -160,6 +145,7 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def find(key: Key): Iterator[Key, T] = js.native
+    
     /**
       * Get a value.
       *
@@ -168,6 +154,7 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def get(key: Key): T = js.native
+    
     /**
       * @inheritDoc
       */
@@ -179,14 +166,14 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def has(key: Key): Boolean = js.native
-    /* CompleteClass */
-    override def hasEventListener(`type`: Type): Boolean = js.native
+    
     /* InferMemberOverrides */
     override def insert(hint: Iterator[Key, T], pair: IPair[Key, T]): Iterator[Key, T] = js.native
     /* InferMemberOverrides */
     override def insert(pair: IPair[Key, T]): InsertRet[Key, T, `true`, HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T]] = js.native
     /* InferMemberOverrides */
     override def insert[InputIterator /* <: IForwardIterator[IPair[Key, T], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * Insert or assign an element with hint.
       *
@@ -206,6 +193,7 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def insert_or_assign(key: Key, value: T): Pair[Iterator[Key, T], Boolean] = js.native
+    
     /**
       * Merge two containers.
       *
@@ -213,21 +201,7 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def merge(source: HashMap[Key, T]): Unit = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* InferMemberOverrides */
-    override def push(items: (IPair[Key, T])*): Double = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseIterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -240,18 +214,7 @@ object hashMapCollectionMod extends js.Object {
       * @inheritDoc
       */
     def refresh(it: Iterator[Key, T]): Unit = js.native
-    /* CompleteClass */
-    override def removeEventListener(
-      `type`: Type,
-      listener: Listener[Entry[Key, T], HashMap[Key, T], Iterator[Key, T], ReverseIterator[Key, T]]
-    ): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def rend(): ReverseIterator[Key, T] = js.native
+    
     /**
       * Set a value with key.
       *
@@ -260,12 +223,7 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def set(key: Key, `val`: T): Unit = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
+    
     /**
       * Swap elements.
       *
@@ -273,6 +231,7 @@ object hashMapCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: HashMap[Key, T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -281,9 +240,9 @@ object hashMapCollectionMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[Entry[Key, T]] = js.native
   }
-  
   @js.native
   object HashMapCollection extends js.Object {
+    
     val Event: Instantiable3[
         /* type */ String, 
         /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
@@ -313,6 +272,7 @@ object hashMapCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val Iterator: Instantiable0[
         typings.tstl.mapElementListMod.MapElementList.Iterator[
           js.Object, 
@@ -333,6 +293,7 @@ object hashMapCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
           js.Object, 
@@ -353,27 +314,29 @@ object hashMapCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     type Event[Key, T] = CollectionEvent[
         Entry[Key, T], 
         HashMap[Key, T], 
         typings.tstl.hashMapMod.HashMap.Iterator[Key, T], 
         typings.tstl.hashMapMod.HashMap.ReverseIterator[Key, T]
       ]
+    
     /**
       * Iterator of {@link HashMap}
       */
     type Iterator[Key, T] = typings.tstl.mapElementListMod.MapElementList.Iterator[Key, T, typings.ecol.ecolBooleans.`true`, HashMap[Key, T]]
+    
     type Listener[Key, T] = typings.ecol.collectionEventMod.CollectionEvent.Listener[
         Entry[Key, T], 
         HashMap[Key, T], 
         typings.tstl.hashMapMod.HashMap.Iterator[Key, T], 
         typings.tstl.hashMapMod.HashMap.ReverseIterator[Key, T]
       ]
+    
     /**
       * Reverse iterator of {@link HashMap}
       */
     type ReverseIterator[Key, T] = typings.tstl.mapElementListMod.MapElementList.ReverseIterator[Key, T, typings.ecol.ecolBooleans.`true`, HashMap[Key, T]]
   }
-  
 }
-

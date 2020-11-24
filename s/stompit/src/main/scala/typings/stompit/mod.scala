@@ -11,11 +11,12 @@ import typings.stompit.connectMod.ConnectionListener
 import typings.stompit.socketMod.SocketOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stompit", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Channel protected () extends ^ {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
@@ -66,6 +67,7 @@ object mod extends js.Object {
   
   @js.native
   object connect extends js.Object {
+    
     def apply(optionsOrPathOrPort: String): typings.stompit.clientMod.^ = js.native
     def apply(optionsOrPathOrPort: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
     def apply(optionsOrPathOrPort: Double): typings.stompit.clientMod.^ = js.native
@@ -76,6 +78,4 @@ object mod extends js.Object {
     def apply(port: Double, host: String): typings.stompit.clientMod.^ = js.native
     def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
   }
-  
 }
-

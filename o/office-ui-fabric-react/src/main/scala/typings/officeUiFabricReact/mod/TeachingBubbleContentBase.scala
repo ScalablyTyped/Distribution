@@ -1,10 +1,9 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.anon.HasCondensedHeadline
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "TeachingBubbleContentBase")
 @js.native
@@ -12,11 +11,3 @@ class TeachingBubbleContentBase protected ()
   extends typings.officeUiFabricReact.libTeachingBubbleMod.TeachingBubbleContentBase {
   def this(props: ITeachingBubbleProps) = this()
 }
-
-/* static members */
-@JSImport("office-ui-fabric-react", "TeachingBubbleContentBase")
-@js.native
-object TeachingBubbleContentBase extends js.Object {
-  var defaultProps: HasCondensedHeadline = js.native
-}
-

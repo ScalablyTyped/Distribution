@@ -2,11 +2,12 @@ package typings.meteorRoles.mod.Roles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.createRole")
 @js.native
 object createRole extends js.Object {
+  
   /**
     * Create a new role. Whitespace will be trimmed.
     *
@@ -16,4 +17,3 @@ object createRole extends js.Object {
     */
   def apply(role: String): String = js.native
 }
-

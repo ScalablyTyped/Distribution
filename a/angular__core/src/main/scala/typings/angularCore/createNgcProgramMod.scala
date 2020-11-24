@@ -4,11 +4,12 @@ import typings.angularCore.anon.Compiler
 import typings.typescript.mod.CompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/create_ngc_program", JSImport.Namespace)
 @js.native
 object createNgcProgramMod extends js.Object {
+  
   def createNgcProgram(
     createHost: js.Function1[
       /* options */ CompilerOptions, 
@@ -17,4 +18,3 @@ object createNgcProgramMod extends js.Object {
     tsconfigPath: String
   ): Compiler = js.native
 }
-

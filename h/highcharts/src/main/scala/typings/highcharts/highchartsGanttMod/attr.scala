@@ -6,11 +6,12 @@ import typings.highcharts.mod.SVGAttributes
 import typings.highcharts.mod.SVGDOMElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highcharts-gantt", "attr")
 @js.native
 object attr extends js.Object {
+  
   def apply(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
   def apply(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
   def apply(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
@@ -36,4 +37,3 @@ object attr extends js.Object {
   def apply(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
   def apply(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
 }
-

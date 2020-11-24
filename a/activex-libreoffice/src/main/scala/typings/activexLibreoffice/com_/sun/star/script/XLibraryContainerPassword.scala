@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extension of {@link XLibraryContainer} to provide password functionality. This interface should be implemented together with {@link
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XLibraryContainerPassword extends XInterface {
+  
   /**
     * Changes the library's password.
     *
@@ -31,12 +32,14 @@ trait XLibraryContainerPassword extends XInterface {
     * com.sun.star.lang.IllegalArgumentException} is thrown.
     */
   def changeLibraryPassword(Name: String, OldPassword: String, NewPassword: String): Unit = js.native
+  
   /**
     * Returns true if the accessed library item is protected by a password.
     *
     * If a library with the this name doesn't exist a {@link com.sun.star.container.NoSuchElementException} is thrown.
     */
   def isLibraryPasswordProtected(Name: String): Boolean = js.native
+  
   /**
     * Returns true if the accessed library item is protected by a password (see isLibraryPasswordProtected) and the password was already verified with
     * verifyLibraryPassword or if an initial password was set with changeLibraryPassword.
@@ -46,6 +49,7 @@ trait XLibraryContainerPassword extends XInterface {
     * If the library exists but isn't password protected a {@link com.sun.star.lang.IllegalArgumentException} is thrown.
     */
   def isLibraryPasswordVerified(Name: String): Boolean = js.native
+  
   /**
     * Verifies the library's password. If the correct password was passed, the method returns true and further calls to isLibraryPasswordVerified will also
     * return true.
@@ -58,8 +62,8 @@ trait XLibraryContainerPassword extends XInterface {
     */
   def verifyLibraryPassword(Name: String, Password: String): Boolean = js.native
 }
-
 object XLibraryContainerPassword {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -73,26 +77,32 @@ object XLibraryContainerPassword {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), changeLibraryPassword = js.Any.fromFunction3(changeLibraryPassword), isLibraryPasswordProtected = js.Any.fromFunction1(isLibraryPasswordProtected), isLibraryPasswordVerified = js.Any.fromFunction1(isLibraryPasswordVerified), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), verifyLibraryPassword = js.Any.fromFunction2(verifyLibraryPassword))
     __obj.asInstanceOf[XLibraryContainerPassword]
   }
+  
   @scala.inline
   implicit class XLibraryContainerPasswordOps[Self <: XLibraryContainerPassword] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChangeLibraryPassword(value: (String, String, String) => Unit): Self = this.set("changeLibraryPassword", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setIsLibraryPasswordProtected(value: String => Boolean): Self = this.set("isLibraryPasswordProtected", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsLibraryPasswordVerified(value: String => Boolean): Self = this.set("isLibraryPasswordVerified", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setVerifyLibraryPassword(value: (String, String) => Boolean): Self = this.set("verifyLibraryPassword", js.Any.fromFunction2(value))
   }
-  
 }
-

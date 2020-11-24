@@ -10,15 +10,15 @@ Connection pool for node-postgres
 | ------------------ | :-------------: |
 | Full name          | pg-pool |
 | Keywords           | pg, postgres, pool, database |
-| # releases         | 7 |
-| # dependents       | 38 |
-| # downloads        | 34538947 |
+| # releases         | 13 |
+| # dependents       | 44 |
+| # downloads        | 58100419 |
 | # stars            | 3 |
 
 ## Links
 - [Homepage](https://github.com/brianc/node-pg-pool#readme)
 - [Bugs](https://github.com/brianc/node-pg-pool/issues)
-- [Repository](https://github.com/brianc/node-pg-pool)
+- [Repository](https://github.com/brianc/node-postgres)
 - [Npm](https://www.npmjs.com/package/pg-pool)
     
 

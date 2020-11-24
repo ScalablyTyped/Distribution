@@ -12,7 +12,7 @@ A batch converter for multipage tiff files to png (or any imagemagick supported 
 | Keywords           | multipage, conversion, batch, tiff, png, imagemagick, convert |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 5235 |
+| # downloads        | 5517 |
 | # stars            | 1 |
 
 ## Links

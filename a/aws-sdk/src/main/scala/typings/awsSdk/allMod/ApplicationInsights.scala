@@ -4,7 +4,7 @@ import typings.awsSdk.applicationinsightsMod.ClientConfiguration
 import typings.awsSdk.applicationinsightsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "ApplicationInsights")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ApplicationInsights () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

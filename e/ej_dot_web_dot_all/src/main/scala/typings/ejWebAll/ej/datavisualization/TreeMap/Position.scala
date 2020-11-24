@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.TreeMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Position extends js.Object
-
 @JSGlobal("ej.datavisualization.TreeMap.Position")
 @js.native
 object Position extends js.Object {
+  
   //specifies the bottomcenter position
   @js.native
   sealed trait Bottomcenter extends Position
@@ -49,6 +49,4 @@ object Position extends js.Object {
   //specifies the topright position
   @js.native
   sealed trait Topright extends Position
-  
 }
-

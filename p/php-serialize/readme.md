@@ -10,9 +10,9 @@ PHP serialize/unserialize in Javascript
 | ------------------ | :-------------: |
 | Full name          | php-serialize |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 8 |
-| # downloads        | 213989 |
+| # releases         | 7 |
+| # dependents       | 16 |
+| # downloads        | 442121 |
 | # stars            | 3 |
 
 ## Links

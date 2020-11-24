@@ -5,55 +5,33 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MustacheStatic extends js.Object {
+  
   /**
     * Represents a rendering context by wrapping a view object and maintaining a reference to the parent context.
     */
   var Context: Instantiable2[/* view */ js.Any, /* parentContext */ js.UndefOr[MustacheContext], MustacheContext] = js.native
+  
   /**
     * A simple string scanner that is used by the template parser to find tokens in template strings.
     */
   var Scanner: Instantiable1[/* string */ String, MustacheScanner] = js.native
+  
   /**
     * A Writer knows how to take a stream of tokens and render them to a `string`, given a context.
     *
     * It also maintains a cache of templates to avoid the need to parse the same template twice.
     */
   var Writer: Instantiable0[MustacheWriter] = js.native
-  /**
-    * The name of the module.
-    */
-  val name: String = js.native
-  /**
-    * The default opening and closing tags used while parsing the templates.
-    *
-    * Different default tags can be overridden by setting this field. They will have effect on all subsequent
-    * calls to `.render()` or `.parse()`, unless custom tags are given as arguments to those functions.
-    *
-    * Default value is `[ "{{", "}}" ]`.
-    */
-  var tags: OpeningAndClosingTags = js.native
-  /**
-    * Customise the template caching behaviour by either:
-    *
-    * disable it completely by setting it to `undefined`
-    *
-    * -- or --
-    *
-    * provide a custom cache strategy that satisfies the `TemplateCache` interface
-    */
-  var templateCache: js.UndefOr[TemplateCache] = js.native
-  /**
-    * The version of the module.
-    */
-  val version: String = js.native
+  
   /**
     * Clears all cached templates in this writer.
     */
   def clearCache(): Unit = js.native
+  
   /**
     * Escapes HTML-characters.
     *
@@ -61,6 +39,12 @@ trait MustacheStatic extends js.Object {
     * The string to escape.
     */
   def escape(value: String): String = js.native
+  
+  /**
+    * The name of the module.
+    */
+  val name: String = js.native
+  
   /**
     * Parses and caches the given template in the default writer and returns the array of tokens it contains.
     *
@@ -74,6 +58,7 @@ trait MustacheStatic extends js.Object {
     */
   def parse(template: String): TemplateSpans = js.native
   def parse(template: String, tags: OpeningAndClosingTags): TemplateSpans = js.native
+  
   /**
     * Renders the `template` with the given `view` and `partials` using the default writer.
     *
@@ -109,5 +94,30 @@ trait MustacheStatic extends js.Object {
     tags: OpeningAndClosingTags
   ): String = js.native
   def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  
+  /**
+    * The default opening and closing tags used while parsing the templates.
+    *
+    * Different default tags can be overridden by setting this field. They will have effect on all subsequent
+    * calls to `.render()` or `.parse()`, unless custom tags are given as arguments to those functions.
+    *
+    * Default value is `[ "{{", "}}" ]`.
+    */
+  var tags: OpeningAndClosingTags = js.native
+  
+  /**
+    * Customise the template caching behaviour by either:
+    *
+    * disable it completely by setting it to `undefined`
+    *
+    * -- or --
+    *
+    * provide a custom cache strategy that satisfies the `TemplateCache` interface
+    */
+  var templateCache: js.UndefOr[TemplateCache] = js.native
+  
+  /**
+    * The version of the module.
+    */
+  val version: String = js.native
 }
-

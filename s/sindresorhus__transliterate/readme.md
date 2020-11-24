@@ -12,13 +12,10 @@ Convert Unicode characters to Latin characters using transliteration
 | Keywords           | transliterate, transliteration, string, deburr, unicode, ascii, text, latin, latinize, convert, replace |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 715773 |
+| # downloads        | 1647747 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/transliterate#readme)
-- [Bugs](https://github.com/sindresorhus/transliterate/issues)
-- [Repository](https://github.com/sindresorhus/transliterate)
 - [Npm](https://www.npmjs.com/package/%40sindresorhus%2Ftransliterate)
     
 

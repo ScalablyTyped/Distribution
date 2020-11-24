@@ -4,11 +4,12 @@ import typings.jake.mod.global.jake.FileTask
 import typings.jake.mod.global.jake.FileTaskOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("file")
 @js.native
 object file extends js.Object {
+  
   /**
     * Creates a Jake FileTask.
     * @name name The name of the Task
@@ -44,4 +45,3 @@ object file extends js.Object {
     opts: FileTaskOptions
   ): FileTask = js.native
 }
-

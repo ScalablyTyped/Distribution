@@ -3,10 +3,11 @@ package typings.quicksettings.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QuickSettings extends js.Object {
+  
   /**
     * Creates a QuickSettingsPanel with the provided parameters.
     *
@@ -54,7 +55,7 @@ trait QuickSettings extends js.Object {
   def create[M, S](x: Double, y: Double, panelTitle: js.UndefOr[scala.Nothing], parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
   def create[M, S](x: Double, y: Double, panelTitle: String): QuickSettingsPanel[M, S] = js.native
   def create[M, S](x: Double, y: Double, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+  
    // tslint:disable-line no-unnecessary-generics
   def useExtStyleSheet(): Unit = js.native
 }
-

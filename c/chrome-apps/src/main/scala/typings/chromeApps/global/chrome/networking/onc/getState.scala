@@ -3,11 +3,12 @@ package typings.chromeApps.global.chrome.networking.onc
 import typings.chromeApps.chrome.networking.onc.NetworkStateProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.networking.onc.getState")
 @js.native
 object getState extends js.Object {
+  
   /**
     * Gets the cached read-only properties of the network with id *networkGuid*.
     * This is meant to be a higher performance function than *getProperties*,
@@ -22,4 +23,3 @@ object getState extends js.Object {
     */
   def apply(networkGuid: String, callback: js.Function1[/* result */ NetworkStateProperties, Unit]): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.navermaps.global.naver.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("naver.maps.MapTypeRegistry")
 @js.native
@@ -12,4 +12,3 @@ class MapTypeRegistry ()
   def this(mapTypeInfo: js.UndefOr[scala.Nothing], defaultMapTypeId: String) = this()
   def this(mapTypeInfo: js.Any, defaultMapTypeId: String) = this()
 }
-

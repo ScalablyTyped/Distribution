@@ -9,11 +9,12 @@ import typings.web3Core.web3CoreStrings.sent
 import typings.web3Core.web3CoreStrings.transactionHash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PromiEvent[T]
   extends js.Promise[T] {
+  
   @JSName("on")
   def on_confirmation(`type`: confirmation, handler: js.Function1[/* error */ Error | TransactionReceipt | String, Unit]): PromiEvent[T] = js.native
   @JSName("on")
@@ -35,6 +36,7 @@ trait PromiEvent[T]
     `type`: transactionHash,
     handler: js.Function1[Error | (/* receipt */ String) | TransactionReceipt, Unit]
   ): PromiEvent[T] = js.native
+  
   @JSName("once")
   def once_confirmation(`type`: confirmation, handler: js.Function1[/* error */ Error | TransactionReceipt | String, Unit]): PromiEvent[T] = js.native
   @JSName("once")
@@ -61,4 +63,3 @@ trait PromiEvent[T]
     handler: js.Function1[Error | (/* transactionHash */ String) | TransactionReceipt, Unit]
   ): PromiEvent[T] = js.native
 }
-

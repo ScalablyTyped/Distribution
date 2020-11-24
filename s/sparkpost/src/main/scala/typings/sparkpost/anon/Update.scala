@@ -8,10 +8,11 @@ import typings.sparkpost.mod.SubaccountInformation
 import typings.sparkpost.mod.UpdateSubaccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Update extends js.Object {
+  
   /**
     * Provisions a new subaccount and an initial subaccount API key.
     *
@@ -25,6 +26,7 @@ trait Update extends js.Object {
     * @param callback The request callback with basic subaccount information results
     */
   def create(subaccount: CreateSubaccount, callback: ResultsCallback[CreateSubaccountResponse]): Unit = js.native
+  
   /**
     * Get details about a specified subaccount by its id
     *
@@ -41,6 +43,7 @@ trait Update extends js.Object {
   def get(id: String, callback: ResultsCallback[SubaccountInformation]): Unit = js.native
   def get(id: Double): ResultsPromise[SubaccountInformation] = js.native
   def get(id: Double, callback: ResultsCallback[SubaccountInformation]): Unit = js.native
+  
   /**
     * Endpoint for retrieving a list of your subaccounts.
     * This endpoint only returns information about the subaccounts themselves, not the data associated with the subaccount.
@@ -54,6 +57,7 @@ trait Update extends js.Object {
     * @param callback The request callback with subaccount information results array
     */
   def list(callback: ResultsCallback[js.Array[SubaccountInformation]]): Unit = js.native
+  
   /**
     * Update an existing subaccount’s information.
     *
@@ -71,4 +75,3 @@ trait Update extends js.Object {
     */
   def update(id: String, subaccount: UpdateSubaccount, callback: ResultsCallback[Message]): Unit = js.native
 }
-

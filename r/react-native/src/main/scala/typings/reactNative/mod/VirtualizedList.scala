@@ -7,17 +7,22 @@ import typings.reactNative.anon.ViewPosition
 import typings.reactNative.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "VirtualizedList")
 @js.native
 class VirtualizedList[ItemT] ()
   extends Component[VirtualizedListProps[ItemT], js.Object, js.Any] {
+  
   def recordInteraction(): Unit = js.native
+  
   def scrollToEnd(): Unit = js.native
   def scrollToEnd(params: `1`): Unit = js.native
+  
   def scrollToIndex(params: ViewPosition): Unit = js.native
+  
   def scrollToItem(params: AnimatedItem[ItemT]): Unit = js.native
+  
   /**
     * Scroll to a specific content pixel offset in the list.
     * Param `offset` expects the offset to scroll to. In case of horizontal is true, the
@@ -26,4 +31,3 @@ class VirtualizedList[ItemT] ()
     */
   def scrollToOffset(params: AnimatedOffset): Unit = js.native
 }
-

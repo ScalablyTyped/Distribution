@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.Mocha.HookFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Execute before each test case.
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("setup")
 @js.native
 object setup extends TopLevel[HookFunction]
-

@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/count", JSImport.Namespace)
 @js.native
 object countMod extends js.Object {
+  
   def count[T](): js.Any = js.native
   def count[T](
     predicate: js.Function3[
@@ -17,4 +18,3 @@ object countMod extends js.Object {
     ]
   ): js.Any = js.native
 }
-

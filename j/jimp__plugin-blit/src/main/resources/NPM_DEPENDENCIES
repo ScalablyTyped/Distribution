@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-blit" : "0.14.0"
+      "@jimp/plugin-blit" : "0.16.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-blit" : "0.14.0"
+      "@jimp/plugin-blit" : "0.16.1"
     }
   ],
   "compile-devDependencies" : [

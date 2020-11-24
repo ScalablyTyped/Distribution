@@ -8,7 +8,7 @@ import typings.fridaGum.NativeType
 import typings.fridaGum.SystemFunctionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SystemFunction")
 @js.native
@@ -28,8 +28,6 @@ class SystemFunction protected ()
     abiOrOptions: NativeFunctionOptions
   ) = this()
 }
-
 @JSGlobal("SystemFunction")
 @js.native
 object SystemFunction extends TopLevel[SystemFunctionConstructor]
-

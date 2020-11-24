@@ -14,9 +14,127 @@ import typings.luminoWidgets.tabbarMod.TabBar.RemoveBehavior
 import typings.luminoWidgets.tabpanelMod.TabPanel.TabPlacement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object luminoWidgetsStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def `bottom-to-top`: `bottom-to-top` = "bottom-to-top".asInstanceOf[`bottom-to-top`]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def command: command = "command".asInstanceOf[command]
+  
+  @scala.inline
+  def decrement: decrement = "decrement".asInstanceOf[decrement]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def increment: increment = "increment".asInstanceOf[increment]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `left-to-right`: `left-to-right` = "left-to-right".asInstanceOf[`left-to-right`]
+  
+  @scala.inline
+  def `multiple-document`: `multiple-document` = "multiple-document".asInstanceOf[`multiple-document`]
+  
+  @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def previous: previous = "previous".asInstanceOf[previous]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def `right-to-left`: `right-to-left` = "right-to-left".asInstanceOf[`right-to-left`]
+  
+  @scala.inline
+  def `select-previous-tab`: `select-previous-tab` = "select-previous-tab".asInstanceOf[`select-previous-tab`]
+  
+  @scala.inline
+  def `select-tab`: `select-tab` = "select-tab".asInstanceOf[`select-tab`]
+  
+  @scala.inline
+  def `select-tab-after`: `select-tab-after` = "select-tab-after".asInstanceOf[`select-tab-after`]
+  
+  @scala.inline
+  def `select-tab-before`: `select-tab-before` = "select-tab-before".asInstanceOf[`select-tab-before`]
+  
+  @scala.inline
+  def `select-tab-if-needed`: `select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[`select-tab-if-needed`]
+  
+  @scala.inline
+  def separator: separator = "separator".asInstanceOf[separator]
+  
+  @scala.inline
+  def `set-min-size`: `set-min-size` = "set-min-size".asInstanceOf[`set-min-size`]
+  
+  @scala.inline
+  def `set-no-constraint`: `set-no-constraint` = "set-no-constraint".asInstanceOf[`set-no-constraint`]
+  
+  @scala.inline
+  def `single-document`: `single-document` = "single-document".asInstanceOf[`single-document`]
+  
+  @scala.inline
+  def `split-area`: `split-area` = "split-area".asInstanceOf[`split-area`]
+  
+  @scala.inline
+  def `split-bottom`: `split-bottom` = "split-bottom".asInstanceOf[`split-bottom`]
+  
+  @scala.inline
+  def `split-left`: `split-left` = "split-left".asInstanceOf[`split-left`]
+  
+  @scala.inline
+  def `split-right`: `split-right` = "split-right".asInstanceOf[`split-right`]
+  
+  @scala.inline
+  def `split-top`: `split-top` = "split-top".asInstanceOf[`split-top`]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def submenu: submenu = "submenu".asInstanceOf[submenu]
+  
+  @scala.inline
+  def `tab-after`: `tab-after` = "tab-after".asInstanceOf[`tab-after`]
+  
+  @scala.inline
+  def `tab-area`: `tab-area` = "tab-area".asInstanceOf[`tab-area`]
+  
+  @scala.inline
+  def `tab-before`: `tab-before` = "tab-before".asInstanceOf[`tab-before`]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top-to-bottom`: `top-to-bottom` = "top-to-bottom".asInstanceOf[`top-to-bottom`]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
   @js.native
   sealed trait bottom
     extends TabPlacement
@@ -159,84 +277,4 @@ object luminoWidgetsStrings {
     extends Orientation
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
        with typings.luminoWidgets.tabbarMod.TabBar.Orientation
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-to-top`: `bottom-to-top` = "bottom-to-top".asInstanceOf[`bottom-to-top`]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def command: command = "command".asInstanceOf[command]
-  @scala.inline
-  def decrement: decrement = "decrement".asInstanceOf[decrement]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def increment: increment = "increment".asInstanceOf[increment]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `left-to-right`: `left-to-right` = "left-to-right".asInstanceOf[`left-to-right`]
-  @scala.inline
-  def `multiple-document`: `multiple-document` = "multiple-document".asInstanceOf[`multiple-document`]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def `right-to-left`: `right-to-left` = "right-to-left".asInstanceOf[`right-to-left`]
-  @scala.inline
-  def `select-previous-tab`: `select-previous-tab` = "select-previous-tab".asInstanceOf[`select-previous-tab`]
-  @scala.inline
-  def `select-tab`: `select-tab` = "select-tab".asInstanceOf[`select-tab`]
-  @scala.inline
-  def `select-tab-after`: `select-tab-after` = "select-tab-after".asInstanceOf[`select-tab-after`]
-  @scala.inline
-  def `select-tab-before`: `select-tab-before` = "select-tab-before".asInstanceOf[`select-tab-before`]
-  @scala.inline
-  def `select-tab-if-needed`: `select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[`select-tab-if-needed`]
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
-  @scala.inline
-  def `set-min-size`: `set-min-size` = "set-min-size".asInstanceOf[`set-min-size`]
-  @scala.inline
-  def `set-no-constraint`: `set-no-constraint` = "set-no-constraint".asInstanceOf[`set-no-constraint`]
-  @scala.inline
-  def `single-document`: `single-document` = "single-document".asInstanceOf[`single-document`]
-  @scala.inline
-  def `split-area`: `split-area` = "split-area".asInstanceOf[`split-area`]
-  @scala.inline
-  def `split-bottom`: `split-bottom` = "split-bottom".asInstanceOf[`split-bottom`]
-  @scala.inline
-  def `split-left`: `split-left` = "split-left".asInstanceOf[`split-left`]
-  @scala.inline
-  def `split-right`: `split-right` = "split-right".asInstanceOf[`split-right`]
-  @scala.inline
-  def `split-top`: `split-top` = "split-top".asInstanceOf[`split-top`]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def submenu: submenu = "submenu".asInstanceOf[submenu]
-  @scala.inline
-  def `tab-after`: `tab-after` = "tab-after".asInstanceOf[`tab-after`]
-  @scala.inline
-  def `tab-area`: `tab-area` = "tab-area".asInstanceOf[`tab-area`]
-  @scala.inline
-  def `tab-before`: `tab-before` = "tab-before".asInstanceOf[`tab-before`]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-to-bottom`: `top-to-bottom` = "top-to-bottom".asInstanceOf[`top-to-bottom`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

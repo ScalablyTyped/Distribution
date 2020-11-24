@@ -2,11 +2,12 @@ package typings.electron.Electron
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dialog extends js.Object {
-  // Docs: http://electronjs.org/docs/api/dialog
+  
+  // Docs: https://electronjs.org/docs/api/dialog
   /**
     * resolves when the certificate trust dialog is shown.
     *
@@ -43,6 +44,7 @@ trait Dialog extends js.Object {
     * @platform darwin,win32
     */
   def showCertificateTrustDialog(options: CertificateTrustDialogOptions): js.Promise[Unit] = js.native
+  
   /**
     * Displays a modal dialog that shows an error message.
     *
@@ -52,6 +54,7 @@ trait Dialog extends js.Object {
     * dialog will appear.
     */
   def showErrorBox(title: String, content: String): Unit = js.native
+  
   /**
     * resolves with a promise containing the following properties:
     *
@@ -78,6 +81,7 @@ trait Dialog extends js.Object {
     * window, making it modal.
     */
   def showMessageBox(options: MessageBoxOptions): js.Promise[MessageBoxReturnValue] = js.native
+  
   /**
     * the index of the clicked button.
     *
@@ -86,7 +90,7 @@ trait Dialog extends js.Object {
     *
     * The `browserWindow` argument allows the dialog to attach itself to a parent
     * window, making it modal. If `browserWindow` is not shown dialog will not be
-    * attached to it. In such case It will be displayed as independed window.
+    * attached to it. In such case it will be displayed as an independent window.
     */
   def showMessageBoxSync(browserWindow: BrowserWindow, options: MessageBoxSyncOptions): Double = js.native
   /**
@@ -97,9 +101,10 @@ trait Dialog extends js.Object {
     *
     * The `browserWindow` argument allows the dialog to attach itself to a parent
     * window, making it modal. If `browserWindow` is not shown dialog will not be
-    * attached to it. In such case It will be displayed as independed window.
+    * attached to it. In such case it will be displayed as an independent window.
     */
   def showMessageBoxSync(options: MessageBoxSyncOptions): Double = js.native
+  
   /**
     * Resolve with an object containing the following:
     *
@@ -152,6 +157,7 @@ trait Dialog extends js.Object {
     * 'openDirectory']` on these platforms, a directory selector will be shown.
     */
   def showOpenDialog(options: OpenDialogOptions): js.Promise[OpenDialogReturnValue] = js.native
+  
   /**
     * the file paths chosen by the user; if the dialog is cancelled it returns
     * `undefined`.
@@ -190,6 +196,7 @@ trait Dialog extends js.Object {
     * 'openDirectory']` on these platforms, a directory selector will be shown.
     */
   def showOpenDialogSync(options: OpenDialogSyncOptions): js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Resolve with an object containing the following:
     *
@@ -232,6 +239,7 @@ trait Dialog extends js.Object {
     * issues when expanding and collapsing the dialog.
     */
   def showSaveDialog(options: SaveDialogOptions): js.Promise[SaveDialogReturnValue] = js.native
+  
   /**
     * the path of the file chosen by the user; if the dialog is cancelled it returns
     * `undefined`.
@@ -255,4 +263,3 @@ trait Dialog extends js.Object {
     */
   def showSaveDialogSync(options: SaveDialogSyncOptions): js.UndefOr[String] = js.native
 }
-

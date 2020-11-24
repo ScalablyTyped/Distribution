@@ -10,13 +10,13 @@ Typings are for version 1.7
 | ------------------ | :-------------: |
 | Full name          | zui |
 | Keywords           | css, js, less, html5, responsive, front-end, framework, web |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 2013 |
+| # downloads        | 1790 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](http://zui.sexy)
+- [Homepage](http://openzui.com)
 - [Bugs](https://github.com/easysoft/zui/issues)
 - [Repository](https://github.com/easysoft/zui)
 - [Npm](https://www.npmjs.com/package/zui)

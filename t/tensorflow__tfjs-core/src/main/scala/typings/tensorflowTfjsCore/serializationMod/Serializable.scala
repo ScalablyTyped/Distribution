@@ -2,11 +2,12 @@ package typings.tensorflowTfjsCore.serializationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/serialization", "Serializable")
 @js.native
 abstract class Serializable () extends js.Object {
+  
   /**
     * Return the class name for this class to use in serialization contexts.
     *
@@ -19,16 +20,17 @@ abstract class Serializable () extends js.Object {
     * class hierarchies and a non-leaf node is used for serialization purposes.
     */
   def getClassName(): String = js.native
+  
   /**
     * Return all the non-weight state needed to serialize this object.
     */
   def getConfig(): ConfigDict = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-core/dist/serialization", "Serializable")
 @js.native
 object Serializable extends js.Object {
+  
   /**
     * Creates an instance of T from a ConfigDict.
     *
@@ -40,4 +42,3 @@ object Serializable extends js.Object {
   /** @nocollapse */
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
 }
-

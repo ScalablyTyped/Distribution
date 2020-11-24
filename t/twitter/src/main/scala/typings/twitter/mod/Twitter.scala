@@ -11,22 +11,25 @@ import typings.twitter.twitterStrings.site
 import typings.twitter.twitterStrings.user
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Twitter extends js.Object {
+  
   val VERSION: String = js.native
+  
   val allow_promise: Boolean = js.native
-  @JSName("request")
-  val request_Original: RequestAPI[Request, CoreOptions, RequiredUriUrl] = js.native
+  
   def get(path: String): js.Promise[ResponseData] = js.native
   def get(path: String, callback: Callback): Unit = js.native
   def get(path: String, params: RequestParams): js.Promise[ResponseData] = js.native
   def get(path: String, params: RequestParams, callback: Callback): Unit = js.native
+  
   def post(path: String): js.Promise[ResponseData] = js.native
   def post(path: String, callback: Callback): Unit = js.native
   def post(path: String, params: RequestParams): js.Promise[ResponseData] = js.native
   def post(path: String, params: RequestParams, callback: Callback): Unit = js.native
+  
   def request(options: RequiredUriUrl with CoreOptions): Request = js.native
   def request(options: RequiredUriUrl with CoreOptions, callback: RequestCallback): Request = js.native
   def request(uri: String): Request = js.native
@@ -34,6 +37,9 @@ trait Twitter extends js.Object {
   def request(uri: String, options: js.UndefOr[scala.Nothing], callback: RequestCallback): Request = js.native
   def request(uri: String, options: CoreOptions): Request = js.native
   def request(uri: String, options: CoreOptions, callback: RequestCallback): Request = js.native
+  @JSName("request")
+  val request_Original: RequestAPI[Request, CoreOptions, RequiredUriUrl] = js.native
+  
   def stream(method: String): EventEmitter = js.native
   def stream(method: String, callback: js.Function1[/* stream */ EventEmitter, Unit]): Unit = js.native
   def stream(method: String, params: StringDictionary[js.Any]): EventEmitter = js.native
@@ -67,4 +73,3 @@ trait Twitter extends js.Object {
     callback: js.Function1[/* stream */ EventEmitter, Unit]
   ): Unit = js.native
 }
-

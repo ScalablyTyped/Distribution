@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "triple-beam"
-version := "1.3-dt-20200515Z-419bbe"
+version := "1.3-dt-20200821Z-19910e"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

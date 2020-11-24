@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/composer/v1beta1", "composer_v1beta1.Resource$Projects$Locations$Operations")
 @js.native
 class ResourceProjectsLocationsOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * composer.projects.locations.operations.delete
     * @desc Deletes a long-running operation. This method indicates that the
@@ -47,6 +49,7 @@ class ResourceProjectsLocationsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * composer.projects.locations.operations.get
     * @desc Gets the latest state of a long-running operation.  Clients can use
@@ -80,6 +83,7 @@ class ResourceProjectsLocationsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * composer.projects.locations.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -123,4 +127,3 @@ class ResourceProjectsLocationsOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
 }
-

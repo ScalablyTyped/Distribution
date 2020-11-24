@@ -2,23 +2,31 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VPageBreak extends js.Object {
+  
   val Application: typings.activexExcel.Excel.Application = js.native
+  
   val Creator: XlCreator = js.native
+  
+  def Delete(): Unit = js.native
+  
+  def DragOff(Direction: XlDirection, RegionIndex: Double): Unit = js.native
+  
   @JSName("Excel.VPageBreak_typekey")
   var ExcelDotVPageBreak_typekey: VPageBreak = js.native
+  
   val Extent: XlPageBreakExtent = js.native
-  @JSName("Location")
-  var Location_Original: Range = js.native
-  val Parent: Worksheet = js.native
-  var Type: XlPageBreak = js.native
-  def Delete(): Unit = js.native
-  def DragOff(Direction: XlDirection, RegionIndex: Double): Unit = js.native
+  
   def Location(Address: String): Range = js.native
   def Location(RowIndex: Double): Range = js.native
   def Location(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Location")
+  var Location_Original: Range = js.native
+  
+  val Parent: Worksheet = js.native
+  
+  var Type: XlPageBreak = js.native
 }
-

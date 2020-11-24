@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a single condition in a conditional format.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait TableConditionalEntry
   extends XSheetCondition
      with XSheetConditionalEntry
-
 object TableConditionalEntry {
+  
   @scala.inline
   def apply(
     Formula1: String,
@@ -41,4 +41,3 @@ object TableConditionalEntry {
     __obj.asInstanceOf[TableConditionalEntry]
   }
 }
-

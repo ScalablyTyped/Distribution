@@ -2,7 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Rectangle Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Rectangle extends Shape
-

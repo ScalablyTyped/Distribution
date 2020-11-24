@@ -16,7 +16,7 @@ import typings.phaser.Phaser.Types.Physics.Arcade.SpriteWithStaticBody
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Arcade Physics Factory allows you to easily create Arcade Physics enabled Game Objects.
@@ -24,18 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Factory extends js.Object {
-  /**
-    * A reference to the Scene this Arcade Physics instance belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene.Systems this Arcade Physics instance belongs to.
-    */
-  var sys: Systems = js.native
-  /**
-    * A reference to the Arcade Physics World.
-    */
-  var world: World = js.native
+  
   /**
     * Creates a new Arcade Physics Collider object.
     * @param object1 The first object to check for collision.
@@ -51,10 +40,12 @@ trait Factory extends js.Object {
     processCallback: js.UndefOr[ArcadePhysicsCallback],
     callbackContext: js.UndefOr[js.Any]
   ): Collider = js.native
+  
   /**
     * Destroys this Factory.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Adds an Arcade Physics Body to the given Game Object.
     * @param gameObject A Game Object.
@@ -62,6 +53,7 @@ trait Factory extends js.Object {
     */
   def existing(gameObject: GameObject): GameObjectWithBody = js.native
   def existing(gameObject: GameObject, isStatic: Boolean): GameObjectWithBody = js.native
+  
   /**
     * Creates a Physics Group object.
     * All Game Objects created by this Group will automatically be dynamic Arcade Physics objects.
@@ -80,6 +72,7 @@ trait Factory extends js.Object {
   def group(children: PhysicsGroupConfig): Group = js.native
   def group(children: PhysicsGroupConfig, config: GroupCreateConfig): Group = js.native
   def group(children: PhysicsGroupConfig, config: PhysicsGroupConfig): Group = js.native
+  
   /**
     * Creates a new Arcade Image object with a Dynamic body.
     * @param x The horizontal position of this Game Object in the world.
@@ -93,6 +86,7 @@ trait Factory extends js.Object {
   def image(x: Double, y: Double, texture: Texture): ImageWithDynamicBody = js.native
   def image(x: Double, y: Double, texture: Texture, frame: String): ImageWithDynamicBody = js.native
   def image(x: Double, y: Double, texture: Texture, frame: integer): ImageWithDynamicBody = js.native
+  
   /**
     * Creates a new Arcade Physics Collider Overlap object.
     * @param object1 The first object to check for overlap.
@@ -108,6 +102,12 @@ trait Factory extends js.Object {
     processCallback: js.UndefOr[ArcadePhysicsCallback],
     callbackContext: js.UndefOr[js.Any]
   ): Collider = js.native
+  
+  /**
+    * A reference to the Scene this Arcade Physics instance belongs to.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Creates a new Arcade Sprite object with a Dynamic body.
     * @param x The horizontal position of this Game Object in the world.
@@ -118,6 +118,7 @@ trait Factory extends js.Object {
   def sprite(x: Double, y: Double, key: String): SpriteWithDynamicBody = js.native
   def sprite(x: Double, y: Double, key: String, frame: String): SpriteWithDynamicBody = js.native
   def sprite(x: Double, y: Double, key: String, frame: integer): SpriteWithDynamicBody = js.native
+  
   /**
     * Creates a Static Physics Group object.
     * All Game Objects created by this Group will automatically be static Arcade Physics objects.
@@ -136,6 +137,7 @@ trait Factory extends js.Object {
   def staticGroup(children: GroupCreateConfig): StaticGroup = js.native
   def staticGroup(children: GroupCreateConfig, config: GroupConfig): StaticGroup = js.native
   def staticGroup(children: GroupCreateConfig, config: GroupCreateConfig): StaticGroup = js.native
+  
   /**
     * Creates a new Arcade Image object with a Static body.
     * @param x The horizontal position of this Game Object in the world.
@@ -149,6 +151,7 @@ trait Factory extends js.Object {
   def staticImage(x: Double, y: Double, texture: Texture): ImageWithStaticBody = js.native
   def staticImage(x: Double, y: Double, texture: Texture, frame: String): ImageWithStaticBody = js.native
   def staticImage(x: Double, y: Double, texture: Texture, frame: integer): ImageWithStaticBody = js.native
+  
   /**
     * Creates a new Arcade Sprite object with a Static body.
     * @param x The horizontal position of this Game Object in the world.
@@ -162,5 +165,14 @@ trait Factory extends js.Object {
   def staticSprite(x: Double, y: Double, texture: Texture): SpriteWithStaticBody = js.native
   def staticSprite(x: Double, y: Double, texture: Texture, frame: String): SpriteWithStaticBody = js.native
   def staticSprite(x: Double, y: Double, texture: Texture, frame: integer): SpriteWithStaticBody = js.native
+  
+  /**
+    * A reference to the Scene.Systems this Arcade Physics instance belongs to.
+    */
+  var sys: Systems = js.native
+  
+  /**
+    * A reference to the Arcade Physics World.
+    */
+  var world: World = js.native
 }
-

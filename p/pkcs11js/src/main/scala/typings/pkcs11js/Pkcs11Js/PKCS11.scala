@@ -4,26 +4,25 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PKCS11 extends js.Object {
-  /**
-    * Library path
-    */
-  var libPath: String = js.native
+  
   /**
     * Closes all sessions with a token
     *
     * @param {Handle} slot The token's slot
     */
   def C_CloseAllSessions(slot: Handle): Unit = js.native
+  
   /**
     * Closes a session between an application and a token
     *
     * @param {Handle} session The session's handle
     */
   def C_CloseSession(session: Handle): Unit = js.native
+  
   /**
     * Copies an object, creating a new object for the copy
     *
@@ -33,6 +32,7 @@ trait PKCS11 extends js.Object {
     * @returns {Handle} Receives handle of copy
     */
   def C_CopyObject(session: Handle, `object`: Handle, template: Template): Handle = js.native
+  
   //#endregion
   //#region Object management
   /**
@@ -43,6 +43,7 @@ trait PKCS11 extends js.Object {
     * @returns {Handle} Gets new object's handle
     */
   def C_CreateObject(session: Handle, template: Template): Handle = js.native
+  
   /**
     * Decrypts encrypted data in a single part
     *
@@ -66,6 +67,7 @@ trait PKCS11 extends js.Object {
     outData: Buffer,
     cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * Finishes a multiple-part decryption operation
     *
@@ -74,6 +76,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Coming data
     */
   def C_DecryptFinal(session: Handle, outData: Buffer): Buffer = js.native
+  
   /**
     * Initializes a decryption operation
     *
@@ -82,6 +85,7 @@ trait PKCS11 extends js.Object {
     * @param {Handle} key Handle of decryption key
     */
   def C_DecryptInit(session: Handle, mechanism: Mechanism, key: Handle): Unit = js.native
+  
   /**
     * continues a multiple-part decryption operation
     *
@@ -91,6 +95,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Sliced coming data
     */
   def C_DecryptUpdate(session: Handle, inData: Buffer, outData: Buffer): Buffer = js.native
+  
   /**
     * Derives a key from a base key, creating a new key object
     *
@@ -117,6 +122,7 @@ trait PKCS11 extends js.Object {
     template: Template,
     cb: js.Function2[/* error */ Error, /* hKey */ Handle, Unit]
   ): Unit = js.native
+  
   /**
     * Destroys an object
     *
@@ -124,6 +130,7 @@ trait PKCS11 extends js.Object {
     * @param {Handle} object The object's handle
     */
   def C_DestroyObject(session: Handle, `object`: Handle): Unit = js.native
+  
   /**
     * Digests data in a single part
     *
@@ -147,6 +154,7 @@ trait PKCS11 extends js.Object {
     outData: Buffer,
     cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * Finishes a multiple-part message-digesting operation
     *
@@ -155,6 +163,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Sliced coming data
     */
   def C_DigestFinal(session: Handle, outData: Buffer): Buffer = js.native
+  
   /* Message digesting */
   /**
     * Initializes a message-digesting operation
@@ -163,6 +172,7 @@ trait PKCS11 extends js.Object {
     * @param {Mechanism} mechanism Digesting mechanism
     */
   def C_DigestInit(session: Handle, mechanism: Mechanism): Unit = js.native
+  
   /**
     * continues a multiple-part message-digesting operation
     * operation, by digesting the value of a secret key as part of
@@ -172,6 +182,7 @@ trait PKCS11 extends js.Object {
     * @param {Buffer} inData Incoming data
     */
   def C_DigestUpdate(session: Handle, inData: Buffer): Unit = js.native
+  
   /**
     * Encrypts single-part data
     *
@@ -195,6 +206,7 @@ trait PKCS11 extends js.Object {
     outData: Buffer,
     cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * Finishes a multiple-part encryption operation
     *
@@ -203,6 +215,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Sliced coming data
     */
   def C_EncryptFinal(session: Handle, outData: Buffer): Buffer = js.native
+  
   //#endregion
   //#region Encryption and decryption
   /**
@@ -213,6 +226,7 @@ trait PKCS11 extends js.Object {
     * @param {Handle} key Handle of encryption key
     */
   def C_EncryptInit(session: Handle, mechanism: Mechanism, key: Handle): Unit = js.native
+  
   /**
     * Continues a multiple-part encryption operation
     *
@@ -222,10 +236,12 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Sliced coming data
     */
   def C_EncryptUpdate(session: Handle, inData: Buffer, outData: Buffer): Buffer = js.native
+  
   /**
     * Indicates that an application is done with the Cryptoki library
     */
   def C_Finalize(): Unit = js.native
+  
   /**
     * Continues a search for token and session
     * objects that match a template, obtaining additional object
@@ -246,12 +262,14 @@ trait PKCS11 extends js.Object {
     * @returns {Handle} gets list of Object handles
     */
   def C_FindObjects(session: Handle, maxObjectCount: Double): js.Array[Handle] = js.native
+  
   /**
     * Finishes a search for token and session objects
     *
     * @param {Handle} session The session's handle
     */
   def C_FindObjectsFinal(session: Handle): Unit = js.native
+  
   /**
     * Initializes a search for token and session objects that match a template
     *
@@ -259,6 +277,7 @@ trait PKCS11 extends js.Object {
     * @param {Template} template Attribute values to match
     */
   def C_FindObjectsInit(session: Handle, template: Template): Unit = js.native
+  
   // C_VerifyRecoverInit();
   // C_VerifyRecover();
   //#endregion
@@ -286,6 +305,7 @@ trait PKCS11 extends js.Object {
     template: Template,
     cb: js.Function2[/* error */ Error, /* key */ Handle, Unit]
   ): Unit = js.native
+  
   /**
     * Generates a public-key/private-key pair,
     * creating new key objects
@@ -314,6 +334,7 @@ trait PKCS11 extends js.Object {
     privateTmpl: Template,
     cb: js.Function2[/* error */ Error, /* keys */ KeyPair, Unit]
   ): Unit = js.native
+  
   /**
     * Generates random data
     *
@@ -322,6 +343,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Receives the random data
     */
   def C_GenerateRandom(session: Handle, buf: Buffer): Buffer = js.native
+  
   /**
     * Obtains the value of one or more object attributes
     *
@@ -331,12 +353,14 @@ trait PKCS11 extends js.Object {
     * @returns {Template} Receives attributes with values
     */
   def C_GetAttributeValue(session: Handle, `object`: Handle, template: Template): Template = js.native
+  
   /**
     * Returns general information about Cryptoki
     *
     * @returns {ModuleInfo}
     */
   def C_GetInfo(): ModuleInfo = js.native
+  
   /**
     * Obtains information about a particular mechanism possibly supported by a token
     *
@@ -345,6 +369,7 @@ trait PKCS11 extends js.Object {
     * @returns {MechanismInfo} Receives mechanism info
     */
   def C_GetMechanismInfo(slot: Handle, mech: Double): MechanismInfo = js.native
+  
   /**
     * Obtains a list of mechanism types supported by a token
     *
@@ -352,6 +377,7 @@ trait PKCS11 extends js.Object {
     * @returns {number[]} Gets mech. array
     */
   def C_GetMechanismList(slot: Handle): js.Array[Double] = js.native
+  
   /**
     * Gets the size of an object in bytes
     *
@@ -360,6 +386,7 @@ trait PKCS11 extends js.Object {
     * @returns {number} Receives size of object
     */
   def C_GetObjectSize(session: Handle, `object`: Handle): Double = js.native
+  
   /**
     * Obtains information about the session
     *
@@ -367,6 +394,7 @@ trait PKCS11 extends js.Object {
     * @returns {SessionInfo} Receives session info
     */
   def C_GetSessionInfo(session: Handle): SessionInfo = js.native
+  
   /**
     * Obtains information about a particular slot in the system
     *
@@ -374,6 +402,7 @@ trait PKCS11 extends js.Object {
     * @returns {SlotInfo} Receives the slot information
     */
   def C_GetSlotInfo(slot: Handle): SlotInfo = js.native
+  
   //#region Slot and token management
   /**
     * obtains a list of slots in the system
@@ -383,6 +412,7 @@ trait PKCS11 extends js.Object {
     */
   def C_GetSlotList(): js.Array[Handle] = js.native
   def C_GetSlotList(tokenPresent: Boolean): js.Array[Handle] = js.native
+  
   /**
     * Obtains information about a particular token in the system
     *
@@ -390,6 +420,7 @@ trait PKCS11 extends js.Object {
     * @returns {TokenInfo} Receives the token information
     */
   def C_GetTokenInfo(slot: Handle): TokenInfo = js.native
+  
   /**
     * Initializes the normal user's PIN
     *
@@ -398,6 +429,7 @@ trait PKCS11 extends js.Object {
     */
   def C_InitPIN(session: Handle): Unit = js.native
   def C_InitPIN(session: Handle, pin: String): Unit = js.native
+  
   /**
     * Initializes a token
     *
@@ -409,6 +441,7 @@ trait PKCS11 extends js.Object {
   def C_InitToken(slot: Handle, pin: js.UndefOr[scala.Nothing], label: String): String = js.native
   def C_InitToken(slot: Handle, pin: String): String = js.native
   def C_InitToken(slot: Handle, pin: String, label: String): String = js.native
+  
   /**
     * Initializes the Cryptoki library
     * @param options Initialization options
@@ -419,6 +452,7 @@ trait PKCS11 extends js.Object {
     */
   def C_Initialize(): Unit = js.native
   def C_Initialize(options: InitializationOptions): Unit = js.native
+  
   /**
     * Logs a user into a token
     *
@@ -428,12 +462,14 @@ trait PKCS11 extends js.Object {
     */
   def C_Login(session: Handle, userType: Double): Unit = js.native
   def C_Login(session: Handle, userType: Double, pin: String): Unit = js.native
+  
   /**
     * Logs a user out from a token
     *
     * @param {Handle} session The session's handle
     */
   def C_Logout(session: Handle): Unit = js.native
+  
   //#endregion
   //#region Session management
   /**
@@ -444,6 +480,7 @@ trait PKCS11 extends js.Object {
     * @returns {Handle} Gets session handle
     */
   def C_OpenSession(slot: Handle, flags: Double): Handle = js.native
+  
   /**
     * Mixes additional seed material into the token's random number generator
     *
@@ -452,6 +489,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Seeded data
     */
   def C_SeedRandom(session: Handle, buf: Buffer): Buffer = js.native
+  
   /**
     * Modifies the value of one or more object attributes
     *
@@ -460,6 +498,7 @@ trait PKCS11 extends js.Object {
     * @param {Template} template Specifies attrs and values
     */
   def C_SetAttributeValue(session: Handle, `object`: Handle, template: Template): Unit = js.native
+  
   /**
     * Modifies the PIN of the user who is logged in
     *
@@ -468,6 +507,7 @@ trait PKCS11 extends js.Object {
     * @param {string} newPin The new PIN
     */
   def C_SetPIN(session: Handle, oldPin: String, newPin: String): Unit = js.native
+  
   /**
     * Signs (encrypts with private key) data in a single
     * part, where the signature is (will be) an appendix to the
@@ -495,6 +535,7 @@ trait PKCS11 extends js.Object {
     outData: Buffer,
     cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * Finishes a multiple-part signature operation,
     * returning the signature
@@ -504,6 +545,7 @@ trait PKCS11 extends js.Object {
     * @returns {Buffer} Sliced coming data
     */
   def C_SignFinal(session: Handle, outData: Buffer): Buffer = js.native
+  
   // C_DigestKey();
   //#endregion
   //#region Signing and MACing
@@ -518,6 +560,7 @@ trait PKCS11 extends js.Object {
     * @param {Handle} key Handle of signature key
     */
   def C_SignInit(session: Handle, mechanism: Mechanism, key: Handle): Unit = js.native
+  
   /**
     * continues a multiple-part signature operation,
     * where the signature is (will be) an appendix to the data,
@@ -527,6 +570,7 @@ trait PKCS11 extends js.Object {
     * @param {Buffer} inData Incoming data
     */
   def C_SignUpdate(session: Handle, inData: Buffer): Unit = js.native
+  
   /**
     * Unwraps (decrypts) a wrapped key, creating a new key object
     *
@@ -562,6 +606,7 @@ trait PKCS11 extends js.Object {
     template: Template,
     cb: js.Function2[/* error */ Error, /* key */ Handle, Unit]
   ): Unit = js.native
+  
   /**
     * Verifies a signature in a single-part operation,
     * where the signature is an appendix to the data, and plaintext
@@ -589,6 +634,7 @@ trait PKCS11 extends js.Object {
     signature: Buffer,
     cb: js.Function2[/* error */ Error, /* verify */ Boolean, Unit]
   ): Unit = js.native
+  
   /**
     * Finishes a multiple-part verification
     * operation, checking the signature
@@ -598,6 +644,7 @@ trait PKCS11 extends js.Object {
     * @returns {boolean}
     */
   def C_VerifyFinal(session: Handle, signature: Buffer): Boolean = js.native
+  
   // C_SignRecoverInit();
   // C_SignRecover();
   //#endregion
@@ -612,6 +659,7 @@ trait PKCS11 extends js.Object {
     * @param {Handle} key Verification key
     */
   def C_VerifyInit(session: Handle, mechanism: Mechanism, key: Handle): Unit = js.native
+  
   /**
     * Continues a multiple-part verification
     * operation, where the signature is an appendix to the data,
@@ -621,6 +669,7 @@ trait PKCS11 extends js.Object {
     * @param {Buffer} inData Incoming data
     */
   def C_VerifyUpdate(session: Handle, inData: Buffer): Unit = js.native
+  
   /**
     * Wraps (i.e., encrypts) a key
     *
@@ -650,11 +699,18 @@ trait PKCS11 extends js.Object {
     wrappedKey: Buffer,
     cb: js.Function2[/* error */ Error, /* wrappedKey */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * Closes dynamic library
     *
     */
   def close(): Unit = js.native
+  
+  /**
+    * Library path
+    */
+  var libPath: String = js.native
+  
   /**
     * Loads dynamic library with PKCS#11 interface
     *
@@ -662,4 +718,3 @@ trait PKCS11 extends js.Object {
     */
   def load(path: String): Unit = js.native
 }
-

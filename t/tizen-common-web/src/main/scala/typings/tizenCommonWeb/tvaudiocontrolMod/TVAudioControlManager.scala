@@ -22,10 +22,11 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.UP
 import typings.tizenCommonWeb.tizenCommonWebStrings.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TVAudioControlManager extends js.Object {
+  
   /**
     * Gets the current audio output mode.
     *
@@ -39,6 +40,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def getOutputMode(): AudioOutputMode | PCM | DOLBY | DTS | AAC | DOLBY_DIGITAL_PLUS = js.native
+  
   /**
     * Gets the current volume level.
     *
@@ -52,6 +54,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def getVolume(): Double = js.native
+  
   /**
     * Gets the mute state.
     *
@@ -65,6 +68,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def isMute(): Boolean = js.native
+  
   /**
     * Plays the sound of a specific beep.
     *
@@ -108,6 +112,7 @@ trait TVAudioControlManager extends js.Object {
   def playSound_UP(`type`: UP): Unit = js.native
   @JSName("playSound")
   def playSound_WARNING(`type`: WARNING): Unit = js.native
+  
   /**
     * Turns on or off the silent mode
     *
@@ -125,6 +130,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def setMute(mute: Boolean): Unit = js.native
+  
   /**
     * Changes the volume level.
     *
@@ -140,6 +146,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def setVolume(volume: Double): Unit = js.native
+  
   /**
     * Registers a volume change callback for getting notified when TV volume has been changed.
     * Note that this method overwrites the previously registered listener.
@@ -153,6 +160,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def setVolumeChangeListener(callback: VolumeChangeCallback): Unit = js.native
+  
   /**
     * Decreases the volume by 1 level.
     *
@@ -168,6 +176,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def setVolumeDown(): Unit = js.native
+  
   /**
     * Increases the volume by 1 level.
     * If it is called when the volume level is 100, it will be ignored
@@ -182,6 +191,7 @@ trait TVAudioControlManager extends js.Object {
     *
     */
   def setVolumeUp(): Unit = js.native
+  
   /**
     * Unregisters the volume change callback for detecting the volume changes.
     * Calling this function has no effect if listener is not set.
@@ -195,4 +205,3 @@ trait TVAudioControlManager extends js.Object {
     */
   def unsetVolumeChangeListener(): Unit = js.native
 }
-

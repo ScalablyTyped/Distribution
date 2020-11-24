@@ -10,9 +10,9 @@ Declarative JS tests with lazy evaluation using jest.
 | ------------------ | :-------------: |
 | Full name          | jest-plugin-set |
 | Keywords           | declarative, jest, jest-plugin, let, plugin, set, tdd, test |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 79670 |
+| # downloads        | 82452 |
 | # stars            | 0 |
 
 ## Links

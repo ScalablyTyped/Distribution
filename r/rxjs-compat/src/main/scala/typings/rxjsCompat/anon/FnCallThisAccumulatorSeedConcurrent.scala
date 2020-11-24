@@ -2,10 +2,11 @@ package typings.rxjsCompat.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisAccumulatorSeedConcurrent extends js.Object {
+  
   def apply[T, R](
     accumulator: js.Function2[
       /* acc */ R, 
@@ -24,4 +25,3 @@ trait FnCallThisAccumulatorSeedConcurrent extends js.Object {
     concurrent: Double
   ): js.Any = js.native
 }
-

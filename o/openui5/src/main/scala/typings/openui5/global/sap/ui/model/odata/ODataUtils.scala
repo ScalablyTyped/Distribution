@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.model.odata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.ODataUtils")
 @js.native
 object ODataUtils extends js.Object {
+  
   /**
     * Compares the given OData values based on their type. All date and time types can also becompared
     * with a number. This number is then interpreted as the number of milliseconds thatthe corresponding
@@ -23,6 +24,7 @@ object ODataUtils extends js.Object {
     */
   def compare(vValue1: js.Any, vValue2: js.Any): Double = js.native
   def compare(vValue1: js.Any, vValue2: js.Any, bAsDecimal: String): Double = js.native
+  
   /**
     * Formats a JavaScript value according to the given<a
     * href="http://www.odata.org/documentation/odata-version-2-0/overview#AbstractTypeSystem">EDM
@@ -32,6 +34,7 @@ object ODataUtils extends js.Object {
     * @returns the formatted value
     */
   def formatValue(vValue: js.Any, sType: String): String = js.native
+  
   /**
     * Returns a comparator function optimized for the given EDM type.
     * @since 1.29.1
@@ -42,6 +45,7 @@ object ODataUtils extends js.Object {
     * <code>null</code> or <code>undefined</code>)
     */
   def getComparator(sEdmType: String): js.Any = js.native
+  
   def setOrigin(sServiceURL: String, vParameters: String): String = js.native
   /**
     * Adds an origin to the given service URL.If an origin is already present, it will only be replaced if
@@ -62,4 +66,3 @@ object ODataUtils extends js.Object {
     */
   def setOrigin(sServiceURL: String, vParameters: js.Any): String = js.native
 }
-

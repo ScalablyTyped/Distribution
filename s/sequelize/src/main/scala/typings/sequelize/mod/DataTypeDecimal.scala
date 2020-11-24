@@ -3,10 +3,11 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Precision
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataTypeDecimal extends DataTypeAbstractNumber[DataTypeDecimal] {
+  
   /**
     * Precision and scale for the decimal number
     */
@@ -15,4 +16,3 @@ trait DataTypeDecimal extends DataTypeAbstractNumber[DataTypeDecimal] {
   def apply(precision: Double): DataTypeDecimal = js.native
   def apply(precision: Double, scale: Double): DataTypeDecimal = js.native
 }
-

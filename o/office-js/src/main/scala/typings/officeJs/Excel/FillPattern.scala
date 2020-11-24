@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FillPattern extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.FillPattern")
 @js.native
 object FillPattern extends js.Object {
+  
   @js.native
   sealed trait checker extends FillPattern
   
@@ -75,6 +75,4 @@ object FillPattern extends js.Object {
   
   @js.native
   sealed trait vertical extends FillPattern
-  
 }
-

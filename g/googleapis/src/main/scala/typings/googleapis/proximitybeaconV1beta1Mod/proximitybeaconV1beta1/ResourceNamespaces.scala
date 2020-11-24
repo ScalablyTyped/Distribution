@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Namespaces")
 @js.native
 class ResourceNamespaces protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * proximitybeacon.namespaces.list
     * @desc Lists all attachment namespaces owned by your Google Developers
@@ -47,6 +49,7 @@ class ResourceNamespaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListNamespacesResponse]
   ): Unit = js.native
+  
   /**
     * proximitybeacon.namespaces.update
     * @desc Updates the information about the specified namespace. Only the
@@ -79,4 +82,3 @@ class ResourceNamespaces protected () extends js.Object {
     callback: BodyResponseCallback[SchemaNamespace]
   ): Unit = js.native
 }
-

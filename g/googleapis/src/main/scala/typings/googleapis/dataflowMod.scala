@@ -11,32 +11,34 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow", JSImport.Namespace)
 @js.native
 object dataflowMod extends js.Object {
+  
   def dataflow(options: Options): Dataflow = js.native
   @JSName("dataflow")
   def dataflow_v1b3(version: v1b3): Dataflow = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1b3 protected () extends Dataflow {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1b3
       extends TopLevel[
               Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataflow]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -64,8 +66,5 @@ object dataflowMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

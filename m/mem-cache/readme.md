@@ -12,7 +12,7 @@ simple in memory key/value cache with autoclean by timeout
 | Keywords           | cache |
 | # releases         | 0 |
 | # dependents       | 32 |
-| # downloads        | 46868 |
+| # downloads        | 38073 |
 | # stars            | 0 |
 
 ## Links

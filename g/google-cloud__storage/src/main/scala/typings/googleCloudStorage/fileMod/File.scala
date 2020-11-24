@@ -13,7 +13,7 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A File object is created from your {@link Bucket} object using
@@ -50,6 +50,7 @@ class File protected () extends ServiceObject[File] {
     */
   def this(bucket: Bucket, name: String) = this()
   def this(bucket: Bucket, name: String, options: FileOptions) = this()
+  
   /**
     * Cloud Storage uses access control lists (ACLs) to manage object and
     * bucket access. ACLs are the mechanism you use to share objects with other
@@ -94,19 +95,9 @@ class File protected () extends ServiceObject[File] {
     * });
     */
   var acl: Acl = js.native
+  
   var bucket: Bucket = js.native
-  var encryptionKey: js.Any = js.native
-  var encryptionKeyBase64: js.Any = js.native
-  var encryptionKeyHash: js.Any = js.native
-  var encryptionKeyInterceptor: js.Any = js.native
-  var generation: js.UndefOr[Double] = js.native
-  var kmsKeyName: js.UndefOr[String] = js.native
-  var name: String = js.native
-  @JSName("parent")
-  var parent_File: Bucket = js.native
-  var signer: js.UndefOr[URLSigner] = js.native
-  var storage: Storage = js.native
-  var userProject: js.UndefOr[String] = js.native
+  
   def copy(destination: String): js.Promise[CopyResponse] = js.native
   def copy(destination: String, callback: CopyCallback): Unit = js.native
   def copy(destination: String, options: CopyOptions): js.Promise[CopyResponse] = js.native
@@ -119,6 +110,7 @@ class File protected () extends ServiceObject[File] {
   def copy(destination: File, callback: CopyCallback): Unit = js.native
   def copy(destination: File, options: CopyOptions): js.Promise[CopyResponse] = js.native
   def copy(destination: File, options: CopyOptions, callback: CopyCallback): Unit = js.native
+  
   /**
     * @typedef {object} CreateReadStreamOptions Configuration options for File#createReadStream.
     * @property {string} [userProject] The ID of the project which will be
@@ -215,10 +207,12 @@ class File protected () extends ServiceObject[File] {
     */
   def createReadStream(): Readable = js.native
   def createReadStream(options: CreateReadStreamOptions): Readable = js.native
+  
   def createResumableUpload(): js.Promise[CreateResumableUploadResponse] = js.native
   def createResumableUpload(callback: CreateResumableUploadCallback): Unit = js.native
   def createResumableUpload(options: CreateResumableUploadOptions): js.Promise[CreateResumableUploadResponse] = js.native
   def createResumableUpload(options: CreateResumableUploadOptions, callback: CreateResumableUploadCallback): Unit = js.native
+  
   /**
     * @typedef {object} CreateWriteStreamOptions Configuration options for File#createWriteStream().
     * @property {string} [configPath] **This only applies to resumable
@@ -380,6 +374,7 @@ class File protected () extends ServiceObject[File] {
     */
   def createWriteStream(): Writable = js.native
   def createWriteStream(options: CreateWriteStreamOptions): Writable = js.native
+  
   /**
     * Delete failed resumable upload file cache.
     *
@@ -413,31 +408,53 @@ class File protected () extends ServiceObject[File] {
     *
     */
   def deleteResumableCache(): Unit = js.native
+  
   def download(): js.Promise[DownloadResponse] = js.native
   def download(callback: DownloadCallback): Unit = js.native
   def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native
   def download(options: DownloadOptions, callback: DownloadCallback): Unit = js.native
+  
+  var encryptionKey: js.Any = js.native
+  
+  var encryptionKeyBase64: js.Any = js.native
+  
+  var encryptionKeyHash: js.Any = js.native
+  
+  var encryptionKeyInterceptor: js.Any = js.native
+  
   def generateSignedPostPolicyV2(callback: GenerateSignedPostPolicyV2Callback): Unit = js.native
   def generateSignedPostPolicyV2(options: GenerateSignedPostPolicyV2Options): js.Promise[GenerateSignedPostPolicyV2Response] = js.native
   def generateSignedPostPolicyV2(options: GenerateSignedPostPolicyV2Options, callback: GenerateSignedPostPolicyV2Callback): Unit = js.native
+  
   def generateSignedPostPolicyV4(callback: GenerateSignedPostPolicyV4Callback): Unit = js.native
   def generateSignedPostPolicyV4(options: GenerateSignedPostPolicyV4Options): js.Promise[GenerateSignedPostPolicyV4Response] = js.native
   def generateSignedPostPolicyV4(options: GenerateSignedPostPolicyV4Options, callback: GenerateSignedPostPolicyV4Callback): Unit = js.native
+  
+  var generation: js.UndefOr[Double] = js.native
+  
   def getExpirationDate(): js.Promise[GetExpirationDateResponse] = js.native
   def getExpirationDate(callback: GetExpirationDateCallback): Unit = js.native
+  
   def getSignedPolicy(callback: GetSignedPolicyCallback): Unit = js.native
   def getSignedPolicy(options: GetSignedPolicyOptions): js.Promise[GetSignedPolicyResponse] = js.native
   def getSignedPolicy(options: GetSignedPolicyOptions, callback: GetSignedPolicyCallback): Unit = js.native
+  
   def getSignedUrl(cfg: GetSignedUrlConfig): js.Promise[GetSignedUrlResponse] = js.native
   def getSignedUrl(cfg: GetSignedUrlConfig, callback: GetSignedUrlCallback): Unit = js.native
+  
   def isPublic(): js.Promise[IsPublicResponse] = js.native
   def isPublic(callback: IsPublicCallback): Unit = js.native
+  
+  var kmsKeyName: js.UndefOr[String] = js.native
+  
   def makePrivate(): js.Promise[MakeFilePrivateResponse] = js.native
   def makePrivate(callback: MakeFilePrivateCallback): Unit = js.native
   def makePrivate(options: MakeFilePrivateOptions): js.Promise[MakeFilePrivateResponse] = js.native
   def makePrivate(options: MakeFilePrivateOptions, callback: MakeFilePrivateCallback): Unit = js.native
+  
   def makePublic(): js.Promise[MakeFilePublicResponse] = js.native
   def makePublic(callback: MakeFilePublicCallback): Unit = js.native
+  
   def move(destination: String): js.Promise[MoveResponse] = js.native
   def move(destination: String, callback: MoveCallback): Unit = js.native
   def move(destination: String, options: MoveOptions): js.Promise[MoveResponse] = js.native
@@ -450,14 +467,48 @@ class File protected () extends ServiceObject[File] {
   def move(destination: File, callback: MoveCallback): Unit = js.native
   def move(destination: File, options: MoveOptions): js.Promise[MoveResponse] = js.native
   def move(destination: File, options: MoveOptions, callback: MoveCallback): Unit = js.native
+  
+  var name: String = js.native
+  
+  @JSName("parent")
+  var parent_File: Bucket = js.native
+  
+  /**
+    * The public URL of this File
+    * Use {@link File#makePublic} to enable anonymous access via the returned URL.
+    *
+    * @returns {string}
+    *
+    * @example
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * const bucket = storage.bucket('albums');
+    * const file = bucket.file('my-file');
+    *
+    * // publicUrl will be "https://storage.googleapis.com/albums/my-file"
+    * const publicUrl = file.publicUrl();
+    */
+  def publicUrl(): String = js.native
+  
+  def rename(destinationFile: String): js.Promise[RenameResponse] = js.native
+  def rename(destinationFile: String, callback: RenameCallback): Unit = js.native
+  def rename(destinationFile: String, options: RenameOptions): js.Promise[RenameResponse] = js.native
+  def rename(destinationFile: String, options: RenameOptions, callback: RenameCallback): Unit = js.native
+  def rename(destinationFile: File): js.Promise[RenameResponse] = js.native
+  def rename(destinationFile: File, callback: RenameCallback): Unit = js.native
+  def rename(destinationFile: File, options: RenameOptions): js.Promise[RenameResponse] = js.native
+  def rename(destinationFile: File, options: RenameOptions, callback: RenameCallback): Unit = js.native
+  
   def rotateEncryptionKey(): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(callback: RotateEncryptionKeyCallback): Unit = js.native
   def rotateEncryptionKey(options: RotateEncryptionKeyOptions): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(options: RotateEncryptionKeyOptions, callback: RotateEncryptionKeyCallback): Unit = js.native
+  
   def save(data: js.Any): js.Promise[Unit] = js.native
   def save(data: js.Any, callback: SaveCallback): Unit = js.native
   def save(data: js.Any, options: SaveOptions): js.Promise[Unit] = js.native
   def save(data: js.Any, options: SaveOptions, callback: SaveCallback): Unit = js.native
+  
   /**
     * The Storage API allows you to use a custom key for server-side encryption.
     *
@@ -503,12 +554,14 @@ class File protected () extends ServiceObject[File] {
     */
   def setEncryptionKey(encryptionKey: String): this.type = js.native
   def setEncryptionKey(encryptionKey: Buffer): this.type = js.native
+  
   def setStorageClass(storageClass: String): Unit = js.native
   def setStorageClass(storageClass: String, callback: SetStorageClassCallback): Unit = js.native
   def setStorageClass(storageClass: String, options: SetStorageClassOptions): js.Promise[SetStorageClassResponse] = js.native
   def setStorageClass(storageClass: String, options: SetStorageClassOptions, callback: SetStorageClassCallback): Unit = js.native
   @JSName("setStorageClass")
   def setStorageClass_Promise(storageClass: String): js.Promise[SetStorageClassResponse] = js.native
+  
   /**
     * Set a user project to be billed for all requests made from this File
     * object.
@@ -524,6 +577,9 @@ class File protected () extends ServiceObject[File] {
     * file.setUserProject('grape-spaceship-123');
     */
   def setUserProject(userProject: String): Unit = js.native
+  
+  var signer: js.UndefOr[URLSigner] = js.native
+  
   /**
     * This creates a gcs-resumable-upload upload stream.
     *
@@ -535,6 +591,7 @@ class File protected () extends ServiceObject[File] {
     * @private
     */
   def startResumableUpload_(dup: Duplexify, options: CreateResumableUploadOptions): Unit = js.native
+  
   /**
     * Takes a readable stream and pipes it to a remote file. Unlike
     * `startResumableUpload_`, which uses the resumable upload technique, this
@@ -547,5 +604,8 @@ class File protected () extends ServiceObject[File] {
     */
   def startSimpleUpload_(dup: Duplexify): Unit = js.native
   def startSimpleUpload_(dup: Duplexify, options: CreateWriteStreamOptions): Unit = js.native
+  
+  var storage: Storage = js.native
+  
+  var userProject: js.UndefOr[String] = js.native
 }
-

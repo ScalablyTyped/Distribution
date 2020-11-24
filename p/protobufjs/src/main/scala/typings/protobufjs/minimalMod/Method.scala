@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/minimal", "Method")
 @js.native
@@ -32,11 +32,11 @@ class Method protected ()
     comment: js.UndefOr[String]
   ) = this()
 }
-
 /* static members */
 @JSImport("protobufjs/minimal", "Method")
 @js.native
 object Method extends js.Object {
+  
   /**
     * Constructs a method from a method descriptor.
     * @param name Method name
@@ -46,4 +46,3 @@ object Method extends js.Object {
     */
   def fromJSON(name: String, json: IMethod): typings.protobufjs.mod.Method = js.native
 }
-

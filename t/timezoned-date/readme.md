@@ -12,7 +12,7 @@ Constructors and objects behave exactly like built-in Date; the TZ offset is con
 | Keywords           | date, isomorphic, jsdom, mock, monkeypatch, server-side-rendering, timezone, tz, utc |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 101705 |
+| # downloads        | 301627 |
 | # stars            | 0 |
 
 ## Links

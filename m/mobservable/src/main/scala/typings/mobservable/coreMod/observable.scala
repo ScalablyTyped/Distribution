@@ -7,11 +7,12 @@ import typings.std.PropertyDescriptor
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobservable/lib/core", "observable")
 @js.native
 object observable extends js.Object {
+  
   def apply(target: js.Object, key: String): js.Any = js.native
   def apply(target: js.Object, key: String, baseDescriptor: PropertyDescriptor): js.Any = js.native
   def apply(value: String): IObservableValue[String] = js.native
@@ -26,4 +27,3 @@ object observable extends js.Object {
   def apply[T, S /* <: js.Object */](value: js.Function0[T]): IObservableValue[T] = js.native
   def apply[T, S /* <: js.Object */](value: js.Function0[T], thisArg: S): IObservableValue[T] = js.native
 }
-

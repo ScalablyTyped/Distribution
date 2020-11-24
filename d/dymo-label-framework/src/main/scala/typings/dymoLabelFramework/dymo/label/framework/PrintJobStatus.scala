@@ -2,15 +2,15 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintJobStatus extends js.Object
-
 /** Print Job Status */
 @JSGlobal("dymo.label.framework.PrintJobStatus")
 @js.native
 object PrintJobStatus extends js.Object {
+  
   @js.native
   sealed trait Error extends PrintJobStatus
   
@@ -40,6 +40,4 @@ object PrintJobStatus extends js.Object {
   
   @js.native
   sealed trait Unknown extends PrintJobStatus
-  
 }
-

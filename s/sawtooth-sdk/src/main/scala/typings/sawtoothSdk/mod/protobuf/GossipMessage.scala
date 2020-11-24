@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IGossipMessage
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.GossipMessage")
 @js.native
@@ -20,11 +20,11 @@ class GossipMessage ()
   extends typings.sawtoothSdk.protobufMod.GossipMessage {
   def this(properties: IGossipMessage) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.GossipMessage")
 @js.native
 object GossipMessage extends js.Object {
+  
   /**
     * Creates a new GossipMessage instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object GossipMessage extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
   def create(properties: IGossipMessage): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
+  
   /**
     * Decodes a GossipMessage message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object GossipMessage extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
+  
   /**
     * Decodes a GossipMessage message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object GossipMessage extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
+  
   /**
     * Encodes the specified GossipMessage message. Does not implicitly {@link GossipMessage.verify|verify} messages.
     * @param message GossipMessage message or plain object to encode
@@ -61,6 +64,7 @@ object GossipMessage extends js.Object {
     */
   def encode(message: IGossipMessage): Writer = js.native
   def encode(message: IGossipMessage, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified GossipMessage message, length delimited. Does not implicitly {@link GossipMessage.verify|verify} messages.
     * @param message GossipMessage message or plain object to encode
@@ -69,12 +73,14 @@ object GossipMessage extends js.Object {
     */
   def encodeDelimited(message: IGossipMessage): Writer = js.native
   def encodeDelimited(message: IGossipMessage, writer: Writer): Writer = js.native
+  
   /**
     * Creates a GossipMessage message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns GossipMessage
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.GossipMessage = js.native
+  
   /**
     * Creates a plain object from a GossipMessage message. Also converts values to other types if specified.
     * @param message GossipMessage
@@ -83,21 +89,25 @@ object GossipMessage extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.GossipMessage): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.GossipMessage, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a GossipMessage message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  
   /** ContentType enum. */
   @js.native
   object ContentType extends js.Object {
-    /* 2 */ val BATCH: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.BATCH with Double = js.native
-    /* 1 */ val BLOCK: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.BLOCK with Double = js.native
-    /* 0 */ val CONTENT_TYPE_UNSET: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.CONTENT_TYPE_UNSET with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.GossipMessage.ContentType with Double] = js.native
+    
+    /* 2 */ val BATCH: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.BATCH with Double = js.native
+    
+    /* 1 */ val BLOCK: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.BLOCK with Double = js.native
+    
+    /* 0 */ val CONTENT_TYPE_UNSET: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.CONTENT_TYPE_UNSET with Double = js.native
   }
-  
 }
-

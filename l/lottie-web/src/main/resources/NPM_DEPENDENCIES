@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lottie-web" : "5.7.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lottie-web" : "5.7.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

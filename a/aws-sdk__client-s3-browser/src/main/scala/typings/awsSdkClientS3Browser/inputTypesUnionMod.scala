@@ -5,11 +5,12 @@ import typings.awsSdkClientS3Browser.typesUploadPartInputMod.UploadPartInput
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-s3-browser/types/InputTypesUnion", JSImport.Namespace)
 @js.native
 object inputTypesUnionMod extends js.Object {
+  
   trait _InputTypesUnion extends js.Object
   
   /* Rewritten from type alias, can be one of: 
@@ -94,4 +95,3 @@ object inputTypesUnionMod extends js.Object {
   */
   type InputTypesUnion = _InputTypesUnion | PutObjectInput[Blob] | UploadPartInput[Blob]
 }
-

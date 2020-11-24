@@ -4,11 +4,12 @@ import typings.fridaGum.MessageCallback
 import typings.fridaGum.MessageRecvOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("recv")
 @js.native
 object recv extends js.Object {
+  
   /**
     * Requests callback to be called on the next message received from your Frida-based application.
     *
@@ -23,4 +24,3 @@ object recv extends js.Object {
     */
   def apply(`type`: String, callback: MessageCallback): MessageRecvOperation = js.native
 }
-

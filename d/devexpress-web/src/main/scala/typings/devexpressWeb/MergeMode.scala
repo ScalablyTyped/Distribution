@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MergeMode extends js.Object
-
 /**
   * Lists delimiters that start the new merged range.
   */
 @JSGlobal("MergeMode")
 @js.native
 object MergeMode extends js.Object {
+  
   /**
     * Enables you to join rows, which result from a mail merge involving a table with merged fields, into a whole table.
     */
@@ -30,6 +30,4 @@ object MergeMode extends js.Object {
     */
   @js.native
   sealed trait NewSection extends MergeMode
-  
 }
-

@@ -3,7 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "ContextMenu")
 @js.native
@@ -16,4 +16,3 @@ class ContextMenu protected ()
     */
   def this(options: IOptions) = this()
 }
-

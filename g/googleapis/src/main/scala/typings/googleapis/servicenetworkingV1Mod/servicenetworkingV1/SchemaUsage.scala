@@ -2,13 +2,14 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration controlling usage of a service.
   */
 @js.native
 trait SchemaUsage extends js.Object {
+  
   /**
     * The full resource name of a channel used for sending notifications to the
     * service producer.  Google Service Management currently only supports
@@ -18,6 +19,7 @@ trait SchemaUsage extends js.Object {
     * format documented in https://cloud.google.com/pubsub/docs/overview.
     */
   var producerNotificationChannel: js.UndefOr[String] = js.native
+  
   /**
     * Requirements that must be satisfied before a consumer project can use the
     * service. Each requirement is of the form
@@ -25,47 +27,58 @@ trait SchemaUsage extends js.Object {
     * &#39;serviceusage.googleapis.com/billing-enabled&#39;.
     */
   var requirements: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * A list of usage rules that apply to individual API methods.  **NOTE:**
     * All service configuration rules follow &quot;last one wins&quot; order.
     */
   var rules: js.UndefOr[js.Array[SchemaUsageRule]] = js.native
 }
-
 object SchemaUsage {
+  
   @scala.inline
   def apply(): SchemaUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUsage]
   }
+  
   @scala.inline
   implicit class SchemaUsageOps[Self <: SchemaUsage] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProducerNotificationChannel(value: String): Self = this.set("producerNotificationChannel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProducerNotificationChannel: Self = this.set("producerNotificationChannel", js.undefined)
+    
     @scala.inline
     def setRequirementsVarargs(value: String*): Self = this.set("requirements", js.Array(value :_*))
+    
     @scala.inline
     def setRequirements(value: js.Array[String]): Self = this.set("requirements", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRequirements: Self = this.set("requirements", js.undefined)
+    
     @scala.inline
     def setRulesVarargs(value: SchemaUsageRule*): Self = this.set("rules", js.Array(value :_*))
+    
     @scala.inline
     def setRules(value: js.Array[SchemaUsageRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRules: Self = this.set("rules", js.undefined)
   }
-  
 }
-

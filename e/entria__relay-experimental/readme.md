@@ -3,24 +3,6 @@
 
 Typings are for version 6.0
 
-## Library description:
-Contains unstable, experimental code
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @entria/relay-experimental |
-| Keywords           | graphql, relay |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 2759 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://relay.dev)
-- [Bugs](https://github.com/facebook/relay/issues)
-- [Repository](https://github.com/facebook/relay)
-- [Npm](https://www.npmjs.com/package/%40entria%2Frelay-experimental)
-    
 
 
 ## Note

@@ -10,9 +10,9 @@ Express Routers 🚦 - just another way to create router in express apps.
 | ------------------ | :-------------: |
 | Full name          | express-routers |
 | Keywords           | express, router, express router, express routing, typescript |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 479 |
+| # downloads        | 155 |
 | # stars            | 0 |
 
 ## Links

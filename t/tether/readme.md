@@ -10,9 +10,9 @@ A client-side library to make absolutely positioned elements attach to elements 
 | ------------------ | :-------------: |
 | Full name          | tether |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 264 |
-| # downloads        | 9989242 |
+| # releases         | 8 |
+| # dependents       | 273 |
+| # downloads        | 12271694 |
 | # stars            | 23 |
 
 ## Links

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "favicons-webpack-plugin" : "4.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "favicons-webpack-plugin" : "4.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

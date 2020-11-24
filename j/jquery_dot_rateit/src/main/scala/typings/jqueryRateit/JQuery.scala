@@ -8,10 +8,11 @@ import typings.jqueryRateit.jqueryRateitStrings.reset
 import typings.jqueryRateit.jqueryRateitStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def rateit(): JQuery = js.native
   def rateit(method: String, param: js.Any): js.Any = js.native
   def rateit(options: RateItOptions): JQuery = js.native
@@ -38,4 +39,3 @@ trait JQuery extends js.Object {
   @JSName("rateit")
   def rateit_value(method: value, param: Double): JQuery = js.native
 }
-

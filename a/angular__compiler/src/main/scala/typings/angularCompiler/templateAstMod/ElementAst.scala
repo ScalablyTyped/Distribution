@@ -3,7 +3,7 @@ package typings.angularCompiler.templateAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/template_ast", "ElementAst")
 @js.native
@@ -66,17 +66,28 @@ class ElementAst protected () extends TemplateAst {
     sourceSpan: ParseSourceSpan,
     endSourceSpan: ParseSourceSpan
   ) = this()
+  
   var attrs: js.Array[AttrAst] = js.native
+  
   var children: js.Array[TemplateAst] = js.native
+  
   var directives: js.Array[DirectiveAst] = js.native
+  
   var endSourceSpan: ParseSourceSpan | Null = js.native
+  
   var hasViewContainer: Boolean = js.native
+  
   var inputs: js.Array[BoundElementPropertyAst] = js.native
+  
   var name: String = js.native
+  
   var ngContentIndex: Double | Null = js.native
+  
   var outputs: js.Array[BoundEventAst] = js.native
+  
   var providers: js.Array[ProviderAst] = js.native
+  
   var queryMatches: js.Array[QueryMatch] = js.native
+  
   var references: js.Array[ReferenceAst] = js.native
 }
-

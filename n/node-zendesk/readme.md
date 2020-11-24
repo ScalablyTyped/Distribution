@@ -12,7 +12,7 @@ zendesk API client wrapper
 | Keywords           | zendesk, API, support, supportdesk, buddha, radar, wrapper, help center, zopim, voice, reseller, knowledge base |
 | # releases         | 4 |
 | # dependents       | 14 |
-| # downloads        | 758319 |
+| # downloads        | 853180 |
 | # stars            | 6 |
 
 ## Links

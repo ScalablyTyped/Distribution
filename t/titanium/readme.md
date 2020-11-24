@@ -1,7 +1,7 @@
 
 # Scala.js typings for titanium
 
-Typings are for version 9.0
+Typings are for version 9.2
 
 ## Library description:
 Appcelerator Titanium Command line
@@ -10,9 +10,9 @@ Appcelerator Titanium Command line
 | ------------------ | :-------------: |
 | Full name          | titanium |
 | Keywords           | appcelerator, titanium, mobile, ios, iphone, android, blackberry, html5, mobileweb, mobile web, appc-client |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 6 |
-| # downloads        | 11646 |
+| # downloads        | 8968 |
 | # stars            | 6 |
 
 ## Links

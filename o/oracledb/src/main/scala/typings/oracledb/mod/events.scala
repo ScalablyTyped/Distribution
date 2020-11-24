@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Determines whether Oracle Client events mode should be enabled.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "events")
 @js.native
 object events extends TopLevel[Boolean]
-

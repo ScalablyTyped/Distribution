@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements {@link Backend} provides access to a configuration database composed of one or more storage backends containing settings used by software
@@ -18,8 +18,8 @@ trait MultiStratumBackend
      with XBackend
      with XBackendEntities
      with XInitialization
-
 object MultiStratumBackend {
+  
   @scala.inline
   def apply(
     AdminEntity: String,
@@ -42,4 +42,3 @@ object MultiStratumBackend {
     __obj.asInstanceOf[MultiStratumBackend]
   }
 }
-

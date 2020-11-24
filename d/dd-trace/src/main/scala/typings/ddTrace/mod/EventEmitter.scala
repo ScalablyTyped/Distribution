@@ -2,11 +2,12 @@ package typings.ddTrace.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 @js.native
 trait EventEmitter extends js.Object {
+  
   var addListener: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
@@ -14,6 +15,10 @@ trait EventEmitter extends js.Object {
       _
     ]
   ] = js.native
+  
+  def emit(eventName: String, args: js.Any*): js.Any = js.native
+  def emit(eventName: js.Symbol, args: js.Any*): js.Any = js.native
+  
   var off: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
@@ -21,6 +26,7 @@ trait EventEmitter extends js.Object {
       _
     ]
   ] = js.native
+  
   var on: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
@@ -28,6 +34,7 @@ trait EventEmitter extends js.Object {
       _
     ]
   ] = js.native
+  
   var removeListener: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
@@ -35,7 +42,4 @@ trait EventEmitter extends js.Object {
       _
     ]
   ] = js.native
-  def emit(eventName: String, args: js.Any*): js.Any = js.native
-  def emit(eventName: js.Symbol, args: js.Any*): js.Any = js.native
 }
-

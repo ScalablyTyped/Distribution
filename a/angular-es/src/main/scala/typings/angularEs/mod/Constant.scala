@@ -2,18 +2,18 @@ package typings.angularEs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("angular-es", "Constant")
 @js.native
 object Constant extends js.Object {
+  
   /**
     * Register constant
     *
-    * @param {string} name - constant name
+    * @param name - constant name
     *
-    * @returns {ngESDecorator} - decorated class
+    * @returns decorated class
     */
   def apply(name: String): ngESDecorator = js.native
 }
-

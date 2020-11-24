@@ -5,47 +5,14 @@ import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tab control that displays multiple items.
   **/
 @js.native
 trait Pivot extends js.Object {
-  /**
-    * Gets or sets the left custom header.
-    **/
-  var customLeftHeader: HTMLElement = js.native
-  /**
-    * Gets or sets the right custom header.
-    **/
-  var customRightHeader: HTMLElement = js.native
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets the DOM element that hosts the Pivot control.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets or sets the Binding.List that contains the PivotItem objects that belong to this Pivot.
-    **/
-  var items: List[PivotItem] = js.native
-  /**
-    * Gets or sets a value that specifies whether the Pivot control is locked to the current item.
-    **/
-  var locked: Boolean = js.native
-  /**
-    * Gets or sets the index of the PivotItem control in view.
-    **/
-  var selectedIndex: Double = js.native
-  /**
-    * Gets or sets the PivotItem control in view within the Pivot control.
-    **/
-  var selectedItem: PivotItem = js.native
-  /**
-    * Gets or sets the title displayed above the PivotItem controls.
-    **/
-  var title: String = js.native
+  
   //#endregion Events
   //#region Methods
   /**
@@ -56,6 +23,17 @@ trait Pivot extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets the left custom header.
+    **/
+  var customLeftHeader: HTMLElement = js.native
+  
+  /**
+    * Gets or sets the right custom header.
+    **/
+  var customRightHeader: HTMLElement = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -63,15 +41,35 @@ trait Pivot extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Releases resources held by this Pivot. Call this method when the Pivot is no longer needed. After calling this method, the Pivot becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets the DOM element that hosts the Pivot control.
+    **/
+  var element: HTMLElement = js.native
+  
   /**
     * Forces the control to relayout its content. This function is expected to be called
     * when the pivot element is manually resized.
     **/
   def forceLayout(): Unit = js.native
+  
+  /**
+    * Gets or sets the Binding.List that contains the PivotItem objects that belong to this Pivot.
+    **/
+  var items: List[PivotItem] = js.native
+  
+  /**
+    * Gets or sets a value that specifies whether the Pivot control is locked to the current item.
+    **/
+  var locked: Boolean = js.native
+  
   //#endregion Constructors
   //#region Events
   /**
@@ -79,16 +77,19 @@ trait Pivot extends js.Object {
     * @param eventInfo An object that contains information about the event.
     **/
   def onitemanimationend(eventInfo: Event): Unit = js.native
+  
   /**
     * Raised when a PivotItem control's animation starts.
     * @param eventInfo An object that contains information about the event.
     **/
   def onitemanimationstart(eventInfo: Event): Unit = js.native
+  
   /**
     * Raised when the user navigates to a different PivotItem.
     * @param eventInfo An object that contains information about the event.
     **/
   def onselectionchanged(eventInfo: Event): Unit = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -97,5 +98,19 @@ trait Pivot extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets the index of the PivotItem control in view.
+    **/
+  var selectedIndex: Double = js.native
+  
+  /**
+    * Gets or sets the PivotItem control in view within the Pivot control.
+    **/
+  var selectedItem: PivotItem = js.native
+  
+  /**
+    * Gets or sets the title displayed above the PivotItem controls.
+    **/
+  var title: String = js.native
 }
-

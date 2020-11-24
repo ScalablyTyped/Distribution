@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ASN.1 CertID class for OCSP
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CertID extends ASN1Object {
+  
   /**
     * set CertID ASN.1 object by PEM certificates.
     * @param issuerCert string of PEM issuer certificate
@@ -42,6 +43,7 @@ trait CertID extends ASN1Object {
     */
   def setByCert(issuerCert: String, subjectCert: String): Unit = js.native
   def setByCert(issuerCert: String, subjectCert: String, algName: String): Unit = js.native
+  
   /**
     * set CertID ASN.1 object by values.
     * @param issuerNameHashHex hexadecimal string of hash value of issuer name
@@ -56,4 +58,3 @@ trait CertID extends ASN1Object {
   def setByValue(issuerNameHashHex: String, issuerKeyHashHex: String, serialNumberHex: String): Unit = js.native
   def setByValue(issuerNameHashHex: String, issuerKeyHashHex: String, serialNumberHex: String, algName: String): Unit = js.native
 }
-

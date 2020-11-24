@@ -2,11 +2,12 @@ package typings.meteorRoles.mod.Roles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
 @js.native
 object userIsInRole extends js.Object {
+  
   /**
     * Check if user has specified permissions/roles
     *
@@ -49,4 +50,3 @@ object userIsInRole extends js.Object {
   def apply(user: js.Object, roles: js.Array[String]): Boolean = js.native
   def apply(user: js.Object, roles: js.Array[String], group: String): Boolean = js.native
 }
-

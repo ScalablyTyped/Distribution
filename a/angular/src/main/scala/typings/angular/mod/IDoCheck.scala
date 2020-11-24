@@ -2,7 +2,7 @@ package typings.angular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the $doCheck lifecycle hook
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IDoCheck extends js.Object {
+  
   /**
     * Called on each turn of the digest cycle. Provides an opportunity to detect and act on changes.
     * Any actions that you wish to take in response to the changes that you detect must be invoked from this hook;
@@ -21,27 +22,30 @@ trait IDoCheck extends js.Object {
   @JSName("$doCheck")
   def $doCheck(): Unit = js.native
 }
-
 object IDoCheck {
+  
   @scala.inline
   def apply($doCheck: () => Unit): IDoCheck = {
     val __obj = js.Dynamic.literal($doCheck = js.Any.fromFunction0($doCheck))
     __obj.asInstanceOf[IDoCheck]
   }
+  
   @scala.inline
   implicit class IDoCheckOps[Self <: IDoCheck] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set$doCheck(value: () => Unit): Self = this.set("$doCheck", js.Any.fromFunction0(value))
   }
-  
 }
-

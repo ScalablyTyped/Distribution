@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes every container which is used for data definition. Each container must support access to its elements by the element's name or by the
@@ -33,8 +33,8 @@ trait Container
      with XDataDescriptorFactory
      with XAppend
      with XDrop
-
 object Container {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -63,4 +63,3 @@ object Container {
     __obj.asInstanceOf[Container]
   }
 }
-

@@ -2,11 +2,12 @@ package typings.replaceString.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("replace-string", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Replace all substring matches in a string.
   @param input - String to work on.
@@ -28,4 +29,3 @@ object ^ extends js.Object {
   def apply(input: String, needle: String, replacement: ReplacementFunction): String = js.native
   def apply(input: String, needle: String, replacement: ReplacementFunction, options: Options): String = js.native
 }
-

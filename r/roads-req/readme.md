@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads-req
 
-Typings are for version 0.4.5
+Typings are for version 0.4.6
 
 ## Library description:
 A simple network request library with some extra utility for functionality commonly used by APIs
@@ -10,9 +10,9 @@ A simple network request library with some extra utility for functionality commo
 | ------------------ | :-------------: |
 | Full name          | roads-req |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 847 |
+| # downloads        | 1180 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Format extends js.Object
-
 /**
   * An enum representing the format of the map image.
   * See also
@@ -16,6 +15,7 @@ sealed trait Format extends js.Object
 @JSGlobal("GoogleAppsScript.Maps.Format")
 @js.native
 object Format extends js.Object {
+  
   @js.native
   sealed trait GIF extends Format
   
@@ -33,6 +33,4 @@ object Format extends js.Object {
   
   @js.native
   sealed trait PNG8 extends Format
-  
 }
-

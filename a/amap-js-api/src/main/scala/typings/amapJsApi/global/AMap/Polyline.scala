@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.BezierCurve.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Polyline")
 @js.native
@@ -16,4 +16,3 @@ class Polyline[ExtraData] ()
   def this(options: Options[ExtraData]) = this()
   def this(options: typings.amapJsApi.AMap.Polyline.Options[ExtraData]) = this()
 }
-

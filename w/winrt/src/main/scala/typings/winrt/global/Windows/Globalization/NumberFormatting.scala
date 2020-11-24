@@ -3,11 +3,12 @@ package typings.winrt.global.Windows.Globalization
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Globalization.NumberFormatting")
 @js.native
 object NumberFormatting extends js.Object {
+  
   @js.native
   class CurrencyFormatter protected ()
     extends typings.winrt.Windows.Globalization.NumberFormatting.CurrencyFormatter {
@@ -32,6 +33,4 @@ object NumberFormatting extends js.Object {
     extends typings.winrt.Windows.Globalization.NumberFormatting.PermilleFormatter {
     def this(languages: IIterable[String], geographicRegion: String) = this()
   }
-  
 }
-

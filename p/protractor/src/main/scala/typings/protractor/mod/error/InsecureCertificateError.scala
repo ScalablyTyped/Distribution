@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates a navigation event caused the browser to generate a certificate
@@ -14,4 +14,3 @@ class InsecureCertificateError ()
   extends typings.seleniumWebdriver.mod.error.InsecureCertificateError {
   def this(message: String) = this()
 }
-

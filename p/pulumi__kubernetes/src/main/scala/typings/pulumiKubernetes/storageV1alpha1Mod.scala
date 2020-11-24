@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/storage/v1alpha1", JSImport.Namespace)
 @js.native
 object storageV1alpha1Mod extends js.Object {
+  
   @js.native
   class VolumeAttachment protected ()
     extends typings.pulumiKubernetes.volumeAttachmentMod.VolumeAttachment {
@@ -26,6 +27,27 @@ object storageV1alpha1Mod extends js.Object {
     def this(name: String, args: VolumeAttachmentArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: VolumeAttachmentArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object VolumeAttachment extends js.Object {
+    
+    /**
+      * Get an existing VolumeAttachment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.volumeAttachmentMod.VolumeAttachment = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.volumeAttachmentMod.VolumeAttachment = js.native
+    
+    /**
+      * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachment.VolumeAttachment */ Boolean = js.native
   }
   
   @js.native
@@ -43,30 +65,10 @@ object storageV1alpha1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: VolumeAttachmentListArgs, opts: CustomResourceOptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object VolumeAttachment extends js.Object {
-    /**
-      * Get an existing VolumeAttachment resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.volumeAttachmentMod.VolumeAttachment = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.volumeAttachmentMod.VolumeAttachment = js.native
-    /**
-      * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachment.VolumeAttachment */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object VolumeAttachmentList extends js.Object {
+    
     /**
       * Get an existing VolumeAttachmentList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,12 +79,11 @@ object storageV1alpha1Mod extends js.Object {
       */
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.volumeAttachmentListMod.VolumeAttachmentList = js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.volumeAttachmentListMod.VolumeAttachmentList = js.native
+    
     /**
       * Returns true if the given object is an instance of VolumeAttachmentList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachmentList.VolumeAttachmentList */ Boolean = js.native
   }
-  
 }
-

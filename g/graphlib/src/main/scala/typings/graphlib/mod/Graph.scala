@@ -2,12 +2,13 @@ package typings.graphlib.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("graphlib", "Graph")
 @js.native
 class Graph () extends js.Object {
   def this(options: GraphOptions) = this()
+  
   /**
     * Gets list of direct children of node v.
     * Complexity: O(1).
@@ -17,6 +18,7 @@ class Graph () extends js.Object {
     */
   def children(): js.Array[String] = js.native
   def children(v: String): js.Array[String] = js.native
+  
   /**
     * Gets the label for the specified edge.
     * Complexity: O(1).
@@ -36,6 +38,7 @@ class Graph () extends js.Object {
     */
   def edge(v: String, w: String): js.Any = js.native
   def edge(v: String, w: String, name: String): js.Any = js.native
+  
   /**
     * Gets the number of edges in the graph.
     * Complexity: O(1).
@@ -43,6 +46,7 @@ class Graph () extends js.Object {
     * @returns edges count.
     */
   def edgeCount(): Double = js.native
+  
   /**
     * Gets edges of the graph. In case of compound graph subgraphs are not considered.
     * Complexity: O(|E|).
@@ -50,6 +54,7 @@ class Graph () extends js.Object {
     * @return graph edges list.
     */
   def edges(): js.Array[Edge] = js.native
+  
   /**
     * Creates new graph with nodes filtered via filter. Edges incident to rejected node
     * are also removed. In case of compound graph, if parent is rejected by filter,
@@ -60,12 +65,14 @@ class Graph () extends js.Object {
     * @returns new graph made from current and nodes filtered.
     */
   def filterNodes(filter: js.Function1[/* v */ String, Boolean]): Graph = js.native
+  
   /**
     * Gets the graph label.
     * 
     * @returns currently assigned label for the graph or undefined if no label assigned.
     */
   def graph(): Unit | String = js.native
+  
   /**
     * Detects whether the graph contains specified edge or not. No subgraphs are considered.
     * Complexity: O(1).
@@ -85,6 +92,7 @@ class Graph () extends js.Object {
     */
   def hasEdge(v: String, w: String): Boolean = js.native
   def hasEdge(v: String, w: String, name: String): Boolean = js.native
+  
   /**
     * Detects whether graph has a node with specified name or not.
     
@@ -93,6 +101,7 @@ class Graph () extends js.Object {
     * @returns true if graph has node with specified name, false - otherwise.
     */
   def hasNode(name: String): Boolean = js.native
+  
   /**
     * Return all edges that point to the node v. Optionally filters those edges down to just those
     * coming from node u. Behavior is undefined for undirected graphs - use nodeEdges instead.
@@ -104,24 +113,28 @@ class Graph () extends js.Object {
     */
   def inEdges(v: String): Unit | js.Array[Edge] = js.native
   def inEdges(v: String, w: String): Unit | js.Array[Edge] = js.native
+  
   /**
     * Whether graph was created with 'compound' flag set to true or not.
     * 
     * @returns whether a node of the graph can have subnodes.
     */
   def isCompound(): Boolean = js.native
+  
   /**
     * Whether graph was created with 'directed' flag set to true or not.
     * 
     * @returns whether the graph edges have an orientation.
     */
   def isDirected(): Boolean = js.native
+  
   /**
     * Whether graph was created with 'multigraph' flag set to true or not.
     * 
     * @returns whether the pair of nodes of the graph can have multiple edges.
     */
   def isMultigraph(): Boolean = js.native
+  
   /**
     * Return all nodes that are predecessors or successors of the specified node or undefined if
     * node v is not in the graph.
@@ -131,6 +144,7 @@ class Graph () extends js.Object {
     * @returns node identifiers list or undefined if v is not in the graph.
     */
   def neighbors(v: String): Unit | js.Array[String] = js.native
+  
   /**
     * Gets the label of node with specified name.
     * Complexity: O(|V|).
@@ -138,6 +152,7 @@ class Graph () extends js.Object {
     * @returns label value of the node.
     */
   def node(name: String): js.Any = js.native
+  
   /**
     * Gets the number of nodes in the graph.
     * Complexity: O(1).
@@ -145,6 +160,7 @@ class Graph () extends js.Object {
     * @returns nodes count.
     */
   def nodeCount(): Double = js.native
+  
   /**
     * Returns all edges to or from node v regardless of direction. Optionally filters those edges
     * down to just those between nodes v and w regardless of direction.
@@ -156,6 +172,7 @@ class Graph () extends js.Object {
     */
   def nodeEdges(v: String): Unit | js.Array[Edge] = js.native
   def nodeEdges(v: String, w: String): Unit | js.Array[Edge] = js.native
+  
   /**
     * Gets all nodes of the graph. Note, the in case of compound graph subnodes are
     * not included in list.
@@ -164,6 +181,7 @@ class Graph () extends js.Object {
     * @returns list of graph nodes.
     */
   def nodes(): js.Array[String] = js.native
+  
   /**
     * Return all edges that are pointed at by node v. Optionally filters those edges down to just
     * those point to w. Behavior is undefined for undirected graphs - use nodeEdges instead.
@@ -175,6 +193,7 @@ class Graph () extends js.Object {
     */
   def outEdges(v: String): Unit | js.Array[Edge] = js.native
   def outEdges(v: String, w: String): Unit | js.Array[Edge] = js.native
+  
   /**
     * Gets parent node for node v.
     * Complexity: O(1).
@@ -183,6 +202,7 @@ class Graph () extends js.Object {
     * @returns parent node name or void if v has no parent.
     */
   def parent(v: String): String | Unit = js.native
+  
   /**
     * Return all nodes that are predecessors of the specified node or undefined if node v is not in
     * the graph. Behavior is undefined for undirected graphs - use neighbors instead.
@@ -192,6 +212,7 @@ class Graph () extends js.Object {
     * @returns node identifiers list or undefined if v is not in the graph.
     */
   def predecessors(v: String): Unit | js.Array[String] = js.native
+  
   /**
     * Removes the specified edge from the graph. No subgraphs are considered.
     * Complexity: O(1).
@@ -211,6 +232,7 @@ class Graph () extends js.Object {
     */
   def removeEdge(v: String, w: String): Graph = js.native
   def removeEdge(v: String, w: String, name: String): Graph = js.native
+  
   /**
     * Remove the node with the name from the graph or do nothing if the node is not in
     * the graph. If the node was removed this function also removes any incident
@@ -221,6 +243,7 @@ class Graph () extends js.Object {
     * @returns the graph, allowing this to be chained with other functions.
     */
   def removeNode(name: String): Graph = js.native
+  
   /**
     * Sets the default edge label factory function. This function will be invoked
     * each time when setting an edge with no label specified and returned value 
@@ -240,6 +263,7 @@ class Graph () extends js.Object {
     * @returns the graph, allowing this to be chained with other functions.
     */
   def setDefaultEdgeLabel(label: js.Any): Graph = js.native
+  
   /**
     * Sets the default node label factory function. This function will be invoked
     * each time when setting a node with no label specified and returned value 
@@ -259,6 +283,7 @@ class Graph () extends js.Object {
     * @returns the graph, allowing this to be chained with other functions.
     */
   def setDefaultNodeLabel(label: js.Any): Graph = js.native
+  
   /**
     * Creates or updates the label for the specified edge. If label is supplied it is 
     * set as the value for the edge. If label is not supplied and the edge was created 
@@ -289,13 +314,15 @@ class Graph () extends js.Object {
   def setEdge(v: String, w: String, label: js.UndefOr[scala.Nothing], name: String): Graph = js.native
   def setEdge(v: String, w: String, label: js.Any): Graph = js.native
   def setEdge(v: String, w: String, label: js.Any, name: String): Graph = js.native
+  
   /**
     * Sets the label of the graph.
     * 
     * @argument label - label value.
     * @returns the graph, allowing this to be chained with other functions.
     */
-  def setGraph(label: String): Graph = js.native
+  def setGraph(label: js.Any): Graph = js.native
+  
   /**
     * Creates or updates the value for the node v in the graph. If label is supplied
     * it is set as the value for the node. If label is not supplied and the node was
@@ -308,6 +335,7 @@ class Graph () extends js.Object {
     */
   def setNode(name: String): Graph = js.native
   def setNode(name: String, label: js.Any): Graph = js.native
+  
   /**
     * Invokes setNode method for each node in names list.
     * Complexity: O(|names|).
@@ -318,6 +346,7 @@ class Graph () extends js.Object {
     */
   def setNodes(names: js.Array[String]): Graph = js.native
   def setNodes(names: js.Array[String], label: js.Any): Graph = js.native
+  
   /**
     * Sets node p as a parent for node v if it is defined, or removes the
     * parent for v if p is undefined. Method throws an exception in case of
@@ -330,6 +359,7 @@ class Graph () extends js.Object {
     */
   def setParent(v: String): Graph = js.native
   def setParent(v: String, p: String): Graph = js.native
+  
   /**
     * Establish an edges path over the nodes in nodes list. If some edge is already
     * exists, it will update its label, otherwise it will create an edge between pair
@@ -342,6 +372,7 @@ class Graph () extends js.Object {
     */
   def setPath(nodes: js.Array[String]): Graph = js.native
   def setPath(nodes: js.Array[String], label: js.Any): Graph = js.native
+  
   /**
     * Gets list of nodes without out-edges.
     * Complexity: O(|V|).
@@ -349,6 +380,7 @@ class Graph () extends js.Object {
     * @returns the graph source nodes.
     */
   def sinks(): js.Array[String] = js.native
+  
   /**
     * Gets list of nodes without in-edges.
     * Complexity: O(|V|).
@@ -356,6 +388,7 @@ class Graph () extends js.Object {
     * @returns the graph source nodes.
     */
   def sources(): js.Array[String] = js.native
+  
   /**
     * Return all nodes that are successors of the specified node or undefined if node v is not in
     * the graph. Behavior is undefined for undirected graphs - use neighbors instead.
@@ -366,4 +399,3 @@ class Graph () extends js.Object {
     */
   def successors(v: String): Unit | js.Array[String] = js.native
 }
-

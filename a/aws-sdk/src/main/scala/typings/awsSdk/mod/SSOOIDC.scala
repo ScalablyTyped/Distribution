@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.ssooidcMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "SSOOIDC")
 @js.native
@@ -14,4 +14,3 @@ class SSOOIDC ()
   extends typings.awsSdk.allMod.SSOOIDC {
   def this(options: ClientConfiguration) = this()
 }
-

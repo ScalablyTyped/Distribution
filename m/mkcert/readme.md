@@ -11,8 +11,8 @@ Create Self Signed Development Certificates
 | Full name          | mkcert |
 | Keywords           | signed, certificate, cert |
 | # releases         | 10 |
-| # dependents       | 11 |
-| # downloads        | 81203 |
+| # dependents       | 14 |
+| # downloads        | 232758 |
 | # stars            | 0 |
 
 ## Links

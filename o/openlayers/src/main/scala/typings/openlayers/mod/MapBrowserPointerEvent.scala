@@ -3,11 +3,12 @@ package typings.openlayers.mod
 import typings.openlayers.mod.pointer.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "MapBrowserPointerEvent")
 @js.native
 class MapBrowserPointerEvent () extends MapBrowserEvent {
+  
   // /**
   //  * @param type Event type.
   //  * @param map Map.
@@ -22,4 +23,3 @@ class MapBrowserPointerEvent () extends MapBrowserEvent {
   //           opt_frameState?: olx.FrameState)
   var pointerEvent: PointerEvent = js.native
 }
-

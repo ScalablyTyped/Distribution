@@ -9,10 +9,10 @@ PeerJS client
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | peerjs |
-| Keywords           | - |
+| Keywords           | peerjs, webrtc, p2p, rtc |
 | # releases         | 18 |
-| # dependents       | 44 |
-| # downloads        | 63436 |
+| # dependents       | 62 |
+| # downloads        | 102105 |
 | # stars            | 9 |
 
 ## Links

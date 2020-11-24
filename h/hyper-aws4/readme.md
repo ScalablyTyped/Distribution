@@ -12,7 +12,7 @@ AWS Signature Version 4 Signing Library for Hyper
 | Keywords           | hyper, aws4 |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3870 |
+| # downloads        | 4394 |
 | # stars            | 0 |
 
 ## Links

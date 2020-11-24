@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the categories master list on the mailbox.
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MasterCategories extends js.Object {
+  
   /**
     * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.
     *
@@ -46,31 +47,6 @@ trait MasterCategories extends js.Object {
     *                 type `Office.AsyncResult`.
     */
   def addAsync(categories: js.Array[CategoryDetails]): Unit = js.native
-  /**
-    * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * **Errors**:
-    * 
-    * - `DuplicateCategory`: One of the categories provided is already in the master category list.
-    * 
-    * - `PermissionDenied`: The user does not have permission to perform this action.
-    *
-    * @param categories - The categories to be added to the master list on the mailbox.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
-    *                 type `Office.AsyncResult`. If adding categories fails, the `asyncResult.error` property will contain an error code.
-    */
-  def addAsync(
-    categories: js.Array[CategoryDetails],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
   def addAsync(
     categories: js.Array[CategoryDetails],
     options: js.UndefOr[scala.Nothing],
@@ -82,6 +58,7 @@ trait MasterCategories extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the master list of categories on a mailbox.
     *
@@ -117,6 +94,7 @@ trait MasterCategories extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[CategoryDetails]], Unit]
   ): Unit = js.native
+  
   /**
     * Removes categories from the master list on a mailbox.
     *
@@ -139,26 +117,6 @@ trait MasterCategories extends js.Object {
     *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
     */
   def removeAsync(categories: js.Array[String]): Unit = js.native
-  /**
-    * Removes categories from the master list on a mailbox.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * **Errors**:
-    * 
-    * - `PermissionDenied`: The user does not have permission to perform this action.
-    *
-    * @param categories - The categories to be removed from the master list on the mailbox.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
-    *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
-    */
-  def removeAsync(categories: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeAsync(
     categories: js.Array[String],
     options: js.UndefOr[scala.Nothing],
@@ -171,4 +129,3 @@ trait MasterCategories extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

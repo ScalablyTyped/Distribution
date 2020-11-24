@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-Yet another node torrent scraper based on x-ray. (Support iptorrents, torrentleech, torrent9, Yyggtorrent, ThePriatebay, torrentz2, 1337x, KickassTorrent, Rarbg, TorrentProject, Extratorrent)
+Yet another node torrent scraper based on x-ray. (Support iptorrents, torrentleech, torrent9, Yyggtorrent, ThePiratebay, torrentz2, 1337x, KickassTorrent, Rarbg, TorrentProject, Yts, Limetorrents, Eztv)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | torrent-search-api |
-| Keywords           | torrent, scraper, crawler, node, api, yggtorrent, torrentz2, torrentleech, iptorrents, 1337x, thepiratebay, tpb, kickasstorrents, rarbg, torrentproject |
-| # releases         | 22 |
-| # dependents       | 10 |
-| # downloads        | 10712 |
+| Keywords           | torrent, scraper, crawler, node, api, yggtorrent, torrentz2, torrentleech, iptorrents, 1337x, thepiratebay, tpb, kickasstorrents, rarbg, torrentproject, yts, eztv, limetorrents |
+| # releases         | 17 |
+| # dependents       | 11 |
+| # downloads        | 11337 |
 | # stars            | 2 |
 
 ## Links

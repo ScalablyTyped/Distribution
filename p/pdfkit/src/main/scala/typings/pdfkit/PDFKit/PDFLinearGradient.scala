@@ -3,7 +3,7 @@ package typings.pdfkit.PDFKit
 import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PDFLinearGradient
@@ -16,7 +16,8 @@ trait PDFLinearGradient
       /* y2 */ Double, 
       PDFLinearGradient
     ] {
+  
   def opacityGradient(): PDFLinearGradient = js.native
+  
   def shader(fn: js.Function0[_]): js.Any = js.native
 }
-

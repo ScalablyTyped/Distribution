@@ -3,16 +3,20 @@ package typings.atom.mod
 import typings.atom.atomBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Grammar extends js.Object {
+  
   /** The name of the Grammar. */
   val name: String = js.native
-  /** Undocumented: scope name of the Grammar. */
-  val scopeName: String = js.native
+  
   // Event Subscription
   def onDidUpdate(callback: js.Function0[Unit]): Disposable = js.native
+  
+  /** Undocumented: scope name of the Grammar. */
+  val scopeName: String = js.native
+  
   /**
     *  Tokenizes the line of text.
     *  @param line A string of text to tokenize.
@@ -37,6 +41,7 @@ trait Grammar extends js.Object {
   def tokenizeLine(line: String, ruleStack: Null, firstLine: Boolean): TokenizeLineResult = js.native
   @JSName("tokenizeLine")
   def tokenizeLine_false(line: String, ruleStack: js.Array[GrammarRule], firstLine: `false`): TokenizeLineResult = js.native
+  
   // Tokenizing
   /**
     *  Tokenize all lines in the given text.
@@ -45,4 +50,3 @@ trait Grammar extends js.Object {
     */
   def tokenizeLines(text: String): js.Array[js.Array[GrammarToken]] = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultNotificationOperationsAsync extends js.Object {
+  
   def SendCustomNotification(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
     IncludeSubstituteUsers: Boolean,
@@ -88,4 +89,3 @@ trait IVaultNotificationOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

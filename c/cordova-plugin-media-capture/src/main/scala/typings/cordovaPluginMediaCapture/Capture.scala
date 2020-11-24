@@ -2,17 +2,12 @@ package typings.cordovaPluginMediaCapture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This plugin provides access to the device's audio, image, and video capture capabilities. */
 @js.native
 trait Capture extends js.Object {
-  /** The audio recording formats supported by the device. */
-  var supportedAudioModes: js.Array[ConfigurationData] = js.native
-  /** The recording image sizes and formats supported by the device. */
-  var supportedImageModes: js.Array[ConfigurationData] = js.native
-  /** The recording video resolutions and formats supported by the device. */
-  var supportedVideoModes: js.Array[ConfigurationData] = js.native
+  
   /**
     * Start the audio recorder application and return information about captured audio clip files.
     * @param onSuccess Executes when the capture operation finishes with an array
@@ -30,6 +25,7 @@ trait Capture extends js.Object {
     onError: js.Function1[/* error */ CaptureError, Unit],
     options: AudioOptions
   ): Unit = js.native
+  
   /**
     * Start the camera application and return information about captured image files.
     * @param onSuccess Executes when the capture operation finishes with an array
@@ -47,6 +43,7 @@ trait Capture extends js.Object {
     onError: js.Function1[/* error */ CaptureError, Unit],
     options: ImageOptions
   ): Unit = js.native
+  
   /**
     * Start the video recorder application and return information about captured video clip files.
     * @param onSuccess Executes when the capture operation finishes with an array
@@ -64,5 +61,13 @@ trait Capture extends js.Object {
     onError: js.Function1[/* error */ CaptureError, Unit],
     options: VideoOptions
   ): Unit = js.native
+  
+  /** The audio recording formats supported by the device. */
+  var supportedAudioModes: js.Array[ConfigurationData] = js.native
+  
+  /** The recording image sizes and formats supported by the device. */
+  var supportedImageModes: js.Array[ConfigurationData] = js.native
+  
+  /** The recording video resolutions and formats supported by the device. */
+  var supportedVideoModes: js.Array[ConfigurationData] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.antDesignIconsAngular.typesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.antDesignIconsAngular.antDesignIconsAngularStrings.fill
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.antDesignIconsAngular.antDesignIconsAngularStrings.twotone
 */
 trait ThemeType extends js.Object
-
 object ThemeType {
+  
   @scala.inline
   def fill: typings.antDesignIconsAngular.antDesignIconsAngularStrings.fill = "fill".asInstanceOf[typings.antDesignIconsAngular.antDesignIconsAngularStrings.fill]
+  
   @scala.inline
   def outline: typings.antDesignIconsAngular.antDesignIconsAngularStrings.outline = "outline".asInstanceOf[typings.antDesignIconsAngular.antDesignIconsAngularStrings.outline]
+  
   @scala.inline
   def twotone: typings.antDesignIconsAngular.antDesignIconsAngularStrings.twotone = "twotone".asInstanceOf[typings.antDesignIconsAngular.antDesignIconsAngularStrings.twotone]
 }
-

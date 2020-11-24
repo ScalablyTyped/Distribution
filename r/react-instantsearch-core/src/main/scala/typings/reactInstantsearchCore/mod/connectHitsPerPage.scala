@@ -5,11 +5,11 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-instantsearch-core", "connectHitsPerPage")
 @js.native
 object connectHitsPerPage extends js.Object {
+  
   def apply(Composed: ComponentType[_]): ComponentClass[_, ComponentState] = js.native
 }
-

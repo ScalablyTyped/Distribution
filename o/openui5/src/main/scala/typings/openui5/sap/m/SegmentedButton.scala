@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TextDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SegmentedButton extends Control {
+  
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -15,6 +16,7 @@ trait SegmentedButton extends Control {
     */
   def addAriaDescribedBy(vAriaDescribedBy: js.Any): SegmentedButton = js.native
   def addAriaDescribedBy(vAriaDescribedBy: Control): SegmentedButton = js.native
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -22,12 +24,14 @@ trait SegmentedButton extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): SegmentedButton = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): SegmentedButton = js.native
+  
   /**
     * Adds some button to the aggregation <code>buttons</code>.
     * @param oButton the button to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addButton(oButton: Button): SegmentedButton = js.native
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @since 1.28
@@ -35,6 +39,7 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: SegmentedButtonItem): SegmentedButton = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.m.SegmentedButton</code>.When called, the context of the event handler (its
@@ -50,6 +55,7 @@ trait SegmentedButton extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): SegmentedButton = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SegmentedButton = js.native
+  
   /**
     * Binds aggregation <code>items</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -59,6 +65,7 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindItems(oBindingInfo: js.Any): SegmentedButton = js.native
+  
   /**
     * Binds property <code>selectedKey</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindProperty ManagedObject.bindProperty} for a detailed description of the
@@ -68,6 +75,7 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindSelectedKey(oBindingInfo: js.Any): SegmentedButton = js.native
+  
   /**
     * Adds a Button with a text as title, an URI for an icon, enabled and textDirection.Only one is
     * allowed.
@@ -83,17 +91,20 @@ trait SegmentedButton extends Control {
     */
   def createButton(sText: String, sURI: js.Any, bEnabled: Boolean): Button = js.native
   def createButton(sText: String, sURI: js.Any, bEnabled: Boolean, sTextDirection: TextDirection): Button = js.native
+  
   /**
     * Destroys all the buttons in the aggregation <code>buttons</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyButtons(): SegmentedButton = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @since 1.28
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): SegmentedButton = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.m.SegmentedButton</code>.The passed function and listener object must match the ones used
@@ -103,6 +114,7 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): SegmentedButton = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>button</code> of type <code>sap.m.Button</code>Reference to the button,
@@ -114,16 +126,19 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): SegmentedButton = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
   def getAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets content of aggregation <code>buttons</code>.The buttons of the SegmentedButton control. The
     * items set in this aggregation are used as an interface for the buttons displayed by the control.
@@ -132,6 +147,7 @@ trait SegmentedButton extends Control {
     * createButton method to add buttons.
     */
   def getButtons(): js.Array[Button] = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Disables all the buttons in the SegmentedButton
     * control. When disabled all the buttons look grey and you cannot focus or click on them.Default value
@@ -139,6 +155,7 @@ trait SegmentedButton extends Control {
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.Aggregation of items to be displayed. The items set
     * in this aggregation are used as an interface for the buttons displayed by the control.The "items"
@@ -147,11 +164,13 @@ trait SegmentedButton extends Control {
     * @since 1.28
     */
   def getItems(): js.Array[SegmentedButtonItem] = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>selectedButton</code>, or
     * <code>null</code>.
     */
   def getSelectedButton(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Defines the width of the SegmentedButton control.
     * If not set, it uses the minimum required width to make all buttons inside of the same size (based on
@@ -159,6 +178,7 @@ trait SegmentedButton extends Control {
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Button</code> in the aggregation <code>buttons</code>.and
     * returns its index if found or -1 otherwise.
@@ -166,6 +186,7 @@ trait SegmentedButton extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfButton(oButton: Button): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.SegmentedButtonItem</code> in the aggregation
     * <code>items</code>.and returns its index if found or -1 otherwise.
@@ -174,6 +195,7 @@ trait SegmentedButton extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: SegmentedButtonItem): Double = js.native
+  
   /**
     * Inserts a button into the aggregation <code>buttons</code>.
     * @param oButton the button to insert; if empty, nothing is inserted
@@ -184,6 +206,7 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertButton(oButton: Button, iIndex: Double): SegmentedButton = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @since 1.28
@@ -195,22 +218,26 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: SegmentedButtonItem, iIndex: Double): SegmentedButton = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>buttons</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllButtons(): js.Array[Button] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
@@ -218,6 +245,7 @@ trait SegmentedButton extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[SegmentedButtonItem] = js.native
+  
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaDescribedBy from the association named <code>ariaDescribedBy</code>.
@@ -226,6 +254,7 @@ trait SegmentedButton extends Control {
     */
   def removeAriaDescribedBy(vAriaDescribedBy: Double): js.Any = js.native
   def removeAriaDescribedBy(vAriaDescribedBy: Control): js.Any = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -234,6 +263,7 @@ trait SegmentedButton extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeButton(vButton: String): Button = js.native
   /**
     * Removes a button from the aggregation <code>buttons</code>.
@@ -242,6 +272,7 @@ trait SegmentedButton extends Control {
     */
   def removeButton(vButton: Double): Button = js.native
   def removeButton(vButton: Button): Button = js.native
+  
   def removeItem(vItem: String): SegmentedButtonItem = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -251,6 +282,7 @@ trait SegmentedButton extends Control {
     */
   def removeItem(vItem: Double): SegmentedButtonItem = js.native
   def removeItem(vItem: SegmentedButtonItem): SegmentedButtonItem = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Disables all the buttons in the SegmentedButton
     * control. When disabled all the buttons look grey and you cannot focus or click on them.When called
@@ -260,6 +292,7 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): SegmentedButton = js.native
+  
   /**
     * Setter for association <code>selectedButton</code>.
     * @param vButton New value for association <code>setSelectedButton</code>   A sap.m.Button instance
@@ -271,6 +304,7 @@ trait SegmentedButton extends Control {
   def setSelectedButton(vButton: String): SegmentedButton = js.native
   def setSelectedButton(vButton: js.Any): SegmentedButton = js.native
   def setSelectedButton(vButton: Button): SegmentedButton = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Defines the width of the SegmentedButton control.
     * If not set, it uses the minimum required width to make all buttons inside of the same size (based on
@@ -280,12 +314,14 @@ trait SegmentedButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): SegmentedButton = js.native
+  
   /**
     * Unbinds aggregation <code>items</code> from model data.
     * @since 1.28
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindItems(): SegmentedButton = js.native
+  
   /**
     * Unbinds property <code>selectedKey</code> from model data.
     * @since 1.28.0
@@ -293,4 +329,3 @@ trait SegmentedButton extends Control {
     */
   def unbindSelectedKey(): SegmentedButton = js.native
 }
-

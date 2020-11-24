@@ -13,11 +13,12 @@ import typings.ionicCliFramework.mod.BaseNamespace
 import typings.ionicUtilsObject.mod.AliasedMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/namespace", JSImport.Namespace)
 @js.native
 object namespaceMod extends js.Object {
+  
   @js.native
   class CommandMap () extends AliasedMap[
           String, 
@@ -29,12 +30,14 @@ object namespaceMod extends js.Object {
   - typings.ionic.definitionsMod.INamespace because var conflicts: parent, root. Inlined env, project */ @js.native
   abstract class Namespace () extends BaseNamespace[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
     def this(parent: INamespace) = this()
+    
+    def env: IonicEnvironment = js.native
     @JSName("env")
     var env_FNamespace: IonicEnvironment = js.native
+    
+    def project: js.UndefOr[IProject] = js.native
     @JSName("project")
     var project_FNamespace: js.UndefOr[IProject] = js.native
-    def env: IonicEnvironment = js.native
-    def project: js.UndefOr[IProject] = js.native
   }
   
   @js.native
@@ -42,6 +45,4 @@ object namespaceMod extends js.Object {
           String, 
           NamespaceMapGetter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
         ]
-  
 }
-

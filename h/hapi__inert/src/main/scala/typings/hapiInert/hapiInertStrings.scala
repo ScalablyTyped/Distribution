@@ -2,9 +2,22 @@ package typings.hapiInert
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapiInertStrings {
+  
+  @scala.inline
+  def attachment: attachment = "attachment".asInstanceOf[attachment]
+  
+  @scala.inline
+  def hash: hash = "hash".asInstanceOf[hash]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def simple: simple = "simple".asInstanceOf[simple]
+  
   @js.native
   sealed trait attachment extends js.Object
   
@@ -16,14 +29,4 @@ object hapiInertStrings {
   
   @js.native
   sealed trait simple extends js.Object
-  
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
-  @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
 }
-

@@ -2,7 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html
@@ -10,17 +10,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ChannelRestrictions")
 @js.native
 class ChannelRestrictions () extends js.Object {
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getColorMutedUsers
   		 */
   def getColorMutedUsers(): js.Array[User] = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getLockedUsers
   		 */
   def getLockedUsers(): js.Array[User] = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getMutedUsers
   		 */
   def getMutedUsers(): js.Array[User] = js.native
 }
-

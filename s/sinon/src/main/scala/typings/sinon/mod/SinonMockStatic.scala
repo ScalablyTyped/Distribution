@@ -2,10 +2,11 @@ package typings.sinon.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SinonMockStatic extends js.Object {
+  
   def apply(): SinonExpectation = js.native
   /**
     * Creates a mock for the provided object.
@@ -13,4 +14,3 @@ trait SinonMockStatic extends js.Object {
     */
   def apply(obj: js.Any): SinonMock = js.native
 }
-

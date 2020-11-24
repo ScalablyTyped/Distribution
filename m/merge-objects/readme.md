@@ -11,8 +11,8 @@ Merge two objects and concatenate arrays that are values of the same object key.
 | Full name          | merge-objects |
 | Keywords           | merge, object, extend, concat, array, mixin |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 53611 |
+| # dependents       | 5 |
+| # downloads        | 43615 |
 | # stars            | 0 |
 
 ## Links

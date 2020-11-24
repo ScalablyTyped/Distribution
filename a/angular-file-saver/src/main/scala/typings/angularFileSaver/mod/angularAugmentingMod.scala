@@ -3,14 +3,16 @@ package typings.angularFileSaver.mod
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("angular", JSImport.Namespace)
 @js.native
 object angularAugmentingMod extends js.Object {
+  
   @js.native
   trait FileSaver extends js.Object {
+    
     /**
       * Immediately starts saving a file
       * @param data: a Blob instance;
@@ -20,6 +22,4 @@ object angularAugmentingMod extends js.Object {
     def saveAs(blob: Blob, fileName: String): Unit = js.native
     def saveAs(blob: Blob, fileName: String, disableBOM: Boolean): Unit = js.native
   }
-  
 }
-

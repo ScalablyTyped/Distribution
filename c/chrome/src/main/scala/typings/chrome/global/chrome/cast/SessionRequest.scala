@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.SessionRequest")
 @js.native
@@ -20,4 +20,3 @@ class SessionRequest protected ()
   def this(appId: String, capabilities: js.UndefOr[scala.Nothing], timeout: Double) = this()
   def this(appId: String, capabilities: js.Array[typings.chrome.chrome.cast.Capability], timeout: Double) = this()
 }
-

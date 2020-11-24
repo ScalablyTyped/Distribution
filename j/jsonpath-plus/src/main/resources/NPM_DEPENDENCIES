@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jsonpath-plus" : "3.0.0"
+      "jsonpath-plus" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jsonpath-plus" : "3.0.0"
+      "jsonpath-plus" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -10,9 +10,9 @@ Fast, reliable cipher, hash and hmac methods executed in Node's threadpool for m
 | ------------------ | :-------------: |
 | Full name          | @ronomon/crypto-async |
 | Keywords           | aes, aead, async, asynchronous, blake, chacha20-poly1305, cipher, cipheriv, crypto, ctr, decipher, decipheriv, event loop, gcm, hash, hmac, non-blocking, sha256, sha512, thread, threadpool, throughput, worker, zero-copy |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 55690 |
+| # releases         | 6 |
+| # dependents       | 6 |
+| # downloads        | 98595 |
 | # stars            | 0 |
 
 ## Links

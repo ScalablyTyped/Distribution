@@ -4,7 +4,7 @@ import typings.actionsOnGoogle.responseMediaMod.MediaObjectString
 import typings.actionsOnGoogle.responseMediaMod.MediaResponseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "MediaResponse")
 @js.native
@@ -26,4 +26,3 @@ class MediaResponse protected ()
     */
   def this(options: MediaResponseOptions) = this()
 }
-

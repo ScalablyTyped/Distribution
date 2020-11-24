@@ -2,7 +2,7 @@ package typings.scriptableIos
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Row in a UITable._
@@ -12,41 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UITableRow extends js.Object {
-  /**
-    * _Background color._
-    * @see https://docs.scriptable.app/uitablerow/#backgroundcolor
-    */
-  var backgroundColor: Color = js.native
-  /**
-    * _Spacing between cells._
-    *
-    * Specifies the horizontal spacing between cells in the row.
-    * @see https://docs.scriptable.app/uitablerow/#cellspacing
-    */
-  var cellSpacing: Double = js.native
-  /**
-    * _Whether to dismiss the table when the row is selected._
-    *
-    * This property will only have an effect if the row is selectable, i.e. `onSelect` has a value. Otherwise it is ignored.
-    *
-    * Defaults to true.
-    * @see https://docs.scriptable.app/uitablerow/#dismissonselect
-    */
-  var dismissOnSelect: Boolean = js.native
-  /**
-    * _Height of the row._
-    *
-    * The height of the row defaults to 44.
-    * @see https://docs.scriptable.app/uitablerow/#height
-    */
-  var height: Double = js.native
-  /**
-    * _Whether the cell is a header._
-    *
-    * Headers are highlighted cells that helps users understand context. Defaults to false.
-    * @see https://docs.scriptable.app/uitablerow/#isheader
-    */
-  var isHeader: Boolean = js.native
+  
   /**
     * _Adds a button cell._
     *
@@ -55,6 +21,7 @@ trait UITableRow extends js.Object {
     * @see https://docs.scriptable.app/uitablerow/#-addbutton
     */
   def addButton(title: String): UITableCell = js.native
+  
   /**
     * _Adds a cell._
     *
@@ -63,6 +30,7 @@ trait UITableRow extends js.Object {
     * @see https://docs.scriptable.app/uitablerow/#-addcell
     */
   def addCell(cell: UITableCell): Unit = js.native
+  
   /**
     * _Adds an image cell._
     *
@@ -71,6 +39,7 @@ trait UITableRow extends js.Object {
     * @see https://docs.scriptable.app/uitablerow/#-addimage
     */
   def addImage(image: Image): UITableCell = js.native
+  
   /**
     * _Adds an image cell._
     *
@@ -79,6 +48,7 @@ trait UITableRow extends js.Object {
     * @see https://docs.scriptable.app/uitablerow/#-addimageaturl
     */
   def addImageAtURL(url: String): UITableCell = js.native
+  
   /**
     * _Adds a text cell._
     *
@@ -91,6 +61,47 @@ trait UITableRow extends js.Object {
   def addText(title: js.UndefOr[scala.Nothing], subtitle: String): UITableCell = js.native
   def addText(title: String): UITableCell = js.native
   def addText(title: String, subtitle: String): UITableCell = js.native
+  
+  /**
+    * _Background color._
+    * @see https://docs.scriptable.app/uitablerow/#backgroundcolor
+    */
+  var backgroundColor: Color = js.native
+  
+  /**
+    * _Spacing between cells._
+    *
+    * Specifies the horizontal spacing between cells in the row.
+    * @see https://docs.scriptable.app/uitablerow/#cellspacing
+    */
+  var cellSpacing: Double = js.native
+  
+  /**
+    * _Whether to dismiss the table when the row is selected._
+    *
+    * This property will only have an effect if the row is selectable, i.e. `onSelect` has a value. Otherwise it is ignored.
+    *
+    * Defaults to true.
+    * @see https://docs.scriptable.app/uitablerow/#dismissonselect
+    */
+  var dismissOnSelect: Boolean = js.native
+  
+  /**
+    * _Height of the row._
+    *
+    * The height of the row defaults to 44.
+    * @see https://docs.scriptable.app/uitablerow/#height
+    */
+  var height: Double = js.native
+  
+  /**
+    * _Whether the cell is a header._
+    *
+    * Headers are highlighted cells that helps users understand context. Defaults to false.
+    * @see https://docs.scriptable.app/uitablerow/#isheader
+    */
+  var isHeader: Boolean = js.native
+  
   /**
     * _Called when the row is selected._
     *
@@ -101,4 +112,3 @@ trait UITableRow extends js.Object {
     */
   def onSelect(arg0: Double): Unit = js.native
 }
-

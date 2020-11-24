@@ -8,10 +8,13 @@ import typings.handsontable.anon.ValueCellValue
 import typings.handsontable.handsontableNumbers.`-1`
 import typings.handsontable.handsontableNumbers.`0`
 import typings.handsontable.handsontableStrings.afterAddChild
+import typings.handsontable.handsontableStrings.afterAutofill
 import typings.handsontable.handsontableStrings.afterBeginEditing
 import typings.handsontable.handsontableStrings.afterCellMetaReset
 import typings.handsontable.handsontableStrings.afterChange
 import typings.handsontable.handsontableStrings.afterChangesObserved
+import typings.handsontable.handsontableStrings.afterColumnCollapse
+import typings.handsontable.handsontableStrings.afterColumnExpand
 import typings.handsontable.handsontableStrings.afterColumnMove
 import typings.handsontable.handsontableStrings.afterColumnResize
 import typings.handsontable.handsontableStrings.afterColumnSort
@@ -74,6 +77,7 @@ import typings.handsontable.handsontableStrings.afterSelectionEndByProp
 import typings.handsontable.handsontableStrings.afterSetCellMeta
 import typings.handsontable.handsontableStrings.afterSetDataAtCell
 import typings.handsontable.handsontableStrings.afterSetDataAtRowProp
+import typings.handsontable.handsontableStrings.afterSetSourceDataAtCell
 import typings.handsontable.handsontableStrings.afterTrimRow
 import typings.handsontable.handsontableStrings.afterUndo
 import typings.handsontable.handsontableStrings.afterUnhideColumns
@@ -96,6 +100,8 @@ import typings.handsontable.handsontableStrings.beforeAutofillInsidePopulate
 import typings.handsontable.handsontableStrings.beforeCellAlignment
 import typings.handsontable.handsontableStrings.beforeChange
 import typings.handsontable.handsontableStrings.beforeChangeRender
+import typings.handsontable.handsontableStrings.beforeColumnCollapse
+import typings.handsontable.handsontableStrings.beforeColumnExpand
 import typings.handsontable.handsontableStrings.beforeColumnMove
 import typings.handsontable.handsontableStrings.beforeColumnResize
 import typings.handsontable.handsontableStrings.beforeColumnSort
@@ -117,6 +123,7 @@ import typings.handsontable.handsontableStrings.beforeInit
 import typings.handsontable.handsontableStrings.beforeInitWalkontable
 import typings.handsontable.handsontableStrings.beforeKeyDown
 import typings.handsontable.handsontableStrings.beforeLanguageChange
+import typings.handsontable.handsontableStrings.beforeLoadData
 import typings.handsontable.handsontableStrings.beforeMergeCells
 import typings.handsontable.handsontableStrings.beforeOnCellContextMenu
 import typings.handsontable.handsontableStrings.beforeOnCellMouseDown
@@ -134,6 +141,7 @@ import typings.handsontable.handsontableStrings.beforeRender
 import typings.handsontable.handsontableStrings.beforeRenderer
 import typings.handsontable.handsontableStrings.beforeRowMove
 import typings.handsontable.handsontableStrings.beforeRowResize
+import typings.handsontable.handsontableStrings.beforeSetCellMeta
 import typings.handsontable.handsontableStrings.beforeSetRangeEnd
 import typings.handsontable.handsontableStrings.beforeSetRangeStart
 import typings.handsontable.handsontableStrings.beforeSetRangeStartOnly
@@ -157,6 +165,7 @@ import typings.handsontable.handsontableStrings.construct
 import typings.handsontable.handsontableStrings.contextMenu
 import typings.handsontable.handsontableStrings.copyPaste
 import typings.handsontable.handsontableStrings.current
+import typings.handsontable.handsontableStrings.customBorders
 import typings.handsontable.handsontableStrings.data
 import typings.handsontable.handsontableStrings.down
 import typings.handsontable.handsontableStrings.dragToScroll
@@ -164,13 +173,10 @@ import typings.handsontable.handsontableStrings.dropdownMenu
 import typings.handsontable.handsontableStrings.exportFile
 import typings.handsontable.handsontableStrings.filters
 import typings.handsontable.handsontableStrings.formulas
-import typings.handsontable.handsontableStrings.ganttChart
 import typings.handsontable.handsontableStrings.get
 import typings.handsontable.handsontableStrings.headerTooltips
 import typings.handsontable.handsontableStrings.hidden
-import typings.handsontable.handsontableStrings.hiddenColumn
 import typings.handsontable.handsontableStrings.hiddenColumns
-import typings.handsontable.handsontableStrings.hiddenRow
 import typings.handsontable.handsontableStrings.hiddenRows
 import typings.handsontable.handsontableStrings.highlight
 import typings.handsontable.handsontableStrings.horizontal
@@ -194,19 +200,18 @@ import typings.handsontable.handsontableStrings.manualRowResize
 import typings.handsontable.handsontableStrings.mergeCells
 import typings.handsontable.handsontableStrings.mixed
 import typings.handsontable.handsontableStrings.modifyAutofillRange
-import typings.handsontable.handsontableStrings.modifyCol
 import typings.handsontable.handsontableStrings.modifyColHeader
 import typings.handsontable.handsontableStrings.modifyColWidth
 import typings.handsontable.handsontableStrings.modifyColumnHeaderHeight
 import typings.handsontable.handsontableStrings.modifyCopyableRange
 import typings.handsontable.handsontableStrings.modifyData
 import typings.handsontable.handsontableStrings.modifyGetCellCoords
-import typings.handsontable.handsontableStrings.modifyRow
 import typings.handsontable.handsontableStrings.modifyRowData
 import typings.handsontable.handsontableStrings.modifyRowHeader
 import typings.handsontable.handsontableStrings.modifyRowHeaderWidth
 import typings.handsontable.handsontableStrings.modifyRowHeight
 import typings.handsontable.handsontableStrings.modifyRowSourceData
+import typings.handsontable.handsontableStrings.modifySourceData
 import typings.handsontable.handsontableStrings.modifyTransformEnd
 import typings.handsontable.handsontableStrings.modifyTransformStart
 import typings.handsontable.handsontableStrings.multiColumnSorting
@@ -226,12 +231,9 @@ import typings.handsontable.handsontableStrings.search
 import typings.handsontable.handsontableStrings.set
 import typings.handsontable.handsontableStrings.shift_down
 import typings.handsontable.handsontableStrings.shift_right
-import typings.handsontable.handsontableStrings.skipLengthCache
 import typings.handsontable.handsontableStrings.skipRowOnPaste
 import typings.handsontable.handsontableStrings.touchScroll
 import typings.handsontable.handsontableStrings.trimRows
-import typings.handsontable.handsontableStrings.unmodifyCol
-import typings.handsontable.handsontableStrings.unmodifyRow
 import typings.handsontable.handsontableStrings.up
 import typings.handsontable.handsontableStrings.valid
 import typings.handsontable.handsontableStrings.vertical
@@ -243,8 +245,10 @@ import typings.handsontable.mod.Handsontable.CellValue
 import typings.handsontable.mod.Handsontable.ChangeSource
 import typings.handsontable.mod.Handsontable.ColumnDataGetterSetterFunction
 import typings.handsontable.mod.Handsontable.GridSettings
+import typings.handsontable.mod.Handsontable.RecordTranslation.IndexMapper
 import typings.handsontable.mod.Handsontable.RowObject
 import typings.handsontable.mod.Handsontable.SelectionController
+import typings.handsontable.mod.Handsontable.UndoRedo
 import typings.handsontable.mod.Handsontable.ViewportColumnsCalculator
 import typings.handsontable.mod.Handsontable._editors.Base
 import typings.handsontable.mod.Handsontable.columnSorting.Config
@@ -262,13 +266,13 @@ import typings.handsontable.mod.Handsontable.plugins.ColumnSummary
 import typings.handsontable.mod.Handsontable.plugins.Comments
 import typings.handsontable.mod.Handsontable.plugins.ContextMenu
 import typings.handsontable.mod.Handsontable.plugins.CopyPaste
+import typings.handsontable.mod.Handsontable.plugins.CustomBorders
 import typings.handsontable.mod.Handsontable.plugins.DragToScroll
 import typings.handsontable.mod.Handsontable.plugins.DropdownMenu
 import typings.handsontable.mod.Handsontable.plugins.ExportFile
 import typings.handsontable.mod.Handsontable.plugins.Filters
 import typings.handsontable.mod.Handsontable.plugins.FiltersPlugin.ColumnConditions
 import typings.handsontable.mod.Handsontable.plugins.Formulas
-import typings.handsontable.mod.Handsontable.plugins.GanttChart
 import typings.handsontable.mod.Handsontable.plugins.HeaderTooltips
 import typings.handsontable.mod.Handsontable.plugins.HiddenColumns
 import typings.handsontable.mod.Handsontable.plugins.HiddenRows
@@ -303,22 +307,16 @@ import typings.std.RegExp
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>; // TS >= 2.8
 @JSImport("handsontable", "_Handsontable")
 @js.native
 object _Handsontable extends js.Object {
+  
   @js.native
   trait Core extends js.Object {
-    var container: HTMLElement = js.native
-    var forceFullRender: Boolean = js.native
-    var isDestroyed: Boolean = js.native
-    var renderCall: Boolean = js.native
-    var rootDocument: Document = js.native
-    var rootElement: HTMLElement = js.native
-    var rootWindow: Window = js.native
-    var table: HTMLTableElement = js.native
+    
     def addHook(
       key: afterModifyTransformEnd,
       callback: js.UndefOr[
@@ -467,6 +465,33 @@ object _Handsontable extends js.Object {
           ]
         ]
     ): Unit = js.native
+    def addHook(
+      key: modifySourceData,
+      callback: js.UndefOr[
+          js.Function4[
+            /* row */ Double, 
+            /* col */ Double, 
+            /* valueHolder */ ValueCellValue, 
+            /* ioMode */ get | set, 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    def addHook(
+      key: modifySourceData,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[
+              /* row */ Double, 
+              /* col */ Double, 
+              /* valueHolder */ ValueCellValue, 
+              /* ioMode */ get | set, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    
     def addHookOnce(
       key: afterModifyTransformEnd,
       callback: js.UndefOr[
@@ -608,6 +633,32 @@ object _Handsontable extends js.Object {
             js.Function4[
               /* row */ Double, 
               /* column */ Double, 
+              /* valueHolder */ ValueCellValue, 
+              /* ioMode */ get | set, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    def addHookOnce(
+      key: modifySourceData,
+      callback: js.UndefOr[
+          js.Function4[
+            /* row */ Double, 
+            /* col */ Double, 
+            /* valueHolder */ ValueCellValue, 
+            /* ioMode */ get | set, 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    def addHookOnce(
+      key: modifySourceData,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[
+              /* row */ Double, 
+              /* col */ Double, 
               /* valueHolder */ ValueCellValue, 
               /* ioMode */ get | set, 
               Unit
@@ -636,6 +687,32 @@ object _Handsontable extends js.Object {
               /* parent */ RowObject, 
               /* element */ RowObject | Unit, 
               /* index */ Double | Unit, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterAutofill(
+      key: afterAutofill,
+      callback: js.UndefOr[
+          js.Function3[
+            /* start */ CellCoords, 
+            /* end */ CellCoords, 
+            /* data */ js.Array[js.Array[CellValue]], 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterAutofill(
+      key: afterAutofill,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* start */ CellCoords, 
+              /* end */ CellCoords, 
+              /* data */ js.Array[js.Array[CellValue]], 
               Unit
             ]
           ]
@@ -676,6 +753,62 @@ object _Handsontable extends js.Object {
     @JSName("addHookOnce")
     def addHookOnce_afterChangesObserved(key: afterChangesObserved, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHookOnce")
+    def addHookOnce_afterColumnCollapse(
+      key: afterColumnCollapse,
+      callback: js.UndefOr[
+          js.Function4[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* collapsePossible */ Boolean, 
+            /* successfullyCollapsed */ Boolean, 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterColumnCollapse(
+      key: afterColumnCollapse,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* collapsePossible */ Boolean, 
+              /* successfullyCollapsed */ Boolean, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterColumnExpand(
+      key: afterColumnExpand,
+      callback: js.UndefOr[
+          js.Function4[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* expandPossible */ Boolean, 
+            /* successfullyExpanded */ Boolean, 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterColumnExpand(
+      key: afterColumnExpand,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* expandPossible */ Boolean, 
+              /* successfullyExpanded */ Boolean, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
     def addHookOnce_afterColumnMove(
       key: afterColumnMove,
       callback: js.UndefOr[js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]]
@@ -691,7 +824,7 @@ object _Handsontable extends js.Object {
     def addHookOnce_afterColumnResize(
       key: afterColumnResize,
       callback: js.UndefOr[
-          js.Function3[/* currentColumn */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+          js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -699,7 +832,7 @@ object _Handsontable extends js.Object {
       key: afterColumnResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* currentColumn */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+            js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit]
           ]
         ]
     ): Unit = js.native
@@ -1098,9 +1231,21 @@ object _Handsontable extends js.Object {
     @JSName("addHookOnce")
     def addHookOnce_afterListen(key: afterListen, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHookOnce")
-    def addHookOnce_afterLoadData(key: afterLoadData, callback: js.UndefOr[js.Function1[/* initialLoad */ Boolean, Unit]]): Unit = js.native
+    def addHookOnce_afterLoadData(
+      key: afterLoadData,
+      callback: js.UndefOr[
+          js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+        ]
+    ): Unit = js.native
     @JSName("addHookOnce")
-    def addHookOnce_afterLoadData(key: afterLoadData, callback: js.Array[js.UndefOr[js.Function1[/* initialLoad */ Boolean, Unit]]]): Unit = js.native
+    def addHookOnce_afterLoadData(
+      key: afterLoadData,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+          ]
+        ]
+    ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_afterMergeCells(
       key: afterMergeCells,
@@ -1316,7 +1461,7 @@ object _Handsontable extends js.Object {
           js.Function4[
             /* index */ Double, 
             /* amount */ Double, 
-            /* physicalColumns */ js.Array[Double], 
+            /* physicalRows */ js.Array[Double], 
             /* source */ js.UndefOr[ChangeSource], 
             Unit
           ]
@@ -1330,7 +1475,7 @@ object _Handsontable extends js.Object {
             js.Function4[
               /* index */ Double, 
               /* amount */ Double, 
-              /* physicalColumns */ js.Array[Double], 
+              /* physicalRows */ js.Array[Double], 
               /* source */ js.UndefOr[ChangeSource], 
               Unit
             ]
@@ -1376,18 +1521,38 @@ object _Handsontable extends js.Object {
     @JSName("addHookOnce")
     def addHookOnce_afterRowMove(
       key: afterRowMove,
-      callback: js.UndefOr[js.Function2[/* startRow */ Double, /* endRow */ Double, Unit]]
+      callback: js.UndefOr[
+          js.Function5[
+            /* movedRows */ js.Array[Double], 
+            /* finalIndex */ Double, 
+            /* dropIndex */ Double | Unit, 
+            /* movePossible */ Boolean, 
+            /* orderChanged */ Boolean, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_afterRowMove(
       key: afterRowMove,
-      callback: js.Array[js.UndefOr[js.Function2[/* startRow */ Double, /* endRow */ Double, Unit]]]
+      callback: js.Array[
+          js.UndefOr[
+            js.Function5[
+              /* movedRows */ js.Array[Double], 
+              /* finalIndex */ Double, 
+              /* dropIndex */ Double | Unit, 
+              /* movePossible */ Boolean, 
+              /* orderChanged */ Boolean, 
+              Unit
+            ]
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_afterRowResize(
       key: afterRowResize,
       callback: js.UndefOr[
-          js.Function3[/* currentRow */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+          js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Unit]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -1395,7 +1560,7 @@ object _Handsontable extends js.Object {
       key: afterRowResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* currentRow */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+            js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Unit]
           ]
         ]
     ): Unit = js.native
@@ -1573,6 +1738,22 @@ object _Handsontable extends js.Object {
     @JSName("addHookOnce")
     def addHookOnce_afterSetDataAtRowProp(
       key: afterSetDataAtRowProp,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterSetSourceDataAtCell(
+      key: afterSetSourceDataAtCell,
+      callback: js.UndefOr[
+          js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_afterSetSourceDataAtCell(
+      key: afterSetSourceDataAtCell,
       callback: js.Array[
           js.UndefOr[
             js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
@@ -1800,7 +1981,7 @@ object _Handsontable extends js.Object {
             /* start */ CellCoords, 
             /* end */ CellCoords, 
             /* data */ js.Array[js.Array[CellValue]], 
-            Unit
+            Unit | Boolean
           ]
         ]
     ): Unit = js.native
@@ -1813,7 +1994,7 @@ object _Handsontable extends js.Object {
               /* start */ CellCoords, 
               /* end */ CellCoords, 
               /* data */ js.Array[js.Array[CellValue]], 
-              Unit
+              Unit | Boolean
             ]
           ]
         ]
@@ -1851,6 +2032,58 @@ object _Handsontable extends js.Object {
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
+    def addHookOnce_beforeColumnCollapse(
+      key: beforeColumnCollapse,
+      callback: js.UndefOr[
+          js.Function3[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* collapsePossible */ Boolean, 
+            Unit | Boolean
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeColumnCollapse(
+      key: beforeColumnCollapse,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* collapsePossible */ Boolean, 
+              Unit | Boolean
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeColumnExpand(
+      key: beforeColumnExpand,
+      callback: js.UndefOr[
+          js.Function3[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* expandPossible */ Boolean, 
+            Unit | Boolean
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeColumnExpand(
+      key: beforeColumnExpand,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* expandPossible */ Boolean, 
+              Unit | Boolean
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
     def addHookOnce_beforeColumnMove(
       key: beforeColumnMove,
       callback: js.UndefOr[
@@ -1870,12 +2103,7 @@ object _Handsontable extends js.Object {
     def addHookOnce_beforeColumnResize(
       key: beforeColumnResize,
       callback: js.UndefOr[
-          js.Function3[
-            /* currentColumn */ Double, 
-            /* newSize */ Double, 
-            /* isDoubleClick */ Boolean, 
-            Unit | Double
-          ]
+          js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit | Double]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -1883,12 +2111,7 @@ object _Handsontable extends js.Object {
       key: beforeColumnResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[
-              /* currentColumn */ Double, 
-              /* newSize */ Double, 
-              /* isDoubleClick */ Boolean, 
-              Unit | Double
-            ]
+            js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit | Double]
           ]
         ]
     ): Unit = js.native
@@ -2154,6 +2377,22 @@ object _Handsontable extends js.Object {
     def addHookOnce_beforeLanguageChange(
       key: beforeLanguageChange,
       callback: js.Array[js.UndefOr[js.Function1[/* languageCode */ String, Unit]]]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeLoadData(
+      key: beforeLoadData,
+      callback: js.UndefOr[
+          js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeLoadData(
+      key: beforeLoadData,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_beforeMergeCells(
@@ -2461,25 +2700,36 @@ object _Handsontable extends js.Object {
     @JSName("addHookOnce")
     def addHookOnce_beforeRowMove(
       key: beforeRowMove,
-      callback: js.UndefOr[js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]]
+      callback: js.UndefOr[
+          js.Function4[
+            /* movedRows */ js.Array[Double], 
+            /* finalIndex */ Double, 
+            /* dropIndex */ Double | Unit, 
+            /* movePossible */ Boolean, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_beforeRowMove(
       key: beforeRowMove,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]]
+          js.UndefOr[
+            js.Function4[
+              /* movedRows */ js.Array[Double], 
+              /* finalIndex */ Double, 
+              /* dropIndex */ Double | Unit, 
+              /* movePossible */ Boolean, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_beforeRowResize(
       key: beforeRowResize,
       callback: js.UndefOr[
-          js.Function3[
-            /* currentRow */ Double, 
-            /* newSize */ Double, 
-            /* isDoubleClick */ Boolean, 
-            Double | Unit
-          ]
+          js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Double | Unit]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -2487,12 +2737,23 @@ object _Handsontable extends js.Object {
       key: beforeRowResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[
-              /* currentRow */ Double, 
-              /* newSize */ Double, 
-              /* isDoubleClick */ Boolean, 
-              Double | Unit
-            ]
+            js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Double | Unit]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeSetCellMeta(
+      key: beforeSetCellMeta,
+      callback: js.UndefOr[
+          js.Function4[/* row */ Double, /* col */ Double, /* key */ String, /* value */ js.Any, Boolean | Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHookOnce")
+    def addHookOnce_beforeSetCellMeta(
+      key: beforeSetCellMeta,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[/* row */ Double, /* col */ Double, /* key */ String, /* value */ _, Boolean | Unit]
           ]
         ]
     ): Unit = js.native
@@ -2696,14 +2957,6 @@ object _Handsontable extends js.Object {
     @JSName("addHookOnce")
     def addHookOnce_construct(key: construct, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHookOnce")
-    def addHookOnce_hiddenColumn(key: hiddenColumn, callback: js.UndefOr[js.Function1[/* column */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_hiddenColumn(key: hiddenColumn, callback: js.Array[js.UndefOr[js.Function1[/* column */ Double, Unit]]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_hiddenRow(key: hiddenRow, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_hiddenRow(key: hiddenRow, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
-    @JSName("addHookOnce")
     def addHookOnce_init(key: init, callback: js.UndefOr[js.Function0[Unit]]): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_init(key: init, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
@@ -2731,10 +2984,6 @@ object _Handsontable extends js.Object {
           ]
         ]
     ): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_modifyCol(key: modifyCol, callback: js.UndefOr[js.Function1[/* col */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_modifyCol(key: modifyCol, callback: js.Array[js.UndefOr[js.Function1[/* col */ Double, Unit]]]): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_modifyColHeader(key: modifyColHeader, callback: js.UndefOr[js.Function1[/* column */ Double, Unit]]): Unit = js.native
     @JSName("addHookOnce")
@@ -2789,10 +3038,6 @@ object _Handsontable extends js.Object {
           ]
         ]
     ): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_modifyRow(key: modifyRow, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_modifyRow(key: modifyRow, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_modifyRowData(key: modifyRowData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
     @JSName("addHookOnce")
@@ -2862,18 +3107,7 @@ object _Handsontable extends js.Object {
       key: persistentStateSave,
       callback: js.Array[js.UndefOr[js.Function2[/* key */ String, /* value */ _, Unit]]]
     ): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_skipLengthCache(key: skipLengthCache, callback: js.UndefOr[js.Function1[/* delay */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_skipLengthCache(key: skipLengthCache, callback: js.Array[js.UndefOr[js.Function1[/* delay */ Double, Unit]]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_unmodifyCol(key: unmodifyCol, callback: js.UndefOr[js.Function1[/* col */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_unmodifyCol(key: unmodifyCol, callback: js.Array[js.UndefOr[js.Function1[/* col */ Double, Unit]]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_unmodifyRow(key: unmodifyRow, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_unmodifyRow(key: unmodifyRow, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
+    
     @JSName("addHook")
     def addHook_afterAddChild(
       key: afterAddChild,
@@ -2895,6 +3129,32 @@ object _Handsontable extends js.Object {
               /* parent */ RowObject, 
               /* element */ RowObject | Unit, 
               /* index */ Double | Unit, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterAutofill(
+      key: afterAutofill,
+      callback: js.UndefOr[
+          js.Function3[
+            /* start */ CellCoords, 
+            /* end */ CellCoords, 
+            /* data */ js.Array[js.Array[CellValue]], 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterAutofill(
+      key: afterAutofill,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* start */ CellCoords, 
+              /* end */ CellCoords, 
+              /* data */ js.Array[js.Array[CellValue]], 
               Unit
             ]
           ]
@@ -2935,6 +3195,62 @@ object _Handsontable extends js.Object {
     @JSName("addHook")
     def addHook_afterChangesObserved(key: afterChangesObserved, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHook")
+    def addHook_afterColumnCollapse(
+      key: afterColumnCollapse,
+      callback: js.UndefOr[
+          js.Function4[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* collapsePossible */ Boolean, 
+            /* successfullyCollapsed */ Boolean, 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterColumnCollapse(
+      key: afterColumnCollapse,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* collapsePossible */ Boolean, 
+              /* successfullyCollapsed */ Boolean, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterColumnExpand(
+      key: afterColumnExpand,
+      callback: js.UndefOr[
+          js.Function4[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* expandPossible */ Boolean, 
+            /* successfullyExpanded */ Boolean, 
+            Unit
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterColumnExpand(
+      key: afterColumnExpand,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* expandPossible */ Boolean, 
+              /* successfullyExpanded */ Boolean, 
+              Unit
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_afterColumnMove(
       key: afterColumnMove,
       callback: js.UndefOr[js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]]
@@ -2950,7 +3266,7 @@ object _Handsontable extends js.Object {
     def addHook_afterColumnResize(
       key: afterColumnResize,
       callback: js.UndefOr[
-          js.Function3[/* currentColumn */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+          js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -2958,7 +3274,7 @@ object _Handsontable extends js.Object {
       key: afterColumnResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* currentColumn */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+            js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit]
           ]
         ]
     ): Unit = js.native
@@ -3357,9 +3673,21 @@ object _Handsontable extends js.Object {
     @JSName("addHook")
     def addHook_afterListen(key: afterListen, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHook")
-    def addHook_afterLoadData(key: afterLoadData, callback: js.UndefOr[js.Function1[/* initialLoad */ Boolean, Unit]]): Unit = js.native
+    def addHook_afterLoadData(
+      key: afterLoadData,
+      callback: js.UndefOr[
+          js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+        ]
+    ): Unit = js.native
     @JSName("addHook")
-    def addHook_afterLoadData(key: afterLoadData, callback: js.Array[js.UndefOr[js.Function1[/* initialLoad */ Boolean, Unit]]]): Unit = js.native
+    def addHook_afterLoadData(
+      key: afterLoadData,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+          ]
+        ]
+    ): Unit = js.native
     @JSName("addHook")
     def addHook_afterMergeCells(
       key: afterMergeCells,
@@ -3575,7 +3903,7 @@ object _Handsontable extends js.Object {
           js.Function4[
             /* index */ Double, 
             /* amount */ Double, 
-            /* physicalColumns */ js.Array[Double], 
+            /* physicalRows */ js.Array[Double], 
             /* source */ js.UndefOr[ChangeSource], 
             Unit
           ]
@@ -3589,7 +3917,7 @@ object _Handsontable extends js.Object {
             js.Function4[
               /* index */ Double, 
               /* amount */ Double, 
-              /* physicalColumns */ js.Array[Double], 
+              /* physicalRows */ js.Array[Double], 
               /* source */ js.UndefOr[ChangeSource], 
               Unit
             ]
@@ -3635,18 +3963,38 @@ object _Handsontable extends js.Object {
     @JSName("addHook")
     def addHook_afterRowMove(
       key: afterRowMove,
-      callback: js.UndefOr[js.Function2[/* startRow */ Double, /* endRow */ Double, Unit]]
+      callback: js.UndefOr[
+          js.Function5[
+            /* movedRows */ js.Array[Double], 
+            /* finalIndex */ Double, 
+            /* dropIndex */ Double | Unit, 
+            /* movePossible */ Boolean, 
+            /* orderChanged */ Boolean, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_afterRowMove(
       key: afterRowMove,
-      callback: js.Array[js.UndefOr[js.Function2[/* startRow */ Double, /* endRow */ Double, Unit]]]
+      callback: js.Array[
+          js.UndefOr[
+            js.Function5[
+              /* movedRows */ js.Array[Double], 
+              /* finalIndex */ Double, 
+              /* dropIndex */ Double | Unit, 
+              /* movePossible */ Boolean, 
+              /* orderChanged */ Boolean, 
+              Unit
+            ]
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_afterRowResize(
       key: afterRowResize,
       callback: js.UndefOr[
-          js.Function3[/* currentRow */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+          js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Unit]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -3654,7 +4002,7 @@ object _Handsontable extends js.Object {
       key: afterRowResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* currentRow */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+            js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Unit]
           ]
         ]
     ): Unit = js.native
@@ -3832,6 +4180,22 @@ object _Handsontable extends js.Object {
     @JSName("addHook")
     def addHook_afterSetDataAtRowProp(
       key: afterSetDataAtRowProp,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterSetSourceDataAtCell(
+      key: afterSetSourceDataAtCell,
+      callback: js.UndefOr[
+          js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterSetSourceDataAtCell(
+      key: afterSetSourceDataAtCell,
       callback: js.Array[
           js.UndefOr[
             js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
@@ -4059,7 +4423,7 @@ object _Handsontable extends js.Object {
             /* start */ CellCoords, 
             /* end */ CellCoords, 
             /* data */ js.Array[js.Array[CellValue]], 
-            Unit
+            Unit | Boolean
           ]
         ]
     ): Unit = js.native
@@ -4072,7 +4436,7 @@ object _Handsontable extends js.Object {
               /* start */ CellCoords, 
               /* end */ CellCoords, 
               /* data */ js.Array[js.Array[CellValue]], 
-              Unit
+              Unit | Boolean
             ]
           ]
         ]
@@ -4110,6 +4474,58 @@ object _Handsontable extends js.Object {
         ]
     ): Unit = js.native
     @JSName("addHook")
+    def addHook_beforeColumnCollapse(
+      key: beforeColumnCollapse,
+      callback: js.UndefOr[
+          js.Function3[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* collapsePossible */ Boolean, 
+            Unit | Boolean
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeColumnCollapse(
+      key: beforeColumnCollapse,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* collapsePossible */ Boolean, 
+              Unit | Boolean
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeColumnExpand(
+      key: beforeColumnExpand,
+      callback: js.UndefOr[
+          js.Function3[
+            /* currentCollapsedColumn */ js.Array[Double], 
+            /* destinationCollapsedColumns */ js.Array[Double], 
+            /* expandPossible */ Boolean, 
+            Unit | Boolean
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeColumnExpand(
+      key: beforeColumnExpand,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* currentCollapsedColumn */ js.Array[Double], 
+              /* destinationCollapsedColumns */ js.Array[Double], 
+              /* expandPossible */ Boolean, 
+              Unit | Boolean
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_beforeColumnMove(
       key: beforeColumnMove,
       callback: js.UndefOr[
@@ -4129,12 +4545,7 @@ object _Handsontable extends js.Object {
     def addHook_beforeColumnResize(
       key: beforeColumnResize,
       callback: js.UndefOr[
-          js.Function3[
-            /* currentColumn */ Double, 
-            /* newSize */ Double, 
-            /* isDoubleClick */ Boolean, 
-            Unit | Double
-          ]
+          js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit | Double]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -4142,12 +4553,7 @@ object _Handsontable extends js.Object {
       key: beforeColumnResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[
-              /* currentColumn */ Double, 
-              /* newSize */ Double, 
-              /* isDoubleClick */ Boolean, 
-              Unit | Double
-            ]
+            js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit | Double]
           ]
         ]
     ): Unit = js.native
@@ -4413,6 +4819,22 @@ object _Handsontable extends js.Object {
     def addHook_beforeLanguageChange(
       key: beforeLanguageChange,
       callback: js.Array[js.UndefOr[js.Function1[/* languageCode */ String, Unit]]]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeLoadData(
+      key: beforeLoadData,
+      callback: js.UndefOr[
+          js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeLoadData(
+      key: beforeLoadData,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_beforeMergeCells(
@@ -4720,25 +5142,36 @@ object _Handsontable extends js.Object {
     @JSName("addHook")
     def addHook_beforeRowMove(
       key: beforeRowMove,
-      callback: js.UndefOr[js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]]
+      callback: js.UndefOr[
+          js.Function4[
+            /* movedRows */ js.Array[Double], 
+            /* finalIndex */ Double, 
+            /* dropIndex */ Double | Unit, 
+            /* movePossible */ Boolean, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_beforeRowMove(
       key: beforeRowMove,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]]
+          js.UndefOr[
+            js.Function4[
+              /* movedRows */ js.Array[Double], 
+              /* finalIndex */ Double, 
+              /* dropIndex */ Double | Unit, 
+              /* movePossible */ Boolean, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_beforeRowResize(
       key: beforeRowResize,
       callback: js.UndefOr[
-          js.Function3[
-            /* currentRow */ Double, 
-            /* newSize */ Double, 
-            /* isDoubleClick */ Boolean, 
-            Double | Unit
-          ]
+          js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Double | Unit]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -4746,12 +5179,23 @@ object _Handsontable extends js.Object {
       key: beforeRowResize,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[
-              /* currentRow */ Double, 
-              /* newSize */ Double, 
-              /* isDoubleClick */ Boolean, 
-              Double | Unit
-            ]
+            js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Double | Unit]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeSetCellMeta(
+      key: beforeSetCellMeta,
+      callback: js.UndefOr[
+          js.Function4[/* row */ Double, /* col */ Double, /* key */ String, /* value */ js.Any, Boolean | Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeSetCellMeta(
+      key: beforeSetCellMeta,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function4[/* row */ Double, /* col */ Double, /* key */ String, /* value */ _, Boolean | Unit]
           ]
         ]
     ): Unit = js.native
@@ -4955,14 +5399,6 @@ object _Handsontable extends js.Object {
     @JSName("addHook")
     def addHook_construct(key: construct, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHook")
-    def addHook_hiddenColumn(key: hiddenColumn, callback: js.UndefOr[js.Function1[/* column */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_hiddenColumn(key: hiddenColumn, callback: js.Array[js.UndefOr[js.Function1[/* column */ Double, Unit]]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_hiddenRow(key: hiddenRow, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_hiddenRow(key: hiddenRow, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
-    @JSName("addHook")
     def addHook_init(key: init, callback: js.UndefOr[js.Function0[Unit]]): Unit = js.native
     @JSName("addHook")
     def addHook_init(key: init, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
@@ -4990,10 +5426,6 @@ object _Handsontable extends js.Object {
           ]
         ]
     ): Unit = js.native
-    @JSName("addHook")
-    def addHook_modifyCol(key: modifyCol, callback: js.UndefOr[js.Function1[/* col */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_modifyCol(key: modifyCol, callback: js.Array[js.UndefOr[js.Function1[/* col */ Double, Unit]]]): Unit = js.native
     @JSName("addHook")
     def addHook_modifyColHeader(key: modifyColHeader, callback: js.UndefOr[js.Function1[/* column */ Double, Unit]]): Unit = js.native
     @JSName("addHook")
@@ -5048,10 +5480,6 @@ object _Handsontable extends js.Object {
           ]
         ]
     ): Unit = js.native
-    @JSName("addHook")
-    def addHook_modifyRow(key: modifyRow, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_modifyRow(key: modifyRow, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
     @JSName("addHook")
     def addHook_modifyRowData(key: modifyRowData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
     @JSName("addHook")
@@ -5121,18 +5549,7 @@ object _Handsontable extends js.Object {
       key: persistentStateSave,
       callback: js.Array[js.UndefOr[js.Function2[/* key */ String, /* value */ _, Unit]]]
     ): Unit = js.native
-    @JSName("addHook")
-    def addHook_skipLengthCache(key: skipLengthCache, callback: js.UndefOr[js.Function1[/* delay */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_skipLengthCache(key: skipLengthCache, callback: js.Array[js.UndefOr[js.Function1[/* delay */ Double, Unit]]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_unmodifyCol(key: unmodifyCol, callback: js.UndefOr[js.Function1[/* col */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_unmodifyCol(key: unmodifyCol, callback: js.Array[js.UndefOr[js.Function1[/* col */ Double, Unit]]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_unmodifyRow(key: unmodifyRow, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_unmodifyRow(key: unmodifyRow, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
+    
     def alter(
       action: insert_row | insert_col | remove_row | remove_col,
       index: js.UndefOr[Double | (js.Array[js.Tuple2[Double, Double]])],
@@ -5140,47 +5557,88 @@ object _Handsontable extends js.Object {
       source: js.UndefOr[String],
       keepEmptyRows: js.UndefOr[Boolean]
     ): Unit = js.native
+    
+    def batch(wrappedOperations: js.Function0[Unit]): Unit = js.native
+    
     def clear(): Unit = js.native
+    
+    def clearUndo(): Unit = js.native
+    
     def colOffset(): Double = js.native
+    
     def colToProp(col: Double): String | Double = js.native
+    
+    var columnIndexMapper: IndexMapper = js.native
+    
+    var container: HTMLElement = js.native
+    
     def countCols(): Double = js.native
+    
     def countEmptyCols(): Double = js.native
     def countEmptyCols(ending: Boolean): Double = js.native
+    
     def countEmptyRows(): Double = js.native
     def countEmptyRows(ending: Boolean): Double = js.native
+    
     def countRenderedCols(): Double = js.native
+    
     def countRenderedRows(): Double = js.native
+    
     def countRows(): Double = js.native
+    
     def countSourceCols(): Double = js.native
+    
     def countSourceRows(): Double = js.native
+    
     def countVisibleCols(): Double = js.native
+    
     def countVisibleRows(): Double = js.native
+    
     def deselectCell(): Unit = js.native
+    
     def destroy(): Unit = js.native
+    
     def destroyEditor(): Unit = js.native
     def destroyEditor(revertOriginal: js.UndefOr[scala.Nothing], prepareEditorIfNeeded: Boolean): Unit = js.native
     def destroyEditor(revertOriginal: Boolean): Unit = js.native
     def destroyEditor(revertOriginal: Boolean, prepareEditorIfNeeded: Boolean): Unit = js.native
+    
     def emptySelectedCells(): Unit = js.native
+    
+    var forceFullRender: Boolean = js.native
+    
     def getActiveEditor[T /* <: Base */](): js.UndefOr[T] = js.native
+    
     def getCell(row: Double, col: Double): HTMLTableCellElement | Null = js.native
     def getCell(row: Double, col: Double, topmost: Boolean): HTMLTableCellElement | Null = js.native
+    
     def getCellEditor[T /* <: Base */](cellMeta: CellMeta): T = js.native
     def getCellEditor[T /* <: Base */](row: Double, col: Double): T = js.native
+    
     def getCellMeta(row: Double, col: Double): CellProperties = js.native
+    
     def getCellMetaAtRow(row: Double): js.Array[CellProperties] = js.native
+    
     def getCellRenderer(cellMeta: CellMeta): typings.handsontable.mod.Handsontable.renderers.Base = js.native
     def getCellRenderer(row: Double, col: Double): typings.handsontable.mod.Handsontable.renderers.Base = js.native
+    
     def getCellValidator(cellMeta: CellMeta): js.UndefOr[typings.handsontable.mod.Handsontable.validators.Base | RegExp] = js.native
     def getCellValidator(row: Double, col: Double): js.UndefOr[typings.handsontable.mod.Handsontable.validators.Base | RegExp] = js.native
+    
     def getCellsMeta(): js.Array[CellProperties] = js.native
+    
     def getColHeader(): js.Array[Double | String] = js.native
     def getColHeader(col: Double): Double | String = js.native
+    
     def getColWidth(col: Double): Double = js.native
+    
     def getCoords(): CellCoords = js.native
     def getCoords(elem: Element): CellCoords = js.native
+    
     def getCopyableData(row: Double, column: Double): String = js.native
+    
     def getCopyableText(startRow: Double, startCol: Double, endRow: Double, endCol: Double): String = js.native
+    
     def getData(): js.Array[CellValue] = js.native
     def getData(
       row: js.UndefOr[scala.Nothing],
@@ -5202,14 +5660,22 @@ object _Handsontable extends js.Object {
     def getData(row: Double, column: Double, row2: js.UndefOr[scala.Nothing], column2: Double): js.Array[CellValue] = js.native
     def getData(row: Double, column: Double, row2: Double): js.Array[CellValue] = js.native
     def getData(row: Double, column: Double, row2: Double, column2: Double): js.Array[CellValue] = js.native
+    
     def getDataAtCell(row: Double, column: Double): CellValue = js.native
+    
     def getDataAtCol(column: Double): js.Array[CellValue] = js.native
+    
     def getDataAtProp(prop: String): js.Array[CellValue] = js.native
     def getDataAtProp(prop: Double): js.Array[CellValue] = js.native
+    
     def getDataAtRow(row: Double): js.Array[CellValue] = js.native
+    
     def getDataAtRowProp(row: Double, prop: String): CellValue = js.native
+    
     def getDataType(rowFrom: Double, columnFrom: Double, rowTo: Double, columnTo: Double): CellType | mixed = js.native
+    
     def getInstance(): Handsontable = js.native
+    
     @JSName("getPlugin")
     def getPlugin_autoColumnSize(pluginName: autoColumnSize): AutoColumnSize = js.native
     @JSName("getPlugin")
@@ -5233,6 +5699,8 @@ object _Handsontable extends js.Object {
     @JSName("getPlugin")
     def getPlugin_copyPaste(pluginName: copyPaste): CopyPaste = js.native
     @JSName("getPlugin")
+    def getPlugin_customBorders(pluginName: customBorders): CustomBorders = js.native
+    @JSName("getPlugin")
     def getPlugin_dragToScroll(pluginName: dragToScroll): DragToScroll = js.native
     @JSName("getPlugin")
     def getPlugin_dropdownMenu(pluginName: dropdownMenu): DropdownMenu = js.native
@@ -5242,8 +5710,6 @@ object _Handsontable extends js.Object {
     def getPlugin_filters(pluginName: filters): Filters = js.native
     @JSName("getPlugin")
     def getPlugin_formulas(pluginName: formulas): Formulas = js.native
-    @JSName("getPlugin")
-    def getPlugin_ganttChart(pluginName: ganttChart): GanttChart = js.native
     @JSName("getPlugin")
     def getPlugin_headerTooltips(pluginName: headerTooltips): HeaderTooltips = js.native
     @JSName("getPlugin")
@@ -5280,15 +5746,24 @@ object _Handsontable extends js.Object {
     def getPlugin_touchScroll(pluginName: touchScroll): TouchScroll = js.native
     @JSName("getPlugin")
     def getPlugin_trimRows(pluginName: trimRows): TrimRows = js.native
+    
     def getRowHeader(): js.Array[String | Double] = js.native
     def getRowHeader(row: Double): String | Double = js.native
+    
     def getRowHeight(row: Double): Double = js.native
+    
     def getSchema(): RowObject = js.native
+    
     def getSelected(): js.UndefOr[js.Array[js.Tuple4[Double, Double, Double, Double]]] = js.native
+    
     def getSelectedLast(): js.UndefOr[js.Array[Double]] = js.native
+    
     def getSelectedRange(): js.UndefOr[js.Array[CellRange]] = js.native
+    
     def getSelectedRangeLast(): js.UndefOr[CellRange] = js.native
+    
     def getSettings(): GridSettings = js.native
+    
     def getSourceData(): js.Array[js.Array[CellValue] | RowObject] = js.native
     def getSourceData(
       row: js.UndefOr[scala.Nothing],
@@ -5310,6 +5785,7 @@ object _Handsontable extends js.Object {
     def getSourceData(row: Double, column: Double, row2: js.UndefOr[scala.Nothing], column2: Double): js.Array[js.Array[CellValue] | RowObject] = js.native
     def getSourceData(row: Double, column: Double, row2: Double): js.Array[js.Array[CellValue] | RowObject] = js.native
     def getSourceData(row: Double, column: Double, row2: Double, column2: Double): js.Array[js.Array[CellValue] | RowObject] = js.native
+    
     def getSourceDataArray(): js.Array[js.Array[CellValue]] = js.native
     def getSourceDataArray(
       row: js.UndefOr[scala.Nothing],
@@ -5331,21 +5807,43 @@ object _Handsontable extends js.Object {
     def getSourceDataArray(row: Double, column: Double, row2: js.UndefOr[scala.Nothing], ccolumn2: Double): js.Array[js.Array[CellValue]] = js.native
     def getSourceDataArray(row: Double, column: Double, row2: Double): js.Array[js.Array[CellValue]] = js.native
     def getSourceDataArray(row: Double, column: Double, row2: Double, ccolumn2: Double): js.Array[js.Array[CellValue]] = js.native
+    
     def getSourceDataAtCell(row: Double, column: Double): CellValue = js.native
+    
     def getSourceDataAtCol(column: Double): js.Array[CellValue] = js.native
+    
     def getSourceDataAtRow(row: Double): js.Array[CellValue] | RowObject = js.native
+    
     def getTranslatedPhrase(dictionaryKey: String, extraArguments: js.Any): String | Null = js.native
+    
     def getValue(): CellValue = js.native
+    
     def hasColHeaders(): Boolean = js.native
-    def hasHook(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any): Boolean = js.native
+    
+    def hasHook(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 163 */ js.Any): Boolean = js.native
+    
     def hasRowHeaders(): Boolean = js.native
+    
     def init(): js.Function0[Unit] = js.native
+    
     def isColumnModificationAllowed(): Boolean = js.native
+    
+    var isDestroyed: Boolean = js.native
+    
     def isEmptyCol(col: Double): Boolean = js.native
+    
     def isEmptyRow(row: Double): Boolean = js.native
+    
     def isListening(): Boolean = js.native
+    
+    def isRedoAvailable(): Boolean = js.native
+    
+    def isUndoAvailable(): Boolean = js.native
+    
     def listen(): Unit = js.native
+    
     def loadData(data: js.Array[js.Array[CellValue] | RowObject]): Unit = js.native
+    
     def populateFromArray(
       row: Double,
       col: Double,
@@ -5357,9 +5855,14 @@ object _Handsontable extends js.Object {
       direction: js.UndefOr[left | right | up | down],
       deltas: js.UndefOr[js.Array[_]]
     ): Unit = js.native
+    
     def propToCol(prop: String): Double = js.native
     def propToCol(prop: Double): Double = js.native
+    
+    def redo(): Unit = js.native
+    
     def refreshDimensions(): Unit = js.native
+    
     def removeCellMeta(row: Double, col: Double, key: String): Unit = js.native
     @JSName("removeCellMeta")
     def removeCellMeta_comment(row: Double, col: Double, key: comment): Unit = js.native
@@ -5371,6 +5874,7 @@ object _Handsontable extends js.Object {
     def removeCellMeta_skipRowOnPaste(row: Double, col: Double, key: skipRowOnPaste): Unit = js.native
     @JSName("removeCellMeta")
     def removeCellMeta_valid(row: Double, col: Double, key: valid): Unit = js.native
+    
     def removeHook(
       key: afterModifyTransformEnd,
       callback: js.Function3[
@@ -5427,6 +5931,16 @@ object _Handsontable extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    def removeHook(
+      key: modifySourceData,
+      callback: js.Function4[
+          /* row */ Double, 
+          /* col */ Double, 
+          /* valueHolder */ ValueCellValue, 
+          /* ioMode */ get | set, 
+          Unit
+        ]
+    ): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterAddChild(key: afterAddChild): Unit = js.native
     @JSName("removeHook")
@@ -5436,6 +5950,18 @@ object _Handsontable extends js.Object {
           /* parent */ RowObject, 
           /* element */ RowObject | Unit, 
           /* index */ Double | Unit, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterAutofill(key: afterAutofill): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterAutofill(
+      key: afterAutofill,
+      callback: js.Function3[
+          /* start */ CellCoords, 
+          /* end */ CellCoords, 
+          /* data */ js.Array[js.Array[CellValue]], 
           Unit
         ]
     ): Unit = js.native
@@ -5459,6 +5985,32 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_afterChangesObserved(key: afterChangesObserved, callback: js.Function0[Unit]): Unit = js.native
     @JSName("removeHook")
+    def removeHook_afterColumnCollapse(key: afterColumnCollapse): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterColumnCollapse(
+      key: afterColumnCollapse,
+      callback: js.Function4[
+          /* currentCollapsedColumn */ js.Array[Double], 
+          /* destinationCollapsedColumns */ js.Array[Double], 
+          /* collapsePossible */ Boolean, 
+          /* successfullyCollapsed */ Boolean, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterColumnExpand(key: afterColumnExpand): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterColumnExpand(
+      key: afterColumnExpand,
+      callback: js.Function4[
+          /* currentCollapsedColumn */ js.Array[Double], 
+          /* destinationCollapsedColumns */ js.Array[Double], 
+          /* expandPossible */ Boolean, 
+          /* successfullyExpanded */ Boolean, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("removeHook")
     def removeHook_afterColumnMove(key: afterColumnMove): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterColumnMove(
@@ -5470,7 +6022,7 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_afterColumnResize(
       key: afterColumnResize,
-      callback: js.Function3[/* currentColumn */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+      callback: js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterColumnSort(key: afterColumnSort): Unit = js.native
@@ -5672,7 +6224,10 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_afterLoadData(key: afterLoadData): Unit = js.native
     @JSName("removeHook")
-    def removeHook_afterLoadData(key: afterLoadData, callback: js.Function1[/* initialLoad */ Boolean, Unit]): Unit = js.native
+    def removeHook_afterLoadData(
+      key: afterLoadData,
+      callback: js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+    ): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterMergeCells(key: afterMergeCells): Unit = js.native
     @JSName("removeHook")
@@ -5786,7 +6341,7 @@ object _Handsontable extends js.Object {
       callback: js.Function4[
           /* index */ Double, 
           /* amount */ Double, 
-          /* physicalColumns */ js.Array[Double], 
+          /* physicalRows */ js.Array[Double], 
           /* source */ js.UndefOr[ChangeSource], 
           Unit
         ]
@@ -5813,13 +6368,23 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_afterRowMove(key: afterRowMove): Unit = js.native
     @JSName("removeHook")
-    def removeHook_afterRowMove(key: afterRowMove, callback: js.Function2[/* startRow */ Double, /* endRow */ Double, Unit]): Unit = js.native
+    def removeHook_afterRowMove(
+      key: afterRowMove,
+      callback: js.Function5[
+          /* movedRows */ js.Array[Double], 
+          /* finalIndex */ Double, 
+          /* dropIndex */ Double | Unit, 
+          /* movePossible */ Boolean, 
+          /* orderChanged */ Boolean, 
+          Unit
+        ]
+    ): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterRowResize(key: afterRowResize): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterRowResize(
       key: afterRowResize,
-      callback: js.Function3[/* currentRow */ Double, /* newSize */ Double, /* isDoubleClick */ Boolean, Unit]
+      callback: js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Unit]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterScrollHorizontally(key: afterScrollHorizontally): Unit = js.native
@@ -5906,6 +6471,13 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_afterSetDataAtRowProp(
       key: afterSetDataAtRowProp,
+      callback: js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
+    ): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterSetSourceDataAtCell(key: afterSetSourceDataAtCell): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_afterSetSourceDataAtCell(
+      key: afterSetSourceDataAtCell,
       callback: js.Function2[/* changes */ js.Array[CellChange], /* source */ js.UndefOr[ChangeSource], Unit]
     ): Unit = js.native
     @JSName("removeHook")
@@ -6028,7 +6600,7 @@ object _Handsontable extends js.Object {
           /* start */ CellCoords, 
           /* end */ CellCoords, 
           /* data */ js.Array[js.Array[CellValue]], 
-          Unit
+          Unit | Boolean
         ]
     ): Unit = js.native
     @JSName("removeHook")
@@ -6050,6 +6622,30 @@ object _Handsontable extends js.Object {
       callback: js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit]
     ): Unit = js.native
     @JSName("removeHook")
+    def removeHook_beforeColumnCollapse(key: beforeColumnCollapse): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeColumnCollapse(
+      key: beforeColumnCollapse,
+      callback: js.Function3[
+          /* currentCollapsedColumn */ js.Array[Double], 
+          /* destinationCollapsedColumns */ js.Array[Double], 
+          /* collapsePossible */ Boolean, 
+          Unit | Boolean
+        ]
+    ): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeColumnExpand(key: beforeColumnExpand): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeColumnExpand(
+      key: beforeColumnExpand,
+      callback: js.Function3[
+          /* currentCollapsedColumn */ js.Array[Double], 
+          /* destinationCollapsedColumns */ js.Array[Double], 
+          /* expandPossible */ Boolean, 
+          Unit | Boolean
+        ]
+    ): Unit = js.native
+    @JSName("removeHook")
     def removeHook_beforeColumnMove(key: beforeColumnMove): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeColumnMove(
@@ -6061,12 +6657,7 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_beforeColumnResize(
       key: beforeColumnResize,
-      callback: js.Function3[
-          /* currentColumn */ Double, 
-          /* newSize */ Double, 
-          /* isDoubleClick */ Boolean, 
-          Unit | Double
-        ]
+      callback: js.Function3[/* newSize */ Double, /* column */ Double, /* isDoubleClick */ Boolean, Unit | Double]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeColumnSort(key: beforeColumnSort): Unit = js.native
@@ -6205,6 +6796,13 @@ object _Handsontable extends js.Object {
     def removeHook_beforeLanguageChange(key: beforeLanguageChange): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeLanguageChange(key: beforeLanguageChange, callback: js.Function1[/* languageCode */ String, Unit]): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeLoadData(key: beforeLoadData): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeLoadData(
+      key: beforeLoadData,
+      callback: js.Function2[/* sourceData */ js.Array[CellValue], /* initialLoad */ Boolean, Unit]
+    ): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeMergeCells(key: beforeMergeCells): Unit = js.native
     @JSName("removeHook")
@@ -6353,19 +6951,27 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_beforeRowMove(
       key: beforeRowMove,
-      callback: js.Function2[/* columns */ js.Array[Double], /* target */ Double, Unit]
+      callback: js.Function4[
+          /* movedRows */ js.Array[Double], 
+          /* finalIndex */ Double, 
+          /* dropIndex */ Double | Unit, 
+          /* movePossible */ Boolean, 
+          Unit
+        ]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeRowResize(key: beforeRowResize): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeRowResize(
       key: beforeRowResize,
-      callback: js.Function3[
-          /* currentRow */ Double, 
-          /* newSize */ Double, 
-          /* isDoubleClick */ Boolean, 
-          Double | Unit
-        ]
+      callback: js.Function3[/* newSize */ Double, /* row */ Double, /* isDoubleClick */ Boolean, Double | Unit]
+    ): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeSetCellMeta(key: beforeSetCellMeta): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_beforeSetCellMeta(
+      key: beforeSetCellMeta,
+      callback: js.Function4[/* row */ Double, /* col */ Double, /* key */ String, /* value */ js.Any, Boolean | Unit]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeSetRangeEnd(key: beforeSetRangeEnd): Unit = js.native
@@ -6474,14 +7080,6 @@ object _Handsontable extends js.Object {
     @JSName("removeHook")
     def removeHook_construct(key: construct, callback: js.Function0[Unit]): Unit = js.native
     @JSName("removeHook")
-    def removeHook_hiddenColumn(key: hiddenColumn): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_hiddenColumn(key: hiddenColumn, callback: js.Function1[/* column */ Double, Unit]): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_hiddenRow(key: hiddenRow): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_hiddenRow(key: hiddenRow, callback: js.Function1[/* row */ Double, Unit]): Unit = js.native
-    @JSName("removeHook")
     def removeHook_init(key: init): Unit = js.native
     @JSName("removeHook")
     def removeHook_init(key: init, callback: js.Function0[Unit]): Unit = js.native
@@ -6496,10 +7094,6 @@ object _Handsontable extends js.Object {
           Unit
         ]
     ): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_modifyCol(key: modifyCol): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_modifyCol(key: modifyCol, callback: js.Function1[/* col */ Double, Unit]): Unit = js.native
     @JSName("removeHook")
     def removeHook_modifyColHeader(key: modifyColHeader): Unit = js.native
     @JSName("removeHook")
@@ -6531,10 +7125,6 @@ object _Handsontable extends js.Object {
         ]
     ): Unit = js.native
     @JSName("removeHook")
-    def removeHook_modifyRow(key: modifyRow): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_modifyRow(key: modifyRow, callback: js.Function1[/* row */ Double, Unit]): Unit = js.native
-    @JSName("removeHook")
     def removeHook_modifyRowData(key: modifyRowData): Unit = js.native
     @JSName("removeHook")
     def removeHook_modifyRowData(key: modifyRowData, callback: js.Function1[/* row */ Double, Unit]): Unit = js.native
@@ -6554,6 +7144,8 @@ object _Handsontable extends js.Object {
     def removeHook_modifyRowSourceData(key: modifyRowSourceData): Unit = js.native
     @JSName("removeHook")
     def removeHook_modifyRowSourceData(key: modifyRowSourceData, callback: js.Function1[/* row */ Double, Unit]): Unit = js.native
+    @JSName("removeHook")
+    def removeHook_modifySourceData(key: modifySourceData): Unit = js.native
     @JSName("removeHook")
     def removeHook_modifyTransformEnd(key: modifyTransformEnd): Unit = js.native
     @JSName("removeHook")
@@ -6577,22 +7169,23 @@ object _Handsontable extends js.Object {
     def removeHook_persistentStateSave(key: persistentStateSave): Unit = js.native
     @JSName("removeHook")
     def removeHook_persistentStateSave(key: persistentStateSave, callback: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_skipLengthCache(key: skipLengthCache): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_skipLengthCache(key: skipLengthCache, callback: js.Function1[/* delay */ Double, Unit]): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_unmodifyCol(key: unmodifyCol): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_unmodifyCol(key: unmodifyCol, callback: js.Function1[/* col */ Double, Unit]): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_unmodifyRow(key: unmodifyRow): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_unmodifyRow(key: unmodifyRow, callback: js.Function1[/* row */ Double, Unit]): Unit = js.native
+    
     def render(): Unit = js.native
+    
+    var renderCall: Boolean = js.native
+    
+    var rootDocument: Document = js.native
+    
+    var rootElement: HTMLElement = js.native
+    
+    var rootWindow: Window = js.native
+    
+    var rowIndexMapper: IndexMapper = js.native
+    
     def rowOffset(): Double = js.native
+    
     def runHooks(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 163 */ js.Any,
       p1: js.UndefOr[js.Any],
       p2: js.UndefOr[js.Any],
       p3: js.UndefOr[js.Any],
@@ -6600,6 +7193,7 @@ object _Handsontable extends js.Object {
       p5: js.UndefOr[js.Any],
       p6: js.UndefOr[js.Any]
     ): js.Any = js.native
+    
     // Requires TS 3.0:
     // runHooks<K extends keyof Handsontable.Events>(key: K, ...params: Parameters<Handsontable.Events[K]>): ReturnType<Handsontable.Events[K]>;
     def scrollViewportTo(): Boolean = js.native
@@ -6607,38 +7201,152 @@ object _Handsontable extends js.Object {
       row: js.UndefOr[scala.Nothing],
       column: js.UndefOr[scala.Nothing],
       snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: js.UndefOr[scala.Nothing],
       snapToRight: Boolean
+    ): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
     ): Boolean = js.native
     def scrollViewportTo(row: js.UndefOr[scala.Nothing], column: js.UndefOr[scala.Nothing], snapToBottom: Boolean): Boolean = js.native
     def scrollViewportTo(
       row: js.UndefOr[scala.Nothing],
       column: js.UndefOr[scala.Nothing],
       snapToBottom: Boolean,
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: Boolean,
       snapToRight: Boolean
+    ): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: Boolean,
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
     ): Boolean = js.native
     def scrollViewportTo(row: js.UndefOr[scala.Nothing], column: Double): Boolean = js.native
     def scrollViewportTo(
       row: js.UndefOr[scala.Nothing],
       column: Double,
       snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: Double,
+      snapToBottom: js.UndefOr[scala.Nothing],
       snapToRight: Boolean
     ): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: Double,
+      snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: js.UndefOr[scala.Nothing], column: Double, snapToBottom: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: Double,
+      snapToBottom: Boolean,
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: js.UndefOr[scala.Nothing], column: Double, snapToBottom: Boolean, snapToRight: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: js.UndefOr[scala.Nothing],
+      column: Double,
+      snapToBottom: Boolean,
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(
       row: Double,
       column: js.UndefOr[scala.Nothing],
       snapToBottom: js.UndefOr[scala.Nothing],
       snapToRight: Boolean
     ): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double, column: js.UndefOr[scala.Nothing], snapToBottom: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: Boolean,
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double, column: js.UndefOr[scala.Nothing], snapToBottom: Boolean, snapToRight: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: js.UndefOr[scala.Nothing],
+      snapToBottom: Boolean,
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double, column: Double): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: Double,
+      snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double, column: Double, snapToBottom: js.UndefOr[scala.Nothing], snapToRight: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: Double,
+      snapToBottom: js.UndefOr[scala.Nothing],
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double, column: Double, snapToBottom: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: Double,
+      snapToBottom: Boolean,
+      snapToRight: js.UndefOr[scala.Nothing],
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
     def scrollViewportTo(row: Double, column: Double, snapToBottom: Boolean, snapToRight: Boolean): Boolean = js.native
+    def scrollViewportTo(
+      row: Double,
+      column: Double,
+      snapToBottom: Boolean,
+      snapToRight: Boolean,
+      considerHiddenIndexes: Boolean
+    ): Boolean = js.native
+    
     def selectAll(): Unit = js.native
+    
     def selectCell(row: Double, col: Double): Boolean = js.native
     def selectCell(
       row: Double,
@@ -6717,6 +7425,7 @@ object _Handsontable extends js.Object {
       scrollToCell: Boolean,
       changeListener: Boolean
     ): Boolean = js.native
+    
     def selectCellByProp(row: Double, prop: String): Boolean = js.native
     def selectCellByProp(
       row: Double,
@@ -6743,6 +7452,7 @@ object _Handsontable extends js.Object {
     ): Boolean = js.native
     def selectCellByProp(row: Double, prop: String, endRow: Double, endProp: String): Boolean = js.native
     def selectCellByProp(row: Double, prop: String, endRow: Double, endProp: String, scrollToCell: Boolean): Boolean = js.native
+    
     def selectCells(coords: js.Array[CellRange | (js.Tuple4[Double, Double | String, Double, Double | String])]): Boolean = js.native
     def selectCells(
       coords: js.Array[CellRange | (js.Tuple4[Double, Double | String, Double, Double | String])],
@@ -6758,16 +7468,21 @@ object _Handsontable extends js.Object {
       scrollToCell: Boolean,
       changeListener: Boolean
     ): Boolean = js.native
+    
     def selectColumns(startColumn: String): Boolean = js.native
     def selectColumns(startColumn: String, endColumn: String): Boolean = js.native
     def selectColumns(startColumn: String, endColumn: Double): Boolean = js.native
     def selectColumns(startColumn: Double): Boolean = js.native
     def selectColumns(startColumn: Double, endColumn: String): Boolean = js.native
     def selectColumns(startColumn: Double, endColumn: Double): Boolean = js.native
+    
     def selectRows(startRow: Double): Boolean = js.native
     def selectRows(startRow: Double, endRow: Double): Boolean = js.native
+    
     def setCellMeta(row: Double, col: Double, key: String, `val`: js.Any): Unit = js.native
+    
     def setCellMetaObject[T /* <: CellMeta */](row: Double, col: Double, prop: T): Unit = js.native
+    
     @JSName("setCellMeta")
     def setCellMeta_comment(row: Double, col: Double, key: comment): Unit = js.native
     @JSName("setCellMeta")
@@ -6796,40 +7511,66 @@ object _Handsontable extends js.Object {
     def setCellMeta_valid(row: Double, col: Double, key: valid): Unit = js.native
     @JSName("setCellMeta")
     def setCellMeta_valid(row: Double, col: Double, key: valid, `val`: Boolean): Unit = js.native
+    
     def setDataAtCell(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]]): Unit = js.native
     def setDataAtCell(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]], source: String): Unit = js.native
     def setDataAtCell(row: Double, col: String, value: CellValue): Unit = js.native
     def setDataAtCell(row: Double, col: String, value: CellValue, source: String): Unit = js.native
     def setDataAtCell(row: Double, col: Double, value: CellValue): Unit = js.native
     def setDataAtCell(row: Double, col: Double, value: CellValue, source: String): Unit = js.native
+    
     def setDataAtRowProp(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]]): Unit = js.native
     def setDataAtRowProp(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]], source: String): Unit = js.native
     def setDataAtRowProp(row: Double, prop: String, value: CellValue): Unit = js.native
     def setDataAtRowProp(row: Double, prop: String, value: CellValue, source: String): Unit = js.native
+    
+    def setSourceDataAtCell(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]]): Unit = js.native
+    def setSourceDataAtCell(row: Double, column: String, value: CellValue): Unit = js.native
+    def setSourceDataAtCell(row: Double, column: String, value: CellValue, source: String): Unit = js.native
+    def setSourceDataAtCell(row: Double, column: Double, value: CellValue): Unit = js.native
+    def setSourceDataAtCell(row: Double, column: Double, value: CellValue, source: String): Unit = js.native
+    
     def spliceCol(col: Double, index: Double, amount: Double, elements: CellValue*): Unit = js.native
+    
     def spliceRow(row: Double, index: Double, amount: Double, elements: CellValue*): Unit = js.native
+    
+    var table: HTMLTableElement = js.native
+    
     def toHTML(): String = js.native
+    
     def toPhysicalColumn(column: Double): Double = js.native
+    
     def toPhysicalRow(row: Double): Double = js.native
+    
     def toTableElement(): HTMLTableElement = js.native
+    
     def toVisualColumn(column: Double): Double = js.native
+    
     def toVisualRow(row: Double): Double = js.native
+    
+    def undo(): Unit = js.native
+    
+    var undoRedo: UndoRedo = js.native
+    
     def unlisten(): Unit = js.native
+    
     def updateSettings(settings: GridSettings): Unit = js.native
     def updateSettings(settings: GridSettings, init: Boolean): Unit = js.native
+    
     def validateCell(
       value: js.Any,
       cellProperties: CellProperties,
       callback: js.Function1[/* valid */ Boolean, Unit],
       source: String
     ): Unit = js.native
+    
     def validateCells(): Unit = js.native
     def validateCells(callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    
     def validateColumns(columns: js.Array[Double]): Unit = js.native
     def validateColumns(columns: js.Array[Double], callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    
     def validateRows(rows: js.Array[Double]): Unit = js.native
     def validateRows(rows: js.Array[Double], callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   }
-  
 }
-

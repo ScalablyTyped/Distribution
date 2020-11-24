@@ -6,7 +6,7 @@ import typings.lunr.anon.`0`
 import typings.lunr.mod.Builder.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * lunr.Builder performs indexing on a set of documents and
@@ -20,58 +20,27 @@ import scala.scalajs.js.annotation._
 @JSImport("lunr", "Builder")
 @js.native
 class Builder () extends js.Object {
+  
   /**
     * A parameter to control field length normalization, setting this to 0 disabled normalization, 1 fully normalizes field lengths, the default value is 0.75.
     */
   var _b: Double = js.native
+  
   /**
     * Internal reference to the document fields to index.
     */
   var _fields: js.Array[String] = js.native
+  
   /**
     * A parameter to control how quickly an increase in term frequency results in term frequency saturation, the default value is 1.2.
     */
   var _k1: Double = js.native
+  
   /**
     * Internal reference to the document reference field.
     */
   var _ref: String = js.native
-  /**
-    * Keeps track of the total number of documents indexed.
-    */
-  var documentCount: Double = js.native
-  /**
-    * Keeps track of the length of documents added to the index.
-    */
-  var documentLengths: js.Object = js.native
-  /**
-    *  Keeps track of document term frequencies.
-    */
-  var documentTermFrequencies: js.Object = js.native
-  /**
-    * The inverted index maps terms to document fields.
-    */
-  var invertedIndex: js.Object = js.native
-  /**
-    * A list of metadata keys that have been whitelisted for entry in the index.
-    */
-  var metadataWhitelist: js.Array[String] = js.native
-  /**
-    * The pipeline performs text processing on tokens before indexing.
-    */
-  var pipeline: Pipeline = js.native
-  /**
-    * A pipeline for processing search terms before querying the index.
-    */
-  var searchPipeline: Pipeline = js.native
-  /**
-    * A counter incremented for each unique term, used to identify a terms position in the vector space.
-    */
-  var termIndex: Double = js.native
-  /**
-    * Function for splitting strings into tokens for indexing.
-    */
-  var tokenizer: Typeoftokenizer = js.native
+  
   /**
     * Adds a document to the index.
     *
@@ -90,6 +59,7 @@ class Builder () extends js.Object {
     */
   def add(doc: js.Object): Unit = js.native
   def add(doc: js.Object, attributes: `0`): Unit = js.native
+  
   /**
     * A parameter to tune the amount of field length normalisation that is applied when
     * calculating relevance scores. A value of 0 will completely disable any normalisation
@@ -99,6 +69,7 @@ class Builder () extends js.Object {
     * @param number - The value to set for this tuning parameter.
     */
   def b(number: Double): Unit = js.native
+  
   /**
     * Builds the index, creating an instance of lunr.Index.
     *
@@ -107,6 +78,22 @@ class Builder () extends js.Object {
     *
     */
   def build(): Index = js.native
+  
+  /**
+    * Keeps track of the total number of documents indexed.
+    */
+  var documentCount: Double = js.native
+  
+  /**
+    * Keeps track of the length of documents added to the index.
+    */
+  var documentLengths: js.Object = js.native
+  
+  /**
+    *  Keeps track of document term frequencies.
+    */
+  var documentTermFrequencies: js.Object = js.native
+  
   /**
     * Adds a field to the list of document fields that will be indexed. Every document being
     * indexed should have this field. Null values for this field in indexed documents will
@@ -124,6 +111,12 @@ class Builder () extends js.Object {
     */
   def field(fieldName: String): Unit = js.native
   def field(fieldName: String, attributes: Boost): Unit = js.native
+  
+  /**
+    * The inverted index maps terms to document fields.
+    */
+  var invertedIndex: js.Object = js.native
+  
   /**
     * A parameter that controls the speed at which a rise in term frequency results in term
     * frequency saturation. The default value is 1.2. Setting this to a higher value will give
@@ -132,6 +125,17 @@ class Builder () extends js.Object {
     * @param number - The value to set for this tuning parameter.
     */
   def k1(number: Double): Unit = js.native
+  
+  /**
+    * A list of metadata keys that have been whitelisted for entry in the index.
+    */
+  var metadataWhitelist: js.Array[String] = js.native
+  
+  /**
+    * The pipeline performs text processing on tokens before indexing.
+    */
+  var pipeline: Pipeline = js.native
+  
   /**
     * Sets the document field used as the document reference. Every document must have this field.
     * The type of this field in the document should be a string, if it is not a string it will be
@@ -145,6 +149,22 @@ class Builder () extends js.Object {
     * @param ref - The name of the reference field in the document.
     */
   def ref(ref: String): Unit = js.native
+  
+  /**
+    * A pipeline for processing search terms before querying the index.
+    */
+  var searchPipeline: Pipeline = js.native
+  
+  /**
+    * A counter incremented for each unique term, used to identify a terms position in the vector space.
+    */
+  var termIndex: Double = js.native
+  
+  /**
+    * Function for splitting strings into tokens for indexing.
+    */
+  var tokenizer: Typeoftokenizer = js.native
+  
   /**
     * Applies a plugin to the index builder.
     *
@@ -161,10 +181,10 @@ class Builder () extends js.Object {
     */
   def use(plugin: Plugin, args: js.Any*): Unit = js.native
 }
-
 @JSImport("lunr", "Builder")
 @js.native
 object Builder extends js.Object {
+  
   /**
     * A plugin is a function that is called with the index builder as its context.
     * Plugins can be used to customise or extend the behaviour of the index
@@ -177,4 +197,3 @@ object Builder extends js.Object {
     */
   type Plugin = js.ThisFunction1[/* this */ Builder, /* repeated */ js.Any, Unit]
 }
-

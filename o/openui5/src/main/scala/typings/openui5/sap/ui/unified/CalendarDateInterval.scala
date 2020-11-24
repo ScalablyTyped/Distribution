@@ -2,16 +2,18 @@ package typings.openui5.sap.ui.unified
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CalendarDateInterval extends Calendar_ {
+  
   /**
     * Gets current value of property <code>days</code>.number of days displayedon phones the maximum
     * rendered number of days is 8.Default value is <code>7</code>.
     * @returns Value of property <code>days</code>
     */
   def getDays(): Double = js.native
+  
   /**
     * Gets current value of property <code>pickerPopup</code>.If set, the month- and yearPicker opens on a
     * popupDefault value is <code>false</code>.
@@ -19,6 +21,7 @@ trait CalendarDateInterval extends Calendar_ {
     * @returns Value of property <code>pickerPopup</code>
     */
   def getPickerPopup(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showDayNamesLine</code>.If set the day names are shown in a
     * separate line.If not set the day names are shown inside the single days.Default value is
@@ -27,6 +30,7 @@ trait CalendarDateInterval extends Calendar_ {
     * @returns Value of property <code>showDayNamesLine</code>
     */
   def getShowDayNamesLine(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>days</code>.number of days displayedon phones the maximum
     * rendered number of days is 8.When called with a value of <code>null</code> or
@@ -36,6 +40,7 @@ trait CalendarDateInterval extends Calendar_ {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDays(iDays: Double): CalendarDateInterval = js.native
+  
   /**
     * Sets a new value for property <code>pickerPopup</code>.If set, the month- and yearPicker opens on a
     * popupWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -45,6 +50,7 @@ trait CalendarDateInterval extends Calendar_ {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPickerPopup(bPickerPopup: Boolean): CalendarDateInterval = js.native
+  
   /**
     * Sets a new value for property <code>showDayNamesLine</code>.If set the day names are shown in a
     * separate line.If not set the day names are shown inside the single days.When called with a value of
@@ -55,6 +61,7 @@ trait CalendarDateInterval extends Calendar_ {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowDayNamesLine(bShowDayNamesLine: Boolean): CalendarDateInterval = js.native
+  
   /**
     * Sets a new value for property <code>startDate</code>.Start date of the IntervalWhen called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -64,4 +71,3 @@ trait CalendarDateInterval extends Calendar_ {
     */
   def setStartDate(oStartDate: js.Any): CalendarDateInterval = js.native
 }
-

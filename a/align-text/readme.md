@@ -10,9 +10,9 @@ Align the text in a string.
 | ------------------ | :-------------: |
 | Full name          | align-text |
 | Keywords           | align, align-center, alignment, center, center-align, indent, pad, padding, right, right-align, text, typography |
-| # releases         | 1 |
-| # dependents       | 48 |
-| # downloads        | 162786867 |
+| # releases         | 0 |
+| # dependents       | 54 |
+| # downloads        | 144868540 |
 | # stars            | 3 |
 
 ## Links

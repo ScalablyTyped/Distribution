@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui.core
 import typings.openui5.anon.TypeofBusyIndicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.BusyIndicator")
 @js.native
 object BusyIndicator extends js.Object {
+  
   /**
     * Registers a handler for the "close" event
     * @param fnFunction The function to call, when the event occurs.           This function will be
@@ -17,6 +18,7 @@ object BusyIndicator extends js.Object {
     */
   def attachClose(fnFunction: js.Any): TypeofBusyIndicator = js.native
   def attachClose(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = js.native
+  
   /**
     * Registers a handler for the "open" event.
     * @param fnFunction The function to call, when the event occurs. This           function will be
@@ -26,6 +28,7 @@ object BusyIndicator extends js.Object {
     */
   def attachOpen(fnFunction: js.Any): TypeofBusyIndicator = js.native
   def attachOpen(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = js.native
+  
   /**
     * Unregisters a handler for the "close" event
     * @param fnFunction The callback function to unregister
@@ -33,6 +36,7 @@ object BusyIndicator extends js.Object {
     * @returns <code>this</code> to allow method chaining
     */
   def detachClose(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = js.native
+  
   /**
     * Unregisters a handler for the "open" event
     * @param fnFunction The callback function to unregister
@@ -40,10 +44,12 @@ object BusyIndicator extends js.Object {
     * @returns <code>this</code> to allow method chaining
     */
   def detachOpen(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = js.native
+  
   /**
     * Removes the BusyIndicator from the screen
     */
   def hide(): Unit = js.native
+  
   /**
     * Displays the BusyIndicator and starts blocking all user input.This only happens after some delay and
     * if after that delay theBusyIndicator.hide() has not yet been called in the meantime.There is a
@@ -54,4 +60,3 @@ object BusyIndicator extends js.Object {
     */
   def show(iDelay: Double): Unit = js.native
 }
-

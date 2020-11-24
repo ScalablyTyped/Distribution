@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.xrayMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "XRay")
 @js.native
@@ -14,4 +14,3 @@ class XRay ()
   extends typings.awsSdk.allMod.XRay {
   def this(options: ClientConfiguration) = this()
 }
-

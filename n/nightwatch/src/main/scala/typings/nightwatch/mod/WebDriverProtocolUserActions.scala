@@ -8,10 +8,11 @@ import typings.nightwatch.nightwatchStrings.middle
 import typings.nightwatch.nightwatchStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolUserActions extends js.Object {
+  
   /**
     * Double-clicks at the current mouse coordinates (set by `.moveTo()`).
     */
@@ -19,6 +20,7 @@ trait WebDriverProtocolUserActions extends js.Object {
   def doubleClick(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Click at the current mouse coordinates (set by `.moveTo()`).
     *
@@ -66,6 +68,7 @@ trait WebDriverProtocolUserActions extends js.Object {
     button: right,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Click and hold the left mouse button (at the coordinates set by the last `moveTo` command). Note that the next mouse-related command that should follow is `mouseButtonUp` .
     * Any other mouse command (such as click or another call to buttondown) will yield undefined behaviour.
@@ -115,6 +118,7 @@ trait WebDriverProtocolUserActions extends js.Object {
     button: right,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Releases the mouse button previously held (where the mouse is currently at). Must be called once for every `mouseButtonDown` command issued.
     *
@@ -163,6 +167,7 @@ trait WebDriverProtocolUserActions extends js.Object {
     button: right,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Move the mouse by an offset of the specified [Web Element ID](https://www.w3.org/TR/webdriver1/#dfn-web-elements) or relative to the current mouse cursor, if no element is specified.
     * If an element is provided but no offset, the mouse will be moved to the center of the element.
@@ -189,4 +194,3 @@ trait WebDriverProtocolUserActions extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

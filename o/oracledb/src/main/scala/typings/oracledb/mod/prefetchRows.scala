@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a query tuning option to set the number of additional rows the underlying Oracle Client library
@@ -25,4 +25,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "prefetchRows")
 @js.native
 object prefetchRows extends TopLevel[Double]
-

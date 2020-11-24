@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for a splitter control's cancelable client events concerning manipulations with a pane.
@@ -17,4 +17,3 @@ class ASPxClientSplitterPaneCancelEventArgs protected ()
     */
   def this(pane: typings.devexpressWeb.ASPxClientSplitterPane) = this()
 }
-

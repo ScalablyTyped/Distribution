@@ -39,11 +39,11 @@ import typings.semanticUiNag.semanticUiNagStrings.value
 import typings.semanticUiNag.semanticUiNagStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Nag_ extends js.Object {
-  var settings: NagSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Clears cookie so nag shows again
@@ -110,5 +110,6 @@ trait Nag_ extends js.Object {
   def apply(behavior: setting, value: NagSettings): JQuery = js.native
   def apply(behavior: show): JQuery = js.native
   def apply(settings: NagSettings): JQuery = js.native
+  
+  var settings: NagSettings = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.mediaconnectMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "MediaConnect")
 @js.native
@@ -14,4 +14,3 @@ class MediaConnect ()
   extends typings.awsSdk.allMod.MediaConnect {
   def this(options: ClientConfiguration) = this()
 }
-

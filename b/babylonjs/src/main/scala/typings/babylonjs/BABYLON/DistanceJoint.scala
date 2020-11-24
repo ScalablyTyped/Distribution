@@ -2,10 +2,11 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DistanceJoint extends PhysicsJoint {
+  
   /**
     * Update the predefined distance.
     * @param maxDistance The maximum preferred distance
@@ -14,4 +15,3 @@ trait DistanceJoint extends PhysicsJoint {
   def updateDistance(maxDistance: Double): Unit = js.native
   def updateDistance(maxDistance: Double, minDistance: Double): Unit = js.native
 }
-

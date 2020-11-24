@@ -2,26 +2,30 @@ package typings.massive.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("massive", "Writable")
 @js.native
 class Writable protected () extends Readable {
   /** A database table or other writable object */
   def this(spec: WritableSpecification) = this()
+  
   /** Delete a record or records. */
   def destroy(criteria: AnyObject[_]): js.Promise[js.Array[_]] = js.native
   def destroy(criteria: AnyObject[_], options: ResultProcessingOptions): js.Promise[js.Array[_]] = js.native
+  
   /**
     * Attempts to assemble primary key criteria for a record object representing a row in this table.
     * The criteria must include the full primary key, and must not invoke any operations.
     */
   def getPkCriteria(record: AnyObject[_]): AnyObject[_] = js.native
+  
   def insert(data: js.Array[AnyObject[_]]): js.Promise[js.Array[AnyObject[_]]] = js.native
   def insert(data: js.Array[AnyObject[_]], options: PersistenceInsertOptions with ResultProcessingOptions): js.Promise[js.Array[AnyObject[_]]] = js.native
   /** Insert a record or records into the table. */
   def insert(data: AnyObject[_]): js.Promise[AnyObject[_]] = js.native
   def insert(data: AnyObject[_], options: PersistenceInsertOptions with ResultProcessingOptions): js.Promise[AnyObject[_]] = js.native
+  
   /**
     * Saves an object.
     * If the object does not include a value for the table's primary key, this will emit an INSERT to create a new record.
@@ -34,8 +38,10 @@ class Writable protected () extends Readable {
     record: AnyObject[_],
     options: PersistenceInsertOptions with PersistenceUpdateDocOptions with ResultProcessingOptions
   ): js.Promise[AnyObject[_]] = js.native
+  
   /** Save a document to the database. This function will create or replace the entire document body. */
   def saveDoc(doc: AnyObject[_]): js.Promise[AnyObject[_]] = js.native
+  
   def update(criteria: Double, changes: AnyObject[_]): js.Promise[AnyObject[_]] = js.native
   def update(
     criteria: Double,
@@ -55,6 +61,7 @@ class Writable protected () extends Readable {
     changes: AnyObject[_],
     options: PersistenceUpdateDocOptions with ResultProcessingOptions
   ): js.Promise[AnyObject[_]] = js.native
+  
   def updateDoc(criteria: Double, changes: AnyObject[_]): js.Promise[AnyObject[_]] = js.native
   def updateDoc(
     criteria: Double,
@@ -80,4 +87,3 @@ class Writable protected () extends Readable {
     options: PersistenceUpdateDocOptions with ResultProcessingOptions
   ): js.Promise[AnyObject[_]] = js.native
 }
-

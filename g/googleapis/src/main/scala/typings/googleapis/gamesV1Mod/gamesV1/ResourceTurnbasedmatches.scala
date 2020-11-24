@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Turnbasedmatches")
 @js.native
 class ResourceTurnbasedmatches protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * games.turnBasedMatches.cancel
     * @desc Cancel a turn-based match.
@@ -41,6 +41,9 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * games.turnBasedMatches.create
     * @desc Create a turn-based match.
@@ -70,6 +73,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.decline
     * @desc Decline an invitation to play a turn-based match.
@@ -102,6 +106,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.dismiss
     * @desc Dismiss a turn-based match from the match list. The match will no
@@ -131,6 +136,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.finish
     * @desc Finish a turn-based match. Each player should make this call once,
@@ -163,6 +169,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.get
     * @desc Get the data for a turn-based match.
@@ -193,6 +200,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.join
     * @desc Join a turn-based match.
@@ -222,6 +230,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.leave
     * @desc Leave a turn-based match when it is not the current player's turn,
@@ -252,6 +261,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.leaveTurn
     * @desc Leave a turn-based match during the current player's turn, without
@@ -287,6 +297,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.list
     * @desc Returns turn-based matches the player is or was involved in.
@@ -322,6 +333,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatchList]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.rematch
     * @desc Create a rematch of a match that was previously completed, with the
@@ -358,6 +370,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatchRematch]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.sync
     * @desc Returns turn-based matches the player is or was involved in that
@@ -396,6 +409,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTurnBasedMatchSync]
   ): Unit = js.native
+  
   /**
     * games.turnBasedMatches.takeTurn
     * @desc Commit the results of a player turn.
@@ -430,4 +444,3 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTurnBasedMatch]
   ): Unit = js.native
 }
-

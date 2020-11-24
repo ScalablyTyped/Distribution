@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultLoginAccountOperationsAsync extends js.Object {
+  
   def AddLoginAccount(LoginAccount: ILoginAccount, Password: String): Unit = js.native
   def AddLoginAccount(
     LoginAccount: ILoginAccount,
@@ -48,6 +49,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ForceLogout(AccountNames: IStrings): Unit = js.native
   def ForceLogout(
     AccountNames: IStrings,
@@ -84,6 +86,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetLoginAccount(AccountName: String): Unit = js.native
   def GetLoginAccount(
     AccountName: String,
@@ -120,6 +123,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetLoginAccounts(): Unit = js.native
   def GetLoginAccounts(
     successCallback: js.UndefOr[scala.Nothing],
@@ -150,6 +154,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetLoginAccountsWithSessions(): Unit = js.native
   def GetLoginAccountsWithSessions(
     successCallback: js.UndefOr[scala.Nothing],
@@ -180,6 +185,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPersonalInformationFromDomain(AccountName: String): Unit = js.native
   def GetPersonalInformationFromDomain(
     AccountName: String,
@@ -219,6 +225,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ModifyLoginAccount(LoginAccount: ILoginAccount): Unit = js.native
   def ModifyLoginAccount(
     LoginAccount: ILoginAccount,
@@ -255,6 +262,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveLoginAccount(AccountName: String): Unit = js.native
   def RemoveLoginAccount(
     AccountName: String,
@@ -291,6 +299,7 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateLoginPassword(AccountName: String, NewPassword: String): Unit = js.native
   def UpdateLoginPassword(
     AccountName: String,
@@ -334,4 +343,3 @@ trait IVaultLoginAccountOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

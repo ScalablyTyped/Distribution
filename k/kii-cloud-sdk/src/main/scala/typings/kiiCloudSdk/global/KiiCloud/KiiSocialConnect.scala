@@ -4,7 +4,7 @@ import typings.kiiCloudSdk.KiiCloud.KiiSocialConnectOptions
 import typings.kiiCloudSdk.anon.`36`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiSocialConnect object
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiSocialConnect ()
   extends typings.kiiCloudSdk.KiiCloud.KiiSocialConnect
-
 /* static members */
 @JSGlobal("KiiCloud.KiiSocialConnect")
 @js.native
 object KiiSocialConnect extends js.Object {
+  
   /**
     * Retrieve the current user's access token expiration date from a social network
     *
@@ -30,6 +30,7 @@ object KiiSocialConnect extends js.Object {
     * @return The current access token expiration date, null if unavailable
     */
   def getAccessTokenExpirationForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = js.native
+  
   /**
     * Retrieve the current user's access token from a social network
     * The network must be set up and linked to the current user. It is recommended you save this to preferences for multi-session use.
@@ -41,6 +42,7 @@ object KiiSocialConnect extends js.Object {
     * @return The current access token, null if unavailable
     */
   def getAccessTokenForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = js.native
+  
   /**
     * Retrieve the current user's access token object from a social network
     *
@@ -75,6 +77,7 @@ object KiiSocialConnect extends js.Object {
     * @return tokenObject The current access token object, null if unavailable.
     */
   def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Any = js.native
+  
   /**
     * Link the currently logged in user with a social network
     *
@@ -256,6 +259,7 @@ object KiiSocialConnect extends js.Object {
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
   ] = js.native
+  
   /**
     * Log a user into the social network provided
     *
@@ -439,6 +443,7 @@ object KiiSocialConnect extends js.Object {
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
   ] = js.native
+  
   /**
     *
     *
@@ -572,6 +577,7 @@ object KiiSocialConnect extends js.Object {
     apiSecret: String,
     extras: js.Any
   ): Unit = js.native
+  
   /**
     * Unlink the currently logged in user with a social network
     *
@@ -634,4 +640,3 @@ object KiiSocialConnect extends js.Object {
     ]
   ] = js.native
 }
-

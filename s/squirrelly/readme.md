@@ -4,15 +4,15 @@
 Typings are for version 7.1
 
 ## Library description:
-Simple and powerful template engine that supports helpers, partials, filters, native code, and Express.
+Lightweight, fast, and powerful JS template engine. Supports helpers, filters, template inheritance
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | squirrelly |
-| Keywords           | template, engine, squirrelly, html, expressjs, sqrl, pug, handlebars, swig, filters, helpers |
-| # releases         | 38 |
-| # dependents       | 12 |
-| # downloads        | 73721 |
+| Keywords           | squirrelly, helpers, template inheritance, handlebars, ejs, template engine, typescript types |
+| # releases         | 54 |
+| # dependents       | 18 |
+| # downloads        | 205362 |
 | # stars            | 1 |
 
 ## Links

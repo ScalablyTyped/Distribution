@@ -8,7 +8,7 @@ import typings.heremaps.H.map.provider.RemoteTileProvider
 import typings.heremaps.H.util.Cache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Presents data as points or spatial map objects with data-driven styles and client-side clustering.
@@ -30,11 +30,11 @@ class ObjectLayer protected ()
     */
   def this(provider: RemoteTileProvider, options: Options) = this()
 }
-
 /* static members */
 @JSGlobal("H.datalens.ObjectLayer")
 @js.native
 object ObjectLayer extends js.Object {
+  
   /**
     * A factory method for data-driven icons. The method allows you to build an icon from SVG markup or JsonML object. Provides caching of icons with the same markup.
     * @param svg - SVG presented as markup or JsonML Array
@@ -46,14 +46,15 @@ object ObjectLayer extends js.Object {
   def createIcon(svg: String, options: typings.heremaps.H.map.Icon.Options): Icon = js.native
   def createIcon(svg: js.Array[_]): Icon = js.native
   def createIcon(svg: js.Array[_], options: typings.heremaps.H.map.Icon.Options): Icon = js.native
+  
   /**
     * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
     */
   def defaultDataToRows(data: Data): js.Array[Row] = js.native
+  
   /**
     * Returns cache of icons created with the createIcon method. Can be used to clean the icon cache.
     * @return - Icon cache
     */
   def getIconCache(): Cache = js.native
 }
-

@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/rbac/v1alpha1/roleList", "RoleList")
 @js.native
@@ -26,28 +26,32 @@ class RoleList protected () extends CustomResource {
   def this(name: String, args: RoleListArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: RoleListArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[rbacDotauthorizationDotk8sDotioSlashv1alpha1] = js.native
+  
   /**
     * Items is a list of Roles
     */
   val items: Output_[js.Array[Role]] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleList] = js.native
+  
   /**
     * Standard object's metadata.
     */
   val metadata: Output_[ListMeta] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/rbac/v1alpha1/roleList", "RoleList")
 @js.native
 object RoleList extends js.Object {
+  
   /**
     * Get an existing RoleList resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object RoleList extends js.Object {
     */
   def get(name: String, id: Input[ID]): RoleList = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): RoleList = js.native
+  
   /**
     * Returns true if the given object is an instance of RoleList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleList.RoleList */ Boolean = js.native
 }
-

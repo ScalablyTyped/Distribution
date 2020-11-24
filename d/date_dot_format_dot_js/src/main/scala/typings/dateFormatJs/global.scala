@@ -2,11 +2,12 @@ package typings.dateFormatJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * Accepts a date, a mask, or a date and a mask.
     * Returns a formatted version of the given date.
@@ -18,8 +19,7 @@ object global extends js.Object {
     */
   @js.native
   object dateFormat extends js.Object {
-    var i18n: DateFormatI18n = js.native
-    var masks: DateFormatMasks = js.native
+    
     def apply(): String = js.native
     def apply(date: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
     def apply(date: js.UndefOr[scala.Nothing], mask: String): String = js.native
@@ -28,7 +28,9 @@ object global extends js.Object {
     def apply(date: js.Any, mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
     def apply(date: js.Any, mask: String): String = js.native
     def apply(date: js.Any, mask: String, utc: Boolean): String = js.native
+    
+    var i18n: DateFormatI18n = js.native
+    
+    var masks: DateFormatMasks = js.native
   }
-  
 }
-

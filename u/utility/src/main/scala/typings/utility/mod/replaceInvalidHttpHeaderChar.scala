@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "replaceInvalidHttpHeaderChar")
 @js.native
 object replaceInvalidHttpHeaderChar extends js.Object {
+  
   /**
     * Replace invalid http header characters with replacement
     *
@@ -18,4 +19,3 @@ object replaceInvalidHttpHeaderChar extends js.Object {
   def apply(`val`: String, replacement: String): IReplaceInvalidHttpHeaderCharReturns = js.native
   def apply(`val`: String, replacement: js.Function1[/* repeated */ js.Any, _]): IReplaceInvalidHttpHeaderCharReturns = js.native
 }
-

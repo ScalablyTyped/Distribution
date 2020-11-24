@@ -2,11 +2,12 @@ package typings.direction.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("direction", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Detect direction: left-to-right, right-to-left, or neutral.
     *
@@ -19,4 +20,3 @@ object ^ extends js.Object {
     */
   def apply(value: String): Direction = js.native
 }
-

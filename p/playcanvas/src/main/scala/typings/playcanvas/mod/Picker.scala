@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new instance of a Picker object.
@@ -19,4 +19,3 @@ class Picker protected ()
   extends typings.playcanvas.pc.Picker {
   def this(app: typings.playcanvas.pc.Application, width: Double, height: Double) = this()
 }
-

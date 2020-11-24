@@ -25,12 +25,14 @@ import typings.rbx.rbxStrings.`9by16`
 import typings.rbx.rbxStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/elements/image/image-container", "IMAGE_CONTAINER_DEFAULTS")
 @js.native
 object IMAGE_CONTAINER_DEFAULTS extends js.Object {
+  
   var dimmensions: js.Tuple7[`16`, `24`, `32`, `48`, `64`, `96`, `128`] = js.native
+  
   var ratios: js.Tuple16[
     `16by9`, 
     `1by1`, 
@@ -50,4 +52,3 @@ object IMAGE_CONTAINER_DEFAULTS extends js.Object {
     square
   ] = js.native
 }
-

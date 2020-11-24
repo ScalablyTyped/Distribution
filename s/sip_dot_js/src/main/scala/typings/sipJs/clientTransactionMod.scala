@@ -8,11 +8,12 @@ import typings.sipJs.transactionStateMod.TransactionState
 import typings.sipJs.transactionUserMod.ClientTransactionUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/transactions/client-transaction", JSImport.Namespace)
 @js.native
 object clientTransactionMod extends js.Object {
+  
   @js.native
   abstract class ClientTransaction protected () extends Transaction {
     protected def this(
@@ -22,8 +23,9 @@ object clientTransactionMod extends js.Object {
       state: TransactionState,
       loggerCategory: String
     ) = this()
+    
     var _request: js.Any = js.native
-    var user: ClientTransactionUser = js.native
+    
     /**
       * A 408 to non-INVITE will always arrive too late to be useful ([3]),
       * The client already has full knowledge of the timeout. The only
@@ -35,21 +37,23 @@ object clientTransactionMod extends js.Object {
       * https://tools.ietf.org/html/rfc4320#section-4.1
       */
     /* protected */ def onRequestTimeout(): Unit = js.native
+    
     /**
       * Receive incoming responses from the transport which match this transaction.
       * Responses will be delivered to the transaction user as necessary.
       * @param response - The incoming response.
       */
     def receiveResponse(response: IncomingResponseMessage): Unit = js.native
+    
     /** The outgoing request the transaction handling. */
     def request: OutgoingRequestMessage = js.native
+    
+    var user: ClientTransactionUser = js.native
   }
-  
   /* static members */
   @js.native
   object ClientTransaction extends js.Object {
+    
     var makeId: js.Any = js.native
   }
-  
 }
-

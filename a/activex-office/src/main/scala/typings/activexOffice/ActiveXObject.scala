@@ -68,10 +68,11 @@ import typings.activexOffice.anon.Pctinfo
 import typings.activexOffice.anon.PpvObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: CommandBarButton,
     event: Click,
@@ -428,6 +429,7 @@ trait ActiveXObject extends js.Object {
     event: Release,
     handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ js.Object, Unit]
   ): Unit = js.native
+  
   @JSName("set")
   def set_List(obj: CommandBarComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: String): Unit = js.native
   @JSName("set")
@@ -439,4 +441,3 @@ trait ActiveXObject extends js.Object {
   @JSName("set")
   def set_accValue(obj: CommandBarComboBox, propertyName: accValue, parameterTypes: js.Array[_], newValue: String): Unit = js.native
 }
-

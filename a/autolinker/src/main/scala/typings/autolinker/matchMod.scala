@@ -8,11 +8,12 @@ import typings.autolinker.phoneMatchMod.PhoneMatchConfig
 import typings.autolinker.urlMatchMod.UrlMatchConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/match", JSImport.Namespace)
 @js.native
 object matchMod extends js.Object {
+  
   @js.native
   class EmailMatch protected ()
     extends typings.autolinker.emailMatchMod.EmailMatch {
@@ -79,6 +80,4 @@ object matchMod extends js.Object {
       */
     def this(cfg: UrlMatchConfig) = this()
   }
-  
 }
-

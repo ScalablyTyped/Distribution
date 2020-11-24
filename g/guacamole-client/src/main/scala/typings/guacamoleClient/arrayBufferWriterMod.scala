@@ -7,17 +7,19 @@ import typings.guacamoleClient.statusMod.Status
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/ArrayBufferWriter", JSImport.Namespace)
 @js.native
 object arrayBufferWriterMod extends js.Object {
+  
   @js.native
   class ArrayBufferWriter protected () extends js.Object {
     /**
       * @param stream The stream that data will be written
       */
     def this(stream: OutputStream) = this()
+    
     /**
       * The maximum length of any blob sent by this Guacamole.ArrayBufferWriter,
       * in bytes. Data sent via sendData() which exceeds
@@ -28,34 +30,35 @@ object arrayBufferWriterMod extends js.Object {
       *
       */
     var blobLength: Double = js.native
+    
     /**
       * Fired for received data, if acknowledged by the server.
       * @event
       * @param status The status of the operation.
       */
     var onack: Null | (js.Function1[/* status */ Status, Unit]) = js.native
+    
     def sendData(data: TypedArray): Unit = js.native
     /**
       * Sends the given data.
       * @param data The data to send.
       */
     def sendData(data: ArrayBuffer): Unit = js.native
+    
     /**
       * Signals that no further text will be sent, effectively closing the
       * stream.
       */
     def sendEnd(): Unit = js.native
   }
-  
   /* static members */
   @js.native
   object ArrayBufferWriter extends js.Object {
+    
     /**
       * The default maximum blob length for new Guacamole.ArrayBufferWriter
       * instances.
       */
     val DEFAULT_BLOB_LENGTH: `6048` = js.native
   }
-  
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.PaymentRequestUpdateEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PaymentRequestUpdateEvent")
 @js.native
@@ -14,7 +14,6 @@ class PaymentRequestUpdateEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: PaymentRequestUpdateEventInit) = this()
 }
-
 @JSGlobal("PaymentRequestUpdateEvent")
 @js.native
 object PaymentRequestUpdateEvent
@@ -24,4 +23,3 @@ object PaymentRequestUpdateEvent
       /* eventInitDict */ PaymentRequestUpdateEventInit, 
       typings.std.PaymentRequestUpdateEvent
     ]
-

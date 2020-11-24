@@ -2,11 +2,12 @@ package typings.trash.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("trash", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Move files and folders to the trash.
   @param input - Accepts paths and [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
@@ -23,4 +24,3 @@ object ^ extends js.Object {
   def apply(input: js.Array[String]): js.Promise[Unit] = js.native
   def apply(input: js.Array[String], options: Options): js.Promise[Unit] = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Namespaces$Routes")
 @js.native
 class ResourceNamespacesRoutes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.namespaces.routes.get
     * @desc Rpc to get information about a route.
@@ -41,6 +43,7 @@ class ResourceNamespacesRoutes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoute]
   ): Unit = js.native
+  
   /**
     * run.namespaces.routes.list
     * @desc Rpc to list routes.
@@ -80,4 +83,3 @@ class ResourceNamespacesRoutes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListRoutesResponse]
   ): Unit = js.native
 }
-

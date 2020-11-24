@@ -7,16 +7,18 @@ import typings.jqueryValidation.jqueryValidationStrings.add
 import typings.jqueryValidation.jqueryValidationStrings.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Remove the specified attributes from the first matched element and return them.
     *
     * @param attributes A space-separated list of attribute names to remove.
     */
   def removeAttrs(attributes: String): js.Any = js.native
+  
    // tslint:disable-line unified-signatures
   /**
     * Returns the validation rules for teh first selected element.
@@ -42,10 +44,12 @@ trait JQuery extends js.Object {
   def rules_remove(command: remove): js.Any = js.native
   @JSName("rules")
   def rules_remove(command: remove, rules: String): js.Any = js.native
+  
   /**
     * Checks whether the selected form is valid or whether all selected elements are valid.
     */
   def valid(): Boolean = js.native
+  
   /**
     * Validates the selected form.
     *
@@ -54,4 +58,3 @@ trait JQuery extends js.Object {
   def validate(): Validator = js.native
   def validate(options: ValidationOptions): Validator = js.native
 }
-

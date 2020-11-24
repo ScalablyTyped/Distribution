@@ -12,7 +12,7 @@ Just a spy library.
 | Keywords           | spy, test, testing |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 769 |
+| # downloads        | 544 |
 | # stars            | 0 |
 
 ## Links

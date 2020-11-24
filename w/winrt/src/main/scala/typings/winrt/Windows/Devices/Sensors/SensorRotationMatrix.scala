@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SensorRotationMatrix extends ISensorRotationMatrix
-
 object SensorRotationMatrix {
+  
   @scala.inline
   def apply(
     m11: Double,
@@ -24,4 +24,3 @@ object SensorRotationMatrix {
     __obj.asInstanceOf[SensorRotationMatrix]
   }
 }
-

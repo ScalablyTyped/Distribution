@@ -3,11 +3,14 @@ package typings.vueColor
 import typings.vue.vueMod.Vue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vue-color", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val version: String = js.native
+  
   @js.native
   class Chrome () extends Vue
   
@@ -28,7 +31,4 @@ object mod extends js.Object {
   
   @js.native
   class Swatches () extends Vue
-  
-  val version: String = js.native
 }
-

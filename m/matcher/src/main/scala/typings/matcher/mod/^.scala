@@ -2,11 +2,12 @@ package typings.matcher.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matcher", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Simple [wildcard](https://en.wikipedia.org/wiki/Wildcard_character) matching.
   	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
@@ -24,6 +25,7 @@ object ^ extends js.Object {
   	*/
   def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
   def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
+  
   /**
   	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
   	@param input - String or array of strings to match.
@@ -65,4 +67,3 @@ object ^ extends js.Object {
   def isMatch(input: js.Array[String], pattern: js.Array[String]): Boolean = js.native
   def isMatch(input: js.Array[String], pattern: js.Array[String], options: Options): Boolean = js.native
 }
-

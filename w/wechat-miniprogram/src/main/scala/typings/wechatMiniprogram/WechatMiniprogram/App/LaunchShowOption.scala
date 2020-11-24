@@ -3,16 +3,20 @@ package typings.wechatMiniprogram.WechatMiniprogram.App
 import typings.wechatMiniprogram.WechatMiniprogram.IAnyObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LaunchShowOption extends js.Object {
+  
   /** 打开小程序的路径 */
   var path: String = js.native
+  
   /** 打开小程序的query */
   var query: IAnyObject = js.native
+  
   /** 当场景为由从另一个小程序或公众号或App打开时，返回此字段 */
   var referrerInfo: js.UndefOr[ReferrerInfo] = js.native
+  
   /** 打开小程序的场景值
     * - 1001：发现栏小程序主入口，「最近使用」列表（基础库2.2.4版本起包含「我的小程序」列表）
     * - 1005：微信首页顶部搜索框的搜索结果页
@@ -84,40 +88,49 @@ trait LaunchShowOption extends js.Object {
     * - 1129：微信爬虫访问 [详情](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/sitemap.html)
     */
   var scene: SceneValues = js.native
+  
   /** shareTicket，详见 [获取更多转发信息]((转发#获取更多转发信息)) */
   var shareTicket: String = js.native
 }
-
 object LaunchShowOption {
+  
   @scala.inline
   def apply(path: String, query: IAnyObject, scene: SceneValues, shareTicket: String): LaunchShowOption = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchShowOption]
   }
+  
   @scala.inline
   implicit class LaunchShowOptionOps[Self <: LaunchShowOption] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQuery(value: IAnyObject): Self = this.set("query", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScene(value: SceneValues): Self = this.set("scene", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShareTicket(value: String): Self = this.set("shareTicket", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReferrerInfo(value: ReferrerInfo): Self = this.set("referrerInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReferrerInfo: Self = this.set("referrerInfo", js.undefined)
   }
-  
 }
-

@@ -4,11 +4,11 @@ import typings.ejWebAll.JQuery
 import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WidgetBase extends js.Object {
-  var element: JQuery = js.native
+  
   def _off(element: JQuery): js.Any = js.native
   def _off(element: JQuery, eventName: String): js.Any = js.native
   def _off(element: JQuery, eventName: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): js.Any = js.native
@@ -38,6 +38,7 @@ trait WidgetBase extends js.Object {
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): js.Any = js.native
+  
   def _on(element: JQuery): js.Any = js.native
   def _on(
     element: JQuery,
@@ -72,11 +73,16 @@ trait WidgetBase extends js.Object {
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): js.Any = js.native
+  
   def _trigger(): js.Any = js.native
   def _trigger(eventName: js.UndefOr[scala.Nothing], eventProp: js.Any): js.Any = js.native
   def _trigger(eventName: String): js.Any = js.native
   def _trigger(eventName: String, eventProp: js.Any): js.Any = js.native
+  
   def destroy(): Unit = js.native
+  
+  var element: JQuery = js.native
+  
   def option(): js.Any = js.native
   def option(prop: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], forceSet: Boolean): js.Any = js.native
   def option(prop: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
@@ -85,9 +91,11 @@ trait WidgetBase extends js.Object {
   def option(prop: js.Any, value: js.UndefOr[scala.Nothing], forceSet: Boolean): js.Any = js.native
   def option(prop: js.Any, value: js.Any): js.Any = js.native
   def option(prop: js.Any, value: js.Any, forceSet: Boolean): js.Any = js.native
+  
   def persistState(): Unit = js.native
+  
   def restoreState(silent: Boolean): Unit = js.native
+  
   def setModel(options: js.Any): js.Any = js.native
   def setModel(options: js.Any, forceSet: Boolean): js.Any = js.native
 }
-

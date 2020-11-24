@@ -74,71 +74,11 @@ import typings.oracleOraclejet.oracleOraclejetStrings.visualEffectsChanged
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettableProperties] {
-  var angleExtent: Double = js.native
-  var animationDuration: js.UndefOr[Double] = js.native
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | none = js.native
-  var borderColor: String = js.native
-  var borderRadius: String = js.native
-  var center: `12` = js.native
-  var color: String = js.native
-  var indicatorSize: Double = js.native
-  var innerRadius: Double = js.native
-  var label: PositionStyle = js.native
-  var max: Double = js.native
-  var metricLabel: ConverterPosition = js.native
-  var min: Double = js.native
-  var onAngleExtentChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[`12`], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onIndicatorSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onInnerRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[PositionStyle], _]) | Null = js.native
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[ConverterPosition], _]) | Null = js.native
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[circular | vertical | horizontal], _]) | Null = js.native
-  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[BorderColorBorderRadius], _]) | Null = js.native
-  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onReferenceLinesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceLine]], _]) | Null = js.native
-  var onStartAngleChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onThresholdDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[currentOnly | all | onIndicator], _]) | Null = js.native
-  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`13`], _]) | Null = js.native
-  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
-  var orientation: circular | vertical | horizontal = js.native
-  var plotArea: BorderColorBorderRadius = js.native
-  var readonly: Boolean = js.native
-  var referenceLines: js.Array[ReferenceLine] = js.native
-  var startAngle: Double = js.native
-  var step: Double | Null = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object = js.native
-  var thresholdDisplay: currentOnly | all | onIndicator = js.native
-  var thresholds: js.Array[Threshold] = js.native
-  var tooltip: `13` = js.native
-  val transientValue: Double | Null = js.native
-  var value: Double | Null = js.native
-  var visualEffects: none | auto = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -463,7 +403,25 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var angleExtent: Double = js.native
+  
+  var animationDuration: js.UndefOr[Double] = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var borderColor: String = js.native
+  
+  var borderRadius: String = js.native
+  
+  var center: `12` = js.native
+  
+  var color: String = js.native
+  
   def getMetricLabel(): String = js.native
+  
   @JSName("getProperty")
   def getProperty_angleExtent(property: angleExtent): Double = js.native
   @JSName("getProperty")
@@ -520,7 +478,90 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   def getProperty_value(property: value): Double | Null = js.native
   @JSName("getProperty")
   def getProperty_visualEffects(property: visualEffects): none | auto = js.native
+  
+  var indicatorSize: Double = js.native
+  
+  var innerRadius: Double = js.native
+  
+  var label: PositionStyle = js.native
+  
+  var max: Double = js.native
+  
+  var metricLabel: ConverterPosition = js.native
+  
+  var min: Double = js.native
+  
+  var onAngleExtentChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[`12`], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onIndicatorSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onInnerRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[PositionStyle], _]) | Null = js.native
+  
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onMetricLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[ConverterPosition], _]) | Null = js.native
+  
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[circular | vertical | horizontal], _]) | Null = js.native
+  
+  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[BorderColorBorderRadius], _]) | Null = js.native
+  
+  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onReferenceLinesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceLine]], _]) | Null = js.native
+  
+  var onStartAngleChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onThresholdDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[currentOnly | all | onIndicator], _]) | Null = js.native
+  
+  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`13`], _]) | Null = js.native
+  
+  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
+  
+  var orientation: circular | vertical | horizontal = js.native
+  
+  var plotArea: BorderColorBorderRadius = js.native
+  
+  var readonly: Boolean = js.native
+  
+  var referenceLines: js.Array[ReferenceLine] = js.native
+  
   def setProperties(properties: ojStatusMeterGaugeSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
@@ -587,5 +628,24 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var startAngle: Double = js.native
+  
+  var step: Double | Null = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object = js.native
+  
+  var thresholdDisplay: currentOnly | all | onIndicator = js.native
+  
+  var thresholds: js.Array[Threshold] = js.native
+  
+  var tooltip: `13` = js.native
+  
+  val transientValue: Double | Null = js.native
+  
+  var value: Double | Null = js.native
+  
+  var visualEffects: none | auto = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.Mocha.SuiteFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describe a "suite" containing nested suites and tests.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha.describe")
 @js.native
 object describe extends TopLevel[SuiteFunction]
-

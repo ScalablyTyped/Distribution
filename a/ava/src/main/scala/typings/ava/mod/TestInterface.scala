@@ -2,38 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TestInterface[Context] extends js.Object {
-  /** Declare a hook that is run after each passing test. */
-  @JSName("afterEach")
-  var afterEach_Original: AfterInterface[Context] = js.native
-  /** Declare a hook that is run once, after all tests have passed. */
-  @JSName("after")
-  var after_Original: AfterInterface[Context] = js.native
-  /** Declare a hook that is run before each test. */
-  @JSName("beforeEach")
-  var beforeEach_Original: BeforeInterface[Context] = js.native
-  /** Declare a hook that is run once, before all tests. */
-  @JSName("before")
-  var before_Original: BeforeInterface[Context] = js.native
-  /** Declare a test that must call `t.end()` when it's done. */
-  @JSName("cb")
-  var cb_Original: CbInterface[Context] = js.native
-  /** Declare a test that is expected to fail. */
-  @JSName("failing")
-  var failing_Original: FailingInterface[Context] = js.native
-  var meta: MetaInterface = js.native
-  @JSName("only")
-  var only_Original: OnlyInterface[Context] = js.native
-  /** Declare tests and hooks that are run serially. */
-  @JSName("serial")
-  var serial_Original: SerialInterface[Context] = js.native
-  @JSName("skip")
-  var skip_Original: SkipInterface[Context] = js.native
-  @JSName("todo")
-  var todo_Original: TodoDeclaration = js.native
+  
   /** Declare a concurrent test. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Declare a concurrent test that uses one or more macros. The macro is responsible for generating a unique test title. */
@@ -47,6 +20,7 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run once, after all tests have passed. */
   def after(implementation: Implementation[Context]): Unit = js.native
@@ -66,6 +40,7 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run after each passing test. */
   def afterEach(implementation: Implementation[Context]): Unit = js.native
@@ -85,6 +60,14 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  /** Declare a hook that is run after each passing test. */
+  @JSName("afterEach")
+  var afterEach_Original: AfterInterface[Context] = js.native
+  
+  /** Declare a hook that is run once, after all tests have passed. */
+  @JSName("after")
+  var after_Original: AfterInterface[Context] = js.native
+  
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run once, before all tests. */
   def before(implementation: Implementation[Context]): Unit = js.native
@@ -104,6 +87,7 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run before each test. */
   def beforeEach(implementation: Implementation[Context]): Unit = js.native
@@ -123,6 +107,14 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  /** Declare a hook that is run before each test. */
+  @JSName("beforeEach")
+  var beforeEach_Original: BeforeInterface[Context] = js.native
+  
+  /** Declare a hook that is run once, before all tests. */
+  @JSName("before")
+  var before_Original: BeforeInterface[Context] = js.native
+  
   /** Declare a test that must call `t.end()` when it's done. */
   /** Declare a test that must call `t.end()` when it's done. */
   def cb(title: String, implementation: CbImplementation[Context]): Unit = js.native
@@ -145,6 +137,10 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  /** Declare a test that must call `t.end()` when it's done. */
+  @JSName("cb")
+  var cb_Original: CbInterface[Context] = js.native
+  
   /** Declare a concurrent test. The test is expected to fail. */
   /** Declare a test that is expected to fail. */
   def failing(title: String, implementation: Implementation[Context]): Unit = js.native
@@ -167,6 +163,12 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  /** Declare a test that is expected to fail. */
+  @JSName("failing")
+  var failing_Original: FailingInterface[Context] = js.native
+  
+  var meta: MetaInterface = js.native
+  
   /** Declare a test. Only this test and others declared with `.only()` are run. */
   def only(title: String, implementation: Implementation[Context]): Unit = js.native
   /**
@@ -186,6 +188,9 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("only")
+  var only_Original: OnlyInterface[Context] = js.native
+  
   /** Declare a serial test. */
   /** Declare tests and hooks that are run serially. */
   def serial(title: String, implementation: Implementation[Context]): Unit = js.native
@@ -204,6 +209,10 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  /** Declare tests and hooks that are run serially. */
+  @JSName("serial")
+  var serial_Original: SerialInterface[Context] = js.native
+  
   /** Skip this test. */
   def skip(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Skip this test. */
@@ -217,6 +226,10 @@ trait TestInterface[Context] extends js.Object {
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
+  @JSName("skip")
+  var skip_Original: SkipInterface[Context] = js.native
+  
   def todo(title: String): Unit = js.native
+  @JSName("todo")
+  var todo_Original: TodoDeclaration = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a Roadmap control. The model of the Roadmap control must be a {@link UnoControlRoadmapModel}
@@ -25,8 +25,8 @@ trait UnoControlRoadmap
      with XView
      with XAccessible
      with XItemEventBroadcaster
-
 object UnoControlRoadmap {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -83,4 +83,3 @@ object UnoControlRoadmap {
     __obj.asInstanceOf[UnoControlRoadmap]
   }
 }
-

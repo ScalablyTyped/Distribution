@@ -5,7 +5,7 @@ import typings.jexl.expressionMod.Context
 import typings.jexl.expressionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Jexl is the Javascript Expression Language, capable of parsing and
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Jexl extends js.Object {
+  
   /**
     * Adds a binary operator to Jexl at the specified precedence. The higher the
     * precedence, the earlier the operator is applied in the order of operations.
@@ -31,6 +32,7 @@ trait Jexl extends js.Object {
     *      value, or a Promise that resolves with the resulting value.
     */
   def addBinaryOp(operator: String, precedence: Double, fn: BinaryOpFunction): Unit = js.native
+  
   /**
     * Adds or replaces a transform function in this Jexl instance.
     * @param name The name of the transform function, as it will be used
@@ -41,12 +43,14 @@ trait Jexl extends js.Object {
     *          - {...*} args: The arguments for this transform
     */
   def addTransform(name: String, fn: TransformFunction): Unit = js.native
+  
   /**
     * Syntactic sugar for calling {@link #addTransform} repeatedly.  This function
     * accepts a map of one or more transform names to their transform function.
     * @param map A map of transform names to transform functions
     */
   def addTransforms(map: StringDictionary[TransformFunction]): Unit = js.native
+  
   /**
     * Adds a unary operator to Jexl. Unary operators are currently only supported
     * on the left side of the value on which it will operate.
@@ -57,6 +61,7 @@ trait Jexl extends js.Object {
     *      that resolves with the resulting value.
     */
   def addUnaryOp(operator: String, fn: UnaryOpFunction): Unit = js.native
+  
   /**
     * Creates an Expression object from the given Jexl expression string, and
     * immediately compiles it. The returned Expression object can then be
@@ -66,6 +71,7 @@ trait Jexl extends js.Object {
     * @returns The compiled Expression object
     */
   def compile(expression: String): default = js.native
+  
   /**
     * Constructs an Expression object from a Jexl expression string.
     * @param expression The Jexl expression to be wrapped in an
@@ -73,6 +79,7 @@ trait Jexl extends js.Object {
     * @returns The Expression object representing the given string
     */
   def createExpression(expression: String): default = js.native
+  
   /**
     * Asynchronously evaluates a Jexl string within an optional context.
     * @param expression The Jexl expression to be evaluated
@@ -82,6 +89,7 @@ trait Jexl extends js.Object {
     */
   def eval(expression: String): js.Promise[_] = js.native
   def eval(expression: String, context: Context): js.Promise[_] = js.native
+  
   /**
     * Synchronously evaluates a Jexl string within an optional context.
     * @param expression The Jexl expression to be evaluated
@@ -92,16 +100,17 @@ trait Jexl extends js.Object {
     */
   def evalSync(expression: String): js.Any = js.native
   def evalSync(expression: String, context: Context): js.Any = js.native
+  
   /**
     * Retrieves a previously set transform function.
     * @param name The name of the transform function
     * @returns The transform function
     */
   def getTransform(name: String): TransformFunction = js.native
+  
   /**
     * Removes a binary or unary operator from the Jexl grammar.
     * @param operator The operator string to be removed
     */
   def removeOp(operator: String): Unit = js.native
 }
-

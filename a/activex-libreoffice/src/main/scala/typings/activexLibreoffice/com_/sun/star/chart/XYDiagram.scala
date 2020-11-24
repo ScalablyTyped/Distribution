@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a service for X/Y diagrams (Also known as scatter charts).
@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XYDiagram extends LineDiagram
-
 object XYDiagram {
+  
   @scala.inline
   def apply(
     AutomaticPosition: Boolean,
@@ -150,4 +150,3 @@ object XYDiagram {
     __obj.asInstanceOf[XYDiagram]
   }
 }
-

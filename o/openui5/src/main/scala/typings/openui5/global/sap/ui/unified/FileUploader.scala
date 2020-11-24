@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.unified
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.unified.FileUploader")
 @js.native
@@ -28,4 +28,3 @@ class FileUploader ()
   def this(sId: String) = this()
   def this(sId: String, mSettings: js.Any) = this()
 }
-

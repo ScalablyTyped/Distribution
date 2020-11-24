@@ -10,9 +10,9 @@ A collection of useful utilities.
 | ------------------ | :-------------: |
 | Full name          | utility |
 | Keywords           | utility, util, utils, sha256, sha1, hash, hex |
-| # releases         | 8 |
-| # dependents       | 182 |
-| # downloads        | 4473764 |
+| # releases         | 6 |
+| # dependents       | 197 |
+| # downloads        | 5196084 |
 | # stars            | 23 |
 
 ## Links

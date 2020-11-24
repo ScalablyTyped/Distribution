@@ -10,9 +10,9 @@ A fast, safe, compliant XML parser for Node.js and browsers.
 | ------------------ | :-------------: |
 | Full name          | @rgrove/parse-xml |
 | Keywords           | xml, parse, parser |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 107754 |
+| # releases         | 7 |
+| # dependents       | 25 |
+| # downloads        | 119792 |
 | # stars            | 1 |
 
 ## Links

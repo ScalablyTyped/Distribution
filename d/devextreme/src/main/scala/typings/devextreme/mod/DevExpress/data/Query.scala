@@ -5,54 +5,111 @@ import typings.devextreme.mod.global.Promise
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query extends js.Object {
-  /** @name Query.aggregate(seed, step, finalize) */
+  
+  /**
+    * [descr:Query.aggregate(seed, step, finalize)]
+    */
   def aggregate(seed: js.Any, step: js.Function, finalize: js.Function): Promise[_] with JQueryPromise[_] = js.native
-  /** @name Query.aggregate(step) */
+  /**
+    * [descr:Query.aggregate(step)]
+    */
   def aggregate(step: js.Function): Promise[_] with JQueryPromise[_] = js.native
-  /** @name Query.avg() */
+  
+  /**
+    * [descr:Query.avg()]
+    */
   def avg(): Promise[Double] with JQueryPromise[Double] = js.native
-  /** @name Query.avg(getter) */
+  /**
+    * [descr:Query.avg(getter)]
+    */
   def avg(getter: js.Any): Promise[Double] with JQueryPromise[Double] = js.native
-  /** @name Query.count() */
+  
+  /**
+    * [descr:Query.count()]
+    */
   def count(): Promise[Double] with JQueryPromise[Double] = js.native
-  /** @name Query.enumerate() */
+  
+  /**
+    * [descr:Query.enumerate()]
+    */
   def enumerate(): Promise[_] with JQueryPromise[_] = js.native
-  /** @name Query.filter(criteria) */
+  
+  /**
+    * [descr:Query.filter(criteria)]
+    */
   def filter(criteria: js.Array[_]): Query = js.native
-  /** @name Query.filter(predicate) */
+  /**
+    * [descr:Query.filter(predicate)]
+    */
   def filter(predicate: js.Function): Query = js.native
-  /** @name Query.groupBy(getter) */
+  
+  /**
+    * [descr:Query.groupBy(getter)]
+    */
   def groupBy(getter: js.Any): Query = js.native
-  /** @name Query.max() */
+  
+  /**
+    * [descr:Query.max()]
+    */
   def max(): (Promise[Double | Date]) with (JQueryPromise[Double | Date]) = js.native
-  /** @name Query.max(getter) */
+  /**
+    * [descr:Query.max(getter)]
+    */
   def max(getter: js.Any): (Promise[Double | Date]) with (JQueryPromise[Double | Date]) = js.native
-  /** @name Query.min() */
+  
+  /**
+    * [descr:Query.min()]
+    */
   def min(): (Promise[Double | Date]) with (JQueryPromise[Double | Date]) = js.native
-  /** @name Query.min(getter) */
+  /**
+    * [descr:Query.min(getter)]
+    */
   def min(getter: js.Any): (Promise[Double | Date]) with (JQueryPromise[Double | Date]) = js.native
-  /** @name Query.select(getter) */
+  
+  /**
+    * [descr:Query.select(getter)]
+    */
   def select(getter: js.Any): Query = js.native
-  /** @name Query.slice(skip, take) */
+  
+  /**
+    * [descr:Query.slice(skip, take)]
+    */
   def slice(skip: Double): Query = js.native
   def slice(skip: Double, take: Double): Query = js.native
-  /** @name Query.sortBy(getter) */
+  
+  /**
+    * [descr:Query.sortBy(getter)]
+    */
   def sortBy(getter: js.Any): Query = js.native
-  /** @name Query.sortBy(getter, desc) */
+  /**
+    * [descr:Query.sortBy(getter, desc)]
+    */
   def sortBy(getter: js.Any, desc: Boolean): Query = js.native
-  /** @name Query.sum() */
+  
+  /**
+    * [descr:Query.sum()]
+    */
   def sum(): Promise[Double] with JQueryPromise[Double] = js.native
-  /** @name Query.sum(getter) */
+  /**
+    * [descr:Query.sum(getter)]
+    */
   def sum(getter: js.Any): Promise[Double] with JQueryPromise[Double] = js.native
-  /** @name Query.thenBy(getter) */
+  
+  /**
+    * [descr:Query.thenBy(getter)]
+    */
   def thenBy(getter: js.Any): Query = js.native
-  /** @name Query.thenBy(getter, desc) */
+  /**
+    * [descr:Query.thenBy(getter, desc)]
+    */
   def thenBy(getter: js.Any, desc: Boolean): Query = js.native
-  /** @name Query.toArray() */
+  
+  /**
+    * [descr:Query.toArray()]
+    */
   def toArray(): js.Array[_] = js.native
 }
-

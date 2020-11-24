@@ -6,25 +6,30 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/http/src/body", JSImport.Namespace)
 @js.native
 object bodyMod extends js.Object {
+  
   @js.native
   abstract class Body () extends js.Object {
+    
     /**
       * Return the body as an ArrayBuffer
       */
     def arrayBuffer(): ArrayBuffer = js.native
+    
     /**
       * Returns the request's body as a Blob, assuming that body exists.
       */
     def blob(): Blob = js.native
+    
     /**
       * Attempts to return body as parsed `JSON` object, or raises an exception.
       */
     def json(): js.Any = js.native
+    
     /**
       * Returns the body as a string, presuming `toString()` can be called on the response body.
       *
@@ -45,6 +50,4 @@ object bodyMod extends js.Object {
     @JSName("text")
     def text_legacy(encodingHint: legacy): String = js.native
   }
-  
 }
-

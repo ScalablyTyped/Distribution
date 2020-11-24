@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.lang
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a collection of implementations of services.
@@ -19,12 +19,14 @@ import scala.scalajs.js.annotation._
 trait MultiServiceFactory
   extends XMultiServiceFactory
      with XMultiComponentFactory {
+  
   /**
     * Gets the names of all supported services.
     * @returns sequence of all service names
     */
   /* InferMemberOverrides */
   override val AvailableServiceNames: SafeArray[String] = js.native
+  
   /**
     * Provides the available names of the factory to be used to create instances.
     * @returns sequence of all names
@@ -32,4 +34,3 @@ trait MultiServiceFactory
   /* InferMemberOverrides */
   override def getAvailableServiceNames(): SafeArray[String] = js.native
 }
-

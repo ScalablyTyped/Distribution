@@ -2,11 +2,12 @@ package typings.officeJs.OfficeExtension
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
 @js.native
 trait TrackedObjects extends js.Object {
+  
   /**
     * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
     * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
@@ -25,6 +26,7 @@ trait TrackedObjects extends js.Object {
     * `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
     */
   def add(`object`: ClientObject): Unit = js.native
+  
   /**
     * Release the memory associated with an object that was previously added to this collection. 
     * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
@@ -42,4 +44,3 @@ trait TrackedObjects extends js.Object {
     */
   def remove(`object`: ClientObject): Unit = js.native
 }
-

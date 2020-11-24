@@ -2,9 +2,43 @@ package typings.nodemon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodemonStrings {
+  
+  @scala.inline
+  def configColonupdate: configColonupdate = "config:update".asInstanceOf[configColonupdate]
+  
+  @scala.inline
+  def crash: crash = "crash".asInstanceOf[crash]
+  
+  @scala.inline
+  def exit: exit = "exit".asInstanceOf[exit]
+  
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
+  
+  @scala.inline
+  def quit: quit = "quit".asInstanceOf[quit]
+  
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  
+  @scala.inline
+  def restart: restart = "restart".asInstanceOf[restart]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def stderr: stderr = "stderr".asInstanceOf[stderr]
+  
+  @scala.inline
+  def stdout: stdout = "stdout".asInstanceOf[stdout]
+  
+  @scala.inline
+  def watching: watching = "watching".asInstanceOf[watching]
+  
   @js.native
   sealed trait configColonupdate extends js.Object
   
@@ -37,28 +71,4 @@ object nodemonStrings {
   
   @js.native
   sealed trait watching extends js.Object
-  
-  @scala.inline
-  def configColonupdate: configColonupdate = "config:update".asInstanceOf[configColonupdate]
-  @scala.inline
-  def crash: crash = "crash".asInstanceOf[crash]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def quit: quit = "quit".asInstanceOf[quit]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def restart: restart = "restart".asInstanceOf[restart]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def stderr: stderr = "stderr".asInstanceOf[stderr]
-  @scala.inline
-  def stdout: stdout = "stdout".asInstanceOf[stdout]
-  @scala.inline
-  def watching: watching = "watching".asInstanceOf[watching]
 }
-

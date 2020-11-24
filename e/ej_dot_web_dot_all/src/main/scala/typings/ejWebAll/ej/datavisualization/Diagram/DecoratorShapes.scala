@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DecoratorShapes extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.DecoratorShapes")
 @js.native
 object DecoratorShapes extends js.Object {
+  
   //Used to set decorator shape as Arrow
   @js.native
   sealed trait Arrow extends DecoratorShapes
@@ -33,6 +33,4 @@ object DecoratorShapes extends js.Object {
   //Used to set decorator shape as path
   @js.native
   sealed trait Path extends DecoratorShapes
-  
 }
-

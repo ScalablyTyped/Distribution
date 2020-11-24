@@ -7,11 +7,12 @@ import typings.typescript.mod.ParameterDeclaration
 import typings.typescript.mod.TypeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createIndexSignature")
 @js.native
 object createIndexSignature extends js.Object {
+  
   def apply(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
@@ -30,6 +31,7 @@ object createIndexSignature extends js.Object {
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native
+  /** @deprecated Use `factory.createIndexSignature` or the factory supplied by your transformation context instead. */
   def apply(
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
@@ -37,4 +39,3 @@ object createIndexSignature extends js.Object {
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native
 }
-

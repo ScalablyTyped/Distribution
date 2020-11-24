@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | dingtalk-robot-sender |
 | Keywords           | dingtalk, robot |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 1554 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 2701 |
 | # stars            | 1 |
 
 ## Links

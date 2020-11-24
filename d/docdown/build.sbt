@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "docdown"
-version := "0.7-dt-20200712Z-bde311"
+version := "0.7-dt-20200712Z-21b4c4"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

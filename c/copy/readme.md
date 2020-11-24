@@ -10,9 +10,9 @@ Copy files or directories using globs.
 | ------------------ | :-------------: |
 | Full name          | copy |
 | Keywords           | async, copy, file, file-system, fs, glob, move, path, pattern, promise, stream, sync, system |
-| # releases         | 2 |
-| # dependents       | 180 |
-| # downloads        | 729130 |
+| # releases         | 0 |
+| # dependents       | 194 |
+| # downloads        | 1000559 |
 | # stars            | 11 |
 
 ## Links

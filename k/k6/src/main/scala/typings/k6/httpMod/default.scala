@@ -3,7 +3,7 @@ package typings.k6.httpMod
 import typings.k6.mod.bytes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The http module contains functionality for performing HTTP transactions.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/http", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Batch multiple HTTP requests together,
     * to issue them in parallel over multiple TCP connections.
@@ -36,6 +37,7 @@ object default extends js.Object {
     * let responses = http.batch([req1, req2]);
     */
   def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = js.native
+  
   /**
     * Get active cookie jar.
     * https://k6.io/docs/javascript-api/k6-http/cookiejar
@@ -44,6 +46,7 @@ object default extends js.Object {
     * let jar = http.cookieJar();
     */
   def cookieJar(): CookieJar_ = js.native
+  
   /**
     * Make DELETE  request.
     * https://k6.io/docs/javascript-api/k6-http/del-url-body-params
@@ -56,6 +59,7 @@ object default extends js.Object {
   def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  
   /**
     * Create a file object used for building multipart requests (file uploads).
     * https://k6.io/docs/javascript-api/k6-http/file-data-filename-contenttype
@@ -81,6 +85,7 @@ object default extends js.Object {
   def file(data: bytes, filename: js.UndefOr[scala.Nothing], contentType: String): FileData = js.native
   def file(data: bytes, filename: String): FileData = js.native
   def file(data: bytes, filename: String, contentType: String): FileData = js.native
+  
   /**
     * Make GET request.
     * https://k6.io/docs/javascript-api/k6-http/get-url-params
@@ -92,6 +97,7 @@ object default extends js.Object {
     */
   def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
   def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
+  
   /**
     * Make OPTIONS request.
     * https://k6.io/docs/javascript-api/k6-http/options-url-body-params
@@ -104,6 +110,7 @@ object default extends js.Object {
   def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  
   /**
     * Make PATCH request.
     * https://k6.io/docs/javascript-api/k6-http/patch-url-body-params
@@ -116,6 +123,7 @@ object default extends js.Object {
   def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  
   /**
     * Make POST request.
     * https://k6.io/docs/javascript-api/k6-http/post-url-body-params
@@ -132,6 +140,7 @@ object default extends js.Object {
   def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  
   /**
     * Make PUT request.
     * https://k6.io/docs/javascript-api/k6-http/put-url-body-params
@@ -144,6 +153,7 @@ object default extends js.Object {
   def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  
   /**
     * Make request.
     * https://k6.io/docs/javascript-api/k6-http/request-method-url-body-params
@@ -162,4 +172,3 @@ object default extends js.Object {
   def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
   def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = js.native
 }
-

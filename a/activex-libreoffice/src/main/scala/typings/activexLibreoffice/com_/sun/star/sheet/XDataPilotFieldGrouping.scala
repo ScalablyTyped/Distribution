@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods to create new DataPilot fields where some or all items of this DataPilot field are grouped in some way.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDataPilotFieldGrouping extends XInterface {
+  
   /**
     * Groups the members of this field by dates, according to the passed settings.
     *
@@ -25,6 +26,7 @@ trait XDataPilotFieldGrouping extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the passed struct does not contain valid settings as described, or if this field is already gro
     */
   def createDateGroup(aInfo: DataPilotFieldGroupInfo): XDataPilotField = js.native
+  
   /**
     * Creates a new DataPilot field which contains a group containing the given DataPilot field items (members).
     *
@@ -40,8 +42,8 @@ trait XDataPilotFieldGrouping extends XInterface {
     */
   def createNameGroup(aItems: SeqEquiv[String]): XDataPilotField = js.native
 }
-
 object XDataPilotFieldGrouping {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -53,22 +55,26 @@ object XDataPilotFieldGrouping {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDateGroup = js.Any.fromFunction1(createDateGroup), createNameGroup = js.Any.fromFunction1(createNameGroup), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDataPilotFieldGrouping]
   }
+  
   @scala.inline
   implicit class XDataPilotFieldGroupingOps[Self <: XDataPilotFieldGrouping] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateDateGroup(value: DataPilotFieldGroupInfo => XDataPilotField): Self = this.set("createDateGroup", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateNameGroup(value: SeqEquiv[String] => XDataPilotField): Self = this.set("createNameGroup", js.Any.fromFunction1(value))
   }
-  
 }
-

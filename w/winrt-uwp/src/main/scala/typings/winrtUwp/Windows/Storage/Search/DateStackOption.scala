@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DateStackOption extends js.Object
-
 /** Indicates the unit of time used to group files into folders if a CommonFolderQuery based on date is used to create a QueryOptions object. */
 @JSGlobal("Windows.Storage.Search.DateStackOption")
 @js.native
 object DateStackOption extends js.Object {
+  
   /** The content is grouped by month. */
   @js.native
   sealed trait month extends DateStackOption
@@ -22,6 +22,4 @@ object DateStackOption extends js.Object {
   /** The content is grouped by year. */
   @js.native
   sealed trait year extends DateStackOption
-  
 }
-

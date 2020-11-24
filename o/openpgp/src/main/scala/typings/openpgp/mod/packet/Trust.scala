@@ -2,7 +2,7 @@ package typings.openpgp.mod.packet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.Trust")
 @js.native
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * other than local keyring files.
   */
 class Trust () extends js.Object {
+  
   /**
     * Parsing function for a trust packet (tag 12).
     * Currently not implemented as we ignore trust packets
@@ -27,4 +28,3 @@ class Trust () extends js.Object {
     */
   def read(byptes: String): Unit = js.native
 }
-

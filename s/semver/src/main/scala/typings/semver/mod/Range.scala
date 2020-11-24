@@ -3,7 +3,7 @@ package typings.semver.mod
 import typings.semver.rangeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "Range")
 @js.native
@@ -15,4 +15,3 @@ class Range protected () extends ^ {
   def this(range: typings.semver.rangeMod.Range, optionsOrLoose: Boolean) = this()
   def this(range: typings.semver.rangeMod.Range, optionsOrLoose: Options) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ItemMoved event.
@@ -20,4 +20,3 @@ class ASPxClientFileManagerItemMovedEventArgs protected ()
     */
   def this(fullName: String, name: String, oldFolderFullName: String, isFolder: Boolean) = this()
 }
-

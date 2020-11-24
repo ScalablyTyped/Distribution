@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Urlchannels")
 @js.native
 class ResourceUrlchannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsensehost.urlchannels.delete
     * @desc Delete a URL channel from the host AdSense account.
@@ -42,6 +44,7 @@ class ResourceUrlchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlChannel]
   ): Unit = js.native
+  
   /**
     * adsensehost.urlchannels.insert
     * @desc Add a new URL channel to the host AdSense account.
@@ -71,6 +74,7 @@ class ResourceUrlchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlChannel]
   ): Unit = js.native
+  
   /**
     * adsensehost.urlchannels.list
     * @desc List all host URL channels in the host AdSense account.
@@ -102,4 +106,3 @@ class ResourceUrlchannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUrlChannels]
   ): Unit = js.native
 }
-

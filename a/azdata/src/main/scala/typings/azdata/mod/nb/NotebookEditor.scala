@@ -5,34 +5,33 @@ import typings.vscode.Thenable
 import typings.vscode.mod.ViewColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NotebookEditor extends js.Object {
-  /**
-    * The document associated with this editor. The document will be the same for the entire lifetime of this editor.
-    */
-  val document: NotebookDocument = js.native
-  /**
-    * The column in which this editor shows. Will be `undefined` in case this
-    * isn't one of the main editors, e.g an embedded editor, or when the editor
-    * column is larger than three.
-    */
-  var viewColumn: js.UndefOr[ViewColumn] = js.native
+  
   /**
     * Changes the Notebook's kernel. Thenable will resolve only after kernel change is complete.
     */
   def changeKernel(kernel: IKernelSpec): Thenable[Boolean] = js.native
+  
   /**
     * Clears the outputs of all code cells in a Notebook
     * @return A promise that resolves with a value indicating if the outputs are cleared or not.
     */
   def clearAllOutputs(): Thenable[Boolean] = js.native
+  
   /**
     * Clears the outputs of the active code cell in a notebook.
     */
   def clearOutput(): Thenable[Boolean] = js.native
   def clearOutput(cell: NotebookCell): Thenable[Boolean] = js.native
+  
+  /**
+    * The document associated with this editor. The document will be the same for the entire lifetime of this editor.
+    */
+  val document: NotebookDocument = js.native
+  
   /**
     * Perform an edit on the document associated with this notebook editor.
     *
@@ -46,6 +45,7 @@ trait NotebookEditor extends js.Object {
     */
   def edit(callback: js.Function1[/* editBuilder */ NotebookEditorEdit, Unit]): Thenable[Boolean] = js.native
   def edit(callback: js.Function1[/* editBuilder */ NotebookEditorEdit, Unit], options: UndoStopAfter): Thenable[Boolean] = js.native
+  
   /**
     * Kicks off execution of all code cells. Thenable will resolve only when full execution of all cells is completed.
     */
@@ -53,6 +53,7 @@ trait NotebookEditor extends js.Object {
   def runAllCells(startCell: js.UndefOr[scala.Nothing], endCell: NotebookCell): Thenable[Boolean] = js.native
   def runAllCells(startCell: NotebookCell): Thenable[Boolean] = js.native
   def runAllCells(startCell: NotebookCell, endCell: NotebookCell): Thenable[Boolean] = js.native
+  
   /**
     * Kicks off execution of a cell. Thenable will resolve only once the full execution is completed.
     *
@@ -62,5 +63,11 @@ trait NotebookEditor extends js.Object {
     */
   def runCell(): Thenable[Boolean] = js.native
   def runCell(cell: NotebookCell): Thenable[Boolean] = js.native
+  
+  /**
+    * The column in which this editor shows. Will be `undefined` in case this
+    * isn't one of the main editors, e.g an embedded editor, or when the editor
+    * column is larger than three.
+    */
+  var viewColumn: js.UndefOr[ViewColumn] = js.native
 }
-

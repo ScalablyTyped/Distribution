@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-utf8-node
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
 A Node.JS UTF-8 string <-> UInt8Array converter
@@ -10,9 +10,9 @@ A Node.JS UTF-8 string <-> UInt8Array converter
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-utf8-node |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 368 |
-| # downloads        | 940989 |
+| # releases         | 16 |
+| # dependents       | 409 |
+| # downloads        | 4772912 |
 | # stars            | 0 |
 
 ## Links

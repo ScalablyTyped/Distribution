@@ -2,7 +2,7 @@ package typings.babylonjs.nodeIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/index", "RandomNumberBlock")
 @js.native
@@ -14,4 +14,3 @@ class RandomNumberBlock protected ()
     */
   def this(name: String) = this()
 }
-

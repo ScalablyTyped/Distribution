@@ -1,14 +1,15 @@
 package typings.tensorflowTfjs.indexWithPolyfillsMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "randomUniform")
 @js.native
 object randomUniform extends js.Object {
+  
   def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
@@ -163,4 +164,3 @@ object randomUniform extends js.Object {
     seed: Double
   ): Tensor[R] = js.native
 }
-

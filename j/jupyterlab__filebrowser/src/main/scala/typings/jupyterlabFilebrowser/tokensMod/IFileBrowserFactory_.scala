@@ -5,18 +5,11 @@ import typings.jupyterlabFilebrowser.browserMod.FileBrowser
 import typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IFileBrowserFactory_ extends js.Object {
-  /**
-    * The default file browser for the application.
-    */
-  var defaultBrowser: FileBrowser = js.native
-  /**
-    * The widget tracker used by the factory to track file browsers.
-    */
-  val tracker: WidgetTracker[FileBrowser] = js.native
+  
   /**
     * Create a new file browser instance.
     *
@@ -37,5 +30,14 @@ trait IFileBrowserFactory_ extends js.Object {
     */
   def createFileBrowser(id: String): FileBrowser = js.native
   def createFileBrowser(id: String, options: IOptions): FileBrowser = js.native
+  
+  /**
+    * The default file browser for the application.
+    */
+  var defaultBrowser: FileBrowser = js.native
+  
+  /**
+    * The widget tracker used by the factory to track file browsers.
+    */
+  val tracker: WidgetTracker[FileBrowser] = js.native
 }
-

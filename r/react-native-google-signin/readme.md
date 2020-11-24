@@ -10,9 +10,9 @@ Google Signin for your react native applications
 | ------------------ | :-------------: |
 | Full name          | react-native-google-signin |
 | Keywords           | react-component, react-native, google signin, google login, google+, oauth, oauth2, ios, android |
-| # releases         | 22 |
-| # dependents       | 10 |
-| # downloads        | 758139 |
+| # releases         | 19 |
+| # dependents       | 11 |
+| # downloads        | 543328 |
 | # stars            | 5 |
 
 ## Links

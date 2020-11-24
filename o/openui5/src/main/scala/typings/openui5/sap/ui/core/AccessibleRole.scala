@@ -2,11 +2,10 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AccessibleRole extends js.Object
-
 /**
   * Defines the accessible roles for ARIA support. This enumeration is used with the AccessibleRole
   * control property.For more information, goto "Roles for Accessible Rich Internet Applications
@@ -15,6 +14,7 @@ sealed trait AccessibleRole extends js.Object
 @JSGlobal("sap.ui.core.AccessibleRole")
 @js.native
 object AccessibleRole extends js.Object {
+  
   @js.native
   sealed trait Alert extends AccessibleRole
   
@@ -188,6 +188,4 @@ object AccessibleRole extends js.Object {
   
   @js.native
   sealed trait TreeItem extends AccessibleRole
-  
 }
-

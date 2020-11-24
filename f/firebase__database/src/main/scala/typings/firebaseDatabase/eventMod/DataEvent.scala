@@ -4,7 +4,7 @@ import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/view/Event", "DataEvent")
 @js.native
@@ -22,9 +22,12 @@ class DataEvent protected () extends Event {
     snapshot: DataSnapshot,
     prevName: String
   ) = this()
+  
   var eventRegistration: EventRegistration = js.native
+  
   var eventType: EventType = js.native
+  
   var prevName: js.UndefOr[String | Null] = js.native
+  
   var snapshot: DataSnapshot = js.native
 }
-

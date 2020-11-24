@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Organizationsecuritypolicies")
 @js.native
 class ResourceOrganizationsecuritypolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.organizationSecurityPolicies.addAssociation
     * @desc Inserts an association for the specified security policy.
@@ -47,6 +47,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.addRule
     * @desc Inserts a rule into a security policy.
@@ -80,6 +81,9 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.organizationSecurityPolicies.copyRules
     * @desc Copies rules to the specified security policy.
@@ -113,6 +117,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.delete
     * @desc Deletes the specified policy.
@@ -145,6 +150,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.get
     * @desc List all of the ordered rules present in a single specified policy.
@@ -176,6 +182,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicy]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.getAssociation
     * @desc Gets an association with the specified name.
@@ -208,6 +215,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicyAssociation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.getRule
     * @desc Gets a rule at the specified priority.
@@ -240,6 +248,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicyRule]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.insert
     * @desc Creates a new policy in the specified project using the data
@@ -274,6 +283,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.list
     * @desc List all the policies that have been configured for the specified
@@ -310,6 +320,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicyList]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.listAssociations
     * @desc Lists associations of a specified target, i.e., organization or
@@ -342,6 +353,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrganizationSecurityPoliciesListAssociationsResponse]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.move
     * @desc Moves the specified security policy.
@@ -375,6 +387,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.patch
     * @desc Patches the specified policy with the data included in the request.
@@ -408,6 +421,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.patchRule
     * @desc Patches a rule at the specified priority.
@@ -442,6 +456,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.removeAssociation
     * @desc Removes an association for the specified security policy.
@@ -475,6 +490,7 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.organizationSecurityPolicies.removeRule
     * @desc Deletes a rule at the specified priority.
@@ -509,4 +525,3 @@ class ResourceOrganizationsecuritypolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

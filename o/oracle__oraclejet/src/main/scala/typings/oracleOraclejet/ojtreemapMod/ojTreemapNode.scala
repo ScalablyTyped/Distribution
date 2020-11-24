@@ -170,51 +170,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
-  var categories: js.UndefOr[js.Array[String]] = js.native
-  var color: js.UndefOr[String] = js.native
-  var drilling: js.UndefOr[on | off | inherit] = js.native
-  var groupLabelDisplay: js.UndefOr[node | off | header] = js.native
-  var header: js.UndefOr[Isolate] = js.native
-  var label: js.UndefOr[String] = js.native
-  var labelDisplay: js.UndefOr[off | node] = js.native
-  var labelHalign: js.UndefOr[start | end | center] = js.native
-  var labelStyle: js.UndefOr[js.Object] = js.native
-  var labelValign: js.UndefOr[top | bottom | center] = js.native
-  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
-  var onGroupLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[node | off | header]], _]) | Null = js.native
-  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Isolate]], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[off | node]], _]) | Null = js.native
-  var onLabelHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[start | end | center]], _]) | Null = js.native
-  var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onLabelValignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[top | bottom | center]], _]) | Null = js.native
-  var onPatternChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[
-        smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[off | auto]], _]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var pattern: js.UndefOr[
-    smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-  ] = js.native
-  var selectable: js.UndefOr[off | auto] = js.native
-  var shortDesc: js.UndefOr[String] = js.native
-  var svgClassName: js.UndefOr[String] = js.native
-  var svgStyle: js.UndefOr[js.Object] = js.native
-  var value: Double = js.native
+  
   def addEventListener(
     `type`: drillingChanged,
     listener: js.ThisFunction1[
@@ -1208,6 +1168,13 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var categories: js.UndefOr[js.Array[String]] = js.native
+  
+  var color: js.UndefOr[String] = js.native
+  
+  var drilling: js.UndefOr[on | off | inherit] = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_categories(property: categories): js.UndefOr[js.Array[String]] = js.native
@@ -1243,7 +1210,68 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   def getProperty_svgStyle(property: svgStyle): js.UndefOr[js.Object] = js.native
   @JSName("getProperty")
   def getProperty_value(property: value): Double = js.native
+  
+  var groupLabelDisplay: js.UndefOr[node | off | header] = js.native
+  
+  var header: js.UndefOr[Isolate] = js.native
+  
+  var label: js.UndefOr[String] = js.native
+  
+  var labelDisplay: js.UndefOr[off | node] = js.native
+  
+  var labelHalign: js.UndefOr[start | end | center] = js.native
+  
+  var labelStyle: js.UndefOr[js.Object] = js.native
+  
+  var labelValign: js.UndefOr[top | bottom | center] = js.native
+  
+  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
+  
+  var onGroupLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[node | off | header]], _]) | Null = js.native
+  
+  var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Isolate]], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[off | node]], _]) | Null = js.native
+  
+  var onLabelHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[start | end | center]], _]) | Null = js.native
+  
+  var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onLabelValignChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[top | bottom | center]], _]) | Null = js.native
+  
+  var onPatternChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[
+        smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[off | auto]], _]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var pattern: js.UndefOr[
+    smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+  ] = js.native
+  
+  var selectable: js.UndefOr[off | auto] = js.native
+  
   def setProperties(properties: ojTreemapNodeSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: drilling, value: inherit): Unit = js.native
   def setProperty(property: drilling, value: off): Unit = js.native
   def setProperty(property: drilling, value: on): Unit = js.native
@@ -1322,5 +1350,12 @@ trait ojTreemapNode extends JetElement[ojTreemapNodeSettableProperties] {
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var shortDesc: js.UndefOr[String] = js.native
+  
+  var svgClassName: js.UndefOr[String] = js.native
+  
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  
+  var value: Double = js.native
 }
-

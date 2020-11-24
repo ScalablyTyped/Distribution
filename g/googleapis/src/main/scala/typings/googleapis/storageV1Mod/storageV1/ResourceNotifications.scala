@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Notifications")
 @js.native
 class ResourceNotifications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.notifications.delete
     * @desc Permanently deletes a notification subscription.
@@ -96,6 +98,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * storage.notifications.get
     * @desc View a notification configuration.
@@ -182,6 +185,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
+  
   /**
     * storage.notifications.insert
     * @desc Creates a notification subscription for a given bucket.
@@ -269,6 +273,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
+  
   /**
     * storage.notifications.list
     * @desc Retrieves a list of notification subscriptions for a given bucket.
@@ -352,4 +357,3 @@ class ResourceNotifications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaNotifications]
   ): Unit = js.native
 }
-

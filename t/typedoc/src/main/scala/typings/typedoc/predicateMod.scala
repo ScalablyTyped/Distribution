@@ -7,16 +7,17 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypePredicateNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/converter/types/predicate", JSImport.Namespace)
 @js.native
 object predicateMod extends js.Object {
+  
   @js.native
   class PredicateConverter () extends ConverterTypeComponent {
+    
     def convertNode(context: Context, node: TypePredicateNode): PredicateType = js.native
+    
     def supportsNode(_context: Context, node: Node): Boolean = js.native
   }
-  
 }
-

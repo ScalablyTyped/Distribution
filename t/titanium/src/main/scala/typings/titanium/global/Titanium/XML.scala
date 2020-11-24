@@ -5,7 +5,7 @@ import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The top level XML module.  The XML module is used for parsing and processing XML-based content.
@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class XML ()
   extends typings.titanium.Titanium.Proxy
-
 /**
   * The top level XML module.  The XML module is used for parsing and processing XML-based content.
   */
@@ -22,6 +21,84 @@ class XML ()
 @JSGlobal("Titanium.XML")
 @js.native
 object XML extends js.Object {
+  
+  /**
+    * Adds the specified callback as an event listener for the named event.
+    */
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  
+  /**
+    * The name of the API that this proxy corresponds to.
+    */
+  val apiName: String = js.native
+  
+  /**
+    * Applies the properties to the proxy.
+    */
+  def applyProperties(props: js.Any): Unit = js.native
+  
+  /**
+    * Indicates if the proxy will bubble an event to its parent.
+    */
+  var bubbleParent: Boolean = js.native
+  
+  /**
+    * Fires a synthesized event to any registered listeners.
+    */
+  def fireEvent(name: String): Unit = js.native
+  def fireEvent(name: String, event: js.Any): Unit = js.native
+  
+  /**
+    * Gets the value of the <Titanium.XML.apiName> property.
+    * @deprecated Access <Titanium.XML.apiName> instead.
+    */
+  def getApiName(): String = js.native
+  
+  /**
+    * Gets the value of the <Titanium.XML.bubbleParent> property.
+    * @deprecated Access <Titanium.XML.bubbleParent> instead.
+    */
+  def getBubbleParent(): Boolean = js.native
+  
+  /**
+    * Gets the value of the <Titanium.XML.lifecycleContainer> property.
+    * @deprecated Access <Titanium.XML.lifecycleContainer> instead.
+    */
+  def getLifecycleContainer(): Window | TabGroup = js.native
+  
+  /**
+    * The Window or TabGroup whose Activity lifecycle should be triggered on the proxy.
+    */
+  var lifecycleContainer: Window | TabGroup = js.native
+  
+  /**
+    * Parses an XML string into a <Titanium.XML.Document> object.
+    */
+  def parseString(xml: String): typings.titanium.Titanium.XML.Document = js.native
+  
+  /**
+    * Removes the specified callback as an event listener for the named event.
+    */
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  
+  /**
+    * Serializes a [Node](Titanium.XML.Node) object into a string.
+    */
+  def serializeToString(node: typings.titanium.Titanium.XML.Node): String = js.native
+  
+  /**
+    * Sets the value of the <Titanium.XML.bubbleParent> property.
+    * @deprecated Set the value using <Titanium.XML.bubbleParent> instead.
+    */
+  def setBubbleParent(bubbleParent: Boolean): Unit = js.native
+  
+  def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
+  /**
+    * Sets the value of the <Titanium.XML.lifecycleContainer> property.
+    * @deprecated Set the value using <Titanium.XML.lifecycleContainer> instead.
+    */
+  def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
+  
   /**
     * Represents an attribute of an [Element](Titanium.XML.Element).
     */
@@ -145,69 +222,4 @@ object XML extends js.Object {
   @js.native
   class Text ()
     extends typings.titanium.Titanium.XML.Text
-  
-  /**
-    * The name of the API that this proxy corresponds to.
-    */
-  val apiName: String = js.native
-  /**
-    * Indicates if the proxy will bubble an event to its parent.
-    */
-  var bubbleParent: Boolean = js.native
-  /**
-    * The Window or TabGroup whose Activity lifecycle should be triggered on the proxy.
-    */
-  var lifecycleContainer: Window | TabGroup = js.native
-  /**
-    * Adds the specified callback as an event listener for the named event.
-    */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
-  /**
-    * Applies the properties to the proxy.
-    */
-  def applyProperties(props: js.Any): Unit = js.native
-  /**
-    * Fires a synthesized event to any registered listeners.
-    */
-  def fireEvent(name: String): Unit = js.native
-  def fireEvent(name: String, event: js.Any): Unit = js.native
-  /**
-    * Gets the value of the <Titanium.XML.apiName> property.
-    * @deprecated Access <Titanium.XML.apiName> instead.
-    */
-  def getApiName(): String = js.native
-  /**
-    * Gets the value of the <Titanium.XML.bubbleParent> property.
-    * @deprecated Access <Titanium.XML.bubbleParent> instead.
-    */
-  def getBubbleParent(): Boolean = js.native
-  /**
-    * Gets the value of the <Titanium.XML.lifecycleContainer> property.
-    * @deprecated Access <Titanium.XML.lifecycleContainer> instead.
-    */
-  def getLifecycleContainer(): Window | TabGroup = js.native
-  /**
-    * Parses an XML string into a <Titanium.XML.Document> object.
-    */
-  def parseString(xml: String): typings.titanium.Titanium.XML.Document = js.native
-  /**
-    * Removes the specified callback as an event listener for the named event.
-    */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
-  /**
-    * Serializes a [Node](Titanium.XML.Node) object into a string.
-    */
-  def serializeToString(node: typings.titanium.Titanium.XML.Node): String = js.native
-  /**
-    * Sets the value of the <Titanium.XML.bubbleParent> property.
-    * @deprecated Set the value using <Titanium.XML.bubbleParent> instead.
-    */
-  def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
-  /**
-    * Sets the value of the <Titanium.XML.lifecycleContainer> property.
-    * @deprecated Set the value using <Titanium.XML.lifecycleContainer> instead.
-    */
-  def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }
-

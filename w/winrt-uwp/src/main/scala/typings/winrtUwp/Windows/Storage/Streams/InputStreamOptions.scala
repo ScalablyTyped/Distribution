@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Storage.Streams
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InputStreamOptions extends js.Object
-
 /** Specifies the read options for an input stream. */
 @JSGlobal("Windows.Storage.Streams.InputStreamOptions")
 @js.native
 object InputStreamOptions extends js.Object {
+  
   /** No options are specified. */
   @js.native
   sealed trait none extends InputStreamOptions
@@ -22,6 +22,4 @@ object InputStreamOptions extends js.Object {
   /** The asynchronous read operation may optionally read ahead and prefetch additional bytes. */
   @js.native
   sealed trait readAhead extends InputStreamOptions
-  
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-ga
 
-Typings are for version 3.1.2
+Typings are for version 3.3.0
 
 ## Library description:
 React Google Analytics Module.
@@ -11,8 +11,8 @@ React Google Analytics Module.
 | Full name          | react-ga |
 | Keywords           | React, GA, Google Analytics, Universal Analytics |
 | # releases         | 12 |
-| # dependents       | 201 |
-| # downloads        | 11138197 |
+| # dependents       | 269 |
+| # downloads        | 15942151 |
 | # stars            | 18 |
 
 ## Links

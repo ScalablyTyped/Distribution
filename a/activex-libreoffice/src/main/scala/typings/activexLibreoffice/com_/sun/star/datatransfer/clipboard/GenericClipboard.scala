@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A generic clipboard service is a simple container for transferable objects. */
 @js.native
@@ -17,8 +17,8 @@ trait GenericClipboard
      with XClipboardNotifier
      with XInitialization
      with XComponent
-
 object GenericClipboard {
+  
   @scala.inline
   def apply(
     Contents: XTransferable,
@@ -42,4 +42,3 @@ object GenericClipboard {
     __obj.asInstanceOf[GenericClipboard]
   }
 }
-

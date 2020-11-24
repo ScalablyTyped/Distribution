@@ -2,7 +2,7 @@ package typings.webpackErrorNotification.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack-error-notification", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ class ^ () extends WebpackErrorNotificationPlugin {
   def this(strategy: Strategy) = this()
   def this(strategy: js.UndefOr[Strategy], options: Options) = this()
 }
-

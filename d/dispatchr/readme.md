@@ -12,7 +12,7 @@ A Flux dispatcher for applications that run on the server and the client.
 | Keywords           | yahoo, flux, react, dispatcher |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 174510 |
+| # downloads        | 166944 |
 | # stars            | 8 |
 
 ## Links

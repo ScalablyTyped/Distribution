@@ -8,16 +8,19 @@ import typings.browserfs.mountableFileSystemMod.MountableFileSystemOptions
 import typings.browserfs.mountableFileSystemMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofMountableFileSystem extends Instantiable0[default] {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   /**
     * Creates a MountableFileSystem instance with the given options.
     */
   def Create(opts: MountableFileSystemOptions, cb: BFSCallback[MountableFileSystem]): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

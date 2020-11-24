@@ -10,9 +10,9 @@ React Component for displaying an image from Imgix
 | ------------------ | :-------------: |
 | Full name          | react-imgix |
 | Keywords           | react |
-| # releases         | 18 |
-| # dependents       | 15 |
-| # downloads        | 795868 |
+| # releases         | 11 |
+| # dependents       | 18 |
+| # downloads        | 1464975 |
 | # stars            | 0 |
 
 ## Links

@@ -4,12 +4,12 @@ import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.lifecycleMod.Lifecycle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TransientLifecycle extends Lifecycle
-
 object TransientLifecycle {
+  
   @scala.inline
   def apply(
     resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => js.Any
@@ -18,4 +18,3 @@ object TransientLifecycle {
     __obj.asInstanceOf[TransientLifecycle]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.browser.downloads
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * *in_progress*:
@@ -20,13 +20,14 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete
 */
 trait State extends js.Object
-
 object State {
+  
   @scala.inline
   def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = "complete".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete]
+  
   @scala.inline
   def in_progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress]
+  
   @scala.inline
   def interrupted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted = "interrupted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted]
 }
-

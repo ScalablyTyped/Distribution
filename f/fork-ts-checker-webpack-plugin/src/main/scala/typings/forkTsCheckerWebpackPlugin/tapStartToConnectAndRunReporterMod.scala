@@ -5,11 +5,12 @@ import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStateMod.For
 import typings.forkTsCheckerWebpackPlugin.reporterRpcClientMod.ReporterRpcClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fork-ts-checker-webpack-plugin/lib/hooks/tapStartToConnectAndRunReporter", JSImport.Namespace)
 @js.native
 object tapStartToConnectAndRunReporterMod extends js.Object {
+  
   def tapStartToConnectAndRunReporter(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     reporter: ReporterRpcClient,
@@ -17,4 +18,3 @@ object tapStartToConnectAndRunReporterMod extends js.Object {
     state: ForkTsCheckerWebpackPluginState
   ): Unit = js.native
 }
-

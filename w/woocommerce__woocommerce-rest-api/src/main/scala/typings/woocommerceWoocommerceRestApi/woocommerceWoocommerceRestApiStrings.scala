@@ -5,9 +5,52 @@ import typings.woocommerceWoocommerceRestApi.mod.WooCommerceRestApiMethod
 import typings.woocommerceWoocommerceRestApi.mod.WooCommerceRestApiVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object woocommerceWoocommerceRestApiStrings {
+  
+  @scala.inline
+  def `Options Error`: `Options Error` = ("Options Error").asInstanceOf[`Options Error`]
+  
+  @scala.inline
+  def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def options: options = "options".asInstanceOf[options]
+  
+  @scala.inline
+  def post: post = "post".asInstanceOf[post]
+  
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
+  
+  @scala.inline
+  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  
+  @scala.inline
+  def `wc-apiSlashv1`: `wc-apiSlashv1` = "wc-api/v1".asInstanceOf[`wc-apiSlashv1`]
+  
+  @scala.inline
+  def `wc-apiSlashv2`: `wc-apiSlashv2` = "wc-api/v2".asInstanceOf[`wc-apiSlashv2`]
+  
+  @scala.inline
+  def `wc-apiSlashv3`: `wc-apiSlashv3` = "wc-api/v3".asInstanceOf[`wc-apiSlashv3`]
+  
+  @scala.inline
+  def wcSlashv1: wcSlashv1 = "wc/v1".asInstanceOf[wcSlashv1]
+  
+  @scala.inline
+  def wcSlashv2: wcSlashv2 = "wc/v2".asInstanceOf[wcSlashv2]
+  
+  @scala.inline
+  def wcSlashv3: wcSlashv3 = "wc/v3".asInstanceOf[wcSlashv3]
+  
   @js.native
   sealed trait `Options Error` extends js.Object
   
@@ -49,34 +92,4 @@ object woocommerceWoocommerceRestApiStrings {
   
   @js.native
   sealed trait wcSlashv3 extends WooCommerceRestApiVersion
-  
-  @scala.inline
-  def `Options Error`: `Options Error` = ("Options Error").asInstanceOf[`Options Error`]
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
-  @scala.inline
-  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
-  @scala.inline
-  def `wc-apiSlashv1`: `wc-apiSlashv1` = "wc-api/v1".asInstanceOf[`wc-apiSlashv1`]
-  @scala.inline
-  def `wc-apiSlashv2`: `wc-apiSlashv2` = "wc-api/v2".asInstanceOf[`wc-apiSlashv2`]
-  @scala.inline
-  def `wc-apiSlashv3`: `wc-apiSlashv3` = "wc-api/v3".asInstanceOf[`wc-apiSlashv3`]
-  @scala.inline
-  def wcSlashv1: wcSlashv1 = "wc/v1".asInstanceOf[wcSlashv1]
-  @scala.inline
-  def wcSlashv2: wcSlashv2 = "wc/v2".asInstanceOf[wcSlashv2]
-  @scala.inline
-  def wcSlashv3: wcSlashv3 = "wc/v3".asInstanceOf[wcSlashv3]
 }
-

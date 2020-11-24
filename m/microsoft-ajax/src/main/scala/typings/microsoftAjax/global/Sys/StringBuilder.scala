@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a mechanism to concatenate strings.
@@ -21,4 +21,3 @@ class StringBuilder ()
   extends typings.microsoftAjax.Sys.StringBuilder {
   def this(initialText: String) = this()
 }
-

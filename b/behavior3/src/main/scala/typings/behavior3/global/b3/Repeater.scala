@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.ChildMaxLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Repeater is a decorator that repeats the tick signal until the child node
@@ -24,4 +24,3 @@ class Repeater ()
   extends typings.behavior3.b3.Repeater {
   def this(hasMaxLoopChild: ChildMaxLoop) = this()
 }
-

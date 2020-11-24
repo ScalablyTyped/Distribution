@@ -6,7 +6,7 @@ import typings.activexWord.activexWordNumbers.`14`
 import typings.activexWord.activexWordNumbers.`65535`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`65535`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`14`
 */
 trait WdCompatibilityMode extends js.Object
-
 object WdCompatibilityMode {
+  
   @scala.inline
   def wdCurrent: `65535` = 65535.asInstanceOf[`65535`]
+  
   @scala.inline
   def wdWord2003: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def wdWord2007: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def wdWord2010: `14` = 14.asInstanceOf[`14`]
 }
-

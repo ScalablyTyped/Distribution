@@ -6,22 +6,25 @@ import typings.openui5.sap.ui.core.TitleLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Page extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): Page = js.native
+  
   /**
     * Adds some headerContent to the aggregation <code>headerContent</code>.
     * @param oHeaderContent the headerContent to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addHeaderContent(oHeaderContent: Control): Page = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>navButtonPress</code> event of this
     * <code>sap.m.Page</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -37,6 +40,7 @@ trait Page extends Control {
     */
   def attachNavButtonPress(oData: js.Any, fnFunction: js.Any): Page = js.native
   def attachNavButtonPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Page = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>navButtonTap</code> event of this
     * <code>sap.m.Page</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -51,36 +55,43 @@ trait Page extends Control {
     */
   def attachNavButtonTap(oData: js.Any, fnFunction: js.Any): Page = js.native
   def attachNavButtonTap(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Page = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): Page = js.native
+  
   /**
     * Destroys the customHeader in the aggregation <code>customHeader</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyCustomHeader(): Page = js.native
+  
   /**
     * Destroys the footer in the aggregation <code>footer</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyFooter(): Page = js.native
+  
   /**
     * Destroys all the headerContent in the aggregation <code>headerContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyHeaderContent(): Page = js.native
+  
   /**
     * Destroys the landmarkInfo in the aggregation <code>landmarkInfo</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyLandmarkInfo(): Page = js.native
+  
   /**
     * Destroys the subHeader in the aggregation <code>subHeader</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySubHeader(): Page = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>navButtonPress</code> event of this
     * <code>sap.m.Page</code>.The passed function and listener object must match the ones used for event
@@ -91,6 +102,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachNavButtonPress(fnFunction: js.Any, oListener: js.Any): Page = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>navButtonTap</code> event of this
     * <code>sap.m.Page</code>.The passed function and listener object must match the ones used for event
@@ -100,6 +112,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachNavButtonTap(fnFunction: js.Any, oListener: js.Any): Page = js.native
+  
   /**
     * Fires event <code>navButtonPress</code> to attached listeners.
     * @since 1.12.2
@@ -107,12 +120,14 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireNavButtonPress(mArguments: js.Any): Page = js.native
+  
   /**
     * Fires event <code>navButtonTap</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireNavButtonTap(mArguments: js.Any): Page = js.native
+  
   /**
     * Gets current value of property <code>backgroundDesign</code>.This property is used to set the
     * background color of a page. When a list is placed inside a page, the value "List" should be used to
@@ -121,10 +136,12 @@ trait Page extends Control {
     * @returns Value of property <code>backgroundDesign</code>
     */
   def getBackgroundDesign(): PageBackgroundDesign = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.The content of this page
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>contentOnlyBusy</code>.Decides which area is covered by the
     * local BusyIndicator when <code>page.setBusy()</code> is called. By default the entire page is
@@ -136,6 +153,7 @@ trait Page extends Control {
     * @returns Value of property <code>contentOnlyBusy</code>
     */
   def getContentOnlyBusy(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>customHeader</code>.The (optional) custom header of this page.Use
     * this aggregation only when a custom header is constructed where the default header consisting of
@@ -143,6 +161,7 @@ trait Page extends Control {
     * "showNavButton", "NavButtonText" and "icon" are not used.
     */
   def getCustomHeader(): IBar = js.native
+  
   /**
     * Gets current value of property <code>enableScrolling</code>.Enable vertical scrolling of page
     * contents. Page headers and footers are fixed and do not scroll.If set to false, there will be no
@@ -154,6 +173,7 @@ trait Page extends Control {
     * @returns Value of property <code>enableScrolling</code>
     */
   def getEnableScrolling(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>floatingFooter</code>.Decides whether the floating footer
     * behavior should be enabled.When the floating footer behavior is used, the content is visible when
@@ -161,11 +181,13 @@ trait Page extends Control {
     * @returns Value of property <code>floatingFooter</code>
     */
   def getFloatingFooter(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>footer</code>.The (optional) footer of this page. It is always
     * located at the bottom of the page
     */
   def getFooter(): IBar = js.native
+  
   /**
     * Gets content of aggregation <code>headerContent</code>.Controls to be added to the right side of the
     * page header. Usually an application would use Button controls and limit the number to one when the
@@ -173,6 +195,7 @@ trait Page extends Control {
     * insufficient.When a customHeader is used, this aggregation will be ignored.
     */
   def getHeaderContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.the icon that is rendered in the page header bar in
     * non-iOS phone/tablet platforms. This property is theme-dependent and only has an effect in the MVI
@@ -180,11 +203,13 @@ trait Page extends Control {
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>landmarkInfo</code>.Accessible landmark settings to be applied on
     * the containers of the <code>sap.m.Page</code> control.If not set, no landmarks will be written.
     */
   def getLandmarkInfo(): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Gets current value of property <code>navButtonText</code>.The text of the nav button when running in
     * iOS (if shown) in case it deviates from the default, which is "Back". This property is
@@ -192,12 +217,14 @@ trait Page extends Control {
     * @returns Value of property <code>navButtonText</code>
     */
   def getNavButtonText(): String = js.native
+  
   /**
     * Gets current value of property <code>navButtonTooltip</code>.The tooltip of the nav buttonSince
     * version 1.34
     * @returns Value of property <code>navButtonTooltip</code>
     */
   def getNavButtonTooltip(): String = js.native
+  
   /**
     * Gets current value of property <code>navButtonType</code>.This property is used to set the
     * appearance of the NavButton. By default when showNavButton is set to true, a back button will be
@@ -207,6 +234,7 @@ trait Page extends Control {
     * @returns Value of property <code>navButtonType</code>
     */
   def getNavButtonType(): ButtonType = js.native
+  
   /**
     * Gets current value of property <code>showFooter</code>.Whether this page shall have a footerDefault
     * value is <code>true</code>.
@@ -214,6 +242,7 @@ trait Page extends Control {
     * @returns Value of property <code>showFooter</code>
     */
   def getShowFooter(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showHeader</code>.Whether this page shall have a header.If set
     * to true, either the control under the "customHeader" aggregation is used, or if there is no such
@@ -222,12 +251,14 @@ trait Page extends Control {
     * @returns Value of property <code>showHeader</code>
     */
   def getShowHeader(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showNavButton</code>.A nav button will be rendered on the left
     * area of header bar if this property is set to true.Default value is <code>false</code>.
     * @returns Value of property <code>showNavButton</code>
     */
   def getShowNavButton(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSubHeader</code>.Whether this page shall show the
     * subheader.Default value is <code>true</code>.
@@ -235,16 +266,19 @@ trait Page extends Control {
     * @returns Value of property <code>showSubHeader</code>
     */
   def getShowSubHeader(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>subHeader</code>.a subHeader will be rendered directly under the
     * header
     */
   def getSubHeader(): IBar = js.native
+  
   /**
     * Gets current value of property <code>title</code>.The title text appearing in the page header bar.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Gets current value of property <code>titleLevel</code>.Defines the semantic level of the title.
     * Using "Auto" no explicit level information is written.Used for accessibility purposes only.Default
@@ -252,6 +286,7 @@ trait Page extends Control {
     * @returns Value of property <code>titleLevel</code>
     */
   def getTitleLevel(): TitleLevel = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -259,6 +294,7 @@ trait Page extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>headerContent</code>.and returns its index if found or -1 otherwise.
@@ -266,6 +302,7 @@ trait Page extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfHeaderContent(oHeaderContent: Control): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -276,6 +313,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): Page = js.native
+  
   /**
     * Inserts a headerContent into the aggregation <code>headerContent</code>.
     * @param oHeaderContent the headerContent to insert; if empty, nothing is inserted
@@ -286,18 +324,21 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertHeaderContent(oHeaderContent: Control, iIndex: Double): Page = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>headerContent</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllHeaderContent(): js.Array[Control] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -306,6 +347,7 @@ trait Page extends Control {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   def removeHeaderContent(vHeaderContent: String): Control = js.native
   /**
     * Removes a headerContent from the aggregation <code>headerContent</code>.
@@ -314,6 +356,7 @@ trait Page extends Control {
     */
   def removeHeaderContent(vHeaderContent: Double): Control = js.native
   def removeHeaderContent(vHeaderContent: Control): Control = js.native
+  
   /**
     * Scrolls to the given position. Only available if enableScrolling is set to "true".
     * @param y The vertical pixel position to scroll to. Scrolling down happens with positive values.
@@ -321,6 +364,7 @@ trait Page extends Control {
     * value. 0 is also the default value, when this optional parameter is omitted.
     */
   def scrollTo(y: Double, time: Double): Page = js.native
+  
   def scrollToElement(oElement: Element): Page = js.native
   def scrollToElement(oElement: Element, iTime: Double): Page = js.native
   /**
@@ -333,6 +377,7 @@ trait Page extends Control {
     */
   def scrollToElement(oElement: HTMLElement): Page = js.native
   def scrollToElement(oElement: HTMLElement, iTime: Double): Page = js.native
+  
   /**
     * Sets a new value for property <code>backgroundDesign</code>.This property is used to set the
     * background color of a page. When a list is placed inside a page, the value "List" should be used to
@@ -343,6 +388,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundDesign(sBackgroundDesign: PageBackgroundDesign): Page = js.native
+  
   /**
     * Sets a new value for property <code>contentOnlyBusy</code>.Decides which area is covered by the
     * local BusyIndicator when <code>page.setBusy()</code> is called. By default the entire page is
@@ -356,6 +402,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContentOnlyBusy(bContentOnlyBusy: Boolean): Page = js.native
+  
   /**
     * Sets a new value for property <code>enableScrolling</code>.Enable vertical scrolling of page
     * contents. Page headers and footers are fixed and do not scroll.If set to false, there will be no
@@ -369,6 +416,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnableScrolling(bEnableScrolling: Boolean): Page = js.native
+  
   /**
     * Sets a new value for property <code>floatingFooter</code>.Decides whether the floating footer
     * behavior should be enabled.When the floating footer behavior is used, the content is visible when
@@ -378,12 +426,14 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFloatingFooter(bFloatingFooter: Boolean): Page = js.native
+  
   /**
     * Sets the aggregated <code>footer</code>.
     * @param oFooter The footer to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFooter(oFooter: IBar): Page = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.the icon that is rendered in the page header bar in
     * non-iOS phone/tablet platforms. This property is theme-dependent and only has an effect in the MVI
@@ -393,12 +443,14 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): Page = js.native
+  
   /**
     * Sets the aggregated <code>landmarkInfo</code>.
     * @param oLandmarkInfo The landmarkInfo to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLandmarkInfo(oLandmarkInfo: PageAccessibleLandmarkInfo): Page = js.native
+  
   /**
     * Sets a new value for property <code>navButtonText</code>.The text of the nav button when running in
     * iOS (if shown) in case it deviates from the default, which is "Back". This property is
@@ -408,6 +460,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNavButtonText(sNavButtonText: String): Page = js.native
+  
   /**
     * Sets a new value for property <code>navButtonTooltip</code>.The tooltip of the nav buttonSince
     * version 1.34When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -416,6 +469,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNavButtonTooltip(sNavButtonTooltip: String): Page = js.native
+  
   /**
     * Sets a new value for property <code>navButtonType</code>.This property is used to set the appearance
     * of the NavButton. By default when showNavButton is set to true, a back button will be shown in iOS
@@ -428,6 +482,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNavButtonType(sNavButtonType: ButtonType): Page = js.native
+  
   /**
     * Sets a new value for property <code>showFooter</code>.Whether this page shall have a footerWhen
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -437,6 +492,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowFooter(bShowFooter: Boolean): Page = js.native
+  
   /**
     * Sets a new value for property <code>showHeader</code>.Whether this page shall have a header.If set
     * to true, either the control under the "customHeader" aggregation is used, or if there is no such
@@ -448,6 +504,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowHeader(bShowHeader: Boolean): Page = js.native
+  
   /**
     * Sets a new value for property <code>showNavButton</code>.A nav button will be rendered on the left
     * area of header bar if this property is set to true.When called with a value of <code>null</code> or
@@ -457,6 +514,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowNavButton(bShowNavButton: Boolean): Page = js.native
+  
   /**
     * Sets a new value for property <code>showSubHeader</code>.Whether this page shall show the
     * subheader.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -466,12 +524,14 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSubHeader(bShowSubHeader: Boolean): Page = js.native
+  
   /**
     * Sets the aggregated <code>subHeader</code>.
     * @param oSubHeader The subHeader to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSubHeader(oSubHeader: IBar): Page = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.The title text appearing in the page header
     * bar.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -480,6 +540,7 @@ trait Page extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitle(sTitle: String): Page = js.native
+  
   /**
     * Sets a new value for property <code>titleLevel</code>.Defines the semantic level of the title. Using
     * "Auto" no explicit level information is written.Used for accessibility purposes only.When called
@@ -490,4 +551,3 @@ trait Page extends Control {
     */
   def setTitleLevel(sTitleLevel: TitleLevel): Page = js.native
 }
-

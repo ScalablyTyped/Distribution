@@ -2,387 +2,165 @@ package typings.echarts.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Origin extends js.Object {
+  
   /**
-    * id is used to specifying element when willing to update
-    * it. id can be ignored if you do not need it.
+    * Fill color.
+    *
+    * > Color can be represented in RGB, for example `'rgb(128,
+    * 128, 128)'`.
+    * RGBA can be used when you need alpha channel, for example
+    * `'rgba(128, 128, 128, 0.5)'`.
+    * You may also use hexadecimal format, for example `'#ccc'`.
+    * Gradient color and texture are also supported besides single
+    * colors.
+    * >
+    * > [see doc](https://echarts.apache.org/en/option.html#series-line.line.areaStyle)
     *
     *
     * @default
-    * "undefined"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.id
+    * "#000"
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.color
     */
-  var id: js.UndefOr[String] = js.native
+  var color: js.UndefOr[typings.echarts.echarts.EChartOption.Color] = js.native
+  
   /**
-    * Whether the element is totally ignored (neither render
-    * nor listen events).
+    * Opacity of the component.
+    * Supports value from 0 to 1, and the component will not be
+    * drawn when set to 0.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.ignore
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.opacity
     */
-  var ignore: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  
   /**
-    * User defined data, can be visited in event listeners.
+    * Origin position of area.
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.return_circle)
+    * By default, the area between axis line and data will be the
+    * area to be filled.
+    * This config enables you to fill data to the max or min of
+    * the axis data.
     *
+    * Valid values include: `'auto'` (default), `'start'`, `'end'`.
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.info
-    */
-  var info: js.UndefOr[js.Any] = js.native
-  /**
-    * Whether the element is visible.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.invisible
-    */
-  var invisible: js.UndefOr[Boolean] = js.native
-  /**
-    * See
-    * [diffChildrenByName](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.diffChildrenByName)
-    * 。
+    * + `'auto'` to fill between axis line to data;
+    * + `'start'` to fill between min axis value (when not `inverse`)
+    * to data;
+    * + `'end'` to fill between max axis value (when not `inverse`)
+    * to data;
     *
     *
     * @default
-    * "undefined"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.name
+    * "auto"
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.origin
     */
-  var name: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
+    * Size of shadow blur.
+    * This attribute should be used along with `shadowColor`,`shadowOffsetX`,
+    * `shadowOffsetY` to set shadow to component.
     *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
+    * For example:
     *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.areaStyle)
     *
     *
-    * @default
-    * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.origin
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowBlur
     */
-  var origin: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
-    *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * Shadow color. Support same format as `color`.
     *
     *
-    * @default
-    * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.position
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowColor
     */
-  var position: js.UndefOr[js.Array[_]] = js.native
+  var shadowColor: js.UndefOr[typings.echarts.echarts.EChartOption.Color] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
-    *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.rotation
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowOffsetX
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
-    *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * Offset distance on the vertical direction of shadow.
     *
     *
-    * @default
-    * [1, 1]
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.scale
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowOffsetY
     */
-  var scale: js.UndefOr[js.Array[_]] = js.native
-  /**
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.shape
-    */
-  var shape: js.UndefOr[Cx] = js.native
-  /**
-    * Whether response to mouse events / touch events.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.silent
-    */
-  var silent: js.UndefOr[Boolean] = js.native
-  /**
-    * More attributes in `style` (for example,
-    * [rich text](https://echarts.apache.org/en/tutorial.html#Rich%20Text)
-    * ), see the `style` related attributes in
-    * [zrender/graphic/Displayable](https://ecomfe.github.io/zrender-doc/public/api.html#zrenderdisplayable)
-    * .
-    *
-    * Notice, the attribute names of the `style` of graphic
-    * elements is derived from `zrender`, which may be different
-    * from the attribute names in `echarts label`, `echarts
-    * itemStyle`, etc.,
-    * although they have the same meaning. For example:
-    *
-    * + [itemStyle.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
-    * => `style.fill`
-    * + [itemStyle.borderColor](https://echarts.apache.org/en/option.html#series-scatter.label.color)
-    * => `style.stroke`
-    * + [label.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
-    * => `style.textFill`
-    * + [label.textBorderColor](https://echarts.apache.org/en/option.html#series-scatter.label.textBorderColor)
-    * => `style.textStroke`
-    * + ...
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.style
-    */
-  var style: js.UndefOr[Fill] = js.native
-  /**
-    * Empahsis style of the graphic element, whose structure
-    * is the same as
-    * [style](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.style)
-    * .
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.styleEmphasis
-    */
-  var styleEmphasis: js.UndefOr[js.Object] = js.native
-  /**
-    * Must be specified when define a graphic element at the
-    * first time.
-    *
-    * Optional values:
-    *
-    * [image](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image)
-    * ,
-    * [text](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text)
-    * ,
-    * [circle](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle)
-    * ,
-    * [sector](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector)
-    * ,
-    * [ring](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring)
-    * ,
-    * [polygon](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon)
-    * ,
-    * [polyline](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline)
-    * ,
-    * [rect](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect)
-    * ,
-    * [line](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line)
-    * ,
-    * [bezierCurve](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve)
-    * ,
-    * [arc](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc)
-    * ,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * ,
-    *
-    *
-    * @default
-    * "circle"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.type
-    */
-  var `type`: js.UndefOr[String] = js.native
-  /**
-    * Define the overlap relationship between graphic elements.
-    *
-    *
-    * @default
-    * "undefined"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.z2
-    */
-  var z2: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.native
 }
-
 object Origin {
+  
   @scala.inline
   def apply(): Origin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Origin]
   }
+  
   @scala.inline
   implicit class OriginOps[Self <: Origin] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setColor(value: typings.echarts.echarts.EChartOption.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def deleteColor: Self = this.set("color", js.undefined)
+    
     @scala.inline
-    def setIgnore(value: Boolean): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    
     @scala.inline
-    def setInfo(value: js.Any): Self = this.set("info", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
-    @scala.inline
-    def setInvisible(value: Boolean): Self = this.set("invisible", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteInvisible: Self = this.set("invisible", js.undefined)
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    @scala.inline
-    def setOrigin(value: Double): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrigin: Self = this.set("origin", js.undefined)
+    
     @scala.inline
-    def setPositionVarargs(value: js.Any*): Self = this.set("position", js.Array(value :_*))
+    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setPosition(value: js.Array[_]): Self = this.set("position", value.asInstanceOf[js.Any])
+    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShadowColor(value: typings.echarts.echarts.EChartOption.Color): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setScaleVarargs(value: js.Any*): Self = this.set("scale", js.Array(value :_*))
+    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    
     @scala.inline
-    def setScale(value: js.Array[_]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    @scala.inline
-    def setShape(value: Cx): Self = this.set("shape", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
-    @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
-    @scala.inline
-    def setStyle(value: Fill): Self = this.set("style", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    @scala.inline
-    def setStyleEmphasis(value: js.Object): Self = this.set("styleEmphasis", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteStyleEmphasis: Self = this.set("styleEmphasis", js.undefined)
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    @scala.inline
-    def setZ2(value: Double): Self = this.set("z2", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteZ2: Self = this.set("z2", js.undefined)
+    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
   }
-  
 }
-

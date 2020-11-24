@@ -11,14 +11,14 @@ Serialize unserializable data and parse it back.
 | Full name          | remotedev-serialize |
 | Keywords           | redux, devtools |
 | # releases         | 9 |
-| # dependents       | 8 |
-| # downloads        | 2616928 |
+| # dependents       | 7 |
+| # downloads        | 2422317 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/zalmoxisus/remotedev-serialize)
-- [Bugs](https://github.com/zalmoxisus/remotedev-serialize/issues)
-- [Repository](https://github.com/zalmoxisus/remotedev-serialize)
+- [Homepage](https://github.com/reduxjs/redux-devtools)
+- [Bugs](https://github.com/reduxjs/redux-devtools/issues)
+- [Repository](https://github.com/reduxjs/redux-devtools)
 - [Npm](https://www.npmjs.com/package/remotedev-serialize)
     
 

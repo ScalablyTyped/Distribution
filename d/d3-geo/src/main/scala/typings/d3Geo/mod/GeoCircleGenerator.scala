@@ -3,16 +3,18 @@ package typings.d3Geo.mod
 import typings.geojson.mod.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoCircleGenerator[This, Datum] extends js.Object {
+  
   /**
     * Returns a new GeoJSON geometry object of type “Polygon” approximating a circle on the surface of a sphere,
     * with the current center, radius and precision. Any arguments are passed to the accessors.
     */
   def apply(d: Datum, args: js.Any*): Polygon = js.native
   def apply(d: js.UndefOr[scala.Nothing], args: js.Any*): Polygon = js.native
+  
   /**
     * Returns the current center accessor, which defaults to a function returning [0, 0].
     */
@@ -32,6 +34,7 @@ trait GeoCircleGenerator[This, Datum] extends js.Object {
     * @param center Center point specified as [longitude, latitude] in degrees.
     */
   def center(center: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current precision accessor, which defaults to a function returning 6.
     */
@@ -55,6 +58,7 @@ trait GeoCircleGenerator[This, Datum] extends js.Object {
     * @param precision Precision as specified angle in degrees.
     */
   def precision(precision: Double): this.type = js.native
+  
   /**
     * Returns the current radius accessor, which defaults to a function returning 90.
     */
@@ -73,4 +77,3 @@ trait GeoCircleGenerator[This, Datum] extends js.Object {
     */
   def radius(radius: Double): this.type = js.native
 }
-

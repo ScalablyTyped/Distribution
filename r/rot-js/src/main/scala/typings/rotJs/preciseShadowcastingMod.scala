@@ -2,14 +2,16 @@ package typings.rotJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rot-js/lib/fov/precise-shadowcasting", JSImport.Namespace)
 @js.native
 object preciseShadowcastingMod extends js.Object {
+  
   @js.native
   trait PreciseShadowcasting
     extends typings.rotJs.fovFovMod.default {
+    
     /**
       * @param {int[2]} A1 arc start
       * @param {int[2]} A2 arc end
@@ -24,4 +26,3 @@ object preciseShadowcastingMod extends js.Object {
   
   type Arc = js.Tuple2[Double, Double]
 }
-

@@ -4,7 +4,7 @@ import typings.mangopay2NodejsSdk.anon.PartialBankingAliasData
 import typings.mangopay2NodejsSdk.mod.bankingAlias.IBANBankingAliasData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.BankingAlias")
 @js.native
@@ -13,4 +13,3 @@ class BankingAlias protected ()
      with IBANBankingAliasData {
   def this(data: PartialBankingAliasData) = this()
 }
-

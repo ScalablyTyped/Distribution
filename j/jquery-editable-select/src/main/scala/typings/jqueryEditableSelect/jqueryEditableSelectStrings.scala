@@ -2,9 +2,55 @@ package typings.jqueryEditableSelect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryEditableSelectStrings {
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def fade: fade = "fade".asInstanceOf[fade]
+  
+  @scala.inline
+  def fast: fast = "fast".asInstanceOf[fast]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
+  
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
+  
+  @scala.inline
+  def slow: slow = "slow".asInstanceOf[slow]
+  
   @js.native
   sealed trait add extends js.Object
   
@@ -49,36 +95,4 @@ object jqueryEditableSelectStrings {
   
   @js.native
   sealed trait slow extends js.Object
-  
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def fast: fast = "fast".asInstanceOf[fast]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def slow: slow = "slow".asInstanceOf[slow]
 }
-

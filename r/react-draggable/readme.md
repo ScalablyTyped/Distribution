@@ -10,9 +10,9 @@ React draggable component
 | ------------------ | :-------------: |
 | Full name          | react-draggable |
 | Keywords           | react, draggable, react-component |
-| # releases         | 15 |
-| # dependents       | 440 |
-| # downloads        | 32957957 |
+| # releases         | 20 |
+| # dependents       | 572 |
+| # downloads        | 81434473 |
 | # stars            | 24 |
 
 ## Links

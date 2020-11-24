@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Projects$Serviceaccount")
 @js.native
 class ResourceProjectsServiceaccount protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.projects.serviceAccount.get
     * @desc Get the email address of this project's Google Cloud Storage
@@ -100,4 +102,3 @@ class ResourceProjectsServiceaccount protected () extends js.Object {
     callback: BodyResponseCallback[SchemaServiceAccount]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.makerJs.global.MakerJs.models
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.OvalArc")
 @js.native
@@ -33,4 +33,3 @@ class OvalArc protected ()
     isolateCaps: Boolean
   ) = this()
 }
-

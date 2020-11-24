@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * imports data into a configuration layer.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait Importer
   extends XLayerImporter
      with XInitialization
-
 object Importer {
+  
   @scala.inline
   def apply(
     TargetBackend: XBackend,
@@ -35,4 +35,3 @@ object Importer {
     __obj.asInstanceOf[Importer]
   }
 }
-

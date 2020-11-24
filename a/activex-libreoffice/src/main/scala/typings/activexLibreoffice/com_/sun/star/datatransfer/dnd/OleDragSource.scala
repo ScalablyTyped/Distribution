@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service connects the Java-like UNO drag and drop protocol to the protocol used on window platforms. It realized the drag source.
@@ -19,8 +19,8 @@ trait OleDragSource
   extends XDragSource
      with XInitialization
      with XComponent
-
 object OleDragSource {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -38,4 +38,3 @@ object OleDragSource {
     __obj.asInstanceOf[OleDragSource]
   }
 }
-

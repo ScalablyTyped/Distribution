@@ -11,8 +11,8 @@ Ace (Ajax.org Cloud9 Editor)
 | Full name          | ace-builds |
 | Keywords           | - |
 | # releases         | 12 |
-| # dependents       | 131 |
-| # downloads        | 4657287 |
+| # dependents       | 148 |
+| # downloads        | 5914778 |
 | # stars            | 2 |
 
 ## Links

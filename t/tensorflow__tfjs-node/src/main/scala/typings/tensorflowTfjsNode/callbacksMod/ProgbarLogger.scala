@@ -3,7 +3,7 @@ package typings.tensorflowTfjsNode.callbacksMod
 import typings.tensorflowTfjs.mod.CustomCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node/dist/callbacks", "ProgbarLogger")
 @js.native
@@ -11,15 +11,24 @@ import scala.scalajs.js.annotation._
   * Construtor of LoggingCallback.
   */
 class ProgbarLogger () extends CustomCallback {
+  
   val RENDER_THROTTLE_MS: js.Any = js.native
+  
   var batchesInLatestEpoch: js.Any = js.native
+  
   var currentEpochBegin: js.Any = js.native
+  
   var epochDurationMillis: js.Any = js.native
+  
   var formatLogsAsMetricsContent: js.Any = js.native
+  
   var isFieldRelevant: js.Any = js.native
+  
   var numTrainBatchesPerEpoch: js.Any = js.native
+  
   var progressBar: js.Any = js.native
+  
   var terminalWidth: js.Any = js.native
+  
   var usPerStep: js.Any = js.native
 }
-

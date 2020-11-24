@@ -2,10 +2,32 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassSubProcess extends ClassBufferedStream {
+  
+  /**
+    * 
+    * @brief 查询当前对象所指向的进程是否存在指定名称的窗口，仅限 windows
+    * @param name 窗口名称
+    * @return 窗口存在则返回窗口的 rect，否则返回 undefined
+    * 
+    * 
+    * 
+    */
+  def findWindow(name: String): js.Any = js.native
+  
+  /**
+    * 
+    * @brief 杀掉当前对象指向的进程，并传递信号
+    * @param signal 传递的信号
+    * 
+    * 
+    * 
+    */
+  def kill(signal: Double): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -17,6 +39,7 @@ trait ClassSubProcess extends ClassBufferedStream {
     * @type Integer
     */
   var pid: Double = js.native
+  
   /**
     * class prop 
     *
@@ -28,6 +51,7 @@ trait ClassSubProcess extends ClassBufferedStream {
     * @type BufferedStream
     */
   var stdin: ClassBufferedStream = js.native
+  
   /**
     * class prop 
     *
@@ -39,24 +63,4 @@ trait ClassSubProcess extends ClassBufferedStream {
     * @type BufferedStream
     */
   var stdout: ClassBufferedStream = js.native
-  /**
-    * 
-    * @brief 查询当前对象所指向的进程是否存在指定名称的窗口，仅限 windows
-    * @param name 窗口名称
-    * @return 窗口存在则返回窗口的 rect，否则返回 undefined
-    * 
-    * 
-    * 
-    */
-  def findWindow(name: String): js.Any = js.native
-  /**
-    * 
-    * @brief 杀掉当前对象指向的进程，并传递信号
-    * @param signal 传递的信号
-    * 
-    * 
-    * 
-    */
-  def kill(signal: Double): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.heremaps.H.mapevents
 import typings.heremaps.H.util.ContextItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContextMenuEvent should be fired, when a user right-clicks or longpresses on a map object.
@@ -18,12 +18,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ContextMenuEvent
   extends typings.heremaps.H.util.Event {
+  
   var originalEvent: Event = js.native
+  
   var viewportX: js.Array[ContextItem] = js.native
+  
   var viewportY: Double = js.native
 }
-
 object ContextMenuEvent {
+  
   @scala.inline
   def apply(
     currentTarget: js.Any,
@@ -40,26 +43,32 @@ object ContextMenuEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuEvent]
   }
+  
   @scala.inline
   implicit class ContextMenuEventOps[Self <: ContextMenuEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOriginalEvent(value: Event): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setViewportXVarargs(value: ContextItem*): Self = this.set("viewportX", js.Array(value :_*))
+    
     @scala.inline
     def setViewportX(value: js.Array[ContextItem]): Self = this.set("viewportX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setViewportY(value: Double): Self = this.set("viewportY", value.asInstanceOf[js.Any])
   }
-  
 }
-

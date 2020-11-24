@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * These are the possible values for the property "VerificationMode".
@@ -18,16 +18,17 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait VerificationMode extends js.Object
-
 object VerificationMode {
+  
   /** Always. */
   @scala.inline
   def ALWAYS: `0` = 0.asInstanceOf[`0`]
+  
   /** Never. */
   @scala.inline
   def NEVER: `2` = 2.asInstanceOf[`2`]
+  
   /** Once. */
   @scala.inline
   def ONCE: `1` = 1.asInstanceOf[`1`]
 }
-

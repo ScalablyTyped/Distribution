@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.connectparticipantMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ConnectParticipant")
 @js.native
@@ -14,4 +14,3 @@ class ConnectParticipant ()
   extends typings.awsSdk.allMod.ConnectParticipant {
   def this(options: ClientConfiguration) = this()
 }
-

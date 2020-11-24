@@ -10,9 +10,9 @@ Given some data, jsesc returns the shortest possible stringified & ASCII-safe re
 | ------------------ | :-------------: |
 | Full name          | jsesc |
 | Keywords           | buffer, escape, javascript, json, map, set, string, stringify, tool |
-| # releases         | 2 |
-| # dependents       | 220 |
-| # downloads        | 887756501 |
+| # releases         | 4 |
+| # dependents       | 295 |
+| # downloads        | 1188842885 |
 | # stars            | 15 |
 
 ## Links

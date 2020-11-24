@@ -4,33 +4,48 @@ import typings.std.Partial
 import typings.xstream.anon.Subscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xstream", "Stream")
 @js.native
 class Stream[T] () extends InternalListener[T] {
   def this(producer: InternalProducer[T]) = this()
-  var _d: Boolean = js.native
-  var _dl: InternalListener[T] = js.native
-  var _err: js.Any = js.native
-  var _ils: js.Array[InternalListener[T]] = js.native
-  var _prod: InternalProducer[T] = js.native
-  var _stopID: js.Any = js.native
-  var _target: Stream[T] | Null = js.native
-  var ctor: js.Any = js.native
+  
   def _add(il: InternalListener[T]): Unit = js.native
+  
+  var _d: Boolean = js.native
+  
+  var _dl: InternalListener[T] = js.native
+  
+  var _err: js.Any = js.native
+  
   def _hasNoSinks(x: InternalListener[_], trace: js.Array[_]): Boolean = js.native
+  
+  var _ils: js.Array[InternalListener[T]] = js.native
+  
   /* protected */ def _map[U](project: js.Function1[/* t */ T, U]): Stream[U] | MemoryStream[U] = js.native
+  
+  var _prod: InternalProducer[T] = js.native
+  
   def _pruneCycles(): Unit = js.native
+  
   def _remove(il: InternalListener[T]): Unit = js.native
+  
+  var _stopID: js.Any = js.native
+  
   def _stopNow(): Unit = js.native
+  
+  var _target: Stream[T] | Null = js.native
+  
   def _x(): Unit = js.native
+  
   /**
     * Adds a Listener to the Stream.
     *
     * @param {Listener} listener
     */
   def addListener(listener: Partial[Listener[T]]): Unit = js.native
+  
   /**
     * Passes the input stream to a custom operator, to produce an output stream.
     *
@@ -43,9 +58,13 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def compose[U](operator: js.Function1[/* stream */ Stream[T], U]): U = js.native
+  
+  var ctor: js.Any = js.native
+  
   def debug(): Stream[T] = js.native
   def debug(labelOrSpy: String): Stream[T] = js.native
   def debug(labelOrSpy: js.Function1[/* t */ T, _]): Stream[T] = js.native
+  
   /**
     * Ignores the first `amount` many events from the input stream, and then
     * after that starts forwarding events from the input stream to the output
@@ -64,6 +83,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def drop(amount: Double): Stream[T] = js.native
+  
   /**
     * Uses another stream to determine when to complete the current stream.
     *
@@ -84,9 +104,11 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def endWhen(other: Stream[_]): Stream[T] = js.native
+  
   def filter(passes: js.Function1[/* t */ T, Boolean]): Stream[T] = js.native
   @JSName("filter")
   def filter_S_T[S /* <: T */](passes: js.Function1[/* t */ T, /* is S */ Boolean]): Stream[S] = js.native
+  
   /**
     * Flattens a "stream of streams", handling only one nested stream at a time
     * (no concurrency).
@@ -113,6 +135,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def flatten[R](): Stream[R] = js.native
+  
   /**
     * "Folds" the stream onto itself.
     *
@@ -143,6 +166,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {MemoryStream}
     */
   def fold[R](accumulate: js.Function2[/* acc */ R, /* t */ T, R], seed: R): MemoryStream[R] = js.native
+  
   /**
     * *imitate* changes this current Stream to emit the same events that the
     * `other` given Stream does. This method returns nothing.
@@ -208,6 +232,7 @@ class Stream[T] () extends InternalListener[T] {
     * not be a MemoryStream.
     */
   def imitate(target: Stream[T]): Unit = js.native
+  
   /**
     * When the input stream completes, the output stream will emit the last event
     * emitted by the input stream, and then will also complete.
@@ -223,6 +248,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def last(): Stream[T] = js.native
+  
   /**
     * Transforms each event from the input Stream through a `project` function,
     * to get a Stream that emits those transformed events.
@@ -241,6 +267,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def map[U](project: js.Function1[/* t */ T, U]): Stream[U] = js.native
+  
   /**
     * It's like `map`, but transforms each input event to always the same
     * constant value on the output Stream.
@@ -258,6 +285,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def mapTo[U](projectedValue: U): Stream[U] = js.native
+  
   /**
     * Returns an output stream that behaves like the input stream, but also
     * remembers the most recent event that happens on the input stream, so that a
@@ -266,12 +294,14 @@ class Stream[T] () extends InternalListener[T] {
     * @return {MemoryStream}
     */
   def remember(): MemoryStream[T] = js.native
+  
   /**
     * Removes a Listener from the Stream, assuming the Listener was added to it.
     *
     * @param {Listener<T>} listener
     */
   def removeListener(listener: Partial[Listener[T]]): Unit = js.native
+  
   /**
     * Replaces an error with another stream.
     *
@@ -296,6 +326,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def replaceError(replace: js.Function1[/* err */ js.Any, Stream[T]]): Stream[T] = js.native
+  
   /**
     * Adds a "debug" listener to the stream. There can only be one debug
     * listener, that's why this is 'setDebugListener'. To remove the debug
@@ -318,6 +349,7 @@ class Stream[T] () extends InternalListener[T] {
     */
   def setDebugListener(): Unit = js.native
   def setDebugListener(listener: Partial[Listener[T]]): Unit = js.native
+  
   /**
     * Forces the Stream to emit the "completed" event to its listeners.
     *
@@ -326,6 +358,7 @@ class Stream[T] () extends InternalListener[T] {
     * method. Use it only when you know what you are doing.
     */
   def shamefullySendComplete(): Unit = js.native
+  
   /**
     * Forces the Stream to emit the given error to its listeners.
     *
@@ -337,6 +370,7 @@ class Stream[T] () extends InternalListener[T] {
     * this Stream.
     */
   def shamefullySendError(error: js.Any): Unit = js.native
+  
   /**
     * Forces the Stream to emit the given value to its listeners.
     *
@@ -348,6 +382,7 @@ class Stream[T] () extends InternalListener[T] {
     * this Stream.
     */
   def shamefullySendNext(value: T): Unit = js.native
+  
   /**
     * Prepends the given `initial` value to the sequence of events emitted by the
     * input stream. The returned stream is a MemoryStream, which means it is
@@ -365,6 +400,7 @@ class Stream[T] () extends InternalListener[T] {
     * @return {MemoryStream}
     */
   def startWith(initial: T): MemoryStream[T] = js.native
+  
   /**
     * Adds a Listener to the Stream returning a Subscription to remove that
     * listener.
@@ -373,6 +409,7 @@ class Stream[T] () extends InternalListener[T] {
     * @returns {Subscription}
     */
   def subscribe(listener: Partial[Listener[T]]): Subscription = js.native
+  
   /**
     * Lets the first `amount` many events from the input stream pass to the
     * output stream, then makes the output stream complete.
@@ -391,62 +428,11 @@ class Stream[T] () extends InternalListener[T] {
     */
   def take(amount: Double): Stream[T] = js.native
 }
-
 /* static members */
 @JSImport("xstream", "Stream")
 @js.native
 object Stream extends js.Object {
-  /**
-    * Combines multiple input streams together to return a stream whose events
-    * are arrays that collect the latest events from each input stream.
-    *
-    * *combine* internally remembers the most recent event from each of the input
-    * streams. When any of the input streams emits an event, that event together
-    * with all the other saved events are combined into an array. That array will
-    * be emitted on the output stream. It's essentially a way of joining together
-    * the events from multiple streams.
-    *
-    * Marble diagram:
-    *
-    * ```text
-    * --1----2-----3--------4---
-    * ----a-----b-----c--d------
-    *          combine
-    * ----1a-2a-2b-3b-3c-3d-4d--
-    * ```
-    *
-    * @factory true
-    * @param {Stream} stream1 A stream to combine together with other streams.
-    * @param {Stream} stream2 A stream to combine together with other streams.
-    * Multiple streams, not just two, may be given as arguments.
-    * @return {Stream}
-    */
-  @JSName("combine")
-  var combine_Original: CombineSignature = js.native
-  /**
-    * Blends multiple streams together, emitting events from all of them
-    * concurrently.
-    *
-    * *merge* takes multiple streams as arguments, and creates a stream that
-    * behaves like each of the argument streams, in parallel.
-    *
-    * Marble diagram:
-    *
-    * ```text
-    * --1----2-----3--------4---
-    * ----a-----b----c---d------
-    *            merge
-    * --1-a--2--b--3-c---d--4---
-    * ```
-    *
-    * @factory true
-    * @param {Stream} stream1 A stream to merge together with other streams.
-    * @param {Stream} stream2 A stream to merge together with other streams. Two
-    * or more streams may be given as arguments.
-    * @return {Stream}
-    */
-  @JSName("merge")
-  var merge_Original: MergeSignature = js.native
+  
   /**
     * Combines multiple input streams together to return a stream whose events
     * are arrays that collect the latest events from each input stream.
@@ -823,7 +809,35 @@ object Stream extends js.Object {
     * @return {Stream}
     */
   @JSName("combine")
+  var combine_Original: CombineSignature = js.native
+  /**
+    * Combines multiple input streams together to return a stream whose events
+    * are arrays that collect the latest events from each input stream.
+    *
+    * *combine* internally remembers the most recent event from each of the input
+    * streams. When any of the input streams emits an event, that event together
+    * with all the other saved events are combined into an array. That array will
+    * be emitted on the output stream. It's essentially a way of joining together
+    * the events from multiple streams.
+    *
+    * Marble diagram:
+    *
+    * ```text
+    * --1----2-----3--------4---
+    * ----a-----b-----c--d------
+    *          combine
+    * ----1a-2a-2b-3b-3c-3d-4d--
+    * ```
+    *
+    * @factory true
+    * @param {Stream} stream1 A stream to combine together with other streams.
+    * @param {Stream} stream2 A stream to combine together with other streams.
+    * Multiple streams, not just two, may be given as arguments.
+    * @return {Stream}
+    */
+  @JSName("combine")
   def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = js.native
+  
   /**
     * Creates a new Stream given a Producer.
     *
@@ -834,6 +848,7 @@ object Stream extends js.Object {
     */
   def create[T](): Stream[T] = js.native
   def create[T](producer: Producer[T]): Stream[T] = js.native
+  
   /**
     * Creates a new MemoryStream given a Producer.
     *
@@ -844,6 +859,7 @@ object Stream extends js.Object {
     */
   def createWithMemory[T](): MemoryStream[T] = js.native
   def createWithMemory[T](producer: Producer[T]): MemoryStream[T] = js.native
+  
   /**
     * Creates a Stream that immediately emits the "complete" notification when
     * started, and that's it.
@@ -858,7 +874,8 @@ object Stream extends js.Object {
     * @factory true
     * @return {Stream}
     */
-  def empty(): Stream[_] = js.native
+  def empty[T](): Stream[T] = js.native
+  
   def from[T](input: js.Array[T]): Stream[T] = js.native
   /**
     * Creates a stream from an Array, Promise, or an Observable.
@@ -870,6 +887,7 @@ object Stream extends js.Object {
   def from[T](input: js.Thenable[T]): Stream[T] = js.native
   def from[T](input: Observable[T]): Stream[T] = js.native
   def from[T](input: Stream[T]): Stream[T] = js.native
+  
   /**
     * Converts an array to a stream. The returned stream will emit synchronously
     * all the items in the array, and then complete.
@@ -886,6 +904,7 @@ object Stream extends js.Object {
     * @return {Stream}
     */
   def fromArray[T](array: js.Array[T]): Stream[T] = js.native
+  
   /**
     * Converts an Observable into a Stream.
     *
@@ -894,6 +913,7 @@ object Stream extends js.Object {
     * @return {Stream}
     */
   def fromObservable[T](obs: Subscribe): Stream[T] = js.native
+  
   /**
     * Converts a promise to a stream. The returned stream will emit the resolved
     * value of the promise, and then complete. However, if the promise is
@@ -911,6 +931,7 @@ object Stream extends js.Object {
     * @return {Stream}
     */
   def fromPromise[T](promise: js.Thenable[T]): Stream[T] = js.native
+  
   /**
     * Blends multiple streams together, emitting events from all of them
     * concurrently.
@@ -1226,6 +1247,31 @@ object Stream extends js.Object {
     s10: Stream[T10]
   ): Stream[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
   /**
+    * Blends multiple streams together, emitting events from all of them
+    * concurrently.
+    *
+    * *merge* takes multiple streams as arguments, and creates a stream that
+    * behaves like each of the argument streams, in parallel.
+    *
+    * Marble diagram:
+    *
+    * ```text
+    * --1----2-----3--------4---
+    * ----a-----b----c---d------
+    *            merge
+    * --1-a--2--b--3-c---d--4---
+    * ```
+    *
+    * @factory true
+    * @param {Stream} stream1 A stream to merge together with other streams.
+    * @param {Stream} stream2 A stream to merge together with other streams. Two
+    * or more streams may be given as arguments.
+    * @return {Stream}
+    */
+  @JSName("merge")
+  var merge_Original: MergeSignature = js.native
+  
+  /**
     * Creates a Stream that does nothing when started. It never emits any event.
     *
     * Marble diagram:
@@ -1238,7 +1284,8 @@ object Stream extends js.Object {
     * @factory true
     * @return {Stream}
     */
-  def never(): Stream[_] = js.native
+  def never[T](): Stream[T] = js.native
+  
   /**
     * Creates a Stream that immediately emits the arguments that you give to
     * *of*, then completes.
@@ -1257,6 +1304,7 @@ object Stream extends js.Object {
     * @return {Stream}
     */
   def of[T](items: T*): Stream[T] = js.native
+  
   /**
     * Creates a stream that periodically emits incremental numbers, every
     * `period` milliseconds.
@@ -1274,6 +1322,7 @@ object Stream extends js.Object {
     * @return {Stream}
     */
   def periodic(period: Double): Stream[Double] = js.native
+  
   /**
     * Creates a Stream that immediately emits an "error" notification with the
     * value you passed as the `error` argument when the stream starts, and that's
@@ -1292,4 +1341,3 @@ object Stream extends js.Object {
     */
   def `throw`(error: js.Any): Stream[_] = js.native
 }
-

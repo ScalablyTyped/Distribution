@@ -2,7 +2,7 @@ package typings.amapJsApi.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.LayerGroup")
 @js.native
@@ -15,4 +15,3 @@ class LayerGroup[L] protected ()
   def this(layers: L) = this()
   def this(layers: js.Array[L]) = this()
 }
-

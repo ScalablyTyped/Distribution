@@ -2,34 +2,11 @@ package typings.bazingaTranslator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BazingaTranslator extends js.Object {
-  /**
-    * Default domain.
-    */
-  var defaultDomain: String = js.native
-  /**
-    * Fallback locale.
-    */
-  var fallback: String = js.native
-  /**
-    * The current locale.
-    */
-  var locale: String = js.native
-  /**
-    * Placeholder prefix.
-    */
-  var placeHolderPrefix: String = js.native
-  /**
-    * Placeholder suffix.
-    */
-  var placeHolderSuffix: String = js.native
-  /**
-    * Plural separator.
-    */
-  var pluralSeparator: String = js.native
+  
   /**
     * Adds a translation entry.
     *
@@ -42,13 +19,46 @@ trait BazingaTranslator extends js.Object {
   def add(id: String, message: String, domain: js.UndefOr[scala.Nothing], locale: String): BazingaTranslator = js.native
   def add(id: String, message: String, domain: String): BazingaTranslator = js.native
   def add(id: String, message: String, domain: String, locale: String): BazingaTranslator = js.native
+  
+  /**
+    * Default domain.
+    */
+  var defaultDomain: String = js.native
+  
+  /**
+    * Fallback locale.
+    */
+  var fallback: String = js.native
+  
   /**
     * Loads translations from JSON.
     *
     * @param data     A JSON string or object literal
     */
   def fromJSON(data: String): BazingaTranslator = js.native
+  
+  /**
+    * The current locale.
+    */
+  var locale: String = js.native
+  
+  /**
+    * Placeholder prefix.
+    */
+  var placeHolderPrefix: String = js.native
+  
+  /**
+    * Placeholder suffix.
+    */
+  var placeHolderSuffix: String = js.native
+  
+  /**
+    * Plural separator.
+    */
+  var pluralSeparator: String = js.native
+  
   def reset(): Unit = js.native
+  
   /**
     * Translates the given message.
     *
@@ -70,6 +80,7 @@ trait BazingaTranslator extends js.Object {
   def trans(id: String, parameters: js.Any, domain: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def trans(id: String, parameters: js.Any, domain: String): String = js.native
   def trans(id: String, parameters: js.Any, domain: String, locale: String): String = js.native
+  
   /**
     * Translates the given choice message by choosing a translation according to a number.
     *
@@ -94,4 +105,3 @@ trait BazingaTranslator extends js.Object {
   def transChoice(id: String, number: Double, parameters: js.Any, domain: String): String = js.native
   def transChoice(id: String, number: Double, parameters: js.Any, domain: String, locale: String): String = js.native
 }
-

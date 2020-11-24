@@ -2,44 +2,104 @@ package typings.babylonjs.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait BSphereRadiusFactor extends js.Object {
-  var bSphereRadiusFactor: js.UndefOr[Double] = js.undefined
-  var boundingSphereOnly: js.UndefOr[Boolean] = js.undefined
-  var enableDepthSort: js.UndefOr[Boolean] = js.undefined
-  var enableMultiMaterial: js.UndefOr[Boolean] = js.undefined
-  var expandable: js.UndefOr[Boolean] = js.undefined
-  var isPickable: js.UndefOr[Boolean] = js.undefined
-  var particleIntersection: js.UndefOr[Boolean] = js.undefined
-  var updatable: js.UndefOr[Boolean] = js.undefined
-  var useModelMaterial: js.UndefOr[Boolean] = js.undefined
+  
+  var bSphereRadiusFactor: js.UndefOr[Double] = js.native
+  
+  var boundingSphereOnly: js.UndefOr[Boolean] = js.native
+  
+  var enableDepthSort: js.UndefOr[Boolean] = js.native
+  
+  var enableMultiMaterial: js.UndefOr[Boolean] = js.native
+  
+  var expandable: js.UndefOr[Boolean] = js.native
+  
+  var isPickable: js.UndefOr[Boolean] = js.native
+  
+  var particleIntersection: js.UndefOr[Boolean] = js.native
+  
+  var updatable: js.UndefOr[Boolean] = js.native
+  
+  var useModelMaterial: js.UndefOr[Boolean] = js.native
 }
-
 object BSphereRadiusFactor {
+  
   @scala.inline
-  def apply(
-    bSphereRadiusFactor: js.UndefOr[Double] = js.undefined,
-    boundingSphereOnly: js.UndefOr[Boolean] = js.undefined,
-    enableDepthSort: js.UndefOr[Boolean] = js.undefined,
-    enableMultiMaterial: js.UndefOr[Boolean] = js.undefined,
-    expandable: js.UndefOr[Boolean] = js.undefined,
-    isPickable: js.UndefOr[Boolean] = js.undefined,
-    particleIntersection: js.UndefOr[Boolean] = js.undefined,
-    updatable: js.UndefOr[Boolean] = js.undefined,
-    useModelMaterial: js.UndefOr[Boolean] = js.undefined
-  ): BSphereRadiusFactor = {
+  def apply(): BSphereRadiusFactor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bSphereRadiusFactor)) __obj.updateDynamic("bSphereRadiusFactor")(bSphereRadiusFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(boundingSphereOnly)) __obj.updateDynamic("boundingSphereOnly")(boundingSphereOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDepthSort)) __obj.updateDynamic("enableDepthSort")(enableDepthSort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultiMaterial)) __obj.updateDynamic("enableMultiMaterial")(enableMultiMaterial.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPickable)) __obj.updateDynamic("isPickable")(isPickable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(particleIntersection)) __obj.updateDynamic("particleIntersection")(particleIntersection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useModelMaterial)) __obj.updateDynamic("useModelMaterial")(useModelMaterial.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BSphereRadiusFactor]
   }
+  
+  @scala.inline
+  implicit class BSphereRadiusFactorOps[Self <: BSphereRadiusFactor] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setBSphereRadiusFactor(value: Double): Self = this.set("bSphereRadiusFactor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBSphereRadiusFactor: Self = this.set("bSphereRadiusFactor", js.undefined)
+    
+    @scala.inline
+    def setBoundingSphereOnly(value: Boolean): Self = this.set("boundingSphereOnly", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBoundingSphereOnly: Self = this.set("boundingSphereOnly", js.undefined)
+    
+    @scala.inline
+    def setEnableDepthSort(value: Boolean): Self = this.set("enableDepthSort", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEnableDepthSort: Self = this.set("enableDepthSort", js.undefined)
+    
+    @scala.inline
+    def setEnableMultiMaterial(value: Boolean): Self = this.set("enableMultiMaterial", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEnableMultiMaterial: Self = this.set("enableMultiMaterial", js.undefined)
+    
+    @scala.inline
+    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteExpandable: Self = this.set("expandable", js.undefined)
+    
+    @scala.inline
+    def setIsPickable(value: Boolean): Self = this.set("isPickable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsPickable: Self = this.set("isPickable", js.undefined)
+    
+    @scala.inline
+    def setParticleIntersection(value: Boolean): Self = this.set("particleIntersection", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteParticleIntersection: Self = this.set("particleIntersection", js.undefined)
+    
+    @scala.inline
+    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpdatable: Self = this.set("updatable", js.undefined)
+    
+    @scala.inline
+    def setUseModelMaterial(value: Boolean): Self = this.set("useModelMaterial", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUseModelMaterial: Self = this.set("useModelMaterial", js.undefined)
+  }
 }
-

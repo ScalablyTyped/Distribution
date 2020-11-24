@@ -3,7 +3,7 @@ package typings.uirouterCore.mod
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "ParamType")
 @js.native
@@ -16,4 +16,3 @@ class ParamType protected ()
     */
   def this(`def`: ParamTypeDefinition) = this()
 }
-

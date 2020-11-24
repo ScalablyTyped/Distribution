@@ -12,10 +12,13 @@ virtual domain hosting
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 141 |
-| # downloads        | 7056733 |
+| # downloads        | 6830922 |
 | # stars            | 54 |
 
 ## Links
+- [Homepage](https://github.com/expressjs/vhost)
+- [Bugs](https://github.com/expressjs/vhost/issues)
+- [Repository](https://github.com/expressjs/vhost)
 - [Npm](https://www.npmjs.com/package/vhost)
     
 

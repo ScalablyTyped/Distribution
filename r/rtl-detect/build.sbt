@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rtl-detect"
-version := "1.0-dt-20190401Z-c3df8f"
+version := "1.0-dt-20190401Z-c33828"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.loopback.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the abstract notion of a principal, which can be used
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Principal protected () extends js.Object {
   def this(`type`: String, id: js.Any, name: String) = this()
+  
   /**
     * Compare if two principals are equal
     * Returns true if argument principal is equal to this principal.
@@ -24,4 +25,3 @@ class Principal protected () extends js.Object {
     */
   def equals(p: js.Any): Unit = js.native
 }
-

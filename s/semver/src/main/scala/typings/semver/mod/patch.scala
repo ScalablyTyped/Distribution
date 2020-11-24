@@ -3,11 +3,12 @@ package typings.semver.mod
 import typings.semver.semverMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "patch")
 @js.native
 object patch extends js.Object {
+  
   /**
     * Return the patch version number.
     */
@@ -18,4 +19,3 @@ object patch extends js.Object {
   def apply(version: ^, optionsOrLoose: Boolean): Double = js.native
   def apply(version: ^, optionsOrLoose: Options): Double = js.native
 }
-

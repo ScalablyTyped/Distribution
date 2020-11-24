@@ -3,9 +3,25 @@ package typings.eggMock
 import typings.eggMock.mod.EnvType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eggMockStrings {
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  
+  @scala.inline
+  def prod: prod = "prod".asInstanceOf[prod]
+  
+  @scala.inline
+  def test: test = "test".asInstanceOf[test]
+  
+  @scala.inline
+  def unittest: unittest = "unittest".asInstanceOf[unittest]
+  
   @js.native
   sealed trait default extends EnvType
   
@@ -20,16 +36,4 @@ object eggMockStrings {
   
   @js.native
   sealed trait unittest extends EnvType
-  
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def prod: prod = "prod".asInstanceOf[prod]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
-  @scala.inline
-  def unittest: unittest = "unittest".asInstanceOf[unittest]
 }
-

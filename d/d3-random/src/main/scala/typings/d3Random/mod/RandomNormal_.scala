@@ -2,10 +2,11 @@ package typings.d3Random.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RandomNormal_ extends RandomNumberGenerationSource {
+  
   /**
     * Returns a function for generating random numbers with a normal (Gaussian) distribution.
     * The expected value of the generated numbers is mu, with the given standard deviation sigma.
@@ -19,4 +20,3 @@ trait RandomNormal_ extends RandomNumberGenerationSource {
   def apply(mu: Double): js.Function0[Double] = js.native
   def apply(mu: Double, sigma: Double): js.Function0[Double] = js.native
 }
-

@@ -10,15 +10,15 @@ Calendar! with events
 | ------------------ | :-------------: |
 | Full name          | react-big-calendar |
 | Keywords           | scheduler, react-component, react, calendar, events, full calendar |
-| # releases         | 14 |
-| # dependents       | 44 |
-| # downloads        | 2763232 |
+| # releases         | 20 |
+| # dependents       | 63 |
+| # downloads        | 4343245 |
 | # stars            | 13 |
 
 ## Links
-- [Homepage](https://github.com/intljusticemission/react-big-calendar#readme)
-- [Bugs](https://github.com/intljusticemission/react-big-calendar/issues)
-- [Repository](https://github.com/intljusticemission/react-big-calendar)
+- [Homepage](https://github.com/jquense/react-big-calendar#readme)
+- [Bugs](https://github.com/jquense/react-big-calendar/issues)
+- [Repository](https://github.com/jquense/react-big-calendar)
 - [Npm](https://www.npmjs.com/package/react-big-calendar)
     
 

@@ -10,9 +10,9 @@ Drag and drop so simple it hurts
 | ------------------ | :-------------: |
 | Full name          | dragula |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 137 |
-| # downloads        | 4036595 |
+| # releases         | 2 |
+| # dependents       | 174 |
+| # downloads        | 5908889 |
 | # stars            | 22 |
 
 ## Links

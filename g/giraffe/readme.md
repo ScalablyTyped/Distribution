@@ -11,7 +11,7 @@ Lightweight Graph DB implementation
 | Keywords           | graph, database |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 936 |
+| # downloads        | 660 |
 | # stars            | 0 |
 
 ## Links

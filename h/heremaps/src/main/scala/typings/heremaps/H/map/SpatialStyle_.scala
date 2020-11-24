@@ -5,7 +5,7 @@ import typings.heremaps.H.map.SpatialStyle.LineJoin
 import typings.heremaps.H.map.SpatialStyle.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The SpatialStyle class represents a style with which spatial objects like polylines and polygons are drawn. A SpatialStyle instance is always treated as immutable to avoid inconstiencies
@@ -24,14 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SpatialStyle_ extends js.Object {
-  var fillColor: String = js.native
-  var lineCap: LineCap = js.native
-  var lineDash: js.Array[Double] = js.native
-  var lineDashOffset: Double = js.native
-  var lineJoin: LineJoin = js.native
-  var lineWidth: Double = js.native
-  var miterLimit: Double = js.native
-  var strokeColor: String = js.native
+  
   /**
     * This method checks value-equality with another style.
     * @param other {(H.map.SpatialStyle | H.map.SpatialStyle.Options)} - the style to compare with
@@ -39,6 +32,9 @@ trait SpatialStyle_ extends js.Object {
     */
   def equals(other: SpatialStyle): Boolean = js.native
   def equals(other: Options): Boolean = js.native
+  
+  var fillColor: String = js.native
+  
   /**
     * Returns a copy of spatial style object and replaces the passed style attributes into it.
     * @param opt_attributes {H.map.SpatialStyle.Options=} - The style attributes to set on the copied style instance
@@ -46,5 +42,18 @@ trait SpatialStyle_ extends js.Object {
     */
   def getCopy(): SpatialStyle = js.native
   def getCopy(opt_attributes: Options): SpatialStyle = js.native
+  
+  var lineCap: LineCap = js.native
+  
+  var lineDash: js.Array[Double] = js.native
+  
+  var lineDashOffset: Double = js.native
+  
+  var lineJoin: LineJoin = js.native
+  
+  var lineWidth: Double = js.native
+  
+  var miterLimit: Double = js.native
+  
+  var strokeColor: String = js.native
 }
-

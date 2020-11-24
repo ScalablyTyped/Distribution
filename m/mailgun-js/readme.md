@@ -10,9 +10,9 @@ Simple Node.js helper module for Mailgun API
 | ------------------ | :-------------: |
 | Full name          | mailgun-js |
 | Keywords           | email, mailgun |
-| # releases         | 11 |
-| # dependents       | 194 |
-| # downloads        | 15892534 |
+| # releases         | 2 |
+| # dependents       | 228 |
+| # downloads        | 15252021 |
 | # stars            | 45 |
 
 ## Links

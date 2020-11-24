@@ -2,7 +2,7 @@ package typings.cldrjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @name CldrStatic
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CldrStatic extends js.Object {
+  
   /**
     * @name attributes
     * @memberof cldr.CldrStatic
@@ -27,20 +28,7 @@ trait CldrStatic extends js.Object {
     * to replace dynamic parts of an item path.
     */
   var attributes: Attributes = js.native
-  /**
-    * @name locale
-    * @memberof cldr.CldrStatic
-    * @kind property
-    * @access public
-    *
-    * @type {string}
-    *
-    * @declaration
-    * The locale string.
-    */
-  var locale: String = js.native
-  @JSName("supplemental")
-  var supplemental_Original: SupplementalStatic = js.native
+  
   /**
     * @name get
     * @memberof cldr.CldrStatic
@@ -69,6 +57,20 @@ trait CldrStatic extends js.Object {
     * @returns {any} The cldr member.
     */
   def get(paths: js.Array[String]): js.Any = js.native
+  
+  /**
+    * @name locale
+    * @memberof cldr.CldrStatic
+    * @kind property
+    * @access public
+    *
+    * @type {string}
+    *
+    * @declaration
+    * The locale string.
+    */
+  var locale: String = js.native
+  
   /**
     * @name main
     * @memberof cldr.CldrStatic
@@ -97,10 +99,15 @@ trait CldrStatic extends js.Object {
     * @returns {any} The cldr member.
     */
   def main(paths: js.Array[String]): js.Any = js.native
+  
   def off(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+  
   def on(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+  
   def once(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+  
   def supplemental(path: String): js.Any = js.native
   def supplemental(paths: js.Array[String]): js.Any = js.native
+  @JSName("supplemental")
+  var supplemental_Original: SupplementalStatic = js.native
 }
-

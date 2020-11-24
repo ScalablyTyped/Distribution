@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/mergeScan", JSImport.Namespace)
 @js.native
 object operatorsMergeScanMod extends js.Object {
+  
   def mergeScan[T, R](
     accumulator: js.Function2[
       /* acc */ R, 
@@ -25,4 +26,3 @@ object operatorsMergeScanMod extends js.Object {
     concurrent: Double
   ): js.Any = js.native
 }
-

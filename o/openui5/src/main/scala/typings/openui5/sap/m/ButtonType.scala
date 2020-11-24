@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ButtonType extends js.Object
-
 /**
   * Different types for a button (predefined types)
   */
 @JSGlobal("sap.m.ButtonType")
 @js.native
 object ButtonType extends js.Object {
+  
   @js.native
   sealed trait Accept extends ButtonType
   
@@ -36,6 +36,4 @@ object ButtonType extends js.Object {
   
   @js.native
   sealed trait Up extends ButtonType
-  
 }
-

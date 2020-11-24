@@ -10,9 +10,9 @@ return a debounced function
 | ------------------ | :-------------: |
 | Full name          | just-debounce-it |
 | Keywords           | function, debounce, no-dependencies, just |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 660961 |
+| # releases         | 0 |
+| # dependents       | 15 |
+| # downloads        | 1076801 |
 | # stars            | 0 |
 
 ## Links

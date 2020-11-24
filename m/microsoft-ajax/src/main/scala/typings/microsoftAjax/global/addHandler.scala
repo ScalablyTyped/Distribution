@@ -4,11 +4,12 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("$addHandler")
 @js.native
 object addHandler extends js.Object {
+  
   /*
   * Provides a shortcut to the addHandler method of the Sys.UI.DomEvent class. This member is static and can be invoked without creating an instance of the class.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb311019(v=vs.100).aspx}
@@ -25,4 +26,3 @@ object addHandler extends js.Object {
     autoRemove: Boolean
   ): Unit = js.native
 }
-

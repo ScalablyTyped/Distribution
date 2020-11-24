@@ -10,9 +10,9 @@ Make use of Bootstrap Modal more monkey-friendly.
 | ------------------ | :-------------: |
 | Full name          | bootstrap3-dialog |
 | Keywords           | bootstrap, dialog |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 102560 |
+| # downloads        | 105860 |
 | # stars            | 2 |
 
 ## Links

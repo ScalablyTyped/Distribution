@@ -2,11 +2,12 @@ package typings.pkijs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkijs/src/common", "stringPrep")
 @js.native
 object stringPrep extends js.Object {
+  
   /**
     * String preparation function. In a future here will be realization of algorithm from RFC4518
     *
@@ -15,4 +16,3 @@ object stringPrep extends js.Object {
     */
   def apply(inputString: String): String = js.native
 }
-

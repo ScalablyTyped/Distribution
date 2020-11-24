@@ -2,22 +2,11 @@ package typings.skmeans
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("skmeans", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  trait Data extends js.Object {
-    var centroids: Double = js.native
-    var idxs: js.Array[Double] = js.native
-    var it: Double = js.native
-    var k: Double = js.native
-    def test(x: Double): Unit = js.native
-    def test(x: Double, point: js.Function2[/* x1 */ Double, /* x2 */ Double, Double]): Unit = js.native
-  }
-  
-  trait _CentroidValues extends js.Object
   
   /**
     * Calculates unidimiensional and multidimensional k-means clustering on data.
@@ -57,6 +46,24 @@ object mod extends js.Object {
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = js.native
   def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = js.native
+  
+  @js.native
+  trait Data extends js.Object {
+    
+    var centroids: Double = js.native
+    
+    var idxs: js.Array[Double] = js.native
+    
+    var it: Double = js.native
+    
+    var k: Double = js.native
+    
+    def test(x: Double): Unit = js.native
+    def test(x: Double, point: js.Function2[/* x1 */ Double, /* x2 */ Double, Double]): Unit = js.native
+  }
+  
+  trait _CentroidValues extends js.Object
+  
   /* Rewritten from type alias, can be one of: 
     - typings.skmeans.skmeansStrings.kmrand
     - typings.skmeans.skmeansStrings.kmpp
@@ -64,4 +71,3 @@ object mod extends js.Object {
   */
   type CentroidValues = _CentroidValues | Null
 }
-

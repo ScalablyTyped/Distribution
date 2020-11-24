@@ -1,90 +1,116 @@
 package typings.soap.typesMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.request.mod.CoreOptions
 import typings.request.mod.Request
 import typings.request.mod.RequestAPI
 import typings.request.mod.RequiredUriUrl
-import typings.soap.anon.Namespace
-import typings.soap.anon.Namespaces
 import typings.soap.httpMod.HttpClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IOptions extends IWsdlBaseOptions {
-  var customDeserializer: js.UndefOr[js.Any] = js.undefined
+  
+  var customDeserializer: js.UndefOr[js.Any] = js.native
+  
   /** don't cache WSDL files, request them every time. */
-  var disableCache: js.UndefOr[Boolean] = js.undefined
+  var disableCache: js.UndefOr[Boolean] = js.native
+  
   /** override the SOAP service's host specified in the .wsdl file. */
-  var endpoint: js.UndefOr[String] = js.undefined
+  var endpoint: js.UndefOr[String] = js.native
+  
   /** set specific key instead of <pre><soap:Body></soap:Body></pre>. */
-  var envelopeKey: js.UndefOr[String] = js.undefined
+  var envelopeKey: js.UndefOr[String] = js.native
+  
   /** provide your own http client that implements request(rurl, data, callback, exheaders, exoptions) */
-  var httpClient: js.UndefOr[HttpClient] = js.undefined
+  var httpClient: js.UndefOr[HttpClient] = js.native
+  
   /** if your wsdl operations contains names with Async suffix, you will need to override the default promise suffix to a custom one, default: Async. */
-  var overridePromiseSuffix: js.UndefOr[String] = js.undefined
+  var overridePromiseSuffix: js.UndefOr[String] = js.native
+  
   /** override the request module. */
-  var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.undefined
-  var stream: js.UndefOr[Boolean] = js.undefined
+  var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.native
+  
+  var returnSaxStream: js.UndefOr[Boolean] = js.native
+  
+  var stream: js.UndefOr[Boolean] = js.native
 }
-
 object IOptions {
+  
   @scala.inline
-  def apply(
-    attributesKey: String = null,
-    customDeserializer: js.Any = null,
-    disableCache: js.UndefOr[Boolean] = js.undefined,
-    endpoint: String = null,
-    envelopeKey: String = null,
-    escapeXML: js.UndefOr[Boolean] = js.undefined,
-    forceSoap12Headers: js.UndefOr[Boolean] = js.undefined,
-    handleNilAsNull: js.UndefOr[Boolean] = js.undefined,
-    httpClient: HttpClient = null,
-    ignoreBaseNameSpaces: js.UndefOr[Boolean] = js.undefined,
-    ignoredNamespaces: Boolean | js.Array[String] | Namespaces = null,
-    namespaceArrayElements: js.UndefOr[Boolean] = js.undefined,
-    normalizeNames: js.UndefOr[Boolean] = js.undefined,
-    overridePromiseSuffix: String = null,
-    overrideRootElement: Namespace = null,
-    preserveWhitespace: js.UndefOr[Boolean] = js.undefined,
-    request: RequestAPI[Request, CoreOptions, RequiredUriUrl] = null,
-    returnFault: js.UndefOr[Boolean] = js.undefined,
-    stream: js.UndefOr[Boolean] = js.undefined,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    useEmptyTag: js.UndefOr[Boolean] = js.undefined,
-    valueKey: String = null,
-    wsdl_headers: StringDictionary[js.Any] = null,
-    wsdl_options: StringDictionary[js.Any] = null,
-    xmlKey: String = null
-  ): IOptions = {
+  def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey.asInstanceOf[js.Any])
-    if (customDeserializer != null) __obj.updateDynamic("customDeserializer")(customDeserializer.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache.get.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (envelopeKey != null) __obj.updateDynamic("envelopeKey")(envelopeKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeXML)) __obj.updateDynamic("escapeXML")(escapeXML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSoap12Headers)) __obj.updateDynamic("forceSoap12Headers")(forceSoap12Headers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleNilAsNull)) __obj.updateDynamic("handleNilAsNull")(handleNilAsNull.get.asInstanceOf[js.Any])
-    if (httpClient != null) __obj.updateDynamic("httpClient")(httpClient.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBaseNameSpaces)) __obj.updateDynamic("ignoreBaseNameSpaces")(ignoreBaseNameSpaces.get.asInstanceOf[js.Any])
-    if (ignoredNamespaces != null) __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceArrayElements)) __obj.updateDynamic("namespaceArrayElements")(namespaceArrayElements.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeNames)) __obj.updateDynamic("normalizeNames")(normalizeNames.get.asInstanceOf[js.Any])
-    if (overridePromiseSuffix != null) __obj.updateDynamic("overridePromiseSuffix")(overridePromiseSuffix.asInstanceOf[js.Any])
-    if (overrideRootElement != null) __obj.updateDynamic("overrideRootElement")(overrideRootElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.get.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFault)) __obj.updateDynamic("returnFault")(returnFault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEmptyTag)) __obj.updateDynamic("useEmptyTag")(useEmptyTag.get.asInstanceOf[js.Any])
-    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
-    if (wsdl_headers != null) __obj.updateDynamic("wsdl_headers")(wsdl_headers.asInstanceOf[js.Any])
-    if (wsdl_options != null) __obj.updateDynamic("wsdl_options")(wsdl_options.asInstanceOf[js.Any])
-    if (xmlKey != null) __obj.updateDynamic("xmlKey")(xmlKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCustomDeserializer(value: js.Any): Self = this.set("customDeserializer", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCustomDeserializer: Self = this.set("customDeserializer", js.undefined)
+    
+    @scala.inline
+    def setDisableCache(value: Boolean): Self = this.set("disableCache", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDisableCache: Self = this.set("disableCache", js.undefined)
+    
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    
+    @scala.inline
+    def setEnvelopeKey(value: String): Self = this.set("envelopeKey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEnvelopeKey: Self = this.set("envelopeKey", js.undefined)
+    
+    @scala.inline
+    def setHttpClient(value: HttpClient): Self = this.set("httpClient", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHttpClient: Self = this.set("httpClient", js.undefined)
+    
+    @scala.inline
+    def setOverridePromiseSuffix(value: String): Self = this.set("overridePromiseSuffix", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOverridePromiseSuffix: Self = this.set("overridePromiseSuffix", js.undefined)
+    
+    @scala.inline
+    def setRequest(value: RequestAPI[Request, CoreOptions, RequiredUriUrl]): Self = this.set("request", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    
+    @scala.inline
+    def setReturnSaxStream(value: Boolean): Self = this.set("returnSaxStream", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReturnSaxStream: Self = this.set("returnSaxStream", js.undefined)
+    
+    @scala.inline
+    def setStream(value: Boolean): Self = this.set("stream", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+  }
 }
-

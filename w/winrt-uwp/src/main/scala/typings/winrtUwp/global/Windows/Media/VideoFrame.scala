@@ -4,7 +4,7 @@ import typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapPixelFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a single frame of video data. */
 @JSGlobal("Windows.Media.VideoFrame")
@@ -27,4 +27,3 @@ class VideoFrame protected ()
     */
   def this(format: BitmapPixelFormat, width: Double, height: Double, alpha: BitmapAlphaMode) = this()
 }
-

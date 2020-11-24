@@ -5,7 +5,7 @@ import typings.uirouterCore.transitionInterfaceMod.HookMatchCriteria
 import typings.uirouterCore.transitionInterfaceMod.HookRegOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "RegisteredHook")
 @js.native
@@ -27,4 +27,3 @@ class RegisteredHook protected ()
     options: HookRegOptions
   ) = this()
 }
-

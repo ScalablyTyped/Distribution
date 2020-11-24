@@ -4,11 +4,14 @@ import typings.angularCommon.angularCommonTestingMod.MockPlatformLocationConfig
 import typings.angularCore.mod.InjectionToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/testing", JSImport.Namespace)
 @js.native
 object angularCommonMod extends js.Object {
+  
+  val MOCK_PLATFORM_LOCATION_CONFIG: InjectionToken[MockPlatformLocationConfig] = js.native
+  
   @js.native
   class MockLocationStrategy ()
     extends typings.angularCommon.angularCommonTestingMod.MockLocationStrategy
@@ -22,7 +25,4 @@ object angularCommonMod extends js.Object {
   @js.native
   class SpyLocation ()
     extends typings.angularCommon.angularCommonTestingMod.SpyLocation
-  
-  val MOCK_PLATFORM_LOCATION_CONFIG: InjectionToken[MockPlatformLocationConfig] = js.native
 }
-

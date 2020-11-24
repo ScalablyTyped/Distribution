@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.Instantiable5
 import typings.firebaseDatabase.browserPollConnectionMod.BrowserPollConnection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofBrowserPollConnecti
@@ -37,16 +37,20 @@ trait TypeofBrowserPollConnecti
       /* lastSessionId */ String, 
       BrowserPollConnection
     ] {
-  var forceAllow_ : js.Any = js.native
-  var forceDisallow_ : js.Any = js.native
+  
   /**
     * Forces long polling to be considered as a potential transport
     */
   def forceAllow(): Unit = js.native
+  
+  var forceAllow_ : js.Any = js.native
+  
   /**
     * Forces longpolling to not be considered as a potential transport
     */
   def forceDisallow(): Unit = js.native
+  
+  var forceDisallow_ : js.Any = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

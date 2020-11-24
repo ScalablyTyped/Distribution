@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmitContainer extends js.Object
-
 @JSGlobal("TypeScript.EmitContainer")
 @js.native
 object EmitContainer extends js.Object {
+  
   @js.native
   sealed trait Args extends EmitContainer
   
@@ -33,6 +33,4 @@ object EmitContainer extends js.Object {
   
   @js.native
   sealed trait Prog extends EmitContainer
-  
 }
-

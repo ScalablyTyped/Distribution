@@ -3,7 +3,7 @@ package typings.parse5ParserStream.mod
 import typings.parse5.mod.ParserOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming HTML parser with scripting support.
@@ -37,4 +37,3 @@ import scala.scalajs.js.annotation._
 class ^[TDocument] () extends ParserStream[TDocument] {
   def this(options: ParserOptions) = this()
 }
-

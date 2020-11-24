@@ -3,12 +3,14 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.importer")
 @js.native
 object importer extends js.Object {
+  
   def fromSVGPathData(pathData: String): IModel = js.native
+  
   /**
     * Create a numeric array from a string of numbers. The numbers may be delimited by anything non-numeric.
     *
@@ -22,4 +24,3 @@ object importer extends js.Object {
     */
   def parseNumericList(s: String): js.Array[Double] = js.native
 }
-

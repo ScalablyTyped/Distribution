@@ -4,26 +4,31 @@ import typings.jupyterlabCoreutils.anon.Download
 import typings.jupyterlabCoreutils.anon.Raw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/pageconfig", JSImport.Namespace)
 @js.native
 object pageconfigMod extends js.Object {
+  
   @js.native
   object PageConfig extends js.Object {
+    
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
     def getBaseUrl(): String = js.native
+    
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
     def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
+    
     /**
       * Get the Notebook version info [major, minor, patch].
       */
     def getNotebookVersion(): js.Tuple3[Double, Double, Double] = js.native
+    
     /**
       * Get global configuration data for the Jupyter application.
       *
@@ -43,29 +48,35 @@ object pageconfigMod extends js.Object {
       * file.
       */
     def getOption(name: String): String = js.native
+    
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
     def getShareUrl(): String = js.native
+    
     /**
       * Get the authorization token for a Jupyter application.
       */
     def getToken(): String = js.native
+    
     /**
       * Get the tree url for shareable links.
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
     def getTreeShareUrl(): String = js.native
+    
     /**
       * Get the tree url for a JupyterLab application.
       */
     def getTreeUrl(): String = js.native
+    
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
     def getWsUrl(): String = js.native
     def getWsUrl(baseUrl: String): String = js.native
+    
     /**
       * Set global configuration data for the Jupyter application.
       *
@@ -75,25 +86,30 @@ object pageconfigMod extends js.Object {
       * @returns The last config value or an empty string if it doesn't exist.
       */
     def setOption(name: String, value: String): String = js.native
+    
     /**
       * The namespace for page config `Extension` functions.
       */
     @js.native
     object Extension extends js.Object {
+      
       /**
         * The collection of deferred extensions in page config.
         */
       val deferred: js.Array[Raw] = js.native
+      
       /**
         * The collection of disabled extensions in page config.
         */
       val disabled: js.Array[Raw] = js.native
+      
       /**
         * Returns whether a plugin is deferred.
         *
         * @param id - The plugin ID.
         */
       def isDeferred(id: String): Boolean = js.native
+      
       /**
         * Returns whether a plugin is disabled.
         *
@@ -101,8 +117,5 @@ object pageconfigMod extends js.Object {
         */
       def isDisabled(id: String): Boolean = js.native
     }
-    
   }
-  
 }
-

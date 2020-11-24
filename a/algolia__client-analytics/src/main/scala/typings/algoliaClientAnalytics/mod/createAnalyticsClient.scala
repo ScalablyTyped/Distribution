@@ -5,11 +5,10 @@ import typings.algoliaClientCommon.mod.ClientTransporterOptions
 import typings.algoliaClientCommon.mod.CreateClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@algolia/client-analytics", "createAnalyticsClient")
 @js.native
 object createAnalyticsClient extends TopLevel[
       CreateClient[AnalyticsClient, AnalyticsClientOptions with ClientTransporterOptions]
     ]
-

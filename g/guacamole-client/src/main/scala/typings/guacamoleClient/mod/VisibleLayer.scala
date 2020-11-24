@@ -2,7 +2,7 @@ package typings.guacamoleClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "VisibleLayer")
 @js.native
@@ -14,4 +14,3 @@ class VisibleLayer protected ()
     */
   def this(width: Double, height: Double) = this()
 }
-

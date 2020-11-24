@@ -2,9 +2,10 @@ package typings.welldoneSoftwareWhyDidYouRender.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.anon.Default
+import typings.react.experimentalMod.reactAugmentingMod.OpaqueIdentifier
 import typings.react.experimentalMod.reactAugmentingMod.SuspenseConfig
 import typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
-import typings.react.experimentalMod.reactAugmentingMod.TimeoutConfig
+import typings.react.experimentalMod.reactAugmentingMod.TransitionFunction
 import typings.react.experimentalMod.reactAugmentingMod.TransitionStartFunction
 import typings.react.mod.Attributes
 import typings.react.mod.CElement
@@ -70,25 +71,30 @@ import typings.std.SVGElement
 import typings.welldoneSoftwareWhyDidYouRender.welldoneSoftwareWhyDidYouRenderStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofReact extends js.Object {
+  
   val Children: ReactChildren = js.native
+  
   // Base component for plain JS classes
-  // tslint:disable-next-line:no-empty-interface
   var Component: TypeofComponent with TypeofComponentWhyDidYouRender = js.native
+  
   val Fragment: ExoticComponent[typings.react.anon.Children] = js.native
+  
   val Profiler: ExoticComponent[ProfilerProps] = js.native
+  
   var PureComponent: Instantiable0[typings.react.mod.PureComponent[js.Object, js.Object, js.Object]] = js.native
+  
   val StrictMode: ExoticComponent[typings.react.anon.Children] = js.native
+  
   /**
     * This feature is not yet available for server-side rendering.
     * Suspense support will be added in a later release.
     */
   val Suspense: ExoticComponent[SuspenseProps] = js.native
-  val unstable_SuspenseList: ExoticComponent[SuspenseListProps] = js.native
-  val version: String = js.native
+  
   // Custom components
   def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] with Attributes, children: ReactNode*): FunctionComponentElement[P] = js.native
   def cloneElement[P](element: FunctionComponentElement[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
@@ -111,11 +117,13 @@ trait TypeofReact extends js.Object {
   def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
   @JSName("cloneElement")
   def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactHTMLElement[T] = js.native
+  
   def createContext[T](
     // If you thought this should be optional, see
   // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
   defaultValue: T
   ): Context[T] = js.native
+  
   def createElement[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = js.native
@@ -200,6 +208,7 @@ trait TypeofReact extends js.Object {
   def createElement_input(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
   @JSName("createElement")
   def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  
   def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): SVGFactory = js.native
   def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = js.native
   def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = js.native
@@ -213,11 +222,16 @@ trait TypeofReact extends js.Object {
   // DOM Elements
   @JSName("createFactory")
   def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any): HTMLFactory[T] = js.native
+  
   def createRef[T](): RefObject[T] = js.native
+  
   def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
+  
   def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
   def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = js.native
+  
   def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = js.native
+  
   def memo[T /* <: ComponentType[_] */](Component: T): MemoExoticComponent[T] = js.native
   def memo[T /* <: ComponentType[_] */](
     Component: T,
@@ -228,12 +242,21 @@ trait TypeofReact extends js.Object {
     Component: SFC[P],
     propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
   ): NamedExoticComponent[P] = js.native
+  
+  val unstable_SuspenseList: ExoticComponent[SuspenseListProps] = js.native
+  
+  def unstable_startTransition(scope: TransitionFunction): Unit = js.native
+  
   def unstable_useDeferredValue[T](value: T): T = js.native
-  def unstable_useDeferredValue[T](value: T, config: TimeoutConfig): T = js.native
+  
+  def unstable_useOpaqueIdentifier(): OpaqueIdentifier = js.native
+  
   def unstable_useTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
   def unstable_useTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+  
   def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = js.native
   def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = js.native
+  
   // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
   // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
   /**
@@ -245,6 +268,7 @@ trait TypeofReact extends js.Object {
     */
   // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
   def useCallback[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, deps: DependencyList): T = js.native
+  
   // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
   /**
     * Accepts a context object (the value returned from `React.createContext`) and returns the current
@@ -254,6 +278,7 @@ trait TypeofReact extends js.Object {
     * @see https://reactjs.org/docs/hooks-reference.html#usecontext
     */
   def useContext[T](context: Context[T]): T = js.native
+  
   /**
     * `useDebugValue` can be used to display a label for custom hooks in React DevTools.
     *
@@ -267,6 +292,7 @@ trait TypeofReact extends js.Object {
   // it's just the function name without the "use" prefix.
   def useDebugValue[T](value: T): Unit = js.native
   def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
+  
   /**
     * Accepts a function that contains imperative, possibly effectful code.
     *
@@ -278,6 +304,7 @@ trait TypeofReact extends js.Object {
     */
   def useEffect(effect: EffectCallback): Unit = js.native
   def useEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+  
   // NOTE: this does not accept strings, but this will have to be fixed by removing strings from type Ref<T>
   /**
     * `useImperativeHandle` customizes the instance value that is exposed to parent components when using
@@ -290,6 +317,7 @@ trait TypeofReact extends js.Object {
     */
   def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R]): Unit = js.native
   def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R], deps: DependencyList): Unit = js.native
+  
   /**
     * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
     * Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside
@@ -305,6 +333,7 @@ trait TypeofReact extends js.Object {
     */
   def useLayoutEffect(effect: EffectCallback): Unit = js.native
   def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+  
   /**
     * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
     *
@@ -326,6 +355,7 @@ trait TypeofReact extends js.Object {
   // allow undefined, but don't make it optional as that is very likely a mistake
   def useMemo[T](factory: js.Function0[T]): T = js.native
   def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = js.native
+  
   /**
     * An alternative to `useState`.
     *
@@ -336,14 +366,8 @@ trait TypeofReact extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
-  // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
-  // The Flow types do have an overload for 3-ary invocation with undefined initializer.
-  // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
-  // supertype between the reducer's return type and the initialState (or the initializer's return type),
-  // which would prevent autocompletion from ever working.
-  // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
-  // in older versions, or a regression in newer versions of the typescript completion service.
-  def useReducer[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+  // overload where dispatch could accept 0 arguments.
+  def useReducer[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
   /**
     * An alternative to `useState`.
     *
@@ -355,7 +379,7 @@ trait TypeofReact extends js.Object {
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
   // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
-  // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
+  // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
   // the last overload effectively behaves as if the identity function (x => x) is the initializer.
   // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
   def useReducer[R /* <: Reducer[_, _] */, I](
@@ -373,9 +397,15 @@ trait TypeofReact extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
-  // overload where dispatch could accept 0 arguments.
+  // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
+  // The Flow types do have an overload for 3-ary invocation with undefined initializer.
+  // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
+  // supertype between the reducer's return type and the initialState (or the initializer's return type),
+  // which would prevent autocompletion from ever working.
+  // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
+  // in older versions, or a regression in newer versions of the typescript completion service.
   @JSName("useReducer")
-  def useReducer_R_ReducerWithoutActionWildcard[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  def useReducer_R_ReducerWildcardWildcard[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
   /**
     * An alternative to `useState`.
     *
@@ -393,6 +423,7 @@ trait TypeofReact extends js.Object {
     initializerArg: I,
     initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
   ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**
     * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
@@ -438,7 +469,8 @@ trait TypeofReact extends js.Object {
   // TODO (TypeScript 3.0): <T extends unknown>
   @JSName("useRef")
   def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = js.native
-  // convenience overload when first argument is ommitted
+  
+  // convenience overload when first argument is omitted
   /**
     * Returns a stateful value, and a function to update it.
     *
@@ -454,5 +486,6 @@ trait TypeofReact extends js.Object {
     */
   def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+  
+  val version: String = js.native
 }
-

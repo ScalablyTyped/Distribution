@@ -2,7 +2,7 @@ package typings.twilioSync.syncstreamMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -21,10 +21,13 @@ import scala.scalajs.js.annotation._
 class SyncStream protected ()
   extends typings.twilioSync.closeableMod.default {
   def this(syncStreamImpl: SyncStreamImpl) = this()
-  val syncStreamImpl: js.Any = js.native
+  
   def dateExpires: String = js.native
+  
   def lastEventId: js.Any = js.native
+  
   def links: js.Any = js.native
+  
   /**
     * Publish a Message to the Stream. The system will attempt delivery to all online subscribers.
     * @param {Object} value The body of the dispatched message. Maximum size in serialized JSON: 4KB.
@@ -42,6 +45,7 @@ class SyncStream protected ()
     *   });
     */
   def publishMessage(value: js.Object): js.Promise[StreamMessage] = js.native
+  
   /**
     * Permanently delete this Stream.
     * @return {Promise<void>} A promise which resolves after the Stream is successfully deleted.
@@ -56,6 +60,7 @@ class SyncStream protected ()
     *   });
     */
   def removeStream(): js.Promise[Unit] = js.native
+  
   /**
     * Update the time-to-live of the stream.
     * @param {Number} ttl Specifies the TTL in seconds after which the stream is subject to automatic deletion. The value 0 means infinity.
@@ -71,16 +76,21 @@ class SyncStream protected ()
     *   });
     */
   def setTtl(ttl: Double): js.Promise[Unit] = js.native
+  
   def sid: String = js.native
+  
+  val syncStreamImpl: js.Any = js.native
+  
   def `type`: String = js.native
+  
   def uniqueName: String = js.native
+  
   def uri: String = js.native
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/streams/syncstream", "SyncStream")
 @js.native
 object SyncStream extends js.Object {
+  
   def `type`: String = js.native
 }
-

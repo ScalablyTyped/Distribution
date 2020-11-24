@@ -7,18 +7,19 @@ import typings.std.Partial
 import typings.titanium.Titanium.Proxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for Alloy controllers.
   */
 @js.native
 trait AlloyController extends EventsMixin {
+  
   /**
     * Provides convenience methods for working with Titanium Views in Alloy
     */
   var UI: AlloyControllerUI = js.native
-  var args: js.Any = js.native
+  
   /**
     *
     * @param proxy View object to which to add class(es).
@@ -29,6 +30,7 @@ trait AlloyController extends EventsMixin {
   def addClass[T /* <: Proxy */](proxy: T, classes: String, opts: Partial[T]): Unit = js.native
   def addClass[T /* <: Proxy */](proxy: T, classes: js.Array[String]): Unit = js.native
   def addClass[T /* <: Proxy */](proxy: T, classes: js.Array[String], opts: Partial[T]): Unit = js.native
+  
   /**
     * Adds a tracked event listeners to a view proxy object. By default, any event listener declared in XML is tracked by Alloy.
     *
@@ -38,6 +40,9 @@ trait AlloyController extends EventsMixin {
     * @returns ID attribute of the view object. If one does not exist, Alloy will create a unique ID.
     */
   def addListener(proxy: Proxy, `type`: String, callback: js.Function1[/* e */ js.Any, Unit]): String = js.native
+  
+  var args: js.Any = js.native
+  
   /**
     * Creates a dictionary of properties based on the specified styles.
     *
@@ -45,6 +50,7 @@ trait AlloyController extends EventsMixin {
     * @returns Dictionary of properties that can be passed to a view factory function or applyProperties().
     */
   def createStyle(opts: js.Any): PartialProxy = js.native
+  
   /**
     * Frees binding resources associated with this controller and its UI
     * components.
@@ -54,6 +60,7 @@ trait AlloyController extends EventsMixin {
     * whenever a controller's UI is to be "closed" or removed from the app.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Gets all the tracked event listeners of the view-controller or only the
     * ones specified by the parameters.
@@ -69,10 +76,12 @@ trait AlloyController extends EventsMixin {
   def getListener(proxy: js.UndefOr[scala.Nothing], `type`: String): js.Array[_] = js.native
   def getListener(proxy: Proxy): js.Array[_] = js.native
   def getListener(proxy: Proxy, `type`: String): js.Array[_] = js.native
+  
   /**
     * Returns a list of the root view elements associated with this controller.
     */
   def getTopLevelViews(): js.Array[_] = js.native
+  
   /**
     * Returns the specified view associated with this controller.
     *
@@ -82,10 +91,12 @@ trait AlloyController extends EventsMixin {
     */
   def getView(): js.Any = js.native
   def getView(id: String): js.Any = js.native
+  
   /**
     * Returns a list of all IDed view elements associated with this controller.
     */
   def getViews(): js.Array[_] = js.native
+  
   /**
     * Removes a TSS class from the specified view object.
     *
@@ -97,6 +108,7 @@ trait AlloyController extends EventsMixin {
   def removeClass[T /* <: Proxy */](proxy: T, classes: String, opts: Partial[T]): Unit = js.native
   def removeClass[T /* <: Proxy */](proxy: T, classes: js.Array[String]): Unit = js.native
   def removeClass[T /* <: Proxy */](proxy: T, classes: js.Array[String], opts: Partial[T]): Unit = js.native
+  
   /**
     * Removes all tracked event listeners or only the ones specified by the parameters.
     *
@@ -112,6 +124,7 @@ trait AlloyController extends EventsMixin {
   def removeListener(proxy: Proxy, `type`: js.UndefOr[scala.Nothing], callback: js.Function1[/* e */ js.Any, Unit]): AlloyController = js.native
   def removeListener(proxy: Proxy, `type`: String): AlloyController = js.native
   def removeListener(proxy: Proxy, `type`: String, callback: js.Function1[/* e */ js.Any, Unit]): AlloyController = js.native
+  
   /**
     * Sets the array of TSS classes for the target View object, adding the classes specified and removing any applied classes that are not specified.
     *
@@ -123,6 +136,7 @@ trait AlloyController extends EventsMixin {
   def resetClass[T /* <: Proxy */](proxy: T, classes: String, opts: Partial[T]): Unit = js.native
   def resetClass[T /* <: Proxy */](proxy: T, classes: js.Array[String]): Unit = js.native
   def resetClass[T /* <: Proxy */](proxy: T, classes: js.Array[String], opts: Partial[T]): Unit = js.native
+  
   /**
     * Applies a set of properties to view elements associated with this controller.
     *
@@ -130,4 +144,3 @@ trait AlloyController extends EventsMixin {
     */
   def updateViews(args: StringDictionary[js.Any]): AlloyController = js.native
 }
-

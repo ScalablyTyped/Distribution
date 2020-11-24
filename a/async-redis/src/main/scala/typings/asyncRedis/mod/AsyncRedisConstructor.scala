@@ -8,7 +8,7 @@ import typings.redis.mod.ClientOpts
 import typings.redis.mod.RedisClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AsyncRedisConstructor
@@ -28,6 +28,7 @@ trait AsyncRedisConstructor
       /* options */ ClientOpts, 
       Promisified[RedisClient]
     ] {
+  
   def createClient(): Promisified[RedisClient] = js.native
   def createClient(options: ClientOpts): Promisified[RedisClient] = js.native
   def createClient(port: Double): Promisified[RedisClient] = js.native
@@ -36,6 +37,6 @@ trait AsyncRedisConstructor
   def createClient(port: Double, host: String, options: ClientOpts): Promisified[RedisClient] = js.native
   def createClient(unix_socket: String): Promisified[RedisClient] = js.native
   def createClient(unix_socket: String, options: ClientOpts): Promisified[RedisClient] = js.native
+  
   def decorate(client: RedisClient): Promisified[RedisClient] = js.native
 }
-

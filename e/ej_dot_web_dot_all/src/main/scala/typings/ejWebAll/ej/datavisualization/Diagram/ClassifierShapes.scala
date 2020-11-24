@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ClassifierShapes extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.ClassifierShapes")
 @js.native
 object ClassifierShapes extends js.Object {
+  
   //Used to notate aggregation in a UML Class Diagram
   @js.native
   sealed trait Aggregation extends ClassifierShapes
@@ -41,6 +41,4 @@ object ClassifierShapes extends js.Object {
   //Used to define an Interface
   @js.native
   sealed trait Interface extends ClassifierShapes
-  
 }
-

@@ -1,20 +1,24 @@
 
 # Scala.js typings for ardatan__aggregate-error
 
-Typings are for version 0.0.1
+Typings are for version 0.0.6
 
-
+## Library description:
+Create an error from multiple errors
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ardatan/aggregate-error |
-| Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| Keywords           | aggregate, error, combine, multiple, many, collection, iterable, iterator |
+| # releases         | 3 |
+| # dependents       | 2 |
+| # downloads        | 4373778 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/sindresorhus/aggregate-error#readme)
+- [Bugs](https://github.com/sindresorhus/aggregate-error/issues)
+- [Repository](https://github.com/sindresorhus/aggregate-error)
 - [Npm](https://www.npmjs.com/package/%40ardatan%2Faggregate-error)
     
 

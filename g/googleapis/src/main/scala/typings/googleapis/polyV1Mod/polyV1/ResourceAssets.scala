@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/poly/v1", "poly_v1.Resource$Assets")
 @js.native
 class ResourceAssets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * poly.assets.get
     * @desc Returns detailed information about an asset given its name. PRIVATE
@@ -43,6 +45,7 @@ class ResourceAssets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAsset]
   ): Unit = js.native
+  
   /**
     * poly.assets.list
     * @desc Lists all public, remixable assets. These are assets with an access
@@ -80,4 +83,3 @@ class ResourceAssets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListAssetsResponse]
   ): Unit = js.native
 }
-

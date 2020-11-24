@@ -2,7 +2,7 @@ package typings.jsGraphAlgorithms.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-graph-algorithms", "WeightedGraph")
 @js.native
@@ -10,4 +10,3 @@ class WeightedGraph protected ()
   extends typings.jsGraphAlgorithms.JsGraphs.WeightedGraph {
   def this(V: Double) = this()
 }
-

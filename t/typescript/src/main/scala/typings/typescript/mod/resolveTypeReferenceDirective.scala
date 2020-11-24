@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "resolveTypeReferenceDirective")
 @js.native
 object resolveTypeReferenceDirective extends js.Object {
+  
   def apply(
     typeReferenceDirectiveName: java.lang.String,
     containingFile: js.UndefOr[scala.Nothing],
@@ -39,4 +40,3 @@ object resolveTypeReferenceDirective extends js.Object {
     redirectedReference: ResolvedProjectReference
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
 }
-

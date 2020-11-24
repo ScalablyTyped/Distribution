@@ -14,13 +14,15 @@ import typings.gliderJs.gliderJsStrings.`glider-slide-visible`
 import typings.std.AddEventListenerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait Element extends js.Object {
+    
     @JSName("addEventListener")
     def addEventListener_glideradd(`type`: `glider-add`, listener: js.Function1[/* event */ GliderEvent[Scroll], Unit]): Unit = js.native
     @JSName("addEventListener")
@@ -146,6 +148,4 @@ object global extends js.Object {
       options: AddEventListenerOptions
     ): Unit = js.native
   }
-  
 }
-

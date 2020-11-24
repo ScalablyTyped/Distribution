@@ -1,12 +1,12 @@
 package typings.reactTextareaAutosize.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ForwardRefExoticComponent
+import typings.reactTextareaAutosize.anon.PickTextareaPropscolortra
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-textarea-autosize", JSImport.Default)
+@JSImport("react-textarea-autosize/dist/declarations/src", JSImport.Default)
 @js.native
-class default ()
-  extends Component[TextareaAutosizeProps, js.Object, js.Any]
-
+object default extends TopLevel[ForwardRefExoticComponent[PickTextareaPropscolortra]]

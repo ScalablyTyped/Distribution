@@ -11,8 +11,8 @@ Generate beautiful DMG-images for your OS X applications.
 | Full name          | appdmg |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 412843 |
+| # dependents       | 24 |
+| # downloads        | 400717 |
 | # stars            | 9 |
 
 ## Links

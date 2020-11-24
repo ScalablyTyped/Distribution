@@ -10,7 +10,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main server/manager. Inherits from EventEmitter.
@@ -22,38 +22,47 @@ import scala.scalajs.js.annotation._
   */
 class Server () extends EventEmitter {
   def this(opts: ServerOptions) = this()
-  /**
-    * hash of connected clients by id.
-    */
-  var clients: StringDictionary[Socket] = js.native
-  /**
-    * number of connected clients.
-    */
-  var clientsCount: Double = js.native
-  val httpServer: js.UndefOr[typings.node.httpMod.Server] = js.native
+  
   /**
     * Attach this Server instance to an http.Server
     * Captures upgrade requests for a http.Server. In other words, makes a regular http.Server WebSocket-compatible.
     */
   def attach(http: typings.node.httpMod.Server): this.type = js.native
   def attach(http: typings.node.httpMod.Server, opts: AttachOptions): this.type = js.native
+  
+  /**
+    * hash of connected clients by id.
+    */
+  var clients: StringDictionary[Socket] = js.native
+  
+  /**
+    * number of connected clients.
+    */
+  var clientsCount: Double = js.native
+  
   /**
     * Closes all clients
     */
   def close(): this.type = js.native
+  
   /**
     * Generate a socket id.
     * Overwrite this method to generate your custom socket id.
     */
   def generateId(req: IncomingMessage): String = js.native
+  
   /**
     * Called internally when a Engine request is intercepted.
     */
   def handleRequest(req: IncomingMessage, res: ServerResponse): this.type = js.native
+  
   /**
     * Called internally when a Engine ws upgrade is intercepted.
     */
   def handleUpgrade(req: IncomingMessage, socket: typings.node.netMod.Socket, head: Buffer): this.type = js.native
+  
+  val httpServer: js.UndefOr[typings.node.httpMod.Server] = js.native
+  
   /**
     * Fired when a new connection is established.
     */
@@ -64,4 +73,3 @@ class Server () extends EventEmitter {
   @JSName("on")
   def on_flush(ev: flush, fn: js.Function2[/* socket */ Socket, /* buffer */ js.Array[Packet], Unit]): this.type = js.native
 }
-

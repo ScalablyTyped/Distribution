@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.SaveCommandExecute event.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 class ASPxClientReportDesignerSaveCommandExecuteEventArgs ()
   extends typings.devexpressWeb.ASPxClientReportDesignerSaveCommandExecuteEventArgs
-

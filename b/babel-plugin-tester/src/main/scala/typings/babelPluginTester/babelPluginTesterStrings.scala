@@ -2,9 +2,963 @@ package typings.babelPluginTester
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babelPluginTesterStrings {
+  
+  @js.native
+  sealed trait ^ extends js.Object
+  @scala.inline
+  def ^ : ^ = "^".asInstanceOf[^]
+  
+  @scala.inline
+  def `--`: `--` = "--".asInstanceOf[`--`]
+  
+  @scala.inline
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
+  
+  @scala.inline
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
+  
+  @scala.inline
+  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
+  
+  @scala.inline
+  def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
+  
+  @scala.inline
+  def ArgumentPlaceholder: ArgumentPlaceholder = "ArgumentPlaceholder".asInstanceOf[ArgumentPlaceholder]
+  
+  @scala.inline
+  def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
+  
+  @scala.inline
+  def ArrayPattern: ArrayPattern = "ArrayPattern".asInstanceOf[ArrayPattern]
+  
+  @scala.inline
+  def ArrayTypeAnnotation: ArrayTypeAnnotation = "ArrayTypeAnnotation".asInstanceOf[ArrayTypeAnnotation]
+  
+  @scala.inline
+  def ArrowFunctionExpression: ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[ArrowFunctionExpression]
+  
+  @scala.inline
+  def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
+  
+  @scala.inline
+  def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
+  
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @scala.inline
+  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
+  
+  @scala.inline
+  def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
+  
+  @scala.inline
+  def BigIntLiteral: BigIntLiteral = "BigIntLiteral".asInstanceOf[BigIntLiteral]
+  
+  @scala.inline
+  def BinaryExpression: BinaryExpression = "BinaryExpression".asInstanceOf[BinaryExpression]
+  
+  @scala.inline
+  def BindExpression: BindExpression = "BindExpression".asInstanceOf[BindExpression]
+  
+  @scala.inline
+  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
+  
+  @scala.inline
+  def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
+  
+  @scala.inline
+  def BooleanLiteralTypeAnnotation: BooleanLiteralTypeAnnotation = "BooleanLiteralTypeAnnotation".asInstanceOf[BooleanLiteralTypeAnnotation]
+  
+  @scala.inline
+  def BooleanTypeAnnotation: BooleanTypeAnnotation = "BooleanTypeAnnotation".asInstanceOf[BooleanTypeAnnotation]
+  
+  @scala.inline
+  def BreakStatement: BreakStatement = "BreakStatement".asInstanceOf[BreakStatement]
+  
+  @scala.inline
+  def Call: Call = "Call".asInstanceOf[Call]
+  
+  @scala.inline
+  def CallExpression: CallExpression = "CallExpression".asInstanceOf[CallExpression]
+  
+  @scala.inline
+  def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
+  
+  @scala.inline
+  def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
+  
+  @scala.inline
+  def ClassDeclaration: ClassDeclaration = "ClassDeclaration".asInstanceOf[ClassDeclaration]
+  
+  @scala.inline
+  def ClassExpression: ClassExpression = "ClassExpression".asInstanceOf[ClassExpression]
+  
+  @scala.inline
+  def ClassImplements: ClassImplements = "ClassImplements".asInstanceOf[ClassImplements]
+  
+  @scala.inline
+  def ClassMethod: ClassMethod = "ClassMethod".asInstanceOf[ClassMethod]
+  
+  @scala.inline
+  def ClassPrivateMethod: ClassPrivateMethod = "ClassPrivateMethod".asInstanceOf[ClassPrivateMethod]
+  
+  @scala.inline
+  def ClassPrivateProperty: ClassPrivateProperty = "ClassPrivateProperty".asInstanceOf[ClassPrivateProperty]
+  
+  @scala.inline
+  def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
+  
+  @scala.inline
+  def CommonJS: CommonJS = "CommonJS".asInstanceOf[CommonJS]
+  
+  @scala.inline
+  def ConditionalExpression: ConditionalExpression = "ConditionalExpression".asInstanceOf[ConditionalExpression]
+  
+  @scala.inline
+  def ContinueStatement: ContinueStatement = "ContinueStatement".asInstanceOf[ContinueStatement]
+  
+  @scala.inline
+  def DebuggerStatement: DebuggerStatement = "DebuggerStatement".asInstanceOf[DebuggerStatement]
+  
+  @scala.inline
+  def DecimalLiteral: DecimalLiteral = "DecimalLiteral".asInstanceOf[DecimalLiteral]
+  
+  @scala.inline
+  def Declaration: Declaration = "Declaration".asInstanceOf[Declaration]
+  
+  @scala.inline
+  def DeclareClass: DeclareClass = "DeclareClass".asInstanceOf[DeclareClass]
+  
+  @scala.inline
+  def DeclareExportAllDeclaration: DeclareExportAllDeclaration = "DeclareExportAllDeclaration".asInstanceOf[DeclareExportAllDeclaration]
+  
+  @scala.inline
+  def DeclareExportDeclaration: DeclareExportDeclaration = "DeclareExportDeclaration".asInstanceOf[DeclareExportDeclaration]
+  
+  @scala.inline
+  def DeclareFunction: DeclareFunction = "DeclareFunction".asInstanceOf[DeclareFunction]
+  
+  @scala.inline
+  def DeclareInterface: DeclareInterface = "DeclareInterface".asInstanceOf[DeclareInterface]
+  
+  @scala.inline
+  def DeclareModule: DeclareModule = "DeclareModule".asInstanceOf[DeclareModule]
+  
+  @scala.inline
+  def DeclareModuleExports: DeclareModuleExports = "DeclareModuleExports".asInstanceOf[DeclareModuleExports]
+  
+  @scala.inline
+  def DeclareOpaqueType: DeclareOpaqueType = "DeclareOpaqueType".asInstanceOf[DeclareOpaqueType]
+  
+  @scala.inline
+  def DeclareTypeAlias: DeclareTypeAlias = "DeclareTypeAlias".asInstanceOf[DeclareTypeAlias]
+  
+  @scala.inline
+  def DeclareVariable: DeclareVariable = "DeclareVariable".asInstanceOf[DeclareVariable]
+  
+  @scala.inline
+  def DeclaredPredicate: DeclaredPredicate = "DeclaredPredicate".asInstanceOf[DeclaredPredicate]
+  
+  @scala.inline
+  def Decorator: Decorator = "Decorator".asInstanceOf[Decorator]
+  
+  @scala.inline
+  def Directive: Directive = "Directive".asInstanceOf[Directive]
+  
+  @scala.inline
+  def DirectiveLiteral: DirectiveLiteral = "DirectiveLiteral".asInstanceOf[DirectiveLiteral]
+  
+  @scala.inline
+  def DoExpression: DoExpression = "DoExpression".asInstanceOf[DoExpression]
+  
+  @scala.inline
+  def DoWhileStatement: DoWhileStatement = "DoWhileStatement".asInstanceOf[DoWhileStatement]
+  
+  @scala.inline
+  def Dotes: Dotes = ".es".asInstanceOf[Dotes]
+  
+  @scala.inline
+  def Dotes6: Dotes6 = ".es6".asInstanceOf[Dotes6]
+  
+  @scala.inline
+  def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
+  
+  @scala.inline
+  def Dotjsx: Dotjsx = ".jsx".asInstanceOf[Dotjsx]
+  
+  @scala.inline
+  def Dotmjs: Dotmjs = ".mjs".asInstanceOf[Dotmjs]
+  
+  @scala.inline
+  def ES: ES = "ES".asInstanceOf[ES]
+  
+  @scala.inline
+  def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
+  
+  @scala.inline
+  def EmptyTypeAnnotation: EmptyTypeAnnotation = "EmptyTypeAnnotation".asInstanceOf[EmptyTypeAnnotation]
+  
+  @scala.inline
+  def EnumBooleanBody: EnumBooleanBody = "EnumBooleanBody".asInstanceOf[EnumBooleanBody]
+  
+  @scala.inline
+  def EnumBooleanMember: EnumBooleanMember = "EnumBooleanMember".asInstanceOf[EnumBooleanMember]
+  
+  @scala.inline
+  def EnumDeclaration: EnumDeclaration = "EnumDeclaration".asInstanceOf[EnumDeclaration]
+  
+  @scala.inline
+  def EnumDefaultedMember: EnumDefaultedMember = "EnumDefaultedMember".asInstanceOf[EnumDefaultedMember]
+  
+  @scala.inline
+  def EnumNumberBody: EnumNumberBody = "EnumNumberBody".asInstanceOf[EnumNumberBody]
+  
+  @scala.inline
+  def EnumNumberMember: EnumNumberMember = "EnumNumberMember".asInstanceOf[EnumNumberMember]
+  
+  @scala.inline
+  def EnumStringBody: EnumStringBody = "EnumStringBody".asInstanceOf[EnumStringBody]
+  
+  @scala.inline
+  def EnumStringMember: EnumStringMember = "EnumStringMember".asInstanceOf[EnumStringMember]
+  
+  @scala.inline
+  def EnumSymbolBody: EnumSymbolBody = "EnumSymbolBody".asInstanceOf[EnumSymbolBody]
+  
+  @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  
+  @scala.inline
+  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
+  
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  
+  @scala.inline
+  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
+  
+  @scala.inline
+  def ExistsTypeAnnotation: ExistsTypeAnnotation = "ExistsTypeAnnotation".asInstanceOf[ExistsTypeAnnotation]
+  
+  @scala.inline
+  def ExportAllDeclaration: ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[ExportAllDeclaration]
+  
+  @scala.inline
+  def ExportDefaultDeclaration: ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[ExportDefaultDeclaration]
+  
+  @scala.inline
+  def ExportDefaultSpecifier: ExportDefaultSpecifier = "ExportDefaultSpecifier".asInstanceOf[ExportDefaultSpecifier]
+  
+  @scala.inline
+  def ExportNamedDeclaration: ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[ExportNamedDeclaration]
+  
+  @scala.inline
+  def ExportNamespaceSpecifier: ExportNamespaceSpecifier = "ExportNamespaceSpecifier".asInstanceOf[ExportNamespaceSpecifier]
+  
+  @scala.inline
+  def ExportSpecifier: ExportSpecifier = "ExportSpecifier".asInstanceOf[ExportSpecifier]
+  
+  @scala.inline
+  def Expression: Expression = "Expression".asInstanceOf[Expression]
+  
+  @scala.inline
+  def ExpressionStatement: ExpressionStatement = "ExpressionStatement".asInstanceOf[ExpressionStatement]
+  
+  @scala.inline
+  def File: File = "File".asInstanceOf[File]
+  
+  @scala.inline
+  def ForInStatement: ForInStatement = "ForInStatement".asInstanceOf[ForInStatement]
+  
+  @scala.inline
+  def ForOfStatement: ForOfStatement = "ForOfStatement".asInstanceOf[ForOfStatement]
+  
+  @scala.inline
+  def ForStatement: ForStatement = "ForStatement".asInstanceOf[ForStatement]
+  
+  @scala.inline
+  def FunctionDeclaration: FunctionDeclaration = "FunctionDeclaration".asInstanceOf[FunctionDeclaration]
+  
+  @scala.inline
+  def FunctionExpression: FunctionExpression = "FunctionExpression".asInstanceOf[FunctionExpression]
+  
+  @scala.inline
+  def FunctionTypeAnnotation: FunctionTypeAnnotation = "FunctionTypeAnnotation".asInstanceOf[FunctionTypeAnnotation]
+  
+  @scala.inline
+  def FunctionTypeParam: FunctionTypeParam = "FunctionTypeParam".asInstanceOf[FunctionTypeParam]
+  
+  @scala.inline
+  def GenericTypeAnnotation: GenericTypeAnnotation = "GenericTypeAnnotation".asInstanceOf[GenericTypeAnnotation]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @scala.inline
+  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
+  
+  @scala.inline
+  def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
+  
+  @scala.inline
+  def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
+  
+  @scala.inline
+  def IfStatement: IfStatement = "IfStatement".asInstanceOf[IfStatement]
+  
+  @scala.inline
+  def Import: Import = "Import".asInstanceOf[Import]
+  
+  @scala.inline
+  def ImportAttribute: ImportAttribute = "ImportAttribute".asInstanceOf[ImportAttribute]
+  
+  @scala.inline
+  def ImportDeclaration: ImportDeclaration = "ImportDeclaration".asInstanceOf[ImportDeclaration]
+  
+  @scala.inline
+  def ImportDefaultSpecifier: ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[ImportDefaultSpecifier]
+  
+  @scala.inline
+  def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
+  
+  @scala.inline
+  def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
+  
+  @scala.inline
+  def InferredPredicate: InferredPredicate = "InferredPredicate".asInstanceOf[InferredPredicate]
+  
+  @scala.inline
+  def InterfaceDeclaration: InterfaceDeclaration = "InterfaceDeclaration".asInstanceOf[InterfaceDeclaration]
+  
+  @scala.inline
+  def InterfaceExtends: InterfaceExtends = "InterfaceExtends".asInstanceOf[InterfaceExtends]
+  
+  @scala.inline
+  def InterfaceTypeAnnotation: InterfaceTypeAnnotation = "InterfaceTypeAnnotation".asInstanceOf[InterfaceTypeAnnotation]
+  
+  @scala.inline
+  def InterpreterDirective: InterpreterDirective = "InterpreterDirective".asInstanceOf[InterpreterDirective]
+  
+  @scala.inline
+  def IntersectionTypeAnnotation: IntersectionTypeAnnotation = "IntersectionTypeAnnotation".asInstanceOf[IntersectionTypeAnnotation]
+  
+  @scala.inline
+  def JSXAttribute: JSXAttribute = "JSXAttribute".asInstanceOf[JSXAttribute]
+  
+  @scala.inline
+  def JSXClosingElement: JSXClosingElement = "JSXClosingElement".asInstanceOf[JSXClosingElement]
+  
+  @scala.inline
+  def JSXClosingFragment: JSXClosingFragment = "JSXClosingFragment".asInstanceOf[JSXClosingFragment]
+  
+  @scala.inline
+  def JSXElement: JSXElement = "JSXElement".asInstanceOf[JSXElement]
+  
+  @scala.inline
+  def JSXEmptyExpression: JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[JSXEmptyExpression]
+  
+  @scala.inline
+  def JSXExpressionContainer: JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[JSXExpressionContainer]
+  
+  @scala.inline
+  def JSXFragment: JSXFragment = "JSXFragment".asInstanceOf[JSXFragment]
+  
+  @scala.inline
+  def JSXIdentifier: JSXIdentifier = "JSXIdentifier".asInstanceOf[JSXIdentifier]
+  
+  @scala.inline
+  def JSXMemberExpression: JSXMemberExpression = "JSXMemberExpression".asInstanceOf[JSXMemberExpression]
+  
+  @scala.inline
+  def JSXNamespacedName: JSXNamespacedName = "JSXNamespacedName".asInstanceOf[JSXNamespacedName]
+  
+  @scala.inline
+  def JSXOpeningElement: JSXOpeningElement = "JSXOpeningElement".asInstanceOf[JSXOpeningElement]
+  
+  @scala.inline
+  def JSXOpeningFragment: JSXOpeningFragment = "JSXOpeningFragment".asInstanceOf[JSXOpeningFragment]
+  
+  @scala.inline
+  def JSXSpreadAttribute: JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[JSXSpreadAttribute]
+  
+  @scala.inline
+  def JSXSpreadChild: JSXSpreadChild = "JSXSpreadChild".asInstanceOf[JSXSpreadChild]
+  
+  @scala.inline
+  def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
+  
+  @scala.inline
+  def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @scala.inline
+  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
+  
+  @scala.inline
+  def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
+  
+  @scala.inline
+  def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
+  
+  @scala.inline
+  def MetaProperty: MetaProperty = "MetaProperty".asInstanceOf[MetaProperty]
+  
+  @scala.inline
+  def MixedTypeAnnotation: MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[MixedTypeAnnotation]
+  
+  @scala.inline
+  def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
+  
+  @scala.inline
+  def Noop: Noop = "Noop".asInstanceOf[Noop]
+  
+  @scala.inline
+  def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
+  
+  @scala.inline
+  def NullLiteralTypeAnnotation: NullLiteralTypeAnnotation = "NullLiteralTypeAnnotation".asInstanceOf[NullLiteralTypeAnnotation]
+  
+  @scala.inline
+  def NullableTypeAnnotation: NullableTypeAnnotation = "NullableTypeAnnotation".asInstanceOf[NullableTypeAnnotation]
+  
+  @scala.inline
+  def NumberLiteralTypeAnnotation: NumberLiteralTypeAnnotation = "NumberLiteralTypeAnnotation".asInstanceOf[NumberLiteralTypeAnnotation]
+  
+  @scala.inline
+  def NumberTypeAnnotation: NumberTypeAnnotation = "NumberTypeAnnotation".asInstanceOf[NumberTypeAnnotation]
+  
+  @scala.inline
+  def NumericLiteral: NumericLiteral = "NumericLiteral".asInstanceOf[NumericLiteral]
+  
+  @scala.inline
+  def ObjectExpression: ObjectExpression = "ObjectExpression".asInstanceOf[ObjectExpression]
+  
+  @scala.inline
+  def ObjectMethod: ObjectMethod = "ObjectMethod".asInstanceOf[ObjectMethod]
+  
+  @scala.inline
+  def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
+  
+  @scala.inline
+  def ObjectProperty: ObjectProperty = "ObjectProperty".asInstanceOf[ObjectProperty]
+  
+  @scala.inline
+  def ObjectTypeAnnotation: ObjectTypeAnnotation = "ObjectTypeAnnotation".asInstanceOf[ObjectTypeAnnotation]
+  
+  @scala.inline
+  def ObjectTypeCallProperty: ObjectTypeCallProperty = "ObjectTypeCallProperty".asInstanceOf[ObjectTypeCallProperty]
+  
+  @scala.inline
+  def ObjectTypeIndexer: ObjectTypeIndexer = "ObjectTypeIndexer".asInstanceOf[ObjectTypeIndexer]
+  
+  @scala.inline
+  def ObjectTypeInternalSlot: ObjectTypeInternalSlot = "ObjectTypeInternalSlot".asInstanceOf[ObjectTypeInternalSlot]
+  
+  @scala.inline
+  def ObjectTypeProperty: ObjectTypeProperty = "ObjectTypeProperty".asInstanceOf[ObjectTypeProperty]
+  
+  @scala.inline
+  def ObjectTypeSpreadProperty: ObjectTypeSpreadProperty = "ObjectTypeSpreadProperty".asInstanceOf[ObjectTypeSpreadProperty]
+  
+  @scala.inline
+  def OpaqueType: OpaqueType = "OpaqueType".asInstanceOf[OpaqueType]
+  
+  @scala.inline
+  def OptionalCallExpression: OptionalCallExpression = "OptionalCallExpression".asInstanceOf[OptionalCallExpression]
+  
+  @scala.inline
+  def OptionalMemberExpression: OptionalMemberExpression = "OptionalMemberExpression".asInstanceOf[OptionalMemberExpression]
+  
+  @scala.inline
+  def ParenthesizedExpression: ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[ParenthesizedExpression]
+  
+  @scala.inline
+  def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
+  
+  @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @scala.inline
+  def PipelineBareFunction: PipelineBareFunction = "PipelineBareFunction".asInstanceOf[PipelineBareFunction]
+  
+  @scala.inline
+  def PipelinePrimaryTopicReference: PipelinePrimaryTopicReference = "PipelinePrimaryTopicReference".asInstanceOf[PipelinePrimaryTopicReference]
+  
+  @scala.inline
+  def PipelineTopicExpression: PipelineTopicExpression = "PipelineTopicExpression".asInstanceOf[PipelineTopicExpression]
+  
+  @scala.inline
+  def Placeholder: Placeholder = "Placeholder".asInstanceOf[Placeholder]
+  
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  
+  @scala.inline
+  def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
+  
+  @scala.inline
+  def PrivateName: PrivateName = "PrivateName".asInstanceOf[PrivateName]
+  
+  @scala.inline
+  def Program: Program = "Program".asInstanceOf[Program]
+  
+  @scala.inline
+  def QualifiedTypeIdentifier: QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[QualifiedTypeIdentifier]
+  
+  @scala.inline
+  def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
+  
+  @scala.inline
+  def RecordExpression: RecordExpression = "RecordExpression".asInstanceOf[RecordExpression]
+  
+  @scala.inline
+  def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
+  
+  @scala.inline
+  def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
+  
+  @scala.inline
+  def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
+  
+  @scala.inline
+  def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
+  
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
+  
+  @scala.inline
+  def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
+  
+  @scala.inline
+  def Statement: Statement = "Statement".asInstanceOf[Statement]
+  
+  @scala.inline
+  def StaticBlock: StaticBlock = "StaticBlock".asInstanceOf[StaticBlock]
+  
+  @scala.inline
+  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
+  
+  @scala.inline
+  def StringLiteralTypeAnnotation: StringLiteralTypeAnnotation = "StringLiteralTypeAnnotation".asInstanceOf[StringLiteralTypeAnnotation]
+  
+  @scala.inline
+  def StringTypeAnnotation: StringTypeAnnotation = "StringTypeAnnotation".asInstanceOf[StringTypeAnnotation]
+  
+  @scala.inline
+  def Super: Super = "Super".asInstanceOf[Super]
+  
+  @scala.inline
+  def SwitchCase: SwitchCase = "SwitchCase".asInstanceOf[SwitchCase]
+  
+  @scala.inline
+  def SwitchStatement: SwitchStatement = "SwitchStatement".asInstanceOf[SwitchStatement]
+  
+  @scala.inline
+  def SymbolTypeAnnotation: SymbolTypeAnnotation = "SymbolTypeAnnotation".asInstanceOf[SymbolTypeAnnotation]
+  
+  @scala.inline
+  def TSAnyKeyword: TSAnyKeyword = "TSAnyKeyword".asInstanceOf[TSAnyKeyword]
+  
+  @scala.inline
+  def TSArrayType: TSArrayType = "TSArrayType".asInstanceOf[TSArrayType]
+  
+  @scala.inline
+  def TSAsExpression: TSAsExpression = "TSAsExpression".asInstanceOf[TSAsExpression]
+  
+  @scala.inline
+  def TSBigIntKeyword: TSBigIntKeyword = "TSBigIntKeyword".asInstanceOf[TSBigIntKeyword]
+  
+  @scala.inline
+  def TSBooleanKeyword: TSBooleanKeyword = "TSBooleanKeyword".asInstanceOf[TSBooleanKeyword]
+  
+  @scala.inline
+  def TSCallSignatureDeclaration: TSCallSignatureDeclaration = "TSCallSignatureDeclaration".asInstanceOf[TSCallSignatureDeclaration]
+  
+  @scala.inline
+  def TSConditionalType: TSConditionalType = "TSConditionalType".asInstanceOf[TSConditionalType]
+  
+  @scala.inline
+  def TSConstructSignatureDeclaration: TSConstructSignatureDeclaration = "TSConstructSignatureDeclaration".asInstanceOf[TSConstructSignatureDeclaration]
+  
+  @scala.inline
+  def TSConstructorType: TSConstructorType = "TSConstructorType".asInstanceOf[TSConstructorType]
+  
+  @scala.inline
+  def TSDeclareFunction: TSDeclareFunction = "TSDeclareFunction".asInstanceOf[TSDeclareFunction]
+  
+  @scala.inline
+  def TSDeclareMethod: TSDeclareMethod = "TSDeclareMethod".asInstanceOf[TSDeclareMethod]
+  
+  @scala.inline
+  def TSEnumDeclaration: TSEnumDeclaration = "TSEnumDeclaration".asInstanceOf[TSEnumDeclaration]
+  
+  @scala.inline
+  def TSEnumMember: TSEnumMember = "TSEnumMember".asInstanceOf[TSEnumMember]
+  
+  @scala.inline
+  def TSExportAssignment: TSExportAssignment = "TSExportAssignment".asInstanceOf[TSExportAssignment]
+  
+  @scala.inline
+  def TSExpressionWithTypeArguments: TSExpressionWithTypeArguments = "TSExpressionWithTypeArguments".asInstanceOf[TSExpressionWithTypeArguments]
+  
+  @scala.inline
+  def TSExternalModuleReference: TSExternalModuleReference = "TSExternalModuleReference".asInstanceOf[TSExternalModuleReference]
+  
+  @scala.inline
+  def TSFunctionType: TSFunctionType = "TSFunctionType".asInstanceOf[TSFunctionType]
+  
+  @scala.inline
+  def TSImportEqualsDeclaration: TSImportEqualsDeclaration = "TSImportEqualsDeclaration".asInstanceOf[TSImportEqualsDeclaration]
+  
+  @scala.inline
+  def TSImportType: TSImportType = "TSImportType".asInstanceOf[TSImportType]
+  
+  @scala.inline
+  def TSIndexSignature: TSIndexSignature = "TSIndexSignature".asInstanceOf[TSIndexSignature]
+  
+  @scala.inline
+  def TSIndexedAccessType: TSIndexedAccessType = "TSIndexedAccessType".asInstanceOf[TSIndexedAccessType]
+  
+  @scala.inline
+  def TSInferType: TSInferType = "TSInferType".asInstanceOf[TSInferType]
+  
+  @scala.inline
+  def TSInterfaceBody: TSInterfaceBody = "TSInterfaceBody".asInstanceOf[TSInterfaceBody]
+  
+  @scala.inline
+  def TSInterfaceDeclaration: TSInterfaceDeclaration = "TSInterfaceDeclaration".asInstanceOf[TSInterfaceDeclaration]
+  
+  @scala.inline
+  def TSIntersectionType: TSIntersectionType = "TSIntersectionType".asInstanceOf[TSIntersectionType]
+  
+  @scala.inline
+  def TSIntrinsicKeyword: TSIntrinsicKeyword = "TSIntrinsicKeyword".asInstanceOf[TSIntrinsicKeyword]
+  
+  @scala.inline
+  def TSLiteralType: TSLiteralType = "TSLiteralType".asInstanceOf[TSLiteralType]
+  
+  @scala.inline
+  def TSMappedType: TSMappedType = "TSMappedType".asInstanceOf[TSMappedType]
+  
+  @scala.inline
+  def TSMethodSignature: TSMethodSignature = "TSMethodSignature".asInstanceOf[TSMethodSignature]
+  
+  @scala.inline
+  def TSModuleBlock: TSModuleBlock = "TSModuleBlock".asInstanceOf[TSModuleBlock]
+  
+  @scala.inline
+  def TSModuleDeclaration: TSModuleDeclaration = "TSModuleDeclaration".asInstanceOf[TSModuleDeclaration]
+  
+  @scala.inline
+  def TSNamedTupleMember: TSNamedTupleMember = "TSNamedTupleMember".asInstanceOf[TSNamedTupleMember]
+  
+  @scala.inline
+  def TSNamespaceExportDeclaration: TSNamespaceExportDeclaration = "TSNamespaceExportDeclaration".asInstanceOf[TSNamespaceExportDeclaration]
+  
+  @scala.inline
+  def TSNeverKeyword: TSNeverKeyword = "TSNeverKeyword".asInstanceOf[TSNeverKeyword]
+  
+  @scala.inline
+  def TSNonNullExpression: TSNonNullExpression = "TSNonNullExpression".asInstanceOf[TSNonNullExpression]
+  
+  @scala.inline
+  def TSNullKeyword: TSNullKeyword = "TSNullKeyword".asInstanceOf[TSNullKeyword]
+  
+  @scala.inline
+  def TSNumberKeyword: TSNumberKeyword = "TSNumberKeyword".asInstanceOf[TSNumberKeyword]
+  
+  @scala.inline
+  def TSObjectKeyword: TSObjectKeyword = "TSObjectKeyword".asInstanceOf[TSObjectKeyword]
+  
+  @scala.inline
+  def TSOptionalType: TSOptionalType = "TSOptionalType".asInstanceOf[TSOptionalType]
+  
+  @scala.inline
+  def TSParameterProperty: TSParameterProperty = "TSParameterProperty".asInstanceOf[TSParameterProperty]
+  
+  @scala.inline
+  def TSParenthesizedType: TSParenthesizedType = "TSParenthesizedType".asInstanceOf[TSParenthesizedType]
+  
+  @scala.inline
+  def TSPropertySignature: TSPropertySignature = "TSPropertySignature".asInstanceOf[TSPropertySignature]
+  
+  @scala.inline
+  def TSQualifiedName: TSQualifiedName = "TSQualifiedName".asInstanceOf[TSQualifiedName]
+  
+  @scala.inline
+  def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
+  
+  @scala.inline
+  def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
+  
+  @scala.inline
+  def TSSymbolKeyword: TSSymbolKeyword = "TSSymbolKeyword".asInstanceOf[TSSymbolKeyword]
+  
+  @scala.inline
+  def TSThisType: TSThisType = "TSThisType".asInstanceOf[TSThisType]
+  
+  @scala.inline
+  def TSTupleType: TSTupleType = "TSTupleType".asInstanceOf[TSTupleType]
+  
+  @scala.inline
+  def TSTypeAliasDeclaration: TSTypeAliasDeclaration = "TSTypeAliasDeclaration".asInstanceOf[TSTypeAliasDeclaration]
+  
+  @scala.inline
+  def TSTypeAnnotation: TSTypeAnnotation = "TSTypeAnnotation".asInstanceOf[TSTypeAnnotation]
+  
+  @scala.inline
+  def TSTypeAssertion: TSTypeAssertion = "TSTypeAssertion".asInstanceOf[TSTypeAssertion]
+  
+  @scala.inline
+  def TSTypeLiteral: TSTypeLiteral = "TSTypeLiteral".asInstanceOf[TSTypeLiteral]
+  
+  @scala.inline
+  def TSTypeOperator: TSTypeOperator = "TSTypeOperator".asInstanceOf[TSTypeOperator]
+  
+  @scala.inline
+  def TSTypeParameter: TSTypeParameter = "TSTypeParameter".asInstanceOf[TSTypeParameter]
+  
+  @scala.inline
+  def TSTypeParameterDeclaration: TSTypeParameterDeclaration = "TSTypeParameterDeclaration".asInstanceOf[TSTypeParameterDeclaration]
+  
+  @scala.inline
+  def TSTypeParameterInstantiation: TSTypeParameterInstantiation = "TSTypeParameterInstantiation".asInstanceOf[TSTypeParameterInstantiation]
+  
+  @scala.inline
+  def TSTypePredicate: TSTypePredicate = "TSTypePredicate".asInstanceOf[TSTypePredicate]
+  
+  @scala.inline
+  def TSTypeQuery: TSTypeQuery = "TSTypeQuery".asInstanceOf[TSTypeQuery]
+  
+  @scala.inline
+  def TSTypeReference: TSTypeReference = "TSTypeReference".asInstanceOf[TSTypeReference]
+  
+  @scala.inline
+  def TSUndefinedKeyword: TSUndefinedKeyword = "TSUndefinedKeyword".asInstanceOf[TSUndefinedKeyword]
+  
+  @scala.inline
+  def TSUnionType: TSUnionType = "TSUnionType".asInstanceOf[TSUnionType]
+  
+  @scala.inline
+  def TSUnknownKeyword: TSUnknownKeyword = "TSUnknownKeyword".asInstanceOf[TSUnknownKeyword]
+  
+  @scala.inline
+  def TSVoidKeyword: TSVoidKeyword = "TSVoidKeyword".asInstanceOf[TSVoidKeyword]
+  
+  @scala.inline
+  def TaggedTemplateExpression: TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[TaggedTemplateExpression]
+  
+  @scala.inline
+  def TemplateElement: TemplateElement = "TemplateElement".asInstanceOf[TemplateElement]
+  
+  @scala.inline
+  def TemplateLiteral: TemplateLiteral = "TemplateLiteral".asInstanceOf[TemplateLiteral]
+  
+  @scala.inline
+  def ThisExpression: ThisExpression = "ThisExpression".asInstanceOf[ThisExpression]
+  
+  @scala.inline
+  def ThisTypeAnnotation: ThisTypeAnnotation = "ThisTypeAnnotation".asInstanceOf[ThisTypeAnnotation]
+  
+  @scala.inline
+  def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
+  
+  @scala.inline
+  def Tilde: Tilde = "~".asInstanceOf[Tilde]
+  
+  @scala.inline
+  def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
+  
+  @scala.inline
+  def TupleExpression: TupleExpression = "TupleExpression".asInstanceOf[TupleExpression]
+  
+  @scala.inline
+  def TupleTypeAnnotation: TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[TupleTypeAnnotation]
+  
+  @scala.inline
+  def TypeAlias: TypeAlias = "TypeAlias".asInstanceOf[TypeAlias]
+  
+  @scala.inline
+  def TypeAnnotation: TypeAnnotation = "TypeAnnotation".asInstanceOf[TypeAnnotation]
+  
+  @scala.inline
+  def TypeCastExpression: TypeCastExpression = "TypeCastExpression".asInstanceOf[TypeCastExpression]
+  
+  @scala.inline
+  def TypeParameter: TypeParameter = "TypeParameter".asInstanceOf[TypeParameter]
+  
+  @scala.inline
+  def TypeParameterDeclaration: TypeParameterDeclaration = "TypeParameterDeclaration".asInstanceOf[TypeParameterDeclaration]
+  
+  @scala.inline
+  def TypeParameterInstantiation: TypeParameterInstantiation = "TypeParameterInstantiation".asInstanceOf[TypeParameterInstantiation]
+  
+  @scala.inline
+  def TypeofTypeAnnotation: TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[TypeofTypeAnnotation]
+  
+  @scala.inline
+  def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
+  
+  @scala.inline
+  def UnionTypeAnnotation: UnionTypeAnnotation = "UnionTypeAnnotation".asInstanceOf[UnionTypeAnnotation]
+  
+  @scala.inline
+  def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
+  
+  @scala.inline
+  def V8IntrinsicIdentifier: V8IntrinsicIdentifier = "V8IntrinsicIdentifier".asInstanceOf[V8IntrinsicIdentifier]
+  
+  @scala.inline
+  def VariableDeclaration: VariableDeclaration = "VariableDeclaration".asInstanceOf[VariableDeclaration]
+  
+  @scala.inline
+  def VariableDeclarator: VariableDeclarator = "VariableDeclarator".asInstanceOf[VariableDeclarator]
+  
+  @scala.inline
+  def Variance: Variance = "Variance".asInstanceOf[Variance]
+  
+  @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @scala.inline
+  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
+  
+  @scala.inline
+  def VoidTypeAnnotation: VoidTypeAnnotation = "VoidTypeAnnotation".asInstanceOf[VoidTypeAnnotation]
+  
+  @scala.inline
+  def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
+  
+  @scala.inline
+  def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
+  
+  @scala.inline
+  def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def const: const = "const".asInstanceOf[const]
+  
+  @scala.inline
+  def constructor: constructor = "constructor".asInstanceOf[constructor]
+  
+  @scala.inline
+  def crlf: crlf = "crlf".asInstanceOf[crlf]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def enter: enter = "enter".asInstanceOf[enter]
+  
+  @scala.inline
+  def exit: exit = "exit".asInstanceOf[exit]
+  
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
+  
+  @scala.inline
+  def let: let = "let".asInstanceOf[let]
+  
+  @scala.inline
+  def lf: lf = "lf".asInstanceOf[lf]
+  
+  @scala.inline
+  def method: method = "method".asInstanceOf[method]
+  
+  @scala.inline
+  def minus: minus = "minus".asInstanceOf[minus]
+  
+  @scala.inline
+  def module: module = "module".asInstanceOf[module]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @scala.inline
+  def plus: plus = "plus".asInstanceOf[plus]
+  
+  @scala.inline
+  def preserve: preserve = "preserve".asInstanceOf[preserve]
+  
+  @scala.inline
+  def root: root = "root".asInstanceOf[root]
+  
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @scala.inline
+  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  
+  @scala.inline
+  def typeof: typeof = "typeof".asInstanceOf[typeof]
+  
+  @scala.inline
+  def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
+  
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @scala.inline
+  def upward: upward = "upward".asInstanceOf[upward]
+  
+  @scala.inline
+  def `upward-optional`: `upward-optional` = "upward-optional".asInstanceOf[`upward-optional`]
+  
+  @scala.inline
+  def `var`: `var` = "var".asInstanceOf[`var`]
+  
+  @scala.inline
+  def void: void = "void".asInstanceOf[void]
+  
   @js.native
   sealed trait `--` extends js.Object
   
@@ -73,6 +1027,9 @@ object babelPluginTesterStrings {
   
   @js.native
   sealed trait BreakStatement extends js.Object
+  
+  @js.native
+  sealed trait Call extends js.Object
   
   @js.native
   sealed trait CallExpression extends js.Object
@@ -540,6 +1497,9 @@ object babelPluginTesterStrings {
   sealed trait Statement extends js.Object
   
   @js.native
+  sealed trait StaticBlock extends js.Object
+  
+  @js.native
   sealed trait StringLiteral extends js.Object
   
   @js.native
@@ -634,6 +1594,9 @@ object babelPluginTesterStrings {
   
   @js.native
   sealed trait TSIntersectionType extends js.Object
+  
+  @js.native
+  sealed trait TSIntrinsicKeyword extends js.Object
   
   @js.native
   sealed trait TSLiteralType extends js.Object
@@ -837,9 +1800,6 @@ object babelPluginTesterStrings {
   sealed trait YieldExpression extends js.Object
   
   @js.native
-  sealed trait ^ extends js.Object
-  
-  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -946,634 +1906,4 @@ object babelPluginTesterStrings {
   
   @js.native
   sealed trait void extends js.Object
-  
-  @scala.inline
-  def `--`: `--` = "--".asInstanceOf[`--`]
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
-  @scala.inline
-  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
-  @scala.inline
-  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
-  @scala.inline
-  def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
-  @scala.inline
-  def ArgumentPlaceholder: ArgumentPlaceholder = "ArgumentPlaceholder".asInstanceOf[ArgumentPlaceholder]
-  @scala.inline
-  def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
-  @scala.inline
-  def ArrayPattern: ArrayPattern = "ArrayPattern".asInstanceOf[ArrayPattern]
-  @scala.inline
-  def ArrayTypeAnnotation: ArrayTypeAnnotation = "ArrayTypeAnnotation".asInstanceOf[ArrayTypeAnnotation]
-  @scala.inline
-  def ArrowFunctionExpression: ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[ArrowFunctionExpression]
-  @scala.inline
-  def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
-  @scala.inline
-  def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
-  @scala.inline
-  def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
-  @scala.inline
-  def BigIntLiteral: BigIntLiteral = "BigIntLiteral".asInstanceOf[BigIntLiteral]
-  @scala.inline
-  def BinaryExpression: BinaryExpression = "BinaryExpression".asInstanceOf[BinaryExpression]
-  @scala.inline
-  def BindExpression: BindExpression = "BindExpression".asInstanceOf[BindExpression]
-  @scala.inline
-  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
-  @scala.inline
-  def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
-  @scala.inline
-  def BooleanLiteralTypeAnnotation: BooleanLiteralTypeAnnotation = "BooleanLiteralTypeAnnotation".asInstanceOf[BooleanLiteralTypeAnnotation]
-  @scala.inline
-  def BooleanTypeAnnotation: BooleanTypeAnnotation = "BooleanTypeAnnotation".asInstanceOf[BooleanTypeAnnotation]
-  @scala.inline
-  def BreakStatement: BreakStatement = "BreakStatement".asInstanceOf[BreakStatement]
-  @scala.inline
-  def CallExpression: CallExpression = "CallExpression".asInstanceOf[CallExpression]
-  @scala.inline
-  def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
-  @scala.inline
-  def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
-  @scala.inline
-  def ClassDeclaration: ClassDeclaration = "ClassDeclaration".asInstanceOf[ClassDeclaration]
-  @scala.inline
-  def ClassExpression: ClassExpression = "ClassExpression".asInstanceOf[ClassExpression]
-  @scala.inline
-  def ClassImplements: ClassImplements = "ClassImplements".asInstanceOf[ClassImplements]
-  @scala.inline
-  def ClassMethod: ClassMethod = "ClassMethod".asInstanceOf[ClassMethod]
-  @scala.inline
-  def ClassPrivateMethod: ClassPrivateMethod = "ClassPrivateMethod".asInstanceOf[ClassPrivateMethod]
-  @scala.inline
-  def ClassPrivateProperty: ClassPrivateProperty = "ClassPrivateProperty".asInstanceOf[ClassPrivateProperty]
-  @scala.inline
-  def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
-  @scala.inline
-  def CommonJS: CommonJS = "CommonJS".asInstanceOf[CommonJS]
-  @scala.inline
-  def ConditionalExpression: ConditionalExpression = "ConditionalExpression".asInstanceOf[ConditionalExpression]
-  @scala.inline
-  def ContinueStatement: ContinueStatement = "ContinueStatement".asInstanceOf[ContinueStatement]
-  @scala.inline
-  def DebuggerStatement: DebuggerStatement = "DebuggerStatement".asInstanceOf[DebuggerStatement]
-  @scala.inline
-  def DecimalLiteral: DecimalLiteral = "DecimalLiteral".asInstanceOf[DecimalLiteral]
-  @scala.inline
-  def Declaration: Declaration = "Declaration".asInstanceOf[Declaration]
-  @scala.inline
-  def DeclareClass: DeclareClass = "DeclareClass".asInstanceOf[DeclareClass]
-  @scala.inline
-  def DeclareExportAllDeclaration: DeclareExportAllDeclaration = "DeclareExportAllDeclaration".asInstanceOf[DeclareExportAllDeclaration]
-  @scala.inline
-  def DeclareExportDeclaration: DeclareExportDeclaration = "DeclareExportDeclaration".asInstanceOf[DeclareExportDeclaration]
-  @scala.inline
-  def DeclareFunction: DeclareFunction = "DeclareFunction".asInstanceOf[DeclareFunction]
-  @scala.inline
-  def DeclareInterface: DeclareInterface = "DeclareInterface".asInstanceOf[DeclareInterface]
-  @scala.inline
-  def DeclareModule: DeclareModule = "DeclareModule".asInstanceOf[DeclareModule]
-  @scala.inline
-  def DeclareModuleExports: DeclareModuleExports = "DeclareModuleExports".asInstanceOf[DeclareModuleExports]
-  @scala.inline
-  def DeclareOpaqueType: DeclareOpaqueType = "DeclareOpaqueType".asInstanceOf[DeclareOpaqueType]
-  @scala.inline
-  def DeclareTypeAlias: DeclareTypeAlias = "DeclareTypeAlias".asInstanceOf[DeclareTypeAlias]
-  @scala.inline
-  def DeclareVariable: DeclareVariable = "DeclareVariable".asInstanceOf[DeclareVariable]
-  @scala.inline
-  def DeclaredPredicate: DeclaredPredicate = "DeclaredPredicate".asInstanceOf[DeclaredPredicate]
-  @scala.inline
-  def Decorator: Decorator = "Decorator".asInstanceOf[Decorator]
-  @scala.inline
-  def Directive: Directive = "Directive".asInstanceOf[Directive]
-  @scala.inline
-  def DirectiveLiteral: DirectiveLiteral = "DirectiveLiteral".asInstanceOf[DirectiveLiteral]
-  @scala.inline
-  def DoExpression: DoExpression = "DoExpression".asInstanceOf[DoExpression]
-  @scala.inline
-  def DoWhileStatement: DoWhileStatement = "DoWhileStatement".asInstanceOf[DoWhileStatement]
-  @scala.inline
-  def Dotes: Dotes = ".es".asInstanceOf[Dotes]
-  @scala.inline
-  def Dotes6: Dotes6 = ".es6".asInstanceOf[Dotes6]
-  @scala.inline
-  def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
-  @scala.inline
-  def Dotjsx: Dotjsx = ".jsx".asInstanceOf[Dotjsx]
-  @scala.inline
-  def Dotmjs: Dotmjs = ".mjs".asInstanceOf[Dotmjs]
-  @scala.inline
-  def ES: ES = "ES".asInstanceOf[ES]
-  @scala.inline
-  def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
-  @scala.inline
-  def EmptyTypeAnnotation: EmptyTypeAnnotation = "EmptyTypeAnnotation".asInstanceOf[EmptyTypeAnnotation]
-  @scala.inline
-  def EnumBooleanBody: EnumBooleanBody = "EnumBooleanBody".asInstanceOf[EnumBooleanBody]
-  @scala.inline
-  def EnumBooleanMember: EnumBooleanMember = "EnumBooleanMember".asInstanceOf[EnumBooleanMember]
-  @scala.inline
-  def EnumDeclaration: EnumDeclaration = "EnumDeclaration".asInstanceOf[EnumDeclaration]
-  @scala.inline
-  def EnumDefaultedMember: EnumDefaultedMember = "EnumDefaultedMember".asInstanceOf[EnumDefaultedMember]
-  @scala.inline
-  def EnumNumberBody: EnumNumberBody = "EnumNumberBody".asInstanceOf[EnumNumberBody]
-  @scala.inline
-  def EnumNumberMember: EnumNumberMember = "EnumNumberMember".asInstanceOf[EnumNumberMember]
-  @scala.inline
-  def EnumStringBody: EnumStringBody = "EnumStringBody".asInstanceOf[EnumStringBody]
-  @scala.inline
-  def EnumStringMember: EnumStringMember = "EnumStringMember".asInstanceOf[EnumStringMember]
-  @scala.inline
-  def EnumSymbolBody: EnumSymbolBody = "EnumSymbolBody".asInstanceOf[EnumSymbolBody]
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
-  @scala.inline
-  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
-  @scala.inline
-  def ExistsTypeAnnotation: ExistsTypeAnnotation = "ExistsTypeAnnotation".asInstanceOf[ExistsTypeAnnotation]
-  @scala.inline
-  def ExportAllDeclaration: ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[ExportAllDeclaration]
-  @scala.inline
-  def ExportDefaultDeclaration: ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[ExportDefaultDeclaration]
-  @scala.inline
-  def ExportDefaultSpecifier: ExportDefaultSpecifier = "ExportDefaultSpecifier".asInstanceOf[ExportDefaultSpecifier]
-  @scala.inline
-  def ExportNamedDeclaration: ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[ExportNamedDeclaration]
-  @scala.inline
-  def ExportNamespaceSpecifier: ExportNamespaceSpecifier = "ExportNamespaceSpecifier".asInstanceOf[ExportNamespaceSpecifier]
-  @scala.inline
-  def ExportSpecifier: ExportSpecifier = "ExportSpecifier".asInstanceOf[ExportSpecifier]
-  @scala.inline
-  def Expression: Expression = "Expression".asInstanceOf[Expression]
-  @scala.inline
-  def ExpressionStatement: ExpressionStatement = "ExpressionStatement".asInstanceOf[ExpressionStatement]
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
-  @scala.inline
-  def ForInStatement: ForInStatement = "ForInStatement".asInstanceOf[ForInStatement]
-  @scala.inline
-  def ForOfStatement: ForOfStatement = "ForOfStatement".asInstanceOf[ForOfStatement]
-  @scala.inline
-  def ForStatement: ForStatement = "ForStatement".asInstanceOf[ForStatement]
-  @scala.inline
-  def FunctionDeclaration: FunctionDeclaration = "FunctionDeclaration".asInstanceOf[FunctionDeclaration]
-  @scala.inline
-  def FunctionExpression: FunctionExpression = "FunctionExpression".asInstanceOf[FunctionExpression]
-  @scala.inline
-  def FunctionTypeAnnotation: FunctionTypeAnnotation = "FunctionTypeAnnotation".asInstanceOf[FunctionTypeAnnotation]
-  @scala.inline
-  def FunctionTypeParam: FunctionTypeParam = "FunctionTypeParam".asInstanceOf[FunctionTypeParam]
-  @scala.inline
-  def GenericTypeAnnotation: GenericTypeAnnotation = "GenericTypeAnnotation".asInstanceOf[GenericTypeAnnotation]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
-  @scala.inline
-  def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
-  @scala.inline
-  def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
-  @scala.inline
-  def IfStatement: IfStatement = "IfStatement".asInstanceOf[IfStatement]
-  @scala.inline
-  def Import: Import = "Import".asInstanceOf[Import]
-  @scala.inline
-  def ImportAttribute: ImportAttribute = "ImportAttribute".asInstanceOf[ImportAttribute]
-  @scala.inline
-  def ImportDeclaration: ImportDeclaration = "ImportDeclaration".asInstanceOf[ImportDeclaration]
-  @scala.inline
-  def ImportDefaultSpecifier: ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[ImportDefaultSpecifier]
-  @scala.inline
-  def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
-  @scala.inline
-  def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
-  @scala.inline
-  def InferredPredicate: InferredPredicate = "InferredPredicate".asInstanceOf[InferredPredicate]
-  @scala.inline
-  def InterfaceDeclaration: InterfaceDeclaration = "InterfaceDeclaration".asInstanceOf[InterfaceDeclaration]
-  @scala.inline
-  def InterfaceExtends: InterfaceExtends = "InterfaceExtends".asInstanceOf[InterfaceExtends]
-  @scala.inline
-  def InterfaceTypeAnnotation: InterfaceTypeAnnotation = "InterfaceTypeAnnotation".asInstanceOf[InterfaceTypeAnnotation]
-  @scala.inline
-  def InterpreterDirective: InterpreterDirective = "InterpreterDirective".asInstanceOf[InterpreterDirective]
-  @scala.inline
-  def IntersectionTypeAnnotation: IntersectionTypeAnnotation = "IntersectionTypeAnnotation".asInstanceOf[IntersectionTypeAnnotation]
-  @scala.inline
-  def JSXAttribute: JSXAttribute = "JSXAttribute".asInstanceOf[JSXAttribute]
-  @scala.inline
-  def JSXClosingElement: JSXClosingElement = "JSXClosingElement".asInstanceOf[JSXClosingElement]
-  @scala.inline
-  def JSXClosingFragment: JSXClosingFragment = "JSXClosingFragment".asInstanceOf[JSXClosingFragment]
-  @scala.inline
-  def JSXElement: JSXElement = "JSXElement".asInstanceOf[JSXElement]
-  @scala.inline
-  def JSXEmptyExpression: JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[JSXEmptyExpression]
-  @scala.inline
-  def JSXExpressionContainer: JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[JSXExpressionContainer]
-  @scala.inline
-  def JSXFragment: JSXFragment = "JSXFragment".asInstanceOf[JSXFragment]
-  @scala.inline
-  def JSXIdentifier: JSXIdentifier = "JSXIdentifier".asInstanceOf[JSXIdentifier]
-  @scala.inline
-  def JSXMemberExpression: JSXMemberExpression = "JSXMemberExpression".asInstanceOf[JSXMemberExpression]
-  @scala.inline
-  def JSXNamespacedName: JSXNamespacedName = "JSXNamespacedName".asInstanceOf[JSXNamespacedName]
-  @scala.inline
-  def JSXOpeningElement: JSXOpeningElement = "JSXOpeningElement".asInstanceOf[JSXOpeningElement]
-  @scala.inline
-  def JSXOpeningFragment: JSXOpeningFragment = "JSXOpeningFragment".asInstanceOf[JSXOpeningFragment]
-  @scala.inline
-  def JSXSpreadAttribute: JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[JSXSpreadAttribute]
-  @scala.inline
-  def JSXSpreadChild: JSXSpreadChild = "JSXSpreadChild".asInstanceOf[JSXSpreadChild]
-  @scala.inline
-  def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
-  @scala.inline
-  def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
-  @scala.inline
-  def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
-  @scala.inline
-  def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
-  @scala.inline
-  def MetaProperty: MetaProperty = "MetaProperty".asInstanceOf[MetaProperty]
-  @scala.inline
-  def MixedTypeAnnotation: MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[MixedTypeAnnotation]
-  @scala.inline
-  def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
-  @scala.inline
-  def Noop: Noop = "Noop".asInstanceOf[Noop]
-  @scala.inline
-  def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
-  @scala.inline
-  def NullLiteralTypeAnnotation: NullLiteralTypeAnnotation = "NullLiteralTypeAnnotation".asInstanceOf[NullLiteralTypeAnnotation]
-  @scala.inline
-  def NullableTypeAnnotation: NullableTypeAnnotation = "NullableTypeAnnotation".asInstanceOf[NullableTypeAnnotation]
-  @scala.inline
-  def NumberLiteralTypeAnnotation: NumberLiteralTypeAnnotation = "NumberLiteralTypeAnnotation".asInstanceOf[NumberLiteralTypeAnnotation]
-  @scala.inline
-  def NumberTypeAnnotation: NumberTypeAnnotation = "NumberTypeAnnotation".asInstanceOf[NumberTypeAnnotation]
-  @scala.inline
-  def NumericLiteral: NumericLiteral = "NumericLiteral".asInstanceOf[NumericLiteral]
-  @scala.inline
-  def ObjectExpression: ObjectExpression = "ObjectExpression".asInstanceOf[ObjectExpression]
-  @scala.inline
-  def ObjectMethod: ObjectMethod = "ObjectMethod".asInstanceOf[ObjectMethod]
-  @scala.inline
-  def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
-  @scala.inline
-  def ObjectProperty: ObjectProperty = "ObjectProperty".asInstanceOf[ObjectProperty]
-  @scala.inline
-  def ObjectTypeAnnotation: ObjectTypeAnnotation = "ObjectTypeAnnotation".asInstanceOf[ObjectTypeAnnotation]
-  @scala.inline
-  def ObjectTypeCallProperty: ObjectTypeCallProperty = "ObjectTypeCallProperty".asInstanceOf[ObjectTypeCallProperty]
-  @scala.inline
-  def ObjectTypeIndexer: ObjectTypeIndexer = "ObjectTypeIndexer".asInstanceOf[ObjectTypeIndexer]
-  @scala.inline
-  def ObjectTypeInternalSlot: ObjectTypeInternalSlot = "ObjectTypeInternalSlot".asInstanceOf[ObjectTypeInternalSlot]
-  @scala.inline
-  def ObjectTypeProperty: ObjectTypeProperty = "ObjectTypeProperty".asInstanceOf[ObjectTypeProperty]
-  @scala.inline
-  def ObjectTypeSpreadProperty: ObjectTypeSpreadProperty = "ObjectTypeSpreadProperty".asInstanceOf[ObjectTypeSpreadProperty]
-  @scala.inline
-  def OpaqueType: OpaqueType = "OpaqueType".asInstanceOf[OpaqueType]
-  @scala.inline
-  def OptionalCallExpression: OptionalCallExpression = "OptionalCallExpression".asInstanceOf[OptionalCallExpression]
-  @scala.inline
-  def OptionalMemberExpression: OptionalMemberExpression = "OptionalMemberExpression".asInstanceOf[OptionalMemberExpression]
-  @scala.inline
-  def ParenthesizedExpression: ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[ParenthesizedExpression]
-  @scala.inline
-  def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
-  @scala.inline
-  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
-  @scala.inline
-  def PipelineBareFunction: PipelineBareFunction = "PipelineBareFunction".asInstanceOf[PipelineBareFunction]
-  @scala.inline
-  def PipelinePrimaryTopicReference: PipelinePrimaryTopicReference = "PipelinePrimaryTopicReference".asInstanceOf[PipelinePrimaryTopicReference]
-  @scala.inline
-  def PipelineTopicExpression: PipelineTopicExpression = "PipelineTopicExpression".asInstanceOf[PipelineTopicExpression]
-  @scala.inline
-  def Placeholder: Placeholder = "Placeholder".asInstanceOf[Placeholder]
-  @scala.inline
-  def Plussign: Plussign = "+".asInstanceOf[Plussign]
-  @scala.inline
-  def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
-  @scala.inline
-  def PrivateName: PrivateName = "PrivateName".asInstanceOf[PrivateName]
-  @scala.inline
-  def Program: Program = "Program".asInstanceOf[Program]
-  @scala.inline
-  def QualifiedTypeIdentifier: QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[QualifiedTypeIdentifier]
-  @scala.inline
-  def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
-  @scala.inline
-  def RecordExpression: RecordExpression = "RecordExpression".asInstanceOf[RecordExpression]
-  @scala.inline
-  def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
-  @scala.inline
-  def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
-  @scala.inline
-  def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
-  @scala.inline
-  def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
-  @scala.inline
-  def Slash: Slash = "/".asInstanceOf[Slash]
-  @scala.inline
-  def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
-  @scala.inline
-  def Statement: Statement = "Statement".asInstanceOf[Statement]
-  @scala.inline
-  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
-  @scala.inline
-  def StringLiteralTypeAnnotation: StringLiteralTypeAnnotation = "StringLiteralTypeAnnotation".asInstanceOf[StringLiteralTypeAnnotation]
-  @scala.inline
-  def StringTypeAnnotation: StringTypeAnnotation = "StringTypeAnnotation".asInstanceOf[StringTypeAnnotation]
-  @scala.inline
-  def Super: Super = "Super".asInstanceOf[Super]
-  @scala.inline
-  def SwitchCase: SwitchCase = "SwitchCase".asInstanceOf[SwitchCase]
-  @scala.inline
-  def SwitchStatement: SwitchStatement = "SwitchStatement".asInstanceOf[SwitchStatement]
-  @scala.inline
-  def SymbolTypeAnnotation: SymbolTypeAnnotation = "SymbolTypeAnnotation".asInstanceOf[SymbolTypeAnnotation]
-  @scala.inline
-  def TSAnyKeyword: TSAnyKeyword = "TSAnyKeyword".asInstanceOf[TSAnyKeyword]
-  @scala.inline
-  def TSArrayType: TSArrayType = "TSArrayType".asInstanceOf[TSArrayType]
-  @scala.inline
-  def TSAsExpression: TSAsExpression = "TSAsExpression".asInstanceOf[TSAsExpression]
-  @scala.inline
-  def TSBigIntKeyword: TSBigIntKeyword = "TSBigIntKeyword".asInstanceOf[TSBigIntKeyword]
-  @scala.inline
-  def TSBooleanKeyword: TSBooleanKeyword = "TSBooleanKeyword".asInstanceOf[TSBooleanKeyword]
-  @scala.inline
-  def TSCallSignatureDeclaration: TSCallSignatureDeclaration = "TSCallSignatureDeclaration".asInstanceOf[TSCallSignatureDeclaration]
-  @scala.inline
-  def TSConditionalType: TSConditionalType = "TSConditionalType".asInstanceOf[TSConditionalType]
-  @scala.inline
-  def TSConstructSignatureDeclaration: TSConstructSignatureDeclaration = "TSConstructSignatureDeclaration".asInstanceOf[TSConstructSignatureDeclaration]
-  @scala.inline
-  def TSConstructorType: TSConstructorType = "TSConstructorType".asInstanceOf[TSConstructorType]
-  @scala.inline
-  def TSDeclareFunction: TSDeclareFunction = "TSDeclareFunction".asInstanceOf[TSDeclareFunction]
-  @scala.inline
-  def TSDeclareMethod: TSDeclareMethod = "TSDeclareMethod".asInstanceOf[TSDeclareMethod]
-  @scala.inline
-  def TSEnumDeclaration: TSEnumDeclaration = "TSEnumDeclaration".asInstanceOf[TSEnumDeclaration]
-  @scala.inline
-  def TSEnumMember: TSEnumMember = "TSEnumMember".asInstanceOf[TSEnumMember]
-  @scala.inline
-  def TSExportAssignment: TSExportAssignment = "TSExportAssignment".asInstanceOf[TSExportAssignment]
-  @scala.inline
-  def TSExpressionWithTypeArguments: TSExpressionWithTypeArguments = "TSExpressionWithTypeArguments".asInstanceOf[TSExpressionWithTypeArguments]
-  @scala.inline
-  def TSExternalModuleReference: TSExternalModuleReference = "TSExternalModuleReference".asInstanceOf[TSExternalModuleReference]
-  @scala.inline
-  def TSFunctionType: TSFunctionType = "TSFunctionType".asInstanceOf[TSFunctionType]
-  @scala.inline
-  def TSImportEqualsDeclaration: TSImportEqualsDeclaration = "TSImportEqualsDeclaration".asInstanceOf[TSImportEqualsDeclaration]
-  @scala.inline
-  def TSImportType: TSImportType = "TSImportType".asInstanceOf[TSImportType]
-  @scala.inline
-  def TSIndexSignature: TSIndexSignature = "TSIndexSignature".asInstanceOf[TSIndexSignature]
-  @scala.inline
-  def TSIndexedAccessType: TSIndexedAccessType = "TSIndexedAccessType".asInstanceOf[TSIndexedAccessType]
-  @scala.inline
-  def TSInferType: TSInferType = "TSInferType".asInstanceOf[TSInferType]
-  @scala.inline
-  def TSInterfaceBody: TSInterfaceBody = "TSInterfaceBody".asInstanceOf[TSInterfaceBody]
-  @scala.inline
-  def TSInterfaceDeclaration: TSInterfaceDeclaration = "TSInterfaceDeclaration".asInstanceOf[TSInterfaceDeclaration]
-  @scala.inline
-  def TSIntersectionType: TSIntersectionType = "TSIntersectionType".asInstanceOf[TSIntersectionType]
-  @scala.inline
-  def TSLiteralType: TSLiteralType = "TSLiteralType".asInstanceOf[TSLiteralType]
-  @scala.inline
-  def TSMappedType: TSMappedType = "TSMappedType".asInstanceOf[TSMappedType]
-  @scala.inline
-  def TSMethodSignature: TSMethodSignature = "TSMethodSignature".asInstanceOf[TSMethodSignature]
-  @scala.inline
-  def TSModuleBlock: TSModuleBlock = "TSModuleBlock".asInstanceOf[TSModuleBlock]
-  @scala.inline
-  def TSModuleDeclaration: TSModuleDeclaration = "TSModuleDeclaration".asInstanceOf[TSModuleDeclaration]
-  @scala.inline
-  def TSNamedTupleMember: TSNamedTupleMember = "TSNamedTupleMember".asInstanceOf[TSNamedTupleMember]
-  @scala.inline
-  def TSNamespaceExportDeclaration: TSNamespaceExportDeclaration = "TSNamespaceExportDeclaration".asInstanceOf[TSNamespaceExportDeclaration]
-  @scala.inline
-  def TSNeverKeyword: TSNeverKeyword = "TSNeverKeyword".asInstanceOf[TSNeverKeyword]
-  @scala.inline
-  def TSNonNullExpression: TSNonNullExpression = "TSNonNullExpression".asInstanceOf[TSNonNullExpression]
-  @scala.inline
-  def TSNullKeyword: TSNullKeyword = "TSNullKeyword".asInstanceOf[TSNullKeyword]
-  @scala.inline
-  def TSNumberKeyword: TSNumberKeyword = "TSNumberKeyword".asInstanceOf[TSNumberKeyword]
-  @scala.inline
-  def TSObjectKeyword: TSObjectKeyword = "TSObjectKeyword".asInstanceOf[TSObjectKeyword]
-  @scala.inline
-  def TSOptionalType: TSOptionalType = "TSOptionalType".asInstanceOf[TSOptionalType]
-  @scala.inline
-  def TSParameterProperty: TSParameterProperty = "TSParameterProperty".asInstanceOf[TSParameterProperty]
-  @scala.inline
-  def TSParenthesizedType: TSParenthesizedType = "TSParenthesizedType".asInstanceOf[TSParenthesizedType]
-  @scala.inline
-  def TSPropertySignature: TSPropertySignature = "TSPropertySignature".asInstanceOf[TSPropertySignature]
-  @scala.inline
-  def TSQualifiedName: TSQualifiedName = "TSQualifiedName".asInstanceOf[TSQualifiedName]
-  @scala.inline
-  def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
-  @scala.inline
-  def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
-  @scala.inline
-  def TSSymbolKeyword: TSSymbolKeyword = "TSSymbolKeyword".asInstanceOf[TSSymbolKeyword]
-  @scala.inline
-  def TSThisType: TSThisType = "TSThisType".asInstanceOf[TSThisType]
-  @scala.inline
-  def TSTupleType: TSTupleType = "TSTupleType".asInstanceOf[TSTupleType]
-  @scala.inline
-  def TSTypeAliasDeclaration: TSTypeAliasDeclaration = "TSTypeAliasDeclaration".asInstanceOf[TSTypeAliasDeclaration]
-  @scala.inline
-  def TSTypeAnnotation: TSTypeAnnotation = "TSTypeAnnotation".asInstanceOf[TSTypeAnnotation]
-  @scala.inline
-  def TSTypeAssertion: TSTypeAssertion = "TSTypeAssertion".asInstanceOf[TSTypeAssertion]
-  @scala.inline
-  def TSTypeLiteral: TSTypeLiteral = "TSTypeLiteral".asInstanceOf[TSTypeLiteral]
-  @scala.inline
-  def TSTypeOperator: TSTypeOperator = "TSTypeOperator".asInstanceOf[TSTypeOperator]
-  @scala.inline
-  def TSTypeParameter: TSTypeParameter = "TSTypeParameter".asInstanceOf[TSTypeParameter]
-  @scala.inline
-  def TSTypeParameterDeclaration: TSTypeParameterDeclaration = "TSTypeParameterDeclaration".asInstanceOf[TSTypeParameterDeclaration]
-  @scala.inline
-  def TSTypeParameterInstantiation: TSTypeParameterInstantiation = "TSTypeParameterInstantiation".asInstanceOf[TSTypeParameterInstantiation]
-  @scala.inline
-  def TSTypePredicate: TSTypePredicate = "TSTypePredicate".asInstanceOf[TSTypePredicate]
-  @scala.inline
-  def TSTypeQuery: TSTypeQuery = "TSTypeQuery".asInstanceOf[TSTypeQuery]
-  @scala.inline
-  def TSTypeReference: TSTypeReference = "TSTypeReference".asInstanceOf[TSTypeReference]
-  @scala.inline
-  def TSUndefinedKeyword: TSUndefinedKeyword = "TSUndefinedKeyword".asInstanceOf[TSUndefinedKeyword]
-  @scala.inline
-  def TSUnionType: TSUnionType = "TSUnionType".asInstanceOf[TSUnionType]
-  @scala.inline
-  def TSUnknownKeyword: TSUnknownKeyword = "TSUnknownKeyword".asInstanceOf[TSUnknownKeyword]
-  @scala.inline
-  def TSVoidKeyword: TSVoidKeyword = "TSVoidKeyword".asInstanceOf[TSVoidKeyword]
-  @scala.inline
-  def TaggedTemplateExpression: TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[TaggedTemplateExpression]
-  @scala.inline
-  def TemplateElement: TemplateElement = "TemplateElement".asInstanceOf[TemplateElement]
-  @scala.inline
-  def TemplateLiteral: TemplateLiteral = "TemplateLiteral".asInstanceOf[TemplateLiteral]
-  @scala.inline
-  def ThisExpression: ThisExpression = "ThisExpression".asInstanceOf[ThisExpression]
-  @scala.inline
-  def ThisTypeAnnotation: ThisTypeAnnotation = "ThisTypeAnnotation".asInstanceOf[ThisTypeAnnotation]
-  @scala.inline
-  def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
-  @scala.inline
-  def Tilde: Tilde = "~".asInstanceOf[Tilde]
-  @scala.inline
-  def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
-  @scala.inline
-  def TupleExpression: TupleExpression = "TupleExpression".asInstanceOf[TupleExpression]
-  @scala.inline
-  def TupleTypeAnnotation: TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[TupleTypeAnnotation]
-  @scala.inline
-  def TypeAlias: TypeAlias = "TypeAlias".asInstanceOf[TypeAlias]
-  @scala.inline
-  def TypeAnnotation: TypeAnnotation = "TypeAnnotation".asInstanceOf[TypeAnnotation]
-  @scala.inline
-  def TypeCastExpression: TypeCastExpression = "TypeCastExpression".asInstanceOf[TypeCastExpression]
-  @scala.inline
-  def TypeParameter: TypeParameter = "TypeParameter".asInstanceOf[TypeParameter]
-  @scala.inline
-  def TypeParameterDeclaration: TypeParameterDeclaration = "TypeParameterDeclaration".asInstanceOf[TypeParameterDeclaration]
-  @scala.inline
-  def TypeParameterInstantiation: TypeParameterInstantiation = "TypeParameterInstantiation".asInstanceOf[TypeParameterInstantiation]
-  @scala.inline
-  def TypeofTypeAnnotation: TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[TypeofTypeAnnotation]
-  @scala.inline
-  def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
-  @scala.inline
-  def UnionTypeAnnotation: UnionTypeAnnotation = "UnionTypeAnnotation".asInstanceOf[UnionTypeAnnotation]
-  @scala.inline
-  def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
-  @scala.inline
-  def V8IntrinsicIdentifier: V8IntrinsicIdentifier = "V8IntrinsicIdentifier".asInstanceOf[V8IntrinsicIdentifier]
-  @scala.inline
-  def VariableDeclaration: VariableDeclaration = "VariableDeclaration".asInstanceOf[VariableDeclaration]
-  @scala.inline
-  def VariableDeclarator: VariableDeclarator = "VariableDeclarator".asInstanceOf[VariableDeclarator]
-  @scala.inline
-  def Variance: Variance = "Variance".asInstanceOf[Variance]
-  @scala.inline
-  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
-  @scala.inline
-  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
-  @scala.inline
-  def VoidTypeAnnotation: VoidTypeAnnotation = "VoidTypeAnnotation".asInstanceOf[VoidTypeAnnotation]
-  @scala.inline
-  def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
-  @scala.inline
-  def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
-  @scala.inline
-  def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
-  @scala.inline
-  def ^ : ^ = "^".asInstanceOf[^]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def const: const = "const".asInstanceOf[const]
-  @scala.inline
-  def constructor: constructor = "constructor".asInstanceOf[constructor]
-  @scala.inline
-  def crlf: crlf = "crlf".asInstanceOf[crlf]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def enter: enter = "enter".asInstanceOf[enter]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
-  @scala.inline
-  def let: let = "let".asInstanceOf[let]
-  @scala.inline
-  def lf: lf = "lf".asInstanceOf[lf]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
-  def minus: minus = "minus".asInstanceOf[minus]
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def plus: plus = "plus".asInstanceOf[plus]
-  @scala.inline
-  def preserve: preserve = "preserve".asInstanceOf[preserve]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
-  @scala.inline
-  def typeof: typeof = "typeof".asInstanceOf[typeof]
-  @scala.inline
-  def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def upward: upward = "upward".asInstanceOf[upward]
-  @scala.inline
-  def `upward-optional`: `upward-optional` = "upward-optional".asInstanceOf[`upward-optional`]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def void: void = "void".asInstanceOf[void]
 }
-

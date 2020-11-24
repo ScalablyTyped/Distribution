@@ -11,8 +11,8 @@ The auto-play feature detection in HTMLMediaElement (`<audio>` or `<video>`).
 | Full name          | can-autoplay |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 321495 |
+| # dependents       | 7 |
+| # downloads        | 458490 |
 | # stars            | 1 |
 
 ## Links

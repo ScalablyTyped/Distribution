@@ -10,9 +10,9 @@ Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which l
 | ------------------ | :-------------: |
 | Full name          | screenfull |
 | Keywords           | browser, fullscreen |
-| # releases         | 8 |
-| # dependents       | 325 |
-| # downloads        | 4783909 |
+| # releases         | 9 |
+| # dependents       | 501 |
+| # downloads        | 11021324 |
 | # stars            | 12 |
 
 ## Links

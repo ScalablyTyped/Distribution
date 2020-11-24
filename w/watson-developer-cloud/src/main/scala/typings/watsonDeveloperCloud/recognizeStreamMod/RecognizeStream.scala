@@ -3,7 +3,7 @@ package typings.watsonDeveloperCloud.recognizeStreamMod
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * pipe()-able Node.js Readable/Writeable stream - accepts binary audio and emits text in its `data` events.
@@ -17,15 +17,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RecognizeStream extends Duplex {
-  var _writableState: js.Any = js.native
-  var authenticated: js.Any = js.native
-  var finished: js.Any = js.native
-  var initialized: js.Any = js.native
-  var listening: js.Any = js.native
-  var options: js.Any = js.native
-  var socket: js.Any = js.native
+  
   def _read(): Unit = js.native
+  
+  var _writableState: js.Any = js.native
+  
   def _write(chunk: js.Any, encoding: js.Any, callback: js.Any): Unit = js.native
+  
   /**
     * Flow control - don't ask for more data until we've finished what we have
     *
@@ -43,7 +41,13 @@ trait RecognizeStream extends Duplex {
     * @param {Function} next
     */
   def afterSend(next: js.Any): Unit = js.native
+  
+  var authenticated: js.Any = js.native
+  
   def finish(): Unit = js.native
+  
+  var finished: js.Any = js.native
+  
   /**
     * Returns a Promise that resolves with Watson Transaction ID from the X-Transaction-ID header
     *
@@ -52,9 +56,19 @@ trait RecognizeStream extends Duplex {
     * @return Promise<String>
     */
   def getTransactionId(): js.Promise[String] = js.native
+  
   def initialize(): Unit = js.native
+  
+  var initialized: js.Any = js.native
+  
+  var listening: js.Any = js.native
+  
+  var options: js.Any = js.native
+  
   def sendData(data: js.Any): Unit = js.native
+  
   def sendJSON(msg: js.Any): Unit = js.native
+  
   /**
     * This function retrieves an IAM access token and stores it in the
     * request header before calling the callback function, which will
@@ -65,10 +79,12 @@ trait RecognizeStream extends Duplex {
     * @param {Function} callback
     */
   def setAuthorizationHeaderToken(callback: js.Any): Unit = js.native
+  
+  var socket: js.Any = js.native
+  
   /**
     * Prevents any more audio from being sent over the WebSocket and gracefully closes the connection.
     * Additional data may still be emitted up until the `end` event is triggered.
     */
   def stop(): Unit = js.native
 }
-

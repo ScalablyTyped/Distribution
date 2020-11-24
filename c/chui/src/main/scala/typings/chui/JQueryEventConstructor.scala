@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface used to construct jQuery events (with $.Event). It is
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait JQueryEventConstructor
   extends Instantiable1[/* name */ String, JQueryEventObject]
      with Instantiable2[/* name */ String, /* eventProperties */ js.Any, JQueryEventObject] {
+  
   def apply(name: String): JQueryEventObject = js.native
   def apply(name: String, eventProperties: js.Any): JQueryEventObject = js.native
 }
-

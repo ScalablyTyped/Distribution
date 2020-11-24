@@ -3,20 +3,23 @@ package typings.iobroker.mod.global.ioBroker
 import typings.iobroker.anon.Execute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defined the complete set of access rights a user has */
 @js.native
 trait PermissionSet extends ObjectPermissions {
+  
   /** The name of the groups this ACL was merged from */
   var groups: js.Array[String] = js.native
+  
   /** The access rights for certain commands */
   var other: Execute = js.native
+  
   /** The name of the user this ACL is for */
   var user: String = js.native
 }
-
 object PermissionSet {
+  
   @scala.inline
   def apply(
     file: ObjectOperationPermissions,
@@ -30,26 +33,32 @@ object PermissionSet {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionSet]
   }
+  
   @scala.inline
   implicit class PermissionSetOps[Self <: PermissionSet] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    
     @scala.inline
     def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOther(value: Execute): Self = this.set("other", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
   }
-  
 }
-

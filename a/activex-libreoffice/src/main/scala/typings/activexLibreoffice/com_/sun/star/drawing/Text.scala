@@ -24,15 +24,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This abstract service specifies the general characteristics of an optional text inside a {@link Shape} . */
 @js.native
 trait Text
   extends TextProperties
      with XText
-
 object Text {
+  
   @scala.inline
   def apply(
     BorderDistance: Double,
@@ -224,4 +224,3 @@ object Text {
     __obj.asInstanceOf[Text]
   }
 }
-

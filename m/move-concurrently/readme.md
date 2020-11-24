@@ -11,8 +11,8 @@ Promises of moves of files or directories with rename, falling back to recursive
 | Full name          | move-concurrently |
 | Keywords           | move |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 249227536 |
+| # dependents       | 51 |
+| # downloads        | 379304968 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ Japan postal code library
 | ------------------ | :-------------: |
 | Full name          | japan-postal-code |
 | Keywords           | zip, postal code |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 64230 |
+| # downloads        | 95012 |
 | # stars            | 1 |
 
 ## Links

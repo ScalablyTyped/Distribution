@@ -3,16 +3,12 @@ package typings.sdbm
 import typings.sdbm.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sdbm", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function sdbm(string: string): number;
-  // export = sdbm;
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	[SDBM](http://www.cse.yorku.ca/~oz/hash.html#sdbm) non-cryptographic hash function.
   	@returns The hash as a positive integer.
@@ -24,6 +20,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(string: String): Double = js.native
+  
   /**
   	[SDBM](http://www.cse.yorku.ca/~oz/hash.html#sdbm) non-cryptographic hash function.
   	@returns The hash as a positive integer.
@@ -38,5 +35,9 @@ object mod extends js.Object {
   // declare function sdbm(string: string): number;
   // export = sdbm;
   def default(string: String): Double = js.native
+  // TODO: remove this in the next major version, refactor the whole definition to:
+  // declare function sdbm(string: string): number;
+  // export = sdbm;
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

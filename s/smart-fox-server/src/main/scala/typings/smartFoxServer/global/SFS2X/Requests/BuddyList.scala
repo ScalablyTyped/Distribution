@@ -4,7 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.SFSBuddy
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region BuddyList
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SFS2X.Requests.BuddyList")
 @js.native
 object BuddyList extends js.Object {
+  
   @js.native
   class AddBuddyRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.BuddyList.AddBuddyRequest {
@@ -82,6 +83,4 @@ object BuddyList extends js.Object {
       */
     def this(buddyVariables: js.Array[SFSBuddyVariable]) = this()
   }
-  
 }
-

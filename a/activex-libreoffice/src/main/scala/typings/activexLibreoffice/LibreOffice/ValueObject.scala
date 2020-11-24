@@ -41,12 +41,14 @@ import typings.activexLibreoffice.activexLibreofficeStrings.string
 import typings.activexLibreoffice.activexLibreofficeStrings.unsigned
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValueObject extends js.Object {
+  
   /** Returns the value contained in the object, when the Value Object was used as an `inout` or `out` parameter */
   def Get(): js.Any = js.native
+  
   /** Initialize the object as an `inout` parameter */
   @JSName("InitInOutParam")
   def InitInOutParam_any(`type`: `[][]any`, value: js.Any): Unit = js.native
@@ -126,8 +128,10 @@ trait ValueObject extends js.Object {
   def InitInOutParam_unsignedshort(`type`: `[]unsigned short`, value: js.Any): Unit = js.native
   @JSName("InitInOutParam")
   def InitInOutParam_unsignedshort(`type`: `unsigned short`, value: js.Any): Unit = js.native
+  
   /** Initialize the object as an `out` parameter */
   def InitOutParam(): Unit = js.native
+  
   /** Assigns a type and a value */
   @JSName("Set")
   def Set_any(`type`: `[][]any`, value: js.Any): Unit = js.native
@@ -208,4 +212,3 @@ trait ValueObject extends js.Object {
   @JSName("Set")
   def Set_unsignedshort(`type`: `unsigned short`, value: js.Any): Unit = js.native
 }
-

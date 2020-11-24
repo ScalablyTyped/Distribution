@@ -12,7 +12,7 @@ A regular expression that only matches a valid Github username
 | Keywords           | github, name, username, login, account, validate, validation, match, regex, regexp |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 8088 |
+| # downloads        | 15104 |
 | # stars            | 0 |
 
 ## Links

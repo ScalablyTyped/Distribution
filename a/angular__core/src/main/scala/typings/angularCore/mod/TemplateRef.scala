@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "TemplateRef")
 @js.native
 abstract class TemplateRef[C] () extends js.Object {
+  
   /**
     * Instantiates an embedded view based on this template,
     * and attaches it to the view container.
@@ -15,6 +16,7 @@ abstract class TemplateRef[C] () extends js.Object {
     * @returns The new embedded view object.
     */
   def createEmbeddedView(context: C): EmbeddedViewRef[C] = js.native
+  
   /**
     * The anchor element in the parent view for this embedded view.
     *
@@ -28,4 +30,3 @@ abstract class TemplateRef[C] () extends js.Object {
     */
   def elementRef: ElementRef[_] = js.native
 }
-

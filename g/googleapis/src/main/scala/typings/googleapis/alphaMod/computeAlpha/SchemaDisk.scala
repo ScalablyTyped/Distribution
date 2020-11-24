@@ -3,7 +3,7 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Disk resource. (== resource_for beta.disks ==) (== resource_for v1.disks
@@ -11,15 +11,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaDisk extends js.Object {
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * Encrypts the disk using a customer-supplied encryption key.  After you
     * encrypt a disk with a customer-supplied key, you must provide the same
@@ -31,21 +34,25 @@ trait SchemaDisk extends js.Object {
     * provide a key to use the disk later.
     */
   var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * A list of features to enable on the guest operating system. Applicable
     * only for bootable images. Read  Enabling guest operating system features
     * to see a list of available options.
     */
   var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#disk for disks.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * A fingerprint for the labels being applied to this disk, which is
     * essentially a hash of the labels set used for optimistic locking. The
@@ -56,33 +63,40 @@ trait SchemaDisk extends js.Object {
     * the latest fingerprint, make a get() request to retrieve a disk.
     */
   var labelFingerprint: js.UndefOr[String] = js.native
+  
   /**
     * Labels to apply to this disk. These can be later modified by the
     * setLabels method.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * [Output Only] Last attach timestamp in RFC3339 text format.
     */
   var lastAttachTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Last detach timestamp in RFC3339 text format.
     */
   var lastDetachTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * Integer license codes indicating which licenses are attached to this
     * disk.
     */
   var licenseCodes: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * A list of publicly visible licenses. Reserved for Google&#39;s use.
     */
   var licenses: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Indicates whether or not the disk can be read/write attached to more than
     * one instance.
     */
   var multiWriter: js.UndefOr[Boolean] = js.native
+  
   /**
     * Name of the resource. Provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -93,10 +107,12 @@ trait SchemaDisk extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Internal use only.
     */
   var options: js.UndefOr[String] = js.native
+  
   /**
     * Physical block size of the persistent disk, in bytes. If not present in a
     * request, a default value is used. Currently supported sizes are 4096 and
@@ -105,25 +121,30 @@ trait SchemaDisk extends js.Object {
     * caller&#39;s project.
     */
   var physicalBlockSizeBytes: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] URL of the region where the disk resides. Only applicable
     * for regional resources. You must specify this field as part of the HTTP
     * request URL. It is not settable as a field in the request body.
     */
   var region: js.UndefOr[String] = js.native
+  
   /**
     * URLs of the zones where the disk should be replicated to. Only applicable
     * for regional resources.
     */
   var replicaZones: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Resource policies applied to this disk for automatic snapshot creations.
     */
   var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * [Output Only] Server-defined fully-qualified URL for this resource.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * Size of the persistent disk, specified in GB. You can specify this field
     * when creating a persistent disk using the sourceImage or sourceSnapshot
@@ -133,6 +154,7 @@ trait SchemaDisk extends js.Object {
     * size of the snapshot. Acceptable values are 1 to 65536, inclusive.
     */
   var sizeGb: js.UndefOr[String] = js.native
+  
   /**
     * The source disk used to create this disk. You can provide this as a
     * partial or full URL to the resource. For example, the following are valid
@@ -141,6 +163,7 @@ trait SchemaDisk extends js.Object {
     * - projects/project/zones/zone/disks/disk  - zones/zone/disks/disk
     */
   var sourceDisk: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The unique ID of the disk used to create this disk. This
     * value identifies the exact disk that was used to create this persistent
@@ -149,6 +172,7 @@ trait SchemaDisk extends js.Object {
     * would identify the exact version of the disk that was used.
     */
   var sourceDiskId: js.UndefOr[String] = js.native
+  
   /**
     * The source image used to create this disk. If the source image is
     * deleted, this field will not be set.  To create a disk with one of the
@@ -164,11 +188,13 @@ trait SchemaDisk extends js.Object {
     * family/family-name: global/images/family/my-image-family
     */
   var sourceImage: js.UndefOr[String] = js.native
+  
   /**
     * The customer-supplied encryption key of the source image. Required if the
     * source image is protected by a customer-supplied encryption key.
     */
   var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The ID value of the image used to create this disk. This
     * value identifies the exact image that was used to create this persistent
@@ -177,6 +203,7 @@ trait SchemaDisk extends js.Object {
     * would identify the exact version of the image that was used.
     */
   var sourceImageId: js.UndefOr[String] = js.native
+  
   /**
     * The source snapshot used to create this disk. You can provide this as a
     * partial or full URL to the resource. For example, the following are valid
@@ -185,11 +212,13 @@ trait SchemaDisk extends js.Object {
     * - projects/project/global/snapshots/snapshot  - global/snapshots/snapshot
     */
   var sourceSnapshot: js.UndefOr[String] = js.native
+  
   /**
     * The customer-supplied encryption key of the source snapshot. Required if
     * the source snapshot is protected by a customer-supplied encryption key.
     */
   var sourceSnapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * [Output Only] The unique ID of the snapshot used to create this disk.
     * This value identifies the exact snapshot that was used to create this
@@ -199,25 +228,30 @@ trait SchemaDisk extends js.Object {
     * was used.
     */
   var sourceSnapshotId: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The status of disk creation.
     */
   var status: js.UndefOr[String] = js.native
+  
   /**
     * [Deprecated] Storage type of the persistent disk.
     */
   var storageType: js.UndefOr[String] = js.native
+  
   /**
     * URL of the disk type resource describing which disk type to use to create
     * the disk. Provide this when creating the disk. For example:
     * project/zones/zone/diskTypes/pd-standard or pd-ssd
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Links to the users of the disk (attached instances) in
     * form: project/zones/zone/instances/instance
     */
   var users: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * [Output Only] URL of the zone where the disk resides. You must specify
     * this field as part of the HTTP request URL. It is not settable as a field
@@ -225,173 +259,249 @@ trait SchemaDisk extends js.Object {
     */
   var zone: js.UndefOr[String] = js.native
 }
-
 object SchemaDisk {
+  
   @scala.inline
   def apply(): SchemaDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisk]
   }
+  
   @scala.inline
   implicit class SchemaDiskOps[Self <: SchemaDisk] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("diskEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDiskEncryptionKey: Self = this.set("diskEncryptionKey", js.undefined)
+    
     @scala.inline
     def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    
     @scala.inline
     def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setLastAttachTimestamp(value: String): Self = this.set("lastAttachTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLastAttachTimestamp: Self = this.set("lastAttachTimestamp", js.undefined)
+    
     @scala.inline
     def setLastDetachTimestamp(value: String): Self = this.set("lastDetachTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLastDetachTimestamp: Self = this.set("lastDetachTimestamp", js.undefined)
+    
     @scala.inline
     def setLicenseCodesVarargs(value: String*): Self = this.set("licenseCodes", js.Array(value :_*))
+    
     @scala.inline
     def setLicenseCodes(value: js.Array[String]): Self = this.set("licenseCodes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenseCodes: Self = this.set("licenseCodes", js.undefined)
+    
     @scala.inline
     def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    
     @scala.inline
     def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenses: Self = this.set("licenses", js.undefined)
+    
     @scala.inline
     def setMultiWriter(value: Boolean): Self = this.set("multiWriter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMultiWriter: Self = this.set("multiWriter", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setOptions(value: String): Self = this.set("options", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOptions: Self = this.set("options", js.undefined)
+    
     @scala.inline
     def setPhysicalBlockSizeBytes(value: String): Self = this.set("physicalBlockSizeBytes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePhysicalBlockSizeBytes: Self = this.set("physicalBlockSizeBytes", js.undefined)
+    
     @scala.inline
     def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegion: Self = this.set("region", js.undefined)
+    
     @scala.inline
     def setReplicaZonesVarargs(value: String*): Self = this.set("replicaZones", js.Array(value :_*))
+    
     @scala.inline
     def setReplicaZones(value: js.Array[String]): Self = this.set("replicaZones", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReplicaZones: Self = this.set("replicaZones", js.undefined)
+    
     @scala.inline
     def setResourcePoliciesVarargs(value: String*): Self = this.set("resourcePolicies", js.Array(value :_*))
+    
     @scala.inline
     def setResourcePolicies(value: js.Array[String]): Self = this.set("resourcePolicies", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResourcePolicies: Self = this.set("resourcePolicies", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setSizeGb(value: String): Self = this.set("sizeGb", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSizeGb: Self = this.set("sizeGb", js.undefined)
+    
     @scala.inline
     def setSourceDisk(value: String): Self = this.set("sourceDisk", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDisk: Self = this.set("sourceDisk", js.undefined)
+    
     @scala.inline
     def setSourceDiskId(value: String): Self = this.set("sourceDiskId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceDiskId: Self = this.set("sourceDiskId", js.undefined)
+    
     @scala.inline
     def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    
     @scala.inline
     def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceImageId(value: String): Self = this.set("sourceImageId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceImageId: Self = this.set("sourceImageId", js.undefined)
+    
     @scala.inline
     def setSourceSnapshot(value: String): Self = this.set("sourceSnapshot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceSnapshot: Self = this.set("sourceSnapshot", js.undefined)
+    
     @scala.inline
     def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceSnapshotEncryptionKey: Self = this.set("sourceSnapshotEncryptionKey", js.undefined)
+    
     @scala.inline
     def setSourceSnapshotId(value: String): Self = this.set("sourceSnapshotId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceSnapshotId: Self = this.set("sourceSnapshotId", js.undefined)
+    
     @scala.inline
     def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatus: Self = this.set("status", js.undefined)
+    
     @scala.inline
     def setStorageType(value: String): Self = this.set("storageType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStorageType: Self = this.set("storageType", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setUsersVarargs(value: String*): Self = this.set("users", js.Array(value :_*))
+    
     @scala.inline
     def setUsers(value: js.Array[String]): Self = this.set("users", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUsers: Self = this.set("users", js.undefined)
+    
     @scala.inline
     def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZone: Self = this.set("zone", js.undefined)
   }
-  
 }
-

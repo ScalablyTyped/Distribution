@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specify how the text content is attached to its surrounding text. */
 /* Rewritten from type alias, can be one of: 
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait TextContentAnchorType extends js.Object
-
 object TextContentAnchorType {
+  
   /**
     * The object is anchored instead of a character.
     *
@@ -27,6 +27,7 @@ object TextContentAnchorType {
     */
   @scala.inline
   def AS_CHARACTER: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * The object is anchored to a character.
     *
@@ -38,9 +39,11 @@ object TextContentAnchorType {
     */
   @scala.inline
   def AT_CHARACTER: `4` = 4.asInstanceOf[`4`]
+  
   /** The object is anchored to a text frame. */
   @scala.inline
   def AT_FRAME: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * The object is anchored to the page.
     *
@@ -48,8 +51,8 @@ object TextContentAnchorType {
     */
   @scala.inline
   def AT_PAGE: `2` = 2.asInstanceOf[`2`]
+  
   /** The anchor of the object is set at the top left position of the paragraph. */
   @scala.inline
   def AT_PARAGRAPH: `0` = 0.asInstanceOf[`0`]
 }
-

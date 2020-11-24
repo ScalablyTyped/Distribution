@@ -1,24 +1,20 @@
 organization := "org.scalablytyped"
 name := "jest-environment-puppeteer"
-version := "4.3-dt-20200624Z-4197d7"
+version := "4.4-dt-20200928Z-255fdc"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "callsites" % "3.1.0-feea14",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-73ff2c",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-3ad062",
-  "org.scalablytyped" %%% "jest-mock" % "24.9.0-039104",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-945758",
-  "org.scalablytyped" %%% "jest__environment" % "26.2.0-b36189",
-  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-c63ef4",
-  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-54be48",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-f4ebe1",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-dd389b",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "puppeteer" % "3.0-dt-20200627Z-8d3a56",
-  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20200515Z-f013d4",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-d67580",
+  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20200515Z-d99f6d",
+  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20200720Z-d239e7",
+  "org.scalablytyped" %%% "jest-environment-node" % "26.6.2-260f9b",
+  "org.scalablytyped" %%% "jest-mock" % "24.9.0-cad9fb",
+  "org.scalablytyped" %%% "jest__environment" % "26.6.2-bde1db",
+  "org.scalablytyped" %%% "jest__types" % "26.6.2-7da828",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "puppeteer" % "5.4-dt-20201103Z-7b32da",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

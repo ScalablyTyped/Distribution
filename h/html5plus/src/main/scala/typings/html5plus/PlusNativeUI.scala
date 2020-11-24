@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * nativeUI管理系统原生界面，可用于弹出系统原生提示对话框窗口、时间日期选择对话框、等待对话框等。
@@ -11,60 +11,70 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusNativeUI extends js.Object {
+  
   /**
     * JSON对象，原生选择按钮框上按钮的样式参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var ActionButtonStyles: js.UndefOr[PlusNativeUIActionButtonStyles] = js.native
+  
   /**
     * JSON对象，原生选择按钮框的样式参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var ActionSheetStyles: js.UndefOr[PlusNativeUIActionSheetStyles] = js.native
+  
   /**
     * 确认对话框的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var ConfirmOptions: js.UndefOr[PlusNativeUIConfirmOptions] = js.native
+  
   /**
     * 系统原生界面基类对象
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var NativeUIObj: js.UndefOr[PlusNativeUINativeUIObj] = js.native
+  
   /**
     * 日期选择对话框的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var PickDateOption: js.UndefOr[PlusNativeUIPickDateOption] = js.native
+  
   /**
     * JSON对象，时间选择对话框的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var PickTimeOption: js.UndefOr[PlusNativeUIPickTimeOption] = js.native
+  
   /**
     * JSON对象，图片预览的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var PreviewImageOptions: js.UndefOr[PlusNativeUIPreviewImageOptions] = js.native
+  
   /**
     * JSON对象，系统提示消息框要设置的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var ToastOptions: js.UndefOr[PlusNativeUIToastOptions] = js.native
+  
   /**
     * JSON对象，原生等待对话框上loading图标自定义样式
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var WaitingLoadingOptions: js.UndefOr[PlusNativeUIWaitingLoadingOptions] = js.native
+  
   /**
     * 系统等待对话框对象
     * 从NativeUIObj对象继承而来，通过plus.nativeUI.showWaiting方法创建时返回。
@@ -73,12 +83,14 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var WaitingObj: js.UndefOr[PlusNativeUIWaitingObj] = js.native
+  
   /**
     * JSON对象，原生等待对话框的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var WaitingOptions: js.UndefOr[PlusNativeUIWaitingOptions] = js.native
+  
   /**
     * 弹出系统选择按钮框
     * 从底部动画弹出系统样式选择按钮框，可设置选择框的标题、按钮文字等。
@@ -96,6 +108,7 @@ trait PlusNativeUI extends js.Object {
     actionsheetStyle: PlusNativeUIActionSheetStyles,
     actionsheetCallback: js.Function1[/* result */ js.Any, Unit]
   ): PlusNativeUINativeUIObj = js.native
+  
   /**
     * 弹出系统提示对话框
     * 创建并显示系统样式提示对话框，可设置提示对话框的标题、内容、按钮文字等。
@@ -158,6 +171,7 @@ trait PlusNativeUI extends js.Object {
     title: String,
     buttonCapture: String
   ): Unit = js.native
+  
   /**
     * 关闭自动消失的提示消息
     * 关闭已经显示的所有自动消失的提示框。
@@ -165,6 +179,7 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def closeToast(): Unit = js.native
+  
   /**
     * 关闭系统等待对话框
     * 关闭已经显示的所有系统样式等待对话框，触发Waiting对象的onclose事件。
@@ -172,6 +187,7 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def closeWaiting(): Unit = js.native
+  
   /**
     * 弹出系统确认对话框
     * 创建并显示系统样式确认对话框，可设置确认对话框的标题、内容、按钮数目及其文字。
@@ -247,6 +263,7 @@ trait PlusNativeUI extends js.Object {
     options: PlusNativeUIConfirmOptions,
     buttons: js.Array[_]
   ): Unit = js.native
+  
   /**
     * 弹出系统日期选择对话框
     * 创建并显示系统样式日期选择对话框，可进行日期的选择。
@@ -281,6 +298,7 @@ trait PlusNativeUI extends js.Object {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     options: PlusNativeUIPickDateOption
   ): Unit = js.native
+  
   /**
     * 弹出系统时间选择对话框
     * 创建并弹出系统样式时间选择对话框，可进行时间的选择。
@@ -315,6 +333,7 @@ trait PlusNativeUI extends js.Object {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     options: PlusNativeUIPickTimeOption
   ): Unit = js.native
+  
   /**
     * 预览图片
     * 创建并显示全屏图片预览界面，用户点击图片或返回键退出预览界面。
@@ -325,6 +344,7 @@ trait PlusNativeUI extends js.Object {
   def previewImage(urls: js.UndefOr[scala.Nothing], options: PlusNativeUIPreviewImageOptions): Unit = js.native
   def previewImage(urls: js.Array[_]): Unit = js.native
   def previewImage(urls: js.Array[_], options: PlusNativeUIPreviewImageOptions): Unit = js.native
+  
   /**
     * 弹出系统输入对话框
     * 创建并显示系统样式输入对话框，可设置输入对话框的标题、内容、提示输入信息、按钮数目及其文字。
@@ -494,6 +514,7 @@ trait PlusNativeUI extends js.Object {
     tip: String,
     buttons: js.Array[_]
   ): Unit = js.native
+  
   /**
     * 显示系统等待对话框
     * 创建并显示系统样式等待对话框，并返回等待对话框对象Waiting，显示后需调用其close方法进行关闭。
@@ -504,6 +525,7 @@ trait PlusNativeUI extends js.Object {
   def showWaiting(title: js.UndefOr[scala.Nothing], options: PlusNativeUIWaitingOptions): PlusNativeUIWaitingObj = js.native
   def showWaiting(title: String): PlusNativeUIWaitingObj = js.native
   def showWaiting(title: String, options: PlusNativeUIWaitingOptions): PlusNativeUIWaitingObj = js.native
+  
   /**
     * 显示自动消失的提示消息
     * 创建并显示系统样式提示消息，弹出的提示消息为非阻塞模式，显示指定时间后自动消失。
@@ -516,4 +538,3 @@ trait PlusNativeUI extends js.Object {
   def toast(message: String): Unit = js.native
   def toast(message: String, options: PlusNativeUIToastOptions): Unit = js.native
 }
-

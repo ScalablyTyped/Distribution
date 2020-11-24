@@ -5,17 +5,15 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.teechart.Tee.ICustomBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Tee.Volume")
 @js.native
 class Volume () extends ICustomBar {
   def this(values: js.Array[Double]) = this()
 }
-
 @JSGlobal("Tee.Volume")
 @js.native
 object Volume
   extends Instantiable0[ICustomBar]
      with Instantiable1[/* values */ js.Array[Double], ICustomBar]
-

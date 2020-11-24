@@ -3,16 +3,17 @@ package typings.atom.mod
 import typings.node.childProcessMod.ChildProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "BufferedProcess")
 @js.native
 class BufferedProcess protected () extends js.Object {
   def this(options: ProcessOptions) = this()
-  val process: js.UndefOr[ChildProcess] = js.native
+  
   // Helper Methods
   /** Terminate the process. */
   def kill(): Unit = js.native
+  
   // Event Subscription
   /**
     *  Will call your callback when an error will be raised by the process. Usually
@@ -21,7 +22,9 @@ class BufferedProcess protected () extends js.Object {
     *  have handled this error.
     */
   def onWillThrowError(callback: js.Function1[/* errorObject */ HandleableErrorEvent, Unit]): Disposable = js.native
+  
+  val process: js.UndefOr[ChildProcess] = js.native
+  
   /** Runs the process. */
   def start(): Unit = js.native
 }
-

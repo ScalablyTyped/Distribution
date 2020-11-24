@@ -2,14 +2,14 @@ package typings.sharepoint.SP.WorkflowServices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WorkflowStatus extends js.Object
-
 @JSGlobal("SP.WorkflowServices.WorkflowStatus")
 @js.native
 object WorkflowStatus extends js.Object {
+  
   @js.native
   sealed trait canceled extends WorkflowStatus
   
@@ -36,6 +36,4 @@ object WorkflowStatus extends js.Object {
   
   @js.native
   sealed trait terminated extends WorkflowStatus
-  
 }
-

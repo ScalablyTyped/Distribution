@@ -7,15 +7,11 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Get extends js.Object {
-  /**
-    * Lists all the emojis available to use on GitHub.
-    */
-  @JSName("get")
-  var get_Original: `120` = js.native
+  
   /**
     * Lists all the emojis available to use on GitHub.
     */
@@ -30,5 +26,9 @@ trait Get extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /emojis']['response'] */ js.Any
   ] = js.native
+  /**
+    * Lists all the emojis available to use on GitHub.
+    */
+  @JSName("get")
+  var get_Original: `123` = js.native
 }
-

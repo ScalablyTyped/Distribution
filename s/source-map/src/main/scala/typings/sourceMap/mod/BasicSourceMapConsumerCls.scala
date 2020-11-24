@@ -3,7 +3,7 @@ package typings.sourceMap.mod
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("source-map", "BasicSourceMapConsumer")
 @js.native
@@ -11,4 +11,3 @@ class BasicSourceMapConsumerCls protected () extends Promise[BasicSourceMapConsu
   def this(rawSourceMap: String) = this()
   def this(rawSourceMap: RawSourceMap) = this()
 }
-

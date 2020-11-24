@@ -11,8 +11,8 @@ Create a hashed file name
 | Full name          | hash-file |
 | Keywords           | file, hash, name, crypto |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 83177 |
+| # dependents       | 14 |
+| # downloads        | 118572 |
 | # stars            | 2 |
 
 ## Links

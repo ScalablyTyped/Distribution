@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("enzyme", "ReactWrapper")
 @js.native
@@ -25,12 +25,14 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     root: ReactWrapper[_, _, Component[js.Object, js.Object, _]],
     options: MountRendererProps
   ) = this()
+  
   /**
     * Returns a new wrapper with child at the specified index.
     */
   def childAt(index: Double): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   @JSName("childAt")
   def childAt_P2S2[P2, S2](index: Double): ReactWrapper[P2, S2, Component[js.Object, js.Object, _]] = js.native
+  
   def children(): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   def children(props: EnzymePropSelector): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   def children(selector: String): ReactWrapper[HTMLAttributes, _, Component[js.Object, js.Object, _]] = js.native
@@ -40,6 +42,7 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * can be provided and it will filter the children by this selector.
     */
   def children[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, _]] = js.native
+  
   def closest(props: EnzymePropSelector): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   def closest(selector: String): ReactWrapper[HTMLAttributes, _, Component[js.Object, js.Object, _]] = js.native
   def closest[P2](component: ComponentType[P2]): ReactWrapper[P2, _, Component[js.Object, js.Object, _]] = js.native
@@ -50,6 +53,7 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * Note: can only be called on a wrapper of a single node.
     */
   def closest[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, _]] = js.native
+  
   /**
     * Detaches the react tree from the DOM. Runs ReactDOM.unmountComponentAtNode() under the hood.
     *
@@ -61,6 +65,7 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * It is your responsibility to clean up after yourself at the end of the test if you do decide to use it, though.
     */
   def detach(): Unit = js.native
+  
   def filter(props: String): ReactWrapper[P, S, Component[js.Object, js.Object, _]] = js.native
   def filter(props: EnzymePropSelector): ReactWrapper[P, S, Component[js.Object, js.Object, _]] = js.native
   def filter[P2](component: ComponentType[P2]): ReactWrapper[P2, _, Component[js.Object, js.Object, _]] = js.native
@@ -69,6 +74,7 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * @param selector The selector to match.
     */
   def filter[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, _]] = js.native
+  
   def find(props: EnzymePropSelector): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   def find(selector: String): ReactWrapper[HTMLAttributes, _, Component[js.Object, js.Object, _]] = js.native
   def find[P2](component: ComponentType[P2]): ReactWrapper[P2, _, Component[js.Object, js.Object, _]] = js.native
@@ -77,12 +83,14 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * @param selector The selector to match.
     */
   def find[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, _]] = js.native
+  
   /**
     * Finds every node in the render tree that returns true for the provided predicate function.
     */
   def findWhere(
     predicate: js.Function1[/* wrapper */ ReactWrapper[_, _, Component[js.Object, js.Object, _]], Boolean]
   ): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
+  
   @JSName("find")
   def find_props[C2 /* <: Component[js.Object, js.Object, _] */](
     componentClass: ComponentClass[
@@ -93,12 +101,14 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     /* import warning: importer.ImportType#apply Failed type conversion: C2['state'] */ js.Any, 
     C2
   ] = js.native
+  
   /**
     * If a wrappingComponent was passed in options,
     * this methods returns a ReactWrapper around the rendered wrappingComponent.
     * This ReactWrapper can be used to update the wrappingComponent's props and state
     */
   def getWrappingComponent(): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]] = js.native
+  
   /**
     * Strips out all the not host-nodes from the list of nodes
     *
@@ -106,11 +116,14 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * (actually rendered HTML elements) ignoring the React nodes.
     */
   def hostNodes(): ReactWrapper[HTMLAttributes, js.Object, Component[js.Object, js.Object, _]] = js.native
+  
   def mount(): this.type = js.native
+  
   /**
     * Returns a wrapper with the direct parent of the node in the current wrapper.
     */
   def parent(): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
+  
   def parents(): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   def parents(props: EnzymePropSelector): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   def parents(selector: String): ReactWrapper[HTMLAttributes, _, Component[js.Object, js.Object, _]] = js.native
@@ -122,6 +135,7 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * Note: can only be called on a wrapper of a single node.
     */
   def parents[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, _]] = js.native
+  
   /**
     * Returns a wrapper of the node that matches the provided reference name.
     *
@@ -130,6 +144,6 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
   def ref(refName: String): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
   @JSName("ref")
   def ref_P2S2[P2, S2](refName: String): ReactWrapper[P2, S2, Component[js.Object, js.Object, _]] = js.native
+  
   def unmount(): this.type = js.native
 }
-

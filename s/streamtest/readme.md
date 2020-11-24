@@ -10,9 +10,9 @@ Streams test library
 | ------------------ | :-------------: |
 | Full name          | streamtest |
 | Keywords           | test, streams, stream1, stream2 |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 150599 |
+| # downloads        | 191532 |
 | # stars            | 3 |
 
 ## Links

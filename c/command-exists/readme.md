@@ -10,9 +10,9 @@ check whether a command line command exists in the current environment
 | ------------------ | :-------------: |
 | Full name          | command-exists |
 | Keywords           | cli, command, exists |
-| # releases         | 7 |
-| # dependents       | 528 |
-| # downloads        | 21450585 |
+| # releases         | 3 |
+| # dependents       | 658 |
+| # downloads        | 43577681 |
 | # stars            | 6 |
 
 ## Links

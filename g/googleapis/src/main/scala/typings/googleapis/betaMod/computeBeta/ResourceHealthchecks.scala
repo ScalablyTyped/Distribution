@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Healthchecks")
 @js.native
 class ResourceHealthchecks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.healthChecks.delete
     * @desc Deletes the specified HealthCheck resource.
@@ -99,6 +101,7 @@ class ResourceHealthchecks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.healthChecks.get
     * @desc Returns the specified HealthCheck resource. Gets a list of
@@ -185,6 +188,7 @@ class ResourceHealthchecks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHealthCheck]
   ): Unit = js.native
+  
   /**
     * compute.healthChecks.insert
     * @desc Creates a HealthCheck resource in the specified project using the
@@ -273,6 +277,7 @@ class ResourceHealthchecks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.healthChecks.list
     * @desc Retrieves the list of HealthCheck resources available to the
@@ -372,6 +377,7 @@ class ResourceHealthchecks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHealthCheckList]
   ): Unit = js.native
+  
   /**
     * compute.healthChecks.patch
     * @desc Updates a HealthCheck resource in the specified project using the
@@ -467,6 +473,7 @@ class ResourceHealthchecks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.healthChecks.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -558,6 +565,7 @@ class ResourceHealthchecks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.healthChecks.update
     * @desc Updates a HealthCheck resource in the specified project using the
@@ -653,4 +661,3 @@ class ResourceHealthchecks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

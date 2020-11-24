@@ -3,7 +3,7 @@ package typings.falcor.mod
 import typings.falcorHttpDatasource.mod.XMlHttpSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A HttpDataSource object is a {@link DataSource} can be used to retrieve data from a remote JSONGraph object using the browser's XMLHttpRequest.
@@ -15,4 +15,3 @@ class HttpDataSource protected () extends XMlHttpSource {
   def this(jsonGraphUrl: String) = this()
   def this(jsonGraphUrl: String, config: js.Any) = this()
 }
-

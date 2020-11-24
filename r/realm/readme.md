@@ -1,7 +1,7 @@
 
 # Scala.js typings for realm
 
-Typings are for version 6.0.3
+Typings are for version 10.0.1
 
 ## Library description:
 Realm is a mobile database: an alternative to SQLite and key-value stores
@@ -10,9 +10,9 @@ Realm is a mobile database: an alternative to SQLite and key-value stores
 | ------------------ | :-------------: |
 | Full name          | realm |
 | Keywords           | database, db, react, react-native, persistence, localstorage, sqlite, asyncstorage, rocksdb, leveldb, realm |
-| # releases         | 128 |
-| # dependents       | 40 |
-| # downloads        | 601357 |
+| # releases         | 102 |
+| # dependents       | 45 |
+| # downloads        | 683897 |
 | # stars            | 13 |
 
 ## Links

@@ -11,8 +11,8 @@ Make a dump of the V8 heap for later inspection.
 | Full name          | heapdump |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 85 |
-| # downloads        | 4074676 |
+| # dependents       | 91 |
+| # downloads        | 3949526 |
 | # stars            | 41 |
 
 ## Links

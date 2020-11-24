@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postTypeSupportCheckMod.PostTypeSupportCheck.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor/components", "PostTypeSupportCheck")
 @js.native
 object PostTypeSupportCheck extends TopLevel[ComponentType[Props]]
-

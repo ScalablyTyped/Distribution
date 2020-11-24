@@ -11,8 +11,8 @@ This is a simple plugin that turns standard Bootstrap alerts into "Growl-like" n
 | Full name          | bootstrap-notify |
 | Keywords           | bootstrap, jquery, notify, notification, notifications, growl, message, notice |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 687056 |
+| # dependents       | 31 |
+| # downloads        | 919472 |
 | # stars            | 6 |
 
 ## Links

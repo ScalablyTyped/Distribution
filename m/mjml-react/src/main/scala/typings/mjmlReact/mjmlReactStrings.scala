@@ -3,9 +3,139 @@ package typings.mjmlReact
 import typings.mjmlReact.utilsMod.TextAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mjmlReactStrings {
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def dribbble: dribbble = "dribbble".asInstanceOf[dribbble]
+  
+  @scala.inline
+  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  
+  @scala.inline
+  def `facebook-noshare`: `facebook-noshare` = "facebook-noshare".asInstanceOf[`facebook-noshare`]
+  
+  @scala.inline
+  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @scala.inline
+  def `fixed-height`: `fixed-height` = "fixed-height".asInstanceOf[`fixed-height`]
+  
+  @scala.inline
+  def `fluid-height`: `fluid-height` = "fluid-height".asInstanceOf[`fluid-height`]
+  
+  @scala.inline
+  def github: github = "github".asInstanceOf[github]
+  
+  @scala.inline
+  def google: google = "google".asInstanceOf[google]
+  
+  @scala.inline
+  def `google-noshare`: `google-noshare` = "google-noshare".asInstanceOf[`google-noshare`]
+  
+  @scala.inline
+  def hamburger: hamburger = "hamburger".asInstanceOf[hamburger]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
+  
+  @scala.inline
+  def instagram: instagram = "instagram".asInstanceOf[instagram]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
+  
+  @scala.inline
+  def `linkedin-noshare`: `linkedin-noshare` = "linkedin-noshare".asInstanceOf[`linkedin-noshare`]
+  
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  
+  @scala.inline
+  def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
+  
+  @scala.inline
+  def `pinterest-noshare`: `pinterest-noshare` = "pinterest-noshare".asInstanceOf[`pinterest-noshare`]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @scala.inline
+  def skip: skip = "skip".asInstanceOf[skip]
+  
+  @scala.inline
+  def snapchat: snapchat = "snapchat".asInstanceOf[snapchat]
+  
+  @scala.inline
+  def soft: soft = "soft".asInstanceOf[soft]
+  
+  @scala.inline
+  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
+  
+  @scala.inline
+  def strict: strict = "strict".asInstanceOf[strict]
+  
+  @scala.inline
+  def tumblr: tumblr = "tumblr".asInstanceOf[tumblr]
+  
+  @scala.inline
+  def `tumblr-noshare`: `tumblr-noshare` = "tumblr-noshare".asInstanceOf[`tumblr-noshare`]
+  
+  @scala.inline
+  def twitter: twitter = "twitter".asInstanceOf[twitter]
+  
+  @scala.inline
+  def `twitter-noshare`: `twitter-noshare` = "twitter-noshare".asInstanceOf[`twitter-noshare`]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def vimeo: vimeo = "vimeo".asInstanceOf[vimeo]
+  
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
+  
+  @scala.inline
+  def web: web = "web".asInstanceOf[web]
+  
+  @scala.inline
+  def xing: xing = "xing".asInstanceOf[xing]
+  
+  @scala.inline
+  def `xing-noshare`: `xing-noshare` = "xing-noshare".asInstanceOf[`xing-noshare`]
+  
+  @scala.inline
+  def youtube: youtube = "youtube".asInstanceOf[youtube]
+  
   @js.native
   sealed trait auto extends js.Object
   
@@ -134,92 +264,4 @@ object mjmlReactStrings {
   
   @js.native
   sealed trait youtube extends js.Object
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def dribbble: dribbble = "dribbble".asInstanceOf[dribbble]
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
-  @scala.inline
-  def `facebook-noshare`: `facebook-noshare` = "facebook-noshare".asInstanceOf[`facebook-noshare`]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def `fixed-height`: `fixed-height` = "fixed-height".asInstanceOf[`fixed-height`]
-  @scala.inline
-  def `fluid-height`: `fluid-height` = "fluid-height".asInstanceOf[`fluid-height`]
-  @scala.inline
-  def github: github = "github".asInstanceOf[github]
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
-  @scala.inline
-  def `google-noshare`: `google-noshare` = "google-noshare".asInstanceOf[`google-noshare`]
-  @scala.inline
-  def hamburger: hamburger = "hamburger".asInstanceOf[hamburger]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def instagram: instagram = "instagram".asInstanceOf[instagram]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
-  @scala.inline
-  def `linkedin-noshare`: `linkedin-noshare` = "linkedin-noshare".asInstanceOf[`linkedin-noshare`]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
-  @scala.inline
-  def `pinterest-noshare`: `pinterest-noshare` = "pinterest-noshare".asInstanceOf[`pinterest-noshare`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def snapchat: snapchat = "snapchat".asInstanceOf[snapchat]
-  @scala.inline
-  def soft: soft = "soft".asInstanceOf[soft]
-  @scala.inline
-  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def tumblr: tumblr = "tumblr".asInstanceOf[tumblr]
-  @scala.inline
-  def `tumblr-noshare`: `tumblr-noshare` = "tumblr-noshare".asInstanceOf[`tumblr-noshare`]
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
-  @scala.inline
-  def `twitter-noshare`: `twitter-noshare` = "twitter-noshare".asInstanceOf[`twitter-noshare`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def vimeo: vimeo = "vimeo".asInstanceOf[vimeo]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
-  @scala.inline
-  def xing: xing = "xing".asInstanceOf[xing]
-  @scala.inline
-  def `xing-noshare`: `xing-noshare` = "xing-noshare".asInstanceOf[`xing-noshare`]
-  @scala.inline
-  def youtube: youtube = "youtube".asInstanceOf[youtube]
 }
-

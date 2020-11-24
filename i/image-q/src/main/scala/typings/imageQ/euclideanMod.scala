@@ -3,16 +3,21 @@ package typings.imageQ
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("image-q/dist/distance/euclidean", JSImport.Namespace)
 @js.native
 object euclideanMod extends js.Object {
+  
   @js.native
   class AbstractEuclidean () extends AbstractDistanceCalculator {
+    
     var _kA: Double = js.native
+    
     var _kB: Double = js.native
+    
     var _kG: Double = js.native
+    
     var _kR: Double = js.native
   }
   
@@ -24,6 +29,4 @@ object euclideanMod extends js.Object {
   
   @js.native
   class EuclideanRgbQuantWithAlpha () extends AbstractEuclidean
-  
 }
-

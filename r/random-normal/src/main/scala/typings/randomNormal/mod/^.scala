@@ -2,11 +2,12 @@ package typings.randomNormal.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("random-normal", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Return a [normally-distributed](https://en.wikipedia.org/wiki/Normal_distribution)
     * random number. By default this, starts with a mean of 0 and a standard
@@ -16,4 +17,3 @@ object ^ extends js.Object {
   def apply(): Double = js.native
   def apply(options: Options): Double = js.native
 }
-

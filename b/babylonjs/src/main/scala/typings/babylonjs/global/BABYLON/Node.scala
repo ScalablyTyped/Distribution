@@ -1,11 +1,10 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.BABYLON.Behavior
 import typings.babylonjs.BABYLON.NodeConstructor
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Node")
 @js.native
@@ -18,40 +17,19 @@ class Node protected ()
     */
   def this(name: String) = this()
   def this(name: String, scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
-  /**
-    * Attach a behavior
-    * @param behavior defines the behavior to attach
-    * @returns the current host
-    */
-  /* CompleteClass */
-  override def addBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
-  /**
-    * Gets a behavior using its name to search
-    * @param name defines the name to search
-    * @returns the behavior or null if not found
-    */
-  /* CompleteClass */
-  override def getBehaviorByName(name: String): Nullable[Behavior[typings.babylonjs.BABYLON.Node]] = js.native
-  /**
-    * Remove a behavior from the current object
-    * @param behavior defines the behavior to detach
-    * @returns the current host
-    */
-  /* CompleteClass */
-  override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.Node")
 @js.native
 object Node extends js.Object {
-  var _NodeConstructors: js.Any = js.native
+  
   /**
     * Add a new node constructor
     * @param type defines the type name of the node to construct
     * @param constructorFunc defines the constructor function
     */
   def AddNodeConstructor(`type`: String, constructorFunc: NodeConstructor): Unit = js.native
+  
   /**
     * Returns a node constructor based on type name
     * @param type defines the type name
@@ -62,6 +40,7 @@ object Node extends js.Object {
     */
   def Construct(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene): Nullable[js.Function0[this.type]] = js.native
   def Construct(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene, options: js.Any): Nullable[js.Function0[this.type]] = js.native
+  
   /**
     * Parse animation range data from a serialization object and store them into a given node
     * @param node defines where to store the animation ranges
@@ -69,7 +48,9 @@ object Node extends js.Object {
     * @param scene defines the hosting scene
     */
   def ParseAnimationRanges(node: typings.babylonjs.BABYLON.Node, parsedNode: js.Any, scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
+  
   /** @hidden */
   def _AnimationRangeFactory(name: String, from: Double, to: Double): typings.babylonjs.BABYLON.AnimationRange = js.native
+  
+  var _NodeConstructors: js.Any = js.native
 }
-

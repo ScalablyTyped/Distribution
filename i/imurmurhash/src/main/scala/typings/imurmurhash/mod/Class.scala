@@ -2,7 +2,7 @@ package typings.imurmurhash.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("imurmurhash", JSImport.Namespace)
 @js.native
@@ -18,4 +18,3 @@ class Class () extends MurmurHash3 {
   def this(text: js.UndefOr[scala.Nothing], seed: Double) = this()
   def this(text: String, seed: Double) = this()
 }
-

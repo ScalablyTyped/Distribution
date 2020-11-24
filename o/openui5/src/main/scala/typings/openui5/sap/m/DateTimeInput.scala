@@ -6,10 +6,11 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DateTimeInput extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.27.0
@@ -18,6 +19,7 @@ trait DateTimeInput extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): DateTimeInput = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): DateTimeInput = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>change</code> event of this
     * <code>sap.m.DateTimeInput</code>.When called, the context of the event handler (its
@@ -33,6 +35,7 @@ trait DateTimeInput extends Control {
     */
   def attachChange(oData: js.Any, fnFunction: js.Any): DateTimeInput = js.native
   def attachChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): DateTimeInput = js.native
+  
   /**
     * Binds property <code>value</code> to model data.See {@link sap.ui.base.ManagedObject#bindProperty
     * ManagedObject.bindProperty} for a detailed description of the possible properties of
@@ -41,6 +44,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindValue(oBindingInfo: js.Any): DateTimeInput = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>change</code> event of this
     * <code>sap.m.DateTimeInput</code>.The passed function and listener object must match the ones used
@@ -50,6 +54,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChange(fnFunction: js.Any, oListener: js.Any): DateTimeInput = js.native
+  
   /**
     * Fires event <code>change</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>value</code> of type <code>string</code>The string value of the control in
@@ -61,18 +66,21 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChange(mArguments: js.Any): DateTimeInput = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     * @since 1.27.0
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>dateValue</code>.This property as JavaScript Date Object can be
     * used to assign a new value which is independent from valueFormat.
     * @returns Value of property <code>dateValue</code>
     */
   def getDateValue(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>displayFormat</code>.Displays date value in this given format
     * in text field. Default value is taken from locale settings.If you use data-binding on value property
@@ -81,6 +89,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>displayFormat</code>
     */
   def getDisplayFormat(): String = js.native
+  
   /**
     * Gets current value of property <code>editable</code>.Defines whether the control can be modified by
     * the user or not.<b>Note:</b> A user can tab to non-editable control, highlight it, and copy the text
@@ -89,6 +98,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>editable</code>
     */
   def getEditable(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Indicates whether the user can interact with the
     * control or not.<b>Note:</b> Disabled controls cannot be focused and they are out of the
@@ -96,18 +106,21 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>name</code>.Defines the name of the control for the purposes of
     * form submission.
     * @returns Value of property <code>name</code>
     */
   def getName(): String = js.native
+  
   /**
     * Gets current value of property <code>placeholder</code>.Defines a short hint intended to aid the
     * user with data entry when the control has no value.
     * @returns Value of property <code>placeholder</code>
     */
   def getPlaceholder(): String = js.native
+  
   /**
     * Gets current value of property <code>showValueStateMessage</code>.Indicates whether the value state
     * message should be shown or not.Default value is <code>true</code>.
@@ -115,6 +128,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>showValueStateMessage</code>
     */
   def getShowValueStateMessage(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>textAlign</code>.Defines the horizontal alignment of the text
     * that is shown inside the input field.Default value is <code>Initial</code>.
@@ -122,6 +136,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>textAlign</code>
     */
   def getTextAlign(): TextAlign = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.Defines the text directionality of the
     * input field, e.g. <code>RTL</code>, <code>LTR</code>Default value is <code>Inherit</code>.
@@ -129,12 +144,14 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>type</code>.Type of DateTimeInput (e.g. Date, Time,
     * DateTime)Default value is <code>Date</code>.
     * @returns Value of property <code>type</code>
     */
   def getType(): DateTimeInputType = js.native
+  
   /**
     * Gets current value of property <code>value</code>.Defines the value of the control.The new value
     * must be in the format set by <code>valueFormat</code>.The "Now" literal can also be assigned as a
@@ -142,6 +159,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>value</code>
     */
   def getValue(): String = js.native
+  
   /**
     * Gets current value of property <code>valueFormat</code>.Given value property should match with
     * valueFormat to parse date. Default value is taken from locale settings.You can only set and get
@@ -150,6 +168,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>valueFormat</code>
     */
   def getValueFormat(): String = js.native
+  
   /**
     * Gets current value of property <code>valueState</code>.Visualizes the validation state of the
     * control, e.g. <code>Error</code>, <code>Warning</code>, <code>Success</code>.Default value is
@@ -157,6 +176,7 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>valueState</code>
     */
   def getValueState(): ValueState = js.native
+  
   /**
     * Gets current value of property <code>valueStateText</code>.Defines the text that appears in the
     * value state message pop-up. If this is not specified, a default text is shown from the resource
@@ -165,18 +185,21 @@ trait DateTimeInput extends Control {
     * @returns Value of property <code>valueStateText</code>
     */
   def getValueStateText(): String = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Defines the width of the control.Default value is
     * <code>100%</code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.27.0
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -186,6 +209,7 @@ trait DateTimeInput extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>dateValue</code>.This property as JavaScript Date Object can be
     * used to assign a new value which is independent from valueFormat.When called with a value of
@@ -194,6 +218,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDateValue(oDateValue: js.Any): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>displayFormat</code>.Displays date value in this given format in
     * text field. Default value is taken from locale settings.If you use data-binding on value property
@@ -205,6 +230,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDisplayFormat(sDisplayFormat: String): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>editable</code>.Defines whether the control can be modified by
     * the user or not.<b>Note:</b> A user can tab to non-editable control, highlight it, and copy the text
@@ -215,6 +241,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEditable(bEditable: Boolean): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Indicates whether the user can interact with the
     * control or not.<b>Note:</b> Disabled controls cannot be focused and they are out of the
@@ -224,6 +251,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>name</code>.Defines the name of the control for the purposes of
     * form submission.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -232,6 +260,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setName(sName: String): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>placeholder</code>.Defines a short hint intended to aid the user
     * with data entry when the control has no value.When called with a value of <code>null</code> or
@@ -240,6 +269,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPlaceholder(sPlaceholder: String): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>showValueStateMessage</code>.Indicates whether the value state
     * message should be shown or not.When called with a value of <code>null</code> or
@@ -250,6 +280,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowValueStateMessage(bShowValueStateMessage: Boolean): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>textAlign</code>.Defines the horizontal alignment of the text
     * that is shown inside the input field.When called with a value of <code>null</code> or
@@ -260,6 +291,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextAlign(sTextAlign: TextAlign): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.Defines the text directionality of the
     * input field, e.g. <code>RTL</code>, <code>LTR</code>When called with a value of <code>null</code> or
@@ -270,6 +302,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextDirection(sTextDirection: TextDirection): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>type</code>.Type of DateTimeInput (e.g. Date, Time,
     * DateTime)When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -278,6 +311,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setType(sType: DateTimeInputType): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>value</code>.Defines the value of the control.The new value must
     * be in the format set by <code>valueFormat</code>.The "Now" literal can also be assigned as a
@@ -287,6 +321,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValue(sValue: String): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>valueFormat</code>.Given value property should match with
     * valueFormat to parse date. Default value is taken from locale settings.You can only set and get
@@ -297,6 +332,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueFormat(sValueFormat: String): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>valueState</code>.Visualizes the validation state of the
     * control, e.g. <code>Error</code>, <code>Warning</code>, <code>Success</code>.When called with a
@@ -306,6 +342,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueState(sValueState: ValueState): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>valueStateText</code>.Defines the text that appears in the value
     * state message pop-up. If this is not specified, a default text is shown from the resource
@@ -316,6 +353,7 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueStateText(sValueStateText: String): DateTimeInput = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Defines the width of the control.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -324,10 +362,10 @@ trait DateTimeInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): DateTimeInput = js.native
+  
   /**
     * Unbinds property <code>value</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindValue(): DateTimeInput = js.native
 }
-

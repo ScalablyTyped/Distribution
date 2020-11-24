@@ -17,20 +17,13 @@ import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("http2", "Http2ServerResponse")
 @js.native
 class Http2ServerResponse protected () extends Stream {
   def this(stream: ServerHttp2Stream) = this()
-  val connection: Socket | TLSSocket = js.native
-  val finished: Boolean = js.native
-  val headersSent: Boolean = js.native
-  var sendDate: Boolean = js.native
-  val socket: Socket | TLSSocket = js.native
-  var statusCode: Double = js.native
-  var statusMessage: _empty = js.native
-  val stream: ServerHttp2Stream = js.native
+  
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -43,11 +36,16 @@ class Http2ServerResponse protected () extends Stream {
   def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def addTrailers(trailers: OutgoingHttpHeaders): Unit = js.native
+  
+  val connection: Socket | TLSSocket = js.native
+  
   def createPushResponse(
     headers: OutgoingHttpHeaders,
     callback: js.Function2[/* err */ Error | Null, /* res */ this.type, Unit]
   ): Unit = js.native
+  
   @JSName("emit")
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
@@ -60,6 +58,7 @@ class Http2ServerResponse protected () extends Stream {
   def emit_pipe(event: pipe, src: Readable): Boolean = js.native
   @JSName("emit")
   def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+  
   def end(): Unit = js.native
   def end(callback: js.Function0[Unit]): Unit = js.native
   def end(data: String): Unit = js.native
@@ -70,10 +69,19 @@ class Http2ServerResponse protected () extends Stream {
   def end(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array, encoding: BufferEncoding): Unit = js.native
   def end(data: Uint8Array, encoding: BufferEncoding, callback: js.Function0[Unit]): Unit = js.native
+  
+  val finished: Boolean = js.native
+  
   def getHeader(name: String): String = js.native
+  
   def getHeaderNames(): js.Array[String] = js.native
+  
   def getHeaders(): OutgoingHttpHeaders = js.native
+  
   def hasHeader(name: String): Boolean = js.native
+  
+  val headersSent: Boolean = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -86,6 +94,7 @@ class Http2ServerResponse protected () extends Stream {
   def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("on")
   def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -98,6 +107,7 @@ class Http2ServerResponse protected () extends Stream {
   def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("once")
   def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -110,6 +120,7 @@ class Http2ServerResponse protected () extends Stream {
   def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -122,12 +133,26 @@ class Http2ServerResponse protected () extends Stream {
   def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def removeHeader(name: String): Unit = js.native
+  
+  var sendDate: Boolean = js.native
+  
   def setHeader(name: String, value: String): Unit = js.native
   def setHeader(name: String, value: js.Array[String]): Unit = js.native
   def setHeader(name: String, value: Double): Unit = js.native
+  
   def setTimeout(msecs: Double): Unit = js.native
   def setTimeout(msecs: Double, callback: js.Function0[Unit]): Unit = js.native
+  
+  val socket: Socket | TLSSocket = js.native
+  
+  var statusCode: Double = js.native
+  
+  var statusMessage: _empty = js.native
+  
+  val stream: ServerHttp2Stream = js.native
+  
   def write(chunk: String): Boolean = js.native
   def write(chunk: String, callback: js.Function1[/* err */ Error, Unit]): Boolean = js.native
   def write(chunk: String, encoding: BufferEncoding): Boolean = js.native
@@ -136,10 +161,11 @@ class Http2ServerResponse protected () extends Stream {
   def write(chunk: Uint8Array, callback: js.Function1[/* err */ Error, Unit]): Boolean = js.native
   def write(chunk: Uint8Array, encoding: BufferEncoding): Boolean = js.native
   def write(chunk: Uint8Array, encoding: BufferEncoding, callback: js.Function1[/* err */ Error, Unit]): Boolean = js.native
+  
   def writeContinue(): Unit = js.native
+  
   def writeHead(statusCode: Double): this.type = js.native
   def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
   def writeHead(statusCode: Double, statusMessage: String): this.type = js.native
   def writeHead(statusCode: Double, statusMessage: String, headers: OutgoingHttpHeaders): this.type = js.native
 }
-

@@ -11,8 +11,8 @@ import typings.std.HTMLOptionElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import typings.std.NodeList
-import typings.std.Position
 import typings.videoJs.mod.videojs.Dom.Coordinates
+import typings.videoJs.mod.videojs.Dom.Position
 import typings.videoJs.mod.videojs.Dom.Predicate
 import typings.videoJs.videoJsStrings.canvas
 import typings.videoJs.videoJsStrings.form
@@ -23,10 +23,11 @@ import typings.videoJs.videoJsStrings.select
 import typings.videoJs.videoJsStrings.textarea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dom_ extends js.Object {
+  
   /**
     * Finds a single DOM element matching `selector` within the optional
     * `context` of another DOM element (defaulting to `document`).
@@ -48,6 +49,7 @@ trait Dom_ extends js.Object {
   def $(selector: String, context: String): Element = js.native
   @JSName("$")
   def $(selector: String, context: Element): Element = js.native
+  
   /**
     * Finds a all DOM elements matching `selector` within the optional
     * `context` of another DOM element (defaulting to `document`).
@@ -70,6 +72,7 @@ trait Dom_ extends js.Object {
   def DollarDollar(selector: String, context: String): NodeList = js.native
   @JSName("$$")
   def DollarDollar(selector: String, context: Element): NodeList = js.native
+  
   /**
     * Add a CSS class name to an element
     *
@@ -82,6 +85,7 @@ trait Dom_ extends js.Object {
     * @return The dom element with the added class name.
     */
   def addClass(element: Element, classToAdd: String): Element = js.native
+  
   def appendContent(el: Element, content: js.Array[Content]): Element = js.native
   /**
     * Normalizes and appends content to an element.
@@ -96,10 +100,12 @@ trait Dom_ extends js.Object {
     * @return The element with appended normalized content.
     */
   def appendContent(el: Element, content: Content): Element = js.native
+  
   /**
     * Attempt to block the ability to select text while dragging controls
     */
   def blockTextSelection(): Unit = js.native
+  
   def createEl(): Element = js.native
   def createEl(
     tagName: js.UndefOr[scala.Nothing],
@@ -300,6 +306,7 @@ trait Dom_ extends js.Object {
   def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.Any): HTMLTextAreaElement = js.native
   @JSName("createEl")
   def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.Any, content: js.Any): HTMLTextAreaElement = js.native
+  
   /**
     * Empties the contents of an element.
     *
@@ -309,6 +316,7 @@ trait Dom_ extends js.Object {
     * @return The element with no children
     */
   def emptyEl(el: Element): Element = js.native
+  
   /**
     * Offset Left.
     * getBoundingClientRect technique from
@@ -322,6 +330,7 @@ trait Dom_ extends js.Object {
     * @return The position of the element that was passed in.
     */
   def findPosition(el: Element): Position = js.native
+  
   /**
     * Get the value of an element's attribute
     *
@@ -334,6 +343,7 @@ trait Dom_ extends js.Object {
     * @return value of the attribute
     */
   def getAttribute(el: Element, attribute: String): String = js.native
+  
   /**
     * Get an element's attribute values, as defined on the HTML tag
     * Attributes are not the same as properties. They're defined on the tag
@@ -346,6 +356,7 @@ trait Dom_ extends js.Object {
     * @return All attributes of the element.
     */
   def getAttributes(tag: Element): js.Any = js.native
+  
   /**
     * Identical to the native `getBoundingClientRect` function, but ensures that
     * the method is supported at all (it is in all browsers we claim to support)
@@ -365,6 +376,7 @@ trait Dom_ extends js.Object {
     * @return Always returns a plain
     */
   def getBoundingClientRect(el: Element): ClientRect = js.native
+  
   /**
     * Get pointer position in element
     * Returns an object with x and y coordinates.
@@ -380,6 +392,7 @@ trait Dom_ extends js.Object {
     *
     */
   def getPointerPosition(el: Element, event: Event): Coordinates = js.native
+  
   /**
     * Check if an element has a CSS class
     *
@@ -396,6 +409,7 @@ trait Dom_ extends js.Object {
     *         Throws an error if `classToCheck` has white space.
     */
   def hasClass(element: Element, classToCheck: String): Boolean = js.native
+  
   /**
     * Normalizes and inserts content into an element; this is identical to
     * `appendContent()`, except it empties the element first.
@@ -412,6 +426,7 @@ trait Dom_ extends js.Object {
   def insertContent(el: Element, content: String): Element = js.native
   def insertContent(el: Element, content: js.Function0[_]): Element = js.native
   def insertContent(el: Element, content: Element): Element = js.native
+  
   /**
     * Determines, via duck typing, whether or not a value is a DOM element.
     *
@@ -422,18 +437,21 @@ trait Dom_ extends js.Object {
     *         - False otherwise
     */
   def isEl(value: js.Any): Boolean = js.native
+  
   /**
     * Determines if the current DOM is embedded in an iframe.
     *
     * @return
     */
   def isInFrame(): Boolean = js.native
+  
   /**
     * Whether the current DOM interface appears to be real.
     *
     * @return
     */
   def isReal(): Boolean = js.native
+  
   /**
     * Check if event was a single left click
     *
@@ -444,6 +462,7 @@ trait Dom_ extends js.Object {
     *         - False if not a left click
     */
   def isSingleLeftClick(event: typings.videoJs.mod.videojs.EventTarget.Event): Boolean = js.native
+  
   /**
     * Determines, via duck typing, whether or not a value is a text node.
     *
@@ -454,6 +473,7 @@ trait Dom_ extends js.Object {
     *         - False otherwise
     */
   def isTextNode(value: js.Any): Boolean = js.native
+  
   def normalizeContent(content: js.Array[Content]): js.Array[Content] = js.native
   /**
     * Normalizes content for eventual insertion into the DOM.
@@ -476,6 +496,7 @@ trait Dom_ extends js.Object {
     * @return All of the content that was passed in normalized.
     */
   def normalizeContent(content: Content): js.Array[Content] = js.native
+  
   /**
     * Insert an element as the first child node of another
     *
@@ -486,6 +507,7 @@ trait Dom_ extends js.Object {
     *        Element to insert child into
     */
   def prependTo(child: Element, parent: Element): Unit = js.native
+  
   /**
     * Remove an element's attribute
     *
@@ -496,6 +518,7 @@ trait Dom_ extends js.Object {
     *        Attribute to remove
     */
   def removeAttribute(el: Element, attribute: String): Unit = js.native
+  
   /**
     * Remove a CSS class name from an element
     *
@@ -508,6 +531,7 @@ trait Dom_ extends js.Object {
     * @return The dom element with class name removed.
     */
   def removeClass(element: Element, classToRemove: String): Element = js.native
+  
   /**
     * Set the value of an element's attribute
     *
@@ -521,6 +545,7 @@ trait Dom_ extends js.Object {
     *        Value to set the attribute to
     */
   def setAttribute(el: Element, attribute: String, value: String): Unit = js.native
+  
   /**
     * Apply attributes to an HTML element.
     *
@@ -531,6 +556,7 @@ trait Dom_ extends js.Object {
     *        Attributes to be applied.
     */
   def setAttributes(el: Element, attributes: js.Any): Unit = js.native
+  
   /**
     * Injects text into an element, replacing any existing contents entirely.
     *
@@ -543,6 +569,7 @@ trait Dom_ extends js.Object {
     * @return The element with added text content.
     */
   def textContent(el: Element, text: String): Element = js.native
+  
   /**
     * Adds or removes a CSS class name on an element depending on an optional
     * condition or the presence/absence of the class name.
@@ -559,9 +586,9 @@ trait Dom_ extends js.Object {
     * @return The element with a class that has been toggled.
     */
   def toggleClass(element: Element, classToToggle: String, predicate: Predicate): Element = js.native
+  
   /**
     * Turn off text selection blocking
     */
   def unblockTextSelection(): Unit = js.native
 }
-

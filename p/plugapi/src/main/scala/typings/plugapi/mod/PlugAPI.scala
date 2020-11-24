@@ -47,41 +47,68 @@ import typings.plugapi.plugapiStrings.userUpdate
 import typings.plugapi.plugapiStrings.vote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlugAPI extends js.Object {
-  var deleteAllChat: Boolean = js.native
-  var multiLine: Boolean = js.native
-  var multiLineLimit: Double = js.native
+  
   def changeDJCycle(enabled: Boolean): Boolean = js.native
   def changeDJCycle(enabled: Boolean, callback: js.Function0[Unit]): Boolean = js.native
+  
   def changeRoom(room: String): Unit = js.native
   def changeRoom(room: String, callback: js.Function0[Unit]): Unit = js.native
+  
   def close(): Unit = js.native
+  
   def connect(room: String): Unit = js.native
+  
+  var deleteAllChat: Boolean = js.native
+  
   def getAdmins(): js.Array[Extended] = js.native
+  
   def getAmbassadors(): js.Array[Extended] = js.native
+  
   def getAudience(): js.Array[Audience] = js.native
+  
   def getDJ(): DJ = js.native
+  
   def getDJs(): js.Array[DJ] = js.native
+  
   def getHost(): Extended = js.native
+  
   def getMedia(): Media = js.native
+  
   def getRoomScore(): Score = js.native
+  
   def getSelf(): Audience = js.native
+  
   def getStaff(): js.Array[Extended] = js.native
+  
   def getTimeElapsed(): Double = js.native
+  
   def getTimeRemaining(): Double = js.native
+  
   def getUser(userID: Double): DJ = js.native
+  
   def getUsers(): js.Array[DJ] = js.native
+  
   def getWaitList(): Extended = js.native
+  
   def getWaitListPosition(userID: Double): Double = js.native
+  
   def havePermission(userID: Double, permission: Double): Boolean = js.native
   def havePermission(userID: Double, permission: Double, global: Boolean): Boolean = js.native
+  
   def joinBooth(): Boolean = js.native
   def joinBooth(callback: js.Function0[Unit]): Boolean = js.native
+  
   def leaveBooth(): Boolean = js.native
   def leaveBooth(callback: js.Function0[Unit]): Boolean = js.native
+  
+  var multiLine: Boolean = js.native
+  
+  var multiLineLimit: Double = js.native
+  
   def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
   @JSName("on")
   def on_advance(event: advance, callback: js.Function1[/* data */ Advance, Unit]): Unit = js.native
@@ -125,10 +152,12 @@ trait PlugAPI extends js.Object {
   def on_userUpdate(event: userUpdate, callback: js.Function1[/* data */ UserUpdate, Unit]): Unit = js.native
   @JSName("on")
   def on_vote(event: vote, callback: js.Function1[/* data */ Vote, Unit]): Unit = js.native
+  
   def selfSkip(): Boolean = js.native
   def selfSkip(callback: js.Function0[Unit]): Boolean = js.native
+  
   def sendChat(msg: String): Unit = js.native
   def sendChat(msg: String, timeout: Double): Unit = js.native
+  
   def setLogger(logObject: LogObject): Boolean = js.native
 }
-

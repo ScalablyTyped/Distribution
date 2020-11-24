@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "AsyncLoop")
 @js.native
@@ -33,11 +33,11 @@ class AsyncLoop protected ()
     offset: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "AsyncLoop")
 @js.native
 object AsyncLoop extends js.Object {
+  
   /**
     * Create and run an async loop.
     * @param iterations the number of iterations.
@@ -57,6 +57,7 @@ object AsyncLoop extends js.Object {
     successCallback: js.Function0[Unit],
     offset: Double
   ): typings.babylonjs.toolsMod.AsyncLoop = js.native
+  
   /**
     * A for-loop that will run a given number of iterations synchronous and the rest async.
     * @param iterations total number of iterations
@@ -78,6 +79,14 @@ object AsyncLoop extends js.Object {
     syncedIterations: Double,
     fn: js.Function1[/* iteration */ Double, Unit],
     callback: js.Function0[Unit],
+    breakFunction: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): typings.babylonjs.toolsMod.AsyncLoop = js.native
+  def SyncAsyncForLoop(
+    iterations: Double,
+    syncedIterations: Double,
+    fn: js.Function1[/* iteration */ Double, Unit],
+    callback: js.Function0[Unit],
     breakFunction: js.Function0[Boolean]
   ): typings.babylonjs.toolsMod.AsyncLoop = js.native
   def SyncAsyncForLoop(
@@ -89,4 +98,3 @@ object AsyncLoop extends js.Object {
     timeout: Double
   ): typings.babylonjs.toolsMod.AsyncLoop = js.native
 }
-

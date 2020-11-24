@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialFloatingActionButt
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("M.FloatingActionButton")
 @js.native
 class FloatingActionButton ()
   extends typings.materializeCss.M.FloatingActionButton
-
 /* static members */
 @JSGlobal("M.FloatingActionButton")
 @js.native
 object FloatingActionButton extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.FloatingActionButton = js.native
+  
   /**
     * Init FloatingActionButtons
     */
@@ -35,4 +36,3 @@ object FloatingActionButton extends js.Object {
   def init(els: Element): typings.materializeCss.M.FloatingActionButton = js.native
   def init(els: Element, options: PartialFloatingActionButt): typings.materializeCss.M.FloatingActionButton = js.native
 }
-

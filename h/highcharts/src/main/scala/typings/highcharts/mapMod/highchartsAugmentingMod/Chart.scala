@@ -2,10 +2,11 @@ package typings.highcharts.mapMod.highchartsAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Chart extends js.Object {
+  
   /**
     * Highmaps only. Get chart coordinates from latitude/longitude. Returns
     * an object with x and y values corresponding to the `xAxis` and
@@ -17,6 +18,7 @@ trait Chart extends js.Object {
     * @return X and Y coordinates in terms of chart axis values.
     */
   def fromLatLonToPoint(latLon: MapLatLonObject): MapCoordinateObject = js.native
+  
   /**
     * Highmaps only. Calculate latitude/longitude values for a point.
     * Returns an object with the numeric properties `lat` and `lon`.
@@ -29,6 +31,7 @@ trait Chart extends js.Object {
     */
   def fromPointToLatLon(point: MapCoordinateObject): js.UndefOr[MapLatLonObject] = js.native
   def fromPointToLatLon(point: Point): js.UndefOr[MapLatLonObject] = js.native
+  
   /**
     * Highmaps only. Zoom in or out of the map. See also Point#zoomTo. See
     * Chart#fromLatLonToPoint for how to get the `centerX` and `centerY`
@@ -195,6 +198,7 @@ trait Chart extends js.Object {
   ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
+  
   /**
     * Highmaps only. Get point from latitude and longitude using specified
     * transform definition.
@@ -209,6 +213,7 @@ trait Chart extends js.Object {
     * @return An object with `x` and `y` properties.
     */
   def transformFromLatLon(latLon: MapLatLonObject, transform: js.Any): MapCoordinateObject = js.native
+  
   /**
     * Highmaps only. Get latLon from point using specified transform
     * definition. The method returns an object with the numeric properties
@@ -227,4 +232,3 @@ trait Chart extends js.Object {
   def transformToLatLon(point: MapCoordinateObject, transform: js.Any): js.UndefOr[MapLatLonObject] = js.native
   def transformToLatLon(point: Point, transform: js.Any): js.UndefOr[MapLatLonObject] = js.native
 }
-

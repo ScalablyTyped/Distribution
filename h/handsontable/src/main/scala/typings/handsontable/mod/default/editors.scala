@@ -5,7 +5,7 @@ import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLTableCellElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The "_editor" namespace is named to avoid circular reference conflict with "Handsontable.editors" namespace.
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("handsontable", "_editors")
 @js.native
 object editors extends js.Object {
+  
   @js.native
   class Autocomplete ()
     extends typings.handsontable.mod.Handsontable._editors.Autocomplete
@@ -76,6 +77,4 @@ object editors extends js.Object {
   @js.native
   class Text ()
     extends typings.handsontable.mod.Handsontable._editors.Text
-  
 }
-

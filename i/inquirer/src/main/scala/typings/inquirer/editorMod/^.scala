@@ -4,7 +4,7 @@ import typings.inquirer.mod.Answers
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a prompt which provides a text-editor.
@@ -29,4 +29,3 @@ class ^[TQuestion /* <: Question */] protected () extends EditorPrompt[TQuestion
     */
   def this(question: TQuestion, readLine: Interface, answers: Answers) = this()
 }
-

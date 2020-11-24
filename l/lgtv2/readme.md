@@ -10,9 +10,9 @@ Simple module to remote control LG WebOS smart TVs
 | ------------------ | :-------------: |
 | Full name          | lgtv2 |
 | Keywords           | tv, smarttv, webos, remote, control |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 14 |
-| # downloads        | 26958 |
+| # downloads        | 37879 |
 | # stars            | 2 |
 
 ## Links

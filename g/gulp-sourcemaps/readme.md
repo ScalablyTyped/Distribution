@@ -9,9 +9,9 @@ Source map support for Gulp.js
 | ------------------ | :-------------: |
 | Full name          | gulp-sourcemaps |
 | Keywords           | gulpplugin, gulp, source maps, sourcemaps |
-| # releases         | 4 |
-| # dependents       | 1423 |
-| # downloads        | 46706498 |
+| # releases         | 2 |
+| # dependents       | 1479 |
+| # downloads        | 44129848 |
 | # stars            | 308 |
 
 ## Links

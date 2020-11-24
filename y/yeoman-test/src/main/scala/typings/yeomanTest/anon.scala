@@ -2,13 +2,15 @@ package typings.yeomanTest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait FnCall extends js.Object {
+    
     def apply[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
     def apply[TResult1, TResult2](
       onfulfilled: js.UndefOr[scala.Nothing],
@@ -24,9 +26,8 @@ object anon extends js.Object {
   
   @js.native
   trait FnCallOnrejected extends js.Object {
+    
     def apply[TResult](): js.Promise[String | TResult] = js.native
     def apply[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[String | TResult] = js.native
   }
-  
 }
-

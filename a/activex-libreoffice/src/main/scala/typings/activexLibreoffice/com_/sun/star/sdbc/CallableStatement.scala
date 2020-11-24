@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to execute SQL stored procedures.
@@ -40,8 +40,8 @@ trait CallableStatement
   extends PreparedStatement
      with XRow
      with XOutParameters
-
 object CallableStatement {
+  
   @scala.inline
   def apply(
     Connection: XConnection,
@@ -137,4 +137,3 @@ object CallableStatement {
     __obj.asInstanceOf[CallableStatement]
   }
 }
-

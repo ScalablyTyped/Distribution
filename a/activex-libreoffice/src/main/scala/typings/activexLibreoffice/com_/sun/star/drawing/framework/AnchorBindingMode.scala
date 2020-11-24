@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This enum specifies how a resource is bound to an anchor. This can be direct or indirect.
@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait AnchorBindingMode extends js.Object
-
 object AnchorBindingMode {
+  
   @scala.inline
   def DIRECT: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def INDIRECT: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -11,8 +11,8 @@ multi-map which allow multiple values for the same key
 | Full name          | multimap |
 | Keywords           | keys, map, multiple |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 913269 |
+| # dependents       | 13 |
+| # downloads        | 8584703 |
 | # stars            | 2 |
 
 ## Links

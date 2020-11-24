@@ -2,11 +2,12 @@ package typings.openui5.global.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.MessageBox")
 @js.native
 object MessageBox extends js.Object {
+  
   /**
     * Displays an alert dialog with the given message and an OK button (no
     * icons).<pre>sap.m.MessageBox.alert("This message should appear in the alert", {    title: "Alert",  
@@ -26,6 +27,7 @@ object MessageBox extends js.Object {
     */
   def alert(vMessage: String): Unit = js.native
   def alert(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   /**
     * Displays a confirmation dialog with the given message, a QUESTION icon, an OK buttonand a Cancel
     * button. If a callback is given, it is called after the confirmation boxhas been closed by the user
@@ -46,6 +48,7 @@ object MessageBox extends js.Object {
     */
   def confirm(vMessage: String): Unit = js.native
   def confirm(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   /**
     * Displays an error dialog with the given message, an ERROR icon, a CLOSE button..If a callback is
     * given, it is called after the error boxhas been closed by the user with one of the
@@ -64,6 +67,7 @@ object MessageBox extends js.Object {
     */
   def error(vMessage: String): Unit = js.native
   def error(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   /**
     * Displays an information dialog with the given message, an INFO icon, an OK button.If a callback is
     * given, it is called after the info boxhas been closed by the user with one of the
@@ -82,6 +86,7 @@ object MessageBox extends js.Object {
     */
   def information(vMessage: String): Unit = js.native
   def information(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   /**
     * Creates and displays a sap.m.Dialog with type sap.m.DialogType.Message with the given text and
     * buttons, and optionally other parts.After the user has tapped a button, the <code>onClose</code>
@@ -105,6 +110,7 @@ object MessageBox extends js.Object {
     */
   def show(vMessage: String): Unit = js.native
   def show(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   /**
     * Displays a success dialog with the given message, a SUCCESS icon, an OK button.If a callback is
     * given, it is called after the success boxhas been closed by the user with one of the
@@ -123,6 +129,7 @@ object MessageBox extends js.Object {
     */
   def success(vMessage: String): Unit = js.native
   def success(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   /**
     * Displays a warning dialog with the given message, a WARNING icon, an OK button.If a callback is
     * given, it is called after the warning boxhas been closed by the user with one of the
@@ -141,40 +148,50 @@ object MessageBox extends js.Object {
     */
   def warning(vMessage: String): Unit = js.native
   def warning(vMessage: String, mOptions: js.Any): Unit = js.native
+  
   @js.native
   object Action extends js.Object {
+    
     /**
       * Adds an "Abort" button to the message box.
       */
     var ABORT: js.Any = js.native
+    
     /**
       * Adds a "Cancel" button to the message box.
       */
     var CANCEL: js.Any = js.native
+    
     /**
       * Adds a "Close" button to the message box.
       */
     var CLOSE: js.Any = js.native
+    
     /**
       * Adds a "Delete" button to the message box.
       */
     var DELETE: js.Any = js.native
+    
     /**
       * Adds an "Ignore" button to the message box.
       */
     var IGNORE: js.Any = js.native
+    
     /**
       * Adds a "No" button to the message box.
       */
     var NO: js.Any = js.native
+    
     /**
       * Adds an "OK" button to the message box.
       */
     var OK: js.Any = js.native
+    
     /**
       * Adds a "Retry" button to the message box.
       */
     var RETRY: js.Any = js.native
+    
     /**
       * Adds a "Yes" button to the message box.
       */
@@ -183,31 +200,35 @@ object MessageBox extends js.Object {
   
   @js.native
   object Icon extends js.Object {
+    
     /**
       * Shows the error icon in the message box.
       */
     var ERROR: js.Any = js.native
+    
     /**
       * Shows the information icon in the message box.
       */
     var INFORMATION: js.Any = js.native
+    
     /**
       * Shows no icon in the message box.
       */
     var NONE: js.Any = js.native
+    
     /**
       * Shows the question icon in the message box.
       */
     var QUESTION: js.Any = js.native
+    
     /**
       * Shows the success icon in the message box.
       */
     var SUCCESS: js.Any = js.native
+    
     /**
       * Shows the warning icon in the message box.
       */
     var WARNING: js.Any = js.native
   }
-  
 }
-

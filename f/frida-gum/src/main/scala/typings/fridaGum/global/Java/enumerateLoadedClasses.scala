@@ -3,11 +3,12 @@ package typings.fridaGum.global.Java
 import typings.fridaGum.Java.EnumerateLoadedClassesCallbacks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.enumerateLoadedClasses")
 @js.native
 object enumerateLoadedClasses extends js.Object {
+  
   /**
     * Enumerates loaded classes.
     *
@@ -15,4 +16,3 @@ object enumerateLoadedClasses extends js.Object {
     */
   def apply(callbacks: EnumerateLoadedClassesCallbacks): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "StereoscopicInterlacePostProcess")
 @js.native
@@ -32,8 +32,39 @@ class StereoscopicInterlacePostProcess protected ()
     name: String,
     rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
     isStereoscopicHoriz: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    isStereoscopicHoriz: Boolean,
     samplingMode: Double,
     engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    isStereoscopicHoriz: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    isStereoscopicHoriz: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    isStereoscopicHoriz: Boolean,
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
   ) = this()
   def this(
     name: String,
@@ -44,4 +75,3 @@ class StereoscopicInterlacePostProcess protected ()
     reusable: Boolean
   ) = this()
 }
-

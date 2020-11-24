@@ -2,7 +2,7 @@ package typings.openfin.mod.fin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Clipboard
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OpenFinClipboard extends js.Object {
+  
   /**
     * Reads available formats for the clipboard type
     */
@@ -37,6 +38,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function1[/* formats */ js.Array[String], Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Reads available formats for the clipboard type
     */
@@ -64,6 +66,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function1[/* html */ String, Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Read the content of the clipboard as Rtf
     */
@@ -91,6 +94,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function1[/* rtf */ String, Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Read the content of the clipboard as plain text
     */
@@ -118,6 +122,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function1[/* text */ String, Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Writes data into the clipboard
     */
@@ -149,6 +154,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Writes data into the clipboard as Html
     */
@@ -180,6 +186,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Writes data into the clipboard as Rtf
     */
@@ -211,6 +218,7 @@ trait OpenFinClipboard extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Writes data into the clipboard as plain text
     */
@@ -243,4 +251,3 @@ trait OpenFinClipboard extends js.Object {
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
 }
-

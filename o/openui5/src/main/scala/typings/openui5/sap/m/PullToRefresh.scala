@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PullToRefresh extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>refresh</code> event of this
     * <code>sap.m.PullToRefresh</code>.When called, the context of the event handler (its
@@ -21,6 +22,7 @@ trait PullToRefresh extends Control {
     */
   def attachRefresh(oData: js.Any, fnFunction: js.Any): PullToRefresh = js.native
   def attachRefresh(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PullToRefresh = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>refresh</code> event of this
     * <code>sap.m.PullToRefresh</code>.The passed function and listener object must match the ones used
@@ -30,24 +32,28 @@ trait PullToRefresh extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachRefresh(fnFunction: js.Any, oListener: js.Any): PullToRefresh = js.native
+  
   /**
     * Fires event <code>refresh</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireRefresh(mArguments: js.Any): PullToRefresh = js.native
+  
   /**
     * Gets current value of property <code>customIcon</code>.Provide a URI to a custom icon image to
     * replace the SAP logo. Large images are scaled down to max 50px height.
     * @returns Value of property <code>customIcon</code>
     */
   def getCustomIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>description</code>.Optional description. May be used to inform
     * a user, for example, when the list has been updated last time.
     * @returns Value of property <code>description</code>
     */
   def getDescription(): String = js.native
+  
   /**
     * Gets current value of property <code>iconDensityAware</code>.By default, this is set to true but
     * then one or more requests are sent trying to get the density perfect version of image if this
@@ -56,6 +62,7 @@ trait PullToRefresh extends Control {
     * @returns Value of property <code>iconDensityAware</code>
     */
   def getIconDensityAware(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showIcon</code>.Set to true to display an icon/logo. Icon must
     * be set either in the customIcon property or in the CSS theme for the PullToRefresh control.Default
@@ -63,11 +70,13 @@ trait PullToRefresh extends Control {
     * @returns Value of property <code>showIcon</code>
     */
   def getShowIcon(): Boolean = js.native
+  
   /**
     * Hides the control and resets it to the normal state. In non-touch environments the control is not
     * hidden.
     */
   def hide(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>customIcon</code>.Provide a URI to a custom icon image to
     * replace the SAP logo. Large images are scaled down to max 50px height.When called with a value of
@@ -76,6 +85,7 @@ trait PullToRefresh extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCustomIcon(sCustomIcon: js.Any): PullToRefresh = js.native
+  
   /**
     * Sets a new value for property <code>description</code>.Optional description. May be used to inform a
     * user, for example, when the list has been updated last time.When called with a value of
@@ -84,6 +94,7 @@ trait PullToRefresh extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDescription(sDescription: String): PullToRefresh = js.native
+  
   /**
     * Sets a new value for property <code>iconDensityAware</code>.By default, this is set to true but then
     * one or more requests are sent trying to get the density perfect version of image if this version of
@@ -94,6 +105,7 @@ trait PullToRefresh extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconDensityAware(bIconDensityAware: Boolean): PullToRefresh = js.native
+  
   /**
     * Sets a new value for property <code>showIcon</code>.Set to true to display an icon/logo. Icon must
     * be set either in the customIcon property or in the CSS theme for the PullToRefresh control.When
@@ -104,4 +116,3 @@ trait PullToRefresh extends Control {
     */
   def setShowIcon(bShowIcon: Boolean): PullToRefresh = js.native
 }
-

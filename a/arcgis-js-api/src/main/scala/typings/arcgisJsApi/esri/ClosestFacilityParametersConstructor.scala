@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClosestFacilityParametersConstructor
@@ -15,6 +15,6 @@ trait ClosestFacilityParametersConstructor
   */
 Instantiable0[ClosestFacilityParameters]
      with Instantiable1[/* properties */ ClosestFacilityParametersProperties, ClosestFacilityParameters] {
+  
   def fromJSON(json: js.Any): ClosestFacilityParameters = js.native
 }
-

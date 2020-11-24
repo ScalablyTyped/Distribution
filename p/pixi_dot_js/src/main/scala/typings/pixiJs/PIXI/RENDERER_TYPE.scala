@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RENDERER_TYPE extends js.Object
-
 /**
   * Constant to identify the Renderer Type.
   *
@@ -21,6 +20,7 @@ sealed trait RENDERER_TYPE extends js.Object
 @JSGlobal("PIXI.RENDERER_TYPE")
 @js.native
 object RENDERER_TYPE extends js.Object {
+  
   @js.native
   sealed trait CANVAS extends RENDERER_TYPE
   
@@ -29,6 +29,4 @@ object RENDERER_TYPE extends js.Object {
   
   @js.native
   sealed trait WEBGL extends RENDERER_TYPE
-  
 }
-

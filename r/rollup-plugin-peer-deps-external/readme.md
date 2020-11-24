@@ -11,11 +11,14 @@ Rollup plugin to automatically add a library's peerDependencies to its bundle's 
 | Full name          | rollup-plugin-peer-deps-external |
 | Keywords           | rollup, plugin, rollup-plugin, peerDependencies, external, optimize, exclude |
 | # releases         | 4 |
-| # dependents       | 40 |
-| # downloads        | 909242 |
+| # dependents       | 74 |
+| # downloads        | 2324011 |
 | # stars            | 1 |
 
 ## Links
+- [Homepage](https://github.com/pmowrer/rollup-plugin-peer-deps-external#readme)
+- [Bugs](https://github.com/pmowrer/rollup-plugin-peer-deps-external/issues)
+- [Repository](https://github.com/pmowrer/rollup-plugin-peer-deps-external)
 - [Npm](https://www.npmjs.com/package/rollup-plugin-peer-deps-external)
     
 

@@ -2,9 +2,97 @@ package typings.hexo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hexoStrings {
+  
+  @scala.inline
+  def after_clean: after_clean = "after_clean".asInstanceOf[after_clean]
+  
+  @scala.inline
+  def after_generate: after_generate = "after_generate".asInstanceOf[after_generate]
+  
+  @scala.inline
+  def after_init: after_init = "after_init".asInstanceOf[after_init]
+  
+  @scala.inline
+  def after_post_render: after_post_render = "after_post_render".asInstanceOf[after_post_render]
+  
+  @scala.inline
+  def after_renderColonhtml: after_renderColonhtml = "after_render:html".asInstanceOf[after_renderColonhtml]
+  
+  @scala.inline
+  def before_exit: before_exit = "before_exit".asInstanceOf[before_exit]
+  
+  @scala.inline
+  def before_generate: before_generate = "before_generate".asInstanceOf[before_generate]
+  
+  @scala.inline
+  def before_post_render: before_post_render = "before_post_render".asInstanceOf[before_post_render]
+  
+  @scala.inline
+  def categories: categories = "categories".asInstanceOf[categories]
+  
+  @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def deployAfter: deployAfter = "deployAfter".asInstanceOf[deployAfter]
+  
+  @scala.inline
+  def deployBefore: deployBefore = "deployBefore".asInstanceOf[deployBefore]
+  
+  @scala.inline
+  def exit: exit = "exit".asInstanceOf[exit]
+  
+  @scala.inline
+  def generateAfter: generateAfter = "generateAfter".asInstanceOf[generateAfter]
+  
+  @scala.inline
+  def generateBefore: generateBefore = "generateBefore".asInstanceOf[generateBefore]
+  
+  @scala.inline
+  def `new`: `new` = "new".asInstanceOf[`new`]
+  
+  @scala.inline
+  def new_post_path: new_post_path = "new_post_path".asInstanceOf[new_post_path]
+  
+  @scala.inline
+  def pages: pages = "pages".asInstanceOf[pages]
+  
+  @scala.inline
+  def post_permalink: post_permalink = "post_permalink".asInstanceOf[post_permalink]
+  
+  @scala.inline
+  def posts: posts = "posts".asInstanceOf[posts]
+  
+  @scala.inline
+  def processAfter: processAfter = "processAfter".asInstanceOf[processAfter]
+  
+  @scala.inline
+  def processBefore: processBefore = "processBefore".asInstanceOf[processBefore]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def server_middleware: server_middleware = "server_middleware".asInstanceOf[server_middleware]
+  
+  @scala.inline
+  def skip: skip = "skip".asInstanceOf[skip]
+  
+  @scala.inline
+  def tags: tags = "tags".asInstanceOf[tags]
+  
+  @scala.inline
+  def template_locals: template_locals = "template_locals".asInstanceOf[template_locals]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
   @js.native
   sealed trait after_clean extends js.Object
   
@@ -91,64 +179,4 @@ object hexoStrings {
   
   @js.native
   sealed trait update extends js.Object
-  
-  @scala.inline
-  def after_clean: after_clean = "after_clean".asInstanceOf[after_clean]
-  @scala.inline
-  def after_generate: after_generate = "after_generate".asInstanceOf[after_generate]
-  @scala.inline
-  def after_init: after_init = "after_init".asInstanceOf[after_init]
-  @scala.inline
-  def after_post_render: after_post_render = "after_post_render".asInstanceOf[after_post_render]
-  @scala.inline
-  def after_renderColonhtml: after_renderColonhtml = "after_render:html".asInstanceOf[after_renderColonhtml]
-  @scala.inline
-  def before_exit: before_exit = "before_exit".asInstanceOf[before_exit]
-  @scala.inline
-  def before_generate: before_generate = "before_generate".asInstanceOf[before_generate]
-  @scala.inline
-  def before_post_render: before_post_render = "before_post_render".asInstanceOf[before_post_render]
-  @scala.inline
-  def categories: categories = "categories".asInstanceOf[categories]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def deployAfter: deployAfter = "deployAfter".asInstanceOf[deployAfter]
-  @scala.inline
-  def deployBefore: deployBefore = "deployBefore".asInstanceOf[deployBefore]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def generateAfter: generateAfter = "generateAfter".asInstanceOf[generateAfter]
-  @scala.inline
-  def generateBefore: generateBefore = "generateBefore".asInstanceOf[generateBefore]
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
-  @scala.inline
-  def new_post_path: new_post_path = "new_post_path".asInstanceOf[new_post_path]
-  @scala.inline
-  def pages: pages = "pages".asInstanceOf[pages]
-  @scala.inline
-  def post_permalink: post_permalink = "post_permalink".asInstanceOf[post_permalink]
-  @scala.inline
-  def posts: posts = "posts".asInstanceOf[posts]
-  @scala.inline
-  def processAfter: processAfter = "processAfter".asInstanceOf[processAfter]
-  @scala.inline
-  def processBefore: processBefore = "processBefore".asInstanceOf[processBefore]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def server_middleware: server_middleware = "server_middleware".asInstanceOf[server_middleware]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def tags: tags = "tags".asInstanceOf[tags]
-  @scala.inline
-  def template_locals: template_locals = "template_locals".asInstanceOf[template_locals]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
 }
-

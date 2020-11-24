@@ -5,7 +5,7 @@ import typings.openlayers.mod.olx.layer.LayerOptions
 import typings.openlayers.mod.source.Source
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -49,6 +49,7 @@ class Layer protected () extends Base {
     * @api stable
     */
   def this(options: LayerOptions) = this()
+  
   /**
     * Get the layer source.
     * @return The layer source (or `null` if not yet set).
@@ -56,6 +57,7 @@ class Layer protected () extends Base {
     * @api stable
     */
   def getSource(): Source = js.native
+  
   /**
     * Sets the layer to be rendered on top of other layers on a map. The map will
     * not manage this layer in its layers collection, and the callback in
@@ -69,6 +71,7 @@ class Layer protected () extends Base {
     * @api
     */
   def setMap(map: Map): Unit = js.native
+  
   /**
     * Set the layer source.
     * @param source The layer source.
@@ -77,4 +80,3 @@ class Layer protected () extends Base {
     */
   def setSource(source: Source): Unit = js.native
 }
-

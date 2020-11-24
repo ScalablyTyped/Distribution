@@ -1,7 +1,7 @@
 
 # Scala.js typings for alex
 
-Typings are for version 8.1
+Typings are for version 9.0
 
 ## Library description:
 Catch insensitive, inconsiderate writing
@@ -11,8 +11,8 @@ Catch insensitive, inconsiderate writing
 | Full name          | alex |
 | Keywords           | cli-app, cli, bin, alex, equal, race, religion, sex, orientation, identity, gender, sensitive, insensitive, neutral, writing, language, english |
 | # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 324901 |
+| # dependents       | 17 |
+| # downloads        | 689889 |
 | # stars            | 5 |
 
 ## Links

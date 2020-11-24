@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sendgrid-rest"
-version := "2.6.1-273970"
+version := "2.6.1-19e4f6"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,18 +2,21 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DatePickerAndroidStatic extends js.Object {
+  
   /**
     * A date has been selected.
     */
   var dateSetAction: typings.reactNative.reactNativeStrings.dateSetAction = js.native
+  
   /**
     * The dialog has been dismissed.
     */
   var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction = js.native
+  
   /**
     * Opens the standard Android date picker dialog.
     *
@@ -35,4 +38,3 @@ trait DatePickerAndroidStatic extends js.Object {
   def open(): js.Promise[DatePickerAndroidOpenReturn] = js.native
   def open(options: DatePickerAndroidOpenOptions): js.Promise[DatePickerAndroidOpenReturn] = js.native
 }
-

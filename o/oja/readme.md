@@ -10,9 +10,9 @@ Lightweight pub/sub module with event backlog, timeout support that maps events 
 | ------------------ | :-------------: |
 | Full name          | oja |
 | Keywords           | stream, flow, pub, sub, pub-sub, event, eventemitter, emitter |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 7433 |
+| # downloads        | 31668 |
 | # stars            | 0 |
 
 ## Links

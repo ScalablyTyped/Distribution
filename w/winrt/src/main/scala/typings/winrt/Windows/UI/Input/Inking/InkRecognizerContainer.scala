@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InkRecognizerContainer extends IInkRecognizerContainer
-
 object InkRecognizerContainer {
+  
   @scala.inline
   def apply(
     getRecognizers: () => IVectorView[InkRecognizer],
@@ -20,4 +20,3 @@ object InkRecognizerContainer {
     __obj.asInstanceOf[InkRecognizerContainer]
   }
 }
-

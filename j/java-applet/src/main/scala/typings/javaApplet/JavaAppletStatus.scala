@@ -2,14 +2,14 @@ package typings.javaApplet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait JavaAppletStatus extends js.Object
-
 @JSGlobal("JavaAppletStatus")
 @js.native
 object JavaAppletStatus extends js.Object {
+  
   /**
     * @summary Error while loading applet.
     */
@@ -27,6 +27,4 @@ object JavaAppletStatus extends js.Object {
     */
   @js.native
   sealed trait Ready extends JavaAppletStatus
-  
 }
-

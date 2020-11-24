@@ -10,9 +10,9 @@ get value at property, don't throw if parent is undefined
 | ------------------ | :-------------: |
 | Full name          | just-safe-get |
 | Keywords           | object, safe, get, no-dependencies, just |
-| # releases         | 8 |
-| # dependents       | 11 |
-| # downloads        | 557412 |
+| # releases         | 5 |
+| # dependents       | 15 |
+| # downloads        | 337113 |
 | # stars            | 0 |
 
 ## Links

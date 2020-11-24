@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275createInjector")
 @js.native
 object ɵcreateInjector extends js.Object {
+  
   def apply(defType: js.Any): Injector = js.native
   def apply(
     defType: js.Any,
@@ -32,4 +33,3 @@ object ɵcreateInjector extends js.Object {
   def apply(defType: js.Any, parent: Injector, additionalProviders: js.Array[StaticProvider], name: String): Injector = js.native
   def apply(defType: js.Any, parent: Injector, additionalProviders: Null, name: String): Injector = js.native
 }
-

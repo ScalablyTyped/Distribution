@@ -3,7 +3,7 @@ package typings.heremaps.H.service.venues
 import typings.heremaps.H.map.Group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The class represents the venue, it is a root for the venue object heirarchy. The venue inherits from H.map.Group and holds building objects (see H.service.venues.Building).
@@ -12,16 +12,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Venue extends Group {
+  
   /**
     * Method returns the building object, that belongs to the venue, with the given ID . The method doesn't attempt to fetch building data.
     * @param id {string} - the ID of the building
     * @returns {(H.service.venues.Building | undefined)} - The requested building or undefined if building wasn't loaded
     */
   def getBuilding(id: String): Building | Unit = js.native
+  
   /**
     * Method returns map of all loaded buildings associated with the venue.
     * @returns {Object<*, H.service.venues.Building>}
     */
   def getBuildings(): js.Any = js.native
 }
-

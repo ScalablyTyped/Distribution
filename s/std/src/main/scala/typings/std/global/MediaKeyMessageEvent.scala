@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.MediaKeyMessageEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaKeyMessageEvent")
 @js.native
@@ -12,7 +12,6 @@ class MediaKeyMessageEvent protected ()
   extends typings.std.MediaKeyMessageEvent {
   def this(`type`: java.lang.String, eventInitDict: MediaKeyMessageEventInit) = this()
 }
-
 @JSGlobal("MediaKeyMessageEvent")
 @js.native
 object MediaKeyMessageEvent
@@ -21,4 +20,3 @@ object MediaKeyMessageEvent
       /* eventInitDict */ MediaKeyMessageEventInit, 
       typings.std.MediaKeyMessageEvent
     ]
-

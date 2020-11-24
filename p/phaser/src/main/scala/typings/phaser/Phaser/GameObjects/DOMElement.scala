@@ -12,7 +12,7 @@ import typings.phaser.Phaser.Math.Vector4
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DOM Element Game Objects are a way to control and manipulate HTML Elements over the top of your game.
@@ -80,97 +80,7 @@ trait DOMElement
      with ScrollFactor
      with Transform
      with Visible {
-  /**
-    * A reference to the HTML Cache.
-    */
-  var cache: BaseCache = js.native
-  /**
-    * The computed display height of this Game Object, based on the `getBoundingClientRect` DOM call.
-    * 
-    * The property `height` holds the un-scaled height of this DOM Element.
-    */
-  val displayHeight: Double = js.native
-  /**
-    * The computed display width of this Game Object, based on the `getBoundingClientRect` DOM call.
-    * 
-    * The property `width` holds the un-scaled width of this DOM Element.
-    */
-  val displayWidth: Double = js.native
-  /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * For a DOM Element this property is read-only.
-    * 
-    * The property `displayHeight` holds the computed bounds of this DOM Element, factoring in scaling.
-    */
-  val height: Double = js.native
-  /**
-    * The actual DOM Element that this Game Object is bound to. For example, if you've created a `<div>`
-    * then this property is a direct reference to that element within the dom.
-    */
-  var node: Element = js.native
-  /**
-    * A reference to the parent DOM Container that the Game instance created when it started.
-    */
-  var parent: Element = js.native
-  /**
-    * The perspective CSS property value of the _parent DOM Container_. This determines the distance between the z=0
-    * plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with
-    * z > 0 becomes larger; each 3D-element with z < 0 becomes smaller. The strength of the effect is determined
-    * by the value of this property.
-    * 
-    * For more information see: https://developer.mozilla.org/en-US/docs/Web/CSS/perspective
-    * 
-    * **Changing this value changes it globally for all DOM Elements, as they all share the same parent container.**
-    */
-  var perspective: Double = js.native
-  /**
-    * A Vector4 that contains the 3D rotation of this DOM Element around a fixed axis in 3D space.
-    * 
-    * All values in the Vector4 are treated as degrees, unless the `rotate3dAngle` property is changed.
-    * 
-    * For more details see the following MDN page:
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
-    */
-  var rotate3d: Vector4 = js.native
-  /**
-    * The unit that represents the 3D rotation values. By default this is `deg` for degrees, but can
-    * be changed to any supported unit. See this page for further details:
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
-    */
-  var rotate3dAngle: String = js.native
-  /**
-    * The angle, in radians, by which to skew the DOM Element on the horizontal axis.
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-    */
-  var skewX: Double = js.native
-  /**
-    * The angle, in radians, by which to skew the DOM Element on the vertical axis.
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-    */
-  var skewY: Double = js.native
-  /**
-    * By default a DOM Element will have its transform, display, opacity, zIndex and blend mode properties
-    * updated when its rendered. If, for some reason, you don't want any of these changed other than the
-    * CSS transform, then set this flag to `true`. When `true` only the CSS Transform is applied and it's
-    * up to you to keep track of and set the other properties as required.
-    * 
-    * This can be handy if, for example, you've a nested DOM Element and you don't want the opacity to be
-    * picked-up by any of its children.
-    */
-  var transformOnly: Boolean = js.native
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * For a DOM Element this property is read-only.
-    * 
-    * The property `displayWidth` holds the computed bounds of this DOM Element, factoring in scaling.
-    */
-  val width: Double = js.native
+  
   /**
     * Adds one or more native DOM event listeners onto the underlying Element of this Game Object.
     * The event is then dispatched via this Game Objects standard event emitter.
@@ -187,6 +97,12 @@ trait DOMElement
     * @param events The DOM event/s to listen for. You can specify multiple events by separating them with spaces.
     */
   def addListener(events: String): this.type = js.native
+  
+  /**
+    * A reference to the HTML Cache.
+    */
+  var cache: BaseCache = js.native
+  
   /**
     * Creates a native DOM Element, adds it to the parent DOM Container and then binds it to this Game Object,
     * so you can control it. The `tagName` should be a string and is passed to `document.createElement`:
@@ -229,6 +145,7 @@ trait DOMElement
   def createElement(tagName: String, style: String, innerText: String): this.type = js.native
   def createElement(tagName: String, style: js.Any): this.type = js.native
   def createElement(tagName: String, style: js.Any, innerText: String): this.type = js.native
+  
   /**
     * Takes a block of html from the HTML Cache, that has previously been preloaded into the game, and then
     * creates a DOM Element from it. The loaded HTML is set as the `innerHTML` property of the created
@@ -263,6 +180,7 @@ trait DOMElement
     */
   def createFromCache(The: String): this.type = js.native
   def createFromCache(The: String, tagName: String): this.type = js.native
+  
   /**
     * Takes a string of html and then creates a DOM Element from it. The HTML is set as the `innerHTML`
     * property of the created element.
@@ -290,6 +208,21 @@ trait DOMElement
     */
   def createFromHTML(A: String): this.type = js.native
   def createFromHTML(A: String, tagName: String): this.type = js.native
+  
+  /**
+    * The computed display height of this Game Object, based on the `getBoundingClientRect` DOM call.
+    * 
+    * The property `height` holds the un-scaled height of this DOM Element.
+    */
+  val displayHeight: Double = js.native
+  
+  /**
+    * The computed display width of this Game Object, based on the `getBoundingClientRect` DOM call.
+    * 
+    * The property `width` holds the un-scaled width of this DOM Element.
+    */
+  val displayWidth: Double = js.native
+  
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
     * them, looking for the first one that has a matching id. It then returns this child if found, or `null` if not.
@@ -298,6 +231,7 @@ trait DOMElement
     * @param id The id to search the children for.
     */
   def getChildByID(id: String): Element = js.native
+  
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
     * them, looking for the first one that has a matching name. It then returns this child if found, or `null` if not.
@@ -306,6 +240,7 @@ trait DOMElement
     * @param name The name to search the children for.
     */
   def getChildByName(name: String): Element = js.native
+  
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
     * them, looking for the first one that has a property matching the given key and value. It then returns this child
@@ -314,16 +249,70 @@ trait DOMElement
     * @param value The value the property must strictly equal.
     */
   def getChildByProperty(property: String, value: String): Element = js.native
+  
+  /**
+    * The native (un-scaled) height of this Game Object.
+    * 
+    * For a DOM Element this property is read-only.
+    * 
+    * The property `displayHeight` holds the computed bounds of this DOM Element, factoring in scaling.
+    */
+  val height: Double = js.native
+  
+  /**
+    * The actual DOM Element that this Game Object is bound to. For example, if you've created a `<div>`
+    * then this property is a direct reference to that element within the dom.
+    */
+  var node: Element = js.native
+  
+  /**
+    * A reference to the parent DOM Container that the Game instance created when it started.
+    */
+  var parent: Element = js.native
+  
+  /**
+    * The perspective CSS property value of the _parent DOM Container_. This determines the distance between the z=0
+    * plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with
+    * z > 0 becomes larger; each 3D-element with z < 0 becomes smaller. The strength of the effect is determined
+    * by the value of this property.
+    * 
+    * For more information see: https://developer.mozilla.org/en-US/docs/Web/CSS/perspective
+    * 
+    * **Changing this value changes it globally for all DOM Elements, as they all share the same parent container.**
+    */
+  var perspective: Double = js.native
+  
   /**
     * Removes the current DOM Element bound to this Game Object from the DOM entirely and resets the
     * `node` property of this Game Object to be `null`.
     */
   def removeElement(): this.type = js.native
+  
+  /**
+    * A Vector4 that contains the 3D rotation of this DOM Element around a fixed axis in 3D space.
+    * 
+    * All values in the Vector4 are treated as degrees, unless the `rotate3dAngle` property is changed.
+    * 
+    * For more details see the following MDN page:
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
+    */
+  var rotate3d: Vector4 = js.native
+  
+  /**
+    * The unit that represents the 3D rotation values. By default this is `deg` for degrees, but can
+    * be changed to any supported unit. See this page for further details:
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
+    */
+  var rotate3dAngle: String = js.native
+  
   /**
     * Sets the `className` property of the DOM Element node and updates the internal sizes.
     * @param className A string representing the class or space-separated classes of the element.
     */
   def setClassName(className: String): this.type = js.native
+  
   /**
     * Binds a new DOM Element to this Game Object. If this Game Object already has an Element it is removed from the DOM
     * entirely first. Any event listeners you may have previously created will need to be re-created on the new element.
@@ -381,11 +370,13 @@ trait DOMElement
   def setElement(element: Element, style: String, innerText: String): this.type = js.native
   def setElement(element: Element, style: js.Any): this.type = js.native
   def setElement(element: Element, style: js.Any, innerText: String): this.type = js.native
+  
   /**
     * Sets the `innerHTML` property of the DOM Element node and updates the internal sizes.
     * @param html A DOMString of html to be set as the `innerHTML` property of the element.
     */
   def setHTML(html: String): this.type = js.native
+  
   /**
     * Sets the perspective CSS property of the _parent DOM Container_. This determines the distance between the z=0
     * plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with
@@ -398,6 +389,7 @@ trait DOMElement
     * @param value The perspective value, in pixels, that determines the distance between the z plane and the user.
     */
   def setPerspective(value: Double): this.type = js.native
+  
   /**
     * Sets the horizontal and vertical skew values of this DOM Element.
     * 
@@ -409,6 +401,7 @@ trait DOMElement
   def setSkew(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setSkew(x: Double): this.type = js.native
   def setSkew(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the `innerText` property of the DOM Element node and updates the internal sizes.
     * 
@@ -416,6 +409,32 @@ trait DOMElement
     * @param text A DOMString representing the rendered text content of the element.
     */
   def setText(text: String): this.type = js.native
+  
+  /**
+    * The angle, in radians, by which to skew the DOM Element on the horizontal axis.
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+    */
+  var skewX: Double = js.native
+  
+  /**
+    * The angle, in radians, by which to skew the DOM Element on the vertical axis.
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+    */
+  var skewY: Double = js.native
+  
+  /**
+    * By default a DOM Element will have its transform, display, opacity, zIndex and blend mode properties
+    * updated when its rendered. If, for some reason, you don't want any of these changed other than the
+    * CSS transform, then set this flag to `true`. When `true` only the CSS Transform is applied and it's
+    * up to you to keep track of and set the other properties as required.
+    * 
+    * This can be handy if, for example, you've a nested DOM Element and you don't want the opacity to be
+    * picked-up by any of its children.
+    */
+  var transformOnly: Boolean = js.native
+  
   /**
     * Internal method that calls `getBoundingClientRect` on the `node` and then sets the bounds width
     * and height into the `displayWidth` and `displayHeight` properties, and the `clientWidth` and `clientHeight`
@@ -424,6 +443,16 @@ trait DOMElement
     * This is called automatically whenever a new element is created or set.
     */
   def updateSize(): this.type = js.native
+  
+  /**
+    * The native (un-scaled) width of this Game Object.
+    * 
+    * For a DOM Element this property is read-only.
+    * 
+    * The property `displayWidth` holds the computed bounds of this DOM Element, factoring in scaling.
+    */
+  val width: Double = js.native
+  
   /**
     * Compares the renderMask with the renderFlags to see if this Game Object will render or not.
     * 
@@ -431,4 +460,3 @@ trait DOMElement
     */
   def willRender(): Boolean = js.native
 }
-

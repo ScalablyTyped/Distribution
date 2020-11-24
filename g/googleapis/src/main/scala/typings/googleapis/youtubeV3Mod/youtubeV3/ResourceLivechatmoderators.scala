@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livechatmoderators")
 @js.native
 class ResourceLivechatmoderators protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.liveChatModerators.delete
     * @desc Removes a chat moderator.
@@ -41,6 +43,7 @@ class ResourceLivechatmoderators protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.liveChatModerators.insert
     * @desc Adds a new moderator for the chat.
@@ -73,6 +76,7 @@ class ResourceLivechatmoderators protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveChatModerator]
   ): Unit = js.native
+  
   /**
     * youtube.liveChatModerators.list
     * @desc Lists moderators for a live chat.
@@ -108,4 +112,3 @@ class ResourceLivechatmoderators protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLiveChatModeratorListResponse]
   ): Unit = js.native
 }
-

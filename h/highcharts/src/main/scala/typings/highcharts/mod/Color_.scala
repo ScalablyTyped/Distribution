@@ -2,7 +2,7 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Color")
 @js.native
@@ -14,6 +14,7 @@ class Color_ protected () extends js.Object {
     *        The input color in either rbga or hex format
     */
   def this(input: ColorType) = this()
+  
   /**
     * Brighten the color instance.
     *
@@ -23,6 +24,7 @@ class Color_ protected () extends js.Object {
     * @return This color with modifications.
     */
   def brighten(alpha: Double): Color_ = js.native
+  
   /**
     * Return the color or gradient stops in the specified format
     *
@@ -33,6 +35,7 @@ class Color_ protected () extends js.Object {
     */
   def get(): ColorType = js.native
   def get(format: String): ColorType = js.native
+  
   /**
     * Set the color's opacity to a given alpha value.
     *
@@ -42,6 +45,7 @@ class Color_ protected () extends js.Object {
     * @return Color with modifications.
     */
   def setOpacity(alpha: Double): Color_ = js.native
+  
   /**
     * Return an intermediate color between two colors.
     *
@@ -56,11 +60,11 @@ class Color_ protected () extends js.Object {
     */
   def tweenTo(to: Color_, pos: Double): ColorString = js.native
 }
-
 /* static members */
 @JSImport("highcharts", "Color")
 @js.native
 object Color_ extends js.Object {
+  
   /**
     * Creates a color instance out of a color string or object.
     *
@@ -71,4 +75,3 @@ object Color_ extends js.Object {
     */
   def parse(input: ColorType): Color_ = js.native
 }
-

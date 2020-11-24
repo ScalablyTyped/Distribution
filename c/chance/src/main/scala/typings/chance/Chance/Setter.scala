@@ -12,10 +12,11 @@ import typings.chance.chanceStrings.territories
 import typings.chance.chanceStrings.us_states_and_dc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Setter extends js.Object {
+  
   def apply(key: armed_forces, values: js.Array[String]): js.Any = js.native
   def apply(key: cc_types, values: js.Array[String]): js.Any = js.native
   def apply(key: currency_types, values: js.Array[String]): js.Any = js.native
@@ -28,4 +29,3 @@ trait Setter extends js.Object {
   def apply(key: us_states_and_dc, values: js.Array[String]): js.Any = js.native
   def apply[T](key: String, values: js.Array[T]): js.Any = js.native
 }
-

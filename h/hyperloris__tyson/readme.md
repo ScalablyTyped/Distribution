@@ -10,9 +10,9 @@ A TypeScript serialization/deserialization library to convert objects to/from JS
 | ------------------ | :-------------: |
 | Full name          | @hyperloris/tyson |
 | Keywords           | typescript, json, converter, serialization, deserialization, angular |
-| # releases         | 8 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2975 |
+| # downloads        | 4020 |
 | # stars            | 0 |
 
 ## Links

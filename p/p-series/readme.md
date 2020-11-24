@@ -10,9 +10,9 @@ Run promise-returning & async functions in series
 | ------------------ | :-------------: |
 | Full name          | p-series |
 | Keywords           | promise, series, serial, sequence, sequential, ordered, task, tasks, array, collection, iterable, iterator, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 51 |
-| # downloads        | 1849010 |
+| # releases         | 3 |
+| # dependents       | 56 |
+| # downloads        | 1796708 |
 | # stars            | 0 |
 
 ## Links

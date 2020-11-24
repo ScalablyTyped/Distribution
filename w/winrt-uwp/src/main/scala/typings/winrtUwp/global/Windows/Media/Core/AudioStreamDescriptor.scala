@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Core
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an audio media stream. */
 @JSGlobal("Windows.Media.Core.AudioStreamDescriptor")
@@ -16,4 +16,3 @@ class AudioStreamDescriptor protected ()
     */
   def this(encodingProperties: AudioEncodingProperties) = this()
 }
-

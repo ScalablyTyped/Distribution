@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for a chart control's ASPxClientWebChartControl.ObjectHotTracked and ASPxClientWebChartControl.ObjectSelected events on the client side.
@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientWebChartControlHotTrackEventArgs protected ()
   extends typings.devexpressWeb.ASPxClientWebChartControlHotTrackEventArgs {
+  /**
+    * Initializes a new instance of the ASPxClientWebChartControlHotTrackEventArgs class with specified settings.
+    */
   def this(
     processOnServer: Boolean,
     hitObject: typings.devexpressWeb.ASPxClientWebChartElement,
@@ -53,4 +56,3 @@ class ASPxClientWebChartControlHotTrackEventArgs protected ()
     absoluteY: Double
   ) = this()
 }
-

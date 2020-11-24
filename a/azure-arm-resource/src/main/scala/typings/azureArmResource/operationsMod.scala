@@ -7,13 +7,15 @@ import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/feature/operations", JSImport.Namespace)
 @js.native
 object operationsMod extends js.Object {
+  
   @js.native
   trait Features extends js.Object {
+    
     /**
       * Gets the preview feature with the specified name.
       *
@@ -58,6 +60,7 @@ object operationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[FeatureResult]
     ): Unit = js.native
+    
     /**
       * Gets the preview feature with the specified name.
       *
@@ -79,6 +82,7 @@ object operationsMod extends js.Object {
       */
     def getWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
     def getWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
+    
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -122,6 +126,7 @@ object operationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[FeatureOperationsListResult]
     ): Unit = js.native
+    
     /**
       * Gets all the preview features that are available through AFEC for the
       * subscription.
@@ -158,6 +163,7 @@ object operationsMod extends js.Object {
     def listAll(callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
     def listAll(options: CustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
     def listAll(options: CustomHeaders, callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
+    
     /**
       * Gets all the preview features that are available through AFEC for the
       * subscription.
@@ -201,6 +207,7 @@ object operationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[FeatureOperationsListResult]
     ): Unit = js.native
+    
     /**
       * Gets all the preview features that are available through AFEC for the
       * subscription.
@@ -221,6 +228,7 @@ object operationsMod extends js.Object {
       */
     def listAllNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     def listAllNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    
     /**
       * Gets all the preview features that are available through AFEC for the
       * subscription.
@@ -238,6 +246,7 @@ object operationsMod extends js.Object {
       */
     def listAllWithHttpOperationResponse(): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     def listAllWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -281,6 +290,7 @@ object operationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[FeatureOperationsListResult]
     ): Unit = js.native
+    
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -301,6 +311,7 @@ object operationsMod extends js.Object {
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -321,6 +332,7 @@ object operationsMod extends js.Object {
       */
     def listWithHttpOperationResponse(resourceProviderNamespace: String): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     def listWithHttpOperationResponse(resourceProviderNamespace: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    
     /**
       * Registers the preview feature for the subscription.
       *
@@ -365,6 +377,7 @@ object operationsMod extends js.Object {
       options: CustomHeaders,
       callback: ServiceCallback[FeatureResult]
     ): Unit = js.native
+    
     /**
       * Registers the preview feature for the subscription.
       *
@@ -387,6 +400,4 @@ object operationsMod extends js.Object {
     def registerWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
     def registerWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
   }
-  
 }
-

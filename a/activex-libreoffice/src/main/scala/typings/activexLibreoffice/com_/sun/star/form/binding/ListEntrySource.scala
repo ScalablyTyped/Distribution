@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** defines a component which provides a list of string entries */
 @js.native
 trait ListEntrySource
   extends XListEntrySource
      with XComponent
-
 object ListEntrySource {
+  
   @scala.inline
   def apply(
     AllListEntries: SafeArray[String],
@@ -35,4 +35,3 @@ object ListEntrySource {
     __obj.asInstanceOf[ListEntrySource]
   }
 }
-

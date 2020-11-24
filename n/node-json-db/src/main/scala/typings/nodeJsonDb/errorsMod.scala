@@ -4,11 +4,12 @@ import typings.std.Error
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-json-db/dist/lib/Errors", JSImport.Namespace)
 @js.native
 object errorsMod extends js.Object {
+  
   @js.native
   class DataError () extends NestedError
   
@@ -19,9 +20,9 @@ object errorsMod extends js.Object {
   abstract class NestedError protected () extends Error {
     def this(message: String, id: Number) = this()
     def this(message: String, id: Number, inner: Error) = this()
+    
     val id: Number = js.native
+    
     val inner: js.UndefOr[Error] = js.native
   }
-  
 }
-

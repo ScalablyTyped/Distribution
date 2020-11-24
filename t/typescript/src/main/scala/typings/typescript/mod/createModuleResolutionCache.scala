@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createModuleResolutionCache")
 @js.native
 object createModuleResolutionCache extends js.Object {
+  
   def apply(
     currentDirectory: java.lang.String,
     getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String]
@@ -17,4 +18,3 @@ object createModuleResolutionCache extends js.Object {
     options: CompilerOptions
   ): ModuleResolutionCache = js.native
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.ProgressEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ProgressEvent")
 @js.native
@@ -14,7 +14,6 @@ class ProgressEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: ProgressEventInit) = this()
 }
-
 @JSGlobal("ProgressEvent")
 @js.native
 object ProgressEvent
@@ -24,4 +23,3 @@ object ProgressEvent
       /* eventInitDict */ ProgressEventInit, 
       typings.std.ProgressEvent[typings.std.EventTarget]
     ]
-

@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FacetFilterListDataType extends js.Object
-
 /**
   * FacetFilterList data types.
   */
 @JSGlobal("sap.m.FacetFilterListDataType")
 @js.native
 object FacetFilterListDataType extends js.Object {
+  
   @js.native
   sealed trait Boolean extends FacetFilterListDataType
   
@@ -33,6 +33,4 @@ object FacetFilterListDataType extends js.Object {
   
   @js.native
   sealed trait Time extends FacetFilterListDataType
-  
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-webcam" : "5.2.0"
+      "react-webcam" : "5.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-webcam" : "5.2.0"
+      "react-webcam" : "5.2.2"
     }
   ],
   "compile-devDependencies" : [

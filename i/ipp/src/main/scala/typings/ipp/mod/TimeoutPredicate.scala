@@ -2,7 +2,7 @@ package typings.ipp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ipp.ippStrings.activity
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.ipp.ippStrings.none
 */
 trait TimeoutPredicate extends js.Object
-
 object TimeoutPredicate {
+  
   @scala.inline
   def activity: typings.ipp.ippStrings.activity = "activity".asInstanceOf[typings.ipp.ippStrings.activity]
+  
   @scala.inline
   def inactivity: typings.ipp.ippStrings.inactivity = "inactivity".asInstanceOf[typings.ipp.ippStrings.inactivity]
+  
   @scala.inline
   def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
 }
-

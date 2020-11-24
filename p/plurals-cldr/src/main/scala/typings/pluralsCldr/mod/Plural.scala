@@ -2,10 +2,11 @@ package typings.pluralsCldr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Plural extends js.Object {
+  
   def apply(locale: String, number: String): Form | Null = js.native
   /**
     * Returns the form name for a given number. If the locale is not
@@ -16,6 +17,7 @@ trait Plural extends js.Object {
     *     trailing zeroes.
     */
   def apply(locale: String, number: Double): Form | Null = js.native
+  
   /**
     * Returns an array of available forms for the given locale. If the
     * locale is not supported, returns `null`.
@@ -23,6 +25,7 @@ trait Plural extends js.Object {
     * @param locale The locale code.
     */
   def forms(locale: String): js.Array[Form] | Null = js.native
+  
   def indexOf(locale: String, number: String): Double = js.native
   /**
     * Returns the index of the form for a given number. If the locale is
@@ -39,4 +42,3 @@ trait Plural extends js.Object {
     */
   def indexOf(locale: String, number: Double): Double = js.native
 }
-

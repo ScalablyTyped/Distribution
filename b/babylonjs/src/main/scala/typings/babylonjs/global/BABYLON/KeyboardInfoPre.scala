@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.KeyboardInfoPre")
 @js.native
@@ -25,20 +25,4 @@ class KeyboardInfoPre protected ()
     */
   event: KeyboardEvent
   ) = this()
-  /**
-    * Defines the related dom event
-    */
-  /* CompleteClass */
-  override var event: KeyboardEvent = js.native
-  /**
-    * Defines whether the engine should skip the next onKeyboardObservable associated to this pre.
-    */
-  /* CompleteClass */
-  override var skipOnPointerObservable: Boolean = js.native
-  /**
-    * Defines the type of event (KeyboardEventTypes)
-    */
-  /* CompleteClass */
-  override var `type`: Double = js.native
 }
-

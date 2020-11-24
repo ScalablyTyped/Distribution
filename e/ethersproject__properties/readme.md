@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__properties
 
-Typings are for version 5.0.2
+Typings are for version 5.0.5
 
 ## Library description:
 Properties utility functions for ethers.
@@ -10,9 +10,9 @@ Properties utility functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/properties |
 | Keywords           | Ethereum, ethers |
-| # releases         | 25 |
-| # dependents       | 23 |
-| # downloads        | 197674 |
+| # releases         | 33 |
+| # dependents       | 43 |
+| # downloads        | 1769815 |
 | # stars            | 0 |
 
 ## Links

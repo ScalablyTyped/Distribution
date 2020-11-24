@@ -11,8 +11,8 @@ Return true if a value is a valid glob pattern or patterns.
 | Full name          | is-valid-glob |
 | Keywords           | array, check, glob, is, match, pattern, patterns, read, test, valid, validate |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 61413749 |
+| # dependents       | 34 |
+| # downloads        | 71948898 |
 | # stars            | 0 |
 
 ## Links

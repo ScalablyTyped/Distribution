@@ -2,17 +2,17 @@ package typings.reactNativeGoby.mod.Goby
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InstallMode extends js.Object
-
 /**
   * Indicates when you would like an installed update to actually be applied.
   */
 @JSImport("react-native-goby", "Goby.InstallMode")
 @js.native
 object InstallMode extends js.Object {
+  
   /**
     * Indicates that you want to install the update and restart the app immediately.
     */
@@ -31,6 +31,4 @@ object InstallMode extends js.Object {
     */
   @js.native
   sealed trait ON_NEXT_RESUME extends InstallMode
-  
 }
-

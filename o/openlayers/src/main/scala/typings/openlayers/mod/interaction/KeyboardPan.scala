@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.olx.interaction.KeyboardPanOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -41,11 +41,11 @@ import scala.scalajs.js.annotation._
 class KeyboardPan () extends Interaction {
   def this(opt_options: KeyboardPanOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "interaction.KeyboardPan")
 @js.native
 object KeyboardPan extends js.Object {
+  
   /**
     * Handles the {@link ol.MapBrowserEvent map browser event} if it was a
     * `KeyEvent`, and decides the direction to pan to (if an arrow key was
@@ -56,4 +56,3 @@ object KeyboardPan extends js.Object {
     */
   def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
 }
-

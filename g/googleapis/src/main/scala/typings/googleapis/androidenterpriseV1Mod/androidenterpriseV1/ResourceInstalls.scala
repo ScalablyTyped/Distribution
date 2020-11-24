@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Installs")
 @js.native
 class ResourceInstalls protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.installs.delete
     * @desc Requests to remove an app from a device. A call to get or list will
@@ -42,6 +44,7 @@ class ResourceInstalls protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceInstallsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceInstallsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * androidenterprise.installs.get
     * @desc Retrieves details of an installation of an app on a device.
@@ -73,6 +76,7 @@ class ResourceInstalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstall]
   ): Unit = js.native
+  
   /**
     * androidenterprise.installs.list
     * @desc Retrieves the details of all apps installed on the specified
@@ -104,6 +108,7 @@ class ResourceInstalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstallsListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.installs.patch
     * @desc Requests to install the latest version of an app to a device. If
@@ -138,6 +143,7 @@ class ResourceInstalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstall]
   ): Unit = js.native
+  
   /**
     * androidenterprise.installs.update
     * @desc Requests to install the latest version of an app to a device. If
@@ -173,4 +179,3 @@ class ResourceInstalls protected () extends js.Object {
     callback: BodyResponseCallback[SchemaInstall]
   ): Unit = js.native
 }
-

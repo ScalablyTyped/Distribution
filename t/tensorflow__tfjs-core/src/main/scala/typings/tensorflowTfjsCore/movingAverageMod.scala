@@ -1,18 +1,20 @@
 package typings.tensorflowTfjsCore
 
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/ops/moving_average", JSImport.Namespace)
 @js.native
 object movingAverageMod extends js.Object {
+  
   @js.native
   object movingAverage extends js.Object {
+    
     def apply[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double): T = js.native
     def apply[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
     def apply[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: Double): T = js.native
@@ -62,6 +64,4 @@ object movingAverageMod extends js.Object {
     def apply[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: Scalar): T = js.native
     def apply[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = js.native
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.openfin.contextChannelsMod
 import typings.openfin.openfinStrings.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/fdc3/contextChannels", "DefaultChannel")
 @js.native
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 class DefaultChannel_ ()
   extends ChannelBase
      with Channel {
+  
   @JSName("type")
   val type_DefaultChannel_ : default = js.native
 }
-

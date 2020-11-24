@@ -3,21 +3,24 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FlexBox extends Control {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: Control): FlexBox = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): FlexBox = js.native
+  
   /**
     * Gets current value of property <code>alignContent</code>.Determines the layout behavior of container
     * lines when there's extra space along the cross-axis. This property has no effect in Internet
@@ -26,6 +29,7 @@ trait FlexBox extends Control {
     * @returns Value of property <code>alignContent</code>
     */
   def getAlignContent(): FlexAlignContent = js.native
+  
   /**
     * Gets current value of property <code>alignItems</code>.Determines the layout behavior of items along
     * the cross-axis. "Baseline" is not supported in Internet Explorer 10.Default value is
@@ -33,6 +37,7 @@ trait FlexBox extends Control {
     * @returns Value of property <code>alignItems</code>
     */
   def getAlignItems(): FlexAlignItems = js.native
+  
   /**
     * Gets current value of property <code>backgroundDesign</code>.Defines the background style of the
     * <code>sap.m.FlexBox</code>.Default value is <code>Transparent</code>.
@@ -40,18 +45,21 @@ trait FlexBox extends Control {
     * @returns Value of property <code>backgroundDesign</code>
     */
   def getBackgroundDesign(): BackgroundDesign = js.native
+  
   /**
     * Gets current value of property <code>direction</code>.Determines the direction of the layout of
     * child elements.Default value is <code>Row</code>.
     * @returns Value of property <code>direction</code>
     */
   def getDirection(): FlexDirection = js.native
+  
   /**
     * Gets current value of property <code>displayInline</code>.Determines whether the
     * <code>sap.m.FlexBox</code> is in block or inline mode.Default value is <code>false</code>.
     * @returns Value of property <code>displayInline</code>
     */
   def getDisplayInline(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>fitContainer</code>.Determines whether the
     * <code>sap.m.FlexBox</code> will be sized to completely fill its container. If the
@@ -60,6 +68,7 @@ trait FlexBox extends Control {
     * @returns Value of property <code>fitContainer</code>
     */
   def getFitContainer(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>height</code>.The height of the <code>sap.m.FlexBox</code>.
     * Note that when a percentage is given, for the height to work as expected, the height of the
@@ -68,22 +77,26 @@ trait FlexBox extends Control {
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.Flex items within the flexible box layout
     */
   def getItems(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>justifyContent</code>.Determines the layout behavior along the
     * main axis.Default value is <code>Start</code>.
     * @returns Value of property <code>justifyContent</code>
     */
   def getJustifyContent(): FlexJustifyContent = js.native
+  
   /**
     * Gets current value of property <code>renderType</code>.Determines whether the layout is rendered as
     * a series of divs or as an unordered list (ul)Default value is <code>Div</code>.
     * @returns Value of property <code>renderType</code>
     */
   def getRenderType(): FlexRendertype = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The width of the <code>sap.m.FlexBox</code>. Note
     * that when a percentage is given, for the width to work as expected, the width of the surrounding
@@ -92,6 +105,7 @@ trait FlexBox extends Control {
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>wrap</code>.Determines the wrapping behavior of the flex
     * container. This property has no effect in older browsers, e.g. Android Native 4.3 and below.Default
@@ -100,6 +114,7 @@ trait FlexBox extends Control {
     * @returns Value of property <code>wrap</code>
     */
   def getWrap(): FlexWrap = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>items</code>.and
     * returns its index if found or -1 otherwise.
@@ -107,6 +122,7 @@ trait FlexBox extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: Control): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -117,12 +133,14 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: Control, iIndex: Double): FlexBox = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[Control] = js.native
+  
   def removeItem(vItem: String): Control = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -131,6 +149,7 @@ trait FlexBox extends Control {
     */
   def removeItem(vItem: Double): Control = js.native
   def removeItem(vItem: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>alignContent</code>.Determines the layout behavior of container
     * lines when there's extra space along the cross-axis. This property has no effect in Internet
@@ -141,6 +160,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAlignContent(sAlignContent: FlexAlignContent): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>alignItems</code>.Determines the layout behavior of items along
     * the cross-axis. "Baseline" is not supported in Internet Explorer 10.When called with a value of
@@ -150,6 +170,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAlignItems(sAlignItems: FlexAlignItems): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>backgroundDesign</code>.Defines the background style of the
     * <code>sap.m.FlexBox</code>.When called with a value of <code>null</code> or <code>undefined</code>,
@@ -159,6 +180,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundDesign(sBackgroundDesign: BackgroundDesign): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>direction</code>.Determines the direction of the layout of child
     * elements.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -167,6 +189,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDirection(sDirection: FlexDirection): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>displayInline</code>.Determines whether the
     * <code>sap.m.FlexBox</code> is in block or inline mode.When called with a value of <code>null</code>
@@ -176,6 +199,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDisplayInline(bDisplayInline: Boolean): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>fitContainer</code>.Determines whether the
     * <code>sap.m.FlexBox</code> will be sized to completely fill its container. If the
@@ -187,6 +211,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFitContainer(bFitContainer: Boolean): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.The height of the <code>sap.m.FlexBox</code>. Note
     * that when a percentage is given, for the height to work as expected, the height of the surrounding
@@ -197,6 +222,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>justifyContent</code>.Determines the layout behavior along the
     * main axis.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -205,6 +231,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setJustifyContent(sJustifyContent: FlexJustifyContent): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>renderType</code>.Determines whether the layout is rendered as a
     * series of divs or as an unordered list (ul)When called with a value of <code>null</code> or
@@ -214,6 +241,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRenderType(sRenderType: FlexRendertype): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.The width of the <code>sap.m.FlexBox</code>. Note
     * that when a percentage is given, for the width to work as expected, the width of the surrounding
@@ -224,6 +252,7 @@ trait FlexBox extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): FlexBox = js.native
+  
   /**
     * Sets a new value for property <code>wrap</code>.Determines the wrapping behavior of the flex
     * container. This property has no effect in older browsers, e.g. Android Native 4.3 and below.When
@@ -235,4 +264,3 @@ trait FlexBox extends Control {
     */
   def setWrap(sWrap: FlexWrap): FlexBox = js.native
 }
-

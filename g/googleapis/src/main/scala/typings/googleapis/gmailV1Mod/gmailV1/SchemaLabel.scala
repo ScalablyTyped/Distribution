@@ -2,7 +2,7 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Labels are used to categorize messages and threads within the user&#39;s
@@ -10,44 +10,54 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaLabel extends js.Object {
+  
   /**
     * The color to assign to the label. Color is only available for labels that
     * have their type set to user.
     */
   var color: js.UndefOr[SchemaLabelColor] = js.native
+  
   /**
     * The immutable ID of the label.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * The visibility of the label in the label list in the Gmail web interface.
     */
   var labelListVisibility: js.UndefOr[String] = js.native
+  
   /**
     * The visibility of the label in the message list in the Gmail web
     * interface.
     */
   var messageListVisibility: js.UndefOr[String] = js.native
+  
   /**
     * The total number of messages with the label.
     */
   var messagesTotal: js.UndefOr[Double] = js.native
+  
   /**
     * The number of unread messages with the label.
     */
   var messagesUnread: js.UndefOr[Double] = js.native
+  
   /**
     * The display name of the label.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The total number of threads with the label.
     */
   var threadsTotal: js.UndefOr[Double] = js.native
+  
   /**
     * The number of unread threads with the label.
     */
   var threadsUnread: js.UndefOr[Double] = js.native
+  
   /**
     * The owner type for the label. User labels are created by the user and can
     * be modified and deleted by the user and can be applied to any message or
@@ -60,65 +70,87 @@ trait SchemaLabel extends js.Object {
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaLabel {
+  
   @scala.inline
   def apply(): SchemaLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLabel]
   }
+  
   @scala.inline
   implicit class SchemaLabelOps[Self <: SchemaLabel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setColor(value: SchemaLabelColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColor: Self = this.set("color", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setLabelListVisibility(value: String): Self = this.set("labelListVisibility", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelListVisibility: Self = this.set("labelListVisibility", js.undefined)
+    
     @scala.inline
     def setMessageListVisibility(value: String): Self = this.set("messageListVisibility", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMessageListVisibility: Self = this.set("messageListVisibility", js.undefined)
+    
     @scala.inline
     def setMessagesTotal(value: Double): Self = this.set("messagesTotal", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMessagesTotal: Self = this.set("messagesTotal", js.undefined)
+    
     @scala.inline
     def setMessagesUnread(value: Double): Self = this.set("messagesUnread", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMessagesUnread: Self = this.set("messagesUnread", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setThreadsTotal(value: Double): Self = this.set("threadsTotal", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteThreadsTotal: Self = this.set("threadsTotal", js.undefined)
+    
     @scala.inline
     def setThreadsUnread(value: Double): Self = this.set("threadsUnread", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteThreadsUnread: Self = this.set("threadsUnread", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

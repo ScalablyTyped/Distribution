@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.indexBundleMod
 import typings.officeUiFabricReact.baseSelectedItemsListTypesMod.IBaseSelectedItemsListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseSelectedItemsList")
 @js.native
@@ -11,4 +11,3 @@ class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protec
   extends typings.officeUiFabricReact.mod.BaseSelectedItemsList[T, P] {
   def this(basePickerProps: P) = this()
 }
-

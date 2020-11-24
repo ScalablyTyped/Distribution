@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.mediapackagevodMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "MediaPackageVod")
 @js.native
@@ -14,4 +14,3 @@ class MediaPackageVod ()
   extends typings.awsSdk.mod.MediaPackageVod {
   def this(options: ClientConfiguration) = this()
 }
-

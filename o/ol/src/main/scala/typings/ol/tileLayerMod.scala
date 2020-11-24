@@ -8,19 +8,16 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/renderer/canvas/TileLayer", JSImport.Namespace)
 @js.native
 object tileLayerMod extends js.Object {
+  
   @js.native
   trait CanvasTileLayerRenderer
     extends typings.ol.canvasLayerMod.default[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] {
-    var renderedPixelRatio: Double = js.native
-    var renderedProjection: typings.ol.projectionMod.default = js.native
-    var renderedRevision: Double = js.native
-    var renderedTiles: js.Array[typings.ol.olTileMod.default] = js.native
-    var tmpExtent: Extent = js.native
+    
     def drawTileImage(
       tile: typings.ol.imageTileMod.default,
       frameState: FrameState,
@@ -32,9 +29,28 @@ object tileLayerMod extends js.Object {
       transition: Boolean,
       opacity: Double
     ): Unit = js.native
+    
+    def getImage(): HTMLCanvasElement = js.native
+    
     def getTile(z: Double, x: Double, y: Double, frameState: FrameState): typings.ol.olTileMod.default = js.native
+    
+    /**
+      * Get the image from a tile.
+      */
     /* protected */ def getTileImage(tile: typings.ol.imageTileMod.default): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
+    
     /* protected */ def isDrawableTile(tile: typings.ol.olTileMod.default): Boolean = js.native
+    
+    /**
+      * Manage tile pyramid.
+      * This function performs a number of functions related to the tiles at the
+      * current zoom and lower zoom levels:
+      *
+      * registers idle tiles in frameState.wantedTiles so that they are not
+      * discarded by the tile queue
+      * enqueues missing tiles
+      *
+      */
     /* protected */ def manageTilePyramid(
       frameState: FrameState,
       tileSource: typings.ol.sourceTileMod.default,
@@ -56,7 +72,19 @@ object tileLayerMod extends js.Object {
       preload: Double,
       opt_tileCallback: js.Function0[Unit]
     ): Unit = js.native
+    
+    var renderedPixelRatio: Double = js.native
+    
+    var renderedProjection: typings.ol.projectionMod.default = js.native
+    
+    var renderedRevision: Double = js.native
+    
+    var renderedTiles: js.Array[typings.ol.olTileMod.default] = js.native
+    
     /* protected */ def scheduleExpireCache(frameState: FrameState, tileSource: typings.ol.sourceTileMod.default): Unit = js.native
+    
+    var tmpExtent: Extent = js.native
+    
     /* protected */ def updateUsedTiles(
       usedTiles: StringDictionary[StringDictionary[Boolean]],
       tileSource: typings.ol.sourceTileMod.default,
@@ -69,6 +97,4 @@ object tileLayerMod extends js.Object {
     def this(tileLayer: typings.ol.tileMod.default) = this()
     def this(tileLayer: typings.ol.vectorTileMod.default) = this()
   }
-  
 }
-

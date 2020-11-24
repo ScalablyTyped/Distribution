@@ -2,10 +2,11 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Point extends js.Object {
+  
   /**
     * Cancel sonification of a point. Calls onEnd functions.
     *
@@ -15,6 +16,7 @@ trait Point extends js.Object {
     */
   def cancelSonify(): Unit = js.native
   def cancelSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * Sonify a single point.
     *
@@ -23,4 +25,3 @@ trait Point extends js.Object {
     */
   def sonify(options: PointSonifyOptionsObject): Unit = js.native
 }
-

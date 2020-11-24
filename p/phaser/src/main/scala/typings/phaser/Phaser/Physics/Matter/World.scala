@@ -18,7 +18,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterDebugConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterRunnerConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Matter World class is responsible for managing one single instance of a Matter Physics World for Phaser.
@@ -35,12 +35,46 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait World extends EventEmitter {
+  
+  def add(`object`: js.Array[js.Object]): this.type = js.native
+  /**
+    * Adds a Matter JS object, or array of objects, to the world.
+    * 
+    * The objects should be valid Matter JS entities, such as a Body, Composite or Constraint.
+    * 
+    * Triggers `beforeAdd` and `afterAdd` events.
+    * @param object Can be single object, or an array, and can be a body, composite or constraint.
+    */
+  def add(`object`: js.Object): this.type = js.native
+  
   /**
     * Automatically call Engine.update every time the game steps.
     * If you disable this then you are responsible for calling `World.step` directly from your game.
     * If you call `set60Hz` or `set30Hz` then `autoUpdate` is reset to `true`.
     */
   var autoUpdate: Boolean = js.native
+  
+  /**
+    * Adds `MatterTileBody` instances for all the colliding tiles within the given tilemap layer.
+    * 
+    * Set the appropriate tiles in your layer to collide before calling this method!
+    * @param tilemapLayer An array of tiles.
+    * @param options Options to be passed to the MatterTileBody constructor. {@see Phaser.Physics.Matter.TileBody}
+    */
+  def convertTilemapLayer(tilemapLayer: DynamicTilemapLayer): this.type = js.native
+  def convertTilemapLayer(tilemapLayer: DynamicTilemapLayer, options: js.Object): this.type = js.native
+  def convertTilemapLayer(tilemapLayer: StaticTilemapLayer): this.type = js.native
+  def convertTilemapLayer(tilemapLayer: StaticTilemapLayer, options: js.Object): this.type = js.native
+  
+  /**
+    * Adds `MatterTileBody` instances for the given tiles. This adds bodies regardless of whether the
+    * tiles are set to collide or not.
+    * @param tiles An array of tiles.
+    * @param options Options to be passed to the MatterTileBody constructor. {@see Phaser.Physics.Matter.TileBody}
+    */
+  def convertTiles(tiles: js.Array[Tile]): this.type = js.native
+  def convertTiles(tiles: js.Array[Tile], options: js.Object): this.type = js.native
+  
   /**
     * The correction argument is an optional Number that specifies the time correction factor to apply to the update.
     * This can help improve the accuracy of the simulation in cases where delta is changing between updates.
@@ -49,6 +83,29 @@ trait World extends EventEmitter {
     * See the paper on Time Corrected Verlet for more information.
     */
   var correction: Double = js.native
+  
+  /**
+    * Creates a rectangle Matter body and adds it to the world.
+    * @param x The horizontal position of the body in the world.
+    * @param y The vertical position of the body in the world.
+    * @param width The width of the body.
+    * @param height The height of the body.
+    * @param options Optional Matter configuration object.
+    */
+  def create(x: Double, y: Double, width: Double, height: Double, options: js.Object): BodyType = js.native
+  
+  /**
+    * Creates a Phaser.GameObjects.Graphics object that is used to render all of the debug bodies and joints to.
+    * 
+    * This method is called automatically by the constructor, if debugging has been enabled.
+    * 
+    * The created Graphics object is automatically added to the Scene at 0x0 and given a depth of `Number.MAX_VALUE`,
+    * so it renders above all else in the Scene.
+    * 
+    * The Graphics object is assigned to the `debugGraphic` property of this class and `drawDebug` is enabled.
+    */
+  def createDebugGraphic(): Graphics = js.native
+  
   /**
     * The debug configuration object.
     * 
@@ -62,22 +119,47 @@ trait World extends EventEmitter {
     * that is removed and then re-added at a later time.
     */
   var debugConfig: MatterDebugConfig = js.native
+  
   /**
     * An instance of the Graphics object the debug bodies are drawn to, if enabled.
     */
   var debugGraphic: Graphics = js.native
+  
+  /**
+    * Sets the world gravity and gravity scale to 0.
+    */
+  def disableGravity(): this.type = js.native
+  
   /**
     * A flag that controls if the debug graphics will be drawn to or not.
     */
   var drawDebug: Boolean = js.native
+  
   /**
     * A flag that toggles if the world is enabled or not.
     */
   var enabled: Boolean = js.native
+  
   /**
     * An instance of the MatterJS Engine.
     */
   var engine: Engine = js.native
+  
+  /**
+    * Returns all the bodies in the Matter World, including all bodies in children, recursively.
+    */
+  def getAllBodies(): js.Array[BodyType] = js.native
+  
+  /**
+    * Returns all the composites in the Matter World, including all composites in children, recursively.
+    */
+  def getAllComposites(): js.Array[CompositeType] = js.native
+  
+  /**
+    * Returns all the constraints in the Matter World, including all constraints in children, recursively.
+    */
+  def getAllConstraints(): js.Array[ConstraintType] = js.native
+  
   /**
     * This function is called every time the core game loop steps, which is bound to the
     * Request Animation Frame frequency unless otherwise modified.
@@ -103,101 +185,25 @@ trait World extends EventEmitter {
     * of your game.
     */
   var getDelta: js.Function = js.native
-  /**
-    * A `World` composite object that will contain all simulated bodies and constraints.
-    */
-  var localWorld: typings.phaser.MatterJS.World = js.native
-  /**
-    * The Matter JS Runner Configuration object.
-    * 
-    * This object is populated via the Matter Configuration object's `runner` property and is
-    * updated constantly during the game step.
-    */
-  var runner: MatterRunnerConfig = js.native
-  /**
-    * The Scene to which this Matter World instance belongs.
-    */
-  var scene: Scene = js.native
-  /**
-    * An object containing the 4 wall bodies that bound the physics world.
-    */
-  var walls: js.Object = js.native
-  def add(`object`: js.Array[js.Object]): this.type = js.native
-  /**
-    * Adds a Matter JS object, or array of objects, to the world.
-    * 
-    * The objects should be valid Matter JS entities, such as a Body, Composite or Constraint.
-    * 
-    * Triggers `beforeAdd` and `afterAdd` events.
-    * @param object Can be single object, or an array, and can be a body, composite or constraint.
-    */
-  def add(`object`: js.Object): this.type = js.native
-  /**
-    * Adds `MatterTileBody` instances for all the colliding tiles within the given tilemap layer.
-    * 
-    * Set the appropriate tiles in your layer to collide before calling this method!
-    * @param tilemapLayer An array of tiles.
-    * @param options Options to be passed to the MatterTileBody constructor. {@see Phaser.Physics.Matter.TileBody}
-    */
-  def convertTilemapLayer(tilemapLayer: DynamicTilemapLayer): this.type = js.native
-  def convertTilemapLayer(tilemapLayer: DynamicTilemapLayer, options: js.Object): this.type = js.native
-  def convertTilemapLayer(tilemapLayer: StaticTilemapLayer): this.type = js.native
-  def convertTilemapLayer(tilemapLayer: StaticTilemapLayer, options: js.Object): this.type = js.native
-  /**
-    * Adds `MatterTileBody` instances for the given tiles. This adds bodies regardless of whether the
-    * tiles are set to collide or not.
-    * @param tiles An array of tiles.
-    * @param options Options to be passed to the MatterTileBody constructor. {@see Phaser.Physics.Matter.TileBody}
-    */
-  def convertTiles(tiles: js.Array[Tile]): this.type = js.native
-  def convertTiles(tiles: js.Array[Tile], options: js.Object): this.type = js.native
-  /**
-    * Creates a rectangle Matter body and adds it to the world.
-    * @param x The horizontal position of the body in the world.
-    * @param y The vertical position of the body in the world.
-    * @param width The width of the body.
-    * @param height The height of the body.
-    * @param options Optional Matter configuration object.
-    */
-  def create(x: Double, y: Double, width: Double, height: Double, options: js.Object): BodyType = js.native
-  /**
-    * Creates a Phaser.GameObjects.Graphics object that is used to render all of the debug bodies and joints to.
-    * 
-    * This method is called automatically by the constructor, if debugging has been enabled.
-    * 
-    * The created Graphics object is automatically added to the Scene at 0x0 and given a depth of `Number.MAX_VALUE`,
-    * so it renders above all else in the Scene.
-    * 
-    * The Graphics object is assigned to the `debugGraphic` property of this class and `drawDebug` is enabled.
-    */
-  def createDebugGraphic(): Graphics = js.native
-  /**
-    * Sets the world gravity and gravity scale to 0.
-    */
-  def disableGravity(): this.type = js.native
-  /**
-    * Returns all the bodies in the Matter World, including all bodies in children, recursively.
-    */
-  def getAllBodies(): js.Array[BodyType] = js.native
-  /**
-    * Returns all the composites in the Matter World, including all composites in children, recursively.
-    */
-  def getAllComposites(): js.Array[CompositeType] = js.native
-  /**
-    * Returns all the constraints in the Matter World, including all constraints in children, recursively.
-    */
-  def getAllConstraints(): js.Array[ConstraintType] = js.native
+  
   /**
     * Returns `true` if the given body can be found within the World.
     * @param body The Matter Body, or Game Object, to search for within the world.
     */
   def has(body: Body): js.Array[BodyType] = js.native
   def has(body: GameObject): js.Array[BodyType] = js.native
+  
+  /**
+    * A `World` composite object that will contain all simulated bodies and constraints.
+    */
+  var localWorld: typings.phaser.MatterJS.World = js.native
+  
   /**
     * Returns the next unique category bitfield (starting after the initial default category 0x0001).
     * There are 32 available.
     */
   def nextCategory(): Double = js.native
+  
   /**
     * Returns the next unique group index for which bodies will collide.
     * If `isNonColliding` is `true`, returns the next unique group index for which bodies will not collide.
@@ -205,12 +211,14 @@ trait World extends EventEmitter {
     */
   def nextGroup(): Double = js.native
   def nextGroup(isNonColliding: Boolean): Double = js.native
+  
   /**
     * Pauses this Matter World instance and sets `enabled` to `false`.
     * 
     * A paused world will not run any simulations for the duration it is paused.
     */
   def pause(): this.type = js.native
+  
   def remove(`object`: js.Array[js.Object]): this.type = js.native
   def remove(`object`: js.Array[js.Object], deep: Boolean): this.type = js.native
   /**
@@ -224,6 +232,7 @@ trait World extends EventEmitter {
     */
   def remove(`object`: js.Object): this.type = js.native
   def remove(`object`: js.Object, deep: Boolean): this.type = js.native
+  
   def removeConstraint(constraint: js.Array[ConstraintType]): this.type = js.native
   def removeConstraint(constraint: js.Array[ConstraintType], deep: Boolean): this.type = js.native
   /**
@@ -235,6 +244,7 @@ trait World extends EventEmitter {
     */
   def removeConstraint(constraint: ConstraintType): this.type = js.native
   def removeConstraint(constraint: ConstraintType, deep: Boolean): this.type = js.native
+  
   /**
     * Renders a single Matter Body to the given Phaser Graphics Game Object.
     * 
@@ -532,6 +542,7 @@ trait World extends EventEmitter {
     fillColor: Double,
     fillOpacity: Double
   ): this.type = js.native
+  
   /**
     * Renders either all axes, or a single axis indicator, for an array of Bodies, to the given Graphics instance.
     * 
@@ -546,6 +557,7 @@ trait World extends EventEmitter {
     * @param lineOpacity The line opacity, between 0 and 1.
     */
   def renderBodyAxes(bodies: js.Array[_], graphics: Graphics, showAxes: Boolean, lineColor: Double, lineOpacity: Double): Unit = js.native
+  
   /**
     * Renders the bounds of an array of Bodies to the given Graphics instance.
     * 
@@ -561,6 +573,7 @@ trait World extends EventEmitter {
     * @param lineOpacity The line opacity, between 0 and 1.
     */
   def renderBodyBounds(bodies: js.Array[_], graphics: Graphics, lineColor: Double, lineOpacity: Double): Unit = js.native
+  
   /**
     * Renders a velocity indicator for an array of Bodies, to the given Graphics instance.
     * 
@@ -581,6 +594,7 @@ trait World extends EventEmitter {
     lineOpacity: Double,
     lineThickness: Double
   ): Unit = js.native
+  
   /**
     * Renders the list of collision points and normals to the given Graphics instance.
     * 
@@ -593,6 +607,7 @@ trait World extends EventEmitter {
     * @param lineColor The line color.
     */
   def renderCollisions(pairs: js.Array[Pair], graphics: Graphics, lineColor: Double): this.type = js.native
+  
   /**
     * Renders a single Matter Constraint, such as a Pin or a Spring, to the given Phaser Graphics Game Object.
     * 
@@ -617,6 +632,7 @@ trait World extends EventEmitter {
     anchorColor: Double,
     anchorSize: Double
   ): this.type = js.native
+  
   /**
     * Renders the Convex Hull for a single Matter Body to the given Phaser Graphics Game Object.
     * 
@@ -629,6 +645,7 @@ trait World extends EventEmitter {
     */
   def renderConvexHull(body: BodyType, graphics: Graphics, hullColor: Double): this.type = js.native
   def renderConvexHull(body: BodyType, graphics: Graphics, hullColor: Double, lineThickness: Double): this.type = js.native
+  
   /**
     * Renders the Engine Broadphase Controller Grid to the given Graphics instance.
     * 
@@ -642,6 +659,7 @@ trait World extends EventEmitter {
     * @param lineOpacity The line opacity, between 0 and 1.
     */
   def renderGrid(grid: Grid, graphics: Graphics, lineColor: Double, lineOpacity: Double): this.type = js.native
+  
   /**
     * Renders the list of Pair separations to the given Graphics instance.
     * 
@@ -654,6 +672,7 @@ trait World extends EventEmitter {
     * @param lineColor The line color.
     */
   def renderSeparations(pairs: js.Array[Pair], graphics: Graphics, lineColor: Double): this.type = js.native
+  
   /**
     * Resets the internal collision IDs that Matter.JS uses for Body collision groups.
     * 
@@ -663,10 +682,25 @@ trait World extends EventEmitter {
     * later in the same game.
     */
   def resetCollisionIDs(): Unit = js.native
+  
   /**
     * Resumes this Matter World instance from a paused state and sets `enabled` to `true`.
     */
   def resume(): this.type = js.native
+  
+  /**
+    * The Matter JS Runner Configuration object.
+    * 
+    * This object is populated via the Matter Configuration object's `runner` property and is
+    * updated constantly during the game step.
+    */
+  var runner: MatterRunnerConfig = js.native
+  
+  /**
+    * The Scene to which this Matter World instance belongs.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Sets the debug render style for the given Matter Body.
     * 
@@ -875,6 +909,7 @@ trait World extends EventEmitter {
     fillColor: Double,
     fillOpacity: Double
   ): this.type = js.native
+  
   /**
     * Sets the bounds of the Physics world to match the given world pixel dimensions.
     * You can optionally set which 'walls' to create: left, right, top or bottom.
@@ -903,6 +938,7 @@ trait World extends EventEmitter {
     top: js.UndefOr[Boolean],
     bottom: js.UndefOr[Boolean]
   ): World = js.native
+  
   /**
     * Sets the debug render style for the children of the given Matter Composite.
     * 
@@ -912,6 +948,7 @@ trait World extends EventEmitter {
     * @param composite The Matter Composite to set the render style on.
     */
   def setCompositeRenderStyle(composite: CompositeType): this.type = js.native
+  
   /**
     * Sets the debug render style for the given Matter Constraint.
     * 
@@ -939,11 +976,13 @@ trait World extends EventEmitter {
     anchorColor: js.UndefOr[Double],
     anchorSize: js.UndefOr[Double]
   ): this.type = js.native
+  
   /**
     * This internal method acts as a proxy between all of the Matter JS events and then re-emits them
     * via this class.
     */
   def setEventsProxy(): Unit = js.native
+  
   /**
     * Sets the worlds gravity to the values given.
     * 
@@ -960,6 +999,7 @@ trait World extends EventEmitter {
   def setGravity(x: Double, y: js.UndefOr[scala.Nothing], scale: Double): this.type = js.native
   def setGravity(x: Double, y: Double): this.type = js.native
   def setGravity(x: Double, y: Double, scale: Double): this.type = js.native
+  
   /**
     * Manually advances the physics simulation by one iteration.
     * 
@@ -987,6 +1027,7 @@ trait World extends EventEmitter {
   def step(delta: js.UndefOr[scala.Nothing], correction: Double): Unit = js.native
   def step(delta: Double): Unit = js.native
   def step(delta: Double, correction: Double): Unit = js.native
+  
   /**
     * The internal update method. This is called automatically by the parent Scene.
     * 
@@ -1004,14 +1045,17 @@ trait World extends EventEmitter {
     * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
     */
   def update(time: Double, delta: Double): Unit = js.native
+  
   /**
     * Runs the Matter Engine.update at a fixed timestep of 30Hz.
     */
   def update30Hz(): Double = js.native
+  
   /**
     * Runs the Matter Engine.update at a fixed timestep of 60Hz.
     */
   def update60Hz(): Double = js.native
+  
   /**
     * Updates the 4 rectangle bodies that were created, if `setBounds` was set in the Matter config, to use
     * the new positions and sizes. This method is usually only called internally via the `setBounds` method.
@@ -1183,5 +1227,9 @@ trait World extends EventEmitter {
   ): Unit = js.native
   def updateWall(add: Boolean, position: String, x: Double, y: Double, width: Double): Unit = js.native
   def updateWall(add: Boolean, position: String, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  
+  /**
+    * An object containing the 4 wall bodies that bound the physics world.
+    */
+  var walls: js.Object = js.native
 }
-

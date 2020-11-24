@@ -4,11 +4,12 @@ import typings.std.Error
 import typings.tar.anon.ExtractOptionsFileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tar", "x")
 @js.native
 object x extends js.Object {
+  
   def apply(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
   def apply(
     options: ExtractOptions with FileOptions,
@@ -24,4 +25,3 @@ object x extends js.Object {
   def apply(options: ExtractOptionsFileOptions): Unit = js.native
   def apply(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
 }
-

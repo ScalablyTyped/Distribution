@@ -3,7 +3,7 @@ package typings.babylonjs.postProcessesIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "BloomEffect")
 @js.native
@@ -31,8 +31,15 @@ class BloomEffect protected ()
     bloomScale: Double,
     bloomWeight: Double,
     bloomKernel: Double,
+    pipelineTextureType: js.UndefOr[scala.Nothing],
+    blockCompilation: Boolean
+  ) = this()
+  def this(
+    scene: Scene,
+    bloomScale: Double,
+    bloomWeight: Double,
+    bloomKernel: Double,
     pipelineTextureType: Double,
     blockCompilation: Boolean
   ) = this()
 }
-

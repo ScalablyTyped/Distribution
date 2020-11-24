@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-animate-scroll"
-version := "1.0-dt-20200515Z-701fb7"
+version := "1.0-dt-20200515Z-5956b2"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

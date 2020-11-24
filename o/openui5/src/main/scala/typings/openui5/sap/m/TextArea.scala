@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Wrapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextArea extends InputBase {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>liveChange</code> event of this
     * <code>sap.m.TextArea</code>.When called, the context of the event handler (its <code>this</code>)
@@ -22,6 +23,7 @@ trait TextArea extends InputBase {
     */
   def attachLiveChange(oData: js.Any, fnFunction: js.Any): TextArea = js.native
   def attachLiveChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): TextArea = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>liveChange</code> event of this
     * <code>sap.m.TextArea</code>.The passed function and listener object must match the ones used for
@@ -31,6 +33,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachLiveChange(fnFunction: js.Any, oListener: js.Any): TextArea = js.native
+  
   /**
     * Fires event <code>liveChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>value</code> of type <code>string</code>The new <code>value</code> of the
@@ -39,6 +42,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireLiveChange(mArguments: js.Any): TextArea = js.native
+  
   /**
     * Gets current value of property <code>cols</code>.Defines the visible width of the control, in
     * average character widths.<b>Note:</b> The <code>width</code> property wins over the
@@ -46,6 +50,7 @@ trait TextArea extends InputBase {
     * @returns Value of property <code>cols</code>
     */
   def getCols(): Double = js.native
+  
   /**
     * Gets current value of property <code>growing</code>.Indicates the ability of the control to
     * automatically grow and shrink dynamically with its content.<b>Note:</b> The <code>height</code>
@@ -54,6 +59,7 @@ trait TextArea extends InputBase {
     * @returns Value of property <code>growing</code>
     */
   def getGrowing(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>growingMaxLines</code>.Defines the maximum number of lines that
     * the control can grow.Default value is <code>0</code>.
@@ -61,17 +67,20 @@ trait TextArea extends InputBase {
     * @returns Value of property <code>growingMaxLines</code>
     */
   def getGrowingMaxLines(): Double = js.native
+  
   /**
     * Gets current value of property <code>height</code>.Defines the height of the control.
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>maxLength</code>.Defines the maximum number of characters that
     * the <code>value</code> can be.Default value is <code>0</code>.
     * @returns Value of property <code>maxLength</code>
     */
   def getMaxLength(): Double = js.native
+  
   /**
     * Gets current value of property <code>rows</code>.Defines the number of visible text lines for the
     * control.<b>Note:</b> The <code>height</code> property wins over the <code>rows</code> property, if
@@ -79,6 +88,7 @@ trait TextArea extends InputBase {
     * @returns Value of property <code>rows</code>
     */
   def getRows(): Double = js.native
+  
   /**
     * Gets current value of property <code>valueLiveUpdate</code>.Indicates when the <code>value</code>
     * property gets updated with the user changes. Setting it to <code>true</code> updates the
@@ -88,12 +98,14 @@ trait TextArea extends InputBase {
     * @returns Value of property <code>valueLiveUpdate</code>
     */
   def getValueLiveUpdate(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>wrapping</code>.Indicates how the control wraps the text, e.g.
     * <code>Soft</code>, <code>Hard</code>, <code>Off</code>.Default value is <code>None</code>.
     * @returns Value of property <code>wrapping</code>
     */
   def getWrapping(): Wrapping = js.native
+  
   /**
     * Sets a new value for property <code>cols</code>.Defines the visible width of the control, in average
     * character widths.<b>Note:</b> The <code>width</code> property wins over the <code>cols</code>
@@ -103,6 +115,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCols(iCols: Double): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>growing</code>.Indicates the ability of the control to
     * automatically grow and shrink dynamically with its content.<b>Note:</b> The <code>height</code>
@@ -114,6 +127,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowing(bGrowing: Boolean): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>growingMaxLines</code>.Defines the maximum number of lines that
     * the control can grow.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -123,6 +137,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowingMaxLines(iGrowingMaxLines: Double): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.Defines the height of the control.When called with
     * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -131,6 +146,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>maxLength</code>.Defines the maximum number of characters that
     * the <code>value</code> can be.When called with a value of <code>null</code> or
@@ -140,6 +156,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxLength(iMaxLength: Double): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>rows</code>.Defines the number of visible text lines for the
     * control.<b>Note:</b> The <code>height</code> property wins over the <code>rows</code> property, if
@@ -149,6 +166,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRows(iRows: Double): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>valueLiveUpdate</code>.Indicates when the <code>value</code>
     * property gets updated with the user changes. Setting it to <code>true</code> updates the
@@ -160,6 +178,7 @@ trait TextArea extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueLiveUpdate(bValueLiveUpdate: Boolean): TextArea = js.native
+  
   /**
     * Sets a new value for property <code>wrapping</code>.Indicates how the control wraps the text, e.g.
     * <code>Soft</code>, <code>Hard</code>, <code>Off</code>.When called with a value of <code>null</code>
@@ -170,4 +189,3 @@ trait TextArea extends InputBase {
     */
   def setWrapping(sWrapping: Wrapping): TextArea = js.native
 }
-

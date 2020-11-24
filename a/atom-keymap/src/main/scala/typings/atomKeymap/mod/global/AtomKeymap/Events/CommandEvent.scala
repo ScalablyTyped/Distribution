@@ -3,7 +3,7 @@ package typings.atomKeymap.mod.global.AtomKeymap.Events
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  This custom subclass of CustomEvent exists to provide the ::abortKeyBinding
@@ -14,8 +14,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CommandEvent
   extends CustomEvent[js.Any] {
-  var keyBindingAborted: Boolean = js.native
-  var propagationStopped: Boolean = js.native
+  
   def abortKeyBinding(): Unit = js.native
+  
+  var keyBindingAborted: Boolean = js.native
+  
+  var propagationStopped: Boolean = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the items of a Gallery themes. It also allows inserting and removing of single items.
@@ -17,16 +17,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XGalleryTheme extends XIndexAccess {
+  
   /**
     * retrieves the name of the Gallery theme
     * @returns The name of the Gallery theme
     */
   val Name: String = js.native
+  
   /**
     * retrieves the name of the Gallery theme
     * @returns The name of the Gallery theme
     */
   def getName(): String = js.native
+  
   /**
     * inserts an item
     * @param Drawing A drawing model that should be added to the collection
@@ -36,6 +39,7 @@ trait XGalleryTheme extends XIndexAccess {
     * @see com.sun.star.lang.WrappedTargetException
     */
   def insertDrawingByIndex(Drawing: XComponent, Index: Double): Double = js.native
+  
   /**
     * inserts an item
     * @param Graphic The {@link com.sun.star.graphic.XGraphic} object that should be added to the collection
@@ -46,6 +50,7 @@ trait XGalleryTheme extends XIndexAccess {
     * @see com.sun.star.lang.WrappedTargetException
     */
   def insertGraphicByIndex(Graphic: XGraphic, Index: Double): Double = js.native
+  
   /**
     * inserts an item
     * @param URL The URL of a graphic or media object, that should be added to the collection
@@ -55,12 +60,14 @@ trait XGalleryTheme extends XIndexAccess {
     * @see com.sun.star.lang.WrappedTargetException
     */
   def insertURLByIndex(URL: String, Index: Double): Double = js.native
+  
   /**
     * deletes an item from the collection
     * @param Index The position of the item to be removed. The position is zero based.
     * @see com.sun.star.container.NoSuchElementException
     */
   def removeByIndex(Index: Double): Unit = js.native
+  
   /**
     * updates the theme
     *
@@ -69,8 +76,8 @@ trait XGalleryTheme extends XIndexAccess {
     */
   def update(): Unit = js.native
 }
-
 object XGalleryTheme {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -93,32 +100,41 @@ object XGalleryTheme {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getName = js.Any.fromFunction0(getName), hasElements = js.Any.fromFunction0(hasElements), insertDrawingByIndex = js.Any.fromFunction2(insertDrawingByIndex), insertGraphicByIndex = js.Any.fromFunction2(insertGraphicByIndex), insertURLByIndex = js.Any.fromFunction2(insertURLByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[XGalleryTheme]
   }
+  
   @scala.inline
   implicit class XGalleryThemeOps[Self <: XGalleryTheme] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setInsertDrawingByIndex(value: (XComponent, Double) => Double): Self = this.set("insertDrawingByIndex", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setInsertGraphicByIndex(value: (XGraphic, Double) => Double): Self = this.set("insertGraphicByIndex", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setInsertURLByIndex(value: (String, Double) => Double): Self = this.set("insertURLByIndex", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveByIndex(value: Double => Unit): Self = this.set("removeByIndex", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
   }
-  
 }
-

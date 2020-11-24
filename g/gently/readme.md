@@ -11,7 +11,7 @@
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 12899 |
+| # downloads        | 12886 |
 | # stars            | 1 |
 
 ## Links

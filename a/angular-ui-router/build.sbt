@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-ui-router"
-version := "1.1.38-dt-20200515Z-d7bb33"
+version := "1.1.38-dt-20200923Z-5e0b24"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.7-dt-20200624Z-a4dbaf",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "angular" % "1.8-dt-20201104Z-d187cd",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

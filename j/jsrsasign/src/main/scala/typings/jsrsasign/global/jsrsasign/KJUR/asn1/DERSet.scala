@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER Set
@@ -24,4 +24,3 @@ class DERSet ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractStructured {
   def this(params: ArrayParam[typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object]) = this()
 }
-

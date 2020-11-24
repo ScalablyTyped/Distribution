@@ -8,17 +8,17 @@ import typings.xmldsigjs.algorithmMod.ISignatureAlgorithm
 import typings.xmldsigjs.algorithmMod.SignatureAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "CryptoConfig")
 @js.native
 class CryptoConfig ()
   extends typings.xmldsigjs.cryptoConfigMod.CryptoConfig
-
 /* static members */
 @JSImport("xmldsigjs", "CryptoConfig")
 @js.native
 object CryptoConfig extends js.Object {
+  
   /**
     * Creates Transform from given name
     * if name is not exist then throws error
@@ -31,9 +31,12 @@ object CryptoConfig extends js.Object {
     */
   def CreateFromName(): typings.xmldsigjs.xmlMod.Transform = js.native
   def CreateFromName(name: String): typings.xmldsigjs.xmlMod.Transform = js.native
+  
   def CreateHashAlgorithm(namespace: String): HashAlgorithm = js.native
+  
   def CreateSignatureAlgorithm(method: typings.xmldsigjs.signatureMethodMod.SignatureMethod): SignatureAlgorithm = js.native
+  
   def GetHashAlgorithm(algorithm: AlgorithmIdentifier): IHashAlgorithm = js.native
+  
   def GetSignatureAlgorithm(algorithm: Algorithm): ISignatureAlgorithm = js.native
 }
-

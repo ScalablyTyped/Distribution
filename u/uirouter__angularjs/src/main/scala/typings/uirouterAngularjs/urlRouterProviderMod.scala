@@ -10,19 +10,21 @@ import typings.uirouterCore.mod.UrlRouter
 import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs/lib/urlRouterProvider", JSImport.Namespace)
 @js.native
 object urlRouterProviderMod extends js.Object {
+  
   @js.native
   class UrlRouterProvider protected () extends js.Object {
     /** @hidden */
     def this(/** @hidden */ router: UIRouter) = this()
-    var router: js.Any = js.native
+    
     /** @hidden */
     @JSName("$get")
     def $get(): UrlRouter = js.native
+    
     /**
       * Disables monitoring of the URL.
       *
@@ -55,6 +57,7 @@ object urlRouterProviderMod extends js.Object {
       */
     def deferIntercept(): Unit = js.native
     def deferIntercept(defer: Boolean): Unit = js.native
+    
     /**
       * Defines the path or behavior to use when no url can be matched.
       *
@@ -83,6 +86,9 @@ object urlRouterProviderMod extends js.Object {
       */
     def otherwise(rule: String): UrlRouterProvider = js.native
     def otherwise(rule: RawNg1RuleFunction): UrlRouterProvider = js.native
+    
+    var router: js.Any = js.native
+    
     /**
       * Registers a url handler function.
       *
@@ -115,6 +121,7 @@ object urlRouterProviderMod extends js.Object {
       * @return [[UrlRouterProvider]] (`this`)
       */
     def rule(ruleFn: RawNg1RuleFunction): UrlRouterProvider = js.native
+    
     def when(what: String, handler: String): this.type = js.native
     def when(what: String, handler: IInjectable): this.type = js.native
     /**
@@ -160,13 +167,12 @@ object urlRouterProviderMod extends js.Object {
     def when(what: UrlMatcher, handler: String): this.type = js.native
     def when(what: UrlMatcher, handler: IInjectable): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object UrlRouterProvider extends js.Object {
-    def injectableHandler(router: UIRouter, handler: js.Any): UrlRuleHandlerFn = js.native
+    
+    def injectableHandler(router: UIRouter, handler: IInjectable): UrlRuleHandlerFn = js.native
   }
   
   type RawNg1RuleFunction = js.Function2[/* $injector */ InjectorLike, /* $location */ LocationServices, String | Unit]
 }
-

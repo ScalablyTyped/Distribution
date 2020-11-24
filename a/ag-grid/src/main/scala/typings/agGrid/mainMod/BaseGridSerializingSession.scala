@@ -4,7 +4,7 @@ import typings.agGrid.exportParamsMod.ProcessCellForExportParams
 import typings.agGrid.exportParamsMod.ProcessHeaderForExportParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/main", "BaseGridSerializingSession")
 @js.native
@@ -68,4 +68,3 @@ abstract class BaseGridSerializingSession[T] protected ()
     cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
   ) = this()
 }
-

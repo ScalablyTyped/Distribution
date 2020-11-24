@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive", JSImport.Namespace)
 @js.native
 object driveMod extends js.Object {
+  
   def drive(options: Options): Drive = js.native
   def drive(options: typings.googleapis.driveV3Mod.driveV3.Options): typings.googleapis.driveV3Mod.driveV3.Drive = js.native
   @JSName("drive")
   def drive_v2(version: v2): Drive = js.native
   @JSName("drive")
   def drive_v3(version: v3): typings.googleapis.driveV3Mod.driveV3.Drive = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v2 protected () extends Drive {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v2
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Drive]
+            ]
     
     @js.native
     class v3 protected ()
@@ -37,13 +45,6 @@ object driveMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v2
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Drive]
-            ]
-    
     @js.native
     object v3
       extends TopLevel[
@@ -53,11 +54,11 @@ object driveMod extends js.Object {
                 typings.googleapis.driveV3Mod.driveV3.Drive
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object driveMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

@@ -5,35 +5,43 @@ import typings.sinon.anon.PartialSinonSandboxConfig
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SinonApi extends js.Object {
+  
   var FakeXMLHttpRequest: SinonFakeXMLHttpRequestStatic = js.native
+  
   var clock: Create = js.native
-  var defaultConfig: PartialSinonSandboxConfig = js.native
-  var expectation: SinonExpectationStatic = js.native
-  var fakeServer: SinonFakeServerStatic = js.native
-  var fakeServerWithClock: SinonFakeServerStatic = js.native
-  @JSName("fake")
-  var fake_Original: SinonFake = js.native
-  @JSName("match")
-  var match_Original: SinonMatch = js.native
+  
   /**
     * Creates a new sandbox object with spies, stubs, and mocks.
     * @param config
     */
   def createSandbox(): SinonSandbox = js.native
   def createSandbox(config: PartialSinonSandboxConfig): SinonSandbox = js.native
+  
+  var defaultConfig: PartialSinonSandboxConfig = js.native
+  
+  var expectation: SinonExpectationStatic = js.native
+  
   /**
     * Creates a basic fake, with no behavior
     */
-  def fake(): SinonSpy = js.native
+  def fake(): SinonSpy[js.Array[_], _] = js.native
   /**
     * Wraps an existing Function to record all interactions, while leaving it up to the func to provide the behavior.
     * This is useful when complex behavior not covered by the sinon.fake.* methods is required or when wrapping an existing function or method.
     */
-  def fake(fn: js.Function): SinonSpy = js.native
+  def fake(fn: js.Function): SinonSpy[js.Array[_], _] = js.native
+  
+  var fakeServer: SinonFakeServerStatic = js.native
+  
+  var fakeServerWithClock: SinonFakeServerStatic = js.native
+  
+  @JSName("fake")
+  var fake_Original: SinonFake = js.native
+  
   /**
     * See custom matchers.
     */
@@ -56,6 +64,8 @@ trait SinonApi extends js.Object {
     * Requires the value to be == to the given number.
     */
   def `match`(value: Double): SinonMatcher = js.native
-  def spyCall(args: js.Any*): SinonSpyCall = js.native
+  @JSName("match")
+  var match_Original: SinonMatch = js.native
+  
+  def spyCall(args: js.Any*): SinonSpyCall[js.Array[_], _] = js.native
 }
-

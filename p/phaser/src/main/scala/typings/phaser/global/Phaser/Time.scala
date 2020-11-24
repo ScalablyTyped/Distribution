@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.Types.Time.TimerEventConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Time")
 @js.native
 object Time extends js.Object {
+  
   /**
     * The Clock is a Scene plugin which creates and updates Timer Events for its Scene.
     */
@@ -35,6 +36,4 @@ object Time extends js.Object {
       */
     def this(config: TimerEventConfig) = this()
   }
-  
 }
-

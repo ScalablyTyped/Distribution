@@ -9,10 +9,11 @@ import typings.jsonpathPlus.jsonpathPlusStrings.value
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSONPathOptions extends js.Object {
+  
   /**
     * If this is supplied as false, one may call the evaluate method
     *  manually.
@@ -20,6 +21,7 @@ trait JSONPathOptions extends js.Object {
     * @default true
     */
   var autostart: js.UndefOr[Boolean] = js.native
+  
   /**
     * If supplied, a callback will be called immediately upon retrieval of
     * an end point value.
@@ -32,6 +34,7 @@ trait JSONPathOptions extends js.Object {
     * @default undefined
     */
   var callback: js.UndefOr[JSONPathCallback] = js.native
+  
   /**
     * Whether the returned array of results will be flattened to a
     *   single dimension array.
@@ -39,11 +42,13 @@ trait JSONPathOptions extends js.Object {
     * @default false
     */
   var flatten: js.UndefOr[Boolean] = js.native
+  
   /**
     * The JSON object to evaluate (whether of null, boolean, number,
     *   string, object, or array type).
     */
   var json: Null | Boolean | Double | String | js.Object | js.Array[_] = js.native
+  
   /**
     * In the current absence of JSON Schema support,
     * one can determine types beyond the built-in types by adding the
@@ -59,6 +64,7 @@ trait JSONPathOptions extends js.Object {
     *   <A function that throws an error when `@other()` is encountered>
     */
   var otherTypeCallback: js.UndefOr[JSONPathOtherTypeCallback] = js.native
+  
   /**
     * In the event that a query could be made to return the root node,
     * this allows the parent of that root node to be returned within results.
@@ -66,6 +72,7 @@ trait JSONPathOptions extends js.Object {
     * @default null
     */
   var parent: js.UndefOr[Null | js.Any] = js.native
+  
   /**
     * In the event that a query could be made to return the root node,
     * this allows the parentProperty of that root node to be returned within
@@ -74,11 +81,13 @@ trait JSONPathOptions extends js.Object {
     * @default null
     */
   var parentProperty: js.UndefOr[Null | js.Any] = js.native
+  
   /**
     * The JSONPath expression as a (normalized or unnormalized) string or
     *   array.
     */
   var path: String | js.Array[_] = js.native
+  
   /**
     * Although JavaScript evaluation expressions are allowed by default,
     * for security reasons (if one is operating on untrusted user input,
@@ -88,6 +97,7 @@ trait JSONPathOptions extends js.Object {
     * @default false
     */
   var preventEval: js.UndefOr[Boolean] = js.native
+  
   /**
     * Can be case-insensitive form of "value", "path", "pointer", "parent",
     *   or "parentProperty" to determine respectively whether to return
@@ -101,6 +111,7 @@ trait JSONPathOptions extends js.Object {
     * @default 'value'
     */
   var resultType: js.UndefOr[value | path | pointer | parent | parentProperty | all] = js.native
+  
   /**
     * Key-value map of variables to be available to code evaluations such
     *   as filtering expressions.
@@ -108,6 +119,7 @@ trait JSONPathOptions extends js.Object {
     *   expressions; see the Syntax section for details.)
     */
   var sandbox: js.UndefOr[Map[String, _]] = js.native
+  
   /**
     * Whether or not to wrap the results in an array.
     *
@@ -126,79 +138,108 @@ trait JSONPathOptions extends js.Object {
     */
   var wrap: js.UndefOr[Boolean] = js.native
 }
-
 object JSONPathOptions {
+  
   @scala.inline
   def apply(path: String | js.Array[_]): JSONPathOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONPathOptions]
   }
+  
   @scala.inline
   implicit class JSONPathOptionsOps[Self <: JSONPathOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPathVarargs(value: js.Any*): Self = this.set("path", js.Array(value :_*))
+    
     @scala.inline
     def setPath(value: String | js.Array[_]): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutostart(value: Boolean): Self = this.set("autostart", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutostart: Self = this.set("autostart", js.undefined)
+    
     @scala.inline
     def setCallback(value: (/* payload */ js.Any, /* payloadType */ js.Any, /* fullPayload */ js.Any) => js.Any): Self = this.set("callback", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteCallback: Self = this.set("callback", js.undefined)
+    
     @scala.inline
     def setFlatten(value: Boolean): Self = this.set("flatten", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFlatten: Self = this.set("flatten", js.undefined)
+    
     @scala.inline
     def setJsonVarargs(value: js.Any*): Self = this.set("json", js.Array(value :_*))
+    
     @scala.inline
     def setJson(value: Boolean | Double | String | js.Object | js.Array[_]): Self = this.set("json", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setJsonNull: Self = this.set("json", null)
+    
     @scala.inline
     def setOtherTypeCallback(value: /* repeated */ js.Any => Unit): Self = this.set("otherTypeCallback", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOtherTypeCallback: Self = this.set("otherTypeCallback", js.undefined)
+    
     @scala.inline
     def setParent(value: js.Any): Self = this.set("parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParent: Self = this.set("parent", js.undefined)
+    
     @scala.inline
     def setParentNull: Self = this.set("parent", null)
+    
     @scala.inline
     def setParentProperty(value: js.Any): Self = this.set("parentProperty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParentProperty: Self = this.set("parentProperty", js.undefined)
+    
     @scala.inline
     def setParentPropertyNull: Self = this.set("parentProperty", null)
+    
     @scala.inline
     def setPreventEval(value: Boolean): Self = this.set("preventEval", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreventEval: Self = this.set("preventEval", js.undefined)
+    
     @scala.inline
     def setResultType(value: value | path | pointer | parent | parentProperty | all): Self = this.set("resultType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResultType: Self = this.set("resultType", js.undefined)
+    
     @scala.inline
     def setSandbox(value: Map[String, _]): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    
     @scala.inline
     def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWrap: Self = this.set("wrap", js.undefined)
   }
-  
 }
-

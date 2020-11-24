@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tildify"
-version := "2.0.0-1b7ea1"
+version := "2.0.0-8489a6"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

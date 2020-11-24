@@ -10,9 +10,9 @@ Primus is a simple abstraction around real-time frameworks. It allows you to eas
 | ------------------ | :-------------: |
 | Full name          | primus |
 | Keywords           | abstraction, browserchannel, engine.io, framework, comet, streaming, pubsub, pub, sub, ajax, xhr, polling, http, faye, io, primus, prumus, real-time, realtime, socket, socket.io, sockets, sockjs, spark, transformer, transformers, websocket, websockets, ws, uws |
-| # releases         | 10 |
-| # dependents       | 102 |
-| # downloads        | 399121 |
+| # releases         | 8 |
+| # dependents       | 100 |
+| # downloads        | 455964 |
 | # stars            | 34 |
 
 ## Links

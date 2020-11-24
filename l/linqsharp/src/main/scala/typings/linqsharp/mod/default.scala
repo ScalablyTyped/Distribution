@@ -2,7 +2,7 @@ package typings.linqsharp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Wrapper class for an array that provides Linq functionallity.
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
 class default[T] () extends Linq[T] {
   def this(a: js.Array[T]) = this()
 }
-

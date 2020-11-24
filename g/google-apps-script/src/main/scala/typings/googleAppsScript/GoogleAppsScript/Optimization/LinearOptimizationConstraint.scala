@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Optimization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object storing a linear constraint of the form lowerBound ≤ Sum(a(i) x(i)) ≤ upperBound
@@ -25,29 +25,33 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LinearOptimizationConstraint extends js.Object {
+  
   def setCoefficient(variableName: String, coefficient: Double): LinearOptimizationConstraint = js.native
 }
-
 object LinearOptimizationConstraint {
+  
   @scala.inline
   def apply(setCoefficient: (String, Double) => LinearOptimizationConstraint): LinearOptimizationConstraint = {
     val __obj = js.Dynamic.literal(setCoefficient = js.Any.fromFunction2(setCoefficient))
     __obj.asInstanceOf[LinearOptimizationConstraint]
   }
+  
   @scala.inline
   implicit class LinearOptimizationConstraintOps[Self <: LinearOptimizationConstraint] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSetCoefficient(value: (String, Double) => LinearOptimizationConstraint): Self = this.set("setCoefficient", js.Any.fromFunction2(value))
   }
-  
 }
-

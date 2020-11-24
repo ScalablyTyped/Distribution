@@ -11,8 +11,8 @@ A fast, indexed RDFJS Dataset implementation
 | Full name          | rdf-dataset-indexed |
 | Keywords           | rdf, rdfjs, rdf-ext, dataset, indexed |
 | # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 18681 |
+| # dependents       | 2 |
+| # downloads        | 34698 |
 | # stars            | 0 |
 
 ## Links

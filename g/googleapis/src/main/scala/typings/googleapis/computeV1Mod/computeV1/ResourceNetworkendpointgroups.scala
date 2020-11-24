@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Networkendpointgroups")
 @js.native
 class ResourceNetworkendpointgroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.networkEndpointGroups.aggregatedList
     * @desc Retrieves the list of network endpoint groups and sorts them by
@@ -49,6 +49,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNetworkEndpointGroupAggregatedList]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.attachNetworkEndpoints
     * @desc Attach a list of network endpoints to the specified network
@@ -85,6 +86,9 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.networkEndpointGroups.delete
     * @desc Deletes the specified network endpoint group. The network endpoints
@@ -119,6 +123,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.detachNetworkEndpoints
     * @desc Detach a list of network endpoints from the specified network
@@ -155,6 +160,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.get
     * @desc Returns the specified network endpoint group. Gets a list of
@@ -189,6 +195,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNetworkEndpointGroup]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.insert
     * @desc Creates a network endpoint group in the specified project using the
@@ -221,6 +228,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.list
     * @desc Retrieves the list of network endpoint groups that are located in
@@ -258,6 +266,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNetworkEndpointGroupList]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.listNetworkEndpoints
     * @desc Lists the network endpoints in the specified network endpoint
@@ -297,6 +306,7 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNetworkEndpointGroupsListNetworkEndpoints]
   ): Unit = js.native
+  
   /**
     * compute.networkEndpointGroups.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -332,4 +342,3 @@ class ResourceNetworkendpointgroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

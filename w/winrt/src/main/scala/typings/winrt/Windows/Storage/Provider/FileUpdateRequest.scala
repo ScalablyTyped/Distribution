@@ -4,12 +4,12 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileUpdateRequest extends IFileUpdateRequest
-
 object FileUpdateRequest {
+  
   @scala.inline
   def apply(
     contentId: String,
@@ -22,4 +22,3 @@ object FileUpdateRequest {
     __obj.asInstanceOf[FileUpdateRequest]
   }
 }
-

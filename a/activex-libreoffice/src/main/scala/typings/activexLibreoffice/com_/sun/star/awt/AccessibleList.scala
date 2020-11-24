@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Accessible lists are used by combo boxes as container for the list items.
@@ -30,8 +30,8 @@ trait AccessibleList
      with XAccessibleEventBroadcaster
      with XAccessible
      with XAccessibleSelection
-
 object AccessibleList {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -94,4 +94,3 @@ object AccessibleList {
     __obj.asInstanceOf[AccessibleList]
   }
 }
-

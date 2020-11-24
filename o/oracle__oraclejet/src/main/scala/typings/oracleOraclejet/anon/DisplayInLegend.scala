@@ -17,30 +17,47 @@ import typings.oracleOraclejet.oracleOraclejetStrings.stepped
 import typings.oracleOraclejet.oracleOraclejetStrings.straight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DisplayInLegend extends js.Object {
+  
   var categories: js.Array[String] = js.native
+  
   var color: String = js.native
+  
   var displayInLegend: on | off = js.native
+  
   var high: Double = js.native
+  
   var id: String = js.native
+  
   var items: js.Array[High] = js.native
+  
   var lineStyle: dotted | dashed | solid = js.native
+  
   var lineType: curved | stepped | centeredStepped | segmented | centeredSegmented | straight = js.native
+  
   var lineWidth: Double = js.native
+  
   var location: front | back = js.native
+  
   var low: Double = js.native
+  
   var shortDesc: String = js.native
+  
   var svgClassName: String = js.native
+  
   var svgStyle: js.Object = js.native
+  
   var text: String = js.native
+  
   var `type`: area | line = js.native
+  
   var value: Double = js.native
 }
-
 object DisplayInLegend {
+  
   @scala.inline
   def apply(
     categories: js.Array[String],
@@ -65,56 +82,77 @@ object DisplayInLegend {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayInLegend]
   }
+  
   @scala.inline
   implicit class DisplayInLegendOps[Self <: DisplayInLegend] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    
     @scala.inline
     def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDisplayInLegend(value: on | off): Self = this.set("displayInLegend", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHigh(value: Double): Self = this.set("high", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemsVarargs(value: High*): Self = this.set("items", js.Array(value :_*))
+    
     @scala.inline
     def setItems(value: js.Array[High]): Self = this.set("items", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineStyle(value: dotted | dashed | solid): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineType(value: curved | stepped | centeredStepped | segmented | centeredSegmented | straight): Self = this.set("lineType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLocation(value: front | back): Self = this.set("location", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLow(value: Double): Self = this.set("low", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: area | line): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
   }
-  
 }
-

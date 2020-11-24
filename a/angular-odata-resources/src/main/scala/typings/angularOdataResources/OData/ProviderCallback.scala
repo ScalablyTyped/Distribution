@@ -2,10 +2,11 @@ package typings.angularOdataResources.OData
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProviderCallback[T] extends js.Object {
+  
   def apply(queryString: String, success: js.Function0[_], error: js.Function0[_]): T = js.native
   def apply(
     queryString: String,
@@ -23,4 +24,3 @@ trait ProviderCallback[T] extends js.Object {
     forceSingleElement: Boolean
   ): T = js.native
 }
-

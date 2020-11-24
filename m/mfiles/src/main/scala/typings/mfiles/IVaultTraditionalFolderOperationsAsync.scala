@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultTraditionalFolderOperationsAsync extends js.Object {
+  
   def GetTraditionalFolderContents(Folder: Double): Unit = js.native
   def GetTraditionalFolderContents(
     Folder: Double,
@@ -43,4 +44,3 @@ trait IVaultTraditionalFolderOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

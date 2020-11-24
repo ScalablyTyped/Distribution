@@ -7,11 +7,12 @@ import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/addon-info", "withInfo")
 @js.native
 object withInfo extends js.Object {
+  
   def apply(): js.Function1[
     /* storyFn */ StoryFn[_], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
@@ -26,4 +27,3 @@ object withInfo extends js.Object {
   ] = js.native
   def apply[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = js.native
 }
-

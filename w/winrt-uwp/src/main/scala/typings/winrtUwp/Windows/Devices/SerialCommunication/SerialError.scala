@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.SerialCommunication
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SerialError extends js.Object
-
 /** Defines values for error conditions that can occur on the serial port. */
 @JSGlobal("Windows.Devices.SerialCommunication.SerialError")
 @js.native
 object SerialError extends js.Object {
+  
   /** A character-buffer overrun has occurred. The next character is lost. */
   @js.native
   sealed trait bufferOverrun extends SerialError
@@ -30,6 +30,4 @@ object SerialError extends js.Object {
   /** The application tried to transmit a character, but the output buffer was full. */
   @js.native
   sealed trait transmitFull extends SerialError
-  
 }
-

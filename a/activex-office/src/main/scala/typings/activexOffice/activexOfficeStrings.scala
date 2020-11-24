@@ -2,9 +2,157 @@ package typings.activexOffice
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexOfficeStrings {
+  
+  @scala.inline
+  def AddRef: AddRef = "AddRef".asInstanceOf[AddRef]
+  
+  @scala.inline
+  def CancelDefault: CancelDefault = "CancelDefault".asInstanceOf[CancelDefault]
+  
+  @scala.inline
+  def Change: Change = "Change".asInstanceOf[Change]
+  
+  @scala.inline
+  def Click: Click = "Click".asInstanceOf[Click]
+  
+  @scala.inline
+  def Ctrl: Ctrl = "Ctrl".asInstanceOf[Ctrl]
+  
+  @scala.inline
+  def CustomTaskPaneInst: CustomTaskPaneInst = "CustomTaskPaneInst".asInstanceOf[CustomTaskPaneInst]
+  
+  @scala.inline
+  def DockPositionStateChange: DockPositionStateChange = "DockPositionStateChange".asInstanceOf[DockPositionStateChange]
+  
+  @scala.inline
+  def EnvelopeHide: EnvelopeHide = "EnvelopeHide".asInstanceOf[EnvelopeHide]
+  
+  @scala.inline
+  def EnvelopeShow: EnvelopeShow = "EnvelopeShow".asInstanceOf[EnvelopeShow]
+  
+  @scala.inline
+  def GetIDsOfNames: GetIDsOfNames = "GetIDsOfNames".asInstanceOf[GetIDsOfNames]
+  
+  @scala.inline
+  def GetTypeInfo: GetTypeInfo = "GetTypeInfo".asInstanceOf[GetTypeInfo]
+  
+  @scala.inline
+  def GetTypeInfoCount: GetTypeInfoCount = "GetTypeInfoCount".asInstanceOf[GetTypeInfoCount]
+  
+  @scala.inline
+  def InUndoRedo: InUndoRedo = "InUndoRedo".asInstanceOf[InUndoRedo]
+  
+  @scala.inline
+  def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
+  
+  @scala.inline
+  def List: List = "List".asInstanceOf[List]
+  
+  @scala.inline
+  def NewNode: NewNode = "NewNode".asInstanceOf[NewNode]
+  
+  @scala.inline
+  def NewPart: NewPart = "NewPart".asInstanceOf[NewPart]
+  
+  @scala.inline
+  def NodeAfterDelete: NodeAfterDelete = "NodeAfterDelete".asInstanceOf[NodeAfterDelete]
+  
+  @scala.inline
+  def NodeAfterInsert: NodeAfterInsert = "NodeAfterInsert".asInstanceOf[NodeAfterInsert]
+  
+  @scala.inline
+  def NodeAfterReplace: NodeAfterReplace = "NodeAfterReplace".asInstanceOf[NodeAfterReplace]
+  
+  @scala.inline
+  def OldNextSibling: OldNextSibling = "OldNextSibling".asInstanceOf[OldNextSibling]
+  
+  @scala.inline
+  def OldNode: OldNode = "OldNode".asInstanceOf[OldNode]
+  
+  @scala.inline
+  def OldParentNode: OldParentNode = "OldParentNode".asInstanceOf[OldParentNode]
+  
+  @scala.inline
+  def OldPart: OldPart = "OldPart".asInstanceOf[OldPart]
+  
+  @scala.inline
+  def OnUpdate: OnUpdate = "OnUpdate".asInstanceOf[OnUpdate]
+  
+  @scala.inline
+  def Part: Part = "Part".asInstanceOf[Part]
+  
+  @scala.inline
+  def PartAfterAdd: PartAfterAdd = "PartAfterAdd".asInstanceOf[PartAfterAdd]
+  
+  @scala.inline
+  def PartAfterLoad: PartAfterLoad = "PartAfterLoad".asInstanceOf[PartAfterLoad]
+  
+  @scala.inline
+  def PartBeforeDelete: PartBeforeDelete = "PartBeforeDelete".asInstanceOf[PartBeforeDelete]
+  
+  @scala.inline
+  def QueryInterface: QueryInterface = "QueryInterface".asInstanceOf[QueryInterface]
+  
+  @scala.inline
+  def Release: Release = "Release".asInstanceOf[Release]
+  
+  @scala.inline
+  def VisibleStateChange: VisibleStateChange = "VisibleStateChange".asInstanceOf[VisibleStateChange]
+  
+  @scala.inline
+  def accName: accName = "accName".asInstanceOf[accName]
+  
+  @scala.inline
+  def accValue: accValue = "accValue".asInstanceOf[accValue]
+  
+  @scala.inline
+  def cNames: cNames = "cNames".asInstanceOf[cNames]
+  
+  @scala.inline
+  def dispidMember: dispidMember = "dispidMember".asInstanceOf[dispidMember]
+  
+  @scala.inline
+  def itinfo: itinfo = "itinfo".asInstanceOf[itinfo]
+  
+  @scala.inline
+  def lcid: lcid = "lcid".asInstanceOf[lcid]
+  
+  @scala.inline
+  def pctinfo: pctinfo = "pctinfo".asInstanceOf[pctinfo]
+  
+  @scala.inline
+  def pdispparams: pdispparams = "pdispparams".asInstanceOf[pdispparams]
+  
+  @scala.inline
+  def pexcepinfo: pexcepinfo = "pexcepinfo".asInstanceOf[pexcepinfo]
+  
+  @scala.inline
+  def pptinfo: pptinfo = "pptinfo".asInstanceOf[pptinfo]
+  
+  @scala.inline
+  def ppvObj: ppvObj = "ppvObj".asInstanceOf[ppvObj]
+  
+  @scala.inline
+  def puArgErr: puArgErr = "puArgErr".asInstanceOf[puArgErr]
+  
+  @scala.inline
+  def pvarResult: pvarResult = "pvarResult".asInstanceOf[pvarResult]
+  
+  @scala.inline
+  def rgdispid: rgdispid = "rgdispid".asInstanceOf[rgdispid]
+  
+  @scala.inline
+  def rgszNames: rgszNames = "rgszNames".asInstanceOf[rgszNames]
+  
+  @scala.inline
+  def riid: riid = "riid".asInstanceOf[riid]
+  
+  @scala.inline
+  def wFlags: wFlags = "wFlags".asInstanceOf[wFlags]
+  
   @js.native
   sealed trait AddRef extends js.Object
   
@@ -151,104 +299,4 @@ object activexOfficeStrings {
   
   @js.native
   sealed trait wFlags extends js.Object
-  
-  @scala.inline
-  def AddRef: AddRef = "AddRef".asInstanceOf[AddRef]
-  @scala.inline
-  def CancelDefault: CancelDefault = "CancelDefault".asInstanceOf[CancelDefault]
-  @scala.inline
-  def Change: Change = "Change".asInstanceOf[Change]
-  @scala.inline
-  def Click: Click = "Click".asInstanceOf[Click]
-  @scala.inline
-  def Ctrl: Ctrl = "Ctrl".asInstanceOf[Ctrl]
-  @scala.inline
-  def CustomTaskPaneInst: CustomTaskPaneInst = "CustomTaskPaneInst".asInstanceOf[CustomTaskPaneInst]
-  @scala.inline
-  def DockPositionStateChange: DockPositionStateChange = "DockPositionStateChange".asInstanceOf[DockPositionStateChange]
-  @scala.inline
-  def EnvelopeHide: EnvelopeHide = "EnvelopeHide".asInstanceOf[EnvelopeHide]
-  @scala.inline
-  def EnvelopeShow: EnvelopeShow = "EnvelopeShow".asInstanceOf[EnvelopeShow]
-  @scala.inline
-  def GetIDsOfNames: GetIDsOfNames = "GetIDsOfNames".asInstanceOf[GetIDsOfNames]
-  @scala.inline
-  def GetTypeInfo: GetTypeInfo = "GetTypeInfo".asInstanceOf[GetTypeInfo]
-  @scala.inline
-  def GetTypeInfoCount: GetTypeInfoCount = "GetTypeInfoCount".asInstanceOf[GetTypeInfoCount]
-  @scala.inline
-  def InUndoRedo: InUndoRedo = "InUndoRedo".asInstanceOf[InUndoRedo]
-  @scala.inline
-  def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
-  @scala.inline
-  def List: List = "List".asInstanceOf[List]
-  @scala.inline
-  def NewNode: NewNode = "NewNode".asInstanceOf[NewNode]
-  @scala.inline
-  def NewPart: NewPart = "NewPart".asInstanceOf[NewPart]
-  @scala.inline
-  def NodeAfterDelete: NodeAfterDelete = "NodeAfterDelete".asInstanceOf[NodeAfterDelete]
-  @scala.inline
-  def NodeAfterInsert: NodeAfterInsert = "NodeAfterInsert".asInstanceOf[NodeAfterInsert]
-  @scala.inline
-  def NodeAfterReplace: NodeAfterReplace = "NodeAfterReplace".asInstanceOf[NodeAfterReplace]
-  @scala.inline
-  def OldNextSibling: OldNextSibling = "OldNextSibling".asInstanceOf[OldNextSibling]
-  @scala.inline
-  def OldNode: OldNode = "OldNode".asInstanceOf[OldNode]
-  @scala.inline
-  def OldParentNode: OldParentNode = "OldParentNode".asInstanceOf[OldParentNode]
-  @scala.inline
-  def OldPart: OldPart = "OldPart".asInstanceOf[OldPart]
-  @scala.inline
-  def OnUpdate: OnUpdate = "OnUpdate".asInstanceOf[OnUpdate]
-  @scala.inline
-  def Part: Part = "Part".asInstanceOf[Part]
-  @scala.inline
-  def PartAfterAdd: PartAfterAdd = "PartAfterAdd".asInstanceOf[PartAfterAdd]
-  @scala.inline
-  def PartAfterLoad: PartAfterLoad = "PartAfterLoad".asInstanceOf[PartAfterLoad]
-  @scala.inline
-  def PartBeforeDelete: PartBeforeDelete = "PartBeforeDelete".asInstanceOf[PartBeforeDelete]
-  @scala.inline
-  def QueryInterface: QueryInterface = "QueryInterface".asInstanceOf[QueryInterface]
-  @scala.inline
-  def Release: Release = "Release".asInstanceOf[Release]
-  @scala.inline
-  def VisibleStateChange: VisibleStateChange = "VisibleStateChange".asInstanceOf[VisibleStateChange]
-  @scala.inline
-  def accName: accName = "accName".asInstanceOf[accName]
-  @scala.inline
-  def accValue: accValue = "accValue".asInstanceOf[accValue]
-  @scala.inline
-  def cNames: cNames = "cNames".asInstanceOf[cNames]
-  @scala.inline
-  def dispidMember: dispidMember = "dispidMember".asInstanceOf[dispidMember]
-  @scala.inline
-  def itinfo: itinfo = "itinfo".asInstanceOf[itinfo]
-  @scala.inline
-  def lcid: lcid = "lcid".asInstanceOf[lcid]
-  @scala.inline
-  def pctinfo: pctinfo = "pctinfo".asInstanceOf[pctinfo]
-  @scala.inline
-  def pdispparams: pdispparams = "pdispparams".asInstanceOf[pdispparams]
-  @scala.inline
-  def pexcepinfo: pexcepinfo = "pexcepinfo".asInstanceOf[pexcepinfo]
-  @scala.inline
-  def pptinfo: pptinfo = "pptinfo".asInstanceOf[pptinfo]
-  @scala.inline
-  def ppvObj: ppvObj = "ppvObj".asInstanceOf[ppvObj]
-  @scala.inline
-  def puArgErr: puArgErr = "puArgErr".asInstanceOf[puArgErr]
-  @scala.inline
-  def pvarResult: pvarResult = "pvarResult".asInstanceOf[pvarResult]
-  @scala.inline
-  def rgdispid: rgdispid = "rgdispid".asInstanceOf[rgdispid]
-  @scala.inline
-  def rgszNames: rgszNames = "rgszNames".asInstanceOf[rgszNames]
-  @scala.inline
-  def riid: riid = "riid".asInstanceOf[riid]
-  @scala.inline
-  def wFlags: wFlags = "wFlags".asInstanceOf[wFlags]
 }
-

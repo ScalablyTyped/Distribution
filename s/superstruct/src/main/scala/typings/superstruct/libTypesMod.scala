@@ -14,22 +14,31 @@ import typings.superstruct.utilsMod.StructRecord
 import typings.superstruct.utilsMod.StructTuple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/types", JSImport.Namespace)
 @js.native
 object libTypesMod extends js.Object {
+  
   def any(): Struct[_, _] = js.native
+  
   def array(): Struct[js.Array[_], _] = js.native
   def array[T](Element: Struct[T, _]): Struct[js.Array[T], Struct[T, _]] = js.native
+  
   def boolean(): Struct[Boolean, _] = js.native
+  
   def date(): Struct[Date, _] = js.native
+  
   def dynamic[T](fn: js.Function2[/* value */ js.Any, /* ctx */ StructContext, Struct[T, _]]): Struct[T, _] = js.native
+  
   def enums[T /* <: String */](values: js.Array[T]): Struct[T, _] = js.native
   @JSName("enums")
   def enums_T_Double[T /* <: Double */](values: js.Array[T]): Struct[T, _] = js.native
+  
   def func(): Struct[js.Function, _] = js.native
+  
   def instance[T /* <: Instantiable */](Class: T): Struct[InstanceType[T], _] = js.native
+  
   def intersection[A](Structs: StructTuple[js.Array[A]]): Struct[A, _] = js.native
   @JSName("intersection")
   def intersection_AB[A, B](Structs: StructTuple[js.Tuple2[A, B]]): Struct[A with B, _] = js.native
@@ -78,7 +87,9 @@ object libTypesMod extends js.Object {
     A with B with C with D with E with F with G with H with I with J with K with L with M with N with O with P with Q, 
     _
   ] = js.native
+  
   def `lazy`[T](fn: js.Function0[Struct[T, _]]): Struct[T, _] = js.native
+  
   def literal[T /* <: String */](constant: T): Struct[T, _] = js.native
   @JSName("literal")
   def literal_T[T](constant: T): Struct[T, _] = js.native
@@ -86,10 +97,15 @@ object libTypesMod extends js.Object {
   def literal_T_Boolean[T /* <: Boolean */](constant: T): Struct[T, _] = js.native
   @JSName("literal")
   def literal_T_Double[T /* <: Double */](constant: T): Struct[T, _] = js.native
+  
   def map[K, V](Key: Struct[K, _], Value: Struct[V, _]): Struct[Map[K, V], _] = js.native
+  
   def never(): Struct[scala.Nothing, _] = js.native
+  
   def nullable[T](S: Struct[T, _]): Struct[T | Null, _] = js.native
+  
   def number(): Struct[Double, _] = js.native
+  
   def `object`[V /* <: StructRecord[_] */](): Struct[Record[String, _], _] = js.native
   def `object`[V /* <: StructRecord[_] */](Structs: V): Struct[
     OptionalizeObject[
@@ -99,7 +115,9 @@ object libTypesMod extends js.Object {
     ], 
     V
   ] = js.native
+  
   def optional[T](S: Struct[T, _]): Struct[js.UndefOr[T], _] = js.native
+  
   def partial[T, V /* <: StructRecord[_] */](Structs: V): Struct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]:? superstruct.superstruct/lib/struct.StructType<V[K]>}
@@ -112,13 +130,18 @@ object libTypesMod extends js.Object {
     */ typings.superstruct.superstructStrings.partial with TopLevel[V], 
     _
   ] = js.native
+  
   def record[K /* <: String | Double */, V](Key: Struct[K, _], Value: Struct[V, _]): Struct[Record[K, V], _] = js.native
+  
   def set[T](Element: Struct[T, _]): Struct[Set[T], _] = js.native
+  
   def string(): Struct[String, _] = js.native
+  
   def struct[T](
     name: String,
     validator: js.Function2[/* value */ js.Any, /* context */ StructContext, StructResult]
   ): Struct[T, Null] = js.native
+  
   def tuple[A](Structs: StructTuple[js.Array[A]]): Struct[A, _] = js.native
   @JSName("tuple")
   def tuple_AB[A, B](Structs: StructTuple[js.Tuple2[A, B]]): Struct[js.Tuple2[A, B], _] = js.native
@@ -152,12 +175,14 @@ object libTypesMod extends js.Object {
   def tuple_ABCDEFGHIJKLMNOP[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P](Structs: StructTuple[js.Tuple16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P]]): Struct[js.Tuple16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P], _] = js.native
   @JSName("tuple")
   def tuple_ABCDEFGHIJKLMNOPQ[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q](Structs: StructTuple[js.Tuple17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]]): Struct[js.Tuple17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q], _] = js.native
+  
   def `type`[V /* <: StructRecord[_] */](Structs: V): Struct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]: superstruct.superstruct/lib/struct.StructType<V[K]>}
     */ typings.superstruct.superstructStrings.`type` with TopLevel[V], 
     _
   ] = js.native
+  
   def union[A](Structs: StructTuple[js.Array[A]]): Struct[A, _] = js.native
   @JSName("union")
   def union_AB[A, B](Structs: StructTuple[js.Tuple2[A, B]]): Struct[A | B, _] = js.native
@@ -191,24 +216,27 @@ object libTypesMod extends js.Object {
   def union_ABCDEFGHIJKLMNOP[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P](Structs: StructTuple[js.Tuple16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P]]): Struct[A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P, _] = js.native
   @JSName("union")
   def union_ABCDEFGHIJKLMNOPQ[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q](Structs: StructTuple[js.Tuple17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]]): Struct[A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q, _] = js.native
+  
   /**
     * Type helper to Flatten the Union of optional and required properties.
     */
   type Flatten[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: any[K]}
     */ typings.superstruct.superstructStrings.Flatten with TopLevel[js.Any]
+  
   /**
     * Type helper to extract the optional keys of an object
     */
   type OptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: undefined extends T[K]? K : never}[keyof T] */ js.Any
+  
   /**
     * Type helper to create optional properties when the property value can be
     * undefined (ie. when `optional()` is used to define a type)
     */
   type OptionalizeObject[T] = Flatten[typings.superstruct.superstructStrings.OptionalizeObject with TopLevel[T]]
+  
   /**
     * Type helper to extract the required keys of an object
     */
   type RequiredKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: undefined extends T[K]? never : K}[keyof T] */ js.Any
 }
-

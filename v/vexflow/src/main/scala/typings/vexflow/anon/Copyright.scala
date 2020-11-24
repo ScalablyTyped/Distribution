@@ -2,28 +2,43 @@ package typings.vexflow.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Copyright extends js.Object {
+  
   var copyright: String = js.native
+  
   var description: String = js.native
+  
   var designer: String = js.native
+  
   var designer_url: String = js.native
+  
   var font_family_name: String = js.native
+  
   var font_sub_family_name: String = js.native
+  
   var full_font_name: String = js.native
+  
   var license_description: String = js.native
+  
   var license_url: String = js.native
+  
   var manufacturer_name: String = js.native
+  
   var postscript_name: String = js.native
+  
   var trademark: String = js.native
+  
   var unique_font_identifier: String = js.native
+  
   var vendor_url: String = js.native
+  
   var version_string: String = js.native
 }
-
 object Copyright {
+  
   @scala.inline
   def apply(
     copyright: String,
@@ -45,48 +60,65 @@ object Copyright {
     val __obj = js.Dynamic.literal(copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], designer = designer.asInstanceOf[js.Any], designer_url = designer_url.asInstanceOf[js.Any], font_family_name = font_family_name.asInstanceOf[js.Any], font_sub_family_name = font_sub_family_name.asInstanceOf[js.Any], full_font_name = full_font_name.asInstanceOf[js.Any], license_description = license_description.asInstanceOf[js.Any], license_url = license_url.asInstanceOf[js.Any], manufacturer_name = manufacturer_name.asInstanceOf[js.Any], postscript_name = postscript_name.asInstanceOf[js.Any], trademark = trademark.asInstanceOf[js.Any], unique_font_identifier = unique_font_identifier.asInstanceOf[js.Any], vendor_url = vendor_url.asInstanceOf[js.Any], version_string = version_string.asInstanceOf[js.Any])
     __obj.asInstanceOf[Copyright]
   }
+  
   @scala.inline
   implicit class CopyrightOps[Self <: Copyright] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDesigner(value: String): Self = this.set("designer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDesigner_url(value: String): Self = this.set("designer_url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFont_family_name(value: String): Self = this.set("font_family_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFont_sub_family_name(value: String): Self = this.set("font_sub_family_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFull_font_name(value: String): Self = this.set("full_font_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLicense_description(value: String): Self = this.set("license_description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLicense_url(value: String): Self = this.set("license_url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setManufacturer_name(value: String): Self = this.set("manufacturer_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPostscript_name(value: String): Self = this.set("postscript_name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrademark(value: String): Self = this.set("trademark", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUnique_font_identifier(value: String): Self = this.set("unique_font_identifier", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVendor_url(value: String): Self = this.set("vendor_url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVersion_string(value: String): Self = this.set("version_string", value.asInstanceOf[js.Any])
   }
-  
 }
-

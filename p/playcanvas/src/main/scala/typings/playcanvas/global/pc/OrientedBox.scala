@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new oriented box.
@@ -18,4 +18,3 @@ class OrientedBox ()
   def this(worldTransform: js.UndefOr[scala.Nothing], halfExtents: typings.playcanvas.pc.Vec3) = this()
   def this(worldTransform: typings.playcanvas.pc.Mat4, halfExtents: typings.playcanvas.pc.Vec3) = this()
 }
-

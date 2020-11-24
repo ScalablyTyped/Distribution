@@ -11,9 +11,9 @@ fs.rename but works across devices. same as the unix utility 'mv'
 | Full name          | mv |
 | Keywords           | mv, move, rename, device, recursive, folder |
 | # releases         | 1 |
-| # dependents       | 335 |
-| # downloads        | 38450440 |
-| # stars            | 9 |
+| # dependents       | 361 |
+| # downloads        | 50373796 |
+| # stars            | 10 |
 
 ## Links
 - [Homepage](https://github.com/andrewrk/node-mv)

@@ -4,14 +4,18 @@ import typings.mermaid.mermaidAPIMod.mermaidAPI.Config
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mermaid/mermaidAPI", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def getConfig(): Config = js.native
+  
   def initialize(options: Config): Unit = js.native
+  
   def parse(text: String): js.Any = js.native
+  
   /**
     * ##render
     * Function that renders an svg with a graph from a chart definition. Usage example below.
@@ -54,16 +58,21 @@ object default extends js.Object {
     ],
     container: String
   ): String = js.native
+  
   @js.native
   object LogLevel extends js.Object {
-    /* 1 */ val Debug: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Debug with Double = js.native
-    /* 2 */ val Error: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Error with Double = js.native
-    /* 3 */ val Fatal: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Fatal with Double = js.native
-    /* 0 */ val Info: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Info with Double = js.native
-    /* 1 */ val Warn: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Warn with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel with Double] = js.native
+    
+    /* 1 */ val Debug: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Debug with Double = js.native
+    
+    /* 2 */ val Error: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Error with Double = js.native
+    
+    /* 3 */ val Fatal: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Fatal with Double = js.native
+    
+    /* 0 */ val Info: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Info with Double = js.native
+    
+    /* 1 */ val Warn: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Warn with Double = js.native
   }
-  
 }
-

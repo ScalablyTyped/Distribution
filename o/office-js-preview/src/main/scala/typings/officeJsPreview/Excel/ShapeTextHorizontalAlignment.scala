@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeTextHorizontalAlignment extends js.Object
-
 /**
   *
   * Specifies the horizontal alignment for the text frame in a shape.
@@ -16,6 +15,7 @@ sealed trait ShapeTextHorizontalAlignment extends js.Object
 @JSGlobal("Excel.ShapeTextHorizontalAlignment")
 @js.native
 object ShapeTextHorizontalAlignment extends js.Object {
+  
   @js.native
   sealed trait center extends ShapeTextHorizontalAlignment
   
@@ -36,6 +36,4 @@ object ShapeTextHorizontalAlignment extends js.Object {
   
   @js.native
   sealed trait thaiDistributed extends ShapeTextHorizontalAlignment
-  
 }
-

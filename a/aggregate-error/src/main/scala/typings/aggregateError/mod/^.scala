@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aggregate-error", JSImport.Namespace)
 @js.native
-class ^ protected () extends AggregateError {
+class ^[T /* <: Error */] protected () extends AggregateError[T] {
   /**
   	@param errors - If a string, a new `Error` is created with the string as the error message. If a non-Error object, a new `Error` is created with all properties from the object copied over.
   	@returns An Error that is also an [`Iterable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterables) for the individual errors.
@@ -42,6 +42,5 @@ class ^ protected () extends AggregateError {
   	//=> [Error: baz]
   	```
   	*/
-  def this(errors: js.Array[Error | StringDictionary[_] | String]) = this()
+  def this(errors: js.Array[T | StringDictionary[_] | String]) = this()
 }
-

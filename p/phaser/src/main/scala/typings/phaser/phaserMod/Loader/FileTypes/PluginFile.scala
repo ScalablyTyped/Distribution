@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.PluginFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Plugin Script File suitable for loading by the Loader.
@@ -196,4 +196,3 @@ class PluginFile protected ()
     xhrSettings: XHRSettingsObject
   ) = this()
 }
-

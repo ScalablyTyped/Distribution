@@ -3,7 +3,7 @@ package typings.emberData.mod.DS
 import typings.emberObject.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `DS.ForbiddenError` equates to a HTTP `403 Forbidden` response status.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.ForbiddenError")
 @js.native
 class ForbiddenError () extends default
-

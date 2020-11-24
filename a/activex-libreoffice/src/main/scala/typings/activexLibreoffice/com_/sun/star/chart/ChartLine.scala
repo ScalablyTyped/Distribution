@@ -14,15 +14,15 @@ import typings.activexLibreoffice.com_.sun.star.drawing.PolyPolygonBezierCoords
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies line elements in a chart (regression lines, etc.). */
 @js.native
 trait ChartLine
   extends XPropertySet
      with LineProperties
-
 object ChartLine {
+  
   @scala.inline
   def apply(
     LineCap: LineCap,
@@ -57,4 +57,3 @@ object ChartLine {
     __obj.asInstanceOf[ChartLine]
   }
 }
-

@@ -10,9 +10,9 @@ Error classes used in node_redis
 | ------------------ | :-------------: |
 | Full name          | redis-errors |
 | Keywords           | redis, javascript, node, error |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 13307938 |
+| # releases         | 1 |
+| # dependents       | 12 |
+| # downloads        | 32291663 |
 | # stars            | 0 |
 
 ## Links

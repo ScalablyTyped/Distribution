@@ -7,11 +7,12 @@ import typings.materialTabIndicator.anon.PartialMDCTabIndicatorAda
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/tab-indicator", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCFadingTabIndicatorFoundation ()
     extends typings.materialTabIndicator.fadingFoundationMod.MDCFadingTabIndicatorFoundation
@@ -23,24 +24,26 @@ object mod extends js.Object {
   @js.native
   class MDCTabIndicator ()
     extends typings.materialTabIndicator.componentMod.MDCTabIndicator
+  /* static members */
+  @js.native
+  object MDCTabIndicator extends js.Object {
+    
+    def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = js.native
+  }
   
   @js.native
   abstract class MDCTabIndicatorFoundation ()
     extends typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCTabIndicator extends js.Object {
-    def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCTabIndicatorFoundation extends js.Object {
+    
     def cssClasses: ACTIVE = js.native
+    
     def defaultAdapter: MDCTabIndicatorAdapter = js.native
+    
     def strings: CONTENTSELECTOR = js.native
   }
   
@@ -68,15 +71,17 @@ object mod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ACTIVE: String = js.native
+    
     var FADE: String = js.native
+    
     var NO_TRANSITION: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var CONTENT_SELECTOR: String = js.native
   }
-  
 }
-

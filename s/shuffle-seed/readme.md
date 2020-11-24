@@ -10,9 +10,9 @@ Shuffle Array based on a Seed
 | ------------------ | :-------------: |
 | Full name          | shuffle-seed |
 | Keywords           | array, seed, shuffle, shuffle, seed, random |
-| # releases         | 1 |
-| # dependents       | 20 |
-| # downloads        | 2720849 |
+| # releases         | 0 |
+| # dependents       | 26 |
+| # downloads        | 1799740 |
 | # stars            | 1 |
 
 ## Links

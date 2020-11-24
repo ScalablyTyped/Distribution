@@ -11,8 +11,8 @@ Simplifying the use of mocks with Node.js
 | Full name          | mockery |
 | Keywords           | mock, stub, require, module, cache, unit, test, unittest, testing, tdd |
 | # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 4635263 |
+| # dependents       | 74 |
+| # downloads        | 5787349 |
 | # stars            | 28 |
 
 ## Links

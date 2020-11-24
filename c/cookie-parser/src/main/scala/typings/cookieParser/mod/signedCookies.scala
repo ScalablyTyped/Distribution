@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cookie-parser", "signedCookies")
 @js.native
 object signedCookies extends js.Object {
+  
   def apply[T /* <: StringDictionary[String] */](cookies: T, secret: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | false}
     */ typings.cookieParser.cookieParserStrings.signedCookies with TopLevel[js.Any] = js.native
@@ -16,4 +17,3 @@ object signedCookies extends js.Object {
   {[ P in keyof T ]:? string | false}
     */ typings.cookieParser.cookieParserStrings.signedCookies with TopLevel[js.Any] = js.native
 }
-

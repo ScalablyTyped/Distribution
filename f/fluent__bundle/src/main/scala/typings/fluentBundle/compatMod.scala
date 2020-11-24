@@ -4,11 +4,12 @@ import typings.fluentBundle.mod.FluentBundleConstructorOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@fluent/bundle/compat", JSImport.Namespace)
 @js.native
 object compatMod extends js.Object {
+  
   @js.native
   class FluentBundle protected ()
     extends typings.fluentBundle.mod.FluentBundle {
@@ -48,6 +49,4 @@ object compatMod extends js.Object {
     extends typings.fluentBundle.mod.FluentType {
     def this(value: js.Any) = this()
   }
-  
 }
-

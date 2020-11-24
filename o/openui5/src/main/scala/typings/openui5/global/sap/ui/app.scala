@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui
 import typings.openui5.sap.ui.base.ManagedObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.app")
 @js.native
 object app extends js.Object {
+  
   @js.native
   abstract class Application protected ()
     extends typings.openui5.sap.ui.app.Application {
@@ -43,6 +44,4 @@ object app extends js.Object {
     def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
   }
-  
 }
-

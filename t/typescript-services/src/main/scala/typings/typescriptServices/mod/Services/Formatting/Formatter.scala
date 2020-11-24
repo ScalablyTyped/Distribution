@@ -6,7 +6,7 @@ import typings.typescriptServices.TypeScript.SourceUnitSyntax
 import typings.typescriptServices.TypeScript.TextSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.Formatting.Formatter")
 @js.native
@@ -22,11 +22,11 @@ class Formatter protected ()
     formattingRequestKind: typings.typescriptServices.TypeScript.Services.Formatting.FormattingRequestKind
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "Services.Formatting.Formatter")
 @js.native
 object Formatter extends js.Object {
+  
   def getEdits(
     textSpan: TextSpan,
     sourceUnit: SourceUnitSyntax,
@@ -37,4 +37,3 @@ object Formatter extends js.Object {
     formattingRequestKind: typings.typescriptServices.TypeScript.Services.Formatting.FormattingRequestKind
   ): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.TextEditInfo] = js.native
 }
-

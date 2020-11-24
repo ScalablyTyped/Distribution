@@ -12,7 +12,7 @@ Simple Checkstyle data formatter
 | Keywords           | checkstyle, lint, format, formatter |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 524147 |
+| # downloads        | 715488 |
 | # stars            | 0 |
 
 ## Links

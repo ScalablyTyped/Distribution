@@ -2,7 +2,7 @@ package typings.tdweb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TDLib in a browser
@@ -32,4 +32,3 @@ class default protected () extends TdClient {
     */
   def this(options: TdOptions) = this()
 }
-

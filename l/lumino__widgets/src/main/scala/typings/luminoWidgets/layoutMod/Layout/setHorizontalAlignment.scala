@@ -3,11 +3,12 @@ package typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/layout", "Layout.setHorizontalAlignment")
 @js.native
 object setHorizontalAlignment extends js.Object {
+  
   /**
     * Set the horizontal alignment for a widget.
     *
@@ -31,4 +32,3 @@ object setHorizontalAlignment extends js.Object {
     */
   def apply(widget: Widget, value: HorizontalAlignment): Unit = js.native
 }
-

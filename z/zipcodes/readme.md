@@ -10,9 +10,9 @@ Useful zipcode database with helper methods
 | ------------------ | :-------------: |
 | Full name          | zipcodes |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 431251 |
+| # releases         | 3 |
+| # dependents       | 10 |
+| # downloads        | 641535 |
 | # stars            | 4 |
 
 ## Links

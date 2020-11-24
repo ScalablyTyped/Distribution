@@ -11,7 +11,7 @@ Library for interacting with Bluetooth 4.0 devices through the browser.
 | Keywords           | abstraction, API, ble, bluetooth, browser, client, developer, developer tool, experimental, framework, internet of things, library, web-bluetooth |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1022 |
+| # downloads        | 986 |
 | # stars            | 4 |
 
 ## Links

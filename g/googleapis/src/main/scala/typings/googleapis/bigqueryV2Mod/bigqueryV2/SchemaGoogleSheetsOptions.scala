@@ -2,10 +2,11 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaGoogleSheetsOptions extends js.Object {
+  
   /**
     * [Beta] [Optional] Range of a sheet to query from. Only used when
     * non-empty. Typical format:
@@ -13,6 +14,7 @@ trait SchemaGoogleSheetsOptions extends js.Object {
     * sheet1!A1:B20
     */
   var range: js.UndefOr[String] = js.native
+  
   /**
     * [Optional] The number of rows at the top of a sheet that BigQuery will
     * skip when reading the data. The default value is 0. This property is
@@ -28,33 +30,39 @@ trait SchemaGoogleSheetsOptions extends js.Object {
     */
   var skipLeadingRows: js.UndefOr[String] = js.native
 }
-
 object SchemaGoogleSheetsOptions {
+  
   @scala.inline
   def apply(): SchemaGoogleSheetsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleSheetsOptions]
   }
+  
   @scala.inline
   implicit class SchemaGoogleSheetsOptionsOps[Self <: SchemaGoogleSheetsOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRange: Self = this.set("range", js.undefined)
+    
     @scala.inline
     def setSkipLeadingRows(value: String): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
   }
-  
 }
-

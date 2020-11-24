@@ -10,9 +10,9 @@ AWS Lambda mock context object
 | ------------------ | :-------------: |
 | Full name          | aws-lambda-mock-context |
 | Keywords           | aws, lambda, context, ctx, function, mocking, mock, promise |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 234650 |
+| # downloads        | 338209 |
 | # stars            | 1 |
 
 ## Links

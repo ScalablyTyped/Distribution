@@ -2,14 +2,14 @@ package typings.sharepoint.SP.UserProfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FollowedContentQueryOptions extends js.Object
-
 @JSGlobal("SP.UserProfiles.FollowedContentQueryOptions")
 @js.native
 object FollowedContentQueryOptions extends js.Object {
+  
   @js.native
   sealed trait all extends FollowedContentQueryOptions
   
@@ -30,6 +30,4 @@ object FollowedContentQueryOptions extends js.Object {
   
   @js.native
   sealed trait unset extends FollowedContentQueryOptions
-  
 }
-

@@ -5,17 +5,16 @@ import typings.reactSelect.anon.CropWithEllipsis
 import typings.reactSelect.typesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-select/src/components/MultiValue", "MultiValue")
 @js.native
 class MultiValue[OptionType /* <: OptionTypeBase */] ()
   extends Component[MultiValueProps[OptionType], js.Object, js.Any]
-
 /* static members */
 @JSImport("react-select/src/components/MultiValue", "MultiValue")
 @js.native
 object MultiValue extends js.Object {
+  
   var defaultProps: CropWithEllipsis = js.native
 }
-

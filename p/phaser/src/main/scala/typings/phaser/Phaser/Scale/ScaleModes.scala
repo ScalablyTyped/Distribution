@@ -2,17 +2,17 @@ package typings.phaser.Phaser.Scale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ScaleModes extends js.Object
-
 /**
   * Phaser Scale Manager constants for the different scale modes available.
   */
 @JSGlobal("Phaser.Scale.ScaleModes")
 @js.native
 object ScaleModes extends js.Object {
+  
   /**
     * The width and height are automatically adjusted to make the size cover the entire target
     * area while keeping the aspect ratio. This may extend further out than the target size.
@@ -53,6 +53,4 @@ object ScaleModes extends js.Object {
     */
   @js.native
   sealed trait WIDTH_CONTROLS_HEIGHT extends ScaleModes
-  
 }
-

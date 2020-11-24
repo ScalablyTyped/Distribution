@@ -11,7 +11,7 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new mesh.
@@ -43,34 +43,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Mesh extends js.Object {
+  
   /**
     * The axis-aligned bounding box for the object space vertices of this mesh.
     */
   var aabb: BoundingBox = js.native
-  /**
-    * An array of index buffers. For unindexed meshes, this array can
-    * be empty. The first index buffer in the array is used by {@link pc.MeshInstance}s with a renderStyle
-    * property set to pc.RENDERSTYLE_SOLID. The second index buffer in the array is used if renderStyle is
-    * set to pc.RENDERSTYLE_WIREFRAME.
-    */
-  var indexBuffer: js.Array[IndexBuffer] = js.native
-  /**
-    * The morph data (if any) that drives morph target animations for this mesh.
-    */
-  var morph: js.UndefOr[Morph] = js.native
-  /**
-    * Array of primitive objects defining how vertex (and index) data in the
-    * mesh should be interpreted by the graphics device. For details on the primitive object, see.
-    */
-  var primitive: js.Array[Base] = js.native
-  /**
-    * The skin data (if any) that drives skinned mesh animations for this mesh.
-    */
-  var skin: js.UndefOr[Skin] = js.native
-  /**
-    * The vertex buffer holding the vertex data of the mesh.
-    */
-  var vertexBuffer: VertexBuffer = js.native
+  
   /**
     * Clears the mesh of existing vertices and indices and resets the
     {@link pc.VertexFormat} associated with the mesh. This call is typically followed by calls
@@ -138,11 +116,13 @@ trait Mesh extends js.Object {
   ): Unit = js.native
   def clear(verticesDynamic: Boolean, indicesDynamic: Boolean, maxVertices: Double): Unit = js.native
   def clear(verticesDynamic: Boolean, indicesDynamic: Boolean, maxVertices: Double, maxIndices: Double): Unit = js.native
+  
   /**
     * Destroys {@link pc.VertexBuffer} and {@link pc.IndexBuffer} associate with the mesh.
     This is normally called by {@link pc.Model#destroy} and does not need to be called manually.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Gets the vertex color data.
     * @param colors - An array to populate with the vertex data.
@@ -158,6 +138,7 @@ trait Mesh extends js.Object {
   def getColors(colors: Uint32Array): Double = js.native
   def getColors(colors: Uint8Array): Double = js.native
   def getColors(colors: Uint8ClampedArray): Double = js.native
+  
   /**
     * Gets the index data.
     * @param indices - An array to populate with the index data.
@@ -168,6 +149,7 @@ trait Mesh extends js.Object {
   def getIndices(indices: Uint16Array): Double = js.native
   def getIndices(indices: Uint32Array): Double = js.native
   def getIndices(indices: Uint8Array): Double = js.native
+  
   /**
     * Gets the vertex normals data.
     * @param normals - An array to populate with the vertex data.
@@ -183,6 +165,7 @@ trait Mesh extends js.Object {
   def getNormals(normals: Uint32Array): Double = js.native
   def getNormals(normals: Uint8Array): Double = js.native
   def getNormals(normals: Uint8ClampedArray): Double = js.native
+  
   /**
     * Gets the vertex positions data.
     * @param positions - An array to populate with the vertex data.
@@ -198,6 +181,7 @@ trait Mesh extends js.Object {
   def getPositions(positions: Uint32Array): Double = js.native
   def getPositions(positions: Uint8Array): Double = js.native
   def getPositions(positions: Uint8ClampedArray): Double = js.native
+  
   /**
     * Gets the vertex uv data.
     * @param channel - The uv channel in [0..7] range.
@@ -214,6 +198,7 @@ trait Mesh extends js.Object {
   def getUvs(channel: Double, uvs: Uint32Array): Double = js.native
   def getUvs(channel: Double, uvs: Uint8Array): Double = js.native
   def getUvs(channel: Double, uvs: Uint8ClampedArray): Double = js.native
+  
   /**
     * Gets the vertex data corresponding to a semantic.
     * @param semantic - The semantic of the vertex element to get. For supported semantics, see pc.SEMANTIC_* in {@link pc.VertexFormat}.
@@ -230,6 +215,26 @@ trait Mesh extends js.Object {
   def getVertexStream(semantic: String, data: Uint32Array): Double = js.native
   def getVertexStream(semantic: String, data: Uint8Array): Double = js.native
   def getVertexStream(semantic: String, data: Uint8ClampedArray): Double = js.native
+  
+  /**
+    * An array of index buffers. For unindexed meshes, this array can
+    * be empty. The first index buffer in the array is used by {@link pc.MeshInstance}s with a renderStyle
+    * property set to pc.RENDERSTYLE_SOLID. The second index buffer in the array is used if renderStyle is
+    * set to pc.RENDERSTYLE_WIREFRAME.
+    */
+  var indexBuffer: js.Array[IndexBuffer] = js.native
+  
+  /**
+    * The morph data (if any) that drives morph target animations for this mesh.
+    */
+  var morph: js.UndefOr[Morph] = js.native
+  
+  /**
+    * Array of primitive objects defining how vertex (and index) data in the
+    * mesh should be interpreted by the graphics device. For details on the primitive object, see.
+    */
+  var primitive: js.Array[Base] = js.native
+  
   /**
     * Sets the vertex color array. Colors are stored using pc.TYPE_FLOAT32 format, which is useful for HDR colors.
     * @param colors - Vertex data containing colors.
@@ -272,6 +277,7 @@ trait Mesh extends js.Object {
   def setColors(colors: Uint8ClampedArray, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setColors(colors: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  
   /**
     * Sets the vertex color array. Colors are stored using pc.TYPE_UINT8 format, which is useful for LDR colors. Values in the array are expected in
     [0..255] range, and are mapped to [0..1] range in the shader.
@@ -297,6 +303,7 @@ trait Mesh extends js.Object {
   def setColors32(colors: Uint8Array, numVertices: Double): Unit = js.native
   def setColors32(colors: Uint8ClampedArray): Unit = js.native
   def setColors32(colors: Uint8ClampedArray, numVertices: Double): Unit = js.native
+  
   /**
     * Sets the index array. Indices are stored using 16-bit format by default, unless more than 65535 vertices are specified, in which case 32-bit format is used.
     * @param indices - The array of indicies that define primitives (lines, triangles, etc.).
@@ -310,6 +317,7 @@ trait Mesh extends js.Object {
   def setIndices(indices: Uint32Array, numIndices: Double): Unit = js.native
   def setIndices(indices: Uint8Array): Unit = js.native
   def setIndices(indices: Uint8Array, numIndices: Double): Unit = js.native
+  
   /**
     * Sets the vertex normals array. Normals are stored using pc.TYPE_FLOAT32 format.
     * @param normals - Vertex data containing normals.
@@ -352,6 +360,7 @@ trait Mesh extends js.Object {
   def setNormals(normals: Uint8ClampedArray, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setNormals(normals: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  
   /**
     * Sets the vertex positions array. Vertices are stored using pc.TYPE_FLOAT32 format.
     * @param positions - Vertex data containing positions.
@@ -394,6 +403,7 @@ trait Mesh extends js.Object {
   def setPositions(positions: Uint8ClampedArray, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setPositions(positions: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  
   /**
     * Sets the vertex uv array. Uvs are stored using pc.TYPE_FLOAT32 format.
     * @param channel - The uv channel in [0..7] range.
@@ -447,6 +457,7 @@ trait Mesh extends js.Object {
   ): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  
   /**
     * Sets the vertex data for any supported semantic.
     * @param semantic - The meaning of the vertex element. For supported semantics, see pc.SEMANTIC_* in {@link pc.VertexFormat}.
@@ -466,6 +477,12 @@ trait Mesh extends js.Object {
     dataType: js.UndefOr[Double],
     dataTypeNormalize: js.UndefOr[Boolean]
   ): Unit = js.native
+  
+  /**
+    * The skin data (if any) that drives skinned mesh animations for this mesh.
+    */
+  var skin: js.UndefOr[Skin] = js.native
+  
   /**
     * Applies any changes to vertex stream and indices to mesh. This allocates or reallocates {@link pc.vertexBuffer} or {@link pc.IndexBuffer}
     to fit all provided vertices and indices, and fills them with data.
@@ -479,5 +496,9 @@ trait Mesh extends js.Object {
   def update(primitiveType: js.UndefOr[scala.Nothing], updateBoundingBox: Boolean): Unit = js.native
   def update(primitiveType: Double): Unit = js.native
   def update(primitiveType: Double, updateBoundingBox: Boolean): Unit = js.native
+  
+  /**
+    * The vertex buffer holding the vertex data of the mesh.
+    */
+  var vertexBuffer: VertexBuffer = js.native
 }
-

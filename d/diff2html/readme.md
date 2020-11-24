@@ -1,6 +1,7 @@
 
 # Scala.js typings for diff2html
 
+Typings are for version 3.1.15
 
 ## Library description:
 Fast Diff to colorized HTML
@@ -9,9 +10,9 @@ Fast Diff to colorized HTML
 | ------------------ | :-------------: |
 | Full name          | diff2html |
 | Keywords           | git, diff, pretty, side, line, side-by-side, line-by-line, character, highlight, pretty, color, html, diff2html, difftohtml, colorized |
-| # releases         | 33 |
-| # dependents       | 46 |
-| # downloads        | 1426233 |
+| # releases         | 65 |
+| # dependents       | 67 |
+| # downloads        | 3093792 |
 | # stars            | 6 |
 
 ## Links
@@ -23,7 +24,7 @@ Fast Diff to colorized HTML
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -2,42 +2,48 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CreatePartnerEventSourceRequest extends js.Object {
+  
   /**
     * The AWS account ID that is permitted to create a matching partner event bus for this partner event source.
     */
   var Account: AccountId = js.native
+  
   /**
     * The name of the partner event source. This name must be unique and must be in the format  partner_name/event_namespace/event_name . The AWS account that wants to use this partner event source must create a partner event bus with a name that matches the name of the partner event source.
     */
   var Name: EventSourceName = js.native
 }
-
 object CreatePartnerEventSourceRequest {
+  
   @scala.inline
   def apply(Account: AccountId, Name: EventSourceName): CreatePartnerEventSourceRequest = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePartnerEventSourceRequest]
   }
+  
   @scala.inline
   implicit class CreatePartnerEventSourceRequestOps[Self <: CreatePartnerEventSourceRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAccount(value: AccountId): Self = this.set("Account", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: EventSourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
   }
-  
 }
-

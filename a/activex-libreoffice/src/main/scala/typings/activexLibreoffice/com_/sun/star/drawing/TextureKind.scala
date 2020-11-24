@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * These enumeration values specify how the texture is applied.
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait TextureKind extends js.Object
-
 object TextureKind {
+  
   /**
     * With this mode the lighting is ignored and only the texture color information is used.
     *
@@ -24,8 +24,8 @@ object TextureKind {
     */
   @scala.inline
   def COLOR: `1` = 1.asInstanceOf[`1`]
+  
   /** With TextureKind LUMINANCE, the texture and the lighting information are mixed to produce the image, so a lit, textured object is achieved. */
   @scala.inline
   def LUMINANCE: `0` = 0.asInstanceOf[`0`]
 }
-

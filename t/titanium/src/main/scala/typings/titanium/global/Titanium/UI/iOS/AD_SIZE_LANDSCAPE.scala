@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use with [AdView.adSize](Titanium.UI.iOS.AdView.adSize) to specify a banner ad size
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.AD_SIZE_LANDSCAPE")
 @js.native
 object AD_SIZE_LANDSCAPE extends TopLevel[String]
-

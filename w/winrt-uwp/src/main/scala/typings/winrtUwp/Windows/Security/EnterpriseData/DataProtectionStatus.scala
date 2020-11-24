@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataProtectionStatus extends js.Object
-
 /** Describes the enterprise identity protection state of a buffer or stream. */
 @JSGlobal("Windows.Security.EnterpriseData.DataProtectionStatus")
 @js.native
 object DataProtectionStatus extends js.Object {
+  
   /** The keys to access the protected item have been dropped while the device is locked. */
   @js.native
   sealed trait accessSuspended extends DataProtectionStatus
@@ -34,6 +34,4 @@ object DataProtectionStatus extends js.Object {
   /** The item is not protected to an enterprise identity. */
   @js.native
   sealed trait unprotected extends DataProtectionStatus
-  
 }
-

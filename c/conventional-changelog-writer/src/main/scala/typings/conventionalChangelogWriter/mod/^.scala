@@ -5,11 +5,12 @@ import typings.node.streamMod.Transform
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("conventional-changelog-writer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a transform stream.
     *
@@ -23,4 +24,3 @@ object ^ extends js.Object {
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext]): Transform = js.native
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext], options: Options[TCommit, TContext]): Transform = js.native
 }
-

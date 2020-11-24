@@ -6,7 +6,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.touchMove
 import typings.devtoolsProtocol.devtoolsProtocolStrings.touchStart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.touchStart
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.touchCancel
 */
 trait DispatchTouchEventRequestType extends js.Object
-
 object DispatchTouchEventRequestType {
+  
   @scala.inline
   def TouchCancel: touchCancel = "touchCancel".asInstanceOf[touchCancel]
+  
   @scala.inline
   def TouchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
+  
   @scala.inline
   def TouchMove: touchMove = "touchMove".asInstanceOf[touchMove]
+  
   @scala.inline
   def TouchStart: touchStart = "touchStart".asInstanceOf[touchStart]
 }
-

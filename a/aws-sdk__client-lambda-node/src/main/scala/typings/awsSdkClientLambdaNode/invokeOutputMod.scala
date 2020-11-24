@@ -1,13 +1,12 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/model/InvokeOutput", JSImport.Namespace)
 @js.native
 object invokeOutputMod extends js.Object {
-  val InvokeOutput: Structure = js.native
+  
+  val InvokeOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

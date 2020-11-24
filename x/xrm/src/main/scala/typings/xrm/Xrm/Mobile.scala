@@ -2,13 +2,14 @@ package typings.xrm.Xrm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for methods to create and manage records in the mobile clients (for phones tablets).
   */
 @js.native
 trait Mobile extends js.Object {
+  
   /**
     * Provides methods to create and manage records in the mobile clients while working in the offline mode.
     * @see {@link https://msdn.microsoft.com/en-us/library/mt787123.aspx External Link: Xrm.Mobile.offline (client-side reference)}
@@ -17,27 +18,30 @@ trait Mobile extends js.Object {
     */
   var offline: MobileOffline = js.native
 }
-
 object Mobile {
+  
   @scala.inline
   def apply(offline: MobileOffline): Mobile = {
     val __obj = js.Dynamic.literal(offline = offline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mobile]
   }
+  
   @scala.inline
   implicit class MobileOps[Self <: Mobile] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOffline(value: MobileOffline): Self = this.set("offline", value.asInstanceOf[js.Any])
   }
-  
 }
-

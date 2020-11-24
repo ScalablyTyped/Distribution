@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Sendas")
 @js.native
 class ResourceUsersSettingsSendas protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var smimeInfo: ResourceUsersSettingsSendasSmimeinfo = js.native
+  
   /**
     * gmail.users.settings.sendAs.create
     * @desc Creates a custom "from" send-as alias. If an SMTP MSA is specified,
@@ -51,6 +52,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSendAs]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.delete
     * @desc Deletes the specified send-as alias. Revokes any verification that
@@ -82,6 +84,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.get
     * @desc Gets the specified send-as alias. Fails with an HTTP 404 error if
@@ -112,6 +115,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSendAs]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.list
     * @desc Lists the send-as aliases for the specified account. The result
@@ -145,6 +149,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSendAsResponse]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.patch
     * @desc Updates a send-as alias. If a signature is provided, Gmail will
@@ -179,6 +184,9 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSendAs]
   ): Unit = js.native
+  
+  var smimeInfo: ResourceUsersSettingsSendasSmimeinfo = js.native
+  
   /**
     * gmail.users.settings.sendAs.update
     * @desc Updates a send-as alias. If a signature is provided, Gmail will
@@ -212,6 +220,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSendAs]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.sendAs.verify
     * @desc Sends a verification email to the specified send-as alias address.
@@ -245,4 +254,3 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

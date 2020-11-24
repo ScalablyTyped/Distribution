@@ -5,7 +5,7 @@ import typings.chromeApps.chrome.i18n.LanguageDetectionResult
 import typings.chromeApps.chrome.i18n.StringSubstitutions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.i18n
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.i18n")
 @js.native
 object i18n extends js.Object {
+  
   /**
     * Detects the language of the provided text using CLD.
     * @param text User input string to be translated.
@@ -28,12 +29,14 @@ object i18n extends js.Object {
     * @since Chrome 47.
     */
   def detectLanguage(text: String, callback: js.Function1[/* result */ LanguageDetectionResult, Unit]): Unit = js.native
+  
   /**
     * Gets the accept-languages of the browser.
     * This is different from the locale used by the browser;
     * to get the locale, use i18n.getUILanguage.
     */
   def getAcceptLanguages(callback: js.Function1[/* languages */ js.Array[LanguageCode], Unit]): Unit = js.native
+  
   /**
     * Gets the localized string for the specified message.
     * If the message is missing, this method returns an empty string ('').
@@ -46,6 +49,7 @@ object i18n extends js.Object {
     */
   def getMessage(messageName: String): js.UndefOr[String] = js.native
   def getMessage(messageName: String, substitutions: StringSubstitutions): js.UndefOr[String] = js.native
+  
   /**
     * Gets the browser UI language of the browser.
     * This is different from i18n.getAcceptLanguages which returns the preferred user languages.
@@ -53,4 +57,3 @@ object i18n extends js.Object {
     */
   def getUILanguage(): String = js.native
 }
-

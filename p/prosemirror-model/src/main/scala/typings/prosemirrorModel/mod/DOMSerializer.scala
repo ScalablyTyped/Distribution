@@ -6,7 +6,7 @@ import typings.std.Document
 import typings.std.DocumentFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "DOMSerializer")
 @js.native
@@ -24,14 +24,17 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
     nodes: StringDictionary[js.Function1[/* node */ ProsemirrorNode[S], DOMOutputSpec]],
     marks: StringDictionary[js.Function2[/* mark */ Mark[S], /* inline */ Boolean, DOMOutputSpec]]
   ) = this()
+  
   /**
     * The mark serialization functions.
     */
   var marks: StringDictionary[js.Function2[/* mark */ Mark[S], /* inline */ Boolean, DOMOutputSpec]] = js.native
+  
   /**
     * The node serialization functions.
     */
   var nodes: StringDictionary[js.Function1[/* node */ ProsemirrorNode[S], DOMOutputSpec]] = js.native
+  
   /**
     * Serialize the content of this fragment to a DOM fragment. When
     * not in the browser, the `document` option, containing a DOM
@@ -40,6 +43,7 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def serializeFragment(fragment: Fragment[S]): DocumentFragment = js.native
   def serializeFragment(fragment: Fragment[S], options: StringDictionary[js.Any]): DocumentFragment = js.native
+  
   /**
     * Serialize this node to a DOM node. This can be useful when you
     * need to serialize a part of a document, as opposed to the whole
@@ -50,16 +54,17 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
   def serializeNode(node: ProsemirrorNode[S]): typings.std.Node = js.native
   def serializeNode(node: ProsemirrorNode[S], options: StringDictionary[js.Any]): typings.std.Node = js.native
 }
-
 /* static members */
 @JSImport("prosemirror-model", "DOMSerializer")
 @js.native
 object DOMSerializer extends js.Object {
+  
   /**
     * Build a serializer using the [`toDOM`](#model.NodeSpec.toDOM)
     * properties in a schema's node and mark specs.
     */
   def fromSchema[S /* <: Schema[_, _] */](schema: S): DOMSerializer[S] = js.native
+  
   /**
     * Render an [output spec](#model.DOMOutputSpec) to a DOM node. If
     * the spec has a hole (zero) in it, `contentDOM` will point at the
@@ -67,4 +72,3 @@ object DOMSerializer extends js.Object {
     */
   def renderSpec(doc: Document, structure: DOMOutputSpec): ContentDOM = js.native
 }
-

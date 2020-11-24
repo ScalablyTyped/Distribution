@@ -12,7 +12,7 @@ Tiny library for clipboard copy.
 | Keywords           | copy, tiny, clipboard |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4147 |
+| # downloads        | 6149 |
 | # stars            | 0 |
 
 ## Links

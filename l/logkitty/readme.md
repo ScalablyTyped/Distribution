@@ -11,8 +11,8 @@ Display pretty Android and iOS logs without Android Studio or Console.app, with 
 | Full name          | logkitty |
 | Keywords           | logcat, cli, android, android studio, ios, Console.app, console, log, logs, logging |
 | # releases         | 18 |
-| # dependents       | 10 |
-| # downloads        | 9828056 |
+| # dependents       | 22 |
+| # downloads        | 13285814 |
 | # stars            | 0 |
 
 ## Links

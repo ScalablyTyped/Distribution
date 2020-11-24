@@ -4,14 +4,17 @@ import typings.node.Buffer
 import typings.qiniu.mod.auth.digest.Mac
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "util")
 @js.native
 object util extends js.Object {
+  
   def base64ToUrlSafe(v: String): String = js.native
+  
   def encodedEntry(bucket: String): String = js.native
   def encodedEntry(bucket: String, key: String): String = js.native
+  
   /**
     * 创建AccessToken凭证
     * @param mac AK&SK对象
@@ -20,6 +23,7 @@ object util extends js.Object {
     */
   def generateAccessToken(mac: Mac, requestURI: String): String = js.native
   def generateAccessToken(mac: Mac, requestURI: String, reqBody: String): String = js.native
+  
   /**
     * 创建AccessToken凭证
     * @param mac            AK&SK对象
@@ -30,12 +34,16 @@ object util extends js.Object {
     */
   def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String): String = js.native
   def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String, reqBody: String): String = js.native
+  
   def getAKFromUptoken(uploadToken: String): String = js.native
+  
   def getBucketFromUptoken(uploadToken: String): String = js.native
+  
   def hmacSha1(encodedFlags: String, secretKey: String): String = js.native
   def hmacSha1(encodedFlags: String, secretKey: Buffer): String = js.native
   def hmacSha1(encodedFlags: Buffer, secretKey: String): String = js.native
   def hmacSha1(encodedFlags: Buffer, secretKey: Buffer): String = js.native
+  
   /**
     * 校验七牛上传回调的Authorization
     * @param mac AK&SK对象
@@ -45,9 +53,12 @@ object util extends js.Object {
     */
   def isQiniuCallback(mac: Mac, requestURI: String, reqBody: String, callbackAuth: String): Boolean = js.native
   def isQiniuCallback(mac: Mac, requestURI: String, reqBody: Null, callbackAuth: String): Boolean = js.native
+  
   def isTimestampExpired(timestamp: Double): Boolean = js.native
+  
   def urlSafeBase64Decode(fromStr: String): String = js.native
+  
   def urlSafeToBase64(v: String): String = js.native
+  
   def urlsafeBase64Encode(jsonFlags: String): String = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v1", "cloudresourcemanager_v1.Resource$Folders")
 @js.native
 class ResourceFolders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudresourcemanager.folders.clearOrgPolicy
     * @desc Clears a `Policy` from a resource.
@@ -96,6 +96,9 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudresourcemanager.folders.getEffectiveOrgPolicy
     * @desc Gets the effective `Policy` on a resource. This is the result of
@@ -188,6 +191,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.getOrgPolicy
     * @desc Gets a `Policy` on a resource.  If no `Policy` is set on the
@@ -276,6 +280,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.listAvailableOrgPolicyConstraints
     * @desc Lists `Constraints` that could be applied on the specified
@@ -382,6 +387,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAvailableOrgPolicyConstraintsResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.listOrgPolicies
     * @desc Lists all the `Policies` set for a particular resource.
@@ -484,6 +490,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOrgPoliciesResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.setOrgPolicy
     * @desc Updates the specified `Policy` on the resource. Creates a new
@@ -572,4 +579,3 @@ class ResourceFolders protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrgPolicy]
   ): Unit = js.native
 }
-

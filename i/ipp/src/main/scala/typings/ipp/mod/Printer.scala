@@ -19,13 +19,14 @@ import typings.ipp.ippStrings.`Validate-Job`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ipp", "Printer")
 @js.native
 class Printer protected () extends js.Object {
   def this(url: String) = this()
   def this(url: String, options: PrinterOptions) = this()
+  
   def execute(operation: PrinterOpertaion): Unit = js.native
   def execute(
     operation: PrinterOpertaion,
@@ -167,4 +168,3 @@ class Printer protected () extends js.Object {
     callback: js.Function2[/* error */ Error, /* response */ SimpleResponse, Unit]
   ): Unit = js.native
 }
-

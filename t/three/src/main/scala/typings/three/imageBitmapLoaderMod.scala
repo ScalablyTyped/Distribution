@@ -9,16 +9,18 @@ import typings.three.loadingManagerMod.LoadingManager
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/loaders/ImageBitmapLoader", JSImport.Namespace)
 @js.native
 object imageBitmapLoaderMod extends js.Object {
+  
   @js.native
   class ImageBitmapLoader () extends Loader {
     def this(manager: LoadingManager) = this()
+    
     val isImageBitmapLoader: `true` = js.native
-    var options: js.UndefOr[js.Object] = js.native
+    
     def load(url: String): js.Any = js.native
     def load(
       url: String,
@@ -55,8 +57,12 @@ object imageBitmapLoaderMod extends js.Object {
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): js.Any = js.native
+    
+    /**
+    	 * @default { premultiplyAlpha: 'none' }
+    	 */
+    var options: js.UndefOr[js.Object] = js.native
+    
     def setOptions(options: js.Object): ImageBitmapLoader = js.native
   }
-  
 }
-

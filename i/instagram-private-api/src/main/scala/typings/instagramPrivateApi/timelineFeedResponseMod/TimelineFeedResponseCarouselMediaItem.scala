@@ -2,35 +2,59 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait TimelineFeedResponseCarouselMediaItem extends js.Object {
-  var ad_action: js.UndefOr[String] = js.undefined
-  var ad_link_type: js.UndefOr[Double] = js.undefined
-  var ad_metadata: js.UndefOr[js.Array[TimelineFeedResponseAdMetadataItem]] = js.undefined
-  var android_links: js.UndefOr[js.Array[TimelineFeedResponseAndroidLinksItem]] = js.undefined
-  var carousel_parent_id: String
-  var dominant_color: js.UndefOr[String] = js.undefined
-  var force_overlay: js.UndefOr[Boolean] = js.undefined
-  var headline: js.UndefOr[TimelineFeedResponseHeadline] = js.undefined
-  var hide_nux_text: js.UndefOr[Boolean] = js.undefined
-  var id: String
-  var image_versions2: TimelineFeedResponseImageVersions2
-  var link: js.UndefOr[String] = js.undefined
-  var link_hint_text: js.UndefOr[String] = js.undefined
-  var link_text: js.UndefOr[String] = js.undefined
-  var media_type: Double
-  var original_height: Double
-  var original_width: Double
-  var overlay_subtitle: js.UndefOr[String] = js.undefined
-  var overlay_text: js.UndefOr[String] = js.undefined
-  var overlay_title: js.UndefOr[String] = js.undefined
-  var pk: String
-  var usertags: js.UndefOr[TimelineFeedResponseUsertags] = js.undefined
-  var video_subtitles_uri: js.UndefOr[Null] = js.undefined
+  
+  var ad_action: js.UndefOr[String] = js.native
+  
+  var ad_link_type: js.UndefOr[Double] = js.native
+  
+  var ad_metadata: js.UndefOr[js.Array[TimelineFeedResponseAdMetadataItem]] = js.native
+  
+  var android_links: js.UndefOr[js.Array[TimelineFeedResponseAndroidLinksItem]] = js.native
+  
+  var carousel_parent_id: String = js.native
+  
+  var dominant_color: js.UndefOr[String] = js.native
+  
+  var force_overlay: js.UndefOr[Boolean] = js.native
+  
+  var headline: js.UndefOr[TimelineFeedResponseHeadline] = js.native
+  
+  var hide_nux_text: js.UndefOr[Boolean] = js.native
+  
+  var id: String = js.native
+  
+  var image_versions2: TimelineFeedResponseImageVersions2 = js.native
+  
+  var link: js.UndefOr[String] = js.native
+  
+  var link_hint_text: js.UndefOr[String] = js.native
+  
+  var link_text: js.UndefOr[String] = js.native
+  
+  var media_type: Double = js.native
+  
+  var original_height: Double = js.native
+  
+  var original_width: Double = js.native
+  
+  var overlay_subtitle: js.UndefOr[String] = js.native
+  
+  var overlay_text: js.UndefOr[String] = js.native
+  
+  var overlay_title: js.UndefOr[String] = js.native
+  
+  var pk: String = js.native
+  
+  var usertags: js.UndefOr[TimelineFeedResponseUsertags] = js.native
+  
+  var video_subtitles_uri: js.UndefOr[Null] = js.native
 }
-
 object TimelineFeedResponseCarouselMediaItem {
+  
   @scala.inline
   def apply(
     carousel_parent_id: String,
@@ -39,40 +63,142 @@ object TimelineFeedResponseCarouselMediaItem {
     media_type: Double,
     original_height: Double,
     original_width: Double,
-    pk: String,
-    ad_action: String = null,
-    ad_link_type: js.UndefOr[Double] = js.undefined,
-    ad_metadata: js.Array[TimelineFeedResponseAdMetadataItem] = null,
-    android_links: js.Array[TimelineFeedResponseAndroidLinksItem] = null,
-    dominant_color: String = null,
-    force_overlay: js.UndefOr[Boolean] = js.undefined,
-    headline: TimelineFeedResponseHeadline = null,
-    hide_nux_text: js.UndefOr[Boolean] = js.undefined,
-    link: String = null,
-    link_hint_text: String = null,
-    link_text: String = null,
-    overlay_subtitle: String = null,
-    overlay_text: String = null,
-    overlay_title: String = null,
-    usertags: TimelineFeedResponseUsertags = null
+    pk: String
   ): TimelineFeedResponseCarouselMediaItem = {
     val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any])
-    if (ad_action != null) __obj.updateDynamic("ad_action")(ad_action.asInstanceOf[js.Any])
-    if (!js.isUndefined(ad_link_type)) __obj.updateDynamic("ad_link_type")(ad_link_type.get.asInstanceOf[js.Any])
-    if (ad_metadata != null) __obj.updateDynamic("ad_metadata")(ad_metadata.asInstanceOf[js.Any])
-    if (android_links != null) __obj.updateDynamic("android_links")(android_links.asInstanceOf[js.Any])
-    if (dominant_color != null) __obj.updateDynamic("dominant_color")(dominant_color.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_overlay)) __obj.updateDynamic("force_overlay")(force_overlay.get.asInstanceOf[js.Any])
-    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_nux_text)) __obj.updateDynamic("hide_nux_text")(hide_nux_text.get.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (link_hint_text != null) __obj.updateDynamic("link_hint_text")(link_hint_text.asInstanceOf[js.Any])
-    if (link_text != null) __obj.updateDynamic("link_text")(link_text.asInstanceOf[js.Any])
-    if (overlay_subtitle != null) __obj.updateDynamic("overlay_subtitle")(overlay_subtitle.asInstanceOf[js.Any])
-    if (overlay_text != null) __obj.updateDynamic("overlay_text")(overlay_text.asInstanceOf[js.Any])
-    if (overlay_title != null) __obj.updateDynamic("overlay_title")(overlay_title.asInstanceOf[js.Any])
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseCarouselMediaItem]
   }
+  
+  @scala.inline
+  implicit class TimelineFeedResponseCarouselMediaItemOps[Self <: TimelineFeedResponseCarouselMediaItem] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCarousel_parent_id(value: String): Self = this.set("carousel_parent_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setImage_versions2(value: TimelineFeedResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMedia_type(value: Double): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOriginal_height(value: Double): Self = this.set("original_height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOriginal_width(value: Double): Self = this.set("original_width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAd_action(value: String): Self = this.set("ad_action", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAd_action: Self = this.set("ad_action", js.undefined)
+    
+    @scala.inline
+    def setAd_link_type(value: Double): Self = this.set("ad_link_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAd_link_type: Self = this.set("ad_link_type", js.undefined)
+    
+    @scala.inline
+    def setAd_metadataVarargs(value: TimelineFeedResponseAdMetadataItem*): Self = this.set("ad_metadata", js.Array(value :_*))
+    
+    @scala.inline
+    def setAd_metadata(value: js.Array[TimelineFeedResponseAdMetadataItem]): Self = this.set("ad_metadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAd_metadata: Self = this.set("ad_metadata", js.undefined)
+    
+    @scala.inline
+    def setAndroid_linksVarargs(value: TimelineFeedResponseAndroidLinksItem*): Self = this.set("android_links", js.Array(value :_*))
+    
+    @scala.inline
+    def setAndroid_links(value: js.Array[TimelineFeedResponseAndroidLinksItem]): Self = this.set("android_links", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAndroid_links: Self = this.set("android_links", js.undefined)
+    
+    @scala.inline
+    def setDominant_color(value: String): Self = this.set("dominant_color", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDominant_color: Self = this.set("dominant_color", js.undefined)
+    
+    @scala.inline
+    def setForce_overlay(value: Boolean): Self = this.set("force_overlay", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteForce_overlay: Self = this.set("force_overlay", js.undefined)
+    
+    @scala.inline
+    def setHeadline(value: TimelineFeedResponseHeadline): Self = this.set("headline", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHeadline: Self = this.set("headline", js.undefined)
+    
+    @scala.inline
+    def setHide_nux_text(value: Boolean): Self = this.set("hide_nux_text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHide_nux_text: Self = this.set("hide_nux_text", js.undefined)
+    
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    
+    @scala.inline
+    def setLink_hint_text(value: String): Self = this.set("link_hint_text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLink_hint_text: Self = this.set("link_hint_text", js.undefined)
+    
+    @scala.inline
+    def setLink_text(value: String): Self = this.set("link_text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLink_text: Self = this.set("link_text", js.undefined)
+    
+    @scala.inline
+    def setOverlay_subtitle(value: String): Self = this.set("overlay_subtitle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOverlay_subtitle: Self = this.set("overlay_subtitle", js.undefined)
+    
+    @scala.inline
+    def setOverlay_text(value: String): Self = this.set("overlay_text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOverlay_text: Self = this.set("overlay_text", js.undefined)
+    
+    @scala.inline
+    def setOverlay_title(value: String): Self = this.set("overlay_title", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOverlay_title: Self = this.set("overlay_title", js.undefined)
+    
+    @scala.inline
+    def setUsertags(value: TimelineFeedResponseUsertags): Self = this.set("usertags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUsertags: Self = this.set("usertags", js.undefined)
+  }
 }
-

@@ -2,17 +2,17 @@ package typings.sodiumjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sodiumjs", "IOAction")
 @js.native
 class IOAction ()
   extends typings.sodiumjs.ioactionMod.IOAction
-
 /* static members */
 @JSImport("sodiumjs", "IOAction")
 @js.native
 object IOAction extends js.Object {
+  
   /*!
     * Convert a function that performs asynchronous I/O taking input A
     * and returning a value of type B into an I/O action of type
@@ -23,4 +23,3 @@ object IOAction extends js.Object {
     typings.sodiumjs.streamMod.Stream[B]
   ] = js.native
 }
-

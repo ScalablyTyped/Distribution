@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1", "remotebuildexecution_v1.Resource$Media")
 @js.native
 class ResourceMedia protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.media.download
     * @desc Downloads media. Download is supported on the URI
@@ -42,6 +44,7 @@ class ResourceMedia protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleBytestreamMedia]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.media.upload
     * @desc Uploads media. Upload is supported on the URI
@@ -76,4 +79,3 @@ class ResourceMedia protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleBytestreamMedia]
   ): Unit = js.native
 }
-

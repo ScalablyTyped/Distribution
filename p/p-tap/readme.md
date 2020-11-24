@@ -10,9 +10,9 @@ Tap into a promise chain without affecting its value or state
 | ------------------ | :-------------: |
 | Full name          | p-tap |
 | Keywords           | promise, tap, debug, log, then, catch, error, chain, pipeline, thunk, function, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 348134 |
+| # releases         | 3 |
+| # dependents       | 13 |
+| # downloads        | 321662 |
 | # stars            | 1 |
 
 ## Links

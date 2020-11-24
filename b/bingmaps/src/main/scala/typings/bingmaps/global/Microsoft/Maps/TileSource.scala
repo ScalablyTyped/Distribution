@@ -3,7 +3,7 @@ package typings.bingmaps.global.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.ITileSourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.TileSource")
 @js.native
@@ -15,4 +15,3 @@ class TileSource protected ()
     */
   def this(options: ITileSourceOptions) = this()
 }
-

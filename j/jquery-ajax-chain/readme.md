@@ -12,7 +12,7 @@ jQuery helper class meant to ease up the process of making multiple synchronousl
 | Keywords           | jquery-plugin, javascript, ajax, chain, sequence, series, waterfall, async |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 586 |
+| # downloads        | 732 |
 | # stars            | 0 |
 
 ## Links

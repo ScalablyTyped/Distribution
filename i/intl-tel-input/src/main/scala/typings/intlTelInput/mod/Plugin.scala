@@ -7,15 +7,16 @@ import typings.intlTelInput.mod.intlTelInputUtils.placeholderNumberType
 import typings.intlTelInput.mod.intlTelInputUtils.validationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Plugin extends js.Object {
-  var promise: js.Promise[Unit] = js.native
+  
   /**
     * Remove the plugin from the input, and unbind any event listeners.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Get the extension from the current number.
     * Requires the utilsScript option.
@@ -23,6 +24,7 @@ trait Plugin extends js.Object {
     * return "1234".
     */
   def getExtension(): String = js.native
+  
   /**
     * Get the current number in the given format (defaults to E.164 standard).
     * The different formats are available in the enum
@@ -34,6 +36,7 @@ trait Plugin extends js.Object {
     */
   def getNumber(): String = js.native
   def getNumber(numberFormat: numberFormat): String = js.native
+  
   /**
     * Get the type (fixed-line/mobile/toll-free etc) of the current number.
     * Requires the utilsScript option.
@@ -43,10 +46,12 @@ trait Plugin extends js.Object {
     * mobile numbers, so instead it will return FIXED_LINE_OR_MOBILE.
     */
   def getNumberType(): numberType = js.native
+  
   /**
     * Get the country data for the currently selected flag.
     */
   def getSelectedCountryData(): CountryData = js.native
+  
   /**
     * Get more information about a validation error.
     * Requires the utilsScript option.
@@ -54,6 +59,7 @@ trait Plugin extends js.Object {
     * global enum ValidationError
     */
   def getValidationError(): validationError = js.native
+  
   /**
     * Validate the current number. Expects an internationally formatted number
     * (unless nationalMode is enabled). If validation fails, you can use
@@ -63,11 +69,15 @@ trait Plugin extends js.Object {
     * type of number e.g. a mobile number.
     */
   def isValidNumber(): Boolean = js.native
+  
+  var promise: js.Promise[Unit] = js.native
+  
   /**
     * Change the country selection (e.g. when the user is entering their address).
     * @param countryCode country code of the country to be set.
     */
   def setCountry(countryCode: String): Unit = js.native
+  
   /**
     * Insert a number, and update the selected flag accordingly.
     * Note that by default, if nationalMode is enabled it will try to use
@@ -75,10 +85,10 @@ trait Plugin extends js.Object {
     * @param aNumber number to be set.
     */
   def setNumber(aNumber: String): Unit = js.native
+  
   /**
     * Set the type of the placeholder number
     * @param type Placeholder number type to be set
     */
   def setPlaceholderNumberType(`type`: placeholderNumberType): Unit = js.native
 }
-

@@ -23,7 +23,7 @@ import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Field")
 @js.native
@@ -39,24 +39,36 @@ class Field protected () extends FieldBase {
     */
   def this(name: String, id: Double, `type`: String) = this()
   def this(name: String, id: Double, `type`: String, rule: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.UndefOr[js.Any]]) = this()
   def this(name: String, id: Double, `type`: String, rule: js.UndefOr[scala.Nothing], extend: String) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: js.UndefOr[scala.Nothing],
-    extend: StringDictionary[js.Any]
+    extend: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(name: String, id: Double, `type`: String, rule: String, extend: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: String, extend: StringDictionary[js.Any]) = this()
-  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any], extend: String) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
-    extend: StringDictionary[js.Any]
+    rule: String,
+    extend: StringDictionary[js.UndefOr[js.Any]]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[js.UndefOr[js.Any]],
+    extend: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[js.UndefOr[js.Any]],
+    extend: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
@@ -64,7 +76,7 @@ class Field protected () extends FieldBase {
     `type`: String,
     rule: js.UndefOr[scala.Nothing],
     extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.Any]
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
@@ -72,15 +84,15 @@ class Field protected () extends FieldBase {
     `type`: String,
     rule: js.UndefOr[scala.Nothing],
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: js.UndefOr[scala.Nothing],
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
@@ -88,7 +100,7 @@ class Field protected () extends FieldBase {
     `type`: String,
     rule: String,
     extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.Any]
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
@@ -96,48 +108,49 @@ class Field protected () extends FieldBase {
     `type`: String,
     rule: String,
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: String,
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
+    rule: StringDictionary[js.UndefOr[js.Any]],
     extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.Any]
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
+    rule: StringDictionary[js.UndefOr[js.Any]],
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    rule: StringDictionary[js.UndefOr[js.Any]],
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
+  
   /** Determines whether this field is packed. Only relevant when repeated and working with proto2. */
   val packed: Boolean = js.native
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs", "Field")
 @js.native
 object Field extends js.Object {
+  
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -173,6 +186,7 @@ object Field extends js.Object {
   def d_required[T /* <: Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = js.native
   @JSName("d")
   def d_required[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = js.native
+  
   /**
     * Constructs a field from a field descriptor.
     * @param name Field name
@@ -182,4 +196,3 @@ object Field extends js.Object {
     */
   def fromJSON(name: String, json: IField): Field = js.native
 }
-

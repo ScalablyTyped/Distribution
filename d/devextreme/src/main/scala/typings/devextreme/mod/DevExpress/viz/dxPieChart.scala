@@ -2,11 +2,13 @@ package typings.devextreme.mod.DevExpress.viz
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxPieChart extends BaseChart {
-  /** @name dxPieChart.getInnerRadius() */
+  
+  /**
+    * [descr:dxPieChart.getInnerRadius()]
+    */
   def getInnerRadius(): Double = js.native
 }
-

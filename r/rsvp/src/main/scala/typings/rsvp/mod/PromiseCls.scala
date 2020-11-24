@@ -3,7 +3,7 @@ package typings.rsvp.mod
 import typings.rsvp.mod.RSVP.Arg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsvp", "Promise")
 @js.native
@@ -29,4 +29,3 @@ class PromiseCls[T] protected ()
     label: String
   ) = this()
 }
-

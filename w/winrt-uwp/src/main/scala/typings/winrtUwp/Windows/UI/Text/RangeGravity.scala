@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RangeGravity extends js.Object
-
 /** Specifies the gravity for a text range. */
 @JSGlobal("Windows.UI.Text.RangeGravity")
 @js.native
 object RangeGravity extends js.Object {
+  
   /** Use the formatting of the previous text run when on a boundary between runs. */
   @js.native
   sealed trait backward extends RangeGravity
@@ -30,6 +30,4 @@ object RangeGravity extends js.Object {
   /** Use selection user interface rules. */
   @js.native
   sealed trait uiBehavior extends RangeGravity
-  
 }
-

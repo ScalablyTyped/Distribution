@@ -8,11 +8,12 @@ import typings.fridaGum.PageProtection
 import typings.fridaGum.UInt64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Memory")
 @js.native
 object Memory extends js.Object {
+  
   /**
     * Allocates `size` bytes of memory on Frida's private heap, or, if `size` is a multiple of Process#pageSize,
     * one or more raw memory pages managed by the OS. The allocated memory will be released when the returned
@@ -23,6 +24,7 @@ object Memory extends js.Object {
     */
   def alloc(size: Double): typings.fridaGum.NativePointer = js.native
   def alloc(size: UInt64): typings.fridaGum.NativePointer = js.native
+  
   /**
     * Allocates, encodes and writes out `str` as an ANSI string on Frida's private heap.
     * See Memory#alloc() for details about its lifetime.
@@ -30,6 +32,7 @@ object Memory extends js.Object {
     * @param str String to allocate.
     */
   def allocAnsiString(str: String): typings.fridaGum.NativePointer = js.native
+  
   /**
     * Allocates, encodes and writes out `str` as a UTF-16 string on Frida's private heap.
     * See Memory#alloc() for details about its lifetime.
@@ -37,6 +40,7 @@ object Memory extends js.Object {
     * @param str String to allocate.
     */
   def allocUtf16String(str: String): typings.fridaGum.NativePointer = js.native
+  
   /**
     * Allocates, encodes and writes out `str` as a UTF-8 string on Frida's private heap.
     * See Memory#alloc() for details about its lifetime.
@@ -44,6 +48,7 @@ object Memory extends js.Object {
     * @param str String to allocate.
     */
   def allocUtf8String(str: String): typings.fridaGum.NativePointer = js.native
+  
   /**
     * Just like memcpy.
     *
@@ -53,6 +58,7 @@ object Memory extends js.Object {
     */
   def copy(dst: NativePointerValue, src: NativePointerValue, n: Double): Unit = js.native
   def copy(dst: NativePointerValue, src: NativePointerValue, n: UInt64): Unit = js.native
+  
   /**
     * Short-hand for Memory#alloc() followed by Memory#copy(). See Memory#alloc() for details about lifetime.
     *
@@ -61,6 +67,7 @@ object Memory extends js.Object {
     */
   def dup(address: NativePointerValue, size: Double): typings.fridaGum.NativePointer = js.native
   def dup(address: NativePointerValue, size: UInt64): typings.fridaGum.NativePointer = js.native
+  
   /**
     * Safely modifies `size` bytes at `address`. The supplied function `apply` gets called with a writable pointer
     * where you must write the desired modifications before returning. Do not make any assumptions about this being
@@ -74,6 +81,7 @@ object Memory extends js.Object {
     */
   def patchCode(address: NativePointerValue, size: Double, apply: MemoryPatchApplyCallback): Unit = js.native
   def patchCode(address: NativePointerValue, size: UInt64, apply: MemoryPatchApplyCallback): Unit = js.native
+  
   /**
     * Changes the page protection on a region of memory.
     *
@@ -83,6 +91,7 @@ object Memory extends js.Object {
     */
   def protect(address: NativePointerValue, size: Double, protection: PageProtection): Boolean = js.native
   def protect(address: NativePointerValue, size: UInt64, protection: PageProtection): Boolean = js.native
+  
   /**
     * Scans memory for occurences of `pattern` in the memory range given by `address` and `size`.
     *
@@ -99,6 +108,7 @@ object Memory extends js.Object {
     */
   def scan(address: NativePointerValue, size: Double, pattern: String, callbacks: MemoryScanCallbacks): Unit = js.native
   def scan(address: NativePointerValue, size: UInt64, pattern: String, callbacks: MemoryScanCallbacks): Unit = js.native
+  
   /**
     * Synchronous version of `scan()`.
     *
@@ -109,4 +119,3 @@ object Memory extends js.Object {
   def scanSync(address: NativePointerValue, size: Double, pattern: String): js.Array[MemoryScanMatch] = js.native
   def scanSync(address: NativePointerValue, size: UInt64, pattern: String): js.Array[MemoryScanMatch] = js.native
 }
-

@@ -18,7 +18,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`11`
@@ -39,39 +39,53 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`14`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def ABBREVIATION: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def ADJECTIVE: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def BRAND_NAME: `15` = 15.asInstanceOf[`15`]
+  
   @scala.inline
   def BUSINESS: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def FIRST_NAME: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def FOREIGN: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def IDIOM: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def LAST_NAME: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def NOT_DEFINED: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def NOUN: `13` = 13.asInstanceOf[`13`]
+  
   @scala.inline
   def NUMERICAL: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def OTHER: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def PLACE_NAME: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def STATUS: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def TITLE: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def VERB: `14` = 14.asInstanceOf[`14`]
 }
-

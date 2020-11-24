@@ -2,15 +2,18 @@ package typings.angularStrap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object mgcrea extends js.Object {
+    
     @js.native
     object ngStrap extends js.Object {
+      
       ///////////////////////////////////////////////////////////////////////////
       // Affix
       // see http://mgcrea.github.io/angular-strap/#/affix
@@ -120,10 +123,6 @@ object global extends js.Object {
       ///////////////////////////////////////////////////////////////////////////
       @js.native
       object typeahead extends js.Object
-      
     }
-    
   }
-  
 }
-

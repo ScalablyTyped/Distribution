@@ -5,20 +5,18 @@ import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.mediatorSystemMod.MediatorSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/DistributedSystemArrayMediator", JSImport.Namespace)
 @js.native
 object distributedSystemArrayMediatorMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
     */
   abstract class DistributedSystemArrayMediator[System /* <: DistributedSystem */] () extends DistributedSystemArray[System] {
-    /**
-      * @hidden
-      */
-    var mediator_ : js.Any = js.native
+    
     /**
       * Factory method creating a {@link MediatorSystem} object.
       *
@@ -44,6 +42,7 @@ object distributedSystemArrayMediatorMod extends js.Object {
       * @return A newly created {@link MediatorSystem} object.
       */
     /* protected */ def createMediator(): MediatorSystem = js.native
+    
     /**
       * Get {@link MediatorSystem} object.
       *
@@ -58,6 +57,12 @@ object distributedSystemArrayMediatorMod extends js.Object {
       * @return The {@link MediatorSystem} object.
       */
     def getMediator(): MediatorSystem = js.native
+    
+    /**
+      * @hidden
+      */
+    var mediator_ : js.Any = js.native
+    
     /**
       * Start mediator.
       *
@@ -66,6 +71,4 @@ object distributedSystemArrayMediatorMod extends js.Object {
       */
     /* protected */ def startMediator(): Unit = js.native
   }
-  
 }
-

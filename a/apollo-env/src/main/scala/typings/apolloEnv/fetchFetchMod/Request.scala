@@ -4,7 +4,7 @@ import typings.nodeFetch.mod.RequestInfo
 import typings.nodeFetch.mod.RequestInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("apollo-env/lib/fetch/fetch", "Request")
 @js.native
@@ -13,4 +13,3 @@ class Request protected ()
   def this(input: RequestInfo) = this()
   def this(input: RequestInfo, init: RequestInit) = this()
 }
-

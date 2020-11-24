@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.anon.Bin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * KeyUsage ASN.1 structure class
@@ -15,4 +15,3 @@ class KeyUsage ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.KeyUsage {
   def this(params: Bin) = this()
 }
-

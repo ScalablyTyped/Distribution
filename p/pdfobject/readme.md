@@ -10,9 +10,9 @@ An open-source standards-friendly JavaScript utility for embedding PDF files int
 | ------------------ | :-------------: |
 | Full name          | pdfobject |
 | Keywords           | pdf, pdfobject |
-| # releases         | 5 |
-| # dependents       | 16 |
-| # downloads        | 828717 |
+| # releases         | 6 |
+| # dependents       | 27 |
+| # downloads        | 1231219 |
 | # stars            | 1 |
 
 ## Links

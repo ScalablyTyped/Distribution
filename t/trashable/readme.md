@@ -10,9 +10,9 @@ A wrapper to make promises cancellable and garbage collectable
 | ------------------ | :-------------: |
 | Full name          | trashable |
 | Keywords           | javascript, promise, cancellable, garbage-collection, garbage, collection, cancel, react, es6 |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 188556 |
+| # downloads        | 166064 |
 | # stars            | 0 |
 
 ## Links

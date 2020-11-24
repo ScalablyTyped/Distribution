@@ -11,8 +11,8 @@ Changes the case of all keys of an object
 | Full name          | change-case-object |
 | Keywords           | camel, object, case, change, snake, param |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 135786 |
+| # dependents       | 6 |
+| # downloads        | 363131 |
 | # stars            | 0 |
 
 ## Links

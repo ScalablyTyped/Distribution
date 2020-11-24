@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbuild/v1alpha1", "cloudbuild_v1alpha1.Resource$Projects$Workerpools")
 @js.native
 class ResourceProjectsWorkerpools protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudbuild.projects.workerPools.create
     * @desc Creates a `WorkerPool` to run the builds, and returns the new
@@ -43,6 +45,7 @@ class ResourceProjectsWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkerPool]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.workerPools.delete
     * @desc Deletes a `WorkerPool` by its project ID and WorkerPool name.  This
@@ -72,6 +75,7 @@ class ResourceProjectsWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.workerPools.get
     * @desc Returns information about a `WorkerPool`.  This API is
@@ -101,6 +105,7 @@ class ResourceProjectsWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkerPool]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.workerPools.list
     * @desc List project's `WorkerPool`s.  This API is experimental.
@@ -132,6 +137,7 @@ class ResourceProjectsWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWorkerPoolsResponse]
   ): Unit = js.native
+  
   /**
     * cloudbuild.projects.workerPools.patch
     * @desc Update a `WorkerPool`.  This API is experimental.
@@ -162,4 +168,3 @@ class ResourceProjectsWorkerpools protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWorkerPool]
   ): Unit = js.native
 }
-

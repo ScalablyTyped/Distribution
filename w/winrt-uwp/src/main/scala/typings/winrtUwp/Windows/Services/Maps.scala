@@ -2,21 +2,23 @@ package typings.winrtUwp.Windows.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Services.Maps namespace contains classes that provide location, routing, and geocoding services. */
 @JSGlobal("Windows.Services.Maps")
 @js.native
 object Maps extends js.Object {
+  
   /** Provides APIs for turn-by-turn guided navigation. */
   @js.native
   object Guidance extends js.Object {
+    
     @js.native
     sealed trait GuidanceLaneMarkers extends js.Object
-    
     /** Specifies the path of the lane. */
     @js.native
     object GuidanceLaneMarkers extends js.Object {
+      
       /** A hard left turn marker. */
       @js.native
       sealed trait hardLeft extends GuidanceLaneMarkers
@@ -60,10 +62,6 @@ object Maps extends js.Object {
       /** A right U-turn marker. */
       @js.native
       sealed trait uturnRight extends GuidanceLaneMarkers
-      
     }
-    
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.crypto
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cipher class to encrypt and decrypt data
@@ -23,4 +23,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.Cipher")
 @js.native
 object Cipher extends js.Object
-

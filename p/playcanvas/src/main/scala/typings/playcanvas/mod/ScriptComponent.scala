@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ScriptComponent allows you to extend the functionality of an Entity by attaching your own Script Types defined in JavaScript files
@@ -17,4 +17,3 @@ class ScriptComponent protected ()
   extends typings.playcanvas.pc.ScriptComponent {
   def this(system: typings.playcanvas.pc.ScriptComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

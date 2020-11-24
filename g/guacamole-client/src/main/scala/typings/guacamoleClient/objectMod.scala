@@ -6,11 +6,12 @@ import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/Object", JSImport.Namespace)
 @js.native
 object objectMod extends js.Object {
+  
   @js.native
   class Object protected () extends js.Object {
     /**
@@ -18,10 +19,22 @@ object objectMod extends js.Object {
       * @param index The index of this object.
       */
     def this(client: Client, index: Double) = this()
+    
+    /**
+      * Creates a new output stream associated with this object and having the
+      * given mimetype and name. The legality of a mimetype and name is dictated
+      * by the object itself.
+      * @param mimetype The mimetype of the data which will be sent to the output stream.
+      * @param name The defined name of an output stream within this object.
+      * @returns An output stream which will write blobs to the named output stream of this object.
+      */
+    def createOutputStream(mimetype: Mimetype, name: String): OutputStream = js.native
+    
     /**
       * The index of this object.
       */
     val index: Double = js.native
+    
     /**
       * Called when this object receives the body of a requested input stream.
       * By default, all objects will invoke the callbacks provided to their
@@ -35,6 +48,7 @@ object objectMod extends js.Object {
       * @param name The name of the stream whose body has been received.
       */
     var onbody: Null | (js.Function2[/* bodyStream */ InputStream, /* mimetype */ Mimetype, Unit]) = js.native
+    
     /**
       * Called when this object is being undefined. Once undefined, no further
       * communication involving this object may occur.
@@ -42,15 +56,7 @@ object objectMod extends js.Object {
       * @event
       */
     var onundefine: Null | js.Function0[Unit] = js.native
-    /**
-      * Creates a new output stream associated with this object and having the
-      * given mimetype and name. The legality of a mimetype and name is dictated
-      * by the object itself.
-      * @param mimetype The mimetype of the data which will be sent to the output stream.
-      * @param name The defined name of an output stream within this object.
-      * @returns An output stream which will write blobs to the named output stream of this object.
-      */
-    def createOutputStream(mimetype: Mimetype, name: String): OutputStream = js.native
+    
     /**
       * Requests read access to the input stream having the given name. If
       * successful, a new input stream will be created.
@@ -65,15 +71,16 @@ object objectMod extends js.Object {
     def requestInputStream(name: String): Unit = js.native
     def requestInputStream(name: String, bodyCallback: js.Function2[/* stream */ InputStream, /* mimetype */ Mimetype, Unit]): Unit = js.native
   }
-  
   /* static members */
   @js.native
   object Object extends js.Object {
+    
     /**
       * The reserved name denoting the root stream of any object. The contents of
       * the root stream MUST be a JSON map of stream name to mimetype.
       */
     val ROOT_STREAM: String = js.native
+    
     /**
       * The mimetype of a stream containing JSON which maps available stream names
       * to their corresponding mimetype. The root stream of a Guacamole.Object MUST
@@ -81,6 +88,4 @@ object objectMod extends js.Object {
       */
     val STREAM_INDEX_MIMETYPE: String = js.native
   }
-  
 }
-

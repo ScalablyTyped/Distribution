@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/poly/v1", "poly_v1.Resource$Users$Likedassets")
 @js.native
 class ResourceUsersLikedassets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * poly.users.likedassets.list
     * @desc Lists assets that the user has liked. Only the value 'me',
@@ -51,4 +53,3 @@ class ResourceUsersLikedassets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListLikedAssetsResponse]
   ): Unit = js.native
 }
-

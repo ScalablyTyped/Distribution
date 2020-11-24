@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operator/switchMap", JSImport.Namespace)
 @js.native
 object operatorSwitchMapMod extends js.Object {
+  
   def switchMap[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -15,4 +16,3 @@ object operatorSwitchMapMod extends js.Object {
     ]
   ): js.Any = js.native
 }
-

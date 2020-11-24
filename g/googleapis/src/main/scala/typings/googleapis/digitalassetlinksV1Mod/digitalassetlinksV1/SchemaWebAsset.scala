@@ -2,13 +2,14 @@ package typings.googleapis.digitalassetlinksV1Mod.digitalassetlinksV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a web asset.
   */
 @js.native
 trait SchemaWebAsset extends js.Object {
+  
   /**
     * Web assets are identified by a URL that contains only the scheme,
     * hostname and port parts.  The format is
@@ -31,29 +32,33 @@ trait SchemaWebAsset extends js.Object {
     */
   var site: js.UndefOr[String] = js.native
 }
-
 object SchemaWebAsset {
+  
   @scala.inline
   def apply(): SchemaWebAsset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWebAsset]
   }
+  
   @scala.inline
   implicit class SchemaWebAssetOps[Self <: SchemaWebAsset] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSite(value: String): Self = this.set("site", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSite: Self = this.set("site", js.undefined)
   }
-  
 }
-

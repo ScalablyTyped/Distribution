@@ -3,14 +3,16 @@ package typings.simmerjs.mod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Simmer extends js.Object {
+  
   /**
     * Analyze an element and produce a unique CSS selector for it.
     */
   def apply(element: Element): String = js.native
+  
   /**
     * If you have an existing instance of Simmer, you can use its configure
     * method to instanciate a new Simmer which has the same scope and
@@ -19,4 +21,3 @@ trait Simmer extends js.Object {
     */
   def configure(options: Options): Simmer = js.native
 }
-

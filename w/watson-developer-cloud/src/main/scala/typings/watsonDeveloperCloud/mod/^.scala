@@ -2,7 +2,7 @@ package typings.watsonDeveloperCloud.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Assistant service combines machine learning, natural language understanding, and integrated dialog tools to create conversation flows between your apps and your users.
@@ -30,10 +30,9 @@ class ^ protected () extends AssistantV1 {
     */
   def this(options: Options) = this()
 }
-
 @JSImport("watson-developer-cloud/assistant/v1", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var URL: String = js.native
 }
-

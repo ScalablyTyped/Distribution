@@ -2,7 +2,7 @@ package typings.jupyterlabCodeeditor.editorMod.CodeEditor
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The location of requested edges.
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom
 */
 trait EdgeLocation extends js.Object
-
 object EdgeLocation {
+  
   @scala.inline
   def bottom: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom]
+  
   @scala.inline
   def top: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.top = "top".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.top]
+  
   @scala.inline
   def topLine: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.topLine = "topLine".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.topLine]
 }
-

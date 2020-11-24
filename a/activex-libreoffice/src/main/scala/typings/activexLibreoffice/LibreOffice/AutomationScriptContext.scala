@@ -67,10 +67,11 @@ import typings.activexLibreoffice.com_.sun.star.util.theOfficeInstallationDirect
 import typings.activexLibreoffice.com_.sun.star.util.thePathSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AutomationScriptContext extends XNameAccess {
+  
   @JSName("getByName")
   def getByName_singletoncomsunstarbeanstheIntrospection(aName: SlashsingletonSlashcomDotsunDotstarDotbeansDottheIntrospection): theIntrospection = js.native
   @JSName("getByName")
@@ -136,4 +137,3 @@ trait AutomationScriptContext extends XNameAccess {
   @JSName("getByName")
   def getByName_singletoncomsunstarutilthePathSettings(aName: SlashsingletonSlashcomDotsunDotstarDotutilDotthePathSettings): thePathSettings = js.native
 }
-

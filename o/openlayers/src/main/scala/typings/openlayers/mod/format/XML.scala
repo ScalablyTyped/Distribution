@@ -2,7 +2,7 @@ package typings.openlayers.mod.format
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
   * @struct
   */
 class XML () extends js.Object
-

@@ -5,12 +5,13 @@ import typings.d3Selection.mod.ValueFn
 import typings.d3SelectionMulti.d3SelectionMultiStrings.important
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("d3-transition", JSImport.Namespace)
 @js.native
 object d3TransitionAugmentingMod extends js.Object {
+  
   /**
     * A D3 Transition.
     *
@@ -21,6 +22,7 @@ object d3TransitionAugmentingMod extends js.Object {
     */
   @js.native
   trait Transition[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends js.Object {
+    
     /**
       * Derive a map of attribute values to set.
       *
@@ -33,6 +35,7 @@ object d3TransitionAugmentingMod extends js.Object {
       * @param attrs An object used as a map of attributes and their values.
       */
     def attrs(attrs: ValueMap[GElement, Datum]): this.type = js.native
+    
     /**
       * Derive a map of style properties to be set.
       *
@@ -52,6 +55,4 @@ object d3TransitionAugmentingMod extends js.Object {
     @JSName("styles")
     def styles_important(style: ValueMap[GElement, Datum], priority: important): this.type = js.native
   }
-  
 }
-

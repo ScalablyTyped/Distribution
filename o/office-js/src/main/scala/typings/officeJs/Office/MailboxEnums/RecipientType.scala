@@ -2,11 +2,10 @@ package typings.officeJs.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RecipientType extends js.Object
-
 /**
   * Specifies the type of recipient for an appointment.
   *
@@ -19,6 +18,7 @@ sealed trait RecipientType extends js.Object
 @JSGlobal("Office.MailboxEnums.RecipientType")
 @js.native
 object RecipientType extends js.Object {
+  
   /**
     * Specifies that the recipient is a distribution list containing a list of email addresses.
     */
@@ -42,6 +42,4 @@ object RecipientType extends js.Object {
     */
   @js.native
   sealed trait User extends RecipientType
-  
 }
-

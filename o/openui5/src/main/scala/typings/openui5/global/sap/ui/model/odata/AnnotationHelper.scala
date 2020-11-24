@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.util.XMLPreprocessor.IContext
 import typings.openui5.sap.ui.model.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.AnnotationHelper")
 @js.native
 object AnnotationHelper extends js.Object {
+  
   /**
     * Creates a property setting (which is either a constant value or a binding infoobject) from the given
     * parts and from the optional root formatter function.Each part can have one of the following
@@ -47,6 +48,7 @@ object AnnotationHelper extends js.Object {
     */
   def createPropertySetting(vParts: js.Array[_]): js.Any = js.native
   def createPropertySetting(vParts: js.Array[_], fnRootFormatter: js.Any): js.Any = js.native
+  
   /**
     * A formatter function to be used in a complex binding inside an XML template viewin order to
     * interpret OData V4 annotations. It knows about<ul>  <li> the "14.4 Constant Expressions" for
@@ -97,6 +99,7 @@ object AnnotationHelper extends js.Object {
   def format(oInterface: IContext, vRawValue: js.Any): String = js.native
   def format(oInterface: Context): String = js.native
   def format(oInterface: Context, vRawValue: js.Any): String = js.native
+  
   /**
     * A formatter function to be used in a complex binding inside an XML template viewin order to
     * interpret OData V4 annotations. It knows about the following dynamicexpressions:<ul><li>"14.5.2
@@ -124,6 +127,7 @@ object AnnotationHelper extends js.Object {
   def getNavigationPath(oInterface: IContext, vRawValue: js.Any): String = js.native
   def getNavigationPath(oInterface: Context): String = js.native
   def getNavigationPath(oInterface: Context, vRawValue: js.Any): String = js.native
+  
   /**
     * Helper function for a <code>template:with</code> instruction that depending on howit is called goes
     * to the entity set with the given name or to the one determinedby the last navigation property.
@@ -141,6 +145,7 @@ object AnnotationHelper extends js.Object {
     * case, a warning is logged to the console.
     */
   def gotoEntitySet(oContext: Context): String = js.native
+  
   /**
     * Helper function for a <code>template:with</code> instruction that goes to theentity type with the
     * qualified name which <code>oContext</code> points at.Example: Assume that "entitySet" refers to an
@@ -155,6 +160,7 @@ object AnnotationHelper extends js.Object {
     * such type is found. In this case, a warning is  logged to the console.
     */
   def gotoEntityType(oContext: Context): String = js.native
+  
   /**
     * Helper function for a <code>template:with</code> instruction that goes to thefunction import with
     * the name which <code>oContext</code> points at.Example: Assume that "dataField" refers to a
@@ -171,6 +177,7 @@ object AnnotationHelper extends js.Object {
     * if no function import is found. In this case, a warning  is logged to the console.
     */
   def gotoFunctionImport(oContext: Context): String = js.native
+  
   /**
     * A formatter function to be used in a complex binding inside an XML template viewin order to
     * interpret OData V4 annotations. It knows about the following dynamicexpressions:<ul><li>"14.5.2
@@ -198,6 +205,7 @@ object AnnotationHelper extends js.Object {
   def isMultiple(oInterface: IContext, vRawValue: js.Any): String = js.native
   def isMultiple(oInterface: Context): String = js.native
   def isMultiple(oInterface: Context, vRawValue: js.Any): String = js.native
+  
   /**
     * Helper function for a <code>template:with</code> instruction that resolves a dynamic"14.5.2
     * Expression edm:AnnotationPath","14.5.11 Expression edm:NavigationPropertyPath", "14.5.12 Expression
@@ -212,6 +220,7 @@ object AnnotationHelper extends js.Object {
     * this case, a warning is logged to the console.
     */
   def resolvePath(oContext: Context): String = js.native
+  
   /**
     * Formatter function that is used in a complex binding inside an XML template view.The function is
     * used to interpret OData V4 annotations, supporting the sameannotations as {@link #.format format}
@@ -233,4 +242,3 @@ object AnnotationHelper extends js.Object {
   def simplePath(oInterface: Context): String = js.native
   def simplePath(oInterface: Context, vRawValue: js.Any): String = js.native
 }
-

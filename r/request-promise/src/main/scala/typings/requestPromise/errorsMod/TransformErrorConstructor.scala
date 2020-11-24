@@ -6,7 +6,7 @@ import typings.requestPromise.mod.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TransformErrorConstructor
@@ -17,6 +17,6 @@ trait TransformErrorConstructor
       /* response */ IncomingMessage, 
       TransformError
     ] {
+  
   def apply(cause: js.Any, options: Options, response: IncomingMessage): TransformError = js.native
 }
-

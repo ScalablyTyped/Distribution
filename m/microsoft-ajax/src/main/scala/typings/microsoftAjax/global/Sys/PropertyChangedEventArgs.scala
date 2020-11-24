@@ -2,7 +2,7 @@ package typings.microsoftAjax.global.Sys
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used by the propertyChanged event to indicate which property has changed.
@@ -20,4 +20,3 @@ class PropertyChangedEventArgs protected ()
     */
   def this(propertyName: String) = this()
 }
-

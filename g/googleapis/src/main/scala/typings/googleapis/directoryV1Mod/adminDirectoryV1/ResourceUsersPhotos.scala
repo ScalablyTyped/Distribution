@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Users$Photos")
 @js.native
 class ResourceUsersPhotos protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.users.photos.delete
     * @desc Remove photos for the user
@@ -41,6 +43,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.users.photos.get
     * @desc Retrieve photo of a user
@@ -69,6 +72,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserPhoto]
   ): Unit = js.native
+  
   /**
     * directory.users.photos.patch
     * @desc Add a photo for the user. This method supports patch semantics.
@@ -98,6 +102,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserPhoto]
   ): Unit = js.native
+  
   /**
     * directory.users.photos.update
     * @desc Add a photo for the user
@@ -128,4 +133,3 @@ class ResourceUsersPhotos protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUserPhoto]
   ): Unit = js.native
 }
-

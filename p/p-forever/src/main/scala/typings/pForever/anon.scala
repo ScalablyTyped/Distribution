@@ -2,17 +2,15 @@ package typings.pForever
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
-    /**
-    	Symbol used to end the loop.
-    	*/
-    val end: js.Symbol = js.native
+    
     /**
     	Run promise-returning & async functions until you end it.
     	@param fn - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
@@ -60,7 +58,10 @@ object anon extends js.Object {
         ],
       initialValue: js.Thenable[ValueType]
     ): js.Promise[Unit] = js.native
+    
+    /**
+    	Symbol used to end the loop.
+    	*/
+    val end: js.Symbol = js.native
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Midi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies a continue message. */
 @JSGlobal("Windows.Devices.Midi.MidiContinueMessage")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 /** Creates a new MidiContinueMessage object. */
 class MidiContinueMessage ()
   extends typings.winrtUwp.Windows.Devices.Midi.MidiContinueMessage
-

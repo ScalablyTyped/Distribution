@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DiagnosticCategory extends js.Object
-
 @JSGlobal("TypeScript.DiagnosticCategory")
 @js.native
 object DiagnosticCategory extends js.Object {
+  
   @js.native
   sealed trait Error extends DiagnosticCategory
   
@@ -21,6 +21,4 @@ object DiagnosticCategory extends js.Object {
   
   @js.native
   sealed trait Warning extends DiagnosticCategory
-  
 }
-

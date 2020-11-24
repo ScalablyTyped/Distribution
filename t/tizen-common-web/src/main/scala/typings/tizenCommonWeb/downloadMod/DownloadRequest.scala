@@ -5,7 +5,7 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.CELLULAR
 import typings.tizenCommonWeb.tizenCommonWebStrings.WIFI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/download", "DownloadRequest")
 @js.native
@@ -217,10 +217,14 @@ class DownloadRequest protected () extends js.Object {
     networkType: WIFI,
     httpHeader: DownloadHTTPHeaderFields
   ) = this()
+  
   var destnation: js.UndefOr[String] = js.native
+  
   var filename: js.UndefOr[String] = js.native
+  
   var httpHeader: js.UndefOr[DownloadHTTPHeaderFields] = js.native
+  
   var networkType: js.UndefOr[DownloadNetworkType | CELLULAR | WIFI | ALL] = js.native
+  
   var url: String = js.native
 }
-

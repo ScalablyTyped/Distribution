@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-dsv
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 A parser and formatter for delimiter-separated values, such as CSV and TSV
@@ -11,8 +11,8 @@ A parser and formatter for delimiter-separated values, such as CSV and TSV
 | Full name          | d3-dsv |
 | Keywords           | d3, d3-module, dsv, csv, tsv |
 | # releases         | 7 |
-| # dependents       | 133 |
-| # downloads        | 27923588 |
+| # dependents       | 156 |
+| # downloads        | 40353781 |
 | # stars            | 3 |
 
 ## Links

@@ -6,10 +6,11 @@ import typings.xstate.typesMod.PureAction
 import typings.xstate.typesMod.SingleOrArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallGetActions extends js.Object {
+  
   def apply[TContext, TEvent /* <: EventObject */](
     getActions: js.Function2[
       /* context */ TContext, 
@@ -18,4 +19,3 @@ trait FnCallGetActions extends js.Object {
     ]
   ): PureAction[TContext, TEvent] = js.native
 }
-

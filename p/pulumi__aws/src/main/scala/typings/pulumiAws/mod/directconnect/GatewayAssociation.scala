@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "directconnect.GatewayAssociation")
 @js.native
@@ -23,11 +23,11 @@ class GatewayAssociation protected ()
   def this(name: String, args: GatewayAssociationArgs) = this()
   def this(name: String, args: GatewayAssociationArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "directconnect.GatewayAssociation")
 @js.native
 object GatewayAssociation extends js.Object {
+  
   /**
     * Get an existing GatewayAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object GatewayAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
   def get(name: String, id: Input[ID], state: GatewayAssociationState): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
   def get(name: String, id: Input[ID], state: GatewayAssociationState, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of GatewayAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean = js.native
 }
-

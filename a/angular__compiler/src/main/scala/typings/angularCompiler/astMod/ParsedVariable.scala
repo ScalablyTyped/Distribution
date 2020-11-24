@@ -3,7 +3,7 @@ package typings.angularCompiler.astMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "ParsedVariable")
 @js.native
@@ -16,10 +16,14 @@ class ParsedVariable protected () extends js.Object {
     keySpan: ParseSourceSpan,
     valueSpan: ParseSourceSpan
   ) = this()
+  
   val keySpan: ParseSourceSpan = js.native
+  
   val name: String = js.native
+  
   val sourceSpan: ParseSourceSpan = js.native
+  
   val value: String = js.native
+  
   val valueSpan: js.UndefOr[ParseSourceSpan] = js.native
 }
-

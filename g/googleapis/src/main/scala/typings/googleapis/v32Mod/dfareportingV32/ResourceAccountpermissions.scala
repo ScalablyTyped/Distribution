@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Accountpermissions")
 @js.native
 class ResourceAccountpermissions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.accountPermissions.get
     * @desc Gets one account permission by ID.
@@ -45,6 +47,7 @@ class ResourceAccountpermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountPermission]
   ): Unit = js.native
+  
   /**
     * dfareporting.accountPermissions.list
     * @desc Retrieves the list of account permissions.
@@ -77,4 +80,3 @@ class ResourceAccountpermissions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccountPermissionsListResponse]
   ): Unit = js.native
 }
-

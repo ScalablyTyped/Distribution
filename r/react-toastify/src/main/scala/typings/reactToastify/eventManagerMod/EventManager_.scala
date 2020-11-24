@@ -13,13 +13,15 @@ import typings.reactToastify.useToastContainerMod.ContainerInstance
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventManager_ extends js.Object {
-  var emitQueue: Map[Event, js.Array[TimeoutId]] = js.native
-  var list: Map[Event, js.Array[Callback]] = js.native
+  
   def cancelEmit(event: Event): EventManager_ = js.native
+  
+  var emitQueue: Map[Event, js.Array[TimeoutId]] = js.native
+  
   @JSName("emit")
   def emit_0(event: `0`, content: ReactNode, options: NotValidatedToastProps): Unit = js.native
   @JSName("emit")
@@ -40,8 +42,12 @@ trait EventManager_ extends js.Object {
   def emit_4(event: `4`, toast: Double, containerId: Double): Unit = js.native
   @JSName("emit")
   def emit_5(event: `5`, params: ClearWaitingQueueParams): Unit = js.native
+  
+  var list: Map[Event, js.Array[Callback]] = js.native
+  
   def off(event: Event): EventManager_ = js.native
   def off(event: Event, callback: Callback): EventManager_ = js.native
+  
   @JSName("on")
   def on_0(event: `0`, callback: OnShowCallback): EventManager_ = js.native
   @JSName("on")
@@ -55,4 +61,3 @@ trait EventManager_ extends js.Object {
   @JSName("on")
   def on_5(event: `5`, callback: OnClearWaitingQueue): EventManager_ = js.native
 }
-

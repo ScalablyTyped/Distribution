@@ -5,13 +5,12 @@ import typings.dateFns.anon.LocaleWeekStartsOn
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm/fp/differenceInCalendarWeeksWithOptions", JSImport.Namespace)
 @js.native
 object differenceInCalendarWeeksWithOptionsMod extends js.Object {
+  
   @js.native
   object default extends TopLevel[CurriedFn3[LocaleWeekStartsOn, Date | Double, Date | Double, Double]]
-  
 }
-

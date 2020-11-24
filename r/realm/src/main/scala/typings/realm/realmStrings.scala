@@ -1,64 +1,201 @@
 package typings.realm
 
-import typings.realm.Realm.Sync.AccessLevel
-import typings.realm.Realm.Sync.ClientResyncMode
-import typings.realm.Realm.Sync.LogLevel
-import typings.realm.Realm.Sync.OpenRealmBehaviorType
-import typings.realm.Realm.Sync.OpenRealmTimeOutBehavior
-import typings.realm.Realm.Sync.ProgressDirection
-import typings.realm.Realm.Sync.ProgressMode
-import typings.realm.Realm.Sync.RealmListenerEventName
-import typings.realm.Realm.Sync.SessionStopPolicy
+import typings.realm.Realm.App.Sync.LogLevel
+import typings.realm.Realm.OpenRealmBehaviorType
+import typings.realm.Realm.OpenRealmTimeOutBehavior
+import typings.realm.Realm.ProgressDirection
+import typings.realm.Realm.ProgressMode
+import typings.realm.Realm.Services.MongoDB.OperationType
+import typings.realm.Realm.SessionStopPolicy
 import typings.realm.Realm._PropertyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object realmStrings {
-  @js.native
-  sealed trait ADD_PROPERTIES extends js.Object
+  
+  @scala.inline
+  def RealmOptionalParMappedModel: RealmOptionalParMappedModel = "RealmOptionalParMappedModel".asInstanceOf[RealmOptionalParMappedModel]
+  
+  @scala.inline
+  def _id: _id = "_id".asInstanceOf[_id]
+  
+  @scala.inline
+  def _objectId: _objectId = "_objectId".asInstanceOf[_objectId]
+  
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  
+  @scala.inline
+  def addListener: addListener = "addListener".asInstanceOf[addListener]
+  
+  @scala.inline
+  def `after-upload`: `after-upload` = "after-upload".asInstanceOf[`after-upload`]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def decimal128: decimal128 = "decimal128".asInstanceOf[decimal128]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def detail: detail = "detail".asInstanceOf[detail]
+  
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  
+  @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  
+  @scala.inline
+  def downloadBeforeOpen: downloadBeforeOpen = "downloadBeforeOpen".asInstanceOf[downloadBeforeOpen]
+  
+  @scala.inline
+  def drop: drop = "drop".asInstanceOf[drop]
+  
+  @scala.inline
+  def dropDatabase: dropDatabase = "dropDatabase".asInstanceOf[dropDatabase]
+  
+  @scala.inline
+  def entries: entries = "entries".asInstanceOf[entries]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  
+  @scala.inline
+  def forCurrentlyOutstandingWork: forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[forCurrentlyOutstandingWork]
+  
+  @scala.inline
+  def immediately: immediately = "immediately".asInstanceOf[immediately]
+  
+  @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  
+  @scala.inline
+  def int: int = "int".asInstanceOf[int]
+  
+  @scala.inline
+  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @scala.inline
+  def invalidate: invalidate = "invalidate".asInstanceOf[invalidate]
+  
+  @scala.inline
+  def isValid: isValid = "isValid".asInstanceOf[isValid]
+  
+  @scala.inline
+  def keys: keys = "keys".asInstanceOf[keys]
+  
+  @scala.inline
+  def linkingObjects: linkingObjects = "linkingObjects".asInstanceOf[linkingObjects]
+  
+  @scala.inline
+  def linkingObjectsCount: linkingObjectsCount = "linkingObjectsCount".asInstanceOf[linkingObjectsCount]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def objectId: objectId = "objectId".asInstanceOf[objectId]
+  
+  @scala.inline
+  def objectSchema: objectSchema = "objectSchema".asInstanceOf[objectSchema]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def openImmediately: openImmediately = "openImmediately".asInstanceOf[openImmediately]
+  
+  @scala.inline
+  def openLocalRealm: openLocalRealm = "openLocalRealm".asInstanceOf[openLocalRealm]
+  
+  @scala.inline
+  def removeAllListeners: removeAllListeners = "removeAllListeners".asInstanceOf[removeAllListeners]
+  
+  @scala.inline
+  def removeListener: removeListener = "removeListener".asInstanceOf[removeListener]
+  
+  @scala.inline
+  def rename: rename = "rename".asInstanceOf[rename]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def reportIndefinitely: reportIndefinitely = "reportIndefinitely".asInstanceOf[reportIndefinitely]
+  
+  @scala.inline
+  def schema: schema = "schema".asInstanceOf[schema]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def throwException: throwException = "throwException".asInstanceOf[throwException]
+  
+  @scala.inline
+  def toJSON: toJSON = "toJSON".asInstanceOf[toJSON]
+  
+  @scala.inline
+  def trace: trace = "trace".asInstanceOf[trace]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def upload: upload = "upload".asInstanceOf[upload]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait ADD_TYPE extends js.Object
+  sealed trait RealmOptionalParMappedModel extends js.Object
   
   @js.native
-  sealed trait CHANGE_IDENTITY extends js.Object
+  sealed trait _id extends js.Object
   
   @js.native
-  sealed trait CLEAR extends js.Object
-  
-  @js.native
-  sealed trait DELETE extends js.Object
-  
-  @js.native
-  sealed trait INSERT extends js.Object
-  
-  @js.native
-  sealed trait LIST_CLEAR extends js.Object
-  
-  @js.native
-  sealed trait LIST_ERASE extends js.Object
-  
-  @js.native
-  sealed trait LIST_INSERT extends js.Object
-  
-  @js.native
-  sealed trait LIST_SET extends js.Object
-  
-  @js.native
-  sealed trait SET extends js.Object
-  
-  @js.native
-  sealed trait SWAP_IDENTITY extends js.Object
+  sealed trait _objectId extends js.Object
   
   @js.native
   sealed trait active extends js.Object
   
   @js.native
-  sealed trait admin extends AccessLevel
-  
-  @js.native
-  sealed trait adminToken extends js.Object
+  sealed trait addListener extends js.Object
   
   @js.native
   sealed trait `after-upload` extends SessionStopPolicy
@@ -67,19 +204,10 @@ object realmStrings {
   sealed trait all extends LogLevel
   
   @js.native
-  sealed trait any extends js.Object
-  
-  @js.native
-  sealed trait available extends RealmListenerEventName
-  
-  @js.native
   sealed trait bool extends _PropertyType
   
   @js.native
-  sealed trait change extends RealmListenerEventName
-  
-  @js.native
-  sealed trait currentUser extends js.Object
+  sealed trait change extends js.Object
   
   @js.native
   sealed trait data extends _PropertyType
@@ -91,13 +219,13 @@ object realmStrings {
   sealed trait debug extends LogLevel
   
   @js.native
-  sealed trait delete_ extends RealmListenerEventName
+  sealed trait decimal128 extends _PropertyType
+  
+  @js.native
+  sealed trait delete extends OperationType
   
   @js.native
   sealed trait detail extends LogLevel
-  
-  @js.native
-  sealed trait discard extends ClientResyncMode
   
   @js.native
   sealed trait double extends _PropertyType
@@ -107,6 +235,15 @@ object realmStrings {
   
   @js.native
   sealed trait downloadBeforeOpen extends OpenRealmBehaviorType
+  
+  @js.native
+  sealed trait drop extends OperationType
+  
+  @js.native
+  sealed trait dropDatabase extends OperationType
+  
+  @js.native
+  sealed trait entries extends js.Object
   
   @js.native
   sealed trait error extends LogLevel
@@ -130,25 +267,40 @@ object realmStrings {
   sealed trait info extends LogLevel
   
   @js.native
+  sealed trait insert extends OperationType
+  
+  @js.native
   sealed trait int extends _PropertyType
   
   @js.native
   sealed trait invalid extends js.Object
   
   @js.native
+  sealed trait invalidate extends OperationType
+  
+  @js.native
+  sealed trait isValid extends js.Object
+  
+  @js.native
+  sealed trait keys extends js.Object
+  
+  @js.native
   sealed trait linkingObjects extends _PropertyType
+  
+  @js.native
+  sealed trait linkingObjectsCount extends js.Object
   
   @js.native
   sealed trait list extends _PropertyType
   
   @js.native
-  sealed trait manual extends ClientResyncMode
-  
-  @js.native
   sealed trait never extends SessionStopPolicy
   
   @js.native
-  sealed trait none extends AccessLevel
+  sealed trait objectId extends _PropertyType
+  
+  @js.native
+  sealed trait objectSchema extends js.Object
   
   @js.native
   sealed trait off extends LogLevel
@@ -160,13 +312,16 @@ object realmStrings {
   sealed trait openLocalRealm extends OpenRealmTimeOutBehavior
   
   @js.native
-  sealed trait otherUser extends js.Object
+  sealed trait removeAllListeners extends js.Object
   
   @js.native
-  sealed trait read extends AccessLevel
+  sealed trait removeListener extends js.Object
   
   @js.native
-  sealed trait recover extends ClientResyncMode
+  sealed trait rename extends OperationType
+  
+  @js.native
+  sealed trait replace extends OperationType
   
   @js.native
   sealed trait reportIndefinitely extends ProgressMode
@@ -181,134 +336,17 @@ object realmStrings {
   sealed trait throwException extends OpenRealmTimeOutBehavior
   
   @js.native
+  sealed trait toJSON extends js.Object
+  
+  @js.native
   sealed trait trace extends LogLevel
+  
+  @js.native
+  sealed trait update extends OperationType
   
   @js.native
   sealed trait upload extends ProgressDirection
   
   @js.native
   sealed trait warn extends LogLevel
-  
-  @js.native
-  sealed trait write extends AccessLevel
-  
-  @scala.inline
-  def ADD_PROPERTIES: ADD_PROPERTIES = "ADD_PROPERTIES".asInstanceOf[ADD_PROPERTIES]
-  @scala.inline
-  def ADD_TYPE: ADD_TYPE = "ADD_TYPE".asInstanceOf[ADD_TYPE]
-  @scala.inline
-  def CHANGE_IDENTITY: CHANGE_IDENTITY = "CHANGE_IDENTITY".asInstanceOf[CHANGE_IDENTITY]
-  @scala.inline
-  def CLEAR: CLEAR = "CLEAR".asInstanceOf[CLEAR]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
-  @scala.inline
-  def LIST_CLEAR: LIST_CLEAR = "LIST_CLEAR".asInstanceOf[LIST_CLEAR]
-  @scala.inline
-  def LIST_ERASE: LIST_ERASE = "LIST_ERASE".asInstanceOf[LIST_ERASE]
-  @scala.inline
-  def LIST_INSERT: LIST_INSERT = "LIST_INSERT".asInstanceOf[LIST_INSERT]
-  @scala.inline
-  def LIST_SET: LIST_SET = "LIST_SET".asInstanceOf[LIST_SET]
-  @scala.inline
-  def SET: SET = "SET".asInstanceOf[SET]
-  @scala.inline
-  def SWAP_IDENTITY: SWAP_IDENTITY = "SWAP_IDENTITY".asInstanceOf[SWAP_IDENTITY]
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def admin: admin = "admin".asInstanceOf[admin]
-  @scala.inline
-  def adminToken: adminToken = "adminToken".asInstanceOf[adminToken]
-  @scala.inline
-  def `after-upload`: `after-upload` = "after-upload".asInstanceOf[`after-upload`]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def available: available = "available".asInstanceOf[available]
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def currentUser: currentUser = "currentUser".asInstanceOf[currentUser]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def detail: detail = "detail".asInstanceOf[detail]
-  @scala.inline
-  def discard: discard = "discard".asInstanceOf[discard]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
-  @scala.inline
-  def downloadBeforeOpen: downloadBeforeOpen = "downloadBeforeOpen".asInstanceOf[downloadBeforeOpen]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def forCurrentlyOutstandingWork: forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[forCurrentlyOutstandingWork]
-  @scala.inline
-  def immediately: immediately = "immediately".asInstanceOf[immediately]
-  @scala.inline
-  def inactive: inactive = "inactive".asInstanceOf[inactive]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
-  @scala.inline
-  def linkingObjects: linkingObjects = "linkingObjects".asInstanceOf[linkingObjects]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def openImmediately: openImmediately = "openImmediately".asInstanceOf[openImmediately]
-  @scala.inline
-  def openLocalRealm: openLocalRealm = "openLocalRealm".asInstanceOf[openLocalRealm]
-  @scala.inline
-  def otherUser: otherUser = "otherUser".asInstanceOf[otherUser]
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
-  @scala.inline
-  def recover: recover = "recover".asInstanceOf[recover]
-  @scala.inline
-  def reportIndefinitely: reportIndefinitely = "reportIndefinitely".asInstanceOf[reportIndefinitely]
-  @scala.inline
-  def schema: schema = "schema".asInstanceOf[schema]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def throwException: throwException = "throwException".asInstanceOf[throwException]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def upload: upload = "upload".asInstanceOf[upload]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def write: write = "write".asInstanceOf[write]
 }
-

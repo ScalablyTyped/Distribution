@@ -2,10 +2,11 @@ package typings.bpmnModdle.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Moddle extends js.Object {
+  
   def create(descriptor: js.Any): BaseElement = js.native
   def create(descriptor: js.Any, attrs: js.Any): BaseElement = js.native
   /**
@@ -22,6 +23,7 @@ trait Moddle extends js.Object {
     */
   def create[T, K /* <: /* keyof T */ String */](descriptor: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   def create[T, K /* <: /* keyof T */ String */](descriptor: K, attrs: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  
   /**
     * Creates an any-element type to be used within model instances.
     *
@@ -48,26 +50,31 @@ trait Moddle extends js.Object {
     * @return the any type instance
     */
   def createAny(name: String, nsUri: String, properties: js.Any): js.Any = js.native
+  
   /**
     * Returns the descriptor for an element
     */
   def getElementDescriptor(element: js.Any): js.Any = js.native
+  
   /**
     * Returns a registered package by uri or prefix
     *
     * @return the package
     */
   def getPackage(uriOrPrefix: js.Any): js.Any = js.native
+  
   /**
     * Returns a snapshot of all known packages
     *
     * @return the package
     */
   def getPackages(): js.Any = js.native
+  
   /**
     * Returns the descriptor of an elements named property
     */
   def getPropertyDescriptor(element: js.Any, property: js.Any): js.Any = js.native
+  
   /**
     * Returns the type representing a given descriptor
     *
@@ -80,10 +87,12 @@ trait Moddle extends js.Object {
     * @return the type representing the descriptor
     */
   def getType(descriptor: js.Any): js.Any = js.native
+  
   /**
     * Returns a mapped type's descriptor
     */
   def getTypeDescriptor(`type`: String): js.Any = js.native
+  
   /**
     * Returns true if the given descriptor or instance
     * represents the given type.
@@ -92,4 +101,3 @@ trait Moddle extends js.Object {
     */
   def hasType(element: js.Any, `type`: String): js.Any = js.native
 }
-

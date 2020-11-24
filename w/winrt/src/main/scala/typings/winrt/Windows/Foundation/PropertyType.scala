@@ -2,14 +2,14 @@ package typings.winrt.Windows.Foundation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PropertyType extends js.Object
-
 @JSGlobal("Windows.Foundation.PropertyType")
 @js.native
 object PropertyType extends js.Object {
+  
   @js.native
   sealed trait boolean extends PropertyType
   
@@ -132,6 +132,4 @@ object PropertyType extends js.Object {
   
   @js.native
   sealed trait uInt8Array extends PropertyType
-  
 }
-

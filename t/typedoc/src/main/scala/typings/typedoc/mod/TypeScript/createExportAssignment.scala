@@ -6,11 +6,12 @@ import typings.typescript.mod.Expression
 import typings.typescript.mod.Modifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createExportAssignment")
 @js.native
 object createExportAssignment extends js.Object {
+  
   def apply(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
@@ -53,6 +54,7 @@ object createExportAssignment extends js.Object {
     isExportEquals: js.UndefOr[scala.Nothing],
     expression: Expression
   ): ExportAssignment = js.native
+  /** @deprecated Use `factory.createExportAssignment` or the factory supplied by your transformation context instead. */
   def apply(
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
@@ -60,4 +62,3 @@ object createExportAssignment extends js.Object {
     expression: Expression
   ): ExportAssignment = js.native
 }
-

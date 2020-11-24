@@ -3,12 +3,13 @@ package typings.tensorflowTfjsConverter
 import typings.tensorflowTfjsConverter.operationsTypesMod.InternalOpAsyncExecutor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-converter/dist/operations/executors/control_executor", JSImport.Namespace)
 @js.native
 object controlExecutorMod extends js.Object {
+  
   val CATEGORY: /* "control" */ String = js.native
+  
   val executeOp: InternalOpAsyncExecutor = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-splash-screen" : "0.5.0"
+      "expo-splash-screen" : "0.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-splash-screen" : "0.5.0"
+      "expo-splash-screen" : "0.6.2"
     }
   ],
   "compile-devDependencies" : [

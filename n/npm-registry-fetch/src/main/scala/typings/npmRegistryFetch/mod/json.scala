@@ -4,11 +4,12 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("npm-registry-fetch", "json")
 @js.native
 object json extends js.Object {
+  
   /**
     * Performs a request to a given registry URL, parses the body of the
     * response as JSON, and returns it as its final value. This is a utility
@@ -16,6 +17,7 @@ object json extends js.Object {
     */
   def apply(url: String): js.Promise[Record[String, _]] = js.native
   def apply(url: String, opts: Options): js.Promise[Record[String, _]] = js.native
+  
   /**
     * Performs a request to a given registry URL and parses the body of the
     * response as JSON, with each entry being emitted through the stream.
@@ -27,4 +29,3 @@ object json extends js.Object {
   def stream(url: String, jsonPath: String): ReadWriteStream = js.native
   def stream(url: String, jsonPath: String, opts: Options): ReadWriteStream = js.native
 }
-

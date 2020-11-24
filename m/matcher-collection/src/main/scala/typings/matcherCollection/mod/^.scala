@@ -6,16 +6,14 @@ import typings.matcherCollection.anon.Match
 import typings.minimatch.mod.IMinimatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matcher-collection", JSImport.Namespace)
 @js.native
 class ^ protected () extends Match {
   def this(matchers: js.Array[String | IMinimatch]) = this()
 }
-
 @JSImport("matcher-collection", JSImport.Namespace)
 @js.native
 object ^
   extends TopLevel[Instantiable1[/* matchers */ js.Array[String | IMinimatch], Match]]
-

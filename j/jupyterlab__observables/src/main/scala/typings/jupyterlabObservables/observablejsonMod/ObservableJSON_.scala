@@ -6,7 +6,7 @@ import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/observables/lib/observablejson", "ObservableJSON")
 @js.native
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
   */
 class ObservableJSON_ () extends ObservableMap[ReadonlyPartialJSONValue] {
   def this(options: IOptions) = this()
+  
   /**
     * Serialize the model to JSON.
     */
   def toJSON(): PartialJSONObject = js.native
 }
-

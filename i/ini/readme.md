@@ -11,8 +11,8 @@ An ini encoder/decoder for node
 | Full name          | ini |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 1403 |
-| # downloads        | 449330342 |
+| # dependents       | 1664 |
+| # downloads        | 598295311 |
 | # stars            | 44 |
 
 ## Links

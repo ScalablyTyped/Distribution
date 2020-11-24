@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.registry.XSimpleRegistry
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a collection of implementations for services reading from a persistent registry storage.
@@ -16,10 +16,11 @@ import scala.scalajs.js.annotation._
 trait RegistryServiceManager
   extends ServiceManager
      with XInitialization {
+  
   /** Specifies the current registry to be read from. */
   var Registry: XSimpleRegistry = js.native
+  
   /** @returns all names of services of which instances exist in this object.  {@link XContentEnumerationAccess.createContentEnumeration()} creates an enumerati */
   /* InferMemberOverrides */
   override def getAvailableServiceNames(): SafeArray[String] = js.native
 }
-

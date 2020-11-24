@@ -4,7 +4,7 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoVirtualdom.mod.VirtualElement.IRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An options object for creating a command.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ICommandOptions extends js.Object {
+  
   /**
     * The caption for the command.
     *
@@ -34,6 +35,7 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty string.
     */
   var caption: js.UndefOr[String | CommandFunc[String]] = js.native
+  
   /**
     * The general class name for the command.
     *
@@ -49,6 +51,7 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty string.
     */
   var className: js.UndefOr[String | CommandFunc[String]] = js.native
+  
   /**
     * The dataset for the command.
     *
@@ -62,6 +65,19 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty dataset.
     */
   var dataset: js.UndefOr[Dataset | CommandFunc[Dataset]] = js.native
+  
+  /**
+    * The function to invoke when the command is executed.
+    *
+    * #### Notes
+    * This should return the result of the command (if applicable) or
+    * a promise which yields the result. The result is resolved as a
+    * promise and that promise is returned to the code which executed
+    * the command.
+    *
+    * This may be invoked even when `isEnabled` returns `false`.
+    */
+  def execute(args: ReadonlyPartialJSONObject): js.Any | js.Promise[_] = js.native
   /**
     * The function to invoke when the command is executed.
     *
@@ -75,6 +91,7 @@ trait ICommandOptions extends js.Object {
     */
   @JSName("execute")
   var execute_Original: CommandFunc[_ | js.Promise[_]] = js.native
+  
   /**
     * The icon renderer for the command.
     *
@@ -88,6 +105,7 @@ trait ICommandOptions extends js.Object {
     * an alias for the .iconClass field, for backwards compatibility
     */
   var icon: js.UndefOr[IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])] = js.native
+  
   /**
     * The icon class for the command.
     *
@@ -103,6 +121,7 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty string.
     */
   var iconClass: js.UndefOr[String | CommandFunc[String]] = js.native
+  
   /**
     * The icon label for the command.
     *
@@ -116,6 +135,7 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty string.
     */
   var iconLabel: js.UndefOr[String | CommandFunc[String]] = js.native
+  
   /**
     * A function which indicates whether the command is enabled.
     *
@@ -126,6 +146,7 @@ trait ICommandOptions extends js.Object {
     * The default value is `() => true`.
     */
   var isEnabled: js.UndefOr[CommandFunc[Boolean]] = js.native
+  
   /**
     * A function which indicates whether the command is toggled.
     *
@@ -137,6 +158,7 @@ trait ICommandOptions extends js.Object {
     * The default value is `() => false`.
     */
   var isToggled: js.UndefOr[CommandFunc[Boolean]] = js.native
+  
   /**
     * A function which indicates whether the command is visible.
     *
@@ -147,6 +169,7 @@ trait ICommandOptions extends js.Object {
     * The default value is `() => true`.
     */
   var isVisible: js.UndefOr[CommandFunc[Boolean]] = js.native
+  
   /**
     * The label for the command.
     *
@@ -159,6 +182,7 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty string.
     */
   var label: js.UndefOr[String | CommandFunc[String]] = js.native
+  
   /**
     * The index of the mnemonic character in the command's label.
     *
@@ -173,6 +197,7 @@ trait ICommandOptions extends js.Object {
     * The default value is `-1`.
     */
   var mnemonic: js.UndefOr[Double | CommandFunc[Double]] = js.native
+  
   /**
     * The usage text for the command.
     *
@@ -188,17 +213,4 @@ trait ICommandOptions extends js.Object {
     * The default value is an empty string.
     */
   var usage: js.UndefOr[String | CommandFunc[String]] = js.native
-  /**
-    * The function to invoke when the command is executed.
-    *
-    * #### Notes
-    * This should return the result of the command (if applicable) or
-    * a promise which yields the result. The result is resolved as a
-    * promise and that promise is returned to the code which executed
-    * the command.
-    *
-    * This may be invoked even when `isEnabled` returns `false`.
-    */
-  def execute(args: ReadonlyPartialJSONObject): js.Any | js.Promise[_] = js.native
 }
-

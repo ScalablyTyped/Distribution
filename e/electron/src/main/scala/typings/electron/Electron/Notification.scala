@@ -10,24 +10,16 @@ import typings.electron.electronStrings.never
 import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.reply
 import typings.electron.electronStrings.show
-import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Notification extends EventEmitter {
+  
   var actions: js.Array[NotificationAction] = js.native
-  var body: String = js.native
-  var closeButtonText: String = js.native
-  var hasReply: Boolean = js.native
-  var replyPlaceholder: String = js.native
-  var silent: Boolean = js.native
-  var sound: String = js.native
-  var subtitle: String = js.native
-  var timeoutType: default | never = js.native
-  var title: String = js.native
-  var urgency: normal | critical | low = js.native
+  
   @JSName("addListener")
   def addListener_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("addListener")
@@ -38,11 +30,19 @@ trait Notification extends EventEmitter {
   def addListener_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  
+  var body: String = js.native
+  
   /**
     * Dismisses the notification.
     */
   def close(): Unit = js.native
-  // Docs: http://electronjs.org/docs/api/notification
+  
+  var closeButtonText: String = js.native
+  
+  var hasReply: Boolean = js.native
+  
+  // Docs: https://electronjs.org/docs/api/notification
   @JSName("on")
   def on_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   /**
@@ -73,6 +73,7 @@ trait Notification extends EventEmitter {
     */
   @JSName("on")
   def on_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("once")
@@ -83,6 +84,7 @@ trait Notification extends EventEmitter {
   def once_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -93,6 +95,9 @@ trait Notification extends EventEmitter {
   def removeListener_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  
+  var replyPlaceholder: String = js.native
+  
   /**
     * Immediately shows the notification to the user, please note this means unlike
     * the HTML5 Notification implementation, instantiating a `new Notification` does
@@ -103,5 +108,16 @@ trait Notification extends EventEmitter {
     * previously shown notification and create a new one with identical properties.
     */
   def show(): Unit = js.native
+  
+  var silent: Boolean = js.native
+  
+  var sound: String = js.native
+  
+  var subtitle: String = js.native
+  
+  var timeoutType: default | never = js.native
+  
+  var title: String = js.native
+  
+  var urgency: normal | critical | low = js.native
 }
-

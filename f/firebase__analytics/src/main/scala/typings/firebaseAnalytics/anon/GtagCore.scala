@@ -9,14 +9,13 @@ import typings.firebaseAnalyticsTypes.mod.EventParams
 import typings.firebaseAnalyticsTypes.mod.Gtag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GtagCore extends js.Object {
+  
   @JSName("gtagCore")
   var gtagCore_Original: Gtag = js.native
-  @JSName("wrappedGtag")
-  var wrappedGtag_Original: Gtag = js.native
   @JSName("gtagCore")
   def gtagCore_config(command: config, targetId: String): Unit = js.native
   @JSName("gtagCore")
@@ -35,6 +34,9 @@ trait GtagCore extends js.Object {
   def gtagCore_event(command: event, eventName: String, eventParams: EventParams): Unit = js.native
   @JSName("gtagCore")
   def gtagCore_set(command: set, config: CustomParams): Unit = js.native
+  
+  @JSName("wrappedGtag")
+  var wrappedGtag_Original: Gtag = js.native
   @JSName("wrappedGtag")
   def wrappedGtag_config(command: config, targetId: String): Unit = js.native
   @JSName("wrappedGtag")
@@ -54,4 +56,3 @@ trait GtagCore extends js.Object {
   @JSName("wrappedGtag")
   def wrappedGtag_set(command: set, config: CustomParams): Unit = js.native
 }
-

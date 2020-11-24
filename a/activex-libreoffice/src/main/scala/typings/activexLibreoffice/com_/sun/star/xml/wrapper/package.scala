@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star.xml
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object wrapper {
+  
   /**
     * Interface of XML Element Wrapper.
     *

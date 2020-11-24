@@ -26,7 +26,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies all the properties for the graphic object of a pie segment.
@@ -34,8 +34,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChartPieSegmentProperties extends ChartDataPointProperties
-
 object ChartPieSegmentProperties {
+  
   @scala.inline
   def apply(
     CharAutoKerning: Boolean,
@@ -170,4 +170,3 @@ object ChartPieSegmentProperties {
     __obj.asInstanceOf[ChartPieSegmentProperties]
   }
 }
-

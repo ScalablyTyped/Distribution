@@ -2,7 +2,7 @@ package typings.osrm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The OSRM method is the main constructor for creating an OSRM instance.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends OSRM {
   def this(name: String) = this()
 }
-

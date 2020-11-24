@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__cache-in-memory
 
-Typings are for version 4.3.1
+Typings are for version 4.8.0
 
 ## Library description:
 Promise-based cache library using memory.
@@ -10,9 +10,9 @@ Promise-based cache library using memory.
 | ------------------ | :-------------: |
 | Full name          | @algolia/cache-in-memory |
 | Keywords           | - |
-| # releases         | 28 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 1700162 |
+| # downloads        | 4070211 |
 | # stars            | 0 |
 
 ## Links

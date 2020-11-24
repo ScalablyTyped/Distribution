@@ -10,9 +10,9 @@ Like lodash isEqualWith but for shallow equal.
 | ------------------ | :-------------: |
 | Full name          | shallowequal |
 | Keywords           | shallowequal, shallow, equal, isequal, compare, isequalwith |
-| # releases         | 2 |
-| # dependents       | 703 |
-| # downloads        | 126435165 |
+| # releases         | 0 |
+| # dependents       | 855 |
+| # downloads        | 181416447 |
 | # stars            | 7 |
 
 ## Links

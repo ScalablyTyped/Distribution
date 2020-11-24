@@ -4,10 +4,9 @@ import typings.reduxForm.fieldMod.BaseFieldProps
 import typings.reduxForm.fieldMod.GenericFieldHTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-form", "Field")
 @js.native
 class Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] ()
   extends typings.reduxForm.fieldMod.Field[P]
-

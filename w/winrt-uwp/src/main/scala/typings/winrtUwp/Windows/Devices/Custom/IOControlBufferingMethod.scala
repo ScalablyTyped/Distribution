@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Custom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait IOControlBufferingMethod extends js.Object
-
 /** Identifies the buffering method. */
 @JSGlobal("Windows.Devices.Custom.IOControlBufferingMethod")
 @js.native
 object IOControlBufferingMethod extends js.Object {
+  
   /** Buffered. */
   @js.native
   sealed trait buffered extends IOControlBufferingMethod
@@ -26,6 +26,4 @@ object IOControlBufferingMethod extends js.Object {
   /** Neither. */
   @js.native
   sealed trait neither extends IOControlBufferingMethod
-  
 }
-

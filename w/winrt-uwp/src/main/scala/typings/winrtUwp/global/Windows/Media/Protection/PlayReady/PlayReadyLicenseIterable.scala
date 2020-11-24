@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes the PlayReadyLicense class iterator. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseIterable")
@@ -20,4 +20,3 @@ class PlayReadyLicenseIterable ()
     fullyEvaluated: Boolean
   ) = this()
 }
-

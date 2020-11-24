@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SpritePackedManager")
 @js.native
@@ -40,6 +40,15 @@ class SpritePackedManager protected ()
     imgUrl: String,
     capacity: Double,
     scene: typings.babylonjs.BABYLON.Scene,
+    spriteJSON: js.UndefOr[scala.Nothing],
+    epsilon: Double
+  ) = this()
+  def this(
+    /** defines the packed manager's name */
+  name: String,
+    imgUrl: String,
+    capacity: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
     spriteJSON: String,
     epsilon: Double
   ) = this()
@@ -58,8 +67,48 @@ class SpritePackedManager protected ()
     imgUrl: String,
     capacity: Double,
     scene: typings.babylonjs.BABYLON.Scene,
+    spriteJSON: js.UndefOr[scala.Nothing],
+    epsilon: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    /** defines the packed manager's name */
+  name: String,
+    imgUrl: String,
+    capacity: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    spriteJSON: js.UndefOr[scala.Nothing],
+    epsilon: Double,
+    samplingMode: Double
+  ) = this()
+  def this(
+    /** defines the packed manager's name */
+  name: String,
+    imgUrl: String,
+    capacity: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    spriteJSON: String,
+    epsilon: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    /** defines the packed manager's name */
+  name: String,
+    imgUrl: String,
+    capacity: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
     spriteJSON: String,
     epsilon: Double,
+    samplingMode: Double
+  ) = this()
+  def this(
+    /** defines the packed manager's name */
+  name: String,
+    imgUrl: String,
+    capacity: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    spriteJSON: Null,
+    epsilon: js.UndefOr[scala.Nothing],
     samplingMode: Double
   ) = this()
   def this(
@@ -72,10 +121,4 @@ class SpritePackedManager protected ()
     epsilon: Double,
     samplingMode: Double
   ) = this()
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-

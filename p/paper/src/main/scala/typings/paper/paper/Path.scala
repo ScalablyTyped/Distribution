@@ -2,56 +2,14 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The path item represents a path in a Paper.js project.
   */
 @js.native
 trait Path extends PathItem {
-  /** 
-    * The area that the path's geometry is covering. Self-intersecting paths
-    * can contain sub-areas that cancel each other out.
-    */
-  val area: Double = js.native
-  /** 
-    * Specifies whether the path is closed. If it is closed, Paper.js connects
-    * the first and last segments.
-    */
-  var closed: Boolean = js.native
-  /** 
-    * The curves contained within the path.
-    */
-  val curves: js.Array[Curve] = js.native
-  /** 
-    * The first Curve contained within the path.
-    */
-  val firstCurve: Curve = js.native
-  /** 
-    * The first Segment contained within the path.
-    */
-  val firstSegment: Segment = js.native
-  /** 
-    * Specifies whether the path and all its segments are selected. Cannot be
-    * `true` on an empty path.
-    */
-  var fullySelected: Boolean = js.native
-  /** 
-    * The last Curve contained within the path.
-    */
-  val lastCurve: Curve = js.native
-  /** 
-    * The last Segment contained within the path.
-    */
-  val lastSegment: Segment = js.native
-  /** 
-    * The approximate length of the path.
-    */
-  val length: Double = js.native
-  /** 
-    * The segments contained within the path.
-    */
-  var segments: js.Array[Segment] = js.native
+  
   /** 
     * Adds one or more segments to the end of the {@link #segments} array of
     * this path.
@@ -64,6 +22,7 @@ trait Path extends PathItem {
     * another path.
     */
   def add(segment: (Segment | Point | js.Array[Double])*): Segment | js.Array[Segment] = js.native
+  
   /** 
     * Adds an array of segments (or types that can be converted to segments)
     * to the end of the {@link #segments} array.
@@ -73,11 +32,30 @@ trait Path extends PathItem {
     * belongs to another path
     */
   def addSegments(segments: js.Array[Segment]): js.Array[Segment] = js.native
+  
+  /** 
+    * The area that the path's geometry is covering. Self-intersecting paths
+    * can contain sub-areas that cancel each other out.
+    */
+  val area: Double = js.native
+  
   /** 
     * Clears the path's handles by setting their coordinates to zero,
     * turning the path into a polygon (or a polyline if it isn't closed).
     */
   def clearHandles(): Unit = js.native
+  
+  /** 
+    * Specifies whether the path is closed. If it is closed, Paper.js connects
+    * the first and last segments.
+    */
+  var closed: Boolean = js.native
+  
+  /** 
+    * The curves contained within the path.
+    */
+  val curves: js.Array[Curve] = js.native
+  
   /** 
     * Divides the path on the curve at the given offset or location into two
     * curves, by inserting a new segment at the given location.
@@ -92,6 +70,23 @@ trait Path extends PathItem {
     */
   def divideAt(location: Double): Segment = js.native
   def divideAt(location: CurveLocation): Segment = js.native
+  
+  /** 
+    * The first Curve contained within the path.
+    */
+  val firstCurve: Curve = js.native
+  
+  /** 
+    * The first Segment contained within the path.
+    */
+  val firstSegment: Segment = js.native
+  
+  /** 
+    * Specifies whether the path and all its segments are selected. Cannot be
+    * `true` on an empty path.
+    */
+  var fullySelected: Boolean = js.native
+  
   /** 
     * Calculates the curvature of the path at the given offset. Curvatures
     * indicate how sharply a path changes direction. A straight line has zero
@@ -104,6 +99,7 @@ trait Path extends PathItem {
     * @return the normal vector at the given offset
     */
   def getCurvatureAt(offset: Double): Double = js.native
+  
   /** 
     * Returns the curve location of the specified offset on the path.
     * 
@@ -113,6 +109,7 @@ trait Path extends PathItem {
     * @return the curve location at the specified offset
     */
   def getLocationAt(offset: Double): CurveLocation = js.native
+  
   /** 
     * Returns the curve location of the specified point if it lies on the
     * path, `null` otherwise.
@@ -122,6 +119,7 @@ trait Path extends PathItem {
     * @return the curve location of the specified point
     */
   def getLocationOf(point: Point): CurveLocation = js.native
+  
   /** 
     * Calculates the normal vector of the path at the given offset.
     * 
@@ -131,6 +129,7 @@ trait Path extends PathItem {
     * @return the normal vector at the given offset
     */
   def getNormalAt(offset: Double): Point = js.native
+  
   /** 
     * Returns the length of the path from its beginning up to up to the
     * specified point if it lies on the path, `null` otherwise.
@@ -140,6 +139,7 @@ trait Path extends PathItem {
     * @return the length of the path up to the specified point
     */
   def getOffsetOf(point: Point): Double = js.native
+  
   /** 
     * Calculates path offsets where the path is tangential to the provided
     * tangent. Note that tangents at the start or end are included. Tangents at
@@ -152,6 +152,7 @@ trait Path extends PathItem {
     * provided tangent
     */
   def getOffsetsWithTangent(tangent: Point): js.Array[Double] = js.native
+  
   /** 
     * Calculates the point on the path at the given offset.
     * 
@@ -161,6 +162,7 @@ trait Path extends PathItem {
     * @return the point at the given offset
     */
   def getPointAt(offset: Double): Point = js.native
+  
   /** 
     * Calculates the normalized tangent vector of the path at the given offset.
     * 
@@ -170,6 +172,7 @@ trait Path extends PathItem {
     * @return the normalized tangent vector at the given offset
     */
   def getTangentAt(offset: Double): Point = js.native
+  
   /** 
     * Calculates the weighted normal vector of the path at the given offset.
     * 
@@ -179,6 +182,7 @@ trait Path extends PathItem {
     * @return the weighted normal vector at the given offset
     */
   def getWeightedNormalAt(offset: Double): Point = js.native
+  
   /** 
     * Calculates the weighted tangent vector of the path at the given offset.
     * 
@@ -188,6 +192,7 @@ trait Path extends PathItem {
     * @return the weighted tangent vector at the given offset
     */
   def getWeightedTangentAt(offset: Double): Point = js.native
+  
   /** 
     * Checks if any of the curves in the path have curve handles set.
     * 
@@ -197,6 +202,7 @@ trait Path extends PathItem {
     * @return true if the path has curve handles set
     */
   def hasHandles(): Boolean = js.native
+  
   def insert(index: Double, segment: Point): Segment = js.native
   /** 
     * Inserts one or more segments at a given index in the list of this path's
@@ -209,6 +215,7 @@ trait Path extends PathItem {
     * object, e.g. if the segment to be added already belongs to another path
     */
   def insert(index: Double, segment: Segment): Segment = js.native
+  
   /** 
     * Inserts an array of segments at a given index in the path's
     * {@link #segments} array.
@@ -221,6 +228,7 @@ trait Path extends PathItem {
     * belongs to another path
     */
   def insertSegments(index: Double, segments: js.Array[Segment]): js.Array[Segment] = js.native
+  
   /** 
     * Joins the path with the other specified path, which will be removed in
     * the process. They can be joined if the first or last segments of either
@@ -237,6 +245,22 @@ trait Path extends PathItem {
     */
   def join(path: Path): Unit = js.native
   def join(path: Path, tolerance: Double): Unit = js.native
+  
+  /** 
+    * The last Curve contained within the path.
+    */
+  val lastCurve: Curve = js.native
+  
+  /** 
+    * The last Segment contained within the path.
+    */
+  val lastSegment: Segment = js.native
+  
+  /** 
+    * The approximate length of the path.
+    */
+  val length: Double = js.native
+  
   /** 
     * Removes the segment at the specified index of the path's
     * {@link #segments} array.
@@ -246,6 +270,7 @@ trait Path extends PathItem {
     * @return the removed segment
     */
   def removeSegment(index: Double): Segment = js.native
+  
   /** 
     * Removes all segments from the path's {@link #segments} array.
     * 
@@ -263,6 +288,12 @@ trait Path extends PathItem {
     */
   def removeSegments(from: Double): js.Array[Segment] = js.native
   def removeSegments(from: Double, to: Double): js.Array[Segment] = js.native
+  
+  /** 
+    * The segments contained within the path.
+    */
+  var segments: js.Array[Segment] = js.native
+  
   /** 
     * Splits the path at the given offset or location. After splitting, the
     * path will be open. If the path was open already, splitting will result in
@@ -275,6 +306,7 @@ trait Path extends PathItem {
     */
   def splitAt(location: Double): Path = js.native
   def splitAt(location: CurveLocation): Path = js.native
+  
   /** 
     * Attempts to create a new shape item with same geometry as this path item,
     * and inherits all settings from it, similar to {@link Item#clone}.
@@ -291,16 +323,21 @@ trait Path extends PathItem {
   def toShape(): Shape = js.native
   def toShape(insert: Boolean): Shape = js.native
 }
-
 @JSGlobal("paper.Path")
 @js.native
 object Path extends js.Object {
+  
   type Arc = Path
+  
   type Circle = Path
+  
   type Ellipse = Path
+  
   type Line = Path
+  
   type Rectangle = Path
+  
   type RegularPolygon = Path
+  
   type Star = Path
 }
-

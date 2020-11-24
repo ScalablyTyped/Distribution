@@ -11,8 +11,8 @@ JavaScript library that prevents the autoplaying of the animated Gifs
 | Full name          | gifffer |
 | Keywords           | gif, player |
 | # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 13090 |
+| # dependents       | 2 |
+| # downloads        | 19461 |
 | # stars            | 0 |
 
 ## Links

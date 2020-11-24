@@ -5,11 +5,12 @@ import typings.fastJsonPatch.moduleCoreMod.PatchResult
 import typings.fastJsonPatch.moduleCoreMod.Validator_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fast-json-patch", "applyPatch")
 @js.native
 object applyPatch extends js.Object {
+  
   def apply[T](document: T, patch: js.Array[Operation]): PatchResult[T] = js.native
   def apply[T](
     document: T,
@@ -64,4 +65,3 @@ object applyPatch extends js.Object {
     banPrototypeModifications: Boolean
   ): PatchResult[T] = js.native
 }
-

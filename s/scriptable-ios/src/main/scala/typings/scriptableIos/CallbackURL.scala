@@ -2,7 +2,7 @@ package typings.scriptableIos
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Open x-callback-url requests._
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CallbackURL extends js.Object {
+  
   /**
     * _Construct CallbackURL._
     *
@@ -22,6 +23,7 @@ trait CallbackURL extends js.Object {
     * @see https://docs.scriptable.app/callbackurl/#-addparameter
     */
   def addParameter(name: String, value: String): Unit = js.native
+  
   /**
     * _Creates the callback URL._
     *
@@ -29,6 +31,7 @@ trait CallbackURL extends js.Object {
     * @see https://docs.scriptable.app/callbackurl/#-geturl
     */
   def getURL(): String = js.native
+  
   /**
     * _Opens the callback URL._
     *
@@ -39,31 +42,36 @@ trait CallbackURL extends js.Object {
     */
   def open(): js.Promise[_] = js.native
 }
-
 object CallbackURL {
+  
   @scala.inline
   def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[_]): CallbackURL = {
     val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction2(addParameter), getURL = js.Any.fromFunction0(getURL), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[CallbackURL]
   }
+  
   @scala.inline
   implicit class CallbackURLOps[Self <: CallbackURL] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddParameter(value: (String, String) => Unit): Self = this.set("addParameter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setOpen(value: () => js.Promise[_]): Self = this.set("open", js.Any.fromFunction0(value))
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Targetableremarketinglists")
 @js.native
 class ResourceTargetableremarketinglists protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.targetableRemarketingLists.get
     * @desc Gets one remarketing list by ID.
@@ -45,6 +47,7 @@ class ResourceTargetableremarketinglists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetableRemarketingList]
   ): Unit = js.native
+  
   /**
     * dfareporting.targetableRemarketingLists.list
     * @desc Retrieves a list of targetable remarketing lists, possibly
@@ -85,4 +88,3 @@ class ResourceTargetableremarketinglists protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTargetableRemarketingListsListResponse]
   ): Unit = js.native
 }
-

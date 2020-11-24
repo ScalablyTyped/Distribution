@@ -4,11 +4,12 @@ import typings.std.Error
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qrcode", "toCanvas")
 @js.native
 object toCanvas extends js.Object {
+  
   def apply(canvasElement: HTMLCanvasElement, text: String): js.Promise[_] = js.native
   def apply(canvasElement: HTMLCanvasElement, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   def apply(canvasElement: HTMLCanvasElement, text: String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
@@ -69,4 +70,3 @@ object toCanvas extends js.Object {
     callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]
   ): Unit = js.native
 }
-

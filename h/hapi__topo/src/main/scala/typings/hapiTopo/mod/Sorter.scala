@@ -2,15 +2,12 @@ package typings.hapiTopo.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@hapi/topo", "Sorter")
 @js.native
 class Sorter[T] () extends js.Object {
-  /**
-    * An array of the topologically sorted nodes. This list is renewed upon each call to topo.add().
-    */
-  var nodes: js.Array[T] = js.native
+  
   /**
     * Adds a node or list of nodes to be added and topologically sorted
     * 
@@ -23,6 +20,7 @@ class Sorter[T] () extends js.Object {
   def add(nodes: T, options: Options): js.Array[T] = js.native
   def add(nodes: js.Array[T]): js.Array[T] = js.native
   def add(nodes: js.Array[T], options: Options): js.Array[T] = js.native
+  
   def merge(others: js.Array[Sorter[T]]): js.Array[T] = js.native
   /**
     * Merges another Sorter object into the current object.
@@ -32,5 +30,9 @@ class Sorter[T] () extends js.Object {
     * @returns Returns an array of the topologically sorted nodes.
     */
   def merge(others: Sorter[T]): js.Array[T] = js.native
+  
+  /**
+    * An array of the topologically sorted nodes. This list is renewed upon each call to topo.add().
+    */
+  var nodes: js.Array[T] = js.native
 }
-

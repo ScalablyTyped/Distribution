@@ -2,11 +2,14 @@ package typings.objtools
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Mask = typings.objtools.mod.MaskObj | js.Array[typings.objtools.mod.MaskObj] | scala.Boolean
+  
   type MaskedOutHook = js.Function1[/* path */ java.lang.String, scala.Unit]
+  
   type MergeCustomizer = js.Function4[
     /* objectValue */ js.Any, 
     /* sourceValue */ js.Any, 
@@ -14,6 +17,7 @@ package object mod {
     /* object */ js.Any, 
     js.Any
   ]
+  
   type OnFieldHook = js.Function4[
     /* field */ java.lang.String, 
     /* toVal */ js.Any, 

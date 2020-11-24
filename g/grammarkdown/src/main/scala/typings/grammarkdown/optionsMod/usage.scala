@@ -2,11 +2,12 @@ package typings.grammarkdown.optionsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/options", "usage")
 @js.native
 object usage extends js.Object {
+  
   def apply(options: KnownOptions): Unit = js.native
   def apply(
     options: KnownOptions,
@@ -16,4 +17,3 @@ object usage extends js.Object {
   def apply(options: KnownOptions, margin: Double): Unit = js.native
   def apply(options: KnownOptions, margin: Double, printHeader: js.Function1[/* writer */ UsageWriter, Unit]): Unit = js.native
 }
-

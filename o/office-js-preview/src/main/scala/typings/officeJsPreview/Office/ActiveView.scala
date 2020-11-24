@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ActiveView extends js.Object
-
 // Enumerations
 /**
   * Specifies the state of the active view of the document, for example, whether the user can edit the document.
@@ -14,6 +13,7 @@ sealed trait ActiveView extends js.Object
 @JSGlobal("Office.ActiveView")
 @js.native
 object ActiveView extends js.Object {
+  
   /**
     * The active view of the host application lets the user edit the content in the document.
     */
@@ -25,6 +25,4 @@ object ActiveView extends js.Object {
     */
   @js.native
   sealed trait Read extends ActiveView
-  
 }
-

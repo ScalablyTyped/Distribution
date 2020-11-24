@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DeviceAccountServerType extends js.Object
-
 /** Defines the server types for syncing. */
 @JSGlobal("Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType")
 @js.native
 object DeviceAccountServerType extends js.Object {
+  
   /** Exchange server */
   @js.native
   sealed trait exchange extends DeviceAccountServerType
@@ -22,6 +22,4 @@ object DeviceAccountServerType extends js.Object {
   /** POP server */
   @js.native
   sealed trait pop extends DeviceAccountServerType
-  
 }
-

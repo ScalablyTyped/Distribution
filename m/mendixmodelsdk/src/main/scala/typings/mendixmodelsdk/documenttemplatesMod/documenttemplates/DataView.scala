@@ -1,17 +1,19 @@
 package typings.mendixmodelsdk.documenttemplatesMod.documenttemplates
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.documenttemplatesMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/data-view-document-template relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/data-view-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataView")
 @js.native
@@ -21,41 +23,46 @@ class DataView protected () extends EntityWidget {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FDataView: IModel = js.native
+  
   def contents: DataViewContents = js.native
   def contents_=(newValue: DataViewContents): Unit = js.native
+  
   def microflow: IMicroflow | Null = js.native
+  
   def microflowQualifiedName: String | Null = js.native
+  
   def microflow_=(newValue: IMicroflow | Null): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataView")
 @js.native
 object DataView extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): DataView = js.native
+  
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
     * The new DataView will be automatically stored in the 'toplevels' property
     * of the parent DocumentTemplate element passed as argument.
     */
   def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DataView = js.native
+  
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
     * The new DataView will be automatically stored in the 'widget' property
     * of the parent DropZone element passed as argument.
     */
   def createInDropZoneUnderWidget(container: DropZone): DataView = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

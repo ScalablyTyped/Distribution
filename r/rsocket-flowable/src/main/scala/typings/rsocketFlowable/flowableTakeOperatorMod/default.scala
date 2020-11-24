@@ -2,7 +2,7 @@ package typings.rsocketFlowable.flowableTakeOperatorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-flowable/FlowableTakeOperator", JSImport.Default)
 @js.native
@@ -12,4 +12,3 @@ class default[T] protected () extends FlowableTakeOperator[T] {
     toTake: Double
   ) = this()
 }
-

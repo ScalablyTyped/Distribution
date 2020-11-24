@@ -4,17 +4,17 @@ import typings.babylonjs.anon.Holes
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PolygonBuilder")
 @js.native
 class PolygonBuilder ()
   extends typings.babylonjs.babylonjsIndexMod.PolygonBuilder
-
 /* static members */
 @JSImport("babylonjs/index", "PolygonBuilder")
 @js.native
 object PolygonBuilder extends js.Object {
+  
   /**
     * Creates a polygon mesh
     * The polygon's shape will depend on the input parameters and is constructed parallel to a ground mesh
@@ -30,13 +30,14 @@ object PolygonBuilder extends js.Object {
     * @returns the polygon mesh
     */
   def CreatePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
-  def CreatePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
   def CreatePolygon(
     name: String,
     options: Holes,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  
   /**
     * Creates an extruded polygon mesh, with depth in the Y direction.
     * * You can set different colors and different images to the top, bottom and extruded side by using the parameters `faceColors` (an array of 3 Color3 elements) and `faceUV` (an array of 3 Vector4 elements)
@@ -48,12 +49,11 @@ object PolygonBuilder extends js.Object {
     * @returns the polygon mesh
     */
   def ExtrudePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
-  def ExtrudePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
   def ExtrudePolygon(
     name: String,
     options: Holes,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
-

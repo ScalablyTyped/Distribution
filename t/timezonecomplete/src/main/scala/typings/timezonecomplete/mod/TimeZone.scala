@@ -2,7 +2,7 @@ package typings.timezonecomplete.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "TimeZone")
 @js.native
@@ -16,15 +16,16 @@ import scala.scalajs.js.annotation._
   */
 class TimeZone protected ()
   extends typings.timezonecomplete.timezoneMod.TimeZone
-
 /* static members */
 @JSImport("timezonecomplete", "TimeZone")
 @js.native
 object TimeZone extends js.Object {
+  
   /**
     * Time zone cache.
     */
   var _cache: js.Any = js.native
+  
   /**
     * Find in cache or create zone
     * @param name	Time zone name
@@ -32,17 +33,20 @@ object TimeZone extends js.Object {
     * @throws timezonecomplete.NotFound.Zone if the zone doesn't exist in the time zone database
     */
   var _findOrCreate: js.Any = js.native
+  
   /**
     * Returns true iff the first non-whitespace character of s is +, -, or Z
     * @param s
     * @throws nothing
     */
   var _isOffsetString: js.Any = js.native
+  
   /**
     * Normalize a string so it can be used as a key for a cache lookup
     * @throws Argument.S if s is empty
     */
   var _normalizeString: js.Any = js.native
+  
   /**
     * The local time zone for a given date. Note that
     * the time zone varies with the date: amsterdam time for
@@ -50,6 +54,7 @@ object TimeZone extends js.Object {
     * @throws nothing
     */
   def local(): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+  
   /**
     * Convert an offset number into an offset string
     * @param offset The offset in minutes from UTC e.g. 90 minutes
@@ -57,6 +62,7 @@ object TimeZone extends js.Object {
     * @throws Argument.Offset if offset is not a finite number or not within -24 * 60 ... +24 * 60 minutes
     */
   def offsetToString(offset: Double): String = js.native
+  
   /**
     * String to offset conversion.
     * @param s	Formats: "-01:00", "-0100", "-01", "Z"
@@ -64,11 +70,13 @@ object TimeZone extends js.Object {
     * @throws timezonecomplete.Argument.S if s cannot be parsed
     */
   def stringToOffset(s: String): Double = js.native
+  
   /**
     * The UTC time zone.
     * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def utc(): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+  
   /**
     * Time zone with a fixed offset
     * @param offset	offset w.r.t. UTC in minutes, e.g. 90 for +01:30
@@ -93,4 +101,3 @@ object TimeZone extends js.Object {
   def zone(s: String): typings.timezonecomplete.timezoneMod.TimeZone = js.native
   def zone(s: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = js.native
 }
-

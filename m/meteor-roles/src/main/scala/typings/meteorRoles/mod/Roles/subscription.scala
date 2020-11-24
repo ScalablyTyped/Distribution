@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.meteor.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Subscription handle for the currently logged in user's permissions.
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/alanning:roles", "Roles.subscription")
 @js.native
 object subscription extends TopLevel[Subscription]
-

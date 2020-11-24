@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI.resources
 import typings.pixiJs.anon.AutoLoad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource for a CubeTexture which contains six resources.
@@ -28,11 +28,11 @@ class CubeResource ()
   def this(source: js.UndefOr[scala.Nothing], options: AutoLoad) = this()
   def this(source: js.Array[String | typings.pixiJs.PIXI.resources.Resource], options: AutoLoad) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.resources.CubeResource")
 @js.native
 object CubeResource extends js.Object {
+  
   /**
     * Number of texture sides to store for CubeResources
     *
@@ -42,6 +42,7 @@ object CubeResource extends js.Object {
     * @default 6
     */
   var SIDES: Double = js.native
+  
   /**
     * Used to auto-detect the type of resource.
     *
@@ -51,4 +52,3 @@ object CubeResource extends js.Object {
     */
   def test(source: js.Any): Boolean = js.native
 }
-

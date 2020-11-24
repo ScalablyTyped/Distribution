@@ -2,7 +2,7 @@ package typings.babylonjs.mathsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "Arc2")
 @js.native
@@ -23,4 +23,3 @@ class Arc2 protected ()
   endPoint: typings.babylonjs.mathVectorMod.Vector2
   ) = this()
 }
-

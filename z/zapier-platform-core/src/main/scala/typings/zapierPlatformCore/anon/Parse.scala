@@ -2,16 +2,16 @@ package typings.zapierPlatformCore.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Parse extends js.Object {
-  @JSName("stringify")
-  var stringify_Original: FnCall = js.native
+  
   /**
     * Acts a lot like regular `JSON.parse`, but throws a nice error for improper json input
     */
   def parse(text: String): js.Any = js.native
+  
   def stringify(value: js.Any): String = js.native
   def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
   def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
@@ -34,5 +34,6 @@ trait Parse extends js.Object {
   ): String = js.native
   def stringify(value: js.Any, replacer: Null, space: String): String = js.native
   def stringify(value: js.Any, replacer: Null, space: Double): String = js.native
+  @JSName("stringify")
+  var stringify_Original: FnCall = js.native
 }
-

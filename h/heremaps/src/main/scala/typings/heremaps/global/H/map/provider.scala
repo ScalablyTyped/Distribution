@@ -4,11 +4,12 @@ import typings.heremaps.H.map.provider.ImageTileProvider.Options
 import typings.heremaps.H.map.provider.Invalidations.Mark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("H.map.provider")
 @js.native
 object provider extends js.Object {
+  
   /**
     * An ImageTileProvider uses network service to provide bitmap images as tiles.
     * @property tileSize {number} - Size of a tile image supported by the provider
@@ -30,6 +31,34 @@ object provider extends js.Object {
   @js.native
   class Invalidations ()
     extends typings.heremaps.H.map.provider.Invalidations
+  /* static members */
+  @js.native
+  object Invalidations extends js.Object {
+    
+    var MARK_INITIAL: Mark = js.native
+    
+    /**
+      * This enumeration encapsulates bit flags for different invalidations of map objects.
+      */
+    @js.native
+    object Flag extends js.Object {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.map.provider.Invalidations.Flag with Double] = js.native
+      
+      /* 3 */ val ADD: typings.heremaps.H.map.provider.Invalidations.Flag.ADD with Double = js.native
+      
+      /* 0 */ val NONE: typings.heremaps.H.map.provider.Invalidations.Flag.NONE with Double = js.native
+      
+      /* 4 */ val REMOVE: typings.heremaps.H.map.provider.Invalidations.Flag.REMOVE with Double = js.native
+      
+      /* 2 */ val SPATIAL: typings.heremaps.H.map.provider.Invalidations.Flag.SPATIAL with Double = js.native
+      
+      /* 1 */ val VISUAL: typings.heremaps.H.map.provider.Invalidations.Flag.VISUAL with Double = js.native
+      
+      /* 5 */ val Z_ORDER: typings.heremaps.H.map.provider.Invalidations.Flag.Z_ORDER with Double = js.native
+    }
+  }
   
   /**
     * A MarkerTileProvider uses network service to provide markers on tile basis.
@@ -139,27 +168,4 @@ object provider extends js.Object {
       */
     def this(options: typings.heremaps.H.map.provider.TileProvider.Options) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Invalidations extends js.Object {
-    var MARK_INITIAL: Mark = js.native
-    /**
-      * This enumeration encapsulates bit flags for different invalidations of map objects.
-      */
-    @js.native
-    object Flag extends js.Object {
-      /* 3 */ val ADD: typings.heremaps.H.map.provider.Invalidations.Flag.ADD with Double = js.native
-      /* 0 */ val NONE: typings.heremaps.H.map.provider.Invalidations.Flag.NONE with Double = js.native
-      /* 4 */ val REMOVE: typings.heremaps.H.map.provider.Invalidations.Flag.REMOVE with Double = js.native
-      /* 2 */ val SPATIAL: typings.heremaps.H.map.provider.Invalidations.Flag.SPATIAL with Double = js.native
-      /* 1 */ val VISUAL: typings.heremaps.H.map.provider.Invalidations.Flag.VISUAL with Double = js.native
-      /* 5 */ val Z_ORDER: typings.heremaps.H.map.provider.Invalidations.Flag.Z_ORDER with Double = js.native
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.map.provider.Invalidations.Flag with Double] = js.native
-    }
-    
-  }
-  
 }
-

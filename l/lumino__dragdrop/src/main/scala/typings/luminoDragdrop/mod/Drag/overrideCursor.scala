@@ -3,11 +3,12 @@ package typings.luminoDragdrop.mod.Drag
 import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/dragdrop", "Drag.overrideCursor")
 @js.native
 object overrideCursor extends js.Object {
+  
   /**
     * Override the cursor icon for the entire document.
     *
@@ -36,4 +37,3 @@ object overrideCursor extends js.Object {
     */
   def apply(cursor: String): IDisposable = js.native
 }
-

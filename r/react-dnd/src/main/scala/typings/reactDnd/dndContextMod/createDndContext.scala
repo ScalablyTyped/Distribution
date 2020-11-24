@@ -3,11 +3,12 @@ package typings.reactDnd.dndContextMod
 import typings.dndCore.interfacesMod.BackendFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd/lib/common/DndContext", "createDndContext")
 @js.native
 object createDndContext extends js.Object {
+  
   def apply[BackendContext, BackendOptions](backend: BackendFactory): DndContextType = js.native
   def apply[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext): DndContextType = js.native
   def apply[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions): DndContextType = js.native
@@ -32,4 +33,3 @@ object createDndContext extends js.Object {
     debugMode: Boolean
   ): DndContextType = js.native
 }
-

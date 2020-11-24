@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.disabled
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.scheduled
 */
 trait AutomaticRepliesStatus extends js.Object
-
 object AutomaticRepliesStatus {
+  
   @scala.inline
   def alwaysEnabled: typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled = "alwaysEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled]
+  
   @scala.inline
   def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
+  
   @scala.inline
   def scheduled: typings.microsoftGraph.microsoftGraphStrings.scheduled = "scheduled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.scheduled]
 }
-

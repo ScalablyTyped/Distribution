@@ -2,18 +2,17 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpellCheck_ extends Widget_ {
-  var defaults: typings.ejWebAll.ej.SpellCheck.Model = js.native
-  @JSName("model")
-  var model_SpellCheck_ : typings.ejWebAll.ej.SpellCheck.Model = js.native
+  
   /** To add the words into the custom dictionary.
     * @param {string} Word to add into the dictionary file
     * @returns {any}
     */
   def addToDictionary(customWord: String): js.Any = js.native
+  
   /** To change the error word once from the given input sentence.
     * @param {string} Error word to change from the target content
     * @param {string} Content to perform the change operation
@@ -22,6 +21,7 @@ trait SpellCheck_ extends Widget_ {
     * @returns {any}
     */
   def change(word: String, targetSentence: String, changeWord: String, index: Double): js.Any = js.native
+  
   /** To change all the error word occurrences from the given input sentence.
     * @param {string} Error word to change from the target content
     * @param {string} Content to perform the change all operation
@@ -29,11 +29,15 @@ trait SpellCheck_ extends Widget_ {
     * @returns {any}
     */
   def changeAll(word: String, targetSentence: String, changeWord: String): js.Any = js.native
+  
+  var defaults: typings.ejWebAll.ej.SpellCheck.Model = js.native
+  
   /** Retrieves the possible suggestion words for the error word passed as an argument.
     * @param {string} Error word to get the suggestions
     * @returns {any}
     */
   def getSuggestionWords(errorWord: String): js.Any = js.native
+  
   /** To ignore the error word once from the given input sentence.
     * @param {string} Error word to ignore from the target content
     * @param {string} Content to perform the ignore operation
@@ -41,25 +45,31 @@ trait SpellCheck_ extends Widget_ {
     * @returns {any}
     */
   def ignore(word: String, targetSentence: String, index: Double): js.Any = js.native
+  
   /** To ignore all the error word occurrences from the given input sentence.
     * @param {string} Error word to ignore from the target content
     * @param {string} Content to perform the ignore all operation
     * @returns {any}
     */
   def ignoreAll(word: String, targetSentence: String): js.Any = js.native
+  
+  @JSName("model")
+  var model_SpellCheck_ : typings.ejWebAll.ej.SpellCheck.Model = js.native
+  
   /** Open the dialog to correct the spelling of the target content.
     * @returns {void}
     */
   def showInDialog(): Unit = js.native
+  
   /** To get the error word highlighted string by passing the given input sentence.
     * @param {string} Content to be spell check
     * @param {string} Class name that contains style value to highlight the error word
     * @returns {any}
     */
   def spellCheck(targetSentence: String, misspellWordCss: String): js.Any = js.native
+  
   /** Highlighting the error word in the target area itself and correct the spelling using the context menu.
     * @returns {void}
     */
   def validate(): Unit = js.native
 }
-

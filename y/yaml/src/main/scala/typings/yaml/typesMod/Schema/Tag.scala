@@ -6,15 +6,15 @@ import typings.yaml.parseCstMod.CST.Node
 import typings.yaml.yamlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.yaml.typesMod.Schema.CustomTag
   - typings.yaml.typesMod.Schema.DefaultTag
 */
 trait Tag extends js.Object
-
 object Tag {
+  
   @scala.inline
   def CustomTag(
     identify: js.Any => Boolean,
@@ -24,6 +24,7 @@ object Tag {
     val __obj = js.Dynamic.literal(identify = js.Any.fromFunction1(identify), resolve = js.Any.fromFunction2(resolve), tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
+  
   @scala.inline
   def DefaultTag(
     default: `true`,
@@ -36,4 +37,3 @@ object Tag {
     __obj.asInstanceOf[Tag]
   }
 }
-

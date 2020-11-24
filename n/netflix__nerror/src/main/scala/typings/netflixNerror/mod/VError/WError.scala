@@ -2,7 +2,7 @@ package typings.netflixNerror.mod.VError
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Like JavaScript's built-in Error class, but supports a "cause" argument which
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class WError ()
   extends typings.netflixNerror.mod.VError
-

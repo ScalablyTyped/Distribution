@@ -3,7 +3,7 @@ package typings.grammarkdown.mod
 import typings.grammarkdown.tokensMod.ProseFragmentLiteralKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "ProseFragmentLiteral")
 @js.native
@@ -12,4 +12,3 @@ class ProseFragmentLiteral[TKind /* <: ProseFragmentLiteralKind */] protected ()
   def this(kind: typings.grammarkdown.tokensMod.SyntaxKind) = this()
   def this(kind: typings.grammarkdown.tokensMod.SyntaxKind, text: String) = this()
 }
-

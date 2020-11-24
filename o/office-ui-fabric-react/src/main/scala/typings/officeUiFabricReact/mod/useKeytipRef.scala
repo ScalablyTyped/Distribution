@@ -5,11 +5,11 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "useKeytipRef")
 @js.native
 object useKeytipRef extends js.Object {
+  
   def apply[TElement /* <: HTMLElement */](options: KeytipDataOptions): Ref[TElement] = js.native
 }
-

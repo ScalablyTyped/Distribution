@@ -3,7 +3,7 @@ package typings.autolinker.matchMatchMod
 import typings.autolinker.mod.HtmlTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/match/match", "Match")
 @js.native
@@ -15,6 +15,7 @@ abstract class Match protected () extends js.Object {
     *   instance, specified in an Object (map).
     */
   def this(cfg: MatchConfig) = this()
+  
   /**
     * @cfg {Autolinker.AnchorTagBuilder} tagBuilder (required)
     *
@@ -22,19 +23,7 @@ abstract class Match protected () extends js.Object {
     * tag for the Match.
     */
   var __jsduckDummyDocProp: js.Any = js.native
-  /**
-    * @cfg {String} matchedText (required)
-    *
-    * The original text that was matched by the {@link Autolinker.matcher.Matcher}.
-    */
-  val matchedText: String = js.native
-  /**
-    * @cfg {Number} offset (required)
-    *
-    * The offset of where the match was made in the input string.
-    */
-  var offset: js.Any = js.native
-  val tagBuilder: js.Any = js.native
+  
   /**
     * Builds and returns an {@link Autolinker.HtmlTag} instance based on the
     * Match.
@@ -65,6 +54,7 @@ abstract class Match protected () extends js.Object {
     *     //   Test <a href="http://google.com" target="_blank" rel="nofollow">google.com</a>
     */
   def buildTag(): HtmlTag = js.native
+  
   /**
     * Returns the anchor href that should be generated for the match.
     *
@@ -72,6 +62,7 @@ abstract class Match protected () extends js.Object {
     * @return {String}
     */
   def getAnchorHref(): String = js.native
+  
   /**
     * Returns the anchor text that should be generated for the match.
     *
@@ -79,6 +70,7 @@ abstract class Match protected () extends js.Object {
     * @return {String}
     */
   def getAnchorText(): String = js.native
+  
   /**
     * Returns the CSS class suffix(es) for this match.
     *
@@ -101,12 +93,14 @@ abstract class Match protected () extends js.Object {
     * @return {String[]}
     */
   def getCssClassSuffixes(): js.Array[String] = js.native
+  
   /**
     * Returns the original text that was matched.
     *
     * @return {String}
     */
   def getMatchedText(): String = js.native
+  
   /**
     * Returns the offset of where the match was made in the input string. This
     * is the 0-based index of the match.
@@ -114,6 +108,7 @@ abstract class Match protected () extends js.Object {
     * @return {Number}
     */
   def getOffset(): Double = js.native
+  
   /**
     * Returns a string name for the type of match that this class represents.
     *
@@ -121,6 +116,21 @@ abstract class Match protected () extends js.Object {
     * @return {String}
     */
   def getType(): String = js.native
+  
+  /**
+    * @cfg {String} matchedText (required)
+    *
+    * The original text that was matched by the {@link Autolinker.matcher.Matcher}.
+    */
+  val matchedText: String = js.native
+  
+  /**
+    * @cfg {Number} offset (required)
+    *
+    * The offset of where the match was made in the input string.
+    */
+  var offset: js.Any = js.native
+  
   /**
     * Sets the {@link #offset} of where the match was made in the input string.
     *
@@ -134,5 +144,6 @@ abstract class Match protected () extends js.Object {
     * @param {Number} offset
     */
   def setOffset(offset: Double): Unit = js.native
+  
+  val tagBuilder: js.Any = js.native
 }
-

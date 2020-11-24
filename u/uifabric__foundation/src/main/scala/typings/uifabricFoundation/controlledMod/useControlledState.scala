@@ -4,11 +4,12 @@ import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/foundation/lib/hooks/controlled", "useControlledState")
 @js.native
 object useControlledState extends js.Object {
+  
   def apply[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
@@ -30,4 +31,3 @@ object useControlledState extends js.Object {
     ]
   ] = js.native
 }
-

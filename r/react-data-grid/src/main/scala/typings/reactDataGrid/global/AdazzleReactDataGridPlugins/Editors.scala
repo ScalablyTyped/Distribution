@@ -6,11 +6,12 @@ import typings.reactDataGrid.AdazzleReactDataGridPlugins.AutoCompleteTokensEdito
 import typings.reactDataGrid.AdazzleReactDataGridPlugins.DropDownEditorProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AdazzleReactDataGridPlugins.Editors")
 @js.native
 object Editors extends js.Object {
+  
   @js.native
   class AutoComplete ()
     extends Component[AutoCompleteEditorProps, js.Object, js.Any]
@@ -30,6 +31,4 @@ object Editors extends js.Object {
   @js.native
   class SimpleTextEditor ()
     extends Component[js.Any, js.Object, js.Any]
-  
 }
-

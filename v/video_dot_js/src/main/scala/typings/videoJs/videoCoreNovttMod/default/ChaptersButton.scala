@@ -7,7 +7,7 @@ import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.mod.videojs.TrackButtonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "ChaptersButton")
 @js.native
@@ -39,4 +39,3 @@ Instantiable1[
       /* ready */ ReadyCallback, 
       typings.videoJs.mod.videojs.ChaptersButton
     ]
-

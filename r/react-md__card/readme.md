@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__card
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 Create interactable cards from the material design specifications.
@@ -10,9 +10,9 @@ Create interactable cards from the material design specifications.
 | ------------------ | :-------------: |
 | Full name          | @react-md/card |
 | Keywords           | accessibility, a11y, react-md, material design, react, card, component, components |
-| # releases         | 21 |
+| # releases         | 29 |
 | # dependents       | 2 |
-| # downloads        | 3200 |
+| # downloads        | 6044 |
 | # stars            | 0 |
 
 ## Links

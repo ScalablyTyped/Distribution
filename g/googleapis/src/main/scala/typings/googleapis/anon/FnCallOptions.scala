@@ -5,11 +5,11 @@ import typings.googleapis.acceleratedmobilepageurlV1Mod.acceleratedmobilepageurl
 import typings.googleapis.googleapisStrings.v1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallOptions extends js.Object {
+  
   def apply(options: Options): Acceleratedmobilepageurl = js.native
   def apply(version: v1): Acceleratedmobilepageurl = js.native
 }
-

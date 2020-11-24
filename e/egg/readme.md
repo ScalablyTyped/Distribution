@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg
 
-Typings are for version 2.27.0
+Typings are for version 2.29.1
 
 ## Library description:
 A web framework's framework for Node.js
@@ -10,9 +10,9 @@ A web framework's framework for Node.js
 | ------------------ | :-------------: |
 | Full name          | egg |
 | Keywords           | web, app, http, application, framework, middleware, koa, egg |
-| # releases         | 58 |
-| # dependents       | 199 |
-| # downloads        | 324635 |
+| # releases         | 35 |
+| # dependents       | 244 |
+| # downloads        | 383216 |
 | # stars            | 15 |
 
 ## Links

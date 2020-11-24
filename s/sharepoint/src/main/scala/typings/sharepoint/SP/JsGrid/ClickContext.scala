@@ -2,14 +2,14 @@ package typings.sharepoint.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ClickContext extends js.Object
-
 @JSGlobal("SP.JsGrid.ClickContext")
 @js.native
 object ClickContext extends js.Object {
+  
   @js.native
   sealed trait Cell extends ClickContext
   
@@ -27,6 +27,4 @@ object ClickContext extends js.Object {
   
   @js.native
   sealed trait SelectAllSquare extends ClickContext
-  
 }
-

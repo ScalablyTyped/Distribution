@@ -11,8 +11,8 @@ Exposes a SteamID object class for easy SteamID management
 | Full name          | steamid |
 | Keywords           | steam, steamid, steam account |
 | # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 177084 |
+| # dependents       | 37 |
+| # downloads        | 411379 |
 | # stars            | 4 |
 
 ## Links

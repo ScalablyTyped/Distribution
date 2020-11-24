@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * You can chain together SodaOperation methods, to specify read or write operations against a collection.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SodaOperation extends js.Object {
+  
   /**
     * Finds the number of documents matching the given SodaOperation query criteria.
     *
@@ -27,6 +28,7 @@ trait SodaOperation extends js.Object {
     */
   def count(): js.Promise[SodaCountResult] = js.native
   def count(callback: js.Function2[/* error */ DBError, /* result */ SodaCountResult, Unit]): Unit = js.native
+  
   /**
     * This property sets the size of an internal buffer used for fetching documents from a collection
     * with the terminal SodaOperation methods getCursor() and getDocuments(). Changing size may affect
@@ -38,6 +40,7 @@ trait SodaOperation extends js.Object {
     * @since 5.0
     */
   def fetchArraySize(size: Double): SodaOperation = js.native
+  
   /**
     * Sets a filter specification for the operation, allowing for complex document queries and ordering
     * of JSON documents. Filter specifications can include comparisons, regular expressions, logical,
@@ -49,6 +52,7 @@ trait SodaOperation extends js.Object {
     * @since 3.0
     */
   def filter(filterSpec: Record[String, _]): SodaOperation = js.native
+  
   /**
     * Returns a SodaDocumentCursor for documents that match the SodaOperation query criteria.
     * The cursor can be iterated over with sodaDocumentCursor.getNext() to access each SodaDocument.
@@ -63,6 +67,7 @@ trait SodaOperation extends js.Object {
     */
   def getCursor(): js.Promise[SodaDocumentCursor] = js.native
   def getCursor(callback: js.Function2[/* error */ DBError, /* cursor */ SodaDocumentCursor, Unit]): Unit = js.native
+  
   /**
     * Gets an array of SodaDocuments matching the SodaOperation query criteria. An empty array will be
     * returned when no documents match.
@@ -77,6 +82,7 @@ trait SodaOperation extends js.Object {
     */
   def getDocuments(): js.Promise[js.Array[SodaDocument]] = js.native
   def getDocuments(callback: js.Function2[/* error */ DBError, /* documents */ js.Array[SodaDocument], Unit]): Unit = js.native
+  
   /**
     * Obtains one document matching the SodaOperation query criteria. If the criteria match more
     * than one document, then only the first is returned.
@@ -90,6 +96,7 @@ trait SodaOperation extends js.Object {
     */
   def getOne(): js.Promise[js.UndefOr[SodaDocument]] = js.native
   def getOne(callback: js.Function2[/* error */ DBError, /* document */ js.UndefOr[SodaDocument], Unit]): Unit = js.native
+  
   /**
     * Sets the key value to be used to match a document for the operation. Any previous calls made to this
     * method or keys() will be ignored.
@@ -101,6 +108,7 @@ trait SodaOperation extends js.Object {
     * @since 3.0
     */
   def key(value: String): SodaOperation = js.native
+  
   /**
     * Sets the keys to be used to match multiple documents for the operation.
     * Any previous calls made to this method or key() will be ignored.
@@ -114,6 +122,7 @@ trait SodaOperation extends js.Object {
     * @since 3.0
     */
   def keys(values: js.Array[String]): SodaOperation = js.native
+  
   /**
     * Sets the maximum number of documents that a terminal method will apply to. The value of n must be
     * greater than 0. The limit is applied to documents that match the other SodaOperation criteria.
@@ -127,6 +136,7 @@ trait SodaOperation extends js.Object {
     * @since 3.0
     */
   def limit(limit: Double): SodaOperation = js.native
+  
   /**
     * Removes a set of documents matching the SodaOperation query criteria.
     *
@@ -139,6 +149,7 @@ trait SodaOperation extends js.Object {
     */
   def remove(): js.Promise[SodaRemoveResult] = js.native
   def remove(callback: js.Function2[/* error */ DBError, /* result */ SodaRemoveResult, Unit]): Unit = js.native
+  
   /**
     * Replaces a document in a collection. The input document can be either a JavaScript object representing the
     * data content, or it can be an existing SodaDocument.
@@ -193,6 +204,7 @@ trait SodaOperation extends js.Object {
     newDocument: SodaDocument,
     callback: js.Function2[/* error */ DBError, /* result */ SodaReplaceOneResult, Unit]
   ): Unit = js.native
+  
   /**
     * Replaces a document in a collection. This is similar to replaceOne(), but also returns the result document,
     * which contains all SodaDocument components (key, version, etc.) except for content.
@@ -229,6 +241,7 @@ trait SodaOperation extends js.Object {
     newDocument: SodaDocument,
     callback: js.Function2[/* error */ DBError, /* document */ js.UndefOr[SodaDocument], Unit]
   ): Unit = js.native
+  
   /**
     * Sets the number of documents that will be skipped before the terminal method is applied.
     * The value of n must be greater or equal to 0. The skip applies to documents that match the other
@@ -245,6 +258,7 @@ trait SodaOperation extends js.Object {
     * @since 3.0
     */
   def skip(skip: Double): SodaOperation = js.native
+  
   /**
     * Sets the document version that documents must have.
     *
@@ -263,4 +277,3 @@ trait SodaOperation extends js.Object {
     */
   def version(version: String): SodaOperation = js.native
 }
-

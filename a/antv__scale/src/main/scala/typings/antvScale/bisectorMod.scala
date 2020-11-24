@@ -2,11 +2,12 @@ package typings.antvScale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/esm/util/bisector", JSImport.Namespace)
+@JSImport("@antv/scale/lib/util/bisector", JSImport.Namespace)
 @js.native
 object bisectorMod extends js.Object {
+  
   def default[T](getter: GetterFunc[T]): js.Function4[
     /* a */ js.Array[T], 
     /* x */ Double, 
@@ -14,6 +15,6 @@ object bisectorMod extends js.Object {
     /* _hi */ js.UndefOr[Double], 
     Double
   ] = js.native
+  
   type GetterFunc[T] = js.Function1[/* o */ T, Double]
 }
-

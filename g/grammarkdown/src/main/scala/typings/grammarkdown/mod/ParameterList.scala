@@ -6,7 +6,7 @@ import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenParenToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "ParameterList")
 @js.native
@@ -28,4 +28,3 @@ class ParameterList protected ()
     closeParenToken: typings.grammarkdown.nodesMod.Token[CloseParenToken | CloseBracketToken]
   ) = this()
 }
-

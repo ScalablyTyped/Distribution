@@ -16,11 +16,12 @@ import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexdb/out/methods/size", JSImport.Namespace)
 @js.native
 object sizeMod extends js.Object {
+  
   @JSName("default")
   def default_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[Double] = js.native
   @JSName("default")
@@ -36,4 +37,3 @@ object sizeMod extends js.Object {
   @JSName("default")
   def default_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[Double] = js.native
 }
-

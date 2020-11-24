@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes possible results of an interactive selection of a property value in an object inspector
@@ -20,11 +20,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait InteractiveSelectionResult extends js.Object
-
 object InteractiveSelectionResult {
+  
   /** The interactive selection of a property value was canceled. */
   @scala.inline
   def Cancelled: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * The interactive selection of a property value succeeded, a new property value has been obtained, but not yet set at the inspected component.
     *
@@ -33,9 +34,11 @@ object InteractiveSelectionResult {
     */
   @scala.inline
   def ObtainedValue: `2` = 2.asInstanceOf[`2`]
+  
   /** The interactive selection of a property value is still pending. <p>This is usually used when this selection involves non-modal user interface.</p> */
   @scala.inline
   def Pending: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * The interactive selection of a property value succeeded, and the new property value chosen by the user has already been set at the inspected
     * component.
@@ -43,4 +46,3 @@ object InteractiveSelectionResult {
   @scala.inline
   def Success: `1` = 1.asInstanceOf[`1`]
 }
-

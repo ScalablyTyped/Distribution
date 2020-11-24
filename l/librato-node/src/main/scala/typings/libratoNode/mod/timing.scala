@@ -3,11 +3,12 @@ package typings.libratoNode.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("librato-node", "timing")
 @js.native
 object timing extends js.Object {
+  
   def apply(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit]): Unit = js.native
   def apply(
     name: String,
@@ -28,4 +29,3 @@ object timing extends js.Object {
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
 }
-

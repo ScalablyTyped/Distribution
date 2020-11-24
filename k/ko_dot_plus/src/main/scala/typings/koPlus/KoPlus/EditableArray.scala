@@ -3,14 +3,14 @@ package typings.koPlus.KoPlus
 import typings.koPlus.KnockoutObservableArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EditableArray[T]
   extends KnockoutObservableArray[T]
      with EditableFunctions
-
 object EditableArray {
+  
   @scala.inline
   def apply[T](
     beginEdit: () => Unit,
@@ -26,4 +26,3 @@ object EditableArray {
     __obj.asInstanceOf[EditableArray[T]]
   }
 }
-

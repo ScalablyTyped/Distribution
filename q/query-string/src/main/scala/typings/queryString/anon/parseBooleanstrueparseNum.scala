@@ -9,11 +9,12 @@ import typings.queryString.queryStringStrings.none
 import typings.queryString.queryStringStrings.separator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  parseBooleans :true,   parseNumbers :true} & query-string.query-string.ParseOptions */
 @js.native
 trait parseBooleanstrueparseNum extends js.Object {
+  
   /**
   	@default 'none'
   	- `bracket`: Parse arrays with bracket representation:
@@ -48,16 +49,19 @@ trait parseBooleanstrueparseNum extends js.Object {
   		```
   	*/
   val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.native
+  
   /**
   	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
   	@default ,
   	*/
   val arrayFormatSeparator: js.UndefOr[String] = js.native
+  
   /**
   	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
   	@default true
   	*/
   val decode: js.UndefOr[Boolean] = js.native
+  
   /**
   	Parse the value as a boolean type instead of string type if it's a boolean.
   	@default false
@@ -69,6 +73,7 @@ trait parseBooleanstrueparseNum extends js.Object {
   	```
   	*/
   var parseBooleans: `true` with js.UndefOr[Boolean] = js.native
+  
   /**
   	Parse the fragment identifier from the URL and add it to result object.
   	@default false
@@ -80,6 +85,7 @@ trait parseBooleanstrueparseNum extends js.Object {
   	```
   	*/
   val parseFragmentIdentifier: js.UndefOr[Boolean] = js.native
+  
   /**
   	Parse the value as a number type instead of string type if it's a number.
   	@default false
@@ -91,6 +97,7 @@ trait parseBooleanstrueparseNum extends js.Object {
   	```
   	*/
   var parseNumbers: `true` with js.UndefOr[Boolean] = js.native
+  
   /**
   	Supports both `Function` as a custom sorting function or `false` to disable sorting.
   	If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order.
@@ -113,51 +120,66 @@ trait parseBooleanstrueparseNum extends js.Object {
   	*/
   val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.native
 }
-
 object parseBooleanstrueparseNum {
+  
   @scala.inline
   def apply(parseBooleans: `true` with js.UndefOr[Boolean], parseNumbers: `true` with js.UndefOr[Boolean]): parseBooleanstrueparseNum = {
     val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any], parseNumbers = parseNumbers.asInstanceOf[js.Any])
     __obj.asInstanceOf[parseBooleanstrueparseNum]
   }
+  
   @scala.inline
   implicit class parseBooleanstrueparseNumOps[Self <: parseBooleanstrueparseNum] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setParseBooleans(value: `true` with js.UndefOr[Boolean]): Self = this.set("parseBooleans", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParseNumbers(value: `true` with js.UndefOr[Boolean]): Self = this.set("parseNumbers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrayFormat(value: bracket | index | comma | separator | none): Self = this.set("arrayFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteArrayFormat: Self = this.set("arrayFormat", js.undefined)
+    
     @scala.inline
     def setArrayFormatSeparator(value: String): Self = this.set("arrayFormatSeparator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteArrayFormatSeparator: Self = this.set("arrayFormatSeparator", js.undefined)
+    
     @scala.inline
     def setDecode(value: Boolean): Self = this.set("decode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDecode: Self = this.set("decode", js.undefined)
+    
     @scala.inline
     def setParseFragmentIdentifier(value: Boolean): Self = this.set("parseFragmentIdentifier", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParseFragmentIdentifier: Self = this.set("parseFragmentIdentifier", js.undefined)
+    
     @scala.inline
     def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = this.set("sort", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = this.set("sort", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSort: Self = this.set("sort", js.undefined)
   }
-  
 }
-

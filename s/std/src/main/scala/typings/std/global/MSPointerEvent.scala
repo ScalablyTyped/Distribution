@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.PointerEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MSPointerEvent")
 @js.native
@@ -14,7 +14,6 @@ class MSPointerEvent protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: PointerEventInit) = this()
 }
-
 @JSGlobal("MSPointerEvent")
 @js.native
 object MSPointerEvent
@@ -24,4 +23,3 @@ object MSPointerEvent
       /* eventInitDict */ PointerEventInit, 
       typings.std.MSPointerEvent
     ]
-

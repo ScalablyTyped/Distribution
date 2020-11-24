@@ -2,7 +2,7 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T
 */
 trait DimensionType extends js.Object
-
 object DimensionType {
+  
   @scala.inline
   def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
+  
   @scala.inline
   def N: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N = "N".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N]
+  
   @scala.inline
   def T: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T = "T".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T]
 }
-

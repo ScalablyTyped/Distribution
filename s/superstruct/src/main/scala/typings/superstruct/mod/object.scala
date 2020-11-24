@@ -7,11 +7,12 @@ import typings.superstruct.structMod.Struct
 import typings.superstruct.utilsMod.StructRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct", "object")
 @js.native
 object `object` extends js.Object {
+  
   def apply[V /* <: StructRecord[_] */](): Struct[Record[String, _], _] = js.native
   def apply[V /* <: StructRecord[_] */](Structs: V): Struct[
     OptionalizeObject[
@@ -22,4 +23,3 @@ object `object` extends js.Object {
     V
   ] = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ArrowStyle extends js.Object
-
 /**
   * The kinds of start and end forms with which linear geometry can be rendered.
   *
@@ -17,6 +16,7 @@ sealed trait ArrowStyle extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.ArrowStyle")
 @js.native
 object ArrowStyle extends js.Object {
+  
   @js.native
   sealed trait FILL_ARROW extends ArrowStyle
   
@@ -49,6 +49,4 @@ object ArrowStyle extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ArrowStyle
-  
 }
-

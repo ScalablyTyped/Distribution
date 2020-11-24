@@ -10,10 +10,11 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Array[T] extends js.Object {
+  
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth. If no depth is provided, flat method defaults to the depth of 1.
@@ -89,4 +90,3 @@ trait Array[T] extends js.Object {
   @JSName("flat")
   def flat_U[U](): Array[U] = js.native
 }
-

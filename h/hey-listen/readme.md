@@ -10,9 +10,9 @@ Warning and invariant dev-ex messaging.
 | ------------------ | :-------------: |
 | Full name          | hey-listen |
 | Keywords           | warning, invariant |
-| # releases         | 11 |
-| # dependents       | 23 |
-| # downloads        | 4354367 |
+| # releases         | 4 |
+| # dependents       | 24 |
+| # downloads        | 8120220 |
 | # stars            | 0 |
 
 ## Links

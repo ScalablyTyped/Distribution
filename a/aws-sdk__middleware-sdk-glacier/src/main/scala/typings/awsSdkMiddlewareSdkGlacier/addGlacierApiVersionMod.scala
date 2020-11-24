@@ -1,15 +1,17 @@
 package typings.awsSdkMiddlewareSdkGlacier
 
-import typings.awsSdkTypes.middlewareMod.BuildHandler
-import typings.awsSdkTypes.middlewareMod.BuildHandlerArguments
-import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
+import typings.awsSdkMiddlewareSdkGlacier.configurationsMod.ResolvedGlacierMiddlewareConfig
+import typings.awsSdkTypes.middlewareMod.BuildHandlerOptions
+import typings.awsSdkTypes.middlewareMod.BuildMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/middleware-sdk-glacier/build/add-glacier-api-version", JSImport.Namespace)
+@JSImport("@aws-sdk/middleware-sdk-glacier/dist/cjs/add-glacier-api-version", JSImport.Namespace)
 @js.native
 object addGlacierApiVersionMod extends js.Object {
-  def addGlacierApiVersion(next: BuildHandler[_, _, _], context: HandlerExecutionContext): js.Function1[/* args */ BuildHandlerArguments[_, _], js.Promise[_]] = js.native
+  
+  def addGlacierApiVersionMiddleware(options: ResolvedGlacierMiddlewareConfig): BuildMiddleware[_, _] = js.native
+  
+  val addGlacierApiVersionMiddlewareOptions: BuildHandlerOptions = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.scrollbarMod.ScrollBar.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "ScrollBar")
 @js.native
@@ -16,4 +16,3 @@ class ScrollBar ()
   extends typings.luminoWidgets.scrollbarMod.ScrollBar {
   def this(options: IOptions) = this()
 }
-

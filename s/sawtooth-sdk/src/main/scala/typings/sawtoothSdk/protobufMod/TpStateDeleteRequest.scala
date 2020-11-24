@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TpStateDeleteRequest")
 @js.native
@@ -17,23 +17,26 @@ import scala.scalajs.js.annotation._
   */
 class TpStateDeleteRequest () extends ITpStateDeleteRequest {
   def this(properties: ITpStateDeleteRequest) = this()
+  
   /** TpStateDeleteRequest addresses. */
   @JSName("addresses")
   var addresses_TpStateDeleteRequest: js.Array[String] = js.native
+  
   /** TpStateDeleteRequest contextId. */
   @JSName("contextId")
   var contextId_TpStateDeleteRequest: String = js.native
+  
   /**
     * Converts this TpStateDeleteRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "TpStateDeleteRequest")
 @js.native
 object TpStateDeleteRequest extends js.Object {
+  
   /**
     * Creates a new TpStateDeleteRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -41,6 +44,7 @@ object TpStateDeleteRequest extends js.Object {
     */
   def create(): TpStateDeleteRequest = js.native
   def create(properties: ITpStateDeleteRequest): TpStateDeleteRequest = js.native
+  
   /**
     * Decodes a TpStateDeleteRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,6 +57,7 @@ object TpStateDeleteRequest extends js.Object {
   def decode(reader: Reader, length: Double): TpStateDeleteRequest = js.native
   def decode(reader: Uint8Array): TpStateDeleteRequest = js.native
   def decode(reader: Uint8Array, length: Double): TpStateDeleteRequest = js.native
+  
   /**
     * Decodes a TpStateDeleteRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -62,6 +67,7 @@ object TpStateDeleteRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): TpStateDeleteRequest = js.native
   def decodeDelimited(reader: Uint8Array): TpStateDeleteRequest = js.native
+  
   /**
     * Encodes the specified TpStateDeleteRequest message. Does not implicitly {@link TpStateDeleteRequest.verify|verify} messages.
     * @param message TpStateDeleteRequest message or plain object to encode
@@ -70,6 +76,7 @@ object TpStateDeleteRequest extends js.Object {
     */
   def encode(message: ITpStateDeleteRequest): Writer = js.native
   def encode(message: ITpStateDeleteRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpStateDeleteRequest message, length delimited. Does not implicitly {@link TpStateDeleteRequest.verify|verify} messages.
     * @param message TpStateDeleteRequest message or plain object to encode
@@ -78,12 +85,14 @@ object TpStateDeleteRequest extends js.Object {
     */
   def encodeDelimited(message: ITpStateDeleteRequest): Writer = js.native
   def encodeDelimited(message: ITpStateDeleteRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpStateDeleteRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpStateDeleteRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): TpStateDeleteRequest = js.native
+  
   /**
     * Creates a plain object from a TpStateDeleteRequest message. Also converts values to other types if specified.
     * @param message TpStateDeleteRequest
@@ -92,6 +101,7 @@ object TpStateDeleteRequest extends js.Object {
     */
   def toObject(message: TpStateDeleteRequest): StringDictionary[js.Any] = js.native
   def toObject(message: TpStateDeleteRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpStateDeleteRequest message.
     * @param message Plain object to verify
@@ -99,4 +109,3 @@ object TpStateDeleteRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

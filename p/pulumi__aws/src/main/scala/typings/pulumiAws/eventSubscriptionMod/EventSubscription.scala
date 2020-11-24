@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription")
 @js.native
@@ -22,38 +22,46 @@ class EventSubscription protected () extends CustomResource {
     */
   def this(name: String, args: EventSubscriptionArgs) = this()
   def this(name: String, args: EventSubscriptionArgs, opts: CustomResourceOptions) = this()
+  
   val arn: Output_[String] = js.native
+  
   /**
     * Whether the event subscription should be enabled.
     */
   val enabled: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * List of event categories to listen for, see `DescribeEventCategories` for a canonical list.
     */
   val eventCategories: Output_[js.Array[String]] = js.native
+  
   /**
     * Name of event subscription.
     */
   val name: Output_[String] = js.native
+  
   /**
     * SNS topic arn to send events on.
     */
   val snsTopicArn: Output_[String] = js.native
+  
   /**
     * Ids of sources to listen to.
     */
   val sourceIds: Output_[js.UndefOr[js.Array[String]]] = js.native
+  
   /**
     * Type of source for events. Valid values: `replication-instance` or `replication-task`
     */
   val sourceType: Output_[js.UndefOr[String]] = js.native
+  
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/dms/eventSubscription", "EventSubscription")
 @js.native
 object EventSubscription extends js.Object {
+  
   /**
     * Get an existing EventSubscription resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -67,10 +75,10 @@ object EventSubscription extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventSubscription = js.native
   def get(name: String, id: Input[ID], state: EventSubscriptionState): EventSubscription = js.native
   def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): EventSubscription = js.native
+  
   /**
     * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean = js.native
 }
-

@@ -10,9 +10,9 @@ Thunk middleware for Redux.
 | ------------------ | :-------------: |
 | Full name          | redux-thunk |
 | Keywords           | redux, thunk, middleware, redux-middleware, flux |
-| # releases         | 2 |
-| # dependents       | 2685 |
-| # downloads        | 85635799 |
+| # releases         | 1 |
+| # dependents       | 3048 |
+| # downloads        | 93969315 |
 | # stars            | 90 |
 
 ## Links

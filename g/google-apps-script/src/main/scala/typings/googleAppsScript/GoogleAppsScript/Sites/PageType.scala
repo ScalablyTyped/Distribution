@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Sites
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PageType extends js.Object
-
 /**
   * A typesafe enum for sites page type.
   * A rebuilt
@@ -17,6 +16,7 @@ sealed trait PageType extends js.Object
 @JSGlobal("GoogleAppsScript.Sites.PageType")
 @js.native
 object PageType extends js.Object {
+  
   @js.native
   sealed trait ANNOUNCEMENT extends PageType
   
@@ -31,6 +31,4 @@ object PageType extends js.Object {
   
   @js.native
   sealed trait WEB_PAGE extends PageType
-  
 }
-

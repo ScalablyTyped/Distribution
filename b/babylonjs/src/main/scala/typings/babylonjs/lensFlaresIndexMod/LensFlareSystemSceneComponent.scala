@@ -3,7 +3,7 @@ package typings.babylonjs.lensFlaresIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/LensFlares/index", "LensFlareSystemSceneComponent")
 @js.native
@@ -15,4 +15,3 @@ class LensFlareSystemSceneComponent protected ()
     */
   def this(scene: Scene) = this()
 }
-

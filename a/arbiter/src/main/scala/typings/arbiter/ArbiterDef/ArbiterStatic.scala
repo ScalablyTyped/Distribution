@@ -2,16 +2,16 @@ package typings.arbiter.ArbiterDef
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArbiterStatic extends js.Object {
-  var updated_on: String = js.native
-  var version: String = js.native
+  
   /**
     * Creates a separate Arbiter instance.
     */
   def create(): ArbiterStatic = js.native
+  
   /**
     * Publishes a message to all subscribers.
     * Returns: true on success, false if any subscriber has thrown a js exception.
@@ -23,10 +23,12 @@ trait ArbiterStatic extends js.Object {
   def publish(msg: String, data: js.UndefOr[scala.Nothing], options: PublishOptions): Boolean = js.native
   def publish(msg: String, data: js.Any): Boolean = js.native
   def publish(msg: String, data: js.Any, options: PublishOptions): Boolean = js.native
+  
   /**
     * After unsubscribing, you can later re-subscribe to begin receiving messages again.
     */
   def resubscribe(subscription_id: Double): Boolean = js.native
+  
   /**
     * Subscribes to messages.
     * Returns: subscription id or [id1,id2] if subscribing to multiple messages
@@ -67,9 +69,13 @@ trait ArbiterStatic extends js.Object {
     * @param msg comma separated messages or use wildcard like a/b/ *
     */
   def subscribe(msg: js.Array[String], options: SubscribeOptions, func: SubscribeHandler): js.Any = js.native
+  
   /**
     * Unsubscribing simply sets a flag which prevents the subscriber from executing, in case you want to re-subscribe later.
     */
   def unsubscribe(subscription_id: Double): Boolean = js.native
+  
+  var updated_on: String = js.native
+  
+  var version: String = js.native
 }
-

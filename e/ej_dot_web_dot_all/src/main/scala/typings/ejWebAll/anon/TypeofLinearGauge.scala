@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.datavisualization.LinearGauge
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofLinearGauge
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), LinearGauge]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, LinearGauge] {
+  
   var Locale: js.Any = js.native
+  
   var fn: LinearGauge = js.native
 }
-

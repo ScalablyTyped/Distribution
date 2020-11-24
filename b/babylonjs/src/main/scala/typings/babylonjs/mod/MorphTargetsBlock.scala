@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "MorphTargetsBlock")
 @js.native
@@ -14,4 +14,3 @@ class MorphTargetsBlock protected ()
     */
   def this(name: String) = this()
 }
-

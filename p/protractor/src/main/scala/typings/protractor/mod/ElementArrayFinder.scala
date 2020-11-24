@@ -2,7 +2,7 @@ package typings.protractor.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "ElementArrayFinder")
 @js.native
@@ -48,4 +48,3 @@ class ElementArrayFinder protected ()
     actionResults_ : js.Promise[_]
   ) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.winrt.global.Windows.Foundation.Metadata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Foundation.Metadata.GuidAttribute")
 @js.native
@@ -22,4 +22,3 @@ class GuidAttribute protected ()
     k: Double
   ) = this()
 }
-

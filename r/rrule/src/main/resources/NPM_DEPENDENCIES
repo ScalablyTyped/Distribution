@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rrule" : "2.6.4"
+      "rrule" : "2.6.6"
     }
   ],
   "test-dependencies" : [
     {
-      "rrule" : "2.6.4"
+      "rrule" : "2.6.6"
     }
   ],
   "compile-devDependencies" : [

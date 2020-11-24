@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Rotator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PagerPosition extends js.Object
-
 @JSGlobal("ej.Rotator.PagerPosition")
 @js.native
 object PagerPosition extends js.Object {
+  
   ///string
   @js.native
   sealed trait BottomLeft extends PagerPosition
@@ -33,6 +33,4 @@ object PagerPosition extends js.Object {
   ///string
   @js.native
   sealed trait TopRight extends PagerPosition
-  
 }
-

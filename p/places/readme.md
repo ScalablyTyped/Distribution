@@ -12,7 +12,7 @@ About places.
 | Keywords           | nodejs |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 573 |
+| # downloads        | 238 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.chrome.global.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Types
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.types")
 @js.native
 object types extends js.Object
-

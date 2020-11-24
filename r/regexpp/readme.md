@@ -10,9 +10,9 @@ Regular expression parser for ECMAScript.
 | ------------------ | :-------------: |
 | Full name          | regexpp |
 | Keywords           | regexp, regular, expression, parser, validator, ast, abstract, syntax, tree, ecmascript, es2015, es2016, es2017, es2018, es2019, es2020, annexB |
-| # releases         | 10 |
-| # dependents       | 31 |
-| # downloads        | 263348645 |
+| # releases         | 4 |
+| # dependents       | 58 |
+| # downloads        | 538029658 |
 | # stars            | 0 |
 
 ## Links

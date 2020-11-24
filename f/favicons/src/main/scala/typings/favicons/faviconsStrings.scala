@@ -2,9 +2,43 @@ package typings.favicons
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object faviconsStrings {
+  
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  
+  @scala.inline
+  def `black-translucent`: `black-translucent` = "black-translucent".asInstanceOf[`black-translucent`]
+  
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def `minimal-ui`: `minimal-ui` = "minimal-ui".asInstanceOf[`minimal-ui`]
+  
+  @scala.inline
+  def natural: natural = "natural".asInstanceOf[natural]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def standalone: standalone = "standalone".asInstanceOf[standalone]
+  
   @js.native
   sealed trait any extends js.Object
   
@@ -37,28 +71,4 @@ object faviconsStrings {
   
   @js.native
   sealed trait standalone extends js.Object
-  
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def `black-translucent`: `black-translucent` = "black-translucent".asInstanceOf[`black-translucent`]
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def `minimal-ui`: `minimal-ui` = "minimal-ui".asInstanceOf[`minimal-ui`]
-  @scala.inline
-  def natural: natural = "natural".asInstanceOf[natural]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def standalone: standalone = "standalone".asInstanceOf[standalone]
 }
-

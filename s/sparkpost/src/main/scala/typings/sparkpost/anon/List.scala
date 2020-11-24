@@ -10,10 +10,11 @@ import typings.sparkpost.mod.VerifyOptions
 import typings.sparkpost.mod.VerifyResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait List extends js.Object {
+  
   /**
     * Create a sending domain by providing a sending domain object as the POST request body.
     *
@@ -27,6 +28,7 @@ trait List extends js.Object {
     * @param callback The request callback with basic info results
     */
   def create(options: CreateSendingDomain, callback: ResultsCallback[Domain]): Unit = js.native
+  
   /**
     * Delete an existing sending domain.
     *
@@ -40,6 +42,7 @@ trait List extends js.Object {
     * @param callback The request callback
     */
   def delete(domain: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Retrieve a sending domain by specifying its domain name in the URI path. The response includes details about its DKIM key configuration.
     *
@@ -53,6 +56,7 @@ trait List extends js.Object {
     * @param callback The request callback with SendingDomain results
     */
   def get(domain: String, callback: ResultsCallback[SendingDomain]): Unit = js.native
+  
   /**
     * List an overview of all sending domains in the system.
     *
@@ -64,6 +68,7 @@ trait List extends js.Object {
     * @param callback The request callback with SendingDomain results array
     */
   def list(callback: ResultsCallback[js.Array[SendingDomain]]): Unit = js.native
+  
   /**
     * Update the attributes of an existing sending domain by specifying its domain name in the URI path and use a sending domain object as the PUT request body.
     *
@@ -79,6 +84,7 @@ trait List extends js.Object {
     * @param callback The request callback with basic info results
     */
   def update(domain: String, updateOpts: UpdateSendingDomain, callback: ResultsCallback[Domain]): Unit = js.native
+  
   /**
     * Verify a Sending Domain
     *
@@ -95,4 +101,3 @@ trait List extends js.Object {
     */
   def verify(domain: String, options: VerifyOptions, callback: ResultsCallback[VerifyResults]): Unit = js.native
 }
-

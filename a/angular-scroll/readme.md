@@ -10,8 +10,8 @@ Scrollspy, animated scrollTo and scroll events
 | Full name          | angular-scroll |
 | Keywords           | angular, smooth-scroll, scrollspy, scrollTo, scrolling |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 1169747 |
+| # dependents       | 10 |
+| # downloads        | 1264068 |
 | # stars            | 1 |
 
 ## Links

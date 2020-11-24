@@ -70,12 +70,11 @@ import typings.std.HTMLElement
 import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sortable extends js.Object {
-  var el: HTMLElement = js.native
-  var options: Options = js.native
+  
   /**
     * For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
     * @param element an HTMLElement or selector string.
@@ -83,13 +82,17 @@ trait Sortable extends js.Object {
     */
   def closest(element: HTMLElement): HTMLElement | Null = js.native
   def closest(element: HTMLElement, selector: String): HTMLElement | Null = js.native
+  
   /**
     * Removes the sortable functionality completely.
     */
   def destroy(): Unit = js.native
+  
+  var el: HTMLElement = js.native
+  
   def option(
     name: onMove,
-    value: js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1`]
+    value: js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1` | Unit]
   ): Unit = js.native
   def option(
     name: scrollFn,
@@ -346,7 +349,7 @@ trait Sortable extends js.Object {
   def option_onFilter_Unit(name: onFilter): Unit = js.native
   @JSName("option")
   def option_onMove(name: onMove): js.UndefOr[
-    js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1`]
+    js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1` | Unit]
   ] = js.native
   @JSName("option")
   def option_onMove_Unit(name: onMove): Unit = js.native
@@ -503,18 +506,22 @@ trait Sortable extends js.Object {
   def option_touchStartThreshold(name: touchStartThreshold, value: Double): Unit = js.native
   @JSName("option")
   def option_touchStartThreshold_Unit(name: touchStartThreshold): Unit = js.native
+  
+  var options: Options = js.native
+  
   /**
     * Saving and restoring of the sort.
     */
   def save(): Unit = js.native
+  
   /**
     * Sorts the elements according to the array.
     * @param order an array of strings to sort.
     */
   def sort(order: js.Array[String]): Unit = js.native
+  
   /**
     * Serializes the sortable's item data-id's (dataIdAttr option) into an array of string.
     */
   def toArray(): js.Array[String] = js.native
 }
-

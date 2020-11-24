@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "ec2.SnapshotCreateVolumePermission")
 @js.native
@@ -23,11 +23,11 @@ class SnapshotCreateVolumePermission protected ()
   def this(name: String, args: SnapshotCreateVolumePermissionArgs) = this()
   def this(name: String, args: SnapshotCreateVolumePermissionArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "ec2.SnapshotCreateVolumePermission")
 @js.native
 object SnapshotCreateVolumePermission extends js.Object {
+  
   /**
     * Get an existing SnapshotCreateVolumePermission resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -46,10 +46,10 @@ object SnapshotCreateVolumePermission extends js.Object {
     state: SnapshotCreateVolumePermissionState,
     opts: CustomResourceOptions
   ): typings.pulumiAws.snapshotCreateVolumePermissionMod.SnapshotCreateVolumePermission = js.native
+  
   /**
     * Returns true if the given object is an instance of SnapshotCreateVolumePermission.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean = js.native
 }
-

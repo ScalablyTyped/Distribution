@@ -2,89 +2,164 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DefineIndexOptions extends js.Object {
+  
   /**
     * Pass CONCURRENT so other operations run while the index is created - PostgresSQL only. Default is false
     */
-  var concurrently: js.UndefOr[Boolean] = js.undefined
+  var concurrently: js.UndefOr[Boolean] = js.native
+  
   /**
     * The name of the index. Default is __
     */
-  var indexName: js.UndefOr[String] = js.undefined
+  var indexName: js.UndefOr[String] = js.native
+  
   /**
     * Set a type for the index, e.g. BTREE. See the documentation of the used dialect
     */
-  var indexType: js.UndefOr[String] = js.undefined
+  var indexType: js.UndefOr[String] = js.native
+  
   /**
     * The index type
     */
-  var indicesType: js.UndefOr[IndexType] = js.undefined
+  var indicesType: js.UndefOr[IndexType] = js.native
+  
   /**
     * A function that receives the sql query, e.g. console.log
     */
-  var logging: js.UndefOr[js.Function] = js.undefined
+  var logging: js.UndefOr[js.Function] = js.native
+  
   /**
     * The name of the index. Default is Default is <table>_<attr1>_<attr2>
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
+  
   /**
     * Index operator
     */
-  var operator: js.UndefOr[String] = js.undefined
+  var operator: js.UndefOr[String] = js.native
+  
   /**
     * For FULLTEXT columns set your parser
     */
-  var parser: js.UndefOr[String] = js.undefined
+  var parser: js.UndefOr[String] = js.native
+  
   /**
     * The index type
     */
-  var `type`: js.UndefOr[IndexType] = js.undefined
+  var `type`: js.UndefOr[IndexType] = js.native
+  
   /**
     * Create a unique index
     */
-  var unique: js.UndefOr[Boolean] = js.undefined
+  var unique: js.UndefOr[Boolean] = js.native
+  
   /**
     * Create an unique index
     */
-  var using: js.UndefOr[String] = js.undefined
+  var using: js.UndefOr[String] = js.native
+  
   /**
     * A hash of attributes to limit your index(Filtered Indexes - MSSQL & PostgreSQL only)
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.undefined
+  var where: js.UndefOr[AnyWhereOptions] = js.native
 }
-
 object DefineIndexOptions {
+  
   @scala.inline
-  def apply(
-    concurrently: js.UndefOr[Boolean] = js.undefined,
-    indexName: String = null,
-    indexType: String = null,
-    indicesType: IndexType = null,
-    logging: js.Function = null,
-    name: String = null,
-    operator: String = null,
-    parser: String = null,
-    `type`: IndexType = null,
-    unique: js.UndefOr[Boolean] = js.undefined,
-    using: String = null,
-    where: AnyWhereOptions = null
-  ): DefineIndexOptions = {
+  def apply(): DefineIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently.get.asInstanceOf[js.Any])
-    if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
-    if (indexType != null) __obj.updateDynamic("indexType")(indexType.asInstanceOf[js.Any])
-    if (indicesType != null) __obj.updateDynamic("indicesType")(indicesType.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
-    if (using != null) __obj.updateDynamic("using")(using.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineIndexOptions]
   }
+  
+  @scala.inline
+  implicit class DefineIndexOptionsOps[Self <: DefineIndexOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setConcurrently(value: Boolean): Self = this.set("concurrently", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteConcurrently: Self = this.set("concurrently", js.undefined)
+    
+    @scala.inline
+    def setIndexName(value: String): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    
+    @scala.inline
+    def setIndexType(value: String): Self = this.set("indexType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIndexType: Self = this.set("indexType", js.undefined)
+    
+    @scala.inline
+    def setIndicesType(value: IndexType): Self = this.set("indicesType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIndicesType: Self = this.set("indicesType", js.undefined)
+    
+    @scala.inline
+    def setLogging(value: js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    
+    @scala.inline
+    def setParser(value: String): Self = this.set("parser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    
+    @scala.inline
+    def setType(value: IndexType): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    
+    @scala.inline
+    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUnique: Self = this.set("unique", js.undefined)
+    
+    @scala.inline
+    def setUsing(value: String): Self = this.set("using", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUsing: Self = this.set("using", js.undefined)
+    
+    @scala.inline
+    def setWhere(value: AnyWhereOptions): Self = this.set("where", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWhere: Self = this.set("where", js.undefined)
+  }
 }
-

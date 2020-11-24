@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new LayoutChildComponent.
@@ -22,4 +22,3 @@ class LayoutChildComponent protected ()
   extends typings.playcanvas.pc.LayoutChildComponent {
   def this(system: typings.playcanvas.pc.LayoutChildComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

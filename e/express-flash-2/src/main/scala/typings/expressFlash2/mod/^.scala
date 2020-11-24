@@ -5,14 +5,14 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-flash-2", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Expose `flash()` function on responses.
     */
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

@@ -3,22 +3,23 @@ package typings.electron.global.Electron
 import typings.electron.Electron.FromPartitionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.Session")
 @js.native
 class Session_ ()
   extends typings.electron.Electron.Session_
-
 /* static members */
 @JSGlobal("Electron.Session")
 @js.native
 object Session_ extends js.Object {
+  
   /**
     * A `Session` object, the default session object of the app.
     */
   var defaultSession: typings.electron.Electron.Session_ = js.native
-  // Docs: http://electronjs.org/docs/api/session
+  
+  // Docs: https://electronjs.org/docs/api/session
   /**
     * A session instance from `partition` string. When there is an existing `Session`
     * with the same `partition`, it will be returned; otherwise a new `Session`
@@ -36,4 +37,3 @@ object Session_ extends js.Object {
   def fromPartition(partition: String): typings.electron.Electron.Session_ = js.native
   def fromPartition(partition: String, options: FromPartitionOptions): typings.electron.Electron.Session_ = js.native
 }
-

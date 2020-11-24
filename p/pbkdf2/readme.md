@@ -10,9 +10,9 @@ This library provides the functionality of PBKDF2 with the ability to use any su
 | ------------------ | :-------------: |
 | Full name          | pbkdf2 |
 | Keywords           | pbkdf2, kdf, salt, hash |
-| # releases         | 3 |
-| # dependents       | 123 |
-| # downloads        | 303357195 |
+| # releases         | 4 |
+| # dependents       | 175 |
+| # downloads        | 417629278 |
 | # stars            | 8 |
 
 ## Links

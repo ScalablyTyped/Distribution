@@ -22,11 +22,12 @@ import typings.babelTypes.babelTypesStrings.^
 import typings.babelTypes.babelTypesStrings.`-_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "binaryExpression")
 @js.native
 object binaryExpression extends js.Object {
+  
   def apply(operator: Ampersand, left: Expression, right: Expression): BinaryExpression_ = js.native
   def apply(operator: Ampersand, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
   def apply(operator: AsteriskAsterisk, left: Expression, right: Expression): BinaryExpression_ = js.native
@@ -68,4 +69,3 @@ object binaryExpression extends js.Object {
   def apply(operator: `-_`, left: Expression, right: Expression): BinaryExpression_ = js.native
   def apply(operator: `-_`, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
 }
-

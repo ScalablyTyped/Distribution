@@ -2,7 +2,7 @@ package typings.amapJsApi.AMap.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApi.amapJsApiStrings.left
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.amapJsApi.amapJsApiStrings.center
 */
 trait TextAlign extends js.Object
-
 object TextAlign {
+  
   @scala.inline
   def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
+  
   @scala.inline
   def left: typings.amapJsApi.amapJsApiStrings.left = "left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.left]
+  
   @scala.inline
   def right: typings.amapJsApi.amapJsApiStrings.right = "right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.right]
 }
-

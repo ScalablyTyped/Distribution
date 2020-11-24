@@ -2,14 +2,14 @@ package typings.tampermonkey.Tampermonkey
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProgressResponse[TContext]
   extends Response[TContext]
      with ProgressResponseBase
-
 object ProgressResponse {
+  
   @scala.inline
   def apply[TContext](
     context: TContext,
@@ -31,4 +31,3 @@ object ProgressResponse {
     __obj.asInstanceOf[ProgressResponse[TContext]]
   }
 }
-

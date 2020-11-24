@@ -18,10 +18,11 @@ import typings.spectrum.spectrumStrings.toggle
 import typings.tinycolor2.mod.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Called at the beginning of a drag event on either hue slider, alpha slider, or main color picker areas.
     */
@@ -38,6 +39,7 @@ trait JQuery extends js.Object {
     events: dragstopDotspectrum,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* color */ Instance, _]
   ): JQuery = js.native
+  
    // in most cases this is JQuery except for the get method which returns a tinycolorInstance
   /**
     * Initializes the input element that it is called on
@@ -128,4 +130,3 @@ trait JQuery extends js.Object {
   @JSName("spectrum")
   def spectrum_toggle(methodName: toggle): JQuery = js.native
 }
-

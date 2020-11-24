@@ -2,14 +2,14 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WeekOfMonth extends js.Object
-
 @JSGlobal("DevExpress.AspNetCore.WeekOfMonth")
 @js.native
 object WeekOfMonth extends js.Object {
+  
   @js.native
   sealed trait First extends WeekOfMonth
   
@@ -27,6 +27,4 @@ object WeekOfMonth extends js.Object {
   
   @js.native
   sealed trait Third extends WeekOfMonth
-  
 }
-

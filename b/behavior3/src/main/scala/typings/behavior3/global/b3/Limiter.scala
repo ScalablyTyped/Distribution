@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.MaxLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This decorator limit the number of times its child can be called. After a
@@ -26,4 +26,3 @@ class Limiter ()
   extends typings.behavior3.b3.Limiter {
   def this(hasChildMaxLoop: MaxLoop) = this()
 }
-

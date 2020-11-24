@@ -20,18 +20,21 @@ import typings.hexo.mod.TemplateLocals
 import typings.hexo.mod.extend.Filter.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Filter_ extends js.Object {
+  
   def exec(`type`: String): js.Any = js.native
   def exec(`type`: String, data: js.UndefOr[scala.Nothing], options: Options): js.Any = js.native
   def exec(`type`: String, data: js.Any): js.Any = js.native
   def exec(`type`: String, data: js.Any, options: Options): js.Any = js.native
+  
   def execSync(`type`: String): js.Any = js.native
   def execSync(`type`: String, data: js.UndefOr[scala.Nothing], options: Options): js.Any = js.native
   def execSync(`type`: String, data: js.Any): js.Any = js.native
   def execSync(`type`: String, data: js.Any, options: Options): js.Any = js.native
+  
   def register(`type`: String, fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, _]): Unit = js.native
   def register(`type`: String, fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, _], priority: Double): Unit = js.native
   /**
@@ -133,6 +136,6 @@ trait Filter_ extends js.Object {
     fn: js.Function1[/* locals */ TemplateLocals, TemplateLocals | Unit],
     priority: Double
   ): Unit = js.native
+  
   def unregister(`type`: String, fn: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }
-

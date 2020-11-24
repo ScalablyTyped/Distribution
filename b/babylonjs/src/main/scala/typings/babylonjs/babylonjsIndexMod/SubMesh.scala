@@ -2,7 +2,7 @@ package typings.babylonjs.babylonjsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "SubMesh")
 @js.native
@@ -18,6 +18,7 @@ class SubMesh protected ()
     * @param mesh defines the parent mesh
     * @param renderingMesh defines an optional rendering mesh
     * @param createBoundingBox defines if bounding box should be created for this submesh
+    * @param addToMesh defines a boolean indicating that the submesh must be added to the mesh.subMeshes array (true by default)
     */
   def this(
     /** the material index to use */
@@ -58,15 +59,94 @@ class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: js.UndefOr[scala.Nothing],
+    createBoundingBox: Boolean
+  ) = this()
+  def this(
+    /** the material index to use */
+  materialIndex: Double,
+    /** vertex index start */
+  verticesStart: Double,
+    /** vertices count */
+  verticesCount: Double,
+    /** index start */
+  indexStart: Double,
+    /** indices count */
+  indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh,
     createBoundingBox: Boolean
   ) = this()
+  def this(
+    /** the material index to use */
+  materialIndex: Double,
+    /** vertex index start */
+  verticesStart: Double,
+    /** vertices count */
+  verticesCount: Double,
+    /** index start */
+  indexStart: Double,
+    /** indices count */
+  indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: js.UndefOr[scala.Nothing],
+    createBoundingBox: js.UndefOr[scala.Nothing],
+    addToMesh: Boolean
+  ) = this()
+  def this(
+    /** the material index to use */
+  materialIndex: Double,
+    /** vertex index start */
+  verticesStart: Double,
+    /** vertices count */
+  verticesCount: Double,
+    /** index start */
+  indexStart: Double,
+    /** indices count */
+  indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: js.UndefOr[scala.Nothing],
+    createBoundingBox: Boolean,
+    addToMesh: Boolean
+  ) = this()
+  def this(
+    /** the material index to use */
+  materialIndex: Double,
+    /** vertex index start */
+  verticesStart: Double,
+    /** vertices count */
+  verticesCount: Double,
+    /** index start */
+  indexStart: Double,
+    /** indices count */
+  indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: typings.babylonjs.meshMod.Mesh,
+    createBoundingBox: js.UndefOr[scala.Nothing],
+    addToMesh: Boolean
+  ) = this()
+  def this(
+    /** the material index to use */
+  materialIndex: Double,
+    /** vertex index start */
+  verticesStart: Double,
+    /** vertices count */
+  verticesCount: Double,
+    /** index start */
+  indexStart: Double,
+    /** indices count */
+  indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: typings.babylonjs.meshMod.Mesh,
+    createBoundingBox: Boolean,
+    addToMesh: Boolean
+  ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Meshes/index", "SubMesh")
 @js.native
 object SubMesh extends js.Object {
+  
   /**
     * Add a new submesh to a mesh
     * @param materialIndex defines the material index to use
@@ -94,6 +174,16 @@ object SubMesh extends js.Object {
     indexStart: Double,
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: js.UndefOr[scala.Nothing],
+    createBoundingBox: Boolean
+  ): typings.babylonjs.subMeshMod.SubMesh = js.native
+  def AddToMesh(
+    materialIndex: Double,
+    verticesStart: Double,
+    verticesCount: Double,
+    indexStart: Double,
+    indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.subMeshMod.SubMesh = js.native
   def AddToMesh(
@@ -106,6 +196,7 @@ object SubMesh extends js.Object {
     renderingMesh: typings.babylonjs.meshMod.Mesh,
     createBoundingBox: Boolean
   ): typings.babylonjs.subMeshMod.SubMesh = js.native
+  
   /**
     * Creates a new submesh from indices data
     * @param materialIndex the index of the main mesh material
@@ -129,4 +220,3 @@ object SubMesh extends js.Object {
     renderingMesh: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.subMeshMod.SubMesh = js.native
 }
-

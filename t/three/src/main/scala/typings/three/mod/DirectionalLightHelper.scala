@@ -2,12 +2,17 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "DirectionalLightHelper")
 @js.native
 class DirectionalLightHelper protected ()
   extends typings.three.directionalLightHelperMod.DirectionalLightHelper {
+  /**
+  	 * @param light
+  	 * @param [size=1]
+  	 * @param color
+  	 */
   def this(light: typings.three.directionalLightMod.DirectionalLight) = this()
   def this(light: typings.three.directionalLightMod.DirectionalLight, size: Double) = this()
   def this(
@@ -33,4 +38,3 @@ class DirectionalLightHelper protected ()
     color: typings.three.colorMod.Color
   ) = this()
 }
-

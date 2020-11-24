@@ -3,7 +3,7 @@ package typings.interfaceDatastore.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("interface-datastore", "Key")
 @js.native
@@ -12,12 +12,7 @@ class Key protected () extends js.Object {
   def this(s: Buffer) = this()
   def this(s: String, clean: Boolean) = this()
   def this(s: Buffer, clean: Boolean) = this()
-  /**
-    * Return string representation of the key
-    */
-  var get: js.Any = js.native
-  @JSName(js.Symbol.toStringTag)
-  var toStringTag: js.Function0[String] = js.native
+  
   /**
     * Returns the "base" namespace of this key.
     *
@@ -26,6 +21,7 @@ class Key protected () extends js.Object {
     * // => 'Actor:JohnCleese'
     */
   def baseNamespace(): String = js.native
+  
   /**
     * Returns the `child` Key of this Key.
     *
@@ -36,16 +32,24 @@ class Key protected () extends js.Object {
     * // => Key('/Comedy/MontyPython/Actor:JohnCleese')
     */
   def child(key: Key): Key = js.native
+  
   /**
     * Cleanup the current key
     */
   def clean(): Unit = js.native
+  
   /**
     * Concats one or more Keys into one new Key.
     *
     * @param keys The array of keys to concatenate
     */
   def concat(keys: Key*): Key = js.native
+  
+  /**
+    * Return string representation of the key
+    */
+  var get: js.Any = js.native
+  
   /**
     * Returns an "instance" of this type key (appends value to namespace).
     *
@@ -56,6 +60,7 @@ class Key protected () extends js.Object {
     * // => Key('/Comedy/MontyPython/Actor:JohnCleese')
     */
   def instance(str: String): Key = js.native
+  
   /**
     * Returns whether this key is a prefix of `other`
     *
@@ -66,6 +71,7 @@ class Key protected () extends js.Object {
     * // => true
     */
   def isAncestorOf(other: Key): Boolean = js.native
+  
   /**
     * Returns whether this key is a contains another as prefix.
     *
@@ -76,16 +82,19 @@ class Key protected () extends js.Object {
     * // => true
     */
   def isDecendantOf(other: Key): Boolean = js.native
+  
   /**
     * Returns wether this key has only one namespace.
     */
   def isTopLevel(): Boolean = js.native
+  
   /**
     * Check if the given key is sorted lower than ourself.
     *
     * @param key The other Key to check against
     */
   def less(key: Key): Boolean = js.native
+  
   /**
     * Returns the `list` representation of this key.
     *
@@ -94,6 +103,7 @@ class Key protected () extends js.Object {
     * // => ['Comedy', 'MontyPythong', 'Actor:JohnCleese']
     */
   def list(): js.Array[String] = js.native
+  
   /**
     * Returns the "name" of this key (field of last namespace).
     *
@@ -102,10 +112,12 @@ class Key protected () extends js.Object {
     * // => 'JohnCleese'
     */
   def name(): String = js.native
+  
   /**
     * Returns the `namespaces` making up this Key.
     */
   def namespaces(): js.Array[String] = js.native
+  
   /**
     * Returns the `parent` Key of this Key.
     *
@@ -114,6 +126,7 @@ class Key protected () extends js.Object {
     * // => Key("/Comedy/MontyPython")
     */
   def parent(): Key = js.native
+  
   /**
     * Returns the "path" of this key (parent + type).
     *
@@ -122,6 +135,7 @@ class Key protected () extends js.Object {
     * // => Key('/Comedy/MontyPython/Actor')
     */
   def path(): Key = js.native
+  
   /**
     * Returns the key with all parts in reversed order.
     *
@@ -130,11 +144,17 @@ class Key protected () extends js.Object {
     * // => Key('/Actor:JohnCleese/MontyPython/Comedy')
     */
   def reverse(): Key = js.native
+  
   /**
     * Return the buffer representation of the key
     */
   def toBuffer(): Buffer = js.native
+  
   def toString(encoding: String): String = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  var toStringTag: js.Function0[String] = js.native
+  
   /**
     * Returns the "type" of this key (value of last namespace).
     *
@@ -144,15 +164,16 @@ class Key protected () extends js.Object {
     */
   def `type`(): String = js.native
 }
-
 /* static members */
 @JSImport("interface-datastore", "Key")
 @js.native
 object Key extends js.Object {
+  
   /**
     * Returns whether the input is a valid Key.
     */
   def isKey(key: js.Any): Boolean = js.native
+  
   /**
     * Returns a randomly (uuid) generated key.
     *
@@ -162,6 +183,7 @@ object Key extends js.Object {
     *
     */
   def random(): Key = js.native
+  
   /**
     * Constructs a key out of a namespace array.
     *
@@ -173,4 +195,3 @@ object Key extends js.Object {
     */
   def withNamespaces(list: js.Array[String]): Key = js.native
 }
-

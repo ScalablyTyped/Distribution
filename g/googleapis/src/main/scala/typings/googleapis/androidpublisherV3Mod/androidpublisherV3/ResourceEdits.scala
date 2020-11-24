@@ -6,22 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits")
 @js.native
 class ResourceEdits protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var apks: ResourceEditsApks = js.native
+  
   var bundles: ResourceEditsBundles = js.native
-  var context: APIRequestContext = js.native
-  var deobfuscationfiles: ResourceEditsDeobfuscationfiles = js.native
-  var details: ResourceEditsDetails = js.native
-  var expansionfiles: ResourceEditsExpansionfiles = js.native
-  var images: ResourceEditsImages = js.native
-  var listings: ResourceEditsListings = js.native
-  var testers: ResourceEditsTesters = js.native
-  var tracks: ResourceEditsTracks = js.native
+  
   /**
     * androidpublisher.edits.commit
     * @desc Commits/applies the changes made in this edit back to the app.
@@ -51,6 +46,9 @@ class ResourceEdits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppEdit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.delete
     * @desc Deletes an edit for an app. Creating a new edit will automatically
@@ -78,6 +76,13 @@ class ResourceEdits protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceEditsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEditsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
+  var deobfuscationfiles: ResourceEditsDeobfuscationfiles = js.native
+  
+  var details: ResourceEditsDetails = js.native
+  
+  var expansionfiles: ResourceEditsExpansionfiles = js.native
+  
   /**
     * androidpublisher.edits.get
     * @desc Returns information about the edit specified. Calls will fail if
@@ -109,6 +114,9 @@ class ResourceEdits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppEdit]
   ): Unit = js.native
+  
+  var images: ResourceEditsImages = js.native
+  
   /**
     * androidpublisher.edits.insert
     * @desc Creates a new edit for an app, populated with the app's current
@@ -139,6 +147,13 @@ class ResourceEdits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppEdit]
   ): Unit = js.native
+  
+  var listings: ResourceEditsListings = js.native
+  
+  var testers: ResourceEditsTesters = js.native
+  
+  var tracks: ResourceEditsTracks = js.native
+  
   /**
     * androidpublisher.edits.validate
     * @desc Checks that the edit can be successfully committed. The edit's
@@ -170,4 +185,3 @@ class ResourceEdits protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAppEdit]
   ): Unit = js.native
 }
-

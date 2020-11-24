@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Geometry represents a model. It consists of two components:
@@ -25,24 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Geometry extends js.Object {
-  /**
-    * A map of renderer IDs to webgl VAOs
-    *
-    * @protected
-    * @type {object}
-    */
-  var glVertexArrayObjects: js.Any = js.native
-  /**
-    * Number of instances in this geometry, pass it to `GeometrySystem.draw()`
-    * @member {number} PIXI.Geometry#instanceCount
-    * @default 1
-    */
-  var instanceCount: Double = js.native
-  /**
-    * Count of existing (not destroyed) meshes that reference this geometry
-    * @member {number} PIXI.Geometry#refCount
-    */
-  var refCount: Double = js.native
+  
   /**
     *
     * Adds an attribute to the geometry
@@ -69,6 +52,7 @@ trait Geometry extends js.Object {
     start: js.UndefOr[Double],
     instance: js.UndefOr[Boolean]
   ): Geometry = js.native
+  
   /**
     *
     * Adds an index buffer to the geometry
@@ -80,14 +64,17 @@ trait Geometry extends js.Object {
   def addIndex(): Geometry = js.native
   def addIndex(buffer: js.Array[Double]): Geometry = js.native
   def addIndex(buffer: Buffer): Geometry = js.native
+  
   /**
     * Destroys the geometry.
     */
   def destroy(): Unit = js.native
+  
   /**
     * disposes WebGL resources that are connected to this geometry
     */
   def dispose(): Unit = js.native
+  
   /**
     * returns the requested attribute
     *
@@ -95,6 +82,7 @@ trait Geometry extends js.Object {
     * @return {PIXI.Attribute} the attribute requested.
     */
   def getAttribute(id: String): Attribute = js.native
+  
   /**
     * returns the requested buffer
     *
@@ -102,12 +90,29 @@ trait Geometry extends js.Object {
     * @return {PIXI.Buffer} the buffer requested.
     */
   def getBuffer(id: String): Buffer = js.native
+  
   /**
     * returns the index buffer
     *
     * @return {PIXI.Buffer} the index buffer.
     */
   def getIndex(): Buffer = js.native
+  
+  /**
+    * A map of renderer IDs to webgl VAOs
+    *
+    * @protected
+    * @type {object}
+    */
+  var glVertexArrayObjects: js.Any = js.native
+  
+  /**
+    * Number of instances in this geometry, pass it to `GeometrySystem.draw()`
+    * @member {number} PIXI.Geometry#instanceCount
+    * @default 1
+    */
+  var instanceCount: Double = js.native
+  
   /**
     * this function modifies the structure so that all current attributes become interleaved into a single buffer
     * This can be useful if your model remains static as it offers a little performance boost
@@ -115,5 +120,10 @@ trait Geometry extends js.Object {
     * @return {PIXI.Geometry} returns self, useful for chaining.
     */
   def interleave(): Geometry = js.native
+  
+  /**
+    * Count of existing (not destroyed) meshes that reference this geometry
+    * @member {number} PIXI.Geometry#refCount
+    */
+  var refCount: Double = js.native
 }
-

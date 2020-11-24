@@ -2,7 +2,7 @@ package typings.chromeApps.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type definitions for Chrome packaged application development
 // Project: http://developer.chrome.com/apps/
@@ -22,4 +22,3 @@ import scala.scalajs.js.annotation._
 /** Create a new element */
 class HTMLWebViewElement ()
   extends typings.chromeApps.HTMLWebViewElement
-

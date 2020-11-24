@@ -1,7 +1,7 @@
 
 # Scala.js typings for yt-player
 
-Typings are for version 3.4
+Typings are for version 3.5
 
 ## Library description:
 Simple, robust YouTube Iframe Player API
@@ -10,9 +10,9 @@ Simple, robust YouTube Iframe Player API
 | ------------------ | :-------------: |
 | Full name          | yt-player |
 | Keywords           | youtube, youtube player, player, iframe, api, youtube api, youtube iframe api, iframe api, yt player, yt-player, youtube embed |
-| # releases         | 14 |
+| # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 55244 |
+| # downloads        | 64542 |
 | # stars            | 3 |
 
 ## Links

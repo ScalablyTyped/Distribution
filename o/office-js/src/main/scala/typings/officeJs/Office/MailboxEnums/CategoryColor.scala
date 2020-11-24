@@ -2,11 +2,10 @@ package typings.officeJs.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CategoryColor extends js.Object
-
 /**
   * Specifies the category color.
   * 
@@ -22,6 +21,7 @@ sealed trait CategoryColor extends js.Object
 @JSGlobal("Office.MailboxEnums.CategoryColor")
 @js.native
 object CategoryColor extends js.Object {
+  
   /**
     * Default color or no color mapped.
     */
@@ -177,6 +177,4 @@ object CategoryColor extends js.Object {
     */
   @js.native
   sealed trait Preset9 extends CategoryColor
-  
 }
-

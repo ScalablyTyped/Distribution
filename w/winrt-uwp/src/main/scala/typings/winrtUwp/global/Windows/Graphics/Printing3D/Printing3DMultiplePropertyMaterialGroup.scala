@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Graphics.Printing3D
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a multi-property material group. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterialGroup")
@@ -15,4 +15,3 @@ class Printing3DMultiplePropertyMaterialGroup protected ()
     */
   def this(MaterialGroupId: Double) = this()
 }
-

@@ -10,9 +10,9 @@ React component to parse links (urls, emails, etc.) in text into clickable links
 | ------------------ | :-------------: |
 | Full name          | react-linkify |
 | Keywords           | react-linkify, react, linkify, react-component, link, url, email, autolink, urlize, urlify |
-| # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 2867873 |
+| # releases         | 2 |
+| # dependents       | 62 |
+| # downloads        | 4295206 |
 | # stars            | 6 |
 
 ## Links

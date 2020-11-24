@@ -2,11 +2,12 @@ package typings.skyway
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class DataConnection ()
     extends typings.skyway.DataConnection
@@ -29,6 +30,4 @@ object global extends js.Object {
   @js.native
   class SFURoom ()
     extends typings.skyway.SFURoom
-  
 }
-

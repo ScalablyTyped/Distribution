@@ -10,9 +10,9 @@ An ORM for Node.js and the Sails framework
 | ------------------ | :-------------: |
 | Full name          | waterline |
 | Keywords           | mvc, orm, mysql, postgresql, redis, mongodb, active-record, waterline, sails, sails.js |
-| # releases         | 16 |
-| # dependents       | 156 |
-| # downloads        | 1680810 |
+| # releases         | 10 |
+| # dependents       | 151 |
+| # downloads        | 1602412 |
 | # stars            | 67 |
 
 ## Links

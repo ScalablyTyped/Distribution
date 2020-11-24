@@ -5,11 +5,12 @@ import typings.node.NodeJS.ReadableStream
 import typings.qiniu.mod.callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "rpc.postWithForm")
 @js.native
 object postWithForm extends js.Object {
+  
   def apply(requestURI: String, requestForm: String, token: String, callback: callback): Unit = js.native
   def apply(requestURI: String, requestForm: String, token: Null, callback: callback): Unit = js.native
   def apply(requestURI: String, requestForm: Null, token: String, callback: callback): Unit = js.native
@@ -26,4 +27,3 @@ object postWithForm extends js.Object {
   def apply(requestURI: String, requestForm: ReadableStream, token: String, callback: callback): Unit = js.native
   def apply(requestURI: String, requestForm: ReadableStream, token: Null, callback: callback): Unit = js.native
 }
-

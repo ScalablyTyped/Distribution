@@ -2,15 +2,15 @@ package typings.languageTags.tagMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCode extends js.Object
-
 // These are really static integers assigned to Tag.
 @JSImport("language-tags/Tag", "ErrorCode")
 @js.native
 object ErrorCode extends js.Object {
+  
   @js.native
   sealed trait ERR_DEPRECATED extends ErrorCode
   
@@ -46,6 +46,4 @@ object ErrorCode extends js.Object {
   
   @js.native
   sealed trait ERR_WRONG_ORDER extends ErrorCode
-  
 }
-

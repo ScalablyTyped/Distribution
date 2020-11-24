@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link NumberFormatter} service to implement.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait XNumberFormatter2
   extends XNumberFormatter
      with XNumberFormatPreviewer
-
 object XNumberFormatter2 {
+  
   @scala.inline
   def apply(
     NumberFormatsSupplier: XNumberFormatsSupplier,
@@ -38,4 +38,3 @@ object XNumberFormatter2 {
     __obj.asInstanceOf[XNumberFormatter2]
   }
 }
-

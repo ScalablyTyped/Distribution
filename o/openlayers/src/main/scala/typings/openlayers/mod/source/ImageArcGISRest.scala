@@ -5,7 +5,7 @@ import typings.openlayers.mod.ImageLoadFunctionType
 import typings.openlayers.mod.olx.source.ImageArcGISRestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -37,12 +37,14 @@ import scala.scalajs.js.annotation._
   */
 class ImageArcGISRest () extends Image {
   def this(opt_options: ImageArcGISRestOptions) = this()
+  
   /**
     * Return the image load function of the source.
     * @return The image load function.
     * @api
     */
   def getImageLoadFunction(): ImageLoadFunctionType = js.native
+  
   /**
     * Get the user-provided params, i.e. those passed to the constructor through
     * the "params" option, and possibly updated using the updateParams method.
@@ -50,24 +52,28 @@ class ImageArcGISRest () extends Image {
     * @api stable
     */
   def getParams(): GlobalObject = js.native
+  
   /**
     * Return the URL used for this ArcGIS source.
     * @return URL.
     * @api stable
     */
   def getUrl(): String = js.native
+  
   /**
     * Set the image load function of the source.
     * @param imageLoadFunction Image load function.
     * @api
     */
   def setImageLoadFunction(imageLoadFunction: ImageLoadFunctionType): Unit = js.native
+  
   /**
     * Set the URL to use for requests.
     * @param url URL.
     * @api stable
     */
   def setUrl(url: String): Unit = js.native
+  
   /**
     * Update the user-provided params.
     * @param params Params.
@@ -75,4 +81,3 @@ class ImageArcGISRest () extends Image {
     */
   def updateParams(params: GlobalObject): Unit = js.native
 }
-

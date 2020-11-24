@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tictactoejs"
-version := "1.0-dt-20200331Z-c2ef3f"
+version := "1.0-dt-20200331Z-f2d3ca"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

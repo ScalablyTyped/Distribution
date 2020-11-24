@@ -5,15 +5,15 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-add`
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.arcgisJsApi.esri.VertexAddEventInfo
   - typings.arcgisJsApi.esri.CursorUpdateEventInfo
 */
 trait CreateToolEventInfo extends js.Object
-
 object CreateToolEventInfo {
+  
   @scala.inline
   def VertexAddEventInfo(
     added: js.Array[Graphic],
@@ -27,6 +27,7 @@ object CreateToolEventInfo {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateToolEventInfo]
   }
+  
   @scala.inline
   def CursorUpdateEventInfo(
     constructor: js.Function,
@@ -40,4 +41,3 @@ object CreateToolEventInfo {
     __obj.asInstanceOf[CreateToolEventInfo]
   }
 }
-

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription")
 @js.native
@@ -21,20 +21,22 @@ class ProductSubscription protected () extends CustomResource {
     */
   def this(name: String, args: ProductSubscriptionArgs) = this()
   def this(name: String, args: ProductSubscriptionArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of a resource that represents your subscription to the product that generates the findings that you want to import into Security Hub.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The ARN of the product that generates findings that you want to import into Security Hub - see below.
     */
   val productArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription")
 @js.native
 object ProductSubscription extends js.Object {
+  
   /**
     * Get an existing ProductSubscription resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object ProductSubscription extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ProductSubscription = js.native
   def get(name: String, id: Input[ID], state: ProductSubscriptionState): ProductSubscription = js.native
   def get(name: String, id: Input[ID], state: ProductSubscriptionState, opts: CustomResourceOptions): ProductSubscription = js.native
+  
   /**
     * Returns true if the given object is an instance of ProductSubscription.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.chromecastCafSender.cast.framework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SessionEventType extends js.Object
-
 @JSGlobal("cast.framework.SessionEventType")
 @js.native
 object SessionEventType extends js.Object {
+  
   @js.native
   sealed trait ACTIVE_INPUT_STATE_CHANGED extends SessionEventType
   
@@ -24,6 +24,4 @@ object SessionEventType extends js.Object {
   
   @js.native
   sealed trait VOLUME_CHANGED extends SessionEventType
-  
 }
-

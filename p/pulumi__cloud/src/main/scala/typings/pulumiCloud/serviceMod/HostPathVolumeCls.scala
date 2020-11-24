@@ -2,7 +2,7 @@ package typings.pulumiCloud.serviceMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud/service", "HostPathVolume")
 @js.native
@@ -12,4 +12,3 @@ class HostPathVolumeCls protected () extends HostPathVolume {
     */
   def this(path: String) = this()
 }
-

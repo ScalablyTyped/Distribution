@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Play EMM API
@@ -27,22 +27,38 @@ import scala.scalajs.js.annotation._
 class Androidenterprise protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var devices: ResourceDevices = js.native
+  
   var enterprises: ResourceEnterprises = js.native
+  
   var entitlements: ResourceEntitlements = js.native
+  
   var grouplicenses: ResourceGrouplicenses = js.native
+  
   var grouplicenseusers: ResourceGrouplicenseusers = js.native
+  
   var installs: ResourceInstalls = js.native
+  
   var managedconfigurationsfordevice: ResourceManagedconfigurationsfordevice = js.native
+  
   var managedconfigurationsforuser: ResourceManagedconfigurationsforuser = js.native
+  
   var managedconfigurationssettings: ResourceManagedconfigurationssettings = js.native
+  
   var permissions: ResourcePermissions = js.native
+  
   var products: ResourceProducts = js.native
+  
   var serviceaccountkeys: ResourceServiceaccountkeys = js.native
+  
   var storelayoutclusters: ResourceStorelayoutclusters = js.native
+  
   var storelayoutpages: ResourceStorelayoutpages = js.native
+  
   var users: ResourceUsers = js.native
+  
   var webapps: ResourceWebapps = js.native
 }
-

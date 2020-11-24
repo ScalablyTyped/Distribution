@@ -2,56 +2,85 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CascadedShadowGenerator extends ShadowGenerator {
+  
   var _autoCalcDepthBounds: js.Any = js.native
+  
   var _breaksAreDirty: Boolean = js.native
+  
   var _cascadeBlendPercentage: js.Any = js.native
+  
   var _cascadeMaxExtents: js.Any = js.native
+  
   var _cascadeMinExtents: js.Any = js.native
+  
   var _cascades: js.Any = js.native
+  
   var _computeCascadeFrustum: js.Any = js.native
+  
   var _computeFrustumInWorldSpace: js.Any = js.native
+  
   var _computeMatrices: js.Any = js.native
-  var _currentLayer: js.Any = js.native
-  var _debug: Boolean = js.native
-  var _depthClamp: js.Any = js.native
-  var _depthCorrection: js.Any = js.native
-  var _depthReducer: js.Any = js.native
-  var _depthRenderer: js.Any = js.native
-  var _freezeShadowCastersBoundingInfo: js.Any = js.native
-  var _freezeShadowCastersBoundingInfoObservable: js.Any = js.native
-  var _frustumCenter: js.Any = js.native
-  var _frustumCornersWorldSpace: js.Any = js.native
-  var _frustumLengths: js.Any = js.native
-  var _lambda: js.Any = js.native
-  var _lightSizeUVCorrection: js.Any = js.native
-  var _maxDistance: Double = js.native
-  var _minDistance: Double = js.native
-  var _numCascades: js.Any = js.native
-  var _projectionMatrices: js.Any = js.native
-  var _scbiMax: js.Any = js.native
-  var _scbiMin: js.Any = js.native
-  var _shadowCameraPos: js.Any = js.native
-  var _shadowCastersBoundingInfo: BoundingInfo = js.native
-  var _shadowMaxZ: js.Any = js.native
-  var _splitFrustum: js.Any = js.native
-  var _transformMatrices: js.Any = js.native
-  var _transformMatricesAsArray: js.Any = js.native
-  var _viewMatrices: js.Any = js.native
-  var _viewSpaceFrustumsZ: js.Any = js.native
-  /**
-    * Gets or sets the actual darkness of the soft shadows while using PCSS filtering (value between 0. and 1.)
-    */
-  var penumbraDarkness: Double = js.native
-  /**
-    * Sets this to true if you want that the edges of the shadows don't "swimm" / "shimmer" when rotating the camera.
-    * The trade off is that you loose some precision in the shadow rendering when enabling this setting.
-    */
-  var stabilizeCascades: Boolean = js.native
+  
   /* protected */ def _computeShadowCastersBoundingInfo(): Unit = js.native
+  
+  var _currentLayer: js.Any = js.native
+  
+  var _debug: Boolean = js.native
+  
+  var _depthClamp: js.Any = js.native
+  
+  var _depthCorrection: js.Any = js.native
+  
+  var _depthReducer: js.Any = js.native
+  
+  var _depthRenderer: js.Any = js.native
+  
+  var _freezeShadowCastersBoundingInfo: js.Any = js.native
+  
+  var _freezeShadowCastersBoundingInfoObservable: js.Any = js.native
+  
+  var _frustumCenter: js.Any = js.native
+  
+  var _frustumCornersWorldSpace: js.Any = js.native
+  
+  var _frustumLengths: js.Any = js.native
+  
+  var _lambda: js.Any = js.native
+  
+  var _lightSizeUVCorrection: js.Any = js.native
+  
+  var _maxDistance: Double = js.native
+  
+  var _minDistance: Double = js.native
+  
+  var _numCascades: js.Any = js.native
+  
+  var _projectionMatrices: js.Any = js.native
+  
+  var _scbiMax: js.Any = js.native
+  
+  var _scbiMin: js.Any = js.native
+  
+  var _shadowCameraPos: js.Any = js.native
+  
+  var _shadowCastersBoundingInfo: BoundingInfo = js.native
+  
+  var _shadowMaxZ: js.Any = js.native
+  
+  var _splitFrustum: js.Any = js.native
+  
+  var _transformMatrices: js.Any = js.native
+  
+  var _transformMatricesAsArray: js.Any = js.native
+  
+  var _viewMatrices: js.Any = js.native
+  
+  var _viewSpaceFrustumsZ: js.Any = js.native
+  
   /**
     * Gets or sets the autoCalcDepthBounds property.
     *
@@ -62,7 +91,7 @@ trait CascadedShadowGenerator extends ShadowGenerator {
     * When using this option, you should increase the value of the lambda parameter, and even set it to 1 for best results.
     */
   def autoCalcDepthBounds: Boolean = js.native
-  def autoCalcDepthBounds(value: Boolean): js.Any = js.native
+  
   /**
     * Defines the refresh rate of the min/max computation used when autoCalcDepthBounds is set to true
     * Use 0 to compute just once, 1 to compute on every frame, 2 to compute every two frames and so on...
@@ -70,19 +99,24 @@ trait CascadedShadowGenerator extends ShadowGenerator {
     * for setting the refresh rate on the renderer yourself!
     */
   def autoCalcDepthBoundsRefreshRate: Double = js.native
-  def autoCalcDepthBoundsRefreshRate(value: Double): js.Any = js.native
+  def autoCalcDepthBoundsRefreshRate_=(value: Double): Unit = js.native
+  
+  def autoCalcDepthBounds_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets or sets the percentage of blending between two cascades (value between 0. and 1.).
     * It defaults to 0.1 (10% blending).
     */
   def cascadeBlendPercentage: Double = js.native
-  def cascadeBlendPercentage(value: Double): js.Any = js.native
+  def cascadeBlendPercentage_=(value: Double): Unit = js.native
+  
   /**
     * Gets or sets the debug flag.
     * When enabled, the cascades are materialized by different colors on the screen.
     */
   def debug: Boolean = js.native
-  def debug(dbg: Boolean): js.Any = js.native
+  def debug_=(dbg: Boolean): Unit = js.native
+  
   /**
     * Gets or sets the depth clamping value.
     *
@@ -92,44 +126,51 @@ trait CascadedShadowGenerator extends ShadowGenerator {
     * Note that this property is incompatible with PCSS filtering, so it won't be used in that case.
     */
   def depthClamp: Boolean = js.native
-  def depthClamp(value: Boolean): js.Any = js.native
+  def depthClamp_=(value: Boolean): Unit = js.native
+  
   /**
     * Enables or disables the shadow casters bounding info computation.
     * If your shadow casters don't move, you can disable this feature.
     * If it is enabled, the bounding box computation is done every frame.
     */
   def freezeShadowCastersBoundingInfo: Boolean = js.native
-  def freezeShadowCastersBoundingInfo(freeze: Boolean): js.Any = js.native
+  def freezeShadowCastersBoundingInfo_=(freeze: Boolean): Unit = js.native
+  
   /**
     * Gets a cascade maximum extents
     * @param cascadeIndex index of the cascade
     * @returns the maximum cascade extents
     */
   def getCascadeMaxExtents(cascadeIndex: Double): Nullable[Vector3] = js.native
+  
   /**
     * Gets a cascade minimum extents
     * @param cascadeIndex index of the cascade
     * @returns the minimum cascade extents
     */
   def getCascadeMinExtents(cascadeIndex: Double): Nullable[Vector3] = js.native
+  
   /**
     * Gets the projection matrix corresponding to a given cascade
     * @param cascadeNum cascade to retrieve the projection matrix from
     * @returns the cascade projection matrix
     */
   def getCascadeProjectionMatrix(cascadeNum: Double): Nullable[Matrix] = js.native
+  
   /**
     * Gets the transformation matrix corresponding to a given cascade
     * @param cascadeNum cascade to retrieve the transformation matrix from
     * @returns the cascade transformation matrix
     */
   def getCascadeTransformMatrix(cascadeNum: Double): Nullable[Matrix] = js.native
+  
   /**
     * Gets the view matrix corresponding to a given cascade
     * @param cascadeNum cascade to retrieve the view matrix from
     * @returns the cascade view matrix
     */
   def getCascadeViewMatrix(cascadeNum: Double): Nullable[Matrix] = js.native
+  
   /**
     * Gets or set the lambda parameter.
     * This parameter is used to split the camera frustum and create the cascades.
@@ -137,16 +178,25 @@ trait CascadedShadowGenerator extends ShadowGenerator {
     * For all values in-between, it's a linear combination of the uniform and logarithm split algorithm.
     */
   def lambda: Double = js.native
-  def lambda(value: Double): js.Any = js.native
+  def lambda_=(value: Double): Unit = js.native
+  
   /** Gets the maximal distance used in the cascade break computation */
   def maxDistance: Double = js.native
+  
   /** Gets the minimal distance used in the cascade break computation */
   def minDistance: Double = js.native
+  
   /**
     * Gets or set the number of cascades used by the CSM.
     */
   def numCascades: Double = js.native
-  def numCascades(value: Double): js.Any = js.native
+  def numCascades_=(value: Double): Unit = js.native
+  
+  /**
+    * Gets or sets the actual darkness of the soft shadows while using PCSS filtering (value between 0. and 1.)
+    */
+  var penumbraDarkness: Double = js.native
+  
   /**
     * Sets the depth renderer to use when autoCalcDepthBounds is enabled.
     *
@@ -157,6 +207,7 @@ trait CascadedShadowGenerator extends ShadowGenerator {
     * @param depthRenderer The depth renderer to use when autoCalcDepthBounds is enabled. If you pass null or don't call this function at all, a depth renderer will be automatically created
     */
   def setDepthRenderer(depthRenderer: Nullable[DepthRenderer]): Unit = js.native
+  
   /**
     * Sets the minimal and maximal distances to use when computing the cascade breaks.
     *
@@ -166,13 +217,15 @@ trait CascadedShadowGenerator extends ShadowGenerator {
     * @param max maximal distance for the breaks (default to 1.)
     */
   def setMinMaxDistance(min: Double, max: Double): Unit = js.native
+  
   /**
     * Gets or sets the shadow casters bounding info.
     * If you provide your own shadow casters bounding info, first enable freezeShadowCastersBoundingInfo
     * so that the system won't overwrite the bounds you provide
     */
   def shadowCastersBoundingInfo: BoundingInfo = js.native
-  def shadowCastersBoundingInfo(boundingInfo: BoundingInfo): js.Any = js.native
+  def shadowCastersBoundingInfo_=(boundingInfo: BoundingInfo): Unit = js.native
+  
   /**
     * Gets the shadow max z distance. It's the limit beyond which shadows are not displayed.
     * It defaults to camera.maxZ
@@ -181,12 +234,18 @@ trait CascadedShadowGenerator extends ShadowGenerator {
   /**
     * Sets the shadow max z distance.
     */
-  def shadowMaxZ(value: Double): js.Any = js.native
+  def shadowMaxZ_=(value: Double): Unit = js.native
+  
   /**
     * Create the cascade breaks according to the lambda, shadowMaxZ and min/max distance properties, as well as the camera near and far planes.
     * This function is automatically called when updating lambda, shadowMaxZ and min/max distances, however you should call it yourself if
     * you change the camera near/far planes!
     */
   def splitFrustum(): Unit = js.native
+  
+  /**
+    * Sets this to true if you want that the edges of the shadows don't "swimm" / "shimmer" when rotating the camera.
+    * The trade off is that you lose some precision in the shadow rendering when enabling this setting.
+    */
+  var stabilizeCascades: Boolean = js.native
 }
-

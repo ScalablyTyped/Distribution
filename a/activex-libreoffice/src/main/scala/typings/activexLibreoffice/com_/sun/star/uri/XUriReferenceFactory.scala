@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * creates URI references.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XUriReferenceFactory extends XInterface {
+  
   /**
     * resolves a relative URI reference to absolute form.
     * @param baseUriReference the base URI reference. If the given `uriReference` is a same-document reference, `baseUriReference` is used as a reference to t
@@ -28,6 +29,7 @@ trait XUriReferenceFactory extends XInterface {
     processSpecialBaseSegments: Boolean,
     excessParentSegments: RelativeUriExcessParentSegments
   ): XUriReference = js.native
+  
   /**
     * changes an absolute URI reference to relative form.
     * @param baseUriReference the base URI reference.
@@ -44,6 +46,7 @@ trait XUriReferenceFactory extends XInterface {
     preferAbsoluteOverRelativePath: Boolean,
     encodeRetainedSpecialSegments: Boolean
   ): XUriReference = js.native
+  
   /**
     * parses the textual representation of a URI reference.
     * @param uriReference the textual representation of a URI reference.
@@ -51,8 +54,8 @@ trait XUriReferenceFactory extends XInterface {
     */
   def parse(uriReference: String): XUriReference = js.native
 }
-
 object XUriReferenceFactory {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -65,24 +68,29 @@ object XUriReferenceFactory {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), makeAbsolute = js.Any.fromFunction4(makeAbsolute), makeRelative = js.Any.fromFunction5(makeRelative), parse = js.Any.fromFunction1(parse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUriReferenceFactory]
   }
+  
   @scala.inline
   implicit class XUriReferenceFactoryOps[Self <: XUriReferenceFactory] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMakeAbsolute(value: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference): Self = this.set("makeAbsolute", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setMakeRelative(value: (XUriReference, XUriReference, Boolean, Boolean, Boolean) => XUriReference): Self = this.set("makeRelative", js.Any.fromFunction5(value))
+    
     @scala.inline
     def setParse(value: String => XUriReference): Self = this.set("parse", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -2,15 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConnectionStateType extends js.Object
-
 /** An enumeration listing the different states that a connection can have. */
 @JSGlobal("connect.ConnectionStateType")
 @js.native
 object ConnectionStateType extends js.Object {
+  
   /** The connection is connected to the contact. */
   @js.native
   sealed trait CONNECTED extends ConnectionStateType
@@ -30,6 +30,4 @@ object ConnectionStateType extends js.Object {
   /** The connection has not yet been initialized. */
   @js.native
   sealed trait INIT extends ConnectionStateType
-  
 }
-

@@ -4,7 +4,7 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsOrdersV3OrderUpdate
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2OrdersOrderUpdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "OrderUpdate")
 @js.native
@@ -19,4 +19,3 @@ class OrderUpdate protected ()
     */
   def this(options: GoogleActionsV2OrdersOrderUpdate) = this()
 }
-

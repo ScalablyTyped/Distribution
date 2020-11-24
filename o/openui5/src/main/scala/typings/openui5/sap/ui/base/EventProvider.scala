@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.base
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventProvider extends Object {
+  
   /**
     * Attaches an event handler to the event with the given identifier.
     * @param sEventId The identifier of the event to listen for
@@ -23,6 +24,7 @@ trait EventProvider extends Object {
     */
   def attachEvent(sEventId: String, oData: js.Any, fnFunction: js.Any): EventProvider = js.native
   def attachEvent(sEventId: String, oData: js.Any, fnFunction: js.Any, oListener: js.Any): EventProvider = js.native
+  
   /**
     * Attaches an event handler, called one time only, to the event with the given identifier.When the
     * event occurs, the handler function is called and the handler registration is automatically removed
@@ -42,6 +44,7 @@ trait EventProvider extends Object {
     */
   def attachEventOnce(sEventId: String, oData: js.Any, fnFunction: js.Any): EventProvider = js.native
   def attachEventOnce(sEventId: String, oData: js.Any, fnFunction: js.Any, oListener: js.Any): EventProvider = js.native
+  
   /**
     * Removes a previously attached event handler from the event with the given identifier.The passed
     * parameters must match those used for registration with {@link #attachEvent} beforehand.
@@ -52,6 +55,7 @@ trait EventProvider extends Object {
     */
   def detachEvent(sEventId: String, fnFunction: js.Any): EventProvider = js.native
   def detachEvent(sEventId: String, fnFunction: js.Any, oListener: js.Any): EventProvider = js.native
+  
   /**
     * Fires an {@link sap.ui.base.Event event} with the given settings and notifies all attached event
     * handlers.
@@ -95,6 +99,7 @@ trait EventProvider extends Object {
     bAllowPreventDefault: Boolean,
     bEnableEventBubbling: Boolean
   ): EventProvider | Boolean = js.native
+  
   /**
     * Returns the parent in the eventing hierarchy of this object.Per default this returns null, but if
     * eventing is used in objects, which are hierarchicallystructured, this can be overwritten to make the
@@ -103,6 +108,7 @@ trait EventProvider extends Object {
     * @returns The parent event provider
     */
   def getEventingParent(): EventProvider = js.native
+  
   /**
     * Returns whether there are any registered event handlers for the event with the given identifier.
     * @param sEventId The identifier of the event
@@ -110,4 +116,3 @@ trait EventProvider extends Object {
     */
   def hasListeners(sEventId: String): Boolean = js.native
 }
-

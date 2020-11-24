@@ -12,15 +12,15 @@ import typings.babelTypes.babelTypesStrings.typeof
 import typings.babelTypes.babelTypesStrings.void
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.UnaryExpression_
   - typings.babelTypes.mod.SpreadElement_
 */
 trait UnaryLike extends _Node
-
 object UnaryLike {
+  
   @scala.inline
   def UnaryExpression_(
     argument: Expression,
@@ -32,6 +32,7 @@ object UnaryLike {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnaryLike]
   }
+  
   @scala.inline
   def SpreadElement_(argument: Expression, `type`: SpreadElement): UnaryLike = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
@@ -39,4 +40,3 @@ object UnaryLike {
     __obj.asInstanceOf[UnaryLike]
   }
 }
-

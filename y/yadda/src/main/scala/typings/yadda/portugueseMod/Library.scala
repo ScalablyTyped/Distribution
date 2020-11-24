@@ -4,11 +4,12 @@ import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Library
   extends typings.yadda.englishMod.Library {
+  
   def dada(
     step: String,
     fn: js.Function1[
@@ -207,6 +208,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def dadas(
     step: String,
     fn: js.Function1[
@@ -405,6 +407,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def dado(
     step: String,
     fn: js.Function1[
@@ -603,6 +606,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def dados(
     step: String,
     fn: js.Function1[
@@ -801,6 +805,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def entao(
     step: String,
     fn: js.Function1[
@@ -999,6 +1004,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def quando(
     step: String,
     fn: js.Function1[
@@ -1197,6 +1203,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def se(
     step: String,
     fn: js.Function1[
@@ -1395,6 +1402,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def seja(
     step: String,
     fn: js.Function1[
@@ -1593,6 +1601,7 @@ trait Library
       Unit
     ]
   ): this.type = js.native
+  
   def sejam(
     step: String,
     fn: js.Function1[
@@ -1792,4 +1801,3 @@ trait Library
     ]
   ): this.type = js.native
 }
-

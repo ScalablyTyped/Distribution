@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "typescript-tuple"
-version := "2.2.1-4086bb"
+version := "2.2.1-fc0d5c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13",
-  "org.scalablytyped" %%% "typescript-compare" % "0.0.2-20f1c0",
-  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-8f0d3a")
+  "org.scalablytyped" %%% "std" % "4.1-c651d0",
+  "org.scalablytyped" %%% "typescript-compare" % "0.0.2-b911ce",
+  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-198520")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

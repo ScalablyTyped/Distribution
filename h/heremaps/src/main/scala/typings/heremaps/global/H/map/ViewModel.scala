@@ -2,7 +2,7 @@ package typings.heremaps.global.H.map
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a view of the map. It consists of a virtual camera and a look-at point both of which have a position in geo-space and orientation angles. The view model allows to
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ViewModel ()
   extends typings.heremaps.H.map.ViewModel
-
 @JSGlobal("H.map.ViewModel")
 @js.native
 object ViewModel extends js.Object {
+  
   /**
     * Update event is fired whenever view model data is changed. It contains property which hold currently requested data
     * @fixme find documentation and update constructor typings
@@ -33,6 +33,4 @@ object ViewModel extends js.Object {
       */
     def this(requested: js.Any) = this()
   }
-  
 }
-

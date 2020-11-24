@@ -12,7 +12,7 @@ BunnyMq is a RabbitMq wrapper
 | Keywords           | rabbitmq, broker, amqp, taskQueue, message, publish, subscribe |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 32786 |
+| # downloads        | 33548 |
 | # stars            | 2 |
 
 ## Links

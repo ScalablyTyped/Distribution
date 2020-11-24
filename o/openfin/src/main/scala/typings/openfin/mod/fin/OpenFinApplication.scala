@@ -2,7 +2,7 @@ package typings.openfin.mod.fin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Application
@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OpenFinApplication extends js.Object {
-  /**
-    * The Application's uuid
-    */
-  var uuid: String = js.native
+  
   /**
     * Registers an event listener on the specified event.
     */
@@ -50,6 +47,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Closes the application and any child windows created by the application.
     */
@@ -77,6 +75,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array of wrapped fin.desktop.Windows for each of the application's child windows.
     */
@@ -87,6 +86,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* children */ js.Array[OpenFinWindow], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array of active window groups for all of the application's windows. Each group is represented as an array of wrapped fin.desktop.Windows.
     */
@@ -97,6 +97,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* groups */ js.Array[js.Array[OpenFinWindow]], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves information about the application.
     */
@@ -107,6 +108,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* info */ LaunchInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the JSON manifest that was used to create the application. Invokes the error callback if the application was not created from a manifest.
     */
@@ -117,6 +119,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* manifest */ js.Any, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves UUID of the application that launches this application. Invokes the error callback if the application was created from a manifest.
     */
@@ -127,6 +130,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* uuid */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves current configuration of application's shortcuts.
     */
@@ -137,6 +141,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* config */ ShortCutConfig, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves information about the system tray.
     */
@@ -147,10 +152,12 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* trayInfo */ TrayInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns an instance of the main Window of the application
     */
   def getWindow(): OpenFinWindow = js.native
+  
   /**
     * Returns the current zoom level of the application.
     */
@@ -161,6 +168,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* level */ Double, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Determines if the application is currently running.
     */
@@ -171,6 +179,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* running */ Boolean, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Registers a username and an app name for licensing purposes.
     */
@@ -188,6 +197,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Removes a previously registered event listener from the specified event.
     */
@@ -224,6 +234,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Removes the application's icon from the tray.
     */
@@ -231,6 +242,7 @@ trait OpenFinApplication extends js.Object {
   def removeTrayIcon(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def removeTrayIcon(callback: js.Function0[Unit]): Unit = js.native
   def removeTrayIcon(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Restarts the application.
     */
@@ -238,6 +250,7 @@ trait OpenFinApplication extends js.Object {
   def restart(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def restart(callback: js.Function0[Unit]): Unit = js.native
   def restart(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Runs the application. When the application is created, run must be called.
     */
@@ -251,6 +264,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* successObj */ SuccessObj, Unit],
     errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Tells the rvm to relaunch the main application once upon a complete shutdown
     */
@@ -258,6 +272,7 @@ trait OpenFinApplication extends js.Object {
   def scheduleRestart(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def scheduleRestart(callback: js.Function0[Unit]): Unit = js.native
   def scheduleRestart(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Sends a message to the RVM to upload the application's logs. On success, an object containing logId is returned.
     */
@@ -268,6 +283,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function1[/* logInfo */ applicationLogInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Sets an associated username with that app for Application Log Management use
     */
@@ -283,6 +299,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Sets new shortcut configuration for current application.
     * Application has to be launched with a manifest and has to have shortcut configuration (icon url, name, etc.) in its manifest to
@@ -300,6 +317,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Adds a customizable icon in the system tray and notifies the application when clicked.
     */
@@ -321,6 +339,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the zoom level of the application. The original size is 0 and each increment above or below represents zooming 20%
     * larger or smaller to default limits of 300% and 50% of original size, respectively.
@@ -337,6 +356,7 @@ trait OpenFinApplication extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Closes the application by terminating its process.
     */
@@ -344,8 +364,13 @@ trait OpenFinApplication extends js.Object {
   def terminate(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def terminate(callback: js.Function0[Unit]): Unit = js.native
   def terminate(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
+  /**
+    * The Application's uuid
+    */
+  var uuid: String = js.native
+  
   def wait(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def wait(callback: js.Function0[Unit]): Unit = js.native
   def wait(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/testing/v1", "testing_v1.Resource$Projects$Testmatrices")
 @js.native
 class ResourceProjectsTestmatrices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * testing.projects.testMatrices.cancel
     * @desc Cancels unfinished test executions in a test matrix. This call
@@ -50,6 +50,9 @@ class ResourceProjectsTestmatrices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCancelTestMatrixResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * testing.projects.testMatrices.create
     * @desc Creates and runs a matrix of tests according to the given
@@ -86,6 +89,7 @@ class ResourceProjectsTestmatrices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestMatrix]
   ): Unit = js.native
+  
   /**
     * testing.projects.testMatrices.get
     * @desc Checks the status of a test matrix.  May return any of the
@@ -119,4 +123,3 @@ class ResourceProjectsTestmatrices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestMatrix]
   ): Unit = js.native
 }
-

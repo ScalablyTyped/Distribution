@@ -11,8 +11,8 @@ Recoil - A state management library for React
 | Full name          | recoil |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 16 |
-| # downloads        | 110936 |
+| # dependents       | 31 |
+| # downloads        | 255619 |
 | # stars            | 0 |
 
 ## Links

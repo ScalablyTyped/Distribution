@@ -2,14 +2,14 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feTile> element. */
 @js.native
 trait SVGFETileElement
   extends SVGElement
      with SVGFilterPrimitiveStandardAttributes {
-  val in1: SVGAnimatedString = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -20,6 +20,9 @@ trait SVGFETileElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  val in1: SVGAnimatedString = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -31,4 +34,3 @@ trait SVGFETileElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-

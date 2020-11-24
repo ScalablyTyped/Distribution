@@ -2,12 +2,29 @@ package typings.winrtUwp.global.Windows.Security.Authentication
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables both apps and desktop programs to use Live to authenticate users by using their Microsoft account. After authentication, apps can get back a JSON token with an ID that can be used for that user with your application. */
 @JSGlobal("Windows.Security.Authentication.OnlineId")
 @js.native
 object OnlineId extends js.Object {
+  
+  /** Provides the ability to control when to show or hide the credential prompt user interface. This includes the user interface for the app to collect user consent to access data stored in Live. The user must see the user interface in order for the app to obtain any user data, if not app will see an error when they try to obtain user data. */
+  @js.native
+  object CredentialPromptType extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType with Double
+      ] = js.native
+    
+    /* 2 */ val doNotPrompt: typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.doNotPrompt with Double = js.native
+    
+    /* 0 */ val promptIfNeeded: typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.promptIfNeeded with Double = js.native
+    
+    /* 1 */ val retypeCredentials: typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.retypeCredentials with Double = js.native
+  }
+  
   /** Provides an app with the ability to start the authentication request to get JavaScript Object Notation (JSON) tokens to use with your service or request tickets that can be used to get data that the user has consented to for your app using the Live Connect APIs. */
   @js.native
   /** Creates an instance of the OnlineIdAuthenticator . */
@@ -50,18 +67,4 @@ object OnlineId extends js.Object {
   @js.native
   abstract class UserIdentity ()
     extends typings.winrtUwp.Windows.Security.Authentication.OnlineId.UserIdentity
-  
-  /** Provides the ability to control when to show or hide the credential prompt user interface. This includes the user interface for the app to collect user consent to access data stored in Live. The user must see the user interface in order for the app to obtain any user data, if not app will see an error when they try to obtain user data. */
-  @js.native
-  object CredentialPromptType extends js.Object {
-    /* 2 */ val doNotPrompt: typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.doNotPrompt with Double = js.native
-    /* 0 */ val promptIfNeeded: typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.promptIfNeeded with Double = js.native
-    /* 1 */ val retypeCredentials: typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.retypeCredentials with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType with Double
-      ] = js.native
-  }
-  
 }
-

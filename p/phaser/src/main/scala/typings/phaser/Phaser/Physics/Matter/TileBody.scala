@@ -15,7 +15,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyTileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A wrapper around a Tile that provides access to a corresponding Matter body. A tile can only
@@ -41,18 +41,12 @@ trait TileBody
      with Sleep
      with Static
      with MatterBody {
-  /**
-    * The tile object the body is associated with.
-    */
-  var tile: Tile = js.native
-  /**
-    * The Matter world the body exists within.
-    */
-  var world: World = js.native
+  
   /**
     * Removes the current body from the TileBody and from the Matter world
     */
   def removeBody(): TileBody = js.native
+  
   /**
     * Sets the current body to the given body. This will remove the previous body, if one already
     * exists.
@@ -61,6 +55,7 @@ trait TileBody
     */
   def setBody(body: BodyType): TileBody = js.native
   def setBody(body: BodyType, addToWorld: Boolean): TileBody = js.native
+  
   /**
     * Sets the current body from the collision group associated with the Tile. This is typically
     * set up in Tiled's collision editor.
@@ -75,11 +70,21 @@ trait TileBody
     */
   def setFromTileCollision(): TileBody = js.native
   def setFromTileCollision(options: MatterBodyTileOptions): TileBody = js.native
+  
   /**
     * Sets the current body to a rectangle that matches the bounds of the tile.
     * @param options Options to be used when creating the Matter body. See MatterJS.Body for a list of what Matter accepts.
     */
   def setFromTileRectangle(): TileBody = js.native
   def setFromTileRectangle(options: MatterBodyTileOptions): TileBody = js.native
+  
+  /**
+    * The tile object the body is associated with.
+    */
+  var tile: Tile = js.native
+  
+  /**
+    * The Matter world the body exists within.
+    */
+  var world: World = js.native
 }
-

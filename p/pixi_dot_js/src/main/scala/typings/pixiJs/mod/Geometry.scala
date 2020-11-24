@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Geometry represents a model. It consists of two components:
@@ -31,11 +31,11 @@ class Geometry ()
   def this(buffers: js.UndefOr[scala.Nothing], attributes: js.Any) = this()
   def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer], attributes: js.Any) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "Geometry")
 @js.native
 object Geometry extends js.Object {
+  
   /**
     * merges an array of geometries into a new single one
     * geometry attribute styles must match for this operation to work
@@ -45,4 +45,3 @@ object Geometry extends js.Object {
     */
   def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = js.native
 }
-

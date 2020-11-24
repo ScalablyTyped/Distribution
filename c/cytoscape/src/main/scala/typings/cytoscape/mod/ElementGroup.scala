@@ -2,7 +2,7 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#ele.group
@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
   - typings.cytoscape.cytoscapeStrings.edges
 */
 trait ElementGroup extends js.Object
-
 object ElementGroup {
+  
   @scala.inline
   def edges: typings.cytoscape.cytoscapeStrings.edges = "edges".asInstanceOf[typings.cytoscape.cytoscapeStrings.edges]
+  
   @scala.inline
   def nodes: typings.cytoscape.cytoscapeStrings.nodes = "nodes".asInstanceOf[typings.cytoscape.cytoscapeStrings.nodes]
 }
-

@@ -30,7 +30,6 @@ import typings.reactRouter.mod.WithRouterStatics
 import typings.reactRouter.mod.`match`
 import typings.reactRouterDom.mod.BrowserRouterProps
 import typings.reactRouterDom.mod.HashRouterProps
-import typings.reactRouterDom.mod.LinkProps
 import typings.reactRouterDom.mod.NavLinkProps
 import typings.reactRouterRedux.mod.ConnectedRouterProps
 import typings.reactRouterRedux.mod.RouterAction
@@ -40,14 +39,76 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import typings.redux.mod.Reducer
 import typings.std.HTMLAnchorElement
+import typings.std.Parameters
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dva/router", JSImport.Namespace)
 @js.native
 object routerMod extends js.Object {
+  
+  def Link[S](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type Parameters<Link<S>> is not an array type */ params: Parameters[typings.reactRouterDom.mod.Link[S]]
+  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = js.native
+  
+  def NavLink[S](
+    // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
+  props: PropsWithoutRef[NavLinkProps[S]] with RefAttributes[HTMLAnchorElement]
+  ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = js.native
+  
+  def generatePath(pattern: String): String = js.native
+  def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
+  
+  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
+  
+  def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
+  
+  def useLocation[S](): Location[S] = js.native
+  
+  def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] */](): Params = js.native
+  
+  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
+  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: String): `match`[Params] | Null = js.native
+  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = js.native
+  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
+  
+  def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
+    (Omit[
+      P, 
+      /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.dva.dvaStrings.`match` | staticContext
+    ]) with WithRouterProps[C], 
+    ComponentState
+  ]) with WithRouterStatics[C] = js.native
+  
   @js.native
   class BrowserRouter ()
     extends Component[BrowserRouterProps, js.Any, js.Any]
@@ -84,94 +145,55 @@ object routerMod extends js.Object {
   class Switch ()
     extends Component[SwitchProps, js.Any, js.Any]
   
-  def Link[S](
-    // TODO: Define this as ...params: Parameters<Link<S>> when only TypeScript >= 3.1 support is needed.
-  props: PropsWithoutRef[LinkProps[S]] with RefAttributes[HTMLAnchorElement]
-  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = js.native
-  def NavLink[S](
-    // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
-  props: PropsWithoutRef[NavLinkProps[S]] with RefAttributes[HTMLAnchorElement]
-  ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = js.native
-  def generatePath(pattern: String): String = js.native
-  def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = js.native
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
-  def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
-  def useLocation[S](): Location[S] = js.native
-  def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] */](): Params = js.native
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: String): `match`[Params] | Null = js.native
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = js.native
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
-  def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
-    (Omit[
-      P, 
-      /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.dva.dvaStrings.`match` | staticContext
-    ]) with WithRouterProps[C], 
-    ComponentState
-  ]) with WithRouterStatics[C] = js.native
   @js.native
   object routerRedux extends js.Object {
+    
+    val CALL_HISTORY_METHOD: /* "@@router/CALL_HISTORY_METHOD" */ String = js.native
+    
+    val LOCATION_CHANGE: /* "@@router/LOCATION_CHANGE" */ String = js.native
+    
+    def createMatchSelector(path: String): js.Function1[/* state */ typings.reactRouterRedux.anon.Router, `match`[js.Object] | Null] = js.native
+    
+    def go(n: Double): RouterAction = js.native
+    
+    def goBack(): RouterAction = js.native
+    
+    def goForward(): RouterAction = js.native
+    
+    def push(location: LocationDescriptor[LocationState]): RouterAction = js.native
+    def push(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
+    
+    def replace(location: LocationDescriptor[LocationState]): RouterAction = js.native
+    def replace(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
+    
+    def routerMiddleware(history: History[LocationState]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+    
+    val routerReducer: Reducer[RouterState, AnyAction] = js.native
+    
     @js.native
     class ConnectedRouter[State] ()
       extends Component[ConnectedRouterProps[State], js.Object, js.Any]
     
-    val CALL_HISTORY_METHOD: /* "@@router/CALL_HISTORY_METHOD" */ String = js.native
-    val LOCATION_CHANGE: /* "@@router/LOCATION_CHANGE" */ String = js.native
-    val routerReducer: Reducer[RouterState, AnyAction] = js.native
-    def createMatchSelector(path: String): js.Function1[/* state */ typings.reactRouterRedux.anon.Router, `match`[js.Object] | Null] = js.native
-    def go(n: Double): RouterAction = js.native
-    def goBack(): RouterAction = js.native
-    def goForward(): RouterAction = js.native
-    def push(location: LocationDescriptor[LocationState]): RouterAction = js.native
-    def push(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
-    def replace(location: LocationDescriptor[LocationState]): RouterAction = js.native
-    def replace(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
-    def routerMiddleware(history: History[LocationState]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
     @js.native
     object routerActions extends js.Object {
+      
       var go: js.Function1[/* n */ Double, RouterAction] = js.native
+      
       var goBack: js.Function0[RouterAction] = js.native
+      
       var goForward: js.Function0[RouterAction] = js.native
+      
       var push: js.Function2[
             /* location */ LocationDescriptor[LocationState], 
             /* state */ js.UndefOr[LocationState], 
             RouterAction
           ] = js.native
+      
       var replace: js.Function2[
             /* location */ LocationDescriptor[LocationState], 
             /* state */ js.UndefOr[LocationState], 
             RouterAction
           ] = js.native
     }
-    
   }
-  
 }
-

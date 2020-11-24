@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AssertionStatic
@@ -26,25 +26,32 @@ trait AssertionStatic
       /* lockSsfi */ Boolean, 
       Assertion
     ] {
-  // Deprecated properties:
-  var includeStack: Boolean = js.native
-  var showDiff: Boolean = js.native
+  
   def addChainableMethod(name: String, method: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): Unit = js.native
   def addChainableMethod(
     name: String,
     method: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit],
     chainingBehavior: js.Function0[Unit]
   ): Unit = js.native
+  
   def addMethod(name: String, method: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, _]): Unit = js.native
+  
   // Partials of functions on ChaiUtils:
   def addProperty(name: String, getter: js.ThisFunction0[/* this */ this.type, _]): Unit = js.native
+  
+  // Deprecated properties:
+  var includeStack: Boolean = js.native
+  
   def overwriteChainableMethod(name: String, method: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): Unit = js.native
   def overwriteChainableMethod(
     name: String,
     method: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit],
     chainingBehavior: js.Function0[Unit]
   ): Unit = js.native
+  
   def overwriteMethod(name: String, method: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, _]): Unit = js.native
+  
   def overwriteProperty(name: String, getter: js.ThisFunction0[/* this */ this.type, _]): Unit = js.native
+  
+  var showDiff: Boolean = js.native
 }
-

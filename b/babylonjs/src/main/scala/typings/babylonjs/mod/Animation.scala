@@ -4,7 +4,7 @@ import typings.babylonjs.animatableInterfaceMod.IAnimatable
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Animation")
 @js.native
@@ -51,74 +51,102 @@ class Animation protected ()
     /**The data type of the animation */
   dataType: Double,
     /**The loop mode of the animation */
+  loopMode: js.UndefOr[scala.Nothing],
+    /**Specifies if blending should be enabled */
+  enableBlending: Boolean
+  ) = this()
+  def this(
+    /**Name of the animation */
+  name: String,
+    /**Property to animate */
+  targetProperty: String,
+    /**The frames per second of the animation */
+  framePerSecond: Double,
+    /**The data type of the animation */
+  dataType: Double,
+    /**The loop mode of the animation */
   loopMode: Double,
     /**Specifies if blending should be enabled */
   enableBlending: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "Animation")
 @js.native
 object Animation extends js.Object {
+  
   /**
     * Constant Loop Mode
     */
   val ANIMATIONLOOPMODE_CONSTANT: Double = js.native
+  
   /**
     * Cycle Loop Mode
     */
   val ANIMATIONLOOPMODE_CYCLE: Double = js.native
+  
   /**
     * Relative Loop Mode
     */
   val ANIMATIONLOOPMODE_RELATIVE: Double = js.native
+  
   /**
     * Color3 animation type
     */
   val ANIMATIONTYPE_COLOR3: Double = js.native
+  
   /**
     * Color3 animation type
     */
   val ANIMATIONTYPE_COLOR4: Double = js.native
+  
   /**
     * Float animation type
     */
   val ANIMATIONTYPE_FLOAT: Double = js.native
+  
   /**
     * Matrix animation type
     */
   val ANIMATIONTYPE_MATRIX: Double = js.native
+  
   /**
     * Quaternion animation type
     */
   val ANIMATIONTYPE_QUATERNION: Double = js.native
+  
   /**
     * Size animation type
     */
   val ANIMATIONTYPE_SIZE: Double = js.native
+  
   /**
     * Vector2 animation type
     */
   val ANIMATIONTYPE_VECTOR2: Double = js.native
+  
   /**
     * Vector3 animation type
     */
   val ANIMATIONTYPE_VECTOR3: Double = js.native
+  
   /**
     * Use matrix interpolation instead of using direct key value when animating matrices
     */
   var AllowMatricesInterpolation: Boolean = js.native
+  
   /**
     * When matrix interpolation is enabled, this boolean forces the system to use Matrix.DecomposeLerp instead of Matrix.Lerp. Interpolation is more precise but slower
     */
   var AllowMatrixDecomposeForInterpolation: Boolean = js.native
+  
   /**
     * Appends the serialized animations from the source animations
     * @param source Source containing the animations
     * @param destination Target to store the animations
     */
   def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = js.native
+  
   /**
     * Create and start an animation on a node
     * @param name defines the name of the global animation that will be run on all nodes
@@ -150,7 +178,54 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction,
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
     loopMode: Double
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: Double,
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
   ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
   def CreateAndStartAnimation(
     name: String,
@@ -175,6 +250,7 @@ object Animation extends js.Object {
     easingFunction: typings.babylonjs.easingMod.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
   ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  
   /**
     * Create and start an animation on a node and its descendants
     * @param name defines the name of the global animation that will be run on all nodes
@@ -210,7 +286,58 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[js.Array[typings.babylonjs.animatableMod.Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction
+  ): Nullable[js.Array[typings.babylonjs.animatableMod.Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction,
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[js.Array[typings.babylonjs.animatableMod.Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
     loopMode: Double
+  ): Nullable[js.Array[typings.babylonjs.animatableMod.Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: Double,
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
   ): Nullable[js.Array[typings.babylonjs.animatableMod.Animatable]] = js.native
   def CreateAndStartHierarchyAnimation(
     name: String,
@@ -237,6 +364,7 @@ object Animation extends js.Object {
     easingFunction: typings.babylonjs.easingMod.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
   ): Nullable[js.Array[typings.babylonjs.animatableMod.Animatable]] = js.native
+  
   /**
     * Sets up an animation
     * @param property The property to animate
@@ -251,6 +379,16 @@ object Animation extends js.Object {
     framePerSecond: Double,
     easingFunction: typings.babylonjs.easingMod.EasingFunction
   ): typings.babylonjs.animationMod.Animation = js.native
+  
+  /**
+    * Creates an animation or an array of animations from a snippet saved by the Inspector
+    * @param snippetId defines the snippet to load
+    * @returns a promise that will resolve to the new animation or a new array of animations
+    */
+  def CreateFromSnippetAsync(snippetId: String): js.Promise[
+    typings.babylonjs.animationMod.Animation | js.Array[typings.babylonjs.animationMod.Animation]
+  ] = js.native
+  
   /**
     * Creates a new animation, merges it with the existing animations and starts it
     * @param name Name of the animation
@@ -282,7 +420,54 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction,
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
     loopMode: Double
+  ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: typings.babylonjs.nodeMod.Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: Double,
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
   ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
   def CreateMergeAndStartAnimation(
     name: String,
@@ -307,12 +492,125 @@ object Animation extends js.Object {
     easingFunction: typings.babylonjs.easingMod.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
   ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  
+  /**
+    * Convert the keyframes for all animations belonging to the group to be relative to a given reference frame.
+    * @param sourceAnimation defines the Animation containing keyframes to convert
+    * @param referenceFrame defines the frame that keyframes in the range will be relative to
+    * @param range defines the name of the AnimationRange belonging to the Animation to convert
+    * @param cloneOriginal defines whether or not to clone the animation and convert the clone or convert the original animation (default is false)
+    * @param clonedName defines the name of the resulting cloned Animation if cloneOriginal is true
+    * @returns a new Animation if cloneOriginal is true or the original Animation if cloneOriginal is false
+    */
+  def MakeAnimationAdditive(sourceAnimation: typings.babylonjs.animationMod.Animation): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String,
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String,
+    cloneOriginal: Boolean
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String,
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(sourceAnimation: typings.babylonjs.animationMod.Animation, referenceFrame: Double): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: Double,
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: Double,
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: Double,
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(sourceAnimation: typings.babylonjs.animationMod.Animation, referenceFrame: Double, range: String): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: Double,
+    range: String,
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: Double,
+    range: String,
+    cloneOriginal: Boolean
+  ): typings.babylonjs.animationMod.Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: typings.babylonjs.animationMod.Animation,
+    referenceFrame: Double,
+    range: String,
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): typings.babylonjs.animationMod.Animation = js.native
+  
   /**
     * Parses an animation object and creates an animation
     * @param parsedAnimation Parsed animation object
     * @returns Animation object
     */
   def Parse(parsedAnimation: js.Any): typings.babylonjs.animationMod.Animation = js.native
+  
+  /**
+    * Creates a new animation or an array of animations from a snippet saved in a remote file
+    * @param name defines the name of the animation to create (can be null or empty to use the one from the json data)
+    * @param url defines the url to load from
+    * @returns a promise that will resolve to the new animation or an array of animations
+    */
+  def ParseFromFileAsync(name: Nullable[String], url: String): js.Promise[
+    typings.babylonjs.animationMod.Animation | js.Array[typings.babylonjs.animationMod.Animation]
+  ] = js.native
+  
+  /** Define the Url to load snippets */
+  var SnippetUrl: String = js.native
+  
   /**
     * Transition property of an host to the target Value
     * @param property The property to transition
@@ -344,6 +642,7 @@ object Animation extends js.Object {
     duration: Double,
     onAnimationEnd: Nullable[js.Function0[Unit]]
   ): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+  
   /**
     * @hidden Internal use
     */
@@ -354,6 +653,16 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any
+  ): Nullable[typings.babylonjs.animationMod.Animation] = js.native
+  def _PrepareAnimation(
+    name: String,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: typings.babylonjs.easingMod.EasingFunction
   ): Nullable[typings.babylonjs.animationMod.Animation] = js.native
   def _PrepareAnimation(
     name: String,
@@ -374,7 +683,7 @@ object Animation extends js.Object {
     loopMode: Double,
     easingFunction: typings.babylonjs.easingMod.EasingFunction
   ): Nullable[typings.babylonjs.animationMod.Animation] = js.native
+  
   /** @hidden */
   def _UniversalLerp(left: js.Any, right: js.Any, amount: Double): js.Any = js.native
 }
-

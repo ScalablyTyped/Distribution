@@ -12,7 +12,7 @@ Cron string converter
 | Keywords           | cron, cronjob, crontab, schedule, parser |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 162333 |
+| # downloads        | 299986 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.reactMdTree.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TreeItemWithContentComponentProps
@@ -14,8 +14,8 @@ trait TreeItemWithContentComponentProps
   * those props can be passed down correctly.
   */
 /* key */ StringDictionary[js.Any]
-
 object TreeItemWithContentComponentProps {
+  
   @scala.inline
   def apply(
     depth: Double,
@@ -30,4 +30,3 @@ object TreeItemWithContentComponentProps {
     __obj.asInstanceOf[TreeItemWithContentComponentProps]
   }
 }
-

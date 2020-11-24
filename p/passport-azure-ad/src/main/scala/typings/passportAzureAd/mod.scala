@@ -10,11 +10,12 @@ import typings.passportAzureAd.oidcStrategyMod.VerifyOIDCFunction
 import typings.passportAzureAd.oidcStrategyMod.VerifyOIDCFunctionWithReq
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-azure-ad", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class BearerStrategy protected ()
     extends typings.passportAzureAd.bearerStrategyMod.BearerStrategy {
@@ -28,6 +29,4 @@ object mod extends js.Object {
     def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
     def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()
   }
-  
 }
-

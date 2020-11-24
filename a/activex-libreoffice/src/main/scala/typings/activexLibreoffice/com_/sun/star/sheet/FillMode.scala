@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** used to specify the series type used to fill cells. */
 /* Rewritten from type alias, can be one of: 
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait FillMode extends js.Object
-
 object FillMode {
+  
   /**
     * specifies the use of a user-defined list. <p>The cells are filled using a user-defined series.</p>
     *
@@ -29,6 +29,7 @@ object FillMode {
     */
   @scala.inline
   def AUTO: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * specifies an arithmetic series for date values. <p>Cell by cell, the value used to fill the cells is increased
     *
@@ -37,6 +38,7 @@ object FillMode {
     */
   @scala.inline
   def DATE: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * specifies a geometric series. <p>Cell by cell, the value used to fill the cells is multiplied
     *
@@ -44,6 +46,7 @@ object FillMode {
     */
   @scala.inline
   def GROWTH: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * specifies an arithmetic series. <p>Cell by cell, the value used to fill the cells is increased
     *
@@ -51,8 +54,8 @@ object FillMode {
     */
   @scala.inline
   def LINEAR: `1` = 1.asInstanceOf[`1`]
+  
   /** specifies a constant series. <p>All cells are filled with the same value.</p> */
   @scala.inline
   def SIMPLE: `0` = 0.asInstanceOf[`0`]
 }
-

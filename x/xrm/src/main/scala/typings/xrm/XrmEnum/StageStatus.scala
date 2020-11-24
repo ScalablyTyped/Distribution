@@ -4,7 +4,7 @@ import typings.xrm.xrmStrings.active
 import typings.xrm.xrmStrings.inactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Status for {@link ProcessFlow.Stage.getStatus Stage.getStatus()}.
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.inactive
 */
 trait StageStatus extends js.Object
-
 object StageStatus {
+  
   @scala.inline
   def Active: active = "active".asInstanceOf[active]
+  
   @scala.inline
   def Inactive: inactive = "inactive".asInstanceOf[inactive]
 }
-

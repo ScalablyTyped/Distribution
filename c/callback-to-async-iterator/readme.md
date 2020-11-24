@@ -11,11 +11,14 @@ Turn any callback-based listener into an async iterator.
 | Full name          | callback-to-async-iterator |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 29177 |
+| # dependents       | 1 |
+| # downloads        | 35566 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/withspectrum/callback-to-async-iterator#readme)
+- [Bugs](https://github.com/withspectrum/callback-to-async-iterator/issues)
+- [Repository](https://github.com/withspectrum/callback-to-async-iterator)
 - [Npm](https://www.npmjs.com/package/callback-to-async-iterator)
     
 

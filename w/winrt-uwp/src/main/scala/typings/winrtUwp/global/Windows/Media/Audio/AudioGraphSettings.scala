@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Audio
 import typings.winrtUwp.Windows.Media.Render.AudioRenderCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents initialization settings for an audio graph. Set the properties of this object to your desired values and then call AudioGraph::CreateAsync to create a new audio graph instance with the specified settings. */
 @JSGlobal("Windows.Media.Audio.AudioGraphSettings")
@@ -16,4 +16,3 @@ class AudioGraphSettings protected ()
     */
   def this(audioRenderCategory: AudioRenderCategory) = this()
 }
-

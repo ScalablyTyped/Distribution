@@ -1,7 +1,7 @@
 
 # Scala.js typings for pvtsutils
 
-Typings are for version 1.0.11
+Typings are for version 1.1.1
 
 ## Library description:
 pvtsutils is a set of common utility functions used in various Peculiar Ventures TypeScript based projects.
@@ -10,9 +10,9 @@ pvtsutils is a set of common utility functions used in various Peculiar Ventures
 | ------------------ | :-------------: |
 | Full name          | pvtsutils |
 | Keywords           | typescript, helper, util, convert, hex, utf8, base64, base64url, binary, assign |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 50423 |
+| # releases         | 9 |
+| # dependents       | 21 |
+| # downloads        | 616997 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.sharepoint.SP.UserProfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PersonalSiteCapabilities extends js.Object
-
 /** Specifies the capabilities of a personal site. */
 @JSGlobal("SP.UserProfiles.PersonalSiteCapabilities")
 @js.native
 object PersonalSiteCapabilities extends js.Object {
+  
   @js.native
   sealed trait education extends PersonalSiteCapabilities
   
@@ -31,6 +31,4 @@ object PersonalSiteCapabilities extends js.Object {
   
   @js.native
   sealed trait storage extends PersonalSiteCapabilities
-  
 }
-

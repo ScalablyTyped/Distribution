@@ -2,17 +2,18 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AzureRestApiResponseModel extends AzureRestApiRequestModel {
+  
   /**
     * Gets or sets the Asset operation status
     */
   var operationStatus: RestApiResponseStatusModel = js.native
 }
-
 object AzureRestApiResponseModel {
+  
   @scala.inline
   def apply(
     assetDetails: AssetDetails,
@@ -30,20 +31,23 @@ object AzureRestApiResponseModel {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureRestApiResponseModel]
   }
+  
   @scala.inline
   implicit class AzureRestApiResponseModelOps[Self <: AzureRestApiResponseModel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOperationStatus(value: RestApiResponseStatusModel): Self = this.set("operationStatus", value.asInstanceOf[js.Any])
   }
-  
 }
-

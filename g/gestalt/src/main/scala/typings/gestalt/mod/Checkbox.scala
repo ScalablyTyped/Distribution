@@ -1,12 +1,11 @@
 package typings.gestalt.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gestalt", "Checkbox")
 @js.native
-class Checkbox ()
-  extends Component[CheckboxProps, js.Any, js.Any]
-
+object Checkbox extends TopLevel[ReactForwardRef[HTMLInputElement, CheckboxProps]]

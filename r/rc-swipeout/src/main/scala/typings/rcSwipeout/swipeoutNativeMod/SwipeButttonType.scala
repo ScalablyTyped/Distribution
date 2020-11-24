@@ -6,41 +6,96 @@ import typings.rcSwipeout.rcSwipeoutStrings.secondary
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait SwipeButttonType extends js.Object {
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var component: js.UndefOr[Element] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[typings.rcSwipeout.rcSwipeoutStrings.default | delete | primary | secondary] = js.undefined
-  var underlayColor: js.UndefOr[String] = js.undefined
+  
+  var backgroundColor: js.UndefOr[String] = js.native
+  
+  var color: js.UndefOr[String] = js.native
+  
+  var component: js.UndefOr[Element] = js.native
+  
+  var disabled: js.UndefOr[Boolean] = js.native
+  
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  
+  var text: js.UndefOr[String] = js.native
+  
+  var `type`: js.UndefOr[typings.rcSwipeout.rcSwipeoutStrings.default | delete | primary | secondary] = js.native
+  
+  var underlayColor: js.UndefOr[String] = js.native
 }
-
 object SwipeButttonType {
+  
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    color: String = null,
-    component: Element = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onPress: () => Unit = null,
-    text: String = null,
-    `type`: typings.rcSwipeout.rcSwipeoutStrings.default | delete | primary | secondary = null,
-    underlayColor: String = null
-  ): SwipeButttonType = {
+  def apply(): SwipeButttonType = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeButttonType]
   }
+  
+  @scala.inline
+  implicit class SwipeButttonTypeOps[Self <: SwipeButttonType] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    
+    @scala.inline
+    def setComponent(value: Element): Self = this.set("component", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    
+    @scala.inline
+    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.rcSwipeout.rcSwipeoutStrings.default | delete | primary | secondary): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    
+    @scala.inline
+    def setUnderlayColor(value: String): Self = this.set("underlayColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUnderlayColor: Self = this.set("underlayColor", js.undefined)
+  }
 }
-

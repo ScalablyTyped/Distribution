@@ -10,9 +10,9 @@ A Long class for representing a 64-bit two's-complement integer value.
 | ------------------ | :-------------: |
 | Full name          | long |
 | Keywords           | math |
-| # releases         | 2 |
-| # dependents       | 515 |
-| # downloads        | 144458655 |
+| # releases         | 0 |
+| # dependents       | 613 |
+| # downloads        | 206532160 |
 | # stars            | 23 |
 
 ## Links

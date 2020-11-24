@@ -4,18 +4,17 @@ import typings.antDesignReactNative.carouselMod.CarouselProps
 import typings.antDesignReactNative.carouselMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Carousel")
 @js.native
 class Carousel protected () extends default {
   def this(props: CarouselProps) = this()
 }
-
 /* static members */
 @JSImport("@ant-design/react-native", "Carousel")
 @js.native
 object Carousel extends js.Object {
+  
   var defaultProps: CarouselProps = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeAutoSize extends js.Object
-
 /**
   *
   * Determines the type of automatic sizing allowed.
@@ -16,6 +15,7 @@ sealed trait ShapeAutoSize extends js.Object
 @JSGlobal("Excel.ShapeAutoSize")
 @js.native
 object ShapeAutoSize extends js.Object {
+  
   /**
     * A combination of automatic sizing schemes are used.
     *
@@ -43,6 +43,4 @@ object ShapeAutoSize extends js.Object {
     */
   @js.native
   sealed trait autoSizeTextToFitShape extends ShapeAutoSize
-  
 }
-

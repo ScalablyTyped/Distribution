@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Stage")
 @js.native
@@ -12,15 +12,14 @@ import scala.scalajs.js.annotation._
   */
 class Stage[T /* <: js.Function */] protected ()
   extends typings.babylonjs.BABYLON.Stage[T]
-
 /* static members */
 @JSGlobal("BABYLON.Stage")
 @js.native
 object Stage extends js.Object {
+  
   /**
     * Creates a new Stage.
     * @returns A new instance of a Stage
     */
   def Create[T /* <: js.Function */](): typings.babylonjs.BABYLON.Stage[T] = js.native
 }
-

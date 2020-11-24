@@ -6,7 +6,7 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "HighlightsPostProcess")
 @js.native
@@ -27,7 +27,21 @@ class HighlightsPostProcess protected ()
   def this(name: String, options: PostProcessOptions, camera: Nullable[Camera]) = this()
   def this(name: String, options: Double, camera: Nullable[Camera], samplingMode: Double) = this()
   def this(name: String, options: PostProcessOptions, camera: Nullable[Camera], samplingMode: Double) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine
+  ) = this()
   def this(name: String, options: Double, camera: Nullable[Camera], samplingMode: Double, engine: Engine) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine
+  ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
@@ -39,8 +53,56 @@ class HighlightsPostProcess protected ()
     name: String,
     options: Double,
     camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
     reusable: Boolean
   ) = this()
   def this(
@@ -55,9 +117,135 @@ class HighlightsPostProcess protected ()
     name: String,
     options: Double,
     camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine,
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine,
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: Engine,
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Engine,
     reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine,
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: Engine,
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: Double,
+    engine: Engine,
+    reusable: js.UndefOr[scala.Nothing],
     textureType: Double
   ) = this()
   def this(
@@ -70,4 +258,3 @@ class HighlightsPostProcess protected ()
     textureType: Double
   ) = this()
 }
-

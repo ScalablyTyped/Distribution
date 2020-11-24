@@ -2,11 +2,12 @@ package typings.minappEnv.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("parseInt")
 @js.native
 object parseInt extends js.Object {
+  
   /*! *****************************************************************************
   Modifications Copyright (c) 2018 Tencent, Inc. All rights reserved. 
   ***************************************************************************** */
@@ -26,4 +27,3 @@ object parseInt extends js.Object {
   def apply(s: java.lang.String): Double = js.native
   def apply(s: java.lang.String, radix: Double): Double = js.native
 }
-

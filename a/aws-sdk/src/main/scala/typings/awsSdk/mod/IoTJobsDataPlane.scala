@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "IoTJobsDataPlane")
 @js.native
@@ -14,4 +14,3 @@ class IoTJobsDataPlane ()
   extends typings.awsSdk.allMod.IoTJobsDataPlane {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.dataviz.ui.RadialGaugeOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofRadialGauge
   extends Instantiable1[/* element */ Element, RadialGauge]
      with Instantiable2[/* element */ Element, /* options */ RadialGaugeOptions, RadialGauge] {
-  var fn: RadialGauge = js.native
+  
   def extend(proto: js.Object): RadialGauge = js.native
+  
+  var fn: RadialGauge = js.native
 }
-

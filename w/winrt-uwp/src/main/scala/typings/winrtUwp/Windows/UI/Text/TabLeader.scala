@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TabLeader extends js.Object
-
 /** The character that is used to fill the space taken by a tab character. */
 @JSGlobal("Windows.UI.Text.TabLeader")
 @js.native
 object TabLeader extends js.Object {
+  
   /** A dashed line is used. */
   @js.native
   sealed trait dashes extends TabLeader
@@ -34,6 +34,4 @@ object TabLeader extends js.Object {
   /** A thick line is used. */
   @js.native
   sealed trait thickLines extends TabLeader
-  
 }
-

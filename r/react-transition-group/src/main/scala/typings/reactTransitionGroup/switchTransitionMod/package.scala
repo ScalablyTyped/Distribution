@@ -2,9 +2,10 @@ package typings.reactTransitionGroup
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object switchTransitionMod {
+  
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
     * You can use it when you want to control the render between state transitions.

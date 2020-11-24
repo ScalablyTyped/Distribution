@@ -9,13 +9,14 @@ import typings.jointjs.mod.dia.Cell.Constructor
 import typings.jointjs.mod.dia.Graph.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofCell
   extends Instantiable0[Cell]
      with Instantiable1[/* attributes */ Attributes, Cell]
      with Instantiable2[js.UndefOr[/* attributes */ Attributes], /* opt */ Options, Cell] {
+  
   def define(`type`: String): Constructor[Cell] = js.native
   def define(
     `type`: String,
@@ -30,4 +31,3 @@ trait TypeofCell
   def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Cell] = js.native
   def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.UI.PopoutMenu")
 @js.native
@@ -22,12 +22,13 @@ class PopoutMenu protected ()
     closeIconWidth: Double
   ) = this()
 }
-
 /* static members */
 @JSGlobal("SP.UI.PopoutMenu")
 @js.native
 object PopoutMenu extends js.Object {
+  
   def closeActivePopoutMenuInstance(): Unit = js.native
+  
   def createPopoutMenuInstanceAndLaunch(
     anchorId: String,
     menuId: String,
@@ -42,4 +43,3 @@ object PopoutMenu extends js.Object {
     width: Double
   ): Unit = js.native
 }
-

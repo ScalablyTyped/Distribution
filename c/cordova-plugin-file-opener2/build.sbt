@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-file-opener2"
-version := "2.0-dt-20200515Z-3931f6"
+version := "2.0-dt-20200515Z-28176a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

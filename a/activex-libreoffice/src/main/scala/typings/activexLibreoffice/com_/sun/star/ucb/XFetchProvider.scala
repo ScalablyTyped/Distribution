@@ -4,11 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the possibility to get the contents of the columns of several rows of a {@link ContentResultSet} with a single function call. */
 @js.native
 trait XFetchProvider extends XInterface {
+  
   /**
     * returns the contents of the columns of the indicated rows
     * @param nRowStartPosition the starting row of the result set
@@ -18,8 +19,8 @@ trait XFetchProvider extends XInterface {
     */
   def fetch(nRowStartPosition: Double, nRowCount: Double, bDirection: Boolean): FetchResult = js.native
 }
-
 object XFetchProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -30,20 +31,23 @@ object XFetchProvider {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fetch = js.Any.fromFunction3(fetch), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XFetchProvider]
   }
+  
   @scala.inline
   implicit class XFetchProviderOps[Self <: XFetchProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFetch(value: (Double, Double, Boolean) => FetchResult): Self = this.set("fetch", js.Any.fromFunction3(value))
   }
-  
 }
-

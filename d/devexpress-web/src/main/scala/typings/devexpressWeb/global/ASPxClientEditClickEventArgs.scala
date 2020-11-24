@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client-side events which concern clicking within editors.
@@ -18,4 +18,3 @@ class ASPxClientEditClickEventArgs protected ()
     */
   def this(htmlElement: js.Any, htmlEvent: js.Any) = this()
 }
-

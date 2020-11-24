@@ -10,9 +10,9 @@ RSocket TCP server
 | ------------------ | :-------------: |
 | Full name          | rsocket-tcp-server |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 4 |
-| # downloads        | 6739 |
+| # releases         | 12 |
+| # dependents       | 3 |
+| # downloads        | 40846 |
 | # stars            | 0 |
 
 ## Links

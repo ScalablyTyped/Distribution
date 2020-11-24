@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for elements the Crosshair Cursor displays in the legend.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientCrosshairLegendElementBase ()
   extends typings.devexpressWeb.ASPxClientCrosshairLegendElementBase
-

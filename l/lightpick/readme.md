@@ -4,15 +4,15 @@
 Typings are for version 1.4
 
 ## Library description:
-Javascript date range picker - lightweight, no jQuery
+Javascript date range picker - lightweight, no jQuery - (Unmaintained)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lightpick |
 | Keywords           | datepicker, date, daterange, date, picker, range |
-| # releases         | 48 |
-| # dependents       | 3 |
-| # downloads        | 62920 |
+| # releases         | 26 |
+| # dependents       | 2 |
+| # downloads        | 74978 |
 | # stars            | 0 |
 
 ## Links

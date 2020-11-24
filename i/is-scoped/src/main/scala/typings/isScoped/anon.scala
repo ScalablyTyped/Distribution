@@ -2,13 +2,15 @@ package typings.isScoped
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Check if a string is a [scoped npm package name](https://docs.npmjs.com/misc/scope).
     	@example
@@ -22,6 +24,4 @@ object anon extends js.Object {
     	*/
     def apply(input: String): Boolean = js.native
   }
-  
 }
-

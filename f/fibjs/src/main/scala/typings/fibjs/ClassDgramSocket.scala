@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassDgramSocket extends ClassEventEmitter {
+  
   /**
     * 
     * @brief 返回一个包含 socket 地址信息的对象。对于 UDP socket，该对象将包含 address、family 和 port 属性。
@@ -15,6 +16,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def address(): js.Any = js.native
+  
   /**
     * 
     * @brief 该方法会令 dgram.Socket 在指定的 `port` 和 `addr` 上监听数据包信息。绑定完成时会触发一个 `listening` 事件。
@@ -37,6 +39,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
   def bind(port: js.UndefOr[scala.Nothing], addr: String): Unit = js.native
   def bind(port: Double): Unit = js.native
   def bind(port: Double, addr: String): Unit = js.native
+  
   /**
     * 
     * @brief 关闭当前 socket
@@ -53,6 +56,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def close(callback: js.Function): Unit = js.native
+  
   /**
     * 
     * @brief 查询 socket 接收缓冲区大小
@@ -62,6 +66,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def getRecvBufferSize(): Double = js.native
+  
   /**
     * 
     * @brief 查询 socket 发送缓冲区大小
@@ -71,6 +76,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def getSendBufferSize(): Double = js.native
+  
   /**
     * 
     * @brief 维持 fibjs 进程不退出，在对象绑定期间阻止 fibjs 进程退出
@@ -80,6 +86,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def ref(): ClassDgramSocket = js.native
+  
   /**
     * 
     * @brief 在 socket 上发送一个数据包
@@ -108,6 +115,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     */
   def send(msg: ClassBuffer, port: Double): Double = js.native
   def send(msg: ClassBuffer, port: Double, address: String): Double = js.native
+  
   /**
     * 
     * @brief 设置或清除 SO_BROADCAST socket 选项
@@ -117,6 +125,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def setBroadcast(flag: Boolean): Unit = js.native
+  
   /**
     * 
     * @brief 设置 socket 接收缓冲区大小
@@ -126,6 +135,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def setRecvBufferSize(size: Double): Unit = js.native
+  
   /**
     * 
     * @brief 设置 socket 发送缓冲区大小
@@ -135,6 +145,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * 
     */
   def setSendBufferSize(size: Double): Unit = js.native
+  
   /**
     * 
     * @brief 允许 fibjs 进程退出，在对象绑定期间允许 fibjs 进程退出
@@ -145,4 +156,3 @@ trait ClassDgramSocket extends ClassEventEmitter {
     */
   def unref(): ClassDgramSocket = js.native
 }
-

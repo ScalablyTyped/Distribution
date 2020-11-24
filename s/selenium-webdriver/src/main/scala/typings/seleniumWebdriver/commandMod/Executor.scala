@@ -2,11 +2,12 @@ package typings.seleniumWebdriver.commandMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/lib/command", "Executor")
 @js.native
 class Executor () extends js.Object {
+  
   /**
     * Defines a new command for use with this executor. When a command is sent,
     * the {@code path} will be preprocessed using the command's parameters; any
@@ -21,6 +22,7 @@ class Executor () extends js.Object {
     *     '/path/:variable/segment'.
     */
   def defineCommand(name: String, method: String, path: String): Unit = js.native
+  
   /**
     * Executes the given {@code command}. If there is an error executing the
     * command, the provided callback will be invoked with the offending error.
@@ -33,4 +35,3 @@ class Executor () extends js.Object {
     */
   def execute(command: Command): js.Promise[_] = js.native
 }
-

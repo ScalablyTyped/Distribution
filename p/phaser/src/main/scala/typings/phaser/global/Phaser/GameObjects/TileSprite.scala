@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TileSprite is a Sprite that has a repeating texture.
@@ -62,4 +62,3 @@ class TileSprite protected ()
     frameKey: integer
   ) = this()
 }
-

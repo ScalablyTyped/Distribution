@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Signupurls")
 @js.native
 class ResourceSignupurls protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.signupUrls.create
     * @desc Creates an enterprise signup URL.
@@ -43,4 +45,3 @@ class ResourceSignupurls protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSignupUrl]
   ): Unit = js.native
 }
-

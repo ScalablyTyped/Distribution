@@ -10,9 +10,9 @@ Access app version inside React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-version-number |
 | Keywords           | react, react-native, ios, react-component |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 732041 |
+| # releases         | 3 |
+| # dependents       | 4 |
+| # downloads        | 1146702 |
 | # stars            | 0 |
 
 ## Links

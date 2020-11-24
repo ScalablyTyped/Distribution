@@ -8,10 +8,11 @@ import typings.when.When._underscore.Fn4
 import typings.when.When._underscore.Fn5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Promise[T] extends js.Object {
+  
   def `catch`[U](): Promise[U] = js.native
   // Make sure you test any usage of these overloads, exceptionType must
   // be a constructor with prototype set to an instance of Error.
@@ -22,7 +23,9 @@ trait Promise[T] extends js.Object {
     onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]
   ): Promise[U] = js.native
   def `catch`[U](onRejected: js.Function1[/* reason */ js.Any, Boolean | Promise[U] | U]): Promise[U] = js.native
+  
   def delay(milliseconds: Double): Promise[T] = js.native
+  
   def done[U](): Unit = js.native
   def done[U](onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* reason */ js.Any, Unit]): Unit = js.native
   def done[U](onFulfilled: js.Function1[/* value */ T, Unit]): Unit = js.native
@@ -30,13 +33,20 @@ trait Promise[T] extends js.Object {
     onFulfilled: js.Function1[/* value */ T, Unit],
     onRejected: js.Function1[/* reason */ js.Any, Unit]
   ): Unit = js.native
+  
   def `else`(value: T): Promise[T] = js.native
+  
   def ensure(onFulfilledOrRejected: js.Function): Promise[T] = js.native
+  
   def `finally`(onFulfilledOrRejected: js.Function): Promise[T] = js.native
+  
   def fold[U, V](combine: js.Function2[/* value1 */ T, /* value2 */ V, U | Promise[U]], value2: V): Promise[U] = js.native
   def fold[U, V](combine: js.Function2[/* value1 */ T, /* value2 */ V, U | Promise[U]], value2: Promise[V]): Promise[U] = js.native
+  
   def inspect(): Snapshot[T] = js.native
+  
   def orElse(value: T): Promise[T] = js.native
+  
   def otherwise[U](): Promise[U] = js.native
   // Make sure you test any usage of these overloads, exceptionType must
   // be a constructor with prototype set to an instance of Error.
@@ -47,13 +57,16 @@ trait Promise[T] extends js.Object {
     predicate: js.Function1[/* reason */ js.Any, Boolean],
     onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]
   ): Promise[U] = js.native
+  
   def spread[T](onFulfilled: Fn0[Promise[T] | T]): Promise[T] = js.native
   def spread[A1, T](onFulfilled: Fn1[A1, Promise[T] | T]): Promise[T] = js.native
   def spread[A1, A2, T](onFulfilled: Fn2[A1, A2, Promise[T] | T]): Promise[T] = js.native
   def spread[A1, A2, A3, T](onFulfilled: Fn3[A1, A2, A3, Promise[T] | T]): Promise[T] = js.native
   def spread[A1, A2, A3, A4, T](onFulfilled: Fn4[A1, A2, A3, A4, Promise[T] | T]): Promise[T] = js.native
   def spread[A1, A2, A3, A4, A5, T](onFulfilled: Fn5[A1, A2, A3, A4, A5, Promise[T] | T]): Promise[T] = js.native
+  
   def tap(onFulfilledSideEffect: js.Function1[/* value */ T, Unit]): Promise[T] = js.native
+  
   def `then`(): Promise[T] = js.native
   def `then`(
     onFulfilled: js.UndefOr[scala.Nothing],
@@ -161,11 +174,14 @@ trait Promise[T] extends js.Object {
     onRejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]],
     onProgress: js.Function1[/* update */ js.Any, Unit]
   ): Promise[TResult1 | TResult2] = js.native
+  
   def timeout(milliseconds: Double): Promise[T] = js.native
   def timeout(milliseconds: Double, reason: js.Any): Promise[T] = js.native
+  
   def `with`(thisArg: js.Any): Promise[T] = js.native
+  
   def withThis(thisArg: js.Any): Promise[T] = js.native
+  
   def `yield`[U](value: U): Promise[U] = js.native
   def `yield`[U](value: Promise[U]): Promise[U] = js.native
 }
-

@@ -2,9 +2,268 @@ package typings.phantom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phantomStrings {
+  
+  @scala.inline
+  def A3: A3 = "A3".asInstanceOf[A3]
+  
+  @scala.inline
+  def A4: A4 = "A4".asInstanceOf[A4]
+  
+  @scala.inline
+  def A5: A5 = "A5".asInstanceOf[A5]
+  
+  @scala.inline
+  def BackOrForward: BackOrForward = "BackOrForward".asInstanceOf[BackOrForward]
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def FormResubmitted: FormResubmitted = "FormResubmitted".asInstanceOf[FormResubmitted]
+  
+  @scala.inline
+  def FormSubmitted: FormSubmitted = "FormSubmitted".asInstanceOf[FormSubmitted]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  
+  @scala.inline
+  def Legal: Legal = "Legal".asInstanceOf[Legal]
+  
+  @scala.inline
+  def Letter: Letter = "Letter".asInstanceOf[Letter]
+  
+  @scala.inline
+  def LinkClicked: LinkClicked = "LinkClicked".asInstanceOf[LinkClicked]
+  
+  @scala.inline
+  def Other: Other = "Other".asInstanceOf[Other]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def Reload: Reload = "Reload".asInstanceOf[Reload]
+  
+  @scala.inline
+  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
+  
+  @scala.inline
+  def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
+  
+  @scala.inline
+  def XSSAuditingEnabled: XSSAuditingEnabled = "XSSAuditingEnabled".asInstanceOf[XSSAuditingEnabled]
+  
+  @scala.inline
+  def callback: callback = "callback".asInstanceOf[callback]
+  
+  @scala.inline
+  def canGoBack: canGoBack = "canGoBack".asInstanceOf[canGoBack]
+  
+  @scala.inline
+  def canGoForward: canGoForward = "canGoForward".asInstanceOf[canGoForward]
+  
+  @scala.inline
+  def clipRect: clipRect = "clipRect".asInstanceOf[clipRect]
+  
+  @scala.inline
+  def content: content = "content".asInstanceOf[content]
+  
+  @scala.inline
+  def cookies: cookies = "cookies".asInstanceOf[cookies]
+  
+  @scala.inline
+  def customHeaders: customHeaders = "customHeaders".asInstanceOf[customHeaders]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fail: fail = "fail".asInstanceOf[fail]
+  
+  @scala.inline
+  def focusedFrameName: focusedFrameName = "focusedFrameName".asInstanceOf[focusedFrameName]
+  
+  @scala.inline
+  def frameContent: frameContent = "frameContent".asInstanceOf[frameContent]
+  
+  @scala.inline
+  def frameName: frameName = "frameName".asInstanceOf[frameName]
+  
+  @scala.inline
+  def framePlainText: framePlainText = "framePlainText".asInstanceOf[framePlainText]
+  
+  @scala.inline
+  def frameTitle: frameTitle = "frameTitle".asInstanceOf[frameTitle]
+  
+  @scala.inline
+  def framesCount: framesCount = "framesCount".asInstanceOf[framesCount]
+  
+  @scala.inline
+  def framesName: framesName = "framesName".asInstanceOf[framesName]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def javascriptEnabled: javascriptEnabled = "javascriptEnabled".asInstanceOf[javascriptEnabled]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def libraryPath: libraryPath = "libraryPath".asInstanceOf[libraryPath]
+  
+  @scala.inline
+  def loadImages: loadImages = "loadImages".asInstanceOf[loadImages]
+  
+  @scala.inline
+  def localToRemoteUrlAccessEnabled: localToRemoteUrlAccessEnabled = "localToRemoteUrlAccessEnabled".asInstanceOf[localToRemoteUrlAccessEnabled]
+  
+  @scala.inline
+  def navigationLocked: navigationLocked = "navigationLocked".asInstanceOf[navigationLocked]
+  
+  @scala.inline
+  def offlineStoragePath: offlineStoragePath = "offlineStoragePath".asInstanceOf[offlineStoragePath]
+  
+  @scala.inline
+  def offlineStorageQuota: offlineStorageQuota = "offlineStorageQuota".asInstanceOf[offlineStorageQuota]
+  
+  @scala.inline
+  def onAlert: onAlert = "onAlert".asInstanceOf[onAlert]
+  
+  @scala.inline
+  def onCallback: onCallback = "onCallback".asInstanceOf[onCallback]
+  
+  @scala.inline
+  def onClosing: onClosing = "onClosing".asInstanceOf[onClosing]
+  
+  @scala.inline
+  def onConfirm: onConfirm = "onConfirm".asInstanceOf[onConfirm]
+  
+  @scala.inline
+  def onConsoleMessage: onConsoleMessage = "onConsoleMessage".asInstanceOf[onConsoleMessage]
+  
+  @scala.inline
+  def onError: onError = "onError".asInstanceOf[onError]
+  
+  @scala.inline
+  def onFilePicker: onFilePicker = "onFilePicker".asInstanceOf[onFilePicker]
+  
+  @scala.inline
+  def onInitialized: onInitialized = "onInitialized".asInstanceOf[onInitialized]
+  
+  @scala.inline
+  def onLoadFinished: onLoadFinished = "onLoadFinished".asInstanceOf[onLoadFinished]
+  
+  @scala.inline
+  def onLoadStarted: onLoadStarted = "onLoadStarted".asInstanceOf[onLoadStarted]
+  
+  @scala.inline
+  def onNavigationRequested: onNavigationRequested = "onNavigationRequested".asInstanceOf[onNavigationRequested]
+  
+  @scala.inline
+  def onPageCreated: onPageCreated = "onPageCreated".asInstanceOf[onPageCreated]
+  
+  @scala.inline
+  def onPrompt: onPrompt = "onPrompt".asInstanceOf[onPrompt]
+  
+  @scala.inline
+  def onResourceError: onResourceError = "onResourceError".asInstanceOf[onResourceError]
+  
+  @scala.inline
+  def onResourceReceived: onResourceReceived = "onResourceReceived".asInstanceOf[onResourceReceived]
+  
+  @scala.inline
+  def onResourceRequested: onResourceRequested = "onResourceRequested".asInstanceOf[onResourceRequested]
+  
+  @scala.inline
+  def onResourceTimeout: onResourceTimeout = "onResourceTimeout".asInstanceOf[onResourceTimeout]
+  
+  @scala.inline
+  def onUrlChanged: onUrlChanged = "onUrlChanged".asInstanceOf[onUrlChanged]
+  
+  @scala.inline
+  def ownsPages: ownsPages = "ownsPages".asInstanceOf[ownsPages]
+  
+  @scala.inline
+  def pages: pages = "pages".asInstanceOf[pages]
+  
+  @scala.inline
+  def pagesWindowName: pagesWindowName = "pagesWindowName".asInstanceOf[pagesWindowName]
+  
+  @scala.inline
+  def paperSize: paperSize = "paperSize".asInstanceOf[paperSize]
+  
+  @scala.inline
+  def password: password = "password".asInstanceOf[password]
+  
+  @scala.inline
+  def phantom: phantom = "phantom".asInstanceOf[phantom]
+  
+  @scala.inline
+  def plainText: plainText = "plainText".asInstanceOf[plainText]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def resourceTimeout: resourceTimeout = "resourceTimeout".asInstanceOf[resourceTimeout]
+  
+  @scala.inline
+  def scrollPosition: scrollPosition = "scrollPosition".asInstanceOf[scrollPosition]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def title: title = "title".asInstanceOf[title]
+  
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  
+  @scala.inline
+  def userAgent: userAgent = "userAgent".asInstanceOf[userAgent]
+  
+  @scala.inline
+  def userName: userName = "userName".asInstanceOf[userName]
+  
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @scala.inline
+  def viewportSize: viewportSize = "viewportSize".asInstanceOf[viewportSize]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
+  @scala.inline
+  def webSecurityEnabled: webSecurityEnabled = "webSecurityEnabled".asInstanceOf[webSecurityEnabled]
+  
+  @scala.inline
+  def windowName: windowName = "windowName".asInstanceOf[windowName]
+  
+  @scala.inline
+  def zoomFactor: zoomFactor = "zoomFactor".asInstanceOf[zoomFactor]
+  
   @js.native
   sealed trait A3 extends js.Object
   
@@ -262,178 +521,4 @@ object phantomStrings {
   
   @js.native
   sealed trait zoomFactor extends js.Object
-  
-  @scala.inline
-  def A3: A3 = "A3".asInstanceOf[A3]
-  @scala.inline
-  def A4: A4 = "A4".asInstanceOf[A4]
-  @scala.inline
-  def A5: A5 = "A5".asInstanceOf[A5]
-  @scala.inline
-  def BackOrForward: BackOrForward = "BackOrForward".asInstanceOf[BackOrForward]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def FormResubmitted: FormResubmitted = "FormResubmitted".asInstanceOf[FormResubmitted]
-  @scala.inline
-  def FormSubmitted: FormSubmitted = "FormSubmitted".asInstanceOf[FormSubmitted]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def Legal: Legal = "Legal".asInstanceOf[Legal]
-  @scala.inline
-  def Letter: Letter = "Letter".asInstanceOf[Letter]
-  @scala.inline
-  def LinkClicked: LinkClicked = "LinkClicked".asInstanceOf[LinkClicked]
-  @scala.inline
-  def Other: Other = "Other".asInstanceOf[Other]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def Reload: Reload = "Reload".asInstanceOf[Reload]
-  @scala.inline
-  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
-  @scala.inline
-  def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
-  @scala.inline
-  def XSSAuditingEnabled: XSSAuditingEnabled = "XSSAuditingEnabled".asInstanceOf[XSSAuditingEnabled]
-  @scala.inline
-  def callback: callback = "callback".asInstanceOf[callback]
-  @scala.inline
-  def canGoBack: canGoBack = "canGoBack".asInstanceOf[canGoBack]
-  @scala.inline
-  def canGoForward: canGoForward = "canGoForward".asInstanceOf[canGoForward]
-  @scala.inline
-  def clipRect: clipRect = "clipRect".asInstanceOf[clipRect]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
-  def cookies: cookies = "cookies".asInstanceOf[cookies]
-  @scala.inline
-  def customHeaders: customHeaders = "customHeaders".asInstanceOf[customHeaders]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
-  @scala.inline
-  def focusedFrameName: focusedFrameName = "focusedFrameName".asInstanceOf[focusedFrameName]
-  @scala.inline
-  def frameContent: frameContent = "frameContent".asInstanceOf[frameContent]
-  @scala.inline
-  def frameName: frameName = "frameName".asInstanceOf[frameName]
-  @scala.inline
-  def framePlainText: framePlainText = "framePlainText".asInstanceOf[framePlainText]
-  @scala.inline
-  def frameTitle: frameTitle = "frameTitle".asInstanceOf[frameTitle]
-  @scala.inline
-  def framesCount: framesCount = "framesCount".asInstanceOf[framesCount]
-  @scala.inline
-  def framesName: framesName = "framesName".asInstanceOf[framesName]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def javascriptEnabled: javascriptEnabled = "javascriptEnabled".asInstanceOf[javascriptEnabled]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def libraryPath: libraryPath = "libraryPath".asInstanceOf[libraryPath]
-  @scala.inline
-  def loadImages: loadImages = "loadImages".asInstanceOf[loadImages]
-  @scala.inline
-  def localToRemoteUrlAccessEnabled: localToRemoteUrlAccessEnabled = "localToRemoteUrlAccessEnabled".asInstanceOf[localToRemoteUrlAccessEnabled]
-  @scala.inline
-  def navigationLocked: navigationLocked = "navigationLocked".asInstanceOf[navigationLocked]
-  @scala.inline
-  def offlineStoragePath: offlineStoragePath = "offlineStoragePath".asInstanceOf[offlineStoragePath]
-  @scala.inline
-  def offlineStorageQuota: offlineStorageQuota = "offlineStorageQuota".asInstanceOf[offlineStorageQuota]
-  @scala.inline
-  def onAlert: onAlert = "onAlert".asInstanceOf[onAlert]
-  @scala.inline
-  def onCallback: onCallback = "onCallback".asInstanceOf[onCallback]
-  @scala.inline
-  def onClosing: onClosing = "onClosing".asInstanceOf[onClosing]
-  @scala.inline
-  def onConfirm: onConfirm = "onConfirm".asInstanceOf[onConfirm]
-  @scala.inline
-  def onConsoleMessage: onConsoleMessage = "onConsoleMessage".asInstanceOf[onConsoleMessage]
-  @scala.inline
-  def onError: onError = "onError".asInstanceOf[onError]
-  @scala.inline
-  def onFilePicker: onFilePicker = "onFilePicker".asInstanceOf[onFilePicker]
-  @scala.inline
-  def onInitialized: onInitialized = "onInitialized".asInstanceOf[onInitialized]
-  @scala.inline
-  def onLoadFinished: onLoadFinished = "onLoadFinished".asInstanceOf[onLoadFinished]
-  @scala.inline
-  def onLoadStarted: onLoadStarted = "onLoadStarted".asInstanceOf[onLoadStarted]
-  @scala.inline
-  def onNavigationRequested: onNavigationRequested = "onNavigationRequested".asInstanceOf[onNavigationRequested]
-  @scala.inline
-  def onPageCreated: onPageCreated = "onPageCreated".asInstanceOf[onPageCreated]
-  @scala.inline
-  def onPrompt: onPrompt = "onPrompt".asInstanceOf[onPrompt]
-  @scala.inline
-  def onResourceError: onResourceError = "onResourceError".asInstanceOf[onResourceError]
-  @scala.inline
-  def onResourceReceived: onResourceReceived = "onResourceReceived".asInstanceOf[onResourceReceived]
-  @scala.inline
-  def onResourceRequested: onResourceRequested = "onResourceRequested".asInstanceOf[onResourceRequested]
-  @scala.inline
-  def onResourceTimeout: onResourceTimeout = "onResourceTimeout".asInstanceOf[onResourceTimeout]
-  @scala.inline
-  def onUrlChanged: onUrlChanged = "onUrlChanged".asInstanceOf[onUrlChanged]
-  @scala.inline
-  def ownsPages: ownsPages = "ownsPages".asInstanceOf[ownsPages]
-  @scala.inline
-  def pages: pages = "pages".asInstanceOf[pages]
-  @scala.inline
-  def pagesWindowName: pagesWindowName = "pagesWindowName".asInstanceOf[pagesWindowName]
-  @scala.inline
-  def paperSize: paperSize = "paperSize".asInstanceOf[paperSize]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def phantom: phantom = "phantom".asInstanceOf[phantom]
-  @scala.inline
-  def plainText: plainText = "plainText".asInstanceOf[plainText]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def resourceTimeout: resourceTimeout = "resourceTimeout".asInstanceOf[resourceTimeout]
-  @scala.inline
-  def scrollPosition: scrollPosition = "scrollPosition".asInstanceOf[scrollPosition]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def userAgent: userAgent = "userAgent".asInstanceOf[userAgent]
-  @scala.inline
-  def userName: userName = "userName".asInstanceOf[userName]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
-  @scala.inline
-  def viewportSize: viewportSize = "viewportSize".asInstanceOf[viewportSize]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def webSecurityEnabled: webSecurityEnabled = "webSecurityEnabled".asInstanceOf[webSecurityEnabled]
-  @scala.inline
-  def windowName: windowName = "windowName".asInstanceOf[windowName]
-  @scala.inline
-  def zoomFactor: zoomFactor = "zoomFactor".asInstanceOf[zoomFactor]
 }
-

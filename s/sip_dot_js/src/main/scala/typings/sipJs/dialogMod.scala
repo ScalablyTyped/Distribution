@@ -9,11 +9,12 @@ import typings.sipJs.messagesMod.URI
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/dialogs/dialog", JSImport.Namespace)
 @js.native
 object dialogMod extends js.Object {
+  
   @js.native
   class Dialog protected () extends js.Object {
     /**
@@ -22,12 +23,15 @@ object dialogMod extends js.Object {
       * @param dialogState - Initial dialog state.
       */
     protected def this(core: UserAgentCore, dialogState: DialogState) = this()
-    var core: UserAgentCore = js.native
-    var dialogState: DialogState = js.native
+    
     /** Call identifier component of the dialog id. */
     def callId: String = js.native
+    
     /** Confirm the dialog. Only matters if dialog is currently early. */
     def confirm(): Unit = js.native
+    
+    var core: UserAgentCore = js.native
+    
     /**
       * A request within a dialog is constructed by using many of the
       * components of the state stored as part of the dialog.
@@ -36,8 +40,12 @@ object dialogMod extends js.Object {
       */
     def createOutgoingRequestMessage(method: String): OutgoingRequestMessage = js.native
     def createOutgoingRequestMessage(method: String, options: Cseq): OutgoingRequestMessage = js.native
+    
+    var dialogState: DialogState = js.native
+    
     /** Destructor. */
     def dispose(): Unit = js.native
+    
     /**
       * A dialog can also be in the "early" state, which occurs when it is
       * created with a provisional response, and then it transition to the
@@ -53,6 +61,7 @@ object dialogMod extends js.Object {
       * particular with regard to a callee sending BYE requests).
       */
     def early: Boolean = js.native
+    
     /**
       * A dialog is identified at each UA with a dialog ID, which consists of
       * a Call-ID value, a local tag and a remote tag.  The dialog ID at each
@@ -63,6 +72,7 @@ object dialogMod extends js.Object {
       * https://tools.ietf.org/html/rfc3261#section-12
       */
     def id: String = js.native
+    
     /**
       * Increment the local sequence number by one.
       * It feels like this should be protected, but the current authentication handling currently
@@ -70,12 +80,16 @@ object dialogMod extends js.Object {
       * @internal
       */
     def incrementLocalSequenceNumber(): Unit = js.native
+    
     /** Local sequence number (used to order requests from the UA to its peer). */
     def localSequenceNumber: js.UndefOr[Double] = js.native
+    
     /** Local tag component of the dialog id. */
     def localTag: String = js.native
+    
     /** Local URI. */
     def localURI: URI = js.native
+    
     /**
       * Requests sent within a dialog, as any other requests, are atomic.  If
       * a particular request is accepted by the UAS, all the state changes
@@ -89,6 +103,7 @@ object dialogMod extends js.Object {
       * @param message - Incoming request message within this dialog.
       */
     def receiveRequest(message: IncomingRequestMessage): Unit = js.native
+    
     /**
       * If the dialog identifier in the 2xx response matches the dialog
       * identifier of an existing dialog, the dialog MUST be transitioned to
@@ -109,24 +124,31 @@ object dialogMod extends js.Object {
       *  https://tools.ietf.org/html/rfc3261#section-13.2.2.4
       */
     def recomputeRouteSet(message: IncomingResponseMessage): Unit = js.native
+    
     /** Remote sequence number (used to order requests from its peer to the UA). */
     def remoteSequenceNumber: js.UndefOr[Double] = js.native
+    
     /** Remote tag component of the dialog id. */
     def remoteTag: String = js.native
+    
     /** Remote target. */
     def remoteTarget: URI = js.native
+    
     /** Remote URI. */
     def remoteURI: URI = js.native
+    
     /**
       * Route set, which is an ordered list of URIs. The route set is the
       * list of servers that need to be traversed to send a request to the peer.
       */
     def routeSet: js.Array[String] = js.native
+    
     /**
       * If the request was sent over TLS, and the Request-URI contained
       * a SIPS URI, the "secure" flag is set to true. *NOT IMPLEMENTED*
       */
     def secure: Boolean = js.native
+    
     /**
       * If the remote sequence number was not empty, but the sequence number
       * of the request is lower than the remote sequence number, the request
@@ -138,13 +160,14 @@ object dialogMod extends js.Object {
       *          Otherwise a 500 Server Internal Error was stateless sent and request processing must stop.
       */
     /* protected */ def sequenceGuard(message: IncomingRequestMessage): Boolean = js.native
+    
     /** The user agent core servicing this dialog. */
     def userAgentCore: UserAgentCore = js.native
   }
-  
   /* static members */
   @js.native
   object Dialog extends js.Object {
+    
     /**
       * When a UAC receives a response that establishes a dialog, it
       * constructs the state of the dialog.  This state MUST be maintained
@@ -154,6 +177,7 @@ object dialogMod extends js.Object {
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
     def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = js.native
+    
     /**
       * The UAS then constructs the state of the dialog.  This state MUST be
       * maintained for the duration of the dialog.
@@ -164,6 +188,4 @@ object dialogMod extends js.Object {
     def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = js.native
     def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = js.native
   }
-  
 }
-

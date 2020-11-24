@@ -18,7 +18,7 @@ import typings.std.Float32Array
 import typings.std.Uint32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Rope Game Object.
@@ -46,6 +46,7 @@ trait Rope
      with Transform
      with Visible
      with ScrollFactor {
+  
   /**
     * An array containing the alpha data for this Rope.
     * 
@@ -56,10 +57,12 @@ trait Rope
     * of the array, then you should use the `setAlphas` method instead.
     */
   var alphas: Float32Array = js.native
+  
   /**
     * The Animation Controller of this Rope.
     */
   var anims: Animation = js.native
+  
   /**
     * An array containing the color data for this Rope.
     * 
@@ -70,6 +73,7 @@ trait Rope
     * of the array, then you should use the `setColors` method instead.
     */
   var colors: Uint32Array = js.native
+  
   /**
     * You can optionally choose to render the vertices of this Rope to a Graphics instance.
     * 
@@ -88,16 +92,19 @@ trait Rope
     * To disable rendering, set this property back to `null`.
     */
   var debugCallback: js.Function = js.native
+  
   /**
     * The Graphics instance that the debug vertices will be drawn to, if `setDebug` has
     * been called.
     */
   var debugGraphic: Graphics = js.native
+  
   /**
     * If the Rope is marked as `dirty` it will automatically recalculate its vertices
     * the next time it renders. You can also force this by calling `updateVertices`.
     */
   var dirty: Boolean = js.native
+  
   /**
     * Are the Rope vertices aligned horizontally, in a strip, or vertically, in a column?
     * 
@@ -105,6 +112,18 @@ trait Rope
     * See the `setVertical` and `setHorizontal` methods.
     */
   val horizontal: Boolean = js.native
+  
+  /**
+    * Start playing the given animation.
+    * @param key The string-based key of the animation to play.
+    * @param ignoreIfPlaying If an animation is already playing then ignore this call. Default false.
+    * @param startFrame Optionally start the animation playing from this frame index. Default 0.
+    */
+  def play(key: String): this.type = js.native
+  def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): this.type = js.native
+  def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
+  def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
+  
   /**
     * An array containing the points data for this Rope.
     * 
@@ -119,42 +138,14 @@ trait Rope
     * Should you need to change the _size_ of this array, then you should always use the `setPoints` method.
     */
   var points: js.Array[Vector2Like] = js.native
-  /**
-    * The tint fill mode.
-    * 
-    * 0 = An additive tint (the default), where vertices colors are blended with the texture.
-    * 1 = A fill tint, where the vertices colors replace the texture, but respects texture alpha.
-    * 2 = A complete tint, where the vertices colors replace the texture, including alpha, entirely.
-    */
-  var tintFill: integer = js.native
-  /**
-    * An array containing the uv data for this Rope.
-    * 
-    * This data is calculated automatically in the `setPoints` method, based on the points provided.
-    */
-  var uv: Float32Array = js.native
-  /**
-    * An array containing the vertices data for this Rope.
-    * 
-    * This data is calculated automatically in the `updateVertices` method, based on the points provided.
-    */
-  var vertices: Float32Array = js.native
-  /**
-    * Start playing the given animation.
-    * @param key The string-based key of the animation to play.
-    * @param ignoreIfPlaying If an animation is already playing then ignore this call. Default false.
-    * @param startFrame Optionally start the animation playing from this frame index. Default 0.
-    */
-  def play(key: String): this.type = js.native
-  def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): this.type = js.native
-  def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
-  def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
+  
   /**
     * The Rope update loop.
     * @param time The current timestamp.
     * @param delta The delta time, in ms, elapsed since the last frame.
     */
   /* protected */ def preUpdate(time: Double, delta: Double): Unit = js.native
+  
   /**
     * The built-in Rope vertices debug rendering method.
     * 
@@ -164,12 +155,14 @@ trait Rope
     * @param verts An array of translated vertex coordinates.
     */
   def renderDebugVerts(src: Rope, meshLength: integer, verts: js.Array[Double]): Unit = js.native
+  
   /**
     * Resizes all of the internal arrays: `vertices`, `uv`, `colors` and `alphas` to the new
     * given Rope segment total.
     * @param newSize The amount of segments to split the Rope in to.
     */
   def resizeArrays(newSize: integer): this.type = js.native
+  
   /**
     * Set the alpha values used by the Rope during rendering.
     * 
@@ -196,6 +189,7 @@ trait Rope
   def setAlphas(alphas: js.Array[Double], bottomAlpha: Double): this.type = js.native
   def setAlphas(alphas: Double): this.type = js.native
   def setAlphas(alphas: Double, bottomAlpha: Double): this.type = js.native
+  
   /**
     * Set the color values used by the Rope during rendering.
     * 
@@ -217,6 +211,7 @@ trait Rope
   def setColors(): this.type = js.native
   def setColors(colors: js.Array[Double]): this.type = js.native
   def setColors(colors: Double): this.type = js.native
+  
   /**
     * This method enables rendering of the Rope vertices to the given Graphics instance.
     * 
@@ -246,12 +241,14 @@ trait Rope
   def setDebug(graphic: js.UndefOr[scala.Nothing], callback: js.Function): this.type = js.native
   def setDebug(graphic: Graphics): this.type = js.native
   def setDebug(graphic: Graphics, callback: js.Function): this.type = js.native
+  
   /**
     * Flags this Rope as being dirty. A dirty rope will recalculate all of its vertices data
     * the _next_ time it renders. You should set this rope as dirty if you update the points
     * array directly.
     */
   def setDirty(): this.type = js.native
+  
   /**
     * Sets the alignment of the points in this Rope to be horizontal, in a strip format.
     * 
@@ -288,6 +285,7 @@ trait Rope
   def setHorizontal(points: integer, colors: Double): this.type = js.native
   def setHorizontal(points: integer, colors: Double, alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: integer, colors: Double, alphas: Double): this.type = js.native
+  
   /**
     * Sets the points used by this Rope.
     * 
@@ -350,6 +348,7 @@ trait Rope
   def setPoints(points: integer, colors: Double): this.type = js.native
   def setPoints(points: integer, colors: Double, alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: integer, colors: Double, alphas: Double): this.type = js.native
+  
   /**
     * Sets the tint fill mode.
     * 
@@ -367,6 +366,7 @@ trait Rope
     */
   def setTintFill(): this.type = js.native
   def setTintFill(value: integer): this.type = js.native
+  
   /**
     * Sets the alignment of the points in this Rope to be vertical, in a column format.
     * 
@@ -403,10 +403,21 @@ trait Rope
   def setVertical(points: integer, colors: Double): this.type = js.native
   def setVertical(points: integer, colors: Double, alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: integer, colors: Double, alphas: Double): this.type = js.native
+  
+  /**
+    * The tint fill mode.
+    * 
+    * 0 = An additive tint (the default), where vertices colors are blended with the texture.
+    * 1 = A fill tint, where the vertices colors replace the texture, but respects texture alpha.
+    * 2 = A complete tint, where the vertices colors replace the texture, including alpha, entirely.
+    */
+  var tintFill: integer = js.native
+  
   /**
     * Updates all of the UVs based on the Rope.points and `flipX` and `flipY` settings.
     */
   def updateUVs(): this.type = js.native
+  
   /**
     * Updates the vertices based on the Rope points.
     * 
@@ -415,5 +426,18 @@ trait Rope
     * the Rope points directly.
     */
   def updateVertices(): this.type = js.native
+  
+  /**
+    * An array containing the uv data for this Rope.
+    * 
+    * This data is calculated automatically in the `setPoints` method, based on the points provided.
+    */
+  var uv: Float32Array = js.native
+  
+  /**
+    * An array containing the vertices data for this Rope.
+    * 
+    * This data is calculated automatically in the `updateVertices` method, based on the points provided.
+    */
+  var vertices: Float32Array = js.native
 }
-

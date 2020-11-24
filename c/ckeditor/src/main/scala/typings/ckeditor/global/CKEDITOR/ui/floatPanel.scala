@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.dom.element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CKEDITOR.ui.floatPanel")
 @js.native
@@ -17,4 +17,3 @@ class floatPanel protected ()
     level: Double
   ) = this()
 }
-

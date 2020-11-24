@@ -10,9 +10,9 @@ Support for Windows services, event logging, UAC, and several helper methods for
 | ------------------ | :-------------: |
 | Full name          | node-windows |
 | Keywords           | ngn, windows, service, daemon, logging, event, event logging, elevate, sudo, task |
-| # releases         | 1 |
-| # dependents       | 58 |
-| # downloads        | 197422 |
+| # releases         | 6 |
+| # dependents       | 61 |
+| # downloads        | 195584 |
 | # stars            | 45 |
 
 ## Links

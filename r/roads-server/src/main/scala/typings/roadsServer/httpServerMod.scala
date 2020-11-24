@@ -8,30 +8,22 @@ import typings.roads.mod.Road
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roads-server/types/httpServer", JSImport.Namespace)
 @js.native
 object httpServerMod extends js.Object {
+  
   @js.native
   trait Server extends js.Object {
+    
     /**
       * If set, this holds the custom error handler defined by the user in the constructor
       *
       * @type null|function
       */
     var custom_error_handler: js.UndefOr[js.Function] = js.native
-    /**
-      * This is the road object that will handle all requests
-      * @type Road
-      */
-    var road: Road = js.native
-    /**
-      * This is the node.js http server from the http library.
-      * @todo  support HTTPS
-      * @type HTTPServer
-      */
-    var server: typings.node.httpMod.Server = js.native
+    
     /**
       * Standard logic to handle any errors thrown in the roads request.
       * If a custom error handler was provided in the constructor, it will use that. Otherwise
@@ -45,6 +37,7 @@ object httpServerMod extends js.Object {
       * @param  Error error
       */
     /* protected */ def error_handler(http_response: ServerResponse, error: Error): Unit = js.native
+    
     /**
       * Start the http server.
       *
@@ -53,6 +46,7 @@ object httpServerMod extends js.Object {
       */
     def listen(port: Double, host: String): Unit = js.native
     def listen(port: Double, host: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    
     /**
       * Standard logic for turning each request into a road request, and communicating the response
       * back to the client
@@ -61,6 +55,13 @@ object httpServerMod extends js.Object {
       * @param  HTTPResponse http_response
       */
     /* protected */ def onRequest(http_request: IncomingMessage, http_response: ServerResponse): Unit = js.native
+    
+    /**
+      * This is the road object that will handle all requests
+      * @type Road
+      */
+    var road: Road = js.native
+    
     /**
       * Helper function to write a roads Response object to an HTTPResponse object
       *
@@ -68,6 +69,13 @@ object httpServerMod extends js.Object {
       * @param  Response response
       */
     /* protected */ def sendResponse(http_response: ServerResponse, response: Response): Unit = js.native
+    
+    /**
+      * This is the node.js http server from the http library.
+      * @todo  support HTTPS
+      * @type HTTPServer
+      */
+    var server: typings.node.httpMod.Server = js.native
   }
   
   @js.native
@@ -85,6 +93,4 @@ object httpServerMod extends js.Object {
     def this(road: Road, error_handler: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions) = this()
     def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
   }
-  
 }
-

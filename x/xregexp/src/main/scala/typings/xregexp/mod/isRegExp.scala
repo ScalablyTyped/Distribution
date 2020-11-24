@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "isRegExp")
 @js.native
 object isRegExp extends js.Object {
+  
   /**
     * Returns `true` if an object is a regex; `false` if it isn't. This works correctly for regexes
     * created in another frame, when `instanceof` and `constructor` checks would fail.
@@ -22,4 +23,3 @@ object isRegExp extends js.Object {
     */
   def apply(value: js.Any): /* is std.RegExp */ Boolean = js.native
 }
-

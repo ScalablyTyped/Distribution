@@ -11,8 +11,8 @@ Simple and easy stdio capture for Node.js
 | Full name          | capture-console |
 | Keywords           | stdio, stderr, stdout, logging, capture, console, intercept |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 372612 |
+| # dependents       | 7 |
+| # downloads        | 530397 |
 | # stars            | 0 |
 
 ## Links

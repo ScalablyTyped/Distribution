@@ -8,11 +8,12 @@ import typings.std.ReadonlySet
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("type-fest/source/partial-deep", JSImport.Namespace)
 @js.native
 object partialDeepMod extends js.Object {
+  
   /**
   Same as `PartialDeep`, but accepts only `Map`s and  as inputs. Internal helper for `PartialDeep`.
   */
@@ -40,6 +41,7 @@ object partialDeepMod extends js.Object {
   type PartialDeep[T] = js.UndefOr[
     js.Any | PartialObjectDeep[T] | T | PartialReadonlySetDeep[js.Any] | (PartialReadonlyMapDeep[js.Any, js.Any]) | PartialSetDeep[js.Any] | (PartialMapDeep[js.Any, js.Any]) | Partial[T]
   ]
+  
   /**
   Same as `PartialDeep`, but accepts only `object`s as inputs. Internal helper for `PartialDeep`.
   */
@@ -47,4 +49,3 @@ object partialDeepMod extends js.Object {
   {[ KeyType in keyof ObjectType ]:? type-fest.type-fest/source/partial-deep.PartialDeep<ObjectType[KeyType]>}
     */ typings.typeFest.typeFestStrings.PartialObjectDeep with TopLevel[ObjectType]
 }
-

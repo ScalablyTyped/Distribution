@@ -10,9 +10,9 @@ A minimal, blazing fast user interface library.
 | ------------------ | :-------------: |
 | Full name          | moonjs |
 | Keywords           | moon, mvvm, user interface, UI |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 7558 |
+| # downloads        | 6733 |
 | # stars            | 2 |
 
 ## Links

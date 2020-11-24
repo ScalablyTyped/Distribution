@@ -11,9 +11,9 @@ import typings.react.mod.VideoHTMLAttributes
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Video", "Video")
+@JSImport("grommet/components/Video", "Video")
 @js.native
 class Video protected ()
   extends Component[
@@ -36,8 +36,7 @@ class Video protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6/components/Video", "Video")
+@JSImport("grommet/components/Video", "Video")
 @js.native
 object Video extends TopLevel[
       ComponentClass[
@@ -48,4 +47,3 @@ object Video extends TopLevel[
         ComponentState
       ]
     ]
-

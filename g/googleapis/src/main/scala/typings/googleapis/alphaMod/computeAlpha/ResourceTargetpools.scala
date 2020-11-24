@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Targetpools")
 @js.native
 class ResourceTargetpools protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetPools.addHealthCheck
     * @desc Adds health check URLs to a target pool.
@@ -45,6 +45,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.addInstance
     * @desc Adds an instance to a target pool.
@@ -77,6 +78,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.aggregatedList
     * @desc Retrieves an aggregated list of target pools.
@@ -112,6 +114,9 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetPoolAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetPools.delete
     * @desc Deletes the specified target pool.
@@ -143,6 +148,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.get
     * @desc Returns the specified target pool. Gets a list of available target
@@ -174,6 +180,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetPool]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.getHealth
     * @desc Gets the most recent health check results for each IP for the
@@ -209,6 +216,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetPoolInstanceHealth]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.insert
     * @desc Creates a target pool in the specified project and region using the
@@ -241,6 +249,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.list
     * @desc Retrieves a list of target pools available to the specified project
@@ -275,6 +284,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetPoolList]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.removeHealthCheck
     * @desc Removes health check URL from a target pool.
@@ -310,6 +320,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.removeInstance
     * @desc Removes instance URL from a target pool.
@@ -342,6 +353,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.setBackup
     * @desc Changes a backup target pool's configurations.
@@ -375,6 +387,7 @@ class ResourceTargetpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetPools.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -410,4 +423,3 @@ class ResourceTargetpools protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

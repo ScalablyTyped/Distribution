@@ -10,9 +10,9 @@ Converts inline style to object.
 | ------------------ | :-------------: |
 | Full name          | style-to-object |
 | Keywords           | style-to-object, inline, style, parser, css, object, pojo |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 27830075 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 50285796 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.umbraco.umbraco.services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IServerValidationManager extends js.Object {
+  
   /**
     * @ngdoc function
     * @name addFieldError
@@ -26,6 +27,7 @@ trait IServerValidationManager extends js.Object {
     * Adds an error message for a native content item field (not a user defined property, for Example, 'Name')
     */
   def addFieldError(fieldName: String, errorMsg: String): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name addPropertyError
@@ -36,6 +38,7 @@ trait IServerValidationManager extends js.Object {
     * Adds an error message for the content property
     */
   def addPropertyError(propertyAlias: String, fieldName: String, errorMsg: String): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name clear
@@ -46,6 +49,7 @@ trait IServerValidationManager extends js.Object {
     * Clears all errors
     */
   def clear(): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name umbraco.services.serverValidationManager#subscribe
@@ -62,6 +66,7 @@ trait IServerValidationManager extends js.Object {
     *   colleciton so that if another route change occurs, the previously persisted validation errors are not re-bound to the new item.
     */
   def executeAndClearAllSubscriptions(): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name getFieldCallbacks
@@ -72,6 +77,7 @@ trait IServerValidationManager extends js.Object {
     * Gets all callbacks that has been registered using the subscribe method for the field.
     */
   def getFieldCallbacks(fieldName: String): js.Any = js.native
+  
   /**
     * @ngdoc function
     * @name getFieldError
@@ -82,6 +88,7 @@ trait IServerValidationManager extends js.Object {
     * Gets the error message for a content field
     */
   def getFieldError(fieldName: String): String = js.native
+  
   /**
     * @ngdoc function
     * @name getPropertyCallbacks
@@ -94,6 +101,7 @@ trait IServerValidationManager extends js.Object {
     * explicit field name set.
     */
   def getPropertyCallbacks(propertyAlias: String, fieldName: String): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name getPropertyError
@@ -104,6 +112,7 @@ trait IServerValidationManager extends js.Object {
     * Gets the error message for the content property
     */
   def getPropertyError(propertyAlias: String, fieldName: String): String = js.native
+  
   /**
     * @ngdoc function
     * @name hasFieldError
@@ -114,6 +123,7 @@ trait IServerValidationManager extends js.Object {
     * Checks if a content field has an error
     */
   def hasFieldError(fieldName: String): Boolean = js.native
+  
   /**
     * @ngdoc function
     * @name hasPropertyError
@@ -124,6 +134,7 @@ trait IServerValidationManager extends js.Object {
     * Checks if the content property + field name combo has an error
     */
   def hasPropertyError(propertyAlias: String, fieldName: String): Boolean = js.native
+  
   /**
     * @ngdoc function
     * @name removePropertyError
@@ -134,6 +145,7 @@ trait IServerValidationManager extends js.Object {
     * Removes an error message for the content property
     */
   def removePropertyError(propertyAlias: String, fieldName: String): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name reset
@@ -144,6 +156,7 @@ trait IServerValidationManager extends js.Object {
     * Clears all errors and notifies all callbacks that all server errros are now valid - used when submitting a form
     */
   def reset(): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name umbraco.services.serverValidationManager#subscribe
@@ -160,8 +173,8 @@ trait IServerValidationManager extends js.Object {
     */
   def subscribe(propertyAlias: String, fieldName: String, callback: js.Function): Unit = js.native
 }
-
 object IServerValidationManager {
+  
   @scala.inline
   def apply(
     addFieldError: (String, String) => Unit,
@@ -181,44 +194,59 @@ object IServerValidationManager {
     val __obj = js.Dynamic.literal(addFieldError = js.Any.fromFunction2(addFieldError), addPropertyError = js.Any.fromFunction3(addPropertyError), clear = js.Any.fromFunction0(clear), executeAndClearAllSubscriptions = js.Any.fromFunction0(executeAndClearAllSubscriptions), getFieldCallbacks = js.Any.fromFunction1(getFieldCallbacks), getFieldError = js.Any.fromFunction1(getFieldError), getPropertyCallbacks = js.Any.fromFunction2(getPropertyCallbacks), getPropertyError = js.Any.fromFunction2(getPropertyError), hasFieldError = js.Any.fromFunction1(hasFieldError), hasPropertyError = js.Any.fromFunction2(hasPropertyError), removePropertyError = js.Any.fromFunction2(removePropertyError), reset = js.Any.fromFunction0(reset), subscribe = js.Any.fromFunction3(subscribe))
     __obj.asInstanceOf[IServerValidationManager]
   }
+  
   @scala.inline
   implicit class IServerValidationManagerOps[Self <: IServerValidationManager] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddFieldError(value: (String, String) => Unit): Self = this.set("addFieldError", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setAddPropertyError(value: (String, String, String) => Unit): Self = this.set("addPropertyError", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setExecuteAndClearAllSubscriptions(value: () => Unit): Self = this.set("executeAndClearAllSubscriptions", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFieldCallbacks(value: String => js.Any): Self = this.set("getFieldCallbacks", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetFieldError(value: String => String): Self = this.set("getFieldError", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetPropertyCallbacks(value: (String, String) => Unit): Self = this.set("getPropertyCallbacks", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetPropertyError(value: (String, String) => String): Self = this.set("getPropertyError", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setHasFieldError(value: String => Boolean): Self = this.set("hasFieldError", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHasPropertyError(value: (String, String) => Boolean): Self = this.set("hasPropertyError", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemovePropertyError(value: (String, String) => Unit): Self = this.set("removePropertyError", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSubscribe(value: (String, String, js.Function) => Unit): Self = this.set("subscribe", js.Any.fromFunction3(value))
   }
-  
 }
-

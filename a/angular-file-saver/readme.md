@@ -10,9 +10,9 @@ An AngularJS service that implements the HTML5 W3C saveAs() in browsers that do 
 | ------------------ | :-------------: |
 | Full name          | angular-file-saver |
 | Keywords           | filesaver, angular, blob, save, file |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 619123 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 937655 |
 | # stars            | 5 |
 
 ## Links

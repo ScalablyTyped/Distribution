@@ -27,7 +27,7 @@ import typings.marked.markedStrings.text
 import typings.marked.mod.Tokens.ListItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.marked.mod.Tokens.Space
@@ -55,55 +55,63 @@ import scala.scalajs.js.annotation._
   - typings.marked.mod.Tokens.Del
 */
 trait Token extends js.Object
-
 object Token {
+  
   @scala.inline
   def Escape(raw: String, text: String, `type`: escape): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Def(href: String, raw: String, title: String): Token = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Image(href: String, raw: String, text: String, title: String, `type`: image): Token = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Blockquote(raw: String, text: String, `type`: blockquote): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Text(raw: String, text: String, `type`: text): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Strong(raw: String, text: String, `type`: strong): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Hr(raw: String, `type`: hr): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Del(raw: String, text: String, `type`: del): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def List(
     items: js.Array[ListItem],
@@ -117,66 +125,77 @@ object Token {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def BlockquoteStart(raw: String, `type`: blockquote_start): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Codespan(raw: String, text: String, `type`: codespan): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def ListItem(checked: Boolean, loose: Boolean, raw: String, task: Boolean, text: String, `type`: list_item): Token = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], loose = loose.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Space(raw: String, `type`: space): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Br(raw: String, `type`: br): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Em(raw: String, text: String, `type`: em): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Link(href: String, raw: String, text: String, title: String, `type`: link): Token = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Tag(inLink: Boolean, inRawBlock: Boolean, raw: String, text: String, `type`: text | html): Token = {
     val __obj = js.Dynamic.literal(inLink = inLink.asInstanceOf[js.Any], inRawBlock = inRawBlock.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Code(raw: String, text: String, `type`: code): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def BlockquoteEnd(raw: String, `type`: blockquote_end): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Table(
     align: js.Array[center | left | right | Null],
@@ -189,18 +208,21 @@ object Token {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Paragraph(raw: String, text: String, `type`: paragraph): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def Heading(depth: Double, raw: String, text: String, `type`: heading): Token = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
+  
   @scala.inline
   def HTML(pre: Boolean, raw: String, text: String, `type`: html): Token = {
     val __obj = js.Dynamic.literal(pre = pre.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -208,4 +230,3 @@ object Token {
     __obj.asInstanceOf[Token]
   }
 }
-

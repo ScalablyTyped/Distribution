@@ -11,8 +11,8 @@ Node.js Library for the Backblaze B2 Storage Service
 | Full name          | backblaze-b2 |
 | Keywords           | backblaze, b2, storage |
 | # releases         | 6 |
-| # dependents       | 18 |
-| # downloads        | 60033 |
+| # dependents       | 20 |
+| # downloads        | 234211 |
 | # stars            | 5 |
 
 ## Links

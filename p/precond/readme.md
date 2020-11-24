@@ -12,7 +12,7 @@ Precondition checking utilities.
 | Keywords           | precondition, assert, invariant, contract, condition |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 10801674 |
+| # downloads        | 15678864 |
 | # stars            | 1 |
 
 ## Links

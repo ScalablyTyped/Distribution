@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-core-helpers
 
-Typings are for version 1.2.11
+Typings are for version 1.3.0
 
 ## Library description:
 Web3 core tools helper for sub packages. This is an internal package.
@@ -10,9 +10,9 @@ Web3 core tools helper for sub packages. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core-helpers |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 63 |
-| # downloads        | 4520145 |
+| # releases         | 41 |
+| # dependents       | 92 |
+| # downloads        | 6071423 |
 | # stars            | 0 |
 
 ## Links

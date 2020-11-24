@@ -3,11 +3,12 @@ package typings.googleEarth.global.google.earth
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.earth.createInstance")
 @js.native
 object createInstance extends js.Object {
+  
   def apply(
     domNode: String,
     initCallback: js.Function1[/* plugin */ typings.googleEarth.google.earth.GEPlugin, Unit],
@@ -31,4 +32,3 @@ object createInstance extends js.Object {
     options: js.Any
   ): Unit = js.native
 }
-

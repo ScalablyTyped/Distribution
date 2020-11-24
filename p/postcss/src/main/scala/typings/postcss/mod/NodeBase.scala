@@ -2,25 +2,11 @@ package typings.postcss.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NodeBase extends js.Object {
-  /**
-    * Contains information to generate byte-to-byte equal node string as it
-    * was in origin input.
-    */
-  var raws: NodeRaws = js.native
-  /**
-    * Returns the input source of the node. The property is used in source
-    * map generation. If you create a node manually
-    * (e.g., with postcss.decl() ), that node will not have a source
-    * property and will be absent from the source map. For this reason, the
-    * plugin developer should consider cloning nodes to create new ones
-    * (in which case the new node's source will reference the original,
-    * cloned node) or setting the source property manually.
-    */
-  var source: js.UndefOr[NodeSource] = js.native
+  
   def after(newNode: String): this.type = js.native
   def after(newNode: js.Array[Node]): this.type = js.native
   def after(newNode: js.Object): this.type = js.native
@@ -35,6 +21,7 @@ trait NodeBase extends js.Object {
     * decl.after('color: black');
     */
   def after(newNode: Node): this.type = js.native
+  
   def before(newNode: String): this.type = js.native
   def before(newNode: js.Array[Node]): this.type = js.native
   def before(newNode: js.Object): this.type = js.native
@@ -49,7 +36,9 @@ trait NodeBase extends js.Object {
     * decl.before('content: ""');
     */
   def before(newNode: Node): this.type = js.native
+  
   def clone(overrides: js.Object): this.type = js.native
+  
   /**
     * Shortcut to clone the node and insert the resulting cloned node after
     * the current node.
@@ -58,6 +47,7 @@ trait NodeBase extends js.Object {
     */
   def cloneAfter(): this.type = js.native
   def cloneAfter(overrides: js.Object): this.type = js.native
+  
   /**
     * Shortcut to clone the node and insert the resulting cloned node before
     * the current node.
@@ -66,6 +56,7 @@ trait NodeBase extends js.Object {
     */
   def cloneBefore(): this.type = js.native
   def cloneBefore(overrides: js.Object): this.type = js.native
+  
   /**
     * This method produces very useful error messages. If present, an input
     * source map will be used to get the original position of the source, even
@@ -81,16 +72,19 @@ trait NodeBase extends js.Object {
     * Error description.
     */
   message: String, options: NodeErrorOptions): CssSyntaxError = js.native
+  
   /**
     * @returns The next child of the node's parent; or, returns undefined if
     * the current node is the last child.
     */
   def next(): js.UndefOr[ChildNode] = js.native
+  
   /**
     * @returns The previous child of the node's parent; or, returns undefined
     * if the current node is the first child.
     */
   def prev(): js.UndefOr[ChildNode] = js.native
+  
   /**
     * @param prop Name or code style property.
     * @param defaultType Name of default value. It can be easily missed if the
@@ -102,23 +96,45 @@ trait NodeBase extends js.Object {
     */
   def raw(prop: String): String = js.native
   def raw(prop: String, defaultType: String): String = js.native
+  
+  /**
+    * Contains information to generate byte-to-byte equal node string as it
+    * was in origin input.
+    */
+  var raws: NodeRaws = js.native
+  
   /**
     * Removes the node from its parent and cleans the parent property in the
     * node and its children.
     * @returns This node for chaining.
     */
   def remove(): this.type = js.native
+  
   /**
     * Inserts node(s) before the current node and removes the current node.
     * @returns This node for chaining.
     */
   def replaceWith(nodes: (Node | js.Object)*): this.type = js.native
+  
   /**
     * @returns The Root instance of the node's tree.
     */
   def root(): Root_ = js.native
+  
+  /**
+    * Returns the input source of the node. The property is used in source
+    * map generation. If you create a node manually
+    * (e.g., with postcss.decl() ), that node will not have a source
+    * property and will be absent from the source map. For this reason, the
+    * plugin developer should consider cloning nodes to create new ones
+    * (in which case the new node's source will reference the original,
+    * cloned node) or setting the source property manually.
+    */
+  var source: js.UndefOr[NodeSource] = js.native
+  
   def toString(stringifier: Stringifier): String = js.native
   def toString(stringifier: Syntax): String = js.native
+  
   /**
     * Creates an instance of Warning and adds it to messages. This method is
     * provided as a convenience wrapper for Result#warn.
@@ -131,4 +147,3 @@ trait NodeBase extends js.Object {
   def warn(result: Result, text: String): Unit = js.native
   def warn(result: Result, text: String, opts: WarningOptions): Unit = js.native
 }
-

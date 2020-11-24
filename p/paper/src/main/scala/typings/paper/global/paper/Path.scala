@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The path item represents a path in a Paper.js project.
@@ -35,10 +35,10 @@ class Path ()
   def this(pathData: String) = this()
   def this(segments: js.Array[typings.paper.paper.Segment]) = this()
 }
-
 @JSGlobal("paper.Path")
 @js.native
 object Path extends js.Object {
+  
   @js.native
   class Arc protected ()
     extends typings.paper.paper.Path {
@@ -201,6 +201,4 @@ object Path extends js.Object {
       */
     def this(center: typings.paper.paper.Point, points: Double, radius1: Double, radius2: Double) = this()
   }
-  
 }
-

@@ -12,11 +12,17 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "mq")
 @js.native
 object mq extends js.Object {
+  
+  def getBroker(): js.Promise[GetBrokerResult] = js.native
+  def getBroker(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
+  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = js.native
+  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
+  
   @js.native
   class Broker protected ()
     extends typings.pulumiAws.mqMod.Broker {
@@ -29,6 +35,30 @@ object mq extends js.Object {
       */
     def this(name: String, args: BrokerArgs) = this()
     def this(name: String, args: BrokerArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object Broker extends js.Object {
+    
+    /**
+      * Get an existing Broker resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.brokerMod.Broker = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = js.native
+    def get(name: String, id: Input[ID], state: BrokerState): typings.pulumiAws.brokerMod.Broker = js.native
+    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Broker.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = js.native
   }
   
   @js.native
@@ -44,37 +74,10 @@ object mq extends js.Object {
     def this(name: String, args: ConfigurationArgs) = this()
     def this(name: String, args: ConfigurationArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getBroker(): js.Promise[GetBrokerResult] = js.native
-  def getBroker(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
-  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = js.native
-  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
-  /* static members */
-  @js.native
-  object Broker extends js.Object {
-    /**
-      * Get an existing Broker resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.brokerMod.Broker = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = js.native
-    def get(name: String, id: Input[ID], state: BrokerState): typings.pulumiAws.brokerMod.Broker = js.native
-    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = js.native
-    /**
-      * Returns true if the given object is an instance of Broker.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object Configuration extends js.Object {
+    
     /**
       * Get an existing Configuration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,12 +91,11 @@ object mq extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.configurationMod.Configuration = js.native
     def get(name: String, id: Input[ID], state: ConfigurationState): typings.pulumiAws.configurationMod.Configuration = js.native
     def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.configurationMod.Configuration = js.native
+    
     /**
       * Returns true if the given object is an instance of Configuration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/configuration.Configuration */ Boolean = js.native
   }
-  
 }
-

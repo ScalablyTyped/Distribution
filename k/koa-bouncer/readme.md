@@ -11,8 +11,8 @@ A parameter validation library for Koa routes
 | Full name          | koa-bouncer |
 | Keywords           | validation, koa |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 10520 |
+| # dependents       | 2 |
+| # downloads        | 11342 |
 | # stars            | 2 |
 
 ## Links

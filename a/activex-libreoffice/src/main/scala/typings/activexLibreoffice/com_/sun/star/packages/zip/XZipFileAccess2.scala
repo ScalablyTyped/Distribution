@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Merged interface for {@link ZipFileAccess} service.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait XZipFileAccess2
   extends XNameAccess
      with XZipFileAccess
-
 object XZipFileAccess2 {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -36,4 +36,3 @@ object XZipFileAccess2 {
     __obj.asInstanceOf[XZipFileAccess2]
   }
 }
-

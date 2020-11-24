@@ -3,10 +3,11 @@ package typings.fabric.fabricImplMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IObjectAnimation[T] extends js.Object {
+  
   /**
     * Animates object's properties
     * object.animate({ left: ..., top: ... }, { duration: ... });
@@ -27,4 +28,3 @@ trait IObjectAnimation[T] extends js.Object {
   def animate(property: String, value: Double): Object = js.native
   def animate(property: String, value: Double, options: IAnimationOptions): Object = js.native
 }
-

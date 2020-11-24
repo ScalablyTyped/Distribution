@@ -10,9 +10,9 @@ Tiny client-side router
 | ------------------ | :-------------: |
 | Full name          | page |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 112 |
-| # downloads        | 834423 |
+| # releases         | 9 |
+| # dependents       | 120 |
+| # downloads        | 1287723 |
 | # stars            | 32 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LoggingLevel extends js.Object
-
 /** Specifies the severity level of an event. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingLevel")
 @js.native
 object LoggingLevel extends js.Object {
+  
   /** Log only critical messages. */
   @js.native
   sealed trait critical extends LoggingLevel
@@ -30,6 +30,4 @@ object LoggingLevel extends js.Object {
   /** Log messages of warning level and higher. */
   @js.native
   sealed trait warning extends LoggingLevel
-  
 }
-

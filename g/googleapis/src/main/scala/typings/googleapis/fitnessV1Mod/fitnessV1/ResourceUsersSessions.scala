@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Sessions")
 @js.native
 class ResourceUsersSessions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fitness.users.sessions.delete
     * @desc Deletes a session specified by the given session ID.
@@ -43,6 +45,7 @@ class ResourceUsersSessions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * fitness.users.sessions.list
     * @desc Lists sessions previously created.
@@ -78,6 +81,7 @@ class ResourceUsersSessions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSessionsResponse]
   ): Unit = js.native
+  
   /**
     * fitness.users.sessions.update
     * @desc Updates or insert a given session.
@@ -110,4 +114,3 @@ class ResourceUsersSessions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSession]
   ): Unit = js.native
 }
-

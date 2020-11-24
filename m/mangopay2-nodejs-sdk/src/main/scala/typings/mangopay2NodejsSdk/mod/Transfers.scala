@@ -6,40 +6,12 @@ import typings.mangopay2NodejsSdk.mod.transfer.CreateTransfer
 import typings.mangopay2NodejsSdk.mod.transfer.TransferData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Transfers")
 @js.native
 class Transfers () extends js.Object {
-  /**
-    * Create refund for transfer object
-    * @param transferId
-    * @param refund
-    * @param options
-    */
-  @JSName("createRefund")
-  var createRefund_Original: TwoArgsMethodOverload[String, CreateTransferRefund, RefundData] = js.native
-  /**
-    * Create new transfer
-    * @param transfer
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateTransfer, TransferData] = js.native
-  /**
-    * Gets list of Refunds of a Transfer
-    * @param transferId
-    * @param options
-    */
-  @JSName("getRefunds")
-  var getRefunds_Original: MethodOverload[String, js.Array[RefundData]] = js.native
-  /**
-    * Get transfer
-    * @param transferId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, TransferData] = js.native
+  
   /**
     * Create new transfer
     * @param transfer
@@ -74,6 +46,7 @@ class Transfers () extends js.Object {
     */
   def create(data: CreateTransfer, options: MethodOptionWithResponse): js.Promise[WithResponse[TransferData]] = js.native
   def create(data: CreateTransfer, options: MethodOptionWithoutResponse): js.Promise[TransferData] = js.native
+  
   /**
     * Create refund for transfer object
     * @param transferId
@@ -113,6 +86,23 @@ class Transfers () extends js.Object {
   def createRefund(data: String, extra: CreateTransferRefund, options: MethodOptionWithResponse): js.Promise[WithResponse[RefundData]] = js.native
   def createRefund(data: String, extra: CreateTransferRefund, options: MethodOptionWithoutResponse): js.Promise[RefundData] = js.native
   /**
+    * Create refund for transfer object
+    * @param transferId
+    * @param refund
+    * @param options
+    */
+  @JSName("createRefund")
+  var createRefund_Original: TwoArgsMethodOverload[String, CreateTransferRefund, RefundData] = js.native
+  
+  /**
+    * Create new transfer
+    * @param transfer
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateTransfer, TransferData] = js.native
+  
+  /**
     * Get transfer
     * @param transferId
     * @param options
@@ -146,6 +136,7 @@ class Transfers () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[TransferData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[TransferData] = js.native
+  
   /**
     * Gets list of Refunds of a Transfer
     * @param transferId
@@ -180,5 +171,19 @@ class Transfers () extends js.Object {
     */
   def getRefunds(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[RefundData]]] = js.native
   def getRefunds(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[RefundData]] = js.native
+  /**
+    * Gets list of Refunds of a Transfer
+    * @param transferId
+    * @param options
+    */
+  @JSName("getRefunds")
+  var getRefunds_Original: MethodOverload[String, js.Array[RefundData]] = js.native
+  
+  /**
+    * Get transfer
+    * @param transferId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, TransferData] = js.native
 }
-

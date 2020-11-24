@@ -12,11 +12,41 @@ import typings.uirouterCore.vanillaInterfaceMod.LocationPlugin
 import typings.uirouterCore.vanillaInterfaceMod.ServicesPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/vanilla", JSImport.Namespace)
 @js.native
 object vanillaMod extends js.Object {
+  
+  def buildUrl(loc: LocationServices): String = js.native
+  
+  def getParams(queryString: String): js.Any = js.native
+  
+  def hashLocationPlugin(router: UIRouter): LocationPlugin = js.native
+  
+  @JSName("$injector")
+  val injector: InjectorLike = js.native
+  
+  def keyValsToObjectR(accum: js.Any, hasKeyVal: js.Tuple2[_, _]): js.Any = js.native
+  
+  def locationPluginFactory(
+    name: String,
+    isHtml5: Boolean,
+    serviceClass: Instantiable,
+    configurationClass: InstantiableLocationConfig
+  ): js.Function1[/* uiRouter */ UIRouter, Configuration] = js.native
+  
+  def memoryLocationPlugin(router: UIRouter): LocationPlugin = js.native
+  
+  def parseUrl(url: String): Hash = js.native
+  
+  def pushStateLocationPlugin(router: UIRouter): LocationPlugin = js.native
+  
+  @JSName("$q")
+  val q: QLike = js.native
+  
+  def servicesPlugin(router: UIRouter): ServicesPlugin = js.native
+  
   @js.native
   abstract class BaseLocationServices protected ()
     extends typings.uirouterCore.indexMod.BaseLocationServices {
@@ -52,24 +82,4 @@ object vanillaMod extends js.Object {
     extends typings.uirouterCore.indexMod.PushStateLocationService {
     def this(router: UIRouter) = this()
   }
-  
-  @JSName("$injector")
-  val injector: InjectorLike = js.native
-  @JSName("$q")
-  val q: QLike = js.native
-  def buildUrl(loc: LocationServices): String = js.native
-  def getParams(queryString: String): js.Any = js.native
-  def hashLocationPlugin(router: UIRouter): LocationPlugin = js.native
-  def keyValsToObjectR(accum: js.Any, hasKeyVal: js.Tuple2[_, _]): js.Any = js.native
-  def locationPluginFactory(
-    name: String,
-    isHtml5: Boolean,
-    serviceClass: Instantiable,
-    configurationClass: InstantiableLocationConfig
-  ): js.Function1[/* uiRouter */ UIRouter, Configuration] = js.native
-  def memoryLocationPlugin(router: UIRouter): LocationPlugin = js.native
-  def parseUrl(url: String): Hash = js.native
-  def pushStateLocationPlugin(router: UIRouter): LocationPlugin = js.native
-  def servicesPlugin(router: UIRouter): ServicesPlugin = js.native
 }
-

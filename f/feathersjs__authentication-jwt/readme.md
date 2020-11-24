@@ -10,9 +10,9 @@ JWT authentication strategy for feathers-authentication using Passport
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/authentication-jwt |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 12 |
+| # releases         | 8 |
 | # dependents       | 29 |
-| # downloads        | 485738 |
+| # downloads        | 351260 |
 | # stars            | 0 |
 
 ## Links

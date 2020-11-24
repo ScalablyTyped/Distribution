@@ -2,12 +2,12 @@ package typings.winrt.Windows.Media.Protection
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RevocationAndRenewalItem extends IRevocationAndRenewalItem
-
 object RevocationAndRenewalItem {
+  
   @scala.inline
   def apply(
     headerHash: String,
@@ -20,4 +20,3 @@ object RevocationAndRenewalItem {
     __obj.asInstanceOf[RevocationAndRenewalItem]
   }
 }
-

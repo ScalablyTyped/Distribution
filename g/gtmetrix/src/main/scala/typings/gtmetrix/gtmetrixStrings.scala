@@ -4,9 +4,37 @@ import typings.gtmetrix.mod.BinaryResourceType
 import typings.gtmetrix.mod.NonBinaryResourceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gtmetrixStrings {
+  
+  @scala.inline
+  def filmstrip: filmstrip = "filmstrip".asInstanceOf[filmstrip]
+  
+  @scala.inline
+  def har: har = "har".asInstanceOf[har]
+  
+  @scala.inline
+  def pagespeed: pagespeed = "pagespeed".asInstanceOf[pagespeed]
+  
+  @scala.inline
+  def `pagespeed-files`: `pagespeed-files` = "pagespeed-files".asInstanceOf[`pagespeed-files`]
+  
+  @scala.inline
+  def `report-pdf`: `report-pdf` = "report-pdf".asInstanceOf[`report-pdf`]
+  
+  @scala.inline
+  def `report-pdf-full`: `report-pdf-full` = "report-pdf-full".asInstanceOf[`report-pdf-full`]
+  
+  @scala.inline
+  def screenshot: screenshot = "screenshot".asInstanceOf[screenshot]
+  
+  @scala.inline
+  def video: video = "video".asInstanceOf[video]
+  
+  @scala.inline
+  def yslow: yslow = "yslow".asInstanceOf[yslow]
+  
   @js.native
   sealed trait filmstrip extends BinaryResourceType
   
@@ -33,24 +61,4 @@ object gtmetrixStrings {
   
   @js.native
   sealed trait yslow extends NonBinaryResourceType
-  
-  @scala.inline
-  def filmstrip: filmstrip = "filmstrip".asInstanceOf[filmstrip]
-  @scala.inline
-  def har: har = "har".asInstanceOf[har]
-  @scala.inline
-  def pagespeed: pagespeed = "pagespeed".asInstanceOf[pagespeed]
-  @scala.inline
-  def `pagespeed-files`: `pagespeed-files` = "pagespeed-files".asInstanceOf[`pagespeed-files`]
-  @scala.inline
-  def `report-pdf`: `report-pdf` = "report-pdf".asInstanceOf[`report-pdf`]
-  @scala.inline
-  def `report-pdf-full`: `report-pdf-full` = "report-pdf-full".asInstanceOf[`report-pdf-full`]
-  @scala.inline
-  def screenshot: screenshot = "screenshot".asInstanceOf[screenshot]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def yslow: yslow = "yslow".asInstanceOf[yslow]
 }
-

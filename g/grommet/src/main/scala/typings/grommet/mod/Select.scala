@@ -7,17 +7,15 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Select")
+@JSImport("grommet", "Select")
 @js.native
 class Select protected ()
   extends Component[SelectProps, ComponentState, js.Any] {
   def this(props: SelectProps) = this()
   def this(props: SelectProps, context: js.Any) = this()
 }
-
-@JSImport("grommet/es6", "Select")
+@JSImport("grommet", "Select")
 @js.native
 object Select extends TopLevel[ComponentClass[SelectProps, ComponentState]]
-

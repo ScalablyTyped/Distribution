@@ -6,14 +6,16 @@ import typings.rrule.rruleStrings.between
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rrule/dist/esm/src/callbackiterresult", JSImport.Namespace)
 @js.native
 object callbackiterresultMod extends js.Object {
+  
   @js.native
   trait CallbackIterResult
     extends typings.rrule.iterresultMod.default[all | between] {
+    
     var iterator: js.Any = js.native
   }
   
@@ -25,4 +27,3 @@ object callbackiterresultMod extends js.Object {
   
   type Iterator = js.Function2[/* d */ Date, /* len */ Double, Boolean]
 }
-

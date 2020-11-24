@@ -5,11 +5,12 @@ import typings.rxjs.outerSubscriberMod.OuterSubscriber
 import typings.rxjs.subscriptionMod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/util/subscribeToResult", JSImport.Namespace)
 @js.native
 object subscribeToResultMod extends js.Object {
+  
   def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any): js.UndefOr[Subscription] = js.native
   def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: T): js.UndefOr[Subscription] = js.native
   def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: T, outerIndex: Double): js.UndefOr[Subscription] = js.native
@@ -27,4 +28,3 @@ object subscribeToResultMod extends js.Object {
     outerIndex: Double
   ): js.UndefOr[Subscription] = js.native
 }
-

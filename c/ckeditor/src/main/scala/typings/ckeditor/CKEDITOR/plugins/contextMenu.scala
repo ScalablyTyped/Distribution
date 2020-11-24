@@ -4,12 +4,14 @@ import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait contextMenu extends menu {
+  
   def addTarget(element: element): Unit = js.native
   def addTarget(element: element, nativeContextMenuOnCtrl: Boolean): Unit = js.native
+  
   def open(offsetParent: element): Unit = js.native
   def open(
     offsetParent: element,
@@ -24,4 +26,3 @@ trait contextMenu extends menu {
   def open(offsetParent: element, corner: Double, offsetX: Double): Unit = js.native
   def open(offsetParent: element, corner: Double, offsetX: Double, offsetY: Double): Unit = js.native
 }
-

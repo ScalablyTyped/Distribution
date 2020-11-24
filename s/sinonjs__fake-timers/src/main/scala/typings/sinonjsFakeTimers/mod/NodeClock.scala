@@ -5,64 +5,64 @@ import typings.std.DateConstructor
 import typings.std.global.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<@sinonjs/fake-timers.@sinonjs/fake-timers.NodeTimer> & {hrtime (prevTime : [number, number] | undefined): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (args : ...any): void, args : ...any): void, runMicrotasks (): void} */
 @js.native
 trait NodeClock extends Clock {
+  
+  /**
+    * Implements the Date object but using this clock to provide the correct time.
+    */
+  def Date(): String = js.native
   /**
     * Implements the Date object but using this clock to provide the correct time.
     */
   @JSName("Date")
   var Date_Original: DateConstructor with (Instantiable1[/* value */ Double, Date]) = js.native
-  /**
-    * Maximum number of timers that will be run when calling runAll().
-    */
-  var loopLimit: Double = js.native
-  /**
-    * Current clock time.
-    */
-  var now: Double = js.native
-  /**
-    * Implements the Date object but using this clock to provide the correct time.
-    */
-  def Date(): String = js.native
+  
   /**
     * Cancel animation frame request.
     *
     * @param id   The id returned from requestAnimationFrame method.
     */
   def cancelAnimationFrame(id: NodeTimer): Unit = js.native
+  
   /**
     * Clears a timer, as long as it was created using requestIdleCallback.
     *
     * @param id   Timer ID or object.
     */
   def cancelIdleCallback(id: NodeTimer): Unit = js.native
+  
   /**
     * Clears a timer, as long as it was created using setImmediate.
     *
     * @param id   Timer ID or object.
     */
   def clearImmediate(id: NodeTimer): Unit = js.native
+  
   /**
     * Clears a timer, as long as it was created using setInterval.
     *
     * @param id   Timer ID or object.
     */
   def clearInterval(id: NodeTimer): Unit = js.native
+  
   /**
     * Clears a timer, as long as it was created using setTimeout.
     *
     * @param id   Timer ID or object.
     */
   def clearTimeout(id: NodeTimer): Unit = js.native
+  
   /**
     * Get the number of waiting timers.
     *
     * @returns number of waiting timers.
     */
   def countTimers(): Double = js.native
+  
   /**
     * Mimicks process.hrtime().
     *
@@ -71,11 +71,18 @@ trait NodeClock extends Clock {
     */
   def hrtime(): js.Tuple2[Double, Double] = js.native
   def hrtime(prevTime: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
+  
+  /**
+    * Maximum number of timers that will be run when calling runAll().
+    */
+  var loopLimit: Double = js.native
+  
   /**
     * Advances the clock to the the moment of the first scheduled timer, firing it.
     * @returns Fake milliseconds since the unix epoch.
     */
   def next(): Double = js.native
+  
   /**
     * Advances the clock to the the moment of the first scheduled timer, firing it.
     *
@@ -83,14 +90,22 @@ trait NodeClock extends Clock {
     * @returns Fake milliseconds since the unix epoch.
     */
   def nextAsync(): js.Promise[Double] = js.native
+  
   /**
     * Simulates process.nextTick().
     */
   def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
+  
+  /**
+    * Current clock time.
+    */
+  var now: Double = js.native
+  
   /**
     * Mimics process.nextTick() explicitly dropping additional arguments.
     */
   def queueMicrotask(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Schedule callback to run in the next animation frame.
     *
@@ -98,6 +113,7 @@ trait NodeClock extends Clock {
     * @returns Request id.
     */
   def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): NodeTimer = js.native
+  
   /**
     * Queues the callback to be fired during idle periods to perform background and low priority work on the main event loop.
     *
@@ -107,10 +123,12 @@ trait NodeClock extends Clock {
     */
   def requestIdleCallback(callback: js.Function0[Unit]): NodeTimer = js.native
   def requestIdleCallback(callback: js.Function0[Unit], timeout: Double): NodeTimer = js.native
+  
   /**
     * Removes all timers and tick without firing them and restore now to its original value.
     */
   def reset(): Unit = js.native
+  
   /**
     * Runs all pending timers until there are none remaining.
     *
@@ -118,6 +136,7 @@ trait NodeClock extends Clock {
     * @returns Fake milliseconds since the unix epoch.
     */
   def runAll(): Double = js.native
+  
   /**
     * Runs all pending timers until there are none remaining.
     *
@@ -127,21 +146,25 @@ trait NodeClock extends Clock {
     * @returns Fake milliseconds since the unix epoch.
     */
   def runAllAsync(): js.Promise[Double] = js.native
+  
   /**
     * Run all pending microtasks scheduled with nextTick.
     */
   def runMicrotasks(): Unit = js.native
+  
   /**
     * Advanced the clock to the next animation frame while firing all scheduled callbacks.
     * @returns Fake milliseconds since the unix epoch.
     */
   def runToFrame(): Double = js.native
+  
   /**
     * Takes note of the last scheduled timer when it is run, and advances the clock to
     * that time firing callbacks as necessary.
     * @returns Fake milliseconds since the unix epoch.
     */
   def runToLast(): Double = js.native
+  
   /**
     * Takes note of the last scheduled timer when it is run, and advances the clock to
     * that time firing callbacks as necessary.
@@ -150,6 +173,7 @@ trait NodeClock extends Clock {
     * @returns Fake milliseconds since the unix epoch.
     */
   def runToLastAsync(): js.Promise[Double] = js.native
+  
   /**
     * Schedules the callback to be fired once 0 milliseconds have ticked by.
     *
@@ -159,6 +183,7 @@ trait NodeClock extends Clock {
     * @remarks If called during a tick the callback won't fire until 1 millisecond has ticked by.
     */
   def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): NodeTimer = js.native
+  
   /**
     * Schedules a callback to be fired every time timeout milliseconds have ticked by.
     *
@@ -168,6 +193,7 @@ trait NodeClock extends Clock {
     * @returns Time identifier for cancellation.
     */
   def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): NodeTimer = js.native
+  
   /**
     * Simulates a user changing the system clock.
     *
@@ -177,6 +203,7 @@ trait NodeClock extends Clock {
   def setSystemTime(): Unit = js.native
   def setSystemTime(now: Double): Unit = js.native
   def setSystemTime(now: typings.std.Date): Unit = js.native
+  
   /**
     * Schedules a callback to be fired once timeout milliseconds have ticked by.
     *
@@ -186,6 +213,7 @@ trait NodeClock extends Clock {
     * @returns Time identifier for cancellation.
     */
   def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): NodeTimer = js.native
+  
   def tick(time: String): Double = js.native
   /**
     * Advance the clock, firing callbacks if necessary.
@@ -194,6 +222,7 @@ trait NodeClock extends Clock {
     * @returns Fake milliseconds since the unix epoch.
     */
   def tick(time: Double): Double = js.native
+  
   def tickAsync(time: String): js.Promise[Double] = js.native
   /**
     * Advance the clock, firing callbacks if necessary.
@@ -205,4 +234,3 @@ trait NodeClock extends Clock {
     */
   def tickAsync(time: Double): js.Promise[Double] = js.native
 }
-

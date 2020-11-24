@@ -2,14 +2,14 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactEvents extends js.Object
-
 @JSGlobal("connect.ContactEvents")
 @js.native
 object ContactEvents extends js.Object {
+  
   @js.native
   sealed trait ACCEPTED extends ContactEvents
   
@@ -48,6 +48,4 @@ object ContactEvents extends js.Object {
   
   @js.native
   sealed trait VIEW extends ContactEvents
-  
 }
-

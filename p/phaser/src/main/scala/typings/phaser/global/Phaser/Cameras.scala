@@ -4,13 +4,15 @@ import typings.phaser.Phaser.Types.Cameras.Controls.FixedKeyControlConfig
 import typings.phaser.Phaser.Types.Cameras.Controls.SmoothedKeyControlConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Cameras")
 @js.native
 object Cameras extends js.Object {
+  
   @js.native
   object Controls extends js.Object {
+    
     /**
       * A Fixed Key Camera Control.
       * 
@@ -72,11 +74,11 @@ object Cameras extends js.Object {
         */
       def this(config: SmoothedKeyControlConfig) = this()
     }
-    
   }
   
   @js.native
   object Scene2D extends js.Object {
+    
     /**
       * A Base Camera class.
       * 
@@ -194,6 +196,7 @@ object Cameras extends js.Object {
     
     @js.native
     object Effects extends js.Object {
+      
       /**
         * A Camera Fade effect.
         * 
@@ -324,17 +327,18 @@ object Cameras extends js.Object {
           */
         def this(camera: typings.phaser.Phaser.Cameras.Scene2D.Camera) = this()
       }
-      
     }
     
     @js.native
     object Events extends js.Object {
+      
       /**
         * The Destroy Camera Event.
         * 
         * This event is dispatched by a Camera instance when it is destroyed by the Camera Manager.
         */
       val DESTROY: js.Any = js.native
+      
       /**
         * The Camera Fade In Complete Event.
         * 
@@ -343,6 +347,7 @@ object Cameras extends js.Object {
         * Listen to it from a Camera instance using `Camera.on('camerafadeincomplete', listener)`.
         */
       val FADE_IN_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Fade In Start Event.
         * 
@@ -351,6 +356,7 @@ object Cameras extends js.Object {
         * Listen to it from a Camera instance using `Camera.on('camerafadeinstart', listener)`.
         */
       val FADE_IN_START: js.Any = js.native
+      
       /**
         * The Camera Fade Out Complete Event.
         * 
@@ -359,6 +365,7 @@ object Cameras extends js.Object {
         * Listen to it from a Camera instance using `Camera.on('camerafadeoutcomplete', listener)`.
         */
       val FADE_OUT_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Fade Out Start Event.
         * 
@@ -367,30 +374,35 @@ object Cameras extends js.Object {
         * Listen to it from a Camera instance using `Camera.on('camerafadeoutstart', listener)`.
         */
       val FADE_OUT_START: js.Any = js.native
+      
       /**
         * The Camera Flash Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Flash Effect completes.
         */
       val FLASH_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Flash Start Event.
         * 
         * This event is dispatched by a Camera instance when the Flash Effect starts.
         */
       val FLASH_START: js.Any = js.native
+      
       /**
         * The Camera Pan Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Pan Effect completes.
         */
       val PAN_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Pan Start Event.
         * 
         * This event is dispatched by a Camera instance when the Pan Effect starts.
         */
       val PAN_START: js.Any = js.native
+      
       /**
         * The Camera Post-Render Event.
         * 
@@ -400,6 +412,7 @@ object Cameras extends js.Object {
         * Listen to it from a Camera instance using: `camera.on('postrender', listener)`.
         */
       val POST_RENDER: js.Any = js.native
+      
       /**
         * The Camera Pre-Render Event.
         * 
@@ -409,36 +422,42 @@ object Cameras extends js.Object {
         * Listen to it from a Camera instance using: `camera.on('prerender', listener)`.
         */
       val PRE_RENDER: js.Any = js.native
+      
       /**
         * The Camera Rotate Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Rotate Effect completes.
         */
       val ROTATE_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Rotate Start Event.
         * 
         * This event is dispatched by a Camera instance when the Rotate Effect starts.
         */
       val ROTATE_START: js.Any = js.native
+      
       /**
         * The Camera Shake Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Shake Effect completes.
         */
       val SHAKE_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Shake Start Event.
         * 
         * This event is dispatched by a Camera instance when the Shake Effect starts.
         */
       val SHAKE_START: js.Any = js.native
+      
       /**
         * The Camera Zoom Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Zoom Effect completes.
         */
       val ZOOM_COMPLETE: js.Any = js.native
+      
       /**
         * The Camera Zoom Start Event.
         * 
@@ -446,8 +465,5 @@ object Cameras extends js.Object {
         */
       val ZOOM_START: js.Any = js.native
     }
-    
   }
-  
 }
-

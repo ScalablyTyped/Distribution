@@ -11,8 +11,8 @@ Builds a P2PKH Bitcoin transaction output script.
 | Full name          | build-output-script |
 | Keywords           | bitcoin, outputscript, output, script, build, cryptocurrency, ledgerjs |
 | # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 8515 |
+| # dependents       | 3 |
+| # downloads        | 12726 |
 | # stars            | 0 |
 
 ## Links

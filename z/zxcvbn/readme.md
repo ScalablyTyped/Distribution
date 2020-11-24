@@ -10,9 +10,9 @@ realistic password strength estimation
 | ------------------ | :-------------: |
 | Full name          | zxcvbn |
 | Keywords           | password, passphrase, security, authentication, strength, meter, quality, estimation, pattern, cracking, scoring, entropy, bruteforce |
-| # releases         | 1 |
-| # dependents       | 126 |
-| # downloads        | 5967054 |
+| # releases         | 0 |
+| # dependents       | 156 |
+| # downloads        | 9240601 |
 | # stars            | 20 |
 
 ## Links

@@ -2,37 +2,43 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a collection of network endpoints.
   */
 @js.native
 trait SchemaNetworkEndpointGroup extends js.Object {
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * The default port used if the port number is not specified in the network
     * endpoint.
     */
   var defaultPort: js.UndefOr[Double] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#networkEndpointGroup
     * for network endpoint group.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * Name of the resource; provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -43,102 +49,134 @@ trait SchemaNetworkEndpointGroup extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The URL of the network to which all network endpoints in the NEG belong.
     * Uses &quot;default&quot; project network if unspecified.
     */
   var network: js.UndefOr[String] = js.native
+  
   /**
     * Type of network endpoints in this network endpoint group. Currently the
     * only supported value is GCE_VM_IP_PORT.
     */
   var networkEndpointType: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Server-defined URL for the resource.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * [Output only] Number of network endpoints in the network endpoint group.
     */
   var size: js.UndefOr[Double] = js.native
+  
   /**
     * Optional URL of the subnetwork to which all network endpoints in the NEG
     * belong.
     */
   var subnetwork: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The URL of the zone where the network endpoint group is
     * located.
     */
   var zone: js.UndefOr[String] = js.native
 }
-
 object SchemaNetworkEndpointGroup {
+  
   @scala.inline
   def apply(): SchemaNetworkEndpointGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkEndpointGroup]
   }
+  
   @scala.inline
   implicit class SchemaNetworkEndpointGroupOps[Self <: SchemaNetworkEndpointGroup] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDefaultPort(value: Double): Self = this.set("defaultPort", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDefaultPort: Self = this.set("defaultPort", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetwork: Self = this.set("network", js.undefined)
+    
     @scala.inline
     def setNetworkEndpointType(value: String): Self = this.set("networkEndpointType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetworkEndpointType: Self = this.set("networkEndpointType", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSize: Self = this.set("size", js.undefined)
+    
     @scala.inline
     def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    
     @scala.inline
     def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZone: Self = this.set("zone", js.undefined)
   }
-  
 }
-

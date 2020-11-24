@@ -12,7 +12,7 @@ Lightweight library with join pattern functions for composing asynchronous and e
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 927 |
+| # downloads        | 711 |
 | # stars            | 0 |
 
 ## Links

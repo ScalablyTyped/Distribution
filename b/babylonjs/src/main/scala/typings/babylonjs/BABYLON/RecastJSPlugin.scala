@@ -2,39 +2,39 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait RecastJSPlugin extends INavigationEnginePlugin {
+  
+  var _maximumSubStepCount: js.Any = js.native
+  
+  var _timeStep: js.Any = js.native
+  
   /**
     * Reference to the Recast library
     */
-  var bjsRECAST: js.Any
+  var bjsRECAST: js.Any = js.native
+  
   /**
     * the first navmesh created. We might extend this to support multiple navmeshes
     */
-  var navMesh: js.Any
+  var navMesh: js.Any = js.native
+  
+  /**
+    * If delta time in navigation tick update is greater than the time step
+    * a number of sub iterations are done. If more iterations are need to reach deltatime
+    * they will be discarded.
+    * A value of 0 will set to no maximum and update will use as many substeps as needed
+    * @param newStepCount the maximum number of iterations
+    */
+  def setMaximumSubStepCount(): Unit = js.native
+  
+  /**
+    * Set the time step of the navigation tick update.
+    * Default is 1/60.
+    * A value of 0 will disable fixed time update
+    * @param newTimeStep the new timestep to apply to this world.
+    */
+  def setTimeStep(): Unit = js.native
 }
-
-object RecastJSPlugin {
-  @scala.inline
-  def apply(
-    bjsRECAST: js.Any,
-    computePath: (Vector3, Vector3) => js.Array[Vector3],
-    createCrowd: (Double, Double, Scene) => ICrowd,
-    createDebugNavMesh: Scene => Mesh,
-    createNavMesh: (js.Array[Mesh], INavMeshParameters) => Unit,
-    dispose: () => Unit,
-    getClosestPoint: Vector3 => Vector3,
-    getDefaultQueryExtent: () => Vector3,
-    getRandomPointAround: (Vector3, Double) => Vector3,
-    isSupported: () => Boolean,
-    moveAlong: (Vector3, Vector3) => Vector3,
-    name: String,
-    navMesh: js.Any,
-    setDefaultQueryExtent: Vector3 => Unit
-  ): RecastJSPlugin = {
-    val __obj = js.Dynamic.literal(bjsRECAST = bjsRECAST.asInstanceOf[js.Any], computePath = js.Any.fromFunction2(computePath), createCrowd = js.Any.fromFunction3(createCrowd), createDebugNavMesh = js.Any.fromFunction1(createDebugNavMesh), createNavMesh = js.Any.fromFunction2(createNavMesh), dispose = js.Any.fromFunction0(dispose), getClosestPoint = js.Any.fromFunction1(getClosestPoint), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getRandomPointAround = js.Any.fromFunction2(getRandomPointAround), isSupported = js.Any.fromFunction0(isSupported), moveAlong = js.Any.fromFunction2(moveAlong), name = name.asInstanceOf[js.Any], navMesh = navMesh.asInstanceOf[js.Any], setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent))
-    __obj.asInstanceOf[RecastJSPlugin]
-  }
-}
-

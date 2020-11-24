@@ -4,7 +4,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.typesettable.canvasMod.ICanvasFontStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "CanvasContext")
 @js.native
@@ -15,4 +15,3 @@ class CanvasContext protected ()
   def this(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle) = this()
   def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
 }
-

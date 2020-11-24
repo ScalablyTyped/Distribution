@@ -2,14 +2,14 @@ package typings.navermaps.naver.maps.drawing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DrawingMode extends js.Object
-
 @JSGlobal("naver.maps.drawing.DrawingMode")
 @js.native
 object DrawingMode extends js.Object {
+  
   @js.native
   sealed trait ARROWLINE extends DrawingMode
   
@@ -30,6 +30,4 @@ object DrawingMode extends js.Object {
   
   @js.native
   sealed trait RECTANGLE extends DrawingMode
-  
 }
-

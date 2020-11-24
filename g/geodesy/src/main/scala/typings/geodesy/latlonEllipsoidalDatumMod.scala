@@ -8,11 +8,14 @@ import typings.geodesy.mod.Ellipsoids
 import typings.geodesy.mod.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("geodesy/latlon-ellipsoidal-datum", JSImport.Namespace)
 @js.native
 object latlonEllipsoidalDatumMod extends js.Object {
+  
+  val datums: Datums = js.native
+  
   @js.native
   class Cartesian protected () extends CartesianDatum {
     def this(x: Double, y: Double, z: Double) = this()
@@ -22,9 +25,12 @@ object latlonEllipsoidalDatumMod extends js.Object {
   @js.native
   trait CartesianDatum
     extends typings.geodesy.latlonEllipsoidalMod.Cartesian {
+    
     def convertDatum(toDatum: Datum): CartesianDatum = js.native
+    
     def datum: Datum = js.native
     def datum_=(datum: Datum): Unit = js.native
+    
     def toLatLon(): LatLonEllipsoidalDatum = js.native
   }
   
@@ -32,10 +38,52 @@ object latlonEllipsoidalDatumMod extends js.Object {
   @js.native
   class Dms ()
     extends typings.geodesy.latlonEllipsoidalMod.Dms
+  /* static members */
+  @js.native
+  object Dms extends js.Object {
+    
+    def compassPoint(bearing: Double): String = js.native
+    def compassPoint(bearing: Double, precision: Precision): String = js.native
+    
+    def fromLocale(str: String): String = js.native
+    
+    def parse(dms: String): Double = js.native
+    def parse(dms: Double): Double = js.native
+    
+    def separator: String = js.native
+    def separator_=(char: String): Unit = js.native
+    
+    def toBrng(deg: Double): String = js.native
+    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    def toBrng(deg: Double, format: Format): String = js.native
+    def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
+    
+    def toDms(deg: Double): String = js.native
+    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    def toDms(deg: Double, format: Format): String = js.native
+    def toDms(deg: Double, format: Format, dp: Dp): String = js.native
+    
+    def toLat(deg: Double): String = js.native
+    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    def toLat(deg: Double, format: Format): String = js.native
+    def toLat(deg: Double, format: Format, dp: Dp): String = js.native
+    
+    def toLocale(str: String): String = js.native
+    
+    def toLon(deg: Double): String = js.native
+    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    def toLon(deg: Double, format: Format): String = js.native
+    def toLon(deg: Double, format: Format, dp: Dp): String = js.native
+    
+    def wrap360(degrees: Double): String = js.native
+    
+    def wrap90(degrees: Double): String = js.native
+  }
   
   @js.native
   trait LatLonEllipsoidalDatum
     extends typings.geodesy.latlonEllipsoidalMod.default {
+    
     def convertDatum(toDatum: Datum): LatLonEllipsoidalDatum = js.native
   }
   
@@ -46,44 +94,14 @@ object latlonEllipsoidalDatumMod extends js.Object {
     def this(lat: Double, lon: Double, height: js.UndefOr[scala.Nothing], datum: Datum) = this()
     def this(lat: Double, lon: Double, height: Double, datum: Datum) = this()
   }
-  
-  val datums: Datums = js.native
-  /* static members */
-  @js.native
-  object Dms extends js.Object {
-    def compassPoint(bearing: Double): String = js.native
-    def compassPoint(bearing: Double, precision: Precision): String = js.native
-    def fromLocale(str: String): String = js.native
-    def parse(dms: String): Double = js.native
-    def parse(dms: Double): Double = js.native
-    def separator: String = js.native
-    def separator_=(char: String): Unit = js.native
-    def toBrng(deg: Double): String = js.native
-    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    def toBrng(deg: Double, format: Format): String = js.native
-    def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
-    def toDms(deg: Double): String = js.native
-    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    def toDms(deg: Double, format: Format): String = js.native
-    def toDms(deg: Double, format: Format, dp: Dp): String = js.native
-    def toLat(deg: Double): String = js.native
-    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    def toLat(deg: Double, format: Format): String = js.native
-    def toLat(deg: Double, format: Format, dp: Dp): String = js.native
-    def toLocale(str: String): String = js.native
-    def toLon(deg: Double): String = js.native
-    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    def toLon(deg: Double, format: Format): String = js.native
-    def toLon(deg: Double, format: Format, dp: Dp): String = js.native
-    def wrap360(degrees: Double): String = js.native
-    def wrap90(degrees: Double): String = js.native
-  }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     def datums: Datums = js.native
+    
     def ellipsoids: Ellipsoids = js.native
+    
     def parse(lat: String): LatLonEllipsoidalDatum = js.native
     def parse(lat: String, lon: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], datum: Datum): LatLonEllipsoidalDatum = js.native
     def parse(lat: String, lon: js.UndefOr[scala.Nothing], height: Double): LatLonEllipsoidalDatum = js.native
@@ -109,6 +127,4 @@ object latlonEllipsoidalDatumMod extends js.Object {
     def parse(lat: Double, lon: Double, height: Double): LatLonEllipsoidalDatum = js.native
     def parse(lat: Double, lon: Double, height: Double, datum: Datum): LatLonEllipsoidalDatum = js.native
   }
-  
 }
-

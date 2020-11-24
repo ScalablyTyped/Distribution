@@ -35,7 +35,7 @@ import typings.std.stdStrings.vrdisplaypointerunrestricted
 import typings.std.stdStrings.vrdisplaypresentchange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A window containing a DOM document; the document property points to the DOM document loaded in that window. */
 @js.native
@@ -48,89 +48,7 @@ trait Window
      with WindowOrWorkerGlobalScope
      with WindowSessionStorage
      with /* index */ NumberDictionary[Window] {
-  val applicationCache: ApplicationCache = js.native
-  val clientInformation: Navigator = js.native
-  val closed: scala.Boolean = js.native
-  var customElements: CustomElementRegistry = js.native
-  var defaultStatus: java.lang.String = js.native
-  val devicePixelRatio: Double = js.native
-  val doNotTrack: java.lang.String = js.native
-  val document: Document = js.native
-  /** @deprecated */
-  val event: js.UndefOr[Event] = js.native
-  /** @deprecated */
-  val external: External = js.native
-  val frameElement: Element = js.native
-  val frames: Window = js.native
-  val history: History = js.native
-  val innerHeight: Double = js.native
-  val innerWidth: Double = js.native
-  val length: Double = js.native
-  var location: Location = js.native
-  val locationbar: BarProp = js.native
-  val menubar: BarProp = js.native
-  val msContentScript: ExtensionScriptApis = js.native
-  var name: java.lang.String = js.native
-  val navigator: Navigator = js.native
-  var offscreenBuffering: java.lang.String | scala.Boolean = js.native
-  var oncompassneedscalibration: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var ondevicelight: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _]) | Null = js.native
-  var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _]) | Null = js.native
-  var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | Null = js.native
-  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | Null = js.native
-  var onmousewheel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsgestureend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsgesturehold: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsgesturestart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsgesturetap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsinertiastart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  /** @deprecated */
-  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
-  var onvrdisplayactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplayblur: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplayconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaydeactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaydisconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplayfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaypointerrestricted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaypointerunrestricted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var opener: js.Any = js.native
-  /** @deprecated */
-  val orientation: java.lang.String | Double = js.native
-  val outerHeight: Double = js.native
-  val outerWidth: Double = js.native
-  val pageXOffset: Double = js.native
-  val pageYOffset: Double = js.native
-  val parent: Window = js.native
-  val personalbar: BarProp = js.native
-  val screen: Screen = js.native
-  val screenLeft: Double = js.native
-  val screenTop: Double = js.native
-  val screenX: Double = js.native
-  val screenY: Double = js.native
-  val scrollX: Double = js.native
-  val scrollY: Double = js.native
-  val scrollbars: BarProp = js.native
-  val self: Window with (/* globalThis */ js.Any) = js.native
-  val speechSynthesis: SpeechSynthesis = js.native
-  var status: java.lang.String = js.native
-  val statusbar: BarProp = js.native
-  val styleMedia: StyleMedia = js.native
-  val toolbar: BarProp = js.native
-  val top: Window = js.native
-  val window: Window with (/* globalThis */ js.Any) = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -616,25 +534,153 @@ trait Window
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   def alert(): Unit = js.native
   def alert(message: js.Any): Unit = js.native
+  
+  val applicationCache: ApplicationCache = js.native
+  
   def blur(): Unit = js.native
+  
   /** @deprecated */
   def captureEvents(): Unit = js.native
+  
+  val clientInformation: Navigator = js.native
+  
   def close(): Unit = js.native
+  
+  val closed: scala.Boolean = js.native
+  
   def confirm(): scala.Boolean = js.native
   def confirm(message: java.lang.String): scala.Boolean = js.native
+  
+  var customElements: CustomElementRegistry = js.native
+  
+  var defaultStatus: java.lang.String = js.native
+  
   def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
+  
+  val devicePixelRatio: Double = js.native
+  
+  val doNotTrack: java.lang.String = js.native
+  
+  val document: Document = js.native
+  
+  /** @deprecated */
+  val event: js.UndefOr[Event] = js.native
+  
+  /** @deprecated */
+  val external: External = js.native
+  
   def focus(): Unit = js.native
+  
+  val frameElement: Element = js.native
+  
+  val frames: Window = js.native
+  
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
+  
   def getMatchedCSSRules(elt: Element): CSSRuleList = js.native
   def getMatchedCSSRules(elt: Element, pseudoElt: java.lang.String): CSSRuleList = js.native
+  
   def getSelection(): Selection | Null = js.native
+  
+  val history: History = js.native
+  
+  val innerHeight: Double = js.native
+  
+  val innerWidth: Double = js.native
+  
+  val length: Double = js.native
+  
+  var location: Location = js.native
+  
+  val locationbar: BarProp = js.native
+  
   def matchMedia(query: java.lang.String): MediaQueryList = js.native
+  
+  val menubar: BarProp = js.native
+  
   def moveBy(x: Double, y: Double): Unit = js.native
+  
   def moveTo(x: Double, y: Double): Unit = js.native
+  
+  val msContentScript: ExtensionScriptApis = js.native
+  
   def msWriteProfilerMark(profilerMarkName: java.lang.String): Unit = js.native
+  
+  var name: java.lang.String = js.native
+  
+  val navigator: Navigator = js.native
+  
+  var offscreenBuffering: java.lang.String | scala.Boolean = js.native
+  
+  var oncompassneedscalibration: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var ondevicelight: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _]) | Null = js.native
+  
+  var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _]) | Null = js.native
+  
+  var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | Null = js.native
+  
+  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | Null = js.native
+  
+  var onmousewheel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsgestureend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsgesturehold: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsgesturestart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsgesturetap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmsinertiastart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  /** @deprecated */
+  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
+  
+  var onvrdisplayactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplayblur: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplayconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaydeactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaydisconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplayfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaypointerrestricted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaypointerunrestricted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
   def open(): Window | Null = js.native
   def open(
     url: js.UndefOr[scala.Nothing],
@@ -691,15 +737,37 @@ trait Window
     features: java.lang.String,
     replace: scala.Boolean
   ): Window | Null = js.native
+  
+  var opener: js.Any = js.native
+  
+  /** @deprecated */
+  val orientation: java.lang.String | Double = js.native
+  
+  val outerHeight: Double = js.native
+  
+  val outerWidth: Double = js.native
+  
+  val pageXOffset: Double = js.native
+  
+  val pageYOffset: Double = js.native
+  
+  val parent: Window = js.native
+  
+  val personalbar: BarProp = js.native
+  
   def postMessage(message: js.Any, targetOrigin: java.lang.String): Unit = js.native
   def postMessage(message: js.Any, targetOrigin: java.lang.String, transfer: js.Array[Transferable]): Unit = js.native
+  
   def print(): Unit = js.native
+  
   def prompt(): java.lang.String | Null = js.native
   def prompt(message: js.UndefOr[scala.Nothing], _default: java.lang.String): java.lang.String | Null = js.native
   def prompt(message: java.lang.String): java.lang.String | Null = js.native
   def prompt(message: java.lang.String, _default: java.lang.String): java.lang.String | Null = js.native
+  
   /** @deprecated */
   def releaseEvents(): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -1185,21 +1253,64 @@ trait Window
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
+  
   def resizeBy(x: Double, y: Double): Unit = js.native
-  def resizeTo(x: Double, y: Double): Unit = js.native
+  
+  def resizeTo(width: Double, height: Double): Unit = js.native
+  
+  val screen: Screen = js.native
+  
+  val screenLeft: Double = js.native
+  
+  val screenTop: Double = js.native
+  
+  val screenX: Double = js.native
+  
+  val screenY: Double = js.native
+  
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
   def scroll(x: Double, y: Double): Unit = js.native
+  
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
   def scrollBy(x: Double, y: Double): Unit = js.native
+  
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
+  
+  val scrollX: Double = js.native
+  
+  val scrollY: Double = js.native
+  
+  val scrollbars: BarProp = js.native
+  
+  val self: Window with (/* globalThis */ js.Any) = js.native
+  
+  val speechSynthesis: SpeechSynthesis = js.native
+  
+  var status: java.lang.String = js.native
+  
+  val statusbar: BarProp = js.native
+  
   def stop(): Unit = js.native
+  
+  val styleMedia: StyleMedia = js.native
+  
+  val toolbar: BarProp = js.native
+  
+  val top: Window = js.native
+  
+  val visualViewport: VisualViewport = js.native
+  
   def webkitCancelAnimationFrame(handle: Double): Unit = js.native
+  
   def webkitConvertPointFromNodeToPage(node: Node, pt: WebKitPoint): WebKitPoint = js.native
+  
   def webkitConvertPointFromPageToNode(node: Node, pt: WebKitPoint): WebKitPoint = js.native
+  
   def webkitRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
+  
+  val window: Window with (/* globalThis */ js.Any) = js.native
 }
-

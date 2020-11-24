@@ -3,7 +3,7 @@ package typings.asana.mod.resources
 import typings.asana.mod.resources.UserTaskLists.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A user task list represents the tasks assigned to a particular user.
@@ -18,36 +18,44 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UserTaskLists_ extends Resource {
+  
   def findById(userTaskList: String): typings.bluebird.mod.^[Type] = js.native
+  def findById(userTaskList: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
     * Returns the full record for a user task list.
-    * @param {String} userTaskList Globally unique identifier for the user task list.
+    * @param {String|Number} userTaskList Globally unique identifier for the user task list.
     * @param {Object} [params] Parameters for the request
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The requested resource
     */
   def findById(userTaskList: Double): typings.bluebird.mod.^[Type] = js.native
+  def findById(userTaskList: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  
   def findByUser(user: String): typings.bluebird.mod.^[Type] = js.native
+  def findByUser(user: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
     * Returns the full record for the user task list for the given user
-    * @param {String} user An identifier for the user. Can be one of an email address,
+    * @param {String|Number} user An identifier for the user. Can be one of an email address,
     * the globally unique identifier for the user, or the keyword `me`
     * to indicate the current user making the request.
     * @param {Object} [params] Parameters for the request
-    * @param {String} params.workspace Globally unique identifier for the workspace or organization.
+    * @param {String|Number} params.workspace Globally unique identifier for the workspace or organization.
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The requested resource
     */
   def findByUser(user: Double): typings.bluebird.mod.^[Type] = js.native
+  def findByUser(user: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  
   def tasks(userTaskList: String): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def tasks(userTaskList: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: String, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   /**
@@ -68,7 +76,7 @@ trait UserTaskLists_ extends Resource {
     * unless they are filtered out (for example, setting `completed_since=now`
     * will return only incomplete tasks, which is the default view for "My
     * Tasks" in Asana.)
-    * @param {String} userTaskList The user task list in which to search for tasks.
+    * @param {String|Number} userTaskList The user task list in which to search for tasks.
     * @param {Object} [params] Parameters for the request
     * @param {String} [params.completed_since] Only return tasks that are either incomplete or that have been
     * completed since this time.
@@ -76,7 +84,7 @@ trait UserTaskLists_ extends Resource {
     * @return {Promise} The response from the API
     */
   def tasks(userTaskList: Double): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def tasks(userTaskList: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: Double, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
 }
-

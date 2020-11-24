@@ -6,11 +6,12 @@ import typings.leafletDraw.mod.EditOptions.EditPolyVerticesEditOptions
 import typings.leafletDraw.mod.EditOptions.EditSimpleShapeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Edit")
 @js.native
 object Edit extends js.Object {
+  
   @js.native
   class Circle protected () extends CircleMarker {
     def this(shape: Circle) = this()
@@ -33,12 +34,14 @@ object Edit extends js.Object {
   class PolyVerticesEdit protected () extends Handler {
     def this(poly: Polyline, latlngs: js.Array[LatLngExpression]) = this()
     def this(poly: Polyline, latlngs: js.Array[LatLngExpression], options: EditPolyVerticesEditOptions) = this()
+    
     def updateMarkers(): Unit = js.native
   }
   
   @js.native
   class Polyline protected () extends Handler {
     def this(polyline: typings.leafletDraw.mod.Draw.Polyline) = this()
+    
     def updateMarkers(): Unit = js.native
   }
   
@@ -52,8 +55,7 @@ object Edit extends js.Object {
   class SimpleShape protected () extends Handler {
     def this(shape: SimpleShape) = this()
     def this(shape: SimpleShape, options: EditSimpleShapeOptions) = this()
+    
     def updateMarkers(): Unit = js.native
   }
-  
 }
-

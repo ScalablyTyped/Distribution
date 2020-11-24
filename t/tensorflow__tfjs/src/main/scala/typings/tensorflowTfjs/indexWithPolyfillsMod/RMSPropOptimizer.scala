@@ -5,7 +5,7 @@ import typings.tensorflowTfjsCore.serializationMod.Serializable
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "RMSPropOptimizer")
 @js.native
@@ -75,14 +75,14 @@ class RMSPropOptimizer protected ()
   ) = this()
   def this(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean) = this()
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "RMSPropOptimizer")
 @js.native
 object RMSPropOptimizer extends js.Object {
+  
   /** @nocollapse */
   var className: String = js.native
+  
   /** @nocollapse */
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
 }
-

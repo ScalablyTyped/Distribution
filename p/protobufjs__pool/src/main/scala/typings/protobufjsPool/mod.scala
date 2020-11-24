@@ -3,11 +3,12 @@ package typings.protobufjsPool
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@protobufjs/pool", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * A general purpose buffer pool.
     * @memberof util
@@ -19,6 +20,7 @@ object mod extends js.Object {
     */
   def apply(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = js.native
   def apply(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = js.native
+  
   /**
     * An allocator as used by {@link util.pool}.
     * @typedef PoolAllocator
@@ -27,6 +29,7 @@ object mod extends js.Object {
     * @returns {Uint8Array} Buffer
     */
   type PoolAllocator = js.Function1[/* size */ Double, Uint8Array]
+  
   /**
     * A slicer as used by {@link util.pool}.
     * @typedef PoolSlicer
@@ -38,4 +41,3 @@ object mod extends js.Object {
     */
   type PoolSlicer = js.ThisFunction2[/* this */ Uint8Array, /* start */ Double, /* end */ Double, Uint8Array]
 }
-

@@ -8,14 +8,19 @@ import typings.inboxsdk.mod.Common.PreAutoCloseEvent
 import typings.inboxsdk.mod.Compose.ComposeView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DrawerView extends js.Object {
-  var destroyed: Boolean = js.native
+  
   def associateComposeView(composeView: ComposeView, closeWithCompose: Boolean): Unit = js.native
+  
   def close(): Unit = js.native
+  
+  var destroyed: Boolean = js.native
+  
   def disassociateComposeView(): Unit = js.native
+  
   @JSName("on")
   def on_closing(name: closing, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -25,4 +30,3 @@ trait DrawerView extends js.Object {
   @JSName("on")
   def on_slideAnimationDone(name: slideAnimationDone, cb: js.Function0[Unit]): Unit = js.native
 }
-

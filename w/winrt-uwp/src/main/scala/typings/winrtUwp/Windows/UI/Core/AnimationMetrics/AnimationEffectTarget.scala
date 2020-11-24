@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Core.AnimationMetrics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AnimationEffectTarget extends js.Object
-
 /** Specifies a participant in an animation. */
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffectTarget")
 @js.native
 object AnimationEffectTarget extends js.Object {
+  
   /** Objects that are being added. */
   @js.native
   sealed trait added extends AnimationEffectTarget
@@ -90,6 +90,4 @@ object AnimationEffectTarget extends js.Object {
   /** Objects that have been tapped or clicked on. */
   @js.native
   sealed trait tapped extends AnimationEffectTarget
-  
 }
-

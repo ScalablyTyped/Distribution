@@ -12,7 +12,7 @@ wechat js-sdk
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 710 |
+| # downloads        | 889 |
 | # stars            | 1 |
 
 ## Links

@@ -2,26 +2,30 @@ package typings.bearcatEs6.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BeanFactory extends js.Object {
-  var aspects: js.Array[js.Object] = js.native
-  var beanCurMap: js.Object = js.native
-  var beanDefinitions: js.Object = js.native
-  var beanFunctions: js.Object = js.native
-  var beanPostProcessors: js.Array[BeanPostProcessor] = js.native
-  var constraints: js.Object = js.native
-  var initCbMap: js.Object = js.native
-  var modelMap: js.Object = js.native
-  var singletonBeanFactory: SingletonBeanFactory = js.native
-  var tableModelMap: js.Object = js.native
+  
   /**
     * BeanFactory add beanPostProcessor to BeanFactory.
     * @param   beanPostProcessor
     * @api     public
     */
   def addBeanPostProcessor(beanPostProcessor: BeanPostProcessor): Unit = js.native
+  
+  var aspects: js.Array[js.Object] = js.native
+  
+  var beanCurMap: js.Object = js.native
+  
+  var beanDefinitions: js.Object = js.native
+  
+  var beanFunctions: js.Object = js.native
+  
+  var beanPostProcessors: js.Array[BeanPostProcessor] = js.native
+  
+  var constraints: js.Object = js.native
+  
   /**
     * BeanFactory check BeanFactory contains bean or not.
     *
@@ -30,6 +34,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def containsBean(beanName: String): Boolean = js.native
+  
   /**
     * BeanFactory check BeanFactory contains beanName beanDefinition or not.
     *
@@ -38,6 +43,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def containsBeanDefinition(beanName: String): Boolean = js.native
+  
   /**
     * BeanFactory destroy bean.
     *
@@ -46,12 +52,14 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def destroyBean(beanName: String, beanObject: js.Object): Unit = js.native
+  
   /**
     * BeanFactory destroy BeanFactory.
     *
     * @api     public
     */
   def destroyBeanFactory(): Unit = js.native
+  
   /**
     * BeanFactory destroy singleton.
     *
@@ -59,12 +67,14 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def destroySingleton(beanName: String): Unit = js.native
+  
   /**
     * BeanFactory destroy singletons.
     *
     * @api     public
     */
   def destroySingletons(): Unit = js.native
+  
   /**
     * BeanFactory get aspects.
     *
@@ -72,6 +82,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getAspects(): js.Array[js.Object] = js.native
+  
   /**
     * BeanFactory get bean instance through BeanFactory IoC container.
     *
@@ -80,6 +91,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getBean(beanName: String): js.Object = js.native
+  
   /**
     * BeanFactory get beanDefinition.
     *
@@ -88,6 +100,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getBeanDefinition(beanName: String): js.Object = js.native
+  
   /**
     * BeanFactory get beanDefinitions.
     *
@@ -95,6 +108,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getBeanDefinitions(): js.Object = js.native
+  
   /**
     * BeanFactory get bean contructor function.
     *
@@ -103,12 +117,14 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getBeanFunction(beanName: String): ConstructorFunction = js.native
+  
   /**
     * BeanFactory get beanPostProcessors.
     * @return  beanPostProcessors
     * @api public
     */
   def getBeanPostProcessors(): js.Array[BeanPostProcessor] = js.native
+  
   /**
     * BeanFactory get bean proxy through BeanFactory IoC container for lazy init bean.
     * when invoke bean proxy, proxy will invoke getBean to get the target bean
@@ -118,6 +134,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getBeanProxy(beanName: String): js.Object = js.native
+  
   /**
     * BeanFactory get constraint through BeanFactory IoC container.
     *
@@ -126,6 +143,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getConstraint(cid: String): js.Object = js.native
+  
   /**
     * BeanFactory get getConstraintDefinition.
     *
@@ -134,6 +152,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getConstraintDefinition(cid: String): js.Object = js.native
+  
   /**
     * BeanFactory get init method.
     *
@@ -142,6 +161,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getInitCb(beanName: String): CallbackFunc = js.native
+  
   /**
     * BeanFactory get modelDefinition.
     *
@@ -150,6 +170,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getModelDefinition(modelId: String): js.Object = js.native
+  
   /**
     * BeanFactory get modelDefinition by table.
     *
@@ -158,6 +179,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getModelDefinitionByTable(table: String): js.Object = js.native
+  
   /**
     * BeanFactory get modelDefinitions.
     *
@@ -165,6 +187,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getModelDefinitions(): js.Object = js.native
+  
   /**
     * BeanFactory get model through BeanFactory IoC container.
     *
@@ -173,6 +196,9 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def getModelProxy(modelId: String): js.Object = js.native
+  
+  var initCbMap: js.Object = js.native
+  
   /**
     * BeanFactory check bean is a prototype or not.
     *
@@ -181,6 +207,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def isPrototype(beanName: String): Boolean = js.native
+  
   /**
     * BeanFactory check bean is a singleton or not.
     *
@@ -189,6 +216,9 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def isSingleton(beanName: String): Boolean = js.native
+  
+  var modelMap: js.Object = js.native
+  
   /**
     * BeanFactory instantiating singletion beans in advance.
     *
@@ -197,6 +227,7 @@ trait BeanFactory extends js.Object {
     */
   def preInstantiateSingletons(): Unit = js.native
   def preInstantiateSingletons(cb: CallbackFunc): Unit = js.native
+  
   /**
     * BeanFactory register bean through metaObject into BeanFactory.
     *
@@ -205,6 +236,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def registerBean(beanName: String, metaObject: js.Object): Unit = js.native
+  
   /**
     * BeanFactory register beans through metaObjects into BeanFactory.
     *
@@ -212,6 +244,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def registerBeans(metaObjects: js.Object): Unit = js.native
+  
   /**
     * BeanFactory register constraint through metaObject into BeanFactory.
     *
@@ -221,6 +254,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def registerConstraint(beanName: String, cid: String, metaObject: js.Object): Unit = js.native
+  
   /**
     * BeanFactory register model through metaObject into BeanFactory.
     *
@@ -230,6 +264,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def registerModel(beanName: String, modelId: String, metaObject: js.Object): Unit = js.native
+  
   /**
     * BeanFactory remove beanDefinition from BeanFactory.
     *
@@ -237,6 +272,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def removeBeanDefinition(beanName: String): Unit = js.native
+  
   /**
     * BeanFactory remove bean contructor function from BeanFactory.
     *
@@ -244,6 +280,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def removeFunction(beanName: String): Unit = js.native
+  
   /**
     * BeanFactory set bean contructor function.
     *
@@ -252,6 +289,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def setBeanFunction(beanName: String, func: ConstructorFunction): Unit = js.native
+  
   /**
     * BeanFactory set init method.
     *
@@ -260,6 +298,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def setInitCb(beanName: String, initCb: CallbackFunc): Unit = js.native
+  
   /**
     * BeanFactory set parent bean.
     *
@@ -268,6 +307,7 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def setParentBean(beanName: String): js.Object = js.native
+  
   /**
     * BeanFactory set table model map.
     *
@@ -276,5 +316,8 @@ trait BeanFactory extends js.Object {
     * @api     public
     */
   def setTableModelMap(table: String, modelDefinition: js.Object): Unit = js.native
+  
+  var singletonBeanFactory: SingletonBeanFactory = js.native
+  
+  var tableModelMap: js.Object = js.native
 }
-

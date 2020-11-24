@@ -3,7 +3,7 @@ package typings.amazonConnectStreams.global.connect
 import typings.amazonConnectStreams.connect.Agent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Agent API provides event subscription methods and action methods which can be called on behalf of the agent.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("connect.Agent")
 @js.native
 class Agent_ () extends Agent
-

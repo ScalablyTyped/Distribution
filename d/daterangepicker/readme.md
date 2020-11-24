@@ -10,9 +10,9 @@ Date range picker component for Bootstrap
 | ------------------ | :-------------: |
 | Full name          | daterangepicker |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 169 |
-| # downloads        | 995709 |
+| # releases         | 4 |
+| # dependents       | 228 |
+| # downloads        | 1853905 |
 | # stars            | 7 |
 
 ## Links

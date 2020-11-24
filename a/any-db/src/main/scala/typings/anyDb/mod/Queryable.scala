@@ -4,14 +4,16 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Queryable extends EventEmitter {
+  
   /**
     * The Adapter instance that will be used by this Queryable for creating Query instances and/or connections.
     */
   var adapter: Adapter = js.native
+  
   /**
     * Execute a SQL statement using bound parameters (if they are provided) and return a Query object
     * that is a Readable stream of the resulting rows. If a Continuation<ResultSet> is provided the rows
@@ -33,4 +35,3 @@ trait Queryable extends EventEmitter {
     callback: js.Function2[/* error */ Error, /* results */ ResultSet, Unit]
   ): Query = js.native
 }
-

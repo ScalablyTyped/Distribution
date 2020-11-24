@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "NumberKeyframeTrack")
 @js.native
@@ -16,4 +16,3 @@ class NumberKeyframeTrack protected ()
     interpolation: typings.three.constantsMod.InterpolationModes
   ) = this()
 }
-

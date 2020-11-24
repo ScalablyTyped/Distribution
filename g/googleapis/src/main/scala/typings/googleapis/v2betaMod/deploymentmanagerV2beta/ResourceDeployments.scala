@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2beta", "deploymentmanager_v2beta.Resource$Deployments")
 @js.native
 class ResourceDeployments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.deployments.cancelPreview
     * @desc Cancels and removes the preview currently associated with the
@@ -44,6 +44,9 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.deployments.delete
     * @desc Deletes a deployment and all of the resources in the deployment.
@@ -74,6 +77,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.get
     * @desc Gets information about a specific deployment.
@@ -103,6 +107,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeployment]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -133,6 +138,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.insert
     * @desc Creates a deployment and all of the resources described by the
@@ -165,6 +171,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.list
     * @desc Lists all deployments for a given project.
@@ -200,6 +207,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeploymentsListResponse]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.patch
     * @desc Updates a deployment and all of the resources described by the
@@ -234,6 +242,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -265,6 +274,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.stop
     * @desc Stops an ongoing operation. This does not roll back any work that
@@ -296,6 +306,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -329,6 +340,7 @@ class ResourceDeployments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.deployments.update
     * @desc Updates a deployment and all of the resources described by the
@@ -364,4 +376,3 @@ class ResourceDeployments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

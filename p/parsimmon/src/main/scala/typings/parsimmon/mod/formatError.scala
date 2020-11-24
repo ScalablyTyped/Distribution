@@ -2,11 +2,12 @@ package typings.parsimmon.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parsimmon", "formatError")
 @js.native
 object formatError extends js.Object {
+  
   /**
     * Takes the string passed to parser.parse(string) and the error returned from
     * parser.parse(string) and turns it into a human readable error message string.
@@ -14,4 +15,3 @@ object formatError extends js.Object {
     */
   def apply[T](string: String, error: Result[T]): String = js.native
 }
-

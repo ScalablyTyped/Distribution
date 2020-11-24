@@ -2,10 +2,11 @@ package typings.asyncLock.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AsyncLock extends js.Object {
+  
   def acquire[T](key: String, fn: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
   def acquire[T](key: String, fn: js.Function0[T | js.Thenable[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
   def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _]): js.Promise[T] = js.native
@@ -40,7 +41,7 @@ trait AsyncLock extends js.Object {
     fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _],
     opts: AsyncLockOptions
   ): js.Promise[T] = js.native
+  
   def isBusy(): Boolean = js.native
   def isBusy(key: String): Boolean = js.native
 }
-

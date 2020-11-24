@@ -9,13 +9,17 @@ import typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.GetSpreadsheetByD
 import typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpreadsheetsCollection extends js.Object {
+  
   var DeveloperMetadata: js.UndefOr[DeveloperMetadataCollection] = js.native
+  
   var Sheets: js.UndefOr[SheetsCollection] = js.native
+  
   var Values: js.UndefOr[ValuesCollection] = js.native
+  
   // Applies one or more updates to the spreadsheet.
   // Each request is validated before
   // being applied. If any request is not valid then the entire request will
@@ -33,8 +37,10 @@ trait SpreadsheetsCollection extends js.Object {
   // collaborator changes. If there are no collaborators, the spreadsheet
   // should reflect your changes.
   def batchUpdate(resource: BatchUpdateSpreadsheetRequest, spreadsheetId: String): BatchUpdateSpreadsheetResponse = js.native
+  
   // Creates a spreadsheet, returning the newly created spreadsheet.
   def create(resource: Spreadsheet): Spreadsheet = js.native
+  
   // Returns the spreadsheet at the given ID.
   // The caller must specify the spreadsheet ID.
   // By default, data within grids will not be returned.
@@ -69,6 +75,7 @@ trait SpreadsheetsCollection extends js.Object {
   // return only the portions of the spreadsheet that intersect the requested
   // ranges. Ranges are specified using A1 notation.
   def get(spreadsheetId: String, optionalArgs: js.Object): Spreadsheet = js.native
+  
   // Returns the spreadsheet at the given ID.
   // The caller must specify the spreadsheet ID.
   // This method differs from GetSpreadsheet in that it allows selecting
@@ -88,4 +95,3 @@ trait SpreadsheetsCollection extends js.Object {
   // fields of the spreadsheet that you want.
   def getByDataFilter(resource: GetSpreadsheetByDataFilterRequest, spreadsheetId: String): Spreadsheet = js.native
 }
-

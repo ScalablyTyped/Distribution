@@ -4,11 +4,15 @@ import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/enumerate", JSImport.Namespace)
 @js.native
 object enumerateMod extends js.Object {
+  
+  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = js.native
+  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = js.native
+  
   @js.native
   class EnumerateIterator[T] protected ()
     extends IIterator[js.Tuple2[Double, T]] {
@@ -20,11 +24,9 @@ object enumerateMod extends js.Object {
       * @param start - The starting enum value.
       */
     def this(source: IIterator[T], start: Double) = this()
+    
     var _index: js.Any = js.native
+    
     var _source: js.Any = js.native
   }
-  
-  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = js.native
-  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = js.native
 }
-

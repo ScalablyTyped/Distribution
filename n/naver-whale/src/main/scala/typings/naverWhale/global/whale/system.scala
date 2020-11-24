@@ -2,11 +2,12 @@ package typings.naverWhale.global.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("whale.system")
 @js.native
 object system extends js.Object {
+  
   ////////////////////
   // System CPU
   ////////////////////
@@ -39,6 +40,4 @@ object system extends js.Object {
     */
   @js.native
   object storage extends js.Object
-  
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bandagedbd__bdapi
 
-Typings are for version 0.2
+Typings are for version 0.3
 
 
 

@@ -2,7 +2,7 @@ package typings.typescriptServices.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "IfStatement")
 @js.native
@@ -14,4 +14,3 @@ class IfStatement protected ()
     elseClause: typings.typescriptServices.TypeScript.ElseClause
   ) = this()
 }
-

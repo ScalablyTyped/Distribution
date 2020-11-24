@@ -5,9 +5,46 @@ import typings.reactBootstrapTableNext.mod.TableChangeType
 import typings.reactBootstrapTableNext.mod._CellAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBootstrapTableNextStrings {
+  
+  @scala.inline
+  def TEXT: TEXT = "TEXT".asInstanceOf[TEXT]
+  
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  
+  @scala.inline
+  def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def pagination: pagination = "pagination".asInstanceOf[pagination]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def sort: sort = "sort".asInstanceOf[sort]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
   @js.native
   sealed trait TEXT extends js.Object
   
@@ -43,30 +80,4 @@ object reactBootstrapTableNextStrings {
   
   @js.native
   sealed trait start extends _CellAlignment
-  
-  @scala.inline
-  def TEXT: TEXT = "TEXT".asInstanceOf[TEXT]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def pagination: pagination = "pagination".asInstanceOf[pagination]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
 }
-

@@ -9,11 +9,12 @@ import typings.typescript.mod.ProjectReference
 import typings.typescript.mod.SemanticDiagnosticsBuilderProgram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createSemanticDiagnosticsBuilderProgram")
 @js.native
 object createSemanticDiagnosticsBuilderProgram extends js.Object {
+  
   /**
     * Create the builder to manage semantic diagnostics and cache them
     */
@@ -40,4 +41,3 @@ object createSemanticDiagnosticsBuilderProgram extends js.Object {
     projectReferences: js.UndefOr[js.Array[ProjectReference]]
   ): SemanticDiagnosticsBuilderProgram = js.native
 }
-

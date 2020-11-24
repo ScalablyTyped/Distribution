@@ -2,16 +2,18 @@ package typings.jstree
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSTreeStaticDefaultsDragNDrop extends js.Object {
+  
   /**
     * a boolean indicating if nodes from this tree should only be copied with dnd (as opposed to moved), default is `false`
     * @name $.jstree.defaults.dnd.always_copy
     * @plugin dnd
     */
   var always_copy: Boolean = js.native
+  
   /**
     * a boolean indicating if checks should constantly be made while the user is dragging the node
     * (as opposed to checking only on drop), default is `true`
@@ -19,12 +21,14 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var check_while_dragging: Boolean = js.native
+  
   /**
     * a boolean indicating if a copy should be possible while dragging (by pressint the meta key or Ctrl). Defaults to `true`.
     * @name $.jstree.defaults.dnd.copy
     * @plugin dnd
     */
   var copy: Boolean = js.native
+  
   /**
     * when starting the drag on a node that is selected this setting controls if all selected nodes are dragged
     * or only the single node, default is `true`, which means all selected nodes are dragged when the drag is started on a selected node
@@ -32,6 +36,7 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var drag_selection: Boolean = js.native
+  
   /**
     * when dropping a node "inside", this setting indicates the position the node should go to
     * - it can be an integer or a string: "first" (same as 0) or "last", default is `0`
@@ -39,6 +44,7 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var inside_pos: js.Any = js.native
+  
   /**
     * a function invoked each time a node is about to be dragged, invoked in the tree's scope and receives the nodes
     * about to be dragged as an argument (array) - return `false` to prevent dragging
@@ -46,6 +52,7 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var is_draggable: Boolean = js.native
+  
   /**
     * controls whether a drag can be initiated from any part of the node and not just the text/icon part,
     * works best with the wholerow plugin. Keep in mind it can cause problems with tree scrolling on mobile
@@ -54,6 +61,7 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var large_drag_target: Boolean = js.native
+  
   /**
     * controls whether items can be dropped anywhere on the node, not just on the anchor,
     * by default only the node anchor is a valid drop target. Works best with the wholerow plugin.
@@ -63,12 +71,14 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var large_drop_target: Boolean = js.native
+  
   /**
     * a number indicating how long a node should remain hovered while dragging to be opened. Defaults to `500`.
     * @name $.jstree.defaults.dnd.open_timeout
     * @plugin dnd
     */
   var open_timeout: Double = js.native
+  
   /**
     * controls whether dnd works on touch devices. If left as boolean true dnd will work the same as in desktop browsers,
     * which in some cases may impair scrolling. If set to boolean false dnd will not work on touch devices.
@@ -77,6 +87,7 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     * @plugin dnd
     */
   var touch: Boolean = js.native
+  
   /**
     * controls whether use HTML5 dnd api instead of classical.
     * That will allow better integration of dnd events with other HTML5 controls.
@@ -86,8 +97,8 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
     */
   var use_html5: Boolean = js.native
 }
-
 object JSTreeStaticDefaultsDragNDrop {
+  
   @scala.inline
   def apply(
     always_copy: Boolean,
@@ -105,40 +116,53 @@ object JSTreeStaticDefaultsDragNDrop {
     val __obj = js.Dynamic.literal(always_copy = always_copy.asInstanceOf[js.Any], check_while_dragging = check_while_dragging.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], drag_selection = drag_selection.asInstanceOf[js.Any], inside_pos = inside_pos.asInstanceOf[js.Any], is_draggable = is_draggable.asInstanceOf[js.Any], large_drag_target = large_drag_target.asInstanceOf[js.Any], large_drop_target = large_drop_target.asInstanceOf[js.Any], open_timeout = open_timeout.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], use_html5 = use_html5.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsDragNDrop]
   }
+  
   @scala.inline
   implicit class JSTreeStaticDefaultsDragNDropOps[Self <: JSTreeStaticDefaultsDragNDrop] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlways_copy(value: Boolean): Self = this.set("always_copy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCheck_while_dragging(value: Boolean): Self = this.set("check_while_dragging", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCopy(value: Boolean): Self = this.set("copy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDrag_selection(value: Boolean): Self = this.set("drag_selection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInside_pos(value: js.Any): Self = this.set("inside_pos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIs_draggable(value: Boolean): Self = this.set("is_draggable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLarge_drag_target(value: Boolean): Self = this.set("large_drag_target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLarge_drop_target(value: Boolean): Self = this.set("large_drop_target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOpen_timeout(value: Double): Self = this.set("open_timeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTouch(value: Boolean): Self = this.set("touch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUse_html5(value: Boolean): Self = this.set("use_html5", value.asInstanceOf[js.Any])
   }
-  
 }
-

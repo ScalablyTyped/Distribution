@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.TrackEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TrackEvent")
 @js.native
@@ -14,7 +14,6 @@ class TrackEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: TrackEventInit) = this()
 }
-
 @JSGlobal("TrackEvent")
 @js.native
 object TrackEvent
@@ -24,4 +23,3 @@ object TrackEvent
       /* eventInitDict */ TrackEventInit, 
       typings.std.TrackEvent
     ]
-

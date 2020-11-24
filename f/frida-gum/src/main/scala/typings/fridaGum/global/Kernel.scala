@@ -12,23 +12,12 @@ import typings.fridaGum.PageProtection
 import typings.fridaGum.UInt64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Kernel")
 @js.native
 object Kernel extends js.Object {
-  /**
-    * Whether the Kernel API is available.
-    */
-  val available: Boolean = js.native
-  /**
-    * Base address of the kernel. Can be overridden with any non-zero UInt64.
-    */
-  var base: UInt64 = js.native
-  /**
-    * Size of kernel page in bytes.
-    */
-  val pageSize: Double = js.native
+  
   /**
     * Allocates kernel memory.
     *
@@ -36,6 +25,17 @@ object Kernel extends js.Object {
     */
   def alloc(size: Double): UInt64 = js.native
   def alloc(size: UInt64): UInt64 = js.native
+  
+  /**
+    * Whether the Kernel API is available.
+    */
+  val available: Boolean = js.native
+  
+  /**
+    * Base address of the kernel. Can be overridden with any non-zero UInt64.
+    */
+  var base: UInt64 = js.native
+  
   /**
     * Enumerates all ranges of a kernel module.
     *
@@ -44,10 +44,12 @@ object Kernel extends js.Object {
     */
   def enumerateModuleRanges(name: String, protection: PageProtection): js.Array[KernelModuleRangeDetails] = js.native
   def enumerateModuleRanges(name: Null, protection: PageProtection): js.Array[KernelModuleRangeDetails] = js.native
+  
   /**
     * Enumerates kernel modules loaded right now.
     */
   def enumerateModules(): js.Array[KernelModuleDetails] = js.native
+  
   def enumerateRanges(specifier: EnumerateRangesSpecifier): js.Array[KernelRangeDetails] = js.native
   /**
     * Enumerates all kernel memory ranges matching `specifier`.
@@ -55,6 +57,12 @@ object Kernel extends js.Object {
     * @param specifier The kind of ranges to include.
     */
   def enumerateRanges(specifier: PageProtection): js.Array[KernelRangeDetails] = js.native
+  
+  /**
+    * Size of kernel page in bytes.
+    */
+  val pageSize: Double = js.native
+  
   /**
     * Changes the page protection on a region of kernel memory.
     *
@@ -64,26 +72,47 @@ object Kernel extends js.Object {
     */
   def protect(address: UInt64, size: Double, protection: PageProtection): Boolean = js.native
   def protect(address: UInt64, size: UInt64, protection: PageProtection): Boolean = js.native
+  
   def readByteArray(address: UInt64, length: Double): ArrayBuffer | Null = js.native
+  
   def readCString(address: UInt64, size: Double): String | Null = js.native
+  
   def readDouble(address: UInt64): Double = js.native
+  
   def readFloat(address: UInt64): Double = js.native
+  
   def readInt(address: UInt64): Double = js.native
+  
   def readLong(address: UInt64): Double | Int64 = js.native
+  
   def readS16(address: UInt64): Double = js.native
+  
   def readS32(address: UInt64): Double = js.native
+  
   def readS64(address: UInt64): Int64 = js.native
+  
   def readS8(address: UInt64): Double = js.native
+  
   def readShort(address: UInt64): Double = js.native
+  
   def readU16(address: UInt64): Double = js.native
+  
   def readU32(address: UInt64): Double = js.native
+  
   def readU64(address: UInt64): UInt64 = js.native
+  
   def readU8(address: UInt64): Double = js.native
+  
   def readUInt(address: UInt64): Double = js.native
+  
   def readULong(address: UInt64): Double | UInt64 = js.native
+  
   def readUShort(address: UInt64): Double = js.native
+  
   def readUtf16String(address: UInt64, length: Double): String | Null = js.native
+  
   def readUtf8String(address: UInt64, size: Double): String | Null = js.native
+  
   /**
     * Scans kernel memory for occurences of `pattern` in the memory range given by `address` and `size`.
     *
@@ -100,6 +129,7 @@ object Kernel extends js.Object {
     */
   def scan(address: UInt64, size: Double, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = js.native
   def scan(address: UInt64, size: UInt64, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = js.native
+  
   /**
     * Synchronous version of `scan()`.
     *
@@ -109,39 +139,57 @@ object Kernel extends js.Object {
     */
   def scanSync(address: UInt64, size: Double, pattern: String): js.Array[KernelMemoryScanMatch] = js.native
   def scanSync(address: UInt64, size: UInt64, pattern: String): js.Array[KernelMemoryScanMatch] = js.native
+  
   def writeByteArray(address: UInt64, value: js.Array[Double]): Unit = js.native
   def writeByteArray(address: UInt64, value: ArrayBuffer): Unit = js.native
+  
   def writeDouble(address: UInt64, value: Double): Unit = js.native
+  
   def writeFloat(address: UInt64, value: Double): Unit = js.native
+  
   def writeInt(address: UInt64, value: Double): Unit = js.native
   def writeInt(address: UInt64, value: Int64): Unit = js.native
+  
   def writeLong(address: UInt64, value: Double): Unit = js.native
   def writeLong(address: UInt64, value: Int64): Unit = js.native
+  
   def writeS16(address: UInt64, value: Double): Unit = js.native
   def writeS16(address: UInt64, value: Int64): Unit = js.native
+  
   def writeS32(address: UInt64, value: Double): Unit = js.native
   def writeS32(address: UInt64, value: Int64): Unit = js.native
+  
   def writeS64(address: UInt64, value: Double): Unit = js.native
   def writeS64(address: UInt64, value: Int64): Unit = js.native
+  
   def writeS8(address: UInt64, value: Double): Unit = js.native
   def writeS8(address: UInt64, value: Int64): Unit = js.native
+  
   def writeShort(address: UInt64, value: Double): Unit = js.native
   def writeShort(address: UInt64, value: Int64): Unit = js.native
+  
   def writeU16(address: UInt64, value: Double): Unit = js.native
   def writeU16(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeU32(address: UInt64, value: Double): Unit = js.native
   def writeU32(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeU64(address: UInt64, value: Double): Unit = js.native
   def writeU64(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeU8(address: UInt64, value: Double): Unit = js.native
   def writeU8(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeUInt(address: UInt64, value: Double): Unit = js.native
   def writeUInt(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeULong(address: UInt64, value: Double): Unit = js.native
   def writeULong(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeUShort(address: UInt64, value: Double): Unit = js.native
   def writeUShort(address: UInt64, value: UInt64): Unit = js.native
+  
   def writeUtf16String(address: UInt64, value: String): Unit = js.native
+  
   def writeUtf8String(address: UInt64, value: String): Unit = js.native
 }
-

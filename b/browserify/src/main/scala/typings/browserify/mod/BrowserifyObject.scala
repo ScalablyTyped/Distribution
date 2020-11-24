@@ -11,14 +11,11 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BrowserifyObject extends EventEmitter {
-  /**
-    * Set to any until substack/labeled-stream-splicer is defined
-    */
-  var pipeline: js.Any = js.native
+  
   def add(file: js.Array[InputFile]): BrowserifyObject = js.native
   def add(file: js.Array[InputFile], opts: FileOptions): BrowserifyObject = js.native
   /**
@@ -27,18 +24,21 @@ trait BrowserifyObject extends EventEmitter {
     */
   def add(file: InputFile): BrowserifyObject = js.native
   def add(file: InputFile, opts: FileOptions): BrowserifyObject = js.native
+  
   /**
     * Bundle the files and their dependencies into a single javascript file.
     * Return a readable stream with the javascript file contents or optionally specify a cb(err, buf) to get the buffered results.
     */
   def bundle(): ReadableStream = js.native
   def bundle(cb: js.Function2[/* err */ js.Any, /* src */ Buffer, _]): ReadableStream = js.native
+  
   /**
     * Prevent the module name or file at file from showing up in the output bundle.
     * If your code tries to require() that file it will throw unless you've provided another mechanism for loading it.
     */
   def exclude(file: String): BrowserifyObject = js.native
   def exclude(file: String, opts: CustomOptions): BrowserifyObject = js.native
+  
   def external(file: String): BrowserifyObject = js.native
   def external(file: String, opts: CustomOptions): BrowserifyObject = js.native
   /**
@@ -49,12 +49,14 @@ trait BrowserifyObject extends EventEmitter {
   def external(file: js.Array[String]): BrowserifyObject = js.native
   def external(file: js.Array[String], opts: CustomOptions): BrowserifyObject = js.native
   def external(file: BrowserifyObject): BrowserifyObject = js.native
+  
   /**
     * Prevent the module name or file at file from showing up in the output bundle.
     * Instead you will get a file with module.exports = {}.
     */
   def ignore(file: String): BrowserifyObject = js.native
   def ignore(file: String, opts: CustomOptions): BrowserifyObject = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   /**
     * When .bundle() is called, this event fires with the bundle output stream.
@@ -83,6 +85,12 @@ trait BrowserifyObject extends EventEmitter {
     */
   @JSName("on")
   def on_transform(event: transform, listener: js.Function2[/* tr */ ReadWriteStream, /* file */ String, _]): this.type = js.native
+  
+  /**
+    * Set to any until substack/labeled-stream-splicer is defined
+    */
+  var pipeline: js.Any = js.native
+  
   /**
     * Register a plugin with opts. Plugins can be a string module name or a function the same as transforms.
     * plugin(b, opts) is called with the Browserify instance b.
@@ -91,6 +99,7 @@ trait BrowserifyObject extends EventEmitter {
   def plugin[T /* <: CustomOptions */](plugin: String, opts: T): BrowserifyObject = js.native
   def plugin[T /* <: CustomOptions */](plugin: js.Function2[/* b */ this.type, /* opts */ T, _]): BrowserifyObject = js.native
   def plugin[T /* <: CustomOptions */](plugin: js.Function2[/* b */ this.type, /* opts */ T, _], opts: T): BrowserifyObject = js.native
+  
   /**
     * Make file available from outside the bundle with require(file).
     * The file param is anything that can be resolved by require.resolve().
@@ -100,12 +109,14 @@ trait BrowserifyObject extends EventEmitter {
     */
   def require(file: InputFile): BrowserifyObject = js.native
   def require(file: InputFile, opts: FileOptions): BrowserifyObject = js.native
+  
   /**
     * Reset the pipeline back to a normal state. This function is called automatically when bundle() is called multiple times.
     * This function triggers a 'reset' event.
     */
   def reset(): Unit = js.native
   def reset(opts: Options): Unit = js.native
+  
   /**
     * Transform source code before parsing it for require() calls with the transform function or module name tr.
     * If tr is a function, it will be called with tr(file) and it should return a through-stream that takes the raw file contents and produces the transformed source.
@@ -116,4 +127,3 @@ trait BrowserifyObject extends EventEmitter {
   def transform[T /* <: CustomOptions */](tr: js.Function2[/* file */ String, /* opts */ T, ReadWriteStream]): BrowserifyObject = js.native
   def transform[T /* <: CustomOptions */](tr: js.Function2[/* file */ String, /* opts */ T, ReadWriteStream], opts: T): BrowserifyObject = js.native
 }
-

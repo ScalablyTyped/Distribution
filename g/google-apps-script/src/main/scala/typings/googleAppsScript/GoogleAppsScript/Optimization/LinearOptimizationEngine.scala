@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Optimization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The engine used to model and solve a linear program. The example below solves the following
@@ -58,13 +58,16 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LinearOptimizationEngine extends js.Object {
+  
   def addConstraint(lowerBound: Double, upperBound: Double): LinearOptimizationConstraint = js.native
+  
   def addConstraints(
     lowerBounds: js.Array[Double],
     upperBounds: js.Array[Double],
     variableNames: js.Array[js.Array[String]],
     coefficients: js.Array[js.Array[Double]]
   ): LinearOptimizationEngine = js.native
+  
   def addVariable(name: String, lowerBound: Double, upperBound: Double): LinearOptimizationEngine = js.native
   def addVariable(name: String, lowerBound: Double, upperBound: Double, `type`: VariableType): LinearOptimizationEngine = js.native
   def addVariable(
@@ -74,6 +77,7 @@ trait LinearOptimizationEngine extends js.Object {
     `type`: VariableType,
     objectiveCoefficient: Double
   ): LinearOptimizationEngine = js.native
+  
   def addVariables(
     names: js.Array[String],
     lowerBounds: js.Array[Double],
@@ -81,10 +85,13 @@ trait LinearOptimizationEngine extends js.Object {
     types: js.Array[VariableType],
     objectiveCoefficients: js.Array[Double]
   ): LinearOptimizationEngine = js.native
+  
   def setMaximization(): LinearOptimizationEngine = js.native
+  
   def setMinimization(): LinearOptimizationEngine = js.native
+  
   def setObjectiveCoefficient(variableName: String, coefficient: Double): LinearOptimizationEngine = js.native
+  
   def solve(): LinearOptimizationSolution = js.native
   def solve(seconds: Double): LinearOptimizationSolution = js.native
 }
-

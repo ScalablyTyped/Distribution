@@ -2,9 +2,10 @@ package typings.angularMocks.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object angularAugmentingMod {
+  
   ///////////////////////////////////////////////////////////////////////////
   // ComponentControllerService
   // see https://docs.angularjs.org/api/ngMock/service/$componentController
@@ -16,6 +17,7 @@ package object angularAugmentingMod {
     /* ident */ js.UndefOr[java.lang.String], 
     js.Any
   ]
+  
   ///////////////////////////////////////////////////////////////////////////
   // ControllerService mock
   // see https://docs.angularjs.org/api/ngMock/service/$controller
@@ -27,11 +29,13 @@ package object angularAugmentingMod {
     /* bindings */ js.UndefOr[js.Any], 
     js.Any
   ]
+  
   ///////////////////////////////////////////////////////////////////////////
   // FlushPendingTasksService
   // see https://docs.angularjs.org/api/ngMock/service/$flushPendingTasks
   ///////////////////////////////////////////////////////////////////////////
   type IFlushPendingTasksService = js.Function1[/* delay */ js.UndefOr[scala.Double], scala.Unit]
+  
   ///////////////////////////////////////////////////////////////////////////
   // VerifyNoPendingTasksService
   // see https://docs.angularjs.org/api/ngMock/service/$verifyNoPendingTasks

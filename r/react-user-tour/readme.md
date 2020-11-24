@@ -11,7 +11,7 @@ give your user a guided tour around your application
 | Keywords           | onboarding, user, tour, user-tour, tour-guide, guide, joyride, hopscotch, shepard, react |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 20441 |
+| # downloads        | 16169 |
 | # stars            | 1 |
 
 ## Links

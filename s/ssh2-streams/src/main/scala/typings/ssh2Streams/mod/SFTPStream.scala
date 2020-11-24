@@ -31,7 +31,7 @@ import typings.ssh2Streams.ssh2StreamsStrings.ready
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2-streams", "SFTPStream")
 @js.native
@@ -46,6 +46,7 @@ class SFTPStream () extends Transform {
   def this(remoteIdentRaw: String) = this()
   def this(cfg: js.UndefOr[scala.Nothing], remoteIdentRaw: String) = this()
   def this(cfg: SFTPStreamConfig, remoteIdentRaw: String) = this()
+  
   /**
     * (Server-only)
     * Sends an attrs response for the request identified by `id`.
@@ -53,6 +54,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def attrs(reqID: Double, attrs: Attributes): Boolean = js.native
+  
   def chmod(path: String, mode: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
   /**
     * (Client-only)
@@ -61,6 +63,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def chmod(path: String, mode: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Sets the owner for `path`.
@@ -68,6 +71,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def chown(path: String, uid: Double, gid: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Closes the resource associated with `handle` given by `open()` or `opendir()`.
@@ -75,18 +79,21 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def close(handle: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Returns a new readable stream for `path`.
     */
   def createReadStream(path: String): Readable = js.native
   def createReadStream(path: String, options: ReadStreamOptions): Readable = js.native
+  
   /**
     * (Client-only)
     * Returns a new writable stream for `path`.
     */
   def createWriteStream(path: String): Writable = js.native
   def createWriteStream(path: String, options: WriteStreamOptions): Writable = js.native
+  
   /**
     * (Server-only)
     * Sends a data response for the request identified by `id`.
@@ -97,6 +104,7 @@ class SFTPStream () extends Transform {
   def data(reqID: Double, data: String, encoding: String): Boolean = js.native
   def data(reqID: Double, data: Buffer): Boolean = js.native
   def data(reqID: Double, data: Buffer, encoding: String): Boolean = js.native
+  
   /**
     * (Client-only, OpenSSH extension)
     * Performs POSIX fstatvfs(2) on open handle `handle`.
@@ -104,6 +112,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def ext_openssh_fstatvfs(handle: Buffer, callback: js.Function2[/* err */ js.Any, /* fsInfo */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only, OpenSSH extension)
     * Performs POSIX fsync(3) on the open handle `handle`.
@@ -111,6 +120,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def ext_openssh_fsync(handle: Buffer, callback: js.Function2[/* err */ js.Any, /* fsInfo */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only, OpenSSH extension)
     * Performs POSIX link(2) to create a hard link to `targetPath` at `linkPath`.
@@ -118,6 +128,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def ext_openssh_hardlink(targetPath: String, linkPath: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only, OpenSSH extension)
     * Performs POSIX rename(3) from `srcPath` to `destPath`.
@@ -125,6 +136,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def ext_openssh_rename(srcPath: String, destPath: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only, OpenSSH extension)
     * Performs POSIX statvfs(2) on `path`.
@@ -132,6 +144,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def ext_openssh_statvfs(path: String, callback: js.Function2[/* err */ js.Any, /* fsInfo */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Downloads a file at `remotePath` to `localPath` using parallel reads for faster throughput.
@@ -147,6 +160,7 @@ class SFTPStream () extends Transform {
     options: TransferOptions,
     callback: js.Function1[/* err */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * (Client-only)
     * Uploads a file from `localPath` to `remotePath` using parallel reads for faster throughput.
@@ -162,6 +176,7 @@ class SFTPStream () extends Transform {
     options: TransferOptions,
     callback: js.Function1[/* err */ js.Any, Unit]
   ): Unit = js.native
+  
   def fchmod(handle: Buffer, mode: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
   /**
     * (Client-only)
@@ -170,6 +185,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def fchmod(handle: Buffer, mode: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Sets the owner for the resource associated with `handle`.
@@ -177,6 +193,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def fchown(handle: Buffer, uid: Double, gid: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Sets the attributes defined in `attributes` for the resource associated with `handle`.
@@ -184,6 +201,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def fsetstat(handle: Buffer, attributes: InputAttributes, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Retrieves attributes for the resource associated with `handle`.
@@ -191,6 +209,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def fstat(handle: Buffer, callback: js.Function2[/* err */ js.Any, /* stats */ Stats, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Sets the access time and modified time for the resource associated with `handle`.
@@ -201,6 +220,7 @@ class SFTPStream () extends Transform {
   def futimes(handle: Buffer, atime: Double, mtime: Date, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
   def futimes(handle: Buffer, atime: Date, mtime: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
   def futimes(handle: Buffer, atime: Date, mtime: Date, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Server-only)
     * Sends a handle response for the request identified by `id`.
@@ -212,6 +232,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def handle(reqID: Double, handle: Buffer): Boolean = js.native
+  
   /**
     * (Client-only)
     * Retrieves attributes for `path`. If `path` is a symlink, the link itself is stat'ed
@@ -220,6 +241,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def lstat(path: String, callback: js.Function2[/* err */ js.Any, /* stats */ Stats, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Creates a new directory `path`.
@@ -234,6 +256,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def mkdir(path: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Server-only)
     * Sends a name response for the request identified by `id`.
@@ -241,6 +264,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def name(reqID: Double, names: js.Array[FileEntry]): Boolean = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
@@ -471,6 +495,7 @@ class SFTPStream () extends Transform {
     */
   @JSName("on")
   def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
+  
   /**
     * (Client-only)
     * Opens a file `filename` for `mode` with optional `attributes`.
@@ -494,6 +519,7 @@ class SFTPStream () extends Transform {
     mode: String,
     callback: js.Function2[/* err */ js.Any, /* handle */ Buffer, Unit]
   ): Boolean = js.native
+  
   /**
     * (Client-only)
     * Opens a directory `path`.
@@ -501,6 +527,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def opendir(path: String, callback: js.Function2[/* err */ js.Any, /* handle */ Buffer, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Reads `length` bytes from the resource associated with `handle` starting at `position`
@@ -522,6 +549,7 @@ class SFTPStream () extends Transform {
       Unit
     ]
   ): Boolean = js.native
+  
   /**
     * (Client-only)
     * Reads a file in memory and returns its contents
@@ -545,6 +573,7 @@ class SFTPStream () extends Transform {
     options: ReadFileOptions,
     callback: js.Function2[/* err */ js.Any, /* handle */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * (Client-only)
     * Retrieves a directory listing.
@@ -553,6 +582,7 @@ class SFTPStream () extends Transform {
     */
   def readdir(location: String, callback: js.Function2[/* err */ js.Any, /* list */ js.Array[FileEntry], Unit]): Boolean = js.native
   def readdir(location: Buffer, callback: js.Function2[/* err */ js.Any, /* list */ js.Array[FileEntry], Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Retrieves the target for a symlink at `path`.
@@ -560,6 +590,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def readlink(path: String, callback: js.Function2[/* err */ js.Any, /* target */ String, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Resolves `path` to an absolute path.
@@ -567,6 +598,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def realpath(path: String, callback: js.Function2[/* err */ js.Any, /* absPath */ String, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Renames/moves `srcPath` to `destPath`.
@@ -574,6 +606,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def rename(srcPath: String, destPath: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Removes the directory at `path`.
@@ -581,6 +614,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def rmdir(path: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Sets the attributes defined in `attributes` for `path`.
@@ -588,6 +622,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def setstat(path: String, attributes: InputAttributes, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Retrieves attributes for `path`.
@@ -595,6 +630,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def stat(path: String, callback: js.Function2[/* err */ js.Any, /* stats */ Stats, Unit]): Boolean = js.native
+  
   /**
     * (Server-only)
     * Sends a status response for the request identified by `id`.
@@ -603,6 +639,7 @@ class SFTPStream () extends Transform {
     */
   def status(reqID: Double, statusCode: Double): Boolean = js.native
   def status(reqID: Double, statusCode: Double, message: String): Boolean = js.native
+  
   /**
     * (Client-only)
     * Creates a symlink at `linkPath` to `targetPath`.
@@ -610,6 +647,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def symlink(targetPath: String, linkPath: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Removes the file/symlink at `path`.
@@ -617,6 +655,7 @@ class SFTPStream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def unlink(path: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Sets the access time and modified time for `path`.
@@ -627,6 +666,7 @@ class SFTPStream () extends Transform {
   def utimes(path: String, atime: Double, mtime: Date, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
   def utimes(path: String, atime: Date, mtime: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
   def utimes(path: String, atime: Date, mtime: Date, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
@@ -640,16 +680,10 @@ class SFTPStream () extends Transform {
     callback: js.Function1[/* err */ js.Any, Unit]
   ): Boolean = js.native
 }
-
 /* static members */
 @JSImport("ssh2-streams", "SFTPStream")
 @js.native
 object SFTPStream extends js.Object {
-  @js.native
-  sealed trait OPEN_MODE extends js.Object
-  
-  @js.native
-  sealed trait STATUS_CODE extends js.Object
   
   /**
     * Converts flag mask (e.g. number containing `SFTPStream.OPEN_MODE` values) to the
@@ -658,6 +692,7 @@ object SFTPStream extends js.Object {
     * Returns `null` if conversion failed.
     */
   def flagsToString(flagsMask: Double): String = js.native
+  
   /**
     * Converts string flags (e.g. `'r'`, `'a+'`, etc.) to the appropriate
     * `SFTPStream.OPEN_MODE` flag mask.
@@ -665,109 +700,99 @@ object SFTPStream extends js.Object {
     * Returns `null` if conversion failed.
     */
   def stringToFlags(flagsStr: String): Double = js.native
+  
+  @js.native
+  sealed trait OPEN_MODE extends js.Object
   @js.native
   object OPEN_MODE extends js.Object {
-    @js.native
-    sealed trait APPEND extends OPEN_MODE
-    
-    @js.native
-    sealed trait CREAT extends OPEN_MODE
-    
-    @js.native
-    sealed trait EXCL extends OPEN_MODE
-    
-    @js.native
-    sealed trait READ extends OPEN_MODE
-    
-    @js.native
-    sealed trait TRUNC extends OPEN_MODE
-    
-    @js.native
-    sealed trait WRITE extends OPEN_MODE
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[OPEN_MODE with Double] = js.native
+    
+    @js.native
+    sealed trait APPEND extends OPEN_MODE
     /* 0x00000004 */ @js.native
     object APPEND extends TopLevel[APPEND with Double]
     
+    @js.native
+    sealed trait CREAT extends OPEN_MODE
     /* 0x00000008 */ @js.native
     object CREAT extends TopLevel[CREAT with Double]
     
+    @js.native
+    sealed trait EXCL extends OPEN_MODE
     /* 0x00000020 */ @js.native
     object EXCL extends TopLevel[EXCL with Double]
     
+    @js.native
+    sealed trait READ extends OPEN_MODE
     /* 0x00000001 */ @js.native
     object READ
       extends TopLevel[typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.READ with Double]
     
+    @js.native
+    sealed trait TRUNC extends OPEN_MODE
     /* 0x00000010 */ @js.native
     object TRUNC extends TopLevel[TRUNC with Double]
     
+    @js.native
+    sealed trait WRITE extends OPEN_MODE
     /* 0x00000002 */ @js.native
     object WRITE
       extends TopLevel[typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.WRITE with Double]
-    
   }
   
   @js.native
+  sealed trait STATUS_CODE extends js.Object
+  @js.native
   object STATUS_CODE extends js.Object {
-    @js.native
-    sealed trait BAD_MESSAGE extends STATUS_CODE
-    
-    @js.native
-    sealed trait CONNECTION_LOST extends STATUS_CODE
-    
-    @js.native
-    sealed trait EOF extends STATUS_CODE
-    
-    @js.native
-    sealed trait FAILURE extends STATUS_CODE
-    
-    @js.native
-    sealed trait NO_CONNECTION extends STATUS_CODE
-    
-    @js.native
-    sealed trait NO_SUCH_FILE extends STATUS_CODE
-    
-    @js.native
-    sealed trait OK extends STATUS_CODE
-    
-    @js.native
-    sealed trait OP_UNSUPPORTED extends STATUS_CODE
-    
-    @js.native
-    sealed trait PERMISSION_DENIED extends STATUS_CODE
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[STATUS_CODE with Double] = js.native
+    
+    @js.native
+    sealed trait BAD_MESSAGE extends STATUS_CODE
     /* 5 */ @js.native
     object BAD_MESSAGE extends TopLevel[BAD_MESSAGE with Double]
     
+    @js.native
+    sealed trait CONNECTION_LOST extends STATUS_CODE
     /* 7 */ @js.native
     object CONNECTION_LOST extends TopLevel[CONNECTION_LOST with Double]
     
+    @js.native
+    sealed trait EOF extends STATUS_CODE
     /* 1 */ @js.native
     object EOF extends TopLevel[EOF with Double]
     
+    @js.native
+    sealed trait FAILURE extends STATUS_CODE
     /* 4 */ @js.native
     object FAILURE extends TopLevel[FAILURE with Double]
     
+    @js.native
+    sealed trait NO_CONNECTION extends STATUS_CODE
     /* 6 */ @js.native
     object NO_CONNECTION extends TopLevel[NO_CONNECTION with Double]
     
+    @js.native
+    sealed trait NO_SUCH_FILE extends STATUS_CODE
     /* 2 */ @js.native
     object NO_SUCH_FILE extends TopLevel[NO_SUCH_FILE with Double]
     
+    @js.native
+    sealed trait OK extends STATUS_CODE
     /* 0 */ @js.native
     object OK extends TopLevel[OK with Double]
     
+    @js.native
+    sealed trait OP_UNSUPPORTED extends STATUS_CODE
     /* 8 */ @js.native
     object OP_UNSUPPORTED extends TopLevel[OP_UNSUPPORTED with Double]
     
+    @js.native
+    sealed trait PERMISSION_DENIED extends STATUS_CODE
     /* 3 */ @js.native
     object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
-    
   }
-  
 }
-

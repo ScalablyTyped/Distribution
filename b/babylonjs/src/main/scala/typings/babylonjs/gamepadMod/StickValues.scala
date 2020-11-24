@@ -2,7 +2,7 @@ package typings.babylonjs.gamepadMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/gamepad", "StickValues")
 @js.native
@@ -22,13 +22,14 @@ class StickValues protected () extends js.Object {
     */
   y: Double
   ) = this()
+  
   /**
     * The x component of the control stick
     */
   var x: Double = js.native
+  
   /**
     * The y component of the control stick
     */
   var y: Double = js.native
 }
-

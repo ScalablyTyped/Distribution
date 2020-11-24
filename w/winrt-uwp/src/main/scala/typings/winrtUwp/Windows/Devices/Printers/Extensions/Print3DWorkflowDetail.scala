@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Printers.Extensions
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Print3DWorkflowDetail extends js.Object
-
 /** Specifies the types of errors that may be encountered by the Print3DWorkflow class. */
 @JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflowDetail")
 @js.native
 object Print3DWorkflowDetail extends js.Object {
+  
   /** An invalid printing material has been selected. */
   @js.native
   sealed trait invalidMaterialSelection extends Print3DWorkflowDetail
@@ -38,6 +38,4 @@ object Print3DWorkflowDetail extends js.Object {
   /** The upload failed. */
   @js.native
   sealed trait uploadFailed extends Print3DWorkflowDetail
-  
 }
-

@@ -11,8 +11,8 @@ React Tooltip
 | Full name          | rmc-tooltip |
 | Keywords           | react, react-component, react-tooltip, tooltip, m-tooltip |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 583403 |
+| # dependents       | 28 |
+| # downloads        | 827008 |
 | # stars            | 0 |
 
 ## Links

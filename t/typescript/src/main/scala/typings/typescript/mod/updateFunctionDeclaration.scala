@@ -2,11 +2,13 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateFunctionDeclaration")
 @js.native
 object updateFunctionDeclaration extends js.Object {
+  
+  /** @deprecated Use `factory.updateFunctionDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: FunctionDeclaration,
     decorators: js.UndefOr[js.Array[Decorator]],
@@ -19,4 +21,3 @@ object updateFunctionDeclaration extends js.Object {
     body: js.UndefOr[Block]
   ): FunctionDeclaration = js.native
 }
-

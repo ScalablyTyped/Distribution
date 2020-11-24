@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.Child
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Decorator is the base class for all decorator nodes. Thus, if you want to
@@ -50,4 +50,3 @@ class Decorator ()
   extends typings.behavior3.b3.BaseNode {
   def this(hasChildNameTitleProperties: Child) = this()
 }
-

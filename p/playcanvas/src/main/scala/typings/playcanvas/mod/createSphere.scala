@@ -3,16 +3,17 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Radius
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playcanvas", "createSphere")
 @js.native
 object createSphere extends js.Object {
+  
   /**
     * Creates a procedural sphere-shaped mesh.
     *
     * The size and tesselation properties of the sphere can be controlled via function
-    * parameters. By default, the function will create a sphere centred on the object
+    * parameters. By default, the function will create a sphere centered on the object
     * space origin with a radius of 0.5 and 16 segments in both longitude and latitude.
     *
     * Note that the sphere is created with UVs in the range of 0 to 1. Additionally, tangent
@@ -27,4 +28,3 @@ object createSphere extends js.Object {
   def apply(device: typings.playcanvas.pc.GraphicsDevice): typings.playcanvas.pc.Mesh = js.native
   def apply(device: typings.playcanvas.pc.GraphicsDevice, opts: Radius): typings.playcanvas.pc.Mesh = js.native
 }
-

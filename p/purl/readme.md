@@ -12,7 +12,7 @@ A minuscule library to parse URLs
 | Keywords           | url, parse, browser, javascript, isomorphic |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 20993 |
+| # downloads        | 49727 |
 | # stars            | 3 |
 
 ## Links

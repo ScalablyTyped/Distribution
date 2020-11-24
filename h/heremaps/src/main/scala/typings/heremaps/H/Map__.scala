@@ -21,7 +21,7 @@ import typings.std.Element
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** Map *****/
 /**
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Map__ extends EventTarget {
+  
   /**
     * This method adds a layer to the map.
     * @param layer {H.map.layer.Layer} - The map layer to be added
@@ -38,19 +39,23 @@ trait Map__ extends EventTarget {
     */
   def addLayer(layer: Layer): Map_ = js.native
   def addLayer(layer: Layer, opt_idx: Double): Map_ = js.native
+  
   /**
     * This method adds an map object to the map. Map object can be a marker or a spatial object like polygon or polyline.
     * @param mapObject {!H.map.Object} - The map object to add
     * @returns {!H.map.Object} - the added map object
     */
   def addObject(mapObject: Object): Object = js.native
+  
   /**
     * This method adds an array of objects or an object group to the map.
     * @param mapObjects {Array<!H.map.Object>}
     * @returns {H.Map} - the map instance
     */
   def addObjects(mapObjects: js.Array[Object]): Map_ = js.native
+  
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
+  
   /**
     * This method captures desired region of the map and objects on it. Result is returned as an HTML5 Canvas element.
     * Origin of coordinate system for capturing is in the top left corner of the viewport.
@@ -69,6 +74,7 @@ trait Map__ extends EventTarget {
     opt_x2: js.UndefOr[Double],
     opt_y2: js.UndefOr[Double]
   ): Unit = js.native
+  
   /**
     * To clear the entire stored content
     * @param opt_onprogress {function(H.util.Request)=} - A callback which is invoked every time when the progress state of the returned clear request changes
@@ -76,42 +82,50 @@ trait Map__ extends EventTarget {
     */
   def clearContent(): Request = js.native
   def clearContent(opt_onprogress: js.Function1[/* req */ Request, Unit]): Request = js.native
+  
   /**
     * Returns the screen coordinates according to the given geographical coordinates. This method returns a screen pixel coordinates for the provided geo point.
     * @param geoPoint {H.geo.IPoint} - point on the map
     * @returns {?H.math.Point}
     */
   def geoToScreen(geoPoint: IPoint): Point = js.native
+  
   /**
     * To get the current base map layer.
     * @returns {?H.map.layer.Layer}
     */
   def getBaseLayer(): Layer = js.native
+  
   /**
     * This method returns currently rendered center of the map.
     * @returns {H.geo.Point}
     */
   def getCenter(): typings.heremaps.H.geo.Point = js.native
+  
   /**
     * This method returns the map root html element
     * @returns {Element}
     */
   def getElement(): Element = js.native
+  
   /**
     * This returns the map's render engine
     * @return {H.map.render.p2d.RenderEngine} - map render engine
     */
   def getEngine(): RenderEngine = js.native
+  
   /**
     * This method returns the imprint object for this map.
     * @returns {H.map.Imprint}
     */
   def getImprint(): Imprint = js.native
+  
   /**
     * This method returns the map's current layer collection.
     * @returns {H.map.DataModel}
     */
   def getLayers(): DataModel = js.native
+  
   /**
     * Returns the top most z-ordered map object found under the specific screen coordinates. Coordinates are viewport pixel coordinates starting from top left corner as (0, 0) point.
     * @param x {number} - map viewport x-axis pixel coordinate
@@ -120,11 +134,13 @@ trait Map__ extends EventTarget {
     * @returns {?H.map.Object} - the encountered top most map object or null if no object found
     */
   def getObjectAt(x: Double, y: Double, callback: js.Function1[/* obj */ Object, _]): Object = js.native
+  
   /**
     * This method retrieves the list of all objects which have been added to the map.
     * @returns {Array<H.map.Object>} - the list of all use objects which are currently on the map.
     */
   def getObjects(): js.Array[Object] = js.native
+  
   /**
     * Returns a list of map objects in descending z-order found under the specific screen coordinates. Coordinates are viewport pixel coordinates starting from top left corner as (0, 0) point.
     * @param x {number} - map viewport x-axis pixel coordinate
@@ -132,34 +148,40 @@ trait Map__ extends EventTarget {
     * @returns {Array<!H.map.Object>}
     */
   def getObjectsAt(x: Double, y: Double): js.Array[Object] = js.native
+  
   /**
     * This method returns current view model. View model can be used to modify the current view or camera. H.map.ViewModel
     * @returns {H.map.ViewModel}
     */
   def getViewModel(): ViewModel = js.native
+  
   /**
     * This method returns current map viewport.
     * Viewport can be used to modify padding and margin which will reflect the position of the viewport center and the amount of extra data loaded (for margin)
     * @returns {H.map.ViewPort}
     */
   def getViewPort(): ViewPort = js.native
+  
   /**
     * This method returns currently rendered zoom level.
     * @returns {number}
     */
   def getZoom(): Double = js.native
+  
   /**
     * This method removes layer from the map.
     * @param layer {H.map.layer.Layer} - The map layer to be removed
     * @returns {H.Map} - current map instance
     */
   def removeLayer(layer: Layer): Map_ = js.native
+  
   /**
     * This method removes previously added map object from the map.
     * @param mapObject {!H.map.Object} - The map object to remove
     * @returns {!H.map.Object} - the removed map object
     */
   def removeObject(mapObject: Object): Object = js.native
+  
   /**
     * This method removes an array of object or an object group from the map.
     * @param mapObjects {(Array<H.map.Object> | H.map.Group)}
@@ -167,6 +189,7 @@ trait Map__ extends EventTarget {
     */
   def removeObjects(mapObjects: js.Array[Object]): Map_ = js.native
   def removeObjects(mapObjects: Group): Map_ = js.native
+  
   /**
     * Returns the geographical coordinates according to the given screen coordinates.
     * @param x {number} - map viewport x-axis pixel coordinate
@@ -174,6 +197,7 @@ trait Map__ extends EventTarget {
     * @returns {?H.geo.Point}
     */
   def screenToGeo(x: Double, y: Double): typings.heremaps.H.geo.Point = js.native
+  
   /**
     * Returns the camera data according to the given screen coordinates. Method converts screen pixel coordinates to correct camera data object
     * @param x {number} - map viewport x-axis pixel coordinate
@@ -181,12 +205,14 @@ trait Map__ extends EventTarget {
     * @returns {H.map.ViewModel.ILookAtData}
     */
   def screenToLookAtData(x: Double, y: Double): ILookAtData = js.native
+  
   /**
     * This method will set provided layer as base map. The layer will be inserted as the bottom most layer in the map.
     * @param layer {H.map.layer.Layer} - The layer to use as base map
     * @returns {H.Map} - the instance itself
     */
   def setBaseLayer(layer: Layer): Map_ = js.native
+  
   /**
     * This method sets the new center on a map.
     * @param center {H.geo.IPoint} - requested center to be set
@@ -195,12 +221,14 @@ trait Map__ extends EventTarget {
     */
   def setCenter(center: IPoint): Map_ = js.native
   def setCenter(center: IPoint, opt_animate: Boolean): Map_ = js.native
+  
   /**
     * This method sets the rendering engine type for the map. Rendering engine is responsible for displaying i.e tiles and data on the map.
     * @param type {H.Map.EngineType}
     * @returns {H.Map} - the map itself
     */
   def setEngineType(`type`: EngineType): Map_ = js.native
+  
   /**
     * This method sets the zoom level on the map. Every zoom level represents different scale i.e map at zoom level 2 is twice as large as the map at zoom level 1.
     * @param zoom {number} - requested zoom level
@@ -209,6 +237,7 @@ trait Map__ extends EventTarget {
     */
   def setZoom(zoom: Double): Map_ = js.native
   def setZoom(zoom: Double, opt_animate: Boolean): Map_ = js.native
+  
   /**
     * To persistently store the content of a map layer for a given area and range of zoom levels.
     * It can be used to enable map rendering when no internet connection is established and also to reduce the download traffic for frequently visited map areas.
@@ -386,6 +415,7 @@ trait Map__ extends EventTarget {
     opt_max: Double,
     opt_layer: BaseTileLayer
   ): Request = js.native
+  
   /**
     * This method changes the map zoom while keeping target screen coordinates specified as x,y at the same place where they were before.
     * @param zoom {number} - new zoom level
@@ -394,4 +424,3 @@ trait Map__ extends EventTarget {
     */
   def zoomAt(zoom: Double, x: Double, y: Double): Unit = js.native
 }
-

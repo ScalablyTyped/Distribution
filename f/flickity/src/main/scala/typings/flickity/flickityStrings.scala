@@ -3,9 +3,55 @@ package typings.flickity
 import typings.flickity.mod.FlickityEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flickityStrings {
+  
+  @scala.inline
+  def bgLazyLoad: bgLazyLoad = "bgLazyLoad".asInstanceOf[bgLazyLoad]
+  
+  @scala.inline
+  def cellSelect: cellSelect = "cellSelect".asInstanceOf[cellSelect]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
+  
+  @scala.inline
+  def dragMove: dragMove = "dragMove".asInstanceOf[dragMove]
+  
+  @scala.inline
+  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
+  
+  @scala.inline
+  def fullscreenChange: fullscreenChange = "fullscreenChange".asInstanceOf[fullscreenChange]
+  
+  @scala.inline
+  def lazyLoad: lazyLoad = "lazyLoad".asInstanceOf[lazyLoad]
+  
+  @scala.inline
+  def pointerDown: pointerDown = "pointerDown".asInstanceOf[pointerDown]
+  
+  @scala.inline
+  def pointerMove: pointerMove = "pointerMove".asInstanceOf[pointerMove]
+  
+  @scala.inline
+  def pointerUp: pointerUp = "pointerUp".asInstanceOf[pointerUp]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def settle: settle = "settle".asInstanceOf[settle]
+  
+  @scala.inline
+  def staticClick: staticClick = "staticClick".asInstanceOf[staticClick]
+  
   @js.native
   sealed trait bgLazyLoad extends FlickityEvents
   
@@ -50,36 +96,4 @@ object flickityStrings {
   
   @js.native
   sealed trait staticClick extends FlickityEvents
-  
-  @scala.inline
-  def bgLazyLoad: bgLazyLoad = "bgLazyLoad".asInstanceOf[bgLazyLoad]
-  @scala.inline
-  def cellSelect: cellSelect = "cellSelect".asInstanceOf[cellSelect]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
-  @scala.inline
-  def dragMove: dragMove = "dragMove".asInstanceOf[dragMove]
-  @scala.inline
-  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
-  @scala.inline
-  def fullscreenChange: fullscreenChange = "fullscreenChange".asInstanceOf[fullscreenChange]
-  @scala.inline
-  def lazyLoad: lazyLoad = "lazyLoad".asInstanceOf[lazyLoad]
-  @scala.inline
-  def pointerDown: pointerDown = "pointerDown".asInstanceOf[pointerDown]
-  @scala.inline
-  def pointerMove: pointerMove = "pointerMove".asInstanceOf[pointerMove]
-  @scala.inline
-  def pointerUp: pointerUp = "pointerUp".asInstanceOf[pointerUp]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def settle: settle = "settle".asInstanceOf[settle]
-  @scala.inline
-  def staticClick: staticClick = "staticClick".asInstanceOf[staticClick]
 }
-

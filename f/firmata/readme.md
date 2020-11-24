@@ -10,9 +10,9 @@ Firmata protocol implementation for programmatic interaction with Arduino and Ar
 | ------------------ | :-------------: |
 | Full name          | firmata |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 41 |
-| # downloads        | 104082 |
+| # releases         | 3 |
+| # dependents       | 42 |
+| # downloads        | 94127 |
 | # stars            | 9 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.sipJs.mod
 import typings.sipJs.registererOptionsMod.RegistererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Registerer")
 @js.native
@@ -17,15 +17,18 @@ class Registerer protected ()
   def this(userAgent: typings.sipJs.userAgentMod.UserAgent) = this()
   def this(userAgent: typings.sipJs.userAgentMod.UserAgent, options: RegistererOptions) = this()
 }
-
 /* static members */
 @JSImport("sip.js", "Registerer")
 @js.native
 object Registerer extends js.Object {
+  
   val defaultExpires: js.Any = js.native
+  
   /** Default registerer options. */
   var defaultOptions: js.Any = js.native
+  
   var newUUID: js.Any = js.native
+  
   /**
     * Strip properties with undefined values from options.
     * This is a work around while waiting for missing vs undefined to be addressed (or not)...
@@ -34,4 +37,3 @@ object Registerer extends js.Object {
     */
   var stripUndefinedProperties: js.Any = js.native
 }
-

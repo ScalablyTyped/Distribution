@@ -2,7 +2,7 @@ package typings.heremaps.H.geo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PixelProjection transforms pixel world coordinates at a certain scale (zoom level) to geographical coordinates and vice versa.
@@ -15,11 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PixelProjection extends js.Object {
-  var h: Double = js.native
-  var projection: IProjection = js.native
-  var w: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
+  
   /**
     * This method translates a point defines in terms of its geographic coordinates to pixel coordinates at the specified zoom level.
     * @param geoPoint {H.geo.IPoint} - An object containing the geographic coordinates
@@ -28,11 +24,15 @@ trait PixelProjection extends js.Object {
     */
   def geoToPixel(geoPoint: IPoint): typings.heremaps.H.math.IPoint = js.native
   def geoToPixel(geoPoint: IPoint, opt_out: typings.heremaps.H.math.IPoint): typings.heremaps.H.math.IPoint = js.native
+  
   /**
     * This method retrieves the current zoom scale factor previously set by a call to H.geo.PixelProjection#rescale.
     * @return {number} - A value indicating the zoom scale factor
     */
   def getZoomScale(): Double = js.native
+  
+  var h: Double = js.native
+  
   /**
     * This method translates geographical coordinates (latitude, longitude) supplied by the caller into a point defined in terms of pixel coordinates.
     * This method accepts longitudes outside of the normal longitude range.
@@ -43,6 +43,7 @@ trait PixelProjection extends js.Object {
     */
   def latLngToPixel(latitude: Double, longitude: Double): typings.heremaps.H.math.Point = js.native
   def latLngToPixel(latitude: Double, longitude: Double, opt_out: typings.heremaps.H.math.IPoint): typings.heremaps.H.math.Point = js.native
+  
   /**
     * This method translates a point defined in terms of its pixel coordinates to a location defined in geographic coordinates.
     * @param point {H.math.IPoint} - An object defining a location on the screen in terms of pixel coordinates
@@ -51,17 +52,26 @@ trait PixelProjection extends js.Object {
     */
   def pixelToGeo(point: typings.heremaps.H.math.IPoint): IPoint = js.native
   def pixelToGeo(point: typings.heremaps.H.math.IPoint, opt_out: IPoint): IPoint = js.native
+  
   /**
     * This method method translates a map point to world pixel coordinates relative to current projection offset.
     * @param point {H.math.IPoint} - An object representing the map point to convert
     * @return {H.math.Point} - The result of the conversion as an object containing pixel coordinate
     */
   def pointToPixel(point: typings.heremaps.H.math.IPoint): typings.heremaps.H.math.Point = js.native
+  
+  var projection: IProjection = js.native
+  
   /**
     * This method updates the scale exponent for the pixel projection.
     * @param zoom {number} - A value indicating the zoom level
     */
   def rescale(zoom: Double): Unit = js.native
+  
+  var w: Double = js.native
+  
+  var x: Double = js.native
+  
   /**
     * This method translates the x and y coordinates of a pixel to a geographic point.
     * @param x {number} - A value indicating the pixel x-coordinate
@@ -71,5 +81,6 @@ trait PixelProjection extends js.Object {
     */
   def xyToGeo(x: Double, y: Double): Point = js.native
   def xyToGeo(x: Double, y: Double, opt_out: Point): Point = js.native
+  
+  var y: Double = js.native
 }
-

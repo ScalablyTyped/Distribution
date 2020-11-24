@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Class controls uv mapping from Texture normal space to BaseTexture normal space.
@@ -28,4 +28,3 @@ class TextureMatrix protected ()
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, clampMargin: Double) = this()
 }
-

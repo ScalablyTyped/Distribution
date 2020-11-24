@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * reflects the model data of the object that has all the information for a DataRenderer to create a visible data series in a chart.
@@ -21,6 +21,7 @@ trait DataSeries
      with XDataSink
      with XDataSource
      with XRegressionCurveContainer {
+  
   /**
     * This property describes whether the series should be shown at the main value axis or at the secondary value axis. Having this property not set or
     * setting it to 0 means that this data series will be scaled at the primary y-axis ( of the coordinate system in which this series is hosted ).
@@ -31,6 +32,7 @@ trait DataSeries
     * If you want to scale a series at a different x or z axis you need to create an additional coordinate system and host this series there.
     */
   var AttachedAxisIndex: Double = js.native
+  
   /**
     * This service will be used to render this data series.
     *
@@ -49,10 +51,13 @@ trait DataSeries
     * This property is especially useful for large data series with only some formatted data points, because you do not have to iterate over all elements.
     */
   var AttributedDataPoints: SafeArray[Double] = js.native
+  
   /** indicates whether this series should be stacked with respect to the previous series. */
   var StackingDirection: typings.activexLibreoffice.com_.sun.star.chart2.StackingDirection = js.native
+  
   /** If `TRUE` , the data points of this series get different colors by default, like in a pie chart. */
   var VaryColorsByPoint: Boolean = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -60,4 +65,3 @@ trait DataSeries
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

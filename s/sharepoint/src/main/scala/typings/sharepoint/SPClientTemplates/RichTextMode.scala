@@ -2,14 +2,14 @@ package typings.sharepoint.SPClientTemplates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RichTextMode extends js.Object
-
 @JSGlobal("SPClientTemplates.RichTextMode")
 @js.native
 object RichTextMode extends js.Object {
+  
   @js.native
   sealed trait Compatible extends RichTextMode
   
@@ -21,6 +21,4 @@ object RichTextMode extends js.Object {
   
   @js.native
   sealed trait ThemeHtml extends RichTextMode
-  
 }
-

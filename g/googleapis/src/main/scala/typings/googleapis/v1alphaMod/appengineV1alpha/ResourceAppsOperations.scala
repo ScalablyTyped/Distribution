@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1alpha", "appengine_v1alpha.Resource$Apps$Operations")
 @js.native
 class ResourceAppsOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.operations.get
     * @desc Gets the latest state of a long-running operation. Clients can use
@@ -44,6 +46,7 @@ class ResourceAppsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -87,4 +90,3 @@ class ResourceAppsOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
 }
-

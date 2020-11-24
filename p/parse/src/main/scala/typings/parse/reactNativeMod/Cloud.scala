@@ -23,7 +23,7 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains functions for calling and declaring
@@ -35,30 +35,41 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/react-native", "Cloud")
 @js.native
 object Cloud extends js.Object {
+  
   /**
     * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
     *
     *     import Buffer = require("buffer").Buffer;
     */
   var HTTPOptions: Instantiable0[typings.parse.mod.global.Parse.Cloud.HTTPOptions] = js.native
+  
   def afterDelete(arg1: js.Any): Unit = js.native
   def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  
   def afterDeleteFile(): Unit = js.native
   def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  
   def afterFind(arg1: js.Any): Unit = js.native
   def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, _]): Unit = js.native
+  
   def afterLogin(): Unit = js.native
   def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  
   def afterLogout(): Unit = js.native
   def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  
   def afterSave(arg1: js.Any): Unit = js.native
   def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  
   def afterSaveFile(): Unit = js.native
   def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  
   def beforeDelete(arg1: js.Any): Unit = js.native
   def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  
   def beforeDeleteFile(): Unit = js.native
   def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  
   def beforeFind(arg1: js.Any): Unit = js.native
   def beforeFind(
     arg1: js.Any,
@@ -69,10 +80,13 @@ object Cloud extends js.Object {
       ]) | typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
     ]
   ): Unit = js.native
+  
   def beforeLogin(): Unit = js.native
   def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  
   def beforeSave(arg1: js.Any): Unit = js.native
   def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  
   def beforeSaveFile(): Unit = js.native
   def beforeSaveFile(
     func: js.Function1[
@@ -80,6 +94,7 @@ object Cloud extends js.Object {
       js.Thenable[typings.parse.mod.global.Parse.File] | Unit
     ]
   ): Unit = js.native
+  
   def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], _]): Unit = js.native
   @JSName("define")
   def define_0[T /* <: js.Function1[
@@ -104,20 +119,25 @@ object Cloud extends js.Object {
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
   ): Unit = js.native
+  
   /**
     * Gets job status by Id
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
   def getJobStatus(jobStatusId: String): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = js.native
+  
   /**
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
   def getJobsData(): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = js.native
+  
   def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
+  
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
+  
   def run(name: String): js.Promise[_] = js.native
   def run(name: String, data: js.UndefOr[scala.Nothing], options: RunOptions): js.Promise[_] = js.native
   def run(name: String, data: Params): js.Promise[_] = js.native
@@ -148,6 +168,7 @@ object Cloud extends js.Object {
   def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String): js.Promise[ReturnType[T]] = js.native
   @JSName("run")
   def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String, data: js.UndefOr[scala.Nothing], options: RunOptions): js.Promise[ReturnType[T]] = js.native
+  
   /**
     * Starts a given cloud job, which will process asynchronously.
     * @param jobName The function name.
@@ -155,18 +176,24 @@ object Cloud extends js.Object {
     * @returns A promise that will be resolved with the jobStatusId of the job.
     */
   def startJob(jobName: String, data: js.Any): js.Promise[String] = js.native
+  
   def useMasterKey(): Unit = js.native
+  
   // Read preference describes how MongoDB driver route read operations to the members of a replica set.
   @js.native
   object ReadPreferenceOption extends js.Object {
-    /* "NEAREST" */ val Nearest: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
-    /* "PRIMARY" */ val Primary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
-    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
-    /* "SECONDARY" */ val Secondary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
-    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
+    
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption with String] = js.native
+    
+    /* "NEAREST" */ val Nearest: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
+    
+    /* "PRIMARY" */ val Primary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
+    
+    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
+    
+    /* "SECONDARY" */ val Secondary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
+    
+    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
   }
-  
 }
-

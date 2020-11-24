@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("_G")
 @js.native
 object _G extends js.Object {
+  
   /**
     * 可保存的全局字典表
     *
@@ -24,4 +25,3 @@ object _G extends js.Object {
     */
   def apply[T](K: String, V: T): Unit = js.native
 }
-

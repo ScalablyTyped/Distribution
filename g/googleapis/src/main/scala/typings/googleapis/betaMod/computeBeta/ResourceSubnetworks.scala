@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Subnetworks")
 @js.native
 class ResourceSubnetworks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.subnetworks.aggregatedList
     * @desc Retrieves an aggregated list of subnetworks.
@@ -115,6 +115,9 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubnetworkAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.subnetworks.delete
     * @desc Deletes the specified subnetwork.
@@ -205,6 +208,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.expandIpCidrRange
     * @desc Expands the IP CIDR range of the subnetwork to a specified value.
@@ -301,6 +305,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.get
     * @desc Returns the specified subnetwork. Gets a list of available
@@ -391,6 +396,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubnetwork]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -481,6 +487,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.insert
     * @desc Creates a subnetwork in the specified project using the data
@@ -573,6 +580,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.list
     * @desc Retrieves a list of subnetworks available to the specified project.
@@ -675,6 +683,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubnetworkList]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.listUsable
     * @desc Retrieves an aggregated list of usable subnetworks.
@@ -710,6 +719,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUsableSubnetworksAggregatedList]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.patch
     * @desc Patches the specified subnetwork with the data included in the
@@ -810,6 +820,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -905,6 +916,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.setPrivateIpGoogleAccess
     * @desc Set whether VMs in this subnet can access Google services without
@@ -1002,6 +1014,7 @@ class ResourceSubnetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.subnetworks.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -1098,4 +1111,3 @@ class ResourceSubnetworks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

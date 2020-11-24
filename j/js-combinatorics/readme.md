@@ -10,9 +10,9 @@ Simple combinatorics like power set, combination, and permutation in JavaScript
 | ------------------ | :-------------: |
 | Full name          | js-combinatorics |
 | Keywords           | Combinatorics, combination, permutation |
-| # releases         | 3 |
-| # dependents       | 67 |
-| # downloads        | 1356230 |
+| # releases         | 17 |
+| # dependents       | 73 |
+| # downloads        | 1738089 |
 | # stars            | 11 |
 
 ## Links

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResource
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi/stackReference", "StackReference")
 @js.native
@@ -25,25 +25,14 @@ class StackReference protected () extends CustomResource {
   def this(name: String, args: StackReferenceArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: StackReferenceArgs, opts: CustomResourceOptions) = this()
-  /**
-    * The name of the referenced stack.
-    */
-  val name: Output_[String] = js.native
-  /**
-    * The outputs of the referenced stack.
-    */
-  val outputs: Output_[StringDictionary[_]] = js.native
-  var readOutputValue: js.Any = js.native
-  /**
-    * The names of any stack outputs which contain secrets.
-    */
-  val secretOutputNames: Output_[js.Array[String]] = js.native
+  
   /**
     * Fetches the value of the named stack output, or undefined if the stack output was not found.
     *
     * @param name The name of the stack output to fetch.
     */
   def getOutput(name: Input[String]): Output_[_] = js.native
+  
   /**
     * Fetches the value promptly of the named stack output. May return undefined if the value is
     * not known for some reason.
@@ -53,12 +42,26 @@ class StackReference protected () extends CustomResource {
     * @param name The name of the stack output to fetch.
     */
   def getOutputValue(name: String): js.Promise[_] = js.native
+  
+  /**
+    * The name of the referenced stack.
+    */
+  val name: Output_[String] = js.native
+  
+  /**
+    * The outputs of the referenced stack.
+    */
+  val outputs: Output_[StringDictionary[_]] = js.native
+  
+  var readOutputValue: js.Any = js.native
+  
   /**
     * Fetches the value of the named stack output, or throws an error if the output was not found.
     *
     * @param name The name of the stack output to fetch.
     */
   def requireOutput(name: Input[String]): Output_[_] = js.native
+  
   /**
     * Fetches the value promptly of the named stack output. Throws an error if the stack output is
     * not found.
@@ -68,5 +71,9 @@ class StackReference protected () extends CustomResource {
     * @param name The name of the stack output to fetch.
     */
   def requireOutputValue(name: String): js.Promise[_] = js.native
+  
+  /**
+    * The names of any stack outputs which contain secrets.
+    */
+  val secretOutputNames: Output_[js.Array[String]] = js.native
 }
-

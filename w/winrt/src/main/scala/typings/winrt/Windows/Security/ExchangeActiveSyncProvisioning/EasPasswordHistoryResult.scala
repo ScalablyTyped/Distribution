@@ -2,14 +2,14 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasPasswordHistoryResult extends js.Object
-
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult")
 @js.native
 object EasPasswordHistoryResult extends js.Object {
+  
   @js.native
   sealed trait canBeCompliant extends EasPasswordHistoryResult
   
@@ -24,6 +24,4 @@ object EasPasswordHistoryResult extends js.Object {
   
   @js.native
   sealed trait requestedPolicyIsStricter extends EasPasswordHistoryResult
-  
 }
-

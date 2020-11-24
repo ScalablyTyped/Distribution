@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RelativeDate extends js.Object
-
 /**
   * An enumeration representing the relative date options for calculating a value to be used in
   * date-based BooleanCriteria.
@@ -14,6 +13,7 @@ sealed trait RelativeDate extends js.Object
 @JSGlobal("GoogleAppsScript.Spreadsheet.RelativeDate")
 @js.native
 object RelativeDate extends js.Object {
+  
   @js.native
   sealed trait PAST_MONTH extends RelativeDate
   
@@ -31,6 +31,4 @@ object RelativeDate extends js.Object {
   
   @js.native
   sealed trait YESTERDAY extends RelativeDate
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Announcements")
 @js.native
 class ResourceCoursesAnnouncements protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.courses.announcements.create
     * @desc Creates an announcement.  This method returns the following error
@@ -51,6 +53,7 @@ class ResourceCoursesAnnouncements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnouncement]
   ): Unit = js.native
+  
   /**
     * classroom.courses.announcements.delete
     * @desc Deletes an announcement.  This request must be made by the
@@ -88,6 +91,7 @@ class ResourceCoursesAnnouncements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.announcements.get
     * @desc Returns an announcement.  This method returns the following error
@@ -121,6 +125,7 @@ class ResourceCoursesAnnouncements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnouncement]
   ): Unit = js.native
+  
   /**
     * classroom.courses.announcements.list
     * @desc Returns a list of announcements that the requester is permitted to
@@ -162,6 +167,7 @@ class ResourceCoursesAnnouncements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAnnouncementsResponse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.announcements.modifyAssignees
     * @desc Modifies assignee mode and options of an announcement.  Only a
@@ -201,6 +207,7 @@ class ResourceCoursesAnnouncements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnouncement]
   ): Unit = js.native
+  
   /**
     * classroom.courses.announcements.patch
     * @desc Updates one or more fields of an announcement.  This method returns
@@ -242,4 +249,3 @@ class ResourceCoursesAnnouncements protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAnnouncement]
   ): Unit = js.native
 }
-

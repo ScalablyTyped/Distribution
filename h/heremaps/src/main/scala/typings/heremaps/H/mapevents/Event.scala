@@ -2,7 +2,7 @@ package typings.heremaps.H.mapevents
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom map event. Contains list of pointers on the map, list of changed pointers and original event. Inherits from H.util.Event.
@@ -19,14 +19,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Event
   extends typings.heremaps.H.util.Event {
+  
   var changedPointers: js.Array[Pointer] = js.native
+  
   var currentPointer: Pointer = js.native
+  
   var originalEvent: Event = js.native
+  
   var pointers: js.Array[Pointer] = js.native
+  
   var targetPointers: js.Array[Pointer] = js.native
 }
-
 object Event {
+  
   @scala.inline
   def apply(
     changedPointers: js.Array[Pointer],
@@ -45,34 +50,44 @@ object Event {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
+  
   @scala.inline
   implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChangedPointersVarargs(value: Pointer*): Self = this.set("changedPointers", js.Array(value :_*))
+    
     @scala.inline
     def setChangedPointers(value: js.Array[Pointer]): Self = this.set("changedPointers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCurrentPointer(value: Pointer): Self = this.set("currentPointer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOriginalEvent(value: Event): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPointersVarargs(value: Pointer*): Self = this.set("pointers", js.Array(value :_*))
+    
     @scala.inline
     def setPointers(value: js.Array[Pointer]): Self = this.set("pointers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTargetPointersVarargs(value: Pointer*): Self = this.set("targetPointers", js.Array(value :_*))
+    
     @scala.inline
     def setTargetPointers(value: js.Array[Pointer]): Self = this.set("targetPointers", value.asInstanceOf[js.Any])
   }
-  
 }
-

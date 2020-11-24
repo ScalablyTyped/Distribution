@@ -6,11 +6,12 @@ import typings.redux.mod.Middleware
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/redux-routine", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Creates a Redux middleware, given an object of controls where each key is an action type for
     * which to act upon, the value a function which returns either a promise which is to resolve when
@@ -23,4 +24,3 @@ object mod extends js.Object {
   def default(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
   def default(controls: Record[String, js.Function1[/* action */ AnyAction, _]]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
 }
-

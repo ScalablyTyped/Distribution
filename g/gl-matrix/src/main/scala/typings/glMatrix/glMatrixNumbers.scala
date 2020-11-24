@@ -1,0 +1,13 @@
+package typings.glMatrix
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object glMatrixNumbers {
+  
+  @scala.inline
+  def `0.000001`: `0.000001` = 0.000001.asInstanceOf[`0.000001`]
+  @js.native
+  sealed trait `0.000001` extends js.Object
+}

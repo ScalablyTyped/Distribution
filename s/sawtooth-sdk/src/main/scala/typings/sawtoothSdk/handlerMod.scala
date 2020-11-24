@@ -3,11 +3,12 @@ package typings.sawtoothSdk
 import typings.sawtoothSdk.contextMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/processor/handler", JSImport.Namespace)
 @js.native
 object handlerMod extends js.Object {
+  
   @js.native
   class TransactionHandler protected () extends js.Object {
     /**
@@ -19,6 +20,7 @@ object handlerMod extends js.Object {
       * handler's namespaces, e.g. ["abcdef"]
       */
     def this(transactionFamilyName: String, versions: js.Array[String], namespaces: js.Array[String]) = this()
+    
     /**
       * Apply is the single method where all the business logic for a
       * transaction family is defined. The method will be called by the
@@ -35,6 +37,4 @@ object handlerMod extends js.Object {
     @JSName("apply")
     def apply(transactionProcessRequest: js.Any, context: Context): Unit = js.native
   }
-  
 }
-

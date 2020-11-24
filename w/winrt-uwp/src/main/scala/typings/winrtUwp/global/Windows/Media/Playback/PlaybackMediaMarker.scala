@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Playback
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a marker at specific location in a media stream time-line. */
 @JSGlobal("Windows.Media.Playback.PlaybackMediaMarker")
@@ -22,4 +22,3 @@ class PlaybackMediaMarker protected ()
     */
   def this(value: Double, mediaMarketType: String, text: String) = this()
 }
-

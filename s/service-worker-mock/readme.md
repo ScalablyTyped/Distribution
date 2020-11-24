@@ -10,9 +10,9 @@ Service Worker Mock ========================= A mock service worker environment 
 | ------------------ | :-------------: |
 | Full name          | service-worker-mock |
 | Keywords           | service-workers, service, workers, testing, mock |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 2 |
-| # downloads        | 472947 |
+| # downloads        | 695472 |
 | # stars            | 0 |
 
 ## Links

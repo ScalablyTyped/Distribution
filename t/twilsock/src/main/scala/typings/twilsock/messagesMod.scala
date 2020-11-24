@@ -1,15 +1,18 @@
 package typings.twilsock
 
+import typings.std.Set
 import typings.twilsock.initReplyMod.ContinuationTokenStatus
 import typings.twilsock.initregistrationMod.InitRegistration
 import typings.twilsock.protocolMod.Protocol.Request
+import typings.twilsock.telemetryMod.TelemetryEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilsock/lib/protocol/messages", JSImport.Namespace)
 @js.native
 object messagesMod extends js.Object {
+  
   @js.native
   class Close ()
     extends typings.twilsock.closeMod.Close
@@ -49,7 +52,8 @@ object messagesMod extends js.Object {
       continuationTokenStatus: ContinuationTokenStatus,
       offlineStorage: js.Any,
       initRegistrations: js.Any,
-      debugInfo: js.Any
+      debugInfo: js.Any,
+      confirmedCapabilities: Set[String]
     ) = this()
   }
   
@@ -66,10 +70,14 @@ object messagesMod extends js.Object {
   }
   
   @js.native
+  class Telemetry protected ()
+    extends typings.twilsock.telemetryMod.Telemetry {
+    def this(events: js.Array[TelemetryEvent]) = this()
+  }
+  
+  @js.native
   class Update protected ()
     extends typings.twilsock.updateMod.Update {
     def this(token: String) = this()
   }
-  
 }
-

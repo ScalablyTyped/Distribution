@@ -3,7 +3,7 @@ package typings.mongoose.mod
 import typings.mongodb.mod.SessionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * section drivers/node-mongodb-native/connection.js
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Connection_ extends ConnectionBase {
+  
   def startSession(): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def startSession(
     options: js.UndefOr[scala.Nothing],
@@ -21,6 +22,7 @@ trait Connection_ extends ConnectionBase {
     options: SessionOptions,
     cb: js.Function2[/* err */ js.Any, /* session */ typings.mongodb.mod.ClientSession, Unit]
   ): js.Promise[typings.mongodb.mod.ClientSession] = js.native
+  
   /**
     * Switches to a different database using the same connection pool.
     * @param name The database name
@@ -30,4 +32,3 @@ trait Connection_ extends ConnectionBase {
   def useDb(name: String): Connection_ = js.native
   def useDb(name: String, options: ConnectionUseDbOptions): Connection_ = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.npmWhich.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InnerWhich extends js.Object {
+  
   /**
     * Creates a searcher for the specified command.
     *
@@ -31,6 +32,7 @@ trait InnerWhich extends js.Object {
     * A callback for handling the result.
     */
   def apply(options: NpmWhichOptions, callback: NpmWhichCallback): Unit = js.native
+  
   /**
     * Searches for the command.
     *
@@ -40,4 +42,3 @@ trait InnerWhich extends js.Object {
   def sync(): String = js.native
   def sync(options: NpmWhichOptions): String = js.native
 }
-

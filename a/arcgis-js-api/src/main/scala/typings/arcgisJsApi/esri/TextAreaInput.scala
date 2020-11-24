@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-area`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextAreaInput
   extends TextInput
      with inputsInput {
+  
   /**
     * The type of form element input.
     *
@@ -17,4 +18,3 @@ trait TextAreaInput
   @JSName("type")
   var type_TextAreaInput: `text-area` = js.native
 }
-

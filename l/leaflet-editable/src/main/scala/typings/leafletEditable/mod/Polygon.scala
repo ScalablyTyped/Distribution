@@ -3,14 +3,14 @@ package typings.leafletEditable.mod
 import typings.leaflet.mod.LatLng_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Polygon
   extends PolygonEditor
      with EditableMixin
-
 object Polygon {
+  
   @scala.inline
   def apply(
     disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
@@ -26,4 +26,3 @@ object Polygon {
     __obj.asInstanceOf[Polygon]
   }
 }
-

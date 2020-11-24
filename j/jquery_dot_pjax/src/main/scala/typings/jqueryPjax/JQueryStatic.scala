@@ -3,12 +3,11 @@ package typings.jqueryPjax
 import typings.jquery.JQueryXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
-  @JSName("pjax")
-  var pjax_Original: PjaxStatic = js.native
+  
   /**
     * Loads a URL with ajax, puts the response body inside a container, then pushState()'s the loaded URL.
     * Works just like $.ajax in that it accepts a jQuery ajax settings object (with keys like url, type, data, etc).
@@ -19,5 +18,6 @@ trait JQueryStatic extends js.Object {
     */
   def pjax(): JQueryXHR = js.native
   def pjax(options: PjaxSettings): JQueryXHR = js.native
+  @JSName("pjax")
+  var pjax_Original: PjaxStatic = js.native
 }
-

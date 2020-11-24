@@ -5,18 +5,23 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.typesMod.IndicesArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/instancedMesh", "InstancedMesh")
 @js.native
 class InstancedMesh protected () extends AbstractMesh {
   def this(name: String, source: Mesh) = this()
+  
   var _currentLOD: js.Any = js.native
+  
   /** @hidden */
   var _indexInSourceMeshInstanceArray: Double = js.native
+  
   var _sourceMesh: js.Any = js.native
+  
   /** @hidden */
   def _syncSubMeshes(): InstancedMesh = js.native
+  
   /**
     * Creates a new InstancedMesh from the current mesh.
     * - name (string) : the cloned mesh name
@@ -26,13 +31,15 @@ class InstancedMesh protected () extends AbstractMesh {
     * Returns the clone.
     */
   def clone(name: String): InstancedMesh = js.native
+  
   /**
-    * Rendering ground id of the source mesh
+    * Creates a new InstancedMesh object from the mesh model.
+    * @see https://doc.babylonjs.com/how_to/how_to_use_instances
+    * @param name defines the name of the new instance
+    * @returns a new InstancedMesh
     */
-  @JSName("renderingGroupId")
-  def renderingGroupId_MInstancedMesh: Double = js.native
-  @JSName("renderingGroupId")
-  def renderingGroupId_MInstancedMesh(value: Double): js.Any = js.native
+  def createInstance(name: String): InstancedMesh = js.native
+  
   /**
     * Sets the mesh indices.
     * Expects an array populated with integers or a typed array (Int32Array, Uint32Array, Uint16Array).
@@ -41,9 +48,9 @@ class InstancedMesh protected () extends AbstractMesh {
     * Returns the Mesh.
     */
   def setIndices(indices: IndicesArray): Mesh = js.native
+  
   /**
     * The source mesh of the instance
     */
   def sourceMesh: Mesh = js.native
 }
-

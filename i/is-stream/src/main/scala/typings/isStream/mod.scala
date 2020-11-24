@@ -2,11 +2,12 @@ package typings.isStream
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("is-stream", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	@returns Whether `stream` is a [`Stream`](https://nodejs.org/api/stream.html#stream_stream).
   	@example
@@ -20,6 +21,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(stream: js.Any): /* is node.stream.Stream */ Boolean = js.native
+  
   /**
   	@returns Whether `stream` is a [`stream.Duplex`](https://nodejs.org/api/stream.html#stream_class_stream_duplex).
   	@example
@@ -31,6 +33,7 @@ object mod extends js.Object {
   	```
   	*/
   def duplex(stream: js.Any): /* is node.stream.Duplex */ Boolean = js.native
+  
   /**
   	@returns Whether `stream` is a [`stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable).
   	@example
@@ -42,6 +45,7 @@ object mod extends js.Object {
   	```
   	*/
   def readable(stream: js.Any): /* is node.stream.Readable */ Boolean = js.native
+  
   /**
   	@returns Whether `stream` is a [`stream.Transform`](https://nodejs.org/api/stream.html#stream_class_stream_transform).
   	@example
@@ -54,6 +58,7 @@ object mod extends js.Object {
   	```
   	*/
   def transform(input: js.Any): /* is node.stream.Transform */ Boolean = js.native
+  
   /**
   	@returns Whether `stream` is a [`stream.Writable`](https://nodejs.org/api/stream.html#stream_class_stream_writable).
   	@example
@@ -66,4 +71,3 @@ object mod extends js.Object {
   	*/
   def writable(stream: js.Any): /* is node.stream.Writable */ Boolean = js.native
 }
-

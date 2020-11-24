@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Analytics API
@@ -27,11 +27,16 @@ import scala.scalajs.js.annotation._
 class Analytics protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var data: ResourceData = js.native
+  
   var management: ResourceManagement = js.native
+  
   var metadata: ResourceMetadata = js.native
+  
   var provisioning: ResourceProvisioning = js.native
+  
   var userDeletion: ResourceUserdeletion = js.native
 }
-

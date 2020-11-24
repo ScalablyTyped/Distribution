@@ -5,7 +5,7 @@ import typings.vscode.Thenable
 import typings.vscode.anon.DefaultLanguageValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkspaceConfiguration
@@ -13,6 +13,7 @@ trait WorkspaceConfiguration
   * Additional debug type specific properties.
   */
 /* key */ StringDictionary[js.Any] {
+  
   /**
     * Return a value from this configuration.
     *
@@ -28,6 +29,7 @@ trait WorkspaceConfiguration
     * @return The value `section` denotes or the default.
     */
   def get[T](section: String, defaultValue: T): T = js.native
+  
   /**
     * Check if this configuration has a certain value.
     *
@@ -35,6 +37,7 @@ trait WorkspaceConfiguration
     * @return `true` if the section doesn't resolve to `undefined`.
     */
   def has(section: String): Boolean = js.native
+  
   /**
     * Retrieve all information about a configuration setting. A configuration value
     * often consists of a *default* value, a global or installation-wide value,
@@ -50,6 +53,7 @@ trait WorkspaceConfiguration
     * @return Information about a configuration setting or `undefined`.
     */
   def inspect[T](section: String): js.UndefOr[DefaultLanguageValue[T]] = js.native
+  
   /**
     * Update a configuration value. The updated configuration values are persisted.
     *
@@ -96,4 +100,3 @@ trait WorkspaceConfiguration
     overrideInLanguage: Boolean
   ): Thenable[Unit] = js.native
 }
-

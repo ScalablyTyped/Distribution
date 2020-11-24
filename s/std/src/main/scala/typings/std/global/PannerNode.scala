@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.PannerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PannerNode")
 @js.native
@@ -14,7 +14,6 @@ class PannerNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: PannerOptions) = this()
 }
-
 @JSGlobal("PannerNode")
 @js.native
 object PannerNode
@@ -24,4 +23,3 @@ object PannerNode
       /* options */ PannerOptions, 
       typings.std.PannerNode
     ]
-

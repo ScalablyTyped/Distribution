@@ -2,11 +2,12 @@ package typings.chromeApps.WebView
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Messaging handle to a guest window. */
 @js.native
 trait ContentWindow extends js.Object {
+  
   /**
     * Posts a message to the embedded web content as long as the embedded
     * content is displaying a page from the target origin. This method is
@@ -25,27 +26,30 @@ trait ContentWindow extends js.Object {
     */
   def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
 }
-
 object ContentWindow {
+  
   @scala.inline
   def apply(postMessage: (js.Any, String) => Unit): ContentWindow = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
     __obj.asInstanceOf[ContentWindow]
   }
+  
   @scala.inline
   implicit class ContentWindowOps[Self <: ContentWindow] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPostMessage(value: (js.Any, String) => Unit): Self = this.set("postMessage", js.Any.fromFunction2(value))
   }
-  
 }
-

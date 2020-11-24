@@ -3,7 +3,7 @@ package typings.heredatalens.global.H.datalens
 import typings.heredatalens.H.datalens.Service.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HERE Maps API and Data Lens JavaScript API can be used to visualize data from different network sources.
@@ -20,4 +20,3 @@ class Service ()
   extends typings.heredatalens.H.datalens.Service {
   def this(options: Options) = this()
 }
-

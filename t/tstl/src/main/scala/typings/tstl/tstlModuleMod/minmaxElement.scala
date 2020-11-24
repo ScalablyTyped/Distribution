@@ -5,11 +5,12 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ipointerMod.IPointer.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "minmax_element")
 @js.native
 object minmaxElement extends js.Object {
+  
   def apply[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](first: ForwardIterator, last: ForwardIterator): typings.tstl.pairMod.Pair[ForwardIterator, ForwardIterator] = js.native
   def apply[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](
     first: ForwardIterator,
@@ -17,4 +18,3 @@ object minmaxElement extends js.Object {
     comp: Comparator[ValueType[ForwardIterator], ValueType[ForwardIterator]]
   ): typings.tstl.pairMod.Pair[ForwardIterator, ForwardIterator] = js.native
 }
-

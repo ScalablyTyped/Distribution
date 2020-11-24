@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operator/bufferTime", JSImport.Namespace)
 @js.native
 object operatorBufferTimeMod extends js.Object {
+  
   def bufferTime[T](bufferTimeSpan: Double): js.Any = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): js.Any = js.native
   def bufferTime[T](
@@ -50,4 +51,3 @@ object operatorBufferTimeMod extends js.Object {
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
 }
-

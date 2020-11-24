@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Freebusy")
 @js.native
 class ResourceFreebusy protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * calendar.freebusy.query
     * @desc Returns free/busy information for a set of calendars.
@@ -42,4 +44,3 @@ class ResourceFreebusy protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFreeBusyResponse]
   ): Unit = js.native
 }
-

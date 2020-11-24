@@ -3,11 +3,12 @@ package typings.jupyterlabApputils.inputdialogMod.InputDialog
 import typings.jupyterlabApputils.dialogMod.Dialog.IResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/inputdialog", "InputDialog.getBoolean")
 @js.native
 object getBoolean extends js.Object {
+  
   /**
     * Create and show a input dialog for a boolean.
     *
@@ -17,4 +18,3 @@ object getBoolean extends js.Object {
     */
   def apply(options: IBooleanOptions): js.Promise[IResult[Boolean]] = js.native
 }
-

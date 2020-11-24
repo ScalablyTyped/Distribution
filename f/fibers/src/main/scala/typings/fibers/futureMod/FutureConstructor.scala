@@ -6,16 +6,18 @@ import typings.fibers.futureMod.global.FutureFunction
 import typings.fibers.futureMod.global.FutureObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FutureConstructor
   extends Instantiable0[Future[js.Object]] {
+  
   /**
     * Support for converting a Future to and from ES6 Promises.
     * @see Future#promise
     */
   def fromPromise[R](promise: js.Promise[R]): Future[R] = js.native
+  
   def task[T](fn1: Function, fn2: Function, fns: Function*): Future[js.Array[T]] = js.native
   // wrap<O = object, T = FutureObject>(fnOrObject: O, multi?: boolean, suffix?: string): FutureObject & FunctionProperties<O>;
   /**
@@ -32,6 +34,7 @@ trait FutureConstructor
     * }).detach();
     */
   def task[T](fn: js.Function1[/* repeated */ js.Any, T]): Future[T] = js.native
+  
   /**
     * Wait on a series of futures and then return. If the futures throw an exception this function
     * /won't/ throw it back. You can get the value of the future by calling get() on it directly. If
@@ -40,6 +43,7 @@ trait FutureConstructor
     * Example usage: Future.wait(aFuture, anotherFuture)
     */
   def wait(futures: FutureOrFutureArray*): Unit = js.native
+  
   def wrap[O /* <: js.Object */](fnOrObject: O): FutureObject[O] = js.native
   def wrap[O /* <: js.Object */](fnOrObject: O, multi: js.UndefOr[scala.Nothing], suffix: String): FutureObject[O] = js.native
   def wrap[O /* <: js.Object */](fnOrObject: O, multi: Boolean): FutureObject[O] = js.native
@@ -72,4 +76,3 @@ trait FutureConstructor
   def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Boolean): FutureFunction[T] = js.native
   def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Boolean, suffix: String): FutureFunction[T] = js.native
 }
-

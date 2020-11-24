@@ -10,9 +10,9 @@ Easy, light, flexible tree view made with React.
 | ------------------ | :-------------: |
 | Full name          | react-treeview |
 | Keywords           | facebook, react, treeview, tree-view, tree, view, treenode, tree-node, ui, react-component |
-| # releases         | 1 |
-| # dependents       | 21 |
-| # downloads        | 262838 |
+| # releases         | 0 |
+| # dependents       | 22 |
+| # downloads        | 321899 |
 | # stars            | 1 |
 
 ## Links

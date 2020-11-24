@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/wafregional/sqlInjectionMatchSet", "SqlInjectionMatchSet")
 @js.native
@@ -24,20 +24,22 @@ class SqlInjectionMatchSet protected () extends CustomResource {
   def this(name: String, args: SqlInjectionMatchSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SqlInjectionMatchSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The name or description of the SizeConstraintSet.
     */
   val name: Output_[String] = js.native
+  
   /**
     * The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
     */
   val sqlInjectionMatchTuples: Output_[js.UndefOr[js.Array[SqlInjectionMatchSetSqlInjectionMatchTuple]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/wafregional/sqlInjectionMatchSet", "SqlInjectionMatchSet")
 @js.native
 object SqlInjectionMatchSet extends js.Object {
+  
   /**
     * Get an existing SqlInjectionMatchSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -51,10 +53,10 @@ object SqlInjectionMatchSet extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SqlInjectionMatchSet = js.native
   def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): SqlInjectionMatchSet = js.native
   def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): SqlInjectionMatchSet = js.native
+  
   /**
     * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = js.native
 }
-

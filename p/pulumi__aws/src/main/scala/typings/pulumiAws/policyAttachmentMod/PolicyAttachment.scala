@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/policyAttachment", "PolicyAttachment")
 @js.native
@@ -22,32 +22,37 @@ class PolicyAttachment protected () extends CustomResource {
     */
   def this(name: String, args: PolicyAttachmentArgs) = this()
   def this(name: String, args: PolicyAttachmentArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The group(s) the policy should be applied to
     */
   val groups: Output_[js.UndefOr[js.Array[String]]] = js.native
+  
   /**
     * The name of the attachment. This cannot be an empty string.
     */
   val name: Output_[String] = js.native
+  
   /**
     * The ARN of the policy you want to apply
     */
   val policyArn: Output_[ARN] = js.native
+  
   /**
     * The role(s) the policy should be applied to
     */
   val roles: Output_[js.UndefOr[js.Array[String]]] = js.native
+  
   /**
     * The user(s) the policy should be applied to
     */
   val users: Output_[js.UndefOr[js.Array[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/policyAttachment", "PolicyAttachment")
 @js.native
 object PolicyAttachment extends js.Object {
+  
   /**
     * Get an existing PolicyAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -61,10 +66,10 @@ object PolicyAttachment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PolicyAttachment = js.native
   def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = js.native
   def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policyAttachment.PolicyAttachment */ Boolean = js.native
 }
-

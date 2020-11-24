@@ -11,10 +11,11 @@ import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RequestPinDetails extends js.Object {
+  
   /**
     * The number of attempts left. This is provided so that any UI can present
     * this information to the user. Chrome is not expected to enforce this,
@@ -23,6 +24,7 @@ trait RequestPinDetails extends js.Object {
     * exceeded.
     */
   var attemptsLeft: js.UndefOr[Double] = js.native
+  
   /**
     * The error template displayed to the user. This should be set if the
     * previous request failed, to notify the user of the failure reason.
@@ -38,6 +40,7 @@ trait RequestPinDetails extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * The type of code requested. Default is PIN.
     * @see PinRequestType
@@ -52,35 +55,44 @@ trait RequestPinDetails extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * The ID given by Chrome in SignRequest.
     */
   var signRequestId: Double = js.native
 }
-
 object RequestPinDetails {
+  
   @scala.inline
   def apply(signRequestId: Double): RequestPinDetails = {
     val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPinDetails]
   }
+  
   @scala.inline
   implicit class RequestPinDetailsOps[Self <: RequestPinDetails] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSignRequestId(value: Double): Self = this.set("signRequestId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAttemptsLeft(value: Double): Self = this.set("attemptsLeft", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAttemptsLeft: Self = this.set("attemptsLeft", js.undefined)
+    
     @scala.inline
     def setErrorType(
       value: ToStringLiteral[
@@ -92,8 +104,10 @@ object RequestPinDetails {
           ]
         ]
     ): Self = this.set("errorType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteErrorType: Self = this.set("errorType", js.undefined)
+    
     @scala.inline
     def setRequestType(
       value: ToStringLiteral[
@@ -105,9 +119,8 @@ object RequestPinDetails {
           ]
         ]
     ): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRequestType: Self = this.set("requestType", js.undefined)
   }
-  
 }
-

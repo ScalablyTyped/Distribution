@@ -7,13 +7,13 @@ import typings.consul.mod.Catalog.Service
 import typings.consul.mod.Catalog.ServicesOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Catalog_ extends js.Object {
+  
   var consul: Consul = js.native
-  var node: Node = js.native
-  var service: Service = js.native
+  
   /**
     * Lists known datacenters
     */
@@ -27,6 +27,9 @@ trait Catalog_ extends js.Object {
     * Lists known datacenters
     */
   def datacenters[TData](opts: DatacentersOptions, callback: Callback[TData]): Unit = js.native
+  
+  var node: Node = js.native
+  
   /**
     * Lists nodes in a given DC
     */
@@ -45,6 +48,9 @@ trait Catalog_ extends js.Object {
     * Lists nodes in a given DC
     */
   def nodes[TData](opts: NodesOptions, callback: Callback[TData]): Unit = js.native
+  
+  var service: Service = js.native
+  
   /**
     * Lists services in a given DC
     */
@@ -64,4 +70,3 @@ trait Catalog_ extends js.Object {
     */
   def services[TData](opts: ServicesOptions, callback: Callback[TData]): Unit = js.native
 }
-

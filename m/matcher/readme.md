@@ -10,9 +10,9 @@ Simple wildcard matching
 | ------------------ | :-------------: |
 | Full name          | matcher |
 | Keywords           | matcher, matching, match, regex, regexp, regular, expression, wildcard, pattern, string, filter, glob, globber, globbing, minimatch |
-| # releases         | 5 |
-| # dependents       | 76 |
-| # downloads        | 38659544 |
+| # releases         | 4 |
+| # dependents       | 100 |
+| # downloads        | 45861508 |
 | # stars            | 4 |
 
 ## Links

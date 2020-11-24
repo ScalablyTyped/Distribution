@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies an abstract control.
@@ -27,8 +27,8 @@ trait UnoControl
      with XWindow
      with XView
      with XAccessible
-
 object UnoControl {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -83,4 +83,3 @@ object UnoControl {
     __obj.asInstanceOf[UnoControl]
   }
 }
-

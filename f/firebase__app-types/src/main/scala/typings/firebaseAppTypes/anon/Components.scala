@@ -13,10 +13,11 @@ import typings.firebaseUtil.subscribeMod.Subscribe
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Components extends js.Object {
+  
   /**
     * Use to construct all thrown FirebaseError's.
     */
@@ -31,6 +32,7 @@ trait Components extends js.Object {
     */ typings.firebaseAppTypes.firebaseAppTypesStrings.Components with TopLevel[js.Any]
     ]
   ] = js.native
+  
   /**
     * registered components.
     */
@@ -38,10 +40,12 @@ trait Components extends js.Object {
     String, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ _
   ] = js.native
+  
   /**
     * Just used for testing to start from a fresh namespace.
     */
   def createFirebaseNamespace(): FirebaseNamespace = js.native
+  
   /**
     * Create a Subscribe function.  A proxy Observer is created so that
     * events can be sent to single Observer to be fanned out automatically.
@@ -51,16 +55,19 @@ trait Components extends js.Object {
     executor: js.Function1[/* observer */ Observer[T], Unit],
     onNoObservers: js.Function1[/* observer */ Observer[T], Unit]
   ): Subscribe[T] = js.native
+  
   /**
     * Utility exposed for internal testing.
     */
   def deepExtend(target: js.Any, source: js.Any): js.Any = js.native
+  
   /**
     * Internal API to install properties on the top-level firebase namespace.
     * @prop props The top level properties of this object are copied to the
     *   namespace.
     */
   def extendNamespace(props: StringDictionary[js.Any]): Unit = js.native
+  
   /**
     * Internal API to register a Firebase Service into the firebase namespace.
     *
@@ -78,13 +85,14 @@ trait Components extends js.Object {
   def registerComponent(
     component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ js.Any
   ): FirebaseServiceNamespace[FirebaseService] | Null = js.native
+  
   /**
     * Internal API to remove an app from the list of registered apps.
     */
   def removeApp(name: String): Unit = js.native
+  
   /*
     * Convert service name to factory name to use.
     */
   def useAsService(app: FirebaseApp, serviceName: String): String | Null = js.native
 }
-

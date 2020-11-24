@@ -11,8 +11,8 @@ Node.js 0.12 path.isAbsolute() ponyfill
 | Full name          | path-is-absolute |
 | Keywords           | path, paths, file, dir, absolute, isabsolute, is-absolute, built-in, util, utils, core, ponyfill, polyfill, shim, is, detect, check |
 | # releases         | 2 |
-| # dependents       | 455 |
-| # downloads        | 528584354 |
+| # dependents       | 511 |
+| # downloads        | 696937310 |
 | # stars            | 8 |
 
 ## Links

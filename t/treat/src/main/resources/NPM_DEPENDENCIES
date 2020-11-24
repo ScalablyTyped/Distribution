@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "treat" : "1.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "treat" : "1.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

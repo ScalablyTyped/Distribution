@@ -10,9 +10,9 @@ Server side rendering for Redux-Observable
 | ------------------ | :-------------: |
 | Full name          | react-redux-epic |
 | Keywords           | react, redux, redux-observable, rx, rxjs, observables, middleware, server-sider-rendering, ssr |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 18072 |
+| # downloads        | 11317 |
 | # stars            | 0 |
 
 ## Links

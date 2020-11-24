@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.glacierMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Glacier")
 @js.native
@@ -14,4 +14,3 @@ class Glacier ()
   extends typings.awsSdk.mod.Glacier {
   def this(options: ClientConfiguration) = this()
 }
-

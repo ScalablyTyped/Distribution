@@ -2,14 +2,16 @@ package typings.atom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Emitter")
 @js.native
 /** Construct an emitter. */
 class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
+  
   /** Clear out any existing subscribers. */
   def clear(): Unit = js.native
+  
   // Event Emission
   /** Invoke the handlers registered via ::on for the given event name. */
   def emit[T /* <: /* keyof OptionalEmissions */ String */](eventName: T): Unit = js.native
@@ -17,6 +19,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
     eventName: T,
     value: /* import warning: importer.ImportType#apply Failed type conversion: OptionalEmissions[T] */ js.Any
   ): Unit = js.native
+  
   // Event Subscription
   /** Registers a handler to be invoked whenever the given event is emitted. */
   def on[T /* <: /* keyof OptionalEmissions */ String */](
@@ -28,6 +31,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
       Unit
     ]
   ): Disposable = js.native
+  
   /**
     *  Register the given handler function to be invoked the next time an event
     *  with the given name is emitted via ::emit.
@@ -41,6 +45,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
       Unit
     ]
   ): Disposable = js.native
+  
   /**
     *  Register the given handler function to be invoked before all other
     *  handlers existing at the time of subscription whenever events by the
@@ -56,4 +61,3 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
     ]
   ): Disposable = js.native
 }
-

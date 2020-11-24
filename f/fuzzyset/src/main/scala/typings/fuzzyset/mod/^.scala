@@ -2,11 +2,12 @@ package typings.fuzzyset.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fuzzyset", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(): FuzzySet = js.native
   def apply(
     source: js.UndefOr[scala.Nothing],
@@ -63,4 +64,3 @@ object ^ extends js.Object {
   def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = js.native
   def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = js.native
 }
-

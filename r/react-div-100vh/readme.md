@@ -4,15 +4,15 @@
 Typings are for version 0.3
 
 ## Library description:
-A React component that aims to solve '100vh' issue in mobile browsers
+A workaround for the '100vh' issue in mobile browsers
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-div-100vh |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 1 |
-| # downloads        | 200436 |
+| # releases         | 16 |
+| # dependents       | 4 |
+| # downloads        | 724587 |
 | # stars            | 0 |
 
 ## Links

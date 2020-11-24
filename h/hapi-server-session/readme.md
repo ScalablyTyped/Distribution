@@ -11,8 +11,8 @@ Simple server-side session support for hapi
 | Full name          | hapi-server-session |
 | Keywords           | hapi, plugin, server, session |
 | # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 7234 |
+| # dependents       | 6 |
+| # downloads        | 8738 |
 | # stars            | 1 |
 
 ## Links

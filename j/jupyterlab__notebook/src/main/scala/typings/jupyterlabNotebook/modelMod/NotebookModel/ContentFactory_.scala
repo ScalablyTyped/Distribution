@@ -8,7 +8,7 @@ import typings.jupyterlabNbformat.mod.CellType
 import typings.jupyterlabObservables.modeldbMod.IModelDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default implementation of an `IContentFactory`.
@@ -20,18 +20,17 @@ class ContentFactory_ protected () extends js.Object {
     * Create a new cell model factory.
     */
   def this(options: typings.jupyterlabNotebook.modelMod.NotebookModel.ContentFactory.IOptions) = this()
-  /**
-    * The factory for code cell content.
-    */
-  val codeCellContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory = js.native
-  /**
-    * The IModelDB in which to put the notebook data.
-    */
-  val modelDB: js.UndefOr[IModelDB] = js.native
+  
   /**
     * Clone the content factory with a new IModelDB.
     */
   def clone(modelDB: IModelDB): ContentFactory = js.native
+  
+  /**
+    * The factory for code cell content.
+    */
+  val codeCellContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory = js.native
+  
   /**
     * Create a new cell by cell type.
     *
@@ -44,6 +43,7 @@ class ContentFactory_ protected () extends js.Object {
     * call the other cell creation methods in the factory.
     */
   def createCell(`type`: CellType, opts: typings.jupyterlabCells.modelMod.CellModel.IOptions): ICellModel = js.native
+  
   /**
     * Create a new code cell.
     *
@@ -55,6 +55,7 @@ class ContentFactory_ protected () extends js.Object {
     *   `codeCellContentFactory` will be used.
     */
   def createCodeCell(options: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions): ICodeCellModel = js.native
+  
   /**
     * Create a new markdown cell.
     *
@@ -64,6 +65,7 @@ class ContentFactory_ protected () extends js.Object {
     *   new cell will be initialized with the data from the source.
     */
   def createMarkdownCell(options: typings.jupyterlabCells.modelMod.CellModel.IOptions): IMarkdownCellModel = js.native
+  
   /**
     * Create a new raw cell.
     *
@@ -73,5 +75,9 @@ class ContentFactory_ protected () extends js.Object {
     *   new cell will be initialized with the data from the source.
     */
   def createRawCell(options: typings.jupyterlabCells.modelMod.CellModel.IOptions): IRawCellModel = js.native
+  
+  /**
+    * The IModelDB in which to put the notebook data.
+    */
+  val modelDB: js.UndefOr[IModelDB] = js.native
 }
-

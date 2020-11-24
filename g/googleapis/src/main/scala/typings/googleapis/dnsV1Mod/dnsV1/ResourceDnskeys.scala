@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1", "dns_v1.Resource$Dnskeys")
 @js.native
 class ResourceDnskeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.dnsKeys.get
     * @alias dns.dnsKeys.get
@@ -44,6 +46,7 @@ class ResourceDnskeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDnsKey]
   ): Unit = js.native
+  
   /**
     * dns.dnsKeys.list
     * @alias dns.dnsKeys.list
@@ -76,4 +79,3 @@ class ResourceDnskeys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDnsKeysListResponse]
   ): Unit = js.native
 }
-

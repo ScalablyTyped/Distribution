@@ -10,15 +10,15 @@ socket.io protocol parser
 | ------------------ | :-------------: |
 | Full name          | socket.io-parser |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 77 |
-| # downloads        | 165171040 |
+| # releases         | 3 |
+| # dependents       | 86 |
+| # downloads        | 248260252 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/Automattic/socket.io-parser#readme)
-- [Bugs](https://github.com/Automattic/socket.io-parser/issues)
-- [Repository](https://github.com/Automattic/socket.io-parser)
+- [Homepage](https://github.com/socketio/socket.io-parser#readme)
+- [Bugs](https://github.com/socketio/socket.io-parser/issues)
+- [Repository](https://github.com/socketio/socket.io-parser)
 - [Npm](https://www.npmjs.com/package/socket.io-parser)
     
 

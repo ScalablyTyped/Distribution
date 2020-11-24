@@ -2,7 +2,7 @@ package typings.cesium.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides tiled imagery hosted by Mapbox
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class MapboxImageryProvider () extends MapboxProviderCommonApi {
   def this(options: MapboxImageryProviderOptions) = this()
 }
-

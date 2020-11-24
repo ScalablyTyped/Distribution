@@ -5,23 +5,26 @@ import typings.officeUiFabricReact.ikeytiptreenodeMod.IKeytipTreeNode
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipTree", JSImport.Namespace)
 @js.native
 object keytipTreeMod extends js.Object {
+  
   @js.native
   /**
     * KeytipTree constructor
     */
   class KeytipTree () extends js.Object {
+    
     var _createNode: js.Any = js.native
+    
     var _getFullSequence: js.Any = js.native
+    
     var _getNodeSequence: js.Any = js.native
+    
     var _getParentID: js.Any = js.native
-    var currentKeytip: js.UndefOr[IKeytipTreeNode] = js.native
-    var nodeMap: StringDictionary[IKeytipTreeNode] = js.native
-    var root: IKeytipTreeNode = js.native
+    
     /**
       * Add a keytip node to this KeytipTree
       *
@@ -31,6 +34,9 @@ object keytipTreeMod extends js.Object {
       */
     def addNode(keytipProps: IKeytipProps, uniqueID: String): Unit = js.native
     def addNode(keytipProps: IKeytipProps, uniqueID: String, persisted: Boolean): Unit = js.native
+    
+    var currentKeytip: js.UndefOr[IKeytipTreeNode] = js.native
+    
     /**
       * Get the non-persisted children of the give node
       * If no node is given, will use the 'currentKeytip'
@@ -40,6 +46,7 @@ object keytipTreeMod extends js.Object {
       */
     def getChildren(): js.Array[String] = js.native
     def getChildren(node: IKeytipTreeNode): js.Array[String] = js.native
+    
     /**
       * Searches the currentKeytip's children to exactly match a sequence. Will not match disabled nodes but
       * will match persisted nodes
@@ -49,6 +56,7 @@ object keytipTreeMod extends js.Object {
       * @returns The node that exactly matched the keySequence, or undefined if none matched
       */
     def getExactMatchedNode(keySequence: String, currentKeytip: IKeytipTreeNode): js.UndefOr[IKeytipTreeNode] = js.native
+    
     /**
       * Gets a single node from its ID
       *
@@ -56,6 +64,7 @@ object keytipTreeMod extends js.Object {
       * @returns Node with the given ID, if found
       */
     def getNode(id: String): js.UndefOr[IKeytipTreeNode] = js.native
+    
     /**
       * Gets all nodes from their IDs
       *
@@ -63,6 +72,7 @@ object keytipTreeMod extends js.Object {
       * @returns Array of nodes that match the given IDs, can be empty
       */
     def getNodes(ids: js.Array[String]): js.Array[IKeytipTreeNode] = js.native
+    
     /**
       * Searches the currentKeytip's children to find nodes that start with the given sequence. Will not match
       * disabled nodes but will match persisted nodes
@@ -72,6 +82,7 @@ object keytipTreeMod extends js.Object {
       * @returns List of tree nodes that partially match the given sequence
       */
     def getPartiallyMatchedNodes(keySequence: String, currentKeytip: IKeytipTreeNode): js.Array[IKeytipTreeNode] = js.native
+    
     /**
       * Tests if the currentKeytip in this.keytipTree is the parent of 'keytipProps'
       *
@@ -79,12 +90,18 @@ object keytipTreeMod extends js.Object {
       * @returns T/F if the currentKeytip is this keytipProps' parent
       */
     def isCurrentKeytipParent(keytipProps: IKeytipProps): Boolean = js.native
+    
+    var nodeMap: StringDictionary[IKeytipTreeNode] = js.native
+    
     /**
       * Removes a node from the KeytipTree
       *
       * @param sequence - full string of the node to remove
       */
     def removeNode(keytipProps: IKeytipProps, uniqueID: String): Unit = js.native
+    
+    var root: IKeytipTreeNode = js.native
+    
     /**
       * Updates a node in the tree
       *
@@ -93,6 +110,4 @@ object keytipTreeMod extends js.Object {
       */
     def updateNode(keytipProps: IKeytipProps, uniqueID: String): Unit = js.native
   }
-  
 }
-

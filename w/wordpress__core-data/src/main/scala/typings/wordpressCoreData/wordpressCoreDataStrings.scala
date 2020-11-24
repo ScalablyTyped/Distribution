@@ -2,9 +2,28 @@ package typings.wordpressCoreData
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordpressCoreDataStrings {
+  
+  @scala.inline
+  def core: core = "core".asInstanceOf[core]
+  
+  @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def read: read = "read".asInstanceOf[read]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def view: view = "view".asInstanceOf[view]
+  
   @js.native
   sealed trait core extends js.Object
   
@@ -22,18 +41,4 @@ object wordpressCoreDataStrings {
   
   @js.native
   sealed trait view extends js.Object
-  
-  @scala.inline
-  def core: core = "core".asInstanceOf[core]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
 }
-

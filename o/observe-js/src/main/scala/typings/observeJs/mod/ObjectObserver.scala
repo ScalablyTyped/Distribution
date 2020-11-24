@@ -5,7 +5,7 @@ import typings.observeJs.mod.observejs.ObjectObserverInstance
 import typings.observeJs.mod.observejs.ObjectObserverStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("observe-js", "ObjectObserver")
 @js.native
@@ -16,8 +16,6 @@ class ObjectObserver protected () extends ObjectObserverInstance {
     */
   def this(receiver: js.Any) = this()
 }
-
 @JSImport("observe-js", "ObjectObserver")
 @js.native
 object ObjectObserver extends TopLevel[ObjectObserverStatic]
-

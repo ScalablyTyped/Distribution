@@ -7,7 +7,7 @@ import typings.stellarSdk.stellarSdkStrings.auth_required_flag
 import typings.stellarSdk.stellarSdkStrings.auth_revocable_flag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.stellarSdk.horizonApiMod.Horizon.BaseResponse because Already inherited
@@ -19,16 +19,26 @@ trait SetOptionsOperationRecord
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.setOptions
     ]
      with OperationRecord {
+  
   var clear_flags: js.Array[`1` | `2`] = js.native
+  
   var clear_flags_s: js.Array[auth_required_flag | auth_revocable_flag] = js.native
+  
   var high_threshold: js.UndefOr[Double] = js.native
+  
   var home_domain: js.UndefOr[String] = js.native
+  
   var low_threshold: js.UndefOr[Double] = js.native
+  
   var master_key_weight: js.UndefOr[Double] = js.native
+  
   var med_threshold: js.UndefOr[Double] = js.native
+  
   var set_flags: js.Array[`1` | `2`] = js.native
+  
   var set_flags_s: js.Array[auth_required_flag | auth_revocable_flag] = js.native
+  
   var signer_key: js.UndefOr[String] = js.native
+  
   var signer_weight: js.UndefOr[Double] = js.native
 }
-

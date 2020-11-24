@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Resources$Buildings")
 @js.native
 class ResourceResourcesBuildings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.resources.buildings.delete
     * @desc Deletes a building.
@@ -42,6 +44,7 @@ class ResourceResourcesBuildings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.resources.buildings.get
     * @desc Retrieves a building.
@@ -71,6 +74,7 @@ class ResourceResourcesBuildings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuilding]
   ): Unit = js.native
+  
   /**
     * directory.resources.buildings.insert
     * @desc Inserts a building.
@@ -101,6 +105,7 @@ class ResourceResourcesBuildings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuilding]
   ): Unit = js.native
+  
   /**
     * directory.resources.buildings.list
     * @desc Retrieves a list of buildings for an account.
@@ -131,6 +136,7 @@ class ResourceResourcesBuildings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildings]
   ): Unit = js.native
+  
   /**
     * directory.resources.buildings.patch
     * @desc Updates a building. This method supports patch semantics.
@@ -162,6 +168,7 @@ class ResourceResourcesBuildings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuilding]
   ): Unit = js.native
+  
   /**
     * directory.resources.buildings.update
     * @desc Updates a building.
@@ -194,4 +201,3 @@ class ResourceResourcesBuildings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBuilding]
   ): Unit = js.native
 }
-

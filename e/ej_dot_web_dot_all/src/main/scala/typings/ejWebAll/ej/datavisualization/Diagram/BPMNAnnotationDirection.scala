@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BPMNAnnotationDirection extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BPMNAnnotationDirection")
 @js.native
 object BPMNAnnotationDirection extends js.Object {
+  
   //Used to set the direction of BPMN Annotation as bottom
   @js.native
   sealed trait Bottom extends BPMNAnnotationDirection
@@ -25,6 +25,4 @@ object BPMNAnnotationDirection extends js.Object {
   //Used to set the direction of BPMN Annotation as top
   @js.native
   sealed trait Top extends BPMNAnnotationDirection
-  
 }
-

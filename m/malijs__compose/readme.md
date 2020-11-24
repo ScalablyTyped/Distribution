@@ -11,8 +11,8 @@ Middleware composition utility
 | Full name          | @malijs/compose |
 | Keywords           | mali, grpc, service, server, microservice |
 | # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 68126 |
+| # dependents       | 5 |
+| # downloads        | 205182 |
 | # stars            | 0 |
 
 ## Links

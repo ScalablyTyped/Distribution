@@ -3,12 +3,12 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrintBindingOptionDetails extends IPrintItemListOptionDetails
-
 object PrintBindingOptionDetails {
+  
   @scala.inline
   def apply(
     errorText: String,
@@ -23,4 +23,3 @@ object PrintBindingOptionDetails {
     __obj.asInstanceOf[PrintBindingOptionDetails]
   }
 }
-

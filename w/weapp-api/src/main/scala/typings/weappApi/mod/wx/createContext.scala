@@ -2,11 +2,12 @@ package typings.weappApi.mod.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "wx.createContext")
 @js.native
 object createContext extends js.Object {
+  
   /**
     * 创建并返回绘图上下文context对象。
     * context只是一个记录方法调用的容器，
@@ -16,4 +17,3 @@ object createContext extends js.Object {
     */
   def apply(): CanvasContext = js.native
 }
-

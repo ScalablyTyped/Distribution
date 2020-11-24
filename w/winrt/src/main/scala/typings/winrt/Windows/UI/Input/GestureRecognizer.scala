@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GestureRecognizer extends IGestureRecognizer
-
 object GestureRecognizer {
+  
   @scala.inline
   def apply(
     autoProcessInertia: Boolean,
@@ -51,4 +51,3 @@ object GestureRecognizer {
     __obj.asInstanceOf[GestureRecognizer]
   }
 }
-

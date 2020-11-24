@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hash-sum"
-version := "1.0-dt-20180822Z-faa751"
+version := "1.0-dt-20180822Z-dc7175"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

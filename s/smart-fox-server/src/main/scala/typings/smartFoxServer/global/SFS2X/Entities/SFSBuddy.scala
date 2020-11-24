@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Entities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Entities.SFSBuddy")
 @js.native
@@ -20,4 +20,3 @@ class SFSBuddy protected ()
   def this(id: Double, name: String, isBlocked: js.UndefOr[scala.Nothing], isTemp: Boolean) = this()
   def this(id: Double, name: String, isBlocked: Boolean, isTemp: Boolean) = this()
 }
-

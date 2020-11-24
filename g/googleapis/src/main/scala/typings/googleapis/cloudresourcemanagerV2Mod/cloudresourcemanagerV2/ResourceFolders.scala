@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v2", "cloudresourcemanager_v2.Resource$Folders")
 @js.native
 class ResourceFolders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudresourcemanager.folders.create
     * @desc Creates a Folder in the resource hierarchy. Returns an Operation
@@ -59,6 +61,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.delete
     * @desc Requests deletion of a Folder. The Folder is moved into the
@@ -92,6 +95,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.get
     * @desc Retrieves a Folder identified by the supplied resource name. Valid
@@ -123,6 +127,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.getIamPolicy
     * @desc Gets the access control policy for a Folder. The returned policy
@@ -156,6 +161,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.list
     * @desc Lists the Folders that are direct descendants of supplied parent
@@ -192,6 +198,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListFoldersResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.move
     * @desc Moves a Folder under a new resource parent. Returns an Operation
@@ -233,6 +240,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.patch
     * @desc Updates a Folder, changing its display_name. Changes to the folder
@@ -273,6 +281,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.search
     * @desc Search for folders that match specific filter criteria. Search
@@ -305,6 +314,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchFoldersResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.setIamPolicy
     * @desc Sets the access control policy on a Folder, replacing any existing
@@ -338,6 +348,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.testIamPermissions
     * @desc Returns permissions that a caller has on the specified Folder. The
@@ -373,6 +384,7 @@ class ResourceFolders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.folders.undelete
     * @desc Cancels the deletion request for a Folder. This method may only be
@@ -409,4 +421,3 @@ class ResourceFolders protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFolder]
   ): Unit = js.native
 }
-

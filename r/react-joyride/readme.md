@@ -10,9 +10,9 @@ Create guided tours for your apps
 | ------------------ | :-------------: |
 | Full name          | react-joyride |
 | Keywords           | react, react-component, tooltips, joyride, walkthroughs, tour |
-| # releases         | 36 |
-| # dependents       | 19 |
-| # downloads        | 1738388 |
+| # releases         | 16 |
+| # dependents       | 23 |
+| # downloads        | 2638171 |
 | # stars            | 4 |
 
 ## Links

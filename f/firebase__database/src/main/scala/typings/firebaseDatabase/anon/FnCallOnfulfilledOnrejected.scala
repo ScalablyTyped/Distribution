@@ -3,10 +3,11 @@ package typings.firebaseDatabase.anon
 import typings.firebaseDatabase.referenceMod.Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallOnfulfilledOnrejected extends js.Object {
+  
   def apply[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
   def apply[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
@@ -19,4 +20,3 @@ trait FnCallOnfulfilledOnrejected extends js.Object {
   ): js.Promise[TResult1 | TResult2] = js.native
   def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
 }
-

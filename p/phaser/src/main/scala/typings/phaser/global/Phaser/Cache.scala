@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Cache")
 @js.native
 object Cache extends js.Object {
+  
   /**
     * The BaseCache is a base Cache class that can be used for storing references to any kind of data.
     * 
@@ -37,12 +38,14 @@ object Cache extends js.Object {
   
   @js.native
   object Events extends js.Object {
+    
     /**
       * The Cache Add Event.
       * 
       * This event is dispatched by any Cache that extends the BaseCache each time a new object is added to it.
       */
     val ADD: js.Any = js.native
+    
     /**
       * The Cache Remove Event.
       * 
@@ -50,6 +53,4 @@ object Cache extends js.Object {
       */
     val REMOVE: js.Any = js.native
   }
-  
 }
-

@@ -9,7 +9,7 @@ import typings.std.Date
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.Literal")
 @js.native
@@ -22,17 +22,20 @@ class Literal protected () extends js.Object {
     * @param date the creation date of the literal package
     */
   def this(date: Date) = this()
+  
   /**
     * Get the byte sequence representing the literal packet data
     * @param clone (optional) Whether to return a clone so that getBytes/getText can be called again
     * @returns A sequence of bytes
     */
   def getBytes(clone: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+  
   /**
     * Get the filename of the literal packet data
     * @returns filename
     */
   def getFilename(): String = js.native
+  
   /**
     * Returns literal data packets as native JavaScript string
     * with normalized end of line to \n
@@ -40,6 +43,7 @@ class Literal protected () extends js.Object {
     * @returns literal data as text
     */
   def getText(clone: Boolean): String | ReadableStream[String] = js.native
+  
   def read(input: ReadableStream[Uint8Array]): Literal = js.native
   /**
     * Parsing function for a literal data packet (tag 11).
@@ -47,6 +51,7 @@ class Literal protected () extends js.Object {
     * @returns object representation
     */
   def read(input: Uint8Array): Literal = js.native
+  
   @JSName("setBytes")
   def setBytes_binary(bytes: ReadableStream[Uint8Array], format: binary): Unit = js.native
   @JSName("setBytes")
@@ -68,11 +73,13 @@ class Literal protected () extends js.Object {
     */
   @JSName("setBytes")
   def setBytes_utf8(bytes: Uint8Array, format: utf8): Unit = js.native
+  
   /**
     * Sets the filename of the literal packet data
     * @param filename Any native javascript string
     */
   def setFilename(filename: String): Unit = js.native
+  
   /**
     * Set the packet data to a javascript native string, end of line
     * will be normalized to \r\n and by default text is converted to UTF8
@@ -97,10 +104,10 @@ class Literal protected () extends js.Object {
   def setText_utf8(text: String, format: utf8): Unit = js.native
   @JSName("setText")
   def setText_utf8(text: ReadableStream[String], format: utf8): Unit = js.native
+  
   /**
     * Creates a string representation of the packet
     * @returns Uint8Array representation of the packet
     */
   def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
 }
-

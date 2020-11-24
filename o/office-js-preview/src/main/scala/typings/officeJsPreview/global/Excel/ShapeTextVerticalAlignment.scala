@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,12 +13,17 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ShapeTextVerticalAlignment")
 @js.native
 object ShapeTextVerticalAlignment extends js.Object {
-  /* "Bottom" */ val bottom: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.bottom with String = js.native
-  /* "Distributed" */ val distributed: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.distributed with String = js.native
-  /* "Justified" */ val justified: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.justified with String = js.native
-  /* "Middle" */ val middle: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.middle with String = js.native
-  /* "Top" */ val top: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.top with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeTextVerticalAlignment with String] = js.native
+  
+  /* "Bottom" */ val bottom: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.bottom with String = js.native
+  
+  /* "Distributed" */ val distributed: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.distributed with String = js.native
+  
+  /* "Justified" */ val justified: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.justified with String = js.native
+  
+  /* "Middle" */ val middle: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.middle with String = js.native
+  
+  /* "Top" */ val top: typings.officeJsPreview.Excel.ShapeTextVerticalAlignment.top with String = js.native
 }
-

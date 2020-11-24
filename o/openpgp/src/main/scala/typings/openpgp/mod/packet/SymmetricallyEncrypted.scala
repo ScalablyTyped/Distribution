@@ -4,7 +4,7 @@ import typings.openpgp.mod.enums.symmetric
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.SymmetricallyEncrypted")
 @js.native
@@ -18,23 +18,7 @@ import scala.scalajs.js.annotation._
   * that form whole OpenPGP messages).
   */
 class SymmetricallyEncrypted () extends js.Object {
-  /**
-    * Encrypted secret-key data
-    */
-  var encrypted: js.Any = js.native
-  /**
-    * When true, decrypt fails if message is not integrity protected
-    * @see module:config.ignore_mdc_error
-    */
-  var ignore_mdc_error: js.Any = js.native
-  /**
-    * Decrypted packets contained within.
-    */
-  var packets: List = js.native
-  /**
-    * Packet type
-    */
-  var tag: typings.openpgp.mod.enums.packet = js.native
+  
   /**
     * Decrypt the symmetrically-encrypted packet data
     * See {@link https://tools.ietf.org/html/rfc4880#section-9.2|RFC 4880 9.2} for algorithms.
@@ -43,6 +27,7 @@ class SymmetricallyEncrypted () extends js.Object {
     * @returns
     */
   def decrypt(sessionKeyAlgorithm: symmetric, key: Uint8Array): js.Promise[Boolean] = js.native
+  
   /**
     * Encrypt the symmetrically-encrypted packet data
     * See {@link https://tools.ietf.org/html/rfc4880#section-9.2|RFC 4880 9.2} for algorithms.
@@ -51,5 +36,25 @@ class SymmetricallyEncrypted () extends js.Object {
     * @returns
     */
   def encrypt(sessionKeyAlgorithm: symmetric, key: Uint8Array): js.Promise[Boolean] = js.native
+  
+  /**
+    * Encrypted secret-key data
+    */
+  var encrypted: js.Any = js.native
+  
+  /**
+    * When true, decrypt fails if message is not integrity protected
+    * @see module:config.ignore_mdc_error
+    */
+  var ignore_mdc_error: js.Any = js.native
+  
+  /**
+    * Decrypted packets contained within.
+    */
+  var packets: List = js.native
+  
+  /**
+    * Packet type
+    */
+  var tag: typings.openpgp.mod.enums.packet = js.native
 }
-

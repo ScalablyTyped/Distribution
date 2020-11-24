@@ -4,11 +4,12 @@ import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task for performing media processing. */
 @js.native
 trait MediaProcessingTrigger extends js.Object {
+  
   /**
     * Triggers the background task and returns a MediaProcessingTriggerResult indicating success or failure of the trigger request.
     * @return An asynchronous operation that returns a MediaProcessingTriggerResult upon completion.
@@ -21,4 +22,3 @@ trait MediaProcessingTrigger extends js.Object {
     */
   def requestAsync(args: ValueSet): IPromiseWithIAsyncOperation[MediaProcessingTriggerResult] = js.native
 }
-

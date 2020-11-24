@@ -10,9 +10,9 @@ A React Native wrapper for Mixpanel tracking
 | ------------------ | :-------------: |
 | Full name          | react-native-mixpanel |
 | Keywords           | react-native, react-component, tracking, mixpanel |
-| # releases         | 9 |
-| # dependents       | 2 |
-| # downloads        | 635404 |
+| # releases         | 8 |
+| # dependents       | 3 |
+| # downloads        | 967409 |
 | # stars            | 2 |
 
 ## Links

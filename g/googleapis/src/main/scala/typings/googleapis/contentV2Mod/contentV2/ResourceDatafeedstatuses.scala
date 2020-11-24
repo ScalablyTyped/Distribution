@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Datafeedstatuses")
 @js.native
 class ResourceDatafeedstatuses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.datafeedstatuses.custombatch
     * @desc Gets multiple Merchant Center datafeed statuses in a single
@@ -45,6 +47,7 @@ class ResourceDatafeedstatuses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeedstatusesCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.datafeedstatuses.get
     * @desc Retrieves the status of a datafeed from your Merchant Center
@@ -77,6 +80,7 @@ class ResourceDatafeedstatuses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatafeedStatus]
   ): Unit = js.native
+  
   /**
     * content.datafeedstatuses.list
     * @desc Lists the statuses of the datafeeds in your Merchant Center
@@ -112,4 +116,3 @@ class ResourceDatafeedstatuses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDatafeedstatusesListResponse]
   ): Unit = js.native
 }
-

@@ -3,16 +3,18 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CalendarRow extends Control {
+  
   /**
     * Adds some appointment to the aggregation <code>appointments</code>.
     * @param oAppointment the appointment to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addAppointment(oAppointment: CalendarAppointment): CalendarRow = js.native
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -20,12 +22,14 @@ trait CalendarRow extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): CalendarRow = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): CalendarRow = js.native
+  
   /**
     * Adds some intervalHeader to the aggregation <code>intervalHeaders</code>.
     * @param oIntervalHeader the intervalHeader to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addIntervalHeader(oIntervalHeader: CalendarAppointment): CalendarRow = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>intervalSelect</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.When called, the context of the event handler (its
@@ -41,6 +45,7 @@ trait CalendarRow extends Control {
     */
   def attachIntervalSelect(oData: js.Any, fnFunction: js.Any): CalendarRow = js.native
   def attachIntervalSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>leaveRow</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.When called, the context of the event handler (its
@@ -57,6 +62,7 @@ trait CalendarRow extends Control {
     */
   def attachLeaveRow(oData: js.Any, fnFunction: js.Any): CalendarRow = js.native
   def attachLeaveRow(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.When called, the context of the event handler (its
@@ -71,6 +77,7 @@ trait CalendarRow extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): CalendarRow = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.When called, the context of the event handler (its
@@ -86,16 +93,19 @@ trait CalendarRow extends Control {
     */
   def attachStartDateChange(oData: js.Any, fnFunction: js.Any): CalendarRow = js.native
   def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Destroys all the appointments in the aggregation <code>appointments</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyAppointments(): CalendarRow = js.native
+  
   /**
     * Destroys all the intervalHeaders in the aggregation <code>intervalHeaders</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyIntervalHeaders(): CalendarRow = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>intervalSelect</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.The passed function and listener object must match the ones
@@ -106,6 +116,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachIntervalSelect(fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>leaveRow</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.The passed function and listener object must match the ones
@@ -115,6 +126,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachLeaveRow(fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.The passed function and listener object must match the ones
@@ -124,6 +136,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.CalendarRow</code>.The passed function and listener object must match the ones
@@ -133,6 +146,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): CalendarRow = js.native
+  
   /**
     * Fires event <code>intervalSelect</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>startDate</code> of type <code>object</code>Interval start date as
@@ -144,6 +158,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireIntervalSelect(mArguments: js.Any): CalendarRow = js.native
+  
   /**
     * Fires event <code>leaveRow</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>type</code> of type <code>string</code>The type of the event that triggers
@@ -152,6 +167,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireLeaveRow(mArguments: js.Any): CalendarRow = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>appointment</code> of type
@@ -165,18 +181,21 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): CalendarRow = js.native
+  
   /**
     * Fires event <code>startDateChange</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireStartDateChange(mArguments: js.Any): CalendarRow = js.native
+  
   /**
     * Focus the given <code>CalendarAppointment</code> in the <code>CalendarRow</code>.
     * @param oAppointment Appointment to be focused.
     * @returns <code>this</code> to allow method chaining
     */
   def focusAppointment(oAppointment: CalendarAppointment): CalendarRow = js.native
+  
   /**
     * Focus the <code>CalendarAppointment</code> in the <code>CalendarRow</code> that is nearest tothe
     * given date.
@@ -184,12 +203,14 @@ trait CalendarRow extends Control {
     * @returns <code>this</code> to allow method chaining
     */
   def focusNearestAppointment(oDate: js.Any): CalendarRow = js.native
+  
   /**
     * Gets content of aggregation <code>appointments</code>.Appointments to be displayed in the row.
     * Appointments outside the visible time frame are not rendered.<b>Note:</b> For performance reasons,
     * only appointments in the visible time range or nearby should be assigned.
     */
   def getAppointments(): js.Array[CalendarAppointment] = js.native
+  
   /**
     * Gets current value of property <code>appointmentsReducedHeight</code>.If set the appointments
     * without text (only title) are rendered with a smaller height.<b>Note:</b> On phone devices this
@@ -199,6 +220,7 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>appointmentsReducedHeight</code>
     */
   def getAppointmentsReducedHeight(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>appointmentsVisualization</code>.Defines the visualization of
     * the <code>CalendarAppoinment</code><b>Note:</b> The real visualization depends on the used
@@ -207,11 +229,13 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>appointmentsVisualization</code>
     */
   def getAppointmentsVisualization(): CalendarAppointmentVisualization = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>checkResize</code>.If set, the <code>CalendarRow</code> checks
     * for resize by itself.If a lot of <code>CalendarRow</code> controls are used in one container control
@@ -221,6 +245,7 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>checkResize</code>
     */
   def getCheckResize(): Boolean = js.native
+  
   /**
     * Returns the focused <code>CalendarAppointment</code> of the <code>CalendarRow</code>.The focus must
     * not really be on the <code>CalendarAppointment</code>, it have just tobe the one that has the focus
@@ -228,11 +253,13 @@ trait CalendarRow extends Control {
     * @returns Focused Appointment
     */
   def getFocusedAppointment(): CalendarAppointment = js.native
+  
   /**
     * Gets current value of property <code>height</code>.Height of the row
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>intervalHeaders</code>.Appointments to be displayed in the top of
     * the intervals. The <code>intervalHeaders</code> are used to visualizepublic holidays and similar
@@ -242,24 +269,28 @@ trait CalendarRow extends Control {
     * nearby should be assigned.
     */
   def getIntervalHeaders(): js.Array[CalendarAppointment] = js.native
+  
   /**
     * Gets current value of property <code>intervalType</code>.Type of the intervals of the row. The
     * default is one hour.Default value is <code>Hour</code>.
     * @returns Value of property <code>intervalType</code>
     */
   def getIntervalType(): CalendarIntervalType = js.native
+  
   /**
     * Gets current value of property <code>intervals</code>.Number of displayed intervals. The size of the
     * intervals is defined with <code>intervalType</code>Default value is <code>12</code>.
     * @returns Value of property <code>intervals</code>
     */
   def getIntervals(): Double = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>legend</code>, or
     * <code>null</code>.
     * @since 1.40.0
     */
   def getLegend(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>nonWorkingDays</code>.If set, the provided weekdays are
     * displayed as non-working days.Valid values inside the array are 0 to 6. (Other values will just be
@@ -269,6 +300,7 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>nonWorkingDays</code>
     */
   def getNonWorkingDays(): Double = js.native
+  
   /**
     * Gets current value of property <code>nonWorkingHours</code>.If set, the provided hours are displayed
     * as non-working hours.Valid values inside the array are 0 to 23. (Other values will just be
@@ -277,6 +309,7 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>nonWorkingHours</code>
     */
   def getNonWorkingHours(): Double = js.native
+  
   /**
     * Gets current value of property <code>showEmptyIntervalHeaders</code>.If set, interval headers are
     * shown even if no <code>intervalHeaders</code> are assigned to the visible time frame.If not set, no
@@ -287,6 +320,7 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>showEmptyIntervalHeaders</code>
     */
   def getShowEmptyIntervalHeaders(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showIntervalHeaders</code>.If set, interval headers are shown
     * like specified in <code>showEmptyIntervalHeaders</code>.If not set, no interval headers are shown
@@ -294,6 +328,7 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>showIntervalHeaders</code>
     */
   def getShowIntervalHeaders(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSubIntervals</code>.If set, subintervals are shown.If the
     * interval type is <code>Hour</code>, quarter hours are shown.If the interval type is
@@ -302,12 +337,14 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>showSubIntervals</code>
     */
   def getShowSubIntervals(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>startDate</code>.Start date, as JavaScript Date object, of the
     * row. As default, the current date is used.
     * @returns Value of property <code>startDate</code>
     */
   def getStartDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>updateCurrentTime</code>.If set the <code>CalendarRow</code>
     * triggers a periodic update to visualize the current time.If a lot of <code>CalendarRow</code>
@@ -318,11 +355,13 @@ trait CalendarRow extends Control {
     * @returns Value of property <code>updateCurrentTime</code>
     */
   def getUpdateCurrentTime(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Width of the row
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * After a resize of the <code>CalendarRow</code>, some calculations for appointmentsizes are
     * needed.For this, each <code>CalendarRow</code> can trigger the resize check for it's own DOM.But if
@@ -333,6 +372,7 @@ trait CalendarRow extends Control {
     * @returns <code>this</code> to allow method chaining
     */
   def handleResize(oEvent: js.Any): CalendarRow = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.CalendarAppointment</code> in the aggregation
     * <code>appointments</code>.and returns its index if found or -1 otherwise.
@@ -340,6 +380,7 @@ trait CalendarRow extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfAppointment(oAppointment: CalendarAppointment): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.CalendarAppointment</code> in the aggregation
     * <code>intervalHeaders</code>.and returns its index if found or -1 otherwise.
@@ -347,6 +388,7 @@ trait CalendarRow extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfIntervalHeader(oIntervalHeader: CalendarAppointment): Double = js.native
+  
   /**
     * Inserts a appointment into the aggregation <code>appointments</code>.
     * @param oAppointment the appointment to insert; if empty, nothing is inserted
@@ -357,6 +399,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertAppointment(oAppointment: CalendarAppointment, iIndex: Double): CalendarRow = js.native
+  
   /**
     * Inserts a intervalHeader into the aggregation <code>intervalHeaders</code>.
     * @param oIntervalHeader the intervalHeader to insert; if empty, nothing is inserted
@@ -367,23 +410,27 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertIntervalHeader(oIntervalHeader: CalendarAppointment, iIndex: Double): CalendarRow = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>appointments</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAppointments(): js.Array[CalendarAppointment] = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>intervalHeaders</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllIntervalHeaders(): js.Array[CalendarAppointment] = js.native
+  
   def removeAppointment(vAppointment: String): CalendarAppointment = js.native
   /**
     * Removes a appointment from the aggregation <code>appointments</code>.
@@ -392,6 +439,7 @@ trait CalendarRow extends Control {
     */
   def removeAppointment(vAppointment: Double): CalendarAppointment = js.native
   def removeAppointment(vAppointment: CalendarAppointment): CalendarAppointment = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -400,6 +448,7 @@ trait CalendarRow extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeIntervalHeader(vIntervalHeader: String): CalendarAppointment = js.native
   /**
     * Removes a intervalHeader from the aggregation <code>intervalHeaders</code>.
@@ -408,6 +457,7 @@ trait CalendarRow extends Control {
     */
   def removeIntervalHeader(vIntervalHeader: Double): CalendarAppointment = js.native
   def removeIntervalHeader(vIntervalHeader: CalendarAppointment): CalendarAppointment = js.native
+  
   /**
     * Sets a new value for property <code>appointmentsReducedHeight</code>.If set the appointments without
     * text (only title) are rendered with a smaller height.<b>Note:</b> On phone devices this property is
@@ -419,6 +469,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAppointmentsReducedHeight(bAppointmentsReducedHeight: Boolean): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>appointmentsVisualization</code>.Defines the visualization of
     * the <code>CalendarAppoinment</code><b>Note:</b> The real visualization depends on the used
@@ -429,6 +480,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAppointmentsVisualization(sAppointmentsVisualization: CalendarAppointmentVisualization): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>checkResize</code>.If set, the <code>CalendarRow</code> checks
     * for resize by itself.If a lot of <code>CalendarRow</code> controls are used in one container control
@@ -441,6 +493,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCheckResize(bCheckResize: Boolean): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.Height of the rowWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -448,6 +501,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>intervalType</code>.Type of the intervals of the row. The
     * default is one hour.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -456,6 +510,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIntervalType(sIntervalType: CalendarIntervalType): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>intervals</code>.Number of displayed intervals. The size of the
     * intervals is defined with <code>intervalType</code>When called with a value of <code>null</code> or
@@ -465,6 +520,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIntervals(iIntervals: Double): CalendarRow = js.native
+  
   /**
     * Sets the associated <code>legend</code>.
     * @since 1.40.0
@@ -474,6 +530,7 @@ trait CalendarRow extends Control {
     */
   def setLegend(oLegend: js.Any): CalendarRow = js.native
   def setLegend(oLegend: CalendarLegend): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>nonWorkingDays</code>.If set, the provided weekdays are
     * displayed as non-working days.Valid values inside the array are 0 to 6. (Other values will just be
@@ -485,6 +542,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNonWorkingDays(sNonWorkingDays: Double): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>nonWorkingHours</code>.If set, the provided hours are displayed
     * as non-working hours.Valid values inside the array are 0 to 23. (Other values will just be
@@ -495,6 +553,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNonWorkingHours(sNonWorkingHours: Double): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>showEmptyIntervalHeaders</code>.If set, interval headers are
     * shown even if no <code>intervalHeaders</code> are assigned to the visible time frame.If not set, no
@@ -507,6 +566,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowEmptyIntervalHeaders(bShowEmptyIntervalHeaders: Boolean): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>showIntervalHeaders</code>.If set, interval headers are shown
     * like specified in <code>showEmptyIntervalHeaders</code>.If not set, no interval headers are shown
@@ -517,6 +577,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowIntervalHeaders(bShowIntervalHeaders: Boolean): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>showSubIntervals</code>.If set, subintervals are shown.If the
     * interval type is <code>Hour</code>, quarter hours are shown.If the interval type is
@@ -527,6 +588,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSubIntervals(bShowSubIntervals: Boolean): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>startDate</code>.Start date, as JavaScript Date object, of the
     * row. As default, the current date is used.When called with a value of <code>null</code> or
@@ -535,6 +597,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setStartDate(oStartDate: js.Any): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>updateCurrentTime</code>.If set the <code>CalendarRow</code>
     * triggers a periodic update to visualize the current time.If a lot of <code>CalendarRow</code>
@@ -547,6 +610,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUpdateCurrentTime(bUpdateCurrentTime: Boolean): CalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Width of the rowWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -554,6 +618,7 @@ trait CalendarRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): CalendarRow = js.native
+  
   /**
     * If the current time is in the visible output of the <code>CalendarRow</code>,the indicator for the
     * current time must be positioned.For this, each <code>CalendarRow</code> can trigger a timer.But if
@@ -564,4 +629,3 @@ trait CalendarRow extends Control {
     */
   def updateCurrentTimeVisualization(): CalendarRow = js.native
 }
-

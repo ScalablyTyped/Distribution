@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The NineSlicePlane allows you to stretch a texture using 9-slice scaling. The corners will remain unscaled (useful
@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NineSlicePlane extends SimplePlane {
+  
   /**
     * The height of the NineSlicePlane, setting this will actually modify the vertices and UV's of this plane
     *
@@ -44,6 +45,12 @@ trait NineSlicePlane extends SimplePlane {
     * @override
     */
   var _height: Double = js.native
+  
+  /**
+    * Refreshes NineSlicePlane coords. All of them.
+    */
+  def _refresh(): Unit = js.native
+  
   /**
     * The width of the NineSlicePlane, setting this will actually modify the vertices and UV's of this plane
     *
@@ -51,43 +58,44 @@ trait NineSlicePlane extends SimplePlane {
     * @override
     */
   var _width: Double = js.native
+  
   /**
     * The height of the bottom row
     *
     * @member {number}
     */
   var bottomHeight: Double = js.native
+  
   /**
     * The width of the left column
     *
     * @member {number}
     */
   var leftWidth: Double = js.native
+  
   /**
     * The width of the right column
     *
     * @member {number}
     */
   var rightWidth: Double = js.native
+  
   /**
     * The height of the top row
     *
     * @member {number}
     */
   var topHeight: Double = js.native
-  /**
-    * Refreshes NineSlicePlane coords. All of them.
-    */
-  def _refresh(): Unit = js.native
+  
   /**
     * Updates the horizontal vertices.
     *
     */
   def updateHorizontalVertices(): Unit = js.native
+  
   /**
     * Updates the vertical vertices.
     *
     */
   def updateVerticalVertices(): Unit = js.native
 }
-

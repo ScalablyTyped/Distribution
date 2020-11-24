@@ -12,12 +12,12 @@ import typings.stylefire.typesMod.State
 import typings.stylefire.typesMod.Styler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stylefire", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val transformProps: js.Array[String] = js.native
+  
   def buildSVGAttrs(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState): SVGAttrs = js.native
   def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
@@ -241,6 +241,7 @@ object mod extends js.Object {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = js.native
+  
   def buildStyleProperty(
     state: State,
     enableHardwareAcceleration: js.UndefOr[Boolean],
@@ -251,13 +252,17 @@ object mod extends js.Object {
     isDashCase: js.UndefOr[Boolean],
     allowTransformNone: js.UndefOr[Boolean]
   ): ResolvedState = js.native
+  
   def createStylerFactory(hasOnReadOnRenderUncachedValuesUseCache: Config): js.Function1[/* hasProps */ js.UndefOr[Props], Styler] = js.native
+  
   def default(nodeOrSelector: String): Styler = js.native
   def default(nodeOrSelector: String, props: Props): Styler = js.native
   def default(nodeOrSelector: Element): Styler = js.native
   def default(nodeOrSelector: Element, props: Props): Styler = js.native
   def default(nodeOrSelector: Window): Styler = js.native
   def default(nodeOrSelector: Window, props: Props): Styler = js.native
+  
   def isTransformProp(key: String): Boolean = js.native
+  
+  val transformProps: js.Array[String] = js.native
 }
-

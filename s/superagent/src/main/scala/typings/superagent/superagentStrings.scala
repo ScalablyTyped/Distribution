@@ -2,9 +2,40 @@ package typings.superagent
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object superagentStrings {
+  
+  @scala.inline
+  def Cookie: Cookie = "Cookie".asInstanceOf[Cookie]
+  
+  @scala.inline
+  def `Set-Cookie`: `Set-Cookie` = "Set-Cookie".asInstanceOf[`Set-Cookie`]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  
+  @scala.inline
+  def bearer: bearer = "bearer".asInstanceOf[bearer]
+  
+  @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
+  
+  @scala.inline
+  def upload: upload = "upload".asInstanceOf[upload]
+  
   @js.native
   sealed trait Cookie extends js.Object
   
@@ -34,26 +65,4 @@ object superagentStrings {
   
   @js.native
   sealed trait upload extends js.Object
-  
-  @scala.inline
-  def Cookie: Cookie = "Cookie".asInstanceOf[Cookie]
-  @scala.inline
-  def `Set-Cookie`: `Set-Cookie` = "Set-Cookie".asInstanceOf[`Set-Cookie`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def bearer: bearer = "bearer".asInstanceOf[bearer]
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def upload: upload = "upload".asInstanceOf[upload]
 }
-

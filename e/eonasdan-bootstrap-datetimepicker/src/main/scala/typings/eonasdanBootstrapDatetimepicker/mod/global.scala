@@ -9,17 +9,21 @@ import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerSt
 import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait JQuery extends js.Object {
+    
     @JSName("data")
     def data_DateTimePicker(key: DateTimePicker): Datetimepicker = js.native
+    
     def datetimepicker(): JQuery = js.native
     def datetimepicker(options: SetOptions): JQuery = js.native
+    
     @JSName("off")
     def off_dpchange(events: dpDotchange): JQuery = js.native
     @JSName("off")
@@ -98,6 +102,7 @@ object global extends js.Object {
       selector: String,
       handler: js.Function1[/* eventobject */ UpdateEventObject, _]
     ): JQuery = js.native
+    
     @JSName("on")
     def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEventObject, _]): JQuery = js.native
     @JSName("on")
@@ -172,6 +177,4 @@ object global extends js.Object {
       handler: js.Function1[/* eventobject */ UpdateEventObject, _]
     ): JQuery = js.native
   }
-  
 }
-

@@ -2,13 +2,14 @@ package typings.kiiCloudSdk.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiUser builder
   */
 @js.native
 trait KiiUserBuilder extends js.Object {
+  
   /**
     * Build KiiUser object.
     *
@@ -17,6 +18,7 @@ trait KiiUserBuilder extends js.Object {
     * @return a working KiiUser object.
     */
   def build(): KiiUser = js.native
+  
   /**
     * Set email address.
     *
@@ -31,6 +33,7 @@ trait KiiUserBuilder extends js.Object {
     *     proper format
     */
   def setEmailAddress(emailAddress: String): KiiUserBuilder = js.native
+  
   /**
     * Set global phone number.
     *
@@ -45,6 +48,7 @@ trait KiiUserBuilder extends js.Object {
     *     in the proper format
     */
   def setGlobalPhoneNumber(phoneNumber: String): KiiUserBuilder = js.native
+  
   /**
     * Set local phone number.
     *
@@ -61,6 +65,7 @@ trait KiiUserBuilder extends js.Object {
     * @throws If the country code is not a valid format
     */
   def setLocalPhoneNumber(phoneNumber: String, country: String): KiiUserBuilder = js.native
+  
   /**
     * Set user name.
     *
@@ -76,8 +81,8 @@ trait KiiUserBuilder extends js.Object {
     */
   def setUsername(username: String): KiiUserBuilder = js.native
 }
-
 object KiiUserBuilder {
+  
   @scala.inline
   def apply(
     build: () => KiiUser,
@@ -89,28 +94,35 @@ object KiiUserBuilder {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setEmailAddress = js.Any.fromFunction1(setEmailAddress), setGlobalPhoneNumber = js.Any.fromFunction1(setGlobalPhoneNumber), setLocalPhoneNumber = js.Any.fromFunction2(setLocalPhoneNumber), setUsername = js.Any.fromFunction1(setUsername))
     __obj.asInstanceOf[KiiUserBuilder]
   }
+  
   @scala.inline
   implicit class KiiUserBuilderOps[Self <: KiiUserBuilder] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBuild(value: () => KiiUser): Self = this.set("build", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetEmailAddress(value: String => KiiUserBuilder): Self = this.set("setEmailAddress", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetGlobalPhoneNumber(value: String => KiiUserBuilder): Self = this.set("setGlobalPhoneNumber", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetLocalPhoneNumber(value: (String, String) => KiiUserBuilder): Self = this.set("setLocalPhoneNumber", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetUsername(value: String => KiiUserBuilder): Self = this.set("setUsername", js.Any.fromFunction1(value))
   }
-  
 }
-

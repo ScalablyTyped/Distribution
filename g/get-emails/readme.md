@@ -11,8 +11,8 @@ Get all email addresses in a string
 | Full name          | get-emails |
 | Keywords           | get, extract, find, scrape, text, string, email, address, emails |
 | # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 95542 |
+| # dependents       | 8 |
+| # downloads        | 130086 |
 | # stars            | 4 |
 
 ## Links

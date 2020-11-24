@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx
 
-Typings are for version 5.15.4
+Typings are for version 5.15.7
 
 ## Library description:
 Simple, scalable state management.
@@ -10,9 +10,9 @@ Simple, scalable state management.
 | ------------------ | :-------------: |
 | Full name          | mobx |
 | Keywords           | mobx, mobservable, observable, react-component, react, reactjs, reactive, model, frp, functional-reactive-programming, state management, data flow |
-| # releases         | 78 |
-| # dependents       | 1061 |
-| # downloads        | 13712269 |
+| # releases         | 60 |
+| # dependents       | 1377 |
+| # downloads        | 19329303 |
 | # stars            | 39 |
 
 ## Links

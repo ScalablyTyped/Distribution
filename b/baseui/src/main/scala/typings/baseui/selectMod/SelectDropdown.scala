@@ -7,14 +7,16 @@ import typings.react.mod.ReactNode
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui/select", "SelectDropdown")
 @js.native
 class SelectDropdown ()
   extends Component[DropdownProps, js.Object, js.Any] {
+  
   def getItemLabel(option: StringDictionary[js.Any]): ReactNode = js.native
+  
   def getSharedProps(): Error = js.native
+  
   def onMouseDown(e: Event): Unit = js.native
 }
-

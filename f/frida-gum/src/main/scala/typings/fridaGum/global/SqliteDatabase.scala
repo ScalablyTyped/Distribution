@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.SqliteOpenOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides read/write access to a SQLite database. Useful for persistence
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class SqliteDatabase ()
   extends typings.fridaGum.SqliteDatabase
-
 /* static members */
 @JSGlobal("SqliteDatabase")
 @js.native
 object SqliteDatabase extends js.Object {
+  
   /**
     * Opens the SQLite v3 database at `path` on the filesystem. The database
     * will by default be opened read-write, and the returned `SqliteDatabase`
@@ -29,6 +29,7 @@ object SqliteDatabase extends js.Object {
     */
   def open(path: String): typings.fridaGum.SqliteDatabase = js.native
   def open(path: String, options: SqliteOpenOptions): typings.fridaGum.SqliteDatabase = js.native
+  
   /**
     * Just like `open()` but the contents of the database is provided as a
     * string containing its data, Base64-encoded. We recommend gzipping the
@@ -44,4 +45,3 @@ object SqliteDatabase extends js.Object {
     */
   def openInline(encodedContents: String): typings.fridaGum.SqliteDatabase = js.native
 }
-

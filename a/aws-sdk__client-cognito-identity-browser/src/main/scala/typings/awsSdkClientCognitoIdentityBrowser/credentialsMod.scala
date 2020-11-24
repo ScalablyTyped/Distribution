@@ -1,14 +1,13 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-cognito-identity-browser/model/_Credentials", JSImport.Namespace)
 @js.native
 object credentialsMod extends js.Object {
+  
   @JSName("_Credentials")
-  val Credentials: Structure = js.native
+  val Credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

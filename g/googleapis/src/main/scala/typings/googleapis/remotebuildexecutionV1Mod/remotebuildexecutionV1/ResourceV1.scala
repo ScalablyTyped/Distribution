@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1", "remotebuildexecution_v1.Resource$V1")
 @js.native
 class ResourceV1 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.watch
     * @desc Start a streaming RPC to get watch information from the server.
@@ -43,4 +45,3 @@ class ResourceV1 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleWatcherV1ChangeBatch]
   ): Unit = js.native
 }
-

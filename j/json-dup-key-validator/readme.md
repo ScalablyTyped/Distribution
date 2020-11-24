@@ -12,7 +12,7 @@ A json validator that has an option to check for duplicated keys
 | Keywords           | jsonvalidator, json, validator, validation |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 1091472 |
+| # downloads        | 1228376 |
 | # stars            | 0 |
 
 ## Links

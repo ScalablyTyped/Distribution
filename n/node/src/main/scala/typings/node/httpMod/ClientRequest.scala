@@ -13,7 +13,7 @@ import typings.node.nodeStrings.upgrade
 import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L77
 @JSImport("http", "ClientRequest")
@@ -25,10 +25,11 @@ class ClientRequest protected () extends OutgoingMessage {
   def this(url: String, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
   def this(url: ClientRequestArgs, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
   def this(url: URL_, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
-  var aborted: Double = js.native
-  var method: String = js.native
-  var path: String = js.native
+  
   def abort(): Unit = js.native
+  
+  var aborted: Boolean = js.native
+  
   @JSName("addListener")
   def addListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -51,7 +52,13 @@ class ClientRequest protected () extends OutgoingMessage {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
+  var host: String = js.native
+  
+  var method: String = js.native
+  
   def onSocket(socket: Socket): Unit = js.native
+  
   @JSName("on")
   def on_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -74,6 +81,7 @@ class ClientRequest protected () extends OutgoingMessage {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -96,6 +104,9 @@ class ClientRequest protected () extends OutgoingMessage {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
+  var path: String = js.native
+  
   @JSName("prependListener")
   def prependListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -118,6 +129,7 @@ class ClientRequest protected () extends OutgoingMessage {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -140,11 +152,14 @@ class ClientRequest protected () extends OutgoingMessage {
     event: upgrade,
     listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
   ): this.type = js.native
+  
+  var protocol: String = js.native
+  
   def setNoDelay(): Unit = js.native
   def setNoDelay(noDelay: Boolean): Unit = js.native
+  
   def setSocketKeepAlive(): Unit = js.native
   def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
   def setSocketKeepAlive(enable: Boolean): Unit = js.native
   def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
 }
-

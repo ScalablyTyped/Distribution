@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instanceconfigs")
 @js.native
 class ResourceProjectsInstanceconfigs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * spanner.projects.instanceConfigs.get
     * @desc Gets information about a particular instance configuration.
@@ -44,6 +46,7 @@ class ResourceProjectsInstanceconfigs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceConfig]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instanceConfigs.list
     * @desc Lists the supported instance configurations for a given project.
@@ -78,4 +81,3 @@ class ResourceProjectsInstanceconfigs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListInstanceConfigsResponse]
   ): Unit = js.native
 }
-

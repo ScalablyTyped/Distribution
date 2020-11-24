@@ -16,11 +16,124 @@ import typings.phaser.Phaser.Types.Physics.Arcade.PhysicsGroupConfig
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Physics.Arcade")
 @js.native
 object Arcade extends js.Object {
+  
+  /**
+    * Dynamic Body.
+    */
+  var DYNAMIC_BODY: Double = js.native
+  
+  /**
+    * Facing down.
+    */
+  var FACING_DOWN: Double = js.native
+  
+  /**
+    * Facing left.
+    */
+  var FACING_LEFT: Double = js.native
+  
+  /**
+    * Facing no direction (initial value).
+    */
+  var FACING_NONE: Double = js.native
+  
+  /**
+    * Facing right.
+    */
+  var FACING_RIGHT: Double = js.native
+  
+  /**
+    * Facing up.
+    */
+  var FACING_UP: Double = js.native
+  
+  /**
+    * Arcade Physics Group containing Dynamic Bodies.
+    */
+  @JSName("GROUP")
+  var GROUP_ : Double = js.native
+  
+  /**
+    * Calculates and returns the horizontal overlap between two arcade physics bodies and sets their properties
+    * accordingly, including: `touching.left`, `touching.right`, `touching.none` and `overlapX'.
+    * @param body1 The first Body to separate.
+    * @param body2 The second Body to separate.
+    * @param overlapOnly Is this an overlap only check, or part of separation?
+    * @param bias A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).
+    */
+  def GetOverlapX(
+    body1: typings.phaser.Phaser.Physics.Arcade.Body,
+    body2: typings.phaser.Phaser.Physics.Arcade.Body,
+    overlapOnly: Boolean,
+    bias: Double
+  ): Double = js.native
+  
+  /**
+    * Calculates and returns the vertical overlap between two arcade physics bodies and sets their properties
+    * accordingly, including: `touching.up`, `touching.down`, `touching.none` and `overlapY'.
+    * @param body1 The first Body to separate.
+    * @param body2 The second Body to separate.
+    * @param overlapOnly Is this an overlap only check, or part of separation?
+    * @param bias A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).
+    */
+  def GetOverlapY(
+    body1: typings.phaser.Phaser.Physics.Arcade.Body,
+    body2: typings.phaser.Phaser.Physics.Arcade.Body,
+    overlapOnly: Boolean,
+    bias: Double
+  ): Double = js.native
+  
+  /**
+    * Static Body.
+    */
+  var STATIC_BODY: Double = js.native
+  
+  /**
+    * Separates two overlapping bodies on the X-axis (horizontally).
+    * 
+    * Separation involves moving two overlapping bodies so they don't overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.
+    * 
+    * The bodies won't be separated if there is no horizontal overlap between them, if they are static, or if either one uses custom logic for its separation.
+    * @param body1 The first Body to separate.
+    * @param body2 The second Body to separate.
+    * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
+    * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
+    */
+  def SeparateX(
+    body1: typings.phaser.Phaser.Physics.Arcade.Body,
+    body2: typings.phaser.Phaser.Physics.Arcade.Body,
+    overlapOnly: Boolean,
+    bias: Double
+  ): Boolean = js.native
+  
+  /**
+    * Separates two overlapping bodies on the Y-axis (vertically).
+    * 
+    * Separation involves moving two overlapping bodies so they don't overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.
+    * 
+    * The bodies won't be separated if there is no vertical overlap between them, if they are static, or if either one uses custom logic for its separation.
+    * @param body1 The first Body to separate.
+    * @param body2 The second Body to separate.
+    * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
+    * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
+    */
+  def SeparateY(
+    body1: typings.phaser.Phaser.Physics.Arcade.Body,
+    body2: typings.phaser.Phaser.Physics.Arcade.Body,
+    overlapOnly: Boolean,
+    bias: Double
+  ): Boolean = js.native
+  
+  /**
+    * A Tilemap Layer.
+    */
+  var TILEMAPLAYER: Double = js.native
+  
   /**
     * The Arcade Physics Plugin belongs to a Scene and sets up and manages the Scene's physics simulation.
     * It also holds some useful methods for moving and rotating Arcade Physics Bodies.
@@ -84,6 +197,108 @@ object Arcade extends js.Object {
       processCallback: ArcadePhysicsCallback,
       callbackContext: js.Any
     ) = this()
+  }
+  
+  @js.native
+  object Events extends js.Object {
+    
+    /**
+      * The Arcade Physics World Collide Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance if two bodies collide _and_ at least
+      * one of them has their [onCollide]{@link Phaser.Physics.Arcade.Body#onCollide} property set to `true`.
+      * 
+      * It provides an alternative means to handling collide events rather than using the callback approach.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('collide', listener)`.
+      * 
+      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
+      */
+    val COLLIDE: js.Any = js.native
+    
+    /**
+      * The Arcade Physics World Overlap Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance if two bodies overlap _and_ at least
+      * one of them has their [onOverlap]{@link Phaser.Physics.Arcade.Body#onOverlap} property set to `true`.
+      * 
+      * It provides an alternative means to handling overlap events rather than using the callback approach.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('overlap', listener)`.
+      * 
+      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
+      */
+    val OVERLAP: js.Any = js.native
+    
+    /**
+      * The Arcade Physics World Pause Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance when it is paused.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('pause', listener)`.
+      */
+    val PAUSE: js.Any = js.native
+    
+    /**
+      * The Arcade Physics World Resume Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance when it resumes from a paused state.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('resume', listener)`.
+      */
+    val RESUME: js.Any = js.native
+    
+    /**
+      * The Arcade Physics Tile Collide Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance if a body collides with a Tile _and_
+      * has its [onCollide]{@link Phaser.Physics.Arcade.Body#onCollide} property set to `true`.
+      * 
+      * It provides an alternative means to handling collide events rather than using the callback approach.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('tilecollide', listener)`.
+      * 
+      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
+      */
+    val TILE_COLLIDE: js.Any = js.native
+    
+    /**
+      * The Arcade Physics Tile Overlap Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance if a body overlaps with a Tile _and_
+      * has its [onOverlap]{@link Phaser.Physics.Arcade.Body#onOverlap} property set to `true`.
+      * 
+      * It provides an alternative means to handling overlap events rather than using the callback approach.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('tileoverlap', listener)`.
+      * 
+      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
+      */
+    val TILE_OVERLAP: js.Any = js.native
+    
+    /**
+      * The Arcade Physics World Bounds Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance if a body makes contact with the world bounds _and_
+      * it has its [onWorldBounds]{@link Phaser.Physics.Arcade.Body#onWorldBounds} property set to `true`.
+      * 
+      * It provides an alternative means to handling collide events rather than using the callback approach.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('worldbounds', listener)`.
+      */
+    val WORLD_BOUNDS: js.Any = js.native
+    
+    /**
+      * The Arcade Physics World Step Event.
+      * 
+      * This event is dispatched by an Arcade Physics World instance whenever a physics step is run.
+      * It is emitted _after_ the bodies and colliders have been updated.
+      * 
+      * In high framerate settings this can be multiple times per game frame.
+      * 
+      * Listen to it from a Scene using: `this.physics.world.on('worldstep', listener)`.
+      */
+    val WORLD_STEP: js.Any = js.native
   }
   
   /**
@@ -314,237 +529,30 @@ object Arcade extends js.Object {
     ) = this()
   }
   
-  /**
-    * The Arcade Physics World.
-    * 
-    * The World is responsible for creating, managing, colliding and updating all of the bodies within it.
-    * 
-    * An instance of the World belongs to a Phaser.Scene and is accessed via the property `physics.world`.
-    */
-  @js.native
-  class World protected ()
-    extends typings.phaser.Phaser.Physics.Arcade.World {
-    /**
-      * 
-      * @param scene The Scene to which this World instance belongs.
-      * @param config An Arcade Physics Configuration object.
-      */
-    def this(scene: Scene, config: ArcadeWorldConfig) = this()
-  }
-  
-  /**
-    * Dynamic Body.
-    */
-  var DYNAMIC_BODY: Double = js.native
-  /**
-    * Facing down.
-    */
-  var FACING_DOWN: Double = js.native
-  /**
-    * Facing left.
-    */
-  var FACING_LEFT: Double = js.native
-  /**
-    * Facing no direction (initial value).
-    */
-  var FACING_NONE: Double = js.native
-  /**
-    * Facing right.
-    */
-  var FACING_RIGHT: Double = js.native
-  /**
-    * Facing up.
-    */
-  var FACING_UP: Double = js.native
-  /**
-    * Arcade Physics Group containing Dynamic Bodies.
-    */
-  @JSName("GROUP")
-  var GROUP_ : Double = js.native
-  /**
-    * Static Body.
-    */
-  var STATIC_BODY: Double = js.native
-  /**
-    * A Tilemap Layer.
-    */
-  var TILEMAPLAYER: Double = js.native
-  /**
-    * Calculates and returns the horizontal overlap between two arcade physics bodies and sets their properties
-    * accordingly, including: `touching.left`, `touching.right`, `touching.none` and `overlapX'.
-    * @param body1 The first Body to separate.
-    * @param body2 The second Body to separate.
-    * @param overlapOnly Is this an overlap only check, or part of separation?
-    * @param bias A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).
-    */
-  def GetOverlapX(
-    body1: typings.phaser.Phaser.Physics.Arcade.Body,
-    body2: typings.phaser.Phaser.Physics.Arcade.Body,
-    overlapOnly: Boolean,
-    bias: Double
-  ): Double = js.native
-  /**
-    * Calculates and returns the vertical overlap between two arcade physics bodies and sets their properties
-    * accordingly, including: `touching.up`, `touching.down`, `touching.none` and `overlapY'.
-    * @param body1 The first Body to separate.
-    * @param body2 The second Body to separate.
-    * @param overlapOnly Is this an overlap only check, or part of separation?
-    * @param bias A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).
-    */
-  def GetOverlapY(
-    body1: typings.phaser.Phaser.Physics.Arcade.Body,
-    body2: typings.phaser.Phaser.Physics.Arcade.Body,
-    overlapOnly: Boolean,
-    bias: Double
-  ): Double = js.native
-  /**
-    * Separates two overlapping bodies on the X-axis (horizontally).
-    * 
-    * Separation involves moving two overlapping bodies so they don't overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.
-    * 
-    * The bodies won't be separated if there is no horizontal overlap between them, if they are static, or if either one uses custom logic for its separation.
-    * @param body1 The first Body to separate.
-    * @param body2 The second Body to separate.
-    * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
-    * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
-    */
-  def SeparateX(
-    body1: typings.phaser.Phaser.Physics.Arcade.Body,
-    body2: typings.phaser.Phaser.Physics.Arcade.Body,
-    overlapOnly: Boolean,
-    bias: Double
-  ): Boolean = js.native
-  /**
-    * Separates two overlapping bodies on the Y-axis (vertically).
-    * 
-    * Separation involves moving two overlapping bodies so they don't overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.
-    * 
-    * The bodies won't be separated if there is no vertical overlap between them, if they are static, or if either one uses custom logic for its separation.
-    * @param body1 The first Body to separate.
-    * @param body2 The second Body to separate.
-    * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
-    * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
-    */
-  def SeparateY(
-    body1: typings.phaser.Phaser.Physics.Arcade.Body,
-    body2: typings.phaser.Phaser.Physics.Arcade.Body,
-    overlapOnly: Boolean,
-    bias: Double
-  ): Boolean = js.native
-  @js.native
-  object Events extends js.Object {
-    /**
-      * The Arcade Physics World Collide Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance if two bodies collide _and_ at least
-      * one of them has their [onCollide]{@link Phaser.Physics.Arcade.Body#onCollide} property set to `true`.
-      * 
-      * It provides an alternative means to handling collide events rather than using the callback approach.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('collide', listener)`.
-      * 
-      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
-      */
-    val COLLIDE: js.Any = js.native
-    /**
-      * The Arcade Physics World Overlap Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance if two bodies overlap _and_ at least
-      * one of them has their [onOverlap]{@link Phaser.Physics.Arcade.Body#onOverlap} property set to `true`.
-      * 
-      * It provides an alternative means to handling overlap events rather than using the callback approach.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('overlap', listener)`.
-      * 
-      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
-      */
-    val OVERLAP: js.Any = js.native
-    /**
-      * The Arcade Physics World Pause Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance when it is paused.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('pause', listener)`.
-      */
-    val PAUSE: js.Any = js.native
-    /**
-      * The Arcade Physics World Resume Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance when it resumes from a paused state.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('resume', listener)`.
-      */
-    val RESUME: js.Any = js.native
-    /**
-      * The Arcade Physics Tile Collide Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance if a body collides with a Tile _and_
-      * has its [onCollide]{@link Phaser.Physics.Arcade.Body#onCollide} property set to `true`.
-      * 
-      * It provides an alternative means to handling collide events rather than using the callback approach.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('tilecollide', listener)`.
-      * 
-      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
-      */
-    val TILE_COLLIDE: js.Any = js.native
-    /**
-      * The Arcade Physics Tile Overlap Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance if a body overlaps with a Tile _and_
-      * has its [onOverlap]{@link Phaser.Physics.Arcade.Body#onOverlap} property set to `true`.
-      * 
-      * It provides an alternative means to handling overlap events rather than using the callback approach.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('tileoverlap', listener)`.
-      * 
-      * Please note that 'collide' and 'overlap' are two different things in Arcade Physics.
-      */
-    val TILE_OVERLAP: js.Any = js.native
-    /**
-      * The Arcade Physics World Bounds Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance if a body makes contact with the world bounds _and_
-      * it has its [onWorldBounds]{@link Phaser.Physics.Arcade.Body#onWorldBounds} property set to `true`.
-      * 
-      * It provides an alternative means to handling collide events rather than using the callback approach.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('worldbounds', listener)`.
-      */
-    val WORLD_BOUNDS: js.Any = js.native
-    /**
-      * The Arcade Physics World Step Event.
-      * 
-      * This event is dispatched by an Arcade Physics World instance whenever a physics step is run.
-      * It is emitted _after_ the bodies and colliders have been updated.
-      * 
-      * In high framerate settings this can be multiple times per game frame.
-      * 
-      * Listen to it from a Scene using: `this.physics.world.on('worldstep', listener)`.
-      */
-    val WORLD_STEP: js.Any = js.native
-  }
-  
   @js.native
   object Tilemap extends js.Object {
+    
     /**
       * A function to process the collision callbacks between a single tile and an Arcade Physics enabled Game Object.
       * @param tile The Tile to process.
       * @param sprite The Game Object to process with the Tile.
       */
     def ProcessTileCallbacks(tile: Tile, sprite: typings.phaser.Phaser.GameObjects.Sprite): Boolean = js.native
+    
     /**
       * Internal function to process the separation of a physics body from a tile.
       * @param body The Body object to separate.
       * @param x The x separation amount.
       */
     def ProcessTileSeparationX(body: typings.phaser.Phaser.Physics.Arcade.Body, x: Double): Unit = js.native
+    
     /**
       * Internal function to process the separation of a physics body from a tile.
       * @param body The Body object to separate.
       * @param y The y separation amount.
       */
     def ProcessTileSeparationY(body: typings.phaser.Phaser.Physics.Arcade.Body, y: Double): Unit = js.native
+    
     /**
       * The core separation function to separate a physics body and a tile.
       * @param i The index of the tile within the map data.
@@ -573,6 +581,7 @@ object Arcade extends js.Object {
       tileBias: Double,
       isLayer: Boolean
     ): Boolean = js.native
+    
     /**
       * Check the body against the given tile on the X axis.
       * Used internally by the SeparateTile function.
@@ -591,6 +600,7 @@ object Arcade extends js.Object {
       tileBias: Double,
       isLayer: Boolean
     ): Double = js.native
+    
     /**
       * Check the body against the given tile on the Y axis.
       * Used internally by the SeparateTile function.
@@ -609,6 +619,7 @@ object Arcade extends js.Object {
       tileBias: Double,
       isLayer: Boolean
     ): Double = js.native
+    
     /**
       * Checks for intersection between the given tile rectangle-like object and an Arcade Physics body.
       * @param tileWorldRect A rectangle object that defines the tile placement in the world.
@@ -617,5 +628,21 @@ object Arcade extends js.Object {
     def TileIntersectsBody(tileWorldRect: js.Object, body: typings.phaser.Phaser.Physics.Arcade.Body): Boolean = js.native
   }
   
+  /**
+    * The Arcade Physics World.
+    * 
+    * The World is responsible for creating, managing, colliding and updating all of the bodies within it.
+    * 
+    * An instance of the World belongs to a Phaser.Scene and is accessed via the property `physics.world`.
+    */
+  @js.native
+  class World protected ()
+    extends typings.phaser.Phaser.Physics.Arcade.World {
+    /**
+      * 
+      * @param scene The Scene to which this World instance belongs.
+      * @param config An Arcade Physics Configuration object.
+      */
+    def this(scene: Scene, config: ArcadeWorldConfig) = this()
+  }
 }
-

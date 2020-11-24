@@ -13,11 +13,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics", JSImport.Namespace)
 @js.native
 object genomicsMod extends js.Object {
+  
   def genomics(options: Options): Genomics = js.native
   def genomics(options: typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Options): typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics = js.native
   def genomics(options: typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Options): typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics = js.native
@@ -27,13 +28,20 @@ object genomicsMod extends js.Object {
   def genomics_v1alpha2(version: v1alpha2): typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics = js.native
   @JSName("genomics")
   def genomics_v2alpha1(version: v2alpha1): typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Genomics {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Genomics]
+            ]
     
     @js.native
     class v1alpha2 protected ()
@@ -41,20 +49,6 @@ object genomicsMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v2alpha1 protected ()
-      extends typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Genomics]
-            ]
-    
     @js.native
     object v1alpha2
       extends TopLevel[
@@ -66,6 +60,12 @@ object genomicsMod extends js.Object {
             ]
     
     @js.native
+    class v2alpha1 protected ()
+      extends typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v2alpha1
       extends TopLevel[
               Instantiable2[
@@ -74,11 +74,11 @@ object genomicsMod extends js.Object {
                 typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -106,8 +106,5 @@ object genomicsMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

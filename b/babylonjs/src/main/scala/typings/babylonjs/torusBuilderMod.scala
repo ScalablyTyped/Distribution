@@ -4,17 +4,18 @@ import typings.babylonjs.anon.Thickness
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/torusBuilder", JSImport.Namespace)
 @js.native
 object torusBuilderMod extends js.Object {
+  
   @js.native
   class TorusBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object TorusBuilder extends js.Object {
+    
     /**
       * Creates a torus mesh
       * * The parameter `diameter` sets the diameter size (float) of the torus (default 1)
@@ -31,6 +32,4 @@ object torusBuilderMod extends js.Object {
       */
     def CreateTorus(name: String, options: Thickness, scene: js.Any): Mesh = js.native
   }
-  
 }
-

@@ -1,14 +1,16 @@
 package typings.pulumiAws.ec2Mod
 
-import typings.pulumiAws.tenancyMod.Tenancy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "Tenancies")
 @js.native
 object Tenancies extends js.Object {
-  val DedicatedTenancy: Tenancy = js.native
-  val DefaultTenancy: Tenancy = js.native
+  
+  /** Use Tenancy.Dedicated instead. */
+  val DedicatedTenancy: typings.pulumiAws.enumsEc2Mod.Tenancy = js.native
+  
+  /** Use Tenancy.Default instead. */
+  val DefaultTenancy: typings.pulumiAws.enumsEc2Mod.Tenancy = js.native
 }
-

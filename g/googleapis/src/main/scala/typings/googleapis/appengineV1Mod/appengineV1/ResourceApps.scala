@@ -6,20 +6,19 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1", "appengine_v1.Resource$Apps")
 @js.native
 class ResourceApps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var authorizedCertificates: ResourceAppsAuthorizedcertificates = js.native
+  
   var authorizedDomains: ResourceAppsAuthorizeddomains = js.native
+  
   var context: APIRequestContext = js.native
-  var domainMappings: ResourceAppsDomainmappings = js.native
-  var firewall: ResourceAppsFirewall = js.native
-  var locations: ResourceAppsLocations = js.native
-  var operations: ResourceAppsOperations = js.native
-  var services: ResourceAppsServices = js.native
+  
   /**
     * appengine.apps.create
     * @desc Creates an App Engine application for a Google Cloud Platform
@@ -54,6 +53,11 @@ class ResourceApps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var domainMappings: ResourceAppsDomainmappings = js.native
+  
+  var firewall: ResourceAppsFirewall = js.native
+  
   /**
     * appengine.apps.get
     * @desc Gets information about an application.
@@ -82,6 +86,11 @@ class ResourceApps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApplication]
   ): Unit = js.native
+  
+  var locations: ResourceAppsLocations = js.native
+  
+  var operations: ResourceAppsOperations = js.native
+  
   /**
     * appengine.apps.patch
     * @desc Updates the specified Application resource. You can update the
@@ -115,6 +124,7 @@ class ResourceApps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.repair
     * @desc Recreates the required App Engine features for the specified App
@@ -148,5 +158,6 @@ class ResourceApps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var services: ResourceAppsServices = js.native
 }
-

@@ -11,10 +11,11 @@ import typings.zeroclipboard.zeroclipboardStrings.error
 import typings.zeroclipboard.zeroclipboardStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ZeroClipboardCommon extends js.Object {
+  
   /**
     * Clear the pending data of ALL formats for clipboard injection.
     */
@@ -24,6 +25,7 @@ trait ZeroClipboardCommon extends js.Object {
     * @param {string} mimeType
     */
   def clearData(mimeType: String): Unit = js.native
+  
   /**
     * Dispatch an event to all registered listeners. The emission of some types of events will result in side effects.
     * @param  {string} data
@@ -49,6 +51,7 @@ trait ZeroClipboardCommon extends js.Object {
   def emit_error(eventType: error): Unit = js.native
   @JSName("emit")
   def emit_ready(eventType: ready): Unit = js.native
+  
   /**
     * Get a copy of the pending data of ALL formats for clipboard injection.
     * @return {Dictionary<string>}
@@ -62,6 +65,7 @@ trait ZeroClipboardCommon extends js.Object {
     * @since 2.1.0
     */
   def getData(format: String): String = js.native
+  
   /**
     * Retrieves a copy of the map of registered listener functions/objects for ALL event types.
     * @return {Object}
@@ -85,6 +89,7 @@ trait ZeroClipboardCommon extends js.Object {
   def handlers_error(eventType: error): js.Array[EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]] = js.native
   @JSName("handlers")
   def handlers_ready(eventType: ready): js.Array[EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]] = js.native
+  
   /**
     * Remove ALL listener functions/objects for ALL registered event types.
     */
@@ -128,6 +133,7 @@ trait ZeroClipboardCommon extends js.Object {
     */
   @JSName("off")
   def off_ready(eventType: ready, listener: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]): Unit = js.native
+  
   /**
     * Add a listener function/object for an eventType. If called as a client method will be within the client instance.
     * @param {string} eventType
@@ -197,6 +203,7 @@ trait ZeroClipboardCommon extends js.Object {
     */
   @JSName("on")
   def on_ready(eventType: ready, listener: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]): Unit = js.native
+  
   /**
     * Set the pending data of various formats for clipboard injection. This particular function signature (passing in
     * an Object) will implicitly clear out any existing pending data.
@@ -210,4 +217,3 @@ trait ZeroClipboardCommon extends js.Object {
     */
   def setData(format: String, data: String): Unit = js.native
 }
-

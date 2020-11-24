@@ -1,0 +1,85 @@
+package typings.firebase.mod.firebase.firestore
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait Timestamp extends js.Object {
+  
+  /**
+    * Returns true if this `Timestamp` is equal to the provided one.
+    *
+    * @param other The `Timestamp` to compare against.
+    * @return true if this `Timestamp` is equal to the provided one.
+    */
+  def isEqual(other: Timestamp): Boolean = js.native
+  
+  val nanoseconds: Double = js.native
+  
+  val seconds: Double = js.native
+  
+  /**
+    * Convert a Timestamp to a JavaScript `Date` object. This conversion causes
+    * a loss of precision since `Date` objects only support millisecond precision.
+    *
+    * @return JavaScript `Date` object representing the same point in time as
+    *     this `Timestamp`, with millisecond precision.
+    */
+  def toDate(): Date = js.native
+  
+  /**
+    * Convert a timestamp to a numeric timestamp (in milliseconds since epoch).
+    * This operation causes a loss of precision.
+    *
+    * @return The point in time corresponding to this timestamp, represented as
+    *     the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+    */
+  def toMillis(): Double = js.native
+}
+object Timestamp {
+  
+  @scala.inline
+  def apply(
+    isEqual: Timestamp => Boolean,
+    nanoseconds: Double,
+    seconds: Double,
+    toDate: () => Date,
+    toMillis: () => Double
+  ): Timestamp = {
+    val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], toDate = js.Any.fromFunction0(toDate), toMillis = js.Any.fromFunction0(toMillis))
+    __obj.asInstanceOf[Timestamp]
+  }
+  
+  @scala.inline
+  implicit class TimestampOps[Self <: Timestamp] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setIsEqual(value: Timestamp => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setNanoseconds(value: Double): Self = this.set("nanoseconds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setToDate(value: () => Date): Self = this.set("toDate", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setToMillis(value: () => Double): Self = this.set("toMillis", js.Any.fromFunction0(value))
+  }
+}

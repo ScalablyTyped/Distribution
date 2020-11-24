@@ -11,8 +11,8 @@ The lodash method `_.mapKeys` exported as a module.
 | Full name          | lodash.mapkeys |
 | Keywords           | lodash-modularized, mapkeys |
 | # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 959886 |
+| # dependents       | 46 |
+| # downloads        | 1398922 |
 | # stars            | 0 |
 
 ## Links

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a button control. */
 @js.native
@@ -18,8 +18,8 @@ trait UnoControlButton
      with XAccessible
      with XButton
      with XLayoutConstrains
-
 object UnoControlButton {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -83,4 +83,3 @@ object UnoControlButton {
     __obj.asInstanceOf[UnoControlButton]
   }
 }
-

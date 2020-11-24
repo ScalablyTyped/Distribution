@@ -2,18 +2,21 @@ package typings.rbush.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RBush[T] extends js.Object {
+  
   /**
     * Returns all items contained in the tree.
     */
   def all(): js.Array[T] = js.native
+  
   /**
     * Removes all items.
     */
   def clear(): RBush[T] = js.native
+  
   /**
     * Returns `true` if there are any items intersecting the given bounding
     * box, otherwise `false`.
@@ -21,6 +24,7 @@ trait RBush[T] extends js.Object {
     * @param box The bounding box in which to search.
     */
   def collides(box: BBox): Boolean = js.native
+  
   /**
     * Compares the minimum x coordinate of two items. Returns -1 if `a`'s
     * x-coordinate is smaller, 1 if `b`'s x coordinate is smaller, or 0 if
@@ -44,6 +48,7 @@ trait RBush[T] extends js.Object {
     * @param b The second item to compare.
     */
   def compareMinX(a: T, b: T): Double = js.native
+  
   /**
     * Compares the minimum y coordinate of two items. Returns -1 if `a`'s
     * x-coordinate is smaller, 1 if `b`'s x coordinate is smaller, or 0 if
@@ -67,6 +72,7 @@ trait RBush[T] extends js.Object {
     * @param b The second item to compare.
     */
   def compareMinY(a: T, b: T): Double = js.native
+  
   /**
     * Imports previously exported data into the tree (i.e., data that was
     * emitted by `toJSON()`).
@@ -82,12 +88,14 @@ trait RBush[T] extends js.Object {
     * @param data The previously exported JSON data.
     */
   def fromJSON(data: js.Any): RBush[T] = js.native
+  
   /**
     * Inserts an item. To insert many items at once, use `load()`.
     *
     * @param item The item to insert.
     */
   def insert(item: T): RBush[T] = js.native
+  
   /**
     * Bulk-inserts the given items into the tree.
     *
@@ -104,6 +112,7 @@ trait RBush[T] extends js.Object {
     * @param items The items to load.
     */
   def load(items: js.Array[T]): RBush[T] = js.native
+  
   /**
     * Removes a previously inserted item, comparing by reference.
     *
@@ -116,6 +125,7 @@ trait RBush[T] extends js.Object {
     */
   def remove(item: T): RBush[T] = js.native
   def remove(item: T, equals: js.Function2[/* a */ T, /* b */ T, Boolean]): RBush[T] = js.native
+  
   /**
     * Returns an array of data items (points or rectangles) that the given
     * bounding box intersects.
@@ -126,6 +136,7 @@ trait RBush[T] extends js.Object {
     * @param box The bounding box in which to search.
     */
   def search(box: BBox): js.Array[T] = js.native
+  
   /**
     * Returns the bounding box for the provided item.
     *
@@ -146,6 +157,7 @@ trait RBush[T] extends js.Object {
     * @param item The item whose bounding box should be returned.
     */
   def toBBox(item: T): BBox = js.native
+  
   /**
     * Exports the tree's contents as a JSON object.
     *
@@ -159,4 +171,3 @@ trait RBush[T] extends js.Object {
     */
   def toJSON(): js.Any = js.native
 }
-

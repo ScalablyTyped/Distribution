@@ -5,12 +5,13 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FormulaParser
   extends PropertySet
      with XFormulaParser {
+  
   /**
     * specifies whether to use English parser and formatter.
     *
@@ -18,6 +19,7 @@ trait FormulaParser
     * setting the {@link OpCodeMap} .
     */
   var CompileEnglish: Boolean = js.native
+  
   /**
     * contains a list of external links referenced in formulas.
     *
@@ -26,19 +28,24 @@ trait FormulaParser
     * @since OOo 3.1
     */
   var ExternalLinks: SafeArray[ExternalLinkInfo] = js.native
+  
   /**
     * specifies which address reference style convention to use when parsing a formula string.
     * @see AddressConvention
     */
   var FormulaConvention: Double = js.native
+  
   var IgnoreLeadingSpaces: Boolean = js.native
+  
   /**
     * contains the complete mapping of names to op-codes.
     *
     * Names and symbols not defined here lead to a parser/print error.
     */
   var OpCodeMap: SafeArray[FormulaOpCodeMapEntry] = js.native
+  
   var ParameterSeparator: String = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -46,4 +53,3 @@ trait FormulaParser
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

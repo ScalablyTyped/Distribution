@@ -2,11 +2,12 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "error.throwDecodedError")
 @js.native
 object throwDecodedError extends js.Object {
+  
   def apply(data: String): scala.Nothing = js.native
   /**
     * Throws an error coded from the W3C protocol. A generic error will be thrown
@@ -14,4 +15,3 @@ object throwDecodedError extends js.Object {
     */
   def apply(data: ErrorData): scala.Nothing = js.native
 }
-

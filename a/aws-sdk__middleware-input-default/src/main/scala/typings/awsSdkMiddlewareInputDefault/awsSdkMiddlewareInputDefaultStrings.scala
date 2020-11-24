@@ -2,13 +2,12 @@ package typings.awsSdkMiddlewareInputDefault
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkMiddlewareInputDefaultStrings {
-  @js.native
-  sealed trait InputDefaultArgs extends js.Object
   
   @scala.inline
   def InputDefaultArgs: InputDefaultArgs = "InputDefaultArgs".asInstanceOf[InputDefaultArgs]
+  @js.native
+  sealed trait InputDefaultArgs extends js.Object
 }
-

@@ -5,10 +5,11 @@ import typings.std.RequestInit
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FetchMockSandbox extends FetchMockStatic {
+  
   /**
     * Also callable as fetch(). Use `typeof fetch` in your code to define
     * a field that accepts both `fetch()` and a fetch-mock sandbox.
@@ -20,4 +21,3 @@ trait FetchMockSandbox extends FetchMockStatic {
   def apply(input: Request): js.Promise[Response] = js.native
   def apply(input: Request, init: RequestInit): js.Promise[Response] = js.native
 }
-

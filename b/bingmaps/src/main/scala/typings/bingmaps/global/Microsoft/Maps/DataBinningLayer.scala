@@ -3,7 +3,7 @@ package typings.bingmaps.global.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.IDataBinningOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.DataBinningLayer")
 @js.native
@@ -18,4 +18,3 @@ class DataBinningLayer ()
   def this(pushpins: js.UndefOr[scala.Nothing], options: IDataBinningOptions) = this()
   def this(pushpins: js.Array[typings.bingmaps.Microsoft.Maps.Pushpin], options: IDataBinningOptions) = this()
 }
-

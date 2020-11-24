@@ -4,23 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jsCookie.anon.Read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CookiesStatic[T /* <: js.Object */] extends js.Object {
+  
   /**
     * Allows default cookie attributes to be accessed, changed, or reset
     */
   var defaults: CookieAttributes = js.native
-  /**
-    * If there is any danger of a conflict with the namespace Cookies,
-    * the noConflict method will allow you to define a new namespace
-    * and preserve the original one. This is especially useful when
-    * running the script on third party sites e.g. as part of a widget
-    * or SDK. Note: The noConflict method is not necessary when using
-    * AMD or CommonJS, thus it is not exposed in those environments.
-    */
-  var noConflict: js.UndefOr[js.Function0[CookiesStatic[T]]] = js.native
+  
   /**
     * Read all available cookies
     */
@@ -29,6 +22,7 @@ trait CookiesStatic[T /* <: js.Object */] extends js.Object {
     * Read cookie
     */
   def get(name: String): js.UndefOr[String] = js.native
+  
   /**
     * Returns the parsed representation of
     * all cookies according to JSON.parse
@@ -39,11 +33,23 @@ trait CookiesStatic[T /* <: js.Object */] extends js.Object {
     * stored in the cookie according to JSON.parse
     */
   def getJSON(name: String): js.Any = js.native
+  
+  /**
+    * If there is any danger of a conflict with the namespace Cookies,
+    * the noConflict method will allow you to define a new namespace
+    * and preserve the original one. This is especially useful when
+    * running the script on third party sites e.g. as part of a widget
+    * or SDK. Note: The noConflict method is not necessary when using
+    * AMD or CommonJS, thus it is not exposed in those environments.
+    */
+  var noConflict: js.UndefOr[js.Function0[CookiesStatic[T]]] = js.native
+  
   /**
     * Delete cookie
     */
   def remove(name: String): Unit = js.native
   def remove(name: String, options: CookieAttributes): Unit = js.native
+  
   def set(name: String, value: T): js.UndefOr[String] = js.native
   def set(name: String, value: T, options: CookieAttributes): js.UndefOr[String] = js.native
   /**
@@ -51,6 +57,7 @@ trait CookiesStatic[T /* <: js.Object */] extends js.Object {
     */
   def set(name: String, value: String): js.UndefOr[String] = js.native
   def set(name: String, value: String, options: CookieAttributes): js.UndefOr[String] = js.native
+  
   def withConverter[TConv /* <: js.Object */](converter: Read[TConv]): CookiesStatic[TConv] = js.native
   /**
     * Create a new instance of the api that overrides the default
@@ -61,4 +68,3 @@ trait CookiesStatic[T /* <: js.Object */] extends js.Object {
     */
   def withConverter[TConv /* <: js.Object */](converter: CookieReadConverter): CookiesStatic[TConv] = js.native
 }
-

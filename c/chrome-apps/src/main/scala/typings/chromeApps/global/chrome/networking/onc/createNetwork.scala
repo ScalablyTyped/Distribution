@@ -5,11 +5,12 @@ import typings.chromeApps.chromeAppsBooleans.`false`
 import typings.chromeApps.chromeAppsStrings.setter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.networking.onc.createNetwork")
 @js.native
 object createNetwork extends js.Object {
+  
   /**
     * Creates a new network configuration from properties.
     * If a matching configured network already exists, this will fail.
@@ -23,4 +24,3 @@ object createNetwork extends js.Object {
   def apply(shared: `false`, properties: NetworkConfigProperties[setter]): Unit = js.native
   def apply(shared: `false`, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = js.native
 }
-

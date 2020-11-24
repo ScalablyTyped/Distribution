@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/libraryagent/v1", "libraryagent_v1.Resource$Shelves$Books")
 @js.native
 class ResourceShelvesBooks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * libraryagent.shelves.books.borrow
     * @desc Borrow a book from the library. Returns the book if it is borrowed
@@ -47,6 +47,9 @@ class ResourceShelvesBooks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * libraryagent.shelves.books.get
     * @desc Gets a book. Returns NOT_FOUND if the book does not exist.
@@ -78,6 +81,7 @@ class ResourceShelvesBooks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
   ): Unit = js.native
+  
   /**
     * libraryagent.shelves.books.list
     * @desc Lists books in a shelf. The order is unspecified but deterministic.
@@ -113,6 +117,7 @@ class ResourceShelvesBooks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListBooksResponse]
   ): Unit = js.native
+  
   /**
     * libraryagent.shelves.books.return
     * @desc Return a book to the library. Returns the book if it is returned to
@@ -147,4 +152,3 @@ class ResourceShelvesBooks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
   ): Unit = js.native
 }
-

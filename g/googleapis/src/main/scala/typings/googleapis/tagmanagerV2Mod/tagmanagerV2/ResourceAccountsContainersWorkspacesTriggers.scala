@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Triggers")
 @js.native
 class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.triggers.create
     * @desc Creates a GTM Trigger.
@@ -45,6 +47,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrigger]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.triggers.delete
     * @desc Deletes a GTM Trigger.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.triggers.get
     * @desc Gets a GTM Trigger.
@@ -107,6 +111,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrigger]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.triggers.list
     * @desc Lists all GTM Triggers of a Container.
@@ -139,6 +144,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTriggersResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.triggers.revert
     * @desc Reverts changes to a GTM Trigger in a GTM Workspace.
@@ -171,6 +177,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevertTriggerResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.triggers.update
     * @desc Updates a GTM Trigger.
@@ -205,4 +212,3 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends js.Objec
     callback: BodyResponseCallback[SchemaTrigger]
   ): Unit = js.native
 }
-

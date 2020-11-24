@@ -2,7 +2,7 @@ package typings.backbone.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper to avoid code repetition in type declarations.
@@ -17,14 +17,18 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone", "EventsMixin")
 @js.native
 abstract class EventsMixin () extends js.Object {
+  
   def bind(eventMap: EventMap): this.type = js.native
   def bind(eventMap: EventMap, context: js.Any): this.type = js.native
   def bind(eventName: String, callback: EventHandler): this.type = js.native
   def bind(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+  
   def listenTo(`object`: js.Any, eventMap: EventMap): this.type = js.native
   def listenTo(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
+  
   def listenToOnce(`object`: js.Any, eventMap: EventMap): this.type = js.native
   def listenToOnce(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
+  
   def off(): this.type = js.native
   def off(eventName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def off(eventName: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
@@ -33,14 +37,17 @@ abstract class EventsMixin () extends js.Object {
   def off(eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def off(eventName: String, callback: EventHandler): this.type = js.native
   def off(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+  
   def on(eventMap: EventMap): this.type = js.native
   def on(eventMap: EventMap, context: js.Any): this.type = js.native
   def on(eventName: String, callback: EventHandler): this.type = js.native
   def on(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+  
   def once(eventMap: EventMap): this.type = js.native
   def once(eventMap: EventMap, context: js.Any): this.type = js.native
   def once(events: String, callback: EventHandler): this.type = js.native
   def once(events: String, callback: EventHandler, context: js.Any): this.type = js.native
+  
   def stopListening(): this.type = js.native
   def stopListening(`object`: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
   def stopListening(`object`: js.UndefOr[scala.Nothing], events: String): this.type = js.native
@@ -49,7 +56,9 @@ abstract class EventsMixin () extends js.Object {
   def stopListening(`object`: js.Any, events: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
   def stopListening(`object`: js.Any, events: String): this.type = js.native
   def stopListening(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
+  
   def trigger(eventName: String, args: js.Any*): this.type = js.native
+  
   def unbind(): this.type = js.native
   def unbind(eventName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def unbind(eventName: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
@@ -59,4 +68,3 @@ abstract class EventsMixin () extends js.Object {
   def unbind(eventName: String, callback: EventHandler): this.type = js.native
   def unbind(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
 }
-

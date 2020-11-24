@@ -3,16 +3,15 @@ package typings.typescriptCollections
 import typings.typescriptCollections.utilMod.ILoopFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/Bag", JSImport.Namespace)
 @js.native
 object bagMod extends js.Object {
+  
   @js.native
   trait Bag[T] extends js.Object {
-    var dictionary: js.Any = js.native
-    var nElements: js.Any = js.native
-    var toStrF: js.Any = js.native
+    
     /**
       * Adds nCopies of the specified object to this bag.
       * @param {Object} element element to add.
@@ -22,10 +21,12 @@ object bagMod extends js.Object {
       */
     def add(element: T): Boolean = js.native
     def add(element: T, nCopies: Double): Boolean = js.native
+    
     /**
       * Removes all of the elements from this bag.
       */
     def clear(): Unit = js.native
+    
     /**
       * Returns true if this bag contains the specified element.
       * @param {Object} element element to search for.
@@ -33,12 +34,16 @@ object bagMod extends js.Object {
       * false otherwise.
       */
     def contains(element: T): Boolean = js.native
+    
     /**
       * Counts the number of copies of the specified object in this bag.
       * @param {Object} element the object to search for..
       * @return {number} the number of copies of the object, 0 if not found
       */
     def count(element: T): Double = js.native
+    
+    var dictionary: js.Any = js.native
+    
     /**
       * Executes the provided function once for each element
       * present in this bag, including multiple copies.
@@ -47,11 +52,15 @@ object bagMod extends js.Object {
       * optionally return false.
       */
     def forEach(callback: ILoopFunction[T]): Unit = js.native
+    
     /**
       * Returns true if this bag contains no elements.
       * @return {boolean} true if this bag contains no elements.
       */
     def isEmpty(): Boolean = js.native
+    
+    var nElements: js.Any = js.native
+    
     /**
       * Removes nCopies of the specified object to this bag.
       * If the number of copies to remove is greater than the actual number
@@ -63,22 +72,27 @@ object bagMod extends js.Object {
       */
     def remove(element: T): Boolean = js.native
     def remove(element: T, nCopies: Double): Boolean = js.native
+    
     /**
       * Returns the number of elements in this bag.
       * @return {number} the number of elements in this bag.
       */
     def size(): Double = js.native
+    
     /**
       * Returns an array containing all of the elements in this big in arbitrary order,
       * including multiple copies.
       * @return {Array} an array containing all of the elements in this bag.
       */
     def toArray(): js.Array[T] = js.native
+    
     /**
       * Returns a set of unique elements in this bag.
       * @return {collections.Set<T>} a set of unique elements in this bag.
       */
     def toSet(): typings.typescriptCollections.setMod.default[T] = js.native
+    
+    var toStrF: js.Any = js.native
   }
   
   @js.native
@@ -104,6 +118,4 @@ object bagMod extends js.Object {
   class default[T] () extends Bag[T] {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
-  
 }
-

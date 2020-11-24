@@ -5,7 +5,7 @@ import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.StoriesStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asana", "resources.Stories")
 @js.native
@@ -16,8 +16,6 @@ class ^ protected ()
     */
   def this(dispatcher: Dispatcher) = this()
 }
-
 @JSImport("asana", "resources.Stories")
 @js.native
 object ^ extends TopLevel[StoriesStatic]
-

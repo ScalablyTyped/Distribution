@@ -10,9 +10,9 @@ Cycle through the items of an array
 | ------------------ | :-------------: |
 | Full name          | cycled |
 | Keywords           | cycle, cycled, iterable, iterables, array, item, next, previous, loop, repeat, value, values, iterator |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 10262 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 23969 |
 | # stars            | 0 |
 
 ## Links

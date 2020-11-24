@@ -11,8 +11,8 @@ Transform into a lower case string with a period between words
 | Full name          | dot-case |
 | Keywords           | dot, case, period, full, stop, convert, transform |
 | # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 42927675 |
+| # dependents       | 9 |
+| # downloads        | 125824478 |
 | # stars            | 0 |
 
 ## Links

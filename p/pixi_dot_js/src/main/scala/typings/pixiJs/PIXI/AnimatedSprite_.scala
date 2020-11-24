@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An AnimatedSprite is a simple way to display an animation depicted by a list of textures.
@@ -39,6 +39,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AnimatedSprite_ extends Sprite {
+  
   /**
     * The speed that the AnimatedSprite will play at. Higher is faster, lower is slower.
     *
@@ -46,12 +47,14 @@ trait AnimatedSprite_ extends Sprite {
     * @default 1
     */
   var animationSpeed: Double = js.native
+  
   /**
     * Whether to use PIXI.Ticker.shared to auto update animation time
     *
     * @member {boolean}
     */
   var autoUpdate: Boolean = js.native
+  
   /**
     * The AnimatedSprites current frame index.
     *
@@ -59,6 +62,21 @@ trait AnimatedSprite_ extends Sprite {
     * @readonly
     */
   val currentFrame: Double = js.native
+  
+  /**
+    * Goes to a specific frame and begins playing the AnimatedSprite.
+    *
+    * @param {number} frameNumber - Frame index to start at.
+    */
+  def gotoAndPlay(frameNumber: Double): Unit = js.native
+  
+  /**
+    * Stops the AnimatedSprite and goes to a specific frame.
+    *
+    * @param {number} frameNumber - Frame index to stop at.
+    */
+  def gotoAndStop(frameNumber: Double): Unit = js.native
+  
   /**
     * Whether or not the animate sprite repeats after playing.
     *
@@ -66,6 +84,47 @@ trait AnimatedSprite_ extends Sprite {
     * @default true
     */
   var loop: Boolean = js.native
+  
+  /**
+    * User-assigned function to call when an AnimatedSprite finishes playing.
+    *
+    * @example
+    * animation.onComplete = function () {
+    *   // finished!
+    * };
+    * @member {Function} PIXI.AnimatedSprite#onComplete
+    */
+  def onComplete(params: js.Any*): js.Any = js.native
+  
+  /**
+    * User-assigned function to call when an AnimatedSprite changes which texture is being rendered.
+    *
+    * @example
+    * animation.onFrameChange = function () {
+    *   // updated!
+    * };
+    * @member {Function} PIXI.AnimatedSprite#onFrameChange
+    */
+  def onFrameChange(params: js.Any*): js.Any = js.native
+  
+  /**
+    * User-assigned function to call when `loop` is true, and an AnimatedSprite is played and
+    * loops around to start again.
+    *
+    * @example
+    * animation.onLoop = function () {
+    *   // looped!
+    * };
+    * @member {Function} PIXI.AnimatedSprite#onLoop
+    */
+  def onLoop(params: js.Any*): js.Any = js.native
+  
+  /**
+    * Plays the AnimatedSprite.
+    *
+    */
+  def play(): Unit = js.native
+  
   /**
     * Indicates if the AnimatedSprite is currently playing.
     *
@@ -73,12 +132,20 @@ trait AnimatedSprite_ extends Sprite {
     * @readonly
     */
   val playing: Boolean = js.native
+  
+  /**
+    * Stops the AnimatedSprite.
+    *
+    */
+  def stop(): Unit = js.native
+  
   /**
     * The array of textures used for this AnimatedSprite.
     *
     * @member {PIXI.Texture[]}
     */
   var textures: js.Array[Texture] = js.native
+  
   /**
     * The total number of frames in the AnimatedSprite. This is the same as number of textures
     * assigned to the AnimatedSprite.
@@ -88,6 +155,14 @@ trait AnimatedSprite_ extends Sprite {
     * @default 0
     */
   val totalFrames: Double = js.native
+  
+  /**
+    * Updates the object transform for rendering.
+    *
+    * @param {number} deltaTime - Time since last tick.
+    */
+  def update(deltaTime: Double): Unit = js.native
+  
   /**
     * Update anchor to [Texture's defaultAnchor]{@link PIXI.Texture#defaultAnchor} when frame changes.
     *
@@ -101,64 +176,4 @@ trait AnimatedSprite_ extends Sprite {
     * @default false
     */
   var updateAnchor: Boolean = js.native
-  /**
-    * Goes to a specific frame and begins playing the AnimatedSprite.
-    *
-    * @param {number} frameNumber - Frame index to start at.
-    */
-  def gotoAndPlay(frameNumber: Double): Unit = js.native
-  /**
-    * Stops the AnimatedSprite and goes to a specific frame.
-    *
-    * @param {number} frameNumber - Frame index to stop at.
-    */
-  def gotoAndStop(frameNumber: Double): Unit = js.native
-  /**
-    * User-assigned function to call when an AnimatedSprite finishes playing.
-    *
-    * @example
-    * animation.onComplete = function () {
-    *   // finished!
-    * };
-    * @member {Function} PIXI.AnimatedSprite#onComplete
-    */
-  def onComplete(params: js.Any*): js.Any = js.native
-  /**
-    * User-assigned function to call when an AnimatedSprite changes which texture is being rendered.
-    *
-    * @example
-    * animation.onFrameChange = function () {
-    *   // updated!
-    * };
-    * @member {Function} PIXI.AnimatedSprite#onFrameChange
-    */
-  def onFrameChange(params: js.Any*): js.Any = js.native
-  /**
-    * User-assigned function to call when `loop` is true, and an AnimatedSprite is played and
-    * loops around to start again.
-    *
-    * @example
-    * animation.onLoop = function () {
-    *   // looped!
-    * };
-    * @member {Function} PIXI.AnimatedSprite#onLoop
-    */
-  def onLoop(params: js.Any*): js.Any = js.native
-  /**
-    * Plays the AnimatedSprite.
-    *
-    */
-  def play(): Unit = js.native
-  /**
-    * Stops the AnimatedSprite.
-    *
-    */
-  def stop(): Unit = js.native
-  /**
-    * Updates the object transform for rendering.
-    *
-    * @param {number} deltaTime - Time since last tick.
-    */
-  def update(deltaTime: Double): Unit = js.native
 }
-

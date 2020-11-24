@@ -3,23 +3,43 @@ package typings.devextreme.mod.DevExpress.viz
 import typings.devextreme.mod.DevExpress.data.DataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxTreeMap extends BaseWidget {
-  /** @name dxTreeMap.clearSelection() */
+  
+  /**
+    * [descr:dxTreeMap.clearSelection()]
+    */
   def clearSelection(): Unit = js.native
-  /** @name dxTreeMap.drillUp() */
+  
+  /**
+    * [descr:dxTreeMap.drillUp()]
+    */
   def drillUp(): Unit = js.native
-  /** @name dxTreeMap.getCurrentNode() */
+  
+  /**
+    * [descr:dxTreeMap.getCurrentNode()]
+    */
   def getCurrentNode(): dxTreeMapNode = js.native
-  /** @name DataHelperMixin.getDataSource() */
+  
+  /**
+    * [descr:DataHelperMixin.getDataSource()]
+    */
   def getDataSource(): DataSource = js.native
-  /** @name dxTreeMap.getRootNode() */
+  
+  /**
+    * [descr:dxTreeMap.getRootNode()]
+    */
   def getRootNode(): dxTreeMapNode = js.native
-  /** @name dxTreeMap.hideTooltip() */
+  
+  /**
+    * [descr:dxTreeMap.hideTooltip()]
+    */
   def hideTooltip(): Unit = js.native
-  /** @name dxTreeMap.resetDrillDown() */
+  
+  /**
+    * [descr:dxTreeMap.resetDrillDown()]
+    */
   def resetDrillDown(): Unit = js.native
 }
-

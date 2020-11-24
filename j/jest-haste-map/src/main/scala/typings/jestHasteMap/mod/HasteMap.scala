@@ -4,7 +4,7 @@ import typings.jestHasteMap.moduleMapMod.default
 import typings.jestHasteMap.typesMod.InternalHasteMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HasteMap is a JavaScript implementation of Facebook's haste module system.
@@ -87,36 +87,52 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventEmitter * / any */ @js.native
 trait HasteMap extends js.Object {
+  
   /**
     * 2. crawl the file system.
     */
   var _buildFileMap: js.Any = js.native
+  
   var _buildHasteMap: js.Any = js.native
+  
   var _buildPromise: js.Any = js.native
+  
   var _cachePath: js.Any = js.native
+  
   var _changeInterval: js.Any = js.native
+  
   var _cleanup: js.Any = js.native
+  
   var _console: js.Any = js.native
+  
   var _crawl: js.Any = js.native
+  
   var _createEmptyMap: js.Any = js.native
+  
   /**
     * Creates workers or parses files and extracts metadata in-process.
     */
   var _getWorker: js.Any = js.native
+  
   /**
     * Helpers
     */
   var _ignore: js.Any = js.native
+  
   var _isNodeModulesDir: js.Any = js.native
+  
   var _options: js.Any = js.native
+  
   /**
     * 4. serialize the new `HasteMap` in a cache file.
     */
   var _persist: js.Any = js.native
+  
   /**
     * 3. parse and extract metadata from changed files.
     */
   var _processFile: js.Any = js.native
+  
   /**
     * This function should be called when the file under `filePath` is removed
     * or changed. When that happens, we want to figure out if that file was
@@ -126,24 +142,33 @@ trait HasteMap extends js.Object {
     * correct resolution for its ID, and cleanup the duplicates index.
     */
   var _recoverDuplicates: js.Any = js.native
+  
   /**
     * Watch mode
     */
   var _watch: js.Any = js.native
+  
   var _watchers: js.Any = js.native
+  
   var _whitelist: js.Any = js.native
+  
   var _worker: js.Any = js.native
+  
   def build(): js.Promise[typings.jestHasteMap.typesMod.HasteMap] = js.native
+  
   def end(): js.Promise[Unit] = js.native
+  
   def getCacheFilePath(): String = js.native
+  
   /**
     * 1. read data from the cache or create an empty structure.
     */
   def read(): InternalHasteMap = js.native
+  
   def readModuleMap(): default = js.native
 }
-
 object HasteMap {
+  
   @scala.inline
   def apply(
     _buildFileMap: js.Any,
@@ -175,68 +200,95 @@ object HasteMap {
     val __obj = js.Dynamic.literal(_buildFileMap = _buildFileMap.asInstanceOf[js.Any], _buildHasteMap = _buildHasteMap.asInstanceOf[js.Any], _buildPromise = _buildPromise.asInstanceOf[js.Any], _cachePath = _cachePath.asInstanceOf[js.Any], _changeInterval = _changeInterval.asInstanceOf[js.Any], _cleanup = _cleanup.asInstanceOf[js.Any], _console = _console.asInstanceOf[js.Any], _crawl = _crawl.asInstanceOf[js.Any], _createEmptyMap = _createEmptyMap.asInstanceOf[js.Any], _getWorker = _getWorker.asInstanceOf[js.Any], _ignore = _ignore.asInstanceOf[js.Any], _isNodeModulesDir = _isNodeModulesDir.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _persist = _persist.asInstanceOf[js.Any], _processFile = _processFile.asInstanceOf[js.Any], _recoverDuplicates = _recoverDuplicates.asInstanceOf[js.Any], _watch = _watch.asInstanceOf[js.Any], _watchers = _watchers.asInstanceOf[js.Any], _whitelist = _whitelist.asInstanceOf[js.Any], _worker = _worker.asInstanceOf[js.Any], build = js.Any.fromFunction0(build), end = js.Any.fromFunction0(end), getCacheFilePath = js.Any.fromFunction0(getCacheFilePath), read = js.Any.fromFunction0(read), readModuleMap = js.Any.fromFunction0(readModuleMap))
     __obj.asInstanceOf[HasteMap]
   }
+  
   @scala.inline
   implicit class HasteMapOps[Self <: HasteMap] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set_buildFileMap(value: js.Any): Self = this.set("_buildFileMap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_buildHasteMap(value: js.Any): Self = this.set("_buildHasteMap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_buildPromise(value: js.Any): Self = this.set("_buildPromise", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_cachePath(value: js.Any): Self = this.set("_cachePath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_changeInterval(value: js.Any): Self = this.set("_changeInterval", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_cleanup(value: js.Any): Self = this.set("_cleanup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_console(value: js.Any): Self = this.set("_console", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_crawl(value: js.Any): Self = this.set("_crawl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_createEmptyMap(value: js.Any): Self = this.set("_createEmptyMap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_getWorker(value: js.Any): Self = this.set("_getWorker", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_ignore(value: js.Any): Self = this.set("_ignore", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_isNodeModulesDir(value: js.Any): Self = this.set("_isNodeModulesDir", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_options(value: js.Any): Self = this.set("_options", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_persist(value: js.Any): Self = this.set("_persist", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_processFile(value: js.Any): Self = this.set("_processFile", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_recoverDuplicates(value: js.Any): Self = this.set("_recoverDuplicates", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_watch(value: js.Any): Self = this.set("_watch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_watchers(value: js.Any): Self = this.set("_watchers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_whitelist(value: js.Any): Self = this.set("_whitelist", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set_worker(value: js.Any): Self = this.set("_worker", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBuild(value: () => js.Promise[typings.jestHasteMap.typesMod.HasteMap]): Self = this.set("build", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setEnd(value: () => js.Promise[Unit]): Self = this.set("end", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCacheFilePath(value: () => String): Self = this.set("getCacheFilePath", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRead(value: () => InternalHasteMap): Self = this.set("read", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setReadModuleMap(value: () => default): Self = this.set("readModuleMap", js.Any.fromFunction0(value))
   }
-  
 }
-

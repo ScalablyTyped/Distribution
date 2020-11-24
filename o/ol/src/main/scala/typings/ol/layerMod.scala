@@ -1,17 +1,24 @@
 package typings.ol
 
-import typings.ol.groupMod.Options
-import typings.ol.groupMod.default
+import typings.ol.graticuleMod.Options
+import typings.ol.graticuleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/layer", JSImport.Namespace)
 @js.native
 object layerMod extends js.Object {
+  
   @js.native
-  class Group () extends default {
+  class Graticule () extends default {
     def this(opt_options: Options) = this()
+  }
+  
+  @js.native
+  class Group ()
+    extends typings.ol.groupMod.default {
+    def this(opt_options: typings.ol.groupMod.Options) = this()
   }
   
   @js.native
@@ -30,6 +37,12 @@ object layerMod extends js.Object {
   class Layer[SourceType /* <: typings.ol.sourceSourceMod.default */] protected ()
     extends typings.ol.layerLayerMod.default[SourceType] {
     def this(options: typings.ol.layerLayerMod.Options) = this()
+  }
+  
+  @js.native
+  class MapboxVector protected ()
+    extends typings.ol.mapboxVectorMod.default {
+    def this(options: typings.ol.mapboxVectorMod.Options) = this()
   }
   
   @js.native
@@ -56,5 +69,9 @@ object layerMod extends js.Object {
     def this(opt_options: typings.ol.vectorTileMod.Options) = this()
   }
   
+  @js.native
+  class WebGLPoints protected ()
+    extends typings.ol.webGLPointsMod.default {
+    def this(options: typings.ol.webGLPointsMod.Options) = this()
+  }
 }
-

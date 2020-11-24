@@ -3,46 +3,49 @@ package typings.phaser.Phaser.Math
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A four-dimensional matrix.
   */
 @js.native
 trait Matrix4 extends js.Object {
-  /**
-    * The matrix values.
-    */
-  var `val`: Float32Array = js.native
+  
   /**
     * Calculate the adjoint, or adjugate, of this Matrix.
     */
   def adjoint(): Matrix4 = js.native
+  
   /**
     * Copy the values of a given Matrix into this Matrix.
     * @param src The Matrix to copy the values from.
     */
   def copy(src: Matrix4): Matrix4 = js.native
+  
   /**
     * Calculate the determinant of this Matrix.
     */
   def determinant(): Double = js.native
+  
   /**
     * Set the values of this Matrix from the given array.
     * @param a The array to copy the values from.
     */
   def fromArray(a: js.Array[_]): Matrix4 = js.native
+  
   /**
     * Set the values of this Matrix from the given Quaternion.
     * @param q The Quaternion to set the values of this Matrix from.
     */
   def fromQuat(q: Quaternion): Matrix4 = js.native
+  
   /**
     * Set the values of this Matrix from the given rotation Quaternion and translation Vector.
     * @param q The Quaternion to set rotation from.
     * @param v The Vector to set translation from.
     */
   def fromRotationTranslation(q: Quaternion, v: Vector3): Matrix4 = js.native
+  
   /**
     * Generate a frustum matrix with the given bounds.
     * @param left The left bound of the frustum.
@@ -53,14 +56,17 @@ trait Matrix4 extends js.Object {
     * @param far The far bound of the frustum.
     */
   def frustum(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): Matrix4 = js.native
+  
   /**
     * Reset this Matrix to an identity (default) matrix.
     */
   def identity(): Matrix4 = js.native
+  
   /**
     * Invert this Matrix.
     */
   def invert(): Matrix4 = js.native
+  
   /**
     * Generate a look-at matrix with the given eye position, focal point, and up axis.
     * @param eye Position of the viewer
@@ -68,6 +74,7 @@ trait Matrix4 extends js.Object {
     * @param up vec3 pointing up.
     */
   def lookAt(eye: Vector3, center: Vector3, up: Vector3): Matrix4 = js.native
+  
   /**
     * Derive a rotation matrix around the given axis.
     * @param axis The rotation axis.
@@ -75,16 +82,19 @@ trait Matrix4 extends js.Object {
     */
   def makeRotationAxis(axis: Vector3, angle: Double): Matrix4 = js.native
   def makeRotationAxis(axis: Vector4, angle: Double): Matrix4 = js.native
+  
   /**
     * Multiply this Matrix by the given Matrix.
     * @param src The Matrix to multiply this Matrix by.
     */
   def multiply(src: Matrix4): Matrix4 = js.native
+  
   /**
     * Multiply the values of this Matrix4 by those given in the `src` argument.
     * @param src The source Matrix4 that this Matrix4 is multiplied by.
     */
   def multiplyLocal(src: Matrix4): Matrix4 = js.native
+  
   /**
     * Generate an orthogonal projection matrix with the given bounds.
     * @param left The left bound of the frustum.
@@ -95,6 +105,7 @@ trait Matrix4 extends js.Object {
     * @param far The far bound of the frustum.
     */
   def ortho(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): Matrix4 = js.native
+  
   /**
     * Generate a perspective projection matrix with the given bounds.
     * @param fovy Vertical field of view in radians
@@ -103,6 +114,7 @@ trait Matrix4 extends js.Object {
     * @param far Far bound of the frustum.
     */
   def perspective(fovy: Double, aspect: Double, near: Double, far: Double): Matrix4 = js.native
+  
   /**
     * Generate a perspective projection matrix with the given bounds.
     * @param width The width of the frustum.
@@ -111,27 +123,32 @@ trait Matrix4 extends js.Object {
     * @param far Far bound of the frustum.
     */
   def perspectiveLH(width: Double, height: Double, near: Double, far: Double): Matrix4 = js.native
+  
   /**
     * Apply a rotation transformation to this Matrix.
     * @param rad The angle in radians to rotate by.
     * @param axis The axis to rotate upon.
     */
   def rotate(rad: Double, axis: Vector3): Matrix4 = js.native
+  
   /**
     * Rotate this matrix on its X axis.
     * @param rad The angle in radians to rotate by.
     */
   def rotateX(rad: Double): Matrix4 = js.native
+  
   /**
     * Rotate this matrix on its Y axis.
     * @param rad The angle to rotate by, in radians.
     */
   def rotateY(rad: Double): Matrix4 = js.native
+  
   /**
     * Rotate this matrix on its Z axis.
     * @param rad The angle to rotate by, in radians.
     */
   def rotateZ(rad: Double): Matrix4 = js.native
+  
   /**
     * Apply a scale transformation to this Matrix.
     * 
@@ -140,6 +157,7 @@ trait Matrix4 extends js.Object {
     */
   def scale(v: Vector3): Matrix4 = js.native
   def scale(v: Vector4): Matrix4 = js.native
+  
   /**
     * Apply a scale transformation to this Matrix.
     * @param x The x component.
@@ -147,6 +165,7 @@ trait Matrix4 extends js.Object {
     * @param z The z component.
     */
   def scaleXYZ(x: Double, y: Double, z: Double): Matrix4 = js.native
+  
   /**
     * Set the scaling values of this Matrix.
     * @param x The x scaling value.
@@ -154,11 +173,13 @@ trait Matrix4 extends js.Object {
     * @param z The z scaling value.
     */
   def scaling(x: Double, y: Double, z: Double): Matrix4 = js.native
+  
   /**
     * This method is an alias for `Matrix4.copy`.
     * @param src The Matrix to set the values of this Matrix's from.
     */
   def set(src: Matrix4): Matrix4 = js.native
+  
   /**
     * Generate a world matrix from the given rotation, position, scale, view matrix and projection matrix.
     * @param rotation The rotation of the world matrix.
@@ -183,12 +204,14 @@ trait Matrix4 extends js.Object {
     viewMatrix: Matrix4,
     projectionMatrix: Matrix4
   ): Matrix4 = js.native
+  
   /**
     * Translate this Matrix using the given Vector.
     * @param v The Vector to translate this Matrix with.
     */
   def translate(v: Vector3): Matrix4 = js.native
   def translate(v: Vector4): Matrix4 = js.native
+  
   /**
     * Translate this Matrix using the given values.
     * @param x The x component.
@@ -196,10 +219,17 @@ trait Matrix4 extends js.Object {
     * @param z The z component.
     */
   def translateXYZ(x: Double, y: Double, z: Double): Matrix4 = js.native
+  
   /**
     * Transpose this Matrix.
     */
   def transpose(): Matrix4 = js.native
+  
+  /**
+    * The matrix values.
+    */
+  var `val`: Float32Array = js.native
+  
   /**
     * Set the `x`, `y` and `z` values of this Matrix.
     * @param x The x value.
@@ -207,6 +237,7 @@ trait Matrix4 extends js.Object {
     * @param z The z value.
     */
   def xyz(x: Double, y: Double, z: Double): Matrix4 = js.native
+  
   /**
     * Set the values of this matrix from the given `yaw`, `pitch` and `roll` values.
     * @param yaw The yaw value.
@@ -214,6 +245,7 @@ trait Matrix4 extends js.Object {
     * @param roll The roll value.
     */
   def yawPitchRoll(yaw: Double, pitch: Double, roll: Double): Matrix4 = js.native
+  
   /**
     * Reset this Matrix.
     * 
@@ -221,4 +253,3 @@ trait Matrix4 extends js.Object {
     */
   def zero(): Matrix4 = js.native
 }
-

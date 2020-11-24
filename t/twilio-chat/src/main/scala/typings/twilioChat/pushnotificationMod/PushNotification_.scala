@@ -4,7 +4,7 @@ import typings.twilioChat.pushnotificationMod.PushNotification.Descriptor
 import typings.twilioChat.pushnotificationMod.PushNotification.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc Push notification representation within Chat Client
@@ -35,12 +35,18 @@ class PushNotification_ protected () extends js.Object {
     * @param {PushNotification.Descriptor} data - initial data for PushNotification
     */
   def this(data: Descriptor) = this()
+  
   val action: String = js.native
+  
   val badge: Double = js.native
+  
   val body: String = js.native
+  
   val data: js.Object = js.native
+  
   val sound: String = js.native
+  
   val title: String = js.native
+  
   val `type`: Type = js.native
 }
-

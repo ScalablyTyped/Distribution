@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/types/CreateAliasExceptionsUnion", JSImport.Namespace)
 @js.native
 object createAliasExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException
     - typings.awsSdkClientKmsNode.typesAlreadyExistsExceptionMod.AlreadyExistsException
@@ -17,6 +18,4 @@ object createAliasExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException
   */
   trait CreateAliasExceptionsUnion extends js.Object
-  
 }
-

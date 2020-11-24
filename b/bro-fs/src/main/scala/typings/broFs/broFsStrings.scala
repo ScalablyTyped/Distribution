@@ -3,9 +3,28 @@ package typings.broFs
 import typings.broFs.mod.TextType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object broFsStrings {
+  
+  @scala.inline
+  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
+  
+  @scala.inline
+  def BinaryString: BinaryString = "BinaryString".asInstanceOf[BinaryString]
+  
+  @scala.inline
+  def Blob: Blob = "Blob".asInstanceOf[Blob]
+  
+  @scala.inline
+  def DataURL: DataURL = "DataURL".asInstanceOf[DataURL]
+  
+  @scala.inline
+  def File: File = "File".asInstanceOf[File]
+  
+  @scala.inline
+  def Text: Text = "Text".asInstanceOf[Text]
+  
   @js.native
   sealed trait ArrayBuffer extends js.Object
   
@@ -23,18 +42,4 @@ object broFsStrings {
   
   @js.native
   sealed trait Text extends TextType
-  
-  @scala.inline
-  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
-  @scala.inline
-  def BinaryString: BinaryString = "BinaryString".asInstanceOf[BinaryString]
-  @scala.inline
-  def Blob: Blob = "Blob".asInstanceOf[Blob]
-  @scala.inline
-  def DataURL: DataURL = "DataURL".asInstanceOf[DataURL]
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
-  @scala.inline
-  def Text: Text = "Text".asInstanceOf[Text]
 }
-

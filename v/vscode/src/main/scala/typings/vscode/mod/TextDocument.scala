@@ -4,58 +4,23 @@ import typings.std.RegExp
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextDocument extends ConfigurationScope {
+  
   /**
     * The [end of line](#EndOfLine) sequence that is predominately
     * used in this document.
     */
   val eol: EndOfLine = js.native
+  
   /**
     * The file system path of the associated resource. Shorthand
     * notation for [TextDocument.uri.fsPath](#TextDocument.uri). Independent of the uri scheme.
     */
   val fileName: String = js.native
-  /**
-    * `true` if the document has been closed. A closed document isn't synchronized anymore
-    * and won't be re-used when the same resource is opened again.
-    */
-  val isClosed: Boolean = js.native
-  /**
-    * `true` if there are unpersisted changes.
-    */
-  val isDirty: Boolean = js.native
-  /**
-    * Is this document representing an untitled file which has never been saved yet. *Note* that
-    * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
-    * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
-    */
-  val isUntitled: Boolean = js.native
-  /**
-    * The identifier of the language associated with this document.
-    */
-  val languageId: String = js.native
-  /**
-    * The number of lines in this document.
-    */
-  val lineCount: Double = js.native
-  /**
-    * The associated uri for this document.
-    *
-    * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
-    * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
-    *
-    * @see [FileSystemProvider](#FileSystemProvider)
-    * @see [TextDocumentContentProvider](#TextDocumentContentProvider)
-    */
-  val uri: Uri = js.native
-  /**
-    * The version number of this document (it will strictly increase after each
-    * change, including undo/redo).
-    */
-  val version: Double = js.native
+  
   /**
     * Get the text of this document. A substring can be retrieved by providing
     * a range. The range will be [adjusted](#TextDocument.validateRange).
@@ -65,6 +30,7 @@ trait TextDocument extends ConfigurationScope {
     */
   def getText(): String = js.native
   def getText(range: Range): String = js.native
+  
   /**
     * Get a word-range at the given position. By default words are defined by
     * common separators, like space, -, _, etc. In addition, per language custom
@@ -85,6 +51,30 @@ trait TextDocument extends ConfigurationScope {
     */
   def getWordRangeAtPosition(position: Position): js.UndefOr[Range] = js.native
   def getWordRangeAtPosition(position: Position, regex: RegExp): js.UndefOr[Range] = js.native
+  
+  /**
+    * `true` if the document has been closed. A closed document isn't synchronized anymore
+    * and won't be re-used when the same resource is opened again.
+    */
+  val isClosed: Boolean = js.native
+  
+  /**
+    * `true` if there are unpersisted changes.
+    */
+  val isDirty: Boolean = js.native
+  
+  /**
+    * Is this document representing an untitled file which has never been saved yet. *Note* that
+    * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
+    * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
+    */
+  val isUntitled: Boolean = js.native
+  
+  /**
+    * The identifier of the language associated with this document.
+    */
+  val languageId: String = js.native
+  
   /**
     * Returns a text line denoted by the line number. Note
     * that the returned object is *not* live and changes to the
@@ -106,6 +96,12 @@ trait TextDocument extends ConfigurationScope {
     * @return A [line](#TextLine).
     */
   def lineAt(position: Position): TextLine = js.native
+  
+  /**
+    * The number of lines in this document.
+    */
+  val lineCount: Double = js.native
+  
   /**
     * Converts the position to a zero-based offset.
     *
@@ -115,6 +111,7 @@ trait TextDocument extends ConfigurationScope {
     * @return A valid zero-based offset.
     */
   def offsetAt(position: Position): Double = js.native
+  
   /**
     * Converts a zero-based offset to a position.
     *
@@ -122,6 +119,7 @@ trait TextDocument extends ConfigurationScope {
     * @return A valid [position](#Position).
     */
   def positionAt(offset: Double): Position = js.native
+  
   /**
     * Save the underlying file.
     *
@@ -130,6 +128,18 @@ trait TextDocument extends ConfigurationScope {
     * will return false.
     */
   def save(): Thenable[Boolean] = js.native
+  
+  /**
+    * The associated uri for this document.
+    *
+    * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
+    * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
+    *
+    * @see [FileSystemProvider](#FileSystemProvider)
+    * @see [TextDocumentContentProvider](#TextDocumentContentProvider)
+    */
+  val uri: Uri = js.native
+  
   /**
     * Ensure a position is contained in the range of this document.
     *
@@ -137,6 +147,7 @@ trait TextDocument extends ConfigurationScope {
     * @return The given position or a new, adjusted position.
     */
   def validatePosition(position: Position): Position = js.native
+  
   /**
     * Ensure a range is completely contained in this document.
     *
@@ -144,5 +155,10 @@ trait TextDocument extends ConfigurationScope {
     * @return The given range or a new, adjusted range.
     */
   def validateRange(range: Range): Range = js.native
+  
+  /**
+    * The version number of this document (it will strictly increase after each
+    * change, including undo/redo).
+    */
+  val version: Double = js.native
 }
-

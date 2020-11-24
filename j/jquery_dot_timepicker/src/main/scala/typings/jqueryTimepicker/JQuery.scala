@@ -7,10 +7,11 @@ import typings.jqueryTimepicker.jqueryTimepickerStrings.getTimeAsDate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def timepicker(): JQuery = js.native
   def timepicker(methodName: String): js.Any = js.native
   def timepicker(methodName: String, methodParameter: js.Any): js.Any = js.native
@@ -25,4 +26,3 @@ trait JQuery extends js.Object {
   @JSName("timepicker")
   def timepicker_getTimeAsDate(methodName: getTimeAsDate): Date = js.native
 }
-

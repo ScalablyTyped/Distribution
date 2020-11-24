@@ -2,7 +2,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.stellarSdk.serverApiMod.ServerApi.CreateAccountOperationRecord
@@ -18,6 +18,10 @@ import scala.scalajs.js.annotation._
   - typings.stellarSdk.serverApiMod.ServerApi.ManageDataOperationRecord
   - typings.stellarSdk.serverApiMod.ServerApi.BumpSequenceOperationRecord
   - typings.stellarSdk.serverApiMod.ServerApi.PathPaymentStrictSendOperationRecord
+  - typings.stellarSdk.serverApiMod.ServerApi.CreateClaimableBalanceOperationRecord
+  - typings.stellarSdk.serverApiMod.ServerApi.ClaimClaimableBalanceOperationRecord
+  - typings.stellarSdk.serverApiMod.ServerApi.BeginSponsoringFutureReservesOperationRecord
+  - typings.stellarSdk.serverApiMod.ServerApi.EndSponsoringFutureReservesOperationRecord
+  - typings.stellarSdk.serverApiMod.ServerApi.RevokeSponsorshipOperationRecord
 */
 trait OperationRecord extends js.Object
-

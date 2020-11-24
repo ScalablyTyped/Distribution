@@ -43,9 +43,2323 @@ import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mangopay2NodejsSdkStrings {
+  
+  @scala.inline
+  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
+  
+  @scala.inline
+  def AD: AD = "AD".asInstanceOf[AD]
+  
+  @scala.inline
+  def ADDRESS_MATCH_ONLY: ADDRESS_MATCH_ONLY = "ADDRESS_MATCH_ONLY".asInstanceOf[ADDRESS_MATCH_ONLY]
+  
+  @scala.inline
+  def ADDRESS_PROOF: ADDRESS_PROOF = "ADDRESS_PROOF".asInstanceOf[ADDRESS_PROOF]
+  
+  @scala.inline
+  def AE: AE = "AE".asInstanceOf[AE]
+  
+  @scala.inline
+  def AED: AED = "AED".asInstanceOf[AED]
+  
+  @scala.inline
+  def AF: AF = "AF".asInstanceOf[AF]
+  
+  @scala.inline
+  def AFN: AFN = "AFN".asInstanceOf[AFN]
+  
+  @scala.inline
+  def AG: AG = "AG".asInstanceOf[AG]
+  
+  @scala.inline
+  def AI: AI = "AI".asInstanceOf[AI]
+  
+  @scala.inline
+  def AL: AL = "AL".asInstanceOf[AL]
+  
+  @scala.inline
+  def ALL: ALL = "ALL".asInstanceOf[ALL]
+  
+  @scala.inline
+  def AM: AM = "AM".asInstanceOf[AM]
+  
+  @scala.inline
+  def AMD: AMD = "AMD".asInstanceOf[AMD]
+  
+  @scala.inline
+  def ANG: ANG = "ANG".asInstanceOf[ANG]
+  
+  @scala.inline
+  def AO: AO = "AO".asInstanceOf[AO]
+  
+  @scala.inline
+  def AOA: AOA = "AOA".asInstanceOf[AOA]
+  
+  @scala.inline
+  def AQ: AQ = "AQ".asInstanceOf[AQ]
+  
+  @scala.inline
+  def AR: AR = "AR".asInstanceOf[AR]
+  
+  @scala.inline
+  def ARS: ARS = "ARS".asInstanceOf[ARS]
+  
+  @scala.inline
+  def ARTICLES_OF_ASSOCIATION: ARTICLES_OF_ASSOCIATION = "ARTICLES_OF_ASSOCIATION".asInstanceOf[ARTICLES_OF_ASSOCIATION]
+  
+  @scala.inline
+  def ART_MUSIC_ENTERTAINMENT: ART_MUSIC_ENTERTAINMENT = "ART_MUSIC_ENTERTAINMENT".asInstanceOf[ART_MUSIC_ENTERTAINMENT]
+  
+  @scala.inline
+  def AS: AS = "AS".asInstanceOf[AS]
+  
+  @scala.inline
+  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  
+  @scala.inline
+  def AT: AT = "AT".asInstanceOf[AT]
+  
+  @scala.inline
+  def AU: AU = "AU".asInstanceOf[AU]
+  
+  @scala.inline
+  def AUD: AUD = "AUD".asInstanceOf[AUD]
+  
+  @scala.inline
+  def AUTHORISATION_DISPUTED: AUTHORISATION_DISPUTED = "AUTHORISATION_DISPUTED".asInstanceOf[AUTHORISATION_DISPUTED]
+  
+  @scala.inline
+  def AW: AW = "AW".asInstanceOf[AW]
+  
+  @scala.inline
+  def AWG: AWG = "AWG".asInstanceOf[AWG]
+  
+  @scala.inline
+  def AX: AX = "AX".asInstanceOf[AX]
+  
+  @scala.inline
+  def AZ: AZ = "AZ".asInstanceOf[AZ]
+  
+  @scala.inline
+  def AZN: AZN = "AZN".asInstanceOf[AZN]
+  
+  @scala.inline
+  def Alias: Alias = "Alias".asInstanceOf[Alias]
+  
+  @scala.inline
+  def AuthorId: AuthorId = "AuthorId".asInstanceOf[AuthorId]
+  
+  @scala.inline
+  def BA: BA = "BA".asInstanceOf[BA]
+  
+  @scala.inline
+  def BACS: BACS = "BACS".asInstanceOf[BACS]
+  
+  @scala.inline
+  def BAM: BAM = "BAM".asInstanceOf[BAM]
+  
+  @scala.inline
+  def BANKACCOUNT_HAS_BEEN_CLOSED: BANKACCOUNT_HAS_BEEN_CLOSED = "BANKACCOUNT_HAS_BEEN_CLOSED".asInstanceOf[BANKACCOUNT_HAS_BEEN_CLOSED]
+  
+  @scala.inline
+  def BANKACCOUNT_INCORRECT: BANKACCOUNT_INCORRECT = "BANKACCOUNT_INCORRECT".asInstanceOf[BANKACCOUNT_INCORRECT]
+  
+  @scala.inline
+  def BANK_WIRE: BANK_WIRE = "BANK_WIRE".asInstanceOf[BANK_WIRE]
+  
+  @scala.inline
+  def BB: BB = "BB".asInstanceOf[BB]
+  
+  @scala.inline
+  def BBD: BBD = "BBD".asInstanceOf[BBD]
+  
+  @scala.inline
+  def BCMC: BCMC = "BCMC".asInstanceOf[BCMC]
+  
+  @scala.inline
+  def BD: BD = "BD".asInstanceOf[BD]
+  
+  @scala.inline
+  def BDT: BDT = "BDT".asInstanceOf[BDT]
+  
+  @scala.inline
+  def BE: BE = "BE".asInstanceOf[BE]
+  
+  @scala.inline
+  def BEAUTY_COSMETICS_HEALTH: BEAUTY_COSMETICS_HEALTH = "BEAUTY_COSMETICS_HEALTH".asInstanceOf[BEAUTY_COSMETICS_HEALTH]
+  
+  @scala.inline
+  def BF: BF = "BF".asInstanceOf[BF]
+  
+  @scala.inline
+  def BG: BG = "BG".asInstanceOf[BG]
+  
+  @scala.inline
+  def BGN: BGN = "BGN".asInstanceOf[BGN]
+  
+  @scala.inline
+  def BH: BH = "BH".asInstanceOf[BH]
+  
+  @scala.inline
+  def BHD: BHD = "BHD".asInstanceOf[BHD]
+  
+  @scala.inline
+  def BI: BI = "BI".asInstanceOf[BI]
+  
+  @scala.inline
+  def BIF: BIF = "BIF".asInstanceOf[BIF]
+  
+  @scala.inline
+  def BJ: BJ = "BJ".asInstanceOf[BJ]
+  
+  @scala.inline
+  def BL: BL = "BL".asInstanceOf[BL]
+  
+  @scala.inline
+  def BM: BM = "BM".asInstanceOf[BM]
+  
+  @scala.inline
+  def BMD: BMD = "BMD".asInstanceOf[BMD]
+  
+  @scala.inline
+  def BN: BN = "BN".asInstanceOf[BN]
+  
+  @scala.inline
+  def BND: BND = "BND".asInstanceOf[BND]
+  
+  @scala.inline
+  def BO: BO = "BO".asInstanceOf[BO]
+  
+  @scala.inline
+  def BOB: BOB = "BOB".asInstanceOf[BOB]
+  
+  @scala.inline
+  def BQ: BQ = "BQ".asInstanceOf[BQ]
+  
+  @scala.inline
+  def BR: BR = "BR".asInstanceOf[BR]
+  
+  @scala.inline
+  def BRL: BRL = "BRL".asInstanceOf[BRL]
+  
+  @scala.inline
+  def BS: BS = "BS".asInstanceOf[BS]
+  
+  @scala.inline
+  def BSD: BSD = "BSD".asInstanceOf[BSD]
+  
+  @scala.inline
+  def BT: BT = "BT".asInstanceOf[BT]
+  
+  @scala.inline
+  def BTN: BTN = "BTN".asInstanceOf[BTN]
+  
+  @scala.inline
+  def BUSINESS: BUSINESS = "BUSINESS".asInstanceOf[BUSINESS]
+  
+  @scala.inline
+  def BV: BV = "BV".asInstanceOf[BV]
+  
+  @scala.inline
+  def BW: BW = "BW".asInstanceOf[BW]
+  
+  @scala.inline
+  def BWP: BWP = "BWP".asInstanceOf[BWP]
+  
+  @scala.inline
+  def BY: BY = "BY".asInstanceOf[BY]
+  
+  @scala.inline
+  def BYN: BYN = "BYN".asInstanceOf[BYN]
+  
+  @scala.inline
+  def BZ: BZ = "BZ".asInstanceOf[BZ]
+  
+  @scala.inline
+  def BZD: BZD = "BZD".asInstanceOf[BZD]
+  
+  @scala.inline
+  def BankAccountId: BankAccountId = "BankAccountId".asInstanceOf[BankAccountId]
+  
+  @scala.inline
+  def BankWireRef: BankWireRef = "BankWireRef".asInstanceOf[BankWireRef]
+  
+  @scala.inline
+  def Birthday: Birthday = "Birthday".asInstanceOf[Birthday]
+  
+  @scala.inline
+  def CA: CA = "CA".asInstanceOf[CA]
+  
+  @scala.inline
+  def CAD: CAD = "CAD".asInstanceOf[CAD]
+  
+  @scala.inline
+  def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
+  
+  @scala.inline
+  def CANCELED_REOCCURING_TRANSACTION: CANCELED_REOCCURING_TRANSACTION = "CANCELED_REOCCURING_TRANSACTION".asInstanceOf[CANCELED_REOCCURING_TRANSACTION]
+  
+  @scala.inline
+  def CARD: CARD = "CARD".asInstanceOf[CARD]
+  
+  @scala.inline
+  def CB_VISA_MASTERCARD: CB_VISA_MASTERCARD = "CB_VISA_MASTERCARD".asInstanceOf[CB_VISA_MASTERCARD]
+  
+  @scala.inline
+  def CC: CC = "CC".asInstanceOf[CC]
+  
+  @scala.inline
+  def CD: CD = "CD".asInstanceOf[CD]
+  
+  @scala.inline
+  def CDF: CDF = "CDF".asInstanceOf[CDF]
+  
+  @scala.inline
+  def CF: CF = "CF".asInstanceOf[CF]
+  
+  @scala.inline
+  def CG: CG = "CG".asInstanceOf[CG]
+  
+  @scala.inline
+  def CH: CH = "CH".asInstanceOf[CH]
+  
+  @scala.inline
+  def CHECKING: CHECKING = "CHECKING".asInstanceOf[CHECKING]
+  
+  @scala.inline
+  def CHF: CHF = "CHF".asInstanceOf[CHF]
+  
+  @scala.inline
+  def CI: CI = "CI".asInstanceOf[CI]
+  
+  @scala.inline
+  def CK: CK = "CK".asInstanceOf[CK]
+  
+  @scala.inline
+  def CL: CL = "CL".asInstanceOf[CL]
+  
+  @scala.inline
+  def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
+  
+  @scala.inline
+  def CLP: CLP = "CLP".asInstanceOf[CLP]
+  
+  @scala.inline
+  def CM: CM = "CM".asInstanceOf[CM]
+  
+  @scala.inline
+  def CN: CN = "CN".asInstanceOf[CN]
+  
+  @scala.inline
+  def CNY: CNY = "CNY".asInstanceOf[CNY]
+  
+  @scala.inline
+  def CO: CO = "CO".asInstanceOf[CO]
+  
+  @scala.inline
+  def CONTESTABLE: CONTESTABLE = "CONTESTABLE".asInstanceOf[CONTESTABLE]
+  
+  @scala.inline
+  def COP: COP = "COP".asInstanceOf[COP]
+  
+  @scala.inline
+  def CR: CR = "CR".asInstanceOf[CR]
+  
+  @scala.inline
+  def CRC: CRC = "CRC".asInstanceOf[CRC]
+  
+  @scala.inline
+  def CREATED: CREATED = "CREATED".asInstanceOf[CREATED]
+  
+  @scala.inline
+  def CREDIT: CREDIT = "CREDIT".asInstanceOf[CREDIT]
+  
+  @scala.inline
+  def CROWDFUNDING: CROWDFUNDING = "CROWDFUNDING".asInstanceOf[CROWDFUNDING]
+  
+  @scala.inline
+  def CROWDFUNDING_DONATION: CROWDFUNDING_DONATION = "CROWDFUNDING_DONATION".asInstanceOf[CROWDFUNDING_DONATION]
+  
+  @scala.inline
+  def CROWDFUNDING_EQUITY: CROWDFUNDING_EQUITY = "CROWDFUNDING_EQUITY".asInstanceOf[CROWDFUNDING_EQUITY]
+  
+  @scala.inline
+  def CROWDFUNDING_LOAN: CROWDFUNDING_LOAN = "CROWDFUNDING_LOAN".asInstanceOf[CROWDFUNDING_LOAN]
+  
+  @scala.inline
+  def CROWDFUNDING_REWARD: CROWDFUNDING_REWARD = "CROWDFUNDING_REWARD".asInstanceOf[CROWDFUNDING_REWARD]
+  
+  @scala.inline
+  def CSV: CSV = "CSV".asInstanceOf[CSV]
+  
+  @scala.inline
+  def CU: CU = "CU".asInstanceOf[CU]
+  
+  @scala.inline
+  def CUC: CUC = "CUC".asInstanceOf[CUC]
+  
+  @scala.inline
+  def CUP: CUP = "CUP".asInstanceOf[CUP]
+  
+  @scala.inline
+  def CV: CV = "CV".asInstanceOf[CV]
+  
+  @scala.inline
+  def CVE: CVE = "CVE".asInstanceOf[CVE]
+  
+  @scala.inline
+  def CW: CW = "CW".asInstanceOf[CW]
+  
+  @scala.inline
+  def CX: CX = "CX".asInstanceOf[CX]
+  
+  @scala.inline
+  def CY: CY = "CY".asInstanceOf[CY]
+  
+  @scala.inline
+  def CZ: CZ = "CZ".asInstanceOf[CZ]
+  
+  @scala.inline
+  def CZK: CZK = "CZK".asInstanceOf[CZK]
+  
+  @scala.inline
+  def CardId: CardId = "CardId".asInstanceOf[CardId]
+  
+  @scala.inline
+  def CardType: CardType = "CardType".asInstanceOf[CardType]
+  
+  @scala.inline
+  def Country: Country = "Country".asInstanceOf[Country]
+  
+  @scala.inline
+  def CountryOfResidence: CountryOfResidence = "CountryOfResidence".asInstanceOf[CountryOfResidence]
+  
+  @scala.inline
+  def CreationDate: CreationDate = "CreationDate".asInstanceOf[CreationDate]
+  
+  @scala.inline
+  def CreditedFundsAmount: CreditedFundsAmount = "CreditedFundsAmount".asInstanceOf[CreditedFundsAmount]
+  
+  @scala.inline
+  def CreditedFundsCurrency: CreditedFundsCurrency = "CreditedFundsCurrency".asInstanceOf[CreditedFundsCurrency]
+  
+  @scala.inline
+  def CreditedUserId: CreditedUserId = "CreditedUserId".asInstanceOf[CreditedUserId]
+  
+  @scala.inline
+  def CreditedWalletId: CreditedWalletId = "CreditedWalletId".asInstanceOf[CreditedWalletId]
+  
+  @scala.inline
+  def Culture: Culture = "Culture".asInstanceOf[Culture]
+  
+  @scala.inline
+  def DE: DE = "DE".asInstanceOf[DE]
+  
+  @scala.inline
+  def DECLARATIVE: DECLARATIVE = "DECLARATIVE".asInstanceOf[DECLARATIVE]
+  
+  @scala.inline
+  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  
+  @scala.inline
+  def DELIVERY_PROOF: DELIVERY_PROOF = "DELIVERY_PROOF".asInstanceOf[DELIVERY_PROOF]
+  
+  @scala.inline
+  def DESC: DESC = "DESC".asInstanceOf[DESC]
+  
+  @scala.inline
+  def DINERS: DINERS = "DINERS".asInstanceOf[DINERS]
+  
+  @scala.inline
+  def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
+  
+  @scala.inline
+  def DIRECT_DEBIT: DIRECT_DEBIT = "DIRECT_DEBIT".asInstanceOf[DIRECT_DEBIT]
+  
+  @scala.inline
+  def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
+  
+  @scala.inline
+  def DISPUTE_ACTION_REQUIRED: DISPUTE_ACTION_REQUIRED = "DISPUTE_ACTION_REQUIRED".asInstanceOf[DISPUTE_ACTION_REQUIRED]
+  
+  @scala.inline
+  def DISPUTE_CLOSED: DISPUTE_CLOSED = "DISPUTE_CLOSED".asInstanceOf[DISPUTE_CLOSED]
+  
+  @scala.inline
+  def DISPUTE_CREATED: DISPUTE_CREATED = "DISPUTE_CREATED".asInstanceOf[DISPUTE_CREATED]
+  
+  @scala.inline
+  def DISPUTE_DOCUMENT_CREATED: DISPUTE_DOCUMENT_CREATED = "DISPUTE_DOCUMENT_CREATED".asInstanceOf[DISPUTE_DOCUMENT_CREATED]
+  
+  @scala.inline
+  def DISPUTE_DOCUMENT_FAILED: DISPUTE_DOCUMENT_FAILED = "DISPUTE_DOCUMENT_FAILED".asInstanceOf[DISPUTE_DOCUMENT_FAILED]
+  
+  @scala.inline
+  def DISPUTE_DOCUMENT_SUCCEEDED: DISPUTE_DOCUMENT_SUCCEEDED = "DISPUTE_DOCUMENT_SUCCEEDED".asInstanceOf[DISPUTE_DOCUMENT_SUCCEEDED]
+  
+  @scala.inline
+  def DISPUTE_DOCUMENT_VALIDATION_ASKED: DISPUTE_DOCUMENT_VALIDATION_ASKED = "DISPUTE_DOCUMENT_VALIDATION_ASKED".asInstanceOf[DISPUTE_DOCUMENT_VALIDATION_ASKED]
+  
+  @scala.inline
+  def DISPUTE_FURTHER_ACTION_REQUIRED: DISPUTE_FURTHER_ACTION_REQUIRED = "DISPUTE_FURTHER_ACTION_REQUIRED".asInstanceOf[DISPUTE_FURTHER_ACTION_REQUIRED]
+  
+  @scala.inline
+  def DISPUTE_SENT_TO_BANK: DISPUTE_SENT_TO_BANK = "DISPUTE_SENT_TO_BANK".asInstanceOf[DISPUTE_SENT_TO_BANK]
+  
+  @scala.inline
+  def DISPUTE_SUBMITTED: DISPUTE_SUBMITTED = "DISPUTE_SUBMITTED".asInstanceOf[DISPUTE_SUBMITTED]
+  
+  @scala.inline
+  def DJ: DJ = "DJ".asInstanceOf[DJ]
+  
+  @scala.inline
+  def DJF: DJF = "DJF".asInstanceOf[DJF]
+  
+  @scala.inline
+  def DK: DK = "DK".asInstanceOf[DK]
+  
+  @scala.inline
+  def DKK: DKK = "DKK".asInstanceOf[DKK]
+  
+  @scala.inline
+  def DM: DM = "DM".asInstanceOf[DM]
+  
+  @scala.inline
+  def DO: DO = "DO".asInstanceOf[DO]
+  
+  @scala.inline
+  def DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA: DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA = "DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA".asInstanceOf[DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA]
+  
+  @scala.inline
+  def DOCUMENT_DO_NOT_MATCH_USER_DATA: DOCUMENT_DO_NOT_MATCH_USER_DATA = "DOCUMENT_DO_NOT_MATCH_USER_DATA".asInstanceOf[DOCUMENT_DO_NOT_MATCH_USER_DATA]
+  
+  @scala.inline
+  def DOCUMENT_FALSIFIED: DOCUMENT_FALSIFIED = "DOCUMENT_FALSIFIED".asInstanceOf[DOCUMENT_FALSIFIED]
+  
+  @scala.inline
+  def DOCUMENT_HAS_EXPIRED: DOCUMENT_HAS_EXPIRED = "DOCUMENT_HAS_EXPIRED".asInstanceOf[DOCUMENT_HAS_EXPIRED]
+  
+  @scala.inline
+  def DOCUMENT_INCOMPLETE: DOCUMENT_INCOMPLETE = "DOCUMENT_INCOMPLETE".asInstanceOf[DOCUMENT_INCOMPLETE]
+  
+  @scala.inline
+  def DOCUMENT_MISSING: DOCUMENT_MISSING = "DOCUMENT_MISSING".asInstanceOf[DOCUMENT_MISSING]
+  
+  @scala.inline
+  def DOCUMENT_NOT_ACCEPTED: DOCUMENT_NOT_ACCEPTED = "DOCUMENT_NOT_ACCEPTED".asInstanceOf[DOCUMENT_NOT_ACCEPTED]
+  
+  @scala.inline
+  def DOCUMENT_UNREADABLE: DOCUMENT_UNREADABLE = "DOCUMENT_UNREADABLE".asInstanceOf[DOCUMENT_UNREADABLE]
+  
+  @scala.inline
+  def DOP: DOP = "DOP".asInstanceOf[DOP]
+  
+  @scala.inline
+  def DUPLICATE: DUPLICATE = "DUPLICATE".asInstanceOf[DUPLICATE]
+  
+  @scala.inline
+  def DZ: DZ = "DZ".asInstanceOf[DZ]
+  
+  @scala.inline
+  def DZD: DZD = "DZD".asInstanceOf[DZD]
+  
+  @scala.inline
+  def DebitedFundsAmount: DebitedFundsAmount = "DebitedFundsAmount".asInstanceOf[DebitedFundsAmount]
+  
+  @scala.inline
+  def DebitedFundsCurrency: DebitedFundsCurrency = "DebitedFundsCurrency".asInstanceOf[DebitedFundsCurrency]
+  
+  @scala.inline
+  def DebitedWalletId: DebitedWalletId = "DebitedWalletId".asInstanceOf[DebitedWalletId]
+  
+  @scala.inline
+  def DeclaredDebitedFundsAmount: DeclaredDebitedFundsAmount = "DeclaredDebitedFundsAmount".asInstanceOf[DeclaredDebitedFundsAmount]
+  
+  @scala.inline
+  def DeclaredDebitedFundsCurrency: DeclaredDebitedFundsCurrency = "DeclaredDebitedFundsCurrency".asInstanceOf[DeclaredDebitedFundsCurrency]
+  
+  @scala.inline
+  def DeclaredFeesAmount: DeclaredFeesAmount = "DeclaredFeesAmount".asInstanceOf[DeclaredFeesAmount]
+  
+  @scala.inline
+  def DeclaredFeesCurrency: DeclaredFeesCurrency = "DeclaredFeesCurrency".asInstanceOf[DeclaredFeesCurrency]
+  
+  @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
+  
+  @scala.inline
+  def EC: EC = "EC".asInstanceOf[EC]
+  
+  @scala.inline
+  def EE: EE = "EE".asInstanceOf[EE]
+  
+  @scala.inline
+  def EG: EG = "EG".asInstanceOf[EG]
+  
+  @scala.inline
+  def EGP: EGP = "EGP".asInstanceOf[EGP]
+  
+  @scala.inline
+  def EH: EH = "EH".asInstanceOf[EH]
+  
+  @scala.inline
+  def EN: EN = "EN".asInstanceOf[EN]
+  
+  @scala.inline
+  def ENABLED: ENABLED = "ENABLED".asInstanceOf[ENABLED]
+  
+  @scala.inline
+  def ER: ER = "ER".asInstanceOf[ER]
+  
+  @scala.inline
+  def ERN: ERN = "ERN".asInstanceOf[ERN]
+  
+  @scala.inline
+  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  
+  @scala.inline
+  def ES: ES = "ES".asInstanceOf[ES]
+  
+  @scala.inline
+  def ET: ET = "ET".asInstanceOf[ET]
+  
+  @scala.inline
+  def ETB: ETB = "ETB".asInstanceOf[ETB]
+  
+  @scala.inline
+  def EUR: EUR = "EUR".asInstanceOf[EUR]
+  
+  @scala.inline
+  def EXPIRED: EXPIRED = "EXPIRED".asInstanceOf[EXPIRED]
+  
+  @scala.inline
+  def EXTERNAL_INSTRUCTION: EXTERNAL_INSTRUCTION = "EXTERNAL_INSTRUCTION".asInstanceOf[EXTERNAL_INSTRUCTION]
+  
+  @scala.inline
+  def Email: Email = "Email".asInstanceOf[Email]
+  
+  @scala.inline
+  def ExecutionDate: ExecutionDate = "ExecutionDate".asInstanceOf[ExecutionDate]
+  
+  @scala.inline
+  def ExecutionType: ExecutionType = "ExecutionType".asInstanceOf[ExecutionType]
+  
+  @scala.inline
+  def ExpirationDate: ExpirationDate = "ExpirationDate".asInstanceOf[ExpirationDate]
+  
+  @scala.inline
+  def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
+  
+  @scala.inline
+  def FEES: FEES = "FEES".asInstanceOf[FEES]
+  
+  @scala.inline
+  def FI: FI = "FI".asInstanceOf[FI]
+  
+  @scala.inline
+  def FJ: FJ = "FJ".asInstanceOf[FJ]
+  
+  @scala.inline
+  def FJD: FJD = "FJD".asInstanceOf[FJD]
+  
+  @scala.inline
+  def FK: FK = "FK".asInstanceOf[FK]
+  
+  @scala.inline
+  def FKP: FKP = "FKP".asInstanceOf[FKP]
+  
+  @scala.inline
+  def FM: FM = "FM".asInstanceOf[FM]
+  
+  @scala.inline
+  def FO: FO = "FO".asInstanceOf[FO]
+  
+  @scala.inline
+  def FOOD_WINE_RESTAURANTS: FOOD_WINE_RESTAURANTS = "FOOD_WINE_RESTAURANTS".asInstanceOf[FOOD_WINE_RESTAURANTS]
+  
+  @scala.inline
+  def FORCE: FORCE = "FORCE".asInstanceOf[FORCE]
+  
+  @scala.inline
+  def FR: FR = "FR".asInstanceOf[FR]
+  
+  @scala.inline
+  def FRANCHISE: FRANCHISE = "FRANCHISE".asInstanceOf[FRANCHISE]
+  
+  @scala.inline
+  def FRAUD: FRAUD = "FRAUD".asInstanceOf[FRAUD]
+  
+  @scala.inline
+  def FULL_MATCH: FULL_MATCH = "FULL_MATCH".asInstanceOf[FULL_MATCH]
+  
+  @scala.inline
+  def FURNITURE_GARDEN: FURNITURE_GARDEN = "FURNITURE_GARDEN".asInstanceOf[FURNITURE_GARDEN]
+  
+  @scala.inline
+  def FeesAmount: FeesAmount = "FeesAmount".asInstanceOf[FeesAmount]
+  
+  @scala.inline
+  def FeesCurrency: FeesCurrency = "FeesCurrency".asInstanceOf[FeesCurrency]
+  
+  @scala.inline
+  def FirstName: FirstName = "FirstName".asInstanceOf[FirstName]
+  
+  @scala.inline
+  def GA: GA = "GA".asInstanceOf[GA]
+  
+  @scala.inline
+  def GB: GB = "GB".asInstanceOf[GB]
+  
+  @scala.inline
+  def GBP: GBP = "GBP".asInstanceOf[GBP]
+  
+  @scala.inline
+  def GD: GD = "GD".asInstanceOf[GD]
+  
+  @scala.inline
+  def GE: GE = "GE".asInstanceOf[GE]
+  
+  @scala.inline
+  def GEL: GEL = "GEL".asInstanceOf[GEL]
+  
+  @scala.inline
+  def GF: GF = "GF".asInstanceOf[GF]
+  
+  @scala.inline
+  def GG: GG = "GG".asInstanceOf[GG]
+  
+  @scala.inline
+  def GGP: GGP = "GGP".asInstanceOf[GGP]
+  
+  @scala.inline
+  def GH: GH = "GH".asInstanceOf[GH]
+  
+  @scala.inline
+  def GHS: GHS = "GHS".asInstanceOf[GHS]
+  
+  @scala.inline
+  def GI: GI = "GI".asInstanceOf[GI]
+  
+  @scala.inline
+  def GIP: GIP = "GIP".asInstanceOf[GIP]
+  
+  @scala.inline
+  def GL: GL = "GL".asInstanceOf[GL]
+  
+  @scala.inline
+  def GM: GM = "GM".asInstanceOf[GM]
+  
+  @scala.inline
+  def GMD: GMD = "GMD".asInstanceOf[GMD]
+  
+  @scala.inline
+  def GN: GN = "GN".asInstanceOf[GN]
+  
+  @scala.inline
+  def GNF: GNF = "GNF".asInstanceOf[GNF]
+  
+  @scala.inline
+  def GP: GP = "GP".asInstanceOf[GP]
+  
+  @scala.inline
+  def GQ: GQ = "GQ".asInstanceOf[GQ]
+  
+  @scala.inline
+  def GR: GR = "GR".asInstanceOf[GR]
+  
+  @scala.inline
+  def GS: GS = "GS".asInstanceOf[GS]
+  
+  @scala.inline
+  def GT: GT = "GT".asInstanceOf[GT]
+  
+  @scala.inline
+  def GTQ: GTQ = "GTQ".asInstanceOf[GTQ]
+  
+  @scala.inline
+  def GU: GU = "GU".asInstanceOf[GU]
+  
+  @scala.inline
+  def GW: GW = "GW".asInstanceOf[GW]
+  
+  @scala.inline
+  def GY: GY = "GY".asInstanceOf[GY]
+  
+  @scala.inline
+  def GYD: GYD = "GYD".asInstanceOf[GYD]
+  
+  @scala.inline
+  def HK: HK = "HK".asInstanceOf[HK]
+  
+  @scala.inline
+  def HKD: HKD = "HKD".asInstanceOf[HKD]
+  
+  @scala.inline
+  def HM: HM = "HM".asInstanceOf[HM]
+  
+  @scala.inline
+  def HN: HN = "HN".asInstanceOf[HN]
+  
+  @scala.inline
+  def HNL: HNL = "HNL".asInstanceOf[HNL]
+  
+  @scala.inline
+  def HOSPITALITY_TRAVEL_CORIDING: HOSPITALITY_TRAVEL_CORIDING = "HOSPITALITY_TRAVEL_CORIDING".asInstanceOf[HOSPITALITY_TRAVEL_CORIDING]
+  
+  @scala.inline
+  def HR: HR = "HR".asInstanceOf[HR]
+  
+  @scala.inline
+  def HRK: HRK = "HRK".asInstanceOf[HRK]
+  
+  @scala.inline
+  def HT: HT = "HT".asInstanceOf[HT]
+  
+  @scala.inline
+  def HTG: HTG = "HTG".asInstanceOf[HTG]
+  
+  @scala.inline
+  def HU: HU = "HU".asInstanceOf[HU]
+  
+  @scala.inline
+  def HUF: HUF = "HUF".asInstanceOf[HUF]
+  
+  @scala.inline
+  def IBAN: IBAN = "IBAN".asInstanceOf[IBAN]
+  
+  @scala.inline
+  def ID: ID = "ID".asInstanceOf[ID]
+  
+  @scala.inline
+  def IDEAL: IDEAL = "IDEAL".asInstanceOf[IDEAL]
+  
+  @scala.inline
+  def IDENTITY_PROOF: IDENTITY_PROOF = "IDENTITY_PROOF".asInstanceOf[IDENTITY_PROOF]
+  
+  @scala.inline
+  def IDR: IDR = "IDR".asInstanceOf[IDR]
+  
+  @scala.inline
+  def IE: IE = "IE".asInstanceOf[IE]
+  
+  @scala.inline
+  def IL: IL = "IL".asInstanceOf[IL]
+  
+  @scala.inline
+  def ILS: ILS = "ILS".asInstanceOf[ILS]
+  
+  @scala.inline
+  def IM: IM = "IM".asInstanceOf[IM]
+  
+  @scala.inline
+  def IMP: IMP = "IMP".asInstanceOf[IMP]
+  
+  @scala.inline
+  def IN: IN = "IN".asInstanceOf[IN]
+  
+  @scala.inline
+  def INITIALIZED_BY_CLIENT: INITIALIZED_BY_CLIENT = "INITIALIZED_BY_CLIENT".asInstanceOf[INITIALIZED_BY_CLIENT]
+  
+  @scala.inline
+  def INR: INR = "INR".asInstanceOf[INR]
+  
+  @scala.inline
+  def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
+  
+  @scala.inline
+  def INVALID_DECLARED_UBO: INVALID_DECLARED_UBO = "INVALID_DECLARED_UBO".asInstanceOf[INVALID_DECLARED_UBO]
+  
+  @scala.inline
+  def INVALID_UBO_DETAILS: INVALID_UBO_DETAILS = "INVALID_UBO_DETAILS".asInstanceOf[INVALID_UBO_DETAILS]
+  
+  @scala.inline
+  def INVOICE: INVOICE = "INVOICE".asInstanceOf[INVOICE]
+  
+  @scala.inline
+  def IO: IO = "IO".asInstanceOf[IO]
+  
+  @scala.inline
+  def IQ: IQ = "IQ".asInstanceOf[IQ]
+  
+  @scala.inline
+  def IQD: IQD = "IQD".asInstanceOf[IQD]
+  
+  @scala.inline
+  def IR: IR = "IR".asInstanceOf[IR]
+  
+  @scala.inline
+  def IRR: IRR = "IRR".asInstanceOf[IRR]
+  
+  @scala.inline
+  def IS: IS = "IS".asInstanceOf[IS]
+  
+  @scala.inline
+  def ISK: ISK = "ISK".asInstanceOf[ISK]
+  
+  @scala.inline
+  def IT: IT = "IT".asInstanceOf[IT]
+  
+  @scala.inline
+  def Id_ : Id_ = "Id".asInstanceOf[Id_]
+  
+  @scala.inline
+  def JE: JE = "JE".asInstanceOf[JE]
+  
+  @scala.inline
+  def JEP: JEP = "JEP".asInstanceOf[JEP]
+  
+  @scala.inline
+  def JM: JM = "JM".asInstanceOf[JM]
+  
+  @scala.inline
+  def JMD: JMD = "JMD".asInstanceOf[JMD]
+  
+  @scala.inline
+  def JO: JO = "JO".asInstanceOf[JO]
+  
+  @scala.inline
+  def JOD: JOD = "JOD".asInstanceOf[JOD]
+  
+  @scala.inline
+  def JP: JP = "JP".asInstanceOf[JP]
+  
+  @scala.inline
+  def JPY: JPY = "JPY".asInstanceOf[JPY]
+  
+  @scala.inline
+  def KE: KE = "KE".asInstanceOf[KE]
+  
+  @scala.inline
+  def KES: KES = "KES".asInstanceOf[KES]
+  
+  @scala.inline
+  def KG: KG = "KG".asInstanceOf[KG]
+  
+  @scala.inline
+  def KGS: KGS = "KGS".asInstanceOf[KGS]
+  
+  @scala.inline
+  def KH: KH = "KH".asInstanceOf[KH]
+  
+  @scala.inline
+  def KHR: KHR = "KHR".asInstanceOf[KHR]
+  
+  @scala.inline
+  def KI: KI = "KI".asInstanceOf[KI]
+  
+  @scala.inline
+  def KM: KM = "KM".asInstanceOf[KM]
+  
+  @scala.inline
+  def KMF: KMF = "KMF".asInstanceOf[KMF]
+  
+  @scala.inline
+  def KN: KN = "KN".asInstanceOf[KN]
+  
+  @scala.inline
+  def KP: KP = "KP".asInstanceOf[KP]
+  
+  @scala.inline
+  def KPW: KPW = "KPW".asInstanceOf[KPW]
+  
+  @scala.inline
+  def KR: KR = "KR".asInstanceOf[KR]
+  
+  @scala.inline
+  def KRW: KRW = "KRW".asInstanceOf[KRW]
+  
+  @scala.inline
+  def KW: KW = "KW".asInstanceOf[KW]
+  
+  @scala.inline
+  def KWD: KWD = "KWD".asInstanceOf[KWD]
+  
+  @scala.inline
+  def KY: KY = "KY".asInstanceOf[KY]
+  
+  @scala.inline
+  def KYCLevel: KYCLevel = "KYCLevel".asInstanceOf[KYCLevel]
+  
+  @scala.inline
+  def KYC_CREATED: KYC_CREATED = "KYC_CREATED".asInstanceOf[KYC_CREATED]
+  
+  @scala.inline
+  def KYC_FAILED: KYC_FAILED = "KYC_FAILED".asInstanceOf[KYC_FAILED]
+  
+  @scala.inline
+  def KYC_SUCCEEDED: KYC_SUCCEEDED = "KYC_SUCCEEDED".asInstanceOf[KYC_SUCCEEDED]
+  
+  @scala.inline
+  def KYC_VALIDATION_ASKED: KYC_VALIDATION_ASKED = "KYC_VALIDATION_ASKED".asInstanceOf[KYC_VALIDATION_ASKED]
+  
+  @scala.inline
+  def KYD: KYD = "KYD".asInstanceOf[KYD]
+  
+  @scala.inline
+  def KZ: KZ = "KZ".asInstanceOf[KZ]
+  
+  @scala.inline
+  def KZT: KZT = "KZT".asInstanceOf[KZT]
+  
+  @scala.inline
+  def LA: LA = "LA".asInstanceOf[LA]
+  
+  @scala.inline
+  def LAK: LAK = "LAK".asInstanceOf[LAK]
+  
+  @scala.inline
+  def LATE_FAILURE_BANKACCOUNT_CLOSED: LATE_FAILURE_BANKACCOUNT_CLOSED = "LATE_FAILURE_BANKACCOUNT_CLOSED".asInstanceOf[LATE_FAILURE_BANKACCOUNT_CLOSED]
+  
+  @scala.inline
+  def LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE: LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE = "LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE".asInstanceOf[LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE]
+  
+  @scala.inline
+  def LATE_FAILURE_BANKACCOUNT_INCORRECT: LATE_FAILURE_BANKACCOUNT_INCORRECT = "LATE_FAILURE_BANKACCOUNT_INCORRECT".asInstanceOf[LATE_FAILURE_BANKACCOUNT_INCORRECT]
+  
+  @scala.inline
+  def LATE_FAILURE_CONTACT_USER: LATE_FAILURE_CONTACT_USER = "LATE_FAILURE_CONTACT_USER".asInstanceOf[LATE_FAILURE_CONTACT_USER]
+  
+  @scala.inline
+  def LATE_FAILURE_INSUFFICIENT_FUNDS: LATE_FAILURE_INSUFFICIENT_FUNDS = "LATE_FAILURE_INSUFFICIENT_FUNDS".asInstanceOf[LATE_FAILURE_INSUFFICIENT_FUNDS]
+  
+  @scala.inline
+  def LB: LB = "LB".asInstanceOf[LB]
+  
+  @scala.inline
+  def LBP: LBP = "LBP".asInstanceOf[LBP]
+  
+  @scala.inline
+  def LC: LC = "LC".asInstanceOf[LC]
+  
+  @scala.inline
+  def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
+  
+  @scala.inline
+  def LI: LI = "LI".asInstanceOf[LI]
+  
+  @scala.inline
+  def LIGHT: LIGHT = "LIGHT".asInstanceOf[LIGHT]
+  
+  @scala.inline
+  def LK: LK = "LK".asInstanceOf[LK]
+  
+  @scala.inline
+  def LKR: LKR = "LKR".asInstanceOf[LKR]
+  
+  @scala.inline
+  def LR: LR = "LR".asInstanceOf[LR]
+  
+  @scala.inline
+  def LRD: LRD = "LRD".asInstanceOf[LRD]
+  
+  @scala.inline
+  def LS: LS = "LS".asInstanceOf[LS]
+  
+  @scala.inline
+  def LSL: LSL = "LSL".asInstanceOf[LSL]
+  
+  @scala.inline
+  def LT: LT = "LT".asInstanceOf[LT]
+  
+  @scala.inline
+  def LU: LU = "LU".asInstanceOf[LU]
+  
+  @scala.inline
+  def LV: LV = "LV".asInstanceOf[LV]
+  
+  @scala.inline
+  def LY: LY = "LY".asInstanceOf[LY]
+  
+  @scala.inline
+  def LYD: LYD = "LYD".asInstanceOf[LYD]
+  
+  @scala.inline
+  def LastName: LastName = "LastName".asInstanceOf[LastName]
+  
+  @scala.inline
+  def LegalPersonType: LegalPersonType = "LegalPersonType".asInstanceOf[LegalPersonType]
+  
+  @scala.inline
+  def LegalRepresentativeBirthday: LegalRepresentativeBirthday = "LegalRepresentativeBirthday".asInstanceOf[LegalRepresentativeBirthday]
+  
+  @scala.inline
+  def LegalRepresentativeCountryOfResidence: LegalRepresentativeCountryOfResidence = "LegalRepresentativeCountryOfResidence".asInstanceOf[LegalRepresentativeCountryOfResidence]
+  
+  @scala.inline
+  def LegalRepresentativeFirstName: LegalRepresentativeFirstName = "LegalRepresentativeFirstName".asInstanceOf[LegalRepresentativeFirstName]
+  
+  @scala.inline
+  def LegalRepresentativeLastName: LegalRepresentativeLastName = "LegalRepresentativeLastName".asInstanceOf[LegalRepresentativeLastName]
+  
+  @scala.inline
+  def LegalRepresentativeNationality: LegalRepresentativeNationality = "LegalRepresentativeNationality".asInstanceOf[LegalRepresentativeNationality]
+  
+  @scala.inline
+  def LegalRepresentativeProofOfIdentity: LegalRepresentativeProofOfIdentity = "LegalRepresentativeProofOfIdentity".asInstanceOf[LegalRepresentativeProofOfIdentity]
+  
+  @scala.inline
+  def MA: MA = "MA".asInstanceOf[MA]
+  
+  @scala.inline
+  def MAD: MAD = "MAD".asInstanceOf[MAD]
+  
+  @scala.inline
+  def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
+  
+  @scala.inline
+  def MANDATE_ACTIVATED: MANDATE_ACTIVATED = "MANDATE_ACTIVATED".asInstanceOf[MANDATE_ACTIVATED]
+  
+  @scala.inline
+  def MANDATE_CREATED: MANDATE_CREATED = "MANDATE_CREATED".asInstanceOf[MANDATE_CREATED]
+  
+  @scala.inline
+  def MANDATE_FAILED: MANDATE_FAILED = "MANDATE_FAILED".asInstanceOf[MANDATE_FAILED]
+  
+  @scala.inline
+  def MANDATE_SUBMITTED: MANDATE_SUBMITTED = "MANDATE_SUBMITTED".asInstanceOf[MANDATE_SUBMITTED]
+  
+  @scala.inline
+  def MARKETPLACE: MARKETPLACE = "MARKETPLACE".asInstanceOf[MARKETPLACE]
+  
+  @scala.inline
+  def MASTERPASS: MASTERPASS = "MASTERPASS".asInstanceOf[MASTERPASS]
+  
+  @scala.inline
+  def MC: MC = "MC".asInstanceOf[MC]
+  
+  @scala.inline
+  def MD: MD = "MD".asInstanceOf[MD]
+  
+  @scala.inline
+  def MDL: MDL = "MDL".asInstanceOf[MDL]
+  
+  @scala.inline
+  def ME: ME = "ME".asInstanceOf[ME]
+  
+  @scala.inline
+  def MF: MF = "MF".asInstanceOf[MF]
+  
+  @scala.inline
+  def MG: MG = "MG".asInstanceOf[MG]
+  
+  @scala.inline
+  def MGA: MGA = "MGA".asInstanceOf[MGA]
+  
+  @scala.inline
+  def MH: MH = "MH".asInstanceOf[MH]
+  
+  @scala.inline
+  def MISSING_UBO: MISSING_UBO = "MISSING_UBO".asInstanceOf[MISSING_UBO]
+  
+  @scala.inline
+  def MK: MK = "MK".asInstanceOf[MK]
+  
+  @scala.inline
+  def MKD: MKD = "MKD".asInstanceOf[MKD]
+  
+  @scala.inline
+  def ML: ML = "ML".asInstanceOf[ML]
+  
+  @scala.inline
+  def MM: MM = "MM".asInstanceOf[MM]
+  
+  @scala.inline
+  def MMK: MMK = "MMK".asInstanceOf[MMK]
+  
+  @scala.inline
+  def MN: MN = "MN".asInstanceOf[MN]
+  
+  @scala.inline
+  def MNT: MNT = "MNT".asInstanceOf[MNT]
+  
+  @scala.inline
+  def MO: MO = "MO".asInstanceOf[MO]
+  
+  @scala.inline
+  def MOP: MOP = "MOP".asInstanceOf[MOP]
+  
+  @scala.inline
+  def MP: MP = "MP".asInstanceOf[MP]
+  
+  @scala.inline
+  def MQ: MQ = "MQ".asInstanceOf[MQ]
+  
+  @scala.inline
+  def MR: MR = "MR".asInstanceOf[MR]
+  
+  @scala.inline
+  def MRU: MRU = "MRU".asInstanceOf[MRU]
+  
+  @scala.inline
+  def MS: MS = "MS".asInstanceOf[MS]
+  
+  @scala.inline
+  def MT: MT = "MT".asInstanceOf[MT]
+  
+  @scala.inline
+  def MU: MU = "MU".asInstanceOf[MU]
+  
+  @scala.inline
+  def MUR: MUR = "MUR".asInstanceOf[MUR]
+  
+  @scala.inline
+  def MV: MV = "MV".asInstanceOf[MV]
+  
+  @scala.inline
+  def MVR: MVR = "MVR".asInstanceOf[MVR]
+  
+  @scala.inline
+  def MW: MW = "MW".asInstanceOf[MW]
+  
+  @scala.inline
+  def MWK: MWK = "MWK".asInstanceOf[MWK]
+  
+  @scala.inline
+  def MX: MX = "MX".asInstanceOf[MX]
+  
+  @scala.inline
+  def MXN: MXN = "MXN".asInstanceOf[MXN]
+  
+  @scala.inline
+  def MY: MY = "MY".asInstanceOf[MY]
+  
+  @scala.inline
+  def MYR: MYR = "MYR".asInstanceOf[MYR]
+  
+  @scala.inline
+  def MZ: MZ = "MZ".asInstanceOf[MZ]
+  
+  @scala.inline
+  def MZN: MZN = "MZN".asInstanceOf[MZN]
+  
+  @scala.inline
+  def MakeKeysNullable: MakeKeysNullable = "MakeKeysNullable".asInstanceOf[MakeKeysNullable]
+  
+  @scala.inline
+  def NA: NA = "NA".asInstanceOf[NA]
+  
+  @scala.inline
+  def NAD: NAD = "NAD".asInstanceOf[NAD]
+  
+  @scala.inline
+  def NATURAL: NATURAL = "NATURAL".asInstanceOf[NATURAL]
+  
+  @scala.inline
+  def NC: NC = "NC".asInstanceOf[NC]
+  
+  @scala.inline
+  def NE: NE = "NE".asInstanceOf[NE]
+  
+  @scala.inline
+  def NF: NF = "NF".asInstanceOf[NF]
+  
+  @scala.inline
+  def NG: NG = "NG".asInstanceOf[NG]
+  
+  @scala.inline
+  def NGN: NGN = "NGN".asInstanceOf[NGN]
+  
+  @scala.inline
+  def NI: NI = "NI".asInstanceOf[NI]
+  
+  @scala.inline
+  def NIO: NIO = "NIO".asInstanceOf[NIO]
+  
+  @scala.inline
+  def NL: NL = "NL".asInstanceOf[NL]
+  
+  @scala.inline
+  def NO: NO = "NO".asInstanceOf[NO]
+  
+  @scala.inline
+  def NOK: NOK = "NOK".asInstanceOf[NOK]
+  
+  @scala.inline
+  def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
+  
+  @scala.inline
+  def NOT_CONTESTABLE: NOT_CONTESTABLE = "NOT_CONTESTABLE".asInstanceOf[NOT_CONTESTABLE]
+  
+  @scala.inline
+  def NO_CHECK: NO_CHECK = "NO_CHECK".asInstanceOf[NO_CHECK]
+  
+  @scala.inline
+  def NO_MATCH: NO_MATCH = "NO_MATCH".asInstanceOf[NO_MATCH]
+  
+  @scala.inline
+  def NP: NP = "NP".asInstanceOf[NP]
+  
+  @scala.inline
+  def NPR: NPR = "NPR".asInstanceOf[NPR]
+  
+  @scala.inline
+  def NR: NR = "NR".asInstanceOf[NR]
+  
+  @scala.inline
+  def NU: NU = "NU".asInstanceOf[NU]
+  
+  @scala.inline
+  def NZ: NZ = "NZ".asInstanceOf[NZ]
+  
+  @scala.inline
+  def NZD: NZD = "NZD".asInstanceOf[NZD]
+  
+  @scala.inline
+  def Name: Name = "Name".asInstanceOf[Name]
+  
+  @scala.inline
+  def Nationality: Nationality = "Nationality".asInstanceOf[Nationality]
+  
+  @scala.inline
+  def Nature: Nature = "Nature".asInstanceOf[Nature]
+  
+  @scala.inline
+  def NotSpecified: NotSpecified = "NotSpecified".asInstanceOf[NotSpecified]
+  
+  @scala.inline
+  def OM: OM = "OM".asInstanceOf[OM]
+  
+  @scala.inline
+  def OMR: OMR = "OMR".asInstanceOf[OMR]
+  
+  @scala.inline
+  def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
+  
+  @scala.inline
+  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
+  
+  @scala.inline
+  def OWNER_DO_NOT_MATCH_BANKACCOUNT: OWNER_DO_NOT_MATCH_BANKACCOUNT = "OWNER_DO_NOT_MATCH_BANKACCOUNT".asInstanceOf[OWNER_DO_NOT_MATCH_BANKACCOUNT]
+  
+  @scala.inline
+  def P24: P24 = "P24".asInstanceOf[P24]
+  
+  @scala.inline
+  def P2P_PAYMENT: P2P_PAYMENT = "P2P_PAYMENT".asInstanceOf[P2P_PAYMENT]
+  
+  @scala.inline
+  def PA: PA = "PA".asInstanceOf[PA]
+  
+  @scala.inline
+  def PAB: PAB = "PAB".asInstanceOf[PAB]
+  
+  @scala.inline
+  def PAYIN: PAYIN = "PAYIN".asInstanceOf[PAYIN]
+  
+  @scala.inline
+  def PAYIN_NORMAL_CREATED: PAYIN_NORMAL_CREATED = "PAYIN_NORMAL_CREATED".asInstanceOf[PAYIN_NORMAL_CREATED]
+  
+  @scala.inline
+  def PAYIN_NORMAL_FAILED: PAYIN_NORMAL_FAILED = "PAYIN_NORMAL_FAILED".asInstanceOf[PAYIN_NORMAL_FAILED]
+  
+  @scala.inline
+  def PAYIN_NORMAL_SUCCEEDED: PAYIN_NORMAL_SUCCEEDED = "PAYIN_NORMAL_SUCCEEDED".asInstanceOf[PAYIN_NORMAL_SUCCEEDED]
+  
+  @scala.inline
+  def PAYIN_REFUND_CREATED: PAYIN_REFUND_CREATED = "PAYIN_REFUND_CREATED".asInstanceOf[PAYIN_REFUND_CREATED]
+  
+  @scala.inline
+  def PAYIN_REFUND_FAILED: PAYIN_REFUND_FAILED = "PAYIN_REFUND_FAILED".asInstanceOf[PAYIN_REFUND_FAILED]
+  
+  @scala.inline
+  def PAYIN_REFUND_SUCCEEDED: PAYIN_REFUND_SUCCEEDED = "PAYIN_REFUND_SUCCEEDED".asInstanceOf[PAYIN_REFUND_SUCCEEDED]
+  
+  @scala.inline
+  def PAYIN_REPUDIATION_CREATED: PAYIN_REPUDIATION_CREATED = "PAYIN_REPUDIATION_CREATED".asInstanceOf[PAYIN_REPUDIATION_CREATED]
+  
+  @scala.inline
+  def PAYIN_REPUDIATION_FAILED: PAYIN_REPUDIATION_FAILED = "PAYIN_REPUDIATION_FAILED".asInstanceOf[PAYIN_REPUDIATION_FAILED]
+  
+  @scala.inline
+  def PAYIN_REPUDIATION_SUCCEEDED: PAYIN_REPUDIATION_SUCCEEDED = "PAYIN_REPUDIATION_SUCCEEDED".asInstanceOf[PAYIN_REPUDIATION_SUCCEEDED]
+  
+  @scala.inline
+  def PAYLIB: PAYLIB = "PAYLIB".asInstanceOf[PAYLIB]
+  
+  @scala.inline
+  def PAYOUT: PAYOUT = "PAYOUT".asInstanceOf[PAYOUT]
+  
+  @scala.inline
+  def PAYOUT_NORMAL_CREATED: PAYOUT_NORMAL_CREATED = "PAYOUT_NORMAL_CREATED".asInstanceOf[PAYOUT_NORMAL_CREATED]
+  
+  @scala.inline
+  def PAYOUT_NORMAL_FAILED: PAYOUT_NORMAL_FAILED = "PAYOUT_NORMAL_FAILED".asInstanceOf[PAYOUT_NORMAL_FAILED]
+  
+  @scala.inline
+  def PAYOUT_NORMAL_SUCCEEDED: PAYOUT_NORMAL_SUCCEEDED = "PAYOUT_NORMAL_SUCCEEDED".asInstanceOf[PAYOUT_NORMAL_SUCCEEDED]
+  
+  @scala.inline
+  def PAYOUT_REFUND_CREATED: PAYOUT_REFUND_CREATED = "PAYOUT_REFUND_CREATED".asInstanceOf[PAYOUT_REFUND_CREATED]
+  
+  @scala.inline
+  def PAYOUT_REFUND_FAILED: PAYOUT_REFUND_FAILED = "PAYOUT_REFUND_FAILED".asInstanceOf[PAYOUT_REFUND_FAILED]
+  
+  @scala.inline
+  def PAYOUT_REFUND_SUCCEEDED: PAYOUT_REFUND_SUCCEEDED = "PAYOUT_REFUND_SUCCEEDED".asInstanceOf[PAYOUT_REFUND_SUCCEEDED]
+  
+  @scala.inline
+  def PAYPAL: PAYPAL = "PAYPAL".asInstanceOf[PAYPAL]
+  
+  @scala.inline
+  def PE: PE = "PE".asInstanceOf[PE]
+  
+  @scala.inline
+  def PEN: PEN = "PEN".asInstanceOf[PEN]
+  
+  @scala.inline
+  def PENDING_BANK_ACTION: PENDING_BANK_ACTION = "PENDING_BANK_ACTION".asInstanceOf[PENDING_BANK_ACTION]
+  
+  @scala.inline
+  def PENDING_CLIENT_ACTION: PENDING_CLIENT_ACTION = "PENDING_CLIENT_ACTION".asInstanceOf[PENDING_CLIENT_ACTION]
+  
+  @scala.inline
+  def PF: PF = "PF".asInstanceOf[PF]
+  
+  @scala.inline
+  def PG: PG = "PG".asInstanceOf[PG]
+  
+  @scala.inline
+  def PGK: PGK = "PGK".asInstanceOf[PGK]
+  
+  @scala.inline
+  def PH: PH = "PH".asInstanceOf[PH]
+  
+  @scala.inline
+  def PHP: PHP = "PHP".asInstanceOf[PHP]
+  
+  @scala.inline
+  def PK: PK = "PK".asInstanceOf[PK]
+  
+  @scala.inline
+  def PKR: PKR = "PKR".asInstanceOf[PKR]
+  
+  @scala.inline
+  def PL: PL = "PL".asInstanceOf[PL]
+  
+  @scala.inline
+  def PLN: PLN = "PLN".asInstanceOf[PLN]
+  
+  @scala.inline
+  def PM: PM = "PM".asInstanceOf[PM]
+  
+  @scala.inline
+  def PN: PN = "PN".asInstanceOf[PN]
+  
+  @scala.inline
+  def POSTAL_CODE_MATCH_ONLY: POSTAL_CODE_MATCH_ONLY = "POSTAL_CODE_MATCH_ONLY".asInstanceOf[POSTAL_CODE_MATCH_ONLY]
+  
+  @scala.inline
+  def PR: PR = "PR".asInstanceOf[PR]
+  
+  @scala.inline
+  def PREAUTHORIZATION_PAYMENT_CANCELED: PREAUTHORIZATION_PAYMENT_CANCELED = "PREAUTHORIZATION_PAYMENT_CANCELED".asInstanceOf[PREAUTHORIZATION_PAYMENT_CANCELED]
+  
+  @scala.inline
+  def PREAUTHORIZATION_PAYMENT_EXPIRED: PREAUTHORIZATION_PAYMENT_EXPIRED = "PREAUTHORIZATION_PAYMENT_EXPIRED".asInstanceOf[PREAUTHORIZATION_PAYMENT_EXPIRED]
+  
+  @scala.inline
+  def PREAUTHORIZATION_PAYMENT_VALIDATED: PREAUTHORIZATION_PAYMENT_VALIDATED = "PREAUTHORIZATION_PAYMENT_VALIDATED".asInstanceOf[PREAUTHORIZATION_PAYMENT_VALIDATED]
+  
+  @scala.inline
+  def PREAUTHORIZATION_PAYMENT_WAITING: PREAUTHORIZATION_PAYMENT_WAITING = "PREAUTHORIZATION_PAYMENT_WAITING".asInstanceOf[PREAUTHORIZATION_PAYMENT_WAITING]
+  
+  @scala.inline
+  def PREAUTHORIZED: PREAUTHORIZED = "PREAUTHORIZED".asInstanceOf[PREAUTHORIZED]
+  
+  @scala.inline
+  def PRODUCT_NOT_PROVIDED: PRODUCT_NOT_PROVIDED = "PRODUCT_NOT_PROVIDED".asInstanceOf[PRODUCT_NOT_PROVIDED]
+  
+  @scala.inline
+  def PRODUCT_REPLACEMENT_PROOF: PRODUCT_REPLACEMENT_PROOF = "PRODUCT_REPLACEMENT_PROOF".asInstanceOf[PRODUCT_REPLACEMENT_PROOF]
+  
+  @scala.inline
+  def PRODUCT_UNACCEPTABLE: PRODUCT_UNACCEPTABLE = "PRODUCT_UNACCEPTABLE".asInstanceOf[PRODUCT_UNACCEPTABLE]
+  
+  @scala.inline
+  def PS: PS = "PS".asInstanceOf[PS]
+  
+  @scala.inline
+  def PT: PT = "PT".asInstanceOf[PT]
+  
+  @scala.inline
+  def PW: PW = "PW".asInstanceOf[PW]
+  
+  @scala.inline
+  def PY: PY = "PY".asInstanceOf[PY]
+  
+  @scala.inline
+  def PYG: PYG = "PYG".asInstanceOf[PYG]
+  
+  @scala.inline
+  def PaymentType: PaymentType = "PaymentType".asInstanceOf[PaymentType]
+  
+  @scala.inline
+  def PersonType: PersonType = "PersonType".asInstanceOf[PersonType]
+  
+  @scala.inline
+  def PreauthorizationId: PreauthorizationId = "PreauthorizationId".asInstanceOf[PreauthorizationId]
+  
+  @scala.inline
+  def ProofOfAddress: ProofOfAddress = "ProofOfAddress".asInstanceOf[ProofOfAddress]
+  
+  @scala.inline
+  def ProofOfIdentity: ProofOfIdentity = "ProofOfIdentity".asInstanceOf[ProofOfIdentity]
+  
+  @scala.inline
+  def ProofOfRegistration: ProofOfRegistration = "ProofOfRegistration".asInstanceOf[ProofOfRegistration]
+  
+  @scala.inline
+  def QA: QA = "QA".asInstanceOf[QA]
+  
+  @scala.inline
+  def QAR: QAR = "QAR".asInstanceOf[QAR]
+  
+  @scala.inline
+  def RE: RE = "RE".asInstanceOf[RE]
+  
+  @scala.inline
+  def REFUND: REFUND = "REFUND".asInstanceOf[REFUND]
+  
+  @scala.inline
+  def REFUND_CONVERSION_RATE: REFUND_CONVERSION_RATE = "REFUND_CONVERSION_RATE".asInstanceOf[REFUND_CONVERSION_RATE]
+  
+  @scala.inline
+  def REFUND_NOT_PROCESSED: REFUND_NOT_PROCESSED = "REFUND_NOT_PROCESSED".asInstanceOf[REFUND_NOT_PROCESSED]
+  
+  @scala.inline
+  def REFUND_PROOF: REFUND_PROOF = "REFUND_PROOF".asInstanceOf[REFUND_PROOF]
+  
+  @scala.inline
+  def REFUSED: REFUSED = "REFUSED".asInstanceOf[REFUSED]
+  
+  @scala.inline
+  def REGISTRATION_PROOF: REGISTRATION_PROOF = "REGISTRATION_PROOF".asInstanceOf[REGISTRATION_PROOF]
+  
+  @scala.inline
+  def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
+  
+  @scala.inline
+  def RENTALS: RENTALS = "RENTALS".asInstanceOf[RENTALS]
+  
+  @scala.inline
+  def REOPENED_PENDING_CLIENT_ACTION: REOPENED_PENDING_CLIENT_ACTION = "REOPENED_PENDING_CLIENT_ACTION".asInstanceOf[REOPENED_PENDING_CLIENT_ACTION]
+  
+  @scala.inline
+  def REPUDIATION: REPUDIATION = "REPUDIATION".asInstanceOf[REPUDIATION]
+  
+  @scala.inline
+  def RETRIEVAL: RETRIEVAL = "RETRIEVAL".asInstanceOf[RETRIEVAL]
+  
+  @scala.inline
+  def RO: RO = "RO".asInstanceOf[RO]
+  
+  @scala.inline
+  def RON: RON = "RON".asInstanceOf[RON]
+  
+  @scala.inline
+  def RS: RS = "RS".asInstanceOf[RS]
+  
+  @scala.inline
+  def RSD: RSD = "RSD".asInstanceOf[RSD]
+  
+  @scala.inline
+  def RU: RU = "RU".asInstanceOf[RU]
+  
+  @scala.inline
+  def RUB: RUB = "RUB".asInstanceOf[RUB]
+  
+  @scala.inline
+  def RW: RW = "RW".asInstanceOf[RW]
+  
+  @scala.inline
+  def RWF: RWF = "RWF".asInstanceOf[RWF]
+  
+  @scala.inline
+  def ResultCode: ResultCode = "ResultCode".asInstanceOf[ResultCode]
+  
+  @scala.inline
+  def ResultMessage: ResultMessage = "ResultMessage".asInstanceOf[ResultMessage]
+  
+  @scala.inline
+  def SA: SA = "SA".asInstanceOf[SA]
+  
+  @scala.inline
+  def SAR: SAR = "SAR".asInstanceOf[SAR]
+  
+  @scala.inline
+  def SAVINGS: SAVINGS = "SAVINGS".asInstanceOf[SAVINGS]
+  
+  @scala.inline
+  def SB: SB = "SB".asInstanceOf[SB]
+  
+  @scala.inline
+  def SBD: SBD = "SBD".asInstanceOf[SBD]
+  
+  @scala.inline
+  def SC: SC = "SC".asInstanceOf[SC]
+  
+  @scala.inline
+  def SCR: SCR = "SCR".asInstanceOf[SCR]
+  
+  @scala.inline
+  def SD: SD = "SD".asInstanceOf[SD]
+  
+  @scala.inline
+  def SDG: SDG = "SDG".asInstanceOf[SDG]
+  
+  @scala.inline
+  def SE: SE = "SE".asInstanceOf[SE]
+  
+  @scala.inline
+  def SEK: SEK = "SEK".asInstanceOf[SEK]
+  
+  @scala.inline
+  def SEPA: SEPA = "SEPA".asInstanceOf[SEPA]
+  
+  @scala.inline
+  def SERVICES_JOBBING_EDUCATION: SERVICES_JOBBING_EDUCATION = "SERVICES_JOBBING_EDUCATION".asInstanceOf[SERVICES_JOBBING_EDUCATION]
+  
+  @scala.inline
+  def SETTLEMENT: SETTLEMENT = "SETTLEMENT".asInstanceOf[SETTLEMENT]
+  
+  @scala.inline
+  def SG: SG = "SG".asInstanceOf[SG]
+  
+  @scala.inline
+  def SGD: SGD = "SGD".asInstanceOf[SGD]
+  
+  @scala.inline
+  def SH: SH = "SH".asInstanceOf[SH]
+  
+  @scala.inline
+  def SHAREHOLDER_DECLARATION: SHAREHOLDER_DECLARATION = "SHAREHOLDER_DECLARATION".asInstanceOf[SHAREHOLDER_DECLARATION]
+  
+  @scala.inline
+  def SHP: SHP = "SHP".asInstanceOf[SHP]
+  
+  @scala.inline
+  def SI: SI = "SI".asInstanceOf[SI]
+  
+  @scala.inline
+  def SJ: SJ = "SJ".asInstanceOf[SJ]
+  
+  @scala.inline
+  def SK: SK = "SK".asInstanceOf[SK]
+  
+  @scala.inline
+  def SL: SL = "SL".asInstanceOf[SL]
+  
+  @scala.inline
+  def SLL: SLL = "SLL".asInstanceOf[SLL]
+  
+  @scala.inline
+  def SM: SM = "SM".asInstanceOf[SM]
+  
+  @scala.inline
+  def SN: SN = "SN".asInstanceOf[SN]
+  
+  @scala.inline
+  def SO: SO = "SO".asInstanceOf[SO]
+  
+  @scala.inline
+  def SOLETRADER: SOLETRADER = "SOLETRADER".asInstanceOf[SOLETRADER]
+  
+  @scala.inline
+  def SOS: SOS = "SOS".asInstanceOf[SOS]
+  
+  @scala.inline
+  def SPECIFIC_CASE: SPECIFIC_CASE = "SPECIFIC_CASE".asInstanceOf[SPECIFIC_CASE]
+  
+  @scala.inline
+  def SPL: SPL = "SPL".asInstanceOf[SPL]
+  
+  @scala.inline
+  def SPORT_RECREATION_ACTIVITIES: SPORT_RECREATION_ACTIVITIES = "SPORT_RECREATION_ACTIVITIES".asInstanceOf[SPORT_RECREATION_ACTIVITIES]
+  
+  @scala.inline
+  def SR: SR = "SR".asInstanceOf[SR]
+  
+  @scala.inline
+  def SRD: SRD = "SRD".asInstanceOf[SRD]
+  
+  @scala.inline
+  def SS: SS = "SS".asInstanceOf[SS]
+  
+  @scala.inline
+  def ST: ST = "ST".asInstanceOf[ST]
+  
+  @scala.inline
+  def STN: STN = "STN".asInstanceOf[STN]
+  
+  @scala.inline
+  def STORES_FASHION_ACCESSORIES_OBJECTS: STORES_FASHION_ACCESSORIES_OBJECTS = "STORES_FASHION_ACCESSORIES_OBJECTS".asInstanceOf[STORES_FASHION_ACCESSORIES_OBJECTS]
+  
+  @scala.inline
+  def SUBMITTED: SUBMITTED = "SUBMITTED".asInstanceOf[SUBMITTED]
+  
+  @scala.inline
+  def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
+  
+  @scala.inline
+  def SV: SV = "SV".asInstanceOf[SV]
+  
+  @scala.inline
+  def SVC: SVC = "SVC".asInstanceOf[SVC]
+  
+  @scala.inline
+  def SX: SX = "SX".asInstanceOf[SX]
+  
+  @scala.inline
+  def SY: SY = "SY".asInstanceOf[SY]
+  
+  @scala.inline
+  def SYP: SYP = "SYP".asInstanceOf[SYP]
+  
+  @scala.inline
+  def SZ: SZ = "SZ".asInstanceOf[SZ]
+  
+  @scala.inline
+  def SZL: SZL = "SZL".asInstanceOf[SZL]
+  
+  @scala.inline
+  def ShareholderDeclaration: ShareholderDeclaration = "ShareholderDeclaration".asInstanceOf[ShareholderDeclaration]
+  
+  @scala.inline
+  def Status: Status = "Status".asInstanceOf[Status]
+  
+  @scala.inline
+  def Statute: Statute = "Statute".asInstanceOf[Statute]
+  
+  @scala.inline
+  def TC: TC = "TC".asInstanceOf[TC]
+  
+  @scala.inline
+  def TD: TD = "TD".asInstanceOf[TD]
+  
+  @scala.inline
+  def TF: TF = "TF".asInstanceOf[TF]
+  
+  @scala.inline
+  def TG: TG = "TG".asInstanceOf[TG]
+  
+  @scala.inline
+  def TH: TH = "TH".asInstanceOf[TH]
+  
+  @scala.inline
+  def THB: THB = "THB".asInstanceOf[THB]
+  
+  @scala.inline
+  def TICKETING: TICKETING = "TICKETING".asInstanceOf[TICKETING]
+  
+  @scala.inline
+  def TJ: TJ = "TJ".asInstanceOf[TJ]
+  
+  @scala.inline
+  def TJS: TJS = "TJS".asInstanceOf[TJS]
+  
+  @scala.inline
+  def TK: TK = "TK".asInstanceOf[TK]
+  
+  @scala.inline
+  def TL: TL = "TL".asInstanceOf[TL]
+  
+  @scala.inline
+  def TM: TM = "TM".asInstanceOf[TM]
+  
+  @scala.inline
+  def TMT: TMT = "TMT".asInstanceOf[TMT]
+  
+  @scala.inline
+  def TN: TN = "TN".asInstanceOf[TN]
+  
+  @scala.inline
+  def TND: TND = "TND".asInstanceOf[TND]
+  
+  @scala.inline
+  def TO: TO = "TO".asInstanceOf[TO]
+  
+  @scala.inline
+  def TOP: TOP = "TOP".asInstanceOf[TOP]
+  
+  @scala.inline
+  def TR: TR = "TR".asInstanceOf[TR]
+  
+  @scala.inline
+  def TRANSACTIONS: TRANSACTIONS = "TRANSACTIONS".asInstanceOf[TRANSACTIONS]
+  
+  @scala.inline
+  def TRANSACTION_NOT_RECOGNIZED: TRANSACTION_NOT_RECOGNIZED = "TRANSACTION_NOT_RECOGNIZED".asInstanceOf[TRANSACTION_NOT_RECOGNIZED]
+  
+  @scala.inline
+  def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
+  
+  @scala.inline
+  def TRANSFER_NORMAL_CREATED: TRANSFER_NORMAL_CREATED = "TRANSFER_NORMAL_CREATED".asInstanceOf[TRANSFER_NORMAL_CREATED]
+  
+  @scala.inline
+  def TRANSFER_NORMAL_FAILED: TRANSFER_NORMAL_FAILED = "TRANSFER_NORMAL_FAILED".asInstanceOf[TRANSFER_NORMAL_FAILED]
+  
+  @scala.inline
+  def TRANSFER_NORMAL_SUCCEEDED: TRANSFER_NORMAL_SUCCEEDED = "TRANSFER_NORMAL_SUCCEEDED".asInstanceOf[TRANSFER_NORMAL_SUCCEEDED]
+  
+  @scala.inline
+  def TRANSFER_REFUND_CREATED: TRANSFER_REFUND_CREATED = "TRANSFER_REFUND_CREATED".asInstanceOf[TRANSFER_REFUND_CREATED]
+  
+  @scala.inline
+  def TRANSFER_REFUND_FAILED: TRANSFER_REFUND_FAILED = "TRANSFER_REFUND_FAILED".asInstanceOf[TRANSFER_REFUND_FAILED]
+  
+  @scala.inline
+  def TRANSFER_REFUND_SUCCEEDED: TRANSFER_REFUND_SUCCEEDED = "TRANSFER_REFUND_SUCCEEDED".asInstanceOf[TRANSFER_REFUND_SUCCEEDED]
+  
+  @scala.inline
+  def TRANSFER_SETTLEMENT_CREATED: TRANSFER_SETTLEMENT_CREATED = "TRANSFER_SETTLEMENT_CREATED".asInstanceOf[TRANSFER_SETTLEMENT_CREATED]
+  
+  @scala.inline
+  def TRANSFER_SETTLEMENT_FAILED: TRANSFER_SETTLEMENT_FAILED = "TRANSFER_SETTLEMENT_FAILED".asInstanceOf[TRANSFER_SETTLEMENT_FAILED]
+  
+  @scala.inline
+  def TRANSFER_SETTLEMENT_SUCCEEDED: TRANSFER_SETTLEMENT_SUCCEEDED = "TRANSFER_SETTLEMENT_SUCCEEDED".asInstanceOf[TRANSFER_SETTLEMENT_SUCCEEDED]
+  
+  @scala.inline
+  def TRY: TRY = "TRY".asInstanceOf[TRY]
+  
+  @scala.inline
+  def TT: TT = "TT".asInstanceOf[TT]
+  
+  @scala.inline
+  def TTD: TTD = "TTD".asInstanceOf[TTD]
+  
+  @scala.inline
+  def TV: TV = "TV".asInstanceOf[TV]
+  
+  @scala.inline
+  def TVD: TVD = "TVD".asInstanceOf[TVD]
+  
+  @scala.inline
+  def TW: TW = "TW".asInstanceOf[TW]
+  
+  @scala.inline
+  def TWD: TWD = "TWD".asInstanceOf[TWD]
+  
+  @scala.inline
+  def TZ: TZ = "TZ".asInstanceOf[TZ]
+  
+  @scala.inline
+  def TZS: TZS = "TZS".asInstanceOf[TZS]
+  
+  @scala.inline
+  def Tag: Tag = "Tag".asInstanceOf[Tag]
+  
+  @scala.inline
+  def Type: Type = "Type".asInstanceOf[Type]
+  
+  @scala.inline
+  def UA: UA = "UA".asInstanceOf[UA]
+  
+  @scala.inline
+  def UAH: UAH = "UAH".asInstanceOf[UAH]
+  
+  @scala.inline
+  def UBO_DECLARATION_CREATED: UBO_DECLARATION_CREATED = "UBO_DECLARATION_CREATED".asInstanceOf[UBO_DECLARATION_CREATED]
+  
+  @scala.inline
+  def UBO_DECLARATION_REFUSED: UBO_DECLARATION_REFUSED = "UBO_DECLARATION_REFUSED".asInstanceOf[UBO_DECLARATION_REFUSED]
+  
+  @scala.inline
+  def UBO_DECLARATION_VALIDATED: UBO_DECLARATION_VALIDATED = "UBO_DECLARATION_VALIDATED".asInstanceOf[UBO_DECLARATION_VALIDATED]
+  
+  @scala.inline
+  def UBO_DECLARATION_VALIDATION_ASKED: UBO_DECLARATION_VALIDATION_ASKED = "UBO_DECLARATION_VALIDATION_ASKED".asInstanceOf[UBO_DECLARATION_VALIDATION_ASKED]
+  
+  @scala.inline
+  def UG: UG = "UG".asInstanceOf[UG]
+  
+  @scala.inline
+  def UGX: UGX = "UGX".asInstanceOf[UGX]
+  
+  @scala.inline
+  def UM: UM = "UM".asInstanceOf[UM]
+  
+  @scala.inline
+  def UNDERAGE_PERSON: UNDERAGE_PERSON = "UNDERAGE_PERSON".asInstanceOf[UNDERAGE_PERSON]
+  
+  @scala.inline
+  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  
+  @scala.inline
+  def US: US = "US".asInstanceOf[US]
+  
+  @scala.inline
+  def USD: USD = "USD".asInstanceOf[USD]
+  
+  @scala.inline
+  def USER_ACCEPTANCE_PROOF: USER_ACCEPTANCE_PROOF = "USER_ACCEPTANCE_PROOF".asInstanceOf[USER_ACCEPTANCE_PROOF]
+  
+  @scala.inline
+  def USER_CORRESPONDANCE: USER_CORRESPONDANCE = "USER_CORRESPONDANCE".asInstanceOf[USER_CORRESPONDANCE]
+  
+  @scala.inline
+  def UY: UY = "UY".asInstanceOf[UY]
+  
+  @scala.inline
+  def UYU: UYU = "UYU".asInstanceOf[UYU]
+  
+  @scala.inline
+  def UZ: UZ = "UZ".asInstanceOf[UZ]
+  
+  @scala.inline
+  def UZS: UZS = "UZS".asInstanceOf[UZS]
+  
+  @scala.inline
+  def VA: VA = "VA".asInstanceOf[VA]
+  
+  @scala.inline
+  def VALID: VALID = "VALID".asInstanceOf[VALID]
+  
+  @scala.inline
+  def VALIDATED: VALIDATED = "VALIDATED".asInstanceOf[VALIDATED]
+  
+  @scala.inline
+  def VALIDATION_ASKED: VALIDATION_ASKED = "VALIDATION_ASKED".asInstanceOf[VALIDATION_ASKED]
+  
+  @scala.inline
+  def VC: VC = "VC".asInstanceOf[VC]
+  
+  @scala.inline
+  def VE: VE = "VE".asInstanceOf[VE]
+  
+  @scala.inline
+  def VEF: VEF = "VEF".asInstanceOf[VEF]
+  
+  @scala.inline
+  def VG: VG = "VG".asInstanceOf[VG]
+  
+  @scala.inline
+  def VI: VI = "VI".asInstanceOf[VI]
+  
+  @scala.inline
+  def VN: VN = "VN".asInstanceOf[VN]
+  
+  @scala.inline
+  def VND: VND = "VND".asInstanceOf[VND]
+  
+  @scala.inline
+  def VU: VU = "VU".asInstanceOf[VU]
+  
+  @scala.inline
+  def VUV: VUV = "VUV".asInstanceOf[VUV]
+  
+  @scala.inline
+  def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
+  
+  @scala.inline
+  def WEB: WEB = "WEB".asInstanceOf[WEB]
+  
+  @scala.inline
+  def WF: WF = "WF".asInstanceOf[WF]
+  
+  @scala.inline
+  def WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS: WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS = "WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS".asInstanceOf[WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS]
+  
+  @scala.inline
+  def WS: WS = "WS".asInstanceOf[WS]
+  
+  @scala.inline
+  def WST: WST = "WST".asInstanceOf[WST]
+  
+  @scala.inline
+  def WireReference: WireReference = "WireReference".asInstanceOf[WireReference]
+  
+  @scala.inline
+  def XAF: XAF = "XAF".asInstanceOf[XAF]
+  
+  @scala.inline
+  def XCD: XCD = "XCD".asInstanceOf[XCD]
+  
+  @scala.inline
+  def XDR: XDR = "XDR".asInstanceOf[XDR]
+  
+  @scala.inline
+  def XOF: XOF = "XOF".asInstanceOf[XOF]
+  
+  @scala.inline
+  def XPF: XPF = "XPF".asInstanceOf[XPF]
+  
+  @scala.inline
+  def YE: YE = "YE".asInstanceOf[YE]
+  
+  @scala.inline
+  def YER: YER = "YER".asInstanceOf[YER]
+  
+  @scala.inline
+  def YT: YT = "YT".asInstanceOf[YT]
+  
+  @scala.inline
+  def ZA: ZA = "ZA".asInstanceOf[ZA]
+  
+  @scala.inline
+  def ZAR: ZAR = "ZAR".asInstanceOf[ZAR]
+  
+  @scala.inline
+  def ZM: ZM = "ZM".asInstanceOf[ZM]
+  
+  @scala.inline
+  def ZMW: ZMW = "ZMW".asInstanceOf[ZMW]
+  
+  @scala.inline
+  def ZW: ZW = "ZW".asInstanceOf[ZW]
+  
+  @scala.inline
+  def ZWD: ZWD = "ZWD".asInstanceOf[ZWD]
+  
+  @scala.inline
+  def authentication_oauth: authentication_oauth = "authentication_oauth".asInstanceOf[authentication_oauth]
+  
+  @scala.inline
+  def banking_aliases_all: banking_aliases_all = "banking_aliases_all".asInstanceOf[banking_aliases_all]
+  
+  @scala.inline
+  def banking_aliases_get: banking_aliases_get = "banking_aliases_get".asInstanceOf[banking_aliases_get]
+  
+  @scala.inline
+  def banking_aliases_iban_create: banking_aliases_iban_create = "banking_aliases_iban_create".asInstanceOf[banking_aliases_iban_create]
+  
+  @scala.inline
+  def banking_aliases_update: banking_aliases_update = "banking_aliases_update".asInstanceOf[banking_aliases_update]
+  
+  @scala.inline
+  def card_get: card_get = "card_get".asInstanceOf[card_get]
+  
+  @scala.inline
+  def card_get_preauthorizations: card_get_preauthorizations = "card_get_preauthorizations".asInstanceOf[card_get_preauthorizations]
+  
+  @scala.inline
+  def card_save: card_save = "card_save".asInstanceOf[card_save]
+  
+  @scala.inline
+  def cardregistration_create: cardregistration_create = "cardregistration_create".asInstanceOf[cardregistration_create]
+  
+  @scala.inline
+  def cardregistration_get: cardregistration_get = "cardregistration_get".asInstanceOf[cardregistration_get]
+  
+  @scala.inline
+  def cardregistration_save: cardregistration_save = "cardregistration_save".asInstanceOf[cardregistration_save]
+  
+  @scala.inline
+  def cards_get_by_fingerprint: cards_get_by_fingerprint = "cards_get_by_fingerprint".asInstanceOf[cards_get_by_fingerprint]
+  
+  @scala.inline
+  def client_wallets_all: client_wallets_all = "client_wallets_all".asInstanceOf[client_wallets_all]
+  
+  @scala.inline
+  def client_wallets_by_fundsType: client_wallets_by_fundsType = "client_wallets_by_fundsType".asInstanceOf[client_wallets_by_fundsType]
+  
+  @scala.inline
+  def client_wallets_get: client_wallets_get = "client_wallets_get".asInstanceOf[client_wallets_get]
+  
+  @scala.inline
+  def client_wallets_transactions: client_wallets_transactions = "client_wallets_transactions".asInstanceOf[client_wallets_transactions]
+  
+  @scala.inline
+  def clients_get: clients_get = "clients_get".asInstanceOf[clients_get]
+  
+  @scala.inline
+  def clients_update: clients_update = "clients_update".asInstanceOf[clients_update]
+  
+  @scala.inline
+  def clients_upload_logo: clients_upload_logo = "clients_upload_logo".asInstanceOf[clients_upload_logo]
+  
+  @scala.inline
+  def dispute_save_close: dispute_save_close = "dispute_save_close".asInstanceOf[dispute_save_close]
+  
+  @scala.inline
+  def disputes_all: disputes_all = "disputes_all".asInstanceOf[disputes_all]
+  
+  @scala.inline
+  def disputes_document_all: disputes_document_all = "disputes_document_all".asInstanceOf[disputes_document_all]
+  
+  @scala.inline
+  def disputes_document_create: disputes_document_create = "disputes_document_create".asInstanceOf[disputes_document_create]
+  
+  @scala.inline
+  def disputes_document_create_consult: disputes_document_create_consult = "disputes_document_create_consult".asInstanceOf[disputes_document_create_consult]
+  
+  @scala.inline
+  def disputes_document_get: disputes_document_get = "disputes_document_get".asInstanceOf[disputes_document_get]
+  
+  @scala.inline
+  def disputes_document_get_for_dispute: disputes_document_get_for_dispute = "disputes_document_get_for_dispute".asInstanceOf[disputes_document_get_for_dispute]
+  
+  @scala.inline
+  def disputes_document_page_create: disputes_document_page_create = "disputes_document_page_create".asInstanceOf[disputes_document_page_create]
+  
+  @scala.inline
+  def disputes_document_save: disputes_document_save = "disputes_document_save".asInstanceOf[disputes_document_save]
+  
+  @scala.inline
+  def disputes_get: disputes_get = "disputes_get".asInstanceOf[disputes_get]
+  
+  @scala.inline
+  def disputes_get_for_user: disputes_get_for_user = "disputes_get_for_user".asInstanceOf[disputes_get_for_user]
+  
+  @scala.inline
+  def disputes_get_for_wallet: disputes_get_for_wallet = "disputes_get_for_wallet".asInstanceOf[disputes_get_for_wallet]
+  
+  @scala.inline
+  def disputes_get_transactions: disputes_get_transactions = "disputes_get_transactions".asInstanceOf[disputes_get_transactions]
+  
+  @scala.inline
+  def disputes_pending_settlement: disputes_pending_settlement = "disputes_pending_settlement".asInstanceOf[disputes_pending_settlement]
+  
+  @scala.inline
+  def disputes_repudiation_create_settlement: disputes_repudiation_create_settlement = "disputes_repudiation_create_settlement".asInstanceOf[disputes_repudiation_create_settlement]
+  
+  @scala.inline
+  def disputes_repudiation_get: disputes_repudiation_get = "disputes_repudiation_get".asInstanceOf[disputes_repudiation_get]
+  
+  @scala.inline
+  def disputes_repudiation_get_settlement: disputes_repudiation_get_settlement = "disputes_repudiation_get_settlement".asInstanceOf[disputes_repudiation_get_settlement]
+  
+  @scala.inline
+  def disputes_save_contest_funds: disputes_save_contest_funds = "disputes_save_contest_funds".asInstanceOf[disputes_save_contest_funds]
+  
+  @scala.inline
+  def disputes_save_tag: disputes_save_tag = "disputes_save_tag".asInstanceOf[disputes_save_tag]
+  
+  @scala.inline
+  def events_all: events_all = "events_all".asInstanceOf[events_all]
+  
+  @scala.inline
+  def hooks_all: hooks_all = "hooks_all".asInstanceOf[hooks_all]
+  
+  @scala.inline
+  def hooks_create: hooks_create = "hooks_create".asInstanceOf[hooks_create]
+  
+  @scala.inline
+  def hooks_get: hooks_get = "hooks_get".asInstanceOf[hooks_get]
+  
+  @scala.inline
+  def hooks_save: hooks_save = "hooks_save".asInstanceOf[hooks_save]
+  
+  @scala.inline
+  def kyc_documents_all: kyc_documents_all = "kyc_documents_all".asInstanceOf[kyc_documents_all]
+  
+  @scala.inline
+  def kyc_documents_create: kyc_documents_create = "kyc_documents_create".asInstanceOf[kyc_documents_create]
+  
+  @scala.inline
+  def kyc_documents_create_consult: kyc_documents_create_consult = "kyc_documents_create_consult".asInstanceOf[kyc_documents_create_consult]
+  
+  @scala.inline
+  def kyc_documents_get: kyc_documents_get = "kyc_documents_get".asInstanceOf[kyc_documents_get]
+  
+  @scala.inline
+  def kyc_documents_get_alt: kyc_documents_get_alt = "kyc_documents_get_alt".asInstanceOf[kyc_documents_get_alt]
+  
+  @scala.inline
+  def kyc_documents_save: kyc_documents_save = "kyc_documents_save".asInstanceOf[kyc_documents_save]
+  
+  @scala.inline
+  def kyc_page_create: kyc_page_create = "kyc_page_create".asInstanceOf[kyc_page_create]
+  
+  @scala.inline
+  def mandates_all: mandates_all = "mandates_all".asInstanceOf[mandates_all]
+  
+  @scala.inline
+  def mandates_cancel: mandates_cancel = "mandates_cancel".asInstanceOf[mandates_cancel]
+  
+  @scala.inline
+  def `mandates_directdebit-web_create`: `mandates_directdebit-web_create` = "mandates_directdebit-web_create".asInstanceOf[`mandates_directdebit-web_create`]
+  
+  @scala.inline
+  def mandates_get: mandates_get = "mandates_get".asInstanceOf[mandates_get]
+  
+  @scala.inline
+  def mandates_get_for_bank_account: mandates_get_for_bank_account = "mandates_get_for_bank_account".asInstanceOf[mandates_get_for_bank_account]
+  
+  @scala.inline
+  def mandates_get_for_user: mandates_get_for_user = "mandates_get_for_user".asInstanceOf[mandates_get_for_user]
+  
+  @scala.inline
+  def `payins_bankwire-direct_create`: `payins_bankwire-direct_create` = "payins_bankwire-direct_create".asInstanceOf[`payins_bankwire-direct_create`]
+  
+  @scala.inline
+  def `payins_card-direct_create`: `payins_card-direct_create` = "payins_card-direct_create".asInstanceOf[`payins_card-direct_create`]
+  
+  @scala.inline
+  def `payins_card-web_create`: `payins_card-web_create` = "payins_card-web_create".asInstanceOf[`payins_card-web_create`]
+  
+  @scala.inline
+  def payins_createrefunds: payins_createrefunds = "payins_createrefunds".asInstanceOf[payins_createrefunds]
+  
+  @scala.inline
+  def `payins_directdebit-direct_create`: `payins_directdebit-direct_create` = "payins_directdebit-direct_create".asInstanceOf[`payins_directdebit-direct_create`]
+  
+  @scala.inline
+  def `payins_directdebit-web_create`: `payins_directdebit-web_create` = "payins_directdebit-web_create".asInstanceOf[`payins_directdebit-web_create`]
+  
+  @scala.inline
+  def payins_get: payins_get = "payins_get".asInstanceOf[payins_get]
+  
+  @scala.inline
+  def `payins_paypal-web_create`: `payins_paypal-web_create` = "payins_paypal-web_create".asInstanceOf[`payins_paypal-web_create`]
+  
+  @scala.inline
+  def `payins_preauthorized-direct_create`: `payins_preauthorized-direct_create` = "payins_preauthorized-direct_create".asInstanceOf[`payins_preauthorized-direct_create`]
+  
+  @scala.inline
+  def payouts_bankwire_create: payouts_bankwire_create = "payouts_bankwire_create".asInstanceOf[payouts_bankwire_create]
+  
+  @scala.inline
+  def payouts_get: payouts_get = "payouts_get".asInstanceOf[payouts_get]
+  
+  @scala.inline
+  def preauthorization_create: preauthorization_create = "preauthorization_create".asInstanceOf[preauthorization_create]
+  
+  @scala.inline
+  def preauthorization_get: preauthorization_get = "preauthorization_get".asInstanceOf[preauthorization_get]
+  
+  @scala.inline
+  def preauthorization_save: preauthorization_save = "preauthorization_save".asInstanceOf[preauthorization_save]
+  
+  @scala.inline
+  def preauthorizations_get_for_user: preauthorizations_get_for_user = "preauthorizations_get_for_user".asInstanceOf[preauthorizations_get_for_user]
+  
+  @scala.inline
+  def refunds_get: refunds_get = "refunds_get".asInstanceOf[refunds_get]
+  
+  @scala.inline
+  def refunds_get_for_payin: refunds_get_for_payin = "refunds_get_for_payin".asInstanceOf[refunds_get_for_payin]
+  
+  @scala.inline
+  def refunds_get_for_payout: refunds_get_for_payout = "refunds_get_for_payout".asInstanceOf[refunds_get_for_payout]
+  
+  @scala.inline
+  def refunds_get_for_repudiation: refunds_get_for_repudiation = "refunds_get_for_repudiation".asInstanceOf[refunds_get_for_repudiation]
+  
+  @scala.inline
+  def refunds_get_for_transfer: refunds_get_for_transfer = "refunds_get_for_transfer".asInstanceOf[refunds_get_for_transfer]
+  
+  @scala.inline
+  def reports_all: reports_all = "reports_all".asInstanceOf[reports_all]
+  
+  @scala.inline
+  def reports_get: reports_get = "reports_get".asInstanceOf[reports_get]
+  
+  @scala.inline
+  def reports_transaction_create: reports_transaction_create = "reports_transaction_create".asInstanceOf[reports_transaction_create]
+  
+  @scala.inline
+  def reports_wallet_create: reports_wallet_create = "reports_wallet_create".asInstanceOf[reports_wallet_create]
+  
+  @scala.inline
+  def responses_get: responses_get = "responses_get".asInstanceOf[responses_get]
+  
+  @scala.inline
+  def transactions_get_for_bank_account: transactions_get_for_bank_account = "transactions_get_for_bank_account".asInstanceOf[transactions_get_for_bank_account]
+  
+  @scala.inline
+  def transactions_get_for_card: transactions_get_for_card = "transactions_get_for_card".asInstanceOf[transactions_get_for_card]
+  
+  @scala.inline
+  def transactions_get_for_mandate: transactions_get_for_mandate = "transactions_get_for_mandate".asInstanceOf[transactions_get_for_mandate]
+  
+  @scala.inline
+  def transfers_create: transfers_create = "transfers_create".asInstanceOf[transfers_create]
+  
+  @scala.inline
+  def transfers_createrefunds: transfers_createrefunds = "transfers_createrefunds".asInstanceOf[transfers_createrefunds]
+  
+  @scala.inline
+  def transfers_get: transfers_get = "transfers_get".asInstanceOf[transfers_get]
+  
+  @scala.inline
+  def ubo_declaration_create: ubo_declaration_create = "ubo_declaration_create".asInstanceOf[ubo_declaration_create]
+  
+  @scala.inline
+  def ubo_declaration_get: ubo_declaration_get = "ubo_declaration_get".asInstanceOf[ubo_declaration_get]
+  
+  @scala.inline
+  def ubo_declaration_update: ubo_declaration_update = "ubo_declaration_update".asInstanceOf[ubo_declaration_update]
+  
+  @scala.inline
+  def users_all: users_all = "users_all".asInstanceOf[users_all]
+  
+  @scala.inline
+  def users_allbankaccount: users_allbankaccount = "users_allbankaccount".asInstanceOf[users_allbankaccount]
+  
+  @scala.inline
+  def users_allcards: users_allcards = "users_allcards".asInstanceOf[users_allcards]
+  
+  @scala.inline
+  def users_allkycdocuments: users_allkycdocuments = "users_allkycdocuments".asInstanceOf[users_allkycdocuments]
+  
+  @scala.inline
+  def users_alltransactions: users_alltransactions = "users_alltransactions".asInstanceOf[users_alltransactions]
+  
+  @scala.inline
+  def users_allwallets: users_allwallets = "users_allwallets".asInstanceOf[users_allwallets]
+  
+  @scala.inline
+  def users_createbankaccounts_ca: users_createbankaccounts_ca = "users_createbankaccounts_ca".asInstanceOf[users_createbankaccounts_ca]
+  
+  @scala.inline
+  def users_createbankaccounts_gb: users_createbankaccounts_gb = "users_createbankaccounts_gb".asInstanceOf[users_createbankaccounts_gb]
+  
+  @scala.inline
+  def users_createbankaccounts_iban: users_createbankaccounts_iban = "users_createbankaccounts_iban".asInstanceOf[users_createbankaccounts_iban]
+  
+  @scala.inline
+  def users_createbankaccounts_other: users_createbankaccounts_other = "users_createbankaccounts_other".asInstanceOf[users_createbankaccounts_other]
+  
+  @scala.inline
+  def users_createbankaccounts_us: users_createbankaccounts_us = "users_createbankaccounts_us".asInstanceOf[users_createbankaccounts_us]
+  
+  @scala.inline
+  def users_createlegals: users_createlegals = "users_createlegals".asInstanceOf[users_createlegals]
+  
+  @scala.inline
+  def users_createnaturals: users_createnaturals = "users_createnaturals".asInstanceOf[users_createnaturals]
+  
+  @scala.inline
+  def users_deactivate_bankaccount: users_deactivate_bankaccount = "users_deactivate_bankaccount".asInstanceOf[users_deactivate_bankaccount]
+  
+  @scala.inline
+  def users_get: users_get = "users_get".asInstanceOf[users_get]
+  
+  @scala.inline
+  def users_getbankaccount: users_getbankaccount = "users_getbankaccount".asInstanceOf[users_getbankaccount]
+  
+  @scala.inline
+  def users_getemoney: users_getemoney = "users_getemoney".asInstanceOf[users_getemoney]
+  
+  @scala.inline
+  def users_getlegals: users_getlegals = "users_getlegals".asInstanceOf[users_getlegals]
+  
+  @scala.inline
+  def users_getnaturals: users_getnaturals = "users_getnaturals".asInstanceOf[users_getnaturals]
+  
+  @scala.inline
+  def users_savelegals: users_savelegals = "users_savelegals".asInstanceOf[users_savelegals]
+  
+  @scala.inline
+  def users_savenaturals: users_savenaturals = "users_savenaturals".asInstanceOf[users_savenaturals]
+  
+  @scala.inline
+  def wallets_alltransactions: wallets_alltransactions = "wallets_alltransactions".asInstanceOf[wallets_alltransactions]
+  
+  @scala.inline
+  def wallets_create: wallets_create = "wallets_create".asInstanceOf[wallets_create]
+  
+  @scala.inline
+  def wallets_get: wallets_get = "wallets_get".asInstanceOf[wallets_get]
+  
+  @scala.inline
+  def wallets_save: wallets_save = "wallets_save".asInstanceOf[wallets_save]
+  
   @js.native
   sealed trait ACTIVE extends MandateStatus
   
@@ -2456,1548 +4770,4 @@ object mangopay2NodejsSdkStrings {
   
   @js.native
   sealed trait wallets_save extends ApiMethod
-  
-  @scala.inline
-  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
-  @scala.inline
-  def AD: AD = "AD".asInstanceOf[AD]
-  @scala.inline
-  def ADDRESS_MATCH_ONLY: ADDRESS_MATCH_ONLY = "ADDRESS_MATCH_ONLY".asInstanceOf[ADDRESS_MATCH_ONLY]
-  @scala.inline
-  def ADDRESS_PROOF: ADDRESS_PROOF = "ADDRESS_PROOF".asInstanceOf[ADDRESS_PROOF]
-  @scala.inline
-  def AE: AE = "AE".asInstanceOf[AE]
-  @scala.inline
-  def AED: AED = "AED".asInstanceOf[AED]
-  @scala.inline
-  def AF: AF = "AF".asInstanceOf[AF]
-  @scala.inline
-  def AFN: AFN = "AFN".asInstanceOf[AFN]
-  @scala.inline
-  def AG: AG = "AG".asInstanceOf[AG]
-  @scala.inline
-  def AI: AI = "AI".asInstanceOf[AI]
-  @scala.inline
-  def AL: AL = "AL".asInstanceOf[AL]
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def AM: AM = "AM".asInstanceOf[AM]
-  @scala.inline
-  def AMD: AMD = "AMD".asInstanceOf[AMD]
-  @scala.inline
-  def ANG: ANG = "ANG".asInstanceOf[ANG]
-  @scala.inline
-  def AO: AO = "AO".asInstanceOf[AO]
-  @scala.inline
-  def AOA: AOA = "AOA".asInstanceOf[AOA]
-  @scala.inline
-  def AQ: AQ = "AQ".asInstanceOf[AQ]
-  @scala.inline
-  def AR: AR = "AR".asInstanceOf[AR]
-  @scala.inline
-  def ARS: ARS = "ARS".asInstanceOf[ARS]
-  @scala.inline
-  def ARTICLES_OF_ASSOCIATION: ARTICLES_OF_ASSOCIATION = "ARTICLES_OF_ASSOCIATION".asInstanceOf[ARTICLES_OF_ASSOCIATION]
-  @scala.inline
-  def ART_MUSIC_ENTERTAINMENT: ART_MUSIC_ENTERTAINMENT = "ART_MUSIC_ENTERTAINMENT".asInstanceOf[ART_MUSIC_ENTERTAINMENT]
-  @scala.inline
-  def AS: AS = "AS".asInstanceOf[AS]
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def AT: AT = "AT".asInstanceOf[AT]
-  @scala.inline
-  def AU: AU = "AU".asInstanceOf[AU]
-  @scala.inline
-  def AUD: AUD = "AUD".asInstanceOf[AUD]
-  @scala.inline
-  def AUTHORISATION_DISPUTED: AUTHORISATION_DISPUTED = "AUTHORISATION_DISPUTED".asInstanceOf[AUTHORISATION_DISPUTED]
-  @scala.inline
-  def AW: AW = "AW".asInstanceOf[AW]
-  @scala.inline
-  def AWG: AWG = "AWG".asInstanceOf[AWG]
-  @scala.inline
-  def AX: AX = "AX".asInstanceOf[AX]
-  @scala.inline
-  def AZ: AZ = "AZ".asInstanceOf[AZ]
-  @scala.inline
-  def AZN: AZN = "AZN".asInstanceOf[AZN]
-  @scala.inline
-  def Alias: Alias = "Alias".asInstanceOf[Alias]
-  @scala.inline
-  def AuthorId: AuthorId = "AuthorId".asInstanceOf[AuthorId]
-  @scala.inline
-  def BA: BA = "BA".asInstanceOf[BA]
-  @scala.inline
-  def BACS: BACS = "BACS".asInstanceOf[BACS]
-  @scala.inline
-  def BAM: BAM = "BAM".asInstanceOf[BAM]
-  @scala.inline
-  def BANKACCOUNT_HAS_BEEN_CLOSED: BANKACCOUNT_HAS_BEEN_CLOSED = "BANKACCOUNT_HAS_BEEN_CLOSED".asInstanceOf[BANKACCOUNT_HAS_BEEN_CLOSED]
-  @scala.inline
-  def BANKACCOUNT_INCORRECT: BANKACCOUNT_INCORRECT = "BANKACCOUNT_INCORRECT".asInstanceOf[BANKACCOUNT_INCORRECT]
-  @scala.inline
-  def BANK_WIRE: BANK_WIRE = "BANK_WIRE".asInstanceOf[BANK_WIRE]
-  @scala.inline
-  def BB: BB = "BB".asInstanceOf[BB]
-  @scala.inline
-  def BBD: BBD = "BBD".asInstanceOf[BBD]
-  @scala.inline
-  def BCMC: BCMC = "BCMC".asInstanceOf[BCMC]
-  @scala.inline
-  def BD: BD = "BD".asInstanceOf[BD]
-  @scala.inline
-  def BDT: BDT = "BDT".asInstanceOf[BDT]
-  @scala.inline
-  def BE: BE = "BE".asInstanceOf[BE]
-  @scala.inline
-  def BEAUTY_COSMETICS_HEALTH: BEAUTY_COSMETICS_HEALTH = "BEAUTY_COSMETICS_HEALTH".asInstanceOf[BEAUTY_COSMETICS_HEALTH]
-  @scala.inline
-  def BF: BF = "BF".asInstanceOf[BF]
-  @scala.inline
-  def BG: BG = "BG".asInstanceOf[BG]
-  @scala.inline
-  def BGN: BGN = "BGN".asInstanceOf[BGN]
-  @scala.inline
-  def BH: BH = "BH".asInstanceOf[BH]
-  @scala.inline
-  def BHD: BHD = "BHD".asInstanceOf[BHD]
-  @scala.inline
-  def BI: BI = "BI".asInstanceOf[BI]
-  @scala.inline
-  def BIF: BIF = "BIF".asInstanceOf[BIF]
-  @scala.inline
-  def BJ: BJ = "BJ".asInstanceOf[BJ]
-  @scala.inline
-  def BL: BL = "BL".asInstanceOf[BL]
-  @scala.inline
-  def BM: BM = "BM".asInstanceOf[BM]
-  @scala.inline
-  def BMD: BMD = "BMD".asInstanceOf[BMD]
-  @scala.inline
-  def BN: BN = "BN".asInstanceOf[BN]
-  @scala.inline
-  def BND: BND = "BND".asInstanceOf[BND]
-  @scala.inline
-  def BO: BO = "BO".asInstanceOf[BO]
-  @scala.inline
-  def BOB: BOB = "BOB".asInstanceOf[BOB]
-  @scala.inline
-  def BQ: BQ = "BQ".asInstanceOf[BQ]
-  @scala.inline
-  def BR: BR = "BR".asInstanceOf[BR]
-  @scala.inline
-  def BRL: BRL = "BRL".asInstanceOf[BRL]
-  @scala.inline
-  def BS: BS = "BS".asInstanceOf[BS]
-  @scala.inline
-  def BSD: BSD = "BSD".asInstanceOf[BSD]
-  @scala.inline
-  def BT: BT = "BT".asInstanceOf[BT]
-  @scala.inline
-  def BTN: BTN = "BTN".asInstanceOf[BTN]
-  @scala.inline
-  def BUSINESS: BUSINESS = "BUSINESS".asInstanceOf[BUSINESS]
-  @scala.inline
-  def BV: BV = "BV".asInstanceOf[BV]
-  @scala.inline
-  def BW: BW = "BW".asInstanceOf[BW]
-  @scala.inline
-  def BWP: BWP = "BWP".asInstanceOf[BWP]
-  @scala.inline
-  def BY: BY = "BY".asInstanceOf[BY]
-  @scala.inline
-  def BYN: BYN = "BYN".asInstanceOf[BYN]
-  @scala.inline
-  def BZ: BZ = "BZ".asInstanceOf[BZ]
-  @scala.inline
-  def BZD: BZD = "BZD".asInstanceOf[BZD]
-  @scala.inline
-  def BankAccountId: BankAccountId = "BankAccountId".asInstanceOf[BankAccountId]
-  @scala.inline
-  def BankWireRef: BankWireRef = "BankWireRef".asInstanceOf[BankWireRef]
-  @scala.inline
-  def Birthday: Birthday = "Birthday".asInstanceOf[Birthday]
-  @scala.inline
-  def CA: CA = "CA".asInstanceOf[CA]
-  @scala.inline
-  def CAD: CAD = "CAD".asInstanceOf[CAD]
-  @scala.inline
-  def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
-  @scala.inline
-  def CANCELED_REOCCURING_TRANSACTION: CANCELED_REOCCURING_TRANSACTION = "CANCELED_REOCCURING_TRANSACTION".asInstanceOf[CANCELED_REOCCURING_TRANSACTION]
-  @scala.inline
-  def CARD: CARD = "CARD".asInstanceOf[CARD]
-  @scala.inline
-  def CB_VISA_MASTERCARD: CB_VISA_MASTERCARD = "CB_VISA_MASTERCARD".asInstanceOf[CB_VISA_MASTERCARD]
-  @scala.inline
-  def CC: CC = "CC".asInstanceOf[CC]
-  @scala.inline
-  def CD: CD = "CD".asInstanceOf[CD]
-  @scala.inline
-  def CDF: CDF = "CDF".asInstanceOf[CDF]
-  @scala.inline
-  def CF: CF = "CF".asInstanceOf[CF]
-  @scala.inline
-  def CG: CG = "CG".asInstanceOf[CG]
-  @scala.inline
-  def CH: CH = "CH".asInstanceOf[CH]
-  @scala.inline
-  def CHECKING: CHECKING = "CHECKING".asInstanceOf[CHECKING]
-  @scala.inline
-  def CHF: CHF = "CHF".asInstanceOf[CHF]
-  @scala.inline
-  def CI: CI = "CI".asInstanceOf[CI]
-  @scala.inline
-  def CK: CK = "CK".asInstanceOf[CK]
-  @scala.inline
-  def CL: CL = "CL".asInstanceOf[CL]
-  @scala.inline
-  def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
-  @scala.inline
-  def CLP: CLP = "CLP".asInstanceOf[CLP]
-  @scala.inline
-  def CM: CM = "CM".asInstanceOf[CM]
-  @scala.inline
-  def CN: CN = "CN".asInstanceOf[CN]
-  @scala.inline
-  def CNY: CNY = "CNY".asInstanceOf[CNY]
-  @scala.inline
-  def CO: CO = "CO".asInstanceOf[CO]
-  @scala.inline
-  def CONTESTABLE: CONTESTABLE = "CONTESTABLE".asInstanceOf[CONTESTABLE]
-  @scala.inline
-  def COP: COP = "COP".asInstanceOf[COP]
-  @scala.inline
-  def CR: CR = "CR".asInstanceOf[CR]
-  @scala.inline
-  def CRC: CRC = "CRC".asInstanceOf[CRC]
-  @scala.inline
-  def CREATED: CREATED = "CREATED".asInstanceOf[CREATED]
-  @scala.inline
-  def CREDIT: CREDIT = "CREDIT".asInstanceOf[CREDIT]
-  @scala.inline
-  def CROWDFUNDING: CROWDFUNDING = "CROWDFUNDING".asInstanceOf[CROWDFUNDING]
-  @scala.inline
-  def CROWDFUNDING_DONATION: CROWDFUNDING_DONATION = "CROWDFUNDING_DONATION".asInstanceOf[CROWDFUNDING_DONATION]
-  @scala.inline
-  def CROWDFUNDING_EQUITY: CROWDFUNDING_EQUITY = "CROWDFUNDING_EQUITY".asInstanceOf[CROWDFUNDING_EQUITY]
-  @scala.inline
-  def CROWDFUNDING_LOAN: CROWDFUNDING_LOAN = "CROWDFUNDING_LOAN".asInstanceOf[CROWDFUNDING_LOAN]
-  @scala.inline
-  def CROWDFUNDING_REWARD: CROWDFUNDING_REWARD = "CROWDFUNDING_REWARD".asInstanceOf[CROWDFUNDING_REWARD]
-  @scala.inline
-  def CSV: CSV = "CSV".asInstanceOf[CSV]
-  @scala.inline
-  def CU: CU = "CU".asInstanceOf[CU]
-  @scala.inline
-  def CUC: CUC = "CUC".asInstanceOf[CUC]
-  @scala.inline
-  def CUP: CUP = "CUP".asInstanceOf[CUP]
-  @scala.inline
-  def CV: CV = "CV".asInstanceOf[CV]
-  @scala.inline
-  def CVE: CVE = "CVE".asInstanceOf[CVE]
-  @scala.inline
-  def CW: CW = "CW".asInstanceOf[CW]
-  @scala.inline
-  def CX: CX = "CX".asInstanceOf[CX]
-  @scala.inline
-  def CY: CY = "CY".asInstanceOf[CY]
-  @scala.inline
-  def CZ: CZ = "CZ".asInstanceOf[CZ]
-  @scala.inline
-  def CZK: CZK = "CZK".asInstanceOf[CZK]
-  @scala.inline
-  def CardId: CardId = "CardId".asInstanceOf[CardId]
-  @scala.inline
-  def CardType: CardType = "CardType".asInstanceOf[CardType]
-  @scala.inline
-  def Country: Country = "Country".asInstanceOf[Country]
-  @scala.inline
-  def CountryOfResidence: CountryOfResidence = "CountryOfResidence".asInstanceOf[CountryOfResidence]
-  @scala.inline
-  def CreationDate: CreationDate = "CreationDate".asInstanceOf[CreationDate]
-  @scala.inline
-  def CreditedFundsAmount: CreditedFundsAmount = "CreditedFundsAmount".asInstanceOf[CreditedFundsAmount]
-  @scala.inline
-  def CreditedFundsCurrency: CreditedFundsCurrency = "CreditedFundsCurrency".asInstanceOf[CreditedFundsCurrency]
-  @scala.inline
-  def CreditedUserId: CreditedUserId = "CreditedUserId".asInstanceOf[CreditedUserId]
-  @scala.inline
-  def CreditedWalletId: CreditedWalletId = "CreditedWalletId".asInstanceOf[CreditedWalletId]
-  @scala.inline
-  def Culture: Culture = "Culture".asInstanceOf[Culture]
-  @scala.inline
-  def DE: DE = "DE".asInstanceOf[DE]
-  @scala.inline
-  def DECLARATIVE: DECLARATIVE = "DECLARATIVE".asInstanceOf[DECLARATIVE]
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  @scala.inline
-  def DELIVERY_PROOF: DELIVERY_PROOF = "DELIVERY_PROOF".asInstanceOf[DELIVERY_PROOF]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def DINERS: DINERS = "DINERS".asInstanceOf[DINERS]
-  @scala.inline
-  def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
-  @scala.inline
-  def DIRECT_DEBIT: DIRECT_DEBIT = "DIRECT_DEBIT".asInstanceOf[DIRECT_DEBIT]
-  @scala.inline
-  def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
-  @scala.inline
-  def DISPUTE_ACTION_REQUIRED: DISPUTE_ACTION_REQUIRED = "DISPUTE_ACTION_REQUIRED".asInstanceOf[DISPUTE_ACTION_REQUIRED]
-  @scala.inline
-  def DISPUTE_CLOSED: DISPUTE_CLOSED = "DISPUTE_CLOSED".asInstanceOf[DISPUTE_CLOSED]
-  @scala.inline
-  def DISPUTE_CREATED: DISPUTE_CREATED = "DISPUTE_CREATED".asInstanceOf[DISPUTE_CREATED]
-  @scala.inline
-  def DISPUTE_DOCUMENT_CREATED: DISPUTE_DOCUMENT_CREATED = "DISPUTE_DOCUMENT_CREATED".asInstanceOf[DISPUTE_DOCUMENT_CREATED]
-  @scala.inline
-  def DISPUTE_DOCUMENT_FAILED: DISPUTE_DOCUMENT_FAILED = "DISPUTE_DOCUMENT_FAILED".asInstanceOf[DISPUTE_DOCUMENT_FAILED]
-  @scala.inline
-  def DISPUTE_DOCUMENT_SUCCEEDED: DISPUTE_DOCUMENT_SUCCEEDED = "DISPUTE_DOCUMENT_SUCCEEDED".asInstanceOf[DISPUTE_DOCUMENT_SUCCEEDED]
-  @scala.inline
-  def DISPUTE_DOCUMENT_VALIDATION_ASKED: DISPUTE_DOCUMENT_VALIDATION_ASKED = "DISPUTE_DOCUMENT_VALIDATION_ASKED".asInstanceOf[DISPUTE_DOCUMENT_VALIDATION_ASKED]
-  @scala.inline
-  def DISPUTE_FURTHER_ACTION_REQUIRED: DISPUTE_FURTHER_ACTION_REQUIRED = "DISPUTE_FURTHER_ACTION_REQUIRED".asInstanceOf[DISPUTE_FURTHER_ACTION_REQUIRED]
-  @scala.inline
-  def DISPUTE_SENT_TO_BANK: DISPUTE_SENT_TO_BANK = "DISPUTE_SENT_TO_BANK".asInstanceOf[DISPUTE_SENT_TO_BANK]
-  @scala.inline
-  def DISPUTE_SUBMITTED: DISPUTE_SUBMITTED = "DISPUTE_SUBMITTED".asInstanceOf[DISPUTE_SUBMITTED]
-  @scala.inline
-  def DJ: DJ = "DJ".asInstanceOf[DJ]
-  @scala.inline
-  def DJF: DJF = "DJF".asInstanceOf[DJF]
-  @scala.inline
-  def DK: DK = "DK".asInstanceOf[DK]
-  @scala.inline
-  def DKK: DKK = "DKK".asInstanceOf[DKK]
-  @scala.inline
-  def DM: DM = "DM".asInstanceOf[DM]
-  @scala.inline
-  def DO: DO = "DO".asInstanceOf[DO]
-  @scala.inline
-  def DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA: DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA = "DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA".asInstanceOf[DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA]
-  @scala.inline
-  def DOCUMENT_DO_NOT_MATCH_USER_DATA: DOCUMENT_DO_NOT_MATCH_USER_DATA = "DOCUMENT_DO_NOT_MATCH_USER_DATA".asInstanceOf[DOCUMENT_DO_NOT_MATCH_USER_DATA]
-  @scala.inline
-  def DOCUMENT_FALSIFIED: DOCUMENT_FALSIFIED = "DOCUMENT_FALSIFIED".asInstanceOf[DOCUMENT_FALSIFIED]
-  @scala.inline
-  def DOCUMENT_HAS_EXPIRED: DOCUMENT_HAS_EXPIRED = "DOCUMENT_HAS_EXPIRED".asInstanceOf[DOCUMENT_HAS_EXPIRED]
-  @scala.inline
-  def DOCUMENT_INCOMPLETE: DOCUMENT_INCOMPLETE = "DOCUMENT_INCOMPLETE".asInstanceOf[DOCUMENT_INCOMPLETE]
-  @scala.inline
-  def DOCUMENT_MISSING: DOCUMENT_MISSING = "DOCUMENT_MISSING".asInstanceOf[DOCUMENT_MISSING]
-  @scala.inline
-  def DOCUMENT_NOT_ACCEPTED: DOCUMENT_NOT_ACCEPTED = "DOCUMENT_NOT_ACCEPTED".asInstanceOf[DOCUMENT_NOT_ACCEPTED]
-  @scala.inline
-  def DOCUMENT_UNREADABLE: DOCUMENT_UNREADABLE = "DOCUMENT_UNREADABLE".asInstanceOf[DOCUMENT_UNREADABLE]
-  @scala.inline
-  def DOP: DOP = "DOP".asInstanceOf[DOP]
-  @scala.inline
-  def DUPLICATE: DUPLICATE = "DUPLICATE".asInstanceOf[DUPLICATE]
-  @scala.inline
-  def DZ: DZ = "DZ".asInstanceOf[DZ]
-  @scala.inline
-  def DZD: DZD = "DZD".asInstanceOf[DZD]
-  @scala.inline
-  def DebitedFundsAmount: DebitedFundsAmount = "DebitedFundsAmount".asInstanceOf[DebitedFundsAmount]
-  @scala.inline
-  def DebitedFundsCurrency: DebitedFundsCurrency = "DebitedFundsCurrency".asInstanceOf[DebitedFundsCurrency]
-  @scala.inline
-  def DebitedWalletId: DebitedWalletId = "DebitedWalletId".asInstanceOf[DebitedWalletId]
-  @scala.inline
-  def DeclaredDebitedFundsAmount: DeclaredDebitedFundsAmount = "DeclaredDebitedFundsAmount".asInstanceOf[DeclaredDebitedFundsAmount]
-  @scala.inline
-  def DeclaredDebitedFundsCurrency: DeclaredDebitedFundsCurrency = "DeclaredDebitedFundsCurrency".asInstanceOf[DeclaredDebitedFundsCurrency]
-  @scala.inline
-  def DeclaredFeesAmount: DeclaredFeesAmount = "DeclaredFeesAmount".asInstanceOf[DeclaredFeesAmount]
-  @scala.inline
-  def DeclaredFeesCurrency: DeclaredFeesCurrency = "DeclaredFeesCurrency".asInstanceOf[DeclaredFeesCurrency]
-  @scala.inline
-  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  @scala.inline
-  def EC: EC = "EC".asInstanceOf[EC]
-  @scala.inline
-  def EE: EE = "EE".asInstanceOf[EE]
-  @scala.inline
-  def EG: EG = "EG".asInstanceOf[EG]
-  @scala.inline
-  def EGP: EGP = "EGP".asInstanceOf[EGP]
-  @scala.inline
-  def EH: EH = "EH".asInstanceOf[EH]
-  @scala.inline
-  def EN: EN = "EN".asInstanceOf[EN]
-  @scala.inline
-  def ENABLED: ENABLED = "ENABLED".asInstanceOf[ENABLED]
-  @scala.inline
-  def ER: ER = "ER".asInstanceOf[ER]
-  @scala.inline
-  def ERN: ERN = "ERN".asInstanceOf[ERN]
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  @scala.inline
-  def ES: ES = "ES".asInstanceOf[ES]
-  @scala.inline
-  def ET: ET = "ET".asInstanceOf[ET]
-  @scala.inline
-  def ETB: ETB = "ETB".asInstanceOf[ETB]
-  @scala.inline
-  def EUR: EUR = "EUR".asInstanceOf[EUR]
-  @scala.inline
-  def EXPIRED: EXPIRED = "EXPIRED".asInstanceOf[EXPIRED]
-  @scala.inline
-  def EXTERNAL_INSTRUCTION: EXTERNAL_INSTRUCTION = "EXTERNAL_INSTRUCTION".asInstanceOf[EXTERNAL_INSTRUCTION]
-  @scala.inline
-  def Email: Email = "Email".asInstanceOf[Email]
-  @scala.inline
-  def ExecutionDate: ExecutionDate = "ExecutionDate".asInstanceOf[ExecutionDate]
-  @scala.inline
-  def ExecutionType: ExecutionType = "ExecutionType".asInstanceOf[ExecutionType]
-  @scala.inline
-  def ExpirationDate: ExpirationDate = "ExpirationDate".asInstanceOf[ExpirationDate]
-  @scala.inline
-  def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
-  @scala.inline
-  def FEES: FEES = "FEES".asInstanceOf[FEES]
-  @scala.inline
-  def FI: FI = "FI".asInstanceOf[FI]
-  @scala.inline
-  def FJ: FJ = "FJ".asInstanceOf[FJ]
-  @scala.inline
-  def FJD: FJD = "FJD".asInstanceOf[FJD]
-  @scala.inline
-  def FK: FK = "FK".asInstanceOf[FK]
-  @scala.inline
-  def FKP: FKP = "FKP".asInstanceOf[FKP]
-  @scala.inline
-  def FM: FM = "FM".asInstanceOf[FM]
-  @scala.inline
-  def FO: FO = "FO".asInstanceOf[FO]
-  @scala.inline
-  def FOOD_WINE_RESTAURANTS: FOOD_WINE_RESTAURANTS = "FOOD_WINE_RESTAURANTS".asInstanceOf[FOOD_WINE_RESTAURANTS]
-  @scala.inline
-  def FORCE: FORCE = "FORCE".asInstanceOf[FORCE]
-  @scala.inline
-  def FR: FR = "FR".asInstanceOf[FR]
-  @scala.inline
-  def FRANCHISE: FRANCHISE = "FRANCHISE".asInstanceOf[FRANCHISE]
-  @scala.inline
-  def FRAUD: FRAUD = "FRAUD".asInstanceOf[FRAUD]
-  @scala.inline
-  def FULL_MATCH: FULL_MATCH = "FULL_MATCH".asInstanceOf[FULL_MATCH]
-  @scala.inline
-  def FURNITURE_GARDEN: FURNITURE_GARDEN = "FURNITURE_GARDEN".asInstanceOf[FURNITURE_GARDEN]
-  @scala.inline
-  def FeesAmount: FeesAmount = "FeesAmount".asInstanceOf[FeesAmount]
-  @scala.inline
-  def FeesCurrency: FeesCurrency = "FeesCurrency".asInstanceOf[FeesCurrency]
-  @scala.inline
-  def FirstName: FirstName = "FirstName".asInstanceOf[FirstName]
-  @scala.inline
-  def GA: GA = "GA".asInstanceOf[GA]
-  @scala.inline
-  def GB: GB = "GB".asInstanceOf[GB]
-  @scala.inline
-  def GBP: GBP = "GBP".asInstanceOf[GBP]
-  @scala.inline
-  def GD: GD = "GD".asInstanceOf[GD]
-  @scala.inline
-  def GE: GE = "GE".asInstanceOf[GE]
-  @scala.inline
-  def GEL: GEL = "GEL".asInstanceOf[GEL]
-  @scala.inline
-  def GF: GF = "GF".asInstanceOf[GF]
-  @scala.inline
-  def GG: GG = "GG".asInstanceOf[GG]
-  @scala.inline
-  def GGP: GGP = "GGP".asInstanceOf[GGP]
-  @scala.inline
-  def GH: GH = "GH".asInstanceOf[GH]
-  @scala.inline
-  def GHS: GHS = "GHS".asInstanceOf[GHS]
-  @scala.inline
-  def GI: GI = "GI".asInstanceOf[GI]
-  @scala.inline
-  def GIP: GIP = "GIP".asInstanceOf[GIP]
-  @scala.inline
-  def GL: GL = "GL".asInstanceOf[GL]
-  @scala.inline
-  def GM: GM = "GM".asInstanceOf[GM]
-  @scala.inline
-  def GMD: GMD = "GMD".asInstanceOf[GMD]
-  @scala.inline
-  def GN: GN = "GN".asInstanceOf[GN]
-  @scala.inline
-  def GNF: GNF = "GNF".asInstanceOf[GNF]
-  @scala.inline
-  def GP: GP = "GP".asInstanceOf[GP]
-  @scala.inline
-  def GQ: GQ = "GQ".asInstanceOf[GQ]
-  @scala.inline
-  def GR: GR = "GR".asInstanceOf[GR]
-  @scala.inline
-  def GS: GS = "GS".asInstanceOf[GS]
-  @scala.inline
-  def GT: GT = "GT".asInstanceOf[GT]
-  @scala.inline
-  def GTQ: GTQ = "GTQ".asInstanceOf[GTQ]
-  @scala.inline
-  def GU: GU = "GU".asInstanceOf[GU]
-  @scala.inline
-  def GW: GW = "GW".asInstanceOf[GW]
-  @scala.inline
-  def GY: GY = "GY".asInstanceOf[GY]
-  @scala.inline
-  def GYD: GYD = "GYD".asInstanceOf[GYD]
-  @scala.inline
-  def HK: HK = "HK".asInstanceOf[HK]
-  @scala.inline
-  def HKD: HKD = "HKD".asInstanceOf[HKD]
-  @scala.inline
-  def HM: HM = "HM".asInstanceOf[HM]
-  @scala.inline
-  def HN: HN = "HN".asInstanceOf[HN]
-  @scala.inline
-  def HNL: HNL = "HNL".asInstanceOf[HNL]
-  @scala.inline
-  def HOSPITALITY_TRAVEL_CORIDING: HOSPITALITY_TRAVEL_CORIDING = "HOSPITALITY_TRAVEL_CORIDING".asInstanceOf[HOSPITALITY_TRAVEL_CORIDING]
-  @scala.inline
-  def HR: HR = "HR".asInstanceOf[HR]
-  @scala.inline
-  def HRK: HRK = "HRK".asInstanceOf[HRK]
-  @scala.inline
-  def HT: HT = "HT".asInstanceOf[HT]
-  @scala.inline
-  def HTG: HTG = "HTG".asInstanceOf[HTG]
-  @scala.inline
-  def HU: HU = "HU".asInstanceOf[HU]
-  @scala.inline
-  def HUF: HUF = "HUF".asInstanceOf[HUF]
-  @scala.inline
-  def IBAN: IBAN = "IBAN".asInstanceOf[IBAN]
-  @scala.inline
-  def ID: ID = "ID".asInstanceOf[ID]
-  @scala.inline
-  def IDEAL: IDEAL = "IDEAL".asInstanceOf[IDEAL]
-  @scala.inline
-  def IDENTITY_PROOF: IDENTITY_PROOF = "IDENTITY_PROOF".asInstanceOf[IDENTITY_PROOF]
-  @scala.inline
-  def IDR: IDR = "IDR".asInstanceOf[IDR]
-  @scala.inline
-  def IE: IE = "IE".asInstanceOf[IE]
-  @scala.inline
-  def IL: IL = "IL".asInstanceOf[IL]
-  @scala.inline
-  def ILS: ILS = "ILS".asInstanceOf[ILS]
-  @scala.inline
-  def IM: IM = "IM".asInstanceOf[IM]
-  @scala.inline
-  def IMP: IMP = "IMP".asInstanceOf[IMP]
-  @scala.inline
-  def IN: IN = "IN".asInstanceOf[IN]
-  @scala.inline
-  def INITIALIZED_BY_CLIENT: INITIALIZED_BY_CLIENT = "INITIALIZED_BY_CLIENT".asInstanceOf[INITIALIZED_BY_CLIENT]
-  @scala.inline
-  def INR: INR = "INR".asInstanceOf[INR]
-  @scala.inline
-  def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
-  @scala.inline
-  def INVALID_DECLARED_UBO: INVALID_DECLARED_UBO = "INVALID_DECLARED_UBO".asInstanceOf[INVALID_DECLARED_UBO]
-  @scala.inline
-  def INVALID_UBO_DETAILS: INVALID_UBO_DETAILS = "INVALID_UBO_DETAILS".asInstanceOf[INVALID_UBO_DETAILS]
-  @scala.inline
-  def INVOICE: INVOICE = "INVOICE".asInstanceOf[INVOICE]
-  @scala.inline
-  def IO: IO = "IO".asInstanceOf[IO]
-  @scala.inline
-  def IQ: IQ = "IQ".asInstanceOf[IQ]
-  @scala.inline
-  def IQD: IQD = "IQD".asInstanceOf[IQD]
-  @scala.inline
-  def IR: IR = "IR".asInstanceOf[IR]
-  @scala.inline
-  def IRR: IRR = "IRR".asInstanceOf[IRR]
-  @scala.inline
-  def IS: IS = "IS".asInstanceOf[IS]
-  @scala.inline
-  def ISK: ISK = "ISK".asInstanceOf[ISK]
-  @scala.inline
-  def IT: IT = "IT".asInstanceOf[IT]
-  @scala.inline
-  def Id_ : Id_ = "Id".asInstanceOf[Id_]
-  @scala.inline
-  def JE: JE = "JE".asInstanceOf[JE]
-  @scala.inline
-  def JEP: JEP = "JEP".asInstanceOf[JEP]
-  @scala.inline
-  def JM: JM = "JM".asInstanceOf[JM]
-  @scala.inline
-  def JMD: JMD = "JMD".asInstanceOf[JMD]
-  @scala.inline
-  def JO: JO = "JO".asInstanceOf[JO]
-  @scala.inline
-  def JOD: JOD = "JOD".asInstanceOf[JOD]
-  @scala.inline
-  def JP: JP = "JP".asInstanceOf[JP]
-  @scala.inline
-  def JPY: JPY = "JPY".asInstanceOf[JPY]
-  @scala.inline
-  def KE: KE = "KE".asInstanceOf[KE]
-  @scala.inline
-  def KES: KES = "KES".asInstanceOf[KES]
-  @scala.inline
-  def KG: KG = "KG".asInstanceOf[KG]
-  @scala.inline
-  def KGS: KGS = "KGS".asInstanceOf[KGS]
-  @scala.inline
-  def KH: KH = "KH".asInstanceOf[KH]
-  @scala.inline
-  def KHR: KHR = "KHR".asInstanceOf[KHR]
-  @scala.inline
-  def KI: KI = "KI".asInstanceOf[KI]
-  @scala.inline
-  def KM: KM = "KM".asInstanceOf[KM]
-  @scala.inline
-  def KMF: KMF = "KMF".asInstanceOf[KMF]
-  @scala.inline
-  def KN: KN = "KN".asInstanceOf[KN]
-  @scala.inline
-  def KP: KP = "KP".asInstanceOf[KP]
-  @scala.inline
-  def KPW: KPW = "KPW".asInstanceOf[KPW]
-  @scala.inline
-  def KR: KR = "KR".asInstanceOf[KR]
-  @scala.inline
-  def KRW: KRW = "KRW".asInstanceOf[KRW]
-  @scala.inline
-  def KW: KW = "KW".asInstanceOf[KW]
-  @scala.inline
-  def KWD: KWD = "KWD".asInstanceOf[KWD]
-  @scala.inline
-  def KY: KY = "KY".asInstanceOf[KY]
-  @scala.inline
-  def KYCLevel: KYCLevel = "KYCLevel".asInstanceOf[KYCLevel]
-  @scala.inline
-  def KYC_CREATED: KYC_CREATED = "KYC_CREATED".asInstanceOf[KYC_CREATED]
-  @scala.inline
-  def KYC_FAILED: KYC_FAILED = "KYC_FAILED".asInstanceOf[KYC_FAILED]
-  @scala.inline
-  def KYC_SUCCEEDED: KYC_SUCCEEDED = "KYC_SUCCEEDED".asInstanceOf[KYC_SUCCEEDED]
-  @scala.inline
-  def KYC_VALIDATION_ASKED: KYC_VALIDATION_ASKED = "KYC_VALIDATION_ASKED".asInstanceOf[KYC_VALIDATION_ASKED]
-  @scala.inline
-  def KYD: KYD = "KYD".asInstanceOf[KYD]
-  @scala.inline
-  def KZ: KZ = "KZ".asInstanceOf[KZ]
-  @scala.inline
-  def KZT: KZT = "KZT".asInstanceOf[KZT]
-  @scala.inline
-  def LA: LA = "LA".asInstanceOf[LA]
-  @scala.inline
-  def LAK: LAK = "LAK".asInstanceOf[LAK]
-  @scala.inline
-  def LATE_FAILURE_BANKACCOUNT_CLOSED: LATE_FAILURE_BANKACCOUNT_CLOSED = "LATE_FAILURE_BANKACCOUNT_CLOSED".asInstanceOf[LATE_FAILURE_BANKACCOUNT_CLOSED]
-  @scala.inline
-  def LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE: LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE = "LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE".asInstanceOf[LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE]
-  @scala.inline
-  def LATE_FAILURE_BANKACCOUNT_INCORRECT: LATE_FAILURE_BANKACCOUNT_INCORRECT = "LATE_FAILURE_BANKACCOUNT_INCORRECT".asInstanceOf[LATE_FAILURE_BANKACCOUNT_INCORRECT]
-  @scala.inline
-  def LATE_FAILURE_CONTACT_USER: LATE_FAILURE_CONTACT_USER = "LATE_FAILURE_CONTACT_USER".asInstanceOf[LATE_FAILURE_CONTACT_USER]
-  @scala.inline
-  def LATE_FAILURE_INSUFFICIENT_FUNDS: LATE_FAILURE_INSUFFICIENT_FUNDS = "LATE_FAILURE_INSUFFICIENT_FUNDS".asInstanceOf[LATE_FAILURE_INSUFFICIENT_FUNDS]
-  @scala.inline
-  def LB: LB = "LB".asInstanceOf[LB]
-  @scala.inline
-  def LBP: LBP = "LBP".asInstanceOf[LBP]
-  @scala.inline
-  def LC: LC = "LC".asInstanceOf[LC]
-  @scala.inline
-  def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
-  @scala.inline
-  def LI: LI = "LI".asInstanceOf[LI]
-  @scala.inline
-  def LIGHT: LIGHT = "LIGHT".asInstanceOf[LIGHT]
-  @scala.inline
-  def LK: LK = "LK".asInstanceOf[LK]
-  @scala.inline
-  def LKR: LKR = "LKR".asInstanceOf[LKR]
-  @scala.inline
-  def LR: LR = "LR".asInstanceOf[LR]
-  @scala.inline
-  def LRD: LRD = "LRD".asInstanceOf[LRD]
-  @scala.inline
-  def LS: LS = "LS".asInstanceOf[LS]
-  @scala.inline
-  def LSL: LSL = "LSL".asInstanceOf[LSL]
-  @scala.inline
-  def LT: LT = "LT".asInstanceOf[LT]
-  @scala.inline
-  def LU: LU = "LU".asInstanceOf[LU]
-  @scala.inline
-  def LV: LV = "LV".asInstanceOf[LV]
-  @scala.inline
-  def LY: LY = "LY".asInstanceOf[LY]
-  @scala.inline
-  def LYD: LYD = "LYD".asInstanceOf[LYD]
-  @scala.inline
-  def LastName: LastName = "LastName".asInstanceOf[LastName]
-  @scala.inline
-  def LegalPersonType: LegalPersonType = "LegalPersonType".asInstanceOf[LegalPersonType]
-  @scala.inline
-  def LegalRepresentativeBirthday: LegalRepresentativeBirthday = "LegalRepresentativeBirthday".asInstanceOf[LegalRepresentativeBirthday]
-  @scala.inline
-  def LegalRepresentativeCountryOfResidence: LegalRepresentativeCountryOfResidence = "LegalRepresentativeCountryOfResidence".asInstanceOf[LegalRepresentativeCountryOfResidence]
-  @scala.inline
-  def LegalRepresentativeFirstName: LegalRepresentativeFirstName = "LegalRepresentativeFirstName".asInstanceOf[LegalRepresentativeFirstName]
-  @scala.inline
-  def LegalRepresentativeLastName: LegalRepresentativeLastName = "LegalRepresentativeLastName".asInstanceOf[LegalRepresentativeLastName]
-  @scala.inline
-  def LegalRepresentativeNationality: LegalRepresentativeNationality = "LegalRepresentativeNationality".asInstanceOf[LegalRepresentativeNationality]
-  @scala.inline
-  def LegalRepresentativeProofOfIdentity: LegalRepresentativeProofOfIdentity = "LegalRepresentativeProofOfIdentity".asInstanceOf[LegalRepresentativeProofOfIdentity]
-  @scala.inline
-  def MA: MA = "MA".asInstanceOf[MA]
-  @scala.inline
-  def MAD: MAD = "MAD".asInstanceOf[MAD]
-  @scala.inline
-  def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
-  @scala.inline
-  def MANDATE_ACTIVATED: MANDATE_ACTIVATED = "MANDATE_ACTIVATED".asInstanceOf[MANDATE_ACTIVATED]
-  @scala.inline
-  def MANDATE_CREATED: MANDATE_CREATED = "MANDATE_CREATED".asInstanceOf[MANDATE_CREATED]
-  @scala.inline
-  def MANDATE_FAILED: MANDATE_FAILED = "MANDATE_FAILED".asInstanceOf[MANDATE_FAILED]
-  @scala.inline
-  def MANDATE_SUBMITTED: MANDATE_SUBMITTED = "MANDATE_SUBMITTED".asInstanceOf[MANDATE_SUBMITTED]
-  @scala.inline
-  def MARKETPLACE: MARKETPLACE = "MARKETPLACE".asInstanceOf[MARKETPLACE]
-  @scala.inline
-  def MASTERPASS: MASTERPASS = "MASTERPASS".asInstanceOf[MASTERPASS]
-  @scala.inline
-  def MC: MC = "MC".asInstanceOf[MC]
-  @scala.inline
-  def MD: MD = "MD".asInstanceOf[MD]
-  @scala.inline
-  def MDL: MDL = "MDL".asInstanceOf[MDL]
-  @scala.inline
-  def ME: ME = "ME".asInstanceOf[ME]
-  @scala.inline
-  def MF: MF = "MF".asInstanceOf[MF]
-  @scala.inline
-  def MG: MG = "MG".asInstanceOf[MG]
-  @scala.inline
-  def MGA: MGA = "MGA".asInstanceOf[MGA]
-  @scala.inline
-  def MH: MH = "MH".asInstanceOf[MH]
-  @scala.inline
-  def MISSING_UBO: MISSING_UBO = "MISSING_UBO".asInstanceOf[MISSING_UBO]
-  @scala.inline
-  def MK: MK = "MK".asInstanceOf[MK]
-  @scala.inline
-  def MKD: MKD = "MKD".asInstanceOf[MKD]
-  @scala.inline
-  def ML: ML = "ML".asInstanceOf[ML]
-  @scala.inline
-  def MM: MM = "MM".asInstanceOf[MM]
-  @scala.inline
-  def MMK: MMK = "MMK".asInstanceOf[MMK]
-  @scala.inline
-  def MN: MN = "MN".asInstanceOf[MN]
-  @scala.inline
-  def MNT: MNT = "MNT".asInstanceOf[MNT]
-  @scala.inline
-  def MO: MO = "MO".asInstanceOf[MO]
-  @scala.inline
-  def MOP: MOP = "MOP".asInstanceOf[MOP]
-  @scala.inline
-  def MP: MP = "MP".asInstanceOf[MP]
-  @scala.inline
-  def MQ: MQ = "MQ".asInstanceOf[MQ]
-  @scala.inline
-  def MR: MR = "MR".asInstanceOf[MR]
-  @scala.inline
-  def MRU: MRU = "MRU".asInstanceOf[MRU]
-  @scala.inline
-  def MS: MS = "MS".asInstanceOf[MS]
-  @scala.inline
-  def MT: MT = "MT".asInstanceOf[MT]
-  @scala.inline
-  def MU: MU = "MU".asInstanceOf[MU]
-  @scala.inline
-  def MUR: MUR = "MUR".asInstanceOf[MUR]
-  @scala.inline
-  def MV: MV = "MV".asInstanceOf[MV]
-  @scala.inline
-  def MVR: MVR = "MVR".asInstanceOf[MVR]
-  @scala.inline
-  def MW: MW = "MW".asInstanceOf[MW]
-  @scala.inline
-  def MWK: MWK = "MWK".asInstanceOf[MWK]
-  @scala.inline
-  def MX: MX = "MX".asInstanceOf[MX]
-  @scala.inline
-  def MXN: MXN = "MXN".asInstanceOf[MXN]
-  @scala.inline
-  def MY: MY = "MY".asInstanceOf[MY]
-  @scala.inline
-  def MYR: MYR = "MYR".asInstanceOf[MYR]
-  @scala.inline
-  def MZ: MZ = "MZ".asInstanceOf[MZ]
-  @scala.inline
-  def MZN: MZN = "MZN".asInstanceOf[MZN]
-  @scala.inline
-  def MakeKeysNullable: MakeKeysNullable = "MakeKeysNullable".asInstanceOf[MakeKeysNullable]
-  @scala.inline
-  def NA: NA = "NA".asInstanceOf[NA]
-  @scala.inline
-  def NAD: NAD = "NAD".asInstanceOf[NAD]
-  @scala.inline
-  def NATURAL: NATURAL = "NATURAL".asInstanceOf[NATURAL]
-  @scala.inline
-  def NC: NC = "NC".asInstanceOf[NC]
-  @scala.inline
-  def NE: NE = "NE".asInstanceOf[NE]
-  @scala.inline
-  def NF: NF = "NF".asInstanceOf[NF]
-  @scala.inline
-  def NG: NG = "NG".asInstanceOf[NG]
-  @scala.inline
-  def NGN: NGN = "NGN".asInstanceOf[NGN]
-  @scala.inline
-  def NI: NI = "NI".asInstanceOf[NI]
-  @scala.inline
-  def NIO: NIO = "NIO".asInstanceOf[NIO]
-  @scala.inline
-  def NL: NL = "NL".asInstanceOf[NL]
-  @scala.inline
-  def NO: NO = "NO".asInstanceOf[NO]
-  @scala.inline
-  def NOK: NOK = "NOK".asInstanceOf[NOK]
-  @scala.inline
-  def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
-  @scala.inline
-  def NOT_CONTESTABLE: NOT_CONTESTABLE = "NOT_CONTESTABLE".asInstanceOf[NOT_CONTESTABLE]
-  @scala.inline
-  def NO_CHECK: NO_CHECK = "NO_CHECK".asInstanceOf[NO_CHECK]
-  @scala.inline
-  def NO_MATCH: NO_MATCH = "NO_MATCH".asInstanceOf[NO_MATCH]
-  @scala.inline
-  def NP: NP = "NP".asInstanceOf[NP]
-  @scala.inline
-  def NPR: NPR = "NPR".asInstanceOf[NPR]
-  @scala.inline
-  def NR: NR = "NR".asInstanceOf[NR]
-  @scala.inline
-  def NU: NU = "NU".asInstanceOf[NU]
-  @scala.inline
-  def NZ: NZ = "NZ".asInstanceOf[NZ]
-  @scala.inline
-  def NZD: NZD = "NZD".asInstanceOf[NZD]
-  @scala.inline
-  def Name: Name = "Name".asInstanceOf[Name]
-  @scala.inline
-  def Nationality: Nationality = "Nationality".asInstanceOf[Nationality]
-  @scala.inline
-  def Nature: Nature = "Nature".asInstanceOf[Nature]
-  @scala.inline
-  def NotSpecified: NotSpecified = "NotSpecified".asInstanceOf[NotSpecified]
-  @scala.inline
-  def OM: OM = "OM".asInstanceOf[OM]
-  @scala.inline
-  def OMR: OMR = "OMR".asInstanceOf[OMR]
-  @scala.inline
-  def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
-  @scala.inline
-  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
-  @scala.inline
-  def OWNER_DO_NOT_MATCH_BANKACCOUNT: OWNER_DO_NOT_MATCH_BANKACCOUNT = "OWNER_DO_NOT_MATCH_BANKACCOUNT".asInstanceOf[OWNER_DO_NOT_MATCH_BANKACCOUNT]
-  @scala.inline
-  def P24: P24 = "P24".asInstanceOf[P24]
-  @scala.inline
-  def P2P_PAYMENT: P2P_PAYMENT = "P2P_PAYMENT".asInstanceOf[P2P_PAYMENT]
-  @scala.inline
-  def PA: PA = "PA".asInstanceOf[PA]
-  @scala.inline
-  def PAB: PAB = "PAB".asInstanceOf[PAB]
-  @scala.inline
-  def PAYIN: PAYIN = "PAYIN".asInstanceOf[PAYIN]
-  @scala.inline
-  def PAYIN_NORMAL_CREATED: PAYIN_NORMAL_CREATED = "PAYIN_NORMAL_CREATED".asInstanceOf[PAYIN_NORMAL_CREATED]
-  @scala.inline
-  def PAYIN_NORMAL_FAILED: PAYIN_NORMAL_FAILED = "PAYIN_NORMAL_FAILED".asInstanceOf[PAYIN_NORMAL_FAILED]
-  @scala.inline
-  def PAYIN_NORMAL_SUCCEEDED: PAYIN_NORMAL_SUCCEEDED = "PAYIN_NORMAL_SUCCEEDED".asInstanceOf[PAYIN_NORMAL_SUCCEEDED]
-  @scala.inline
-  def PAYIN_REFUND_CREATED: PAYIN_REFUND_CREATED = "PAYIN_REFUND_CREATED".asInstanceOf[PAYIN_REFUND_CREATED]
-  @scala.inline
-  def PAYIN_REFUND_FAILED: PAYIN_REFUND_FAILED = "PAYIN_REFUND_FAILED".asInstanceOf[PAYIN_REFUND_FAILED]
-  @scala.inline
-  def PAYIN_REFUND_SUCCEEDED: PAYIN_REFUND_SUCCEEDED = "PAYIN_REFUND_SUCCEEDED".asInstanceOf[PAYIN_REFUND_SUCCEEDED]
-  @scala.inline
-  def PAYIN_REPUDIATION_CREATED: PAYIN_REPUDIATION_CREATED = "PAYIN_REPUDIATION_CREATED".asInstanceOf[PAYIN_REPUDIATION_CREATED]
-  @scala.inline
-  def PAYIN_REPUDIATION_FAILED: PAYIN_REPUDIATION_FAILED = "PAYIN_REPUDIATION_FAILED".asInstanceOf[PAYIN_REPUDIATION_FAILED]
-  @scala.inline
-  def PAYIN_REPUDIATION_SUCCEEDED: PAYIN_REPUDIATION_SUCCEEDED = "PAYIN_REPUDIATION_SUCCEEDED".asInstanceOf[PAYIN_REPUDIATION_SUCCEEDED]
-  @scala.inline
-  def PAYLIB: PAYLIB = "PAYLIB".asInstanceOf[PAYLIB]
-  @scala.inline
-  def PAYOUT: PAYOUT = "PAYOUT".asInstanceOf[PAYOUT]
-  @scala.inline
-  def PAYOUT_NORMAL_CREATED: PAYOUT_NORMAL_CREATED = "PAYOUT_NORMAL_CREATED".asInstanceOf[PAYOUT_NORMAL_CREATED]
-  @scala.inline
-  def PAYOUT_NORMAL_FAILED: PAYOUT_NORMAL_FAILED = "PAYOUT_NORMAL_FAILED".asInstanceOf[PAYOUT_NORMAL_FAILED]
-  @scala.inline
-  def PAYOUT_NORMAL_SUCCEEDED: PAYOUT_NORMAL_SUCCEEDED = "PAYOUT_NORMAL_SUCCEEDED".asInstanceOf[PAYOUT_NORMAL_SUCCEEDED]
-  @scala.inline
-  def PAYOUT_REFUND_CREATED: PAYOUT_REFUND_CREATED = "PAYOUT_REFUND_CREATED".asInstanceOf[PAYOUT_REFUND_CREATED]
-  @scala.inline
-  def PAYOUT_REFUND_FAILED: PAYOUT_REFUND_FAILED = "PAYOUT_REFUND_FAILED".asInstanceOf[PAYOUT_REFUND_FAILED]
-  @scala.inline
-  def PAYOUT_REFUND_SUCCEEDED: PAYOUT_REFUND_SUCCEEDED = "PAYOUT_REFUND_SUCCEEDED".asInstanceOf[PAYOUT_REFUND_SUCCEEDED]
-  @scala.inline
-  def PAYPAL: PAYPAL = "PAYPAL".asInstanceOf[PAYPAL]
-  @scala.inline
-  def PE: PE = "PE".asInstanceOf[PE]
-  @scala.inline
-  def PEN: PEN = "PEN".asInstanceOf[PEN]
-  @scala.inline
-  def PENDING_BANK_ACTION: PENDING_BANK_ACTION = "PENDING_BANK_ACTION".asInstanceOf[PENDING_BANK_ACTION]
-  @scala.inline
-  def PENDING_CLIENT_ACTION: PENDING_CLIENT_ACTION = "PENDING_CLIENT_ACTION".asInstanceOf[PENDING_CLIENT_ACTION]
-  @scala.inline
-  def PF: PF = "PF".asInstanceOf[PF]
-  @scala.inline
-  def PG: PG = "PG".asInstanceOf[PG]
-  @scala.inline
-  def PGK: PGK = "PGK".asInstanceOf[PGK]
-  @scala.inline
-  def PH: PH = "PH".asInstanceOf[PH]
-  @scala.inline
-  def PHP: PHP = "PHP".asInstanceOf[PHP]
-  @scala.inline
-  def PK: PK = "PK".asInstanceOf[PK]
-  @scala.inline
-  def PKR: PKR = "PKR".asInstanceOf[PKR]
-  @scala.inline
-  def PL: PL = "PL".asInstanceOf[PL]
-  @scala.inline
-  def PLN: PLN = "PLN".asInstanceOf[PLN]
-  @scala.inline
-  def PM: PM = "PM".asInstanceOf[PM]
-  @scala.inline
-  def PN: PN = "PN".asInstanceOf[PN]
-  @scala.inline
-  def POSTAL_CODE_MATCH_ONLY: POSTAL_CODE_MATCH_ONLY = "POSTAL_CODE_MATCH_ONLY".asInstanceOf[POSTAL_CODE_MATCH_ONLY]
-  @scala.inline
-  def PR: PR = "PR".asInstanceOf[PR]
-  @scala.inline
-  def PREAUTHORIZATION_PAYMENT_CANCELED: PREAUTHORIZATION_PAYMENT_CANCELED = "PREAUTHORIZATION_PAYMENT_CANCELED".asInstanceOf[PREAUTHORIZATION_PAYMENT_CANCELED]
-  @scala.inline
-  def PREAUTHORIZATION_PAYMENT_EXPIRED: PREAUTHORIZATION_PAYMENT_EXPIRED = "PREAUTHORIZATION_PAYMENT_EXPIRED".asInstanceOf[PREAUTHORIZATION_PAYMENT_EXPIRED]
-  @scala.inline
-  def PREAUTHORIZATION_PAYMENT_VALIDATED: PREAUTHORIZATION_PAYMENT_VALIDATED = "PREAUTHORIZATION_PAYMENT_VALIDATED".asInstanceOf[PREAUTHORIZATION_PAYMENT_VALIDATED]
-  @scala.inline
-  def PREAUTHORIZATION_PAYMENT_WAITING: PREAUTHORIZATION_PAYMENT_WAITING = "PREAUTHORIZATION_PAYMENT_WAITING".asInstanceOf[PREAUTHORIZATION_PAYMENT_WAITING]
-  @scala.inline
-  def PREAUTHORIZED: PREAUTHORIZED = "PREAUTHORIZED".asInstanceOf[PREAUTHORIZED]
-  @scala.inline
-  def PRODUCT_NOT_PROVIDED: PRODUCT_NOT_PROVIDED = "PRODUCT_NOT_PROVIDED".asInstanceOf[PRODUCT_NOT_PROVIDED]
-  @scala.inline
-  def PRODUCT_REPLACEMENT_PROOF: PRODUCT_REPLACEMENT_PROOF = "PRODUCT_REPLACEMENT_PROOF".asInstanceOf[PRODUCT_REPLACEMENT_PROOF]
-  @scala.inline
-  def PRODUCT_UNACCEPTABLE: PRODUCT_UNACCEPTABLE = "PRODUCT_UNACCEPTABLE".asInstanceOf[PRODUCT_UNACCEPTABLE]
-  @scala.inline
-  def PS: PS = "PS".asInstanceOf[PS]
-  @scala.inline
-  def PT: PT = "PT".asInstanceOf[PT]
-  @scala.inline
-  def PW: PW = "PW".asInstanceOf[PW]
-  @scala.inline
-  def PY: PY = "PY".asInstanceOf[PY]
-  @scala.inline
-  def PYG: PYG = "PYG".asInstanceOf[PYG]
-  @scala.inline
-  def PaymentType: PaymentType = "PaymentType".asInstanceOf[PaymentType]
-  @scala.inline
-  def PersonType: PersonType = "PersonType".asInstanceOf[PersonType]
-  @scala.inline
-  def PreauthorizationId: PreauthorizationId = "PreauthorizationId".asInstanceOf[PreauthorizationId]
-  @scala.inline
-  def ProofOfAddress: ProofOfAddress = "ProofOfAddress".asInstanceOf[ProofOfAddress]
-  @scala.inline
-  def ProofOfIdentity: ProofOfIdentity = "ProofOfIdentity".asInstanceOf[ProofOfIdentity]
-  @scala.inline
-  def ProofOfRegistration: ProofOfRegistration = "ProofOfRegistration".asInstanceOf[ProofOfRegistration]
-  @scala.inline
-  def QA: QA = "QA".asInstanceOf[QA]
-  @scala.inline
-  def QAR: QAR = "QAR".asInstanceOf[QAR]
-  @scala.inline
-  def RE: RE = "RE".asInstanceOf[RE]
-  @scala.inline
-  def REFUND: REFUND = "REFUND".asInstanceOf[REFUND]
-  @scala.inline
-  def REFUND_CONVERSION_RATE: REFUND_CONVERSION_RATE = "REFUND_CONVERSION_RATE".asInstanceOf[REFUND_CONVERSION_RATE]
-  @scala.inline
-  def REFUND_NOT_PROCESSED: REFUND_NOT_PROCESSED = "REFUND_NOT_PROCESSED".asInstanceOf[REFUND_NOT_PROCESSED]
-  @scala.inline
-  def REFUND_PROOF: REFUND_PROOF = "REFUND_PROOF".asInstanceOf[REFUND_PROOF]
-  @scala.inline
-  def REFUSED: REFUSED = "REFUSED".asInstanceOf[REFUSED]
-  @scala.inline
-  def REGISTRATION_PROOF: REGISTRATION_PROOF = "REGISTRATION_PROOF".asInstanceOf[REGISTRATION_PROOF]
-  @scala.inline
-  def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
-  @scala.inline
-  def RENTALS: RENTALS = "RENTALS".asInstanceOf[RENTALS]
-  @scala.inline
-  def REOPENED_PENDING_CLIENT_ACTION: REOPENED_PENDING_CLIENT_ACTION = "REOPENED_PENDING_CLIENT_ACTION".asInstanceOf[REOPENED_PENDING_CLIENT_ACTION]
-  @scala.inline
-  def REPUDIATION: REPUDIATION = "REPUDIATION".asInstanceOf[REPUDIATION]
-  @scala.inline
-  def RETRIEVAL: RETRIEVAL = "RETRIEVAL".asInstanceOf[RETRIEVAL]
-  @scala.inline
-  def RO: RO = "RO".asInstanceOf[RO]
-  @scala.inline
-  def RON: RON = "RON".asInstanceOf[RON]
-  @scala.inline
-  def RS: RS = "RS".asInstanceOf[RS]
-  @scala.inline
-  def RSD: RSD = "RSD".asInstanceOf[RSD]
-  @scala.inline
-  def RU: RU = "RU".asInstanceOf[RU]
-  @scala.inline
-  def RUB: RUB = "RUB".asInstanceOf[RUB]
-  @scala.inline
-  def RW: RW = "RW".asInstanceOf[RW]
-  @scala.inline
-  def RWF: RWF = "RWF".asInstanceOf[RWF]
-  @scala.inline
-  def ResultCode: ResultCode = "ResultCode".asInstanceOf[ResultCode]
-  @scala.inline
-  def ResultMessage: ResultMessage = "ResultMessage".asInstanceOf[ResultMessage]
-  @scala.inline
-  def SA: SA = "SA".asInstanceOf[SA]
-  @scala.inline
-  def SAR: SAR = "SAR".asInstanceOf[SAR]
-  @scala.inline
-  def SAVINGS: SAVINGS = "SAVINGS".asInstanceOf[SAVINGS]
-  @scala.inline
-  def SB: SB = "SB".asInstanceOf[SB]
-  @scala.inline
-  def SBD: SBD = "SBD".asInstanceOf[SBD]
-  @scala.inline
-  def SC: SC = "SC".asInstanceOf[SC]
-  @scala.inline
-  def SCR: SCR = "SCR".asInstanceOf[SCR]
-  @scala.inline
-  def SD: SD = "SD".asInstanceOf[SD]
-  @scala.inline
-  def SDG: SDG = "SDG".asInstanceOf[SDG]
-  @scala.inline
-  def SE: SE = "SE".asInstanceOf[SE]
-  @scala.inline
-  def SEK: SEK = "SEK".asInstanceOf[SEK]
-  @scala.inline
-  def SEPA: SEPA = "SEPA".asInstanceOf[SEPA]
-  @scala.inline
-  def SERVICES_JOBBING_EDUCATION: SERVICES_JOBBING_EDUCATION = "SERVICES_JOBBING_EDUCATION".asInstanceOf[SERVICES_JOBBING_EDUCATION]
-  @scala.inline
-  def SETTLEMENT: SETTLEMENT = "SETTLEMENT".asInstanceOf[SETTLEMENT]
-  @scala.inline
-  def SG: SG = "SG".asInstanceOf[SG]
-  @scala.inline
-  def SGD: SGD = "SGD".asInstanceOf[SGD]
-  @scala.inline
-  def SH: SH = "SH".asInstanceOf[SH]
-  @scala.inline
-  def SHAREHOLDER_DECLARATION: SHAREHOLDER_DECLARATION = "SHAREHOLDER_DECLARATION".asInstanceOf[SHAREHOLDER_DECLARATION]
-  @scala.inline
-  def SHP: SHP = "SHP".asInstanceOf[SHP]
-  @scala.inline
-  def SI: SI = "SI".asInstanceOf[SI]
-  @scala.inline
-  def SJ: SJ = "SJ".asInstanceOf[SJ]
-  @scala.inline
-  def SK: SK = "SK".asInstanceOf[SK]
-  @scala.inline
-  def SL: SL = "SL".asInstanceOf[SL]
-  @scala.inline
-  def SLL: SLL = "SLL".asInstanceOf[SLL]
-  @scala.inline
-  def SM: SM = "SM".asInstanceOf[SM]
-  @scala.inline
-  def SN: SN = "SN".asInstanceOf[SN]
-  @scala.inline
-  def SO: SO = "SO".asInstanceOf[SO]
-  @scala.inline
-  def SOLETRADER: SOLETRADER = "SOLETRADER".asInstanceOf[SOLETRADER]
-  @scala.inline
-  def SOS: SOS = "SOS".asInstanceOf[SOS]
-  @scala.inline
-  def SPECIFIC_CASE: SPECIFIC_CASE = "SPECIFIC_CASE".asInstanceOf[SPECIFIC_CASE]
-  @scala.inline
-  def SPL: SPL = "SPL".asInstanceOf[SPL]
-  @scala.inline
-  def SPORT_RECREATION_ACTIVITIES: SPORT_RECREATION_ACTIVITIES = "SPORT_RECREATION_ACTIVITIES".asInstanceOf[SPORT_RECREATION_ACTIVITIES]
-  @scala.inline
-  def SR: SR = "SR".asInstanceOf[SR]
-  @scala.inline
-  def SRD: SRD = "SRD".asInstanceOf[SRD]
-  @scala.inline
-  def SS: SS = "SS".asInstanceOf[SS]
-  @scala.inline
-  def ST: ST = "ST".asInstanceOf[ST]
-  @scala.inline
-  def STN: STN = "STN".asInstanceOf[STN]
-  @scala.inline
-  def STORES_FASHION_ACCESSORIES_OBJECTS: STORES_FASHION_ACCESSORIES_OBJECTS = "STORES_FASHION_ACCESSORIES_OBJECTS".asInstanceOf[STORES_FASHION_ACCESSORIES_OBJECTS]
-  @scala.inline
-  def SUBMITTED: SUBMITTED = "SUBMITTED".asInstanceOf[SUBMITTED]
-  @scala.inline
-  def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
-  @scala.inline
-  def SV: SV = "SV".asInstanceOf[SV]
-  @scala.inline
-  def SVC: SVC = "SVC".asInstanceOf[SVC]
-  @scala.inline
-  def SX: SX = "SX".asInstanceOf[SX]
-  @scala.inline
-  def SY: SY = "SY".asInstanceOf[SY]
-  @scala.inline
-  def SYP: SYP = "SYP".asInstanceOf[SYP]
-  @scala.inline
-  def SZ: SZ = "SZ".asInstanceOf[SZ]
-  @scala.inline
-  def SZL: SZL = "SZL".asInstanceOf[SZL]
-  @scala.inline
-  def ShareholderDeclaration: ShareholderDeclaration = "ShareholderDeclaration".asInstanceOf[ShareholderDeclaration]
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
-  @scala.inline
-  def Statute: Statute = "Statute".asInstanceOf[Statute]
-  @scala.inline
-  def TC: TC = "TC".asInstanceOf[TC]
-  @scala.inline
-  def TD: TD = "TD".asInstanceOf[TD]
-  @scala.inline
-  def TF: TF = "TF".asInstanceOf[TF]
-  @scala.inline
-  def TG: TG = "TG".asInstanceOf[TG]
-  @scala.inline
-  def TH: TH = "TH".asInstanceOf[TH]
-  @scala.inline
-  def THB: THB = "THB".asInstanceOf[THB]
-  @scala.inline
-  def TICKETING: TICKETING = "TICKETING".asInstanceOf[TICKETING]
-  @scala.inline
-  def TJ: TJ = "TJ".asInstanceOf[TJ]
-  @scala.inline
-  def TJS: TJS = "TJS".asInstanceOf[TJS]
-  @scala.inline
-  def TK: TK = "TK".asInstanceOf[TK]
-  @scala.inline
-  def TL: TL = "TL".asInstanceOf[TL]
-  @scala.inline
-  def TM: TM = "TM".asInstanceOf[TM]
-  @scala.inline
-  def TMT: TMT = "TMT".asInstanceOf[TMT]
-  @scala.inline
-  def TN: TN = "TN".asInstanceOf[TN]
-  @scala.inline
-  def TND: TND = "TND".asInstanceOf[TND]
-  @scala.inline
-  def TO: TO = "TO".asInstanceOf[TO]
-  @scala.inline
-  def TOP: TOP = "TOP".asInstanceOf[TOP]
-  @scala.inline
-  def TR: TR = "TR".asInstanceOf[TR]
-  @scala.inline
-  def TRANSACTIONS: TRANSACTIONS = "TRANSACTIONS".asInstanceOf[TRANSACTIONS]
-  @scala.inline
-  def TRANSACTION_NOT_RECOGNIZED: TRANSACTION_NOT_RECOGNIZED = "TRANSACTION_NOT_RECOGNIZED".asInstanceOf[TRANSACTION_NOT_RECOGNIZED]
-  @scala.inline
-  def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
-  @scala.inline
-  def TRANSFER_NORMAL_CREATED: TRANSFER_NORMAL_CREATED = "TRANSFER_NORMAL_CREATED".asInstanceOf[TRANSFER_NORMAL_CREATED]
-  @scala.inline
-  def TRANSFER_NORMAL_FAILED: TRANSFER_NORMAL_FAILED = "TRANSFER_NORMAL_FAILED".asInstanceOf[TRANSFER_NORMAL_FAILED]
-  @scala.inline
-  def TRANSFER_NORMAL_SUCCEEDED: TRANSFER_NORMAL_SUCCEEDED = "TRANSFER_NORMAL_SUCCEEDED".asInstanceOf[TRANSFER_NORMAL_SUCCEEDED]
-  @scala.inline
-  def TRANSFER_REFUND_CREATED: TRANSFER_REFUND_CREATED = "TRANSFER_REFUND_CREATED".asInstanceOf[TRANSFER_REFUND_CREATED]
-  @scala.inline
-  def TRANSFER_REFUND_FAILED: TRANSFER_REFUND_FAILED = "TRANSFER_REFUND_FAILED".asInstanceOf[TRANSFER_REFUND_FAILED]
-  @scala.inline
-  def TRANSFER_REFUND_SUCCEEDED: TRANSFER_REFUND_SUCCEEDED = "TRANSFER_REFUND_SUCCEEDED".asInstanceOf[TRANSFER_REFUND_SUCCEEDED]
-  @scala.inline
-  def TRANSFER_SETTLEMENT_CREATED: TRANSFER_SETTLEMENT_CREATED = "TRANSFER_SETTLEMENT_CREATED".asInstanceOf[TRANSFER_SETTLEMENT_CREATED]
-  @scala.inline
-  def TRANSFER_SETTLEMENT_FAILED: TRANSFER_SETTLEMENT_FAILED = "TRANSFER_SETTLEMENT_FAILED".asInstanceOf[TRANSFER_SETTLEMENT_FAILED]
-  @scala.inline
-  def TRANSFER_SETTLEMENT_SUCCEEDED: TRANSFER_SETTLEMENT_SUCCEEDED = "TRANSFER_SETTLEMENT_SUCCEEDED".asInstanceOf[TRANSFER_SETTLEMENT_SUCCEEDED]
-  @scala.inline
-  def TRY: TRY = "TRY".asInstanceOf[TRY]
-  @scala.inline
-  def TT: TT = "TT".asInstanceOf[TT]
-  @scala.inline
-  def TTD: TTD = "TTD".asInstanceOf[TTD]
-  @scala.inline
-  def TV: TV = "TV".asInstanceOf[TV]
-  @scala.inline
-  def TVD: TVD = "TVD".asInstanceOf[TVD]
-  @scala.inline
-  def TW: TW = "TW".asInstanceOf[TW]
-  @scala.inline
-  def TWD: TWD = "TWD".asInstanceOf[TWD]
-  @scala.inline
-  def TZ: TZ = "TZ".asInstanceOf[TZ]
-  @scala.inline
-  def TZS: TZS = "TZS".asInstanceOf[TZS]
-  @scala.inline
-  def Tag: Tag = "Tag".asInstanceOf[Tag]
-  @scala.inline
-  def Type: Type = "Type".asInstanceOf[Type]
-  @scala.inline
-  def UA: UA = "UA".asInstanceOf[UA]
-  @scala.inline
-  def UAH: UAH = "UAH".asInstanceOf[UAH]
-  @scala.inline
-  def UBO_DECLARATION_CREATED: UBO_DECLARATION_CREATED = "UBO_DECLARATION_CREATED".asInstanceOf[UBO_DECLARATION_CREATED]
-  @scala.inline
-  def UBO_DECLARATION_REFUSED: UBO_DECLARATION_REFUSED = "UBO_DECLARATION_REFUSED".asInstanceOf[UBO_DECLARATION_REFUSED]
-  @scala.inline
-  def UBO_DECLARATION_VALIDATED: UBO_DECLARATION_VALIDATED = "UBO_DECLARATION_VALIDATED".asInstanceOf[UBO_DECLARATION_VALIDATED]
-  @scala.inline
-  def UBO_DECLARATION_VALIDATION_ASKED: UBO_DECLARATION_VALIDATION_ASKED = "UBO_DECLARATION_VALIDATION_ASKED".asInstanceOf[UBO_DECLARATION_VALIDATION_ASKED]
-  @scala.inline
-  def UG: UG = "UG".asInstanceOf[UG]
-  @scala.inline
-  def UGX: UGX = "UGX".asInstanceOf[UGX]
-  @scala.inline
-  def UM: UM = "UM".asInstanceOf[UM]
-  @scala.inline
-  def UNDERAGE_PERSON: UNDERAGE_PERSON = "UNDERAGE_PERSON".asInstanceOf[UNDERAGE_PERSON]
-  @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
-  @scala.inline
-  def US: US = "US".asInstanceOf[US]
-  @scala.inline
-  def USD: USD = "USD".asInstanceOf[USD]
-  @scala.inline
-  def USER_ACCEPTANCE_PROOF: USER_ACCEPTANCE_PROOF = "USER_ACCEPTANCE_PROOF".asInstanceOf[USER_ACCEPTANCE_PROOF]
-  @scala.inline
-  def USER_CORRESPONDANCE: USER_CORRESPONDANCE = "USER_CORRESPONDANCE".asInstanceOf[USER_CORRESPONDANCE]
-  @scala.inline
-  def UY: UY = "UY".asInstanceOf[UY]
-  @scala.inline
-  def UYU: UYU = "UYU".asInstanceOf[UYU]
-  @scala.inline
-  def UZ: UZ = "UZ".asInstanceOf[UZ]
-  @scala.inline
-  def UZS: UZS = "UZS".asInstanceOf[UZS]
-  @scala.inline
-  def VA: VA = "VA".asInstanceOf[VA]
-  @scala.inline
-  def VALID: VALID = "VALID".asInstanceOf[VALID]
-  @scala.inline
-  def VALIDATED: VALIDATED = "VALIDATED".asInstanceOf[VALIDATED]
-  @scala.inline
-  def VALIDATION_ASKED: VALIDATION_ASKED = "VALIDATION_ASKED".asInstanceOf[VALIDATION_ASKED]
-  @scala.inline
-  def VC: VC = "VC".asInstanceOf[VC]
-  @scala.inline
-  def VE: VE = "VE".asInstanceOf[VE]
-  @scala.inline
-  def VEF: VEF = "VEF".asInstanceOf[VEF]
-  @scala.inline
-  def VG: VG = "VG".asInstanceOf[VG]
-  @scala.inline
-  def VI: VI = "VI".asInstanceOf[VI]
-  @scala.inline
-  def VN: VN = "VN".asInstanceOf[VN]
-  @scala.inline
-  def VND: VND = "VND".asInstanceOf[VND]
-  @scala.inline
-  def VU: VU = "VU".asInstanceOf[VU]
-  @scala.inline
-  def VUV: VUV = "VUV".asInstanceOf[VUV]
-  @scala.inline
-  def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
-  @scala.inline
-  def WEB: WEB = "WEB".asInstanceOf[WEB]
-  @scala.inline
-  def WF: WF = "WF".asInstanceOf[WF]
-  @scala.inline
-  def WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS: WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS = "WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS".asInstanceOf[WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS]
-  @scala.inline
-  def WS: WS = "WS".asInstanceOf[WS]
-  @scala.inline
-  def WST: WST = "WST".asInstanceOf[WST]
-  @scala.inline
-  def WireReference: WireReference = "WireReference".asInstanceOf[WireReference]
-  @scala.inline
-  def XAF: XAF = "XAF".asInstanceOf[XAF]
-  @scala.inline
-  def XCD: XCD = "XCD".asInstanceOf[XCD]
-  @scala.inline
-  def XDR: XDR = "XDR".asInstanceOf[XDR]
-  @scala.inline
-  def XOF: XOF = "XOF".asInstanceOf[XOF]
-  @scala.inline
-  def XPF: XPF = "XPF".asInstanceOf[XPF]
-  @scala.inline
-  def YE: YE = "YE".asInstanceOf[YE]
-  @scala.inline
-  def YER: YER = "YER".asInstanceOf[YER]
-  @scala.inline
-  def YT: YT = "YT".asInstanceOf[YT]
-  @scala.inline
-  def ZA: ZA = "ZA".asInstanceOf[ZA]
-  @scala.inline
-  def ZAR: ZAR = "ZAR".asInstanceOf[ZAR]
-  @scala.inline
-  def ZM: ZM = "ZM".asInstanceOf[ZM]
-  @scala.inline
-  def ZMW: ZMW = "ZMW".asInstanceOf[ZMW]
-  @scala.inline
-  def ZW: ZW = "ZW".asInstanceOf[ZW]
-  @scala.inline
-  def ZWD: ZWD = "ZWD".asInstanceOf[ZWD]
-  @scala.inline
-  def authentication_oauth: authentication_oauth = "authentication_oauth".asInstanceOf[authentication_oauth]
-  @scala.inline
-  def banking_aliases_all: banking_aliases_all = "banking_aliases_all".asInstanceOf[banking_aliases_all]
-  @scala.inline
-  def banking_aliases_get: banking_aliases_get = "banking_aliases_get".asInstanceOf[banking_aliases_get]
-  @scala.inline
-  def banking_aliases_iban_create: banking_aliases_iban_create = "banking_aliases_iban_create".asInstanceOf[banking_aliases_iban_create]
-  @scala.inline
-  def banking_aliases_update: banking_aliases_update = "banking_aliases_update".asInstanceOf[banking_aliases_update]
-  @scala.inline
-  def card_get: card_get = "card_get".asInstanceOf[card_get]
-  @scala.inline
-  def card_get_preauthorizations: card_get_preauthorizations = "card_get_preauthorizations".asInstanceOf[card_get_preauthorizations]
-  @scala.inline
-  def card_save: card_save = "card_save".asInstanceOf[card_save]
-  @scala.inline
-  def cardregistration_create: cardregistration_create = "cardregistration_create".asInstanceOf[cardregistration_create]
-  @scala.inline
-  def cardregistration_get: cardregistration_get = "cardregistration_get".asInstanceOf[cardregistration_get]
-  @scala.inline
-  def cardregistration_save: cardregistration_save = "cardregistration_save".asInstanceOf[cardregistration_save]
-  @scala.inline
-  def cards_get_by_fingerprint: cards_get_by_fingerprint = "cards_get_by_fingerprint".asInstanceOf[cards_get_by_fingerprint]
-  @scala.inline
-  def client_wallets_all: client_wallets_all = "client_wallets_all".asInstanceOf[client_wallets_all]
-  @scala.inline
-  def client_wallets_by_fundsType: client_wallets_by_fundsType = "client_wallets_by_fundsType".asInstanceOf[client_wallets_by_fundsType]
-  @scala.inline
-  def client_wallets_get: client_wallets_get = "client_wallets_get".asInstanceOf[client_wallets_get]
-  @scala.inline
-  def client_wallets_transactions: client_wallets_transactions = "client_wallets_transactions".asInstanceOf[client_wallets_transactions]
-  @scala.inline
-  def clients_get: clients_get = "clients_get".asInstanceOf[clients_get]
-  @scala.inline
-  def clients_update: clients_update = "clients_update".asInstanceOf[clients_update]
-  @scala.inline
-  def clients_upload_logo: clients_upload_logo = "clients_upload_logo".asInstanceOf[clients_upload_logo]
-  @scala.inline
-  def dispute_save_close: dispute_save_close = "dispute_save_close".asInstanceOf[dispute_save_close]
-  @scala.inline
-  def disputes_all: disputes_all = "disputes_all".asInstanceOf[disputes_all]
-  @scala.inline
-  def disputes_document_all: disputes_document_all = "disputes_document_all".asInstanceOf[disputes_document_all]
-  @scala.inline
-  def disputes_document_create: disputes_document_create = "disputes_document_create".asInstanceOf[disputes_document_create]
-  @scala.inline
-  def disputes_document_create_consult: disputes_document_create_consult = "disputes_document_create_consult".asInstanceOf[disputes_document_create_consult]
-  @scala.inline
-  def disputes_document_get: disputes_document_get = "disputes_document_get".asInstanceOf[disputes_document_get]
-  @scala.inline
-  def disputes_document_get_for_dispute: disputes_document_get_for_dispute = "disputes_document_get_for_dispute".asInstanceOf[disputes_document_get_for_dispute]
-  @scala.inline
-  def disputes_document_page_create: disputes_document_page_create = "disputes_document_page_create".asInstanceOf[disputes_document_page_create]
-  @scala.inline
-  def disputes_document_save: disputes_document_save = "disputes_document_save".asInstanceOf[disputes_document_save]
-  @scala.inline
-  def disputes_get: disputes_get = "disputes_get".asInstanceOf[disputes_get]
-  @scala.inline
-  def disputes_get_for_user: disputes_get_for_user = "disputes_get_for_user".asInstanceOf[disputes_get_for_user]
-  @scala.inline
-  def disputes_get_for_wallet: disputes_get_for_wallet = "disputes_get_for_wallet".asInstanceOf[disputes_get_for_wallet]
-  @scala.inline
-  def disputes_get_transactions: disputes_get_transactions = "disputes_get_transactions".asInstanceOf[disputes_get_transactions]
-  @scala.inline
-  def disputes_pending_settlement: disputes_pending_settlement = "disputes_pending_settlement".asInstanceOf[disputes_pending_settlement]
-  @scala.inline
-  def disputes_repudiation_create_settlement: disputes_repudiation_create_settlement = "disputes_repudiation_create_settlement".asInstanceOf[disputes_repudiation_create_settlement]
-  @scala.inline
-  def disputes_repudiation_get: disputes_repudiation_get = "disputes_repudiation_get".asInstanceOf[disputes_repudiation_get]
-  @scala.inline
-  def disputes_repudiation_get_settlement: disputes_repudiation_get_settlement = "disputes_repudiation_get_settlement".asInstanceOf[disputes_repudiation_get_settlement]
-  @scala.inline
-  def disputes_save_contest_funds: disputes_save_contest_funds = "disputes_save_contest_funds".asInstanceOf[disputes_save_contest_funds]
-  @scala.inline
-  def disputes_save_tag: disputes_save_tag = "disputes_save_tag".asInstanceOf[disputes_save_tag]
-  @scala.inline
-  def events_all: events_all = "events_all".asInstanceOf[events_all]
-  @scala.inline
-  def hooks_all: hooks_all = "hooks_all".asInstanceOf[hooks_all]
-  @scala.inline
-  def hooks_create: hooks_create = "hooks_create".asInstanceOf[hooks_create]
-  @scala.inline
-  def hooks_get: hooks_get = "hooks_get".asInstanceOf[hooks_get]
-  @scala.inline
-  def hooks_save: hooks_save = "hooks_save".asInstanceOf[hooks_save]
-  @scala.inline
-  def kyc_documents_all: kyc_documents_all = "kyc_documents_all".asInstanceOf[kyc_documents_all]
-  @scala.inline
-  def kyc_documents_create: kyc_documents_create = "kyc_documents_create".asInstanceOf[kyc_documents_create]
-  @scala.inline
-  def kyc_documents_create_consult: kyc_documents_create_consult = "kyc_documents_create_consult".asInstanceOf[kyc_documents_create_consult]
-  @scala.inline
-  def kyc_documents_get: kyc_documents_get = "kyc_documents_get".asInstanceOf[kyc_documents_get]
-  @scala.inline
-  def kyc_documents_get_alt: kyc_documents_get_alt = "kyc_documents_get_alt".asInstanceOf[kyc_documents_get_alt]
-  @scala.inline
-  def kyc_documents_save: kyc_documents_save = "kyc_documents_save".asInstanceOf[kyc_documents_save]
-  @scala.inline
-  def kyc_page_create: kyc_page_create = "kyc_page_create".asInstanceOf[kyc_page_create]
-  @scala.inline
-  def mandates_all: mandates_all = "mandates_all".asInstanceOf[mandates_all]
-  @scala.inline
-  def mandates_cancel: mandates_cancel = "mandates_cancel".asInstanceOf[mandates_cancel]
-  @scala.inline
-  def `mandates_directdebit-web_create`: `mandates_directdebit-web_create` = "mandates_directdebit-web_create".asInstanceOf[`mandates_directdebit-web_create`]
-  @scala.inline
-  def mandates_get: mandates_get = "mandates_get".asInstanceOf[mandates_get]
-  @scala.inline
-  def mandates_get_for_bank_account: mandates_get_for_bank_account = "mandates_get_for_bank_account".asInstanceOf[mandates_get_for_bank_account]
-  @scala.inline
-  def mandates_get_for_user: mandates_get_for_user = "mandates_get_for_user".asInstanceOf[mandates_get_for_user]
-  @scala.inline
-  def `payins_bankwire-direct_create`: `payins_bankwire-direct_create` = "payins_bankwire-direct_create".asInstanceOf[`payins_bankwire-direct_create`]
-  @scala.inline
-  def `payins_card-direct_create`: `payins_card-direct_create` = "payins_card-direct_create".asInstanceOf[`payins_card-direct_create`]
-  @scala.inline
-  def `payins_card-web_create`: `payins_card-web_create` = "payins_card-web_create".asInstanceOf[`payins_card-web_create`]
-  @scala.inline
-  def payins_createrefunds: payins_createrefunds = "payins_createrefunds".asInstanceOf[payins_createrefunds]
-  @scala.inline
-  def `payins_directdebit-direct_create`: `payins_directdebit-direct_create` = "payins_directdebit-direct_create".asInstanceOf[`payins_directdebit-direct_create`]
-  @scala.inline
-  def `payins_directdebit-web_create`: `payins_directdebit-web_create` = "payins_directdebit-web_create".asInstanceOf[`payins_directdebit-web_create`]
-  @scala.inline
-  def payins_get: payins_get = "payins_get".asInstanceOf[payins_get]
-  @scala.inline
-  def `payins_paypal-web_create`: `payins_paypal-web_create` = "payins_paypal-web_create".asInstanceOf[`payins_paypal-web_create`]
-  @scala.inline
-  def `payins_preauthorized-direct_create`: `payins_preauthorized-direct_create` = "payins_preauthorized-direct_create".asInstanceOf[`payins_preauthorized-direct_create`]
-  @scala.inline
-  def payouts_bankwire_create: payouts_bankwire_create = "payouts_bankwire_create".asInstanceOf[payouts_bankwire_create]
-  @scala.inline
-  def payouts_get: payouts_get = "payouts_get".asInstanceOf[payouts_get]
-  @scala.inline
-  def preauthorization_create: preauthorization_create = "preauthorization_create".asInstanceOf[preauthorization_create]
-  @scala.inline
-  def preauthorization_get: preauthorization_get = "preauthorization_get".asInstanceOf[preauthorization_get]
-  @scala.inline
-  def preauthorization_save: preauthorization_save = "preauthorization_save".asInstanceOf[preauthorization_save]
-  @scala.inline
-  def preauthorizations_get_for_user: preauthorizations_get_for_user = "preauthorizations_get_for_user".asInstanceOf[preauthorizations_get_for_user]
-  @scala.inline
-  def refunds_get: refunds_get = "refunds_get".asInstanceOf[refunds_get]
-  @scala.inline
-  def refunds_get_for_payin: refunds_get_for_payin = "refunds_get_for_payin".asInstanceOf[refunds_get_for_payin]
-  @scala.inline
-  def refunds_get_for_payout: refunds_get_for_payout = "refunds_get_for_payout".asInstanceOf[refunds_get_for_payout]
-  @scala.inline
-  def refunds_get_for_repudiation: refunds_get_for_repudiation = "refunds_get_for_repudiation".asInstanceOf[refunds_get_for_repudiation]
-  @scala.inline
-  def refunds_get_for_transfer: refunds_get_for_transfer = "refunds_get_for_transfer".asInstanceOf[refunds_get_for_transfer]
-  @scala.inline
-  def reports_all: reports_all = "reports_all".asInstanceOf[reports_all]
-  @scala.inline
-  def reports_get: reports_get = "reports_get".asInstanceOf[reports_get]
-  @scala.inline
-  def reports_transaction_create: reports_transaction_create = "reports_transaction_create".asInstanceOf[reports_transaction_create]
-  @scala.inline
-  def reports_wallet_create: reports_wallet_create = "reports_wallet_create".asInstanceOf[reports_wallet_create]
-  @scala.inline
-  def responses_get: responses_get = "responses_get".asInstanceOf[responses_get]
-  @scala.inline
-  def transactions_get_for_bank_account: transactions_get_for_bank_account = "transactions_get_for_bank_account".asInstanceOf[transactions_get_for_bank_account]
-  @scala.inline
-  def transactions_get_for_card: transactions_get_for_card = "transactions_get_for_card".asInstanceOf[transactions_get_for_card]
-  @scala.inline
-  def transactions_get_for_mandate: transactions_get_for_mandate = "transactions_get_for_mandate".asInstanceOf[transactions_get_for_mandate]
-  @scala.inline
-  def transfers_create: transfers_create = "transfers_create".asInstanceOf[transfers_create]
-  @scala.inline
-  def transfers_createrefunds: transfers_createrefunds = "transfers_createrefunds".asInstanceOf[transfers_createrefunds]
-  @scala.inline
-  def transfers_get: transfers_get = "transfers_get".asInstanceOf[transfers_get]
-  @scala.inline
-  def ubo_declaration_create: ubo_declaration_create = "ubo_declaration_create".asInstanceOf[ubo_declaration_create]
-  @scala.inline
-  def ubo_declaration_get: ubo_declaration_get = "ubo_declaration_get".asInstanceOf[ubo_declaration_get]
-  @scala.inline
-  def ubo_declaration_update: ubo_declaration_update = "ubo_declaration_update".asInstanceOf[ubo_declaration_update]
-  @scala.inline
-  def users_all: users_all = "users_all".asInstanceOf[users_all]
-  @scala.inline
-  def users_allbankaccount: users_allbankaccount = "users_allbankaccount".asInstanceOf[users_allbankaccount]
-  @scala.inline
-  def users_allcards: users_allcards = "users_allcards".asInstanceOf[users_allcards]
-  @scala.inline
-  def users_allkycdocuments: users_allkycdocuments = "users_allkycdocuments".asInstanceOf[users_allkycdocuments]
-  @scala.inline
-  def users_alltransactions: users_alltransactions = "users_alltransactions".asInstanceOf[users_alltransactions]
-  @scala.inline
-  def users_allwallets: users_allwallets = "users_allwallets".asInstanceOf[users_allwallets]
-  @scala.inline
-  def users_createbankaccounts_ca: users_createbankaccounts_ca = "users_createbankaccounts_ca".asInstanceOf[users_createbankaccounts_ca]
-  @scala.inline
-  def users_createbankaccounts_gb: users_createbankaccounts_gb = "users_createbankaccounts_gb".asInstanceOf[users_createbankaccounts_gb]
-  @scala.inline
-  def users_createbankaccounts_iban: users_createbankaccounts_iban = "users_createbankaccounts_iban".asInstanceOf[users_createbankaccounts_iban]
-  @scala.inline
-  def users_createbankaccounts_other: users_createbankaccounts_other = "users_createbankaccounts_other".asInstanceOf[users_createbankaccounts_other]
-  @scala.inline
-  def users_createbankaccounts_us: users_createbankaccounts_us = "users_createbankaccounts_us".asInstanceOf[users_createbankaccounts_us]
-  @scala.inline
-  def users_createlegals: users_createlegals = "users_createlegals".asInstanceOf[users_createlegals]
-  @scala.inline
-  def users_createnaturals: users_createnaturals = "users_createnaturals".asInstanceOf[users_createnaturals]
-  @scala.inline
-  def users_deactivate_bankaccount: users_deactivate_bankaccount = "users_deactivate_bankaccount".asInstanceOf[users_deactivate_bankaccount]
-  @scala.inline
-  def users_get: users_get = "users_get".asInstanceOf[users_get]
-  @scala.inline
-  def users_getbankaccount: users_getbankaccount = "users_getbankaccount".asInstanceOf[users_getbankaccount]
-  @scala.inline
-  def users_getemoney: users_getemoney = "users_getemoney".asInstanceOf[users_getemoney]
-  @scala.inline
-  def users_getlegals: users_getlegals = "users_getlegals".asInstanceOf[users_getlegals]
-  @scala.inline
-  def users_getnaturals: users_getnaturals = "users_getnaturals".asInstanceOf[users_getnaturals]
-  @scala.inline
-  def users_savelegals: users_savelegals = "users_savelegals".asInstanceOf[users_savelegals]
-  @scala.inline
-  def users_savenaturals: users_savenaturals = "users_savenaturals".asInstanceOf[users_savenaturals]
-  @scala.inline
-  def wallets_alltransactions: wallets_alltransactions = "wallets_alltransactions".asInstanceOf[wallets_alltransactions]
-  @scala.inline
-  def wallets_create: wallets_create = "wallets_create".asInstanceOf[wallets_create]
-  @scala.inline
-  def wallets_get: wallets_get = "wallets_get".asInstanceOf[wallets_get]
-  @scala.inline
-  def wallets_save: wallets_save = "wallets_save".asInstanceOf[wallets_save]
 }
-

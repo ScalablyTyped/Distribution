@@ -3,9 +3,37 @@ package typings.eggLogger
 import typings.eggLogger.mod.LoggerLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eggLoggerStrings {
+  
+  @scala.inline
+  def ALL: ALL = "ALL".asInstanceOf[ALL]
+  
+  @scala.inline
+  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  
+  @scala.inline
+  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  
+  @scala.inline
+  def INFO: INFO = "INFO".asInstanceOf[INFO]
+  
+  @scala.inline
+  def NONE: NONE = "NONE".asInstanceOf[NONE]
+  
+  @scala.inline
+  def WARN: WARN = "WARN".asInstanceOf[WARN]
+  
+  @scala.inline
+  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
+  
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  
   @js.native
   sealed trait ALL extends LoggerLevel
   
@@ -32,24 +60,4 @@ object eggLoggerStrings {
   
   @js.native
   sealed trait redirect extends js.Object
-  
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
-  def WARN: WARN = "WARN".asInstanceOf[WARN]
-  @scala.inline
-  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
 }
-

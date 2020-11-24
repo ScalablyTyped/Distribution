@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nColumnsItem extends Item {
+  
   /**
     * Gets current value of property <code>columnKey</code>.This property contains the unique table column
     * key
@@ -14,12 +15,14 @@ trait P13nColumnsItem extends Item {
     * @returns Value of property <code>columnKey</code>
     */
   def getColumnKey(): String = js.native
+  
   /**
     * Gets current value of property <code>index</code>.This property contains the index of a table column
     * @since 1.26.0
     * @returns Value of property <code>index</code>
     */
   def getIndex(): Double = js.native
+  
   /**
     * Gets current value of property <code>total</code>.This property contains the total flag of a table
     * column.
@@ -27,6 +30,7 @@ trait P13nColumnsItem extends Item {
     * @returns Value of property <code>total</code>
     */
   def getTotal(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>visible</code>.This property decides whether a P13nColumnsItem
     * is visible
@@ -34,12 +38,14 @@ trait P13nColumnsItem extends Item {
     * @returns Value of property <code>visible</code>
     */
   def getVisible(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>width</code>.This property contains the with of a table column.
     * @since 1.26.0
     * @returns Value of property <code>width</code>
     */
   def getWidth(): String = js.native
+  
   /**
     * Sets a new value for property <code>columnKey</code>.This property contains the unique table column
     * keyWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -49,6 +55,7 @@ trait P13nColumnsItem extends Item {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setColumnKey(sColumnKey: String): P13nColumnsItem = js.native
+  
   /**
     * Sets a new value for property <code>index</code>.This property contains the index of a table
     * columnWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -58,6 +65,7 @@ trait P13nColumnsItem extends Item {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIndex(iIndex: Double): P13nColumnsItem = js.native
+  
   /**
     * Sets a new value for property <code>total</code>.This property contains the total flag of a table
     * column.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -67,6 +75,7 @@ trait P13nColumnsItem extends Item {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTotal(bTotal: Boolean): P13nColumnsItem = js.native
+  
   /**
     * Sets a new value for property <code>visible</code>.This property decides whether a P13nColumnsItem
     * is visibleWhen called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -76,6 +85,7 @@ trait P13nColumnsItem extends Item {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVisible(bVisible: Boolean): P13nColumnsItem = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.This property contains the with of a table
     * column.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -86,4 +96,3 @@ trait P13nColumnsItem extends Item {
     */
   def setWidth(sWidth: String): P13nColumnsItem = js.native
 }
-

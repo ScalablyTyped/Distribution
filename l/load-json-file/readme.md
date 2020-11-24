@@ -10,9 +10,9 @@ Read and parse a JSON file
 | ------------------ | :-------------: |
 | Full name          | load-json-file |
 | Keywords           | read, json, parse, file, fs, graceful, load |
-| # releases         | 8 |
-| # dependents       | 299 |
-| # downloads        | 825497640 |
+| # releases         | 7 |
+| # dependents       | 368 |
+| # downloads        | 1081657229 |
 | # stars            | 11 |
 
 ## Links

@@ -10,9 +10,9 @@ Simple library for handling keyboard shortcuts
 | ------------------ | :-------------: |
 | Full name          | mousetrap |
 | Keywords           | keyboard, shortcuts, events |
-| # releases         | 3 |
-| # dependents       | 289 |
-| # downloads        | 9027084 |
+| # releases         | 4 |
+| # dependents       | 350 |
+| # downloads        | 12365112 |
 | # stars            | 36 |
 
 ## Links

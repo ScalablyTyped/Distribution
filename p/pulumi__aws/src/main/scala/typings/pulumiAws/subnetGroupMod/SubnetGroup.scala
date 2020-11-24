@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/dax/subnetGroup", "SubnetGroup")
 @js.native
@@ -21,28 +21,32 @@ class SubnetGroup protected () extends CustomResource {
     */
   def this(name: String, args: SubnetGroupArgs) = this()
   def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * A description of the subnet group.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the subnet group.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A list of VPC subnet IDs for the subnet group.
     */
   val subnetIds: Output_[js.Array[String]] = js.native
+  
   /**
     * VPC ID of the subnet group.
     */
   val vpcId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/dax/subnetGroup", "SubnetGroup")
 @js.native
 object SubnetGroup extends js.Object {
+  
   /**
     * Get an existing SubnetGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object SubnetGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SubnetGroup = js.native
   def get(name: String, id: Input[ID], state: SubnetGroupState): SubnetGroup = js.native
   def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): SubnetGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/subnetGroup.SubnetGroup */ Boolean = js.native
 }
-

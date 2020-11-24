@@ -10,9 +10,9 @@ Pusher Channels JavaScript library for browsers, React Native, NodeJS and web wo
 | ------------------ | :-------------: |
 | Full name          | pusher-js |
 | Keywords           | pusher, client, websocket, http, fallback, isomorphic, events, pubsub |
-| # releases         | 8 |
-| # dependents       | 101 |
-| # downloads        | 5515849 |
+| # releases         | 14 |
+| # dependents       | 122 |
+| # downloads        | 7836326 |
 | # stars            | 4 |
 
 ## Links

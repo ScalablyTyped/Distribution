@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1beta2", "dns_v1beta2.Resource$Policies")
 @js.native
 class ResourcePolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.policies.create
     * @alias dns.policies.create
@@ -42,6 +44,7 @@ class ResourcePolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dns.policies.delete
     * @alias dns.policies.delete
@@ -67,6 +70,7 @@ class ResourcePolicies protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourcePoliciesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePoliciesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * dns.policies.get
     * @alias dns.policies.get
@@ -96,6 +100,7 @@ class ResourcePolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dns.policies.list
     * @alias dns.policies.list
@@ -125,6 +130,7 @@ class ResourcePolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPoliciesListResponse]
   ): Unit = js.native
+  
   /**
     * dns.policies.patch
     * @alias dns.policies.patch
@@ -155,6 +161,7 @@ class ResourcePolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPoliciesPatchResponse]
   ): Unit = js.native
+  
   /**
     * dns.policies.update
     * @alias dns.policies.update
@@ -186,4 +193,3 @@ class ResourcePolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPoliciesUpdateResponse]
   ): Unit = js.native
 }
-

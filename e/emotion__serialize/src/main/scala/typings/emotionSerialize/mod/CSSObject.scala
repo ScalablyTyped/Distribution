@@ -2,7 +2,7 @@ package typings.emotionSerialize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSSObject
@@ -10,12 +10,11 @@ trait CSSObject
      with CSSPropertiesWithMultiValues
      with CSSPseudosForCSSObject
      with _CSSInterpolation
-
 object CSSObject {
+  
   @scala.inline
   def apply(): CSSObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSObject]
   }
 }
-

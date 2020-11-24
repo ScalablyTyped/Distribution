@@ -10,38 +10,41 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/drawer", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCDismissibleDrawerFoundation ()
     extends typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation {
     def this(adapter: PartialMDCDrawerAdapter) = this()
   }
+  /* static members */
+  @js.native
+  object MDCDismissibleDrawerFoundation extends js.Object {
+    
+    def cssClasses: ANIMATE = js.native
+    
+    def defaultAdapter: MDCDrawerAdapter = js.native
+    
+    def strings: APPCONTENTSELECTOR = js.native
+  }
   
   @js.native
   class MDCDrawer ()
     extends typings.materialDrawer.componentMod.MDCDrawer
+  /* static members */
+  @js.native
+  object MDCDrawer extends js.Object {
+    
+    def attachTo(root: Element): typings.materialDrawer.componentMod.MDCDrawer = js.native
+  }
   
   @js.native
   class MDCModalDrawerFoundation ()
     extends typings.materialDrawer.modalFoundationMod.MDCModalDrawerFoundation
-  
-  /* static members */
-  @js.native
-  object MDCDismissibleDrawerFoundation extends js.Object {
-    def cssClasses: ANIMATE = js.native
-    def defaultAdapter: MDCDrawerAdapter = js.native
-    def strings: APPCONTENTSELECTOR = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCDrawer extends js.Object {
-    def attachTo(root: Element): typings.materialDrawer.componentMod.MDCDrawer = js.native
-  }
   
   /**
     * @license
@@ -67,27 +70,37 @@ object mod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ANIMATE: String = js.native
+    
     var CLOSING: String = js.native
+    
     var DISMISSIBLE: String = js.native
+    
     var MODAL: String = js.native
+    
     var OPEN: String = js.native
+    
     var OPENING: String = js.native
+    
     var ROOT: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var APP_CONTENT_SELECTOR: String = js.native
+    
     var CLOSE_EVENT: String = js.native
+    
     var OPEN_EVENT: String = js.native
+    
     var SCRIM_SELECTOR: String = js.native
   }
   
   @js.native
   object util extends js.Object {
+    
     def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDrawerFocusTrapFactory): FocusTrap = js.native
   }
-  
 }
-

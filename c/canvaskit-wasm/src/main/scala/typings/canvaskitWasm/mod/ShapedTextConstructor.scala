@@ -3,8 +3,12 @@ package typings.canvaskitWasm.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapedTextConstructor extends Instantiable1[/* config */ SkShapedTextConfig, SkShapedText]
-
+trait ShapedTextConstructor
+  extends /**
+  * Return a ShapedText from the given options. See SkShaper.h for more.
+  * @param opts
+  */
+Instantiable1[/* opts */ ShapedTextOpts, ShapedText]

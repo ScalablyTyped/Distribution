@@ -2,11 +2,13 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
+  
   var instanceRedistributionType: js.UndefOr[String] = js.native
+  
   /**
     * The maximum number of instances that can be created above the specified
     * targetSize during the update process. By default, a fixed value of 1 is
@@ -17,6 +19,7 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
     * about maxSurge.
     */
   var maxSurge: js.UndefOr[SchemaFixedOrPercent] = js.native
+  
   /**
     * The maximum number of instances that can be unavailable during the update
     * process. An instance is considered available if all of the following
@@ -32,11 +35,13 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
     * about maxUnavailable.
     */
   var maxUnavailable: js.UndefOr[SchemaFixedOrPercent] = js.native
+  
   /**
     * Minimum number of seconds to wait for after a newly created instance
     * becomes available. This value must be from range [0, 3600].
     */
   var minReadySec: js.UndefOr[Double] = js.native
+  
   /**
     * Minimal action to be taken on an instance. You can specify either RESTART
     * to restart existing instances or REPLACE to delete and create new
@@ -46,60 +51,78 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
     * the update, it might perform a more disruptive action.
     */
   var minimalAction: js.UndefOr[String] = js.native
+  
   /**
     * What action should be used to replace instances. See
     * minimal_action.REPLACE
     */
   var replacementMethod: js.UndefOr[String] = js.native
+  
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaInstanceGroupManagerUpdatePolicy {
+  
   @scala.inline
   def apply(): SchemaInstanceGroupManagerUpdatePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerUpdatePolicy]
   }
+  
   @scala.inline
   implicit class SchemaInstanceGroupManagerUpdatePolicyOps[Self <: SchemaInstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setInstanceRedistributionType(value: String): Self = this.set("instanceRedistributionType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInstanceRedistributionType: Self = this.set("instanceRedistributionType", js.undefined)
+    
     @scala.inline
     def setMaxSurge(value: SchemaFixedOrPercent): Self = this.set("maxSurge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxSurge: Self = this.set("maxSurge", js.undefined)
+    
     @scala.inline
     def setMaxUnavailable(value: SchemaFixedOrPercent): Self = this.set("maxUnavailable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxUnavailable: Self = this.set("maxUnavailable", js.undefined)
+    
     @scala.inline
     def setMinReadySec(value: Double): Self = this.set("minReadySec", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMinReadySec: Self = this.set("minReadySec", js.undefined)
+    
     @scala.inline
     def setMinimalAction(value: String): Self = this.set("minimalAction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMinimalAction: Self = this.set("minimalAction", js.undefined)
+    
     @scala.inline
     def setReplacementMethod(value: String): Self = this.set("replacementMethod", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReplacementMethod: Self = this.set("replacementMethod", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

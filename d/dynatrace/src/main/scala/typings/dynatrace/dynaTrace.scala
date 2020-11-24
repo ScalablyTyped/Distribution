@@ -9,16 +9,18 @@ import typings.dynatrace.dynatraceStrings.s
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dynaTrace extends js.Object {
+  
   /**
     * @description Adds a listener that is called when the user is leaving the page,
     * but before the monitor signal is sent
     * @param listener A function that will be called in case the user leaves the page.
     */
   def addPageLeavingListener(listener: js.Function1[/* key */ String, js.Object]): Unit = js.native
+  
   @JSName("addStreamingNode")
   def addStreamingNode_error(
     source: String,
@@ -68,6 +70,7 @@ trait dynaTrace extends js.Object {
     bufferingTime: Double,
     `type`: _warn_
   ): Unit = js.native
+  
   /**
     * @description Indicates the start of a user input. User inputs must always
     * be stopped by calling endUserInput. If an xhr call or a page load happens
@@ -79,10 +82,12 @@ trait dynaTrace extends js.Object {
     * @param validTime - How long should the user input be able to open actions? default is 30ms
     */
   def beginUserInput(domNode: js.Any, `type`: String, addInfo: String, validTime: Double): js.Any = js.native
+  
   /**
     * @description the user input object returned by beginUserInput
     */
   def endUserInput(userInputObject: js.Any): Unit = js.native
+  
   /**
     * @description By default a visit ends after a configurable inactivity time (default is 30 min.).
     * Using the ADK, a visit can be ended forcibly, for example when a user logs out from an application.
@@ -93,6 +98,7 @@ trait dynaTrace extends js.Object {
     * when the user logs out, the user's visit can also be closed by calling this method.
     */
   def endVisit(): Unit = js.native
+  
   /**
     * @description parentAction: optional id of parent action.
     *     - if parameter is not passed => appended to currently running action
@@ -114,6 +120,7 @@ trait dynaTrace extends js.Object {
   def enterAction(name: String, `type`: String, time: Double): Double = js.native
   def enterAction(name: String, `type`: String, time: Double, parentAction: Boolean): Double = js.native
   def enterAction(name: String, `type`: String, time: Double, parentAction: Double): Double = js.native
+  
   /**
     * @description Initiate ajax action. Must be closed by leaveXhrAction afterwards.
     * @param type Additional info about type of xhr (eg. framework name,etc)
@@ -123,6 +130,7 @@ trait dynaTrace extends js.Object {
     * @returns id of action
     */
   def enterXhrAction(`type`: String, mode: Double, webSocket: Boolean): Double = js.native
+  
   /**
     * @description Indicates that an xhr callback is active (eg. XMLHttpRequest onreadystatechange).
     * This is necessary to automatically add actions started during a callback as subactions.
@@ -130,6 +138,7 @@ trait dynaTrace extends js.Object {
     * @param actionId - id of action where callback belongs to
     */
   def enterXhrCallback(actionId: Double): Unit = js.native
+  
   /**
     * @description Tells the JavaScript agent to wait for an additional call of signalOnLoadEnd.
     * When the last call of signalOnLoadEnd is performed the "onload" action is closed.
@@ -137,6 +146,7 @@ trait dynaTrace extends js.Object {
     * Otherwise there will be unexpected action behaviour.
     */
   def incrementOnLoadEndMarkers(): Unit = js.native
+  
   /**
     * @description stops the action that is represented by the given tracking object.
     * @param actionId - id of action to leave. must be the value returned by enterAction
@@ -147,16 +157,19 @@ trait dynaTrace extends js.Object {
   def leaveAction(actionId: Double, time: js.UndefOr[scala.Nothing], startTime: Double): Unit = js.native
   def leaveAction(actionId: Double, time: Double): Unit = js.native
   def leaveAction(actionId: Double, time: Double, startTime: Double): Unit = js.native
+  
   /**
     * @description Indicates the end of an xhr action. Must be started by leaveXhrAction beforehand.
     * @param id -  id of action (must be the value returned by enterXhrAction)
     */
   def leaveXhrAction(id: Double): Unit = js.native
+  
   /**
     * @description Indicates the end of an xhr callback. Must be called after enterXhrCallback.
     * @param actionId - id of action where callback belongs to
     */
   def leaveXhrCallback(actionId: Double): Unit = js.native
+  
   /**
     * @description Reports an error message
     * @param parentAction - parent action id. if not passed or null, error is added to current action
@@ -165,27 +178,32 @@ trait dynaTrace extends js.Object {
   def reportError(error: String, parentAction: Double): Unit = js.native
   def reportError(error: Error): Unit = js.native
   def reportError(error: Error, parentAction: Double): Unit = js.native
+  
   /**
     * @description Reports an event
     * @param parentAction - parent action id. if not passed or null, error is added to current action
     */
   def reportEvent(msg: String): Unit = js.native
   def reportEvent(msg: String, parentAction: Double): Unit = js.native
+  
   /**
     * @description Reports a key value pair to the server. The data can e.g. be used to create charts.
     * The difference to the reportValue function is that here the value is a string.
     */
   def reportString(key: String, value: String): Unit = js.native
+  
   /**
     * @description Reports a key value pair to the server. The data can e.g. be used to create charts.
     */
   def reportValue(key: String, value: Double): Unit = js.native
+  
   /**
     * @description Reports a warning message
     * @param parentAction - parent action id. if not passed or null, error is added to current action
     */
   def reportWarning(warning: String): Unit = js.native
   def reportWarning(warning: String, parentAction: Double): Unit = js.native
+  
   /**
     * @description Force signal sending to make certain that actions aren't lost.
     * @param forceSync - Force synchronous sending of signal (if false, it'll be sent asynchronously)
@@ -193,12 +211,14 @@ trait dynaTrace extends js.Object {
     * @param killUnfinished - Kills unfinished actions and sends them immediately. Handle with care, actions might be inaccurate.
     */
   def sendSignal(forceSync: Boolean, sendPreview: Boolean, killUnfinished: Boolean): Unit = js.native
+  
   /**
     * @description Set the application version for this visit.
     * This will be read on the server side and included as part of each visit for easy splitting.
     * @param appVersion - The version string to be set.
     */
   def setAppVersion(appVersion: String): Unit = js.native
+  
   /**
     * @description disable automatic detection
     * Use in conjuction with enterAction
@@ -207,36 +227,43 @@ trait dynaTrace extends js.Object {
     *     dynaTrace.enterAction('action message', 'select', null, null);
     */
   def setAutomaticActionDetection(on: Boolean): Unit = js.native
+  
   /**
     * @description capture load event manually.
     * followed by a signalLoadEnd to complete the capture.
     */
   def setLoadEndManually(): Unit = js.native
+  
   /**
     * @description Set meta-data for the page via a key/value pair.
     * @param key - The readable key for the value
     * @param value - The value to associate with the identifier
     */
   def setMetaData(key: String, value: String): Unit = js.native
+  
   /**
     * @description Signals that the page has finished loading
     */
   def signalLoadEnd(): Unit = js.native
+  
   /**
     * @description Signal load start. If load start can be determined more accurately
     * than the automatic detection, this function can be used.
     */
   def signalLoadStart(): Unit = js.native
+  
   /**
     * @description Indicates the end of a load action. needs incrementOnLoadEndMarkers to be called before.
     *  As soon as the last signalOnLoadEnd is called, the "onload" action is closed.
     */
   def signalOnLoadEnd(): Unit = js.native
+  
   /**
     * @description Indicates the start of a load action. Frameworks often have their own load callback functions.
     * This can be used when framework starts load before "DOMContentLoaded".
     */
   def signalOnLoadStart(): Unit = js.native
+  
   @JSName("startThirdParty")
   def startThirdParty_c(`type`: c, url: String): Unit = js.native
   /**
@@ -247,6 +274,7 @@ trait dynaTrace extends js.Object {
   def startThirdParty_i(`type`: i, url: String): Unit = js.native
   @JSName("startThirdParty")
   def startThirdParty_s(`type`: s, url: String): Unit = js.native
+  
   /**
     * @description Indicates stop of a third party resource
     * @param url - Complete URL of resource (must match URL provided in startThirdParty).
@@ -260,10 +288,10 @@ trait dynaTrace extends js.Object {
   def stopThirdParty(url: String, success: Boolean, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
   def stopThirdParty(url: String, success: Boolean, start: Double): Unit = js.native
   def stopThirdParty(url: String, success: Boolean, start: Double, stop: Double): Unit = js.native
+  
   /**
     * @description The JavaScript ADK enables you to tag your visits with any value you want.
     * Use tagVisit(visitName) to tag the current visit with the specified value
     */
   def tagVisit(visitName: String): Unit = js.native
 }
-

@@ -9,10 +9,10 @@ Trianglify is a javascript library for generating colorful triangle meshes that 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | trianglify |
-| Keywords           | svg, d3.js, visualization |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 59355 |
+| Keywords           | svg, canvas, visualization, pattern, lowpoly |
+| # releases         | 13 |
+| # dependents       | 13 |
+| # downloads        | 71859 |
 | # stars            | 7 |
 
 ## Links

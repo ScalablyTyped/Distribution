@@ -12,7 +12,7 @@ Calculates the warmup sets, reps and plates for barbell lifts
 | Keywords           | barbell, weightlifting, powerlifting, squats, deadlift, press, exercise |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1182 |
+| # downloads        | 631 |
 | # stars            | 0 |
 
 ## Links

@@ -11,16 +11,18 @@ import typings.uiGrid.mod.scrollEndHandler
 import typings.uiGrid.mod.sortChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CanvasHeightChanged[TEntity] extends js.Object {
+  
   /**
     * is raised when the canvas height has changed
     * @param {ng.IScope} scope Grid scope
     * @param {canvasHeightChangedHandler} handler Callback
     */
   def canvasHeightChanged(scope: IScope, handler: canvasHeightChangedHandler): Unit = js.native
+  
   /**
     * The visibility of a column has changed, the column itself is passed out as a parameter of the event
     * @param {ng.IScope} scope The scope of the controller. This is used to deregister this event when the
@@ -29,6 +31,7 @@ trait CanvasHeightChanged[TEntity] extends js.Object {
     *        The function passes back the GridCol that has changed
     */
   def columnVisibilityChanged(scope: IScope, callBack: columnVisibilityChangedHandler[TEntity]): Unit = js.native
+  
   /**
     * is raised after the filter is changed.
     * The nature of the watch expression doesn't allow notification of what changed,
@@ -37,12 +40,14 @@ trait CanvasHeightChanged[TEntity] extends js.Object {
     * @param {filterChangedHandler} handler Callback
     */
   def filterChanged(scope: IScope, handler: filterChangedHandler[TEntity]): Unit = js.native
+  
   /**
     * is raised after the cache of visible rows is changed
     * @param {ng.IScope} scope Grid scope
     * @param {rowsRenderedHandler} handler callback
     */
   def rowsRendered(scope: IScope, handler: rowsRenderedHandler[TEntity]): Unit = js.native
+  
   /**
     * is raised after the rows that are visible change.
     * The filtering is zero-based, so it isn't possible to say which rows changed
@@ -53,18 +58,21 @@ trait CanvasHeightChanged[TEntity] extends js.Object {
     * @param {rowsVisibleChangedHandler} handler callback
     */
   def rowsVisibleChanged(scope: IScope, handler: rowsVisibleChangedHandler[TEntity]): Unit = js.native
+  
   /**
     * is raised when scroll begins. Is throttled, so won't be raised too frequently
     * @param {ng.IScope} scope Grid scope
     * @param {scrollBeginHandler} handler callback
     */
   def scrollBegin(scope: IScope, handler: scrollBeginHandler): Unit = js.native
+  
   /**
     * is raised when scroll has finished. Is throttled, so won't be raised too frequently
     * @param {ng.IScope} scope Grid scope
     * @param {scrollEndHandler} handler callback
     */
   def scrollEnd(scope: IScope, handler: scrollEndHandler): Unit = js.native
+  
   /**
     * is raised after the sort criteria on one or more columns have changed
     * @param {ng.IScope} scope Grid scope
@@ -72,8 +80,8 @@ trait CanvasHeightChanged[TEntity] extends js.Object {
     */
   def sortChanged(scope: IScope, handler: sortChangedHandler[TEntity]): Unit = js.native
 }
-
 object CanvasHeightChanged {
+  
   @scala.inline
   def apply[TEntity](
     canvasHeightChanged: (IScope, canvasHeightChangedHandler) => Unit,
@@ -88,34 +96,44 @@ object CanvasHeightChanged {
     val __obj = js.Dynamic.literal(canvasHeightChanged = js.Any.fromFunction2(canvasHeightChanged), columnVisibilityChanged = js.Any.fromFunction2(columnVisibilityChanged), filterChanged = js.Any.fromFunction2(filterChanged), rowsRendered = js.Any.fromFunction2(rowsRendered), rowsVisibleChanged = js.Any.fromFunction2(rowsVisibleChanged), scrollBegin = js.Any.fromFunction2(scrollBegin), scrollEnd = js.Any.fromFunction2(scrollEnd), sortChanged = js.Any.fromFunction2(sortChanged))
     __obj.asInstanceOf[CanvasHeightChanged[TEntity]]
   }
+  
   @scala.inline
   implicit class CanvasHeightChangedOps[Self <: CanvasHeightChanged[_], TEntity] (val x: Self with CanvasHeightChanged[TEntity]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = this.set("canvasHeightChanged", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setColumnVisibilityChanged(value: (IScope, columnVisibilityChangedHandler[TEntity]) => Unit): Self = this.set("columnVisibilityChanged", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setFilterChanged(value: (IScope, filterChangedHandler[TEntity]) => Unit): Self = this.set("filterChanged", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRowsRendered(value: (IScope, rowsRenderedHandler[TEntity]) => Unit): Self = this.set("rowsRendered", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRowsVisibleChanged(value: (IScope, rowsVisibleChangedHandler[TEntity]) => Unit): Self = this.set("rowsVisibleChanged", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setScrollBegin(value: (IScope, scrollBeginHandler) => Unit): Self = this.set("scrollBegin", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setScrollEnd(value: (IScope, scrollEndHandler) => Unit): Self = this.set("scrollEnd", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSortChanged(value: (IScope, sortChangedHandler[TEntity]) => Unit): Self = this.set("sortChanged", js.Any.fromFunction2(value))
   }
-  
 }
-

@@ -4,7 +4,7 @@ import typings.playcanvas.anon.Base
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new graphics device.
@@ -17,70 +17,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GraphicsDevice extends EventHandler {
+  
   /**
     * The canvas DOM element that provides the underlying WebGL context used by the graphics device.
     */
   var canvas: HTMLCanvasElement = js.native
-  /**
-    * Fullscreen mode.
-    */
-  var fullscreen: Boolean = js.native
-  /**
-    * Height of the back buffer in pixels.
-    */
-  val height: Double = js.native
-  /**
-    * The maximum supported texture anisotropy setting.
-    */
-  val maxAnisotropy: Double = js.native
-  /**
-    * The maximum supported dimension of a cube map.
-    */
-  val maxCubeMapSize: Double = js.native
-  /**
-    * Maximum pixel ratio.
-    */
-  var maxPixelRatio: Double = js.native
-  /**
-    * The maximum supported dimension of a texture.
-    */
-  val maxTextureSize: Double = js.native
-  /**
-    * The maximum supported dimension of a 3D texture (any axis).
-    */
-  val maxVolumeSize: Double = js.native
-  /**
-    * The highest shader precision supported by this graphics device. Can be 'hiphp', 'mediump' or 'lowp'.
-    */
-  val precision: String = js.native
-  /**
-    * The scope namespace for shader attributes and variables. [read only].
-    */
-  var scope: ScopeSpace = js.native
-  /**
-    * True if hardware instancing is supported.
-    */
-  val supportsInstancing: Boolean = js.native
-  /**
-    * Check if high precision floating-point textures are supported.
-    */
-  val textureFloatHighPrecision: Double = js.native
-  /**
-    * Determines if 32-bit floating-point textures can be used as frame buffer. [read only].
-    */
-  var textureFloatRenderable: Boolean = js.native
-  /**
-    * Determines if 16-bit floating-point textures can be used as frame buffer. [read only].
-    */
-  var textureHalfFloatRenderable: Boolean = js.native
-  /**
-    * Check if texture with half float format can be updated with data.
-    */
-  val textureHalfFloatUpdatable: Double = js.native
-  /**
-    * Width of the back buffer in pixels.
-    */
-  val width: Double = js.native
+  
   /**
     * Clears the frame buffer of the currently set render target.
     * @example
@@ -96,7 +38,7 @@ trait GraphicsDevice extends EventHandler {
     * // Clear color buffer to yellow and depth to 1.0
     * device.clear({
     *     color: [1, 1, 0, 1],
-    *     depth: 1.0,
+    *     depth: 1,
     *     flags: pc.CLEARFLAG_COLOR | pc.CLEARFLAG_DEPTH
     * });
     * @param options - Optional options object that controls the behavior of the clear operation defined as follows:
@@ -109,14 +51,17 @@ trait GraphicsDevice extends EventHandler {
     * * pc.CLEARFLAG_STENCIL
     */
   def clear(options: typings.playcanvas.anon.Color): Unit = js.native
+  
   /**
     * Frees memory from all shaders ever allocated with this device.
     */
   def clearShaderCache(): Unit = js.native
+  
   /**
     * Frees memory from all vertex array objects ever allocated with this device.
     */
   def clearVertexArrayObjectCache(): Unit = js.native
+  
   /**
     * Copies source render target into destination render target. Mostly used by post-effects.
     * @param source - The source render target.
@@ -138,6 +83,7 @@ trait GraphicsDevice extends EventHandler {
   def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: js.UndefOr[scala.Nothing], depth: Boolean): Boolean = js.native
   def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Boolean): Boolean = js.native
   def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Boolean, depth: Boolean): Boolean = js.native
+  
   /**
     * Submits a graphical primitive to the hardware for immediate rendering.
     * @example
@@ -168,11 +114,18 @@ trait GraphicsDevice extends EventHandler {
   def draw(primitive: Base, numInstances: js.UndefOr[scala.Nothing], keepBuffers: Boolean): Unit = js.native
   def draw(primitive: Base, numInstances: Double): Unit = js.native
   def draw(primitive: Base, numInstances: Double, keepBuffers: Boolean): Unit = js.native
+  
+  /**
+    * Fullscreen mode.
+    */
+  var fullscreen: Boolean = js.native
+  
   /**
     * Queries whether blending is enabled.
     * @returns True if blending is enabled and false otherwise.
     */
   def getBlending(): Boolean = js.native
+  
   /**
     * Queries whether depth testing is enabled.
     * @example
@@ -181,6 +134,7 @@ trait GraphicsDevice extends EventHandler {
     * @returns True if depth testing is enabled and false otherwise.
     */
   def getDepthTest(): Boolean = js.native
+  
   /**
     * Queries whether writes to the depth buffer are enabled.
     * @example
@@ -189,6 +143,7 @@ trait GraphicsDevice extends EventHandler {
     * @returns True if depth writing is enabled and false otherwise.
     */
   def getDepthWrite(): Boolean = js.native
+  
   /**
     * Queries the currently set render target on the device.
     * @example
@@ -197,6 +152,42 @@ trait GraphicsDevice extends EventHandler {
     * @returns The current render target.
     */
   def getRenderTarget(): RenderTarget = js.native
+  
+  /**
+    * Height of the back buffer in pixels.
+    */
+  val height: Double = js.native
+  
+  /**
+    * The maximum supported texture anisotropy setting.
+    */
+  val maxAnisotropy: Double = js.native
+  
+  /**
+    * The maximum supported dimension of a cube map.
+    */
+  val maxCubeMapSize: Double = js.native
+  
+  /**
+    * Maximum pixel ratio.
+    */
+  var maxPixelRatio: Double = js.native
+  
+  /**
+    * The maximum supported dimension of a texture.
+    */
+  val maxTextureSize: Double = js.native
+  
+  /**
+    * The maximum supported dimension of a 3D texture (any axis).
+    */
+  val maxVolumeSize: Double = js.native
+  
+  /**
+    * The highest shader precision supported by this graphics device. Can be 'hiphp', 'mediump' or 'lowp'.
+    */
+  val precision: String = js.native
+  
   /**
     * Sets the width and height of the canvas, then fires the 'resizecanvas' event.
     * Note that the specified width and height values will be multiplied by the value of
@@ -206,6 +197,12 @@ trait GraphicsDevice extends EventHandler {
     * @param height - The new height of the canvas.
     */
   def resizeCanvas(width: Double, height: Double): Unit = js.native
+  
+  /**
+    * The scope namespace for shader attributes and variables. [read only].
+    */
+  var scope: ScopeSpace = js.native
+  
   /**
     * Configures the blending equation. The default blend equation is
     * pc.BLENDEQUATION_ADD.
@@ -219,6 +216,7 @@ trait GraphicsDevice extends EventHandler {
     * Note that MIN and MAX modes require either EXT_blend_minmax or WebGL2 to work (check device.extBlendMinmax).
     */
   def setBlendEquation(blendEquation: Double): Unit = js.native
+  
   /**
     * Configures the blending equation. The default blend equation is
     * pc.BLENDEQUATION_ADD.
@@ -233,6 +231,7 @@ trait GraphicsDevice extends EventHandler {
     * @param blendAlphaEquation - A separate blend equation for the alpha channel. Accepts same values as blendEquation.
     */
   def setBlendEquationSeparate(blendEquation: Double, blendAlphaEquation: Double): Unit = js.native
+  
   /**
     * Configures blending operations. Both source and destination
     * blend modes can take the following values:
@@ -251,6 +250,7 @@ trait GraphicsDevice extends EventHandler {
     * @param blendDst - The destination blend function.
     */
   def setBlendFunction(blendSrc: Double, blendDst: Double): Unit = js.native
+  
   /**
     * Configures blending operations. Both source and destination
     * blend modes can take the following values:
@@ -271,11 +271,13 @@ trait GraphicsDevice extends EventHandler {
     * @param blendDstAlpha - The separate destination blend function for the alpha channel.
     */
   def setBlendFunctionSeparate(blendSrc: Double, blendDst: Double, blendSrcAlpha: Double, blendDstAlpha: Double): Unit = js.native
+  
   /**
     * Enables or disables blending.
     * @param blending - True to enable blending and false to disable it.
     */
   def setBlending(blending: Boolean): Unit = js.native
+  
   /**
     * Enables or disables writes to the color buffer. Once this state
     * is set, it persists until it is changed. By default, color writes are enabled
@@ -289,6 +291,7 @@ trait GraphicsDevice extends EventHandler {
     * @param writeAlpha - True to enable writing of the alpha channel and false otherwise.
     */
   def setColorWrite(writeRed: Boolean, writeGreen: Boolean, writeBlue: Boolean, writeAlpha: Boolean): Unit = js.native
+  
   /**
     * Controls how triangles are culled based on their face direction.
     * The default cull mode is pc.CULLFACE_BACK.
@@ -299,6 +302,7 @@ trait GraphicsDevice extends EventHandler {
     * * {@link pc.CULLFACE_FRONTANDBACK}
     */
   def setCullMode(cullMode: Double): Unit = js.native
+  
   /**
     * Configures the depth test.
     * @param func - A function to compare a new depth value with an existing z-buffer value and decide if to write a pixel. Can be:
@@ -312,6 +316,7 @@ trait GraphicsDevice extends EventHandler {
     * * {@link pc.FUNC_ALWAYS}: always draw
     */
   def setDepthFunc(func: Double): Unit = js.native
+  
   /**
     * Enables or disables depth testing of fragments. Once this state
     * is set, it persists until it is changed. By default, depth testing is enabled.
@@ -320,6 +325,7 @@ trait GraphicsDevice extends EventHandler {
     * @param depthTest - True to enable depth testing and false otherwise.
     */
   def setDepthTest(depthTest: Boolean): Unit = js.native
+  
   /**
     * Enables or disables writes to the depth buffer. Once this state
     * is set, it persists until it is changed. By default, depth writes are enabled.
@@ -328,6 +334,7 @@ trait GraphicsDevice extends EventHandler {
     * @param writeDepth - True to enable depth writing and false otherwise.
     */
   def setDepthWrite(writeDepth: Boolean): Unit = js.native
+  
   /**
     * Sets the current index buffer on the graphics device. On subsequent
     * calls to pc.GraphicsDevice#draw, the specified index buffer will be used to provide
@@ -335,6 +342,7 @@ trait GraphicsDevice extends EventHandler {
     * @param indexBuffer - The index buffer to assign to the device.
     */
   def setIndexBuffer(indexBuffer: IndexBuffer): Unit = js.native
+  
   /**
     * Sets the specified render target on the device. If null
     * is passed as a parameter, the back buffer becomes the current target
@@ -348,6 +356,7 @@ trait GraphicsDevice extends EventHandler {
     * @param renderTarget - The render target to activate.
     */
   def setRenderTarget(renderTarget: RenderTarget): Unit = js.native
+  
   /**
     * Set the active scissor rectangle on the specified device.
     * @param x - The pixel space x-coordinate of the bottom left corner of the scissor rectangle.
@@ -356,12 +365,14 @@ trait GraphicsDevice extends EventHandler {
     * @param h - The height of the scissor rectangle in pixels.
     */
   def setScissor(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  
   /**
     * Sets the active shader to be used during subsequent draw calls.
     * @param shader - The shader to set to assign to the device.
     * @returns True if the shader was successfully set, false otherwise.
     */
   def setShader(shader: Shader): Boolean = js.native
+  
   /**
     * Configures stencil test for both front and back faces.
     * @param func - A comparison function that decides if the pixel should be written, based on the current stencil buffer value,
@@ -378,6 +389,7 @@ trait GraphicsDevice extends EventHandler {
     * @param mask - Mask applied to stencil buffer value and reference value before comparison.
     */
   def setStencilFunc(func: Double, ref: Double, mask: Double): Unit = js.native
+  
   /**
     * Configures stencil test for back faces.
     * @param func - A comparison function that decides if the pixel should be written,
@@ -394,6 +406,7 @@ trait GraphicsDevice extends EventHandler {
     * @param mask - Mask applied to stencil buffer value and reference value before comparison.
     */
   def setStencilFuncBack(func: Double, ref: Double, mask: Double): Unit = js.native
+  
   /**
     * Configures stencil test for front faces.
     * @param func - A comparison function that decides if the pixel should be written,
@@ -410,6 +423,7 @@ trait GraphicsDevice extends EventHandler {
     * @param mask - Mask applied to stencil buffer value and reference value before comparison.
     */
   def setStencilFuncFront(func: Double, ref: Double, mask: Double): Unit = js.native
+  
   /**
     * Configures how stencil buffer values should be modified based on the result
     * of depth/stencil tests. Works for both front and back faces.
@@ -428,6 +442,7 @@ trait GraphicsDevice extends EventHandler {
     * @param writeMask - A bit mask applied to the reference value, when written.
     */
   def setStencilOperation(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
+  
   /**
     * Configures how stencil buffer values should be modified based on the result
     * of depth/stencil tests. Works for back faces.
@@ -446,6 +461,7 @@ trait GraphicsDevice extends EventHandler {
     * @param writeMask - A bit mask applied to the reference value, when written.
     */
   def setStencilOperationBack(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
+  
   /**
     * Configures how stencil buffer values should be modified based on the result
     * of depth/stencil tests. Works for front faces.
@@ -464,17 +480,20 @@ trait GraphicsDevice extends EventHandler {
     * @param writeMask - A bit mask applied to the reference value, when written.
     */
   def setStencilOperationFront(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
+  
   /**
     * Enables or disables stencil test.
     * @param enable - True to enable stencil test and false to disable it.
     */
   def setStencilTest(enable: Boolean): Unit = js.native
+  
   /**
     * Sets the current vertex buffer on the graphics device. On subsequent calls to
     * {@link pc.GraphicsDevice#draw}, the specified vertex buffer(s) will be used to provide vertex data for any primitives.
     * @param vertexBuffer - The vertex buffer to assign to the device.
     */
   def setVertexBuffer(vertexBuffer: VertexBuffer): Unit = js.native
+  
   /**
     * Set the active rectangle for rendering on the specified device.
     * @param x - The pixel space x-coordinate of the bottom left corner of the viewport.
@@ -483,6 +502,32 @@ trait GraphicsDevice extends EventHandler {
     * @param h - The height of the viewport in pixels.
     */
   def setViewport(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  
+  /**
+    * True if hardware instancing is supported.
+    */
+  val supportsInstancing: Boolean = js.native
+  
+  /**
+    * Check if high precision floating-point textures are supported.
+    */
+  val textureFloatHighPrecision: Double = js.native
+  
+  /**
+    * Determines if 32-bit floating-point textures can be used as frame buffer. [read only].
+    */
+  var textureFloatRenderable: Boolean = js.native
+  
+  /**
+    * Determines if 16-bit floating-point textures can be used as frame buffer. [read only].
+    */
+  var textureHalfFloatRenderable: Boolean = js.native
+  
+  /**
+    * Check if texture with half float format can be updated with data.
+    */
+  val textureHalfFloatUpdatable: Double = js.native
+  
   /**
     * Marks the beginning of a block of rendering. Internally, this function
     * binds the render target currently set on the device. This function should be matched
@@ -490,11 +535,16 @@ trait GraphicsDevice extends EventHandler {
     * and pc.GraphicsDevice#updateEnd must not be nested.
     */
   def updateBegin(): Unit = js.native
+  
   /**
     * Marks the end of a block of rendering. This function should be called
     * after a matching call to pc.GraphicsDevice#updateBegin. Calls to pc.GraphicsDevice#updateBegin
     * and pc.GraphicsDevice#updateEnd must not be nested.
     */
   def updateEnd(): Unit = js.native
+  
+  /**
+    * Width of the back buffer in pixels.
+    */
+  val width: Double = js.native
 }
-

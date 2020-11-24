@@ -5,11 +5,12 @@ import typings.jestTestResult.typesMod.SerializableError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest-message-util", "formatExecError")
 @js.native
 object formatExecError extends js.Object {
+  
   def apply(error: js.UndefOr[scala.Nothing], config: PickProjectConfigrootDirt, options: StackTraceOptions): String = js.native
   def apply(
     error: js.UndefOr[scala.Nothing],
@@ -85,4 +86,3 @@ object formatExecError extends js.Object {
     reuseMessage: Boolean
   ): String = js.native
 }
-

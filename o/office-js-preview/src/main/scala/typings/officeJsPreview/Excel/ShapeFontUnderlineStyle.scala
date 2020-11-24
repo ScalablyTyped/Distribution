@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeFontUnderlineStyle extends js.Object
-
 /**
   *
   * The type of underline applied to a font.
@@ -16,6 +15,7 @@ sealed trait ShapeFontUnderlineStyle extends js.Object
 @JSGlobal("Excel.ShapeFontUnderlineStyle")
 @js.native
 object ShapeFontUnderlineStyle extends js.Object {
+  
   @js.native
   sealed trait dash extends ShapeFontUnderlineStyle
   
@@ -66,6 +66,4 @@ object ShapeFontUnderlineStyle extends js.Object {
   
   @js.native
   sealed trait wavyHeavy extends ShapeFontUnderlineStyle
-  
 }
-

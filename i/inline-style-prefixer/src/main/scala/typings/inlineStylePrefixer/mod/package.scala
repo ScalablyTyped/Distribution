@@ -2,9 +2,10 @@ package typings.inlineStylePrefixer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Plugin = js.Function4[
     /* property */ java.lang.String, 
     /* value */ scala.Double | java.lang.String | (js.Array[scala.Double | java.lang.String]) | js.Any, 
@@ -14,5 +15,6 @@ package object mod {
       scala.Double | java.lang.String | (js.Array[scala.Double | java.lang.String]) | js.Any
     ]
   ]
+  
   type Prefix_ = js.Function1[/* style */ js.Any, js.Any]
 }

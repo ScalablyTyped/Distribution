@@ -10,9 +10,9 @@ User-friendly glob matching
 | ------------------ | :-------------: |
 | Full name          | globby |
 | Keywords           | all, array, directories, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
-| # releases         | 8 |
-| # dependents       | 2751 |
-| # downloads        | 762831122 |
+| # releases         | 10 |
+| # dependents       | 3494 |
+| # downloads        | 1131828790 |
 | # stars            | 49 |
 
 ## Links

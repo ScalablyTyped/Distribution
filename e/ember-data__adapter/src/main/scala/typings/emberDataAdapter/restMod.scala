@@ -3,11 +3,12 @@ package typings.emberDataAdapter
 import typings.emberData.mod.DS.RESTAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember-data/adapter/rest", JSImport.Namespace)
 @js.native
 object restMod extends js.Object {
+  
   /**
     * The REST adapter allows your store to communicate with an HTTP server by
     * transmitting JSON via XHR. Most Ember.js apps that consume a JSON API
@@ -15,6 +16,4 @@ object restMod extends js.Object {
     */
   @js.native
   class default () extends RESTAdapter
-  
 }
-

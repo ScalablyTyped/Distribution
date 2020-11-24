@@ -2,7 +2,7 @@ package typings.fabric.fabricImplMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IUtil
@@ -15,9 +15,12 @@ trait IUtil
      with IUtilDomStyle
      with IUtilClass
      with IUtilMisc {
+  
   var array: IUtilArray = js.native
+  
   var ease: IUtilAnimEase = js.native
+  
   var `object`: IUtilObject = js.native
+  
   var string: IUtilString = js.native
 }
-

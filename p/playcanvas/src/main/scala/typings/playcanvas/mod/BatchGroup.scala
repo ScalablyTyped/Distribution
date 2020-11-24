@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds mesh batching settings and a unique id. Created via {@link pc.BatchManager#addGroup}.
@@ -28,4 +28,3 @@ class BatchGroup protected ()
   def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double) = this()
   def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double, layers: js.Array[Double]) = this()
 }
-

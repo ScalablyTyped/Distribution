@@ -12,7 +12,7 @@ Eliminates the 300ms click event delay on touch devices that support orientation
 | Keywords           | swiftclick, fastclick, mobile, tap, touch, click, delay |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5283 |
+| # downloads        | 6010 |
 | # stars            | 2 |
 
 ## Links

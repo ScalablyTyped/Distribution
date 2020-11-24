@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nDialog extends Dialog {
+  
   /**
     * Adds some panel to the aggregation <code>panels</code>.
     * @since 1.26.0
@@ -13,6 +14,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addPanel(oPanel: P13nPanel): P13nDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this
     * <code>sap.m.P13nDialog</code>.When called, the context of the event handler (its <code>this</code>)
@@ -28,6 +30,7 @@ trait P13nDialog extends Dialog {
     */
   def attachCancel(oData: js.Any, fnFunction: js.Any): P13nDialog = js.native
   def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>ok</code> event of this
     * <code>sap.m.P13nDialog</code>.When called, the context of the event handler (its <code>this</code>)
@@ -43,6 +46,7 @@ trait P13nDialog extends Dialog {
     */
   def attachOk(oData: js.Any, fnFunction: js.Any): P13nDialog = js.native
   def attachOk(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>reset</code> event of this
     * <code>sap.m.P13nDialog</code>.When called, the context of the event handler (its <code>this</code>)
@@ -58,6 +62,7 @@ trait P13nDialog extends Dialog {
     */
   def attachReset(oData: js.Any, fnFunction: js.Any): P13nDialog = js.native
   def attachReset(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nDialog = js.native
+  
   /**
     * Binds aggregation <code>panels</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -67,12 +72,14 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindPanels(oBindingInfo: js.Any): P13nDialog = js.native
+  
   /**
     * Destroys all the panels in the aggregation <code>panels</code>.
     * @since 1.26.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyPanels(): P13nDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancel</code> event of this
     * <code>sap.m.P13nDialog</code>.The passed function and listener object must match the ones used for
@@ -83,6 +90,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachCancel(fnFunction: js.Any, oListener: js.Any): P13nDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>ok</code> event of this
     * <code>sap.m.P13nDialog</code>.The passed function and listener object must match the ones used for
@@ -93,6 +101,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachOk(fnFunction: js.Any, oListener: js.Any): P13nDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>reset</code> event of this
     * <code>sap.m.P13nDialog</code>.The passed function and listener object must match the ones used for
@@ -103,6 +112,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachReset(fnFunction: js.Any, oListener: js.Any): P13nDialog = js.native
+  
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @since 1.26.0
@@ -110,6 +120,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireCancel(mArguments: js.Any): P13nDialog = js.native
+  
   /**
     * Fires event <code>ok</code> to attached listeners.
     * @since 1.26.0
@@ -117,6 +128,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireOk(mArguments: js.Any): P13nDialog = js.native
+  
   /**
     * Fires event <code>reset</code> to attached listeners.
     * @since 1.26.0
@@ -124,6 +136,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireReset(mArguments: js.Any): P13nDialog = js.native
+  
   /**
     * Gets current value of property <code>initialVisiblePanelType</code>.This property determines which
     * panel is initially shown when dialog is opened. Due to extensibility reason the type should
@@ -132,11 +145,13 @@ trait P13nDialog extends Dialog {
     * @returns Value of property <code>initialVisiblePanelType</code>
     */
   def getInitialVisiblePanelType(): String = js.native
+  
   /**
     * Gets content of aggregation <code>panels</code>.The dialog panels displayed in the dialog.
     * @since 1.26.0
     */
   def getPanels(): js.Array[P13nPanel] = js.native
+  
   /**
     * Gets current value of property <code>showReset</code>.This property determines whether the 'Restore'
     * button is shown inside the dialog. If this property is set to true, clicking the'Reset' button will
@@ -146,6 +161,7 @@ trait P13nDialog extends Dialog {
     * @returns Value of property <code>showReset</code>
     */
   def getShowReset(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showResetEnabled</code>.This property determines whether the
     * 'Restore' button is enabled and is taken into account only if <code>showReset</code> is setto
@@ -154,6 +170,7 @@ trait P13nDialog extends Dialog {
     * @returns Value of property <code>showResetEnabled</code>
     */
   def getShowResetEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>validationExecutor</code>.Calls the validation listener once
     * all panel-relevant validation checks have been done. This callback function is called in orderto
@@ -161,11 +178,13 @@ trait P13nDialog extends Dialog {
     * @returns Value of property <code>validationExecutor</code>
     */
   def getValidationExecutor(): js.Any = js.native
+  
   /**
     * Returns visible panel.
     * @since 1.26.0
     */
   def getVisiblePanel(): P13nPanel | js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.m.P13nPanel</code> in the aggregation <code>panels</code>.and
     * returns its index if found or -1 otherwise.
@@ -174,6 +193,7 @@ trait P13nDialog extends Dialog {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfPanel(oPanel: P13nPanel): Double = js.native
+  
   /**
     * Inserts a panel into the aggregation <code>panels</code>.
     * @since 1.26.0
@@ -185,6 +205,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertPanel(oPanel: P13nPanel, iIndex: Double): P13nDialog = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>panels</code>.Additionally, it unregisters them
     * from the hosting UIArea.
@@ -192,6 +213,7 @@ trait P13nDialog extends Dialog {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllPanels(): js.Array[P13nPanel] = js.native
+  
   def removePanel(vPanel: String): P13nPanel = js.native
   /**
     * Removes a panel from the aggregation <code>panels</code>.
@@ -201,6 +223,7 @@ trait P13nDialog extends Dialog {
     */
   def removePanel(vPanel: Double): P13nPanel = js.native
   def removePanel(vPanel: P13nPanel): P13nPanel = js.native
+  
   /**
     * Sets a new value for property <code>initialVisiblePanelType</code>.This property determines which
     * panel is initially shown when dialog is opened. Due to extensibility reason the type should
@@ -212,6 +235,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInitialVisiblePanelType(sInitialVisiblePanelType: String): P13nDialog = js.native
+  
   /**
     * Sets a new value for property <code>showReset</code>.This property determines whether the 'Restore'
     * button is shown inside the dialog. If this property is set to true, clicking the'Reset' button will
@@ -223,6 +247,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowReset(bShowReset: Boolean): P13nDialog = js.native
+  
   /**
     * Sets a new value for property <code>showResetEnabled</code>.This property determines whether the
     * 'Restore' button is enabled and is taken into account only if <code>showReset</code> is setto
@@ -233,6 +258,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowResetEnabled(bShowResetEnabled: Boolean): P13nDialog = js.native
+  
   /**
     * Sets a new value for property <code>validationExecutor</code>.Calls the validation listener once all
     * panel-relevant validation checks have been done. This callback function is called in orderto perform
@@ -242,6 +268,7 @@ trait P13nDialog extends Dialog {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValidationExecutor(oValidationExecutor: js.Any): P13nDialog = js.native
+  
   /**
     * Unbinds aggregation <code>panels</code> from model data.
     * @since 1.26.0
@@ -249,4 +276,3 @@ trait P13nDialog extends Dialog {
     */
   def unbindPanels(): P13nDialog = js.native
 }
-

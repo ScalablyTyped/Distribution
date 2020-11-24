@@ -11,8 +11,8 @@ Regular expression for matching a shebang line
 | Full name          | shebang-regex |
 | Keywords           | regex, regexp, shebang, match, test, line |
 | # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 470229134 |
+| # dependents       | 112 |
+| # downloads        | 849807087 |
 | # stars            | 1 |
 
 ## Links

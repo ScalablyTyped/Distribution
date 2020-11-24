@@ -3,11 +3,12 @@ package typings.webPush.mod
 import typings.webPush.anon.AuthorizationCryptoKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web-push", "getVapidHeaders")
 @js.native
 object getVapidHeaders extends js.Object {
+  
   def apply(
     audience: String,
     subject: String,
@@ -24,4 +25,3 @@ object getVapidHeaders extends js.Object {
     expiration: Double
   ): AuthorizationCryptoKey = js.native
 }
-

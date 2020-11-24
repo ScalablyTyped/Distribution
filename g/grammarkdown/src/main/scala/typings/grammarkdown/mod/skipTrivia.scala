@@ -4,11 +4,12 @@ import typings.grammarkdown.nodesMod.CommentTrivia
 import typings.grammarkdown.nodesMod.HtmlTrivia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "skipTrivia")
 @js.native
 object skipTrivia extends js.Object {
+  
   def apply(text: String, pos: Double, end: Double): Double = js.native
   def apply(
     text: String,
@@ -26,4 +27,3 @@ object skipTrivia extends js.Object {
     commentTrivia: js.Array[CommentTrivia]
   ): Double = js.native
 }
-

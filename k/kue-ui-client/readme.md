@@ -10,9 +10,9 @@ Small description for client goes here
 | ------------------ | :-------------: |
 | Full name          | kue-ui-client |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 56121 |
+| # downloads        | 43993 |
 | # stars            | 1 |
 
 ## Links

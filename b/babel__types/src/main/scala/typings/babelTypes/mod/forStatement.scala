@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "forStatement")
 @js.native
 object forStatement extends js.Object {
+  
   def apply(
     init: js.UndefOr[scala.Nothing],
     test: js.UndefOr[scala.Nothing],
@@ -69,4 +70,3 @@ object forStatement extends js.Object {
   def apply(init: VariableDeclaration_, test: Expression, update: Null, body: Statement): ForStatement_ = js.native
   def apply(init: VariableDeclaration_, test: Expression, update: Expression, body: Statement): ForStatement_ = js.native
 }
-

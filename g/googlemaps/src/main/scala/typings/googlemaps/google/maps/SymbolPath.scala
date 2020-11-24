@@ -2,11 +2,10 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SymbolPath extends js.Object
-
 /**
   * Built-in symbol paths.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath Maps JavaScript API}
@@ -14,6 +13,7 @@ sealed trait SymbolPath extends js.Object
 @JSGlobal("google.maps.SymbolPath")
 @js.native
 object SymbolPath extends js.Object {
+  
   /**
     * A backward-pointing closed arrow.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath.BACKWARD_CLOSED_ARROW Maps JavaScript API}
@@ -48,6 +48,4 @@ object SymbolPath extends js.Object {
     */
   @js.native
   sealed trait FORWARD_OPEN_ARROW extends SymbolPath
-  
 }
-

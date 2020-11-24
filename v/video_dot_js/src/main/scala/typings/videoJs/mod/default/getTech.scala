@@ -3,7 +3,7 @@ package typings.videoJs.mod.default
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Get a Tech class object by name
@@ -16,4 +16,3 @@ object getTech
   extends TopLevel[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any
     ]
-

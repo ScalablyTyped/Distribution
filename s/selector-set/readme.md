@@ -12,7 +12,7 @@ An efficient data structure for matching and querying elements against a large s
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 104679 |
+| # downloads        | 151185 |
 | # stars            | 0 |
 
 ## Links

@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.mobile.ui.NavBarOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofNavBar
   extends Instantiable1[/* element */ Element, NavBar]
      with Instantiable2[/* element */ Element, /* options */ NavBarOptions, NavBar] {
-  var fn: NavBar = js.native
+  
   def extend(proto: js.Object): NavBar = js.native
+  
+  var fn: NavBar = js.native
 }
-

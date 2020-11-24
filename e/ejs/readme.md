@@ -10,9 +10,9 @@ Embedded JavaScript templates
 | ------------------ | :-------------: |
 | Full name          | ejs |
 | Keywords           | template, engine, ejs |
-| # releases         | 10 |
-| # dependents       | 5558 |
-| # downloads        | 188878482 |
+| # releases         | 12 |
+| # dependents       | 6570 |
+| # downloads        | 280346985 |
 | # stars            | 298 |
 
 ## Links

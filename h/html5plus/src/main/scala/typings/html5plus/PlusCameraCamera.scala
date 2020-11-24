@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 摄像头对象
@@ -11,38 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusCameraCamera extends js.Object {
-  /**
-    * 字符串数组，摄像头支持的拍照文件格式
-    * 属性类型为String[]，若不支持此属性则返回空数组对象。
-    *     摄像头支持的图片文件格式字符串形式为文件格式后缀名，如“jpg”、“png”、“bmp”。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
-    */
-  var supportedImageFormats: js.UndefOr[js.Array[_]] = js.native
-  /**
-    * 字符串数组，摄像头支持的拍照分辨率
-    * 属性类型为String[]，若不支持此属性则返回空数组对象。
-    *     摄像头支持的拍照图片分辨率字符串形式“WIDTH*Height”，如“400*800”；如果支持任意自定义分辨率则“*”。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
-    */
-  var supportedImageResolutions: js.UndefOr[js.Array[_]] = js.native
-  /**
-    * 字符串数组，摄像头支持的摄像文件格式
-    * 属性类型为String[]，若不支持此属性则返回空数组对象。
-    *     摄像头支持的视频文件格式字符串形式为文件格式后缀名，如“3gp”、“mp4”、“avi”。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
-    */
-  var supportedVideoFormats: js.UndefOr[js.Array[_]] = js.native
-  /**
-    * 字符串数组，摄像头支持的摄像分辨率
-    * 属性类型为String[]，若不支持此属性则返回空数组对象。
-    *     摄像头支持的视频分辨率字符串形式为“WIDTH*Height”，如“400*800”；如果支持任意自定义分辨率则“*”。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
-    */
-  var supportedVideoResolutions: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * 进行拍照操作
     * 摄像头资源为独占资源，如果其它程序或页面已经占用摄像头，再次操作则失败。
@@ -78,6 +47,7 @@ trait PlusCameraCamera extends js.Object {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     options: PlusCameraCameraOptions
   ): Unit = js.native
+  
   /**
     * 调用摄像头进行摄像操作
     * 摄像头资源为独占资源，如果其它程序或页面已经占用摄像头，再次操作则失败。
@@ -113,6 +83,7 @@ trait PlusCameraCamera extends js.Object {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     option: PlusCameraCameraOptions
   ): Unit = js.native
+  
   /**
     * 结束摄像操作
     * 开始调用摄像头进行摄像操作后，可在后台结束摄像操作，与用户在界面结束操作效果一致。
@@ -122,5 +93,40 @@ trait PlusCameraCamera extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
   def stopVideoCapture(): Unit = js.native
+  
+  /**
+    * 字符串数组，摄像头支持的拍照文件格式
+    * 属性类型为String[]，若不支持此属性则返回空数组对象。
+    *     摄像头支持的图片文件格式字符串形式为文件格式后缀名，如“jpg”、“png”、“bmp”。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
+    */
+  var supportedImageFormats: js.UndefOr[js.Array[_]] = js.native
+  
+  /**
+    * 字符串数组，摄像头支持的拍照分辨率
+    * 属性类型为String[]，若不支持此属性则返回空数组对象。
+    *     摄像头支持的拍照图片分辨率字符串形式“WIDTH*Height”，如“400*800”；如果支持任意自定义分辨率则“*”。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
+    */
+  var supportedImageResolutions: js.UndefOr[js.Array[_]] = js.native
+  
+  /**
+    * 字符串数组，摄像头支持的摄像文件格式
+    * 属性类型为String[]，若不支持此属性则返回空数组对象。
+    *     摄像头支持的视频文件格式字符串形式为文件格式后缀名，如“3gp”、“mp4”、“avi”。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
+    */
+  var supportedVideoFormats: js.UndefOr[js.Array[_]] = js.native
+  
+  /**
+    * 字符串数组，摄像头支持的摄像分辨率
+    * 属性类型为String[]，若不支持此属性则返回空数组对象。
+    *     摄像头支持的视频分辨率字符串形式为“WIDTH*Height”，如“400*800”；如果支持任意自定义分辨率则“*”。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
+    */
+  var supportedVideoResolutions: js.UndefOr[js.Array[_]] = js.native
 }
-

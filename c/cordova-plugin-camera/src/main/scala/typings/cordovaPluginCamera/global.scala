@@ -8,11 +8,30 @@ import typings.cordovaPluginCamera.anon.DATAURL
 import typings.cordovaPluginCamera.anon.JPEG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
+  @js.native
+  object Camera extends js.Object {
+    
+    // Camera constants, defined in Camera plugin
+    var DestinationType: DATAURL = js.native
+    
+    var Direction: BACK = js.native
+    
+    var EncodingType: JPEG = js.native
+    
+    var MediaType: ALLMEDIA = js.native
+    
+    var PictureSourceType: CAMERA = js.native
+    
+    // Used only on iOS
+    var PopoverArrowDirection: ARROWANY = js.native
+  }
+  
   /**
     * iOS-only parameters that specify the anchor element location and arrow direction
     * of the popover when selecting images from an iPad's library or album.
@@ -123,18 +142,4 @@ object global extends js.Object {
     def this(x: Double, y: Double, width: Double, height: js.UndefOr[scala.Nothing], arrowDir: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
   }
-  
-  @js.native
-  object Camera extends js.Object {
-    // Camera constants, defined in Camera plugin
-    var DestinationType: DATAURL = js.native
-    var Direction: BACK = js.native
-    var EncodingType: JPEG = js.native
-    var MediaType: ALLMEDIA = js.native
-    var PictureSourceType: CAMERA = js.native
-    // Used only on iOS
-    var PopoverArrowDirection: ARROWANY = js.native
-  }
-  
 }
-

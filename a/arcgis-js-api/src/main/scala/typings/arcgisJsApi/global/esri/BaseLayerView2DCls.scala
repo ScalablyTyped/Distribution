@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.BaseLayerView2DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.BaseLayerView2D")
 @js.native
@@ -16,4 +16,3 @@ class BaseLayerView2DCls ()
   extends typings.arcgisJsApi.esri.BaseLayerView2D {
   def this(properties: BaseLayerView2DProperties) = this()
 }
-

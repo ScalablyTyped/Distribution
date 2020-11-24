@@ -2,9 +2,49 @@ package typings.leafletAwesomeMarkers
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafletAwesomeMarkersStrings {
+  
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
+  
+  @scala.inline
+  def cadetblue: cadetblue = "cadetblue".asInstanceOf[cadetblue]
+  
+  @scala.inline
+  def darkgreen: darkgreen = "darkgreen".asInstanceOf[darkgreen]
+  
+  @scala.inline
+  def darkpurple: darkpurple = "darkpurple".asInstanceOf[darkpurple]
+  
+  @scala.inline
+  def darkred: darkred = "darkred".asInstanceOf[darkred]
+  
+  @scala.inline
+  def fa: fa = "fa".asInstanceOf[fa]
+  
+  @scala.inline
+  def glyphicon: glyphicon = "glyphicon".asInstanceOf[glyphicon]
+  
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
+  
+  @scala.inline
+  def orange: orange = "orange".asInstanceOf[orange]
+  
+  @scala.inline
+  def purple: purple = "purple".asInstanceOf[purple]
+  
+  @scala.inline
+  def red: red = "red".asInstanceOf[red]
+  
+  @scala.inline
+  def white: white = "white".asInstanceOf[white]
+  
   @js.native
   sealed trait black extends js.Object
   
@@ -43,32 +83,4 @@ object leafletAwesomeMarkersStrings {
   
   @js.native
   sealed trait white extends js.Object
-  
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def cadetblue: cadetblue = "cadetblue".asInstanceOf[cadetblue]
-  @scala.inline
-  def darkgreen: darkgreen = "darkgreen".asInstanceOf[darkgreen]
-  @scala.inline
-  def darkpurple: darkpurple = "darkpurple".asInstanceOf[darkpurple]
-  @scala.inline
-  def darkred: darkred = "darkred".asInstanceOf[darkred]
-  @scala.inline
-  def fa: fa = "fa".asInstanceOf[fa]
-  @scala.inline
-  def glyphicon: glyphicon = "glyphicon".asInstanceOf[glyphicon]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def orange: orange = "orange".asInstanceOf[orange]
-  @scala.inline
-  def purple: purple = "purple".asInstanceOf[purple]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
 }
-

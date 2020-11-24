@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new oriented box.
@@ -12,22 +12,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OrientedBox extends js.Object {
-  /**
-    * The world transform of the OBB.
-    */
-  var worldTransform: js.UndefOr[Mat4] = js.native
+  
   /**
     * Test if a point is inside a OBB.
     * @param point - Point to test.
     * @returns True if the point is inside the OBB and false otherwise.
     */
   def containsPoint(point: Vec3): Boolean = js.native
+  
   /**
     * Test if a Bounding Sphere is overlapping, enveloping, or inside this OBB.
     * @param sphere - Bounding Sphere to test.
     * @returns True if the Bounding Sphere is overlapping, enveloping or inside this OBB and false otherwise.
     */
   def intersectsBoundingSphere(sphere: BoundingSphere): Boolean = js.native
+  
   /**
     * Test if a ray intersects with the OBB.
     * @param ray - Ray to test against (direction must be normalized).
@@ -36,5 +35,9 @@ trait OrientedBox extends js.Object {
     */
   def intersectsRay(ray: Ray): Boolean = js.native
   def intersectsRay(ray: Ray, point: Vec3): Boolean = js.native
+  
+  /**
+    * The world transform of the OBB.
+    */
+  var worldTransform: js.UndefOr[Mat4] = js.native
 }
-

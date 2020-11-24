@@ -7,16 +7,19 @@ import typings.libxmljs.libxmljsStrings.element
 import typings.libxmljs.libxmljsStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libxmljs", "Node")
 @js.native
 class Node () extends js.Object {
+  
   def doc(): Document = js.native
+  
   /**
     * The namespace or null in case of comment nodes
     */
   def namespace(): Namespace | Null = js.native
+  
   /**
     * An array of namespaces that the object belongs to.
     *
@@ -26,12 +29,17 @@ class Node () extends js.Object {
     */
   def namespaces(): js.Array[Namespace] = js.native
   def namespaces(local: Boolean): js.Array[Namespace] = js.native
+  
   def nextSibling(): Node | Null = js.native
+  
   def parent(): Element | Document = js.native
+  
   def prevSibling(): Node | Null = js.native
+  
   def remove(): this.type = js.native
+  
   def toString(format: Boolean): String = js.native
   def toString(format: Declaration): String = js.native
+  
   def `type`(): comment | element | text | attribute = js.native
 }
-

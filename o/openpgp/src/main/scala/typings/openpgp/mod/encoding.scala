@@ -3,13 +3,15 @@ package typings.openpgp.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "encoding")
 @js.native
 object encoding extends js.Object {
+  
   @js.native
   object armor extends js.Object {
+    
     /**
       * Add additional information to the armor version of an OpenPGP binary
       * packet block.
@@ -18,6 +20,7 @@ object encoding extends js.Object {
       * @returns The header information
       */
     def addheader(customComment: String): String = js.native
+    
     /**
       * Armor an OpenPGP binary packet block
       * @param messagetype type of the message
@@ -29,6 +32,7 @@ object encoding extends js.Object {
       */
     def armor(messagetype: Integer, body: js.Any, partindex: Integer, parttotal: Integer): String | ReadableStream[String] = js.native
     def armor(messagetype: Integer, body: js.Any, partindex: Integer, parttotal: Integer, customComment: String): String | ReadableStream[String] = js.native
+    
     /**
       * Internal function to calculate a CRC-24 checksum over a given string (data)
       * @param data Data to create a CRC-24 checksum for
@@ -36,6 +40,7 @@ object encoding extends js.Object {
       */
     def createcrc24(data: String): Uint8Array | ReadableStream[Uint8Array] = js.native
     def createcrc24(data: ReadableStream[String]): Uint8Array | ReadableStream[Uint8Array] = js.native
+    
     /**
       * DeArmor an OpenPGP armored message; verify the checksum and return
       * the encoded bytes
@@ -44,6 +49,7 @@ object encoding extends js.Object {
       *          an attribute "data" containing a stream of bytes and "type" for the ASCII armor type
       */
     def dearmor(text: String): js.Promise[js.Object] = js.native
+    
     /**
       * Calculates a checksum over the given data and returns it base64 encoded
       * @param data Data to create a CRC-24 checksum for
@@ -51,6 +57,7 @@ object encoding extends js.Object {
       */
     def getCheckSum(data: String): String | ReadableStream[String] = js.native
     def getCheckSum(data: ReadableStream[String]): String | ReadableStream[String] = js.native
+    
     /**
       * Splits a message into two parts, the body and the checksum. This is an internal function
       * @param text OpenPGP armored message part
@@ -62,6 +69,7 @@ object encoding extends js.Object {
   
   @js.native
   object base64 extends js.Object {
+    
     /**
       * Convert radix-64 to binary array
       * @param t radix-64 string to convert
@@ -70,6 +78,7 @@ object encoding extends js.Object {
       */
     def r2s(t: String, u: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
     def r2s(t: ReadableStream[String], u: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+    
     def s2r(t: ReadableStream[Uint8Array]): String | ReadableStream[String] = js.native
     def s2r(t: ReadableStream[Uint8Array], u: Boolean): String | ReadableStream[String] = js.native
     /**
@@ -81,6 +90,4 @@ object encoding extends js.Object {
     def s2r(t: Uint8Array): String | ReadableStream[String] = js.native
     def s2r(t: Uint8Array, u: Boolean): String | ReadableStream[String] = js.native
   }
-  
 }
-

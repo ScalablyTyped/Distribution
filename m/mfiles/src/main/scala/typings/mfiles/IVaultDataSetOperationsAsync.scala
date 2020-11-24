@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultDataSetOperationsAsync extends js.Object {
+  
   def GetDataSetExportingStatus(ID: Double): Unit = js.native
   def GetDataSetExportingStatus(
     ID: Double,
@@ -42,6 +43,7 @@ trait IVaultDataSetOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetDataSets(): Unit = js.native
   def GetDataSets(
     successCallback: js.UndefOr[scala.Nothing],
@@ -72,6 +74,7 @@ trait IVaultDataSetOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetReportAccessCredentials(): Unit = js.native
   def GetReportAccessCredentials(
     successCallback: js.UndefOr[scala.Nothing],
@@ -102,6 +105,7 @@ trait IVaultDataSetOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def StartDataSetExport(ID: Double): Unit = js.native
   def StartDataSetExport(
     ID: Double,
@@ -139,4 +143,3 @@ trait IVaultDataSetOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

@@ -4,15 +4,15 @@
 Typings are for version 2.0.3
 
 ## Library description:
-Stringify a Unist node, position, or point
+unist utility to serialize a node, position, or point as a human readable location
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unist-util-stringify-position |
-| Keywords           | unist, position, location, point, node, stringify, tostring, util, utility |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 113166661 |
+| Keywords           | unist, unist-util, util, utility, position, location, point, node, stringify, tostring |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 168369724 |
 | # stars            | 0 |
 
 ## Links

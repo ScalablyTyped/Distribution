@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Regexp for data URI.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.DATA_URI")
 @js.native
 object DATA_URI extends TopLevel[RegExp | String]
-

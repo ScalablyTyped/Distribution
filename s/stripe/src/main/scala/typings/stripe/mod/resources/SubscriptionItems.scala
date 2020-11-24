@@ -12,11 +12,12 @@ import typings.stripe.mod.subscriptionItems.ISubscriptionItemListOptions
 import typings.stripe.mod.subscriptionItems.ISubscriptionItemUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.SubscriptionItems")
 @js.native
 class SubscriptionItems () extends StripeResource {
+  
   def create(data: ISubscriptionItemCreationOptions): js.Promise[ISubscriptionItem] = js.native
   /**
     * Adds a new item to an existing subscription. No existing items will be changed or replaced.
@@ -32,6 +33,7 @@ class SubscriptionItems () extends StripeResource {
     response: IResponseFn[ISubscriptionItem]
   ): js.Promise[ISubscriptionItem] = js.native
   def create(data: ISubscriptionItemCreationOptions, response: IResponseFn[ISubscriptionItem]): js.Promise[ISubscriptionItem] = js.native
+  
   def del(subscriptionItemId: String): js.Promise[ISubscriptionItem] = js.native
   def del(subscriptionItemId: String, data: ISubscriptionItemDeleteOptions): js.Promise[ISubscriptionItem] = js.native
   /**
@@ -58,6 +60,7 @@ class SubscriptionItems () extends StripeResource {
   def del(subscriptionItemId: String, options: HeaderOptions): js.Promise[ISubscriptionItem] = js.native
   def del(subscriptionItemId: String, options: HeaderOptions, response: IResponseFn[ISubscriptionItem]): js.Promise[ISubscriptionItem] = js.native
   def del(subscriptionItemId: String, response: IResponseFn[ISubscriptionItem]): js.Promise[ISubscriptionItem] = js.native
+  
   def list(data: ISubscriptionItemListOptions): IListPromise[ISubscriptionItem] = js.native
   /**
     * Returns a list of your subscription items for a given subscription.
@@ -73,6 +76,7 @@ class SubscriptionItems () extends StripeResource {
     response: IResponseFn[IList[ISubscriptionItem]]
   ): IListPromise[ISubscriptionItem] = js.native
   def list(data: ISubscriptionItemListOptions, response: IResponseFn[IList[ISubscriptionItem]]): IListPromise[ISubscriptionItem] = js.native
+  
   def retrieve(subscriptionItemId: String): js.Promise[ISubscriptionItem] = js.native
   /**
     * Retrieves the subscription item with the given ID.
@@ -84,6 +88,7 @@ class SubscriptionItems () extends StripeResource {
   def retrieve(subscriptionItemId: String, options: HeaderOptions): js.Promise[ISubscriptionItem] = js.native
   def retrieve(subscriptionItemId: String, options: HeaderOptions, response: IResponseFn[ISubscriptionItem]): js.Promise[ISubscriptionItem] = js.native
   def retrieve(subscriptionItemId: String, response: IResponseFn[ISubscriptionItem]): js.Promise[ISubscriptionItem] = js.native
+  
   def update(subscriptionItemId: String, data: ISubscriptionItemUpdateOptions): js.Promise[ISubscriptionItem] = js.native
   /**
     * Updates the plan or quantity of an item on a current subscription.
@@ -104,4 +109,3 @@ class SubscriptionItems () extends StripeResource {
     response: IResponseFn[ISubscriptionItem]
   ): js.Promise[ISubscriptionItem] = js.native
 }
-

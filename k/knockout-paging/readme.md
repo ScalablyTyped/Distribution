@@ -12,7 +12,7 @@ Adds an extender to Knockout to add paging functionality to observable arrays.
 | Keywords           | knockout, foreach, paging, initialize, javascript |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4459 |
+| # downloads        | 1421 |
 | # stars            | 1 |
 
 ## Links

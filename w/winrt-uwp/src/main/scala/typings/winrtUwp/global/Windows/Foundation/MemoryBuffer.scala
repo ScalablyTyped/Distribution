@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Foundation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a reference counted memory buffer. */
 @JSGlobal("Windows.Foundation.MemoryBuffer")
@@ -15,4 +15,3 @@ class MemoryBuffer protected ()
     */
   def this(capacity: Double) = this()
 }
-

@@ -5,7 +5,7 @@ import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Debug/index", "AxesViewer")
 @js.native
@@ -22,29 +22,117 @@ class AxesViewer protected ()
     */
   def this(scene: Scene) = this()
   def this(scene: Scene, scaleLines: Double) = this()
+  def this(scene: Scene, scaleLines: js.UndefOr[scala.Nothing], renderingGroupId: Nullable[Double]) = this()
   def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
-  def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: TransformNode
+  ) = this()
   def this(
     scene: Scene,
     scaleLines: Double,
-    renderingGroupId: Nullable[Double],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: js.UndefOr[scala.Nothing],
+    yAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
     xAxis: TransformNode,
     yAxis: TransformNode
   ) = this()
   def this(
     scene: Scene,
     scaleLines: Double,
-    renderingGroupId: Nullable[Double],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: js.UndefOr[scala.Nothing],
+    yAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: Double,
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: TransformNode,
+    yAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: js.UndefOr[scala.Nothing],
+    yAxis: js.UndefOr[scala.Nothing],
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: js.UndefOr[scala.Nothing],
+    yAxis: TransformNode,
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: TransformNode,
+    yAxis: js.UndefOr[scala.Nothing],
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: js.UndefOr[scala.Nothing],
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: TransformNode,
+    yAxis: TransformNode,
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: Double,
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: js.UndefOr[scala.Nothing],
+    yAxis: js.UndefOr[scala.Nothing],
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: Double,
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: js.UndefOr[scala.Nothing],
+    yAxis: TransformNode,
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: Double,
+    renderingGroupId: js.UndefOr[Nullable[Double]],
+    xAxis: TransformNode,
+    yAxis: js.UndefOr[scala.Nothing],
+    zAxis: TransformNode
+  ) = this()
+  def this(
+    scene: Scene,
+    scaleLines: Double,
+    renderingGroupId: js.UndefOr[Nullable[Double]],
     xAxis: TransformNode,
     yAxis: TransformNode,
     zAxis: TransformNode
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Debug/index", "AxesViewer")
 @js.native
 object AxesViewer extends js.Object {
+  
   var _SetRenderingGroupId: js.Any = js.native
 }
-

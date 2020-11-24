@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new ScrollbarComponent.
@@ -23,17 +23,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ScrollbarComponent extends Component {
+  
   /**
     * The entity to be used as the scrollbar handle. This entity must
     have a Scrollbar component.
     */
   var handleEntity: Entity = js.native
+  
   /**
     * The size of the handle relative to the size of the track, in the range
     0 to 1. For a vertical scrollbar, a value of 1 means that the handle will take up the full height of
     the track.
     */
   var handleSize: Double = js.native
+  
   /**
     * Whether the scrollbar moves horizontally or vertically. Can be:
     
@@ -43,9 +46,9 @@ trait ScrollbarComponent extends Component {
     Defaults to pc.ORIENTATION_HORIZONTAL.
     */
   var orientation: Double = js.native
+  
   /**
     * The current position value of the scrollbar, in the range 0 to 1. Defaults to 0.
     */
   var value: Double = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.MaxZoomStatus.ERROR
 import typings.googlemaps.google.maps.MaxZoomStatus.OK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A MaxZoom result in JSON format retrieved from the {@link MaxZoomService}.
@@ -15,17 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.googlemaps.google.maps.MaxZoomResultOk
 */
 trait MaxZoomResult extends js.Object
-
 object MaxZoomResult {
+  
   @scala.inline
   def MaxZoomResultError(status: ERROR): MaxZoomResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxZoomResult]
   }
+  
   @scala.inline
   def MaxZoomResultOk(status: OK, zoom: Double): MaxZoomResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxZoomResult]
   }
 }
-

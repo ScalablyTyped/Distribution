@@ -5,19 +5,21 @@ import typings.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "ColumnHeaderCell")
 @js.native
 class ColumnHeaderCell ()
   extends typings.blueprintjsTable.columnHeaderCellMod.ColumnHeaderCell
-
 /* static members */
 @JSImport("@blueprintjs/table", "ColumnHeaderCell")
 @js.native
 object ColumnHeaderCell extends js.Object {
+  
   var contextTypes: ValidationMapIColumnInter = js.native
+  
   var defaultProps: IColumnHeaderCellProps = js.native
+  
   /**
     * This method determines if a `MouseEvent` was triggered on a target that
     * should be used as the header click/drag target. This enables users of
@@ -27,4 +29,3 @@ object ColumnHeaderCell extends js.Object {
     */
   def isHeaderMouseTarget(target: HTMLElement): Boolean = js.native
 }
-

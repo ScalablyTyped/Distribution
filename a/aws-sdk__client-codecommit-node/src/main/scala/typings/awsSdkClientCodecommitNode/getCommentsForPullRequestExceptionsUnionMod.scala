@@ -2,11 +2,12 @@ package typings.awsSdkClientCodecommitNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/types/GetCommentsForPullRequestExceptionsUnion", JSImport.Namespace)
 @js.native
 object getCommentsForPullRequestExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientCodecommitNode.typesPullRequestIdRequiredExceptionMod.PullRequestIdRequiredException
     - typings.awsSdkClientCodecommitNode.typesPullRequestDoesNotExistExceptionMod.PullRequestDoesNotExistException
@@ -27,6 +28,4 @@ object getCommentsForPullRequestExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException
   */
   trait GetCommentsForPullRequestExceptionsUnion extends js.Object
-  
 }
-

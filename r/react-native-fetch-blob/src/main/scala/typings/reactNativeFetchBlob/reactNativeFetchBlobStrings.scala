@@ -4,9 +4,64 @@ import typings.reactNativeFetchBlob.mod.Encoding
 import typings.reactNativeFetchBlob.mod.Methods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeFetchBlobStrings {
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @scala.inline
+  def blob: blob = "blob".asInstanceOf[blob]
+  
+  @scala.inline
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
+  
+  @scala.inline
+  def directory: directory = "directory".asInstanceOf[directory]
+  
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
+  
+  @scala.inline
+  def get_ : get_ = "get".asInstanceOf[get_]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
+  
+  @scala.inline
+  def post_ : post_ = "post".asInstanceOf[post_]
+  
+  @scala.inline
+  def put_ : put_ = "put".asInstanceOf[put_]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
   @js.native
   sealed trait DELETE extends Methods
   
@@ -60,42 +115,4 @@ object reactNativeFetchBlobStrings {
   
   @js.native
   sealed trait utf8 extends Encoding
-  
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def get_ : get_ = "get".asInstanceOf[get_]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def post_ : post_ = "post".asInstanceOf[post_]
-  @scala.inline
-  def put_ : put_ = "put".asInstanceOf[put_]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

@@ -6,11 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to create and initialize a new embedded object using GUI dialog. */
 @js.native
 trait XInsertObjectDialog extends XInterface {
+  
   /**
     * creates a new object using GUI dialog.
     *
@@ -26,8 +27,8 @@ trait XInsertObjectDialog extends XInterface {
     */
   def createInstanceByDialog(xStorage: XStorage, sEntName: String, lObjArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo = js.native
 }
-
 object XInsertObjectDialog {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -38,20 +39,23 @@ object XInsertObjectDialog {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceByDialog = js.Any.fromFunction3(createInstanceByDialog), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XInsertObjectDialog]
   }
+  
   @scala.inline
   implicit class XInsertObjectDialogOps[Self <: XInsertObjectDialog] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateInstanceByDialog(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = this.set("createInstanceByDialog", js.Any.fromFunction3(value))
   }
-  
 }
-

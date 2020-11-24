@@ -10,9 +10,9 @@ A logger package for use in the Firebase JS SDK
 | ------------------ | :-------------: |
 | Full name          | @firebase/logger |
 | Keywords           | - |
-| # releases         | 899 |
-| # dependents       | 13 |
-| # downloads        | 34630926 |
+| # releases         | 1153 |
+| # dependents       | 18 |
+| # downloads        | 62862623 |
 | # stars            | 0 |
 
 ## Links

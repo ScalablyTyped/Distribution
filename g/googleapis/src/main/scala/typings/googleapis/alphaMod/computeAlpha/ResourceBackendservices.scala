@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Backendservices")
 @js.native
 class ResourceBackendservices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.backendServices.addSignedUrlKey
     * @desc Adds a key for validating requests with signed URLs for this
@@ -48,6 +48,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.aggregatedList
     * @desc Retrieves the list of all BackendService resources, regional and
@@ -84,6 +85,9 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendServiceAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.backendServices.delete
     * @desc Deletes the specified BackendService resource.
@@ -114,6 +118,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.deleteSignedUrlKey
     * @desc Deletes a key for validating requests with signed URLs for this
@@ -149,6 +154,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.get
     * @desc Returns the specified BackendService resource. Gets a list of
@@ -179,6 +185,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendService]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.getHealth
     * @desc Gets the most recent health check results for this BackendService.
@@ -212,6 +219,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendServiceGroupHealth]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.insert
     * @desc Creates a BackendService resource in the specified project using
@@ -245,6 +253,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.list
     * @desc Retrieves the list of BackendService resources available to the
@@ -281,6 +290,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackendServiceList]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.patch
     * @desc Patches the specified BackendService resource with the data
@@ -316,6 +326,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.setSecurityPolicy
     * @desc Sets the security policy for the specified backend service.
@@ -350,6 +361,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -383,6 +395,7 @@ class ResourceBackendservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.backendServices.update
     * @desc Updates the specified BackendService resource with the data
@@ -418,4 +431,3 @@ class ResourceBackendservices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.Align
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextStyle Object contains information to decorate a Text objects.
@@ -21,4 +21,3 @@ class TextStyle ()
   extends typings.pixiJs.PIXI.TextStyle {
   def this(style: Align) = this()
 }
-

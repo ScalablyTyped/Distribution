@@ -2,11 +2,12 @@ package typings.weappApi.mod.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "wx.setNavigationBarTitle")
 @js.native
 object setNavigationBarTitle extends js.Object {
+  
   /**
     * 动态设置当前页面的标题
     * @param options
@@ -17,4 +18,3 @@ object setNavigationBarTitle extends js.Object {
     */
   def apply(options: SetNavigationBarTitleOptions): Unit = js.native
 }
-

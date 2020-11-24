@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.CrossOrigin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Asset record. Generally, Assets are created in the loading process and you won't need to create them by hand.
@@ -61,4 +61,3 @@ class Asset protected ()
   def this(name: String, `type`: String, file: js.Any, data: js.UndefOr[scala.Nothing], options: CrossOrigin) = this()
   def this(name: String, `type`: String, file: js.Any, data: js.Any, options: CrossOrigin) = this()
 }
-

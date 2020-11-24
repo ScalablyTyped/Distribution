@@ -1,17 +1,16 @@
 package typings.awsSdk.iot1clickprojectsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IoT1ClickProjects extends Service {
-  @JSName("config")
-  var config_IoT1ClickProjects: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Associates a physical device with a placement.
     */
@@ -25,6 +24,10 @@ trait IoT1ClickProjects extends Service {
     params: AssociateDeviceWithPlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateDeviceWithPlacementResponse, Unit]
   ): Request[AssociateDeviceWithPlacementResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_IoT1ClickProjects: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an empty placement.
     */
@@ -38,6 +41,7 @@ trait IoT1ClickProjects extends Service {
     params: CreatePlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePlacementResponse, Unit]
   ): Request[CreatePlacementResponse, AWSError] = js.native
+  
   /**
     * Creates an empty project with a placement template. A project contains zero or more placements that adhere to the placement template defined in the project.
     */
@@ -51,6 +55,7 @@ trait IoT1ClickProjects extends Service {
     params: CreateProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResponse, Unit]
   ): Request[CreateProjectResponse, AWSError] = js.native
+  
   /**
     * Deletes a placement. To delete a placement, it must not have any devices associated with it.  When you delete a placement, all associated data becomes irretrievable. 
     */
@@ -64,6 +69,7 @@ trait IoT1ClickProjects extends Service {
     params: DeletePlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePlacementResponse, Unit]
   ): Request[DeletePlacementResponse, AWSError] = js.native
+  
   /**
     * Deletes a project. To delete a project, it must not have any placements associated with it.  When you delete a project, all associated data becomes irretrievable. 
     */
@@ -77,6 +83,7 @@ trait IoT1ClickProjects extends Service {
     params: DeleteProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResponse, Unit]
   ): Request[DeleteProjectResponse, AWSError] = js.native
+  
   /**
     * Describes a placement in a project.
     */
@@ -90,6 +97,7 @@ trait IoT1ClickProjects extends Service {
     params: DescribePlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePlacementResponse, Unit]
   ): Request[DescribePlacementResponse, AWSError] = js.native
+  
   /**
     * Returns an object describing a project.
     */
@@ -103,6 +111,7 @@ trait IoT1ClickProjects extends Service {
     params: DescribeProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProjectResponse, Unit]
   ): Request[DescribeProjectResponse, AWSError] = js.native
+  
   /**
     * Removes a physical device from a placement.
     */
@@ -118,6 +127,7 @@ trait IoT1ClickProjects extends Service {
     params: DisassociateDeviceFromPlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDeviceFromPlacementResponse, Unit]
   ): Request[DisassociateDeviceFromPlacementResponse, AWSError] = js.native
+  
   /**
     * Returns an object enumerating the devices in a placement.
     */
@@ -131,6 +141,7 @@ trait IoT1ClickProjects extends Service {
     params: GetDevicesInPlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDevicesInPlacementResponse, Unit]
   ): Request[GetDevicesInPlacementResponse, AWSError] = js.native
+  
   /**
     * Lists the placement(s) of a project.
     */
@@ -144,6 +155,7 @@ trait IoT1ClickProjects extends Service {
     params: ListPlacementsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPlacementsResponse, Unit]
   ): Request[ListPlacementsResponse, AWSError] = js.native
+  
   /**
     * Lists the AWS IoT 1-Click project(s) associated with your AWS account and region.
     */
@@ -157,6 +169,7 @@ trait IoT1ClickProjects extends Service {
     params: ListProjectsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsResponse, Unit]
   ): Request[ListProjectsResponse, AWSError] = js.native
+  
   /**
     * Lists the tags (metadata key/value pairs) which you have assigned to the resource.
     */
@@ -170,6 +183,7 @@ trait IoT1ClickProjects extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Creates or modifies tags for a resource. Tags are key/value pairs (metadata) that can be used to manage a resource. For more information, see AWS Tagging Strategies.
     */
@@ -183,6 +197,7 @@ trait IoT1ClickProjects extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes one or more tags (metadata key/value pairs) from a resource.
     */
@@ -196,6 +211,7 @@ trait IoT1ClickProjects extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates a placement with the given attributes. To clear an attribute, pass an empty value (i.e., "").
     */
@@ -209,6 +225,7 @@ trait IoT1ClickProjects extends Service {
     params: UpdatePlacementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePlacementResponse, Unit]
   ): Request[UpdatePlacementResponse, AWSError] = js.native
+  
   /**
     * Updates a project associated with your AWS account and region. With the exception of device template names, you can pass just the values that need to be updated because the update request will change only the values that are provided. To clear a value, pass the empty string (i.e., "").
     */
@@ -223,4 +240,3 @@ trait IoT1ClickProjects extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectResponse, Unit]
   ): Request[UpdateProjectResponse, AWSError] = js.native
 }
-

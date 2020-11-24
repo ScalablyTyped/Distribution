@@ -10,9 +10,9 @@ Functional HTTP client for Node.js w/ async/await.
 | ------------------ | :-------------: |
 | Full name          | bent |
 | Keywords           | - |
-| # releases         | 45 |
-| # dependents       | 22 |
-| # downloads        | 99573 |
+| # releases         | 63 |
+| # dependents       | 124 |
+| # downloads        | 1257910 |
 | # stars            | 1 |
 
 ## Links

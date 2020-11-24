@@ -6,7 +6,7 @@ import typings.mfiles.mfilesNumbers.`2`
 import typings.mfiles.mfilesNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.mfiles.mfilesNumbers.`0`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.mfiles.mfilesNumbers.`3`
 */
 trait MFFolderListingAlgorithm extends js.Object
-
 object MFFolderListingAlgorithm {
+  
   @scala.inline
   def GetValuesByDistinctUse: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def None: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def TestEachValue: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def TestEachValueWithSeparateQueries: `3` = 3.asInstanceOf[`3`]
 }
-

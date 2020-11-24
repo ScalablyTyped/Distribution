@@ -4,11 +4,12 @@ import typings.luminoDatagrid.cellrendererMod.CellRenderer.CellConfig
 import typings.luminoDatagrid.graphicscontextMod.GraphicsContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/cellrenderer", "CellRenderer")
 @js.native
 abstract class CellRenderer_ () extends js.Object {
+  
   /**
     * Paint the content for a cell.
     *
@@ -28,4 +29,3 @@ abstract class CellRenderer_ () extends js.Object {
     */
   def paint(gc: GraphicsContext, config: CellConfig): Unit = js.native
 }
-

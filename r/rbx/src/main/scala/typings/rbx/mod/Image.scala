@@ -52,18 +52,12 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx", "Image")
 @js.native
 object Image extends js.Object {
-  var Container: ForwardRefAsExoticComponent[ImageContainerProps, ElementType[_]] = js.native
-  @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
-  var defaultProps: AsElementType with (Partial[
-    HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ImageModifierProps with (Pick[_, String | Double | js.Symbol])
-  ]) = js.native
-  var displayName: js.UndefOr[String] = js.native
+  
   def apply[TAsComponent /* <: ElementType[_] */](
     props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ImageModifierProps with (Pick[
       ComponentProps[TAsComponent], 
@@ -73,5 +67,15 @@ object Image extends js.Object {
       ]
     ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
   ): Element | Null = js.native
+  
+  var Container: ForwardRefAsExoticComponent[ImageContainerProps, ElementType[_]] = js.native
+  
+  @JSName("$$typeof")
+  var DollarDollartypeof: js.Symbol = js.native
+  
+  var defaultProps: AsElementType with (Partial[
+    HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ImageModifierProps with (Pick[_, String | Double | js.Symbol])
+  ]) = js.native
+  
+  var displayName: js.UndefOr[String] = js.native
 }
-

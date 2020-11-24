@@ -1,13 +1,17 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.IBoneWeightShaderOptions
+import typings.babylonjs.BABYLON.ISkeletonMapShaderOptions
 import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.anon.PartialISkeletonViewerOptComputeBonesUsingShaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Debug")
 @js.native
 object Debug extends js.Object {
+  
   @js.native
   class AxesViewer protected ()
     extends typings.babylonjs.BABYLON.Debug.AxesViewer {
@@ -22,80 +26,122 @@ object Debug extends js.Object {
       */
     def this(scene: typings.babylonjs.BABYLON.Scene) = this()
     def this(scene: typings.babylonjs.BABYLON.Scene, scaleLines: Double) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: Nullable[Double]
+    ) = this()
     def this(scene: typings.babylonjs.BABYLON.Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
     def this(
       scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
       xAxis: typings.babylonjs.BABYLON.TransformNode
     ) = this()
     def this(
       scene: typings.babylonjs.BABYLON.Scene,
       scaleLines: Double,
-      renderingGroupId: Nullable[Double],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[scala.Nothing],
+      yAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
       xAxis: typings.babylonjs.BABYLON.TransformNode,
       yAxis: typings.babylonjs.BABYLON.TransformNode
     ) = this()
     def this(
       scene: typings.babylonjs.BABYLON.Scene,
       scaleLines: Double,
-      renderingGroupId: Nullable[Double],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[scala.Nothing],
+      yAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: Double,
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: typings.babylonjs.BABYLON.TransformNode,
+      yAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[scala.Nothing],
+      yAxis: js.UndefOr[scala.Nothing],
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[scala.Nothing],
+      yAxis: typings.babylonjs.BABYLON.TransformNode,
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: typings.babylonjs.BABYLON.TransformNode,
+      yAxis: js.UndefOr[scala.Nothing],
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: js.UndefOr[scala.Nothing],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
       xAxis: typings.babylonjs.BABYLON.TransformNode,
       yAxis: typings.babylonjs.BABYLON.TransformNode,
       zAxis: typings.babylonjs.BABYLON.TransformNode
     ) = this()
-    /* CompleteClass */
-    override var _instanced: js.Any = js.native
-    /* CompleteClass */
-    override var _scaleLinesFactor: js.Any = js.native
-    /* CompleteClass */
-    override var _xAxis: js.Any = js.native
-    /* CompleteClass */
-    override var _yAxis: js.Any = js.native
-    /* CompleteClass */
-    override var _zAxis: js.Any = js.native
-    /**
-      * Gets or sets a number used to scale line length
-      */
-    /* CompleteClass */
-    override var scaleLines: Double = js.native
-    /**
-      * Gets the hosting scene
-      */
-    /* CompleteClass */
-    override var scene: typings.babylonjs.BABYLON.Scene = js.native
-    /**
-      * Creates an instance of this axes viewer.
-      * @returns a new axes viewer with instanced meshes
-      */
-    /* CompleteClass */
-    override def createInstance(): typings.babylonjs.BABYLON.Debug.AxesViewer = js.native
-    /** Releases resources */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /**
-      * Force the viewer to update
-      * @param position defines the position of the viewer
-      * @param xaxis defines the x axis of the viewer
-      * @param yaxis defines the y axis of the viewer
-      * @param zaxis defines the z axis of the viewer
-      */
-    /* CompleteClass */
-    override def update(
-      position: typings.babylonjs.BABYLON.Vector3,
-      xaxis: typings.babylonjs.BABYLON.Vector3,
-      yaxis: typings.babylonjs.BABYLON.Vector3,
-      zaxis: typings.babylonjs.BABYLON.Vector3
-    ): Unit = js.native
-    /** Gets the node hierarchy used to render x-axis */
-    /* CompleteClass */
-    override def xAxis: typings.babylonjs.BABYLON.TransformNode = js.native
-    /** Gets the node hierarchy used to render y-axis */
-    /* CompleteClass */
-    override def yAxis: typings.babylonjs.BABYLON.TransformNode = js.native
-    /** Gets the node hierarchy used to render z-axis */
-    /* CompleteClass */
-    override def zAxis: typings.babylonjs.BABYLON.TransformNode = js.native
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: Double,
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[scala.Nothing],
+      yAxis: js.UndefOr[scala.Nothing],
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: Double,
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[scala.Nothing],
+      yAxis: typings.babylonjs.BABYLON.TransformNode,
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: Double,
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: typings.babylonjs.BABYLON.TransformNode,
+      yAxis: js.UndefOr[scala.Nothing],
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+    def this(
+      scene: typings.babylonjs.BABYLON.Scene,
+      scaleLines: Double,
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: typings.babylonjs.BABYLON.TransformNode,
+      yAxis: typings.babylonjs.BABYLON.TransformNode,
+      zAxis: typings.babylonjs.BABYLON.TransformNode
+    ) = this()
+  }
+  /* static members */
+  @js.native
+  object AxesViewer extends js.Object {
+    
+    var _SetRenderingGroupId: js.Any = js.native
   }
   
   @js.native
@@ -119,85 +165,6 @@ object Debug extends js.Object {
       mesh: typings.babylonjs.BABYLON.Mesh,
       scaleLines: Double
     ) = this()
-    /* CompleteClass */
-    override var _instanced: js.Any = js.native
-    /* CompleteClass */
-    override var _scaleLinesFactor: js.Any = js.native
-    /* CompleteClass */
-    override var _xAxis: js.Any = js.native
-    /* CompleteClass */
-    override var _yAxis: js.Any = js.native
-    /* CompleteClass */
-    override var _zAxis: js.Any = js.native
-    /**
-      * Gets or sets the target bone where to display the axes viewer
-      */
-    /* CompleteClass */
-    override var bone: Nullable[typings.babylonjs.BABYLON.Bone] = js.native
-    /**
-      * Gets or sets the target mesh where to display the axes viewer
-      */
-    /* CompleteClass */
-    override var mesh: Nullable[typings.babylonjs.BABYLON.Mesh] = js.native
-    /** Gets current position */
-    /* CompleteClass */
-    override var pos: typings.babylonjs.BABYLON.Vector3 = js.native
-    /**
-      * Gets or sets a number used to scale line length
-      */
-    /* CompleteClass */
-    override var scaleLines: Double = js.native
-    /**
-      * Gets the hosting scene
-      */
-    /* CompleteClass */
-    override var scene: typings.babylonjs.BABYLON.Scene = js.native
-    /** Gets direction of X axis */
-    /* CompleteClass */
-    override var xaxis: typings.babylonjs.BABYLON.Vector3 = js.native
-    /** Gets direction of Y axis */
-    /* CompleteClass */
-    override var yaxis: typings.babylonjs.BABYLON.Vector3 = js.native
-    /** Gets direction of Z axis */
-    /* CompleteClass */
-    override var zaxis: typings.babylonjs.BABYLON.Vector3 = js.native
-    /**
-      * Creates an instance of this axes viewer.
-      * @returns a new axes viewer with instanced meshes
-      */
-    /* CompleteClass */
-    override def createInstance(): typings.babylonjs.BABYLON.Debug.AxesViewer = js.native
-    /** Releases resources */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /**
-      * Force the viewer to update
-      */
-    /* CompleteClass */
-    override def update(): Unit = js.native
-    /**
-      * Force the viewer to update
-      * @param position defines the position of the viewer
-      * @param xaxis defines the x axis of the viewer
-      * @param yaxis defines the y axis of the viewer
-      * @param zaxis defines the z axis of the viewer
-      */
-    /* CompleteClass */
-    override def update(
-      position: typings.babylonjs.BABYLON.Vector3,
-      xaxis: typings.babylonjs.BABYLON.Vector3,
-      yaxis: typings.babylonjs.BABYLON.Vector3,
-      zaxis: typings.babylonjs.BABYLON.Vector3
-    ): Unit = js.native
-    /** Gets the node hierarchy used to render x-axis */
-    /* CompleteClass */
-    override def xAxis: typings.babylonjs.BABYLON.TransformNode = js.native
-    /** Gets the node hierarchy used to render y-axis */
-    /* CompleteClass */
-    override def yAxis: typings.babylonjs.BABYLON.TransformNode = js.native
-    /** Gets the node hierarchy used to render z-axis */
-    /* CompleteClass */
-    override def zAxis: typings.babylonjs.BABYLON.TransformNode = js.native
   }
   
   @js.native
@@ -220,20 +187,23 @@ object Debug extends js.Object {
       * @param scene defines the hosting scene
       * @param autoUpdateBonesMatrices defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)
       * @param renderingGroupId defines the rendering group id to use with the viewer
+      * @param options All of the extra constructor options for the SkeletonViewer
       */
     def this(
       /** defines the skeleton to render */
     skeleton: typings.babylonjs.BABYLON.Skeleton,
       /** defines the mesh attached to the skeleton */
     mesh: typings.babylonjs.BABYLON.AbstractMesh,
-      scene: typings.babylonjs.BABYLON.Scene
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene
     ) = this()
     def this(
       /** defines the skeleton to render */
     skeleton: typings.babylonjs.BABYLON.Skeleton,
       /** defines the mesh attached to the skeleton */
     mesh: typings.babylonjs.BABYLON.AbstractMesh,
-      scene: typings.babylonjs.BABYLON.Scene,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     autoUpdateBonesMatrices: Boolean
     ) = this()
@@ -242,19 +212,116 @@ object Debug extends js.Object {
     skeleton: typings.babylonjs.BABYLON.Skeleton,
       /** defines the mesh attached to the skeleton */
     mesh: typings.babylonjs.BABYLON.AbstractMesh,
-      scene: typings.babylonjs.BABYLON.Scene,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: Double
+    ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: typings.babylonjs.BABYLON.Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double
     ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: typings.babylonjs.BABYLON.Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: js.UndefOr[scala.Nothing],
+      /** is the options for the viewer */
+    options: PartialISkeletonViewerOptComputeBonesUsingShaders
+    ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: typings.babylonjs.BABYLON.Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: Double,
+      /** is the options for the viewer */
+    options: PartialISkeletonViewerOptComputeBonesUsingShaders
+    ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: typings.babylonjs.BABYLON.Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: Boolean,
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: js.UndefOr[scala.Nothing],
+      /** is the options for the viewer */
+    options: PartialISkeletonViewerOptComputeBonesUsingShaders
+    ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: typings.babylonjs.BABYLON.Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
+      /** The Scene scope*/
+    scene: typings.babylonjs.BABYLON.Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: Boolean,
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: Double,
+      /** is the options for the viewer */
+    options: PartialISkeletonViewerOptComputeBonesUsingShaders
+    ) = this()
   }
-  
   /* static members */
   @js.native
-  object AxesViewer extends js.Object {
-    var _SetRenderingGroupId: js.Any = js.native
+  object SkeletonViewer extends js.Object {
+    
+    /** public static method to create a BoneWeight Shader
+      * @param options The constructor options
+      * @param scene The scene that the shader is scoped to
+      * @returns The created ShaderMaterial
+      * @see http://www.babylonjs-playground.com/#1BZJVJ#395
+      */
+    def CreateBoneWeightShader(options: IBoneWeightShaderOptions, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.ShaderMaterial = js.native
+    
+    /** public static method to create a BoneWeight Shader
+      * @param options The constructor options
+      * @param scene The scene that the shader is scoped to
+      * @returns The created ShaderMaterial
+      */
+    def CreateSkeletonMapShader(options: ISkeletonMapShaderOptions, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.ShaderMaterial = js.native
+    
+    /** public Display constants BABYLON.SkeletonViewer.DISPLAY_LINES */
+    val DISPLAY_LINES: Double = js.native
+    
+    /** public Display constants BABYLON.SkeletonViewer.DISPLAY_SPHERES */
+    val DISPLAY_SPHERES: Double = js.native
+    
+    /** public Display constants BABYLON.SkeletonViewer.DISPLAY_SPHERE_AND_SPURS */
+    val DISPLAY_SPHERE_AND_SPURS: Double = js.native
+    
+    /** private static method to create a BoneWeight Shader
+      * @param size The size of the buffer to create (usually the bone count)
+      * @param colorMap The gradient data to generate
+      * @param scene The scene that the shader is scoped to
+      * @returns an Array of floats from the color gradient values
+      */
+    var _CreateBoneMapColorBuffer: js.Any = js.native
   }
-  
 }
-

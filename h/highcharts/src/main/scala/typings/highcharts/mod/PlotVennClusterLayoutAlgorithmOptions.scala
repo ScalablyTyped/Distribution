@@ -2,10 +2,11 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlotVennClusterLayoutAlgorithmOptions extends js.Object {
+  
   /**
     * (Highcharts, Highmaps) When `type` is set to `kmeans`, `distance` is a
     * maximum distance between point and cluster center so that this point will
@@ -13,18 +14,21 @@ trait PlotVennClusterLayoutAlgorithmOptions extends js.Object {
     * a percentage defining a percentage of the plot area width.
     */
   var distance: js.UndefOr[Double | String] = js.native
+  
   /**
     * (Highcharts, Highmaps) When `type` is set to the `grid`, `gridSize` is a
     * size of a grid square element either as a number defining pixels, or a
     * percentage defining a percentage of the plot area width.
     */
   var gridSize: js.UndefOr[Double | String] = js.native
+  
   /**
     * (Highcharts, Highmaps) When `type` is set to `kmeans`, `iterations` are
     * the number of iterations that this algorithm will be repeated to find
     * clusters positions.
     */
   var iterations: js.UndefOr[Double] = js.native
+  
   /**
     * (Highcharts, Highmaps) When `type` is set to `undefined` and there are
     * more visible points than the kmeansThreshold the `grid` algorithm is used
@@ -32,6 +36,7 @@ trait PlotVennClusterLayoutAlgorithmOptions extends js.Object {
     * large datasets and better clusters arrangement after the zoom.
     */
   var kmeansThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * (Highcharts, Highmaps) Type of the algorithm used to combine points into
     * a cluster. There are three available algorithms:
@@ -81,45 +86,57 @@ trait PlotVennClusterLayoutAlgorithmOptions extends js.Object {
     */
   var `type`: js.UndefOr[String | js.Function] = js.native
 }
-
 object PlotVennClusterLayoutAlgorithmOptions {
+  
   @scala.inline
   def apply(): PlotVennClusterLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVennClusterLayoutAlgorithmOptions]
   }
+  
   @scala.inline
   implicit class PlotVennClusterLayoutAlgorithmOptionsOps[Self <: PlotVennClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDistance(value: Double | String): Self = this.set("distance", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDistance: Self = this.set("distance", js.undefined)
+    
     @scala.inline
     def setGridSize(value: Double | String): Self = this.set("gridSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGridSize: Self = this.set("gridSize", js.undefined)
+    
     @scala.inline
     def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIterations: Self = this.set("iterations", js.undefined)
+    
     @scala.inline
     def setKmeansThreshold(value: Double): Self = this.set("kmeansThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKmeansThreshold: Self = this.set("kmeansThreshold", js.undefined)
+    
     @scala.inline
     def setType(value: String | js.Function): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("map-obj", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply[SourceObjectType /* <: StringDictionary[js.Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType]
@@ -33,4 +34,3 @@ object ^ extends js.Object {
     options: TargetOptions[TargetObjectType]
   ): TargetObjectType with typings.mapObj.mapObjStrings.^  with TopLevel[js.Any] = js.native
 }
-

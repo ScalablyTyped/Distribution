@@ -10,9 +10,9 @@ A simple modal plugin written in pure JavaScript
 | ------------------ | :-------------: |
 | Full name          | tingle.js |
 | Keywords           | modal, popup, window, dialog, popin, lightbox |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 210827 |
+| # releases         | 6 |
+| # dependents       | 16 |
+| # downloads        | 188736 |
 | # stars            | 0 |
 
 ## Links

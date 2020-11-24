@@ -2,15 +2,15 @@ package typings.leafletEditable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
 trait Polyline
   extends PolylineEditor
      with EditableMixin
-
 object Polyline {
+  
   @scala.inline
   def apply(
     continueBackward: () => Unit,
@@ -27,4 +27,3 @@ object Polyline {
     __obj.asInstanceOf[Polyline]
   }
 }
-

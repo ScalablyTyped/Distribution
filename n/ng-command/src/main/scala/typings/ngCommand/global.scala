@@ -2,13 +2,17 @@ package typings.ngCommand
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object ngCommand extends js.Object {
+    
+    var ModuleName: String = js.native
+    
     @js.native
     class Command protected ()
       extends typings.ngCommand.ngCommand.Command {
@@ -26,15 +30,11 @@ object global extends js.Object {
         canExecute: js.Function0[Boolean]
       ) = this()
     }
-    
-    var ModuleName: String = js.native
     /* static members */
     @js.native
     object Command extends js.Object {
+      
       var id: String = js.native
     }
-    
   }
-  
 }
-

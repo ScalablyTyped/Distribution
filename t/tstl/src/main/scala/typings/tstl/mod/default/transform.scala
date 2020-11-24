@@ -7,11 +7,12 @@ import typings.tstl.modifiersMod.UnaryOperatorInferrer
 import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "transform")
 @js.native
 object transform extends js.Object {
+  
   def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[OutputIterator], OutputIterator]] */](
     first: InputIterator,
     last: InputIterator,
@@ -26,4 +27,3 @@ object transform extends js.Object {
     op: BinaryOperatorInferrer[InputIterator1, InputIterator2, OutputIterator]
   ): OutputIterator = js.native
 }
-

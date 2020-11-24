@@ -3,7 +3,7 @@ package typings.paper.mod
 import typings.paper.paper.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper", "SymbolItem")
 @js.native
@@ -21,4 +21,3 @@ class SymbolItem protected ()
   def this(definition: typings.paper.paper.Item, point: Point) = this()
   def this(definition: typings.paper.paper.SymbolDefinition, point: Point) = this()
 }
-

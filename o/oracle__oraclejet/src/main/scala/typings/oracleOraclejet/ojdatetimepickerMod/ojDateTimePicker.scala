@@ -9,25 +9,30 @@ import typings.oracleOraclejet.oracleOraclejetStrings.jet
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojDateTimePicker extends ojInputDateTime[ojDateTimePickerSettableProperties] {
+  
   @JSName("keyboardEdit")
   var keyboardEdit_ojDateTimePicker: disabled = js.native
+  
   @JSName("onOjAnimateEnd")
   var onOjAnimateEnd_ojDateTimePicker: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  
   @JSName("onOjAnimateStart")
   var onOjAnimateStart_ojDateTimePicker: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  
   @JSName("renderMode")
   var renderMode_ojDateTimePicker: jet = js.native
+  
   def setProperties(properties: ojDateTimePickerSettablePropertiesLenient): Unit = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojdatetimepicker", "ojDateTimePicker")
 @js.native
 object ojDateTimePicker extends js.Object {
+  
   type ojAnimateEnd = CustomEvent[Action]
+  
   type ojAnimateStart = CustomEvent[Element]
 }
-

@@ -4,13 +4,11 @@ import typings.openfin.anon.Click
 import typings.openfin.baseMod.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NotificationModule extends Base {
-  var events: Click = js.native
-  var genNoteId: js.Any = js.native
-  var nextNoteId: js.Any = js.native
+  
   /**
     * Creates a new Notification.
     * @param { object } options
@@ -19,5 +17,10 @@ trait NotificationModule extends Base {
     * @static
     */
   def create(options: js.Any): Notification = js.native
+  
+  var events: Click = js.native
+  
+  var genNoteId: js.Any = js.native
+  
+  var nextNoteId: js.Any = js.native
 }
-

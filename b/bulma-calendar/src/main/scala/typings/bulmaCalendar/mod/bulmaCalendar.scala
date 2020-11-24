@@ -5,18 +5,21 @@ import typings.bulmaCalendar.anon.EndDate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait bulmaCalendar extends js.Object {
+  
   /**
     * Clear date selection (startDate and endDate are set to undefined)
     */
   def clear(): Unit = js.native
+  
   /**
     * Get selected date
     */
   def date: End = js.native
+  
   /**
     * Get date format pattern
     */
@@ -25,12 +28,15 @@ trait bulmaCalendar extends js.Object {
     * Set date format pattern
     */
   def dateFormat_=(dateFormat: String): Unit = js.native
+  
   /**
     * Set date
     */
   def date_=(date: End): Unit = js.native
+  
   def emit(name: EventType, data: bulmaCalendar): Unit = js.native
   def emit(name: EventType, data: bulmaCalendar, silent: Boolean): Unit = js.native
+  
   /**
     * Get selected end date
     */
@@ -39,6 +45,7 @@ trait bulmaCalendar extends js.Object {
     * Set end date
     */
   def endDate_=(endDate: Date): Unit = js.native
+  
   /**
     * Get selected end time
     */
@@ -47,27 +54,32 @@ trait bulmaCalendar extends js.Object {
     * Set end time
     */
   def endTime_=(endTime: Date): Unit = js.native
+  
   /**
     * Close date picker (not available with "inline" display style)
     */
   def hide(): Unit = js.native
+  
   // Getters
   /**
     * Get component instance ID
     */
   def id: js.Any = js.native
+  
   /**
     * Check if date picker is open or not
     *
     * @returns True if date picker is open else False
     */
   def isOpen(): Boolean = js.native
+  
   /**
     * Check if current instance is a range date picker
     *
     * @returns True if the instance is a range date picker
     */
   def isRange(): Boolean = js.native
+  
   /**
     * Get active lang
     */
@@ -76,8 +88,10 @@ trait bulmaCalendar extends js.Object {
     * Set component lang
     */
   def lang_=(lang: String): Unit = js.native
+  
   // Custom EventEmitter implementation
   def listenerCount(eventName: EventType): Unit = js.native
+  
   /**
     * Get max possible date
     */
@@ -86,7 +100,9 @@ trait bulmaCalendar extends js.Object {
     * Set max possible date
     */
   def maxDate_=(maxDate: Date): Unit = js.native
+  
   def middleware[T /* <: EventType */](eventName: T, fn: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
+  
   /**
     * Get min possible date
     */
@@ -95,25 +111,33 @@ trait bulmaCalendar extends js.Object {
     * Set min possible date
     */
   def minDate_=(minDate: Date): Unit = js.native
+  
   def on[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
   def on[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit], once: Boolean): Unit = js.native
+  
   def once[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
+  
   /**
     * Force calendar refresh
     */
   def refresh(): Unit = js.native
+  
   def removeListeners(eventName: EventType): Unit = js.native
   def removeListeners(eventName: EventType, middleware: Boolean): Unit = js.native
+  
   def removeMiddleware(eventName: EventType): Unit = js.native
+  
   /**
     * Force to set calendar data into UI inputs
     */
   def save(): Unit = js.native
+  
   // Methods
   /**
     * Open date picker (not available with "inline" display style)
     */
   def show(): Unit = js.native
+  
   /**
     * Get selected start date
     */
@@ -122,6 +146,7 @@ trait bulmaCalendar extends js.Object {
     * Se start date
     */
   def startDate_=(startDate: Date): Unit = js.native
+  
   /**
     * Get selected start time
     */
@@ -130,10 +155,12 @@ trait bulmaCalendar extends js.Object {
     * Set start time
     */
   def startTime_=(startTime: Date): Unit = js.native
+  
   /**
     * Get selected time
     */
   def time: Date = js.native
+  
   /**
     * Get time format pattern
     */
@@ -142,10 +169,12 @@ trait bulmaCalendar extends js.Object {
     * Set time format pattern
     */
   def timeFormat_=(timeFormat: String): Unit = js.native
+  
   /**
     * Set time
     */
   def time_=(time: Date): Unit = js.native
+  
   /**
     * Get the date picker value as formatted string if no parameter else set the passed value
     *
@@ -156,4 +185,3 @@ trait bulmaCalendar extends js.Object {
   def value(): EndDate = js.native
   def value(value: String): EndDate = js.native
 }
-

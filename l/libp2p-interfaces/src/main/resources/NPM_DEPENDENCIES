@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "libp2p-interfaces" : "0.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "libp2p-interfaces" : "0.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

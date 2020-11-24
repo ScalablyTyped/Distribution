@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-json-stringify" : "2.2.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-json-stringify" : "2.2.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

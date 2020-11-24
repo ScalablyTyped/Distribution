@@ -2,7 +2,7 @@ package typings.chromeApps.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.power
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.power")
 @js.native
 object power extends js.Object
-

@@ -1,49 +1,41 @@
 package typings.sequelizeCursorPagination.mod.SequelizeCursorPagination
 
-import typings.sequelize.anon.Exclude
-import typings.sequelize.mod.FindOptionsAttributesArray
-import typings.sequelize.mod.IncludeOptions
-import typings.sequelize.mod.Model
-import typings.sequelize.mod.WhereOptions
-import typings.sequelize.mod.and
-import typings.sequelize.mod.col
-import typings.sequelize.mod.fn
-import typings.sequelize.mod.or
-import typings.sequelize.mod.where
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait PaginateInstOptions[T] extends BasicPaginateOptions[T] {
-  var raw: js.UndefOr[Boolean] = js.undefined
+  
+  var raw: js.UndefOr[Boolean] = js.native
 }
-
 object PaginateInstOptions {
+  
   @scala.inline
-  def apply[T](
-    after: String = null,
-    attributes: FindOptionsAttributesArray | Exclude = null,
-    before: String = null,
-    desc: js.UndefOr[Boolean] = js.undefined,
-    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    paginationField: String = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    subQuery: js.UndefOr[Boolean] = js.undefined,
-    where: WhereOptions[T] | where | fn | (js.Array[col | and | or | String]) = null
-  ): PaginateInstOptions[T] = {
+  def apply[T](): PaginateInstOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.get.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (paginationField != null) __obj.updateDynamic("paginationField")(paginationField.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subQuery)) __obj.updateDynamic("subQuery")(subQuery.get.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginateInstOptions[T]]
   }
+  
+  @scala.inline
+  implicit class PaginateInstOptionsOps[Self <: PaginateInstOptions[_], T] (val x: Self with PaginateInstOptions[T]) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+  }
 }
-

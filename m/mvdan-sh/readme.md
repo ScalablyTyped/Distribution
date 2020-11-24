@@ -10,9 +10,9 @@ A shell parser and formatter (POSIX/Bash/mksh)
 | ------------------ | :-------------: |
 | Full name          | mvdan-sh |
 | Keywords           | shell, bash, sh, parser, ast, syntax, posix, bash-parser |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 26909 |
+| # releases         | 8 |
+| # dependents       | 2 |
+| # downloads        | 42700 |
 | # stars            | 0 |
 
 ## Links

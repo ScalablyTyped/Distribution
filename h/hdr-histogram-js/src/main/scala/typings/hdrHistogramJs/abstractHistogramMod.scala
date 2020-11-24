@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.hdrHistogramJs.abstractHistogramBaseMod.AbstractHistogramBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/AbstractHistogram", JSImport.Namespace)
 @js.native
 object abstractHistogramMod extends js.Object {
+  
   @js.native
   abstract class AbstractHistogram protected () extends AbstractHistogramBase {
     def this(
@@ -16,44 +17,9 @@ object abstractHistogramMod extends js.Object {
       highestTrackableValue: Double,
       numberOfSignificantValueDigits: Double
     ) = this()
-    var computeCountsArrayIndex: js.Any = js.native
-    var encodeIntoByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof encodeIntoByteBuffer */ js.Any = js.native
-    var encodeIntoCompressedByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof encodeIntoCompressedByteBuffer */ js.Any = js.native
-    /**
-      * Get the count of recorded values at a specific value (to within the histogram resolution at the value level).
-      *
-      * @param value The value for which to provide the recorded count
-      * @return The total count of values recorded in the histogram within the value range that is
-      * {@literal >=} lowestEquivalentValue(<i>value</i>) and {@literal <=} highestEquivalentValue(<i>value</i>)
-      */
-    var getCountAtValue: js.Any = js.native
-    /**
-      * Number of leading zeros in the largest value that can fit in bucket 0.
-      */
-    var leadingZeroCountBase: Double = js.native
-    var lowestDiscernibleValueRounded: Double = js.native
-    var maxValue: Double = js.native
-    var minNonZeroValue: Double = js.native
-    var recordCountAtValue: js.Any = js.native
-    var recordValueWithCountAndExpectedInterval: js.Any = js.native
-    var resetMinNonZeroValue: js.Any = js.native
-    var subBucketHalfCount: Double = js.native
-    var subBucketHalfCountMagnitude: Double = js.native
-    /**
-      * Biggest value that can fit in bucket 0
-      */
-    var subBucketMask: Double = js.native
-    /**
-      * Largest k such that 2^k &lt;= lowestDiscernibleValue
-      */
-    var unitMagnitude: Double = js.native
-    /**
-      * Lowest unitMagnitude bits are set
-      */
-    var unitMagnitudeMask: Double = js.native
-    var updateMinNonZeroValue: js.Any = js.native
-    var updatedMaxValue: js.Any = js.native
+    
     /* protected */ def _getEstimatedFootprintInBytes(): Double = js.native
+    
     /**
       * Add the contents of another histogram to this one.
       * <p>
@@ -65,8 +31,11 @@ object abstractHistogramMod extends js.Object {
       * higher than highestTrackableValue.
       */
     def add(otherHistogram: AbstractHistogram): Unit = js.native
+    
     def addToCountAtIndex(index: Double, value: Double): Unit = js.native
+    
     def addToTotalCount(value: Double): Unit = js.native
+    
     /**
       * Add the contents of another histogram to this one, while correcting the incoming data for coordinated omission.
       * <p>
@@ -91,7 +60,11 @@ object abstractHistogramMod extends js.Object {
       * @throws ArrayIndexOutOfBoundsException (may throw) if values exceed highestTrackableValue
       */
     def addWhileCorrectingForCoordinatedOmission(otherHistogram: AbstractHistogram, expectedIntervalBetweenValueSamples: Double): Unit = js.native
+    
     def clearCounts(): Unit = js.native
+    
+    var computeCountsArrayIndex: js.Any = js.native
+    
     /**
       * Get a copy of this histogram, corrected for coordinated omission.
       * <p>
@@ -115,10 +88,18 @@ object abstractHistogramMod extends js.Object {
       * @return a copy of this histogram, corrected for coordinated omission.
       */
     def copyCorrectedForCoordinatedOmission(expectedIntervalBetweenValueSamples: Double): AbstractHistogram = js.native
+    
     def countsArrayIndex(value: Double): Double = js.native
+    
     def determineArrayLengthNeeded(highestTrackableValue: Double): Double = js.native
+    
+    var encodeIntoByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof encodeIntoByteBuffer */ js.Any = js.native
+    
+    var encodeIntoCompressedByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof encodeIntoCompressedByteBuffer */ js.Any = js.native
+    
     def establishInternalTackingValues(): Unit = js.native
     def establishInternalTackingValues(lengthToCover: Double): Unit = js.native
+    
     /**
       * The buckets (each of which has subBucketCount sub-buckets, here assumed to be 2048 as an example) overlap:
       *
@@ -136,18 +117,32 @@ object abstractHistogramMod extends js.Object {
       * values as it has better precision.
       */
     def establishSize(newHighestTrackableValue: Double): Unit = js.native
+    
     /**
       * @return the lowest (and therefore highest precision) bucket index that can represent the value
       */
     def getBucketIndex(value: Double): Double = js.native
+    
     def getBucketsNeededToCoverValue(value: Double): Double = js.native
+    
     def getCountAtIndex(index: Double): Double = js.native
+    
+    /**
+      * Get the count of recorded values at a specific value (to within the histogram resolution at the value level).
+      *
+      * @param value The value for which to provide the recorded count
+      * @return The total count of values recorded in the histogram within the value range that is
+      * {@literal >=} lowestEquivalentValue(<i>value</i>) and {@literal <=} highestEquivalentValue(<i>value</i>)
+      */
+    var getCountAtValue: js.Any = js.native
+    
     /**
       * Provide a (conservatively high) estimate of the Histogram's total footprint in bytes
       *
       * @return a (conservatively high) estimate of the Histogram's total footprint in bytes
       */
     def getEstimatedFootprintInBytes(): Double = js.native
+    
     /**
       * If we have N such that subBucketCount * 2^N > max value, we need storage for N+1 buckets, each with enough
       * slots to hold the top half of the subBucketCount (the lower half is covered by previous buckets), and the +1
@@ -155,24 +150,29 @@ object abstractHistogramMod extends js.Object {
       * value if we consider the sub-bucket length to be halved.
       */
     def getLengthForNumberOfBuckets(numberOfBuckets: Double): Double = js.native
+    
     /**
       * Get the computed mean value of all recorded values in the histogram
       *
       * @return the mean value (in value units) of the histogram data
       */
     def getMean(): Double = js.native
+    
     /**
       * Get the computed standard deviation of all recorded values in the histogram
       *
       * @return the standard deviation (in value units) of the histogram data
       */
     def getStdDeviation(): Double = js.native
+    
     def getSubBucketIndex(value: Double, bucketIndex: Double): Double = js.native
+    
     /**
       * Get the total count of all recorded values in the histogram
       * @return the total count of all recorded values in the histogram
       */
     def getTotalCount(): Double = js.native
+    
     /**
       * Get the value at a given percentile.
       * When the given percentile is &gt; 0.0, the value returned is the value that the given
@@ -189,7 +189,9 @@ object abstractHistogramMod extends js.Object {
       * value that all value entries in the histogram are either larger than or equivalent to.
       */
     def getValueAtPercentile(percentile: Double): Double = js.native
+    
     def handleRecordException(count: Double, value: Double): Unit = js.native
+    
     /**
       * Get the highest value that is equivalent to the given value within the histogram's resolution.
       * Where "equivalent" means that value samples recorded for any two
@@ -199,8 +201,11 @@ object abstractHistogramMod extends js.Object {
       * @return The highest value that is equivalent to the given value within the histogram's resolution.
       */
     def highestEquivalentValue(value: Double): Double = js.native
+    
     def incrementCountAtIndex(index: Double): Unit = js.native
+    
     def incrementTotalCount(): Unit = js.native
+    
     def init(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -208,6 +213,14 @@ object abstractHistogramMod extends js.Object {
       integerToDoubleValueConversionRatio: Double,
       normalizingIndexOffset: Double
     ): Unit = js.native
+    
+    /**
+      * Number of leading zeros in the largest value that can fit in bucket 0.
+      */
+    var leadingZeroCountBase: Double = js.native
+    
+    var lowestDiscernibleValueRounded: Double = js.native
+    
     /**
       * Get the lowest value that is equivalent to the given value within the histogram's resolution.
       * Where "equivalent" means that value samples recorded for any two
@@ -217,6 +230,9 @@ object abstractHistogramMod extends js.Object {
       * @return The lowest value that is equivalent to the given value within the histogram's resolution.
       */
     def lowestEquivalentValue(value: Double): Double = js.native
+    
+    var maxValue: Double = js.native
+    
     /**
       * Get a value that lies in the middle (rounded up) of the range of values equivalent the given value.
       * Where "equivalent" means that value samples recorded for any two
@@ -226,6 +242,9 @@ object abstractHistogramMod extends js.Object {
       * @return The value lies in the middle (rounded up) of the range of values equivalent the given value.
       */
     def medianEquivalentValue(value: Double): Double = js.native
+    
+    var minNonZeroValue: Double = js.native
+    
     /**
       * Get the next value that is not equivalent to the given value within the histogram's resolution.
       * Where "equivalent" means that value samples recorded for any two
@@ -235,6 +254,7 @@ object abstractHistogramMod extends js.Object {
       * @return The next value that is not equivalent to the given value within the histogram's resolution.
       */
     def nextNonEquivalentValue(value: Double): Double = js.native
+    
     /**
       * Produce textual representation of the value distribution of histogram data by percentile. The distribution is
       * output with exponentially increasing resolution, with each exponentially decreasing half-distance containing
@@ -268,8 +288,13 @@ object abstractHistogramMod extends js.Object {
     ): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Double): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Double, useCsvFormat: Boolean): String = js.native
+    
+    var recordCountAtValue: js.Any = js.native
+    
     def recordSingleValue(value: Double): Unit = js.native
+    
     def recordSingleValueWithExpectedInterval(value: Double, expectedIntervalBetweenValueSamples: Double): Unit = js.native
+    
     /**
       * Record a value in the histogram
       *
@@ -277,6 +302,7 @@ object abstractHistogramMod extends js.Object {
       * @throws may throw Error if value is exceeds highestTrackableValue
       */
     def recordValue(value: Double): Unit = js.native
+    
     /**
       * Record a value in the histogram (adding to the value's current count)
       *
@@ -285,6 +311,9 @@ object abstractHistogramMod extends js.Object {
       * @throws ArrayIndexOutOfBoundsException (may throw) if value is exceeds highestTrackableValue
       */
     def recordValueWithCount(value: Double, count: Double): Unit = js.native
+    
+    var recordValueWithCountAndExpectedInterval: js.Any = js.native
+    
     /**
       * Record a value in the histogram.
       * <p>
@@ -307,11 +336,19 @@ object abstractHistogramMod extends js.Object {
       * @throws ArrayIndexOutOfBoundsException (may throw) if value is exceeds highestTrackableValue
       */
     def recordValueWithExpectedInterval(value: Double, expectedIntervalBetweenValueSamples: Double): Unit = js.native
+    
     def reset(): Unit = js.native
+    
+    var resetMinNonZeroValue: js.Any = js.native
+    
     def resize(newHighestTrackableValue: Double): Unit = js.native
+    
     def setCountAtIndex(index: Double, value: Double): Unit = js.native
+    
     def setNormalizingIndexOffset(normalizingIndexOffset: Double): Unit = js.native
+    
     def setTotalCount(totalCount: Double): Unit = js.native
+    
     /**
       * Get the size (in value units) of the range of values that are equivalent to the given value within the
       * histogram's resolution. Where "equivalent" means that value samples recorded for any two
@@ -321,6 +358,16 @@ object abstractHistogramMod extends js.Object {
       * @return The size of the range of values equivalent to the given value.
       */
     def sizeOfEquivalentValueRange(value: Double): Double = js.native
+    
+    var subBucketHalfCount: Double = js.native
+    
+    var subBucketHalfCountMagnitude: Double = js.native
+    
+    /**
+      * Biggest value that can fit in bucket 0
+      */
+    var subBucketMask: Double = js.native
+    
     /**
       * Subtract the contents of another histogram from this one.
       * <p>
@@ -331,8 +378,25 @@ object abstractHistogramMod extends js.Object {
       *
       */
     def subtract(otherHistogram: AbstractHistogram): Unit = js.native
+    
+    /**
+      * Largest k such that 2^k &lt;= lowestDiscernibleValue
+      */
+    var unitMagnitude: Double = js.native
+    
+    /**
+      * Lowest unitMagnitude bits are set
+      */
+    var unitMagnitudeMask: Double = js.native
+    
     def updateMinAndMax(value: Double): Unit = js.native
+    
+    var updateMinNonZeroValue: js.Any = js.native
+    
+    var updatedMaxValue: js.Any = js.native
+    
     def valueFromIndex(index: Double): Double = js.native
+    
     def valueFromIndexes(bucketIndex: Double, subBucketIndex: Double): Double = js.native
   }
   
@@ -352,12 +416,11 @@ object abstractHistogramMod extends js.Object {
       numberOfSignificantValueDigits: Double
     ) = this()
   }
-  
   @js.native
   object default extends js.Object {
+    
     var decodeFromByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any = js.native
+    
     var decodeFromCompressedByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any = js.native
   }
-  
 }
-

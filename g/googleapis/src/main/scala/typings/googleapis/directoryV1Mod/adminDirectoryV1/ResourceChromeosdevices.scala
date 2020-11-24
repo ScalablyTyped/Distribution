@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Chromeosdevices")
 @js.native
 class ResourceChromeosdevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * directory.chromeosdevices.action
     * @desc Take action on Chrome OS Device
@@ -43,6 +43,9 @@ class ResourceChromeosdevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * directory.chromeosdevices.get
     * @desc Retrieve Chrome OS Device
@@ -73,6 +76,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChromeOsDevice]
   ): Unit = js.native
+  
   /**
     * directory.chromeosdevices.list
     * @desc Retrieve all Chrome OS Devices of a customer (paginated)
@@ -108,6 +112,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChromeOsDevices]
   ): Unit = js.native
+  
   /**
     * directory.chromeosdevices.moveDevicesToOu
     * @desc Move or insert multiple Chrome OS Devices to organizational unit
@@ -138,6 +143,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.chromeosdevices.patch
     * @desc Update Chrome OS Device. This method supports patch semantics.
@@ -169,6 +175,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChromeOsDevice]
   ): Unit = js.native
+  
   /**
     * directory.chromeosdevices.update
     * @desc Update Chrome OS Device
@@ -201,4 +208,3 @@ class ResourceChromeosdevices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChromeOsDevice]
   ): Unit = js.native
 }
-

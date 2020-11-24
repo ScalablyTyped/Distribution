@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Backupruns")
 @js.native
 class ResourceBackupruns protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sql.backupRuns.delete
     * @desc Deletes the backup taken by a backup run.
@@ -43,6 +45,7 @@ class ResourceBackupruns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.backupRuns.get
     * @desc Retrieves a resource containing information about a backup run.
@@ -73,6 +76,7 @@ class ResourceBackupruns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBackupRun]
   ): Unit = js.native
+  
   /**
     * sql.backupRuns.insert
     * @desc Creates a new backup run on demand. This method is applicable only
@@ -104,6 +108,7 @@ class ResourceBackupruns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.backupRuns.list
     * @desc Lists all backup runs associated with a given instance and
@@ -138,4 +143,3 @@ class ResourceBackupruns protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBackupRunsListResponse]
   ): Unit = js.native
 }
-

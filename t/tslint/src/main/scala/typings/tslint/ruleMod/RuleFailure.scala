@@ -3,7 +3,7 @@ package typings.tslint.ruleMod
 import typings.typescript.mod.SourceFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
 @js.native
@@ -25,34 +25,55 @@ class RuleFailure protected () extends js.Object {
     ruleName: String,
     fix: Replacement
   ) = this()
+  
   var createFailurePosition: js.Any = js.native
+  
   val endPosition: js.Any = js.native
-  val failure: js.Any = js.native
-  val fileName: js.Any = js.native
-  val fix: js.Any = js.native
-  val rawLines: js.Any = js.native
-  val ruleName: js.Any = js.native
-  var ruleSeverity: js.Any = js.native
-  val sourceFile: js.Any = js.native
-  val startPosition: js.Any = js.native
+  
   def equals(ruleFailure: RuleFailure): Boolean = js.native
+  
+  val failure: js.Any = js.native
+  
+  val fileName: js.Any = js.native
+  
+  val fix: js.Any = js.native
+  
   def getEndPosition(): RuleFailurePosition = js.native
+  
   def getFailure(): String = js.native
+  
   def getFileName(): String = js.native
+  
   def getFix(): js.UndefOr[Replacement | js.Array[Replacement]] = js.native
+  
   def getRawLines(): String = js.native
+  
   def getRuleName(): String = js.native
+  
   def getRuleSeverity(): RuleSeverity = js.native
+  
   def getStartPosition(): RuleFailurePosition = js.native
+  
   def hasFix(): Boolean = js.native
+  
+  val rawLines: js.Any = js.native
+  
+  val ruleName: js.Any = js.native
+  
+  var ruleSeverity: js.Any = js.native
+  
   def setRuleSeverity(value: RuleSeverity): Unit = js.native
+  
+  val sourceFile: js.Any = js.native
+  
+  val startPosition: js.Any = js.native
+  
   def toJson(): IRuleFailureJson = js.native
 }
-
 /* static members */
 @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
 @js.native
 object RuleFailure extends js.Object {
+  
   def compare(a: RuleFailure, b: RuleFailure): Double = js.native
 }
-

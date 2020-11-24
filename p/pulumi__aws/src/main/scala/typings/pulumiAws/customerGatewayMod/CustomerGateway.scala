@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway")
 @js.native
@@ -22,33 +22,38 @@ class CustomerGateway protected () extends CustomResource {
     */
   def this(name: String, args: CustomerGatewayArgs) = this()
   def this(name: String, args: CustomerGatewayArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the customer gateway.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
     */
   val bgpAsn: Output_[String] = js.native
+  
   /**
     * The IP address of the gateway's Internet-routable external interface.
     */
   val ipAddress: Output_[String] = js.native
+  
   /**
     * Tags to apply to the gateway.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * The type of customer gateway. The only type AWS
     * supports at this time is "ipsec.1".
     */
   val `type`: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway")
 @js.native
 object CustomerGateway extends js.Object {
+  
   /**
     * Get an existing CustomerGateway resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -62,10 +67,10 @@ object CustomerGateway extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CustomerGateway = js.native
   def get(name: String, id: Input[ID], state: CustomerGatewayState): CustomerGateway = js.native
   def get(name: String, id: Input[ID], state: CustomerGatewayState, opts: CustomResourceOptions): CustomerGateway = js.native
+  
   /**
     * Returns true if the given object is an instance of CustomerGateway.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean = js.native
 }
-

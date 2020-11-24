@@ -4,7 +4,7 @@ import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "PointerInfoPre")
 @js.native
@@ -20,4 +20,3 @@ class PointerInfoPre protected ()
     */
   def this(`type`: Double, event: PointerEvent, localX: Double, localY: Double) = this()
 }
-

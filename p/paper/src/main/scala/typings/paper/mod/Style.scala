@@ -2,7 +2,7 @@ package typings.paper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper", "Style")
 @js.native
@@ -15,4 +15,3 @@ class Style protected ()
     */
   def this(style: js.Object) = this()
 }
-

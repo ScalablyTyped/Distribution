@@ -11,8 +11,8 @@ Backgrid.js is a set of components for building semantic and easily stylable dat
 | Full name          | backgrid |
 | Keywords           | backgrid, backbone |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 130161 |
+| # dependents       | 17 |
+| # downloads        | 154153 |
 | # stars            | 2 |
 
 ## Links

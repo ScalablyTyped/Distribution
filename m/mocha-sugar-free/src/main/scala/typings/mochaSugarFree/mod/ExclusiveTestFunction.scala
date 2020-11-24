@@ -5,7 +5,7 @@ import typings.mochaSugarFree.anon.Optionsasyncfalseundefine
 import typings.mochaSugarFree.anon.OptionsasynctruefnTestCas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [bdd, tdd, qunit]
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ExclusiveTestFunction extends js.Object {
+  
   def apply(fn: TestCase): Test_ = js.native
   // tslint:disable-next-line: unified-signatures
   def apply(options: Optionsasyncfalseundefine): Test_ = js.native
@@ -31,4 +32,3 @@ trait ExclusiveTestFunction extends js.Object {
   def apply(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
   def apply(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
 }
-

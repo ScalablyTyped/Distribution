@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Barcode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SymbologyType extends js.Object
-
 @JSGlobal("ej.datavisualization.Barcode.SymbologyType")
 @js.native
 object SymbologyType extends js.Object {
+  
   //Represents the Codabar barcode
   @js.native
   sealed trait Codabar extends SymbologyType
@@ -57,6 +57,4 @@ object SymbologyType extends js.Object {
   //Represents the QR code
   @js.native
   sealed trait QRBarcode extends SymbologyType
-  
 }
-

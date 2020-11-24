@@ -2,7 +2,7 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents recipients of an item. Compose mode only.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Recipients extends js.Object {
+  
   /**
     * Adds a recipient list to the existing recipients for an appointment or message.
     *
@@ -27,6 +28,15 @@ trait Recipients extends js.Object {
     * - {@link Office.EmailUser | EmailUser} objects
     *
     * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
+    *
+    * Maximum number that can be added:
+    *
+    * - Windows: 100 recipients.
+    * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
+    *
+    * - Mac, web browser: 100 recipients
+    *
+    * - Other: No limit
     *
     * [Api set: Mailbox 1.1]
     *
@@ -49,10 +59,6 @@ trait Recipients extends js.Object {
   def addAsync(recipients: js.Array[String | EmailUser | EmailAddressDetails]): Unit = js.native
   def addAsync(
     recipients: js.Array[String | EmailUser | EmailAddressDetails],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addAsync(
-    recipients: js.Array[String | EmailUser | EmailAddressDetails],
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -62,11 +68,16 @@ trait Recipients extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Gets a recipient list for an appointment or message.
     *
-    * When the call completes, the asyncResult.value property will contain
-    * an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
+    * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
+    * objects. Collection size limits:
+    *
+    * - Windows, Mac, web browser: 500 members
+    *
+    * - Other: No limit
     *
     * [Api set: Mailbox 1.1]
     *
@@ -83,8 +94,12 @@ trait Recipients extends js.Object {
   /**
     * Gets a recipient list for an appointment or message.
     *
-    * When the call completes, the `asyncResult.value` property will contain
-    * an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
+    * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
+    * objects. Collection size limits:
+    *
+    * - Windows, Mac, web browser: 500 members
+    *
+    * - Other: No limit
     *
     * [Api set: Mailbox 1.1]
     *
@@ -103,6 +118,7 @@ trait Recipients extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[EmailAddressDetails]], Unit]
   ): Unit = js.native
+  
   /**
     * Sets a recipient list for an appointment or message.
     *
@@ -115,6 +131,12 @@ trait Recipients extends js.Object {
     * - {@link Office.EmailUser | EmailUser} objects
     *
     * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
+    *
+    * Maximum number that can be set:
+    *
+    * - Windows, Mac, web browser: 100 recipients
+    *
+    * - Other: No limit
     *
     * [Api set: Mailbox 1.1]
     *
@@ -149,6 +171,12 @@ trait Recipients extends js.Object {
     * - {@link Office.EmailUser | EmailUser} objects
     *
     * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
+    *
+    * Maximum number that can be set:
+    *
+    * - Windows, Mac, web browser: 100 recipients
+    *
+    * - Other: No limit
     *
     * [Api set: Mailbox 1.1]
     *
@@ -175,4 +203,3 @@ trait Recipients extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

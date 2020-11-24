@@ -2,9 +2,10 @@ package typings.angular
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object angular {
+  
   /**
     * Runtime representation a type that a Component or other object is instances of.
     *

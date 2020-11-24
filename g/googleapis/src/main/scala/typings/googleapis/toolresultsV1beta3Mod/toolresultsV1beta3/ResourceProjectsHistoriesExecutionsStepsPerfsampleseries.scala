@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Perfsampleseries")
 @js.native
 class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var samples: ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.perfSampleSeries.create
     * @desc Creates a PerfSampleSeries.  May return any of the following error
@@ -55,6 +56,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () exte
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerfSampleSeries]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.perfSampleSeries.get
     * @desc Gets a PerfSampleSeries.  May return any of the following error
@@ -92,6 +94,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () exte
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerfSampleSeries]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.steps.perfSampleSeries.list
     * @desc Lists PerfSampleSeries for a given Step.  The request provides an
@@ -132,5 +135,6 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () exte
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListPerfSampleSeriesResponse]
   ): Unit = js.native
+  
+  var samples: ResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamples = js.native
 }
-

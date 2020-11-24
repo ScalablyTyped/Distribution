@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.form.XForm
 import typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the form layer elements in a view
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFormLayerAccess extends XControlAccess {
+  
   /**
     * returns the {@link com.sun.star.form.FormController} instance which operates on a given form.
     *
@@ -26,6 +27,7 @@ trait XFormLayerAccess extends XControlAccess {
     * @see com.sun.star.form.runtime.FormOperations
     */
   def getFormController(Form: XForm): XFormController = js.native
+  
   /**
     * determines whether the view's form layer is currently in design or alive mode
     *
@@ -33,6 +35,7 @@ trait XFormLayerAccess extends XControlAccess {
     * com.sun.star.frame.XDispatchProvider} ), and asking for the current mode is the same as asking for the state of this feature.
     */
   def isFormDesignMode(): Boolean = js.native
+  
   /**
     * determines whether the view's form layer is currently in design or alive mode
     *
@@ -41,8 +44,8 @@ trait XFormLayerAccess extends XControlAccess {
     */
   def setFormDesignMode(DesignMode: Boolean): Unit = js.native
 }
-
 object XFormLayerAccess {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -56,24 +59,29 @@ object XFormLayerAccess {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getControl = js.Any.fromFunction1(getControl), getFormController = js.Any.fromFunction1(getFormController), isFormDesignMode = js.Any.fromFunction0(isFormDesignMode), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFormDesignMode = js.Any.fromFunction1(setFormDesignMode))
     __obj.asInstanceOf[XFormLayerAccess]
   }
+  
   @scala.inline
   implicit class XFormLayerAccessOps[Self <: XFormLayerAccess] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetFormController(value: XForm => XFormController): Self = this.set("getFormController", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsFormDesignMode(value: () => Boolean): Self = this.set("isFormDesignMode", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetFormDesignMode(value: Boolean => Unit): Self = this.set("setFormDesignMode", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.spex.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // PromiseAdapter class;
 // API: http://vitaly-t.github.io/spex/PromiseAdapter.html
@@ -15,4 +15,3 @@ class PromiseAdapter protected () extends js.Object {
     reject: js.Function1[/* reason */ js.Any, Unit]
   ) = this()
 }
-

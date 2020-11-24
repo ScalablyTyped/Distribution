@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-cognito-identity
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 1.0.0-rc.7
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-cognito-identity |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 1831 |
+| # releases         | 48 |
+| # dependents       | 2 |
+| # downloads        | 1855597 |
 | # stars            | 0 |
 
 ## Links

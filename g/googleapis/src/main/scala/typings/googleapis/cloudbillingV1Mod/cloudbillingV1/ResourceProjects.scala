@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbilling/v1", "cloudbilling_v1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudbilling.projects.getBillingInfo
     * @desc Gets the billing information for a project. The current
@@ -101,6 +103,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProjectBillingInfo]
   ): Unit = js.native
+  
   /**
     * cloudbilling.projects.updateBillingInfo
     * @desc Sets or updates the billing account associated with a project. You
@@ -218,4 +221,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProjectBillingInfo]
   ): Unit = js.native
 }
-

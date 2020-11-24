@@ -9,9 +9,9 @@ Less for Gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-less |
 | Keywords           | gulpplugin, gulp, less |
-| # releases         | 4 |
-| # dependents       | 697 |
-| # downloads        | 7297996 |
+| # releases         | 1 |
+| # dependents       | 731 |
+| # downloads        | 7852848 |
 | # stars            | 135 |
 
 ## Links

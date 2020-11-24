@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclicksearch/v2", "doubleclicksearch_v2.Resource$Conversion")
 @js.native
 class ResourceConversion protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * doubleclicksearch.conversion.get
     * @desc Retrieves a list of conversions from a DoubleClick Search engine
@@ -52,6 +54,7 @@ class ResourceConversion protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConversionList]
   ): Unit = js.native
+  
   /**
     * doubleclicksearch.conversion.insert
     * @desc Inserts a batch of new conversions into DoubleClick Search.
@@ -80,6 +83,7 @@ class ResourceConversion protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConversionList]
   ): Unit = js.native
+  
   /**
     * doubleclicksearch.conversion.patch
     * @desc Updates a batch of conversions in DoubleClick Search. This method
@@ -116,6 +120,7 @@ class ResourceConversion protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConversionList]
   ): Unit = js.native
+  
   /**
     * doubleclicksearch.conversion.update
     * @desc Updates a batch of conversions in DoubleClick Search.
@@ -144,6 +149,7 @@ class ResourceConversion protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConversionList]
   ): Unit = js.native
+  
   /**
     * doubleclicksearch.conversion.updateAvailability
     * @desc Updates the availabilities of a batch of floodlight activities in
@@ -177,4 +183,3 @@ class ResourceConversion protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUpdateAvailabilityResponse]
   ): Unit = js.native
 }
-

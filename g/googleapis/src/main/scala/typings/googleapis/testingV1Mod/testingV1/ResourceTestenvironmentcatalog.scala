@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/testing/v1", "testing_v1.Resource$Testenvironmentcatalog")
 @js.native
 class ResourceTestenvironmentcatalog protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * testing.testEnvironmentCatalog.get
     * @desc Gets the catalog of supported test environments.  May return any of
@@ -49,4 +51,3 @@ class ResourceTestenvironmentcatalog protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestEnvironmentCatalog]
   ): Unit = js.native
 }
-

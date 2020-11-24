@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintTaskCompletion extends js.Object
-
 @JSGlobal("Windows.Graphics.Printing.PrintTaskCompletion")
 @js.native
 object PrintTaskCompletion extends js.Object {
+  
   @js.native
   sealed trait abandoned extends PrintTaskCompletion
   
@@ -21,6 +21,4 @@ object PrintTaskCompletion extends js.Object {
   
   @js.native
   sealed trait submitted extends PrintTaskCompletion
-  
 }
-

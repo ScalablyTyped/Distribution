@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-camera" : "4.1.0"
+      "cordova-plugin-camera" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-camera" : "4.1.0"
+      "cordova-plugin-camera" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

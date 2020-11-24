@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A threshold for the ProximitySensor . When the threshold conditions are met, the sensor trigger will activate. */
 @JSGlobal("Windows.Devices.Sensors.ProximitySensorDataThreshold")
@@ -15,4 +15,3 @@ class ProximitySensorDataThreshold protected ()
     */
   def this(sensor: typings.winrtUwp.Windows.Devices.Sensors.ProximitySensor) = this()
 }
-

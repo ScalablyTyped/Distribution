@@ -2,14 +2,16 @@ package typings.js2xmlparser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object optionsMod {
+  
   type ITypeHandlers = /**
     * Mapping between the type of a value in an object to a function taking
     * this value and returning a replacement value.
     */
   org.scalablytyped.runtime.StringDictionary[js.Function1[/* value */ js.Any, js.Any]]
+  
   type IWrapHandlers = /**
     * Mapping between the string version of a key in an object or map with a
     * value that is an array or set to a function taking the string version

@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1beta1", "servicebroker_v1beta1.Resource$Projects$Brokers$Instances")
 @js.native
 class ResourceProjectsBrokersInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var bindings: ResourceProjectsBrokersInstancesBindings = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicebroker.projects.brokers.instances.get
     * @desc Gets the given service instance from the system. The API call
@@ -48,6 +51,7 @@ class ResourceProjectsBrokersInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.instances.getLast_operation
     * @desc Returns the state of the last operation for the service instance.
@@ -83,6 +87,7 @@ class ResourceProjectsBrokersInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Operation]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.instances.list
     * @desc Lists all the instances in the brokers This API is an extension and
@@ -118,4 +123,3 @@ class ResourceProjectsBrokersInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse]
   ): Unit = js.native
 }
-

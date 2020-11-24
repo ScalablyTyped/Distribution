@@ -7,10 +7,11 @@ import typings.countrySelectJs.countrySelectJsStrings.getSelectedCountryData
 import typings.jquery.JQueryDeferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * initialize the plugin with optional options.
     */
@@ -28,4 +29,3 @@ trait JQuery extends js.Object {
   @JSName("countrySelect")
   def countrySelect_getSelectedCountryData(method: getSelectedCountryData): CountryData = js.native
 }
-

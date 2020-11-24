@@ -2,7 +2,7 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `Constraint` that is either enforced or not.  For example a constraint
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaBooleanConstraint extends js.Object
-

@@ -2,10 +2,11 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TouchableNativeFeedbackProps extends TouchableWithoutFeedbackProps {
+  
   /**
     * Determines the type of background drawable that's going to be used to display feedback.
     * It takes an object with type property and extra data depending on the type.
@@ -21,35 +22,42 @@ trait TouchableNativeFeedbackProps extends TouchableWithoutFeedbackProps {
     *         type is available on Android API level 21+
     */
   var background: js.UndefOr[BackgroundPropType] = js.native
+  
   var useForeground: js.UndefOr[Boolean] = js.native
 }
-
 object TouchableNativeFeedbackProps {
+  
   @scala.inline
   def apply(): TouchableNativeFeedbackProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableNativeFeedbackProps]
   }
+  
   @scala.inline
   implicit class TouchableNativeFeedbackPropsOps[Self <: TouchableNativeFeedbackProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBackground(value: BackgroundPropType): Self = this.set("background", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackground: Self = this.set("background", js.undefined)
+    
     @scala.inline
     def setUseForeground(value: Boolean): Self = this.set("useForeground", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUseForeground: Self = this.set("useForeground", js.undefined)
   }
-  
 }
-

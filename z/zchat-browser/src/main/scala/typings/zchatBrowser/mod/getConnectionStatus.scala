@@ -5,11 +5,11 @@ import typings.zchatBrowser.zchatBrowserStrings.connected
 import typings.zchatBrowser.zchatBrowserStrings.connecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zchat-browser", "getConnectionStatus")
 @js.native
 object getConnectionStatus extends js.Object {
+  
   def apply(): connected | connecting | closed = js.native
 }
-

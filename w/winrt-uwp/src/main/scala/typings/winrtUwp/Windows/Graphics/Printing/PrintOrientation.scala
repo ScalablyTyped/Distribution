@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintOrientation extends js.Object
-
 /** Specifies the orientation options for the printed output. */
 @JSGlobal("Windows.Graphics.Printing.PrintOrientation")
 @js.native
 object PrintOrientation extends js.Object {
+  
   /** The default orientation option. */
   @js.native
   sealed trait default extends PrintOrientation
@@ -38,6 +38,4 @@ object PrintOrientation extends js.Object {
   /** A custom orientation that is specific to the print device. */
   @js.native
   sealed trait printerCustom extends PrintOrientation
-  
 }
-

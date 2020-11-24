@@ -3,7 +3,7 @@ package typings.bignum.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bignum", JSImport.Namespace)
 @js.native
@@ -15,10 +15,10 @@ class ^ protected () extends BigNum {
   def this(n: BigNum) = this()
   def this(n: String, base: Double) = this()
 }
-
 @JSImport("bignum", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Create a new BigNum from a Buffer.
     * 
@@ -26,8 +26,10 @@ object ^ extends js.Object {
     */
   def fromBuffer(buffer: Buffer): BigNum = js.native
   def fromBuffer(buffer: Buffer, options: BufferOptions): BigNum = js.native
+  
   /** Return true if num is identified as a BigNum instance. Otherwise, return false. */
   def isBigNum(num: js.Any): Boolean = js.native
+  
   /**
     * Generate a probable prime of length bits.
     * 
@@ -36,4 +38,3 @@ object ^ extends js.Object {
   def prime(bits: Double): BigNum = js.native
   def prime(bits: Double, safe: Boolean): BigNum = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
@@ -13,8 +13,8 @@ trait XPropertyBag
   extends XPropertySet
      with XPropertyContainer
      with XPropertyAccess
-
 object XPropertyBag {
+  
   @scala.inline
   def apply(
     PropertySetInfo: XPropertySetInfo,
@@ -38,4 +38,3 @@ object XPropertyBag {
     __obj.asInstanceOf[XPropertyBag]
   }
 }
-

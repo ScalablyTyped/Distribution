@@ -1,17 +1,16 @@
 package typings.awsSdk.groundstationMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GroundStation extends Service {
-  @JSName("config")
-  var config_GroundStation: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Cancels a contact with a specified contact ID.
     */
@@ -25,6 +24,10 @@ trait GroundStation extends Service {
     params: CancelContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ContactIdResponse, Unit]
   ): Request[ContactIdResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_GroundStation: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a Config with the specified configData parameters. Only one type of configData can be specified.
     */
@@ -38,6 +41,7 @@ trait GroundStation extends Service {
     params: CreateConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]
   ): Request[ConfigIdResponse, AWSError] = js.native
+  
   /**
     * Creates a DataflowEndpoint group containing the specified list of DataflowEndpoint objects. The name field in each endpoint is used in your mission profile DataflowEndpointConfig to specify which endpoints to use during a contact. When a contact uses multiple DataflowEndpointConfig objects, each Config must match a DataflowEndpoint in the same group.
     */
@@ -51,6 +55,7 @@ trait GroundStation extends Service {
     params: CreateDataflowEndpointGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DataflowEndpointGroupIdResponse, Unit]
   ): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
+  
   /**
     * Creates a mission profile.  dataflowEdges is a list of lists of strings. Each lower level list of strings has two elements: a from ARN and a to ARN.
     */
@@ -64,6 +69,7 @@ trait GroundStation extends Service {
     params: CreateMissionProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ MissionProfileIdResponse, Unit]
   ): Request[MissionProfileIdResponse, AWSError] = js.native
+  
   /**
     * Deletes a Config.
     */
@@ -77,6 +83,7 @@ trait GroundStation extends Service {
     params: DeleteConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]
   ): Request[ConfigIdResponse, AWSError] = js.native
+  
   /**
     * Deletes a dataflow endpoint group.
     */
@@ -90,6 +97,7 @@ trait GroundStation extends Service {
     params: DeleteDataflowEndpointGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DataflowEndpointGroupIdResponse, Unit]
   ): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
+  
   /**
     * Deletes a mission profile.
     */
@@ -103,6 +111,7 @@ trait GroundStation extends Service {
     params: DeleteMissionProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ MissionProfileIdResponse, Unit]
   ): Request[MissionProfileIdResponse, AWSError] = js.native
+  
   /**
     * Describes an existing contact.
     */
@@ -116,6 +125,7 @@ trait GroundStation extends Service {
     params: DescribeContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactResponse, Unit]
   ): Request[DescribeContactResponse, AWSError] = js.native
+  
   /**
     * Returns Config information. Only one Config response can be returned.
     */
@@ -129,6 +139,7 @@ trait GroundStation extends Service {
     params: GetConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConfigResponse, Unit]
   ): Request[GetConfigResponse, AWSError] = js.native
+  
   /**
     * Returns the dataflow endpoint group.
     */
@@ -142,6 +153,7 @@ trait GroundStation extends Service {
     params: GetDataflowEndpointGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataflowEndpointGroupResponse, Unit]
   ): Request[GetDataflowEndpointGroupResponse, AWSError] = js.native
+  
   /**
     * Returns the number of minutes used by account.
     */
@@ -155,6 +167,7 @@ trait GroundStation extends Service {
     params: GetMinuteUsageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMinuteUsageResponse, Unit]
   ): Request[GetMinuteUsageResponse, AWSError] = js.native
+  
   /**
     * Returns a mission profile.
     */
@@ -168,6 +181,7 @@ trait GroundStation extends Service {
     params: GetMissionProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMissionProfileResponse, Unit]
   ): Request[GetMissionProfileResponse, AWSError] = js.native
+  
   /**
     * Returns a satellite.
     */
@@ -181,6 +195,7 @@ trait GroundStation extends Service {
     params: GetSatelliteRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSatelliteResponse, Unit]
   ): Request[GetSatelliteResponse, AWSError] = js.native
+  
   /**
     * Returns a list of Config objects.
     */
@@ -194,6 +209,7 @@ trait GroundStation extends Service {
     params: ListConfigsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigsResponse, Unit]
   ): Request[ListConfigsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of contacts. If statusList contains AVAILABLE, the request must include groundStation, missionprofileArn, and satelliteArn. 
     */
@@ -207,6 +223,7 @@ trait GroundStation extends Service {
     params: ListContactsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListContactsResponse, Unit]
   ): Request[ListContactsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of DataflowEndpoint groups.
     */
@@ -220,6 +237,7 @@ trait GroundStation extends Service {
     params: ListDataflowEndpointGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataflowEndpointGroupsResponse, Unit]
   ): Request[ListDataflowEndpointGroupsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of ground stations. 
     */
@@ -233,6 +251,7 @@ trait GroundStation extends Service {
     params: ListGroundStationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGroundStationsResponse, Unit]
   ): Request[ListGroundStationsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of mission profiles.
     */
@@ -246,6 +265,7 @@ trait GroundStation extends Service {
     params: ListMissionProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMissionProfilesResponse, Unit]
   ): Request[ListMissionProfilesResponse, AWSError] = js.native
+  
   /**
     * Returns a list of satellites.
     */
@@ -259,6 +279,7 @@ trait GroundStation extends Service {
     params: ListSatellitesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSatellitesResponse, Unit]
   ): Request[ListSatellitesResponse, AWSError] = js.native
+  
   /**
     * Returns a list of tags for a specified resource.
     */
@@ -272,6 +293,7 @@ trait GroundStation extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Reserves a contact using specified parameters.
     */
@@ -285,6 +307,7 @@ trait GroundStation extends Service {
     params: ReserveContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ContactIdResponse, Unit]
   ): Request[ContactIdResponse, AWSError] = js.native
+  
   /**
     * Assigns a tag to a resource.
     */
@@ -298,6 +321,7 @@ trait GroundStation extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Deassigns a resource tag.
     */
@@ -311,6 +335,7 @@ trait GroundStation extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the Config used when scheduling contacts. Updating a Config will not update the execution parameters for existing future contacts scheduled with this Config.
     */
@@ -324,6 +349,7 @@ trait GroundStation extends Service {
     params: UpdateConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]
   ): Request[ConfigIdResponse, AWSError] = js.native
+  
   /**
     * Updates a mission profile. Updating a mission profile will not update the execution parameters for existing future contacts.
     */
@@ -338,4 +364,3 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ MissionProfileIdResponse, Unit]
   ): Request[MissionProfileIdResponse, AWSError] = js.native
 }
-

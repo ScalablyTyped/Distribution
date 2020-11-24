@@ -2,11 +2,12 @@ package typings.node.osMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("os", "getPriority")
 @js.native
 object getPriority extends js.Object {
+  
   /**
     * Gets the priority of a process.
     * Defaults to current process.
@@ -14,4 +15,3 @@ object getPriority extends js.Object {
   def apply(): Double = js.native
   def apply(pid: Double): Double = js.native
 }
-

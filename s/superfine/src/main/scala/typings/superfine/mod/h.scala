@@ -174,11 +174,12 @@ import typings.superfine.superfineStrings.view
 import typings.superfine.superfineStrings.wbr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superfine", "h")
 @js.native
 object h extends js.Object {
+  
   def apply(
     tagName: `object`,
     props: Props[`object`],
@@ -1384,4 +1385,3 @@ object h extends js.Object {
     ]
   ): VNode[wbr] = js.native
 }
-

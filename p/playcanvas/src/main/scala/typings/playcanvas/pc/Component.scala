@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base constructor for a Component.
@@ -14,17 +14,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Component extends EventHandler {
+  
   /**
     * Enables or disables the component.
     */
   var enabled: Boolean = js.native
+  
   /**
     * The Entity that this Component is attached to.
     */
   var entity: Entity = js.native
+  
   /**
     * The ComponentSystem used to create this Component.
     */
   var system: ComponentSystem = js.native
 }
-

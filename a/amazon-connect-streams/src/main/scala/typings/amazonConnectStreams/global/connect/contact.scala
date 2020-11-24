@@ -3,11 +3,12 @@ package typings.amazonConnectStreams.global.connect
 import typings.amazonConnectStreams.connect.ContactCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("connect.contact")
 @js.native
 object contact extends js.Object {
+  
   /**
     * Subscribe a method to be called for each newly detected agent contact.
     * Note that this function is not only for incoming contacts, but for contacts which already existed when Streams was initialized, such as from a previous agent session.
@@ -17,4 +18,3 @@ object contact extends js.Object {
     */
   def apply(callback: ContactCallback): Unit = js.native
 }
-

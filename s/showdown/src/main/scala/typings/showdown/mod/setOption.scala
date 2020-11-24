@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "setOption")
 @js.native
 object setOption extends js.Object {
+  
   /**
     * Setting a "global" option affects all instances of showdown.
     * 
@@ -15,4 +16,3 @@ object setOption extends js.Object {
     */
   def apply(key: String, value: js.Any): js.Any = js.native
 }
-

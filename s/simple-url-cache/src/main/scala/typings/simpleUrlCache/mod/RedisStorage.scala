@@ -4,7 +4,7 @@ import typings.simpleUrlCache.mod.privateN.CacheCategory
 import typings.simpleUrlCache.mod.privateN.CacheStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("simple-url-cache", "RedisStorage")
 @js.native
@@ -13,4 +13,3 @@ class RedisStorage protected ()
      with CacheStorage {
   def this(_url: String, _storageConfig: RedisStorageConfig, _regexRules: CacheRules) = this()
 }
-

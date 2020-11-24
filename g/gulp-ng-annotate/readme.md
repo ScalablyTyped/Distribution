@@ -9,9 +9,9 @@ Add angularjs dependency injection annotations with ng-annotate
 | ------------------ | :-------------: |
 | Full name          | gulp-ng-annotate |
 | Keywords           | gulpplugin, angular, angularjs, annotate, ng-annotate |
-| # releases         | 2 |
-| # dependents       | 145 |
-| # downloads        | 2759575 |
+| # releases         | 0 |
+| # dependents       | 139 |
+| # downloads        | 2646303 |
 | # stars            | 60 |
 
 ## Links

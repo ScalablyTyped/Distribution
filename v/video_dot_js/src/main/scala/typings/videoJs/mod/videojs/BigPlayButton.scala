@@ -3,7 +3,7 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The initial play button that shows before the video has played. The hiding of the
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BigPlayButton extends Button {
+  
   /**
     * Called when this BigPlayButton gets mouse pressed down
     *
@@ -21,4 +22,3 @@ trait BigPlayButton extends Button {
     */
   def handleMouseDown(event: Event): Unit = js.native
 }
-

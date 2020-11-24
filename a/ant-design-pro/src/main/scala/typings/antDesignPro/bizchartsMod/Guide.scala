@@ -11,16 +11,16 @@ import typings.bizcharts.mod.Guide.RegionProps
 import typings.bizcharts.mod.Guide.TextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ant-design-pro/lib/Charts/bizcharts", "Guide")
 @js.native
 class Guide ()
   extends typings.bizcharts.mod.Guide
-
 @JSImport("ant-design-pro/lib/Charts/bizcharts", "Guide")
 @js.native
 object Guide extends js.Object {
+  
   @js.native
   class Arc ()
     extends typings.bizcharts.mod.Base[ArcProps]
@@ -56,6 +56,4 @@ object Guide extends js.Object {
   @js.native
   class Text ()
     extends typings.bizcharts.mod.Base[TextProps]
-  
 }
-

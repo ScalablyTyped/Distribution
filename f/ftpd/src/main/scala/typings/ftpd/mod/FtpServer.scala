@@ -3,7 +3,7 @@ package typings.ftpd.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ftpd", "FtpServer")
 @js.native
@@ -16,15 +16,18 @@ class FtpServer protected () extends EventEmitter {
     * @param options See test.js for a simple example.
     */
   def this(host: String, options: FtpServerOptions) = this()
-  /**
-    * Change/Retrieve logLevel at runtime.
-    */
-  var debugging: LogLevel = js.native
+  
   /**
     * Stop listening
     */
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * Change/Retrieve logLevel at runtime.
+    */
+  var debugging: LogLevel = js.native
+  
   /**
     * Start listening, see net.Server.listen()
     */
@@ -52,4 +55,3 @@ class FtpServer protected () extends EventEmitter {
   def listen(port: Double, host: String, backlog: Double): Unit = js.native
   def listen(port: Double, host: String, backlog: Double, listeningListener: js.Function0[Unit]): Unit = js.native
 }
-

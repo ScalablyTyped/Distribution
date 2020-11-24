@@ -2,15 +2,18 @@ package typings.cesium.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GeometryAttribute")
 @js.native
 class GeometryAttribute () extends js.Object {
   def this(options: typings.cesium.anon.ComponentDatatype) = this()
+  
   var componentDatatype: ComponentDatatype = js.native
+  
   var componentsPerAttribute: Double = js.native
+  
   var normalize: Boolean = js.native
+  
   var values: js.Array[_] = js.native
 }
-

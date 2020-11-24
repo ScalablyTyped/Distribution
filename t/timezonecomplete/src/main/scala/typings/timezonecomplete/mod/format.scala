@@ -3,11 +3,12 @@ package typings.timezonecomplete.mod
 import typings.timezonecomplete.localeMod.PartialLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "format")
 @js.native
 object format extends js.Object {
+  
   def apply(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
@@ -48,4 +49,3 @@ object format extends js.Object {
     locale: PartialLocale
   ): String = js.native
 }
-

@@ -14,6 +14,7 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.GetUsageAndQuotaRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetUsageAndQuotaResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.IndexedDBContentUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.IndexedDBListUpdatedEvent
+import typings.devtoolsProtocol.mod.Protocol.Storage.OverrideQuotaForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackCacheStorageForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackIndexedDBForOriginRequest
@@ -21,26 +22,31 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackCacheStorageForOrigi
 import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackIndexedDBForOriginRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StorageApi extends js.Object {
+  
   /**
     * Clears cookies.
     */
   def clearCookies(params: ClearCookiesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Clears storage for origin.
     */
   def clearDataForOrigin(params: ClearDataForOriginRequest): js.Promise[Unit] = js.native
+  
   /**
     * Returns all browser cookies.
     */
   def getCookies(params: GetCookiesRequest): js.Promise[GetCookiesResponse] = js.native
+  
   /**
     * Returns usage and quota in bytes.
     */
   def getUsageAndQuota(params: GetUsageAndQuotaRequest): js.Promise[GetUsageAndQuotaResponse] = js.native
+  
   /**
     * A cache's contents have been modified.
     */
@@ -70,25 +76,34 @@ trait StorageApi extends js.Object {
     */
   @JSName("on")
   def on_indexedDBListUpdated(event: indexedDBListUpdated, listener: js.Function1[/* params */ IndexedDBListUpdatedEvent, Unit]): Unit = js.native
+  
+  /**
+    * Override quota for the specified origin
+    */
+  def overrideQuotaForOrigin(params: OverrideQuotaForOriginRequest): js.Promise[Unit] = js.native
+  
   /**
     * Sets given cookies.
     */
   def setCookies(params: SetCookiesRequest): js.Promise[Unit] = js.native
+  
   /**
     * Registers origin to be notified when an update occurs to its cache storage list.
     */
   def trackCacheStorageForOrigin(params: TrackCacheStorageForOriginRequest): js.Promise[Unit] = js.native
+  
   /**
     * Registers origin to be notified when an update occurs to its IndexedDB.
     */
   def trackIndexedDBForOrigin(params: TrackIndexedDBForOriginRequest): js.Promise[Unit] = js.native
+  
   /**
     * Unregisters origin from receiving notifications for cache storage.
     */
   def untrackCacheStorageForOrigin(params: UntrackCacheStorageForOriginRequest): js.Promise[Unit] = js.native
+  
   /**
     * Unregisters origin from receiving notifications for IndexedDB.
     */
   def untrackIndexedDBForOrigin(params: UntrackIndexedDBForOriginRequest): js.Promise[Unit] = js.native
 }
-

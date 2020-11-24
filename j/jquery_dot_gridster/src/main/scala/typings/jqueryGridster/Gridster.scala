@@ -3,15 +3,11 @@ package typings.jqueryGridster
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Gridster extends js.Object {
-  /**
-    * Returns the options used to initialize the grid
-    * @return Returns the options used to initialize the grid
-    **/
-  var options: GridsterOptions = js.native
+  
   /**
     * Create a new widget with the given html and add it to the grid.
     * @param html The string representing the HTML of the widget or the HTMLElement.
@@ -152,21 +148,31 @@ trait Gridster extends js.Object {
   def add_widget(html: HTMLElement, size_x: Double, size_y: Double, col: js.UndefOr[scala.Nothing], row: Double): JQuery = js.native
   def add_widget(html: HTMLElement, size_x: Double, size_y: Double, col: Double): JQuery = js.native
   def add_widget(html: HTMLElement, size_x: Double, size_y: Double, col: Double, row: Double): JQuery = js.native
+  
   /**
     * Disables dragging.
     * @return Returns the instance of the Gridster class.
     **/
   def disable(): Gridster = js.native
+  
   /**
     * Enables dragging.
     * @return Returns the instance of the Gridster class.
     **/
   def enable(): Gridster = js.native
+  
   /**
     * Get the highest occupied cell.
     * @return Returns the farthest position {row: number, col: number} occupied in the grid.
     **/
   def get_highest_occupied_cell(): GridsterCoords = js.native
+  
+  /**
+    * Returns the options used to initialize the grid
+    * @return Returns the options used to initialize the grid
+    **/
+  var options: GridsterOptions = js.native
+  
   /**
     * @see remove_widget
     **/
@@ -197,6 +203,7 @@ trait Gridster extends js.Object {
   ): Gridster = js.native
   def remove_widget(el: HTMLElement, silent: Boolean): Gridster = js.native
   def remove_widget(el: HTMLElement, silent: Boolean, callback: js.Function1[/* el */ HTMLElement, Unit]): Gridster = js.native
+  
   /**
     * Change the size of a widget.
     * @param $widget The jQuery wrapped HTMLElement that represents the widget is going to be resized.
@@ -233,12 +240,14 @@ trait Gridster extends js.Object {
     size_y: Double,
     callback: js.Function2[/* size_x */ Double, /* size_y */ Double, Unit]
   ): JQuery = js.native
+  
   /**
     * Resize all the widgets in the grid.
     * @param options The options to use to resize the widgets.
     * @return Returns the instance of the Gridster class.
     **/
   def resize_widget_dimensions(options: GridsterOptions): Gridster = js.native
+  
   /**
     * Returns a serialized array of the widgets in the grid.
     * @param $widgets The collection of jQuery wrap ed HTMLElements you want to serialize.  If no argument is passed a l widgets will be serialized.
@@ -246,11 +255,13 @@ trait Gridster extends js.Object {
     **/
   def serialize[T](): js.Array[T] = js.native
   def serialize[T]($widgets: js.Array[HTMLElement]): js.Array[T] = js.native
+  
   /**
     * Returns a serialized array of the widgets that have changed their position.
     * @return Returns an array of objects with the data specified in the serialized_params option.
     **/
   def serialize_changed[T](): js.Array[T] = js.native
+  
   /**
     * Resize a widget in the grid.
     * @param widget The index of the widget to be resized.
@@ -259,4 +270,3 @@ trait Gridster extends js.Object {
     **/
   def set_widget_min_size(widget: Double, size: js.Array[Double]): Gridster = js.native
 }
-

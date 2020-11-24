@@ -3,7 +3,7 @@ package typings.babylonjs.renderingIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Rendering/index", "OutlineRenderer")
 @js.native
@@ -15,14 +15,13 @@ class OutlineRenderer protected ()
     */
   def this(scene: Scene) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Rendering/index", "OutlineRenderer")
 @js.native
 object OutlineRenderer extends js.Object {
+  
   /**
     * Stencil value used to avoid outline being seen within the mesh when the mesh is transparent
     */
   var _StencilReference: js.Any = js.native
 }
-

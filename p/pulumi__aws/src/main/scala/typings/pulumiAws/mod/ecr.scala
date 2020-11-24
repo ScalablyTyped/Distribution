@@ -1,13 +1,13 @@
 package typings.pulumiAws.mod
 
+import typings.pulumiAws.ecrGetAuthorizationTokenMod.GetAuthorizationTokenArgs
+import typings.pulumiAws.ecrGetAuthorizationTokenMod.GetAuthorizationTokenResult
 import typings.pulumiAws.ecrGetRepositoryMod.GetRepositoryArgs
 import typings.pulumiAws.ecrGetRepositoryMod.GetRepositoryResult
 import typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicyArgs
 import typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicyState
 import typings.pulumiAws.ecrRepositoryMod.RepositoryArgs
 import typings.pulumiAws.ecrRepositoryMod.RepositoryState
-import typings.pulumiAws.getAuthorizationTokenMod.GetAuthorizationTokenArgs
-import typings.pulumiAws.getAuthorizationTokenMod.GetAuthorizationTokenResult
 import typings.pulumiAws.getCredentialsMod.GetCredentialsArgs
 import typings.pulumiAws.getCredentialsMod.GetCredentialsResult
 import typings.pulumiAws.getImageMod.GetImageArgs
@@ -20,11 +20,26 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "ecr")
 @js.native
 object ecr extends js.Object {
+  
+  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getAuthorizationToken(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  
+  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = js.native
+  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = js.native
+  
+  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
+  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
+  
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
+  
   @js.native
   class LifecyclePolicy protected ()
     extends typings.pulumiAws.ecrMod.LifecyclePolicy {
@@ -37,6 +52,30 @@ object ecr extends js.Object {
       */
     def this(name: String, args: LifecyclePolicyArgs) = this()
     def this(name: String, args: LifecyclePolicyArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object LifecyclePolicy extends js.Object {
+    
+    /**
+      * Get an existing LifecyclePolicy resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
+    
+    /**
+      * Returns true if the given object is an instance of LifecyclePolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean = js.native
   }
   
   @js.native
@@ -54,6 +93,30 @@ object ecr extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: RepositoryArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object Repository extends js.Object {
+    
+    /**
+      * Get an existing Repository resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
+    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Repository.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = js.native
+  }
   
   @js.native
   class RepositoryPolicy protected ()
@@ -68,66 +131,10 @@ object ecr extends js.Object {
     def this(name: String, args: RepositoryPolicyArgs) = this()
     def this(name: String, args: RepositoryPolicyArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = js.native
-  def getAuthorizationToken(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
-  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = js.native
-  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = js.native
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
-  /* static members */
-  @js.native
-  object LifecyclePolicy extends js.Object {
-    /**
-      * Get an existing LifecyclePolicy resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    /**
-      * Returns true if the given object is an instance of LifecyclePolicy.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Repository extends js.Object {
-    /**
-      * Get an existing Repository resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    /**
-      * Returns true if the given object is an instance of Repository.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object RepositoryPolicy extends js.Object {
+    
     /**
       * Get an existing RepositoryPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -141,12 +148,11 @@ object ecr extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
     def get(name: String, id: Input[ID], state: RepositoryPolicyState): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
     def get(name: String, id: Input[ID], state: RepositoryPolicyState, opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
+    
     /**
       * Returns true if the given object is an instance of RepositoryPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repositoryPolicy.RepositoryPolicy */ Boolean = js.native
   }
-  
 }
-

@@ -10,11 +10,12 @@ import typings.stripe.mod.issuing.disputes.IIssuingDisputeListOptions
 import typings.stripe.mod.issuing.disputes.IIssuingDisputeUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.IssuingDisputes")
 @js.native
 class IssuingDisputes () extends StripeResource {
+  
   def create(data: IIssuingDisputeCreateOptions): js.Promise[IIssuingDispute] = js.native
   /**
     * Creates an Issuing Dispute object.
@@ -22,6 +23,7 @@ class IssuingDisputes () extends StripeResource {
   def create(data: IIssuingDisputeCreateOptions, options: HeaderOptions): js.Promise[IIssuingDispute] = js.native
   def create(data: IIssuingDisputeCreateOptions, options: HeaderOptions, response: IResponseFn[IIssuingDispute]): js.Promise[IIssuingDispute] = js.native
   def create(data: IIssuingDisputeCreateOptions, response: IResponseFn[IIssuingDispute]): js.Promise[IIssuingDispute] = js.native
+  
   def list(): js.Promise[IList[IIssuingDispute]] = js.native
   def list(data: IIssuingDisputeListOptions): js.Promise[IList[IIssuingDispute]] = js.native
   /**
@@ -37,6 +39,7 @@ class IssuingDisputes () extends StripeResource {
   def list(options: HeaderOptions): js.Promise[IList[IIssuingDispute]] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IIssuingDispute]]): js.Promise[IList[IIssuingDispute]] = js.native
   def list(response: IResponseFn[IList[IIssuingDispute]]): js.Promise[IList[IIssuingDispute]] = js.native
+  
   def retrieve(id: String): js.Promise[IIssuingDispute] = js.native
   /**
     * Retrieves an Issuing Dispute object.
@@ -44,6 +47,7 @@ class IssuingDisputes () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IIssuingDispute] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IIssuingDispute]): js.Promise[IIssuingDispute] = js.native
   def retrieve(id: String, response: IResponseFn[IIssuingDispute]): js.Promise[IIssuingDispute] = js.native
+  
   def update(id: String, data: IIssuingDisputeUpdateOptions): js.Promise[IIssuingDispute] = js.native
   /**
     * Updates the specified Issuing Dispute object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -57,4 +61,3 @@ class IssuingDisputes () extends StripeResource {
   ): js.Promise[IIssuingDispute] = js.native
   def update(id: String, data: IIssuingDisputeUpdateOptions, response: IResponseFn[IIssuingDispute]): js.Promise[IIssuingDispute] = js.native
 }
-

@@ -8,11 +8,33 @@ import typings.floraColossus.depTypesMod.DepType.PROD
 import typings.galactus.anon.RootDirectory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("galactus/lib", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def childDepType(parentType: DepType, childType: DepType): PROD | DEV | OPTIONAL | DEV_OPTIONAL = js.native
+  
+  def depTypeGreater(newType: DepType, existing: DepType): Boolean = js.native
+  
+  @js.native
+  object DepType extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.floraColossus.depTypesMod.DepType with Double] = js.native
+    
+    /* 1 */ val DEV: typings.floraColossus.depTypesMod.DepType.DEV with Double = js.native
+    
+    /* 3 */ val DEV_OPTIONAL: typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL with Double = js.native
+    
+    /* 2 */ val OPTIONAL: typings.floraColossus.depTypesMod.DepType.OPTIONAL with Double = js.native
+    
+    /* 0 */ val PROD: typings.floraColossus.depTypesMod.DepType.PROD with Double = js.native
+    
+    /* 4 */ val ROOT: typings.floraColossus.depTypesMod.DepType.ROOT with Double = js.native
+  }
+  
   @js.native
   class DestroyerOfModules protected ()
     extends typings.galactus.destroyerOfModulesMod.DestroyerOfModules {
@@ -24,19 +46,4 @@ object mod extends js.Object {
     extends typings.floraColossus.mod.Walker {
     def this(modulePath: String) = this()
   }
-  
-  def childDepType(parentType: DepType, childType: DepType): PROD | DEV | OPTIONAL | DEV_OPTIONAL = js.native
-  def depTypeGreater(newType: DepType, existing: DepType): Boolean = js.native
-  @js.native
-  object DepType extends js.Object {
-    /* 1 */ val DEV: typings.floraColossus.depTypesMod.DepType.DEV with Double = js.native
-    /* 3 */ val DEV_OPTIONAL: typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL with Double = js.native
-    /* 2 */ val OPTIONAL: typings.floraColossus.depTypesMod.DepType.OPTIONAL with Double = js.native
-    /* 0 */ val PROD: typings.floraColossus.depTypesMod.DepType.PROD with Double = js.native
-    /* 4 */ val ROOT: typings.floraColossus.depTypesMod.DepType.ROOT with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.floraColossus.depTypesMod.DepType with Double] = js.native
-  }
-  
 }
-

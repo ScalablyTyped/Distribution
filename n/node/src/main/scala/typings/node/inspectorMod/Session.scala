@@ -205,7 +205,7 @@ import typings.node.nodeStrings.inspectorNotification
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The inspector.Session is used for dispatching messages to the V8 inspector back-end and receiving message responses and notifications.
@@ -217,6 +217,7 @@ import scala.scalajs.js.annotation._
   * The inspector session needs to be connected through session.connect() before the messages can be dispatched to the inspector backend.
   */
 class Session () extends EventEmitter {
+  
   /**
     * Issued when new console message is added.
     */
@@ -411,18 +412,21 @@ class Session () extends EventEmitter {
     event: inspectorNotification,
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
+  
   /**
     * Connects a session to the inspector back-end.
     * An exception will be thrown if there is already a connected session established either
     * through the API or by a front-end connected to the Inspector WebSocket port.
     */
   def connect(): Unit = js.native
+  
   /**
     * Immediately close the session. All pending message callbacks will be called with an error.
     * session.connect() will need to be called to be able to send messages again.
     * Reconnected session will lose all inspector state, such as enabled agents or configured breakpoints.
     */
   def disconnect(): Unit = js.native
+  
   @JSName("emit")
   def emit_ConsolemessageAdded(event: ConsoleDotmessageAdded, message: InspectorNotification[MessageAddedEventDataType]): Boolean = js.native
   @JSName("emit")
@@ -516,6 +520,7 @@ class Session () extends EventEmitter {
   def emit_RuntimeinspectRequested(event: RuntimeDotinspectRequested, message: InspectorNotification[InspectRequestedEventDataType]): Boolean = js.native
   @JSName("emit")
   def emit_inspectorNotification(event: inspectorNotification, message: InspectorNotification[js.Object]): Boolean = js.native
+  
   /**
     * Issued when new console message is added.
     */
@@ -710,6 +715,7 @@ class Session () extends EventEmitter {
     event: inspectorNotification,
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
+  
   /**
     * Issued when new console message is added.
     */
@@ -904,6 +910,7 @@ class Session () extends EventEmitter {
     event: inspectorNotification,
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
+  
   /**
     * Posts a message to the inspector back-end. callback will be notified when a response is received.
     * callback is a function that accepts two optional arguments - error and message-specific result.
@@ -2188,6 +2195,7 @@ class Session () extends EventEmitter {
     method: SchemaDotgetDomains,
     callback: js.Function2[/* err */ Error | Null, /* params */ GetDomainsReturnType, Unit]
   ): Unit = js.native
+  
   /**
     * Issued when new console message is added.
     */
@@ -2382,6 +2390,7 @@ class Session () extends EventEmitter {
     event: inspectorNotification,
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
+  
   /**
     * Issued when new console message is added.
     */
@@ -2577,4 +2586,3 @@ class Session () extends EventEmitter {
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
 }
-

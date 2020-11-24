@@ -10,9 +10,9 @@ Node client for ALKS
 | ------------------ | :-------------: |
 | Full name          | alks-node |
 | Keywords           | alks |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 63409 |
+| # downloads        | 91744 |
 | # stars            | 0 |
 
 ## Links

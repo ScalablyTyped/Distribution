@@ -10,26 +10,24 @@ import typings.browserfs.browserfsStrings.process
 import typings.browserfs.fileSystemMod.FileSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/typedoc", JSImport.Namespace)
 @js.native
 object typedocMod extends js.Object {
+  
   @js.native
   trait BrowserFS extends js.Object {
+    
+    /**
+      * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
+      */
+    def BFSRequire(module: String): js.Any = js.native
     /**
       * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
       */
     @JSName("BFSRequire")
     var BFSRequire_Original: FnCall = js.native
-    /**
-      * Exposes all of the file system backends available in BrowserFS.
-      */
-    var FileSystem: AsyncMirror = js.native
-    /**
-      * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
-      */
-    def BFSRequire(module: String): js.Any = js.native
     /**
       * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
       */
@@ -55,6 +53,12 @@ object typedocMod extends js.Object {
       */
     @JSName("BFSRequire")
     def BFSRequire_process(module: process): /* import warning: importer.ImportType#apply Failed type conversion: typeof process */ js.Any = js.native
+    
+    /**
+      * Exposes all of the file system backends available in BrowserFS.
+      */
+    var FileSystem: AsyncMirror = js.native
+    
     /**
       * You must call this function with a properly-instantiated root file system
       * before using any file system API method.
@@ -62,6 +66,7 @@ object typedocMod extends js.Object {
       *   entire BrowserFS file system.
       */
     def initialize(rootFS: FileSystem): Unit = js.native
+    
     /**
       * Installs BrowserFS onto the given object.
       * We recommend that you run install with the 'window' object to make things
@@ -78,6 +83,4 @@ object typedocMod extends js.Object {
       */
     def install(obj: js.Any): Unit = js.native
   }
-  
 }
-

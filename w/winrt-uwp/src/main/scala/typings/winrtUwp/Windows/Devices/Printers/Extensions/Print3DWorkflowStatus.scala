@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Printers.Extensions
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Print3DWorkflowStatus extends js.Object
-
 /** Specifies the status of the Print3DWorkflow class. */
 @JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflowStatus")
 @js.native
 object Print3DWorkflowStatus extends js.Object {
+  
   /** The printing experience has been abandoned. */
   @js.native
   sealed trait abandoned extends Print3DWorkflowStatus
@@ -30,6 +30,4 @@ object Print3DWorkflowStatus extends js.Object {
   /** The print request has been submitted. */
   @js.native
   sealed trait submitted extends Print3DWorkflowStatus
-  
 }
-

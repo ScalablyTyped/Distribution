@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.form.XReset
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the model of a scroll bar control. */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -22,14 +22,17 @@ import scala.scalajs.js.annotation._
 trait SpinButton
   extends FormControlModel
      with XReset {
+  
   /** specifies the RGB color to be used for the control */
   var BackgroundColor: Color = js.native
+  
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
   var Border: Double = js.native
+  
   /**
     * specifies the color of the border, if present
     *
@@ -37,6 +40,7 @@ trait SpinButton
     * @since OOo 2.0
     */
   var BorderColor: Double = js.native
+  
   /**
     * contains a default value for the control.
     *
@@ -45,12 +49,16 @@ trait SpinButton
     * @see com.sun.star.form.XReset
     */
   var DefaultSpinValue: Double = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /**
     * defines how the mouse wheel can be used to scroll through the control's content.
     *
@@ -58,12 +66,16 @@ trait SpinButton
     * you can control under which circumstances this is possible.
     */
   var MouseWheelBehavior: Double = js.native
+  
   /** specifies the {@link ScrollBarOrientation} of the control. */
   var Orientation: Double = js.native
+  
   /** specifies whether the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed. */
   var Repeat: Boolean = js.native
+  
   /**
     * specifies the mouse repeat delay, in milliseconds.
     *
@@ -72,16 +84,22 @@ trait SpinButton
     * specified with this property.
     */
   var RepeatDelay: Double = js.native
+  
   /** specifies the increment by which the value is changed when using operating the spin button. */
   var SpinIncrement: Double = js.native
+  
   /** specifies the current value of the control. */
   var SpinValue: Double = js.native
+  
   /** specifies the maximum value of the control. */
   var SpinValueMax: Double = js.native
+  
   /** specifies the minimum value of the control. */
   var SpinValueMin: Double = js.native
+  
   /** specifies the RGB color to be used when painting symbols which are part of the control's appearance, such as the arrow buttons. */
   var SymbolColor: Color = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -89,4 +107,3 @@ trait SpinButton
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

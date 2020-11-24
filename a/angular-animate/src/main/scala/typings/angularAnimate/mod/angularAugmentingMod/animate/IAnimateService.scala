@@ -3,7 +3,7 @@ package typings.angularAnimate.mod.angularAugmentingMod.animate
 import typings.angular.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AnimateService
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IAnimateService extends js.Object {
+  
   /**
     * Triggers a custom animation event based off the className variable and then attaches the className
     * value to the element as a CSS class.
@@ -22,6 +23,7 @@ trait IAnimateService extends js.Object {
     */
   def addClass(element: JQuery, className: String): IAnimationPromise = js.native
   def addClass(element: JQuery, className: String, options: IAnimationOptions): IAnimationPromise = js.native
+  
   /**
     * Performs an inline animation on the element.
     *
@@ -42,10 +44,12 @@ trait IAnimateService extends js.Object {
   ): IAnimationPromise = js.native
   def animate(element: JQuery, from: js.Any, to: js.Any, className: String): IAnimationPromise = js.native
   def animate(element: JQuery, from: js.Any, to: js.Any, className: String, options: IAnimationOptions): IAnimationPromise = js.native
+  
   /**
     * Cancels the provided animation.
     */
   def cancel(animationPromise: IAnimationPromise): Unit = js.native
+  
   def enabled(): Boolean = js.native
   /**
     * Globally enables / disables animations.
@@ -57,6 +61,7 @@ trait IAnimateService extends js.Object {
   def enabled(element: JQuery): Boolean = js.native
   def enabled(element: JQuery, value: Boolean): Boolean = js.native
   def enabled(value: Boolean): Boolean = js.native
+  
   /**
     * Appends the element to the parentElement element that resides in the document and then runs the enter animation.
     *
@@ -75,6 +80,7 @@ trait IAnimateService extends js.Object {
   ): IAnimationPromise = js.native
   def enter(element: JQuery, parentElement: JQuery, afterElement: JQuery): IAnimationPromise = js.native
   def enter(element: JQuery, parentElement: JQuery, afterElement: JQuery, options: IAnimationOptions): IAnimationPromise = js.native
+  
   /**
     * Runs the leave animation operation and, upon completion, removes the element from the DOM.
     *
@@ -84,6 +90,7 @@ trait IAnimateService extends js.Object {
     */
   def leave(element: JQuery): IAnimationPromise = js.native
   def leave(element: JQuery, options: IAnimationOptions): IAnimationPromise = js.native
+  
   /**
     * Fires the move DOM operation. Just before the animation starts, the animate service will either append
     * it into the parentElement container or add the element directly after the afterElement element if present.
@@ -96,6 +103,7 @@ trait IAnimateService extends js.Object {
     */
   def move(element: JQuery, parentElement: JQuery): IAnimationPromise = js.native
   def move(element: JQuery, parentElement: JQuery, afterElement: JQuery): IAnimationPromise = js.native
+  
   /**
     * Deregisters an event listener based on the event which has been associated with the provided element.
     *
@@ -115,6 +123,7 @@ trait IAnimateService extends js.Object {
     container: JQuery,
     callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], _]
   ): Unit = js.native
+  
   /**
     * Sets up an event listener to fire whenever the animation event has fired on the given element or among any of its children.
     *
@@ -127,6 +136,7 @@ trait IAnimateService extends js.Object {
     container: JQuery,
     callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], _]
   ): Unit = js.native
+  
   /**
     * Associates the provided element with a host parent element to allow the element to be animated even if it exists outside of the DOM structure of the Angular application.
     *
@@ -134,6 +144,7 @@ trait IAnimateService extends js.Object {
     * @param parentElement the host parent element that will be associated with the external element
     */
   def pin(element: JQuery, parentElement: JQuery): Unit = js.native
+  
   /**
     * Triggers a custom animation event based off the className variable and then removes the CSS class
     * provided by the className value from the element.
@@ -145,6 +156,7 @@ trait IAnimateService extends js.Object {
     */
   def removeClass(element: JQuery, className: String): IAnimationPromise = js.native
   def removeClass(element: JQuery, className: String, options: IAnimationOptions): IAnimationPromise = js.native
+  
   /**
     * Adds and/or removes the given CSS classes to and from the element. Once complete, the done() callback
     * will be fired (if provided).
@@ -158,4 +170,3 @@ trait IAnimateService extends js.Object {
   def setClass(element: JQuery, add: String, remove: String): IAnimationPromise = js.native
   def setClass(element: JQuery, add: String, remove: String, options: IAnimationOptions): IAnimationPromise = js.native
 }
-

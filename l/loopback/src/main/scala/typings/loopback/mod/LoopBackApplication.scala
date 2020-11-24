@@ -7,7 +7,7 @@ import typings.loopback.anon.TypeofModel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `App` object represents a Loopback application
@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LoopBackApplication
   extends typings.expressServeStaticCore.mod.Application {
+  
   /**
     * Register a connector
     * When a new data-source is being added via `app.dataSource`, the connector
@@ -41,12 +42,14 @@ trait LoopBackApplication
     *    by `require('loopback-connector-{name}')`
     */
   def connector(name: String, connector: js.Any): Unit = js.native
+  
   /**
     * Define a DataSource
     * @param {string} name The data source name
     * @param {any} config The data source confi
     */
   def dataSource(name: String, config: js.Any): Unit = js.native
+  
   /**
     * Register (new) middleware phases.
     *
@@ -76,10 +79,12 @@ trait LoopBackApplication
     */
   def defineMiddlewarePhases(nameOrArray: String): js.Any = js.native
   def defineMiddlewarePhases(nameOrArray: js.Array[String]): js.Any = js.native
+  
   /**
     *  Enable app wide authentication
     */
   def enableAuth(): Unit = js.native
+  
   /**
     * Register a middleware handler to be executed in a given phase.
     * @param {string} name The phase name, e.g. "init" or "routes".
@@ -101,6 +106,7 @@ trait LoopBackApplication
   def middleware(name: String, paths: js.Array[_], handler: Handler): js.Any = js.native
   def middleware(name: String, paths: RegExp): js.Any = js.native
   def middleware(name: String, paths: RegExp, handler: Handler): js.Any = js.native
+  
   /**
     * Register a middleware using a factory function and a JSON config
     * **Example*
@@ -129,6 +135,7 @@ trait LoopBackApplication
     * @header app.middlewareFromConfig(factory, config
     */
   def middlewareFromConfig(factory: js.Function0[Unit], config: Enabled): js.Any = js.native
+  
   def model(Model: String, config: DataSource): js.Any = js.native
   /**
     * Listen for connections and update the configured port
@@ -177,6 +184,7 @@ trait LoopBackApplication
     * @returns {any} the model clas
     */
   def model(Model: js.Any, config: DataSource): js.Any = js.native
+  
   /**
     * Get the models exported by the app. Returns only models defined using `app.model()
     * There are two ways to access models
@@ -213,11 +221,13 @@ trait LoopBackApplication
     *  @returns {Array} Array of model classes
     */
   def models(): js.Array[TypeofModel] = js.native
+  
   /**
     * Get all remote objects.
     * @returns {any} [Remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).
     */
   def remoteObjects(): js.Any = js.native
+  
   /**
     * Lazily load a set of [remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).
     *
@@ -225,6 +235,6 @@ trait LoopBackApplication
     * @returns {any} remoteObjects
     */
   def remotes(): js.Any = js.native
+  
   def start(): Unit = js.native
 }
-

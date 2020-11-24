@@ -2,9 +2,28 @@ package typings.reduxFirstRouting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxFirstRoutingStrings {
+  
+  @scala.inline
+  def ROUTERSlashGO: ROUTERSlashGO = "ROUTER/GO".asInstanceOf[ROUTERSlashGO]
+  
+  @scala.inline
+  def ROUTERSlashGO_BACK: ROUTERSlashGO_BACK = "ROUTER/GO_BACK".asInstanceOf[ROUTERSlashGO_BACK]
+  
+  @scala.inline
+  def ROUTERSlashGO_FORWARD: ROUTERSlashGO_FORWARD = "ROUTER/GO_FORWARD".asInstanceOf[ROUTERSlashGO_FORWARD]
+  
+  @scala.inline
+  def ROUTERSlashLOCATION_CHANGE: ROUTERSlashLOCATION_CHANGE = "ROUTER/LOCATION_CHANGE".asInstanceOf[ROUTERSlashLOCATION_CHANGE]
+  
+  @scala.inline
+  def ROUTERSlashPUSH: ROUTERSlashPUSH = "ROUTER/PUSH".asInstanceOf[ROUTERSlashPUSH]
+  
+  @scala.inline
+  def ROUTERSlashREPLACE: ROUTERSlashREPLACE = "ROUTER/REPLACE".asInstanceOf[ROUTERSlashREPLACE]
+  
   @js.native
   sealed trait ROUTERSlashGO extends js.Object
   
@@ -22,18 +41,4 @@ object reduxFirstRoutingStrings {
   
   @js.native
   sealed trait ROUTERSlashREPLACE extends js.Object
-  
-  @scala.inline
-  def ROUTERSlashGO: ROUTERSlashGO = "ROUTER/GO".asInstanceOf[ROUTERSlashGO]
-  @scala.inline
-  def ROUTERSlashGO_BACK: ROUTERSlashGO_BACK = "ROUTER/GO_BACK".asInstanceOf[ROUTERSlashGO_BACK]
-  @scala.inline
-  def ROUTERSlashGO_FORWARD: ROUTERSlashGO_FORWARD = "ROUTER/GO_FORWARD".asInstanceOf[ROUTERSlashGO_FORWARD]
-  @scala.inline
-  def ROUTERSlashLOCATION_CHANGE: ROUTERSlashLOCATION_CHANGE = "ROUTER/LOCATION_CHANGE".asInstanceOf[ROUTERSlashLOCATION_CHANGE]
-  @scala.inline
-  def ROUTERSlashPUSH: ROUTERSlashPUSH = "ROUTER/PUSH".asInstanceOf[ROUTERSlashPUSH]
-  @scala.inline
-  def ROUTERSlashREPLACE: ROUTERSlashREPLACE = "ROUTER/REPLACE".asInstanceOf[ROUTERSlashREPLACE]
 }
-

@@ -10,9 +10,9 @@ minimalistic-assert ===
 | ------------------ | :-------------: |
 | Full name          | minimalistic-assert |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 301058402 |
+| # releases         | 0 |
+| # dependents       | 89 |
+| # downloads        | 401859943 |
 | # stars            | 0 |
 
 ## Links

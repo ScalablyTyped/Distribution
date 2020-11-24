@@ -1,16 +1,16 @@
 package typings.reactIntl.createFormattedComponentMod
 
+import typings.formatjsIntl.srcTypesMod.FormatDateOptions
 import typings.react.mod.FC
-import typings.reactIntl.anon.ChildrenValue
+import typings.reactIntl.anon.`0`
 import typings.reactIntl.reactIntlStrings.formatTime
-import typings.reactIntl.typesMod.FormatDateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-intl/lib/components/createFormattedComponent", "createFormattedComponent")
+@JSImport("react-intl/lib/src/components/createFormattedComponent", "createFormattedComponent")
 @js.native
 object createFormattedComponent_formatTime extends js.Object {
-  def apply(name: formatTime): FC[FormatDateOptions with ChildrenValue] = js.native
+  
+  def apply(name: formatTime): FC[FormatDateOptions with `0`] = js.native
 }
-

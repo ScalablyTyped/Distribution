@@ -9,18 +9,19 @@ import typings.react.mod.RefAttributes
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OptionList[OptionsType /* <: js.Array[js.Object] */] extends js.Object {
+  
   var optionList: ForwardRefExoticComponent[
     (PropsWithoutRef[(Omit[OptionListProps[OptionsType], options]) with Options[OptionsType]]) with RefAttributes[RefOptionListProps]
   ] = js.native
 }
-
 object OptionList {
+  
   @scala.inline
-  def apply[/* <: js.Array[js.Object] */ OptionsType](
+  def apply[OptionsType /* <: js.Array[js.Object] */](
     optionList: ForwardRefExoticComponent[
       (PropsWithoutRef[(Omit[OptionListProps[OptionsType], options]) with Options[OptionsType]]) with RefAttributes[RefOptionListProps]
     ]
@@ -28,17 +29,22 @@ object OptionList {
     val __obj = js.Dynamic.literal(optionList = optionList.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionList[OptionsType]]
   }
+  
   @scala.inline
-  implicit class OptionListOps[Self <: OptionList[_], /* <: js.Array[js.Object] */ OptionsType] (val x: Self with OptionList[OptionsType]) extends AnyVal {
+  implicit class OptionListOps[Self <: OptionList[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with OptionList[OptionsType]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOptionList(
       value: ForwardRefExoticComponent[
@@ -46,6 +52,4 @@ object OptionList {
         ]
     ): Self = this.set("optionList", value.asInstanceOf[js.Any])
   }
-  
 }
-

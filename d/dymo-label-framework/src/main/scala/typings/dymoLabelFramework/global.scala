@@ -11,29 +11,24 @@ import typings.dymoLabelFramework.dymo.label.framework.PrintJobStatusInfo
 import typings.dymoLabelFramework.dymo.label.framework.PrinterInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object dymo extends js.Object {
+    
     @js.native
     object label extends js.Object {
+      
       @js.native
       object framework extends js.Object {
-        /**
-          * LabelSetBuilder is used to create a LabelSet to print multiple labels in one print job.
-          * LabelSet is a collection of records. Each record contains multiple pairs; each pair consists
-          * of the object name and the object text data/content. The data of each record are applied to all
-          * corresponend objects and for each record one label is printed.
-          */
-        @js.native
-        class LabelSetBuilder ()
-          extends typings.dymoLabelFramework.dymo.label.framework.LabelSetBuilder
         
         /** Returns the library version number, e.g. "1.2.6" */
         var VERSION: String = js.native
+        
         /**
           * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
           */
@@ -65,8 +60,10 @@ object global extends js.Object {
           successCallback: AddPrinterUriCallback,
           errorCallback: AddPrinterUriCallback
         ): Unit = js.native
+        
         /** Checks that the browser enviroment is suitable for the Framework. */
         def checkEnvironment(): ErrorDetails = js.native
+        
         /**
           * Creates an XML string suitable to pass to the dymo.label.framework.renderLabel function
           * as renderParamsXml parameter. Returns an XML string.
@@ -75,6 +72,7 @@ object global extends js.Object {
           *   (not all properties must be defined; if a property is not defined, a default value is used)
           */
         def createLabelRenderParamsXml(params: CreateLabelRenderParamsXmlParams): String = js.native
+        
         /**
           * Creates an XML string suitable to to pass to the dymo.label.framework.printLabel function
           * as printParamsXml parameter. Created print parameters are for printing to LabelWriter printers.
@@ -84,6 +82,7 @@ object global extends js.Object {
           *   (not all properties must be defined; if a property is not defined, a default value is used)
           */
         def createLabelWriterPrintParamsXml(params: CreateLabelWriterPrintParamsXmlParams): String = js.native
+        
         /**
           * Creates an XML string suitable to pass to the dymo.label.framework.printLabel function as printParamsXml parameter. Created print parameters are for printing to Tape printers.
           * Returns an XML string.
@@ -92,10 +91,12 @@ object global extends js.Object {
           *   (not all properties must be defined; if a property is not defined, a default value is used)
           */
         def createTapePrintParamsXml(params: CreateTapePrintParamsXmlParams): String = js.native
+        
         /**
           * Convenience method (overload of getPrinters) to get a list of all printers of type "LabelWriterPrinter".
           */
         def getLabelWriterPrinters(): js.Array[PrinterInfo] = js.native
+        
         /**
           * Gets a list of all printers supported by the DYMO Label Framework.
           * Results are returned in an array-like object.
@@ -103,10 +104,12 @@ object global extends js.Object {
           * In addition, items can be accessed by printer name.
           */
         def getPrinters(): js.Array[PrinterInfo] = js.native
+        
         /**
           * Convenience method (overload of getPrinters) to get a list of all printers of type "TapePrinter".
           */
         def getTapePrinters(): js.Array[PrinterInfo] = js.native
+        
         /**
           * Loads an image from a URL or file and returns it as a base64-encoded PNG stream.
           * The loaded image is not necessarily in PNG format.
@@ -119,6 +122,7 @@ object global extends js.Object {
           * @returns A base64-encoded PNG stream.
           */
         def loadImageAsPngBase64(imageUri: String): String = js.native
+        
         /**
           * Loads label content from a file or URL.
           * The following considerations should be taken before using this function:
@@ -137,6 +141,7 @@ object global extends js.Object {
           * @returns Returns Label object; provides label manipulation methods.
           */
         def openLabelFile(fileName: String): ILabel = js.native
+        
         /**
           * Loads label content from an XML stream/string.
           * Note: This is the preferred way to load/open label files.
@@ -146,6 +151,7 @@ object global extends js.Object {
           * @returns Label object.
           */
         def openLabelXml(labelXml: String): ILabel = js.native
+        
         /**
           * Prints one or more labels.
           *
@@ -160,6 +166,7 @@ object global extends js.Object {
           *   [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
           */
         def printLabel(printerName: String, printParamsXml: String, labelXml: String, labelSetXml: String): Unit = js.native
+        
         /**
           * Prints a label and returns a print job object
           *
@@ -171,6 +178,7 @@ object global extends js.Object {
           *   Use LabelSetBuilder to create a LabelSet or construct xml manualy according to [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
           */
         def printLabel2(printerName: String, printParamsXml: String, labelXml: String, labelSetXml: String): PrintJob = js.native
+        
         /**
           * Prints a label and runs status checking in a loop
           *
@@ -195,14 +203,17 @@ object global extends js.Object {
           statusCallback: js.Function2[/* printJob */ PrintJob, /* printJobStatusInfo */ PrintJobStatusInfo, Boolean],
           pollInterval: Double
         ): PrintJob = js.native
+        
         /**
           * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
           */
         def removeAllPrinterUri(): Unit = js.native
+        
         /**
           * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
           */
         def removePrinterUri(printerUri: String): Unit = js.native
+        
         /**
           * Creates a label raster image that can be used for label previewing.
           * Returns a string that is a base64-encoded PNG stream of the label image.
@@ -220,16 +231,21 @@ object global extends js.Object {
           * @returns A base64-encoded PNG stream of the label image.
           */
         def renderLabel(labelXml: String, renderParamsXml: String, printerName: String): String = js.native
+        
         /** Enumeration that specifies where to draw the Intellegent Mail barcode for an Address object. */
         @js.native
         object AddressBarcodePosition extends js.Object {
-          /* 0 */ val AboveAddress: typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition.AboveAddress with Double = js.native
-          /* 1 */ val BelowAddress: typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition.BelowAddress with Double = js.native
-          /* 2 */ val Suppress: typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition.Suppress with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[
                     typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition with Double
                   ] = js.native
+          
+          /* 0 */ val AboveAddress: typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition.AboveAddress with Double = js.native
+          
+          /* 1 */ val BelowAddress: typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition.BelowAddress with Double = js.native
+          
+          /* 2 */ val Suppress: typings.dymoLabelFramework.dymo.label.framework.AddressBarcodePosition.Suppress with Double = js.native
         }
         
         /**
@@ -238,15 +254,28 @@ object global extends js.Object {
           */
         @js.native
         object FlowDirection extends js.Object {
-          /* 0 */ val LeftToRight: typings.dymoLabelFramework.dymo.label.framework.FlowDirection.LeftToRight with Double = js.native
-          /* 1 */ val RightToLeft: typings.dymoLabelFramework.dymo.label.framework.FlowDirection.RightToLeft with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.dymoLabelFramework.dymo.label.framework.FlowDirection with Double] = js.native
+          
+          /* 0 */ val LeftToRight: typings.dymoLabelFramework.dymo.label.framework.FlowDirection.LeftToRight with Double = js.native
+          
+          /* 1 */ val RightToLeft: typings.dymoLabelFramework.dymo.label.framework.FlowDirection.RightToLeft with Double = js.native
         }
         
+        /**
+          * LabelSetBuilder is used to create a LabelSet to print multiple labels in one print job.
+          * LabelSet is a collection of records. Each record contains multiple pairs; each pair consists
+          * of the object name and the object text data/content. The data of each record are applied to all
+          * corresponend objects and for each record one label is printed.
+          */
+        @js.native
+        class LabelSetBuilder ()
+          extends typings.dymoLabelFramework.dymo.label.framework.LabelSetBuilder
         /* static members */
         @js.native
         object LabelSetBuilder extends js.Object {
+          
           /**
             * Converts record objects to XML format. The XML format schema is defined in [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
             * Returned XML can be passed to dymo.label.framefork.printLabel as labelSetXml parameter. This function can be used independent of other LabelSetBuilder methods, if records data is generated by other functions.
@@ -263,66 +292,87 @@ object global extends js.Object {
           */
         @js.native
         object LabelWriterPrintQuality extends js.Object {
-          /* 2 */ val Auto: typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality.Auto with Double = js.native
-          /* 1 */ val BarcodeAndGraphics: typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality.BarcodeAndGraphics with Double = js.native
-          /* 0 */ val Text: typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality.Text with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[
                     typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality with Double
                   ] = js.native
+          
+          /* 2 */ val Auto: typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality.Auto with Double = js.native
+          
+          /* 1 */ val BarcodeAndGraphics: typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality.BarcodeAndGraphics with Double = js.native
+          
+          /* 0 */ val Text: typings.dymoLabelFramework.dymo.label.framework.LabelWriterPrintQuality.Text with Double = js.native
         }
         
         /** Print Job Status */
         @js.native
         object PrintJobStatus extends js.Object {
-          /* 0 */ val Error: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Error with Double = js.native
-          /* 1 */ val Finished: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Finished with Double = js.native
-          /* 2 */ val InQueue: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.InQueue with Double = js.native
-          /* 3 */ val InvalidJobId: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.InvalidJobId with Double = js.native
-          /* 4 */ val NotSpooled: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.NotSpooled with Double = js.native
-          /* 5 */ val PaperOut: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.PaperOut with Double = js.native
-          /* 6 */ val PrinterBusy: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.PrinterBusy with Double = js.native
-          /* 7 */ val Printing: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Printing with Double = js.native
-          /* 8 */ val ProcessingError: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.ProcessingError with Double = js.native
-          /* 9 */ val Unknown: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Unknown with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus with Double] = js.native
+          
+          /* 0 */ val Error: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Error with Double = js.native
+          
+          /* 1 */ val Finished: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Finished with Double = js.native
+          
+          /* 2 */ val InQueue: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.InQueue with Double = js.native
+          
+          /* 3 */ val InvalidJobId: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.InvalidJobId with Double = js.native
+          
+          /* 4 */ val NotSpooled: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.NotSpooled with Double = js.native
+          
+          /* 5 */ val PaperOut: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.PaperOut with Double = js.native
+          
+          /* 6 */ val PrinterBusy: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.PrinterBusy with Double = js.native
+          
+          /* 7 */ val Printing: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Printing with Double = js.native
+          
+          /* 8 */ val ProcessingError: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.ProcessingError with Double = js.native
+          
+          /* 9 */ val Unknown: typings.dymoLabelFramework.dymo.label.framework.PrintJobStatus.Unknown with Double = js.native
         }
         
         /** Enumeration that specifies the leader and trailer for a tape label when printing to a Tape printer. */
         @js.native
         object TapeAlignment extends js.Object {
-          /* 0 */ val Center: typings.dymoLabelFramework.dymo.label.framework.TapeAlignment.Center with Double = js.native
-          /* 1 */ val Left: typings.dymoLabelFramework.dymo.label.framework.TapeAlignment.Left with Double = js.native
-          /* 2 */ val Right: typings.dymoLabelFramework.dymo.label.framework.TapeAlignment.Right with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.dymoLabelFramework.dymo.label.framework.TapeAlignment with Double] = js.native
+          
+          /* 0 */ val Center: typings.dymoLabelFramework.dymo.label.framework.TapeAlignment.Center with Double = js.native
+          
+          /* 1 */ val Left: typings.dymoLabelFramework.dymo.label.framework.TapeAlignment.Left with Double = js.native
+          
+          /* 2 */ val Right: typings.dymoLabelFramework.dymo.label.framework.TapeAlignment.Right with Double = js.native
         }
         
         /** Enumeration that specifies the tape cut mode when printing multiple labels to a Tape printer. Note: This enumeration affects multiple page print jobs only. If a one page job is printed, the tape is always cut. */
         @js.native
         object TapeCutMode extends js.Object {
-          /* 0 */ val AutoCut: typings.dymoLabelFramework.dymo.label.framework.TapeCutMode.AutoCut with Double = js.native
-          /* 1 */ val ChainMarks: typings.dymoLabelFramework.dymo.label.framework.TapeCutMode.ChainMarks with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.dymoLabelFramework.dymo.label.framework.TapeCutMode with Double] = js.native
+          
+          /* 0 */ val AutoCut: typings.dymoLabelFramework.dymo.label.framework.TapeCutMode.AutoCut with Double = js.native
+          
+          /* 1 */ val ChainMarks: typings.dymoLabelFramework.dymo.label.framework.TapeCutMode.ChainMarks with Double = js.native
         }
         
         /** Enumeration that specifies which roll to print to when printing to a Twin Turbo printer. */
         @js.native
         object TwinTurboRoll extends js.Object {
-          /* 2 */ val Auto: typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll.Auto with Double = js.native
-          /* 0 */ val Left: typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll.Left with Double = js.native
-          /* 1 */ val Right: typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll.Right with Double = js.native
+          
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll with Double] = js.native
+          
+          /* 2 */ val Auto: typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll.Auto with Double = js.native
+          
+          /* 0 */ val Left: typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll.Left with Double = js.native
+          
+          /* 1 */ val Right: typings.dymoLabelFramework.dymo.label.framework.TwinTurboRoll.Right with Double = js.native
         }
-        
       }
-      
     }
-    
   }
-  
 }
-

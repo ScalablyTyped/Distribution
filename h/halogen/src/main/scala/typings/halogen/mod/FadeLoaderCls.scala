@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("halogen", "FadeLoader")
 @js.native
@@ -13,4 +13,3 @@ class FadeLoaderCls protected ()
   def this(props: RadiusLoaderProps) = this()
   def this(props: RadiusLoaderProps, context: js.Any) = this()
 }
-

@@ -2,13 +2,14 @@ package typings.phaser.Phaser.Physics.Arcade.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for setting the drag properties of an Arcade Physics Body.
   */
 @js.native
 trait Drag extends js.Object {
+  
   /**
     * If this Body is using `drag` for deceleration this function controls how the drag is applied.
     * If set to `true` drag will use a damping effect rather than a linear approach. If you are
@@ -22,6 +23,7 @@ trait Drag extends js.Object {
     * @param value `true` to use damping for deceleration, or `false` to use linear deceleration.
     */
   def setDamping(value: Boolean): this.type = js.native
+  
   /**
     * Sets the body's horizontal and vertical drag. If the vertical drag value is not provided, the vertical drag is set to the same value as the horizontal drag.
     * 
@@ -40,6 +42,7 @@ trait Drag extends js.Object {
     */
   def setDrag(x: Double): this.type = js.native
   def setDrag(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the body's horizontal drag.
     * 
@@ -56,6 +59,7 @@ trait Drag extends js.Object {
     * @param value The amount of horizontal drag to apply.
     */
   def setDragX(value: Double): this.type = js.native
+  
   /**
     * Sets the body's vertical drag.
     * 
@@ -73,4 +77,3 @@ trait Drag extends js.Object {
     */
   def setDragY(value: Double): this.type = js.native
 }
-

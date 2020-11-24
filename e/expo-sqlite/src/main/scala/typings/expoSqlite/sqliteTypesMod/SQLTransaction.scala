@@ -2,10 +2,11 @@ package typings.expoSqlite.sqliteTypesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SQLTransaction extends js.Object {
+  
   def executeSql(sqlStatement: String): Unit = js.native
   def executeSql(
     sqlStatement: String,
@@ -35,4 +36,3 @@ trait SQLTransaction extends js.Object {
     errorCallback: SQLStatementErrorCallback
   ): Unit = js.native
 }
-

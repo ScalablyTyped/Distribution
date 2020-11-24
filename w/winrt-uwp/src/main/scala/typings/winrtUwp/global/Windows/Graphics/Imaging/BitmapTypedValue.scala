@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Graphics.Imaging
 import typings.winrtUwp.Windows.Foundation.PropertyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A value along with an enumeration specifying its data type. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapTypedValue")
@@ -17,4 +17,3 @@ class BitmapTypedValue protected ()
     */
   def this(value: js.Any, `type`: PropertyType) = this()
 }
-

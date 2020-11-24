@@ -3,10 +3,11 @@ package typings.angularTranslate.anon
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(translationId: String): String = js.native
   def apply(
     translationId: String,
@@ -63,4 +64,3 @@ trait FnCall extends js.Object {
     forceLanguage: String
   ): StringDictionary[String] = js.native
 }
-

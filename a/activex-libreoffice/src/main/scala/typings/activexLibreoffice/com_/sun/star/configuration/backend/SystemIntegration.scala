@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a configuration data composed of one or more platform backends containing settings used by software modules. */
 @js.native
 trait SystemIntegration
   extends XBackend
      with XInitialization
-
 object SystemIntegration {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -30,4 +30,3 @@ object SystemIntegration {
     __obj.asInstanceOf[SystemIntegration]
   }
 }
-

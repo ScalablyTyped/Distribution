@@ -5,7 +5,7 @@ import typings.playcanvas.pc.callbacks.ConfigureApp
 import typings.playcanvas.pc.callbacks.PreloadApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Application.
@@ -28,174 +28,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Application extends EventHandler {
-  /**
-    * The asset registry managed by the application.
-    * @example
-    * // Search the asset registry for all assets with the tag 'vehicle'
-    * var vehicleAssets = this.app.assets.findByTag('vehicle');
-    */
-  var assets: AssetRegistry = js.native
-  /**
-    * When true, the application's render function is called every frame.
-    * Setting autoRender to false is useful to applications where the rendered image
-    * may often be unchanged over time. This can heavily reduce the application's
-    * load on the CPU and GPU. Defaults to true.
-    * @example
-    * // Disable rendering every frame and only render on a keydown event
-    * this.app.autoRender = false;
-    * this.app.keyboard.on('keydown', function (event) {
-    *     this.app.renderNextFrame = true;
-    * }, this);
-    */
-  var autoRender: Boolean = js.native
-  /**
-    * The application's batch manager. The batch manager is used to
-    * merge mesh instances in the scene, which reduces the overall number of draw
-    * calls, thereby boosting performance.
-    */
-  var batcher: BatchManager = js.native
-  /**
-    * Used to handle input for {@link pc.ElementComponent}s.
-    */
-  var elementInput: ElementInput = js.native
-  /**
-    * The current fill mode of the canvas. Can be:
-    *
-    * * {@link pc.FILLMODE_NONE}: the canvas will always match the size provided.
-    * * {@link pc.FILLMODE_FILL_WINDOW}: the canvas will simply fill the window, changing aspect ratio.
-    * * {@link pc.FILLMODE_KEEP_ASPECT}: the canvas will grow to fill the window as best it can while maintaining the aspect ratio.
-    */
-  val fillMode: String = js.native
-  /**
-    * Used to access GamePad input.
-    */
-  var gamepads: GamePads = js.native
-  /**
-    * The graphics device used by the application.
-    */
-  var graphicsDevice: GraphicsDevice = js.native
-  /**
-    * Handles localization.
-    */
-  var i18n: I18n = js.native
-  /**
-    * The keyboard device.
-    */
-  var keyboard: Keyboard = js.native
-  /**
-    * The resource loader.
-    */
-  var loader: ResourceLoader = js.native
-  /**
-    * Clamps per-frame delta time to an upper bound. Useful since returning from a tab
-    * deactivation can generate huge values for dt, which can adversely affect game state. Defaults
-    * to 0.1 (seconds).
-    * @example
-    * // Don't clamp inter-frame times of 200ms or less
-    * this.app.maxDeltaTime = 0.2;
-    */
-  var maxDeltaTime: Double = js.native
-  /**
-    * The mouse device.
-    */
-  var mouse: Mouse = js.native
-  /**
-    * Set to true to render the scene on the next iteration of the main loop.
-    * This only has an effect if {@link pc.Application#autoRender} is set to false. The
-    * value of renderNextFrame is set back to false again as soon as the scene has been
-    * rendered.
-    * @example
-    * // Render the scene only while space key is pressed
-    * if (this.app.keyboard.isPressed(pc.KEY_SPACE)) {
-    *     this.app.renderNextFrame = true;
-    * }
-    */
-  var renderNextFrame: Boolean = js.native
-  /**
-    * The current resolution mode of the canvas, Can be:
-    *
-    * * {@link pc.RESOLUTION_AUTO}: if width and height are not provided, canvas will be resized to match canvas client size.
-    * * {@link pc.RESOLUTION_FIXED}: resolution of canvas will be fixed.
-    */
-  val resolutionMode: String = js.native
-  /**
-    * The root entity of the application.
-    * @example
-    * // Return the first entity called 'Camera' in a depth-first search of the scene hierarchy
-    * var camera = this.app.root.findByName('Camera');
-    */
-  var root: Entity = js.native
-  /**
-    * The scene managed by the application.
-    * @example
-    * // Set the tone mapping property of the application's scene
-    * this.app.scene.toneMapping = pc.TONEMAP_FILMIC;
-    */
-  var scene: Scene = js.native
-  /**
-    * The scene registry managed by the application.
-    * @example
-    * // Search the scene registry for a item with the name 'racetrack1'
-    * var sceneItem = this.app.scenes.find('racetrack1');
-    *
-    * // Load the scene using the item's url
-    * this.app.scenes.loadScene(sceneItem.url);
-    */
-  var scenes: SceneRegistry = js.native
-  /**
-    * The application's script registry.
-    */
-  var scripts: ScriptRegistry = js.native
-  /**
-    * The application's component system registry. The pc.Application
-    * constructor adds the following component systems to its component system registry:
-    *
-    * * animation ({@link pc.AnimationComponentSystem})
-    * * audiolistener ({@link pc.AudioListenerComponentSystem})
-    * * button ({@link pc.ButtonComponentSystem})
-    * * camera ({@link pc.CameraComponentSystem})
-    * * collision ({@link pc.CollisionComponentSystem})
-    * * element ({@link pc.ElementComponentSystem})
-    * * layoutchild ({@link pc.LayoutChildComponentSystem})
-    * * layoutgroup ({@link pc.LayoutGroupComponentSystem})
-    * * light ({@link pc.LightComponentSystem})
-    * * model ({@link pc.ModelComponentSystem})
-    * * particlesystem ({@link pc.ParticleSystemComponentSystem})
-    * * rigidbody ({@link pc.RigidBodyComponentSystem})
-    * * screen ({@link pc.ScreenComponentSystem})
-    * * script ({@link pc.ScriptComponentSystem})
-    * * scrollbar ({@link pc.ScrollbarComponentSystem})
-    * * scrollview ({@link pc.ScrollViewComponentSystem})
-    * * sound ({@link pc.SoundComponentSystem})
-    * * sprite ({@link pc.SpriteComponentSystem})
-    * @example
-    * // Set global gravity to zero
-    * this.app.systems.rigidbody.gravity.set(0, 0, 0);
-    * @example
-    * // Set the global sound volume to 50%
-    * this.app.systems.sound.volume = 0.5;
-    */
-  var systems: ComponentSystemRegistry = js.native
-  /**
-    * Scales the global time delta. Defaults to 1.
-    * @example
-    * // Set the app to run at half speed
-    * this.app.timeScale = 0.5;
-    */
-  var timeScale: Double = js.native
-  /**
-    * Used to get touch events input.
-    */
-  var touch: TouchDevice = js.native
-  /**
-    * The XR Manager that provides ability to start VR/AR sessions.
-    * @example
-    * // check if VR is available
-    * if (app.xr.isAvailable(pc.XRTYPE_VR)) {
-    *     // VR is available
-    * }
-    */
-  var xr: XrManager = js.native
+  
   /**
     * Apply scene settings to the current scene. Useful when your scene settings are parsed or generated from a non-URL source.
     * @example
@@ -213,6 +46,7 @@ trait Application extends EventHandler {
     *         fog_start: 1,
     *         global_ambient: [0, 0, 0],
     *         skyboxIntensity: 1,
+    *         skyboxRotation: [0, 0, 0, 1],
     *         fog_color: [0, 0, 0],
     *         lightmapMode: 1,
     *         fog: 'none',
@@ -252,6 +86,7 @@ trait Application extends EventHandler {
     * @param [settings.render.skybox] - The asset ID of the cube map texture to be used as the scene's skybox. Defaults to null.
     * @param settings.render.skyboxIntensity - Multiplier for skybox intensity.
     * @param settings.render.skyboxMip - The mip level of the skybox to be displayed. Only valid for prefiltered cubemap skyboxes.
+    * @param settings.render.skyboxRotation - Rotation of skybox.
     * @param settings.render.lightmapSizeMultiplier - The lightmap resolution multiplier.
     * @param settings.render.lightmapMaxResolution - The maximum lightmap resolution.
     * @param settings.render.lightmapMode - The lightmap baking mode. Can be:
@@ -262,28 +97,121 @@ trait Application extends EventHandler {
     * Only lights with bakeDir=true will be used for generating the dominant light direction. Defaults to.
     */
   def applySceneSettings(settings: Physics): Unit = js.native
+  
+  /**
+    * The asset registry managed by the application.
+    * @example
+    * // Search the asset registry for all assets with the tag 'vehicle'
+    * var vehicleAssets = this.app.assets.findByTag('vehicle');
+    */
+  var assets: AssetRegistry = js.native
+  
+  /**
+    * When true, the application's render function is called every frame.
+    * Setting autoRender to false is useful to applications where the rendered image
+    * may often be unchanged over time. This can heavily reduce the application's
+    * load on the CPU and GPU. Defaults to true.
+    * @example
+    * // Disable rendering every frame and only render on a keydown event
+    * this.app.autoRender = false;
+    * this.app.keyboard.on('keydown', function (event) {
+    *     this.app.renderNextFrame = true;
+    * }, this);
+    */
+  var autoRender: Boolean = js.native
+  
+  /**
+    * The application's batch manager. The batch manager is used to
+    * merge mesh instances in the scene, which reduces the overall number of draw
+    * calls, thereby boosting performance.
+    */
+  var batcher: BatchManager = js.native
+  
   /**
     * Load the application configuration file and apply application properties and fill the asset registry.
     * @param url - The URL of the configuration file to load.
     * @param callback - The Function called when the configuration file is loaded and parsed (or an error occurs).
     */
   def configure(url: String, callback: ConfigureApp): Unit = js.native
+  
   /**
     * Destroys application and removes all event listeners.
     * @example
     * this.app.destroy();
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * Used to handle input for {@link pc.ElementComponent}s.
+    */
+  var elementInput: ElementInput = js.native
+  
+  /**
+    * The current fill mode of the canvas. Can be:
+    *
+    * * {@link pc.FILLMODE_NONE}: the canvas will always match the size provided.
+    * * {@link pc.FILLMODE_FILL_WINDOW}: the canvas will simply fill the window, changing aspect ratio.
+    * * {@link pc.FILLMODE_KEEP_ASPECT}: the canvas will grow to fill the window as best it can while maintaining the aspect ratio.
+    */
+  val fillMode: String = js.native
+  
+  /**
+    * Used to access GamePad input.
+    */
+  var gamepads: GamePads = js.native
+  
+  /**
+    * The graphics device used by the application.
+    */
+  var graphicsDevice: GraphicsDevice = js.native
+  
+  /**
+    * Handles localization.
+    */
+  var i18n: I18n = js.native
+  
   /**
     * Queries the visibility of the window or tab in which the application is running.
     * @returns True if the application is not visible and false otherwise.
     */
   def isHidden(): Boolean = js.native
+  
+  /**
+    * The keyboard device.
+    */
+  var keyboard: Keyboard = js.native
+  
+  /**
+    * The run-time lightmapper.
+    */
+  var lightmapper: Lightmapper = js.native
+  
+  /**
+    * The resource loader.
+    */
+  var loader: ResourceLoader = js.native
+  
+  /**
+    * Clamps per-frame delta time to an upper bound. Useful since returning from a tab
+    * deactivation can generate huge values for dt, which can adversely affect game state. Defaults
+    * to 0.1 (seconds).
+    * @example
+    * // Don't clamp inter-frame times of 200ms or less
+    * this.app.maxDeltaTime = 0.2;
+    */
+  var maxDeltaTime: Double = js.native
+  
+  /**
+    * The mouse device.
+    */
+  var mouse: Mouse = js.native
+  
   /**
     * Load all assets in the asset registry that are marked as 'preload'.
     * @param callback - Function called when all assets are loaded.
     */
   def preload(callback: PreloadApp): Unit = js.native
+  
   /**
     * Render the application's scene. More specifically, the scene's
     * {@link pc.LayerComposition} is rendered by the application's {@link pc.ForwardRenderer}.
@@ -291,6 +219,7 @@ trait Application extends EventHandler {
     * does not need to be called explicitly.
     */
   def render(): Unit = js.native
+  
   /**
     * Renders a line. Line start and end coordinates are specified in
     * world-space. If a single color is supplied, the line will be flat-shaded with
@@ -348,6 +277,7 @@ trait Application extends EventHandler {
   ): Unit = js.native
   def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color): Unit = js.native
   def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color, options: typings.playcanvas.anon.Layer): Unit = js.native
+  
   /**
     * Renders an arbitrary number of discrete line segments. The lines
     * are not connected by each subsequent point in the array. Instead, they are
@@ -384,6 +314,20 @@ trait Application extends EventHandler {
     */
   def renderLines(position: js.Array[Vec3], color: js.Array[Color]): Unit = js.native
   def renderLines(position: js.Array[Vec3], color: js.Array[Color], options: typings.playcanvas.anon.Layer): Unit = js.native
+  
+  /**
+    * Set to true to render the scene on the next iteration of the main loop.
+    * This only has an effect if {@link pc.Application#autoRender} is set to false. The
+    * value of renderNextFrame is set back to false again as soon as the scene has been
+    * rendered.
+    * @example
+    * // Render the scene only while space key is pressed
+    * if (this.app.keyboard.isPressed(pc.KEY_SPACE)) {
+    *     this.app.renderNextFrame = true;
+    * }
+    */
+  var renderNextFrame: Boolean = js.native
+  
   /**
     * Resize the application's canvas element in line with the current fill mode.
     * In {@link pc.FILLMODE_KEEP_ASPECT} mode, the canvas will grow to fill the window as best it can while maintaining the aspect ratio.
@@ -397,6 +341,47 @@ trait Application extends EventHandler {
   def resizeCanvas(width: js.UndefOr[scala.Nothing], height: Double): js.Any = js.native
   def resizeCanvas(width: Double): js.Any = js.native
   def resizeCanvas(width: Double, height: Double): js.Any = js.native
+  
+  /**
+    * The current resolution mode of the canvas, Can be:
+    *
+    * * {@link pc.RESOLUTION_AUTO}: if width and height are not provided, canvas will be resized to match canvas client size.
+    * * {@link pc.RESOLUTION_FIXED}: resolution of canvas will be fixed.
+    */
+  val resolutionMode: String = js.native
+  
+  /**
+    * The root entity of the application.
+    * @example
+    * // Return the first entity called 'Camera' in a depth-first search of the scene hierarchy
+    * var camera = this.app.root.findByName('Camera');
+    */
+  var root: Entity = js.native
+  
+  /**
+    * The scene managed by the application.
+    * @example
+    * // Set the tone mapping property of the application's scene
+    * this.app.scene.toneMapping = pc.TONEMAP_FILMIC;
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * The scene registry managed by the application.
+    * @example
+    * // Search the scene registry for a item with the name 'racetrack1'
+    * var sceneItem = this.app.scenes.find('racetrack1');
+    *
+    * // Load the scene using the item's url
+    * this.app.scenes.loadScene(sceneItem.url);
+    */
+  var scenes: SceneRegistry = js.native
+  
+  /**
+    * The application's script registry.
+    */
+  var scripts: ScriptRegistry = js.native
+  
   /**
     * Controls how the canvas fills the window and resizes when the window changes.
     * @param mode - The mode to use when setting the size of the canvas. Can be:
@@ -411,6 +396,7 @@ trait Application extends EventHandler {
   def setCanvasFillMode(mode: String, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setCanvasFillMode(mode: String, width: Double): Unit = js.native
   def setCanvasFillMode(mode: String, width: Double, height: Double): Unit = js.native
+  
   /**
     * Change the resolution of the canvas, and set the way it behaves when the window is resized.
     * @param mode - The mode to use when setting the resolution. Can be:
@@ -424,17 +410,19 @@ trait Application extends EventHandler {
   def setCanvasResolution(mode: String, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setCanvasResolution(mode: String, width: Double): Unit = js.native
   def setCanvasResolution(mode: String, width: Double, height: Double): Unit = js.native
+  
   /**
     * Sets the skybox asset to current scene, and subscribes to asset load/change events.
     * @param asset - Asset of type `skybox` to be set to, or null to remove skybox.
     */
   def setSkybox(asset: Asset): Unit = js.native
+  
   /**
     * Start the application. This function does the following:
     * 1. Fires an event on the application named 'start'
-    * 2. Calls initialize for all components on entities in the hierachy
+    * 2. Calls initialize for all components on entities in the hierarchy
     * 3. Fires an event on the application named 'initialize'
-    * 4. Calls postInitialize for all components on entities in the hierachy
+    * 4. Calls postInitialize for all components on entities in the hierarchy
     * 5. Fires an event on the application named 'postinitialize'
     * 6. Starts executing the main loop of the application
     * This function is called internally by PlayCanvas applications made in the Editor
@@ -443,6 +431,51 @@ trait Application extends EventHandler {
     * app.start();
     */
   def start(): Unit = js.native
+  
+  /**
+    * The application's component system registry. The pc.Application
+    * constructor adds the following component systems to its component system registry:
+    *
+    * * animation ({@link pc.AnimationComponentSystem})
+    * * audiolistener ({@link pc.AudioListenerComponentSystem})
+    * * button ({@link pc.ButtonComponentSystem})
+    * * camera ({@link pc.CameraComponentSystem})
+    * * collision ({@link pc.CollisionComponentSystem})
+    * * element ({@link pc.ElementComponentSystem})
+    * * layoutchild ({@link pc.LayoutChildComponentSystem})
+    * * layoutgroup ({@link pc.LayoutGroupComponentSystem})
+    * * light ({@link pc.LightComponentSystem})
+    * * model ({@link pc.ModelComponentSystem})
+    * * particlesystem ({@link pc.ParticleSystemComponentSystem})
+    * * rigidbody ({@link pc.RigidBodyComponentSystem})
+    * * screen ({@link pc.ScreenComponentSystem})
+    * * script ({@link pc.ScriptComponentSystem})
+    * * scrollbar ({@link pc.ScrollbarComponentSystem})
+    * * scrollview ({@link pc.ScrollViewComponentSystem})
+    * * sound ({@link pc.SoundComponentSystem})
+    * * sprite ({@link pc.SpriteComponentSystem})
+    * @example
+    * // Set global gravity to zero
+    * this.app.systems.rigidbody.gravity.set(0, 0, 0);
+    * @example
+    * // Set the global sound volume to 50%
+    * this.app.systems.sound.volume = 0.5;
+    */
+  var systems: ComponentSystemRegistry = js.native
+  
+  /**
+    * Scales the global time delta. Defaults to 1.
+    * @example
+    * // Set the app to run at half speed
+    * this.app.timeScale = 0.5;
+    */
+  var timeScale: Double = js.native
+  
+  /**
+    * Used to get touch events input.
+    */
+  var touch: TouchDevice = js.native
+  
   /**
     * Update the application. This function will call the update
     * functions and then the postUpdate functions of all enabled components. It
@@ -452,5 +485,14 @@ trait Application extends EventHandler {
     * @param dt - The time delta since the last frame.
     */
   def update(dt: Double): Unit = js.native
+  
+  /**
+    * The XR Manager that provides ability to start VR/AR sessions.
+    * @example
+    * // check if VR is available
+    * if (app.xr.isAvailable(pc.XRTYPE_VR)) {
+    *     // VR is available
+    * }
+    */
+  var xr: XrManager = js.native
 }
-

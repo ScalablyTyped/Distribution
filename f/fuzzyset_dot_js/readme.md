@@ -4,15 +4,15 @@
 Typings are for version 0.0
 
 ## Library description:
-A fuzzy string set for JavaScript
+A fast fuzzy string set for JavaScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fuzzyset.js |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 24 |
-| # downloads        | 412736 |
+| # releases         | 8 |
+| # dependents       | 32 |
+| # downloads        | 487876 |
 | # stars            | 1 |
 
 ## Links

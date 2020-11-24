@@ -17,7 +17,7 @@ import typings.chromeApps.chromeAppsStrings.progress_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.networking.*
 // #region chrome.notifications
@@ -34,24 +34,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.notifications")
 @js.native
 object notifications extends js.Object {
-  /** The user pressed a button in the notification. */
-  val onButtonClicked: typings.chromeApps.chrome.events.Event[js.Function2[/* notificationId */ String, /* buttonIndex */ integer, Unit]] = js.native
-  /** The user clicked in a non-button area of the notification. */
-  val onClicked: typings.chromeApps.chrome.events.Event[js.Function1[/* notificationId */ String, Unit]] = js.native
-  /** The notification closed, either by the system or by user action. */
-  val onClosed: typings.chromeApps.chrome.events.Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]] = js.native
-  /**
-    * The user changes the permission level.
-    * @since Chrome 32.
-    */
-  val onPermissionLevelChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* level */ String, Unit]] = js.native
-  /**
-    * @deprecated Deprecated since Chrome 65. Custom notification settings button is no longer supported.
-    * @description The user clicked on a link for the app's notification settings.
-    * As of Chrome 47, only ChromeOS has UI that dispatches this event.
-    * As of Chrome 65, that UI has been removed from ChromeOS, too.
-    */
-  val onShowSettings: typings.chromeApps.chrome.events.Event[js.Function0[Unit]] = js.native
+  
   /**
     * Clears the specified notification.
     * @param notificationId The id of the notification to be cleared. This is returned by notifications.create method.
@@ -59,6 +42,7 @@ object notifications extends js.Object {
     */
   def clear(notificationId: String): Unit = js.native
   def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Creates and displays a notification.
     * @param notificationId Identifier of the notification.
@@ -83,6 +67,7 @@ object notifications extends js.Object {
     */
   def create(options: NotificationOptions): Unit = js.native
   def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = js.native
+  
   /**
     * Retrieves all the active notifications.
     * @since Chrome 29.
@@ -95,6 +80,7 @@ object notifications extends js.Object {
     */
   @JSName("getAll")
   def getAll_true(callback: js.Function1[/* notifications */ StringDictionary[`true`], Unit]): Unit = js.native
+  
   /**
     * Retrieves whether the user has enabled notifications from this app .
     * @since Chrome 32.
@@ -114,6 +100,30 @@ object notifications extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
+  /** The user pressed a button in the notification. */
+  val onButtonClicked: typings.chromeApps.chrome.events.Event[js.Function2[/* notificationId */ String, /* buttonIndex */ integer, Unit]] = js.native
+  
+  /** The user clicked in a non-button area of the notification. */
+  val onClicked: typings.chromeApps.chrome.events.Event[js.Function1[/* notificationId */ String, Unit]] = js.native
+  
+  /** The notification closed, either by the system or by user action. */
+  val onClosed: typings.chromeApps.chrome.events.Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]] = js.native
+  
+  /**
+    * The user changes the permission level.
+    * @since Chrome 32.
+    */
+  val onPermissionLevelChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* level */ String, Unit]] = js.native
+  
+  /**
+    * @deprecated Deprecated since Chrome 65. Custom notification settings button is no longer supported.
+    * @description The user clicked on a link for the app's notification settings.
+    * As of Chrome 47, only ChromeOS has UI that dispatches this event.
+    * As of Chrome 65, that UI has been removed from ChromeOS, too.
+    */
+  val onShowSettings: typings.chromeApps.chrome.events.Event[js.Function0[Unit]] = js.native
+  
   /**
     * Updates an existing notification.
     * @param notificationId The id of the notification to be updated. This is returned by notifications.create method.
@@ -126,6 +136,7 @@ object notifications extends js.Object {
     options: PartialNotificationOption,
     callback: js.Function1[/* wasUpdated */ Boolean, Unit]
   ): Unit = js.native
+  
   /**
     * @enum
     * @property GRANTED - User has elected to show notifications from the app . This is the default at install time.
@@ -133,7 +144,9 @@ object notifications extends js.Object {
     */
   @js.native
   object PermissionLevel extends js.Object {
+    
     var DENIED: denied_ = js.native
+    
     var GRANTED: granted_ = js.native
   }
   
@@ -146,11 +159,13 @@ object notifications extends js.Object {
     */
   @js.native
   object TemplateType extends js.Object {
+    
     var BASIC: basic_ = js.native
+    
     var IMAGE: image_ = js.native
+    
     var LIST: list_ = js.native
+    
     var PROGRESS: progress_ = js.native
   }
-  
 }
-

@@ -2,9 +2,10 @@ package typings.chrome.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object fileSystemProvider {
+  
   type DirectoryPathRecursiveRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.DirectoryPathRecursiveRequestedEventOptions, 
@@ -13,6 +14,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type DirectoryPathRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.DirectoryPathRequestedEventOptions, 
@@ -25,6 +27,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type EntryPathRecursiveRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.EntryPathRecursiveRequestedEventOptions, 
@@ -33,6 +36,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type FilePathLengthRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.FilePathLengthRequestedEventOptions, 
@@ -41,6 +45,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type FilePathRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.FilePathRequestedEventOptions, 
@@ -49,6 +54,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type MetadataRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.MetadataRequestedEventOptions, 
@@ -57,6 +63,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type OpenFileRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.OpenFileRequestedEventOptions, 
@@ -65,6 +72,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type OpenedFileIoRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.OpenedFileIoRequestedEventOptions, 
@@ -73,6 +81,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type OpenedFileOffsetRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.OpenedFileOffsetRequestedEventOptions, 
@@ -81,6 +90,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type OpenedFileRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.OpenedFileRequestedEventOptions, 
@@ -89,6 +99,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type OperationRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.OperationRequestedEventOptions, 
@@ -97,6 +108,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type OptionlessRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* successCallback */ js.Function, 
@@ -104,6 +116,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type RequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.RequestedEventOptions, 
@@ -112,6 +125,7 @@ package object fileSystemProvider {
       scala.Unit
     ]
   ]
+  
   type SourceTargetPathRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function3[
       /* options */ typings.chrome.chrome.fileSystemProvider.SourceTargetPathRequestedEventOptions, 

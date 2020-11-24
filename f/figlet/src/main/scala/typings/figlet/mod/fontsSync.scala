@@ -2,11 +2,12 @@ package typings.figlet.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("figlet", "fontsSync")
 @js.native
 object fontsSync extends js.Object {
+  
   /**
     * @warn
     * This method exists in node environment only.
@@ -14,4 +15,3 @@ object fontsSync extends js.Object {
     */
   def apply(): js.Array[Fonts_] = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.sharepoint.Srch
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EventType extends js.Object
-
 @JSGlobal("Srch.EventType")
 @js.native
 object EventType extends js.Object {
+  
   @js.native
   sealed trait batchQueryIssuing extends EventType
   
@@ -42,6 +42,4 @@ object EventType extends js.Object {
   
   @js.native
   sealed trait resultRendered extends EventType
-  
 }
-

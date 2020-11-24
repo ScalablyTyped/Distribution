@@ -6,13 +6,14 @@ import typings.slimerjs.slimerjsStrings.webpage
 import typings.slimerjs.slimerjsStrings.webserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   var phantom: Phantom = js.native
-  var slimer: Slimer = js.native
+  
   def require(module: js.Any): js.Any = js.native
   @JSName("require")
   def require_fs(module: fs): FsModule = js.native
@@ -22,5 +23,6 @@ object global extends js.Object {
   def require_webpage(module: webpage): WebPageModule = js.native
   @JSName("require")
   def require_webserver(module: webserver): WebServerModule = js.native
+  
+  var slimer: Slimer = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.reduxRouter
 import typings.history.mod.Pathname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-router/lib/isActive", JSImport.Namespace)
 @js.native
 object isActiveMod extends js.Object {
+  
   def default(pathname: Pathname): Boolean = js.native
   def default(pathname: Pathname, query: js.UndefOr[scala.Nothing], indexOnly: Boolean): Boolean = js.native
   def default(
@@ -20,4 +21,3 @@ object isActiveMod extends js.Object {
     indexOnly: Boolean
   ): Boolean = js.native
 }
-

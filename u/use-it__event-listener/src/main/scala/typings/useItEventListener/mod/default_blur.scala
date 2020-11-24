@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.blur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_blur extends js.Object {
+  
   def apply(eventName: blur, handler: FocusEvent): Unit = js.native
   def apply(eventName: blur, handler: FocusEvent, element: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def apply(
@@ -39,4 +40,3 @@ object default_blur extends js.Object {
   def apply(eventName: blur, handler: FocusEvent, element: Window): Unit = js.native
   def apply(eventName: blur, handler: FocusEvent, element: Window, options: Options): Unit = js.native
 }
-

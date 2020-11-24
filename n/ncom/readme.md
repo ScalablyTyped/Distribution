@@ -12,7 +12,7 @@ A TCP socket pair for easily transmitting full messages without worrying about p
 | Keywords           | ncom, tcp, simple, socket, messages |
 | # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 808018 |
+| # downloads        | 907589 |
 | # stars            | 0 |
 
 ## Links

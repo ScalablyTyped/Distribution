@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use with <Attribute.type> to specify a font.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.ATTRIBUTE_FONT")
 @js.native
 object ATTRIBUTE_FONT extends TopLevel[Double]
-

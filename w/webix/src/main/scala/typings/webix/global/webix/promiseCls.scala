@@ -3,7 +3,7 @@ package typings.webix.global.webix
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("webix.promise")
 @js.native
@@ -15,4 +15,3 @@ class promiseCls protected ()
         Unit
       ]) = this()
 }
-

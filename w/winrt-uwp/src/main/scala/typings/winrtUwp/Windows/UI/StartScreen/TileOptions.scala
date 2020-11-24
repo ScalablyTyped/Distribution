@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.StartScreen
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TileOptions extends js.Object
-
 /** Specifies options available to a secondary tile. */
 @JSGlobal("Windows.UI.StartScreen.TileOptions")
 @js.native
 object TileOptions extends js.Object {
+  
   /** CopyOnDeployment may be altered or unavailable for releases after Windows 8.1. Instead, use the RoamingEnabled property. */
   @js.native
   sealed trait copyOnDeployment extends TileOptions
@@ -26,6 +26,4 @@ object TileOptions extends js.Object {
   /** ShowNameOnWideLogo may be altered or unavailable for releases after Windows 8.1. Instead, use the SecondaryTileVisualElements.ShowNameOnWide310x150Logo property. */
   @js.native
   sealed trait showNameOnWideLogo extends TileOptions
-  
 }
-

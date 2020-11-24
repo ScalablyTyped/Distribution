@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iap/v1beta1", "iap_v1beta1.Resource$V1beta1")
 @js.native
 class ResourceV1beta1 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * iap.getIamPolicy
     * @desc Gets the access control policy for an Identity-Aware Proxy
@@ -45,6 +47,7 @@ class ResourceV1beta1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * iap.setIamPolicy
     * @desc Sets the access control policy for an Identity-Aware Proxy
@@ -77,6 +80,7 @@ class ResourceV1beta1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * iap.testIamPermissions
     * @desc Returns permissions that a caller has on the Identity-Aware Proxy
@@ -115,4 +119,3 @@ class ResourceV1beta1 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

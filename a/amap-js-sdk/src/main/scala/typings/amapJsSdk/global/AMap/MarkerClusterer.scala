@@ -3,7 +3,7 @@ package typings.amapJsSdk.global.AMap
 import typings.amapJsSdk.AMap.MarkerClustererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 用于地图上加载大量点标记，提高地图的绘制和显示性能。
@@ -19,4 +19,3 @@ class MarkerClusterer protected ()
     opt: MarkerClustererOptions
   ) = this()
 }
-

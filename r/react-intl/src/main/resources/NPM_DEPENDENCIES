@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-intl" : "3.12.1"
+      "react-intl" : "5.10.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-intl" : "3.12.1"
+      "react-intl" : "5.10.4"
     }
   ],
   "compile-devDependencies" : [

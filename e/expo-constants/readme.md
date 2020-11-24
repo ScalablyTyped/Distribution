@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-constants
 
-Typings are for version 9.1.1
+Typings are for version 9.2.0
 
 ## Library description:
 Provides system information that remains constant throughout the lifetime of your app.

@@ -10,9 +10,9 @@ Improved typeof detection for node.js and the browser.
 | ------------------ | :-------------: |
 | Full name          | type-detect |
 | Keywords           | type, typeof, types |
-| # releases         | 4 |
-| # dependents       | 126 |
-| # downloads        | 201472958 |
+| # releases         | 0 |
+| # dependents       | 144 |
+| # downloads        | 315608856 |
 | # stars            | 7 |
 
 ## Links

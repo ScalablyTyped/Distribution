@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/utilities/lib/extendComponent", JSImport.Namespace)
 @js.native
 object extendComponentMod extends js.Object {
+  
   def extendComponent[T /* <: Component[js.Object, js.Object, _] */](
     parent: T,
     methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -16,4 +17,3 @@ object extendComponentMod extends js.Object {
     */ typings.uifabricUtilities.uifabricUtilitiesStrings.extendComponent with TopLevel[T]
   ): Unit = js.native
 }
-

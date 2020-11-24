@@ -4,14 +4,210 @@ import typings.reactLazyLoadImageComponent.mod.DelayMethod
 import typings.reactLazyLoadImageComponent.mod.Effect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactLazyLoadImageComponentStrings {
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  
+  @scala.inline
+  def `additions removals`: `additions removals` = ("additions removals").asInstanceOf[`additions removals`]
+  
+  @scala.inline
+  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
+  
+  @scala.inline
+  def async: async = "async".asInstanceOf[async]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def `black-and-white`: `black-and-white` = "black-and-white".asInstanceOf[`black-and-white`]
+  
+  @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def debounce: debounce = "debounce".asInstanceOf[debounce]
+  
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  
+  @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
+  
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  
+  @scala.inline
+  def opacity: opacity = "opacity".asInstanceOf[opacity]
+  
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  
+  @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
+  
+  @scala.inline
+  def `removals additions`: `removals additions` = ("removals additions").asInstanceOf[`removals additions`]
+  
+  @scala.inline
+  def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
+  
+  @scala.inline
+  def scrollPosition: scrollPosition = "scrollPosition".asInstanceOf[scrollPosition]
+  
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  
+  @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
+  
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def `text additions`: `text additions` = ("text additions").asInstanceOf[`text additions`]
+  
+  @scala.inline
+  def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
+  
+  @scala.inline
+  def throttle: throttle = "throttle".asInstanceOf[throttle]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  
+  @scala.inline
+  def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
+  
   @js.native
   sealed trait _empty extends js.Object
   
   @js.native
   sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions removals` extends js.Object
   
   @js.native
   sealed trait `additions text` extends js.Object
@@ -113,9 +309,6 @@ object reactLazyLoadImageComponentStrings {
   sealed trait no extends js.Object
   
   @js.native
-  sealed trait `no-referrer` extends js.Object
-  
-  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -131,9 +324,6 @@ object reactLazyLoadImageComponentStrings {
   sealed trait opacity extends Effect
   
   @js.native
-  sealed trait origin extends js.Object
-  
-  @js.native
   sealed trait other extends js.Object
   
   @js.native
@@ -147,6 +337,12 @@ object reactLazyLoadImageComponentStrings {
   
   @js.native
   sealed trait removals extends js.Object
+  
+  @js.native
+  sealed trait `removals additions` extends js.Object
+  
+  @js.native
+  sealed trait `removals text` extends js.Object
   
   @js.native
   sealed trait scrollPosition extends js.Object
@@ -170,6 +366,12 @@ object reactLazyLoadImageComponentStrings {
   sealed trait text extends js.Object
   
   @js.native
+  sealed trait `text additions` extends js.Object
+  
+  @js.native
+  sealed trait `text removals` extends js.Object
+  
+  @js.native
   sealed trait throttle extends DelayMethod
   
   @js.native
@@ -177,9 +379,6 @@ object reactLazyLoadImageComponentStrings {
   
   @js.native
   sealed trait tree extends js.Object
-  
-  @js.native
-  sealed trait `unsafe-url` extends js.Object
   
   @js.native
   sealed trait url extends js.Object
@@ -192,130 +391,4 @@ object reactLazyLoadImageComponentStrings {
   
   @js.native
   sealed trait yes extends js.Object
-  
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def additions: additions = "additions".asInstanceOf[additions]
-  @scala.inline
-  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
-  @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def `black-and-white`: `black-and-white` = "black-and-white".asInstanceOf[`black-and-white`]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def debounce: debounce = "debounce".asInstanceOf[debounce]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def eager: eager = "eager".asInstanceOf[eager]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def execute: execute = "execute".asInstanceOf[execute]
-  @scala.inline
-  def grammar: grammar = "grammar".asInstanceOf[grammar]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def listbox: listbox = "listbox".asInstanceOf[listbox]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def mixed: mixed = "mixed".asInstanceOf[mixed]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def opacity: opacity = "opacity".asInstanceOf[opacity]
-  @scala.inline
-  def origin: origin = "origin".asInstanceOf[origin]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
-  @scala.inline
-  def removals: removals = "removals".asInstanceOf[removals]
-  @scala.inline
-  def scrollPosition: scrollPosition = "scrollPosition".asInstanceOf[scrollPosition]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def spelling: spelling = "spelling".asInstanceOf[spelling]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
-  @scala.inline
-  def tel: tel = "tel".asInstanceOf[tel]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def throttle: throttle = "throttle".asInstanceOf[throttle]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
 }
-

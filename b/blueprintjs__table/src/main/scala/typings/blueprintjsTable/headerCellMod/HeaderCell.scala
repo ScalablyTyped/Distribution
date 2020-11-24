@@ -7,14 +7,15 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table/lib/esm/headers/headerCell", "HeaderCell")
 @js.native
 class HeaderCell ()
   extends Component[IInternalHeaderCellProps, IHeaderCellState, js.Any] {
+  
   def renderContextMenu(_event: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
+  
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MHeaderCell(nextProps: IHeaderCellProps): Boolean = js.native
 }
-

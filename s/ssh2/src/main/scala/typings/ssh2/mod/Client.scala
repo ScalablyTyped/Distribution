@@ -19,7 +19,7 @@ import typings.ssh2Streams.mod.Prompt
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2", "Client")
 @js.native
@@ -28,18 +28,22 @@ import scala.scalajs.js.annotation._
   * Creates and returns a new Client instance.
   */
 class Client () extends EventEmitter {
+  
   /**
     * Attempts a connection to a server.
     */
   def connect(config: ConnectConfig): Unit = js.native
+  
   /**
     * Destroys the socket.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Disconnects the socket.
     */
   def end(): Unit = js.native
+  
   /**
     * Executes a command on the server.
     *
@@ -66,6 +70,7 @@ class Client () extends EventEmitter {
     options: ExecOptions,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ClientChannel, Unit]
   ): Boolean = js.native
+  
   /**
     * Bind to `remoteAddr` on `remotePort` on the server and forward incoming TCP connections.
     *
@@ -91,6 +96,7 @@ class Client () extends EventEmitter {
     remotePort: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* bindPort */ Double, Unit]
   ): Boolean = js.native
+  
   /**
     * Open a connection with `srcIP` and `srcPort` as the originating address and port and
     * `dstIP` and `dstPort` as the remote destination address and port.
@@ -110,6 +116,7 @@ class Client () extends EventEmitter {
     dstPort: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ClientChannel, Unit]
   ): Boolean = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   // Client-events
@@ -231,6 +238,7 @@ class Client () extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * OpenSSH extension that binds to a UNIX domain socket at `socketPath` on the server and
     * forwards incoming connections.
@@ -239,6 +247,7 @@ class Client () extends EventEmitter {
     */
   def openssh_forwardInStreamLocal(socketPath: String): Boolean = js.native
   def openssh_forwardInStreamLocal(socketPath: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  
   /**
     * OpenSSH extension that opens a connection to a UNIX domain socket at `socketPath` on
     * the server.
@@ -250,6 +259,7 @@ class Client () extends EventEmitter {
     socketPath: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ClientChannel, Unit]
   ): Boolean = js.native
+  
   /**
     * OpenSSH extension that sends a request to reject any new sessions (e.g. exec, shell,
     * sftp, subsys) for this connection.
@@ -258,6 +268,7 @@ class Client () extends EventEmitter {
     */
   def openssh_noMoreSessions(): Boolean = js.native
   def openssh_noMoreSessions(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  
   /**
     * OpenSSH extension that unbinds from a UNIX domain socket at `socketPath` on the server
     * and stops forwarding incoming connections.
@@ -266,6 +277,7 @@ class Client () extends EventEmitter {
     */
   def openssh_unforwardInStreamLocal(socketPath: String): Boolean = js.native
   def openssh_unforwardInStreamLocal(socketPath: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  
   /**
     * Starts an SFTP session.
     *
@@ -274,6 +286,7 @@ class Client () extends EventEmitter {
     * @param callback The callback that is invoked when the SFTP session has started.
     */
   def sftp(callback: js.Function2[/* err */ js.UndefOr[Error], /* sftp */ SFTPWrapper, Unit]): Boolean = js.native
+  
   /**
     * Starts an interactive shell session on the server.
     *
@@ -331,6 +344,7 @@ class Client () extends EventEmitter {
     options: ShellOptions,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ClientChannel, Unit]
   ): Boolean = js.native
+  
   /**
     * Invokes `subsystem` on the server.
     *
@@ -343,6 +357,7 @@ class Client () extends EventEmitter {
     subsystem: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ClientChannel, Unit]
   ): Boolean = js.native
+  
   /**
     * Unbind from `remoteAddr` on `remotePort` on the server and stop forwarding incoming TCP
     * connections. Until `callback` is called, more connections may still come in.
@@ -356,4 +371,3 @@ class Client () extends EventEmitter {
   def unforwardIn(remoteAddr: String, remotePort: Double): Boolean = js.native
   def unforwardIn(remoteAddr: String, remotePort: Double, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
 }
-

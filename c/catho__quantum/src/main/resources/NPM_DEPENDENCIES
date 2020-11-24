@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@catho/quantum" : "5.3.0"
+      "@catho/quantum" : "6.4.11"
     }
   ],
   "test-dependencies" : [
     {
-      "@catho/quantum" : "5.3.0"
+      "@catho/quantum" : "6.4.11"
     }
   ],
   "compile-devDependencies" : [

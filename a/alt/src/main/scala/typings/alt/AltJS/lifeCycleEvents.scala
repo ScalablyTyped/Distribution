@@ -2,14 +2,14 @@ package typings.alt.AltJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait lifeCycleEvents extends js.Object
-
 @JSGlobal("AltJS.lifeCycleEvents")
 @js.native
 object lifeCycleEvents extends js.Object {
+  
   @js.native
   sealed trait bootstrap extends lifeCycleEvents
   
@@ -24,6 +24,4 @@ object lifeCycleEvents extends js.Object {
   
   @js.native
   sealed trait snapshot extends lifeCycleEvents
-  
 }
-

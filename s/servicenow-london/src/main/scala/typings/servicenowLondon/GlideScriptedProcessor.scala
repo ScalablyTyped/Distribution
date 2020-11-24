@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlideScriptedProcessor extends js.Object {
+  
   /**
     * Redirects to the specified URL.
     *
@@ -16,6 +17,7 @@ trait GlideScriptedProcessor extends js.Object {
     * g_processor.redirect("/navpage.do")
     */
   def redirect(url: String): Unit = js.native
+  
   /**
     * Encodes an object as a JSON string and writes it to the current URL.
     *
@@ -26,6 +28,7 @@ trait GlideScriptedProcessor extends js.Object {
     * g_processor.writeJSON(map);
     */
   def writeJSON(o: js.Object): Unit = js.native
+  
   /**
     * Writes the specified string to the current URL in the specified character-encoding.
     *
@@ -49,4 +52,3 @@ trait GlideScriptedProcessor extends js.Object {
     */
   def writeOutput(s: String): Unit = js.native
 }
-

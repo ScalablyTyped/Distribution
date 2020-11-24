@@ -4,11 +4,12 @@ import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("$find")
 @js.native
 object find extends js.Object {
+  
   /**
   * Returns the specified Component object. This member is static and can be invoked without creating an instance of the class.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397441(v=vs.100).aspx}
@@ -20,4 +21,3 @@ object find extends js.Object {
   def apply(id: String, parent: Component): Component = js.native
   def apply(id: String, parent: HTMLElement): Component = js.native
 }
-

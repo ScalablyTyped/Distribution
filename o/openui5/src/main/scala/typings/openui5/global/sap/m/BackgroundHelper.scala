@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.RenderManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.BackgroundHelper")
 @js.native
 object BackgroundHelper extends js.Object {
+  
   /**
     * Adds CSS classes and styles to the given RenderManager, depending on the given configuration for
     * background color and background image.To be called by control renderers supporting the global
@@ -21,6 +22,7 @@ object BackgroundHelper extends js.Object {
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: js.UndefOr[scala.Nothing], sBgImgUrl: js.Any): Unit = js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: String): Unit = js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: String, sBgImgUrl: js.Any): Unit = js.native
+  
   /**
     * Renders an HTML tag into the given RenderManager which carries the background image which is either
     * configured and given or coming from the current theme.Should be called right after the opening root
@@ -119,4 +121,3 @@ object BackgroundHelper extends js.Object {
     fOpacity: Double
   ): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ seen.js is a library for drawing simple 3D scenes in SVG and HTML5 Canvas elemen
 | Keywords           | 3d, svg, canvas |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 277 |
+| # downloads        | 604 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.openlayers.mod.Object
 import typings.openlayers.mod.olx.layer.BaseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,6 +33,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def this(options: BaseOptions) = this()
+  
   /**
     * Return the {@link ol.Extent extent} of the layer or `undefined` if it
     * will be visible regardless of extent.
@@ -41,6 +42,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def getExtent(): Extent_ = js.native
+  
   /**
     * Return the maximum resolution of the layer.
     * @return The maximum resolution of the layer.
@@ -48,6 +50,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def getMaxResolution(): Double = js.native
+  
   /**
     * Return the minimum resolution of the layer.
     * @return The minimum resolution of the layer.
@@ -55,6 +58,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def getMinResolution(): Double = js.native
+  
   /**
     * Return the opacity of the layer (between 0 and 1).
     * @return The opacity of the layer.
@@ -62,6 +66,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def getOpacity(): Double = js.native
+  
   /**
     * Return the visibility of the layer (`true` or `false`).
     * @return The visibility of the layer.
@@ -69,6 +74,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def getVisible(): Boolean = js.native
+  
   /**
     * Return the Z-index of the layer, which is used to order layers before
     * rendering. The default Z-index is 0.
@@ -77,6 +83,7 @@ class Base protected () extends Object {
     * @api
     */
   def getZIndex(): Double = js.native
+  
   /**
     * Set the extent at which the layer is visible.  If `undefined`, the layer
     * will be visible at all extents.
@@ -85,6 +92,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def setExtent(extent: Extent_): Unit = js.native
+  
   /**
     * Set the maximum resolution at which the layer is visible.
     * @param maxResolution The maximum resolution of the layer.
@@ -92,6 +100,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def setMaxResolution(maxResolution: Double): Unit = js.native
+  
   /**
     * Set the minimum resolution at which the layer is visible.
     * @param minResolution The minimum resolution of the layer.
@@ -99,6 +108,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def setMinResolution(minResolution: Double): Unit = js.native
+  
   /**
     * Set the opacity of the layer, allowed values range from 0 to 1.
     * @param opacity The opacity of the layer.
@@ -106,6 +116,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def setOpacity(opacity: Double): Unit = js.native
+  
   /**
     * Set the visibility of the layer (`true` or `false`).
     * @param visible The visibility of the layer.
@@ -113,6 +124,7 @@ class Base protected () extends Object {
     * @api stable
     */
   def setVisible(visible: Boolean): Unit = js.native
+  
   /**
     * Set Z-index of the layer, which is used to order layers before rendering.
     * The default Z-index is 0.
@@ -122,4 +134,3 @@ class Base protected () extends Object {
     */
   def setZIndex(zindex: Double): Unit = js.native
 }
-

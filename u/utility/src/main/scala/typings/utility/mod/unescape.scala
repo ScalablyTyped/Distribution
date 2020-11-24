@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "unescape")
 @js.native
 object unescape extends js.Object {
+  
   /**
     * Unescape the given string from html
     * @param {String} html
@@ -17,4 +18,3 @@ object unescape extends js.Object {
   def apply(html: String): String | ObjStatic = js.native
   def apply(html: String, `type`: String): String | ObjStatic = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.effectRendererMod.IEffectRendererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "EffectRenderer")
 @js.native
@@ -17,11 +17,10 @@ class EffectRenderer protected ()
   def this(engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
   def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, options: IEffectRendererOptions) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "EffectRenderer")
 @js.native
 object EffectRenderer extends js.Object {
+  
   var _DefaultOptions: js.Any = js.native
 }
-

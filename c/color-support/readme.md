@@ -11,8 +11,8 @@ A module which will endeavor to guess your terminal's level of color support.
 | Full name          | color-support |
 | Keywords           | terminal, color, support, xterm, truecolor, 256 |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 84286455 |
+| # dependents       | 63 |
+| # downloads        | 97752648 |
 | # stars            | 0 |
 
 ## Links

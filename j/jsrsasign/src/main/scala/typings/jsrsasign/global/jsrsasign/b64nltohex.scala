@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.b64nltohex")
 @js.native
 object b64nltohex extends js.Object {
+  
   /**
     * convert a Base64 encoded string with new lines to a hexadecimal string
     * @param s Base64 encoded string with new lines
@@ -26,4 +27,3 @@ object b64nltohex extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

@@ -3,13 +3,14 @@ package typings.kiiCloudSdk.KiiCloud
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder of push message
   */
 @js.native
 trait KiiPushMessageBuilder extends js.Object {
+  
   /**
     * Set alert for APNS subscribers.
     * If this method is not called, no alert is applied.
@@ -21,6 +22,7 @@ trait KiiPushMessageBuilder extends js.Object {
     */
   def apnsAlert(alert: String): KiiPushMessageBuilder = js.native
   def apnsAlert(alert: APNSAlert): KiiPushMessageBuilder = js.native
+  
   /**
     * Set badge for APNS subscribers.
     * If this method is not called, no badge is applied.
@@ -30,6 +32,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def apnsBadge(badge: Double): KiiPushMessageBuilder = js.native
+  
   /**
     * Set category for APNS subscribers.
     * If this method is not called, no category is applied.
@@ -39,6 +42,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def apnsCategory(category: String): KiiPushMessageBuilder = js.native
+  
   /**
     * Set content-available for APNS subscribers.
     * If this method is not called, no content-available is applied.
@@ -50,6 +54,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def apnsContentAvailable(contentAvailable: Double): KiiPushMessageBuilder = js.native
+  
   /**
     * Set specific data for APNS subscribers.
     * If this method is not called, no specific data is not applied
@@ -62,6 +67,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def apnsData(data: StringDictionary[String | Double | Boolean]): KiiPushMessageBuilder = js.native
+  
   /**
     * Set sound for APNS subscribers.
     * If this method is not called, no sound is applied.
@@ -71,12 +77,14 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def apnsSound(sound: String): KiiPushMessageBuilder = js.native
+  
   /**
     * build push message.
     *
     * @return push message object. Can be used in {@link KiiTopic#sendMessage()}
     */
   def build(): js.Any = js.native
+  
   /**
     * Enable/ Disable message distribution via APNS.
     * If this method is not called, true will be applied as default.
@@ -86,6 +94,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def enableApns(enable: Boolean): KiiPushMessageBuilder = js.native
+  
   /**
     * Enable/ Disable message distribution via GCM.
     * If this method is not called, true will be applied as default.
@@ -95,6 +104,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def enableGcm(enable: Boolean): KiiPushMessageBuilder = js.native
+  
   /**
     * Enable/ Disable message distribution via JPush.
     * If this method is not called, true will be applied as default.
@@ -104,6 +114,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def enableJpush(enable: Boolean): KiiPushMessageBuilder = js.native
+  
   /**
     * Enable/ Disable message distribution via MQTT.
     * If this method is not called, true will be applied as default.
@@ -113,6 +124,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def enableMqtt(enable: Boolean): KiiPushMessageBuilder = js.native
+  
   /**
     * Set collapse_key for GCM subscribers.
     * If this method is not called, no collapse_key is applied.
@@ -122,6 +134,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def gcmCollapseKey(collapseKey: String): KiiPushMessageBuilder = js.native
+  
   /**
     * Set specific data for GCM subscribers.
     * If this method is not called, no specific data is not applied
@@ -134,6 +147,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def gcmData(data: StringDictionary[String]): KiiPushMessageBuilder = js.native
+  
   /**
     * Set delay_while_idle for GCM subscribers.
     * If this method is not called, no delay_while_idle is applied.
@@ -143,6 +157,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def gcmDelayWhileIdle(delayWhileIdle: Boolean): KiiPushMessageBuilder = js.native
+  
   /**
     * Set restricted_package_name for GCM subscribers.
     * If this method is not called, no restricted_package_name is applied.
@@ -152,6 +167,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def gcmRestrictedPackageName(restrictedPackageName: String): KiiPushMessageBuilder = js.native
+  
   /**
     * Set time_to_live for GCM subscribers.
     * If this method is not called, no time_to_live is applied.
@@ -161,6 +177,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def gcmTimeToLive(timeToLive: Double): KiiPushMessageBuilder = js.native
+  
   /**
     * Set specific data for JPush subscribers.
     * If this method is not called, no specific data is not applied
@@ -173,6 +190,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def jpushData(data: StringDictionary[String | Double | Boolean]): KiiPushMessageBuilder = js.native
+  
   /**
     * Set specific data for MQTT subscribers.
     * If this method is not called, no specific data is not applied
@@ -185,6 +203,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def mqttData(data: StringDictionary[String]): KiiPushMessageBuilder = js.native
+  
   /**
     * Indicate whether send this message to development environment.
     * If this method is not called, true will be applied as default.
@@ -194,6 +213,7 @@ trait KiiPushMessageBuilder extends js.Object {
     * @return builder instance.
     */
   def setSendToDevelopment(flag: Boolean): KiiPushMessageBuilder = js.native
+  
   /**
     * Indicate whether send this message to production environment.
     * If this method is not called, true will be applied as default.
@@ -204,4 +224,3 @@ trait KiiPushMessageBuilder extends js.Object {
     */
   def setSendToProduction(flag: Boolean): KiiPushMessageBuilder = js.native
 }
-

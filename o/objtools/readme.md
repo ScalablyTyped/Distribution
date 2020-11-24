@@ -10,9 +10,9 @@ Various utility functions for working with object, including object merging, inh
 | ------------------ | :-------------: |
 | Full name          | objtools |
 | Keywords           | object, merge, extend, clone, copy, mask, filter |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 1029 |
+| # releases         | 2 |
+| # dependents       | 18 |
+| # downloads        | 870 |
 | # stars            | 0 |
 
 ## Links

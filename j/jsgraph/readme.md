@@ -12,7 +12,7 @@ DirectedGraph container class + BFT/DFT/transpose algorithms inspired by Boost C
 | Keywords           | graph, vertex, vertices, edge, edges, node, nodes, link, algorithm, depth-first search, breadth-first search, BFS, DFS, data modeling, data, JSON, data semantics, semantic data, container, dependency, topological, transpose, filter, transform, route, model, classify, classification, analysis, sorting, in-memory, database, relational, hyper-relational, design pattern, visit, visitor |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 488972 |
+| # downloads        | 14399 |
 | # stars            | 5 |
 
 ## Links

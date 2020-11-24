@@ -2,11 +2,12 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-react-html-attrs", "useTransition")
 @js.native
 object useTransition extends js.Object {
+  
   def apply(): js.Tuple2[
     typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TransitionStartFunction, 
     Boolean
@@ -18,4 +19,3 @@ object useTransition extends js.Object {
     Boolean
   ] = js.native
 }
-

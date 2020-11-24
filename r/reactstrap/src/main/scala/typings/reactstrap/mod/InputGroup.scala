@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.inputGroupMod.InputGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "InputGroup")
+@JSImport("reactstrap/lib", "InputGroup")
 @js.native
-class InputGroup[T] ()
+class InputGroup ()
   extends Component[InputGroupProps, js.Object, js.Any]
-

@@ -6,11 +6,12 @@ import typings.tstl.ipointerMod.IPointer.ValueType
 import typings.tstl.irandomaccessiteratorMod.IRandomAccessIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "sort")
 @js.native
 object sort extends js.Object {
+  
   def apply[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
   def apply[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](
     first: RandomAccessIterator,
@@ -18,4 +19,3 @@ object sort extends js.Object {
     comp: Comparator[ValueType[RandomAccessIterator], ValueType[RandomAccessIterator]]
   ): Unit = js.native
 }
-

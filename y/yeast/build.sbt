@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yeast"
-version := "0.1-dt-20200515Z-48a181"
+version := "0.1-dt-20200515Z-aee4f1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

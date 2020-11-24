@@ -11,8 +11,8 @@ Strip redundant indentation and indent the string
 | Full name          | redent |
 | Keywords           | string, strip, trim, indent, indentation, add, reindent, normalize, remove, whitespace, space |
 | # releases         | 2 |
-| # dependents       | 57 |
-| # downloads        | 367280299 |
+| # dependents       | 87 |
+| # downloads        | 527717261 |
 | # stars            | 0 |
 
 ## Links

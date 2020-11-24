@@ -4,9 +4,808 @@ import typings.fileType.coreMod.FileExtension
 import typings.fileType.coreMod.MimeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileTypeStrings {
+  
+  @scala.inline
+  def `3g2`: `3g2` = "3g2".asInstanceOf[`3g2`]
+  
+  @scala.inline
+  def `3gp`: `3gp` = "3gp".asInstanceOf[`3gp`]
+  
+  @scala.inline
+  def `7z`: `7z` = "7z".asInstanceOf[`7z`]
+  
+  @scala.inline
+  def Z: Z = "Z".asInstanceOf[Z]
+  
+  @scala.inline
+  def aac: aac = "aac".asInstanceOf[aac]
+  
+  @scala.inline
+  def ac3: ac3 = "ac3".asInstanceOf[ac3]
+  
+  @scala.inline
+  def ai: ai = "ai".asInstanceOf[ai]
+  
+  @scala.inline
+  def aif: aif = "aif".asInstanceOf[aif]
+  
+  @scala.inline
+  def alias: alias = "alias".asInstanceOf[alias]
+  
+  @scala.inline
+  def amr: amr = "amr".asInstanceOf[amr]
+  
+  @scala.inline
+  def ape: ape = "ape".asInstanceOf[ape]
+  
+  @scala.inline
+  def apng: apng = "apng".asInstanceOf[apng]
+  
+  @scala.inline
+  def applicationSlashdicom: applicationSlashdicom = "application/dicom".asInstanceOf[applicationSlashdicom]
+  
+  @scala.inline
+  def applicationSlasheps: applicationSlasheps = "application/eps".asInstanceOf[applicationSlasheps]
+  
+  @scala.inline
+  def applicationSlashepubPlussignzip: applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[applicationSlashepubPlussignzip]
+  
+  @scala.inline
+  def applicationSlashgzip: applicationSlashgzip = "application/gzip".asInstanceOf[applicationSlashgzip]
+  
+  @scala.inline
+  def applicationSlashmxf: applicationSlashmxf = "application/mxf".asInstanceOf[applicationSlashmxf]
+  
+  @scala.inline
+  def applicationSlashogg: applicationSlashogg = "application/ogg".asInstanceOf[applicationSlashogg]
+  
+  @scala.inline
+  def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
+  
+  @scala.inline
+  def `applicationSlashpgp-encrypted`: `applicationSlashpgp-encrypted` = "application/pgp-encrypted".asInstanceOf[`applicationSlashpgp-encrypted`]
+  
+  @scala.inline
+  def applicationSlashpostscript: applicationSlashpostscript = "application/postscript".asInstanceOf[applicationSlashpostscript]
+  
+  @scala.inline
+  def applicationSlashrtf: applicationSlashrtf = "application/rtf".asInstanceOf[applicationSlashrtf]
+  
+  @scala.inline
+  def `applicationSlashvndDotms-asf`: `applicationSlashvndDotms-asf` = "application/vnd.ms-asf".asInstanceOf[`applicationSlashvndDotms-asf`]
+  
+  @scala.inline
+  def `applicationSlashvndDotms-cab-compressed`: `applicationSlashvndDotms-cab-compressed` = "application/vnd.ms-cab-compressed".asInstanceOf[`applicationSlashvndDotms-cab-compressed`]
+  
+  @scala.inline
+  def `applicationSlashvndDotms-fontobject`: `applicationSlashvndDotms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[`applicationSlashvndDotms-fontobject`]
+  
+  @scala.inline
+  def applicationSlashvndDotoasisDotopendocumentDotpresentation: applicationSlashvndDotoasisDotopendocumentDotpresentation = "application/vnd.oasis.opendocument.presentation".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotpresentation]
+  
+  @scala.inline
+  def applicationSlashvndDotoasisDotopendocumentDotspreadsheet: applicationSlashvndDotoasisDotopendocumentDotspreadsheet = "application/vnd.oasis.opendocument.spreadsheet".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotspreadsheet]
+  
+  @scala.inline
+  def applicationSlashvndDotoasisDotopendocumentDottext: applicationSlashvndDotoasisDotopendocumentDottext = "application/vnd.oasis.opendocument.text".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDottext]
+  
+  @scala.inline
+  def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation` = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`]
+  
+  @scala.inline
+  def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet` = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`]
+  
+  @scala.inline
+  def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
+  
+  @scala.inline
+  def applicationSlashvndDotsketchupDotskp: applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[applicationSlashvndDotsketchupDotskp]
+  
+  @scala.inline
+  def applicationSlashvndDottcpdumpDotpcap: applicationSlashvndDottcpdumpDotpcap = "application/vnd.tcpdump.pcap".asInstanceOf[applicationSlashvndDottcpdumpDotpcap]
+  
+  @scala.inline
+  def applicationSlashwasm: applicationSlashwasm = "application/wasm".asInstanceOf[applicationSlashwasm]
+  
+  @scala.inline
+  def `applicationSlashx-7z-compressed`: `applicationSlashx-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`applicationSlashx-7z-compressed`]
+  
+  @scala.inline
+  def `applicationSlashx-apache-arrow`: `applicationSlashx-apache-arrow` = "application/x-apache-arrow".asInstanceOf[`applicationSlashx-apache-arrow`]
+  
+  @scala.inline
+  def `applicationSlashx-apple-diskimage`: `applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`applicationSlashx-apple-diskimage`]
+  
+  @scala.inline
+  def `applicationSlashx-asar`: `applicationSlashx-asar` = "application/x-asar".asInstanceOf[`applicationSlashx-asar`]
+  
+  @scala.inline
+  def `applicationSlashx-blender`: `applicationSlashx-blender` = "application/x-blender".asInstanceOf[`applicationSlashx-blender`]
+  
+  @scala.inline
+  def `applicationSlashx-bzip2`: `applicationSlashx-bzip2` = "application/x-bzip2".asInstanceOf[`applicationSlashx-bzip2`]
+  
+  @scala.inline
+  def `applicationSlashx-cfb`: `applicationSlashx-cfb` = "application/x-cfb".asInstanceOf[`applicationSlashx-cfb`]
+  
+  @scala.inline
+  def `applicationSlashx-compress`: `applicationSlashx-compress` = "application/x-compress".asInstanceOf[`applicationSlashx-compress`]
+  
+  @scala.inline
+  def `applicationSlashx-deb`: `applicationSlashx-deb` = "application/x-deb".asInstanceOf[`applicationSlashx-deb`]
+  
+  @scala.inline
+  def `applicationSlashx-esri-shape`: `applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[`applicationSlashx-esri-shape`]
+  
+  @scala.inline
+  def `applicationSlashx-google-chrome-extension`: `applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`applicationSlashx-google-chrome-extension`]
+  
+  @scala.inline
+  def `applicationSlashx-indesign`: `applicationSlashx-indesign` = "application/x-indesign".asInstanceOf[`applicationSlashx-indesign`]
+  
+  @scala.inline
+  def `applicationSlashx-lzh-compressed`: `applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[`applicationSlashx-lzh-compressed`]
+  
+  @scala.inline
+  def `applicationSlashx-lzip`: `applicationSlashx-lzip` = "application/x-lzip".asInstanceOf[`applicationSlashx-lzip`]
+  
+  @scala.inline
+  def `applicationSlashx-mie`: `applicationSlashx-mie` = "application/x-mie".asInstanceOf[`applicationSlashx-mie`]
+  
+  @scala.inline
+  def `applicationSlashx-mobipocket-ebook`: `applicationSlashx-mobipocket-ebook` = "application/x-mobipocket-ebook".asInstanceOf[`applicationSlashx-mobipocket-ebook`]
+  
+  @scala.inline
+  def `applicationSlashx-msdownload`: `applicationSlashx-msdownload` = "application/x-msdownload".asInstanceOf[`applicationSlashx-msdownload`]
+  
+  @scala.inline
+  def `applicationSlashx-nintendo-nes-rom`: `applicationSlashx-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[`applicationSlashx-nintendo-nes-rom`]
+  
+  @scala.inline
+  def `applicationSlashx-rar-compressed`: `applicationSlashx-rar-compressed` = "application/x-rar-compressed".asInstanceOf[`applicationSlashx-rar-compressed`]
+  
+  @scala.inline
+  def `applicationSlashx-rpm`: `applicationSlashx-rpm` = "application/x-rpm".asInstanceOf[`applicationSlashx-rpm`]
+  
+  @scala.inline
+  def `applicationSlashx-shockwave-flash`: `applicationSlashx-shockwave-flash` = "application/x-shockwave-flash".asInstanceOf[`applicationSlashx-shockwave-flash`]
+  
+  @scala.inline
+  def `applicationSlashx-sqlite3`: `applicationSlashx-sqlite3` = "application/x-sqlite3".asInstanceOf[`applicationSlashx-sqlite3`]
+  
+  @scala.inline
+  def `applicationSlashx-tar`: `applicationSlashx-tar` = "application/x-tar".asInstanceOf[`applicationSlashx-tar`]
+  
+  @scala.inline
+  def `applicationSlashx-unix-archive`: `applicationSlashx-unix-archive` = "application/x-unix-archive".asInstanceOf[`applicationSlashx-unix-archive`]
+  
+  @scala.inline
+  def `applicationSlashx-xpinstall`: `applicationSlashx-xpinstall` = "application/x-xpinstall".asInstanceOf[`applicationSlashx-xpinstall`]
+  
+  @scala.inline
+  def `applicationSlashx-xz`: `applicationSlashx-xz` = "application/x-xz".asInstanceOf[`applicationSlashx-xz`]
+  
+  @scala.inline
+  def applicationSlashxDotappleDotalias: applicationSlashxDotappleDotalias = "application/x.apple.alias".asInstanceOf[applicationSlashxDotappleDotalias]
+  
+  @scala.inline
+  def applicationSlashxDotmsDotshortcut: applicationSlashxDotmsDotshortcut = "application/x.ms.shortcut".asInstanceOf[applicationSlashxDotmsDotshortcut]
+  
+  @scala.inline
+  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
+  
+  @scala.inline
+  def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
+  
+  @scala.inline
+  def ar: ar = "ar".asInstanceOf[ar]
+  
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
+  
+  @scala.inline
+  def arw: arw = "arw".asInstanceOf[arw]
+  
+  @scala.inline
+  def asar: asar = "asar".asInstanceOf[asar]
+  
+  @scala.inline
+  def asf: asf = "asf".asInstanceOf[asf]
+  
+  @scala.inline
+  def audioSlashaac: audioSlashaac = "audio/aac".asInstanceOf[audioSlashaac]
+  
+  @scala.inline
+  def audioSlashaiff: audioSlashaiff = "audio/aiff".asInstanceOf[audioSlashaiff]
+  
+  @scala.inline
+  def audioSlashamr: audioSlashamr = "audio/amr".asInstanceOf[audioSlashamr]
+  
+  @scala.inline
+  def audioSlashape: audioSlashape = "audio/ape".asInstanceOf[audioSlashape]
+  
+  @scala.inline
+  def audioSlashmidi: audioSlashmidi = "audio/midi".asInstanceOf[audioSlashmidi]
+  
+  @scala.inline
+  def audioSlashmp4: audioSlashmp4 = "audio/mp4".asInstanceOf[audioSlashmp4]
+  
+  @scala.inline
+  def audioSlashmpeg: audioSlashmpeg = "audio/mpeg".asInstanceOf[audioSlashmpeg]
+  
+  @scala.inline
+  def audioSlashogg: audioSlashogg = "audio/ogg".asInstanceOf[audioSlashogg]
+  
+  @scala.inline
+  def audioSlashopus: audioSlashopus = "audio/opus".asInstanceOf[audioSlashopus]
+  
+  @scala.inline
+  def audioSlashqcelp: audioSlashqcelp = "audio/qcelp".asInstanceOf[audioSlashqcelp]
+  
+  @scala.inline
+  def `audioSlashvndDotdolbyDotdd-raw`: `audioSlashvndDotdolbyDotdd-raw` = "audio/vnd.dolby.dd-raw".asInstanceOf[`audioSlashvndDotdolbyDotdd-raw`]
+  
+  @scala.inline
+  def audioSlashvndDotwave: audioSlashvndDotwave = "audio/vnd.wave".asInstanceOf[audioSlashvndDotwave]
+  
+  @scala.inline
+  def audioSlashwavpack: audioSlashwavpack = "audio/wavpack".asInstanceOf[audioSlashwavpack]
+  
+  @scala.inline
+  def `audioSlashx-dsf`: `audioSlashx-dsf` = "audio/x-dsf".asInstanceOf[`audioSlashx-dsf`]
+  
+  @scala.inline
+  def `audioSlashx-flac`: `audioSlashx-flac` = "audio/x-flac".asInstanceOf[`audioSlashx-flac`]
+  
+  @scala.inline
+  def `audioSlashx-it`: `audioSlashx-it` = "audio/x-it".asInstanceOf[`audioSlashx-it`]
+  
+  @scala.inline
+  def `audioSlashx-m4a`: `audioSlashx-m4a` = "audio/x-m4a".asInstanceOf[`audioSlashx-m4a`]
+  
+  @scala.inline
+  def `audioSlashx-ms-asf`: `audioSlashx-ms-asf` = "audio/x-ms-asf".asInstanceOf[`audioSlashx-ms-asf`]
+  
+  @scala.inline
+  def `audioSlashx-musepack`: `audioSlashx-musepack` = "audio/x-musepack".asInstanceOf[`audioSlashx-musepack`]
+  
+  @scala.inline
+  def `audioSlashx-s3m`: `audioSlashx-s3m` = "audio/x-s3m".asInstanceOf[`audioSlashx-s3m`]
+  
+  @scala.inline
+  def `audioSlashx-voc`: `audioSlashx-voc` = "audio/x-voc".asInstanceOf[`audioSlashx-voc`]
+  
+  @scala.inline
+  def `audioSlashx-xm`: `audioSlashx-xm` = "audio/x-xm".asInstanceOf[`audioSlashx-xm`]
+  
+  @scala.inline
+  def avi: avi = "avi".asInstanceOf[avi]
+  
+  @scala.inline
+  def avif: avif = "avif".asInstanceOf[avif]
+  
+  @scala.inline
+  def blend: blend = "blend".asInstanceOf[blend]
+  
+  @scala.inline
+  def bmp: bmp = "bmp".asInstanceOf[bmp]
+  
+  @scala.inline
+  def bpg: bpg = "bpg".asInstanceOf[bpg]
+  
+  @scala.inline
+  def bz2: bz2 = "bz2".asInstanceOf[bz2]
+  
+  @scala.inline
+  def cab: cab = "cab".asInstanceOf[cab]
+  
+  @scala.inline
+  def cfb: cfb = "cfb".asInstanceOf[cfb]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def cr2: cr2 = "cr2".asInstanceOf[cr2]
+  
+  @scala.inline
+  def cr3: cr3 = "cr3".asInstanceOf[cr3]
+  
+  @scala.inline
+  def crx: crx = "crx".asInstanceOf[crx]
+  
+  @scala.inline
+  def cur: cur = "cur".asInstanceOf[cur]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def dcm: dcm = "dcm".asInstanceOf[dcm]
+  
+  @scala.inline
+  def deb: deb = "deb".asInstanceOf[deb]
+  
+  @scala.inline
+  def dmg: dmg = "dmg".asInstanceOf[dmg]
+  
+  @scala.inline
+  def dng: dng = "dng".asInstanceOf[dng]
+  
+  @scala.inline
+  def docx: docx = "docx".asInstanceOf[docx]
+  
+  @scala.inline
+  def dsf: dsf = "dsf".asInstanceOf[dsf]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def eot: eot = "eot".asInstanceOf[eot]
+  
+  @scala.inline
+  def eps: eps = "eps".asInstanceOf[eps]
+  
+  @scala.inline
+  def epub: epub = "epub".asInstanceOf[epub]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def exe: exe = "exe".asInstanceOf[exe]
+  
+  @scala.inline
+  def f4a: f4a = "f4a".asInstanceOf[f4a]
+  
+  @scala.inline
+  def f4b: f4b = "f4b".asInstanceOf[f4b]
+  
+  @scala.inline
+  def f4p: f4p = "f4p".asInstanceOf[f4p]
+  
+  @scala.inline
+  def f4v: f4v = "f4v".asInstanceOf[f4v]
+  
+  @scala.inline
+  def flac: flac = "flac".asInstanceOf[flac]
+  
+  @scala.inline
+  def flif: flif = "flif".asInstanceOf[flif]
+  
+  @scala.inline
+  def flv: flv = "flv".asInstanceOf[flv]
+  
+  @scala.inline
+  def fontSlashotf: fontSlashotf = "font/otf".asInstanceOf[fontSlashotf]
+  
+  @scala.inline
+  def fontSlashttf: fontSlashttf = "font/ttf".asInstanceOf[fontSlashttf]
+  
+  @scala.inline
+  def fontSlashwoff: fontSlashwoff = "font/woff".asInstanceOf[fontSlashwoff]
+  
+  @scala.inline
+  def fontSlashwoff2: fontSlashwoff2 = "font/woff2".asInstanceOf[fontSlashwoff2]
+  
+  @scala.inline
+  def gif: gif = "gif".asInstanceOf[gif]
+  
+  @scala.inline
+  def glb: glb = "glb".asInstanceOf[glb]
+  
+  @scala.inline
+  def gz: gz = "gz".asInstanceOf[gz]
+  
+  @scala.inline
+  def heic: heic = "heic".asInstanceOf[heic]
+  
+  @scala.inline
+  def icns: icns = "icns".asInstanceOf[icns]
+  
+  @scala.inline
+  def ico: ico = "ico".asInstanceOf[ico]
+  
+  @scala.inline
+  def ics: ics = "ics".asInstanceOf[ics]
+  
+  @scala.inline
+  def imageSlashapng: imageSlashapng = "image/apng".asInstanceOf[imageSlashapng]
+  
+  @scala.inline
+  def imageSlashavif: imageSlashavif = "image/avif".asInstanceOf[imageSlashavif]
+  
+  @scala.inline
+  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
+  
+  @scala.inline
+  def imageSlashbpg: imageSlashbpg = "image/bpg".asInstanceOf[imageSlashbpg]
+  
+  @scala.inline
+  def imageSlashflif: imageSlashflif = "image/flif".asInstanceOf[imageSlashflif]
+  
+  @scala.inline
+  def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
+  
+  @scala.inline
+  def imageSlashheic: imageSlashheic = "image/heic".asInstanceOf[imageSlashheic]
+  
+  @scala.inline
+  def `imageSlashheic-sequence`: `imageSlashheic-sequence` = "image/heic-sequence".asInstanceOf[`imageSlashheic-sequence`]
+  
+  @scala.inline
+  def imageSlashheif: imageSlashheif = "image/heif".asInstanceOf[imageSlashheif]
+  
+  @scala.inline
+  def `imageSlashheif-sequence`: `imageSlashheif-sequence` = "image/heif-sequence".asInstanceOf[`imageSlashheif-sequence`]
+  
+  @scala.inline
+  def imageSlashicns: imageSlashicns = "image/icns".asInstanceOf[imageSlashicns]
+  
+  @scala.inline
+  def imageSlashjp2: imageSlashjp2 = "image/jp2".asInstanceOf[imageSlashjp2]
+  
+  @scala.inline
+  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
+  
+  @scala.inline
+  def imageSlashjpm: imageSlashjpm = "image/jpm".asInstanceOf[imageSlashjpm]
+  
+  @scala.inline
+  def imageSlashjpx: imageSlashjpx = "image/jpx".asInstanceOf[imageSlashjpx]
+  
+  @scala.inline
+  def imageSlashktx: imageSlashktx = "image/ktx".asInstanceOf[imageSlashktx]
+  
+  @scala.inline
+  def imageSlashmj2: imageSlashmj2 = "image/mj2".asInstanceOf[imageSlashmj2]
+  
+  @scala.inline
+  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
+  
+  @scala.inline
+  def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
+  
+  @scala.inline
+  def imageSlashvndDotadobeDotphotoshop: imageSlashvndDotadobeDotphotoshop = "image/vnd.adobe.photoshop".asInstanceOf[imageSlashvndDotadobeDotphotoshop]
+  
+  @scala.inline
+  def `imageSlashvndDotms-photo`: `imageSlashvndDotms-photo` = "image/vnd.ms-photo".asInstanceOf[`imageSlashvndDotms-photo`]
+  
+  @scala.inline
+  def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
+  
+  @scala.inline
+  def `imageSlashx-adobe-dng`: `imageSlashx-adobe-dng` = "image/x-adobe-dng".asInstanceOf[`imageSlashx-adobe-dng`]
+  
+  @scala.inline
+  def `imageSlashx-canon-cr2`: `imageSlashx-canon-cr2` = "image/x-canon-cr2".asInstanceOf[`imageSlashx-canon-cr2`]
+  
+  @scala.inline
+  def `imageSlashx-canon-cr3`: `imageSlashx-canon-cr3` = "image/x-canon-cr3".asInstanceOf[`imageSlashx-canon-cr3`]
+  
+  @scala.inline
+  def `imageSlashx-fujifilm-raf`: `imageSlashx-fujifilm-raf` = "image/x-fujifilm-raf".asInstanceOf[`imageSlashx-fujifilm-raf`]
+  
+  @scala.inline
+  def `imageSlashx-icon`: `imageSlashx-icon` = "image/x-icon".asInstanceOf[`imageSlashx-icon`]
+  
+  @scala.inline
+  def `imageSlashx-nikon-nef`: `imageSlashx-nikon-nef` = "image/x-nikon-nef".asInstanceOf[`imageSlashx-nikon-nef`]
+  
+  @scala.inline
+  def `imageSlashx-olympus-orf`: `imageSlashx-olympus-orf` = "image/x-olympus-orf".asInstanceOf[`imageSlashx-olympus-orf`]
+  
+  @scala.inline
+  def `imageSlashx-panasonic-rw2`: `imageSlashx-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`imageSlashx-panasonic-rw2`]
+  
+  @scala.inline
+  def `imageSlashx-sony-arw`: `imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[`imageSlashx-sony-arw`]
+  
+  @scala.inline
+  def indd: indd = "indd".asInstanceOf[indd]
+  
+  @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  
+  @scala.inline
+  def jp2: jp2 = "jp2".asInstanceOf[jp2]
+  
+  @scala.inline
+  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  
+  @scala.inline
+  def jpm: jpm = "jpm".asInstanceOf[jpm]
+  
+  @scala.inline
+  def jpx: jpx = "jpx".asInstanceOf[jpx]
+  
+  @scala.inline
+  def jxr: jxr = "jxr".asInstanceOf[jxr]
+  
+  @scala.inline
+  def ktx: ktx = "ktx".asInstanceOf[ktx]
+  
+  @scala.inline
+  def lnk: lnk = "lnk".asInstanceOf[lnk]
+  
+  @scala.inline
+  def lz: lz = "lz".asInstanceOf[lz]
+  
+  @scala.inline
+  def lzh: lzh = "lzh".asInstanceOf[lzh]
+  
+  @scala.inline
+  def m4a: m4a = "m4a".asInstanceOf[m4a]
+  
+  @scala.inline
+  def m4b: m4b = "m4b".asInstanceOf[m4b]
+  
+  @scala.inline
+  def m4p: m4p = "m4p".asInstanceOf[m4p]
+  
+  @scala.inline
+  def m4v: m4v = "m4v".asInstanceOf[m4v]
+  
+  @scala.inline
+  def mid: mid = "mid".asInstanceOf[mid]
+  
+  @scala.inline
+  def mie: mie = "mie".asInstanceOf[mie]
+  
+  @scala.inline
+  def mj2: mj2 = "mj2".asInstanceOf[mj2]
+  
+  @scala.inline
+  def mkv: mkv = "mkv".asInstanceOf[mkv]
+  
+  @scala.inline
+  def mobi: mobi = "mobi".asInstanceOf[mobi]
+  
+  @scala.inline
+  def `modelSlashgltf-binary`: `modelSlashgltf-binary` = "model/gltf-binary".asInstanceOf[`modelSlashgltf-binary`]
+  
+  @scala.inline
+  def modelSlashstl: modelSlashstl = "model/stl".asInstanceOf[modelSlashstl]
+  
+  @scala.inline
+  def mov: mov = "mov".asInstanceOf[mov]
+  
+  @scala.inline
+  def mp1: mp1 = "mp1".asInstanceOf[mp1]
+  
+  @scala.inline
+  def mp2: mp2 = "mp2".asInstanceOf[mp2]
+  
+  @scala.inline
+  def mp3: mp3 = "mp3".asInstanceOf[mp3]
+  
+  @scala.inline
+  def mp4: mp4 = "mp4".asInstanceOf[mp4]
+  
+  @scala.inline
+  def mpc: mpc = "mpc".asInstanceOf[mpc]
+  
+  @scala.inline
+  def mpg: mpg = "mpg".asInstanceOf[mpg]
+  
+  @scala.inline
+  def mts: mts = "mts".asInstanceOf[mts]
+  
+  @scala.inline
+  def mxf: mxf = "mxf".asInstanceOf[mxf]
+  
+  @scala.inline
+  def nef: nef = "nef".asInstanceOf[nef]
+  
+  @scala.inline
+  def nes: nes = "nes".asInstanceOf[nes]
+  
+  @scala.inline
+  def odp: odp = "odp".asInstanceOf[odp]
+  
+  @scala.inline
+  def ods: ods = "ods".asInstanceOf[ods]
+  
+  @scala.inline
+  def odt: odt = "odt".asInstanceOf[odt]
+  
+  @scala.inline
+  def oga: oga = "oga".asInstanceOf[oga]
+  
+  @scala.inline
+  def ogg: ogg = "ogg".asInstanceOf[ogg]
+  
+  @scala.inline
+  def ogm: ogm = "ogm".asInstanceOf[ogm]
+  
+  @scala.inline
+  def ogv: ogv = "ogv".asInstanceOf[ogv]
+  
+  @scala.inline
+  def ogx: ogx = "ogx".asInstanceOf[ogx]
+  
+  @scala.inline
+  def opus: opus = "opus".asInstanceOf[opus]
+  
+  @scala.inline
+  def orf: orf = "orf".asInstanceOf[orf]
+  
+  @scala.inline
+  def otf: otf = "otf".asInstanceOf[otf]
+  
+  @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  
+  @scala.inline
+  def pcap: pcap = "pcap".asInstanceOf[pcap]
+  
+  @scala.inline
+  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @scala.inline
+  def pgp: pgp = "pgp".asInstanceOf[pgp]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def pptx: pptx = "pptx".asInstanceOf[pptx]
+  
+  @scala.inline
+  def ps: ps = "ps".asInstanceOf[ps]
+  
+  @scala.inline
+  def psd: psd = "psd".asInstanceOf[psd]
+  
+  @scala.inline
+  def qcp: qcp = "qcp".asInstanceOf[qcp]
+  
+  @scala.inline
+  def raf: raf = "raf".asInstanceOf[raf]
+  
+  @scala.inline
+  def rar: rar = "rar".asInstanceOf[rar]
+  
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
+  
+  @scala.inline
+  def rpm: rpm = "rpm".asInstanceOf[rpm]
+  
+  @scala.inline
+  def rtf: rtf = "rtf".asInstanceOf[rtf]
+  
+  @scala.inline
+  def rw2: rw2 = "rw2".asInstanceOf[rw2]
+  
+  @scala.inline
+  def s3m: s3m = "s3m".asInstanceOf[s3m]
+  
+  @scala.inline
+  def shp: shp = "shp".asInstanceOf[shp]
+  
+  @scala.inline
+  def skp: skp = "skp".asInstanceOf[skp]
+  
+  @scala.inline
+  def spx: spx = "spx".asInstanceOf[spx]
+  
+  @scala.inline
+  def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
+  
+  @scala.inline
+  def stl: stl = "stl".asInstanceOf[stl]
+  
+  @scala.inline
+  def swf: swf = "swf".asInstanceOf[swf]
+  
+  @scala.inline
+  def tar: tar = "tar".asInstanceOf[tar]
+  
+  @scala.inline
+  def textSlashcalendar: textSlashcalendar = "text/calendar".asInstanceOf[textSlashcalendar]
+  
+  @scala.inline
+  def tif: tif = "tif".asInstanceOf[tif]
+  
+  @scala.inline
+  def ttf: ttf = "ttf".asInstanceOf[ttf]
+  
+  @scala.inline
+  def videoSlash3gpp: videoSlash3gpp = "video/3gpp".asInstanceOf[videoSlash3gpp]
+  
+  @scala.inline
+  def videoSlash3gpp2: videoSlash3gpp2 = "video/3gpp2".asInstanceOf[videoSlash3gpp2]
+  
+  @scala.inline
+  def videoSlashMP1S: videoSlashMP1S = "video/MP1S".asInstanceOf[videoSlashMP1S]
+  
+  @scala.inline
+  def videoSlashMP2P: videoSlashMP2P = "video/MP2P".asInstanceOf[videoSlashMP2P]
+  
+  @scala.inline
+  def videoSlashmp2t: videoSlashmp2t = "video/mp2t".asInstanceOf[videoSlashmp2t]
+  
+  @scala.inline
+  def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
+  
+  @scala.inline
+  def videoSlashmpeg: videoSlashmpeg = "video/mpeg".asInstanceOf[videoSlashmpeg]
+  
+  @scala.inline
+  def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
+  
+  @scala.inline
+  def videoSlashquicktime: videoSlashquicktime = "video/quicktime".asInstanceOf[videoSlashquicktime]
+  
+  @scala.inline
+  def videoSlashvndDotavi: videoSlashvndDotavi = "video/vnd.avi".asInstanceOf[videoSlashvndDotavi]
+  
+  @scala.inline
+  def videoSlashwebm: videoSlashwebm = "video/webm".asInstanceOf[videoSlashwebm]
+  
+  @scala.inline
+  def `videoSlashx-flv`: `videoSlashx-flv` = "video/x-flv".asInstanceOf[`videoSlashx-flv`]
+  
+  @scala.inline
+  def `videoSlashx-m4v`: `videoSlashx-m4v` = "video/x-m4v".asInstanceOf[`videoSlashx-m4v`]
+  
+  @scala.inline
+  def `videoSlashx-matroska`: `videoSlashx-matroska` = "video/x-matroska".asInstanceOf[`videoSlashx-matroska`]
+  
+  @scala.inline
+  def `videoSlashx-ms-asf`: `videoSlashx-ms-asf` = "video/x-ms-asf".asInstanceOf[`videoSlashx-ms-asf`]
+  
+  @scala.inline
+  def voc: voc = "voc".asInstanceOf[voc]
+  
+  @scala.inline
+  def wasm: wasm = "wasm".asInstanceOf[wasm]
+  
+  @scala.inline
+  def wav: wav = "wav".asInstanceOf[wav]
+  
+  @scala.inline
+  def webm: webm = "webm".asInstanceOf[webm]
+  
+  @scala.inline
+  def webp: webp = "webp".asInstanceOf[webp]
+  
+  @scala.inline
+  def woff: woff = "woff".asInstanceOf[woff]
+  
+  @scala.inline
+  def woff2: woff2 = "woff2".asInstanceOf[woff2]
+  
+  @scala.inline
+  def wv: wv = "wv".asInstanceOf[wv]
+  
+  @scala.inline
+  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
+  
+  @scala.inline
+  def xm: xm = "xm".asInstanceOf[xm]
+  
+  @scala.inline
+  def xml: xml = "xml".asInstanceOf[xml]
+  
+  @scala.inline
+  def xpi: xpi = "xpi".asInstanceOf[xpi]
+  
+  @scala.inline
+  def xz: xz = "xz".asInstanceOf[xz]
+  
+  @scala.inline
+  def zip: zip = "zip".asInstanceOf[zip]
+  
   @js.native
   sealed trait `3g2` extends FileExtension
   
@@ -128,6 +927,9 @@ object fileTypeStrings {
   sealed trait `applicationSlashx-bzip2` extends MimeType
   
   @js.native
+  sealed trait `applicationSlashx-cfb` extends MimeType
+  
+  @js.native
   sealed trait `applicationSlashx-compress` extends MimeType
   
   @js.native
@@ -156,9 +958,6 @@ object fileTypeStrings {
   
   @js.native
   sealed trait `applicationSlashx-msdownload` extends MimeType
-  
-  @js.native
-  sealed trait `applicationSlashx-msi` extends MimeType
   
   @js.native
   sealed trait `applicationSlashx-nintendo-nes-rom` extends MimeType
@@ -266,7 +1065,7 @@ object fileTypeStrings {
   sealed trait `audioSlashx-m4a` extends MimeType
   
   @js.native
-  sealed trait `audioSlashx-ms-wma` extends MimeType
+  sealed trait `audioSlashx-ms-asf` extends MimeType
   
   @js.native
   sealed trait `audioSlashx-musepack` extends MimeType
@@ -300,6 +1099,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait cab extends FileExtension
+  
+  @js.native
+  sealed trait cfb extends FileExtension
   
   @js.native
   sealed trait close extends js.Object
@@ -566,6 +1368,9 @@ object fileTypeStrings {
   sealed trait `modelSlashgltf-binary` extends MimeType
   
   @js.native
+  sealed trait modelSlashstl extends MimeType
+  
+  @js.native
   sealed trait mov extends FileExtension
   
   @js.native
@@ -585,9 +1390,6 @@ object fileTypeStrings {
   
   @js.native
   sealed trait mpg extends FileExtension
-  
-  @js.native
-  sealed trait msi extends FileExtension
   
   @js.native
   sealed trait mts extends FileExtension
@@ -698,6 +1500,9 @@ object fileTypeStrings {
   sealed trait sqlite extends FileExtension
   
   @js.native
+  sealed trait stl extends FileExtension
+  
+  @js.native
   sealed trait swf extends FileExtension
   
   @js.native
@@ -773,12 +1578,6 @@ object fileTypeStrings {
   sealed trait webp extends FileExtension
   
   @js.native
-  sealed trait wma extends FileExtension
-  
-  @js.native
-  sealed trait wmv extends FileExtension
-  
-  @js.native
   sealed trait woff extends FileExtension
   
   @js.native
@@ -804,538 +1603,4 @@ object fileTypeStrings {
   
   @js.native
   sealed trait zip extends FileExtension
-  
-  @scala.inline
-  def `3g2`: `3g2` = "3g2".asInstanceOf[`3g2`]
-  @scala.inline
-  def `3gp`: `3gp` = "3gp".asInstanceOf[`3gp`]
-  @scala.inline
-  def `7z`: `7z` = "7z".asInstanceOf[`7z`]
-  @scala.inline
-  def Z: Z = "Z".asInstanceOf[Z]
-  @scala.inline
-  def aac: aac = "aac".asInstanceOf[aac]
-  @scala.inline
-  def ac3: ac3 = "ac3".asInstanceOf[ac3]
-  @scala.inline
-  def ai: ai = "ai".asInstanceOf[ai]
-  @scala.inline
-  def aif: aif = "aif".asInstanceOf[aif]
-  @scala.inline
-  def alias: alias = "alias".asInstanceOf[alias]
-  @scala.inline
-  def amr: amr = "amr".asInstanceOf[amr]
-  @scala.inline
-  def ape: ape = "ape".asInstanceOf[ape]
-  @scala.inline
-  def apng: apng = "apng".asInstanceOf[apng]
-  @scala.inline
-  def applicationSlashdicom: applicationSlashdicom = "application/dicom".asInstanceOf[applicationSlashdicom]
-  @scala.inline
-  def applicationSlasheps: applicationSlasheps = "application/eps".asInstanceOf[applicationSlasheps]
-  @scala.inline
-  def applicationSlashepubPlussignzip: applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[applicationSlashepubPlussignzip]
-  @scala.inline
-  def applicationSlashgzip: applicationSlashgzip = "application/gzip".asInstanceOf[applicationSlashgzip]
-  @scala.inline
-  def applicationSlashmxf: applicationSlashmxf = "application/mxf".asInstanceOf[applicationSlashmxf]
-  @scala.inline
-  def applicationSlashogg: applicationSlashogg = "application/ogg".asInstanceOf[applicationSlashogg]
-  @scala.inline
-  def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
-  @scala.inline
-  def `applicationSlashpgp-encrypted`: `applicationSlashpgp-encrypted` = "application/pgp-encrypted".asInstanceOf[`applicationSlashpgp-encrypted`]
-  @scala.inline
-  def applicationSlashpostscript: applicationSlashpostscript = "application/postscript".asInstanceOf[applicationSlashpostscript]
-  @scala.inline
-  def applicationSlashrtf: applicationSlashrtf = "application/rtf".asInstanceOf[applicationSlashrtf]
-  @scala.inline
-  def `applicationSlashvndDotms-asf`: `applicationSlashvndDotms-asf` = "application/vnd.ms-asf".asInstanceOf[`applicationSlashvndDotms-asf`]
-  @scala.inline
-  def `applicationSlashvndDotms-cab-compressed`: `applicationSlashvndDotms-cab-compressed` = "application/vnd.ms-cab-compressed".asInstanceOf[`applicationSlashvndDotms-cab-compressed`]
-  @scala.inline
-  def `applicationSlashvndDotms-fontobject`: `applicationSlashvndDotms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[`applicationSlashvndDotms-fontobject`]
-  @scala.inline
-  def applicationSlashvndDotoasisDotopendocumentDotpresentation: applicationSlashvndDotoasisDotopendocumentDotpresentation = "application/vnd.oasis.opendocument.presentation".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotpresentation]
-  @scala.inline
-  def applicationSlashvndDotoasisDotopendocumentDotspreadsheet: applicationSlashvndDotoasisDotopendocumentDotspreadsheet = "application/vnd.oasis.opendocument.spreadsheet".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotspreadsheet]
-  @scala.inline
-  def applicationSlashvndDotoasisDotopendocumentDottext: applicationSlashvndDotoasisDotopendocumentDottext = "application/vnd.oasis.opendocument.text".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDottext]
-  @scala.inline
-  def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation` = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`]
-  @scala.inline
-  def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet` = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`]
-  @scala.inline
-  def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
-  @scala.inline
-  def applicationSlashvndDotsketchupDotskp: applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[applicationSlashvndDotsketchupDotskp]
-  @scala.inline
-  def applicationSlashvndDottcpdumpDotpcap: applicationSlashvndDottcpdumpDotpcap = "application/vnd.tcpdump.pcap".asInstanceOf[applicationSlashvndDottcpdumpDotpcap]
-  @scala.inline
-  def applicationSlashwasm: applicationSlashwasm = "application/wasm".asInstanceOf[applicationSlashwasm]
-  @scala.inline
-  def `applicationSlashx-7z-compressed`: `applicationSlashx-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`applicationSlashx-7z-compressed`]
-  @scala.inline
-  def `applicationSlashx-apache-arrow`: `applicationSlashx-apache-arrow` = "application/x-apache-arrow".asInstanceOf[`applicationSlashx-apache-arrow`]
-  @scala.inline
-  def `applicationSlashx-apple-diskimage`: `applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`applicationSlashx-apple-diskimage`]
-  @scala.inline
-  def `applicationSlashx-asar`: `applicationSlashx-asar` = "application/x-asar".asInstanceOf[`applicationSlashx-asar`]
-  @scala.inline
-  def `applicationSlashx-blender`: `applicationSlashx-blender` = "application/x-blender".asInstanceOf[`applicationSlashx-blender`]
-  @scala.inline
-  def `applicationSlashx-bzip2`: `applicationSlashx-bzip2` = "application/x-bzip2".asInstanceOf[`applicationSlashx-bzip2`]
-  @scala.inline
-  def `applicationSlashx-compress`: `applicationSlashx-compress` = "application/x-compress".asInstanceOf[`applicationSlashx-compress`]
-  @scala.inline
-  def `applicationSlashx-deb`: `applicationSlashx-deb` = "application/x-deb".asInstanceOf[`applicationSlashx-deb`]
-  @scala.inline
-  def `applicationSlashx-esri-shape`: `applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[`applicationSlashx-esri-shape`]
-  @scala.inline
-  def `applicationSlashx-google-chrome-extension`: `applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`applicationSlashx-google-chrome-extension`]
-  @scala.inline
-  def `applicationSlashx-indesign`: `applicationSlashx-indesign` = "application/x-indesign".asInstanceOf[`applicationSlashx-indesign`]
-  @scala.inline
-  def `applicationSlashx-lzh-compressed`: `applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[`applicationSlashx-lzh-compressed`]
-  @scala.inline
-  def `applicationSlashx-lzip`: `applicationSlashx-lzip` = "application/x-lzip".asInstanceOf[`applicationSlashx-lzip`]
-  @scala.inline
-  def `applicationSlashx-mie`: `applicationSlashx-mie` = "application/x-mie".asInstanceOf[`applicationSlashx-mie`]
-  @scala.inline
-  def `applicationSlashx-mobipocket-ebook`: `applicationSlashx-mobipocket-ebook` = "application/x-mobipocket-ebook".asInstanceOf[`applicationSlashx-mobipocket-ebook`]
-  @scala.inline
-  def `applicationSlashx-msdownload`: `applicationSlashx-msdownload` = "application/x-msdownload".asInstanceOf[`applicationSlashx-msdownload`]
-  @scala.inline
-  def `applicationSlashx-msi`: `applicationSlashx-msi` = "application/x-msi".asInstanceOf[`applicationSlashx-msi`]
-  @scala.inline
-  def `applicationSlashx-nintendo-nes-rom`: `applicationSlashx-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[`applicationSlashx-nintendo-nes-rom`]
-  @scala.inline
-  def `applicationSlashx-rar-compressed`: `applicationSlashx-rar-compressed` = "application/x-rar-compressed".asInstanceOf[`applicationSlashx-rar-compressed`]
-  @scala.inline
-  def `applicationSlashx-rpm`: `applicationSlashx-rpm` = "application/x-rpm".asInstanceOf[`applicationSlashx-rpm`]
-  @scala.inline
-  def `applicationSlashx-shockwave-flash`: `applicationSlashx-shockwave-flash` = "application/x-shockwave-flash".asInstanceOf[`applicationSlashx-shockwave-flash`]
-  @scala.inline
-  def `applicationSlashx-sqlite3`: `applicationSlashx-sqlite3` = "application/x-sqlite3".asInstanceOf[`applicationSlashx-sqlite3`]
-  @scala.inline
-  def `applicationSlashx-tar`: `applicationSlashx-tar` = "application/x-tar".asInstanceOf[`applicationSlashx-tar`]
-  @scala.inline
-  def `applicationSlashx-unix-archive`: `applicationSlashx-unix-archive` = "application/x-unix-archive".asInstanceOf[`applicationSlashx-unix-archive`]
-  @scala.inline
-  def `applicationSlashx-xpinstall`: `applicationSlashx-xpinstall` = "application/x-xpinstall".asInstanceOf[`applicationSlashx-xpinstall`]
-  @scala.inline
-  def `applicationSlashx-xz`: `applicationSlashx-xz` = "application/x-xz".asInstanceOf[`applicationSlashx-xz`]
-  @scala.inline
-  def applicationSlashxDotappleDotalias: applicationSlashxDotappleDotalias = "application/x.apple.alias".asInstanceOf[applicationSlashxDotappleDotalias]
-  @scala.inline
-  def applicationSlashxDotmsDotshortcut: applicationSlashxDotmsDotshortcut = "application/x.ms.shortcut".asInstanceOf[applicationSlashxDotmsDotshortcut]
-  @scala.inline
-  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
-  @scala.inline
-  def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
-  @scala.inline
-  def ar: ar = "ar".asInstanceOf[ar]
-  @scala.inline
-  def arrow: arrow = "arrow".asInstanceOf[arrow]
-  @scala.inline
-  def arw: arw = "arw".asInstanceOf[arw]
-  @scala.inline
-  def asar: asar = "asar".asInstanceOf[asar]
-  @scala.inline
-  def asf: asf = "asf".asInstanceOf[asf]
-  @scala.inline
-  def audioSlashaac: audioSlashaac = "audio/aac".asInstanceOf[audioSlashaac]
-  @scala.inline
-  def audioSlashaiff: audioSlashaiff = "audio/aiff".asInstanceOf[audioSlashaiff]
-  @scala.inline
-  def audioSlashamr: audioSlashamr = "audio/amr".asInstanceOf[audioSlashamr]
-  @scala.inline
-  def audioSlashape: audioSlashape = "audio/ape".asInstanceOf[audioSlashape]
-  @scala.inline
-  def audioSlashmidi: audioSlashmidi = "audio/midi".asInstanceOf[audioSlashmidi]
-  @scala.inline
-  def audioSlashmp4: audioSlashmp4 = "audio/mp4".asInstanceOf[audioSlashmp4]
-  @scala.inline
-  def audioSlashmpeg: audioSlashmpeg = "audio/mpeg".asInstanceOf[audioSlashmpeg]
-  @scala.inline
-  def audioSlashogg: audioSlashogg = "audio/ogg".asInstanceOf[audioSlashogg]
-  @scala.inline
-  def audioSlashopus: audioSlashopus = "audio/opus".asInstanceOf[audioSlashopus]
-  @scala.inline
-  def audioSlashqcelp: audioSlashqcelp = "audio/qcelp".asInstanceOf[audioSlashqcelp]
-  @scala.inline
-  def `audioSlashvndDotdolbyDotdd-raw`: `audioSlashvndDotdolbyDotdd-raw` = "audio/vnd.dolby.dd-raw".asInstanceOf[`audioSlashvndDotdolbyDotdd-raw`]
-  @scala.inline
-  def audioSlashvndDotwave: audioSlashvndDotwave = "audio/vnd.wave".asInstanceOf[audioSlashvndDotwave]
-  @scala.inline
-  def audioSlashwavpack: audioSlashwavpack = "audio/wavpack".asInstanceOf[audioSlashwavpack]
-  @scala.inline
-  def `audioSlashx-dsf`: `audioSlashx-dsf` = "audio/x-dsf".asInstanceOf[`audioSlashx-dsf`]
-  @scala.inline
-  def `audioSlashx-flac`: `audioSlashx-flac` = "audio/x-flac".asInstanceOf[`audioSlashx-flac`]
-  @scala.inline
-  def `audioSlashx-it`: `audioSlashx-it` = "audio/x-it".asInstanceOf[`audioSlashx-it`]
-  @scala.inline
-  def `audioSlashx-m4a`: `audioSlashx-m4a` = "audio/x-m4a".asInstanceOf[`audioSlashx-m4a`]
-  @scala.inline
-  def `audioSlashx-ms-wma`: `audioSlashx-ms-wma` = "audio/x-ms-wma".asInstanceOf[`audioSlashx-ms-wma`]
-  @scala.inline
-  def `audioSlashx-musepack`: `audioSlashx-musepack` = "audio/x-musepack".asInstanceOf[`audioSlashx-musepack`]
-  @scala.inline
-  def `audioSlashx-s3m`: `audioSlashx-s3m` = "audio/x-s3m".asInstanceOf[`audioSlashx-s3m`]
-  @scala.inline
-  def `audioSlashx-voc`: `audioSlashx-voc` = "audio/x-voc".asInstanceOf[`audioSlashx-voc`]
-  @scala.inline
-  def `audioSlashx-xm`: `audioSlashx-xm` = "audio/x-xm".asInstanceOf[`audioSlashx-xm`]
-  @scala.inline
-  def avi: avi = "avi".asInstanceOf[avi]
-  @scala.inline
-  def avif: avif = "avif".asInstanceOf[avif]
-  @scala.inline
-  def blend: blend = "blend".asInstanceOf[blend]
-  @scala.inline
-  def bmp: bmp = "bmp".asInstanceOf[bmp]
-  @scala.inline
-  def bpg: bpg = "bpg".asInstanceOf[bpg]
-  @scala.inline
-  def bz2: bz2 = "bz2".asInstanceOf[bz2]
-  @scala.inline
-  def cab: cab = "cab".asInstanceOf[cab]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def cr2: cr2 = "cr2".asInstanceOf[cr2]
-  @scala.inline
-  def cr3: cr3 = "cr3".asInstanceOf[cr3]
-  @scala.inline
-  def crx: crx = "crx".asInstanceOf[crx]
-  @scala.inline
-  def cur: cur = "cur".asInstanceOf[cur]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def dcm: dcm = "dcm".asInstanceOf[dcm]
-  @scala.inline
-  def deb: deb = "deb".asInstanceOf[deb]
-  @scala.inline
-  def dmg: dmg = "dmg".asInstanceOf[dmg]
-  @scala.inline
-  def dng: dng = "dng".asInstanceOf[dng]
-  @scala.inline
-  def docx: docx = "docx".asInstanceOf[docx]
-  @scala.inline
-  def dsf: dsf = "dsf".asInstanceOf[dsf]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def eot: eot = "eot".asInstanceOf[eot]
-  @scala.inline
-  def eps: eps = "eps".asInstanceOf[eps]
-  @scala.inline
-  def epub: epub = "epub".asInstanceOf[epub]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exe: exe = "exe".asInstanceOf[exe]
-  @scala.inline
-  def f4a: f4a = "f4a".asInstanceOf[f4a]
-  @scala.inline
-  def f4b: f4b = "f4b".asInstanceOf[f4b]
-  @scala.inline
-  def f4p: f4p = "f4p".asInstanceOf[f4p]
-  @scala.inline
-  def f4v: f4v = "f4v".asInstanceOf[f4v]
-  @scala.inline
-  def flac: flac = "flac".asInstanceOf[flac]
-  @scala.inline
-  def flif: flif = "flif".asInstanceOf[flif]
-  @scala.inline
-  def flv: flv = "flv".asInstanceOf[flv]
-  @scala.inline
-  def fontSlashotf: fontSlashotf = "font/otf".asInstanceOf[fontSlashotf]
-  @scala.inline
-  def fontSlashttf: fontSlashttf = "font/ttf".asInstanceOf[fontSlashttf]
-  @scala.inline
-  def fontSlashwoff: fontSlashwoff = "font/woff".asInstanceOf[fontSlashwoff]
-  @scala.inline
-  def fontSlashwoff2: fontSlashwoff2 = "font/woff2".asInstanceOf[fontSlashwoff2]
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
-  @scala.inline
-  def glb: glb = "glb".asInstanceOf[glb]
-  @scala.inline
-  def gz: gz = "gz".asInstanceOf[gz]
-  @scala.inline
-  def heic: heic = "heic".asInstanceOf[heic]
-  @scala.inline
-  def icns: icns = "icns".asInstanceOf[icns]
-  @scala.inline
-  def ico: ico = "ico".asInstanceOf[ico]
-  @scala.inline
-  def ics: ics = "ics".asInstanceOf[ics]
-  @scala.inline
-  def imageSlashapng: imageSlashapng = "image/apng".asInstanceOf[imageSlashapng]
-  @scala.inline
-  def imageSlashavif: imageSlashavif = "image/avif".asInstanceOf[imageSlashavif]
-  @scala.inline
-  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
-  @scala.inline
-  def imageSlashbpg: imageSlashbpg = "image/bpg".asInstanceOf[imageSlashbpg]
-  @scala.inline
-  def imageSlashflif: imageSlashflif = "image/flif".asInstanceOf[imageSlashflif]
-  @scala.inline
-  def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
-  @scala.inline
-  def imageSlashheic: imageSlashheic = "image/heic".asInstanceOf[imageSlashheic]
-  @scala.inline
-  def `imageSlashheic-sequence`: `imageSlashheic-sequence` = "image/heic-sequence".asInstanceOf[`imageSlashheic-sequence`]
-  @scala.inline
-  def imageSlashheif: imageSlashheif = "image/heif".asInstanceOf[imageSlashheif]
-  @scala.inline
-  def `imageSlashheif-sequence`: `imageSlashheif-sequence` = "image/heif-sequence".asInstanceOf[`imageSlashheif-sequence`]
-  @scala.inline
-  def imageSlashicns: imageSlashicns = "image/icns".asInstanceOf[imageSlashicns]
-  @scala.inline
-  def imageSlashjp2: imageSlashjp2 = "image/jp2".asInstanceOf[imageSlashjp2]
-  @scala.inline
-  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
-  @scala.inline
-  def imageSlashjpm: imageSlashjpm = "image/jpm".asInstanceOf[imageSlashjpm]
-  @scala.inline
-  def imageSlashjpx: imageSlashjpx = "image/jpx".asInstanceOf[imageSlashjpx]
-  @scala.inline
-  def imageSlashktx: imageSlashktx = "image/ktx".asInstanceOf[imageSlashktx]
-  @scala.inline
-  def imageSlashmj2: imageSlashmj2 = "image/mj2".asInstanceOf[imageSlashmj2]
-  @scala.inline
-  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
-  @scala.inline
-  def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
-  @scala.inline
-  def imageSlashvndDotadobeDotphotoshop: imageSlashvndDotadobeDotphotoshop = "image/vnd.adobe.photoshop".asInstanceOf[imageSlashvndDotadobeDotphotoshop]
-  @scala.inline
-  def `imageSlashvndDotms-photo`: `imageSlashvndDotms-photo` = "image/vnd.ms-photo".asInstanceOf[`imageSlashvndDotms-photo`]
-  @scala.inline
-  def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
-  @scala.inline
-  def `imageSlashx-adobe-dng`: `imageSlashx-adobe-dng` = "image/x-adobe-dng".asInstanceOf[`imageSlashx-adobe-dng`]
-  @scala.inline
-  def `imageSlashx-canon-cr2`: `imageSlashx-canon-cr2` = "image/x-canon-cr2".asInstanceOf[`imageSlashx-canon-cr2`]
-  @scala.inline
-  def `imageSlashx-canon-cr3`: `imageSlashx-canon-cr3` = "image/x-canon-cr3".asInstanceOf[`imageSlashx-canon-cr3`]
-  @scala.inline
-  def `imageSlashx-fujifilm-raf`: `imageSlashx-fujifilm-raf` = "image/x-fujifilm-raf".asInstanceOf[`imageSlashx-fujifilm-raf`]
-  @scala.inline
-  def `imageSlashx-icon`: `imageSlashx-icon` = "image/x-icon".asInstanceOf[`imageSlashx-icon`]
-  @scala.inline
-  def `imageSlashx-nikon-nef`: `imageSlashx-nikon-nef` = "image/x-nikon-nef".asInstanceOf[`imageSlashx-nikon-nef`]
-  @scala.inline
-  def `imageSlashx-olympus-orf`: `imageSlashx-olympus-orf` = "image/x-olympus-orf".asInstanceOf[`imageSlashx-olympus-orf`]
-  @scala.inline
-  def `imageSlashx-panasonic-rw2`: `imageSlashx-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`imageSlashx-panasonic-rw2`]
-  @scala.inline
-  def `imageSlashx-sony-arw`: `imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[`imageSlashx-sony-arw`]
-  @scala.inline
-  def indd: indd = "indd".asInstanceOf[indd]
-  @scala.inline
-  def it: it = "it".asInstanceOf[it]
-  @scala.inline
-  def jp2: jp2 = "jp2".asInstanceOf[jp2]
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
-  @scala.inline
-  def jpm: jpm = "jpm".asInstanceOf[jpm]
-  @scala.inline
-  def jpx: jpx = "jpx".asInstanceOf[jpx]
-  @scala.inline
-  def jxr: jxr = "jxr".asInstanceOf[jxr]
-  @scala.inline
-  def ktx: ktx = "ktx".asInstanceOf[ktx]
-  @scala.inline
-  def lnk: lnk = "lnk".asInstanceOf[lnk]
-  @scala.inline
-  def lz: lz = "lz".asInstanceOf[lz]
-  @scala.inline
-  def lzh: lzh = "lzh".asInstanceOf[lzh]
-  @scala.inline
-  def m4a: m4a = "m4a".asInstanceOf[m4a]
-  @scala.inline
-  def m4b: m4b = "m4b".asInstanceOf[m4b]
-  @scala.inline
-  def m4p: m4p = "m4p".asInstanceOf[m4p]
-  @scala.inline
-  def m4v: m4v = "m4v".asInstanceOf[m4v]
-  @scala.inline
-  def mid: mid = "mid".asInstanceOf[mid]
-  @scala.inline
-  def mie: mie = "mie".asInstanceOf[mie]
-  @scala.inline
-  def mj2: mj2 = "mj2".asInstanceOf[mj2]
-  @scala.inline
-  def mkv: mkv = "mkv".asInstanceOf[mkv]
-  @scala.inline
-  def mobi: mobi = "mobi".asInstanceOf[mobi]
-  @scala.inline
-  def `modelSlashgltf-binary`: `modelSlashgltf-binary` = "model/gltf-binary".asInstanceOf[`modelSlashgltf-binary`]
-  @scala.inline
-  def mov: mov = "mov".asInstanceOf[mov]
-  @scala.inline
-  def mp1: mp1 = "mp1".asInstanceOf[mp1]
-  @scala.inline
-  def mp2: mp2 = "mp2".asInstanceOf[mp2]
-  @scala.inline
-  def mp3: mp3 = "mp3".asInstanceOf[mp3]
-  @scala.inline
-  def mp4: mp4 = "mp4".asInstanceOf[mp4]
-  @scala.inline
-  def mpc: mpc = "mpc".asInstanceOf[mpc]
-  @scala.inline
-  def mpg: mpg = "mpg".asInstanceOf[mpg]
-  @scala.inline
-  def msi: msi = "msi".asInstanceOf[msi]
-  @scala.inline
-  def mts: mts = "mts".asInstanceOf[mts]
-  @scala.inline
-  def mxf: mxf = "mxf".asInstanceOf[mxf]
-  @scala.inline
-  def nef: nef = "nef".asInstanceOf[nef]
-  @scala.inline
-  def nes: nes = "nes".asInstanceOf[nes]
-  @scala.inline
-  def odp: odp = "odp".asInstanceOf[odp]
-  @scala.inline
-  def ods: ods = "ods".asInstanceOf[ods]
-  @scala.inline
-  def odt: odt = "odt".asInstanceOf[odt]
-  @scala.inline
-  def oga: oga = "oga".asInstanceOf[oga]
-  @scala.inline
-  def ogg: ogg = "ogg".asInstanceOf[ogg]
-  @scala.inline
-  def ogm: ogm = "ogm".asInstanceOf[ogm]
-  @scala.inline
-  def ogv: ogv = "ogv".asInstanceOf[ogv]
-  @scala.inline
-  def ogx: ogx = "ogx".asInstanceOf[ogx]
-  @scala.inline
-  def opus: opus = "opus".asInstanceOf[opus]
-  @scala.inline
-  def orf: orf = "orf".asInstanceOf[orf]
-  @scala.inline
-  def otf: otf = "otf".asInstanceOf[otf]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def pcap: pcap = "pcap".asInstanceOf[pcap]
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
-  @scala.inline
-  def pgp: pgp = "pgp".asInstanceOf[pgp]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def pptx: pptx = "pptx".asInstanceOf[pptx]
-  @scala.inline
-  def ps: ps = "ps".asInstanceOf[ps]
-  @scala.inline
-  def psd: psd = "psd".asInstanceOf[psd]
-  @scala.inline
-  def qcp: qcp = "qcp".asInstanceOf[qcp]
-  @scala.inline
-  def raf: raf = "raf".asInstanceOf[raf]
-  @scala.inline
-  def rar: rar = "rar".asInstanceOf[rar]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
-  @scala.inline
-  def rpm: rpm = "rpm".asInstanceOf[rpm]
-  @scala.inline
-  def rtf: rtf = "rtf".asInstanceOf[rtf]
-  @scala.inline
-  def rw2: rw2 = "rw2".asInstanceOf[rw2]
-  @scala.inline
-  def s3m: s3m = "s3m".asInstanceOf[s3m]
-  @scala.inline
-  def shp: shp = "shp".asInstanceOf[shp]
-  @scala.inline
-  def skp: skp = "skp".asInstanceOf[skp]
-  @scala.inline
-  def spx: spx = "spx".asInstanceOf[spx]
-  @scala.inline
-  def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
-  @scala.inline
-  def swf: swf = "swf".asInstanceOf[swf]
-  @scala.inline
-  def tar: tar = "tar".asInstanceOf[tar]
-  @scala.inline
-  def textSlashcalendar: textSlashcalendar = "text/calendar".asInstanceOf[textSlashcalendar]
-  @scala.inline
-  def tif: tif = "tif".asInstanceOf[tif]
-  @scala.inline
-  def ttf: ttf = "ttf".asInstanceOf[ttf]
-  @scala.inline
-  def videoSlash3gpp: videoSlash3gpp = "video/3gpp".asInstanceOf[videoSlash3gpp]
-  @scala.inline
-  def videoSlash3gpp2: videoSlash3gpp2 = "video/3gpp2".asInstanceOf[videoSlash3gpp2]
-  @scala.inline
-  def videoSlashMP1S: videoSlashMP1S = "video/MP1S".asInstanceOf[videoSlashMP1S]
-  @scala.inline
-  def videoSlashMP2P: videoSlashMP2P = "video/MP2P".asInstanceOf[videoSlashMP2P]
-  @scala.inline
-  def videoSlashmp2t: videoSlashmp2t = "video/mp2t".asInstanceOf[videoSlashmp2t]
-  @scala.inline
-  def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
-  @scala.inline
-  def videoSlashmpeg: videoSlashmpeg = "video/mpeg".asInstanceOf[videoSlashmpeg]
-  @scala.inline
-  def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
-  @scala.inline
-  def videoSlashquicktime: videoSlashquicktime = "video/quicktime".asInstanceOf[videoSlashquicktime]
-  @scala.inline
-  def videoSlashvndDotavi: videoSlashvndDotavi = "video/vnd.avi".asInstanceOf[videoSlashvndDotavi]
-  @scala.inline
-  def videoSlashwebm: videoSlashwebm = "video/webm".asInstanceOf[videoSlashwebm]
-  @scala.inline
-  def `videoSlashx-flv`: `videoSlashx-flv` = "video/x-flv".asInstanceOf[`videoSlashx-flv`]
-  @scala.inline
-  def `videoSlashx-m4v`: `videoSlashx-m4v` = "video/x-m4v".asInstanceOf[`videoSlashx-m4v`]
-  @scala.inline
-  def `videoSlashx-matroska`: `videoSlashx-matroska` = "video/x-matroska".asInstanceOf[`videoSlashx-matroska`]
-  @scala.inline
-  def `videoSlashx-ms-asf`: `videoSlashx-ms-asf` = "video/x-ms-asf".asInstanceOf[`videoSlashx-ms-asf`]
-  @scala.inline
-  def voc: voc = "voc".asInstanceOf[voc]
-  @scala.inline
-  def wasm: wasm = "wasm".asInstanceOf[wasm]
-  @scala.inline
-  def wav: wav = "wav".asInstanceOf[wav]
-  @scala.inline
-  def webm: webm = "webm".asInstanceOf[webm]
-  @scala.inline
-  def webp: webp = "webp".asInstanceOf[webp]
-  @scala.inline
-  def wma: wma = "wma".asInstanceOf[wma]
-  @scala.inline
-  def wmv: wmv = "wmv".asInstanceOf[wmv]
-  @scala.inline
-  def woff: woff = "woff".asInstanceOf[woff]
-  @scala.inline
-  def woff2: woff2 = "woff2".asInstanceOf[woff2]
-  @scala.inline
-  def wv: wv = "wv".asInstanceOf[wv]
-  @scala.inline
-  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
-  @scala.inline
-  def xm: xm = "xm".asInstanceOf[xm]
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
-  @scala.inline
-  def xpi: xpi = "xpi".asInstanceOf[xpi]
-  @scala.inline
-  def xz: xz = "xz".asInstanceOf[xz]
-  @scala.inline
-  def zip: zip = "zip".asInstanceOf[zip]
 }
-

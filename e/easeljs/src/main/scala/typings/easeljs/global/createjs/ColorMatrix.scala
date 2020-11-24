@@ -2,7 +2,7 @@ package typings.easeljs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.ColorMatrix")
 @js.native
@@ -44,4 +44,3 @@ class ColorMatrix ()
   def this(brightness: Double, contrast: Double, saturation: js.UndefOr[scala.Nothing], hue: Double) = this()
   def this(brightness: Double, contrast: Double, saturation: Double, hue: Double) = this()
 }
-

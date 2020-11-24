@@ -2,11 +2,12 @@ package typings.async.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async", "someSeries")
 @js.native
 object someSeries extends js.Object {
+  
   def apply[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): Unit = js.native
   def apply[T, E](
     arr: IterableCollection[T],
@@ -14,4 +15,3 @@ object someSeries extends js.Object {
     callback: AsyncBooleanResultCallback[E]
   ): Unit = js.native
 }
-

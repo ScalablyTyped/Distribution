@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin/v1alpha", "oslogin_v1alpha.Resource$Users")
 @js.native
 class ResourceUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var projects: ResourceUsersProjects = js.native
-  var sshPublicKeys: ResourceUsersSshpublickeys = js.native
+  
   /**
     * oslogin.users.getLoginProfile
     * @desc Retrieves the profile information used for logging in to a virtual
@@ -47,6 +47,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLoginProfile]
   ): Unit = js.native
+  
   /**
     * oslogin.users.importSshPublicKey
     * @desc Adds an SSH public key and returns the profile information. Default
@@ -82,5 +83,8 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImportSshPublicKeyResponse]
   ): Unit = js.native
+  
+  var projects: ResourceUsersProjects = js.native
+  
+  var sshPublicKeys: ResourceUsersSshpublickeys = js.native
 }
-

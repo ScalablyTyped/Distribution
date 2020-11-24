@@ -5,14 +5,14 @@ import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnyObject
   extends Object
      with /* index */ StringDictionary[js.Any]
-
 object AnyObject {
+  
   @scala.inline
   def apply(
     constructor: js.Function,
@@ -23,4 +23,3 @@ object AnyObject {
     __obj.asInstanceOf[AnyObject]
   }
 }
-

@@ -2,11 +2,12 @@ package typings.weappApi.mod.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "wx.setStorageSync")
 @js.native
 object setStorageSync extends js.Object {
+  
   def apply(key: String, data: String): Unit = js.native
   /**
     * 将 data 存储在本地缓存中指定的 key 中，
@@ -17,4 +18,3 @@ object setStorageSync extends js.Object {
     */
   def apply(key: String, data: js.Any): Unit = js.native
 }
-

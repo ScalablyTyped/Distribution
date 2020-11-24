@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Systems are individual components to the Renderer pipeline.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.systems")
 @js.native
 object systems extends js.Object {
+  
   /**
     * System plugin to the renderer to manage masks of certain type
     *
@@ -208,6 +209,4 @@ object systems extends js.Object {
     extends typings.pixiJs.PIXI.systems.TextureSystem {
     def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
   }
-  
 }
-

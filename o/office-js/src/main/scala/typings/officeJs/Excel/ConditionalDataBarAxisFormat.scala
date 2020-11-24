@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConditionalDataBarAxisFormat extends js.Object
-
 /**
   *
   * Represents the format options for a Data Bar Axis.
@@ -16,6 +15,7 @@ sealed trait ConditionalDataBarAxisFormat extends js.Object
 @JSGlobal("Excel.ConditionalDataBarAxisFormat")
 @js.native
 object ConditionalDataBarAxisFormat extends js.Object {
+  
   @js.native
   sealed trait automatic extends ConditionalDataBarAxisFormat
   
@@ -24,6 +24,4 @@ object ConditionalDataBarAxisFormat extends js.Object {
   
   @js.native
   sealed trait none extends ConditionalDataBarAxisFormat
-  
 }
-

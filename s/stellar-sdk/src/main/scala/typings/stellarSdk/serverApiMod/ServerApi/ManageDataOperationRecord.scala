@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.stellarSdk.horizonApiMod.Horizon.BaseResponse because Already inherited
@@ -16,7 +16,8 @@ trait ManageDataOperationRecord
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.manageData
     ]
      with OperationRecord {
+  
   var name: String = js.native
+  
   var value: Buffer = js.native
 }
-

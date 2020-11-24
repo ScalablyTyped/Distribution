@@ -7,7 +7,7 @@ import typings.angularCommon.mod.PlatformLocation
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/upgrade/upgrade", "$locationShim")
 @js.native
@@ -19,53 +19,19 @@ class locationShim protected () extends js.Object {
     urlCodec: UrlCodec,
     locationStrategy: LocationStrategy
   ) = this()
+  
   @JSName("$$absUrl")
   var DollarDollarabsUrl: js.Any = js.native
+  
   @JSName("$$changeListeners")
   var DollarDollarchangeListeners: js.Any = js.native
+  
   @JSName("$$hash")
   var DollarDollarhash: js.Any = js.native
+  
   @JSName("$$host")
   var DollarDollarhost: js.Any = js.native
-  @JSName("$$path")
-  var DollarDollarpath: js.Any = js.native
-  @JSName("$$port")
-  var DollarDollarport: js.Any = js.native
-  @JSName("$$protocol")
-  var DollarDollarprotocol: js.Any = js.native
-  @JSName("$$replace")
-  var DollarDollarreplace: js.Any = js.native
-  @JSName("$$search")
-  var DollarDollarsearch: js.Any = js.native
-  @JSName("$$state")
-  var DollarDollarstate: js.Any = js.native
-  @JSName("$$url")
-  var DollarDollarurl: js.Any = js.native
-  /**
-    * This function emulates the $browser.state() function from AngularJS. It will cause
-    * history.state to be cached unless changed with deep equality check.
-    */
-  var browserState: js.Any = js.native
-  var browserUrl: js.Any = js.native
-  var cacheState: js.Any = js.native
-  var cachedState: js.Any = js.native
-  var composeUrls: js.Any = js.native
-  var getServerBase: js.Any = js.native
-  var initalizing: js.Any = js.native
-  var initialize: js.Any = js.native
-  var lastBrowserUrl: js.Any = js.native
-  var lastCachedState: js.Any = js.native
-  var lastHistoryState: js.Any = js.native
-  var location: js.Any = js.native
-  var locationStrategy: js.Any = js.native
-  var parseAppUrl: js.Any = js.native
-  var platformLocation: js.Any = js.native
-  var resetBrowserUpdate: js.Any = js.native
-  var setBrowserUrlWithFallback: js.Any = js.native
-  var stripBaseUrl: js.Any = js.native
-  var updateBrowser: js.Any = js.native
-  var urlChanges: js.Any = js.native
-  var urlCodec: js.Any = js.native
+  
   /**
     * Parses the provided URL, and sets the current URL to the parsed result.
     *
@@ -73,6 +39,7 @@ class locationShim protected () extends js.Object {
     */
   @JSName("$$parse")
   def DollarDollarparse(url: String): Unit = js.native
+  
   /**
     * Parses the provided URL and its relative URL.
     *
@@ -83,6 +50,28 @@ class locationShim protected () extends js.Object {
   def DollarDollarparseLinkUrl(url: String): Boolean = js.native
   @JSName("$$parseLinkUrl")
   def DollarDollarparseLinkUrl(url: String, relHref: String): Boolean = js.native
+  
+  @JSName("$$path")
+  var DollarDollarpath: js.Any = js.native
+  
+  @JSName("$$port")
+  var DollarDollarport: js.Any = js.native
+  
+  @JSName("$$protocol")
+  var DollarDollarprotocol: js.Any = js.native
+  
+  @JSName("$$replace")
+  var DollarDollarreplace: js.Any = js.native
+  
+  @JSName("$$search")
+  var DollarDollarsearch: js.Any = js.native
+  
+  @JSName("$$state")
+  var DollarDollarstate: js.Any = js.native
+  
+  @JSName("$$url")
+  var DollarDollarurl: js.Any = js.native
+  
   /**
     * Retrieves the full URL representation with all segments encoded according to
     * rules specified in
@@ -96,6 +85,23 @@ class locationShim protected () extends js.Object {
     * ```
     */
   def absUrl(): String = js.native
+  
+  /**
+    * This function emulates the $browser.state() function from AngularJS. It will cause
+    * history.state to be cached unless changed with deep equality check.
+    */
+  var browserState: js.Any = js.native
+  
+  var browserUrl: js.Any = js.native
+  
+  var cacheState: js.Any = js.native
+  
+  var cachedState: js.Any = js.native
+  
+  var composeUrls: js.Any = js.native
+  
+  var getServerBase: js.Any = js.native
+  
   def hash(): this.type = js.native
   def hash(hash: String): this.type = js.native
   def hash(hash: Double): this.type = js.native
@@ -111,6 +117,7 @@ class locationShim protected () extends js.Object {
     */
   @JSName("hash")
   def hash_String(): String = js.native
+  
   /**
     * Retrieves the protocol of the current URL.
     *
@@ -131,6 +138,21 @@ class locationShim protected () extends js.Object {
     * ```
     */
   def host(): String = js.native
+  
+  var initalizing: js.Any = js.native
+  
+  var initialize: js.Any = js.native
+  
+  var lastBrowserUrl: js.Any = js.native
+  
+  var lastCachedState: js.Any = js.native
+  
+  var lastHistoryState: js.Any = js.native
+  
+  var location: js.Any = js.native
+  
+  var locationStrategy: js.Any = js.native
+  
   /**
     * Registers listeners for URL changes. This API is used to catch updates performed by the
     * AngularJS framework. These changes are a subset of the `$locationChangeStart` and
@@ -151,6 +173,9 @@ class locationShim protected () extends js.Object {
     fn: js.Function4[/* url */ String, /* state */ js.Any, /* oldUrl */ String, /* oldState */ js.Any, Unit],
     err: js.Function1[/* e */ Error, Unit]
   ): Unit = js.native
+  
+  var parseAppUrl: js.Any = js.native
+  
   def path(): this.type = js.native
   def path(path: String): this.type = js.native
   def path(path: Double): this.type = js.native
@@ -169,6 +194,9 @@ class locationShim protected () extends js.Object {
     */
   @JSName("path")
   def path_String(): String = js.native
+  
+  var platformLocation: js.Any = js.native
+  
   /**
     * Retrieves the port of the current URL.
     *
@@ -179,6 +207,7 @@ class locationShim protected () extends js.Object {
     * ```
     */
   def port(): Double | Null = js.native
+  
   /**
     * Retrieves the protocol of the current URL.
     *
@@ -189,11 +218,15 @@ class locationShim protected () extends js.Object {
     * ```
     */
   def protocol(): String = js.native
+  
   /**
     * Changes to `$location` during the current `$digest` will replace the current
     * history record, instead of adding a new one.
     */
   def replace(): this.type = js.native
+  
+  var resetBrowserUpdate: js.Any = js.native
+  
   /**
     * Retrieves a map of the search parameters of the current URL, or changes a search
     * part and returns a reference to its own instance.
@@ -248,6 +281,9 @@ class locationShim protected () extends js.Object {
   def search(search: Double, paramValue: js.Array[String]): this.type = js.native
   def search(search: Double, paramValue: Boolean): this.type = js.native
   def search(search: Double, paramValue: Double): this.type = js.native
+  
+  var setBrowserUrlWithFallback: js.Any = js.native
+  
   /**
     * Retrieves the history state object when called without any parameter.
     *
@@ -256,11 +292,16 @@ class locationShim protected () extends js.Object {
     *
     * This method is supported only in HTML5 mode and only in browsers supporting
     * the HTML5 History API methods such as `pushState` and `replaceState`. If you need to support
-    * older browsers (like IE9 or Android < 4.0), don't use this method.
+    * older browsers (like Android < 4.0), don't use this method.
     *
     */
   def state(): js.Any = js.native
   def state(state: js.Any): this.type = js.native
+  
+  var stripBaseUrl: js.Any = js.native
+  
+  var updateBrowser: js.Any = js.native
+  
   /**
     * Retrieves the current URL, or sets a new URL. When setting a URL,
     * changes the path, search, and hash, and returns a reference to its own instance.
@@ -273,5 +314,8 @@ class locationShim protected () extends js.Object {
     */
   def url(): String = js.native
   def url(url: String): this.type = js.native
+  
+  var urlChanges: js.Any = js.native
+  
+  var urlCodec: js.Any = js.native
 }
-

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.TopLevel
 import typings.sinon.mod.SinonSpy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sinon-chrome", "csi")
 @js.native
-object csi extends TopLevel[SinonSpy]
-
+object csi
+  extends TopLevel[SinonSpy[js.Array[js.Any], js.Any]]

@@ -4,7 +4,7 @@ import typings.awsSdk.elasticacheMod.ClientConfiguration
 import typings.awsSdk.elasticacheMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "ElastiCache")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ElastiCache () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

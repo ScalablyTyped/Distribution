@@ -3,16 +3,18 @@ package typings.igniteUi.Infragistics
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XmlDataSource extends js.Object {
+  
   /**
     * Adds a new node to the tree data source. Creates a transaction that can be committed / rolled back
     *
     * @param data the transaction data
     */
   def addNode(data: js.Object): Unit = js.native
+  
   /**
     * Adds a new row to the data source. Creates a transaction that can be committed / rolled back
     *
@@ -21,22 +23,27 @@ trait XmlDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, the datasource will be updated automatically and the transaction is still stored in the accumulated transaction log
     */
   def addRow(rowId: js.Object, rowObject: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Returns a list of all transaction objects that are either pending, or have been committed in the data source.
     */
   def allTransactions(): js.Array[_] = js.native
+  
   /**
     * Analyzes the dataSource setting to automatically determine the type of the data source. Returns the data source type. See settings.type
     */
   def analyzeDataSource(): String = js.native
+  
   /**
     * This clears local filtering applied to the data view by resetting it to the original data and applying any paging
     */
   def clearLocalFilter(): Unit = js.native
+  
   /**
     * This clears local sorting applied to the data view by resetting it to the original data and applying any paging
     */
   def clearLocalSorting(): Unit = js.native
+  
   /**
     * Update the data source with every transaction from the log
     *
@@ -44,10 +51,12 @@ trait XmlDataSource extends js.Object {
     */
   def commit(): Unit = js.native
   def commit(id: Double): Unit = js.native
+  
   /**
     * Returns all of the bound data, without taking into account local paging, sorting, filtering, etc.
     */
   def data(): js.Object = js.native
+  
   /**
     * Data binds to the current data source
     * databinding works using the following workflow:
@@ -72,6 +81,7 @@ trait XmlDataSource extends js.Object {
   def dataBind(callback: js.UndefOr[scala.Nothing], callee: js.Object): Unit = js.native
   def dataBind(callback: String): Unit = js.native
   def dataBind(callback: String, callee: js.Object): Unit = js.native
+  
   /**
     * Gets/sets the dataSource setting. If no parameter is specified, returns settings.dataSource
     *
@@ -79,14 +89,17 @@ trait XmlDataSource extends js.Object {
     */
   def dataSource(): js.Object = js.native
   def dataSource(ds: js.Object): js.Object = js.native
+  
   /**
     * Returns summaries data
     */
   def dataSummaries(): js.Object = js.native
+  
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted data, i.e. the dataView
     */
   def dataView(): js.Array[_] = js.native
+  
   /**
     * Deletes a row from the data source.
     *
@@ -94,6 +107,7 @@ trait XmlDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, the datasource will be updated automatically and the transaction is still stored in the accumulated transaction log
     */
   def deleteRow(rowId: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Sets a list of fields to the data source. If no parameter is specified, just returns the already existing list of fields
     *
@@ -101,6 +115,7 @@ trait XmlDataSource extends js.Object {
     */
   def fields(): js.Object = js.native
   def fields(fields: js.Object): js.Object = js.native
+  
   /**
     * Filters the data source locally. Remote filtering can be performed by just calling dataBind() and
     * setting the settings.filtering.expressions. The result (filtered data) can be obtained by calling dataView()
@@ -124,6 +139,7 @@ trait XmlDataSource extends js.Object {
     keepFilterState: Boolean,
     fieldExpressionsOnStrings: js.Object
   ): Unit = js.native
+  
   /**
     * Filters the data source locally by text. If "fields" parameter is set search is performed only in the listed fields otherwise all fields are searched.
     *
@@ -132,6 +148,7 @@ trait XmlDataSource extends js.Object {
     */
   def filterByText(expression: String): Unit = js.native
   def filterByText(expression: String, fields: js.Array[_]): Unit = js.native
+  
   /**
     * Gets/sets a list of filtering settings
     *
@@ -139,10 +156,12 @@ trait XmlDataSource extends js.Object {
     */
   def filterSettings(): Unit = js.native
   def filterSettings(f: js.Object): Unit = js.native
+  
   /**
     * Returns filtered data if local filtering is applied. If filtering is not applied OR type of filtering is remote returns undefined.
     */
   def filteredData(): js.Array[_] = js.native
+  
   /**
     * Returns a record by a specified key (requires that primaryKey is set in the settings)
     *
@@ -154,6 +173,7 @@ trait XmlDataSource extends js.Object {
   def findRecordByKey(key: js.Object, ds: js.UndefOr[scala.Nothing], objPath: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String, objPath: String): js.Object = js.native
+  
   /**
     * Gets a cell value from the record by the specified fieldName. If there's a mapper defined for the field, the resolved by the mapper value will be returned.
     *
@@ -161,26 +181,31 @@ trait XmlDataSource extends js.Object {
     * @param record the record from which to get it
     */
   def getCellValue(fieldName: String, record: js.Object): js.Object = js.native
+  
   /**
     * Returns a standalone object (copy) that represents the commited transactions, but detached from the data source
     *
     * @param t a transaction object
     */
   def getDetachedRecord(t: js.Object): js.Object = js.native
+  
   /**
     * Returns collection of data and non-data(grouped) records. Flat representation of hierarchical data
     */
   def groupByData(): js.Array[_] = js.native
+  
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted group-by data
     */
   def groupByDataView(): js.Array[_] = js.native
+  
   /**
     * Gets / sets if the response from the server contains a property which specifies the total number of records in the server-side backend
     *
     * @param hasCount specifies if the data source contains a property that denotes the total number of records in the server-side backend
     */
   def hasTotalRecordsCount(hasCount: Boolean): Unit = js.native
+  
   /**
     * Adds a new row to the data source. Creates a transaction that can be committed / rolled back
     *
@@ -197,6 +222,7 @@ trait XmlDataSource extends js.Object {
     autoCommit: Boolean,
     parentRowId: js.Object
   ): js.Object = js.native
+  
   /**
     * Check whether grouping is applied for the specified sorting expressions.
     *
@@ -204,26 +230,31 @@ trait XmlDataSource extends js.Object {
     */
   def isGroupByApplied(): Boolean = js.native
   def isGroupByApplied(exprs: js.Array[_]): Boolean = js.native
+  
   /**
     * Check whether the specified gorupby record is collapsed
     *
     * @param gbRec id of the grouped record OR grouped record
     */
   def isGroupByRecordCollapsed(gbRec: js.Object): Boolean = js.native
+  
   /**
     * Returns metadata object for the specified key
     *
     * @param key Primary key of the record
     */
   def metadata(key: String): js.Object = js.native
+  
   /**
     * Sets the page index to be equal to the next page index and rebinds the data source
     */
   def nextPage(): Unit = js.native
+  
   /**
     * Returns the total number of pages
     */
   def pageCount(): Double = js.native
+  
   /**
     * Gets /sets the current page index. If an index is passed as a parameter, the data source is re-bound.
     *
@@ -231,6 +262,7 @@ trait XmlDataSource extends js.Object {
     */
   def pageIndex(): Double = js.native
   def pageIndex(index: Double): Double = js.native
+  
   /**
     * Gets /sets the page size and rebinds the data source if a parameter is specified. If no parameter is passed, returns the current page size
     *
@@ -238,12 +270,14 @@ trait XmlDataSource extends js.Object {
     */
   def pageSize(): Double = js.native
   def pageSize(s: Double): Double = js.native
+  
   /**
     * For internal use
     *
     * @param dirty
     */
   def pageSizeDirty(dirty: js.Object): Unit = js.native
+  
   /**
     * Gets/sets a list of paging settings
     *
@@ -251,10 +285,12 @@ trait XmlDataSource extends js.Object {
     */
   def pagingSettings(): js.Object = js.native
   def pagingSettings(p: js.Object): js.Object = js.native
+  
   /**
     * Returns a list of all transaction objects that are pending to be committed or rolled back to the data source
     */
   def pendingTransactions(): js.Array[_] = js.native
+  
   /**
     * Gets /sets the page index that should be persisted. For now ONLY when filtering is applied and call explicitly DataBind.
     *
@@ -262,22 +298,26 @@ trait XmlDataSource extends js.Object {
     */
   def persistedPageIndex(): Double = js.native
   def persistedPageIndex(value: Double): Double = js.native
+  
   /**
     * Sets the page index to be equal to the previous page index and rebinds the data source
     */
   def prevPage(): Unit = js.native
+  
   /**
     * Returns a list of records for the specified page. Implies that paging is enabled.
     *
     * @param p the page index for which records will be returned
     */
   def recordsForPage(p: Double): Unit = js.native
+  
   /**
     * Removes a node from the tree data source. Creates a transaction that can be committed / rolled back
     *
     * @param data the transaction data
     */
   def removeNode(data: js.Object): Unit = js.native
+  
   /**
     * Removes a record from the data source at specific index.
     *
@@ -285,6 +325,7 @@ trait XmlDataSource extends js.Object {
     * @param origDs
     */
   def removeRecordByIndex(index: Double, origDs: js.Object): Unit = js.native
+  
   /**
     * Removes a specific record denoted by the primaryKey of the passed key parameter from the data source
     *
@@ -292,6 +333,7 @@ trait XmlDataSource extends js.Object {
     * @param origDs
     */
   def removeRecordByKey(key: js.Object, origDs: js.Object): Unit = js.native
+  
   /**
     * Clears the transaction log without updating anything in the data source
     *
@@ -299,6 +341,7 @@ trait XmlDataSource extends js.Object {
     */
   def rollback(): Unit = js.native
   def rollback(id: js.Object): Unit = js.native
+  
   /**
     * Posts to the settings.updateUrl using $.ajax, by serializing the changes as url params
     *
@@ -306,6 +349,7 @@ trait XmlDataSource extends js.Object {
     * @param error Specifies a custom function to be called when AJAX request to the updateUrl option fails(optional)
     */
   def saveChanges(success: js.Function, error: js.Function): Unit = js.native
+  
   /**
     * Gets/sets the schema definition.
     *
@@ -316,6 +360,7 @@ trait XmlDataSource extends js.Object {
   def schema(s: js.UndefOr[scala.Nothing], t: String): Unit = js.native
   def schema(s: js.Object): Unit = js.native
   def schema(s: js.Object, t: String): Unit = js.native
+  
   /**
     * Sets a cell value for the cell denoted by rowId and colId. Creates a transaction for the update operation and returns it
     *
@@ -325,6 +370,7 @@ trait XmlDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, it updates the datasource automatically and the transaction is still stored in the accumulated transaction log
     */
   def setCellValue(rowId: js.Object, colId: js.Object, `val`: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Sorts the data source locally. The result (filtered data) can be obtained by calling dataView().
     * Remote filtering can be performed by just calling dataBind() and setting the settings.filtering.expressions
@@ -337,6 +383,7 @@ trait XmlDataSource extends js.Object {
     * @param direction asc / desc direction
     */
   def sort(fields: js.Object, direction: String): Unit = js.native
+  
   /**
     * Gets/sets a list of paging settings
     *
@@ -344,18 +391,21 @@ trait XmlDataSource extends js.Object {
     */
   def sortSettings(): js.Object = js.native
   def sortSettings(s: js.Object): js.Object = js.native
+  
   /**
     * Parses the string and returns an evaluated JSON object
     *
     * @param s the JSON as string.
     */
   def stringToJSONObject(s: String): Unit = js.native
+  
   /**
     * Parses a string and returns a XML Document
     *
     * @param s the XML represented as a string
     */
   def stringToXmlObject(s: String): Unit = js.native
+  
   /**
     * Applicable only when the data source is bound to remote data.
     * Gets or sets summaries data.
@@ -369,6 +419,7 @@ trait XmlDataSource extends js.Object {
   def summariesResponse(key: js.UndefOr[scala.Nothing], dsObj: js.Object): js.Object = js.native
   def summariesResponse(key: String): js.Object = js.native
   def summariesResponse(key: String, dsObj: js.Object): js.Object = js.native
+  
   /**
     * Gets/sets a list of summaries settings.
     *
@@ -376,12 +427,14 @@ trait XmlDataSource extends js.Object {
     */
   def summariesSettings(): Unit = js.native
   def summariesSettings(s: js.Object): Unit = js.native
+  
   /**
     * Converts a HTML TABLE dom element to a JavaScript array of objects that contain the records data
     *
     * @param tableDOM TABLE dom element to transform
     */
   def tableToObject(tableDOM: Element): js.Object = js.native
+  
   /**
     * Toggle grouped record with the specified id and updates collections visible groupby data and data view
     *
@@ -389,10 +442,12 @@ trait XmlDataSource extends js.Object {
     * @param collapsed if true the record should be collapsed, otherwise expanded
     */
   def toggleGroupByRecord(id: String, collapsed: Boolean): Unit = js.native
+  
   /**
     * Returns the total number of records in the local data source
     */
   def totalLocalRecordsCount(): Double = js.native
+  
   /**
     * Applicable only when the data source is bound to remote data.
     * Gets / sets the total number of records in the data source.
@@ -441,10 +496,12 @@ trait XmlDataSource extends js.Object {
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.UndefOr[scala.Nothing], context: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
+  
   /**
     * Returns the accumulated transaction log as a string. The purpose of this is to be passed to URLs or used conveniently
     */
   def transactionsAsString(): String = js.native
+  
   /**
     * Returns transformed data according to transformed execution:
     * 1. Before paging and filtering
@@ -454,6 +511,7 @@ trait XmlDataSource extends js.Object {
     * @param transformedExecution
     */
   def transformedData(transformedExecution: js.Object): js.Object = js.native
+  
   /**
     * Gets/sets the type of the dataSource. If no parameter is specified, returns settings.type
     *
@@ -462,6 +520,7 @@ trait XmlDataSource extends js.Object {
     */
   def `type`(): String = js.native
   def `type`(t: js.Object): String = js.native
+  
   /**
     * Updates a record in the datasource. Creates a transaction that can be committed / rolled back
     *
@@ -470,9 +529,9 @@ trait XmlDataSource extends js.Object {
     * @param autoCommit if autoCommit is true, the datasource will be updated automatically and the transaction is still stored in the accumulated transaction log
     */
   def updateRow(rowId: js.Object, rowObject: js.Object, autoCommit: Boolean): js.Object = js.native
+  
   /**
     * Returns collection of data and non-data(grouped) records. Returns only visible records(children of collapsed grouped records are not included in the collection)
     */
   def visibleGroupByData(): js.Array[_] = js.native
 }
-

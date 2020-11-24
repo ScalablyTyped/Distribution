@@ -6,18 +6,25 @@ import typings.angularCompiler.outputJitMod.JitEvaluator
 import typings.angularCompiler.resourceLoaderMod.ResourceLoader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/jit_compiler_facade", JSImport.Namespace)
 @js.native
 object jitCompilerFacadeMod extends js.Object {
+  
+  def publishFacade(global: js.Any): Unit = js.native
+  
   @js.native
   class CompilerFacadeImpl () extends CompilerFacade {
     def this(jitEvaluator: JitEvaluator) = this()
+    
     @JSName("ResourceLoader")
     var ResourceLoader_CompilerFacadeImpl: Instantiable0[ResourceLoader] = js.native
+    
     var elementSchemaRegistry: js.Any = js.native
+    
     var jitEvaluator: js.Any = js.native
+    
     /**
       * JIT compiles an expression and returns the result of executing that expression.
       *
@@ -29,7 +36,4 @@ object jitCompilerFacadeMod extends js.Object {
       */
     var jitExpression: js.Any = js.native
   }
-  
-  def publishFacade(global: js.Any): Unit = js.native
 }
-

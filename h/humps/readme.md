@@ -10,9 +10,9 @@ Underscore-to-camelCase converter (and vice versa) for strings and object keys i
 | ------------------ | :-------------: |
 | Full name          | humps |
 | Keywords           | utils, camel, case, underscore, converter, strings, objects |
-| # releases         | 1 |
-| # dependents       | 307 |
-| # downloads        | 16770997 |
+| # releases         | 0 |
+| # dependents       | 338 |
+| # downloads        | 19242224 |
 | # stars            | 19 |
 
 ## Links

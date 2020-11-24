@@ -2,10 +2,12 @@ package typings.twilioChat.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Client {
+  
   type ConnectionState = typings.twilioNotifications.clientMod.ConnectionState
+  
   /* Rewritten from type alias, can be one of: 
     - typings.twilioChat.twilioChatStrings.trace
     - typings.twilioChat.twilioChatStrings.debug
@@ -16,5 +18,6 @@ package object Client {
     - scala.Null
   */
   type LogLevel = typings.twilioChat.mod.Client._LogLevel | scala.Null
+  
   type NotificationsChannelType = typings.twilioNotifications.connectorMod.ChannelType
 }

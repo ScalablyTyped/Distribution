@@ -10,9 +10,9 @@ Better introductions for websites and features with a step-by-step guide for you
 | ------------------ | :-------------: |
 | Full name          | intro.js |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 27 |
-| # downloads        | 1039267 |
+| # downloads        | 1462617 |
 | # stars            | 11 |
 
 ## Links

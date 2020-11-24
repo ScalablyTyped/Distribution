@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PCP Stream is a content which represents a file inside a package.
@@ -32,8 +32,8 @@ trait PackageStreamContent
      with XPropertySetInfoChangeNotifier
      with XCommandInfoChangeNotifier
      with XChild
-
 object PackageStreamContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -68,4 +68,3 @@ object PackageStreamContent {
     __obj.asInstanceOf[PackageStreamContent]
   }
 }
-

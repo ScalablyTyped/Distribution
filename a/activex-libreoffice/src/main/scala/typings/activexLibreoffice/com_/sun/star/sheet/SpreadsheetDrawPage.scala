@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShapeGrouper
 import typings.activexLibreoffice.com_.sun.star.drawing.XShapes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This abstract service is implemented by every page of a {@link SpreadsheetDocument} .
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
 trait SpreadsheetDrawPage
   extends XShapes
      with XShapeGrouper
-
 object SpreadsheetDrawPage {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -43,4 +43,3 @@ object SpreadsheetDrawPage {
     __obj.asInstanceOf[SpreadsheetDrawPage]
   }
 }
-

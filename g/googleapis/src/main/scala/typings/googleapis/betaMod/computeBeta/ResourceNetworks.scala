@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Networks")
 @js.native
 class ResourceNetworks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.networks.addPeering
     * @desc Adds a peering to the specified network.
@@ -104,6 +104,9 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.networks.delete
     * @desc Deletes the specified network.
@@ -190,6 +193,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networks.get
     * @desc Returns the specified network. Gets a list of available networks by
@@ -276,6 +280,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNetwork]
   ): Unit = js.native
+  
   /**
     * compute.networks.insert
     * @desc Creates a network in the specified project using the data included
@@ -364,6 +369,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networks.list
     * @desc Retrieves the list of networks available to the specified project.
@@ -462,6 +468,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNetworkList]
   ): Unit = js.native
+  
   /**
     * compute.networks.listPeeringRoutes
     * @desc Lists the peering routes exchanged over peering connection.
@@ -501,6 +508,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExchangedPeeringRoutesList]
   ): Unit = js.native
+  
   /**
     * compute.networks.patch
     * @desc Patches the specified network with the data included in the
@@ -596,6 +604,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networks.removePeering
     * @desc Removes a peering from the specified network.
@@ -687,6 +696,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networks.switchToCustomMode
     * @desc Switches the network mode from auto subnet mode to custom subnet
@@ -774,6 +784,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.networks.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -867,6 +878,7 @@ class ResourceNetworks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.networks.updatePeering
     * @desc Updates the specified network peering with the data included in the
@@ -902,4 +914,3 @@ class ResourceNetworks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

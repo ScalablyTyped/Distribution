@@ -2,11 +2,12 @@ package typings.videoJs.videoCoreMod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "isCrossOrigin")
 @js.native
 object isCrossOrigin extends js.Object {
+  
   /**
     * Returns whether the url passed is a cross domain request or not.
     *
@@ -17,4 +18,3 @@ object isCrossOrigin extends js.Object {
     */
   def apply(url: String): Boolean = js.native
 }
-

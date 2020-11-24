@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/addon-a11y/dist/components/Report/Info", "Info")
 @js.native
 object Info extends TopLevel[FunctionComponent[InfoProps]]
-

@@ -3,7 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.arcgisJsApi.esri.SymbolTableElement
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.arcgisJsApi.esri.RelationshipRampElement
 */
 trait LegendElement extends js.Object
-
 object LegendElement {
+  
   @scala.inline
   def ColorRampElement(
     constructor: js.Function,
@@ -29,6 +29,7 @@ object LegendElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendElement]
   }
+  
   @scala.inline
   def SymbolTableElement(
     constructor: js.Function,
@@ -41,6 +42,7 @@ object LegendElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendElement]
   }
+  
   @scala.inline
   def RelationshipRampElement(
     colors: js.Array[js.Array[Color_]],
@@ -57,6 +59,7 @@ object LegendElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendElement]
   }
+  
   @scala.inline
   def SizeRampElement(
     constructor: js.Function,
@@ -69,6 +72,7 @@ object LegendElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendElement]
   }
+  
   @scala.inline
   def OpacityRampElement(
     constructor: js.Function,
@@ -81,6 +85,7 @@ object LegendElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendElement]
   }
+  
   @scala.inline
   def HeatmapRampElement(
     constructor: js.Function,
@@ -94,4 +99,3 @@ object LegendElement {
     __obj.asInstanceOf[LegendElement]
   }
 }
-

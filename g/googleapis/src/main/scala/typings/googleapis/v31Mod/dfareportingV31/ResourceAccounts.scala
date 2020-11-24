@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Accounts")
 @js.native
 class ResourceAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.accounts.get
     * @desc Gets one account by ID.
@@ -42,6 +44,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * dfareporting.accounts.list
     * @desc Retrieves the list of accounts, possibly filtered. This method
@@ -78,6 +81,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.accounts.patch
     * @desc Updates an existing account. This method supports patch semantics.
@@ -108,6 +112,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * dfareporting.accounts.update
     * @desc Updates an existing account.
@@ -138,4 +143,3 @@ class ResourceAccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
 }
-

@@ -14,15 +14,11 @@ import typings.octokitTypes.routeMod.Route
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait graphql extends js.Object {
-  /**
-    * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
-    */
-  @JSName("endpoint")
-  var endpoint_Original: EndpointInterface[js.Object] = js.native
+  
   /**
     * Sends a GraphQL query request based on endpoint options
     * The GraphQL query must be specified in `options`.
@@ -38,10 +34,12 @@ trait graphql extends js.Object {
     */
   def apply[ResponseData](query: Query): GraphQlResponse[ResponseData] = js.native
   def apply[ResponseData](query: Query, parameters: RequestParameters): GraphQlResponse[ResponseData] = js.native
+  
   /**
     * Returns a new `endpoint` with updated route and parameters
     */
   def defaults(newDefaults: RequestParameters): graphql = js.native
+  
   /**
     * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
     */
@@ -65,7 +63,7 @@ trait graphql extends js.Object {
   /**
     * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
     */
-  def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 631 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
+  def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
     P, 
     /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
   ]) = js.native
@@ -73,12 +71,17 @@ trait graphql extends js.Object {
     * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
     */
   def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](
-    route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 631 */ js.Any,
+    route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any,
     parameters: P
   ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
     P, 
     /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
   ]) = js.native
+  /**
+    * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
+    */
+  @JSName("endpoint")
+  var endpoint_Original: EndpointInterface[js.Object] = js.native
   /**
     * Transforms a GitHub REST API endpoint into generic request options
     *
@@ -93,4 +96,3 @@ trait graphql extends js.Object {
     /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
   ]) = js.native
 }
-

@@ -2,10 +2,12 @@ package typings.linguiCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object i18nMod {
+  
   type Catalogs = org.scalablytyped.runtime.StringDictionary[typings.linguiCore.i18nMod.Catalog]
+  
   type Messages = org.scalablytyped.runtime.StringDictionary[
     java.lang.String | (js.Function1[
       /* context */ js.Function3[

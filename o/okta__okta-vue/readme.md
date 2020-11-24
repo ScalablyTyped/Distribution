@@ -10,15 +10,15 @@ Vue support for Okta
 | ------------------ | :-------------: |
 | Full name          | @okta/okta-vue |
 | Keywords           | oauth2 |
-| # releases         | 16 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 106204 |
+| # downloads        | 308045 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/okta/okta-oidc-js#readme)
-- [Bugs](https://github.com/okta/okta-oidc-js/issues)
-- [Repository](https://github.com/okta/okta-oidc-js)
+- [Homepage](https://github.com/okta/okta-vue#readme)
+- [Bugs](https://github.com/okta/okta-vue/issues)
+- [Repository](https://github.com/okta/okta-vue)
 - [Npm](https://www.npmjs.com/package/%40okta%2Fokta-vue)
     
 

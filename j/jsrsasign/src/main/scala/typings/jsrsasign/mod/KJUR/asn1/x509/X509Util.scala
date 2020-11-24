@@ -3,11 +3,12 @@ package typings.jsrsasign.mod.KJUR.asn1.x509
 import typings.jsrsasign.anon.Cakey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "KJUR.asn1.x509.X509Util")
 @js.native
 object X509Util extends js.Object {
+  
   /**
     * issue a certificate in PEM format
     * @param param parameter to issue a certificate
@@ -79,4 +80,3 @@ object X509Util extends js.Object {
   def newCertPEM(): String = js.native
   def newCertPEM(param: Cakey): String = js.native
 }
-

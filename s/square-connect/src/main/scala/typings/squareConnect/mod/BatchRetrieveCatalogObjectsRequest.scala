@@ -2,11 +2,12 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BatchRetrieveCatalogObjectsRequest")
 @js.native
 class BatchRetrieveCatalogObjectsRequest () extends js.Object {
+  
   /**
     * If `true`, the response will include additional objects that are related to the requested objects, as follows:
     *  * If the `objects` field of the response contains a CatalogItem, its associated CatalogCategory objects, CatalogTax objects,
@@ -15,9 +16,9 @@ class BatchRetrieveCatalogObjectsRequest () extends js.Object {
     *  in the `related_objects` field of the response.
     */
   var include_related_objects: js.UndefOr[Boolean] = js.native
+  
   /**
     * The IDs of the CatalogObjects to be retrieved.
     */
   var object_ids: js.Array[String] = js.native
 }
-

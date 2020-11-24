@@ -11,8 +11,8 @@ process.hrtime() to words
 | Full name          | pretty-hrtime |
 | Keywords           | hrtime, benchmark |
 | # releases         | 1 |
-| # dependents       | 315 |
-| # downloads        | 89303027 |
+| # dependents       | 333 |
+| # downloads        | 126919615 |
 | # stars            | 18 |
 
 ## Links

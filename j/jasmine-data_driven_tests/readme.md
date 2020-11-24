@@ -10,9 +10,9 @@ This plugin for Jasmine 2.x allows you to easily create data driven tests.
 | ------------------ | :-------------: |
 | Full name          | jasmine-data_driven_tests |
 | Keywords           | jasmine, unit, test, testing, helpers, all |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 60255 |
+| # downloads        | 39343 |
 | # stars            | 1 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjSearchResult used for search result row object.
@@ -19,6 +19,7 @@ trait nlobjSearchResult
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * return an array of all nlobjSearchColumn objects returned in this search.
     * @return {nlobjSearchColumn[]}
@@ -29,6 +30,7 @@ Instantiable0[js.Any] {
     * @since 2009.2
     */
   def getAllColumns(): Unit = js.native
+  
   /**
     * return the internalId for the record returned in this row.
     * @method
@@ -37,6 +39,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getId(): js.Any = js.native
+  
   /**
     * return the recordtype for the record returned in this row.
     * @method
@@ -45,6 +48,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getRecordType(): String = js.native
+  
   /**
     * return the text value of this return column if it's a select field.
     * @param {string} name the name of the search column
@@ -62,6 +66,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getText(name: String, join: String, summary: String): String = js.native
+  
   /**
     * return the value for a return column specified by name, join ID, and summary type.
     * @param {string} name the name of the search column
@@ -80,4 +85,3 @@ Instantiable0[js.Any] {
     */
   def getValue(name: String, join: String, summary: String): String = js.native
 }
-

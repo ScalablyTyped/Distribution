@@ -2,7 +2,7 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Pairs` module contains methods for creating and manipulating collision pair sets.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Pairs extends js.Object
-

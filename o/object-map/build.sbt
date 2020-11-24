@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-map"
-version := "1.0-dt-20200515Z-6703e2"
+version := "1.0-dt-20200515Z-c46466"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__analytics
 
-Typings are for version 0.4.1
+Typings are for version 0.6.2
 
 ## Library description:
 A analytics package for new firebase packages
@@ -10,9 +10,9 @@ A analytics package for new firebase packages
 | ------------------ | :-------------: |
 | Full name          | @firebase/analytics |
 | Keywords           | - |
-| # releases         | 159 |
-| # dependents       | 3 |
-| # downloads        | 1954690 |
+| # releases         | 771 |
+| # dependents       | 8 |
+| # downloads        | 20899865 |
 | # stars            | 0 |
 
 ## Links

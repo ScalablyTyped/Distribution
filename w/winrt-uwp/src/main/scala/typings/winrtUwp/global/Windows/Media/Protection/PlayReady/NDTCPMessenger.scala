@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sends PlayReady-ND messages and challenges using the TCP network protocol. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDTCPMessenger")
@@ -16,4 +16,3 @@ class NDTCPMessenger protected ()
     */
   def this(remoteHostName: String, remoteHostPort: Double) = this()
 }
-

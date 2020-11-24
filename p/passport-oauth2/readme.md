@@ -11,8 +11,8 @@ OAuth 2.0 authentication strategy for Passport.
 | Full name          | passport-oauth2 |
 | Keywords           | passport, auth, authn, authentication, authz, authorization, oauth, oauth2 |
 | # releases         | 2 |
-| # dependents       | 435 |
-| # downloads        | 8963340 |
+| # dependents       | 515 |
+| # downloads        | 12084604 |
 | # stars            | 18 |
 
 ## Links

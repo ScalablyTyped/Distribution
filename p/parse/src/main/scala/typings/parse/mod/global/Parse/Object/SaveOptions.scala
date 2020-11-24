@@ -9,7 +9,7 @@ import typings.parse.mod.global.Parse.UseMasterKeyOption
 import typings.parse.mod.global.Parse.WaitOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SaveOptions
@@ -20,12 +20,11 @@ trait SaveOptions
      with SessionTokenOption
      with UseMasterKeyOption
      with WaitOption
-
 object SaveOptions {
+  
   @scala.inline
   def apply(): SaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveOptions]
   }
 }
-

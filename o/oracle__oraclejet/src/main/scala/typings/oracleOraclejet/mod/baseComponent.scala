@@ -113,12 +113,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait baseComponent[SP /* <: baseComponentSettableProperties */] extends JetElement[SP] {
-  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Object | Null], _]) | Null = js.native
-  var translations: js.Object | Null = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -905,15 +904,22 @@ trait baseComponent[SP /* <: baseComponentSettableProperties */] extends JetElem
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_translations(property: translations): js.Object | Null = js.native
+  
+  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Object | Null], _]) | Null = js.native
+  
   def refresh(): Unit = js.native
+  
   def setProperties(properties: baseComponentSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, baseComponentSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: js.Object): Unit = js.native
+  
+  var translations: js.Object | Null = js.native
 }
-

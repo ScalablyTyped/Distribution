@@ -11,12 +11,12 @@ Node.js interface to the GraphViz graphing tool
 | Full name          | graphviz |
 | Keywords           | graphviz, dot |
 | # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 4340417 |
+| # dependents       | 68 |
+| # downloads        | 6341323 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](http://algorithmique.net/)
+- [Homepage](https://github.com/glejeune/node-graphviz#readme)
 - [Bugs](https://github.com/glejeune/node-graphviz/issues)
 - [Repository](https://github.com/glejeune/node-graphviz)
 - [Npm](https://www.npmjs.com/package/graphviz)

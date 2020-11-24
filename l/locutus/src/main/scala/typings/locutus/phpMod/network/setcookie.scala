@@ -2,11 +2,12 @@ package typings.locutus.phpMod.network
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locutus/php", "network.setcookie")
 @js.native
 object setcookie extends js.Object {
+  
   def apply(
     name: js.UndefOr[js.Any],
     value: js.UndefOr[js.Any],
@@ -16,4 +17,3 @@ object setcookie extends js.Object {
     secure: js.UndefOr[js.Any]
   ): js.Any = js.native
 }
-

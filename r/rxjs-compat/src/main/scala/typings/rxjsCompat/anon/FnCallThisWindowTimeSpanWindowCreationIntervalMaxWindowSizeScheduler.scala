@@ -2,10 +2,11 @@ package typings.rxjsCompat.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler extends js.Object {
+  
   def apply[T](windowTimeSpan: Double): js.Any = js.native
   def apply[T](
     windowTimeSpan: Double,
@@ -25,4 +26,3 @@ trait FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler exten
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
 }
-

@@ -11,11 +11,12 @@ import typings.plottable.interfacesMod.Projector
 import typings.plottable.xyPlotMod.XYPlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots/linePlot", JSImport.Namespace)
 @js.native
 object linePlotMod extends js.Object {
+  
   /* keyof plottable.anon.Basis */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.linear
     - typings.plottable.plottableStrings.linearClosed
@@ -32,6 +33,35 @@ object linePlotMod extends js.Object {
     - typings.plottable.plottableStrings.monotone
   */
   trait CurveName extends js.Object
+  @js.native
+  object CurveName extends js.Object {
+    
+    var basis: typings.plottable.plottableStrings.basis = js.native
+    
+    var basisClosed: typings.plottable.plottableStrings.basisClosed = js.native
+    
+    var basisOpen: typings.plottable.plottableStrings.basisOpen = js.native
+    
+    var bundle: typings.plottable.plottableStrings.bundle = js.native
+    
+    var cardinal: typings.plottable.plottableStrings.cardinal = js.native
+    
+    var cardinalClosed: typings.plottable.plottableStrings.cardinalClosed = js.native
+    
+    var cardinalOpen: typings.plottable.plottableStrings.cardinalOpen = js.native
+    
+    var linear: typings.plottable.plottableStrings.linear = js.native
+    
+    var linearClosed: typings.plottable.plottableStrings.linearClosed = js.native
+    
+    var monotone: typings.plottable.plottableStrings.monotone = js.native
+    
+    var step: typings.plottable.plottableStrings.step = js.native
+    
+    var stepAfter: typings.plottable.plottableStrings.stepAfter = js.native
+    
+    var stepBefore: typings.plottable.plottableStrings.stepBefore = js.native
+  }
   
   @js.native
   /**
@@ -40,11 +70,9 @@ object linePlotMod extends js.Object {
     * @constructor
     */
   class Line[X] () extends XYPlot[X, Double] {
+    
     var _autorangeSmooth: js.Any = js.native
-    var _collapseDenseVerticalLinesEnabled: js.Any = js.native
-    var _croppedRenderingEnabled: js.Any = js.native
-    var _curve: js.Any = js.native
-    var _downsamplingEnabled: js.Any = js.native
+    
     /**
       * Iterates over the line points collapsing points that fall on the same
       * floored x coordinate.
@@ -57,7 +85,15 @@ object linePlotMod extends js.Object {
       * correctly.
       */
     /* private */ def _bucketByX(dataset: js.Any, indices: js.Any, xFn: js.Any, yFn: js.Any): js.Any = js.native
+    
+    var _collapseDenseVerticalLinesEnabled: js.Any = js.native
+    
     /* protected */ def _constructLineProjector(xProjector: Projector, yProjector: Projector): js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, String] = js.native
+    
+    var _croppedRenderingEnabled: js.Any = js.native
+    
+    var _curve: js.Any = js.native
+    
     /**
       * Return a d3.Line whose .x, .y, and .defined accessors are hooked up to the xProjector and yProjector
       * after they've been fed the dataset, and whose curve is configured to this plot's curve.
@@ -71,7 +107,11 @@ object linePlotMod extends js.Object {
     /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: js.UndefOr[scala.Nothing], yProjector: IAccessor[_]): Line_[_] = js.native
     /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[_]): Line_[_] = js.native
     /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[_], yProjector: IAccessor[_]): Line_[_] = js.native
+    
+    var _downsamplingEnabled: js.Any = js.native
+    
     /* private */ def _filterCroppedRendering(dataset: js.Any, indices: js.Any): js.Any = js.native
+    
     /**
       * Collapse line geometry
       *
@@ -80,11 +120,17 @@ object linePlotMod extends js.Object {
       * max y-coordinate of all those points.
       */
     /* private */ def _filterDenseLines(dataset: js.Any, indices: js.Any): js.Any = js.native
+    
     /* private */ def _filterDownsampling(dataset: js.Any, indices: js.Any): js.Any = js.native
+    
     /* protected */ def _getCurveFactory(): CurveFactory | CurveFactoryLineOnly = js.native
+    
     /* private */ def _getEdgeIntersectionPoints(): js.Any = js.native
+    
     /* protected */ def _getResetYFunction(): js.Function3[/* d */ js.Any, /* i */ Double, /* dataset */ Dataset, Double] = js.native
+    
     /* private */ def _setScaleSnapping(): js.Any = js.native
+    
     /**
       * Gets whether or not the autoranging is done smoothly.
       */
@@ -96,6 +142,7 @@ object linePlotMod extends js.Object {
       * and deactivating the nice domain feature on the scales
       */
     def autorangeSmooth(autorangeSmooth: Boolean): this.type = js.native
+    
     /**
       * Gets if collapseDenseLines is enabled
       *
@@ -111,6 +158,7 @@ object linePlotMod extends js.Object {
       * @returns {Plots.Line} The calling Plots.Line
       */
     def collapseDenseLinesEnabled(collapseDenseLines: Boolean): this.type = js.native
+    
     /**
       * Gets if croppedRendering is enabled
       *
@@ -123,6 +171,7 @@ object linePlotMod extends js.Object {
       * @returns {Plots.Line} The calling Plots.Line
       */
     def croppedRenderingEnabled(croppedRendering: Boolean): this.type = js.native
+    
     /**
       * Gets the curve function associated with the plot.
       *
@@ -138,6 +187,7 @@ object linePlotMod extends js.Object {
       * @return Plots.Line
       */
     def curve(curve: CurveName): this.type = js.native
+    
     /**
       * Gets if downsampling is enabled
       *
@@ -150,6 +200,7 @@ object linePlotMod extends js.Object {
       * @returns {Plots.Line} The calling Plots.Line
       */
     def downsamplingEnabled(downsampling: Boolean): this.type = js.native
+    
     /**
       * Returns the PlotEntity nearest to the query point by X then by Y, or undefined if no PlotEntity can be found.
       *
@@ -158,23 +209,4 @@ object linePlotMod extends js.Object {
       */
     def entityNearestByXThenY(queryPoint: Point): IPlotEntity = js.native
   }
-  
-  @js.native
-  object CurveName extends js.Object {
-    var basis: typings.plottable.plottableStrings.basis = js.native
-    var basisClosed: typings.plottable.plottableStrings.basisClosed = js.native
-    var basisOpen: typings.plottable.plottableStrings.basisOpen = js.native
-    var bundle: typings.plottable.plottableStrings.bundle = js.native
-    var cardinal: typings.plottable.plottableStrings.cardinal = js.native
-    var cardinalClosed: typings.plottable.plottableStrings.cardinalClosed = js.native
-    var cardinalOpen: typings.plottable.plottableStrings.cardinalOpen = js.native
-    var linear: typings.plottable.plottableStrings.linear = js.native
-    var linearClosed: typings.plottable.plottableStrings.linearClosed = js.native
-    var monotone: typings.plottable.plottableStrings.monotone = js.native
-    var step: typings.plottable.plottableStrings.step = js.native
-    var stepAfter: typings.plottable.plottableStrings.stepAfter = js.native
-    var stepBefore: typings.plottable.plottableStrings.stepBefore = js.native
-  }
-  
 }
-

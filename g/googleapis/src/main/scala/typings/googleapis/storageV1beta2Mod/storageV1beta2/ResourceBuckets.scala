@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta2", "storage_v1beta2.Resource$Buckets")
 @js.native
 class ResourceBuckets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.buckets.delete
     * @desc Permanently deletes an empty bucket.
@@ -39,6 +41,7 @@ class ResourceBuckets protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceBucketsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceBucketsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * storage.buckets.get
     * @desc Returns metadata for the specified bucket.
@@ -70,6 +73,7 @@ class ResourceBuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucket]
   ): Unit = js.native
+  
   /**
     * storage.buckets.insert
     * @desc Creates a new bucket.
@@ -100,6 +104,7 @@ class ResourceBuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucket]
   ): Unit = js.native
+  
   /**
     * storage.buckets.list
     * @desc Retrieves a list of buckets for a given project.
@@ -131,6 +136,7 @@ class ResourceBuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuckets]
   ): Unit = js.native
+  
   /**
     * storage.buckets.patch
     * @desc Updates a bucket. This method supports patch semantics.
@@ -163,6 +169,7 @@ class ResourceBuckets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucket]
   ): Unit = js.native
+  
   /**
     * storage.buckets.update
     * @desc Updates a bucket.
@@ -196,4 +203,3 @@ class ResourceBuckets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBucket]
   ): Unit = js.native
 }
-

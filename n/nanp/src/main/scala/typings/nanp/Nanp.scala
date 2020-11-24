@@ -2,10 +2,11 @@ package typings.nanp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Nanp extends js.Object {
+  
   /**
     * Test if a string is a North American Number Plan (phone) number.
     * 
@@ -13,6 +14,7 @@ trait Nanp extends js.Object {
     * @returns {boolean} True if the given phoneNumber is a NANP number.
     */
   def apply(string: String): Boolean = js.native
+  
   /**
     * Removes all parenthesis, dashes, dots, spaces.
     * Removes leading `1` or `+1` only on strings longer than 10 digits 
@@ -22,4 +24,3 @@ trait Nanp extends js.Object {
     */
   def strip(phoneNumber: String): String = js.native
 }
-

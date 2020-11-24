@@ -2,7 +2,7 @@ package typings.luminoMessaging.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/messaging", "Message")
 @js.native
@@ -13,35 +13,7 @@ class Message protected () extends js.Object {
     * @param type - The type of the message.
     */
   def this(`type`: String) = this()
-  /**
-    * Test whether the message is conflatable.
-    *
-    * #### Notes
-    * Message conflation is an advanced topic. Most message types will
-    * not make use of this feature.
-    *
-    * If a conflatable message is posted to a handler while another
-    * conflatable message of the same `type` has already been posted
-    * to the handler, the `conflate()` method of the existing message
-    * will be invoked. If that method returns `true`, the new message
-    * will not be enqueued. This allows messages to be compressed, so
-    * that only a single instance of the message type is processed per
-    * cycle, no matter how many times messages of that type are posted.
-    *
-    * Custom message types may reimplement this property.
-    *
-    * The default implementation is always `false`.
-    */
-  val isConflatable: Boolean = js.native
-  /**
-    * The type of the message.
-    *
-    * #### Notes
-    * The `type` of a message should be related directly to its actual
-    * runtime type. This means that `type` can and will be used to cast
-    * the message to the relevant derived `Message` subtype.
-    */
-  val `type`: String = js.native
+  
   /**
     * Conflate this message with another message of the same `type`.
     *
@@ -74,5 +46,35 @@ class Message protected () extends js.Object {
     * The default implementation always returns `false`.
     */
   def conflate(other: Message): Boolean = js.native
+  
+  /**
+    * Test whether the message is conflatable.
+    *
+    * #### Notes
+    * Message conflation is an advanced topic. Most message types will
+    * not make use of this feature.
+    *
+    * If a conflatable message is posted to a handler while another
+    * conflatable message of the same `type` has already been posted
+    * to the handler, the `conflate()` method of the existing message
+    * will be invoked. If that method returns `true`, the new message
+    * will not be enqueued. This allows messages to be compressed, so
+    * that only a single instance of the message type is processed per
+    * cycle, no matter how many times messages of that type are posted.
+    *
+    * Custom message types may reimplement this property.
+    *
+    * The default implementation is always `false`.
+    */
+  val isConflatable: Boolean = js.native
+  
+  /**
+    * The type of the message.
+    *
+    * #### Notes
+    * The `type` of a message should be related directly to its actual
+    * runtime type. This means that `type` can and will be used to cast
+    * the message to the relevant derived `Message` subtype.
+    */
+  val `type`: String = js.native
 }
-

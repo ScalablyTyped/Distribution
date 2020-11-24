@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OutputDecorator
   extends Instantiable0[js.Any]
      with Instantiable1[/* bindingPropertyName */ String, js.Any] {
+  
   /**
     * Decorator that marks a class field as an output property and supplies configuration metadata.
     * The DOM property bound to the output property is automatically updated during change detection.
@@ -29,4 +30,3 @@ trait OutputDecorator
   def apply(): js.Any = js.native
   def apply(bindingPropertyName: String): js.Any = js.native
 }
-

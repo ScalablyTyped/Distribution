@@ -2,7 +2,7 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.highcharts.highchartsStrings._empty
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.highcharts.highchartsStrings.y
 */
 trait AnnotationDraggableValue extends js.Object
-
 object AnnotationDraggableValue {
+  
   @scala.inline
   def _empty: typings.highcharts.highchartsStrings._empty = "".asInstanceOf[typings.highcharts.highchartsStrings._empty]
+  
   @scala.inline
   def x: typings.highcharts.highchartsStrings.x = "x".asInstanceOf[typings.highcharts.highchartsStrings.x]
+  
   @scala.inline
   def xy: typings.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typings.highcharts.highchartsStrings.xy]
+  
   @scala.inline
   def y: typings.highcharts.highchartsStrings.y = "y".asInstanceOf[typings.highcharts.highchartsStrings.y]
 }
-

@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.paginationMod.PaginationProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Pagination")
+@JSImport("reactstrap/lib", "Pagination")
 @js.native
-class Pagination[T] ()
+class Pagination ()
   extends Component[PaginationProps, js.Object, js.Any]
-

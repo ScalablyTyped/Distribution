@@ -3,26 +3,11 @@ package typings.fridaGum.Java
 import typings.fridaGum.NativePointerValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassFactory extends js.Object {
-  /**
-    * Path to cache directory currently being used. For the default class
-    * factory this is updated by the first call to `Java.perform()`.
-    */
-  var cacheDir: String = js.native
-  /**
-    * Class loader currently being used. For the default class factory this
-    * is updated by the first call to `Java.perform()`.
-    */
-  val loader: typings.fridaGum.anon.Wrapper | Null = js.native
-  /**
-    * Naming convention to use for temporary files.
-    *
-    * Defaults to `{ prefix: "frida", suffix: "dat" }`.
-    */
-  var tempFileNaming: TempFileNaming = js.native
+  
   /**
     * Creates a Java array with elements of the specified `type`, from a
     * JavaScript array `elements`. The resulting Java array behaves like
@@ -34,6 +19,13 @@ trait ClassFactory extends js.Object {
     *                 Java array.
     */
   def array(`type`: String, elements: js.Array[_]): js.Array[_] = js.native
+  
+  /**
+    * Path to cache directory currently being used. For the default class
+    * factory this is updated by the first call to `Java.perform()`.
+    */
+  var cacheDir: String = js.native
+  
   /**
     * Creates a JavaScript wrapper given the existing instance at `handle` of
     * given class `klass` as returned from `Java.use()`.
@@ -43,6 +35,7 @@ trait ClassFactory extends js.Object {
     */
   def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: Wrapper[From], klass: Wrapper[To]): Wrapper[To] = js.native
   def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: NativePointerValue, klass: Wrapper[To]): Wrapper[To] = js.native
+  
   /**
     * Enumerates live instances of the `className` class by scanning the Java
     * VM's heap.
@@ -51,24 +44,41 @@ trait ClassFactory extends js.Object {
     * @param callbacks Object with callbacks.
     */
   def choose(className: String, callbacks: ChooseCallbacks): Unit = js.native
+  
+  /**
+    * Class loader currently being used. For the default class factory this
+    * is updated by the first call to `Java.perform()`.
+    */
+  val loader: typings.fridaGum.anon.Wrapper | Null = js.native
+  
   /**
     * Opens the .dex file at `filePath`.
     *
     * @param filePath Path to .dex to open.
     */
   def openClassFile(filePath: String): DexFile = js.native
+  
   /**
     * Creates a new Java class.
     *
     * @param spec Object describing the class to be created.
     */
   def registerClass(spec: ClassSpec): typings.fridaGum.anon.Wrapper = js.native
+  
   /**
     * Duplicates a JavaScript wrapper for later use outside replacement method.
     *
     * @param obj An existing wrapper retrieved from `this` in replacement method.
     */
   def retain[T /* <: Members[T] */](obj: Wrapper[T]): Wrapper[T] = js.native
+  
+  /**
+    * Naming convention to use for temporary files.
+    *
+    * Defaults to `{ prefix: "frida", suffix: "dat" }`.
+    */
+  var tempFileNaming: TempFileNaming = js.native
+  
   /**
     * Dynamically generates a JavaScript wrapper for `className` that you can
     * instantiate objects from by calling `$new()` on to invoke a constructor.
@@ -81,4 +91,3 @@ trait ClassFactory extends js.Object {
     */
   def use[T /* <: Members[T] */](className: String): Wrapper[T] = js.native
 }
-

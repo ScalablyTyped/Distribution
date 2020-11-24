@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2transitgateway/route", "Route")
 @js.native
@@ -21,28 +21,32 @@ class Route protected () extends CustomResource {
     */
   def this(name: String, args: RouteArgs) = this()
   def this(name: String, args: RouteArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Indicates whether to drop traffic that matches this route (default to `false`).
     */
   val blackhole: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
-    * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
+    * IPv4 or IPv6 RFC1924 CIDR used for destination matches. Routing decisions are based on the most specific match.
     */
   val destinationCidrBlock: Output_[String] = js.native
+  
   /**
     * Identifier of EC2 Transit Gateway Attachment (required if `blackhole` is set to false).
     */
   val transitGatewayAttachmentId: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
   val transitGatewayRouteTableId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2transitgateway/route", "Route")
 @js.native
 object Route extends js.Object {
+  
   /**
     * Get an existing Route resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object Route extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Route = js.native
   def get(name: String, id: Input[ID], state: RouteState): Route = js.native
   def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = js.native
+  
   /**
     * Returns true if the given object is an instance of Route.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.parse5SaxParser.parse5SaxParserStrings.startTag
 import typings.parse5SaxParser.parse5SaxParserStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming [SAX](https://en.wikipedia.org/wiki/Simple_API_for_XML)-style HTML parser.
@@ -42,6 +42,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SAXParser extends Transform {
+  
   /**
     * Raised when parser encounters a comment.
     *
@@ -77,6 +78,7 @@ trait SAXParser extends Transform {
     */
   @JSName("on")
   def on_text(event: text, listener: js.Function1[/* text */ TextToken, Unit]): this.type = js.native
+  
   /**
     * Stops parsing. Useful if you want the parser to stop consuming CPU time once you've obtained the desired info
     * from the input stream. Doesn't prevent piping, so that data will flow through the parser as usual.
@@ -106,4 +108,3 @@ trait SAXParser extends Transform {
     */
   def stop(): Unit = js.native
 }
-

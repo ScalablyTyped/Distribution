@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.Search")
 @js.native
@@ -21,4 +21,3 @@ object Search
   * - `skipCurrent`: Whether or not to include the current line in the search. Default to `false`.
   **/
 Instantiable0[typings.ace.AceAjax.Search]
-

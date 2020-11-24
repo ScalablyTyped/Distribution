@@ -10,9 +10,9 @@ Compares two HTML
 | ------------------ | :-------------: |
 | Full name          | @markedjs/html-differ |
 | Keywords           | html-differ, html-diff, htmldiffer, htmldiff, html, differ, diff |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 8288 |
+| # releases         | 7 |
+| # dependents       | 1 |
+| # downloads        | 12414 |
 | # stars            | 0 |
 
 ## Links

@@ -6,80 +6,108 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a feed. This class encapsulates the information in the /rss/channel element in RSS 2.0 or the atom:feed element in Atom 1.0. */
 @js.native
 trait SyndicationFeed extends js.Object {
+  
   /** Gets the list of custom attributes of the element. */
   var attributeExtensions: IVector[SyndicationAttribute] = js.native
+  
   /** Gets the authors of an item. This property represents the collection of all the atom:author elements under atom:entry. */
   var authors: IVector[SyndicationPerson] = js.native
+  
   /** Gets or sets the base URI for the element. This property represents the xml:base attribute on the element. It may be inherited from an ancestor element. */
   var baseUri: Uri = js.native
+  
   /** Gets a collection of categories of the feed. This property represents the collection of all the atom:category elements under atom:feed. */
   var categories: IVector[SyndicationCategory] = js.native
+  
   /** Gets a collection of the contributors of the feed. This property represents the collection of all the atom:contributor elements under atom:feed. */
   var contributors: IVector[SyndicationPerson] = js.native
+  
   /** Gets the list of child elements within the element. */
   var elementExtensions: IVector[ISyndicationNode] = js.native
+  
   /** Gets the first Uniform Resource Identifier (URI) in a sequence. This property represents the atom:link element with attribute rel=”first”. */
   var firstUri: Uri = js.native
+  
   /** Gets or sets the generator of the feed. This property represents the atom:generator element or the generator element in RSS 2.0. */
   var generator: SyndicationGenerator = js.native
-  /** Gets or sets the Uniform Resource Identifier (URI) for the image for the feed. This property represents the atom:icon element. */
-  var iconUri: Uri = js.native
-  /** Gets or sets the identifier for the syndication feed. */
-  var id: String = js.native
-  /** Gets or sets the Uniform Resource Identifier (URI) of the logo for the feed. This property represents the atom:logo element or image/uri element in RSS 2.0. */
-  var imageUri: Uri = js.native
-  /** Gets the collection of items in the feed. This property represents the collection of atom:entry elements or a collection of item elements in RSS 2.0. */
-  var items: IVector[SyndicationItem] = js.native
-  /** Gets or sets the language of the element. This property represents the xml:lang attribute on the element. It may be inherited from an ancestor element. It must be valid according to XML 1.0. */
-  var language: String = js.native
-  /** Gets or sets the time the feed was last modified. This property represents the /rss/channel/lastBuildDate or atom:updated element. */
-  var lastUpdatedTime: Date = js.native
-  /** Gets the last Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel=”last”. */
-  var lastUri: Uri = js.native
-  /** Gets the links associated with the feed. This property represents a collection of the atom:link elements under atom:feed. In RSS 2.0, this maps to the link element. */
-  var links: IVector[SyndicationLink] = js.native
-  /** Gets the next Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel="next". */
-  var nextUri: Uri = js.native
-  /** Gets or sets the local name of the element. */
-  var nodeName: String = js.native
-  /** Gets or sets the namespace of the element. */
-  var nodeNamespace: String = js.native
-  /** Gets or sets the text content of the element. If the element contains only child elements, this property is NULL. */
-  var nodeValue: String = js.native
-  /** Gets the previous Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel="previous". */
-  var previousUri: Uri = js.native
-  /** Gets or sets information about the rights for the feed. This property represents the atom:rights element or the copyright element in RSS 2.0. */
-  var rights: ISyndicationText = js.native
-  /** Gets the format of the source document. If the object is not loaded from a document, this property will return SyndicationFormat_Atom10. */
-  var sourceFormat: SyndicationFormat = js.native
-  /** Gets or sets the subtitle of the feed. This property represents the atom:subtitle element or the description element in RSS 2.0. */
-  var subtitle: ISyndicationText = js.native
-  /** Gets or sets the title of the syndication feed. */
-  var title: ISyndicationText = js.native
+  
   /**
     * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
     * @param format The format of the data.
     * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
     */
   def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+  
+  /** Gets or sets the Uniform Resource Identifier (URI) for the image for the feed. This property represents the atom:icon element. */
+  var iconUri: Uri = js.native
+  
+  /** Gets or sets the identifier for the syndication feed. */
+  var id: String = js.native
+  
+  /** Gets or sets the Uniform Resource Identifier (URI) of the logo for the feed. This property represents the atom:logo element or image/uri element in RSS 2.0. */
+  var imageUri: Uri = js.native
+  
+  /** Gets the collection of items in the feed. This property represents the collection of atom:entry elements or a collection of item elements in RSS 2.0. */
+  var items: IVector[SyndicationItem] = js.native
+  
+  /** Gets or sets the language of the element. This property represents the xml:lang attribute on the element. It may be inherited from an ancestor element. It must be valid according to XML 1.0. */
+  var language: String = js.native
+  
+  /** Gets or sets the time the feed was last modified. This property represents the /rss/channel/lastBuildDate or atom:updated element. */
+  var lastUpdatedTime: Date = js.native
+  
+  /** Gets the last Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel=”last”. */
+  var lastUri: Uri = js.native
+  
+  /** Gets the links associated with the feed. This property represents a collection of the atom:link elements under atom:feed. In RSS 2.0, this maps to the link element. */
+  var links: IVector[SyndicationLink] = js.native
+  
   /**
     * Initializes the object from the given feed string, which can be in either RSS 2.0 or Atom 1.0 format.
     * @param feed The feed string, which can be in either RSS 2.0 or Atom 1.0 format.
     */
   def load(feed: String): Unit = js.native
+  
   /**
     * Initializes the SyndicationFeed object from the given DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
     * @param feedDocument The DOM object which contains XML content in either RSS 2.0 or Atom 1.0 format.
     */
   def loadFromXml(feedDocument: XmlDocument): Unit = js.native
+  
+  /** Gets the next Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel="next". */
+  var nextUri: Uri = js.native
+  
+  /** Gets or sets the local name of the element. */
+  var nodeName: String = js.native
+  
+  /** Gets or sets the namespace of the element. */
+  var nodeNamespace: String = js.native
+  
+  /** Gets or sets the text content of the element. If the element contains only child elements, this property is NULL. */
+  var nodeValue: String = js.native
+  
+  /** Gets the previous Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel="previous". */
+  var previousUri: Uri = js.native
+  
+  /** Gets or sets information about the rights for the feed. This property represents the atom:rights element or the copyright element in RSS 2.0. */
+  var rights: ISyndicationText = js.native
+  
+  /** Gets the format of the source document. If the object is not loaded from a document, this property will return SyndicationFormat_Atom10. */
+  var sourceFormat: SyndicationFormat = js.native
+  
+  /** Gets or sets the subtitle of the feed. This property represents the atom:subtitle element or the description element in RSS 2.0. */
+  var subtitle: ISyndicationText = js.native
+  
+  /** Gets or sets the title of the syndication feed. */
+  var title: ISyndicationText = js.native
 }
-
 object SyndicationFeed {
+  
   @scala.inline
   def apply(
     attributeExtensions: IVector[SyndicationAttribute],
@@ -114,74 +142,104 @@ object SyndicationFeed {
     val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions.asInstanceOf[js.Any], authors = authors.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], contributors = contributors.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], firstUri = firstUri.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), iconUri = iconUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageUri = imageUri.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], lastUpdatedTime = lastUpdatedTime.asInstanceOf[js.Any], lastUri = lastUri.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], load = js.Any.fromFunction1(load), loadFromXml = js.Any.fromFunction1(loadFromXml), nextUri = nextUri.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], previousUri = previousUri.asInstanceOf[js.Any], rights = rights.asInstanceOf[js.Any], sourceFormat = sourceFormat.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyndicationFeed]
   }
+  
   @scala.inline
   implicit class SyndicationFeedOps[Self <: SyndicationFeed] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = this.set("attributeExtensions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAuthors(value: IVector[SyndicationPerson]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBaseUri(value: Uri): Self = this.set("baseUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCategories(value: IVector[SyndicationCategory]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setContributors(value: IVector[SyndicationPerson]): Self = this.set("contributors", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setElementExtensions(value: IVector[ISyndicationNode]): Self = this.set("elementExtensions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFirstUri(value: Uri): Self = this.set("firstUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGenerator(value: SyndicationGenerator): Self = this.set("generator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = this.set("getXmlDocument", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIconUri(value: Uri): Self = this.set("iconUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImageUri(value: Uri): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItems(value: IVector[SyndicationItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLastUpdatedTime(value: Date): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLastUri(value: Uri): Self = this.set("lastUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLinks(value: IVector[SyndicationLink]): Self = this.set("links", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLoad(value: String => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setLoadFromXml(value: XmlDocument => Unit): Self = this.set("loadFromXml", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setNextUri(value: Uri): Self = this.set("nextUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNodeNamespace(value: String): Self = this.set("nodeNamespace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNodeValue(value: String): Self = this.set("nodeValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPreviousUri(value: Uri): Self = this.set("previousUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRights(value: ISyndicationText): Self = this.set("rights", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSourceFormat(value: SyndicationFormat): Self = this.set("sourceFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSubtitle(value: ISyndicationText): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTitle(value: ISyndicationText): Self = this.set("title", value.asInstanceOf[js.Any])
   }
-  
 }
-

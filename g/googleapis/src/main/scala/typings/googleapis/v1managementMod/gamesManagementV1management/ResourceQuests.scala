@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Quests")
 @js.native
 class ResourceQuests protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.quests.reset
     * @desc Resets all player progress on the quest with the given ID for the
@@ -39,6 +41,7 @@ class ResourceQuests protected () extends js.Object {
   ): Unit = js.native
   def reset(params: ParamsResourceQuestsReset, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceQuestsReset, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * gamesManagement.quests.resetAll
     * @desc Resets all player progress on all quests for the currently
@@ -64,6 +67,7 @@ class ResourceQuests protected () extends js.Object {
   ): Unit = js.native
   def resetAll(params: ParamsResourceQuestsResetall, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetAll(params: ParamsResourceQuestsResetall, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * gamesManagement.quests.resetAllForAllPlayers
     * @desc Resets all draft quests for all players. This method is only
@@ -92,6 +96,7 @@ class ResourceQuests protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.quests.resetForAllPlayers
     * @desc Resets all player progress on the quest with the given ID for all
@@ -122,6 +127,7 @@ class ResourceQuests protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.quests.resetMultipleForAllPlayers
     * @desc Resets quests with the given IDs for all players. This method is
@@ -153,4 +159,3 @@ class ResourceQuests protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

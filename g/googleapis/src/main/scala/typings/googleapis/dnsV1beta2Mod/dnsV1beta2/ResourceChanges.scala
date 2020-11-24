@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1beta2", "dns_v1beta2.Resource$Changes")
 @js.native
 class ResourceChanges protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.changes.create
     * @alias dns.changes.create
@@ -43,6 +45,7 @@ class ResourceChanges protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChange]
   ): Unit = js.native
+  
   /**
     * dns.changes.get
     * @alias dns.changes.get
@@ -73,6 +76,7 @@ class ResourceChanges protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChange]
   ): Unit = js.native
+  
   /**
     * dns.changes.list
     * @alias dns.changes.list
@@ -106,4 +110,3 @@ class ResourceChanges protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChangesListResponse]
   ): Unit = js.native
 }
-

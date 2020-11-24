@@ -2,7 +2,7 @@ package typings.googlemaps.global.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Animations that can be played on a marker. Use the
@@ -13,9 +13,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("google.maps.Animation")
 @js.native
 object Animation extends js.Object {
-  /* 1 */ val BOUNCE: typings.googlemaps.google.maps.Animation.BOUNCE with Double = js.native
-  /* 2 */ val DROP: typings.googlemaps.google.maps.Animation.DROP with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.Animation with Double] = js.native
+  
+  /* 1 */ val BOUNCE: typings.googlemaps.google.maps.Animation.BOUNCE with Double = js.native
+  
+  /* 2 */ val DROP: typings.googlemaps.google.maps.Animation.DROP with Double = js.native
 }
-

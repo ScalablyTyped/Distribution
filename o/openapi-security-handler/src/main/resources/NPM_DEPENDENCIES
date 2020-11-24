@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-security-handler" : "7.0.0"
+      "openapi-security-handler" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-security-handler" : "7.0.0"
+      "openapi-security-handler" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

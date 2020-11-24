@@ -10,9 +10,9 @@ All four BLAKE2 variants (blake2b, blake2bp, blake2s, blake2sp) for node, with s
 | ------------------ | :-------------: |
 | Full name          | blake2 |
 | Keywords           | crypto, hash, hashing, blake2, blake2b, blake2bp, blake2s, blake2sp |
-| # releases         | 7 |
-| # dependents       | 7 |
-| # downloads        | 11796 |
+| # releases         | 6 |
+| # dependents       | 11 |
+| # downloads        | 39546 |
 | # stars            | 0 |
 
 ## Links

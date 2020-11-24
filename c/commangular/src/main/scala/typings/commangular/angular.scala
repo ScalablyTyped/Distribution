@@ -3,7 +3,7 @@ package typings.commangular
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extending the angular rootScope to include the dispatch function in all scopes.
@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("angular")
 @js.native
 object angular extends js.Object {
+  
   @js.native
   trait IRootScopeService extends js.Object {
+    
     /**
       * Commangular method to execute a command.
       * @param eventName Name of the even that will trigger a command sequence
@@ -21,6 +23,4 @@ object angular extends js.Object {
     def dispatch(eventName: String): IPromise[_] = js.native
     def dispatch(eventName: String, data: js.Any): IPromise[_] = js.native
   }
-  
 }
-

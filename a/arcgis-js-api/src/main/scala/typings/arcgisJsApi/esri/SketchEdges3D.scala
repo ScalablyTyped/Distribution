@@ -3,10 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.sketch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SketchEdges3D extends Edges3D {
+  
   /**
     * The symbol type.
     *
@@ -14,4 +15,3 @@ trait SketchEdges3D extends Edges3D {
     */
   var `type`: sketch = js.native
 }
-

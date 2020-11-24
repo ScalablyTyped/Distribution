@@ -2,7 +2,7 @@ package typings.novaEditorNode.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/tree-item/
 @JSGlobal("TreeItem")
@@ -12,4 +12,3 @@ class TreeItem protected ()
   def this(name: String) = this()
   def this(name: String, collapsibleState: typings.novaEditorNode.TreeItemCollapsibleState) = this()
 }
-

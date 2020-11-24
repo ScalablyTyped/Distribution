@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/logger-console" : "4.3.1"
+      "@algolia/logger-console" : "4.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/logger-console" : "4.3.1"
+      "@algolia/logger-console" : "4.8.0"
     }
   ],
   "compile-devDependencies" : [

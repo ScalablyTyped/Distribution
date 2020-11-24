@@ -10,13 +10,14 @@ import typings.std.Partial
 import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply(name: fetch, request: String): js.Promise[Unit] = js.native
   def apply(name: fetch, request: Request): js.Promise[Unit] = js.native
-  def apply(name: message, args: PartialMessageEvent): js.Promise[Unit] = js.native
+  def apply(name: message, args: PartialMessageEventany): js.Promise[Unit] = js.native
   def apply(name: notificationclick, args: Notification): js.Promise[Unit] = js.native
   def apply(name: notificationclose, args: Notification): js.Promise[Unit] = js.native
   def apply(
@@ -29,4 +30,3 @@ trait FnCall extends js.Object {
     `type`: /* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceWorkerGlobalScopeEventMap * / any */ String
   ): js.Promise[Unit] = js.native
 }
-

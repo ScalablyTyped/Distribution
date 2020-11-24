@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TokenClass extends js.Object
-
 @JSGlobal("TypeScript.Services.TokenClass")
 @js.native
 object TokenClass extends js.Object {
+  
   @js.native
   sealed trait Comment extends TokenClass
   
@@ -36,6 +36,4 @@ object TokenClass extends js.Object {
   
   @js.native
   sealed trait Whitespace extends TokenClass
-  
 }
-

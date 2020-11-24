@@ -1,24 +1,19 @@
 package typings.yadda
 
 import org.scalablytyped.runtime.TopLevel
-import typings.yadda.languageMod.Library
+import typings.yadda.chineseMod.Library
 import typings.yadda.languageMod.Vocabulary
 import typings.yadda.languageMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yadda/lib/localisation", JSImport.Namespace)
 @js.native
 object localisationMod extends js.Object {
-  @js.native
-  class Language[TLibrary /* <: Library */] protected () extends ^[TLibrary] {
-    def this(name: String, vocabulary: Vocabulary) = this()
-  }
   
   @js.native
-  object Chinese
-    extends TopLevel[^[typings.yadda.chineseMod.Library]]
+  object Chinese extends TopLevel[^[Library]]
   
   @js.native
   object Dutch
@@ -35,6 +30,11 @@ object localisationMod extends js.Object {
   @js.native
   object German
     extends TopLevel[^[typings.yadda.germanMod.Library]]
+  
+  @js.native
+  class Language[TLibrary /* <: typings.yadda.languageMod.Library */] protected () extends ^[TLibrary] {
+    def this(name: String, vocabulary: Vocabulary) = this()
+  }
   
   @js.native
   object Norwegian
@@ -67,6 +67,4 @@ object localisationMod extends js.Object {
   @js.native
   object default
     extends TopLevel[^[typings.yadda.englishMod.Library]]
-  
 }
-

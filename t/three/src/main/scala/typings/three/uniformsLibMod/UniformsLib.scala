@@ -17,25 +17,39 @@ import typings.three.anon.RoughnessMap
 import typings.three.anon.SpecularMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/shaders/UniformsLib", "UniformsLib")
 @js.native
 object UniformsLib extends js.Object {
+  
   var aomap: AoMap = js.native
+  
   var bumpmap: BumpMap = js.native
+  
   var common: AlphaMap = js.native
+  
   var displacementmap: DisplacementBias = js.native
+  
   var emissivemap: EmissiveMap = js.native
+  
   var envmap: EnvMap = js.native
+  
   var fog: FogColor = js.native
+  
   var gradientmap: GradientMap = js.native
+  
   var lightmap: LightMap = js.native
+  
   var lights: AmbientLightColor = js.native
+  
   var metalnessmap: MetalnessMap = js.native
+  
   var normalmap: NormalMap = js.native
+  
   var points: Diffuse = js.native
+  
   var roughnessmap: RoughnessMap = js.native
+  
   var specularmap: SpecularMap = js.native
 }
-

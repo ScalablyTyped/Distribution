@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cids" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cids" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

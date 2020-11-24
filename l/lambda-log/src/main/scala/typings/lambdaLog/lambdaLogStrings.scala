@@ -2,9 +2,22 @@ package typings.lambdaLog
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaLogStrings {
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait error extends js.Object
   
@@ -16,14 +29,4 @@ object lambdaLogStrings {
   
   @js.native
   sealed trait warn extends js.Object
-  
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

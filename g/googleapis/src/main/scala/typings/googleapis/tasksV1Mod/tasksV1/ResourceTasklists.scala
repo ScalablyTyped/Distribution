@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tasks/v1", "tasks_v1.Resource$Tasklists")
 @js.native
 class ResourceTasklists protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tasks.tasklists.delete
     * @desc Deletes the authenticated user's specified task list.
@@ -41,6 +43,7 @@ class ResourceTasklists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tasks.tasklists.get
     * @desc Returns the authenticated user's specified task list.
@@ -69,6 +72,7 @@ class ResourceTasklists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTaskList]
   ): Unit = js.native
+  
   /**
     * tasks.tasklists.insert
     * @desc Creates a new task list and adds it to the authenticated user's
@@ -98,6 +102,7 @@ class ResourceTasklists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTaskList]
   ): Unit = js.native
+  
   /**
     * tasks.tasklists.list
     * @desc Returns all the authenticated user's task lists.
@@ -127,6 +132,7 @@ class ResourceTasklists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTaskLists]
   ): Unit = js.native
+  
   /**
     * tasks.tasklists.patch
     * @desc Updates the authenticated user's specified task list. This method
@@ -157,6 +163,7 @@ class ResourceTasklists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTaskList]
   ): Unit = js.native
+  
   /**
     * tasks.tasklists.update
     * @desc Updates the authenticated user's specified task list.
@@ -187,4 +194,3 @@ class ResourceTasklists protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTaskList]
   ): Unit = js.native
 }
-

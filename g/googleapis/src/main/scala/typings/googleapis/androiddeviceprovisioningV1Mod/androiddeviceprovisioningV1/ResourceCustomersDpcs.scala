@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Customers$Dpcs")
 @js.native
 class ResourceCustomersDpcs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.customers.dpcs.list
     * @desc Lists the DPCs (device policy controllers) that support zero-touch
@@ -46,4 +48,3 @@ class ResourceCustomersDpcs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomerListDpcsResponse]
   ): Unit = js.native
 }
-

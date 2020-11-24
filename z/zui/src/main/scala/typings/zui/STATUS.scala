@@ -2,14 +2,14 @@ package typings.zui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait STATUS extends js.Object
-
 @JSGlobal("STATUS")
 @js.native
 object STATUS extends js.Object {
+  
   @js.native
   sealed trait DONE extends STATUS
   
@@ -27,6 +27,4 @@ object STATUS extends js.Object {
   
   @js.native
   sealed trait UPLOADING extends STATUS
-  
 }
-

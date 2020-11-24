@@ -6,7 +6,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.linkedSheet
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mediaRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.mediaRule
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.inlineSheet
 */
 trait CSSMediaSource extends js.Object
-
 object CSSMediaSource {
+  
   @scala.inline
   def ImportRule: importRule = "importRule".asInstanceOf[importRule]
+  
   @scala.inline
   def InlineSheet: inlineSheet = "inlineSheet".asInstanceOf[inlineSheet]
+  
   @scala.inline
   def LinkedSheet: linkedSheet = "linkedSheet".asInstanceOf[linkedSheet]
+  
   @scala.inline
   def MediaRule: mediaRule = "mediaRule".asInstanceOf[mediaRule]
 }
-

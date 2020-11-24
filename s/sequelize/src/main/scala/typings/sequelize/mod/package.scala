@@ -2,14 +2,17 @@ package typings.sequelize
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type AnyFindOptions = typings.sequelize.mod.FindOptions[js.Any]
+  
   /**
     * A hash of attributes to describe your search, accepting any field names. See `WhereOptions` for details.
     */
   type AnyWhereOptions = org.scalablytyped.runtime.StringDictionary[js.Array[typings.sequelize.mod.WhereOptions[js.Any]] | js.Object]
+  
   /**
     * Options for Association Scope
     *
@@ -19,6 +22,7 @@ package object mod {
     * The name of the column that will be used for the associated scope and it's value
     */
   org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   /**
     * The createAssociation mixin applied to models with belongsTo.
     * An example of usage is as follows:
@@ -44,6 +48,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[TInstance]
   ]
+  
   /**
     * The getAssociation mixin applied to models with belongsTo.
     * An example of usage is as follows:
@@ -66,6 +71,7 @@ package object mod {
     /* options */ js.UndefOr[typings.sequelize.mod.BelongsToGetAssociationMixinOptions], 
     typings.bluebird.mod.^[TInstance | scala.Null]
   ]
+  
   /**
     * The addAssociation mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -98,6 +104,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The addAssociations mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -130,6 +137,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The countAssociations mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -159,6 +167,7 @@ package object mod {
     /* options */ js.UndefOr[typings.sequelize.mod.BelongsToManyCountAssociationsMixinOptions], 
     typings.bluebird.mod.^[scala.Double]
   ]
+  
   /**
     * The createAssociation mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -191,6 +200,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[TInstance]
   ]
+  
   /**
     * The getAssociations mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -220,6 +230,7 @@ package object mod {
     /* options */ js.UndefOr[typings.sequelize.mod.BelongsToManyGetAssociationsMixinOptions], 
     typings.bluebird.mod.^[js.Array[TInstance]]
   ]
+  
   /**
     * The hasAssociation mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -252,6 +263,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Boolean]
   ]
+  
   /**
     * The removeAssociations mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -284,6 +296,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Boolean]
   ]
+  
   /**
     * The removeAssociation mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -316,6 +329,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The removeAssociations mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -348,6 +362,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The setAssociations mixin applied to models with belongsToMany.
     * An example of usage is as follows:
@@ -380,6 +395,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The setAssociation mixin applied to models with belongsTo.
     * An example of usage is as follows:
@@ -405,13 +421,21 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   type DataTypeBoolean = typings.sequelize.mod.DataTypeAbstract
+  
   type DataTypeDateOnly = typings.sequelize.mod.DataTypeAbstract
+  
   type DataTypeHStore = typings.sequelize.mod.DataTypeAbstract
+  
   type DataTypeJSONB = typings.sequelize.mod.DataTypeAbstract
+  
   type DataTypeJSONType = typings.sequelize.mod.DataTypeAbstract
+  
   type DataTypeNow = typings.sequelize.mod.DataTypeAbstract
+  
   type DataTypeTime = typings.sequelize.mod.DataTypeAbstract
+  
   /**
     * Interface for Attributes provided for a column
     *
@@ -423,12 +447,14 @@ package object mod {
   org.scalablytyped.runtime.StringDictionary[
     java.lang.String | typings.sequelize.mod.DataTypeAbstract | typings.sequelize.mod.DefineAttributeColumnOptions
   ]
+  
   /**
     * Interface for getterMethods in DefineOptions
     *
     * @see DefineOptions
     */
   type DefineGetterMethodsOptions = org.scalablytyped.runtime.StringDictionary[js.Function0[js.Any]]
+  
   /**
     * Interface for Attributes provided for a column
     *
@@ -437,6 +463,7 @@ package object mod {
   type DefineModelAttributes[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string | sequelize.sequelize.DataTypeAbstract | sequelize.sequelize.DefineAttributeColumnOptions}
     */ typings.sequelize.sequelizeStrings.DefineModelAttributes with org.scalablytyped.runtime.TopLevel[js.Any]
+  
   /**
     * Interface for Define Scope Options
     *
@@ -446,12 +473,14 @@ package object mod {
     * Name of the scope and it's query
     */
   org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.AnyFindOptions | js.Function]
+  
   /**
     * Interface for setterMethods in DefineOptions
     *
     * @see DefineOptions
     */
   type DefineSetterMethodsOptions = org.scalablytyped.runtime.StringDictionary[js.Function1[/* val */ js.Any, scala.Unit]]
+  
   /**
     * Shortcut for types used in FindOptions.attributes
     */
@@ -461,16 +490,19 @@ package object mod {
       java.lang.String
     ]) | typings.sequelize.mod.fn | typings.sequelize.mod.cast
   ]
+  
   /**
     * Shortcut for order type in FindOptions.attributes
     */
   type FindOptionsOrderArray = js.Array[
     java.lang.String | scala.Double | (typings.sequelize.mod.Model[js.Any, js.Any, js.Any]) | typings.sequelize.anon.As | typings.sequelize.mod.fn
   ]
+  
   /**
     * GetTableName Options
     */
   type GetTableNameOptions = typings.sequelize.mod.LoggingOptions
+  
   /**
     * The addAssociation mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -503,6 +535,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The addAssociations mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -535,6 +568,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The countAssociations mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -564,6 +598,7 @@ package object mod {
     /* options */ js.UndefOr[typings.sequelize.mod.HasManyCountAssociationsMixinOptions], 
     typings.bluebird.mod.^[scala.Double]
   ]
+  
   /**
     * The createAssociation mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -596,6 +631,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[TInstance]
   ]
+  
   /**
     * The getAssociations mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -625,6 +661,7 @@ package object mod {
     /* options */ js.UndefOr[typings.sequelize.mod.HasManyGetAssociationsMixinOptions], 
     typings.bluebird.mod.^[js.Array[TInstance]]
   ]
+  
   /**
     * The hasAssociation mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -657,6 +694,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Boolean]
   ]
+  
   /**
     * The removeAssociations mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -689,6 +727,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Boolean]
   ]
+  
   /**
     * The removeAssociation mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -721,6 +760,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The removeAssociations mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -753,6 +793,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The setAssociations mixin applied to models with hasMany.
     * An example of usage is as follows:
@@ -785,6 +826,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The createAssociation mixin applied to models with hasOne.
     * An example of usage is as follows:
@@ -810,6 +852,7 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * The getAssociation mixin applied to models with hasOne.
     * An example of usage is as follows:
@@ -832,6 +875,7 @@ package object mod {
     /* options */ js.UndefOr[typings.sequelize.mod.HasOneGetAssociationMixinOptions], 
     typings.bluebird.mod.^[TInstance | scala.Null]
   ]
+  
   /**
     * The setAssociation mixin applied to models with hasOne.
     * An example of usage is as follows:
@@ -857,12 +901,16 @@ package object mod {
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
+  
   /**
     * Models contains Model instances associated to their name
     */
   type Models = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
+  
   type ModelsHashInterface = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
+  
   type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+  
   /**
     * A hash of attributes to describe your search. See above for examples.
     *
@@ -870,20 +918,35 @@ package object mod {
     * typesafety, but there is no way to pass the tests if we just remove it.
     */
   type Primitives = java.lang.String | scala.Double | scala.Boolean | typings.node.Buffer
+  
   type TransactionIsolationLevel = typings.sequelize.mod.TransactionIsolationLevelReadUncommitted | typings.sequelize.mod.TransactionIsolationLevelReadCommitted | typings.sequelize.mod.TransactionIsolationLevelRepeatableRead | typings.sequelize.mod.TransactionIsolationLevelSerializable
+  
   type TransactionIsolationLevelReadCommitted = typings.sequelize.sequelizeStrings.`READ COMMITTED`
+  
   type TransactionIsolationLevelReadUncommitted = typings.sequelize.sequelizeStrings.`READ UNCOMMITTED`
+  
   type TransactionIsolationLevelRepeatableRead = typings.sequelize.sequelizeStrings.`REPEATABLE READ`
+  
   type TransactionIsolationLevelSerializable = typings.sequelize.sequelizeStrings.SERIALIZABLE
+  
   type TransactionLockLevel = typings.sequelize.mod.TransactionLockLevelUpdate | typings.sequelize.mod.TransactionLockLevelShare | typings.sequelize.mod.TransactionLockLevelKeyShare | typings.sequelize.mod.TransactionLockLevelNoKeyUpdate
+  
   type TransactionLockLevelKeyShare = typings.sequelize.sequelizeStrings.`KEY SHARE`
+  
   type TransactionLockLevelNoKeyUpdate = typings.sequelize.sequelizeStrings.`NO KEY UPDATE`
+  
   type TransactionLockLevelShare = typings.sequelize.sequelizeStrings.SHARE
+  
   type TransactionLockLevelUpdate = typings.sequelize.sequelizeStrings.UPDATE
+  
   type TransactionType = typings.sequelize.mod.TransactionTypeDeferred | typings.sequelize.mod.TransactionTypeImmediate | typings.sequelize.mod.TransactionTypeExclusive
+  
   type TransactionTypeDeferred = typings.sequelize.sequelizeStrings.DEFERRED
+  
   type TransactionTypeExclusive = typings.sequelize.sequelizeStrings.EXCLUSIVE
+  
   type TransactionTypeImmediate = typings.sequelize.sequelizeStrings.IMMEDIATE
+  
   type WhereOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias sequelize.sequelize.WhereOptions<T[P]> * / object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
     */ typings.sequelize.sequelizeStrings.WhereOptions with org.scalablytyped.runtime.TopLevel[T]

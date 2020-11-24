@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PoseEnabledController")
 @js.native
@@ -14,14 +14,13 @@ class PoseEnabledController protected ()
     */
   def this(browserGamepad: js.Any) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "PoseEnabledController")
 @js.native
 object PoseEnabledController extends js.Object {
+  
   /**
     * Name of the child mesh that can be used to cast a ray from the controller
     */
   val POINTING_POSE: String = js.native
 }
-

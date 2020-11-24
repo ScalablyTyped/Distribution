@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToastHistoryChangedType extends js.Object
-
 /** Specifies the kind of change that has happened to a notification in toast history. Used with ToastNotificationHistoryChangedTriggerDetail.ChangeType . */
 @JSGlobal("Windows.UI.Notifications.ToastHistoryChangedType")
 @js.native
 object ToastHistoryChangedType extends js.Object {
+  
   /** The notification was added. */
   @js.native
   sealed trait added extends ToastHistoryChangedType
@@ -26,6 +26,4 @@ object ToastHistoryChangedType extends js.Object {
   /** Just this notification was removed with a remove command. */
   @js.native
   sealed trait removed extends ToastHistoryChangedType
-  
 }
-

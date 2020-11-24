@@ -4,21 +4,24 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents BLOB data type.
   */
 @js.native
 trait FBBlob extends js.Object {
+  
   /**
     * Synchronously closes previously opened blob.
     */
   def _closeSync(): Unit = js.native
+  
   /**
     * Synchronously opens blob for reading.
     */
   def _openSync(): Unit = js.native
+  
   /**
     * Asynchronously reads BLOB segment (chunk) into buffer. Tries to fill whole buffer with data.
     *
@@ -29,6 +32,7 @@ trait FBBlob extends js.Object {
     buffer: Buffer,
     callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously reads all data from BLOB field.
     * Object emits events while reading data error, drain',end`.
@@ -66,6 +70,7 @@ trait FBBlob extends js.Object {
     chunkSize: Double,
     callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
   ): Unit = js.native
+  
   /**
     * Synchronously reads BLOB segment (chunk) into buffer. Tries to fill whole buffer with data.
     *
@@ -73,6 +78,7 @@ trait FBBlob extends js.Object {
     * @returns actual number of bytes read.
     */
   def _readSync(buffer: Buffer): Double = js.native
+  
   /**
     * Asynchronously writes BLOB segment (chunk) from buffer and calls callback function if any.
     *
@@ -88,6 +94,7 @@ trait FBBlob extends js.Object {
   ): Unit = js.native
   def _write(buffer: Buffer, len: Double): Unit = js.native
   def _write(buffer: Buffer, len: Double, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  
   /**
     * Synchronously writes BLOB segment (chunk) from buffer.
     *
@@ -98,4 +105,3 @@ trait FBBlob extends js.Object {
   def _writeSync(buffer: Buffer): Double = js.native
   def _writeSync(buffer: Buffer, len: Double): Double = js.native
 }
-

@@ -10,9 +10,9 @@ Recursively delete all empty folders in a directory and child directories.
 | ------------------ | :-------------: |
 | Full name          | delete-empty |
 | Keywords           | del, delete, dir, directory, empty, files, folder, recurse, recursive, remove |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 285529 |
+| # releases         | 2 |
+| # dependents       | 39 |
+| # downloads        | 765414 |
 | # stars            | 3 |
 
 ## Links

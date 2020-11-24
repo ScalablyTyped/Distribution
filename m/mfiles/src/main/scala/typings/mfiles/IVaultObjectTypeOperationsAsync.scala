@@ -4,10 +4,11 @@ import typings.mfiles.MFiles.MFBuiltInObjectType
 import typings.mfiles.MFiles.MFExternalDBRefreshType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultObjectTypeOperationsAsync extends js.Object {
+  
   def AddObjectTypeAdmin(ObjectType: IObjectTypeAdmin): Unit = js.native
   def AddObjectTypeAdmin(
     ObjectType: IObjectTypeAdmin,
@@ -44,6 +45,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetBuiltInObjectType(ObjectType: MFBuiltInObjectType): Unit = js.native
   def GetBuiltInObjectType(
     ObjectType: MFBuiltInObjectType,
@@ -80,6 +82,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectType(ObjectType: Double): Unit = js.native
   def GetObjectType(
     ObjectType: Double,
@@ -152,6 +155,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectTypeAdmin(ObjectType: Double): Unit = js.native
   def GetObjectTypeAdmin(
     ObjectType: Double,
@@ -227,6 +231,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectTypeIDByAlias(Alias: String): Unit = js.native
   def GetObjectTypeIDByAlias(
     Alias: String,
@@ -263,6 +268,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectTypeIDByGUID(ObjectTypeGUID: String): Unit = js.native
   def GetObjectTypeIDByGUID(
     ObjectTypeGUID: String,
@@ -299,6 +305,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectTypes(): Unit = js.native
   def GetObjectTypes(
     successCallback: js.UndefOr[scala.Nothing],
@@ -329,6 +336,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjectTypesAdmin(): Unit = js.native
   def GetObjectTypesAdmin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -359,6 +367,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RefreshExternalObjectType(ObjectType: Double, RefreshType: MFExternalDBRefreshType): Unit = js.native
   def RefreshExternalObjectType(
     ObjectType: Double,
@@ -447,6 +456,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveObjectTypeAdmin(ObjectTypeID: Double): Unit = js.native
   def RemoveObjectTypeAdmin(
     ObjectTypeID: Double,
@@ -483,6 +493,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateObjectTypeAdmin(ObjectType: IObjectTypeAdmin): Unit = js.native
   def UpdateObjectTypeAdmin(
     ObjectType: IObjectTypeAdmin,
@@ -519,6 +530,7 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateObjectTypeWithAutomaticPermissionsAdmin(ObjectType: IObjectTypeAdmin, AutomaticPermissionsForcedActive: Boolean): Unit = js.native
   def UpdateObjectTypeWithAutomaticPermissionsAdmin(
     ObjectType: IObjectTypeAdmin,
@@ -566,4 +578,3 @@ trait IVaultObjectTypeOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

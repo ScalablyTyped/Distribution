@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service acts as a container for graphics
@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation._
 trait Graphic
   extends GraphicDescriptor
      with XGraphic
-
 object Graphic {
+  
   @scala.inline
   def apply(
     Alpha: Boolean,
@@ -52,4 +52,3 @@ object Graphic {
     __obj.asInstanceOf[Graphic]
   }
 }
-

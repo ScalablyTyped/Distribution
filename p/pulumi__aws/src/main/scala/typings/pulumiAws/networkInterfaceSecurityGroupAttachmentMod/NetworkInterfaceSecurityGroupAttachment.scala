@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment", "NetworkInterfaceSecurityGroupAttachment")
 @js.native
@@ -21,20 +21,22 @@ class NetworkInterfaceSecurityGroupAttachment protected () extends CustomResourc
     */
   def this(name: String, args: NetworkInterfaceSecurityGroupAttachmentArgs) = this()
   def this(name: String, args: NetworkInterfaceSecurityGroupAttachmentArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ID of the network interface to attach to.
     */
   val networkInterfaceId: Output_[String] = js.native
+  
   /**
     * The ID of the security group.
     */
   val securityGroupId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment", "NetworkInterfaceSecurityGroupAttachment")
 @js.native
 object NetworkInterfaceSecurityGroupAttachment extends js.Object {
+  
   /**
     * Get an existing NetworkInterfaceSecurityGroupAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -53,10 +55,10 @@ object NetworkInterfaceSecurityGroupAttachment extends js.Object {
     state: NetworkInterfaceSecurityGroupAttachmentState,
     opts: CustomResourceOptions
   ): NetworkInterfaceSecurityGroupAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of NetworkInterfaceSecurityGroupAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean = js.native
 }
-

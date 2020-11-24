@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A helper class for shaders
@@ -18,11 +18,11 @@ class Shader ()
   def this(program: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
   def this(program: typings.pixiJs.PIXI.Program, uniforms: js.Any) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "Shader")
 @js.native
 object Shader extends js.Object {
+  
   /**
     * A short hand function to create a shader based of a vertex and fragment shader
     *
@@ -41,4 +41,3 @@ object Shader extends js.Object {
   def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Shader = js.native
   def from(vertexSrc: String, fragmentSrc: String, uniforms: js.Any): typings.pixiJs.PIXI.Shader = js.native
 }
-

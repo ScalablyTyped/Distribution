@@ -12,7 +12,7 @@ Returns an array of NPM directory paths based on the user's platform and environ
 | Keywords           | directory, dirname, global, module, npm, package, path, paths, prefix, resolve |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 2543471 |
+| # downloads        | 3079159 |
 | # stars            | 0 |
 
 ## Links

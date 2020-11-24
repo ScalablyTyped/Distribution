@@ -2,7 +2,7 @@ package typings.angularCommon.httpHttpMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCommon.httpHttpMod.HttpSentEvent
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   - typings.angularCommon.httpHttpMod.HttpUserEvent[T]
 */
 trait HttpEvent[T] extends js.Object
-

@@ -3,7 +3,7 @@ package typings.fibjs
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHttpCookie extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -22,6 +23,7 @@ trait ClassHttpCookie extends ClassObject {
     * @type String
     */
   var domain: String = js.native
+  
   /**
     * class prop 
     *
@@ -32,6 +34,7 @@ trait ClassHttpCookie extends ClassObject {
     * @type Date
     */
   var expires: Date = js.native
+  
   /**
     * class prop 
     *
@@ -42,46 +45,7 @@ trait ClassHttpCookie extends ClassObject {
     * @type Boolean
     */
   var httpOnly: Boolean = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 cookie 名称
-    * 
-    * 
-    * @type String
-    */
-  var name: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 cookie 的路径范围
-    * 
-    * 
-    * @type String
-    */
-  var path: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 cookie 是否仅通过 https 传递，缺省 false
-    * 
-    * 
-    * @type Boolean
-    */
-  var secure: Boolean = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 cookie 的值
-    * 
-    * 
-    * @type String
-    */
-  var value: String = js.native
+  
   /**
     * 
     * @brief 检测给定的 url 是否匹配当前设置
@@ -92,6 +56,18 @@ trait ClassHttpCookie extends ClassObject {
     * 
     */
   def `match`(url: String): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 cookie 名称
+    * 
+    * 
+    * @type String
+    */
+  var name: String = js.native
+  
   /**
     * 
     * @brief 解析给定的字符串，填充 cookie 对象
@@ -101,5 +77,37 @@ trait ClassHttpCookie extends ClassObject {
     * 
     */
   def parse(header: String): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 cookie 的路径范围
+    * 
+    * 
+    * @type String
+    */
+  var path: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 cookie 是否仅通过 https 传递，缺省 false
+    * 
+    * 
+    * @type Boolean
+    */
+  var secure: Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 cookie 的值
+    * 
+    * 
+    * @type String
+    */
+  var value: String = js.native
 }
-

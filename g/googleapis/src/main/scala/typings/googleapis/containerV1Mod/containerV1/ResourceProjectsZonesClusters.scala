@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1", "container_v1.Resource$Projects$Zones$Clusters")
 @js.native
 class ResourceProjectsZonesClusters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var nodePools: ResourceProjectsZonesClustersNodepools = js.native
+  
   /**
     * container.projects.zones.clusters.addons
     * @desc Sets the addons for a specific cluster.
@@ -109,6 +108,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.completeIpRotation
     * @desc Completes master IP rotation.
@@ -208,6 +208,9 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * container.projects.zones.clusters.create
     * @desc Creates a cluster, consisting of the specified number and type of
@@ -307,6 +310,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.delete
     * @desc Deletes the cluster, including the Kubernetes endpoint and all
@@ -402,6 +406,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.get
     * @desc Gets the details of a specific cluster.
@@ -493,6 +498,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCluster]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.legacyAbac
     * @desc Enables or disables the ABAC authorization mechanism on a cluster.
@@ -591,6 +597,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.list
     * @desc Lists all clusters owned by a project in either the specified zone
@@ -682,6 +689,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClustersResponse]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.locations
     * @desc Sets the locations for a specific cluster.
@@ -780,6 +788,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.logging
     * @desc Sets the logging service for a specific cluster.
@@ -878,6 +887,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.master
     * @desc Updates the master for a specific cluster.
@@ -973,6 +983,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.monitoring
     * @desc Sets the monitoring service for a specific cluster.
@@ -1071,6 +1082,9 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var nodePools: ResourceProjectsZonesClustersNodepools = js.native
+  
   /**
     * container.projects.zones.clusters.resourceLabels
     * @desc Sets labels on a cluster.
@@ -1170,6 +1184,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.setMaintenancePolicy
     * @desc Sets the maintenance policy for a cluster.
@@ -1268,6 +1283,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.setMasterAuth
     * @desc Used to set master auth materials. Currently supports :- Changing
@@ -1368,6 +1384,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.setNetworkPolicy
     * @desc Enables/Disables Network Policy for a cluster.
@@ -1467,6 +1484,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.startIpRotation
     * @desc Start master IP rotation.
@@ -1566,6 +1584,7 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.update
     * @desc Updates the settings of a specific cluster.
@@ -1664,4 +1683,3 @@ class ResourceProjectsZonesClusters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

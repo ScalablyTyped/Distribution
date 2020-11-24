@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the adjustment type. */
 /* Rewritten from type alias, can be one of: 
@@ -14,11 +14,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait AdjustmentType extends js.Object
-
 object AdjustmentType {
+  
   /** adjustment is originated by dragging the thumb. */
   @scala.inline
   def ADJUST_ABS: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * adjustment is originated by a line jump. <p>A line jump can, for example, be caused by a click on
     *
@@ -26,6 +27,7 @@ object AdjustmentType {
     */
   @scala.inline
   def ADJUST_LINE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * adjustment is originated by a page jump. <p>A page jump can, for example, be caused by a click in the
     *
@@ -36,4 +38,3 @@ object AdjustmentType {
   @scala.inline
   def ADJUST_PAGE: `1` = 1.asInstanceOf[`1`]
 }
-

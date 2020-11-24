@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plusDomains/v1", "plusDomains_v1.Resource$People")
 @js.native
 class ResourcePeople protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * plusDomains.people.get
     * @desc Get a person's profile.
@@ -41,6 +43,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPerson]
   ): Unit = js.native
+  
   /**
     * plusDomains.people.list
     * @desc List all of the people in the specified collection.
@@ -73,6 +76,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPeopleFeed]
   ): Unit = js.native
+  
   /**
     * plusDomains.people.listByActivity
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -105,6 +109,7 @@ class ResourcePeople protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPeopleFeed]
   ): Unit = js.native
+  
   /**
     * plusDomains.people.listByCircle
     * @desc Shut down. See https://developers.google.com/+/api-shutdown for
@@ -137,4 +142,3 @@ class ResourcePeople protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPeopleFeed]
   ): Unit = js.native
 }
-

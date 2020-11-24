@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailMessageSmimeKind extends js.Object
-
 /** Defines the S/MIME type of an email message. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMessageSmimeKind")
 @js.native
 object EmailMessageSmimeKind extends js.Object {
+  
   /** Clear signed MIME (two MIME entities). */
   @js.native
   sealed trait clearSigned extends EmailMessageSmimeKind
@@ -26,6 +26,4 @@ object EmailMessageSmimeKind extends js.Object {
   /** Opaque signed MIME (a single MIME entity). */
   @js.native
   sealed trait opaqueSigned extends EmailMessageSmimeKind
-  
 }
-

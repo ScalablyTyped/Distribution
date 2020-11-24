@@ -12,7 +12,7 @@ Fetches song lyrics using the Genius.com API and website.
 | Keywords           | lyric, lyrics, scrape, genius |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 9771 |
+| # downloads        | 10136 |
 | # stars            | 1 |
 
 ## Links

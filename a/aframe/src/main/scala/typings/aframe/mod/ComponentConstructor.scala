@@ -3,7 +3,7 @@ package typings.aframe.mod
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentConstructor[T /* <: js.Object */]
@@ -13,4 +13,3 @@ trait ComponentConstructor[T /* <: js.Object */]
       /* id */ String, 
       T with (Component[_, System[_]])
     ]
-

@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.mod.CompileReflector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/testing/src/testing", JSImport.Namespace)
 @js.native
 object srcTestingMod extends js.Object {
+  
   @js.native
   class MockDirectiveResolver protected ()
     extends typings.angularCompiler.directiveResolverMockMod.MockDirectiveResolver {
@@ -42,6 +43,4 @@ object srcTestingMod extends js.Object {
       invalidAttributes: js.Array[String]
     ) = this()
   }
-  
 }
-

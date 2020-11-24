@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.d3Time.mod.CountableTimeInterval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "timeSecond")
 @js.native
 object timeSecond extends TopLevel[CountableTimeInterval]
-

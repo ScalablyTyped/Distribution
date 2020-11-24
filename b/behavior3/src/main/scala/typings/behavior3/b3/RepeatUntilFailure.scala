@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RepeatUntilFailure is a decorator that repeats the tick signal until the
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RepeatUntilFailure extends BaseNode
-
 object RepeatUntilFailure {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -32,4 +32,3 @@ object RepeatUntilFailure {
     __obj.asInstanceOf[RepeatUntilFailure]
   }
 }
-

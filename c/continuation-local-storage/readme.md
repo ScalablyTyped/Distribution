@@ -10,9 +10,9 @@ userland implementation of https://github.com/joyent/node/issues/5243
 | ------------------ | :-------------: |
 | Full name          | continuation-local-storage |
 | Keywords           | threading, shared, context, domains, tracing, logging |
-| # releases         | 1 |
-| # dependents       | 252 |
-| # downloads        | 30906144 |
+| # releases         | 0 |
+| # dependents       | 257 |
+| # downloads        | 49277325 |
 | # stars            | 34 |
 
 ## Links

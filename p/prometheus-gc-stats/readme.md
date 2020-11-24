@@ -10,9 +10,9 @@ Report Garbage Collection stats using Prometheus
 | ------------------ | :-------------: |
 | Full name          | prometheus-gc-stats |
 | Keywords           | garbage-collection, gc, metrics, prometheus, prom, statsd |
-| # releases         | 5 |
-| # dependents       | 24 |
-| # downloads        | 753664 |
+| # releases         | 2 |
+| # dependents       | 26 |
+| # downloads        | 1072257 |
 | # stars            | 2 |
 
 ## Links

@@ -6,16 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var events: ResourceProjectsEvents = js.native
-  var groupStats: ResourceProjectsGroupstats = js.native
-  var groups: ResourceProjectsGroups = js.native
+  
   /**
     * clouderrorreporting.projects.deleteEvents
     * @desc Deletes all error events of a given project.
@@ -47,5 +46,10 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeleteEventsResponse]
   ): Unit = js.native
+  
+  var events: ResourceProjectsEvents = js.native
+  
+  var groupStats: ResourceProjectsGroupstats = js.native
+  
+  var groups: ResourceProjectsGroups = js.native
 }
-

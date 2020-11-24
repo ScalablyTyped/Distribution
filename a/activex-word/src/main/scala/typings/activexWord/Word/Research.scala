@@ -2,17 +2,21 @@ package typings.activexWord.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Research extends js.Object {
+  
   val Application: typings.activexWord.Word.Application = js.native
+  
   val Creator: Double = js.native
+  
   var FavoriteService: String = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Research_typekey")
-  var WordDotResearch_typekey: Research = js.native
+  
   def IsResearchService(ServiceID: String): Boolean = js.native
+  
+  val Parent: js.Any = js.native
+  
   /**
     * @param string [QueryString='']
     * @param Word.WdLanguageID [QueryLanguage=0]
@@ -98,6 +102,9 @@ trait Research extends js.Object {
     UseSelection: Boolean,
     LaunchQuery: Boolean
   ): js.Any = js.native
+  
   def SetLanguagePair(LanguageFrom: WdLanguageID, LanguageTo: WdLanguageID): js.Any = js.native
+  
+  @JSName("Word.Research_typekey")
+  var WordDotResearch_typekey: Research = js.native
 }
-

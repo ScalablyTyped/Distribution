@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-mentions" : "1.4.0"
+      "rc-mentions" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-mentions" : "1.4.0"
+      "rc-mentions" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

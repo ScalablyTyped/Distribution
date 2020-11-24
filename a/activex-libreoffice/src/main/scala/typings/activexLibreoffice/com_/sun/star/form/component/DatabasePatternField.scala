@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a data-aware control model for entering text which matches a specific pattern. */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -30,14 +30,17 @@ import scala.scalajs.js.annotation._
 - typings.activexLibreoffice.com_.sun.star.awt.UnoControlPatternFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, EditMask, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, LiteralMask, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, StrictFormat, Tabstop, Text, TextColor, TextLineColor, VerticalAlign, WritingMode
 - typings.activexLibreoffice.com_.sun.star.form.component.PatternField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultText */ @js.native
 trait DatabasePatternField extends DataAwareControlModel {
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Color = js.native
+  
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
   var Border: Double = js.native
+  
   /**
     * specifies the color of the border, if present
     *
@@ -45,6 +48,7 @@ trait DatabasePatternField extends DataAwareControlModel {
     * @since OOo 2.0
     */
   var BorderColor: Double = js.native
+  
   /**
     * determines if an empty text should be treated as a `NULL` value.
     *
@@ -54,6 +58,7 @@ trait DatabasePatternField extends DataAwareControlModel {
     * If the property is set to `TRUE` , and an empty text is to be committed, this is converted into `NULL` , else it is written as empty string.
     */
   var ConvertEmptyToNull: Boolean = js.native
+  
   /**
     * contains a default value for the control.
     *
@@ -62,29 +67,40 @@ trait DatabasePatternField extends DataAwareControlModel {
     * @see com.sun.star.form.XReset
     */
   var DefaultText: String = js.native
+  
   /** specifies the edit mask. */
   var EditMask: String = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /** specifies the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
   var FontEmphasisMark: Double = js.native
+  
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
   var FontRelief: Double = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /**
     * specifies whether the selection in the control should be hidden when the control is not active (focused).
     * @since OOo 2.0
     */
   var HideInactiveSelection: Boolean = js.native
+  
   /** specifies the literal mask. */
   var LiteralMask: String = js.native
+  
   /** specifies the maximum character count. */
   var MaxTextLen: Double = js.native
+  
   /**
     * defines how the mouse wheel can be used to scroll through the control's content.
     *
@@ -92,25 +108,34 @@ trait DatabasePatternField extends DataAwareControlModel {
     * you can control under which circumstances this is possible.
     */
   var MouseWheelBehavior: Double = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** specifies that the content of the control cannot be modified by the user. */
   var ReadOnly: Boolean = js.native
+  
   /** specifies that the text is checked during the user input. */
   var StrictFormat: Boolean = js.native
+  
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: Boolean = js.native
+  
   /** specifies the text displayed in the control. */
   var Text: String = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /** specifies the text line color (RGB) of the control. */
   var TextLineColor: Color = js.native
+  
   /**
     * specifies the vertical alignment of the text in the control.
     * @since OOo 3.3
     */
   var VerticalAlign: VerticalAlignment = js.native
+  
   /**
     * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
     *
@@ -119,4 +144,3 @@ trait DatabasePatternField extends DataAwareControlModel {
     */
   var WritingMode: Double = js.native
 }
-

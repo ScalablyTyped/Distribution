@@ -2,11 +2,12 @@ package typings.deepDiff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("deep-diff", "observableDiff")
 @js.native
 object observableDiff extends js.Object {
+  
   def apply[LHS, RHS](lhs: LHS, rhs: RHS): js.Array[Diff_[LHS, RHS]] = js.native
   def apply[LHS, RHS](
     lhs: LHS,
@@ -26,4 +27,3 @@ object observableDiff extends js.Object {
   ): js.Array[Diff_[LHS, RHS]] = js.native
   def apply[LHS, RHS](lhs: LHS, rhs: RHS, observer: Observer[LHS, RHS], prefilter: PreFilter[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = js.native
 }
-

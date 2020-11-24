@@ -3,12 +3,12 @@ package typings.winrt.Windows.Media.Transcoding
 import typings.winrt.Windows.Foundation.IAsyncActionWithProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrepareTranscodeResult extends IPrepareTranscodeResult
-
 object PrepareTranscodeResult {
+  
   @scala.inline
   def apply(
     canTranscode: Boolean,
@@ -19,4 +19,3 @@ object PrepareTranscodeResult {
     __obj.asInstanceOf[PrepareTranscodeResult]
   }
 }
-

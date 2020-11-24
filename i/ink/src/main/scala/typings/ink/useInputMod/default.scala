@@ -2,11 +2,12 @@ package typings.ink.useInputMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ink/build/hooks/use-input", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * This hook is used for handling user input.
     * It's a more convienient alternative to using `StdinContext` and listening to `data` events.
@@ -34,4 +35,3 @@ object default extends js.Object {
   def apply(inputHandler: Handler): Unit = js.native
   def apply(inputHandler: Handler, options: Options): Unit = js.native
 }
-

@@ -17,21 +17,65 @@ import typings.ol.projMod.ProjectionLike
 import typings.std.PositionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Geolocation
   extends typings.ol.objectMod.default {
-  def getAccuracy(): Double = js.native
+  
+  /**
+    * Get the accuracy of the position in meters.
+    */
+  def getAccuracy(): js.UndefOr[Double] = js.native
+  
+  /**
+    * Get a geometry of the position accuracy.
+    */
   def getAccuracyGeometry(): typings.ol.polygonMod.default = js.native
-  def getAltitude(): Double = js.native
-  def getAltitudeAccuracy(): Double = js.native
-  def getHeading(): Double = js.native
-  def getPosition(): Coordinate = js.native
-  def getProjection(): typings.ol.projectionMod.default = js.native
-  def getSpeed(): Double = js.native
+  
+  /**
+    * Get the altitude associated with the position.
+    */
+  def getAltitude(): js.UndefOr[Double] = js.native
+  
+  /**
+    * Get the altitude accuracy of the position.
+    */
+  def getAltitudeAccuracy(): js.UndefOr[Double] = js.native
+  
+  /**
+    * Get the heading as radians clockwise from North.
+    * Note: depending on the browser, the heading is only defined if the enableHighAccuracy
+    * is set to true in the tracking options.
+    */
+  def getHeading(): js.UndefOr[Double] = js.native
+  
+  /**
+    * Get the position of the device.
+    */
+  def getPosition(): js.UndefOr[Coordinate] = js.native
+  
+  /**
+    * Get the projection associated with the position.
+    */
+  def getProjection(): js.UndefOr[typings.ol.projectionMod.default] = js.native
+  
+  /**
+    * Get the speed in meters per second.
+    */
+  def getSpeed(): js.UndefOr[Double] = js.native
+  
+  /**
+    * Determine if the device location is being tracked.
+    */
   def getTracking(): Boolean = js.native
-  def getTrackingOptions(): PositionOptions = js.native
+  
+  /**
+    * Get the tracking options.
+    * See http://www.w3.org/TR/geolocation-API/#position-options.
+    */
+  def getTrackingOptions(): js.UndefOr[PositionOptions] = js.native
+  
   @JSName("on")
   def on_changeaccuracy(`type`: changeColonaccuracy, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
@@ -52,6 +96,7 @@ trait Geolocation
   def on_changetracking(`type`: changeColontracking, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
   def on_changetrackingOptions(`type`: changeColontrackingOptions, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  
   @JSName("once")
   def once_changeaccuracy(`type`: changeColonaccuracy, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
@@ -72,9 +117,23 @@ trait Geolocation
   def once_changetracking(`type`: changeColontracking, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
   def once_changetrackingOptions(`type`: changeColontrackingOptions, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  
+  /**
+    * Set the projection to use for transforming the coordinates.
+    */
   def setProjection(projection: ProjectionLike): Unit = js.native
+  
+  /**
+    * Enable or disable tracking.
+    */
   def setTracking(tracking: Boolean): Unit = js.native
+  
+  /**
+    * Set the tracking options.
+    * See http://www.w3.org/TR/geolocation-API/#position-options.
+    */
   def setTrackingOptions(options: PositionOptions): Unit = js.native
+  
   @JSName("un")
   def un_changeaccuracy(`type`: changeColonaccuracy, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
@@ -96,4 +155,3 @@ trait Geolocation
   @JSName("un")
   def un_changetrackingOptions(`type`: changeColontrackingOptions, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
 }
-

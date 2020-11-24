@@ -2,7 +2,7 @@ package typings.reduxOrm.querySetMod.QuerySet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional ordering direction.
@@ -16,15 +16,17 @@ import scala.scalajs.js.annotation._
   - typings.reduxOrm.reduxOrmStrings.desc
 */
 trait SortOrder extends js.Object
-
 object SortOrder {
+  
   @scala.inline
   def asc: typings.reduxOrm.reduxOrmStrings.asc = "asc".asInstanceOf[typings.reduxOrm.reduxOrmStrings.asc]
+  
   @scala.inline
   def desc: typings.reduxOrm.reduxOrmStrings.desc = "desc".asInstanceOf[typings.reduxOrm.reduxOrmStrings.desc]
+  
   @scala.inline
   def `false`: typings.reduxOrm.reduxOrmBooleans.`false` = false.asInstanceOf[typings.reduxOrm.reduxOrmBooleans.`false`]
+  
   @scala.inline
   def `true`: typings.reduxOrm.reduxOrmBooleans.`true` = true.asInstanceOf[typings.reduxOrm.reduxOrmBooleans.`true`]
 }
-

@@ -5,11 +5,12 @@ import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.GetKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree/es/utils/treeUtil", "traverseDataNodes")
 @js.native
 object traverseDataNodes extends js.Object {
+  
   def apply(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit]): Unit = js.native
   def apply(
     dataNodes: js.Array[DataNode],
@@ -22,4 +23,3 @@ object traverseDataNodes extends js.Object {
     externalGetKey: GetKey[DataNode]
   ): Unit = js.native
 }
-

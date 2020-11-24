@@ -5,11 +5,12 @@ import typings.googleCloudCommon.serviceObjectMod.ServiceObject
 import typings.googleCloudCommon.serviceObjectMod.ServiceObjectConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/common/build/src/operation", JSImport.Namespace)
 @js.native
 object operationMod extends js.Object {
+  
   @js.native
   class Operation[T] protected () extends ServiceObject[T] {
     /**
@@ -23,8 +24,11 @@ object operationMod extends js.Object {
       * @param {module:common/service|module:common/serviceObject|module:common/grpcService|module:common/grpcServiceObject} config.parent - The parent object.
       */
     def this(config: ServiceObjectConfig) = this()
+    
     var completeListeners: Double = js.native
+    
     var hasActiveListeners: Boolean = js.native
+    
     /**
       * Begin listening for events on the operation. This method keeps track of how
       * many "complete" listeners are registered and removed, making sure polling
@@ -36,6 +40,7 @@ object operationMod extends js.Object {
       * @private
       */
     /* protected */ def listenForEvents_(): Unit = js.native
+    
     /**
       * Poll for a status update. Returns null for an incomplete
       * status, and metadata for a complete status.
@@ -43,12 +48,14 @@ object operationMod extends js.Object {
       * @private
       */
     /* protected */ def poll_(callback: MetadataCallback): Unit = js.native
+    
     /**
       * Wraps the `complete` and `error` events in a Promise.
       *
       * @return {Promise}
       */
     def promise(): js.Promise[_] = js.native
+    
     /**
       * Poll `getMetadata` to check the operation's status. This runs a loop to
       * ping the API on an interval.
@@ -60,6 +67,4 @@ object operationMod extends js.Object {
       */
     /* protected */ def startPolling_(): js.Promise[Unit] = js.native
   }
-  
 }
-

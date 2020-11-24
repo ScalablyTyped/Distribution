@@ -10,9 +10,9 @@ asynchronous function queue with adjustable concurrency
 | ------------------ | :-------------: |
 | Full name          | queue |
 | Keywords           | queue, async, asynchronous, synchronous, job, task, concurrency, concurrent |
-| # releases         | 7 |
-| # dependents       | 154 |
-| # downloads        | 3523753 |
+| # releases         | 6 |
+| # dependents       | 175 |
+| # downloads        | 10953542 |
 | # stars            | 27 |
 
 ## Links

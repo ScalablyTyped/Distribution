@@ -10,9 +10,9 @@ CSSStyleDeclaration Object Model implementation
 | ------------------ | :-------------: |
 | Full name          | cssstyle |
 | Keywords           | CSS, CSSStyleDeclaration, StyleSheet |
-| # releases         | 14 |
-| # dependents       | 83 |
-| # downloads        | 313878610 |
+| # releases         | 10 |
+| # dependents       | 101 |
+| # downloads        | 463970542 |
 | # stars            | 3 |
 
 ## Links

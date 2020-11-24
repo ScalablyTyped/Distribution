@@ -9,22 +9,11 @@ import typings.forkTsCheckerWebpackPlugin.loggerConfigurationMod.LoggerConfigura
 import typings.forkTsCheckerWebpackPlugin.typeScriptReporterConfigurationMod.TypeScriptReporterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPluginConfiguration", JSImport.Namespace)
 @js.native
 object forkTsCheckerWebpackPluginConfigurationMod extends js.Object {
-  @js.native
-  trait ForkTsCheckerWebpackPluginConfiguration extends js.Object {
-    var async: Boolean = js.native
-    var eslint: EsLintReporterConfiguration = js.native
-    @JSName("formatter")
-    var formatter_Original: FormatterConfiguration = js.native
-    var issue: IssueConfiguration = js.native
-    var logger: LoggerConfiguration = js.native
-    var typescript: TypeScriptReporterConfiguration = js.native
-    def formatter(issue: Issue): String = js.native
-  }
   
   def createForkTsCheckerWebpackPluginConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
@@ -33,5 +22,22 @@ object forkTsCheckerWebpackPluginConfigurationMod extends js.Object {
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: ForkTsCheckerWebpackPluginOptions
   ): ForkTsCheckerWebpackPluginConfiguration = js.native
+  
+  @js.native
+  trait ForkTsCheckerWebpackPluginConfiguration extends js.Object {
+    
+    var async: Boolean = js.native
+    
+    var eslint: EsLintReporterConfiguration = js.native
+    
+    def formatter(issue: Issue): String = js.native
+    @JSName("formatter")
+    var formatter_Original: FormatterConfiguration = js.native
+    
+    var issue: IssueConfiguration = js.native
+    
+    var logger: LoggerConfiguration = js.native
+    
+    var typescript: TypeScriptReporterConfiguration = js.native
+  }
 }
-

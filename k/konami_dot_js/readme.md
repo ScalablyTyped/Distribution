@@ -12,7 +12,7 @@ A small bit of JavaScript that recognizes the Konami code
 | Keywords           | konami |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 160 |
+| # downloads        | 118 |
 | # stars            | 0 |
 
 ## Links

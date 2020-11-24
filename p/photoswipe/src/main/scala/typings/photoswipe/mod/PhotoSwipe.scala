@@ -21,29 +21,98 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base PhotoSwipe class. Derived from http://photoswipe.com/documentation/api.html
   */
 @js.native
 trait PhotoSwipe[T /* <: Options */] extends js.Object {
+  
+  /**
+    * Apply zoom and pan to the current slide
+    *
+    * @param   {number} `zoomLevel`
+    * @param   {int}    `panX`
+    * @param   {int}    `panY`
+    *
+    * For example: `pswp.applyZoomPan(1, 0, 0)`
+    * will zoom current image to the original size
+    * and will place it on top left corner.
+    *
+    */
+  def applyZoomPan(zoomLevel: Double, panX: Double, panY: Double): Unit = js.native
+  
   /**
     * The background element (with class .pswp__bg).
     */
   var bg: HTMLElement = js.native
+  
+  /**
+    * Close gallery. Calls destroy() after closing.
+    */
+  def close(): Unit = js.native
+  
   /**
     * The container element (with class .pswp__container).
     */
   var container: HTMLElement = js.native
+  
   /**
     * Current slide object.
     */
   var currItem: Item = js.native
+  
+  /**
+    * Destroy gallery (unbind listeners, free memory). Automatically called after close().
+    */
+  def destroy(): Unit = js.native
+  
   /**
     * The Framework. Holds utility methods.
     */
   var framework: UIFramework = js.native
+  
+  /**
+    * Current item index.
+    */
+  def getCurrentIndex(): Double = js.native
+  
+  /**
+    * Current zoom level.
+    */
+  def getZoomLevel(): Double = js.native
+  
+  /**
+    * Go to slide by index.
+    */
+  def goTo(index: Double): Unit = js.native
+  
+  /**
+    * Initialize and open gallery (you can bind events before this method).
+    */
+  def init(): Unit = js.native
+  
+  /**
+    * Call this method after dynamically modifying the current, next, or previous slide in the items array.
+    */
+  def invalidateCurrItems(): Unit = js.native
+  
+  /**
+    * Whether one (or more) pointer is used.
+    */
+  def isDragging(): Boolean = js.native
+  
+  /**
+    * true wehn transition between is running (after swipe).
+    */
+  def isMainScrollAnimating(): Boolean = js.native
+  
+  /**
+    * Whether two (or more) pointers are used.
+    */
+  def isZooming(): Boolean = js.native
+  
   /**
     * Items in this gallery. PhotoSwipe will (almost) dynamically respond to changes in this array.
     * To add, edit, or remove slides after PhotoSwipe is opened, you just need to modify the items array.
@@ -71,72 +140,7 @@ trait PhotoSwipe[T /* <: Options */] extends js.Object {
     * (4) This technique is used to serve responsive images.
     */
   var items: js.Array[Item] = js.native
-  /**
-    * Options for this PhotoSwipe. This object is a copy of the options parameter passed into the constructor.
-    * Some properties in options are dynamically modifiable.
-    */
-  var options: T = js.native
-  /**
-    * The ui instance constructed by PhotoSwipe.
-    */
-  var ui: UI[T] = js.native
-  /**
-    * Size of the current viewport.
-    */
-  var viewportSize: X = js.native
-  /**
-    * Apply zoom and pan to the current slide
-    *
-    * @param   {number} `zoomLevel`
-    * @param   {int}    `panX`
-    * @param   {int}    `panY`
-    *
-    * For example: `pswp.applyZoomPan(1, 0, 0)`
-    * will zoom current image to the original size
-    * and will place it on top left corner.
-    *
-    */
-  def applyZoomPan(zoomLevel: Double, panX: Double, panY: Double): Unit = js.native
-  /**
-    * Close gallery. Calls destroy() after closing.
-    */
-  def close(): Unit = js.native
-  /**
-    * Destroy gallery (unbind listeners, free memory). Automatically called after close().
-    */
-  def destroy(): Unit = js.native
-  /**
-    * Current item index.
-    */
-  def getCurrentIndex(): Double = js.native
-  /**
-    * Current zoom level.
-    */
-  def getZoomLevel(): Double = js.native
-  /**
-    * Go to slide by index.
-    */
-  def goTo(index: Double): Unit = js.native
-  /**
-    * Initialize and open gallery (you can bind events before this method).
-    */
-  def init(): Unit = js.native
-  /**
-    * Call this method after dynamically modifying the current, next, or previous slide in the items array.
-    */
-  def invalidateCurrItems(): Unit = js.native
-  /**
-    * Whether one (or more) pointer is used.
-    */
-  def isDragging(): Boolean = js.native
-  /**
-    * true wehn transition between is running (after swipe).
-    */
-  def isMainScrollAnimating(): Boolean = js.native
-  /**
-    * Whether two (or more) pointers are used.
-    */
-  def isZooming(): Boolean = js.native
+  
   /**
     * PhotoSwipe uses very simple Event/Messaging system.
     * It has two methods shout (triggers event) and listen (handles event).
@@ -232,23 +236,44 @@ trait PhotoSwipe[T /* <: Options */] extends js.Object {
     */
   @JSName("listen")
   def listen_unbindEvents(eventName: unbindEvents, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Go to the next slide.
     */
   def next(): Unit = js.native
+  
+  /**
+    * Options for this PhotoSwipe. This object is a copy of the options parameter passed into the constructor.
+    * Some properties in options are dynamically modifiable.
+    */
+  var options: T = js.native
+  
   /**
     * Go to the previous slide.
     */
   def prev(): Unit = js.native
+  
   /**
     * Triggers eventName event with args passed through to listeners.
     */
   def shout(eventName: String, args: js.Any*): Unit = js.native
+  
+  /**
+    * The ui instance constructed by PhotoSwipe.
+    */
+  var ui: UI[T] = js.native
+  
   /**
     * Update gallery size
     * @param  {boolean} `force` If you set it to `true`, size of the gallery will be updated even if viewport size hasn't changed.
     */
   def updateSize(force: Boolean): Unit = js.native
+  
+  /**
+    * Size of the current viewport.
+    */
+  var viewportSize: X = js.native
+  
   /**
     * Zoom in/out the current slide to a specified zoom level, optionally with animation.
     *
@@ -288,4 +313,3 @@ trait PhotoSwipe[T /* <: Options */] extends js.Object {
     updateFn: js.Function1[/* now */ Double, Unit]
   ): Unit = js.native
 }
-

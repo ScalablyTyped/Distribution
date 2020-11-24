@@ -3,11 +3,12 @@ package typings.getUrls.mod
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("get-urls", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Get all URLs in a string.
   The URLs will be [normalized](https://github.com/sindresorhus/normalize-url).
@@ -23,4 +24,3 @@ object ^ extends js.Object {
   def apply(text: String): Set[String] = js.native
   def apply(text: String, options: Options): Set[String] = js.native
 }
-

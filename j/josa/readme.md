@@ -12,7 +12,7 @@ Handles josa selection for dynamically generated strings
 | Keywords           | 한글, 한국어, 문법, 조사, Korean, Hangul, Hangeul, syntax, grammar, josa |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6732 |
+| # downloads        | 16342 |
 | # stars            | 1 |
 
 ## Links

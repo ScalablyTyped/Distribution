@@ -6,10 +6,9 @@ import typings.std.Headers
 import typings.std.HeadersInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
   extends Instantiable0[Headers]
      with Instantiable1[/* init */ HeadersInit, Headers]
-

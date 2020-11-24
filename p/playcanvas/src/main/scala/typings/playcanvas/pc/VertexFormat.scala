@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns a new pc.VertexFormat object.
@@ -100,40 +100,47 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait VertexFormat extends js.Object {
+  
   /**
     * The vertex attribute elements.
     */
   var elements: js.Array[Name] = js.native
+  
   /**
     * Applies any changes made to the VertexFormat's properties.
     */
   def update(): Unit = js.native
 }
-
 object VertexFormat {
+  
   @scala.inline
   def apply(elements: js.Array[Name], update: () => Unit): VertexFormat = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[VertexFormat]
   }
+  
   @scala.inline
   implicit class VertexFormatOps[Self <: VertexFormat] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setElementsVarargs(value: Name*): Self = this.set("elements", js.Array(value :_*))
+    
     @scala.inline
     def setElements(value: js.Array[Name]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
   }
-  
 }
-

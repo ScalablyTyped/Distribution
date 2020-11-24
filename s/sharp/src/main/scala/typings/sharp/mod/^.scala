@@ -3,11 +3,12 @@ package typings.sharp.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharp", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   //#region Constructor functions
   /**
     * Creates a sharp instance from an image
@@ -24,4 +25,3 @@ object ^ extends js.Object {
   def apply(input: Buffer, options: SharpOptions): Sharp = js.native
   def apply(options: SharpOptions): Sharp = js.native
 }
-

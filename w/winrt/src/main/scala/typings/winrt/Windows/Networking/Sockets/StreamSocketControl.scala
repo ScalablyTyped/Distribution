@@ -2,12 +2,12 @@ package typings.winrt.Windows.Networking.Sockets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StreamSocketControl extends IStreamSocketControl
-
 object StreamSocketControl {
+  
   @scala.inline
   def apply(
     keepAlive: Boolean,
@@ -20,4 +20,3 @@ object StreamSocketControl {
     __obj.asInstanceOf[StreamSocketControl]
   }
 }
-

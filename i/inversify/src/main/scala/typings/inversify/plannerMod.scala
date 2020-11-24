@@ -10,15 +10,18 @@ import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import typings.inversify.interfacesMod.interfaces.TargetType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify/dts/planning/planner", JSImport.Namespace)
 @js.native
 object plannerMod extends js.Object {
+  
   def createMockRequest(container: Container, serviceIdentifier: ServiceIdentifier[_], key: String, value: js.Any): Request = js.native
   def createMockRequest(container: Container, serviceIdentifier: ServiceIdentifier[_], key: js.Symbol, value: js.Any): Request = js.native
   def createMockRequest(container: Container, serviceIdentifier: ServiceIdentifier[_], key: Double, value: js.Any): Request = js.native
+  
   def getBindingDictionary(cntnr: js.Any): Lookup[Binding[_]] = js.native
+  
   def plan(
     metadataReader: MetadataReader,
     container: Container,
@@ -167,4 +170,3 @@ object plannerMod extends js.Object {
     avoidConstraints: Boolean
   ): Context = js.native
 }
-

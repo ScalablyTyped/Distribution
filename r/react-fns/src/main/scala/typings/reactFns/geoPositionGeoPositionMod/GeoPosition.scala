@@ -5,19 +5,23 @@ import typings.reactFns.anon.IsLoading
 import typings.reactFns.typesMod.SharedRenderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-fns/dist/GeoPosition/GeoPosition", "GeoPosition")
 @js.native
 class GeoPosition ()
   extends Component[SharedRenderProps[GeoPositionProps], GeoPositionProps, js.Any] {
-  var geoId: js.Any = js.native
-  @JSName("state")
-  var state_GeoPosition: IsLoading = js.native
+  
   @JSName("componentDidMount")
   def componentDidMount_MGeoPosition(): Unit = js.native
+  
   @JSName("componentWillUnmount")
   def componentWillUnmount_MGeoPosition(): Unit = js.native
+  
+  var geoId: js.Any = js.native
+  
   def requestGeo(): Unit = js.native
+  
+  @JSName("state")
+  var state_GeoPosition: IsLoading = js.native
 }
-

@@ -2,13 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object tree {
+  
   /** If you do not want to implement the {@link XTreeDataModel} yourself, use this service. This implementation uses {@link MutableTreeNode} for its nodes. */
   type MutableTreeDataModel = typings.activexLibreoffice.com_.sun.star.awt.tree.XMutableTreeDataModel
+  
   /** Represents an editable tree node as used by the {@link MutableTreeDataModel} */
   type MutableTreeNode = typings.activexLibreoffice.com_.sun.star.awt.tree.XMutableTreeNode
+  
   /**
     * A control that displays a set of hierarchical data as an outline.
     *

@@ -90,90 +90,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3]] {
-  var animationDuration: Double = js.native
-  var animationOnDisplay: auto | none = js.native
-  var areaData: (DataProvider[K1, D1]) | Null = js.native
-  var as: String = js.native
-  var focusRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
-  var initialZooming: auto | none = js.native
-  var isolatedItem: K1 = js.native
-  var labelDisplay: on | off | auto = js.native
-  var labelType: long | short = js.native
-  var linkData: (DataProvider[K2, D2]) | Null = js.native
-  var mapProvider: Geo = js.native
-  var markerData: (DataProvider[K3, D3]) | Null = js.native
-  var markerZoomBehavior: zoom | fixed = js.native
-  var maxZoom: Double = js.native
-  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAreaDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onFocusRendererChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
-    ], 
-    _
-  ]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onHoverRendererChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
-    ], 
-    _
-  ]) | Null = js.native
-  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onIsolatedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K1], _]) | Null = js.native
-  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], _]) | Null = js.native
-  var onLabelTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[long | short], _]) | Null = js.native
-  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], _]) | Null = js.native
-  var onMapProviderChanged: (js.Function1[/* event */ JetElementCustomEvent[Geo], _]) | Null = js.native
-  var onMarkerDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], _]) | Null = js.native
-  var onMarkerZoomBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[zoom | fixed], _]) | Null = js.native
-  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onRendererChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
-    ], 
-    _
-  ]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onSelectionRendererChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
-    ], 
-    _
-  ]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AreaSvgStyle], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
-  var onTooltipDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], _]) | Null = js.native
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
-  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var panning: auto | none = js.native
-  var renderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
-  var selection: js.Array[K1 | K2 | K3] = js.native
-  var selectionMode: single | multiple | none = js.native
-  var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
-  var styleDefaults: AreaSvgStyle = js.native
-  var tooltip: `27`[K1, K2, K3, D1, D2, D3] = js.native
-  var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc = js.native
-  var touchResponse: touchStart | auto = js.native
-  @JSName("translations")
-  var translations_ojThematicMap_ : LabelAndValue = js.native
-  var zooming: auto | none = js.native
+  
   def addEventListener(
     `type`: animationOnDisplayChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -557,10 +478,25 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     ],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationDuration: Double = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var areaData: (DataProvider[K1, D1]) | Null = js.native
+  
+  var as: String = js.native
+  
+  var focusRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
   def getArea(index: Double): DataContext | Null = js.native
+  
   def getContextByNode(node: Element): NodeContext | Null = js.native
+  
   def getLink(index: Double): DataContext | Null = js.native
+  
   def getMarker(index: Double): DataContext | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_animationDuration(property: animationDuration): Double = js.native
   @JSName("getProperty")
@@ -619,7 +555,125 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   @JSName("getProperty")
   def getProperty_zooming(property: zooming): auto | none = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
+  var initialZooming: auto | none = js.native
+  
+  var isolatedItem: K1 = js.native
+  
+  var labelDisplay: on | off | auto = js.native
+  
+  var labelType: long | short = js.native
+  
+  var linkData: (DataProvider[K2, D2]) | Null = js.native
+  
+  var mapProvider: Geo = js.native
+  
+  var markerData: (DataProvider[K3, D3]) | Null = js.native
+  
+  var markerZoomBehavior: zoom | fixed = js.native
+  
+  var maxZoom: Double = js.native
+  
+  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAreaDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onFocusRendererChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onHoverRendererChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onIsolatedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K1], _]) | Null = js.native
+  
+  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], _]) | Null = js.native
+  
+  var onLabelTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[long | short], _]) | Null = js.native
+  
+  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], _]) | Null = js.native
+  
+  var onMapProviderChanged: (js.Function1[/* event */ JetElementCustomEvent[Geo], _]) | Null = js.native
+  
+  var onMarkerDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], _]) | Null = js.native
+  
+  var onMarkerZoomBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[zoom | fixed], _]) | Null = js.native
+  
+  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onRendererChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
+  
+  var onSelectionRendererChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AreaSvgStyle], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
+  
+  var onTooltipDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], _]) | Null = js.native
+  
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  
+  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var panning: auto | none = js.native
+  
+  var renderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
+  var selection: js.Array[K1 | K2 | K3] = js.native
+  
+  var selectionMode: single | multiple | none = js.native
+  
+  var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
   def setProperties(properties: ojThematicMapSettablePropertiesLenient[K1, K2, K3, D1, D2, D3]): Unit = js.native
+  
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
   def setProperty(property: animationOnDisplay, value: none): Unit = js.native
   def setProperty(property: highlightMatch, value: all): Unit = js.native
@@ -710,5 +764,17 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   def setProperty_tooltip(property: tooltip, value: `27`[K1, K2, K3, D1, D2, D3]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
+  
+  var styleDefaults: AreaSvgStyle = js.native
+  
+  var tooltip: `27`[K1, K2, K3, D1, D2, D3] = js.native
+  
+  var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc = js.native
+  
+  var touchResponse: touchStart | auto = js.native
+  
+  @JSName("translations")
+  var translations_ojThematicMap_ : LabelAndValue = js.native
+  
+  var zooming: auto | none = js.native
 }
-

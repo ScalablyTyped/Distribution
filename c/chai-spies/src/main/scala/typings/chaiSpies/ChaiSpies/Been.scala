@@ -3,10 +3,13 @@ package typings.chaiSpies.ChaiSpies
 import typings.chaiSpies.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Been extends Assertion {
+  
+  def apply(): Assertion = js.native
+  
   /**
     * ####.first
     * Assert that a spy has been called first.
@@ -18,6 +21,7 @@ trait Been extends Assertion {
     * ```
     */
   var first: Assertion = js.native
+  
   /**
     * ####.second
     * Assert that a spy has been called second.
@@ -29,6 +33,7 @@ trait Been extends Assertion {
     * ```
     */
   var second: Assertion = js.native
+  
   /**
     * ####.third
     * Assert that a spy has been called third.
@@ -40,6 +45,4 @@ trait Been extends Assertion {
     * ```
     */
   var third: Assertion = js.native
-  def apply(): Assertion = js.native
 }
-

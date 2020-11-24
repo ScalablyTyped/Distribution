@@ -3,7 +3,7 @@ package typings.angularCommon.httpHttpMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpHeaders")
 @js.native
@@ -11,29 +11,7 @@ import scala.scalajs.js.annotation._
 class HttpHeaders () extends js.Object {
   def this(headers: String) = this()
   def this(headers: StringDictionary[String | js.Array[String]]) = this()
-  var applyUpdate: js.Any = js.native
-  @JSName("clone")
-  var clone_FHttpHeaders: js.Any = js.native
-  var copyFrom: js.Any = js.native
-  /**
-    * Internal map of lowercase header names to values.
-    */
-  var headers: js.Any = js.native
-  var init: js.Any = js.native
-  /**
-    * Complete the lazy initialization of this object (needed before reading).
-    */
-  var lazyInit: js.Any = js.native
-  /**
-    * Queued updates to be materialized the next initialization.
-    */
-  var lazyUpdate: js.Any = js.native
-  var maybeSetNormalizedName: js.Any = js.native
-  /**
-    * Internal map of lowercased header names to the normalized
-    * form of the name (the form seen first).
-    */
-  var normalizedNames: js.Any = js.native
+  
   /**
     * Appends a new value to the existing set of values for a header
     * and returns them in a clone of the original instance.
@@ -45,6 +23,14 @@ class HttpHeaders () extends js.Object {
     */
   def append(name: String, value: String): HttpHeaders = js.native
   def append(name: String, value: js.Array[String]): HttpHeaders = js.native
+  
+  var applyUpdate: js.Any = js.native
+  
+  @JSName("clone")
+  var clone_FHttpHeaders: js.Any = js.native
+  
+  var copyFrom: js.Any = js.native
+  
   /**
     * Deletes values for a given header in a clone of the original instance.
     *
@@ -56,6 +42,7 @@ class HttpHeaders () extends js.Object {
   def delete(name: String): HttpHeaders = js.native
   def delete(name: String, value: String): HttpHeaders = js.native
   def delete(name: String, value: js.Array[String]): HttpHeaders = js.native
+  
   /**
     * Retrieves the first value of a given header.
     *
@@ -64,6 +51,7 @@ class HttpHeaders () extends js.Object {
     * @returns The value string if the header exists, null otherwise
     */
   def get(name: String): String | Null = js.native
+  
   /**
     * Retrieves a list of values for a given header.
     *
@@ -72,6 +60,7 @@ class HttpHeaders () extends js.Object {
     * @returns A string of values if the header exists, null otherwise.
     */
   def getAll(name: String): js.Array[String] | Null = js.native
+  
   /**
     * Checks for existence of a given header.
     *
@@ -80,12 +69,39 @@ class HttpHeaders () extends js.Object {
     * @returns True if the header exists, false otherwise.
     */
   def has(name: String): Boolean = js.native
+  
+  /**
+    * Internal map of lowercase header names to values.
+    */
+  var headers: js.Any = js.native
+  
+  var init: js.Any = js.native
+  
   /**
     * Retrieves the names of the headers.
     *
     * @returns A list of header names.
     */
   def keys(): js.Array[String] = js.native
+  
+  /**
+    * Complete the lazy initialization of this object (needed before reading).
+    */
+  var lazyInit: js.Any = js.native
+  
+  /**
+    * Queued updates to be materialized the next initialization.
+    */
+  var lazyUpdate: js.Any = js.native
+  
+  var maybeSetNormalizedName: js.Any = js.native
+  
+  /**
+    * Internal map of lowercased header names to the normalized
+    * form of the name (the form seen first).
+    */
+  var normalizedNames: js.Any = js.native
+  
   /**
     * Sets or modifies a value for a given header in a clone of the original instance.
     * If the header already exists, its value is replaced with the given value
@@ -99,4 +115,3 @@ class HttpHeaders () extends js.Object {
   def set(name: String, value: String): HttpHeaders = js.native
   def set(name: String, value: js.Array[String]): HttpHeaders = js.native
 }
-

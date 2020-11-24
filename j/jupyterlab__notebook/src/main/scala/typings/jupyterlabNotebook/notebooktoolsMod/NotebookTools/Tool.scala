@@ -5,7 +5,7 @@ import typings.jupyterlabObservables.mod.ObservableJSON.ChangeMessage
 import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base notebook tool, meant to be subclassed.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/notebook/lib/notebooktools", "NotebookTools.Tool")
 @js.native
 class Tool () extends ITool {
+  
   /**
     * Handle a change to the active cell.
     *
@@ -20,6 +21,7 @@ class Tool () extends ITool {
     * The default implementation is a no-op.
     */
   /* protected */ def onActiveCellChanged(msg: Message): Unit = js.native
+  
   /**
     * Handle a change to the metadata of the active cell.
     *
@@ -27,6 +29,7 @@ class Tool () extends ITool {
     * The default implementation is a no-op.
     */
   /* protected */ def onActiveCellMetadataChanged(msg: ChangeMessage): Unit = js.native
+  
   /**
     * Handle a change to the notebook panel.
     *
@@ -34,6 +37,7 @@ class Tool () extends ITool {
     * The default implementation is a no-op.
     */
   /* protected */ def onActiveNotebookPanelChanged(msg: Message): Unit = js.native
+  
   /**
     * Handle a change to the metadata of the active cell.
     *
@@ -41,6 +45,7 @@ class Tool () extends ITool {
     * The default implementation is a no-op.
     */
   /* protected */ def onActiveNotebookPanelMetadataChanged(msg: ChangeMessage): Unit = js.native
+  
   /**
     * Handle a change to the selection.
     *
@@ -49,4 +54,3 @@ class Tool () extends ITool {
     */
   /* protected */ def onSelectionChanged(msg: Message): Unit = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RequestExecutor extends js.Object {
+  
   def attemptLogin(returnUrl: String, success: js.Function1[/* response */ ResponseInfo, Unit]): Unit = js.native
   def attemptLogin(
     returnUrl: String,
@@ -17,10 +18,14 @@ trait RequestExecutor extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def executeAsync(requestInfo: RequestInfo): Unit = js.native
+  
   def get_formDigestHandlingEnabled(): Boolean = js.native
+  
   def get_iFrameSourceUrl(): String = js.native
+  
   def set_formDigestHandlingEnabled(value: Boolean): Unit = js.native
+  
   def set_iFrameSourceUrl(value: String): Unit = js.native
 }
-

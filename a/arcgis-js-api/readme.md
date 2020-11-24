@@ -1,7 +1,7 @@
 
 # Scala.js typings for arcgis-js-api
 
-Typings are for version 4.16
+Typings are for version 4.17
 
 ## Library description:
 Minified, unbuilt version of the ArcGIS API for JavaScript
@@ -10,9 +10,9 @@ Minified, unbuilt version of the ArcGIS API for JavaScript
 | ------------------ | :-------------: |
 | Full name          | arcgis-js-api |
 | Keywords           | esrijs, esri, arcgis, gis |
-| # releases         | 37 |
-| # dependents       | 9 |
-| # downloads        | 31744 |
+| # releases         | 91 |
+| # dependents       | 10 |
+| # downloads        | 98026 |
 | # stars            | 2 |
 
 ## Links

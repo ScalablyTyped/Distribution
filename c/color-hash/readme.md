@@ -11,8 +11,8 @@ Generate color based on the given string (using HSL color space and BKDRHash).
 | Full name          | color-hash |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 979771 |
+| # dependents       | 45 |
+| # downloads        | 1424198 |
 | # stars            | 3 |
 
 ## Links

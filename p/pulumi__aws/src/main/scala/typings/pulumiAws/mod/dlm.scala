@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "dlm")
 @js.native
 object dlm extends js.Object {
+  
   @js.native
   class LifecyclePolicy protected ()
     extends typings.pulumiAws.dlmMod.LifecyclePolicy {
@@ -25,10 +26,10 @@ object dlm extends js.Object {
     def this(name: String, args: LifecyclePolicyArgs) = this()
     def this(name: String, args: LifecyclePolicyArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object LifecyclePolicy extends js.Object {
+    
     /**
       * Get an existing LifecyclePolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,12 +43,11 @@ object dlm extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lifecyclePolicyMod.LifecyclePolicy = js.native
     def get(name: String, id: Input[ID], state: LifecyclePolicyState): typings.pulumiAws.lifecyclePolicyMod.LifecyclePolicy = js.native
     def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): typings.pulumiAws.lifecyclePolicyMod.LifecyclePolicy = js.native
+    
     /**
       * Returns true if the given object is an instance of LifecyclePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dlm/lifecyclePolicy.LifecyclePolicy */ Boolean = js.native
   }
-  
 }
-

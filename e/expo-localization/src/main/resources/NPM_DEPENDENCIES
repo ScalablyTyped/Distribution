@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-localization" : "8.2.1"
+      "expo-localization" : "9.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-localization" : "8.2.1"
+      "expo-localization" : "9.0.0"
     }
   ],
   "compile-devDependencies" : [

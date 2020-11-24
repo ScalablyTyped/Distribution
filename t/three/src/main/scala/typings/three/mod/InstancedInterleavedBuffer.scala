@@ -3,7 +3,7 @@ package typings.three.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "InstancedInterleavedBuffer")
 @js.native
@@ -12,4 +12,3 @@ class InstancedInterleavedBuffer protected ()
   def this(array: ArrayLike[Double], stride: Double) = this()
   def this(array: ArrayLike[Double], stride: Double, meshPerAttribute: Double) = this()
 }
-

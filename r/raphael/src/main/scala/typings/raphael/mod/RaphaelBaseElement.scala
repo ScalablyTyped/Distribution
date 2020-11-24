@@ -42,14 +42,11 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Object {
-  /**
-    * The current transform matrix representing the total transform of this element.
-    */
-  var matrix: RaphaelMatrix = js.native
+  
   /**
     * Creates and starts animation for given element.
     * @param animation The animation to apply to this element. Use {@link RaphaelStatic.animation} to create an
@@ -95,6 +92,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     easing: RaphaelCustomEasingFormula,
     onAnimationComplete: RaphaelOnAnimationCompleteHandler[this.type]
   ): this.type = js.native
+  
   /**
     * Acts similar to {@link animate}, but ensures that the given animation runs in sync with another given element.
     * @param otherElement Element to sync with.
@@ -185,6 +183,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     easing: RaphaelCustomEasingFormula,
     onAnimationComplete: RaphaelOnAnimationCompleteHandler[this.type]
   ): this.type = js.native
+  
   /**
     * Writes the given attributes to this element.
     * @param attributes Attributes to set on this element.
@@ -422,12 +421,14 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   def attr_y(attributeName: y, attributeValue: Double): this.type = js.native
   @JSName("attr")
   def attr_y_Union(attributeName: y): js.UndefOr[Double] = js.native
+  
   /**
     * Adds an event handler for the click event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def click(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Retrieves the value associated with the given key. See also {@link removeData}.
     * @param key Key of the datum to retrieve.
@@ -440,12 +441,14 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @param value Datum to store.
     */
   def data(key: String, value: js.Any): this.type = js.native
+  
   /**
     * Adds an event handler for the double click event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def dblclick(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Adds the event handlers for a drag of this element.
     * @typeparam MoveThisContext Type of the this context for the `onMove` handler.
@@ -516,6 +519,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     startThisContext: js.UndefOr[scala.Nothing],
     endThisContext: EndThisContext
   ): this.type = js.native
+  
   /**
     * Returns a bounding box for this element.
     * @param isWithoutTransform `true` if you want to have bounding box before transformations are applied.
@@ -524,6 +528,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def getBBox(): RaphaelAxisAlignedBoundingBox = js.native
   def getBBox(isWithoutTransform: Boolean): RaphaelAxisAlignedBoundingBox = js.native
+  
   /**
     * Return a set of elements that create a glow-like effect around this element.
     *
@@ -533,11 +538,13 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def glow(): RaphaelSet[TTechnology] = js.native
   def glow(glow: PartialRaphaelGlowSetting): RaphaelSet[TTechnology] = js.native
+  
   /**
     * Makes this element invisible. See also {@link RaphaelElement.show}.
     * @return this element for chaining.
     */
   def hide(): this.type = js.native
+  
   /**
     * Adds event handlers for the hover events to this element.
     * @typeparam HoverInThisContext Type of the this context for the `onHoverIn` handler.
@@ -569,6 +576,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     hoverInThisContext: js.UndefOr[scala.Nothing],
     hoverOutThisContext: HoverOutThisContext
   ): this.type = js.native
+  
   /**
     * Inserts current object after the given one in the DOM.
     * @param element Element to insert.
@@ -580,6 +588,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ]
   ): this.type = js.native
+  
   /**
     * Inserts current object before the given one.
     * @param element Element to insert.
@@ -591,36 +600,47 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ]
   ): this.type = js.native
+  
+  /**
+    * The current transform matrix representing the total transform of this element.
+    */
+  var matrix: RaphaelMatrix = js.native
+  
   /**
     * Adds an event handler for the mousedown event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def mousedown(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the mousemove event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def mousemove(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the mouseout event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def mouseout(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the mouseover event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def mouseover(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the mouseup event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def mouseup(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Shortcut for assigning an event handler for the `drag.over.<id>` event, where `id` is the ID of the element,
     * see {@link RaphaelElement.id}.
@@ -630,6 +650,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   def onDragOver(
     onDragOverHandler: RaphaelDragOnOverHandler[TTechnology, RaphaelUnwrapElement[TTechnology, this.type]]
   ): this.type = js.native
+  
   /**
     * Stops an animation of this element with the ability to resume it later on.
     * @param anim Animation to pause. If not given, pauses all current animations.
@@ -637,10 +658,12 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def pause(): this.type = js.native
   def pause(anim: RaphaelAnimation): this.type = js.native
+  
   /**
     * Removes this element from the paper.
     */
   def remove(): Unit = js.native
+  
   /**
     * Removes the value associated with this element by the given key. If the key is not provided, removes all the
     * data of this element.
@@ -649,6 +672,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def removeData(): this.type = js.native
   def removeData(key: String): this.type = js.native
+  
   /**
     * Resumes animation if it was paused with {@link RaphaelElement.pause} method.
     * @param anim The animation that was paused. If not given, resumes all currently paused animations.
@@ -656,6 +680,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def resume(): this.type = js.native
   def resume(anim: RaphaelAnimation): this.type = js.native
+  
   /**
     * Rotates this element by the given angle around the center of this shape.
     * @param degrees Angle in degrees by which to rotate.
@@ -670,6 +695,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @return this element for chaining.
     */
   def rotate(degrees: Double, centerX: Double, centerY: Double): this.type = js.native
+  
   /**
     * Scales this element by the given scale factor. The center of this
     * shape is used as the center of the scaling operation.
@@ -688,6 +714,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @return this element for chaining.
     */
   def scale(scaleFactorX: Double, scaleFactorY: Double, centerX: Double, centerY: Double): this.type = js.native
+  
   /**
     * Sets the status of animation of the element in milliseconds. Similar to {@link status} method.
     * @param animation Animation for which to set the status.
@@ -695,11 +722,13 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @return this element for chaining.
     */
   def setTime(animation: RaphaelAnimation, value: Double): this.type = js.native
+  
   /**
     * Makes this element visible. See also {@link RaphaelElement.hide}.
     * @return this element for chaining.
     */
   def show(): this.type = js.native
+  
   /**
     * Gets the status (normalized animation time) of the current animations of this element.
     * @return The status of all animations currently playing.
@@ -719,6 +748,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @return this element for chaining.
     */
   def status(animation: RaphaelAnimation, value: Double): this.type = js.native
+  
   /**
     * Stops all or the the given animation of this element.
     * @param animation An animation to stop. If not given, stops all animations currently playing.
@@ -726,40 +756,47 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def stop(): this.type = js.native
   def stop(animation: RaphaelAnimation): this.type = js.native
+  
   /**
     * Moves this element so it is the furthest from the viewer’s eyes, behind other elements.
     * @return this element for chaining.
     */
   def toBack(): this.type = js.native
+  
   /**
     * Moves this element so it is the closest to the viewer’s eyes, on top of other elements.
     * @return this element for chaining.
     */
   def toFront(): this.type = js.native
+  
   /**
     * Adds an event handler for the touchcancel event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def touchcancel(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the touchend event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def touchend(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the touchmove event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def touchmove(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Adds an event handler for the touchstart event to this element.
     * @param handler Handler for the event.
     * @return this element for chaining.
     */
   def touchstart(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Returns the current transformation of this element. This transformation is separate to other attributes, i.e.
     * translation does not change x or y of the rectangle. The format of transformation string is similar to the
@@ -844,6 +881,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @return this element for chaining.
     */
   def transform(transformString: String): this.type = js.native
+  
   /**
     * Translates this element by the given amount.
     * @param deltaX Amount by which to translate in the horizontal direction.
@@ -851,23 +889,27 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     * @return this element for chaining.
     */
   def translate(deltaX: Double, deltaY: Double): this.type = js.native
+  
   /**
     * Removes an event handler for the click event from this element. See {@link click}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def unclick(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the double click event from this element. See {@link dblclick}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def undblclick(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes all drag event handlers from this element.
     * @return this element for chaining.
     */
   def undrag(): this.type = js.native
+  
   /**
     * Removes the event handlers for the hover event from this element. See {@link hover}.
     * @param onHoverInHandler Hover-in handler to remove.
@@ -878,54 +920,63 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     onHoverInHandler: RaphaelBasicEventHandler[_, MouseEvent],
     onHoverOutHandler: RaphaelBasicEventHandler[_, MouseEvent]
   ): this.type = js.native
+  
   /**
     * Removes an event handler for the mousedown event from this element. See {@link mousedown}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def unmousedown(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the mousemove event from this element. See {@link mousemove}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def unmousemove(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the mouseout event from this element. See {@link mouseout}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def unmouseout(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the mouseover event from this element. See {@link mouseover}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def unmouseover(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the mouseup event from this element. See {@link mouseup}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def unmouseup(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the touchcancel event from this element. See {@link touchcancel}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def untouchcancel(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the touchend event from this element. See {@link touchend}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def untouchend(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the touchmove event from this element. See {@link touchmove}.
     * @param handler A handler to remove.
     * @return this element for chaining.
     */
   def untouchmove(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
+  
   /**
     * Removes an event handler for the touchstart event from this element. See {@link touchstart}.
     * @param handler A handler to remove.
@@ -933,4 +984,3 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     */
   def untouchstart(handler: RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent]): this.type = js.native
 }
-

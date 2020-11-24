@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -8,17 +9,19 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.mappingsMod.mappings.Element
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.MxSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/jsonstructures", JSImport.Namespace)
 @js.native
 object jsonstructuresMod extends js.Object {
+  
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
@@ -27,8 +30,9 @@ object jsonstructuresMod extends js.Object {
   
   @js.native
   object jsonstructures extends js.Object {
+    
     /**
-      * See: {@link https://docs.mendix.com/refguide7/json-structures relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/json-structures relevant section in reference guide}
       *
       * In version 6.6.0: removed experimental
       * In version 6.2.0: introduced
@@ -49,17 +53,51 @@ object jsonstructuresMod extends js.Object {
         structureTypeName: String,
         id: String,
         isPartial: Boolean,
-        unit: ModelUnit,
-        container: AbstractElement
+        unit: ModelUnit[IAbstractModel],
+        container: AbstractElement[IAbstractModel, Container]
       ) = this()
-      @JSName("model")
-      var model_FJsonElement: IModel = js.native
+      
       def originalValue: String = js.native
       def originalValue_=(newValue: String): Unit = js.native
     }
+    /* static members */
+    @js.native
+    object JsonElement extends js.Object {
+      
+      /**
+        * Creates and returns a new JsonElement instance in the SDK and on the server.
+        * Expects one argument: the IModel object the instance will "live on".
+        * After creation, assign or add this instance to a property that accepts this kind of objects.
+        */
+      def create(model: IModel): JsonElement = js.native
+      
+      /**
+        * Creates and returns a new JsonElement instance in the SDK and on the server.
+        * The new JsonElement will be automatically stored in the 'children' property
+        * of the parent mappings.Element element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.6.0 and higher
+        */
+      def createInElementUnderChildren(container: Element): JsonElement = js.native
+      
+      /**
+        * Creates and returns a new JsonElement instance in the SDK and on the server.
+        * The new JsonElement will be automatically stored in the 'elements' property
+        * of the parent JsonStructure element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.6.0 and higher
+        */
+      def createInJsonStructureUnderElements(container: JsonStructure): JsonElement = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
+    }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/json-structures relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/json-structures relevant section in reference guide}
       *
       * In version 6.6.0: removed experimental
       * In version 6.2.0: introduced
@@ -83,62 +121,31 @@ object jsonstructuresMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      @JSName("model")
-      var model_FJsonStructure: IModel = js.native
+      
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MJsonStructure: FolderBase = js.native
+      
       /**
         * In version 6.6.0: introduced
         */
       def elements: IList[Element] = js.native
+      
       def jsonSnippet: String = js.native
       def jsonSnippet_=(newValue: String): Unit = js.native
     }
-    
-    /* static members */
-    @js.native
-    object JsonElement extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
-      /**
-        * Creates and returns a new JsonElement instance in the SDK and on the server.
-        * Expects one argument: the IModel object the instance will "live on".
-        * After creation, assign or add this instance to a property that accepts this kind of objects.
-        */
-      def create(model: IModel): JsonElement = js.native
-      /**
-        * Creates and returns a new JsonElement instance in the SDK and on the server.
-        * The new JsonElement will be automatically stored in the 'children' property
-        * of the parent mappings.Element element passed as argument.
-        *
-        * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  6.6.0 and higher
-        */
-      def createInElementUnderChildren(container: Element): JsonElement = js.native
-      /**
-        * Creates and returns a new JsonElement instance in the SDK and on the server.
-        * The new JsonElement will be automatically stored in the 'elements' property
-        * of the parent JsonStructure element passed as argument.
-        *
-        * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  6.6.0 and higher
-        */
-      def createInJsonStructureUnderElements(container: JsonStructure): JsonElement = js.native
-    }
-    
     /* static members */
     @js.native
     object JsonStructure extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
+      
       /**
         * Creates a new JsonStructure unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       def createIn(container: IFolderBase): JsonStructure = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
     }
-    
   }
-  
 }
-

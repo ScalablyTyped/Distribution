@@ -2,10 +2,11 @@ package typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shared extends js.Object {
+  
   /**
     * Return a number formatted according to the given options or locale's defaults.
     * @param {number} value The number to format
@@ -20,6 +21,7 @@ trait Shared extends js.Object {
     */
   def formatNumber(value: Double): String = js.native
   def formatNumber(value: Double, options: NumberFormatterOptions): String = js.native
+  
   /**
     * Return a function that formats a number according to the given options or locale's defaults.
     * @param {NumberFormatterOptions} options A JSON object including none or any of the following options.
@@ -33,6 +35,7 @@ trait Shared extends js.Object {
     */
   def numberFormatter(): js.Function1[/* value */ Double, String] = js.native
   def numberFormatter(options: NumberFormatterOptions): js.Function1[/* value */ Double, String] = js.native
+  
   /**
     * Return a function that parses a string representing a number according to the given options or locale's defaults.
     * @param {NumberParserOptions} options A JSON object including none or any of the following options.
@@ -41,6 +44,7 @@ trait Shared extends js.Object {
     */
   def numberParser(): js.Function1[/* value */ String, Double] = js.native
   def numberParser(options: NumberParserOptions): js.Function1[/* value */ String, Double] = js.native
+  
   /**
     * A function that parses a string representing a number according to the given options or locale's defaults.
     * @param {string} value The number as string to parse
@@ -51,4 +55,3 @@ trait Shared extends js.Object {
   def parseNumber(value: String): Double = js.native
   def parseNumber(value: String, options: NumberParserOptions): Double = js.native
 }
-

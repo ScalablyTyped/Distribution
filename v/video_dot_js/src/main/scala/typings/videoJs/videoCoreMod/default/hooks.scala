@@ -2,11 +2,12 @@ package typings.videoJs.videoCoreMod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "hooks")
 @js.native
 object hooks extends js.Object {
+  
   /**
     * Get a list of hooks for a specific lifecycle
     *
@@ -22,4 +23,3 @@ object hooks extends js.Object {
   def apply(`type`: String, fn: js.Array[js.Function0[_]]): Unit = js.native
   def apply(`type`: String, fn: js.Function0[_]): Unit = js.native
 }
-

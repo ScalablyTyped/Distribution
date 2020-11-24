@@ -6,10 +6,11 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IHelpMenu_ extends IJupyterLabMenu {
+  
   /**
     * A set of kernel users for the help menu.
     * This is used to populate additional help
@@ -17,4 +18,3 @@ trait IHelpMenu_ extends IJupyterLabMenu {
     */
   val kernelUsers: Set[IKernelUser[Widget]] = js.native
 }
-

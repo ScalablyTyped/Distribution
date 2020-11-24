@@ -2,9 +2,10 @@ package typings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object zoneJs {
+  
   /**
     * Patch Function to allow user define their own monkey patch module.
     */

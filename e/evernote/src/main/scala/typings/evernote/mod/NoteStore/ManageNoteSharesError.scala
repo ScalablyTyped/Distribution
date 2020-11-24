@@ -6,15 +6,18 @@ import typings.evernote.mod.Errors.EDAMUserException
 import typings.evernote.mod.Types.UserID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.ManageNoteSharesError")
 @js.native
 class ManageNoteSharesError () extends js.Object {
   def this(args: IdentityID) = this()
+  
   var identityID: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.native
+  
   var notFoundException: js.UndefOr[EDAMNotFoundException] = js.native
+  
   var userException: js.UndefOr[EDAMUserException] = js.native
+  
   var userID: js.UndefOr[UserID] = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-table" : "7.8.6"
+      "rc-table" : "7.11.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-table" : "7.8.6"
+      "rc-table" : "7.11.2"
     }
   ],
   "compile-devDependencies" : [

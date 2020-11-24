@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-circle
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 Creates a circle out of an image.
@@ -10,9 +10,9 @@ Creates a circle out of an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-circle |
 | Keywords           | - |
-| # releases         | 99 |
-| # dependents       | 6 |
-| # downloads        | 6432233 |
+| # releases         | 104 |
+| # dependents       | 8 |
+| # downloads        | 8882898 |
 | # stars            | 0 |
 
 ## Links

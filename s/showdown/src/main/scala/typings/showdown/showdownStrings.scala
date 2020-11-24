@@ -3,9 +3,34 @@ package typings.showdown
 import typings.showdown.mod.Flavor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object showdownStrings {
+  
+  @scala.inline
+  def allOn: allOn = "allOn".asInstanceOf[allOn]
+  
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @scala.inline
+  def ghost: ghost = "ghost".asInstanceOf[ghost]
+  
+  @scala.inline
+  def github: github = "github".asInstanceOf[github]
+  
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
+  
+  @scala.inline
+  def original: original = "original".asInstanceOf[original]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def vanilla: vanilla = "vanilla".asInstanceOf[vanilla]
+  
   @js.native
   sealed trait allOn extends Flavor
   
@@ -29,22 +54,4 @@ object showdownStrings {
   
   @js.native
   sealed trait vanilla extends Flavor
-  
-  @scala.inline
-  def allOn: allOn = "allOn".asInstanceOf[allOn]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def ghost: ghost = "ghost".asInstanceOf[ghost]
-  @scala.inline
-  def github: github = "github".asInstanceOf[github]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def original: original = "original".asInstanceOf[original]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def vanilla: vanilla = "vanilla".asInstanceOf[vanilla]
 }
-

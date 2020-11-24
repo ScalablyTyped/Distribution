@@ -10,9 +10,9 @@ A proxy to `path`, replacing `\` with `/` for all results & new methods to norma
 | ------------------ | :-------------: |
 | Full name          | upath |
 | Keywords           | path, unix, windows, extension, file extension, replace extension, change extension, trim extension, add extension, default extension |
-| # releases         | 8 |
-| # dependents       | 304 |
-| # downloads        | 376125628 |
+| # releases         | 4 |
+| # dependents       | 388 |
+| # downloads        | 517422133 |
 | # stars            | 6 |
 
 ## Links

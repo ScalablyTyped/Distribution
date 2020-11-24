@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a meta-interface for manipulating and inserting text. */
 @js.native
@@ -12,8 +12,8 @@ trait XTextAppend
   extends XText
      with XParagraphAppend
      with XTextPortionAppend
-
 object XTextAppend {
+  
   @scala.inline
   def apply(
     End: XTextRange,
@@ -42,4 +42,3 @@ object XTextAppend {
     __obj.asInstanceOf[XTextAppend]
   }
 }
-

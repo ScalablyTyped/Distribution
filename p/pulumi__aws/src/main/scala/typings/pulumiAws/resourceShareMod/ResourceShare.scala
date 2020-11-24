@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare")
 @js.native
@@ -24,28 +24,32 @@ class ResourceShare protected () extends CustomResource {
   def this(name: String, args: ResourceShareArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ResourceShareArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Indicates whether principals outside your organization can be associated with a resource share.
     */
   val allowExternalPrincipals: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The name of the resource share.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the resource share.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare")
 @js.native
 object ResourceShare extends js.Object {
+  
   /**
     * Get an existing ResourceShare resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -59,10 +63,10 @@ object ResourceShare extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceShare = js.native
   def get(name: String, id: Input[ID], state: ResourceShareState): ResourceShare = js.native
   def get(name: String, id: Input[ID], state: ResourceShareState, opts: CustomResourceOptions): ResourceShare = js.native
+  
   /**
     * Returns true if the given object is an instance of ResourceShare.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean = js.native
 }
-

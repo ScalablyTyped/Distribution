@@ -10,9 +10,9 @@ Forces webpack-dev-server to write bundle files to the file system.
 | ------------------ | :-------------: |
 | Full name          | write-file-webpack-plugin |
 | Keywords           | webpack, plugin, webpack-dev-server, write, file |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 213 |
-| # downloads        | 8342032 |
+| # downloads        | 8381485 |
 | # stars            | 2 |
 
 ## Links

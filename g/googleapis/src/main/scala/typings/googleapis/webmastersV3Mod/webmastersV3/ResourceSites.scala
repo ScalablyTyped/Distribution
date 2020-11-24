@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Sites")
 @js.native
 class ResourceSites protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * webmasters.sites.add
     * @desc Adds a site to the set of the user's sites in Search Console.
@@ -37,6 +37,9 @@ class ResourceSites protected () extends js.Object {
   ): Unit = js.native
   def add(params: ParamsResourceSitesAdd, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def add(params: ParamsResourceSitesAdd, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * webmasters.sites.delete
     * @desc Removes a site from the set of the user's Search Console sites.
@@ -61,6 +64,7 @@ class ResourceSites protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceSitesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSitesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * webmasters.sites.get
     * @desc Retrieves information about specific site.
@@ -89,6 +93,7 @@ class ResourceSites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWmxSite]
   ): Unit = js.native
+  
   /**
     * webmasters.sites.list
     * @desc Lists the user's Search Console sites.
@@ -117,4 +122,3 @@ class ResourceSites protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSitesListResponse]
   ): Unit = js.native
 }
-

@@ -1,17 +1,20 @@
 package typings.aureliaKnockout
 
 import typings.aureliaBinding.mod.ObserverLocator
-import typings.aureliaDependencyInjection.mod.Container
+import typings.aureliaKnockout.anon.Container
 import typings.aureliaLoader.mod.Loader
 import typings.aureliaTemplating.mod.CompositionEngine
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-knockout", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def configure(frameworkConfig: Container): Unit = js.native
+  
   @js.native
   class KnockoutBindable protected ()
     extends typings.aureliaKnockout.knockoutBindableMod.KnockoutBindable {
@@ -21,7 +24,11 @@ object mod extends js.Object {
   @js.native
   class KnockoutComposition protected ()
     extends typings.aureliaKnockout.knockoutCompositionMod.KnockoutComposition {
-    def this(compositionEngine: CompositionEngine, container: Container, loader: Loader) = this()
+    def this(
+      compositionEngine: CompositionEngine,
+      container: typings.aureliaDependencyInjection.mod.Container,
+      loader: Loader
+    ) = this()
   }
   
   @js.native
@@ -29,19 +36,16 @@ object mod extends js.Object {
     extends typings.aureliaKnockout.knockoutCustomAttributeMod.KnockoutCustomAttribute {
     def this(element: Element) = this()
   }
+  /* static members */
+  @js.native
+  object KnockoutCustomAttribute extends js.Object {
+    
+    def register(): Unit = js.native
+  }
   
   @js.native
   class RequirePolyfill protected ()
     extends typings.aureliaKnockout.requirePolyfillMod.RequirePolyfill {
     def this(loader: Loader) = this()
   }
-  
-  def configure(frameworkConfig: typings.aureliaKnockout.anon.Container): Unit = js.native
-  /* static members */
-  @js.native
-  object KnockoutCustomAttribute extends js.Object {
-    def register(): Unit = js.native
-  }
-  
 }
-

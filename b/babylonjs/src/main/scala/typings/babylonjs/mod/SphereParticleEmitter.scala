@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SphereParticleEmitter")
 @js.native
@@ -22,11 +22,63 @@ class SphereParticleEmitter ()
     /**
     * The radius of the emission sphere.
     */
+  radius: js.UndefOr[scala.Nothing],
+    /**
+    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+    */
+  radiusRange: Double
+  ) = this()
+  def this(
+    /**
+    * The radius of the emission sphere.
+    */
   radius: Double,
     /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
   radiusRange: Double
+  ) = this()
+  def this(
+    /**
+    * The radius of the emission sphere.
+    */
+  radius: js.UndefOr[scala.Nothing],
+    /**
+    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+    */
+  radiusRange: js.UndefOr[scala.Nothing],
+    /**
+    * How much to randomize the particle direction [0-1].
+    */
+  directionRandomizer: Double
+  ) = this()
+  def this(
+    /**
+    * The radius of the emission sphere.
+    */
+  radius: js.UndefOr[scala.Nothing],
+    /**
+    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+    */
+  radiusRange: Double,
+    /**
+    * How much to randomize the particle direction [0-1].
+    */
+  directionRandomizer: Double
+  ) = this()
+  def this(
+    /**
+    * The radius of the emission sphere.
+    */
+  radius: Double,
+    /**
+    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+    */
+  radiusRange: js.UndefOr[scala.Nothing],
+    /**
+    * How much to randomize the particle direction [0-1].
+    */
+  directionRandomizer: Double
   ) = this()
   def this(
     /**
@@ -43,4 +95,3 @@ class SphereParticleEmitter ()
   directionRandomizer: Double
   ) = this()
 }
-

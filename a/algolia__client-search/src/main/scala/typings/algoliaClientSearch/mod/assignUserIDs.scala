@@ -4,11 +4,12 @@ import typings.algoliaClientSearch.anon.ReadonlyPromiseAssignUserCatch
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@algolia/client-search", "assignUserIDs")
 @js.native
 object assignUserIDs extends js.Object {
+  
   def apply(base: SearchClient): js.Function3[
     /* userIDs */ js.Array[String], 
     /* clusterName */ String, 
@@ -16,4 +17,3 @@ object assignUserIDs extends js.Object {
     ReadonlyPromiseAssignUserCatch
   ] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.universalRouter.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("universal-router", JSImport.Default)
 @js.native
@@ -12,4 +12,3 @@ class default[R, C /* <: RouterContext */] protected () extends UniversalRouter[
   def this(routes: Route[R, C], options: RouterOptions[R, C]) = this()
   def this(routes: Routes[R, C], options: RouterOptions[R, C]) = this()
 }
-

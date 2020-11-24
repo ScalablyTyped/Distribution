@@ -4,11 +4,12 @@ import typings.semver.mod.Options
 import typings.semver.rangeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/preload", "subset")
 @js.native
 object subset extends js.Object {
+  
   /**
     * Return true if the subRange range is entirely contained by the superRange range.
     */
@@ -21,4 +22,3 @@ object subset extends js.Object {
   def apply(sub: ^, dom: ^): Boolean = js.native
   def apply(sub: ^, dom: ^, options: Options): Boolean = js.native
 }
-

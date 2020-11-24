@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Path2D")
 @js.native
@@ -13,7 +13,6 @@ class Path2D ()
   def this(path: java.lang.String) = this()
   def this(path: typings.std.Path2D) = this()
 }
-
 @JSGlobal("Path2D")
 @js.native
 object Path2D
@@ -22,4 +21,3 @@ object Path2D
       (/* path */ typings.std.Path2D) | (/* path */ java.lang.String), 
       typings.std.Path2D
     ]
-

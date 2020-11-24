@@ -10,9 +10,9 @@ JS Object representation of a stack frame
 | ------------------ | :-------------: |
 | Full name          | stackframe |
 | Keywords           | stacktrace, error, debugger, stack frame |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 16 |
-| # downloads        | 96912042 |
+| # downloads        | 150595290 |
 | # stars            | 1 |
 
 ## Links

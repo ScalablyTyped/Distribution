@@ -12,7 +12,7 @@ A smooth 3D tilt javascript library forked from Tilt.js
 | Keywords           | tilt, effect, vanilla, js, 60fps, smooth, tilt.js |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 60807 |
+| # downloads        | 81947 |
 | # stars            | 1 |
 
 ## Links

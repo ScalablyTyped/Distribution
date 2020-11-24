@@ -2,10 +2,11 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeActionProviderMetadata extends js.Object {
+  
   /**
     * Static documentation for a class of code actions.
     *
@@ -21,6 +22,7 @@ trait CodeActionProviderMetadata extends js.Object {
     * At most one documentation entry will be shown per provider.
     */
   val documentation: js.UndefOr[js.Array[typings.vscode.anon.Command]] = js.native
+  
   /**
     * List of [CodeActionKinds](#CodeActionKind) that a [CodeActionProvider](#CodeActionProvider) may return.
     *
@@ -31,37 +33,45 @@ trait CodeActionProviderMetadata extends js.Object {
     */
   val providedCodeActionKinds: js.UndefOr[js.Array[CodeActionKind]] = js.native
 }
-
 object CodeActionProviderMetadata {
+  
   @scala.inline
   def apply(): CodeActionProviderMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeActionProviderMetadata]
   }
+  
   @scala.inline
   implicit class CodeActionProviderMetadataOps[Self <: CodeActionProviderMetadata] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDocumentationVarargs(value: typings.vscode.anon.Command*): Self = this.set("documentation", js.Array(value :_*))
+    
     @scala.inline
     def setDocumentation(value: js.Array[typings.vscode.anon.Command]): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    
     @scala.inline
     def setProvidedCodeActionKindsVarargs(value: CodeActionKind*): Self = this.set("providedCodeActionKinds", js.Array(value :_*))
+    
     @scala.inline
     def setProvidedCodeActionKinds(value: js.Array[CodeActionKind]): Self = this.set("providedCodeActionKinds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProvidedCodeActionKinds: Self = this.set("providedCodeActionKinds", js.undefined)
   }
-  
 }
-

@@ -6,11 +6,12 @@ import typings.tstl.ipointerMod.IPointer.ValueType
 import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "set_intersection")
 @js.native
 object setIntersection extends js.Object {
+  
   def apply[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
     first1: InputIterator1,
     last1: InputIterator1,
@@ -27,4 +28,3 @@ object setIntersection extends js.Object {
     comp: Comparator[ValueType[InputIterator1], ValueType[InputIterator1]]
   ): OutputIterator = js.native
 }
-

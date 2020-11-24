@@ -3,13 +3,15 @@ package typings.pSeries
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Run promise-returning & async functions in series.
     	@param tasks - Functions are expected to return a value. If a Promise is returned, it's awaited before continuing with the next task.
@@ -30,6 +32,4 @@ object anon extends js.Object {
     	*/
     def apply[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = js.native
   }
-  
 }
-

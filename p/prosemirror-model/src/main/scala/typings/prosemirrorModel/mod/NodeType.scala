@@ -3,69 +3,32 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "NodeType")
 @js.native
 class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
-  /**
-    * The starting match of the node type's content expression.
-    */
-  var contentMatch: ContentMatch[S] = js.native
-  /**
-    * True if this node type has inline content.
-    */
-  var inlineContent: Boolean = js.native
-  /**
-    * True when this node is an atom, i.e. when it does not have
-    * directly editable content.
-    */
-  var isAtom: Boolean = js.native
-  /**
-    * True if this is a block type
-    */
-  var isBlock: Boolean = js.native
-  /**
-    * True if this is an inline type.
-    */
-  var isInline: Boolean = js.native
-  /**
-    * True for node types that allow no content.
-    */
-  var isLeaf: Boolean = js.native
-  /**
-    * True if this is the text node type.
-    */
-  var isText: Boolean = js.native
-  /**
-    * True if this is a textblock type, a block that contains inline
-    * content.
-    */
-  var isTextblock: Boolean = js.native
-  /**
-    * The name the node type has in this schema.
-    */
-  var name: String = js.native
-  /**
-    * A link back to the `Schema` the node type belongs to.
-    */
-  var schema: S = js.native
-  /**
-    * The spec that this type is based on
-    */
-  var spec: NodeSpec = js.native
+  
   /**
     * Removes the marks that are not allowed in this node from the given set.
     */
   def allowedMarks(marks: js.Array[Mark[S]]): js.Array[Mark[S]] = js.native
+  
   /**
     * Check whether the given mark type is allowed in this node.
     */
   def allowsMarkType(markType: MarkType[S]): Boolean = js.native
+  
   /**
     * Test whether the given set of marks are allowed in this node.
     */
   def allowsMarks(marks: js.Array[Mark[S]]): Boolean = js.native
+  
+  /**
+    * The starting match of the node type's content expression.
+    */
+  var contentMatch: ContentMatch[S] = js.native
+  
   /**
     * Create a `Node` of this type. The given attributes are
     * checked and defaulted (you can pass `null` to use the type's
@@ -97,6 +60,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
   def create(attrs: Null, content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: Null, content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
   def create(attrs: Null, content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  
   /**
     * Like [`create`](#model.NodeType.create), but see if it is necessary to
     * add nodes to the start or end of the given fragment to make it
@@ -128,6 +92,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
   def createAndFill(attrs: Null, content: Fragment[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: Null, content: ProsemirrorNode[S]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: Null, content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  
   /**
     * Like [`create`](#model.NodeType.create), but check the given content
     * against the node type's content restrictions, and throw an error
@@ -156,10 +121,67 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
   def createChecked(attrs: Null, content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: Null, content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: Null, content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  
+  /**
+    * Tells you whether this node type has any required attributes.
+    */
+  def hasRequiredAttrs(): Boolean = js.native
+  
+  /**
+    * True if this node type has inline content.
+    */
+  var inlineContent: Boolean = js.native
+  
+  /**
+    * True when this node is an atom, i.e. when it does not have
+    * directly editable content.
+    */
+  var isAtom: Boolean = js.native
+  
+  /**
+    * True if this is a block type
+    */
+  var isBlock: Boolean = js.native
+  
+  /**
+    * True if this is an inline type.
+    */
+  var isInline: Boolean = js.native
+  
+  /**
+    * True for node types that allow no content.
+    */
+  var isLeaf: Boolean = js.native
+  
+  /**
+    * True if this is the text node type.
+    */
+  var isText: Boolean = js.native
+  
+  /**
+    * True if this is a textblock type, a block that contains inline
+    * content.
+    */
+  var isTextblock: Boolean = js.native
+  
+  /**
+    * The name the node type has in this schema.
+    */
+  var name: String = js.native
+  
+  /**
+    * A link back to the `Schema` the node type belongs to.
+    */
+  var schema: S = js.native
+  
+  /**
+    * The spec that this type is based on
+    */
+  var spec: NodeSpec = js.native
+  
   /**
     * Returns true if the given fragment is valid content for this node
     * type with the given attributes.
     */
   def validContent(content: Fragment[S]): Boolean = js.native
 }
-

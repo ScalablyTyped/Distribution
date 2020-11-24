@@ -2,7 +2,7 @@ package typings.tern.inferMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tern/lib/infer", "Fn")
 @js.native
@@ -16,4 +16,3 @@ class FnCls protected () extends Fn {
   ) = this()
   def this(name: String, self: AVal, args: js.Array[AVal], argNames: js.Array[String], retval: AVal) = this()
 }
-

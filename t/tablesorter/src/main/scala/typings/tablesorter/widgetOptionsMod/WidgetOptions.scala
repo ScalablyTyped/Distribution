@@ -10,7 +10,7 @@ import typings.tablesorter.stickyHeaderOptionsMod.StickyHeaderOptions
 import typings.tablesorter.zebraOptionsMod.ZebraOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WidgetOptions[TElement]
@@ -22,12 +22,11 @@ trait WidgetOptions[TElement]
      with PagerOptions[TElement]
      with ZebraOptions
      with /* option */ StringDictionary[js.Any]
-
 object WidgetOptions {
+  
   @scala.inline
   def apply[TElement](): WidgetOptions[TElement] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidgetOptions[TElement]]
   }
 }
-

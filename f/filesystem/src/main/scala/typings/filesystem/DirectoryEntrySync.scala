@@ -2,17 +2,19 @@ package typings.filesystem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a directory on a file system.
   */
 @js.native
 trait DirectoryEntrySync extends EntrySync {
+  
   /**
     * Creates a new DirectoryReaderSync to read EntrySyncs from this DirectorySync.
     */
   def createReader(): DirectoryReaderSync = js.native
+  
   /**
     * Creates or looks up a directory.
     * @param path Either an absolute path or a relative path from this DirectoryEntrySync to the directory to be looked up or created. It is an error to attempt to create a directory whose immediate parent does not yet exist.
@@ -27,6 +29,7 @@ trait DirectoryEntrySync extends EntrySync {
     */
   def getDirectory(path: String): DirectoryEntrySync = js.native
   def getDirectory(path: String, options: Flags): DirectoryEntrySync = js.native
+  
   /**
     * Creates or looks up a directory.
     * @param path Either an absolute path or a relative path from this DirectoryEntrySync to the file to be looked up or created. It is an error to attempt to create a file whose immediate parent does not yet exist.
@@ -41,9 +44,9 @@ trait DirectoryEntrySync extends EntrySync {
     */
   def getFile(path: String): FileEntrySync = js.native
   def getFile(path: String, options: Flags): FileEntrySync = js.native
+  
   /**
     * Deletes a directory and all of its contents, if any. In the event of an error [e.g. trying to delete a directory that contains a file that cannot be removed], some of the contents of the directory may be deleted. It is an error to attempt to delete the root directory of a filesystem.
     */
   def removeRecursively(): Unit = js.native
 }
-

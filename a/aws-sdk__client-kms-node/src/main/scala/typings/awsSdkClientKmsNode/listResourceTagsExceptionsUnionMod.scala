@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/types/ListResourceTagsExceptionsUnion", JSImport.Namespace)
 @js.native
 object listResourceTagsExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException
     - typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException
@@ -14,6 +15,4 @@ object listResourceTagsExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsNode.typesInvalidMarkerExceptionMod.InvalidMarkerException
   */
   trait ListResourceTagsExceptionsUnion extends js.Object
-  
 }
-

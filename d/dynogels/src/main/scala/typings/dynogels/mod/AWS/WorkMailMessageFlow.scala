@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.workmailmessageflowMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.WorkMailMessageFlow")
 @js.native
@@ -14,4 +14,3 @@ class WorkMailMessageFlow ()
   extends typings.awsSdk.mod.WorkMailMessageFlow {
   def this(options: ClientConfiguration) = this()
 }
-

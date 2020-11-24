@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.notOnboarded
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.onboarded
 */
 trait RemoteAssistanceOnboardingStatus extends js.Object
-
 object RemoteAssistanceOnboardingStatus {
+  
   @scala.inline
   def notOnboarded: typings.microsoftGraph.microsoftGraphStrings.notOnboarded = "notOnboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notOnboarded]
+  
   @scala.inline
   def onboarded: typings.microsoftGraph.microsoftGraphStrings.onboarded = "onboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarded]
+  
   @scala.inline
   def onboarding: typings.microsoftGraph.microsoftGraphStrings.onboarding = "onboarding".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarding]
 }
-

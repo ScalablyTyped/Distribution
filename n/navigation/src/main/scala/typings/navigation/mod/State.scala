@@ -3,54 +3,39 @@ package typings.navigation.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("navigation", "State")
 @js.native
 class State () extends StateInfo {
+  
   /**
     * Gets the crumb trail key
     */
   var crumbTrailKey: String = js.native
-  /**
-    * Gets the formatted default array NavigationData for this State
-    */
-  var formattedArrayDefaults: StringDictionary[js.Array[String]] = js.native
-  /**
-    * Gets the formatted default NavigationData for this State
-    */
-  var formattedDefaults: js.Any = js.native
-  /**
-    * Gets the route Url patterns
-    */
-  @JSName("route")
-  var route_State: String | js.Array[String] = js.native
-  /**
-    * Gets the textual description of the state
-    */
-  @JSName("title")
-  var title_State: String = js.native
-  /**
-    * Gets a value that indicates whether to maintain the crumb trail
-    */
-  @JSName("trackCrumbTrail")
-  var trackCrumbTrail_State: Boolean = js.native
-  /**
-    * Gets a value that indicates whether NavigationData Types are
-    * preserved when navigating
-    */
-  @JSName("trackTypes")
-  var trackTypes_State: Boolean = js.native
+  
   /**
     * Called on the old State after navigating to a different State
     */
   def dispose(): Unit = js.native
+  
+  /**
+    * Gets the formatted default array NavigationData for this State
+    */
+  var formattedArrayDefaults: StringDictionary[js.Array[String]] = js.native
+  
+  /**
+    * Gets the formatted default NavigationData for this State
+    */
+  var formattedDefaults: js.Any = js.native
+  
   /**
     * Called on the current State after navigating to it
     * @param data The current NavigationData
     * @param asyncData The data passed asynchronously while navigating
     */
   def navigated(data: js.Any, asyncData: js.Any): Unit = js.native
+  
   /**
     * Called on the new State before navigating to it
     * @param data The new NavigationData
@@ -64,6 +49,32 @@ class State () extends StateInfo {
     navigate: js.Function1[/* asyncData */ js.UndefOr[js.Any], Unit],
     history: Boolean
   ): Unit = js.native
+  
+  /**
+    * Gets the route Url patterns
+    */
+  @JSName("route")
+  var route_State: String | js.Array[String] = js.native
+  
+  /**
+    * Gets the textual description of the state
+    */
+  @JSName("title")
+  var title_State: String = js.native
+  
+  /**
+    * Gets a value that indicates whether to maintain the crumb trail
+    */
+  @JSName("trackCrumbTrail")
+  var trackCrumbTrail_State: Boolean = js.native
+  
+  /**
+    * Gets a value that indicates whether NavigationData Types are
+    * preserved when navigating
+    */
+  @JSName("trackTypes")
+  var trackTypes_State: Boolean = js.native
+  
   /**
     * Truncates the crumb trail whenever a repeated or initial State is
     * encountered
@@ -73,6 +84,7 @@ class State () extends StateInfo {
     * @returns Truncated crumb trail
     */
   def truncateCrumbTrail(state: State, data: js.Any, crumbs: js.Array[Crumb]): js.Array[Crumb] = js.native
+  
   /**
     * Called on the old State before navigating to a different State
     * @param state The new State
@@ -83,6 +95,7 @@ class State () extends StateInfo {
     */
   def unloading(state: State, data: js.Any, url: String, unload: js.Function0[Unit]): Unit = js.native
   def unloading(state: State, data: js.Any, url: String, unload: js.Function0[Unit], history: Boolean): Unit = js.native
+  
   /**
     * Decodes the Url value
     * @param state The State navigated to
@@ -91,6 +104,7 @@ class State () extends StateInfo {
     * @param queryString A value indicating the Url value's location
     */
   def urlDecode(state: State, key: String, `val`: String, queryString: Boolean): String = js.native
+  
   /**
     * Encodes the Url value
     * @param state The State navigated to
@@ -101,6 +115,7 @@ class State () extends StateInfo {
     */
   def urlEncode(state: State, key: String, `val`: String, queryString: Boolean): String = js.native
   def urlEncode(state: State, key: String, `val`: String, queryString: Boolean, index: Double): String = js.native
+  
   /**
     * Validates the NavigationData before navigating to the new State
     * @param data The new NavigationData
@@ -108,4 +123,3 @@ class State () extends StateInfo {
     */
   def validate(data: js.Any): Boolean = js.native
 }
-

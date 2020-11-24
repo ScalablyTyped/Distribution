@@ -2,16 +2,21 @@ package typings.reachMenuButton
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type MenuLinkProps[T /* <: typings.reachMenuButton.mod.SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.ResolvedMenuLinkProps[T] with typings.reachMenuButton.anon.As[T]
+  
   type MenuListProps = (typings.react.mod.DetailedHTMLProps[
     typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ]) with typings.reachMenuButton.anon.Children
+  
   type ResolvedMenuLinkComponent[T] = typings.react.mod.ComponentType[T] | T
+  
   type ResolvedMenuLinkProps[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
+  
   /* Rewritten from type alias, can be one of: 
     - js.Object
     - typings.reachMenuButton.reachMenuButtonStrings.a

@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SixDofDragBehavior")
 @js.native
@@ -11,11 +11,10 @@ import scala.scalajs.js.annotation._
   */
 class SixDofDragBehavior ()
   extends typings.babylonjs.legacyMod.SixDofDragBehavior
-
 /* static members */
 @JSImport("babylonjs", "SixDofDragBehavior")
 @js.native
 object SixDofDragBehavior extends js.Object {
+  
   var _virtualScene: js.Any = js.native
 }
-

@@ -2,9 +2,145 @@ package typings.ariClient
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ariClientStrings {
+  
+  @scala.inline
+  def APILoadError: APILoadError = "APILoadError".asInstanceOf[APILoadError]
+  
+  @scala.inline
+  def ApplicationMoveFailed: ApplicationMoveFailed = "ApplicationMoveFailed".asInstanceOf[ApplicationMoveFailed]
+  
+  @scala.inline
+  def ApplicationReplaced: ApplicationReplaced = "ApplicationReplaced".asInstanceOf[ApplicationReplaced]
+  
+  @scala.inline
+  def BridgeAttendedTransfer: BridgeAttendedTransfer = "BridgeAttendedTransfer".asInstanceOf[BridgeAttendedTransfer]
+  
+  @scala.inline
+  def BridgeBlindTransfer: BridgeBlindTransfer = "BridgeBlindTransfer".asInstanceOf[BridgeBlindTransfer]
+  
+  @scala.inline
+  def BridgeCreated: BridgeCreated = "BridgeCreated".asInstanceOf[BridgeCreated]
+  
+  @scala.inline
+  def BridgeDestroyed: BridgeDestroyed = "BridgeDestroyed".asInstanceOf[BridgeDestroyed]
+  
+  @scala.inline
+  def BridgeMerged: BridgeMerged = "BridgeMerged".asInstanceOf[BridgeMerged]
+  
+  @scala.inline
+  def BridgeVideoSourceChanged: BridgeVideoSourceChanged = "BridgeVideoSourceChanged".asInstanceOf[BridgeVideoSourceChanged]
+  
+  @scala.inline
+  def ChannelCallerId: ChannelCallerId = "ChannelCallerId".asInstanceOf[ChannelCallerId]
+  
+  @scala.inline
+  def ChannelConnectedLine: ChannelConnectedLine = "ChannelConnectedLine".asInstanceOf[ChannelConnectedLine]
+  
+  @scala.inline
+  def ChannelCreated: ChannelCreated = "ChannelCreated".asInstanceOf[ChannelCreated]
+  
+  @scala.inline
+  def ChannelDestroyed: ChannelDestroyed = "ChannelDestroyed".asInstanceOf[ChannelDestroyed]
+  
+  @scala.inline
+  def ChannelDialplan: ChannelDialplan = "ChannelDialplan".asInstanceOf[ChannelDialplan]
+  
+  @scala.inline
+  def ChannelDtmfReceived: ChannelDtmfReceived = "ChannelDtmfReceived".asInstanceOf[ChannelDtmfReceived]
+  
+  @scala.inline
+  def ChannelEnteredBridge: ChannelEnteredBridge = "ChannelEnteredBridge".asInstanceOf[ChannelEnteredBridge]
+  
+  @scala.inline
+  def ChannelHangupRequest: ChannelHangupRequest = "ChannelHangupRequest".asInstanceOf[ChannelHangupRequest]
+  
+  @scala.inline
+  def ChannelHold: ChannelHold = "ChannelHold".asInstanceOf[ChannelHold]
+  
+  @scala.inline
+  def ChannelLeftBridge: ChannelLeftBridge = "ChannelLeftBridge".asInstanceOf[ChannelLeftBridge]
+  
+  @scala.inline
+  def ChannelStateChange: ChannelStateChange = "ChannelStateChange".asInstanceOf[ChannelStateChange]
+  
+  @scala.inline
+  def ChannelTalkingFinished: ChannelTalkingFinished = "ChannelTalkingFinished".asInstanceOf[ChannelTalkingFinished]
+  
+  @scala.inline
+  def ChannelTalkingStarted: ChannelTalkingStarted = "ChannelTalkingStarted".asInstanceOf[ChannelTalkingStarted]
+  
+  @scala.inline
+  def ChannelUnhold: ChannelUnhold = "ChannelUnhold".asInstanceOf[ChannelUnhold]
+  
+  @scala.inline
+  def ChannelUserevent: ChannelUserevent = "ChannelUserevent".asInstanceOf[ChannelUserevent]
+  
+  @scala.inline
+  def ChannelVarset: ChannelVarset = "ChannelVarset".asInstanceOf[ChannelVarset]
+  
+  @scala.inline
+  def ContactInfo: ContactInfo = "ContactInfo".asInstanceOf[ContactInfo]
+  
+  @scala.inline
+  def ContactStatusChange: ContactStatusChange = "ContactStatusChange".asInstanceOf[ContactStatusChange]
+  
+  @scala.inline
+  def DeviceStateChanged: DeviceStateChanged = "DeviceStateChanged".asInstanceOf[DeviceStateChanged]
+  
+  @scala.inline
+  def Dial: Dial = "Dial".asInstanceOf[Dial]
+  
+  @scala.inline
+  def EndpointStateChange: EndpointStateChange = "EndpointStateChange".asInstanceOf[EndpointStateChange]
+  
+  @scala.inline
+  def Event: Event = "Event".asInstanceOf[Event]
+  
+  @scala.inline
+  def Events: Events = "Events".asInstanceOf[Events]
+  
+  @scala.inline
+  def Message: Message = "Message".asInstanceOf[Message]
+  
+  @scala.inline
+  def MissingParams: MissingParams = "MissingParams".asInstanceOf[MissingParams]
+  
+  @scala.inline
+  def Peer: Peer = "Peer".asInstanceOf[Peer]
+  
+  @scala.inline
+  def PeerStatusChange: PeerStatusChange = "PeerStatusChange".asInstanceOf[PeerStatusChange]
+  
+  @scala.inline
+  def PlaybackContinuing: PlaybackContinuing = "PlaybackContinuing".asInstanceOf[PlaybackContinuing]
+  
+  @scala.inline
+  def PlaybackFinished: PlaybackFinished = "PlaybackFinished".asInstanceOf[PlaybackFinished]
+  
+  @scala.inline
+  def PlaybackStarted: PlaybackStarted = "PlaybackStarted".asInstanceOf[PlaybackStarted]
+  
+  @scala.inline
+  def RecordingFailed: RecordingFailed = "RecordingFailed".asInstanceOf[RecordingFailed]
+  
+  @scala.inline
+  def RecordingFinished: RecordingFinished = "RecordingFinished".asInstanceOf[RecordingFinished]
+  
+  @scala.inline
+  def RecordingStarted: RecordingStarted = "RecordingStarted".asInstanceOf[RecordingStarted]
+  
+  @scala.inline
+  def StasisEnd: StasisEnd = "StasisEnd".asInstanceOf[StasisEnd]
+  
+  @scala.inline
+  def StasisStart: StasisStart = "StasisStart".asInstanceOf[StasisStart]
+  
+  @scala.inline
+  def TextMessageReceived: TextMessageReceived = "TextMessageReceived".asInstanceOf[TextMessageReceived]
+  
   @js.native
   sealed trait APILoadError extends js.Object
   
@@ -139,96 +275,4 @@ object ariClientStrings {
   
   @js.native
   sealed trait TextMessageReceived extends js.Object
-  
-  @scala.inline
-  def APILoadError: APILoadError = "APILoadError".asInstanceOf[APILoadError]
-  @scala.inline
-  def ApplicationMoveFailed: ApplicationMoveFailed = "ApplicationMoveFailed".asInstanceOf[ApplicationMoveFailed]
-  @scala.inline
-  def ApplicationReplaced: ApplicationReplaced = "ApplicationReplaced".asInstanceOf[ApplicationReplaced]
-  @scala.inline
-  def BridgeAttendedTransfer: BridgeAttendedTransfer = "BridgeAttendedTransfer".asInstanceOf[BridgeAttendedTransfer]
-  @scala.inline
-  def BridgeBlindTransfer: BridgeBlindTransfer = "BridgeBlindTransfer".asInstanceOf[BridgeBlindTransfer]
-  @scala.inline
-  def BridgeCreated: BridgeCreated = "BridgeCreated".asInstanceOf[BridgeCreated]
-  @scala.inline
-  def BridgeDestroyed: BridgeDestroyed = "BridgeDestroyed".asInstanceOf[BridgeDestroyed]
-  @scala.inline
-  def BridgeMerged: BridgeMerged = "BridgeMerged".asInstanceOf[BridgeMerged]
-  @scala.inline
-  def BridgeVideoSourceChanged: BridgeVideoSourceChanged = "BridgeVideoSourceChanged".asInstanceOf[BridgeVideoSourceChanged]
-  @scala.inline
-  def ChannelCallerId: ChannelCallerId = "ChannelCallerId".asInstanceOf[ChannelCallerId]
-  @scala.inline
-  def ChannelConnectedLine: ChannelConnectedLine = "ChannelConnectedLine".asInstanceOf[ChannelConnectedLine]
-  @scala.inline
-  def ChannelCreated: ChannelCreated = "ChannelCreated".asInstanceOf[ChannelCreated]
-  @scala.inline
-  def ChannelDestroyed: ChannelDestroyed = "ChannelDestroyed".asInstanceOf[ChannelDestroyed]
-  @scala.inline
-  def ChannelDialplan: ChannelDialplan = "ChannelDialplan".asInstanceOf[ChannelDialplan]
-  @scala.inline
-  def ChannelDtmfReceived: ChannelDtmfReceived = "ChannelDtmfReceived".asInstanceOf[ChannelDtmfReceived]
-  @scala.inline
-  def ChannelEnteredBridge: ChannelEnteredBridge = "ChannelEnteredBridge".asInstanceOf[ChannelEnteredBridge]
-  @scala.inline
-  def ChannelHangupRequest: ChannelHangupRequest = "ChannelHangupRequest".asInstanceOf[ChannelHangupRequest]
-  @scala.inline
-  def ChannelHold: ChannelHold = "ChannelHold".asInstanceOf[ChannelHold]
-  @scala.inline
-  def ChannelLeftBridge: ChannelLeftBridge = "ChannelLeftBridge".asInstanceOf[ChannelLeftBridge]
-  @scala.inline
-  def ChannelStateChange: ChannelStateChange = "ChannelStateChange".asInstanceOf[ChannelStateChange]
-  @scala.inline
-  def ChannelTalkingFinished: ChannelTalkingFinished = "ChannelTalkingFinished".asInstanceOf[ChannelTalkingFinished]
-  @scala.inline
-  def ChannelTalkingStarted: ChannelTalkingStarted = "ChannelTalkingStarted".asInstanceOf[ChannelTalkingStarted]
-  @scala.inline
-  def ChannelUnhold: ChannelUnhold = "ChannelUnhold".asInstanceOf[ChannelUnhold]
-  @scala.inline
-  def ChannelUserevent: ChannelUserevent = "ChannelUserevent".asInstanceOf[ChannelUserevent]
-  @scala.inline
-  def ChannelVarset: ChannelVarset = "ChannelVarset".asInstanceOf[ChannelVarset]
-  @scala.inline
-  def ContactInfo: ContactInfo = "ContactInfo".asInstanceOf[ContactInfo]
-  @scala.inline
-  def ContactStatusChange: ContactStatusChange = "ContactStatusChange".asInstanceOf[ContactStatusChange]
-  @scala.inline
-  def DeviceStateChanged: DeviceStateChanged = "DeviceStateChanged".asInstanceOf[DeviceStateChanged]
-  @scala.inline
-  def Dial: Dial = "Dial".asInstanceOf[Dial]
-  @scala.inline
-  def EndpointStateChange: EndpointStateChange = "EndpointStateChange".asInstanceOf[EndpointStateChange]
-  @scala.inline
-  def Event: Event = "Event".asInstanceOf[Event]
-  @scala.inline
-  def Events: Events = "Events".asInstanceOf[Events]
-  @scala.inline
-  def Message: Message = "Message".asInstanceOf[Message]
-  @scala.inline
-  def MissingParams: MissingParams = "MissingParams".asInstanceOf[MissingParams]
-  @scala.inline
-  def Peer: Peer = "Peer".asInstanceOf[Peer]
-  @scala.inline
-  def PeerStatusChange: PeerStatusChange = "PeerStatusChange".asInstanceOf[PeerStatusChange]
-  @scala.inline
-  def PlaybackContinuing: PlaybackContinuing = "PlaybackContinuing".asInstanceOf[PlaybackContinuing]
-  @scala.inline
-  def PlaybackFinished: PlaybackFinished = "PlaybackFinished".asInstanceOf[PlaybackFinished]
-  @scala.inline
-  def PlaybackStarted: PlaybackStarted = "PlaybackStarted".asInstanceOf[PlaybackStarted]
-  @scala.inline
-  def RecordingFailed: RecordingFailed = "RecordingFailed".asInstanceOf[RecordingFailed]
-  @scala.inline
-  def RecordingFinished: RecordingFinished = "RecordingFinished".asInstanceOf[RecordingFinished]
-  @scala.inline
-  def RecordingStarted: RecordingStarted = "RecordingStarted".asInstanceOf[RecordingStarted]
-  @scala.inline
-  def StasisEnd: StasisEnd = "StasisEnd".asInstanceOf[StasisEnd]
-  @scala.inline
-  def StasisStart: StasisStart = "StasisStart".asInstanceOf[StasisStart]
-  @scala.inline
-  def TextMessageReceived: TextMessageReceived = "TextMessageReceived".asInstanceOf[TextMessageReceived]
 }
-

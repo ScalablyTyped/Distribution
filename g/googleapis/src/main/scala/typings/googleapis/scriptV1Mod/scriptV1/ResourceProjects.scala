@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var deployments: ResourceProjectsDeployments = js.native
-  var versions: ResourceProjectsVersions = js.native
+  
   /**
     * script.projects.create
     * @desc Creates a new, empty script project with no script files and a base
@@ -44,6 +44,9 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
+  
+  var deployments: ResourceProjectsDeployments = js.native
+  
   /**
     * script.projects.get
     * @desc Gets a script project's metadata.
@@ -72,6 +75,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
+  
   /**
     * script.projects.getContent
     * @desc Gets the content of the script project, including the code source
@@ -102,6 +106,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContent]
   ): Unit = js.native
+  
   /**
     * script.projects.getMetrics
     * @desc Get metrics data for scripts, such as number of executions and
@@ -133,6 +138,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMetrics]
   ): Unit = js.native
+  
   /**
     * script.projects.updateContent
     * @desc Updates the content of the specified script project. This content
@@ -166,5 +172,6 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContent]
   ): Unit = js.native
+  
+  var versions: ResourceProjectsVersions = js.native
 }
-

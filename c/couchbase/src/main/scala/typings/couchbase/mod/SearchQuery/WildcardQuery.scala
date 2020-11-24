@@ -2,20 +2,21 @@ package typings.couchbase.mod.SearchQuery
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("couchbase", "SearchQuery.WildcardQuery")
 @js.native
 abstract class WildcardQuery () extends Query {
+  
   /**
     * Defines the amount to boost the query.
     * @param boost Amount to boost the query.
     */
   def boost(boost: Double): this.type = js.native
+  
   /**
     * Specifies the field to query.
     * @param boost The field to query.
     */
   def field(field: String): this.type = js.native
 }
-

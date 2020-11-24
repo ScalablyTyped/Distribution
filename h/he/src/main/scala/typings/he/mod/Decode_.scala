@@ -2,11 +2,11 @@ package typings.he.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Decode_ extends js.Object {
-  var options: DecodeOptions = js.native
+  
   /**
     * Decode a string of HTML text
     *
@@ -16,5 +16,6 @@ trait Decode_ extends js.Object {
     */
   def apply(html: String): String = js.native
   def apply(html: String, options: DecodeOptions): String = js.native
+  
+  var options: DecodeOptions = js.native
 }
-

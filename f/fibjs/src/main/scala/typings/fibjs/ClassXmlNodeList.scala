@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassXmlNodeList extends ClassObject {
+  
+  /**
+    * 
+    * @brief 返回节点列表中处于指定的索引号的节点
+    * @param index 指定要查询的索引
+    * @return 指定索引号的节点
+    * 
+    * 
+    * 
+    */
+  def item(index: Double): ClassXmlNode = js.native
+  
   /**
     * class prop 
     *
@@ -22,15 +34,4 @@ trait ClassXmlNodeList extends ClassObject {
     * @type Integer
     */
   var length: Double = js.native
-  /**
-    * 
-    * @brief 返回节点列表中处于指定的索引号的节点
-    * @param index 指定要查询的索引
-    * @return 指定索引号的节点
-    * 
-    * 
-    * 
-    */
-  def item(index: Double): ClassXmlNode = js.native
 }
-

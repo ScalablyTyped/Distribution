@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "instagram-private-api" : "1.40.1"
+      "instagram-private-api" : "1.43.3"
     }
   ],
   "test-dependencies" : [
     {
-      "instagram-private-api" : "1.40.1"
+      "instagram-private-api" : "1.43.3"
     }
   ],
   "compile-devDependencies" : [

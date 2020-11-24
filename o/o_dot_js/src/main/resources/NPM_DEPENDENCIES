@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "o.js" : "1.1.0"
+      "o.js" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "o.js" : "1.1.0"
+      "o.js" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

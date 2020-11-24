@@ -5,7 +5,7 @@ import typings.cldrjs.cldrjsStrings._underscore
 import typings.cldrjs.cldrjsStrings.`-_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @name CldrFactory
@@ -31,12 +31,7 @@ trait CldrFactory
   * @returns {cldr.CldrStatic} The instance of {@link cldr.CldrStatic} class.
   */
 Instantiable1[/* locale */ String, CldrStatic] {
-  /**
-    * Allow user to override locale separator "-" (default) | "_".
-    * According to http://www.unicode.org/reports/tr35/#Unicode_language_identifier, both "-" and "_" are valid locale separators (eg. "en_GB", "en-GB").
-    * According to http://unicode.org/cldr/trac/ticket/6786 its usage must be consistent throughout the data set.
-    */
-  var localeSep: `-_` | _underscore = js.native
+  
   /**
     * @name load
     * @memberof cldr.CldrFactory
@@ -52,8 +47,17 @@ Instantiable1[/* locale */ String, CldrStatic] {
     * @returns {void}
     */
   def load(json: js.Any, otherJson: js.Any*): Unit = js.native
+  
+  /**
+    * Allow user to override locale separator "-" (default) | "_".
+    * According to http://www.unicode.org/reports/tr35/#Unicode_language_identifier, both "-" and "_" are valid locale separators (eg. "en_GB", "en-GB").
+    * According to http://unicode.org/cldr/trac/ticket/6786 its usage must be consistent throughout the data set.
+    */
+  var localeSep: `-_` | _underscore = js.native
+  
   def off(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+  
   def on(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+  
   def once(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Eventtags")
 @js.native
 class ResourceEventtags protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.eventTags.delete
     * @desc Deletes an existing event tag.
@@ -42,6 +44,7 @@ class ResourceEventtags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.eventTags.get
     * @desc Gets one event tag by ID.
@@ -71,6 +74,7 @@ class ResourceEventtags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEventTag]
   ): Unit = js.native
+  
   /**
     * dfareporting.eventTags.insert
     * @desc Inserts a new event tag.
@@ -100,6 +104,7 @@ class ResourceEventtags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEventTag]
   ): Unit = js.native
+  
   /**
     * dfareporting.eventTags.list
     * @desc Retrieves a list of event tags, possibly filtered.
@@ -138,6 +143,7 @@ class ResourceEventtags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEventTagsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.eventTags.patch
     * @desc Updates an existing event tag. This method supports patch
@@ -169,6 +175,7 @@ class ResourceEventtags protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEventTag]
   ): Unit = js.native
+  
   /**
     * dfareporting.eventTags.update
     * @desc Updates an existing event tag.
@@ -199,4 +206,3 @@ class ResourceEventtags protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEventTag]
   ): Unit = js.native
 }
-

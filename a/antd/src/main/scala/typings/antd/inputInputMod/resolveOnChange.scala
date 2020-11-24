@@ -7,11 +7,12 @@ import typings.std.HTMLTextAreaElement
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/input/Input", "resolveOnChange")
 @js.native
 object resolveOnChange extends js.Object {
+  
   def apply(target: HTMLInputElement, e: ChangeEvent[HTMLTextAreaElement | HTMLInputElement]): Unit = js.native
   def apply(
     target: HTMLInputElement,
@@ -37,4 +38,3 @@ object resolveOnChange extends js.Object {
     onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]
   ): Unit = js.native
 }
-

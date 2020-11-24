@@ -7,7 +7,7 @@ import typings.vexflow.anon.Firstnote
 import typings.vexflow.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Vex.Flow.StaveHairpin")
 @js.native
@@ -15,11 +15,11 @@ class StaveHairpin protected ()
   extends typings.vexflow.Vex.Flow.StaveHairpin {
   def this(notes: Firstnote, `type`: typings.vexflow.Vex.Flow.StaveHairpin.`type`) = this()
 }
-
 /* static members */
 @JSGlobal("Vex.Flow.StaveHairpin")
 @js.native
 object StaveHairpin extends js.Object {
+  
   def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
@@ -35,13 +35,15 @@ object StaveHairpin extends js.Object {
     position: Position,
     options: Height
   ): Unit = js.native
+  
   @js.native
   object `type` extends js.Object {
-    /* 1 */ val CRESC: typings.vexflow.Vex.Flow.StaveHairpin.`type`.CRESC with Double = js.native
-    /* 0 */ val DECRESC: typings.vexflow.Vex.Flow.StaveHairpin.`type`.DECRESC with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.StaveHairpin.`type` with Double] = js.native
+    
+    /* 1 */ val CRESC: typings.vexflow.Vex.Flow.StaveHairpin.`type`.CRESC with Double = js.native
+    
+    /* 0 */ val DECRESC: typings.vexflow.Vex.Flow.StaveHairpin.`type`.DECRESC with Double = js.native
   }
-  
 }
-

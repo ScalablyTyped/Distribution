@@ -7,9 +7,58 @@ import typings.camundaExternalTaskClientJs.mod.SuccessWithTaskEvent
 import typings.camundaExternalTaskClientJs.mod.TopicEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object camundaExternalTaskClientJsStrings {
+  
+  @scala.inline
+  def completeColonerror: completeColonerror = "complete:error".asInstanceOf[completeColonerror]
+  
+  @scala.inline
+  def completeColonsuccess: completeColonsuccess = "complete:success".asInstanceOf[completeColonsuccess]
+  
+  @scala.inline
+  def extendLockColonerror: extendLockColonerror = "extendLock:error".asInstanceOf[extendLockColonerror]
+  
+  @scala.inline
+  def extendLockColonsuccess: extendLockColonsuccess = "extendLock:success".asInstanceOf[extendLockColonsuccess]
+  
+  @scala.inline
+  def handleBpmnErrorColonerror: handleBpmnErrorColonerror = "handleBpmnError:error".asInstanceOf[handleBpmnErrorColonerror]
+  
+  @scala.inline
+  def handleBpmnErrorColonsuccess: handleBpmnErrorColonsuccess = "handleBpmnError:success".asInstanceOf[handleBpmnErrorColonsuccess]
+  
+  @scala.inline
+  def handleFailureColonerror: handleFailureColonerror = "handleFailure:error".asInstanceOf[handleFailureColonerror]
+  
+  @scala.inline
+  def handleFailureColonsuccess: handleFailureColonsuccess = "handleFailure:success".asInstanceOf[handleFailureColonsuccess]
+  
+  @scala.inline
+  def pollColonerror: pollColonerror = "poll:error".asInstanceOf[pollColonerror]
+  
+  @scala.inline
+  def pollColonstart: pollColonstart = "poll:start".asInstanceOf[pollColonstart]
+  
+  @scala.inline
+  def pollColonstop: pollColonstop = "poll:stop".asInstanceOf[pollColonstop]
+  
+  @scala.inline
+  def pollColonsuccess: pollColonsuccess = "poll:success".asInstanceOf[pollColonsuccess]
+  
+  @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @scala.inline
+  def unlockColonerror: unlockColonerror = "unlock:error".asInstanceOf[unlockColonerror]
+  
+  @scala.inline
+  def unlockColonsuccess: unlockColonsuccess = "unlock:success".asInstanceOf[unlockColonsuccess]
+  
+  @scala.inline
+  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  
   @js.native
   sealed trait completeColonerror extends ErrorEvent
   
@@ -57,38 +106,4 @@ object camundaExternalTaskClientJsStrings {
   
   @js.native
   sealed trait unsubscribe extends TopicEvent
-  
-  @scala.inline
-  def completeColonerror: completeColonerror = "complete:error".asInstanceOf[completeColonerror]
-  @scala.inline
-  def completeColonsuccess: completeColonsuccess = "complete:success".asInstanceOf[completeColonsuccess]
-  @scala.inline
-  def extendLockColonerror: extendLockColonerror = "extendLock:error".asInstanceOf[extendLockColonerror]
-  @scala.inline
-  def extendLockColonsuccess: extendLockColonsuccess = "extendLock:success".asInstanceOf[extendLockColonsuccess]
-  @scala.inline
-  def handleBpmnErrorColonerror: handleBpmnErrorColonerror = "handleBpmnError:error".asInstanceOf[handleBpmnErrorColonerror]
-  @scala.inline
-  def handleBpmnErrorColonsuccess: handleBpmnErrorColonsuccess = "handleBpmnError:success".asInstanceOf[handleBpmnErrorColonsuccess]
-  @scala.inline
-  def handleFailureColonerror: handleFailureColonerror = "handleFailure:error".asInstanceOf[handleFailureColonerror]
-  @scala.inline
-  def handleFailureColonsuccess: handleFailureColonsuccess = "handleFailure:success".asInstanceOf[handleFailureColonsuccess]
-  @scala.inline
-  def pollColonerror: pollColonerror = "poll:error".asInstanceOf[pollColonerror]
-  @scala.inline
-  def pollColonstart: pollColonstart = "poll:start".asInstanceOf[pollColonstart]
-  @scala.inline
-  def pollColonstop: pollColonstop = "poll:stop".asInstanceOf[pollColonstop]
-  @scala.inline
-  def pollColonsuccess: pollColonsuccess = "poll:success".asInstanceOf[pollColonsuccess]
-  @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
-  @scala.inline
-  def unlockColonerror: unlockColonerror = "unlock:error".asInstanceOf[unlockColonerror]
-  @scala.inline
-  def unlockColonsuccess: unlockColonsuccess = "unlock:success".asInstanceOf[unlockColonsuccess]
-  @scala.inline
-  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
 }
-

@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.d3Collection.anon.KeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Nest_[Datum, RollupType] extends js.Object {
+  
   /**
     * Applies the nest operator to the specified array, returning an array of key-values entries.
     * Conceptually, this is similar to applying map.entries to the associative array returned by nest.map,
@@ -39,6 +40,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     * @param array An array to create a nested data structure from.
     */
   def entries(array: js.Array[Datum]): js.Array[KeyValue[RollupType]] = js.native
+  
   /**
     * Registers a new key function and returns this nest operator.
     * The key function will be invoked for each element in the input array and must return a string identifier to assign the element to its group.
@@ -50,6 +52,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     * @param func A key accessor function being invoked for each element.
     */
   def key(func: js.Function1[/* datum */ Datum, String]): this.type = js.native
+  
   /**
     * Applies the nest operator to the specified array, returning a nested map.
     *
@@ -80,6 +83,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     * @param array An array to create a nested data structure from.
     */
   def map(array: js.Array[Datum]): Map_[_] = js.native
+  
   /**
     * Applies the nest operator to the specified array, returning a nested object.
     * Each entry in the returned associative array corresponds to a distinct key value returned by the first key function.
@@ -112,6 +116,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     * @param array An array to create a nested data structure from.
     */
   def `object`(array: js.Array[Datum]): StringDictionary[js.Any] = js.native
+  
   /**
     * Specifies a rollup function to be applied on each group of leaf elements and returns this nest operator.
     * The return value of the rollup function will replace the array of leaf values in either the associative array returned by nest.map or nest.object;
@@ -122,6 +127,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     * @param func A function computing the rollup value for a group of leaf elements.
     */
   def rollup(func: js.Function1[/* values */ js.Array[Datum], RollupType]): this.type = js.native
+  
   /**
     * Sorts key values for the current key using the specified comparator function, such as d3.ascending or d3.descending.
     *
@@ -134,6 +140,7 @@ trait Nest_[Datum, RollupType] extends js.Object {
     * a is less than b, or a positive value if a is greater than b, or 0 if the two values are the same under the sorting criterion.
     */
   def sortKeys(comparator: js.Function2[/* a */ String, /* b */ String, Double]): this.type = js.native
+  
   /**
     * Sorts leaf elements using the specified comparator function, such as d3.ascending or d3.descending.
     * This is roughly equivalent to sorting the input array before applying the nest operator;
@@ -147,8 +154,8 @@ trait Nest_[Datum, RollupType] extends js.Object {
     */
   def sortValues(comparator: js.Function2[/* a */ Datum, /* b */ Datum, Double]): this.type = js.native
 }
-
 object Nest_ {
+  
   @scala.inline
   def apply[Datum, RollupType](
     entries: js.Array[Datum] => js.Array[KeyValue[RollupType]],
@@ -163,32 +170,41 @@ object Nest_ {
     __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
     __obj.asInstanceOf[Nest_[Datum, RollupType]]
   }
+  
   @scala.inline
   implicit class Nest_Ops[Self <: Nest_[_, _], Datum, RollupType] (val x: Self with (Nest_[Datum, RollupType])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEntries(value: js.Array[Datum] => js.Array[KeyValue[RollupType]]): Self = this.set("entries", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setKey(value: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType]): Self = this.set("key", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setMap(value: js.Array[Datum] => Map_[_]): Self = this.set("map", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setObject(value: js.Array[Datum] => StringDictionary[js.Any]): Self = this.set("object", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRollup(value: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest_[Datum, RollupType]): Self = this.set("rollup", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSortKeys(value: js.Function2[/* a */ String, /* b */ String, Double] => Nest_[Datum, RollupType]): Self = this.set("sortKeys", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSortValues(value: js.Function2[/* a */ Datum, /* b */ Datum, Double] => Nest_[Datum, RollupType]): Self = this.set("sortValues", js.Any.fromFunction1(value))
   }
-  
 }
-

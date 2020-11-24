@@ -2,11 +2,12 @@ package typings.isArraySorted.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("is-array-sorted", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Check if an array is sorted.
   @example
@@ -23,4 +24,3 @@ object ^ extends js.Object {
   def apply[T](array: js.Array[T]): Boolean = js.native
   def apply[T](array: js.Array[T], options: Options[T]): Boolean = js.native
 }
-

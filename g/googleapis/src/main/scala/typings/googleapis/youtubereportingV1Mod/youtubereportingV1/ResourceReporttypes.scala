@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubereporting/v1", "youtubereporting_v1.Resource$Reporttypes")
 @js.native
 class ResourceReporttypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtubereporting.reportTypes.list
     * @desc Lists report types.
@@ -48,4 +50,3 @@ class ResourceReporttypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListReportTypesResponse]
   ): Unit = js.native
 }
-

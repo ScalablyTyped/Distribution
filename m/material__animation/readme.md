@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__animation
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 Animation Variables and Mixins used by Material Components for the web
@@ -10,9 +10,9 @@ Animation Variables and Mixins used by Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/animation |
 | Keywords           | material components, material design, animation |
-| # releases         | 136 |
-| # dependents       | 66 |
-| # downloads        | 3461476 |
+| # releases         | 651 |
+| # dependents       | 69 |
+| # downloads        | 5349349 |
 | # stars            | 0 |
 
 ## Links

@@ -6,10 +6,11 @@ import typings.openui5.sap.ui.unified.CalendarLegend
 import typings.openui5.sap.ui.unified.DateTypeRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DatePicker extends InputBase {
+  
   /**
     * Adds some <code>specialDate</code> to the aggregation <code>specialDates</code>.
     * @since 1.38.5
@@ -17,12 +18,14 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addSpecialDate(oSpecialDate: DateTypeRange): DatePicker = js.native
+  
   /**
     * Destroys all the specialDates in the aggregation <code>specialDates</code>.
     * @since 1.38.5
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySpecialDates(): DatePicker = js.native
+  
   /**
     * Gets current value of property <code>dateValue</code>.The date as JavaScript Date object. This is
     * independent from any formatter.<b>Note:</b> If this property is used, the <code>value</code>
@@ -30,6 +33,7 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>dateValue</code>
     */
   def getDateValue(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>displayFormat</code>.The date is displayed in the input field
     * using this format. By default, the medium format of the used locale is used.Supported format options
@@ -40,6 +44,7 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>displayFormat</code>
     */
   def getDisplayFormat(): String = js.native
+  
   /**
     * Gets current value of property <code>displayFormatType</code>.Displays date in this given type in
     * input field. Default value is taken from locale settings.Accepted are values of
@@ -51,12 +56,14 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>displayFormatType</code>
     */
   def getDisplayFormatType(): String = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>legend</code>, or
     * <code>null</code>.
     * @since 1.38.5
     */
   def getLegend(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the <code>DatePicker</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -66,6 +73,7 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>maxDate</code>
     */
   def getMaxDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>minDate</code>.Minimum date that can be shown and selected in
     * the <code>DatePicker</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -75,6 +83,7 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>minDate</code>
     */
   def getMinDate(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>secondaryCalendarType</code>.If set, the days in the calendar
     * popup are also displayed in this calendar typeIf not set, the dates are only displayed in the
@@ -83,12 +92,14 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>secondaryCalendarType</code>
     */
   def getSecondaryCalendarType(): CalendarType = js.native
+  
   /**
     * Gets content of aggregation <code>specialDates</code>.Date Range with type to visualize special days
     * in the Calendar.If one day is assigned to more than one Type, only the first one will be used.
     * @since 1.38.5
     */
   def getSpecialDates(): js.Array[Element] = js.native
+  
   /**
     * Gets current value of property <code>valueFormat</code>.The date string expected and returned in the
     * <code>value</code> property uses this format. By default the short format of the used locale is
@@ -100,6 +111,7 @@ trait DatePicker extends InputBase {
     * @returns Value of property <code>valueFormat</code>
     */
   def getValueFormat(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Element</code> in the aggregation
     * <code>specialDates</code>.and returns its index if found or -1 otherwise.
@@ -108,6 +120,7 @@ trait DatePicker extends InputBase {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSpecialDate(oSpecialDate: Element): Double = js.native
+  
   /**
     * Inserts a <code>specialDate</code> to the aggregation <code>specialDates</code>.
     * @since 1.38.5
@@ -119,6 +132,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: Double): DatePicker = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>specialDates</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -126,6 +140,7 @@ trait DatePicker extends InputBase {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSpecialDates(): js.Array[Element] = js.native
+  
   /**
     * Removes a <code>specialDate</code> from the aggregation <code>specialDates</code>.
     * @since 1.38.5
@@ -133,6 +148,7 @@ trait DatePicker extends InputBase {
     * @returns The removed <code>specialDate</code> or null
     */
   def removeSpecialDate(oSpecialDate: DateTypeRange): DateTypeRange = js.native
+  
   /**
     * Sets a new value for property <code>dateValue</code>.The date as JavaScript Date object. This is
     * independent from any formatter.<b>Note:</b> If this property is used, the <code>value</code>
@@ -142,6 +158,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDateValue(oDateValue: js.Any): DatePicker = js.native
+  
   /**
     * Sets a new value for property <code>displayFormat</code>.The date is displayed in the input field
     * using this format. By default, the medium format of the used locale is used.Supported format options
@@ -154,6 +171,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDisplayFormat(sDisplayFormat: String): DatePicker = js.native
+  
   /**
     * Sets a new value for property <code>displayFormatType</code>.Displays date in this given type in
     * input field. Default value is taken from locale settings.Accepted are values of
@@ -167,6 +185,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDisplayFormatType(sDisplayFormatType: String): DatePicker = js.native
+  
   /**
     * Sets the associated legend.
     * @since 1.38.5
@@ -177,6 +196,7 @@ trait DatePicker extends InputBase {
     */
   def setLegend(oLegend: js.Any): DatePicker = js.native
   def setLegend(oLegend: CalendarLegend): DatePicker = js.native
+  
   /**
     * Sets a new value for property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the <code>DatePicker</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -188,6 +208,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxDate(oMaxDate: js.Any): DatePicker = js.native
+  
   /**
     * Sets a new value for property <code>minDate</code>.Minimum date that can be shown and selected in
     * the <code>DatePicker</code>. This must be a JavaScript date object.<b>Note:</b> If the
@@ -199,6 +220,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMinDate(oMinDate: js.Any): DatePicker = js.native
+  
   /**
     * Sets a new value for property <code>secondaryCalendarType</code>.If set, the days in the calendar
     * popup are also displayed in this calendar typeIf not set, the dates are only displayed in the
@@ -209,6 +231,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSecondaryCalendarType(sSecondaryCalendarType: CalendarType): DatePicker = js.native
+  
   /**
     * Sets a new value for property <code>valueFormat</code>.The date string expected and returned in the
     * <code>value</code> property uses this format. By default the short format of the used locale is
@@ -222,6 +245,7 @@ trait DatePicker extends InputBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueFormat(sValueFormat: String): DatePicker = js.native
+  
   /**
     * Defines the width of the DatePicker. Default value is 100%
     * @param sWidth new value for <code>width</code>
@@ -229,4 +253,3 @@ trait DatePicker extends InputBase {
     */
   def setWidth(sWidth: String): DatePicker = js.native
 }
-

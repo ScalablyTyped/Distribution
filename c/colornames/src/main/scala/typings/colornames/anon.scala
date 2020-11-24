@@ -4,23 +4,15 @@ import typings.colornames.mod.Color
 import typings.colornames.mod.ColorResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
-    /**
-      * Provides the functionality to resolve `css`-colors.
-      */
-    @JSName("css")
-    var css_Original: ColorResolver = js.native
-    /**
-      * Provides the functionality to resolve `vga`-colors.
-      */
-    @JSName("vga")
-    var vga_Original: ColorResolver = js.native
+    
     /**
       * Gets the color with the specified name.
       *
@@ -28,10 +20,12 @@ object anon extends js.Object {
       * The name of the color to get.
       */
     def apply(name: String): Color = js.native
+    
     /**
       * Gets all available colors.
       */
     def all(): js.Array[Color] = js.native
+    
     /**
       * Gets all colors.
       */
@@ -50,6 +44,12 @@ object anon extends js.Object {
       */
     def css(name: String): Color = js.native
     /**
+      * Provides the functionality to resolve `css`-colors.
+      */
+    @JSName("css")
+    var css_Original: ColorResolver = js.native
+    
+    /**
       * Gets all colors.
       */
     /**
@@ -66,7 +66,10 @@ object anon extends js.Object {
       * Provides the functionality to resolve `vga`-colors.
       */
     def vga(name: String): Color = js.native
+    /**
+      * Provides the functionality to resolve `vga`-colors.
+      */
+    @JSName("vga")
+    var vga_Original: ColorResolver = js.native
   }
-  
 }
-

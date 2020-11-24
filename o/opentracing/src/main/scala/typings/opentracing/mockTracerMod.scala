@@ -3,11 +3,12 @@ package typings.opentracing
 import typings.opentracing.mockContextMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentracing/lib/mock_tracer", JSImport.Namespace)
 @js.native
 object mockTracerMod extends js.Object {
+  
   @js.native
   class MockContext protected () extends default {
     def this(span: typings.opentracing.mockSpanMod.default) = this()
@@ -22,6 +23,4 @@ object mockTracerMod extends js.Object {
   @js.native
   class MockTracer ()
     extends typings.opentracing.mockTracerMockTracerMod.default
-  
 }
-

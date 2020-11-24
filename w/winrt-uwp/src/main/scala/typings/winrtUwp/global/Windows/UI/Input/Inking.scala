@@ -3,12 +3,13 @@ package typings.winrtUwp.global.Windows.UI.Input
 import typings.winrtUwp.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for ink input, processing, and management. */
 @JSGlobal("Windows.UI.Input.Inking")
 @js.native
 object Inking extends js.Object {
+  
   /** Provides properties associated with the drawing of an InkStroke . */
   @js.native
   /** Creates a new InkDrawingAttributes object that is used to specify InkStroke attributes. */
@@ -20,6 +21,20 @@ object Inking extends js.Object {
   /** Creates a new InkManager object that is used to manage InkStroke objects. */
   class InkManager ()
     extends typings.winrtUwp.Windows.UI.Input.Inking.InkManager
+  
+  /** Identifies the ink input mode. */
+  @js.native
+  object InkManipulationMode extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode with Double] = js.native
+    
+    /* 1 */ val erasing: typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode.erasing with Double = js.native
+    
+    /* 0 */ val inking: typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode.inking with Double = js.native
+    
+    /* 2 */ val selecting: typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode.selecting with Double = js.native
+  }
   
   @js.native
   class InkPoint protected ()
@@ -36,6 +51,20 @@ object Inking extends js.Object {
   @js.native
   abstract class InkRecognitionResult ()
     extends typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionResult
+  
+  /** Indicates which strokes you want to include in handwriting recognition. */
+  @js.native
+  object InkRecognitionTarget extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget with Double] = js.native
+    
+    /* 0 */ val all: typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget.all with Double = js.native
+    
+    /* 2 */ val recent: typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget.recent with Double = js.native
+    
+    /* 1 */ val selected: typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget.selected with Double = js.native
+  }
   
   /** Manages all aspects of handwriting recognition. */
   @js.native
@@ -70,34 +99,15 @@ object Inking extends js.Object {
   abstract class InkStrokeRenderingSegment ()
     extends typings.winrtUwp.Windows.UI.Input.Inking.InkStrokeRenderingSegment
   
-  /** Identifies the ink input mode. */
-  @js.native
-  object InkManipulationMode extends js.Object {
-    /* 1 */ val erasing: typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode.erasing with Double = js.native
-    /* 0 */ val inking: typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode.inking with Double = js.native
-    /* 2 */ val selecting: typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode.selecting with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.Inking.InkManipulationMode with Double] = js.native
-  }
-  
-  /** Indicates which strokes you want to include in handwriting recognition. */
-  @js.native
-  object InkRecognitionTarget extends js.Object {
-    /* 0 */ val all: typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget.all with Double = js.native
-    /* 2 */ val recent: typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget.recent with Double = js.native
-    /* 1 */ val selected: typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget.selected with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionTarget with Double] = js.native
-  }
-  
   /** Identifies the shape of the PenTip . */
   @js.native
   object PenTipShape extends js.Object {
-    /* 0 */ val circle: typings.winrtUwp.Windows.UI.Input.Inking.PenTipShape.circle with Double = js.native
-    /* 1 */ val rectangle: typings.winrtUwp.Windows.UI.Input.Inking.PenTipShape.rectangle with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.Inking.PenTipShape with Double] = js.native
+    
+    /* 0 */ val circle: typings.winrtUwp.Windows.UI.Input.Inking.PenTipShape.circle with Double = js.native
+    
+    /* 1 */ val rectangle: typings.winrtUwp.Windows.UI.Input.Inking.PenTipShape.rectangle with Double = js.native
   }
-  
 }
-

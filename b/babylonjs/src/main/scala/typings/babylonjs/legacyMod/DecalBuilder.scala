@@ -2,17 +2,17 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "DecalBuilder")
 @js.native
 class DecalBuilder ()
   extends typings.babylonjs.indexMod.DecalBuilder
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "DecalBuilder")
 @js.native
 object DecalBuilder extends js.Object {
+  
   /**
     * Creates a decal mesh.
     * A decal is a mesh usually applied as a model onto the surface of another mesh. So don't forget the parameter `sourceMesh` depicting the decal
@@ -33,4 +33,3 @@ object DecalBuilder extends js.Object {
     options: typings.babylonjs.anon.Angle
   ): typings.babylonjs.meshMod.Mesh = js.native
 }
-

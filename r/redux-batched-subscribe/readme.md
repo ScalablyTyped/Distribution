@@ -12,7 +12,7 @@ redux store enhancer which allows batching subscribe notifications.
 | Keywords           | redux, batched, react, reactjs, performance, store |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 771375 |
+| # downloads        | 998180 |
 | # stars            | 2 |
 
 ## Links

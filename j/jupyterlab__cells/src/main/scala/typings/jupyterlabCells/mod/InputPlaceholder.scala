@@ -5,7 +5,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "InputPlaceholder")
 @js.native
@@ -16,4 +16,3 @@ class InputPlaceholder protected ()
     */
   def this(callback: js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A class to contain data useful for Graphics objects
@@ -195,4 +195,3 @@ class GraphicsData protected ()
     matrix: typings.pixiJs.PIXI.Matrix
   ) = this()
 }
-

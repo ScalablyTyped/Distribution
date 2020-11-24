@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analyticsreporting/v4", "analyticsreporting_v4.Resource$Useractivity")
 @js.native
 class ResourceUseractivity protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analyticsreporting.userActivity.search
     * @desc Returns User Activity data.
@@ -45,4 +47,3 @@ class ResourceUseractivity protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchUserActivityResponse]
   ): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Familysharing")
 @js.native
 class ResourceFamilysharing protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.familysharing.getFamilyInfo
     * @desc Gets information regarding the family that the user is part of.
@@ -41,6 +43,7 @@ class ResourceFamilysharing protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFamilyInfo]
   ): Unit = js.native
+  
   /**
     * books.familysharing.share
     * @desc Initiates sharing of the content with the user's family. Empty
@@ -72,6 +75,7 @@ class ResourceFamilysharing protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * books.familysharing.unshare
     * @desc Initiates revoking content that has already been shared with the
@@ -104,4 +108,3 @@ class ResourceFamilysharing protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

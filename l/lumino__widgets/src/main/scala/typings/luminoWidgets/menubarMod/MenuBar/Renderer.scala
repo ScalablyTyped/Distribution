@@ -5,7 +5,7 @@ import typings.luminoVirtualdom.mod.VirtualElement
 import typings.luminoVirtualdom.mod.h.Child
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default implementation of `IRenderer`.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * Construct a new renderer.
   */
 class Renderer () extends IRenderer {
+  
   /**
     * Create the class name for the menu bar item icon.
     *
@@ -27,6 +28,7 @@ class Renderer () extends IRenderer {
     * @returns The full class name for the item icon.
     */
   def createIconClass(data: IRenderData): String = js.native
+  
   /**
     * Create the class name for the menu bar item.
     *
@@ -35,6 +37,7 @@ class Renderer () extends IRenderer {
     * @returns The full class name for the menu item.
     */
   def createItemClass(data: IRenderData): String = js.native
+  
   /**
     * Create the dataset for a menu bar item.
     *
@@ -43,6 +46,7 @@ class Renderer () extends IRenderer {
     * @returns The dataset for the menu bar item.
     */
   def createItemDataset(data: IRenderData): ElementDataset = js.native
+  
   /**
     * Create the render content for the label node.
     *
@@ -51,6 +55,7 @@ class Renderer () extends IRenderer {
     * @returns The content to add to the label node.
     */
   def formatLabel(data: IRenderData): Child = js.native
+  
   /**
     * Render the icon element for a menu bar item.
     *
@@ -59,6 +64,7 @@ class Renderer () extends IRenderer {
     * @returns A virtual element representing the item icon.
     */
   def renderIcon(data: IRenderData): VirtualElement = js.native
+  
   /**
     * Render the label element for a menu item.
     *
@@ -68,4 +74,3 @@ class Renderer () extends IRenderer {
     */
   def renderLabel(data: IRenderData): VirtualElement = js.native
 }
-

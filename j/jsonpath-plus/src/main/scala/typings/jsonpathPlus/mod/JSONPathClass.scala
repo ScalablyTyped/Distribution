@@ -3,10 +3,11 @@ package typings.jsonpathPlus.mod
 import typings.jsonpathPlus.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSONPathClass extends js.Object {
+  
   def evaluate(options: Callback): js.Any = js.native
   def evaluate(path: String): js.Any = js.native
   def evaluate(path: String, json: String): js.Any = js.native
@@ -172,4 +173,3 @@ trait JSONPathClass extends js.Object {
     otherTypeCallback: JSONPathOtherTypeCallback
   ): js.Any = js.native
 }
-

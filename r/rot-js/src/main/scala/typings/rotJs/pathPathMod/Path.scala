@@ -2,18 +2,25 @@ package typings.rotJs.pathPathMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Path extends js.Object {
+  
   var _dirs: js.Array[js.Array[Double]] = js.native
+  
+  def _getNeighbors(cx: Double, cy: Double): js.Array[js.Array[Double]] = js.native
+  
   var _options: Options = js.native
+  
+  def _passableCallback(x: Double, y: Double): Boolean = js.native
   @JSName("_passableCallback")
   var _passableCallback_Original: PassableCallback = js.native
+  
   var _toX: Double = js.native
+  
   var _toY: Double = js.native
-  def _getNeighbors(cx: Double, cy: Double): js.Array[js.Array[Double]] = js.native
-  def _passableCallback(x: Double, y: Double): Boolean = js.native
+  
   /**
     * Compute a path from a given point
     * @param {int} fromX
@@ -22,4 +29,3 @@ trait Path extends js.Object {
     */
   def compute(fromX: Double, fromY: Double, callback: ComputeCallback): Unit = js.native
 }
-

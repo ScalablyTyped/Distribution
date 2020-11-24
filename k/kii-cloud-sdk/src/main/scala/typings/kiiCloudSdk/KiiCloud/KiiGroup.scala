@@ -7,13 +7,14 @@ import typings.kiiCloudSdk.anon.`8`
 import typings.kiiCloudSdk.anon.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiGroup object
   */
 @js.native
 trait KiiGroup extends KiiACLSubject {
+  
   /**
     * Adds a user to the given group
     *
@@ -28,6 +29,7 @@ trait KiiGroup extends KiiACLSubject {
     *     group.save(callbacks);
     */
   def addUser(member: KiiUser): Unit = js.native
+  
   /**
     * Creates a reference to a bucket for this group
     *
@@ -42,6 +44,7 @@ trait KiiGroup extends KiiACLSubject {
     *     var bucket = group.bucketWithName("myBucket");
     */
   def bucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Updates the group name on the server
     *
@@ -85,6 +88,7 @@ trait KiiGroup extends KiiACLSubject {
     */
   def changeGroupName(newName: String): js.Promise[KiiGroup] = js.native
   def changeGroupName(newName: String, callbacks: `9`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Delete the group from the server
     *
@@ -133,6 +137,7 @@ trait KiiGroup extends KiiACLSubject {
     */
   def delete(): js.Promise[KiiGroup] = js.native
   def delete(callbacks: `9`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Creates a reference to a encrypted bucket for this group
     *
@@ -147,6 +152,7 @@ trait KiiGroup extends KiiACLSubject {
     *     var bucket = group.encryptedBucketWithName("myBucket");
     */
   def encryptedBucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Returns the owner of this group if this group holds the information of owner.
     *
@@ -165,12 +171,14 @@ trait KiiGroup extends KiiACLSubject {
     * @see KiiGroup#getOwner
     */
   def getCachedOwner(): KiiUser = js.native
+  
   /**
     * Get the ID of the current KiiGroup instance.
     *
     * @return Id of the group or null if the group has not saved to cloud.
     */
   def getID(): String = js.native
+  
   /**
     * Gets a list of all current members of a group
     *
@@ -226,11 +234,13 @@ trait KiiGroup extends KiiACLSubject {
     */
   def getMemberList(): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
   def getMemberList(callbacks: `8`): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
+  
   /**
     * The name of this group
     *
     */
   def getName(): String = js.native
+  
   /**
     * Gets the owner of the associated group
     *
@@ -280,6 +290,7 @@ trait KiiGroup extends KiiACLSubject {
     */
   def getOwner(): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
   def getOwner(callbacks: `11`): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
+  
   /**
     *
     *
@@ -288,6 +299,7 @@ trait KiiGroup extends KiiACLSubject {
     *
     */
   def getUUID(): String = js.native
+  
   /**
     * Gets a list of topics in this group scope
     *
@@ -358,6 +370,7 @@ trait KiiGroup extends KiiACLSubject {
   def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  
   /**
     * Get a specifically formatted string referencing the group
     *
@@ -370,6 +383,7 @@ trait KiiGroup extends KiiACLSubject {
     *     var uri = group.objectURI();
     */
   def objectURI(): String = js.native
+  
   /**
     * Updates the local group's data with the group data on the server
     *
@@ -414,6 +428,7 @@ trait KiiGroup extends KiiACLSubject {
     */
   def refresh(): js.Promise[KiiGroup] = js.native
   def refresh(callbacks: `9`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Removes a user from the given group
     *
@@ -428,6 +443,7 @@ trait KiiGroup extends KiiACLSubject {
     *     group.save(callbacks);
     */
   def removeUser(member: KiiUser): Unit = js.native
+  
   /**
     * Saves the latest group values to the server
     *
@@ -478,6 +494,7 @@ trait KiiGroup extends KiiACLSubject {
     */
   def save(): js.Promise[KiiGroup] = js.native
   def save(callbacks: `10`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Saves the latest group values to the server with specified owner.
     * This method can be used only by the group owner or app admin.
@@ -530,6 +547,7 @@ trait KiiGroup extends KiiACLSubject {
     */
   def saveWithOwner(user: String): js.Promise[KiiGroup] = js.native
   def saveWithOwner(user: String, callbacks: `10`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Instantiate topic belongs to this group.
     *
@@ -539,4 +557,3 @@ trait KiiGroup extends KiiACLSubject {
     */
   def topicWithName(topicName: String): KiiTopic = js.native
 }
-

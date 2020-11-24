@@ -35,33 +35,11 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SystemPreferences extends EventEmitter {
-  /**
-    * A `String` property that can be `dark`, `light` or `unknown`. It determines the
-    * macOS appearance setting for your application. This maps to values in:
-    * NSApplication.appearance. Setting this will override the system default as well
-    * as the value of `getEffectiveAppearance`.
-    *
-    * Possible values that can be set are `dark` and `light`, and possible return
-    * values are `dark`, `light`, and `unknown`.
-    * 
-  This property is only available on macOS 10.14 Mojave or newer.
-    *
-    * @platform darwin
-    */
-  var appLevelAppearance: dark | light | unknown_ = js.native
-  /**
-    * A `String` property that can be `dark`, `light` or `unknown`.
-    *
-    * Returns the macOS appearance setting that is currently applied to your
-    * application, maps to NSApplication.effectiveAppearance
-    *
-    * @platform darwin
-    */
-  val effectiveAppearance: dark | light | unknown_ = js.native
+  
   @JSName("addListener")
   def addListener_accentcolorchanged(
     event: `accent-color-changed`,
@@ -79,6 +57,22 @@ trait SystemPreferences extends EventEmitter {
     event: `inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
+  
+  /**
+    * A `String` property that can be `dark`, `light` or `unknown`. It determines the
+    * macOS appearance setting for your application. This maps to values in:
+    * NSApplication.appearance. Setting this will override the system default as well
+    * as the value of `getEffectiveAppearance`.
+    *
+    * Possible values that can be set are `dark` and `light`, and possible return
+    * values are `dark`, `light`, and `unknown`.
+    * 
+  This property is only available on macOS 10.14 Mojave or newer.
+    *
+    * @platform darwin
+    */
+  var appLevelAppearance: dark | light | unknown_ = js.native
+  
   @JSName("askForMediaAccess")
   def askForMediaAccess_camera(mediaType: camera): js.Promise[Boolean] = js.native
   /**
@@ -104,6 +98,7 @@ trait SystemPreferences extends EventEmitter {
     */
   @JSName("askForMediaAccess")
   def askForMediaAccess_microphone(mediaType: microphone): js.Promise[Boolean] = js.native
+  
   /**
     * whether or not this device has the ability to use Touch ID.
     *
@@ -113,6 +108,17 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def canPromptTouchID(): Boolean = js.native
+  
+  /**
+    * A `String` property that can be `dark`, `light` or `unknown`.
+    *
+    * Returns the macOS appearance setting that is currently applied to your
+    * application, maps to NSApplication.effectiveAppearance
+    *
+    * @platform darwin
+    */
+  val effectiveAppearance: dark | light | unknown_ = js.native
+  
   /**
     * The users current system wide accent color preference in RGBA hexadecimal form.
     * 
@@ -121,6 +127,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform win32,darwin
     */
   def getAccentColor(): String = js.native
+  
   /**
     * * `shouldRenderRichAnimation` Boolean - Returns true if rich animations should
     * be rendered. Looks at session type (e.g. remote desktop) and accessibility
@@ -133,6 +140,7 @@ trait SystemPreferences extends EventEmitter {
   Returns an object with system animation settings.
     */
   def getAnimationSettings(): AnimationSettings = js.native
+  
   /**
     * | `null` - Can be `dark`, `light` or `unknown`.
     *
@@ -144,6 +152,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def getAppLevelAppearance(): dark | light | unknown_ = js.native
+  
   /**
     * The system color setting in RGB hexadecimal form (`#ABCDEF`). See the Windows
     * docs and the macOS docs for more details.
@@ -156,6 +165,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform win32,darwin
     */
   def getColor(color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any): String = js.native
+  
   /**
     * Can be `dark`, `light` or `unknown`.
     *
@@ -165,6 +175,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def getEffectiveAppearance(): dark | light | unknown_ = js.native
+  
   @JSName("getMediaAccessStatus")
   def getMediaAccessStatus_camera(mediaType: camera): `not-determined` | granted | denied | restricted | unknown_ = js.native
   /**
@@ -185,6 +196,7 @@ trait SystemPreferences extends EventEmitter {
   def getMediaAccessStatus_microphone(mediaType: microphone): `not-determined` | granted | denied | restricted | unknown_ = js.native
   @JSName("getMediaAccessStatus")
   def getMediaAccessStatus_screen(mediaType: screen): `not-determined` | granted | denied | restricted | unknown_ = js.native
+  
   /**
     * The standard system color formatted as `#RRGGBBAA`.
     *
@@ -212,6 +224,7 @@ trait SystemPreferences extends EventEmitter {
   def getSystemColor_red(color: red): String = js.native
   @JSName("getSystemColor")
   def getSystemColor_yellow(color: yellow): String = js.native
+  
   @JSName("getUserDefault")
   def getUserDefault_array(key: String, `type`: array): js.Any = js.native
   @JSName("getUserDefault")
@@ -243,6 +256,7 @@ trait SystemPreferences extends EventEmitter {
   def getUserDefault_string(key: String, `type`: string): js.Any = js.native
   @JSName("getUserDefault")
   def getUserDefault_url(key: String, `type`: url): js.Any = js.native
+  
   /**
     * `true` if DWM composition (Aero Glass) is enabled, and `false` otherwise.
     *
@@ -252,6 +266,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform win32
     */
   def isAeroGlassEnabled(): Boolean = js.native
+  
   /**
     * Whether the system is in Dark Mode.
     *
@@ -266,6 +281,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin,win32
     */
   def isDarkMode(): Boolean = js.native
+  
   /**
     * `true` if a high contrast theme is active, `false` otherwise.
     *
@@ -276,6 +292,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin,win32
     */
   def isHighContrastColorScheme(): Boolean = js.native
+  
   /**
     * `true` if an inverted color scheme (a high contrast color scheme with light text
     * and dark backgrounds) is active, `false` otherwise.
@@ -287,12 +304,14 @@ trait SystemPreferences extends EventEmitter {
     * @platform win32
     */
   def isInvertedColorScheme(): Boolean = js.native
+  
   /**
     * Whether the Swipe between pages setting is on.
     *
     * @platform darwin
     */
   def isSwipeTrackingFromScrollEventsEnabled(): Boolean = js.native
+  
   /**
     * `true` if the current process is a trusted accessibility client and `false` if
     * it is not.
@@ -300,7 +319,8 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def isTrustedAccessibilityClient(prompt: Boolean): Boolean = js.native
-  // Docs: http://electronjs.org/docs/api/system-preferences
+  
+  // Docs: https://electronjs.org/docs/api/system-preferences
   @JSName("on")
   def on_accentcolorchanged(
     event: `accent-color-changed`,
@@ -330,6 +350,7 @@ trait SystemPreferences extends EventEmitter {
     event: `inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_accentcolorchanged(
     event: `accent-color-changed`,
@@ -347,6 +368,7 @@ trait SystemPreferences extends EventEmitter {
     event: `inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
+  
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
     * contains the user information dictionary sent along with the notification.
@@ -354,6 +376,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def postLocalNotification(event: String, userInfo: Record[String, _]): Unit = js.native
+  
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
     * contains the user information dictionary sent along with the notification.
@@ -362,6 +385,7 @@ trait SystemPreferences extends EventEmitter {
     */
   def postNotification(event: String, userInfo: Record[String, _]): Unit = js.native
   def postNotification(event: String, userInfo: Record[String, _], deliverImmediately: Boolean): Unit = js.native
+  
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
     * contains the user information dictionary sent along with the notification.
@@ -369,13 +393,14 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def postWorkspaceNotification(event: String, userInfo: Record[String, _]): Unit = js.native
+  
   /**
     * resolves if the user has successfully authenticated with Touch ID.
     *
     * This API itself will not protect your user data; rather, it is a mechanism to
     * allow you to do so. Native apps will need to set Access Control Constants like
-    * `kSecAccessControlUserPresence` on the their keychain entry so that reading it
-    * would auto-prompt for Touch ID biometric consent. This could be done with
+    * `kSecAccessControlUserPresence` on their keychain entry so that reading it would
+    * auto-prompt for Touch ID biometric consent. This could be done with
     * `node-keytar`, such that one would store an encryption key with `node-keytar`
     * and only fetch it if `promptTouchID()` resolves.
     *
@@ -385,12 +410,14 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def promptTouchID(reason: String): js.Promise[Unit] = js.native
+  
   /**
     * Add the specified defaults to your application's `NSUserDefaults`.
     *
     * @platform darwin
     */
   def registerDefaults(defaults: Record[String, String | Boolean | Double]): Unit = js.native
+  
   @JSName("removeListener")
   def removeListener_accentcolorchanged(
     event: `accent-color-changed`,
@@ -408,6 +435,7 @@ trait SystemPreferences extends EventEmitter {
     event: `inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
+  
   /**
     * Removes the `key` in `NSUserDefaults`. This can be used to restore the default
     * or global value of a `key` previously set with `setUserDefault`.
@@ -415,6 +443,7 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def removeUserDefault(key: String): Unit = js.native
+  
   /**
     * Sets the appearance setting for your application, this should override the
     * system default and override the value of `getEffectiveAppearance`.
@@ -427,6 +456,19 @@ trait SystemPreferences extends EventEmitter {
   def setAppLevelAppearance_dark(appearance: dark): Unit = js.native
   @JSName("setAppLevelAppearance")
   def setAppLevelAppearance_light(appearance: light): Unit = js.native
+  
+  @JSName("setUserDefault")
+  def setUserDefault_array(key: String, `type`: array, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_boolean(key: String, `type`: boolean, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_dictionary(key: String, `type`: dictionary, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_double(key: String, `type`: double, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_float(key: String, `type`: float, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_integer(key: String, `type`: integer, value: String): Unit = js.native
   /**
     * Set the value of `key` in `NSUserDefaults`.
     *
@@ -438,7 +480,11 @@ trait SystemPreferences extends EventEmitter {
     *
     * @platform darwin
     */
-  def setUserDefault(key: String, `type`: String, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_string(key: String, `type`: string, value: String): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_url(key: String, `type`: url, value: String): Unit = js.native
+  
   /**
     * The ID of this subscription
     *
@@ -452,6 +498,7 @@ trait SystemPreferences extends EventEmitter {
     event: String,
     callback: js.Function3[/* event */ String, /* userInfo */ Record[String, _], /* object */ String, Unit]
   ): Double = js.native
+  
   /**
     * The ID of this subscription
     *
@@ -478,6 +525,7 @@ trait SystemPreferences extends EventEmitter {
     event: String,
     callback: js.Function3[/* event */ String, /* userInfo */ Record[String, _], /* object */ String, Unit]
   ): Double = js.native
+  
   /**
     * Same as `subscribeNotification`, but uses
     * `NSWorkspace.sharedWorkspace.notificationCenter`. This is necessary for events
@@ -489,6 +537,7 @@ trait SystemPreferences extends EventEmitter {
     event: String,
     callback: js.Function3[/* event */ String, /* userInfo */ Record[String, _], /* object */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Same as `unsubscribeNotification`, but removes the subscriber from
     * `NSNotificationCenter`.
@@ -496,12 +545,14 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def unsubscribeLocalNotification(id: Double): Unit = js.native
+  
   /**
     * Removes the subscriber with `id`.
     *
     * @platform darwin
     */
   def unsubscribeNotification(id: Double): Unit = js.native
+  
   /**
     * Same as `unsubscribeNotification`, but removes the subscriber from
     * `NSWorkspace.sharedWorkspace.notificationCenter`.
@@ -510,4 +561,3 @@ trait SystemPreferences extends EventEmitter {
     */
   def unsubscribeWorkspaceNotification(id: Double): Unit = js.native
 }
-

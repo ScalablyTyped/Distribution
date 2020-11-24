@@ -5,11 +5,12 @@ import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.angle")
 @js.native
 object angle extends js.Object {
+  
   /**
     * Mirror an angle on either or both x and y axes.
     *
@@ -19,6 +20,7 @@ object angle extends js.Object {
     * @returns Mirrored angle.
     */
   def mirror(angleInDegrees: Double, mirrorX: Boolean, mirrorY: Boolean): Double = js.native
+  
   /**
     * Ensures an angle is not greater than 360
     *
@@ -26,6 +28,7 @@ object angle extends js.Object {
     * @retiurns Same polar angle but not greater than 360 degrees.
     */
   def noRevolutions(angleInDegrees: Double): Double = js.native
+  
   /**
     * Get an arc's end angle, ensured to be greater than its start angle.
     *
@@ -33,6 +36,7 @@ object angle extends js.Object {
     * @returns End angle of arc.
     */
   def ofArcEnd(arc: IPathArc): Double = js.native
+  
   /**
     * Get the angle in the middle of an arc's start and end angles.
     *
@@ -42,6 +46,7 @@ object angle extends js.Object {
     */
   def ofArcMiddle(arc: IPathArc): Double = js.native
   def ofArcMiddle(arc: IPathArc, ratio: Double): Double = js.native
+  
   /**
     * Total angle of an arc between its start and end angles.
     *
@@ -49,6 +54,7 @@ object angle extends js.Object {
     * @returns Angle of arc.
     */
   def ofArcSpan(arc: IPathArc): Double = js.native
+  
   /**
     * Angle of a line path.
     *
@@ -56,6 +62,7 @@ object angle extends js.Object {
     * @returns Angle of the line path, in degrees.
     */
   def ofLineInDegrees(line: IPathLine): Double = js.native
+  
   /**
     * Angle of a line through a point, in degrees.
     *
@@ -64,6 +71,7 @@ object angle extends js.Object {
     * @returns Angle of the line throught the point, in degrees.
     */
   def ofPointInDegrees(origin: IPoint, pointToFindAngle: IPoint): Double = js.native
+  
   /**
     * Angle of a line through a point, in radians.
     *
@@ -72,6 +80,7 @@ object angle extends js.Object {
     * @returns Angle of the line throught the point, in radians.
     */
   def ofPointInRadians(origin: IPoint, pointToFindAngle: IPoint): Double = js.native
+  
   /**
     * Convert an angle from radians to degrees.
     *
@@ -79,6 +88,7 @@ object angle extends js.Object {
     * @returns Angle in degrees.
     */
   def toDegrees(angleInRadians: Double): Double = js.native
+  
   /**
     * Convert an angle from degrees to radians.
     *
@@ -87,4 +97,3 @@ object angle extends js.Object {
     */
   def toRadians(angleInDegrees: Double): Double = js.native
 }
-

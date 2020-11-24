@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "getFlavorOptions")
 @js.native
 object getFlavorOptions extends js.Object {
+  
   /**
     * Get the options of a specified flavor. Returns undefined if the flavor was not found.
     *
@@ -15,4 +16,3 @@ object getFlavorOptions extends js.Object {
     */
   def apply(name: Flavor): js.UndefOr[ShowdownOptions] = js.native
 }
-

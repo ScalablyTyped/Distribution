@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/util-body-length-browser" : "0.1.0-preview.1"
+      "@aws-sdk/util-body-length-browser" : "1.0.0-rc.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/util-body-length-browser" : "0.1.0-preview.1"
+      "@aws-sdk/util-body-length-browser" : "1.0.0-rc.3"
     }
   ],
   "compile-devDependencies" : [

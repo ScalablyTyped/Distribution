@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRExperienceHelper")
 @js.native
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   */
 class WebXRExperienceHelper protected ()
   extends typings.babylonjs.indexMod.WebXRExperienceHelper
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "WebXRExperienceHelper")
 @js.native
 object WebXRExperienceHelper extends js.Object {
+  
   /**
     * Creates the experience helper
     * @param scene the scene to attach the experience helper to
@@ -24,4 +24,3 @@ object WebXRExperienceHelper extends js.Object {
     */
   def CreateAsync(scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper] = js.native
 }
-

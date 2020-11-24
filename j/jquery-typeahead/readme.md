@@ -10,9 +10,9 @@ jQuery plugin that provides Typeahead (autocomplete) Search preview from Json ob
 | ------------------ | :-------------: |
 | Full name          | jquery-typeahead |
 | Keywords           | search, typeahead, ajax, json, jsonp, input, autocomplete |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 647738 |
+| # releases         | 4 |
+| # dependents       | 3 |
+| # downloads        | 1234267 |
 | # stars            | 0 |
 
 ## Links

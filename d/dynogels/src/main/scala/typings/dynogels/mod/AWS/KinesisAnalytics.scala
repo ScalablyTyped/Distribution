@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.kinesisanalyticsMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.KinesisAnalytics")
 @js.native
@@ -14,4 +14,3 @@ class KinesisAnalytics ()
   extends typings.awsSdk.mod.KinesisAnalytics {
   def this(options: ClientConfiguration) = this()
 }
-

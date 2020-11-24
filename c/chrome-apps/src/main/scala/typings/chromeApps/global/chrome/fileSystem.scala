@@ -19,7 +19,7 @@ import typings.filesystem.FileEntry
 import typings.filesystem.FileSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.fileSystem
@@ -40,11 +40,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.fileSystem")
 @js.native
 object fileSystem extends js.Object {
-  /**
-    * Called when a list of available volumes is changed.
-    * @since Chrome 44.
-    */
-  val onVolumeListChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* object */ js.Array[Volume], Unit]] = js.native
+  
   /** Ask the user to choose a file or directory. */
   def chooseEntry(
     callback: FileEntryCallback[ChooseFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
@@ -70,12 +66,14 @@ object fileSystem extends js.Object {
     options: ChooseSaveFileEntryOptions,
     callback: FileEntryCallback[ChooseSaveFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
   ): Unit = js.native
+  
   def getDisplayPath(entry: DirectoryEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = js.native
   /**
     * Get the display path of an Entry object.
     * The display path is based on the full path of the file or directory on the local file system, but may be made more readable for display purposes.
     */
   def getDisplayPath(entry: FileEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = js.native
+  
   /**
     * @requires(Kiosk) Chrome OS Kiosk mode only
     * @requires Permissions: The 'fileSystem': {'requestFileSystem'} manifest permission is required.
@@ -85,20 +83,30 @@ object fileSystem extends js.Object {
     * @since Chrome 44.
     */
   def getVolumeList(callback: js.Function1[/* volumes */ js.Array[Volume], Unit]): Unit = js.native
+  
   def getWritableEntry(entry: DirectoryEntry, callback: js.Function1[/* entry */ DirectoryEntry, Unit]): Unit = js.native
   /**
     * Get a writable Entry from another Entry. This call will fail with a runtime error if the application does not have the 'write' permission under 'fileSystem'.
     * If entry is a DirectoryEntry, this call will fail if the application does not have the 'directory' permission under 'fileSystem'.
     */
   def getWritableEntry(entry: FileEntry, callback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
+  
   /**
     * Returns whether the app has permission to restore the entry with the given id.
     * @since Chrome 29.
     **/
   def isRestorable(id: String, callback: js.Function1[/* isRestorable */ Boolean, Unit]): Unit = js.native
+  
   def isWritableEntry(entry: DirectoryEntry, callback: js.Function1[/* isWritable */ Boolean, Unit]): Unit = js.native
   /** Gets whether this Entry is writable or not. */
   def isWritableEntry(entry: FileEntry, callback: js.Function1[/* isWritable */ Boolean, Unit]): Unit = js.native
+  
+  /**
+    * Called when a list of available volumes is changed.
+    * @since Chrome 44.
+    */
+  val onVolumeListChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* object */ js.Array[Volume], Unit]] = js.native
+  
   /**
     * @requires(Kiosk) Kiosk mode only
     * @requires Permissions: The writable option requires the 'fileSystem': {'write'} permission in the manifest.
@@ -110,8 +118,10 @@ object fileSystem extends js.Object {
     * @since Chrome 44.
     */
   def requestFileSystem(options: Volume, callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = js.native
+  
   /** Returns the file entry with the given id if it can be restored. This call will fail with a runtime error otherwise. */
   def restoreEntry(id: String, callback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
+  
   def retainEntry(entry: DirectoryEntry): String = js.native
   /**
     * Returns an id that can be passed to restoreEntry to regain access to a given file entry.
@@ -121,11 +131,15 @@ object fileSystem extends js.Object {
     * @since Chrome 29.
     * */
   def retainEntry(entry: FileEntry): String = js.native
+  
   /** @enum */
   @js.native
   object ChildChangeType extends js.Object {
+    
     var CHANGED: changed_ = js.native
+    
     var CREATED: created = js.native
+    
     var REMOVED: removed = js.native
   }
   
@@ -152,11 +166,13 @@ object fileSystem extends js.Object {
     */
   @js.native
   object ChooseEntryType extends js.Object {
+    
     var OPEN_DIRECTORY: openDirectory = js.native
+    
     var OPEN_FILE: openFile = js.native
+    
     var OPEN_WRITABLE_FILE: openWritableFile = js.native
+    
     var SAVE_FILE: saveFile = js.native
   }
-  
 }
-

@@ -7,11 +7,12 @@ import typings.walkdir.anon.synctruereturnobjectfalse
 import typings.walkdir.anon.synctruereturnobjecttrueW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("walkdir/walkdir", "find")
 @js.native
 object find extends js.Object {
+  
   def apply(path: String): WalkEmitter = js.native
   def apply(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): WalkEmitter = js.native
   def apply(path: String, options: syncfalseundefinedWalkOpt): WalkEmitter = js.native
@@ -23,4 +24,3 @@ object find extends js.Object {
   def apply(path: String, options: WalkEventListener): WalkEmitter = js.native
   def apply(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = js.native
 }
-

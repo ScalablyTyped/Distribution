@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__services
 
-Typings are for version 5.1.0
+Typings are for version 5.2.5
 
 ## Library description:
 Client APIs for the Jupyter services REST APIs
@@ -10,9 +10,9 @@ Client APIs for the Jupyter services REST APIs
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/services |
 | Keywords           | jupyter, notebook, services |
-| # releases         | 62 |
-| # dependents       | 142 |
-| # downloads        | 1646400 |
+| # releases         | 103 |
+| # dependents       | 206 |
+| # downloads        | 2337822 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.vis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.vis.visStrings.linear
@@ -20,33 +20,44 @@ import scala.scalajs.js.annotation._
   - typings.vis.visStrings.easeInOutQuint
 */
 trait EasingFunction extends js.Object
-
 object EasingFunction {
+  
   @scala.inline
   def easeInCubic: typings.vis.visStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.vis.visStrings.easeInCubic]
+  
   @scala.inline
   def easeInOutCubic: typings.vis.visStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.vis.visStrings.easeInOutCubic]
+  
   @scala.inline
   def easeInOutQuad: typings.vis.visStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.vis.visStrings.easeInOutQuad]
+  
   @scala.inline
   def easeInOutQuart: typings.vis.visStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.vis.visStrings.easeInOutQuart]
+  
   @scala.inline
   def easeInOutQuint: typings.vis.visStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.vis.visStrings.easeInOutQuint]
+  
   @scala.inline
   def easeInQuad: typings.vis.visStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.vis.visStrings.easeInQuad]
+  
   @scala.inline
   def easeInQuart: typings.vis.visStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.vis.visStrings.easeInQuart]
+  
   @scala.inline
   def easeInQuint: typings.vis.visStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.vis.visStrings.easeInQuint]
+  
   @scala.inline
   def easeOutCubic: typings.vis.visStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.vis.visStrings.easeOutCubic]
+  
   @scala.inline
   def easeOutQuad: typings.vis.visStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.vis.visStrings.easeOutQuad]
+  
   @scala.inline
   def easeOutQuart: typings.vis.visStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.vis.visStrings.easeOutQuart]
+  
   @scala.inline
   def easeOutQuint: typings.vis.visStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.vis.visStrings.easeOutQuint]
+  
   @scala.inline
   def linear: typings.vis.visStrings.linear = "linear".asInstanceOf[typings.vis.visStrings.linear]
 }
-

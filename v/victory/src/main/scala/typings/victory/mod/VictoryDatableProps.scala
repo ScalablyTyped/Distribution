@@ -3,13 +3,14 @@ package typings.victory.mod
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common properties for all data components
   */
 @js.native
 trait VictoryDatableProps extends js.Object {
+  
   /**
     * The categories prop specifies how categorical data for a chart should be ordered.
     * This prop should be given as an array of string values, or an object with
@@ -18,6 +19,7 @@ trait VictoryDatableProps extends js.Object {
     * @example ["dogs", "cats", "mice"]
     */
   var categories: js.UndefOr[CategoryPropType] = js.native
+  
   /**
     * The data prop specifies the data to be plotted. Data should be in the form of an array
     * of data points, or an array of arrays of data points for multiple datasets.
@@ -27,6 +29,7 @@ trait VictoryDatableProps extends js.Object {
     * [[{x: "a", y: 1}, {x: "b", y: 2}], [{x: "a", y: 2}, {x: "b", y: 3}]]
     */
   var data: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * The dataComponent prop takes an entire component which will be used to create an area.
     * The new element created from the passed dataComponent will be provided with the
@@ -38,6 +41,7 @@ trait VictoryDatableProps extends js.Object {
     * @default <Area/>
     */
   var dataComponent: js.UndefOr[ReactElement] = js.native
+  
   /**
     * The domain prop describes the range of values your chart will cover. This prop can be
     * given as a array of the minimum and maximum expected values for your bar chart,
@@ -47,6 +51,7 @@ trait VictoryDatableProps extends js.Object {
     * @example [-1, 1], {x: [0, 100], y: [0, 1]}
     */
   var domain: js.UndefOr[DomainPropType] = js.native
+  
   /**
     * The x prop specifies how to access the X value of each data point.
     * If given as a function, it will be run on each data point, and returned value will be used.
@@ -59,6 +64,7 @@ trait VictoryDatableProps extends js.Object {
     * @default "x"
     */
   var x: js.UndefOr[DataGetterPropType] = js.native
+  
   /**
     * The y prop specifies how to access the Y value of each data point.
     * If given as a function, it will be run on each data point, and returned value will be used.
@@ -71,6 +77,7 @@ trait VictoryDatableProps extends js.Object {
     * @default "y"
     */
   var y: js.UndefOr[DataGetterPropType] = js.native
+  
   /**
     * Use y0 data accessor prop to determine how the component defines the baseline y0 data.
     * This prop is useful for defining custom baselines for components like VictoryBar or VictoryArea.
@@ -79,69 +86,93 @@ trait VictoryDatableProps extends js.Object {
     */
   var y0: js.UndefOr[DataGetterPropType] = js.native
 }
-
 object VictoryDatableProps {
+  
   @scala.inline
   def apply(): VictoryDatableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryDatableProps]
   }
+  
   @scala.inline
   implicit class VictoryDatablePropsOps[Self <: VictoryDatableProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    
     @scala.inline
     def setCategories(value: CategoryPropType): Self = this.set("categories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCategories: Self = this.set("categories", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDataComponent(value: ReactElement): Self = this.set("dataComponent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDataComponent: Self = this.set("dataComponent", js.undefined)
+    
     @scala.inline
     def setDomain(value: DomainPropType): Self = this.set("domain", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDomain: Self = this.set("domain", js.undefined)
+    
     @scala.inline
     def setXVarargs(value: String*): Self = this.set("x", js.Array(value :_*))
+    
     @scala.inline
     def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("x", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setX(value: DataGetterPropType): Self = this.set("x", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteX: Self = this.set("x", js.undefined)
+    
     @scala.inline
     def setYVarargs(value: String*): Self = this.set("y", js.Array(value :_*))
+    
     @scala.inline
     def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("y", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setY(value: DataGetterPropType): Self = this.set("y", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteY: Self = this.set("y", js.undefined)
+    
     @scala.inline
     def setY0Varargs(value: String*): Self = this.set("y0", js.Array(value :_*))
+    
     @scala.inline
     def setY0Function1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("y0", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setY0(value: DataGetterPropType): Self = this.set("y0", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteY0: Self = this.set("y0", js.undefined)
   }
-  
 }
-

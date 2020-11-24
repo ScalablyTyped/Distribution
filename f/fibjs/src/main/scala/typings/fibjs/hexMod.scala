@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("hex", JSImport.Namespace)
 @js.native
 object hexMod extends js.Object {
+  
   def decode(data: String): ClassBuffer = js.native
+  
   def encode(data: ClassBuffer): String = js.native
 }
-

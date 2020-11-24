@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Mobilecarriers")
 @js.native
 class ResourceMobilecarriers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.mobileCarriers.get
     * @desc Gets one mobile carrier by ID.
@@ -42,6 +44,7 @@ class ResourceMobilecarriers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMobileCarrier]
   ): Unit = js.native
+  
   /**
     * dfareporting.mobileCarriers.list
     * @desc Retrieves a list of mobile carriers.
@@ -74,4 +77,3 @@ class ResourceMobilecarriers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMobileCarriersListResponse]
   ): Unit = js.native
 }
-

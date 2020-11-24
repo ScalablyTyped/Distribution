@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.dropdownMenuMod.DropdownMenuProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "DropdownMenu")
+@JSImport("reactstrap/lib", "DropdownMenu")
 @js.native
-class DropdownMenu[T] ()
+class DropdownMenu ()
   extends Component[DropdownMenuProps, js.Object, js.Any]
-

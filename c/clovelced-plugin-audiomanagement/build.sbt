@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clovelced-plugin-audiomanagement"
-version := "1.0-dt-20190116Z-740c80"
+version := "1.0-dt-20190116Z-5d6fb5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

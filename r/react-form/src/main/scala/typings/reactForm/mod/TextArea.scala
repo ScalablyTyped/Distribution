@@ -6,9 +6,8 @@ import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-form", "TextArea")
 @js.native
 object TextArea extends TopLevel[StatelessComponent[FieldProps with TextareaHTMLAttributes[HTMLTextAreaElement]]]
-

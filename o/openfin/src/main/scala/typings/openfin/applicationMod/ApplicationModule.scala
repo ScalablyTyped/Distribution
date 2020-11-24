@@ -5,12 +5,15 @@ import typings.openfin.baseMod.Base
 import typings.openfin.identityMod.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationModule extends Base {
+  
   var _create: js.Any = js.native
+  
   var _createFromManifest: js.Any = js.native
+  
   /**
     * DEPRECATED method to create a new Application. Use {@link Application.start} instead.
     * @param { ApplicationOption } appOptions
@@ -19,7 +22,9 @@ trait ApplicationModule extends Base {
     * @ignore
     */
   def create(appOptions: ApplicationOption): js.Promise[Application] = js.native
+  
   def createFromManifest(manifestUrl: String): js.Promise[Application] = js.native
+  
   /**
     * Asynchronously returns an Application object that represents the current application
     * @return {Promise.<Application>}
@@ -27,6 +32,7 @@ trait ApplicationModule extends Base {
     * @static
     */
   def getCurrent(): js.Promise[Application] = js.native
+  
   /**
     * Synchronously returns an Application object that represents the current application
     * @return {Application}
@@ -34,6 +40,7 @@ trait ApplicationModule extends Base {
     * @static
     */
   def getCurrentSync(): Application = js.native
+  
   /**
     * Creates and starts a new Application.
     * @param { ApplicationOption } appOptions
@@ -42,6 +49,7 @@ trait ApplicationModule extends Base {
     * @static
     */
   def start(appOptions: ApplicationOption): js.Promise[Application] = js.native
+  
   /**
     * Retrieves application's manifest and returns a running instance of the application.
     * @param {string} manifestUrl - The URL of app's manifest.
@@ -52,6 +60,7 @@ trait ApplicationModule extends Base {
     */
   def startFromManifest(manifestUrl: String): js.Promise[Application] = js.native
   def startFromManifest(manifestUrl: String, opts: RvmLaunchOptions): js.Promise[Application] = js.native
+  
   /**
     * Asynchronously starts a batch of applications given an array of application identifiers and manifestUrls.
     * Returns once the RVM is finished attempting to launch the applications.
@@ -62,6 +71,7 @@ trait ApplicationModule extends Base {
     * @experimental
     */
   def startManyManifests(applications: js.Array[ManifestInfo]): js.Promise[Unit] = js.native
+  
   /**
     * Asynchronously returns an Application object that represents an existing application.
     * @param { Identity } identity
@@ -70,6 +80,7 @@ trait ApplicationModule extends Base {
     * @static
     */
   def wrap(identity: Identity): js.Promise[Application] = js.native
+  
   /**
     * Synchronously returns an Application object that represents an existing application.
     * @param { Identity } identity
@@ -79,4 +90,3 @@ trait ApplicationModule extends Base {
     */
   def wrapSync(identity: Identity): Application = js.native
 }
-

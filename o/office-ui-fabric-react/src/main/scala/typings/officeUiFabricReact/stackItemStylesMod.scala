@@ -6,11 +6,11 @@ import typings.officeUiFabricReact.stackItemTypesMod.IStackItemTokens
 import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/Stack/StackItem/StackItem.styles", JSImport.Namespace)
 @js.native
 object stackItemStylesMod extends js.Object {
+  
   val StackItemStyles: IStylesFunctionOrObject[IStackItemProps, IStackItemTokens, IStackItemStyles] = js.native
 }
-

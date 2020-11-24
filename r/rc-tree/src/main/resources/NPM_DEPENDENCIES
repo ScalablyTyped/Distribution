@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-tree" : "3.8.2"
+      "rc-tree" : "3.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-tree" : "3.8.2"
+      "rc-tree" : "3.11.0"
     }
   ],
   "compile-devDependencies" : [

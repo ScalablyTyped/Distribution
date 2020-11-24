@@ -12,7 +12,7 @@ Pretty simple jQuery plugin that turns standard Bootstrap alerts into hovering '
 | Keywords           | growl, notification, jquery |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 11866 |
+| # downloads        | 11841 |
 | # stars            | 0 |
 
 ## Links

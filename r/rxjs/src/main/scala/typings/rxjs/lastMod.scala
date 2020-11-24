@@ -4,11 +4,12 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/last", JSImport.Namespace)
 @js.native
 object lastMod extends js.Object {
+  
   def last[T, D](): OperatorFunction[T, T | D] = js.native
   def last[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): OperatorFunction[T, T | D] = js.native
   def last[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = js.native
@@ -27,4 +28,3 @@ object lastMod extends js.Object {
     defaultValue: S
   ): OperatorFunction[T, S] = js.native
 }
-

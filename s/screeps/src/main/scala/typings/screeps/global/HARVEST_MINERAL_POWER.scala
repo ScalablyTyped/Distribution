@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.screeps.screepsNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("HARVEST_MINERAL_POWER")
 @js.native
 object HARVEST_MINERAL_POWER extends TopLevel[`1`]
-

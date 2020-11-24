@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataExecutionErrorCode extends js.Object
-
 /**
   * An enumeration of data execution error codes.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataExecutionErrorCode")
 @js.native
 object DataExecutionErrorCode extends js.Object {
+  
   @js.native
   sealed trait DATA_EXECUTION_ERROR_CODE_UNSUPPORTED extends DataExecutionErrorCode
   
@@ -48,6 +48,4 @@ object DataExecutionErrorCode extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED_DATA_TYPE extends DataExecutionErrorCode
-  
 }
-

@@ -11,8 +11,8 @@ Render an SVG Image from an URL
 | Full name          | react-native-svg-uri |
 | Keywords           | react-native, svg, url, uri, http |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 367168 |
+| # dependents       | 8 |
+| # downloads        | 338390 |
 | # stars            | 2 |
 
 ## Links

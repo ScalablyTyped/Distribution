@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Zip模块管理文件压缩和解压，通过plus.zip可获取压缩管理对象。
@@ -11,12 +11,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusZip extends js.Object {
+  
   /**
     * JSON对象，图片裁剪区域的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var ClipImageOptions: js.UndefOr[PlusZipClipImageOptions] = js.native
+  
   /**
     * JSON对象，配置图片压缩转换的参数
     * 设置width/height属性则表示需对图片进行缩放转换操作；
@@ -27,6 +29,7 @@ trait PlusZip extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   var CompressImageOptions: js.UndefOr[PlusZipCompressImageOptions] = js.native
+  
   /**
     * 压缩生成Zip文件
     * 
@@ -88,6 +91,7 @@ trait PlusZip extends js.Object {
     successCB: js.Function0[Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 图片压缩转换
     * 可用于图片的质量压缩、大小缩放、方向旋转、区域裁剪、格式转换等。
@@ -118,6 +122,7 @@ trait PlusZip extends js.Object {
     successCB: js.Function1[/* result */ js.Any, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 解压缩Zip文件
     * 
@@ -184,4 +189,3 @@ trait PlusZip extends js.Object {
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
 }
-

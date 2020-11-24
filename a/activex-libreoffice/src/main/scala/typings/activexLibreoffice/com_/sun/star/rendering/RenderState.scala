@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains information passed to each {@link XCanvas} render operation.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RenderState extends js.Object {
+  
   /**
     * The affine transform associated with this render operation.
     *
@@ -22,6 +23,7 @@ trait RenderState extends js.Object {
     * by the view transform).
     */
   var AffineTransform: AffineMatrix2D = js.native
+  
   /**
     * The clipping area associated with this render operation.
     *
@@ -33,6 +35,7 @@ trait RenderState extends js.Object {
     * empty sub-polygons, denotes the NULL clip. That means, nothing rendered to the canvas will be visible.
     */
   var Clip: XPolyPolygon2D = js.native
+  
   /**
     * The composition mode associated with this render operation.
     *
@@ -40,6 +43,7 @@ trait RenderState extends js.Object {
     * {@link CompositeOperation} constants.
     */
   var CompositeOperation: Double = js.native
+  
   /**
     * The device color associated with this render operation.
     *
@@ -49,8 +53,8 @@ trait RenderState extends js.Object {
     */
   var DeviceColor: SafeArray[ColorComponent] = js.native
 }
-
 object RenderState {
+  
   @scala.inline
   def apply(
     AffineTransform: AffineMatrix2D,
@@ -61,26 +65,32 @@ object RenderState {
     val __obj = js.Dynamic.literal(AffineTransform = AffineTransform.asInstanceOf[js.Any], Clip = Clip.asInstanceOf[js.Any], CompositeOperation = CompositeOperation.asInstanceOf[js.Any], DeviceColor = DeviceColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderState]
   }
+  
   @scala.inline
   implicit class RenderStateOps[Self <: RenderState] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAffineTransform(value: AffineMatrix2D): Self = this.set("AffineTransform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClip(value: XPolyPolygon2D): Self = this.set("Clip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCompositeOperation(value: Double): Self = this.set("CompositeOperation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDeviceColor(value: SafeArray[ColorComponent]): Self = this.set("DeviceColor", value.asInstanceOf[js.Any])
   }
-  
 }
-

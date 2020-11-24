@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.DeviceLightEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DeviceLightEvent")
 @js.native
@@ -14,7 +14,6 @@ class DeviceLightEvent protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: DeviceLightEventInit) = this()
 }
-
 @JSGlobal("DeviceLightEvent")
 @js.native
 object DeviceLightEvent
@@ -24,4 +23,3 @@ object DeviceLightEvent
       /* eventInitDict */ DeviceLightEventInit, 
       typings.std.DeviceLightEvent
     ]
-

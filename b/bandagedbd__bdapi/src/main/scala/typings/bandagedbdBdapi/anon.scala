@@ -5,17 +5,19 @@ import typings.react.mod.Component
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait TypeofComponent
     extends Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
           Component[js.Object, js.Object, js.Object]
         ] {
+    
     // tslint won't let me format the sample code in a way that vscode likes it :(
     /**
       * If set, `this.context` will be set at runtime to the current value of the given Context.
@@ -39,6 +41,4 @@ object anon extends js.Object {
       */
     var contextType: js.UndefOr[Context[_]] = js.native
   }
-  
 }
-

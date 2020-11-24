@@ -10,9 +10,9 @@ Type check values
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/is |
 | Keywords           | type, types, is, check, checking, validate, validation, utility, util, typeof, instanceof, object, assert, assertion, test, kind, primitive, verify, compare, typescript, typeguards, types |
-| # releases         | 15 |
-| # dependents       | 77 |
-| # downloads        | 102427043 |
+| # releases         | 16 |
+| # dependents       | 113 |
+| # downloads        | 216112485 |
 | # stars            | 3 |
 
 ## Links

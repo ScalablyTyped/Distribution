@@ -2,11 +2,12 @@ package typings.validator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("validator/lib/stripLow", JSImport.Namespace)
 @js.native
 object stripLowMod extends js.Object {
+  
   /**
     * Remove characters with a numerical value < `32` and `127`, mostly control characters.
     * Unicode-safe in JavaScript.
@@ -16,4 +17,3 @@ object stripLowMod extends js.Object {
   def default(input: String): String = js.native
   def default(input: String, keep_new_lines: Boolean): String = js.native
 }
-

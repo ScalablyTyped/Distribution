@@ -10,9 +10,9 @@ A require hook to compile CSS Modules on the fly
 | ------------------ | :-------------: |
 | Full name          | css-modules-require-hook |
 | Keywords           | css-modules, require, hook |
-| # releases         | 2 |
-| # dependents       | 82 |
-| # downloads        | 3375599 |
+| # releases         | 0 |
+| # dependents       | 86 |
+| # downloads        | 4299060 |
 | # stars            | 3 |
 
 ## Links

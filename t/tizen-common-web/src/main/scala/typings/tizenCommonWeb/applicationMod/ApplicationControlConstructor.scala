@@ -5,7 +5,7 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.GROUP
 import typings.tizenCommonWeb.tizenCommonWebStrings.SINGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationControlConstructor
@@ -18,4 +18,3 @@ trait ApplicationControlConstructor
       /* launchMode */ js.UndefOr[ApplicationControlLaunchMode | SINGLE | GROUP], 
       ApplicationControl
     ]
-

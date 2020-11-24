@@ -6,11 +6,12 @@ import typings.latlonGeohash.mod.Geohash.Neighbours
 import typings.latlonGeohash.mod.Geohash.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("latlon-geohash", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def adjacent(geohash: String, direction: String): String = js.native
   /**
     * Determines adjacent cell in given direction.
@@ -21,6 +22,7 @@ object default extends js.Object {
     * @throws  Invalid geohash.
     */
   def adjacent(geohash: String, direction: Direction): String = js.native
+  
   /**
     * Returns SW/NE latitude/longitude bounds of specified geohash.
     *
@@ -29,6 +31,7 @@ object default extends js.Object {
     * @throws  Invalid geohash.
     */
   def bounds(geohash: String): Bounds = js.native
+  
   /**
     * Decode geohash to latitude/longitude (location is approximate centre of geohash cell,
     *     to reasonable precision).
@@ -41,6 +44,7 @@ object default extends js.Object {
     *     var latlon = Geohash.decode('u120fxw'); // latlon: { lat: 52.205, lon: 0.1188 }
     */
   def decode(geohash: String): Point = js.native
+  
   /**
     * Encodes latitude/longitude to geohash, either to specified precision or to automatically
     * evaluated precision.
@@ -56,6 +60,7 @@ object default extends js.Object {
     */
   def encode(latitude: Double, longitude: Double): String = js.native
   def encode(latitude: Double, longitude: Double, precision: Double): String = js.native
+  
   /**
     * Returns all 8 adjacent cells to specified geohash.
     *
@@ -64,15 +69,19 @@ object default extends js.Object {
     * @throws  Invalid geohash.
     */
   def neighbours(geohash: String): Neighbours = js.native
+  
   @js.native
   object Direction extends js.Object {
-    /* "E" */ val East: typings.latlonGeohash.mod.Geohash.Direction.East with String = js.native
-    /* "N" */ val North: typings.latlonGeohash.mod.Geohash.Direction.North with String = js.native
-    /* "S" */ val South: typings.latlonGeohash.mod.Geohash.Direction.South with String = js.native
-    /* "W" */ val West: typings.latlonGeohash.mod.Geohash.Direction.West with String = js.native
+    
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.latlonGeohash.mod.Geohash.Direction with String] = js.native
+    
+    /* "E" */ val East: typings.latlonGeohash.mod.Geohash.Direction.East with String = js.native
+    
+    /* "N" */ val North: typings.latlonGeohash.mod.Geohash.Direction.North with String = js.native
+    
+    /* "S" */ val South: typings.latlonGeohash.mod.Geohash.Direction.South with String = js.native
+    
+    /* "W" */ val West: typings.latlonGeohash.mod.Geohash.Direction.West with String = js.native
   }
-  
 }
-

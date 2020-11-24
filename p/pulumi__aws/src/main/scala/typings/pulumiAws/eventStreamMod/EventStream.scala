@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream")
 @js.native
@@ -21,24 +21,27 @@ class EventStream protected () extends CustomResource {
     */
   def this(name: String, args: EventStreamArgs) = this()
   def this(name: String, args: EventStreamArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The application ID.
     */
   val applicationId: Output_[String] = js.native
+  
   /**
     * The Amazon Resource Name (ARN) of the Amazon Kinesis stream or Firehose delivery stream to which you want to publish events.
     */
   val destinationStreamArn: Output_[String] = js.native
+  
   /**
     * The IAM role that authorizes Amazon Pinpoint to publish events to the stream in your account.
     */
   val roleArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream")
 @js.native
 object EventStream extends js.Object {
+  
   /**
     * Get an existing EventStream resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +55,10 @@ object EventStream extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventStream = js.native
   def get(name: String, id: Input[ID], state: EventStreamState): EventStream = js.native
   def get(name: String, id: Input[ID], state: EventStreamState, opts: CustomResourceOptions): EventStream = js.native
+  
   /**
     * Returns true if the given object is an instance of EventStream.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean = js.native
 }
-

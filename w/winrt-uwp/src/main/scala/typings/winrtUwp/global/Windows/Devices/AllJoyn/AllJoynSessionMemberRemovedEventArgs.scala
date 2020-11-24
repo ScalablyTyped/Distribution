@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a remote app removed from a session. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionMemberRemovedEventArgs")
@@ -15,4 +15,3 @@ class AllJoynSessionMemberRemovedEventArgs protected ()
     */
   def this(uniqueName: String) = this()
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource id uses a set of URLs to unambiguously specify a resource of the drawing framework.
@@ -21,19 +21,25 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XResourceId extends js.Object {
+  
   /** Return a new {@link XResourceId} that represents the anchor resource. */
   val Anchor: XResourceId = js.native
+  
   /**
     * Return the, possibly empty, list of anchor URLs. The URLs are ordered so that the one in position 0 is the direct anchor of the resource, while the
     * one in position i+1 is the direct anchor of the one in position i.
     */
   val AnchorURLs: SafeArray[String] = js.native
+  
   /** Return an URL object of the resource URL that may contain arguments. */
   val FullResourceURL: URL = js.native
+  
   /** Return the type prefix of the resource URL. This includes all up to and including the second slash. */
   val ResourceTypePrefix: String = js.native
+  
   /** Return the URL of the resource. Arguments supplied on creation are stripped away. Use {@link getFullResourceURL()} to access them. */
   val ResourceURL: String = js.native
+  
   /**
     * Compare the called {@link XResourceId} object with the given one.
     *
@@ -48,21 +54,28 @@ trait XResourceId extends js.Object {
     * @returns Returns 0 when the called resource id is equivalent to the given resource id. Returns `-1` or `+1` when the two compared resource ids differ.
     */
   def compareTo(xId: XResourceId): Double = js.native
+  
   /** Return a new {@link XResourceId} that represents the anchor resource. */
   def getAnchor(): XResourceId = js.native
+  
   /**
     * Return the, possibly empty, list of anchor URLs. The URLs are ordered so that the one in position 0 is the direct anchor of the resource, while the
     * one in position i+1 is the direct anchor of the one in position i.
     */
   def getAnchorURLs(): SafeArray[String] = js.native
+  
   /** Return an URL object of the resource URL that may contain arguments. */
   def getFullResourceURL(): URL = js.native
+  
   /** Return the type prefix of the resource URL. This includes all up to and including the second slash. */
   def getResourceTypePrefix(): String = js.native
+  
   /** Return the URL of the resource. Arguments supplied on creation are stripped away. Use {@link getFullResourceURL()} to access them. */
   def getResourceURL(): String = js.native
+  
   /** Return whether there is a non-empty anchor URL. When this method returns `FALSE` then {@link getAnchorURLs()} will return an empty list. */
   def hasAnchor(): Boolean = js.native
+  
   /**
     * Return whether the anchor of the called resource id object represents the same resource as the given object.
     *
@@ -72,6 +85,7 @@ trait XResourceId extends js.Object {
     * @param eMode This mode specifies how the called resource has to be bound to the given anchor in order to have this function return `TRUE` . If eMode is
     */
   def isBoundTo(xAnchorId: XResourceId, eMode: AnchorBindingMode): Boolean = js.native
+  
   /**
     * Return whether the anchor of the called resource id object represents the same resource as the given anchor URL. This is a convenience variant of the
     * {@link isBoundTo()} function that can also be seen as an optimization for the case that the anchor consists of exactly one URL.
@@ -80,8 +94,8 @@ trait XResourceId extends js.Object {
     */
   def isBoundToURL(AnchorURL: String, eMode: AnchorBindingMode): Boolean = js.native
 }
-
 object XResourceId {
+  
   @scala.inline
   def apply(
     Anchor: XResourceId,
@@ -102,46 +116,62 @@ object XResourceId {
     val __obj = js.Dynamic.literal(Anchor = Anchor.asInstanceOf[js.Any], AnchorURLs = AnchorURLs.asInstanceOf[js.Any], FullResourceURL = FullResourceURL.asInstanceOf[js.Any], ResourceTypePrefix = ResourceTypePrefix.asInstanceOf[js.Any], ResourceURL = ResourceURL.asInstanceOf[js.Any], compareTo = js.Any.fromFunction1(compareTo), getAnchor = js.Any.fromFunction0(getAnchor), getAnchorURLs = js.Any.fromFunction0(getAnchorURLs), getFullResourceURL = js.Any.fromFunction0(getFullResourceURL), getResourceTypePrefix = js.Any.fromFunction0(getResourceTypePrefix), getResourceURL = js.Any.fromFunction0(getResourceURL), hasAnchor = js.Any.fromFunction0(hasAnchor), isBoundTo = js.Any.fromFunction2(isBoundTo), isBoundToURL = js.Any.fromFunction2(isBoundToURL))
     __obj.asInstanceOf[XResourceId]
   }
+  
   @scala.inline
   implicit class XResourceIdOps[Self <: XResourceId] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnchor(value: XResourceId): Self = this.set("Anchor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnchorURLs(value: SafeArray[String]): Self = this.set("AnchorURLs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFullResourceURL(value: URL): Self = this.set("FullResourceURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResourceTypePrefix(value: String): Self = this.set("ResourceTypePrefix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResourceURL(value: String): Self = this.set("ResourceURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCompareTo(value: XResourceId => Double): Self = this.set("compareTo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetAnchor(value: () => XResourceId): Self = this.set("getAnchor", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAnchorURLs(value: () => SafeArray[String]): Self = this.set("getAnchorURLs", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFullResourceURL(value: () => URL): Self = this.set("getFullResourceURL", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetResourceTypePrefix(value: () => String): Self = this.set("getResourceTypePrefix", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetResourceURL(value: () => String): Self = this.set("getResourceURL", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setHasAnchor(value: () => Boolean): Self = this.set("hasAnchor", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsBoundTo(value: (XResourceId, AnchorBindingMode) => Boolean): Self = this.set("isBoundTo", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setIsBoundToURL(value: (String, AnchorBindingMode) => Boolean): Self = this.set("isBoundToURL", js.Any.fromFunction2(value))
   }
-  
 }
-

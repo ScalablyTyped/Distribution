@@ -7,11 +7,12 @@ import typings.typescript.mod.Identifier
 import typings.typescript.mod.Modifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateEnumDeclaration")
 @js.native
 object updateEnumDeclaration extends js.Object {
+  
   def apply(
     node: EnumDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -33,6 +34,7 @@ object updateEnumDeclaration extends js.Object {
     name: Identifier,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
+  /** @deprecated Use `factory.updateEnumDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: EnumDeclaration,
     decorators: js.Array[Decorator],
@@ -41,4 +43,3 @@ object updateEnumDeclaration extends js.Object {
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
 }
-

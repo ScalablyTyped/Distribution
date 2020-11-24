@@ -2,10 +2,11 @@ package typings.chaiSpies.ChaiSpies
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sandbox extends js.Object {
+  
   /**
     * #### chai.spy.on (function)
     *
@@ -28,6 +29,7 @@ trait Sandbox extends js.Object {
     methodNames: js.Array[String],
     fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
   ): js.Any = js.native
+  
   /**
     * #### chai.spy.restore (function)
     *
@@ -46,4 +48,3 @@ trait Sandbox extends js.Object {
   def restore(`object`: js.Object, methodNames: String): Unit = js.native
   def restore(`object`: js.Object, methodNames: js.Array[String]): Unit = js.native
 }
-

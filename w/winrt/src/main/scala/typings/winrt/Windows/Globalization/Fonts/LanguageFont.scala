@@ -5,12 +5,12 @@ import typings.winrt.Windows.UI.Text.FontStyle
 import typings.winrt.Windows.UI.Text.FontWeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LanguageFont extends ILanguageFont
-
 object LanguageFont {
+  
   @scala.inline
   def apply(
     fontFamily: String,
@@ -23,4 +23,3 @@ object LanguageFont {
     __obj.asInstanceOf[LanguageFont]
   }
 }
-

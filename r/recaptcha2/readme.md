@@ -12,7 +12,7 @@ Easy API for Google reCAPTCHA version 2 for Node.js and Express
 | Keywords           | recaptcha, captcha, security, csrf, express |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 214571 |
+| # downloads        | 223792 |
 | # stars            | 4 |
 
 ## Links

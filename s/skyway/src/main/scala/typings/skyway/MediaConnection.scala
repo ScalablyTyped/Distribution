@@ -6,17 +6,18 @@ import typings.skyway.skywayStrings.stream
 import typings.std.MediaStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaConnection extends js.Object {
-  var metadata: js.Any = js.native
-  var open: Boolean = js.native
-  var peer: String = js.native
-  var remoteId: String = js.native
+  
   def answer(stream: MediaStream): js.UndefOr[scala.Nothing] = js.native
   def answer(stream: MediaStream, options: AnswerOptions): js.UndefOr[scala.Nothing] = js.native
+  
   def close(): js.UndefOr[Unit] = js.native
+  
+  var metadata: js.Any = js.native
+  
   def on(event: String, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_close(event: close, cb: js.Function0[Unit]): Unit = js.native
@@ -24,6 +25,12 @@ trait MediaConnection extends js.Object {
   def on_removeStream(event: removeStream, cb: js.Function1[/* reamoteStream */ MediaStream, Unit]): Unit = js.native
   @JSName("on")
   def on_stream(event: stream, cb: js.Function1[/* stream */ MediaStream, Unit]): Unit = js.native
+  
+  var open: Boolean = js.native
+  
+  var peer: String = js.native
+  
+  var remoteId: String = js.native
+  
   def replaceStream(stream: MediaStream): js.UndefOr[scala.Nothing] = js.native
 }
-

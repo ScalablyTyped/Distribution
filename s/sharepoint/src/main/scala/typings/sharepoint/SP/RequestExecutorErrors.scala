@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RequestExecutorErrors extends js.Object
-
 @JSGlobal("SP.RequestExecutorErrors")
 @js.native
 object RequestExecutorErrors extends js.Object {
+  
   @js.native
   sealed trait domainDoesNotMatch extends RequestExecutorErrors
   
@@ -30,6 +30,4 @@ object RequestExecutorErrors extends js.Object {
   
   @js.native
   sealed trait unexpectedResponse extends RequestExecutorErrors
-  
 }
-

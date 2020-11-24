@@ -8,7 +8,7 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.SaveState
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/docregistry/lib/context", "Context")
 @js.native
@@ -17,54 +17,79 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * Construct a new document context.
     */
   def this(options: IOptions[T]) = this()
+  
   var _contentsModel: js.Any = js.native
+  
   var _dialogs: js.Any = js.native
+  
   var _disposed: js.Any = js.native
+  
   var _factory: js.Any = js.native
+  
   var _fileChanged: js.Any = js.native
+  
   /**
     * Finish a saveAs operation given a new path.
     */
   var _finishSaveAs: js.Any = js.native
+  
   /**
     * Handle a save/load error with a dialog.
     */
   var _handleError: js.Any = js.native
+  
   var _isDisposed: js.Any = js.native
+  
   var _isPopulated: js.Any = js.native
+  
   var _isReady: js.Any = js.native
+  
   var _manager: js.Any = js.native
+  
   /**
     * Add a checkpoint the file is writable.
     */
   var _maybeCheckpoint: js.Any = js.native
+  
   /**
     * Handle a time conflict.
     */
   var _maybeOverWrite: js.Any = js.native
+  
   /**
     * Save a file, dealing with conflicts.
     */
   var _maybeSave: js.Any = js.native
+  
   var _model: js.Any = js.native
+  
   var _modelDB: js.Any = js.native
+  
   /**
     * Handle a change on the contents manager.
     */
   var _onFileChanged: js.Any = js.native
+  
   /**
     * Handle a change to a session property.
     */
   var _onSessionChanged: js.Any = js.native
+  
   var _opener: js.Any = js.native
+  
   var _path: js.Any = js.native
+  
   var _pathChanged: js.Any = js.native
+  
   /**
     * Handle an initial population.
     */
   var _populate: js.Any = js.native
+  
   var _populatedPromise: js.Any = js.native
+  
   var _readyPromise: js.Any = js.native
+  
   /**
     * Revert the document contents to disk contents.
     *
@@ -72,33 +97,26 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * deserializing the content.
     */
   var _revert: js.Any = js.native
+  
   /**
     * Save the document contents to disk.
     */
   var _save: js.Any = js.native
+  
   var _saveState: js.Any = js.native
+  
   /**
     * Handle a time conflict.
     */
   var _timeConflict: js.Any = js.native
+  
   /**
     * Update our contents model, without the content.
     */
   var _updateContentsModel: js.Any = js.native
+  
   var _useCRLF: js.Any = js.native
-  /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
-  /**
-    * The client session object associated with the context.
-    */
-  @JSName("sessionContext")
-  val sessionContext_Context_ : SessionContext = js.native
+  
   /**
     * The current contents model associated with the document.
     *
@@ -108,24 +126,13 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     */
   @JSName("contentsModel")
   def contentsModel_MContext_ : typings.jupyterlabServices.contentsMod.Contents.IModel | Null = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  
   /**
     * A signal emitted when the context is disposed.
     */
   @JSName("disposed")
   def disposed_MContext_ : ISignal[this.type, Unit] = js.native
+  
   /**
     * Get the model factory name.
     *
@@ -133,11 +140,13 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * This is not part of the `IContext` API.
     */
   def factoryName: String = js.native
+  
   /**
     * A signal emitted when the model is saved or reverted.
     */
   @JSName("fileChanged")
   def fileChanged_MContext_ : ISignal[this.type, typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
+  
   /**
     * Initialize the context.
     *
@@ -146,16 +155,19 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * @returns a promise that resolves upon initialization.
     */
   def initialize(isNew: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Test whether the context is disposed.
     */
   @JSName("isDisposed")
   def isDisposed_MContext_ : Boolean = js.native
+  
   /**
     * Whether the context is ready.
     */
   @JSName("isReady")
   def isReady_MContext_ : Boolean = js.native
+  
   /**
     * The current local path associated with the document.
     * If the document is in the default notebook file browser,
@@ -163,30 +175,40 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     */
   @JSName("localPath")
   def localPath_MContext_ : String = js.native
+  
   /**
     * Get the model associated with the document.
     */
   @JSName("model")
   def model_MContext_ : T = js.native
+  
   /**
     * A signal emitted when the path changes.
     */
   @JSName("pathChanged")
   def pathChanged_MContext_ : ISignal[this.type, String] = js.native
+  
   /**
     * The current path associated with the document.
     */
   @JSName("path")
   def path_MContext_ : String = js.native
+  
   /**
     * A promise that is fulfilled when the context is ready.
     */
   @JSName("ready")
   def ready_MContext_ : js.Promise[Unit] = js.native
+  
   /**
     * A signal emitted on the start and end of a saving operation.
     */
   @JSName("saveState")
   def saveState_MContext_ : ISignal[this.type, SaveState] = js.native
+  
+  /**
+    * The client session object associated with the context.
+    */
+  @JSName("sessionContext")
+  val sessionContext_Context_ : SessionContext = js.native
 }
-

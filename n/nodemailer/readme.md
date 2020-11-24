@@ -10,10 +10,10 @@ Easy as cake e-mail sending from your Node.js applications
 | ------------------ | :-------------: |
 | Full name          | nodemailer |
 | Keywords           | Nodemailer |
-| # releases         | 26 |
-| # dependents       | 2416 |
-| # downloads        | 41147326 |
-| # stars            | 509 |
+| # releases         | 23 |
+| # dependents       | 2767 |
+| # downloads        | 51037159 |
+| # stars            | 508 |
 
 ## Links
 - [Homepage](https://nodemailer.com/)

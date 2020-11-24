@@ -5,25 +5,29 @@ import typings.openui5.sap.ui.core.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScrollContainer extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): ScrollContainer = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): ScrollContainer = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.The content of the ScrollContainer.
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>focusable</code>.Whether the scroll container can be
     * focused.Note that it should be set to "true" when there are no focusable elements inside or when
@@ -32,6 +36,7 @@ trait ScrollContainer extends Control {
     * @returns Value of property <code>focusable</code>
     */
   def getFocusable(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>height</code>.The height of the ScrollContainer.By default the
     * height equals the content height. If only horizontal scrolling is used, do not set the height or
@@ -41,12 +46,14 @@ trait ScrollContainer extends Control {
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>horizontal</code>.Whether horizontal scrolling should be
     * possible.Default value is <code>true</code>.
     * @returns Value of property <code>horizontal</code>
     */
   def getHorizontal(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>vertical</code>.Whether vertical scrolling should be
     * possible.Note that this is off by default because typically a Page is used as fullscreen element
@@ -56,6 +63,7 @@ trait ScrollContainer extends Control {
     * @returns Value of property <code>vertical</code>
     */
   def getVertical(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The width of the ScrollContainer.If not set, it
     * consumes the complete available width, behaving like normal HTML block elements. If only vertical
@@ -63,6 +71,7 @@ trait ScrollContainer extends Control {
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -70,6 +79,7 @@ trait ScrollContainer extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -80,12 +90,14 @@ trait ScrollContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): ScrollContainer = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -94,6 +106,7 @@ trait ScrollContainer extends Control {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   /**
     * Scrolls to the given position.When called while the control is not rendered (yet), the scrolling
     * position is still applied, but there is no animation.
@@ -106,6 +119,7 @@ trait ScrollContainer extends Control {
     * 0 as value. 0 is also the default value, when this optional parameter is omitted.
     */
   def scrollTo(x: Double, y: Double, time: Double): ScrollContainer = js.native
+  
   def scrollToElement(element: Element): ScrollContainer = js.native
   def scrollToElement(element: Element, time: Double): ScrollContainer = js.native
   /**
@@ -118,6 +132,7 @@ trait ScrollContainer extends Control {
     */
   def scrollToElement(element: HTMLElement): ScrollContainer = js.native
   def scrollToElement(element: HTMLElement, time: Double): ScrollContainer = js.native
+  
   /**
     * Sets a new value for property <code>focusable</code>.Whether the scroll container can be
     * focused.Note that it should be set to "true" when there are no focusable elements inside or when
@@ -128,6 +143,7 @@ trait ScrollContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFocusable(bFocusable: Boolean): ScrollContainer = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.The height of the ScrollContainer.By default the
     * height equals the content height. If only horizontal scrolling is used, do not set the height or
@@ -139,6 +155,7 @@ trait ScrollContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): ScrollContainer = js.native
+  
   /**
     * Sets a new value for property <code>horizontal</code>.Whether horizontal scrolling should be
     * possible.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -147,6 +164,7 @@ trait ScrollContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHorizontal(bHorizontal: Boolean): ScrollContainer = js.native
+  
   /**
     * Sets a new value for property <code>vertical</code>.Whether vertical scrolling should be
     * possible.Note that this is off by default because typically a Page is used as fullscreen element
@@ -159,6 +177,7 @@ trait ScrollContainer extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVertical(bVertical: Boolean): ScrollContainer = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.The width of the ScrollContainer.If not set, it
     * consumes the complete available width, behaving like normal HTML block elements. If only vertical
@@ -170,4 +189,3 @@ trait ScrollContainer extends Control {
     */
   def setWidth(sWidth: js.Any): ScrollContainer = js.native
 }
-

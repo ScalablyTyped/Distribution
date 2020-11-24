@@ -5,7 +5,7 @@ import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The document semantic tokens provider interface defines the contract between extensions and
@@ -13,6 +13,67 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DocumentSemanticTokensProvider extends js.Object {
+  
+  /**
+    * A file can contain many tokens, perhaps even hundreds of thousands of tokens. Therefore, to improve
+    * the memory consumption around describing semantic tokens, we have decided to avoid allocating an object
+    * for each token and we represent tokens from a file as an array of integers. Furthermore, the position
+    * of each token is expressed relative to the token before it because most tokens remain stable relative to
+    * each other when edits are made in a file.
+    *
+    * ---
+    * In short, each token takes 5 integers to represent, so a specific token `i` in the file consists of the following array indices:
+    *  - at index `5*i`   - `deltaLine`: token line number, relative to the previous token
+    *  - at index `5*i+1` - `deltaStart`: token start character, relative to the previous token (relative to 0 or the previous token's start if they are on the same line)
+    *  - at index `5*i+2` - `length`: the length of the token. A token cannot be multiline.
+    *  - at index `5*i+3` - `tokenType`: will be looked up in `SemanticTokensLegend.tokenTypes`
+    *  - at index `5*i+4` - `tokenModifiers`: each set bit will be looked up in `SemanticTokensLegend.tokenModifiers`
+    *
+    * ---
+    * ### How to encode tokens
+    *
+    * Here is an example for encoding a file with 3 tokens in a uint32 array:
+    * ```
+    *    { line: 2, startChar:  5, length: 3, tokenType: "properties", tokenModifiers: ["private", "static"] },
+    *    { line: 2, startChar: 10, length: 4, tokenType: "types",      tokenModifiers: [] },
+    *    { line: 5, startChar:  2, length: 7, tokenType: "classes",    tokenModifiers: [] }
+    * ```
+    *
+    * 1. First of all, a legend must be devised. This legend must be provided up-front and capture all possible token types.
+    * For this example, we will choose the following legend which must be passed in when registering the provider:
+    * ```
+    *    tokenTypes: ['properties', 'types', 'classes'],
+    *    tokenModifiers: ['private', 'static']
+    * ```
+    *
+    * 2. The first transformation step is to encode `tokenType` and `tokenModifiers` as integers using the legend. Token types are looked
+    * up by index, so a `tokenType` value of `1` means `tokenTypes[1]`. Multiple token modifiers can be set by using bit flags,
+    * so a `tokenModifier` value of `3` is first viewed as binary `0b00000011`, which means `[tokenModifiers[0], tokenModifiers[1]]` because
+    * bits 0 and 1 are set. Using this legend, the tokens now are:
+    * ```
+    *    { line: 2, startChar:  5, length: 3, tokenType: 0, tokenModifiers: 3 },
+    *    { line: 2, startChar: 10, length: 4, tokenType: 1, tokenModifiers: 0 },
+    *    { line: 5, startChar:  2, length: 7, tokenType: 2, tokenModifiers: 0 }
+    * ```
+    *
+    * 3. The next steps is to encode each token relative to the previous token in the file. In this case, the second token
+    * is on the same line as the first token, so the `startChar` of the second token is made relative to the `startChar`
+    * of the first token, so it will be `10 - 5`. The third token is on a different line than the second token, so the
+    * `startChar` of the third token will not be altered:
+    * ```
+    *    { deltaLine: 2, deltaStartChar: 5, length: 3, tokenType: 0, tokenModifiers: 3 },
+    *    { deltaLine: 0, deltaStartChar: 5, length: 4, tokenType: 1, tokenModifiers: 0 },
+    *    { deltaLine: 3, deltaStartChar: 2, length: 7, tokenType: 2, tokenModifiers: 0 }
+    * ```
+    *
+    * 4. Finally, the last step is to inline each of the 5 fields for a token in a single array, which is a memory friendly representation:
+    * ```
+    *    // 1st token,  2nd token,  3rd token
+    *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
+    * ```
+    */
+  def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
+  
   /**
     * Instead of always returning all the tokens in a file, it is possible for a `DocumentSemanticTokensProvider` to implement
     * this method (`updateSemanticTokens`) and then return incremental updates to the previously provided semantic tokens.
@@ -74,93 +135,39 @@ trait DocumentSemanticTokensProvider extends js.Object {
       ProviderResult[SemanticTokens | SemanticTokensEdits]
     ]
   ] = js.native
-  /**
-    * A file can contain many tokens, perhaps even hundreds of thousands of tokens. Therefore, to improve
-    * the memory consumption around describing semantic tokens, we have decided to avoid allocating an object
-    * for each token and we represent tokens from a file as an array of integers. Furthermore, the position
-    * of each token is expressed relative to the token before it because most tokens remain stable relative to
-    * each other when edits are made in a file.
-    *
-    * ---
-    * In short, each token takes 5 integers to represent, so a specific token `i` in the file consists of the following array indices:
-    *  - at index `5*i`   - `deltaLine`: token line number, relative to the previous token
-    *  - at index `5*i+1` - `deltaStart`: token start character, relative to the previous token (relative to 0 or the previous token's start if they are on the same line)
-    *  - at index `5*i+2` - `length`: the length of the token. A token cannot be multiline.
-    *  - at index `5*i+3` - `tokenType`: will be looked up in `SemanticTokensLegend.tokenTypes`
-    *  - at index `5*i+4` - `tokenModifiers`: each set bit will be looked up in `SemanticTokensLegend.tokenModifiers`
-    *
-    * ---
-    * ### How to encode tokens
-    *
-    * Here is an example for encoding a file with 3 tokens in a uint32 array:
-    * ```
-    *    { line: 2, startChar:  5, length: 3, tokenType: "properties", tokenModifiers: ["private", "static"] },
-    *    { line: 2, startChar: 10, length: 4, tokenType: "types",      tokenModifiers: [] },
-    *    { line: 5, startChar:  2, length: 7, tokenType: "classes",    tokenModifiers: [] }
-    * ```
-    *
-    * 1. First of all, a legend must be devised. This legend must be provided up-front and capture all possible token types.
-    * For this example, we will choose the following legend which must be passed in when registering the provider:
-    * ```
-    *    tokenTypes: ['properties', 'types', 'classes'],
-    *    tokenModifiers: ['private', 'static']
-    * ```
-    *
-    * 2. The first transformation step is to encode `tokenType` and `tokenModifiers` as integers using the legend. Token types are looked
-    * up by index, so a `tokenType` value of `1` means `tokenTypes[1]`. Multiple token modifiers can be set by using bit flags,
-    * so a `tokenModifier` value of `3` is first viewed as binary `0b00000011`, which means `[tokenModifiers[0], tokenModifiers[1]]` because
-    * bits 0 and 1 are set. Using this legend, the tokens now are:
-    * ```
-    *    { line: 2, startChar:  5, length: 3, tokenType: 0, tokenModifiers: 3 },
-    *    { line: 2, startChar: 10, length: 4, tokenType: 1, tokenModifiers: 0 },
-    *    { line: 5, startChar:  2, length: 7, tokenType: 2, tokenModifiers: 0 }
-    * ```
-    *
-    * 3. The next steps is to encode each token relative to the previous token in the file. In this case, the second token
-    * is on the same line as the first token, so the `startChar` of the second token is made relative to the `startChar`
-    * of the first token, so it will be `10 - 5`. The third token is on a different line than the second token, so the
-    * `startChar` of the third token will not be altered:
-    * ```
-    *    { deltaLine: 2, deltaStartChar: 5, length: 3, tokenType: 0, tokenModifiers: 3 },
-    *    { deltaLine: 0, deltaStartChar: 5, length: 4, tokenType: 1, tokenModifiers: 0 },
-    *    { deltaLine: 3, deltaStartChar: 2, length: 7, tokenType: 2, tokenModifiers: 0 }
-    * ```
-    *
-    * 4. Finally, the last step is to inline each of the 5 fields for a token in a single array, which is a memory friendly representation:
-    * ```
-    *    // 1st token,  2nd token,  3rd token
-    *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
-    * ```
-    */
-  def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
 }
-
 object DocumentSemanticTokensProvider {
+  
   @scala.inline
   def apply(provideDocumentSemanticTokens: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): DocumentSemanticTokensProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSemanticTokens = js.Any.fromFunction2(provideDocumentSemanticTokens))
     __obj.asInstanceOf[DocumentSemanticTokensProvider]
   }
+  
   @scala.inline
   implicit class DocumentSemanticTokensProviderOps[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = this.set("provideDocumentSemanticTokens", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setProvideDocumentSemanticTokensEdits(
       value: (/* document */ TextDocument, /* previousResultId */ String, /* token */ CancellationToken) => ProviderResult[SemanticTokens | SemanticTokensEdits]
     ): Self = this.set("provideDocumentSemanticTokensEdits", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteProvideDocumentSemanticTokensEdits: Self = this.set("provideDocumentSemanticTokensEdits", js.undefined)
   }
-  
 }
-

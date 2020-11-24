@@ -8,10 +8,11 @@ import typings.stropheJs.stropheJsStrings.presence
 import typings.stropheJs.stropheJsStrings.roster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XmppRoom extends js.Object {
+  
   @JSName("addHandler")
   def addHandler_message(handler_type: message, handler: js.Function1[/* stanza */ Element, _]): Double = js.native
   /**
@@ -25,6 +26,7 @@ trait XmppRoom extends js.Object {
   def addHandler_presence(handler_type: presence, handler: js.Function1[/* stanza */ Element, _]): Double = js.native
   @JSName("addHandler")
   def addHandler_roster(handler_type: roster, handler: js.Function1[/* stanza */ Element, _]): Double = js.native
+  
   def admin(jid: String): String = js.native
   def admin(
     jid: String,
@@ -53,6 +55,7 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def ban(jid: String): String = js.native
   def ban(
     jid: String,
@@ -81,9 +84,13 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def cancelConfigure(): String = js.native
+  
   def changeNick(nick: String): String = js.native
+  
   def configure(handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  
   def deop(nick: String): String = js.native
   def deop(
     nick: String,
@@ -112,17 +119,22 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def directInvite(receiver: String): String = js.native
   def directInvite(receiver: String, reason: String): String = js.native
+  
   def groupchat(message: String): String = js.native
   def groupchat(message: String, html_message: String): String = js.native
+  
   def invite(receiver: String): String = js.native
   def invite(receiver: String, reason: String): String = js.native
+  
   def join(
     msg_handler_cb: js.Function1[/* stanza */ Element, _],
     pres_handler_cb: js.Function1[/* stanza */ Element, _],
     roster_cb: js.Function1[/* stanza */ Element, _]
   ): Unit = js.native
+  
   def kick(nick: String): String = js.native
   def kick(
     nick: String,
@@ -151,10 +163,12 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def leave(): Unit = js.native
   def leave(handler_cb: js.UndefOr[scala.Nothing], exit_msg: String): Unit = js.native
   def leave(handler_cb: js.Function1[/* stanza */ Element, _]): Unit = js.native
   def leave(handler_cb: js.Function1[/* stanza */ Element, _], exit_msg: String): Unit = js.native
+  
   def member(jid: String): String = js.native
   def member(
     jid: String,
@@ -183,10 +197,12 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   @JSName("message")
   def message_chat(message: String, html_message: String, `type`: chat): String = js.native
   @JSName("message")
   def message_groupchat(message: String, html_message: String, `type`: groupchat): String = js.native
+  
   def modifyAffiliation(jid: String, affiliation: String): String = js.native
   def modifyAffiliation(
     jid: String,
@@ -229,6 +245,7 @@ trait XmppRoom extends js.Object {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def modifyRole(nick: String, role: String): String = js.native
   def modifyRole(
     nick: String,
@@ -266,8 +283,10 @@ trait XmppRoom extends js.Object {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def multipleInvites(receivers: js.Array[String]): String = js.native
   def multipleInvites(receivers: js.Array[String], reason: String): String = js.native
+  
   def mute(nick: String): String = js.native
   def mute(
     nick: String,
@@ -296,6 +315,7 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def op(nick: String): String = js.native
   def op(
     nick: String,
@@ -324,6 +344,7 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def owner(jid: String): String = js.native
   def owner(
     jid: String,
@@ -352,7 +373,9 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def queryOccupants(success_cb: js.Function1[/* stanza */ Element, _], error_cb: js.Function1[/* stanza */ Element, _]): Unit = js.native
+  
   /**
     * Removes a handler from the MUC room.
     * This function takes ONLY ids returned by the addHandler function
@@ -362,6 +385,7 @@ trait XmppRoom extends js.Object {
     * @param id - the id of the handler
     */
   def removeHandler(id: Double): Unit = js.native
+  
   def revoke(jid: String): String = js.native
   def revoke(
     jid: String,
@@ -390,9 +414,13 @@ trait XmppRoom extends js.Object {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def saveConfiguration(config: js.Any): String = js.native
+  
   def setStatus(show: String, status: String): String = js.native
+  
   def setTopic(topic: String): String = js.native
+  
   def voice(nick: String): String = js.native
   def voice(
     nick: String,
@@ -422,4 +450,3 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
 }
-

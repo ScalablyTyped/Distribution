@@ -2,10 +2,11 @@ package typings.facebookPixel.facebook.Pixel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Event extends js.Object {
+  
   def apply(eventType: String, InitialAppId: String): Unit = js.native
   def apply(eventType: String, InitialAppId: String, eventName: String, parameters: AddPaymentInfoParameters): Unit = js.native
   def apply(eventType: String, InitialAppId: String, eventName: String, parameters: AddToCartParameters): Unit = js.native
@@ -46,4 +47,3 @@ trait Event extends js.Object {
   def apply(eventType: String, eventName: String, parameters: SearchParameters): Unit = js.native
   def apply(eventType: String, eventName: String, parameters: ViewContentParameters): Unit = js.native
 }
-

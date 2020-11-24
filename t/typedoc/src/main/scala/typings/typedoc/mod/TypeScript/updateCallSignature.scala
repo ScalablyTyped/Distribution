@@ -7,11 +7,12 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateCallSignature")
 @js.native
 object updateCallSignature extends js.Object {
+  
   def apply(
     node: CallSignatureDeclaration,
     typeParameters: js.UndefOr[scala.Nothing],
@@ -23,6 +24,7 @@ object updateCallSignature extends js.Object {
     parameters: NodeArray[ParameterDeclaration],
     `type`: TypeNode
   ): CallSignatureDeclaration = js.native
+  /** @deprecated Use `factory.updateCallSignature` or the factory supplied by your transformation context instead. */
   def apply(
     node: CallSignatureDeclaration,
     typeParameters: NodeArray[TypeParameterDeclaration],
@@ -35,4 +37,3 @@ object updateCallSignature extends js.Object {
     `type`: TypeNode
   ): CallSignatureDeclaration = js.native
 }
-

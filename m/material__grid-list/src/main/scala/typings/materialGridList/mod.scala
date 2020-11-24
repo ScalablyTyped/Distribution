@@ -1,34 +1,46 @@
 package typings.materialGridList
 
-import typings.materialBase.mod.MDCComponent
 import typings.materialGridList.adapterMod.MDCGridListAdapter
-import typings.materialGridList.foundationMod.default
+import typings.materialGridList.anon.PartialMDCGridListAdapter
+import typings.materialGridList.anon.TILESELECTOR
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/grid-list", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class MDCGridList () extends MDCComponent[MDCGridListAdapter]
   
   @js.native
-  class MDCGridListFoundation () extends default
-  
+  class MDCGridList ()
+    extends typings.materialGridList.componentMod.MDCGridList
   /* static members */
   @js.native
   object MDCGridList extends js.Object {
-    def attachTo(root: Element): MDCGridList = js.native
+    
+    def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = js.native
   }
   
+  @js.native
+  class MDCGridListFoundation ()
+    extends typings.materialGridList.foundationMod.MDCGridListFoundation {
+    def this(adapter: PartialMDCGridListAdapter) = this()
+  }
   /* static members */
   @js.native
   object MDCGridListFoundation extends js.Object {
+    
     val defaultAdapter: MDCGridListAdapter = js.native
-    val strings: typings.materialGridList.constantsMod.strings = js.native
+    
+    val strings: TILESELECTOR = js.native
   }
   
+  @js.native
+  object strings extends js.Object {
+    
+    var TILES_SELECTOR: String = js.native
+    
+    var TILE_SELECTOR: String = js.native
+  }
 }
-

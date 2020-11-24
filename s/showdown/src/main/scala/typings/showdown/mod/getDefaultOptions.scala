@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "getDefaultOptions")
 @js.native
 object getDefaultOptions extends js.Object {
+  
   /**
     * Get the default options.
     *
@@ -16,4 +17,3 @@ object getDefaultOptions extends js.Object {
   def apply(): ShowdownOptionsSchema | ShowdownOptions = js.native
   def apply(simple: Boolean): ShowdownOptionsSchema | ShowdownOptions = js.native
 }
-

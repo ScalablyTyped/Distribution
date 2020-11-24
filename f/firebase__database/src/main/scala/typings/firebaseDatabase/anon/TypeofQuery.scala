@@ -7,7 +7,7 @@ import typings.firebaseDatabase.queryParamsMod.QueryParams
 import typings.firebaseDatabase.repoMod.Repo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofQuery
@@ -18,6 +18,10 @@ trait TypeofQuery
       /* orderByCalled_ */ Boolean, 
       Query
     ] {
+  
+  def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query] = js.native
+  def __referenceConstructor_=(`val`: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query]): Unit = js.native
+  
   /**
     * Helper used by .on and .once to extract the context and or cancel arguments.
     * @param {!string} fnName The function name (on or once)
@@ -27,19 +31,18 @@ trait TypeofQuery
     * @private
     */
   var getCancelAndContextArgs_ : js.Any = js.native
+  
   /**
     * Validates that limit* has been called with the correct combination of parameters
     * @param {!QueryParams} params
     * @private
     */
   var validateLimit_ : js.Any = js.native
+  
   /**
     * Validates start/end values for queries.
     * @param {!QueryParams} params
     * @private
     */
   var validateQueryEndpoints_ : js.Any = js.native
-  def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query] = js.native
-  def __referenceConstructor_=(`val`: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query]): Unit = js.native
 }
-

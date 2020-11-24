@@ -4,26 +4,17 @@ import typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/singletonlayout", JSImport.Namespace)
 @js.native
 object singletonlayoutMod extends js.Object {
+  
   @js.native
   class SingletonLayout () extends Layout {
+    
     var _widget: js.Any = js.native
-    /**
-      * Get the child widget for the layout.
-      */
-    /**
-      * Set the child widget for the layout.
-      *
-      * #### Notes
-      * Setting the child widget will cause the old child widget to be
-      * automatically disposed. If that is not desired, set the parent
-      * of the old child to `null` before assigning a new child.
-      */
-    var widget: Widget | Null = js.native
+    
     /**
       * Attach a widget to the parent's DOM node.
       *
@@ -43,6 +34,7 @@ object singletonlayoutMod extends js.Object {
       * node is added to the parent's node.
       */
     /* protected */ def attachWidget(widget: Widget): Unit = js.native
+    
     /**
       * Detach a widget from the parent's DOM node.
       *
@@ -60,7 +52,18 @@ object singletonlayoutMod extends js.Object {
       * node is removed from the parent's node.
       */
     /* protected */ def detachWidget(widget: Widget): Unit = js.native
+    
+    /**
+      * Get the child widget for the layout.
+      */
+    /**
+      * Set the child widget for the layout.
+      *
+      * #### Notes
+      * Setting the child widget will cause the old child widget to be
+      * automatically disposed. If that is not desired, set the parent
+      * of the old child to `null` before assigning a new child.
+      */
+    var widget: Widget | Null = js.native
   }
-  
 }
-

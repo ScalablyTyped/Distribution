@@ -2,7 +2,7 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters facilitate setting and delivering data into the pipeline&#39;s
@@ -54,16 +54,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaPipelineParameter extends js.Object {
+  
   /**
     * The default value for this parameter. Can be overridden at runtime. If
     * `localCopy` is present, then this must be a Google Cloud Storage path
     * beginning with `gs://`.
     */
   var defaultValue: js.UndefOr[String] = js.native
+  
   /**
     * Human-readable description.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * If present, this parameter is marked for copying to and from the VM.
     * `LocalCopy` indicates where on the VM the file should be. The value given
@@ -71,47 +74,58 @@ trait SchemaPipelineParameter extends js.Object {
     * remote path where the file should be.
     */
   var localCopy: js.UndefOr[SchemaLocalCopy] = js.native
+  
   /**
     * Required. Name of the parameter - the pipeline runner uses this string as
     * the key to the input and output maps in RunPipeline.
     */
   var name: js.UndefOr[String] = js.native
 }
-
 object SchemaPipelineParameter {
+  
   @scala.inline
   def apply(): SchemaPipelineParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPipelineParameter]
   }
+  
   @scala.inline
   implicit class SchemaPipelineParameterOps[Self <: SchemaPipelineParameter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setLocalCopy(value: SchemaLocalCopy): Self = this.set("localCopy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLocalCopy: Self = this.set("localCopy", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
   }
-  
 }
-

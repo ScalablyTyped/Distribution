@@ -2,7 +2,7 @@ package typings.pixiJs.mod.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for DepthTexture.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class DepthResource ()
   extends typings.pixiJs.PIXI.resources.DepthResource
-

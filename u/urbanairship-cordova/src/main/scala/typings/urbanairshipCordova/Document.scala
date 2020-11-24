@@ -6,12 +6,13 @@ import typings.urbanairshipCordova.urbanairshipCordovaStrings.urbanairshipDotpus
 import typings.urbanairshipCordova.urbanairshipCordovaStrings.urbanairshipDotregistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Additional Document Events
 @js.native
 trait Document extends js.Object {
+  
   @JSName("addEventListener")
   def addEventListener_urbanairshippush(`type`: urbanairshipDotpush, listener: js.Function1[/* ev */ PushEvent, Unit]): Unit = js.native
   @JSName("addEventListener")
@@ -25,4 +26,3 @@ trait Document extends js.Object {
     useCapture: Boolean
   ): Unit = js.native
 }
-

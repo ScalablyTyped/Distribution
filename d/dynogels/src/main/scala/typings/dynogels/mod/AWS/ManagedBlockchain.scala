@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.managedblockchainMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ManagedBlockchain")
 @js.native
@@ -14,4 +14,3 @@ class ManagedBlockchain ()
   extends typings.awsSdk.mod.ManagedBlockchain {
   def this(options: ClientConfiguration) = this()
 }
-

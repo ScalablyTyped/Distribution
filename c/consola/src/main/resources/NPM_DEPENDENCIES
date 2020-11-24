@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "consola" : "2.14.0"
+      "consola" : "2.15.0"
     }
   ],
   "test-dependencies" : [
     {
-      "consola" : "2.14.0"
+      "consola" : "2.15.0"
     }
   ],
   "compile-devDependencies" : [

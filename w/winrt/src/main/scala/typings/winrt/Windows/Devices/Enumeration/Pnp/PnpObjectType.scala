@@ -2,14 +2,14 @@ package typings.winrt.Windows.Devices.Enumeration.Pnp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PnpObjectType extends js.Object
-
 @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectType")
 @js.native
 object PnpObjectType extends js.Object {
+  
   @js.native
   sealed trait device extends PnpObjectType
   
@@ -24,6 +24,4 @@ object PnpObjectType extends js.Object {
   
   @js.native
   sealed trait unknown extends PnpObjectType
-  
 }
-

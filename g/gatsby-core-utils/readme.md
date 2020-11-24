@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-core-utils
 
-Typings are for version 1.3.14
+Typings are for version 1.5.0
 
 ## Library description:
 A collection of gatsby utils used in different gatsby packages
@@ -10,9 +10,9 @@ A collection of gatsby utils used in different gatsby packages
 | ------------------ | :-------------: |
 | Full name          | gatsby-core-utils |
 | Keywords           | gatsby, gatsby-core-utils |
-| # releases         | 6 |
-| # dependents       | 12 |
-| # downloads        | 154350 |
+| # releases         | 85 |
+| # dependents       | 89 |
+| # downloads        | 24685601 |
 | # stars            | 0 |
 
 ## Links

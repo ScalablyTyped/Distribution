@@ -2,14 +2,17 @@ package typings.materialSelect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select/helper-text/constants", JSImport.Namespace)
 @js.native
 object helperTextConstantsMod extends js.Object {
+  
   @js.native
   object cssClasses extends js.Object {
+    
     var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    
     var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
   }
   
@@ -37,9 +40,9 @@ object helperTextConstantsMod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var ARIA_HIDDEN: String = js.native
+    
     var ROLE: String = js.native
   }
-  
 }
-

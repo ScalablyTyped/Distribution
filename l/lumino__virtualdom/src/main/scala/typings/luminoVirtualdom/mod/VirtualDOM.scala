@@ -4,11 +4,12 @@ import typings.std.HTMLElement
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/virtualdom", "VirtualDOM")
 @js.native
 object VirtualDOM extends js.Object {
+  
   def realize(node: VirtualElement): HTMLElement = js.native
   /**
     * Create a real DOM element from a virtual element node.
@@ -24,6 +25,7 @@ object VirtualDOM extends js.Object {
     * If virtual diffing is desired, use the `render` function instead.
     */
   def realize(node: VirtualText): Text = js.native
+  
   def render(content: js.Array[VirtualNode], host: HTMLElement): Unit = js.native
   def render(content: Null, host: HTMLElement): Unit = js.native
   /**
@@ -44,4 +46,3 @@ object VirtualDOM extends js.Object {
     */
   def render(content: VirtualNode, host: HTMLElement): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pi-camera
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 A very lightweight promise based Node.js wrapper for the native Raspberry Pi Camera CLI tools.
@@ -10,9 +10,9 @@ A very lightweight promise based Node.js wrapper for the native Raspberry Pi Cam
 | ------------------ | :-------------: |
 | Full name          | pi-camera |
 | Keywords           | Raspberry, Pi, Camera, Picture, Photo, Video, raspicam, raspistill, raspivid, picamera, pi-camera |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 3280 |
+| # downloads        | 3503 |
 | # stars            | 2 |
 
 ## Links

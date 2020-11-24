@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation")
 @js.native
@@ -21,28 +21,32 @@ class WebsiteCertificateAuthorityAssociation protected () extends CustomResource
     */
   def this(name: String, args: WebsiteCertificateAuthorityAssociationArgs) = this()
   def this(name: String, args: WebsiteCertificateAuthorityAssociationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The root certificate of the Certificate Authority.
     */
   val certificate: Output_[String] = js.native
+  
   /**
     * The certificate name to display.
     */
   val displayName: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The ARN of the fleet.
     */
   val fleetArn: Output_[String] = js.native
+  
   /**
     * A unique identifier for the Certificate Authority.
     */
   val websiteCaId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation")
 @js.native
 object WebsiteCertificateAuthorityAssociation extends js.Object {
+  
   /**
     * Get an existing WebsiteCertificateAuthorityAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -61,10 +65,10 @@ object WebsiteCertificateAuthorityAssociation extends js.Object {
     state: WebsiteCertificateAuthorityAssociationState,
     opts: CustomResourceOptions
   ): WebsiteCertificateAuthorityAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of WebsiteCertificateAuthorityAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean = js.native
 }
-

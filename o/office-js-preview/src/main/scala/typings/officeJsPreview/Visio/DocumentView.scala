@@ -8,7 +8,7 @@ import typings.officeJsPreview.Visio.Interfaces.DocumentViewUpdateData
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DocumentView extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_DocumentView: RequestContext = js.native
+  
   /**
     *
     * Disable Hyperlinks.
@@ -28,6 +30,7 @@ trait DocumentView extends ClientObject {
     * [Api set:  1.1]
     */
   var disableHyperlinks: Boolean = js.native
+  
   /**
     *
     * Disable Pan.
@@ -35,6 +38,7 @@ trait DocumentView extends ClientObject {
     * [Api set:  1.1]
     */
   var disablePan: Boolean = js.native
+  
   /**
     *
     * Disable PanZoomWindow.
@@ -42,6 +46,7 @@ trait DocumentView extends ClientObject {
     * [Api set:  1.1]
     */
   var disablePanZoomWindow: Boolean = js.native
+  
   /**
     *
     * Disable Zoom.
@@ -49,6 +54,7 @@ trait DocumentView extends ClientObject {
     * [Api set:  1.1]
     */
   var disableZoom: Boolean = js.native
+  
   /**
     *
     * Hide Diagram Boundary.
@@ -56,6 +62,7 @@ trait DocumentView extends ClientObject {
     * [Api set:  1.1]
     */
   var hideDiagramBoundary: Boolean = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -76,6 +83,7 @@ trait DocumentView extends ClientObject {
   def load(option: js.Array[String]): DocumentView = js.native
   def load(option: DocumentViewLoadOptions): DocumentView = js.native
   def load(option: Expand): DocumentView = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DocumentView): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -91,10 +99,10 @@ trait DocumentView extends ClientObject {
     */
   def set(properties: DocumentViewUpdateData): Unit = js.native
   def set(properties: DocumentViewUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.DocumentView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentViewData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): DocumentViewData = js.native
 }
-

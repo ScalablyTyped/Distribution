@@ -4,10 +4,9 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("formik/dist/FastField", "FastField")
 @js.native
 object FastField
   extends TopLevel[ComponentType[js.Any]]
-

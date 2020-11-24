@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.cloudhsmMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CloudHSM")
 @js.native
@@ -14,4 +14,3 @@ class CloudHSM ()
   extends typings.awsSdk.allMod.CloudHSM {
   def this(options: ClientConfiguration) = this()
 }
-

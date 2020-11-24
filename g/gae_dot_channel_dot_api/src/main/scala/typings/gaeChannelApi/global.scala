@@ -2,15 +2,18 @@ package typings.gaeChannelApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object goog extends js.Object {
+    
     @js.native
     object appengine extends js.Object {
+      
       @js.native
       class Channel protected ()
         extends typings.gaeChannelApi.goog.appengine.Channel {
@@ -24,10 +27,6 @@ object global extends js.Object {
       @js.native
       class Socket ()
         extends typings.gaeChannelApi.goog.appengine.Socket
-      
     }
-    
   }
-  
 }
-

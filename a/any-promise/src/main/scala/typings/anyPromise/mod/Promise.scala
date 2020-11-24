@@ -2,10 +2,11 @@ package typings.anyPromise.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Promise[R] extends Thenable[R] {
+  
   /**
     * Sugar for promise.then(undefined, onRejected)
     *
@@ -14,4 +15,3 @@ trait Promise[R] extends Thenable[R] {
   def `catch`[U](): Promise[U] = js.native
   def `catch`[U](onRejected: js.Function1[/* error */ js.Any, U | Thenable[U]]): Promise[U] = js.native
 }
-

@@ -2,18 +2,19 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/observable/IfObservable", JSImport.Namespace)
 @js.native
 object ifObservableMod extends js.Object {
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
   class IfObservable[T] () extends js.Object
-  
   /* static members */
   @js.native
   object IfObservable extends js.Object {
+    
     def create[T, R](condition: js.Function0[Boolean | Unit]): js.Any = js.native
     def create[T, R](
       condition: js.Function0[Boolean | Unit],
@@ -43,6 +44,4 @@ object ifObservableMod extends js.Object {
     ): js.Any = js.native
     def create[T, R](condition: js.Function0[Boolean | Unit], thenSource: Unit, elseSource: Unit): js.Any = js.native
   }
-  
 }
-

@@ -7,20 +7,19 @@ import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IManager
   extends typings.jupyterlabServices.basemanagerMod.IManager {
-  /**
-    * A signal emitted when the running terminals change.
-    */
-  var runningChanged: ISignal[IManager, js.Array[IModel]] = js.native
+  
   def connectTo(options: OmitIOptionsserverSettingModel): ITerminalConnection = js.native
+  
   /**
     * Whether the terminal service is available.
     */
   def isAvailable(): Boolean = js.native
+  
   /**
     * Force a refresh of the running terminal sessions.
     *
@@ -31,12 +30,19 @@ trait IManager
     * manager maintains its own internal state.
     */
   def refreshRunning(): js.Promise[Unit] = js.native
+  
   /**
     * Create an iterator over the known running terminals.
     *
     * @returns A new iterator over the running terminals.
     */
   def running(): IIterator[IModel] = js.native
+  
+  /**
+    * A signal emitted when the running terminals change.
+    */
+  var runningChanged: ISignal[IManager, js.Array[IModel]] = js.native
+  
   /**
     * Shut down a terminal session by name.
     *
@@ -45,12 +51,14 @@ trait IManager
     * @returns A promise that resolves when the session is shut down.
     */
   def shutdown(name: String): js.Promise[Unit] = js.native
+  
   /**
     * Shut down all terminal sessions.
     *
     * @returns A promise that resolves when all of the sessions are shut down.
     */
   def shutdownAll(): js.Promise[Unit] = js.native
+  
   /**
     * Create a new terminal session.
     *
@@ -64,4 +72,3 @@ trait IManager
   def startNew(): js.Promise[ITerminalConnection] = js.native
   def startNew(options: IOptions): js.Promise[ITerminalConnection] = js.native
 }
-

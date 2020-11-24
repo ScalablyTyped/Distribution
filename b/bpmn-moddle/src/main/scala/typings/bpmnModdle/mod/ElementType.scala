@@ -2,7 +2,7 @@ package typings.bpmnModdle.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.bpmnModdle.bpmnModdleStrings.bpmnColonInterface
@@ -170,4 +170,3 @@ import scala.scalajs.js.annotation._
   - typings.bpmnModdle.bpmnModdleStrings.biocColonColoredEdge
 */
 trait ElementType extends js.Object
-

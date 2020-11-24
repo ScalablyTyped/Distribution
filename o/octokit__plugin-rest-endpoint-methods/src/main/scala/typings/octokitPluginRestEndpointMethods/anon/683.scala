@@ -3,46 +3,52 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.GistsListForUserEndpoint
-import typings.octokitTypes.endpointsMod.GistsListForUserResponseData
+import typings.octokitTypes.endpointsMod.GistsGetEndpoint
+import typings.octokitTypes.endpointsMod.GistsGetResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `683` extends js.Object {
-  var parameters: RequestParameters with (Omit[GistsListForUserEndpoint, baseUrl | headers | mediaType]) = js.native
-  var response: OctokitResponse[GistsListForUserResponseData] = js.native
+  
+  var parameters: RequestParameters with (Omit[GistsGetEndpoint, baseUrl | headers | mediaType]) = js.native
+  
+  var response: OctokitResponse[GistsGetResponseData] = js.native
 }
-
 object `683` {
+  
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[GistsListForUserEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[GistsListForUserResponseData]
+    parameters: RequestParameters with (Omit[GistsGetEndpoint, baseUrl | headers | mediaType]),
+    response: OctokitResponse[GistsGetResponseData]
   ): `683` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`683`]
   }
+  
   @scala.inline
   implicit class `683Ops`[Self <: `683`] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setParameters(value: RequestParameters with (Omit[GistsListForUserEndpoint, baseUrl | headers | mediaType])): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: RequestParameters with (Omit[GistsGetEndpoint, baseUrl | headers | mediaType])): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setResponse(value: OctokitResponse[GistsListForUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[GistsGetResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
   }
-  
 }
-

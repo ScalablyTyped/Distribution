@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Advertiserlandingpages")
 @js.native
 class ResourceAdvertiserlandingpages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.advertiserLandingPages.get
     * @desc Gets one landing page by ID.
@@ -42,6 +44,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLandingPage]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserLandingPages.insert
     * @desc Inserts a new landing page.
@@ -74,6 +77,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLandingPage]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserLandingPages.list
     * @desc Retrieves a list of landing pages.
@@ -115,6 +119,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiserLandingPagesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserLandingPages.patch
     * @desc Updates an existing landing page. This method supports patch
@@ -149,6 +154,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLandingPage]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserLandingPages.update
     * @desc Updates an existing landing page.
@@ -182,4 +188,3 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLandingPage]
   ): Unit = js.native
 }
-

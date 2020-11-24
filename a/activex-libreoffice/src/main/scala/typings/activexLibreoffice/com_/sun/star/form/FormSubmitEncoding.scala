@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specify the MIME encoding to be used when form data is submitted. */
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait FormSubmitEncoding extends js.Object
-
 object FormSubmitEncoding {
+  
   /**
     * Specifies to use "multipart/form-data" as submit encoding.
     *
@@ -23,6 +23,7 @@ object FormSubmitEncoding {
     */
   @scala.inline
   def MULTIPART: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * specifies to use "text/plain"
     *
@@ -30,6 +31,7 @@ object FormSubmitEncoding {
     */
   @scala.inline
   def TEXT: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * When the button is clicked, an URL set for the button is opened.
     * @see com.sun.star.form.component.CommandButton.TargetURL
@@ -38,4 +40,3 @@ object FormSubmitEncoding {
   @scala.inline
   def URL: `0` = 0.asInstanceOf[`0`]
 }
-

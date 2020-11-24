@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 import typings.winrtUwp.Windows.Devices.Sensors.ISensorDataThreshold
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that responds when a threshold limit for a sensor is crossed. */
 @JSGlobal("Windows.ApplicationModel.Background.SensorDataThresholdTrigger")
@@ -16,4 +16,3 @@ class SensorDataThresholdTrigger protected ()
     */
   def this(threshold: ISensorDataThreshold) = this()
 }
-

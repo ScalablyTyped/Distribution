@@ -4,17 +4,13 @@ import typings.datatablesNet.JQuery
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowMethods
   extends CoreMethods
      with CommonRowMethod {
-  /**
-    * Order Methods / object
-    */
-  @JSName("child")
-  var child_Original: RowChildMethodModel = js.native
+  
   /**
     * Get the child row(s) that have been set for a parent row
     */
@@ -49,6 +45,12 @@ trait RowMethods
     */
   def child(showRemove: Boolean): RowChildMethods = js.native
   /**
+    * Order Methods / object
+    */
+  @JSName("child")
+  var child_Original: RowChildMethodModel = js.native
+  
+  /**
     * Get the data for the selected row
     */
   def data(): js.Array[_] | js.Object = js.native
@@ -59,6 +61,7 @@ trait RowMethods
     */
   def data(d: js.Array[_]): Api = js.native
   def data(d: js.Object): Api = js.native
+  
   /**
     * Get the id of the selected row. Since: 1.10.8
     *
@@ -68,17 +71,19 @@ trait RowMethods
     */
   def id(): String = js.native
   def id(hash: Boolean): String = js.native
+  
   /**
     * Get the row index of the row column.
     */
   def index(): Double = js.native
+  
   /**
     * Obtain the tr node for the selected row
     */
   def node(): Node = js.native
+  
   /**
     * Delete the selected row from the DataTable.
     */
   def remove(): Node = js.native
 }
-

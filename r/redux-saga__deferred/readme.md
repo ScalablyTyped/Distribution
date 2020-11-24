@@ -12,7 +12,7 @@ Helper for creating "exposed" promise object (with resolve & reject methods).
 | Keywords           | promise, resolve, reject, defer |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 8828094 |
+| # downloads        | 18928625 |
 | # stars            | 0 |
 
 ## Links

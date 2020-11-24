@@ -2,11 +2,12 @@ package typings.postcss.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss", "plugin")
 @js.native
 object plugin extends js.Object {
+  
   /**
     * Creates a PostCSS plugin with a standard API.
     * @param name Plugin name. Same as in name property in package.json. It will
@@ -16,4 +17,3 @@ object plugin extends js.Object {
     */
   def apply[T](name: String, initializer: PluginInitializer[T]): Plugin_[T] = js.native
 }
-

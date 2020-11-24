@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is the collection of all {@link TextFrame} instances within a context (e.g. a document). */
 @js.native
@@ -16,8 +16,8 @@ trait TextFrames
   extends XNameAccess
      with XIndexAccess
      with XContainer
-
 object TextFrames {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -40,4 +40,3 @@ object TextFrames {
     __obj.asInstanceOf[TextFrames]
   }
 }
-

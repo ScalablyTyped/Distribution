@@ -7,7 +7,7 @@ import typings.phaser.Phaser.Types.Scenes.SettingsObject
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Gamepad Plugin is an input plugin that belongs to the Scene-owned Input system.
@@ -45,15 +45,39 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GamepadPlugin extends EventEmitter {
+  
+  /**
+    * Disconnects all current Gamepads.
+    */
+  def disconnectAll(): Unit = js.native
+  
   /**
     * A boolean that controls if the Gamepad Manager is enabled or not.
     * Can be toggled on the fly.
     */
   var enabled: Boolean = js.native
+  
   /**
     * An array of the connected Gamepads.
     */
   var gamepads: js.Array[typings.phaser.Phaser.Input.Gamepad.Gamepad] = js.native
+  
+  /**
+    * Returns an array of all currently connected Gamepads.
+    */
+  def getAll(): js.Array[typings.phaser.Phaser.Input.Gamepad.Gamepad] = js.native
+  
+  /**
+    * Looks-up a single Gamepad based on the given index value.
+    * @param index The index of the Gamepad to get.
+    */
+  def getPad(index: Double): typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+  
+  /**
+    * Checks to see if both this plugin and the Scene to which it belongs is active.
+    */
+  def isActive(): Boolean = js.native
+  
   /**
     * A reference to the first connected Gamepad.
     * 
@@ -62,6 +86,7 @@ trait GamepadPlugin extends EventEmitter {
     * is plugged in, but hasn't yet had any buttons pressed on it.
     */
   var pad1: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+  
   /**
     * A reference to the second connected Gamepad.
     * 
@@ -70,6 +95,7 @@ trait GamepadPlugin extends EventEmitter {
     * is plugged in, but hasn't yet had any buttons pressed on it.
     */
   var pad2: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+  
   /**
     * A reference to the third connected Gamepad.
     * 
@@ -78,6 +104,7 @@ trait GamepadPlugin extends EventEmitter {
     * is plugged in, but hasn't yet had any buttons pressed on it.
     */
   var pad3: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+  
   /**
     * A reference to the fourth connected Gamepad.
     * 
@@ -86,43 +113,30 @@ trait GamepadPlugin extends EventEmitter {
     * is plugged in, but hasn't yet had any buttons pressed on it.
     */
   var pad4: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+  
   /**
     * A reference to the Scene that this Input Plugin is responsible for.
     */
   var scene: Scene = js.native
+  
   /**
     * A reference to the Scene Input Plugin that created this Keyboard Plugin.
     */
   var sceneInputPlugin: InputPlugin = js.native
+  
   /**
     * A reference to the Scene Systems Settings.
     */
   var settings: SettingsObject = js.native
+  
   /**
     * The Gamepad Event target, as defined in the Game Config.
     * Typically the browser window, but can be any interactive DOM element.
     */
   var target: js.Any = js.native
+  
   /**
     * The total number of connected game pads.
     */
   var total: integer = js.native
-  /**
-    * Disconnects all current Gamepads.
-    */
-  def disconnectAll(): Unit = js.native
-  /**
-    * Returns an array of all currently connected Gamepads.
-    */
-  def getAll(): js.Array[typings.phaser.Phaser.Input.Gamepad.Gamepad] = js.native
-  /**
-    * Looks-up a single Gamepad based on the given index value.
-    * @param index The index of the Gamepad to get.
-    */
-  def getPad(index: Double): typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
-  /**
-    * Checks to see if both this plugin and the Scene to which it belongs is active.
-    */
-  def isActive(): Boolean = js.native
 }
-

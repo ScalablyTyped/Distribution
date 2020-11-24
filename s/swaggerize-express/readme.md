@@ -10,9 +10,9 @@ Design-driven apis with swagger 2.0 and express.
 | ------------------ | :-------------: |
 | Full name          | swaggerize-express |
 | Keywords           | swagger, swagger 2.0, swagger-node, swagger-express, swagger-ui, express, node, node.js, rest, restful, service, api |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 109831 |
+| # downloads        | 58045 |
 | # stars            | 9 |
 
 ## Links

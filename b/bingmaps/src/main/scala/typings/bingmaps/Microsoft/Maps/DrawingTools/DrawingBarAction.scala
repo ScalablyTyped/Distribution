@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.DrawingTools
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DrawingBarAction extends js.Object
-
 @JSGlobal("Microsoft.Maps.DrawingTools.DrawingBarAction")
 @js.native
 object DrawingBarAction extends js.Object {
+  
   /** All items */
   @js.native
   sealed trait all extends DrawingBarAction
@@ -53,6 +53,4 @@ object DrawingBarAction extends js.Object {
   /** All shape styling items */
   @js.native
   sealed trait styleShapes extends DrawingBarAction
-  
 }
-

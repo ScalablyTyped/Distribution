@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.ScrollBar")
 @js.native
@@ -14,4 +14,3 @@ object ScrollBar
   * @param parent A DOM element
   **/
 Instantiable1[/* parent */ HTMLElement, typings.ace.AceAjax.ScrollBar]
-

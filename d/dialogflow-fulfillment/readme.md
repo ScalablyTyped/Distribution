@@ -10,9 +10,9 @@ Dialogflow Fulfillment Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | dialogflow-fulfillment |
 | Keywords           | dialogflow, api.ai, client library, webhook, fulfillment |
-| # releases         | 9 |
-| # dependents       | 5 |
-| # downloads        | 527889 |
+| # releases         | 3 |
+| # dependents       | 7 |
+| # downloads        | 1120274 |
 | # stars            | 0 |
 
 ## Links

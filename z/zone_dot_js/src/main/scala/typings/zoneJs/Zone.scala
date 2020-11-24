@@ -2,7 +2,7 @@ package typings.zoneJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Suppress closure compiler errors about unknown 'global' variable
@@ -132,15 +132,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Zone extends js.Object {
-  /**
-    * @returns {string} The Zone name (useful for debugging)
-    */
-  var name: String = js.native
-  /**
-    *
-    * @returns {Zone} The parent Zone.
-    */
-  var parent: Zone | Null = js.native
+  
   /**
     * Allows the zone to intercept canceling of scheduled Task.
     *
@@ -151,6 +143,7 @@ trait Zone extends js.Object {
     * @returns {any}
     */
   def cancelTask(task: Task): js.Any = js.native
+  
   /**
     * Used to create a child zone.
     *
@@ -158,6 +151,7 @@ trait Zone extends js.Object {
     * @returns {Zone} A new child zone.
     */
   def fork(zoneSpec: ZoneSpec): Zone = js.native
+  
   /**
     * Returns a value associated with the `key`.
     *
@@ -168,6 +162,7 @@ trait Zone extends js.Object {
     * @returns {any} The value for the key, or `undefined` if not found.
     */
   def get(key: String): js.Any = js.native
+  
   /**
     * Returns a Zone which defines a `key`.
     *
@@ -177,6 +172,18 @@ trait Zone extends js.Object {
     * @returns {Zone} The Zone which defines the `key`, `null` if not found.
     */
   def getZoneWith(key: String): Zone | Null = js.native
+  
+  /**
+    * @returns {string} The Zone name (useful for debugging)
+    */
+  var name: String = js.native
+  
+  /**
+    *
+    * @returns {Zone} The parent Zone.
+    */
+  var parent: Zone | Null = js.native
+  
   /**
     * Invokes a function in a given zone.
     *
@@ -206,6 +213,7 @@ trait Zone extends js.Object {
   def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.UndefOr[scala.Nothing], source: String): T = js.native
   def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_], source: String): T = js.native
+  
   /**
     * Invokes a function in a given zone and catches any exceptions.
     *
@@ -238,18 +246,20 @@ trait Zone extends js.Object {
   def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.UndefOr[scala.Nothing], source: String): T = js.native
   def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_], source: String): T = js.native
+  
   /**
     * Execute the Task by restoring the [Zone.currentTask] in the Task's zone.
     *
     * @param task to run
     * @param applyThis
     * @param applyArgs
-    * @returns {*}
+    * @returns {any} Value from the `task.callback` function.
     */
-  def runTask(task: Task): js.Any = js.native
-  def runTask(task: Task, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Any): js.Any = js.native
-  def runTask(task: Task, applyThis: js.Any): js.Any = js.native
-  def runTask(task: Task, applyThis: js.Any, applyArgs: js.Any): js.Any = js.native
+  def runTask[T](task: Task): T = js.native
+  def runTask[T](task: Task, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Any): T = js.native
+  def runTask[T](task: Task, applyThis: js.Any): T = js.native
+  def runTask[T](task: Task, applyThis: js.Any, applyArgs: js.Any): T = js.native
+  
   /**
     * Schedule an EventTask.
     *
@@ -301,6 +311,7 @@ trait Zone extends js.Object {
     customSchedule: js.Function1[/* task */ Task, Unit],
     customCancel: js.Function1[/* task */ Task, Unit]
   ): EventTask = js.native
+  
   /**
     * Schedule a MacroTask.
     *
@@ -352,6 +363,7 @@ trait Zone extends js.Object {
     customSchedule: js.Function1[/* task */ Task, Unit],
     customCancel: js.Function1[/* task */ Task, Unit]
   ): MacroTask = js.native
+  
   /**
     * Schedule a MicroTask.
     *
@@ -374,6 +386,7 @@ trait Zone extends js.Object {
     data: TaskData,
     customSchedule: js.Function1[/* task */ Task, Unit]
   ): MicroTask = js.native
+  
   /**
     * Schedule an existing Task.
     *
@@ -382,6 +395,7 @@ trait Zone extends js.Object {
     * @param task
     */
   def scheduleTask[T /* <: Task */](task: T): T = js.native
+  
   /**
     * Wraps a callback function in a new function which will properly restore the current zone upon
     * invocation.
@@ -397,4 +411,3 @@ trait Zone extends js.Object {
     */
   def wrap[F /* <: js.Function */](callback: F, source: String): F = js.native
 }
-

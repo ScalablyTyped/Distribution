@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to control a sprite object.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSprite extends XInterface {
+  
   /**
     * Apply a clipping to the shape output.
     *
@@ -34,12 +35,14 @@ trait XSprite extends XInterface {
     * @param aClip The clip poly-polygon to apply.
     */
   def clip(aClip: XPolyPolygon2D): Unit = js.native
+  
   /**
     * Make the sprite invisible.
     *
     * This method makes the sprite invisible.
     */
   def hide(): Unit = js.native
+  
   /**
     * Move sprite to the specified position.
     *
@@ -54,6 +57,7 @@ trait XSprite extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
   def move(aNewPos: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit = js.native
+  
   /**
     * Set overall transparency of the sprite.
     *
@@ -65,6 +69,7 @@ trait XSprite extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if nAlpha is not within the permissible range.
     */
   def setAlpha(nAlpha: Double): Unit = js.native
+  
   /**
     * Set sprite priority.
     *
@@ -73,12 +78,14 @@ trait XSprite extends XInterface {
     * @param nPriority New sprite priority value to serve as the sort key when determining sprite rendering order. Avoid NaNs and other irregular floating poi
     */
   def setPriority(nPriority: Double): Unit = js.native
+  
   /**
     * Make the sprite visible.
     *
     * This method makes the sprite visible on the canvas it was created on.
     */
   def show(): Unit = js.native
+  
   /**
     * Apply a local transformation to the sprite.
     *
@@ -95,8 +102,8 @@ trait XSprite extends XInterface {
     */
   def transform(aTransformation: AffineMatrix2D): Unit = js.native
 }
-
 object XSprite {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -113,32 +120,41 @@ object XSprite {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), clip = js.Any.fromFunction1(clip), hide = js.Any.fromFunction0(hide), move = js.Any.fromFunction3(move), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAlpha = js.Any.fromFunction1(setAlpha), setPriority = js.Any.fromFunction1(setPriority), show = js.Any.fromFunction0(show), transform = js.Any.fromFunction1(transform))
     __obj.asInstanceOf[XSprite]
   }
+  
   @scala.inline
   implicit class XSpriteOps[Self <: XSprite] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClip(value: XPolyPolygon2D => Unit): Self = this.set("clip", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setMove(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = this.set("move", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setSetAlpha(value: Double => Unit): Self = this.set("setAlpha", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetPriority(value: Double => Unit): Self = this.set("setPriority", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setTransform(value: AffineMatrix2D => Unit): Self = this.set("transform", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object providing access to an ASPxClientWeeklyRecurrenceControl's editor values.
   */
 @js.native
 trait WeeklyRecurrenceValuesAccessor extends DefaultRecurrenceRuleValuesAccessor
-
 object WeeklyRecurrenceValuesAccessor {
+  
   @scala.inline
   def apply(
     GetDayNumber: () => Double,
@@ -23,4 +23,3 @@ object WeeklyRecurrenceValuesAccessor {
     __obj.asInstanceOf[WeeklyRecurrenceValuesAccessor]
   }
 }
-

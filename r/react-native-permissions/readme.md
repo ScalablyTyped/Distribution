@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-permissions
 
-Typings are for version 2.1.5
+Typings are for version 3.0.0-beta.2
 
 ## Library description:
 An unified permissions API for React Native on iOS and Android
@@ -9,10 +9,10 @@ An unified permissions API for React Native on iOS and Android
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-permissions |
-| Keywords           | react-native, react native, permission, authorization |
-| # releases         | 16 |
-| # dependents       | 31 |
-| # downloads        | 2831945 |
+| Keywords           | react-native, react native, react-native-windows, permission, authorization |
+| # releases         | 27 |
+| # dependents       | 49 |
+| # downloads        | 4908949 |
 | # stars            | 2 |
 
 ## Links

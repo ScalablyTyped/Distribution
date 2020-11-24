@@ -3,11 +3,11 @@ package typings.sailthruClient.mod
 import typings.sailthruClient.anon.Limit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SailthruClient extends js.Object {
-  var logging: Boolean = js.native
+  
   /**
     * Perform an arbitrary API DELETE request to Sailthru.
     * @param action the API endpoint to send a request to
@@ -16,6 +16,7 @@ trait SailthruClient extends js.Object {
     */
   def apiDelete(action: String, data: js.Object): Unit = js.native
   def apiDelete(action: String, data: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Perform an arbitrary API GET request to Sailthru.
     * @param action the API endpoint to send a request to
@@ -23,6 +24,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def apiGet(action: String, data: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Perform an arbitrary API POST request to Sailthru.
     * @param action the API endpoint to send a request to
@@ -38,6 +40,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def apiPost(action: String, data: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Perform multipart API POST request to Sailthru
     * @param action the API endpoint to send a request to
@@ -46,6 +49,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def apiPostMultiPart(action: String, data: js.Object, binary_data_param: js.Array[String], callback: SailthruCallback): RestlerResult = js.native
+  
   /**
     * Cancel a campaign which is currently sending, by blast ID. This cannot be undone.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -53,12 +57,14 @@ trait SailthruClient extends js.Object {
     */
   def cancelBlast(blastId: String, callback: SailthruCallback): Unit = js.native
   def cancelBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Cancels the scheduled send which is identified by “send_id”. Note that you can only cancel sends which were scheduled in the future with the “schedule_time” parameters.
     * @param send_id the send ID which was in the response of a previous send call
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def cancelSend(send_id: String, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Delete a previously created campaign, by blast ID. This cannot be undone.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -66,26 +72,31 @@ trait SailthruClient extends js.Object {
     */
   def deleteBlast(blastId: String, callback: SailthruCallback): Unit = js.native
   def deleteBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Delete a list from your account, and remove all record of it from your user profiles. This cannot be undone.
     * @param list the name of an existing list in your account
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def deleteList(list: String, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Delete a template from your account. This cannot be undone.
     * @param template the name of the template
     * @param callbacka standard callback function which will be invoked after the API server responds
     */
   def deleteTemplate(template: String, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Disable Logging
     */
   def disableLogging(): Unit = js.native
+  
   /**
     * Enable Logging
     */
   def enableLogging(): Unit = js.native
+  
   /**
     * Looks up the details about a particular campaign, using blast ID.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -93,29 +104,34 @@ trait SailthruClient extends js.Object {
     */
   def getBlast(blastId: String, callback: SailthruCallback): Unit = js.native
   def getBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Fetch the status of a job
     * @param job the job ID which was returned from a previous job POST
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def getJobStatus(job: String, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Retrieve the last known rate limit information for the given action / method combination
     * @param action API action to get rate limit information
     * @param method API method to get rate limit information
     */
   def getLastRateLimitInfo(action: String, method: String): Limit = js.native
+  
   /**
     * Return a list of all the lists in your account.
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def getLists(callback: SailthruCallback): Unit = js.native
+  
   /**
     * Looks up the delivery status of a particular send, by its “send_id”.
     * @param send_id the send ID which was in the response of a previous send call
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def getSend(send_id: String, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Return a user profile by looking up via a given key and ID.
     * @param id the id for a given user
@@ -131,12 +147,16 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def getUserByKey(id: String, key: String, fields: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Return a user profile by looking up via a Sailthru ID (sid).
     * @param sid the sailthru id for a given user
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def getUserBySid(sid: String, callback: SailthruCallback): Unit = js.native
+  
+  var logging: Boolean = js.native
+  
   /**
     * Send a message to each of the “emails” specified, using the given “template”.
     * @param template Name of the template to use as the basis for the message content
@@ -154,6 +174,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def multiSend(template: String, emails: js.Array[String], options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Pause a currently sending created campaign, by blast ID.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -161,6 +182,7 @@ trait SailthruClient extends js.Object {
     */
   def pauseBlast(blastId: String, callback: SailthruCallback): Unit = js.native
   def pauseBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Create a new job with specific options.
     * @param job the name of the job to create
@@ -214,6 +236,7 @@ trait SailthruClient extends js.Object {
     postback_url: String,
     callback: SailthruCallback
   ): Unit = js.native
+  
   /**
     * Record a purchase into the Sailthru system.
     * @param email the email of the user who made the purchase
@@ -229,6 +252,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def purchase(email: String, items: js.Array[PurchaseItem], options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Create a new content item.
     * @param title the name of the content item being created
@@ -244,7 +268,9 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def pushContent(title: String, url: String, options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   def receiveOptoutPost(): Unit = js.native
+  
   /**
     * Resume a previously paused campaign, by blast ID.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -252,6 +278,7 @@ trait SailthruClient extends js.Object {
     */
   def resumeBlast(blastId: String, callback: SailthruCallback): Unit = js.native
   def resumeBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Create or update a template with the given name
     * @param template the name of the template
@@ -259,6 +286,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def saveTemplate(template: String, options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Revert a template to one of its previous revisions.
     * @param template the name of the template
@@ -266,6 +294,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def saveTemplateFromRevision(template: String, revision_id: String, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Update a user profile.
     * @param id the id for a given user
@@ -274,6 +303,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def saveUserByKey(id: String, key: String, options: js.Object, callback: SailthruCallback): Unit | RestlerResult = js.native
+  
   /**
     * Update a user profile.
     * @param sid the sailthru id for a given user
@@ -281,6 +311,7 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def saveUserBySid(sid: String, options: js.Object, callback: SailthruCallback): Unit | RestlerResult = js.native
+  
   /**
     * Schedule a new campaign.
     * @param name the name for the campaign, which will be used to identify it in Campaign Reporting
@@ -329,6 +360,7 @@ trait SailthruClient extends js.Object {
     options: js.Object,
     callback: SailthruCallback
   ): Unit = js.native
+  
   /**
     * Modify an existing campaign by setting any field.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -346,6 +378,7 @@ trait SailthruClient extends js.Object {
   def scheduleBlastFromBlast(blastId: String, scheduleTime: String, options: js.Object, callback: SailthruCallback): Unit = js.native
   def scheduleBlastFromBlast(blastId: Double, scheduleTime: String, callback: SailthruCallback): Unit = js.native
   def scheduleBlastFromBlast(blastId: Double, scheduleTime: String, options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Modify an existing campaign by copying data into it from a Template, and then scheduling it.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -381,6 +414,7 @@ trait SailthruClient extends js.Object {
     options: js.Object,
     callback: SailthruCallback
   ): Unit = js.native
+  
   /**
     * Send a single message to email, using the given template.
     * @param template Name of the template to use as the basis for the message content
@@ -397,24 +431,28 @@ trait SailthruClient extends js.Object {
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def send(template: String, email: String, options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Fetch stats for any part of Sailthru.
     * @param data provide stats API options, as outlined in the stats GET documentation
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def stats(data: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Fetch stats for a campaign send, or aggregate campaign data over a time period.
     * @param options provide stats API options, as outlined in the stats GET documentation
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def statsBlast(options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Fetch stats for a List within Sailthru.
     * @param options provide stats API options, as outlined in the stats GET documentation
     * @param callback a standard callback function which will be invoked after the API server responds
     */
   def statsList(options: js.Object, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Unschedule a previously scheduled campaign, by blast ID.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -422,6 +460,7 @@ trait SailthruClient extends js.Object {
     */
   def unscheduleBlast(blastId: String, callback: SailthruCallback): Unit = js.native
   def unscheduleBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
+  
   /**
     * Modify an existing campaign by setting any field.
     * @param blastId the blast ID which was in the response of a previous blast call
@@ -438,4 +477,3 @@ trait SailthruClient extends js.Object {
   def updateBlast(blastId: Double, callback: SailthruCallback): Unit = js.native
   def updateBlast(blastId: Double, options: js.Object, callback: SailthruCallback): Unit = js.native
 }
-

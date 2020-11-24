@@ -3,11 +3,12 @@ package typings.emberDataSerializer
 import typings.emberData.mod.DS.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember-data/serializer/transform", JSImport.Namespace)
 @js.native
 object transformMod extends js.Object {
+  
   /**
     * The `DS.Transform` class is used to serialize and deserialize model
     * attributes when they are saved or loaded from an
@@ -17,6 +18,4 @@ object transformMod extends js.Object {
     */
   @js.native
   class default () extends Transform
-  
 }
-

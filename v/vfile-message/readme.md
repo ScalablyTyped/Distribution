@@ -4,15 +4,15 @@
 Typings are for version 2.0.4
 
 ## Library description:
-Create a virtual message
+vfile utility to create a virtual message
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vfile-message |
-| Keywords           | vfile, virtual, message |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 111669538 |
+| Keywords           | vfile, vfile-util, util, utility, virtual, file, message |
+| # releases         | 9 |
+| # dependents       | 17 |
+| # downloads        | 172356263 |
 | # stars            | 0 |
 
 ## Links

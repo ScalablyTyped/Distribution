@@ -10,9 +10,9 @@ A module provides upload, download, and files access API. Supports file stream r
 | ------------------ | :-------------: |
 | Full name          | rn-fetch-blob |
 | Keywords           | react-native, fetch, blob, fs, upload, file, download, filestream, image header |
-| # releases         | 14 |
-| # dependents       | 41 |
-| # downloads        | 2268172 |
+| # releases         | 8 |
+| # dependents       | 81 |
+| # downloads        | 3917526 |
 | # stars            | 0 |
 
 ## Links

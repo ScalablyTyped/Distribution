@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DeviceTriggerResult extends js.Object
-
 /** Indicates whether the device background task operation was allowed or denied, and if it was denied specifies the reason. */
 @JSGlobal("Windows.ApplicationModel.Background.DeviceTriggerResult")
 @js.native
 object DeviceTriggerResult extends js.Object {
+  
   /** The device background task was triggered. */
   @js.native
   sealed trait allowed extends DeviceTriggerResult
@@ -26,6 +26,4 @@ object DeviceTriggerResult extends js.Object {
   /** The device background task cannot run because the battery is low. */
   @js.native
   sealed trait lowBattery extends DeviceTriggerResult
-  
 }
-

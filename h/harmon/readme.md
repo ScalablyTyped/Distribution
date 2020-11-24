@@ -10,9 +10,9 @@ A piece of middleware for node-http-proxy that allows you to modify the remote s
 | ------------------ | :-------------: |
 | Full name          | harmon |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 121413 |
+| # downloads        | 171495 |
 | # stars            | 1 |
 
 ## Links

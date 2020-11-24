@@ -12,7 +12,7 @@ import typings.node.nodeStrings.session
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tls", "TLSSocket")
 @js.native
@@ -22,25 +22,7 @@ class TLSSocket protected () extends Socket {
     */
   def this(socket: Socket) = this()
   def this(socket: Socket, options: TLSSocketOptions) = this()
-  /**
-    * String containing the selected ALPN protocol.
-    * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
-    */
-  var alpnProtocol: js.UndefOr[String] = js.native
-  /**
-    * The reason why the peer's certificate has not been verified.
-    * This property becomes available only when tlsSocket.authorized === false.
-    */
-  var authorizationError: Error = js.native
-  /**
-    * A boolean that is true if the peer certificate was signed by one of the specified CAs, otherwise false.
-    */
-  var authorized: Boolean = js.native
-  /**
-    * Static boolean value, always true.
-    * May be used to distinguish TLS sockets from regular ones.
-    */
-  var encrypted: Boolean = js.native
+  
   @JSName("addListener")
   def addListener_OCSPResponse(event: OCSPResponse, listener: js.Function1[/* response */ Buffer, Unit]): this.type = js.native
   @JSName("addListener")
@@ -49,12 +31,31 @@ class TLSSocket protected () extends Socket {
   def addListener_secureConnect(event: secureConnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_session(event: session, listener: js.Function1[/* session */ Buffer, Unit]): this.type = js.native
+  
+  /**
+    * String containing the selected ALPN protocol.
+    * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
+    */
+  var alpnProtocol: js.UndefOr[String] = js.native
+  
+  /**
+    * The reason why the peer's certificate has not been verified.
+    * This property becomes available only when tlsSocket.authorized === false.
+    */
+  var authorizationError: Error = js.native
+  
+  /**
+    * A boolean that is true if the peer certificate was signed by one of the specified CAs, otherwise false.
+    */
+  var authorized: Boolean = js.native
+  
   /**
     * Disables TLS renegotiation for this TLSSocket instance. Once called,
     * attempts to renegotiate will trigger an 'error' event on the
     * TLSSocket.
     */
   def disableRenegotiation(): Unit = js.native
+  
   @JSName("emit")
   def emit_OCSPResponse(event: OCSPResponse, response: Buffer): Boolean = js.native
   @JSName("emit")
@@ -63,6 +64,7 @@ class TLSSocket protected () extends Socket {
   def emit_secureConnect(event: secureConnect): Boolean = js.native
   @JSName("emit")
   def emit_session(event: session, session: Buffer): Boolean = js.native
+  
   /**
     * When enabled, TLS packet trace information is written to `stderr`. This can be
     * used to debug TLS connection problems.
@@ -73,6 +75,13 @@ class TLSSocket protected () extends Socket {
     * and should not be relied on.
     */
   def enableTrace(): Unit = js.native
+  
+  /**
+    * Static boolean value, always true.
+    * May be used to distinguish TLS sockets from regular ones.
+    */
+  var encrypted: Boolean = js.native
+  
   /**
     * @param length number of bytes to retrieve from keying material
     * @param label an application specific label, typically this will be a value from the
@@ -80,6 +89,7 @@ class TLSSocket protected () extends Socket {
     * @param context optionally provide a context.
     */
   def exportKeyingMaterial(length: Double, label: String, context: Buffer): Buffer = js.native
+  
   /**
     * Returns an object representing the local certificate. The returned
     * object has some properties corresponding to the fields of the
@@ -92,12 +102,14 @@ class TLSSocket protected () extends Socket {
     * If the socket has been destroyed, null will be returned.
     */
   def getCertificate(): PeerCertificate | js.Object | Null = js.native
+  
   /**
     * Returns an object representing the cipher name and the SSL/TLS protocol version of the current connection.
     * @returns Returns an object representing the cipher name
     * and the SSL/TLS protocol version of the current connection.
     */
   def getCipher(): CipherNameAndProtocol = js.native
+  
   /**
     * Returns an object representing the type, name, and size of parameter
     * of an ephemeral key exchange in Perfect Forward Secrecy on a client
@@ -109,6 +121,7 @@ class TLSSocket protected () extends Socket {
     * For example: { type: 'ECDH', name: 'prime256v1', size: 256 }.
     */
   def getEphemeralKeyInfo(): EphemeralKeyInfo | js.Object | Null = js.native
+  
   /**
     * Returns the latest Finished message that has
     * been sent to the socket as part of a SSL/TLS handshake, or undefined
@@ -124,6 +137,7 @@ class TLSSocket protected () extends Socket {
     * used to implement the tls-unique channel binding from RFC 5929.
     */
   def getFinished(): js.UndefOr[Buffer] = js.native
+  
   def getPeerCertificate(): PeerCertificate | DetailedPeerCertificate = js.native
   def getPeerCertificate(detailed: Boolean): PeerCertificate | DetailedPeerCertificate = js.native
   @JSName("getPeerCertificate")
@@ -141,6 +155,7 @@ class TLSSocket protected () extends Socket {
     */
   @JSName("getPeerCertificate")
   def getPeerCertificate_true(detailed: `true`): DetailedPeerCertificate = js.native
+  
   /**
     * Returns the latest Finished message that is expected or has actually
     * been received from the socket as part of a SSL/TLS handshake, or
@@ -156,6 +171,7 @@ class TLSSocket protected () extends Socket {
     * be used to implement the tls-unique channel binding from RFC 5929.
     */
   def getPeerFinished(): js.UndefOr[Buffer] = js.native
+  
   /**
     * Returns a string containing the negotiated SSL/TLS protocol version of the current connection.
     * The value `'unknown'` will be returned for connected sockets that have not completed the handshaking process.
@@ -164,26 +180,31 @@ class TLSSocket protected () extends Socket {
     * @returns negotiated SSL/TLS protocol version of the current connection
     */
   def getProtocol(): String | Null = js.native
+  
   /**
     * Could be used to speed up handshake establishment when reconnecting to the server.
     * @returns ASN.1 encoded TLS session or undefined if none was negotiated.
     */
   def getSession(): js.UndefOr[Buffer] = js.native
+  
   /**
     * Returns a list of signature algorithms shared between the server and
     * the client in the order of decreasing preference.
     */
   def getSharedSigalgs(): js.Array[String] = js.native
+  
   /**
     * NOTE: Works only with client TLS sockets.
     * Useful only for debugging, for session reuse provide session option to tls.connect().
     * @returns TLS session ticket or undefined if none was negotiated.
     */
   def getTLSTicket(): js.UndefOr[Buffer] = js.native
+  
   /**
     * Returns true if the session was reused, false otherwise.
     */
   def isSessionReused(): Boolean = js.native
+  
   @JSName("on")
   def on_OCSPResponse(event: OCSPResponse, listener: js.Function1[/* response */ Buffer, Unit]): this.type = js.native
   @JSName("on")
@@ -192,6 +213,7 @@ class TLSSocket protected () extends Socket {
   def on_secureConnect(event: secureConnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_session(event: session, listener: js.Function1[/* session */ Buffer, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_OCSPResponse(event: OCSPResponse, listener: js.Function1[/* response */ Buffer, Unit]): this.type = js.native
   @JSName("once")
@@ -200,6 +222,7 @@ class TLSSocket protected () extends Socket {
   def once_secureConnect(event: secureConnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_session(event: session, listener: js.Function1[/* session */ Buffer, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_OCSPResponse(event: OCSPResponse, listener: js.Function1[/* response */ Buffer, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -208,6 +231,7 @@ class TLSSocket protected () extends Socket {
   def prependListener_secureConnect(event: secureConnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_session(event: session, listener: js.Function1[/* session */ Buffer, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_OCSPResponse(event: OCSPResponse, listener: js.Function1[/* response */ Buffer, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -216,6 +240,7 @@ class TLSSocket protected () extends Socket {
   def prependOnceListener_secureConnect(event: secureConnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_session(event: session, listener: js.Function1[/* session */ Buffer, Unit]): this.type = js.native
+  
   /**
     * Initiate TLS renegotiation process.
     *
@@ -228,6 +253,7 @@ class TLSSocket protected () extends Socket {
     * @return `undefined` when socket is destroy, `false` if negotiaion can't be initiated.
     */
   def renegotiate(options: RejectUnauthorized, callback: js.Function1[/* err */ Error | Null, Unit]): js.UndefOr[Boolean] = js.native
+  
   /**
     * Set maximum TLS fragment size (default and maximum value is: 16384, minimum is: 512).
     * Smaller fragment size decreases buffering latency on the client: large fragments are buffered by
@@ -240,4 +266,3 @@ class TLSSocket protected () extends Socket {
     */
   def setMaxSendFragment(size: Double): Boolean = js.native
 }
-

@@ -6,11 +6,12 @@ import typings.std.TouchEvent
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/utils/types/events/touches", "addTouchEvent")
 @js.native
 object addTouchEvent extends js.Object {
+  
   def apply(
     /**
     * The element to add the touch event to.
@@ -170,4 +171,3 @@ object addTouchEvent extends js.Object {
   options: AddEventListenerOptions
   ): Unit = js.native
 }
-

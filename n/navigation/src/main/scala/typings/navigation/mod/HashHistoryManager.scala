@@ -2,7 +2,7 @@ package typings.navigation.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("navigation", "HashHistoryManager")
 @js.native
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class HashHistoryManager () extends HistoryManager {
   def this(replaceQueryIdentifier: Boolean) = this()
+  
   /**
     * Sets the browser Url's hash to the url
     * @param url The current url
@@ -20,10 +21,10 @@ class HashHistoryManager () extends HistoryManager {
     * browser history entry
     */
   def addHistory(url: String, replace: Boolean): Unit = js.native
+  
   /**
     * Registers a listener for the hashchange event
     * @param navigateHistory The history navigation event handler
     */
   def init(navigateHistory: js.Any): Unit = js.native
 }
-

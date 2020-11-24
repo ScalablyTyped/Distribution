@@ -3,11 +3,12 @@ package typings.semver.mod
 import typings.semver.rangeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "intersects")
 @js.native
 object intersects extends js.Object {
+  
   /**
     * Return true if any of the ranges comparators intersect
     */
@@ -24,4 +25,3 @@ object intersects extends js.Object {
   def apply(range1: ^, range2: ^, optionsOrLoose: Boolean): Boolean = js.native
   def apply(range1: ^, range2: ^, optionsOrLoose: Options): Boolean = js.native
 }
-

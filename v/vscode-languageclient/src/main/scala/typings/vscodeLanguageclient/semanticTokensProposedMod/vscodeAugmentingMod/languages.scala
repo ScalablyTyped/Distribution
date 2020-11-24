@@ -4,11 +4,12 @@ import typings.vscode.mod.Disposable
 import typings.vscode.mod.DocumentSelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "languages")
 @js.native
 object languages extends js.Object {
+  
   /**
     * Register a semantic tokens provider for a document range.
     *
@@ -25,6 +26,7 @@ object languages extends js.Object {
     provider: DocumentRangeSemanticTokensProvider,
     legend: SemanticTokensLegend
   ): Disposable = js.native
+  
   /**
     * Register a semantic tokens provider for a whole document.
     *
@@ -38,4 +40,3 @@ object languages extends js.Object {
     */
   def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = js.native
 }
-

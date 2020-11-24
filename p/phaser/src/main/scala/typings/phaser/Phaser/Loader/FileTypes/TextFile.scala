@@ -12,7 +12,7 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Text File suitable for loading by the Loader.
@@ -23,8 +23,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextFile extends File
-
 object TextFile {
+  
   @scala.inline
   def apply(
     addToCache: () => Unit,
@@ -62,4 +62,3 @@ object TextFile {
     __obj.asInstanceOf[TextFile]
   }
 }
-

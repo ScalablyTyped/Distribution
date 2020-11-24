@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Renderer for Particles that is designer for speed over feature set.
@@ -16,4 +16,3 @@ class ParticleRenderer protected ()
   extends typings.pixiJs.PIXI.ParticleRenderer {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-

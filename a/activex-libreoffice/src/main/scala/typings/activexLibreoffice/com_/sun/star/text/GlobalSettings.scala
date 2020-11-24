@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.view.XPrintSettingsSupplier
 import typings.activexLibreoffice.com_.sun.star.view.XViewSettingsSupplier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a service that provides access to the settings of a text module. */
 @js.native
 trait GlobalSettings
   extends XPrintSettingsSupplier
      with XViewSettingsSupplier
-
 object GlobalSettings {
+  
   @scala.inline
   def apply(
     PrintSettings: XPropertySet,
@@ -29,4 +29,3 @@ object GlobalSettings {
     __obj.asInstanceOf[GlobalSettings]
   }
 }
-

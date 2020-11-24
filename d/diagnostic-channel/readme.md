@@ -11,8 +11,8 @@ Provides a context-saving pub/sub channel to connect diagnostic event publishers
 | Full name          | diagnostic-channel |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 3054279 |
+| # dependents       | 4 |
+| # downloads        | 7376489 |
 | # stars            | 0 |
 
 ## Links

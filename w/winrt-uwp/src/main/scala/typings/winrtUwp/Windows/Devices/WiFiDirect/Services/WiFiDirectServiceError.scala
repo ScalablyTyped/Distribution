@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WiFiDirectServiceError extends js.Object
-
 /** Values used for the WiFiDirectServiceAdvertiser.ServiceError property. */
 @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError")
 @js.native
 object WiFiDirectServiceError extends js.Object {
+  
   /** No Wi-Fi adapter is found. */
   @js.native
   sealed trait noHardware extends WiFiDirectServiceError
@@ -30,6 +30,4 @@ object WiFiDirectServiceError extends js.Object {
   /** The Wi-Fi adapter does not support Wi-Fi Direct. */
   @js.native
   sealed trait unsupportedHardware extends WiFiDirectServiceError
-  
 }
-

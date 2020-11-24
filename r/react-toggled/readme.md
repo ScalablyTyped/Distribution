@@ -10,9 +10,9 @@ Component to build simple, flexible, and accessible toggle components.
 | ------------------ | :-------------: |
 | Full name          | react-toggled |
 | Keywords           | toggle, react, accessibility, WAI-ARIA |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 1323828 |
+| # releases         | 1 |
+| # dependents       | 16 |
+| # downloads        | 1708219 |
 | # stars            | 2 |
 
 ## Links

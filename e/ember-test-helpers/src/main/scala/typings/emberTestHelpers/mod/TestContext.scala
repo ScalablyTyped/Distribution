@@ -21,19 +21,11 @@ import typings.std.Pick
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TestContext extends js.Object {
-  @JSName("$")
-  var $_Original: JQueryStatic = js.native
-  var application: Application = js.native
-  var container: Container = js.native
-  var dispatcher: EventDispatcher = js.native
-  var element: Element = js.native
-  var inject: Controller = js.native
-  var owner: ApplicationInstancefactor = js.native
-  var registry: Registry = js.native
+  
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param element A DOM element to wrap in a jQuery object.
@@ -151,6 +143,8 @@ trait TestContext extends js.Object {
   def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery[TElement] = js.native
   @JSName("$")
   def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
+  @JSName("$")
+  var $_Original: JQueryStatic = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     * @param selector A string containing a selector expression
@@ -201,24 +195,50 @@ trait TestContext extends js.Object {
     */
   @JSName("$")
   def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
+  
+  var application: Application = js.native
+  
   def clearRender(): Unit = js.native
+  
+  var container: Container = js.native
+  
+  var dispatcher: EventDispatcher = js.native
+  
+  var element: Element = js.native
+  
   def factory(fullName: String): js.Any = js.native
+  
   def get(key: String): js.Any = js.native
+  
   def getProperties[K /* <: String */](keys: K*): Pick[_, K] = js.native
+  
+  var inject: Controller = js.native
+  
   def on(actionName: String, handler: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, _]): Unit = js.native
+  
+  var owner: ApplicationInstancefactor = js.native
+  
   def pauseTest(): js.Promise[Unit] = js.native
+  
   def register(fullName: String, factory: js.Any): Unit = js.native
+  
+  var registry: Registry = js.native
+  
   def render(): js.Promise[Unit] = js.native
   def render(template: String): js.Promise[Unit] = js.native
   def render(
     template: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateFactory */ js.Any
   ): js.Promise[Unit] = js.native
   def render(template: js.Array[String]): js.Promise[Unit] = js.native
+  
   def resumeTest(): Unit = js.native
+  
   def send(actionName: String): Unit = js.native
+  
   def set[V](key: String, value: V): V = js.native
+  
   def setProperties[P /* <: StringDictionary[js.Any] */](hash: P): P = js.native
+  
   def subject(): js.Any = js.native
   def subject(options: js.Object): js.Any = js.native
 }
-

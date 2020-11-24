@@ -2,9 +2,28 @@ package typings.backoff
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backoffStrings {
+  
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
+  
+  @scala.inline
+  def backoff: backoff = "backoff".asInstanceOf[backoff]
+  
+  @scala.inline
+  def call: call = "call".asInstanceOf[call]
+  
+  @scala.inline
+  def callback: callback = "callback".asInstanceOf[callback]
+  
+  @scala.inline
+  def fail: fail = "fail".asInstanceOf[fail]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
   @js.native
   sealed trait abort extends js.Object
   
@@ -22,18 +41,4 @@ object backoffStrings {
   
   @js.native
   sealed trait ready extends js.Object
-  
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def backoff: backoff = "backoff".asInstanceOf[backoff]
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
-  @scala.inline
-  def callback: callback = "callback".asInstanceOf[callback]
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
 }
-

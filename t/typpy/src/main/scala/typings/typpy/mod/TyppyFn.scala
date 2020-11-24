@@ -22,15 +22,12 @@ import typings.typpy.typpyStrings.string
 import typings.typpy.typpyStrings.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typpy.typpy.IsFn & typpy.typpy.CompareFn & {  is :typpy.typpy.CompareFn,   get :typpy.typpy.GetFn} */
 @js.native
 trait TyppyFn extends js.Object {
-  @JSName("get")
-  var get_Original: GetFn = js.native
-  @JSName("is")
-  var is_Original: CompareFn = js.native
+  
   def apply(): `true` = js.native
   def apply(input: js.UndefOr[scala.Nothing]): undefined = js.native
   def apply(input: js.UndefOr[scala.Nothing], compareTo: undefined): `true` = js.native
@@ -62,6 +59,7 @@ trait TyppyFn extends js.Object {
   def apply(input: RegExp): regexp = js.native
   def apply(input: RegExp, compareTo: RegExpConstructor): `true` = js.native
   def apply(input: RegExp, compareTo: regexp): `true` = js.native
+  
   def get(): Null = js.native
   def get(input: String): StringConstructor = js.native
    // tslint:disable-line:ban-types
@@ -71,6 +69,8 @@ trait TyppyFn extends js.Object {
   def get(input: Boolean): BooleanConstructor = js.native
   def get(input: Double): NumberConstructor | Double = js.native
   def get(input: RegExp): RegExpConstructor = js.native
+  @JSName("get")
+  var get_Original: GetFn = js.native
   @JSName("get")
   def get_Unit(): Unit = js.native
   @JSName("get")
@@ -110,6 +110,7 @@ trait TyppyFn extends js.Object {
   def get_true(input: Null, asString: `true`): `null` = js.native
   @JSName("get")
   def get_true(input: RegExp, asString: `true`): regexp = js.native
+  
   def is(): `true` = js.native
   def is(input: String, compareTo: StringConstructor): `true` = js.native
   def is(input: js.Any, compareTo: js.Any): Boolean = js.native
@@ -120,6 +121,8 @@ trait TyppyFn extends js.Object {
   def is(input: Double, compareTo: Double): Boolean = js.native
   def is(input: Double, compareTo: NumberConstructor): Boolean = js.native
   def is(input: RegExp, compareTo: RegExpConstructor): `true` = js.native
+  @JSName("is")
+  var is_Original: CompareFn = js.native
   @JSName("is")
   def is_array(input: js.Array[_], compareTo: array): `true` = js.native
   @JSName("is")
@@ -142,4 +145,3 @@ trait TyppyFn extends js.Object {
   @JSName("is")
   def is_undefined(input: js.UndefOr[scala.Nothing], compareTo: undefined): `true` = js.native
 }
-

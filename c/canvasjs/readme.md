@@ -12,7 +12,7 @@ CanvasJS charting library
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 52392 |
+| # downloads        | 90275 |
 | # stars            | 1 |
 
 ## Links

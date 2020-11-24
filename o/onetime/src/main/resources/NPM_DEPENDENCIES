@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "onetime" : "5.1.1"
+      "onetime" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "onetime" : "5.1.1"
+      "onetime" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

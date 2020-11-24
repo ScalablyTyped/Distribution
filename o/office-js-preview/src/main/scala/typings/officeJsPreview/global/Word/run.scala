@@ -3,11 +3,12 @@ package typings.officeJsPreview.global.Word
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Word.run")
 @js.native
 object run extends js.Object {
+  
   /**
     * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
@@ -40,4 +41,3 @@ object run extends js.Object {
     batch: js.Function1[/* context */ typings.officeJsPreview.Word.RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
 }
-

@@ -28,7 +28,7 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `NavigationWindow` implements a specialized view that manages the navigation of hierarchical
@@ -36,14 +36,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NavigationWindow extends Window {
-  /**
-    * Window to add to this navigation window.
-    */
-  var window: Window = js.native
+  
   /**
     * Closes a window and removes it from the navigation window.
     */
   def closeWindow(window: Window, options: js.Any): Unit = js.native
+  
   @JSName("fireEvent")
   def fireEvent_androidback(name: androidback, event: NavigationWindowAndroidbackEvent): Unit = js.native
   @JSName("fireEvent")
@@ -94,25 +92,33 @@ trait NavigationWindow extends Window {
   def fireEvent_touchstart(name: touchstart, event: NavigationWindowTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: NavigationWindowTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.NavigationWindow.window> property.
     * @deprecated Access <Titanium.UI.NavigationWindow.window> instead.
     */
   def getWindow(): Window = js.native
+  
   /**
     * Opens a window within the navigation window.
     */
   def openWindow(window: Window): Unit = js.native
   def openWindow(window: Window, options: AnimatedOptions): Unit = js.native
+  
   /**
     * Closes all windows that are currently opened inside the navigation window.
     */
   def popToRootWindow(): Unit = js.native
   def popToRootWindow(options: AnimatedOptions): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.NavigationWindow.window> property.
     * @deprecated Set the value using <Titanium.UI.NavigationWindow.window> instead.
     */
   def setWindow(window: Window): Unit = js.native
+  
+  /**
+    * Window to add to this navigation window.
+    */
+  var window: Window = js.native
 }
-

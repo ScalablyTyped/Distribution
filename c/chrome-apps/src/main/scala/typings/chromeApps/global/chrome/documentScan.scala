@@ -4,7 +4,7 @@ import typings.chromeApps.chrome.documentScan.DocumentScanCallbackArg
 import typings.chromeApps.chrome.documentScan.DocumentScanOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.documentScan
@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.documentScan")
 @js.native
 object documentScan extends js.Object {
+  
   /**
     * Performs a document scan. On success, the PNG data will be sent to the callback.
     * @param options Object containing scan parameters.
@@ -36,4 +37,3 @@ object documentScan extends js.Object {
     */
   def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = js.native
 }
-

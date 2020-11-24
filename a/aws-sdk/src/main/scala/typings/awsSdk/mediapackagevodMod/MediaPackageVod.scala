@@ -1,17 +1,19 @@
 package typings.awsSdk.mediapackagevodMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaPackageVod extends Service {
+  
   @JSName("config")
   var config_MediaPackageVod: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a new MediaPackage VOD Asset resource.
     */
@@ -25,6 +27,7 @@ trait MediaPackageVod extends Service {
     params: CreateAssetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAssetResponse, Unit]
   ): Request[CreateAssetResponse, AWSError] = js.native
+  
   /**
     * Creates a new MediaPackage VOD PackagingConfiguration resource.
     */
@@ -38,6 +41,7 @@ trait MediaPackageVod extends Service {
     params: CreatePackagingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePackagingConfigurationResponse, Unit]
   ): Request[CreatePackagingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Creates a new MediaPackage VOD PackagingGroup resource.
     */
@@ -51,6 +55,7 @@ trait MediaPackageVod extends Service {
     params: CreatePackagingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePackagingGroupResponse, Unit]
   ): Request[CreatePackagingGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes an existing MediaPackage VOD Asset resource.
     */
@@ -64,6 +69,7 @@ trait MediaPackageVod extends Service {
     params: DeleteAssetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAssetResponse, Unit]
   ): Request[DeleteAssetResponse, AWSError] = js.native
+  
   /**
     * Deletes a MediaPackage VOD PackagingConfiguration resource.
     */
@@ -77,6 +83,7 @@ trait MediaPackageVod extends Service {
     params: DeletePackagingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePackagingConfigurationResponse, Unit]
   ): Request[DeletePackagingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Deletes a MediaPackage VOD PackagingGroup resource.
     */
@@ -90,6 +97,7 @@ trait MediaPackageVod extends Service {
     params: DeletePackagingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePackagingGroupResponse, Unit]
   ): Request[DeletePackagingGroupResponse, AWSError] = js.native
+  
   /**
     * Returns a description of a MediaPackage VOD Asset resource.
     */
@@ -103,6 +111,7 @@ trait MediaPackageVod extends Service {
     params: DescribeAssetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAssetResponse, Unit]
   ): Request[DescribeAssetResponse, AWSError] = js.native
+  
   /**
     * Returns a description of a MediaPackage VOD PackagingConfiguration resource.
     */
@@ -118,6 +127,7 @@ trait MediaPackageVod extends Service {
     params: DescribePackagingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePackagingConfigurationResponse, Unit]
   ): Request[DescribePackagingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Returns a description of a MediaPackage VOD PackagingGroup resource.
     */
@@ -131,6 +141,7 @@ trait MediaPackageVod extends Service {
     params: DescribePackagingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePackagingGroupResponse, Unit]
   ): Request[DescribePackagingGroupResponse, AWSError] = js.native
+  
   /**
     * Returns a collection of MediaPackage VOD Asset resources.
     */
@@ -144,6 +155,7 @@ trait MediaPackageVod extends Service {
     params: ListAssetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssetsResponse, Unit]
   ): Request[ListAssetsResponse, AWSError] = js.native
+  
   /**
     * Returns a collection of MediaPackage VOD PackagingConfiguration resources.
     */
@@ -157,6 +169,7 @@ trait MediaPackageVod extends Service {
     params: ListPackagingConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagingConfigurationsResponse, Unit]
   ): Request[ListPackagingConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Returns a collection of MediaPackage VOD PackagingGroup resources.
     */
@@ -170,6 +183,7 @@ trait MediaPackageVod extends Service {
     params: ListPackagingGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagingGroupsResponse, Unit]
   ): Request[ListPackagingGroupsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of the tags assigned to the specified resource.
     */
@@ -183,6 +197,7 @@ trait MediaPackageVod extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Adds tags to the specified resource. You can specify one or more tags to add.
     */
@@ -193,6 +208,7 @@ trait MediaPackageVod extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes tags from the specified resource. You can specify one or more tags to remove.
     */
@@ -206,6 +222,7 @@ trait MediaPackageVod extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates a specific packaging group. You can't change the id attribute or any other system-generated attributes.
     */
@@ -220,4 +237,3 @@ trait MediaPackageVod extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackagingGroupResponse, Unit]
   ): Request[UpdatePackagingGroupResponse, AWSError] = js.native
 }
-

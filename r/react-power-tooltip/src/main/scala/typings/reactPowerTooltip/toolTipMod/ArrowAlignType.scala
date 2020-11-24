@@ -2,7 +2,7 @@ package typings.reactPowerTooltip.toolTipMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactPowerTooltip.reactPowerTooltipStrings.start
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.reactPowerTooltip.reactPowerTooltipStrings.end
 */
 trait ArrowAlignType extends js.Object
-
 object ArrowAlignType {
+  
   @scala.inline
   def center: typings.reactPowerTooltip.reactPowerTooltipStrings.center = "center".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.center]
+  
   @scala.inline
   def end: typings.reactPowerTooltip.reactPowerTooltipStrings.end = "end".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.end]
+  
   @scala.inline
   def start: typings.reactPowerTooltip.reactPowerTooltipStrings.start = "start".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.start]
 }
-

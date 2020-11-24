@@ -1,8 +1,9 @@
 package typings.parse.nodeMod
 
+import typings.parse.mod.global.Parse.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Parse.Schema object is for handling schema data from Parse.
@@ -21,21 +22,20 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse/node", "Schema")
 @js.native
-class Schema protected ()
-  extends typings.parse.mod.Schema {
+class Schema[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protected ()
+  extends typings.parse.mod.Schema[T] {
   def this(className: String) = this()
 }
-
 /* static members */
 @JSImport("parse/node", "Schema")
 @js.native
 object Schema extends js.Object {
+  
   /**
     * Static method to get all schemas
     *
     * @return A promise that is resolved with the result when
     * the query completes.
     */
-  def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema]] = js.native
+  def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[_]]] = js.native
 }
-

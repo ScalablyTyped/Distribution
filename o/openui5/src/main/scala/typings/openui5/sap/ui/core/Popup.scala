@@ -6,10 +6,11 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Popup extends ManagedObject {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>closed</code> event of this
     * <code>sap.ui.core.Popup</code>.When called, the context of the event handler (its <code>this</code>)
@@ -24,6 +25,7 @@ trait Popup extends ManagedObject {
     */
   def attachClosed(oData: js.Any, fnFunction: js.Any): Popup = js.native
   def attachClosed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Popup = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>opened</code> event of this
     * <code>sap.ui.core.Popup</code>.When called, the context of the event handler (its <code>this</code>)
@@ -38,6 +40,7 @@ trait Popup extends ManagedObject {
     */
   def attachOpened(oData: js.Any, fnFunction: js.Any): Popup = js.native
   def attachOpened(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Popup = js.native
+  
   /**
     * Closes the popup.If the Popup is already closed or in the process of closing, calling this method
     * does nothing.If the Popup is in the process of being opened and closed with a duration of 0, calling
@@ -48,6 +51,7 @@ trait Popup extends ManagedObject {
     * iDuration == 0 the closing happens synchronously without animation.
     */
   def close(iDuration: Double): Unit = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>closed</code> event of this
     * <code>sap.ui.core.Popup</code>.The passed function and listener object must match the ones used for
@@ -57,6 +61,7 @@ trait Popup extends ManagedObject {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachClosed(fnFunction: js.Any, oListener: js.Any): Popup = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>opened</code> event of this
     * <code>sap.ui.core.Popup</code>.The passed function and listener object must match the ones used for
@@ -66,33 +71,39 @@ trait Popup extends ManagedObject {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachOpened(fnFunction: js.Any, oListener: js.Any): Popup = js.native
+  
   /**
     * When the Popup is being destroyed all corresponding references should bedeleted as well to prevent
     * any memory leaks.
     */
   def exit(): Unit = js.native
+  
   /**
     * Fires event <code>closed</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireClosed(mArguments: js.Any): Popup = js.native
+  
   /**
     * Fires event <code>opened</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireOpened(mArguments: js.Any): Popup = js.native
+  
   /**
     * Determines whether the pop-up should auto closes or not.
     * @since 1.16
     */
   def getAutoClose(): Boolean = js.native
+  
   /**
     * Returns this Popup's content.
     * @returns the content that has been set previously (if any)
     */
   def getContent(): Control | js.Any = js.native
+  
   /**
     * This returns true/false if the default followOf method should be used. If a separate
     * followOf-handler was previously addedthe correspodning function is returned.
@@ -101,30 +112,36 @@ trait Popup extends ManagedObject {
     * activated
     */
   def getFollowOf(): Boolean | js.Any = js.native
+  
   /**
     * Returns the last z-index that has been handed out. does not increase the internal z-index counter.
     */
   def getLastZIndex(): Number = js.native
+  
   /**
     * Returns the value if a Popup is of modal type
     */
   def getModal(): Unit = js.native
+  
   /**
     * Returns the next available z-index on top of the existing/previous popups. Each call increases the
     * internal z-index counter and the returned z-index.
     * @returns the next z-index on top of the Popup stack
     */
   def getNextZIndex(): Number = js.native
+  
   /**
     * Returns whether the Popup is currently open, closed, or transitioning between these states.
     * @returns whether the Popup is opened
     */
   def getOpenState(): OpenState = js.native
+  
   /**
     * Returns whether the Popup is currently open (this includes opening andclosing animations).
     * @returns whether the Popup is opened (or currently being                           opened or closed)
     */
   def isOpen(): Boolean = js.native
+  
   /**
     * Opens the popup's content at the position either specified here or beforehand via {@link
     * #setPosition}.Content must be capable of being positioned via "position:absolute;"All parameters are
@@ -155,6 +172,7 @@ trait Popup extends ManagedObject {
     collision: js.UndefOr[String],
     followOf: js.UndefOr[Boolean]
   ): Unit = js.native
+  
   /**
     * Sets the animation functions to use for opening and closing the Popup. Any null value will be
     * ignored and not change the respective animation function.When called, the animation functions
@@ -165,6 +183,7 @@ trait Popup extends ManagedObject {
     * @returns <code>this</code> to allow method chaining
     */
   def setAnimations(fnOpen: js.Any, fnClose: js.Any): Popup = js.native
+  
   /**
     * Used to specify whether the Popup should close as soon as- for non-touch environment: the focus
     * leaves- for touch environment: user clicks the area which is outside the popup itself, the dom
@@ -174,6 +193,7 @@ trait Popup extends ManagedObject {
     * @returns <code>this</code> to allow method chaining
     */
   def setAutoClose(bAutoClose: Boolean): Popup = js.native
+  
   /**
     * Sets the additional areas in the page that are considered part of the Popup when autoclose is
     * enabled.- non-touch environment: if the focus leaves the Popup but immediately enters one of these
@@ -184,6 +204,7 @@ trait Popup extends ManagedObject {
     * @returns <code>this</code> to allow method chaining
     */
   def setAutoCloseAreas(aAutoCloseAreas: js.Any): Popup = js.native
+  
   def setContent(oContent: js.Any): Popup = js.native
   /**
     * Sets the content this instance of the Popup should render.Content must be capable of being
@@ -192,6 +213,7 @@ trait Popup extends ManagedObject {
     * @returns <code>this</code> to allow method chaining
     */
   def setContent(oContent: Control): Popup = js.native
+  
   /**
     * Sets the durations for opening and closing animations.Null values and values < 0 are ignored.A
     * duration of 0 means no animation.Default value is "fast" which is the jQuery constant for "200 ms".
@@ -200,6 +222,7 @@ trait Popup extends ManagedObject {
     * @returns <code>this</code> to allow method chaining
     */
   def setDurations(iOpenDuration: Double, iCloseDuration: Double): Popup = js.native
+  
   def setFollowOf(followOf: js.Any): Unit = js.native
   /**
     * This enabled/disables the Popup to follow its opening reference. If the Popup is open and a followOf
@@ -209,6 +232,7 @@ trait Popup extends ManagedObject {
     * handler can be given.null deletes all followOf settings.
     */
   def setFollowOf(followOf: Boolean): Unit = js.native
+  
   /**
     * Sets the ID of the element that should be focused once the popup opens.If the given ID is the ID of
     * an existing Control, this Control's focusDomRef will be focused instead, which may be an HTML
@@ -218,6 +242,7 @@ trait Popup extends ManagedObject {
     * @param sId the ID of the DOM element to focus
     */
   def setInitialFocusId(sId: String): Unit = js.native
+  
   /**
     * Set an initial z-index that should be used by all Popup so all Popups start at leastwith the set
     * z-index.If the given z-index is lower than any current available z-index the highest z-index will be
@@ -226,6 +251,7 @@ trait Popup extends ManagedObject {
     * @param iInitialZIndex is the initial z-index
     */
   def setInitialZIndex(iInitialZIndex: Number): Unit = js.native
+  
   /**
     * Used to specify whether the Popup should be modal. A modal popup will put some fading "block layer"
     * over the background andprevent attempts to put the focus outside/below the popup.Setting this while
@@ -237,6 +263,7 @@ trait Popup extends ManagedObject {
     */
   def setModal(bModal: Boolean): Popup = js.native
   def setModal(bModal: Boolean, sModalCSSClass: String): Popup = js.native
+  
   def setPosition(my: TypeofDock, at: js.Any): Popup = js.native
   def setPosition(
     my: TypeofDock,
@@ -312,6 +339,7 @@ trait Popup extends ManagedObject {
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: String, collision: String): Popup = js.native
+  
   /**
     * Determines whether the Popup should have a shadow (in supporting browsers).This also affects a
     * currently open popup.
@@ -320,4 +348,3 @@ trait Popup extends ManagedObject {
     */
   def setShadow(bShowShadow: Boolean): Popup = js.native
 }
-

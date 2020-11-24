@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.firehoseMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Firehose")
 @js.native
@@ -14,4 +14,3 @@ class Firehose ()
   extends typings.awsSdk.allMod.Firehose {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -5,11 +5,12 @@ import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.iserverconnectorMod.IServerConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/derived/DistributedServer", JSImport.Namespace)
 @js.native
 object distributedServerMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -36,14 +37,7 @@ object distributedServerMod extends js.Object {
       * @param systemArray The parent {@link DistributedSystemArray} object.
       */
     def this(systemArray: DistributedSystemArray[DistributedSystem]) = this()
-    /**
-      * IP address of target external system to connect.
-      */
-    var ip: String = js.native
-    /**
-      * Port number of target external system to connect.
-      */
-    var port: Double = js.native
+    
     /**
       * @inheritdoc
       */
@@ -51,6 +45,7 @@ object distributedServerMod extends js.Object {
       * Connect to the external server.
       */
     def connect(): Unit = js.native
+    
     /**
       * Factory method creating {@link IServerConnector} object.
       *
@@ -66,7 +61,15 @@ object distributedServerMod extends js.Object {
       * @return A newly created {@link IServerConnector} object.
       */
     /* protected */ def createServerConnector(): IServerConnector = js.native
+    
+    /**
+      * IP address of target external system to connect.
+      */
+    var ip: String = js.native
+    
+    /**
+      * Port number of target external system to connect.
+      */
+    var port: Double = js.native
   }
-  
 }
-

@@ -4,7 +4,7 @@ import typings.miniprogramWxs.Array
 import typings.miniprogramWxs.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.NumberFormat")
 @js.native
@@ -16,4 +16,3 @@ class NumberFormatCls ()
   def this(locales: String, options: NumberFormatOptions) = this()
   def this(locales: Array[String], options: NumberFormatOptions) = this()
 }
-

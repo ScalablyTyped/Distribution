@@ -3,11 +3,12 @@ package typings.openui5.global.sap.m
 import typings.openui5.sap.ui.core.UIComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.routing")
 @js.native
 object routing extends js.Object {
+  
   @js.native
   class RouteMatchedHandler protected ()
     extends typings.openui5.sap.m.routing.RouteMatchedHandler {
@@ -127,6 +128,4 @@ object routing extends js.Object {
       */
     def this(oOptions: js.Any) = this()
   }
-  
 }
-

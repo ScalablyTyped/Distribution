@@ -12,14 +12,18 @@ import typings.superstruct.structMod.StructFailure
 import typings.superstruct.structMod.StructResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/xtras", JSImport.Namespace)
 @js.native
 object xtrasMod extends js.Object {
+  
   def toFailures(result: StructResult, context: StructContext): Iterable[StructFailure] = js.native
+  
   type Assign[T, U] = Simplify[U with (Omit[T, /* keyof U */ String])]
+  
   type InferObjectStruct[S /* <: ObjectSchema */] = Struct[InferObjectType[S], S]
+  
   type InferObjectType[S /* <: ObjectSchema */] = Simplify[
     Optionalize[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -27,7 +31,9 @@ object xtrasMod extends js.Object {
     */ typings.superstruct.superstructStrings.InferObjectType with TopLevel[S]
     ]
   ]
+  
   type ObjectSchema = Record[String, Struct[js.Any, js.Any]]
+  
   /**
     * Omit properties from a type that extend from a specific type.
     */
@@ -35,10 +41,12 @@ object xtrasMod extends js.Object {
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: V extends std.Extract<T[K], V>? K : never}[keyof T] */ js.Any
   ]
+  
   /**
     * Normalize properties of a type that allow `undefined` to make them optional.
     */
   type Optionalize[S /* <: js.Object */] = (OmitBy[S, js.UndefOr[scala.Nothing]]) with (Partial[PickBy[S, js.UndefOr[scala.Nothing]]])
+  
   /**
     * Pick properties from a type that extend from a specific type.
     */
@@ -46,16 +54,19 @@ object xtrasMod extends js.Object {
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: V extends std.Extract<T[K], V>? K : never}[keyof T] */ js.Any
   ]
+  
   /**
     * Simplifies a type definition to its most basic representation.
     */
   type Simplify[T] = (typings.superstruct.superstructStrings.Simplify with TopLevel[T] with js.Object) | T
+  
   type StructRecord[T] = Record[String, Struct[T, js.Any]]
+  
   type StructTuple[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: superstruct.superstruct/lib/struct.Struct<T[K], any>}
     */ typings.superstruct.superstructStrings.StructTuple with TopLevel[T]
+  
   type TupleSchema[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: superstruct.superstruct/lib/struct.Struct<T[K], any>}
     */ typings.superstruct.superstructStrings.TupleSchema with TopLevel[T]
 }
-

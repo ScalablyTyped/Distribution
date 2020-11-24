@@ -3,7 +3,7 @@ package typings.jupyterlabRendermime.registryMod.RenderMimeRegistry
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A default resolver that uses a given reference path and a contents manager.
@@ -15,17 +15,13 @@ class UrlResolver protected () extends IResolver {
     * Create a new url resolver.
     */
   def this(options: IUrlResolverOptions) = this()
+  
   var _contents: js.Any = js.native
+  
   var _path: js.Any = js.native
+  
   var _session: js.Any = js.native
-  /**
-    * Get the download url for a given absolute url path.
-    *
-    * #### Notes
-    * This URL may include a query parameter.
-    */
-  /* CompleteClass */
-  override def getDownloadUrl(url: String): js.Promise[String] = js.native
+  
   /**
     * Whether the URL should be handled by the resolver
     * or not.
@@ -38,15 +34,10 @@ class UrlResolver protected () extends IResolver {
     */
   @JSName("isLocal")
   def isLocal_MUrlResolver(url: String): Boolean = js.native
+  
   /**
     * The path of the object, from which local urls can be derived.
     */
   def path: String = js.native
-  def path(value: String): js.Any = js.native
-  /**
-    * Resolve a relative url to an absolute url path.
-    */
-  /* CompleteClass */
-  override def resolveUrl(url: String): js.Promise[String] = js.native
+  def path_=(value: String): Unit = js.native
 }
-

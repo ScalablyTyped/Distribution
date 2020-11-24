@@ -4,11 +4,12 @@ import typings.when.When.Promise
 import typings.when.When.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("when", "resolve")
 @js.native
 object resolve extends js.Object {
+  
   /**
     * Returns a resolved promise. The returned promise will be
     *  - fulfilled with promiseOrValue if it is a value, or
@@ -21,4 +22,3 @@ object resolve extends js.Object {
   def apply[T](promiseOrValue: Promise[T]): Promise[T] = js.native
   def apply[T](promiseOrValue: Thenable[T]): Promise[T] = js.native
 }
-

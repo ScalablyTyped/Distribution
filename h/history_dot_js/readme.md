@@ -12,7 +12,7 @@ History.js gracefully supports the HTML5 History/State APIs (pushState, replaceS
 | Keywords           | javascript, html5 history api, hashchange, popstate, pushstate, replacestate, hashes, hashbang |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 34810 |
+| # downloads        | 31641 |
 | # stars            | 2 |
 
 ## Links

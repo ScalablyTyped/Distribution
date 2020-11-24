@@ -3,12 +3,28 @@ package typings.jscodeshift.coreMod
 import typings.jscodeshift.templateMod.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Core extends js.Object {
+  
+  def apply(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  def apply(source: String): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  def apply(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[_] = js.native
+  
   var filters: Filters = js.native
+  
   var mappings: Mappings = js.native
+  
+  def `match`(path: ASTNode | ASTPath[ASTNode], filter: js.Function1[/* path */ ASTNode, Boolean]): Boolean = js.native
+  def `match`(path: ASTNode | ASTPath[ASTNode], filter: ASTNode): Boolean = js.native
+  
+  def registerMethods(methods: js.Object): Unit = js.native
+  def registerMethods(
+    methods: js.Object,
+    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
+  ): Unit = js.native
   @JSName("registerMethods")
   var registerMethods_Original: js.Function2[
     /* methods */ js.Object, 
@@ -17,20 +33,12 @@ trait Core extends js.Object {
     ], 
     Unit
   ] = js.native
+  
   /** template, bound to default parser */
   var template: Template = js.native
+  
   var types: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof recast.default.types */ js.Any = js.native
-  def apply(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[_] = js.native
-  def apply(source: String): typings.jscodeshift.collectionMod.Collection[_] = js.native
-  def apply(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[_] = js.native
-  def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[_] = js.native
-  def `match`(path: ASTNode | ASTPath[ASTNode], filter: js.Function1[/* path */ ASTNode, Boolean]): Boolean = js.native
-  def `match`(path: ASTNode | ASTPath[ASTNode], filter: ASTNode): Boolean = js.native
-  def registerMethods(methods: js.Object): Unit = js.native
-  def registerMethods(
-    methods: js.Object,
-    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
-  ): Unit = js.native
+  
   /**
     * Utility function for registering plugins.
     *
@@ -39,6 +47,7 @@ trait Core extends js.Object {
     * This method guards against repeated registrations (the plugin callback will only be called once).
     */
   def use(plugin: Plugin): Unit = js.native
+  
   /**
     * Returns a version of the core jscodeshift function "bound" to a specific
     * parser.
@@ -46,4 +55,3 @@ trait Core extends js.Object {
   def withParser(parser: String): JSCodeshift = js.native
   def withParser(parser: Parser): JSCodeshift = js.native
 }
-

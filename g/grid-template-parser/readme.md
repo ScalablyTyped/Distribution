@@ -12,7 +12,7 @@ A simple CSS Grid template parser
 | Keywords           | grid, grid-layout, template, parser |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 34180 |
+| # downloads        | 82617 |
 | # stars            | 0 |
 
 ## Links

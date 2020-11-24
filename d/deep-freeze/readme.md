@@ -10,9 +10,9 @@ recursively Object.freeze() objects and functions
 | ------------------ | :-------------: |
 | Full name          | deep-freeze |
 | Keywords           | freeze, deep, object, recursive |
-| # releases         | 1 |
-| # dependents       | 142 |
-| # downloads        | 5137069 |
+| # releases         | 0 |
+| # dependents       | 158 |
+| # downloads        | 8889290 |
 | # stars            | 26 |
 
 ## Links

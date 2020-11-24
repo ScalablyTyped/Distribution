@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "winston-daily-rotate-file" : "4.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "winston-daily-rotate-file" : "4.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -11,8 +11,8 @@ Modern copy to clipboard. No Flash. Just 2kb
 | Full name          | clipboard |
 | Keywords           | clipboard, copy, cut |
 | # releases         | 6 |
-| # dependents       | 609 |
-| # downloads        | 64984086 |
+| # dependents       | 864 |
+| # downloads        | 116761060 |
 | # stars            | 60 |
 
 ## Links

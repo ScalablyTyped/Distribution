@@ -2,7 +2,7 @@ package typings.k6.wsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This module provides a WebSocket client implementing the WebSocket protocol.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/ws", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Open WebSocket connection.
     * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback
@@ -44,4 +45,3 @@ object default extends js.Object {
     */
   def connect(url: String, params: Params, callback: Executor): Response = js.native
 }
-

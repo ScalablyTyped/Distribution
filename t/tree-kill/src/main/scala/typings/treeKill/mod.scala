@@ -3,11 +3,12 @@ package typings.treeKill
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tree-kill", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(pid: Double): Unit = js.native
   def apply(pid: Double, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
   def apply(
@@ -20,4 +21,3 @@ object mod extends js.Object {
   def apply(pid: Double, signal: Double): Unit = js.native
   def apply(pid: Double, signal: Double, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
 }
-

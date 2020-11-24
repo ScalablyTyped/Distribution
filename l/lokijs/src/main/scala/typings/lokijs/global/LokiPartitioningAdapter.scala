@@ -4,7 +4,7 @@ import typings.lokijs.LokiPersistenceAdapter
 import typings.lokijs.anon.PageSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An adapter for adapters.  Converts a non reference mode adapter into a reference mode adapter
@@ -30,4 +30,3 @@ class LokiPartitioningAdapter protected ()
   def this(adapter: LokiPersistenceAdapter) = this()
   def this(adapter: LokiPersistenceAdapter, options: PageSize) = this()
 }
-

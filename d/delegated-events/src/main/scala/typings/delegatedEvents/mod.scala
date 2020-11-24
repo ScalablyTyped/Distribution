@@ -109,15 +109,18 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("delegated-events", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def fire(target: Element, name: String): Boolean = js.native
   def fire(target: Element, name: String, detail: js.Any): Boolean = js.native
+  
   def off(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
   def off(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
+  
   def on(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
   def on(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
   @JSName("on")
@@ -1659,6 +1662,6 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
+  
   type DelegatedEventListener = js.ThisFunction1[/* this */ Element, /* ev */ CustomEventanycurrentTarg, js.Any]
 }
-

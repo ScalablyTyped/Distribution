@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.paper.paper.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPoint extends Instantiable2[/* x */ Double, /* y */ Double, Point] {
+  
   /** 
     * Returns a new point object with the largest {@link #x} and
     * {@link #y} of the supplied points.
@@ -15,6 +16,7 @@ trait TypeofPoint extends Instantiable2[/* x */ Double, /* y */ Double, Point] {
     * @return the newly created point object
     */
   def max(point1: Point, point2: Point): Point = js.native
+  
   /** 
     * Returns a new point object with the smallest {@link #x} and
     * {@link #y} of the supplied points.
@@ -22,6 +24,7 @@ trait TypeofPoint extends Instantiable2[/* x */ Double, /* y */ Double, Point] {
     * @return the newly created point object
     */
   def min(point1: Point, point2: Point): Point = js.native
+  
   /** 
     * Returns a point object with random {@link #x} and {@link #y} values
     * between `0` and `1`.
@@ -30,4 +33,3 @@ trait TypeofPoint extends Instantiable2[/* x */ Double, /* y */ Double, Point] {
     */
   def random(): Point = js.native
 }
-

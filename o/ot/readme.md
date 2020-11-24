@@ -11,8 +11,8 @@ Collaborative editing using operational transformation
 | Full name          | ot |
 | Keywords           | operational transformation |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 57212 |
+| # dependents       | 7 |
+| # downloads        | 55462 |
 | # stars            | 3 |
 
 ## Links

@@ -1,13 +1,12 @@
 package typings.awsSdkClientSqsNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-sqs-node/model/PurgeQueueInProgress", JSImport.Namespace)
 @js.native
 object purgeQueueInProgressMod extends js.Object {
-  val PurgeQueueInProgress: Structure = js.native
+  
+  val PurgeQueueInProgress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

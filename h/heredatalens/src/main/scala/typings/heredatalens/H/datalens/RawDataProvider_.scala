@@ -3,7 +3,7 @@ package typings.heredatalens.H.datalens
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines how to load data from a raw data file
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RawDataProvider_ extends RemoteTileProvider {
+  
   /**
     * Updates the data url. Note that new data will be fetched only after the reload method is called.
     */
   def setDataUrl(dataUrl: String): Unit = js.native
 }
-

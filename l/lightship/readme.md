@@ -4,15 +4,15 @@
 Typings are for version 6.1
 
 ## Library description:
-Abstracts readiness/ liveness checks and graceful shutdown of Node.js services running in Kubernetes.
+Abstracts readiness, liveness and startup checks and graceful shutdown of Node.js services running in Kubernetes.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lightship |
 | Keywords           | kubernetes |
-| # releases         | 29 |
-| # dependents       | 2 |
-| # downloads        | 209145 |
+| # releases         | 34 |
+| # dependents       | 9 |
+| # downloads        | 470604 |
 | # stars            | 0 |
 
 ## Links

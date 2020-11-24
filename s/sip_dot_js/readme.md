@@ -4,15 +4,15 @@
 Typings are for version 0.17.1
 
 ## Library description:
-A simple, intuitive, and powerful JavaScript signaling library
+A SIP library for JavaScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sip.js |
 | Keywords           | sip, webrtc, library, websocket, javascript, typescript |
 | # releases         | 37 |
-| # dependents       | 24 |
-| # downloads        | 208044 |
+| # dependents       | 29 |
+| # downloads        | 271596 |
 | # stars            | 1 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaCsvOptions extends js.Object {
+  
   /**
     * [Optional] Indicates if BigQuery should accept rows that are missing
     * trailing optional columns. If true, BigQuery treats missing trailing
@@ -14,11 +15,13 @@ trait SchemaCsvOptions extends js.Object {
     * invalid error is returned in the job result. The default value is false.
     */
   var allowJaggedRows: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Optional] Indicates if BigQuery should allow quoted data sections that
     * contain newline characters in a CSV file. The default value is false.
     */
   var allowQuotedNewlines: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Optional] The character encoding of the data. The supported values are
     * UTF-8 or ISO-8859-1. The default value is UTF-8. BigQuery decodes the
@@ -26,6 +29,7 @@ trait SchemaCsvOptions extends js.Object {
     * quote and fieldDelimiter properties.
     */
   var encoding: js.UndefOr[String] = js.native
+  
   /**
     * [Optional] The separator for fields in a CSV file. BigQuery converts the
     * string to ISO-8859-1 encoding, and then uses the first byte of the
@@ -34,6 +38,7 @@ trait SchemaCsvOptions extends js.Object {
     * The default value is a comma (&#39;,&#39;).
     */
   var fieldDelimiter: js.UndefOr[String] = js.native
+  
   /**
     * [Optional] The value that is used to quote data sections in a CSV file.
     * BigQuery converts the string to ISO-8859-1 encoding, and then uses the
@@ -44,6 +49,7 @@ trait SchemaCsvOptions extends js.Object {
     * set the allowQuotedNewlines property to true.
     */
   var quote: js.UndefOr[String] = js.native
+  
   /**
     * [Optional] The number of rows at the top of a CSV file that BigQuery will
     * skip when reading the data. The default value is 0. This property is
@@ -51,49 +57,63 @@ trait SchemaCsvOptions extends js.Object {
     */
   var skipLeadingRows: js.UndefOr[String] = js.native
 }
-
 object SchemaCsvOptions {
+  
   @scala.inline
   def apply(): SchemaCsvOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCsvOptions]
   }
+  
   @scala.inline
   implicit class SchemaCsvOptionsOps[Self <: SchemaCsvOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllowJaggedRows(value: Boolean): Self = this.set("allowJaggedRows", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowJaggedRows: Self = this.set("allowJaggedRows", js.undefined)
+    
     @scala.inline
     def setAllowQuotedNewlines(value: Boolean): Self = this.set("allowQuotedNewlines", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowQuotedNewlines: Self = this.set("allowQuotedNewlines", js.undefined)
+    
     @scala.inline
     def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEncoding: Self = this.set("encoding", js.undefined)
+    
     @scala.inline
     def setFieldDelimiter(value: String): Self = this.set("fieldDelimiter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFieldDelimiter: Self = this.set("fieldDelimiter", js.undefined)
+    
     @scala.inline
     def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuote: Self = this.set("quote", js.undefined)
+    
     @scala.inline
     def setSkipLeadingRows(value: String): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
   }
-  
 }
-

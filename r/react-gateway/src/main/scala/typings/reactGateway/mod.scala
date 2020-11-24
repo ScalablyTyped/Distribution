@@ -5,11 +5,12 @@ import typings.reactGateway.gatewayDestMod.GatewayDestProps
 import typings.reactGateway.gatewayMod.GatewayProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-gateway", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Gateway ()
     extends Component[GatewayProps, js.Object, js.Any]
@@ -25,6 +26,4 @@ object mod extends js.Object {
   @js.native
   class GatewayRegistry ()
     extends typings.reactGateway.gatewayRegistryMod.GatewayRegistry
-  
 }
-

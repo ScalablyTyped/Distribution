@@ -5,16 +5,17 @@ import typings.ckeditor.ckeditorStrings.ltr
 import typings.ckeditor.ckeditorStrings.rtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait elementPath extends js.Object {
+  
   val block: element = js.native
+  
   val blockLimit: element = js.native
-  val elements: js.Array[element] = js.native
-  val lastElement: element = js.native
-  val root: element = js.native
+  
   def compare(otherPath: elementPath): Boolean = js.native
+  
   def contains(query: String): element = js.native
   def contains(query: String, excludeRoot: js.UndefOr[scala.Nothing], fromTop: Boolean): element = js.native
   def contains(query: String, excludeRoot: Boolean): element = js.native
@@ -39,7 +40,14 @@ trait elementPath extends js.Object {
   def contains(query: element, excludeRoot: js.UndefOr[scala.Nothing], fromTop: Boolean): element = js.native
   def contains(query: element, excludeRoot: Boolean): element = js.native
   def contains(query: element, excludeRoot: Boolean, fromTop: Boolean): element = js.native
+  
   def direction(): ltr | rtl = js.native
+  
+  val elements: js.Array[element] = js.native
+  
   def isContextFor(tag: String): Boolean = js.native
+  
+  val lastElement: element = js.native
+  
+  val root: element = js.native
 }
-

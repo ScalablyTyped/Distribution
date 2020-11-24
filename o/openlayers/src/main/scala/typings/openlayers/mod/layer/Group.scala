@@ -4,7 +4,7 @@ import typings.openlayers.mod.Collection
 import typings.openlayers.mod.olx.layer.GroupOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   */
 class Group () extends Base {
   def this(opt_options: GroupOptions) = this()
+  
   /**
     * Returns the {@link ol.Collection collection} of {@link ol.layer.Layer layers}
     * in this group.
@@ -37,6 +38,7 @@ class Group () extends Base {
     * @api stable
     */
   def getLayers(): Collection[Base] = js.native
+  
   /**
     * Set the {@link ol.Collection collection} of {@link ol.layer.Layer layers}
     * in this group.
@@ -47,4 +49,3 @@ class Group () extends Base {
     */
   def setLayers(layers: Collection[Base]): Unit = js.native
 }
-

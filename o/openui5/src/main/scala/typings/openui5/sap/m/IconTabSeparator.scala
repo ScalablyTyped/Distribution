@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IconTabSeparator extends Element {
+  
   /**
     * Gets current value of property <code>icon</code>.The icon to display for this separator. If no icon
     * is given, a separator line is used instead.Default value is <code></code>.
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconDensityAware</code>.If set to true, it sends one or more
     * requests,trying to get the density perfect version of the image if this version ofthe image doesn't
@@ -21,6 +23,7 @@ trait IconTabSeparator extends Element {
     * @returns Value of property <code>iconDensityAware</code>
     */
   def getIconDensityAware(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.The icon to display for this separator. If no icon
     * is given, a separator line is used instead.When called with a value of <code>null</code> or
@@ -30,6 +33,7 @@ trait IconTabSeparator extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): IconTabSeparator = js.native
+  
   /**
     * Sets a new value for property <code>iconDensityAware</code>.If set to true, it sends one or more
     * requests,trying to get the density perfect version of the image if this version ofthe image doesn't
@@ -41,4 +45,3 @@ trait IconTabSeparator extends Element {
     */
   def setIconDensityAware(bIconDensityAware: Boolean): IconTabSeparator = js.native
 }
-

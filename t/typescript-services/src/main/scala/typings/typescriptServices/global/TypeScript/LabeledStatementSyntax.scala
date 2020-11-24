@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.IStatementSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.LabeledStatementSyntax")
 @js.native
@@ -17,11 +17,10 @@ class LabeledStatementSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.LabeledStatementSyntax")
 @js.native
 object LabeledStatementSyntax extends js.Object {
+  
   def create1(identifier: ISyntaxToken, statement: IStatementSyntax): typings.typescriptServices.TypeScript.LabeledStatementSyntax = js.native
 }
-

@@ -2,15 +2,16 @@ package typings.reflexbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type BoxType = typings.emotionStyledBase.mod.StyledComponent[
     typings.react.mod.DetailedHTMLProps[
       typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
       typings.std.HTMLDivElement
     ], 
-    typings.emotionStyledBase.helperMod.Omit[
+    typings.std.Omit[
       (typings.react.mod.DetailedHTMLProps[
         typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
         typings.std.HTMLDivElement

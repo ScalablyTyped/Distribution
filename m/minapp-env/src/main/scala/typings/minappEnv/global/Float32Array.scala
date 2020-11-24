@@ -7,7 +7,7 @@ import typings.minappEnv.Float32ArrayConstructor
 import typings.minappEnv.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Float32Array")
 @js.native
@@ -20,8 +20,6 @@ class Float32Array protected ()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
 }
-
 @JSGlobal("Float32Array")
 @js.native
 object Float32Array extends TopLevel[Float32ArrayConstructor]
-

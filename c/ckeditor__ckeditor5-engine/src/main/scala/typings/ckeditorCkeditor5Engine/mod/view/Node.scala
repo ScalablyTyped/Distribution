@@ -12,28 +12,37 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.uiElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/node
 @JSImport("@ckeditor/ckeditor5-engine", "view.Node")
 @js.native
 class Node () extends Item {
-  val document: Document | Null = js.native
-  val index: Double | Null = js.native
-  val nextSibling: Node | Null = js.native
-  val parent: Element | DocumentFragment | Null = js.native
-  val previousSibling: Node | Null = js.native
-  val root: Node | DocumentFragment = js.native
+  
   /* protected */ def _clone(): Node = js.native
+  
   def _fireChange(`type`: ChangeType, node: Node): Unit = js.native
+  
   /* protected */ def _remove(): Unit = js.native
+  
+  val document: Document | Null = js.native
+  
   def getAncestors(options: IncludeSelfParentFirst): js.Array[Element | DocumentFragment] = js.native
+  
   def getCommonAncestor(node: Node, options: `1`): Element | DocumentFragment | Null = js.native
+  
   def getPath(): js.Array[Double] = js.native
+  
+  val index: Double | Null = js.native
+  
   def is(`type`: String, name: String): Boolean = js.native
+  
   def isAfter(node: Node): Boolean = js.native
+  
   def isBefore(node: Node): Boolean = js.native
+  
   def isSimilar(otherElement: Node): Boolean = js.native
+  
   @JSName("is")
   def is_attributeElement(`type`: attributeElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.AttributeElement */ Boolean = js.native
   @JSName("is")
@@ -50,6 +59,14 @@ class Node () extends Item {
   def is_textProxy(`type`: textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.TextProxy */ Boolean = js.native
   @JSName("is")
   def is_uiElement(`type`: uiElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.UIElement */ Boolean = js.native
+  
+  val nextSibling: Node | Null = js.native
+  
+  val parent: Element | DocumentFragment | Null = js.native
+  
+  val previousSibling: Node | Null = js.native
+  
+  val root: Node | DocumentFragment = js.native
+  
   def toJSON(): js.Object = js.native
 }
-

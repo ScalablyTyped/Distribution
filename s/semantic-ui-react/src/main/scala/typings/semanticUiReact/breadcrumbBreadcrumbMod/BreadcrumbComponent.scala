@@ -7,11 +7,12 @@ import typings.semanticUiReact.breadcrumbDividerMod.BreadcrumbDividerProps
 import typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BreadcrumbComponent extends ComponentClass[BreadcrumbProps, ComponentState] {
+  
   var Divider: StatelessComponent[BreadcrumbDividerProps] = js.native
+  
   var Section: ComponentClass[BreadcrumbSectionProps, ComponentState] = js.native
 }
-

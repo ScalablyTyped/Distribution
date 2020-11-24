@@ -2,7 +2,7 @@ package typings.deezerSdk.DeezerSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See:
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Player extends js.Object {
+  
   /**
     * Append a track to the queue of the current player.
     *
@@ -21,6 +22,7 @@ trait Player extends js.Object {
     */
   def addToQueue(trackIds: js.Array[String]): Unit = js.native
   def addToQueue(trackIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Set the order of the current list of tracks.
     *
@@ -31,44 +33,53 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def changeTrackOrder(trackIds: js.Array[String]): Unit = js.native
+  
   /**
     * Get the position in the queue of the currently playing track.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getCurrentIndex(): Double = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getCurrentTrack(): Track = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getMute(): Boolean = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getRepeat(): RepeatMode = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getShuffle(): Boolean = js.native
+  
   /**
     * Get the tracks in the queue of the player.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getTrackList(): js.Array[Track] = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getVolume(): Double = js.native
+  
   //#endregion
   //#region The player properties
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def isPlaying(): Boolean = js.native
+  
   /**
     * Tell the player to read the next track.
     *
@@ -77,16 +88,19 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def next(): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def pause(): Unit = js.native
+  
   //#endregion
   //#region Control a player
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def play(): Unit = js.native
+  
   /**
     * Load and play an album into the current player.
     *
@@ -197,6 +211,7 @@ trait Player extends js.Object {
   ): Unit = js.native
   def playAlbum(albumId: Double, autoplay: Boolean, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playAlbum(albumId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play an episode or a list of episodes into the current player.
     *
@@ -311,6 +326,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playEpisodes(episodeIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play external MP3 sources into the current player.
     *
@@ -435,6 +451,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playExternalTracks(mp3Sources: js.Array[Mp3Source], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play a playlist into the current player.
     *
@@ -549,6 +566,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playPlaylist(playlistId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play a podcast into the current player.
     *
@@ -663,6 +681,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playPodcast(podcastId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play a radio into the current player.
     *
@@ -771,6 +790,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * The official docs for this method are incomplete, but the existing docs and a
     * {@link https://github.com/deezer/javascript-samples/blob/master/player_basic.html | usage example}
@@ -882,6 +902,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   //#region Load tracks to a player
   // There may be more overloads possible, but the defined ones should suffice for all
   // practical purposes.
@@ -999,6 +1020,7 @@ trait Player extends js.Object {
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playTracks(trackIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Tell the player to read the previous track.
     *
@@ -1007,12 +1029,14 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def prev(): Unit = js.native
+  
   /**
     * Set the position of the reader head in the currently playing track.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def seek(positionPercentFloat: Double): Unit = js.native
+  
   /**
     * Hide the queue and current track information.
     *
@@ -1023,21 +1047,24 @@ trait Player extends js.Object {
     */
   def setBlindTestMode(blindTestMode: Boolean): Unit = js.native
   def setBlindTestMode(blindTestMode: Boolean, trackInfo: typings.deezerSdk.anon.Artist): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setMute(mute: Boolean): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setRepeat(repeatMode: RepeatMode): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setShuffle(shuffle: Boolean): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setVolume(volumePercentInt: Double): Unit = js.native
 }
-

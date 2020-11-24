@@ -2,7 +2,7 @@ package typings.microsoftAjax.Sys.Serialization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serializes JavaScript types into JSON-formatted data and deserializes JSON-formatted data into JavaScript types
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait JavaScriptSerializer extends js.Object
-

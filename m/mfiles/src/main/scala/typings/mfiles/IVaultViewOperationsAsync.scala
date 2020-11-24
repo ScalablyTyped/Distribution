@@ -7,10 +7,11 @@ import typings.mfiles.MFiles.MFSearchFlags
 import typings.mfiles.MFiles.MFViewCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultViewOperationsAsync extends js.Object {
+  
   def AddOfflineFilter(OfflineFilter: IView): Unit = js.native
   def AddOfflineFilter(
     OfflineFilter: IView,
@@ -47,6 +48,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def AddTemporarySearchView(View: IView, SearchCriteria: ISearchCriteria, BaseSearchConditions: ISearchConditions): Unit = js.native
   def AddTemporarySearchView(
     View: IView,
@@ -100,6 +102,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def AddView(View: IView): Unit = js.native
   def AddView(
     View: IView,
@@ -136,6 +139,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def FindPropertyFolderLocationInView(View: Double, PropertyFolders: ITypedValues): Unit = js.native
   def FindPropertyFolderLocationInView(
     View: Double,
@@ -228,6 +232,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetBuiltInView(BuiltInView: MFBuiltInView): Unit = js.native
   def GetBuiltInView(
     BuiltInView: MFBuiltInView,
@@ -264,6 +269,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFolderContents(FolderLocation: IFolderDefs): Unit = js.native
   def GetFolderContents(
     FolderLocation: IFolderDefs,
@@ -300,6 +306,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFolderNameListing(
     ExpressionEx: IExpressionEx,
     SearchConditions: ISearchConditions,
@@ -365,6 +372,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFolderUIStateForFolder(CommonState: Boolean, FolderLocation: IFolderDefs, ObjectFolder: Boolean): Unit = js.native
   def GetFolderUIStateForFolder(
     CommonState: Boolean,
@@ -418,6 +426,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFolderUIStateForSpecialLocation(CommonState: Boolean, LocationType: MFFolderUIStateLocationType): Unit = js.native
   def GetFolderUIStateForSpecialLocation(
     CommonState: Boolean,
@@ -464,6 +473,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetMFilesURLForView(ViewID: Double, PropertyFolders: ITypedValues, SimpleURL: Boolean): Unit = js.native
   def GetMFilesURLForView(
     ViewID: Double,
@@ -570,6 +580,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyValuesOfFolder(FolderLocation: IFolderDefs, ObjectType: Double): Unit = js.native
   def GetPropertyValuesOfFolder(
     FolderLocation: IFolderDefs,
@@ -662,6 +673,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyValuesOfPath(Path: String, ObjectType: Double): Unit = js.native
   def GetPropertyValuesOfPath(
     Path: String,
@@ -754,6 +766,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetTemporarySearchByPath(RelativePath: String): Unit = js.native
   def GetTemporarySearchByPath(
     RelativePath: String,
@@ -790,6 +803,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetTemporarySearchView(ViewID: Double): Unit = js.native
   def GetTemporarySearchView(
     ViewID: Double,
@@ -862,6 +876,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetView(View: Double): Unit = js.native
   def GetView(
     View: Double,
@@ -934,6 +949,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetViewIDByGUID(ViewGUID: String): Unit = js.native
   def GetViewIDByGUID(
     ViewGUID: String,
@@ -970,6 +986,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetViewLocationInClient(View: Double, IncludeViewNameInPath: Boolean): Unit = js.native
   def GetViewLocationInClient(
     View: Double,
@@ -1062,6 +1079,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetViews(ViewCategory: MFViewCategory, AllViews: Boolean, ParentView: Double): Unit = js.native
   def GetViews(
     ViewCategory: MFViewCategory,
@@ -1115,6 +1133,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetViewsAdmin(IncludeCommonViews: Boolean, UserID: Double): Unit = js.native
   def GetViewsAdmin(
     IncludeCommonViews: Boolean,
@@ -1161,6 +1180,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ModifyTemporarySearch(TemporarySearchView: ITemporarySearchView): Unit = js.native
   def ModifyTemporarySearch(
     TemporarySearchView: ITemporarySearchView,
@@ -1197,6 +1217,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveView(View: Double): Unit = js.native
   def RemoveView(
     View: Double,
@@ -1269,6 +1290,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ResetFolderUIStateForFolder(
     ResetToProgramDefaults: Boolean,
     ResetToCommonDefaults: Boolean,
@@ -1334,6 +1356,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ResetFolderUIStateForSpecialLocation(
     ResetToProgramDefaults: Boolean,
     ResetToCommonDefaults: Boolean,
@@ -1391,6 +1414,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SaveFolderUIStateForFolder(
     SaveAsCommonSettings: Boolean,
     ResetCommonSettingsToAllUsers: Boolean,
@@ -1464,6 +1488,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SaveFolderUIStateForSpecialLocation(
     SaveAsCommonSettings: Boolean,
     ResetCommonSettingsToAllUsers: Boolean,
@@ -1529,6 +1554,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ShowViewOrPropertyFolder(ParentWindow: Double, View: Double, PropertyFolders: ITypedValues): Unit = js.native
   def ShowViewOrPropertyFolder(
     ParentWindow: Double,
@@ -1635,6 +1661,7 @@ trait IVaultViewOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateView(View: IView): Unit = js.native
   def UpdateView(
     View: IView,
@@ -1672,4 +1699,3 @@ trait IVaultViewOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

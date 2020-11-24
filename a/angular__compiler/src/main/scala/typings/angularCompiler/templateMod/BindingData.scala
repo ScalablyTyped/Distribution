@@ -4,7 +4,7 @@ import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is used when one refers to variable such as: 'let abc = nextContext(2).$implicit`.
@@ -22,46 +22,61 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BindingData extends js.Object {
+  
   var declare: Boolean = js.native
+  
   var declareLocalCallback: js.UndefOr[DeclareLocalVarCallback] = js.native
+  
   var lhs: Expression = js.native
+  
   var localRef: Boolean = js.native
+  
   var priority: Double = js.native
+  
   var retrievalLevel: Double = js.native
 }
-
 object BindingData {
+  
   @scala.inline
   def apply(declare: Boolean, lhs: Expression, localRef: Boolean, priority: Double, retrievalLevel: Double): BindingData = {
     val __obj = js.Dynamic.literal(declare = declare.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any], localRef = localRef.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], retrievalLevel = retrievalLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingData]
   }
+  
   @scala.inline
   implicit class BindingDataOps[Self <: BindingData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLhs(value: Expression): Self = this.set("lhs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLocalRef(value: Boolean): Self = this.set("localRef", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRetrievalLevel(value: Double): Self = this.set("retrievalLevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDeclareLocalCallback(value: (/* scope */ BindingScope, /* relativeLevel */ Double) => js.Array[Statement]): Self = this.set("declareLocalCallback", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteDeclareLocalCallback: Self = this.set("declareLocalCallback", js.undefined)
   }
-  
 }
-

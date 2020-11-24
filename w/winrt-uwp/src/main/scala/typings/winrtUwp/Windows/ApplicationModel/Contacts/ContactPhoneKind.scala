@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactPhoneKind extends js.Object
-
 /** Specifies the kinds of phones for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactPhoneKind")
 @js.native
 object ContactPhoneKind extends js.Object {
+  
   /** The phone number of the contact's assistant. */
   @js.native
   sealed trait assistant extends ContactPhoneKind
@@ -50,6 +50,4 @@ object ContactPhoneKind extends js.Object {
   /** The work phone of the contact. */
   @js.native
   sealed trait work extends ContactPhoneKind
-  
 }
-

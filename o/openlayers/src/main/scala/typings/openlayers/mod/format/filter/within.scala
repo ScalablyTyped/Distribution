@@ -3,11 +3,12 @@ package typings.openlayers.mod.format.filter
 import typings.openlayers.mod.geom.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.within")
 @js.native
 object within extends js.Object {
+  
   /**
     * Create a `<Within>` operator to test whether a geometry-valued property
     * is within a given geometry.
@@ -22,4 +23,3 @@ object within extends js.Object {
   def apply(geometryName: String, geometry: Geometry): Within_ = js.native
   def apply(geometryName: String, geometry: Geometry, opt_srsName: String): Within_ = js.native
 }
-

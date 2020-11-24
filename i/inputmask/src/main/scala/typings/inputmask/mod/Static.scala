@@ -8,7 +8,7 @@ import typings.inputmask.mod.global.HTMLElement
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static
@@ -26,6 +26,7 @@ Instantiable1[(/* opts */ Options) | (/* maskOrAlias */ String), Instance]
   */
 Instantiable0[Instance]
      with Instantiable2[/* maskOrAlias */ String, /* opts */ Options, Instance] {
+  
   /**
     * Creates a new Inputmask instance.
     *
@@ -41,18 +42,22 @@ Instantiable0[Instance]
   def apply(maskOrAlias: String): Instance = js.native
   def apply(maskOrAlias: String, opts: Options): Instance = js.native
   def apply(opts: Options): Instance = js.native
+  
   /**
     * Extends the set of available mask aliases.
     */
   def extendAliases(aliases: StringDictionary[Options]): Unit = js.native
+  
   /**
     * Extends the default inputmask options.
     */
   def extendDefaults(opts: Options): Unit = js.native
+  
   /**
     * Extends the set of available definitions.
     */
   def extendDefinitions(definitions: StringDictionary[Definition]): Unit = js.native
+  
   /**
     * Instead of masking an input element it is also possible to use the inputmask for formatting given values.
     * Think of formatting values to show in jqGrid or on other elements then inputs.
@@ -61,6 +66,7 @@ Instantiable0[Instance]
     * @param opts Mask options.
     */
   def format(value: String, opts: Options): String = js.native
+  
   /**
     * Validate a given value against the mask.
     *
@@ -68,12 +74,14 @@ Instantiable0[Instance]
     * @param opts Mask options.
     */
   def isValid(value: String, opts: Options): Boolean = js.native
+  
   /**
     * Remove the inputmask.
     */
   def remove(selectorOrElement: String): Unit = js.native
   def remove(selectorOrElement: HTMLElement): Unit = js.native
   def remove(selectorOrElement: ArrayLike[HTMLElement]): Unit = js.native
+  
   /**
     * The setvalue functionality is to set a value to the inputmask like you would do with jQuery.val, BUT it will
     * trigger the internal event used by the inputmask always, whatever the case. This is particular usefull when
@@ -85,6 +93,7 @@ Instantiable0[Instance]
   def setValue(selectorOrElement: String, value: String): Unit = js.native
   def setValue(selectorOrElement: HTMLElement, value: String): Unit = js.native
   def setValue(selectorOrElement: ArrayLike[HTMLElement], value: String): Unit = js.native
+  
   /**
     * Unmask a given value against the mask.
     *
@@ -93,4 +102,3 @@ Instantiable0[Instance]
     */
   def unmask(value: String, opts: Options): String = js.native
 }
-

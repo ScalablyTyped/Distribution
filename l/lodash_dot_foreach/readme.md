@@ -11,8 +11,8 @@ The lodash method `_.forEach` exported as a module.
 | Full name          | lodash.foreach |
 | Keywords           | lodash-modularized, foreach |
 | # releases         | 0 |
-| # dependents       | 434 |
-| # downloads        | 75214726 |
+| # dependents       | 452 |
+| # downloads        | 90011913 |
 | # stars            | 0 |
 
 ## Links

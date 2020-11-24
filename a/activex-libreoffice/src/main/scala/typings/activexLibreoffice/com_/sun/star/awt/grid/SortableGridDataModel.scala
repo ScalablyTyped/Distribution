@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides a default implementation of a {@link XSortableGridData} .
@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
 trait SortableGridDataModel
   extends XMutableGridDataModel
      with XSortableGridData {
+  
   /**
     * creates a new instance of the `SortableGridDataModel`
     *
@@ -41,6 +42,7 @@ trait SortableGridDataModel
     * @throws com::sun::star::lang::IllegalArgumentException if the given `DelegatorModel` is `NULL`
     */
   def create(DelegatorModel: XMutableGridDataModel): Unit = js.native
+  
   /**
     * creates a new instance of the ScortableDefaultGridDataModel, passing a collator to be used for string comparison.
     * @param DelegatorModel is the data model to which read requests are delegated
@@ -49,8 +51,8 @@ trait SortableGridDataModel
     */
   def createWithCollator(DelegatorModel: XMutableGridDataModel, Collator: XCollator): Unit = js.native
 }
-
 object SortableGridDataModel {
+  
   @scala.inline
   def apply(
     ColumnCount: Double,
@@ -89,22 +91,26 @@ object SortableGridDataModel {
     val __obj = js.Dynamic.literal(ColumnCount = ColumnCount.asInstanceOf[js.Any], CurrentSortOrder = CurrentSortOrder.asInstanceOf[js.Any], RowCount = RowCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addGridDataListener = js.Any.fromFunction1(addGridDataListener), addRow = js.Any.fromFunction2(addRow), addRows = js.Any.fromFunction2(addRows), create = js.Any.fromFunction1(create), createClone = js.Any.fromFunction0(createClone), createWithCollator = js.Any.fromFunction2(createWithCollator), dispose = js.Any.fromFunction0(dispose), getCellData = js.Any.fromFunction2(getCellData), getCellToolTip = js.Any.fromFunction2(getCellToolTip), getCurrentSortOrder = js.Any.fromFunction0(getCurrentSortOrder), getRowData = js.Any.fromFunction1(getRowData), getRowHeading = js.Any.fromFunction1(getRowHeading), insertRow = js.Any.fromFunction3(insertRow), insertRows = js.Any.fromFunction3(insertRows), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAllRows = js.Any.fromFunction0(removeAllRows), removeColumnSort = js.Any.fromFunction0(removeColumnSort), removeEventListener = js.Any.fromFunction1(removeEventListener), removeGridDataListener = js.Any.fromFunction1(removeGridDataListener), removeRow = js.Any.fromFunction1(removeRow), sortByColumn = js.Any.fromFunction2(sortByColumn), updateCellData = js.Any.fromFunction3(updateCellData), updateCellToolTip = js.Any.fromFunction3(updateCellToolTip), updateRowData = js.Any.fromFunction3(updateRowData), updateRowHeading = js.Any.fromFunction2(updateRowHeading), updateRowToolTip = js.Any.fromFunction2(updateRowToolTip))
     __obj.asInstanceOf[SortableGridDataModel]
   }
+  
   @scala.inline
   implicit class SortableGridDataModelOps[Self <: SortableGridDataModel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreate(value: XMutableGridDataModel => Unit): Self = this.set("create", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateWithCollator(value: (XMutableGridDataModel, XCollator) => Unit): Self = this.set("createWithCollator", js.Any.fromFunction2(value))
   }
-  
 }
-

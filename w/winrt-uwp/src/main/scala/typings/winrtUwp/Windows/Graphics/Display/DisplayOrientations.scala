@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Display
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DisplayOrientations extends js.Object
-
 /** Describes the orientation of a rectangular monitor. */
 @JSGlobal("Windows.Graphics.Display.DisplayOrientations")
 @js.native
 object DisplayOrientations extends js.Object {
+  
   /** Specifies that the monitor is oriented in landscape mode where the width of the display viewing area is greater than the height. */
   @js.native
   sealed trait landscape extends DisplayOrientations
@@ -30,6 +30,4 @@ object DisplayOrientations extends js.Object {
   /** Specifies that the monitor rotated another 90 degrees in the clockwise direction (to equal 270 degrees) to orient the display in portrait mode where the height of the display viewing area is greater than the width. This portrait mode is flipped 180 degrees from the Portrait mode. */
   @js.native
   sealed trait portraitFlipped extends DisplayOrientations
-  
 }
-

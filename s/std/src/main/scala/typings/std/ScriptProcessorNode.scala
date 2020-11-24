@@ -3,15 +3,12 @@ package typings.std
 import typings.std.stdStrings.audioprocess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows the generation, processing, or analyzing of audio using JavaScript. */
 @js.native
 trait ScriptProcessorNode extends AudioNode {
-  /** @deprecated */
-  val bufferSize: Double = js.native
-  /** @deprecated */
-  var onaudioprocess: (js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _]) | Null = js.native
+  
   @JSName("addEventListener")
   def addEventListener_audioprocess(
     `type`: audioprocess,
@@ -29,6 +26,13 @@ trait ScriptProcessorNode extends AudioNode {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /** @deprecated */
+  val bufferSize: Double = js.native
+  
+  /** @deprecated */
+  var onaudioprocess: (js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _]) | Null = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_audioprocess(
     `type`: audioprocess,
@@ -47,4 +51,3 @@ trait ScriptProcessorNode extends AudioNode {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

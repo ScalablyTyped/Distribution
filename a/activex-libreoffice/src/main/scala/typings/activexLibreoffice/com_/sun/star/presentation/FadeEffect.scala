@@ -59,7 +59,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the fade effects to fade one page into another. */
 /* Rewritten from type alias, can be one of: 
@@ -122,8 +122,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`33`
 */
 trait FadeEffect extends js.Object
-
 object FadeEffect {
+  
   /**
     * use the animation effect "Clockwise".
     *
@@ -131,6 +131,7 @@ object FadeEffect {
     */
   @scala.inline
   def CLOCKWISE: `17` = 17.asInstanceOf[`17`]
+  
   /**
     * use the animation effect "Close Horizontal".
     *
@@ -138,6 +139,7 @@ object FadeEffect {
     */
   @scala.inline
   def CLOSE_HORIZONTAL: `24` = 24.asInstanceOf[`24`]
+  
   /**
     * use the animation effect "Close Vertical".
     *
@@ -145,6 +147,7 @@ object FadeEffect {
     */
   @scala.inline
   def CLOSE_VERTICAL: `23` = 23.asInstanceOf[`23`]
+  
   /**
     * use the animation effect "Counter Clockwise".
     *
@@ -152,6 +155,7 @@ object FadeEffect {
     */
   @scala.inline
   def COUNTERCLOCKWISE: `18` = 18.asInstanceOf[`18`]
+  
   /**
     * use the animation effect "Spiral Inward Left".
     *
@@ -159,6 +163,7 @@ object FadeEffect {
     */
   @scala.inline
   def DISSOLVE: `31` = 31.asInstanceOf[`31`]
+  
   /**
     * use the animation effect "Fade from Bottom".
     *
@@ -166,6 +171,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_BOTTOM: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * use the animation effect "Fade from Center".
     *
@@ -173,6 +179,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_CENTER: `6` = 6.asInstanceOf[`6`]
+  
   /**
     * use the animation effect "Fade from Left".
     *
@@ -180,6 +187,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_LEFT: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * use the animation effect "Fade from Lower Left".
     *
@@ -187,6 +195,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_LOWERLEFT: `21` = 21.asInstanceOf[`21`]
+  
   /**
     * use the animation effect "Fade from Lower Right".
     *
@@ -194,6 +203,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_LOWERRIGHT: `22` = 22.asInstanceOf[`22`]
+  
   /**
     * use the animation effect "Fade from Right".
     *
@@ -201,6 +211,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_RIGHT: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * use the animation effect "Fade from Top".
     *
@@ -208,6 +219,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_TOP: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * use the animation effect "Fade from Upper Left".
     *
@@ -215,6 +227,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_UPPERLEFT: `19` = 19.asInstanceOf[`19`]
+  
   /**
     * use the animation effect "Fade from Upper Right".
     *
@@ -222,6 +235,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_FROM_UPPERRIGHT: `20` = 20.asInstanceOf[`20`]
+  
   /**
     * use the animation effect "Fade to Center".
     *
@@ -229,6 +243,7 @@ object FadeEffect {
     */
   @scala.inline
   def FADE_TO_CENTER: `5` = 5.asInstanceOf[`5`]
+  
   /**
     * use the animation effect "Horizontal Checkerboard".
     *
@@ -236,6 +251,7 @@ object FadeEffect {
     */
   @scala.inline
   def HORIZONTAL_CHECKERBOARD: `56` = 56.asInstanceOf[`56`]
+  
   /**
     * use the animation effect "Horizontal Lines".
     *
@@ -243,6 +259,7 @@ object FadeEffect {
     */
   @scala.inline
   def HORIZONTAL_LINES: `42` = 42.asInstanceOf[`42`]
+  
   /**
     * use the animation effect "Horizontal Stripes".
     *
@@ -250,6 +267,7 @@ object FadeEffect {
     */
   @scala.inline
   def HORIZONTAL_STRIPES: `16` = 16.asInstanceOf[`16`]
+  
   /**
     * use the animation effect "Move from Bottom".
     *
@@ -257,6 +275,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_BOTTOM: `10` = 10.asInstanceOf[`10`]
+  
   /**
     * use the animation effect "Move from Left".
     *
@@ -264,6 +283,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_LEFT: `7` = 7.asInstanceOf[`7`]
+  
   /**
     * use the animation effect "Move from Lower Left".
     *
@@ -271,6 +291,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_LOWERLEFT: `46` = 46.asInstanceOf[`46`]
+  
   /**
     * use the animation effect "Move from Lower Right".
     *
@@ -278,6 +299,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_LOWERRIGHT: `45` = 45.asInstanceOf[`45`]
+  
   /**
     * use the animation effect "Move from Right".
     *
@@ -285,6 +307,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_RIGHT: `9` = 9.asInstanceOf[`9`]
+  
   /**
     * use the animation effect "Move from Top".
     *
@@ -292,6 +315,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_TOP: `8` = 8.asInstanceOf[`8`]
+  
   /**
     * use the animation effect "Move from Upper Left".
     *
@@ -299,6 +323,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_UPPERLEFT: `43` = 43.asInstanceOf[`43`]
+  
   /**
     * use the animation effect "Move from Upper Right".
     *
@@ -306,6 +331,7 @@ object FadeEffect {
     */
   @scala.inline
   def MOVE_FROM_UPPERRIGHT: `44` = 44.asInstanceOf[`44`]
+  
   /**
     * use no animation effects.
     *
@@ -315,6 +341,7 @@ object FadeEffect {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * use the animation effect "Open Horizontal".
     *
@@ -322,6 +349,7 @@ object FadeEffect {
     */
   @scala.inline
   def OPEN_HORIZONTAL: `26` = 26.asInstanceOf[`26`]
+  
   /**
     * use the animation effect "Open Vertical".
     *
@@ -329,6 +357,7 @@ object FadeEffect {
     */
   @scala.inline
   def OPEN_VERTICAL: `25` = 25.asInstanceOf[`25`]
+  
   /**
     * use the animation effect "Random".
     *
@@ -336,18 +365,23 @@ object FadeEffect {
     */
   @scala.inline
   def RANDOM: `36` = 36.asInstanceOf[`36`]
+  
   /** use the fade effect "Roll from Bottom". */
   @scala.inline
   def ROLL_FROM_BOTTOM: `14` = 14.asInstanceOf[`14`]
+  
   /** use the fade effect "Roll from Left". */
   @scala.inline
   def ROLL_FROM_LEFT: `11` = 11.asInstanceOf[`11`]
+  
   /** use the fade effect "Roll from Right". */
   @scala.inline
   def ROLL_FROM_RIGHT: `13` = 13.asInstanceOf[`13`]
+  
   /** use the fade effect "Roll from Top". */
   @scala.inline
   def ROLL_FROM_TOP: `12` = 12.asInstanceOf[`12`]
+  
   /**
     * use the animation effect "Spiral Inward Left".
     *
@@ -355,6 +389,7 @@ object FadeEffect {
     */
   @scala.inline
   def SPIRALIN_LEFT: `27` = 27.asInstanceOf[`27`]
+  
   /**
     * use the animation effect "Spiral Inward Right".
     *
@@ -362,6 +397,7 @@ object FadeEffect {
     */
   @scala.inline
   def SPIRALIN_RIGHT: `28` = 28.asInstanceOf[`28`]
+  
   /**
     * use the animation effect "Spiral Outward Left".
     *
@@ -369,6 +405,7 @@ object FadeEffect {
     */
   @scala.inline
   def SPIRALOUT_LEFT: `29` = 29.asInstanceOf[`29`]
+  
   /**
     * use the animation effect "Spiral Outward Right".
     *
@@ -376,6 +413,7 @@ object FadeEffect {
     */
   @scala.inline
   def SPIRALOUT_RIGHT: `30` = 30.asInstanceOf[`30`]
+  
   /**
     * use the animation effect "Stretch From Bottom".
     *
@@ -383,6 +421,7 @@ object FadeEffect {
     */
   @scala.inline
   def STRETCH_FROM_BOTTOM: `40` = 40.asInstanceOf[`40`]
+  
   /**
     * use the animation effect "Stretch From Left".
     *
@@ -390,6 +429,7 @@ object FadeEffect {
     */
   @scala.inline
   def STRETCH_FROM_LEFT: `37` = 37.asInstanceOf[`37`]
+  
   /**
     * use the animation effect "Stretch From Right".
     *
@@ -397,6 +437,7 @@ object FadeEffect {
     */
   @scala.inline
   def STRETCH_FROM_RIGHT: `39` = 39.asInstanceOf[`39`]
+  
   /**
     * use the animation effect "Stretch From Top".
     *
@@ -404,30 +445,39 @@ object FadeEffect {
     */
   @scala.inline
   def STRETCH_FROM_TOP: `38` = 38.asInstanceOf[`38`]
+  
   /** use the fade effect "Uncover to Bottom". */
   @scala.inline
   def UNCOVER_TO_BOTTOM: `53` = 53.asInstanceOf[`53`]
+  
   /** use the fade effect "Uncover to Left". */
   @scala.inline
   def UNCOVER_TO_LEFT: `47` = 47.asInstanceOf[`47`]
+  
   /** use the fade effect "Uncover to Lower Left". */
   @scala.inline
   def UNCOVER_TO_LOWERLEFT: `54` = 54.asInstanceOf[`54`]
+  
   /** use the fade effect "Uncover to Lower Right". */
   @scala.inline
   def UNCOVER_TO_LOWERRIGHT: `52` = 52.asInstanceOf[`52`]
+  
   /** use the fade effect "Uncover to Right". */
   @scala.inline
   def UNCOVER_TO_RIGHT: `51` = 51.asInstanceOf[`51`]
+  
   /** use the fade effect "Uncover to Top". */
   @scala.inline
   def UNCOVER_TO_TOP: `49` = 49.asInstanceOf[`49`]
+  
   /** use the fade effect "Uncover to Upper Left". */
   @scala.inline
   def UNCOVER_TO_UPPERLEFT: `48` = 48.asInstanceOf[`48`]
+  
   /** use the fade effect "Uncover to Upper Right". */
   @scala.inline
   def UNCOVER_TO_UPPERRIGHT: `50` = 50.asInstanceOf[`50`]
+  
   /**
     * use the animation effect "Vertical Checkerboard".
     *
@@ -435,6 +485,7 @@ object FadeEffect {
     */
   @scala.inline
   def VERTICAL_CHECKERBOARD: `55` = 55.asInstanceOf[`55`]
+  
   /**
     * use the animation effect "Vertical Lines".
     *
@@ -442,6 +493,7 @@ object FadeEffect {
     */
   @scala.inline
   def VERTICAL_LINES: `41` = 41.asInstanceOf[`41`]
+  
   /**
     * use the animation effect "Vertical Stripes".
     *
@@ -449,6 +501,7 @@ object FadeEffect {
     */
   @scala.inline
   def VERTICAL_STRIPES: `15` = 15.asInstanceOf[`15`]
+  
   /**
     * use the animation effect "Wavy Line from Button".
     *
@@ -456,6 +509,7 @@ object FadeEffect {
     */
   @scala.inline
   def WAVYLINE_FROM_BOTTOM: `35` = 35.asInstanceOf[`35`]
+  
   /**
     * use the animation effect "Wavy Line from Left".
     *
@@ -463,6 +517,7 @@ object FadeEffect {
     */
   @scala.inline
   def WAVYLINE_FROM_LEFT: `32` = 32.asInstanceOf[`32`]
+  
   /**
     * use the animation effect "Wavy Line from Right".
     *
@@ -470,6 +525,7 @@ object FadeEffect {
     */
   @scala.inline
   def WAVYLINE_FROM_RIGHT: `34` = 34.asInstanceOf[`34`]
+  
   /**
     * use the animation effect "Wavy Line from Top".
     *
@@ -478,4 +534,3 @@ object FadeEffect {
   @scala.inline
   def WAVYLINE_FROM_TOP: `33` = 33.asInstanceOf[`33`]
 }
-

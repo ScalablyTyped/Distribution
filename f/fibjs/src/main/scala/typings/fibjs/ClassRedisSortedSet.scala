@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassRedisSortedSet extends ClassObject {
+  
   /**
     * 
     * @brief 将一个或多个 member 元素及其 score 值加入到有序集当中
@@ -29,6 +30,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     */
   def add(sms: js.Object): Double = js.native
+  
   /**
     * 
     * @brief 返回有序集中， score 值在 min 和 max 之间(默认包括 score 值等于 min 或 max )的成员的数量
@@ -39,6 +41,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     */
   def count(min: Double, max: Double): Double = js.native
+  
   /**
     * 
     * @brief 为有序集的成员 member 的 score 值加上增量 num
@@ -50,6 +53,7 @@ trait ClassRedisSortedSet extends ClassObject {
     */
   def incr(member: ClassBuffer): ClassBuffer = js.native
   def incr(member: ClassBuffer, num: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 返回有序集中元素的数量
@@ -58,6 +62,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     */
   def len(): Double = js.native
+  
   /**
     * 
     * @brief 返回有序集中，指定区间内的成员，成员的位置按 score 值递增(从小到大)来排序
@@ -70,6 +75,7 @@ trait ClassRedisSortedSet extends ClassObject {
     */
   def range(start: Double, stop: Double): js.Array[_] = js.native
   def range(start: Double, stop: Double, withScores: Boolean): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 返回有序集中，指定区间内的成员，成员的位置按 score 值递减(从大到小)来排序
@@ -82,6 +88,7 @@ trait ClassRedisSortedSet extends ClassObject {
     */
   def rangeRev(start: Double, stop: Double): js.Array[_] = js.native
   def rangeRev(start: Double, stop: Double, withScores: Boolean): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 有序集中成员 member 的排名。其中有序集成员按 score 值递增(从小到大)顺序排列
@@ -91,6 +98,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     */
   def rank(member: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 有序集中成员 member 的排名。其中有序集成员按 score 值递减(从大到小)顺序排列
@@ -100,6 +108,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     */
   def rankRev(member: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 移除有序集中的一个或多个 member 元素
@@ -118,6 +127,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     */
   def remove(members: js.Array[_]): Double = js.native
+  
   /**
     * 
     * @brief 返回有序集中，成员 member 的 score 值
@@ -128,4 +138,3 @@ trait ClassRedisSortedSet extends ClassObject {
     */
   def score(member: ClassBuffer): ClassBuffer = js.native
 }
-

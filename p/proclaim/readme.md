@@ -12,7 +12,7 @@ A simple assertion library for server and client side JavaScript
 | Keywords           | assert, test |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 668210 |
+| # downloads        | 1082316 |
 | # stars            | 0 |
 
 ## Links

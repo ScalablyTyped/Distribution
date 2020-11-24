@@ -2,7 +2,7 @@ package typings.ndnJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "Data")
 @js.native
@@ -12,4 +12,3 @@ class Data ()
   def this(name: String) = this()
   def this(name: typings.ndnJs.nameMod.Name) = this()
 }
-

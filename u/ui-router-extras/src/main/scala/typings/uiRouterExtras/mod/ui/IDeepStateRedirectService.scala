@@ -3,13 +3,14 @@ package typings.uiRouterExtras.mod.ui
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * $deepStateRedirect
   */
 @js.native
 trait IDeepStateRedirectService extends js.Object {
+  
   /*
     * This method resets stored $deepStateRedirect data so following transitions will behave like there have not been previous transitions.
     * @param stateParams Can be passed in to select specific states to reset:
@@ -20,4 +21,3 @@ trait IDeepStateRedirectService extends js.Object {
   def reset(stateName: String): Unit = js.native
   def reset(stateName: String, stateParams: StringDictionary[String | js.Array[String]]): Unit = js.native
 }
-

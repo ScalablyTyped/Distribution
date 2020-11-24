@@ -10,9 +10,9 @@ Transform a string of css rules into a style object
 | ------------------ | :-------------: |
 | Full name          | css-to-style |
 | Keywords           | css, object, parse, react, string, style |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 25418 |
+| # downloads        | 57409 |
 | # stars            | 0 |
 
 ## Links

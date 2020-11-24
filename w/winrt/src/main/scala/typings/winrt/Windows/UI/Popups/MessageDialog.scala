@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MessageDialog extends IMessageDialog
-
 object MessageDialog {
+  
   @scala.inline
   def apply(
     cancelCommandIndex: Double,
@@ -24,4 +24,3 @@ object MessageDialog {
     __obj.asInstanceOf[MessageDialog]
   }
 }
-

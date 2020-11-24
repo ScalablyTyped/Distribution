@@ -10,9 +10,9 @@ Divider component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-divider |
 | Keywords           | ink, ink-component, ink-divider, ink-cli |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 17 |
-| # downloads        | 31929 |
+| # downloads        | 38851 |
 | # stars            | 0 |
 
 ## Links

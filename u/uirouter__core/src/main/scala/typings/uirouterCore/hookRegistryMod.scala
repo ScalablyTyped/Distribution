@@ -13,11 +13,21 @@ import typings.uirouterCore.transitionServiceMod.TransitionService
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/transition/hookRegistry", JSImport.Namespace)
 @js.native
 object hookRegistryMod extends js.Object {
+  
+  def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
+    /* matchObject */ js.Any, 
+    /* callback */ js.Any, 
+    /* options */ js.UndefOr[js.Object], 
+    _
+  ] = js.native
+  
+  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = js.native
+  
   @js.native
   class RegisteredHook protected () extends js.Object {
     def this(
@@ -35,7 +45,9 @@ object hookRegistryMod extends js.Object {
       removeHookFromRegistry: js.Function1[/* hook */ RegisteredHook, Unit],
       options: HookRegOptions
     ) = this()
+    
     var _deregistered: Boolean = js.native
+    
     /**
       * Gets the default match criteria (all `true`)
       *
@@ -51,6 +63,7 @@ object hookRegistryMod extends js.Object {
       * }
       */
     var _getDefaultMatchCriteria: js.Any = js.native
+    
     /**
       * Gets matching nodes as [[IMatchingNodes]]
       *
@@ -67,6 +80,7 @@ object hookRegistryMod extends js.Object {
       * ```
       */
     var _getMatchingNodes: js.Any = js.native
+    
     /**
       * Gets the matching [[PathNode]]s
       *
@@ -83,15 +97,21 @@ object hookRegistryMod extends js.Object {
       * being entered.
       */
     var _matchingNodes: js.Any = js.native
+    
     var bind: js.Any = js.native
+    
     var callback: HookFn = js.native
-    var eventType: TransitionEventType = js.native
-    var invokeCount: Double = js.native
-    var invokeLimit: Double = js.native
-    var matchCriteria: HookMatchCriteria = js.native
-    var priority: Double = js.native
-    var tranSvc: TransitionService = js.native
+    
     def deregister(): Unit = js.native
+    
+    var eventType: TransitionEventType = js.native
+    
+    var invokeCount: Double = js.native
+    
+    var invokeLimit: Double = js.native
+    
+    var matchCriteria: HookMatchCriteria = js.native
+    
     /**
       * Determines if this hook's [[matchCriteria]] match the given [[TreeChanges]]
       *
@@ -99,15 +119,11 @@ object hookRegistryMod extends js.Object {
       * are the matching [[PathNode]]s for each [[HookMatchCriterion]] (to, from, exiting, retained, entering)
       */
     def matches(treeChanges: TreeChanges, transition: Transition): IMatchingNodes = js.native
+    
+    var priority: Double = js.native
+    
     def removeHookFromRegistry(hook: RegisteredHook): Unit = js.native
+    
+    var tranSvc: TransitionService = js.native
   }
-  
-  def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
-    /* matchObject */ js.Any, 
-    /* callback */ js.Any, 
-    /* options */ js.UndefOr[js.Object], 
-    _
-  ] = js.native
-  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = js.native
 }
-

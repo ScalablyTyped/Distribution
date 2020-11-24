@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Clusters")
 @js.native
 class ResourceProjectsHistoriesExecutionsClusters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * toolresults.projects.histories.executions.clusters.get
     * @desc Retrieves a single screenshot cluster by its ID
@@ -47,6 +49,7 @@ class ResourceProjectsHistoriesExecutionsClusters protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaScreenshotCluster]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.clusters.list
     * @desc Lists Screenshot Clusters  Returns the list of screenshot clusters
@@ -87,4 +90,3 @@ class ResourceProjectsHistoriesExecutionsClusters protected () extends js.Object
     callback: BodyResponseCallback[SchemaListScreenshotClustersResponse]
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Rename files using some transformers.
 | Full name          | rename |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 353094 |
+| # dependents       | 48 |
+| # downloads        | 640500 |
 | # stars            | 4 |
 
 ## Links

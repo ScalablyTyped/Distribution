@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.Mocha.TestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a test case.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha.it")
 @js.native
 object it extends TopLevel[TestFunction]
-

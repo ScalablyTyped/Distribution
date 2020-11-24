@@ -5,10 +5,11 @@ import typings.shelljs.anon.ExecOptionsasyncfalseunde
 import typings.shelljs.anon.ExecOptionsasynctrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExecFunction extends js.Object {
+  
   /**
     * Executes the given command synchronously.
     *
@@ -59,4 +60,3 @@ trait ExecFunction extends js.Object {
     */
   def apply(command: String, options: ExecOptions, callback: ExecCallback): ChildProcess = js.native
 }
-

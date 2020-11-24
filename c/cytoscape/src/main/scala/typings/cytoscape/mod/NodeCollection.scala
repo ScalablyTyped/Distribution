@@ -2,7 +2,7 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  nodes -> Cy.NodeCollection
@@ -30,4 +30,3 @@ trait NodeCollection
      with NodeCollectionTraversing
      with NodeCollectionCompound
      with _CollectionArgument
-

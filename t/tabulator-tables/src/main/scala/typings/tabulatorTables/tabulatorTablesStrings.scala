@@ -11,16 +11,431 @@ import typings.tabulatorTables.Tabulator.ScrollToColumnPosition
 import typings.tabulatorTables.Tabulator.ScrollToRowPostition
 import typings.tabulatorTables.Tabulator.SortDirection
 import typings.tabulatorTables.Tabulator.StandardValidatorType
+import typings.tabulatorTables.Tabulator.TextDirection
 import typings.tabulatorTables.Tabulator.VerticalAlign
-import typings.tabulatorTables.Tabulator.VisibleRowRangeLookup
 import typings.tabulatorTables.Tabulator._ColumnCalc
 import typings.tabulatorTables.Tabulator._Editor
 import typings.tabulatorTables.Tabulator._Formatter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabulatorTablesStrings {
+  
+  @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
+  
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
+  
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
+  
+  @scala.inline
+  def avg: avg = "avg".asInstanceOf[avg]
+  
+  @scala.inline
+  def blocking: blocking = "blocking".asInstanceOf[blocking]
+  
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def buttonCross: buttonCross = "buttonCross".asInstanceOf[buttonCross]
+  
+  @scala.inline
+  def buttonTick: buttonTick = "buttonTick".asInstanceOf[buttonTick]
+  
+  @scala.inline
+  def cell: cell = "cell".asInstanceOf[cell]
+  
+  @scala.inline
+  def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
+  
+  @scala.inline
+  def collapse: collapse = "collapse".asInstanceOf[collapse]
+  
+  @scala.inline
+  def color: color = "color".asInstanceOf[color]
+  
+  @scala.inline
+  def columns: columns = "columns".asInstanceOf[columns]
+  
+  @scala.inline
+  def concat: concat = "concat".asInstanceOf[concat]
+  
+  @scala.inline
+  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
+  
+  @scala.inline
+  def csv: csv = "csv".asInstanceOf[csv]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  
+  @scala.inline
+  def datetimediff: datetimediff = "datetimediff".asInstanceOf[datetimediff]
+  
+  @scala.inline
+  def days: days = "days".asInstanceOf[days]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  
+  @scala.inline
+  def edit: edit = "edit".asInstanceOf[edit]
+  
+  @scala.inline
+  def editor: editor = "editor".asInstanceOf[editor]
+  
+  @scala.inline
+  def ends: ends = "ends".asInstanceOf[ends]
+  
+  @scala.inline
+  def exists: exists = "exists".asInstanceOf[exists]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  
+  @scala.inline
+  def fitColumns: fitColumns = "fitColumns".asInstanceOf[fitColumns]
+  
+  @scala.inline
+  def fitData: fitData = "fitData".asInstanceOf[fitData]
+  
+  @scala.inline
+  def fitDataFill: fitDataFill = "fitDataFill".asInstanceOf[fitDataFill]
+  
+  @scala.inline
+  def fitDataStretch: fitDataStretch = "fitDataStretch".asInstanceOf[fitDataStretch]
+  
+  @scala.inline
+  def fitDataTable: fitDataTable = "fitDataTable".asInstanceOf[fitDataTable]
+  
+  @scala.inline
+  def flip: flip = "flip".asInstanceOf[flip]
+  
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  
+  @scala.inline
+  def form: form = "form".asInstanceOf[form]
+  
+  @scala.inline
+  def group: group = "group".asInstanceOf[group]
+  
+  @scala.inline
+  def handle: handle = "handle".asInstanceOf[handle]
+  
+  @scala.inline
+  def header: header = "header".asInstanceOf[header]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def highlight: highlight = "highlight".asInstanceOf[highlight]
+  
+  @scala.inline
+  def hours: hours = "hours".asInstanceOf[hours]
+  
+  @scala.inline
+  def hover: hover = "hover".asInstanceOf[hover]
+  
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  
+  @scala.inline
+  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
+  
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  
+  @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def length: length = "length".asInstanceOf[length]
+  
+  @scala.inline
+  def like: like = "like".asInstanceOf[like]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def load: load = "load".asInstanceOf[load]
+  
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def minutes: minutes = "minutes".asInstanceOf[minutes]
+  
+  @scala.inline
+  def money: money = "money".asInstanceOf[money]
+  
+  @scala.inline
+  def months: months = "months".asInstanceOf[months]
+  
+  @scala.inline
+  def nearest: nearest = "nearest".asInstanceOf[nearest]
+  
+  @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  
+  @scala.inline
+  def paste: paste = "paste".asInstanceOf[paste]
+  
+  @scala.inline
+  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @scala.inline
+  def plain: plain = "plain".asInstanceOf[plain]
+  
+  @scala.inline
+  def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def prev: prev = "prev".asInstanceOf[prev]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def range: range = "range".asInstanceOf[range]
+  
+  @scala.inline
+  def regex: regex = "regex".asInstanceOf[regex]
+  
+  @scala.inline
+  def remote: remote = "remote".asInstanceOf[remote]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
+  
+  @scala.inline
+  def responsiveCollapse: responsiveCollapse = "responsiveCollapse".asInstanceOf[responsiveCollapse]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rowAdd: rowAdd = "rowAdd".asInstanceOf[rowAdd]
+  
+  @scala.inline
+  def rowDelete: rowDelete = "rowDelete".asInstanceOf[rowDelete]
+  
+  @scala.inline
+  def rowMoved: rowMoved = "rowMoved".asInstanceOf[rowMoved]
+  
+  @scala.inline
+  def rowSelection: rowSelection = "rowSelection".asInstanceOf[rowSelection]
+  
+  @scala.inline
+  def rownum: rownum = "rownum".asInstanceOf[rownum]
+  
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def seconds: seconds = "seconds".asInstanceOf[seconds]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def selected: selected = "selected".asInstanceOf[selected]
+  
+  @scala.inline
+  def sort: sort = "sort".asInstanceOf[sort]
+  
+  @scala.inline
+  def star: star = "star".asInstanceOf[star]
+  
+  @scala.inline
+  def starts: starts = "starts".asInstanceOf[starts]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  
+  @scala.inline
+  def table: table = "table".asInstanceOf[table]
+  
+  @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  
+  @scala.inline
+  def tickCross: tickCross = "tickCross".asInstanceOf[tickCross]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def traffic: traffic = "traffic".asInstanceOf[traffic]
+  
+  @scala.inline
+  def unique: unique = "unique".asInstanceOf[unique]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
+  
+  @scala.inline
+  def weeks: weeks = "weeks".asInstanceOf[weeks]
+  
+  @scala.inline
+  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
+  
+  @scala.inline
+  def years: years = "years".asInstanceOf[years]
+  
   @js.native
   sealed trait Equalssign extends FilterType
   
@@ -46,9 +461,7 @@ object tabulatorTablesStrings {
   sealed trait POST extends HttpMethod
   
   @js.native
-  sealed trait active
-    extends RowRangeLookup
-       with VisibleRowRangeLookup
+  sealed trait active extends RowRangeLookup
   
   @js.native
   sealed trait add extends js.Object
@@ -67,6 +480,9 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait asc extends SortDirection
+  
+  @js.native
+  sealed trait auto extends TextDirection
   
   @js.native
   sealed trait autocomplete extends _Editor
@@ -284,6 +700,9 @@ object tabulatorTablesStrings {
   sealed trait lookup extends _Formatter
   
   @js.native
+  sealed trait ltr extends TextDirection
+  
+  @js.native
   sealed trait manual extends js.Object
   
   @js.native
@@ -382,6 +801,9 @@ object tabulatorTablesStrings {
   sealed trait rownum extends _Formatter
   
   @js.native
+  sealed trait rtl extends TextDirection
+  
+  @js.native
   sealed trait scroll extends js.Object
   
   @js.native
@@ -441,9 +863,7 @@ object tabulatorTablesStrings {
   sealed trait update extends js.Object
   
   @js.native
-  sealed trait visible
-    extends RowRangeLookup
-       with VisibleRowRangeLookup
+  sealed trait visible extends RowRangeLookup
   
   @js.native
   sealed trait weeks extends js.Object
@@ -453,276 +873,4 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait years extends js.Object
-  
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def arrow: arrow = "arrow".asInstanceOf[arrow]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
-  @scala.inline
-  def avg: avg = "avg".asInstanceOf[avg]
-  @scala.inline
-  def blocking: blocking = "blocking".asInstanceOf[blocking]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def buttonCross: buttonCross = "buttonCross".asInstanceOf[buttonCross]
-  @scala.inline
-  def buttonTick: buttonTick = "buttonTick".asInstanceOf[buttonTick]
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
-  @scala.inline
-  def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
-  @scala.inline
-  def columns: columns = "columns".asInstanceOf[columns]
-  @scala.inline
-  def concat: concat = "concat".asInstanceOf[concat]
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def csv: csv = "csv".asInstanceOf[csv]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def datetimediff: datetimediff = "datetimediff".asInstanceOf[datetimediff]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
-  @scala.inline
-  def editor: editor = "editor".asInstanceOf[editor]
-  @scala.inline
-  def ends: ends = "ends".asInstanceOf[ends]
-  @scala.inline
-  def exists: exists = "exists".asInstanceOf[exists]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def fitColumns: fitColumns = "fitColumns".asInstanceOf[fitColumns]
-  @scala.inline
-  def fitData: fitData = "fitData".asInstanceOf[fitData]
-  @scala.inline
-  def fitDataFill: fitDataFill = "fitDataFill".asInstanceOf[fitDataFill]
-  @scala.inline
-  def fitDataStretch: fitDataStretch = "fitDataStretch".asInstanceOf[fitDataStretch]
-  @scala.inline
-  def fitDataTable: fitDataTable = "fitDataTable".asInstanceOf[fitDataTable]
-  @scala.inline
-  def flip: flip = "flip".asInstanceOf[flip]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def handle: handle = "handle".asInstanceOf[handle]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def highlight: highlight = "highlight".asInstanceOf[highlight]
-  @scala.inline
-  def hours: hours = "hours".asInstanceOf[hours]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def length: length = "length".asInstanceOf[length]
-  @scala.inline
-  def like: like = "like".asInstanceOf[like]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def minutes: minutes = "minutes".asInstanceOf[minutes]
-  @scala.inline
-  def money: money = "money".asInstanceOf[money]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def nearest: nearest = "nearest".asInstanceOf[nearest]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def paste: paste = "paste".asInstanceOf[paste]
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
-  @scala.inline
-  def plain: plain = "plain".asInstanceOf[plain]
-  @scala.inline
-  def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def regex: regex = "regex".asInstanceOf[regex]
-  @scala.inline
-  def remote: remote = "remote".asInstanceOf[remote]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
-  def responsiveCollapse: responsiveCollapse = "responsiveCollapse".asInstanceOf[responsiveCollapse]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rowAdd: rowAdd = "rowAdd".asInstanceOf[rowAdd]
-  @scala.inline
-  def rowDelete: rowDelete = "rowDelete".asInstanceOf[rowDelete]
-  @scala.inline
-  def rowMoved: rowMoved = "rowMoved".asInstanceOf[rowMoved]
-  @scala.inline
-  def rowSelection: rowSelection = "rowSelection".asInstanceOf[rowSelection]
-  @scala.inline
-  def rownum: rownum = "rownum".asInstanceOf[rownum]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def seconds: seconds = "seconds".asInstanceOf[seconds]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
-  @scala.inline
-  def starts: starts = "starts".asInstanceOf[starts]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def tickCross: tickCross = "tickCross".asInstanceOf[tickCross]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def traffic: traffic = "traffic".asInstanceOf[traffic]
-  @scala.inline
-  def unique: unique = "unique".asInstanceOf[unique]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def weeks: weeks = "weeks".asInstanceOf[weeks]
-  @scala.inline
-  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
 }
-

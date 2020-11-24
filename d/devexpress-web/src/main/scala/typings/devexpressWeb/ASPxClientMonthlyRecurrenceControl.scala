@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the MonthlyRecurrenceControl.
   */
 @js.native
 trait ASPxClientMonthlyRecurrenceControl extends ASPxClientRecurrenceControlBase
-
 object ASPxClientMonthlyRecurrenceControl {
+  
   @scala.inline
   def apply(
     AdjustControl: () => Unit,
@@ -35,4 +35,3 @@ object ASPxClientMonthlyRecurrenceControl {
     __obj.asInstanceOf[ASPxClientMonthlyRecurrenceControl]
   }
 }
-

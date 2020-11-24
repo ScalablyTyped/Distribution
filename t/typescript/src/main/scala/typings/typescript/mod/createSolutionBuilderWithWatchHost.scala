@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createSolutionBuilderWithWatchHost")
 @js.native
 object createSolutionBuilderWithWatchHost extends js.Object {
+  
   def apply[T /* <: BuilderProgram */](): SolutionBuilderWithWatchHost[T] = js.native
   def apply[T /* <: BuilderProgram */](
     system: js.UndefOr[scala.Nothing],
@@ -184,4 +185,3 @@ object createSolutionBuilderWithWatchHost extends js.Object {
     reportWatchStatus: WatchStatusReporter
   ): SolutionBuilderWithWatchHost[T] = js.native
 }
-

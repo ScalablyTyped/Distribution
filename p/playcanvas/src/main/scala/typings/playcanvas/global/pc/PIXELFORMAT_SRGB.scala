@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Color-only sRGB format (WebGL2 only).
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.PIXELFORMAT_SRGB")
 @js.native
 object PIXELFORMAT_SRGB extends TopLevel[Double]
-

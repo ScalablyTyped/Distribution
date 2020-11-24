@@ -10,9 +10,9 @@ A library for faking Ajax responses in your Jasmine suite
 | ------------------ | :-------------: |
 | Full name          | jasmine-ajax |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 1898568 |
+| # releases         | 2 |
+| # dependents       | 19 |
+| # downloads        | 2434756 |
 | # stars            | 3 |
 
 ## Links

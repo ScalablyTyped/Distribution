@@ -1,7 +1,7 @@
 
 # Scala.js typings for eventemitter3
 
-Typings are for version 4.0.4
+Typings are for version 4.0.7
 
 ## Library description:
 EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.
@@ -10,9 +10,9 @@ EventEmitter3 focuses on performance while maintaining a Node.js AND browser com
 | ------------------ | :-------------: |
 | Full name          | eventemitter3 |
 | Keywords           | EventEmitter, EventEmitter2, EventEmitter3, Events, addEventListener, addListener, emit, emits, emitter, event, once, pub/sub, publish, reactor, subscribe |
-| # releases         | 6 |
-| # dependents       | 1610 |
-| # downloads        | 375938379 |
+| # releases         | 9 |
+| # dependents       | 1919 |
+| # downloads        | 545055652 |
 | # stars            | 40 |
 
 ## Links

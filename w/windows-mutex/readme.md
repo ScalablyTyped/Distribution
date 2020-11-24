@@ -12,7 +12,7 @@ Expose the Windows CreateMutex API to Node.JS
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 150264 |
+| # downloads        | 426689 |
 | # stars            | 1 |
 
 ## Links

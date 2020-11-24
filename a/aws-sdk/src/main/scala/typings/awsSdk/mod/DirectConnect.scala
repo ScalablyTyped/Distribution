@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.directconnectMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "DirectConnect")
 @js.native
@@ -14,4 +14,3 @@ class DirectConnect ()
   extends typings.awsSdk.allMod.DirectConnect {
   def this(options: ClientConfiguration) = this()
 }
-

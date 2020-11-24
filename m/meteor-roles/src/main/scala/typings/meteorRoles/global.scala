@@ -8,15 +8,17 @@ import typings.meteorRoles.Roles.Role
 import typings.meteorRoles.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   // module
   @js.native
   object Meteor extends js.Object {
-    var roles: Collection[Role] = js.native
+    
+    var roles: Collection[Role, Role] = js.native
   }
   
   /**
@@ -26,6 +28,7 @@ object global extends js.Object {
     */
   @js.native
   object Roles extends js.Object {
+    
     /**
       * Constant used to reference the special 'global' group that
       * can be used to apply blanket permissions across all groups.
@@ -44,22 +47,7 @@ object global extends js.Object {
       * @final
       */
     var GLOBAL_GROUP: String = js.native
-    /**
-      * Subscription handle for the currently logged in user's permissions.
-      *
-      * NOTE: The corresponding publish function, `_roles`, depends on
-      * `this.userId` so it will automatically re-run when the currently
-      * logged-in user changes.
-      *
-      * @example
-      *
-      *     `Roles.subscription.ready()` // => `true` if user roles have been loaded
-      *
-      * @property subscription
-      * @type Object
-      * @for Roles
-      */
-    var subscription: Subscription = js.native
+    
     /**
       * Add users to roles. Will create roles as needed.
       *
@@ -103,6 +91,7 @@ object global extends js.Object {
     def addUsersToRoles(user: js.Object, roles: String, group: String): Unit = js.native
     def addUsersToRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
     def addUsersToRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
+    
     /**
       * Create a new role. Whitespace will be trimmed.
       *
@@ -111,6 +100,7 @@ object global extends js.Object {
       * @return {String} id of new role
       */
     def createRole(role: String): String = js.native
+    
     /**
       * Delete an existing role.  Will throw "Role in use" error if any users
       * are currently assigned to the target role.
@@ -119,13 +109,15 @@ object global extends js.Object {
       * @param {String} role Name of role
       */
     def deleteRole(role: String): Unit = js.native
+    
     /**
       * Retrieve set of all existing roles
       *
       * @method getAllRoles
       * @return {Cursor} cursor of existing roles
       */
-    def getAllRoles(): Cursor[Role] = js.native
+    def getAllRoles(): Cursor[Role, Role] = js.native
+    
     /**
       * Retrieve users groups, if any
       *
@@ -139,6 +131,7 @@ object global extends js.Object {
     def getGroupsForUser(user: String, role: String): js.Array[String] = js.native
     def getGroupsForUser(user: js.Object): js.Array[String] = js.native
     def getGroupsForUser(user: js.Object, role: String): js.Array[String] = js.native
+    
     /**
       * Retrieve users roles
       *
@@ -152,6 +145,7 @@ object global extends js.Object {
     def getRolesForUser(user: String, group: String): js.Array[String] = js.native
     def getRolesForUser(user: js.Object): js.Array[String] = js.native
     def getRolesForUser(user: js.Object, group: String): js.Array[String] = js.native
+    
     /**
       * Retrieve all users who are in target role.
       *
@@ -170,14 +164,15 @@ object global extends js.Object {
       *                           through to `Meteor.users.find(query, options)`
       * @return {Cursor} cursor of users in role
       */
-    def getUsersInRole(role: String): Cursor[User] = js.native
-    def getUsersInRole(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
-    def getUsersInRole(role: String, group: String): Cursor[User] = js.native
-    def getUsersInRole(role: String, group: String, options: Fields): Cursor[User] = js.native
-    def getUsersInRole(role: js.Array[String]): Cursor[User] = js.native
-    def getUsersInRole(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
-    def getUsersInRole(role: js.Array[String], group: String): Cursor[User] = js.native
-    def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User] = js.native
+    def getUsersInRole(role: String): Cursor[User, User] = js.native
+    def getUsersInRole(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
+    def getUsersInRole(role: String, group: String): Cursor[User, User] = js.native
+    def getUsersInRole(role: String, group: String, options: Fields): Cursor[User, User] = js.native
+    def getUsersInRole(role: js.Array[String]): Cursor[User, User] = js.native
+    def getUsersInRole(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
+    def getUsersInRole(role: js.Array[String], group: String): Cursor[User, User] = js.native
+    def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = js.native
+    
     /**
       * Remove users from roles
       *
@@ -205,6 +200,7 @@ object global extends js.Object {
     def removeUsersFromRoles(user: js.Object, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
     def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
     def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
+    
     /**
       * Set a users roles/permissions.
       *
@@ -241,6 +237,24 @@ object global extends js.Object {
     def setUserRoles(user: js.Object, roles: String, group: String): Unit = js.native
     def setUserRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
     def setUserRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
+    
+    /**
+      * Subscription handle for the currently logged in user's permissions.
+      *
+      * NOTE: The corresponding publish function, `_roles`, depends on
+      * `this.userId` so it will automatically re-run when the currently
+      * logged-in user changes.
+      *
+      * @example
+      *
+      *     `Roles.subscription.ready()` // => `true` if user roles have been loaded
+      *
+      * @property subscription
+      * @type Object
+      * @for Roles
+      */
+    var subscription: Subscription = js.native
+    
     /**
       * Check if user has specified permissions/roles
       *
@@ -283,6 +297,4 @@ object global extends js.Object {
     def userIsInRole(user: js.Object, roles: js.Array[String]): Boolean = js.native
     def userIsInRole(user: js.Object, roles: js.Array[String], group: String): Boolean = js.native
   }
-  
 }
-

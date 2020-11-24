@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TARGETS extends js.Object
-
 /**
   * Various GL target types.
   *
@@ -27,6 +26,7 @@ sealed trait TARGETS extends js.Object
 @JSGlobal("PIXI.TARGETS")
 @js.native
 object TARGETS extends js.Object {
+  
   @js.native
   sealed trait TEXTURE_2D extends TARGETS
   
@@ -53,6 +53,4 @@ object TARGETS extends js.Object {
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z extends TARGETS
-  
 }
-

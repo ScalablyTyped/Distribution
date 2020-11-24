@@ -4,7 +4,7 @@ import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.InstancedMesh")
 @js.native
@@ -16,4 +16,3 @@ class InstancedMesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <
     count: Double
   ) = this()
 }
-

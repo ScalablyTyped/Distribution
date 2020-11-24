@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-trigger" : "4.3.4"
+      "rc-trigger" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-trigger" : "4.3.4"
+      "rc-trigger" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

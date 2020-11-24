@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait StartupBehavior extends js.Object
-
 // Enumerations
 /**
   * Provides options to determine the startup behavior of the add-in upon next start-up.
@@ -14,6 +13,7 @@ sealed trait StartupBehavior extends js.Object
 @JSGlobal("Office.StartupBehavior")
 @js.native
 object StartupBehavior extends js.Object {
+  
   /**
     * Load the add-in but do not show UI.
     */
@@ -25,6 +25,4 @@ object StartupBehavior extends js.Object {
     */
   @js.native
   sealed trait none extends StartupBehavior
-  
 }
-

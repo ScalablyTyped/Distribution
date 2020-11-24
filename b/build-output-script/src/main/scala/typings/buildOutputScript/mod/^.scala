@@ -2,11 +2,12 @@ package typings.buildOutputScript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("build-output-script", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Builds a P2PKH Bitcoin transaction output script from an array of P2PKH addresses and amounts.
     * Will also work with any Bitcoin derived cryptocurrencies with a single byte pubkey hash address prefix.
@@ -18,4 +19,3 @@ object ^ extends js.Object {
     */
   def apply(outputs: Array[Output]): String = js.native
 }
-

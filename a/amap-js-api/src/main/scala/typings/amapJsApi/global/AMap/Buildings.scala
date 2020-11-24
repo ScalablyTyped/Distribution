@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.Buildings.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Buildings")
 @js.native
@@ -15,4 +15,3 @@ class Buildings ()
   extends typings.amapJsApi.AMap.Buildings {
   def this(opts: Options) = this()
 }
-

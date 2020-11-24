@@ -10,9 +10,9 @@ A plugin for karma-jasmine. Allows to filter tests (specs) by tags.
 | ------------------ | :-------------: |
 | Full name          | karma-jasmine-spec-tags |
 | Keywords           | karma, karma-plugin, jasmine, tag, filter, test, spec |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 28496 |
+| # downloads        | 40029 |
 | # stars            | 0 |
 
 ## Links

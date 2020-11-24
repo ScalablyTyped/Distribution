@@ -3,11 +3,12 @@ package typings.marked.mod
 import typings.marked.anon.Typeofmarked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "setOptions")
 @js.native
 object setOptions extends js.Object {
+  
   /**
     * Sets the default options.
     *
@@ -15,4 +16,3 @@ object setOptions extends js.Object {
     */
   def apply(options: MarkedOptions): Typeofmarked = js.native
 }
-

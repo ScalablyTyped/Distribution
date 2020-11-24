@@ -3,13 +3,14 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for a push delivery endpoint.
   */
 @js.native
 trait SchemaPushConfig extends js.Object {
+  
   /**
     * Endpoint configuration attributes.  Every endpoint has a set of API
     * supported attributes that can be used to control different aspects of the
@@ -28,11 +29,13 @@ trait SchemaPushConfig extends js.Object {
     * the v1 Pub/Sub API.
     */
   var attributes: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * If specified, Pub/Sub will generate and attach an OIDC JWT token as an
     * `Authorization` header in the HTTP request for every pushed message.
     */
   var oidcToken: js.UndefOr[SchemaOidcToken] = js.native
+  
   /**
     * A URL locating the endpoint to which messages should be pushed. For
     * example, a Webhook endpoint might use
@@ -40,37 +43,45 @@ trait SchemaPushConfig extends js.Object {
     */
   var pushEndpoint: js.UndefOr[String] = js.native
 }
-
 object SchemaPushConfig {
+  
   @scala.inline
   def apply(): SchemaPushConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushConfig]
   }
+  
   @scala.inline
   implicit class SchemaPushConfigOps[Self <: SchemaPushConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAttributes(value: StringDictionary[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAttributes: Self = this.set("attributes", js.undefined)
+    
     @scala.inline
     def setOidcToken(value: SchemaOidcToken): Self = this.set("oidcToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOidcToken: Self = this.set("oidcToken", js.undefined)
+    
     @scala.inline
     def setPushEndpoint(value: String): Self = this.set("pushEndpoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePushEndpoint: Self = this.set("pushEndpoint", js.undefined)
   }
-  
 }
-

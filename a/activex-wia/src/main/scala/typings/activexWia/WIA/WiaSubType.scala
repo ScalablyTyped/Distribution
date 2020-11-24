@@ -6,7 +6,7 @@ import typings.activexWia.activexWiaNumbers.`2`
 import typings.activexWia.activexWiaNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The WiaSubType enumeration specifies more detail about the property value. Use the SubType property on the Property object to obtain these values for
@@ -19,15 +19,17 @@ import scala.scalajs.js.annotation._
   - typings.activexWia.activexWiaNumbers.`0`
 */
 trait WiaSubType extends js.Object
-
 object WiaSubType {
+  
   @scala.inline
   def FlagSubType: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def ListSubType: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def RangeSubType: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def UnspecifiedSubType: `0` = 0.asInstanceOf[`0`]
 }
-

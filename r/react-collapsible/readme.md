@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-collapsible
 
-Typings are for version 2.8.0
+Typings are for version 2.8.1
 
 ## Library description:
 React component to wrap content in Collapsible element with trigger to open and close.
@@ -10,9 +10,9 @@ React component to wrap content in Collapsible element with trigger to open and 
 | ------------------ | :-------------: |
 | Full name          | react-collapsible |
 | Keywords           | react-component, react, collapse, collapsible, accordion |
-| # releases         | 12 |
-| # dependents       | 34 |
-| # downloads        | 1639226 |
+| # releases         | 9 |
+| # dependents       | 36 |
+| # downloads        | 2258983 |
 | # stars            | 0 |
 
 ## Links

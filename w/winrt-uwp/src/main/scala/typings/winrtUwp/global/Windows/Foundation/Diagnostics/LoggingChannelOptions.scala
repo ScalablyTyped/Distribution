@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Foundation.Diagnostics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents advanced settings that you can use to configure a LoggingChannel object. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingChannelOptions")
@@ -16,4 +16,3 @@ class LoggingChannelOptions ()
     */
   def this(group: String) = this()
 }
-

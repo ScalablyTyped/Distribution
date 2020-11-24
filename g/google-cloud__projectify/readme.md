@@ -10,9 +10,9 @@ A simple utility for replacing the projectid token in objects.
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/projectify |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 13 |
-| # downloads        | 43234479 |
+| # releases         | 11 |
+| # dependents       | 12 |
+| # downloads        | 84704079 |
 | # stars            | 0 |
 
 ## Links

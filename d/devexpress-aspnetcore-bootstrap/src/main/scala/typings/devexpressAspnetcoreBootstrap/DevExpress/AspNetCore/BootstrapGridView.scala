@@ -34,77 +34,121 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapGridView extends BootstrapGridBase {
-  val batchEditApi: BootstrapGridViewBatchEditApi | Null = js.native
+  
   def addNewRow(): Unit = js.native
+  
   def applyFilter(filterExpression: String): Unit = js.native
+  
   def applyOnClickRowFilter(): Unit = js.native
+  
   def applySearchPanelFilter(value: String): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def autoFilterByColumn(columnFieldNameOrId: String, `val`: String): Unit = js.native
   def autoFilterByColumn(columnIndex: Double, `val`: String): Unit = js.native
   def autoFilterByColumn(column: BootstrapGridViewColumn, `val`: String): Unit = js.native
+  
+  val batchEditApi: BootstrapGridViewBatchEditApi | Null = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def cancelEdit(): Unit = js.native
+  
   def clearFilter(): Unit = js.native
+  
   def closeFilterControl(): Unit = js.native
+  
   def collapseAll(): Unit = js.native
+  
   def collapseAllDetailRows(): Unit = js.native
+  
   def collapseDetailRow(visibleIndex: Double): Unit = js.native
+  
   def collapseRow(visibleIndex: Double): Unit = js.native
   def collapseRow(visibleIndex: Double, recursive: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def deleteRow(visibleIndex: Double): Unit = js.native
+  
   def deleteRowByKey(key: js.Any): Unit = js.native
+  
   def expandAll(): Unit = js.native
+  
   def expandAllDetailRows(): Unit = js.native
+  
   def expandDetailRow(visibleIndex: Double): Unit = js.native
+  
   def expandRow(visibleIndex: Double): Unit = js.native
   def expandRow(visibleIndex: Double, recursive: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def focus(): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def focusEditor(columnFieldNameOrId: String): Unit = js.native
   def focusEditor(columnIndex: Double): Unit = js.native
   def focusEditor(column: BootstrapGridViewColumn): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def getAutoFilterEditor(columnFieldNameOrId: String): js.Any = js.native
   def getAutoFilterEditor(columnIndex: Double): js.Any = js.native
    // tslint:disable-line:unified-signatures unified-signatures
   def getAutoFilterEditor(column: BootstrapGridViewColumn): js.Any = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def getColumn(columnIndex: Double): BootstrapGridViewColumn | Null = js.native
+  
   def getColumnByField(columnFieldName: String): BootstrapGridViewColumn | Null = js.native
+  
   def getColumnById(columnId: String): BootstrapGridViewColumn | Null = js.native
+  
   def getColumnCount(): Double = js.native
+  
   def getColumnLayout(): js.Any = js.native
+  
    // tslint:disable-line:unified-signatures
   def getEditValue(columnFieldNameOrId: String): String = js.native
   def getEditValue(columnIndex: Double): String = js.native
   def getEditValue(column: BootstrapGridViewColumn): String = js.native
+  
    // tslint:disable-line:unified-signatures
   def getEditor(columnFieldNameOrId: String): BootstrapClientEdit = js.native
   def getEditor(columnIndex: Double): BootstrapClientEdit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
   def getEditor(column: BootstrapGridViewColumn): BootstrapClientEdit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def getFocusedCell(): BootstrapGridViewCellInfo | Null = js.native
+  
   def getFocusedRowIndex(): Double = js.native
+  
   def getHorizontalScrollPosition(): Double = js.native
+  
   def getPageCount(): Double = js.native
+  
   def getPageIndex(): Double = js.native
+  
   def getPopupEditForm(): BootstrapPopupControl | Null = js.native
+  
   def getRowIndicesVisibleInViewPort(includePartiallyVisible: Boolean): js.Array[Double] = js.native
+  
   def getRowKey(visibleIndex: Double): String = js.native
+  
   def getSelectedKeysOnPage(): js.Array[_] = js.native
+  
   def getSelectedRowCount(): Double = js.native
+  
   def getTopVisibleIndex(): Double = js.native
+  
   def getVerticalScrollPosition(): Double = js.native
+  
   def getVisibleRowsOnPage(): Double = js.native
+  
   def gotoPage(pageIndex: Double): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def groupBy(columnFieldNameOrId: String): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
@@ -121,17 +165,28 @@ trait BootstrapGridView extends BootstrapGridBase {
   def groupBy(column: BootstrapGridViewColumn, groupIndex: Double): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def groupBy(column: BootstrapGridViewColumn, groupIndex: Double, sortOrder: String): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def hideCustomizationWindow(): Unit = js.native
+  
   def isCustomizationWindowVisible(): Boolean = js.native
+  
   def isDataRow(visibleIndex: Double): Boolean = js.native
+  
   def isEditing(): Boolean = js.native
+  
   def isGroupRow(visibleIndex: Double): Boolean = js.native
+  
   def isGroupRowExpanded(visibleIndex: Double): Boolean = js.native
+  
   def isNewRowEditing(): Boolean = js.native
+  
   def isRowSelectedOnPage(visibleIndex: Double): Boolean = js.native
+  
   def makeRowVisible(visibleIndex: Double): Unit = js.native
+  
   def nextPage(): Unit = js.native
+  
   @JSName("off")
   def off_batchEditChangesCanceling(eventName: batchEditChangesCanceling): this.type = js.native
   @JSName("off")
@@ -404,6 +459,7 @@ trait BootstrapGridView extends BootstrapGridBase {
     eventName: selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[GridViewSelectionEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_batchEditChangesCanceling(
     eventName: batchEditChangesCanceling,
@@ -612,6 +668,7 @@ trait BootstrapGridView extends BootstrapGridBase {
     eventName: selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[GridViewSelectionEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_batchEditChangesCanceling(
     eventName: batchEditChangesCanceling,
@@ -820,38 +877,58 @@ trait BootstrapGridView extends BootstrapGridBase {
     eventName: selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[GridViewSelectionEventArgs], Unit]
   ): this.type = js.native
+  
   def performCallback(data: js.Any): js.Promise[Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  
   def prevPage(): Unit = js.native
+  
   def refresh(): Unit = js.native
+  
   def selectAllRowsOnPage(): Unit = js.native
+  
   def selectRowOnPage(visibleIndex: Double): Unit = js.native
   def selectRowOnPage(visibleIndex: Double, selected: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def selectRows(): Unit = js.native
+  
   def selectRowsByKey(key: js.Any): Unit = js.native
    // tslint:disable-line:unified-signatures
   def selectRowsByKey(key: js.Any, selected: Boolean): Unit = js.native
   def selectRowsByKey(keys: js.Array[_]): Unit = js.native
    // tslint:disable-line:unified-signatures
   def selectRowsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def setColumnLayout(columnLayout: js.Any): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def setEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
   def setEditValue(columnIndex: Double, value: String): Unit = js.native
   def setEditValue(column: BootstrapGridViewColumn, value: String): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def setFilterEnabled(isFilterEnabled: Boolean): Unit = js.native
+  
   def setFixedColumnScrollableRows(scrollableRowSettings: js.Any): Unit = js.native
+  
   def setFocusedCell(rowVisibleIndex: Double, columnIndex: Double): Unit = js.native
+  
   def setFocusedRowIndex(visibleIndex: Double): Unit = js.native
+  
   def setHorizontalScrollPosition(position: Double): Unit = js.native
+  
   def setSearchPanelCustomEditor(editor: BootstrapClientEdit): Unit = js.native
+  
   def setVerticalScrollPosition(position: Double): Unit = js.native
+  
   def showCustomizationDialog(): Unit = js.native
+  
   def showCustomizationWindow(): Unit = js.native
+  
   def showFilterControl(): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def sortBy(columnFieldNameOrId: String): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
@@ -874,21 +951,29 @@ trait BootstrapGridView extends BootstrapGridBase {
   def sortBy(column: BootstrapGridViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def sortBy(column: BootstrapGridViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def startEditRow(visibleIndex: Double): Unit = js.native
+  
   def startEditRowByKey(key: js.Any): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def ungroup(columnFieldNameOrId: String): Unit = js.native
   def ungroup(columnIndex: Double): Unit = js.native
   def ungroup(column: BootstrapGridViewColumn): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def unselectAllRowsOnPage(): Unit = js.native
+  
   def unselectFilteredRows(): Unit = js.native
+  
   def unselectRowOnPage(visibleIndex: Double): Unit = js.native
+  
   def unselectRows(): Unit = js.native
+  
   def unselectRowsByKey(key: js.Any): Unit = js.native
   def unselectRowsByKey(keys: js.Array[_]): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def updateEdit(): Unit = js.native
 }
-

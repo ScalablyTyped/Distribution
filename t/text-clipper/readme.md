@@ -11,8 +11,8 @@ Fast and correct clip functions for HTML and plain text.
 | Full name          | text-clipper |
 | Keywords           | clip, html, string, text, trim, truncate |
 | # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 90549 |
+| # dependents       | 3 |
+| # downloads        | 262751 |
 | # stars            | 0 |
 
 ## Links

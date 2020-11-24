@@ -3,11 +3,12 @@ package typings.node.v8Mod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("v8", "getHeapSnapshot")
 @js.native
 object getHeapSnapshot extends js.Object {
+  
   /**
     * Generates a snapshot of the current V8 heap and returns a Readable
     * Stream that may be used to read the JSON serialized representation.
@@ -18,4 +19,3 @@ object getHeapSnapshot extends js.Object {
     */
   def apply(): Readable = js.native
 }
-

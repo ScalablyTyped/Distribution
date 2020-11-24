@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A dashboard view is an iOS Springboard-like view of <Titanium.UI.DashboardItem> items that may
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class DashboardView ()
   extends typings.titanium.Titanium.UI.DashboardView
-

@@ -11,8 +11,8 @@ Match BCP 47 language tags with language ranges per RFC 4647
 | Full name          | bcp-47-match |
 | Keywords           | bcp, 47, bcp47, bcp-47, language, tag, match, matching, check, rfc, 4647 |
 | # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 47073 |
+| # dependents       | 3 |
+| # downloads        | 118538 |
 | # stars            | 0 |
 
 ## Links

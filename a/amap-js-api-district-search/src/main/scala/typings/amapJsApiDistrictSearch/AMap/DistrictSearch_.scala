@@ -10,10 +10,11 @@ import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchNumbers.`2`
 import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DistrictSearch_ extends EventEmitter {
+  
   /**
     * 根据关键字查询行政区或商圈信息
     * @param keyword 关键词
@@ -23,15 +24,18 @@ trait DistrictSearch_ extends EventEmitter {
     keyword: String,
     callback: js.Function2[/* status */ SearchStatus, /* result */ SearchResult | String, Unit]
   ): Unit = js.native
+  
   // internal
   def setExtensions(): Unit = js.native
   def setExtensions(extensions: Boolean): Unit = js.native
+  
   /**
     * 设置关键字对应的行政区级别或商圈
     * @param level 级别
     */
   def setLevel(): Unit = js.native
   def setLevel(level: Level): Unit = js.native
+  
   /**
     * 设置下级行政区级数
     * @param district 级数
@@ -46,4 +50,3 @@ trait DistrictSearch_ extends EventEmitter {
   @JSName("setSubdistrict")
   def setSubdistrict_3(district: `3`): Unit = js.native
 }
-

@@ -4,33 +4,39 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.electron.Electron.CreateFromBitmapOptions
 import typings.electron.Electron.CreateFromBufferOptions
 import typings.electron.Electron.NativeImage_
+import typings.electron.Electron.Size
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofNativeImage extends Instantiable0[NativeImage_] {
-  // Docs: http://electronjs.org/docs/api/native-image
+  
+  // Docs: https://electronjs.org/docs/api/native-image
   /**
     * Creates an empty `NativeImage` instance.
     */
   def createEmpty(): NativeImage_ = js.native
+  
   /**
     * Creates a new `NativeImage` instance from `buffer` that contains the raw bitmap
     * pixel data returned by `toBitmap()`. The specific format is platform-dependent.
     */
   def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): NativeImage_ = js.native
+  
   /**
     * Creates a new `NativeImage` instance from `buffer`. Tries to decode as PNG or
     * JPEG first.
     */
   def createFromBuffer(buffer: Buffer): NativeImage_ = js.native
   def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): NativeImage_ = js.native
+  
   /**
     * Creates a new `NativeImage` instance from `dataURL`.
     */
   def createFromDataURL(dataURL: String): NativeImage_ = js.native
+  
   /**
     * Creates a new `NativeImage` instance from the NSImage that maps to the given
     * image name. See `System Icons` for a list of possible values.
@@ -64,11 +70,18 @@ trait TypeofNativeImage extends Instantiable0[NativeImage_] {
     */
   def createFromNamedImage(imageName: String): NativeImage_ = js.native
   def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): NativeImage_ = js.native
+  
   /**
     * Creates a new `NativeImage` instance from a file located at `path`. This method
     * returns an empty image if the `path` does not exist, cannot be read, or is not a
     * valid image.
     */
   def createFromPath(path: String): NativeImage_ = js.native
+  
+  /**
+    * fulfilled with the file's thumbnail preview image, which is a NativeImage.
+    *
+    * @platform darwin,win32
+    */
+  def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[NativeImage_] = js.native
 }
-

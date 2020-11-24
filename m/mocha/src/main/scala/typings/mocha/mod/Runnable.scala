@@ -4,7 +4,7 @@ import typings.mocha.Mocha.AsyncFunc
 import typings.mocha.Mocha.Func
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runnable "error" event
 // #region Runnable untyped events
@@ -22,4 +22,3 @@ class Runnable protected ()
   def this(title: String, fn: AsyncFunc) = this()
   def this(title: String, fn: Func) = this()
 }
-

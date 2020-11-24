@@ -7,7 +7,7 @@ import typings.tablesorter.testableOptionsMod.TestableOptions
 import typings.tablesorter.toggleableOptionsMod.ToggleableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Html5ColorOptions
@@ -16,12 +16,11 @@ trait Html5ColorOptions
      with StrictOptions
      with PreviewableOptions
      with TestableOptions
-
 object Html5ColorOptions {
+  
   @scala.inline
   def apply(): Html5ColorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Html5ColorOptions]
   }
 }
-

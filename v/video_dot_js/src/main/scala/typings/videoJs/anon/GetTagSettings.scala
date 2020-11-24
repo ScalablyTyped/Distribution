@@ -7,7 +7,7 @@ import typings.videoJs.mod.videojs.Player
 import typings.videoJs.mod.videojs.PlayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetTagSettings
@@ -21,6 +21,7 @@ trait GetTagSettings
   */
 Instantiable1[/* player */ Player, Player]
      with Instantiable2[/* player */ Player, /* options */ PlayerOptions, Player] {
+  
   /**
     * Gets tag settings
     *
@@ -32,4 +33,3 @@ Instantiable1[/* player */ Player, Player]
     */
   def getTagSettings(tag: Element): js.Any = js.native
 }
-

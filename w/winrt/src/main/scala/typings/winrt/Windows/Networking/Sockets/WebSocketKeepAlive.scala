@@ -4,16 +4,15 @@ import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTask
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebSocketKeepAlive extends IBackgroundTask
-
 object WebSocketKeepAlive {
+  
   @scala.inline
   def apply(run: IBackgroundTaskInstance => Unit): WebSocketKeepAlive = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[WebSocketKeepAlive]
   }
 }
-

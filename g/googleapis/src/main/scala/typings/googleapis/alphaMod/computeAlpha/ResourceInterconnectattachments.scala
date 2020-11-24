@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Interconnectattachments")
 @js.native
 class ResourceInterconnectattachments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.interconnectAttachments.aggregatedList
     * @desc Retrieves an aggregated list of interconnect attachments.
@@ -48,6 +48,9 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnectAttachmentAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.interconnectAttachments.delete
     * @desc Deletes the specified interconnect attachment.
@@ -82,6 +85,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.get
     * @desc Returns the specified interconnect attachment.
@@ -115,6 +119,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnectAttachment]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -149,6 +154,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.insert
     * @desc Creates an InterconnectAttachment in the specified project using
@@ -184,6 +190,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.list
     * @desc Retrieves the list of interconnect attachments contained within the
@@ -221,6 +228,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnectAttachmentList]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.patch
     * @desc Updates the specified interconnect attachment with the data
@@ -258,6 +266,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -293,6 +302,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.setLabels
     * @desc Sets the labels on an InterconnectAttachment. To learn more about
@@ -329,6 +339,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnectAttachments.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -364,4 +375,3 @@ class ResourceInterconnectattachments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

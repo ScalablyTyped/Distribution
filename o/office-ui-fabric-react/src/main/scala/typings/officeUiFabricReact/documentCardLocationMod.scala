@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLoc
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation", JSImport.Namespace)
 @js.native
 object documentCardLocationMod extends js.Object {
+  
   val DocumentCardLocation: FunctionComponent[IDocumentCardLocationProps] = js.native
 }
-

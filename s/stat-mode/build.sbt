@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stat-mode"
-version := "1.0.0-6dc970"
+version := "1.0.0-671d09"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

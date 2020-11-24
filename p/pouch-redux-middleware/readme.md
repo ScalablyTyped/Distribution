@@ -12,7 +12,7 @@ PouchDB Redux Middleware
 | Keywords           | pouchdb, redux, react, middleware |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 2087 |
+| # downloads        | 3053 |
 | # stars            | 4 |
 
 ## Links

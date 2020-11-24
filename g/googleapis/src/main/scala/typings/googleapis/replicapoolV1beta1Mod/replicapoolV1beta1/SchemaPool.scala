@@ -2,15 +2,17 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaPool extends js.Object {
+  
   /**
     * Whether replicas in this pool should be restarted if they experience a
     * failure. The default value is true.
     */
   var autoRestart: js.UndefOr[Boolean] = js.native
+  
   /**
     * The base instance name to use for the replicas in this pool. This must
     * match the regex [a-z]([-a-z0-9]*[a-z0-9])?. If specified, the instances
@@ -21,50 +23,61 @@ trait SchemaPool extends js.Object {
     * the service.
     */
   var baseInstanceName: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The current number of replicas in the pool.
     */
   var currentNumReplicas: js.UndefOr[Double] = js.native
+  
   /**
     * An optional description of the replica pool.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * Deprecated. Please use template[].healthChecks instead.
     */
   var healthChecks: js.UndefOr[js.Array[SchemaHealthCheck]] = js.native
+  
   /**
     * The initial number of replicas this pool should have. You must provide a
     * value greater than or equal to 0.
     */
   var initialNumReplicas: js.UndefOr[Double] = js.native
+  
   /**
     * A list of labels to attach to this replica pool and all created virtual
     * machines in this replica pool.
     */
   var labels: js.UndefOr[js.Array[SchemaLabel]] = js.native
+  
   /**
     * The name of the replica pool. Must follow the regex
     * [a-z]([-a-z0-9]*[a-z0-9])? and be 1-28 characters long.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Deprecated! Use initial_num_replicas instead.
     */
   var numReplicas: js.UndefOr[Double] = js.native
+  
   /**
     * The list of resource views that should be updated with all the replicas
     * that are managed by this pool.
     */
   var resourceViews: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * [Output Only] A self-link to the replica pool.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * Deprecated, please use target_pools instead.
     */
   var targetPool: js.UndefOr[String] = js.native
+  
   /**
     * A list of target pools to update with the replicas that are managed by
     * this pool. If specified, the replicas in this replica pool will be added
@@ -74,104 +87,142 @@ trait SchemaPool extends js.Object {
     * URLs.
     */
   var targetPools: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * The template to use when creating replicas in this pool. This template is
     * used during initial instance creation of the pool, when growing the pool
     * in size, or when a replica restarts.
     */
   var template: js.UndefOr[SchemaTemplate] = js.native
+  
   /**
     * Deprecated! Do not set.
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaPool {
+  
   @scala.inline
   def apply(): SchemaPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPool]
   }
+  
   @scala.inline
   implicit class SchemaPoolOps[Self <: SchemaPool] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAutoRestart(value: Boolean): Self = this.set("autoRestart", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoRestart: Self = this.set("autoRestart", js.undefined)
+    
     @scala.inline
     def setBaseInstanceName(value: String): Self = this.set("baseInstanceName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBaseInstanceName: Self = this.set("baseInstanceName", js.undefined)
+    
     @scala.inline
     def setCurrentNumReplicas(value: Double): Self = this.set("currentNumReplicas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCurrentNumReplicas: Self = this.set("currentNumReplicas", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = this.set("healthChecks", js.Array(value :_*))
+    
     @scala.inline
     def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    
     @scala.inline
     def setInitialNumReplicas(value: Double): Self = this.set("initialNumReplicas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInitialNumReplicas: Self = this.set("initialNumReplicas", js.undefined)
+    
     @scala.inline
     def setLabelsVarargs(value: SchemaLabel*): Self = this.set("labels", js.Array(value :_*))
+    
     @scala.inline
     def setLabels(value: js.Array[SchemaLabel]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setNumReplicas(value: Double): Self = this.set("numReplicas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNumReplicas: Self = this.set("numReplicas", js.undefined)
+    
     @scala.inline
     def setResourceViewsVarargs(value: String*): Self = this.set("resourceViews", js.Array(value :_*))
+    
     @scala.inline
     def setResourceViews(value: js.Array[String]): Self = this.set("resourceViews", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResourceViews: Self = this.set("resourceViews", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setTargetPool(value: String): Self = this.set("targetPool", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTargetPool: Self = this.set("targetPool", js.undefined)
+    
     @scala.inline
     def setTargetPoolsVarargs(value: String*): Self = this.set("targetPools", js.Array(value :_*))
+    
     @scala.inline
     def setTargetPools(value: js.Array[String]): Self = this.set("targetPools", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTargetPools: Self = this.set("targetPools", js.undefined)
+    
     @scala.inline
     def setTemplate(value: SchemaTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTemplate: Self = this.set("template", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

@@ -5,11 +5,12 @@ import typings.phaser.integer
 import typings.std.XMLHttpRequestResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Loader.XHRSettings")
 @js.native
 object XHRSettings extends js.Object {
+  
   /**
     * Creates an XHRSettings Object with default values.
     * @param responseType The responseType, such as 'text'. Default ''.
@@ -28,4 +29,3 @@ object XHRSettings extends js.Object {
     withCredentials: js.UndefOr[Boolean]
   ): XHRSettingsObject = js.native
 }
-

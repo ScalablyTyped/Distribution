@@ -11,8 +11,8 @@ Storage enhancer to persist a subset of your state.
 | Full name          | redux-localstorage-filter |
 | Keywords           | redux, redux-localstorage, storage enhancer, filter |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 438976 |
+| # dependents       | 19 |
+| # downloads        | 1207853 |
 | # stars            | 0 |
 
 ## Links

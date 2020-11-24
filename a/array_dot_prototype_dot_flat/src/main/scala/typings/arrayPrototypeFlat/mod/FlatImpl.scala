@@ -12,10 +12,11 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FlatImpl extends js.Object {
+  
   def apply(receiver: ReadonlyArray[_]): Array[_] = js.native
   def apply(receiver: ReadonlyArray[_], depth: Double): Array[_] = js.native
   def apply[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = js.native
@@ -50,4 +51,3 @@ trait FlatImpl extends js.Object {
     depth: `4`
   ): Array[U] = js.native
 }
-

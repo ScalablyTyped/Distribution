@@ -7,15 +7,15 @@ import typings.stripe.stripeStrings.card_present
 import typings.stripe.stripeStrings.payment_method
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.stripe.mod.paymentMethods.ICardPaymentMethod
   - typings.stripe.mod.paymentMethods.ICardPresentPaymentMethod
 */
 trait IPaymentMethod extends js.Object
-
 object IPaymentMethod {
+  
   @scala.inline
   def ICardPaymentMethod(
     card: Checks,
@@ -31,6 +31,7 @@ object IPaymentMethod {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethod]
   }
+  
   @scala.inline
   def ICardPresentPaymentMethod(
     created: Double,
@@ -46,4 +47,3 @@ object IPaymentMethod {
     __obj.asInstanceOf[IPaymentMethod]
   }
 }
-

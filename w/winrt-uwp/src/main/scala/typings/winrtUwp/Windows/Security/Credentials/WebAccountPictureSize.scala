@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Credentials
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WebAccountPictureSize extends js.Object
-
 /** Represents the sizes of a web account picture. */
 @JSGlobal("Windows.Security.Credentials.WebAccountPictureSize")
 @js.native
 object WebAccountPictureSize extends js.Object {
+  
   /** 1080x1080 */
   @js.native
   sealed trait size1080x1080 extends WebAccountPictureSize
@@ -26,6 +26,4 @@ object WebAccountPictureSize extends js.Object {
   /** 64x64 */
   @js.native
   sealed trait size64x64 extends WebAccountPictureSize
-  
 }
-

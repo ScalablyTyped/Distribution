@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-joiner"
-version := "1.3-dt-20190924Z-e4dada"
+version := "1.3-dt-20190924Z-ef1a19"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

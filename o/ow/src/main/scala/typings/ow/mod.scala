@@ -4,19 +4,34 @@ import typings.ow.basePredicateMod.BasePredicate
 import typings.ow.modifiersMod.Modifiers
 import typings.ow.predicateMod.PredicateOptions
 import typings.ow.predicatesMod.Predicates
+import typings.std.ArrayBufferLike
+import typings.typeFest.basicMod.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ow", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val default: Ow = js.native
+  
   @js.native
   class AnyPredicate[T] protected ()
     extends typings.ow.anyMod.AnyPredicate[T] {
     def this(predicates: js.Array[BasePredicate[_]]) = this()
     def this(predicates: js.Array[BasePredicate[_]], options: PredicateOptions) = this()
   }
+  
+  @js.native
+  class ArgumentError protected ()
+    extends typings.ow.argumentErrorMod.ArgumentError {
+    def this(message: String, context: js.Function) = this()
+  }
+  
+  @js.native
+  class ArrayBufferPredicate[T /* <: ArrayBufferLike */] ()
+    extends typings.ow.arrayBufferMod.ArrayBufferPredicate[T]
   
   @js.native
   /**
@@ -33,6 +48,15 @@ object mod extends js.Object {
     */
   class BooleanPredicate ()
     extends typings.ow.booleanMod.BooleanPredicate {
+    def this(options: PredicateOptions) = this()
+  }
+  
+  @js.native
+  /**
+    @hidden
+    */
+  class DataViewPredicate ()
+    extends typings.ow.dataViewMod.DataViewPredicate {
     def this(options: PredicateOptions) = this()
   }
   
@@ -85,6 +109,7 @@ object mod extends js.Object {
   trait Ow
     extends Modifiers
        with Predicates {
+    
     /**
       Test if `value` matches the provided `predicate`. Throws an `ArgumentError` with the specified `label` if the test fails.
       @param value - Value to test.
@@ -98,17 +123,19 @@ object mod extends js.Object {
       @param predicate - Predicate to test against.
       */
     def apply[T](value: T, predicate: BasePredicate[T]): Unit = js.native
+    
     /**
       Create a reusable validator.
       @param label - Label which should be used in error messages.
       @param predicate - Predicate used in the validator function.
       */
-    def create[T](label: String, predicate: BasePredicate[T]): js.Function1[/* value */ T, Unit] = js.native
+    def create[T](label: String, predicate: BasePredicate[T]): ReusableValidator[T] = js.native
     /**
       Create a reusable validator.
       @param predicate - Predicate used in the validator function.
       */
-    def create[T](predicate: BasePredicate[T]): js.Function1[/* value */ T, Unit] = js.native
+    def create[T](predicate: BasePredicate[T]): ReusableValidator[T] = js.native
+    
     /**
       Returns `true` if the value matches the predicate, otherwise returns `false`.
       @param value - Value to test.
@@ -143,6 +170,10 @@ object mod extends js.Object {
   }
   
   @js.native
+  class TypedArrayPredicate[T /* <: TypedArray */] ()
+    extends typings.ow.typedArrayMod.TypedArrayPredicate[T]
+  
+  @js.native
   /**
     @hidden
     */
@@ -160,12 +191,12 @@ object mod extends js.Object {
     def this(options: PredicateOptions) = this()
   }
   
-  val default: Ow = js.native
   type Main = js.Function3[
     /* value */ js.Any, 
     /* label */ String | js.Function, 
     /* predicate */ BasePredicate[js.Any], 
     Unit
   ]
+  
+  type ReusableValidator[T] = js.Function2[/* value */ T, /* label */ js.UndefOr[String], Unit]
 }
-

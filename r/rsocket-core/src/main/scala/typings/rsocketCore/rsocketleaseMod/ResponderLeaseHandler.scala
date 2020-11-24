@@ -4,7 +4,7 @@ import typings.rsocketFlowable.mod.Flowable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-core/RSocketLease", "ResponderLeaseHandler")
 @js.native
@@ -24,6 +24,6 @@ class ResponderLeaseHandler protected () extends LeaseHandler {
     stats: LeaseStats,
     errorConsumer: js.Function1[/* e */ Error, Unit]
   ) = this()
+  
   def send(send: js.Function1[/* lease */ Lease, Unit]): Disposable = js.native
 }
-

@@ -5,14 +5,17 @@ import typings.poly2tri.poly2triNumbers.`1`
 import typings.poly2tri.poly2triNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("poly2tri", "Triangle")
 @js.native
 class Triangle protected () extends js.Object {
   def this(a: XY, b: XY, c: XY) = this()
+  
   def containsPoint(point: XY): Boolean = js.native
+  
   def containsPoints(p1: XY, p2: XY): Boolean = js.native
+  
   /**
     * Get one vertice of the triangle.
     * The output triangles of a triangulation have vertices which are references
@@ -34,10 +37,11 @@ class Triangle protected () extends js.Object {
   def getPoint_1(index: `1`): XY = js.native
   @JSName("getPoint")
   def getPoint_2(index: `2`): XY = js.native
+  
   /**
     * Get all 3 vertices of the triangle as an array
     */
   def getPoints(): js.Tuple3[XY, XY, XY] = js.native
+  
   def isInterior(): Boolean = js.native
 }
-

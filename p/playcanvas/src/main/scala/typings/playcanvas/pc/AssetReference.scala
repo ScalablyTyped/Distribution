@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that manages the case where an object holds a reference to an asset and needs to be notified when
@@ -27,38 +27,44 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AssetReference extends js.Object {
+  
   /**
     * Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
     */
   var id: Double = js.native
+  
   /**
     * Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
     */
   var url: String = js.native
 }
-
 object AssetReference {
+  
   @scala.inline
   def apply(id: Double, url: String): AssetReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetReference]
   }
+  
   @scala.inline
   implicit class AssetReferenceOps[Self <: AssetReference] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
   }
-  
 }
-

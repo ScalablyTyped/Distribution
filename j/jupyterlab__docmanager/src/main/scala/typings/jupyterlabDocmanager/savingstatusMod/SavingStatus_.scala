@@ -5,7 +5,7 @@ import typings.jupyterlabDocmanager.savingstatusMod.SavingStatus.IOptions
 import typings.jupyterlabDocmanager.savingstatusMod.SavingStatus.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/docmanager/lib/savingstatus", "SavingStatus")
 @js.native
@@ -15,4 +15,3 @@ class SavingStatus_ protected () extends VDomRenderer[Model] {
     */
   def this(opts: IOptions) = this()
 }
-

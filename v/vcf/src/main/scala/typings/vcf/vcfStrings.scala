@@ -3,9 +3,28 @@ package typings.vcf
 import typings.vcf.mod.CardVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vcfStrings {
+  
+  @scala.inline
+  def `2Dot1`: `2Dot1` = "2.1".asInstanceOf[`2Dot1`]
+  
+  @scala.inline
+  def `3Dot0`: `3Dot0` = "3.0".asInstanceOf[`3Dot0`]
+  
+  @scala.inline
+  def `4Dot0`: `4Dot0` = "4.0".asInstanceOf[`4Dot0`]
+  
+  @scala.inline
+  def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
+  
+  @scala.inline
+  def Dotvcf: Dotvcf = ".vcf".asInstanceOf[Dotvcf]
+  
+  @scala.inline
+  def vcard: vcard = "vcard".asInstanceOf[vcard]
+  
   @js.native
   sealed trait `2Dot1` extends CardVersion
   
@@ -23,18 +42,4 @@ object vcfStrings {
   
   @js.native
   sealed trait vcard extends js.Object
-  
-  @scala.inline
-  def `2Dot1`: `2Dot1` = "2.1".asInstanceOf[`2Dot1`]
-  @scala.inline
-  def `3Dot0`: `3Dot0` = "3.0".asInstanceOf[`3Dot0`]
-  @scala.inline
-  def `4Dot0`: `4Dot0` = "4.0".asInstanceOf[`4Dot0`]
-  @scala.inline
-  def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
-  @scala.inline
-  def Dotvcf: Dotvcf = ".vcf".asInstanceOf[Dotvcf]
-  @scala.inline
-  def vcard: vcard = "vcard".asInstanceOf[vcard]
 }
-

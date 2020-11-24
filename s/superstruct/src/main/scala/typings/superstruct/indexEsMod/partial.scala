@@ -3,14 +3,12 @@ package typings.superstruct.indexEsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/index.es", "partial")
 @js.native
 object partial extends js.Object {
-  /**
-    * Validate that a partial object with specific entry values.
-    */
+  
   /**
     * Validate that a partial object with specific entry values.
     */
@@ -27,4 +25,3 @@ object partial extends js.Object {
     _
   ] = js.native
 }
-

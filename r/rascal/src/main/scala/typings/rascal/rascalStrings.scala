@@ -2,9 +2,85 @@ package typings.rascal
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rascalStrings {
+  
+  @scala.inline
+  def ack: ack = "ack".asInstanceOf[ack]
+  
+  @scala.inline
+  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  
+  @scala.inline
+  def direct: direct = "direct".asInstanceOf[direct]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def exchange: exchange = "exchange".asInstanceOf[exchange]
+  
+  @scala.inline
+  def exponential: exponential = "exponential".asInstanceOf[exponential]
+  
+  @scala.inline
+  def fanout: fanout = "fanout".asInstanceOf[fanout]
+  
+  @scala.inline
+  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @scala.inline
+  def forward: forward = "forward".asInstanceOf[forward]
+  
+  @scala.inline
+  def headers: headers = "headers".asInstanceOf[headers]
+  
+  @scala.inline
+  def inMemory: inMemory = "inMemory".asInstanceOf[inMemory]
+  
+  @scala.inline
+  def inMemoryCluster: inMemoryCluster = "inMemoryCluster".asInstanceOf[inMemoryCluster]
+  
+  @scala.inline
+  def invalid_content: invalid_content = "invalid_content".asInstanceOf[invalid_content]
+  
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def nack: nack = "nack".asInstanceOf[nack]
+  
+  @scala.inline
+  def queue: queue = "queue".asInstanceOf[queue]
+  
+  @scala.inline
+  def random: random = "random".asInstanceOf[random]
+  
+  @scala.inline
+  def redeliveries_error: redeliveries_error = "redeliveries_error".asInstanceOf[redeliveries_error]
+  
+  @scala.inline
+  def redeliveries_exceeded: redeliveries_exceeded = "redeliveries_exceeded".asInstanceOf[redeliveries_exceeded]
+  
+  @scala.inline
+  def republish: republish = "republish".asInstanceOf[republish]
+  
+  @scala.inline
+  def `return`: `return` = "return".asInstanceOf[`return`]
+  
+  @scala.inline
+  def stub: stub = "stub".asInstanceOf[stub]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def topic: topic = "topic".asInstanceOf[topic]
+  
   @js.native
   sealed trait ack extends js.Object
   
@@ -69,56 +145,14 @@ object rascalStrings {
   sealed trait republish extends js.Object
   
   @js.native
+  sealed trait `return` extends js.Object
+  
+  @js.native
   sealed trait stub extends js.Object
   
   @js.native
-  sealed trait topic extends js.Object
+  sealed trait success extends js.Object
   
-  @scala.inline
-  def ack: ack = "ack".asInstanceOf[ack]
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
-  @scala.inline
-  def direct: direct = "direct".asInstanceOf[direct]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exchange: exchange = "exchange".asInstanceOf[exchange]
-  @scala.inline
-  def exponential: exponential = "exponential".asInstanceOf[exponential]
-  @scala.inline
-  def fanout: fanout = "fanout".asInstanceOf[fanout]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def inMemory: inMemory = "inMemory".asInstanceOf[inMemory]
-  @scala.inline
-  def inMemoryCluster: inMemoryCluster = "inMemoryCluster".asInstanceOf[inMemoryCluster]
-  @scala.inline
-  def invalid_content: invalid_content = "invalid_content".asInstanceOf[invalid_content]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def nack: nack = "nack".asInstanceOf[nack]
-  @scala.inline
-  def queue: queue = "queue".asInstanceOf[queue]
-  @scala.inline
-  def random: random = "random".asInstanceOf[random]
-  @scala.inline
-  def redeliveries_error: redeliveries_error = "redeliveries_error".asInstanceOf[redeliveries_error]
-  @scala.inline
-  def redeliveries_exceeded: redeliveries_exceeded = "redeliveries_exceeded".asInstanceOf[redeliveries_exceeded]
-  @scala.inline
-  def republish: republish = "republish".asInstanceOf[republish]
-  @scala.inline
-  def stub: stub = "stub".asInstanceOf[stub]
-  @scala.inline
-  def topic: topic = "topic".asInstanceOf[topic]
+  @js.native
+  sealed trait topic extends js.Object
 }
-

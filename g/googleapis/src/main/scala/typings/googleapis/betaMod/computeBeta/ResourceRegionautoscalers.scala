@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Regionautoscalers")
 @js.native
 class ResourceRegionautoscalers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionAutoscalers.delete
     * @desc Deletes the specified autoscaler.
@@ -103,6 +105,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionAutoscalers.get
     * @desc Returns the specified autoscaler.
@@ -192,6 +195,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoscaler]
   ): Unit = js.native
+  
   /**
     * compute.regionAutoscalers.insert
     * @desc Creates an autoscaler in the specified project using the data
@@ -284,6 +288,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionAutoscalers.list
     * @desc Retrieves a list of autoscalers contained within the specified
@@ -390,6 +395,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegionAutoscalerList]
   ): Unit = js.native
+  
   /**
     * compute.regionAutoscalers.patch
     * @desc Updates an autoscaler in the specified project using the data
@@ -486,6 +492,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionAutoscalers.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -581,6 +588,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.regionAutoscalers.update
     * @desc Updates an autoscaler in the specified project using the data
@@ -677,4 +685,3 @@ class ResourceRegionautoscalers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

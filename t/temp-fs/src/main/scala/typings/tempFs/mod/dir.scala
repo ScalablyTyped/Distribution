@@ -3,21 +3,24 @@ package typings.tempFs.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tempdir.
   */
 @js.native
 trait dir extends js.Object {
+  
   /**
     * The absolute path to the tempdir.
     */
   var path: String = js.native
+  
   /**
     * Whether {@link dir#unlink} will remove the tempdir recursively.
     */
   var recursive: Boolean = js.native
+  
   /**
     * A special function for you to remove the directory.
     *
@@ -29,10 +32,10 @@ trait dir extends js.Object {
   def unlink(): js.Any = js.native
   def unlink(callback: js.Function1[/* error */ Error, _]): js.Any = js.native
 }
-
 @JSImport("temp-fs", "dir")
 @js.native
 object dir extends js.Object {
+  
   /**
     * Return the path of a system-provided tempdir as
     * <code>require('os').tmpdir()</code> does.
@@ -44,4 +47,3 @@ object dir extends js.Object {
     */
   def apply(): String = js.native
 }
-

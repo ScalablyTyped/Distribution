@@ -12,7 +12,7 @@ Sails.js hook for Swagger projects
 | Keywords           | swagger, api, apis, sails |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1116 |
+| # downloads        | 1122 |
 | # stars            | 0 |
 
 ## Links

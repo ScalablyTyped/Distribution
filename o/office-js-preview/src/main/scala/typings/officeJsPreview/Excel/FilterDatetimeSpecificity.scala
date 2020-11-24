@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FilterDatetimeSpecificity extends js.Object
-
 /**
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.FilterDatetimeSpecificity")
 @js.native
 object FilterDatetimeSpecificity extends js.Object {
+  
   @js.native
   sealed trait day extends FilterDatetimeSpecificity
   
@@ -30,6 +30,4 @@ object FilterDatetimeSpecificity extends js.Object {
   
   @js.native
   sealed trait year extends FilterDatetimeSpecificity
-  
 }
-

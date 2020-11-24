@@ -2,11 +2,12 @@ package typings.d3Color.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RGBColorFactory
   extends js.Function {
+  
   def apply(color: ColorCommonInstance): RGBColor = js.native
   /**
     * Converts the provided color instance and returns an RGB color. The color instance is converted to the RGB color space using color.rgb.
@@ -33,4 +34,3 @@ trait RGBColorFactory
   def apply(r: Double, g: Double, b: Double): RGBColor = js.native
   def apply(r: Double, g: Double, b: Double, opacity: Double): RGBColor = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for isomorphic-unfetch
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Switches between unfetch & node-fetch for client & server.
@@ -10,9 +10,9 @@ Switches between unfetch & node-fetch for client & server.
 | ------------------ | :-------------: |
 | Full name          | isomorphic-unfetch |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 308 |
-| # downloads        | 9337279 |
+| # releases         | 2 |
+| # dependents       | 439 |
+| # downloads        | 14583429 |
 | # stars            | 3 |
 
 ## Links

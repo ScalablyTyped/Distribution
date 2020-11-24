@@ -5,10 +5,9 @@ import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import typings.uirouterCore.stateInterfaceMod._StateDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableStateDeclaration
   extends _StateDeclaration
      with Instantiable0[StateDeclaration]
-

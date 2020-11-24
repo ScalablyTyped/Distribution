@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.rx.Rx.Comparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.sorting", "HistoricalScheduler")
 @js.native
@@ -20,4 +20,3 @@ Instantiable2[
       /* comparer */ Comparer[Double, Double], 
       typings.rx.Rx.HistoricalScheduler
     ]
-

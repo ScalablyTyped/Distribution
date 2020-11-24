@@ -11,8 +11,8 @@ Debounce promise-returning & async functions
 | Full name          | p-debounce |
 | Keywords           | promise, debounce, debounced, limit, limited, concurrency, throttle, throat, limited, interval, rate, batch, ratelimit, task, queue, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 37 |
-| # downloads        | 550764 |
+| # dependents       | 47 |
+| # downloads        | 827331 |
 | # stars            | 0 |
 
 ## Links

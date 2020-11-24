@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_viewmodel"
-version := "1.1.3-dt-20200515Z-e632a1"
+version := "1.1.3-dt-20201002Z-6f8691"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

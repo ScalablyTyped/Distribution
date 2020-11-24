@@ -2,13 +2,12 @@ package typings.factoryGirl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object factoryGirlStrings {
-  @js.native
-  sealed trait Attributes extends js.Object
   
   @scala.inline
   def Attributes: Attributes = "Attributes".asInstanceOf[Attributes]
+  @js.native
+  sealed trait Attributes extends js.Object
 }
-

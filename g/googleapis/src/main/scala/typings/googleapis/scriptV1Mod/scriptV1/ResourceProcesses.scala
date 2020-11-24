@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Processes")
 @js.native
 class ResourceProcesses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * script.processes.list
     * @desc List information about processes made by or on behalf of a user,
@@ -55,6 +57,7 @@ class ResourceProcesses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListUserProcessesResponse]
   ): Unit = js.native
+  
   /**
     * script.processes.listScriptProcesses
     * @desc List information about a script's executed processes, such as
@@ -97,4 +100,3 @@ class ResourceProcesses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListScriptProcessesResponse]
   ): Unit = js.native
 }
-

@@ -10,15 +10,15 @@ A simple to use javascript component as powerful alternative to the HTML <select
 | ------------------ | :-------------: |
 | Full name          | extended-listbox |
 | Keywords           | listbox, select, multiselect, form, input, ui |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 4948 |
+| # downloads        | 5238 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/code-chris/extended-listbox#readme)
-- [Bugs](https://github.com/code-chris/extended-listbox/issues)
-- [Repository](https://github.com/code-chris/extended-listbox)
+- [Homepage](https://github.com/ckotzbauer/extended-listbox#readme)
+- [Bugs](https://github.com/ckotzbauer/extended-listbox/issues)
+- [Repository](https://github.com/ckotzbauer/extended-listbox)
 - [Npm](https://www.npmjs.com/package/extended-listbox)
     
 

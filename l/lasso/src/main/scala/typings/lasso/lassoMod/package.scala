@@ -2,10 +2,12 @@ package typings.lasso
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object lassoMod {
+  
   type Callback = js.Function2[/* err */ typings.std.Error | scala.Null, /* result */ js.UndefOr[js.Any], js.Any]
+  
   type LassoPage = js.Function2[
     /* options */ typings.lasso.lassoMod.PageConfig, 
     /* callback */ js.UndefOr[
@@ -17,6 +19,7 @@ package object lassoMod {
     ], 
     js.Promise[js.Any]
   ]
+  
   type LassoResource = js.Function3[
     /* path */ java.lang.String, 
     /* options */ js.UndefOr[js.Any], 

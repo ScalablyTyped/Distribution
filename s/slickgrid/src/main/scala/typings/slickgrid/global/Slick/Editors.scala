@@ -4,11 +4,12 @@ import typings.slickgrid.Slick.Editors.EditorOptions
 import typings.slickgrid.Slick.SlickData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Slick.Editors")
 @js.native
 object Editors extends js.Object {
+  
   @js.native
   class Checkbox[T /* <: SlickData */] protected ()
     extends typings.slickgrid.Slick.Editors.Checkbox[T] {
@@ -56,6 +57,4 @@ object Editors extends js.Object {
     extends typings.slickgrid.Slick.Editors.YesNoSelect[T] {
     def this(args: EditorOptions[T]) = this()
   }
-  
 }
-

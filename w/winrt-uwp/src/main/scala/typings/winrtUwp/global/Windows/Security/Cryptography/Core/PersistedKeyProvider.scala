@@ -4,18 +4,18 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves a persisted key from a Certificate object. */
 @JSGlobal("Windows.Security.Cryptography.Core.PersistedKeyProvider")
 @js.native
 abstract class PersistedKeyProvider ()
   extends typings.winrtUwp.Windows.Security.Cryptography.Core.PersistedKeyProvider
-
 /* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.PersistedKeyProvider")
 @js.native
 object PersistedKeyProvider extends js.Object {
+  
   /**
     * Opens the persisted private key from the specified Certificate object.
     * @param certificate The certificate that is associated with the private key.
@@ -28,6 +28,7 @@ object PersistedKeyProvider extends js.Object {
     hashAlgorithmName: String,
     padding: typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicPadding
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey] = js.native
+  
   /**
     * Opens the persisted public key from the specified Certificate object.
     * @param certificate The certificate that contains the public key.
@@ -41,4 +42,3 @@ object PersistedKeyProvider extends js.Object {
     padding: typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicPadding
   ): typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey = js.native
 }
-

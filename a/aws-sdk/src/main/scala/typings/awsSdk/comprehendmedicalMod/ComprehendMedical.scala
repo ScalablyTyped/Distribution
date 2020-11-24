@@ -1,17 +1,19 @@
 package typings.awsSdk.comprehendmedicalMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComprehendMedical extends Service {
+  
   @JSName("config")
   var config_ComprehendMedical: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Gets the properties associated with a medical entities detection job. Use this operation to get the status of a detection job.
     */
@@ -27,6 +29,7 @@ trait ComprehendMedical extends Service {
     params: DescribeEntitiesDetectionV2JobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntitiesDetectionV2JobResponse, Unit]
   ): Request[DescribeEntitiesDetectionV2JobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with an InferICD10CM job. Use this operation to get the status of an inference job.
     */
@@ -40,6 +43,7 @@ trait ComprehendMedical extends Service {
     params: DescribeICD10CMInferenceJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeICD10CMInferenceJobResponse, Unit]
   ): Request[DescribeICD10CMInferenceJobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with a protected health information (PHI) detection job. Use this operation to get the status of a detection job.
     */
@@ -53,6 +57,7 @@ trait ComprehendMedical extends Service {
     params: DescribePHIDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePHIDetectionJobResponse, Unit]
   ): Request[DescribePHIDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Gets the properties associated with an InferRxNorm job. Use this operation to get the status of an inference job.
     */
@@ -66,6 +71,7 @@ trait ComprehendMedical extends Service {
     params: DescribeRxNormInferenceJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRxNormInferenceJobResponse, Unit]
   ): Request[DescribeRxNormInferenceJobResponse, AWSError] = js.native
+  
   /**
     * The DetectEntities operation is deprecated. You should use the DetectEntitiesV2 operation instead.  Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information .
     */
@@ -79,6 +85,7 @@ trait ComprehendMedical extends Service {
     params: DetectEntitiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesResponse, Unit]
   ): Request[DetectEntitiesResponse, AWSError] = js.native
+  
   /**
     * Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information. Amazon Comprehend Medical only detects medical entities in English language texts. The DetectEntitiesV2 operation replaces the DetectEntities operation. This new action uses a different model for determining the entities in your medical text and changes the way that some entities are returned in the output. You should use the DetectEntitiesV2 operation in all new applications. The DetectEntitiesV2 operation returns the Acuity and Direction entities as attributes instead of types. 
     */
@@ -92,6 +99,7 @@ trait ComprehendMedical extends Service {
     params: DetectEntitiesV2Request,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesV2Response, Unit]
   ): Request[DetectEntitiesV2Response, AWSError] = js.native
+  
   /**
     *  Inspects the clinical text for protected health information (PHI) entities and returns the entity category, location, and confidence score for each entity. Amazon Comprehend Medical only detects entities in English language texts.
     */
@@ -105,6 +113,7 @@ trait ComprehendMedical extends Service {
     params: DetectPHIRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectPHIResponse, Unit]
   ): Request[DetectPHIResponse, AWSError] = js.native
+  
   /**
     * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control. Amazon Comprehend Medical only detects medical entities in English language texts.
     */
@@ -118,6 +127,7 @@ trait ComprehendMedical extends Service {
     params: InferICD10CMRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InferICD10CMResponse, Unit]
   ): Request[InferICD10CMResponse, AWSError] = js.native
+  
   /**
     * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine. Amazon Comprehend Medical only detects medical entities in English language texts.
     */
@@ -131,6 +141,7 @@ trait ComprehendMedical extends Service {
     params: InferRxNormRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InferRxNormResponse, Unit]
   ): Request[InferRxNormResponse, AWSError] = js.native
+  
   /**
     * Gets a list of medical entity detection jobs that you have submitted.
     */
@@ -144,6 +155,7 @@ trait ComprehendMedical extends Service {
     params: ListEntitiesDetectionV2JobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEntitiesDetectionV2JobsResponse, Unit]
   ): Request[ListEntitiesDetectionV2JobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of InferICD10CM jobs that you have submitted.
     */
@@ -157,6 +169,7 @@ trait ComprehendMedical extends Service {
     params: ListICD10CMInferenceJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListICD10CMInferenceJobsResponse, Unit]
   ): Request[ListICD10CMInferenceJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of protected health information (PHI) detection jobs that you have submitted.
     */
@@ -170,6 +183,7 @@ trait ComprehendMedical extends Service {
     params: ListPHIDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPHIDetectionJobsResponse, Unit]
   ): Request[ListPHIDetectionJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of InferRxNorm jobs that you have submitted.
     */
@@ -183,6 +197,7 @@ trait ComprehendMedical extends Service {
     params: ListRxNormInferenceJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRxNormInferenceJobsResponse, Unit]
   ): Request[ListRxNormInferenceJobsResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous medical entity detection job for a collection of documents. Use the DescribeEntitiesDetectionV2Job operation to track the status of a job.
     */
@@ -196,6 +211,7 @@ trait ComprehendMedical extends Service {
     params: StartEntitiesDetectionV2JobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartEntitiesDetectionV2JobResponse, Unit]
   ): Request[StartEntitiesDetectionV2JobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous job to detect medical conditions and link them to the ICD-10-CM ontology. Use the DescribeICD10CMInferenceJob operation to track the status of a job.
     */
@@ -209,6 +225,7 @@ trait ComprehendMedical extends Service {
     params: StartICD10CMInferenceJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartICD10CMInferenceJobResponse, Unit]
   ): Request[StartICD10CMInferenceJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous job to detect protected health information (PHI). Use the DescribePHIDetectionJob operation to track the status of a job.
     */
@@ -222,6 +239,7 @@ trait ComprehendMedical extends Service {
     params: StartPHIDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartPHIDetectionJobResponse, Unit]
   ): Request[StartPHIDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Starts an asynchronous job to detect medication entities and link them to the RxNorm ontology. Use the DescribeRxNormInferenceJob operation to track the status of a job.
     */
@@ -235,6 +253,7 @@ trait ComprehendMedical extends Service {
     params: StartRxNormInferenceJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartRxNormInferenceJobResponse, Unit]
   ): Request[StartRxNormInferenceJobResponse, AWSError] = js.native
+  
   /**
     * Stops a medical entities detection job in progress.
     */
@@ -248,6 +267,7 @@ trait ComprehendMedical extends Service {
     params: StopEntitiesDetectionV2JobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopEntitiesDetectionV2JobResponse, Unit]
   ): Request[StopEntitiesDetectionV2JobResponse, AWSError] = js.native
+  
   /**
     * Stops an InferICD10CM inference job in progress.
     */
@@ -261,6 +281,7 @@ trait ComprehendMedical extends Service {
     params: StopICD10CMInferenceJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopICD10CMInferenceJobResponse, Unit]
   ): Request[StopICD10CMInferenceJobResponse, AWSError] = js.native
+  
   /**
     * Stops a protected health information (PHI) detection job in progress.
     */
@@ -274,6 +295,7 @@ trait ComprehendMedical extends Service {
     params: StopPHIDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopPHIDetectionJobResponse, Unit]
   ): Request[StopPHIDetectionJobResponse, AWSError] = js.native
+  
   /**
     * Stops an InferRxNorm inference job in progress.
     */
@@ -288,4 +310,3 @@ trait ComprehendMedical extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopRxNormInferenceJobResponse, Unit]
   ): Request[StopRxNormInferenceJobResponse, AWSError] = js.native
 }
-

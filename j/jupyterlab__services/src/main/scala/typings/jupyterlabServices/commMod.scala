@@ -15,11 +15,12 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services/lib/kernel/comm", JSImport.Namespace)
 @js.native
 object commMod extends js.Object {
+  
   @js.native
   class CommHandler protected ()
     extends DisposableDelegate
@@ -28,41 +29,32 @@ object commMod extends js.Object {
       * Construct a new comm channel.
       */
     def this(target: String, id: String, kernel: IKernelConnection, disposeCb: js.Function0[Unit]) = this()
+    
     var _id: js.Any = js.native
+    
     var _kernel: js.Any = js.native
+    
     var _onClose: js.Any = js.native
+    
     var _onMsg: js.Any = js.native
+    
     var _target: js.Any = js.native
-    /**
-      * Test whether the object has been disposed.
-      *
-      * #### Notes
-      * This property is always safe to access.
-      */
-    /* CompleteClass */
-    override val isDisposed: Boolean = js.native
+    
     def close(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(
+      data: JSONObject,
+      metadata: js.UndefOr[scala.Nothing],
+      buffers: js.Array[ArrayBuffer | ArrayBufferView]
+    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def close(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def close(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    
     /**
       * The unique id for the comm channel.
       */
     @JSName("commId")
     def commId_MCommHandler: String = js.native
-    /**
-      * Dispose of the resources held by the object.
-      *
-      * #### Notes
-      * If the object's `dispose` method is called more than once, all
-      * calls made after the first will be a no-op.
-      *
-      * #### Undefined Behavior
-      * It is undefined behavior to use any functionality of the object
-      * after it has been disposed unless otherwise explicitly noted.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def dispose(): Unit = js.native
+    
     /**
       * Get the callback for a comm close event.
       *
@@ -83,7 +75,8 @@ object commMod extends js.Object {
       *
       * **See also:** [[close]]
       */
-    def onClose(cb: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
+    def onClose_=(cb: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit = js.native
+    
     /**
       * Get the callback for a comm message received event.
       */
@@ -95,10 +88,17 @@ object commMod extends js.Object {
       * This is called when a comm message is received. If the function returns a
       * promise, kernel message processing will pause until it is fulfilled.
       */
-    def onMsg(cb: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit | js.Thenable[Unit] = js.native
+    def onMsg_=(cb: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit = js.native
+    
     def open(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(
+      data: JSONObject,
+      metadata: js.UndefOr[scala.Nothing],
+      buffers: js.Array[ArrayBuffer | ArrayBufferView]
+    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    
     /**
       * Send a `comm_msg` message to the kernel.
       *
@@ -108,7 +108,25 @@ object commMod extends js.Object {
       * **See also:** [[ICommMsg]]
       */
     def send(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(
+      data: JSONObject,
+      metadata: js.UndefOr[scala.Nothing],
+      buffers: js.UndefOr[scala.Nothing],
+      disposeOnDone: Boolean
+    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(
+      data: JSONObject,
+      metadata: js.UndefOr[scala.Nothing],
+      buffers: js.Array[ArrayBuffer | ArrayBufferView]
+    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(
+      data: JSONObject,
+      metadata: js.UndefOr[scala.Nothing],
+      buffers: js.Array[ArrayBuffer | ArrayBufferView],
+      disposeOnDone: Boolean
+    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONObject, metadata: JSONObject, buffers: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(
       data: JSONObject,
@@ -116,12 +134,11 @@ object commMod extends js.Object {
       buffers: js.Array[ArrayBuffer | ArrayBufferView],
       disposeOnDone: Boolean
     ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    
     /**
       * The target name for the comm channel.
       */
     @JSName("targetName")
     def targetName_MCommHandler: String = js.native
   }
-  
 }
-

@@ -4,17 +4,19 @@ import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShapeNodes extends js.Object {
+  
   val Application: typings.activexWord.Word.Application = js.native
+  
   val Count: Double = js.native
+  
   val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.ShapeNodes_typekey")
-  var WordDotShapeNodes_typekey: ShapeNodes = js.native
+  
   def Delete(Index: Double): Unit = js.native
+  
   /**
     * @param number [X2=0]
     * @param number [Y2=0]
@@ -176,9 +178,17 @@ trait ShapeNodes extends js.Object {
     X3: Double,
     Y3: Double
   ): Unit = js.native
+  
   def Item(Index: js.Any): ShapeNode = js.native
+  
+  val Parent: js.Any = js.native
+  
   def SetEditingType(Index: Double, EditingType: MsoEditingType): Unit = js.native
+  
   def SetPosition(Index: Double, X1: Double, Y1: Double): Unit = js.native
+  
   def SetSegmentType(Index: Double, SegmentType: MsoSegmentType): Unit = js.native
+  
+  @JSName("Word.ShapeNodes_typekey")
+  var WordDotShapeNodes_typekey: ShapeNodes = js.native
 }
-

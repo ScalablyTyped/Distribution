@@ -3,11 +3,12 @@ package typings.reactDndMultiBackend
 import typings.reactDndMultiBackend.mod.Backends
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd-multi-backend/dist/esm/HTML5toTouch", JSImport.Namespace)
 @js.native
 object esmHtml5totouchMod extends js.Object {
+  
   /**
     * Most commonly used set of Backends.
     * The default backend is the react-dnd-html5-backend.
@@ -16,4 +17,3 @@ object esmHtml5totouchMod extends js.Object {
     */
   val default: Backends = js.native
 }
-

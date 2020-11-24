@@ -2,7 +2,7 @@ package typings.roslib.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.roslib.mod.UrdfSphere
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   - typings.roslib.mod.UrdfMesh
 */
 trait UrdfGeometry extends js.Object
-

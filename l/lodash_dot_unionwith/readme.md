@@ -11,8 +11,8 @@ The lodash method `_.unionWith` exported as a module.
 | Full name          | lodash.unionwith |
 | Keywords           | lodash-modularized, unionwith |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 1416781 |
+| # dependents       | 19 |
+| # downloads        | 3025569 |
 | # stars            | 0 |
 
 ## Links

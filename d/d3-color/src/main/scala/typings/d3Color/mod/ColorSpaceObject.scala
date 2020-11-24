@@ -2,7 +2,7 @@ package typings.d3Color.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.d3Color.mod.RGBColor
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   - typings.d3Color.mod.CubehelixColor
 */
 trait ColorSpaceObject extends js.Object
-

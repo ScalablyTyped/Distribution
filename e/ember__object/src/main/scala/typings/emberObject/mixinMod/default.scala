@@ -5,16 +5,16 @@ import typings.emberObject.typesMod.MixinOrLiteral
 import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember/object/mixin", JSImport.Default)
 @js.native
 class default[T, Base] () extends Mixin[T, Base]
-
 /* static members */
 @JSImport("@ember/object/mixin", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def create[T, Base](): Mixin[T, Base] = js.native
   def create[T, Base](args: (MixinOrLiteral[T, Base]) with (ThisType[Fix[T with Base]])): Mixin[T, Base] = js.native
   def create[T1, T2, Base](
@@ -33,4 +33,3 @@ object default extends js.Object {
     arg4: (MixinOrLiteral[T4, Base]) with (ThisType[Fix[T4 with Base]])
   ): Mixin[T1 with T2 with T3 with T4, Base] = js.native
 }
-

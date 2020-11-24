@@ -10,9 +10,9 @@ remark plugin to compile Markdown
 | ------------------ | :-------------: |
 | Full name          | remark-stringify |
 | Keywords           | unified, remark, remark-plugin, plugin, markdown, mdast, markdown, abstract, syntax, tree, ast, stringify, serialize, compile |
-| # releases         | 12 |
-| # dependents       | 150 |
-| # downloads        | 79775124 |
+| # releases         | 13 |
+| # dependents       | 185 |
+| # downloads        | 111514080 |
 | # stars            | 0 |
 
 ## Links

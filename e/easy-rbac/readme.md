@@ -11,11 +11,14 @@ RBAC implementation for Node.js
 | Full name          | easy-rbac |
 | Keywords           | rbac |
 | # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 57226 |
+| # dependents       | 10 |
+| # downloads        | 73715 |
 | # stars            | 5 |
 
 ## Links
+- [Homepage](https://github.com/DeadAlready/easy-rbac#readme)
+- [Bugs](https://github.com/DeadAlready/easy-rbac/issues)
+- [Repository](https://github.com/DeadAlready/easy-rbac)
 - [Npm](https://www.npmjs.com/package/easy-rbac)
     
 

@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects of this interface provide information about a package's type.
@@ -10,38 +10,45 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPackageTypeInfo extends js.Object {
+  
   /**
     * returns a description string to describe a package type.
     * @returns description
     */
   val Description: String = js.native
+  
   /**
     * returns a file filter string for the file picker user interface. Both, the short description string and file filter string will be passed to {@link
     * com.sun.star.ui.dialogs.XFilterManager.appendFilter()} .
     * @returns file filter string
     */
   val FileFilter: String = js.native
+  
   /**
     * returns the media type of a package, e.g. `application/vnd.sun.star.basic-script` .
     * @returns media type of package
     */
   val MediaType: String = js.native
+  
   /**
     * returns a short description string to describe a package type (one line only).
     * @returns description
     */
   val ShortDescription: String = js.native
+  
   /**
     * returns a description string to describe a package type.
     * @returns description
     */
   def getDescription(): String = js.native
+  
   /**
     * returns a file filter string for the file picker user interface. Both, the short description string and file filter string will be passed to {@link
     * com.sun.star.ui.dialogs.XFilterManager.appendFilter()} .
     * @returns file filter string
     */
   def getFileFilter(): String = js.native
+  
   /**
     * returns an icon for a package.
     * @param highContrast return high contrast icon
@@ -49,19 +56,21 @@ trait XPackageTypeInfo extends js.Object {
     * @returns currently an unsigned short (resource id for deploymentgui resource file), `VOID` any if none is available
     */
   def getIcon(highContrast: Boolean, smallIcon: Boolean): js.Any = js.native
+  
   /**
     * returns the media type of a package, e.g. `application/vnd.sun.star.basic-script` .
     * @returns media type of package
     */
   def getMediaType(): String = js.native
+  
   /**
     * returns a short description string to describe a package type (one line only).
     * @returns description
     */
   def getShortDescription(): String = js.native
 }
-
 object XPackageTypeInfo {
+  
   @scala.inline
   def apply(
     Description: String,
@@ -77,36 +86,47 @@ object XPackageTypeInfo {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], FileFilter = FileFilter.asInstanceOf[js.Any], MediaType = MediaType.asInstanceOf[js.Any], ShortDescription = ShortDescription.asInstanceOf[js.Any], getDescription = js.Any.fromFunction0(getDescription), getFileFilter = js.Any.fromFunction0(getFileFilter), getIcon = js.Any.fromFunction2(getIcon), getMediaType = js.Any.fromFunction0(getMediaType), getShortDescription = js.Any.fromFunction0(getShortDescription))
     __obj.asInstanceOf[XPackageTypeInfo]
   }
+  
   @scala.inline
   implicit class XPackageTypeInfoOps[Self <: XPackageTypeInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFileFilter(value: String): Self = this.set("FileFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMediaType(value: String): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShortDescription(value: String): Self = this.set("ShortDescription", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFileFilter(value: () => String): Self = this.set("getFileFilter", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetIcon(value: (Boolean, Boolean) => js.Any): Self = this.set("getIcon", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetMediaType(value: () => String): Self = this.set("getMediaType", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetShortDescription(value: () => String): Self = this.set("getShortDescription", js.Any.fromFunction0(value))
   }
-  
 }
-

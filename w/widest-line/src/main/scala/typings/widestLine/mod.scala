@@ -3,16 +3,12 @@ package typings.widestLine
 import typings.widestLine.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("widest-line", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: remove this in the next major version, refactor definition to:
-  // declare function widestLine(input: string): number;
-  // export = widestLine;
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	Get the visual width of the widest line in a string - the number of columns required to display it.
   	@example
@@ -23,6 +19,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(input: String): Double = js.native
+  
   /**
   	Get the visual width of the widest line in a string - the number of columns required to display it.
   	@example
@@ -36,5 +33,9 @@ object mod extends js.Object {
   // declare function widestLine(input: string): number;
   // export = widestLine;
   def default(input: String): Double = js.native
+  // TODO: remove this in the next major version, refactor definition to:
+  // declare function widestLine(input: string): number;
+  // export = widestLine;
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.xrm.xrmStrings.date
 import typings.xrm.xrmStrings.datetime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Date attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.DateAttribute DateAttribute}.
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.datetime
 */
 trait DateAttributeFormat extends js.Object
-
 object DateAttributeFormat {
+  
   @scala.inline
   def Date: date = "date".asInstanceOf[date]
+  
   @scala.inline
   def DateTime: datetime = "datetime".asInstanceOf[datetime]
 }
-

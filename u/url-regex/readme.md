@@ -10,9 +10,9 @@ Regular expression for matching URLs
 | ------------------ | :-------------: |
 | Full name          | url-regex |
 | Keywords           | regex, string, url |
-| # releases         | 2 |
-| # dependents       | 126 |
-| # downloads        | 34355626 |
+| # releases         | 1 |
+| # dependents       | 132 |
+| # downloads        | 35291629 |
 | # stars            | 9 |
 
 ## Links

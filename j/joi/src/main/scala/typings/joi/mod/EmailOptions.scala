@@ -1,57 +1,115 @@
 package typings.joi.mod
 
+import typings.joi.joiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EmailOptions extends js.Object {
+  
   /**
-    * Numerical threshold at which an email address is considered invalid
+    * If `true`, Unicode characters are permitted
+    *
+    * @default true
     */
-  var errorLevel: js.UndefOr[Double | Boolean] = js.native
+  var allowUnicode: js.UndefOr[Boolean] = js.native
+  
   /**
-    * Number of atoms required for the domain. Be careful since some domains, such as io, directly allow email.
+    * if `true`, ignore invalid email length errors.
+    *
+    * @default false
     */
-  var minDomainAtoms: js.UndefOr[Double] = js.native
+  var ignoreLength: js.UndefOr[Boolean] = js.native
+  
   /**
-    * Specifies a list of acceptable TLDs.
+    * Number of segments required for the domain. Be careful since some domains, such as `io`, directly allow email.
+    *
+    * @default 2
     */
-  var tldWhitelist: js.UndefOr[js.Array[String] | js.Object] = js.native
+  var minDomainSegments: js.UndefOr[Double] = js.native
+  
+  /**
+    * if true, allows multiple email addresses in a single string, separated by , or the separator characters.
+    *
+    * @default false
+    */
+  var multiple: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * when multiple is true, overrides the default , separator. String can be a single character or multiple separator characters.
+    *
+    * @default ','
+    */
+  var separator: js.UndefOr[String | js.Array[String]] = js.native
+  
+  /**
+    * Options for TLD (top level domain) validation. By default, the TLD must be a valid name listed on the [IANA registry](http://data.iana.org/TLD/tlds-alpha-by-domain.txt)
+    *
+    * @default { allow: true }
+    */
+  var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.native
 }
-
 object EmailOptions {
+  
   @scala.inline
   def apply(): EmailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailOptions]
   }
+  
   @scala.inline
   implicit class EmailOptionsOps[Self <: EmailOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setErrorLevel(value: Double | Boolean): Self = this.set("errorLevel", value.asInstanceOf[js.Any])
+    def setAllowUnicode(value: Boolean): Self = this.set("allowUnicode", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteErrorLevel: Self = this.set("errorLevel", js.undefined)
+    def deleteAllowUnicode: Self = this.set("allowUnicode", js.undefined)
+    
     @scala.inline
-    def setMinDomainAtoms(value: Double): Self = this.set("minDomainAtoms", value.asInstanceOf[js.Any])
+    def setIgnoreLength(value: Boolean): Self = this.set("ignoreLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteMinDomainAtoms: Self = this.set("minDomainAtoms", js.undefined)
+    def deleteIgnoreLength: Self = this.set("ignoreLength", js.undefined)
+    
     @scala.inline
-    def setTldWhitelistVarargs(value: String*): Self = this.set("tldWhitelist", js.Array(value :_*))
+    def setMinDomainSegments(value: Double): Self = this.set("minDomainSegments", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setTldWhitelist(value: js.Array[String] | js.Object): Self = this.set("tldWhitelist", value.asInstanceOf[js.Any])
+    def deleteMinDomainSegments: Self = this.set("minDomainSegments", js.undefined)
+    
     @scala.inline
-    def deleteTldWhitelist: Self = this.set("tldWhitelist", js.undefined)
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    
+    @scala.inline
+    def setSeparatorVarargs(value: String*): Self = this.set("separator", js.Array(value :_*))
+    
+    @scala.inline
+    def setSeparator(value: String | js.Array[String]): Self = this.set("separator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    
+    @scala.inline
+    def setTlds(value: TopLevelDomainOptions | `false`): Self = this.set("tlds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTlds: Self = this.set("tlds", js.undefined)
   }
-  
 }
-

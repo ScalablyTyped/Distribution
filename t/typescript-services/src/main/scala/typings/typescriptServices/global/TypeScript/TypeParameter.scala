@@ -2,7 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.TypeParameter")
 @js.native
@@ -13,4 +13,3 @@ class TypeParameter protected ()
     constraint: typings.typescriptServices.TypeScript.Constraint
   ) = this()
 }
-

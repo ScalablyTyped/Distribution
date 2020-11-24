@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Placementstrategies")
 @js.native
 class ResourcePlacementstrategies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.placementStrategies.delete
     * @desc Deletes an existing placement strategy.
@@ -42,6 +44,7 @@ class ResourcePlacementstrategies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementStrategies.get
     * @desc Gets one placement strategy by ID.
@@ -74,6 +77,7 @@ class ResourcePlacementstrategies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementStrategy]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementStrategies.insert
     * @desc Inserts a new placement strategy.
@@ -106,6 +110,7 @@ class ResourcePlacementstrategies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementStrategy]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementStrategies.list
     * @desc Retrieves a list of placement strategies, possibly filtered. This
@@ -144,6 +149,7 @@ class ResourcePlacementstrategies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementStrategiesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementStrategies.patch
     * @desc Updates an existing placement strategy. This method supports patch
@@ -178,6 +184,7 @@ class ResourcePlacementstrategies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementStrategy]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementStrategies.update
     * @desc Updates an existing placement strategy.
@@ -211,4 +218,3 @@ class ResourcePlacementstrategies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlacementStrategy]
   ): Unit = js.native
 }
-

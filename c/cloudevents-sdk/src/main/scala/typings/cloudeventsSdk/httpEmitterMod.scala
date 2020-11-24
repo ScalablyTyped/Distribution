@@ -6,11 +6,12 @@ import typings.cloudeventsSdk.cloudeventMod.CloudEvent
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", JSImport.Namespace)
 @js.native
 object httpEmitterMod extends js.Object {
+  
   @js.native
   class HTTPEmitter protected () extends js.Object {
     /**
@@ -23,9 +24,9 @@ object httpEmitterMod extends js.Object {
       * @throws {TypeError} if no options.url is provided or an unknown specification version is provided.
       */
     def this(hasUrlVersion: Url) = this()
+    
     var binary: js.Any = js.native
-    var structured: js.Any = js.native
-    var url: URL | String = js.native
+    
     /**
       * Sends the {CloudEvent} to an event receiver over HTTP POST
       *
@@ -43,13 +44,15 @@ object httpEmitterMod extends js.Object {
       */
     def send(event: CloudEvent): js.Any = js.native
     def send(event: CloudEvent, hasUrlModeHttpOpts: Mode): js.Any = js.native
+    
+    var structured: js.Any = js.native
+    
+    var url: URL | String = js.native
   }
-  
   /* static members */
   @js.native
   object HTTPEmitter extends js.Object {
+    
     var headers: js.Function = js.native
   }
-  
 }
-

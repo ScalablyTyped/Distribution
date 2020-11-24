@@ -3,11 +3,12 @@ package typings.protobufjs.mod.common
 import typings.protobufjs.mod.INamespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "common.get")
 @js.native
 object get extends js.Object {
+  
   /**
     * Gets the root definition of the specified common proto file.
     *
@@ -25,4 +26,3 @@ object get extends js.Object {
     */
   def apply(file: String): INamespace | Null = js.native
 }
-

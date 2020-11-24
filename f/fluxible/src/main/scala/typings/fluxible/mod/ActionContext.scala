@@ -5,15 +5,12 @@ import typings.fluxible.anon.Instantiable
 import typings.fluxible.baseStoreMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fluxible", "ActionContext")
 @js.native
 class ActionContext () extends js.Object {
-  /**
-    * Data service. available only if fetch plugin is added
-    */
-  var service: js.UndefOr[Create] = js.native
+  
   /**
     * Dispatches a payload to all registered callbacks.
     * @param action Action name
@@ -21,6 +18,7 @@ class ActionContext () extends js.Object {
     */
   def dispatch(action: String): Unit = js.native
   def dispatch(action: String, payload: js.Any): Unit = js.native
+  
   /**
     * Proxy function to execute action
     * @param action function that will be executed
@@ -64,9 +62,14 @@ class ActionContext () extends js.Object {
     payload: js.Any,
     callback: js.Any
   ): Unit = js.native
+  
   /**
     * Getter for store from dispatcher
     */
   def getStore[T /* <: ^[js.Object] */](store: Instantiable[T]): T = js.native
+  
+  /**
+    * Data service. available only if fetch plugin is added
+    */
+  var service: js.UndefOr[Create] = js.native
 }
-

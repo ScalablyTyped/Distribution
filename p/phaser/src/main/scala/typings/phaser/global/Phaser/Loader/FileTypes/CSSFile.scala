@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.CSSFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single CSS File suitable for loading by the Loader.
@@ -39,4 +39,3 @@ class CSSFile protected ()
   ) = this()
   def this(loader: LoaderPlugin, key: CSSFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
 }
-

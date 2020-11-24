@@ -2,11 +2,12 @@ package typings.sipml.SIPml.Session
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Message
   extends typings.sipml.SIPml.Session {
+  
   def send(to: String): Double = js.native
   def send(
     to: String,
@@ -21,4 +22,3 @@ trait Message
   def send(to: String, content: js.Any, contentType: String): Double = js.native
   def send(to: String, content: js.Any, contentType: String, configuration: Configuration): Double = js.native
 }
-

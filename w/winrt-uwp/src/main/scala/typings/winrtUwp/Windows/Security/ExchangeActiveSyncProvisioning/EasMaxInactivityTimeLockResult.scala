@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasMaxInactivityTimeLockResult extends js.Object
-
 /** Represents the maximum length of time result before locking the computer. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult")
 @js.native
 object EasMaxInactivityTimeLockResult extends js.Object {
+  
   /** This computer can be compliant by using the ApplyAsync method. */
   @js.native
   sealed trait canBeCompliant extends EasMaxInactivityTimeLockResult
@@ -30,6 +30,4 @@ object EasMaxInactivityTimeLockResult extends js.Object {
   /** The requested policy is stricter than the computer policies. */
   @js.native
   sealed trait requestedPolicyIsStricter extends EasMaxInactivityTimeLockResult
-  
 }
-

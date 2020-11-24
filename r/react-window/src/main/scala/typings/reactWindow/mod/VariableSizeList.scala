@@ -3,12 +3,13 @@ package typings.reactWindow.mod
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "VariableSizeList")
 @js.native
 class VariableSizeList ()
   extends Component[VariableSizeListProps, js.Object, js.Any] {
+  
   /**
     * VariableSizeList caches offsets and measurements for each index for performance purposes.
     * This method clears that cached data for all items after (and including) the specified index.
@@ -20,10 +21,12 @@ class VariableSizeList ()
     */
   def resetAfterIndex(index: Double): Unit = js.native
   def resetAfterIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
+  
   /**
     * Scroll to the specified offset (scrollTop or scrollLeft, depending on the direction prop).
     */
   def scrollTo(scrollOffset: Double): Unit = js.native
+  
   /**
     * Scroll to the specified item.
     *
@@ -42,4 +45,3 @@ class VariableSizeList ()
   def scrollToItem(index: Double): Unit = js.native
   def scrollToItem(index: Double, align: Align): Unit = js.native
 }
-

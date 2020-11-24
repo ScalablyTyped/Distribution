@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star.form
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object control {
+  
   /**
     * describes a control which can be used for visually grouping controls
     *
@@ -13,12 +14,14 @@ package object control {
     * @see com.sun.star.awt.UnoControlModel
     */
   type GroupBox = typings.activexLibreoffice.com_.sun.star.awt.UnoControlGroupBox
+  
   /**
     * This service specifies the model for control which provides controller functionality for a {@link com.sun.star.form.component.DataForm} , such as
     * navigating or filtering the form.
     * @see com.sun.star.form.component.NavigationToolBar
     */
   type NavigationToolBar = typings.activexLibreoffice.com_.sun.star.awt.UnoControl
+  
   /**
     * specifies a button control which can execute external submissions
     *

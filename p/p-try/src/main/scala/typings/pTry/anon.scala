@@ -2,13 +2,15 @@ package typings.pTry
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Start a promise chain.
     	@param fn - The function to run to start the promise chain.
@@ -34,6 +36,4 @@ object anon extends js.Object {
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
     ): js.Promise[ValueType] = js.native
   }
-  
 }
-

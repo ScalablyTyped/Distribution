@@ -10,9 +10,9 @@ Library for creating SharePoint CAML queries client-side. For JSOM, REST or SPSe
 | ------------------ | :-------------: |
 | Full name          | camljs |
 | Keywords           | sharepoint, caml |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 10735 |
+| # downloads        | 11583 |
 | # stars            | 0 |
 
 ## Links

@@ -9,20 +9,34 @@ import typings.promiseSftp.promiseSftpStrings.sha1
 import typings.ssh2Streams.mod.Algorithms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for SftpPromise#connect()
   */
-/* Inlined ssh2.ssh2.ConnectConfig & {changePassword ? (message : string, language : string): bluebird.bluebird.^<string>,   autoReconnect ? :boolean,   privateKeyFile ? :string, tryKeyboard ? (name : string, instructions : string, instructionsLang : string, prompts : std.Array<{  prompt  :string,   echo  :boolean}>): std.Array<string | bluebird.bluebird.^<string>> | bluebird.bluebird.^<std.Array<string>>,   user ? :string,   connTimeout ? :number,   pasvTimeout ? :number,   keepalive ? :number} */
+/* Inlined ssh2.ssh2.ConnectConfig & {  changePassword :(message : string, language : string): bluebird.bluebird.^<string> | undefined,   autoReconnect :boolean | undefined,   privateKeyFile :string | undefined,   tryKeyboard :(name : string, instructions : string, instructionsLang : string, prompts : std.Array<{  prompt :string,   echo :boolean}>): std.Array<string | bluebird.bluebird.^<string>> | bluebird.bluebird.^<std.Array<string>> | undefined,   user :string | undefined,   connTimeout :number | undefined,   pasvTimeout :number | undefined,   keepalive :number | undefined} */
 @js.native
 trait Options extends js.Object {
+  
   /** Path to ssh-agent's UNIX socket for ssh-agent-based user authentication (or 'pageant' when using Pagent on Windows). */
   var agent: js.UndefOr[String] = js.native
+  
   /** Set to `true` to use OpenSSH agent forwarding (`auth-agent@openssh.com`) for the life of the connection. */
   var agentForward: js.UndefOr[Boolean] = js.native
+  
   /** Explicit overrides for the default transport layer algorithms used for the connection. */
   var algorithms: js.UndefOr[Algorithms] = js.native
+  
+  /** Function with parameters (methodsLeft, partialSuccess, callback) where methodsLeft and partialSuccess are null on the first authentication attempt, otherwise are an array and boolean respectively. Return or call callback() with the name of the authentication method to try next (pass false to signal no more methods to try). Valid method names are: 'none', 'password', 'publickey', 'agent', 'keyboard-interactive', 'hostbased'. Default: function that follows a set method order: None -> Password -> Private Key -> Agent (-> keyboard-interactive if tryKeyboard is true) -> Hostbased. */
+  var authHandler: js.UndefOr[
+    js.Function3[
+      /* methodsLeft */ js.Array[String] | Null, 
+      /* partialSuccess */ Boolean | Null, 
+      /* callback */ js.Function, 
+      _
+    ]
+  ] = js.native
+  
   /**
     * Whether to attempt to automatically reconnect using the existing
     * config if the connection is unexpectedly closed. Auto-reconnection is
@@ -30,6 +44,7 @@ trait Options extends js.Object {
     * attempting to reconnect.
     */
   var autoReconnect: js.UndefOr[Boolean] = js.native
+  
   /**
     * When using password-based user authentication, set this option to
     * handle password change requests. If this option isn't set, and the
@@ -38,67 +53,328 @@ trait Options extends js.Object {
   var changePassword: js.UndefOr[
     js.Function2[/* message */ String, /* language */ String, typings.bluebird.mod.^[String]]
   ] = js.native
+  
   /** Compression settings: true (prefer), false (never), 'force' (require) */
   var compress: js.UndefOr[Boolean | force] = js.native
+  
   /** Alias for `readyTimeout` */
   var connTimeout: js.UndefOr[Double] = js.native
+  
   /** A function that receives a single string argument to get detailed (local) debug information. */
   var debug: js.UndefOr[js.Function1[/* information */ String, _]] = js.native
+  
   /** Only connect via resolved IPv4 address for `host`. */
   var forceIPv4: js.UndefOr[Boolean] = js.native
+  
   /** Only connect via resolved IPv6 address for `host`. */
   var forceIPv6: js.UndefOr[Boolean] = js.native
+  
   /** Hostname or IP address of the server. */
   var host: js.UndefOr[String] = js.native
+  
   /** The host's key is hashed using this method and passed to `hostVerifier`. */
   var hostHash: js.UndefOr[md5 | sha1] = js.native
+  
   /** Verifies a hexadecimal hash of the host's key. */
   var hostVerifier: js.UndefOr[js.Function1[/* keyHash */ String, Boolean]] = js.native
+  
   /** Alias for `keepaliveInterval` */
   var keepalive: js.UndefOr[Double] = js.native
+  
   /** How many consecutive, unanswered SSH-level keepalive packets that can be sent to the server before disconnection. */
   var keepaliveCountMax: js.UndefOr[Double] = js.native
+  
   /** How often (in milliseconds) to send SSH-level keepalive packets to the server. Set to 0 to disable. */
   var keepaliveInterval: js.UndefOr[Double] = js.native
+  
   /** Along with `localUsername` and `privateKey`, set this to a non-empty string for hostbased user authentication. */
   var localHostname: js.UndefOr[String] = js.native
+  
   /** Along with `localHostname` and `privateKey`, set this to a non-empty string for hostbased user authentication. */
   var localUsername: js.UndefOr[String] = js.native
+  
   /** For an encrypted private key, this is the passphrase used to decrypt it. */
   var passphrase: js.UndefOr[String] = js.native
+  
   /** Password for password-based user authentication. */
   var password: js.UndefOr[String] = js.native
+  
   /** Alias for `readyTimeout` */
   var pasvTimeout: js.UndefOr[Double] = js.native
+  
   /** Port number of the server. */
   var port: js.UndefOr[Double] = js.native
+  
   /** Buffer or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format). */
   var privateKey: js.UndefOr[Buffer | String] = js.native
+  
   /**
     * Path and name of a file containing a private key as would be passed
     * to the privateKey option. If privateKey is also set, priority is
     * given to the privateKey option.
     */
   var privateKeyFile: js.UndefOr[String] = js.native
+  
   /** * How long (in milliseconds) to wait for the SSH handshake to complete. */
   var readyTimeout: js.UndefOr[Double] = js.native
+  
   /** A `ReadableStream` to use for communicating with the server instead of creating and using a new TCP connection (useful for connection hopping). */
   var sock: js.UndefOr[ReadableStream] = js.native
+  
   /** Performs a strict server vendor check before sending vendor-specific requests. */
   var strictVendor: js.UndefOr[Boolean] = js.native
+  
   /** Try keyboard-interactive user authentication if primary user authentication method fails. */
-  var tryKeyboard: js.UndefOr[
-    Boolean | (js.Function4[
+  /**
+    * Set this option to a function to try keyboard-interactive user
+    * authentication if primary user authentication method fails.
+    *
+    * NOTE: This function may be called more than once, with the same or different prompts.
+    * @param name - is generally what you'd use as a header or GUI window
+    * title to describe the purpose of the `prompts`
+    */
+  var tryKeyboard: js.UndefOr[Boolean] with (js.UndefOr[
+    js.Function4[
       /* name */ String, 
       /* instructions */ String, 
       /* instructionsLang */ String, 
       /* prompts */ js.Array[Echo], 
       (js.Array[String | typings.bluebird.mod.^[String]]) | typings.bluebird.mod.^[js.Array[String]]
-    ])
-  ] = js.native
+    ]
+  ]) = js.native
+  
   /** Alias for `username` */
   var user: js.UndefOr[String] = js.native
+  
   /** Username for authentication. */
   var username: js.UndefOr[String] = js.native
 }
-
+object Options {
+  
+  @scala.inline
+  def apply(
+    tryKeyboard: js.UndefOr[Boolean] with (js.UndefOr[
+      js.Function4[
+        /* name */ String, 
+        /* instructions */ String, 
+        /* instructionsLang */ String, 
+        /* prompts */ js.Array[Echo], 
+        (js.Array[String | typings.bluebird.mod.^[String]]) | typings.bluebird.mod.^[js.Array[String]]
+      ]
+    ])
+  ): Options = {
+    val __obj = js.Dynamic.literal(tryKeyboard = tryKeyboard.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+  
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setTryKeyboard(
+      value: js.UndefOr[Boolean] with (js.UndefOr[
+          js.Function4[
+            /* name */ String, 
+            /* instructions */ String, 
+            /* instructionsLang */ String, 
+            /* prompts */ js.Array[Echo], 
+            (js.Array[String | typings.bluebird.mod.^[String]]) | typings.bluebird.mod.^[js.Array[String]]
+          ]
+        ])
+    ): Self = this.set("tryKeyboard", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAgent(value: String): Self = this.set("agent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAgent: Self = this.set("agent", js.undefined)
+    
+    @scala.inline
+    def setAgentForward(value: Boolean): Self = this.set("agentForward", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAgentForward: Self = this.set("agentForward", js.undefined)
+    
+    @scala.inline
+    def setAlgorithms(value: Algorithms): Self = this.set("algorithms", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAlgorithms: Self = this.set("algorithms", js.undefined)
+    
+    @scala.inline
+    def setAuthHandler(
+      value: (/* methodsLeft */ js.Array[String] | Null, /* partialSuccess */ Boolean | Null, /* callback */ js.Function) => _
+    ): Self = this.set("authHandler", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAuthHandler: Self = this.set("authHandler", js.undefined)
+    
+    @scala.inline
+    def setAutoReconnect(value: Boolean): Self = this.set("autoReconnect", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAutoReconnect: Self = this.set("autoReconnect", js.undefined)
+    
+    @scala.inline
+    def setChangePassword(value: (/* message */ String, /* language */ String) => typings.bluebird.mod.^[String]): Self = this.set("changePassword", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteChangePassword: Self = this.set("changePassword", js.undefined)
+    
+    @scala.inline
+    def setCompress(value: Boolean | force): Self = this.set("compress", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCompress: Self = this.set("compress", js.undefined)
+    
+    @scala.inline
+    def setConnTimeout(value: Double): Self = this.set("connTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteConnTimeout: Self = this.set("connTimeout", js.undefined)
+    
+    @scala.inline
+    def setDebug(value: /* information */ String => _): Self = this.set("debug", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    
+    @scala.inline
+    def setForceIPv4(value: Boolean): Self = this.set("forceIPv4", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteForceIPv4: Self = this.set("forceIPv4", js.undefined)
+    
+    @scala.inline
+    def setForceIPv6(value: Boolean): Self = this.set("forceIPv6", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteForceIPv6: Self = this.set("forceIPv6", js.undefined)
+    
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    
+    @scala.inline
+    def setHostHash(value: md5 | sha1): Self = this.set("hostHash", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHostHash: Self = this.set("hostHash", js.undefined)
+    
+    @scala.inline
+    def setHostVerifier(value: /* keyHash */ String => Boolean): Self = this.set("hostVerifier", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteHostVerifier: Self = this.set("hostVerifier", js.undefined)
+    
+    @scala.inline
+    def setKeepalive(value: Double): Self = this.set("keepalive", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
+    
+    @scala.inline
+    def setKeepaliveCountMax(value: Double): Self = this.set("keepaliveCountMax", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteKeepaliveCountMax: Self = this.set("keepaliveCountMax", js.undefined)
+    
+    @scala.inline
+    def setKeepaliveInterval(value: Double): Self = this.set("keepaliveInterval", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteKeepaliveInterval: Self = this.set("keepaliveInterval", js.undefined)
+    
+    @scala.inline
+    def setLocalHostname(value: String): Self = this.set("localHostname", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLocalHostname: Self = this.set("localHostname", js.undefined)
+    
+    @scala.inline
+    def setLocalUsername(value: String): Self = this.set("localUsername", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLocalUsername: Self = this.set("localUsername", js.undefined)
+    
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    
+    @scala.inline
+    def setPasvTimeout(value: Double): Self = this.set("pasvTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePasvTimeout: Self = this.set("pasvTimeout", js.undefined)
+    
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    
+    @scala.inline
+    def setPrivateKey(value: Buffer | String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    
+    @scala.inline
+    def setPrivateKeyFile(value: String): Self = this.set("privateKeyFile", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePrivateKeyFile: Self = this.set("privateKeyFile", js.undefined)
+    
+    @scala.inline
+    def setReadyTimeout(value: Double): Self = this.set("readyTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReadyTimeout: Self = this.set("readyTimeout", js.undefined)
+    
+    @scala.inline
+    def setSock(value: ReadableStream): Self = this.set("sock", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSock: Self = this.set("sock", js.undefined)
+    
+    @scala.inline
+    def setStrictVendor(value: Boolean): Self = this.set("strictVendor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStrictVendor: Self = this.set("strictVendor", js.undefined)
+    
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+}

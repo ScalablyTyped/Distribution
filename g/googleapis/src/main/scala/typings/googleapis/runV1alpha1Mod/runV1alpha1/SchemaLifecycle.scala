@@ -2,7 +2,7 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lifecycle describes actions that the management system should take in
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaLifecycle extends js.Object {
+  
   /**
     * PostStart is called immediately after a container is created. If the
     * handler fails, the container is terminated and restarted according to its
@@ -22,6 +23,7 @@ trait SchemaLifecycle extends js.Object {
     * +optional
     */
   var postStart: js.UndefOr[SchemaHandler] = js.native
+  
   /**
     * PreStop is called immediately before a container is terminated. The
     * container is terminated after the handler completes. The reason for
@@ -33,33 +35,39 @@ trait SchemaLifecycle extends js.Object {
     */
   var preStop: js.UndefOr[SchemaHandler] = js.native
 }
-
 object SchemaLifecycle {
+  
   @scala.inline
   def apply(): SchemaLifecycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLifecycle]
   }
+  
   @scala.inline
   implicit class SchemaLifecycleOps[Self <: SchemaLifecycle] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPostStart(value: SchemaHandler): Self = this.set("postStart", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePostStart: Self = this.set("postStart", js.undefined)
+    
     @scala.inline
     def setPreStop(value: SchemaHandler): Self = this.set("preStop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreStop: Self = this.set("preStop", js.undefined)
   }
-  
 }
-

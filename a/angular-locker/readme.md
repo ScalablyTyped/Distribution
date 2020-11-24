@@ -11,8 +11,8 @@ A simple & configurable abstraction for local/session storage in angular project
 | Full name          | angular-locker |
 | Keywords           | angular-locker, angular, locker, storage, localStorage, sessionStorage, session, local |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 111628 |
+| # dependents       | 2 |
+| # downloads        | 72676 |
 | # stars            | 0 |
 
 ## Links

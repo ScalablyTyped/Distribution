@@ -12,22 +12,38 @@ import typings.ol.pluggableMapMod.DeclutterItems
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/render/canvas/ExecutorGroup", JSImport.Namespace)
 @js.native
 object executorGroupMod extends js.Object {
+  
+  def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = js.native
+  
+  def replayDeclutter(
+    declutterReplays: StringDictionary[js.Array[_]],
+    context: CanvasRenderingContext2D,
+    rotation: Double,
+    opacity: Double,
+    snapToPixel: Boolean,
+    declutterItems: js.Array[DeclutterItems]
+  ): Unit = js.native
+  
   @js.native
   trait ExecutorGroup extends js.Object {
+    
     def clip(context: CanvasRenderingContext2D, transform: Transform): Unit = js.native
+    
     def execute(
       context: CanvasRenderingContext2D,
+      contextScale: Double,
       transform: Transform,
       viewRotation: Double,
       snapToPixel: Boolean
     ): Unit = js.native
     def execute(
       context: CanvasRenderingContext2D,
+      contextScale: Double,
       transform: Transform,
       viewRotation: Double,
       snapToPixel: Boolean,
@@ -36,6 +52,7 @@ object executorGroupMod extends js.Object {
     ): Unit = js.native
     def execute(
       context: CanvasRenderingContext2D,
+      contextScale: Double,
       transform: Transform,
       viewRotation: Double,
       snapToPixel: Boolean,
@@ -43,12 +60,14 @@ object executorGroupMod extends js.Object {
     ): Unit = js.native
     def execute(
       context: CanvasRenderingContext2D,
+      contextScale: Double,
       transform: Transform,
       viewRotation: Double,
       snapToPixel: Boolean,
       opt_builderTypes: js.Array[BuilderType],
       opt_declutterReplays: StringDictionary[DeclutterGroup]
     ): Unit = js.native
+    
     def forEachFeatureAtCoordinate[T](
       coordinate: Coordinate,
       resolution: Double,
@@ -56,9 +75,12 @@ object executorGroupMod extends js.Object {
       hitTolerance: Double,
       callback: js.Function1[/* p0 */ FeatureLike, T],
       declutteredFeatures: js.Array[FeatureLike]
-    ): T = js.native
+    ): js.UndefOr[T] = js.native
+    
     def getClipCoords(transform: Transform): js.Array[Double] = js.native
+    
     def hasExecutors(executors: js.Array[BuilderType]): Boolean = js.native
+    
     def isEmpty(): Boolean = js.native
   }
   
@@ -80,15 +102,4 @@ object executorGroupMod extends js.Object {
       opt_renderBuffer: Double
     ) = this()
   }
-  
-  def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = js.native
-  def replayDeclutter(
-    declutterReplays: StringDictionary[js.Array[_]],
-    context: CanvasRenderingContext2D,
-    rotation: Double,
-    opacity: Double,
-    snapToPixel: Boolean,
-    declutterItems: js.Array[DeclutterItems]
-  ): Unit = js.native
 }
-

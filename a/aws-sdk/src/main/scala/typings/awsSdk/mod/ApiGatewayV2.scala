@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.apigatewayv2Mod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ApiGatewayV2")
 @js.native
@@ -14,4 +14,3 @@ class ApiGatewayV2 ()
   extends typings.awsSdk.allMod.ApiGatewayV2 {
   def this(options: ClientConfiguration) = this()
 }
-

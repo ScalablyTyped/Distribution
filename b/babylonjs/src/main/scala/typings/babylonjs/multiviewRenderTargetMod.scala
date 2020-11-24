@@ -6,11 +6,12 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/MultiviewRenderTarget", JSImport.Namespace)
 @js.native
 object multiviewRenderTargetMod extends js.Object {
+  
   @js.native
   class MultiviewRenderTarget protected () extends RenderTargetTexture {
     /**
@@ -23,6 +24,4 @@ object multiviewRenderTargetMod extends js.Object {
     def this(scene: Scene, size: Ratio) = this()
     def this(scene: Scene, size: Width) = this()
   }
-  
 }
-

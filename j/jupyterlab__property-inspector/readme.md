@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__property-inspector
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 A property inspector display for widgets
@@ -10,9 +10,9 @@ A property inspector display for widgets
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/property-inspector |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 9395 |
+| # releases         | 65 |
+| # dependents       | 8 |
+| # downloads        | 638153 |
 | # stars            | 0 |
 
 ## Links

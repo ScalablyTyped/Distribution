@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.cloudhsmv2Mod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "CloudHSMV2")
 @js.native
@@ -14,4 +14,3 @@ class CloudHSMV2 ()
   extends typings.awsSdk.mod.CloudHSMV2 {
   def this(options: ClientConfiguration) = this()
 }
-

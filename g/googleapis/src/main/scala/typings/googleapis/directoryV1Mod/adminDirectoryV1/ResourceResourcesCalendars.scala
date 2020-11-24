@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Resources$Calendars")
 @js.native
 class ResourceResourcesCalendars protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.resources.calendars.delete
     * @desc Deletes a calendar resource.
@@ -42,6 +44,7 @@ class ResourceResourcesCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.resources.calendars.get
     * @desc Retrieves a calendar resource.
@@ -74,6 +77,7 @@ class ResourceResourcesCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendarResource]
   ): Unit = js.native
+  
   /**
     * directory.resources.calendars.insert
     * @desc Inserts a calendar resource.
@@ -106,6 +110,7 @@ class ResourceResourcesCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendarResource]
   ): Unit = js.native
+  
   /**
     * directory.resources.calendars.list
     * @desc Retrieves a list of calendar resources for an account.
@@ -141,6 +146,7 @@ class ResourceResourcesCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendarResources]
   ): Unit = js.native
+  
   /**
     * directory.resources.calendars.patch
     * @desc Updates a calendar resource.  This method supports patch semantics,
@@ -177,6 +183,7 @@ class ResourceResourcesCalendars protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCalendarResource]
   ): Unit = js.native
+  
   /**
     * directory.resources.calendars.update
     * @desc Updates a calendar resource.  This method supports patch semantics,
@@ -213,4 +220,3 @@ class ResourceResourcesCalendars protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCalendarResource]
   ): Unit = js.native
 }
-

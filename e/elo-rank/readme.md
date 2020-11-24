@@ -10,9 +10,9 @@ elo ranking system
 | ------------------ | :-------------: |
 | Full name          | elo-rank |
 | Keywords           | elo, rank, ranking, chess |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 23308 |
+| # downloads        | 43688 |
 | # stars            | 3 |
 
 ## Links

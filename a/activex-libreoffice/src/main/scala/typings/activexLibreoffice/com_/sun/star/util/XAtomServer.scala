@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * an interface to map between **string** s and **id** s
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XAtomServer extends XInterface {
+  
   /**
     * registers or searches for a string
     * @param atomClass the class of atoms in question
@@ -29,24 +30,28 @@ trait XAtomServer extends XInterface {
     * @returns the atom for the string `description`
     */
   def getAtom(atomClass: Double, description: String, create: Boolean): Double = js.native
+  
   /**
     * returns the strings for an arbitrary amount of atoms of multiple classes
     * @param atoms describes which strings to return
     * @returns the strings for the requested atoms
     */
   def getAtomDescriptions(atoms: SeqEquiv[AtomClassRequest]): SafeArray[String] = js.native
+  
   /**
     * returns a whole atom class
     * @param atomClass which class to return
     * @returns the descriptions for all atoms of class `atomClass`
     */
   def getClass(atomClass: Double): SafeArray[AtomDescription] = js.native
+  
   /**
     * returns multiple atom classes
     * @param atomClasses which classes to return
     * @returns the descriptions for all atoms of the requested classes
     */
   def getClasses(atomClasses: SeqEquiv[Double]): SafeArray[SafeArray[AtomDescription]] = js.native
+  
   /**
     * returns the atoms that have been registered to a class after an already known atom
     *
@@ -57,8 +62,8 @@ trait XAtomServer extends XInterface {
     */
   def getRecentAtoms(atomClass: Double, atom: Double): SafeArray[AtomDescription] = js.native
 }
-
 object XAtomServer {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -73,28 +78,35 @@ object XAtomServer {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAtom = js.Any.fromFunction3(getAtom), getAtomDescriptions = js.Any.fromFunction1(getAtomDescriptions), getClass = js.Any.fromFunction1(getClass), getClasses = js.Any.fromFunction1(getClasses), getRecentAtoms = js.Any.fromFunction2(getRecentAtoms), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAtomServer]
   }
+  
   @scala.inline
   implicit class XAtomServerOps[Self <: XAtomServer] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetAtom(value: (Double, String, Boolean) => Double): Self = this.set("getAtom", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetAtomDescriptions(value: SeqEquiv[AtomClassRequest] => SafeArray[String]): Self = this.set("getAtomDescriptions", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetClass(value: Double => SafeArray[AtomDescription]): Self = this.set("getClass", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetClasses(value: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]]): Self = this.set("getClasses", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetRecentAtoms(value: (Double, Double) => SafeArray[AtomDescription]): Self = this.set("getRecentAtoms", js.Any.fromFunction2(value))
   }
-  
 }
-

@@ -2,9 +2,10 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object cades {
+  
   /**
     * class for OtherHashAlgAndValue ASN.1 object
     * @param params associative array of parameters
@@ -17,6 +18,7 @@ package object cades {
     * ```
     */
   type OtherHashAlgAndValue = typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+  
   /**
     * class for RFC 5126 CAdES SignaturePolicyIdentifier attribute
     * @param params associative array of parameters
@@ -42,6 +44,7 @@ package object cades {
     * });
     */
   type SignaturePolicyIdentifier = typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+  
   /**
     * class for RFC 5126 CAdES SignatureTimeStamp attribute
     * @param params associative array of parameters

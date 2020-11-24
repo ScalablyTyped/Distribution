@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER GeneralizedTime
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DERGeneralizedTime extends DERAbstractTime {
-  var withMillis: Boolean = js.native
+  
   /**
     * set value by a Date object
     * @param dateObject Date object to set ASN.1 value(V)
@@ -34,5 +34,6 @@ trait DERGeneralizedTime extends DERAbstractTime {
     * date = new Date(Date.UTC(2015, 0, 31, 23, 59, 59, 0)); #2015JAN31 23:59:59
     */
   def setByDate(dateObject: Date): Unit = js.native
+  
+  var withMillis: Boolean = js.native
 }
-

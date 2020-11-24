@@ -2,10 +2,11 @@ package typings.jsrender.JsViews
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TemplateRender extends js.Object {
+  
   /**
   	 * Template render method: render the template as a string, using the specified data and helpers/context
   	 * var htmlString = template(data, myHelpersObject);
@@ -29,4 +30,3 @@ trait TemplateRender extends js.Object {
   def apply(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def apply(data: js.Any, noIteration: Boolean): String = js.native
 }
-

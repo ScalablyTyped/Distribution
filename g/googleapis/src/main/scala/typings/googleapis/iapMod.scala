@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iap", JSImport.Namespace)
 @js.native
 object iapMod extends js.Object {
+  
   def iap(options: Options): Iap = js.native
   def iap(options: typings.googleapis.iapV1beta1Mod.iapV1beta1.Options): typings.googleapis.iapV1beta1Mod.iapV1beta1.Iap = js.native
   @JSName("iap")
   def iap_v1(version: v1): Iap = js.native
   @JSName("iap")
   def iap_v1beta1(version: v1beta1): typings.googleapis.iapV1beta1Mod.iapV1beta1.Iap = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Iap {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Iap]
+            ]
     
     @js.native
     class v1beta1 protected ()
@@ -37,13 +45,6 @@ object iapMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Iap]
-            ]
-    
     @js.native
     object v1beta1
       extends TopLevel[
@@ -53,11 +54,11 @@ object iapMod extends js.Object {
                 typings.googleapis.iapV1beta1Mod.iapV1beta1.Iap
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object iapMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

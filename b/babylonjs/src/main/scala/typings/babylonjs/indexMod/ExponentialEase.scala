@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ExponentialEase")
 @js.native
@@ -16,4 +16,3 @@ class ExponentialEase ()
   def this(/** Defines the exponent of the function */
   exponent: Double) = this()
 }
-

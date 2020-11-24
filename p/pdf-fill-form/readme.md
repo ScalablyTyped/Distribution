@@ -10,9 +10,9 @@ Fill PDF forms and return rendered PDF in buffer. No temporary files created.
 | ------------------ | :-------------: |
 | Full name          | pdf-fill-form |
 | Keywords           | pdf, forms, poppler, qt5, cairo |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 347048 |
+| # downloads        | 197282 |
 | # stars            | 3 |
 
 ## Links

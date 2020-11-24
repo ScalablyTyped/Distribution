@@ -3,10 +3,11 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataTypeSmallInt extends DataTypeAbstractNumber[DataTypeSmallInt] {
+  
   /**
     * Length of the number field.
     */
@@ -14,4 +15,3 @@ trait DataTypeSmallInt extends DataTypeAbstractNumber[DataTypeSmallInt] {
   def apply(length: Double): DataTypeSmallInt = js.native
   def apply(options: Length): DataTypeSmallInt = js.native
 }
-

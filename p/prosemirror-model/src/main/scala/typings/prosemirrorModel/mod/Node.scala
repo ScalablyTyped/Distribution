@@ -3,7 +3,7 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a node in the tree that makes up a
@@ -22,14 +22,13 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-model", "Node")
 @js.native
 class Node[S /* <: Schema[_, _] */] () extends ProsemirrorNode[S]
-
 /* static members */
 @JSImport("prosemirror-model", "Node")
 @js.native
 object Node extends js.Object {
+  
   /**
     * Deserialize a node from its JSON representation.
     */
   def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
 }
-

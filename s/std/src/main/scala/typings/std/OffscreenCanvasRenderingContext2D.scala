@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OffscreenCanvasRenderingContext2D
@@ -22,7 +22,8 @@ trait OffscreenCanvasRenderingContext2D
      with CanvasTextDrawingStyles
      with CanvasTransform
      with OffscreenRenderingContext {
+  
   val canvas: OffscreenCanvas = js.native
+  
   def commit(): Unit = js.native
 }
-

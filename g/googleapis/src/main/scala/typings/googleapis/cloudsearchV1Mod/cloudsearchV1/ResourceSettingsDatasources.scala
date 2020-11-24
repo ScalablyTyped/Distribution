@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Settings$Datasources")
 @js.native
 class ResourceSettingsDatasources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudsearch.settings.datasources.create
     * @desc Creates a datasource.
@@ -41,6 +43,7 @@ class ResourceSettingsDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.datasources.delete
     * @desc Deletes a datasource.
@@ -70,6 +73,7 @@ class ResourceSettingsDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.datasources.get
     * @desc Gets a datasource.
@@ -99,6 +103,7 @@ class ResourceSettingsDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataSource]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.datasources.list
     * @desc Lists datasources.
@@ -132,6 +137,7 @@ class ResourceSettingsDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDataSourceResponse]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.datasources.update
     * @desc Updates a datasource.
@@ -162,4 +168,3 @@ class ResourceSettingsDatasources protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

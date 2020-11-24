@@ -6,9 +6,8 @@ import typings.themeUiComponents.mod.DonutProps
 import typings.themeUiComponents.mod.ForwardRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("theme-ui", "Donut")
 @js.native
 object Donut extends TopLevel[ForwardRef[SVGSVGElement, DonutProps]]
-

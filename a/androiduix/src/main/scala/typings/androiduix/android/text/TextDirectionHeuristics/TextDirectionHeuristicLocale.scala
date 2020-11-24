@@ -2,12 +2,12 @@ package typings.androiduix.android.text.TextDirectionHeuristics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextDirectionHeuristicLocale extends TextDirectionHeuristicImpl
-
 object TextDirectionHeuristicLocale {
+  
   @scala.inline
   def apply(
     defaultIsRtl: () => Boolean,
@@ -19,4 +19,3 @@ object TextDirectionHeuristicLocale {
     __obj.asInstanceOf[TextDirectionHeuristicLocale]
   }
 }
-

@@ -20,7 +20,7 @@ import typings.phaser.Phaser.Types.Physics.Arcade.CheckCollisionObject
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Arcade Physics World.
@@ -31,12 +31,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait World extends EventEmitter {
+  
   /**
     * The maximum absolute difference of a Body's per-step velocity and its overlap with another Body that will result in separation on *each axis*.
     * Larger values favor separation.
     * Smaller values favor no separation.
     */
   var OVERLAP_BIAS: Double = js.native
+  
   /**
     * The maximum absolute value of a Body's overlap with a tile that will result in separation on *each axis*.
     * Larger values favor separation.
@@ -44,120 +46,7 @@ trait World extends EventEmitter {
     * The optimum value may be similar to the tile size.
     */
   var TILE_BIAS: Double = js.native
-  /**
-    * Dynamic Bodies in this simulation.
-    */
-  var bodies: Set[Body] = js.native
-  /**
-    * A boundary constraining Bodies.
-    */
-  var bounds: Rectangle = js.native
-  /**
-    * The boundary edges that Bodies can collide with.
-    */
-  var checkCollision: CheckCollisionObject = js.native
-  /**
-    * This simulation's collision processors.
-    */
-  var colliders: ProcessQueue[Collider] = js.native
-  /**
-    * The graphics object drawing the debug display.
-    */
-  var debugGraphic: Graphics = js.native
-  /**
-    * Default debug display settings for new Bodies.
-    */
-  var defaults: ArcadeWorldDefaults = js.native
-  /**
-    * Enables the debug display.
-    */
-  var drawDebug: Boolean = js.native
-  /**
-    * Should Physics use a fixed update time-step (true) or sync to the render fps (false)?.
-    * False value of this property disables fps and timeScale properties.
-    */
-  var fixedStep: Boolean = js.native
-  /**
-    * Always separate overlapping Bodies horizontally before vertically.
-    * False (the default) means Bodies are first separated on the axis of greater gravity, or the vertical axis if neither is greater.
-    */
-  var forceX: Boolean = js.native
-  /**
-    * The number of physics steps to be taken per second.
-    * 
-    * This property is read-only. Use the `setFPS` method to modify it at run-time.
-    */
-  val fps: Double = js.native
-  /**
-    * Acceleration of Bodies due to gravity, in pixels per second.
-    */
-  var gravity: Vector2 = js.native
-  /**
-    * Whether the simulation advances with the game loop.
-    */
-  var isPaused: Boolean = js.native
-  /**
-    * The maximum number of items per node on the RTree.
-    * 
-    * This is ignored if `useTree` is `false`. If you have a large number of bodies in
-    * your world then you may find search performance improves by increasing this value,
-    * to allow more items per node and less node division.
-    */
-  var maxEntries: integer = js.native
-  /**
-    * Static Bodies marked for deletion.
-    */
-  var pendingDestroy: Set[Body | StaticBody] = js.native
-  /**
-    * The Scene this simulation belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * Static Bodies in this simulation.
-    */
-  var staticBodies: Set[StaticBody] = js.native
-  /**
-    * The spatial index of Static Bodies.
-    */
-  var staticTree: RTree = js.native
-  /**
-    * The number of steps that took place in the last frame.
-    */
-  val stepsLastFrame: Double = js.native
-  /**
-    * Scaling factor applied to the frame rate.
-    * 
-    * - 1.0 = normal speed
-    * - 2.0 = half speed
-    * - 0.5 = double speed
-    */
-  var timeScale: Double = js.native
-  /**
-    * The spatial index of Dynamic Bodies.
-    */
-  var tree: RTree = js.native
-  /**
-    * Recycled input for tree searches.
-    */
-  var treeMinMax: ArcadeWorldTreeMinMax = js.native
-  /**
-    * Should this Arcade Physics World use an RTree for Dynamic bodies?
-    * 
-    * An RTree is a fast way of spatially sorting of all the bodies in the world.
-    * However, at certain limits, the cost of clearing and inserting the bodies into the
-    * tree every frame becomes more expensive than the search speed gains it provides.
-    * 
-    * If you have a large number of dynamic bodies in your world then it may be best to
-    * disable the use of the RTree by setting this property to `false` in the physics config.
-    * 
-    * The number it can cope with depends on browser and device, but a conservative estimate
-    * of around 5,000 bodies should be considered the max before disabling it.
-    * 
-    * This only applies to dynamic bodies. Static bodies are always kept in an RTree,
-    * because they don't have to be cleared every frame, so you benefit from the
-    * massive search speeds all the time.
-    */
-  var useTree: Boolean = js.native
+  
   /**
     * Adds an existing Arcade Physics Body or StaticBody to the simulation.
     * 
@@ -166,6 +55,7 @@ trait World extends EventEmitter {
     */
   def add(body: Body): Body | StaticBody = js.native
   def add(body: StaticBody): Body | StaticBody = js.native
+  
   /**
     * Creates a new Collider object and adds it to the simulation.
     * 
@@ -224,6 +114,7 @@ trait World extends EventEmitter {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Collider = js.native
+  
   /**
     * Creates a new Overlap Collider object and adds it to the simulation.
     * 
@@ -282,12 +173,29 @@ trait World extends EventEmitter {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Collider = js.native
+  
+  /**
+    * Dynamic Bodies in this simulation.
+    */
+  var bodies: Set[Body] = js.native
+  
+  /**
+    * A boundary constraining Bodies.
+    */
+  var bounds: Rectangle = js.native
+  
+  /**
+    * The boundary edges that Bodies can collide with.
+    */
+  var checkCollision: CheckCollisionObject = js.native
+  
   /**
     * Tests if a circular Body intersects with another Body.
     * @param circle The circular body to test.
     * @param body The rectangular body to test.
     */
   def circleBodyIntersects(circle: Body, body: Body): Boolean = js.native
+  
   /**
     * Performs a collision check and separation between the two physics enabled objects given, which can be single
     * Game Objects, arrays of Game Objects, Physics Groups, arrays of Physics Groups or normal Groups.
@@ -361,6 +269,7 @@ trait World extends EventEmitter {
     callbackContext: js.Any
   ): Boolean = js.native
   def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
+  
   /**
     * Internal handler for Sprite vs. Tilemap collisions.
     * Please use Phaser.Physics.Arcade.World#collide instead.
@@ -583,6 +492,7 @@ trait World extends EventEmitter {
     callbackContext: js.Any,
     overlapOnly: Boolean
   ): Boolean = js.native
+  
   /**
     * This advanced method is specifically for testing for collision between a single Sprite and an array of Tile objects.
     * 
@@ -646,18 +556,26 @@ trait World extends EventEmitter {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  
+  /**
+    * This simulation's collision processors.
+    */
+  var colliders: ProcessQueue[Collider] = js.native
+  
   /**
     * Calculates a Body's angular velocity.
     * @param body The Body to compute the velocity for.
     * @param delta The delta value to be used in the calculation, in seconds.
     */
   def computeAngularVelocity(body: Body, delta: Double): Unit = js.native
+  
   /**
     * Calculates a Body's per-axis velocity.
     * @param body The Body to compute the velocity for.
     * @param delta The delta value to be used in the calculation, in seconds.
     */
   def computeVelocity(body: Body, delta: Double): Unit = js.native
+  
   /**
     * Creates a Graphics Game Object that the world will use to render the debug display to.
     * 
@@ -671,6 +589,17 @@ trait World extends EventEmitter {
     * You should not typically use this in a production game. Use it to aid during debugging.
     */
   def createDebugGraphic(): Graphics = js.native
+  
+  /**
+    * The graphics object drawing the debug display.
+    */
+  var debugGraphic: Graphics = js.native
+  
+  /**
+    * Default debug display settings for new Bodies.
+    */
+  var defaults: ArcadeWorldDefaults = js.native
+  
   def disable(`object`: js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group]): Unit = js.native
   /**
     * Disables the Arcade Physics Body of a Game Object, an array of Game Objects, or the children of a Group.
@@ -684,6 +613,7 @@ trait World extends EventEmitter {
     */
   def disable(`object`: GameObject): Unit = js.native
   def disable(`object`: typings.phaser.Phaser.GameObjects.Group): Unit = js.native
+  
   /**
     * Disables an existing Arcade Physics Body or StaticBody and removes it from the simulation.
     * 
@@ -695,6 +625,12 @@ trait World extends EventEmitter {
     */
   def disableBody(body: Body): Unit = js.native
   def disableBody(body: StaticBody): Unit = js.native
+  
+  /**
+    * Enables the debug display.
+    */
+  var drawDebug: Boolean = js.native
+  
   def enable(`object`: js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group]): Unit = js.native
   def enable(`object`: js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group], bodyType: integer): Unit = js.native
   /**
@@ -726,6 +662,7 @@ trait World extends EventEmitter {
   def enable(`object`: GameObject, bodyType: integer): Unit = js.native
   def enable(`object`: typings.phaser.Phaser.GameObjects.Group): Unit = js.native
   def enable(`object`: typings.phaser.Phaser.GameObjects.Group, bodyType: integer): Unit = js.native
+  
   /**
     * Creates an Arcade Physics Body on a single Game Object.
     * 
@@ -752,12 +689,52 @@ trait World extends EventEmitter {
     */
   def enableBody(`object`: GameObject): GameObject = js.native
   def enableBody(`object`: GameObject, bodyType: integer): GameObject = js.native
+  
+  /**
+    * Should Physics use a fixed update time-step (true) or sync to the render fps (false)?.
+    * False value of this property disables fps and timeScale properties.
+    */
+  var fixedStep: Boolean = js.native
+  
+  /**
+    * Always separate overlapping Bodies horizontally before vertically.
+    * False (the default) means Bodies are first separated on the axis of greater gravity, or the vertical axis if neither is greater.
+    */
+  var forceX: Boolean = js.native
+  
+  /**
+    * The number of physics steps to be taken per second.
+    * 
+    * This property is read-only. Use the `setFPS` method to modify it at run-time.
+    */
+  val fps: Double = js.native
+  
+  /**
+    * Acceleration of Bodies due to gravity, in pixels per second.
+    */
+  var gravity: Vector2 = js.native
+  
   /**
     * Checks to see if two Bodies intersect at all.
     * @param body1 The first body to check.
     * @param body2 The second body to check.
     */
   def intersects(body1: Body, body2: Body): Boolean = js.native
+  
+  /**
+    * Whether the simulation advances with the game loop.
+    */
+  var isPaused: Boolean = js.native
+  
+  /**
+    * The maximum number of items per node on the RTree.
+    * 
+    * This is ignored if `useTree` is `false`. If you have a large number of bodies in
+    * your world then you may find search performance improves by increasing this value,
+    * to allow more items per node and less node division.
+    */
+  var maxEntries: integer = js.native
+  
   /**
     * Tests if Game Objects overlap.
     * 
@@ -815,6 +792,7 @@ trait World extends EventEmitter {
     callbackContext: js.Any
   ): Boolean = js.native
   def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
+  
   /**
     * This advanced method is specifically for testing for overlaps between a single Sprite and an array of Tile objects.
     * 
@@ -873,6 +851,7 @@ trait World extends EventEmitter {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  
   /**
     * Pauses the simulation.
     * 
@@ -882,10 +861,17 @@ trait World extends EventEmitter {
     * checks.
     */
   def pause(): World = js.native
+  
+  /**
+    * Static Bodies marked for deletion.
+    */
+  var pendingDestroy: Set[Body | StaticBody] = js.native
+  
   /**
     * Updates bodies, draws the debug display, and handles pending queue operations.
     */
   def postUpdate(): Unit = js.native
+  
   /**
     * Removes an existing Arcade Physics Body or StaticBody from the simulation.
     * 
@@ -897,6 +883,7 @@ trait World extends EventEmitter {
     */
   def remove(body: Body): Unit = js.native
   def remove(body: StaticBody): Unit = js.native
+  
   /**
     * Removes a Collider from the simulation so it is no longer processed.
     * 
@@ -909,10 +896,17 @@ trait World extends EventEmitter {
     * @param collider The Collider to remove from the simulation.
     */
   def removeCollider(collider: Collider): World = js.native
+  
   /**
     * Resumes the simulation, if paused.
     */
   def resume(): World = js.native
+  
+  /**
+    * The Scene this simulation belongs to.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Separates two Bodies.
     * @param body1 The first Body to be separated.
@@ -1018,6 +1012,7 @@ trait World extends EventEmitter {
     overlapOnly: Boolean,
     intersects: Boolean
   ): Boolean = js.native
+  
   /**
     * Separates two Bodies, when both are circular.
     * @param body1 The first Body to be separated.
@@ -1029,6 +1024,7 @@ trait World extends EventEmitter {
   def separateCircle(body1: Body, body2: Body, overlapOnly: js.UndefOr[scala.Nothing], bias: Double): Boolean = js.native
   def separateCircle(body1: Body, body2: Body, overlapOnly: Boolean): Boolean = js.native
   def separateCircle(body1: Body, body2: Body, overlapOnly: Boolean, bias: Double): Boolean = js.native
+  
   /**
     * Sets the position, size and properties of the World boundary.
     * 
@@ -1172,6 +1168,7 @@ trait World extends EventEmitter {
     checkUp: Boolean,
     checkDown: Boolean
   ): World = js.native
+  
   /**
     * Enables or disables collisions on each edge of the World boundary.
     * @param left Should bodies check against the left edge of the boundary? Default true.
@@ -1200,6 +1197,7 @@ trait World extends EventEmitter {
   def setBoundsCollision(left: Boolean, right: Boolean, up: js.UndefOr[scala.Nothing], down: Boolean): World = js.native
   def setBoundsCollision(left: Boolean, right: Boolean, up: Boolean): World = js.native
   def setBoundsCollision(left: Boolean, right: Boolean, up: Boolean, down: Boolean): World = js.native
+  
   /**
     * Sets the frame rate to run the simulation at.
     * 
@@ -1214,11 +1212,47 @@ trait World extends EventEmitter {
     * @param framerate The frame rate to advance the simulation at.
     */
   def setFPS(framerate: integer): this.type = js.native
+  
+  /**
+    * Static Bodies in this simulation.
+    */
+  var staticBodies: Set[StaticBody] = js.native
+  
+  /**
+    * The spatial index of Static Bodies.
+    */
+  var staticTree: RTree = js.native
+  
   /**
     * Advances the simulation by a time increment.
     * @param delta The delta time amount, in seconds, by which to advance the simulation.
     */
   def step(delta: Double): Unit = js.native
+  
+  /**
+    * The number of steps that took place in the last frame.
+    */
+  val stepsLastFrame: Double = js.native
+  
+  /**
+    * Scaling factor applied to the frame rate.
+    * 
+    * - 1.0 = normal speed
+    * - 2.0 = half speed
+    * - 0.5 = double speed
+    */
+  var timeScale: Double = js.native
+  
+  /**
+    * The spatial index of Dynamic Bodies.
+    */
+  var tree: RTree = js.native
+  
+  /**
+    * Recycled input for tree searches.
+    */
+  var treeMinMax: ArcadeWorldTreeMinMax = js.native
+  
   /**
     * Advances the simulation based on the elapsed time and fps rate.
     * 
@@ -1227,12 +1261,33 @@ trait World extends EventEmitter {
     * @param delta The delta time, in ms, elapsed since the last frame.
     */
   /* protected */ def update(time: Double, delta: Double): Unit = js.native
+  
   /**
     * Calculates a Body's velocity and updates its position.
     * @param body The Body to be updated.
     * @param delta The delta value to be used in the motion calculations, in seconds.
     */
   def updateMotion(body: Body, delta: Double): Unit = js.native
+  
+  /**
+    * Should this Arcade Physics World use an RTree for Dynamic bodies?
+    * 
+    * An RTree is a fast way of spatially sorting of all the bodies in the world.
+    * However, at certain limits, the cost of clearing and inserting the bodies into the
+    * tree every frame becomes more expensive than the search speed gains it provides.
+    * 
+    * If you have a large number of dynamic bodies in your world then it may be best to
+    * disable the use of the RTree by setting this property to `false` in the physics config.
+    * 
+    * The number it can cope with depends on browser and device, but a conservative estimate
+    * of around 5,000 bodies should be considered the max before disabling it.
+    * 
+    * This only applies to dynamic bodies. Static bodies are always kept in an RTree,
+    * because they don't have to be cleared every frame, so you benefit from the
+    * massive search speeds all the time.
+    */
+  var useTree: Boolean = js.native
+  
   /**
     * Wrap an object's coordinates (or several objects' coordinates) within {@link Phaser.Physics.Arcade.World#bounds}.
     * 
@@ -1242,6 +1297,7 @@ trait World extends EventEmitter {
     */
   def wrap(`object`: js.Any): Unit = js.native
   def wrap(`object`: js.Any, padding: Double): Unit = js.native
+  
   /**
     * Wrap each object's coordinates within {@link Phaser.Physics.Arcade.World#bounds}.
     * @param objects An array of objects to be wrapped.
@@ -1249,6 +1305,7 @@ trait World extends EventEmitter {
     */
   def wrapArray(objects: js.Array[_]): Unit = js.native
   def wrapArray(objects: js.Array[_], padding: Double): Unit = js.native
+  
   /**
     * Wrap an object's coordinates within {@link Phaser.Physics.Arcade.World#bounds}.
     * @param object A Game Object, a Physics Body, or any object with `x` and `y` coordinates
@@ -1257,4 +1314,3 @@ trait World extends EventEmitter {
   def wrapObject(`object`: js.Any): Unit = js.native
   def wrapObject(`object`: js.Any, padding: Double): Unit = js.native
 }
-

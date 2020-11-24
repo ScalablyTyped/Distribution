@@ -219,109 +219,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
-  var borderColor: js.UndefOr[String] = js.native
-  var borderWidth: js.UndefOr[Double] = js.native
-  var boxPlot: js.UndefOr[MedianSvgStyle] = js.native
-  var categories: js.UndefOr[js.Array[String]] = js.native
-  var close: js.UndefOr[Double] = js.native
-  var color: js.UndefOr[String] = js.native
-  var drilling: js.UndefOr[on | off | inherit] = js.native
-  var groupId: js.Array[String | Double] = js.native
-  var high: js.UndefOr[Double] = js.native
-  var items: js.UndefOr[js.Array[Double | js.Object]] = js.native
-  var label: js.UndefOr[String | js.Array[String]] = js.native
-  var labelPosition: js.UndefOr[
-    center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
-  ] = js.native
-  var labelStyle: js.UndefOr[js.Object | js.Array[js.Object]] = js.native
-  var low: js.UndefOr[Double] = js.native
-  var markerDisplayed: js.UndefOr[on | off | auto] = js.native
-  var markerShape: js.UndefOr[
-    circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String
-  ] = js.native
-  var markerSize: js.UndefOr[Double] = js.native
-  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onBorderWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onBoxPlotChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[MedianSvgStyle]], _]) | Null = js.native
-  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
-  var onCloseChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
-  var onGroupIdChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String | Double]], _]) | Null = js.native
-  var onHighChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onItemsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[Double | js.Object]]], _]) | Null = js.native
-  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String | js.Array[String]]], _]) | Null = js.native
-  var onLabelPositionChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[
-        center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object | js.Array[js.Object]]], _]) | Null = js.native
-  var onLowChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onMarkerDisplayedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | auto]], _]) | Null = js.native
-  var onMarkerShapeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[
-        circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onMarkerSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onOpenChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onPatternChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[
-        smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onQ1Changed: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onQ2Changed: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onQ3Changed: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onSeriesIdChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Double], _]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSourceChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSourceHoverChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSourceHoverSelectedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSourceSelectedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onTargetValueChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onVolumeChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onXChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double | String]], _]) | Null = js.native
-  var onYChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onZChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var open: js.UndefOr[Double] = js.native
-  var pattern: js.UndefOr[
-    smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
-  ] = js.native
-  var q1: js.UndefOr[Double] = js.native
-  var q2: js.UndefOr[Double] = js.native
-  var q3: js.UndefOr[Double] = js.native
-  var seriesId: String | Double = js.native
-  var shortDesc: js.UndefOr[String] = js.native
-  var source: js.UndefOr[String] = js.native
-  var sourceHover: js.UndefOr[String] = js.native
-  var sourceHoverSelected: js.UndefOr[String] = js.native
-  var sourceSelected: js.UndefOr[String] = js.native
-  var svgClassName: js.UndefOr[String] = js.native
-  var svgStyle: js.UndefOr[js.Object] = js.native
-  var targetValue: js.UndefOr[Double] = js.native
-  var value: js.UndefOr[Double] = js.native
-  var volume: js.UndefOr[Double] = js.native
-  var x: js.UndefOr[Double | String] = js.native
-  var y: js.UndefOr[Double] = js.native
-  var z: js.UndefOr[Double] = js.native
+  
   def addEventListener(
     `type`: drillingChanged,
     listener: js.ThisFunction1[
@@ -1595,6 +1497,21 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[Double]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var borderColor: js.UndefOr[String] = js.native
+  
+  var borderWidth: js.UndefOr[Double] = js.native
+  
+  var boxPlot: js.UndefOr[MedianSvgStyle] = js.native
+  
+  var categories: js.UndefOr[js.Array[String]] = js.native
+  
+  var close: js.UndefOr[Double] = js.native
+  
+  var color: js.UndefOr[String] = js.native
+  
+  var drilling: js.UndefOr[on | off | inherit] = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_borderColor(property: borderColor): js.UndefOr[String] = js.native
@@ -1674,7 +1591,140 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   def getProperty_y(property: y): js.UndefOr[Double] = js.native
   @JSName("getProperty")
   def getProperty_z(property: z): js.UndefOr[Double] = js.native
+  
+  var groupId: js.Array[String | Double] = js.native
+  
+  var high: js.UndefOr[Double] = js.native
+  
+  var items: js.UndefOr[js.Array[Double | js.Object]] = js.native
+  
+  var label: js.UndefOr[String | js.Array[String]] = js.native
+  
+  var labelPosition: js.UndefOr[
+    center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
+  ] = js.native
+  
+  var labelStyle: js.UndefOr[js.Object | js.Array[js.Object]] = js.native
+  
+  var low: js.UndefOr[Double] = js.native
+  
+  var markerDisplayed: js.UndefOr[on | off | auto] = js.native
+  
+  var markerShape: js.UndefOr[
+    circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String
+  ] = js.native
+  
+  var markerSize: js.UndefOr[Double] = js.native
+  
+  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onBorderWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onBoxPlotChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[MedianSvgStyle]], _]) | Null = js.native
+  
+  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
+  
+  var onCloseChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
+  
+  var onGroupIdChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String | Double]], _]) | Null = js.native
+  
+  var onHighChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onItemsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[Double | js.Object]]], _]) | Null = js.native
+  
+  var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String | js.Array[String]]], _]) | Null = js.native
+  
+  var onLabelPositionChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[
+        center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object | js.Array[js.Object]]], _]) | Null = js.native
+  
+  var onLowChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onMarkerDisplayedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | auto]], _]) | Null = js.native
+  
+  var onMarkerShapeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[
+        circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onMarkerSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onOpenChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onPatternChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[
+        smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onQ1Changed: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onQ2Changed: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onQ3Changed: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onSeriesIdChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Double], _]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSourceChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSourceHoverChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSourceHoverSelectedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSourceSelectedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onTargetValueChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onVolumeChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onXChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double | String]], _]) | Null = js.native
+  
+  var onYChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onZChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var open: js.UndefOr[Double] = js.native
+  
+  var pattern: js.UndefOr[
+    smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
+  ] = js.native
+  
+  var q1: js.UndefOr[Double] = js.native
+  
+  var q2: js.UndefOr[Double] = js.native
+  
+  var q3: js.UndefOr[Double] = js.native
+  
+  var seriesId: String | Double = js.native
+  
   def setProperties(properties: ojChartItemSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: drilling, value: inherit): Unit = js.native
   def setProperty(property: drilling, value: off): Unit = js.native
   def setProperty(property: drilling, value: on): Unit = js.native
@@ -1854,5 +1904,30 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   def setProperty_z(property: z): Unit = js.native
   @JSName("setProperty")
   def setProperty_z(property: z, value: Double): Unit = js.native
+  
+  var shortDesc: js.UndefOr[String] = js.native
+  
+  var source: js.UndefOr[String] = js.native
+  
+  var sourceHover: js.UndefOr[String] = js.native
+  
+  var sourceHoverSelected: js.UndefOr[String] = js.native
+  
+  var sourceSelected: js.UndefOr[String] = js.native
+  
+  var svgClassName: js.UndefOr[String] = js.native
+  
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  
+  var targetValue: js.UndefOr[Double] = js.native
+  
+  var value: js.UndefOr[Double] = js.native
+  
+  var volume: js.UndefOr[Double] = js.native
+  
+  var x: js.UndefOr[Double | String] = js.native
+  
+  var y: js.UndefOr[Double] = js.native
+  
+  var z: js.UndefOr[Double] = js.native
 }
-

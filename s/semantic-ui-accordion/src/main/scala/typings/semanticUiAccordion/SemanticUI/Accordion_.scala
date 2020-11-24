@@ -35,11 +35,11 @@ import typings.semanticUiAccordion.semanticUiAccordionStrings.toggle
 import typings.semanticUiAccordion.semanticUiAccordionStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Accordion_ extends js.Object {
-  var settings: AccordionSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Closes accordion content that are not active
@@ -106,5 +106,6 @@ trait Accordion_ extends js.Object {
     */
   def apply(behavior: toggle, index: Double): JQuery = js.native
   def apply(settings: AccordionSettings): JQuery = js.native
+  
+  var settings: AccordionSettings = js.native
 }
-

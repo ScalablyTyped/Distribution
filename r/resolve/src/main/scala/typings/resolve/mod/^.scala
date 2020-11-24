@@ -2,13 +2,12 @@ package typings.resolve.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("resolve", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var isCore: js.Function1[/* id */ String, js.UndefOr[Boolean]] = js.native
-  var sync: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String] = js.native
+  
   /**
     * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
     *
@@ -24,5 +23,8 @@ object ^ extends js.Object {
     * @param callback
     */
   def apply(id: String, opts: AsyncOpts, cb: resolveCallback): Unit = js.native
+  
+  var isCore: js.Function1[/* id */ String, js.UndefOr[Boolean]] = js.native
+  
+  var sync: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String] = js.native
 }
-

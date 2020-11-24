@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Group is a way for you to create, manipulate, or recycle similar Game Objects.
@@ -45,4 +45,3 @@ class Group protected ()
   def this(scene: Scene, children: GroupCreateConfig, config: GroupConfig) = this()
   def this(scene: Scene, children: GroupCreateConfig, config: GroupCreateConfig) = this()
 }
-

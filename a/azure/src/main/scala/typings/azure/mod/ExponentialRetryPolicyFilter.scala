@@ -2,7 +2,7 @@ package typings.azure.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "ExponentialRetryPolicyFilter")
 @js.native
@@ -61,9 +61,12 @@ class ExponentialRetryPolicyFilter () extends Filter {
     maxRetryInterval: Double
   ) = this()
   def this(retryCount: Double, retryInterval: Double, minRetryInterval: Double, maxRetryInterval: Double) = this()
+  
   var maxRetryInterval: Double = js.native
+  
   var minRetryInterval: Double = js.native
+  
   var retryCount: Double = js.native
+  
   var retryInterval: Double = js.native
 }
-

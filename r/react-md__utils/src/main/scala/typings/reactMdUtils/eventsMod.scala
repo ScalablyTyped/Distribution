@@ -11,12 +11,14 @@ import typings.std.TouchEvent
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/utils/types/events", JSImport.Namespace)
 @js.native
 object eventsMod extends js.Object {
+  
   def ScrollListener(props: ScrollListenerProps): Null = js.native
+  
   def addTouchEvent(
     /**
     * The element to add the touch event to.
@@ -175,6 +177,7 @@ object eventsMod extends js.Object {
     */
   options: AddEventListenerOptions
   ): Unit = js.native
+  
   def delegateEvent(eventType: String): DelegatedEventHandler = js.native
   def delegateEvent(
     eventType: String,
@@ -202,6 +205,7 @@ object eventsMod extends js.Object {
     options: AddEventListenerOptions
   ): DelegatedEventHandler = js.native
   def delegateEvent(eventType: String, eventTarget: DelegatedEventTarget): DelegatedEventHandler = js.native
+  
   def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
@@ -312,6 +316,7 @@ object eventsMod extends js.Object {
     */
   options: AddEventListenerOptions
   ): Unit = js.native
+  
   def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
@@ -502,12 +507,14 @@ object eventsMod extends js.Object {
     */
   options: AddEventListenerOptions
   ): Unit = js.native
+  
   def useScrollListener[E /* <: HTMLElement */](hasEnabledOnScrollElementOptions: Options[E]): Unit = js.native
+  
   @js.native
   object PassiveEvents extends js.Object {
+    
     var isSupported: Boolean = js.native
+    
     def update(): Boolean = js.native
   }
-  
 }
-

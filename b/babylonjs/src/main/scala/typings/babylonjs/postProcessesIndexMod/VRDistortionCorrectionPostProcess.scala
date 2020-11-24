@@ -4,7 +4,7 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "VRDistortionCorrectionPostProcess")
 @js.native
@@ -19,4 +19,3 @@ class VRDistortionCorrectionPostProcess protected ()
     */
   def this(name: String, camera: Camera, isRightEye: Boolean, vrMetrics: VRCameraMetrics) = this()
 }
-

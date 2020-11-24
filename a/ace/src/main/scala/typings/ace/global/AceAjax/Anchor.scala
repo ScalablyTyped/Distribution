@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.Anchor")
 @js.native
@@ -20,4 +20,3 @@ Instantiable3[
       /* column */ Double, 
       typings.ace.AceAjax.Anchor
     ]
-

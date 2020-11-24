@@ -4,14 +4,11 @@ import typings.gun.mod.Gun.CryptoKeyPair
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Decrypt extends js.Object {
-  /** Last known error */
-  var err: js.UndefOr[Error] = js.native
-  /** If you want SEA to throw while in development, turn SEA.throw = true on, but please do not use this in production. */
-  var `throw`: js.UndefOr[Boolean] = js.native
+  
   def decrypt(message: js.Any, pair: String): js.Promise[_] = js.native
   /**
     * Read the secret data, if and only if you are allowed to.
@@ -19,6 +16,7 @@ trait Decrypt extends js.Object {
     * @param pair from .pair or the passphrase to decypher the message.
     */
   def decrypt(message: js.Any, pair: CryptoKeyPair): js.Promise[_] = js.native
+  
   def encrypt(data: js.Any, pair: String): js.Promise[String] = js.native
   /**
     * Takes some data that you want to keep secret and encrypts it so nobody else can read it.
@@ -26,6 +24,10 @@ trait Decrypt extends js.Object {
     * @param pair from .pair or a passphrase you want to use as a cypher to encrypt with.
     */
   def encrypt(data: js.Any, pair: CryptoKeyPair): js.Promise[String] = js.native
+  
+  /** Last known error */
+  var err: js.UndefOr[Error] = js.native
+  
   /**
     * This generates a cryptographically secure public/private key pair - be careful not to leak the private keys!
     * Note: API subject to change we may change the parameters to accept data and work, in addition to generation.
@@ -34,12 +36,17 @@ trait Decrypt extends js.Object {
     */
   def pair(cb: js.Function1[/* data */ CryptoKeyPair, Unit]): js.Promise[js.UndefOr[CryptoKeyPair]] = js.native
   def pair(cb: js.Function1[/* data */ CryptoKeyPair, Unit], opt: js.Object): js.Promise[js.UndefOr[CryptoKeyPair]] = js.native
+  
   /**
     * Adds a signature to a message, for data that you want to prevent attackers tampering with.
     * @param data is the content that you want to prove is authorized.
     * @param pair is from .pair.
     */
   def sign(data: js.Any, pair: CryptoKeyPair): js.Promise[js.UndefOr[String]] = js.native
+  
+  /** If you want SEA to throw while in development, turn SEA.throw = true on, but please do not use this in production. */
+  var `throw`: js.UndefOr[Boolean] = js.native
+  
   def verify(message: js.Any, pair: String): js.Promise[_] = js.native
   /**
     * Gets the data if and only if the message can be verified as coming from the person you expect.
@@ -47,6 +54,7 @@ trait Decrypt extends js.Object {
     * @param pair from .pair or its public key text (pair.pub).
     */
   def verify(message: js.Any, pair: CryptoKeyPair): js.Promise[_] = js.native
+  
   /**
     * This gives you a Proof of Work (POW) / Hashing of Data
     * @param data The data to be hashed, work to be performed on.
@@ -84,4 +92,3 @@ trait Decrypt extends js.Object {
     opt: PartialnameSHA256PBKDF2en
   ): js.Promise[js.UndefOr[String]] = js.native
 }
-

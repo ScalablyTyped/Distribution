@@ -10,9 +10,9 @@ Generate passwords using a cryptographically-strong source of randomness
 | ------------------ | :-------------: |
 | Full name          | secure-random-password |
 | Keywords           | secure, random, password, generator |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 17002 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 62552 |
 | # stars            | 0 |
 
 ## Links

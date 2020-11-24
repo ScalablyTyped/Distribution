@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "eventemitter3" : "4.0.4"
+      "eventemitter3" : "4.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "eventemitter3" : "4.0.4"
+      "eventemitter3" : "4.0.7"
     }
   ],
   "compile-devDependencies" : [

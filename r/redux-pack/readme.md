@@ -12,7 +12,7 @@ Sensible promise handling and middleware for redux
 | Keywords           | redux, middleware, promise, async, normalize, normalizr, react |
 | # releases         | 1 |
 | # dependents       | 11 |
-| # downloads        | 256599 |
+| # downloads        | 424871 |
 | # stars            | 3 |
 
 ## Links

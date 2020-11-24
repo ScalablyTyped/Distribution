@@ -6,21 +6,23 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Accounts")
 @js.native
 class ResourceAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var adclients: ResourceAccountsAdclients = js.native
+  
   var adunits: ResourceAccountsAdunits = js.native
+  
   var alerts: ResourceAccountsAlerts = js.native
+  
   var context: APIRequestContext = js.native
+  
   var customchannels: ResourceAccountsCustomchannels = js.native
-  var payments: ResourceAccountsPayments = js.native
-  var reports: ResourceAccountsReports = js.native
-  var savedadstyles: ResourceAccountsSavedadstyles = js.native
-  var urlchannels: ResourceAccountsUrlchannels = js.native
+  
   /**
     * adsense.accounts.get
     * @desc Get information about the selected AdSense account.
@@ -50,6 +52,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * adsense.accounts.list
     * @desc List all accounts available to this AdSense account.
@@ -79,5 +82,12 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccounts]
   ): Unit = js.native
+  
+  var payments: ResourceAccountsPayments = js.native
+  
+  var reports: ResourceAccountsReports = js.native
+  
+  var savedadstyles: ResourceAccountsSavedadstyles = js.native
+  
+  var urlchannels: ResourceAccountsUrlchannels = js.native
 }
-

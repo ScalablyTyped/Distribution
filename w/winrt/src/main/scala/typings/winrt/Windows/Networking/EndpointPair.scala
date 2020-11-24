@@ -2,12 +2,12 @@ package typings.winrt.Windows.Networking
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EndpointPair extends IEndpointPair
-
 object EndpointPair {
+  
   @scala.inline
   def apply(
     localHostName: HostName,
@@ -19,4 +19,3 @@ object EndpointPair {
     __obj.asInstanceOf[EndpointPair]
   }
 }
-

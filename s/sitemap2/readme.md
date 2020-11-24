@@ -12,7 +12,7 @@ Sitemap-generating framework
 | Keywords           | sitemap, sitemap.xml, nested sitemaps |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1620 |
+| # downloads        | 1275 |
 | # stars            | 0 |
 
 ## Links

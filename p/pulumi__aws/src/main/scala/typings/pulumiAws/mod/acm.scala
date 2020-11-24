@@ -12,11 +12,15 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "acm")
 @js.native
 object acm extends js.Object {
+  
+  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = js.native
+  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = js.native
+  
   @js.native
   class Certificate protected ()
     extends typings.pulumiAws.acmMod.Certificate {
@@ -32,6 +36,30 @@ object acm extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: CertificateArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object Certificate extends js.Object {
+    
+    /**
+      * Get an existing Certificate resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.certificateMod.Certificate = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateMod.Certificate = js.native
+    def get(name: String, id: Input[ID], state: CertificateState): typings.pulumiAws.certificateMod.Certificate = js.native
+    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): typings.pulumiAws.certificateMod.Certificate = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Certificate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean = js.native
+  }
   
   @js.native
   class CertificateValidation protected ()
@@ -46,35 +74,10 @@ object acm extends js.Object {
     def this(name: String, args: CertificateValidationArgs) = this()
     def this(name: String, args: CertificateValidationArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = js.native
-  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = js.native
-  /* static members */
-  @js.native
-  object Certificate extends js.Object {
-    /**
-      * Get an existing Certificate resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.certificateMod.Certificate = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateMod.Certificate = js.native
-    def get(name: String, id: Input[ID], state: CertificateState): typings.pulumiAws.certificateMod.Certificate = js.native
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): typings.pulumiAws.certificateMod.Certificate = js.native
-    /**
-      * Returns true if the given object is an instance of Certificate.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object CertificateValidation extends js.Object {
+    
     /**
       * Get an existing CertificateValidation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,12 +91,11 @@ object acm extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
     def get(name: String, id: Input[ID], state: CertificateValidationState): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
     def get(name: String, id: Input[ID], state: CertificateValidationState, opts: CustomResourceOptions): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
+    
     /**
       * Returns true if the given object is an instance of CertificateValidation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificateValidation.CertificateValidation */ Boolean = js.native
   }
-  
 }
-

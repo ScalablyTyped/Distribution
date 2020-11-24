@@ -10,7 +10,7 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-auth-library/build/src/auth/jwtclient", "JWT")
 @js.native
@@ -38,26 +38,11 @@ class JWT protected ()
     subject: js.UndefOr[String],
     keyId: js.UndefOr[String]
   ) = this()
+  
   var access: js.Any = js.native
+  
   var additionalClaims: js.UndefOr[js.Object] = js.native
-  var authorizeAsync: js.Any = js.native
-  /**
-    * Create a gToken if it doesn't already exist.
-    */
-  var createGToken: js.Any = js.native
-  var email: js.UndefOr[String] = js.native
-  var fromStreamAsync: js.Any = js.native
-  var gtoken: js.UndefOr[GoogleToken] = js.native
-  /**
-    * Determine if there are currently scopes available.
-    */
-  var hasScopes: js.Any = js.native
-  var key: js.UndefOr[String] = js.native
-  var keyFile: js.UndefOr[String] = js.native
-  var keyId: js.UndefOr[String] = js.native
-  var scope: js.UndefOr[String] = js.native
-  var scopes: js.UndefOr[String | js.Array[String]] = js.native
-  var subject: js.UndefOr[String] = js.native
+  
   /**
     * Get the initial access token using gToken.
     * @param callback Optional callback.
@@ -65,6 +50,14 @@ class JWT protected ()
     */
   def authorize(): js.Promise[Credentials] = js.native
   def authorize(callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Credentials], Unit]): Unit = js.native
+  
+  var authorizeAsync: js.Any = js.native
+  
+  /**
+    * Create a gToken if it doesn't already exist.
+    */
+  var createGToken: js.Any = js.native
+  
   /**
     * Creates a copy of the credential with the specified scopes.
     * @param scopes List of requested scopes or a single scope.
@@ -73,16 +66,23 @@ class JWT protected ()
   def createScoped(): JWT = js.native
   def createScoped(scopes: String): JWT = js.native
   def createScoped(scopes: js.Array[String]): JWT = js.native
+  
+  var defaultScopes: js.UndefOr[String | js.Array[String]] = js.native
+  
+  var email: js.UndefOr[String] = js.native
+  
   /**
     * Creates a JWT credentials instance using an API Key for authentication.
     * @param apiKey The API Key in string form.
     */
   def fromAPIKey(apiKey: String): Unit = js.native
+  
   /**
     * Create a JWT credentials instance using the given input options.
     * @param json The input object.
     */
   def fromJSON(json: JWTInput): Unit = js.native
+  
   /**
     * Create a JWT credentials instance using the given input stream.
     * @param inputStream The input stream.
@@ -90,10 +90,36 @@ class JWT protected ()
     */
   def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
   def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
+  var fromStreamAsync: js.Any = js.native
+  
   /**
     * Using the key or keyFile on the JWT client, obtain an object that contains
     * the key and the client email.
     */
   def getCredentials(): js.Promise[CredentialBody] = js.native
+  
+  var gtoken: js.UndefOr[GoogleToken] = js.native
+  
+  /**
+    * Are there any default or user scopes defined.
+    */
+  var hasAnyScopes: js.Any = js.native
+  
+  /**
+    * Determine if there are currently scopes available.
+    */
+  var hasUserScopes: js.Any = js.native
+  
+  var key: js.UndefOr[String] = js.native
+  
+  var keyFile: js.UndefOr[String] = js.native
+  
+  var keyId: js.UndefOr[String] = js.native
+  
+  var scope: js.UndefOr[String] = js.native
+  
+  var scopes: js.UndefOr[String | js.Array[String]] = js.native
+  
+  var subject: js.UndefOr[String] = js.native
 }
-

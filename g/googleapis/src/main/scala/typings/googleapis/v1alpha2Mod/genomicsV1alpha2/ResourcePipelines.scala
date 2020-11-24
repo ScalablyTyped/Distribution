@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v1alpha2", "genomics_v1alpha2.Resource$Pipelines")
 @js.native
 class ResourcePipelines protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * genomics.pipelines.create
     * @desc Creates a pipeline that can be run later. Create takes a Pipeline
@@ -98,6 +100,7 @@ class ResourcePipelines protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPipeline]
   ): Unit = js.native
+  
   /**
     * genomics.pipelines.delete
     * @desc Deletes a pipeline based on ID.  Caller must have WRITE permission
@@ -179,6 +182,7 @@ class ResourcePipelines protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * genomics.pipelines.get
     * @desc Retrieves a pipeline based on ID.  Caller must have READ permission
@@ -262,6 +266,7 @@ class ResourcePipelines protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPipeline]
   ): Unit = js.native
+  
   /**
     * genomics.pipelines.getControllerConfig
     * @desc Gets controller configuration information. Should only be called by
@@ -343,6 +348,7 @@ class ResourcePipelines protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaControllerConfig]
   ): Unit = js.native
+  
   /**
     * genomics.pipelines.list
     * @desc Lists pipelines.  Caller must have READ permission to the project.
@@ -437,6 +443,7 @@ class ResourcePipelines protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListPipelinesResponse]
   ): Unit = js.native
+  
   /**
     * genomics.pipelines.run
     * @desc Runs a pipeline. If `pipelineId` is specified in the request, then
@@ -525,6 +532,7 @@ class ResourcePipelines protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * genomics.pipelines.setOperationStatus
     * @desc Sets status of a given operation. Any new timestamps (as determined
@@ -609,4 +617,3 @@ class ResourcePipelines protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

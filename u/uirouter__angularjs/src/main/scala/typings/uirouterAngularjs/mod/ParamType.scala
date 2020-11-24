@@ -3,7 +3,7 @@ package typings.uirouterAngularjs.mod
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "ParamType")
 @js.native
@@ -16,4 +16,3 @@ class ParamType protected ()
     */
   def this(`def`: ParamTypeDefinition) = this()
 }
-

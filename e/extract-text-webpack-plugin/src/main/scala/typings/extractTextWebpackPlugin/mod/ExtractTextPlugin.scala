@@ -3,7 +3,7 @@ package typings.extractTextWebpackPlugin.mod
 import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use an `ExtractTextPlugin` instance and a loader returned by `extract` in concert to write files to disk instead of loading them into others.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ExtractTextPlugin extends Plugin {
+  
   /**
     * Creates an extracting loader from an existing loader (instance).
     * Use the resulting loader in `module.rules`/`module.loaders`.
@@ -32,4 +33,3 @@ trait ExtractTextPlugin extends Plugin {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
   ] = js.native
 }
-

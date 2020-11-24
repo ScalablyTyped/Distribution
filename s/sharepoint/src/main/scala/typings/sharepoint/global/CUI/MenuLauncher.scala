@@ -3,7 +3,7 @@ package typings.sharepoint.global.CUI
 import typings.sharepoint.CUI.IModalController
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.MenuLauncher")
 @js.native
@@ -17,4 +17,3 @@ class MenuLauncher protected ()
     menu: js.Any
   ) = this()
 }
-

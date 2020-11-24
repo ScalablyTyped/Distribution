@@ -11,8 +11,8 @@ Shevyjs is a CSS-in-JS solution for perfect vertical rhythm with your typography
 | Full name          | shevyjs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 24616 |
+| # dependents       | 4 |
+| # downloads        | 26018 |
 | # stars            | 0 |
 
 ## Links

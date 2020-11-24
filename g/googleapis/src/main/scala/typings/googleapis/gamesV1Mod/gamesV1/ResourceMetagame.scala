@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Metagame")
 @js.native
 class ResourceMetagame protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.metagame.getMetagameConfig
     * @desc Return the metagame configuration data for the calling application.
@@ -43,6 +45,7 @@ class ResourceMetagame protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMetagameConfig]
   ): Unit = js.native
+  
   /**
     * games.metagame.listCategoriesByPlayer
     * @desc List play data aggregated per category for the player corresponding
@@ -80,4 +83,3 @@ class ResourceMetagame protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCategoryListResponse]
   ): Unit = js.native
 }
-

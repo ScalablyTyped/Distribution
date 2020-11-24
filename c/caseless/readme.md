@@ -11,8 +11,8 @@ Caseless object set/get/has, very useful when working with HTTP headers.
 | Full name          | caseless |
 | Keywords           | headers, http, caseless |
 | # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 582772183 |
+| # dependents       | 166 |
+| # downloads        | 719956520 |
 | # stars            | 7 |
 
 ## Links

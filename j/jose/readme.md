@@ -1,18 +1,18 @@
 
 # Scala.js typings for jose
 
-Typings are for version 1.27.2
+Typings are for version 2.0.3
 
 ## Library description:
-JSON Web Almost Everything - JWA, JWS, JWE, JWK, JWT, JWKS for Node.js with minimal dependencies
+JSON Web Almost Everything - JWA, JWS, JWE, JWK, JWT, JWKS with no dependencies
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jose |
-| Keywords           | access token, access_token, compact, decode, decrypt, ec, ecdsa, eddsa, electron, encrypt, flattened, general, id token, id_token, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, logout token, logout_token, oct, okp, rsa, secp256k1, sign, validate, verify |
-| # releases         | 21 |
-| # dependents       | 17 |
-| # downloads        | 208266 |
+| Keywords           | compact, decode, decrypt, detached, ec, ecdsa, eddsa, electron, embedded, encrypt, flattened, isomorphic, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, oct, okp, payload, rsa, secp256k1, sign, signature, universal, validate, verify, webcrypto |
+| # releases         | 48 |
+| # dependents       | 80 |
+| # downloads        | 4406770 |
 | # stars            | 2 |
 
 ## Links

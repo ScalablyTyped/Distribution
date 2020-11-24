@@ -3,7 +3,7 @@ package typings.vexflow.mod.Flow
 import typings.vexflow.anon.Lastindices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.StaveTie")
 @js.native
@@ -27,4 +27,3 @@ class StaveTie protected ()
   def this(notes: Lastindices) = this()
   def this(notes: Lastindices, text: String) = this()
 }
-

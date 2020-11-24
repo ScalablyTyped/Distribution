@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.Math
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The minimum safe integer this browser supports.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Phaser.Math.MIN_SAFE_INTEGER")
 @js.native
 object MIN_SAFE_INTEGER extends TopLevel[Double]
-

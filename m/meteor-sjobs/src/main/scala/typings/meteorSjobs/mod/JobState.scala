@@ -2,7 +2,7 @@ package typings.meteorSjobs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.meteorSjobs.meteorSjobsStrings.pending
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.meteorSjobs.meteorSjobsStrings.failure
 */
 trait JobState extends js.Object
-
 object JobState {
+  
   @scala.inline
   def failure: typings.meteorSjobs.meteorSjobsStrings.failure = "failure".asInstanceOf[typings.meteorSjobs.meteorSjobsStrings.failure]
+  
   @scala.inline
   def pending: typings.meteorSjobs.meteorSjobsStrings.pending = "pending".asInstanceOf[typings.meteorSjobs.meteorSjobsStrings.pending]
+  
   @scala.inline
   def success: typings.meteorSjobs.meteorSjobsStrings.success = "success".asInstanceOf[typings.meteorSjobs.meteorSjobsStrings.success]
 }
-

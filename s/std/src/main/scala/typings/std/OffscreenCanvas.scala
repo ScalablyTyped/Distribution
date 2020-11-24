@@ -6,7 +6,7 @@ import typings.std.stdStrings.webgl
 import typings.std.stdStrings.webgl2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OffscreenCanvas
@@ -14,18 +14,7 @@ trait OffscreenCanvas
      with EventTarget
      with TexImageSource
      with Transferable {
-  /**
-    * These attributes return the dimensions of the OffscreenCanvas object's bitmap.
-    * 
-    * They can be set, to replace the bitmap with a new, transparent black bitmap of the specified dimensions (effectively resizing it).
-    */
-  var height: Double = js.native
-  /**
-    * These attributes return the dimensions of the OffscreenCanvas object's bitmap.
-    * 
-    * They can be set, to replace the bitmap with a new, transparent black bitmap of the specified dimensions (effectively resizing it).
-    */
-  var width: Double = js.native
+  
   /**
     * Returns a promise that will fulfill with a new Blob object representing a file containing the image in the OffscreenCanvas object.
     * 
@@ -33,6 +22,7 @@ trait OffscreenCanvas
     */
   def convertToBlob(): js.Promise[Blob] = js.native
   def convertToBlob(options: ImageEncodeOptions): js.Promise[Blob] = js.native
+  
   def getContext(contextId: OffscreenRenderingContextId): OffscreenRenderingContext | Null = js.native
   def getContext(contextId: OffscreenRenderingContextId, options: js.Any): OffscreenRenderingContext | Null = js.native
   /**
@@ -58,9 +48,23 @@ trait OffscreenCanvas
   def getContext_webgl2(contextId: webgl2): WebGL2RenderingContext | Null = js.native
   @JSName("getContext")
   def getContext_webgl2(contextId: webgl2, options: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
+  
+  /**
+    * These attributes return the dimensions of the OffscreenCanvas object's bitmap.
+    * 
+    * They can be set, to replace the bitmap with a new, transparent black bitmap of the specified dimensions (effectively resizing it).
+    */
+  var height: Double = js.native
+  
   /**
     * Returns a newly created ImageBitmap object with the image in the OffscreenCanvas object. The image in the OffscreenCanvas object is replaced with a new blank image.
     */
   def transferToImageBitmap(): ImageBitmap = js.native
+  
+  /**
+    * These attributes return the dimensions of the OffscreenCanvas object's bitmap.
+    * 
+    * They can be set, to replace the bitmap with a new, transparent black bitmap of the specified dimensions (effectively resizing it).
+    */
+  var width: Double = js.native
 }
-

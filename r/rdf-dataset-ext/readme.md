@@ -11,8 +11,8 @@ Util functions for easier RDF/JS DatasetCore handling
 | Full name          | rdf-dataset-ext |
 | Keywords           | dataset, datasetcore, rdf, rdfjs, rdf-ext |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 787 |
+| # dependents       | 3 |
+| # downloads        | 4035 |
 | # stars            | 0 |
 
 ## Links

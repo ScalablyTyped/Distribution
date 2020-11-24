@@ -3,10 +3,11 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Memento extends js.Object {
+  
   /**
     * Return a value.
     *
@@ -23,6 +24,7 @@ trait Memento extends js.Object {
     * @return The stored value or the defaultValue.
     */
   def get[T](key: String, defaultValue: T): T = js.native
+  
   /**
     * Store a value. The value must be JSON-stringifyable.
     *
@@ -31,4 +33,3 @@ trait Memento extends js.Object {
     */
   def update(key: String, value: js.Any): Thenable[Unit] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.winjs.global.WinJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides helper functions for defining namespaces. For more information, see Organizing your code with WinJS.Namespace.
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WinJS.Namespace")
 @js.native
 object Namespace extends js.Object {
+  
   //#region Functions
   /**
     * Defines a new namespace with the specified name. For more information, see Organizing your code with WinJS.Namespace.
@@ -21,6 +22,7 @@ object Namespace extends js.Object {
   def define(name: js.UndefOr[scala.Nothing], members: js.Any): js.Any = js.native
   def define(name: String): js.Any = js.native
   def define(name: String, members: js.Any): js.Any = js.native
+  
   /**
     * Defines a new namespace with the specified name under the specified parent namespace. For more information, see Organizing your code with WinJS.Namespace.
     * @param parentNamespace The parent namespace.
@@ -37,4 +39,3 @@ object Namespace extends js.Object {
   def defineWithParent(parentNamespace: js.Any, name: String): js.Any = js.native
   def defineWithParent(parentNamespace: js.Any, name: String, members: js.Any): js.Any = js.native
 }
-

@@ -18,7 +18,7 @@ import typings.std.RegExp
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
@@ -32,6 +32,7 @@ class Text protected () extends Object {
     */
   def this(text: String) = this()
   def this(text: String, options: TextOptions) = this()
+  
   /**
     * use this size when measuring text. To avoid IE11 rounding errors
     * @type {Number}
@@ -40,158 +41,34 @@ class Text protected () extends Object {
     * @private
     */
   var CACHE_FONT_SIZE: Double = js.native
+  
   /**
     * Contains characters bounding boxes for each line and char
     * @private
     * @type Array of char grapheme bounding boxes
     */
   var __charBounds: js.UndefOr[js.Array[js.Array[DeltaY]]] = js.native
+  
   /**
     * List of line heights
     * @private
     * @type Array<Number>
     */
   var __lineHeights: js.Array[Double] = js.native
+  
   /**
     * List of line widths
     * @private
     * @type Array<Number>
     */
   var __lineWidths: js.Array[Double] = js.native
+  
   /**
     * @private
     * @type boolean
     */
   var __skipDimension: Boolean = js.native
-  /**
-    * Properties which when set cause object to change dimensions
-    * @type Object
-    * @private
-    */
-  var _dimensionAffectingProps: js.Array[String] = js.native
-  /**
-    * @private
-    * @type Number
-    */
-  var _fontSizeFraction: Double = js.native
-  /**
-    * Text Line proportion to font Size (in pixels)
-    * @private
-    * @type Number
-    */
-  var _fontSizeMult: Double = js.native
-  /**
-    * Use this regular expression to filter for whitespace that is not a new line.
-    * Mostly used when text is 'justify' aligned.
-    * @private
-    * @type RegExp
-    */
-  var _reSpaceAndTab: RegExp = js.native
-  /**
-    * Use this regular expression to filter for whitespaces that is not a new line.
-    * Mostly used when text is 'justify' aligned.
-    * @private
-    * @type RegExp
-    */
-  var _reSpacesAndTabs: RegExp = js.native
-  var _text: js.Array[String] = js.native
-  /**
-    * List of grapheme lines in text object
-    * @private
-    * @type Array<string>
-    */
-  var _textLines: js.Array[js.Array[String]] = js.native
-  /**
-    * List of unwrapped grapheme lines in text object
-    * @private
-    * @type Array<string>
-    */
-  var _unwrappedTextLines: js.Array[js.Array[String]] = js.native
-  /**
-    * additional space between characters
-    * expressed in thousands of em unit
-    * @type Number
-    */
-  var charSpacing: js.UndefOr[Double] = js.native
-  var cursorOffsetCache: Left = js.native
-  /**
-    * Baseline shift, stlyes only, keep at 0 for the main text object
-    * @type {Number}
-    */
-  var deltaY: js.UndefOr[Double] = js.native
-  /**
-    * Font family
-    * @type String
-    */
-  var fontFamily: js.UndefOr[String] = js.native
-  /**
-    * Font size (in pixels)
-    * @type Number
-    */
-  var fontSize: js.UndefOr[Double] = js.native
-  /**
-    * Font style . Possible values: "", "normal", "italic" or "oblique".
-    * @type String
-    */
-  var fontStyle: js.UndefOr[_empty | normal | italic | oblique] = js.native
-  /**
-    * Font weight (e.g. bold, normal, 400, 600, 800)
-    * @type {(Number|String)}
-    */
-  var fontWeight: js.UndefOr[String | Double] = js.native
-  /**
-    * Line height
-    * @type Number
-    */
-  var lineHeight: js.UndefOr[Double] = js.native
-  /**
-    * Text decoration linethrough.
-    * @type Boolean
-    */
-  var linethrough: js.UndefOr[Boolean] = js.native
-  /**
-    * Text decoration overline.
-    * @type Boolean
-    */
-  var overline: js.UndefOr[Boolean] = js.native
-  /**
-    * Object containing character styles - top-level properties -> line numbers,
-    * 2nd-level properties - charater numbers
-    * @type Object
-    */
-  var styles: js.UndefOr[js.Any] = js.native
-  /**
-    * Subscript schema object (minimum overlap)
-    * @type {Object}
-    */
-  var subscript: js.UndefOr[Baseline] = js.native
-  /**
-    * Superscript schema object (minimum overlap)
-    * @type {Object}
-    */
-  var superscript: js.UndefOr[Baseline] = js.native
-  var text: js.UndefOr[String] = js.native
-  /**
-    * Text alignment. Possible values: "left", "center", "right", "justify",
-    * "justify-left", "justify-center" or "justify-right".
-    * @type String
-    */
-  var textAlign: js.UndefOr[String] = js.native
-  /**
-    * Background color of text lines
-    * @type String
-    */
-  var textBackgroundColor: js.UndefOr[String] = js.native
-  /**
-    * List of lines in text object
-    * @type Array<string>
-    */
-  var textLines: js.Array[String] = js.native
-  /**
-    * Text decoration underline.
-    * @type Boolean
-    */
-  var underline: js.UndefOr[Boolean] = js.native
+  
   /**
     * apply all the character style to canvas for rendering
     * @private
@@ -208,10 +85,32 @@ class Text protected () extends Object {
     charIndex: Double,
     styleDeclaration: js.Any
   ): Unit = js.native
+  
   /**
     * @private
     */
   def _clearCache(): Unit = js.native
+  
+  /**
+    * Properties which when set cause object to change dimensions
+    * @type Object
+    * @private
+    */
+  var _dimensionAffectingProps: js.Array[String] = js.native
+  
+  /**
+    * @private
+    * @type Number
+    */
+  var _fontSizeFraction: Double = js.native
+  
+  /**
+    * Text Line proportion to font Size (in pixels)
+    * @private
+    * @type Number
+    */
+  var _fontSizeMult: Double = js.native
+  
   /**
     * Generate an object that translates the style object so that it is
     * broken up by visual lines (new lines and automatic wrapping).
@@ -220,12 +119,14 @@ class Text protected () extends Object {
     * @private
     */
   def _generateStyleMap(textInfo: GraphemeLines): NumberDictionary[typings.fabric.anon.Line] = js.native
+  
   /**
     * @private
     * @param {Number} lineIndex index text line
     * @return {Number} Line left offset
     */
   def _getLineLeftOffset(lineIndex: Double): Double = js.native
+  
   /**
     * get the reference, not a clone, of the style object for a given character
     * @param {Number} lineIndex
@@ -233,17 +134,20 @@ class Text protected () extends Object {
     * @return {Object} style object
     */
   def _getStyleDeclaration(lineIndex: Double, charIndex: Double): js.Any = js.native
+  
   /**
     * @private
     * Gets the width of character spacing
     */
   def _getWidthOfCharSpacing(): Double = js.native
+  
   /**
     * @private
     * @param {Object} prevStyle
     * @param {Object} thisStyle
     */
   def _hasStyleChanged(prevStyle: js.Any, thisStyle: js.Any): Boolean = js.native
+  
   /**
     * measure and return the width of a single character.
     * possibly overridden to accommodate different measure logic or
@@ -256,6 +160,23 @@ class Text protected () extends Object {
     * @return {Object} object contained char width anf kerned width
     */
   def _measureChar(_char: String, charStyle: js.Any, previousChar: String, prevCharStyle: js.Any): KernedWidth = js.native
+  
+  /**
+    * Use this regular expression to filter for whitespace that is not a new line.
+    * Mostly used when text is 'justify' aligned.
+    * @private
+    * @type RegExp
+    */
+  var _reSpaceAndTab: RegExp = js.native
+  
+  /**
+    * Use this regular expression to filter for whitespaces that is not a new line.
+    * Mostly used when text is 'justify' aligned.
+    * @private
+    * @type RegExp
+    */
+  var _reSpacesAndTabs: RegExp = js.native
+  
   /**
     * @private
     * @param {String} method
@@ -276,6 +197,7 @@ class Text protected () extends Object {
     left: Double,
     top: Double
   ): Unit = js.native
+  
   /**
     * @private
     * @param {String} method
@@ -294,11 +216,13 @@ class Text protected () extends Object {
     top: Double,
     lineIndex: Double
   ): Unit = js.native
+  
   /**
     * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _renderText(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * @private
     * @param {String} method Method name ("fillText" or "strokeText")
@@ -333,6 +257,7 @@ class Text protected () extends Object {
     top: Double,
     lineIndex: Double
   ): Unit = js.native
+  
   /**
     * Set the font parameter of the context with the object properties or with charStyle
     * @private
@@ -347,20 +272,47 @@ class Text protected () extends Object {
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: js.UndefOr[scala.Nothing], forMeasuring: Boolean): Unit = js.native
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily): Unit = js.native
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily, forMeasuring: Boolean): Unit = js.native
+  
   /**
     * @private
     */
   def _shouldClearDimensionCache(): Boolean = js.native
+  
   /**
     * Divides text into lines of text and lines of graphemes.
     * @private
     * @returns {Object} Lines and text in the text
     */
   def _splitText(): GraphemeLines = js.native
+  
+  var _text: js.Array[String] = js.native
+  
+  /**
+    * List of grapheme lines in text object
+    * @private
+    * @type Array<string>
+    */
+  var _textLines: js.Array[js.Array[String]] = js.native
+  
+  /**
+    * List of unwrapped grapheme lines in text object
+    * @private
+    * @type Array<string>
+    */
+  var _unwrappedTextLines: js.Array[js.Array[String]] = js.native
+  
   /**
     * Calculate text box height
     */
   def calcTextHeight(): Double = js.native
+  
+  /**
+    * additional space between characters
+    * expressed in thousands of em unit
+    * @type Number
+    */
+  var charSpacing: js.UndefOr[Double] = js.native
+  
   /**
     * Check if characters in a text have a value for a property
     * whose value matches the textbox's value for that property.  If so,
@@ -372,10 +324,44 @@ class Text protected () extends Object {
     * @param {string} property The property to compare between characters and text.
     */
   def cleanStyle(property: String): Unit = js.native
+  
+  var cursorOffsetCache: Left = js.native
+  
+  /**
+    * Baseline shift, stlyes only, keep at 0 for the main text object
+    * @type {Number}
+    */
+  var deltaY: js.UndefOr[Double] = js.native
+  
   /**
     * Enlarge space boxes and shift the others
     */
   def enlargeSpaces(): Unit = js.native
+  
+  /**
+    * Font family
+    * @type String
+    */
+  var fontFamily: js.UndefOr[String] = js.native
+  
+  /**
+    * Font size (in pixels)
+    * @type Number
+    */
+  var fontSize: js.UndefOr[Double] = js.native
+  
+  /**
+    * Font style . Possible values: "", "normal", "italic" or "oblique".
+    * @type String
+    */
+  var fontStyle: js.UndefOr[_empty | normal | italic | oblique] = js.native
+  
+  /**
+    * Font weight (e.g. bold, normal, 400, 600, 800)
+    * @type {(Number|String)}
+    */
+  var fontWeight: js.UndefOr[String | Double] = js.native
+  
   /**
     * Returns 2d representation (lineIndex and charIndex) of cursor (or selection start)
     * @param {Number} [selectionStart] Optional index. When not given, current selectionStart is used.
@@ -385,6 +371,7 @@ class Text protected () extends Object {
   def get2DCursorLocation(selectionStart: js.UndefOr[scala.Nothing], skipWrapping: Boolean): CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double): CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double, skipWrapping: Boolean): CharIndex = js.native
+  
   /**
     * return a new object that contains all the style property for a character
     * the object returned is newly created
@@ -393,6 +380,7 @@ class Text protected () extends Object {
     * @return {Object} style object
     */
   def getCompleteStyleDeclaration(lineIndex: Double, charIndex: Double): js.Any = js.native
+  
   /**
     * Computes height of character at given position
     * @param {Number} line the line number
@@ -400,12 +388,14 @@ class Text protected () extends Object {
     * @return {Number} fontSize of the character
     */
   def getHeightOfChar(line: Double, char: Double): Double = js.native
+  
   /**
     * Calculate height of line at 'lineIndex'
     * @param {Number} lineIndex index of line to calculate
     * @return {Number}
     */
   def getHeightOfLine(lineIndex: Double): Double = js.native
+  
   /**
     * Measure a single line given its index. Used to calculate the initial
     * text bounding box. The values are calculated and stored in __lineWidths cache.
@@ -414,12 +404,14 @@ class Text protected () extends Object {
     * @return {Number} Line width
     */
   def getLineWidth(lineIndex: Double): Double = js.native
+  
   /**
     * Return a context for measurement of text string.
     * if created it gets stored for reuse
     * @return {fabric.Text} thisArg
     */
   def getMeasuringContext(): CanvasRenderingContext2D = js.native
+  
   /**
     * Gets style of a current selection/cursor (at the start position)
     * if startIndex or endIndex are not provided, slectionStart or selectionEnd will be used.
@@ -436,6 +428,7 @@ class Text protected () extends Object {
   def getSelectionStyles(startIndex: Double, endIndex: js.UndefOr[scala.Nothing], complete: Boolean): js.Array[_] = js.native
   def getSelectionStyles(startIndex: Double, endIndex: Double): js.Array[_] = js.native
   def getSelectionStyles(startIndex: Double, endIndex: Double, complete: Boolean): js.Array[_] = js.native
+  
   /**
     * Retrieves the value of property at given character position
     * @param {Number} lineIndex the line number
@@ -444,24 +437,40 @@ class Text protected () extends Object {
     * @returns the value of 'property'
     */
   def getValueOfPropertyAt(lineIndex: Double, charIndex: Double, property: String): js.Any = js.native
+  
   /**
     * Initialize or update text dimensions.
     * Updates this.width and this.height with the proper values.
     * Does not return dimensions.
     */
   def initDimensions(): Unit = js.native
+  
   /**
     * Returns true if object has no styling or no styling in a line
     * @param {Number} lineIndex , lineIndex is on wrapped lines.
     * @return {Boolean}
     */
   def isEmptyStyles(lineIndex: Double): Boolean = js.native
+  
   /**
     * Detect if the text line is ended with an hard break
     * text and itext do not have wrapping, return false
     * @return {Boolean}
     */
   def isEndOfWrapping(lineIndex: Double): Boolean = js.native
+  
+  /**
+    * Line height
+    * @type Number
+    */
+  var lineHeight: js.UndefOr[Double] = js.native
+  
+  /**
+    * Text decoration linethrough.
+    * @type Boolean
+    */
+  var linethrough: js.UndefOr[Boolean] = js.native
+  
   /**
     * measure a text line measuring all characters.
     * @param {Number} lineIndex line number
@@ -469,6 +478,13 @@ class Text protected () extends Object {
     * @return {Object} object.numOfSpaces length of chars that match this._reSpacesAndTabs
     */
   def measureLine(lineIndex: Double): NumOfSpaces = js.native
+  
+  /**
+    * Text decoration overline.
+    * @type Boolean
+    */
+  var overline: js.UndefOr[Boolean] = js.native
+  
   /**
     * Remove a style property or properties from all individual character styles
     * in a text object.  Deletes the character style object if it contains no other style
@@ -477,6 +493,7 @@ class Text protected () extends Object {
     * @param {String} props The property to remove from character styles.
     */
   def removeStyle(property: String): Unit = js.native
+  
   /**
     * Sets style of a current selection, if no selection exist, do not set anything.
     * @param {Object} [styles] Styles object
@@ -489,6 +506,7 @@ class Text protected () extends Object {
   def setSelectionStyles(styles: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Text = js.native
   def setSelectionStyles(styles: js.Any, startIndex: Double): Text = js.native
   def setSelectionStyles(styles: js.Any, startIndex: Double, endIndex: Double): Text = js.native
+  
   /**
     * Turns the character into an 'inferior figure' (i.e. 'subscript')
     * @param {Number} start selection start
@@ -497,6 +515,7 @@ class Text protected () extends Object {
     * @chainable
     */
   def setSubscript(start: Double, end: Double): Text = js.native
+  
   /**
     * Turns the character into a 'superior figure' (i.e. 'superscript')
     * @param {Number} start selection start
@@ -505,6 +524,7 @@ class Text protected () extends Object {
     * @chainable
     */
   def setSuperscript(start: Double, end: Double): Text = js.native
+  
   /**
     * Returns true if object has a style property or has it ina specified line
     * @param {Number} lineIndex
@@ -512,13 +532,60 @@ class Text protected () extends Object {
     */
   def styleHas(property: String): Boolean = js.native
   def styleHas(property: String, lineIndex: Double): Boolean = js.native
+  
+  /**
+    * Object containing character styles - top-level properties -> line numbers,
+    * 2nd-level properties - charater numbers
+    * @type Object
+    */
+  var styles: js.UndefOr[js.Any] = js.native
+  
+  /**
+    * Subscript schema object (minimum overlap)
+    * @type {Object}
+    */
+  var subscript: js.UndefOr[Baseline] = js.native
+  
+  /**
+    * Superscript schema object (minimum overlap)
+    * @type {Object}
+    */
+  var superscript: js.UndefOr[Baseline] = js.native
+  
+  var text: js.UndefOr[String] = js.native
+  
+  /**
+    * Text alignment. Possible values: "left", "center", "right", "justify",
+    * "justify-left", "justify-center" or "justify-right".
+    * @type String
+    */
+  var textAlign: js.UndefOr[String] = js.native
+  
+  /**
+    * Background color of text lines
+    * @type String
+    */
+  var textBackgroundColor: js.UndefOr[String] = js.native
+  
+  /**
+    * List of lines in text object
+    * @type Array<string>
+    */
+  var textLines: js.Array[String] = js.native
+  
+  /**
+    * Text decoration underline.
+    * @type Boolean
+    */
+  var underline: js.UndefOr[Boolean] = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Text")
 @js.native
 object Text extends js.Object {
+  
   var DEFAULT_SVG_FONT_SIZE: Double = js.native
+  
   /**
     * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
     * @static
@@ -531,6 +598,7 @@ object Text extends js.Object {
   def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: TextOptions): Text = js.native
   def fromElement(element: SVGElement, callback: js.Function): Text = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): Text = js.native
+  
   /**
     * Returns fabric.Text instance from an object representation
     * @static
@@ -541,4 +609,3 @@ object Text extends js.Object {
   def fromObject(`object`: js.Any): Text = js.native
   def fromObject(`object`: js.Any, callback: js.Function): Text = js.native
 }
-

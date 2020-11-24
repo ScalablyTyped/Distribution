@@ -2,11 +2,12 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.lessThan")
 @js.native
 object lessThan extends js.Object {
+  
   /**
     * Creates a `<PropertyIsLessThan>` comparison operator.
     *
@@ -17,4 +18,3 @@ object lessThan extends js.Object {
     */
   def apply(propertyName: String, expression: Double): LessThan_ = js.native
 }
-

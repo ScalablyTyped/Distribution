@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is the implementation of the reflection API. You can obtain information about types, modify values of reflected types and call on
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 trait CoreReflection
   extends XIdlReflection
      with XComponent
-

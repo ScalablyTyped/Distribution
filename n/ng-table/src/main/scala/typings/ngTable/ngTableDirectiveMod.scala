@@ -9,11 +9,11 @@ import typings.angular.mod.IQService
 import typings.angular.mod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/browser/ngTable.directive", JSImport.Namespace)
 @js.native
 object ngTableDirectiveMod extends js.Object {
+  
   def ngTable($q: IQService, $parse: IParseService): IDirective[IScope, JQLite, IAttributes, IController] = js.native
 }
-

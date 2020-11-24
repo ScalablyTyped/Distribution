@@ -7,17 +7,20 @@ import typings.datatablesNetColreorder.datatablesNetColreorderStrings.toCurrent
 import typings.datatablesNetColreorder.datatablesNetColreorderStrings.toOriginal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Move extends js.Object {
+    
     /*
       * Programmatically reorder columns
       */
     def move(from: Double, to: Double, drop: Boolean, invalidate: Boolean): Api = js.native
+    
     /*
       * Get / set column order
       */
@@ -25,10 +28,12 @@ object anon extends js.Object {
     def order(newOrder: js.UndefOr[scala.Nothing], originalIndexes: Boolean): Api = js.native
     def order(newOrder: js.Array[Double]): Api = js.native
     def order(newOrder: js.Array[Double], originalIndexes: Boolean): Api = js.native
+    
     /*
       * Restore the loaded column order
       */
     def reset(): Api = js.native
+    
     /*
       * Convert one or more column indexes to and from current and original indexes
       */
@@ -60,6 +65,4 @@ object anon extends js.Object {
     @JSName("transpose")
     def transpose_toOriginal(idx: Double, direction: toOriginal): Api = js.native
   }
-  
 }
-

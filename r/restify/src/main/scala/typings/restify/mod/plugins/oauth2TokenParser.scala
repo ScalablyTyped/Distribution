@@ -3,11 +3,12 @@ package typings.restify.mod.plugins
 import typings.restify.mod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("restify", "plugins.oauth2TokenParser")
 @js.native
 object oauth2TokenParser extends js.Object {
+  
   /**
     * Parse the client's request for an OAUTH2 access tokensTable
     *
@@ -20,4 +21,3 @@ object oauth2TokenParser extends js.Object {
     */
   def apply(): RequestHandler = js.native
 }
-

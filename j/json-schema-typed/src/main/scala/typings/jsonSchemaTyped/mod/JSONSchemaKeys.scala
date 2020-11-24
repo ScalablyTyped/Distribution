@@ -49,7 +49,7 @@ import typings.jsonSchemaTyped.jsonSchemaTypedStrings.uniqueItems
 import typings.jsonSchemaTyped.jsonSchemaTypedStrings.writeOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json-schema-typed", "JSONSchemaKeys")
 @js.native
@@ -59,4 +59,3 @@ object JSONSchemaKeys
         $comment | $id | $ref | $schema | additionalItems | additionalProperties | allOf | anyOf | const | contains | contentEncoding | contentMediaType | default | definitions | dependencies | description | `else` | enum | examples | exclusiveMaximum | exclusiveMinimum | format | `if` | items | maximum | maxItems | maxLength | maxProperties | minimum | minLength | minItems | minProperties | multipleOf | not | oneOf | pattern | patternProperties | properties | propertyNames | readOnly | required | `then` | title | `type` | uniqueItems | writeOnly
       ]
     ]
-

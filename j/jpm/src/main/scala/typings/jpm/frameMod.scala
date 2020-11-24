@@ -3,7 +3,7 @@ package typings.jpm
 import typings.jpm.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create HTML iframes, using bundled HTML, CSS and JavaScript,
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/frame", JSImport.Namespace)
 @js.native
 object frameMod extends js.Object {
+  
   def Frame(options: Name): typings.jpm.FFAddonSDK.Frame = js.native
 }
-

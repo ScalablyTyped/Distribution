@@ -4,11 +4,11 @@ import typings.dndCore.interfacesMod.DragDropManager
 import typings.dndCore.interfacesMod.SentinelAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dnd-core/lib/actions/dragDrop/endDrag", JSImport.Namespace)
 @js.native
 object endDragMod extends js.Object {
+  
   def createEndDrag(manager: DragDropManager): js.Function0[SentinelAction] = js.native
 }
-

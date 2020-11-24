@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Input.Mouse")
 @js.native
 object Mouse extends js.Object {
+  
   /**
     * The Mouse Manager is a helper class that belongs to the Input Manager.
     * 
@@ -23,6 +24,4 @@ object Mouse extends js.Object {
       */
     def this(inputManager: typings.phaser.Phaser.Input.InputManager) = this()
   }
-  
 }
-

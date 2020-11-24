@@ -6,11 +6,12 @@ import typings.std.Date
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "encryptSessionKey")
 @js.native
 object encryptSessionKey extends js.Object {
+  
   def apply(
     data: Uint8Array,
     algorithm: String,
@@ -22,4 +23,3 @@ object encryptSessionKey extends js.Object {
     toUserIds: js.UndefOr[js.Array[_]]
   ): js.Promise[Message] = js.native
 }
-

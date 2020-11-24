@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DepthOfFieldEffectBlurLevel extends js.Object
-
 @JSGlobal("BABYLON.DepthOfFieldEffectBlurLevel")
 @js.native
 object DepthOfFieldEffectBlurLevel extends js.Object {
+  
   /**
     * Large blur
     */
@@ -27,6 +27,4 @@ object DepthOfFieldEffectBlurLevel extends js.Object {
     */
   @js.native
   sealed trait Medium extends DepthOfFieldEffectBlurLevel
-  
 }
-

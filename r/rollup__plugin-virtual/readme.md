@@ -10,9 +10,9 @@ Load virtual modules from memory
 | ------------------ | :-------------: |
 | Full name          | @rollup/plugin-virtual |
 | Keywords           | rollup, plugin, memory, module, modules, virtual |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 8563 |
+| # releases         | 6 |
+| # dependents       | 17 |
+| # downloads        | 88921 |
 | # stars            | 0 |
 
 ## Links

@@ -40,10 +40,11 @@ import typings.botvs.botvsStrings.sell_
 import typings.botvs.botvsStrings.usd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Exchange extends js.Object {
+  
   /**
     * 下买单, Price为买单价格,Amount为数量, 返回一个订单ID
     *
@@ -57,6 +58,7 @@ trait Exchange extends js.Object {
     * @return {string} - 订单ID
     */
   def Buy(Price: Double, Amount: Double, args: js.Any*): String = js.native
+  
   /**
     * 根据订单号取消一个订单, 返回true或者false
     *
@@ -64,42 +66,49 @@ trait Exchange extends js.Object {
     * @return {boolean}
     */
   def CancelOrder(orderId: String): Boolean = js.native
+  
   /**
     * 返回一个Account结构, 如exchange.GetAccount(), 将返回主交易所账户信息
     *
     * @return {botvs.Account}
     */
   def GetAccount(): Account = js.native
+  
   /**
     * 返回交易所操作的基础货币名称(string), BTC_CNY就返回CNY, ETH_BTC就返回BTC
     *
     * @return {string}
     */
   def GetBaseCurrency(): String = js.native
+  
   /**
     * 返回交易所操作的货币名称(string), 传统期货CTP返回的固定为STOCK
     *
     * @return {string}
     */
   def GetCurrency(): String = js.native
+  
   /**
     * 返回一个Depth结构
     *
     * @return {botvs.Depth}
     */
   def GetDepth(): Depth = js.native
+  
   /**
     * 返回一个Fee结构
     *
     * @return {botvs.Fee}
     */
   def GetFee(): Fee = js.native
+  
   /**
     * 返回交易所自定义的标签(string)
     *
     * @return {string}
     */
   def GetLabel(): String = js.native
+  
   /**
     * 返回一笔订单要求的最小金额(价格*数量)
     *
@@ -108,18 +117,21 @@ trait Exchange extends js.Object {
     * @return {number}
     */
   def GetMinPrice(): Double = js.native
+  
   /**
     * 返回币最小交易数量
     *
     * @return {number}
     */
   def GetMinStock(): Double = js.native
+  
   /**
     * 返回交易所名称(string)
     *
     * @return {string}
     */
   def GetName(): String = js.native
+  
   /**
     * 根据订单号获取订单详情, 返回一个Order结构
     *
@@ -127,12 +139,14 @@ trait Exchange extends js.Object {
     * @return {botvs.Order}
     */
   def GetOrder(orderId: String): Order = js.native
+  
   /**
     * 获取所有未完成的订单, 返回一个Order数组结构
     *
     * @return {botvs.Order[]}
     */
   def GetOrders(): js.Array[Order] = js.native
+  
   /**
     * 获取当前持仓信息
     *
@@ -141,6 +155,7 @@ trait Exchange extends js.Object {
     * @return {botvs.Position[]}
     */
   def GetPosition(): js.Array[Position] = js.native
+  
   /**
     * 返回交易所使用的流通货币与人民币的汇率, 返回1表示禁用汇率转换
     *
@@ -150,6 +165,7 @@ trait Exchange extends js.Object {
     * @return {number}
     */
   def GetRate(): Double = js.native
+  
   /**
     * 返回最后一次REST API请求返回的原始内容(字符串), 用户可以用来自己解析扩展信息
     *
@@ -165,6 +181,7 @@ trait Exchange extends js.Object {
     * @return {string}
     */
   def GetRawJSON(): String = js.native
+  
   /**
     * 返回一个K线历史, K线周期在创建机器人时指定, Record数组结构
     *
@@ -177,24 +194,28 @@ trait Exchange extends js.Object {
     */
   def GetRecords(): js.Array[Record] = js.native
   def GetRecords(Period: VPeriod): js.Array[Record] = js.native
+  
   /**
     * 返回一个Ticker结构
     *
     * @return {botvs.Ticker}
     */
   def GetTicker(): Ticker = js.native
+  
   /**
     * 返回一个Trade数组, 按时间从低到高的顺序, 只支持数字货币(BTC/LTC)
     *
     * @return {botvs.Trade[]}
     */
   def GetTrades(): js.Array[Trade] = js.native
+  
   /**
     * 返回交易所使用的美元的汇率, OKCoin期货返回官方提供的汇率, 该值不受SetRate影响
     *
     * @return {number}
     */
   def GetUSDCNY(): Double = js.native
+  
   /**
     * 多线程异步支持函数, 可以把所有支持的函数的操作变成异步并发的.(只支持数字货币交易平台)
     *
@@ -224,6 +245,7 @@ trait Exchange extends js.Object {
     Method: /* keyof botvs.botvs.<global>.botvs.Exchange */ GetName | GetLabel | GetUSDCNY | GetRate | SetRate | SetPrecision | GetCurrency | GetBaseCurrency | GetTicker | GetDepth | GetTrades | GetRecords | GetAccount | Buy | Sell | GetOrders | GetOrder | CancelOrder | Log | GetMinStock | GetMinPrice | GetFee | GetRawJSON | typings.botvs.botvsStrings.Go | IO | GetPosition | SetMarginLevel | SetDirection | SetContractType,
     Args: js.Any*
   ): AsyncJob[T] = js.native
+  
   def IO[T](Api: String): T = js.native
   def IO[T](Api: String, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
   def IO[T](Api: String, ApiName: String): T = js.native
@@ -311,6 +333,7 @@ trait Exchange extends js.Object {
   def IO_usd[T](Api: usd, ApiName: String): T = js.native
   @JSName("IO")
   def IO_usd[T](Api: usd, ApiName: String, Args: String): T = js.native
+  
   /**
     * 不下单, 只记录交易信息, logType可为LOG_TYPE_BUY/LOG_TYPE_SELL/LOG_TYPE_CANCEL
     *
@@ -320,6 +343,7 @@ trait Exchange extends js.Object {
     * @param {number} amount
     */
   def Log(logType: VLogType, orderId: String, price: Double, amount: Double): Unit = js.native
+  
   /**
     * 跟Buy函数一样的调用方法和场景 {@see Exchange#Buy}
     *
@@ -328,6 +352,7 @@ trait Exchange extends js.Object {
     * @return {string}
     */
   def Sell(Price: Double, Amount: Double): String = js.native
+  
   /**
     * 设置合约类型
     *
@@ -343,6 +368,7 @@ trait Exchange extends js.Object {
     * @param {string} ContractType
     */
   def SetContractType(ContractType: String): Unit = js.native
+  
   /**
     * 设置Buy或者Sell下单类型
     *
@@ -395,6 +421,7 @@ trait Exchange extends js.Object {
   def SetDirection_closeselltoday(Direction: closesell_today): Unit = js.native
   @JSName("SetDirection")
   def SetDirection_sell(Direction: sell_): Unit = js.native
+  
   /**
     * 设置杆杠大小
     *
@@ -405,6 +432,7 @@ trait Exchange extends js.Object {
     * @param {number} MarginLevel
     */
   def SetMarginLevel(MarginLevel: Double): Unit = js.native
+  
   /**
     * 设置价格与品种下单量的小数位精度, 设置后会自动截断
     *
@@ -414,6 +442,7 @@ trait Exchange extends js.Object {
     * @param {number} AmountPrecision
     */
   def SetPrecision(PricePrecision: Double, AmountPrecision: Double): Unit = js.native
+  
   /**
     * 设置交易所的流通货币的汇率, 返回设置前的汇率, 设置为1指禁用汇率转换
     *
@@ -426,4 +455,3 @@ trait Exchange extends js.Object {
   def SetRate(): Unit = js.native
   def SetRate(rate: Double): Unit = js.native
 }
-

@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.reportsMod.reports
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttribute
@@ -30,12 +31,13 @@ import typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents
 import typings.mendixmodelsdk.pagesMod.pages.VerticalFlow
 import typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent
 import typings.mendixmodelsdk.reportsMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/report-parameter relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/report-parameter relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDropDown")
 @js.native
@@ -45,28 +47,28 @@ class ReportDropDown protected () extends ReportParameter {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FReportDropDown: IModel = js.native
+  
   def attribute: IAttribute | Null = js.native
+  
   def attributeQualifiedName: String | Null = js.native
+  
   def attribute_=(newValue: IAttribute | Null): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDropDown")
 @js.native
 object ReportDropDown extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -76,6 +78,7 @@ object ReportDropDown extends js.Object {
     *  7.7.0 to 7.14.0
     */
   def createInBuildingBlockUnderWidget(container: BuildingBlock): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -85,6 +88,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'footerWidget' property
@@ -94,6 +98,7 @@ object ReportDropDown extends js.Object {
     *  6.7.0 to 7.14.0
     */
   def createInDataViewUnderFooterWidget(container: DataView): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'footerWidgets' property
@@ -103,6 +108,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderFooterWidgets(container: DataView): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -112,6 +118,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDataViewUnderWidget(container: DataView): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -121,6 +128,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderWidgets(container: DataView): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -130,6 +138,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDivContainerUnderWidget(container: DivContainer): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -139,6 +148,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInDivContainerUnderWidgets(container: DivContainer): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -148,6 +158,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInGroupBoxUnderWidget(container: GroupBox): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -157,6 +168,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInGroupBoxUnderWidgets(container: GroupBox): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'leftWidget' property
@@ -166,6 +178,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderLeftWidget(container: Header): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'leftWidgets' property
@@ -175,6 +188,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderLeftWidgets(container: Header): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'rightWidget' property
@@ -184,6 +198,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderRightWidget(container: Header): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'rightWidgets' property
@@ -193,6 +208,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderRightWidgets(container: Header): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -202,6 +218,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -211,6 +228,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -220,6 +238,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -229,6 +248,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -238,6 +258,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutUnderWidget(container: Layout): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -247,6 +268,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutUnderWidgets(container: Layout): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -256,6 +278,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -265,6 +288,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -274,6 +298,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewUnderWidget(container: ListView): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -283,6 +308,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewUnderWidgets(container: ListView): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -292,6 +318,7 @@ object ReportDropDown extends js.Object {
     *  7.1.0 to 7.14.0
     */
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -301,6 +328,7 @@ object ReportDropDown extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'sidebarWidgets' property
@@ -310,6 +338,7 @@ object ReportDropDown extends js.Object {
     *  8.5.0 and higher
     */
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -319,6 +348,7 @@ object ReportDropDown extends js.Object {
     *  8.0.0 and higher
     */
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'headerWidget' property
@@ -328,6 +358,7 @@ object ReportDropDown extends js.Object {
     *  7.22.0 to 7.23.0
     */
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -337,6 +368,7 @@ object ReportDropDown extends js.Object {
     *  7.21.0 to 7.23.0
     */
   def createInNativeLayoutUnderWidgets(container: NativeLayout): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -346,6 +378,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInNavigationListItemUnderWidget(container: NavigationListItem): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -355,6 +388,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'parameterWidget' property
@@ -364,6 +398,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderParameterWidget(container: ReportPane): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'reportWidget' property
@@ -373,6 +408,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderReportWidget(container: ReportPane): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -382,6 +418,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -391,6 +428,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -400,6 +438,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSnippetUnderWidget(container: Snippet): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -409,6 +448,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInSnippetUnderWidgets(container: Snippet): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'firstWidget' property
@@ -418,6 +458,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderFirstWidget(container: SplitPane): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'firstWidgets' property
@@ -427,6 +468,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'secondWidget' property
@@ -436,6 +478,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderSecondWidget(container: SplitPane): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'secondWidgets' property
@@ -445,6 +488,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -454,6 +498,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTabPageUnderWidget(container: TabPage): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -463,6 +508,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInTabPageUnderWidgets(container: TabPage): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -472,6 +518,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTableCellUnderWidget(container: TableCell): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -481,6 +528,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInTableCellUnderWidgets(container: TableCell): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widget' property
@@ -490,6 +538,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -499,6 +548,7 @@ object ReportDropDown extends js.Object {
     *  7.15.0 and higher
     */
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -508,6 +558,7 @@ object ReportDropDown extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -517,6 +568,7 @@ object ReportDropDown extends js.Object {
     *  8.0.0 and higher
     */
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReportDropDown = js.native
+  
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property
@@ -526,5 +578,8 @@ object ReportDropDown extends js.Object {
     *  8.2.0 and higher
     */
   def createInWidgetValueUnderWidgets(container: WidgetValue): ReportDropDown = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "By")
 @js.native
@@ -14,11 +14,11 @@ class By protected ()
     */
   def this(using: String, value: String) = this()
 }
-
 /* static members */
 @JSImport("selenium-webdriver", "By")
 @js.native
 object By extends js.Object {
+  
   /**
     * Locates elements that have a specific class name.
     *
@@ -28,6 +28,7 @@ object By extends js.Object {
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
   def className(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements using a CSS selector.
     *
@@ -36,6 +37,7 @@ object By extends js.Object {
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
   def css(selector: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates eleemnts by the ID attribute. This locator uses the CSS selector
     * `*[id='$ID']`, _not_ `document.getElementById`.
@@ -44,6 +46,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     */
   def id(id: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates an elements by evaluating a
     * {@linkplain WebDriver#executeScript JavaScript expression}.
@@ -58,6 +61,7 @@ object By extends js.Object {
   def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
   @JSName("js")
   def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+  
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} matches the given
@@ -67,6 +71,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     */
   def linkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements whose `name` attribute has the given value.
     *
@@ -74,6 +79,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     */
   def name(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} contains the given
@@ -83,6 +89,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     */
   def partialLinkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements with a given tag name.
     *
@@ -91,6 +98,7 @@ object By extends js.Object {
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
   def tagName(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements matching a XPath selector. Care should be taken when
     * using an XPath selector with a {@link WebElement} as WebDriver
@@ -104,4 +112,3 @@ object By extends js.Object {
     */
   def xpath(xpath: String): typings.seleniumWebdriver.byMod.By = js.native
 }
-

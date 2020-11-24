@@ -2,7 +2,7 @@ package typings.asynciterator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asynciterator", "MultiTransformIterator")
 @js.native
@@ -29,12 +29,13 @@ class MultiTransformIterator[S, D] protected () extends TransformIterator[S, D] 
     source: AsyncIterator[S],
     options: ((MultiTransformOptions[S, D]) with (js.Function1[/* item */ S, AsyncIterator[D]])) | (MultiTransformOptions[S, D])
   ) = this()
-  var _transformerQueue: js.Any = js.native
+  
   /**
     Creates a transformer for the given item.
     @param {object} item The last read item from the source
     @returns {module:asynciterator.AsyncIterator} An iterator that transforms the given item
     */
   /* protected */ def _createTransformer(item: S): AsyncIterator[D] = js.native
+  
+  var _transformerQueue: js.Any = js.native
 }
-

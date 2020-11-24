@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cson-parser" : "4.0.5"
+      "cson-parser" : "4.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "cson-parser" : "4.0.5"
+      "cson-parser" : "4.0.6"
     }
   ],
   "compile-devDependencies" : [

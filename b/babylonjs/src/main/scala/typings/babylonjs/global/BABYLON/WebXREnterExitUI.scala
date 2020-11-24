@@ -1,9 +1,8 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXREnterExitUI")
 @js.native
@@ -13,40 +12,12 @@ import scala.scalajs.js.annotation._
   * @param options (read-only) version of the options passed to this UI
   */
 class WebXREnterExitUI protected ()
-  extends typings.babylonjs.BABYLON.WebXREnterExitUI {
-  /* CompleteClass */
-  override var _activeButton: js.Any = js.native
-  /* CompleteClass */
-  override var _buttons: js.Any = js.native
-  /* CompleteClass */
-  override var _overlay: js.Any = js.native
-  /* CompleteClass */
-  override var _updateButtons: js.Any = js.native
-  /**
-    * Fired every time the active button is changed.
-    *
-    * When xr is entered via a button that launches xr that button will be the callback parameter
-    *
-    * When exiting xr the callback parameter will be null)
-    */
-  /* CompleteClass */
-  override var activeButtonChangedObservable: typings.babylonjs.BABYLON.Observable[Nullable[typings.babylonjs.BABYLON.WebXREnterExitUIButton]] = js.native
-  /** version of the options passed to this UI */
-  /* CompleteClass */
-  override var options: typings.babylonjs.BABYLON.WebXREnterExitUIOptions = js.native
-  /* CompleteClass */
-  override var scene: js.Any = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-}
-
+  extends typings.babylonjs.BABYLON.WebXREnterExitUI
 /* static members */
 @JSGlobal("BABYLON.WebXREnterExitUI")
 @js.native
 object WebXREnterExitUI extends js.Object {
+  
   /**
     * Creates UI to allow the user to enter/exit XR mode
     * @param scene the scene to add the ui to
@@ -60,4 +31,3 @@ object WebXREnterExitUI extends js.Object {
     options: typings.babylonjs.BABYLON.WebXREnterExitUIOptions
   ): js.Promise[typings.babylonjs.BABYLON.WebXREnterExitUI] = js.native
 }
-

@@ -12,27 +12,30 @@ import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import typings.uirouterCore.urlRuleMod.UrlRuleFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/url/urlRules", JSImport.Namespace)
 @js.native
 object urlRulesMod extends js.Object {
+  
   @js.native
   class UrlRules protected () extends Disposable {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
+    
     /** @internal */ var _id: js.Any = js.native
+    
     /** @internal */ var _otherwiseFn: js.Any = js.native
+    
     /** @internal */ var _rules: js.Any = js.native
+    
     /** @internal */ var _sortFn: js.Any = js.native
+    
     /** @internal */ var _sorted: js.Any = js.native
+    
     /** @internal */
     var ensureSorted: js.Any = js.native
-    var router: js.Any = js.native
-    /** @internal */
-    var stableSort: js.Any = js.native
-    /** used to create [[UrlRule]] objects for common cases */
-    var urlRuleFactory: UrlRuleFactory = js.native
+    
     /**
       * Defines the initial state, path, or behavior to use when the app starts.
       *
@@ -72,6 +75,7 @@ object urlRulesMod extends js.Object {
     def initial(handler: TargetStateDef): Unit = js.native
     def initial(handler: TargetState): Unit = js.native
     def initial(handler: UrlRuleHandlerFn): Unit = js.native
+    
     /**
       * Defines the state, url, or behavior to use when no other rule matches the URL.
       *
@@ -119,12 +123,16 @@ object urlRulesMod extends js.Object {
     def otherwise(handler: TargetStateDef): Unit = js.native
     def otherwise(handler: TargetState): Unit = js.native
     def otherwise(handler: UrlRuleHandlerFn): Unit = js.native
+    
     /**
       * Remove a rule previously registered
       *
       * @param rule the matcher rule that was previously registered using [[rule]]
       */
     def removeRule(rule: js.Any): Unit = js.native
+    
+    var router: js.Any = js.native
+    
     /**
       * Manually adds a URL Rule.
       *
@@ -138,12 +146,14 @@ object urlRulesMod extends js.Object {
       * @return a function that deregisters the rule
       */
     def rule(rule: UrlRule): js.Function = js.native
+    
     /**
       * Gets all registered rules
       *
       * @returns an array of all the registered rules
       */
     def rules(): js.Array[UrlRule] = js.native
+    
     /**
       * Defines URL Rule priorities
       *
@@ -188,6 +198,13 @@ object urlRulesMod extends js.Object {
       */
     def sort(): Unit = js.native
     def sort(compareFn: js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]): Unit = js.native
+    
+    /** @internal */
+    var stableSort: js.Any = js.native
+    
+    /** used to create [[UrlRule]] objects for common cases */
+    var urlRuleFactory: UrlRuleFactory = js.native
+    
     def when(matcher: String, handler: String): UrlRule = js.native
     def when(matcher: String, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: String, handler: UrlRuleHandlerFn): UrlRule = js.native
@@ -260,6 +277,4 @@ object urlRulesMod extends js.Object {
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
   }
-  
 }
-

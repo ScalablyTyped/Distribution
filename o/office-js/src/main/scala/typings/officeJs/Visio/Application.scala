@@ -11,7 +11,7 @@ import typings.officeJs.officeJsStrings.PageNavigationBar
 import typings.officeJs.officeJsStrings.StatusBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -21,23 +21,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Application extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Application: RequestContext = js.native
-  /**
-    *
-    * Show or hide the iFrame application borders.
-    *
-    * [Api set:  1.1]
-    */
-  var showBorders: Boolean = js.native
-  /**
-    *
-    * Show or hide the standard toolbars.
-    *
-    * [Api set:  1.1]
-    */
-  var showToolbars: Boolean = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -58,6 +46,7 @@ trait Application extends ClientObject {
   def load(option: js.Array[String]): Application = js.native
   def load(option: ApplicationLoadOptions): Application = js.native
   def load(option: Expand): Application = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Application): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -73,6 +62,15 @@ trait Application extends ClientObject {
     */
   def set(properties: ApplicationUpdateData): Unit = js.native
   def set(properties: ApplicationUpdateData, options: UpdateOptions): Unit = js.native
+  
+  /**
+    *
+    * Show or hide the iFrame application borders.
+    *
+    * [Api set:  1.1]
+    */
+  var showBorders: Boolean = js.native
+  
   /**
     *
     * Sets the visibility of a specific toolbar in the application.
@@ -98,10 +96,18 @@ trait Application extends ClientObject {
   def showToolbar_PageNavigationBar(id: PageNavigationBar, show: Boolean): Unit = js.native
   @JSName("showToolbar")
   def showToolbar_StatusBar(id: StatusBar, show: Boolean): Unit = js.native
+  
+  /**
+    *
+    * Show or hide the standard toolbars.
+    *
+    * [Api set:  1.1]
+    */
+  var showToolbars: Boolean = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ApplicationData = js.native
 }
-

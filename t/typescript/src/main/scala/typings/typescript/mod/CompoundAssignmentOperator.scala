@@ -2,7 +2,7 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.mod.SyntaxKind.PlusEqualsToken
@@ -17,6 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.typescript.mod.SyntaxKind.LessThanLessThanEqualsToken
   - typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken
   - typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanEqualsToken
+  - typings.typescript.mod.SyntaxKind.BarBarEqualsToken
+  - typings.typescript.mod.SyntaxKind.AmpersandAmpersandEqualsToken
+  - typings.typescript.mod.SyntaxKind.QuestionQuestionEqualsToken
 */
 trait CompoundAssignmentOperator extends AssignmentOperator
-

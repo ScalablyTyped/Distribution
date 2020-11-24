@@ -9,7 +9,7 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DuplexifyConstructor
@@ -26,6 +26,7 @@ trait DuplexifyConstructor
       /* options */ DuplexifyOptions, 
       Duplexify
     ] {
+  
   def apply(): Duplexify = js.native
   def apply(
     writable: js.UndefOr[scala.Nothing],
@@ -57,6 +58,7 @@ trait DuplexifyConstructor
   def apply(writable: Writable, readable: `false`, options: DuplexifyOptions): Duplexify = js.native
   def apply(writable: Writable, readable: Readable): Duplexify = js.native
   def apply(writable: Writable, readable: Readable, options: DuplexifyOptions): Duplexify = js.native
+  
   def obj(): Duplexify = js.native
   def obj(
     writable: js.UndefOr[scala.Nothing],
@@ -102,4 +104,3 @@ trait DuplexifyConstructor
   @JSName("obj")
   def obj_false(writable: Writable, readable: `false`, options: DuplexifyOptions): Duplexify = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.vortexWebClient.DDS
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EntityQos
@@ -13,6 +13,7 @@ trait EntityQos
   * @param policies - list of policies for the Qos entity
   */
 Instantiable1[/* policies (repeated) */ Policy, EntityQos] {
+  
   /**
     * Adds the given policy to this instance.
     * @param policy - the policy to add
@@ -20,4 +21,3 @@ Instantiable1[/* policies (repeated) */ Policy, EntityQos] {
     */
   def add(policy: Policy): EntityQos = js.native
 }
-

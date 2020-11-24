@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.removeAt")
 @js.native
 object removeAt extends js.Object {
+  
   /**
     * Remove and return a value at a specific index in an array.
     *
@@ -36,4 +37,3 @@ object removeAt extends js.Object {
     */
   def apply[T](array: js.Array[T], index: Double): js.UndefOr[T] = js.native
 }
-

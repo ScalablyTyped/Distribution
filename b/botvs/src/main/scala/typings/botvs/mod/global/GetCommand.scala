@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GetCommand")
 @js.native
 object GetCommand extends js.Object {
+  
   /**
     * 获取交互命令(utf-8)
     *
@@ -23,4 +24,3 @@ object GetCommand extends js.Object {
     */
   def apply(): String | Null = js.native
 }
-

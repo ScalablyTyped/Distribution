@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.std.AudioWorkletNodeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AudioWorkletNode")
 @js.native
@@ -14,7 +14,6 @@ class AudioWorkletNode protected ()
   def this(context: typings.std.BaseAudioContext, name: java.lang.String) = this()
   def this(context: typings.std.BaseAudioContext, name: java.lang.String, options: AudioWorkletNodeOptions) = this()
 }
-
 @JSGlobal("AudioWorkletNode")
 @js.native
 object AudioWorkletNode
@@ -29,4 +28,3 @@ object AudioWorkletNode
       /* options */ AudioWorkletNodeOptions, 
       typings.std.AudioWorkletNode
     ]
-

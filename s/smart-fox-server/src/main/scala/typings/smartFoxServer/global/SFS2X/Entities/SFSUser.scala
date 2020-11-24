@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Entities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Entities.SFSUser")
 @js.native
@@ -17,4 +17,3 @@ class SFSUser protected ()
   def this(id: Double, name: String) = this()
   def this(id: Double, name: String, isItMe: Boolean) = this()
 }
-

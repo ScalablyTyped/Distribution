@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "limiter"
-version := "1.1.5-5ebbbf"
+version := "1.1.5-99c919"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

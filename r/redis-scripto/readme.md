@@ -12,7 +12,7 @@ Redis Lua Script Manager for NodeJS
 | Keywords           | redis, script, lua, manager, eval |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 43938 |
+| # downloads        | 58803 |
 | # stars            | 5 |
 
 ## Links

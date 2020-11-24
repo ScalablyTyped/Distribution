@@ -3,11 +3,12 @@ package typings.commonErrors.mod
 import typings.commonErrors.anon.Args
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("common-errors", "helpers")
 @js.native
 object helpers extends js.Object {
+  
   /**
     * Simple interface for generating a new Error class type.
     * @param name The full name of the new Error class
@@ -26,4 +27,3 @@ object helpers extends js.Object {
   def generateClass(name: String): ErrorConstructor = js.native
   def generateClass(name: String, options: Args): ErrorConstructor = js.native
 }
-

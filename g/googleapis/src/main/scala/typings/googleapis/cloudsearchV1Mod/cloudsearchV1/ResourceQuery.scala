@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Query")
 @js.native
 class ResourceQuery protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var sources: ResourceQuerySources = js.native
+  
   /**
     * cloudsearch.query.search
     * @desc The Cloud Search Query API provides the search method, which
@@ -45,6 +46,9 @@ class ResourceQuery protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchResponse]
   ): Unit = js.native
+  
+  var sources: ResourceQuerySources = js.native
+  
   /**
     * cloudsearch.query.suggest
     * @desc Provides suggestions for autocompleting the query.
@@ -74,4 +78,3 @@ class ResourceQuery protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSuggestResponse]
   ): Unit = js.native
 }
-

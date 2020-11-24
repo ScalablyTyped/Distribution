@@ -2,10 +2,11 @@ package typings.promptSync.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Prompt extends js.Object {
+  
   def apply(ask: String): String = js.native
   def apply(ask: String, opts: Option): String = js.native
   def apply(ask: String, value: String): String = js.native
@@ -25,6 +26,6 @@ trait Prompt extends js.Object {
     */
   def apply(ask: String, value: String, opts: Option): String = js.native
   def apply(opts: Option): String = js.native
+  
   def hide(ask: String): String = js.native
 }
-

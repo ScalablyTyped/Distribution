@@ -5,11 +5,12 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.remoteMod.DriverService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/ie", "Driver")
 @js.native
 class Driver () extends WebDriver {
+  
   /**
     * This function is a no-op as file detectors are not supported by this
     * implementation.
@@ -17,11 +18,11 @@ class Driver () extends WebDriver {
     */
   def setFileDetector(): Unit = js.native
 }
-
 /* static members */
 @JSImport("selenium-webdriver/ie", "Driver")
 @js.native
 object Driver extends js.Object {
+  
   /**
     * Creates a new session for Microsoft's Internet Explorer.
     *
@@ -37,4 +38,3 @@ object Driver extends js.Object {
   def createSession(options: Capabilities): Driver = js.native
   def createSession(options: Capabilities, opt_service: DriverService): Driver = js.native
 }
-

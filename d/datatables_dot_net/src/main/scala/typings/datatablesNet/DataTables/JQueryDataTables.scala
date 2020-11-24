@@ -3,10 +3,11 @@ package typings.datatablesNet.DataTables
 import typings.datatablesNet.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryDataTables extends JQuery {
+  
   /**
     * Returns DataTables API instance
     * Usage:
@@ -14,4 +15,3 @@ trait JQueryDataTables extends JQuery {
     */
   def api(): Api = js.native
 }
-

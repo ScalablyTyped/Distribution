@@ -2,7 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.signatureSig
@@ -13,19 +13,23 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.signatureTimestamps
 */
 trait SignedExchangeErrorField extends js.Object
-
 object SignedExchangeErrorField {
+  
   @scala.inline
   def signatureCertSha256: typings.devtoolsProtocol.devtoolsProtocolStrings.signatureCertSha256 = "signatureCertSha256".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.signatureCertSha256]
+  
   @scala.inline
   def signatureCertUrl: typings.devtoolsProtocol.devtoolsProtocolStrings.signatureCertUrl = "signatureCertUrl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.signatureCertUrl]
+  
   @scala.inline
   def signatureIntegrity: typings.devtoolsProtocol.devtoolsProtocolStrings.signatureIntegrity = "signatureIntegrity".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.signatureIntegrity]
+  
   @scala.inline
   def signatureSig: typings.devtoolsProtocol.devtoolsProtocolStrings.signatureSig = "signatureSig".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.signatureSig]
+  
   @scala.inline
   def signatureTimestamps: typings.devtoolsProtocol.devtoolsProtocolStrings.signatureTimestamps = "signatureTimestamps".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.signatureTimestamps]
+  
   @scala.inline
   def signatureValidityUrl: typings.devtoolsProtocol.devtoolsProtocolStrings.signatureValidityUrl = "signatureValidityUrl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.signatureValidityUrl]
 }
-

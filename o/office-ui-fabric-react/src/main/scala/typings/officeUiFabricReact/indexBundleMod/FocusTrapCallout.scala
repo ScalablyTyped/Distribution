@@ -5,9 +5,8 @@ import typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutPro
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "FocusTrapCallout")
 @js.native
 object FocusTrapCallout extends TopLevel[FunctionComponent[IFocusTrapCalloutProps]]
-

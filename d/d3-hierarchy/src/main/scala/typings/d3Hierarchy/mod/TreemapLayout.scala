@@ -2,10 +2,11 @@ package typings.d3Hierarchy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TreemapLayout[Datum] extends js.Object {
+  
   /**
     * Lays out the specified root hierarchy.
     * You must call `root.sum` before passing the hierarchy to the treemap layout.
@@ -14,6 +15,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param root The specified root hierarchy.
     */
   def apply(root: HierarchyNode[Datum]): HierarchyRectangularNode[Datum] = js.native
+  
   /**
     * Returns the current inner padding function.
     */
@@ -30,6 +32,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified padding value.
     */
   def padding(padding: Double): this.type = js.native
+  
   /**
     * Returns the current bottom padding function, which defaults to the constant zero.
     */
@@ -49,6 +52,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified bottom padding value.
     */
   def paddingBottom(padding: Double): this.type = js.native
+  
   /**
     * Returns the current inner padding function, which defaults to the constant zero.
     */
@@ -68,6 +72,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified inner padding value.
     */
   def paddingInner(padding: Double): this.type = js.native
+  
   /**
     * Returns the current left padding function, which defaults to the constant zero.
     */
@@ -87,6 +92,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified left padding value.
     */
   def paddingLeft(padding: Double): this.type = js.native
+  
   /**
     * Returns the current top padding function.
     */
@@ -103,6 +109,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified padding outer value.
     */
   def paddingOuter(padding: Double): this.type = js.native
+  
   /**
     * Returns the current right padding function, which defaults to the constant zero.
     */
@@ -122,6 +129,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified right padding value.
     */
   def paddingRight(padding: Double): this.type = js.native
+  
   /**
     * Returns the current top padding function, which defaults to the constant zero.
     */
@@ -141,6 +149,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param padding The specified top padding value.
     */
   def paddingTop(padding: Double): this.type = js.native
+  
   /**
     * Returns the current rounding state, which defaults to false.
     */
@@ -151,6 +160,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param round The specified boolean flag.
     */
   def round(round: Boolean): this.type = js.native
+  
   /**
     * Returns the current size, which defaults to [1, 1].
     */
@@ -161,6 +171,7 @@ trait TreemapLayout[Datum] extends js.Object {
     * @param size The specified two-element size array.
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current tiling method, which defaults to `d3.treemapSquarify` with the golden ratio.
     */
@@ -188,4 +199,3 @@ trait TreemapLayout[Datum] extends js.Object {
     ]
   ): this.type = js.native
 }
-

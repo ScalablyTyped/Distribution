@@ -2,14 +2,14 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ReorderingRuleMatchType extends js.Object
-
 @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType")
 @js.native
 object ReorderingRuleMatchType extends js.Object {
+  
   @js.native
   sealed trait contentTypeIs extends ReorderingRuleMatchType
   
@@ -36,6 +36,4 @@ object ReorderingRuleMatchType extends js.Object {
   
   @js.native
   sealed trait urlStartsWith extends ReorderingRuleMatchType
-  
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdf-js
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Mirror of the RDFJS TS typings
@@ -12,7 +12,7 @@ Mirror of the RDFJS TS typings
 | Keywords           | RDF, RDFJS |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 333 |
+| # downloads        | 292 |
 | # stars            | 0 |
 
 ## Links

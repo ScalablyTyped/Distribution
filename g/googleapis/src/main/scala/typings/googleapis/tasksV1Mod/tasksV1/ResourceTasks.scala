@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tasks/v1", "tasks_v1.Resource$Tasks")
 @js.native
 class ResourceTasks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * tasks.tasks.clear
     * @desc Clears all completed tasks from the specified task list. The
@@ -39,6 +39,9 @@ class ResourceTasks protected () extends js.Object {
   ): Unit = js.native
   def clear(params: ParamsResourceTasksClear, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def clear(params: ParamsResourceTasksClear, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * tasks.tasks.delete
     * @desc Deletes the specified task from the task list.
@@ -64,6 +67,7 @@ class ResourceTasks protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTasksDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTasksDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * tasks.tasks.get
     * @desc Returns the specified task.
@@ -89,6 +93,7 @@ class ResourceTasks protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceTasksGet, options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceTasksGet, options: MethodOptions, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  
   /**
     * tasks.tasks.insert
     * @desc Creates a new task on the specified task list.
@@ -120,6 +125,7 @@ class ResourceTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
   /**
     * tasks.tasks.list
     * @desc Returns all tasks in the specified task list.
@@ -158,6 +164,7 @@ class ResourceTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTasks]
   ): Unit = js.native
+  
   /**
     * tasks.tasks.move
     * @desc Moves the specified task to another position in the task list. This
@@ -191,6 +198,7 @@ class ResourceTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
   /**
     * tasks.tasks.patch
     * @desc Updates the specified task. This method supports patch semantics.
@@ -221,6 +229,7 @@ class ResourceTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
   /**
     * tasks.tasks.update
     * @desc Updates the specified task.
@@ -252,4 +261,3 @@ class ResourceTasks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
 }
-

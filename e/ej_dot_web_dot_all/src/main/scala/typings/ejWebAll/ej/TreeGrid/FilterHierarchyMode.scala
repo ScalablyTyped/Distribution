@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.TreeGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FilterHierarchyMode extends js.Object
-
 @JSGlobal("ej.TreeGrid.FilterHierarchyMode")
 @js.native
 object FilterHierarchyMode extends js.Object {
+  
   ///shows the filtered record with both parent and child record
   @js.native
   sealed trait Both extends FilterHierarchyMode
@@ -25,6 +25,4 @@ object FilterHierarchyMode extends js.Object {
   ///Shows the filtered record with parent record
   @js.native
   sealed trait Parent extends FilterHierarchyMode
-  
 }
-

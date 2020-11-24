@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Optimization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The solution of a linear program. The example below solves the following linear program:
@@ -58,13 +58,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LinearOptimizationSolution extends js.Object {
+  
   def getObjectiveValue(): Double = js.native
+  
   def getStatus(): Status = js.native
+  
   def getVariableValue(variableName: String): Double = js.native
+  
   def isValid(): Boolean = js.native
 }
-
 object LinearOptimizationSolution {
+  
   @scala.inline
   def apply(
     getObjectiveValue: () => Double,
@@ -75,26 +79,32 @@ object LinearOptimizationSolution {
     val __obj = js.Dynamic.literal(getObjectiveValue = js.Any.fromFunction0(getObjectiveValue), getStatus = js.Any.fromFunction0(getStatus), getVariableValue = js.Any.fromFunction1(getVariableValue), isValid = js.Any.fromFunction0(isValid))
     __obj.asInstanceOf[LinearOptimizationSolution]
   }
+  
   @scala.inline
   implicit class LinearOptimizationSolutionOps[Self <: LinearOptimizationSolution] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetObjectiveValue(value: () => Double): Self = this.set("getObjectiveValue", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetStatus(value: () => Status): Self = this.set("getStatus", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetVariableValue(value: String => Double): Self = this.set("getVariableValue", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
   }
-  
 }
-

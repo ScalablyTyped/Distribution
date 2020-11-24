@@ -2,11 +2,12 @@ package typings.yeomanAssert.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yeoman-assert", "textEqual")
 @js.native
 object textEqual extends js.Object {
+  
   /**
     * Assert that two strings are equal after standardization of newlines
     * @param value a string
@@ -16,4 +17,3 @@ object textEqual extends js.Object {
     */
   def apply(value: String, expected: String): Unit = js.native
 }
-

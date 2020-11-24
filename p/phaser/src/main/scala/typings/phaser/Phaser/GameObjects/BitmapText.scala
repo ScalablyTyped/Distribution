@@ -16,7 +16,7 @@ import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapTextSize
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BitmapText objects work by taking a texture file and an XML or JSON file that describes the font structure.
@@ -53,6 +53,7 @@ trait BitmapText
      with Tint
      with Transform
      with Visible {
+  
   /**
     * Controls the alignment of each line of text in this BitmapText object.
     * 
@@ -68,59 +69,25 @@ trait BitmapText
     * The alignment position is based on the longest line of text.
     */
   var align: integer = js.native
+  
   /**
     * The key of the Bitmap Font used by this Bitmap Text.
     * To change the font after creation please use `setFont`.
     */
   val font: String = js.native
+  
   /**
     * The data of the Bitmap Font used by this Bitmap Text.
     */
   val fontData: BitmapFontData = js.native
+  
   /**
     * The font size of this Bitmap Text.
     * 
     * You can also use the method `setFontSize` if you want a chainable way to change the font size.
     */
   var fontSize: Double = js.native
-  /**
-    * The height of this bitmap text.
-    */
-  val height: Double = js.native
-  /**
-    * Adds / Removes spacing between characters.
-    * 
-    * Can be a negative or positive number.
-    * 
-    * You can also use the method `setLetterSpacing` if you want a chainable way to change the letter spacing.
-    */
-  var letterSpacing: Double = js.native
-  /**
-    * The maximum display width of this BitmapText in pixels.
-    * 
-    * If BitmapText.text is longer than maxWidth then the lines will be automatically wrapped
-    * based on the last whitespace character found in the line.
-    * 
-    * If no whitespace was found then no wrapping will take place and consequently the maxWidth value will not be honored.
-    * 
-    * Disable maxWidth by setting the value to 0.
-    */
-  var maxWidth: Double = js.native
-  /**
-    * The text that this Bitmap Text object displays.
-    * 
-    * You can also use the method `setText` if you want a chainable way to change the text content.
-    */
-  var text: String = js.native
-  /**
-    * The width of this Bitmap Text.
-    */
-  val width: Double = js.native
-  /**
-    * The character code used to detect for word wrapping.
-    * Defaults to 32 (a space character).
-    */
-  var wordWrapCharCode: Double = js.native
+  
   /**
     * Calculate the bounds of this Bitmap Text.
     * 
@@ -136,11 +103,39 @@ trait BitmapText
     */
   def getTextBounds(): BitmapTextSize = js.native
   def getTextBounds(round: Boolean): BitmapTextSize = js.native
+  
+  /**
+    * The height of this bitmap text.
+    */
+  val height: Double = js.native
+  
+  /**
+    * Adds / Removes spacing between characters.
+    * 
+    * Can be a negative or positive number.
+    * 
+    * You can also use the method `setLetterSpacing` if you want a chainable way to change the letter spacing.
+    */
+  var letterSpacing: Double = js.native
+  
+  /**
+    * The maximum display width of this BitmapText in pixels.
+    * 
+    * If BitmapText.text is longer than maxWidth then the lines will be automatically wrapped
+    * based on the last whitespace character found in the line.
+    * 
+    * If no whitespace was found then no wrapping will take place and consequently the maxWidth value will not be honored.
+    * 
+    * Disable maxWidth by setting the value to 0.
+    */
+  var maxWidth: Double = js.native
+  
   /**
     * Set the lines of text in this BitmapText to be center-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.
     */
   def setCenterAlign(): this.type = js.native
+  
   /**
     * Changes the font this BitmapText is using to render.
     * 
@@ -154,16 +149,19 @@ trait BitmapText
   def setFont(font: String, size: js.UndefOr[scala.Nothing], align: integer): this.type = js.native
   def setFont(font: String, size: Double): this.type = js.native
   def setFont(font: String, size: Double, align: integer): this.type = js.native
+  
   /**
     * Set the font size of this Bitmap Text.
     * @param size The font size to set.
     */
   def setFontSize(size: Double): this.type = js.native
+  
   /**
     * Set the lines of text in this BitmapText to be left-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.
     */
   def setLeftAlign(): this.type = js.native
+  
   /**
     * Sets the letter spacing between each character of this Bitmap Text.
     * Can be a positive value to increase the space, or negative to reduce it.
@@ -172,6 +170,7 @@ trait BitmapText
     */
   def setLetterSpacing(): this.type = js.native
   def setLetterSpacing(spacing: Double): this.type = js.native
+  
   /**
     * Sets the maximum display width of this BitmapText in pixels.
     * 
@@ -188,11 +187,13 @@ trait BitmapText
     */
   def setMaxWidth(value: Double): this.type = js.native
   def setMaxWidth(value: Double, wordWrapCharCode: Double): this.type = js.native
+  
   /**
     * Set the lines of text in this BitmapText to be right-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.
     */
   def setRightAlign(): this.type = js.native
+  
   /**
     * Set the textual content of this BitmapText.
     * 
@@ -201,5 +202,22 @@ trait BitmapText
     */
   def setText(value: String): this.type = js.native
   def setText(value: js.Array[String]): this.type = js.native
+  
+  /**
+    * The text that this Bitmap Text object displays.
+    * 
+    * You can also use the method `setText` if you want a chainable way to change the text content.
+    */
+  var text: String = js.native
+  
+  /**
+    * The width of this Bitmap Text.
+    */
+  val width: Double = js.native
+  
+  /**
+    * The character code used to detect for word wrapping.
+    * Defaults to 32 (a space character).
+    */
+  var wordWrapCharCode: Double = js.native
 }
-

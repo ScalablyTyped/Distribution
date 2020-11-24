@@ -6,15 +6,19 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebaserules/v1", "firebaserules_v1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var releases: ResourceProjectsReleases = js.native
+  
   var rulesets: ResourceProjectsRulesets = js.native
+  
   /**
     * firebaserules.projects.test
     * @desc Test `Source` for syntactic and semantic correctness. Issues
@@ -57,4 +61,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestRulesetResponse]
   ): Unit = js.native
 }
-

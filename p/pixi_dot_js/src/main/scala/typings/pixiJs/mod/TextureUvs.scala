@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stores a texture's frame in UV coordinates, in
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextureUvs ()
   extends typings.pixiJs.PIXI.TextureUvs
-

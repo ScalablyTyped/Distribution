@@ -10,9 +10,9 @@ HTTP methods that node supports
 | ------------------ | :-------------: |
 | Full name          | methods |
 | Keywords           | http, methods |
-| # releases         | 1 |
-| # dependents       | 640 |
-| # downloads        | 429154762 |
+| # releases         | 0 |
+| # dependents       | 668 |
+| # downloads        | 583178508 |
 | # stars            | 16 |
 
 ## Links

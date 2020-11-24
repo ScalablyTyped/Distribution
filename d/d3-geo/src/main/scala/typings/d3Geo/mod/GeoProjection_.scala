@@ -3,19 +3,11 @@ package typings.d3Geo.mod
 import typings.geojson.mod.GeoJsonProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoProjection_ extends GeoStreamWrapper {
-  /**
-    * Returns a new array [longitude, latitude] in degrees representing the unprojected point of the given projected point.
-    * May return null if the specified point has no defined projected position, such as when the point is outside the clipping bounds of the projection.
-    *
-    * @param point The projected point, specified as a two-element array [x, y] (typically in pixels).
-    */
-  var invert: js.UndefOr[
-    js.Function1[/* point */ js.Tuple2[Double, Double], (js.Tuple2[Double, Double]) | Null]
-  ] = js.native
+  
   /**
     * Returns a new array [x, y] (typically in pixels) representing the projected point of the given point.
     * The point must be specified as a two-element array [longitude, latitude] in degrees.
@@ -24,6 +16,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param point A point specified as a two-dimensional array [longitude, latitude] in degrees.
     */
   def apply(point: js.Tuple2[Double, Double]): (js.Tuple2[Double, Double]) | Null = js.native
+  
   /**
     * Returns the projection’s current angle, which defaults to 0°.
     */
@@ -33,6 +26,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param angle The new rotation angle of the projection.
     */
   def angle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current center of the projection, which defaults to ⟨0°,0°⟩.
     */
@@ -45,6 +39,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param point A point specified as a two-dimensional array [longitude, latitude] in degrees.
     */
   def center(point: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current clip angle which defaults to null.
     *
@@ -67,6 +62,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param angle Set to null to switch to antimeridian cutting.
     */
   def clipAngle(angle: Null): this.type = js.native
+  
   /**
     * Returns the current viewport clip extent which defaults to null.
     */
@@ -93,6 +89,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param extent Set to null to disable viewport clipping.
     */
   def clipExtent(extent: Null): this.type = js.native
+  
   /**
     * Sets the projection’s scale and translate to fit the specified geographic feature in the center of the given extent.
     * Returns the projection.
@@ -145,6 +142,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
     `object`: GeoGeometryObjects
   ): this.type = js.native
+  
   /**
     * A convenience method for projection.fitSize where the width is automatically chosen from the aspect ratio of object and the given constraint on height.
     *
@@ -176,6 +174,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
     */
   def fitHeight(height: Double, `object`: GeoGeometryObjects): this.type = js.native
+  
   /**
     * Sets the projection’s scale and translate to fit the specified geographic feature in the center of an extent with the given size and top-left corner of [0, 0].
     * Returns the projection.
@@ -222,6 +221,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
     */
   def fitSize(size: js.Tuple2[Double, Double], `object`: GeoGeometryObjects): this.type = js.native
+  
   /**
     * A convenience method for projection.fitSize where the height is automatically chosen from the aspect ratio of object and the given constraint on width.
     *
@@ -253,6 +253,17 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
     */
   def fitWidth(width: Double, `object`: GeoGeometryObjects): this.type = js.native
+  
+  /**
+    * Returns a new array [longitude, latitude] in degrees representing the unprojected point of the given projected point.
+    * May return null if the specified point has no defined projected position, such as when the point is outside the clipping bounds of the projection.
+    *
+    * @param point The projected point, specified as a two-element array [x, y] (typically in pixels).
+    */
+  var invert: js.UndefOr[
+    js.Function1[/* point */ js.Tuple2[Double, Double], (js.Tuple2[Double, Double]) | Null]
+  ] = js.native
+  
   /**
     * Returns the current cartesian clipping function.
     * Post-clipping occurs on the plane, when a projection is bounded to a certain extent such as a rectangle.
@@ -265,6 +276,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * Post-clipping operates on planar coordinates, in pixels.
     */
   def postclip(postclip: js.Function1[/* stream */ GeoStream_, GeoStream_]): this.type = js.native
+  
   /**
     * Returns the projection’s current resampling precision which defaults to square root of 0.5.
     * This value corresponds to the Douglas–Peucker distance.
@@ -277,6 +289,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param precision A numeric value in pixels to use as the threshold for the projection’s adaptive resampling.
     */
   def precision(precision: Double): this.type = js.native
+  
   /**
     * Returns the current spherical clipping function.
     * Pre-clipping occurs in geographic coordinates. Cutting along the antimeridian line,
@@ -291,6 +304,27 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * Pre-clipping operates on spherical coordinates, in radians.
     */
   def preclip(preclip: js.Function1[/* stream */ GeoStream_, GeoStream_]): this.type = js.native
+  
+  /**
+    * Returns true if x-reflection is enabled, which defaults to false.
+    */
+  def reflectX(): Boolean = js.native
+  /**
+    * Sets whether or not the x-dimension is reflected (negated) in the output.
+    * @param reflect Whether or not the x-dimension is reflected (negated) in the output.
+    */
+  def reflectX(reflect: Boolean): this.type = js.native
+  
+  /**
+    * Returns true if y-reflection is enabled, which defaults to false.
+    */
+  def reflectY(): Boolean = js.native
+  /**
+    * Sets whether or not the y-dimension is reflected (negated) in the output.
+    * @param reflect Whether or not the y-dimension is reflected (negated) in the output.
+    */
+  def reflectY(reflect: Boolean): this.type = js.native
+  
   /**
     * Returns the current rotation [lambda, phi, gamma] specifying the rotation angles in degrees about each spherical axis.
     * (These correspond to yaw, pitch and roll.) which defaults [0, 0, 0].
@@ -304,6 +338,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     */
   def rotate(angles: js.Tuple2[Double, Double]): this.type = js.native
   def rotate(angles: js.Tuple3[Double, Double, Double]): this.type = js.native
+  
   /**
     * Returns the current scale factor; the default scale is projection-specific.
     *
@@ -317,6 +352,7 @@ trait GeoProjection_ extends GeoStreamWrapper {
     * @param scale Scale factor to be used for the projection; the default scale is projection-specific.
     */
   def scale(scale: Double): this.type = js.native
+  
   /**
     * Returns the current translation offset which defaults to [480, 250] and places ⟨0°,0°⟩ at the center of a 960×500 area.
     * The translation offset determines the pixel coordinates of the projection’s center.
@@ -330,4 +366,3 @@ trait GeoProjection_ extends GeoStreamWrapper {
     */
   def translate(point: js.Tuple2[Double, Double]): this.type = js.native
 }
-

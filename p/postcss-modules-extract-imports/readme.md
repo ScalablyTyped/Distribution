@@ -10,9 +10,9 @@ A CSS Modules transform to extract local aliases for inline imports
 | ------------------ | :-------------: |
 | Full name          | postcss-modules-extract-imports |
 | Keywords           | css-modules, postcss, plugin |
-| # releases         | 3 |
-| # dependents       | 94 |
-| # downloads        | 264293193 |
+| # releases         | 5 |
+| # dependents       | 116 |
+| # downloads        | 406615532 |
 | # stars            | 0 |
 
 ## Links

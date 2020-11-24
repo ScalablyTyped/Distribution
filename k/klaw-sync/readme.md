@@ -10,9 +10,9 @@ Recursive, synchronous, and fast file system walker
 | ------------------ | :-------------: |
 | Full name          | klaw-sync |
 | Keywords           | fs, walk, walker, walk-sync, klaw, readdir-sync |
-| # releases         | 4 |
-| # dependents       | 263 |
-| # downloads        | 10221670 |
+| # releases         | 0 |
+| # dependents       | 302 |
+| # downloads        | 19847567 |
 | # stars            | 2 |
 
 ## Links

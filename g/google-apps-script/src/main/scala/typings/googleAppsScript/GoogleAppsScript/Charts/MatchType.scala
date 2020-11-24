@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MatchType extends js.Object
-
 /**
   * An enumeration of how a string value should be matched. Matching a string is a boolean operation.
   * Given a string, a match term (string), and a match type, the operation outputs true in
@@ -25,6 +24,7 @@ sealed trait MatchType extends js.Object
 @JSGlobal("GoogleAppsScript.Charts.MatchType")
 @js.native
 object MatchType extends js.Object {
+  
   @js.native
   sealed trait ANY extends MatchType
   
@@ -33,6 +33,4 @@ object MatchType extends js.Object {
   
   @js.native
   sealed trait PREFIX extends MatchType
-  
 }
-

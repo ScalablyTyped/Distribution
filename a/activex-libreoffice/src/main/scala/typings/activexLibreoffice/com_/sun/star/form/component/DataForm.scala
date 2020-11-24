@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.sdb.RowSet
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies a form which is connected to a database and displays the results of SQL queries. It provides the possibility of adding new data
@@ -24,6 +24,7 @@ trait DataForm
      with XReset
      with XLoadable
      with XDatabaseParameterBroadcaster {
+  
   /**
     * determines if deletions of records of the form are allowed.
     *
@@ -31,6 +32,7 @@ trait DataForm
     * done via the API, even if the property is set to `FALSE` , but the user interface should respect the property value.
     */
   var AllowDeletes: Boolean = js.native
+  
   /**
     * determines if insertions into the form's row set are allowed.
     *
@@ -38,6 +40,7 @@ trait DataForm
     * done via the API, even if the property is set to `FALSE` , but the user interface should respect the property value.
     */
   var AllowInserts: Boolean = js.native
+  
   /**
     * determines if modifications of the current record of the form are allowed.
     *
@@ -45,8 +48,10 @@ trait DataForm
     * done via the API, even if the property is set to `FALSE` , but the user interface should respect the property value.
     */
   var AllowUpdates: Boolean = js.native
+  
   /** returns the kind of tabulator controlling. */
   var Cycle: TabulatorCycle = js.native
+  
   /**
     * is used for subforms and contains the names of the columns of the subform which are related to the master fields of the parent form.
     *
@@ -62,6 +67,7 @@ trait DataForm
     * If the form is no sub form (e.g. its parent is not a form itself), this property is not evaluated.
     */
   var DetailFields: SafeArray[String] = js.native
+  
   /**
     * is used for subforms and contains the names of columns of the parent form.
     *
@@ -71,7 +77,7 @@ trait DataForm
     * If the form is no sub form (e.g. its parent is not a form itself), this property is not evaluated.
     */
   var MasterFields: SafeArray[String] = js.native
+  
   /** determines how an navigation bar for this form should act. */
   var NavigationBarMode: typings.activexLibreoffice.com_.sun.star.form.NavigationBarMode = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.officeJsPreview.Office.Ribbon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the ribbon associated with the Office application.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office.ribbon")
 @js.native
 object ribbon extends TopLevel[Ribbon]
-

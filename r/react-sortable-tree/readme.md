@@ -10,9 +10,9 @@ Drag-and-drop sortable component for nested data and hierarchies
 | ------------------ | :-------------: |
 | Full name          | react-sortable-tree |
 | Keywords           | react, react-component |
-| # releases         | 20 |
-| # dependents       | 50 |
-| # downloads        | 1099557 |
+| # releases         | 9 |
+| # dependents       | 71 |
+| # downloads        | 1709433 |
 | # stars            | 5 |
 
 ## Links

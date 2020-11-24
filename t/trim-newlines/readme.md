@@ -11,8 +11,8 @@ Trim newlines from the start and/or end of a string
 | Full name          | trim-newlines |
 | Keywords           | trim, newline, newlines, linebreak, lf, crlf, left, right, start, end, string, remove, delete, strip |
 | # releases         | 2 |
-| # dependents       | 46 |
-| # downloads        | 357667302 |
+| # dependents       | 74 |
+| # downloads        | 483067660 |
 | # stars            | 0 |
 
 ## Links

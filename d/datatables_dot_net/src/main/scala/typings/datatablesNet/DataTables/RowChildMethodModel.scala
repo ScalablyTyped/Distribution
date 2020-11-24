@@ -4,10 +4,11 @@ import typings.datatablesNet.JQuery
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowChildMethodModel extends js.Object {
+  
   /**
     * Get the child row(s) that have been set for a parent row
     */
@@ -32,21 +33,24 @@ trait RowChildMethodModel extends js.Object {
     * @param showRemove This parameter can be given as true or false
     */
   def apply(showRemove: Boolean): RowChildMethods = js.native
+  
   /**
     * Hide the child row(s) of a parent row
     */
   def hide(): Api = js.native
+  
   /**
     * Check if the child rows of a parent row are visible
     */
   def isShown(): Api = js.native
+  
   /**
     * Remove child row(s) from display and release any allocated memory
     */
   def remove(): Api = js.native
+  
   /**
     * Show the child row(s) of a parent row
     */
   def show(): Api = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fast-csv/format" : "4.3.1"
+      "@fast-csv/format" : "4.3.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@fast-csv/format" : "4.3.1"
+      "@fast-csv/format" : "4.3.5"
     }
   ],
   "compile-devDependencies" : [

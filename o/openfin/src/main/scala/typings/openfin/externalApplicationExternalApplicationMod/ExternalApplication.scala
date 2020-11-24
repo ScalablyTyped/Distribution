@@ -5,12 +5,13 @@ import typings.openfin.externalApplicationMod.ExternalApplicationEvents
 import typings.openfin.identityMod.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/external-application/external-application", "ExternalApplication")
 @js.native
 class ExternalApplication protected () extends EmitterBase[ExternalApplicationEvents] {
   def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
+  
   /**
     * Adds a listener to the end of the listeners array for the specified event.
     * @param { string | symbol } eventType  - The type of the event.
@@ -95,4 +96,3 @@ class ExternalApplication protected () extends EmitterBase[ExternalApplicationEv
     */
   def getInfo(): js.Promise[ExternalApplicationInfo] = js.native
 }
-

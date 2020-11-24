@@ -6,7 +6,7 @@ import typings.yandexMaps.mod.IOptionManager
 import typings.yandexMaps.mod.IRoutePanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
@@ -14,8 +14,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouteButton () extends IChild[IControlParent] {
   def this(parameters: IRouteButtonParameters) = this()
+  
   var options: IOptionManager = js.native
+  
   var routePanel: IRoutePanel = js.native
+  
   def setParent(parent: IControlParent): this.type = js.native
 }
-

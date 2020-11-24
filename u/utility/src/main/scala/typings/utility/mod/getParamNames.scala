@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "getParamNames")
 @js.native
 object getParamNames extends js.Object {
+  
   /**
     * Get a function parameter's names.
     *
@@ -17,4 +18,3 @@ object getParamNames extends js.Object {
   def apply(func: js.Function1[/* repeated */ js.Any, _]): js.Array[String] = js.native
   def apply(func: js.Function1[/* repeated */ js.Any, _], cache: Boolean): js.Array[String] = js.native
 }
-

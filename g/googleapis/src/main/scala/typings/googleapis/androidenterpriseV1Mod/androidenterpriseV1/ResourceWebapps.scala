@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Webapps")
 @js.native
 class ResourceWebapps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.webapps.delete
     * @desc Deletes an existing web app.
@@ -38,6 +40,7 @@ class ResourceWebapps protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceWebappsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceWebappsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * androidenterprise.webapps.get
     * @desc Gets an existing web app.
@@ -67,6 +70,7 @@ class ResourceWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
+  
   /**
     * androidenterprise.webapps.insert
     * @desc Creates a new web app for the enterprise.
@@ -96,6 +100,7 @@ class ResourceWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
+  
   /**
     * androidenterprise.webapps.list
     * @desc Retrieves the details of all web apps for a given enterprise.
@@ -124,6 +129,7 @@ class ResourceWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebAppsListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.webapps.patch
     * @desc Updates an existing web app. This method supports patch semantics.
@@ -154,6 +160,7 @@ class ResourceWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
+  
   /**
     * androidenterprise.webapps.update
     * @desc Updates an existing web app.
@@ -185,4 +192,3 @@ class ResourceWebapps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
 }
-

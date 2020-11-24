@@ -11,13 +11,13 @@ import typings.consul.mod.Agent.Service
 import typings.consul.mod.Agent.ServicesOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Agent_ extends js.Object {
+  
   var check: Check = js.native
-  var consul: Consul = js.native
-  var service: Service = js.native
+  
   /**
     * Returns the checks the local agent is managing
     */
@@ -31,6 +31,9 @@ trait Agent_ extends js.Object {
     * Returns the checks the local agent is managing
     */
   def checks[TData](opts: ChecksOptions, callback: Callback[TData]): Unit = js.native
+  
+  var consul: Consul = js.native
+  
   /**
     * Force remove node
     */
@@ -47,6 +50,7 @@ trait Agent_ extends js.Object {
     * Force remove node
     */
   def forceLeave[TData](opts: ForceLeaveOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Trigger local agent to join a node
     */
@@ -63,6 +67,7 @@ trait Agent_ extends js.Object {
     * Trigger local agent to join a node
     */
   def join[TData](opts: JoinOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Manages node maintenance mode
     */
@@ -79,6 +84,7 @@ trait Agent_ extends js.Object {
     * Manages node maintenance mode
     */
   def maintenance[TData](opts: MaintenanceOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the members as seen by the local consul agent
     */
@@ -92,6 +98,7 @@ trait Agent_ extends js.Object {
     * Returns the members as seen by the local consul agent
     */
   def members[TData](opts: MembersOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the local node configuration
     */
@@ -105,6 +112,9 @@ trait Agent_ extends js.Object {
     * Returns the local node configuration
     */
   def self[TData](opts: SelfOptions, callback: Callback[TData]): Unit = js.native
+  
+  var service: Service = js.native
+  
   /**
     * Returns the services local agent is managing
     */
@@ -119,4 +129,3 @@ trait Agent_ extends js.Object {
     */
   def services[TData](opts: ServicesOptions, callback: Callback[TData]): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Chai assertion that provides Jest's snapshot testing
 | Full name          | chai-jest-snapshot |
 | Keywords           | mocha, chai, assertion, helper, jest, snapshot, react, test, spec, testing |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 927343 |
+| # dependents       | 9 |
+| # downloads        | 1002311 |
 | # stars            | 3 |
 
 ## Links

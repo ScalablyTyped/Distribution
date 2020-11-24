@@ -9,10 +9,10 @@ Chart.js plugin to draw and sync vertical crosshair lines
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chartjs-plugin-crosshair |
-| Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 77636 |
+| Keywords           | chart.js, plugin, crosshair |
+| # releases         | 11 |
+| # dependents       | 7 |
+| # downloads        | 145375 |
 | # stars            | 0 |
 
 ## Links

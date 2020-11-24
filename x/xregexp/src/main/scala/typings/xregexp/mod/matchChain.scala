@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "matchChain")
 @js.native
 object matchChain extends js.Object {
+  
   /**
     * Retrieves the matches from searching a string using a chain of regexes that successively search
     * within previous matches. The provided `chain` array can contain regexes and or objects with
@@ -36,4 +37,3 @@ object matchChain extends js.Object {
     */
   def apply(str: String, chain: MatchChainArray): MatchArray = js.native
 }
-

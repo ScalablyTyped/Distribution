@@ -1,0 +1,156 @@
+package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait Request extends js.Object {
+  
+  /** The request authentication. May be absent for unauthenticated requests. Derived from the HTTP request `Authorization` header or equivalent. */
+  var auth: js.UndefOr[Auth] = js.native
+  
+  /**
+    * The HTTP request headers. If multiple headers share the same key, they must be merged according to the HTTP spec. All header keys must be lowercased, because HTTP header keys are
+    * case-insensitive.
+    */
+  var headers: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request with TopLevel[js.Any]
+  ] = js.native
+  
+  /** The HTTP request `Host` header value. */
+  var host: js.UndefOr[String] = js.native
+  
+  /** The unique ID for a request, which can be propagated to downstream systems. The ID should have low probability of collision within a single day for a specific service. */
+  var id: js.UndefOr[String] = js.native
+  
+  /** The HTTP request method, such as `GET`, `POST`. */
+  var method: js.UndefOr[String] = js.native
+  
+  /** The HTTP URL path. */
+  var path: js.UndefOr[String] = js.native
+  
+  /**
+    * The network protocol used with the request, such as "http/1.1", "spdy/3", "h2", "h2c", "webrtc", "tcp", "udp", "quic". See
+    * https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml#alpn-protocol-ids for details.
+    */
+  var protocol: js.UndefOr[String] = js.native
+  
+  /** The HTTP URL query in the format of `name1=value1&name2=value2`, as it appears in the first line of the HTTP request. No decoding is performed. */
+  var query: js.UndefOr[String] = js.native
+  
+  /** A special parameter for request reason. It is used by security systems to associate auditing information with a request. */
+  var reason: js.UndefOr[String] = js.native
+  
+  /** The HTTP URL scheme, such as `http` and `https`. */
+  var scheme: js.UndefOr[String] = js.native
+  
+  /** The HTTP request size in bytes. If unknown, it must be -1. */
+  var size: js.UndefOr[String] = js.native
+  
+  /** The timestamp when the `destination` service receives the first byte of the request. */
+  var time: js.UndefOr[String] = js.native
+}
+object Request {
+  
+  @scala.inline
+  def apply(): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Request]
+  }
+  
+  @scala.inline
+  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAuth(value: Auth): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    
+    @scala.inline
+    def setHeaders(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request with TopLevel[js.Any]
+    ): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    
+    @scala.inline
+    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+    
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+  }
+}

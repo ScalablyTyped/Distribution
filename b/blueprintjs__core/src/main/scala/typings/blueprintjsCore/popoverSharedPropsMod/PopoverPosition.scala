@@ -17,7 +17,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.right
 import typings.blueprintjsCore.blueprintjsCoreStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  AUTO :'auto',   AUTO_END :'auto-end',   AUTO_START :'auto-start',   BOTTOM :'bottom',   BOTTOM_LEFT :'bottom-left',   BOTTOM_RIGHT :'bottom-right',   LEFT :'left',   LEFT_BOTTOM :'left-bottom',   LEFT_TOP :'left-top',   RIGHT :'right',   RIGHT_BOTTOM :'right-bottom',   RIGHT_TOP :'right-top',   TOP :'top',   TOP_LEFT :'top-left',   TOP_RIGHT :'top-right'}[keyof {  AUTO :'auto',   AUTO_END :'auto-end',   AUTO_START :'auto-start',   BOTTOM :'bottom',   BOTTOM_LEFT :'bottom-left',   BOTTOM_RIGHT :'bottom-right',   LEFT :'left',   LEFT_BOTTOM :'left-bottom',   LEFT_TOP :'left-top',   RIGHT :'right',   RIGHT_BOTTOM :'right-bottom',   RIGHT_TOP :'right-top',   TOP :'top',   TOP_LEFT :'top-left',   TOP_RIGHT :'top-right'}] */
 /* Rewritten from type alias, can be one of: 
@@ -38,24 +38,37 @@ import scala.scalajs.js.annotation._
   - typings.blueprintjsCore.blueprintjsCoreStrings.`right-bottom`
 */
 trait PopoverPosition extends js.Object
-
 @JSImport("@blueprintjs/core/lib/esm/components/popover/popoverSharedProps", "PopoverPosition")
 @js.native
 object PopoverPosition extends js.Object {
+  
   var AUTO: auto = js.native
+  
   var AUTO_END: `auto-end` = js.native
+  
   var AUTO_START: `auto-start` = js.native
+  
   var BOTTOM: bottom = js.native
+  
   var BOTTOM_LEFT: `bottom-left` = js.native
+  
   var BOTTOM_RIGHT: `bottom-right` = js.native
+  
   var LEFT: left = js.native
+  
   var LEFT_BOTTOM: `left-bottom` = js.native
+  
   var LEFT_TOP: `left-top` = js.native
+  
   var RIGHT: right = js.native
+  
   var RIGHT_BOTTOM: `right-bottom` = js.native
+  
   var RIGHT_TOP: `right-top` = js.native
+  
   var TOP: top = js.native
+  
   var TOP_LEFT: `top-left` = js.native
+  
   var TOP_RIGHT: `top-right` = js.native
 }
-

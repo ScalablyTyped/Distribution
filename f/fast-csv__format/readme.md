@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-csv__format
 
-Typings are for version 4.3.1
+Typings are for version 4.3.5
 
 ## Library description:
 fast-csv formatting module
@@ -10,9 +10,9 @@ fast-csv formatting module
 | ------------------ | :-------------: |
 | Full name          | @fast-csv/format |
 | Keywords           | csv, format, write |
-| # releases         | 12 |
-| # dependents       | 2 |
-| # downloads        | 478960 |
+| # releases         | 17 |
+| # dependents       | 3 |
+| # downloads        | 3306234 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.reactInstantsearchCore.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HighlightResult[TDoc] extends js.Object {
+  
   /**
     * Contains the searchable attributes within the document and shows which part of the
     * attribute was matched by the search terms.  Note that if the index has defined
@@ -13,31 +14,36 @@ trait HighlightResult[TDoc] extends js.Object {
     * will not exist.
     */
   var _highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[TDoc] = js.native
+  
   var objectID: String = js.native
 }
-
 object HighlightResult {
+  
   @scala.inline
   def apply[TDoc](_highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[TDoc], objectID: String): HighlightResult[TDoc] = {
     val __obj = js.Dynamic.literal(_highlightResult = _highlightResult.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightResult[TDoc]]
   }
+  
   @scala.inline
   implicit class HighlightResultOps[Self <: HighlightResult[_], TDoc] (val x: Self with HighlightResult[TDoc]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[TDoc]): Self = this.set("_highlightResult", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setObjectID(value: String): Self = this.set("objectID", value.asInstanceOf[js.Any])
   }
-  
 }
-

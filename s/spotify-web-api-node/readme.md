@@ -10,9 +10,9 @@ A Node.js wrapper for Spotify's Web API
 | ------------------ | :-------------: |
 | Full name          | spotify-web-api-node |
 | Keywords           | spotify, echonest, music, api, wrapper, client, web api |
-| # releases         | 5 |
-| # dependents       | 65 |
-| # downloads        | 147289 |
+| # releases         | 1 |
+| # dependents       | 72 |
+| # downloads        | 186401 |
 | # stars            | 23 |
 
 ## Links

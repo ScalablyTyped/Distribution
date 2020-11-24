@@ -11,12 +11,13 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/GuacCommon", JSImport.Namespace)
 @js.native
 object guacCommonMod extends js.Object {
+  
   type Mimetype = String
+  
   type TypedArray = Uint32Array | Uint16Array | Uint8Array | Uint8ClampedArray | Int32Array | Int16Array | Int8Array | Float64Array | Float32Array
 }
-

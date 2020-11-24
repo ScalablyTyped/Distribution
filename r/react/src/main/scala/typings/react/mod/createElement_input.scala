@@ -4,11 +4,12 @@ import typings.react.reactStrings.input
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react", "createElement")
 @js.native
 object createElement_input extends js.Object {
+  
   // DOM Elements
   // TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
   def apply(
@@ -19,4 +20,3 @@ object createElement_input extends js.Object {
   def apply(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
   def apply(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
 }
-

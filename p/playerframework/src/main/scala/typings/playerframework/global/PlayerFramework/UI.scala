@@ -2,11 +2,12 @@ package typings.playerframework.global.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PlayerFramework.UI")
 @js.native
 object UI extends js.Object {
+  
   @js.native
   class Button ()
     extends typings.playerframework.PlayerFramework.UI.Button
@@ -26,6 +27,4 @@ object UI extends js.Object {
   @js.native
   class Slider ()
     extends typings.playerframework.PlayerFramework.UI.Slider
-  
 }
-

@@ -2,18 +2,21 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaScreenshotCluster extends js.Object {
+  
   /**
     * A string that describes the activity of every screen in the cluster.
     */
   var activity: js.UndefOr[String] = js.native
+  
   /**
     * A unique identifier for the cluster.
     */
   var clusterId: js.UndefOr[String] = js.native
+  
   /**
     * A singular screen that represents the cluster as a whole. This screen
     * will act as the &quot;cover&quot; of the entire cluster. When users look
@@ -21,48 +24,60 @@ trait SchemaScreenshotCluster extends js.Object {
     * Which screen is the key screen is determined by the ClusteringAlgorithm
     */
   var keyScreen: js.UndefOr[SchemaScreen] = js.native
+  
   /**
     * Full list of screens.
     */
   var screens: js.UndefOr[js.Array[SchemaScreen]] = js.native
 }
-
 object SchemaScreenshotCluster {
+  
   @scala.inline
   def apply(): SchemaScreenshotCluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScreenshotCluster]
   }
+  
   @scala.inline
   implicit class SchemaScreenshotClusterOps[Self <: SchemaScreenshotCluster] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActivity(value: String): Self = this.set("activity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteActivity: Self = this.set("activity", js.undefined)
+    
     @scala.inline
     def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    
     @scala.inline
     def setKeyScreen(value: SchemaScreen): Self = this.set("keyScreen", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKeyScreen: Self = this.set("keyScreen", js.undefined)
+    
     @scala.inline
     def setScreensVarargs(value: SchemaScreen*): Self = this.set("screens", js.Array(value :_*))
+    
     @scala.inline
     def setScreens(value: js.Array[SchemaScreen]): Self = this.set("screens", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScreens: Self = this.set("screens", js.undefined)
   }
-  
 }
-

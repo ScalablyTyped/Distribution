@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Conversion direction to be used with {@link XConversionDictionary} when looking for conversions.
@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait ConversionDirection extends js.Object
-
 object ConversionDirection {
+  
   /** the text to be looked for should match the left part of a dictionary entry. */
   @scala.inline
   def FROM_LEFT: `0` = 0.asInstanceOf[`0`]
+  
   /** the text to be looked for should match the right part of a dictionary entry. */
   @scala.inline
   def FROM_RIGHT: `1` = 1.asInstanceOf[`1`]
 }
-

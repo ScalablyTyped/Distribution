@@ -6,7 +6,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react/dist/commonjs/addons/Confirm/Confirm", JSImport.Default)
 @js.native
@@ -15,8 +15,6 @@ class default protected ()
   def this(props: ConfirmProps) = this()
   def this(props: ConfirmProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react/dist/commonjs/addons/Confirm/Confirm", JSImport.Default)
 @js.native
 object default extends TopLevel[ComponentClass[ConfirmProps, ComponentState]]
-

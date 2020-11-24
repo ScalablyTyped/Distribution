@@ -20,9 +20,316 @@ import typings.reactSketchapp.typesMod.MeasureMode
 import typings.reactSketchapp.typesMod.Overflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSketchappStrings {
+  
+  @scala.inline
+  def `100`: `100` = "100".asInstanceOf[`100`]
+  
+  @scala.inline
+  def `200`: `200` = "200".asInstanceOf[`200`]
+  
+  @scala.inline
+  def `300`: `300` = "300".asInstanceOf[`300`]
+  
+  @scala.inline
+  def `400`: `400` = "400".asInstanceOf[`400`]
+  
+  @scala.inline
+  def `500`: `500` = "500".asInstanceOf[`500`]
+  
+  @scala.inline
+  def `600`: `600` = "600".asInstanceOf[`600`]
+  
+  @scala.inline
+  def `700`: `700` = "700".asInstanceOf[`700`]
+  
+  @scala.inline
+  def `800`: `800` = "800".asInstanceOf[`800`]
+  
+  @scala.inline
+  def `900`: `900` = "900".asInstanceOf[`900`]
+  
+  @scala.inline
+  def StyleSheet: StyleSheet = "StyleSheet".asInstanceOf[StyleSheet]
+  
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @scala.inline
+  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @scala.inline
+  def align: align = "align".asInstanceOf[align]
+  
+  @scala.inline
+  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  
+  @scala.inline
+  def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @scala.inline
+  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  
+  @scala.inline
+  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @scala.inline
+  def blink: blink = "blink".asInstanceOf[blink]
+  
+  @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
+  
+  @scala.inline
+  def bolder: bolder = "bolder".asInstanceOf[bolder]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def central: central = "central".asInstanceOf[central]
+  
+  @scala.inline
+  def column: column = "column".asInstanceOf[column]
+  
+  @scala.inline
+  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
+  
+  @scala.inline
+  def condensed: condensed = "condensed".asInstanceOf[condensed]
+  
+  @scala.inline
+  def contain: contain = "contain".asInstanceOf[contain]
+  
+  @scala.inline
+  def cover: cover = "cover".asInstanceOf[cover]
+  
+  @scala.inline
+  def dashed: dashed = "dashed".asInstanceOf[dashed]
+  
+  @scala.inline
+  def dotted: dotted = "dotted".asInstanceOf[dotted]
+  
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  
+  @scala.inline
+  def exact: exact = "exact".asInstanceOf[exact]
+  
+  @scala.inline
+  def exactly: exactly = "exactly".asInstanceOf[exactly]
+  
+  @scala.inline
+  def expanded: expanded = "expanded".asInstanceOf[expanded]
+  
+  @scala.inline
+  def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
+  
+  @scala.inline
+  def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
+  
+  @scala.inline
+  def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
+  
+  @scala.inline
+  def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
+  
+  @scala.inline
+  def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  
+  @scala.inline
+  def italic: italic = "italic".asInstanceOf[italic]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def lighter: lighter = "lighter".asInstanceOf[lighter]
+  
+  @scala.inline
+  def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
+  
+  @scala.inline
+  def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
+  
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @scala.inline
+  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def miter: miter = "miter".asInstanceOf[miter]
+  
+  @scala.inline
+  def narrower: narrower = "narrower".asInstanceOf[narrower]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
+  
+  @scala.inline
+  def objectBoundingBox: objectBoundingBox = "objectBoundingBox".asInstanceOf[objectBoundingBox]
+  
+  @scala.inline
+  def oblique: oblique = "oblique".asInstanceOf[oblique]
+  
+  @scala.inline
+  def overline: overline = "overline".asInstanceOf[overline]
+  
+  @scala.inline
+  def relative: relative = "relative".asInstanceOf[relative]
+  
+  @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  
+  @scala.inline
+  def row: row = "row".asInstanceOf[row]
+  
+  @scala.inline
+  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
+  
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def `semi-condensed`: `semi-condensed` = "semi-condensed".asInstanceOf[`semi-condensed`]
+  
+  @scala.inline
+  def `semi-expanded`: `semi-expanded` = "semi-expanded".asInstanceOf[`semi-expanded`]
+  
+  @scala.inline
+  def sharp: sharp = "sharp".asInstanceOf[sharp]
+  
+  @scala.inline
+  def sketch: sketch = "sketch".asInstanceOf[sketch]
+  
+  @scala.inline
+  def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
+  
+  @scala.inline
+  def smooth: smooth = "smooth".asInstanceOf[smooth]
+  
+  @scala.inline
+  def solid: solid = "solid".asInstanceOf[solid]
+  
+  @scala.inline
+  def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
+  
+  @scala.inline
+  def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
+  
+  @scala.inline
+  def spacing: spacing = "spacing".asInstanceOf[spacing]
+  
+  @scala.inline
+  def spacingAndGlyphs: spacingAndGlyphs = "spacingAndGlyphs".asInstanceOf[spacingAndGlyphs]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @scala.inline
+  def sub: sub = "sub".asInstanceOf[sub]
+  
+  @scala.inline
+  def `super`: `super` = "super".asInstanceOf[`super`]
+  
+  @scala.inline
+  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  
+  @scala.inline
+  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  
+  @scala.inline
+  def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
+  
+  @scala.inline
+  def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `ultra-condensed`: `ultra-condensed` = "ultra-condensed".asInstanceOf[`ultra-condensed`]
+  
+  @scala.inline
+  def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
+  
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @scala.inline
+  def underline: underline = "underline".asInstanceOf[underline]
+  
+  @scala.inline
+  def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
+  
+  @scala.inline
+  def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
+  
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
+  
+  @scala.inline
+  def wider: wider = "wider".asInstanceOf[wider]
+  
+  @scala.inline
+  def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
   @js.native
   sealed trait `100` extends FontWeight
   
@@ -344,210 +651,4 @@ object reactSketchappStrings {
   
   @js.native
   sealed trait wrap extends js.Object
-  
-  @scala.inline
-  def `100`: `100` = "100".asInstanceOf[`100`]
-  @scala.inline
-  def `200`: `200` = "200".asInstanceOf[`200`]
-  @scala.inline
-  def `300`: `300` = "300".asInstanceOf[`300`]
-  @scala.inline
-  def `400`: `400` = "400".asInstanceOf[`400`]
-  @scala.inline
-  def `500`: `500` = "500".asInstanceOf[`500`]
-  @scala.inline
-  def `600`: `600` = "600".asInstanceOf[`600`]
-  @scala.inline
-  def `700`: `700` = "700".asInstanceOf[`700`]
-  @scala.inline
-  def `800`: `800` = "800".asInstanceOf[`800`]
-  @scala.inline
-  def `900`: `900` = "900".asInstanceOf[`900`]
-  @scala.inline
-  def StyleSheet: StyleSheet = "StyleSheet".asInstanceOf[StyleSheet]
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
-  @scala.inline
-  def align: align = "align".asInstanceOf[align]
-  @scala.inline
-  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
-  @scala.inline
-  def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
-  @scala.inline
-  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def blink: blink = "blink".asInstanceOf[blink]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def bolder: bolder = "bolder".asInstanceOf[bolder]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def central: central = "central".asInstanceOf[central]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
-  @scala.inline
-  def condensed: condensed = "condensed".asInstanceOf[condensed]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def dashed: dashed = "dashed".asInstanceOf[dashed]
-  @scala.inline
-  def dotted: dotted = "dotted".asInstanceOf[dotted]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
-  @scala.inline
-  def exactly: exactly = "exactly".asInstanceOf[exactly]
-  @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
-  @scala.inline
-  def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
-  @scala.inline
-  def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
-  @scala.inline
-  def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
-  @scala.inline
-  def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
-  @scala.inline
-  def hanging: hanging = "hanging".asInstanceOf[hanging]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
-  @scala.inline
-  def italic: italic = "italic".asInstanceOf[italic]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def lighter: lighter = "lighter".asInstanceOf[lighter]
-  @scala.inline
-  def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
-  @scala.inline
-  def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def narrower: narrower = "narrower".asInstanceOf[narrower]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
-  @scala.inline
-  def objectBoundingBox: objectBoundingBox = "objectBoundingBox".asInstanceOf[objectBoundingBox]
-  @scala.inline
-  def oblique: oblique = "oblique".asInstanceOf[oblique]
-  @scala.inline
-  def overline: overline = "overline".asInstanceOf[overline]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def repeat: repeat = "repeat".asInstanceOf[repeat]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def `semi-condensed`: `semi-condensed` = "semi-condensed".asInstanceOf[`semi-condensed`]
-  @scala.inline
-  def `semi-expanded`: `semi-expanded` = "semi-expanded".asInstanceOf[`semi-expanded`]
-  @scala.inline
-  def sharp: sharp = "sharp".asInstanceOf[sharp]
-  @scala.inline
-  def sketch: sketch = "sketch".asInstanceOf[sketch]
-  @scala.inline
-  def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
-  @scala.inline
-  def smooth: smooth = "smooth".asInstanceOf[smooth]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
-  @scala.inline
-  def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
-  @scala.inline
-  def spacing: spacing = "spacing".asInstanceOf[spacing]
-  @scala.inline
-  def spacingAndGlyphs: spacingAndGlyphs = "spacingAndGlyphs".asInstanceOf[spacingAndGlyphs]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def `super`: `super` = "super".asInstanceOf[`super`]
-  @scala.inline
-  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
-  @scala.inline
-  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
-  @scala.inline
-  def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
-  @scala.inline
-  def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `ultra-condensed`: `ultra-condensed` = "ultra-condensed".asInstanceOf[`ultra-condensed`]
-  @scala.inline
-  def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
-  @scala.inline
-  def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
-  @scala.inline
-  def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def wider: wider = "wider".asInstanceOf[wider]
-  @scala.inline
-  def wrap: wrap = "wrap".asInstanceOf[wrap]
 }
-

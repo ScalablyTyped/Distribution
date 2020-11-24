@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-json-preprocessor"
-version := "0.3-dt-20200302Z-2dee94"
+version := "0.3-dt-20200302Z-0ec4e1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

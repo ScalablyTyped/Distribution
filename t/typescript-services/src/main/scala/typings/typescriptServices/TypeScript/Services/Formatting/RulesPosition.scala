@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RulesPosition extends js.Object
-
 @JSGlobal("TypeScript.Services.Formatting.RulesPosition")
 @js.native
 object RulesPosition extends js.Object {
+  
   @js.native
   sealed trait ContextRulesAny extends RulesPosition
   
@@ -27,6 +27,4 @@ object RulesPosition extends js.Object {
   
   @js.native
   sealed trait NoContextRulesSpecific extends RulesPosition
-  
 }
-

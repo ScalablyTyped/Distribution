@@ -11,7 +11,7 @@ import typings.googleCloudStorage.hmacKeyMod.HmacKeyOptions
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
@@ -40,6 +40,8 @@ import scala.scalajs.js.annotation._
   *     attempted before returning the error.
   * @property {Constructor} [promise] Custom promise module to use instead of
   *     native Promises.
+  * @property {string} [userAgent] The value to be prepended to the User-Agent
+  *     header in API requests.
   */
 /**
   * Constructs the Storage client.
@@ -59,6 +61,7 @@ import scala.scalajs.js.annotation._
   */
 class Storage () extends Service {
   def this(options: StorageOptions) = this()
+  
   /**
     * Reference to {@link Storage.acl}.
     *
@@ -66,6 +69,7 @@ class Storage () extends Service {
     * @see Storage.acl
     */
   var acl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Storage.acl */ js.Any = js.native
+  
   /**
     * Get a reference to a Cloud Storage bucket.
     *
@@ -87,6 +91,7 @@ class Storage () extends Service {
     */
   def bucket(name: String): Bucket = js.native
   def bucket(name: String, options: BucketOptions): Bucket = js.native
+  
   /**
     * Reference a channel to receive notifications about changes to your bucket.
     *
@@ -101,18 +106,22 @@ class Storage () extends Service {
     * const channel = storage.channel('id', 'resource-id');
     */
   def channel(id: String, resourceId: String): Channel = js.native
+  
   def createBucket(name: String): js.Promise[CreateBucketResponse] = js.native
   def createBucket(name: String, callback: BucketCallback): Unit = js.native
   def createBucket(name: String, metadata: CreateBucketRequest): js.Promise[CreateBucketResponse] = js.native
   def createBucket(name: String, metadata: CreateBucketRequest, callback: BucketCallback): Unit = js.native
+  
   def createHmacKey(serviceAccountEmail: String): js.Promise[CreateHmacKeyResponse] = js.native
   def createHmacKey(serviceAccountEmail: String, callback: CreateHmacKeyCallback): Unit = js.native
   def createHmacKey(serviceAccountEmail: String, options: CreateHmacKeyOptions): js.Promise[CreateHmacKeyResponse] = js.native
   def createHmacKey(serviceAccountEmail: String, options: CreateHmacKeyOptions, callback: CreateHmacKeyCallback): Unit = js.native
+  
   def getBuckets(): js.Promise[GetBucketsResponse] = js.native
   def getBuckets(callback: GetBucketsCallback): Unit = js.native
   def getBuckets(options: GetBucketsRequest): js.Promise[GetBucketsResponse] = js.native
   def getBuckets(options: GetBucketsRequest, callback: GetBucketsCallback): Unit = js.native
+  
   /**
     * Get {@link Bucket} objects for all of the buckets in your project as
     * a readable object stream.
@@ -141,6 +150,7 @@ class Storage () extends Service {
     *   });
     */
   def getBucketsStream(): Readable = js.native
+  
   /**
     * Query object for listing HMAC keys.
     *
@@ -218,6 +228,7 @@ class Storage () extends Service {
   def getHmacKeys(callback: GetHmacKeysCallback): Unit = js.native
   def getHmacKeys(options: GetHmacKeysOptions): js.Promise[GetHmacKeysResponse] = js.native
   def getHmacKeys(options: GetHmacKeysOptions, callback: GetHmacKeysCallback): Unit = js.native
+  
   /**
     * Get {@link HmacKey} objects for all of the HMAC keys in the project in
     * a readable object stream.
@@ -246,10 +257,12 @@ class Storage () extends Service {
     *   });
     */
   def getHmacKeysStream(): Readable = js.native
+  
   def getServiceAccount(): js.Promise[GetServiceAccountResponse] = js.native
   def getServiceAccount(callback: GetServiceAccountCallback): Unit = js.native
   def getServiceAccount(options: GetServiceAccountOptions): js.Promise[GetServiceAccountResponse] = js.native
   def getServiceAccount(options: GetServiceAccountOptions, callback: GetServiceAccountCallback): Unit = js.native
+  
   /**
     * Get a reference to an HmacKey object.
     * Note: this does not fetch the HMAC key's metadata. Use HmacKey#get() to
@@ -272,11 +285,11 @@ class Storage () extends Service {
   def hmacKey(accessId: String): HmacKey = js.native
   def hmacKey(accessId: String, options: HmacKeyOptions): HmacKey = js.native
 }
-
 /* static members */
 @JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
 object Storage extends js.Object {
+  
   /**
     * {@link Bucket} class.
     *
@@ -290,6 +303,7 @@ object Storage extends js.Object {
     /* options */ js.UndefOr[typings.googleCloudStorage.bucketMod.BucketOptions], 
     typings.googleCloudStorage.bucketMod.Bucket
   ] = js.native
+  
   /**
     * {@link Channel} class.
     *
@@ -303,6 +317,7 @@ object Storage extends js.Object {
     /* resourceId */ String, 
     typings.googleCloudStorage.channelMod.Channel
   ] = js.native
+  
   /**
     * {@link File} class.
     *
@@ -316,6 +331,7 @@ object Storage extends js.Object {
     /* options */ js.UndefOr[FileOptions], 
     typings.googleCloudStorage.fileMod.File
   ] = js.native
+  
   /**
     * {@link HmacKey} class.
     *
@@ -329,6 +345,7 @@ object Storage extends js.Object {
     /* options */ js.UndefOr[HmacKeyOptions], 
     typings.googleCloudStorage.hmacKeyMod.HmacKey
   ] = js.native
+  
   /**
     * Cloud Storage uses access control lists (ACLs) to manage object and
     * bucket access. ACLs are the mechanism you use to share objects with other
@@ -386,6 +403,6 @@ object Storage extends js.Object {
     * });
     */
   var acl: OWNERROLE = js.native
+  
   var sanitizeEndpoint: js.Any = js.native
 }
-

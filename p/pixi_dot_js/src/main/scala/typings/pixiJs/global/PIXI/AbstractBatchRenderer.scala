@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Renderer dedicated to drawing and batching sprites.
@@ -23,11 +23,11 @@ class AbstractBatchRenderer protected ()
   extends typings.pixiJs.PIXI.AbstractBatchRenderer {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.AbstractBatchRenderer")
 @js.native
 object AbstractBatchRenderer extends js.Object {
+  
   /**
     * Pool of `BatchDrawCall` objects that `flush` used
     * to create "batches" of the objects being rendered.
@@ -39,6 +39,7 @@ object AbstractBatchRenderer extends js.Object {
     * @member {PIXI.BatchDrawCall[]}
     */
   var _drawCallPool: js.Array[typings.pixiJs.PIXI.BatchDrawCall] = js.native
+  
   /**
     * Pool of `BatchDrawCall` objects that `flush` used
     * to create "batches" of the objects being rendered.
@@ -51,4 +52,3 @@ object AbstractBatchRenderer extends js.Object {
     */
   var _textureArrayPool: js.Array[typings.pixiJs.PIXI.BatchTextureArray] = js.native
 }
-

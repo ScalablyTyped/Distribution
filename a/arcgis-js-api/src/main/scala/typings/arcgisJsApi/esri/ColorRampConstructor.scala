@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorRampConstructor
@@ -15,6 +15,6 @@ trait ColorRampConstructor
   */
 Instantiable0[ColorRamp]
      with Instantiable1[/* properties */ ColorRampProperties, ColorRamp] {
+  
   def fromJSON(json: js.Any): ColorRamp = js.native
 }
-

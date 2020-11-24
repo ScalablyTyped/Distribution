@@ -7,10 +7,11 @@ import typings.vueI18n.mod.VueI18n.Locale
 import typings.vueI18n.mod.VueI18n.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallValueKeyLocale extends js.Object {
+  
   def apply(value: Double): DateTimeFormatResult = js.native
   def apply(value: Double, args: StringDictionary[String]): DateTimeFormatResult = js.native
   def apply(value: Double, key: js.UndefOr[scala.Nothing], locale: Locale): DateTimeFormatResult = js.native
@@ -22,4 +23,3 @@ trait FnCallValueKeyLocale extends js.Object {
   def apply(value: Date, key: Path): DateTimeFormatResult = js.native
   def apply(value: Date, key: Path, locale: Locale): DateTimeFormatResult = js.native
 }
-

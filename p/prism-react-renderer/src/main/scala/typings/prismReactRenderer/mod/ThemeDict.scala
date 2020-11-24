@@ -3,36 +3,42 @@ package typings.prismReactRenderer.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ThemeDict extends /* type */ StringDictionary[StyleObj] {
+  
   var plain: StyleObj = js.native
+  
   var root: StyleObj = js.native
 }
-
 object ThemeDict {
+  
   @scala.inline
   def apply(plain: StyleObj, root: StyleObj): ThemeDict = {
     val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeDict]
   }
+  
   @scala.inline
   implicit class ThemeDictOps[Self <: ThemeDict] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPlain(value: StyleObj): Self = this.set("plain", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRoot(value: StyleObj): Self = this.set("root", value.asInstanceOf[js.Any])
   }
-  
 }
-

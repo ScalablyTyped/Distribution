@@ -2,10 +2,11 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RoamingSettings extends js.Object {
+  
   /**
     * Retrieves the specified setting.
     *
@@ -20,6 +21,7 @@ trait RoamingSettings extends js.Object {
     * @param name - The case-sensitive name of the setting to retrieve.
     */
   def get(name: String): js.Any = js.native
+  
   /**
     * Removes the specified setting
     *
@@ -32,6 +34,7 @@ trait RoamingSettings extends js.Object {
     * @param name - The case-sensitive name of the setting to remove.
     */
   def remove(name: String): Unit = js.native
+  
   /**
     * Saves the settings.
     *
@@ -50,6 +53,7 @@ trait RoamingSettings extends js.Object {
     */
   def saveAsync(): Unit = js.native
   def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  
   /**
     * Sets or creates the specified setting.
     *
@@ -71,4 +75,3 @@ trait RoamingSettings extends js.Object {
     */
   def set(name: String, value: js.Any): Unit = js.native
 }
-

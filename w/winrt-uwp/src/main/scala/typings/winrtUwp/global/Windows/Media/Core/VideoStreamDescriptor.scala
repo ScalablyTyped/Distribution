@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Core
 import typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an video media stream. */
 @JSGlobal("Windows.Media.Core.VideoStreamDescriptor")
@@ -16,4 +16,3 @@ class VideoStreamDescriptor protected ()
     */
   def this(encodingProperties: VideoEncodingProperties) = this()
 }
-

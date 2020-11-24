@@ -2,7 +2,7 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties describing the look and feel of a list bullet at a
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaNestingLevel extends js.Object {
+  
   /**
     * The alignment of the bullet within the space allotted for rendering the
     * bullet.
     */
   var bulletAlignment: js.UndefOr[String] = js.native
+  
   /**
     * The format string used by bullets at this level of nesting.  The glyph
     * format contains one or more placeholders, and these placeholder are
@@ -40,6 +42,7 @@ trait SchemaNestingLevel extends js.Object {
     * paragraph&#39;s order within the list.
     */
   var glyphFormat: js.UndefOr[String] = js.native
+  
   /**
     * A custom glyph symbol used by bullets when paragraphs at this level of
     * nesting are unordered.  The glyph symbol replaces placeholders within the
@@ -48,6 +51,7 @@ trait SchemaNestingLevel extends js.Object {
     * the rendered glyph would be the solid circle.
     */
   var glyphSymbol: js.UndefOr[String] = js.native
+  
   /**
     * The type of glyph used by bullets when paragraphs at this level of
     * nesting are ordered.  The glyph type determines the type of glyph used to
@@ -58,17 +62,20 @@ trait SchemaNestingLevel extends js.Object {
     * number corresponding to list item&#39;s order within the list.
     */
   var glyphType: js.UndefOr[String] = js.native
+  
   /**
     * The amount of indentation for the first line of paragraphs at this level
     * of nesting.
     */
   var indentFirstLine: js.UndefOr[SchemaDimension] = js.native
+  
   /**
     * The amount of indentation for paragraphs at this level of nesting.
     * Applied to the side that corresponds to the start of the text, based on
     * the paragraph&#39;s content direction.
     */
   var indentStart: js.UndefOr[SchemaDimension] = js.native
+  
   /**
     * The number of the first list item at this nesting level.  A value of 0 is
     * treated as a value of 1 for lettered lists and roman numeraled lists,
@@ -77,62 +84,81 @@ trait SchemaNestingLevel extends js.Object {
     * levels with unordered glyphs.
     */
   var startNumber: js.UndefOr[Double] = js.native
+  
   /**
     * The text style of bullets at this level of nesting.
     */
   var textStyle: js.UndefOr[SchemaTextStyle] = js.native
 }
-
 object SchemaNestingLevel {
+  
   @scala.inline
   def apply(): SchemaNestingLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNestingLevel]
   }
+  
   @scala.inline
   implicit class SchemaNestingLevelOps[Self <: SchemaNestingLevel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBulletAlignment(value: String): Self = this.set("bulletAlignment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBulletAlignment: Self = this.set("bulletAlignment", js.undefined)
+    
     @scala.inline
     def setGlyphFormat(value: String): Self = this.set("glyphFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGlyphFormat: Self = this.set("glyphFormat", js.undefined)
+    
     @scala.inline
     def setGlyphSymbol(value: String): Self = this.set("glyphSymbol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGlyphSymbol: Self = this.set("glyphSymbol", js.undefined)
+    
     @scala.inline
     def setGlyphType(value: String): Self = this.set("glyphType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGlyphType: Self = this.set("glyphType", js.undefined)
+    
     @scala.inline
     def setIndentFirstLine(value: SchemaDimension): Self = this.set("indentFirstLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndentFirstLine: Self = this.set("indentFirstLine", js.undefined)
+    
     @scala.inline
     def setIndentStart(value: SchemaDimension): Self = this.set("indentStart", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndentStart: Self = this.set("indentStart", js.undefined)
+    
     @scala.inline
     def setStartNumber(value: Double): Self = this.set("startNumber", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStartNumber: Self = this.set("startNumber", js.undefined)
+    
     @scala.inline
     def setTextStyle(value: SchemaTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTextStyle: Self = this.set("textStyle", js.undefined)
   }
-  
 }
-

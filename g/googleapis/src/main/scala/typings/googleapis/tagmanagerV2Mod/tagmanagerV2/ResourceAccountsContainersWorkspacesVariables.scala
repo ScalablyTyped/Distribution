@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Variables")
 @js.native
 class ResourceAccountsContainersWorkspacesVariables protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.variables.create
     * @desc Creates a GTM Variable.
@@ -45,6 +47,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends js.Obje
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.variables.delete
     * @desc Deletes a GTM Variable.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends js.Obje
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.variables.get
     * @desc Gets a GTM Variable.
@@ -107,6 +111,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends js.Obje
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.variables.list
     * @desc Lists all GTM Variables of a Container.
@@ -139,6 +144,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends js.Obje
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListVariablesResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.variables.revert
     * @desc Reverts changes to a GTM Variable in a GTM Workspace.
@@ -171,6 +177,7 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends js.Obje
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevertVariableResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.variables.update
     * @desc Updates a GTM Variable.
@@ -205,4 +212,3 @@ class ResourceAccountsContainersWorkspacesVariables protected () extends js.Obje
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
 }
-

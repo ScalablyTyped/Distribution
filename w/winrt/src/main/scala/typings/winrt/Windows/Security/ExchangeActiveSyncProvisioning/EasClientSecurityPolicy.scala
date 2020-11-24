@@ -3,12 +3,12 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EasClientSecurityPolicy extends IEasClientSecurityPolicy
-
 object EasClientSecurityPolicy {
+  
   @scala.inline
   def apply(
     applyAsync: () => IAsyncOperation[EasComplianceResults],
@@ -26,4 +26,3 @@ object EasClientSecurityPolicy {
     __obj.asInstanceOf[EasClientSecurityPolicy]
   }
 }
-

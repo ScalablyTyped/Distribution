@@ -113,11 +113,12 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@antv/g2", "DomUtil")
 @js.native
 class DomUtil () extends js.Object {
+  
   def addEventListener(target: HTMLElement, eventType: String, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
@@ -671,15 +672,24 @@ class DomUtil () extends js.Object {
     eventType: wheel,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _]
   ): Unit = js.native
+  
   def createDom(str: String): HTMLElement = js.native
+  
   def getBoundingClientRect(node: Element): Left = js.native
+  
   def getHeight(el: HTMLElement): Double = js.native
+  
   def getOuterHeight(el: HTMLElement): Double = js.native
+  
   def getOuterWidth(el: HTMLElement): Double = js.native
+  
   def getRatio(): Double = js.native
+  
   def getStyle(dom: HTMLElement, name: String): js.Any = js.native
+  
   def getWidth(el: HTMLElement): Double = js.native
+  
   def modifyCSS(dom: HTMLElement, css: js.Any): HTMLElement = js.native
+  
   def requestAnimationFrame(fn: js.Function0[Unit]): Unit = js.native
 }
-

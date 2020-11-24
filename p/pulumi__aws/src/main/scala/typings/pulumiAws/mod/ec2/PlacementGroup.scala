@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "ec2.PlacementGroup")
 @js.native
@@ -23,11 +23,11 @@ class PlacementGroup protected ()
   def this(name: String, args: PlacementGroupArgs) = this()
   def this(name: String, args: PlacementGroupArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "ec2.PlacementGroup")
 @js.native
 object PlacementGroup extends js.Object {
+  
   /**
     * Get an existing PlacementGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object PlacementGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.placementGroupMod.PlacementGroup = js.native
   def get(name: String, id: Input[ID], state: PlacementGroupState): typings.pulumiAws.placementGroupMod.PlacementGroup = js.native
   def get(name: String, id: Input[ID], state: PlacementGroupState, opts: CustomResourceOptions): typings.pulumiAws.placementGroupMod.PlacementGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of PlacementGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/placementGroup.PlacementGroup */ Boolean = js.native
 }
-

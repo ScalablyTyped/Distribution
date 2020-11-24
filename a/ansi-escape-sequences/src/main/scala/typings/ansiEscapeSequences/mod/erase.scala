@@ -6,11 +6,12 @@ import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`2`
 import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ansi-escape-sequences", "erase")
 @js.native
 object erase extends js.Object {
+  
   /**
     * Clears part of the screen. If n is 0 (or missing), clear from cursor to
     * end of screen. If n is 1, clear from cursor to beginning of the screen.
@@ -26,6 +27,7 @@ object erase extends js.Object {
   def display_2(n: `2`): String = js.native
   @JSName("display")
   def display_3(n: `3`): String = js.native
+  
   /**
     * Erases part of the line. If n is zero (or missing), clear from cursor to
     * the end of the line. If n is one, clear from cursor to beginning of the
@@ -39,4 +41,3 @@ object erase extends js.Object {
   @JSName("inLine")
   def inLine_2(n: `2`): String = js.native
 }
-

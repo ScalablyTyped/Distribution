@@ -6,10 +6,11 @@ import typings.flipsnap.flipsnapStrings.fstouchstart
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTMLElement extends js.Object {
+  
   @JSName("addEventListener")
   def addEventListener_fstouchend(`type`: fstouchend, listener: js.Function1[/* ev */ FlipsnapTouchEndEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -27,4 +28,3 @@ trait HTMLElement extends js.Object {
   @JSName("addEventListener")
   def addEventListener_fstouchstart(`type`: fstouchstart, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
 }
-

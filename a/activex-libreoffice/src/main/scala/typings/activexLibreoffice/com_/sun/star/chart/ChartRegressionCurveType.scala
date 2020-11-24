@@ -8,7 +8,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the type of the regression curve to be displayed. */
 /* Rewritten from type alias, can be one of: 
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
 */
 trait ChartRegressionCurveType extends js.Object
-
 object ChartRegressionCurveType {
+  
   /**
     * displays an exponential regression curve. <p>The values of the series are approximated using the model
     *
@@ -29,6 +29,7 @@ object ChartRegressionCurveType {
     */
   @scala.inline
   def EXPONENTIAL: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * displays a linear regression curve. <p>The values of the series are approximated using the model
     *
@@ -36,6 +37,7 @@ object ChartRegressionCurveType {
     */
   @scala.inline
   def LINEAR: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * displays a linear logarithmic regression curve. <p>The values of the series are approximated using the model
     *
@@ -43,6 +45,7 @@ object ChartRegressionCurveType {
     */
   @scala.inline
   def LOGARITHM: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * error indicators are not displayed.
     *
@@ -60,9 +63,11 @@ object ChartRegressionCurveType {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /** displays a polynomial regression curve. */
   @scala.inline
   def POLYNOMIAL: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * displays a regression curve using a power function. <p>The values of the series are approximated using the model
     *
@@ -73,4 +78,3 @@ object ChartRegressionCurveType {
   @scala.inline
   def POWER: `5` = 5.asInstanceOf[`5`]
 }
-

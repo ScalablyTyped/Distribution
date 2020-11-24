@@ -2,9 +2,19 @@ package typings.reactNativeAuth0
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeAuth0Strings {
+  
+  @scala.inline
+  def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
+  
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
   @js.native
   sealed trait Bearer extends js.Object
   
@@ -13,12 +23,4 @@ object reactNativeAuth0Strings {
   
   @js.native
   sealed trait link extends js.Object
-  
-  @scala.inline
-  def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
 }
-

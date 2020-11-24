@@ -1,15 +1,14 @@
 package typings.puppeteer.mod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("puppeteer", "errors")
 @js.native
 object errors extends js.Object {
-  @js.native
-  class TimeoutError () extends Error
   
+  var TimeoutError: typings.puppeteer.mod.TimeoutError = js.native
+  
+  var puppeteerErrors: typings.puppeteer.anon.TimeoutError = js.native
 }
-

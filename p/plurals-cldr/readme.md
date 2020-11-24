@@ -10,9 +10,9 @@ Plurals suport, generated from CLDR.
 | ------------------ | :-------------: |
 | Full name          | plurals-cldr |
 | Keywords           | i18n, l10n, plural, plurals, pluralize, pluralizer, clrd, ldml |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 58932 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 78724 |
 | # stars            | 0 |
 
 ## Links

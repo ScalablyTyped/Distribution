@@ -2,7 +2,7 @@ package typings.rrule.typesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* keyof rrule.rrule/dist/esm/src/types.QueryMethods */ /* Rewritten from type alias, can be one of: 
   - typings.rrule.rruleStrings.all
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   - typings.rrule.rruleStrings.after
 */
 trait QueryMethodTypes extends js.Object
-

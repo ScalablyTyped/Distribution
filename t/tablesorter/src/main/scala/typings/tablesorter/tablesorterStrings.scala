@@ -17,9 +17,352 @@ import typings.tablesorter.storageTypeMod.StorageType
 import typings.tablesorter.stringSortingMod.StringSorting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesorterStrings {
+  
+  @scala.inline
+  def a: a = "a".asInstanceOf[a]
+  
+  @scala.inline
+  def addRows: addRows = "addRows".asInstanceOf[addRows]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def altKey: altKey = "altKey".asInstanceOf[altKey]
+  
+  @scala.inline
+  def appendCache: appendCache = "appendCache".asInstanceOf[appendCache]
+  
+  @scala.inline
+  def applyWidgetId: applyWidgetId = "applyWidgetId".asInstanceOf[applyWidgetId]
+  
+  @scala.inline
+  def applyWidgets: applyWidgets = "applyWidgets".asInstanceOf[applyWidgets]
+  
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  
+  @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  
+  @scala.inline
+  def blackice: blackice = "blackice".asInstanceOf[blackice]
+  
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
+  
+  @scala.inline
+  def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  
+  @scala.inline
+  def buttons: buttons = "buttons".asInstanceOf[buttons]
+  
+  @scala.inline
+  def c: c = "c".asInstanceOf[c]
+  
+  @scala.inline
+  def clientX: clientX = "clientX".asInstanceOf[clientX]
+  
+  @scala.inline
+  def clientY: clientY = "clientY".asInstanceOf[clientY]
+  
+  @scala.inline
+  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
+  
+  @scala.inline
+  def d: d = "d".asInstanceOf[d]
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def destroyPager: destroyPager = "destroyPager".asInstanceOf[destroyPager]
+  
+  @scala.inline
+  def disablePager: disablePager = "disablePager".asInstanceOf[disablePager]
+  
+  @scala.inline
+  def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
+  
+  @scala.inline
+  def empty: empty = "empty".asInstanceOf[empty]
+  
+  @scala.inline
+  def emptyMax: emptyMax = "emptyMax".asInstanceOf[emptyMax]
+  
+  @scala.inline
+  def emptyMin: emptyMin = "emptyMin".asInstanceOf[emptyMin]
+  
+  @scala.inline
+  def enablePager: enablePager = "enablePager".asInstanceOf[enablePager]
+  
+  @scala.inline
+  def exact: exact = "exact".asInstanceOf[exact]
+  
+  @scala.inline
+  def `false`: `false` = "false".asInstanceOf[`false`]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def filterAndSortReset: filterAndSortReset = "filterAndSortReset".asInstanceOf[filterAndSortReset]
+  
+  @scala.inline
+  def filterEnd: filterEnd = "filterEnd".asInstanceOf[filterEnd]
+  
+  @scala.inline
+  def filterInit: filterInit = "filterInit".asInstanceOf[filterInit]
+  
+  @scala.inline
+  def filterReset: filterReset = "filterReset".asInstanceOf[filterReset]
+  
+  @scala.inline
+  def filterResetSaved: filterResetSaved = "filterResetSaved".asInstanceOf[filterResetSaved]
+  
+  @scala.inline
+  def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
+  
+  @scala.inline
+  def from: from = "from".asInstanceOf[from]
+  
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
+  
+  @scala.inline
+  def grey: grey = "grey".asInstanceOf[grey]
+  
+  @scala.inline
+  def ice: ice = "ice".asInstanceOf[ice]
+  
+  @scala.inline
+  def jui: jui = "jui".asInstanceOf[jui]
+  
+  @scala.inline
+  def lockedOrder: lockedOrder = "lockedOrder".asInstanceOf[lockedOrder]
+  
+  @scala.inline
+  def `match`: `match` = "match".asInstanceOf[`match`]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
+  
+  @scala.inline
+  def `metro-dark`: `metro-dark` = "metro-dark".asInstanceOf[`metro-dark`]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def movementX: movementX = "movementX".asInstanceOf[movementX]
+  
+  @scala.inline
+  def movementY: movementY = "movementY".asInstanceOf[movementY]
+  
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  
+  @scala.inline
+  def o: o = "o".asInstanceOf[o]
+  
+  @scala.inline
+  def offsetX: offsetX = "offsetX".asInstanceOf[offsetX]
+  
+  @scala.inline
+  def offsetY: offsetY = "offsetY".asInstanceOf[offsetY]
+  
+  @scala.inline
+  def pageAndSize: pageAndSize = "pageAndSize".asInstanceOf[pageAndSize]
+  
+  @scala.inline
+  def pageMoved: pageMoved = "pageMoved".asInstanceOf[pageMoved]
+  
+  @scala.inline
+  def pageSet: pageSet = "pageSet".asInstanceOf[pageSet]
+  
+  @scala.inline
+  def pageSize: pageSize = "pageSize".asInstanceOf[pageSize]
+  
+  @scala.inline
+  def pageX: pageX = "pageX".asInstanceOf[pageX]
+  
+  @scala.inline
+  def pageY: pageY = "pageY".asInstanceOf[pageY]
+  
+  @scala.inline
+  def pagerBeforeInitialized: pagerBeforeInitialized = "pagerBeforeInitialized".asInstanceOf[pagerBeforeInitialized]
+  
+  @scala.inline
+  def pagerChange: pagerChange = "pagerChange".asInstanceOf[pagerChange]
+  
+  @scala.inline
+  def pagerComplete: pagerComplete = "pagerComplete".asInstanceOf[pagerComplete]
+  
+  @scala.inline
+  def pagerInitialized: pagerInitialized = "pagerInitialized".asInstanceOf[pagerInitialized]
+  
+  @scala.inline
+  def pagerUpdate: pagerUpdate = "pagerUpdate".asInstanceOf[pagerUpdate]
+  
+  @scala.inline
+  def parsed: parsed = "parsed".asInstanceOf[parsed]
+  
+  @scala.inline
+  def parser: parser = "parser".asInstanceOf[parser]
+  
+  @scala.inline
+  def refreshComplete: refreshComplete = "refreshComplete".asInstanceOf[refreshComplete]
+  
+  @scala.inline
+  def refreshWidgets: refreshWidgets = "refreshWidgets".asInstanceOf[refreshWidgets]
+  
+  @scala.inline
+  def relatedTarget: relatedTarget = "relatedTarget".asInstanceOf[relatedTarget]
+  
+  @scala.inline
+  def removeWidget: removeWidget = "removeWidget".asInstanceOf[removeWidget]
+  
+  @scala.inline
+  def resetToLoadState: resetToLoadState = "resetToLoadState".asInstanceOf[resetToLoadState]
+  
+  @scala.inline
+  def resizable: resizable = "resizable".asInstanceOf[resizable]
+  
+  @scala.inline
+  def s: s = "s".asInstanceOf[s]
+  
+  @scala.inline
+  def saveSortReset: saveSortReset = "saveSortReset".asInstanceOf[saveSortReset]
+  
+  @scala.inline
+  def screenX: screenX = "screenX".asInstanceOf[screenX]
+  
+  @scala.inline
+  def screenY: screenY = "screenY".asInstanceOf[screenY]
+  
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def shiftKey: shiftKey = "shiftKey".asInstanceOf[shiftKey]
+  
+  @scala.inline
+  def sort: sort = "sort".asInstanceOf[sort]
+  
+  @scala.inline
+  def sortAppend: sortAppend = "sortAppend".asInstanceOf[sortAppend]
+  
+  @scala.inline
+  def sortBegin: sortBegin = "sortBegin".asInstanceOf[sortBegin]
+  
+  @scala.inline
+  def sortEnd: sortEnd = "sortEnd".asInstanceOf[sortEnd]
+  
+  @scala.inline
+  def sortForce: sortForce = "sortForce".asInstanceOf[sortForce]
+  
+  @scala.inline
+  def sortInitialOrder: sortInitialOrder = "sortInitialOrder".asInstanceOf[sortInitialOrder]
+  
+  @scala.inline
+  def sortReset: sortReset = "sortReset".asInstanceOf[sortReset]
+  
+  @scala.inline
+  def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
+  
+  @scala.inline
+  def sorter: sorter = "sorter".asInstanceOf[sorter]
+  
+  @scala.inline
+  def sorton: sorton = "sorton".asInstanceOf[sorton]
+  
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  
+  @scala.inline
+  def stickyHeadersInit: stickyHeadersInit = "stickyHeadersInit".asInstanceOf[stickyHeadersInit]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def `tablesorter-initialized`: `tablesorter-initialized` = "tablesorter-initialized".asInstanceOf[`tablesorter-initialized`]
+  
+  @scala.inline
+  def `tablesorter-ready`: `tablesorter-ready` = "tablesorter-ready".asInstanceOf[`tablesorter-ready`]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def to: to = "to".asInstanceOf[to]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def updateAll: updateAll = "updateAll".asInstanceOf[updateAll]
+  
+  @scala.inline
+  def updateCache: updateCache = "updateCache".asInstanceOf[updateCache]
+  
+  @scala.inline
+  def updateCell: updateCell = "updateCell".asInstanceOf[updateCell]
+  
+  @scala.inline
+  def updateComplete: updateComplete = "updateComplete".asInstanceOf[updateComplete]
+  
+  @scala.inline
+  def updateHeaders: updateHeaders = "updateHeaders".asInstanceOf[updateHeaders]
+  
+  @scala.inline
+  def updateRows: updateRows = "updateRows".asInstanceOf[updateRows]
+  
+  @scala.inline
+  def user: user = "user".asInstanceOf[user]
+  
+  @scala.inline
+  def widgetRemoveEnd: widgetRemoveEnd = "widgetRemoveEnd".asInstanceOf[widgetRemoveEnd]
+  
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
+  
+  @scala.inline
+  def zero: zero = "zero".asInstanceOf[zero]
+  
   @js.native
   sealed trait a extends RelativeSorting
   
@@ -377,234 +720,4 @@ object tablesorterStrings {
   sealed trait zero
     extends EmptySorting
        with StringSorting
-  
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def addRows: addRows = "addRows".asInstanceOf[addRows]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def altKey: altKey = "altKey".asInstanceOf[altKey]
-  @scala.inline
-  def appendCache: appendCache = "appendCache".asInstanceOf[appendCache]
-  @scala.inline
-  def applyWidgetId: applyWidgetId = "applyWidgetId".asInstanceOf[applyWidgetId]
-  @scala.inline
-  def applyWidgets: applyWidgets = "applyWidgets".asInstanceOf[applyWidgets]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def blackice: blackice = "blackice".asInstanceOf[blackice]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def buttons: buttons = "buttons".asInstanceOf[buttons]
-  @scala.inline
-  def c: c = "c".asInstanceOf[c]
-  @scala.inline
-  def clientX: clientX = "clientX".asInstanceOf[clientX]
-  @scala.inline
-  def clientY: clientY = "clientY".asInstanceOf[clientY]
-  @scala.inline
-  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def destroyPager: destroyPager = "destroyPager".asInstanceOf[destroyPager]
-  @scala.inline
-  def disablePager: disablePager = "disablePager".asInstanceOf[disablePager]
-  @scala.inline
-  def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
-  @scala.inline
-  def emptyMax: emptyMax = "emptyMax".asInstanceOf[emptyMax]
-  @scala.inline
-  def emptyMin: emptyMin = "emptyMin".asInstanceOf[emptyMin]
-  @scala.inline
-  def enablePager: enablePager = "enablePager".asInstanceOf[enablePager]
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def filterAndSortReset: filterAndSortReset = "filterAndSortReset".asInstanceOf[filterAndSortReset]
-  @scala.inline
-  def filterEnd: filterEnd = "filterEnd".asInstanceOf[filterEnd]
-  @scala.inline
-  def filterInit: filterInit = "filterInit".asInstanceOf[filterInit]
-  @scala.inline
-  def filterReset: filterReset = "filterReset".asInstanceOf[filterReset]
-  @scala.inline
-  def filterResetSaved: filterResetSaved = "filterResetSaved".asInstanceOf[filterResetSaved]
-  @scala.inline
-  def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
-  @scala.inline
-  def from: from = "from".asInstanceOf[from]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def grey: grey = "grey".asInstanceOf[grey]
-  @scala.inline
-  def ice: ice = "ice".asInstanceOf[ice]
-  @scala.inline
-  def jui: jui = "jui".asInstanceOf[jui]
-  @scala.inline
-  def lockedOrder: lockedOrder = "lockedOrder".asInstanceOf[lockedOrder]
-  @scala.inline
-  def `match`: `match` = "match".asInstanceOf[`match`]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
-  @scala.inline
-  def `metro-dark`: `metro-dark` = "metro-dark".asInstanceOf[`metro-dark`]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def movementX: movementX = "movementX".asInstanceOf[movementX]
-  @scala.inline
-  def movementY: movementY = "movementY".asInstanceOf[movementY]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def o: o = "o".asInstanceOf[o]
-  @scala.inline
-  def offsetX: offsetX = "offsetX".asInstanceOf[offsetX]
-  @scala.inline
-  def offsetY: offsetY = "offsetY".asInstanceOf[offsetY]
-  @scala.inline
-  def pageAndSize: pageAndSize = "pageAndSize".asInstanceOf[pageAndSize]
-  @scala.inline
-  def pageMoved: pageMoved = "pageMoved".asInstanceOf[pageMoved]
-  @scala.inline
-  def pageSet: pageSet = "pageSet".asInstanceOf[pageSet]
-  @scala.inline
-  def pageSize: pageSize = "pageSize".asInstanceOf[pageSize]
-  @scala.inline
-  def pageX: pageX = "pageX".asInstanceOf[pageX]
-  @scala.inline
-  def pageY: pageY = "pageY".asInstanceOf[pageY]
-  @scala.inline
-  def pagerBeforeInitialized: pagerBeforeInitialized = "pagerBeforeInitialized".asInstanceOf[pagerBeforeInitialized]
-  @scala.inline
-  def pagerChange: pagerChange = "pagerChange".asInstanceOf[pagerChange]
-  @scala.inline
-  def pagerComplete: pagerComplete = "pagerComplete".asInstanceOf[pagerComplete]
-  @scala.inline
-  def pagerInitialized: pagerInitialized = "pagerInitialized".asInstanceOf[pagerInitialized]
-  @scala.inline
-  def pagerUpdate: pagerUpdate = "pagerUpdate".asInstanceOf[pagerUpdate]
-  @scala.inline
-  def parsed: parsed = "parsed".asInstanceOf[parsed]
-  @scala.inline
-  def parser: parser = "parser".asInstanceOf[parser]
-  @scala.inline
-  def refreshComplete: refreshComplete = "refreshComplete".asInstanceOf[refreshComplete]
-  @scala.inline
-  def refreshWidgets: refreshWidgets = "refreshWidgets".asInstanceOf[refreshWidgets]
-  @scala.inline
-  def relatedTarget: relatedTarget = "relatedTarget".asInstanceOf[relatedTarget]
-  @scala.inline
-  def removeWidget: removeWidget = "removeWidget".asInstanceOf[removeWidget]
-  @scala.inline
-  def resetToLoadState: resetToLoadState = "resetToLoadState".asInstanceOf[resetToLoadState]
-  @scala.inline
-  def resizable: resizable = "resizable".asInstanceOf[resizable]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def saveSortReset: saveSortReset = "saveSortReset".asInstanceOf[saveSortReset]
-  @scala.inline
-  def screenX: screenX = "screenX".asInstanceOf[screenX]
-  @scala.inline
-  def screenY: screenY = "screenY".asInstanceOf[screenY]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def shiftKey: shiftKey = "shiftKey".asInstanceOf[shiftKey]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
-  @scala.inline
-  def sortAppend: sortAppend = "sortAppend".asInstanceOf[sortAppend]
-  @scala.inline
-  def sortBegin: sortBegin = "sortBegin".asInstanceOf[sortBegin]
-  @scala.inline
-  def sortEnd: sortEnd = "sortEnd".asInstanceOf[sortEnd]
-  @scala.inline
-  def sortForce: sortForce = "sortForce".asInstanceOf[sortForce]
-  @scala.inline
-  def sortInitialOrder: sortInitialOrder = "sortInitialOrder".asInstanceOf[sortInitialOrder]
-  @scala.inline
-  def sortReset: sortReset = "sortReset".asInstanceOf[sortReset]
-  @scala.inline
-  def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
-  @scala.inline
-  def sorter: sorter = "sorter".asInstanceOf[sorter]
-  @scala.inline
-  def sorton: sorton = "sorton".asInstanceOf[sorton]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def stickyHeadersInit: stickyHeadersInit = "stickyHeadersInit".asInstanceOf[stickyHeadersInit]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def `tablesorter-initialized`: `tablesorter-initialized` = "tablesorter-initialized".asInstanceOf[`tablesorter-initialized`]
-  @scala.inline
-  def `tablesorter-ready`: `tablesorter-ready` = "tablesorter-ready".asInstanceOf[`tablesorter-ready`]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def to: to = "to".asInstanceOf[to]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def updateAll: updateAll = "updateAll".asInstanceOf[updateAll]
-  @scala.inline
-  def updateCache: updateCache = "updateCache".asInstanceOf[updateCache]
-  @scala.inline
-  def updateCell: updateCell = "updateCell".asInstanceOf[updateCell]
-  @scala.inline
-  def updateComplete: updateComplete = "updateComplete".asInstanceOf[updateComplete]
-  @scala.inline
-  def updateHeaders: updateHeaders = "updateHeaders".asInstanceOf[updateHeaders]
-  @scala.inline
-  def updateRows: updateRows = "updateRows".asInstanceOf[updateRows]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def widgetRemoveEnd: widgetRemoveEnd = "widgetRemoveEnd".asInstanceOf[widgetRemoveEnd]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def zero: zero = "zero".asInstanceOf[zero]
 }
-

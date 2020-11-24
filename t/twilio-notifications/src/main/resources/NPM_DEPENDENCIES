@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "twilio-notifications" : "0.5.9"
+      "twilio-notifications" : "0.5.11"
     }
   ],
   "test-dependencies" : [
     {
-      "twilio-notifications" : "0.5.9"
+      "twilio-notifications" : "0.5.11"
     }
   ],
   "compile-devDependencies" : [

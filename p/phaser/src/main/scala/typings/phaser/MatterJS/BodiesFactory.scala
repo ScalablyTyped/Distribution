@@ -2,10 +2,11 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BodiesFactory extends js.Object {
+  
   /**
     * Creates a new rigid body model with a circle hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -22,6 +23,7 @@ trait BodiesFactory extends js.Object {
   def circle(x: Double, y: Double, radius: Double, options: js.UndefOr[scala.Nothing], maxSides: Double): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): BodyType = js.native
+  
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices).
     * If the vertices are convex, they will pass through as supplied.
@@ -162,6 +164,7 @@ trait BodiesFactory extends js.Object {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
+  
   /**
     * Creates a new rigid body model with a regular polygon hull with the given number of sides.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -176,6 +179,7 @@ trait BodiesFactory extends js.Object {
     */
   def polygon(x: Double, y: Double, sides: Double, radius: Double): BodyType = js.native
   def polygon(x: Double, y: Double, sides: Double, radius: Double, options: IChamferableBodyDefinition): BodyType = js.native
+  
   /**
     * Creates a new rigid body model with a rectangle hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -190,6 +194,7 @@ trait BodiesFactory extends js.Object {
     */
   def rectangle(x: Double, y: Double, width: Double, height: Double): BodyType = js.native
   def rectangle(x: Double, y: Double, width: Double, height: Double, options: IChamferableBodyDefinition): BodyType = js.native
+  
   /**
     * Creates a new rigid body model with a trapezoid hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -213,4 +218,3 @@ trait BodiesFactory extends js.Object {
     options: IChamferableBodyDefinition
   ): BodyType = js.native
 }
-

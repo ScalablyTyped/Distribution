@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubereporting/v1", "youtubereporting_v1.Resource$Jobs")
 @js.native
 class ResourceJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var reports: ResourceJobsReports = js.native
+  
   /**
     * youtubereporting.jobs.create
     * @desc Creates a job and returns it.
@@ -43,6 +44,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * youtubereporting.jobs.delete
     * @desc Deletes a job.
@@ -72,6 +74,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * youtubereporting.jobs.get
     * @desc Gets a job.
@@ -97,6 +100,7 @@ class ResourceJobs protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceJobsGet, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  
   /**
     * youtubereporting.jobs.list
     * @desc Lists jobs.
@@ -128,5 +132,6 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
+  var reports: ResourceJobsReports = js.native
 }
-

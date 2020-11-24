@@ -6,11 +6,12 @@ import typings.std.Window
 import typings.std.stdStrings.unload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_unload extends js.Object {
+  
   def apply(`type`: unload, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
   def apply(
     `type`: unload,
@@ -23,4 +24,3 @@ object removeEventListener_unload extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

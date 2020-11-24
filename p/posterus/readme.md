@@ -10,9 +10,9 @@ Composable async primitives (futures) with cancelation and control over scheduli
 | ------------------ | :-------------: |
 | Full name          | posterus |
 | Keywords           | future, promise, async, asynchronous, composable, cancelable, abortable, scheduling, coroutine, fiber, async, await |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 4084 |
+| # downloads        | 2809 |
 | # stars            | 0 |
 
 ## Links

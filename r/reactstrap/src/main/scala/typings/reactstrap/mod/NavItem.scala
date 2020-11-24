@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.navItemMod.NavItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "NavItem")
+@JSImport("reactstrap/lib", "NavItem")
 @js.native
-class NavItem[T] ()
+class NavItem ()
   extends Component[NavItemProps, js.Object, js.Any]
-

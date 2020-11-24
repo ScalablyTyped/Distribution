@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-saga"
-version := "1.1.3-b29d24"
+version := "1.1.3-8bb278"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

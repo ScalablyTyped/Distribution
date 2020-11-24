@@ -15,18 +15,23 @@ import typings.actionsOnGoogle.apiV1Mod.SmartHomeV1SyncResponse
 import typings.actionsOnGoogle.assistantMod.ServiceBaseApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SmartHomeApp extends ServiceBaseApp {
-  /** @hidden */
-  var _intents: SmartHomeHandlers = js.native
-  /** @public */
-  var jwt: js.UndefOr[SmartHomeJwt] = js.native
-  /** @public */
-  var key: js.UndefOr[String] = js.native
+  
   /** @hidden */
   def _intent(intent: SmartHomeV1Intents, handler: SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]): this.type = js.native
+  
+  /** @hidden */
+  var _intents: SmartHomeHandlers = js.native
+  
+  /** @public */
+  var jwt: js.UndefOr[SmartHomeJwt] = js.native
+  
+  /** @public */
+  var key: js.UndefOr[String] = js.native
+  
   /**
     * Defines a function that will run when a DISCONNECT request is received.
     *
@@ -45,6 +50,7 @@ trait SmartHomeApp extends ServiceBaseApp {
     * @public
     */
   def onDisconnect(handler: SmartHomeHandler[SmartHomeV1DisconnectRequest, SmartHomeV1DisconnectResponse]): this.type = js.native
+  
   /**
     * Defines a function that will run when an EXECUTE request is received.
     *
@@ -67,6 +73,7 @@ trait SmartHomeApp extends ServiceBaseApp {
     * @public
     */
   def onExecute(handler: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse]): this.type = js.native
+  
   /**
     * Defines a function that will run when a QUERY request is received.
     *
@@ -90,6 +97,7 @@ trait SmartHomeApp extends ServiceBaseApp {
     * @public
     */
   def onQuery(handler: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse]): this.type = js.native
+  
   /**
     * Defines a function that will run when a SYNC request is received.
     *
@@ -113,6 +121,7 @@ trait SmartHomeApp extends ServiceBaseApp {
     * @public
     */
   def onSync(handler: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse]): this.type = js.native
+  
   /**
     * Reports the current state of a device or set of devices to the home graph.
     * This may be done if the state of the device was changed locally, like a
@@ -155,6 +164,7 @@ trait SmartHomeApp extends ServiceBaseApp {
     * @public
     */
   def reportState(reportedState: SmartHomeV1ReportStateRequest): js.Promise[String] = js.native
+  
   /**
     * Sends a request to the home graph to send a new SYNC request. This should
     * be called when a device is added or removed for a given user id.
@@ -193,4 +203,3 @@ trait SmartHomeApp extends ServiceBaseApp {
     */
   def requestSync(agentUserId: String): js.Promise[String] = js.native
 }
-

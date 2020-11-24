@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies how an area will be filled. */
 /* Rewritten from type alias, can be one of: 
@@ -18,17 +18,20 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait FillStyle extends js.Object
-
 object FillStyle {
+  
   /** use a bitmap to fill the area. */
   @scala.inline
   def BITMAP: `4` = 4.asInstanceOf[`4`]
+  
   /** use a gradient color to fill the area. */
   @scala.inline
   def GRADIENT: `2` = 2.asInstanceOf[`2`]
+  
   /** use a hatch to fill the area. */
   @scala.inline
   def HATCH: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the area is not filled.
     *
@@ -44,6 +47,7 @@ object FillStyle {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * use a solid color to fill the area.
     *
@@ -52,4 +56,3 @@ object FillStyle {
   @scala.inline
   def SOLID: `1` = 1.asInstanceOf[`1`]
 }
-

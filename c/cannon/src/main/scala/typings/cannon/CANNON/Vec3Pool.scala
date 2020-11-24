@@ -2,12 +2,12 @@ package typings.cannon.CANNON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Vec3Pool extends Pool
-
 object Vec3Pool {
+  
   @scala.inline
   def apply(
     constructObject: () => js.Any,
@@ -21,4 +21,3 @@ object Vec3Pool {
     __obj.asInstanceOf[Vec3Pool]
   }
 }
-

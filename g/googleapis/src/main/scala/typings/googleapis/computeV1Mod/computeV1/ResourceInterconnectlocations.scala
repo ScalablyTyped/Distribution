@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Interconnectlocations")
 @js.native
 class ResourceInterconnectlocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.interconnectLocations.get
     * @desc Returns the details for the specified interconnect location. Gets a
@@ -103,6 +105,7 @@ class ResourceInterconnectlocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnectLocation]
   ): Unit = js.native
+  
   /**
     * compute.interconnectLocations.list
     * @desc Retrieves the list of interconnect locations available to the
@@ -206,4 +209,3 @@ class ResourceInterconnectlocations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaInterconnectLocationList]
   ): Unit = js.native
 }
-

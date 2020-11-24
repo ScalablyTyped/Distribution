@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-media-antd-query" : "1.0.2"
+      "use-media-antd-query" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "use-media-antd-query" : "1.0.2"
+      "use-media-antd-query" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

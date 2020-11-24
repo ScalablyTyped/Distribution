@@ -2,7 +2,7 @@ package typings.amapJsApi.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Size")
 @js.native
@@ -15,4 +15,3 @@ class Size protected ()
     */
   def this(width: Double, height: Double) = this()
 }
-

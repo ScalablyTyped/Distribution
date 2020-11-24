@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChmodFunction extends js.Object {
+  
   /**
     * Alters the permissions of a file or directory by either specifying the absolute
     * permissions in octal form or expressing the changes in symbols.
@@ -43,4 +44,3 @@ trait ChmodFunction extends js.Object {
   def apply(options: String, mode: String, file: String): ShellString = js.native
   def apply(options: String, mode: Double, file: String): ShellString = js.native
 }
-

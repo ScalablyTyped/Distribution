@@ -11,8 +11,8 @@ Replace loader for Webpack
 | Full name          | string-replace-loader |
 | Keywords           | webpack, loader, webpack-loader, replace, string-replace, regex-replace |
 | # releases         | 3 |
-| # dependents       | 90 |
-| # downloads        | 3829051 |
+| # dependents       | 107 |
+| # downloads        | 5405015 |
 | # stars            | 5 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailSpecialFolderKind extends js.Object
-
 /** Defines the email special folders. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailSpecialFolderKind")
 @js.native
 object EmailSpecialFolderKind extends js.Object {
+  
   /** This is the deleted items folder. */
   @js.native
   sealed trait deletedItems extends EmailSpecialFolderKind
@@ -38,6 +38,4 @@ object EmailSpecialFolderKind extends js.Object {
   /** This is the sent items folder. */
   @js.native
   sealed trait sent extends EmailSpecialFolderKind
-  
 }
-

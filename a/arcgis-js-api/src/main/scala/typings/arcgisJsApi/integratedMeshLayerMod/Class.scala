@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.IntegratedMeshLayer
 import typings.arcgisJsApi.esri.IntegratedMeshLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/layers/IntegratedMeshLayer", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends IntegratedMeshLayer {
   def this(properties: IntegratedMeshLayerProperties) = this()
 }
-

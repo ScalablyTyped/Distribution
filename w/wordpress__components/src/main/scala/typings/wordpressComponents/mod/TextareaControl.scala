@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.textareaControlMod.TextareaControl.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components", "TextareaControl")
 @js.native
 object TextareaControl extends TopLevel[ComponentType[Props]]
-

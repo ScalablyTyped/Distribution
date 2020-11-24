@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "apigateway.ApiKey")
 @js.native
@@ -25,11 +25,11 @@ class ApiKey protected ()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ApiKeyArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "apigateway.ApiKey")
 @js.native
 object ApiKey extends js.Object {
+  
   /**
     * Get an existing ApiKey resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -43,10 +43,10 @@ object ApiKey extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apiKeyMod.ApiKey = js.native
   def get(name: String, id: Input[ID], state: ApiKeyState): typings.pulumiAws.apiKeyMod.ApiKey = js.native
   def get(name: String, id: Input[ID], state: ApiKeyState, opts: CustomResourceOptions): typings.pulumiAws.apiKeyMod.ApiKey = js.native
+  
   /**
     * Returns true if the given object is an instance of ApiKey.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/apiKey.ApiKey */ Boolean = js.native
 }
-

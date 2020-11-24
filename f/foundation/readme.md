@@ -11,8 +11,8 @@ You may also want to checkout:
 | Full name          | foundation |
 | Keywords           | zurb, foundation, stylus, express |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 43298 |
+| # dependents       | 4 |
+| # downloads        | 54718 |
 | # stars            | 9 |
 
 ## Links

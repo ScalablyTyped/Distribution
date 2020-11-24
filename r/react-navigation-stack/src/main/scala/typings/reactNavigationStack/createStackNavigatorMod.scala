@@ -13,11 +13,12 @@ import typings.reactNavigationStack.vendorTypesMod.StackNavigationOptions
 import typings.reactNavigationStack.vendorTypesMod.StackNavigationProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/navigators/createStackNavigator", JSImport.Namespace)
 @js.native
 object createStackNavigatorMod extends js.Object {
+  
   def default(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
@@ -39,4 +40,3 @@ object createStackNavigatorMod extends js.Object {
     ]
   ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
 }
-

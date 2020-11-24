@@ -40,11 +40,38 @@ import typings.jupyterlabServices.messagesMod.MessageType
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services/lib/kernel", JSImport.Namespace)
 @js.native
 object kernelMod extends js.Object {
+  
+  @js.native
+  object KernelAPI extends js.Object {
+    
+    val KERNEL_SERVICE_URL: /* "api/kernels" */ String = js.native
+    
+    def getKernelModel(id: String): js.Promise[js.UndefOr[IModel]] = js.native
+    def getKernelModel(id: String, settings: ISettings): js.Promise[js.UndefOr[IModel]] = js.native
+    
+    def interruptKernel(id: String): js.Promise[Unit] = js.native
+    def interruptKernel(id: String, settings: ISettings): js.Promise[Unit] = js.native
+    
+    def listRunning(): js.Promise[js.Array[IModel]] = js.native
+    def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
+    
+    def restartKernel(id: String): js.Promise[Unit] = js.native
+    def restartKernel(id: String, settings: ISettings): js.Promise[Unit] = js.native
+    
+    def shutdownKernel(id: String): js.Promise[Unit] = js.native
+    def shutdownKernel(id: String, settings: ISettings): js.Promise[Unit] = js.native
+    
+    def startNew(): js.Promise[IModel] = js.native
+    def startNew(options: js.UndefOr[scala.Nothing], settings: ISettings): js.Promise[IModel] = js.native
+    def startNew(options: IKernelOptions): js.Promise[IModel] = js.native
+    def startNew(options: IKernelOptions, settings: ISettings): js.Promise[IModel] = js.native
+  }
+  
   @js.native
   /**
     * Construct a new kernel manager.
@@ -57,26 +84,9 @@ object kernelMod extends js.Object {
   }
   
   @js.native
-  object KernelAPI extends js.Object {
-    val KERNEL_SERVICE_URL: /* "api/kernels" */ String = js.native
-    def getKernelModel(id: String): js.Promise[js.UndefOr[IModel]] = js.native
-    def getKernelModel(id: String, settings: ISettings): js.Promise[js.UndefOr[IModel]] = js.native
-    def interruptKernel(id: String): js.Promise[Unit] = js.native
-    def interruptKernel(id: String, settings: ISettings): js.Promise[Unit] = js.native
-    def listRunning(): js.Promise[js.Array[IModel]] = js.native
-    def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
-    def restartKernel(id: String): js.Promise[Unit] = js.native
-    def restartKernel(id: String, settings: ISettings): js.Promise[Unit] = js.native
-    def shutdownKernel(id: String): js.Promise[Unit] = js.native
-    def shutdownKernel(id: String, settings: ISettings): js.Promise[Unit] = js.native
-    def startNew(): js.Promise[IModel] = js.native
-    def startNew(options: IKernelOptions): js.Promise[IModel] = js.native
-    def startNew(options: IKernelOptions, settings: ISettings): js.Promise[IModel] = js.native
-  }
-  
-  @js.native
   object KernelMessage extends js.Object {
-    def createMessage[T /* <: IExecuteResultMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
+    
+    def createMessage[T /* <: IStreamMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_IClearOutputMsg[T /* <: IClearOutputMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
     @JSName("createMessage")
@@ -116,6 +126,8 @@ object kernelMod extends js.Object {
     @JSName("createMessage")
     def createMessage_T_IExecuteRequestMsg[T /* <: IExecuteRequestMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
     @JSName("createMessage")
+    def createMessage_T_IExecuteResultMsg[T /* <: IExecuteResultMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
+    @JSName("createMessage")
     def createMessage_T_IHistoryReplyMsg[T /* <: IHistoryReplyMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_IHistoryRequestMsg[T /* <: IHistoryRequestMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
@@ -138,28 +150,42 @@ object kernelMod extends js.Object {
     @JSName("createMessage")
     def createMessage_T_IStatusMsg[T /* <: IStatusMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
     @JSName("createMessage")
-    def createMessage_T_IStreamMsg[T /* <: IStreamMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
-    @JSName("createMessage")
     def createMessage_T_IUpdateDisplayDataMsg[T /* <: IUpdateDisplayDataMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = js.native
+    
     def isClearOutputMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IClearOutputMsg */ Boolean = js.native
+    
     def isCommCloseMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.ICommCloseMsg<'iopub' | 'shell'> */ Boolean = js.native
+    
     def isCommMsgMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.ICommMsgMsg<'iopub' | 'shell'> */ Boolean = js.native
+    
     def isCommOpenMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.ICommOpenMsg<'iopub' | 'shell'> */ Boolean = js.native
+    
     def isDebugEventMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDebugEventMsg */ Boolean = js.native
+    
     def isDebugReplyMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDebugReplyMsg */ Boolean = js.native
+    
     def isDebugRequestMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDebugRequestMsg */ Boolean = js.native
+    
     def isDisplayDataMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg */ Boolean = js.native
+    
     def isErrorMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IErrorMsg */ Boolean = js.native
+    
     def isExecuteInputMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IExecuteInputMsg */ Boolean = js.native
+    
     def isExecuteReplyMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IExecuteReplyMsg */ Boolean = js.native
+    
     def isExecuteResultMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IExecuteResultMsg */ Boolean = js.native
+    
     def isInfoRequestMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IInfoRequestMsg */ Boolean = js.native
+    
     def isInputReplyMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IInputReplyMsg */ Boolean = js.native
+    
     def isInputRequestMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IInputRequestMsg */ Boolean = js.native
+    
     def isStatusMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IStatusMsg */ Boolean = js.native
+    
     def isStreamMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IStreamMsg */ Boolean = js.native
+    
     def isUpdateDisplayDataMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IUpdateDisplayDataMsg */ Boolean = js.native
   }
-  
 }
-

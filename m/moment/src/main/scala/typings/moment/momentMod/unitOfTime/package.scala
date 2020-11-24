@@ -2,10 +2,12 @@ package typings.moment.momentMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object unitOfTime {
+  
   type DurationAs = typings.moment.momentMod.unitOfTime.Base
+  
   /* Rewritten from type alias, can be one of: 
     - typings.moment.momentMod.unitOfTime.Base
     - typings.moment.momentMod.unitOfTime.quarter

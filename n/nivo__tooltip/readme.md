@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__tooltip
 
-Typings are for version 0.62.0
+Typings are for version 0.65.1
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/tooltip.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/tooltip)
@@ -10,12 +10,15 @@ Typings are for version 0.62.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/tooltip |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 411978 |
+| # releases         | 13 |
+| # dependents       | 32 |
+| # downloads        | 3321595 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/plouc/nivo#readme)
+- [Bugs](https://github.com/plouc/nivo/issues)
+- [Repository](https://github.com/plouc/nivo)
 - [Npm](https://www.npmjs.com/package/%40nivo%2Ftooltip)
     
 

@@ -4,11 +4,12 @@ import typings.node.NodeJS.ReadableStream
 import typings.qiniu.mod.conf.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "resume_up")
 @js.native
 object resumeUp extends js.Object {
+  
   @js.native
   /**
     * 上传可选参数
@@ -166,14 +167,17 @@ object resumeUp extends js.Object {
       resumeRecordFile: String,
       progressCallback: js.Function1[/* data */ js.Any, Unit]
     ) = this()
+    
     /**
       * @default ''
       */
     var fname: String = js.native
+    
     /**
       * @default null
       */
     var mimeType: js.UndefOr[String] = js.native
+    
     /**
       * @default {}
       */
@@ -183,7 +187,9 @@ object resumeUp extends js.Object {
   @js.native
   class ResumeUploader () extends js.Object {
     def this(config: Config) = this()
+    
     var config: Config = js.native
+    
     def putFile(uploadToken: String, key: String, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -196,6 +202,7 @@ object resumeUp extends js.Object {
     def putFile(uploadToken: String, key: String, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
     def putFile(uploadToken: String, key: Null, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     def putFile(uploadToken: String, key: Null, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putFileWithoutKey(uploadToken: String, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -205,6 +212,7 @@ object resumeUp extends js.Object {
       * @param callback
       */
     def putFileWithoutKey(uploadToken: String, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putStream(
       uploadToken: String,
       key: String,
@@ -247,6 +255,4 @@ object resumeUp extends js.Object {
       callback: callback
     ): Unit = js.native
   }
-  
 }
-

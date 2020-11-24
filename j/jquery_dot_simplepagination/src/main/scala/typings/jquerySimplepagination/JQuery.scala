@@ -16,10 +16,11 @@ import typings.jquerySimplepagination.jquerySimplepaginationStrings.updateItems
 import typings.jquerySimplepagination.jquerySimplepaginationStrings.updateItemsOnPage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def pagination(): JQuery = js.native
   def pagination(method: String): js.Any = js.native
   def pagination(method: String, value: js.Any): js.Any = js.native
@@ -141,4 +142,3 @@ trait JQuery extends js.Object {
   @JSName("pagination")
   def pagination_updateItemsOnPage(method: updateItemsOnPage, itemsOnPage: Double): JQuery = js.native
 }
-

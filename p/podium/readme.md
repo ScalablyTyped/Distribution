@@ -12,7 +12,7 @@ Node compatible event emitter with extra features
 | Keywords           | emitter, event |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 7552916 |
+| # downloads        | 6694858 |
 | # stars            | 0 |
 
 ## Links

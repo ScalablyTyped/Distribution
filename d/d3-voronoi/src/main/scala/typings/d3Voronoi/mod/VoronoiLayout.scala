@@ -2,15 +2,17 @@ package typings.d3Voronoi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VoronoiLayout[T] extends js.Object {
+  
   /**
     * Computes the Voronoi diagram for the specified data points.
     * @param data Array of data elements
     */
   def apply(data: js.Array[T]): VoronoiDiagram[T] = js.native
+  
   /**
     * Returns the current clip extent which defaults to null.
     *
@@ -31,6 +33,7 @@ trait VoronoiLayout[T] extends js.Object {
     * where x0 is the left side of the extent, y0 is the top, x1 is the right and y1 is the bottom.
     */
   def extent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
+  
   /**
     * Return the Delaunay triangulation of the specified data array as an array of links.
     * Each link has source and target attributes referring to elements in data.
@@ -38,6 +41,7 @@ trait VoronoiLayout[T] extends js.Object {
     * @param data Array of data points.
     */
   def links(data: js.Array[T]): js.Array[VoronoiLink[T]] = js.native
+  
   /**
     * Return an array of polygons clipped to the extent, one for each input point in the specified data points,
     * corresponding to the cells in the computed Voronoi diagram.
@@ -55,6 +59,7 @@ trait VoronoiLayout[T] extends js.Object {
     * @param data Array of data points.
     */
   def polygons(data: js.Array[T]): js.Array[VoronoiPolygon[T]] = js.native
+  
   /**
     * Get the clip size of the Voronoi layout. Size is an alias for voronoi.extent
     * where the minimum x and y of the extent are ⟨0,0⟩.
@@ -69,6 +74,7 @@ trait VoronoiLayout[T] extends js.Object {
     * where the minimum x and y of the extent are ⟨0,0⟩.
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Return the Delaunay triangulation of the specified data array as an array of triangles.
     * Each triangle is a three-element array of elements from data.
@@ -76,6 +82,7 @@ trait VoronoiLayout[T] extends js.Object {
     * @param data Array of data points.
     */
   def triangles(data: js.Array[T]): js.Array[VoronoiTriangle[T]] = js.native
+  
   /**
     * Return the current x-coordinate accessor,
     * which defaults to accessing the first element of an array (i.e. at index 0).
@@ -88,6 +95,7 @@ trait VoronoiLayout[T] extends js.Object {
     * numeric value for the x-coordinate.
     */
   def x(x: js.Function1[/* d */ T, Double]): this.type = js.native
+  
   /**
     * Return the current y-coordinate accessor,
     * which defaults to accessing the second element of an array (i.e. at index 1).
@@ -101,4 +109,3 @@ trait VoronoiLayout[T] extends js.Object {
     */
   def y(y: js.Function1[/* d */ T, Double]): this.type = js.native
 }
-

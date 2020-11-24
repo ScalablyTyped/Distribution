@@ -10,9 +10,9 @@ Chat web widget for React apps
 | ------------------ | :-------------: |
 | Full name          | react-chat-widget |
 | Keywords           | react, chat, widget, javascript |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 54367 |
+| # releases         | 17 |
+| # dependents       | 4 |
+| # downloads        | 76497 |
 | # stars            | 1 |
 
 ## Links

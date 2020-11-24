@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RayHelper")
 @js.native
@@ -12,16 +12,16 @@ class RayHelper protected ()
     * Instantiate a new ray helper.
     * As raycast might be hard to debug, the RayHelper can help rendering the different rays
     * in order to better appreciate the issue one might have.
-    * @see http://doc.babylonjs.com/babylon101/raycasts#debugging
+    * @see https://doc.babylonjs.com/babylon101/raycasts#debugging
     * @param ray Defines the ray we are currently tryin to visualize
     */
   def this(ray: typings.babylonjs.BABYLON.Ray) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.RayHelper")
 @js.native
 object RayHelper extends js.Object {
+  
   /**
     * Helper function to create a colored helper in a scene in one line.
     * @param ray Defines the ray we are currently tryin to visualize
@@ -35,4 +35,3 @@ object RayHelper extends js.Object {
     color: typings.babylonjs.BABYLON.Color3
   ): typings.babylonjs.BABYLON.RayHelper = js.native
 }
-

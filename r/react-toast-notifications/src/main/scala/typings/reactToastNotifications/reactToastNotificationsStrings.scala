@@ -5,9 +5,52 @@ import typings.reactToastNotifications.mod.Placement
 import typings.reactToastNotifications.mod.TransitionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactToastNotificationsStrings {
+  
+  @scala.inline
+  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
+  
+  @scala.inline
+  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @scala.inline
+  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @scala.inline
+  def entered: entered = "entered".asInstanceOf[entered]
+  
+  @scala.inline
+  def entering: entering = "entering".asInstanceOf[entering]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def exited: exited = "exited".asInstanceOf[exited]
+  
+  @scala.inline
+  def exiting: exiting = "exiting".asInstanceOf[exiting]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  
+  @scala.inline
+  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @scala.inline
+  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait `bottom-center` extends Placement
   
@@ -49,34 +92,4 @@ object reactToastNotificationsStrings {
   
   @js.native
   sealed trait warning extends AppearanceTypes
-  
-  @scala.inline
-  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def entered: entered = "entered".asInstanceOf[entered]
-  @scala.inline
-  def entering: entering = "entering".asInstanceOf[entering]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exited: exited = "exited".asInstanceOf[exited]
-  @scala.inline
-  def exiting: exiting = "exiting".asInstanceOf[exiting]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

@@ -10,9 +10,9 @@ IBM DB2 and IBM Informix bindings for node
 | ------------------ | :-------------: |
 | Full name          | ibm_db |
 | Keywords           | node, odbc, db2, driver |
-| # releases         | 13 |
-| # dependents       | 23 |
-| # downloads        | 393024 |
+| # releases         | 11 |
+| # dependents       | 24 |
+| # downloads        | 432308 |
 | # stars            | 11 |
 
 ## Links

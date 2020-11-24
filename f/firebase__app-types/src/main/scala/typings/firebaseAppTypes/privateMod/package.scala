@@ -2,14 +2,16 @@ package typings.firebaseAppTypes
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object privateMod {
+  
   type AppHook = js.Function2[
     /* event */ java.lang.String, 
     /* app */ typings.firebaseAppTypes.mod.FirebaseApp, 
     scala.Unit
   ]
+  
   type FirebaseServiceFactory = js.Function3[
     /* app */ typings.firebaseAppTypes.mod.FirebaseApp, 
     /* extendApp */ js.UndefOr[
@@ -18,5 +20,6 @@ package object privateMod {
     /* instanceString */ js.UndefOr[java.lang.String], 
     typings.firebaseAppTypes.privateMod.FirebaseService
   ]
+  
   type FirebaseServiceNamespace[T /* <: typings.firebaseAppTypes.privateMod.FirebaseService */] = js.Function1[/* app */ js.UndefOr[typings.firebaseAppTypes.mod.FirebaseApp], T]
 }

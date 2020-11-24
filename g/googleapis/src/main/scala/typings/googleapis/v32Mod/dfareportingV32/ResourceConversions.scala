@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Conversions")
 @js.native
 class ResourceConversions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.conversions.batchinsert
     * @desc Inserts conversions.
@@ -45,6 +45,7 @@ class ResourceConversions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConversionsBatchInsertResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.conversions.batchupdate
     * @desc Updates existing conversions.
@@ -77,5 +78,6 @@ class ResourceConversions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConversionsBatchUpdateResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Directorysitecontacts")
 @js.native
 class ResourceDirectorysitecontacts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.directorySiteContacts.get
     * @desc Gets one directory site contact by ID.
@@ -45,6 +47,7 @@ class ResourceDirectorysitecontacts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDirectorySiteContact]
   ): Unit = js.native
+  
   /**
     * dfareporting.directorySiteContacts.list
     * @desc Retrieves a list of directory site contacts, possibly filtered.
@@ -85,4 +88,3 @@ class ResourceDirectorysitecontacts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDirectorySiteContactsListResponse]
   ): Unit = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.reduxOrm.reduxMod.ORMSelector
 import typings.reduxOrm.reduxMod.Selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm", "createSelector")
 @js.native
 object createSelector extends js.Object {
+  
   def apply[I, R](
     orm: typings.reduxOrm.ormMod.ORM[I, /* keyof I */ String],
     ormSelector: ORMSelector[I, js.Array[js.Any], R]
@@ -71,4 +72,3 @@ object createSelector extends js.Object {
     ormSelector: ORMSelector[I, js.Tuple6[R1, R2, R3, R4, R5, R6], R]
   ): Selector[S, R] = js.native
 }
-

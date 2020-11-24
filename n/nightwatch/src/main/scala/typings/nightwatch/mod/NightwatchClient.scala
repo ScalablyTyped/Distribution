@@ -2,13 +2,13 @@ package typings.nightwatch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NightwatchClient extends js.Object {
+  
   var api: NightwatchAPI = js.native
-  @JSName("assertion")
-  var assertion_Original: NightwatchAssert = js.native
+  
   def assertion(passed: Boolean): Unit = js.native
   def assertion(
     passed: Boolean,
@@ -206,5 +206,6 @@ trait NightwatchClient extends js.Object {
     abortOnFailure: Boolean,
     originalStackTrace: String
   ): Unit = js.native
+  @JSName("assertion")
+  var assertion_Original: NightwatchAssert = js.native
 }
-

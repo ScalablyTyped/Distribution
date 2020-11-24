@@ -3,11 +3,12 @@ package typings.semver.mod
 import typings.semver.rangeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "simplifyRange")
 @js.native
 object simplifyRange extends js.Object {
+  
   /**
     * Return a "simplified" range that matches the same items in `versions` list as the range specified.
     * Note that it does *not* guarantee that it would match the same versions in all cases,
@@ -21,4 +22,3 @@ object simplifyRange extends js.Object {
   def apply(ranges: js.Array[String], range: ^): String | ^  = js.native
   def apply(ranges: js.Array[String], range: ^, options: Options): String | ^  = js.native
 }
-

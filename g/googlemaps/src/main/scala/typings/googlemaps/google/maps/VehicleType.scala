@@ -2,14 +2,14 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VehicleType extends js.Object
-
 @JSGlobal("google.maps.VehicleType")
 @js.native
 object VehicleType extends js.Object {
+  
   @js.native
   sealed trait BUS extends VehicleType
   
@@ -60,6 +60,4 @@ object VehicleType extends js.Object {
   
   @js.native
   sealed trait TROLLEYBUS extends VehicleType
-  
 }
-

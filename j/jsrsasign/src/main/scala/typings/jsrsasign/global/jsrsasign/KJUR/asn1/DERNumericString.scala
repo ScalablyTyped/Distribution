@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER NumericString
@@ -15,4 +15,3 @@ class DERNumericString protected ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString {
   def this(params: StringParam) = this()
 }
-

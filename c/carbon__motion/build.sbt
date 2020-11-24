@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "carbon__motion"
-version := "0.0-dt-20190207Z-f7c7ea"
+version := "0.0-dt-20200925Z-7d9801"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

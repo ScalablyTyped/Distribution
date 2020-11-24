@@ -10,49 +10,53 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.valuechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Characteristic of a GATT service. */
 @js.native
 trait GattCharacteristic extends js.Object {
-  /** Gets the handle used to uniquely identify GATT-based characteristic attributes as declared on the Bluetooth LE device. */
-  var attributeHandle: Double = js.native
-  /** Gets the GATT characteristic properties, as defined by the GATT profile. */
-  var characteristicProperties: GattCharacteristicProperties = js.native
-  /** An App can register an event handler in order to receive events when notification or indications are received from a device, after setting the Client Characteristic Configuration Descriptor. */
-  @JSName("onvaluechanged")
-  var onvaluechanged_Original: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs] = js.native
-  /** Gets the list of presentation format descriptors associated with this GattCharacteristic, in the order specified by the Aggregate Format Descriptor. */
-  var presentationFormats: IVectorView[GattPresentationFormat] = js.native
-  /** Gets or sets the desired GATT security options for over the air communication with the device. */
-  var protectionLevel: GattProtectionLevel = js.native
-  /** Gets the GattDeviceService of which this characteristic is a member. */
-  var service: GattDeviceService = js.native
-  /** Get the user friendly description for this GattCharacteristic, if the User Description Descriptor is present, otherwise this will be an empty string. */
-  var userDescription: String = js.native
-  /** Gets the GATT Characteristic UUID for this GattCharacteristic. */
-  var uuid: String = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs]): Unit = js.native
+  
+  /** Gets the handle used to uniquely identify GATT-based characteristic attributes as declared on the Bluetooth LE device. */
+  var attributeHandle: Double = js.native
+  
+  /** Gets the GATT characteristic properties, as defined by the GATT profile. */
+  var characteristicProperties: GattCharacteristicProperties = js.native
+  
   /**
     * Gets the collection of all descriptors belonging to this GattCharacteristic instance.
     * @return The collection of all descriptors belonging to this GattCharacteristic instance.
     */
   def getAllDescriptors(): IVectorView[GattDescriptor] = js.native
+  
   /**
     * Returns a vector of descriptors, that are identified by the specified UUID, and belong to this GattCharacteristic instance.
     * @param descriptorUuid The UUID for the descriptors to be retrieved.
     * @return A vector of descriptors whose UUIDs match descriptorUuid.
     */
   def getDescriptors(descriptorUuid: String): IVectorView[GattDescriptor] = js.native
+  
   /** An App can register an event handler in order to receive events when notification or indications are received from a device, after setting the Client Characteristic Configuration Descriptor. */
   def onvaluechanged(ev: GattValueChangedEventArgs with WinRTEvent[GattCharacteristic]): Unit = js.native
+  /** An App can register an event handler in order to receive events when notification or indications are received from a device, after setting the Client Characteristic Configuration Descriptor. */
+  @JSName("onvaluechanged")
+  var onvaluechanged_Original: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs] = js.native
+  
+  /** Gets the list of presentation format descriptors associated with this GattCharacteristic, in the order specified by the Aggregate Format Descriptor. */
+  var presentationFormats: IVectorView[GattPresentationFormat] = js.native
+  
+  /** Gets or sets the desired GATT security options for over the air communication with the device. */
+  var protectionLevel: GattProtectionLevel = js.native
+  
   /**
     * Reads the current value of the ClientCharacteristicConfigurationDescriptor.
     * @return The object that manages the asynchronous operation. Upon completion of the asynchronous method, the IAsyncOperation(GattReadClientCharacteristicConfigurationDescriptorResult) contains the result of the read operation, which contains the status of completed operation.
     */
   def readClientCharacteristicConfigurationDescriptorAsync(): IPromiseWithIAsyncOperation[GattReadClientCharacteristicConfigurationDescriptorResult] = js.native
+  
   /**
     * Performs a Characteristic Value read from the value cache maintained by Windows.
     * @return The object required to manage the asynchronous operation, which, upon completion, returns a GattReadResult object, which in turn contains the completion status of the asynchronous operation and, if successful, the data read from the device.
@@ -64,9 +68,20 @@ trait GattCharacteristic extends js.Object {
     * @return The object required to manage the asynchronous operation, which, upon completion, returns a GattReadResult object, which in turn contains the completion status of the asynchronous operation and, if successful, the data read from the device.
     */
   def readValueAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[GattReadResult] = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs]): Unit = js.native
+  
+  /** Gets the GattDeviceService of which this characteristic is a member. */
+  var service: GattDeviceService = js.native
+  
+  /** Get the user friendly description for this GattCharacteristic, if the User Description Descriptor is present, otherwise this will be an empty string. */
+  var userDescription: String = js.native
+  
+  /** Gets the GATT Characteristic UUID for this GattCharacteristic. */
+  var uuid: String = js.native
+  
   /**
     * Writes the ClientCharacteristicConfigurationDescriptor to the Bluetooth LE device, and if the value to be written represents an indication or a notification and a ValueChanged event handler is registered, enables receiving ValueChanged events from the device.
     * @param clientCharacteristicConfigurationDescriptorValue Specifies a new value for the ClientCharacteristicConfigurationDescriptor of this Characteristic object.
@@ -75,6 +90,7 @@ trait GattCharacteristic extends js.Object {
   def writeClientCharacteristicConfigurationDescriptorAsync(
     clientCharacteristicConfigurationDescriptorValue: GattClientCharacteristicConfigurationDescriptorValue
   ): IPromiseWithIAsyncOperation[GattCommunicationStatus] = js.native
+  
   /**
     * Performs a Characteristic Value write to a Bluetooth LE device.
     * @param value A Windows.Storage.Streams.IBuffer object which contains the data to be written to the Bluetooth LE device.
@@ -89,4 +105,3 @@ trait GattCharacteristic extends js.Object {
     */
   def writeValueAsync(value: IBuffer, writeOption: GattWriteOption): IPromiseWithIAsyncOperation[GattCommunicationStatus] = js.native
 }
-

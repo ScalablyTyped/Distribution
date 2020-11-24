@@ -2,11 +2,12 @@ package typings.winrt.global.Windows.ApplicationModel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.ApplicationModel.Search")
 @js.native
 object Search extends js.Object {
+  
   @js.native
   class LocalContentSuggestionSettings ()
     extends typings.winrt.Windows.ApplicationModel.Search.LocalContentSuggestionSettings
@@ -14,6 +15,12 @@ object Search extends js.Object {
   @js.native
   class SearchPane ()
     extends typings.winrt.Windows.ApplicationModel.Search.SearchPane
+  /* static members */
+  @js.native
+  object SearchPane extends js.Object {
+    
+    def getForCurrentView(): typings.winrt.Windows.ApplicationModel.Search.SearchPane = js.native
+  }
   
   @js.native
   class SearchPaneQueryChangedEventArgs ()
@@ -50,12 +57,4 @@ object Search extends js.Object {
   @js.native
   class SearchSuggestionCollection ()
     extends typings.winrt.Windows.ApplicationModel.Search.SearchSuggestionCollection
-  
-  /* static members */
-  @js.native
-  object SearchPane extends js.Object {
-    def getForCurrentView(): typings.winrt.Windows.ApplicationModel.Search.SearchPane = js.native
-  }
-  
 }
-

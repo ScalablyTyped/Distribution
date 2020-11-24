@@ -10,9 +10,9 @@ Check license info for a package
 | ------------------ | :-------------: |
 | Full name          | license-checker |
 | Keywords           | license, cli, checker, oss |
-| # releases         | 17 |
-| # dependents       | 67 |
-| # downloads        | 3735565 |
+| # releases         | 9 |
+| # dependents       | 83 |
+| # downloads        | 6600056 |
 | # stars            | 20 |
 
 ## Links

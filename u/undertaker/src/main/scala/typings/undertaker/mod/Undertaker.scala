@@ -3,10 +3,11 @@ package typings.undertaker.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Undertaker extends EventEmitter {
+  
   /**
     * Takes a string or function (task) and returns a timestamp of the last time the task was run successfully.
     * The time will be the time the task started.  Returns undefined if the task has not been run.
@@ -15,6 +16,7 @@ trait Undertaker extends EventEmitter {
     */
   def lastRun(task: Task): Double = js.native
   def lastRun(task: Task, timeResolution: Double): Double = js.native
+  
   /**
     * Takes a variable amount of strings (taskName) and/or functions (fn)
     * and returns a function of the composed tasks or functions.
@@ -35,6 +37,7 @@ trait Undertaker extends EventEmitter {
     * @param tasks - list of tasks.
     */
   def parallel(tasks: js.Array[Task]): TaskFunction = js.native
+  
   /**
     * Returns the current registry object.
     */
@@ -45,6 +48,7 @@ trait Undertaker extends EventEmitter {
     * @param registry - Instance of registry.
     */
   def registry(registry: typings.undertakerRegistry.mod.^): Unit = js.native
+  
   /**
     * Takes a variable amount of strings (taskName) and/or functions (fn)
     * and returns a function of the composed tasks or functions.
@@ -65,6 +69,7 @@ trait Undertaker extends EventEmitter {
     * @param tasks - List of tasks.
     */
   def series(tasks: js.Array[Task]): TaskFunction = js.native
+  
   /**
     * Register the task by the name property of the function.
     * @param fn - Task function.
@@ -81,6 +86,7 @@ trait Undertaker extends EventEmitter {
     * @param fn - Task function.
     */
   def task(taskName: String, fn: TaskFunction): Unit = js.native
+  
   /**
     * Optionally takes an object (options) and returns an object representing the tree of registered tasks.
     * @param options - Tree options.
@@ -88,4 +94,3 @@ trait Undertaker extends EventEmitter {
   def tree(): TreeResult = js.native
   def tree(options: TreeOptions): TreeResult = js.native
 }
-

@@ -10,9 +10,9 @@ import typings.react.mod.FC
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Anchor")
+@JSImport("grommet", "Anchor")
 @js.native
 object Anchor extends TopLevel[
       FC[
@@ -22,4 +22,3 @@ object Anchor extends TopLevel[
         ])
       ]
     ]
-

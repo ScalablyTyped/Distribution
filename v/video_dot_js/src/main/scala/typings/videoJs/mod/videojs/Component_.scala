@@ -10,7 +10,7 @@ import typings.videoJs.videoJsStrings.height
 import typings.videoJs.videoJsStrings.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for all UI Components.
@@ -22,9 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Component_ extends EventedMixin {
-  var children_ : js.Array[Component] = js.native
-  var options_ : ComponentOptions = js.native
-  var player_ : Player = js.native
+  
   /**
     * Find a single DOM element matching a `selector`. This can be within the `Component`s
     * `contentEl()` or another custom context.
@@ -48,6 +46,7 @@ trait Component_ extends EventedMixin {
   def $(selector: String, context: String): Element = js.native
   @JSName("$")
   def $(selector: String, context: Element): Element = js.native
+  
   /**
     * Finds all DOM element matching a `selector`. This can be within the `Component`s
     * `contentEl()` or another custom context.
@@ -71,6 +70,7 @@ trait Component_ extends EventedMixin {
   def DollarDollar(selector: String, context: String): NodeList = js.native
   @JSName("$$")
   def DollarDollar(selector: String, context: Element): NodeList = js.native
+  
   /**
     * Add a child `Component` inside the current `Component`.
     *
@@ -108,6 +108,7 @@ trait Component_ extends EventedMixin {
   def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any, index: Double): T = js.native
+  
   /**
     * Add a CSS class name to the `Component`s element.
     *
@@ -115,16 +116,19 @@ trait Component_ extends EventedMixin {
     *        CSS class name to add
     */
   def addClass(classToAdd: String): Unit = js.native
+  
   /**
     * Remove the focus from this component
     */
   def blur(): Unit = js.native
+  
   /**
     * Builds the default DOM class name. Should be overriden by sub-components.
     *
     * @return The DOM class name for this object.
     */
   def buildCSSClass(): String = js.native
+  
   /**
     * Cancels a queued callback passed to {@link Component#requestAnimationFrame}
     * (rAF).
@@ -141,12 +145,16 @@ trait Component_ extends EventedMixin {
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/window/cancelAnimationFrame}
     */
   def cancelAnimationFrame(id: Double): Double = js.native
+  
   /**
     * Get an array of all child components
     *
     * @return The children
     */
   def children(): js.Array[Component] = js.native
+  
+  var children_ : js.Array[Component] = js.native
+  
   /**
     * Clears an interval that gets created via `window.setInterval` or
     * {@link Component#setInterval}. If you set an inteval via {@link Component#setInterval}
@@ -162,6 +170,7 @@ trait Component_ extends EventedMixin {
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval}
     */
   def clearInterval(intervalId: Double): Double = js.native
+  
   /**
     * Clears a timeout that gets created via `window.setTimeout` or
     * {@link Component#setTimeout}. If you set a timeout via {@link Component#setTimeout}
@@ -177,6 +186,7 @@ trait Component_ extends EventedMixin {
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearTimeout}
     */
   def clearTimeout(timeoutId: Double): Double = js.native
+  
   /**
     * Return the `Component`s DOM element. This is where children get inserted.
     * This will usually be the the same as the element returned in {@link Component#el}.
@@ -184,7 +194,9 @@ trait Component_ extends EventedMixin {
     * @return The content element for this `Component`.
     */
   def contentEl(): Element = js.native
+  
   def controlText(key: String): String = js.native
+  
   /**
     * Create the `Component`s DOM element.
     *
@@ -207,6 +219,7 @@ trait Component_ extends EventedMixin {
   def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any): Element = js.native
+  
   @JSName("currentDimension")
   def currentDimension_height(widthOrHeight: height): Double = js.native
   /**
@@ -221,6 +234,7 @@ trait Component_ extends EventedMixin {
     */
   @JSName("currentDimension")
   def currentDimension_width(widthOrHeight: width): Double = js.native
+  
   /**
     * Get an object that contains width and height values of the `Component`s
     * computed style.
@@ -228,6 +242,7 @@ trait Component_ extends EventedMixin {
     * @return The dimensions of the components element
     */
   def currentDimensions(): DimensionObject = js.native
+  
   /**
     * Get the height of the `Component`s computed style. Uses `window.getComputedStyle`.
     *
@@ -235,6 +250,7 @@ trait Component_ extends EventedMixin {
     *           The height of the `Component`s computed style.
     */
   def currentHeight(): Double = js.native
+  
   /**
     * Get the width of the `Component`s computed style. Uses `window.getComputedStyle`.
     *
@@ -242,6 +258,7 @@ trait Component_ extends EventedMixin {
     *           The width of the `Component`s computed style.
     */
   def currentWidth(): Double = js.native
+  
   @JSName("dimension")
   def dimension_height(widthOrHeight: height): Double = js.native
   @JSName("dimension")
@@ -289,6 +306,7 @@ trait Component_ extends EventedMixin {
   def dimension_width(widthOrHeight: width, num: Double): Unit = js.native
   @JSName("dimension")
   def dimension_width(widthOrHeight: width, num: Double, skipListeners: Boolean): Unit = js.native
+  
   /**
     * Set both the width and height of the `Component` element at the same time.
     *
@@ -302,18 +320,21 @@ trait Component_ extends EventedMixin {
   def dimensions(width: String, height: Double): Unit = js.native
   def dimensions(width: Double, height: String): Unit = js.native
   def dimensions(width: Double, height: Double): Unit = js.native
+  
   /**
     * Dispose of the `Component` and all child components.
     *
     * @fires Component#dispose
     */
   def dispose(): Unit = js.native
+  
   /**
     * Get the `Component`s DOM element
     *
     * @return The DOM element for this `Component`.
     */
   def el(): Element = js.native
+  
   /**
     * Emit a 'tap' events when touch event support gets detected. This gets used to
     * support toggling the controls through a tap on the video. They get enabled
@@ -327,6 +348,7 @@ trait Component_ extends EventedMixin {
     * @listens Component#touchend
     */
   def emitTapEvents(): Unit = js.native
+  
   /**
     * This function reports user activity whenever touch events happen. This can get
     * turned off by any sub-components that wants touch events to act another way.
@@ -351,10 +373,12 @@ trait Component_ extends EventedMixin {
     * @listens Component#touchcancel
     */
   def enableTouchActivity(): Unit = js.native
+  
   /**
     * Set the focus to this component
     */
   def focus(): Unit = js.native
+  
   /**
     * Get the value of an attribute on the `Component`s element.
     *
@@ -370,6 +394,7 @@ trait Component_ extends EventedMixin {
     * @see [DOM API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute}
     */
   def getAttribute(attribute: String): String | Null = js.native
+  
   /**
     * Returns the child `Component` with the given `name`.
     *
@@ -379,6 +404,7 @@ trait Component_ extends EventedMixin {
     * @return The child `Component` with the given `name` or undefined.
     */
   def getChild(name: String): js.UndefOr[Component] = js.native
+  
   /**
     * Returns the child `Component` with the given `id`.
     *
@@ -388,6 +414,7 @@ trait Component_ extends EventedMixin {
     * @return The child `Component` with the given `id` or undefined.
     */
   def getChildById(id: String): js.UndefOr[Component] = js.native
+  
   /**
     * Check if a component's element has a CSS class name.
     *
@@ -398,6 +425,7 @@ trait Component_ extends EventedMixin {
     *         - False if the `Component` does not have the class`
     */
   def hasClass(classToCheck: String): Boolean = js.native
+  
   def height(): Double | String = js.native
   def height(num: String): Unit = js.native
   def height(num: String, skipListeners: Boolean): Unit = js.native
@@ -416,21 +444,25 @@ trait Component_ extends EventedMixin {
     */
   def height(num: Double): Unit = js.native
   def height(num: Double, skipListeners: Boolean): Unit = js.native
+  
   /**
     * Hide the `Component`s element if it is currently showing by adding the
     * 'vjs-hidden` class name to it.
     */
   def hide(): Unit = js.native
+  
   /**
     * Get this `Component`s ID
     *
     * @return The id of this `Component`
     */
   def id(): String = js.native
+  
   /**
     * Add and initialize default child `Component`s based upon options.
     */
   def initChildren(): Unit = js.native
+  
   /**
     * Localize a string given the string in english.
     *
@@ -472,12 +504,14 @@ trait Component_ extends EventedMixin {
   def localize(string: String, tokens: js.UndefOr[scala.Nothing], defaultValue: String): String = js.native
   def localize(string: String, tokens: js.Array[String]): String = js.native
   def localize(string: String, tokens: js.Array[String], defaultValue: String): String = js.native
+  
   /**
     * Lock a `Component`s element in its visible state by adding the 'vjs-lock-showing'
     * class name to it. Used during fadeIn/fadeOut.
     *
     */
   def lockShowing(): Unit = js.native
+  
   /**
     * Get the `Component`s name. The name gets used to reference the `Component`
     * and is set during registration.
@@ -485,6 +519,7 @@ trait Component_ extends EventedMixin {
     * @return The name of this `Component`.
     */
   def name(): String = js.native
+  
   /**
     * Deep merge of options objects with new options.
     * > Note: When both `obj` and `options` contain properties whose values are objects.
@@ -498,13 +533,20 @@ trait Component_ extends EventedMixin {
     * @deprecated since version 5
     */
   def options(obj: js.Any): js.Any = js.native
+  
+  var options_ : ComponentOptions = js.native
+  
   def played(): TimeRanges = js.native
+  
   /**
     * Return the {@link Player} that the `Component` has attached to.
     *
     * @return The player that this `Component` has attached to.
     */
   def player(): Player = js.native
+  
+  var player_ : Player = js.native
+  
   /**
     * Bind a listener to the component's ready state.
     * Different from event listeners in that if the ready event has already happened
@@ -513,6 +555,7 @@ trait Component_ extends EventedMixin {
     * @return Returns itself; method can be chained.
     */
   def ready(callback: js.ThisFunction0[/* this */ Player, Unit]): this.type = js.native
+  
   /**
     * Remove an attribute from the `Component`s element.
     *
@@ -522,6 +565,7 @@ trait Component_ extends EventedMixin {
     * @see [DOM API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute}
     */
   def removeAttribute(attribute: String): Unit = js.native
+  
   /**
     * Remove a child `Component` from this `Component`s list of children. Also removes
     * the child `Component`s element from this `Component`s element.
@@ -530,6 +574,7 @@ trait Component_ extends EventedMixin {
     *        The child `Component` to remove.
     */
   def removeChild(component: Component): Unit = js.native
+  
   /**
     * Remove a CSS class name from the `Component`s element.
     *
@@ -537,6 +582,7 @@ trait Component_ extends EventedMixin {
     *        CSS class name to remove
     */
   def removeClass(classToRemove: String): Unit = js.native
+  
   /**
     * Queues up a callback to be passed to requestAnimationFrame (rAF), but
     * with a few extra bonuses:
@@ -562,6 +608,7 @@ trait Component_ extends EventedMixin {
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame}
     */
   def requestAnimationFrame(fn: GenericCallback): Double = js.native
+  
   /**
     * Set the value of an attribute on the `Component`'s element
     *
@@ -574,6 +621,7 @@ trait Component_ extends EventedMixin {
     * @see [DOM API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute}
     */
   def setAttribute(attribute: String, value: String): Unit = js.native
+  
   /**
     * Creates a function that gets run every `x` milliseconds. This function is a wrapper
     * around `window.setInterval`. There are a few reasons to use this one instead though.
@@ -594,6 +642,7 @@ trait Component_ extends EventedMixin {
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval}
     */
   def setInterval(fn: GenericCallback, interval: Double): Double = js.native
+  
   /**
     * Creates a function that runs after an `x` millisecond timeout. This function is a
     * wrapper around `window.setTimeout`. There are a few reasons to use this one
@@ -620,11 +669,13 @@ trait Component_ extends EventedMixin {
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout}
     */
   def setTimeout(fn: GenericCallback, timeout: Double): Double = js.native
+  
   /**
     * Show the `Component`s element if it is hidden by removing the
     * 'vjs-hidden' class name from it.
     */
   def show(): Unit = js.native
+  
   /**
     * Add or remove a CSS class name from the component's element.
     * - `classToToggle` gets added when {@link Component#hasClass} would return false.
@@ -639,18 +690,21 @@ trait Component_ extends EventedMixin {
   def toggleClass(classToToggle: String): Unit = js.native
   def toggleClass(classToToggle: String, predicate: Boolean): Unit = js.native
   def toggleClass(classToToggle: String, predicate: Predicate): Unit = js.native
+  
   /**
     * Trigger all the ready listeners for this `Component`.
     *
     * @fires Component#ready
     */
   def triggerReady(): Unit = js.native
+  
   /**
     * Unlock a `Component`s element from its visible state by removing the 'vjs-lock-showing'
     * class name from it. Used during fadeIn/fadeOut.
     *
     */
   def unlockShowing(): Unit = js.native
+  
   def width(): String | Double = js.native
   /**
     * Get or set the width of the component based upon the CSS styles.
@@ -668,4 +722,3 @@ trait Component_ extends EventedMixin {
   def width(num: Double): Unit = js.native
   def width(num: Double, skipListeners: Double): Unit = js.native
 }
-

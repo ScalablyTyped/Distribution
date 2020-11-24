@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Cryptokeys$Cryptokeyversions")
 @js.native
 class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.asymmetricDecrypt
     * @desc Decrypts data that was encrypted with a public key retrieved from
@@ -51,6 +51,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAsymmetricDecryptResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.asymmetricSign
     * @desc Signs data using a CryptoKeyVersion with CryptoKey.purpose
@@ -89,6 +90,9 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAsymmetricSignResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.create
     * @desc Create a new CryptoKeyVersion in a CryptoKey.  The server will
@@ -126,6 +130,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKeyVersion]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.destroy
     * @desc Schedule a CryptoKeyVersion for destruction.  Upon calling this
@@ -167,6 +172,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKeyVersion]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.get
     * @desc Returns metadata for a given CryptoKeyVersion.
@@ -202,6 +208,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKeyVersion]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.getPublicKey
     * @desc Returns the public key for the given CryptoKeyVersion. The
@@ -238,6 +245,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPublicKey]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.list
     * @desc Lists CryptoKeyVersions.
@@ -276,6 +284,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCryptoKeyVersionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.patch
     * @desc Update a CryptoKeyVersion's metadata.  state may be changed between
@@ -315,6 +324,7 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKeyVersion]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.restore
     * @desc Restore a CryptoKeyVersion in the DESTROY_SCHEDULED state.  Upon
@@ -354,4 +364,3 @@ class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected () 
     callback: BodyResponseCallback[SchemaCryptoKeyVersion]
   ): Unit = js.native
 }
-

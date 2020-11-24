@@ -10,9 +10,9 @@ Minimalist virtual dom library
 | ------------------ | :-------------: |
 | Full name          | petit-dom |
 | Keywords           | javascript, virtual dom |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 2368 |
+| # downloads        | 3011 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,17 @@ package typings.jupyterlabServices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object messagesMod {
+  
   /**
     * A convenience type for a base for an execute reply content.
     */
   type IExecuteReplyBase = typings.jupyterlabServices.messagesMod.IExecuteCount with typings.jupyterlabServices.messagesMod.IReplyOkContent
+  
   type IShellControlMessage = typings.jupyterlabServices.messagesMod.IShellMessage[typings.jupyterlabServices.messagesMod.ShellMessageType] | typings.jupyterlabServices.messagesMod.IControlMessage[typings.jupyterlabServices.messagesMod.ControlMessageType]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.jupyterlabServices.messagesMod.IClearOutputMsg
     - typings.jupyterlabServices.messagesMod.ICommCloseMsg[
@@ -52,6 +55,7 @@ package object messagesMod {
   ]) | (typings.jupyterlabServices.messagesMod.ICommOpenMsg[
     typings.jupyterlabServices.jupyterlabServicesStrings.iopub | typings.jupyterlabServices.jupyterlabServicesStrings.shell
   ])
+  
   /**
     * A convenience type for reply content.
     *

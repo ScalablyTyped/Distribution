@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "playable" : "2.11.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "playable" : "2.11.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

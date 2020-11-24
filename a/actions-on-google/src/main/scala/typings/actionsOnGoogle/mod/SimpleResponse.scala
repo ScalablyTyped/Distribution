@@ -3,7 +3,7 @@ package typings.actionsOnGoogle.mod
 import typings.actionsOnGoogle.simpleMod.SimpleResponseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "SimpleResponse")
 @js.native
@@ -16,4 +16,3 @@ class SimpleResponse protected ()
     */
   def this(options: SimpleResponseOptions) = this()
 }
-

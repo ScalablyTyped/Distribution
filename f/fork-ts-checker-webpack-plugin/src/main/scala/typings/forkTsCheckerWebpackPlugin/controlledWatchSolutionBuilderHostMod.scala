@@ -1,5 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import typings.forkTsCheckerWebpackPlugin.controlledTypeScriptSystemMod.ControlledTypeScriptSystem
 import typings.forkTsCheckerWebpackPlugin.typeScriptExtensionMod.TypeScriptHostExtension
 import typings.typescript.mod.BuilderProgram
@@ -11,12 +12,14 @@ import typings.typescript.mod.SolutionBuilderWithWatchHost
 import typings.typescript.mod.WatchStatusReporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchSolutionBuilderHost", JSImport.Namespace)
 @js.native
 object controlledWatchSolutionBuilderHostMod extends js.Object {
+  
   def createControlledWatchSolutionBuilderHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: js.UndefOr[CreateProgram_[TProgram]],
@@ -28,4 +31,3 @@ object controlledWatchSolutionBuilderHostMod extends js.Object {
     hostExtensions: js.UndefOr[js.Array[TypeScriptHostExtension]]
   ): SolutionBuilderWithWatchHost[TProgram] = js.native
 }
-

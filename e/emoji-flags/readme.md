@@ -10,9 +10,9 @@ return emoji flag symbol for country code
 | ------------------ | :-------------: |
 | Full name          | emoji-flags |
 | Keywords           | emoji, countries, flag, country code, emoji flag, country flag, ISO 3166-1, ISO 3166-1-alpha-2 |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 230653 |
+| # releases         | 2 |
+| # dependents       | 10 |
+| # downloads        | 327212 |
 | # stars            | 2 |
 
 ## Links

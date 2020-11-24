@@ -8,7 +8,7 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.NativeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("NativeFunction")
 @js.native
@@ -28,8 +28,6 @@ class NativeFunction protected ()
     abiOrOptions: NativeFunctionOptions
   ) = this()
 }
-
 @JSGlobal("NativeFunction")
 @js.native
 object NativeFunction extends TopLevel[NativeFunctionConstructor]
-

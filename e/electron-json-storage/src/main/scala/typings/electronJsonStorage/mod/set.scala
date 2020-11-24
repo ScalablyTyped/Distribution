@@ -2,11 +2,12 @@ package typings.electronJsonStorage.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron-json-storage", "set")
 @js.native
 object set extends js.Object {
+  
   def apply(key: String, json: js.Object, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   def apply(
     key: String,
@@ -15,4 +16,3 @@ object set extends js.Object {
     callback: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
 }
-

@@ -26,7 +26,7 @@ import typings.mongoose.anon.upserttruenewtrueQueryFin
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Model_[T /* <: Document */, QueryHelpers]
@@ -50,17 +50,7 @@ trait Model_[T /* <: Document */, QueryHelpers]
   */
 Instantiable0[T]
      with Instantiable1[/* doc */ js.Any, T] {
-  /** Base Mongoose instance the model uses. */
-  var base: Typeofmongoose = js.native
-  /**
-    * If this is a discriminator model, baseModelName is the
-    * name of the base model.
-    */
-  var baseModelName: js.UndefOr[String] = js.native
-  /** Registered discriminators for this model. */
-  var discriminators: js.UndefOr[StringDictionary[Model_[_, js.Object]]] = js.native
-  /** The name of the model */
-  var modelName: String = js.native
+  
   /**
     * Creates a Query and specifies a $where condition.
     * @param argument is a javascript string or anonymous function
@@ -69,6 +59,7 @@ Instantiable0[T]
   def $where(argument: String): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   @JSName("$where")
   def $where(argument: js.Function): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Performs aggregations on the models collection.
     * If a callback is passed, the aggregate is executed and a Promise is returned.
@@ -78,6 +69,16 @@ Instantiable0[T]
   def aggregate[U](): Aggregate[js.Array[U]] = js.native
   def aggregate[U](aggregations: js.Array[_]): Aggregate[js.Array[U]] = js.native
   def aggregate[U](aggregations: js.Array[_], cb: js.Function): js.Promise[js.Array[U]] = js.native
+  
+  /** Base Mongoose instance the model uses. */
+  var base: Typeofmongoose = js.native
+  
+  /**
+    * If this is a discriminator model, baseModelName is the
+    * name of the base model.
+    */
+  var baseModelName: js.UndefOr[String] = js.native
+  
   /**
     * Sends multiple insertOne, updateOne, updateMany, replaceOne, deleteOne, and/or deleteMany operations to the MongoDB server in one command. This is faster than sending multiple independent operations (like) if you use create()) because with bulkWrite() there is only one round trip to MongoDB.
     * Mongoose will perform casting on all operations you provide.
@@ -95,9 +96,11 @@ Instantiable0[T]
     options: CollectionBulkWriteOptions,
     cb: js.Function2[/* err */ js.Any, /* res */ BulkWriteOpResultObject, Unit]
   ): Unit = js.native
+  
   /** Counts number of matching documents in a database collection. */
   def count(conditions: FilterQuery[T]): Query[Double] with QueryHelpers = js.native
   def count(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
+  
   /**
     * Counts number of documents matching `criteria` in a database collection.
     *
@@ -114,6 +117,7 @@ Instantiable0[T]
   def countDocuments(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
   def countDocuments(criteria: FilterQuery[T]): Query[Double] with QueryHelpers = js.native
   def countDocuments(criteria: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
+  
   def create[TCreate](docs: CreateQuery[TCreate]*): js.Promise[T] = js.native
   def create[TCreate](docs: js.Array[CreateQuery[TCreate]]): js.Promise[js.Array[T]] = js.native
   def create[TCreate](
@@ -139,6 +143,7 @@ Instantiable0[T]
   def create[TCreate](doc: CreateQuery[TCreate]): js.Promise[T] = js.native
   def create[TCreate](doc: CreateQuery[TCreate], callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): js.Promise[T] = js.native
   def create[TCreate](doc: CreateQuery[TCreate], options: SaveOptions): js.Promise[T] = js.native
+  
   /**
     * Create the collection for this model. By default, if no indexes are specified, mongoose will not create the
     * collection for the model until any documents are created. Use this method to create the collection explicitly.
@@ -147,20 +152,24 @@ Instantiable0[T]
   def createCollection(options: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def createCollection(options: CollectionCreateOptions): js.Promise[Unit] = js.native
   def createCollection(options: CollectionCreateOptions, cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Similar to ensureIndexes(), except for it uses the createIndex function. The ensureIndex() function checks to see if an index with that name already exists, and, if not, does not attempt to create the index. createIndex() bypasses this check.
     * @param cb Optional callback
     */
   def createIndexes(): js.Promise[Unit] = js.native
   def createIndexes(cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  
   def deleteMany(conditions: FilterQuery[T]): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def deleteMany(conditions: FilterQuery[T], callback: js.Function1[/* err */ js.Any, Unit]): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def deleteMany(conditions: FilterQuery[T], options: ModelOptions): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def deleteMany(conditions: FilterQuery[T], options: ModelOptions, callback: js.Function1[/* err */ js.Any, Unit]): (Query[N with DeletedCount]) with QueryHelpers = js.native
+  
   def deleteOne(conditions: FilterQuery[T]): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def deleteOne(conditions: FilterQuery[T], callback: js.Function1[/* err */ js.Any, Unit]): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def deleteOne(conditions: FilterQuery[T], options: ModelOptions): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def deleteOne(conditions: FilterQuery[T], options: ModelOptions, callback: js.Function1[/* err */ js.Any, Unit]): (Query[N with DeletedCount]) with QueryHelpers = js.native
+  
   /**
     * Adds a discriminator type.
     * @param name discriminator model name
@@ -179,6 +188,10 @@ Instantiable0[T]
   def discriminator_U_DocumentM_Model_UObject_M[U /* <: Document */, M /* <: Model_[U, js.Object] */](name: String, schema: Schema[_]): M = js.native
   @JSName("discriminator")
   def discriminator_U_DocumentM_Model_UObject_M[U /* <: Document */, M /* <: Model_[U, js.Object] */](name: String, schema: Schema[_], value: String): M = js.native
+  
+  /** Registered discriminators for this model. */
+  var discriminators: js.UndefOr[StringDictionary[Model_[_, js.Object]]] = js.native
+  
   /** Creates a Query for a distinct operation. Passing a callback immediately executes the query. */
   def distinct(field: String): Query[js.Array[_]] with QueryHelpers = js.native
   def distinct(field: String, callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]): Query[js.Array[_]] with QueryHelpers = js.native
@@ -188,6 +201,7 @@ Instantiable0[T]
     conditions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[_], Unit]
   ): Query[js.Array[_]] with QueryHelpers = js.native
+  
   /**
     * Sends ensureIndex commands to mongo for each index declared in the schema.
     * @param options internal options
@@ -197,6 +211,7 @@ Instantiable0[T]
   def ensureIndexes(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def ensureIndexes(options: js.Any): js.Promise[Unit] = js.native
   def ensureIndexes(options: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Estimates the number of documents in the MongoDB collection. Faster than
     * using `countDocuments()` for large collections because
@@ -211,12 +226,14 @@ Instantiable0[T]
   def estimatedDocumentCount(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
   def estimatedDocumentCount(options: js.Any): Query[Double] with QueryHelpers = js.native
   def estimatedDocumentCount(options: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
+  
   /**
     * Returns true if at least one document exists in the database that matches
     * the given `filter`, and false otherwise.
     */
   def exists(filter: FilterQuery[T]): js.Promise[Boolean] = js.native
   def exists(filter: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ Boolean, Unit]): js.Promise[Boolean] = js.native
+  
   /**
     * Finds documents.
     * @param projection optional fields to return
@@ -305,6 +322,7 @@ Instantiable0[T]
     options: QueryFindOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
   ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  
   def findById(id: String): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findById(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findById(id: String, projection: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
@@ -365,9 +383,10 @@ Instantiable0[T]
     options: QueryFindBaseOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Issue a mongodb findOneAndDelete command by a document's _id field.
-    * findByIdAndDelete(id, ...) is equivalent to findByIdAndDelete({ _id: id }, ...).
+    * findByIdAndDelete(id, ...) is equivalent to findOneAndDelete({ _id: id }, ...).
     * Finds a matching document, removes it, passing the found document (if any) to the callback.
     * Executes immediately if callback is passed, else a Query object is returned.
     *
@@ -412,6 +431,7 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  
   /**
     * Issue a mongodb findAndModify remove command by a document's _id field.
     * findByIdAndRemove(id, ...) is equivalent to findOneAndRemove({ _id: id }, ...).
@@ -462,6 +482,7 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  
   /**
     * Issues a mongodb findAndModify update command by a document's _id field. findByIdAndUpdate(id, ...)
     * is equivalent to findOneAndUpdate({ _id: id }, ...).
@@ -595,6 +616,7 @@ Instantiable0[T]
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Finds one document.
     * The conditions are cast to their respective SchemaTypes before the command is sent.
@@ -627,6 +649,7 @@ Instantiable0[T]
     options: QueryFindBaseOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Issues a mongodb findOneAndDelete command.
     * Finds a matching document, removes it, passing the found document (if any) to the
@@ -655,6 +678,7 @@ Instantiable0[T]
     options: QueryFindOneAndRemoveOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Issue a mongodb findAndModify remove command.
     * Finds a matching document, removes it, passing the found document (if any) to the callback.
@@ -686,6 +710,7 @@ Instantiable0[T]
     options: QueryFindOneAndRemoveOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Issues a mongodb findAndModify update command.
     * Finds a matching document, updates it according to the update arg, passing any options,
@@ -747,6 +772,7 @@ Instantiable0[T]
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ T | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Implements $geoSearch functionality for Mongoose
     * @param conditions an object that specifies the match condition (required)
@@ -759,12 +785,14 @@ Instantiable0[T]
     options: Lean,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
   ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  
   /**
     * Shortcut for creating a new Document from existing raw data,
     * pre-saved in the DB. The document returned has no paths marked
     * as modified initially.
     */
   def hydrate(obj: js.Any): T = js.native
+  
   /**
     * Performs any async initialization of this model against MongoDB.
     * This function is called automatically, so you don't need to call it.
@@ -775,6 +803,7 @@ Instantiable0[T]
     */
   def init(): js.Promise[T] = js.native
   def init(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[T] = js.native
+  
   def insertMany(doc: js.Any): js.Promise[T] = js.native
   def insertMany(doc: js.Any, callback: js.Function2[/* error */ js.Any, /* doc */ T, Unit]): js.Promise[T] = js.native
   def insertMany(
@@ -815,6 +844,7 @@ Instantiable0[T]
     options: orderedbooleanundefinedra,
     callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], Unit]
   ): js.Promise[js.Array[T]] = js.native
+  
   def listIndexes(): js.Promise[Unit] = js.native
   /**
     * Lists the indexes currently defined in MongoDB. This may or may not be
@@ -825,6 +855,7 @@ Instantiable0[T]
     * @return Returns `undefined` if callback is specified, returns a promise if no callback.
     */
   def listIndexes(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Executes a mapReduce command.
     * @param o an object specifying map-reduce options
@@ -835,7 +866,12 @@ Instantiable0[T]
     o: ModelMapReduceOption[T, Key, Value],
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]
   ): js.Promise[_] = js.native
+  
   def model[U /* <: Document */](name: String): Model_[U, js.Object] = js.native
+  
+  /** The name of the model */
+  var modelName: String = js.native
+  
   def populate(docs: js.Array[_], options: js.Array[ModelPopulateOptions]): js.Promise[js.Array[T]] = js.native
   def populate(
     docs: js.Array[_],
@@ -866,9 +902,11 @@ Instantiable0[T]
     options: ModelPopulateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
   ): js.Promise[T] = js.native
+  
   /** Removes documents from the collection. */
   def remove(conditions: FilterQuery[T]): (Query[N with DeletedCount]) with QueryHelpers = js.native
   def remove(conditions: FilterQuery[T], callback: js.Function1[/* err */ js.Any, Unit]): (Query[N with DeletedCount]) with QueryHelpers = js.native
+  
   /**
     * Same as update(), except MongoDB replace the existing document with the given document (no atomic operators like $set).
     * This function triggers the following middleware: replaceOne
@@ -879,6 +917,7 @@ Instantiable0[T]
     replacement: js.Any,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
+  
   def syncIndexes(): js.Promise[Unit] = js.native
   def syncIndexes(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def syncIndexes(options: js.Object): js.Promise[Unit] = js.native
@@ -893,12 +932,14 @@ Instantiable0[T]
     */
   def syncIndexes(options: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def syncIndexes(options: Null, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Translate any aliases fields/conditions so the final query or document object is pure
     * @param raw fields/conditions that may contain aliased keys
     * @return the translated 'pure' fields/conditions
     */
   def translateAliases(raw: js.Any): js.Any = js.native
+  
   /**
     * Updates documents in the database without returning them.
     * All update values are cast to their appropriate SchemaTypes before being sent.
@@ -916,6 +957,7 @@ Instantiable0[T]
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
+  
   def updateMany(conditions: FilterQuery[T], doc: UpdateQuery[T]): Query[_] with QueryHelpers = js.native
   def updateMany(
     conditions: FilterQuery[T],
@@ -929,6 +971,7 @@ Instantiable0[T]
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
+  
   def updateOne(conditions: FilterQuery[T], doc: UpdateQuery[T]): Query[_] with QueryHelpers = js.native
   def updateOne(
     conditions: FilterQuery[T],
@@ -942,6 +985,7 @@ Instantiable0[T]
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
+  
   /**
     * Requires a replica set running MongoDB >= 3.6.0. Watches the underlying collection for changes using MongoDB change streams.
     * This function does not trigger any middleware. In particular, it does not trigger aggregate middleware.
@@ -952,13 +996,12 @@ Instantiable0[T]
   def watch(pipeline: js.UndefOr[scala.Nothing], options: ChangeStreamOptionssessio): ChangeStream[DefaultSchema] = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream[DefaultSchema] = js.native
   def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[DefaultSchema] = js.native
+  
   /** Creates a Query, applies the passed conditions, and returns the Query. */
   def where(path: String): Query[_] with QueryHelpers = js.native
   def where(path: String, `val`: js.Any): Query[_] with QueryHelpers = js.native
 }
-
 @JSImport("mongoose", "Model")
 @js.native
 object Model_
   extends TopLevel[Model_[js.Any, js.Object]]
-

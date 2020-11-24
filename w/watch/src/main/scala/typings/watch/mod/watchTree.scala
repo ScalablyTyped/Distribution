@@ -3,11 +3,12 @@ package typings.watch.mod
 import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("watch", "watchTree")
 @js.native
 object watchTree extends js.Object {
+  
   def apply(
     root: String,
     callback: js.Function3[/* f */ FileOrFiles, /* curr */ Stats, /* prev */ Stats, Unit]
@@ -18,4 +19,3 @@ object watchTree extends js.Object {
     callback: js.Function3[/* f */ FileOrFiles, /* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = js.native
 }
-

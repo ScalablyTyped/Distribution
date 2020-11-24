@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275\u0275textInterpolate4")
 @js.native
 object ɵɵtextInterpolate4 extends js.Object {
+  
   def apply(
     prefix: String,
     v0: js.Any,
@@ -30,4 +31,3 @@ object ɵɵtextInterpolate4 extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate4 */ js.Any
   ] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "poolIncrement")
 @js.native
 object poolIncrement extends TopLevel[Double]
-

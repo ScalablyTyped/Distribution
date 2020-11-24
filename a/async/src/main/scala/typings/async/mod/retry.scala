@@ -2,11 +2,12 @@ package typings.async.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async", "retry")
 @js.native
 object retry extends js.Object {
+  
   def apply[T, E](): js.Promise[Unit] = js.native
   def apply[T, E](
     opts: js.UndefOr[scala.Nothing],
@@ -45,4 +46,3 @@ object retry extends js.Object {
     callback: AsyncResultCallback[_, E]
   ): Unit = js.native
 }
-

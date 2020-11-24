@@ -3,7 +3,7 @@ package typings.mongodb.mod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "GridFSBucketReadStream")
 @js.native
@@ -16,6 +16,6 @@ class GridFSBucketReadStream protected () extends Readable {
     filter: js.Object,
     options: GridFSBucketReadStreamOptions
   ) = this()
+  
   var id: typings.bson.mod.ObjectId = js.native
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.countBy` exported as a module.
 | Full name          | lodash.countby |
 | Keywords           | lodash-modularized, countby |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 292615 |
+| # dependents       | 24 |
+| # downloads        | 259632 |
 | # stars            | 0 |
 
 ## Links

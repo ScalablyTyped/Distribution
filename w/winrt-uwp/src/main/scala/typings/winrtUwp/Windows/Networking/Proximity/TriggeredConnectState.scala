@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Proximity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TriggeredConnectState extends js.Object
-
 /** Indicates the current state of a connection to a peer application. */
 @JSGlobal("Windows.Networking.Proximity.TriggeredConnectState")
 @js.native
 object TriggeredConnectState extends js.Object {
+  
   /** The connection was stopped before it was completed. */
   @js.native
   sealed trait canceled extends TriggeredConnectState
@@ -34,6 +34,4 @@ object TriggeredConnectState extends js.Object {
   /** A device that supports proximity socket connections is within proximity. The tap gesture is complete. */
   @js.native
   sealed trait peerFound extends TriggeredConnectState
-  
 }
-

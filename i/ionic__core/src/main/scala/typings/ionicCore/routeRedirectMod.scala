@@ -4,13 +4,18 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/route-redirect/route-redirect", JSImport.Namespace)
 @js.native
 object routeRedirectMod extends js.Object {
+  
   @js.native
   class RouteRedirect () extends ComponentInterface {
+    
+    @JSName("connectedCallback")
+    def connectedCallback_MRouteRedirect(): Unit = js.native
+    
     /**
       * A redirect route, redirects "from" a URL "to" another URL. This property is that "from" URL.
       * It needs to be an exact match of the navigated URL in order to apply.
@@ -20,6 +25,7 @@ object routeRedirectMod extends js.Object {
       *
       */
     var from: String = js.native
+    
     /**
       * Internal event that fires when any value of this rule is added/removed from the DOM,
       * or any of his public properties changes.
@@ -27,6 +33,9 @@ object routeRedirectMod extends js.Object {
       * `ion-router` captures this event in order to update his internal registry of router rules.
       */
     var ionRouteRedirectChanged: EventEmitter[_] = js.native
+    
+    def propDidChange(): Unit = js.native
+    
     /**
       * A redirect route, redirects "from" a URL "to" another URL. This property is that "to" URL.
       * When the defined `ion-route-redirect` rule matches, the router will redirect to the path
@@ -42,10 +51,5 @@ object routeRedirectMod extends js.Object {
       * even if the "from" value matches.
       */
     var to: js.UndefOr[String | Null] = js.native
-    @JSName("connectedCallback")
-    def connectedCallback_MRouteRedirect(): Unit = js.native
-    def propDidChange(): Unit = js.native
   }
-  
 }
-

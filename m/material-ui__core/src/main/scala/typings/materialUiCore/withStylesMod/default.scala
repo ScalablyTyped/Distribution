@@ -3,11 +3,12 @@ package typings.materialUiCore.withStylesMod
 import typings.materialUiCore.mod.PropInjector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/styles/withStyles", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
@@ -37,4 +38,3 @@ object default extends js.Object {
     StyledComponentProps[ClassKey]
   ] = js.native
 }
-

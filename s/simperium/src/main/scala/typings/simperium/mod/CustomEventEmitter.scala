@@ -27,10 +27,11 @@ import typings.std.EventTarget
 import typings.std.Parameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("addListener")
@@ -71,6 +72,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def addListener_timeStamp(`type`: timeStamp, callback: Double): this.type = js.native
   @JSName("addListener")
   def addListener_type(`type`: `type`, callback: String): this.type = js.native
+  
   @JSName("emit")
   def emit_ATTARGET(
     `type`: AT_TARGET,
@@ -156,9 +158,11 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
     `type`: `type`,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[String]
   ): Boolean = js.native
+  
   def listenerCount(
     `type`: /* keyof Event */ bubbles | cancelBubble | cancelable | composed | currentTarget | defaultPrevented | eventPhase | isTrusted | returnValue | srcElement | target | timeStamp | `type` | composedPath | initEvent | preventDefault | stopImmediatePropagation | stopPropagation | AT_TARGET | BUBBLING_PHASE | CAPTURING_PHASE | NONE
   ): Double = js.native
+  
   @JSName("listeners")
   def listeners_ATTARGET(`type`: AT_TARGET): js.Array[Double] = js.native
   @JSName("listeners")
@@ -193,6 +197,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def listeners_timeStamp(`type`: timeStamp): js.Array[Double] = js.native
   @JSName("listeners")
   def listeners_type(`type`: `type`): js.Array[String] = js.native
+  
   @JSName("off")
   def off_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("off")
@@ -233,6 +238,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def off_timeStamp(`type`: timeStamp, callback: Double): this.type = js.native
   @JSName("off")
   def off_type(`type`: `type`, callback: String): this.type = js.native
+  
   @JSName("on")
   def on_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("on")
@@ -273,6 +279,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def on_timeStamp(`type`: timeStamp, callback: Double): this.type = js.native
   @JSName("on")
   def on_type(`type`: `type`, callback: String): this.type = js.native
+  
   @JSName("once")
   def once_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("once")
@@ -313,6 +320,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def once_timeStamp(`type`: timeStamp, callback: Double): this.type = js.native
   @JSName("once")
   def once_type(`type`: `type`, callback: String): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("prependListener")
@@ -353,6 +361,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def prependListener_timeStamp(`type`: timeStamp, callback: Double): this.type = js.native
   @JSName("prependListener")
   def prependListener_type(`type`: `type`, callback: String): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("prependOnceListener")
@@ -393,6 +402,7 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def prependOnceListener_timeStamp(`type`: timeStamp, callback: Double): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_type(`type`: `type`, callback: String): this.type = js.native
+  
   @JSName("rawListeners")
   def rawListeners_ATTARGET(`type`: AT_TARGET): js.Array[Double] = js.native
   @JSName("rawListeners")
@@ -427,9 +437,11 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def rawListeners_timeStamp(`type`: timeStamp): js.Array[Double] = js.native
   @JSName("rawListeners")
   def rawListeners_type(`type`: `type`): js.Array[String] = js.native
+  
   def removeAllListeners(
     `type`: /* keyof Event */ bubbles | cancelBubble | cancelable | composed | currentTarget | defaultPrevented | eventPhase | isTrusted | returnValue | srcElement | target | timeStamp | `type` | composedPath | initEvent | preventDefault | stopImmediatePropagation | stopPropagation | AT_TARGET | BUBBLING_PHASE | CAPTURING_PHASE | NONE
   ): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
   @JSName("removeListener")
@@ -471,4 +483,3 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("removeListener")
   def removeListener_type(`type`: `type`, callback: String): this.type = js.native
 }
-

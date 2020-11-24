@@ -5,15 +5,16 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateError
+trait AggregateError[T /* <: Error */]
   extends Error
-     with Iterable[Error] {
+     with Iterable[T] {
+  
   @JSName(js.Symbol.iterator)
-  var iterator_AggregateError: js.Function0[IterableIterator[Error]] = js.native
+  var iterator_AggregateError: js.Function0[IterableIterator[T]] = js.native
+  
   @JSName("name")
   val name_AggregateError: typings.aggregateError.aggregateErrorStrings.AggregateError = js.native
 }
-

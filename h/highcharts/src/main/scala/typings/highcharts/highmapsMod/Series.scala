@@ -3,7 +3,7 @@ package typings.highcharts.highmapsMod
 import typings.highcharts.mod.SeriesOptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highmaps", "Series")
 @js.native
@@ -63,4 +63,3 @@ class Series protected ()
   def this(chart: typings.highcharts.mod.Chart_, options: js.Object) = this()
   def this(chart: typings.highcharts.mod.Chart_, options: SeriesOptionsType) = this()
 }
-

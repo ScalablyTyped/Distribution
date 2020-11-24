@@ -11,7 +11,7 @@ import typings.videoJs.videoJsStrings.maybe
 import typings.videoJs.videoJsStrings.problably
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Tech")
 @js.native
@@ -30,7 +30,6 @@ class ^ ()
   def this(options: js.UndefOr[scala.Nothing], ready: ReadyCallback) = this()
   def this(options: js.Any, ready: ReadyCallback) = this()
 }
-
 @JSImport("video.js/dist/alt/video.core.novtt", "Tech")
 @js.native
 object ^
@@ -50,6 +49,7 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
         typings.videoJs.mod.videojs.Tech
       ])
     ] {
+  
   /**
     * Check if the tech can support the given source
     * @param srcObj
@@ -59,6 +59,7 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
     * @return 'probably', 'maybe', or '' (empty string)
     */
   def canPlaySource(srcObj: js.Any, options: js.Any): problably | maybe | _empty = js.native
+  
   /**
     * Check if the type is supported by this tech.
     *
@@ -70,6 +71,7 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
     * @return Returns the native video element's response
     */
   def canPlayType(`type`: String): String = js.native
+  
   /**
     * Get a `Tech` from the shared list by name.
     *
@@ -79,6 +81,7 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
     * @return The `Tech` or undefined if there was no tech with the name requested.
     */
   def getTech(name: String): js.UndefOr[typings.videoJs.mod.videojs.Tech] = js.native
+  
   /**
     * Return whether the argument is a Tech or not.
     * Can be passed either a Class like `Html5` or a instance like `player.tech_`
@@ -91,6 +94,7 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
     *         - False if it is not
     */
   def isTech(component: js.Any): Boolean = js.native
+  
   /**
     * Registers a `Tech` into a shared list for videojs.
     *
@@ -101,6 +105,7 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
     *        The `Tech` class to register.
     */
   def registerTech(name: String, tech: js.Any): Unit = js.native
+  
   /**
     * A functional mixin for techs that want to use the Source Handler pattern.
     * Source handlers are scripts for handling specific formats.
@@ -114,4 +119,3 @@ Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options 
     */
   def withSourceHandlers(tech: TypeofTech): Unit = js.native
 }
-

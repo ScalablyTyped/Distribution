@@ -5,7 +5,7 @@ import typings.datatablesNet.JQuery
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Api
@@ -14,35 +14,7 @@ trait Api
   * API should be array-like
   */
 /* key */ NumberDictionary[js.Any] {
-  //#endregion "Cell/Cells"
-  //#region "Column/Columns"
-  /**
-    * Column Methods / object
-    */
-  @JSName("column")
-  var column_Original: ColumnMethodsModel = js.native
-  /**
-    * Columns Methods / object
-    */
-  @JSName("columns")
-  var columns_Original: ColumnsMethodsModel = js.native
-  /**
-    * Order Methods / object
-    */
-  @JSName("order")
-  var order_Original: OrderMethods = js.native
-  //#endregion "Column/Columns"
-  //#region "Row/Rows"
-  /**
-    * Row Methode / object
-    */
-  @JSName("row")
-  var row_Original: RowMethodsModel = js.native
-  /**
-    * Rows Methods / object
-    */
-  @JSName("rows")
-  var rows_Original: RowsMethodsModel = js.native
+  
   /**
     * Returns DataTables API instance
     *
@@ -52,6 +24,7 @@ trait Api
   def apply(selector: js.Array[Node]): Api = js.native
   def apply(selector: JQuery): Api = js.native
   def apply(selector: Node): Api = js.native
+  
   //#region "Cell/Cells"
   /**
     * Select the cell found by a cell selector
@@ -70,6 +43,7 @@ trait Api
     */
   def cell(rowSelector: js.Any, cellSelector: js.Any): CellMethods = js.native
   def cell(rowSelector: js.Any, cellSelector: js.Any, modifier: ObjectSelectorModifier): CellMethods = js.native
+  
   /**
     * Select all cells
     *
@@ -94,6 +68,7 @@ trait Api
     */
   def cells(rowSelector: js.Any, cellSelector: js.Any): CellsMethods = js.native
   def cells(rowSelector: js.Any, cellSelector: js.Any, modifier: ObjectSelectorModifier): CellsMethods = js.native
+  
   /**
     * Select the column found by a column selector
     *
@@ -107,6 +82,14 @@ trait Api
     */
   def column(columnSelector: js.Any): ColumnMethods = js.native
   def column(columnSelector: js.Any, modifier: ObjectSelectorModifier): ColumnMethods = js.native
+  //#endregion "Cell/Cells"
+  //#region "Column/Columns"
+  /**
+    * Column Methods / object
+    */
+  @JSName("column")
+  var column_Original: ColumnMethodsModel = js.native
+  
   /**
     * Select all columns
     *
@@ -129,9 +112,16 @@ trait Api
   def columns(columnSelector: js.Any, modifier: ObjectSelectorModifier): ColumnsMethods = js.native
   def columns(modifier: ObjectSelectorModifier): ColumnsMethods = js.native
   /**
+    * Columns Methods / object
+    */
+  @JSName("columns")
+  var columns_Original: ColumnsMethodsModel = js.native
+  
+  /**
     * Get the data for the whole table.
     */
   def data(): Api = js.native
+  
   /**
     * Get the ordering applied to the table.
     */
@@ -155,6 +145,12 @@ trait Api
   @JSName("order")
   def order_Api(): Api = js.native
   /**
+    * Order Methods / object
+    */
+  @JSName("order")
+  var order_Original: OrderMethods = js.native
+  
+  /**
     * Select a row found by a row selector
     *
     * @param rowSelector Row selector.
@@ -167,6 +163,14 @@ trait Api
     */
   def row(rowSelector: js.Any): RowMethods = js.native
   def row(rowSelector: js.Any, modifier: ObjectSelectorModifier): RowMethods = js.native
+  //#endregion "Column/Columns"
+  //#region "Row/Rows"
+  /**
+    * Row Methode / object
+    */
+  @JSName("row")
+  var row_Original: RowMethodsModel = js.native
+  
   /**
     * Select all rows
     *
@@ -188,6 +192,12 @@ trait Api
     */
   def rows(rowSelector: js.Any): RowsMethods = js.native
   def rows(rowSelector: js.Any, modifier: ObjectSelectorModifier): RowsMethods = js.native
+  /**
+    * Rows Methods / object
+    */
+  @JSName("rows")
+  var rows_Original: RowsMethodsModel = js.native
+  
   //#endregion "Row/Rows"
   //#region "Table/Tables"
   /**
@@ -196,6 +206,7 @@ trait Api
     * @param tableSelector Table selector.
     */
   def table(tableSelector: js.Any): TableMethods = js.native
+  
   /**
     * Select tables based on the given selector
     *
@@ -204,4 +215,3 @@ trait Api
   def tables(): TablesMethods = js.native
   def tables(tableSelector: js.Any): TablesMethods = js.native
 }
-

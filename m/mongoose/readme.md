@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongoose
 
-Typings are for version 5.7.13
+Typings are for version 5.10.9
 
 ## Library description:
 Mongoose MongoDB ODM
@@ -10,9 +10,9 @@ Mongoose MongoDB ODM
 | ------------------ | :-------------: |
 | Full name          | mongoose |
 | Keywords           | mongodb, document, model, schema, database, odm, data, datastore, query, nosql, orm, db |
-| # releases         | 150 |
-| # dependents       | 5041 |
-| # downloads        | 29589282 |
+| # releases         | 135 |
+| # dependents       | 5998 |
+| # downloads        | 45542242 |
 | # stars            | 743 |
 
 ## Links

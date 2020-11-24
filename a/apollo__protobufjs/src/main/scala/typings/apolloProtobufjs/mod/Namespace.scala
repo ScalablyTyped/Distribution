@@ -3,7 +3,7 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Namespace")
 @js.native
@@ -14,21 +14,22 @@ class Namespace protected () extends NamespaceBase {
     * @param [options] Declared options
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[js.UndefOr[js.Any]]) = this()
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs", "Namespace")
 @js.native
 object Namespace extends js.Object {
+  
   /**
     * Converts an array of reflection objects to JSON.
     * @param array Object array
     * @param [toJSONOptions] JSON conversion options
     * @returns JSON object or `undefined` when array is empty
     */
-  def arrayToJSON(array: js.Array[ReflectionObject]): js.UndefOr[StringDictionary[js.Any]] = js.native
-  def arrayToJSON(array: js.Array[ReflectionObject], toJSONOptions: IToJSONOptions): js.UndefOr[StringDictionary[js.Any]] = js.native
+  def arrayToJSON(array: js.Array[ReflectionObject]): js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  def arrayToJSON(array: js.Array[ReflectionObject], toJSONOptions: IToJSONOptions): js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  
   /**
     * Constructs a namespace from JSON.
     * @param name Namespace name
@@ -36,7 +37,8 @@ object Namespace extends js.Object {
     * @returns Created namespace
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: StringDictionary[js.Any]): Namespace = js.native
+  def fromJSON(name: String, json: StringDictionary[js.UndefOr[js.Any]]): Namespace = js.native
+  
   def isReservedId(reserved: js.UndefOr[scala.Nothing], id: Double): Boolean = js.native
   /**
     * Tests if the specified id is reserved.
@@ -45,6 +47,7 @@ object Namespace extends js.Object {
     * @returns `true` if reserved, otherwise `false`
     */
   def isReservedId(reserved: js.Array[js.Array[Double] | String], id: Double): Boolean = js.native
+  
   def isReservedName(reserved: js.UndefOr[scala.Nothing], name: String): Boolean = js.native
   /**
     * Tests if the specified name is reserved.
@@ -54,4 +57,3 @@ object Namespace extends js.Object {
     */
   def isReservedName(reserved: js.Array[js.Array[Double] | String], name: String): Boolean = js.native
 }
-

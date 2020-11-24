@@ -2,7 +2,7 @@ package typings.go.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Layers are how named collections of Parts are drawn in front or behind other collections of Parts in a Diagram.
@@ -14,46 +14,46 @@ import scala.scalajs.js.annotation._
   * This constructs an empty Layer; you should set the .name before adding the Layer to a Diagram.
   */
 class Layer () extends js.Object {
+  
   /**Gets or sets whether the user may copy objects in this layer.*/
   var allowCopy: Boolean = js.native
+  
   /**Gets or sets whether the user may delete objects in this layer.*/
   var allowDelete: Boolean = js.native
+  
   /**Gets or sets whether the user may group parts together in this layer.*/
   var allowGroup: Boolean = js.native
+  
   /**Gets or sets whether the user may draw new links in this layer.*/
   var allowLink: Boolean = js.native
+  
   /**Gets or sets whether the user may move objects in this layer.*/
   var allowMove: Boolean = js.native
+  
   /**Gets or sets whether the user may reconnect existing links in this layer.*/
   var allowRelink: Boolean = js.native
+  
   /**Gets or sets whether the user may reshape parts in this layer.*/
   var allowReshape: Boolean = js.native
+  
   /**Gets or sets whether the user may resize parts in this layer.*/
   var allowResize: Boolean = js.native
+  
   /**Gets or sets whether the user may rotate parts in this layer.*/
   var allowRotate: Boolean = js.native
+  
   /**Gets or sets whether the user may select objects in this layer.*/
   var allowSelect: Boolean = js.native
+  
   /**Gets or sets whether the user may do in-place text editing in this layer.*/
   var allowTextEdit: Boolean = js.native
+  
   /**Gets or sets whether the user may ungroup existing groups in this layer.*/
   var allowUngroup: Boolean = js.native
+  
   /**This read-only property returns the Diagram that is using this Layer.*/
   var diagram: Diagram = js.native
-  /**Gets or sets whether the objects in this layer are considered temporary.*/
-  var isTemporary: Boolean = js.native
-  /**Gets or sets the name for this layer.*/
-  var name: String = js.native
-  /**Gets or sets the opacity for all parts in this layer.*/
-  var opacity: Double = js.native
-  /**This read-only property returns an iterator for this Layer's Parts.*/
-  var parts: Iterator[Part] = js.native
-  /**This read-only property returns a backwards iterator for this Layer's Parts, for iterating over the parts in reverse order.*/
-  var partsBackwards: Iterator[Part] = js.native
-  /**Gets or sets whether methods such as .findObjectAt find any of the objects in this layer.*/
-  var pickable: Boolean = js.native
-  /**Gets or sets whether the user may view any of the objects in this layer.*/
-  var visible: Boolean = js.native
+  
   /**
     * Find the front-most GraphObject in this layer at the given point in document coordinates.
     * @param {Point} p A Point in document coordinates.
@@ -71,6 +71,7 @@ class Layer () extends js.Object {
     navig: js.Function1[/* obj */ GraphObject, GraphObject],
     pred: js.Function1[/* obj */ GraphObject, Boolean]
   ): GraphObject = js.native
+  
   def findObjectsAt(p: Point): Set[GraphObject] = js.native
   def findObjectsAt(
     p: Point,
@@ -150,6 +151,7 @@ class Layer () extends js.Object {
     navig: js.Function1[/* obj */ GraphObject, GraphObject],
     pred: js.Function1[/* obj */ GraphObject, Boolean]
   ): List[GraphObject] = js.native
+  
   def findObjectsIn(r: Rect): Set[GraphObject] = js.native
   def findObjectsIn(
     r: Rect,
@@ -347,6 +349,7 @@ class Layer () extends js.Object {
     pred: js.Function1[/* obj */ GraphObject, Boolean],
     partialInclusion: Boolean
   ): List[GraphObject] = js.native
+  
   def findObjectsNear(p: Point, dist: Double): Set[GraphObject] = js.native
   def findObjectsNear(
     p: Point,
@@ -581,5 +584,25 @@ class Layer () extends js.Object {
     pred: js.Function1[/* obj */ GraphObject, Boolean],
     partialInclusion: Boolean
   ): List[GraphObject] = js.native
+  
+  /**Gets or sets whether the objects in this layer are considered temporary.*/
+  var isTemporary: Boolean = js.native
+  
+  /**Gets or sets the name for this layer.*/
+  var name: String = js.native
+  
+  /**Gets or sets the opacity for all parts in this layer.*/
+  var opacity: Double = js.native
+  
+  /**This read-only property returns an iterator for this Layer's Parts.*/
+  var parts: Iterator[Part] = js.native
+  
+  /**This read-only property returns a backwards iterator for this Layer's Parts, for iterating over the parts in reverse order.*/
+  var partsBackwards: Iterator[Part] = js.native
+  
+  /**Gets or sets whether methods such as .findObjectAt find any of the objects in this layer.*/
+  var pickable: Boolean = js.native
+  
+  /**Gets or sets whether the user may view any of the objects in this layer.*/
+  var visible: Boolean = js.native
 }
-

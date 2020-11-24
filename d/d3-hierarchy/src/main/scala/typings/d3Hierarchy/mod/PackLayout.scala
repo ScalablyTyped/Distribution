@@ -2,10 +2,11 @@ package typings.d3Hierarchy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PackLayout[Datum] extends js.Object {
+  
   /**
     * Lays out the specified root hierarchy.
     * You must call `root.sum` before passing the hierarchy to the pack layout.
@@ -14,6 +15,7 @@ trait PackLayout[Datum] extends js.Object {
     * @param root The specified root hierarchy.
     */
   def apply(root: HierarchyNode[Datum]): HierarchyCircularNode[Datum] = js.native
+  
   /**
     * Returns the current padding accessor, which defaults to the constant zero.
     */
@@ -44,6 +46,7 @@ trait PackLayout[Datum] extends js.Object {
     * @param padding The specified padding value.
     */
   def padding(padding: Double): this.type = js.native
+  
   /**
     * Sets the pack layout’s radius accessor to the specified function and returns this pack layout.
     * If the radius accessor is null, the radius of each leaf circle is derived from the leaf `node.value` (computed by `node.sum`);
@@ -59,6 +62,7 @@ trait PackLayout[Datum] extends js.Object {
     */
   @JSName("radius")
   def radius_Union(): Null | (js.Function1[/* node */ HierarchyCircularNode[Datum], Double]) = js.native
+  
   /**
     * Returns the current size, which defaults to [1, 1].
     */
@@ -70,4 +74,3 @@ trait PackLayout[Datum] extends js.Object {
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
 }
-

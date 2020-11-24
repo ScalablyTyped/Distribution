@@ -4,13 +4,12 @@ import typings.fastGlob.mod.Options
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("globby", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  @JSName("gitignore")
-  val gitignore_Original: Gitignore = js.native
+  
   /**
   	Find files and directories using glob patterns.
   	Note that glob patterns can only contain forward-slashes, not backward-slashes, so if you want to construct a glob pattern from path components, you need to use `path.posix.join()` instead of `path.join()`.
@@ -31,6 +30,7 @@ object ^ extends js.Object {
   def apply(patterns: String, options: GlobbyOptions): js.Promise[js.Array[String]] = js.native
   def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = js.native
   def apply(patterns: js.Array[String], options: GlobbyOptions): js.Promise[js.Array[String]] = js.native
+  
   /**
   	Note that you should avoid running the same tasks multiple times as they contain a file system cache. Instead, run this method each time to ensure file system changes are taken into consideration.
   	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
@@ -41,6 +41,7 @@ object ^ extends js.Object {
   def generateGlobTasks(patterns: String, options: GlobbyOptions): js.Array[GlobTask] = js.native
   def generateGlobTasks(patterns: js.Array[String]): js.Array[GlobTask] = js.native
   def generateGlobTasks(patterns: js.Array[String], options: GlobbyOptions): js.Array[GlobTask] = js.native
+  
   /**
   	`.gitignore` files matched by the ignore config are not used for the resulting filter function.
   	@returns A filter function indicating whether a given path is ignored via a `.gitignore` file.
@@ -55,6 +56,9 @@ object ^ extends js.Object {
   	*/
   def gitignore(): js.Promise[FilterFunction] = js.native
   def gitignore(options: GitignoreOptions): js.Promise[FilterFunction] = js.native
+  @JSName("gitignore")
+  val gitignore_Original: Gitignore = js.native
+  
   /**
   	Note that the options affect the results.
   	This function is backed by [`fast-glob`](https://github.com/mrmlnc/fast-glob#isdynamicpatternpattern-options).
@@ -66,6 +70,7 @@ object ^ extends js.Object {
   def hasMagic(patterns: String, options: Options): Boolean = js.native
   def hasMagic(patterns: js.Array[String]): Boolean = js.native
   def hasMagic(patterns: js.Array[String], options: Options): Boolean = js.native
+  
   /**
   	Find files and directories using glob patterns.
   	Note that glob patterns can only contain forward-slashes, not backward-slashes, so if you want to construct a glob pattern from path components, you need to use `path.posix.join()` instead of `path.join()`.
@@ -86,6 +91,7 @@ object ^ extends js.Object {
   def stream(patterns: String, options: GlobbyOptions): ReadableStream = js.native
   def stream(patterns: js.Array[String]): ReadableStream = js.native
   def stream(patterns: js.Array[String], options: GlobbyOptions): ReadableStream = js.native
+  
   /**
   	Find files and directories using glob patterns.
   	Note that glob patterns can only contain forward-slashes, not backward-slashes, so if you want to construct a glob pattern from path components, you need to use `path.posix.join()` instead of `path.join()`.
@@ -98,4 +104,3 @@ object ^ extends js.Object {
   def sync(patterns: js.Array[String]): js.Array[String] = js.native
   def sync(patterns: js.Array[String], options: GlobbyOptions): js.Array[String] = js.native
 }
-

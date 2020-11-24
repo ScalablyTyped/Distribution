@@ -1,7 +1,7 @@
 
 # Scala.js typings for protobufjs
 
-Typings are for version 6.10.1
+Typings are for version 6.10.2
 
 ## Library description:
 Protocol Buffers for JavaScript (& TypeScript).
@@ -10,15 +10,15 @@ Protocol Buffers for JavaScript (& TypeScript).
 | ------------------ | :-------------: |
 | Full name          | protobufjs |
 | Keywords           | protobuf, protocol-buffers, serialization, typescript |
-| # releases         | 6 |
-| # dependents       | 914 |
-| # downloads        | 96351043 |
+| # releases         | 12 |
+| # dependents       | 1143 |
+| # downloads        | 159545782 |
 | # stars            | 50 |
 
 ## Links
-- [Homepage](https://github.com/dcodeIO/protobuf.js#readme)
+- [Homepage](https://protobufjs.github.io/protobuf.js/)
 - [Bugs](https://github.com/dcodeIO/protobuf.js/issues)
-- [Repository](https://github.com/dcodeIO/protobuf.js)
+- [Repository](https://github.com/protobufjs/protobuf.js)
 - [Npm](https://www.npmjs.com/package/protobufjs)
     
 

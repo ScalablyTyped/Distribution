@@ -2,7 +2,7 @@ package typings.weixinApp.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 设备-----扫码
 /* Rewritten from type alias, can be one of: 
@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   - typings.weixinApp.weixinAppStrings.barCode
 */
 trait scanType extends js.Object
-
 object scanType {
+  
   @scala.inline
   def barCode: typings.weixinApp.weixinAppStrings.barCode = "barCode".asInstanceOf[typings.weixinApp.weixinAppStrings.barCode]
+  
   @scala.inline
   def qrCode: typings.weixinApp.weixinAppStrings.qrCode = "qrCode".asInstanceOf[typings.weixinApp.weixinAppStrings.qrCode]
 }
-

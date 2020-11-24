@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LinkedDataTypeState extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.LinkedDataTypeState")
 @js.native
 object LinkedDataTypeState extends js.Object {
+  
   @js.native
   sealed trait brokenLinkedData extends LinkedDataTypeState
   
@@ -27,6 +27,4 @@ object LinkedDataTypeState extends js.Object {
   
   @js.native
   sealed trait validLinkedData extends LinkedDataTypeState
-  
 }
-

@@ -5,7 +5,7 @@ import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageOffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ManageOfferOperationResponse
@@ -13,19 +13,29 @@ trait ManageOfferOperationResponse
       manageOffer, 
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.manageOffer
     ] {
+  
   var amount: String = js.native
+  
   var buying_asset_code: js.UndefOr[String] = js.native
+  
   var buying_asset_issuer: js.UndefOr[String] = js.native
+  
   var buying_asset_type: AssetType = js.native
+  
   var offer_id: Double | String = js.native
+  
   var price: String = js.native
+  
   var price_r: PriceR = js.native
+  
   var selling_asset_code: js.UndefOr[String] = js.native
+  
   var selling_asset_issuer: js.UndefOr[String] = js.native
+  
   var selling_asset_type: AssetType = js.native
 }
-
 object ManageOfferOperationResponse {
+  
   @scala.inline
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -49,46 +59,62 @@ object ManageOfferOperationResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManageOfferOperationResponse]
   }
+  
   @scala.inline
   implicit class ManageOfferOperationResponseOps[Self <: ManageOfferOperationResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBuying_asset_type(value: AssetType): Self = this.set("buying_asset_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOffer_id(value: Double | String): Self = this.set("offer_id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrice_r(value: PriceR): Self = this.set("price_r", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelling_asset_type(value: AssetType): Self = this.set("selling_asset_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBuying_asset_code(value: String): Self = this.set("buying_asset_code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBuying_asset_code: Self = this.set("buying_asset_code", js.undefined)
+    
     @scala.inline
     def setBuying_asset_issuer(value: String): Self = this.set("buying_asset_issuer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBuying_asset_issuer: Self = this.set("buying_asset_issuer", js.undefined)
+    
     @scala.inline
     def setSelling_asset_code(value: String): Self = this.set("selling_asset_code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelling_asset_code: Self = this.set("selling_asset_code", js.undefined)
+    
     @scala.inline
     def setSelling_asset_issuer(value: String): Self = this.set("selling_asset_issuer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelling_asset_issuer: Self = this.set("selling_asset_issuer", js.undefined)
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.IoTJobsDataPlane")
 @js.native
@@ -14,4 +14,3 @@ class IoTJobsDataPlane ()
   extends typings.awsSdk.mod.IoTJobsDataPlane {
   def this(options: ClientConfiguration) = this()
 }
-

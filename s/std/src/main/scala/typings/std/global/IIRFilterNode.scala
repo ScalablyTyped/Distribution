@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.IIRFilterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("IIRFilterNode")
 @js.native
@@ -12,7 +12,6 @@ class IIRFilterNode protected ()
   extends typings.std.IIRFilterNode {
   def this(context: typings.std.BaseAudioContext, options: IIRFilterOptions) = this()
 }
-
 @JSGlobal("IIRFilterNode")
 @js.native
 object IIRFilterNode
@@ -21,4 +20,3 @@ object IIRFilterNode
       /* options */ IIRFilterOptions, 
       typings.std.IIRFilterNode
     ]
-

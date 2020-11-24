@@ -9,16 +9,21 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/access_path_pb", "AccessPath")
 @js.native
 object ^ extends js.Object {
-  var extensions: NumberDictionary[ExtensionFieldInfo[Message]] = js.native
-  var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
+  
   def deserializeBinary(bytes: Uint8Array): typings.libraCore.accessPathPbMod.AccessPath = js.native
+  
   def deserializeBinaryFromReader(message: typings.libraCore.accessPathPbMod.AccessPath, reader: BinaryReader): typings.libraCore.accessPathPbMod.AccessPath = js.native
+  
+  var extensions: NumberDictionary[ExtensionFieldInfo[Message]] = js.native
+  
+  var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
+  
   def serializeBinaryToWriter(message: typings.libraCore.accessPathPbMod.AccessPath, writer: BinaryWriter): Unit = js.native
+  
   def toObject(includeInstance: Boolean, msg: typings.libraCore.accessPathPbMod.AccessPath): AsObject = js.native
 }
-

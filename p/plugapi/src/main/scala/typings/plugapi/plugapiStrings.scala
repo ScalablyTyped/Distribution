@@ -2,9 +2,184 @@ package typings.plugapi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plugapiStrings {
+  
+  @scala.inline
+  def advance: advance = "advance".asInstanceOf[advance]
+  
+  @scala.inline
+  def ban: ban = "ban".asInstanceOf[ban]
+  
+  @scala.inline
+  def boothCycle: boothCycle = "boothCycle".asInstanceOf[boothCycle]
+  
+  @scala.inline
+  def boothLocked: boothLocked = "boothLocked".asInstanceOf[boothLocked]
+  
+  @scala.inline
+  def chat: chat = "chat".asInstanceOf[chat]
+  
+  @scala.inline
+  def chatDelete: chatDelete = "chatDelete".asInstanceOf[chatDelete]
+  
+  @scala.inline
+  def command: command = "command".asInstanceOf[command]
+  
+  @scala.inline
+  def d: d = "d".asInstanceOf[d]
+  
+  @scala.inline
+  def djListCycle: djListCycle = "djListCycle".asInstanceOf[djListCycle]
+  
+  @scala.inline
+  def djListLocked: djListLocked = "djListLocked".asInstanceOf[djListLocked]
+  
+  @scala.inline
+  def djListUpdate: djListUpdate = "djListUpdate".asInstanceOf[djListUpdate]
+  
+  @scala.inline
+  def earn: earn = "earn".asInstanceOf[earn]
+  
+  @scala.inline
+  def emote: emote = "emote".asInstanceOf[emote]
+  
+  @scala.inline
+  def f: f = "f".asInstanceOf[f]
+  
+  @scala.inline
+  def floodChat: floodChat = "floodChat".asInstanceOf[floodChat]
+  
+  @scala.inline
+  def followJoin: followJoin = "followJoin".asInstanceOf[followJoin]
+  
+  @scala.inline
+  def friendRequest: friendRequest = "friendRequest".asInstanceOf[friendRequest]
+  
+  @scala.inline
+  def gifted: gifted = "gifted".asInstanceOf[gifted]
+  
+  @scala.inline
+  def grab: grab = "grab".asInstanceOf[grab]
+  
+  @scala.inline
+  def h: h = "h".asInstanceOf[h]
+  
+  @scala.inline
+  def killSession: killSession = "killSession".asInstanceOf[killSession]
+  
+  @scala.inline
+  def l: l = "l".asInstanceOf[l]
+  
+  @scala.inline
+  def m: m = "m".asInstanceOf[m]
+  
+  @scala.inline
+  def modAddDJ: modAddDJ = "modAddDJ".asInstanceOf[modAddDJ]
+  
+  @scala.inline
+  def modAddWaitList: modAddWaitList = "modAddWaitList".asInstanceOf[modAddWaitList]
+  
+  @scala.inline
+  def modAmbassador: modAmbassador = "modAmbassador".asInstanceOf[modAmbassador]
+  
+  @scala.inline
+  def modBan: modBan = "modBan".asInstanceOf[modBan]
+  
+  @scala.inline
+  def modMoveDJ: modMoveDJ = "modMoveDJ".asInstanceOf[modMoveDJ]
+  
+  @scala.inline
+  def modMute: modMute = "modMute".asInstanceOf[modMute]
+  
+  @scala.inline
+  def modRemoveDJ: modRemoveDJ = "modRemoveDJ".asInstanceOf[modRemoveDJ]
+  
+  @scala.inline
+  def modRemoveWaitList: modRemoveWaitList = "modRemoveWaitList".asInstanceOf[modRemoveWaitList]
+  
+  @scala.inline
+  def modSkip: modSkip = "modSkip".asInstanceOf[modSkip]
+  
+  @scala.inline
+  def modStaff: modStaff = "modStaff".asInstanceOf[modStaff]
+  
+  @scala.inline
+  def pdjMessage: pdjMessage = "pdjMessage".asInstanceOf[pdjMessage]
+  
+  @scala.inline
+  def pdjUpdate: pdjUpdate = "pdjUpdate".asInstanceOf[pdjUpdate]
+  
+  @scala.inline
+  def ping: ping = "ping".asInstanceOf[ping]
+  
+  @scala.inline
+  def playlistCycle: playlistCycle = "playlistCycle".asInstanceOf[playlistCycle]
+  
+  @scala.inline
+  def plugMaintenance: plugMaintenance = "plugMaintenance".asInstanceOf[plugMaintenance]
+  
+  @scala.inline
+  def plugMaintenanceAlert: plugMaintenanceAlert = "plugMaintenanceAlert".asInstanceOf[plugMaintenanceAlert]
+  
+  @scala.inline
+  def requestDuration: requestDuration = "requestDuration".asInstanceOf[requestDuration]
+  
+  @scala.inline
+  def requestDurationRetry: requestDurationRetry = "requestDurationRetry".asInstanceOf[requestDurationRetry]
+  
+  @scala.inline
+  def roomChanged: roomChanged = "roomChanged".asInstanceOf[roomChanged]
+  
+  @scala.inline
+  def roomDescriptionUpdate: roomDescriptionUpdate = "roomDescriptionUpdate".asInstanceOf[roomDescriptionUpdate]
+  
+  @scala.inline
+  def roomJoin: roomJoin = "roomJoin".asInstanceOf[roomJoin]
+  
+  @scala.inline
+  def roomMinChatLevelUpdate: roomMinChatLevelUpdate = "roomMinChatLevelUpdate".asInstanceOf[roomMinChatLevelUpdate]
+  
+  @scala.inline
+  def roomNameUpdate: roomNameUpdate = "roomNameUpdate".asInstanceOf[roomNameUpdate]
+  
+  @scala.inline
+  def roomVoteSkip: roomVoteSkip = "roomVoteSkip".asInstanceOf[roomVoteSkip]
+  
+  @scala.inline
+  def roomWelcomeUpdate: roomWelcomeUpdate = "roomWelcomeUpdate".asInstanceOf[roomWelcomeUpdate]
+  
+  @scala.inline
+  def s: s = "s".asInstanceOf[s]
+  
+  @scala.inline
+  def sessionClose: sessionClose = "sessionClose".asInstanceOf[sessionClose]
+  
+  @scala.inline
+  def skip: skip = "skip".asInstanceOf[skip]
+  
+  @scala.inline
+  def strobeToggle: strobeToggle = "strobeToggle".asInstanceOf[strobeToggle]
+  
+  @scala.inline
+  def userCounterUpdate: userCounterUpdate = "userCounterUpdate".asInstanceOf[userCounterUpdate]
+  
+  @scala.inline
+  def userFollow: userFollow = "userFollow".asInstanceOf[userFollow]
+  
+  @scala.inline
+  def userJoin: userJoin = "userJoin".asInstanceOf[userJoin]
+  
+  @scala.inline
+  def userLeave: userLeave = "userLeave".asInstanceOf[userLeave]
+  
+  @scala.inline
+  def userUpdate: userUpdate = "userUpdate".asInstanceOf[userUpdate]
+  
+  @scala.inline
+  def vote: vote = "vote".asInstanceOf[vote]
+  
   @js.native
   sealed trait advance extends js.Object
   
@@ -181,122 +356,4 @@ object plugapiStrings {
   
   @js.native
   sealed trait vote extends js.Object
-  
-  @scala.inline
-  def advance: advance = "advance".asInstanceOf[advance]
-  @scala.inline
-  def ban: ban = "ban".asInstanceOf[ban]
-  @scala.inline
-  def boothCycle: boothCycle = "boothCycle".asInstanceOf[boothCycle]
-  @scala.inline
-  def boothLocked: boothLocked = "boothLocked".asInstanceOf[boothLocked]
-  @scala.inline
-  def chat: chat = "chat".asInstanceOf[chat]
-  @scala.inline
-  def chatDelete: chatDelete = "chatDelete".asInstanceOf[chatDelete]
-  @scala.inline
-  def command: command = "command".asInstanceOf[command]
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
-  @scala.inline
-  def djListCycle: djListCycle = "djListCycle".asInstanceOf[djListCycle]
-  @scala.inline
-  def djListLocked: djListLocked = "djListLocked".asInstanceOf[djListLocked]
-  @scala.inline
-  def djListUpdate: djListUpdate = "djListUpdate".asInstanceOf[djListUpdate]
-  @scala.inline
-  def earn: earn = "earn".asInstanceOf[earn]
-  @scala.inline
-  def emote: emote = "emote".asInstanceOf[emote]
-  @scala.inline
-  def f: f = "f".asInstanceOf[f]
-  @scala.inline
-  def floodChat: floodChat = "floodChat".asInstanceOf[floodChat]
-  @scala.inline
-  def followJoin: followJoin = "followJoin".asInstanceOf[followJoin]
-  @scala.inline
-  def friendRequest: friendRequest = "friendRequest".asInstanceOf[friendRequest]
-  @scala.inline
-  def gifted: gifted = "gifted".asInstanceOf[gifted]
-  @scala.inline
-  def grab: grab = "grab".asInstanceOf[grab]
-  @scala.inline
-  def h: h = "h".asInstanceOf[h]
-  @scala.inline
-  def killSession: killSession = "killSession".asInstanceOf[killSession]
-  @scala.inline
-  def l: l = "l".asInstanceOf[l]
-  @scala.inline
-  def m: m = "m".asInstanceOf[m]
-  @scala.inline
-  def modAddDJ: modAddDJ = "modAddDJ".asInstanceOf[modAddDJ]
-  @scala.inline
-  def modAddWaitList: modAddWaitList = "modAddWaitList".asInstanceOf[modAddWaitList]
-  @scala.inline
-  def modAmbassador: modAmbassador = "modAmbassador".asInstanceOf[modAmbassador]
-  @scala.inline
-  def modBan: modBan = "modBan".asInstanceOf[modBan]
-  @scala.inline
-  def modMoveDJ: modMoveDJ = "modMoveDJ".asInstanceOf[modMoveDJ]
-  @scala.inline
-  def modMute: modMute = "modMute".asInstanceOf[modMute]
-  @scala.inline
-  def modRemoveDJ: modRemoveDJ = "modRemoveDJ".asInstanceOf[modRemoveDJ]
-  @scala.inline
-  def modRemoveWaitList: modRemoveWaitList = "modRemoveWaitList".asInstanceOf[modRemoveWaitList]
-  @scala.inline
-  def modSkip: modSkip = "modSkip".asInstanceOf[modSkip]
-  @scala.inline
-  def modStaff: modStaff = "modStaff".asInstanceOf[modStaff]
-  @scala.inline
-  def pdjMessage: pdjMessage = "pdjMessage".asInstanceOf[pdjMessage]
-  @scala.inline
-  def pdjUpdate: pdjUpdate = "pdjUpdate".asInstanceOf[pdjUpdate]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def playlistCycle: playlistCycle = "playlistCycle".asInstanceOf[playlistCycle]
-  @scala.inline
-  def plugMaintenance: plugMaintenance = "plugMaintenance".asInstanceOf[plugMaintenance]
-  @scala.inline
-  def plugMaintenanceAlert: plugMaintenanceAlert = "plugMaintenanceAlert".asInstanceOf[plugMaintenanceAlert]
-  @scala.inline
-  def requestDuration: requestDuration = "requestDuration".asInstanceOf[requestDuration]
-  @scala.inline
-  def requestDurationRetry: requestDurationRetry = "requestDurationRetry".asInstanceOf[requestDurationRetry]
-  @scala.inline
-  def roomChanged: roomChanged = "roomChanged".asInstanceOf[roomChanged]
-  @scala.inline
-  def roomDescriptionUpdate: roomDescriptionUpdate = "roomDescriptionUpdate".asInstanceOf[roomDescriptionUpdate]
-  @scala.inline
-  def roomJoin: roomJoin = "roomJoin".asInstanceOf[roomJoin]
-  @scala.inline
-  def roomMinChatLevelUpdate: roomMinChatLevelUpdate = "roomMinChatLevelUpdate".asInstanceOf[roomMinChatLevelUpdate]
-  @scala.inline
-  def roomNameUpdate: roomNameUpdate = "roomNameUpdate".asInstanceOf[roomNameUpdate]
-  @scala.inline
-  def roomVoteSkip: roomVoteSkip = "roomVoteSkip".asInstanceOf[roomVoteSkip]
-  @scala.inline
-  def roomWelcomeUpdate: roomWelcomeUpdate = "roomWelcomeUpdate".asInstanceOf[roomWelcomeUpdate]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def sessionClose: sessionClose = "sessionClose".asInstanceOf[sessionClose]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def strobeToggle: strobeToggle = "strobeToggle".asInstanceOf[strobeToggle]
-  @scala.inline
-  def userCounterUpdate: userCounterUpdate = "userCounterUpdate".asInstanceOf[userCounterUpdate]
-  @scala.inline
-  def userFollow: userFollow = "userFollow".asInstanceOf[userFollow]
-  @scala.inline
-  def userJoin: userJoin = "userJoin".asInstanceOf[userJoin]
-  @scala.inline
-  def userLeave: userLeave = "userLeave".asInstanceOf[userLeave]
-  @scala.inline
-  def userUpdate: userUpdate = "userUpdate".asInstanceOf[userUpdate]
-  @scala.inline
-  def vote: vote = "vote".asInstanceOf[vote]
 }
-

@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbilling/v1", "cloudbilling_v1.Resource$Billingaccounts")
 @js.native
 class ResourceBillingaccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var projects: ResourceBillingaccountsProjects = js.native
+  
   /**
     * cloudbilling.billingAccounts.create
     * @desc Creates a billing account. This method can only be used to create
@@ -49,6 +50,7 @@ class ResourceBillingaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBillingAccount]
   ): Unit = js.native
+  
   /**
     * cloudbilling.billingAccounts.get
     * @desc Gets information about a billing account. The current authenticated
@@ -134,6 +136,7 @@ class ResourceBillingaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBillingAccount]
   ): Unit = js.native
+  
   /**
     * cloudbilling.billingAccounts.getIamPolicy
     * @desc Gets the access control policy for a billing account. The caller
@@ -165,6 +168,7 @@ class ResourceBillingaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudbilling.billingAccounts.list
     * @desc Lists the billing accounts that the current authenticated user has
@@ -264,6 +268,7 @@ class ResourceBillingaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListBillingAccountsResponse]
   ): Unit = js.native
+  
   /**
     * cloudbilling.billingAccounts.patch
     * @desc Updates a billing account's fields. Currently the only field that
@@ -299,6 +304,9 @@ class ResourceBillingaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBillingAccount]
   ): Unit = js.native
+  
+  var projects: ResourceBillingaccountsProjects = js.native
+  
   /**
     * cloudbilling.billingAccounts.setIamPolicy
     * @desc Sets the access control policy for a billing account. Replaces any
@@ -331,6 +339,7 @@ class ResourceBillingaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudbilling.billingAccounts.testIamPermissions
     * @desc Tests the access control policy for a billing account. This method
@@ -367,4 +376,3 @@ class ResourceBillingaccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

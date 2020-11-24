@@ -10,9 +10,9 @@ Use external SVG spritemaps in any browser
 | ------------------ | :-------------: |
 | Full name          | svg4everybody |
 | Keywords           | contents, defs, externals, fallbacks, icons, ie8s, ie9s, oldies, safaris, sprites, spritemaps, svgs, symbols, uses |
-| # releases         | 1 |
-| # dependents       | 44 |
-| # downloads        | 3336083 |
+| # releases         | 0 |
+| # dependents       | 55 |
+| # downloads        | 4256329 |
 | # stars            | 5 |
 
 ## Links

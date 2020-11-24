@@ -4,11 +4,14 @@ import typings.sawtoothSdk.coreMod.Context
 import typings.sawtoothSdk.coreMod.PrivateKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "signing")
 @js.native
 object signing extends js.Object {
+  
+  def createContext(algorithmName: String): Context = js.native
+  
   @js.native
   class CryptoFactory protected ()
     extends typings.sawtoothSdk.signingMod.CryptoFactory {
@@ -31,7 +34,4 @@ object signing extends js.Object {
       */
     def this(content: Context, privateKey: PrivateKey) = this()
   }
-  
-  def createContext(algorithmName: String): Context = js.native
 }
-

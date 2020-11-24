@@ -11,8 +11,8 @@ Get the system locale
 | Full name          | os-locale |
 | Keywords           | locale, lang, language, system, os, string, str, user, country, id, identifier, region |
 | # releases         | 5 |
-| # dependents       | 195 |
-| # downloads        | 777800539 |
+| # dependents       | 244 |
+| # downloads        | 854781510 |
 | # stars            | 6 |
 
 ## Links

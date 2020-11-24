@@ -1,19 +1,21 @@
 organization := "org.scalablytyped"
 name := "ant-design__react-native"
-version := "4.0.2-bb8a52"
+version := "4.0.6-0e2677"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-0d76aa",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "react-native" % "0.63-dt-20200723Z-d06c5c",
-  "org.scalablytyped" %%% "react-native-collapsible" % "1.5.3-6bd994",
-  "org.scalablytyped" %%% "react-native-modal-popover" % "0.0.12-fc0a88",
-  "org.scalablytyped" %%% "react-native-swipeout" % "2.3.6-57ee93",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-7d82ce",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
+  "org.scalablytyped" %%% "react-native" % "0.63-dt-20201120Z-d8889c",
+  "org.scalablytyped" %%% "react-native-collapsible" % "1.5.3-5b37b2",
+  "org.scalablytyped" %%% "react-native-community__picker" % "1.8.1-a3eab8",
+  "org.scalablytyped" %%% "react-native-community__viewpager" % "4.2.0-b3a4b1",
+  "org.scalablytyped" %%% "react-native-modal-popover" % "0.0.12-c9a27d",
+  "org.scalablytyped" %%% "react-native-swipeout" % "2.3.6-072c98",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

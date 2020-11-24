@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__settingeditor-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Setting Editor Extension
@@ -10,9 +10,9 @@ JupyterLab - Setting Editor Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/settingeditor-extension |
 | Keywords           | - |
-| # releases         | 63 |
+| # releases         | 113 |
 | # dependents       | 1 |
-| # downloads        | 750735 |
+| # downloads        | 1349012 |
 | # stars            | 0 |
 
 ## Links

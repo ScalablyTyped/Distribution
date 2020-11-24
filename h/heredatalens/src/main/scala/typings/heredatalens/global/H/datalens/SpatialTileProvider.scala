@@ -3,7 +3,7 @@ package typings.heredatalens.global.H.datalens
 import typings.heredatalens.H.datalens.SpatialTileProvider.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies how to access layer data (shapes, geometries) using the Data Lens REST API.
@@ -21,11 +21,10 @@ class SpatialTileProvider protected ()
     */
   def this(service: typings.heredatalens.H.datalens.Service, options: Options) = this()
 }
-
 /* static members */
 @JSGlobal("H.datalens.SpatialTileProvider")
 @js.native
 object SpatialTileProvider extends js.Object {
+  
   var VectorTile: js.Any = js.native
 }
-

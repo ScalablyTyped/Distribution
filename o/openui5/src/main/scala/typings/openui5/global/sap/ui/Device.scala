@@ -2,26 +2,31 @@ package typings.openui5.global.sap.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.Device")
 @js.native
 object Device extends js.Object {
+  
   @js.native
   object browser extends js.Object {
+    
     /**
       * If this flag is set to <code>true</code>, the Google Chrome browser is used.
       */
     var chrome: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Microsoft Edge browser is used.
       * @since 1.30.0
       */
     var edge: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Mozilla Firefox browser is used.
       */
     var firefox: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Safari browser runs in standalone fullscreen mode on
       * iOS.<b>Note:</b> This flag is only available if the Safari browser was detected. Furthermore, if
@@ -30,30 +35,36 @@ object Device extends js.Object {
       * @since 1.31.0
       */
     var fullscreen: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Microsoft Internet Explorer browser is used.
       */
     @JSName("internet_explorer")
     var internetExplorer: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the mobile variant of the browser is used.<b>Note:</b>
       * This information might not be available for all browsers.
       */
     var mobile: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a browser featuring a Mozilla engine is used.
       * @since 1.20.0
       */
     var mozilla: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Microsoft Internet Explorer browser is used.
       * @since 1.20.0
       */
     var msie: Boolean = js.native
+    
     /**
       * The name of the browser.
       */
     var name: String = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Apple Safari browser is used.<b>Note:</b>This flag is
       * also <code>true</code> when the standalone (fullscreen) mode or webview is used on iOS
@@ -61,20 +72,24 @@ object Device extends js.Object {
       * sap.ui.Device.browser#webview}.
       */
     var safari: Boolean = js.native
+    
     /**
       * The version of the browser as <code>float</code>.Might be <code>-1</code> if no version can be
       * determined.
       */
     var version: Double = js.native
+    
     /**
       * The version of the browser as <code>string</code>.Might be empty if no version can be determined.
       */
     var versionStr: String = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a browser featuring a Webkit engine is used.
       * @since 1.20.0
       */
     var webkit: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the Safari browser runs in webview mode on
       * iOS.<b>Note:</b> This flag is only available if the Safari browser was detected. Furthermore, if
@@ -83,39 +98,46 @@ object Device extends js.Object {
       * @since 1.31.0
       */
     var webview: Boolean = js.native
+    
     @js.native
     object BROWSER extends js.Object {
+      
       /**
         * Android stock browser name.
         */
       var ANDROID: js.Any = js.native
+      
       /**
         * Chrome browser name.
         */
       var CHROME: js.Any = js.native
+      
       /**
         * Edge browser name.
         * @since 1.28.0
         */
       var EDGE: js.Any = js.native
+      
       /**
         * Firefox browser name.
         */
       var FIREFOX: js.Any = js.native
+      
       /**
         * Internet Explorer browser name.
         */
       var INTERNET_EXPLORER: js.Any = js.native
+      
       /**
         * Safari browser name.
         */
       var SAFARI: js.Any = js.native
     }
-    
   }
   
   @js.native
   object media extends js.Object {
+    
     /**
       * Registers the given event handler to change events of the screen width based on the range set with
       * the specified name.The event is fired whenever the screen width changes and the current screen width
@@ -139,6 +161,7 @@ object Device extends js.Object {
       *      {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD default range set} is used.
       */
     def attachHandler(fnFunction: js.Any, oListener: js.Any, sName: String): Unit = js.native
+    
     /**
       * Removes a previously attached event handler from the change events of the screen width.The passed
       * parameters must match those used for registration with {@link #attachHandler} beforehand.
@@ -148,6 +171,7 @@ object Device extends js.Object {
       * {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD default range set} is used.
       */
     def detachHandler(fnFunction: js.Any, oListener: js.Any, sName: String): Unit = js.native
+    
     /**
       * Returns information about the current active range of the range set with the given name.
       * @param sName The name of the range set. The range set must be initialized beforehand ({@link
@@ -156,12 +180,14 @@ object Device extends js.Object {
       * same structure as the argument of the event handlers ({link sap.ui.Device.media#attachHandler})
       */
     def getCurrentRange(sName: String): js.Any = js.native
+    
     /**
       * Returns <code>true</code> if a range set with the given name is already initialized.
       * @param sName The name of the range set.
       * @returns Returns <code>true</code> if a range set with the given name is already initialized
       */
     def hasRangeSet(sName: String): Boolean = js.native
+    
     /**
       * Initializes a screen width media query range set.This initialization step makes the range set ready
       * to be used for one of the other functions in namespace <code>sap.ui.Device.media</code>.The most
@@ -271,6 +297,7 @@ object Device extends js.Object {
       aRangeNames: js.Array[String],
       bSuppressClasses: Boolean
     ): Unit = js.native
+    
     /**
       * Removes a previously initialized range set and detaches all registered handlers.Only custom range
       * sets can be removed via this function. Initialized predefined range sets({@link
@@ -278,8 +305,10 @@ object Device extends js.Object {
       * @param sName The name of the range set which should be removed.
       */
     def removeRangeSet(sName: String): Unit = js.native
+    
     @js.native
     object RANGESETS extends js.Object {
+      
       /**
         * A 3-step range set (S-L).The ranges of this set are:<ul><li><code>"S"</code>: For screens smaller
         * than 520 pixels.</li><li><code>"M"</code>: For screens greater than or equal to 520 pixels and
@@ -290,6 +319,7 @@ object Device extends js.Object {
         * <code>sapUiMedia-3Step-<i>NAME_OF_THE_INTERVAL</i></code>.
         */
       var SAP_3STEPS: js.Any = js.native
+      
       /**
         * A 4-step range set (S-XL).The ranges of this set are:<ul><li><code>"S"</code>: For screens smaller
         * than 520 pixels.</li><li><code>"M"</code>: For screens greater than or equal to 520 pixels and
@@ -301,6 +331,7 @@ object Device extends js.Object {
         * <code>sapUiMedia-4Step-<i>NAME_OF_THE_INTERVAL</i></code>.
         */
       var SAP_4STEPS: js.Any = js.native
+      
       /**
         * A 6-step range set (XS-XXL).The ranges of this set are:<ul><li><code>"XS"</code>: For screens
         * smaller than 241 pixels.</li><li><code>"S"</code>: For screens greater than or equal to 241 pixels
@@ -314,6 +345,7 @@ object Device extends js.Object {
         * <code>sapUiMedia-6Step-<i>NAME_OF_THE_INTERVAL</i></code>.
         */
       var SAP_6STEPS: js.Any = js.native
+      
       /**
         * A 3-step range set (Phone, Tablet, Desktop).The ranges of this set are:<ul><li><code>"Phone"</code>:
         * For screens smaller than 600 pixels.</li><li><code>"Tablet"</code>: For screens greater than or
@@ -332,6 +364,7 @@ object Device extends js.Object {
         * has 1024px or more</li></ul>
         */
       var SAP_STANDARD: js.Any = js.native
+      
       /**
         * A 4-step range set (Phone, Tablet, Desktop, LargeDesktop).The ranges of this set
         * are:<ul><li><code>"Phone"</code>: For screens smaller than 600
@@ -345,21 +378,11 @@ object Device extends js.Object {
         */
       var SAP_STANDARD_EXTENDED: js.Any = js.native
     }
-    
   }
   
   @js.native
   object orientation extends js.Object {
-    /**
-      * If this flag is set to <code>true</code>, the screen is currently in landscape mode (the width is
-      * greater than the height).
-      */
-    var landscape: Boolean = js.native
-    /**
-      * If this flag is set to <code>true</code>, the screen is currently in portrait mode (the height is
-      * greater than the width).
-      */
-    var portrait: Boolean = js.native
+    
     /**
       * Registers the given event handler to orientation change events of the document's window.The event is
       * fired whenever the screen orientation changes and the width of the document's windowbecomes greater
@@ -377,6 +400,7 @@ object Device extends js.Object {
       */
     def attachHandler(fnFunction: js.Any): Unit = js.native
     def attachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    
     /**
       * Removes a previously attached event handler from the orientation change events.The passed parameters
       * must match those used for registration with {@link #attachHandler} beforehand.
@@ -385,97 +409,119 @@ object Device extends js.Object {
       */
     def detachHandler(fnFunction: js.Any): Unit = js.native
     def detachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    
+    /**
+      * If this flag is set to <code>true</code>, the screen is currently in landscape mode (the width is
+      * greater than the height).
+      */
+    var landscape: Boolean = js.native
+    
+    /**
+      * If this flag is set to <code>true</code>, the screen is currently in portrait mode (the height is
+      * greater than the width).
+      */
+    var portrait: Boolean = js.native
   }
   
   @js.native
   object os extends js.Object {
+    
     /**
       * If this flag is set to <code>true</code>, an Android operating system is used.
       */
     var android: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a Blackberry operating system is used.
       */
     var blackberry: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, an iOS operating system is used.
       */
     var ios: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a Linux operating system is used.
       */
     var linux: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a Mac operating system is used.
       */
     var macintosh: Boolean = js.native
+    
     /**
       * The name of the operating system.
       */
     var name: String = js.native
+    
     /**
       * The version of the operating system as <code>float</code>.Might be <code>-1</code> if no version can
       * be determined.
       */
     var version: Double = js.native
+    
     /**
       * The version of the operating system as <code>string</code>.Might be empty if no version can be
       * determined.
       */
     var versionStr: String = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a Windows operating system is used.
       */
     var windows: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, a Windows Phone operating system is used.
       */
     @JSName("windows_phone")
     var windowsPhone: Boolean = js.native
+    
     @js.native
     object OS extends js.Object {
+      
       /**
         * Android operating system name.
         */
       var ANDROID: js.Any = js.native
+      
       /**
         * Blackberry operating system name.
         */
       var BLACKBERRY: js.Any = js.native
+      
       /**
         * iOS operating system name.
         */
       var IOS: js.Any = js.native
+      
       /**
         * Linux operating system name.
         */
       var LINUX: js.Any = js.native
+      
       /**
         * MAC operating system name.
         */
       var MACINTOSH: js.Any = js.native
+      
       /**
         * Windows operating system name.
         */
       var WINDOWS: js.Any = js.native
+      
       /**
         * Windows Phone operating system name.
         */
       var WINDOWS_PHONE: js.Any = js.native
     }
-    
   }
   
   @js.native
   object resize extends js.Object {
-    /**
-      * The current height of the document's window in pixels.
-      */
-    var height: Double = js.native
-    /**
-      * The current width of the document's window in pixels.
-      */
-    var width: Double = js.native
+    
     /**
       * Registers the given event handler to resize change events of the document's window.The event is
       * fired whenever the document's window size changes.The event handler is called with a single
@@ -492,6 +538,7 @@ object Device extends js.Object {
       */
     def attachHandler(fnFunction: js.Any): Unit = js.native
     def attachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    
     /**
       * Removes a previously attached event handler from the resize events.The passed parameters must match
       * those used for registration with {@link #attachHandler} beforehand.
@@ -500,42 +547,59 @@ object Device extends js.Object {
       */
     def detachHandler(fnFunction: js.Any): Unit = js.native
     def detachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    
+    /**
+      * The current height of the document's window in pixels.
+      */
+    var height: Double = js.native
+    
+    /**
+      * The current width of the document's window in pixels.
+      */
+    var width: Double = js.native
   }
   
   @js.native
   object support extends js.Object {
+    
     /**
       * If this flag is set to <code>true</code>, the used browser natively supports media queries via
       * JavaScript.<b>Note:</b> The {@link sap.ui.Device.media media queries API} of the device API can also
       * be used when there is no native support.
       */
     var matchmedia: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the used browser natively supports events of media queries
       * via JavaScript.<b>Note:</b> The {@link sap.ui.Device.media media queries API} of the device API can
       * also be used when there is no native support.
       */
     var matchmedialistener: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the used browser natively supports the
       * <code>orientationchange</code> event.<b>Note:</b> The {@link sap.ui.Device.orientation orientation
       * event} of the device API can also be used when there is no native support.
       */
     var orientation: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the used browser supports pointer events.
       */
     var pointer: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the device has a display with a high resolution.
       */
     var retina: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the used browser supports touch events.<b>Note:</b> This
       * flag indicates whether the used browser supports touch events or not.This does not necessarily mean
       * that the used device has a touchable screen.
       */
     var touch: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the used browser supports web sockets.
       */
@@ -544,6 +608,7 @@ object Device extends js.Object {
   
   @js.native
   object system extends js.Object {
+    
     /**
       * If this flag is set to <code>true</code>, the device is recognized as a combination of a desktop
       * system and tablet.Furthermore, a CSS class <code>sap-combi</code> is added to the document root
@@ -552,22 +617,23 @@ object Device extends js.Object {
       * to <code>true</code> only when both mouse and touch event are natively supported.
       */
     var combi: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the device is recognized as a desktop system.Furthermore,
       * a CSS class <code>sap-desktop</code> is added to the document root element.
       */
     var desktop: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the device is recognized as a phone.Furthermore, a CSS
       * class <code>sap-phone</code> is added to the document root element.
       */
     var phone: Boolean = js.native
+    
     /**
       * If this flag is set to <code>true</code>, the device is recognized as a tablet.Furthermore, a CSS
       * class <code>sap-tablet</code> is added to the document root element.
       */
     var tablet: Boolean = js.native
   }
-  
 }
-

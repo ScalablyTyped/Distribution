@@ -1,22 +1,28 @@
 package typings.officeUiFabricReact.maskedTextFieldMod
 
+import typings.officeUiFabricReact.textFieldTypesMod.IMaskedTextFieldProps
 import typings.officeUiFabricReact.textFieldTypesMod.ITextField
-import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/MaskedTextField", "MaskedTextField")
 @js.native
 class MaskedTextField protected ()
-  extends Component[ITextFieldProps, IMaskedTextFieldState, js.Any]
+  extends Component[IMaskedTextFieldProps, IMaskedTextFieldState, js.Any]
      with ITextField {
-  def this(props: ITextFieldProps) = this()
+  def this(props: IMaskedTextFieldProps) = this()
+  
+  @JSName("UNSAFE_componentWillReceiveProps")
+  def UNSAFE_componentWillReceiveProps_MMaskedTextField(newProps: IMaskedTextFieldProps): Unit = js.native
+  
   /** The stored selection data prior to input change events. */
   var _changeSelectionData: js.Any = js.native
+  
   /** True if the TextField is focused */
   var _isFocused: js.Any = js.native
+  
   /**
     *  An array of data containing information regarding the format characters,
     *  their indices inside the display text, and their corresponding values.
@@ -32,27 +38,35 @@ class MaskedTextField protected ()
     * ```
     */
   var _maskCharData: js.Any = js.native
+  
   /** True if the TextField was not focused and it was clicked into */
   var _moveCursorOnMouseUp: js.Any = js.native
+  
   var _onBlur: js.Any = js.native
+  
   var _onFocus: js.Any = js.native
+  
   var _onInputChange: js.Any = js.native
+  
   var _onKeyDown: js.Any = js.native
+  
   var _onMouseDown: js.Any = js.native
+  
   var _onMouseUp: js.Any = js.native
+  
   var _onPaste: js.Any = js.native
+  
   var _textField: js.Any = js.native
-  @JSName("UNSAFE_componentWillReceiveProps")
-  def UNSAFE_componentWillReceiveProps_MMaskedTextField(newProps: ITextFieldProps): Unit = js.native
+  
   @JSName("componentDidUpdate")
   def componentDidUpdate_MMaskedTextField(): Unit = js.native
+  
   def setValue(newValue: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/MaskedTextField", "MaskedTextField")
 @js.native
 object MaskedTextField extends js.Object {
-  var defaultProps: ITextFieldProps = js.native
+  
+  var defaultProps: IMaskedTextFieldProps = js.native
 }
-

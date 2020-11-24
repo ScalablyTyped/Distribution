@@ -2,7 +2,7 @@ package typings.easeljs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.BlurFilter")
 @js.native
@@ -16,4 +16,3 @@ class BlurFilter ()
   def this(blurX: Double, blurY: js.UndefOr[scala.Nothing], quality: Double) = this()
   def this(blurX: Double, blurY: Double, quality: Double) = this()
 }
-

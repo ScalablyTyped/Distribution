@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("addEventListener")
 @js.native
 object addEventListener_error extends js.Object {
+  
   def apply(`type`: error, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, _]): Unit = js.native
   def apply(
     `type`: error,
@@ -22,4 +23,3 @@ object addEventListener_error extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
 }
-

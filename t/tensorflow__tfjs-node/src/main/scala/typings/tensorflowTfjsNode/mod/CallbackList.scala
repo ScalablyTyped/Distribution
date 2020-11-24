@@ -3,7 +3,7 @@ package typings.tensorflowTfjsNode.mod
 import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "CallbackList")
 @js.native
@@ -19,4 +19,3 @@ class CallbackList ()
   def this(callbacks: js.UndefOr[scala.Nothing], queueLength: Double) = this()
   def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
 }
-

@@ -13,7 +13,7 @@ import typings.ws.wsStrings.headers
 import typings.ws.wsStrings.listening
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebSocket Server
 @JSImport("ws", "Server")
@@ -22,9 +22,7 @@ class Server () extends EventEmitter {
   def this(options: ServerOptions) = this()
   def this(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
   def this(options: ServerOptions, callback: js.Function0[Unit]) = this()
-  var clients: Set[WebSocket] = js.native
-  var options: ServerOptions = js.native
-  var path: String = js.native
+  
   @JSName("addListener")
   def addListener_close(event: close, cb: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -38,15 +36,21 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("addListener")
   def addListener_listening(event: listening, cb: js.Function0[Unit]): this.type = js.native
+  
   def address(): AddressInfo | String = js.native
+  
+  var clients: Set[WebSocket] = js.native
+  
   def close(): Unit = js.native
   def close(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  
   def handleUpgrade(
     request: IncomingMessage,
     socket: Socket,
     upgradeHead: Buffer,
-    callback: js.Function1[/* client */ WebSocket, Unit]
+    callback: js.Function2[/* client */ WebSocket, /* request */ IncomingMessage, Unit]
   ): Unit = js.native
+  
   def off(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("off")
@@ -70,6 +74,7 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("off")
   def off_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -94,6 +99,7 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("on")
   def on_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
   @JSName("once")
@@ -115,6 +121,11 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("once")
   def once_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  
+  var options: ServerOptions = js.native
+  
+  var path: String = js.native
+  
   @JSName("removeListener")
   def removeListener_close(event: close, cb: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
@@ -128,6 +139,6 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_listening(event: listening, cb: js.Function0[Unit]): this.type = js.native
+  
   def shouldHandle(request: IncomingMessage): Boolean | js.Promise[Boolean] = js.native
 }
-

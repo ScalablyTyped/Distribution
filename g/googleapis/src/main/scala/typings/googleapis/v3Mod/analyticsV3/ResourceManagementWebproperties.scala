@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Webproperties")
 @js.native
 class ResourceManagementWebproperties protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.webproperties.get
     * @desc Gets a web property to which the user has access.
@@ -45,6 +47,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebproperty]
   ): Unit = js.native
+  
   /**
     * analytics.management.webproperties.insert
     * @desc Create a new property if the account has fewer than 20 properties.
@@ -79,6 +82,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebproperty]
   ): Unit = js.native
+  
   /**
     * analytics.management.webproperties.list
     * @desc Lists web properties to which the user has access.
@@ -112,6 +116,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebproperties]
   ): Unit = js.native
+  
   /**
     * analytics.management.webproperties.patch
     * @desc Updates an existing web property. This method supports patch
@@ -146,6 +151,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebproperty]
   ): Unit = js.native
+  
   /**
     * analytics.management.webproperties.update
     * @desc Updates an existing web property.
@@ -180,4 +186,3 @@ class ResourceManagementWebproperties protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWebproperty]
   ): Unit = js.native
 }
-

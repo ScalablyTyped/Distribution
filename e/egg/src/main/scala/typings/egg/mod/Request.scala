@@ -2,11 +2,12 @@ package typings.egg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request
   extends typings.koa.mod.Request {
+  
   // tslint:disable-line
   /**
     * detect if response should be json
@@ -18,7 +19,9 @@ trait Request
     * @since 1.0.0
     */
   var acceptJSON: Boolean = js.native
+  
   var body: js.Any = js.native
+  
   /**
     * get params pass by querystring, all value are Array type. {@link Request#query}
     * @member {Array} Request#queries
@@ -37,4 +40,3 @@ trait Request
     */
   var queries: PlainObject[js.Array[String]] = js.native
 }
-

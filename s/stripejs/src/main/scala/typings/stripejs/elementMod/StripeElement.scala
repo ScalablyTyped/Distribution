@@ -9,28 +9,33 @@ import typings.stripejs.stripejsStrings.focus
 import typings.stripejs.stripejsStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StripeElement extends js.Object {
+  
   /**
     * Blur the element
     * @see https://stripe.com/docs/stripe-js/reference#other-methods
     */
   def blur(): Unit = js.native
+  
   /**
     * Clear the value of the element
     */
   def clear(): Unit = js.native
+  
   /**
     * Removes the Element from the DOM and destroys it
     * NOTE: a destroyed element can not be re-activated or re-mounted to the DOM
     */
   def destroy(): Unit = js.native
+  
   /**
     * Give focus to the element
     */
   def focus(): Unit = js.native
+  
   def mount(element: String): Unit = js.native
   /**
     * Mount the element to the DOM
@@ -46,6 +51,7 @@ trait StripeElement extends js.Object {
     * ```
     */
   def mount(element: HTMLElement): Unit = js.native
+  
   /**
     * Watch for changes on the element
     * @see https://stripe.com/docs/stripe-js/reference#element-on
@@ -63,12 +69,14 @@ trait StripeElement extends js.Object {
   def on_focus(event: focus, handler: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_ready(event: ready, handler: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Unmounts the Element from the DOM
     * Call `element.mount()` to re-attach it to the DOM
     * @see mount
     */
   def unmount(): Unit = js.native
+  
   /**
     * Updates the options the Element was initialized with
     * NOTE: Updates are merged into the existing configuration
@@ -79,4 +87,3 @@ trait StripeElement extends js.Object {
   def update(options: IdealBankOptions): Unit = js.native
   def update(options: PaymentButtonOptions): Unit = js.native
 }
-

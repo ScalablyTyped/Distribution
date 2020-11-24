@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailAttachmentDownloadState extends js.Object
-
 /** Defines the states of an email attachment download. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailAttachmentDownloadState")
 @js.native
 object EmailAttachmentDownloadState extends js.Object {
+  
   /** The attachment has been downloaded. */
   @js.native
   sealed trait downloaded extends EmailAttachmentDownloadState
@@ -26,6 +26,4 @@ object EmailAttachmentDownloadState extends js.Object {
   /** The attachment is not yet downloaded. */
   @js.native
   sealed trait notDownloaded extends EmailAttachmentDownloadState
-  
 }
-

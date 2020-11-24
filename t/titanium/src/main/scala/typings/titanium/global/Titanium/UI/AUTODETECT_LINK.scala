@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Converts strings formatted as URLs into clickable links.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object AUTODETECT_LINK
   extends TopLevel[scala.Nothing]
-

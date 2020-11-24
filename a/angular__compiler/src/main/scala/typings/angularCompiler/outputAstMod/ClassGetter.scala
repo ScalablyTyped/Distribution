@@ -2,7 +2,7 @@ package typings.angularCompiler.outputAstMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "ClassGetter")
 @js.native
@@ -17,8 +17,10 @@ class ClassGetter protected () extends AbstractClassPart {
   ) = this()
   def this(name: String, body: js.Array[Statement], `type`: Null, modifiers: js.Array[StmtModifier]) = this()
   def this(name: String, body: js.Array[Statement], `type`: Type, modifiers: js.Array[StmtModifier]) = this()
+  
   var body: js.Array[Statement] = js.native
-  var name: String = js.native
+  
   def isEquivalent(m: ClassGetter): Boolean = js.native
+  
+  var name: String = js.native
 }
-

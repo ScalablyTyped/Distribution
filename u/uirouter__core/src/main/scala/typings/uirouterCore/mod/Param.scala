@@ -4,7 +4,7 @@ import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "Param")
 @js.native
@@ -18,11 +18,11 @@ class Param protected ()
     state: StateDeclaration
   ) = this()
 }
-
 /* static members */
 @JSImport("@uirouter/core", "Param")
 @js.native
 object Param extends js.Object {
+  
   /**
     * Finds [[Param]] objects which have different param values
     *
@@ -42,6 +42,7 @@ object Param extends js.Object {
   ): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  
   /**
     * Checks if two param value objects are equal (for a set of [[Param]] objects)
     *
@@ -59,10 +60,11 @@ object Param extends js.Object {
   ): Boolean = js.native
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
+  
   /** Returns true if a the parameter values are valid, according to the Param definitions */
   def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
   def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = js.native
+  
   def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = js.native
   def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = js.native
 }
-

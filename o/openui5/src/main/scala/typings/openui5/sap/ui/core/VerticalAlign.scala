@@ -2,11 +2,10 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VerticalAlign extends js.Object
-
 /**
   * Configuration options for vertical alignments, for example of a layout cell content within the
   * borders.
@@ -14,6 +13,7 @@ sealed trait VerticalAlign extends js.Object
 @JSGlobal("sap.ui.core.VerticalAlign")
 @js.native
 object VerticalAlign extends js.Object {
+  
   @js.native
   sealed trait Bottom extends VerticalAlign
   
@@ -25,6 +25,4 @@ object VerticalAlign extends js.Object {
   
   @js.native
   sealed trait Top extends VerticalAlign
-  
 }
-

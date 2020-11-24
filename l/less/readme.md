@@ -10,9 +10,9 @@ Leaner CSS
 | ------------------ | :-------------: |
 | Full name          | less |
 | Keywords           | compile less, css nesting, css variable, css, gradients css, gradients css3, less compiler, less css, less mixins, less, less.js, lesscss, mixins, nested css, parser, preprocessor, bootstrap css, bootstrap less, style, styles, stylesheet, variables in css, css less |
-| # releases         | 30 |
-| # dependents       | 4400 |
-| # downloads        | 94158684 |
+| # releases         | 16 |
+| # dependents       | 5401 |
+| # downloads        | 127078581 |
 | # stars            | 327 |
 
 ## Links

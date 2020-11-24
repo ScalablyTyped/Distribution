@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify-jwt
 
-Typings are for version 0.9.6
+Typings are for version 2.1.3
 
 ## Library description:
 JWT utils for Fastify
@@ -10,9 +10,9 @@ JWT utils for Fastify
 | ------------------ | :-------------: |
 | Full name          | fastify-jwt |
 | Keywords           | jwt, json, token, jsonwebtoken, fastify |
-| # releases         | 19 |
-| # dependents       | 7 |
-| # downloads        | 44141 |
+| # releases         | 27 |
+| # dependents       | 25 |
+| # downloads        | 272343 |
 | # stars            | 0 |
 
 ## Links

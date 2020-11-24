@@ -7,27 +7,19 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateConstructorTypeNode")
 @js.native
 object updateConstructorTypeNode extends js.Object {
-  def apply(
-    node: ConstructorTypeNode,
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: NodeArray[ParameterDeclaration]
-  ): ConstructorTypeNode = js.native
+  
   def apply(
     node: ConstructorTypeNode,
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: NodeArray[ParameterDeclaration],
     `type`: TypeNode
   ): ConstructorTypeNode = js.native
-  def apply(
-    node: ConstructorTypeNode,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration]
-  ): ConstructorTypeNode = js.native
+  /** @deprecated Use `factory.updateConstructorTypeNode` or the factory supplied by your transformation context instead. */
   def apply(
     node: ConstructorTypeNode,
     typeParameters: NodeArray[TypeParameterDeclaration],
@@ -35,4 +27,3 @@ object updateConstructorTypeNode extends js.Object {
     `type`: TypeNode
   ): ConstructorTypeNode = js.native
 }
-

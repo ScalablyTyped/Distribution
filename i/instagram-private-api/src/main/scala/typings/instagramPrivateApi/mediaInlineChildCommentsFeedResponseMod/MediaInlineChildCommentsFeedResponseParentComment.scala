@@ -2,26 +2,41 @@ package typings.instagramPrivateApi.mediaInlineChildCommentsFeedResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait MediaInlineChildCommentsFeedResponseParentComment extends js.Object {
-  var bit_flags: Double
-  var comment_like_count: Double
-  var content_type: String
-  var created_at: Double
-  var created_at_utc: Double
-  var did_report_as_spam: Boolean
-  var has_liked_comment: Boolean
-  var pk: String
-  var share_enabled: Boolean
-  var status: String
-  var text: String
-  var `type`: Double
-  var user: MediaInlineChildCommentsFeedResponseUser
-  var user_id: Double
+  
+  var bit_flags: Double = js.native
+  
+  var comment_like_count: Double = js.native
+  
+  var content_type: String = js.native
+  
+  var created_at: Double = js.native
+  
+  var created_at_utc: Double = js.native
+  
+  var did_report_as_spam: Boolean = js.native
+  
+  var has_liked_comment: Boolean = js.native
+  
+  var pk: String = js.native
+  
+  var share_enabled: Boolean = js.native
+  
+  var status: String = js.native
+  
+  var text: String = js.native
+  
+  var `type`: Double = js.native
+  
+  var user: MediaInlineChildCommentsFeedResponseUser = js.native
+  
+  var user_id: Double = js.native
 }
-
 object MediaInlineChildCommentsFeedResponseParentComment {
+  
   @scala.inline
   def apply(
     bit_flags: Double,
@@ -43,5 +58,62 @@ object MediaInlineChildCommentsFeedResponseParentComment {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaInlineChildCommentsFeedResponseParentComment]
   }
+  
+  @scala.inline
+  implicit class MediaInlineChildCommentsFeedResponseParentCommentOps[Self <: MediaInlineChildCommentsFeedResponseParentComment] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setBit_flags(value: Double): Self = this.set("bit_flags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setComment_like_count(value: Double): Self = this.set("comment_like_count", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreated_at_utc(value: Double): Self = this.set("created_at_utc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDid_report_as_spam(value: Boolean): Self = this.set("did_report_as_spam", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHas_liked_comment(value: Boolean): Self = this.set("has_liked_comment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShare_enabled(value: Boolean): Self = this.set("share_enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUser(value: MediaInlineChildCommentsFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUser_id(value: Double): Self = this.set("user_id", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -5,11 +5,12 @@ import typings.samchon.iexternalserverMod.IExternalServer
 import typings.samchon.iserverconnectorMod.IServerConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/external/derived/ExternalServer", JSImport.Namespace)
 @js.native
 object externalServerMod extends js.Object {
+  
   @js.native
   abstract class ExternalServer protected () extends IExternalServer {
     /**
@@ -18,14 +19,7 @@ object externalServerMod extends js.Object {
       * @param systemArray The parent {@link ExternalSystemArray} object.
       */
     def this(systemArray: ExternalSystemArray[IExternalServer]) = this()
-    /**
-      * IP address of target external system to connect.
-      */
-    var ip: String = js.native
-    /**
-      * Port number of target external system to connect.
-      */
-    var port: Double = js.native
+    
     /**
       * Factory method creating {@link IServerConnector} object.
       *
@@ -41,7 +35,15 @@ object externalServerMod extends js.Object {
       * @return A newly created {@link IServerConnector} object.
       */
     /* protected */ def createServerConnector(): IServerConnector = js.native
+    
+    /**
+      * IP address of target external system to connect.
+      */
+    var ip: String = js.native
+    
+    /**
+      * Port number of target external system to connect.
+      */
+    var port: Double = js.native
   }
-  
 }
-

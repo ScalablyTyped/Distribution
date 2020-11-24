@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Gantt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ScheduleHeaderType extends js.Object
-
 @JSGlobal("ej.Gantt.ScheduleHeaderType")
 @js.native
 object ScheduleHeaderType extends js.Object {
+  
   ///Sets day Schedule Mode.
   @js.native
   sealed trait Day extends ScheduleHeaderType
@@ -29,6 +29,4 @@ object ScheduleHeaderType extends js.Object {
   ///Sets year Schedule Mode.
   @js.native
   sealed trait Year extends ScheduleHeaderType
-  
 }
-

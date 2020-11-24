@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The maximum number of connections to which a connection pool can grow.
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "poolMax")
 @js.native
 object poolMax extends TopLevel[Double]
-

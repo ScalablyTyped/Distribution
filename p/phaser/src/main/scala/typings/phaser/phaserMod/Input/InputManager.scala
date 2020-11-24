@@ -3,7 +3,7 @@ package typings.phaser.phaserMod.Input
 import typings.phaser.Phaser.Game
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Input Manager is responsible for handling the pointer related systems in a single Phaser Game instance.
@@ -29,4 +29,3 @@ class InputManager protected ()
     */
   def this(game: Game, config: js.Object) = this()
 }
-

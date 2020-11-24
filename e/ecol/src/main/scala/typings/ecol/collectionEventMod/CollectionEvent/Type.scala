@@ -2,7 +2,7 @@ package typings.ecol.collectionEventMod.CollectionEvent
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ecol.ecolStrings.insert
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.ecol.ecolStrings.refresh
 */
 trait Type extends js.Object
-
 object Type {
+  
   @scala.inline
   def erase: typings.ecol.ecolStrings.erase = "erase".asInstanceOf[typings.ecol.ecolStrings.erase]
+  
   @scala.inline
   def insert: typings.ecol.ecolStrings.insert = "insert".asInstanceOf[typings.ecol.ecolStrings.insert]
+  
   @scala.inline
   def refresh: typings.ecol.ecolStrings.refresh = "refresh".asInstanceOf[typings.ecol.ecolStrings.refresh]
 }
-

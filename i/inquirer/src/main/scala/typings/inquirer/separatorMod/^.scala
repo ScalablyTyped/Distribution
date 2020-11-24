@@ -2,7 +2,7 @@ package typings.inquirer.separatorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a choice-item separator.
@@ -18,10 +18,10 @@ import scala.scalajs.js.annotation._
 class ^ () extends Separator {
   def this(line: String) = this()
 }
-
 @JSImport("inquirer/lib/objects/separator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Checks whether the specified `item` is not a separator.
     *
@@ -33,4 +33,3 @@ object ^ extends js.Object {
     */
   def exclude(item: js.Any): Boolean = js.native
 }
-

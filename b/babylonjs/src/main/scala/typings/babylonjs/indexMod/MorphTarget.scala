@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "MorphTarget")
 @js.native
@@ -22,15 +22,21 @@ class MorphTarget protected ()
   def this(
     /** defines the name of the target */
   name: String,
+    influence: js.UndefOr[scala.Nothing],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene]
+  ) = this()
+  def this(
+    /** defines the name of the target */
+  name: String,
     influence: Double,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "MorphTarget")
 @js.native
 object MorphTarget extends js.Object {
+  
   /**
     * Creates a MorphTarget from mesh data
     * @param mesh defines the source mesh
@@ -39,8 +45,14 @@ object MorphTarget extends js.Object {
     * @returns a new MorphTarget
     */
   def FromMesh(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh): typings.babylonjs.morphTargetMod.MorphTarget = js.native
+  def FromMesh(
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    name: js.UndefOr[scala.Nothing],
+    influence: Double
+  ): typings.babylonjs.morphTargetMod.MorphTarget = js.native
   def FromMesh(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh, name: String): typings.babylonjs.morphTargetMod.MorphTarget = js.native
   def FromMesh(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh, name: String, influence: Double): typings.babylonjs.morphTargetMod.MorphTarget = js.native
+  
   /**
     * Creates a new target from serialized data
     * @param serializationObject defines the serialized data to use
@@ -48,4 +60,3 @@ object MorphTarget extends js.Object {
     */
   def Parse(serializationObject: js.Any): typings.babylonjs.morphTargetMod.MorphTarget = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WebGL renderer plugin for tiling sprites
@@ -17,4 +17,3 @@ class TilingSpriteRenderer protected ()
   extends typings.pixiJs.PIXI.TilingSpriteRenderer {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-

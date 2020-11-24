@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-timer
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 An efficient queue capable of managing thousands of concurrent animations.
@@ -11,8 +11,8 @@ An efficient queue capable of managing thousands of concurrent animations.
 | Full name          | d3-timer |
 | Keywords           | d3, d3-module, timer, transition, animation, requestAnimationFrame, setTimeout, setInterval |
 | # releases         | 4 |
-| # dependents       | 78 |
-| # downloads        | 34255102 |
+| # dependents       | 90 |
+| # downloads        | 52898913 |
 | # stars            | 0 |
 
 ## Links

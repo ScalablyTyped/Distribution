@@ -2,9 +2,19 @@ package typings.postcssReporter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postcssReporterStrings {
+  
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  
   @js.native
   sealed trait any extends js.Object
   
@@ -13,12 +23,4 @@ object postcssReporterStrings {
   
   @js.native
   sealed trait last extends js.Object
-  
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
 }
-

@@ -3,7 +3,7 @@ package typings.screeps
 import typings.screeps.anon.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains powerful methods for pathfinding in the game world. Support exists for custom navigation costs and paths which span multiple rooms.
@@ -11,10 +11,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PathFinder extends js.Object {
+  
   /**
     * Container for custom navigation cost data.
     */
   var CostMatrix: typings.screeps.CostMatrix = js.native
+  
   def search(origin: RoomPosition, goal: js.Array[RoomPosition | Range]): PathFinderPath = js.native
   def search(origin: RoomPosition, goal: js.Array[RoomPosition | Range], opts: PathFinderOpts): PathFinderPath = js.native
   /**
@@ -28,6 +30,7 @@ trait PathFinder extends js.Object {
   def search(origin: RoomPosition, goal: RoomPosition, opts: PathFinderOpts): PathFinderPath = js.native
   def search(origin: RoomPosition, goal: Range): PathFinderPath = js.native
   def search(origin: RoomPosition, goal: Range, opts: PathFinderOpts): PathFinderPath = js.native
+  
   /**
     * Specify whether to use this new experimental pathfinder in game objects methods.
     * This method should be invoked every tick. It affects the following methods behavior:
@@ -41,4 +44,3 @@ trait PathFinder extends js.Object {
     */
   def use(isEnabled: Boolean): js.UndefOr[scala.Nothing] = js.native
 }
-

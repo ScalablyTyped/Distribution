@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-sticky"
-version := "2.2-dt-20200515Z-993afc"
+version := "2.2-dt-20200515Z-394c8b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

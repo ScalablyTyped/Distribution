@@ -3,7 +3,7 @@ package typings.aureliaTemplating.mod
 import typings.aureliaLoader.mod.TemplateRegistryEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TemplateRegistryViewStrategy")
 @js.native
@@ -14,6 +14,7 @@ class TemplateRegistryViewStrategy protected () extends js.Object {
     * @param entry The template registry entry used in loading the view factory.
     */
   def this(moduleId: String, entry: TemplateRegistryEntry) = this()
+  
   /**
     * Loads a view factory.
     * @param viewEngine The view engine to use during the load process.
@@ -41,4 +42,3 @@ class TemplateRegistryViewStrategy protected () extends js.Object {
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
 }
-

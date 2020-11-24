@@ -11,8 +11,8 @@ Notarize your Electron app
 | Full name          | electron-notarize |
 | Keywords           | - |
 | # releases         | 14 |
-| # dependents       | 9 |
-| # downloads        | 3186908 |
+| # dependents       | 13 |
+| # downloads        | 4126937 |
 | # stars            | 0 |
 
 ## Links

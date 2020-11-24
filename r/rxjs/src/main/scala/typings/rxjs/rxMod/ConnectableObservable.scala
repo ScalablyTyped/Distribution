@@ -2,7 +2,7 @@ package typings.rxjs.rxMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Rx", "ConnectableObservable")
 @js.native
@@ -13,4 +13,3 @@ class ConnectableObservable[T] protected ()
     subjectFactory: js.Function0[typings.rxjs.subjectMod.Subject[T]]
   ) = this()
 }
-

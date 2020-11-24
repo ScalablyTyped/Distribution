@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Polygon")
 @js.native
@@ -13,4 +13,3 @@ class PolygonCls protected ()
   def this(props: PolygonProps) = this()
   def this(props: PolygonProps, context: js.Any) = this()
 }
-

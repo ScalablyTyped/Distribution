@@ -2,7 +2,7 @@ package typings.strophe.mod.global.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class: Strophe.Builder
   *  XML DOM builder.
@@ -51,4 +51,3 @@ class BuilderCls protected ()
   def this(name: String) = this()
   def this(name: String, attrs: js.Any) = this()
 }
-

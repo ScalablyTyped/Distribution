@@ -12,7 +12,7 @@ Webpack loader to automatically npm install & save dependencies.
 | Keywords           | webpack, webpack-plugin, npm, install |
 | # releases         | 0 |
 | # dependents       | 26 |
-| # downloads        | 170574 |
+| # downloads        | 174782 |
 | # stars            | 26 |
 
 ## Links

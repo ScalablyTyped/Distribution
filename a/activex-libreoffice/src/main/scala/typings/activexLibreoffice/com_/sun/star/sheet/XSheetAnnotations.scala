@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access cell annotations via index and to insert and remove annotations.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSheetAnnotations extends XIndexAccess {
+  
   /**
     * creates a new annotation.
     *
@@ -22,6 +23,7 @@ trait XSheetAnnotations extends XIndexAccess {
     * @param aText contains the annotation text.
     */
   def insertNew(aPosition: CellAddress, aText: String): Unit = js.native
+  
   /**
     * removes a cell annotation from the collection.
     *
@@ -30,8 +32,8 @@ trait XSheetAnnotations extends XIndexAccess {
     */
   def removeByIndex(nIndex: Double): Unit = js.native
 }
-
 object XSheetAnnotations {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -49,22 +51,26 @@ object XSheetAnnotations {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), insertNew = js.Any.fromFunction2(insertNew), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex))
     __obj.asInstanceOf[XSheetAnnotations]
   }
+  
   @scala.inline
   implicit class XSheetAnnotationsOps[Self <: XSheetAnnotations] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setInsertNew(value: (CellAddress, String) => Unit): Self = this.set("insertNew", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveByIndex(value: Double => Unit): Self = this.set("removeByIndex", js.Any.fromFunction1(value))
   }
-  
 }
-

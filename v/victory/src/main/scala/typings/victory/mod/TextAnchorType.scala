@@ -2,7 +2,7 @@ package typings.victory.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Text anchor type
@@ -14,15 +14,17 @@ import scala.scalajs.js.annotation._
   - typings.victory.victoryStrings.inherit
 */
 trait TextAnchorType extends js.Object
-
 object TextAnchorType {
+  
   @scala.inline
   def end: typings.victory.victoryStrings.end = "end".asInstanceOf[typings.victory.victoryStrings.end]
+  
   @scala.inline
   def inherit: typings.victory.victoryStrings.inherit = "inherit".asInstanceOf[typings.victory.victoryStrings.inherit]
+  
   @scala.inline
   def middle: typings.victory.victoryStrings.middle = "middle".asInstanceOf[typings.victory.victoryStrings.middle]
+  
   @scala.inline
   def start: typings.victory.victoryStrings.start = "start".asInstanceOf[typings.victory.victoryStrings.start]
 }
-

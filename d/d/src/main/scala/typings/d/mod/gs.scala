@@ -3,11 +3,12 @@ package typings.d.mod
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d", "gs")
 @js.native
 object gs extends js.Object {
+  
   def apply(flags: GetSetFlags, get: js.UndefOr[scala.Nothing], set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
   def apply(
     flags: GetSetFlags,
@@ -70,4 +71,3 @@ object gs extends js.Object {
   def apply(get: Null, set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
   def apply(get: Null, set: js.Function1[/* repeated */ js.Any, _], options: PropertyDescriptor): PropertyDescriptor = js.native
 }
-

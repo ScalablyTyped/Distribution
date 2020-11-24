@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Talent Solution API
@@ -28,9 +28,12 @@ import scala.scalajs.js.annotation._
 class Jobs protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var companies: ResourceCompanies = js.native
+  
   var context: APIRequestContext = js.native
+  
   var jobs: ResourceJobs = js.native
+  
   var v2: ResourceV2 = js.native
 }
-

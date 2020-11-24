@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewSettingsItem extends Item {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>itemPropertyChanged</code> event of this
     * <code>sap.m.ViewSettingsItem</code>.When called, the context of the event handler (its
@@ -22,6 +23,7 @@ trait ViewSettingsItem extends Item {
     */
   def attachItemPropertyChanged(oData: js.Any, fnFunction: js.Any): ViewSettingsItem = js.native
   def attachItemPropertyChanged(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ViewSettingsItem = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>itemPropertyChanged</code> event of
     * this <code>sap.m.ViewSettingsItem</code>.The passed function and listener object must match the ones
@@ -31,6 +33,7 @@ trait ViewSettingsItem extends Item {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachItemPropertyChanged(fnFunction: js.Any, oListener: js.Any): ViewSettingsItem = js.native
+  
   /**
     * Fires event <code>itemPropertyChanged</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>changedItem</code> of type <code>sap.m.ViewSettingsItem</code>Instance of
@@ -41,6 +44,7 @@ trait ViewSettingsItem extends Item {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireItemPropertyChanged(mArguments: js.Any): ViewSettingsItem = js.native
+  
   /**
     * Gets current value of property <code>selected</code>.Selected state of the item. If set to "true",
     * the item will be displayed as selected in the view settings dialog.Default value is
@@ -48,6 +52,7 @@ trait ViewSettingsItem extends Item {
     * @returns Value of property <code>selected</code>
     */
   def getSelected(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>selected</code>.Selected state of the item. If set to "true",
     * the item will be displayed as selected in the view settings dialog.When called with a value of
@@ -58,4 +63,3 @@ trait ViewSettingsItem extends Item {
     */
   def setSelected(bSelected: Boolean): ViewSettingsItem = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Chart extends js.Object {
+  
   /**
     * Cancel current sonification and reset cursor.
     *
@@ -14,12 +15,14 @@ trait Chart extends js.Object {
     */
   def cancelSonify(): Unit = js.native
   def cancelSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * Get a list of the points currently under cursor.
     *
     * @return The points currently under the cursor.
     */
   def getCurrentSonifyPoints(): js.Array[Point] = js.native
+  
   /**
     * Pause the running sonification.
     *
@@ -28,16 +31,19 @@ trait Chart extends js.Object {
     */
   def pauseSonify(): Unit = js.native
   def pauseSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * Reset cursor to start. Requires series.sonify or chart.sonify to have
     * been played at some point earlier.
     */
   def resetSonifyCursor(): Unit = js.native
+  
   /**
     * Reset cursor to end. Requires series.sonify or chart.sonify to have
     * been played at some point earlier.
     */
   def resetSonifyCursorEnd(): Unit = js.native
+  
   /**
     * Resume the currently running sonification. Requires series.sonify or
     * chart.sonify to have been played at some point earlier.
@@ -46,6 +52,7 @@ trait Chart extends js.Object {
     *        Callback to call when play finished.
     */
   def resumeSonify(onEnd: js.Function): Unit = js.native
+  
   /**
     * Play backwards from cursor. Requires series.sonify or chart.sonify to
     * have been played at some point earlier.
@@ -54,6 +61,7 @@ trait Chart extends js.Object {
     *        Callback to call when play finished.
     */
   def rewindSonify(onEnd: js.Function): Unit = js.native
+  
   def setSonifyCursor(points: js.Array[Point]): Unit = js.native
   /**
     * Set the cursor to a point or set of points in different series.
@@ -64,12 +72,14 @@ trait Chart extends js.Object {
     *        series that are being played simultaneously.
     */
   def setSonifyCursor(points: Point): Unit = js.native
+  
   /**
     * Sonify a chart.
     *
     * @param options
-    *        The options for sonifying this chart.
+    *        The options for sonifying this chart. If not provided, uses
+    *        options set on chart and series.
     */
+  def sonify(): Unit = js.native
   def sonify(options: SonificationOptions): Unit = js.native
 }
-

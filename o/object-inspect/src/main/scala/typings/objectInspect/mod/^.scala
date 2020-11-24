@@ -2,11 +2,12 @@ package typings.objectInspect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("object-inspect", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Return a string `s` with the string representation of `obj` up to a depth of `opts.depth`.
     *
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(obj: js.Any): String = js.native
   def apply(obj: js.Any, opts: Options): String = js.native
 }
-

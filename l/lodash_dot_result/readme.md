@@ -12,7 +12,7 @@ The lodash method `_.result` exported as a module.
 | Keywords           | lodash-modularized, result |
 | # releases         | 0 |
 | # dependents       | 53 |
-| # downloads        | 3319424 |
+| # downloads        | 4166264 |
 | # stars            | 0 |
 
 ## Links

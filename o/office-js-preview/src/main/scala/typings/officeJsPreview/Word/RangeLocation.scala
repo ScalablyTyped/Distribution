@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RangeLocation extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.RangeLocation")
 @js.native
 object RangeLocation extends js.Object {
+  
   /**
     * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
     *
@@ -54,6 +54,4 @@ object RangeLocation extends js.Object {
     */
   @js.native
   sealed trait whole extends RangeLocation
-  
 }
-

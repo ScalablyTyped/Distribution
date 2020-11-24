@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintBinding extends js.Object
-
 /** Specifies the print binding option. */
 @JSGlobal("Windows.Graphics.Printing.PrintBinding")
 @js.native
 object PrintBinding extends js.Object {
+  
   /** The bale binding option. */
   @js.native
   sealed trait bale extends PrintBinding
@@ -78,6 +78,4 @@ object PrintBinding extends js.Object {
   /** The option to trim the printed sheets. */
   @js.native
   sealed trait trim extends PrintBinding
-  
 }
-

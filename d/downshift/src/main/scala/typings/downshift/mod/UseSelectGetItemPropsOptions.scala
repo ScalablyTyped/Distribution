@@ -2,14 +2,14 @@ package typings.downshift.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UseSelectGetItemPropsOptions[Item]
   extends GetItemPropsOptions[Item]
      with GetPropsWithRefKey
-
 object UseSelectGetItemPropsOptions {
+  
   @scala.inline
   def apply[Item](GetItemPropsOptions: GetItemPropsOptions[Item]): UseSelectGetItemPropsOptions[Item] = {
     val __obj = js.Dynamic.literal()
@@ -17,4 +17,3 @@ object UseSelectGetItemPropsOptions {
     __obj.asInstanceOf[UseSelectGetItemPropsOptions[Item]]
   }
 }
-

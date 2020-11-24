@@ -10,10 +10,10 @@ Use next generation JavaScript, today
 | ------------------ | :-------------: |
 | Full name          | gulp-babel |
 | Keywords           | gulpplugin, babel, transpiler, es2015, es2016, es2017, rewriting, transformation, syntax, codegen, desugaring, javascript, compiler |
-| # releases         | 6 |
-| # dependents       | 1063 |
-| # downloads        | 12326667 |
-| # stars            | 157 |
+| # releases         | 1 |
+| # dependents       | 1220 |
+| # downloads        | 11162265 |
+| # stars            | 156 |
 
 ## Links
 - [Homepage](https://github.com/babel/gulp-babel#readme)

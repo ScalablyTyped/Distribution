@@ -2,11 +2,12 @@ package typings.universalAnalytics.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("universal-analytics", "middleware")
 @js.native
 object middleware extends js.Object {
+  
   def apply(tid: String): js.Function3[
     /* req */ js.Any, 
     /* res */ js.Any, 
@@ -20,4 +21,3 @@ object middleware extends js.Object {
     Unit
   ] = js.native
 }
-

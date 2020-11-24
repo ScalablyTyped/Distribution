@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/shareReplay", JSImport.Namespace)
 @js.native
 object operatorsShareReplayMod extends js.Object {
+  
   def shareReplay[T](): js.Any = js.native
   def shareReplay[T](
     bufferSize: js.UndefOr[scala.Nothing],
@@ -35,4 +36,3 @@ object operatorsShareReplayMod extends js.Object {
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShareReplayConfig */ js.Any
   ): js.Any = js.native
 }
-

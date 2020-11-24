@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1alpha1", "servicebroker_v1alpha1.Resource$Projects$Brokers$V2$Catalog")
 @js.native
 class ResourceProjectsBrokersV2Catalog protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.catalog.list
     * @desc Lists all the Services registered with this broker for consumption
@@ -49,4 +51,3 @@ class ResourceProjectsBrokersV2Catalog protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse]
   ): Unit = js.native
 }
-

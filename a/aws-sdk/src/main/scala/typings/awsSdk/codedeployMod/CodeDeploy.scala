@@ -2,18 +2,17 @@ package typings.awsSdk.codedeployMod
 
 import typings.awsSdk.anon.GetDeploymentInputwaiterW
 import typings.awsSdk.awsSdkStrings.deploymentSuccessful
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeDeploy extends Service {
-  @JSName("config")
-  var config_CodeDeploy: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds tags to on-premises instances.
     */
@@ -27,6 +26,7 @@ trait CodeDeploy extends Service {
     params: AddTagsToOnPremisesInstancesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Gets information about one or more application revisions. The maximum number of application revisions that can be returned is 25.
     */
@@ -40,6 +40,7 @@ trait CodeDeploy extends Service {
     params: BatchGetApplicationRevisionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetApplicationRevisionsOutput, Unit]
   ): Request[BatchGetApplicationRevisionsOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more applications. The maximum number of applications that can be returned is 100.
     */
@@ -53,6 +54,7 @@ trait CodeDeploy extends Service {
     params: BatchGetApplicationsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetApplicationsOutput, Unit]
   ): Request[BatchGetApplicationsOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more deployment groups.
     */
@@ -66,6 +68,7 @@ trait CodeDeploy extends Service {
     params: BatchGetDeploymentGroupsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetDeploymentGroupsOutput, Unit]
   ): Request[BatchGetDeploymentGroupsOutput, AWSError] = js.native
+  
   /**
     *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of one or more instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. The maximum number of instances that can be returned is 25.
     */
@@ -79,6 +82,7 @@ trait CodeDeploy extends Service {
     params: BatchGetDeploymentInstancesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetDeploymentInstancesOutput, Unit]
   ): Request[BatchGetDeploymentInstancesOutput, AWSError] = js.native
+  
   /**
     *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform or deployment method:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.     CloudFormation: Information about targets of blue/green deployments initiated by a CloudFormation stack update.  
     */
@@ -92,6 +96,7 @@ trait CodeDeploy extends Service {
     params: BatchGetDeploymentTargetsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetDeploymentTargetsOutput, Unit]
   ): Request[BatchGetDeploymentTargetsOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more deployments. The maximum number of deployments that can be returned is 25.
     */
@@ -105,6 +110,7 @@ trait CodeDeploy extends Service {
     params: BatchGetDeploymentsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetDeploymentsOutput, Unit]
   ): Request[BatchGetDeploymentsOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more on-premises instances. The maximum number of on-premises instances that can be returned is 25.
     */
@@ -118,6 +124,10 @@ trait CodeDeploy extends Service {
     params: BatchGetOnPremisesInstancesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetOnPremisesInstancesOutput, Unit]
   ): Request[BatchGetOnPremisesInstancesOutput, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CodeDeploy: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * For a blue/green deployment, starts the process of rerouting traffic from instances in the original environment to instances in the replacement environment without waiting for a specified wait time to elapse. (Traffic rerouting, which is achieved by registering instances in the replacement environment with the load balancer, can start as soon as all instances have a status of Ready.) 
     */
@@ -131,6 +141,7 @@ trait CodeDeploy extends Service {
     params: ContinueDeploymentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates an application.
     */
@@ -144,6 +155,7 @@ trait CodeDeploy extends Service {
     params: CreateApplicationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationOutput, Unit]
   ): Request[CreateApplicationOutput, AWSError] = js.native
+  
   /**
     * Deploys an application revision through the specified deployment group.
     */
@@ -157,6 +169,7 @@ trait CodeDeploy extends Service {
     params: CreateDeploymentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentOutput, Unit]
   ): Request[CreateDeploymentOutput, AWSError] = js.native
+  
   /**
     *  Creates a deployment configuration. 
     */
@@ -170,6 +183,7 @@ trait CodeDeploy extends Service {
     params: CreateDeploymentConfigInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentConfigOutput, Unit]
   ): Request[CreateDeploymentConfigOutput, AWSError] = js.native
+  
   /**
     * Creates a deployment group to which application revisions are deployed.
     */
@@ -183,6 +197,7 @@ trait CodeDeploy extends Service {
     params: CreateDeploymentGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentGroupOutput, Unit]
   ): Request[CreateDeploymentGroupOutput, AWSError] = js.native
+  
   /**
     * Deletes an application.
     */
@@ -196,6 +211,7 @@ trait CodeDeploy extends Service {
     params: DeleteApplicationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a deployment configuration.  A deployment configuration cannot be deleted if it is currently in use. Predefined configurations cannot be deleted. 
     */
@@ -209,6 +225,7 @@ trait CodeDeploy extends Service {
     params: DeleteDeploymentConfigInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a deployment group.
     */
@@ -222,6 +239,7 @@ trait CodeDeploy extends Service {
     params: DeleteDeploymentGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDeploymentGroupOutput, Unit]
   ): Request[DeleteDeploymentGroupOutput, AWSError] = js.native
+  
   /**
     * Deletes a GitHub account connection.
     */
@@ -235,6 +253,7 @@ trait CodeDeploy extends Service {
     params: DeleteGitHubAccountTokenInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGitHubAccountTokenOutput, Unit]
   ): Request[DeleteGitHubAccountTokenOutput, AWSError] = js.native
+  
   /**
     * Deletes resources linked to an external ID.
     */
@@ -248,6 +267,7 @@ trait CodeDeploy extends Service {
     params: DeleteResourcesByExternalIdInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcesByExternalIdOutput, Unit]
   ): Request[DeleteResourcesByExternalIdOutput, AWSError] = js.native
+  
   /**
     * Deregisters an on-premises instance.
     */
@@ -261,6 +281,7 @@ trait CodeDeploy extends Service {
     params: DeregisterOnPremisesInstanceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Gets information about an application.
     */
@@ -274,6 +295,7 @@ trait CodeDeploy extends Service {
     params: GetApplicationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationOutput, Unit]
   ): Request[GetApplicationOutput, AWSError] = js.native
+  
   /**
     * Gets information about an application revision.
     */
@@ -287,6 +309,7 @@ trait CodeDeploy extends Service {
     params: GetApplicationRevisionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationRevisionOutput, Unit]
   ): Request[GetApplicationRevisionOutput, AWSError] = js.native
+  
   /**
     * Gets information about a deployment.   The content property of the appSpecContent object in the returned revision is always null. Use GetApplicationRevision and the sha256 property of the returned appSpecContent object to get the content of the deployment’s AppSpec file.  
     */
@@ -300,6 +323,7 @@ trait CodeDeploy extends Service {
     params: GetDeploymentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentOutput, Unit]
   ): Request[GetDeploymentOutput, AWSError] = js.native
+  
   /**
     * Gets information about a deployment configuration.
     */
@@ -313,6 +337,7 @@ trait CodeDeploy extends Service {
     params: GetDeploymentConfigInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentConfigOutput, Unit]
   ): Request[GetDeploymentConfigOutput, AWSError] = js.native
+  
   /**
     * Gets information about a deployment group.
     */
@@ -326,6 +351,7 @@ trait CodeDeploy extends Service {
     params: GetDeploymentGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentGroupOutput, Unit]
   ): Request[GetDeploymentGroupOutput, AWSError] = js.native
+  
   /**
     * Gets information about an instance as part of a deployment.
     */
@@ -339,6 +365,7 @@ trait CodeDeploy extends Service {
     params: GetDeploymentInstanceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentInstanceOutput, Unit]
   ): Request[GetDeploymentInstanceOutput, AWSError] = js.native
+  
   /**
     *  Returns information about a deployment target. 
     */
@@ -352,6 +379,7 @@ trait CodeDeploy extends Service {
     params: GetDeploymentTargetInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentTargetOutput, Unit]
   ): Request[GetDeploymentTargetOutput, AWSError] = js.native
+  
   /**
     *  Gets information about an on-premises instance. 
     */
@@ -365,6 +393,7 @@ trait CodeDeploy extends Service {
     params: GetOnPremisesInstanceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOnPremisesInstanceOutput, Unit]
   ): Request[GetOnPremisesInstanceOutput, AWSError] = js.native
+  
   /**
     * Lists information about revisions for an application.
     */
@@ -378,6 +407,7 @@ trait CodeDeploy extends Service {
     params: ListApplicationRevisionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationRevisionsOutput, Unit]
   ): Request[ListApplicationRevisionsOutput, AWSError] = js.native
+  
   /**
     * Lists the applications registered with the IAM user or AWS account.
     */
@@ -391,6 +421,7 @@ trait CodeDeploy extends Service {
     params: ListApplicationsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsOutput, Unit]
   ): Request[ListApplicationsOutput, AWSError] = js.native
+  
   /**
     * Lists the deployment configurations with the IAM user or AWS account.
     */
@@ -404,6 +435,7 @@ trait CodeDeploy extends Service {
     params: ListDeploymentConfigsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentConfigsOutput, Unit]
   ): Request[ListDeploymentConfigsOutput, AWSError] = js.native
+  
   /**
     * Lists the deployment groups for an application registered with the IAM user or AWS account.
     */
@@ -417,6 +449,7 @@ trait CodeDeploy extends Service {
     params: ListDeploymentGroupsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentGroupsOutput, Unit]
   ): Request[ListDeploymentGroupsOutput, AWSError] = js.native
+  
   /**
     *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the IAM user or AWS account. 
     */
@@ -430,6 +463,7 @@ trait CodeDeploy extends Service {
     params: ListDeploymentInstancesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentInstancesOutput, Unit]
   ): Request[ListDeploymentInstancesOutput, AWSError] = js.native
+  
   /**
     *  Returns an array of target IDs that are associated a deployment. 
     */
@@ -443,6 +477,7 @@ trait CodeDeploy extends Service {
     params: ListDeploymentTargetsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentTargetsOutput, Unit]
   ): Request[ListDeploymentTargetsOutput, AWSError] = js.native
+  
   /**
     * Lists the deployments in a deployment group for an application registered with the IAM user or AWS account.
     */
@@ -456,6 +491,7 @@ trait CodeDeploy extends Service {
     params: ListDeploymentsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentsOutput, Unit]
   ): Request[ListDeploymentsOutput, AWSError] = js.native
+  
   /**
     * Lists the names of stored connections to GitHub accounts.
     */
@@ -469,6 +505,7 @@ trait CodeDeploy extends Service {
     params: ListGitHubAccountTokenNamesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGitHubAccountTokenNamesOutput, Unit]
   ): Request[ListGitHubAccountTokenNamesOutput, AWSError] = js.native
+  
   /**
     * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names are listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
     */
@@ -482,6 +519,7 @@ trait CodeDeploy extends Service {
     params: ListOnPremisesInstancesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOnPremisesInstancesOutput, Unit]
   ): Request[ListOnPremisesInstancesOutput, AWSError] = js.native
+  
   /**
     *  Returns a list of tags for the resource identified by a specified Amazon Resource Name (ARN). Tags are used to organize and categorize your CodeDeploy resources. 
     */
@@ -495,6 +533,7 @@ trait CodeDeploy extends Service {
     params: ListTagsForResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
+  
   /**
     *  Sets the result of a Lambda validation function. The function validates lifecycle hooks during a deployment that uses the AWS Lambda or Amazon ECS compute platform. For AWS Lambda deployments, the available lifecycle hooks are BeforeAllowTraffic and AfterAllowTraffic. For Amazon ECS deployments, the available lifecycle hooks are BeforeInstall, AfterInstall, AfterAllowTestTraffic, BeforeAllowTraffic, and AfterAllowTraffic. Lambda validation functions return Succeeded or Failed. For more information, see AppSpec 'hooks' Section for an AWS Lambda Deployment  and AppSpec 'hooks' Section for an Amazon ECS Deployment.
     */
@@ -510,6 +549,7 @@ trait CodeDeploy extends Service {
     params: PutLifecycleEventHookExecutionStatusInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PutLifecycleEventHookExecutionStatusOutput, Unit]
   ): Request[PutLifecycleEventHookExecutionStatusOutput, AWSError] = js.native
+  
   /**
     * Registers with AWS CodeDeploy a revision for the specified application.
     */
@@ -523,6 +563,7 @@ trait CodeDeploy extends Service {
     params: RegisterApplicationRevisionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Registers an on-premises instance.  Only one IAM ARN (an IAM session ARN or IAM user ARN) is supported in the request. You cannot use both. 
     */
@@ -536,6 +577,7 @@ trait CodeDeploy extends Service {
     params: RegisterOnPremisesInstanceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes one or more tags from one or more on-premises instances.
     */
@@ -549,6 +591,7 @@ trait CodeDeploy extends Service {
     params: RemoveTagsFromOnPremisesInstancesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is complete.
     */
@@ -562,6 +605,7 @@ trait CodeDeploy extends Service {
     params: SkipWaitTimeForInstanceTerminationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Attempts to stop an ongoing deployment.
     */
@@ -575,6 +619,7 @@ trait CodeDeploy extends Service {
     params: StopDeploymentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StopDeploymentOutput, Unit]
   ): Request[StopDeploymentOutput, AWSError] = js.native
+  
   /**
     *  Associates the list of tags in the input Tags parameter with the resource identified by the ResourceArn input parameter. 
     */
@@ -588,6 +633,7 @@ trait CodeDeploy extends Service {
     params: TagResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]
   ): Request[TagResourceOutput, AWSError] = js.native
+  
   /**
     *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identified by the list of keys in the TagKeys input parameter. 
     */
@@ -601,6 +647,7 @@ trait CodeDeploy extends Service {
     params: UntagResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
+  
   /**
     * Changes the name of an application.
     */
@@ -614,6 +661,7 @@ trait CodeDeploy extends Service {
     params: UpdateApplicationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Changes information about a deployment group.
     */
@@ -627,6 +675,7 @@ trait CodeDeploy extends Service {
     params: UpdateDeploymentGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeploymentGroupOutput, Unit]
   ): Request[UpdateDeploymentGroupOutput, AWSError] = js.native
+  
   /**
     * Waits for the deploymentSuccessful state by periodically calling the underlying CodeDeploy.getDeploymentoperation every 15 seconds (at most 120 times).
     */
@@ -649,4 +698,3 @@ trait CodeDeploy extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentOutput, Unit]
   ): Request[GetDeploymentOutput, AWSError] = js.native
 }
-

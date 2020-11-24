@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "replace-string"
-version := "3.1.0-d43eec"
+version := "3.1.0-01d403"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

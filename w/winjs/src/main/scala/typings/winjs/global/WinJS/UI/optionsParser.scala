@@ -2,11 +2,12 @@ package typings.winjs.global.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WinJS.UI.optionsParser")
 @js.native
 object optionsParser extends js.Object {
+  
   /**
     * * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
@@ -15,4 +16,3 @@ object optionsParser extends js.Object {
   def apply(value: String, context: js.Any): js.Any = js.native
   def apply(value: String, context: js.Any, functionContext: js.Any): js.Any = js.native
 }
-

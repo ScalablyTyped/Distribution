@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.anon.ArrayArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * KeyUsage ASN.1 structure class
@@ -26,4 +26,3 @@ class ExtKeyUsage ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.ExtKeyUsage {
   def this(params: ArrayArray) = this()
 }
-

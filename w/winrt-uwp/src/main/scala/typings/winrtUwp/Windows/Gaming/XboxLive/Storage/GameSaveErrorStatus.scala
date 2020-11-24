@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Gaming.XboxLive.Storage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GameSaveErrorStatus extends js.Object
-
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus")
 @js.native
 object GameSaveErrorStatus extends js.Object {
+  
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
   sealed trait abort extends GameSaveErrorStatus
@@ -70,6 +70,4 @@ object GameSaveErrorStatus extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
   sealed trait userHasNoXboxLiveInfo extends GameSaveErrorStatus
-  
 }
-

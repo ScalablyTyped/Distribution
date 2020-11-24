@@ -2,7 +2,7 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Alternative identifier for a course.  An alias uniquely identifies a
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaCourseAlias extends js.Object {
+  
   /**
     * Alias string. The format of the string indicates the desired alias
     * scoping.  * `d:&lt;name&gt;` indicates a domain-scoped alias.   Example:
@@ -28,29 +29,33 @@ trait SchemaCourseAlias extends js.Object {
     */
   var alias: js.UndefOr[String] = js.native
 }
-
 object SchemaCourseAlias {
+  
   @scala.inline
   def apply(): SchemaCourseAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCourseAlias]
   }
+  
   @scala.inline
   implicit class SchemaCourseAliasOps[Self <: SchemaCourseAlias] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlias: Self = this.set("alias", js.undefined)
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/manufacturers/v1", "manufacturers_v1.Resource$Accounts$Products")
 @js.native
 class ResourceAccountsProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * manufacturers.accounts.products.delete
     * @desc Deletes the product from a Manufacturer Center account.
@@ -42,6 +44,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * manufacturers.accounts.products.get
     * @desc Gets the product from a Manufacturer Center account, including
@@ -76,6 +79,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * manufacturers.accounts.products.list
     * @desc Lists all the products in a Manufacturer Center account.
@@ -110,6 +114,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListProductsResponse]
   ): Unit = js.native
+  
   /**
     * manufacturers.accounts.products.update
     * @desc Inserts or updates the attributes of the product in a Manufacturer
@@ -152,4 +157,3 @@ class ResourceAccountsProducts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

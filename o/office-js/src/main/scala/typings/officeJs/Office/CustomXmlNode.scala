@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an XML node in a tree in a document.
@@ -13,18 +13,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomXmlNode extends js.Object {
+  
   /**
     * Gets the base name of the node without the namespace prefix, if one exists.
     */
   var baseName: String = js.native
-  /**
-    * Retrieves the string GUID of the CustomXMLPart.
-    */
-  var namespaceUri: String = js.native
-  /**
-    * Gets the type of the CustomXMLNode.
-    */
-  var nodeType: String = js.native
+  
   /**
     * Gets the node value.
     *
@@ -41,6 +35,7 @@ trait CustomXmlNode extends js.Object {
   def getNodeValueAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getNodeValueAsync(options: AsyncContextOptions): Unit = js.native
   def getNodeValueAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Gets the nodes associated with the XPath expression.
     *
@@ -66,6 +61,7 @@ trait CustomXmlNode extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[this.type]], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the text of an XML node in a custom XML part.
     *
@@ -82,6 +78,7 @@ trait CustomXmlNode extends js.Object {
   def getTextAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getTextAsync(options: AsyncContextOptions): Unit = js.native
   def getTextAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Gets the node's XML.
     *
@@ -98,6 +95,17 @@ trait CustomXmlNode extends js.Object {
   def getXmlAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  
+  /**
+    * Retrieves the string GUID of the CustomXMLPart.
+    */
+  var namespaceUri: String = js.native
+  
+  /**
+    * Gets the type of the CustomXMLNode.
+    */
+  var nodeType: String = js.native
+  
   /**
     * Sets the node value.
     *
@@ -122,6 +130,7 @@ trait CustomXmlNode extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously sets the text of an XML node in a custom XML part.
     *
@@ -146,6 +155,7 @@ trait CustomXmlNode extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Sets the node XML.
     *
@@ -171,4 +181,3 @@ trait CustomXmlNode extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

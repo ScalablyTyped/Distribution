@@ -6,11 +6,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/meta/v1", JSImport.Namespace)
 @js.native
 object metaV1Mod extends js.Object {
+  
   @js.native
   class Status protected ()
     extends typings.pulumiKubernetes.statusMod.Status {
@@ -26,10 +27,10 @@ object metaV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: StatusArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object Status extends js.Object {
+    
     /**
       * Get an existing Status resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -40,12 +41,11 @@ object metaV1Mod extends js.Object {
       */
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.statusMod.Status = js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.statusMod.Status = js.native
+    
     /**
       * Returns true if the given object is an instance of Status.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/meta/v1/status.Status */ Boolean = js.native
   }
-  
 }
-

@@ -4,7 +4,7 @@ import typings.angularCompiler.coreMod.SecurityContext
 import typings.angularCompiler.templateAstMod.PropertyBindingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "BoundElementPropertyAst")
 @js.native
@@ -27,11 +27,10 @@ class BoundElementPropertyAst protected ()
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
 }
-
 /* static members */
 @JSImport("@angular/compiler/public_api", "BoundElementPropertyAst")
 @js.native
 object BoundElementPropertyAst extends js.Object {
+  
   def fromBoundProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): typings.angularCompiler.templateAstMod.BoundElementPropertyAst = js.native
 }
-

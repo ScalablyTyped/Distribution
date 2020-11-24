@@ -9,9 +9,9 @@ Rigorous implementation of RFC4122 (v1 and v4) UUIDs.
 | ------------------ | :-------------: |
 | Full name          | node-uuid |
 | Keywords           | guid, rfc4122, uuid |
-| # releases         | 1 |
-| # dependents       | 3182 |
-| # downloads        | 66592528 |
+| # releases         | 0 |
+| # dependents       | 3195 |
+| # downloads        | 61498790 |
 | # stars            | 197 |
 
 ## Links

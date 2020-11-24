@@ -3,76 +3,94 @@ package typings.mongodb.mod
 import typings.mongodb.anon.Dictindex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CollStats extends js.Object {
+  
   /**
     * Average object size in bytes.
     */
   var avgObjSize: scala.Double = js.native
+  
   /**
     * `true` if the collection is capped.
     */
   var capped: Boolean = js.native
+  
   /**
     * Number of documents.
     */
   var count: scala.Double = js.native
+  
   var indexDetails: js.UndefOr[js.Any] = js.native
+  
   /**
     * Size of specific indexes in bytes.
     */
   var indexSizes: Dictindex = js.native
+  
   /**
     * Size of the most recently created extent in bytes.
     */
   var lastExtentSize: scala.Double = js.native
+  
   /**
     * The maximum number of documents that may be present in a capped collection.
     */
   var max: scala.Double = js.native
+  
   /**
     * The maximum size of a capped collection.
     */
   var maxSize: scala.Double = js.native
+  
   /**
     * Number of indexes.
     */
   var nindexes: scala.Double = js.native
+  
   /**
     * Namespace.
     */
   var ns: String = js.native
+  
   /**
     * Number of extents (contiguously allocated chunks of datafile space).
     */
   var numExtents: scala.Double = js.native
+  
   var ok: scala.Double = js.native
+  
   /**
     * Padding can speed up updates if documents grow.
     */
   var paddingFactor: scala.Double = js.native
+  
   /**
     * Collection size in bytes.
     */
   var size: scala.Double = js.native
+  
   /**
     * (Pre)allocated space for the collection in bytes.
     */
   var storageSize: scala.Double = js.native
+  
   /**
     * Total index size in bytes.
     */
   var totalIndexSize: scala.Double = js.native
+  
   /**
     * A number that indicates the user-set flags on the collection. userFlags only appears when using the mmapv1 storage engine.
     */
   var userFlags: js.UndefOr[scala.Double] = js.native
+  
   var wiredTiger: js.UndefOr[WiredTigerData] = js.native
 }
-
 object CollStats {
+  
   @scala.inline
   def apply(
     avgObjSize: scala.Double,
@@ -94,60 +112,83 @@ object CollStats {
     val __obj = js.Dynamic.literal(avgObjSize = avgObjSize.asInstanceOf[js.Any], capped = capped.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], indexSizes = indexSizes.asInstanceOf[js.Any], lastExtentSize = lastExtentSize.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], nindexes = nindexes.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], numExtents = numExtents.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], paddingFactor = paddingFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageSize = storageSize.asInstanceOf[js.Any], totalIndexSize = totalIndexSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollStats]
   }
+  
   @scala.inline
   implicit class CollStatsOps[Self <: CollStats] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAvgObjSize(value: scala.Double): Self = this.set("avgObjSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCapped(value: Boolean): Self = this.set("capped", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCount(value: scala.Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIndexSizes(value: Dictindex): Self = this.set("indexSizes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLastExtentSize(value: scala.Double): Self = this.set("lastExtentSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMax(value: scala.Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxSize(value: scala.Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNindexes(value: scala.Double): Self = this.set("nindexes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNs(value: String): Self = this.set("ns", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNumExtents(value: scala.Double): Self = this.set("numExtents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOk(value: scala.Double): Self = this.set("ok", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPaddingFactor(value: scala.Double): Self = this.set("paddingFactor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSize(value: scala.Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStorageSize(value: scala.Double): Self = this.set("storageSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTotalIndexSize(value: scala.Double): Self = this.set("totalIndexSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIndexDetails(value: js.Any): Self = this.set("indexDetails", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndexDetails: Self = this.set("indexDetails", js.undefined)
+    
     @scala.inline
     def setUserFlags(value: scala.Double): Self = this.set("userFlags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUserFlags: Self = this.set("userFlags", js.undefined)
+    
     @scala.inline
     def setWiredTiger(value: WiredTigerData): Self = this.set("wiredTiger", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWiredTiger: Self = this.set("wiredTiger", js.undefined)
   }
-  
 }
-

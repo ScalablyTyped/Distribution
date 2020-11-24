@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client rectangle object.
@@ -20,4 +20,3 @@ class ASPxClientRect protected ()
     */
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
-

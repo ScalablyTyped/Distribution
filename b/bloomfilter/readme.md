@@ -10,9 +10,9 @@ Fast bloom filter in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | bloomfilter |
 | Keywords           | bloom filter, probabilistic data structure |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 22 |
-| # downloads        | 149270 |
+| # downloads        | 167055 |
 | # stars            | 7 |
 
 ## Links

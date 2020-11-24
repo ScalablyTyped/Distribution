@@ -4,7 +4,7 @@ import typings.babylonjs.boundingInfoMod.BoundingInfo
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Particles/index", "SolidParticle")
 @js.native
@@ -54,8 +54,7 @@ class SolidParticle protected ()
     shapeId: Double,
     idxInShape: Double,
     sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
-    modelBoundingInfo: Nullable[BoundingInfo],
+    modelBoundingInfo: js.UndefOr[Nullable[BoundingInfo]],
     materialIndex: Nullable[Double]
   ) = this()
 }
-

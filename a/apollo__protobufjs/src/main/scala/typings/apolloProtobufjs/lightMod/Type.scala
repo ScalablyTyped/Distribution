@@ -6,7 +6,7 @@ import typings.apolloProtobufjs.mod.IType
 import typings.apolloProtobufjs.mod.TypeDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/light", "Type")
 @js.native
@@ -18,13 +18,13 @@ class Type protected ()
     * @param [options] Declared options
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[js.UndefOr[js.Any]]) = this()
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs/light", "Type")
 @js.native
 object Type extends js.Object {
+  
   /**
     * Type decorator (TypeScript).
     * @param [typeName] Type name, defaults to the constructor's name
@@ -32,6 +32,7 @@ object Type extends js.Object {
     */
   def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](): TypeDecorator[T] = js.native
   def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](typeName: String): TypeDecorator[T] = js.native
+  
   /**
     * Creates a message type from a message type descriptor.
     * @param name Message name
@@ -39,6 +40,7 @@ object Type extends js.Object {
     * @returns Created message type
     */
   def fromJSON(name: String, json: IType): typings.apolloProtobufjs.mod.Type = js.native
+  
   /**
     * Generates a constructor function for the specified type.
     * @param mtype Message type
@@ -46,4 +48,3 @@ object Type extends js.Object {
     */
   def generateConstructor(mtype: typings.apolloProtobufjs.mod.Type): Codegen = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,26 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassSmtp extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询 Smtp 对象当前连接的 Socket
-    * 
-    * @readonly
-    * @type Stream
-    */
-  var socket: ClassStream = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置超时时间 单位毫秒
-    * 
-    * 
-    * @type Integer
-    */
-  var timeout: Double = js.native
+  
   /**
     * 
     * @brief 发送指定命令，并返回响应，服务器报错则抛出错误
@@ -42,6 +23,7 @@ trait ClassSmtp extends ClassObject {
     * @async
     */
   def command(cmd: String, arg: String): String = js.native
+  
   /**
     * 
     * @brief 建立到指定的服务器
@@ -51,6 +33,7 @@ trait ClassSmtp extends ClassObject {
     * @async
     */
   def connect(url: String): Unit = js.native
+  
   /**
     * 
     * @brief 发送文本到收件人，服务器报错则抛出错误
@@ -60,6 +43,7 @@ trait ClassSmtp extends ClassObject {
     * @async
     */
   def data(txt: String): Unit = js.native
+  
   /**
     * 
     * @brief 指定发件人信箱，服务器报错则抛出错误
@@ -69,6 +53,7 @@ trait ClassSmtp extends ClassObject {
     * @async
     */
   def from(address: String): Unit = js.native
+  
   /**
     * 
     * @brief 发送 HELO 命令，服务器报错则抛出错误
@@ -79,6 +64,7 @@ trait ClassSmtp extends ClassObject {
     */
   def hello(): Unit = js.native
   def hello(hostname: String): Unit = js.native
+  
   /**
     * 
     * @brief 用指定的用户及密码登录服务器，服务器报错则抛出错误
@@ -89,6 +75,7 @@ trait ClassSmtp extends ClassObject {
     * @async
     */
   def login(username: String, password: String): Unit = js.native
+  
   /**
     * 
     * @brief 退出并关闭连接，服务器报错则抛出错误
@@ -96,6 +83,29 @@ trait ClassSmtp extends ClassObject {
     * @async
     */
   def quit(): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询 Smtp 对象当前连接的 Socket
+    * 
+    * @readonly
+    * @type Stream
+    */
+  var socket: ClassStream = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置超时时间 单位毫秒
+    * 
+    * 
+    * @type Integer
+    */
+  var timeout: Double = js.native
+  
   /**
     * 
     * @brief 指定收件人信箱，服务器报错则抛出错误
@@ -106,4 +116,3 @@ trait ClassSmtp extends ClassObject {
     */
   def to(address: String): Unit = js.native
 }
-

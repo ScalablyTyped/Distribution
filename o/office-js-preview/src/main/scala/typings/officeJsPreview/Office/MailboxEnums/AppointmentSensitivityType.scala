@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppointmentSensitivityType extends js.Object
-
 /**
   * Specifies the sensitivity type of an appointment.
   *
@@ -21,6 +20,7 @@ sealed trait AppointmentSensitivityType extends js.Object
 @JSGlobal("Office.MailboxEnums.AppointmentSensitivityType")
 @js.native
 object AppointmentSensitivityType extends js.Object {
+  
   /**
     * Treat the item as confidential.
     *
@@ -52,6 +52,4 @@ object AppointmentSensitivityType extends js.Object {
     */
   @js.native
   sealed trait Private extends AppointmentSensitivityType
-  
 }
-

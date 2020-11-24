@@ -10,9 +10,9 @@ A isomorphic, bullet-proof, ninja-ready route parsing, matching, and reversing l
 | ------------------ | :-------------: |
 | Full name          | route-parser |
 | Keywords           | url, matching, routing, route, regex, match |
-| # releases         | 1 |
-| # dependents       | 160 |
-| # downloads        | 1519917 |
+| # releases         | 0 |
+| # dependents       | 171 |
+| # downloads        | 2020939 |
 | # stars            | 7 |
 
 ## Links

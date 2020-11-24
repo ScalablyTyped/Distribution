@@ -6,12 +6,11 @@ import typings.rcTreeSelect.interfaceMod.RawValueType
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree-select/es/hooks/useKeyValueMapping", JSImport.Namespace)
 @js.native
 object useKeyValueMappingMod extends js.Object {
-  trait _SkipType extends js.Object
   
   def default(cacheKeyMap: Map[Key, FlattenDataNode], cacheValueMap: Map[RawValueType, FlattenDataNode]): js.Tuple2[
     js.Function3[
@@ -27,7 +26,11 @@ object useKeyValueMappingMod extends js.Object {
       FlattenDataNode
     ]
   ] = js.native
+  
   def isDisabled(dataNode: FlattenDataNode, skipType: SkipType): Boolean = js.native
+  
+  trait _SkipType extends js.Object
+  
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - typings.rcTreeSelect.rcTreeSelectStrings.select
@@ -35,4 +38,3 @@ object useKeyValueMappingMod extends js.Object {
   */
   type SkipType = _SkipType | Null
 }
-

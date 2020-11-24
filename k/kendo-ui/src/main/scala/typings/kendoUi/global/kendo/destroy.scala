@@ -4,13 +4,13 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.destroy")
 @js.native
 object destroy extends js.Object {
+  
   def apply(element: String): Unit = js.native
   def apply(element: JQuery): Unit = js.native
   def apply(element: Element): Unit = js.native
 }
-

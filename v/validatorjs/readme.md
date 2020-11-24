@@ -10,9 +10,9 @@ Validation library inspired by Laravel's Validator
 | ------------------ | :-------------: |
 | Full name          | validatorjs |
 | Keywords           | validatorjs, validator.js, data validation, validator, validate, validation, data, laravel, laravel-validator-for-js |
-| # releases         | 10 |
-| # dependents       | 70 |
-| # downloads        | 1083114 |
+| # releases         | 9 |
+| # dependents       | 90 |
+| # downloads        | 1447117 |
 | # stars            | 16 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.phaser.phaserMod.Loader
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Loader.MergeXHRSettings")
 @js.native
 object MergeXHRSettings extends js.Object {
+  
   /**
     * Takes two XHRSettings Objects and creates a new XHRSettings object from them.
     * 
@@ -18,4 +19,3 @@ object MergeXHRSettings extends js.Object {
     */
   def apply(global: XHRSettingsObject, local: XHRSettingsObject): XHRSettingsObject = js.native
 }
-

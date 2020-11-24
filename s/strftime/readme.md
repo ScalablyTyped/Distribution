@@ -10,9 +10,9 @@ strftime for JavaScript
 | ------------------ | :-------------: |
 | Full name          | strftime |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 208 |
-| # downloads        | 7718876 |
+| # releases         | 0 |
+| # dependents       | 214 |
+| # downloads        | 11655725 |
 | # stars            | 35 |
 
 ## Links

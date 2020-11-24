@@ -12,7 +12,7 @@ Error handler for pure-JSON Koa apps
 | Keywords           | koa, json, error, api, handler, middleware |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 79750 |
+| # downloads        | 84229 |
 | # stars            | 4 |
 
 ## Links

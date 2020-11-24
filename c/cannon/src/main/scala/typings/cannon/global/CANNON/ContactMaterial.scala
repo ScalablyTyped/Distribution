@@ -3,7 +3,7 @@ package typings.cannon.global.CANNON
 import typings.cannon.CANNON.IContactMaterialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CANNON.ContactMaterial")
 @js.native
@@ -16,4 +16,3 @@ class ContactMaterial protected ()
     options: IContactMaterialOptions
   ) = this()
 }
-

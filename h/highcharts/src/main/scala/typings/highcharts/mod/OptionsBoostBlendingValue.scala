@@ -2,7 +2,7 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.highcharts.highchartsStrings.add
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.highcharts.highchartsStrings.multiply
 */
 trait OptionsBoostBlendingValue extends js.Object
-
 object OptionsBoostBlendingValue {
+  
   @scala.inline
   def add: typings.highcharts.highchartsStrings.add = "add".asInstanceOf[typings.highcharts.highchartsStrings.add]
+  
   @scala.inline
   def darken: typings.highcharts.highchartsStrings.darken = "darken".asInstanceOf[typings.highcharts.highchartsStrings.darken]
+  
   @scala.inline
   def multiply: typings.highcharts.highchartsStrings.multiply = "multiply".asInstanceOf[typings.highcharts.highchartsStrings.multiply]
 }
-

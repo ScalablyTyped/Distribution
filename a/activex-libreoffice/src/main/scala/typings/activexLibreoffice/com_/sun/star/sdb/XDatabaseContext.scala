@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XNamingService
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an interface for the new-style {@link DatabaseContext} service to implement.
@@ -27,8 +27,8 @@ trait XDatabaseContext
      with XContainer
      with XSingleServiceFactory
      with XDatabaseRegistrations
-
 object XDatabaseContext {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -64,4 +64,3 @@ object XDatabaseContext {
     __obj.asInstanceOf[XDatabaseContext]
   }
 }
-

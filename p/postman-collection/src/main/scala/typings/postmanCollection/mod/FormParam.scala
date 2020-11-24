@@ -2,7 +2,7 @@ package typings.postmanCollection.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormParam protected () extends Property[FormParamDefinition] {
   def this(options: FormParamDefinition) = this()
+  
   var key: js.UndefOr[String] = js.native
+  
   var value: js.UndefOr[js.Any] = js.native
 }
-

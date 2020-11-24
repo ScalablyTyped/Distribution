@@ -10,33 +10,18 @@ import typings.std.Element
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IScrollAdapter extends js.Object {
-  /**
-    * a boolean value indicating whether there are any pending load requests.
-    */
-  var isLoading: Boolean = js.native
-  /**
-    * a reference to the item currently in the topmost visible position.
-    */
-  var topVisible: js.Any = js.native
-  /**
-    * a reference to the DOM element currently in the topmost visible position.
-    */
-  @JSName("topVisibleElement")
-  var topVisibleElement_Original: IAugmentedJQueryStatic = js.native
-  /**
-    * a reference to the scope created for the item currently in the topmost visible position.
-    */
-  var topVisibleScope: IRepeatScope = js.native
+  
   /**
     * Adds new items after the last item in the buffer
     *
     * @param newItems provides an array of items to be appended.
     */
   def append(newItems: js.Array[_]): Unit = js.native
+  
   /**
     * Replaces the item in the buffer at the given index with the new items.
     *
@@ -61,18 +46,31 @@ trait IScrollAdapter extends js.Object {
     * in place update.
     */
   def applyUpdates(updater: js.Function2[/* item */ js.Any, /* scope */ IRepeatScope, _]): Unit = js.native
+  
+  /**
+    * a boolean value indicating whether there are any pending load requests.
+    */
+  var isLoading: Boolean = js.native
+  
   /**
     * Adds new items before the first item in the buffer
     *
     * @param newItems provides an array of items to be prepended.
     */
   def prepend(newItems: js.Array[_]): Unit = js.native
+  
   /**
     * calling this method reinitializes and reloads the scroller content.
     * @param startIndex is an integer indicating what item index the scroller will use to start the load process.
     */
   def reload(): Unit = js.native
   def reload(startIndex: Double): Unit = js.native
+  
+  /**
+    * a reference to the item currently in the topmost visible position.
+    */
+  var topVisible: js.Any = js.native
+  
   /**
     * a reference to the DOM element currently in the topmost visible position.
     */
@@ -83,5 +81,14 @@ trait IScrollAdapter extends js.Object {
   def topVisibleElement(element: Document): JQLite = js.native
   def topVisibleElement(element: Element): JQLite = js.native
   def topVisibleElement(element: Window): JQLite = js.native
+  /**
+    * a reference to the DOM element currently in the topmost visible position.
+    */
+  @JSName("topVisibleElement")
+  var topVisibleElement_Original: IAugmentedJQueryStatic = js.native
+  
+  /**
+    * a reference to the scope created for the item currently in the topmost visible position.
+    */
+  var topVisibleScope: IRepeatScope = js.native
 }
-

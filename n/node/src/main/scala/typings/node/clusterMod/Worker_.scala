@@ -14,14 +14,12 @@ import typings.node.nodeStrings.online
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cluster", "Worker")
 @js.native
 class Worker_ () extends EventEmitter {
-  var exitedAfterDisconnect: Boolean = js.native
-  var id: Double = js.native
-  var process: ChildProcess = js.native
+  
   @JSName("addListener")
   def addListener_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -35,9 +33,12 @@ class Worker_ () extends EventEmitter {
     // the handle is a net.Socket or net.Server object, or undefined.
   @JSName("addListener")
   def addListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
+  
   def destroy(): Unit = js.native
   def destroy(signal: String): Unit = js.native
+  
   def disconnect(): Unit = js.native
+  
   @JSName("emit")
   def emit_disconnect(event: typings.node.nodeStrings.disconnect): Boolean = js.native
   @JSName("emit")
@@ -52,10 +53,18 @@ class Worker_ () extends EventEmitter {
   def emit_message(event: message, message: js.Any, handle: Socket): Boolean = js.native
   @JSName("emit")
   def emit_online(event: online): Boolean = js.native
+  
+  var exitedAfterDisconnect: Boolean = js.native
+  
+  var id: Double = js.native
+  
   def isConnected(): Boolean = js.native
+  
   def isDead(): Boolean = js.native
+  
   def kill(): Unit = js.native
   def kill(signal: String): Unit = js.native
+  
   @JSName("on")
   def on_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -69,6 +78,7 @@ class Worker_ () extends EventEmitter {
     // the handle is a net.Socket or net.Server object, or undefined.
   @JSName("on")
   def on_online(event: online, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("once")
   def once_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -82,6 +92,7 @@ class Worker_ () extends EventEmitter {
     // the handle is a net.Socket or net.Server object, or undefined.
   @JSName("once")
   def once_online(event: online, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -95,6 +106,7 @@ class Worker_ () extends EventEmitter {
     // the handle is a net.Socket or net.Server object, or undefined.
   @JSName("prependListener")
   def prependListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -108,6 +120,9 @@ class Worker_ () extends EventEmitter {
     // the handle is a net.Socket or net.Server object, or undefined.
   @JSName("prependOnceListener")
   def prependOnceListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
+  
+  var process: ChildProcess = js.native
+  
   def send(message: Serializable): Boolean = js.native
   def send(
     message: Serializable,
@@ -121,4 +136,3 @@ class Worker_ () extends EventEmitter {
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native
 }
-

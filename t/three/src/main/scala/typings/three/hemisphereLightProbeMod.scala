@@ -5,11 +5,12 @@ import typings.three.lightProbeMod.LightProbe
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/HemisphereLightProbe", JSImport.Namespace)
 @js.native
 object hemisphereLightProbeMod extends js.Object {
+  
   @js.native
   class HemisphereLightProbe () extends LightProbe {
     def this(skyColor: String) = this()
@@ -43,8 +44,7 @@ object hemisphereLightProbeMod extends js.Object {
     def this(skyColor: Color, groundColor: String, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Double, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Color, intensity: Double) = this()
+    
     val isHemisphereLightProbe: `true` = js.native
   }
-  
 }
-

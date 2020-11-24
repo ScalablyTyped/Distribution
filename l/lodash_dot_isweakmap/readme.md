@@ -12,7 +12,7 @@ The lodash method `_.isWeakMap` exported as a module.
 | Keywords           | lodash-modularized, isweakmap |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1170 |
+| # downloads        | 937 |
 | # stars            | 0 |
 
 ## Links

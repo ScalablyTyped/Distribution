@@ -2,7 +2,7 @@ package typings.phaser.Phaser.Structs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RBush is a high-performance JavaScript library for 2D spatial indexing of points and rectangles.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RTree extends js.Object
-

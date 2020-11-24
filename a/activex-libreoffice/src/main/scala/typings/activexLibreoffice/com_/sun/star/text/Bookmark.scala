@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A bookmark is a {@link TextContent} , which is like a jump target or a label. */
 @js.native
 trait Bookmark
   extends TextContent
      with XNamed
-
 object Bookmark {
+  
   @scala.inline
   def apply(
     Anchor: XTextRange,
@@ -37,4 +37,3 @@ object Bookmark {
     __obj.asInstanceOf[Bookmark]
   }
 }
-

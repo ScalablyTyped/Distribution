@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.toastHeaderMod.ToastHeaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "ToastHeader")
+@JSImport("reactstrap/lib", "ToastHeader")
 @js.native
-class ToastHeader[T] ()
+class ToastHeader ()
   extends Component[ToastHeaderProps, js.Object, js.Any]
-

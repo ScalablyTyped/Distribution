@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v2", "jobs_v2.Resource$Companies$Jobs")
 @js.native
 class ResourceCompaniesJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * jobs.companies.jobs.list
     * @desc Deprecated. Use ListJobs instead.  Lists all jobs associated with a
@@ -51,4 +53,3 @@ class ResourceCompaniesJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListCompanyJobsResponse]
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Libraries of geodesy functions
 | Full name          | geodesy |
 | Keywords           | geodesy, latitude, longitude, distance, bearing, destination, haversine, vincenty, rhumb, ellipsoid, datum, reference frame, TRF, wgs84, utm, mgrs |
 | # releases         | 6 |
-| # dependents       | 22 |
-| # downloads        | 302817 |
+| # dependents       | 23 |
+| # downloads        | 405978 |
 | # stars            | 3 |
 
 ## Links

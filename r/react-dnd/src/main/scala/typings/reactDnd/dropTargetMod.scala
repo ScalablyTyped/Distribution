@@ -7,11 +7,12 @@ import typings.reactDnd.interfacesMod.DropTargetSpec
 import typings.reactDnd.optionsMod.DndOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd/lib/decorators/DropTarget", JSImport.Namespace)
 @js.native
 object dropTargetMod extends js.Object {
+  
   def DropTarget[RequiredProps, CollectedProps](
     `type`: js.Function1[/* props */ RequiredProps, TargetType],
     spec: DropTargetSpec[RequiredProps],
@@ -35,4 +36,3 @@ object dropTargetMod extends js.Object {
     options: DndOptions[RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = js.native
 }
-

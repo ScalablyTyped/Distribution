@@ -1,16 +1,16 @@
 package typings.reactRedux.mod
 
 import typings.react.mod.Context
-import typings.reactRedux.anon.Fn1
-import typings.redux.mod.AnyAction
+import typings.redux.mod.Action
+import typings.redux.mod.Dispatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-redux", "createDispatchHook")
 @js.native
 object createDispatchHook extends js.Object {
-  def apply(): Fn1 = js.native
-  def apply(context: Context[ReactReduxContextValue[_, AnyAction]]): Fn1 = js.native
+  
+  def apply[S, A /* <: Action[_] */](): js.Function0[Dispatch[A]] = js.native
+  def apply[S, A /* <: Action[_] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Dispatch[A]] = js.native
 }
-

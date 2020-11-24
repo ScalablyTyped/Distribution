@@ -1,17 +1,18 @@
 package typings.tensorflowTfjsCore
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.euclidean
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fro
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/ops/norm", JSImport.Namespace)
 @js.native
 object normMod extends js.Object {
+  
   val norm: js.Function4[
     /* x */ Tensor[Rank] | TensorLike, 
     /* ord */ js.UndefOr[Double | euclidean | fro], 
@@ -20,4 +21,3 @@ object normMod extends js.Object {
     Tensor[Rank]
   ] = js.native
 }
-

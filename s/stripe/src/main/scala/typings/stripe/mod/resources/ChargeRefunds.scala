@@ -12,11 +12,12 @@ import typings.stripe.mod.refunds.IRefundCreationOptions
 import typings.stripe.mod.refunds.IRefundListOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.ChargeRefunds")
 @js.native
 class ChargeRefunds () extends StripeResource {
+  
   /**
     * When you create a new refund, you must specify a charge to create it on.
     *
@@ -52,6 +53,7 @@ class ChargeRefunds () extends StripeResource {
   ]) with (js.UndefOr[
     js.Function1[/* response */ js.UndefOr[IResponseFn[IRefund]], js.Promise[IRefund]]
   ]) = js.native
+  
   /**
     * Returns a list of all refunds you’ve previously created. The refunds are returned in sorted order,
     * with the most recent refunds appearing first.
@@ -79,6 +81,7 @@ class ChargeRefunds () extends StripeResource {
   ]) with (js.UndefOr[
     js.Function1[/* response */ js.UndefOr[IResponseFn[IList[IRefund]]], IListPromise[IRefund]]
   ]) = js.native
+  
   /**
     * Retrieves the details of an existing refund.
     */
@@ -111,6 +114,7 @@ class ChargeRefunds () extends StripeResource {
       js.Promise[IRefund]
     ]
   ]) = js.native
+  
   /**
     * Updates the specified refund by setting the values of the parameters passed.
     * Any parameters not provided will be left unchanged.
@@ -134,4 +138,3 @@ class ChargeRefunds () extends StripeResource {
     ]
   ]) = js.native
 }
-

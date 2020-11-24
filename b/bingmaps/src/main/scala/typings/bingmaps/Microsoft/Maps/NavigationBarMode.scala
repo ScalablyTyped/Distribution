@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NavigationBarMode extends js.Object
-
 @JSGlobal("Microsoft.Maps.NavigationBarMode")
 @js.native
 object NavigationBarMode extends js.Object {
+  
   /**
     * A compact navigation bar that includes a smaller drop down for the map type and zoom buttons. Recommended for small
     * maps or screen such as a mobile device.
@@ -30,6 +30,4 @@ object NavigationBarMode extends js.Object {
     */
   @js.native
   sealed trait minified extends NavigationBarMode
-  
 }
-

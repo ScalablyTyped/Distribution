@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjResponse used for scripting web responses in Suitelets
@@ -19,6 +19,7 @@ trait nlobjResponse
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * add a value for a response header.
     * @param  {string} name of header
@@ -34,6 +35,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def addHeader(name: String, value: String): js.Any = js.native
+  
   /**
     * return an Array of all response headers
     * @return  {Object}
@@ -45,8 +47,11 @@ Instantiable0[js.Any] {
     * @return
     */
   def getAllHeaders(): js.Any = js.native
+  
   def getBody(): js.Any = js.native
+  
   def getCode(): String = js.native
+  
   /**
     * return the value of a response header.
     * @param  {string} name of header
@@ -59,6 +64,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getHeader(): String = js.native
+  
   /**
     * return an Array of all response header values for a header
     * @param  {string} name of header
@@ -71,6 +77,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getHeaders(name: String): Unit = js.native
+  
   /**
     * suppress caching for this response.
     * @return  {void}
@@ -82,6 +89,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def sendNoCache(): js.Any = js.native
+  
   /**
     * sets the redirect URL for the response. all URLs must be internal unless the Suitelet is being executed in an "Available without Login" context
     *  at which point it can use type "external" to specify an external url via the subtype arg
@@ -139,6 +147,7 @@ Instantiable0[js.Any] {
   ): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean): js.Any = js.native
   def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean, parameters: js.Any): js.Any = js.native
+  
   /**
     * sets the content type for the response (and an optional filename for binary output).
     *
@@ -159,6 +168,7 @@ Instantiable0[js.Any] {
   def setContentType(`type`: String, name: js.UndefOr[scala.Nothing], disposition: String): Unit = js.native
   def setContentType(`type`: String, name: String): Unit = js.native
   def setContentType(`type`: String, name: String, disposition: String): Unit = js.native
+  
   /**
     * sets the character encoding for the response.
     * @param {String} encoding
@@ -171,6 +181,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setEncoding(encoding: String): js.Any = js.native
+  
   /**
     * set the value of a response header.
     * @param  {string} name of header
@@ -186,6 +197,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setHeader(name: String, value: String): js.Any = js.native
+  
   /**
     * write information (text/xml/html) to the response.
     *
@@ -199,6 +211,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def write(output: String): js.Any = js.native
+  
   /**
     * write line information (text/xml/html) to the response.
     *
@@ -212,6 +225,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def writeLine(output: String): js.Any = js.native
+  
   /**
     * write a UI object page.
     *
@@ -226,4 +240,3 @@ Instantiable0[js.Any] {
     */
   def writePage(pageobject: js.Any): js.Any = js.native
 }
-

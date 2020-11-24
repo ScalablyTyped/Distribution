@@ -2,7 +2,7 @@ package typings.k6.cryptoMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This module provides common hashing functionality available in the GoLang crypto package.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/crypto", "crypto")
 @js.native
 object crypto extends js.Object
-

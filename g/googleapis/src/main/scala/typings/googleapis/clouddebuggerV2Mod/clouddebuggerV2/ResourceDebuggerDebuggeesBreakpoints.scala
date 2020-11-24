@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Debugger$Debuggees$Breakpoints")
 @js.native
 class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * clouddebugger.debugger.debuggees.breakpoints.delete
     * @desc Deletes the breakpoint from the debuggee.
@@ -97,6 +99,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * clouddebugger.debugger.debuggees.breakpoints.get
     * @desc Gets breakpoint information.
@@ -184,6 +187,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetBreakpointResponse]
   ): Unit = js.native
+  
   /**
     * clouddebugger.debugger.debuggees.breakpoints.list
     * @desc Lists all breakpoints for the debuggee.
@@ -272,6 +276,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListBreakpointsResponse]
   ): Unit = js.native
+  
   /**
     * clouddebugger.debugger.debuggees.breakpoints.set
     * @desc Sets the breakpoint to the debuggee.
@@ -361,4 +366,3 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSetBreakpointResponse]
   ): Unit = js.native
 }
-

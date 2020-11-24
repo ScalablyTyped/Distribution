@@ -23,7 +23,7 @@ import typings.std.Record
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelStatic[TTechnology /* <: RaphaelTechnology */]
@@ -93,136 +93,7 @@ Instantiable4[
       /* callback */ js.ThisFunction0[/* this */ RaphaelPaper[TTechnology], Unit], 
       RaphaelPaper[TTechnology]
     ] {
-  /**
-    * Object that contains easing formulas for animation. You could extend it with your own. By default it has
-    * the easing methods as defined in {@link RaphaelBuiltinEasingFormula}.
-    */
-  var easing_formulas: Record[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula, RaphaelEasingFormula] = js.native
-  /**
-    * You can add your own method to elements. This is useful when you want to hack default functionality or want
-    * to wrap some common transformation or attributes in one method. In contrast to canvas methods, you can
-    * redefine element method at any time. Expending element methods would not affect set.
-    *
-    * ```javascript
-    * Raphael.el.red = function () {
-    *   this.attr({fill: "#f00"});
-    * };
-    * // then use it
-    * paper.circle(100, 100, 20).red();
-    * ```
-    *
-    * __Note to TypeScript users__
-    *
-    * To declare your plugin, you should extend the `raphael` module and add to the {@link RaphaelElement}:
-    *
-    * ```typescript
-    * import { RaphaelElement } from "raphael"
-    * declare module "raphael" {
-    *   interface RaphaelElement {
-    *     red(): void;
-    *     colored(r: number, g: number, b: number): this;
-    *    }
-    * }
-    * ```
-    */
-  var el: RaphaelElementPluginRegistry[TTechnology] = js.native
-  /**
-    * You can add your own method to the canvas. For example if you want to draw a pie chart, you can create your
-    * own pie chart function and ship it as a Raphaël plugin. To do this you need to extend the `Raphael.fn`
-    * object.
-    *
-    * Please note that you can create your own namespaces inside the fn object, methods will be run in the context
-    * of the canvas. You should alter the fn object before a Raphaël instance is created, otherwise it will take no
-    * effect.
-    *
-    * ```javascript
-    * Raphael.fn.arrow = function (x1, y1, x2, y2, size) {
-    *   return this.path( ... );
-    * };
-    * // or create namespace
-    * Raphael.fn.mystuff = {
-    *   arrow: function () {…},
-    *   star: function () {…},
-    *   // etc...
-    * };
-    *
-    * var paper = Raphael(10, 10, 630, 480);
-    * // then use it
-    * paper.arrow(10, 10, 30, 30, 5).attr({fill: "#f00"});
-    * paper.mystuff.arrow();
-    * paper.mystuff.star();
-    * ```
-    *
-    * __Note to TypeScript users__
-    *
-    * To declare your plugin, you should extend the `raphael` module and add to the {@link RaphaelPaper}:
-    *
-    * ```typescript
-    * import { RaphaelPaper, RaphaelPath } from "raphael"
-    * declare module "raphael" {
-    *   interface RaphaelPaper {
-    *     arrow(x1: number, y1: number, x2: number, y2: number, size: number): RaphaelPath;
-    *     mystuff: {
-    *       arrow(flag: boolean): number;
-    *       star(): void;
-    *     };
-    *   }
-    * }
-    * ```
-    */
-  var fn: RaphaelPaperPluginRegistry[TTechnology, RaphaelPaper[TTechnology]] = js.native
-  /**
-    * On each call returns next colour in the spectrum. Also contains a utility method to reset it back to red via
-    * {@link RaphaelStaticGetColor.reset|Raphael.getColor.reset}
-    */
-  @JSName("getColor")
-  var getColor_Original: RaphaelStaticGetColor = js.native
-  /**
-    * You can add your own method to elements and sets. It is wise to add a set method for each element method you
-    * added, so you will be able to call the same method on sets too. See also {@link el}.
-    *
-    * ```javascript
-    * Raphael.el.red = function() {
-    *   this.attr({fill: "#f00"});
-    * };
-    *
-    * Raphael.st.red = function() {
-    *   this.forEach(function () {
-    *     this.red();
-    *   });
-    * };
-    *
-    * // then use it
-    * paper.set(paper.circle(100, 100, 20), paper.circle(110, 100, 20)).red();
-    * ```
-    *
-    * __Note to TypeScript users__
-    *
-    * To declare your plugin, you should extend the `raphael` module and add to the {@link RaphaelSet}:
-    *
-    * ```typescript
-    * import { RaphaelSet } from "raphael"
-    * declare module "raphael" {
-    *   interface RaphaelSet {
-    *     green(): void;
-    *     colorized(r: number, g: number, b: number): this;
-    *   }
-    * }
-    * ```
-    */
-  var st: RaphaelSetPluginRegistry[TTechnology] = js.native
-  /**
-    * `true` if browser supports SVG (scalable vector graphics), or `false` otherwise.
-    */
-  var svg: Boolean = js.native
-  /**
-    * The technology used by Raphaël for the graphics.
-    */
-  var `type`: TTechnology = js.native
-  /**
-    * True if browser supports VML (vector markup language).
-    */
-  var vml: Boolean = js.native
+  
   /**
     * @param onReadyCallback Function that is going to be called on DOM ready event. You can also subscribe to this
     * event via Eve's `DOMLoad` event. In this case the method returns `undefined`.
@@ -287,6 +158,7 @@ Instantiable4[
     height: Double,
     callback: js.ThisFunction0[/* this */ RaphaelPaper[TTechnology], Unit]
   ): RaphaelPaper[TTechnology] = js.native
+  
   /**
     * Returns angle between two or three points
     * @param x1 x coordinate of first point
@@ -301,6 +173,7 @@ Instantiable4[
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: js.UndefOr[scala.Nothing], y3: Double): Double = js.native
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double): Double = js.native
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): Double = js.native
+  
   /**
     * Creates an animation object that can be passed to the {@link RaphaelElement.animate} or
     * {@link RaphaelElement.animateWith} methods. See also the {@link RaphaelAnimation.delay} and
@@ -350,18 +223,56 @@ Instantiable4[
       Unit
     ]
   ): RaphaelAnimation = js.native
+  
   /**
     * Parses the color string and returns object with all values for the given color.
     * @param color Color string in one of the supported formats, see {@link RaphaelStatic.getRGB}.
     * @return Combined RGB & HSB object with the information about the color.
     */
   def color(color: String): RaphaelPotentialFailureRa = js.native
+  
   /**
     * Transform angle from radians to degrees.
     * @param radians An angle in radians.
     * @return The given angle in degrees.
     */
   def deg(radians: Double): Double = js.native
+  
+  /**
+    * Object that contains easing formulas for animation. You could extend it with your own. By default it has
+    * the easing methods as defined in {@link RaphaelBuiltinEasingFormula}.
+    */
+  var easing_formulas: Record[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula, RaphaelEasingFormula] = js.native
+  
+  /**
+    * You can add your own method to elements. This is useful when you want to hack default functionality or want
+    * to wrap some common transformation or attributes in one method. In contrast to canvas methods, you can
+    * redefine element method at any time. Expending element methods would not affect set.
+    *
+    * ```javascript
+    * Raphael.el.red = function () {
+    *   this.attr({fill: "#f00"});
+    * };
+    * // then use it
+    * paper.circle(100, 100, 20).red();
+    * ```
+    *
+    * __Note to TypeScript users__
+    *
+    * To declare your plugin, you should extend the `raphael` module and add to the {@link RaphaelElement}:
+    *
+    * ```typescript
+    * import { RaphaelElement } from "raphael"
+    * declare module "raphael" {
+    *   interface RaphaelElement {
+    *     red(): void;
+    *     colored(r: number, g: number, b: number): this;
+    *    }
+    * }
+    * ```
+    */
+  var el: RaphaelElementPluginRegistry[TTechnology] = js.native
+  
   /**
     * Utility method to find dot coordinates on the given cubic bezier curve at the given position.
     * @param startPointX x of the first point of the curve.
@@ -386,6 +297,53 @@ Instantiable4[
     endPointY: Double,
     positionOnCurve: Double
   ): RaphaelCubicBezierCurvePointInfo = js.native
+  
+  /**
+    * You can add your own method to the canvas. For example if you want to draw a pie chart, you can create your
+    * own pie chart function and ship it as a Raphaël plugin. To do this you need to extend the `Raphael.fn`
+    * object.
+    *
+    * Please note that you can create your own namespaces inside the fn object, methods will be run in the context
+    * of the canvas. You should alter the fn object before a Raphaël instance is created, otherwise it will take no
+    * effect.
+    *
+    * ```javascript
+    * Raphael.fn.arrow = function (x1, y1, x2, y2, size) {
+    *   return this.path( ... );
+    * };
+    * // or create namespace
+    * Raphael.fn.mystuff = {
+    *   arrow: function () {…},
+    *   star: function () {…},
+    *   // etc...
+    * };
+    *
+    * var paper = Raphael(10, 10, 630, 480);
+    * // then use it
+    * paper.arrow(10, 10, 30, 30, 5).attr({fill: "#f00"});
+    * paper.mystuff.arrow();
+    * paper.mystuff.star();
+    * ```
+    *
+    * __Note to TypeScript users__
+    *
+    * To declare your plugin, you should extend the `raphael` module and add to the {@link RaphaelPaper}:
+    *
+    * ```typescript
+    * import { RaphaelPaper, RaphaelPath } from "raphael"
+    * declare module "raphael" {
+    *   interface RaphaelPaper {
+    *     arrow(x1: number, y1: number, x2: number, y2: number, size: number): RaphaelPath;
+    *     mystuff: {
+    *       arrow(flag: boolean): number;
+    *       star(): void;
+    *     };
+    *   }
+    * }
+    * ```
+    */
+  var fn: RaphaelPaperPluginRegistry[TTechnology, RaphaelPaper[TTechnology]] = js.native
+  
   /**
     * Simple format function. Replaces construction of type `{<number>}` with the corresponding argument.
     *
@@ -407,6 +365,7 @@ Instantiable4[
     * @return The formatted string.
     */
   def format(token: String, parameters: js.Any*): String = js.native
+  
   /**
     * A little bit more advanced format function than {@link format}. Replaces construction of type `{<name>}`
     * with the corresponding argument.
@@ -429,6 +388,7 @@ Instantiable4[
     * @return The formatted string.
     */
   def fullfill(token: String, json: Record[String, _]): String = js.native
+  
   /**
     * On each call returns next colour in the spectrum. To reset it back to red call
     * {@link RaphaelStaticGetColor.reset|Raphael.getColor.reset}.
@@ -442,12 +402,20 @@ Instantiable4[
   def getColor(): String = js.native
   def getColor(brightness: Double): String = js.native
   /**
+    * On each call returns next colour in the spectrum. Also contains a utility method to reset it back to red via
+    * {@link RaphaelStaticGetColor.reset|Raphael.getColor.reset}
+    */
+  @JSName("getColor")
+  var getColor_Original: RaphaelStaticGetColor = js.native
+  
+  /**
     * Return coordinates of the point located at the given length on the given path.
     * @param path SVG path string.
     * @param length Length at which to get the point.
     * @return The point located at the given length on the given path.
     */
   def getPointAtLength(path: String, length: Double): RaphaelCartesianCurvePoint = js.native
+  
   /**
     * Parses a color string as an RGB object. Takes a color string in one of the following formats:
     *
@@ -465,6 +433,7 @@ Instantiable4[
     * @return The RGB components of the parsed color string.
     */
   def getRGB(color: String): RaphaelPotentialFailureRaB = js.native
+  
   /**
     * Return sub path of a given path from given length to given length.
     * @param path SVG path string
@@ -473,12 +442,14 @@ Instantiable4[
     * @return Path string for the segment.
     */
   def getSubpath(path: String, from: Double, to: Double): String = js.native
+  
   /**
     * Returns length of the given path in pixels.
     * @param path SVG path string.
     * @return The length of the path.
     */
   def getTotalLength(path: String): Double = js.native
+  
   /**
     * Converts HSB values to hex representation of the color.
     * @param hue Hue channel
@@ -487,6 +458,7 @@ Instantiable4[
     * @return Hex representation of the color.
     */
   def hsb(hue: Double, saturation: Double, brightness: Double): String = js.native
+  
   /**
     * Converts HSB values to RGB object.
     * @param hue Hue channel.
@@ -495,6 +467,7 @@ Instantiable4[
     * @return The color in the RGB color system.
     */
   def hsb2rgb(hue: Double, saturation: Double, brightness: Double): RaphaelRgbComponentInfo = js.native
+  
   /**
     * Converts HSL values to hex representation of the colour.
     * @param hue Hue channel.
@@ -503,6 +476,7 @@ Instantiable4[
     * @return Hex representation of the color.
     */
   def hsl(hue: Double, saturation: Double, luminosity: Double): String = js.native
+  
   /**
     * Converts HSL values to RGB object.
     * @param hue Hue channel.
@@ -511,6 +485,7 @@ Instantiable4[
     * @return The color in the RGB color system.
     */
   def hsl2rgb(hue: Double, saturation: Double, luminosity: Double): RaphaelRgbComponentInfo = js.native
+  
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -590,6 +565,7 @@ Instantiable4[
     */
   @JSName("is")
   def is_undefined(`object`: js.Any, `type`: undefined): /* is undefined */ Boolean = js.native
+  
   /**
     * Utility method for creating a 2x3 matrix based on given parameters:
     *
@@ -609,6 +585,7 @@ Instantiable4[
     * @return A matrix based on the given parameters.
     */
   def matrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): RaphaelMatrix = js.native
+  
   /**
     * If you want to leave no trace of Raphaël (Well, Raphaël creates only one global variable `Raphael`, but
     * anyway.) You can use ninja method. Beware, that in this case plugins could stop working, because they are
@@ -616,6 +593,7 @@ Instantiable4[
     * @return The Raphael object with all available methods.
     */
   def ninja(): this.type = js.native
+  
   /**
     * Utility method that parses given path string into an array of arrays of path segments.
     * @param pathString Path string or array of segments (in the last case it will be returned straight away).
@@ -624,6 +602,7 @@ Instantiable4[
   def parsePathString(pathString: String): js.Array[RaphaelPathSegment] = js.native
   def parsePathString(pathString: js.Array[RaphaelPathSegment]): js.Array[RaphaelPathSegment] = js.native
   def parsePathString(pathString: RaphaelPathSegment): js.Array[RaphaelPathSegment] = js.native
+  
   /**
     * Utility method that parses given path string into an array of transformations.
     * @param transformString Transform string or array of transformations (in the last case it will be returned
@@ -633,6 +612,7 @@ Instantiable4[
   def parseTransformString(transformString: String): js.Array[RaphaelTransformSegment] = js.native
   def parseTransformString(transformString: js.Array[RaphaelTransformSegment]): js.Array[RaphaelTransformSegment] = js.native
   def parseTransformString(transformString: RaphaelTransformSegment): js.Array[RaphaelTransformSegment] = js.native
+  
   /**
     * Utility method that converts path to a new path where all segments are cubic bezier curves.
     * @param pathString A path string or array of segments.
@@ -641,6 +621,7 @@ Instantiable4[
   def path2curve(pathString: String): js.Array[RaphaelPathSegment] = js.native
   def path2curve(pathString: js.Array[RaphaelPathSegment]): js.Array[RaphaelPathSegment] = js.native
   def path2curve(pathString: RaphaelPathSegment): js.Array[RaphaelPathSegment] = js.native
+  
   /**
     * Utility method that converts a path to its relative form.
     * @param pathString A path string or array of segments.
@@ -649,12 +630,14 @@ Instantiable4[
   def pathToRelative(pathString: String): js.Array[RaphaelPathSegment] = js.native
   def pathToRelative(pathString: js.Array[RaphaelPathSegment]): js.Array[RaphaelPathSegment] = js.native
   def pathToRelative(pathString: RaphaelPathSegment): js.Array[RaphaelPathSegment] = js.native
+  
   /**
     * Transform angle from degrees to radians.
     * @param degrees An angle in degrees.
     * @return The given angle in radians.
     */
   def rad(degrees: Double): Double = js.native
+  
   /**
     * Adds given font to the registered set of fonts for Raphaël. Should be used as an internal call from within
     * Cufón's font file. Returns original parameter, so it could be used with chaining.
@@ -665,6 +648,7 @@ Instantiable4[
     * @return The font you passed in
     */
   def registerFont(font: RaphaelFont): RaphaelFont = js.native
+  
   /**
     * Converts RGB values to hex representation of the colour.
     * @param red The red channel.
@@ -673,6 +657,7 @@ Instantiable4[
     * @return Hex representation of the color.
     */
   def rgb(red: Double, green: Double, blue: Double): String = js.native
+  
   /**
     * Converts RGB values to HSB values.
     * @param red The red channel.
@@ -681,6 +666,7 @@ Instantiable4[
     * @return The given color in the HSB color format.
     */
   def rgb2hsb(red: Double, green: Double, blue: Double): RaphaelHsbComponentInfo = js.native
+  
   /**
     * Converts RGB values to HSB values.
     * @param red The red channel.
@@ -689,11 +675,13 @@ Instantiable4[
     * @return The given color in the HSL color format.
     */
   def rgb2hsl(red: Double, green: Double, blue: Double): RaphaelHslComponentInfo = js.native
+  
   /**
     * Used when you need to draw in IFRAME. Switches window to the iframe one.
     * @param newWindow The new window object
     */
   def setWindow(newWindow: Window): Unit = js.native
+  
   def snapTo(values: js.Array[Double], value: Double): Double = js.native
   def snapTo(values: js.Array[Double], value: Double, tolerance: Double): Double = js.native
   /**
@@ -705,5 +693,54 @@ Instantiable4[
     */
   def snapTo(values: Double, value: Double): Double = js.native
   def snapTo(values: Double, value: Double, tolerance: Double): Double = js.native
+  
+  /**
+    * You can add your own method to elements and sets. It is wise to add a set method for each element method you
+    * added, so you will be able to call the same method on sets too. See also {@link el}.
+    *
+    * ```javascript
+    * Raphael.el.red = function() {
+    *   this.attr({fill: "#f00"});
+    * };
+    *
+    * Raphael.st.red = function() {
+    *   this.forEach(function () {
+    *     this.red();
+    *   });
+    * };
+    *
+    * // then use it
+    * paper.set(paper.circle(100, 100, 20), paper.circle(110, 100, 20)).red();
+    * ```
+    *
+    * __Note to TypeScript users__
+    *
+    * To declare your plugin, you should extend the `raphael` module and add to the {@link RaphaelSet}:
+    *
+    * ```typescript
+    * import { RaphaelSet } from "raphael"
+    * declare module "raphael" {
+    *   interface RaphaelSet {
+    *     green(): void;
+    *     colorized(r: number, g: number, b: number): this;
+    *   }
+    * }
+    * ```
+    */
+  var st: RaphaelSetPluginRegistry[TTechnology] = js.native
+  
+  /**
+    * `true` if browser supports SVG (scalable vector graphics), or `false` otherwise.
+    */
+  var svg: Boolean = js.native
+  
+  /**
+    * The technology used by Raphaël for the graphics.
+    */
+  var `type`: TTechnology = js.native
+  
+  /**
+    * True if browser supports VML (vector markup language).
+    */
+  var vml: Boolean = js.native
 }
-

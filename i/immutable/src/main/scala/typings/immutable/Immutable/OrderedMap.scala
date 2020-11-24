@@ -2,10 +2,11 @@ package typings.immutable.Immutable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OrderedMap[K, V] extends Map[K, V] {
+  
   /**
     * Returns a new OrderedMap with only the entries for which the `predicate`
     * function returns true.
@@ -21,4 +22,3 @@ trait OrderedMap[K, V] extends Map[K, V] {
     context: js.Any
   ): OrderedMap[K, F] = js.native
 }
-

@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "getGeneratedNameForNode")
 @js.native
 object getGeneratedNameForNode extends js.Object {
-  /** Create a unique name generated for a node. */
+  
+  /** @deprecated Use `factory.getGeneratedNameForNode` or the factory supplied by your transformation context instead. */
   def apply(): Identifier = js.native
   def apply(node: Node): Identifier = js.native
 }
-

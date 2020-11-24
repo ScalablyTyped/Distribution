@@ -7,10 +7,11 @@ import typings.reactNative.mod.ThemeAttributeBackgroundPropType
 import typings.reactNative.mod.TouchableNativeFeedback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTouchableNativeFeed extends Instantiable0[TouchableNativeFeedback] {
+  
   /**
     * Creates an object that represents ripple drawable with specified color (as a
     * string). If property `borderless` evaluates to true the ripple will
@@ -23,17 +24,19 @@ trait TypeofTouchableNativeFeed extends Instantiable0[TouchableNativeFeedback] {
     */
   def Ripple(color: ColorValue): RippleBackgroundPropType = js.native
   def Ripple(color: ColorValue, borderless: Boolean): RippleBackgroundPropType = js.native
+  
   /**
     * Creates an object that represents android theme's default background for
     * selectable elements (?android:attr/selectableItemBackground).
     */
   def SelectableBackground(): ThemeAttributeBackgroundPropType = js.native
+  
   /**
     * Creates an object that represent android theme's default background for borderless
     * selectable elements (?android:attr/selectableItemBackgroundBorderless).
     * Available on android API level 21+.
     */
   def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = js.native
+  
   def canUseNativeForeground(): Boolean = js.native
 }
-

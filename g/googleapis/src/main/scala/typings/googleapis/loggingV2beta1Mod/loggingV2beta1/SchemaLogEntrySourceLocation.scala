@@ -2,7 +2,7 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional information about the source code location that produced the log
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaLogEntrySourceLocation extends js.Object {
+  
   /**
     * Optional. Source file name. Depending on the runtime environment, this
     * might be a simple name or a fully-qualified name.
     */
   var file: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Human-readable name of the function or method being invoked,
     * with optional context such as the class or package name. This information
@@ -24,43 +26,52 @@ trait SchemaLogEntrySourceLocation extends js.Object {
     * (Python).
     */
   var function: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Line within the source file. 1-based; 0 indicates no line
     * number available.
     */
   var line: js.UndefOr[String] = js.native
 }
-
 object SchemaLogEntrySourceLocation {
+  
   @scala.inline
   def apply(): SchemaLogEntrySourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogEntrySourceLocation]
   }
+  
   @scala.inline
   implicit class SchemaLogEntrySourceLocationOps[Self <: SchemaLogEntrySourceLocation] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFile: Self = this.set("file", js.undefined)
+    
     @scala.inline
     def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFunction: Self = this.set("function", js.undefined)
+    
     @scala.inline
     def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLine: Self = this.set("line", js.undefined)
   }
-  
 }
-

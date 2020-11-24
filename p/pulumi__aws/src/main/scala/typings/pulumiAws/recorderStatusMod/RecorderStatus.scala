@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus")
 @js.native
@@ -21,20 +21,22 @@ class RecorderStatus protected () extends CustomResource {
     */
   def this(name: String, args: RecorderStatusArgs) = this()
   def this(name: String, args: RecorderStatusArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Whether the configuration recorder should be enabled or disabled.
     */
   val isEnabled: Output_[Boolean] = js.native
+  
   /**
     * The name of the recorder
     */
   val name: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus")
 @js.native
 object RecorderStatus extends js.Object {
+  
   /**
     * Get an existing RecorderStatus resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object RecorderStatus extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RecorderStatus = js.native
   def get(name: String, id: Input[ID], state: RecorderStatusState): RecorderStatus = js.native
   def get(name: String, id: Input[ID], state: RecorderStatusState, opts: CustomResourceOptions): RecorderStatus = js.native
+  
   /**
     * Returns true if the given object is an instance of RecorderStatus.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorderStatus.RecorderStatus */ Boolean = js.native
 }
-

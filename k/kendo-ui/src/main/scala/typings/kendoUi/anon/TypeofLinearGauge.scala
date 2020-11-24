@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.dataviz.ui.LinearGaugeOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofLinearGauge
   extends Instantiable1[/* element */ Element, LinearGauge]
      with Instantiable2[/* element */ Element, /* options */ LinearGaugeOptions, LinearGauge] {
-  var fn: LinearGauge = js.native
+  
   def extend(proto: js.Object): LinearGauge = js.native
+  
+  var fn: LinearGauge = js.native
 }
-

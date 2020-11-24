@@ -2,9 +2,10 @@ package typings.inquirer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object choicesMod {
+  
   /**
     * Represents a property-name of any choice-type.
     *
@@ -14,6 +15,7 @@ package object choicesMod {
   type ChoiceProperty[T] = typings.inquirer.mod.KeyUnion[
     typings.inquirer.mod.UnionToIntersection[typings.inquirer.choicesMod.RealChoice[T]]
   ]
+  
   /**
     * Represents a valid choice for the `Choices` class.
     *
@@ -21,6 +23,7 @@ package object choicesMod {
     * The type of the answers.
     */
   type DistinctChoice[T] = /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.BaseChoiceMap<T>[keyof inquirer.inquirer.BaseChoiceMap<T>] */ js.Any
+  
   /**
     * Represents a valid real choice for the `Choices` class.
     *

@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.SenderApplication")
 @js.native
@@ -15,4 +15,3 @@ class SenderApplication protected ()
     */
   def this(platform: typings.chrome.chrome.cast.SenderPlatform) = this()
 }
-

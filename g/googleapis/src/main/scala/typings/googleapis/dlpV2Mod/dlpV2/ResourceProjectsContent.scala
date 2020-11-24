@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Content")
 @js.native
 class ResourceProjectsContent protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.content.deidentify
     * @desc De-identifies potentially sensitive info from a ContentItem. This
@@ -51,6 +53,7 @@ class ResourceProjectsContent protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DeidentifyContentResponse]
   ): Unit = js.native
+  
   /**
     * dlp.projects.content.inspect
     * @desc Finds potentially sensitive info in content. This method has limits
@@ -89,6 +92,7 @@ class ResourceProjectsContent protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectContentResponse]
   ): Unit = js.native
+  
   /**
     * dlp.projects.content.reidentify
     * @desc Re-identifies content that has been de-identified. See
@@ -124,4 +128,3 @@ class ResourceProjectsContent protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ReidentifyContentResponse]
   ): Unit = js.native
 }
-

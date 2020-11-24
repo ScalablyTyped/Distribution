@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.HandleEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new event handler.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EventHandler extends js.Object {
+  
   /**
     * Fire an event, all additional arguments are passed on to the event listener.
     * @example
@@ -46,6 +47,7 @@ trait EventHandler extends js.Object {
     arg7: js.UndefOr[js.Any],
     arg8: js.UndefOr[js.Any]
   ): EventHandler = js.native
+  
   /**
     * Test if there are any handlers bound to an event name.
     * @example
@@ -56,6 +58,7 @@ trait EventHandler extends js.Object {
     * @returns True if the object has handlers bound to the specified event name.
     */
   def hasEvent(name: String): Boolean = js.native
+  
   /**
     * Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,
     * if scope is not provided then all events with the callback will be unbound.
@@ -81,6 +84,7 @@ trait EventHandler extends js.Object {
   def off(name: String, callback: js.UndefOr[scala.Nothing], scope: js.Any): EventHandler = js.native
   def off(name: String, callback: HandleEvent): EventHandler = js.native
   def off(name: String, callback: HandleEvent, scope: js.Any): EventHandler = js.native
+  
   /**
     * Attach an event handler to an event.
     * @example
@@ -95,6 +99,7 @@ trait EventHandler extends js.Object {
     */
   def on(name: String, callback: HandleEvent): EventHandler = js.native
   def on(name: String, callback: HandleEvent, scope: js.Any): EventHandler = js.native
+  
   /**
     * Attach an event handler to an event. This handler will be removed after being fired once.
     * @example
@@ -111,4 +116,3 @@ trait EventHandler extends js.Object {
   def once(name: String, callback: HandleEvent): EventHandler = js.native
   def once(name: String, callback: HandleEvent, scope: js.Any): EventHandler = js.native
 }
-

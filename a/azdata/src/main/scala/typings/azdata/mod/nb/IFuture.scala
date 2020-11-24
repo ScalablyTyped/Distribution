@@ -4,10 +4,11 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IFuture extends Disposable {
+  
   /**
     * A Thenable that resolves when the future is done.
     *
@@ -19,10 +20,12 @@ trait IFuture extends Disposable {
     * otherwise it resolves to `undefined`.
     */
   val done: Thenable[js.UndefOr[IShellMessage]] = js.native
+  
   /**
     * The original outgoing message.
     */
   val msg: IMessage = js.native
+  
   /**
     * Register hook for IOPub messages.
     *
@@ -43,6 +46,7 @@ trait IFuture extends Disposable {
     * deactivated immediately.
     */
   def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage, Boolean | Thenable[Boolean]]): Unit = js.native
+  
   /**
     * Remove a hook for IOPub messages.
     *
@@ -52,10 +56,12 @@ trait IFuture extends Disposable {
     * If a hook is removed during the hook processing, it will be deactivated immediately.
     */
   def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage, Boolean | Thenable[Boolean]]): Unit = js.native
+  
   /**
     * Send an `input_reply` message.
     */
   def sendInputReply(content: IInputReply): Unit = js.native
+  
   /**
     * Sets the iopub handler for the kernel future.
     *
@@ -64,6 +70,7 @@ trait IFuture extends Disposable {
     * until the Thenable is resolved.
     */
   def setIOPubHandler(handler: MessageHandler[IIOPubMessage]): Unit = js.native
+  
   /**
     * Set the reply handler for the kernel future.
     *
@@ -74,6 +81,7 @@ trait IFuture extends Disposable {
     * been called.
     */
   def setReplyHandler(handler: MessageHandler[IShellMessage]): Unit = js.native
+  
   /**
     * Sets the stdin handler for the kernel future.
     *
@@ -83,4 +91,3 @@ trait IFuture extends Disposable {
     */
   def setStdInHandler(handler: MessageHandler[IStdinMessage]): Unit = js.native
 }
-

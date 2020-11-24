@@ -11,32 +11,34 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/discovery", JSImport.Namespace)
 @js.native
 object discoveryMod extends js.Object {
+  
   def discovery(options: Options): Discovery = js.native
   @JSName("discovery")
   def discovery_v1(version: v1): Discovery = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Discovery {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1
       extends TopLevel[
               Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Discovery]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -64,8 +66,5 @@ object discoveryMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

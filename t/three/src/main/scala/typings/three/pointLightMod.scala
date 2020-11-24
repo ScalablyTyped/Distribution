@@ -5,11 +5,12 @@ import typings.three.lightMod.Light
 import typings.three.pointLightShadowMod.PointLightShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/PointLight", JSImport.Namespace)
 @js.native
 object pointLightMod extends js.Object {
+  
   @js.native
   class PointLight () extends Light {
     def this(color: String) = this()
@@ -73,16 +74,24 @@ object pointLightMod extends js.Object {
     def this(color: Color, intensity: js.UndefOr[scala.Nothing], distance: Double, decay: Double) = this()
     def this(color: Color, intensity: Double, distance: js.UndefOr[scala.Nothing], decay: Double) = this()
     def this(color: Color, intensity: Double, distance: Double, decay: Double) = this()
+    
+    /**
+    	 * @default 1
+    	 */
     var decay: Double = js.native
+    
     /**
     	 * If non-zero, light will attenuate linearly from maximum intensity at light position down to zero at distance.
-    	 * Default - 0.0.
+    	 * @default 0
     	 */
     var distance: Double = js.native
+    
     var power: Double = js.native
+    
+    /**
+    	 * @default new THREE.PointLightShadow()
+    	 */
     @JSName("shadow")
     var shadow_PointLight: PointLightShadow = js.native
   }
-  
 }
-

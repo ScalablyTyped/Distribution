@@ -11,8 +11,8 @@ A lightweight React wrapper around the Highlight.js syntaxt highlighting library
 | Full name          | react-highlight.js |
 | Keywords           | react, reactjs, highlight, highlight.js, syntax, highlighting |
 | # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 147144 |
+| # dependents       | 40 |
+| # downloads        | 445714 |
 | # stars            | 0 |
 
 ## Links

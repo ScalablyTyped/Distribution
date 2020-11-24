@@ -5,7 +5,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tiling sprite is a fast way of rendering a tiling image
@@ -23,11 +23,11 @@ class TilingSprite protected ()
   def this(texture: typings.pixiJs.PIXI.Texture, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, width: Double, height: Double) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "TilingSprite")
 @js.native
 object TilingSprite extends js.Object {
+  
   def from(source: String): typings.pixiJs.PIXI.Sprite = js.native
   def from(source: String, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
   /**
@@ -53,7 +53,8 @@ object TilingSprite extends js.Object {
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Sprite = js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
   def from(source: HTMLVideoElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
+  
   def fromFrame(): typings.pixiJs.PIXI.Sprite = js.native
+  
   def fromImage(): typings.pixiJs.PIXI.Sprite = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Firebase Dynamic Links API
@@ -27,9 +27,12 @@ import scala.scalajs.js.annotation._
 class Firebasedynamiclinks protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var managedShortLinks: ResourceManagedshortlinks = js.native
+  
   var shortLinks: ResourceShortlinks = js.native
+  
   var v1: ResourceV1 = js.native
 }
-

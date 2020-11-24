@@ -4,11 +4,12 @@ import typings.indefiniteObservable.typesMod.Connect
 import typings.indefiniteObservable.typesMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("indefinite-observable/dist/IndefiniteObservable", JSImport.Namespace)
 @js.native
 object indefiniteObservableMod extends js.Object {
+  
   @js.native
   class IndefiniteObservable[T] protected () extends Observable[T] {
     /**
@@ -20,6 +21,7 @@ object indefiniteObservableMod extends js.Object {
       * source.
       */
     def this(connect: Connect[T]) = this()
+    
     var _connect: js.Any = js.native
   }
   
@@ -35,6 +37,4 @@ object indefiniteObservableMod extends js.Object {
       */
     def this(connect: Connect[T]) = this()
   }
-  
 }
-

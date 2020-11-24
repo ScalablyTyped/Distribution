@@ -2,50 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Image extends js.Object {
-  /**
-    *   Image height.
-    */
-  var height: Double = js.native
-  /**
-    *   Array containing the values for all the pixels in
-    *   the display window. These values are numbers. This
-    *   array is the size (include an appropriate factor
-    *   for pixelDensity) of the display window x4,
-    *   representing the R, G, B, A values in order for
-    *   each pixel, moving from left to right across each
-    *   row, then down each column. Retina and other high
-    *   denisty displays may have more pixels (by a factor
-    *   of pixelDensity^2). For example, if the image is
-    *   100x100 pixels, there will be 40,000. With
-    *   pixelDensity = 2, there will be 160,000. The first
-    *   four values (indices 0-3) in the array will be the
-    *   R, G, B, A values of the pixel at (0, 0). The
-    *   second four values (indices 4-7) will contain the
-    *   R, G, B, A values of the pixel at (1, 0). More
-    *   generally, to set values for a pixel at (x, y):
-    *   let d = pixelDensity(); for (let i = 0; i < d;
-    *   i++) { for (let j = 0; j < d; j++) { // loop over
-    *   index = 4 * ((y * d + j) * width * d + (x * d +
-    *   i)); pixels[index] = r; pixels[index+1] = g;
-    *   pixels[index+2] = b; pixels[index+3] = a; } }
-    *
-    *
-    *
-    *
-    *   Before accessing this array, the data must loaded
-    *   with the loadPixels() function. After the array
-    *   data has been modified, the updatePixels()
-    *   function must be run to update the changes.
-    */
-  var pixels: js.Array[Double] = js.native
-  /**
-    *   Image width.
-    */
-  var width: Double = js.native
+  
   /**
     *   Copies a region of pixels from one image to
     *   another, using a specified blend mode to do the
@@ -128,6 +89,7 @@ trait Image extends js.Object {
     dh: Double,
     blendMode: UNKNOWN_P5_CONSTANT
   ): Unit = js.native
+  
   def copy(
     srcImage: Element,
     sx: Double,
@@ -192,6 +154,7 @@ trait Image extends js.Object {
     *   @param dh destination image height
     */
   def copy(sx: Double, sy: Double, sw: Double, sh: Double, dx: Double, dy: Double, dw: Double, dh: Double): Unit = js.native
+  
   /**
     *   Applies an image filter to a p5.Image
     *   @param filterType either THRESHOLD, GRAY, OPAQUE,
@@ -202,6 +165,7 @@ trait Image extends js.Object {
     */
   def filter(filterType: FILTER_TYPE): Unit = js.native
   def filter(filterType: FILTER_TYPE, filterParam: Double): Unit = js.native
+  
   /**
     *   Get a region of pixels from an image. If no params
     *   are passed, the whole image is returned. If x and
@@ -236,11 +200,18 @@ trait Image extends js.Object {
     *   @return the rectangle p5.Image
     */
   def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
+  
+  /**
+    *   Image height.
+    */
+  var height: Double = js.native
+  
   /**
     *   Loads the pixels data for this image into the
     *   [pixels] attribute.
     */
   def loadPixels(): Unit = js.native
+  
   /**
     *   Masks part of an image from displaying by loading
     *   another image and using it's alpha channel as an
@@ -248,6 +219,40 @@ trait Image extends js.Object {
     *   @param srcImage source image
     */
   def mask(srcImage: Image): Unit = js.native
+  
+  /**
+    *   Array containing the values for all the pixels in
+    *   the display window. These values are numbers. This
+    *   array is the size (include an appropriate factor
+    *   for pixelDensity) of the display window x4,
+    *   representing the R, G, B, A values in order for
+    *   each pixel, moving from left to right across each
+    *   row, then down each column. Retina and other high
+    *   denisty displays may have more pixels (by a factor
+    *   of pixelDensity^2). For example, if the image is
+    *   100x100 pixels, there will be 40,000. With
+    *   pixelDensity = 2, there will be 160,000. The first
+    *   four values (indices 0-3) in the array will be the
+    *   R, G, B, A values of the pixel at (0, 0). The
+    *   second four values (indices 4-7) will contain the
+    *   R, G, B, A values of the pixel at (1, 0). More
+    *   generally, to set values for a pixel at (x, y):
+    *   let d = pixelDensity(); for (let i = 0; i < d;
+    *   i++) { for (let j = 0; j < d; j++) { // loop over
+    *   index = 4 * ((y * d + j) * width * d + (x * d +
+    *   i)); pixels[index] = r; pixels[index+1] = g;
+    *   pixels[index+2] = b; pixels[index+3] = a; } }
+    *
+    *
+    *
+    *
+    *   Before accessing this array, the data must loaded
+    *   with the loadPixels() function. After the array
+    *   data has been modified, the updatePixels()
+    *   function must be run to update the changes.
+    */
+  var pixels: js.Array[Double] = js.native
+  
   /**
     *   Resize the image to a new width and height. To
     *   make the image scale proportionally, use 0 as the
@@ -259,6 +264,7 @@ trait Image extends js.Object {
     *   @param height the resized image height
     */
   def resize(width: Double, height: Double): Unit = js.native
+  
   /**
     *   Saves the image to a file and force the browser to
     *   download it. Accepts two strings for filename and
@@ -267,6 +273,7 @@ trait Image extends js.Object {
     *   @param extension 'png' or 'jpg'
     */
   def save(filename: String, extension: String): Unit = js.native
+  
   def set(x: Double, y: Double, a: js.Array[Double]): Unit = js.native
   def set(x: Double, y: Double, a: js.Object): Unit = js.native
   /**
@@ -281,6 +288,7 @@ trait Image extends js.Object {
     *   p5.Color | image to copy
     */
   def set(x: Double, y: Double, a: Double): Unit = js.native
+  
   /**
     *   Updates the backing canvas for this image with the
     *   contents of the [pixels] array.
@@ -299,5 +307,9 @@ trait Image extends js.Object {
     *   underlying canvas
     */
   def updatePixels(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  
+  /**
+    *   Image width.
+    */
+  var width: Double = js.native
 }
-

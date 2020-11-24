@@ -2,7 +2,7 @@ package typings.acorn.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("acorn", "TokContext")
 @js.native
@@ -15,4 +15,3 @@ class TokContext protected () extends js.Object {
     `override`: js.Function1[/* p */ Parser, Unit]
   ) = this()
 }
-

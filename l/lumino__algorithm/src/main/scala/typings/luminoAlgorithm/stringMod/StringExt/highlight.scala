@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.stringMod.StringExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/string", "StringExt.highlight")
 @js.native
 object highlight extends js.Object {
+  
   /**
     * Highlight the matched characters of a source text.
     *
@@ -21,4 +22,3 @@ object highlight extends js.Object {
     */
   def apply[T](source: String, indices: js.Array[Double], fn: js.Function1[/* chunk */ String, T]): js.Array[String | T] = js.native
 }
-

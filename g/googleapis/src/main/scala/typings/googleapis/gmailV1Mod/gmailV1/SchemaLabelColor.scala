@@ -2,10 +2,11 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaLabelColor extends js.Object {
+  
   /**
     * The background color represented as hex string #RRGGBB (ex #000000). This
     * field is required in order to set the color of a label. Only the
@@ -20,6 +21,7 @@ trait SchemaLabelColor extends js.Object {
     * #aa8831, #076239, #1a764d, #1c4587, #41236d, #83334c
     */
   var backgroundColor: js.UndefOr[String] = js.native
+  
   /**
     * The text color of the label, represented as hex string. This field is
     * required in order to set the color of a label. Only the following
@@ -35,33 +37,39 @@ trait SchemaLabelColor extends js.Object {
     */
   var textColor: js.UndefOr[String] = js.native
 }
-
 object SchemaLabelColor {
+  
   @scala.inline
   def apply(): SchemaLabelColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLabelColor]
   }
+  
   @scala.inline
   implicit class SchemaLabelColorOps[Self <: SchemaLabelColor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    
     @scala.inline
     def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTextColor: Self = this.set("textColor", js.undefined)
   }
-  
 }
-

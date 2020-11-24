@@ -2,7 +2,7 @@ package typings.ibmCloudSdkCore.v1Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ibm-cloud-sdk-core/iam-token-manager/v1", "IamTokenManagerV1")
 @js.native
@@ -19,8 +19,23 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @constructor
     */
   def this(options: Options) = this()
+  
+  /**
+    * This function sends an access token back through a callback. The source of the token
+    * is determined by the following logic:
+    * 1. If user provides their own managed access token, assume it is valid and send it
+    * 2. If this class is managing tokens and does not yet have one, make a request for one
+    * 3. If this class is managing tokens and the token has expired, refresh it
+    * 4. If this class is managing tokens and has a valid token stored, send it
+    *
+    * @param {Function} cb - callback function that the token will be passed to
+    */
+  def getToken(cb: js.Function): js.Any = js.native
+  
   var iamApikey: js.Any = js.native
+  
   var iamUrl: String = js.native
+  
   /**
     * Used as a fail-safe to prevent the condition of a refresh token expiring,
     * which could happen after around 30 days. This function will return true
@@ -31,6 +46,7 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @returns {boolean}
     */
   var isRefreshTokenExpired: js.Any = js.native
+  
   /**
     * Check if currently stored token is expired.
     *
@@ -43,7 +59,9 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @returns {boolean}
     */
   var isTokenExpired: js.Any = js.native
+  
   var name: String = js.native
+  
   /**
     * Refresh an IAM token using a refresh token.
     *
@@ -51,6 +69,7 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @returns {void}
     */
   var refreshToken: js.Any = js.native
+  
   /**
     * Request an IAM token using an API key.
     *
@@ -58,6 +77,7 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @returns {void}
     */
   var requestToken: js.Any = js.native
+  
   /**
     * Save the response from the IAM service request to the object's state.
     *
@@ -66,20 +86,9 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @returns {void}
     */
   var saveTokenInfo: js.Any = js.native
+  
   var serviceVersion: String = js.native
-  var tokenInfo: IamTokenData = js.native
-  var userAccessToken: js.Any = js.native
-  /**
-    * This function sends an access token back through a callback. The source of the token
-    * is determined by the following logic:
-    * 1. If user provides their own managed access token, assume it is valid and send it
-    * 2. If this class is managing tokens and does not yet have one, make a request for one
-    * 3. If this class is managing tokens and the token has expired, refresh it
-    * 4. If this class is managing tokens and has a valid token stored, send it
-    *
-    * @param {Function} cb - callback function that the token will be passed to
-    */
-  def getToken(cb: js.Function): js.Any = js.native
+  
   /**
     * Set a self-managed IAM access token.
     * The access token should be valid and not yet expired.
@@ -93,5 +102,8 @@ class IamTokenManagerV1 protected () extends js.Object {
     * @returns {void}
     */
   def setAccessToken(iamAccessToken: String): Unit = js.native
+  
+  var tokenInfo: IamTokenData = js.native
+  
+  var userAccessToken: js.Any = js.native
 }
-

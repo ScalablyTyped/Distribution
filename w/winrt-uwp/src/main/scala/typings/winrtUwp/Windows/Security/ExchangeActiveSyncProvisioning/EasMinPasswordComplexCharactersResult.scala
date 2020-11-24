@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasMinPasswordComplexCharactersResult extends js.Object
-
 /** Represents the minimum complexity result for passwords. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordComplexCharactersResult")
 @js.native
 object EasMinPasswordComplexCharactersResult extends js.Object {
+  
   /** One or more admins are not allowed to change their passwords. */
   @js.native
   sealed trait adminsCannotChangePassword extends EasMinPasswordComplexCharactersResult
@@ -70,6 +70,4 @@ object EasMinPasswordComplexCharactersResult extends js.Object {
   /** The user is not allowed to change the password. */
   @js.native
   sealed trait userCannotChangePassword extends EasMinPasswordComplexCharactersResult
-  
 }
-

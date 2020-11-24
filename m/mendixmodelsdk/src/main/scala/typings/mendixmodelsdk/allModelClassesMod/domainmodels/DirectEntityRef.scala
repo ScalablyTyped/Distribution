@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.allModelClassesMod.domainmodels
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.EntityWidget
@@ -12,9 +13,10 @@ import typings.mendixmodelsdk.pagesMod.pages.EntityPathSource
 import typings.mendixmodelsdk.pagesMod.pages.NewButton
 import typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector
 import typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.11.0: introduced
@@ -28,23 +30,22 @@ class DirectEntityRef protected ()
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef")
 @js.native
 object DirectEntityRef extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'entityRef' property
@@ -54,6 +55,7 @@ object DirectEntityRef extends js.Object {
     *  7.17.0 and higher
     */
   def createInCreateObjectClientActionUnderEntityRef(container: CreateObjectClientAction): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'entityRef' property
@@ -63,6 +65,7 @@ object DirectEntityRef extends js.Object {
     *  7.11.0 and higher
     */
   def createInEntityPathSourceUnderEntityRef(container: EntityPathSource): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'entityRef' property
@@ -72,6 +75,7 @@ object DirectEntityRef extends js.Object {
     *  7.11.0 and higher
     */
   def createInEntityWidgetUnderEntityRef(container: EntityWidget): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'entityRef' property
@@ -81,6 +85,7 @@ object DirectEntityRef extends js.Object {
     *  7.11.0 to 7.16.0
     */
   def createInNewButtonUnderEntityRef(container: NewButton): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'constrainedByRefs' property
@@ -90,6 +95,7 @@ object DirectEntityRef extends js.Object {
     *  7.11.0 and higher
     */
   def createInReferenceSetSelectorUnderConstrainedByRefs(container: ReferenceSetSelector): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'constrainedByRefs' property
@@ -99,6 +105,7 @@ object DirectEntityRef extends js.Object {
     *  7.11.0 and higher
     */
   def createInSelectorXPathSourceUnderConstrainedByRefs(container: SelectorXPathSource): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * The new DirectEntityRef will be automatically stored in the 'entityRef' property
@@ -108,5 +115,8 @@ object DirectEntityRef extends js.Object {
     *  7.11.0 and higher
     */
   def createInWidgetValueUnderEntityRef(container: WidgetValue): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

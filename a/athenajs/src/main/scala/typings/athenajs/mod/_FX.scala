@@ -3,7 +3,7 @@ package typings.athenajs.mod
 import typings.athenajs.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "_FX")
 @js.native
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * Creates the FX class, adding the linear easing
   */
 class _FX () extends js.Object {
+  
   /**
     * Add a new easing function for other objects to use
     *
@@ -26,10 +27,12 @@ class _FX () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Add a new Effect
     */
   def addFX(fxName: String, FxClass: `0`): Unit = js.native
+  
   /**
     * Retrieves an easing function
     *
@@ -42,10 +45,10 @@ class _FX () extends js.Object {
     /* d */ js.UndefOr[Double], 
     Unit
   ] = js.native
+  
   /**
     * Retrieve an effect Class by its name
     *
     */
   def getEffect(fxName: String): Effect = js.native
 }
-

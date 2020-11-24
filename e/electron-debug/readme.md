@@ -11,8 +11,8 @@ Adds useful debug features to your Electron app
 | Full name          | electron-debug |
 | Keywords           | electron, debug, debugging, devtools, app, dev, development |
 | # releases         | 6 |
-| # dependents       | 99 |
-| # downloads        | 932555 |
+| # dependents       | 107 |
+| # downloads        | 1173264 |
 | # stars            | 8 |
 
 ## Links

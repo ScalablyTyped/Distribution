@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object
-

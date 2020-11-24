@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassChain extends ClassHandler {
+  
   /**
     * 
     * @brief 添加处理器数组
@@ -25,4 +26,3 @@ trait ClassChain extends ClassHandler {
     */
   def append(hdlr: ClassHandler): Unit = js.native
 }
-

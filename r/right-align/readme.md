@@ -11,8 +11,8 @@ Right-align the text in a string.
 | Full name          | right-align |
 | Keywords           | align, align-center, center, center-align, right, right-align, text, typography |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 163526788 |
+| # dependents       | 45 |
+| # downloads        | 135262465 |
 | # stars            | 2 |
 
 ## Links

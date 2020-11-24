@@ -4,7 +4,7 @@ import typings.winrtUwp.Windows.Devices.Geolocation.BasicGeoposition
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a rectangle that defines a geographic area. */
 @JSGlobal("Windows.Devices.Geolocation.GeoboundingBox")
@@ -42,11 +42,11 @@ class GeoboundingBox protected ()
     spatialReferenceId: Double
   ) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Devices.Geolocation.GeoboundingBox")
 @js.native
 object GeoboundingBox extends js.Object {
+  
   /**
     * Calculates a GeoboundingBox that contains the specified set of geographic positions.
     * @param positions A collection of geographic positions to include inside the GeoboundingBox .
@@ -76,4 +76,3 @@ object GeoboundingBox extends js.Object {
     spatialReferenceId: Double
   ): typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox = js.native
 }
-

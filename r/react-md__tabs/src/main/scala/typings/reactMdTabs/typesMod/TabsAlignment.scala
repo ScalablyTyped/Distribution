@@ -2,7 +2,7 @@ package typings.reactMdTabs.typesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactMdTabs.reactMdTabsStrings.left
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.reactMdTabs.reactMdTabsStrings.right
 */
 trait TabsAlignment extends js.Object
-
 object TabsAlignment {
+  
   @scala.inline
   def center: typings.reactMdTabs.reactMdTabsStrings.center = "center".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.center]
+  
   @scala.inline
   def left: typings.reactMdTabs.reactMdTabsStrings.left = "left".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.left]
+  
   @scala.inline
   def right: typings.reactMdTabs.reactMdTabsStrings.right = "right".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.right]
 }
-

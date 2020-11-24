@@ -4,15 +4,16 @@ import typings.protractor.browserMod.ProtractorBrowser
 import typings.protractor.elementMod.ElementFinder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/expectedConditions", JSImport.Namespace)
 @js.native
 object expectedConditionsMod extends js.Object {
+  
   @js.native
   class ProtractorExpectedConditions protected () extends js.Object {
     def this(browser: ProtractorBrowser) = this()
-    var browser: ProtractorBrowser = js.native
+    
     /**
       * Expect an alert to be present.
       *
@@ -26,6 +27,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether an alert is present.
       */
     def alertIsPresent(): js.Function = js.native
+    
     /**
       * Chain a number of expected conditions using logical_and, short circuiting
       * at the first expected condition that evaluates to false.
@@ -45,6 +47,9 @@ object expectedConditionsMod extends js.Object {
       *     evaluates to the result of the logical and.
       */
     def and(args: js.Function*): js.Function = js.native
+    
+    var browser: ProtractorBrowser = js.native
+    
     /**
       * An Expectation for checking an element is visible and enabled such that you
       * can click it.
@@ -61,6 +66,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the element is clickable.
       */
     def elementToBeClickable(elementFinder: ElementFinder): js.Function = js.native
+    
     /**
       * An expectation for checking the selection is selected.
       *
@@ -76,6 +82,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the element is selected.
       */
     def elementToBeSelected(elementFinder: ElementFinder): js.Function = js.native
+    
     /**
       * An expectation for checking that an element is either invisible or not
       * present on the DOM. This is the opposite of 'visibilityOf'.
@@ -92,6 +99,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the element is invisible.
       */
     def invisibilityOf(elementFinder: ElementFinder): js.Function = js.native
+    
     /**
       * Helper function that is equivalent to the logical_and if defaultRet==true,
       * or logical_or if defaultRet==false
@@ -104,6 +112,7 @@ object expectedConditionsMod extends js.Object {
       *     evaluates to the result of the logical chain.
       */
     def logicalChain_(defaultRet: Boolean, fns: js.Array[js.Function]): js.Function = js.native
+    
     /**
       * Negates the result of a promise.
       *
@@ -119,6 +128,7 @@ object expectedConditionsMod extends js.Object {
       * @returns {!function} An expected condition that returns the negated value.
       */
     def not(expectedCondition: js.Function): js.Function = js.native
+    
     /**
       * Chain a number of expected conditions using logical_or, short circuiting
       * at the first expected condition that evaluates to true.
@@ -138,6 +148,7 @@ object expectedConditionsMod extends js.Object {
       *     evaluates to the result of the logical or.
       */
     def or(args: js.Function*): js.Function = js.native
+    
     /**
       * An expectation for checking that an element is present on the DOM
       * of a page. This does not necessarily mean that the element is visible.
@@ -155,6 +166,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the element is present.
       */
     def presenceOf(elementFinder: ElementFinder): js.Function = js.native
+    
     /**
       * An expectation for checking that an element is not attached to the DOM
       * of a page. This is the opposite of 'presenceOf'.
@@ -171,6 +183,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the element is stale.
       */
     def stalenessOf(elementFinder: ElementFinder): js.Function = js.native
+    
     /**
       * An expectation for checking if the given text is present in the
       * element. Returns false if the elementFinder does not find an element.
@@ -188,6 +201,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the text is present in the element.
       */
     def textToBePresentInElement(elementFinder: ElementFinder, text: String): js.Function = js.native
+    
     /**
       * An expectation for checking if the given text is present in the element’s
       * value. Returns false if the elementFinder does not find an element.
@@ -205,6 +219,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the text is present in the element's value.
       */
     def textToBePresentInElementValue(elementFinder: ElementFinder, text: String): js.Function = js.native
+    
     /**
       * An expectation for checking that the title contains a case-sensitive
       * substring.
@@ -221,6 +236,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the title contains the string.
       */
     def titleContains(title: String): js.Function = js.native
+    
     /**
       * An expectation for checking the title of a page.
       *
@@ -236,6 +252,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the title equals the string.
       */
     def titleIs(title: String): js.Function = js.native
+    
     /**
       * An expectation for checking that the URL contains a case-sensitive
       * substring.
@@ -252,6 +269,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the URL contains the string.
       */
     def urlContains(url: String): js.Function = js.native
+    
     /**
       * An expectation for checking the URL of a page.
       *
@@ -267,6 +285,7 @@ object expectedConditionsMod extends js.Object {
       *     representing whether the url equals the string.
       */
     def urlIs(url: String): js.Function = js.native
+    
     /**
       * An expectation for checking that an element is present on the DOM of a
       * page and visible. Visibility means that the element is not only displayed
@@ -287,6 +306,4 @@ object expectedConditionsMod extends js.Object {
       */
     def visibilityOf(elementFinder: ElementFinder): js.Function = js.native
   }
-  
 }
-

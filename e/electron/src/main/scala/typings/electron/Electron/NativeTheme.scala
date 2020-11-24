@@ -7,10 +7,30 @@ import typings.electron.electronStrings.updated
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NativeTheme extends EventEmitter {
+  
+  @JSName("addListener")
+  def addListener_updated(event: updated, listener: js.Function): this.type = js.native
+  
+  // Docs: https://electronjs.org/docs/api/native-theme
+  /**
+    * Emitted when something in the underlying NativeTheme has changed. This normally
+    * means that either the value of `shouldUseDarkColors`,
+    * `shouldUseHighContrastColors` or `shouldUseInvertedColorScheme` has changed. You
+    * will have to check them to determine which one has changed.
+    */
+  @JSName("on")
+  def on_updated(event: updated, listener: js.Function): this.type = js.native
+  
+  @JSName("once")
+  def once_updated(event: updated, listener: js.Function): this.type = js.native
+  
+  @JSName("removeListener")
+  def removeListener_updated(event: updated, listener: js.Function): this.type = js.native
+  
   /**
     * A `Boolean` for if the OS / Chromium currently has a dark mode enabled or is
     * being instructed to show a dark-style UI.  If you want to modify this value you
@@ -18,13 +38,15 @@ trait NativeTheme extends EventEmitter {
     *
     */
   val shouldUseDarkColors: Boolean = js.native
+  
   /**
     * A `Boolean` for if the OS / Chromium currently has high-contrast mode enabled or
-    * is being instructed to show a high-constrast UI.
+    * is being instructed to show a high-contrast UI.
     *
     * @platform darwin,win32
     */
   val shouldUseHighContrastColors: Boolean = js.native
+  
   /**
     * A `Boolean` for if the OS / Chromium currently has an inverted color scheme or
     * is being instructed to use an inverted color scheme.
@@ -32,6 +54,7 @@ trait NativeTheme extends EventEmitter {
     * @platform darwin,win32
     */
   val shouldUseInvertedColorScheme: Boolean = js.native
+  
   /**
     * A `String` property that can be `system`, `light` or `dark`.  It is used to
     * override and supersede the value that Chromium has chosen to use internally.
@@ -70,20 +93,4 @@ trait NativeTheme extends EventEmitter {
     * CSS to apply.
     */
   var themeSource: system | light | dark = js.native
-  @JSName("addListener")
-  def addListener_updated(event: updated, listener: js.Function): this.type = js.native
-  // Docs: http://electronjs.org/docs/api/native-theme
-  /**
-    * Emitted when something in the underlying NativeTheme has changed. This normally
-    * means that either the value of `shouldUseDarkColors`,
-    * `shouldUseHighContrastColors` or `shouldUseInvertedColorScheme` has changed. You
-    * will have to check them to determine which one has changed.
-    */
-  @JSName("on")
-  def on_updated(event: updated, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_updated(event: updated, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_updated(event: updated, listener: js.Function): this.type = js.native
 }
-

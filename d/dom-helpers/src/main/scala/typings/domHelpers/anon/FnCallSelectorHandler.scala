@@ -95,10 +95,11 @@ import typings.domHelpers.domHelpersStrings.waiting
 import typings.domHelpers.domHelpersStrings.wheel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallSelectorHandler extends js.Object {
+  
   def apply(
     selector: String,
     handler: EventHandler[
@@ -106,4 +107,3 @@ trait FnCallSelectorHandler extends js.Object {
     ]
   ): EventHandler[fullscreenchange] = js.native
 }
-

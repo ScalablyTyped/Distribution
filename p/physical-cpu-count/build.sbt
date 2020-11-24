@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "physical-cpu-count"
-version := "2.0-dt-20200427Z-572b35"
+version := "2.0-dt-20200427Z-1b554f"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

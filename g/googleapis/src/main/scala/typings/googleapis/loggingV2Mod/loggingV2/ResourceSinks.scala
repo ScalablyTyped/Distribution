@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2", "logging_v2.Resource$Sinks")
 @js.native
 class ResourceSinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * logging.sinks.create
     * @desc Creates a sink that exports specified log entries to a destination.
@@ -46,6 +48,7 @@ class ResourceSinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogSink]
   ): Unit = js.native
+  
   /**
     * logging.sinks.delete
     * @desc Deletes a sink. If the sink has a unique writer_identity, then that
@@ -75,6 +78,7 @@ class ResourceSinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * logging.sinks.get
     * @desc Gets a sink.
@@ -103,6 +107,7 @@ class ResourceSinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogSink]
   ): Unit = js.native
+  
   /**
     * logging.sinks.list
     * @desc Lists sinks.
@@ -133,6 +138,7 @@ class ResourceSinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSinksResponse]
   ): Unit = js.native
+  
   /**
     * logging.sinks.update
     * @desc Updates a sink. This method replaces the following fields in the
@@ -168,4 +174,3 @@ class ResourceSinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLogSink]
   ): Unit = js.native
 }
-

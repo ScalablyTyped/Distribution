@@ -11,8 +11,8 @@ The perfect library for lists. Supports search, sort, filters and flexibility. B
 | Full name          | list.js |
 | Keywords           | list, search, sort, table, dom, html, ui |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 342798 |
+| # dependents       | 13 |
+| # downloads        | 606115 |
 | # stars            | 3 |
 
 ## Links

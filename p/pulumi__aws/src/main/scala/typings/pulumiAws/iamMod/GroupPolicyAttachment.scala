@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam", "GroupPolicyAttachment")
 @js.native
@@ -23,11 +23,11 @@ class GroupPolicyAttachment protected ()
   def this(name: String, args: GroupPolicyAttachmentArgs) = this()
   def this(name: String, args: GroupPolicyAttachmentArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam", "GroupPolicyAttachment")
 @js.native
 object GroupPolicyAttachment extends js.Object {
+  
   /**
     * Get an existing GroupPolicyAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object GroupPolicyAttachment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.groupPolicyAttachmentMod.GroupPolicyAttachment = js.native
   def get(name: String, id: Input[ID], state: GroupPolicyAttachmentState): typings.pulumiAws.groupPolicyAttachmentMod.GroupPolicyAttachment = js.native
   def get(name: String, id: Input[ID], state: GroupPolicyAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.groupPolicyAttachmentMod.GroupPolicyAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of GroupPolicyAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicyAttachment.GroupPolicyAttachment */ Boolean = js.native
 }
-

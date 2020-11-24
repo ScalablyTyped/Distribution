@@ -10,9 +10,9 @@ borderless text tables with alignment
 | ------------------ | :-------------: |
 | Full name          | text-table |
 | Keywords           | text, table, align, ascii, rows, tabular |
-| # releases         | 1 |
-| # dependents       | 638 |
-| # downloads        | 296072952 |
+| # releases         | 0 |
+| # dependents       | 714 |
+| # downloads        | 424457164 |
 | # stars            | 19 |
 
 ## Links

@@ -5,11 +5,12 @@ import typings.babelTraverse.mod.Scope
 import typings.babelTraverse.mod.TraverseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-core", "traverse")
 @js.native
 object traverse extends js.Object {
+  
   def apply(
     parent: js.Array[typings.babelTraverse.mod.Node],
     opts: TraverseOptions[typings.babelTraverse.mod.Node]
@@ -122,4 +123,3 @@ object traverse extends js.Object {
     parentPath: NodePath[typings.babelTraverse.mod.Node]
   ): Unit = js.native
 }
-

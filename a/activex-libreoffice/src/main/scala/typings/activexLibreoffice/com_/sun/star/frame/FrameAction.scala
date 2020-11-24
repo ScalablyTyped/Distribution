@@ -10,7 +10,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * these are the events which can happen to the components in frames of the desktop
@@ -31,8 +31,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`7`
 */
 trait FrameAction extends js.Object
-
 object FrameAction {
+  
   /**
     * an event of this kind is broadcast whenever a component is attached to a frame
     *
@@ -42,6 +42,7 @@ object FrameAction {
     */
   @scala.inline
   def COMPONENT_ATTACHED: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * an event of this kind is broadcast whenever a component is detaching from a frame
     *
@@ -51,6 +52,7 @@ object FrameAction {
     */
   @scala.inline
   def COMPONENT_DETACHING: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * an event of this kind is broadcast whenever a component is attached to a new model.
     *
@@ -58,6 +60,7 @@ object FrameAction {
     */
   @scala.inline
   def COMPONENT_REATTACHED: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * an event of this kind is broadcast whenever a component changes its internal context (i.e., the selection).
     *
@@ -66,6 +69,7 @@ object FrameAction {
     */
   @scala.inline
   def CONTEXT_CHANGED: `5` = 5.asInstanceOf[`5`]
+  
   /**
     * an event of this kind is broadcast whenever a component gets activated
     *
@@ -74,6 +78,7 @@ object FrameAction {
     */
   @scala.inline
   def FRAME_ACTIVATED: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * an event of this kind is broadcasted immediately before the component is deactivated
     *
@@ -82,12 +87,14 @@ object FrameAction {
     */
   @scala.inline
   def FRAME_DEACTIVATING: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * an event of this kind is broadcast by an active frame when it is getting UI control (tool control).
     * @see XFrame.activate()
     */
   @scala.inline
   def FRAME_UI_ACTIVATED: `6` = 6.asInstanceOf[`6`]
+  
   /**
     * an event of this kind is broadcast by an active frame when it is losing UI control (tool control).
     * @see XFrame.deactivate()
@@ -95,4 +102,3 @@ object FrameAction {
   @scala.inline
   def FRAME_UI_DEACTIVATING: `7` = 7.asInstanceOf[`7`]
 }
-

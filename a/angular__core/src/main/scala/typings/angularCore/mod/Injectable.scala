@@ -6,10 +6,11 @@ import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Injectable extends js.Object {
+  
   /**
     * Determines which injectors will provide the injectable,
     * by either associating it with an `@NgModule` or other `InjectorType`,
@@ -23,8 +24,6 @@ trait Injectable extends js.Object {
     */
   var providedIn: js.UndefOr[Type[_] | root | platform | any | Null] = js.native
 }
-
 @JSImport("@angular/core", "Injectable")
 @js.native
 object Injectable extends TopLevel[InjectableDecorator]
-

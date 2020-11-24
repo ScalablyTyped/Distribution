@@ -3,7 +3,7 @@ package typings.babylonjs.mathMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Path3D")
 @js.native
@@ -34,7 +34,7 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+    firstNormal: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Vector3]],
     raw: Boolean
   ) = this()
   def this(
@@ -42,9 +42,17 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+    firstNormal: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Vector3]],
+    raw: js.UndefOr[scala.Nothing],
+    alignTangentsWithPath: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    firstNormal: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Vector3]],
     raw: Boolean,
     alignTangentsWithPath: Boolean
   ) = this()
 }
-

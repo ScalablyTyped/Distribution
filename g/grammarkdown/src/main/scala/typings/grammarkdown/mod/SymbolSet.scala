@@ -4,7 +4,7 @@ import typings.grammarkdown.tokensMod.SyntaxKind.CloseBraceToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBraceToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "SymbolSet")
 @js.native
@@ -26,4 +26,3 @@ class SymbolSet protected ()
     closeBraceToken: typings.grammarkdown.nodesMod.Token[CloseBraceToken]
   ) = this()
 }
-

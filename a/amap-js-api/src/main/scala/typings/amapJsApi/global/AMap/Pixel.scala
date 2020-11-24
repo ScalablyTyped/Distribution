@@ -2,7 +2,7 @@ package typings.amapJsApi.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Pixel")
 @js.native
@@ -17,4 +17,3 @@ class Pixel protected ()
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, round: Boolean) = this()
 }
-

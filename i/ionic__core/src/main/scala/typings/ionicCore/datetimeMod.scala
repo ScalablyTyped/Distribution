@@ -8,33 +8,46 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/datetime/datetime", JSImport.Namespace)
 @js.native
 object datetimeMod extends js.Object {
+  
   @js.native
   class Datetime () extends ComponentInterface {
+    
     var buttonEl: js.Any = js.native
+    
     var calcMinMax: js.Any = js.native
+    
     /**
       * The text to display on the picker's cancel button.
       */
     var cancelText: String = js.native
+    
+    @JSName("componentWillLoad")
+    def componentWillLoad_MDatetime(): Unit = js.native
+    
     var datetimeMax: js.Any = js.native
+    
     var datetimeMin: js.Any = js.native
+    
     var datetimeValue: js.Any = js.native
+    
     /**
       * Full day of the week names. This can be used to provide
       * locale names for each day in the week. Defaults to English.
       */
     var dayNames: js.UndefOr[js.Array[String] | String] = js.native
+    
     /**
       * Short abbreviated day of the week names. This can be used to provide
       * locale names for each day in the week. Defaults to English.
       * Defaults to: `['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']`
       */
     var dayShortNames: js.UndefOr[js.Array[String] | String] = js.native
+    
     /**
       * Values used to create the list of selectable days. By default
       * every day is shown for the given month. However, to control exactly which days of
@@ -44,10 +57,14 @@ object datetimeMod extends js.Object {
       * days which are not valid for the selected month.
       */
     var dayValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+    
     /**
       * If `true`, the user cannot interact with the datetime.
       */
     var disabled: Boolean = js.native
+    
+    /* protected */ def disabledChanged(): Unit = js.native
+    
     /**
       * The display format of the date and time as text that shows
       * within the item. When the `pickerFormat` input is not used, then the
@@ -56,6 +73,7 @@ object datetimeMod extends js.Object {
       * more info. Defaults to `MMM D, YYYY`.
       */
     var displayFormat: String = js.native
+    
     /**
       * The timezone to use for display purposes only. See
       * [Date.prototype.toLocaleString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
@@ -63,15 +81,22 @@ object datetimeMod extends js.Object {
       * component will default to displaying times in the user's local timezone.
       */
     var displayTimezone: js.UndefOr[String] = js.native
+    
     /**
       * The text to display on the picker's "Done" button.
       */
     var doneText: String = js.native
+    
     var el: HTMLIonDatetimeElement = js.native
+    
     var emitStyle: js.Any = js.native
+    
     var generateColumns: js.Any = js.native
+    
     var generatePickerOptions: js.Any = js.native
+    
     var hasValue: js.Any = js.native
+    
     /**
       * Values used to create the list of selectable hours. By default
       * the hour values range from `0` to `23` for 24-hour, or `1` to `12` for 12-hour. However,
@@ -79,30 +104,39 @@ object datetimeMod extends js.Object {
       * array of numbers, or a string of comma separated numbers.
       */
     var hourValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+    
     var inputId: js.Any = js.native
+    
     /**
       * Emitted when the datetime loses focus.
       */
     var ionBlur: EventEmitter[Unit] = js.native
+    
     /**
       * Emitted when the datetime selection was cancelled.
       */
     var ionCancel: EventEmitter[Unit] = js.native
+    
     /**
       * Emitted when the value (selected date) has changed.
       */
     var ionChange: EventEmitter[DatetimeChangeEventDetail] = js.native
+    
     /**
       * Emitted when the datetime has focus.
       */
     var ionFocus: EventEmitter[Unit] = js.native
+    
     /**
       * Emitted when the styles change.
       * @internal
       */
     var ionStyle: EventEmitter[StyleEventDetail] = js.native
+    
     var isExpanded: Boolean = js.native
+    
     var locale: js.Any = js.native
+    
     /**
       * The maximum datetime allowed. Value must be a date string
       * following the
@@ -112,6 +146,7 @@ object datetimeMod extends js.Object {
       * Defaults to the end of this year.
       */
     var max: js.UndefOr[String] = js.native
+    
     /**
       * The minimum datetime allowed. Value must be a date string
       * following the
@@ -121,6 +156,7 @@ object datetimeMod extends js.Object {
       * Defaults to the beginning of the year, 100 years ago from today.
       */
     var min: js.UndefOr[String] = js.native
+    
     /**
       * Values used to create the list of selectable minutes. By default
       * the minutes range from `0` to `59`. However, to control exactly which minutes to display,
@@ -129,16 +165,19 @@ object datetimeMod extends js.Object {
       * then this input value would be `minuteValues="0,15,30,45"`.
       */
     var minuteValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+    
     /**
       * Full names for each month name. This can be used to provide
       * locale month names. Defaults to English.
       */
     var monthNames: js.UndefOr[js.Array[String] | String] = js.native
+    
     /**
       * Short abbreviated names for each month name. This can be used to provide
       * locale month names. Defaults to English.
       */
     var monthShortNames: js.UndefOr[js.Array[String] | String] = js.native
+    
     /**
       * Values used to create the list of selectable months. By default
       * the month values range from `1` to `12`. However, to control exactly which months to
@@ -148,13 +187,23 @@ object datetimeMod extends js.Object {
       * zero-based index, meaning January's value is `1`, and December's is `12`.
       */
     var monthValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+    
     /**
       * The name of the control, which is submitted with the form data.
       */
     var name: String = js.native
+    
     var onBlur: js.Any = js.native
+    
     var onClick: js.Any = js.native
+    
     var onFocus: js.Any = js.native
+    
+    /**
+      * Opens the datetime overlay.
+      */
+    def open(): js.Promise[Unit] = js.native
+    
     /**
       * The format of the date and time picker columns the user selects.
       * A datetime input can have one or many datetime parts, each getting their
@@ -164,28 +213,47 @@ object datetimeMod extends js.Object {
       * parse format. Defaults to use `displayFormat`.
       */
     var pickerFormat: js.UndefOr[String] = js.native
+    
     /**
       * Any additional options that the picker interface can accept.
       * See the [Picker API docs](../picker) for the picker options.
       */
     var pickerOptions: js.UndefOr[DatetimeOptions] = js.native
+    
     /**
       * The text to display when there's no date selected yet.
       * Using lowercase to match the input attribute
       */
     var placeholder: js.UndefOr[String | Null] = js.native
+    
     /**
       * If `true`, the datetime appears normal but is not interactive.
       */
     var readonly: Boolean = js.native
+    
+    @JSName("render")
+    def render_MDatetime(): js.Any = js.native
+    
     var setFocus: js.Any = js.native
+    
+    /* private */ def text: js.Any = js.native
+    
     var updateDatetimeValue: js.Any = js.native
+    
     var validateColumn: js.Any = js.native
+    
     var validateColumns: js.Any = js.native
+    
     /**
       * The value of the datetime as a valid ISO 8601 datetime string.
       */
     var value: js.UndefOr[String | Null] = js.native
+    
+    /**
+      * Update the datetime value when the value changes
+      */
+    /* protected */ def valueChanged(): Unit = js.native
+    
     /**
       * Values used to create the list of selectable years. By default
       * the year values range between the `min` and `max` datetime inputs. However, to
@@ -194,21 +262,5 @@ object datetimeMod extends js.Object {
       * recent leap years, then this input's value would be `yearValues="2024,2020,2016,2012,2008"`.
       */
     var yearValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
-    @JSName("componentWillLoad")
-    def componentWillLoad_MDatetime(): Unit = js.native
-    /* protected */ def disabledChanged(): Unit = js.native
-    /**
-      * Opens the datetime overlay.
-      */
-    def open(): js.Promise[Unit] = js.native
-    @JSName("render")
-    def render_MDatetime(): js.Any = js.native
-    /* private */ def text: js.Any = js.native
-    /**
-      * Update the datetime value when the value changes
-      */
-    /* protected */ def valueChanged(): Unit = js.native
   }
-  
 }
-

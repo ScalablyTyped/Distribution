@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.HeatMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextDecoration extends js.Object
-
 @JSGlobal("ej.datavisualization.HeatMap.TextDecoration")
 @js.native
 object TextDecoration extends js.Object {
+  
   //Defines a line through the text
   @js.native
   sealed trait LineThrough extends TextDecoration
@@ -25,6 +25,4 @@ object TextDecoration extends js.Object {
   //Defines a line below the text
   @js.native
   sealed trait Underline extends TextDecoration
-  
 }
-

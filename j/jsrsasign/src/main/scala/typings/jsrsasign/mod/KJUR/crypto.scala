@@ -16,11 +16,83 @@ import typings.jsrsasign.jsrsasignStrings.SIGN
 import typings.jsrsasign.jsrsasignStrings.VERIFY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "KJUR.crypto")
 @js.native
 object crypto extends js.Object {
+  
+  /**
+    * Cipher class to encrypt and decrypt data
+    * @param params parameters for constructor
+    * @description
+    * Here is supported canonicalized cipher algorithm names and its standard names:
+    * - RSA - RSA/ECB/PKCS1Padding (default for RSAKey)
+    * - RSAOAEP - RSA/ECB/OAEPWithSHA-1AndMGF1Padding
+    * - RSAOAEP224 - RSA/ECB/OAEPWithSHA-224AndMGF1Padding(*)
+    * - RSAOAEP256 - RSA/ECB/OAEPWithSHA-256AndMGF1Padding
+    * - RSAOAEP384 - RSA/ECB/OAEPWithSHA-384AndMGF1Padding(*)
+    * - RSAOAEP512 - RSA/ECB/OAEPWithSHA-512AndMGF1Padding(*)
+    * NOTE: (*) is not supported in Java JCE.
+    * Currently this class supports only RSA encryption and decryption.
+    * However it is planning to implement also symmetric ciphers near in the future.
+    * @example
+    */
+  @js.native
+  object Cipher extends js.Object {
+    
+    def decrypt(hex: String, keyObj: String, algName: String): String = js.native
+    /**
+      * decrypt encrypted hexadecimal string with specified key and algorithm
+      * @param hex hexadecial string of encrypted message
+      * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
+      * @param algName short/long algorithm name for encryption/decryption
+      * @return hexadecimal encrypted string
+      * @description
+      * This static method decrypts encrypted hexadecimal string with specified key and algorithm.
+      * @example
+      * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj) → "1abc2d..."
+      * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj, "RSAOAEP) → "23ab02..."
+      */
+    def decrypt(hex: String, keyObj: RSAKey, algName: String): String = js.native
+    
+    def encrypt(s: String, keyObj: String, algName: String): String = js.native
+    /**
+      * encrypt raw string by specified key and algorithm
+      * @param s input string to encrypt
+      * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
+      * @param algName short/long algorithm name for encryption/decryption
+      * @return hexadecimal encrypted string
+      * @description
+      * This static method encrypts raw string with specified key and algorithm.
+      * @example
+      * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj) → "1abc2d..."
+      * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj, "RSAOAEP") → "23ab02..."
+      */
+    def encrypt(s: String, keyObj: RSAKey, algName: String): String = js.native
+    
+    def getAlgByKeyAndName(keyObj: String, algName: String): String = js.native
+    /**
+      * get canonicalized encrypt/decrypt algorithm name by key and short/long algorithm name
+      * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
+      * @param algName short/long algorithm name for encryption/decryption
+      * @return canonicalized algorithm name for encryption/decryption
+      * @description
+      * Here is supported canonicalized cipher algorithm names and its standard names:
+      * - RSA - RSA/ECB/PKCS1Padding (default for RSAKey)
+      * - RSAOAEP - RSA/ECB/OAEPWithSHA-1AndMGF1Padding
+      * - RSAOAEP224 - RSA/ECB/OAEPWithSHA-224AndMGF1Padding(*)
+      * - RSAOAEP256 - RSA/ECB/OAEPWithSHA-256AndMGF1Padding
+      * - RSAOAEP384 - RSA/ECB/OAEPWithSHA-384AndMGF1Padding(*)
+      * - RSAOAEP512 - RSA/ECB/OAEPWithSHA-512AndMGF1Padding(*)
+      * NOTE: (*) is not supported in Java JCE.
+      * @example
+      * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey) → "RSA"
+      * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey, "RSAOAEP") → "RSAOAEP"
+      */
+    def getAlgByKeyAndName(keyObj: RSAKey, algName: String): String = js.native
+  }
+  
   /**
     * class for DSA signing and verification
     * @description
@@ -57,6 +129,123 @@ object crypto extends js.Object {
   class ECDSA ()
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA {
     def this(publicKey: Curve) = this()
+  }
+  /* static members */
+  @js.native
+  object ECDSA extends js.Object {
+    
+    /**
+      * convert hexadecimal ASN.1 encoded signature to concatinated signature
+      * @param asn1Hex hexadecimal string of ASN.1 encoded ECDSA signature value
+      * @return r-s concatinated format of ECDSA signature value
+      */
+    def asn1SigToConcatSig(asn1Sig: String): String = js.native
+    
+    /**
+      * convert R and S BigInteger object of signature to ASN.1 encoded signature
+      * @param biR BigInteger object of R field of ECDSA signature value
+      * @param biS BIgInteger object of S field of ECDSA signature value
+      * @return hexadecimal string of ASN.1 encoded ECDSA signature value
+      */
+    def biRSSigToASN1Sig(biR: BigInteger, biS: BigInteger): String = js.native
+    
+    /**
+      * convert hexadecimal concatinated signature to ASN.1 encoded signature
+      * @param concatSig r-s concatinated format of ECDSA signature value
+      * @return hexadecimal string of ASN.1 encoded ECDSA signature value
+      */
+    def concatSigToASN1Sig(concatSig: String): String = js.native
+    
+    /**
+      * static method to get normalized EC curve name from curve name or hexadecimal OID value
+      * @param s curve name (ex. P-256) or hexadecimal OID value (ex. 2a86...)
+      * @return normalized EC curve name (ex. secp256r1)
+      * @description
+      * This static method returns normalized EC curve name
+      * which is supported in jsrsasign
+      * from curve name or hexadecimal OID value.
+      * When curve is not supported in jsrsasign, this method returns null.
+      * Normalized name will be "secp*" in jsrsasign.
+      * @example
+      * KJUR.crypto.ECDSA.getName("2b8104000a") → "secp256k1"
+      * KJUR.crypto.ECDSA.getName("NIST P-256") → "secp256r1"
+      * KJUR.crypto.ECDSA.getName("P-521") → undefined // not supported
+      */
+    def getName(s: String): String = js.native
+    
+    /**
+      * convert hexadecimal R and S value of signature to ASN.1 encoded signature
+      * @param hR hexadecimal string of R field of ECDSA signature value
+      * @param hS hexadecimal string of S field of ECDSA signature value
+      * @return hexadecimal string of ASN.1 encoded ECDSA signature value
+      */
+    def hexRSSigToASN1Sig(hR: String, hS: String): String = js.native
+  }
+  
+  /**
+    * static object for elliptic curve names and parameters
+    * @description
+    * This class provides parameters for named elliptic curves.
+    * Currently it supoprts following curve names and aliases however
+    * the name marked (*) are available for `KJUR.crypto.ECDSA` and
+    * `KJUR.crypto.Signature` classes.
+    *
+    * - secp128r1
+    * - secp160r1
+    * - secp160k1
+    * - secp192r1
+    * - secp192k1
+    * - secp224r1
+    * - secp256r1, NIST P-256, P-256, prime256v1 (*)
+    * - secp256k1 (*)
+    * - secp384r1, NIST P-384, P-384 (*)
+    * - secp521r1, NIST P-521, P-521
+    *
+    * You can register new curves by using the 'regist' method.
+    */
+  @js.native
+  object ECParameterDB extends js.Object {
+    
+    /**
+      * get curve inforamtion associative array for curve name or alias
+      * @param nameOrAlias curve name or alias name
+      * @return associative array of curve parameters
+      * @example
+      * var param = KJUR.crypto.ECParameterDB.getByName('prime256v1');
+      * var keylen = param['keylen'];
+      * var n = param['n'];
+      */
+    def getByName(nameOrAlias: String): ECParameter = js.native
+    
+    /**
+      * register new curve
+      * @param name name of curve
+      * @param keylen key length
+      * @param pHex hexadecimal value of p
+      * @param aHex hexadecimal value of a
+      * @param bHex hexadecimal value of b
+      * @param nHex hexadecimal value of n
+      * @param hHex hexadecimal value of h
+      * @param gxHex hexadecimal value of Gx
+      * @param gyHex hexadecimal value of Gy
+      * @param aliasList array of string for curve names aliases
+      * @param oid Object Identifier for the curve
+      * @param info information string for the curve
+      */
+    def regist(
+      name: String,
+      keylen: Double,
+      pHex: String,
+      aHex: String,
+      bHex: String,
+      nHex: String,
+      hHex: String,
+      gxHex: String,
+      gyHex: String,
+      aliasList: js.Array[String],
+      oid: String,
+      info: String
+    ): Unit = js.native
   }
   
   /**
@@ -131,6 +320,47 @@ object crypto extends js.Object {
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.MessageDigest {
     def this(params: Prov) = this()
   }
+  /* static members */
+  @js.native
+  object MessageDigest extends js.Object {
+    
+    /** static Array of resulted byte length of hash (ex. HASHLENGTH["sha1"] == 20) */
+    val HASHLENGTH: Md5 = js.native
+    
+    /**
+      * get canonical hash algorithm name
+      * @param alg hash algorithm name (ex. MD5, SHA-1, SHA1, SHA512 et.al.)
+      * @return canonical hash algorithm name
+      * @description
+      * This static method normalizes from any hash algorithm name such as
+      * "SHA-1", "SHA1", "MD5", "sha512" to lower case name without hyphens
+      * such as "sha1".
+      * @example
+      * KJUR.crypto.MessageDigest.getCanonicalAlgName("SHA-1") → "sha1"
+      * KJUR.crypto.MessageDigest.getCanonicalAlgName("MD5")   → "md5"
+      */
+    def getCanonicalAlgName(alg: String): String = js.native
+    
+    /**
+      * get resulted hash byte length for specified algorithm name
+      * @param alg non-canonicalized hash algorithm name (ex. MD5, SHA-1, SHA1, SHA512 et.al.)
+      * @return resulted hash byte length
+      * @description
+      * This static method returns resulted byte length for specified algorithm name such as "SHA-1".
+      * @example
+      * KJUR.crypto.MessageDigest.getHashLength("SHA-1") → 20
+      * KJUR.crypto.MessageDigest.getHashLength("sha1") → 20
+      */
+    def getHashLength(alg: String): Double = js.native
+  }
+  
+  /** static object for cryptographic function utilities */
+  @js.native
+  object OID extends js.Object {
+    
+    /** key value of hexadecimal OID and its name (ex. '2a8648ce3d030107' and 'secp256r1') */
+    val oidhex2name: `2a864886f70d010101` = js.native
+  }
   
   /**
     * Signature class which is very similar to java.security.Signature class
@@ -201,227 +431,10 @@ object crypto extends js.Object {
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.Signature {
     def this(params: `0`) = this()
   }
-  
-  /**
-    * Cipher class to encrypt and decrypt data
-    * @param params parameters for constructor
-    * @description
-    * Here is supported canonicalized cipher algorithm names and its standard names:
-    * - RSA - RSA/ECB/PKCS1Padding (default for RSAKey)
-    * - RSAOAEP - RSA/ECB/OAEPWithSHA-1AndMGF1Padding
-    * - RSAOAEP224 - RSA/ECB/OAEPWithSHA-224AndMGF1Padding(*)
-    * - RSAOAEP256 - RSA/ECB/OAEPWithSHA-256AndMGF1Padding
-    * - RSAOAEP384 - RSA/ECB/OAEPWithSHA-384AndMGF1Padding(*)
-    * - RSAOAEP512 - RSA/ECB/OAEPWithSHA-512AndMGF1Padding(*)
-    * NOTE: (*) is not supported in Java JCE.
-    * Currently this class supports only RSA encryption and decryption.
-    * However it is planning to implement also symmetric ciphers near in the future.
-    * @example
-    */
-  @js.native
-  object Cipher extends js.Object {
-    def decrypt(hex: String, keyObj: String, algName: String): String = js.native
-    /**
-      * decrypt encrypted hexadecimal string with specified key and algorithm
-      * @param hex hexadecial string of encrypted message
-      * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
-      * @param algName short/long algorithm name for encryption/decryption
-      * @return hexadecimal encrypted string
-      * @description
-      * This static method decrypts encrypted hexadecimal string with specified key and algorithm.
-      * @example
-      * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj) → "1abc2d..."
-      * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj, "RSAOAEP) → "23ab02..."
-      */
-    def decrypt(hex: String, keyObj: RSAKey, algName: String): String = js.native
-    def encrypt(s: String, keyObj: String, algName: String): String = js.native
-    /**
-      * encrypt raw string by specified key and algorithm
-      * @param s input string to encrypt
-      * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
-      * @param algName short/long algorithm name for encryption/decryption
-      * @return hexadecimal encrypted string
-      * @description
-      * This static method encrypts raw string with specified key and algorithm.
-      * @example
-      * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj) → "1abc2d..."
-      * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj, "RSAOAEP") → "23ab02..."
-      */
-    def encrypt(s: String, keyObj: RSAKey, algName: String): String = js.native
-    def getAlgByKeyAndName(keyObj: String, algName: String): String = js.native
-    /**
-      * get canonicalized encrypt/decrypt algorithm name by key and short/long algorithm name
-      * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
-      * @param algName short/long algorithm name for encryption/decryption
-      * @return canonicalized algorithm name for encryption/decryption
-      * @description
-      * Here is supported canonicalized cipher algorithm names and its standard names:
-      * - RSA - RSA/ECB/PKCS1Padding (default for RSAKey)
-      * - RSAOAEP - RSA/ECB/OAEPWithSHA-1AndMGF1Padding
-      * - RSAOAEP224 - RSA/ECB/OAEPWithSHA-224AndMGF1Padding(*)
-      * - RSAOAEP256 - RSA/ECB/OAEPWithSHA-256AndMGF1Padding
-      * - RSAOAEP384 - RSA/ECB/OAEPWithSHA-384AndMGF1Padding(*)
-      * - RSAOAEP512 - RSA/ECB/OAEPWithSHA-512AndMGF1Padding(*)
-      * NOTE: (*) is not supported in Java JCE.
-      * @example
-      * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey) → "RSA"
-      * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey, "RSAOAEP") → "RSAOAEP"
-      */
-    def getAlgByKeyAndName(keyObj: RSAKey, algName: String): String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ECDSA extends js.Object {
-    /**
-      * convert hexadecimal ASN.1 encoded signature to concatinated signature
-      * @param asn1Hex hexadecimal string of ASN.1 encoded ECDSA signature value
-      * @return r-s concatinated format of ECDSA signature value
-      */
-    def asn1SigToConcatSig(asn1Sig: String): String = js.native
-    /**
-      * convert R and S BigInteger object of signature to ASN.1 encoded signature
-      * @param biR BigInteger object of R field of ECDSA signature value
-      * @param biS BIgInteger object of S field of ECDSA signature value
-      * @return hexadecimal string of ASN.1 encoded ECDSA signature value
-      */
-    def biRSSigToASN1Sig(biR: BigInteger, biS: BigInteger): String = js.native
-    /**
-      * convert hexadecimal concatinated signature to ASN.1 encoded signature
-      * @param concatSig r-s concatinated format of ECDSA signature value
-      * @return hexadecimal string of ASN.1 encoded ECDSA signature value
-      */
-    def concatSigToASN1Sig(concatSig: String): String = js.native
-    /**
-      * static method to get normalized EC curve name from curve name or hexadecimal OID value
-      * @param s curve name (ex. P-256) or hexadecimal OID value (ex. 2a86...)
-      * @return normalized EC curve name (ex. secp256r1)
-      * @description
-      * This static method returns normalized EC curve name
-      * which is supported in jsrsasign
-      * from curve name or hexadecimal OID value.
-      * When curve is not supported in jsrsasign, this method returns null.
-      * Normalized name will be "secp*" in jsrsasign.
-      * @example
-      * KJUR.crypto.ECDSA.getName("2b8104000a") → "secp256k1"
-      * KJUR.crypto.ECDSA.getName("NIST P-256") → "secp256r1"
-      * KJUR.crypto.ECDSA.getName("P-521") → undefined // not supported
-      */
-    def getName(s: String): String = js.native
-    /**
-      * convert hexadecimal R and S value of signature to ASN.1 encoded signature
-      * @param hR hexadecimal string of R field of ECDSA signature value
-      * @param hS hexadecimal string of S field of ECDSA signature value
-      * @return hexadecimal string of ASN.1 encoded ECDSA signature value
-      */
-    def hexRSSigToASN1Sig(hR: String, hS: String): String = js.native
-  }
-  
-  /**
-    * static object for elliptic curve names and parameters
-    * @description
-    * This class provides parameters for named elliptic curves.
-    * Currently it supoprts following curve names and aliases however
-    * the name marked (*) are available for `KJUR.crypto.ECDSA` and
-    * `KJUR.crypto.Signature` classes.
-    *
-    * - secp128r1
-    * - secp160r1
-    * - secp160k1
-    * - secp192r1
-    * - secp192k1
-    * - secp224r1
-    * - secp256r1, NIST P-256, P-256, prime256v1 (*)
-    * - secp256k1 (*)
-    * - secp384r1, NIST P-384, P-384 (*)
-    * - secp521r1, NIST P-521, P-521
-    *
-    * You can register new curves by using the 'regist' method.
-    */
-  @js.native
-  object ECParameterDB extends js.Object {
-    /**
-      * get curve inforamtion associative array for curve name or alias
-      * @param nameOrAlias curve name or alias name
-      * @return associative array of curve parameters
-      * @example
-      * var param = KJUR.crypto.ECParameterDB.getByName('prime256v1');
-      * var keylen = param['keylen'];
-      * var n = param['n'];
-      */
-    def getByName(nameOrAlias: String): ECParameter = js.native
-    /**
-      * register new curve
-      * @param name name of curve
-      * @param keylen key length
-      * @param pHex hexadecimal value of p
-      * @param aHex hexadecimal value of a
-      * @param bHex hexadecimal value of b
-      * @param nHex hexadecimal value of n
-      * @param hHex hexadecimal value of h
-      * @param gxHex hexadecimal value of Gx
-      * @param gyHex hexadecimal value of Gy
-      * @param aliasList array of string for curve names aliases
-      * @param oid Object Identifier for the curve
-      * @param info information string for the curve
-      */
-    def regist(
-      name: String,
-      keylen: Double,
-      pHex: String,
-      aHex: String,
-      bHex: String,
-      nHex: String,
-      hHex: String,
-      gxHex: String,
-      gyHex: String,
-      aliasList: js.Array[String],
-      oid: String,
-      info: String
-    ): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MessageDigest extends js.Object {
-    /** static Array of resulted byte length of hash (ex. HASHLENGTH["sha1"] == 20) */
-    val HASHLENGTH: Md5 = js.native
-    /**
-      * get canonical hash algorithm name
-      * @param alg hash algorithm name (ex. MD5, SHA-1, SHA1, SHA512 et.al.)
-      * @return canonical hash algorithm name
-      * @description
-      * This static method normalizes from any hash algorithm name such as
-      * "SHA-1", "SHA1", "MD5", "sha512" to lower case name without hyphens
-      * such as "sha1".
-      * @example
-      * KJUR.crypto.MessageDigest.getCanonicalAlgName("SHA-1") → "sha1"
-      * KJUR.crypto.MessageDigest.getCanonicalAlgName("MD5")   → "md5"
-      */
-    def getCanonicalAlgName(alg: String): String = js.native
-    /**
-      * get resulted hash byte length for specified algorithm name
-      * @param alg non-canonicalized hash algorithm name (ex. MD5, SHA-1, SHA1, SHA512 et.al.)
-      * @return resulted hash byte length
-      * @description
-      * This static method returns resulted byte length for specified algorithm name such as "SHA-1".
-      * @example
-      * KJUR.crypto.MessageDigest.getHashLength("SHA-1") → 20
-      * KJUR.crypto.MessageDigest.getHashLength("sha1") → 20
-      */
-    def getHashLength(alg: String): Double = js.native
-  }
-  
-  /** static object for cryptographic function utilities */
-  @js.native
-  object OID extends js.Object {
-    /** key value of hexadecimal OID and its name (ex. '2a8648ce3d030107' and 'secp256r1') */
-    val oidhex2name: `2a864886f70d010101` = js.native
-  }
-  
   /* static members */
   @js.native
   object Signature extends js.Object {
+    
     /** Current state of this signature object whether 'SIGN', 'VERIFY' or null */
     val state: SIGN | VERIFY | Null = js.native
   }
@@ -429,11 +442,15 @@ object crypto extends js.Object {
   /** static object for cryptographic function utilities */
   @js.native
   object Util extends js.Object {
+    
     var CRYPTOJSMESSAGEDIGESTNAME: Ripemd160 = js.native
+    
     /** associative array of default provider name for each hash and signature algorithms */
     var DEFAULTPROVIDER: Hmacmd5 = js.native
+    
     /** PKCS#1 DigestInfo heading hexadecimal bytes for each hash algorithms */
     var DIGESTINFOHEAD: Md2 = js.native
+    
     /**
       * get hexadecimal DigestInfo
       * @param hHash hexadecimal hash value
@@ -441,6 +458,7 @@ object crypto extends js.Object {
       * @return hexadecimal string DigestInfo ASN.1 structure
       */
     def getDigestInfoHex(hHash: String, alg: String): String = js.native
+    
     /**
       * get PKCS#1 padded hexadecimal DigestInfo
       * @param hHash hexadecimal hash value of message to be signed
@@ -449,6 +467,7 @@ object crypto extends js.Object {
       * @return hexadecimal string of PKCS#1 padded DigestInfo
       */
     def getPaddedDigestInfoHex(hHash: String, alg: String, keySize: Double): String = js.native
+    
     /**
       * get BigInteger object of random value from min value to max value
       * @param biMin min value of BigInteger object for random value
@@ -464,6 +483,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomBigIntegerMinToMax(biMin, biMax) → 32f1... of BigInteger
       */
     def getRandomBigIntegerMinToMax(biMin: Double, biMax: Double): BigInteger = js.native
+    
     /**
       * get BigInteger object of random value from with specified bit length
       * @param n length of bits of random
@@ -473,6 +493,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomBigIntegerOfNbits(1024) → 8fbc... of BigInteger
       */
     def getRandomBigIntegerOfNbits(n: Double): BigInteger = js.native
+    
     /**
       * get BigInteger object of random value from with specified byte length
       * @param n length of bytes of random
@@ -482,6 +503,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomBigIntegerOfNbytes(128) → 8fbc... of BigInteger
       */
     def getRandomBigIntegerOfNbytes(n: Double): BigInteger = js.native
+    
     /**
       * get BigInteger object of random value from zero to max value
       * @param biMax max value of BigInteger object for random value
@@ -495,6 +517,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomBigIntegerZeroToMax(biMax) → 8fbc... of BigInteger
       */
     def getRandomBigIntegerZeroToMax(biMax: Double): BigInteger = js.native
+    
     /**
       * get hexadecimal string of random value from with specified bit length
       * @param n length of bits of random
@@ -504,6 +527,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomHexOfNbits(1024) → "8fbc..." in 1024bits
       */
     def getRandomHexOfNbits(n: Double): String = js.native
+    
     /**
       * get hexadecimal string of random value from with specified byte length
       * @param n length of bytes of random
@@ -513,6 +537,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomHexOfNbytes(128) → "8fbc..." in 1024bits
       */
     def getRandomHexOfNbytes(n: Double): String = js.native
+    
     /**
       * get hexadecimal hash of hexadecimal string with specified algorithm
       * @param sHex input hexadecimal string to be hashed
@@ -520,6 +545,7 @@ object crypto extends js.Object {
       * @return hexadecimal string of hash value
       */
     def hashHex(sHex: String, alg: String): String = js.native
+    
     /**
       * get hexadecimal hash of string with specified algorithm
       * @param s input string to be hashed
@@ -527,6 +553,7 @@ object crypto extends js.Object {
       * @return hexadecimal string of hash value
       */
     def hashString(s: String, alg: String): String = js.native
+    
     /**
       * get hexadecimal MD5 hash of string
       * @param s input string to be hashed
@@ -535,6 +562,7 @@ object crypto extends js.Object {
       * Util.md5('aaa') → 47bce5c74f589f4867dbd57e9ca9f808
       */
     def md5(s: String): String = js.native
+    
     /**
       * get hexadecimal RIPEMD160 hash of string
       * @param s input string to be hashed
@@ -543,19 +571,23 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.ripemd160("aaa") → 08889bd7b151aa174c21f33f59147fa65381edea
       */
     def ripemd160(s: String): String = js.native
+    
     /**
       * get hexadecimal SHA1 hash of string
       * @param s input string to be hashed
       * @return hexadecimal string of hash value
       */
     def sha1(s: String): String = js.native
+    
     /**
       * get hexadecimal SHA256 hash of string
       * @param s input string to be hashed
       * @return hexadecimal string of hash value
       */
     def sha256(s: String): String = js.native
+    
     def sha256Hex(s: String): String = js.native
+    
     /**
       * get hexadecimal SHA512 hash of string
       * @param s input string to be hashed
@@ -563,6 +595,4 @@ object crypto extends js.Object {
       */
     def sha512(s: String): String = js.native
   }
-  
 }
-

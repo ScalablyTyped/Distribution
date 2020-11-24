@@ -6,12 +6,14 @@ import typings.jupyterlabApplication.anon.AppSettings
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface for URL and directory paths used by a Jupyter front-end.
   */
+@js.native
 trait IPaths extends js.Object {
+  
   /**
     * The server directories used by the application, for user information
     * only.
@@ -28,17 +30,16 @@ trait IPaths extends js.Object {
     * these paths in a request to the server (it would be better to write a
     * server extension to handle these cases).
     */
-  val directories: AppSettings
+  val directories: AppSettings = js.native
+  
   /**
     * The urls used by the application.
     */
-  val urls: App
+  val urls: App = js.native
 }
-
 /**
   * The application paths dictionary token.
   */
 @JSImport("@jupyterlab/application/lib/frontend", "JupyterFrontEnd.IPaths")
 @js.native
 object IPaths extends TopLevel[Token[IPaths]]
-

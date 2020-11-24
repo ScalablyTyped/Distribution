@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Debugger$Debuggees")
 @js.native
 class ResourceDebuggerDebuggees protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var breakpoints: ResourceDebuggerDebuggeesBreakpoints = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * clouddebugger.debugger.debuggees.list
     * @desc Lists all the debuggees that the user has access to.
@@ -96,4 +99,3 @@ class ResourceDebuggerDebuggees protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListDebuggeesResponse]
   ): Unit = js.native
 }
-

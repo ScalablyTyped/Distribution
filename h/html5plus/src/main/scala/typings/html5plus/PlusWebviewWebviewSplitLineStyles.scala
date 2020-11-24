@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 窗口标题栏控件的分割线样式
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusWebviewWebviewSplitLineStyles extends js.Object {
+  
   /**
     * 底部分割线颜色
     * 可取值： "#RRGGBB"格式字符串，如"#FF0000"表示绘制红色分割线；
@@ -21,6 +22,7 @@ trait PlusWebviewWebviewSplitLineStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var color: js.UndefOr[String] = js.native
+  
   /**
     * 底部分割线高度
     * 可取值：像素值（逻辑像素），支持小数点，如"1px"表示1像素高；百分比，如"1%"，相对于标题栏控件的高度。
@@ -30,33 +32,39 @@ trait PlusWebviewWebviewSplitLineStyles extends js.Object {
     */
   var height: js.UndefOr[String] = js.native
 }
-
 object PlusWebviewWebviewSplitLineStyles {
+  
   @scala.inline
   def apply(): PlusWebviewWebviewSplitLineStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewSplitLineStyles]
   }
+  
   @scala.inline
   implicit class PlusWebviewWebviewSplitLineStylesOps[Self <: PlusWebviewWebviewSplitLineStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColor: Self = this.set("color", js.undefined)
+    
     @scala.inline
     def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
   }
-  
 }
-

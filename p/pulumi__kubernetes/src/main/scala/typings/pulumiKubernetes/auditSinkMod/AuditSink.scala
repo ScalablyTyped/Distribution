@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1/auditSink", "AuditSink")
 @js.native
@@ -26,25 +26,29 @@ class AuditSink protected () extends CustomResource {
   def this(name: String, args: AuditSinkArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AuditSinkArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[auditregistrationDotk8sDotioSlashv1alpha1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink] = js.native
+  
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * Spec defines the audit configuration spec
     */
   val spec: Output_[AuditSinkSpec] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1/auditSink", "AuditSink")
 @js.native
 object AuditSink extends js.Object {
+  
   /**
     * Get an existing AuditSink resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -55,10 +59,10 @@ object AuditSink extends js.Object {
     */
   def get(name: String, id: Input[ID]): AuditSink = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): AuditSink = js.native
+  
   /**
     * Returns true if the given object is an instance of AuditSink.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.vscodeLanguageclient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "InitializeError")
 @js.native
 object InitializeError extends js.Object {
+  
   /**
     * If the protocol version provided by the client can't be handled by the server.
     * @deprecated This initialize error got replaced by client capabilities. There is
@@ -14,4 +15,3 @@ object InitializeError extends js.Object {
     */
   val unknownProtocolVersion: Double = js.native
 }
-

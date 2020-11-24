@@ -2,14 +2,14 @@ package typings.intlTelInput.mod.intlTelInputUtils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait numberFormat extends js.Object
-
 @JSImport("intl-tel-input", "intlTelInputUtils.numberFormat")
 @js.native
 object numberFormat extends js.Object {
+  
   @js.native
   sealed trait E164 extends numberFormat
   
@@ -21,6 +21,4 @@ object numberFormat extends js.Object {
   
   @js.native
   sealed trait RFC3966 extends numberFormat
-  
 }
-

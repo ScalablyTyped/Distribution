@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * CurveLocation objects describe a location on {@link Curve} objects, as
@@ -28,4 +28,3 @@ class CurveLocation protected ()
   def this(curve: typings.paper.paper.Curve, time: Double) = this()
   def this(curve: typings.paper.paper.Curve, time: Double, point: typings.paper.paper.Point) = this()
 }
-

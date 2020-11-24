@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base dynamic configuration for an item.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class DynamicItemBehavior ()
   extends typings.titanium.Titanium.UI.iOS.DynamicItemBehavior
-

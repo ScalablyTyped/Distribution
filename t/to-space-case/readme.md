@@ -10,9 +10,9 @@ Convert a string to space case.
 | ------------------ | :-------------: |
 | Full name          | to-space-case |
 | Keywords           | camel, case, slug, space, spacecase, string |
-| # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 21470282 |
+| # releases         | 0 |
+| # dependents       | 27 |
+| # downloads        | 28585116 |
 | # stars            | 2 |
 
 ## Links

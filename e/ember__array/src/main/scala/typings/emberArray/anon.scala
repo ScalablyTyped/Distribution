@@ -2,72 +2,15 @@ package typings.emberArray
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Fn0[T] extends js.Object {
-    def apply(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[T] = js.native
-    def apply(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
-      thisArg: js.Any
-    ): js.Array[T] = js.native
-  }
-  
-  @js.native
-  trait Fn1[T] extends js.Object {
-    def apply(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): Boolean = js.native
-    def apply(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
-      thisArg: js.Any
-    ): Boolean = js.native
-  }
-  
-  @js.native
-  trait FnCall[T] extends js.Object {
-    def apply(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
-    def apply(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-      thisArg: js.Any
-    ): Unit = js.native
-  }
-  
-  @js.native
-  trait FnCallCallbackfnInitialValue[T] extends js.Object {
-    def apply(
-      callbackfn: js.Function4[
-          /* previousValue */ T, 
-          /* currentValue */ T, 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[T], 
-          T
-        ]
-    ): T = js.native
-    def apply(
-      callbackfn: js.Function4[
-          /* previousValue */ T, 
-          /* currentValue */ T, 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[T], 
-          T
-        ],
-      initialValue: T
-    ): T = js.native
-  }
-  
-  @js.native
-  trait FnCallCallbackfnThisArg[T] extends js.Object {
-    def apply[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
-    def apply[U](
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-      thisArg: js.Any
-    ): js.Array[U] = js.native
-  }
-  
-  @js.native
-  trait FnCallPredicateThisArg[T] extends js.Object {
+    
     def apply(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _]): js.UndefOr[T] = js.native
     def apply(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _],
@@ -94,5 +37,67 @@ object anon extends js.Object {
     ): js.UndefOr[S] = js.native
   }
   
+  @js.native
+  trait Fn1[T] extends js.Object {
+    
+    def apply(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): Boolean = js.native
+    def apply(
+      predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+      thisArg: js.Any
+    ): Boolean = js.native
+  }
+  
+  @js.native
+  trait FnCall[T] extends js.Object {
+    
+    def apply(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
+    def apply(
+      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
+      thisArg: js.Any
+    ): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallCallbackfnInitialValue[T] extends js.Object {
+    
+    def apply(
+      callbackfn: js.Function4[
+          /* previousValue */ T, 
+          /* currentValue */ T, 
+          /* currentIndex */ Double, 
+          /* array */ js.Array[T], 
+          T
+        ]
+    ): T = js.native
+    def apply(
+      callbackfn: js.Function4[
+          /* previousValue */ T, 
+          /* currentValue */ T, 
+          /* currentIndex */ Double, 
+          /* array */ js.Array[T], 
+          T
+        ],
+      initialValue: T
+    ): T = js.native
+  }
+  
+  @js.native
+  trait FnCallCallbackfnThisArg[T] extends js.Object {
+    
+    def apply[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
+    def apply[U](
+      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+      thisArg: js.Any
+    ): js.Array[U] = js.native
+  }
+  
+  @js.native
+  trait FnCallPredicateThisArg[T] extends js.Object {
+    
+    def apply(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[T] = js.native
+    def apply(
+      predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+      thisArg: js.Any
+    ): js.Array[T] = js.native
+  }
 }
-

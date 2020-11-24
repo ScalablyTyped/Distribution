@@ -3,7 +3,7 @@ package typings.awsSdk.coreMod
 import typings.awsSdk.processCredentialsMod.ProcessCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/core", "ProcessCredentials")
 @js.native
@@ -14,4 +14,3 @@ class ProcessCredentials ()
   extends typings.awsSdk.processCredentialsMod.ProcessCredentials {
   def this(options: ProcessCredentialsOptions) = this()
 }
-

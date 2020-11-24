@@ -13,12 +13,13 @@ import typings.tedious.tediousStrings.infoMessage
 import typings.tedious.tediousStrings.languageChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tedious", "Connection")
 @js.native
 class Connection protected () extends EventEmitter {
   def this(config: ConnectionConfig) = this()
+  
   /**
     * Start a transaction. As only one request at a time may be executed on
     * a connection, another request should not be initiated until this callback is called.
@@ -38,18 +39,22 @@ class Connection protected () extends EventEmitter {
     name: String,
     isolationLevel: ISOLATION_LEVEL
   ): Unit = js.native
+  
   /**
     * Call a stored procedure represented by request.
     */
   def callProcedure(request: Request): Unit = js.native
+  
   /**
     * Cancel currently executed request.
     */
   def cancel(): Unit = js.native
+  
   /**
     * Closes the connection to the database. The end will be emmited once the connection has been closed.
     */
   def close(): Unit = js.native
+  
   /**
     * Commit a transaction.
     * There should be an active transaction. That is, beginTransaction should have been previously called.
@@ -57,33 +62,46 @@ class Connection protected () extends EventEmitter {
     *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def commitTransaction(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
+  /**
+    * Establish a connection to the server.
+    * @param callback The callback is called when the connection was established or an error occured. If an error occured then err will describe the error.
+    */
+  def connect(): Unit = js.native
+  def connect(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  
   /**
     * Executes a BulkLoad.
     */
   def execBulkLoad(bulkLoad: BulkLoad): Unit = js.native
+  
   /**
     * Execute the SQL represented by request.
     * As sp_executesql is used to execute the SQL, if the same SQL is executed multiples times using this function, the SQL Server query optimizer is likely to reuse the execution plan it generates for the first execution.
     * Beware of the way that scoping rules apply, and how they may affect local temp tables. If you're running in to scoping issues, then execSqlBatch may be a better choice. See also issue #24.
     */
   def execSql(request: Request): Unit = js.native
+  
   /**
     * Execute the SQL batch represented by request. There is no param support, and unlike execSql, it is not likely that SQL Server will reuse the execution plan it generates for the SQL.
     * In almost all cases, execSql will be a better choice.
     */
   def execSqlBatch(request: Request): Unit = js.native
+  
   /**
     * Execute previously prepared SQL, using the supplied parameters.
     * @param request A previously prepared Request.
     * @param parameters An object whose names correspond to the names of parameters that were added to the request before it was prepared. The object's values are passed as the parameters' values when the request is executed.
     */
   def execute(request: Request, parameters: js.Object): Unit = js.native
+  
   /**
     * Creates a new BulkLoad instance.
     * @param tableName The name of the table to bulk-insert into.
     * @param callback A function which will be called after the BulkLoad finishes executing. rowCount will equal the number of rows inserted.
     */
   def newBulkLoad(tableName: String, callback: js.Function2[/* error */ Error, /* rowCount */ Double, Unit]): BulkLoad = js.native
+  
   /**
     * The server has reported that the charset has changed.
     */
@@ -129,29 +147,34 @@ class Connection protected () extends EventEmitter {
     */
   @JSName("on")
   def on_languageChange(event: languageChange, listener: js.Function1[/* languageName */ String, Unit]): this.type = js.native
+  
   /**
     * Prepare the SQL represented by the request. The request can then be used in subsequent calls to execute and unprepare
     * @param request A Request object representing the request. Parameters only require a name and type. Parameter values are ignored.
     */
   def prepare(request: Request): Unit = js.native
+  
   /**
     * Reset the connection to its initial state. Can be useful for connection pool implementations.
     * @param callback The callback is called when the connection reset has completed, either successfully or with an error. If an error occured then err will describe the error.
     *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def reset(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Rollback a transaction. There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to rollback the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
     *                         As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def rollbackTransaction(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Set a savepoint within a transaction. There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to set a savepoint within the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
     *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
   def saveTransaction(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Run the given callback after starting a transaction, and commit or rollback the transaction afterwards.
     * This is a helper that employs beginTransaction, commitTransaction, rollbackTransaction and saveTransaction to greatly simplify the use of database transactions and automatically handle transaction nesting.
@@ -216,9 +239,9 @@ class Connection protected () extends EventEmitter {
     name: String,
     isolationLevel: ISOLATION_LEVEL
   ): Unit = js.native
+  
   /**
     * Release the SQL Server resources associated with a previously prepared request.
     */
   def unprepare(request: Request): Unit = js.native
 }
-

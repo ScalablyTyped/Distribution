@@ -9,7 +9,7 @@ import typings.ws.mod.Server
 import typings.ws.mod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/discover/dist/comm", "CommServer")
 @js.native
@@ -25,23 +25,31 @@ class CommServer protected () extends EventEmitter {
     */
   port: Double
   ) = this()
+  
+  def clients: Set[^] = js.native
+  
   /**
     * Unique identifier of the publisher.
     */
   var id: String = js.native
+  
   var namespace: String = js.native
-  var parseData: js.Any = js.native
-  /**
-    * Port of communication server.
-    */
-  var port: Double = js.native
-  var server: js.UndefOr[Server] = js.native
-  def clients: Set[^] = js.native
+  
   @JSName("on")
   def on_connect(event: connect, listener: js.Function1[/* data */ CommServerConnectionPayload, Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
+  var parseData: js.Any = js.native
+  
+  /**
+    * Port of communication server.
+    */
+  var port: Double = js.native
+  
+  var server: js.UndefOr[Server] = js.native
+  
   def start(): js.Promise[Unit] = js.native
+  
   def stop(): js.Promise[Unit] = js.native
 }
-

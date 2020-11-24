@@ -2,7 +2,7 @@ package typings.mockAwsS3.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "Request")
 @js.native
@@ -18,4 +18,3 @@ class Request[D, E] protected ()
   def this(service: typings.awsSdk.serviceMod.Service, operation: String) = this()
   def this(service: typings.awsSdk.serviceMod.Service, operation: String, params: js.Any) = this()
 }
-

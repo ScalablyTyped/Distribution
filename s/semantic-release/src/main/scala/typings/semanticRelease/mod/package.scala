@@ -2,9 +2,10 @@ package typings.semanticRelease
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Specifies a git branch holding commits to analyze and code to release.
     *
@@ -13,6 +14,7 @@ package object mod {
     * for example `"master"` expands to `{name: "master"}`.
     */
   type BranchSpec = java.lang.String | typings.semanticRelease.anon.Channel
+  
   /**
     * Specifies a plugin to use.
     *

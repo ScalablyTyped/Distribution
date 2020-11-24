@@ -10,9 +10,9 @@ Allows the use of ES2016 async functions as Express route handlers
 | ------------------ | :-------------: |
 | Full name          | express-async-wrap |
 | Keywords           | express, async-await, routes |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 129777 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 294418 |
 | # stars            | 2 |
 
 ## Links

@@ -7,10 +7,11 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait mapsjsWidget extends js.Object {
+  
   /**
     * Add a fixed element to the content area which resides at a z-level 
     * above tiled map content. These elements do not scale with the map
@@ -48,6 +49,7 @@ trait mapsjsWidget extends js.Object {
     addAction: js.Function1[/* ele */ HTMLElement, Unit],
     dragOptions: DownAction
   ): Unit = js.native
+  
   /**
     * Add a styled path geometry to the content area which resides at a z-level 
     * above tiled map content. The geometry is converted to SVG and added to the 
@@ -75,6 +77,7 @@ trait mapsjsWidget extends js.Object {
     addAction: js.Function1[/* svg */ SVGElement, Unit],
     removeAction: js.Function1[/* svg */ SVGElement, Unit]
   ): SVGElement = js.native
+  
   /**
     * Initiates digitization on the map control. This creates a new
     * geometry and adds verticies to the geometry accord to mouse
@@ -99,6 +102,7 @@ trait mapsjsWidget extends js.Object {
     * should be left on the map after digitization is complete.
     */
   def beginDigitize(options: beginDigitizeOptions): Unit = js.native
+  
   /**
     * Gets a point in map units from supplied coordinates pixel units 
     * with respect to the currently displayed extents.
@@ -107,13 +111,16 @@ trait mapsjsWidget extends js.Object {
     * @returns {point} The generated point in map units.
     */
   def computeMapPointFromPixelLocation(x: Double, y: Double): point = js.native
+  
   /**
     * Programmatically delete a node from the currently digitizing path.
     * @param {number} setIdx The index of the set from which to remove the node.
     * @param {number} nodeIdx The index of the node to remove.
     */
   def deleteNodeOnDigitizePath(setIdx: Double, nodeIdx: Double): Unit = js.native
+  
   def endDigitize(): Unit = js.native
+  
   /**
     * Animates parabolically from the current map center and zoom level
     * to the given map center and zoom level.
@@ -132,6 +139,7 @@ trait mapsjsWidget extends js.Object {
   ): Unit = js.native
   def flyTo(center: point, zl: Double, durationMs: Double): Unit = js.native
   def flyTo(center: point, zl: Double, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Gets the current actual map scale. This is the ratio of units on 
     * the screen to actual units on the earth's surface at the latitude 
@@ -139,6 +147,7 @@ trait mapsjsWidget extends js.Object {
     * @returns {number} The ratio of screen units to actual meters.
     */
   def getActualMapScale(): Double = js.native
+  
   /**
     * Gets the best fit zoom level based on the supplied map extents for 
     * the current display extents in pixels.
@@ -146,33 +155,39 @@ trait mapsjsWidget extends js.Object {
     * @returns {number} The zoom level which best fits the extents.
     */
   def getBestFitZoomLevelByExtents(extentsNew: envelope): Double = js.native
+  
   /**
     * Gets a snapshot copy of the currently digitizing path.
     * @returns {geometry} The currently digitizing path.
     */
   def getDigitizeSnapshot(): geometry = js.native
+  
   /**
     * Gets the center of the map in spherical mercator. Use 
     * sphericalMercator.deprojectToLatLon static function to convert to a lat/lon.
     * @return {point} A point map center
     */
   def getMapCenter(): point = js.native
+  
   /**
     * Gets the current map extents in spherical mercator units.
     * @return {envelope} envelope The current map extents.
     */
   def getMapExtents(): envelope = js.native
+  
   /**
     * Gets the current map units per pixel.
     * @returns {number} Map units (meters) per pixel.
     */
   def getMapUnitsPerPixel(): Double = js.native
+  
   /**
     * Gets the current projected map scale. This is the ratio of units on
     * the screen to map units depicted.
     * @returns {number} Ratio of screen units to map units.
     */
   def getProjectedMapScale(): Double = js.native
+  
   /**
     * Gets a tile layer from the display stack by its key.
     * @param {string} key The desired tile layer's key.
@@ -180,11 +195,13 @@ trait mapsjsWidget extends js.Object {
     * if no tile layer is associated with the key.
     */
   def getTileLayer(key: String): layer = js.native
+  
   /**
     * Gets the current number of tile layers in the display stack.
     * @returns {number} The number of tile layers in the display stack.
     */
   def getTileLayerCount(): Double = js.native
+  
   /**
     * Gets the map extents' width and height in pixels.
     * @returns {object} JavaScript object of the form {w, h} where w is
@@ -192,16 +209,19 @@ trait mapsjsWidget extends js.Object {
     * height in pixels.
     */
   def getViewExtentsInPix(): H = js.native
+  
   /**
     * Gets the current zoom level.
     * @returns {number} The current zoom level.
     */
   def getZoomLevel(): Double = js.native
+  
   /**
     * Determines whether a shape is currently being digitized.
     * @returns {boolean} Whether or not a shape is being digitized.
     */
   def isDigitizingEnabled(): Boolean = js.native
+  
   /**
     * Move an existing fixed content element.
     * @param {HTMLElement} element The existing DOM element to move.
@@ -209,12 +229,14 @@ trait mapsjsWidget extends js.Object {
     * @param {number} mapUnitsY The new y coordinate in map units.
     */
   def moveFixedContentElement(element: HTMLElement, mapUnitsX: Double, mapUnitsY: Double): Unit = js.native
+  
   /**
     * Offsets the current map center by the specified deltas in pixels. 
     * @param {number} [dx] offset x in pixels.
     * @param {number} [dy] offset y in pixels.
     */
   def offsetMapCenterByPixelDelta(dx: Double, dy: Double): Unit = js.native
+  
   /**
     * Offsets the current map center by the specified deltas in pixels - animated version.
     * @param {number} [dx] offset x in pixels.
@@ -223,27 +245,32 @@ trait mapsjsWidget extends js.Object {
     */
   def offsetMapCenterByPixelDeltaAnimate(dx: Double, dy: Double): Unit = js.native
   def offsetMapCenterByPixelDeltaAnimate(dx: Double, dy: Double, durationMs: Double): Unit = js.native
+  
   /**
     * Removes the last set from the currently digitizing path.
     * @return {number[]} The last set from the currently digitizing path
     * in the form [xn,yn]. 
     */
   def popSetFromDigitizePath(): js.Array[Double] = js.native
+  
   /**
     * Removes a tile layer off the top of the display stack
     * @returns {tile.layer} The removed tile layer.
     */
   def popTileLayer(): layer = js.native
+  
   /** 
     * Forces additional digitized points to be pushed to a new set of the
     * currently digitizing geometry.
     */
   def pushSetOnDigitizePath(): Unit = js.native
+  
   /**
     * Pushes a supplied tile layer onto the top of the display stack.
     * @param {tile.layer} tl The desired tile layer.
     */
   def pushTileLayer(tl: layer): Unit = js.native
+  
   /**
     * Forces the map to redraw the currently loaded tile and geometry 
     * content. You should not have to call this as redraws are automatically
@@ -251,16 +278,19 @@ trait mapsjsWidget extends js.Object {
     * where the developer is affecting internal state in an undocumented way.
     */
   def redraw(): Unit = js.native
+  
   /**
     * Removes all tile layers off the display stack
     */
   def removeAllTileLayers(): Unit = js.native
+  
   /**
     * Removes a fixed content element.
     * @param {HTMLElement} element The DOM element to remove. Note: This
     * must be the same element added by addFixedContentElement.
     */
   def removeFixedContentElement(element: HTMLElement): Unit = js.native
+  
   /**
     * Removes a styledGeometry from display.
     * @param {string} key The key of the geometry to remove.
@@ -268,11 +298,13 @@ trait mapsjsWidget extends js.Object {
     */
   def removePathGeometry(): SVGElement = js.native
   def removePathGeometry(key: String): SVGElement = js.native
+  
   /**
     * Removes a tile layer off the display stack by reference
     * @param {tile.layer} tl A tile layer to remove.
     */
   def removeTileLayer(tl: layer): Unit = js.native
+  
   /**
     * Updates the map to the size of its container. This updates internal 
     * parameters for computing map extents and handling the amount of tile 
@@ -282,11 +314,13 @@ trait mapsjsWidget extends js.Object {
     * container has resized.
     */
   def resize(): Unit = js.native
+  
   /**
     * Sets the background color of the map using a css color string
     * @param {number} b- a css color string
     */
   def setBackground(b: String): Unit = js.native
+  
   /** 
     * Sets the margin around the map in pixels for extra content fetched so that tile 
     * rebuilding of the display is minimized. This is an advanced property and does not 
@@ -297,6 +331,7 @@ trait mapsjsWidget extends js.Object {
     * @param {number} cem The content extent margin in pixels.
     */
   def setContentExtentsMarginInPixels(cem: Double): Unit = js.native
+  
   /**
     * Set the function called when map content (map tiles and fixed elements) are 
     * re-positioned in the DOM. This is done automatically as the map is panned 
@@ -306,6 +341,7 @@ trait mapsjsWidget extends js.Object {
     * is of the form { centerX, centerY, zoomLevel, mapUnitsPerPixel }.
     */
   def setContentRepositionAction(action: js.Function1[/* vals */ repositionStatsObj, Unit]): Unit = js.native
+  
   /**
     * Sets the z-order of drawn content in relation to the gesture capture 
     * panel. The default behavior (false) is to have fixed content and 
@@ -322,6 +358,7 @@ trait mapsjsWidget extends js.Object {
     * reside above the gesture layer.
     */
   def setDrawnContentZorderToTop(flag: Boolean): Unit = js.native
+  
   /** 
     * Set the function called when the map extents have stopped changing 
     * (e.g. after an animated pan or zoom).
@@ -331,12 +368,14 @@ trait mapsjsWidget extends js.Object {
     * mapScaleProjected, mapUnitsPerPixel, extents }.
     */
   def setExtentChangeCompleteAction(action: js.Function1[/* vals */ extentChangeStatsObj, Unit]): Unit = js.native
+  
   /**
     * Sets the center of the map in spherical mercator. Use
     * sphericalMercator.projectFromLatLon static function to convert from a lat/lon.
     * @param {point} center The map center as a point
     */
   def setMapCenter(center: point): Unit = js.native
+  
   /**
     * Same as setMapCenter except will animate from current map center to the 
     * specified location
@@ -348,6 +387,7 @@ trait mapsjsWidget extends js.Object {
   def setMapCenterAnimate(center: point, durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setMapCenterAnimate(center: point, durationMs: Double): Unit = js.native
   def setMapCenterAnimate(center: point, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Sets the map center to the current geolocation if supported. The map is
     * animated to the new location.
@@ -358,28 +398,33 @@ trait mapsjsWidget extends js.Object {
   def setMapCenterToGeolocationAnimate(durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setMapCenterToGeolocationAnimate(durationMs: Double): Unit = js.native
   def setMapCenterToGeolocationAnimate(durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Sets the maximum zoom level for the map.
     * @param {number} z1 The desired maximum zoom level.
     */
   def setMaxZoomLevel(zl: Double): Unit = js.native
+  
   /**
     * Sets the minimum zoom level for the map.
     * @param {number} zl Desired minimum zoom level.
     */
   def setMinZoomLevel(zl: Double): Unit = js.native
+  
   /**
     * Sets function called when map is clicked or tapped.
     * @param {function} action The function to call on mouse click or tap 
     * with signature action(point).
     */
   def setPointerClickAction(action: js.Function1[/* pt */ point, Unit]): Unit = js.native
+  
   /** 
     * Sets function called when the map pointer hovers over the map.
     * @param {function} action The function to call on mouse hover with 
     * signature action(point).
     */
   def setPointerHoverAction(action: js.Function1[/* pt */ point, Unit]): Unit = js.native
+  
   /**
     * Flags whether or not map extent changes can occur through gestures 
     * like mouse or touch drag, mouse wheel, or pinch zoom.
@@ -387,11 +432,13 @@ trait mapsjsWidget extends js.Object {
     * extent changes.
     */
   def setSuspendMapExtentChangesByGestures(flag: Boolean): Unit = js.native
+  
   /**
     * Sets the current zoom level.
     * @param {number} z1 The desired zoom level.
     */
   def setZoomLevel(zl: Double): Unit = js.native
+  
   /**
     * Animates the map from the current zoom level to the given zoom level.
     * @param {number} zl The desired zoom level.
@@ -403,17 +450,20 @@ trait mapsjsWidget extends js.Object {
   def setZoomLevelAnimate(zl: Double, durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setZoomLevelAnimate(zl: Double, durationMs: Double): Unit = js.native
   def setZoomLevelAnimate(zl: Double, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Updates an existing path geometry to reflect a style change.
     * @param {geometryStyle} styleNew The new geometryStyle.
     * @param {string} key The key of the geometry to receive the new style.
     */
   def updatePathGeometryStyle(styleNew: geometryStyle, key: String): Unit = js.native
+  
   /**
     * Changes the current zoom level.
     * @param {number} delta Change to be added to the current zoom level.
     */
   def zoomDelta(delta: Double): Unit = js.native
+  
   /** 
     * Animates a change to the current zoom level.
     * @param {number} delta Change to be added to the current zoom level.
@@ -422,4 +472,3 @@ trait mapsjsWidget extends js.Object {
   def zoomDeltaAnimate(delta: Double): Unit = js.native
   def zoomDeltaAnimate(delta: Double, durationMs: Double): Unit = js.native
 }
-

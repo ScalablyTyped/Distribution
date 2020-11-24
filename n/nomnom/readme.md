@@ -9,9 +9,9 @@ Option parser with generated usage and commands
 | ------------------ | :-------------: |
 | Full name          | nomnom |
 | Keywords           | arguments, option parser, command line, options, parser |
-| # releases         | 2 |
-| # dependents       | 546 |
-| # downloads        | 63742406 |
+| # releases         | 0 |
+| # dependents       | 549 |
+| # downloads        | 48680202 |
 | # stars            | 32 |
 
 ## Links

@@ -12,10 +12,11 @@ import typings.reactNativeZeroconf.reactNativeZeroconfStrings.update
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Zeroconf extends EventEmitter {
+  
   /**
     * Add listeners
     *
@@ -23,6 +24,7 @@ trait Zeroconf extends EventEmitter {
     * on.
     */
   def addDeviceListeners(): Unit = js.native
+  
   /**
     * Returns resolved services.
     *
@@ -30,6 +32,7 @@ trait Zeroconf extends EventEmitter {
     * resolved.
     */
   def getServices(): StringDictionary[Service] = js.native
+  
   /**
     * Triggered when an error occurs.
     */
@@ -54,6 +57,7 @@ trait Zeroconf extends EventEmitter {
   def on_stop(e: stop, listener: js.Function0[_]): this.type = js.native
   @JSName("on")
   def on_update(e: update, listener: js.Function0[_]): this.type = js.native
+  
   /**
     * Publish a service.
     *
@@ -66,6 +70,7 @@ trait Zeroconf extends EventEmitter {
     * suffixed, for example `'local.'`. Defaults to `'local'`.
     * @param name should be unique to the device, often the device name.
     * @param port should be an integer between 0 and 65535.
+    * @param txt contains key-value pairs of additional TXT record data.
     */
   def publishService(`type`: String, protocol: String): Unit = js.native
   def publishService(
@@ -73,14 +78,79 @@ trait Zeroconf extends EventEmitter {
     protocol: String,
     domain: js.UndefOr[scala.Nothing],
     name: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
     port: Double
   ): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    port: Double,
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: js.UndefOr[scala.Nothing], name: String): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: js.UndefOr[scala.Nothing],
+    name: String,
+    port: js.UndefOr[scala.Nothing],
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: js.UndefOr[scala.Nothing], name: String, port: Double): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: js.UndefOr[scala.Nothing],
+    name: String,
+    port: Double,
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: String,
+    name: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String, name: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: String,
+    name: js.UndefOr[scala.Nothing],
+    port: Double,
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String, name: String): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: String,
+    name: String,
+    port: js.UndefOr[scala.Nothing],
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String, name: String, port: Double): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: String,
+    name: String,
+    port: Double,
+    txt: StringDictionary[js.Any]
+  ): Unit = js.native
+  
   /**
     * Remove listeners.
     *
@@ -90,6 +160,7 @@ trait Zeroconf extends EventEmitter {
     * @see https://github.com/balthazar/react-native-zeroconf/issues/33
     */
   def removeDeviceListeners(): Unit = js.native
+  
   /**
     * Start the zeroconf scan.
     *
@@ -108,12 +179,14 @@ trait Zeroconf extends EventEmitter {
   def scan(`type`: String, protocol: js.UndefOr[scala.Nothing], domain: String): Unit = js.native
   def scan(`type`: String, protocol: String): Unit = js.native
   def scan(`type`: String, protocol: String, domain: String): Unit = js.native
+  
   /**
     * Stop the scan.
     *
     * @description If any scan is running, stop it. Otherwise do nothing.
     */
   def stop(): Unit = js.native
+  
   /**
     * Unpublish a service.
     *
@@ -124,4 +197,3 @@ trait Zeroconf extends EventEmitter {
     */
   def unpublishService(name: String): Unit = js.native
 }
-

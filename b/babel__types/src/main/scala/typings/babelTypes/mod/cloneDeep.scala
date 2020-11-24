@@ -2,11 +2,11 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "cloneDeep")
 @js.native
 object cloneDeep extends js.Object {
+  
   def apply[T /* <: Node */](n: T): T = js.native
 }
-

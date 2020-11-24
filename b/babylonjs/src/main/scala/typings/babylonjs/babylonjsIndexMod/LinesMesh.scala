@@ -5,7 +5,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "LinesMesh")
 @js.native
@@ -39,4 +39,3 @@ class LinesMesh protected ()
   useVertexAlpha: js.UndefOr[Boolean]
   ) = this()
 }
-

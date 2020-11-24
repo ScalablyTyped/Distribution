@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * All properties and functions that expect color values in the form
@@ -99,11 +99,11 @@ class Color protected ()
   ) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
 }
-
 /* static members */
 @JSGlobal("paper.Color")
 @js.native
 object Color extends js.Object {
+  
   /** 
     * Returns a color object with random {@link #red}, {@link #green}
     * and {@link #blue} values between `0` and `1`.
@@ -112,4 +112,3 @@ object Color extends js.Object {
     */
   def random(): typings.paper.paper.Color = js.native
 }
-

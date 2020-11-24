@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Settings$Searchapplications")
 @js.native
 class ResourceSettingsSearchapplications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudsearch.settings.searchapplications.create
     * @desc Creates a search application.
@@ -44,6 +46,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.searchapplications.delete
     * @desc Deletes a search application.
@@ -76,6 +79,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.searchapplications.get
     * @desc Gets the specified search application.
@@ -108,6 +112,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchApplication]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.searchapplications.list
     * @desc Lists all search applications.
@@ -141,6 +146,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSearchApplicationsResponse]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.searchapplications.reset
     * @desc Resets a search application to default settings. This will return
@@ -174,6 +180,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.settings.searchapplications.update
     * @desc Updates a search application.
@@ -207,4 +214,3 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

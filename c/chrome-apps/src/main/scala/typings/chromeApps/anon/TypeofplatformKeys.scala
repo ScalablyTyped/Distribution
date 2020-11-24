@@ -4,10 +4,11 @@ import typings.chromeApps.chrome.enterprise.platformKeys.Token
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofplatformKeys extends js.Object {
+  
   /**
     * @since Chrome 50.
     * @description
@@ -55,6 +56,7 @@ trait TypeofplatformKeys extends js.Object {
     registerKey: Boolean,
     callback: js.Function1[/* response */ ArrayBuffer, Unit]
   ): Unit = js.native
+  
   /**
     * @since Chrome 50.
     * Challenges a hardware-backed Enterprise User Key and emits the response as part of a remote attestation protocol.
@@ -80,6 +82,7 @@ trait TypeofplatformKeys extends js.Object {
     registerKey: Boolean,
     callback: js.Function1[/* response */ ArrayBuffer, Unit]
   ): Unit = js.native
+  
   /**
     * Returns the list of all client certificates available from the given token.
     * Can be used to check for the existence and expiration of client certificates that are usable for a certain authentication.
@@ -87,6 +90,7 @@ trait TypeofplatformKeys extends js.Object {
     * @param callback Called back with the list of the available certificates.
     */
   def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = js.native
+  
   /**
     * Returns the available Tokens.
     * In a regular user's session the list will always contain the user's token with id 'user'.
@@ -95,6 +99,7 @@ trait TypeofplatformKeys extends js.Object {
     * @param callback Invoked by getTokens with the list of available Tokens.
     */
   def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = js.native
+  
   /**
     * Imports certificate to the given token if the certified key is already stored in this token.
     * After a successful certification request, this function should be used to store the obtained
@@ -104,6 +109,7 @@ trait TypeofplatformKeys extends js.Object {
     * @param [callback] Called back when this operation is finished.
     */
   def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Removes certificate from the given token if present.
     * Should be used to remove obsolete certificates so that they are not
@@ -115,4 +121,3 @@ trait TypeofplatformKeys extends js.Object {
     */
   def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
 }
-

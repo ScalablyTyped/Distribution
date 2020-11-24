@@ -2,12 +2,14 @@ package typings.blueprintjsCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/common/utils/functionUtils", JSImport.Namespace)
 @js.native
 object functionUtilsMod extends js.Object {
+  
   def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
+  
   def safeInvoke[R](): js.UndefOr[R] = js.native
   def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = js.native
   def safeInvoke[A, R](func: js.UndefOr[scala.Nothing], arg1: A): js.UndefOr[R] = js.native
@@ -24,6 +26,7 @@ object functionUtilsMod extends js.Object {
     arg3: C,
     arg4: D
   ): js.UndefOr[R] = js.native
+  
   def safeInvokeOrValue[R](): R = js.native
   def safeInvokeOrValue[R](funcOrValue: R): R = js.native
   def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = js.native
@@ -46,4 +49,3 @@ object functionUtilsMod extends js.Object {
     arg4: D
   ): R = js.native
 }
-

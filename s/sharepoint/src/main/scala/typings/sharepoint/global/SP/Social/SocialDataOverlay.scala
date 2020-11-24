@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an overlay.
   An overlay is a substring in a post that represents a user, document, site, tag, or link.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class SocialDataOverlay ()
   extends typings.sharepoint.SP.Social.SocialDataOverlay
-

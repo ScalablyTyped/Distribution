@@ -2,61 +2,43 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageProcessingConfiguration extends js.Object {
+  
   var _applyByPostProcess: js.Any = js.native
+  
   var _colorCurvesEnabled: js.Any = js.native
+  
   var _colorGradingBGR: js.Any = js.native
+  
   var _colorGradingEnabled: js.Any = js.native
+  
   var _colorGradingTexture: js.Any = js.native
+  
   var _colorGradingWithGreenDepth: js.Any = js.native
+  
   var _contrast: Double = js.native
+  
   /** @hidden */
   var _exposure: Double = js.native
+  
   var _isEnabled: js.Any = js.native
+  
   var _toneMappingEnabled: js.Any = js.native
+  
   var _toneMappingType: js.Any = js.native
-  var _vignetteBlendMode: js.Any = js.native
-  var _vignetteEnabled: js.Any = js.native
-  /**
-    * Color curves setup used in the effect if colorCurvesEnabled is set to true
-    */
-  var colorCurves: Nullable[ColorCurves] = js.native
-  /**
-    * An event triggered when the configuration changes and requires Shader to Update some parameters.
-    */
-  var onUpdateParameters: Observable[ImageProcessingConfiguration] = js.native
-  /**
-    * Camera field of view used by the Vignette effect.
-    */
-  var vignetteCameraFov: Double = js.native
-  /**
-    * Vignette centre X Offset.
-    */
-  var vignetteCentreX: Double = js.native
-  /**
-    * Vignette centre Y Offset.
-    */
-  var vignetteCentreY: Double = js.native
-  /**
-    * Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)
-    * if vignetteEnabled is set to true.
-    */
-  var vignetteColor: Color4 = js.native
-  /**
-    * Vignette stretch size.
-    */
-  var vignetteStretch: Double = js.native
-  /**
-    * Vignette weight or intensity of the vignette effect.
-    */
-  var vignetteWeight: Double = js.native
+  
   /**
     * Method called each time the image processing information changes requires to recompile the effect.
     */
   /* protected */ def _updateParameters(): Unit = js.native
+  
+  var _vignetteBlendMode: js.Any = js.native
+  
+  var _vignetteEnabled: js.Any = js.native
+  
   /**
     * Gets wether the image processing is applied through a post process or not.
     */
@@ -64,7 +46,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the image processing is applied through a post process or not.
     */
-  def applyByPostProcess(value: Boolean): js.Any = js.native
+  def applyByPostProcess_=(value: Boolean): Unit = js.native
+  
   /**
     * Binds the image processing to the shader.
     * @param effect The effect to bind to
@@ -72,6 +55,12 @@ trait ImageProcessingConfiguration extends js.Object {
     */
   def bind(effect: Effect): Unit = js.native
   def bind(effect: Effect, overrideAspectRatio: Double): Unit = js.native
+  
+  /**
+    * Color curves setup used in the effect if colorCurvesEnabled is set to true
+    */
+  var colorCurves: Nullable[ColorCurves] = js.native
+  
   /**
     * Gets wether the color curves effect is enabled.
     */
@@ -79,7 +68,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the color curves effect is enabled.
     */
-  def colorCurvesEnabled(value: Boolean): js.Any = js.native
+  def colorCurvesEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets wether the color grading texture contains BGR values.
     */
@@ -87,7 +77,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the color grading texture contains BGR values.
     */
-  def colorGradingBGR(value: Boolean): js.Any = js.native
+  def colorGradingBGR_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets wether the color grading effect is enabled.
     */
@@ -95,7 +86,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the color grading effect is enabled.
     */
-  def colorGradingEnabled(value: Boolean): js.Any = js.native
+  def colorGradingEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Color grading LUT texture used in the effect if colorGradingEnabled is set to true
     */
@@ -103,7 +95,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Color grading LUT texture used in the effect if colorGradingEnabled is set to true
     */
-  def colorGradingTexture(value: Nullable[BaseTexture]): js.Any = js.native
+  def colorGradingTexture_=(value: Nullable[BaseTexture]): Unit = js.native
+  
   /**
     * Gets wether the color grading effect is using a green depth for the 3d Texture.
     */
@@ -111,7 +104,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the color grading effect is using a green depth for the 3d Texture.
     */
-  def colorGradingWithGreenDepth(value: Boolean): js.Any = js.native
+  def colorGradingWithGreenDepth_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets the contrast used in the effect.
     */
@@ -119,7 +113,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets the contrast used in the effect.
     */
-  def contrast(value: Double): js.Any = js.native
+  def contrast_=(value: Double): Unit = js.native
+  
   /**
     * Gets the Exposure used in the effect.
     */
@@ -127,12 +122,14 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets the Exposure used in the effect.
     */
-  def exposure(value: Double): js.Any = js.native
+  def exposure_=(value: Double): Unit = js.native
+  
   /**
     * Gets the current class name.
     * @return "ImageProcessingConfiguration"
     */
   def getClassName(): String = js.native
+  
   /**
     * Gets wether the image processing is enabled or not.
     */
@@ -140,12 +137,19 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the image processing is enabled or not.
     */
-  def isEnabled(value: Boolean): js.Any = js.native
+  def isEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Returns true if all the image processing information are ready.
     * @returns True if ready, otherwise, false
     */
   def isReady(): Boolean = js.native
+  
+  /**
+    * An event triggered when the configuration changes and requires Shader to Update some parameters.
+    */
+  var onUpdateParameters: Observable[ImageProcessingConfiguration] = js.native
+  
   /**
     * Prepare the list of defines associated to the shader.
     * @param defines the list of defines to complete
@@ -153,11 +157,13 @@ trait ImageProcessingConfiguration extends js.Object {
     */
   def prepareDefines(defines: IImageProcessingConfigurationDefines): Unit = js.native
   def prepareDefines(defines: IImageProcessingConfigurationDefines, forPostProcess: Boolean): Unit = js.native
+  
   /**
     * Serializes the current image processing instance to a json representation.
     * @return a JSON representation
     */
   def serialize(): js.Any = js.native
+  
   /**
     * Gets wether the tone mapping effect is enabled.
     */
@@ -165,7 +171,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the tone mapping effect is enabled.
     */
-  def toneMappingEnabled(value: Boolean): js.Any = js.native
+  def toneMappingEnabled_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets the type of tone mapping effect.
     */
@@ -173,7 +180,8 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets the type of tone mapping effect used in BabylonJS.
     */
-  def toneMappingType(value: Double): js.Any = js.native
+  def toneMappingType_=(value: Double): Unit = js.native
+  
   /**
     * Gets the vignette blend mode allowing different kind of effect.
     */
@@ -181,7 +189,29 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets the vignette blend mode allowing different kind of effect.
     */
-  def vignetteBlendMode(value: Double): js.Any = js.native
+  def vignetteBlendMode_=(value: Double): Unit = js.native
+  
+  /**
+    * Camera field of view used by the Vignette effect.
+    */
+  var vignetteCameraFov: Double = js.native
+  
+  /**
+    * Vignette centre X Offset.
+    */
+  var vignetteCentreX: Double = js.native
+  
+  /**
+    * Vignette centre Y Offset.
+    */
+  var vignetteCentreY: Double = js.native
+  
+  /**
+    * Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)
+    * if vignetteEnabled is set to true.
+    */
+  var vignetteColor: Color4 = js.native
+  
   /**
     * Gets wether the vignette effect is enabled.
     */
@@ -189,6 +219,15 @@ trait ImageProcessingConfiguration extends js.Object {
   /**
     * Sets wether the vignette effect is enabled.
     */
-  def vignetteEnabled(value: Boolean): js.Any = js.native
+  def vignetteEnabled_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Vignette stretch size.
+    */
+  var vignetteStretch: Double = js.native
+  
+  /**
+    * Vignette weight or intensity of the vignette effect.
+    */
+  var vignetteWeight: Double = js.native
 }
-

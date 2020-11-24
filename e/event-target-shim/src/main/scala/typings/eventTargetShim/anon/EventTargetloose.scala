@@ -9,11 +9,12 @@ import typings.eventTargetShim.mod.EventTarget.PickEvent
 import typings.eventTargetShim.mod.EventTarget.RemoveOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined event-target-shim.event-target-shim.EventTarget<{}, {}, 'loose'> */
 @js.native
 trait EventTargetloose extends js.Object {
+  
   /**
     * Add a given listener to this event target.
     * @param eventName The event name to add.
@@ -26,6 +27,7 @@ trait EventTargetloose extends js.Object {
   def addEventListener[TEventType /* <: EventType[js.Object, loose] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]]): Unit = js.native
   def addEventListener[TEventType /* <: EventType[js.Object, loose] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: Boolean): Unit = js.native
   def addEventListener[TEventType /* <: EventType[js.Object, loose] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: AddOptions): Unit = js.native
+  
   /**
     * Dispatch a given event.
     * @param event The event to dispatch.
@@ -33,6 +35,7 @@ trait EventTargetloose extends js.Object {
     */
   @JSName("dispatchEvent")
   def dispatchEvent_loose[TEventType /* <: EventType[js.Object, loose] */](event: EventData[js.Object, TEventType, loose]): Boolean = js.native
+  
   /**
     * Remove a given listener from this event target.
     * @param eventName The event name to remove.
@@ -46,4 +49,3 @@ trait EventTargetloose extends js.Object {
   def removeEventListener[TEventType /* <: EventType[js.Object, loose] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: Boolean): Unit = js.native
   def removeEventListener[TEventType /* <: EventType[js.Object, loose] */](`type`: TEventType, listener: Listener[PickEvent[js.Object, TEventType]], options: RemoveOptions): Unit = js.native
 }
-

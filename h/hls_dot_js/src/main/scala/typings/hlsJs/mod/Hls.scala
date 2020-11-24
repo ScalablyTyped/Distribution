@@ -3,24 +3,48 @@ package typings.hlsJs.mod
 import typings.std.HTMLMediaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Hls extends js.Object {
+  
+  /**
+    * calling this method will:
+    *      bind mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) and hls instances
+    *      create MediaSource and set it as video or audio source
+    *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
+    */
+  def attachMedia(mediaElement: HTMLMediaElement): Unit = js.native
+  
+  /**
+    * get/set : audio track id (returned by).
+    * Returns -1 if no track is selected.
+    * Set to -1 to play default audio track.
+    */
+  var audioTrack: Double = js.native
+  
+  /**
+    * get : array of audio tracks exposed in manifest
+    */
+  val audioTracks: js.Array[HlsAudioTrack] = js.native
+  
   /**
     * capping/max level (index of level) that could be used by ABR Controller. Defaults to -1
     * which means no limit
     * set: max level value that could be used by the ABR Controller
     */
   var autoLevelCapping: Double = js.native
+  
   /**
     * tell whether auto level selection is enabled or not
     */
   val autoLevelEnabled: Boolean = js.native
+  
   /**
     *  hls.js config
     */
   var config: Config = js.native
+  
   /**
     * get: return current playback quality level
     * set:  trigger an immediate quality level switch to new quality level
@@ -31,28 +55,52 @@ trait Hls extends js.Object {
     * set to -1 for automatic level selection
     */
   var currentLevel: Double = js.native
+  
+  /**
+    * should be called to free used resources and destroy hls context
+    */
+  def destroy(): Unit = js.native
+  
+  /**
+    * calling this method will:
+    *      unbind HTMLMediaElement (aka. HTMLVideoElement or HTMLAudioElement) from hls instance
+    *      signal the end of the stream on MediaSource
+    *      resets media source ( media.src = '',  )
+    */
+  def detachMedia(): Unit = js.native
+  
   /**
     * first level index (index of first level appearing in Manifest. it is usually defined as start level hint for player)
     */
   var firstLevel: Double = js.native
+  
   /**
     * return array of available quality levels
     */
   val levels: js.Array[Level] = js.native
+  
   /**
     * position of live sync point (ie edge of live position minus safety delay defined by hls.config.liveSyncDuration)
     */
   val liveSyncPosition: Double = js.native
+  
   /**
     * get: return last loaded fragment quality level
     * set: quality level for next loaded fragment
     * set to -1 for automatic level selection
     */
   var loadLevel: Double = js.native
+  
+  /**
+    * loads provided url as media source
+    */
+  def loadSource(source: String): Unit = js.native
+  
   /**
     * get: Return the bound mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) from the hls instance
     */
   val media: js.UndefOr[HTMLMediaElement | Null] = js.native
+  
   /**
     * get: return next playback quality level (playback quality level for next buffered fragment)
     * return -1 if next fragment not buffered yet
@@ -62,6 +110,7 @@ trait Hls extends js.Object {
     * set to -1 for automatic level selection
     */
   var nextLevel: Double = js.native
+  
   /**
     * get: return quality level that will be used to load next fragment
     * set: force quality level for next loaded fragment
@@ -69,56 +118,12 @@ trait Hls extends js.Object {
     * after a fragment at this quality level has been loaded, hls.loadLevel will prevail
     */
   var nextLoadLevel: Double = js.native
-  /**
-    * return start level index (level of first fragment that will be played back)
-    *      if not overrided by user: first level appearing in manifest will be used as start level
-    *      if -1: automatic start level selection, playback will start from level matching download bandwidth (determined from download of first segment)
-    *
-    *  default valus is hls.firstLevel
-    */
-  var startLevel: Double = js.native
-  /**
-    * (default: false)
-    * get/set : if set to true the active subtitle track mode will be set to showing and the browser will display the active subtitles.
-    * If set to false, the mode will be set to hidden.
-    */
-  var subtitleDisplay: Boolean = js.native
-  /**
-    * get/set : subtitle track id (returned by).
-    * Returns -1 if no track is visible.
-    * Set to -1 to hide all subtitle tracks.
-    */
-  var subtitleTrack: Double = js.native
-  /**
-    * get : array of subtitle tracks exposed in manifest
-    */
-  val subtitleTracks: js.Array[_] = js.native
-  /**
-    * calling this method will:
-    *      bind mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) and hls instances
-    *      create MediaSource and set it as video or audio source
-    *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
-    */
-  def attachMedia(mediaElement: HTMLMediaElement): Unit = js.native
-  /**
-    * should be called to free used resources and destroy hls context
-    */
-  def destroy(): Unit = js.native
-  /**
-    * calling this method will:
-    *      unbind HTMLMediaElement (aka. HTMLVideoElement or HTMLAudioElement) from hls instance
-    *      signal the end of the stream on MediaSource
-    *      resets media source ( media.src = '',  )
-    */
-  def detachMedia(): Unit = js.native
-  /**
-    * loads provided url as media source
-    */
-  def loadSource(source: String): Unit = js.native
+  
   /**
     * remove hls.js event listener
     */
   def off(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  
   def on(
     event: K_AUDIO_TRACKS_UPDATED,
     callback: js.Function2[/* event */ K_AUDIO_TRACKS_UPDATED, /* data */ audioTracksUpdatedData, Unit]
@@ -318,6 +323,7 @@ trait Hls extends js.Object {
     event: K_SUBTITLE_TRACK_SWITCH,
     callback: js.Function2[/* event */ K_SUBTITLE_TRACK_SWITCH, /* data */ subtitleTrackSwitchData, Unit]
   ): Unit = js.native
+  
   def once(
     event: K_AUDIO_TRACKS_UPDATED,
     callback: js.Function2[/* event */ K_AUDIO_TRACKS_UPDATED, /* data */ audioTracksUpdatedData, Unit]
@@ -517,10 +523,21 @@ trait Hls extends js.Object {
     event: K_SUBTITLE_TRACK_SWITCH,
     callback: js.Function2[/* event */ K_SUBTITLE_TRACK_SWITCH, /* data */ subtitleTrackSwitchData, Unit]
   ): Unit = js.native
+  
   /**
     * should be invoked to recover media error.
     */
   def recoverMediaError(): Unit = js.native
+  
+  /**
+    * return start level index (level of first fragment that will be played back)
+    *      if not overrided by user: first level appearing in manifest will be used as start level
+    *      if -1: automatic start level selection, playback will start from level matching download bandwidth (determined from download of first segment)
+    *
+    *  default valus is hls.firstLevel
+    */
+  var startLevel: Double = js.native
+  
   /**
     * by default, hls.js will automatically start loading quality level playlists, and fragments after Hls.Events.MANIFEST_PARSED event has been triggered (and video element has been attached)
     * however if config.autoStartLoad is set to false, hls.startLoad() needs to be called to manually start playlist and fragments loading
@@ -532,10 +549,31 @@ trait Hls extends js.Object {
     */
   def startLoad(): Unit = js.native
   def startLoad(startPosition: Double): Unit = js.native
+  
   /**
     * stop playlist/fragment loading. could be resumed later on by calling hls.startLoad()
     */
   def stopLoad(): Unit = js.native
+  
+  /**
+    * (default: false)
+    * get/set : if set to true the active subtitle track mode will be set to showing and the browser will display the active subtitles.
+    * If set to false, the mode will be set to hidden.
+    */
+  var subtitleDisplay: Boolean = js.native
+  
+  /**
+    * get/set : subtitle track id (returned by).
+    * Returns -1 if no track is visible.
+    * Set to -1 to hide all subtitle tracks.
+    */
+  var subtitleTrack: Double = js.native
+  
+  /**
+    * get : array of subtitle tracks exposed in manifest
+    */
+  val subtitleTracks: js.Array[SubtitleTrack] = js.native
+  
   /**
     * if media error are still raised after calling hls.recoverMediaError(), calling this method, could be useful to workaround audio codec mismatch.
     * the workflow should be:
@@ -544,4 +582,3 @@ trait Hls extends js.Object {
     */
   def swapAudioCodec(): Unit = js.native
 }
-

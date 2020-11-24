@@ -3,9 +3,37 @@ package typings.dompurify
 import typings.dompurify.mod.HookName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dompurifyStrings {
+  
+  @scala.inline
+  def afterSanitizeAttributes: afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[afterSanitizeAttributes]
+  
+  @scala.inline
+  def afterSanitizeElements: afterSanitizeElements = "afterSanitizeElements".asInstanceOf[afterSanitizeElements]
+  
+  @scala.inline
+  def afterSanitizeShadowDOM: afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[afterSanitizeShadowDOM]
+  
+  @scala.inline
+  def beforeSanitizeAttributes: beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[beforeSanitizeAttributes]
+  
+  @scala.inline
+  def beforeSanitizeElements: beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[beforeSanitizeElements]
+  
+  @scala.inline
+  def beforeSanitizeShadowDOM: beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[beforeSanitizeShadowDOM]
+  
+  @scala.inline
+  def uponSanitizeAttribute: uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[uponSanitizeAttribute]
+  
+  @scala.inline
+  def uponSanitizeElement: uponSanitizeElement = "uponSanitizeElement".asInstanceOf[uponSanitizeElement]
+  
+  @scala.inline
+  def uponSanitizeShadowNode: uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[uponSanitizeShadowNode]
+  
   @js.native
   sealed trait afterSanitizeAttributes extends HookName
   
@@ -32,24 +60,4 @@ object dompurifyStrings {
   
   @js.native
   sealed trait uponSanitizeShadowNode extends HookName
-  
-  @scala.inline
-  def afterSanitizeAttributes: afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[afterSanitizeAttributes]
-  @scala.inline
-  def afterSanitizeElements: afterSanitizeElements = "afterSanitizeElements".asInstanceOf[afterSanitizeElements]
-  @scala.inline
-  def afterSanitizeShadowDOM: afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[afterSanitizeShadowDOM]
-  @scala.inline
-  def beforeSanitizeAttributes: beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[beforeSanitizeAttributes]
-  @scala.inline
-  def beforeSanitizeElements: beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[beforeSanitizeElements]
-  @scala.inline
-  def beforeSanitizeShadowDOM: beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[beforeSanitizeShadowDOM]
-  @scala.inline
-  def uponSanitizeAttribute: uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[uponSanitizeAttribute]
-  @scala.inline
-  def uponSanitizeElement: uponSanitizeElement = "uponSanitizeElement".asInstanceOf[uponSanitizeElement]
-  @scala.inline
-  def uponSanitizeShadowNode: uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[uponSanitizeShadowNode]
 }
-

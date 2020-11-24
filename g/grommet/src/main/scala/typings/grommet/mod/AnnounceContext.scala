@@ -5,9 +5,8 @@ import typings.grommet.announceContextMod.AnnounceValue
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "AnnounceContext")
+@JSImport("grommet", "AnnounceContext")
 @js.native
 object AnnounceContext extends TopLevel[Context[AnnounceValue]]
-

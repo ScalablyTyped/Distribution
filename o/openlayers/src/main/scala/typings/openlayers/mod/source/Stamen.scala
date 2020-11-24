@@ -3,7 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.olx.source.StamenOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,4 +24,3 @@ class Stamen protected () extends XYZ {
     */
   def this(options: StamenOptions) = this()
 }
-

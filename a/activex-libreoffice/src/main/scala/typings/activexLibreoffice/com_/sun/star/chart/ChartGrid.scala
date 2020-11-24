@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies the grid of the diagram in a chart.
@@ -29,8 +29,8 @@ trait ChartGrid
   extends XPropertySet
      with LineProperties
      with UserDefinedAttributesSupplier
-
 object ChartGrid {
+  
   @scala.inline
   def apply(
     LineCap: LineCap,
@@ -66,4 +66,3 @@ object ChartGrid {
     __obj.asInstanceOf[ChartGrid]
   }
 }
-

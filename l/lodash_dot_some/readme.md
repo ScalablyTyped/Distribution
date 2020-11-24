@@ -11,8 +11,8 @@ The lodash method `_.some` exported as a module.
 | Full name          | lodash.some |
 | Keywords           | lodash-modularized, some |
 | # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 70514516 |
+| # dependents       | 100 |
+| # downloads        | 71873436 |
 | # stars            | 0 |
 
 ## Links

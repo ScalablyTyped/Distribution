@@ -2,17 +2,20 @@ package typings.minappEnv
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object App {
+  
   type AppConstructor = js.Function1[
     /* options */ (typings.minappEnv.App.AppInstance[typings.minappEnv.IAnyObject with typings.minappEnv.App.AppInstance[js.Object]]) with typings.minappEnv.IAnyObject with typings.minappEnv.App.AppInstance[js.Object], 
     scala.Unit
   ]
+  
   type GetApp = js.Function1[
     /* opts */ js.UndefOr[typings.minappEnv.App.IGetAppOption], 
     typings.minappEnv.App.AppInstance[typings.minappEnv.IAnyObject] with typings.minappEnv.IAnyObject
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.minappEnv.minappEnvNumbers.`1001`
     - typings.minappEnv.minappEnvNumbers.`1005`

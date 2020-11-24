@@ -1,43 +1,33 @@
 package typings.browserfs.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ArrayBufferView
-import typings.node.SharedArrayBuffer
-import typings.node.anon.ToPrimitive
-import typings.node.anon.ValueOf
+import typings.buffer.mod.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofBuffer_
-  extends Instantiable1[/* str */ String, Buffer]
-     with Instantiable2[/* str */ String, /* encoding */ BufferEncoding, Buffer] {
-  /**
-    * This is the number of bytes used to determine the size of pre-allocated, internal Buffer instances used for pooling. This value may be modified.
-    */
-  var poolSize: Double = js.native
+trait TypeofBuffer_ extends Instantiable1[/* str */ String, Buffer] {
+  
   /**
     * Allocates a new buffer of {size} octets.
     *
     * @param size count of octets to allocate.
     * @param fill if specified, buffer will be initialized by calling buf.fill(fill).
     *    If parameter is omitted, buffer will be filled with zeros.
-    * @param encoding encoding used for call to buf.fill while initalizing
+    * @param encoding encoding used for call to buf.fill while initializing
     */
   def alloc(size: Double): Buffer = js.native
-  def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Buffer = js.native
+  def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: String): Buffer = js.native
   def alloc(size: Double, fill: String): Buffer = js.native
-  def alloc(size: Double, fill: String, encoding: BufferEncoding): Buffer = js.native
+  def alloc(size: Double, fill: String, encoding: String): Buffer = js.native
   def alloc(size: Double, fill: Double): Buffer = js.native
-  def alloc(size: Double, fill: Double, encoding: BufferEncoding): Buffer = js.native
+  def alloc(size: Double, fill: Double, encoding: String): Buffer = js.native
   def alloc(size: Double, fill: Buffer): Buffer = js.native
-  def alloc(size: Double, fill: Buffer, encoding: BufferEncoding): Buffer = js.native
+  def alloc(size: Double, fill: Buffer, encoding: String): Buffer = js.native
+  
   /**
     * Allocates a new buffer of {size} octets, leaving memory not initialized, so the contents
     * of the newly created Buffer are unknown and may contain sensitive data.
@@ -45,6 +35,7 @@ trait TypeofBuffer_
     * @param size count of octets to allocate
     */
   def allocUnsafe(size: Double): Buffer = js.native
+  
   /**
     * Allocates a new non-pooled buffer of {size} octets, leaving memory not initialized, so the contents
     * of the newly created Buffer are unknown and may contain sensitive data.
@@ -52,6 +43,7 @@ trait TypeofBuffer_
     * @param size count of octets to allocate
     */
   def allocUnsafeSlow(size: Double): Buffer = js.native
+  
   /**
     * Gives the actual byte length of a string. encoding defaults to 'utf8'.
     * This is not the same as String.prototype.length since that returns the number of characters in a string.
@@ -60,17 +52,13 @@ trait TypeofBuffer_
     * @param encoding encoding used to evaluate (defaults to 'utf8')
     */
   def byteLength(string: String): Double = js.native
-  def byteLength(string: String, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: ArrayBufferView): Double = js.native
-  def byteLength(string: ArrayBufferView, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: SharedArrayBuffer): Double = js.native
-  def byteLength(string: SharedArrayBuffer, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: ArrayBuffer): Double = js.native
-  def byteLength(string: ArrayBuffer, encoding: BufferEncoding): Double = js.native
+  def byteLength(string: String, encoding: String): Double = js.native
+  
   /**
     * The same as buf1.compare(buf2).
     */
   def compare(buf1: Uint8Array, buf2: Uint8Array): Double = js.native
+  
   /**
     * Returns a buffer which is the result of concatenating all the buffers in the list together.
     *
@@ -84,65 +72,56 @@ trait TypeofBuffer_
     */
   def concat(list: js.Array[Uint8Array]): Buffer = js.native
   def concat(list: js.Array[Uint8Array], totalLength: Double): Buffer = js.native
-  def from(arrayBuffer: SharedArrayBuffer): Buffer = js.native
-  def from(arrayBuffer: SharedArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
-  def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double): Buffer = js.native
-  def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
+  
   /**
     * When passed a reference to the .buffer property of a TypedArray instance,
     * the newly created Buffer will share the same allocated memory as the TypedArray.
     * The optional {byteOffset} and {length} arguments specify a memory range
     * within the {arrayBuffer} that will be shared by the Buffer.
     *
-    * @param arrayBuffer The .buffer property of any TypedArray or a new ArrayBuffer()
+    * @param arrayBuffer The .buffer property of a TypedArray or a new ArrayBuffer()
+    * @param byteOffset
+    * @param length
     */
   def from(arrayBuffer: ArrayBuffer): Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double): Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
   /**
-    * Creates a new Buffer using the passed {data}
-    * @param data data to create a new Buffer
+    * Allocates a new Buffer using an {array} of octets.
+    *
+    * @param array
     */
-  def from(data: js.Array[Double]): Buffer = js.native
-  def from(data: Uint8Array): Buffer = js.native
-  def from(obj: ToPrimitive): Buffer = js.native
-  def from(obj: ToPrimitive, byteOffset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
-  def from(obj: ToPrimitive, byteOffset: Double): Buffer = js.native
-  def from(obj: ToPrimitive, byteOffset: Double, length: Double): Buffer = js.native
+  def from(array: js.Array[_]): Buffer = js.native
   /**
-    * Creates a new buffer containing the coerced value of an object
-    * A `TypeError` will be thrown if {obj} has not mentioned methods or is not of other type appropriate for `Buffer.from()` variants.
-    * @param obj An object supporting `Symbol.toPrimitive` or `valueOf()`.
+    * Copies the passed {buffer} data onto a new Buffer instance.
+    *
+    * @param buffer
     */
-  def from(obj: ValueOf): Buffer = js.native
-  def from(obj: ValueOf, byteOffset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
-  def from(obj: ValueOf, byteOffset: Double): Buffer = js.native
-  def from(obj: ValueOf, byteOffset: Double, length: Double): Buffer = js.native
+  def from(buffer: Buffer): Buffer = js.native
+  def from(buffer: Uint8Array): Buffer = js.native
   /**
     * Creates a new Buffer containing the given JavaScript string {str}.
     * If provided, the {encoding} parameter identifies the character encoding.
     * If not provided, {encoding} defaults to 'utf8'.
+    *
+    * @param str
     */
   def from(str: String): Buffer = js.native
-  def from(str: String, encoding: BufferEncoding): Buffer = js.native
+  def from(str: String, encoding: String): Buffer = js.native
+  
   /**
     * Returns true if {obj} is a Buffer
     *
     * @param obj object to test.
     */
-  def isBuffer(obj: js.Any): /* is node.Buffer */ Boolean = js.native
+  def isBuffer(obj: js.Any): /* is buffer.buffer.Buffer */ Boolean = js.native
+  
   /**
     * Returns true if {encoding} is a valid encoding argument.
     * Valid string encodings in Node 0.12: 'ascii'|'utf8'|'utf16le'|'ucs2'(alias of 'utf16le')|'base64'|'binary'(deprecated)|'hex'
     *
     * @param encoding string to test.
     */
-  def isEncoding(encoding: String): /* is node.BufferEncoding */ Boolean = js.native
-  /**
-    * Creates a new Buffer using the passed {data}
-    * @param values to create a new Buffer
-    */
-  def of(items: Double*): Buffer = js.native
+  def isEncoding(encoding: String): Boolean = js.native
 }
-

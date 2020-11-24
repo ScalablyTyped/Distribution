@@ -2,9 +2,34 @@ package typings.dynamodb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamodbStrings {
+  
+  @scala.inline
+  def ALL: ALL = "ALL".asInstanceOf[ALL]
+  
+  @scala.inline
+  def Binary: Binary = "Binary".asInstanceOf[Binary]
+  
+  @scala.inline
+  def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
+  
+  @scala.inline
+  def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
+  
+  @scala.inline
+  def Number: Number = "Number".asInstanceOf[Number]
+  
+  @scala.inline
+  def String: String = "String".asInstanceOf[String]
+  
+  @scala.inline
+  def global: global = "global".asInstanceOf[global]
+  
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  
   @js.native
   sealed trait ALL extends js.Object
   
@@ -28,22 +53,4 @@ object dynamodbStrings {
   
   @js.native
   sealed trait local extends js.Object
-  
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def Binary: Binary = "Binary".asInstanceOf[Binary]
-  @scala.inline
-  def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
-  @scala.inline
-  def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
-  @scala.inline
-  def Number: Number = "Number".asInstanceOf[Number]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
 }
-

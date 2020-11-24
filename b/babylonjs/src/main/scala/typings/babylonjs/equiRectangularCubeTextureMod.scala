@@ -5,11 +5,12 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", JSImport.Namespace)
 @js.native
 object equiRectangularCubeTextureMod extends js.Object {
+  
   @js.native
   class EquiRectangularCubeTexture protected () extends BaseTexture {
     /**
@@ -25,7 +26,32 @@ object equiRectangularCubeTextureMod extends js.Object {
       */
     def this(url: String, scene: Scene, size: Double) = this()
     def this(url: String, scene: Scene, size: Double, noMipmap: Boolean) = this()
+    def this(url: String, scene: Scene, size: Double, noMipmap: js.UndefOr[scala.Nothing], gammaSpace: Boolean) = this()
     def this(url: String, scene: Scene, size: Double, noMipmap: Boolean, gammaSpace: Boolean) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: js.UndefOr[scala.Nothing],
+      gammaSpace: js.UndefOr[scala.Nothing],
+      onLoad: Nullable[js.Function0[Unit]]
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: js.UndefOr[scala.Nothing],
+      gammaSpace: Boolean,
+      onLoad: Nullable[js.Function0[Unit]]
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: js.UndefOr[scala.Nothing],
+      onLoad: Nullable[js.Function0[Unit]]
+    ) = this()
     def this(
       url: String,
       scene: Scene,
@@ -38,51 +64,82 @@ object equiRectangularCubeTextureMod extends js.Object {
       url: String,
       scene: Scene,
       size: Double,
+      noMipmap: js.UndefOr[scala.Nothing],
+      gammaSpace: js.UndefOr[scala.Nothing],
+      onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
+      onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: js.UndefOr[scala.Nothing],
+      gammaSpace: Boolean,
+      onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
+      onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: js.UndefOr[scala.Nothing],
+      onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
+      onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
       noMipmap: Boolean,
       gammaSpace: Boolean,
-      onLoad: Nullable[js.Function0[Unit]],
-      onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-          ]
+      onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
+      onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
     ) = this()
+    
     /** The buffer of the image. */
     var _buffer: js.Any = js.native
+    
     /** The height of the input image. */
     var _height: js.Any = js.native
+    
     var _noMipmap: js.Any = js.native
+    
     var _onError: js.Any = js.native
+    
     var _onLoad: js.Any = js.native
+    
     /** The size of the cubemap. */
     var _size: js.Any = js.native
+    
     /** The width of the input image. */
     var _width: js.Any = js.native
-    /** The texture coordinates mode. As this texture is stored in a cube format, please modify carefully. */
-    @JSName("coordinatesMode")
-    var coordinatesMode_FEquiRectangularCubeTexture: Double = js.native
+    
     /**
       * Convert the ArrayBuffer into a Float32Array and drop the transparency channel.
       * @param buffer The ArrayBuffer that should be converted.
       * @returns The buffer as Float32Array.
       */
     var getFloat32ArrayFromArrayBuffer: js.Any = js.native
+    
     /**
       * Load the image data, by putting the image on a canvas and extracting its buffer.
       */
     var loadImage: js.Any = js.native
+    
     /**
       * Convert the image buffer into a cubemap and create a CubeTexture.
       */
     var loadTexture: js.Any = js.native
+    
     /** The URL to the image. */
     var url: String = js.native
   }
-  
   /* static members */
   @js.native
   object EquiRectangularCubeTexture extends js.Object {
+    
     /** The six faces of the cube. */
     var _FacesMapping: js.Any = js.native
   }
-  
 }
-

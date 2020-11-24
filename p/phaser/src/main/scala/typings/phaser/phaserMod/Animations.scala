@@ -4,11 +4,12 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Animations")
 @js.native
 object Animations extends js.Object {
+  
   /**
     * A Frame based Animation.
     * 
@@ -77,6 +78,7 @@ object Animations extends js.Object {
   
   @js.native
   object Events extends js.Object {
+    
     /**
       * The Add Animation Event.
       * 
@@ -86,6 +88,7 @@ object Animations extends js.Object {
       * or the Animation Manager creating a new animation directly.
       */
     val ADD_ANIMATION: js.Any = js.native
+    
     /**
       * The Animation Complete Event.
       * 
@@ -95,6 +98,7 @@ object Animations extends js.Object {
       * animation at the same time, this event will invoke its handler for each one of them.
       */
     val ANIMATION_COMPLETE: js.Any = js.native
+    
     /**
       * The Animation Repeat Event.
       * 
@@ -104,6 +108,7 @@ object Animations extends js.Object {
       * bound to this event will be invoked every time the Animation repeats, for every Game Object that may have it.
       */
     val ANIMATION_REPEAT: js.Any = js.native
+    
     /**
       * The Animation Restart Event.
       * 
@@ -113,6 +118,7 @@ object Animations extends js.Object {
       * animation at the same time, this event will invoke its handler for each one of them.
       */
     val ANIMATION_RESTART: js.Any = js.native
+    
     /**
       * The Animation Start Event.
       * 
@@ -122,6 +128,7 @@ object Animations extends js.Object {
       * animation at the same time, this event will invoke its handler for each one of them.
       */
     val ANIMATION_START: js.Any = js.native
+    
     /**
       * The Pause All Animations Event.
       * 
@@ -131,12 +138,14 @@ object Animations extends js.Object {
       * that the game has paused as well.
       */
     val PAUSE_ALL: js.Any = js.native
+    
     /**
       * The Remove Animation Event.
       * 
       * This event is dispatched when an animation is removed from the global Animation Manager.
       */
     val REMOVE_ANIMATION: js.Any = js.native
+    
     /**
       * The Resume All Animations Event.
       * 
@@ -145,6 +154,7 @@ object Animations extends js.Object {
       * When this happens all current animations will continue updating again.
       */
     val RESUME_ALL: js.Any = js.native
+    
     /**
       * The Sprite Animation Complete Event.
       * 
@@ -155,6 +165,7 @@ object Animations extends js.Object {
       * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_COMPLETE` event.
       */
     val SPRITE_ANIMATION_COMPLETE: js.Any = js.native
+    
     /**
       * The Sprite Animation Key Complete Event.
       * 
@@ -164,6 +175,7 @@ object Animations extends js.Object {
       * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationcomplete-explode`.
       */
     val SPRITE_ANIMATION_KEY_COMPLETE: js.Any = js.native
+    
     /**
       * The Sprite Animation Key Repeat Event.
       * 
@@ -173,6 +185,7 @@ object Animations extends js.Object {
       * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationrepeat-explode`.
       */
     val SPRITE_ANIMATION_KEY_REPEAT: js.Any = js.native
+    
     /**
       * The Sprite Animation Key Restart Event.
       * 
@@ -182,6 +195,7 @@ object Animations extends js.Object {
       * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationrestart-explode`.
       */
     val SPRITE_ANIMATION_KEY_RESTART: js.Any = js.native
+    
     /**
       * The Sprite Animation Key Start Event.
       * 
@@ -191,6 +205,7 @@ object Animations extends js.Object {
       * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationstart-explode`.
       */
     val SPRITE_ANIMATION_KEY_START: js.Any = js.native
+    
     /**
       * The Sprite Animation Key Update Event.
       * 
@@ -201,6 +216,7 @@ object Animations extends js.Object {
       * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationupdate-explode`.
       */
     val SPRITE_ANIMATION_KEY_UPDATE: js.Any = js.native
+    
     /**
       * The Sprite Animation Repeat Event.
       * 
@@ -211,6 +227,7 @@ object Animations extends js.Object {
       * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_REPEAT` event.
       */
     val SPRITE_ANIMATION_REPEAT: js.Any = js.native
+    
     /**
       * The Sprite Animation Restart Event.
       * 
@@ -221,6 +238,7 @@ object Animations extends js.Object {
       * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_RESTART` event.
       */
     val SPRITE_ANIMATION_RESTART: js.Any = js.native
+    
     /**
       * The Sprite Animation Start Event.
       * 
@@ -231,6 +249,7 @@ object Animations extends js.Object {
       * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_START` event.
       */
     val SPRITE_ANIMATION_START: js.Any = js.native
+    
     /**
       * The Sprite Animation Update Event.
       * 
@@ -243,6 +262,4 @@ object Animations extends js.Object {
       */
     val SPRITE_ANIMATION_UPDATE: js.Any = js.native
   }
-  
 }
-

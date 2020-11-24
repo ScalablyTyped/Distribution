@@ -6,13 +6,13 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IObservableMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PasswordCredentialPropertyStore
   extends IObservableMap[String, js.Any]
-
 object PasswordCredentialPropertyStore {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -29,4 +29,3 @@ object PasswordCredentialPropertyStore {
     __obj.asInstanceOf[PasswordCredentialPropertyStore]
   }
 }
-

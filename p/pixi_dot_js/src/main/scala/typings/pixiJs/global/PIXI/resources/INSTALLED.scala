@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI.resources
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Collection of installed resource types, class must extend {@link PIXI.resources.Resource}.
@@ -35,4 +35,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object INSTALLED
   extends TopLevel[js.Array[js.Any]]
-

@@ -4,11 +4,12 @@ import typings.react.mod.Dispatch
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("use-combined-reducers", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def default[T, A](
     combinedReducers: Record[
       /* keyof T */ String, 
@@ -19,4 +20,3 @@ object mod extends js.Object {
     ]
   ): js.Tuple2[T, js.Function1[/* action */ A, Unit]] = js.native
 }
-

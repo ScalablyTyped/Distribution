@@ -7,7 +7,7 @@ import typings.std.Event
 import typings.std.HTMLSelectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/csvviewer/lib/toolbar", "CSVDelimiter")
 @js.native
@@ -16,11 +16,14 @@ class CSVDelimiter protected () extends Widget {
     * Construct a new csv table widget.
     */
   def this(options: IOptions) = this()
+  
   var _delimiterChanged: js.Any = js.native
+  
   /**
     * A signal emitted when the delimiter selection has changed.
     */
   def delimiterChanged: ISignal[this.type, String] = js.native
+  
   /**
     * Handle the DOM events for the widget.
     *
@@ -32,9 +35,9 @@ class CSVDelimiter protected () extends Widget {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * The delimiter dropdown menu.
     */
   def selectNode: HTMLSelectElement = js.native
 }
-

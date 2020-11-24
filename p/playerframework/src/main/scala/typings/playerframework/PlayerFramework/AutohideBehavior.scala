@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AutohideBehavior extends js.Object
-
 @JSGlobal("PlayerFramework.AutohideBehavior")
 @js.native
 object AutohideBehavior extends js.Object {
+  
   /**
     * All behaviors are applied to the autohide feature.
     **/
@@ -33,6 +33,4 @@ object AutohideBehavior extends js.Object {
     **/
   @js.native
   sealed trait preventDuringInteractiveHover extends AutohideBehavior
-  
 }
-

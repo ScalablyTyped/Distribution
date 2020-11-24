@@ -5,11 +5,12 @@ import typings.parse.mod.global.Parse.Object
 import typings.parse.mod.global.Parse.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Parse.Cloud.beforeFind")
 @js.native
 object beforeFind extends js.Object {
+  
   def apply(arg1: js.Any): Unit = js.native
   def apply(
     arg1: js.Any,
@@ -19,4 +20,3 @@ object beforeFind extends js.Object {
     ]
   ): Unit = js.native
 }
-

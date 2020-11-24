@@ -2,7 +2,7 @@ package typings.locale.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locale", "Locale")
 @js.native
@@ -16,29 +16,34 @@ class Locale protected () extends js.Object {
     * containing the latter.
     */
   def this(str: String) = this()
+  
   /**
     * returns user-generated input used to construct the Locale. Eg, `en-US`
     */
   var code: String = js.native
+  
   /**
     * returns the second 2 letters of the code if present, uppercased.
     * Returns `undefined` otherwise
     */
   var country: js.UndefOr[String] = js.native
+  
   /** returns the first 2 letters of the code, lowercased */
   var language: String = js.native
+  
   /**
     * returns the language, followed by a `_` and the country, if the
     * country is present
     */
   var normalized: String = js.native
+  
   def toJSON(): String | Null = js.native
 }
-
 /* static members */
 @JSImport("locale", "Locale")
 @js.native
 object Locale extends js.Object {
+  
   /**
     * The default locale for the environment, as parsed from
     * `process.env.LANG`. This is used as the fallback when the best
@@ -47,4 +52,3 @@ object Locale extends js.Object {
     */
   var default: Locale = js.native
 }
-

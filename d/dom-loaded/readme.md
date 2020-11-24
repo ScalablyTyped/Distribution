@@ -12,7 +12,7 @@ Check when the DOM has loaded like `DOMContentLoaded`
 | Keywords           | browser, dom, document, ready, doc, complete, check, wait, domcontentloaded, readystate |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 29205 |
+| # downloads        | 44641 |
 | # stars            | 0 |
 
 ## Links

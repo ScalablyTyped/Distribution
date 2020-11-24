@@ -1,62 +1,147 @@
 package typings.rascal.mod
 
 import typings.rascal.anon.Dictkey
-import typings.rascal.anon.TimeoutNumber
+import typings.rascal.anon.Timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ConnectionAttributes extends js.Object {
-  var auth: js.UndefOr[String] = js.undefined
-  var hostname: js.UndefOr[String] = js.undefined
-  var loggableUrl: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[Dictkey] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var pathname: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[String | Double] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var query: js.UndefOr[String] = js.undefined
-  var slashes: js.UndefOr[Boolean] = js.undefined
-  var socketOptions: js.UndefOr[TimeoutNumber] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var user: js.UndefOr[String] = js.undefined
-  var vhost: js.UndefOr[String] = js.undefined
+  
+  var auth: js.UndefOr[String] = js.native
+  
+  var hostname: js.UndefOr[String] = js.native
+  
+  var loggableUrl: js.UndefOr[String] = js.native
+  
+  var options: js.UndefOr[Dictkey] = js.native
+  
+  var password: js.UndefOr[String] = js.native
+  
+  var pathname: js.UndefOr[String] = js.native
+  
+  var port: js.UndefOr[String | Double] = js.native
+  
+  var protocol: js.UndefOr[String] = js.native
+  
+  var query: js.UndefOr[String] = js.native
+  
+  var slashes: js.UndefOr[Boolean] = js.native
+  
+  var socketOptions: js.UndefOr[Timeout] = js.native
+  
+  var url: js.UndefOr[String] = js.native
+  
+  var user: js.UndefOr[String] = js.native
+  
+  var vhost: js.UndefOr[String] = js.native
 }
-
 object ConnectionAttributes {
+  
   @scala.inline
-  def apply(
-    auth: String = null,
-    hostname: String = null,
-    loggableUrl: String = null,
-    options: Dictkey = null,
-    password: String = null,
-    pathname: String = null,
-    port: String | Double = null,
-    protocol: String = null,
-    query: String = null,
-    slashes: js.UndefOr[Boolean] = js.undefined,
-    socketOptions: TimeoutNumber = null,
-    url: String = null,
-    user: String = null,
-    vhost: String = null
-  ): ConnectionAttributes = {
+  def apply(): ConnectionAttributes = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (loggableUrl != null) __obj.updateDynamic("loggableUrl")(loggableUrl.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(slashes)) __obj.updateDynamic("slashes")(slashes.get.asInstanceOf[js.Any])
-    if (socketOptions != null) __obj.updateDynamic("socketOptions")(socketOptions.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAttributes]
   }
+  
+  @scala.inline
+  implicit class ConnectionAttributesOps[Self <: ConnectionAttributes] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAuth(value: String): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    
+    @scala.inline
+    def setLoggableUrl(value: String): Self = this.set("loggableUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLoggableUrl: Self = this.set("loggableUrl", js.undefined)
+    
+    @scala.inline
+    def setOptions(value: Dictkey): Self = this.set("options", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    
+    @scala.inline
+    def setPathname(value: String): Self = this.set("pathname", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePathname: Self = this.set("pathname", js.undefined)
+    
+    @scala.inline
+    def setPort(value: String | Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    
+    @scala.inline
+    def setSlashes(value: Boolean): Self = this.set("slashes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSlashes: Self = this.set("slashes", js.undefined)
+    
+    @scala.inline
+    def setSocketOptions(value: Timeout): Self = this.set("socketOptions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSocketOptions: Self = this.set("socketOptions", js.undefined)
+    
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    
+    @scala.inline
+    def setVhost(value: String): Self = this.set("vhost", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteVhost: Self = this.set("vhost", js.undefined)
+  }
 }
-

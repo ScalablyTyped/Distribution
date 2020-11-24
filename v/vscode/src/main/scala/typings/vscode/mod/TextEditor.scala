@@ -4,37 +4,16 @@ import typings.vscode.Thenable
 import typings.vscode.anon.UndoStopAfter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextEditor extends js.Object {
+  
   /**
     * The document associated with this text editor. The document will be the same for the entire lifetime of this text editor.
     */
   val document: TextDocument = js.native
-  /**
-    * Text editor options.
-    */
-  var options: TextEditorOptions = js.native
-  /**
-    * The primary selection on this text editor. Shorthand for `TextEditor.selections[0]`.
-    */
-  var selection: Selection = js.native
-  /**
-    * The selections in this text editor. The primary selection is always at index 0.
-    */
-  var selections: js.Array[Selection] = js.native
-  /**
-    * The column in which this editor shows. Will be `undefined` in case this
-    * isn't one of the main editors, e.g. an embedded editor, or when the editor
-    * column is larger than three.
-    */
-  var viewColumn: js.UndefOr[ViewColumn] = js.native
-  /**
-    * The current visible ranges in the editor (vertically).
-    * This accounts only for vertical scrolling, and not for horizontal scrolling.
-    */
-  val visibleRanges: js.Array[Range] = js.native
+  
   /**
     * Perform an edit on the document associated with this text editor.
     *
@@ -48,13 +27,15 @@ trait TextEditor extends js.Object {
     */
   def edit(callback: js.Function1[/* editBuilder */ TextEditorEdit, Unit]): Thenable[Boolean] = js.native
   def edit(callback: js.Function1[/* editBuilder */ TextEditorEdit, Unit], options: UndoStopAfter): Thenable[Boolean] = js.native
+  
   /**
-    * ~~Hide the text editor.~~
+    * Hide the text editor.
     *
     * @deprecated Use the command `workbench.action.closeActiveEditor` instead.
     * This method shows unexpected behavior and will be removed in the next major update.
     */
   def hide(): Unit = js.native
+  
   /**
     * Insert a [snippet](#SnippetString) and put the editor into snippet mode. "Snippet mode"
     * means the editor adds placeholders and additional cursors so that the user can complete
@@ -74,6 +55,12 @@ trait TextEditor extends js.Object {
   def insertSnippet(snippet: SnippetString, location: Position, options: UndoStopAfter): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: Range): Thenable[Boolean] = js.native
   def insertSnippet(snippet: SnippetString, location: Range, options: UndoStopAfter): Thenable[Boolean] = js.native
+  
+  /**
+    * Text editor options.
+    */
+  var options: TextEditorOptions = js.native
+  
   /**
     * Scroll as indicated by `revealType` in order to reveal the given range.
     *
@@ -82,6 +69,17 @@ trait TextEditor extends js.Object {
     */
   def revealRange(range: Range): Unit = js.native
   def revealRange(range: Range, revealType: TextEditorRevealType): Unit = js.native
+  
+  /**
+    * The primary selection on this text editor. Shorthand for `TextEditor.selections[0]`.
+    */
+  var selection: Selection = js.native
+  
+  /**
+    * The selections in this text editor. The primary selection is always at index 0.
+    */
+  var selections: js.Array[Selection] = js.native
+  
   /**
     * Adds a set of decorations to the text editor. If a set of decorations already exists with
     * the given [decoration type](#TextEditorDecorationType), they will be replaced.
@@ -92,8 +90,9 @@ trait TextEditor extends js.Object {
     * @param rangesOrOptions Either [ranges](#Range) or more detailed [options](#DecorationOptions).
     */
   def setDecorations(decorationType: TextEditorDecorationType, rangesOrOptions: js.Array[DecorationOptions | Range]): Unit = js.native
+  
   /**
-    * ~~Show the text editor.~~
+    * Show the text editor.
     *
     * @deprecated Use [window.showTextDocument](#window.showTextDocument) instead.
     *
@@ -102,5 +101,17 @@ trait TextEditor extends js.Object {
     */
   def show(): Unit = js.native
   def show(column: ViewColumn): Unit = js.native
+  
+  /**
+    * The column in which this editor shows. Will be `undefined` in case this
+    * isn't one of the main editors, e.g. an embedded editor, or when the editor
+    * column is larger than three.
+    */
+  val viewColumn: js.UndefOr[ViewColumn] = js.native
+  
+  /**
+    * The current visible ranges in the editor (vertically).
+    * This accounts only for vertical scrolling, and not for horizontal scrolling.
+    */
+  val visibleRanges: js.Array[Range] = js.native
 }
-

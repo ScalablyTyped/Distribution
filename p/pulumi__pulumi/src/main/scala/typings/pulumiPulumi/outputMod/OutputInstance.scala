@@ -2,10 +2,11 @@ package typings.pulumiPulumi.outputMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OutputInstance[T] extends js.Object {
+  
   /**
     * Transforms the data of the output with the provided func.  The result remains a
     * Output so that dependent resources can be properly tracked.
@@ -34,6 +35,7 @@ trait OutputInstance[T] extends js.Object {
     */
   @JSName("apply")
   def apply[U](func: js.Function1[/* t */ T, OutputInstance[U] | js.Promise[U] | U]): Output_[U] = js.native
+  
   /**
     * Retrieves the underlying value of this dependency.
     *
@@ -45,4 +47,3 @@ trait OutputInstance[T] extends js.Object {
     */
   def get(): T = js.native
 }
-

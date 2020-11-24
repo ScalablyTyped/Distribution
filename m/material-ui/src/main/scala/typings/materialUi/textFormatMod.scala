@@ -4,11 +4,12 @@ import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui/svg-icons/content/text-format", JSImport.Namespace)
 @js.native
 object textFormatMod extends js.Object {
+  
   @js.native
   class ContentTextFormat ()
     extends Component[SvgIconProps, js.Object, js.Any]
@@ -16,6 +17,4 @@ object textFormatMod extends js.Object {
   @js.native
   class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
-  
 }
-

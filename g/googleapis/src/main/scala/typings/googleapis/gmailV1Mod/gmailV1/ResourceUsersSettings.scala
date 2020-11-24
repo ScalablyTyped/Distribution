@@ -6,17 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings")
 @js.native
 class ResourceUsersSettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var delegates: ResourceUsersSettingsDelegates = js.native
+  
   var filters: ResourceUsersSettingsFilters = js.native
+  
   var forwardingAddresses: ResourceUsersSettingsForwardingaddresses = js.native
-  var sendAs: ResourceUsersSettingsSendas = js.native
+  
   /**
     * gmail.users.settings.getAutoForwarding
     * @desc Gets the auto-forwarding setting for the specified account.
@@ -48,6 +52,7 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoForwarding]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.getImap
     * @desc Gets IMAP settings.
@@ -76,6 +81,7 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImapSettings]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.getPop
     * @desc Gets POP settings.
@@ -104,6 +110,7 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPopSettings]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.getVacation
     * @desc Gets vacation responder settings.
@@ -135,6 +142,9 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVacationSettings]
   ): Unit = js.native
+  
+  var sendAs: ResourceUsersSettingsSendas = js.native
+  
   /**
     * gmail.users.settings.updateAutoForwarding
     * @desc Updates the auto-forwarding setting for the specified account. A
@@ -170,6 +180,7 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoForwarding]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.updateImap
     * @desc Updates IMAP settings.
@@ -199,6 +210,7 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImapSettings]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.updatePop
     * @desc Updates POP settings.
@@ -228,6 +240,7 @@ class ResourceUsersSettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPopSettings]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.updateVacation
     * @desc Updates vacation responder settings.
@@ -261,4 +274,3 @@ class ResourceUsersSettings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVacationSettings]
   ): Unit = js.native
 }
-

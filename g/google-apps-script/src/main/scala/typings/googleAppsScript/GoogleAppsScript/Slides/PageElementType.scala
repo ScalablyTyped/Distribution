@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PageElementType extends js.Object
-
 /**
   * The page element type.
   */
 @JSGlobal("GoogleAppsScript.Slides.PageElementType")
 @js.native
 object PageElementType extends js.Object {
+  
   @js.native
   sealed trait GROUP extends PageElementType
   
@@ -39,6 +39,4 @@ object PageElementType extends js.Object {
   
   @js.native
   sealed trait WORD_ART extends PageElementType
-  
 }
-

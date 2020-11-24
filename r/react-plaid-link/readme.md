@@ -10,15 +10,15 @@ A React component for Plaid Link
 | ------------------ | :-------------: |
 | Full name          | react-plaid-link |
 | Keywords           | react, react-component, plaid |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 515040 |
+| # releases         | 25 |
+| # dependents       | 3 |
+| # downloads        | 1312572 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/pbernasconi/react-plaid-link)
-- [Bugs](https://github.com/pbernasconi/react-plaid-link/issues)
-- [Repository](https://github.com/pbernasconi/react-plaid-link)
+- [Homepage](https://github.com/plaid/react-plaid-link)
+- [Bugs](https://github.com/plaid/react-plaid-link/issues)
+- [Repository](https://github.com/plaid/react-plaid-link)
 - [Npm](https://www.npmjs.com/package/react-plaid-link)
     
 

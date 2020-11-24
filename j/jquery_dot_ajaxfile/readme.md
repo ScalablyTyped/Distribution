@@ -12,7 +12,7 @@ Allow to upload file with old browser
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 599 |
+| # downloads        | 209 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Lazy brush - smooth drawing using mouse or finger
 | Full name          | lazy-brush |
 | Keywords           | brush, mouse, lazy, canvas, drawing, smooth, pencil, string, radius |
 | # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 24308 |
+| # dependents       | 6 |
+| # downloads        | 81164 |
 | # stars            | 0 |
 
 ## Links

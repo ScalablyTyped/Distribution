@@ -2,7 +2,7 @@ package typings.urlParse.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("url-parse", JSImport.Namespace)
 @js.native
@@ -19,4 +19,3 @@ class Class protected () extends URLParse {
   def this(address: String, location: js.Object, parser: Boolean) = this()
   def this(address: String, location: js.Object, parser: QueryParser) = this()
 }
-

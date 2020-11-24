@@ -3,25 +3,29 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BlockLayoutRow extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: BlockLayoutCell): BlockLayoutRow = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): BlockLayoutRow = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.The content cells to be included in the row.
     */
   def getContent(): js.Array[BlockLayoutCell] = js.native
+  
   /**
     * Gets current value of property <code>scrollable</code>.Sets the rendering mode of the BlockLayoutRow
     * to scrollable. In scrollable mode, the cells getaligned side by side, with horizontal scroll bar for
@@ -29,6 +33,7 @@ trait BlockLayoutRow extends Control {
     * @returns Value of property <code>scrollable</code>
     */
   def getScrollable(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.layout.BlockLayoutCell</code> in the aggregation
     * <code>content</code>.and returns its index if found or -1 otherwise.
@@ -36,6 +41,7 @@ trait BlockLayoutRow extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: BlockLayoutCell): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -46,12 +52,14 @@ trait BlockLayoutRow extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: BlockLayoutCell, iIndex: Double): BlockLayoutRow = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[BlockLayoutCell] = js.native
+  
   def removeContent(vContent: String): BlockLayoutCell = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -60,6 +68,7 @@ trait BlockLayoutRow extends Control {
     */
   def removeContent(vContent: Double): BlockLayoutCell = js.native
   def removeContent(vContent: BlockLayoutCell): BlockLayoutCell = js.native
+  
   /**
     * Sets a new value for property <code>scrollable</code>.Sets the rendering mode of the BlockLayoutRow
     * to scrollable. In scrollable mode, the cells getaligned side by side, with horizontal scroll bar for
@@ -70,4 +79,3 @@ trait BlockLayoutRow extends Control {
     */
   def setScrollable(bScrollable: Boolean): BlockLayoutRow = js.native
 }
-

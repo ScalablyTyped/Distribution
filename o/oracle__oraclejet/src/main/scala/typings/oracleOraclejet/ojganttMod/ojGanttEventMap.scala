@@ -41,38 +41,63 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojGanttEventMap[K1, K2, D1, D2] extends dvtBaseComponentEventMap[ojGanttSettableProperties[K1, K2, D1, D2]] {
+  
   var animationOnDataChangeChanged: JetElementCustomEvent[auto | none] = js.native
+  
   var animationOnDisplayChanged: JetElementCustomEvent[auto | none] = js.native
+  
   var asChanged: JetElementCustomEvent[String] = js.native
+  
   var axisPositionChanged: JetElementCustomEvent[bottom | top] = js.native
+  
   var dependencyDataChanged: JetElementCustomEvent[js.UndefOr[DataProvider[K1, D1]]] = js.native
+  
   var dndChanged: JetElementCustomEvent[Move] = js.native
+  
   var endChanged: JetElementCustomEvent[String] = js.native
+  
   var gridlinesChanged: JetElementCustomEvent[Vertical] = js.native
+  
   var majorAxisChanged: JetElementCustomEvent[Scale] = js.native
+  
   var minorAxisChanged: JetElementCustomEvent[Scale] = js.native
+  
   var ojMove: typings.oracleOraclejet.ojganttMod.ojGantt.ojMove[K2, D2] = js.native
+  
   var ojViewportChange: typings.oracleOraclejet.ojganttMod.ojGantt.ojViewportChange = js.native
+  
   var referenceObjectsChanged: JetElementCustomEvent[js.Array[ReferenceObject]] = js.native
+  
   var rowAxisChanged: JetElementCustomEvent[MaxWidth[K2, D2]] = js.native
+  
   var rowDefaultsChanged: JetElementCustomEvent[`8`] = js.native
+  
   var scrollPositionChanged: JetElementCustomEvent[OffsetY] = js.native
+  
   var selectionChanged: JetElementCustomEvent[js.Array[K2]] = js.native
+  
   var selectionModeChanged: JetElementCustomEvent[single | multiple | none] = js.native
+  
   var startChanged: JetElementCustomEvent[String] = js.native
+  
   var taskDataChanged: JetElementCustomEvent[js.UndefOr[DataProvider[K2, D2]]] = js.native
+  
   var taskDefaultsChanged: JetElementCustomEvent[Baseline] = js.native
+  
   var tooltipChanged: JetElementCustomEvent[`9`[K2, D2]] = js.native
+  
   var valueFormatsChanged: JetElementCustomEvent[BaselineDate] = js.native
+  
   var viewportEndChanged: JetElementCustomEvent[String] = js.native
+  
   var viewportStartChanged: JetElementCustomEvent[String] = js.native
 }
-
 object ojGanttEventMap {
+  
   @scala.inline
   def apply[K1, K2, D1, D2](
     abort: UIEvent,
@@ -198,68 +223,95 @@ object ojGanttEventMap {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationOnDataChangeChanged = animationOnDataChangeChanged.asInstanceOf[js.Any], animationOnDisplayChanged = animationOnDisplayChanged.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], asChanged = asChanged.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], axisPositionChanged = axisPositionChanged.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], dependencyDataChanged = dependencyDataChanged.asInstanceOf[js.Any], dndChanged = dndChanged.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], endChanged = endChanged.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], gridlinesChanged = gridlinesChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], majorAxisChanged = majorAxisChanged.asInstanceOf[js.Any], minorAxisChanged = minorAxisChanged.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojMove = ojMove.asInstanceOf[js.Any], ojViewportChange = ojViewportChange.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], referenceObjectsChanged = referenceObjectsChanged.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], rowAxisChanged = rowAxisChanged.asInstanceOf[js.Any], rowDefaultsChanged = rowDefaultsChanged.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], scrollPositionChanged = scrollPositionChanged.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], selectionModeChanged = selectionModeChanged.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], startChanged = startChanged.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], taskDataChanged = taskDataChanged.asInstanceOf[js.Any], taskDefaultsChanged = taskDefaultsChanged.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], tooltipChanged = tooltipChanged.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], trackResizeChanged = trackResizeChanged.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], valueFormatsChanged = valueFormatsChanged.asInstanceOf[js.Any], viewportEndChanged = viewportEndChanged.asInstanceOf[js.Any], viewportStartChanged = viewportStartChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttEventMap[K1, K2, D1, D2]]
   }
+  
   @scala.inline
   implicit class ojGanttEventMapOps[Self <: ojGanttEventMap[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojGanttEventMap[K1, K2, D1, D2])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = this.set("animationOnDataChangeChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | none]): Self = this.set("animationOnDisplayChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAsChanged(value: JetElementCustomEvent[String]): Self = this.set("asChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAxisPositionChanged(value: JetElementCustomEvent[bottom | top]): Self = this.set("axisPositionChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDependencyDataChanged(value: JetElementCustomEvent[js.UndefOr[DataProvider[K1, D1]]]): Self = this.set("dependencyDataChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDndChanged(value: JetElementCustomEvent[Move]): Self = this.set("dndChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndChanged(value: JetElementCustomEvent[String]): Self = this.set("endChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGridlinesChanged(value: JetElementCustomEvent[Vertical]): Self = this.set("gridlinesChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMajorAxisChanged(value: JetElementCustomEvent[Scale]): Self = this.set("majorAxisChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMinorAxisChanged(value: JetElementCustomEvent[Scale]): Self = this.set("minorAxisChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOjMove(value: ojMove[K2, D2]): Self = this.set("ojMove", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOjViewportChange(value: ojViewportChange): Self = this.set("ojViewportChange", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReferenceObjectsChanged(value: JetElementCustomEvent[js.Array[ReferenceObject]]): Self = this.set("referenceObjectsChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRowAxisChanged(value: JetElementCustomEvent[MaxWidth[K2, D2]]): Self = this.set("rowAxisChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRowDefaultsChanged(value: JetElementCustomEvent[`8`]): Self = this.set("rowDefaultsChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScrollPositionChanged(value: JetElementCustomEvent[OffsetY]): Self = this.set("scrollPositionChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelectionChanged(value: JetElementCustomEvent[js.Array[K2]]): Self = this.set("selectionChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelectionModeChanged(value: JetElementCustomEvent[single | multiple | none]): Self = this.set("selectionModeChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStartChanged(value: JetElementCustomEvent[String]): Self = this.set("startChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTaskDataChanged(value: JetElementCustomEvent[js.UndefOr[DataProvider[K2, D2]]]): Self = this.set("taskDataChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTaskDefaultsChanged(value: JetElementCustomEvent[Baseline]): Self = this.set("taskDefaultsChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTooltipChanged(value: JetElementCustomEvent[`9`[K2, D2]]): Self = this.set("tooltipChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValueFormatsChanged(value: JetElementCustomEvent[BaselineDate]): Self = this.set("valueFormatsChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setViewportEndChanged(value: JetElementCustomEvent[String]): Self = this.set("viewportEndChanged", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setViewportStartChanged(value: JetElementCustomEvent[String]): Self = this.set("viewportStartChanged", value.asInstanceOf[js.Any])
   }
-  
 }
-

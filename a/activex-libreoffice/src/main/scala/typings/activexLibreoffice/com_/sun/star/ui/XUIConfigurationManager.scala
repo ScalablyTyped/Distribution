@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a user interface configuration manager interface which controls the structure of all customizable user interface elements.
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XUIConfigurationManager extends XInterface {
+  
   /**
     * retrieves the events manager from the user interface configuration manager.
     *
@@ -24,6 +25,7 @@ trait XUIConfigurationManager extends XInterface {
     * @returns the events manager of the user interface configuration manager, if one exists.
     */
   val EventsManager: XInterface = js.native
+  
   /**
     * retrieves the image manager from the user interface configuration manager.
     *
@@ -31,6 +33,7 @@ trait XUIConfigurationManager extends XInterface {
     * @returns the image manager of the user interface configuration manager.
     */
   val ImageManager: XInterface = js.native
+  
   /**
     * retrieves the keyboard short cut manager from the user interface configuration manager.
     *
@@ -38,11 +41,13 @@ trait XUIConfigurationManager extends XInterface {
     * @returns the short cut manager of the user interface configuration manager.
     */
   val ShortCutManager: XAcceleratorConfiguration = js.native
+  
   /**
     * creates an empty settings data container.
     * @returns an empty user interface element settings data container, which implements {@link UIElementSettings} .
     */
   def createSettings(): XIndexContainer = js.native
+  
   /**
     * retrieves the events manager from the user interface configuration manager.
     *
@@ -51,6 +56,7 @@ trait XUIConfigurationManager extends XInterface {
     * @returns the events manager of the user interface configuration manager, if one exists.
     */
   def getEventsManager(): XInterface = js.native
+  
   /**
     * retrieves the image manager from the user interface configuration manager.
     *
@@ -58,6 +64,7 @@ trait XUIConfigurationManager extends XInterface {
     * @returns the image manager of the user interface configuration manager.
     */
   def getImageManager(): XInterface = js.native
+  
   /**
     * retrieves the settings of a user interface element.
     * @param ResourceURL a resource URL which identifies the user interface element. A resource URL must meet the following syntax: "private:resource/$type/$n
@@ -65,6 +72,7 @@ trait XUIConfigurationManager extends XInterface {
     * @returns settings data of an existing user interface element, which implements {@link UIElementSettings} . If the settings data cannot be found a {@link c
     */
   def getSettings(ResourceURL: String, bWriteable: Boolean): XIndexAccess = js.native
+  
   /**
     * retrieves the keyboard short cut manager from the user interface configuration manager.
     *
@@ -72,6 +80,7 @@ trait XUIConfigurationManager extends XInterface {
     * @returns the short cut manager of the user interface configuration manager.
     */
   def getShortCutManager(): XAcceleratorConfiguration = js.native
+  
   /**
     * retrieves information about all user interface elements within the user interface configuration manager.
     * @param ElementType makes it possible to narrow the result set to only one type of user interface elements. If all user interface element types should be
@@ -79,29 +88,34 @@ trait XUIConfigurationManager extends XInterface {
     * @see UIElementType
     */
   def getUIElementsInfo(ElementType: Double): SafeArray[SafeArray[PropertyValue]] = js.native
+  
   /**
     * determines if the settings of a user interface element is part the user interface configuration manager.
     * @param ResourceURL a resource URL which identifies the user interface element. A resource URL must meet the following syntax: "private:resource/$type/$n
     * @returns `TRUE` if settings have been found, otherwise `FALSE` .
     */
   def hasSettings(ResourceURL: String): Boolean = js.native
+  
   /**
     * inserts the settings of a new user interface element.
     * @param NewResourceURL a resource URL which identifies the new user interface element.
     * @param aNewData the settings data of the new user interface element, which implements {@link UIElementSettings} .  If the settings data is already prese
     */
   def insertSettings(NewResourceURL: String, aNewData: XIndexAccess): Unit = js.native
+  
   /**
     * removes the settings of an existing user interface element.
     * @param ResourceURL a resource URL which identifies the user interface element settings to be removed.  If the settings data cannot be found a {@link com
     */
   def removeSettings(ResourceURL: String): Unit = js.native
+  
   /**
     * replaces the settings of a user interface element with new settings.
     * @param ResourceURL a resource URL which identifies the user interface element to be replaced. If no element with the given resource URL exists a {@link
     * @param aNewData the new settings data of an existing user interface element, which implements {@link UIElementSettings} .  If the settings data cannot b
     */
   def replaceSettings(ResourceURL: String, aNewData: XIndexAccess): Unit = js.native
+  
   /**
     * resets the configuration manager to the default user interface configuration data.
     *
@@ -111,8 +125,8 @@ trait XUIConfigurationManager extends XInterface {
     */
   def reset(): Unit = js.native
 }
-
 object XUIConfigurationManager {
+  
   @scala.inline
   def apply(
     EventsManager: XInterface,
@@ -136,46 +150,62 @@ object XUIConfigurationManager {
     val __obj = js.Dynamic.literal(EventsManager = EventsManager.asInstanceOf[js.Any], ImageManager = ImageManager.asInstanceOf[js.Any], ShortCutManager = ShortCutManager.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createSettings = js.Any.fromFunction0(createSettings), getEventsManager = js.Any.fromFunction0(getEventsManager), getImageManager = js.Any.fromFunction0(getImageManager), getSettings = js.Any.fromFunction2(getSettings), getShortCutManager = js.Any.fromFunction0(getShortCutManager), getUIElementsInfo = js.Any.fromFunction1(getUIElementsInfo), hasSettings = js.Any.fromFunction1(hasSettings), insertSettings = js.Any.fromFunction2(insertSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSettings = js.Any.fromFunction1(removeSettings), replaceSettings = js.Any.fromFunction2(replaceSettings), reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[XUIConfigurationManager]
   }
+  
   @scala.inline
   implicit class XUIConfigurationManagerOps[Self <: XUIConfigurationManager] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEventsManager(value: XInterface): Self = this.set("EventsManager", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImageManager(value: XInterface): Self = this.set("ImageManager", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShortCutManager(value: XAcceleratorConfiguration): Self = this.set("ShortCutManager", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateSettings(value: () => XIndexContainer): Self = this.set("createSettings", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetEventsManager(value: () => XInterface): Self = this.set("getEventsManager", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetImageManager(value: () => XInterface): Self = this.set("getImageManager", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetSettings(value: (String, Boolean) => XIndexAccess): Self = this.set("getSettings", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetShortCutManager(value: () => XAcceleratorConfiguration): Self = this.set("getShortCutManager", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetUIElementsInfo(value: Double => SafeArray[SafeArray[PropertyValue]]): Self = this.set("getUIElementsInfo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHasSettings(value: String => Boolean): Self = this.set("hasSettings", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setInsertSettings(value: (String, XIndexAccess) => Unit): Self = this.set("insertSettings", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveSettings(value: String => Unit): Self = this.set("removeSettings", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setReplaceSettings(value: (String, XIndexAccess) => Unit): Self = this.set("replaceSettings", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
   }
-  
 }
-

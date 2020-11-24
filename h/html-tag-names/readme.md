@@ -4,15 +4,15 @@
 Typings are for version 1.1
 
 ## Library description:
-List of known HTML tag-names
+List of known HTML tag names
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | html-tag-names |
 | Keywords           | html, tag, name, element, tagname, w3c, whatwg |
 | # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 8553009 |
+| # dependents       | 23 |
+| # downloads        | 10791481 |
 | # stars            | 1 |
 
 ## Links

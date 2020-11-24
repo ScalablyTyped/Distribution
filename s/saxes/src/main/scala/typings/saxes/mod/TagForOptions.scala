@@ -3,7 +3,7 @@ package typings.saxes.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.saxes.mod.SaxesTag
@@ -11,15 +11,16 @@ import scala.scalajs.js.annotation._
   - typings.saxes.mod.SaxesTagNS
 */
 trait TagForOptions[O /* <: SaxesOptions */] extends js.Object
-
 object TagForOptions {
+  
   @scala.inline
-  def SaxesTag[/* <: typings.saxes.mod.SaxesOptions */ O](attributes: Record[String, SaxesAttributeNS | String], isSelfClosing: Boolean, name: String): TagForOptions[O] = {
+  def SaxesTag[O /* <: SaxesOptions */](attributes: Record[String, SaxesAttributeNS | String], isSelfClosing: Boolean, name: String): TagForOptions[O] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagForOptions[O]]
   }
+  
   @scala.inline
-  def SaxesTagPlain[/* <: typings.saxes.mod.SaxesOptions */ O](
+  def SaxesTagPlain[O /* <: SaxesOptions */](
     attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, String]),
     isSelfClosing: Boolean,
     name: String
@@ -27,8 +28,9 @@ object TagForOptions {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagForOptions[O]]
   }
+  
   @scala.inline
-  def SaxesTagNS[/* <: typings.saxes.mod.SaxesOptions */ O](
+  def SaxesTagNS[O /* <: SaxesOptions */](
     attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS]),
     isSelfClosing: Boolean,
     local: String,
@@ -41,4 +43,3 @@ object TagForOptions {
     __obj.asInstanceOf[TagForOptions[O]]
   }
 }
-

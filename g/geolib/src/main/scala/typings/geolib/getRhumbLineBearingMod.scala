@@ -3,11 +3,12 @@ package typings.geolib
 import typings.geolib.typesMod.GeolibInputCoordinates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("geolib/es/getRhumbLineBearing", JSImport.Namespace)
 @js.native
 object getRhumbLineBearingMod extends js.Object {
+  
   /**
     * Gets rhumb line bearing of two points. Find out about the difference between rhumb line and
     * great circle bearing on Wikipedia. It's quite complicated. Rhumb line should be fine in most cases:
@@ -19,4 +20,3 @@ object getRhumbLineBearingMod extends js.Object {
     */
   def default(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = js.native
 }
-

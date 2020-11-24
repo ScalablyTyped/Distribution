@@ -11,7 +11,7 @@ Knockout Secure Binding =======================
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1400 |
+| # downloads        | 1932 |
 | # stars            | 0 |
 
 ## Links

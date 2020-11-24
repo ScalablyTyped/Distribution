@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to increase the font size of characters in a selected range to the closest larger predefined value.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class IncreaseFontSizeCommand ()
   extends typings.devexpressWeb.IncreaseFontSizeCommand
-

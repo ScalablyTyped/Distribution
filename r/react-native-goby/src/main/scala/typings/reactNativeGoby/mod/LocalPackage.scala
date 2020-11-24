@@ -3,10 +3,11 @@ package typings.reactNativeGoby.mod
 import typings.reactNativeGoby.mod.Goby.InstallMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalPackage extends Package {
+  
   /**
     * Installs the update by saving it to the location on disk where the runtime expects to find the latest version of the app.
     *
@@ -16,4 +17,3 @@ trait LocalPackage extends Package {
   def install(installMode: InstallMode): js.Promise[Unit] = js.native
   def install(installMode: InstallMode, minimumBackgroundDuration: Double): js.Promise[Unit] = js.native
 }
-

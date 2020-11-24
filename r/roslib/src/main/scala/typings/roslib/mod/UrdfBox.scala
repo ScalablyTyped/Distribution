@@ -4,7 +4,7 @@ import typings.roslib.anon.Xml
 import typings.roslib.roslibNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "UrdfBox")
 @js.native
@@ -17,7 +17,8 @@ class UrdfBox protected () extends UrdfGeometry {
     *  * xml - the XML element to parse
     */
   def this(options: Xml) = this()
+  
   var dimension: Vector3 = js.native
+  
   var `type`: `1` = js.native
 }
-

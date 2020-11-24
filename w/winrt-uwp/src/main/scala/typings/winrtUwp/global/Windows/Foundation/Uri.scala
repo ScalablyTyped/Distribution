@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Foundation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an object that represents a Uniform Resource Identifier (URI) value and parses it into components. The Uri object is used by many other Windows Runtime APIs that are not necessarily confined to web browser scenarios. */
 @JSGlobal("Windows.Foundation.Uri")
@@ -21,17 +21,18 @@ class Uri protected ()
     */
   def this(baseUri: String, relativeUri: String) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Foundation.Uri")
 @js.native
 object Uri extends js.Object {
+  
   /**
     * Converts a Uniform Resource Identifier (URI) string to its escaped representation.
     * @param toEscape The string to convert.
     * @return The escaped representation of toEscape.
     */
   def escapeComponent(toEscape: String): String = js.native
+  
   /**
     * Converts the specified string by replacing any escape sequences with their unescaped representation.
     * @param toUnescape The string to convert.
@@ -39,4 +40,3 @@ object Uri extends js.Object {
     */
   def unescapeComponent(toUnescape: String): String = js.native
 }
-

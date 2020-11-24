@@ -3,18 +3,21 @@ package typings.openui5.sap.ui.model
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SelectionModel extends EventProvider {
+  
   /**
     * SelectionMode: Multi Selection
     */
   var MULTI_SELECTION: js.Any = js.native
+  
   /**
     * SelectionMode: Single Selection
     */
   var SINGLE_SELECTION: js.Any = js.native
+  
   /**
     * Changes the selection to be the union of the current selectionand the range between
     * <code>iFromIndex</code> and <code>iToIndex</code> inclusive.If <code>iFromIndex</code> is smaller
@@ -27,6 +30,7 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def addSelectionInterval(iFromIndex: Double, iToIndex: Double): SelectionModel = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'selectionChanged' event of this
     * <code>sap.ui.model.SelectionModel</code>.<br/>
@@ -38,12 +42,14 @@ trait SelectionModel extends EventProvider {
     */
   def attachSelectionChanged(oData: js.Any, fnFunction: js.Any): SelectionModel = js.native
   def attachSelectionChanged(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SelectionModel = js.native
+  
   /**
     * Change the selection to the empty set and clears the lead selection.If this call results in a change
     * to the current selection or lead selection, then a<code>SelectionChanged</code> event is fired.
     * @returns <code>this</code> to allow method chaining
     */
   def clearSelection(): SelectionModel = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'selectionChanged' event of this
     * <code>sap.ui.model.SelectionModel</code>.<br/>The passed function and listener object must match the
@@ -53,6 +59,7 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachSelectionChanged(fnFunction: js.Any, oListener: js.Any): SelectionModel = js.native
+  
   /**
     * Fire event 'selectionChanged' to attached listeners.Expects following event
     * parameters:<ul><li>'leadIndex' of type <code>int</code> Lead selection index.</li><li>'rowIndices'
@@ -61,28 +68,33 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def fireSelectionChanged(mArguments: js.Any): SelectionModel = js.native
+  
   /**
     * Return the second index argument from the most recent call tosetSelectionInterval(),
     * addSelectionInterval() or removeSelectionInterval().
     * @returns lead selected index
     */
   def getLeadSelectedIndex(): Double = js.native
+  
   /**
     * Returns the selected indices as array.
     * @returns array of selected indices
     */
   def getSelectedIndices(): Double = js.native
+  
   /**
     * Returns the current selection mode.
     * @returns the current selection mode
     */
   def getSelectionMode(): Double = js.native
+  
   /**
     * Returns true if the specified index is selected.
     * @param iIndex undefined
     * @returns true if the specified index is selected.
     */
   def isSelectedIndex(iIndex: Double): Boolean = js.native
+  
   /**
     * Moves all selected indices starting at the position <code>iStartIndex</code>
     * <code>iMove</code>items.This can be used if new items are inserted to the item set and you want to
@@ -94,6 +106,7 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def moveSelectionInterval(iStartIndex: Double, iMove: Double): SelectionModel = js.native
+  
   /**
     * Changes the selection to be the set difference of the current selectionand the indices between
     * <code>iFromIndex</code> and <code>iToIndex</code> inclusive.If <code>iFromIndex</code> is smaller
@@ -106,6 +119,7 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def removeSelectionInterval(iFromIndex: Double, iToIndex: Double): SelectionModel = js.native
+  
   /**
     * Selects all rows up to the <code>iToIndex</iToIndex>.If this call results in a change to the current
     * selection, then a<code>SelectionChanged</code> event is fired.
@@ -113,6 +127,7 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def selectAll(iToIndex: Double): SelectionModel = js.native
+  
   /**
     * Changes the selection to be equal to the range <code>iFromIndex</code> and
     * <code>iToIndex</code>inclusive. If <code>iFromIndex</code> is smaller than <code>iToIndex</code>,
@@ -124,6 +139,7 @@ trait SelectionModel extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def setSelectionInterval(iFromIndex: Double, iToIndex: Double): SelectionModel = js.native
+  
   /**
     * Sets the selection mode. The following list describes the acceptedselection
     * modes:<ul><li><code>sap.ui.model.SelectionModel.SINGLE_SELECTION</code> -  Only one list index can
@@ -135,6 +151,7 @@ trait SelectionModel extends EventProvider {
     * @param iSelectionMode selection mode
     */
   def setSelectionMode(iSelectionMode: Double): Unit = js.native
+  
   /**
     * Slices a the indices between the two indices from the selection.If <code>iFromIndex</code> is
     * smaller than <code>iToIndex</code>, both parameters are swapped.If the range of removed selection
@@ -147,4 +164,3 @@ trait SelectionModel extends EventProvider {
     */
   def sliceSelectionInterval(iFromIndex: Double, iToIndex: Double): SelectionModel = js.native
 }
-

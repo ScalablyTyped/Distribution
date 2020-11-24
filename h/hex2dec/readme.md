@@ -11,8 +11,8 @@ Arbitrary precision decimal/hexadecimal converter.
 | Full name          | hex2dec |
 | Keywords           | decimal, hexadecimal, converter, precision, int64, long, hex |
 | # releases         | 4 |
-| # dependents       | 18 |
-| # downloads        | 9493384 |
+| # dependents       | 20 |
+| # downloads        | 10173564 |
 | # stars            | 0 |
 
 ## Links

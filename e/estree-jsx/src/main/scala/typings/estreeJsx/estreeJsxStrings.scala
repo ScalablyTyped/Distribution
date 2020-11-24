@@ -2,9 +2,55 @@ package typings.estreeJsx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object estreeJsxStrings {
+  
+  @scala.inline
+  def JSXAttribute: JSXAttribute = "JSXAttribute".asInstanceOf[JSXAttribute]
+  
+  @scala.inline
+  def JSXClosingElement: JSXClosingElement = "JSXClosingElement".asInstanceOf[JSXClosingElement]
+  
+  @scala.inline
+  def JSXClosingFragment: JSXClosingFragment = "JSXClosingFragment".asInstanceOf[JSXClosingFragment]
+  
+  @scala.inline
+  def JSXElement: JSXElement = "JSXElement".asInstanceOf[JSXElement]
+  
+  @scala.inline
+  def JSXEmptyExpression: JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[JSXEmptyExpression]
+  
+  @scala.inline
+  def JSXExpressionContainer: JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[JSXExpressionContainer]
+  
+  @scala.inline
+  def JSXFragment: JSXFragment = "JSXFragment".asInstanceOf[JSXFragment]
+  
+  @scala.inline
+  def JSXIdentifier: JSXIdentifier = "JSXIdentifier".asInstanceOf[JSXIdentifier]
+  
+  @scala.inline
+  def JSXMemberExpression: JSXMemberExpression = "JSXMemberExpression".asInstanceOf[JSXMemberExpression]
+  
+  @scala.inline
+  def JSXNamespacedName: JSXNamespacedName = "JSXNamespacedName".asInstanceOf[JSXNamespacedName]
+  
+  @scala.inline
+  def JSXOpeningElement: JSXOpeningElement = "JSXOpeningElement".asInstanceOf[JSXOpeningElement]
+  
+  @scala.inline
+  def JSXOpeningFragment: JSXOpeningFragment = "JSXOpeningFragment".asInstanceOf[JSXOpeningFragment]
+  
+  @scala.inline
+  def JSXSpreadAttribute: JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[JSXSpreadAttribute]
+  
+  @scala.inline
+  def JSXSpreadChild: JSXSpreadChild = "JSXSpreadChild".asInstanceOf[JSXSpreadChild]
+  
+  @scala.inline
+  def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
+  
   @js.native
   sealed trait JSXAttribute extends js.Object
   
@@ -49,36 +95,4 @@ object estreeJsxStrings {
   
   @js.native
   sealed trait JSXText extends js.Object
-  
-  @scala.inline
-  def JSXAttribute: JSXAttribute = "JSXAttribute".asInstanceOf[JSXAttribute]
-  @scala.inline
-  def JSXClosingElement: JSXClosingElement = "JSXClosingElement".asInstanceOf[JSXClosingElement]
-  @scala.inline
-  def JSXClosingFragment: JSXClosingFragment = "JSXClosingFragment".asInstanceOf[JSXClosingFragment]
-  @scala.inline
-  def JSXElement: JSXElement = "JSXElement".asInstanceOf[JSXElement]
-  @scala.inline
-  def JSXEmptyExpression: JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[JSXEmptyExpression]
-  @scala.inline
-  def JSXExpressionContainer: JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[JSXExpressionContainer]
-  @scala.inline
-  def JSXFragment: JSXFragment = "JSXFragment".asInstanceOf[JSXFragment]
-  @scala.inline
-  def JSXIdentifier: JSXIdentifier = "JSXIdentifier".asInstanceOf[JSXIdentifier]
-  @scala.inline
-  def JSXMemberExpression: JSXMemberExpression = "JSXMemberExpression".asInstanceOf[JSXMemberExpression]
-  @scala.inline
-  def JSXNamespacedName: JSXNamespacedName = "JSXNamespacedName".asInstanceOf[JSXNamespacedName]
-  @scala.inline
-  def JSXOpeningElement: JSXOpeningElement = "JSXOpeningElement".asInstanceOf[JSXOpeningElement]
-  @scala.inline
-  def JSXOpeningFragment: JSXOpeningFragment = "JSXOpeningFragment".asInstanceOf[JSXOpeningFragment]
-  @scala.inline
-  def JSXSpreadAttribute: JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[JSXSpreadAttribute]
-  @scala.inline
-  def JSXSpreadChild: JSXSpreadChild = "JSXSpreadChild".asInstanceOf[JSXSpreadChild]
-  @scala.inline
-  def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
 }
-

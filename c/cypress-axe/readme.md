@@ -10,9 +10,9 @@ Custom cypress commands to inject axe-core and test for a11y
 | ------------------ | :-------------: |
 | Full name          | cypress-axe |
 | Keywords           | a11y, accessibility, axe, axe-core, cypress |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 197275 |
+| # releases         | 15 |
+| # dependents       | 3 |
+| # downloads        | 1133090 |
 | # stars            | 0 |
 
 ## Links

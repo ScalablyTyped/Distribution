@@ -9,7 +9,7 @@ import typings.std.Date
 import typings.std.Intl.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lingui/macro", "DateFormat")
 @js.native
@@ -18,10 +18,8 @@ class DateFormat protected ()
   def this(props: FormatPropsWithoutI18n[Date, DateTimeFormatOptions]) = this()
   def this(props: FormatPropsWithoutI18n[Date, DateTimeFormatOptions], context: js.Any) = this()
 }
-
 @JSImport("@lingui/macro", "DateFormat")
 @js.native
 object DateFormat extends TopLevel[
       ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState]
     ]
-

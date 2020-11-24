@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-fetch
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Convenient parsing for Fetch.
@@ -10,9 +10,9 @@ Convenient parsing for Fetch.
 | ------------------ | :-------------: |
 | Full name          | d3-fetch |
 | Keywords           | d3, d3-module, fetch, ajax, XMLHttpRequest |
-| # releases         | 7 |
-| # dependents       | 22 |
-| # downloads        | 10856594 |
+| # releases         | 4 |
+| # dependents       | 29 |
+| # downloads        | 22239914 |
 | # stars            | 0 |
 
 ## Links

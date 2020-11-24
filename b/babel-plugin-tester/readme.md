@@ -10,9 +10,9 @@ Utilities for testing babel plugins
 | ------------------ | :-------------: |
 | Full name          | babel-plugin-tester |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 22 |
 | # dependents       | 11 |
-| # downloads        | 865665 |
+| # downloads        | 1026770 |
 | # stars            | 0 |
 
 ## Links

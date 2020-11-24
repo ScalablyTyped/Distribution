@@ -8,18 +8,20 @@ import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTMLIonIconElement
   extends HTMLStencilElement
      with IonIcon {
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -27,8 +29,6 @@ trait HTMLIonIconElement
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
 }
-
 @JSGlobal("HTMLIonIconElement")
 @js.native
 object HTMLIonIconElement extends Instantiable0[HTMLIonIconElement]
-

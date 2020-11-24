@@ -11,11 +11,12 @@ import typings.stripe.mod.files.IFileListOptions
 import typings.stripe.mod.files.IFileUpdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Files")
 @js.native
 class Files () extends StripeResource {
+  
   def create(data: IFileCreationOptions): js.Promise[IFileUpdate] = js.native
   /**
     * To upload a file to Stripe, you’ll need to send a request of type multipart/form-data.
@@ -26,6 +27,7 @@ class Files () extends StripeResource {
   def create(data: IFileCreationOptions, options: HeaderOptions): js.Promise[IFileUpdate] = js.native
   def create(data: IFileCreationOptions, options: HeaderOptions, response: IResponseFn[IFileUpdate]): js.Promise[IFileUpdate] = js.native
   def create(data: IFileCreationOptions, response: IResponseFn[IFileUpdate]): js.Promise[IFileUpdate] = js.native
+  
   def list(): IListPromise[IFileUpdate] = js.native
   def list(data: IFileListOptions): IListPromise[IFileUpdate] = js.native
   /**
@@ -38,6 +40,7 @@ class Files () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IFileUpdate] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IFileUpdate]]): IListPromise[IFileUpdate] = js.native
   def list(response: IResponseFn[IList[IFileUpdate]]): IListPromise[IFileUpdate] = js.native
+  
   def retrieve(id: String): js.Promise[IFileUpdate] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[IFileUpdate] = js.native
   /**
@@ -51,4 +54,3 @@ class Files () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IFileUpdate]): js.Promise[IFileUpdate] = js.native
   def retrieve(id: String, response: IResponseFn[IFileUpdate]): js.Promise[IFileUpdate] = js.native
 }
-

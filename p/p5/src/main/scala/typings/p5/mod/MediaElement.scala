@@ -3,14 +3,11 @@ package typings.p5.mod
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaElement extends js.Object {
-  /**
-    *   Path to the media element source.
-    */
-  var src: js.Any = js.native
+  
   /**
     *   Schedule events to trigger every time a
     *   MediaElement (audio/video) reaches a playback cue
@@ -37,6 +34,7 @@ trait MediaElement extends js.Object {
     */
   def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
   def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _], value: js.Object): Double = js.native
+  
   /**
     *   Set HTML5 media element to autoplay or not.
     *   @param autoplay whether the element should
@@ -44,12 +42,14 @@ trait MediaElement extends js.Object {
     *   @chainable
     */
   def autoplay(autoplay: Boolean): MediaElement = js.native
+  
   /**
     *   Remove all of the callbacks that had originally
     *   been scheduled via the addCue method.
     *   @param id ID of the cue, as returned by addCue
     */
   def clearCues(id: Double): Unit = js.native
+  
   def connect(audioNode: js.Object): Unit = js.native
   /**
     *   Send the audio output of this element to a
@@ -64,6 +64,7 @@ trait MediaElement extends js.Object {
     *   or an object from the p5.sound library
     */
   def connect(audioNode: AudioNode): Unit = js.native
+  
   /**
     *   Disconnect all Web Audio routing, including to
     *   master output. This is useful if you want to
@@ -71,27 +72,32 @@ trait MediaElement extends js.Object {
     *   example.
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Returns the duration of the HTML5 media element.
     *   @return duration
     */
   def duration(): Double = js.native
+  
   /**
     *   Hide the default mediaElement controls.
     */
   def hideControls(): Unit = js.native
+  
   /**
     *   Set 'loop' to true for an HTML5 media element, and
     *   starts playing.
     *   @chainable
     */
   def loop(): MediaElement = js.native
+  
   /**
     *   Set 'loop' to false for an HTML5 media element.
     *   Element will stop when it reaches the end.
     *   @chainable
     */
   def noLoop(): MediaElement = js.native
+  
   /**
     *   Schedule an event to be called when the audio or
     *   video element reaches the end. If the element is
@@ -103,27 +109,32 @@ trait MediaElement extends js.Object {
     *   @chainable
     */
   def onended(callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  
   /**
     *   Pauses an HTML5 media element.
     *   @chainable
     */
   def pause(): MediaElement = js.native
+  
   /**
     *   Play an HTML5 media element.
     *   @chainable
     */
   def play(): MediaElement = js.native
+  
   /**
     *   Remove a callback based on its ID. The ID is
     *   returned by the addCue method.
     *   @param id ID of the cue, as returned by addCue
     */
   def removeCue(id: Double): Unit = js.native
+  
   /**
     *   Show the default MediaElement controls, as
     *   determined by the web browser.
     */
   def showControls(): Unit = js.native
+  
   /**
     *   If no arguments are given, returns the current
     *   playback speed of the element. The speed parameter
@@ -149,12 +160,19 @@ trait MediaElement extends js.Object {
     *   @chainable
     */
   def speed(speed: Double): MediaElement = js.native
+  
+  /**
+    *   Path to the media element source.
+    */
+  var src: js.Any = js.native
+  
   /**
     *   Stops an HTML5 media element (sets current time to
     *   zero).
     *   @chainable
     */
   def stop(): MediaElement = js.native
+  
   /**
     *   If no arguments are given, returns the current
     *   time of the element. If an argument is given the
@@ -170,6 +188,7 @@ trait MediaElement extends js.Object {
     *   @chainable
     */
   def time(time: Double): MediaElement = js.native
+  
   /**
     *   Sets volume for this HTML5 media element. If no
     *   argument is given, returns the current volume.
@@ -184,4 +203,3 @@ trait MediaElement extends js.Object {
     */
   def volume(`val`: Double): MediaElement = js.native
 }
-

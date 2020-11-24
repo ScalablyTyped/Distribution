@@ -5,7 +5,7 @@ import typings.leaflet.mod.Transformation
 import typings.proj4.mod.InterfaceProjection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Proj.CRS")
 @js.native
@@ -15,7 +15,8 @@ class CRS protected ()
   def this(code: String, proj4def: String) = this()
   def this(projection: InterfaceProjection, options: ProjCRSOptions) = this()
   def this(code: String, proj4def: String, options: ProjCRSOptions) = this()
+  
   var projection: Projection = js.native
+  
   var transformation: Transformation = js.native
 }
-

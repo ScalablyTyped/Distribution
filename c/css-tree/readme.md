@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-CSSTree is a tool set to work with CSS, including fast detailed parser (string->AST), walker (AST traversal), generator (AST->string) and lexer (validation and matching) based on knowledge of spec and browser implementations
+A tool set for CSS: fast detailed parser (CSS → AST), walker (AST traversal), generator (AST → CSS) and lexer (validation and matching) based on specs and browser implementations
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | css-tree |
 | Keywords           | css, ast, tokenizer, parser, walker, lexer, generator, utils, syntax, validation |
-| # releases         | 14 |
-| # dependents       | 108 |
-| # downloads        | 281355287 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 169 |
+| # downloads        | 538833059 |
+| # stars            | 2 |
 
 ## Links
 - [Homepage](https://github.com/csstree/csstree#readme)

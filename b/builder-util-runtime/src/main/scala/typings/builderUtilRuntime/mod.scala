@@ -21,11 +21,67 @@ import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("builder-util-runtime", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val CURRENT_APP_INSTALLER_FILE_NAME: /* "installer.exe" */ String = js.native
+  
+  val CURRENT_APP_PACKAGE_FILE_NAME: /* "package.7z" */ String = js.native
+  
+  def asArray[T](): js.Array[T] = js.native
+  def asArray[T](v: T): js.Array[T] = js.native
+  def asArray[T](v: js.Array[T]): js.Array[T] = js.native
+  
+  def configureRequestOptions(options: RequestOptions): RequestOptions = js.native
+  def configureRequestOptions(options: RequestOptions, token: String): RequestOptions = js.native
+  
+  def configureRequestOptionsFromUrl(url: String, options: RequestOptions): RequestOptions = js.native
+  
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_DELETE(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: DELETE): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_DELETE(options: RequestOptions, token: String, method: DELETE): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_DELETE(options: RequestOptions, token: Null, method: DELETE): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_GET(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: GET): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_GET(options: RequestOptions, token: String, method: GET): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_GET(options: RequestOptions, token: Null, method: GET): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_PUT(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: PUT): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_PUT(options: RequestOptions, token: String, method: PUT): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_PUT(options: RequestOptions, token: Null, method: PUT): RequestOptions = js.native
+  
+  def configureRequestUrl(url: URL_, options: RequestOptions): Unit = js.native
+  
+  def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.httpExecutorMod.HttpError = js.native
+  def createHttpError(response: IncomingMessage, description: js.Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = js.native
+  
+  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = js.native
+  
+  def githubUrl(options: GithubOptions): String = js.native
+  def githubUrl(options: GithubOptions, defaultHost: String): String = js.native
+  
+  def newError(message: String, code: String): Error = js.native
+  
+  def parseDn(seq: String): Map[String, String] = js.native
+  
+  def parseJson(result: js.Promise[String | Null]): js.Promise[_] = js.native
+  
+  def parseXml(data: String): typings.builderUtilRuntime.xmlMod.XElement = js.native
+  
+  def safeGetHeader(response: js.Any, headerKey: String): js.Any = js.native
+  
+  def safeStringifyJson(data: js.Any): String = js.native
+  def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = js.native
+  
   @js.native
   class CancellationError ()
     extends typings.builderUtilRuntime.cancellationTokenMod.CancellationError
@@ -61,6 +117,12 @@ object mod extends js.Object {
   @js.native
   abstract class HttpExecutor[REQUEST] ()
     extends typings.builderUtilRuntime.httpExecutorMod.HttpExecutor[REQUEST]
+  /* static members */
+  @js.native
+  object HttpExecutor extends js.Object {
+    
+    def prepareRedirectUrlOptions(redirectUrl: String, options: RequestOptions): RequestOptions = js.native
+  }
   
   @js.native
   class ProgressCallbackTransform protected ()
@@ -78,70 +140,26 @@ object mod extends js.Object {
     def this(uuid: String) = this()
     def this(uuid: Buffer) = this()
   }
+  /* static members */
+  @js.native
+  object UUID extends js.Object {
+    
+    val OID: Buffer = js.native
+    
+    def check(uuid: String): `false` | Format | Variant = js.native
+    def check(uuid: String, offset: Double): `false` | Format | Variant = js.native
+    def check(uuid: Buffer): `false` | Format | Variant = js.native
+    def check(uuid: Buffer, offset: Double): `false` | Format | Variant = js.native
+    
+    def parse(input: String): Buffer = js.native
+    
+    def v5(name: String, namespace: Buffer): js.Any = js.native
+    def v5(name: Buffer, namespace: Buffer): js.Any = js.native
+  }
   
   @js.native
   class XElement protected ()
     extends typings.builderUtilRuntime.xmlMod.XElement {
     def this(name: String) = this()
   }
-  
-  val CURRENT_APP_INSTALLER_FILE_NAME: /* "installer.exe" */ String = js.native
-  val CURRENT_APP_PACKAGE_FILE_NAME: /* "package.7z" */ String = js.native
-  def asArray[T](): js.Array[T] = js.native
-  def asArray[T](v: T): js.Array[T] = js.native
-  def asArray[T](v: js.Array[T]): js.Array[T] = js.native
-  def configureRequestOptions(options: RequestOptions): RequestOptions = js.native
-  def configureRequestOptions(options: RequestOptions, token: String): RequestOptions = js.native
-  def configureRequestOptionsFromUrl(url: String, options: RequestOptions): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_DELETE(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: DELETE): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_DELETE(options: RequestOptions, token: String, method: DELETE): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_DELETE(options: RequestOptions, token: Null, method: DELETE): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_GET(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: GET): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_GET(options: RequestOptions, token: String, method: GET): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_GET(options: RequestOptions, token: Null, method: GET): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_PUT(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: PUT): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_PUT(options: RequestOptions, token: String, method: PUT): RequestOptions = js.native
-  @JSName("configureRequestOptions")
-  def configureRequestOptions_PUT(options: RequestOptions, token: Null, method: PUT): RequestOptions = js.native
-  def configureRequestUrl(url: URL_, options: RequestOptions): Unit = js.native
-  def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.httpExecutorMod.HttpError = js.native
-  def createHttpError(response: IncomingMessage, description: js.Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = js.native
-  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = js.native
-  def githubUrl(options: GithubOptions): String = js.native
-  def githubUrl(options: GithubOptions, defaultHost: String): String = js.native
-  def newError(message: String, code: String): Error = js.native
-  def parseDn(seq: String): Map[String, String] = js.native
-  def parseJson(result: js.Promise[String | Null]): js.Promise[_] = js.native
-  def parseXml(data: String): typings.builderUtilRuntime.xmlMod.XElement = js.native
-  def safeGetHeader(response: js.Any, headerKey: String): js.Any = js.native
-  def safeStringifyJson(data: js.Any): String = js.native
-  def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = js.native
-  /* static members */
-  @js.native
-  object HttpExecutor extends js.Object {
-    def prepareRedirectUrlOptions(redirectUrl: String, options: RequestOptions): RequestOptions = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UUID extends js.Object {
-    val OID: Buffer = js.native
-    def check(uuid: String): `false` | Format | Variant = js.native
-    def check(uuid: String, offset: Double): `false` | Format | Variant = js.native
-    def check(uuid: Buffer): `false` | Format | Variant = js.native
-    def check(uuid: Buffer, offset: Double): `false` | Format | Variant = js.native
-    def parse(input: String): Buffer = js.native
-    def v5(name: String, namespace: Buffer): js.Any = js.native
-    def v5(name: Buffer, namespace: Buffer): js.Any = js.native
-  }
-  
 }
-

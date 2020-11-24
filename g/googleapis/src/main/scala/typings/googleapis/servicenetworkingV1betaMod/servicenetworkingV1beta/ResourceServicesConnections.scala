@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicenetworking/v1beta", "servicenetworking_v1beta.Resource$Services$Connections")
 @js.native
 class ResourceServicesConnections protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicenetworking.services.connections.create
     * @desc Creates a private connection that establishes a VPC Network Peering
@@ -50,6 +52,7 @@ class ResourceServicesConnections protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * servicenetworking.services.connections.list
     * @desc List the private connections that are configured in a service
@@ -84,4 +87,3 @@ class ResourceServicesConnections protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListConnectionsResponse]
   ): Unit = js.native
 }
-

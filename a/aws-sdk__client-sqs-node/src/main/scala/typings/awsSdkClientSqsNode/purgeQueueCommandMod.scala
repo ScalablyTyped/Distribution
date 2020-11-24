@@ -5,33 +5,29 @@ import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientSqsNode.sqsconfigurationMod.SQSResolvedConfiguration
 import typings.awsSdkClientSqsNode.typesPurgeQueueInputMod.PurgeQueueInput
 import typings.awsSdkClientSqsNode.typesPurgeQueueOutputMod.PurgeQueueOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-sqs-node/commands/PurgeQueueCommand", JSImport.Namespace)
 @js.native
 object purgeQueueCommandMod extends js.Object {
+  
   @js.native
   class PurgeQueueCommand protected () extends Command[
           InputTypesUnion, 
           PurgeQueueInput, 
           OutputTypesUnion, 
           PurgeQueueOutput, 
-          SQSResolvedConfiguration, 
-          Readable
+          SQSResolvedConfiguration
         ] {
     def this(input: PurgeQueueInput) = this()
-    val middlewareStack: MiddlewareStack[PurgeQueueInput, PurgeQueueOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: SQSResolvedConfiguration
     ): Handler[PurgeQueueInput, PurgeQueueOutput] = js.native
   }
-  
 }
-

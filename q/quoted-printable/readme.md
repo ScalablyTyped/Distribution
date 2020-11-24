@@ -11,8 +11,8 @@ A robust & character encoding–agnostic JavaScript implementation of the `Quote
 | Full name          | quoted-printable |
 | Keywords           | decode, decoding, encode, encoding, quoted-printable, string |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 695741 |
+| # dependents       | 20 |
+| # downloads        | 1161395 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.systeminformation.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("systeminformation", "getAllData")
 @js.native
 object getAllData extends js.Object {
+  
   def apply(): js.Promise[_] = js.native
   def apply(
     srv: js.UndefOr[scala.Nothing],
@@ -20,4 +21,3 @@ object getAllData extends js.Object {
   def apply(srv: String, iface: String): js.Promise[_] = js.native
   def apply(srv: String, iface: String, cb: js.Function1[/* data */ js.Any, _]): js.Promise[_] = js.native
 }
-

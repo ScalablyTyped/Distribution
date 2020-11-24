@@ -3,22 +3,25 @@ package typings.detox.mod.global.Detox_
 import typings.detox.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Actions[R] extends js.Object {
+  
   /**
     * Clear text from a text field.
     * @example
     * await element(by.id('textField')).clearText();
     */
   def clearText(): js.Promise[Actions[R]] = js.native
+  
   /**
     * Simulate long press on an element
     * @example
     * await element(by.id('tappable')).longPress();
     */
   def longPress(): js.Promise[Actions[R]] = js.native
+  
   /**
     * Simulate multiple taps on an element.
     * @param times number of times to tap
@@ -26,6 +29,7 @@ trait Actions[R] extends js.Object {
     * await element(by.id('tappable')).multiTap(3);
     */
   def multiTap(times: Double): js.Promise[Actions[R]] = js.native
+  
   /**
     * Pinches in the given direction with speed and angle. (iOS only)
     * @param direction
@@ -36,6 +40,7 @@ trait Actions[R] extends js.Object {
     * await element(by.id('PinchableScrollView')).pinchWithAngle('outward', 'slow', 0);
     */
   def pinchWithAngle(direction: Direction, speed: Speed, angle: Double): js.Promise[Actions[R]] = js.native
+  
   /**
     * Paste text into a text field.
     * @param text
@@ -43,6 +48,7 @@ trait Actions[R] extends js.Object {
     * await element(by.id('textField')).replaceText('passcode again');
     */
   def replaceText(text: String): js.Promise[Actions[R]] = js.native
+  
   /**
     * Scrolls a given amount of pixels in the provided direction, starting from the provided start positions.
     * @param pixels - independent device pixels
@@ -62,6 +68,7 @@ trait Actions[R] extends js.Object {
   ): js.Promise[Actions[R]] = js.native
   def scroll(pixels: Double, direction: Direction, startPositionX: Double): js.Promise[Actions[R]] = js.native
   def scroll(pixels: Double, direction: Direction, startPositionX: Double, startPositionY: Double): js.Promise[Actions[R]] = js.native
+  
   /**
     * Scroll to edge.
     * @param edge
@@ -70,6 +77,7 @@ trait Actions[R] extends js.Object {
     * await element(by.id('scrollView')).scrollTo('top');
     */
   def scrollTo(edge: Direction): js.Promise[Actions[R]] = js.native
+  
   /**
     * Sets a picker view’s column to the given value. This function supports both date pickers and general picker views. (iOS Only)
     * @param column number of datepicker column (starts from 0)
@@ -83,6 +91,7 @@ trait Actions[R] extends js.Object {
     * See [here](https://github.com/wix/Detox/blob/master/docs/APIRef.DeviceObjectAPI.md#9-launch-with-a-specific-language-ios-only) for more information.
     */
   def setColumnToValue(column: Double, value: String): js.Promise[Actions[R]] = js.native
+  
   /**
     * Sets the date of a date picker to a date generated from the provided string and date format. (iOS only)
     * @param dateString string representing a date in the supplied `dateFormat`
@@ -92,6 +101,7 @@ trait Actions[R] extends js.Object {
     * await element(by.id('datePicker')).setDatePickerDate('2019-02-06T05:10:00-08:00', "yyyy-MM-dd'T'HH:mm:ssZZZZZ");
     */
   def setDatePickerDate(dateString: String, dateFormat: String): js.Promise[Actions[R]] = js.native
+  
   /**
     * Swipes in the provided direction at the provided speed, started from percentage.
     * @param direction
@@ -106,12 +116,14 @@ trait Actions[R] extends js.Object {
   def swipe(direction: Direction, speed: js.UndefOr[scala.Nothing], percentage: Double): js.Promise[Actions[R]] = js.native
   def swipe(direction: Direction, speed: Speed): js.Promise[Actions[R]] = js.native
   def swipe(direction: Direction, speed: Speed, percentage: Double): js.Promise[Actions[R]] = js.native
+  
   /**
     * Simulate tap on an element
     * @example
     * await element(by.id('tappable')).tap();
     */
   def tap(): js.Promise[Actions[R]] = js.native
+  
   /**
     * Simulate tap at a specific point on an element.
     * Note: The point coordinates are relative to the matched element and the element size could changes on different devices or even when changing the device font size.
@@ -120,18 +132,21 @@ trait Actions[R] extends js.Object {
     * await element(by.id('tappable')).tapAtPoint({ x:5, y:10 });
     */
   def tapAtPoint(point: X): js.Promise[Actions[R]] = js.native
+  
   /**
     * Taps the backspace key on the built-in keyboard.
     * @example
     * await element(by.id('textField')).tapBackspaceKey();
     */
   def tapBackspaceKey(): js.Promise[Actions[R]] = js.native
+  
   /**
     * Taps the return key on the built-in keyboard.
     * @example
     * await element(by.id('textField')).tapReturnKey();
     */
   def tapReturnKey(): js.Promise[Actions[R]] = js.native
+  
   /**
     * Use the builtin keyboard to type text into a text field.
     * @param text
@@ -140,4 +155,3 @@ trait Actions[R] extends js.Object {
     */
   def typeText(text: String): js.Promise[Actions[R]] = js.native
 }
-

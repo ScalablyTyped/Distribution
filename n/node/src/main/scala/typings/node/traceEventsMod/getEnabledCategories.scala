@@ -2,11 +2,12 @@ package typings.node.traceEventsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("trace_events", "getEnabledCategories")
 @js.native
 object getEnabledCategories extends js.Object {
+  
   /**
     * Returns a comma-separated list of all currently-enabled trace event
     * categories. The current set of enabled trace event categories is
@@ -15,4 +16,3 @@ object getEnabledCategories extends js.Object {
     */
   def apply(): js.UndefOr[String] = js.native
 }
-

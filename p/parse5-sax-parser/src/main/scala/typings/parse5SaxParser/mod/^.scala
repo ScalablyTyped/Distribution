@@ -2,7 +2,7 @@ package typings.parse5SaxParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming [SAX](https://en.wikipedia.org/wiki/Simple_API_for_XML)-style HTML parser.
@@ -42,4 +42,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends SAXParser {
   def this(options: SAXParserOptions) = this()
 }
-

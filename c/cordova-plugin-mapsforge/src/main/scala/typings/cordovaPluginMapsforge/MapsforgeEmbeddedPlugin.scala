@@ -2,25 +2,41 @@ package typings.cordovaPluginMapsforge
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MapsforgeEmbeddedPlugin extends js.Object {
+  
   var COLOR_BLACK: Double | String = js.native
+  
   var COLOR_BLUE: Double | String = js.native
+  
   var COLOR_CYAN: Double | String = js.native
+  
   var COLOR_DKGRAY: Double | String = js.native
+  
   var COLOR_GREEN: Double | String = js.native
+  
   var COLOR_RED: Double | String = js.native
+  
   var COLOR_TRANSPARENT: Double | String = js.native
+  
   var COLOR_WHITE: Double | String = js.native
+  
   var COLOR_YELLOW: Double | String = js.native
+  
   var MARKER_BLACK: Double | String = js.native
+  
   var MARKER_BLUE: Double | String = js.native
+  
   var MARKER_GREEN: Double | String = js.native
+  
   var MARKER_RED: Double | String = js.native
+  
   var MARKER_WHITE: Double | String = js.native
+  
   var MARKER_YELLOW: Double | String = js.native
+  
   /**
     * Adds a marker to the map in the specified coordinates and returns the key for that marker to the success function.
     * @param arg Array in the following form: [String marker_color, double lat, double lng].
@@ -40,6 +56,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     success: js.Function1[/* key */ Double, Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
+  
   /**
     *
     * @param arg Array in the following form: [int color, int strokeWidth,[double points]].
@@ -62,6 +79,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     success: js.Function1[/* key */ Double, Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Deletes the layer(markers or polylines) with the specified key from the map.
     * @param key Key of marker or polyline.
@@ -72,6 +90,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   def deleteLayer(key: Double, success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def deleteLayer(key: Double, success: js.Function0[Unit]): Unit = js.native
   def deleteLayer(key: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * To hide the map view.
     * @param success Success callback.
@@ -81,6 +100,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   def hide(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def hide(success: js.Function0[Unit]): Unit = js.native
   def hide(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * The map file path provided must be the absolute file path. You can specify the width and height values for the view that will be added,
     * or you can set them to 0 for set the value to MATCH_PARENT. You must call this method before any other method.
@@ -96,6 +116,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   ): Unit = js.native
   def initialize(args: js.Array[_], success: js.Function0[Unit]): Unit = js.native
   def initialize(args: js.Array[_], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Stops and cleans the resources that have been used.
     * @param success Success callback.
@@ -105,6 +126,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   def onDestroy(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Initializes again the map if the onStop method was called.
     * @param success Success callback.
@@ -114,6 +136,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   def onStart(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onStart(success: js.Function0[Unit]): Unit = js.native
   def onStart(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Stops the rendering. Useful for when the app goes to the background. You have to call the onStart method to restart it.
     * @param success Success callback.
@@ -123,6 +146,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   def onStop(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onStop(success: js.Function0[Unit]): Unit = js.native
   def onStop(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Sets the center of the map to the given coordinates.
     * @param lat Latitude of the new center.
@@ -144,6 +168,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     success: js.Function0[Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the maximum zoom level.
     * @param maxZoom New maximum zoom level.
@@ -158,6 +183,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   ): Unit = js.native
   def setMaxZoom(maxZoom: Double, success: js.Function0[Unit]): Unit = js.native
   def setMaxZoom(maxZoom: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Sets the minimum zoom level.
     * @param minZoom New minimum zoom level.
@@ -172,6 +198,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   ): Unit = js.native
   def setMinZoom(minZoom: Double, success: js.Function0[Unit]): Unit = js.native
   def setMinZoom(minZoom: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * The path to the map ile is required, and the path to the render theme may be null in order to apply the default render theme.
     * @param args Array in the following form: [String mapFilePath, String renderThemePath]
@@ -186,6 +213,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   ): Unit = js.native
   def setOfflineTileLayer(args: js.Array[_], success: js.Function0[Unit]): Unit = js.native
   def setOfflineTileLayer(args: js.Array[_], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     *
     * @param args Array in the following form: [String providerName, String host, String baseUrl, String extension, int port]
@@ -200,6 +228,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   ): Unit = js.native
   def setOnlineTileLayer(args: js.Array[_], success: js.Function0[Unit]): Unit = js.native
   def setOnlineTileLayer(args: js.Array[_], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Sets the zoom to the specified value (if it is between the zoom limits).
     * @param zoomLevel New zoom level.
@@ -214,6 +243,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   ): Unit = js.native
   def setZoom(zoomLevel: Double, success: js.Function0[Unit]): Unit = js.native
   def setZoom(zoomLevel: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * To show the map view.
     * @param success Success callback.
@@ -224,4 +254,3 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
   def show(success: js.Function0[Unit]): Unit = js.native
   def show(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
 }
-

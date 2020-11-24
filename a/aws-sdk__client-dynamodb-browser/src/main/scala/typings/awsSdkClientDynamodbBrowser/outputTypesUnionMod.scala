@@ -2,11 +2,12 @@ package typings.awsSdkClientDynamodbBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-browser/types/OutputTypesUnion", JSImport.Namespace)
 @js.native
 object outputTypesUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientDynamodbBrowser.typesBatchGetItemOutputMod.BatchGetItemOutput
     - typings.awsSdkClientDynamodbBrowser.typesBatchWriteItemOutputMod.BatchWriteItemOutput
@@ -44,6 +45,4 @@ object outputTypesUnionMod extends js.Object {
     - typings.awsSdkClientDynamodbBrowser.typesUpdateTimeToLiveOutputMod.UpdateTimeToLiveOutput
   */
   trait OutputTypesUnion extends js.Object
-  
 }
-

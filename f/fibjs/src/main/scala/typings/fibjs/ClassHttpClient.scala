@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHttpClient extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,6 +22,7 @@ trait ClassHttpClient extends ClassObject {
     * @type Boolean
     */
   var autoRedirect: Boolean = js.native
+  
   /**
     * class prop 
     *
@@ -31,66 +33,7 @@ trait ClassHttpClient extends ClassObject {
     * @type NArray
     */
   var cookies: js.Array[_] = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief cookie功能开关，默认开启
-    * 
-    * 
-    * @type Boolean
-    */
-  var enableCookie: Boolean = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 body 最大尺寸，以 MB 为单位，缺省为 -1，不限制尺寸
-    * 
-    * 
-    * @type Integer
-    */
-  var maxBodySize: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 keep-alive 最大缓存连接数，缺省 128
-    * 
-    * 
-    * @type Integer
-    */
-  var poolSize: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 keep-alive 缓存连接超时时间，缺省 10000 ms
-    * 
-    * 
-    * @type Integer
-    */
-  var poolTimeout: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置超时时间 单位毫秒
-    * 
-    * 
-    * @type Integer
-    */
-  var timeout: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置 http 请求中的浏览器标识
-    * 
-    * 
-    * @type String
-    */
-  var userAgent: String = js.native
+  
   /**
     * 
     * @brief 用 DELETE 方法请求指定的 url，并返回结果，等同于 request("DELETE", ...)
@@ -113,6 +56,18 @@ trait ClassHttpClient extends ClassObject {
     */
   def del(url: String): ClassHttpResponse = js.native
   def del(url: String, opts: js.Object): ClassHttpResponse = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief cookie功能开关，默认开启
+    * 
+    * 
+    * @type Boolean
+    */
+  var enableCookie: Boolean = js.native
+  
   /**
     * 
     * @brief 用 GET 方法请求指定的 url，并返回结果，等同于 request("GET", ...)
@@ -135,6 +90,18 @@ trait ClassHttpClient extends ClassObject {
     */
   def get(url: String): ClassHttpResponse = js.native
   def get(url: String, opts: js.Object): ClassHttpResponse = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 body 最大尺寸，以 MB 为单位，缺省为 -1，不限制尺寸
+    * 
+    * 
+    * @type Integer
+    */
+  var maxBodySize: Double = js.native
+  
   /**
     * 
     * @brief 用 PATCH 方法请求指定的 url，并返回结果，等同于 request("PATCH", ...)
@@ -157,6 +124,29 @@ trait ClassHttpClient extends ClassObject {
     */
   def patch(url: String): ClassHttpResponse = js.native
   def patch(url: String, opts: js.Object): ClassHttpResponse = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 keep-alive 最大缓存连接数，缺省 128
+    * 
+    * 
+    * @type Integer
+    */
+  var poolSize: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 keep-alive 缓存连接超时时间，缺省 10000 ms
+    * 
+    * 
+    * @type Integer
+    */
+  var poolTimeout: Double = js.native
+  
   /**
     * 
     * @brief 用 POST 方法请求指定的 url，并返回结果，等同于 request("POST", ...)
@@ -179,6 +169,7 @@ trait ClassHttpClient extends ClassObject {
     */
   def post(url: String): ClassHttpResponse = js.native
   def post(url: String, opts: js.Object): ClassHttpResponse = js.native
+  
   /**
     * 
     * @brief 用 PUT 方法请求指定的 url，并返回结果，等同于 request("PUT", ...)
@@ -201,6 +192,7 @@ trait ClassHttpClient extends ClassObject {
     */
   def put(url: String): ClassHttpResponse = js.native
   def put(url: String, opts: js.Object): ClassHttpResponse = js.native
+  
   /**
     * 
     * @brief 发送 http 请求到指定的流对象，并返回结果
@@ -235,5 +227,26 @@ trait ClassHttpClient extends ClassObject {
     */
   def request(method: String, url: String): ClassHttpResponse = js.native
   def request(method: String, url: String, opts: js.Object): ClassHttpResponse = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置超时时间 单位毫秒
+    * 
+    * 
+    * @type Integer
+    */
+  var timeout: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置 http 请求中的浏览器标识
+    * 
+    * 
+    * @type String
+    */
+  var userAgent: String = js.native
 }
-

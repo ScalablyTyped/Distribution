@@ -85,10 +85,11 @@ import typings.activexFaxcomexlib.anon.Pctinfo
 import typings.activexFaxcomexlib.anon.PpvObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: FaxAccount,
     event: GetIDsOfNames,
@@ -399,4 +400,3 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }
-

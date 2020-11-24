@@ -10,9 +10,9 @@ remove or replace relative path for files
 | Full name          | gulp-flatten |
 | Keywords           | gulpplugin, gulp, flatten, relative, path |
 | # releases         | 1 |
-| # dependents       | 165 |
-| # downloads        | 2864146 |
-| # stars            | 50 |
+| # dependents       | 171 |
+| # downloads        | 3117887 |
+| # stars            | 49 |
 
 ## Links
 - [Homepage](https://github.com/armed/gulp-flatten)

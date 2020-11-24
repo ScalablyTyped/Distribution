@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.physicsJointMod.PhysicsJointData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "MotorEnabledJoint")
 @js.native
@@ -16,4 +16,3 @@ class MotorEnabledJoint protected ()
     */
   def this(`type`: Double, jointData: PhysicsJointData) = this()
 }
-

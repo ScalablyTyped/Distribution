@@ -7,19 +7,22 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.mod.base.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/entity/IEntityGroup", JSImport.Namespace)
 @js.native
 object ientitygroupMod extends js.Object {
+  
   @js.native
   trait IEntityGroup[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */]
     extends typings.tstl.containerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T]
        with IEntity {
+    
     /**
       * A tag name of children objects.
       */
     def CHILD_TAG(): String = js.native
+    
     /**
       * Range Assigner.
       *
@@ -28,18 +31,13 @@ object ientitygroupMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.icontainerMod.IContainer.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * Count elements with a specific key.
       *
@@ -50,6 +48,7 @@ object ientitygroupMod extends js.Object {
       * @return The number of elements in the container with a *key*.
       */
     def count(key: js.Any): Double = js.native
+    
     /**
       * Factory method of a child Entity.
       *
@@ -60,19 +59,7 @@ object ientitygroupMod extends js.Object {
       * @return A new child Entity belongs to EntityArray.
       */
     def createChild(xml: XML): T = js.native
-    /**
-      * Test whether container is empty.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.icontainerMod.IContainer.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -90,6 +77,7 @@ object ientitygroupMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: IteratorT): IteratorT = js.native
+    
     /**
       * Get an element
       *
@@ -102,6 +90,7 @@ object ientitygroupMod extends js.Object {
       * @return A reference object of the mapped value (_Ty)
       */
     def get(key: js.Any): T = js.native
+    
     /**
       * Get iterator to element.
       *
@@ -128,37 +117,7 @@ object ientitygroupMod extends js.Object {
       * @return Whether the map has an item having the specified identifier.
       */
     def has(key: js.Any): Boolean = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push(items: T*): Double = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseT = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rend(): ReverseT = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
+    
     /**
       * Swap elements.
       *
@@ -166,6 +125,7 @@ object ientitygroupMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: SourceT): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -174,21 +134,23 @@ object ientitygroupMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   @js.native
   object IEntityGroup extends js.Object {
+    
     /**
       * @hidden
       */
     def construct[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], xml: XML, prohibited_names: String*): Unit = js.native
+    
     def count[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): Double = js.native
+    
     def get[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): T = js.native
+    
     def has[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): Boolean = js.native
+    
     /**
       * @hidden
       */
     def toXML[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](group: IEntityGroup[T, SourceT, IteratorT, ReverseT], prohibited_names: String*): XML = js.native
   }
-  
 }
-

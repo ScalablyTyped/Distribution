@@ -4,11 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseAppTypes.mod.FirebaseApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FirebaseAnalytics extends js.Object {
+  
   var app: FirebaseApp = js.native
+  
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
@@ -21,25 +23,28 @@ trait FirebaseAnalytics extends js.Object {
   def logEvent(eventName: EventNameString, eventParams: js.UndefOr[scala.Nothing], options: AnalyticsCallOptions): Unit = js.native
   def logEvent(eventName: EventNameString, eventParams: EventParams): Unit = js.native
   def logEvent(eventName: EventNameString, eventParams: EventParams, options: AnalyticsCallOptions): Unit = js.native
+  
   /**
     * Sets whether analytics collection is enabled for this app on this device.
     * window['ga-disable-analyticsId'] = true;
     */
   def setAnalyticsCollectionEnabled(enabled: Boolean): Unit = js.native
+  
   /**
     * Use gtag 'config' command to set 'screen_name'.
     */
   def setCurrentScreen(screenName: String): Unit = js.native
   def setCurrentScreen(screenName: String, options: AnalyticsCallOptions): Unit = js.native
+  
   /**
     * Use gtag 'config' command to set 'user_id'.
     */
   def setUserId(id: String): Unit = js.native
   def setUserId(id: String, options: AnalyticsCallOptions): Unit = js.native
+  
   /**
     * Use gtag 'config' command to set all params specified.
     */
   def setUserProperties(properties: StringDictionary[js.Any]): Unit = js.native
   def setUserProperties(properties: StringDictionary[js.Any], options: AnalyticsCallOptions): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ React-Bootstrap based date picker.
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-date-picker |
 | Keywords           | react, react-component, react-bootstrap, bootstrap, date picker, calendar, date, picker |
-| # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 347941 |
+| # releases         | 0 |
+| # dependents       | 29 |
+| # downloads        | 326335 |
 | # stars            | 3 |
 
 ## Links

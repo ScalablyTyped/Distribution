@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.base")
 @js.native
 object base extends js.Object {
+  
   @js.native
   class Event protected ()
     extends typings.openui5.sap.ui.base.Event {
@@ -118,6 +119,4 @@ object base extends js.Object {
       */
     def this(oObjectClass: js.Any) = this()
   }
-  
 }
-

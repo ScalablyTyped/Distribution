@@ -1,12 +1,15 @@
 package typings.d3Shape.mod
 
 import typings.std.CanvasRenderingContext2D
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AreaRadial_[Datum] extends js.Object {
+  
+  def apply(data: js.Array[Datum]): String | Null = js.native
   /**
     * Generates a radial area for the given array of data.
     *
@@ -15,7 +18,8 @@ trait AreaRadial_[Datum] extends js.Object {
     *
     * @param data Array of data elements.
     */
-  def apply(data: js.Array[Datum]): String | Null = js.native
+  def apply(data: Iterable[Datum]): String | Null = js.native
+  
   /**
     * Returns the current startAngle accessor. The default startAngle accessor is a function returning the first element of a
     * two-element array of numbers.
@@ -40,6 +44,7 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param angle A constant value in radians with 0 at -y (12 o’clock).
     */
   def angle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current rendering context, which defaults to null.
     */
@@ -60,6 +65,7 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
+  
   /**
     * Returns the current curve factory, which defaults to curveLinear.
     */
@@ -79,6 +85,7 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   @JSName("curve")
   def curve_C_CurveFactory_C[C /* <: CurveFactory */](): C = js.native
+  
   /**
     * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
     */
@@ -120,6 +127,7 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param defined A boolean constant.
     */
   def defined(defined: Boolean): this.type = js.native
+  
   /**
     * Returns the current endAngle accessor, which defaults to null, indicating that the previously-computed startAngle value should be reused for the endAngle value.
     */
@@ -149,6 +157,7 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param angle null.
     */
   def endAngle(angle: Null): this.type = js.native
+  
   /**
     * Returns the current innerRadius accessor. The default innerRadius accessor is a function a constant value of zero.
     */
@@ -169,26 +178,31 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param radius A constant value.
     */
   def innerRadius(radius: Double): this.type = js.native
+  
   /**
     * Returns a new radial line generator that has this radial area generator’s current defined accessor, curve and context.
     * The line’s angle accessor is this area’s end angle accessor, and the line’s radius accessor is this area’s inner radius accessor.
     */
   def lineEndAngle(): LineRadial_[Datum] = js.native
+  
   /**
     * Returns a new radial line generator that has this radial area generator’s current defined accessor, curve and context.
     * The line’s angle accessor is this area’s start angle accessor, and the line’s radius accessor is this area’s inner radius accessor.
     */
   def lineInnerRadius(): LineRadial_[Datum] = js.native
+  
   /**
     * Returns a new radial line generator that has this radial area generator’s current defined accessor, curve and context.
     * The line’s angle accessor is this area’s start angle accessor, and the line’s radius accessor is this area’s outer radius accessor.
     */
   def lineOuterRadius(): LineRadial_[Datum] = js.native
+  
   /**
     * Returns a new radial line generator that has this radial area generator’s current defined accessor, curve and context.
     * The line’s angle accessor is this area’s start angle accessor, and the line’s radius accessor is this area’s inner radius accessor.
     */
   def lineStartAngle(): LineRadial_[Datum] = js.native
+  
   /**
     * Returns the current outerRadius accessor or null. The default outerRadius accessor is a function returning the second element of a
     * two-element array of numbers.
@@ -220,6 +234,7 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param radius null.
     */
   def outerRadius(radius: Null): this.type = js.native
+  
   /**
     * Returns the current innerRadius accessor. The default innerRadius accessor is a function returning a constant value of zero.
     */
@@ -242,6 +257,7 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param radius A constant value to be used for innerRadius.
     */
   def radius(radius: Double): this.type = js.native
+  
   /**
     * Returns the current startAngle accessor. The default startAngle accessor is a function returning the first element of a
     * two-element array of numbers.
@@ -265,4 +281,3 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   def startAngle(angle: Double): this.type = js.native
 }
-

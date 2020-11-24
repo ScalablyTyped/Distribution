@@ -12,7 +12,7 @@ Font Awesome icons as React components
 | Keywords           | react, react-component, font-awesome, icons |
 | # releases         | 1 |
 | # dependents       | 32 |
-| # downloads        | 311159 |
+| # downloads        | 336916 |
 | # stars            | 2 |
 
 ## Links

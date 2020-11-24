@@ -3,10 +3,11 @@ package typings.babelCore.mod
 import typings.std.NonNullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnvFunction extends js.Object {
+  
   /**
     * @returns the current `envName` string
     */
@@ -21,4 +22,3 @@ trait EnvFunction extends js.Object {
   // it returns its result instead of necessarily returning a boolean.
   def apply[T /* <: SimpleCacheKey */](envCallback: js.Function1[/* envName */ NonNullable[js.UndefOr[String]], T]): T = js.native
 }
-

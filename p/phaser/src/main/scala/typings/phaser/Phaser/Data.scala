@@ -8,11 +8,12 @@ import typings.phaser.integer
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Data")
 @js.native
 object Data extends js.Object {
+  
   /**
     * The Data Manager Component features a means to store pieces of data specific to a Game Object, System or Plugin.
     * You can then search, query it, and retrieve the data. The parent must either extend EventEmitter,
@@ -20,52 +21,17 @@ object Data extends js.Object {
     */
   @js.native
   trait DataManager extends js.Object {
+    
     /**
       * Return the total number of entries in this Data Manager.
       */
     var count: integer = js.native
-    /**
-      * The DataManager's event emitter.
-      */
-    var events: EventEmitter = js.native
-    /**
-      * Gets or sets the frozen state of this Data Manager.
-      * A frozen Data Manager will block all attempts to create new values or update existing ones.
-      */
-    var freeze: Boolean = js.native
-    /**
-      * The data list.
-      */
-    var list: StringDictionary[js.Any] = js.native
-    /**
-      * The object that this DataManager belongs to.
-      */
-    var parent: js.Any = js.native
-    /**
-      * The public values list. You can use this to access anything you have stored
-      * in this Data Manager. For example, if you set a value called `gold` you can
-      * access it via:
-      * 
-      * ```javascript
-      * this.data.values.gold;
-      * ```
-      * 
-      * You can also modify it directly:
-      * 
-      * ```javascript
-      * this.data.values.gold += 1000;
-      * ```
-      * 
-      * Doing so will emit a `setdata` event from the parent of this Data Manager.
-      * 
-      * Do not modify this object directly. Adding properties directly to this object will not
-      * emit any events. Always use `DataManager.set` to create new items the first time around.
-      */
-    var values: StringDictionary[js.Any] = js.native
+    
     /**
       * Destroy this data manager.
       */
     def destroy(): Unit = js.native
+    
     def each(callback: DataEachCallback, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
     /**
       * Passes all data entries to the given callback.
@@ -74,6 +40,18 @@ object Data extends js.Object {
       * @param args Additional arguments that will be passed to the callback, after the game object, key, and data.
       */
     def each(callback: DataEachCallback, context: js.Any, args: js.Any*): this.type = js.native
+    
+    /**
+      * The DataManager's event emitter.
+      */
+    var events: EventEmitter = js.native
+    
+    /**
+      * Gets or sets the frozen state of this Data Manager.
+      * A frozen Data Manager will block all attempts to create new values or update existing ones.
+      */
+    var freeze: Boolean = js.native
+    
     /**
       * Retrieves the value for the given key, or undefined if it doesn't exist.
       * 
@@ -100,10 +78,12 @@ object Data extends js.Object {
       */
     def get(key: String): js.Any = js.native
     def get(key: js.Array[String]): js.Any = js.native
+    
     /**
       * Retrieves all data values in a new object.
       */
     def getAll(): StringDictionary[js.Any] = js.native
+    
     /**
       * Determines whether the given key is set in this Data Manager.
       * 
@@ -112,6 +92,7 @@ object Data extends js.Object {
       * @param key The key to check.
       */
     def has(key: String): Boolean = js.native
+    
     /**
       * Increase a value for the given key. If the key doesn't already exist in the Data Manager then it is increased from 0.
       * 
@@ -123,6 +104,12 @@ object Data extends js.Object {
     def inc(key: String, data: js.Any): DataManager = js.native
     def inc(key: js.Object): DataManager = js.native
     def inc(key: js.Object, data: js.Any): DataManager = js.native
+    
+    /**
+      * The data list.
+      */
+    var list: StringDictionary[js.Any] = js.native
+    
     /**
       * Merge the given object of key value pairs into this DataManager.
       * 
@@ -133,16 +120,24 @@ object Data extends js.Object {
       */
     def merge(data: StringDictionary[js.Any]): this.type = js.native
     def merge(data: StringDictionary[js.Any], overwrite: Boolean): this.type = js.native
+    
+    /**
+      * The object that this DataManager belongs to.
+      */
+    var parent: js.Any = js.native
+    
     /**
       * Retrieves the data associated with the given 'key', deletes it from this Data Manager, then returns it.
       * @param key The key of the value to retrieve and delete.
       */
     def pop(key: String): js.Any = js.native
+    
     /**
       * Queries the DataManager for the values of keys matching the given regular expression.
       * @param search A regular expression object. If a non-RegExp object obj is passed, it is implicitly converted to a RegExp by using new RegExp(obj).
       */
     def query(search: RegExp): StringDictionary[js.Any] = js.native
+    
     /**
       * Remove the value for the given key.
       * 
@@ -158,10 +153,12 @@ object Data extends js.Object {
       */
     def remove(key: String): this.type = js.native
     def remove(key: js.Array[String]): this.type = js.native
+    
     /**
       * Delete all data in this Data Manager and unfreeze it.
       */
     def reset(): this.type = js.native
+    
     /**
       * Sets a value for the given key. If the key doesn't already exist in the Data Manager then it is created.
       * 
@@ -200,12 +197,14 @@ object Data extends js.Object {
       */
     def set(key: String, data: js.Any): this.type = js.native
     def set(key: js.Object, data: js.Any): this.type = js.native
+    
     /**
       * Freeze or unfreeze this Data Manager. A frozen Data Manager will block all attempts
       * to create new values or update existing ones.
       * @param value Whether to freeze or unfreeze the Data Manager.
       */
     def setFreeze(value: Boolean): this.type = js.native
+    
     /**
       * Toggle a boolean value for the given key. If the key doesn't already exist in the Data Manager then it is toggled from false.
       * 
@@ -214,6 +213,28 @@ object Data extends js.Object {
       */
     def toggle(key: String): DataManager = js.native
     def toggle(key: js.Object): DataManager = js.native
+    
+    /**
+      * The public values list. You can use this to access anything you have stored
+      * in this Data Manager. For example, if you set a value called `gold` you can
+      * access it via:
+      * 
+      * ```javascript
+      * this.data.values.gold;
+      * ```
+      * 
+      * You can also modify it directly:
+      * 
+      * ```javascript
+      * this.data.values.gold += 1000;
+      * ```
+      * 
+      * Doing so will emit a `setdata` event from the parent of this Data Manager.
+      * 
+      * Do not modify this object directly. Adding properties directly to this object will not
+      * emit any events. Always use `DataManager.set` to create new items the first time around.
+      */
+    var values: StringDictionary[js.Any] = js.native
   }
   
   /**
@@ -223,15 +244,15 @@ object Data extends js.Object {
     */
   @js.native
   trait DataManagerPlugin extends DataManager {
+    
     /**
       * A reference to the Scene that this DataManager belongs to.
       */
     var scene: Scene = js.native
+    
     /**
       * A reference to the Scene's Systems.
       */
     var systems: Systems = js.native
   }
-  
 }
-

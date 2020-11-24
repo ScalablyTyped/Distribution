@@ -12,7 +12,7 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/completer/lib/handler", "CompletionHandler")
 @js.native
@@ -21,14 +21,36 @@ class CompletionHandler_ protected () extends IDisposable {
     * Construct a new completion handler for a widget.
     */
   def this(options: IOptions) = this()
+  
   var _connector: js.Any = js.native
+  
   var _editor: js.Any = js.native
+  
   var _enabled: js.Any = js.native
+  
   var _isDisposed: js.Any = js.native
+  
+  var _isICompletionItemsConnector: js.Any = js.native
+  
   /**
     * Make a completion request.
     */
   var _makeRequest: js.Any = js.native
+  
+  /**
+    * If completion request fails, reset model and fail silently.
+    */
+  var _onFailure: js.Any = js.native
+  
+  /**
+    * Receive completion items from provider.
+    *
+    * @param state - The state of the editor when completion request was made.
+    *
+    * @param reply - The API response returned for a completion request.
+    */
+  var _onFetchItemsReply: js.Any = js.native
+  
   /**
     * Receive a completion reply from the connector.
     *
@@ -37,19 +59,21 @@ class CompletionHandler_ protected () extends IDisposable {
     * @param reply - The API response returned for a completion request.
     */
   var _onReply: js.Any = js.native
+  
   var _pending: js.Any = js.native
+  
+  /**
+    * Updates model with text state and current cursor position.
+    */
+  var _updateModel: js.Any = js.native
+  
+  var _validate: js.Any = js.native
+  
   /**
     * The completer widget managed by the handler.
     */
   val completer: Completer = js.native
-  /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
+  
   /**
     * The data connector used to populate completion requests.
     *
@@ -59,48 +83,40 @@ class CompletionHandler_ protected () extends IDisposable {
     * rejected promises.
     */
   def connector: IDataConnector[IReply, Unit, IRequest, String] = js.native
-  def connector(connector: IDataConnector[IReply, Unit, IRequest, String]): js.Any = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  def editor(): js.Any = js.native
-  def editor(newValue: IEditor): js.Any = js.native
+  def connector_=(connector: IDataConnector[IReply, Unit, IRequest, String]): Unit = js.native
+  
   /**
     * The editor used by the completion handler.
     */
-  @JSName("editor")
-  def editor_Union: IEditor | Null = js.native
+  def editor: IEditor | Null = js.native
+  def editor_=(newValue: IEditor | Null): Unit = js.native
+  
   /**
     * Get the state of the text editor at the given position.
     */
   /* protected */ def getState(editor: IEditor, position: IPosition): ITextState = js.native
+  
   /**
     * Invoke the handler and launch a completer.
     */
   def invoke(): Unit = js.native
+  
   /**
     * Get whether the completion handler is disposed.
     */
   @JSName("isDisposed")
   def isDisposed_MCompletionHandler_ : Boolean = js.native
+  
   /**
     * Handle a completion selected signal from the completion widget.
     */
   /* protected */ def onCompletionSelected(completer: Completer, `val`: String): Unit = js.native
+  
   /**
     * Handle `invoke-request` messages.
     */
   /* protected */ def onInvokeRequest(msg: Message): Unit = js.native
+  
   /**
     * Handle selection changed signal from an editor.
     *
@@ -125,17 +141,19 @@ class CompletionHandler_ protected () extends IDisposable {
     *    even though the completer is not available.
     */
   /* protected */ def onSelectionsChanged(): Unit = js.native
+  
   /**
     * Handle a text changed signal from an editor.
     */
   /* protected */ def onTextChanged(): Unit = js.native
+  
   /**
     * Handle a visibility change signal from a completer widget.
     */
   /* protected */ def onVisibilityChanged(completer: Completer): Unit = js.native
+  
   /**
     * Process a message sent to the completion handler.
     */
   def processMessage(msg: Message): Unit = js.native
 }
-

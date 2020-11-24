@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "escape-latex"
-version := "0.1.2-dt-20200515Z-da0fa5"
+version := "0.1.2-dt-20201002Z-e93446"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

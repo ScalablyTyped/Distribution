@@ -7,7 +7,7 @@ import typings.heremaps.H.map.layer.IMarkerLayer.TiledResponse
 import typings.heremaps.H.math.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ObjectTileLayer represents map objects which are requested on a tile basis
@@ -16,8 +16,10 @@ import scala.scalajs.js.annotation._
 trait MarkerTileLayer
   extends BaseTileLayer
      with IMarkerLayer {
+  
   /* InferMemberOverrides */
   override def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
+  
   /**
     * This method returns the copyright of the current data provider.
     * @param bounds {H.geo.Rect} - the bounding area for which to retrieve the copyright information
@@ -26,6 +28,7 @@ trait MarkerTileLayer
     */
   /* InferMemberOverrides */
   override def getCopyrights(bounds: Rect, level: Double): js.Array[ICopyright] = js.native
+  
   /**
     * This method checks if a zoom level can be served by this layer.
     * @param zoomLevel {number} - the zoom level to check
@@ -33,6 +36,7 @@ trait MarkerTileLayer
     */
   /* InferMemberOverrides */
   override def isValid(zoomLevel: Double): Boolean = js.native
+  
   /**
     * This method requests dom marker objects for provided bounding rectangle.
     * @param boundingRect {H.geo.Rect} - the bounding rectangle for which marker are to be returned
@@ -43,6 +47,7 @@ trait MarkerTileLayer
     */
   /* InferMemberOverrides */
   override def requestDomMarkers(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response | TiledResponse = js.native
+  
   /**
     * This method requests marker objects for provided bounding rectangle.
     * @param boundingRect {H.geo.Rect} - the bounding rectangle for which marker are to be returned
@@ -53,6 +58,7 @@ trait MarkerTileLayer
     */
   /* InferMemberOverrides */
   override def requestMarkers(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response | TiledResponse = js.native
+  
   /**
     * This method sets the maximum zoom level for which this layer will provide tiles.
     * @param max {number} - The new maximum zoom level of this layer
@@ -60,6 +66,7 @@ trait MarkerTileLayer
     */
   /* InferMemberOverrides */
   override def setMax(max: Double): Layer = js.native
+  
   /**
     * This method sets the minimum zoom level for which this layer will provide tiles.
     * @param min {number} - The new minimum zoom level of this layer
@@ -68,4 +75,3 @@ trait MarkerTileLayer
   /* InferMemberOverrides */
   override def setMin(min: Double): Layer = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.decorum.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("decorum", "CustomValidator")
 @js.native
@@ -13,4 +13,3 @@ class CustomValidator[TModel] protected () extends BaseValidator {
     message: MessageHandler[CustomValidator[TModel]]
   ) = this()
 }
-

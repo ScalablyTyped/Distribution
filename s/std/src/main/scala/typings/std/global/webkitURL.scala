@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("webkitURL")
 @js.native
@@ -14,7 +14,6 @@ class webkitURL protected ()
   def this(url: java.lang.String, base: java.lang.String) = this()
   def this(url: java.lang.String, base: typings.std.URL) = this()
 }
-
 @JSGlobal("webkitURL")
 @js.native
 object webkitURL
@@ -24,7 +23,8 @@ object webkitURL
       (/* base */ java.lang.String) | (/* base */ typings.std.URL), 
       typings.std.URL
     ] {
+  
   def createObjectURL(`object`: js.Any): java.lang.String = js.native
+  
   def revokeObjectURL(url: java.lang.String): Unit = js.native
 }
-

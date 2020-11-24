@@ -1,17 +1,16 @@
 package typings.awsSdk.lightsailMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Lightsail extends Service {
-  @JSName("config")
-  var config_Lightsail: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Allocates a static IP address.
     */
@@ -25,6 +24,7 @@ trait Lightsail extends Service {
     params: AllocateStaticIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AllocateStaticIpResult, Unit]
   ): Request[AllocateStaticIpResult, AWSError] = js.native
+  
   /**
     * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
@@ -38,6 +38,7 @@ trait Lightsail extends Service {
     params: AttachCertificateToDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachCertificateToDistributionResult, Unit]
   ): Request[AttachCertificateToDistributionResult, AWSError] = js.native
+  
   /**
     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
     */
@@ -51,6 +52,7 @@ trait Lightsail extends Service {
     params: AttachDiskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachDiskResult, Unit]
   ): Request[AttachDiskResult, AWSError] = js.native
+  
   /**
     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -64,6 +66,7 @@ trait Lightsail extends Service {
     params: AttachInstancesToLoadBalancerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachInstancesToLoadBalancerResult, Unit]
   ): Request[AttachInstancesToLoadBalancerResult, AWSError] = js.native
+  
   /**
     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -79,6 +82,7 @@ trait Lightsail extends Service {
     params: AttachLoadBalancerTlsCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachLoadBalancerTlsCertificateResult, Unit]
   ): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
+  
   /**
     * Attaches a static IP address to a specific Amazon Lightsail instance.
     */
@@ -92,6 +96,7 @@ trait Lightsail extends Service {
     params: AttachStaticIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachStaticIpResult, Unit]
   ): Request[AttachStaticIpResult, AWSError] = js.native
+  
   /**
     * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
@@ -105,6 +110,10 @@ trait Lightsail extends Service {
     params: CloseInstancePublicPortsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CloseInstancePublicPortsResult, Unit]
   ): Request[CloseInstancePublicPortsResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Lightsail: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
     */
@@ -118,6 +127,7 @@ trait Lightsail extends Service {
     params: CopySnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CopySnapshotResult, Unit]
   ): Request[CopySnapshotResult, AWSError] = js.native
+  
   /**
     * Creates an SSL/TLS certificate for a Amazon Lightsail content delivery network (CDN) distribution. After the certificate is created, use the AttachCertificateToDistribution action to attach the certificate to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
@@ -131,6 +141,7 @@ trait Lightsail extends Service {
     params: CreateCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateResult, Unit]
   ): Request[CreateCertificateResult, AWSError] = js.native
+  
   /**
     * Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the get cloud formation stack records operation to get a list of the CloudFormation stacks created.  Wait until after your new Amazon EC2 instance is created before running the create cloud formation stack operation again with the same export snapshot record. 
     */
@@ -144,6 +155,7 @@ trait Lightsail extends Service {
     params: CreateCloudFormationStackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCloudFormationStackResult, Unit]
   ): Request[CreateCloudFormationStackResult, AWSError] = js.native
+  
   /**
     * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
@@ -157,6 +169,53 @@ trait Lightsail extends Service {
     params: CreateContactMethodRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateContactMethodResult, Unit]
   ): Request[CreateContactMethodResult, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon Lightsail container service. A Lightsail container service is a compute resource to which you can deploy containers. For more information, see Container services in Amazon Lightsail in the Lightsail Dev Guide.
+    */
+  def createContainerService(): Request[CreateContainerServiceResult, AWSError] = js.native
+  def createContainerService(callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceResult, Unit]): Request[CreateContainerServiceResult, AWSError] = js.native
+  /**
+    * Creates an Amazon Lightsail container service. A Lightsail container service is a compute resource to which you can deploy containers. For more information, see Container services in Amazon Lightsail in the Lightsail Dev Guide.
+    */
+  def createContainerService(params: CreateContainerServiceRequest): Request[CreateContainerServiceResult, AWSError] = js.native
+  def createContainerService(
+    params: CreateContainerServiceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceResult, Unit]
+  ): Request[CreateContainerServiceResult, AWSError] = js.native
+  
+  /**
+    * Creates a deployment for your Amazon Lightsail container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration. You can deploy containers to your container service using container images from a public registry like Docker Hub, or from your local machine. For more information, see Creating container images for your Amazon Lightsail container services in the Lightsail Dev Guide.
+    */
+  def createContainerServiceDeployment(): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
+  def createContainerServiceDeployment(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceDeploymentResult, Unit]
+  ): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
+  /**
+    * Creates a deployment for your Amazon Lightsail container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration. You can deploy containers to your container service using container images from a public registry like Docker Hub, or from your local machine. For more information, see Creating container images for your Amazon Lightsail container services in the Lightsail Dev Guide.
+    */
+  def createContainerServiceDeployment(params: CreateContainerServiceDeploymentRequest): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
+  def createContainerServiceDeployment(
+    params: CreateContainerServiceDeploymentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceDeploymentResult, Unit]
+  ): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
+  
+  /**
+    * Creates a temporary set of log in credentials that you can use to log in to the Docker process on your local machine. After you're logged in, you can use the native Docker commands to push your local container images to the container image registry of your Amazon Lightsail account so that you can use them with your Lightsail container service. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials.  You can only push container images to the container service registry of your Lightsail account. You cannot pull container images perform any other container image management actions on the container service registry of your Lightsail account.  After you push your container images to the container image registry of your Lightsail account, use the RegisterContainerImage action to register the pushed images to a specific Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    */
+  def createContainerServiceRegistryLogin(): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
+  def createContainerServiceRegistryLogin(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceRegistryLoginResult, Unit]
+  ): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
+  /**
+    * Creates a temporary set of log in credentials that you can use to log in to the Docker process on your local machine. After you're logged in, you can use the native Docker commands to push your local container images to the container image registry of your Amazon Lightsail account so that you can use them with your Lightsail container service. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials.  You can only push container images to the container service registry of your Lightsail account. You cannot pull container images perform any other container image management actions on the container service registry of your Lightsail account.  After you push your container images to the container image registry of your Lightsail account, use the RegisterContainerImage action to register the pushed images to a specific Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    */
+  def createContainerServiceRegistryLogin(params: CreateContainerServiceRegistryLoginRequest): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
+  def createContainerServiceRegistryLogin(
+    params: CreateContainerServiceRegistryLoginRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceRegistryLoginResult, Unit]
+  ): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
+  
   /**
     * Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -170,6 +229,7 @@ trait Lightsail extends Service {
     params: CreateDiskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskResult, Unit]
   ): Request[CreateDiskResult, AWSError] = js.native
+  
   /**
     * Creates a block storage disk from a manual or automatic snapshot of a disk. The resulting disk can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by disk snapshot name. For more information, see the Lightsail Dev Guide.
     */
@@ -183,6 +243,7 @@ trait Lightsail extends Service {
     params: CreateDiskFromSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskFromSnapshotResult, Unit]
   ): Request[CreateDiskFromSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -196,6 +257,7 @@ trait Lightsail extends Service {
     params: CreateDiskSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskSnapshotResult, Unit]
   ): Request[CreateDiskSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates an Amazon Lightsail content delivery network (CDN) distribution. A distribution is a globally distributed network of caching servers that improve the performance of your website or web application hosted on a Lightsail instance. For more information, see Content delivery networks in Amazon Lightsail.
     */
@@ -209,6 +271,7 @@ trait Lightsail extends Service {
     params: CreateDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDistributionResult, Unit]
   ): Request[CreateDistributionResult, AWSError] = js.native
+  
   /**
     * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -222,19 +285,21 @@ trait Lightsail extends Service {
     params: CreateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResult, Unit]
   ): Request[CreateDomainResult, AWSError] = js.native
+  
   /**
-    * Creates one of the following entry records associated with the domain: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Creates one of the following domain name system (DNS) records in a domain DNS zone: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */
   def createDomainEntry(): Request[CreateDomainEntryResult, AWSError] = js.native
   def createDomainEntry(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainEntryResult, Unit]): Request[CreateDomainEntryResult, AWSError] = js.native
   /**
-    * Creates one of the following entry records associated with the domain: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Creates one of the following domain name system (DNS) records in a domain DNS zone: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */
   def createDomainEntry(params: CreateDomainEntryRequest): Request[CreateDomainEntryResult, AWSError] = js.native
   def createDomainEntry(
     params: CreateDomainEntryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainEntryResult, Unit]
   ): Request[CreateDomainEntryResult, AWSError] = js.native
+  
   /**
     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -248,6 +313,7 @@ trait Lightsail extends Service {
     params: CreateInstanceSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceSnapshotResult, Unit]
   ): Request[CreateInstanceSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates one or more Amazon Lightsail instances. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -261,6 +327,7 @@ trait Lightsail extends Service {
     params: CreateInstancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInstancesResult, Unit]
   ): Request[CreateInstancesResult, AWSError] = js.native
+  
   /**
     * Creates one or more new instances from a manual or automatic snapshot of an instance. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instance snapshot name. For more information, see the Lightsail Dev Guide.
     */
@@ -274,6 +341,7 @@ trait Lightsail extends Service {
     params: CreateInstancesFromSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInstancesFromSnapshotResult, Unit]
   ): Request[CreateInstancesFromSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -287,6 +355,7 @@ trait Lightsail extends Service {
     params: CreateKeyPairRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateKeyPairResult, Unit]
   ): Request[CreateKeyPairResult, AWSError] = js.native
+  
   /**
     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -300,6 +369,7 @@ trait Lightsail extends Service {
     params: CreateLoadBalancerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoadBalancerResult, Unit]
   ): Request[CreateLoadBalancerResult, AWSError] = js.native
+  
   /**
     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -315,6 +385,7 @@ trait Lightsail extends Service {
     params: CreateLoadBalancerTlsCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoadBalancerTlsCertificateResult, Unit]
   ): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
+  
   /**
     * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -328,6 +399,7 @@ trait Lightsail extends Service {
     params: CreateRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseResult, Unit]
   ): Request[CreateRelationalDatabaseResult, AWSError] = js.native
+  
   /**
     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
     */
@@ -343,6 +415,7 @@ trait Lightsail extends Service {
     params: CreateRelationalDatabaseFromSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseFromSnapshotResult, Unit]
   ): Request[CreateRelationalDatabaseFromSnapshotResult, AWSError] = js.native
+  
   /**
     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -358,6 +431,7 @@ trait Lightsail extends Service {
     params: CreateRelationalDatabaseSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseSnapshotResult, Unit]
   ): Request[CreateRelationalDatabaseSnapshotResult, AWSError] = js.native
+  
   /**
     * Deletes an alarm. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
     */
@@ -371,6 +445,7 @@ trait Lightsail extends Service {
     params: DeleteAlarmRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAlarmResult, Unit]
   ): Request[DeleteAlarmResult, AWSError] = js.native
+  
   /**
     * Deletes an automatic snapshot of an instance or disk. For more information, see the Lightsail Dev Guide.
     */
@@ -384,6 +459,7 @@ trait Lightsail extends Service {
     params: DeleteAutoSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutoSnapshotResult, Unit]
   ): Request[DeleteAutoSnapshotResult, AWSError] = js.native
+  
   /**
     * Deletes an SSL/TLS certificate for your Amazon Lightsail content delivery network (CDN) distribution. Certificates that are currently attached to a distribution cannot be deleted. Use the DetachCertificateFromDistribution action to detach a certificate from a distribution.
     */
@@ -397,6 +473,7 @@ trait Lightsail extends Service {
     params: DeleteCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCertificateResult, Unit]
   ): Request[DeleteCertificateResult, AWSError] = js.native
+  
   /**
     * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
@@ -410,6 +487,35 @@ trait Lightsail extends Service {
     params: DeleteContactMethodRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactMethodResult, Unit]
   ): Request[DeleteContactMethodResult, AWSError] = js.native
+  
+  /**
+    * Deletes a container image that is registered to your Amazon Lightsail container service.
+    */
+  def deleteContainerImage(): Request[DeleteContainerImageResult, AWSError] = js.native
+  def deleteContainerImage(callback: js.Function2[/* err */ AWSError, /* data */ DeleteContainerImageResult, Unit]): Request[DeleteContainerImageResult, AWSError] = js.native
+  /**
+    * Deletes a container image that is registered to your Amazon Lightsail container service.
+    */
+  def deleteContainerImage(params: DeleteContainerImageRequest): Request[DeleteContainerImageResult, AWSError] = js.native
+  def deleteContainerImage(
+    params: DeleteContainerImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteContainerImageResult, Unit]
+  ): Request[DeleteContainerImageResult, AWSError] = js.native
+  
+  /**
+    * Deletes your Amazon Lightsail container service.
+    */
+  def deleteContainerService(): Request[DeleteContainerServiceResult, AWSError] = js.native
+  def deleteContainerService(callback: js.Function2[/* err */ AWSError, /* data */ DeleteContainerServiceResult, Unit]): Request[DeleteContainerServiceResult, AWSError] = js.native
+  /**
+    * Deletes your Amazon Lightsail container service.
+    */
+  def deleteContainerService(params: DeleteContainerServiceRequest): Request[DeleteContainerServiceResult, AWSError] = js.native
+  def deleteContainerService(
+    params: DeleteContainerServiceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteContainerServiceResult, Unit]
+  ): Request[DeleteContainerServiceResult, AWSError] = js.native
+  
   /**
     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
     */
@@ -423,6 +529,7 @@ trait Lightsail extends Service {
     params: DeleteDiskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDiskResult, Unit]
   ): Request[DeleteDiskResult, AWSError] = js.native
+  
   /**
     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by disk snapshot name. For more information, see the Lightsail Dev Guide.
     */
@@ -436,6 +543,7 @@ trait Lightsail extends Service {
     params: DeleteDiskSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDiskSnapshotResult, Unit]
   ): Request[DeleteDiskSnapshotResult, AWSError] = js.native
+  
   /**
     * Deletes your Amazon Lightsail content delivery network (CDN) distribution.
     */
@@ -449,6 +557,7 @@ trait Lightsail extends Service {
     params: DeleteDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDistributionResult, Unit]
   ): Request[DeleteDistributionResult, AWSError] = js.native
+  
   /**
     * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */
@@ -462,6 +571,7 @@ trait Lightsail extends Service {
     params: DeleteDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResult, Unit]
   ): Request[DeleteDomainResult, AWSError] = js.native
+  
   /**
     * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */
@@ -475,6 +585,7 @@ trait Lightsail extends Service {
     params: DeleteDomainEntryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainEntryResult, Unit]
   ): Request[DeleteDomainEntryResult, AWSError] = js.native
+  
   /**
     * Deletes an Amazon Lightsail instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
@@ -488,6 +599,7 @@ trait Lightsail extends Service {
     params: DeleteInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceResult, Unit]
   ): Request[DeleteInstanceResult, AWSError] = js.native
+  
   /**
     * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instance snapshot name. For more information, see the Lightsail Dev Guide.
     */
@@ -501,6 +613,7 @@ trait Lightsail extends Service {
     params: DeleteInstanceSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceSnapshotResult, Unit]
   ): Request[DeleteInstanceSnapshotResult, AWSError] = js.native
+  
   /**
     * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by key pair name. For more information, see the Lightsail Dev Guide.
     */
@@ -514,6 +627,7 @@ trait Lightsail extends Service {
     params: DeleteKeyPairRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteKeyPairResult, Unit]
   ): Request[DeleteKeyPairResult, AWSError] = js.native
+  
   /**
     * Deletes the known host key or certificate used by the Amazon Lightsail browser-based SSH or RDP clients to authenticate an instance. This operation enables the Lightsail browser-based SSH or RDP clients to connect to the instance after a host key mismatch.  Perform this operation only if you were expecting the host key or certificate mismatch or if you are familiar with the new host key or certificate on the instance. For more information, see Troubleshooting connection issues when using the Amazon Lightsail browser-based SSH or RDP client. 
     */
@@ -527,6 +641,7 @@ trait Lightsail extends Service {
     params: DeleteKnownHostKeysRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteKnownHostKeysResult, Unit]
   ): Request[DeleteKnownHostKeysResult, AWSError] = js.native
+  
   /**
     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -540,6 +655,7 @@ trait Lightsail extends Service {
     params: DeleteLoadBalancerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoadBalancerResult, Unit]
   ): Request[DeleteLoadBalancerResult, AWSError] = js.native
+  
   /**
     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -555,6 +671,7 @@ trait Lightsail extends Service {
     params: DeleteLoadBalancerTlsCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoadBalancerTlsCertificateResult, Unit]
   ): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
+  
   /**
     * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -568,6 +685,7 @@ trait Lightsail extends Service {
     params: DeleteRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRelationalDatabaseResult, Unit]
   ): Request[DeleteRelationalDatabaseResult, AWSError] = js.native
+  
   /**
     * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -583,6 +701,7 @@ trait Lightsail extends Service {
     params: DeleteRelationalDatabaseSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRelationalDatabaseSnapshotResult, Unit]
   ): Request[DeleteRelationalDatabaseSnapshotResult, AWSError] = js.native
+  
   /**
     * Detaches an SSL/TLS certificate from your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is detached, your distribution stops accepting traffic for all of the domains that are associated with the certificate.
     */
@@ -598,6 +717,7 @@ trait Lightsail extends Service {
     params: DetachCertificateFromDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetachCertificateFromDistributionResult, Unit]
   ): Request[DetachCertificateFromDistributionResult, AWSError] = js.native
+  
   /**
     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
     */
@@ -611,6 +731,7 @@ trait Lightsail extends Service {
     params: DetachDiskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetachDiskResult, Unit]
   ): Request[DetachDiskResult, AWSError] = js.native
+  
   /**
     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -624,6 +745,7 @@ trait Lightsail extends Service {
     params: DetachInstancesFromLoadBalancerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetachInstancesFromLoadBalancerResult, Unit]
   ): Request[DetachInstancesFromLoadBalancerResult, AWSError] = js.native
+  
   /**
     * Detaches a static IP from the Amazon Lightsail instance to which it is attached.
     */
@@ -637,6 +759,7 @@ trait Lightsail extends Service {
     params: DetachStaticIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetachStaticIpResult, Unit]
   ): Request[DetachStaticIpResult, AWSError] = js.native
+  
   /**
     * Disables an add-on for an Amazon Lightsail resource. For more information, see the Lightsail Dev Guide.
     */
@@ -650,6 +773,7 @@ trait Lightsail extends Service {
     params: DisableAddOnRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableAddOnResult, Unit]
   ): Request[DisableAddOnResult, AWSError] = js.native
+  
   /**
     * Downloads the default SSH key pair from the user's account.
     */
@@ -663,6 +787,7 @@ trait Lightsail extends Service {
     params: DownloadDefaultKeyPairRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DownloadDefaultKeyPairResult, Unit]
   ): Request[DownloadDefaultKeyPairResult, AWSError] = js.native
+  
   /**
     * Enables or modifies an add-on for an Amazon Lightsail resource. For more information, see the Lightsail Dev Guide.
     */
@@ -676,6 +801,7 @@ trait Lightsail extends Service {
     params: EnableAddOnRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableAddOnResult, Unit]
   ): Request[EnableAddOnResult, AWSError] = js.native
+  
   /**
     * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by source snapshot name. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
     */
@@ -689,6 +815,7 @@ trait Lightsail extends Service {
     params: ExportSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportSnapshotResult, Unit]
   ): Request[ExportSnapshotResult, AWSError] = js.native
+  
   /**
     * Returns the names of all active (not deleted) resources.
     */
@@ -702,6 +829,7 @@ trait Lightsail extends Service {
     params: GetActiveNamesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetActiveNamesResult, Unit]
   ): Request[GetActiveNamesResult, AWSError] = js.native
+  
   /**
     * Returns information about the configured alarms. Specify an alarm name in your request to return information about a specific alarm, or specify a monitored resource name to return information about all alarms for a specific resource. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
     */
@@ -715,6 +843,7 @@ trait Lightsail extends Service {
     params: GetAlarmsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAlarmsResult, Unit]
   ): Request[GetAlarmsResult, AWSError] = js.native
+  
   /**
     * Returns the available automatic snapshots for an instance or disk. For more information, see the Lightsail Dev Guide.
     */
@@ -728,6 +857,7 @@ trait Lightsail extends Service {
     params: GetAutoSnapshotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAutoSnapshotsResult, Unit]
   ): Request[GetAutoSnapshotsResult, AWSError] = js.native
+  
   /**
     * Returns the list of available instance images, or blueprints. You can use a blueprint to create a new instance already running a specific operating system, as well as a preinstalled app or development stack. The software each instance is running depends on the blueprint image you choose.  Use active blueprints when creating new instances. Inactive blueprints are listed to support customers with existing instances and are not necessarily available to create new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. 
     */
@@ -741,6 +871,7 @@ trait Lightsail extends Service {
     params: GetBlueprintsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintsResult, Unit]
   ): Request[GetBlueprintsResult, AWSError] = js.native
+  
   /**
     * Returns the list of bundles that are available for purchase. A bundle describes the specs for your virtual private server (or instance).
     */
@@ -754,6 +885,7 @@ trait Lightsail extends Service {
     params: GetBundlesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBundlesResult, Unit]
   ): Request[GetBundlesResult, AWSError] = js.native
+  
   /**
     * Returns information about one or more Amazon Lightsail SSL/TLS certificates.  To get a summary of a certificate, ommit includeCertificateDetails from your request. The response will include only the certificate Amazon Resource Name (ARN), certificate name, domain name, and tags. 
     */
@@ -767,6 +899,7 @@ trait Lightsail extends Service {
     params: GetCertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCertificatesResult, Unit]
   ): Request[GetCertificatesResult, AWSError] = js.native
+  
   /**
     * Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.
     */
@@ -780,6 +913,7 @@ trait Lightsail extends Service {
     params: GetCloudFormationStackRecordsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCloudFormationStackRecordsResult, Unit]
   ): Request[GetCloudFormationStackRecordsResult, AWSError] = js.native
+  
   /**
     * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
@@ -793,6 +927,105 @@ trait Lightsail extends Service {
     params: GetContactMethodsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetContactMethodsResult, Unit]
   ): Request[GetContactMethodsResult, AWSError] = js.native
+  
+  /**
+    * Returns information about Amazon Lightsail containers, such as the current version of the Lightsail Control (lightsailctl) plugin.
+    */
+  def getContainerAPIMetadata(): Request[GetContainerAPIMetadataResult, AWSError] = js.native
+  def getContainerAPIMetadata(callback: js.Function2[/* err */ AWSError, /* data */ GetContainerAPIMetadataResult, Unit]): Request[GetContainerAPIMetadataResult, AWSError] = js.native
+  /**
+    * Returns information about Amazon Lightsail containers, such as the current version of the Lightsail Control (lightsailctl) plugin.
+    */
+  def getContainerAPIMetadata(params: GetContainerAPIMetadataRequest): Request[GetContainerAPIMetadataResult, AWSError] = js.native
+  def getContainerAPIMetadata(
+    params: GetContainerAPIMetadataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContainerAPIMetadataResult, Unit]
+  ): Request[GetContainerAPIMetadataResult, AWSError] = js.native
+  
+  /**
+    * Returns the container images that are registered to your Amazon Lightsail container service.  If you created a deployment on your Lightsail container service that uses container images from a public registry like Docker Hub, those images are not returned as part of this action. Those images are not registered to your Lightsail container service. 
+    */
+  def getContainerImages(): Request[GetContainerImagesResult, AWSError] = js.native
+  def getContainerImages(callback: js.Function2[/* err */ AWSError, /* data */ GetContainerImagesResult, Unit]): Request[GetContainerImagesResult, AWSError] = js.native
+  /**
+    * Returns the container images that are registered to your Amazon Lightsail container service.  If you created a deployment on your Lightsail container service that uses container images from a public registry like Docker Hub, those images are not returned as part of this action. Those images are not registered to your Lightsail container service. 
+    */
+  def getContainerImages(params: GetContainerImagesRequest): Request[GetContainerImagesResult, AWSError] = js.native
+  def getContainerImages(
+    params: GetContainerImagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContainerImagesResult, Unit]
+  ): Request[GetContainerImagesResult, AWSError] = js.native
+  
+  /**
+    * Returns the log events of a container of your Amazon Lightsail container service. If your container service has more than one node (i.e., a scale greater than 1), then the log events that are returned for the specified container are merged from all nodes on your container service.  Container logs are retained for a certain amount of time. For more information, see Amazon Lightsail endpoints and quotas in the AWS General Reference. 
+    */
+  def getContainerLog(): Request[GetContainerLogResult, AWSError] = js.native
+  def getContainerLog(callback: js.Function2[/* err */ AWSError, /* data */ GetContainerLogResult, Unit]): Request[GetContainerLogResult, AWSError] = js.native
+  /**
+    * Returns the log events of a container of your Amazon Lightsail container service. If your container service has more than one node (i.e., a scale greater than 1), then the log events that are returned for the specified container are merged from all nodes on your container service.  Container logs are retained for a certain amount of time. For more information, see Amazon Lightsail endpoints and quotas in the AWS General Reference. 
+    */
+  def getContainerLog(params: GetContainerLogRequest): Request[GetContainerLogResult, AWSError] = js.native
+  def getContainerLog(
+    params: GetContainerLogRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContainerLogResult, Unit]
+  ): Request[GetContainerLogResult, AWSError] = js.native
+  
+  /**
+    * Returns the deployments for your Amazon Lightsail container service A deployment specifies the settings, such as the ports and launch command, of containers that are deployed to your container service. The deployments are ordered by version in ascending order. The newest version is listed at the top of the response.  A set number of deployments are kept before the oldest one is replaced with the newest one. For more information, see Amazon Lightsail endpoints and quotas in the AWS General Reference. 
+    */
+  def getContainerServiceDeployments(): Request[GetContainerServiceDeploymentsResult, AWSError] = js.native
+  def getContainerServiceDeployments(callback: js.Function2[/* err */ AWSError, /* data */ GetContainerServiceDeploymentsResult, Unit]): Request[GetContainerServiceDeploymentsResult, AWSError] = js.native
+  /**
+    * Returns the deployments for your Amazon Lightsail container service A deployment specifies the settings, such as the ports and launch command, of containers that are deployed to your container service. The deployments are ordered by version in ascending order. The newest version is listed at the top of the response.  A set number of deployments are kept before the oldest one is replaced with the newest one. For more information, see Amazon Lightsail endpoints and quotas in the AWS General Reference. 
+    */
+  def getContainerServiceDeployments(params: GetContainerServiceDeploymentsRequest): Request[GetContainerServiceDeploymentsResult, AWSError] = js.native
+  def getContainerServiceDeployments(
+    params: GetContainerServiceDeploymentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContainerServiceDeploymentsResult, Unit]
+  ): Request[GetContainerServiceDeploymentsResult, AWSError] = js.native
+  
+  /**
+    * Returns the data points of a specific metric of your Amazon Lightsail container service. Metrics report the utilization of your resources. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
+    */
+  def getContainerServiceMetricData(): Request[GetContainerServiceMetricDataResult, AWSError] = js.native
+  def getContainerServiceMetricData(callback: js.Function2[/* err */ AWSError, /* data */ GetContainerServiceMetricDataResult, Unit]): Request[GetContainerServiceMetricDataResult, AWSError] = js.native
+  /**
+    * Returns the data points of a specific metric of your Amazon Lightsail container service. Metrics report the utilization of your resources. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
+    */
+  def getContainerServiceMetricData(params: GetContainerServiceMetricDataRequest): Request[GetContainerServiceMetricDataResult, AWSError] = js.native
+  def getContainerServiceMetricData(
+    params: GetContainerServiceMetricDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContainerServiceMetricDataResult, Unit]
+  ): Request[GetContainerServiceMetricDataResult, AWSError] = js.native
+  
+  /**
+    * Returns the list of powers that can be specified for your Amazon Lightsail container services. The power specifies the amount of memory, the number of vCPUs, and the base price of the container service.
+    */
+  def getContainerServicePowers(): Request[GetContainerServicePowersResult, AWSError] = js.native
+  def getContainerServicePowers(callback: js.Function2[/* err */ AWSError, /* data */ GetContainerServicePowersResult, Unit]): Request[GetContainerServicePowersResult, AWSError] = js.native
+  /**
+    * Returns the list of powers that can be specified for your Amazon Lightsail container services. The power specifies the amount of memory, the number of vCPUs, and the base price of the container service.
+    */
+  def getContainerServicePowers(params: GetContainerServicePowersRequest): Request[GetContainerServicePowersResult, AWSError] = js.native
+  def getContainerServicePowers(
+    params: GetContainerServicePowersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetContainerServicePowersResult, Unit]
+  ): Request[GetContainerServicePowersResult, AWSError] = js.native
+  
+  /**
+    * Returns information about one or more of your Amazon Lightsail container services.
+    */
+  def getContainerServices(): Request[ContainerServicesListResult, AWSError] = js.native
+  def getContainerServices(callback: js.Function2[/* err */ AWSError, /* data */ ContainerServicesListResult, Unit]): Request[ContainerServicesListResult, AWSError] = js.native
+  /**
+    * Returns information about one or more of your Amazon Lightsail container services.
+    */
+  def getContainerServices(params: GetContainerServicesRequest): Request[ContainerServicesListResult, AWSError] = js.native
+  def getContainerServices(
+    params: GetContainerServicesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ContainerServicesListResult, Unit]
+  ): Request[ContainerServicesListResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific block storage disk.
     */
@@ -803,6 +1036,7 @@ trait Lightsail extends Service {
     */
   def getDisk(params: GetDiskRequest): Request[GetDiskResult, AWSError] = js.native
   def getDisk(params: GetDiskRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetDiskResult, Unit]): Request[GetDiskResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific block storage disk snapshot.
     */
@@ -816,6 +1050,7 @@ trait Lightsail extends Service {
     params: GetDiskSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiskSnapshotResult, Unit]
   ): Request[GetDiskSnapshotResult, AWSError] = js.native
+  
   /**
     * Returns information about all block storage disk snapshots in your AWS account and region.
     */
@@ -829,6 +1064,7 @@ trait Lightsail extends Service {
     params: GetDiskSnapshotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiskSnapshotsResult, Unit]
   ): Request[GetDiskSnapshotsResult, AWSError] = js.native
+  
   /**
     * Returns information about all block storage disks in your AWS account and region.
     */
@@ -842,6 +1078,7 @@ trait Lightsail extends Service {
     params: GetDisksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDisksResult, Unit]
   ): Request[GetDisksResult, AWSError] = js.native
+  
   /**
     * Returns the list bundles that can be applied to you Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution.
     */
@@ -855,6 +1092,7 @@ trait Lightsail extends Service {
     params: GetDistributionBundlesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionBundlesResult, Unit]
   ): Request[GetDistributionBundlesResult, AWSError] = js.native
+  
   /**
     * Returns the timestamp and status of the last cache reset of a specific Amazon Lightsail content delivery network (CDN) distribution.
     */
@@ -868,6 +1106,7 @@ trait Lightsail extends Service {
     params: GetDistributionLatestCacheResetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionLatestCacheResetResult, Unit]
   ): Request[GetDistributionLatestCacheResetResult, AWSError] = js.native
+  
   /**
     * Returns the data points of a specific metric for an Amazon Lightsail content delivery network (CDN) distribution. Metrics report the utilization of your resources, and the error counts generated by them. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
     */
@@ -881,6 +1120,7 @@ trait Lightsail extends Service {
     params: GetDistributionMetricDataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionMetricDataResult, Unit]
   ): Request[GetDistributionMetricDataResult, AWSError] = js.native
+  
   /**
     * Returns information about one or more of your Amazon Lightsail content delivery network (CDN) distributions.
     */
@@ -894,6 +1134,7 @@ trait Lightsail extends Service {
     params: GetDistributionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionsResult, Unit]
   ): Request[GetDistributionsResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific domain recordset.
     */
@@ -907,6 +1148,7 @@ trait Lightsail extends Service {
     params: GetDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainResult, Unit]
   ): Request[GetDomainResult, AWSError] = js.native
+  
   /**
     * Returns a list of all domains in the user's account.
     */
@@ -920,6 +1162,7 @@ trait Lightsail extends Service {
     params: GetDomainsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainsResult, Unit]
   ): Request[GetDomainsResult, AWSError] = js.native
+  
   /**
     * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
     */
@@ -933,6 +1176,7 @@ trait Lightsail extends Service {
     params: GetExportSnapshotRecordsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetExportSnapshotRecordsResult, Unit]
   ): Request[GetExportSnapshotRecordsResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific Amazon Lightsail instance, which is a virtual private server.
     */
@@ -946,6 +1190,7 @@ trait Lightsail extends Service {
     params: GetInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceResult, Unit]
   ): Request[GetInstanceResult, AWSError] = js.native
+  
   /**
     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
@@ -959,6 +1204,7 @@ trait Lightsail extends Service {
     params: GetInstanceAccessDetailsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceAccessDetailsResult, Unit]
   ): Request[GetInstanceAccessDetailsResult, AWSError] = js.native
+  
   /**
     * Returns the data points for the specified Amazon Lightsail instance metric, given an instance name. Metrics report the utilization of your resources, and the error counts generated by them. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
     */
@@ -972,6 +1218,7 @@ trait Lightsail extends Service {
     params: GetInstanceMetricDataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceMetricDataResult, Unit]
   ): Request[GetInstanceMetricDataResult, AWSError] = js.native
+  
   /**
     * Returns the firewall port states for a specific Amazon Lightsail instance, the IP addresses allowed to connect to the instance through the ports, and the protocol.
     */
@@ -985,6 +1232,7 @@ trait Lightsail extends Service {
     params: GetInstancePortStatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstancePortStatesResult, Unit]
   ): Request[GetInstancePortStatesResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific instance snapshot.
     */
@@ -998,6 +1246,7 @@ trait Lightsail extends Service {
     params: GetInstanceSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceSnapshotResult, Unit]
   ): Request[GetInstanceSnapshotResult, AWSError] = js.native
+  
   /**
     * Returns all instance snapshots for the user's account.
     */
@@ -1011,6 +1260,7 @@ trait Lightsail extends Service {
     params: GetInstanceSnapshotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceSnapshotsResult, Unit]
   ): Request[GetInstanceSnapshotsResult, AWSError] = js.native
+  
   /**
     * Returns the state of a specific instance. Works on one instance at a time.
     */
@@ -1024,6 +1274,7 @@ trait Lightsail extends Service {
     params: GetInstanceStateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceStateResult, Unit]
   ): Request[GetInstanceStateResult, AWSError] = js.native
+  
   /**
     * Returns information about all Amazon Lightsail virtual private servers, or instances.
     */
@@ -1037,6 +1288,7 @@ trait Lightsail extends Service {
     params: GetInstancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstancesResult, Unit]
   ): Request[GetInstancesResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific key pair.
     */
@@ -1050,6 +1302,7 @@ trait Lightsail extends Service {
     params: GetKeyPairRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetKeyPairResult, Unit]
   ): Request[GetKeyPairResult, AWSError] = js.native
+  
   /**
     * Returns information about all key pairs in the user's account.
     */
@@ -1063,6 +1316,7 @@ trait Lightsail extends Service {
     params: GetKeyPairsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetKeyPairsResult, Unit]
   ): Request[GetKeyPairsResult, AWSError] = js.native
+  
   /**
     * Returns information about the specified Lightsail load balancer.
     */
@@ -1076,6 +1330,7 @@ trait Lightsail extends Service {
     params: GetLoadBalancerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerResult, Unit]
   ): Request[GetLoadBalancerResult, AWSError] = js.native
+  
   /**
     * Returns information about health metrics for your Lightsail load balancer. Metrics report the utilization of your resources, and the error counts generated by them. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
     */
@@ -1089,6 +1344,7 @@ trait Lightsail extends Service {
     params: GetLoadBalancerMetricDataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerMetricDataResult, Unit]
   ): Request[GetLoadBalancerMetricDataResult, AWSError] = js.native
+  
   /**
     * Returns information about the TLS certificates that are associated with the specified Lightsail load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). You can have a maximum of 2 certificates associated with a Lightsail load balancer. One is active and the other is inactive.
     */
@@ -1102,6 +1358,7 @@ trait Lightsail extends Service {
     params: GetLoadBalancerTlsCertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerTlsCertificatesResult, Unit]
   ): Request[GetLoadBalancerTlsCertificatesResult, AWSError] = js.native
+  
   /**
     * Returns information about all load balancers in an account.
     */
@@ -1115,6 +1372,7 @@ trait Lightsail extends Service {
     params: GetLoadBalancersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancersResult, Unit]
   ): Request[GetLoadBalancersResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific operation. Operations include events such as when you create an instance, allocate a static IP, attach a static IP, and so on.
     */
@@ -1128,6 +1386,7 @@ trait Lightsail extends Service {
     params: GetOperationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOperationResult, Unit]
   ): Request[GetOperationResult, AWSError] = js.native
+  
   /**
     * Returns information about all operations. Results are returned from oldest to newest, up to a maximum of 200. Results can be paged by making each subsequent call to GetOperations use the maximum (last) statusChangedAt value from the previous request.
     */
@@ -1141,6 +1400,7 @@ trait Lightsail extends Service {
     params: GetOperationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOperationsResult, Unit]
   ): Request[GetOperationsResult, AWSError] = js.native
+  
   /**
     * Gets operations for a specific resource (e.g., an instance or a static IP).
     */
@@ -1154,6 +1414,7 @@ trait Lightsail extends Service {
     params: GetOperationsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOperationsForResourceResult, Unit]
   ): Request[GetOperationsForResourceResult, AWSError] = js.native
+  
   /**
     * Returns a list of all valid regions for Amazon Lightsail. Use the include availability zones parameter to also return the Availability Zones in a region.
     */
@@ -1167,6 +1428,7 @@ trait Lightsail extends Service {
     params: GetRegionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRegionsResult, Unit]
   ): Request[GetRegionsResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific database in Amazon Lightsail.
     */
@@ -1180,6 +1442,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseResult, Unit]
   ): Request[GetRelationalDatabaseResult, AWSError] = js.native
+  
   /**
     * Returns a list of available database blueprints in Amazon Lightsail. A blueprint describes the major engine version of a database. You can use a blueprint ID to create a new database that runs a specific database engine.
     */
@@ -1193,6 +1456,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseBlueprintsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseBlueprintsResult, Unit]
   ): Request[GetRelationalDatabaseBlueprintsResult, AWSError] = js.native
+  
   /**
     * Returns the list of bundles that are available in Amazon Lightsail. A bundle describes the performance specifications for a database. You can use a bundle ID to create a new database with explicit performance specifications.
     */
@@ -1206,6 +1470,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseBundlesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseBundlesResult, Unit]
   ): Request[GetRelationalDatabaseBundlesResult, AWSError] = js.native
+  
   /**
     * Returns a list of events for a specific database in Amazon Lightsail.
     */
@@ -1219,6 +1484,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseEventsResult, Unit]
   ): Request[GetRelationalDatabaseEventsResult, AWSError] = js.native
+  
   /**
     * Returns a list of log events for a database in Amazon Lightsail.
     */
@@ -1232,6 +1498,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseLogEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseLogEventsResult, Unit]
   ): Request[GetRelationalDatabaseLogEventsResult, AWSError] = js.native
+  
   /**
     * Returns a list of available log streams for a specific database in Amazon Lightsail.
     */
@@ -1245,6 +1512,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseLogStreamsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseLogStreamsResult, Unit]
   ): Request[GetRelationalDatabaseLogStreamsResult, AWSError] = js.native
+  
   /**
     * Returns the current, previous, or pending versions of the master user password for a Lightsail database. The GetRelationalDatabaseMasterUserPassword operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName.
     */
@@ -1260,6 +1528,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseMasterUserPasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseMasterUserPasswordResult, Unit]
   ): Request[GetRelationalDatabaseMasterUserPasswordResult, AWSError] = js.native
+  
   /**
     * Returns the data points of the specified metric for a database in Amazon Lightsail. Metrics report the utilization of your resources, and the error counts generated by them. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
     */
@@ -1273,6 +1542,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseMetricDataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseMetricDataResult, Unit]
   ): Request[GetRelationalDatabaseMetricDataResult, AWSError] = js.native
+  
   /**
     * Returns all of the runtime parameters offered by the underlying database software, or engine, for a specific database in Amazon Lightsail. In addition to the parameter names and values, this operation returns other information about each parameter. This information includes whether changes require a reboot, whether the parameter is modifiable, the allowed values, and the data types.
     */
@@ -1286,6 +1556,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseParametersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseParametersResult, Unit]
   ): Request[GetRelationalDatabaseParametersResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific database snapshot in Amazon Lightsail.
     */
@@ -1299,6 +1570,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseSnapshotResult, Unit]
   ): Request[GetRelationalDatabaseSnapshotResult, AWSError] = js.native
+  
   /**
     * Returns information about all of your database snapshots in Amazon Lightsail.
     */
@@ -1312,6 +1584,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabaseSnapshotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabaseSnapshotsResult, Unit]
   ): Request[GetRelationalDatabaseSnapshotsResult, AWSError] = js.native
+  
   /**
     * Returns information about all of your databases in Amazon Lightsail.
     */
@@ -1325,6 +1598,7 @@ trait Lightsail extends Service {
     params: GetRelationalDatabasesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRelationalDatabasesResult, Unit]
   ): Request[GetRelationalDatabasesResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific static IP.
     */
@@ -1338,6 +1612,7 @@ trait Lightsail extends Service {
     params: GetStaticIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetStaticIpResult, Unit]
   ): Request[GetStaticIpResult, AWSError] = js.native
+  
   /**
     * Returns information about all static IPs in the user's account.
     */
@@ -1351,6 +1626,7 @@ trait Lightsail extends Service {
     params: GetStaticIpsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetStaticIpsResult, Unit]
   ): Request[GetStaticIpsResult, AWSError] = js.native
+  
   /**
     * Imports a public SSH key from a specific key pair.
     */
@@ -1364,6 +1640,7 @@ trait Lightsail extends Service {
     params: ImportKeyPairRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportKeyPairResult, Unit]
   ): Request[ImportKeyPairResult, AWSError] = js.native
+  
   /**
     * Returns a Boolean value indicating whether your Lightsail VPC is peered.
     */
@@ -1377,6 +1654,7 @@ trait Lightsail extends Service {
     params: IsVpcPeeredRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ IsVpcPeeredResult, Unit]
   ): Request[IsVpcPeeredResult, AWSError] = js.native
+  
   /**
     * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
@@ -1390,6 +1668,7 @@ trait Lightsail extends Service {
     params: OpenInstancePublicPortsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ OpenInstancePublicPortsResult, Unit]
   ): Request[OpenInstancePublicPortsResult, AWSError] = js.native
+  
   /**
     * Tries to peer the Lightsail VPC with the user's default VPC.
     */
@@ -1400,6 +1679,7 @@ trait Lightsail extends Service {
     */
   def peerVpc(params: PeerVpcRequest): Request[PeerVpcResult, AWSError] = js.native
   def peerVpc(params: PeerVpcRequest, callback: js.Function2[/* err */ AWSError, /* data */ PeerVpcResult, Unit]): Request[PeerVpcResult, AWSError] = js.native
+  
   /**
     * Creates or updates an alarm, and associates it with the specified metric. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail. When this action creates an alarm, the alarm state is immediately set to INSUFFICIENT_DATA. The alarm is then evaluated and its state is set appropriately. Any actions associated with the new state are then executed. When you update an existing alarm, its state is left unchanged, but the update completely overwrites the previous configuration of the alarm. The alarm is then evaluated with the updated configuration.
     */
@@ -1413,6 +1693,7 @@ trait Lightsail extends Service {
     params: PutAlarmRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutAlarmResult, Unit]
   ): Request[PutAlarmResult, AWSError] = js.native
+  
   /**
     * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
@@ -1426,6 +1707,7 @@ trait Lightsail extends Service {
     params: PutInstancePublicPortsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutInstancePublicPortsResult, Unit]
   ): Request[PutInstancePublicPortsResult, AWSError] = js.native
+  
   /**
     * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
@@ -1439,6 +1721,7 @@ trait Lightsail extends Service {
     params: RebootInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootInstanceResult, Unit]
   ): Request[RebootInstanceResult, AWSError] = js.native
+  
   /**
     * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -1452,6 +1735,21 @@ trait Lightsail extends Service {
     params: RebootRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootRelationalDatabaseResult, Unit]
   ): Request[RebootRelationalDatabaseResult, AWSError] = js.native
+  
+  /**
+    * Registers a container image to your Amazon Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    */
+  def registerContainerImage(): Request[RegisterContainerImageResult, AWSError] = js.native
+  def registerContainerImage(callback: js.Function2[/* err */ AWSError, /* data */ RegisterContainerImageResult, Unit]): Request[RegisterContainerImageResult, AWSError] = js.native
+  /**
+    * Registers a container image to your Amazon Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    */
+  def registerContainerImage(params: RegisterContainerImageRequest): Request[RegisterContainerImageResult, AWSError] = js.native
+  def registerContainerImage(
+    params: RegisterContainerImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterContainerImageResult, Unit]
+  ): Request[RegisterContainerImageResult, AWSError] = js.native
+  
   /**
     * Deletes a specific static IP from your account.
     */
@@ -1465,6 +1763,7 @@ trait Lightsail extends Service {
     params: ReleaseStaticIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ReleaseStaticIpResult, Unit]
   ): Request[ReleaseStaticIpResult, AWSError] = js.native
+  
   /**
     * Deletes currently cached content from your Amazon Lightsail content delivery network (CDN) distribution. After resetting the cache, the next time a content request is made, your distribution pulls, serves, and caches it from the origin.
     */
@@ -1478,6 +1777,7 @@ trait Lightsail extends Service {
     params: ResetDistributionCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResetDistributionCacheResult, Unit]
   ): Request[ResetDistributionCacheResult, AWSError] = js.native
+  
   /**
     * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
     */
@@ -1491,6 +1791,7 @@ trait Lightsail extends Service {
     params: SendContactMethodVerificationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendContactMethodVerificationResult, Unit]
   ): Request[SendContactMethodVerificationResult, AWSError] = js.native
+  
   /**
     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
@@ -1504,6 +1805,7 @@ trait Lightsail extends Service {
     params: StartInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartInstanceResult, Unit]
   ): Request[StartInstanceResult, AWSError] = js.native
+  
   /**
     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -1517,6 +1819,7 @@ trait Lightsail extends Service {
     params: StartRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartRelationalDatabaseResult, Unit]
   ): Request[StartRelationalDatabaseResult, AWSError] = js.native
+  
   /**
     * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
     */
@@ -1530,6 +1833,7 @@ trait Lightsail extends Service {
     params: StopInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopInstanceResult, Unit]
   ): Request[StopInstanceResult, AWSError] = js.native
+  
   /**
     * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -1543,6 +1847,7 @@ trait Lightsail extends Service {
     params: StopRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopRelationalDatabaseResult, Unit]
   ): Request[StopRelationalDatabaseResult, AWSError] = js.native
+  
   /**
     * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Lightsail Dev Guide.
     */
@@ -1556,6 +1861,7 @@ trait Lightsail extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]
   ): Request[TagResourceResult, AWSError] = js.native
+  
   /**
     * Tests an alarm by displaying a banner on the Amazon Lightsail console. If a notification trigger is configured for the specified alarm, the test also sends a notification to the notification protocol (Email and/or SMS) configured for the alarm. An alarm is used to monitor a single metric for one of your resources. When a metric condition is met, the alarm can notify you by email, SMS text message, and a banner displayed on the Amazon Lightsail console. For more information, see Alarms in Amazon Lightsail.
     */
@@ -1569,6 +1875,7 @@ trait Lightsail extends Service {
     params: TestAlarmRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestAlarmResult, Unit]
   ): Request[TestAlarmResult, AWSError] = js.native
+  
   /**
     * Attempts to unpeer the Lightsail VPC from the user's default VPC.
     */
@@ -1582,6 +1889,7 @@ trait Lightsail extends Service {
     params: UnpeerVpcRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UnpeerVpcResult, Unit]
   ): Request[UnpeerVpcResult, AWSError] = js.native
+  
   /**
     * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Lightsail Dev Guide.
     */
@@ -1595,6 +1903,21 @@ trait Lightsail extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]
   ): Request[UntagResourceResult, AWSError] = js.native
+  
+  /**
+    * Updates the configuration of your Amazon Lightsail container service, such as its power, scale, and public domain names.
+    */
+  def updateContainerService(): Request[UpdateContainerServiceResult, AWSError] = js.native
+  def updateContainerService(callback: js.Function2[/* err */ AWSError, /* data */ UpdateContainerServiceResult, Unit]): Request[UpdateContainerServiceResult, AWSError] = js.native
+  /**
+    * Updates the configuration of your Amazon Lightsail container service, such as its power, scale, and public domain names.
+    */
+  def updateContainerService(params: UpdateContainerServiceRequest): Request[UpdateContainerServiceResult, AWSError] = js.native
+  def updateContainerService(
+    params: UpdateContainerServiceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContainerServiceResult, Unit]
+  ): Request[UpdateContainerServiceResult, AWSError] = js.native
+  
   /**
     * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution
     */
@@ -1608,6 +1931,7 @@ trait Lightsail extends Service {
     params: UpdateDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionResult, Unit]
   ): Request[UpdateDistributionResult, AWSError] = js.native
+  
   /**
     * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
     */
@@ -1621,6 +1945,7 @@ trait Lightsail extends Service {
     params: UpdateDistributionBundleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionBundleResult, Unit]
   ): Request[UpdateDistributionBundleResult, AWSError] = js.native
+  
   /**
     * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */
@@ -1634,6 +1959,7 @@ trait Lightsail extends Service {
     params: UpdateDomainEntryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainEntryResult, Unit]
   ): Request[UpdateDomainEntryResult, AWSError] = js.native
+  
   /**
     * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
     */
@@ -1647,6 +1973,7 @@ trait Lightsail extends Service {
     params: UpdateLoadBalancerAttributeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLoadBalancerAttributeResult, Unit]
   ): Request[UpdateLoadBalancerAttributeResult, AWSError] = js.native
+  
   /**
     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -1660,6 +1987,7 @@ trait Lightsail extends Service {
     params: UpdateRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRelationalDatabaseResult, Unit]
   ): Request[UpdateRelationalDatabaseResult, AWSError] = js.native
+  
   /**
     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
@@ -1676,4 +2004,3 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRelationalDatabaseParametersResult, Unit]
   ): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
 }
-

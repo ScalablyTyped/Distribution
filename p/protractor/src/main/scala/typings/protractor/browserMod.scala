@@ -14,11 +14,12 @@ import typings.seleniumWebdriver.mod.WebElement
 import typings.webdriverJsExtender.mod.ExtendedWebDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/browser", JSImport.Namespace)
 @js.native
 object browserMod extends js.Object {
+  
   @js.native
   class AbstractExtendedWebDriver () extends ExtendedWebDriver
   
@@ -28,7 +29,9 @@ object browserMod extends js.Object {
   @js.native
   trait ElementHelper
     extends js.Function {
+    
     def apply(locator: Locator): ElementFinder = js.native
+    
     def all(locator: Locator): ElementArrayFinder = js.native
   }
   
@@ -166,122 +169,7 @@ object browserMod extends js.Object {
       opt_untrackOutstandingTimeouts: Boolean,
       opt_blockingProxyUrl: String
     ) = this()
-    /**
-      * @type {ExpectedConditions}
-      */
-    var ExpectedConditions: ProtractorExpectedConditions = js.native
-    var allScriptsTimeout: Double = js.native
-    /**
-      * All get methods will be resolved against this base URL. Relative URLs are =
-      * resolved the way anchor tags resolve.
-      *
-      * @type {string}
-      */
-    var baseUrl: String = js.native
-    /**
-      * The client used to control the BlockingProxy. If unset, BlockingProxy is
-      * not being used and Protractor will handle client-side synchronization.
-      */
-    var bpClient: BPClient = js.native
-    /**
-      * If specified, start a debugger server at specified port instead of repl
-      * when running element explorer.
-      * @public {number}
-      */
-    var debuggerServerPort: Double = js.native
-    /**
-      * The wrapped webdriver instance. Use this to interact with pages that do
-      * not contain Angular (such as a log-in screen).
-      *
-      * @type {webdriver_extensions.ExtendedWebDriver}
-      */
-    var driver: ExtendedWebDriver = js.native
-    /**
-      * Helper function for finding elements.
-      *
-      * @type {function(webdriver.Locator): ElementFinder}
-      */
-    @JSName("element")
-    var element_Original: ElementHelper = js.native
-    /**
-      * Timeout in milliseconds to wait for pages to load when calling `get`.
-      *
-      * @type {number}
-      */
-    var getPageTimeout: Double = js.native
-    /**
-      * If true, Protractor will not attempt to synchronize with the page before
-      * performing actions. This can be harmful because Protractor will not wait
-      * until $timeouts and $http calls have been processed, which can cause
-      * tests to become flaky. This should be used only when necessary, such as
-      * when a page continuously polls an API using $timeout.
-      *
-      * Initialized to `false` by the runner.
-      *
-      * This property is deprecated - please use waitForAngularEnabled instead.
-      *
-      * @deprecated
-      * @type {boolean}
-      */
-    var ignoreSynchronization: Boolean = js.native
-    var internalIgnoreSynchronization: js.Any = js.native
-    var internalRootEl: js.Any = js.native
-    /**
-      * Information about mock modules that will be installed during every
-      * get().
-      *
-      * @type {Array<{name: string, script: function|string, args:
-      * Array.<string>}>}
-      */
-    var mockModules_ : js.Array[Args] = js.native
-    /**
-      * If true, Protractor will interpret any angular apps it comes across as
-      * hybrid angular1/angular2 apps.
-      *
-      * @type {boolean}
-      */
-    var ng12Hybrid: Boolean = js.native
-    /**
-      * An object that holds custom test parameters.
-      *
-      * @type {Object}
-      */
-    var params: js.Any = js.native
-    var plugins_ : Plugins = js.native
-    /**
-      * Resolved when the browser is ready for use.  Resolves to the browser, so
-      * you can do:
-      *
-      *   forkedBrowser = await browser.forkNewDriverInstance().ready;
-      *
-      * Set by the runner.
-      *
-      * @type {webdriver.promise.Promise.<ProtractorBrowser>}
-      */
-    var ready: js.Promise[ProtractorBrowser] = js.native
-    /**
-      * The reset URL to use between page loads.
-      *
-      * @type {string}
-      */
-    var resetUrl: String = js.native
-    /**
-      * The css selector for an element on which to find Angular. This is usually
-      * 'body' but if your ng-app is on a subsection of the page it may be
-      * a subelement.
-      *
-      * This property is deprecated - please use angularAppRoot() instead.
-      *
-      * @deprecated
-      * @type {string}
-      */
-    var rootEl: String = js.native
-    /**
-      * If true, Protractor will track outstanding $timeouts and report them in the
-      * error message if Protractor fails to synchronize with Angular in time.
-      * @private {boolean}
-      */
-    var trackOutstandingTimeouts_ : Boolean = js.native
+    
     /**
       * Shorthand function for finding elements by css.
       *
@@ -289,6 +177,7 @@ object browserMod extends js.Object {
       */
     @JSName("$")
     def $(query: String): ElementFinder = js.native
+    
     /**
       * Shorthand function for finding arrays of elements by css.
       *
@@ -296,12 +185,19 @@ object browserMod extends js.Object {
       */
     @JSName("$$")
     def DollarDollar(query: String): ElementArrayFinder = js.native
+    
+    /**
+      * @type {ExpectedConditions}
+      */
+    var ExpectedConditions: ProtractorExpectedConditions = js.native
+    
     /**
       * Add the base mock modules used for all Protractor tests.
       *
       * @private
       */
     /* private */ def addBaseMockModules_(): js.Any = js.native
+    
     /**
       * Add a module to load before Angular whenever Protractor.get is called.
       * Modules will be registered after existing modules already on the page,
@@ -322,6 +218,9 @@ object browserMod extends js.Object {
       */
     def addMockModule(name: String, script: String, moduleArgs: js.Any*): Unit = js.native
     def addMockModule(name: String, script: js.Function, moduleArgs: js.Any*): Unit = js.native
+    
+    var allScriptsTimeout: Double = js.native
+    
     /**
       * Set the css selector for an element on which to find Angular. This is usually
       * 'body' but if your ng-app is on a subsection of the page it may be
@@ -337,22 +236,62 @@ object browserMod extends js.Object {
     def angularAppRoot(): js.Promise[String] = js.native
     def angularAppRoot(value: String): js.Promise[String] = js.native
     def angularAppRoot(value: js.Promise[String]): js.Promise[String] = js.native
+    
+    /**
+      * All get methods will be resolved against this base URL. Relative URLs are =
+      * resolved the way anchor tags resolve.
+      *
+      * @type {string}
+      */
+    var baseUrl: String = js.native
+    
+    /**
+      * The client used to control the BlockingProxy. If unset, BlockingProxy is
+      * not being used and Protractor will handle client-side synchronization.
+      */
+    var bpClient: BPClient = js.native
+    
     /**
       * Clear the list of registered mock modules.
       */
     def clearMockModules(): Unit = js.native
+    
     /**
       * Determine if the control flow is enabled.
       *
       * @returns true if the control flow is enabled, false otherwise.
       */
     def controlFlowIsEnabled(): js.Any = js.native
+    
+    /**
+      * If specified, start a debugger server at specified port instead of repl
+      * when running element explorer.
+      * @public {number}
+      */
+    var debuggerServerPort: Double = js.native
+    
+    /**
+      * The wrapped webdriver instance. Use this to interact with pages that do
+      * not contain Angular (such as a log-in screen).
+      *
+      * @type {webdriver_extensions.ExtendedWebDriver}
+      */
+    var driver: ExtendedWebDriver = js.native
+    
     /**
       * Helper function for finding elements.
       *
       * @type {function(webdriver.Locator): ElementFinder}
       */
     def element(locator: Locator): ElementFinder = js.native
+    /**
+      * Helper function for finding elements.
+      *
+      * @type {function(webdriver.Locator): ElementFinder}
+      */
+    @JSName("element")
+    var element_Original: ElementHelper = js.native
+    
     /**
       * The same as {@code webdriver.WebDriver.prototype.executeAsyncScript},
       * but with a customized description for debugging.
@@ -371,6 +310,7 @@ object browserMod extends js.Object {
       description: js.Any,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param scriptArgs because its type <none> is not an array type */ scriptArgs: js.Any
     ): js.Any = js.native
+    
     /**
       * The same as {@code webdriver.WebDriver.prototype.executeScript},
       * but with a customized description for debugging.
@@ -385,6 +325,7 @@ object browserMod extends js.Object {
       */
     def executeScriptWithDescription(script: String, description: String, scriptArgs: js.Any*): js.Promise[_] = js.native
     def executeScriptWithDescription(script: js.Function, description: String, scriptArgs: js.Any*): js.Promise[_] = js.native
+    
     /**
       * Fork another instance of browser for use in interactive tests.
       *
@@ -416,7 +357,9 @@ object browserMod extends js.Object {
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: js.UndefOr[scala.Nothing], copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
+    
     def get(destination: String, timeout: Double): js.Promise[_] = js.native
+    
     /**
       * Deprecated, use `browser.getCurrentUrl()` instead.
       *
@@ -433,6 +376,14 @@ object browserMod extends js.Object {
       * AngularJS.
       */
     def getLocationAbsUrl(): js.Promise[_] = js.native
+    
+    /**
+      * Timeout in milliseconds to wait for pages to load when calling `get`.
+      *
+      * @type {number}
+      */
+    var getPageTimeout: Double = js.native
+    
     /**
       * Get the processed configuration object that is currently being run. This
       * will contain the specs and capabilities properties of the current runner
@@ -444,12 +395,34 @@ object browserMod extends js.Object {
       * capabilities object.
       */
     def getProcessedConfig(): js.Promise[_] = js.native
+    
     /**
       * Get a list of the current mock modules.
       *
       * @returns {Array.<!string|Function>} The list of mock modules.
       */
     def getRegisteredMockModules(): js.Array[String | js.Function] = js.native
+    
+    /**
+      * If true, Protractor will not attempt to synchronize with the page before
+      * performing actions. This can be harmful because Protractor will not wait
+      * until $timeouts and $http calls have been processed, which can cause
+      * tests to become flaky. This should be used only when necessary, such as
+      * when a page continuously polls an API using $timeout.
+      *
+      * Initialized to `false` by the runner.
+      *
+      * This property is deprecated - please use waitForAngularEnabled instead.
+      *
+      * @deprecated
+      * @type {boolean}
+      */
+    var ignoreSynchronization: Boolean = js.native
+    
+    var internalIgnoreSynchronization: js.Any = js.native
+    
+    var internalRootEl: js.Any = js.native
+    
     def isElementPresent(locatorOrElement: ElementFinder): js.Promise[_] = js.native
     /**
       * Tests if an element is present on the page.
@@ -459,6 +432,45 @@ object browserMod extends js.Object {
       */
     def isElementPresent(locatorOrElement: Locator): js.Promise[_] = js.native
     def isElementPresent(locatorOrElement: WebElement): js.Promise[_] = js.native
+    
+    /**
+      * Information about mock modules that will be installed during every
+      * get().
+      *
+      * @type {Array<{name: string, script: function|string, args:
+      * Array.<string>}>}
+      */
+    var mockModules_ : js.Array[Args] = js.native
+    
+    /**
+      * If true, Protractor will interpret any angular apps it comes across as
+      * hybrid angular1/angular2 apps.
+      *
+      * @type {boolean}
+      */
+    var ng12Hybrid: Boolean = js.native
+    
+    /**
+      * An object that holds custom test parameters.
+      *
+      * @type {Object}
+      */
+    var params: js.Any = js.native
+    
+    var plugins_ : Plugins = js.native
+    
+    /**
+      * Resolved when the browser is ready for use.  Resolves to the browser, so
+      * you can do:
+      *
+      *   forkedBrowser = await browser.forkNewDriverInstance().ready;
+      *
+      * Set by the runner.
+      *
+      * @type {webdriver.promise.Promise.<ProtractorBrowser>}
+      */
+    var ready: js.Promise[ProtractorBrowser] = js.native
+    
     /**
       * @see webdriver.WebDriver.refresh
       *
@@ -471,6 +483,7 @@ object browserMod extends js.Object {
       */
     def refresh(): js.Promise[_] = js.native
     def refresh(opt_timeout: Double): js.Promise[_] = js.native
+    
     /**
       * Remove a registered mock module.
       *
@@ -480,6 +493,14 @@ object browserMod extends js.Object {
       * @param {!string} name The name of the module to remove.
       */
     def removeMockModule(name: String): Unit = js.native
+    
+    /**
+      * The reset URL to use between page loads.
+      *
+      * @type {string}
+      */
+    var resetUrl: String = js.native
+    
     /**
       * Restart the browser.  This is done by closing this browser instance and creating a new one.
       * A promise resolving to the new instance is returned, and if this function was called on the
@@ -532,6 +553,7 @@ object browserMod extends js.Object {
       *   browser
       */
     def restart(): js.Promise[ProtractorBrowser] = js.native
+    
     /**
       * Like `restart`, but instead of returning a promise resolving to the new browser instance,
       * returns the new browser instance directly.  Can only be used when the control flow is enabled.
@@ -552,6 +574,19 @@ object browserMod extends js.Object {
       * @returns {ProtractorBrowser} The restarted browser
       */
     def restartSync(): ProtractorBrowser = js.native
+    
+    /**
+      * The css selector for an element on which to find Angular. This is usually
+      * 'body' but if your ng-app is on a subsection of the page it may be
+      * a subelement.
+      *
+      * This property is deprecated - please use angularAppRoot() instead.
+      *
+      * @deprecated
+      * @type {string}
+      */
+    var rootEl: String = js.native
+    
     /**
       * Browse to another page using in-page navigation.
       *
@@ -566,12 +601,21 @@ object browserMod extends js.Object {
       *    page has been changed.
       */
     def setLocation(url: String): js.Promise[_] = js.native
+    
+    /**
+      * If true, Protractor will track outstanding $timeouts and report them in the
+      * error message if Protractor fails to synchronize with Angular in time.
+      * @private {boolean}
+      */
+    var trackOutstandingTimeouts_ : Boolean = js.native
+    
     /**
       * Instead of using a single root element, search through all angular apps
       * available on the page when finding elements or waiting for stability.
       * Only compatible with Angular2.
       */
     def useAllAngular2AppRoots(): Unit = js.native
+    
     /**
       * Instruct webdriver to wait until Angular has finished rendering and has
       * no outstanding $http or $timeout calls before continuing.
@@ -585,6 +629,7 @@ object browserMod extends js.Object {
       */
     def waitForAngular(): js.Promise[_] = js.native
     def waitForAngular(opt_description: String): js.Promise[_] = js.native
+    
     /**
       * If set to false, Protractor will not wait for Angular $http and $timeout
       * tasks to complete before interacting with the browser. This can cause
@@ -598,15 +643,13 @@ object browserMod extends js.Object {
     def waitForAngularEnabled(enabled: js.Promise[Boolean]): js.Promise[Boolean] = js.native
     def waitForAngularEnabled(enabled: Boolean): js.Promise[Boolean] = js.native
   }
-  
   /* static members */
   @js.native
   object ProtractorBrowser extends js.Object {
+    
     /**
       * @type {ProtractorBy}
       */
     var By: ProtractorBy = js.native
   }
-  
 }
-

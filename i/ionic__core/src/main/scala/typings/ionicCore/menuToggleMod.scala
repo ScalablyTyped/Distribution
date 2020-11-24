@@ -3,13 +3,15 @@ package typings.ionicCore
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle", JSImport.Namespace)
 @js.native
 object menuToggleMod extends js.Object {
+  
   @js.native
   class MenuToggle () extends ComponentInterface {
+    
     /**
       * Automatically hides the content when the corresponding menu is not active.
       *
@@ -17,6 +19,10 @@ object menuToggleMod extends js.Object {
       * keep `ion-menu-toggle` always visible regardless the state of the menu.
       */
     var autoHide: Boolean = js.native
+    
+    @JSName("connectedCallback")
+    def connectedCallback_MMenuToggle(): Unit = js.native
+    
     /**
       * Optional property that maps to a Menu's `menuId` prop.
       * Can also be `start` or `end` for the menu side.
@@ -26,14 +32,14 @@ object menuToggleMod extends js.Object {
       * first menu that is active.
       */
     var menu: js.UndefOr[String] = js.native
+    
     var onClick: js.Any = js.native
-    var visible: Boolean = js.native
-    @JSName("connectedCallback")
-    def connectedCallback_MMenuToggle(): Unit = js.native
+    
     @JSName("render")
     def render_MMenuToggle(): js.Any = js.native
+    
     def visibilityChanged(): js.Promise[Unit] = js.native
+    
+    var visible: Boolean = js.native
   }
-  
 }
-

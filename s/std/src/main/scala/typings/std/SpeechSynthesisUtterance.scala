@@ -9,24 +9,12 @@ import typings.std.stdStrings.resume
 import typings.std.stdStrings.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Web Speech API interface represents a speech request. It contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume.) */
 @js.native
 trait SpeechSynthesisUtterance extends EventTarget {
-  var lang: java.lang.String = js.native
-  var onboundary: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
-  var onend: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, _]) | Null = js.native
-  var onmark: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
-  var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
-  var onresume: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
-  var onstart: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
-  var pitch: Double = js.native
-  var rate: Double = js.native
-  var text: java.lang.String = js.native
-  var voice: SpeechSynthesisVoice | Null = js.native
-  var volume: Double = js.native
+  
   @JSName("addEventListener")
   def addEventListener_boundary(
     `type`: boundary,
@@ -131,6 +119,27 @@ trait SpeechSynthesisUtterance extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  var lang: java.lang.String = js.native
+  
+  var onboundary: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
+  
+  var onend: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
+  
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, _]) | Null = js.native
+  
+  var onmark: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
+  
+  var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
+  
+  var onresume: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
+  
+  var onstart: (js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _]) | Null = js.native
+  
+  var pitch: Double = js.native
+  
+  var rate: Double = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_boundary(
     `type`: boundary,
@@ -235,5 +244,10 @@ trait SpeechSynthesisUtterance extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
+  
+  var text: java.lang.String = js.native
+  
+  var voice: SpeechSynthesisVoice | Null = js.native
+  
+  var volume: Double = js.native
 }
-

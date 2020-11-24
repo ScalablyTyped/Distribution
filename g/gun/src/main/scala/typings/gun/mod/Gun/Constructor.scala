@@ -7,7 +7,7 @@ import typings.gun.anon.Ify
 import typings.gun.gunStrings.pre_root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Constructor
@@ -16,9 +16,7 @@ trait Constructor
       (/* options */ js.Array[String]) | (/* options */ ConstructorOptions) | (/* options */ String), 
       ChainReference[js.Object, js.Any, pre_root]
     ] {
-  /** @see https://gun.eco/docs/SEA */
-  var SEA: Decrypt = js.native
-  var node: Ify = js.native
+  
   /**
     * @description
     * no parameters creates a local datastore using the default persistence layer, either localStorage or Radisk.
@@ -31,5 +29,9 @@ trait Constructor
   def apply[DataType](options: String): ChainReference[DataType, _, pre_root] = js.native
   def apply[DataType](options: js.Array[String]): ChainReference[DataType, _, pre_root] = js.native
   def apply[DataType](options: ConstructorOptions): ChainReference[DataType, _, pre_root] = js.native
+  
+  /** @see https://gun.eco/docs/SEA */
+  var SEA: Decrypt = js.native
+  
+  var node: Ify = js.native
 }
-

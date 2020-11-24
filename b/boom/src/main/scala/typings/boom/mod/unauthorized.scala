@@ -3,11 +3,12 @@ package typings.boom.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("boom", "unauthorized")
 @js.native
 object unauthorized extends js.Object {
+  
   /**
     * Returns a 401 Unauthorized error
     * @param message optional message.
@@ -48,4 +49,3 @@ object unauthorized extends js.Object {
   def apply(message: Null, scheme: String, attributes: String): Boom[Null] = js.native
   def apply(message: Null, scheme: String, attributes: StringDictionary[String]): Boom[Null] = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.openlayers.mod
 import typings.openlayers.mod.tilegrid.TileGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "loadingstrategy")
 @js.native
 object loadingstrategy extends js.Object {
+  
   /**
     * Strategy function for loading all features with a single request.
     * @param extent Extent.
@@ -16,6 +17,7 @@ object loadingstrategy extends js.Object {
     * @api
     */
   def all(extent: Extent_, resolution: Double): js.Array[Extent_] = js.native
+  
   /**
     * Strategy function for loading features based on the view's extent and
     * resolution.
@@ -25,6 +27,7 @@ object loadingstrategy extends js.Object {
     * @api
     */
   def bbox(extent: Extent_, resolution: Double): js.Array[Extent_] = js.native
+  
   /**
     * Creates a strategy function for loading features based on a tile grid.
     * @param tileGrid Tile grid.
@@ -33,4 +36,3 @@ object loadingstrategy extends js.Object {
     */
   def tile(tileGrid: TileGrid): js.Function2[/* extent */ Extent_, /* i */ Double, js.Array[Extent_]] = js.native
 }
-

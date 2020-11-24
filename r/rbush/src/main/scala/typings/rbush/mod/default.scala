@@ -2,7 +2,7 @@ package typings.rbush.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbush", JSImport.Default)
 @js.native
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
 class default[T] () extends RBush[T] {
   def this(maxEntries: Double) = this()
 }
-

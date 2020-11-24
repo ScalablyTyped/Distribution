@@ -9,7 +9,7 @@ import typings.wordpressBlocks.wordpressBlocksStrings.tag
 import typings.wordpressBlocks.wordpressBlocksStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.wordpressBlocks.parserMod.Schema.Attribute
@@ -21,42 +21,47 @@ import scala.scalajs.js.annotation._
   - typings.wordpressBlocks.parserMod.Schema.Text
 */
 trait Source[T] extends js.Object
-
 object Source {
+  
   @scala.inline
   def HTML[T](source: html): Source[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
+  
   @scala.inline
   def Text[T](source: text): Source[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
+  
   @scala.inline
   def Children[T](source: children): Source[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
+  
   @scala.inline
   def Node[T](source: node): Source[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
+  
   @scala.inline
   def Attribute[T](attribute: String, source: attribute): Source[T] = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
+  
   @scala.inline
   def Tag[T](source: tag): Source[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
+  
   @scala.inline
   def Query[T](query: T, source: query_): Source[T] = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source[T]]
   }
 }
-

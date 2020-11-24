@@ -10,9 +10,9 @@ A declarative animation library for React
 | ------------------ | :-------------: |
 | Full name          | react-pose |
 | Keywords           | animation, dom, declarative, popmotion, react, react animation |
-| # releases         | 67 |
-| # dependents       | 108 |
-| # downloads        | 3452084 |
+| # releases         | 17 |
+| # dependents       | 116 |
+| # downloads        | 4239602 |
 | # stars            | 1 |
 
 ## Links

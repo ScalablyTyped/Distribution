@@ -4,10 +4,23 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.paper.paper.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofKey extends Instantiable0[Key] {
+  
+  /** 
+    * Checks whether the specified key is pressed.
+    * 
+    * @param key - any character or special key descriptor:
+    *     {@values 'enter', 'space', 'shift', 'control', 'alt', 'meta',
+    *     'caps-lock', 'left', 'up', 'right', 'down', 'escape', 'delete',
+    *     ...}
+    * 
+    * @return true if the key is pressed
+    */
+  def isDown(key: String): Boolean = js.native
+  
   /** 
     * The current state of the keyboard modifiers.
     * 
@@ -29,16 +42,4 @@ trait TypeofKey extends Instantiable0[Key] {
     *     on Mac, or the control key is pressed on Windows and Linux}.
     */
   var modifiers: js.Any = js.native
-  /** 
-    * Checks whether the specified key is pressed.
-    * 
-    * @param key - any character or special key descriptor:
-    *     {@values 'enter', 'space', 'shift', 'control', 'alt', 'meta',
-    *     'caps-lock', 'left', 'up', 'right', 'down', 'escape', 'delete',
-    *     ...}
-    * 
-    * @return true if the key is pressed
-    */
-  def isDown(key: String): Boolean = js.native
 }
-

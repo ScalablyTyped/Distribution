@@ -3,13 +3,14 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for PartitionQuery
   */
 @js.native
 trait SchemaPartitionQueryRequest extends js.Object {
+  
   /**
     * It is not always possible for Cloud Spanner to infer the right SQL type
     * from a JSON value.  For example, values of type `BYTES` and values of
@@ -19,6 +20,7 @@ trait SchemaPartitionQueryRequest extends js.Object {
     * information about SQL types.
     */
   var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.native
+  
   /**
     * The SQL query string can contain parameter placeholders. A parameter
     * placeholder consists of `&#39;@&#39;` followed by the parameter name.
@@ -32,10 +34,12 @@ trait SchemaPartitionQueryRequest extends js.Object {
     * values.
     */
   var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
   /**
     * Additional options that affect how many partitions are created.
     */
   var partitionOptions: js.UndefOr[SchemaPartitionOptions] = js.native
+  
   /**
     * The query request to generate partitions for. The request will fail if
     * the query is not root partitionable. The query plan of a root
@@ -47,51 +51,64 @@ trait SchemaPartitionQueryRequest extends js.Object {
     * PartitionedDml transaction for large, partition-friendly DML operations.
     */
   var sql: js.UndefOr[String] = js.native
+  
   /**
     * Read only snapshot transactions are supported, read/write and single use
     * transactions are not.
     */
   var transaction: js.UndefOr[SchemaTransactionSelector] = js.native
 }
-
 object SchemaPartitionQueryRequest {
+  
   @scala.inline
   def apply(): SchemaPartitionQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartitionQueryRequest]
   }
+  
   @scala.inline
   implicit class SchemaPartitionQueryRequestOps[Self <: SchemaPartitionQueryRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setParamTypes(value: StringDictionary[SchemaType]): Self = this.set("paramTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParamTypes: Self = this.set("paramTypes", js.undefined)
+    
     @scala.inline
     def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParams: Self = this.set("params", js.undefined)
+    
     @scala.inline
     def setPartitionOptions(value: SchemaPartitionOptions): Self = this.set("partitionOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePartitionOptions: Self = this.set("partitionOptions", js.undefined)
+    
     @scala.inline
     def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSql: Self = this.set("sql", js.undefined)
+    
     @scala.inline
     def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransaction: Self = this.set("transaction", js.undefined)
   }
-  
 }
-

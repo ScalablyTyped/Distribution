@@ -9,9 +9,9 @@ Use conventional text streams at the start of your gulp or vinyl pipelines
 | ------------------ | :-------------: |
 | Full name          | vinyl-source-stream |
 | Keywords           | vinyl, gulp, gulpfriendly, vanilla, stream, string, text, classic |
-| # releases         | 1 |
-| # dependents       | 665 |
-| # downloads        | 6846015 |
+| # releases         | 0 |
+| # dependents       | 675 |
+| # downloads        | 7479912 |
 | # stars            | 97 |
 
 ## Links

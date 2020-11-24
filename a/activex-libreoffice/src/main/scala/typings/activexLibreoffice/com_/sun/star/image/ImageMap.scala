@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a HTML image map. */
 @js.native
 trait ImageMap
   extends XIndexContainer
      with XNamed
-
 object ImageMap {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -36,4 +36,3 @@ object ImageMap {
     __obj.asInstanceOf[ImageMap]
   }
 }
-

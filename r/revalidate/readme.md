@@ -10,9 +10,9 @@ Elegant and composable validations
 | ------------------ | :-------------: |
 | Full name          | revalidate |
 | Keywords           | functional, validation, validate, form |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 259295 |
+| # downloads        | 398016 |
 | # stars            | 2 |
 
 ## Links

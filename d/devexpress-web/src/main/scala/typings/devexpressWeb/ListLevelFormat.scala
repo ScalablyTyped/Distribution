@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListLevelFormat extends js.Object
-
 /**
   * Lists values that specify the numbering format used for a group of automatically numbered objects, such as pages.
   */
 @JSGlobal("ListLevelFormat")
 @js.native
 object ListLevelFormat extends js.Object {
+  
   /**
     * Specifies that the sequence shall consist of full-width hiragana characters in the traditional a-i-u-e-o order. Currently not supported.
     */
@@ -372,6 +372,4 @@ object ListLevelFormat extends js.Object {
     */
   @js.native
   sealed trait VietnameseDescriptive extends ListLevelFormat
-  
 }
-

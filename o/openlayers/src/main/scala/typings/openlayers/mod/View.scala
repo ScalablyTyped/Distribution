@@ -8,7 +8,7 @@ import typings.openlayers.mod.olx.view.FitOptions
 import typings.openlayers.mod.proj.Projection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "View")
 @js.native
@@ -69,6 +69,7 @@ import scala.scalajs.js.annotation._
   */
 class View () extends Object {
   def this(opt_options: ViewOptions) = this()
+  
   /**
     * Animate the view. The view's center, zoom (or resolution), and
     * rotation can be animated for smooth transitions between view states.
@@ -77,6 +78,7 @@ class View () extends Object {
     * @api experimental
     */
   def animate(var_args: (AnimateOptions | AnimateCallback)*): Unit = js.native
+  
   /**
     * Calculate the extent for the current view state and the passed size.
     * The size is the pixel dimensions of the box into which the calculated extent
@@ -88,11 +90,13 @@ class View () extends Object {
     */
   def calculateExtent(): Extent_ = js.native
   def calculateExtent(size: Size): Extent_ = js.native
+  
   /**
     * Cancel any ongoing animations.
     * @api
     */
   def cancelAnimations(): Unit = js.native
+  
   /**
     * Center on coordinate and view position.
     * @param coordinate Coordinate.
@@ -101,6 +105,7 @@ class View () extends Object {
     * @api
     */
   def centerOn(coordinate: Coordinate_, size: Size, position: Pixel): Unit = js.native
+  
   /**
     * Get the constrained center of this view.
     * @param center Center.
@@ -109,6 +114,7 @@ class View () extends Object {
     */
   def constrainCenter(): Coordinate_ = js.native
   def constrainCenter(center: Coordinate_): Coordinate_ = js.native
+  
   /**
     * Get the constrained resolution of this view.
     * @param resolution Resolution.
@@ -125,6 +131,7 @@ class View () extends Object {
   def constrainResolution(resolution: Double, opt_delta: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def constrainResolution(resolution: Double, opt_delta: Double): Double = js.native
   def constrainResolution(resolution: Double, opt_delta: Double, opt_direction: Double): Double = js.native
+  
   /**
     * Get the constrained rotation of this view.
     * @param rotation Rotation.
@@ -136,6 +143,7 @@ class View () extends Object {
   def constrainRotation(rotation: js.UndefOr[scala.Nothing], opt_delta: Double): Double = js.native
   def constrainRotation(rotation: Double): Double = js.native
   def constrainRotation(rotation: Double, opt_delta: Double): Double = js.native
+  
   def fit(geometryOrExtent: Extent_): Unit = js.native
   def fit(geometryOrExtent: Extent_, opt_options: FitOptions): Unit = js.native
   /**
@@ -149,12 +157,14 @@ class View () extends Object {
     */
   def fit(geometryOrExtent: SimpleGeometry): Unit = js.native
   def fit(geometryOrExtent: SimpleGeometry, opt_options: FitOptions): Unit = js.native
+  
   /**
     * Determine if the view is being animated.
     * @return The view is being animated.
     * @api
     */
   def getAnimating(): Boolean = js.native
+  
   /**
     * Get the view center.
     * @return The center of the view.
@@ -162,42 +172,49 @@ class View () extends Object {
     * @api stable
     */
   def getCenter(): Coordinate_ = js.native
+  
   /**
     * Determine if the user is interacting with the view, such as panning or zooming.
     * @return The view is being interacted with.
     * @api
     */
   def getInteracting(): Boolean = js.native
+  
   /**
     * Get the maximum resolution of the view.
     * @return The maximum resolution of the view.
     * @api
     */
   def getMaxResolution(): Double = js.native
+  
   /**
     * Get the maximum zoom level for the view.
     * @return The maximum zoom level.
     * @api
     */
   def getMaxZoom(): Double = js.native
+  
   /**
     * Get the minimum resolution of the view.
     * @return The minimum resolution of the view.
     * @api
     */
   def getMinResolution(): Double = js.native
+  
   /**
     * Get the minimum zoom level for the view.
     * @return The minimum zoom level.
     * @api
     */
   def getMinZoom(): Double = js.native
+  
   /**
     * Get the view projection.
     * @return The projection of the view.
     * @api stable
     */
   def getProjection(): Projection = js.native
+  
   /**
     * Get the view resolution.
     * @return The resolution of the view.
@@ -205,6 +222,7 @@ class View () extends Object {
     * @api stable
     */
   def getResolution(): Double = js.native
+  
   /**
     * Get the resolution for a provided extent (in map units) and size (in pixels).
     * @param extent Extent.
@@ -215,6 +233,7 @@ class View () extends Object {
     */
   def getResolutionForExtent(extent: Extent_): Double = js.native
   def getResolutionForExtent(extent: Extent_, opt_size: Size): Double = js.native
+  
   /**
     * Get the resolution for a zoom level.
     * @param zoom Zoom level.
@@ -222,6 +241,7 @@ class View () extends Object {
     * @api
     */
   def getResolutionForZoom(zoom: Double): Double = js.native
+  
   /**
     * Get the resolutions for the view. This returns the array of resolutions
     * passed to the constructor of the {ol.View}, or undefined if none were given.
@@ -229,6 +249,7 @@ class View () extends Object {
     * @api stable
     */
   def getResolutions(): js.Array[Double] = js.native
+  
   /**
     * Get the view rotation.
     * @return The rotation of the view in radians.
@@ -236,6 +257,7 @@ class View () extends Object {
     * @api stable
     */
   def getRotation(): Double = js.native
+  
   /**
     * Get the current zoom level.  If you configured your view with a resolutions
     * array (this is rare), this method may return non-integer zoom levels (so
@@ -244,6 +266,7 @@ class View () extends Object {
     * @api
     */
   def getZoom(): Double = js.native
+  
   /**
     * Get the zoom level for a resolution.
     * @param resolution The resolution.
@@ -251,6 +274,7 @@ class View () extends Object {
     * @api
     */
   def getZoomForResolution(resolution: Double): Double = js.native
+  
   /**
     * Rotate the view around a given coordinate.
     * @param rotation New rotation value for the view.
@@ -259,6 +283,7 @@ class View () extends Object {
     */
   def rotate(rotation: Double): Unit = js.native
   def rotate(rotation: Double, opt_anchor: Coordinate_): Unit = js.native
+  
   /**
     * Set the center of the current view.
     * @param center The center of the view.
@@ -266,18 +291,21 @@ class View () extends Object {
     * @api stable
     */
   def setCenter(center: Coordinate_): Unit = js.native
+  
   /**
     * Set a new maximum zoom level for the view.
     * @param zoom The maximum zoom level.
     * @api stable
     */
   def setMaxZoom(zoom: Double): Unit = js.native
+  
   /**
     * Set a new minimum zoom level for the view.
     * @param zoom The minimum zoom level.
     * @api stable
     */
   def setMinZoom(zoom: Double): Unit = js.native
+  
   /**
     * Set the resolution for this view.
     * @param resolution The resolution of the view.
@@ -286,6 +314,7 @@ class View () extends Object {
     */
   def setResolution(): Unit = js.native
   def setResolution(resolution: Double): Unit = js.native
+  
   /**
     * Set the rotation for this view.
     * @param rotation The rotation of the view in radians.
@@ -293,6 +322,7 @@ class View () extends Object {
     * @api stable
     */
   def setRotation(rotation: Double): Unit = js.native
+  
   /**
     * Zoom to a specific zoom level.
     * @param zoom Zoom level.
@@ -300,4 +330,3 @@ class View () extends Object {
     */
   def setZoom(zoom: Double): Unit = js.native
 }
-

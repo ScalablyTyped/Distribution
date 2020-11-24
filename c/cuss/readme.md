@@ -10,9 +10,9 @@ Map of English profane words to a rating of sureness
 | ------------------ | :-------------: |
 | Full name          | cuss |
 | Keywords           | offensive, profane, vulgar, word, list |
-| # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 377403 |
+| # releases         | 15 |
+| # dependents       | 3 |
+| # downloads        | 734839 |
 | # stars            | 0 |
 
 ## Links

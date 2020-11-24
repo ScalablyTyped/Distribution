@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service contains the interfaces to implement by objects returned by XPropertySetRegistryFactory::createRegistry(). */
 @js.native
 trait PropertySetRegistry
   extends XNameAccess
      with XPropertySetRegistry
-
 object PropertySetRegistry {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -33,4 +33,3 @@ object PropertySetRegistry {
     __obj.asInstanceOf[PropertySetRegistry]
   }
 }
-

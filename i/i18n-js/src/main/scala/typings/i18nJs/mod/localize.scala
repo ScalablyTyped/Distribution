@@ -3,11 +3,12 @@ package typings.i18nJs.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18n-js", "localize")
 @js.native
 object localize extends js.Object {
+  
   def apply(scope: Scope, value: String): String = js.native
   def apply(scope: Scope, value: String, options: InterpolateOptions): String = js.native
   def apply(scope: Scope, value: Double): String = js.native
@@ -15,4 +16,3 @@ object localize extends js.Object {
   def apply(scope: Scope, value: Date): String = js.native
   def apply(scope: Scope, value: Date, options: InterpolateOptions): String = js.native
 }
-

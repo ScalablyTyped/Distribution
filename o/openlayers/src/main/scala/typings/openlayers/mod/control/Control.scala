@@ -6,7 +6,7 @@ import typings.openlayers.mod.olx.control.ControlOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -64,12 +64,14 @@ class Control protected () extends Object {
     * @api stable
     */
   def this(options: ControlOptions) = this()
+  
   /**
     * Get the map associated with this control.
     * @return Map.
     * @api stable
     */
   def getMap(): Map = js.native
+  
   /**
     * Remove the control from its current map and attach it to the new map.
     * Subclasses may set up event handlers to get notified about changes to
@@ -78,6 +80,7 @@ class Control protected () extends Object {
     * @api stable
     */
   def setMap(map: Map): Unit = js.native
+  
   def setTarget(target: String): Unit = js.native
   /**
     * This function is used to set a target element for the control. It has no
@@ -90,4 +93,3 @@ class Control protected () extends Object {
     */
   def setTarget(target: Element): Unit = js.native
 }
-

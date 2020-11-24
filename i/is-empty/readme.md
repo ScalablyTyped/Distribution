@@ -11,8 +11,8 @@ Check whether a value is "empty".
 | Full name          | is-empty |
 | Keywords           | array, check, empty, file, is, map, object, set, value |
 | # releases         | 1 |
-| # dependents       | 90 |
-| # downloads        | 5681997 |
+| # dependents       | 97 |
+| # downloads        | 10870977 |
 | # stars            | 6 |
 
 ## Links

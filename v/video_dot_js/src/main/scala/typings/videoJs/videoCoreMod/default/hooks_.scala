@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreMod.default
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Object that contains lifecycle hooks as keys which point to an array
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object hooks_
   extends /* type */ StringDictionary[js.Function0[_]]
-

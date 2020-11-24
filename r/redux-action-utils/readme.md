@@ -12,7 +12,7 @@ Factory functions for reducing action creator boilerplate
 | Keywords           | redux, action, creators |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 43876 |
+| # downloads        | 10267 |
 | # stars            | 0 |
 
 ## Links

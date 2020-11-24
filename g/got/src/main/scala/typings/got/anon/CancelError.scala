@@ -12,22 +12,27 @@ import typings.got.mod.GotUrl
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CancelError extends js.Object {
+  
   var CancelError: Instantiable0[typings.got.mod.CancelError] = js.native
+  
   var HTTPError: Instantiable0[typings.got.mod.HTTPError] = js.native
+  
   var MaxRedirectsError: Instantiable0[typings.got.mod.MaxRedirectsError] = js.native
+  
   var ParseError: Instantiable0[typings.got.mod.ParseError] = js.native
+  
   var ReadError: Instantiable0[typings.got.mod.ReadError] = js.native
+  
   var RequestError: Instantiable0[typings.got.mod.RequestError] = js.native
+  
   var TimeoutError: Instantiable0[typings.got.mod.TimeoutError] = js.native
+  
   var UnsupportedProtocolError: Instantiable0[typings.got.mod.UnsupportedProtocolError] = js.native
-  @JSName("extend")
-  var extend_Original: GotExtend = js.native
-  @JSName("stream")
-  var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+  
   def extend(options: GotBodyOptions[Null]): GotInstanceGotBodyFnnull = js.native
   def extend(options: GotFormOptions[String]): GotInstanceGotFormFnstrin = js.native
   def extend(options: GotJSONOptions): GotInstanceGotJSONFn = js.native
@@ -35,7 +40,11 @@ trait CancelError extends js.Object {
   def extend_GotInstanceGotBodyFnstrin(options: GotBodyOptions[String]): GotInstanceGotBodyFnstrin = js.native
   @JSName("extend")
   def extend_GotInstanceGotFormFnnull(options: GotFormOptions[Null]): GotInstanceGotFormFnnull = js.native
+  @JSName("extend")
+  var extend_Original: GotExtend = js.native
+  
   def stream(url: GotUrl): GotEmitter with Duplex = js.native
   def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+  @JSName("stream")
+  var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
 }
-

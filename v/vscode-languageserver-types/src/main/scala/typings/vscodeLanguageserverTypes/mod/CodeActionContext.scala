@@ -2,10 +2,11 @@ package typings.vscodeLanguageserverTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeActionContext extends js.Object {
+  
   /**
     * An array of diagnostics known on the client side overlapping the range provided to the
     * `textDocument/codeAction` request. They are provied so that the server knows which
@@ -14,6 +15,7 @@ trait CodeActionContext extends js.Object {
     * to compute code actions is the provided range.
     */
   var diagnostics: js.Array[Diagnostic] = js.native
+  
   /**
     * Requested kind of actions to return.
     *
@@ -22,18 +24,18 @@ trait CodeActionContext extends js.Object {
     */
   var only: js.UndefOr[js.Array[CodeActionKind]] = js.native
 }
-
 @JSImport("vscode-languageserver-types", "CodeActionContext")
 @js.native
 object CodeActionContext extends js.Object {
+  
   /**
     * Creates a new CodeActionContext literal.
     */
   def create(diagnostics: js.Array[Diagnostic]): CodeActionContext = js.native
   def create(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind]): CodeActionContext = js.native
+  
   /**
     * Checks whether the given literal conforms to the [CodeActionContext](#CodeActionContext) interface.
     */
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = js.native
 }
-

@@ -10,9 +10,9 @@ Detect and extract the static part of a glob string
 | ------------------ | :-------------: |
 | Full name          | globalyzer |
 | Keywords           | glob, analyzer, base, detect |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 2904632 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 9757419 |
 | # stars            | 0 |
 
 ## Links

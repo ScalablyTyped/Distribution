@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This enumeration lists the states that a property value can have.
@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait PropertyState extends js.Object
-
 object PropertyState {
+  
   /**
     * The value of the property is only a recommendation because there are multiple values for this property (e.g., from a multi selection).
     *
@@ -33,6 +33,7 @@ object PropertyState {
     */
   @scala.inline
   def AMBIGUOUS_VALUE: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * The value of the property is available from a master (e.g., template). <p>The PropertyAttribute field in the struct
     *
@@ -50,6 +51,7 @@ object PropertyState {
     */
   @scala.inline
   def DEFAULT_VALUE: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * The value of the property is stored in the {@link PropertySet} itself. <p>The property value must be available and of the specified type.
     *
@@ -62,4 +64,3 @@ object PropertyState {
   @scala.inline
   def DIRECT_VALUE: `0` = 0.asInstanceOf[`0`]
 }
-

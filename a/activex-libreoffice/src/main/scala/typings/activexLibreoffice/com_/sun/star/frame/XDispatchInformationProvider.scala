@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides information about supported commands
@@ -17,18 +17,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDispatchInformationProvider extends XInterface {
+  
   /**
     * returns all supported command groups.
     * @returns a sequence of supported command groups.
     * @see CommandGroup
     */
   val SupportedCommandGroups: SafeArray[Double] = js.native
+  
   /**
     * returns additional information about supported commands of a given command group.
     * @param CommandGroup specifies a command group.
     * @returns name and group name of every command supported. A group ID which is not supported returns an empty com::sun::star::uno::Sequence.
     */
   def getConfigurableDispatchInformation(CommandGroup: Double): SafeArray[DispatchInformation] = js.native
+  
   /**
     * returns all supported command groups.
     * @returns a sequence of supported command groups.
@@ -36,8 +39,8 @@ trait XDispatchInformationProvider extends XInterface {
     */
   def getSupportedCommandGroups(): SafeArray[Double] = js.native
 }
-
 object XDispatchInformationProvider {
+  
   @scala.inline
   def apply(
     SupportedCommandGroups: SafeArray[Double],
@@ -50,24 +53,29 @@ object XDispatchInformationProvider {
     val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getConfigurableDispatchInformation = js.Any.fromFunction1(getConfigurableDispatchInformation), getSupportedCommandGroups = js.Any.fromFunction0(getSupportedCommandGroups), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDispatchInformationProvider]
   }
+  
   @scala.inline
   implicit class XDispatchInformationProviderOps[Self <: XDispatchInformationProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSupportedCommandGroups(value: SafeArray[Double]): Self = this.set("SupportedCommandGroups", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetConfigurableDispatchInformation(value: Double => SafeArray[DispatchInformation]): Self = this.set("getConfigurableDispatchInformation", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetSupportedCommandGroups(value: () => SafeArray[Double]): Self = this.set("getSupportedCommandGroups", js.Any.fromFunction0(value))
   }
-  
 }
-

@@ -6,7 +6,7 @@ import typings.atomKeymap.mod.global.AtomKeymap.KeymapManager
 import typings.atomKeymap.mod.global.AtomKeymap.KeymapManagerStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom-keymap", JSImport.Namespace)
 @js.native
@@ -14,8 +14,6 @@ import scala.scalajs.js.annotation._
 class ^ () extends KeymapManager {
   def this(options: DefaultTarget) = this()
 }
-
 @JSImport("atom-keymap", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[KeymapManagerStatic]
-

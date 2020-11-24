@@ -2,7 +2,7 @@ package typings.plottable.plotsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots", "ClusteredBar")
 @js.native
@@ -18,4 +18,3 @@ class ClusteredBar[X, Y] ()
   extends typings.plottable.clusteredBarPlotMod.ClusteredBar[X, Y] {
   def this(orientation: typings.plottable.barPlotMod.BarOrientation) = this()
 }
-

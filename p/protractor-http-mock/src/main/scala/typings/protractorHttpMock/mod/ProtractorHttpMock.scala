@@ -4,14 +4,11 @@ import typings.protractorHttpMock.anon.Mocks
 import typings.protractorHttpMock.mod.requests.AllRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProtractorHttpMock extends js.Object {
-  /**
-    * Module configuration to setup
-    */
-  var config: Mocks = js.native
+  
   /**
     * Instantiate mock module. This must be done before the browser connects.
     *
@@ -35,6 +32,7 @@ trait ProtractorHttpMock extends js.Object {
     plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String],
     skipDefaults: Boolean
   ): ProtractorHttpMock = js.native
+  
   /**
     * Add mocks during test execution.
     * Returns a promise that will be resolved with a true boolean
@@ -43,11 +41,18 @@ trait ProtractorHttpMock extends js.Object {
     * @param mocks An array of mock modules to load into the application.
     */
   def add(mocks: js.Array[AllRequests]): js.Promise[Boolean] = js.native
+  
   /**
     * Returns a promise that will be resolved with a true boolean
     * when all matched HTTP requests are cleared.
     */
   def clearRequests(): js.Promise[Boolean] = js.native
+  
+  /**
+    * Module configuration to setup
+    */
+  var config: Mocks = js.native
+  
   /**
     * Remove mocks during test execution.
     * Returns a promise that will be resolved with a true boolean
@@ -56,11 +61,13 @@ trait ProtractorHttpMock extends js.Object {
     * @param mocks An array of mock modules to remove from the application.
     */
   def remove(mocks: js.Array[AllRequests]): js.Promise[Boolean] = js.native
+  
   /**
     * Returns a promise that will be resolved with an array of
     * all matched HTTP requests.
     */
   def requestsMade(): js.Promise[js.Array[ReceivedRequest]] = js.native
+  
   /**
     * Clean up.
     * Typically done in the afterEach call to ensure the teardown
@@ -68,4 +75,3 @@ trait ProtractorHttpMock extends js.Object {
     */
   def teardown(): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.aqb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AQLfunctions
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AQLfunctions extends Expression {
+  
   /**
     * Boolean
     *
@@ -25,7 +26,9 @@ trait AQLfunctions extends Expression {
     *
     */
   def bool(value: js.Any): BooleanLiteral = js.native
+  
   def expr(value: js.Any): RawExpression = js.native
+  
   /**
     * declare Function Call
     *
@@ -48,6 +51,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def fn(functionName: String): js.Function1[/* repeated */ js.Any, FunctionCall] = js.native
+  
   /**
     * Ternary(if / else)
     *
@@ -66,6 +70,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def `if`(cond: js.Any, `then`: js.Any, otherwise: js.Any): Expression | Double = js.native
+  
   /**
     * Integer
     *
@@ -79,6 +84,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def int(value: js.Any): IntegerLiteral = js.native
+  
   /**
     * List
     *
@@ -92,6 +98,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def list(value: js.Array[_]): ListLiteral = js.native
+  
   /**
     * Number
     *
@@ -105,6 +112,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def num(value: js.Any): NumberLiteral = js.native
+  
   /**
     * Object
     *
@@ -134,6 +142,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def obj(obj: js.Object): ObjectLiteral = js.native
+  
   /**
     * Simple Reference
     *
@@ -177,6 +186,7 @@ trait AQLfunctions extends Expression {
     *
     */
   def ref(value: String): SimpleReference = js.native
+  
   /**
     * String
     *
@@ -199,4 +209,3 @@ trait AQLfunctions extends Expression {
     */
   def str(value: js.Any): StringLiteral = js.native
 }
-

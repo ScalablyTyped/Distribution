@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1", "dns_v1.Resource$Resourcerecordsets")
 @js.native
 class ResourceResourcerecordsets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.resourceRecordSets.list
     * @example
@@ -119,4 +121,3 @@ class ResourceResourcerecordsets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaResourceRecordSetsListResponse]
   ): Unit = js.native
 }
-

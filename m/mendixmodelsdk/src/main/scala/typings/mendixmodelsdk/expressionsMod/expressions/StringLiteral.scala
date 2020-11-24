@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.expressionsMod.expressions
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -34,12 +35,15 @@ import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationParame
 import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  *
+  * @ignore
   *
   * In version 7.9.0: introduced
   */
@@ -51,27 +55,25 @@ class StringLiteral protected () extends LiteralExpression {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FStringLiteral: IModel = js.native
+  
   def value: String = js.native
   def value_=(newValue: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.StringLiteral")
 @js.native
 object StringLiteral extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -81,6 +83,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -90,6 +93,7 @@ object StringLiteral extends js.Object {
     *  7.21.0 and higher
     */
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -99,6 +103,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 to 7.20.0
     */
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'left' property
@@ -108,6 +113,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'right' property
@@ -117,6 +123,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryExpressionUnderRight(container: BinaryExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expressionModel' property
@@ -126,6 +133,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'valueModel' property
@@ -135,6 +143,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeListActionUnderValueModel(container: ChangeListAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'valueModel' property
@@ -144,6 +153,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expressionModel' property
@@ -153,6 +163,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'timeoutModel' property
@@ -162,6 +173,7 @@ object StringLiteral extends js.Object {
     *  8.5.0 and higher
     */
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'initialValueModel' property
@@ -171,6 +183,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'limitExpressionModel' property
@@ -180,6 +193,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'offsetExpressionModel' property
@@ -189,6 +203,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -198,6 +213,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'returnValueModel' property
@@ -207,6 +223,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInEndEventUnderReturnValueModel(container: EndEvent): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expressionModel' property
@@ -216,6 +233,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'valueModel' property
@@ -225,6 +243,7 @@ object StringLiteral extends js.Object {
     *  8.0.0 and higher
     */
   def createInFormDataPartUnderValueModel(container: FormDataPart): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'arguments' property
@@ -234,6 +253,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'marginBottomInInchModel' property
@@ -243,6 +263,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'marginLeftInInchModel' property
@@ -252,6 +273,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'marginRightInInchModel' property
@@ -261,6 +283,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'marginTopInInchModel' property
@@ -270,6 +293,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'customLocationModel' property
@@ -279,6 +303,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'password' property
@@ -288,6 +313,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'username' property
@@ -297,6 +323,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'valueModel' property
@@ -306,6 +333,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'condition' property
@@ -315,6 +343,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderCondition(container: IfExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'ifFalse' property
@@ -324,6 +353,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfFalse(container: IfExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'ifTrue' property
@@ -333,6 +363,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInIfExpressionUnderIfTrue(container: IfExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expressionModel' property
@@ -342,6 +373,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'nodeModel' property
@@ -351,6 +383,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'valueModel' property
@@ -360,6 +393,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInMemberChangeUnderValueModel(container: MemberChange): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -369,6 +403,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -378,6 +413,7 @@ object StringLiteral extends js.Object {
     *  8.0.0 and higher
     */
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expression' property
@@ -387,6 +423,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'hostExpressionModel' property
@@ -396,6 +433,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'passwordExpressionModel' property
@@ -405,6 +443,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'portExpressionModel' property
@@ -414,6 +453,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'useConfigurationExpressionModel' property
@@ -423,6 +463,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'usernameExpressionModel' property
@@ -432,6 +473,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'timeOutModel' property
@@ -441,6 +483,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -450,6 +493,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expressionModel' property
@@ -459,6 +503,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expression' property
@@ -468,6 +513,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'timeOutModel' property
@@ -477,6 +523,7 @@ object StringLiteral extends js.Object {
     *  7.15.0 and higher
     */
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'argumentModel' property
@@ -486,6 +533,7 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): StringLiteral = js.native
+  
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
     * The new StringLiteral will be automatically stored in the 'expressionModel' property
@@ -495,5 +543,8 @@ object StringLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): StringLiteral = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

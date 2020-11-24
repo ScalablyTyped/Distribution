@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__shared-ini-file-loader
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
 This module provides a function that reads from AWS SDK configuration files and returns a promise that will resolve with a hash of the parsed contents of the AWS credentials file and of the AWS config file. Given the [sample  files](#sample-files) below,
@@ -10,9 +10,9 @@ This module provides a function that reads from AWS SDK configuration files and 
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/shared-ini-file-loader |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 38995 |
+| # releases         | 17 |
+| # dependents       | 8 |
+| # downloads        | 2111136 |
 | # stars            | 0 |
 
 ## Links

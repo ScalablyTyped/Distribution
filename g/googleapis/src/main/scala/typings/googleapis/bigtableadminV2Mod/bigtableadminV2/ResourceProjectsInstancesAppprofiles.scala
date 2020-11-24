@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigtableadmin/v2", "bigtableadmin_v2.Resource$Projects$Instances$Appprofiles")
 @js.native
 class ResourceProjectsInstancesAppprofiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigtableadmin.projects.instances.appProfiles.create
     * @desc Creates an app profile within an instance.
@@ -47,6 +49,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppProfile]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.appProfiles.delete
     * @desc Deletes an app profile from an instance.
@@ -79,6 +82,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.appProfiles.get
     * @desc Gets information about an app profile.
@@ -110,6 +114,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppProfile]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.appProfiles.list
     * @desc Lists information about app profiles in an instance.
@@ -143,6 +148,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAppProfilesResponse]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.appProfiles.patch
     * @desc Updates an app profile within an instance.
@@ -178,4 +184,3 @@ class ResourceProjectsInstancesAppprofiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

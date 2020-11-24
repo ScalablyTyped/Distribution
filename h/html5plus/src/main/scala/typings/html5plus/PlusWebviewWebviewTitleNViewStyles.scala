@@ -4,7 +4,7 @@ import typings.html5plus.html5plusStrings.default
 import typings.html5plus.html5plusStrings.transparent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 窗口标题栏控件样式
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
+  
   /**
     * 标题栏控件是否显示左侧返回按钮
     * 可取值：
@@ -27,6 +28,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var autoBackButton: js.UndefOr[Boolean] = js.native
+  
   /**
     * 标题栏控件的背景颜色
     * 颜色值格式为"#RRGGBB"，如"#FF0000"表示为红色背景，默认值为"#F7F7F7"。
@@ -34,6 +36,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var backgroundColor: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏上的自定义按钮
     * 创建的自定义按钮数目不限制，实际应用中建议最多设置4个按钮（包括左侧返回按钮）。
@@ -42,6 +45,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var buttons: js.UndefOr[js.Array[PlusWebview]] = js.native
+  
   /**
     * 标题栏控件变化作用范围
     * 仅在type值为transparent时有效，页面滚动时标题栏背景透明度将发生变化。
@@ -51,6 +55,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var coverage: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏控件是否显示Home按钮
     * 可取值：
@@ -63,6 +68,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var homeButton: js.UndefOr[Boolean] = js.native
+  
   /**
     * 内边距
     * 标题栏左右的内边距，单位为px（逻辑像素值），如"10px"表示10逻辑像素值。
@@ -71,6 +77,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var padding: js.UndefOr[String] = js.native
+  
   /**
     * 左内边距
     * 标题栏左侧内边距，单位为px（逻辑像素值），如"10px"表示10逻辑像素值。
@@ -79,6 +86,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var `padding-left`: js.UndefOr[String] = js.native
+  
   /**
     * 右内边距
     * 标题栏右侧内边距，单位为px（逻辑像素值），如"10px"表示10逻辑像素值。
@@ -87,6 +95,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var `padding-right`: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏控件的进度条样式
     * 设置此属性则在标题栏控件的底部显示进度条，可配置进度条颜色值即高度。
@@ -97,6 +106,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var progress: js.UndefOr[PlusWebviewWebviewProgressStyles] = js.native
+  
   /**
     * 标题栏控件的底部分割线
     * 设置此属性则在标题栏控件的底部显示分割线，可配置颜色值及高度。
@@ -106,6 +116,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var splitLine: js.UndefOr[PlusWebviewWebviewSplitLineStyles] = js.native
+  
   /**
     * 标题栏上初始自定义绘制内容
     * 可用于设置自定义绘制图片、矩形区域、文本等内容。
@@ -114,6 +125,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var tags: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * 标题栏控件的标题文字颜色
     * 颜色值格式为"#RRGGBB"，如"#FF0000"表示标题文字颜色为红色，默认值为"#000000"。
@@ -121,6 +133,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var titleColor: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏控件的标题文字超出显示区域时处理方式
     * 可取值：
@@ -131,6 +144,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var titleOverflow: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏控件的标题文字字体大小
     * 字体大小单位为像素，如"20px"表示字体大小为20像素，默认值为17像素。
@@ -138,6 +152,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var titleSize: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏控件的标题文字内容
     * 在标题栏控件居中（水平和垂直）显示，左右边距为88px，如果文本过长则尾部裁剪（加三个点"..."）显示。
@@ -146,6 +161,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var titleText: js.UndefOr[String] = js.native
+  
   /**
     * 标题栏控件样式
     * 可取值：
@@ -164,93 +180,129 @@ trait PlusWebviewWebviewTitleNViewStyles extends js.Object {
     */
   var `type`: js.UndefOr[default | transparent] = js.native
 }
-
 object PlusWebviewWebviewTitleNViewStyles {
+  
   @scala.inline
   def apply(): PlusWebviewWebviewTitleNViewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewTitleNViewStyles]
   }
+  
   @scala.inline
   implicit class PlusWebviewWebviewTitleNViewStylesOps[Self <: PlusWebviewWebviewTitleNViewStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAutoBackButton(value: Boolean): Self = this.set("autoBackButton", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoBackButton: Self = this.set("autoBackButton", js.undefined)
+    
     @scala.inline
     def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    
     @scala.inline
     def setButtonsVarargs(value: PlusWebview*): Self = this.set("buttons", js.Array(value :_*))
+    
     @scala.inline
     def setButtons(value: js.Array[PlusWebview]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteButtons: Self = this.set("buttons", js.undefined)
+    
     @scala.inline
     def setCoverage(value: String): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCoverage: Self = this.set("coverage", js.undefined)
+    
     @scala.inline
     def setHomeButton(value: Boolean): Self = this.set("homeButton", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHomeButton: Self = this.set("homeButton", js.undefined)
+    
     @scala.inline
     def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePadding: Self = this.set("padding", js.undefined)
+    
     @scala.inline
     def `setPadding-left`(value: String): Self = this.set("padding-left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `deletePadding-left`: Self = this.set("padding-left", js.undefined)
+    
     @scala.inline
     def `setPadding-right`(value: String): Self = this.set("padding-right", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `deletePadding-right`: Self = this.set("padding-right", js.undefined)
+    
     @scala.inline
     def setProgress(value: PlusWebviewWebviewProgressStyles): Self = this.set("progress", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgress: Self = this.set("progress", js.undefined)
+    
     @scala.inline
     def setSplitLine(value: PlusWebviewWebviewSplitLineStyles): Self = this.set("splitLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSplitLine: Self = this.set("splitLine", js.undefined)
+    
     @scala.inline
     def setTagsVarargs(value: js.Any*): Self = this.set("tags", js.Array(value :_*))
+    
     @scala.inline
     def setTags(value: js.Array[_]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTags: Self = this.set("tags", js.undefined)
+    
     @scala.inline
     def setTitleColor(value: String): Self = this.set("titleColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitleColor: Self = this.set("titleColor", js.undefined)
+    
     @scala.inline
     def setTitleOverflow(value: String): Self = this.set("titleOverflow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitleOverflow: Self = this.set("titleOverflow", js.undefined)
+    
     @scala.inline
     def setTitleSize(value: String): Self = this.set("titleSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitleSize: Self = this.set("titleSize", js.undefined)
+    
     @scala.inline
     def setTitleText(value: String): Self = this.set("titleText", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitleText: Self = this.set("titleText", js.undefined)
+    
     @scala.inline
     def setType(value: default | transparent): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

@@ -10,9 +10,9 @@ Toast notifications for React.js
 | ------------------ | :-------------: |
 | Full name          | react-notify-toast |
 | Keywords           | react, toast, notification, component, notify |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 218889 |
+| # releases         | 2 |
+| # dependents       | 16 |
+| # downloads        | 248315 |
 | # stars            | 4 |
 
 ## Links

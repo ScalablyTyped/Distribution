@@ -30,7 +30,7 @@ import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import typings.std.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumeratorConstructor
@@ -41,4 +41,3 @@ Instantiable1[
         js.Any | DataSourceObject | Error | IXMLDOMNode | InputParameterObject | SignatureLineObject | SignatureObject | SignedDataBlockObject | TaskPaneObject | UserPermissionObject | ViewInfoObject | Window | _XDocument
       ]
     ]
-

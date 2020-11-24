@@ -16,7 +16,7 @@ import typings.awsSdk.awsSdkStrings.retry_
 import typings.awsSdk.awsSdkStrings.send_
 import typings.awsSdk.awsSdkStrings.sign__
 import typings.awsSdk.awsSdkStrings.success__
-import typings.awsSdk.awsSdkStrings.validate
+import typings.awsSdk.awsSdkStrings.validate_
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.httpRequestMod.HttpRequest
 import typings.awsSdk.responseMod.Response
@@ -28,7 +28,7 @@ import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/request", "Request")
 @js.native
@@ -42,25 +42,20 @@ class Request[D, E] protected () extends js.Object {
     */
   def this(service: Service, operation: String) = this()
   def this(service: Service, operation: String, params: js.Any) = this()
-  /**
-    * The raw HTTP request object containing request headers and body information sent by the service.
-    */
-  var httpRequest: HttpRequest = js.native
-  /**
-    * The time that the request started.
-    */
-  var startTime: Date = js.native
+  
   /**
     * Aborts a request, emitting the error and complete events.
     * This feature is not supported in the browser environment of the SDK.
     */
   def abort(): Unit = js.native
+  
   /**
     * Converts the request object into a readable stream that can be read from or piped into a writable stream.
     * The data read from a readable stream contains only the raw HTTP body contents.
     * This feature is not supported in the browser environment of the SDK.
     */
   def createReadStream(): Readable = js.native
+  
   /**
     * Iterates over each page of results given a pageable request, calling the provided callback with each page of data.
     * After all pages have been retrieved, the callback is called with null data.
@@ -70,10 +65,17 @@ class Request[D, E] protected () extends js.Object {
   def eachPage(
     callback: js.Function3[/* err */ E, /* data */ D, /* doneCallback */ js.UndefOr[js.Function0[Unit]], Boolean]
   ): Unit = js.native
+  
+  /**
+    * The raw HTTP request object containing request headers and body information sent by the service.
+    */
+  var httpRequest: HttpRequest = js.native
+  
   /**
     * Returns whether the operation can return multiple pages of response data.
     */
   def isPageable(): Boolean = js.native
+  
   /**
     * Adds a listener that is triggered when a request emits the specified event.
     *
@@ -83,6 +85,7 @@ class Request[D, E] protected () extends js.Object {
     */
   def on(event: String, listener: js.Function0[Unit]): Request[D, E] = js.native
   def on(event: String, listener: js.Function0[Unit], prepend: Boolean): Request[D, E] = js.native
+  
   /**
     * Adds a listener that is triggered when a request emits the specified event.
     *
@@ -313,9 +316,10 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_validate(event: validate, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_validate(event: validate_, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_validate(event: validate, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_validate(event: validate_, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  
   /**
     * Adds a listener that is triggered when the request payload is being built.
     *
@@ -537,18 +541,24 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_validate(event: validate, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
+  def on_validate(event: validate_, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_validate(event: validate, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_validate(event: validate_, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  
   /**
     * Returns a 'thenable' promise.
     */
   def promise(): js.Promise[PromiseResult[D, E]] = js.native
+  
   /**
     * Sends the request object.
     * If a callback is supplied, it is called when a response is returned from the service.
     */
   def send(): Unit = js.native
   def send(callback: js.Function2[/* err */ E, /* data */ D, Unit]): Unit = js.native
+  
+  /**
+    * The time that the request started.
+    */
+  var startTime: Date = js.native
 }
-

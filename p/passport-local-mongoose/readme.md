@@ -11,8 +11,8 @@ Mongoose plugin that simplifies building username and password login with Passpo
 | Full name          | passport-local-mongoose |
 | Keywords           | mongoose, passport, authentication, login |
 | # releases         | 3 |
-| # dependents       | 53 |
-| # downloads        | 426235 |
+| # dependents       | 55 |
+| # downloads        | 541068 |
 | # stars            | 27 |
 
 ## Links

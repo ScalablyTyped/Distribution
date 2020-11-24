@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-object-diff"
-version := "1.1.0-667428"
+version := "1.1.0-4605f5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

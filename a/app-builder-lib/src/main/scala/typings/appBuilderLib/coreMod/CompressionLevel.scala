@@ -2,7 +2,7 @@ package typings.appBuilderLib.coreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.appBuilderLib.appBuilderLibStrings.store
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.appBuilderLib.appBuilderLibStrings.maximum
 */
 trait CompressionLevel extends js.Object
-
 object CompressionLevel {
+  
   @scala.inline
   def maximum: typings.appBuilderLib.appBuilderLibStrings.maximum = "maximum".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.maximum]
+  
   @scala.inline
   def normal: typings.appBuilderLib.appBuilderLibStrings.normal = "normal".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.normal]
+  
   @scala.inline
   def store: typings.appBuilderLib.appBuilderLibStrings.store = "store".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.store]
 }
-

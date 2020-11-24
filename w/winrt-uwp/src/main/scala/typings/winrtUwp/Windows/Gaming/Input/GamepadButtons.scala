@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Gaming.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GamepadButtons extends js.Object
-
 /** Specifies the button type. */
 @JSGlobal("Windows.Gaming.Input.GamepadButtons")
 @js.native
 object GamepadButtons extends js.Object {
+  
   /** A button. */
   @js.native
   sealed trait a extends GamepadButtons
@@ -70,6 +70,4 @@ object GamepadButtons extends js.Object {
   /** Y button. */
   @js.native
   sealed trait y extends GamepadButtons
-  
 }
-

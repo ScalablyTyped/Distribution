@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__alert
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 Create accessible alerts through snackbars and banners.
@@ -10,9 +10,9 @@ Create accessible alerts through snackbars and banners.
 | ------------------ | :-------------: |
 | Full name          | @react-md/alert |
 | Keywords           | react-md, material design, react, alert, snackbar, toast, notification, banner, component |
-| # releases         | 18 |
+| # releases         | 32 |
 | # dependents       | 1 |
-| # downloads        | 2920 |
+| # downloads        | 9386 |
 | # stars            | 0 |
 
 ## Links

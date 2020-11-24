@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.UInt64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an unsigned 64-bit value.
@@ -19,4 +19,3 @@ class UInt64_ protected () extends UInt64 {
   def this(v: Double) = this()
   def this(v: UInt64) = this()
 }
-

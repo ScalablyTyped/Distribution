@@ -3,7 +3,7 @@ package typings.openpgp.mod.packet
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.Userid")
 @js.native
@@ -16,28 +16,32 @@ import scala.scalajs.js.annotation._
   * specifies the length of the User ID.
   */
 class Userid () extends js.Object {
-  /**
-    * A string containing the user id. Usually in the form
-    * John Doe <john@example.com>
-    */
-  var userid: String = js.native
+  
   /**
     * Set userid string from object, e.g. { name:'Phil Zimmermann', email:'phil@openpgp.org' }
     */
   def format(): Unit = js.native
+  
   /**
     * Parse userid string, e.g. 'John Doe <john@example.com>'
     */
   def parse(): Unit = js.native
+  
   /**
     * Parsing function for a user id packet (tag 13).
     * @param input payload of a tag 13 packet
     */
   def read(input: Uint8Array): Unit = js.native
+  
+  /**
+    * A string containing the user id. Usually in the form
+    * John Doe <john@example.com>
+    */
+  var userid: String = js.native
+  
   /**
     * Creates a binary representation of the user id packet
     * @returns binary representation
     */
   def write(): Uint8Array = js.native
 }
-

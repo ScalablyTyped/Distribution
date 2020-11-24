@@ -2,11 +2,12 @@ package typings.k6.httpMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/http", "CookieJar")
 @js.native
-abstract class CookieJar_ () extends js.Object {
+class CookieJar_ () extends js.Object {
+  
   /**
     * Get cookies set for a particular URL.
     * https://k6.io/docs/javascript-api/k6-http/cookiejar-k6-http/cookiejar-cookiesforurl-url
@@ -14,6 +15,7 @@ abstract class CookieJar_ () extends js.Object {
     * @returns Cookies for URL.
     */
   def cookiesForURL(url: String): CookieJarCookies = js.native
+  
   /**
     * Set cookie.
     * https://k6.io/docs/javascript-api/k6-http/cookiejar-k6-http/cookiejar-set-name-value-options
@@ -24,4 +26,3 @@ abstract class CookieJar_ () extends js.Object {
   def set(name: String, value: String): Unit = js.native
   def set(name: String, value: String, options: CookieOptions): Unit = js.native
 }
-

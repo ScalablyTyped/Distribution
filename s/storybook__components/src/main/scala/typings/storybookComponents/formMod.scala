@@ -177,8 +177,8 @@ import typings.storybookComponents.anon.PartialDetailedHTMLPropsF
 import typings.storybookComponents.anon.PickDetailedHTMLPropsForm
 import typings.storybookComponents.anon.PropsWithChildrenDetailed
 import typings.storybookComponents.anon.StyledComponentPickPickHT
-import typings.storybookComponents.anon.StyledComponentPickPickTe
 import typings.storybookComponents.anon.StyledComponentPickSelect
+import typings.storybookComponents.anon.StyledComponentPickanycol
 import typings.storybookComponents.anon.WeakValidationMapDetailed
 import typings.storybookComponents.fieldMod.FieldProps
 import typings.storybookComponents.storybookComponentsStrings.`object`
@@ -359,25 +359,38 @@ import typings.storybookComponents.storybookComponentsStrings.webview
 import typings.storybookTheming.typesMod.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/components/dist/form", JSImport.Namespace)
 @js.native
 object formMod extends js.Object {
+  
   @js.native
   object Form extends js.Object {
-    var Button: FunctionComponent[_] = js.native
-    var Field: FunctionComponent[FieldProps] = js.native
-    var Input: StyledComponentPickPickHT = js.native
-    var Select: StyledComponentPickSelect = js.native
-    var Textarea: StyledComponentPickPickTe = js.native
-    var __emotion_styles: js.Any = js.native
-    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
-    var defaultProps: js.UndefOr[PartialDetailedHTMLPropsF] = js.native
-    var displayName: js.UndefOr[String] = js.native
-    var propTypes: js.UndefOr[WeakValidationMapDetailed] = js.native
+    
     def apply(props: PropsWithChildrenDetailed): ReactElement | Null = js.native
     def apply(props: PropsWithChildrenDetailed, context: js.Any): ReactElement | Null = js.native
+    
+    var Button: FunctionComponent[_] = js.native
+    
+    var Field: FunctionComponent[FieldProps] = js.native
+    
+    var Input: StyledComponentPickPickHT = js.native
+    
+    var Select: StyledComponentPickSelect = js.native
+    
+    var Textarea: StyledComponentPickanycol = js.native
+    
+    var __emotion_styles: js.Any = js.native
+    
+    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+    
+    var defaultProps: js.UndefOr[PartialDetailedHTMLPropsF] = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
+    
+    var propTypes: js.UndefOr[WeakValidationMapDetailed] = js.native
+    
     def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme] = js.native
     /**
       * @desc this method is type-unsafe
@@ -1201,6 +1214,4 @@ object formMod extends js.Object {
         Theme
       ] = js.native
   }
-  
 }
-

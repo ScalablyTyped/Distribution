@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui.model.odata
 import typings.openui5.sap.ui.model.Sorter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.v4")
 @js.native
 object v4 extends js.Object {
+  
   @js.native
   class Context protected ()
     extends typings.openui5.sap.ui.model.odata.v4.Context {
@@ -425,6 +426,4 @@ object v4 extends js.Object {
       mParameters: js.Any
     ) = this()
   }
-  
 }
-

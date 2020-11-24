@@ -1,16 +1,16 @@
 package typings.reactIntl.createFormattedComponentMod
 
+import typings.formatjsIntl.srcTypesMod.FormatNumberOptions
 import typings.react.mod.FC
-import typings.reactIntl.anon.`0`
+import typings.reactIntl.anon.`1`
 import typings.reactIntl.reactIntlStrings.formatNumber
-import typings.reactIntl.typesMod.FormatNumberOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-intl/lib/components/createFormattedComponent", "createFormattedComponent")
+@JSImport("react-intl/lib/src/components/createFormattedComponent", "createFormattedComponent")
 @js.native
 object createFormattedComponent_formatNumber extends js.Object {
-  def apply(name: formatNumber): FC[FormatNumberOptions with `0`] = js.native
+  
+  def apply(name: formatNumber): FC[FormatNumberOptions with `1`] = js.native
 }
-

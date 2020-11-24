@@ -11,8 +11,8 @@ Group array of objects into lists.
 | Full name          | group-array |
 | Keywords           | array, group, item, list, nested, prop, properties, property |
 | # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 3399297 |
+| # dependents       | 24 |
+| # downloads        | 3487800 |
 | # stars            | 2 |
 
 ## Links

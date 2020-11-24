@@ -10,9 +10,9 @@ Animate on scroll library
 | ------------------ | :-------------: |
 | Full name          | aos |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 17 |
-| # downloads        | 927019 |
+| # releases         | 3 |
+| # dependents       | 35 |
+| # downloads        | 1733346 |
 | # stars            | 8 |
 
 ## Links

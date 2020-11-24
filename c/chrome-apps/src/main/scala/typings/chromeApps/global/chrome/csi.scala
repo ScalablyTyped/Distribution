@@ -3,11 +3,12 @@ package typings.chromeApps.global.chrome
 import typings.chromeApps.anon.OnloadT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.csi")
 @js.native
 object csi extends js.Object {
+  
   // #endregion
   // #region methods
   /////////////
@@ -18,4 +19,3 @@ object csi extends js.Object {
     */
   def apply(): OnloadT = js.native
 }
-

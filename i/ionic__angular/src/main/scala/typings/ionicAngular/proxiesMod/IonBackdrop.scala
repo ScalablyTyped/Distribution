@@ -8,15 +8,17 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/directives/proxies", "IonBackdrop")
 @js.native
 class IonBackdrop protected ()
   extends typings.ionicCore.componentsMod.Components.IonBackdrop {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
+  
   var el: HTMLElement = js.native
+  
   var ionBackdropTap: EventEmitter[CustomEvent[_]] = js.native
+  
   var z: NgZone = js.native
 }
-

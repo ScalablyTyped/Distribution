@@ -6,7 +6,7 @@ import typings.officeJs.OfficeExtension.EmbeddedOptions
 import typings.officeJs.OfficeExtension.EventInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////
 /////////////////////// End Exchange APIs //////////////////////
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("OfficeExtension")
 @js.native
 object OfficeExtension extends js.Object {
+  
   /**
     * An abstract proxy object that represents an object in an Office document. 
     * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the 
@@ -57,6 +58,34 @@ object OfficeExtension extends js.Object {
   @js.native
   class ErrorCodes ()
     extends typings.officeJs.OfficeExtension.ErrorCodes
+  /* static members */
+  @js.native
+  object ErrorCodes extends js.Object {
+    
+    var accessDenied: String = js.native
+    
+    var activityLimitReached: String = js.native
+    
+    var apiNotFound: String = js.native
+    
+    var cannotRegisterEvent: String = js.native
+    
+    var connectionFailure: String = js.native
+    
+    var generalException: String = js.native
+    
+    var invalidArgument: String = js.native
+    
+    var invalidObjectPath: String = js.native
+    
+    var invalidRequestContext: String = js.native
+    
+    var propertyNotLoaded: String = js.native
+    
+    var runMustReturnPromise: String = js.native
+    
+    var valueNotLoaded: String = js.native
+  }
   
   @js.native
   class EventHandlerResult[T] protected ()
@@ -94,29 +123,6 @@ object OfficeExtension extends js.Object {
             Unit
           ]) = this()
   }
-  
-  /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
-  @js.native
-  class TrackedObjects ()
-    extends typings.officeJs.OfficeExtension.TrackedObjects
-  
-  /* static members */
-  @js.native
-  object ErrorCodes extends js.Object {
-    var accessDenied: String = js.native
-    var activityLimitReached: String = js.native
-    var apiNotFound: String = js.native
-    var cannotRegisterEvent: String = js.native
-    var connectionFailure: String = js.native
-    var generalException: String = js.native
-    var invalidArgument: String = js.native
-    var invalidObjectPath: String = js.native
-    var invalidRequestContext: String = js.native
-    var propertyNotLoaded: String = js.native
-    var runMustReturnPromise: String = js.native
-    var valueNotLoaded: String = js.native
-  }
-  
   /**
     * A Promise object that represents a deferred interaction with the host Office application. 
     * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. 
@@ -127,9 +133,15 @@ object OfficeExtension extends js.Object {
   @js.native
   object Promise extends TopLevel[IPromiseConstructor]
   
+  /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
+  @js.native
+  class TrackedObjects ()
+    extends typings.officeJs.OfficeExtension.TrackedObjects
+  
   /** Configuration */
   @js.native
   object config extends js.Object {
+    
     /**
       * Determines whether to log additional error information upon failure.
       *
@@ -143,6 +155,4 @@ object OfficeExtension extends js.Object {
       */
     var extendedErrorLogging: Boolean = js.native
   }
-  
 }
-

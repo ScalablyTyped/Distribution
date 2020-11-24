@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Inappproducts")
 @js.native
 class ResourceInappproducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.inappproducts.delete
     * @desc Delete an in-app product for an app.
@@ -42,6 +44,7 @@ class ResourceInappproducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.inappproducts.get
     * @desc Returns information about the in-app product specified.
@@ -71,6 +74,7 @@ class ResourceInappproducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInAppProduct]
   ): Unit = js.native
+  
   /**
     * androidpublisher.inappproducts.insert
     * @desc Creates a new in-app product for an app.
@@ -101,6 +105,7 @@ class ResourceInappproducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInAppProduct]
   ): Unit = js.native
+  
   /**
     * androidpublisher.inappproducts.list
     * @desc List all the in-app products for an Android app, both subscriptions
@@ -136,6 +141,7 @@ class ResourceInappproducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInappproductsListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.inappproducts.patch
     * @desc Updates the details of an in-app product. This method supports
@@ -168,6 +174,7 @@ class ResourceInappproducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInAppProduct]
   ): Unit = js.native
+  
   /**
     * androidpublisher.inappproducts.update
     * @desc Updates the details of an in-app product.
@@ -200,4 +207,3 @@ class ResourceInappproducts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaInAppProduct]
   ): Unit = js.native
 }
-

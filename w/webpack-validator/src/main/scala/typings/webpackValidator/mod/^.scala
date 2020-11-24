@@ -2,11 +2,12 @@ package typings.webpackValidator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack-validator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Validate your webpack configs with joi
     */
@@ -21,4 +22,3 @@ object ^ extends js.Object {
     options: ValidationOptions
   ): js.Any = js.native
 }
-

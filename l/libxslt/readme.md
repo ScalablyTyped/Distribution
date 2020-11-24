@@ -4,15 +4,15 @@
 Typings are for version 0.9
 
 ## Library description:
-Node.js bindings for libxslt compatible with libxmljs
+[Fork] Node.js bindings for libxslt compatible with libxmljs
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | libxslt |
 | Keywords           | xml, xsl, xslt, libxslt, bindings |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 50938 |
+| # releases         | 2 |
+| # dependents       | 13 |
+| # downloads        | 19674 |
 | # stars            | 3 |
 
 ## Links

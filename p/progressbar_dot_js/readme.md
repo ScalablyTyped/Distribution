@@ -12,7 +12,7 @@ Responsive and slick progress bars with animated SVG paths
 | Keywords           | progress, bar, js, svg, circular, circle, pace, radial, line, loading, loader, semi-circle, indicator |
 | # releases         | 2 |
 | # dependents       | 40 |
-| # downloads        | 1173744 |
+| # downloads        | 1225481 |
 | # stars            | 7 |
 
 ## Links

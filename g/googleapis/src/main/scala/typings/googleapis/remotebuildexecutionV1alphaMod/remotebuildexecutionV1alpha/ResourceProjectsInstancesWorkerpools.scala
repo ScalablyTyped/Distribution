@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1alpha", "remotebuildexecution_v1alpha.Resource$Projects$Instances$Workerpools")
 @js.native
 class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.projects.instances.workerpools.create
     * @desc Creates a new worker pool with a specified size and configuration.
@@ -48,6 +50,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.workerpools.delete
     * @desc Deletes the specified worker pool. Returns a long running
@@ -82,6 +85,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.workerpools.get
     * @desc Returns the specified worker pool.
@@ -113,6 +117,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.workerpools.list
     * @desc Lists worker pools in an instance.
@@ -146,6 +151,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.projects.instances.workerpools.patch
     * @desc Updates an existing worker pool with a specified size and/or
@@ -182,4 +188,3 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
 }
-

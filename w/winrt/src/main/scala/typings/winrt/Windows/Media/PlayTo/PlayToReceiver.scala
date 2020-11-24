@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.IAsyncAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlayToReceiver extends IPlayToReceiver
-
 object PlayToReceiver {
+  
   @scala.inline
   def apply(
     friendlyName: String,
@@ -45,4 +45,3 @@ object PlayToReceiver {
     __obj.asInstanceOf[PlayToReceiver]
   }
 }
-

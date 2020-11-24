@@ -1,5 +1,7 @@
 package typings.storybookComponents.inputMod
 
+import typings.emotionStyledBase.anon.`0`
+import typings.emotionStyledBase.helperMod.Omit
 import typings.emotionStyledBase.helperMod.PropsOf
 import typings.emotionStyledBase.mod.StyledComponent
 import typings.react.HTMLWebViewElement
@@ -42,6 +44,7 @@ import typings.react.mod.OptionHTMLAttributes
 import typings.react.mod.OutputHTMLAttributes
 import typings.react.mod.ParamHTMLAttributes
 import typings.react.mod.ProgressHTMLAttributes
+import typings.react.mod.PropsWithChildren
 import typings.react.mod.QuoteHTMLAttributes
 import typings.react.mod.ReactElement
 import typings.react.mod.SVGProps
@@ -58,6 +61,7 @@ import typings.react.mod.TimeHTMLAttributes
 import typings.react.mod.TrackHTMLAttributes
 import typings.react.mod.ValidationMap
 import typings.react.mod.VideoHTMLAttributes
+import typings.react.mod.WeakValidationMap
 import typings.react.mod.WebViewHTMLAttributes
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
@@ -117,6 +121,7 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
+import typings.std.Partial
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -172,9 +177,7 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.storybookComponents.anon.PartialPickTextareaPropsc
-import typings.storybookComponents.anon.PropsWithChildrenPickText
-import typings.storybookComponents.anon.WeakValidationMapPickText
+import typings.storybookComponents.anon.PickanycolortranslatehiddAbout
 import typings.storybookComponents.storybookComponentsStrings.`object`
 import typings.storybookComponents.storybookComponentsStrings.`var`
 import typings.storybookComponents.storybookComponentsStrings.a
@@ -338,6 +341,7 @@ import typings.storybookComponents.storybookComponentsStrings.textarea
 import typings.storybookComponents.storybookComponentsStrings.tfoot
 import typings.storybookComponents.storybookComponentsStrings.th
 import typings.storybookComponents.storybookComponentsStrings.thead
+import typings.storybookComponents.storybookComponentsStrings.theme
 import typings.storybookComponents.storybookComponentsStrings.time
 import typings.storybookComponents.storybookComponentsStrings.title
 import typings.storybookComponents.storybookComponentsStrings.tr
@@ -353,18 +357,34 @@ import typings.storybookComponents.storybookComponentsStrings.webview
 import typings.storybookTheming.typesMod.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/components/dist/form/input/input", "Textarea")
 @js.native
 object Textarea extends js.Object {
+  
+  def apply(
+    props: PropsWithChildren[PickanycolortranslatehiddAbout with (Omit[TextareaProps, theme]) with `0`[Theme]]
+  ): ReactElement | Null = js.native
+  def apply(
+    props: PropsWithChildren[PickanycolortranslatehiddAbout with (Omit[TextareaProps, theme]) with `0`[Theme]],
+    context: js.Any
+  ): ReactElement | Null = js.native
+  
   var __emotion_styles: js.Any = js.native
+  
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
-  var defaultProps: js.UndefOr[PartialPickTextareaPropsc] = js.native
+  
+  var defaultProps: js.UndefOr[
+    Partial[PickanycolortranslatehiddAbout with (Omit[TextareaProps, theme]) with `0`[Theme]]
+  ] = js.native
+  
   var displayName: js.UndefOr[String] = js.native
-  var propTypes: js.UndefOr[WeakValidationMapPickText] = js.native
-  def apply(props: PropsWithChildrenPickText): ReactElement | Null = js.native
-  def apply(props: PropsWithChildrenPickText, context: js.Any): ReactElement | Null = js.native
+  
+  var propTypes: js.UndefOr[
+    WeakValidationMap[PickanycolortranslatehiddAbout with (Omit[TextareaProps, theme]) with `0`[Theme]]
+  ] = js.native
+  
   def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], TextareaProps, Theme] = js.native
   /**
     * @desc this method is type-unsafe
@@ -1012,4 +1032,3 @@ object Textarea extends js.Object {
     Theme
   ] = js.native
 }
-

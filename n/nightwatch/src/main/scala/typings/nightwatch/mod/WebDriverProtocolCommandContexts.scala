@@ -4,10 +4,11 @@ import typings.nightwatch.anon.Height
 import typings.nightwatch.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolCommandContexts extends js.Object {
+  
   /**
     * Change focus to another frame on the page. If the frame id is missing or null, the server should switch to the page's default content.
     *
@@ -32,6 +33,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     frameId: Null,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Change focus to the parent context. If the current context is the top level browsing context, the context remains unchanged.
     *
@@ -48,6 +50,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
   def frameParent(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Change focus to another window or close the current window. Shouldn't normally be used directly, instead `.switchWindow()` and `.closeWindow()` should be used.
     */
@@ -63,6 +66,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     handleOrName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the current window handle.
     *
@@ -77,6 +81,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
   def windowHandle(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the list of all window handles available to the session.
     *
@@ -96,6 +101,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Increases the window to the maximum available size without going full-screen.
     *
@@ -111,6 +117,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     handleOrName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Change or get the position of the specified window. If the second argument is a function it will be used as a callback and
     * the call will perform a get request to retrieve the existing window position.
@@ -163,6 +170,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     offsetY: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Change or get the size of the specified window. If the second argument is a function it will be used as a callback and the call will perform a get request to retrieve the existing window size.
     *
@@ -212,4 +220,3 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

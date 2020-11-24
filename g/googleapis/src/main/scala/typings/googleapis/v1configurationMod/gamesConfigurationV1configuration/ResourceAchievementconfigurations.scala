@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesConfiguration/v1configuration", "gamesConfiguration_v1configuration.Resource$Achievementconfigurations")
 @js.native
 class ResourceAchievementconfigurations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesConfiguration.achievementConfigurations.delete
     * @desc Delete the achievement configuration with the given ID.
@@ -41,6 +43,7 @@ class ResourceAchievementconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.achievementConfigurations.get
     * @desc Retrieves the metadata of the achievement configuration with the
@@ -73,6 +76,7 @@ class ResourceAchievementconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementConfiguration]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.achievementConfigurations.insert
     * @desc Insert a new achievement configuration in this application.
@@ -105,6 +109,7 @@ class ResourceAchievementconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementConfiguration]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.achievementConfigurations.list
     * @desc Returns a list of the achievement configurations in this
@@ -139,6 +144,7 @@ class ResourceAchievementconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementConfigurationListResponse]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.achievementConfigurations.patch
     * @desc Update the metadata of the achievement configuration with the given
@@ -172,6 +178,7 @@ class ResourceAchievementconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAchievementConfiguration]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.achievementConfigurations.update
     * @desc Update the metadata of the achievement configuration with the given
@@ -206,4 +213,3 @@ class ResourceAchievementconfigurations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAchievementConfiguration]
   ): Unit = js.native
 }
-

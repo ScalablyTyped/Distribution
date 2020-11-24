@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__chunked-blob-reader
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-blob-reader |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 628 |
+| # releases         | 14 |
+| # dependents       | 3 |
+| # downloads        | 1012315 |
 | # stars            | 0 |
 
 ## Links

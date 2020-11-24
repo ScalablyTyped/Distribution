@@ -3,11 +3,11 @@ package typings.asmcryptoJs.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asmcrypto.js", "bytes_to_hex")
 @js.native
 object bytesToHex extends js.Object {
+  
   def apply(arr: Uint8Array): String = js.native
 }
-

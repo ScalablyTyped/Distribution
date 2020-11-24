@@ -15,15 +15,18 @@ import typings.nodeResque.nodeResqueStrings.success
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-resque", "Worker")
 @js.native
 class Worker protected () extends EventEmitter {
   def this(options: WorkerOptions) = this()
   def this(options: WorkerOptions, jobs: JobsHash) = this()
+  
   def connect(): js.Promise[Unit] = js.native
+  
   def end(): js.Promise[Unit] = js.native
+  
   @JSName("on")
   def on_cleaningworker(event: cleaning_worker, cb: js.Function2[/* worker */ String, /* pid */ String, Unit]): this.type = js.native
   @JSName("on")
@@ -49,6 +52,7 @@ class Worker protected () extends EventEmitter {
   def on_start(event: start, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_success(event: success, cb: js.Function3[/* queue */ String, /* job */ Job[_], /* result */ js.Any, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_cleaningworker(event: cleaning_worker, cb: js.Function2[/* worker */ String, /* pid */ String, Unit]): this.type = js.native
   @JSName("once")
@@ -74,7 +78,8 @@ class Worker protected () extends EventEmitter {
   def once_start(event: start, cb: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_success(event: success, cb: js.Function3[/* queue */ String, /* job */ Job[_], /* result */ js.Any, Unit]): this.type = js.native
+  
   def removeAllListeners(event: WorkerEvent): this.type = js.native
+  
   def start(): js.Promise[Unit] = js.native
 }
-

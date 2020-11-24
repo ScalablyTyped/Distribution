@@ -5,7 +5,7 @@ import typings.openlayers.mod.olx.style.IconOptions
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -25,11 +25,13 @@ import scala.scalajs.js.annotation._
   */
 class Icon () extends Image {
   def this(opt_options: IconOptions) = this()
+  
   /**
     * @inheritDoc
     * @api
     */
   def getAnchor(): js.Array[Double] = js.native
+  
   /**
     * Get the image icon.
     * @param pixelRatio Pixel ratio.
@@ -37,22 +39,26 @@ class Icon () extends Image {
     * @api
     */
   def getImage(pixelRatio: Double): Image | HTMLCanvasElement = js.native
+  
   /**
     * @inheritDoc
     * @api
     */
   def getOrigin(): js.Array[Double] = js.native
+  
   /**
     * @inheritDoc
     * @api
     */
   def getSize(): Size = js.native
+  
   /**
     * Get the image URL.
     * @return Image src.
     * @api
     */
   def getSrc(): String = js.native
+  
   /**
     * Load not yet loaded URI.
     * When rendering a feature with an icon style, the vector renderer will
@@ -62,4 +68,3 @@ class Icon () extends Image {
     */
   def load(): Unit = js.native
 }
-

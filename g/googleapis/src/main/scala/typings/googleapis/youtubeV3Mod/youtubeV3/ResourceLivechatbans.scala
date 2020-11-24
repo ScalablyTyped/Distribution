@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livechatbans")
 @js.native
 class ResourceLivechatbans protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.liveChatBans.delete
     * @desc Removes a chat ban.
@@ -41,6 +43,7 @@ class ResourceLivechatbans protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.liveChatBans.insert
     * @desc Adds a new ban to the chat.
@@ -71,4 +74,3 @@ class ResourceLivechatbans protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLiveChatBan]
   ): Unit = js.native
 }
-

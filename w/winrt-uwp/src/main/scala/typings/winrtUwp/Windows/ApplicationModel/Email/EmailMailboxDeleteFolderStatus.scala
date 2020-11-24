@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailMailboxDeleteFolderStatus extends js.Object
-
 /** Indicates the result of a call to TryDeleteFolderAsync . */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus")
 @js.native
 object EmailMailboxDeleteFolderStatus extends js.Object {
+  
   /** An error occurred while deleting parts of the folder. */
   @js.native
   sealed trait couldNotDeleteEverything extends EmailMailboxDeleteFolderStatus
@@ -34,6 +34,4 @@ object EmailMailboxDeleteFolderStatus extends js.Object {
   /** Folder deletion failed for an unknown reason. */
   @js.native
   sealed trait unknownFailure extends EmailMailboxDeleteFolderStatus
-  
 }
-

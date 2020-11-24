@@ -4,15 +4,17 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SkipToMainContentProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
+  
   /**
     * The id to use for the `<main>` content that should be focused once this
     * link is clicked.
     */
   var mainId: String = js.native
+  
   /**
     * Boolean if the skip to main content link should be unstyled so that you can
     * provide your own styles. This is just helpful if you are using this
@@ -25,31 +27,36 @@ trait SkipToMainContentProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
     */
   var unstyled: js.UndefOr[Boolean] = js.native
 }
-
 object SkipToMainContentProps {
+  
   @scala.inline
   def apply(mainId: String): SkipToMainContentProps = {
     val __obj = js.Dynamic.literal(mainId = mainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkipToMainContentProps]
   }
+  
   @scala.inline
   implicit class SkipToMainContentPropsOps[Self <: SkipToMainContentProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMainId(value: String): Self = this.set("mainId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUnstyled(value: Boolean): Self = this.set("unstyled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUnstyled: Self = this.set("unstyled", js.undefined)
   }
-  
 }
-

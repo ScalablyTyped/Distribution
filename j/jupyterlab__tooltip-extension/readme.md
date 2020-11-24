@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__tooltip-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.7
 
 ## Library description:
 JupyterLab - Tooltip Extension
@@ -10,9 +10,9 @@ JupyterLab - Tooltip Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/tooltip-extension |
 | Keywords           | - |
-| # releases         | 63 |
+| # releases         | 113 |
 | # dependents       | 1 |
-| # downloads        | 743512 |
+| # downloads        | 1347366 |
 | # stars            | 0 |
 
 ## Links

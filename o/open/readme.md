@@ -1,7 +1,7 @@
 
 # Scala.js typings for open
 
-Typings are for version 7.1.0
+Typings are for version 7.3.0
 
 ## Library description:
 Open stuff like URLs, files, executables. Cross-platform.
@@ -10,10 +10,10 @@ Open stuff like URLs, files, executables. Cross-platform.
 | ------------------ | :-------------: |
 | Full name          | open |
 | Keywords           | app, open, opener, opens, launch, start, xdg-open, xdg, default, cmd, browser, editor, executable, exe, url, urls, arguments, args, spawn, exec, child, process, website, file |
-| # releases         | 7 |
-| # dependents       | 2471 |
-| # downloads        | 93371133 |
-| # stars            | 82 |
+| # releases         | 15 |
+| # dependents       | 3574 |
+| # downloads        | 353006892 |
+| # stars            | 83 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/open#readme)

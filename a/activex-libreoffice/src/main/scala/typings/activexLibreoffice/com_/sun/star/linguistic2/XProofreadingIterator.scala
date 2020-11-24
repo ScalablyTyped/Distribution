@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.text.XFlatParagraphIteratorProvi
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * API for the proofreading iterator that mediates between the document and the proofreader.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XProofreadingIterator extends XInterface {
+  
   /**
     * start proofreading from a given position
     * @param xDocument the document.
@@ -35,14 +36,17 @@ trait XProofreadingIterator extends XInterface {
     nSuggestedBehindEndOfSentencePosition: Double,
     nErrorPositionInParagraph: Double
   ): ProofreadingResult = js.native
+  
   /**
     * checks if the given document is currently being checked
     * @param xDocument the document.
     * @returns if the document is currently being checked.
     */
   def isProofreading(xDocument: XInterface): Boolean = js.native
+  
   /** clears the list of ignored rules for each proofreader */
   def resetIgnoreRules(): Unit = js.native
+  
   /**
     * start proofreading and automatically process the whole text
     * @param xDocument the text document.
@@ -51,8 +55,8 @@ trait XProofreadingIterator extends XInterface {
     */
   def startProofreading(xDocument: XInterface, xIteratorProvider: XFlatParagraphIteratorProvider): Unit = js.native
 }
-
 object XProofreadingIterator {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -66,26 +70,32 @@ object XProofreadingIterator {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkSentenceAtPosition = js.Any.fromFunction7(checkSentenceAtPosition), isProofreading = js.Any.fromFunction1(isProofreading), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resetIgnoreRules = js.Any.fromFunction0(resetIgnoreRules), startProofreading = js.Any.fromFunction2(startProofreading))
     __obj.asInstanceOf[XProofreadingIterator]
   }
+  
   @scala.inline
   implicit class XProofreadingIteratorOps[Self <: XProofreadingIterator] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCheckSentenceAtPosition(value: (XInterface, XFlatParagraph, String, Locale, Double, Double, Double) => ProofreadingResult): Self = this.set("checkSentenceAtPosition", js.Any.fromFunction7(value))
+    
     @scala.inline
     def setIsProofreading(value: XInterface => Boolean): Self = this.set("isProofreading", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setResetIgnoreRules(value: () => Unit): Self = this.set("resetIgnoreRules", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setStartProofreading(value: (XInterface, XFlatParagraphIteratorProvider) => Unit): Self = this.set("startProofreading", js.Any.fromFunction2(value))
   }
-  
 }
-

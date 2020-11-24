@@ -11,8 +11,8 @@ Check where the code is running in the browser or node.js
 | Full name          | browser-or-node |
 | Keywords           | npm, browser, node, is browser, is node, is browser node |
 | # releases         | 3 |
-| # dependents       | 48 |
-| # downloads        | 398391 |
+| # dependents       | 70 |
+| # downloads        | 1077267 |
 | # stars            | 1 |
 
 ## Links

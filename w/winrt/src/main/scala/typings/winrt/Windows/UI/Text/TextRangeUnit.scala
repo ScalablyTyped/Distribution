@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextRangeUnit extends js.Object
-
 @JSGlobal("Windows.UI.Text.TextRangeUnit")
 @js.native
 object TextRangeUnit extends js.Object {
+  
   @js.native
   sealed trait allCaps extends TextRangeUnit
   
@@ -105,6 +105,4 @@ object TextRangeUnit extends js.Object {
   
   @js.native
   sealed trait word extends TextRangeUnit
-  
 }
-

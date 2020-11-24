@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Playback
 import typings.winrtUwp.Windows.Media.Core.MediaSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media item that can be played back. This class acts as a wrapper around a MediaSource that exposes the audio tracks, video tracks, and timed metadata tracks included in the media source. */
 @JSGlobal("Windows.Media.Playback.MediaPlaybackItem")
@@ -16,11 +16,10 @@ class MediaPlaybackItem protected ()
     */
   def this(source: MediaSource) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Media.Playback.MediaPlaybackItem")
 @js.native
 object MediaPlaybackItem extends js.Object {
+  
   var findFromMediaSource: js.Any = js.native
 }
-

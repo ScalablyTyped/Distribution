@@ -5,17 +5,17 @@ import typings.bingmaps.Microsoft.Maps.IPolylineOptions
 import typings.bingmaps.Microsoft.Maps.IPushpinOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.TestDataGenerator")
 @js.native
 class TestDataGenerator ()
   extends typings.bingmaps.Microsoft.Maps.TestDataGenerator
-
 /* static members */
 @JSGlobal("Microsoft.Maps.TestDataGenerator")
 @js.native
 object TestDataGenerator extends js.Object {
+  
   /**
     * Generates a random hex or rgba color string. 
     * @param withAlpha A boolean indicating if the color should have an alpha value or not. if set to true, a rgba value will be returned with an alpha value of 0.5.
@@ -23,6 +23,7 @@ object TestDataGenerator extends js.Object {
     */
   def getColor(): String = js.native
   def getColor(withAlpha: Boolean): String = js.native
+  
   /**
     * Generates random Location objects.
     * @param num The number of locations to generate. If set to one a single Location will be returned. If greater than one and array will be returned.
@@ -33,6 +34,7 @@ object TestDataGenerator extends js.Object {
   def getLocations(num: js.UndefOr[scala.Nothing], bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   def getLocations(num: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   def getLocations(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  
   /**
     * Generates random polygons.
     * @param num The number of polygons to generate. If set to one a single Polygon will be returned. If greater than one and array will be returned.
@@ -51,6 +53,7 @@ object TestDataGenerator extends js.Object {
     options: js.UndefOr[IPolygonOptions],
     addHole: js.UndefOr[Boolean]
   ): typings.bingmaps.Microsoft.Maps.Polygon | js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
+  
   /**
     * Generates random polylines.
     * @param num The number of polylines to generate. If set to one a single Polyline will be returned. If greater than one and array will be returned.
@@ -223,6 +226,7 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  
   /**
     * Generates random pushpins.
     * @param num The number of pushpins to generate. If set to one a single Pushpin will be returned. If greater than one and array will be returned.
@@ -243,4 +247,3 @@ object TestDataGenerator extends js.Object {
   def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
   def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
 }
-

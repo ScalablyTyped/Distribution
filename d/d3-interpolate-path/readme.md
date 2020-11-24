@@ -9,10 +9,10 @@ Interpolates path `d` attribute smoothly when A and B have different number of p
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | d3-interpolate-path |
-| Keywords           | d3, d3-module, d3-interpolate, d3-interpolate-path |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 849048 |
+| Keywords           | d3, d3-module, d3-interpolate, d3-interpolate-path, svg path, path animation, interpolation, canvas path |
+| # releases         | 6 |
+| # dependents       | 19 |
+| # downloads        | 1275142 |
 | # stars            | 0 |
 
 ## Links

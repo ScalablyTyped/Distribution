@@ -3,10 +3,11 @@ package typings.emittery.mod
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Emittery extends js.Object {
+  
   /**
   	Get an async iterator which buffers a tuple of an event name and data each time an event is emitted.
   	Call `return()` on the iterator to remove the subscription.
@@ -36,6 +37,7 @@ trait Emittery extends js.Object {
   	```
   	*/
   def anyEvent(): AsyncIterableIterator[_] = js.native
+  
   /**
   	Bind the given `methodNames`, or all `Emittery` methods if `methodNames` is not defined, into the `target` object.
   	@example
@@ -48,18 +50,21 @@ trait Emittery extends js.Object {
   	*/
   def bindMethods(target: js.Object): Unit = js.native
   def bindMethods(target: js.Object, methodNames: js.Array[String]): Unit = js.native
+  
   /**
   	Clear all event listeners on the instance.
   	If `eventName` is given, only the listeners for that event are cleared.
   	*/
   def clearListeners(): Unit = js.native
   def clearListeners(eventName: EventNames): Unit = js.native
+  
   /**
   	Trigger an event asynchronously, optionally with some data. Listeners are called in the order they were added, but executed concurrently.
   	@returns A promise that resolves when all the event listeners are done. *Done* meaning executed if synchronous or resolved when an async/promise-returning function. You usually wouldn't want to wait for this, but you could for example catch possible errors. If any of the listeners throw/reject, the returned promise will be rejected with the error, but the other listeners will not be affected.
   	*/
   def emit(eventName: EventName): js.Promise[Unit] = js.native
   def emit(eventName: EventName, eventData: js.Any): js.Promise[Unit] = js.native
+  
   /**
   	Same as `emit()`, but it waits for each listener to resolve before triggering the next one. This can be useful if your events depend on each other. Although ideally they should not. Prefer `emit()` whenever possible.
   	If any of the listeners throw/reject, the returned promise will be rejected with the error and the remaining listeners will *not* be called.
@@ -67,6 +72,7 @@ trait Emittery extends js.Object {
   	*/
   def emitSerial(eventName: EventName): js.Promise[Unit] = js.native
   def emitSerial(eventName: EventName, eventData: js.Any): js.Promise[Unit] = js.native
+  
   /**
   	Get an async iterator which buffers data each time an event is emitted.
   	Call `return()` on the iterator to remove the subscription.
@@ -136,11 +142,13 @@ trait Emittery extends js.Object {
   	```
   	*/
   def events(eventName: EventNames): AsyncIterableIterator[_] = js.native
+  
   /**
   	The number of listeners for the `eventName` or all events if not specified.
   	*/
   def listenerCount(): Double = js.native
   def listenerCount(eventName: EventNames): Double = js.native
+  
   /**
   	Remove one or more event subscriptions.
   	@example
@@ -162,10 +170,12 @@ trait Emittery extends js.Object {
   	```
   	*/
   def off(eventName: EventNames, listener: js.Function1[/* eventData */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  
   /**
   	Remove an `onAny` subscription.
   	*/
   def offAny(listener: js.Function2[/* eventName */ EventName, /* eventData */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  
   /**
   	Subscribe to one or more events.
   	Using the same listener multiple times for the same event will result in only one method call per emitted event.
@@ -189,11 +199,13 @@ trait Emittery extends js.Object {
     listener: js.Function1[/* eventData */ ListenerChangedData, Unit]
   ): UnsubscribeFn = js.native
   def on(eventName: EventNames, listener: js.Function1[/* eventData */ js.UndefOr[js.Any], Unit]): UnsubscribeFn = js.native
+  
   /**
   	Subscribe to be notified about any event.
   	@returns A method to unsubscribe.
   	*/
   def onAny(listener: js.Function2[/* eventName */ EventName, /* eventData */ js.UndefOr[js.Any], _]): UnsubscribeFn = js.native
+  
   /**
   	Subscribe to one or more events only once. It will be unsubscribed after the first
   	event.
@@ -218,4 +230,3 @@ trait Emittery extends js.Object {
   ): js.Promise[ListenerChangedData] = js.native
   def once(eventName: EventNames): js.Promise[_] = js.native
 }
-

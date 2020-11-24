@@ -4,7 +4,7 @@ import typings.std.CanvasGradient
 import typings.std.CanvasPattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextStyle Object contains information to decorate a Text objects.
@@ -18,54 +18,63 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextStyle extends js.Object {
+  
   /**
     * Alignment for multiline text ('left', 'center' or 'right'), does not affect single line text
     *
     * @member {string}
     */
   var align: String = js.native
+  
   /**
     * Indicates if lines can be wrapped within words, it needs wordWrap to be set to true
     *
     * @member {boolean}
     */
   var breakWords: Boolean = js.native
+  
   /**
     * Set a drop shadow for the text
     *
     * @member {boolean}
     */
   var dropShadow: Boolean = js.native
+  
   /**
     * Set alpha for the drop shadow
     *
     * @member {number}
     */
   var dropShadowAlpha: Double = js.native
+  
   /**
     * Set a angle of the drop shadow
     *
     * @member {number}
     */
   var dropShadowAngle: Double = js.native
+  
   /**
     * Set a shadow blur radius
     *
     * @member {number}
     */
   var dropShadowBlur: Double = js.native
+  
   /**
     * A fill style to be used on the dropshadow e.g 'red', '#00FF00'
     *
     * @member {string|number}
     */
   var dropShadowColor: String | Double = js.native
+  
   /**
     * Set a distance of the drop shadow
     *
     * @member {number}
     */
   var dropShadowDistance: Double = js.native
+  
   /**
     * A canvas fillstyle that will be used on the text e.g 'red', '#00FF00'.
     * Can be an array to create a gradient eg ['#000000','#FFFFFF']
@@ -74,6 +83,7 @@ trait TextStyle extends js.Object {
     * @member {string|string[]|number|number[]|CanvasGradient|CanvasPattern}
     */
   var fill: String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern = js.native
+  
   /**
     * If fill is an array of colours to create a gradient, this array can set the stop points
     * (numbers between 0 and 1) for the color, overriding the default behaviour of evenly spacing them.
@@ -81,6 +91,7 @@ trait TextStyle extends js.Object {
     * @member {number[]}
     */
   var fillGradientStops: js.Array[Double] = js.native
+  
   /**
     * If fill is an array of colours to create a gradient, this can change the type/direction of the gradient.
     * See {@link PIXI.TEXT_GRADIENT}
@@ -88,12 +99,14 @@ trait TextStyle extends js.Object {
     * @member {number}
     */
   var fillGradientType: Double = js.native
+  
   /**
     * The font family
     *
     * @member {string|string[]}
     */
   var fontFamily: String | js.Array[String] = js.native
+  
   /**
     * The font size
     * (as a number it converts to px, but as a string, equivalents are '26px','20pt','160%' or '1.6em')
@@ -101,6 +114,7 @@ trait TextStyle extends js.Object {
     * @member {number|string}
     */
   var fontSize: Double | String = js.native
+  
   /**
     * The font style
     * ('normal', 'italic' or 'oblique')
@@ -108,6 +122,7 @@ trait TextStyle extends js.Object {
     * @member {string}
     */
   var fontStyle: String = js.native
+  
   /**
     * The font variant
     * ('normal' or 'small-caps')
@@ -115,6 +130,7 @@ trait TextStyle extends js.Object {
     * @member {string}
     */
   var fontVariant: String = js.native
+  
   /**
     * The font weight
     * ('normal', 'bold', 'bolder', 'lighter' and '100', '200', '300', '400', '500', '600', '700', 800' or '900')
@@ -122,24 +138,28 @@ trait TextStyle extends js.Object {
     * @member {string}
     */
   var fontWeight: String = js.native
+  
   /**
     * The space between lines
     *
     * @member {number}
     */
   var leading: Double = js.native
+  
   /**
     * The amount of spacing between letters, default is 0
     *
     * @member {number}
     */
   var letterSpacing: Double = js.native
+  
   /**
     * The line height, a number that represents the vertical space that a letter uses
     *
     * @member {number}
     */
   var lineHeight: Double = js.native
+  
   /**
     * The lineJoin property sets the type of corner created, it can resolve spiked text issues.
     * Default is 'miter' (creates a sharp corner).
@@ -147,6 +167,7 @@ trait TextStyle extends js.Object {
     * @member {string}
     */
   var lineJoin: String = js.native
+  
   /**
     * The miter limit to use when using the 'miter' lineJoin mode
     * This can reduce or increase the spikiness of rendered text.
@@ -154,6 +175,7 @@ trait TextStyle extends js.Object {
     * @member {number}
     */
   var miterLimit: Double = js.native
+  
   /**
     * Occasionally some fonts are cropped. Adding some padding will prevent this from happening
     * by adding padding to all sides of the text.
@@ -161,6 +183,12 @@ trait TextStyle extends js.Object {
     * @member {number}
     */
   var padding: Double = js.native
+  
+  /**
+    * Resets all properties to the defaults specified in TextStyle.prototype._default
+    */
+  def reset(): Unit = js.native
+  
   /**
     * A canvas fillstyle that will be used on the text stroke
     * e.g 'blue', '#FCFF00'
@@ -168,6 +196,7 @@ trait TextStyle extends js.Object {
     * @member {string|number}
     */
   var stroke: String | Double = js.native
+  
   /**
     * A number that represents the thickness of the stroke.
     * Default is 0 (no stroke)
@@ -175,18 +204,28 @@ trait TextStyle extends js.Object {
     * @member {number}
     */
   var strokeThickness: Double = js.native
+  
   /**
     * The baseline of the text that is rendered.
     *
     * @member {string}
     */
   var textBaseline: String = js.native
+  
+  /**
+    * Generates a font style string to use for `TextMetrics.measureFont()`.
+    *
+    * @return {string} Font style string, for passing to `TextMetrics.measureFont()`
+    */
+  def toFontString(): String = js.native
+  
   /**
     * Trim transparent borders
     *
     * @member {boolean}
     */
   var trim: Boolean = js.native
+  
   /**
     * How newlines and spaces should be handled.
     * Default is 'pre' (preserve, preserve).
@@ -200,31 +239,23 @@ trait TextStyle extends js.Object {
     * @member {string}
     */
   var whiteSpace: String = js.native
+  
   /**
     * Indicates if word wrap should be used
     *
     * @member {boolean}
     */
   var wordWrap: Boolean = js.native
+  
   /**
     * The width at which text will wrap, it needs wordWrap to be set to true
     *
     * @member {number}
     */
   var wordWrapWidth: Double = js.native
-  /**
-    * Resets all properties to the defaults specified in TextStyle.prototype._default
-    */
-  def reset(): Unit = js.native
-  /**
-    * Generates a font style string to use for `TextMetrics.measureFont()`.
-    *
-    * @return {string} Font style string, for passing to `TextMetrics.measureFont()`
-    */
-  def toFontString(): String = js.native
 }
-
 object TextStyle {
+  
   @scala.inline
   def apply(
     align: String,
@@ -262,86 +293,122 @@ object TextStyle {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], breakWords = breakWords.asInstanceOf[js.Any], dropShadow = dropShadow.asInstanceOf[js.Any], dropShadowAlpha = dropShadowAlpha.asInstanceOf[js.Any], dropShadowAngle = dropShadowAngle.asInstanceOf[js.Any], dropShadowBlur = dropShadowBlur.asInstanceOf[js.Any], dropShadowColor = dropShadowColor.asInstanceOf[js.Any], dropShadowDistance = dropShadowDistance.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillGradientStops = fillGradientStops.asInstanceOf[js.Any], fillGradientType = fillGradientType.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], fontVariant = fontVariant.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], leading = leading.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineJoin = lineJoin.asInstanceOf[js.Any], miterLimit = miterLimit.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), stroke = stroke.asInstanceOf[js.Any], strokeThickness = strokeThickness.asInstanceOf[js.Any], textBaseline = textBaseline.asInstanceOf[js.Any], toFontString = js.Any.fromFunction0(toFontString), trim = trim.asInstanceOf[js.Any], whiteSpace = whiteSpace.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wordWrapWidth = wordWrapWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyle]
   }
+  
   @scala.inline
   implicit class TextStyleOps[Self <: TextStyle] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBreakWords(value: Boolean): Self = this.set("breakWords", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropShadow(value: Boolean): Self = this.set("dropShadow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropShadowAlpha(value: Double): Self = this.set("dropShadowAlpha", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropShadowAngle(value: Double): Self = this.set("dropShadowAngle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropShadowBlur(value: Double): Self = this.set("dropShadowBlur", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropShadowColor(value: String | Double): Self = this.set("dropShadowColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropShadowDistance(value: Double): Self = this.set("dropShadowDistance", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFillVarargs(value: (Double | String)*): Self = this.set("fill", js.Array(value :_*))
+    
     @scala.inline
     def setFill(value: String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern): Self = this.set("fill", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFillGradientStopsVarargs(value: Double*): Self = this.set("fillGradientStops", js.Array(value :_*))
+    
     @scala.inline
     def setFillGradientStops(value: js.Array[Double]): Self = this.set("fillGradientStops", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFillGradientType(value: Double): Self = this.set("fillGradientType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontFamilyVarargs(value: String*): Self = this.set("fontFamily", js.Array(value :_*))
+    
     @scala.inline
     def setFontFamily(value: String | js.Array[String]): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontSize(value: Double | String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontVariant(value: String): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLeading(value: Double): Self = this.set("leading", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLineJoin(value: String): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setStroke(value: String | Double): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStrokeThickness(value: Double): Self = this.set("strokeThickness", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextBaseline(value: String): Self = this.set("textBaseline", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setToFontString(value: () => String): Self = this.set("toFontString", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWhiteSpace(value: String): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWordWrap(value: Boolean): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWordWrapWidth(value: Double): Self = this.set("wordWrapWidth", value.asInstanceOf[js.Any])
   }
-  
 }
-

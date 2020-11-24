@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Drive
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Permission extends js.Object
-
 /**
   * An enum representing the permissions granted to users who can access a file or folder, besides
   * any individual users who have been explicitly given access. These properties can be accessed from
@@ -20,6 +19,7 @@ sealed trait Permission extends js.Object
 @JSGlobal("GoogleAppsScript.Drive.Permission")
 @js.native
 object Permission extends js.Object {
+  
   @js.native
   sealed trait COMMENT extends Permission
   
@@ -37,6 +37,4 @@ object Permission extends js.Object {
   
   @js.native
   sealed trait VIEW extends Permission
-  
 }
-

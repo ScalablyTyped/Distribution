@@ -10,9 +10,9 @@ the Javascript SIP library
 | ------------------ | :-------------: |
 | Full name          | jssip |
 | Keywords           | sip, websocket, webrtc, node, browser, library |
-| # releases         | 31 |
-| # dependents       | 14 |
-| # downloads        | 205098 |
+| # releases         | 33 |
+| # dependents       | 19 |
+| # downloads        | 372467 |
 | # stars            | 8 |
 
 ## Links

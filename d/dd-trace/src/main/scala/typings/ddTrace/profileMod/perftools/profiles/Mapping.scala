@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Mapping. */
 @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping")
@@ -18,47 +18,58 @@ import scala.scalajs.js.annotation._
   */
 class Mapping () extends IMapping {
   def this(properties: IMapping) = this()
+  
   /** Mapping buildId. */
   @JSName("buildId")
   var buildId_Mapping: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /** Mapping fileOffset. */
   @JSName("fileOffset")
   var fileOffset_Mapping: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /** Mapping filename. */
   @JSName("filename")
   var filename_Mapping: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /** Mapping hasFilenames. */
   @JSName("hasFilenames")
   var hasFilenames_Mapping: Boolean = js.native
+  
   /** Mapping hasFunctions. */
   @JSName("hasFunctions")
   var hasFunctions_Mapping: Boolean = js.native
+  
   /** Mapping hasInlineFrames. */
   @JSName("hasInlineFrames")
   var hasInlineFrames_Mapping: Boolean = js.native
+  
   /** Mapping hasLineNumbers. */
   @JSName("hasLineNumbers")
   var hasLineNumbers_Mapping: Boolean = js.native
+  
   /** Mapping id. */
   @JSName("id")
   var id_Mapping: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /** Mapping memoryLimit. */
   @JSName("memoryLimit")
   var memoryLimit_Mapping: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /** Mapping memoryStart. */
   @JSName("memoryStart")
   var memoryStart_Mapping: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /**
     * Converts this Mapping to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping")
 @js.native
 object Mapping extends js.Object {
+  
   /**
     * Creates a new Mapping instance using the specified properties.
     * @param [properties] Properties to set
@@ -66,6 +77,7 @@ object Mapping extends js.Object {
     */
   def create(): Mapping = js.native
   def create(properties: IMapping): Mapping = js.native
+  
   /**
     * Decodes a Mapping message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -78,6 +90,7 @@ object Mapping extends js.Object {
   def decode(reader: Reader, length: Double): Mapping = js.native
   def decode(reader: Uint8Array): Mapping = js.native
   def decode(reader: Uint8Array, length: Double): Mapping = js.native
+  
   /**
     * Decodes a Mapping message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -87,6 +100,7 @@ object Mapping extends js.Object {
     */
   def decodeDelimited(reader: Reader): Mapping = js.native
   def decodeDelimited(reader: Uint8Array): Mapping = js.native
+  
   /**
     * Encodes the specified Mapping message. Does not implicitly {@link perftools.profiles.Mapping.verify|verify} messages.
     * @param message Mapping message or plain object to encode
@@ -95,6 +109,7 @@ object Mapping extends js.Object {
     */
   def encode(message: IMapping): Writer = js.native
   def encode(message: IMapping, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified Mapping message, length delimited. Does not implicitly {@link perftools.profiles.Mapping.verify|verify} messages.
     * @param message Mapping message or plain object to encode
@@ -103,12 +118,14 @@ object Mapping extends js.Object {
     */
   def encodeDelimited(message: IMapping): Writer = js.native
   def encodeDelimited(message: IMapping, writer: Writer): Writer = js.native
+  
   /**
     * Creates a Mapping message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Mapping
     */
   def fromObject(`object`: StringDictionary[js.Any]): Mapping = js.native
+  
   /**
     * Creates a plain object from a Mapping message. Also converts values to other types if specified.
     * @param message Mapping
@@ -117,6 +134,7 @@ object Mapping extends js.Object {
     */
   def toObject(message: Mapping): StringDictionary[js.Any] = js.native
   def toObject(message: Mapping, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a Mapping message.
     * @param message Plain object to verify
@@ -124,4 +142,3 @@ object Mapping extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

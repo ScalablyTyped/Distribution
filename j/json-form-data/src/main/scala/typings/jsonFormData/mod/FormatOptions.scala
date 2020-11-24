@@ -3,7 +3,7 @@ package typings.jsonFormData.mod
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Formatting options for modifying the final generated FormData object.
@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FormatOptions extends js.Object {
+  
   /**
     * Include null values in output (default: `false`).
     *
@@ -43,11 +44,13 @@ trait FormatOptions extends js.Object {
     *
     */
   var includeNullValues: js.UndefOr[Boolean] = js.native
+  
   /**
     * Existing form data which values will be appended to  (default: `new FormData()`).
     * This can be used to support environments that do not have a global FormData object.
     */
   var initialFormData: js.UndefOr[InitialFormData] = js.native
+  
   /**
     * Modify outmost leaf values before calling formData.append. Default behaviour
     * is to output boolean values as '1'/'0' (true/false) and all other values
@@ -70,6 +73,7 @@ trait FormatOptions extends js.Object {
     *
     */
   var mapping: js.UndefOr[js.Function1[/* value */ ValidJSONValue, String | Blob]] = js.native
+  
   /**
     * Include index values in arrays (default: `true`).
     *
@@ -92,41 +96,51 @@ trait FormatOptions extends js.Object {
     */
   var showLeafArrayIndexes: js.UndefOr[Boolean] = js.native
 }
-
 object FormatOptions {
+  
   @scala.inline
   def apply(): FormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatOptions]
   }
+  
   @scala.inline
   implicit class FormatOptionsOps[Self <: FormatOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIncludeNullValues(value: Boolean): Self = this.set("includeNullValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIncludeNullValues: Self = this.set("includeNullValues", js.undefined)
+    
     @scala.inline
     def setInitialFormData(value: InitialFormData): Self = this.set("initialFormData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInitialFormData: Self = this.set("initialFormData", js.undefined)
+    
     @scala.inline
     def setMapping(value: /* value */ ValidJSONValue => String | Blob): Self = this.set("mapping", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteMapping: Self = this.set("mapping", js.undefined)
+    
     @scala.inline
     def setShowLeafArrayIndexes(value: Boolean): Self = this.set("showLeafArrayIndexes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowLeafArrayIndexes: Self = this.set("showLeafArrayIndexes", js.undefined)
   }
-  
 }
-

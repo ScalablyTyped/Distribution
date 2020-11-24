@@ -2,11 +2,11 @@ package typings.qRetry.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("q-retry", "try")
 @js.native
 object `try` extends js.Object {
+  
   def apply[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): typings.q.mod.Promise[T] = js.native
 }
-

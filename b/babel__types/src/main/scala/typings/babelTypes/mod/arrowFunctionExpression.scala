@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "arrowFunctionExpression")
 @js.native
 object arrowFunctionExpression extends js.Object {
+  
   def apply(
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
@@ -23,4 +24,3 @@ object arrowFunctionExpression extends js.Object {
     async: Boolean
   ): ArrowFunctionExpression_ = js.native
 }
-

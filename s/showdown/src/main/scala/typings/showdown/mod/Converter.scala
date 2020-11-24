@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Showdown Converter prototype.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Converter extends js.Object {
+  
   def addExtension(extension: js.Array[ShowdownExtension]): Unit = js.native
   def addExtension(extension: js.Array[ShowdownExtension], name: String): Unit = js.native
   /**
@@ -25,18 +26,21 @@ trait Converter extends js.Object {
   def addExtension(extension: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension], name: String): Unit = js.native
   def addExtension(extension: ShowdownExtension): Unit = js.native
   def addExtension(extension: ShowdownExtension, name: String): Unit = js.native
+  
   /**
     * Get all extensions.
     *
     * @return all extensions.
     */
   def getAllExtensions(): ConverterExtensions = js.native
+  
   /**
     * Get the "local" currently set flavor of this converter.
     *
     * @returns Returns string flavor name.
     */
   def getFlavor(): Flavor = js.native
+  
   /**
     * Get the metadata of the previously parsed document.
     * 
@@ -45,12 +49,14 @@ trait Converter extends js.Object {
     */
   def getMetadata(): String | Metadata = js.native
   def getMetadata(raw: Boolean): String | Metadata = js.native
+  
   /**
     * Get the metadata format of the previously parsed document.
     * 
     * @returns Returns the metadata format.
     */
   def getMetadataFormat(): String = js.native
+  
   /**
     * Get the option of this Converter instance.
     *
@@ -58,12 +64,14 @@ trait Converter extends js.Object {
     * @returns Returns the value of the given `key`.
     */
   def getOption(key: String): js.Any = js.native
+  
   /**
     * Get the options of this Converter instance.
     * 
     * @returns Returns the current convertor options object.
     */
   def getOptions(): ShowdownOptions = js.native
+  
   /**
     * Listen to an event.
     *
@@ -83,6 +91,7 @@ trait Converter extends js.Object {
     * ```
     */
   def listen(name: String, callback: EventListener): Converter = js.native
+  
   /**
     * Converts a markdown string into HTML string.
     * 
@@ -90,6 +99,7 @@ trait Converter extends js.Object {
     * @return The output HTML.
     */
   def makeHtml(text: String): String = js.native
+  
   /**
     * Converts an HTML string into a markdown string.
     *
@@ -99,6 +109,7 @@ trait Converter extends js.Object {
     */
   def makeMarkdown(src: String): String = js.native
   def makeMarkdown(src: String, HTMLParser: HTMLDocument): String = js.native
+  
   /**
     * Remove an extension from THIS converter.
     *
@@ -108,12 +119,14 @@ trait Converter extends js.Object {
     */
   def removeExtension(extensions: js.Array[ShowdownExtension]): Unit = js.native
   def removeExtension(extensions: ShowdownExtension): Unit = js.native
+  
   /**
     * Set a "local" flavor for THIS Converter instance.
     *
     * @param flavor - The flavor name.
     */
   def setFlavor(name: Flavor): Unit = js.native
+  
   /**
     * Setting a "local" option only affects the specified Converter object.
     *
@@ -121,6 +134,7 @@ trait Converter extends js.Object {
     * @param value - The value of the option.
     */
   def setOption(key: String, value: js.Any): Unit = js.native
+  
   /**
     * Use a global registered extension with THIS converter.
     *
@@ -128,11 +142,9 @@ trait Converter extends js.Object {
     */
   def useExtension(extensionName: String): Unit = js.native
 }
-
 /**
   * Constructor function for a Converter.
   */
 @JSImport("showdown", "Converter")
 @js.native
 object Converter extends TopLevel[ConverterStatic]
-

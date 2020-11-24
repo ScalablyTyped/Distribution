@@ -2,10 +2,11 @@ package typings.d3Geo.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Object {
+  
   /**
     * Renders the given object, which may be any GeoJSON feature or geometry object:
     *
@@ -35,6 +36,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * @param object An object to be rendered.
     */
   def apply(`object`: DatumObject, args: js.Any*): String | Null = js.native
+  
   /**
     * Returns the projected planar area (typically in square pixels) for the specified GeoJSON object.
     * Point, MultiPoint, LineString and MultiLineString geometries have zero area. For Polygon and MultiPolygon geometries,
@@ -44,6 +46,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * @param object An object for which the area is to be calculated.
     */
   def area(`object`: DatumObject): Double = js.native
+  
   /**
     * Returns the projected planar bounding box (typically in pixels) for the specified GeoJSON object.
     * The bounding box is represented by a two-dimensional array: [[x₀, y₀], [x₁, y₁]], where x₀ is the minimum x-coordinate, y₀ is the minimum y-coordinate,
@@ -56,6 +59,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * @param object An object for which the bounds are to be calculated.
     */
   def bounds(`object`: DatumObject): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  
   /**
     * Returns the projected planar centroid (typically in pixels) for the specified GeoJSON object.
     * This is handy for, say, labeling state or county boundaries, or displaying a symbol map.
@@ -65,6 +69,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * @param object An object for which the centroid is to be calculated.
     */
   def centroid(`object`: DatumObject): js.Tuple2[Double, Double] = js.native
+  
   /**
     * Set the current rendering context to null and return the path generator.
     * The path generator will return an SVG path string;
@@ -86,6 +91,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * Use the generic to cast the return type of the rendering context, if it is known for a specific application.
     */
   def context[C /* <: GeoContext | Null */](): C = js.native
+  
   /**
     * Returns the projected planar length (typically in pixels) for the specified GeoJSON object.
     * Point and MultiPoint geometries have zero length. For Polygon and MultiPolygon geometries, this method computes the summed length of all rings.
@@ -95,6 +101,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * @param object An object for which the measure is to be calculated.
     */
   def measure(`object`: DatumObject): Double = js.native
+  
   /**
     * Returns the current radius or radius accessor used to determine the radius for the display of Point and MultiPoint geometries.
     * The default is a constant radius of 4.5.
@@ -119,6 +126,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     * @param value Fixed radius value.
     */
   def pointRadius(value: Double): this.type = js.native
+  
   /**
     * Set the projection to the identity projection.
     *
@@ -156,4 +164,3 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     */
   def projection[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
 }
-

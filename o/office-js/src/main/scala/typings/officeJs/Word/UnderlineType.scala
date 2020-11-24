@@ -2,11 +2,10 @@ package typings.officeJs.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UnderlineType extends js.Object
-
 /**
   *
   * The supported styles for underline format.
@@ -16,6 +15,7 @@ sealed trait UnderlineType extends js.Object
 @JSGlobal("Word.UnderlineType")
 @js.native
 object UnderlineType extends js.Object {
+  
   /**
     * A single dash underline.
     *
@@ -124,6 +124,4 @@ object UnderlineType extends js.Object {
     */
   @js.native
   sealed trait word extends UnderlineType
-  
 }
-

@@ -10,9 +10,9 @@ Round, flat, designer-friendly pseudo-3D engine
 | ------------------ | :-------------: |
 | Full name          | zdog |
 | Keywords           | 3D, canvas, svg |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 15815 |
+| # releases         | 9 |
+| # dependents       | 5 |
+| # downloads        | 36164 |
 | # stars            | 1 |
 
 ## Links

@@ -6,10 +6,9 @@ import typings.std.TouchEvent
 import typings.std.TouchEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableTouchEvent
   extends Instantiable1[/* type */ String, TouchEvent]
      with Instantiable2[/* type */ String, /* eventInitDict */ TouchEventInit, TouchEvent]
-

@@ -25,7 +25,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines the basic functionality for an object in the hierarchy of sub documents of a {@link OfficeDatabaseDocument} .
@@ -44,8 +44,8 @@ trait DefinitionContent
      with XContentCreator
      with XChild
      with XHierarchicalName
-
 object DefinitionContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -85,4 +85,3 @@ object DefinitionContent {
     __obj.asInstanceOf[DefinitionContent]
   }
 }
-

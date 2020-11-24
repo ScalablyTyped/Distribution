@@ -4,11 +4,12 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for reading messages from the message store. */
 @js.native
 trait ChatMessageReader extends js.Object {
+  
   /**
     * Returns a batch list of chat messages from the message store.
     * @return An asynchronous operation that returns a list of chat messages upon successful completion.
@@ -21,4 +22,3 @@ trait ChatMessageReader extends js.Object {
     */
   def readBatchAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
 }
-

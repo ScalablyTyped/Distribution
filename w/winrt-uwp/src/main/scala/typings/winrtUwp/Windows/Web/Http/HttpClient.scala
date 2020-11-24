@@ -7,21 +7,25 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpRequestHeaderCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sends HTTP requests and receives HTTP responses from a resource identified by a URI. */
 @js.native
 trait HttpClient extends js.Object {
-  /** Gets a collection of headers that should be sent with each request. */
-  var defaultRequestHeaders: HttpRequestHeaderCollection = js.native
+  
   /** Closes the HttpClient instance and releases allocated resources. */
   def close(): Unit = js.native
+  
+  /** Gets a collection of headers that should be sent with each request. */
+  var defaultRequestHeaders: HttpRequestHeaderCollection = js.native
+  
   /**
     * Send a DELETE request to the specified Uri as an asynchronous operation.
     * @param uri The Uri the request is sent to.
     * @return The object representing the asynchronous operation.
     */
   def deleteAsync(uri: Uri): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
+  
   /**
     * Send a GET request to the specified Uri as an asynchronous operation.
     * @param uri The Uri to which the request is to be sent.
@@ -35,24 +39,28 @@ trait HttpClient extends js.Object {
     * @return The object representing the asynchronous operation.
     */
   def getAsync(uri: Uri, completionOption: HttpCompletionOption): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
+  
   /**
     * Send a GET request to the specified Uri and return the response body as a buffer in an asynchronous operation.
     * @param uri The Uri the request is sent to.
     * @return The object representing the asynchronous operation.
     */
   def getBufferAsync(uri: Uri): IPromiseWithIAsyncOperationWithProgress[IBuffer, HttpProgress] = js.native
+  
   /**
     * Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.
     * @param uri The Uri the request is sent to.
     * @return The object representing the asynchronous operation.
     */
   def getInputStreamAsync(uri: Uri): IPromiseWithIAsyncOperationWithProgress[IInputStream, HttpProgress] = js.native
+  
   /**
     * Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.
     * @param uri The Uri the request is sent to.
     * @return The object representing the asynchronous operation.
     */
   def getStringAsync(uri: Uri): IPromiseWithIAsyncOperationWithProgress[String, HttpProgress] = js.native
+  
   /**
     * Send a POST request to the specified Uri as an asynchronous operation.
     * @param uri The Uri the request is sent to.
@@ -60,6 +68,7 @@ trait HttpClient extends js.Object {
     * @return The object representing the asynchronous operation.
     */
   def postAsync(uri: Uri, content: IHttpContent): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
+  
   /**
     * Send a PUT request to the specified Uri as an asynchronous operation.
     * @param uri The Uri the request is sent to.
@@ -67,6 +76,7 @@ trait HttpClient extends js.Object {
     * @return The object representing the asynchronous operation.
     */
   def putAsync(uri: Uri, content: IHttpContent): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
+  
   /**
     * Send an HTTP request as an asynchronous operation.
     * @param request The HTTP request message to send.
@@ -81,4 +91,3 @@ trait HttpClient extends js.Object {
     */
   def sendRequestAsync(request: HttpRequestMessage, completionOption: HttpCompletionOption): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
 }
-

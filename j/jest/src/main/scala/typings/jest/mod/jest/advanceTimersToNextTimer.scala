@@ -2,11 +2,12 @@ package typings.jest.mod.jest
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest", "jest.advanceTimersToNextTimer")
 @js.native
 object advanceTimersToNextTimer extends js.Object {
+  
   /**
     * Advances all timers by the needed milliseconds so that only the next
     * timeouts/intervals will run. Optionally, you can provide steps, so it
@@ -15,4 +16,3 @@ object advanceTimersToNextTimer extends js.Object {
   def apply(): Unit = js.native
   def apply(step: Double): Unit = js.native
 }
-

@@ -3,9 +3,82 @@ package typings.parse
 import typings.parse.mod.global.Parse.Schema.TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseStrings {
+  
+  @scala.inline
+  def Array: Array = "Array".asInstanceOf[Array]
+  
+  @scala.inline
+  def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  
+  @scala.inline
+  def Date: Date = "Date".asInstanceOf[Date]
+  
+  @scala.inline
+  def File: File = "File".asInstanceOf[File]
+  
+  @scala.inline
+  def GeoPoint: GeoPoint = "GeoPoint".asInstanceOf[GeoPoint]
+  
+  @scala.inline
+  def Number: Number = "Number".asInstanceOf[Number]
+  
+  @scala.inline
+  def Object: Object = "Object".asInstanceOf[Object]
+  
+  @scala.inline
+  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
+  
+  @scala.inline
+  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
+  
+  @scala.inline
+  def Relation: Relation = "Relation".asInstanceOf[Relation]
+  
+  @scala.inline
+  def String: String = "String".asInstanceOf[String]
+  
+  @scala.inline
+  def ToJSON: ToJSON = "ToJSON".asInstanceOf[ToJSON]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  
+  @scala.inline
+  def createdAt: createdAt = "createdAt".asInstanceOf[createdAt]
+  
+  @scala.inline
+  def define: define = "define".asInstanceOf[define]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def enter: enter = "enter".asInstanceOf[enter]
+  
+  @scala.inline
+  def leave: leave = "leave".asInstanceOf[leave]
+  
+  @scala.inline
+  def objectId: objectId = "objectId".asInstanceOf[objectId]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def run: run = "run".asInstanceOf[run]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def updatedAt: updatedAt = "updatedAt".asInstanceOf[updatedAt]
+  
   @js.native
   sealed trait Array extends TYPE
   
@@ -77,54 +150,4 @@ object parseStrings {
   
   @js.native
   sealed trait updatedAt extends js.Object
-  
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
-  @scala.inline
-  def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
-  @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
-  @scala.inline
-  def GeoPoint: GeoPoint = "GeoPoint".asInstanceOf[GeoPoint]
-  @scala.inline
-  def Number: Number = "Number".asInstanceOf[Number]
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
-  @scala.inline
-  def Relation: Relation = "Relation".asInstanceOf[Relation]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def ToJSON: ToJSON = "ToJSON".asInstanceOf[ToJSON]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def createdAt: createdAt = "createdAt".asInstanceOf[createdAt]
-  @scala.inline
-  def define: define = "define".asInstanceOf[define]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def enter: enter = "enter".asInstanceOf[enter]
-  @scala.inline
-  def leave: leave = "leave".asInstanceOf[leave]
-  @scala.inline
-  def objectId: objectId = "objectId".asInstanceOf[objectId]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def updatedAt: updatedAt = "updatedAt".asInstanceOf[updatedAt]
 }
-

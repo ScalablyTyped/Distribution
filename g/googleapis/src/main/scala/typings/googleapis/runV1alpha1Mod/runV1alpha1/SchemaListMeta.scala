@@ -2,7 +2,7 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListMeta describes metadata that synthetic resources must have, including
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaListMeta extends js.Object {
+  
   /**
     * continue may be set if the user set a limit on the number of items
     * returned, and indicates that the server has more data available. The
@@ -22,6 +23,7 @@ trait SchemaListMeta extends js.Object {
     * the first response.
     */
   var continue: js.UndefOr[String] = js.native
+  
   /**
     * String that identifies the server&#39;s internal version of this object
     * that can be used by clients to determine when objects have changed. Value
@@ -31,43 +33,52 @@ trait SchemaListMeta extends js.Object {
     * +optional
     */
   var resourceVersion: js.UndefOr[String] = js.native
+  
   /**
     * SelfLink is a URL representing this object. Populated by the system.
     * Read-only. +optional
     */
   var selfLink: js.UndefOr[String] = js.native
 }
-
 object SchemaListMeta {
+  
   @scala.inline
   def apply(): SchemaListMeta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListMeta]
   }
+  
   @scala.inline
   implicit class SchemaListMetaOps[Self <: SchemaListMeta] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContinue(value: String): Self = this.set("continue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteContinue: Self = this.set("continue", js.undefined)
+    
     @scala.inline
     def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResourceVersion: Self = this.set("resourceVersion", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
   }
-  
 }
-

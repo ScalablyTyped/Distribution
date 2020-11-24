@@ -22,15 +22,12 @@ import typings.shelljsExecProxy.shelljsExecProxyStrings.`-c`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[k: string] : shelljs-exec-proxy.shelljs-exec-proxy.Exec} & { readonly head :shelljs.shelljs.HeadFunction, readonly exit (): never, readonly exit (code : number): never,  readonly env :node.process.<global>.NodeJS.ProcessEnv,  readonly popd :shelljs.shelljs.PopDirFunction,  readonly grep :shelljs.shelljs.GrepFunction,  readonly pushd :shelljs.shelljs.PushDirFunction,  readonly sort :shelljs.shelljs.SortFunction,  readonly sed :shelljs.shelljs.SedFunction,  readonly chmod :shelljs.shelljs.ChmodFunction, readonly error (): shelljs.shelljs.ShellString, readonly which (command : string): shelljs.shelljs.ShellString,  readonly mv :shelljs.shelljs.MoveFunction,  readonly touch :shelljs.shelljs.TouchFunction,  readonly uniq :shelljs.shelljs.UniqFunction,  readonly ls :shelljs.shelljs.ListFunction,  readonly ln :shelljs.shelljs.LinkFunction,  readonly echo :shelljs.shelljs.EchoFunction,  readonly rm :shelljs.shelljs.RemoveFunction,  readonly find :shelljs.shelljs.FindFunction,  readonly cat :shelljs.shelljs.CatFunction,  readonly dirs :shelljs.shelljs.DirsFunction,  readonly mkdir :shelljs.shelljs.MkdirFunction, readonly tempdir (): shelljs.shelljs.ShellString,  readonly tail :shelljs.shelljs.TailFunction,  readonly exec :shelljs.shelljs.ExecFunction,  readonly cp :shelljs.shelljs.CopyFunction,  readonly ShellString :shelljs.shelljs.ShellStringConstructor, readonly test (option : shelljs.shelljs.TestOptions, path : string): boolean,  readonly config :shelljs.shelljs.ShellConfig, readonly set (options : string): void, readonly cd (): shelljs.shelljs.ShellString, readonly cd (dir : string): shelljs.shelljs.ShellString, readonly pwd (): shelljs.shelljs.ShellString} */
 @js.native
 trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
-  @JSName("ShellString")
-  val ShellString_Original: ShellStringConstructor = js.native
-  val config: ShellConfig = js.native
-  val env: ProcessEnv = js.native
+  
   /**
     * Wraps a string (or array) value. This has all the string (or array) methods,
     * but also exposes extra methods: `.to()`, `.toEnd()`, and all the pipe-able
@@ -47,6 +44,9 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   def ShellString(value: String): typings.shelljs.mod.ShellString = js.native
   def ShellString(value: js.Array[String]): ShellArray = js.native
+  @JSName("ShellString")
+  val ShellString_Original: ShellStringConstructor = js.native
+  
   def cat(files: String*): ShellString = js.native
   /**
     * Returns a string containing the given file, or a concatenated string
@@ -59,8 +59,10 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     *         (a new line character is introduced between each file).
     */
   def cat(files: js.Array[String]): ShellString = js.native
+  
   def cd(): ShellString = js.native
   def cd(dir: String): ShellString = js.native
+  
   /**
     * Alters the permissions of a file or directory by either specifying the absolute
     * permissions in octal form or expressing the changes in symbols.
@@ -97,6 +99,9 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   def chmod(options: String, mode: String, file: String): ShellString = js.native
   def chmod(options: String, mode: Double, file: String): ShellString = js.native
+  
+  val config: ShellConfig = js.native
+  
   /**
     * Copies files. The wildcard `*` is accepted.
     *
@@ -122,6 +127,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   def cp(source: String, dest: String): ShellString = js.native
   def cp(source: js.Array[String], dest: String): ShellString = js.native
+  
   /**
     * Displays the list of currently remembered directories.
     *
@@ -160,6 +166,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   @JSName("dirs")
   def dirs_c(options: `-c`): ShellArray = js.native
+  
   /**
     * Prints string to stdout, and returns string with additional utility methods like .to().
     *
@@ -177,7 +184,11 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @return     Returns the string that was passed as argument.
     */
   def echo(text: String*): ShellString = js.native
+  
+  val env: ProcessEnv = js.native
+  
   def error(): ShellString = js.native
+  
   /**
     * Executes the given command synchronously.
     *
@@ -227,8 +238,10 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @param callback Receives code and output asynchronously.
     */
   def exec(command: String, options: ExecOptions, callback: ExecCallback): ChildProcess = js.native
+  
   def exit(): scala.Nothing = js.native
   def exit(code: Double): scala.Nothing = js.native
+  
   def find(path: String*): ShellArray = js.native
   /**
     * Returns array of all files (however deep) in the given paths.
@@ -237,6 +250,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @return     An array of all files (however deep) in the given path(s).
     */
   def find(path: js.Array[String]): ShellArray = js.native
+  
   def grep(options: String, regex_filter: String, files: String*): ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
@@ -265,10 +279,12 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   def grep(regex_filter: String, files: js.Array[String]): ShellString = js.native
   def grep(regex_filter: RegExp, files: String*): ShellString = js.native
   def grep(regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  
   def head(files: String*): ShellString = js.native
   def head(files: js.Array[String]): ShellString = js.native
   def head(options: HeadOptions, files: String*): ShellString = js.native
   def head(options: HeadOptions, files: js.Array[String]): ShellString = js.native
+  
   /**
     * Links source to dest. Use `-f` to force the link, should dest already exist.
     *
@@ -288,6 +304,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @return       Object with shell exit code, stderr and stdout.
     */
   def ln(source: String, dest: String): ShellString = js.native
+  
   def ls(options: String, paths: String*): ShellArray = js.native
   /**
     * Returns array of files in the given path, or in current directory if no path provided.
@@ -311,6 +328,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @return      An array of files in the given path(s).
     */
   def ls(paths: js.Array[String]): ShellArray = js.native
+  
   def mkdir(dir: String*): ShellString = js.native
   /**
     * Creates directories.
@@ -329,6 +347,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @return        Object with shell exit code, stderr and stdout.
     */
   def mkdir(options: String, dir: js.Array[String]): ShellString = js.native
+  
   /**
     * Moves files. The wildcard `*` is accepted.
     *
@@ -350,6 +369,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   def mv(source: String, dest: String): ShellString = js.native
   def mv(source: js.Array[String], dest: String): ShellString = js.native
+  
   /**
     * When no arguments are given, popd removes the top directory from the stack
     * and performs a `cd` to the new top directory.
@@ -442,6 +462,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   @JSName("popd")
   def popd_N(options: String, dir: `-N`): ShellArray = js.native
+  
   /**
     * Saves the current directory on the top of the directory stack and then cd to dir.
     * With no arguments, `pushd` exchanges the top two directories.
@@ -519,7 +540,9 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   @JSName("pushd")
   def pushd_N(options: String, dir: `-N`): ShellArray = js.native
+  
   def pwd(): ShellString = js.native
+  
   def rm(files: String*): ShellString = js.native
   /**
     * Removes files. The wildcard `*` is accepted.
@@ -539,6 +562,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     * @return        Object with shell exit code, stderr and stdout.
     */
   def rm(options: String, files: js.Array[String]): ShellString = js.native
+  
   def sed(options: String, searchRegex: String, replacement: String, files: String*): ShellString = js.native
   /**
     * Reads an input string from file and performs a JavaScript `replace()`
@@ -567,7 +591,9 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   def sed(searchRegex: String, replacement: String, files: js.Array[String]): ShellString = js.native
   def sed(searchRegex: RegExp, replacement: String, files: String*): ShellString = js.native
   def sed(searchRegex: RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
+  
   def set(options: String): Unit = js.native
+  
   def sort(files: String*): ShellString = js.native
   /**
     * Return the contents of the files, sorted line-by-line.
@@ -584,18 +610,23 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     *        - `-n`: Compare according to numerical value
     */
   def sort(options: String, files: js.Array[String]): ShellString = js.native
+  
   def tail(files: String*): ShellString = js.native
   def tail(files: js.Array[String]): ShellString = js.native
   def tail(options: TailOptions, files: String*): ShellString = js.native
   def tail(options: TailOptions, files: js.Array[String]): ShellString = js.native
+  
   def tempdir(): ShellString = js.native
+  
   def test(option: TestOptions, path: String): Boolean = js.native
+  
   def touch(files: String*): ShellString = js.native
   def touch(files: js.Array[String]): ShellString = js.native
   def touch(options: TouchOptionsArray, files: String*): ShellString = js.native
   def touch(options: TouchOptionsArray, files: js.Array[String]): ShellString = js.native
   def touch(options: TouchOptionsLiteral, files: String*): ShellString = js.native
   def touch(options: TouchOptionsLiteral, files: js.Array[String]): ShellString = js.native
+  
   /**
     * Filter adjacent matching lines from input.
     */
@@ -610,6 +641,6 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
     */
   def uniq(options: String, input: String): ShellString = js.native
   def uniq(options: String, input: String, output: String): ShellString = js.native
+  
   def which(command: String): ShellString = js.native
 }
-

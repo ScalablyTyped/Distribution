@@ -3,7 +3,7 @@ package typings.postmate.mod
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is written in the child page. Calling Postmate.Model initiates a handshake request listener from the
@@ -21,4 +21,3 @@ class Model protected () extends Promise[ChildAPI] {
     */
   def this(model: js.Any) = this()
 }
-

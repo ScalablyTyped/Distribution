@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.ISeparatedSyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ObjectTypeSyntax")
 @js.native
@@ -17,12 +17,12 @@ class ObjectTypeSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "ObjectTypeSyntax")
 @js.native
 object ObjectTypeSyntax extends js.Object {
+  
   def create(openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ObjectTypeSyntax = js.native
+  
   def create1(): typings.typescriptServices.TypeScript.ObjectTypeSyntax = js.native
 }
-

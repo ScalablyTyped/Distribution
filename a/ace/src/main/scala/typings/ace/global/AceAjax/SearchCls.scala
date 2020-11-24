@@ -2,7 +2,7 @@ package typings.ace.global.AceAjax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.Search")
 @js.native
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
   **/
 class SearchCls ()
   extends typings.ace.AceAjax.Search
-

@@ -4,20 +4,24 @@ import typings.chromeApps.anon.FULLSCREEN
 import typings.chromeApps.anon.PANEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChromeAppWindow extends AppWindow {
+  
   /**
     * @enum
     * Window state enum
     */
   val State: FULLSCREEN = js.native
+  
   val WindowType: PANEL = js.native
+  
   /**
     * Whether the current platform supports windows being visible on all workspaces.
     */
   def canSetVisibleOnAllWorkspaces(): Boolean = js.native
+  
   /**
     * The size and position of a window can be specified in a number of different ways. The most simple option is not specifying anything at all, in which case a default size and platform dependent position will be used.
     * To set the position, size and constraints of the window, use the innerBounds or outerBounds properties. Inner bounds do not include window decorations. Outer bounds include the window's title bar and frame. Note that the padding between the inner and outer bounds is determined by the OS. Therefore setting the same property for both inner and outer bounds is considered an error (for example, setting both innerBounds.left and outerBounds.left).
@@ -39,17 +43,19 @@ trait ChromeAppWindow extends AppWindow {
     options: CreateWindowOptions,
     callback: js.Function1[/* created_window */ AppWindow, Unit]
   ): Unit = js.native
+  
   /**
     * Returns an AppWindow object for the current script context (ie JavaScript 'window' object). This can also be called on a handle to a script context for another page, for example: otherWindow.chrome.app.window.current().
     */
   def current(): AppWindow = js.native
+  
   /**
     * Gets an AppWindow with the given id. If no window with the given id exists null is returned. This method is new in Chrome 33.
     */
   def get(id: String): AppWindow = js.native
+  
   /**
     * Gets an array of all currently created app windows. This method is new in Chrome 33.
     */
   def getAll(): js.Array[AppWindow] = js.native
 }
-

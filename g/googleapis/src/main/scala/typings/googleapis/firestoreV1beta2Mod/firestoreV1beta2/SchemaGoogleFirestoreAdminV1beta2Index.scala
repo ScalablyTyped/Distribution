@@ -2,7 +2,7 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Firestore indexes enable simple and complex queries against documents
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGoogleFirestoreAdminV1beta2Index extends js.Object {
+  
   /**
     * The fields supported by this index.  For composite indexes, this is
     * always 2 or more fields. The last field entry is always for the field
@@ -22,6 +23,7 @@ trait SchemaGoogleFirestoreAdminV1beta2Index extends js.Object {
     * associated field.
     */
   var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta2IndexField]] = js.native
+  
   /**
     * Output only. A server defined name for this index. The form of this name
     * for composite indexes will be:
@@ -29,6 +31,7 @@ trait SchemaGoogleFirestoreAdminV1beta2Index extends js.Object {
     * For single field indexes, this field will be empty.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Indexes with a collection query scope specified allow queries against a
     * collection that is the child of a specific document, specified at query
@@ -38,48 +41,60 @@ trait SchemaGoogleFirestoreAdminV1beta2Index extends js.Object {
     * have the same collection id as this index.
     */
   var queryScope: js.UndefOr[String] = js.native
+  
   /**
     * Output only. The serving state of the index.
     */
   var state: js.UndefOr[String] = js.native
 }
-
 object SchemaGoogleFirestoreAdminV1beta2Index {
+  
   @scala.inline
   def apply(): SchemaGoogleFirestoreAdminV1beta2Index = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2Index]
   }
+  
   @scala.inline
   implicit class SchemaGoogleFirestoreAdminV1beta2IndexOps[Self <: SchemaGoogleFirestoreAdminV1beta2Index] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFieldsVarargs(value: SchemaGoogleFirestoreAdminV1beta2IndexField*): Self = this.set("fields", js.Array(value :_*))
+    
     @scala.inline
     def setFields(value: js.Array[SchemaGoogleFirestoreAdminV1beta2IndexField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFields: Self = this.set("fields", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setQueryScope(value: String): Self = this.set("queryScope", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQueryScope: Self = this.set("queryScope", js.undefined)
+    
     @scala.inline
     def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
   }
-  
 }
-

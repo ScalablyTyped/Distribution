@@ -5,7 +5,7 @@ import typings.babelTypes.babelTypesStrings.ClassProperty
 import typings.babelTypes.babelTypesStrings.ObjectProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.ObjectProperty_
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.ClassPrivateProperty_
 */
 trait Property extends _Node
-
 object Property {
+  
   @scala.inline
   def ObjectProperty_(
     computed: Boolean,
@@ -27,6 +27,7 @@ object Property {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
+  
   @scala.inline
   def ClassProperty_(
     computed: Boolean,
@@ -38,11 +39,11 @@ object Property {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
+  
   @scala.inline
-  def ClassPrivateProperty_(key: PrivateName_, `type`: ClassPrivateProperty): Property = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  def ClassPrivateProperty_(key: PrivateName_, static: js.Any, `type`: ClassPrivateProperty): Property = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
 }
-

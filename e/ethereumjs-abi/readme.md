@@ -10,9 +10,9 @@ Decoder and encoder for the Ethereum ABI
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-abi |
 | Keywords           | ethereum, ABI |
-| # releases         | 3 |
-| # dependents       | 179 |
-| # downloads        | 1669418 |
+| # releases         | 4 |
+| # dependents       | 208 |
+| # downloads        | 2537436 |
 | # stars            | 0 |
 
 ## Links

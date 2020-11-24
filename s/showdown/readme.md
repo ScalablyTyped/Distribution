@@ -11,8 +11,8 @@ A Markdown to HTML converter written in Javascript
 | Full name          | showdown |
 | Keywords           | markdown, converter |
 | # releases         | 4 |
-| # dependents       | 496 |
-| # downloads        | 6643860 |
+| # dependents       | 618 |
+| # downloads        | 11666156 |
 | # stars            | 30 |
 
 ## Links

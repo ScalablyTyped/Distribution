@@ -1,7 +1,11 @@
 package typings.plotlyJs
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.d3Array.anon.FnCall
 import typings.d3Array.mod.Bisector_
 import typings.d3Array.mod.HistogramGeneratorDate
 import typings.d3Array.mod.HistogramGeneratorNumber
@@ -16,12 +20,6 @@ import typings.d3Chord.mod.ChordLayout
 import typings.d3Chord.mod.RibbonGenerator
 import typings.d3Chord.mod.RibbonSubgroup
 import typings.d3Chord.mod.Ribbon_
-import typings.d3Collection.anon.Key
-import typings.d3Collection.anon.Value
-import typings.d3Collection.mod.Map_
-import typings.d3Collection.mod.Nest_
-import typings.d3Collection.mod.Set_
-import typings.d3Collection.mod.Stringifiable
 import typings.d3Color.mod.ColorCommonInstance
 import typings.d3Color.mod.ColorFactory
 import typings.d3Color.mod.ColorSpaceObject
@@ -62,6 +60,7 @@ import typings.d3Force.mod.SimulationNodeDatum
 import typings.d3Format.anon.ValueOf
 import typings.d3Format.mod.FormatLocaleDefinition
 import typings.d3Format.mod.FormatLocaleObject
+import typings.d3Format.mod.FormatSpecifierObject
 import typings.d3Format.mod.FormatSpecifier_
 import typings.d3Geo.anon.`0`
 import typings.d3Geo.mod.ExtendedFeature
@@ -95,16 +94,29 @@ import typings.d3Hierarchy.mod.TreemapLayout
 import typings.d3Interpolate.anon.ToString
 import typings.d3Interpolate.mod.ArrayInterpolator
 import typings.d3Interpolate.mod.ColorGammaInterpolationFactory
+import typings.d3Interpolate.mod.NumberArray
 import typings.d3Interpolate.mod.ZoomInterpolator
 import typings.d3Interpolate.mod.ZoomView
 import typings.d3Path.mod.Path_
 import typings.d3Quadtree.mod.Quadtree_
 import typings.d3Random.mod.RandomBates_
+import typings.d3Random.mod.RandomBernoulli_
+import typings.d3Random.mod.RandomBeta_
+import typings.d3Random.mod.RandomBinomial_
+import typings.d3Random.mod.RandomCauchy_
 import typings.d3Random.mod.RandomExponential_
+import typings.d3Random.mod.RandomGamma_
+import typings.d3Random.mod.RandomGeometric_
+import typings.d3Random.mod.RandomInt_
 import typings.d3Random.mod.RandomIrwinHall_
 import typings.d3Random.mod.RandomLogNormal_
+import typings.d3Random.mod.RandomLogistic_
 import typings.d3Random.mod.RandomNormal_
+import typings.d3Random.mod.RandomPareto_
+import typings.d3Random.mod.RandomPoisson_
 import typings.d3Random.mod.RandomUniform_
+import typings.d3Random.mod.RandomWeibull_
+import typings.d3Scale.mod.NumberValue
 import typings.d3Scale.mod.ScaleBand_
 import typings.d3Scale.mod.ScaleDiverging_
 import typings.d3Scale.mod.ScaleIdentity_
@@ -115,14 +127,13 @@ import typings.d3Scale.mod.ScalePoint_
 import typings.d3Scale.mod.ScalePower
 import typings.d3Scale.mod.ScaleQuantile_
 import typings.d3Scale.mod.ScaleQuantize_
+import typings.d3Scale.mod.ScaleRadial_
+import typings.d3Scale.mod.ScaleSequentialQuantile_
 import typings.d3Scale.mod.ScaleSequential_
 import typings.d3Scale.mod.ScaleSymLog_
 import typings.d3Scale.mod.ScaleThreshold_
 import typings.d3Scale.mod.ScaleTime_
-import typings.d3Selection.mod.BaseEvent
 import typings.d3Selection.mod.BaseType
-import typings.d3Selection.mod.ClientPointEvent
-import typings.d3Selection.mod.ContainerElement
 import typings.d3Selection.mod.EnterElement
 import typings.d3Selection.mod.Local_
 import typings.d3Selection.mod.NamespaceLocalObject
@@ -154,7 +165,6 @@ import typings.d3TimeFormat.mod.TimeLocaleDefinition
 import typings.d3TimeFormat.mod.TimeLocaleObject
 import typings.d3Timer.mod.Timer_
 import typings.d3Transition.mod.Transition_
-import typings.d3Voronoi.mod.VoronoiLayout
 import typings.d3Zoom.mod.ZoomBehavior
 import typings.d3Zoom.mod.ZoomTransform_
 import typings.d3Zoom.mod.ZoomedElementBaseType
@@ -164,6 +174,7 @@ import typings.plotlyJs.anon.Name
 import typings.plotlyJs.anon.PartialConfig
 import typings.plotlyJs.anon.PartialFrame
 import typings.plotlyJs.anon.PartialLayout
+import typings.plotlyJs.anon.TypeofDelaunay
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DownloadImgopts
 import typings.plotlyJs.mod.PlotlyHTMLElement
@@ -346,6 +357,7 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayLike
 import typings.std.Blob
 import typings.std.CanvasRenderingContext2D
+import typings.std.DataView
 import typings.std.Date
 import typings.std.Document
 import typings.std.Element
@@ -483,7 +495,7 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.std.TouchList
+import typings.std.Set
 import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
@@ -492,23 +504,30 @@ import typings.std.Window
 import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plotly.js/lib/core", JSImport.Namespace)
 @js.native
 object coreMod extends js.Object {
+  
   val Plots: StaticPlots = js.native
+  
   def addFrames(root: Root, frames: js.Array[PartialFrame]): js.Promise[PlotlyHTMLElement] = js.native
+  
   def addTraces(root: Root, traces: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data], newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data], newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: Data): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: Data, newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: Data, newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   def deleteFrames(root: Root, frames: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
+  
   def deleteTraces(root: Root, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def deleteTraces(root: Root, indices: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   def downloadImage(root: Root, opts: DownloadImgopts): js.Promise[String] = js.native
+  
   def extendTraces(root: Root, update: js.Array[Data], indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: js.Array[Data], indices: js.Array[Double], maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: js.Array[Data], indices: Double): js.Promise[PlotlyHTMLElement] = js.native
@@ -517,215 +536,55 @@ object coreMod extends js.Object {
   def extendTraces(root: Root, update: Data, indices: js.Array[Double], maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: Data, indices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: Data, indices: Double, maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   def moveTraces(root: Root, currentIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: js.Array[Double], newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: js.Array[Double], newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: Double, newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: Double, newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   def newPlot(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
   def newPlot(root: Root, data: js.Array[Data], layout: js.UndefOr[scala.Nothing], config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
   def newPlot(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
   def newPlot(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
+  
   def plot(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
   def plot(root: Root, data: js.Array[Data], layout: js.UndefOr[scala.Nothing], config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
   def plot(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
   def plot(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
+  
   def prependTraces(root: Root, update: js.Array[Data], indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: js.Array[Data], indices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: Data, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def prependTraces(root: Root, update: Data, indices: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   def purge(root: Root): Unit = js.native
+  
   def react(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
   def react(root: Root, data: js.Array[Data], layout: js.UndefOr[scala.Nothing], config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
   def react(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
   def react(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = js.native
+  
   def redraw(root: Root): js.Promise[PlotlyHTMLElement] = js.native
+  
   def relayout(root: Root, layout: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
+  
   def restyle(root: Root, aobj: Data): js.Promise[PlotlyHTMLElement] = js.native
   def restyle(root: Root, aobj: Data, traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def restyle(root: Root, aobj: Data, traces: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   def toImage(root: Root, opts: ToImgopts): js.Promise[String] = js.native
+  
   def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout): js.Promise[PlotlyHTMLElement] = js.native
   def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout, traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout, traces: Double): js.Promise[PlotlyHTMLElement] = js.native
+  
   @js.native
   object d3 extends js.Object {
-    @JSName("color")
-    val color_Original: ColorFactory = js.native
-    @JSName("cubehelix")
-    val cubehelix_Original: CubehelixColorFactory = js.native
-    val curveBundle: CurveBundleFactory = js.native
-    val curveCardinal: CurveCardinalFactory = js.native
-    val curveCardinalClosed: CurveCardinalFactory = js.native
-    val curveCardinalOpen: CurveCardinalFactory = js.native
-    val curveCatmullRom: CurveCatmullRomFactory = js.native
-    val curveCatmullRomClosed: CurveCatmullRomFactory = js.native
-    val curveCatmullRomOpen: CurveCatmullRomFactory = js.native
-    @JSName("easeBackInOut")
-    val easeBackInOut_Original: BackEasingFactory = js.native
-    @JSName("easeBackIn")
-    val easeBackIn_Original: BackEasingFactory = js.native
-    @JSName("easeBackOut")
-    val easeBackOut_Original: BackEasingFactory = js.native
-    @JSName("easeBack")
-    val easeBack_Original: BackEasingFactory = js.native
-    @JSName("easeElasticInOut")
-    val easeElasticInOut_Original: ElasticEasingFactory = js.native
-    @JSName("easeElasticIn")
-    val easeElasticIn_Original: ElasticEasingFactory = js.native
-    @JSName("easeElasticOut")
-    val easeElasticOut_Original: ElasticEasingFactory = js.native
-    @JSName("easeElastic")
-    val easeElastic_Original: ElasticEasingFactory = js.native
-    @JSName("easePolyInOut")
-    val easePolyInOut_Original: PolynomialEasingFactory = js.native
-    @JSName("easePolyIn")
-    val easePolyIn_Original: PolynomialEasingFactory = js.native
-    @JSName("easePolyOut")
-    val easePolyOut_Original: PolynomialEasingFactory = js.native
-    @JSName("easePoly")
-    val easePoly_Original: PolynomialEasingFactory = js.native
-    val event: js.Any = js.native
-    @JSName("hcl")
-    val hcl_Original: HCLColorFactory = js.native
-    @JSName("hsl")
-    val hsl_Original: HSLColorFactory = js.native
-    @JSName("interpolateCubehelixLong")
-    val interpolateCubehelixLong_Original: ColorGammaInterpolationFactory = js.native
-    @JSName("interpolateCubehelix")
-    val interpolateCubehelix_Original: ColorGammaInterpolationFactory = js.native
-    @JSName("interpolateRgb")
-    val interpolateRgb_Original: ColorGammaInterpolationFactory = js.native
-    @JSName("lab")
-    val lab_Original: LabColorFactory = js.native
-    val namespaces: NamespaceMap = js.native
-    @JSName("randomBates")
-    val randomBates_Original: RandomBates_ = js.native
-    @JSName("randomExponential")
-    val randomExponential_Original: RandomExponential_ = js.native
-    @JSName("randomIrwinHall")
-    val randomIrwinHall_Original: RandomIrwinHall_ = js.native
-    @JSName("randomLogNormal")
-    val randomLogNormal_Original: RandomLogNormal_ = js.native
-    @JSName("randomNormal")
-    val randomNormal_Original: RandomNormal_ = js.native
-    @JSName("randomUniform")
-    val randomUniform_Original: RandomUniform_ = js.native
-    @JSName("rgb")
-    val rgb_Original: RGBColorFactory = js.native
-    val scaleImplicit: Name = js.native
-    val schemeAccent: js.Array[String] = js.native
-    val schemeBlues: js.Array[js.Array[String]] = js.native
-    val schemeBrBG: js.Array[js.Array[String]] = js.native
-    val schemeBuGn: js.Array[js.Array[String]] = js.native
-    val schemeBuPu: js.Array[js.Array[String]] = js.native
-    val schemeCategory10: js.Array[String] = js.native
-    val schemeDark2: js.Array[String] = js.native
-    val schemeGnBu: js.Array[js.Array[String]] = js.native
-    val schemeGreens: js.Array[js.Array[String]] = js.native
-    val schemeGreys: js.Array[js.Array[String]] = js.native
-    val schemeOrRd: js.Array[js.Array[String]] = js.native
-    val schemeOranges: js.Array[js.Array[String]] = js.native
-    val schemePRGn: js.Array[js.Array[String]] = js.native
-    val schemePaired: js.Array[String] = js.native
-    val schemePastel1: js.Array[String] = js.native
-    val schemePastel2: js.Array[String] = js.native
-    val schemePiYG: js.Array[js.Array[String]] = js.native
-    val schemePuBu: js.Array[js.Array[String]] = js.native
-    val schemePuBuGn: js.Array[js.Array[String]] = js.native
-    val schemePuOr: js.Array[js.Array[String]] = js.native
-    val schemePuRd: js.Array[js.Array[String]] = js.native
-    val schemePurples: js.Array[js.Array[String]] = js.native
-    val schemeRdBu: js.Array[js.Array[String]] = js.native
-    val schemeRdGy: js.Array[js.Array[String]] = js.native
-    val schemeRdPu: js.Array[js.Array[String]] = js.native
-    val schemeRdYlBu: js.Array[js.Array[String]] = js.native
-    val schemeRdYlGn: js.Array[js.Array[String]] = js.native
-    val schemeReds: js.Array[js.Array[String]] = js.native
-    val schemeSet1: js.Array[String] = js.native
-    val schemeSet2: js.Array[String] = js.native
-    val schemeSet3: js.Array[String] = js.native
-    val schemeSpectral: js.Array[js.Array[String]] = js.native
-    val schemeTableau10: js.Array[String] = js.native
-    val schemeYlGn: js.Array[js.Array[String]] = js.native
-    val schemeYlGnBu: js.Array[js.Array[String]] = js.native
-    val schemeYlOrBr: js.Array[js.Array[String]] = js.native
-    val schemeYlOrRd: js.Array[js.Array[String]] = js.native
-    val symbolCircle: SymbolType = js.native
-    val symbolCross: SymbolType = js.native
-    val symbolDiamond: SymbolType = js.native
-    val symbolSquare: SymbolType = js.native
-    val symbolStar: SymbolType = js.native
-    val symbolTriangle: SymbolType = js.native
-    val symbolWye: SymbolType = js.native
-    val symbols: js.Array[SymbolType] = js.native
-    @JSName("timeDay")
-    val timeDay_Original: CountableTimeInterval = js.native
-    @JSName("timeFriday")
-    val timeFriday_Original: CountableTimeInterval = js.native
-    @JSName("timeHour")
-    val timeHour_Original: CountableTimeInterval = js.native
-    @JSName("timeMillisecond")
-    val timeMillisecond_Original: CountableTimeInterval = js.native
-    @JSName("timeMinute")
-    val timeMinute_Original: CountableTimeInterval = js.native
-    @JSName("timeMonday")
-    val timeMonday_Original: CountableTimeInterval = js.native
-    @JSName("timeMonth")
-    val timeMonth_Original: CountableTimeInterval = js.native
-    @JSName("timeSaturday")
-    val timeSaturday_Original: CountableTimeInterval = js.native
-    @JSName("timeSecond")
-    val timeSecond_Original: CountableTimeInterval = js.native
-    @JSName("timeSunday")
-    val timeSunday_Original: CountableTimeInterval = js.native
-    @JSName("timeThursday")
-    val timeThursday_Original: CountableTimeInterval = js.native
-    @JSName("timeTuesday")
-    val timeTuesday_Original: CountableTimeInterval = js.native
-    @JSName("timeWednesday")
-    val timeWednesday_Original: CountableTimeInterval = js.native
-    @JSName("timeWeek")
-    val timeWeek_Original: CountableTimeInterval = js.native
-    @JSName("timeYear")
-    val timeYear_Original: CountableTimeInterval = js.native
-    @JSName("treemapResquarify")
-    val treemapResquarify_Original: RatioSquarifyTilingFactory = js.native
-    @JSName("treemapSquarify")
-    val treemapSquarify_Original: RatioSquarifyTilingFactory = js.native
-    @JSName("utcDay")
-    val utcDay_Original: CountableTimeInterval = js.native
-    @JSName("utcFriday")
-    val utcFriday_Original: CountableTimeInterval = js.native
-    @JSName("utcHour")
-    val utcHour_Original: CountableTimeInterval = js.native
-    @JSName("utcMillisecond")
-    val utcMillisecond_Original: CountableTimeInterval = js.native
-    @JSName("utcMinute")
-    val utcMinute_Original: CountableTimeInterval = js.native
-    @JSName("utcMonday")
-    val utcMonday_Original: CountableTimeInterval = js.native
-    @JSName("utcMonth")
-    val utcMonth_Original: CountableTimeInterval = js.native
-    @JSName("utcSaturday")
-    val utcSaturday_Original: CountableTimeInterval = js.native
-    @JSName("utcSecond")
-    val utcSecond_Original: CountableTimeInterval = js.native
-    @JSName("utcSunday")
-    val utcSunday_Original: CountableTimeInterval = js.native
-    @JSName("utcThursday")
-    val utcThursday_Original: CountableTimeInterval = js.native
-    @JSName("utcTuesday")
-    val utcTuesday_Original: CountableTimeInterval = js.native
-    @JSName("utcWednesday")
-    val utcWednesday_Original: CountableTimeInterval = js.native
-    @JSName("utcWeek")
-    val utcWeek_Original: CountableTimeInterval = js.native
-    @JSName("utcYear")
-    val utcYear_Original: CountableTimeInterval = js.native
-    val version: String = js.native
-    val zoomIdentity: ZoomTransform_ = js.native
+    
+    var Delaunay: js.Any | TypeofDelaunay = js.native
+    
     def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = js.native
     def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = js.native
     def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = js.native
@@ -736,24 +595,130 @@ object coreMod extends js.Object {
     def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = js.native
     def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = js.native
     def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = js.native
+    
     def arc(): Arc_[_, DefaultArcObject] = js.native
     @JSName("arc")
     def arc_Datum[Datum](): Arc_[_, Datum] = js.native
     @JSName("arc")
     def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = js.native
-    def area(): Area_[js.Tuple2[Double, Double]] = js.native
+    
+    def area[Datum](): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.UndefOr[scala.Nothing],
+      y0: js.UndefOr[scala.Nothing],
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](x: js.UndefOr[scala.Nothing], y0: js.UndefOr[scala.Nothing], y1: Double): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.UndefOr[scala.Nothing],
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.UndefOr[scala.Nothing],
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.UndefOr[scala.Nothing],
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y1: Double
+    ): Area_[Datum] = js.native
+    def area[Datum](x: js.UndefOr[scala.Nothing], y0: Double): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.UndefOr[scala.Nothing],
+      y0: Double,
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](x: js.UndefOr[scala.Nothing], y0: Double, y1: Double): Area_[Datum] = js.native
+    def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: js.UndefOr[scala.Nothing],
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: js.UndefOr[scala.Nothing],
+      y1: Double
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y1: Double
+    ): Area_[Datum] = js.native
+    def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y0: Double): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: Double,
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y0: Double,
+      y1: Double
+    ): Area_[Datum] = js.native
+    def area[Datum](x: Double): Area_[Datum] = js.native
+    def area[Datum](
+      x: Double,
+      y0: js.UndefOr[scala.Nothing],
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](x: Double, y0: js.UndefOr[scala.Nothing], y1: Double): Area_[Datum] = js.native
+    def area[Datum](x: Double, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = js.native
+    def area[Datum](
+      x: Double,
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](
+      x: Double,
+      y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y1: Double
+    ): Area_[Datum] = js.native
+    def area[Datum](x: Double, y0: Double): Area_[Datum] = js.native
+    def area[Datum](
+      x: Double,
+      y0: Double,
+      y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Area_[Datum] = js.native
+    def area[Datum](x: Double, y0: Double, y1: Double): Area_[Datum] = js.native
+    
     def areaRadial(): AreaRadial_[js.Tuple2[Double, Double]] = js.native
     @JSName("areaRadial")
     def areaRadial_Datum[Datum](): AreaRadial_[Datum] = js.native
-    @JSName("area")
-    def area_Datum[Datum](): Area_[Datum] = js.native
+    
     def ascending(): Double = js.native
     def ascending(a: js.UndefOr[Primitive], b: Primitive): Double = js.native
     def ascending(a: Primitive): Double = js.native
+    
+    def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+    `object`: js.Array[String]): ParsedRow = js.native
+    def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+    `object`: DSVRowString[Columns]): ParsedRow = js.native
+    
     def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+    
     def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+    
     def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+    
     def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+    
+    def bin(): HistogramGeneratorNumber[Double, Double] = js.native
+    @JSName("bin")
+    def `bin_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
+    @JSName("bin")
+    def `bin_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
+    
     def bisect(array: ArrayLike[String], x: String): Double = js.native
     def bisect(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
     def bisect(array: ArrayLike[String], x: String, lo: Double): Double = js.native
@@ -766,6 +731,20 @@ object coreMod extends js.Object {
     def bisect(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
     def bisect(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
     def bisect(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+    
+    def bisectCenter(array: ArrayLike[String], x: String): Double = js.native
+    def bisectCenter(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[String], x: String, lo: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Double], x: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Double], x: Double, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Date], x: Date): Double = js.native
+    def bisectCenter(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
+    def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+    
     def bisectLeft(array: ArrayLike[String], x: String): Double = js.native
     def bisectLeft(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
     def bisectLeft(array: ArrayLike[String], x: String, lo: Double): Double = js.native
@@ -778,6 +757,7 @@ object coreMod extends js.Object {
     def bisectLeft(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
     def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
     def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+    
     def bisectRight(array: ArrayLike[String], x: String): Double = js.native
     def bisectRight(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
     def bisectRight(array: ArrayLike[String], x: String, lo: Double): Double = js.native
@@ -790,19 +770,32 @@ object coreMod extends js.Object {
     def bisectRight(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
     def bisectRight(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
     def bisectRight(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+    
     def bisector[T, U](accessor: js.Function1[/* x */ T, U]): Bisector_[T, U] = js.native
     def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, Double]): Bisector_[T, U] = js.native
+    
     def blob(url: String): js.Promise[Blob] = js.native
     def blob(url: String, init: RequestInit): js.Promise[Blob] = js.native
+    
     def brush[Datum](): BrushBehavior[Datum] = js.native
+    
     def brushSelection(node: SVGGElement): BrushSelection_ | Null = js.native
+    
     def brushX[Datum](): BrushBehavior[Datum] = js.native
+    
     def brushY[Datum](): BrushBehavior[Datum] = js.native
+    
     def buffer(url: String): js.Promise[ArrayBuffer] = js.native
     def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = js.native
+    
     def chord(): ChordLayout = js.native
-    def clientPoint(container: ContainerElement, event: ClientPointEvent): js.Tuple2[Double, Double] = js.native
+    
+    def chordDirected(): ChordLayout = js.native
+    
+    def chordTranspose(): ChordLayout = js.native
+    
     def cluster[Datum](): ClusterLayout[Datum] = js.native
+    
     def color(color: ColorCommonInstance): RGBColor | HSLColor = js.native
     /**
       * Converts the provided color instance and returns an RGB or HSL color.
@@ -817,8 +810,19 @@ object coreMod extends js.Object {
       * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
       */
     def color(cssColorSpecifier: String): RGBColor | HSLColor | Null = js.native
+    @JSName("color")
+    val color_Original: ColorFactory = js.native
+    
     def contourDensity[Datum](): ContourDensity_[Datum] = js.native
+    
     def contours(): Contours_ = js.native
+    
+    def count[TObject](iterable: Iterable[TObject]): Double = js.native
+    def count[TObject](
+      iterable: Iterable[TObject],
+      accessor: js.Function2[/* a */ TObject, /* b */ TObject, js.UndefOr[Double | Null]]
+    ): Double = js.native
+    
     def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_a(name: a): Selection_[HTMLAnchorElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
@@ -1184,6 +1188,7 @@ object coreMod extends js.Object {
     def create_view(name: view): Selection_[SVGViewElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_wbr(name: wbr): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    
     def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = js.native
     @JSName("creator")
     def creator_a(name: a): js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement] = js.native
@@ -1529,8 +1534,10 @@ object coreMod extends js.Object {
     def creator_view(name: view): js.ThisFunction0[/* this */ BaseType, SVGViewElement] = js.native
     @JSName("creator")
     def creator_wbr(name: wbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
+    
     def cross[S, T](a: Iterable[S], b: Iterable[T]): js.Array[js.Tuple2[S, T]] = js.native
     def cross[S, T, U](a: Iterable[S], b: Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = js.native
+    
     def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
     def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
     def csv[ParsedRow /* <: js.Object */, Columns /* <: String */](
@@ -1552,9 +1559,19 @@ object coreMod extends js.Object {
           js.UndefOr[ParsedRow | Null]
         ]
     ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+    
     def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
     def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    
+    def csvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+    def csvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    
+    def csvFormatRow(row: js.Array[String]): String = js.native
+    
     def csvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
+    
+    def csvFormatValue(value: String): String = js.native
+    
     def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = js.native
     def csvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
       csvString: String,
@@ -1565,11 +1582,13 @@ object coreMod extends js.Object {
           js.UndefOr[ParsedRow | Null]
         ]
     ): DSVParsedArray[ParsedRow] = js.native
+    
     def csvParseRows(csvString: String): js.Array[js.Array[String]] = js.native
     def csvParseRows[ParsedRow /* <: js.Object */](
       csvString: String,
       row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
     ): js.Array[ParsedRow] = js.native
+    
     def cubehelix(color: ColorCommonInstance): CubehelixColor = js.native
     /**
       * Converts the provided color instance and returns a Cubehelix color.
@@ -1596,6 +1615,15 @@ object coreMod extends js.Object {
       */
     def cubehelix(h: Double, s: Double, l: Double): CubehelixColor = js.native
     def cubehelix(h: Double, s: Double, l: Double, opacity: Double): CubehelixColor = js.native
+    @JSName("cubehelix")
+    val cubehelix_Original: CubehelixColorFactory = js.native
+    
+    def cumsum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Float64Array = js.native
+    def cumsum[T](
+      iterable: Iterable[T],
+      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+    ): Float64Array = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1608,6 +1636,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveBasis(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1620,6 +1649,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveBasisClosed(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1632,6 +1662,21 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveBasisOpen(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
+    val curveBundle: CurveBundleFactory = js.native
+    
+    val curveCardinal: CurveCardinalFactory = js.native
+    
+    val curveCardinalClosed: CurveCardinalFactory = js.native
+    
+    val curveCardinalOpen: CurveCardinalFactory = js.native
+    
+    val curveCatmullRom: CurveCatmullRomFactory = js.native
+    
+    val curveCatmullRomClosed: CurveCatmullRomFactory = js.native
+    
+    val curveCatmullRomOpen: CurveCatmullRomFactory = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1644,6 +1689,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveLinear(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1656,6 +1702,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveLinearClosed(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1668,6 +1715,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveMonotoneX(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1680,6 +1728,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveMonotoneY(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1692,6 +1741,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveNatural(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1704,6 +1754,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveStep(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1716,6 +1767,7 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveStepAfter(context: CanvasRenderingContext2D): CurveGenerator = js.native
+    
     /**
       * Returns a curve generator which renders to the specified context.
       *
@@ -1728,27 +1780,33 @@ object coreMod extends js.Object {
       * @param context A rendering context.
       */
     def curveStepBefore(context: CanvasRenderingContext2D): CurveGenerator = js.native
-    def customEvent[Context, Result](
-      event: BaseEvent,
-      listener: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, Result],
-      that: Context,
-      args: js.Any*
-    ): Result = js.native
+    
     def descending(): Double = js.native
     def descending(a: js.UndefOr[Primitive], b: Primitive): Double = js.native
     def descending(a: Primitive): Double = js.native
-    def deviation[T /* <: Numeric */](array: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
+    
+    def deviation[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
     def deviation[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = js.native
+    
+    def difference[T](iterable: Iterable[T], others: Iterable[T]*): Set[T] = js.native
+    
+    def disjoint[T](a: Iterable[T], b: Iterable[T]): Boolean = js.native
+    
     def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
+    
     def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = js.native
+    
     def dragDisable(window: Window): Unit = js.native
+    
     def dragEnable(window: Window): Unit = js.native
     def dragEnable(window: Window, noClick: Boolean): Unit = js.native
+    
     @JSName("drag")
     def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = js.native
+    
     def dsv[Columns /* <: String */](delimiter: String, url: String): js.Promise[DSVRowArray[Columns]] = js.native
     def dsv[Columns /* <: String */](delimiter: String, url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
     def dsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
@@ -1772,119 +1830,200 @@ object coreMod extends js.Object {
           js.UndefOr[ParsedRow | Null]
         ]
     ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+    
     def dsvFormat(delimiter: String): DSV = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeBack(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeBackIn(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeBackInOut(normalizedTime: Double): Double = js.native
+    @JSName("easeBackInOut")
+    val easeBackInOut_Original: BackEasingFactory = js.native
+    
+    @JSName("easeBackIn")
+    val easeBackIn_Original: BackEasingFactory = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeBackOut(normalizedTime: Double): Double = js.native
+    @JSName("easeBackOut")
+    val easeBackOut_Original: BackEasingFactory = js.native
+    
+    @JSName("easeBack")
+    val easeBack_Original: BackEasingFactory = js.native
+    
     def easeBounce(normalizedTime: Double): Double = js.native
+    
     def easeBounceIn(normalizedTime: Double): Double = js.native
+    
     def easeBounceInOut(normalizedTime: Double): Double = js.native
+    
     def easeBounceOut(normalizedTime: Double): Double = js.native
+    
     def easeCircle(normalizedTime: Double): Double = js.native
+    
     def easeCircleIn(normalizedTime: Double): Double = js.native
+    
     def easeCircleInOut(normalizedTime: Double): Double = js.native
+    
     def easeCircleOut(normalizedTime: Double): Double = js.native
+    
     def easeCubic(normalizedTime: Double): Double = js.native
+    
     def easeCubicIn(normalizedTime: Double): Double = js.native
+    
     def easeCubicInOut(normalizedTime: Double): Double = js.native
+    
     def easeCubicOut(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeElastic(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeElasticIn(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeElasticInOut(normalizedTime: Double): Double = js.native
+    @JSName("easeElasticInOut")
+    val easeElasticInOut_Original: ElasticEasingFactory = js.native
+    
+    @JSName("easeElasticIn")
+    val easeElasticIn_Original: ElasticEasingFactory = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easeElasticOut(normalizedTime: Double): Double = js.native
+    @JSName("easeElasticOut")
+    val easeElasticOut_Original: ElasticEasingFactory = js.native
+    
+    @JSName("easeElastic")
+    val easeElastic_Original: ElasticEasingFactory = js.native
+    
     def easeExp(normalizedTime: Double): Double = js.native
+    
     def easeExpIn(normalizedTime: Double): Double = js.native
+    
     def easeExpInOut(normalizedTime: Double): Double = js.native
+    
     def easeExpOut(normalizedTime: Double): Double = js.native
+    
     def easeLinear(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easePoly(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easePolyIn(normalizedTime: Double): Double = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easePolyInOut(normalizedTime: Double): Double = js.native
+    @JSName("easePolyInOut")
+    val easePolyInOut_Original: PolynomialEasingFactory = js.native
+    
+    @JSName("easePolyIn")
+    val easePolyIn_Original: PolynomialEasingFactory = js.native
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def easePolyOut(normalizedTime: Double): Double = js.native
+    @JSName("easePolyOut")
+    val easePolyOut_Original: PolynomialEasingFactory = js.native
+    
+    @JSName("easePoly")
+    val easePoly_Original: PolynomialEasingFactory = js.native
+    
     def easeQuad(normalizedTime: Double): Double = js.native
+    
     def easeQuadIn(normalizedTime: Double): Double = js.native
+    
     def easeQuadInOut(normalizedTime: Double): Double = js.native
+    
     def easeQuadOut(normalizedTime: Double): Double = js.native
+    
     def easeSin(normalizedTime: Double): Double = js.native
+    
     def easeSinIn(normalizedTime: Double): Double = js.native
+    
     def easeSinInOut(normalizedTime: Double): Double = js.native
+    
     def easeSinOut(normalizedTime: Double): Double = js.native
-    def entries(obj: js.Object): js.Array[Value] = js.native
-    def entries[T](obj: StringDictionary[T]): js.Array[Key[T]] = js.native
-    def entries[T](obj: ArrayLike[T]): js.Array[Key[T]] = js.native
-    def extent(array: Iterable[String]): js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
+    
+    def every[T](
+      iterable: Iterable[T],
+      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], _]
+    ): Boolean = js.native
+    
+    def extent(iterable: Iterable[String]): js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
     def extent[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
     ): js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
     @JSName("extent")
     def extent_TU_Numeric[T, U /* <: Numeric */](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
     ): js.Tuple2[js.UndefOr[U], js.UndefOr[U]] = js.native
     @JSName("extent")
-    def extent_T_Numeric[T /* <: Numeric */](array: Iterable[T]): js.Tuple2[js.UndefOr[T], js.UndefOr[T]] = js.native
+    def extent_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.Tuple2[js.UndefOr[T], js.UndefOr[T]] = js.native
+    
+    def filter[T](
+      iterable: Iterable[T],
+      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], _]
+    ): js.Array[T] = js.native
+    
     def forceCenter[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = js.native
     def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: js.UndefOr[scala.Nothing], y: Double): ForceCenter_[NodeDatum] = js.native
     def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = js.native
     def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double, y: Double): ForceCenter_[NodeDatum] = js.native
+    
     def forceCollide[NodeDatum /* <: SimulationNodeDatum */](): ForceCollide_[NodeDatum] = js.native
     def forceCollide[NodeDatum /* <: SimulationNodeDatum */](
       radius: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodes */ js.Array[NodeDatum], Double]
     ): ForceCollide_[NodeDatum] = js.native
     def forceCollide[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceCollide_[NodeDatum] = js.native
+    
     def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](): ForceLink_[NodeDatum, LinksDatum] = js.native
     def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](links: js.Array[LinksDatum]): ForceLink_[NodeDatum, LinksDatum] = js.native
+    
     def forceManyBody[NodeDatum /* <: SimulationNodeDatum */](): ForceManyBody_[NodeDatum] = js.native
+    
     def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = js.native
     def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
       radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
@@ -1952,55 +2091,89 @@ object coreMod extends js.Object {
       y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
     ): ForceRadial_[NodeDatum] = js.native
     def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double, y: Double): ForceRadial_[NodeDatum] = js.native
+    
     def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](): Simulation[NodeDatum, js.UndefOr[scala.Nothing]] = js.native
     def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, js.UndefOr[scala.Nothing]] = js.native
     @JSName("forceSimulation")
     def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = js.native
     @JSName("forceSimulation")
     def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = js.native
+    
     def forceX[NodeDatum /* <: SimulationNodeDatum */](): ForceX_[NodeDatum] = js.native
     def forceX[NodeDatum /* <: SimulationNodeDatum */](x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceX_[NodeDatum] = js.native
     def forceX[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceX_[NodeDatum] = js.native
+    
     def forceY[NodeDatum /* <: SimulationNodeDatum */](): ForceY_[NodeDatum] = js.native
     def forceY[NodeDatum /* <: SimulationNodeDatum */](y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceY_[NodeDatum] = js.native
     def forceY[NodeDatum /* <: SimulationNodeDatum */](y: Double): ForceY_[NodeDatum] = js.native
+    
     def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = js.native
+    
     def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = js.native
+    
     def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = js.native
+    
     def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = js.native
+    
     def formatSpecifier(specifier: String): FormatSpecifier_ = js.native
+    
+    def fsum[T /* <: Numeric */](values: Iterable[js.UndefOr[T | Null]]): Double = js.native
+    def fsum[T](
+      values: Iterable[T],
+      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+    ): Double = js.native
+    
     def geoAlbers(): GeoConicProjection = js.native
+    
     def geoAlbersUsa(): GeoProjection_ = js.native
+    
     def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
     def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
     def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
     def geoArea(`object`: GeoGeometryObjects): Double = js.native
+    
     def geoAzimuthalEqualArea(): GeoProjection_ = js.native
+    
     def geoAzimuthalEqualAreaRaw(): GeoRawProjection = js.native
+    
     def geoAzimuthalEquidistant(): GeoProjection_ = js.native
+    
     def geoAzimuthalEquidistantRaw(): GeoRawProjection = js.native
+    
     def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
     def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
     def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
     def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+    
     def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = js.native
     def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = js.native
     def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = js.native
     def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = js.native
+    
     def geoCircle(): GeoCircleGenerator[_, _] = js.native
     @JSName("geoCircle")
     def geoCircle_Datum[Datum](): GeoCircleGenerator[_, Datum] = js.native
     @JSName("geoCircle")
     def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = js.native
+    
     def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = js.native
+    
     def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+    
     def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+    
     def geoConicConformal(): GeoConicProjection = js.native
+    
     def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+    
     def geoConicEqualArea(): GeoConicProjection = js.native
+    
     def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+    
     def geoConicEquidistant(): GeoConicProjection = js.native
+    
     def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+    
     def geoContains(
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
       point: js.Tuple2[Double, Double]
@@ -2011,27 +2184,46 @@ object coreMod extends js.Object {
     ): Boolean = js.native
     def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = js.native
     def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = js.native
+    
     def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = js.native
+    
     def geoEqualEarth(): GeoProjection_ = js.native
+    
     def geoEqualEarthRaw(): GeoRawProjection = js.native
+    
     def geoEquirectangular(): GeoProjection_ = js.native
+    
     def geoEquirectangularRaw(): GeoRawProjection = js.native
+    
     def geoGnomonic(): GeoProjection_ = js.native
+    
     def geoGnomonicRaw(): GeoRawProjection = js.native
+    
     def geoGraticule(): GeoGraticuleGenerator = js.native
+    
     def geoGraticule10(): MultiLineString = js.native
+    
     def geoIdentity(): GeoIdentityTransform = js.native
+    
     def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = js.native
+    
     def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
     def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
     def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
     def geoLength(`object`: GeoGeometryObjects): Double = js.native
+    
     def geoMercator(): GeoProjection_ = js.native
+    
     def geoMercatorRaw(): GeoRawProjection = js.native
+    
     def geoNaturalEarth1(): GeoProjection_ = js.native
+    
     def geoNaturalEarth1Raw(): GeoRawProjection = js.native
+    
     def geoOrthographic(): GeoProjection_ = js.native
+    
     def geoOrthographicRaw(): GeoRawProjection = js.native
+    
     def geoPath(): GeoPath_[_, GeoPermissibleObjects] = js.native
     def geoPath(projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
     def geoPath(projection: Null, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
@@ -2067,12 +2259,18 @@ object coreMod extends js.Object {
     def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = js.native
     @JSName("geoPath")
     def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = js.native
+    
     def geoProjection(project: GeoRawProjection): GeoProjection_ = js.native
+    
     def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = js.native
+    
     def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = js.native
     def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = js.native
+    
     def geoStereographic(): GeoProjection_ = js.native
+    
     def geoStereographicRaw(): GeoRawProjection = js.native
+    
     def geoStream(
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
       stream: GeoStream_
@@ -2080,24 +2278,64 @@ object coreMod extends js.Object {
     def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = js.native
     def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = js.native
     def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = js.native
+    
     def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = js.native
+    
     def geoTransverseMercator(): GeoProjection_ = js.native
+    
     def geoTransverseMercatorRaw(): GeoRawProjection = js.native
+    
     /**
-      * Constructs a new Lab color with the specified l value and a = b = 0.
+      * Constructs a new CIELAB color with the specified l value and a = b = 0.
       *
       * @param l Lightness typically in the range [0, 100].
       * @param opacity Optional opacity value, defaults to 1.
       */
     def gray(l: Double): LabColor = js.native
     /**
-      * Constructs a new Lab color with the specified l value and a = b = 0.
+      * Constructs a new CIELAB color with the specified l value and a = b = 0.
       *
       * @param l Lightness typically in the range [0, 100].
       * @param opacity Optional opacity value, defaults to 1.
       */
     def gray(l: Double, opacity: Double): LabColor = js.native
-    def group[TObject, TKey](a: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, js.Array[TObject]] = js.native
+    
+    def greatest[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
+    def greatest[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = js.native
+    def greatest[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = js.native
+    
+    def greatestIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = js.native
+    def greatestIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = js.native
+    def greatestIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = js.native
+    
+    def group[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, js.Array[TObject]] = js.native
+    def group[TObject, TKey1, TKey2](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): Map[TKey1, Map[TKey2, js.Array[TObject]]] = js.native
+    def group[TObject, TKey1, TKey2, TKey3](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): Map[TKey1, Map[TKey2, Map[TKey3, js.Array[TObject]]]] = js.native
+    
+    def groups[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, js.Array[TObject]]] = js.native
+    def groups[TObject, TKey1, TKey2](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[TObject]]]]] = js.native
+    def groups[TObject, TKey1, TKey2, TKey3](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): js.Array[
+        js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, js.Array[TObject]]]]]]
+      ] = js.native
+    
     def hcl(color: ColorCommonInstance): HCLColor = js.native
     /**
       * Converts the provided color instance and returns an HCL color.
@@ -2123,15 +2361,20 @@ object coreMod extends js.Object {
       * @param l Luminance channel value typically in the range [0, 100].
       * @param opacity Optional opacity value, defaults to 1.
       */
-    def hcl(h: Double, l: Double, c: Double): HCLColor = js.native
-    def hcl(h: Double, l: Double, c: Double, opacity: Double): HCLColor = js.native
+    def hcl(h: Double, c: Double, l: Double): HCLColor = js.native
+    def hcl(h: Double, c: Double, l: Double, opacity: Double): HCLColor = js.native
+    @JSName("hcl")
+    val hcl_Original: HCLColorFactory = js.native
+    
     def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = js.native
-    def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[js.Array[Datum] | Null]]): HierarchyNode[Datum] = js.native
+    def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = js.native
+    
     def histogram(): HistogramGeneratorNumber[Double, Double] = js.native
     @JSName("histogram")
     def `histogram_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
     @JSName("histogram")
     def `histogram_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
+    
     def hsl(color: ColorCommonInstance): HSLColor = js.native
     /**
       * Converts the provided color instance and returns an HSL color.
@@ -2158,134 +2401,306 @@ object coreMod extends js.Object {
       */
     def hsl(h: Double, s: Double, l: Double): HSLColor = js.native
     def hsl(h: Double, s: Double, l: Double, opacity: Double): HSLColor = js.native
+    @JSName("hsl")
+    val hsl_Original: HSLColorFactory = js.native
+    
     def html(url: String): js.Promise[Document] = js.native
     def html(url: String, init: RequestInit): js.Promise[Document] = js.native
+    
     def image(url: String): js.Promise[HTMLImageElement] = js.native
     def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = js.native
+    
+    def index[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, TObject] = js.native
+    def index[TObject, TKey1, TKey2](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): Map[TKey1, Map[TKey2, TObject]] = js.native
+    def index[TObject, TKey1, TKey2, TKey3](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): Map[TKey1, Map[TKey2, Map[TKey3, TObject]]] = js.native
+    
+    def indexes[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, TObject]] = js.native
+    def indexes[TObject, TKey1, TKey2](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TObject]]]] = js.native
+    def indexes[TObject, TKey1, TKey2, TKey3](
+      iterable: Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): js.Array[
+        js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, TObject]]]]]
+      ] = js.native
+    
     def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = js.native
     def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = js.native
+    def interpolate(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
+    def interpolate(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
+    def interpolate(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
+    def interpolate(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
+    def interpolate(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
+    def interpolate(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
+    def interpolate(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
+    def interpolate(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
+    def interpolate(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
+    def interpolate(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
     def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
     def interpolate(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
     def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
     def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
+    def interpolate(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
+    def interpolate(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
+    def interpolate(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
+    def interpolate(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
+    def interpolate(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
+    def interpolate(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
+    def interpolate(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
+    def interpolate(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
+    def interpolate(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
+    def interpolate(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
     def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
     def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
     def interpolate[U /* <: js.Array[_] */](a: js.Array[_], b: U): js.Function1[/* t */ Double, U] = js.native
+    
+    def interpolateArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
+    def interpolateArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
+    def interpolateArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
+    def interpolateArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
+    def interpolateArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
+    def interpolateArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
+    def interpolateArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
+    def interpolateArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
+    def interpolateArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
+    def interpolateArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
+    def interpolateArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
+    def interpolateArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
+    def interpolateArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
     def interpolateArray[A /* <: js.Array[_] */](a: js.Array[_], b: A): ArrayInterpolator[A] = js.native
+    
     def interpolateBasis(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = js.native
+    
     def interpolateBasisClosed(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = js.native
+    
     def interpolateBlues(t: Double): String = js.native
+    
     def interpolateBrBG(t: Double): String = js.native
+    
     def interpolateBuGn(t: Double): String = js.native
+    
     def interpolateBuPu(t: Double): String = js.native
+    
     def interpolateCividis(t: Double): String = js.native
+    
     def interpolateCool(t: Double): String = js.native
+    
     def interpolateCubehelix(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateCubehelix(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateCubehelix(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateCubehelix(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateCubehelixDefault(t: Double): String = js.native
+    
     def interpolateCubehelixLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateCubehelixLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateCubehelixLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateCubehelixLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    @JSName("interpolateCubehelixLong")
+    val interpolateCubehelixLong_Original: ColorGammaInterpolationFactory = js.native
+    
+    @JSName("interpolateCubehelix")
+    val interpolateCubehelix_Original: ColorGammaInterpolationFactory = js.native
+    
     def interpolateDate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
+    
     def interpolateDiscrete[T](values: js.Array[T]): js.Function1[/* t */ Double, T] = js.native
+    
     def interpolateGnBu(t: Double): String = js.native
+    
     def interpolateGreens(t: Double): String = js.native
+    
     def interpolateGreys(t: Double): String = js.native
+    
     def interpolateHcl(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHcl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateHcl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHcl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateHclLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHclLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateHclLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHclLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateHsl(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHsl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateHsl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHsl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateHslLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHslLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateHslLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateHslLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateHue(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
+    
     def interpolateInferno(t: Double): String = js.native
+    
     def interpolateLab(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateLab(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateLab(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateLab(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateMagma(t: Double): String = js.native
+    
     def interpolateNumber(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
     def interpolateNumber(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
     def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
     def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
+    
+    def interpolateNumberArray(a: js.Array[Double], b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
+    def interpolateNumberArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
+    def interpolateNumberArray(a: NumberArray, b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = js.native
+    def interpolateNumberArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
+    def interpolateNumberArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
+    
     def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
+    
     def interpolateOrRd(t: Double): String = js.native
+    
     def interpolateOranges(t: Double): String = js.native
+    
     def interpolatePRGn(t: Double): String = js.native
+    
     def interpolatePiYG(t: Double): String = js.native
+    
     def interpolatePlasma(t: Double): String = js.native
+    
     def interpolatePuBu(t: Double): String = js.native
+    
     def interpolatePuBuGn(t: Double): String = js.native
+    
     def interpolatePuOr(t: Double): String = js.native
+    
     def interpolatePuRd(t: Double): String = js.native
+    
     def interpolatePurples(t: Double): String = js.native
+    
     def interpolateRainbow(t: Double): String = js.native
+    
     def interpolateRdBu(t: Double): String = js.native
+    
     def interpolateRdGy(t: Double): String = js.native
+    
     def interpolateRdPu(t: Double): String = js.native
+    
     def interpolateRdYlBu(t: Double): String = js.native
+    
     def interpolateRdYlGn(t: Double): String = js.native
+    
     def interpolateReds(t: Double): String = js.native
+    
     def interpolateRgb(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateRgb(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
     def interpolateRgb(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateRgb(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateRgbBasis(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateRgbBasisClosed(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
+    
+    @JSName("interpolateRgb")
+    val interpolateRgb_Original: ColorGammaInterpolationFactory = js.native
+    
     def interpolateRound(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
     def interpolateRound(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
     def interpolateRound(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
     def interpolateRound(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
+    
     def interpolateSinebow(t: Double): String = js.native
+    
     def interpolateSpectral(t: Double): String = js.native
+    
     def interpolateString(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateString(a: String, b: ToString): js.Function1[/* t */ Double, String] = js.native
     def interpolateString(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
     def interpolateString(a: ToString, b: ToString): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+    
     def interpolateTurbo(t: Double): String = js.native
+    
     def interpolateViridis(t: Double): String = js.native
+    
     def interpolateWarm(t: Double): String = js.native
+    
     def interpolateYlGn(t: Double): String = js.native
+    
     def interpolateYlGnBu(t: Double): String = js.native
+    
     def interpolateYlOrBr(t: Double): String = js.native
+    
     def interpolateYlOrRd(t: Double): String = js.native
+    
     def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = js.native
+    
     def interrupt(node: BaseType): Unit = js.native
     def interrupt(node: BaseType, name: String): Unit = js.native
+    
+    def intersection[T](iterables: Iterable[T]*): Set[T] = js.native
+    
     def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
     def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
     def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
     def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+    
     def isoFormat(date: Date): String = js.native
+    
     def isoParse(dateString: String): Date | Null = js.native
-    def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[ParsedJSONObject] = js.native
-    def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[ParsedJSONObject] = js.native
-    def keys(obj: js.Object): js.Array[String] = js.native
+    
+    def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = js.native
+    def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = js.native
+    
     def lab(color: ColorCommonInstance): LabColor = js.native
     /**
       * Converts the provided color instance and returns a Lab color.
-      * The color instance is converted to the RGB color space using color.rgb and then converted to Lab.
+      * The color instance is converted to the RGB color space using color.rgb and then converted to CIELAB.
       * (Colors already in the Lab color space skip the conversion to RGB,
-      * and colors in the HCL color space are converted directly to Lab.)
+      * and colors in the HCL color space are converted directly to CIELAB.)
       *
       * @param color A permissible color space instance.
       */
@@ -2298,7 +2713,7 @@ object coreMod extends js.Object {
       */
     def lab(cssColorSpecifier: String): LabColor = js.native
     /**
-      * Constructs a new Lab color based on the specified channel values and opacity.
+      * Constructs a new CIELAB color based on the specified channel values and opacity.
       *
       * @param l Lightness typically in the range [0, 100].
       * @param a Position between red/magenta and green typically in [-160, +160].
@@ -2307,6 +2722,9 @@ object coreMod extends js.Object {
       */
     def lab(l: Double, a: Double, b: Double): LabColor = js.native
     def lab(l: Double, a: Double, b: Double, opacity: Double): LabColor = js.native
+    @JSName("lab")
+    val lab_Original: LabColorFactory = js.native
+    
     def lch(color: ColorCommonInstance): HCLColor = js.native
     /**
       * Converts the provided color instance and returns an HCL color.
@@ -2334,126 +2752,221 @@ object coreMod extends js.Object {
       */
     def lch(l: Double, c: Double, h: Double): HCLColor = js.native
     def lch(l: Double, c: Double, h: Double, opacity: Double): HCLColor = js.native
-    def line(): Line_[js.Tuple2[Double, Double]] = js.native
+    
+    def least[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
+    def least[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = js.native
+    def least[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = js.native
+    
+    def leastIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = js.native
+    def leastIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = js.native
+    def leastIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = js.native
+    
+    def line[Datum](): Line_[Datum] = js.native
+    def line[Datum](
+      x: js.UndefOr[scala.Nothing],
+      y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Line_[Datum] = js.native
+    def line[Datum](x: js.UndefOr[scala.Nothing], y: Double): Line_[Datum] = js.native
+    def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = js.native
+    def line[Datum](
+      x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+      y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+    ): Line_[Datum] = js.native
+    def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y: Double): Line_[Datum] = js.native
+    def line[Datum](x: Double): Line_[Datum] = js.native
+    def line[Datum](x: Double, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = js.native
+    def line[Datum](x: Double, y: Double): Line_[Datum] = js.native
+    
     def lineRadial(): LineRadial_[js.Tuple2[Double, Double]] = js.native
     @JSName("lineRadial")
     def lineRadial_Datum[Datum](): LineRadial_[Datum] = js.native
-    @JSName("line")
-    def line_Datum[Datum](): Line_[Datum] = js.native
+    
     def linkHorizontal(): Link[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
     @JSName("linkHorizontal")
     def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[_, LinkDatum, NodeDatum] = js.native
     @JSName("linkHorizontal")
     def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = js.native
+    
     def linkRadial(): LinkRadial_[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
     @JSName("linkRadial")
     def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[_, LinkDatum, NodeDatum] = js.native
     @JSName("linkRadial")
     def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = js.native
+    
     def linkVertical(): Link[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
     @JSName("linkVertical")
     def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[_, LinkDatum, NodeDatum] = js.native
     @JSName("linkVertical")
     def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = js.native
+    
     def local[T](): Local_[T] = js.native
-    def map(obj: js.Object): Map_[_] = js.native
-    def map[T](): Map_[T] = js.native
-    def map[T](array: js.Array[T]): Map_[T] = js.native
-    def map[T](
-      array: js.Array[T],
-      key: js.Function3[/* value */ T, /* i */ js.UndefOr[Double], /* array */ js.UndefOr[js.Array[T]], String]
-    ): Map_[T] = js.native
-    def map[T](d3Map: Map_[T]): Map_[T] = js.native
-    def map[T](obj: NumberDictionary[T]): Map_[T] = js.native
-    def map[T](obj: StringDictionary[T]): Map_[T] = js.native
+    
+    def map[T, U](
+      iterable: Iterable[T],
+      mapper: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], U]
+    ): js.Array[U] = js.native
+    
     def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = js.native
-    def max(array: Iterable[String]): js.UndefOr[String] = js.native
+    
+    def max(iterable: Iterable[String]): js.UndefOr[String] = js.native
     def max[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
     ): js.UndefOr[String] = js.native
+    
+    def maxIndex[T](iterable: Iterable[T]): Double = js.native
+    def maxIndex[TDatum, U](
+      iterable: Iterable[TDatum],
+      accessor: js.Function3[
+          /* datum */ TDatum, 
+          /* index */ Double, 
+          /* array */ Iterable[TDatum], 
+          js.UndefOr[U | Null]
+        ]
+    ): Double = js.native
+    
     @JSName("max")
     def max_TU_Numeric[T, U /* <: Numeric */](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
     ): js.UndefOr[U] = js.native
     @JSName("max")
-    def max_T_Numeric[T /* <: Numeric */](array: Iterable[T]): js.UndefOr[T] = js.native
-    def mean[T /* <: Numeric */](array: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
+    def max_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = js.native
+    
+    def mean[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
     def mean[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = js.native
-    def median[T /* <: Numeric */](array: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
+    
+    def median[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
     def median[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = js.native
-    def merge[T](arrays: Iterable[Iterable[T]]): js.Array[T] = js.native
-    def min(array: Iterable[String]): js.UndefOr[String] = js.native
+    
+    def merge[T](iterables: Iterable[Iterable[T]]): js.Array[T] = js.native
+    
+    def min(iterable: Iterable[String]): js.UndefOr[String] = js.native
     def min[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
     ): js.UndefOr[String] = js.native
+    
+    def minIndex[T](iterable: Iterable[T]): Double = js.native
+    def minIndex[TDatum, U](
+      iterable: Iterable[TDatum],
+      accessor: js.Function3[
+          /* datum */ TDatum, 
+          /* index */ Double, 
+          /* array */ Iterable[TDatum], 
+          js.UndefOr[U | Null]
+        ]
+    ): Double = js.native
+    
     @JSName("min")
     def min_TU_Numeric[T, U /* <: Numeric */](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
     ): js.UndefOr[U] = js.native
     @JSName("min")
-    def min_T_Numeric[T /* <: Numeric */](array: Iterable[T]): js.UndefOr[T] = js.native
-    def mouse(container: ContainerElement): js.Tuple2[Double, Double] = js.native
+    def min_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = js.native
+    
     def namespace(prefixedLocal: String): NamespaceLocalObject | String = js.native
-    def nest[Datum, RollupType](): Nest_[Datum, RollupType] = js.native
+    
+    val namespaces: NamespaceMap = js.native
+    
+    def nice(start: Double, stop: Double, count: Double): js.Tuple2[Double, Double] = js.native
+    
     def now(): Double = js.native
+    
     def pack[Datum](): PackLayout[Datum] = js.native
+    
     def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = js.native
+    
     def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum with PackCircle] = js.native
-    def pairs[T](array: Iterable[T]): js.Array[js.Tuple2[T, T]] = js.native
-    def pairs[T, U](array: Iterable[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
+    
+    def pairs[T](iterable: Iterable[T]): js.Array[js.Tuple2[T, T]] = js.native
+    def pairs[T, U](iterable: Iterable[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
+    
     def partition[Datum](): PartitionLayout[Datum] = js.native
+    
     def path(): Path_ = js.native
-    def permute[T](array: NumberDictionary[T], keys: ArrayLike[Double]): js.Array[T] = js.native
-    def permute[T, K /* <: /* keyof T */ String */](`object`: T, keys: ArrayLike[K]): js.Array[
+    
+    def permute[T](source: NumberDictionary[T], keys: Iterable[Double]): js.Array[T] = js.native
+    def permute[T, K /* <: /* keyof T */ String */](source: T, keys: Iterable[K]): js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
       ] = js.native
+    
     def pie(): Pie_[_, Double | typings.d3Shape.anon.ValueOf] = js.native
     @JSName("pie")
     def pie_Datum[Datum](): Pie_[_, Datum] = js.native
     @JSName("pie")
     def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = js.native
+    
     def piecewise(
       interpolate: js.Function2[/* a */ ZoomView, /* b */ ZoomView, ZoomInterpolator],
       values: js.Array[ZoomView]
     ): ZoomInterpolator = js.native
+    def piecewise(values: js.Array[ZoomView]): ZoomInterpolator = js.native
     @JSName("piecewise")
     def piecewise_A_ArrayWildcard_ArrayInterpolator[A /* <: js.Array[_] */](
       interpolate: js.Function2[/* a */ js.Array[_], /* b */ A, ArrayInterpolator[A]],
       values: js.Array[A]
     ): ArrayInterpolator[A] = js.native
     @JSName("piecewise")
+    def piecewise_A_ArrayWildcard_ArrayInterpolator[A /* <: js.Array[_] */](values: js.Array[A]): ArrayInterpolator[A] = js.native
+    @JSName("piecewise")
     def piecewise_TDataInterpolator_Function1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ Double, _] = js.native
+    @JSName("piecewise")
+    def piecewise_TData_Function1[TData](values: js.Array[TData]): js.Function1[/* t */ Double, _] = js.native
+    
     def pointRadial(angle: Double, radius: Double): js.Tuple2[Double, Double] = js.native
+    
+    def pointer(event: js.Any): js.Tuple2[Double, Double] = js.native
+    def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = js.native
+    
+    def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = js.native
+    def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = js.native
+    
     def polygonArea(polygon: js.Array[js.Tuple2[Double, Double]]): Double = js.native
+    
     def polygonCentroid(polygon: js.Array[js.Tuple2[Double, Double]]): js.Tuple2[Double, Double] = js.native
+    
     def polygonContains(polygon: js.Array[js.Tuple2[Double, Double]], point: js.Tuple2[Double, Double]): Boolean = js.native
+    
     def polygonHull(points: js.Array[js.Tuple2[Double, Double]]): (js.Array[js.Tuple2[Double, Double]]) | Null = js.native
+    
     def polygonLength(polygon: js.Array[js.Tuple2[Double, Double]]): Double = js.native
+    
     def precisionFixed(step: Double): Double = js.native
+    
     def precisionPrefix(step: Double, value: Double): Double = js.native
+    
     def precisionRound(step: Double, max: Double): Double = js.native
+    
     def quadtree[T](): Quadtree_[T] = js.native
     def quadtree[T](data: js.Array[T]): Quadtree_[T] = js.native
     def quadtree[T](data: js.Array[T], x: js.UndefOr[scala.Nothing], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
     def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
     def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
-    def quantile[T /* <: Numeric */](array: Iterable[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = js.native
+    
+    def quantile[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = js.native
     def quantile[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       p: Double,
       accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = js.native
+    
+    def quantileSorted[T /* <: Numeric */](array: js.Array[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = js.native
+    def quantileSorted[T](
+      array: js.Array[T],
+      p: Double,
+      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ js.Array[T], js.UndefOr[Double | Null]]
+    ): js.UndefOr[Double] = js.native
+    
     def quantize[T](interpolator: js.Function1[/* t */ Double, T], n: Double): js.Array[T] = js.native
+    
     def quickselect[T](array: ArrayLike[T], k: Double): js.Array[T] = js.native
     def quickselect[T](array: ArrayLike[T], k: Double, left: Double): js.Array[T] = js.native
     def quickselect[T](array: ArrayLike[T], k: Double, left: Double, right: Double): js.Array[T] = js.native
@@ -2464,18 +2977,69 @@ object coreMod extends js.Object {
       right: Double,
       compare: js.Function2[/* a */ js.UndefOr[Primitive], /* b */ js.UndefOr[Primitive], Double]
     ): js.Array[T] = js.native
+    
     def radialArea(): RadialArea_[js.Tuple2[Double, Double]] = js.native
     @JSName("radialArea")
     def radialArea_Datum[Datum](): RadialArea_[Datum] = js.native
+    
     def radialLine(): RadialLine_[js.Tuple2[Double, Double]] = js.native
     @JSName("radialLine")
     def radialLine_Datum[Datum](): RadialLine_[Datum] = js.native
+    
     /**
       * Returns a function for generating random numbers with a Bates distribution with n independent variables.
+      * The case of fractional n is handled as with d3.randomIrwinHall, and d3.randomBates(0) is equivalent to d3.randomUniform().
       *
       * @param n Number of independent random variables to use.
       */
     def randomBates(n: Double): js.Function0[Double] = js.native
+    @JSName("randomBates")
+    val randomBates_Original: RandomBates_ = js.native
+    
+    /**
+      * Returns a function for generating either 1 or 0 according to a Bernoulli distribution with 1 being returned with success probability p and 0 with failure probability q = 1 - p.
+      * The value p is in the range [0, 1].
+      *
+      * @param p p
+      */
+    def randomBernoulli(p: Double): js.Function0[Double] = js.native
+    @JSName("randomBernoulli")
+    val randomBernoulli_Original: RandomBernoulli_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with a beta distribution with alpha and beta shape parameters, which must both be positive.
+      *
+      * @param alpha Shape parameter
+      * @param beta Shape paramter
+      */
+    def randomBeta(alpha: Double, beta: Double): js.Function0[Double] = js.native
+    @JSName("randomBeta")
+    val randomBeta_Original: RandomBeta_ = js.native
+    
+    /**
+      * Returns a function for generating numbers with a geometric distribution with success probability p.
+      * The value p is in the range (0, 1].
+      *
+      * @param p Success probability
+      */
+    def randomBinomial(p: Double): js.Function0[Double] = js.native
+    @JSName("randomBinomial")
+    val randomBinomial_Original: RandomBinomial_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with a Cauchy distribution.
+      * a and b have the same meanings and default values as in d3.randomWeibull.
+      *
+      * @param a Location parameter
+      * @param b Scale parameter
+      */
+    def randomCauchy(): js.Function0[Double] = js.native
+    def randomCauchy(a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
+    def randomCauchy(a: Double): js.Function0[Double] = js.native
+    def randomCauchy(a: Double, b: Double): js.Function0[Double] = js.native
+    @JSName("randomCauchy")
+    val randomCauchy_Original: RandomCauchy_ = js.native
+    
     /**
       * Returns a function for generating random numbers with an exponential distribution with the rate lambda;
       * equivalent to time between events in a Poisson process with a mean of 1 / lambda.
@@ -2483,12 +3047,64 @@ object coreMod extends js.Object {
       * @param lambda Expected time between events.
       */
     def randomExponential(lambda: Double): js.Function0[Double] = js.native
+    @JSName("randomExponential")
+    val randomExponential_Original: RandomExponential_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with a gamma distribution with k the shape parameter and theta the scale parameter.
+      * The value k must be a positive value; if theta is not specified, it defaults to 1.
+      *
+      * @param k Shape parameter
+      * @param theta Scale paramter
+      */
+    def randomGamma(k: Double): js.Function0[Double] = js.native
+    def randomGamma(k: Double, theta: Double): js.Function0[Double] = js.native
+    @JSName("randomGamma")
+    val randomGamma_Original: RandomGamma_ = js.native
+    
+    /**
+      * Returns a function for generating numbers with a geometric distribution with success probability p.
+      * The value p is in the range [0, 1].
+      *
+      * @param p Success probability
+      */
+    def randomGeometric(p: Double): js.Function0[Double] = js.native
+    @JSName("randomGeometric")
+    val randomGeometric_Original: RandomGeometric_ = js.native
+    
+    /**
+      * Returns a function for generating random integers with a uniform distribution.
+      * The minimum allowed value of a returned number is ⌊min⌋ (inclusive), and the maximum is ⌊max - 1⌋ (inclusive)
+      * Min defaults to 0.
+      *
+      * @param max The maximum allowed value of a returned number.
+      */
+    def randomInt(max: Double): js.Function0[Double] = js.native
+    /**
+      * Returns a function for generating random integers with a uniform distribution.
+      * The minimum allowed value of a returned number is ⌊min⌋ (inclusive), and the maximum is ⌊max - 1⌋ (inclusive)
+      *
+      * @param min The minimum allowed value of a returned number.
+      * @param max The maximum allowed value of a returned number.
+      */
+    // tslint:disable-next-line:unified-signatures
+    def randomInt(min: Double, max: Double): js.Function0[Double] = js.native
+    @JSName("randomInt")
+    val randomInt_Original: RandomInt_ = js.native
+    
     /**
       * Returns a function for generating random numbers with an Irwin–Hall distribution with n independent variables.
+      * If the fractional part of n is non-zero, this is treated as adding d3.randomUniform() times that fractional part to the integral part.
       *
       * @param n Number of independent random variables to use.
       */
     def randomIrwinHall(n: Double): js.Function0[Double] = js.native
+    @JSName("randomIrwinHall")
+    val randomIrwinHall_Original: RandomIrwinHall_ = js.native
+    
+    def randomLcg(): js.Function0[Double] = js.native
+    def randomLcg(seed: Double): js.Function0[Double] = js.native
+    
     /**
       * Returns a function for generating random numbers with a log-normal distribution. The expected value of the random variable’s natural logarithm is mu,
       * with the given standard deviation sigma. If mu is not specified, it defaults to 0; if sigma is not specified, it defaults to 1.
@@ -2500,6 +3116,23 @@ object coreMod extends js.Object {
     def randomLogNormal(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
     def randomLogNormal(mu: Double): js.Function0[Double] = js.native
     def randomLogNormal(mu: Double, sigma: Double): js.Function0[Double] = js.native
+    @JSName("randomLogNormal")
+    val randomLogNormal_Original: RandomLogNormal_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with a logistic distribution.
+      * a and b have the same meanings and default values as in d3.randomWeibull.
+      *
+      * @param a Location parameter
+      * @param b Scale parameter
+      */
+    def randomLogistic(): js.Function0[Double] = js.native
+    def randomLogistic(a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
+    def randomLogistic(a: Double): js.Function0[Double] = js.native
+    def randomLogistic(a: Double, b: Double): js.Function0[Double] = js.native
+    @JSName("randomLogistic")
+    val randomLogistic_Original: RandomLogistic_ = js.native
+    
     /**
       * Returns a function for generating random numbers with a normal (Gaussian) distribution.
       * The expected value of the generated numbers is mu, with the given standard deviation sigma.
@@ -2512,21 +3145,108 @@ object coreMod extends js.Object {
     def randomNormal(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
     def randomNormal(mu: Double): js.Function0[Double] = js.native
     def randomNormal(mu: Double, sigma: Double): js.Function0[Double] = js.native
+    @JSName("randomNormal")
+    val randomNormal_Original: RandomNormal_ = js.native
+    
     /**
-      * Returns a function for generating random numbers with a uniform distribution).
-      * The minimum allowed value of a returned number is min, and the maximum is max.
-      * If min is not specified, it defaults to 0; if max is not specified, it defaults to 1.
+      * Returns a function for generating random numbers with a Pareto distribution with the shape alpha.
+      * The value alpha must be a positive value.
       *
-      * @param min The minimum allowed value of a returned number, defaults to 0.
+      * @param alpha alpha
+      */
+    def randomPareto(alpha: Double): js.Function0[Double] = js.native
+    @JSName("randomPareto")
+    val randomPareto_Original: RandomPareto_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with a Poisson distribution with mean lambda.
+      *
+      * @param lambda Mean
+      */
+    def randomPoisson(lambda: Double): js.Function0[Double] = js.native
+    @JSName("randomPoisson")
+    val randomPoisson_Original: RandomPoisson_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with a uniform distribution.
+      * The minimum allowed value of a returned number is min (inclusive), and the maximum is max (exclusive).
+      * Min defaults to 0; if max is not specified, it defaults to 1.
+      *
       * @param max The maximum allowed value of a returned number, defaults to 1.
       */
     def randomUniform(): js.Function0[Double] = js.native
-    def randomUniform(min: js.UndefOr[scala.Nothing], max: Double): js.Function0[Double] = js.native
-    def randomUniform(min: Double): js.Function0[Double] = js.native
+    def randomUniform(max: Double): js.Function0[Double] = js.native
+    /**
+      * Returns a function for generating random numbers with a uniform distribution.
+      * The minimum allowed value of a returned number is min (inclusive), and the maximum is max (exclusive).
+      *
+      * @param min The minimum allowed value of a returned number.
+      * @param max The maximum allowed value of a returned number.
+      */
+    // tslint:disable-next-line:unified-signatures
     def randomUniform(min: Double, max: Double): js.Function0[Double] = js.native
+    @JSName("randomUniform")
+    val randomUniform_Original: RandomUniform_ = js.native
+    
+    /**
+      * Returns a function for generating random numbers with one of the generalized extreme value distributions, depending on k:
+      * If k is positive, the Weibull distribution with shape parameter k
+      * If k is zero, the Gumbel distribution
+      * If k is negative, the Fréchet distribution with shape parameter −k
+      * In all three cases, a is the location parameter and b is the scale parameter.
+      * If a is not specified, it defaults to 0; if b is not specified, it defaults to 1.
+      *
+      * @param k Shape parameter
+      * @param a Location parameter
+      * @param b Scale parameter
+      */
+    def randomWeibull(k: Double): js.Function0[Double] = js.native
+    def randomWeibull(k: Double, a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
+    def randomWeibull(k: Double, a: Double): js.Function0[Double] = js.native
+    def randomWeibull(k: Double, a: Double, b: Double): js.Function0[Double] = js.native
+    @JSName("randomWeibull")
+    val randomWeibull_Original: RandomWeibull_ = js.native
+    
     def range(start: Double, stop: Double): js.Array[Double] = js.native
     def range(start: Double, stop: Double, step: Double): js.Array[Double] = js.native
     def range(stop: Double): js.Array[Double] = js.native
+    
+    def reduce[T](
+      iterable: Iterable[T],
+      reducer: js.Function4[
+          /* previousValue */ T, 
+          /* currentValue */ T, 
+          /* currentIndex */ Double, 
+          /* iterable */ Iterable[T], 
+          T
+        ]
+    ): T = js.native
+    def reduce[T](
+      iterable: Iterable[T],
+      reducer: js.Function4[
+          /* previousValue */ T, 
+          /* currentValue */ T, 
+          /* currentIndex */ Double, 
+          /* iterable */ Iterable[T], 
+          T
+        ],
+      initialValue: T
+    ): T = js.native
+    @JSName("reduce")
+    def reduce_TU_U[T, U](
+      iterable: Iterable[T],
+      reducer: js.Function4[
+          /* previousValue */ U, 
+          /* currentValue */ T, 
+          /* currentIndex */ Double, 
+          /* iterable */ Iterable[T], 
+          U
+        ],
+      initialValue: U
+    ): U = js.native
+    
+    def reverse[T](iterable: Iterable[T]): js.Array[T] = js.native
+    
     def rgb(color: ColorCommonInstance): RGBColor = js.native
     /**
       * Converts the provided color instance and returns an RGB color. The color instance is converted to the RGB color space using color.rgb.
@@ -2552,101 +3272,263 @@ object coreMod extends js.Object {
       */
     def rgb(r: Double, g: Double, b: Double): RGBColor = js.native
     def rgb(r: Double, g: Double, b: Double, opacity: Double): RGBColor = js.native
+    @JSName("rgb")
+    val rgb_Original: RGBColorFactory = js.native
+    
     def ribbon(): RibbonGenerator[_, Ribbon_, RibbonSubgroup] = js.native
     @JSName("ribbon")
     def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[_, Datum, SubgroupDatum] = js.native
     @JSName("ribbon")
     def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = js.native
-    def rollup[TObject, TKey, TReduce](
-      a: Iterable[TObject],
+    
+    def rollup[TObject, TReduce, TKey](
+      iterable: Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key: js.Function1[/* value */ TObject, TKey]
     ): Map[TKey, TReduce] = js.native
-    def scaleBand(): ScaleBand_[String] = js.native
-    @JSName("scaleBand")
-    def scaleBand_Domain_ToString[Domain /* <: typings.d3Scale.anon.ToString */](): ScaleBand_[Domain] = js.native
-    def scaleDiverging[T](interpolator: js.Function1[/* t */ Double, T]): ScaleDiverging_[T] = js.native
-    def scaleIdentity(): ScaleIdentity_ = js.native
-    def scaleLinear(): ScaleLinear_[Double, Double] = js.native
-    @JSName("scaleLinear")
-    def scaleLinear_Output[Output](): ScaleLinear_[Output, Output] = js.native
-    @JSName("scaleLinear")
-    def scaleLinear_RangeOutput[Range, Output](): ScaleLinear_[Range, Output] = js.native
-    def scaleLog(): ScaleLogarithmic[Double, Double] = js.native
-    @JSName("scaleLog")
-    def scaleLog_Output[Output](): ScaleLogarithmic[Output, Output] = js.native
-    @JSName("scaleLog")
-    def scaleLog_RangeOutput[Range, Output](): ScaleLogarithmic[Range, Output] = js.native
-    def scaleOrdinal[Range](): ScaleOrdinal_[String, Range] = js.native
-    def scaleOrdinal[Range](range: js.Array[Range]): ScaleOrdinal_[String, Range] = js.native
+    def rollup[TObject, TReduce, TKey1, TKey2](
+      iterable: Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): Map[TKey1, Map[TKey2, TReduce]] = js.native
+    def rollup[TObject, TReduce, TKey1, TKey2, TKey3](
+      iterable: Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): Map[TKey1, Map[TKey2, Map[TKey3, TReduce]]] = js.native
+    
+    def rollups[TObject, TReduce, TKey](
+      iterable: Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key: js.Function1[/* value */ TObject, TKey]
+    ): js.Array[js.Tuple2[TKey, TReduce]] = js.native
+    def rollups[TObject, TReduce, TKey1, TKey2](
+      iterable: Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TReduce]]]] = js.native
+    def rollups[TObject, TReduce, TKey1, TKey2, TKey3](
+      iterable: Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): js.Array[
+        js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, TReduce]]]]]
+      ] = js.native
+    
+    def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](): ScaleBand_[Domain] = js.native
+    def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScaleBand_[Domain] = js.native
+    def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScaleBand_[Domain] = js.native
+    
+    def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDiverging[Output, Unknown](interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = js.native
+    
+    def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    
+    def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    
+    def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    
+    def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+    
+    def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = js.native
+    def scaleIdentity[Unknown](range: Iterable[NumberValue]): ScaleIdentity_[Unknown] = js.native
+    
+    val scaleImplicit: Name = js.native
+    
+    def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = js.native
+    def scaleLinear[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = js.native
+    def scaleLinear[Range, Output, Unknown](range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = js.native
+    
+    def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = js.native
+    def scaleLog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = js.native
+    def scaleLog[Range, Output, Unknown](range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = js.native
+    
+    def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = js.native
+    def scaleOrdinal[Range](range: Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = js.native
+    def scaleOrdinal[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = js.native
     @JSName("scaleOrdinal")
-    def scaleOrdinal_Domain_ToStringRange[Domain /* <: typings.d3Scale.anon.ToString */, Range](): ScaleOrdinal_[Domain, Range] = js.native
+    def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = js.native
     @JSName("scaleOrdinal")
-    def scaleOrdinal_Domain_ToStringRange[Domain /* <: typings.d3Scale.anon.ToString */, Range](range: js.Array[Range]): ScaleOrdinal_[Domain, Range] = js.native
-    def scalePoint(): ScalePoint_[String] = js.native
-    @JSName("scalePoint")
-    def scalePoint_Domain_ToString[Domain /* <: typings.d3Scale.anon.ToString */](): ScalePoint_[Domain] = js.native
-    def scalePow(): ScalePower[Double, Double] = js.native
-    @JSName("scalePow")
-    def scalePow_Output[Output](): ScalePower[Output, Output] = js.native
-    @JSName("scalePow")
-    def scalePow_RangeOutput[Range, Output](): ScalePower[Range, Output] = js.native
-    def scaleQuantile(): ScaleQuantile_[Double] = js.native
-    @JSName("scaleQuantile")
-    def scaleQuantile_Range[Range](): ScaleQuantile_[Range] = js.native
-    def scaleQuantize(): ScaleQuantize_[Double] = js.native
-    @JSName("scaleQuantize")
-    def scaleQuantize_Range[Range](): ScaleQuantize_[Range] = js.native
-    def scaleSequential[Output](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output] = js.native
-    def scaleSqrt(): ScalePower[Double, Double] = js.native
-    @JSName("scaleSqrt")
-    def scaleSqrt_Output[Output](): ScalePower[Output, Output] = js.native
-    @JSName("scaleSqrt")
-    def scaleSqrt_RangeOutput[Range, Output](): ScalePower[Range, Output] = js.native
-    def scaleSymlog(): ScaleSymLog_[Double, Double] = js.native
-    @JSName("scaleSymlog")
-    def scaleSymlog_Output[Output](): ScaleSymLog_[Output, Output] = js.native
-    @JSName("scaleSymlog")
-    def scaleSymlog_RangeOutput[Range, Output](): ScaleSymLog_[Range, Output] = js.native
-    def scaleThreshold(): ScaleThreshold_[Double, Double] = js.native
-    @JSName("scaleThreshold")
-    def scaleThreshold_Domain_UnionDoubleStringDateRange[Domain /* <: Double | String | Date */, Range](): ScaleThreshold_[Domain, Range] = js.native
-    def scaleTime(): ScaleTime_[Double, Double] = js.native
-    @JSName("scaleTime")
-    def scaleTime_Output[Output](): ScaleTime_[Output, Output] = js.native
-    @JSName("scaleTime")
-    def scaleTime_RangeOutput[Range, Output](): ScaleTime_[Range, Output] = js.native
-    def scaleUtc(): ScaleTime_[Double, Double] = js.native
-    @JSName("scaleUtc")
-    def scaleUtc_Output[Output](): ScaleTime_[Output, Output] = js.native
-    @JSName("scaleUtc")
-    def scaleUtc_RangeOutput[Range, Output](): ScaleTime_[Range, Output] = js.native
-    def scan(array: Iterable[Double]): js.UndefOr[Double] = js.native
-    def scan(array: Iterable[Double], comparator: js.Function2[/* a */ Double, /* b */ Double, Double]): js.UndefOr[Double] = js.native
-    @JSName("scan")
-    def scan_T[T](array: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = js.native
+    def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = js.native
+    
+    def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](): ScalePoint_[Domain] = js.native
+    def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScalePoint_[Domain] = js.native
+    def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScalePoint_[Domain] = js.native
+    
+    def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = js.native
+    def scalePow[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+    def scalePow[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+    
+    def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = js.native
+    def scaleQuantile[Range, Unknown](domain: Iterable[js.UndefOr[NumberValue | Null]], range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = js.native
+    def scaleQuantile[Range, Unknown](range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = js.native
+    
+    def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = js.native
+    def scaleQuantize[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = js.native
+    def scaleQuantize[Range, Unknown](range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = js.native
+    
+    def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = js.native
+    def scaleRadial[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = js.native
+    def scaleRadial[Range, Unknown](range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = js.native
+    
+    def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequential[Output, Unknown](interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = js.native
+    
+    def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    
+    def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    
+    def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = js.native
+    def scaleSequentialQuantile[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = js.native
+    def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = js.native
+    
+    def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    
+    def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+    
+    def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = js.native
+    def scaleSqrt[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+    def scaleSqrt[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+    
+    def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = js.native
+    def scaleSymlog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = js.native
+    def scaleSymlog[Range, Output, Unknown](range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = js.native
+    
+    def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = js.native
+    def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = js.native
+    def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = js.native
+    
+    def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = js.native
+    def scaleTime[Range, Output, Unknown](domain: Iterable[Date | NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+    def scaleTime[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+    
+    def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = js.native
+    def scaleUtc[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+    def scaleUtc[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+    
+    val schemeAccent: js.Array[String] = js.native
+    
+    val schemeBlues: js.Array[js.Array[String]] = js.native
+    
+    val schemeBrBG: js.Array[js.Array[String]] = js.native
+    
+    val schemeBuGn: js.Array[js.Array[String]] = js.native
+    
+    val schemeBuPu: js.Array[js.Array[String]] = js.native
+    
+    val schemeCategory10: js.Array[String] = js.native
+    
+    val schemeDark2: js.Array[String] = js.native
+    
+    val schemeGnBu: js.Array[js.Array[String]] = js.native
+    
+    val schemeGreens: js.Array[js.Array[String]] = js.native
+    
+    val schemeGreys: js.Array[js.Array[String]] = js.native
+    
+    val schemeOrRd: js.Array[js.Array[String]] = js.native
+    
+    val schemeOranges: js.Array[js.Array[String]] = js.native
+    
+    val schemePRGn: js.Array[js.Array[String]] = js.native
+    
+    val schemePaired: js.Array[String] = js.native
+    
+    val schemePastel1: js.Array[String] = js.native
+    
+    val schemePastel2: js.Array[String] = js.native
+    
+    val schemePiYG: js.Array[js.Array[String]] = js.native
+    
+    val schemePuBu: js.Array[js.Array[String]] = js.native
+    
+    val schemePuBuGn: js.Array[js.Array[String]] = js.native
+    
+    val schemePuOr: js.Array[js.Array[String]] = js.native
+    
+    val schemePuRd: js.Array[js.Array[String]] = js.native
+    
+    val schemePurples: js.Array[js.Array[String]] = js.native
+    
+    val schemeRdBu: js.Array[js.Array[String]] = js.native
+    
+    val schemeRdGy: js.Array[js.Array[String]] = js.native
+    
+    val schemeRdPu: js.Array[js.Array[String]] = js.native
+    
+    val schemeRdYlBu: js.Array[js.Array[String]] = js.native
+    
+    val schemeRdYlGn: js.Array[js.Array[String]] = js.native
+    
+    val schemeReds: js.Array[js.Array[String]] = js.native
+    
+    val schemeSet1: js.Array[String] = js.native
+    
+    val schemeSet2: js.Array[String] = js.native
+    
+    val schemeSet3: js.Array[String] = js.native
+    
+    val schemeSpectral: js.Array[js.Array[String]] = js.native
+    
+    val schemeTableau10: js.Array[String] = js.native
+    
+    val schemeYlGn: js.Array[js.Array[String]] = js.native
+    
+    val schemeYlGnBu: js.Array[js.Array[String]] = js.native
+    
+    val schemeYlOrBr: js.Array[js.Array[String]] = js.native
+    
+    val schemeYlOrRd: js.Array[js.Array[String]] = js.native
+    
     def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, _] = js.native
+    
     def selectAll(): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     def selectAll(selector: js.UndefOr[scala.Nothing]): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     def selectAll(selector: Null): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def selectAll[GElement /* <: BaseType */, OldDatum](nodes: typings.d3Selection.mod.ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
+    def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, _] = js.native
+    
     def selection(): Selection_[HTMLElement, _, Null, js.UndefOr[scala.Nothing]] = js.native
+    
     def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = js.native
+    
     def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = js.native
-    def set(): Set_ = js.native
-    def set(array: js.Array[String | Stringifiable]): Set_ = js.native
-    def set(d3Set: Set_): Set_ = js.native
-    def set[T](
-      array: js.Array[T],
-      key: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], String]
-    ): Set_ = js.native
+    
     def shuffle(array: Float32Array): Float32Array = js.native
     def shuffle(array: Float32Array, lo: js.UndefOr[scala.Nothing], hi: Double): Float32Array = js.native
     def shuffle(array: Float32Array, lo: Double): Float32Array = js.native
@@ -2687,49 +3569,156 @@ object coreMod extends js.Object {
     def shuffle[T](array: js.Array[T], lo: js.UndefOr[scala.Nothing], hi: Double): js.Array[T] = js.native
     def shuffle[T](array: js.Array[T], lo: Double): js.Array[T] = js.native
     def shuffle[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = js.native
+    
+    def shuffler(random: js.Function0[Double]): FnCall = js.native
+    
+    def some[T](
+      iterable: Iterable[T],
+      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], _]
+    ): Boolean = js.native
+    
+    def sort[T](iterable: Iterable[T]): js.Array[T] = js.native
+    def sort[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
+    
     def stack(): Stack_[_, StringDictionary[Double], String] = js.native
-    def stackOffsetDiverging(series: Series[_, _], order: js.Array[Double]): Unit = js.native
-    def stackOffsetExpand(series: Series[_, _], order: js.Array[Double]): Unit = js.native
-    def stackOffsetNone(series: Series[_, _], order: js.Array[Double]): Unit = js.native
-    def stackOffsetSilhouette(series: Series[_, _], order: js.Array[Double]): Unit = js.native
-    def stackOffsetWiggle(series: Series[_, _], order: js.Array[Double]): Unit = js.native
+    
+    def stackOffsetDiverging(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+    
+    def stackOffsetExpand(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+    
+    def stackOffsetNone(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+    
+    def stackOffsetSilhouette(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+    
+    def stackOffsetWiggle(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+    
     def stackOrderAppearance(series: Series[_, _]): js.Array[Double] = js.native
+    
     def stackOrderAscending(series: Series[_, _]): js.Array[Double] = js.native
+    
     def stackOrderDescending(series: Series[_, _]): js.Array[Double] = js.native
+    
     def stackOrderInsideOut(series: Series[_, _]): js.Array[Double] = js.native
+    
     def stackOrderNone(series: Series[_, _]): js.Array[Double] = js.native
+    
     def stackOrderReverse(series: Series[_, _]): js.Array[Double] = js.native
+    
     @JSName("stack")
     def stack_Datum[Datum](): Stack_[_, Datum, String] = js.native
     @JSName("stack")
     def stack_DatumKey[Datum, Key](): Stack_[_, Datum, Key] = js.native
     @JSName("stack")
     def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = js.native
+    
     def stratify[Datum](): StratifyOperator[Datum] = js.native
+    
     def style(node: Element, name: String): String = js.native
-    def sum[T /* <: Numeric */](array: Iterable[js.UndefOr[T | Null]]): Double = js.native
+    
+    def subset[T](a: Iterable[T], b: Iterable[T]): Boolean = js.native
+    
+    def sum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Double = js.native
     def sum[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
     ): Double = js.native
+    
+    def superset[T](a: Iterable[T], b: Iterable[T]): Boolean = js.native
+    
     def svg(url: String): js.Promise[Document] = js.native
     def svg(url: String, init: RequestInit): js.Promise[Document] = js.native
-    def symbol(): Symbol_[_, _] = js.native
-    @JSName("symbol")
-    def symbol_Datum[Datum](): Symbol_[_, Datum] = js.native
+    
+    def symbol[Datum](): Symbol_[_, Datum] = js.native
+    def symbol[Datum](
+      `type`: js.UndefOr[scala.Nothing],
+      size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
+    ): Symbol_[_, Datum] = js.native
+    def symbol[Datum](`type`: js.UndefOr[scala.Nothing], size: Double): Symbol_[_, Datum] = js.native
+    def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[_, Datum] = js.native
+    def symbol[Datum](
+      `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+      size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
+    ): Symbol_[_, Datum] = js.native
+    def symbol[Datum](
+      `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+      size: Double
+    ): Symbol_[_, Datum] = js.native
+    def symbol[Datum](`type`: SymbolType): Symbol_[_, Datum] = js.native
+    def symbol[Datum](
+      `type`: SymbolType,
+      size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
+    ): Symbol_[_, Datum] = js.native
+    def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[_, Datum] = js.native
+    
+    val symbolCircle: SymbolType = js.native
+    
+    val symbolCross: SymbolType = js.native
+    
+    val symbolDiamond: SymbolType = js.native
+    
+    val symbolSquare: SymbolType = js.native
+    
+    val symbolStar: SymbolType = js.native
+    
+    val symbolTriangle: SymbolType = js.native
+    
+    val symbolWye: SymbolType = js.native
+    
     @JSName("symbol")
     def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](
+      `type`: js.UndefOr[scala.Nothing],
+      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+    ): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](`type`: js.UndefOr[scala.Nothing], size: Double): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](
+      `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+    ): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](
+      `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+      size: Double
+    ): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](
+      `type`: SymbolType,
+      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+    ): Symbol_[This, Datum] = js.native
+    @JSName("symbol")
+    def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = js.native
+    
+    val symbols: js.Array[SymbolType] = js.native
+    
     def text(url: String): js.Promise[String] = js.native
     def text(url: String, init: RequestInit): js.Promise[String] = js.native
+    
     def thresholdFreedmanDiaconis(values: ArrayLike[js.UndefOr[Double]], min: Double, max: Double): Double = js.native
+    
     def thresholdScott(values: ArrayLike[js.UndefOr[Double]], min: Double, max: Double): Double = js.native
+    
     def thresholdSturges(values: ArrayLike[js.UndefOr[Double]]): Double = js.native
+    
+    def tickFormat(start: Double, stop: Double, count: Double): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(start: Double, stop: Double, count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    
     def tickIncrement(start: Double, stop: Double, count: Double): Double = js.native
+    
     def tickStep(start: Double, stop: Double, count: Double): Double = js.native
+    
     def ticks(start: Double, stop: Double, count: Double): js.Array[Double] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2746,15 +3735,24 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeDay(): Date = js.native
     def timeDay(date: Date): Date = js.native
+    @JSName("timeDay")
+    val timeDay_Original: CountableTimeInterval = js.native
+    
     def timeDays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
-    def timeFormatDefaultLocale(defaultTimeLocale: TimeLocaleDefinition): TimeLocaleObject = js.native
-    def timeFormatLocale(timeLocale: TimeLocaleDefinition): TimeLocaleObject = js.native
+    
+    def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = js.native
+    
+    def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2771,12 +3769,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeFriday(): Date = js.native
     def timeFriday(date: Date): Date = js.native
+    @JSName("timeFriday")
+    val timeFriday_Original: CountableTimeInterval = js.native
+    
     def timeFridays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2793,9 +3797,14 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeHour(): Date = js.native
     def timeHour(date: Date): Date = js.native
+    @JSName("timeHour")
+    val timeHour_Original: CountableTimeInterval = js.native
+    
     def timeHours(start: Date, stop: Date): js.Array[Date] = js.native
     def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     def timeInterval(
       floor: js.Function1[/* date */ Date, Unit],
       offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
@@ -2811,9 +3820,11 @@ object coreMod extends js.Object {
       count: js.Function2[/* start */ Date, /* end */ Date, Double],
       field: js.Function1[/* date */ Date, Double]
     ): CountableTimeInterval = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2830,12 +3841,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeMillisecond(): Date = js.native
     def timeMillisecond(date: Date): Date = js.native
+    @JSName("timeMillisecond")
+    val timeMillisecond_Original: CountableTimeInterval = js.native
+    
     def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
     def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2852,12 +3869,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeMinute(): Date = js.native
     def timeMinute(date: Date): Date = js.native
+    @JSName("timeMinute")
+    val timeMinute_Original: CountableTimeInterval = js.native
+    
     def timeMinutes(start: Date, stop: Date): js.Array[Date] = js.native
     def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2874,12 +3897,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeMonday(): Date = js.native
     def timeMonday(date: Date): Date = js.native
+    @JSName("timeMonday")
+    val timeMonday_Original: CountableTimeInterval = js.native
+    
     def timeMondays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2896,13 +3925,20 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeMonth(): Date = js.native
     def timeMonth(date: Date): Date = js.native
+    @JSName("timeMonth")
+    val timeMonth_Original: CountableTimeInterval = js.native
+    
     def timeMonths(start: Date, stop: Date): js.Array[Date] = js.native
     def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2919,12 +3955,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeSaturday(): Date = js.native
     def timeSaturday(date: Date): Date = js.native
+    @JSName("timeSaturday")
+    val timeSaturday_Original: CountableTimeInterval = js.native
+    
     def timeSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2941,12 +3983,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeSecond(): Date = js.native
     def timeSecond(date: Date): Date = js.native
+    @JSName("timeSecond")
+    val timeSecond_Original: CountableTimeInterval = js.native
+    
     def timeSeconds(start: Date, stop: Date): js.Array[Date] = js.native
     def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2963,12 +4011,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeSunday(): Date = js.native
     def timeSunday(date: Date): Date = js.native
+    @JSName("timeSunday")
+    val timeSunday_Original: CountableTimeInterval = js.native
+    
     def timeSundays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -2985,12 +4039,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeThursday(): Date = js.native
     def timeThursday(date: Date): Date = js.native
+    @JSName("timeThursday")
+    val timeThursday_Original: CountableTimeInterval = js.native
+    
     def timeThursdays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3007,12 +4067,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeTuesday(): Date = js.native
     def timeTuesday(date: Date): Date = js.native
+    @JSName("timeTuesday")
+    val timeTuesday_Original: CountableTimeInterval = js.native
+    
     def timeTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3029,12 +4095,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeWednesday(): Date = js.native
     def timeWednesday(date: Date): Date = js.native
+    @JSName("timeWednesday")
+    val timeWednesday_Original: CountableTimeInterval = js.native
+    
     def timeWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
     def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3051,12 +4123,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeWeek(): Date = js.native
     def timeWeek(date: Date): Date = js.native
+    @JSName("timeWeek")
+    val timeWeek_Original: CountableTimeInterval = js.native
+    
     def timeWeeks(start: Date, stop: Date): js.Array[Date] = js.native
     def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3073,34 +4151,52 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def timeYear(): Date = js.native
     def timeYear(date: Date): Date = js.native
+    @JSName("timeYear")
+    val timeYear_Original: CountableTimeInterval = js.native
+    
     def timeYears(start: Date, stop: Date): js.Array[Date] = js.native
     def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
     def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
     def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
     def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+    
     def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
     def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
     def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
     def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+    
     def timerFlush(): Unit = js.native
-    def touch(container: ContainerElement, identifier: Double): (js.Tuple2[Double, Double]) | Null = js.native
-    def touch(container: ContainerElement, touches: TouchList, identifier: Double): (js.Tuple2[Double, Double]) | Null = js.native
-    def touches(container: ContainerElement): js.Array[js.Tuple2[Double, Double]] = js.native
-    def touches(container: ContainerElement, touches: TouchList): js.Array[js.Tuple2[Double, Double]] = js.native
+    
     def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
     def transition[OldDatum](transition: Transition_[BaseType, _, BaseType, _]): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
+    
     def transpose[T](matrix: ArrayLike[ArrayLike[T]]): js.Array[js.Array[T]] = js.native
+    
     def tree[Datum](): TreeLayout[Datum] = js.native
+    
     def treemap[Datum](): TreemapLayout[Datum] = js.native
+    
     def treemapBinary(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    
     def treemapDice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    
     def treemapResquarify(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    @JSName("treemapResquarify")
+    val treemapResquarify_Original: RatioSquarifyTilingFactory = js.native
+    
     def treemapSlice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    
     def treemapSliceDice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    
     def treemapSquarify(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    @JSName("treemapSquarify")
+    val treemapSquarify_Original: RatioSquarifyTilingFactory = js.native
+    
     def tsv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
     def tsv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
     def tsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
@@ -3122,9 +4218,19 @@ object coreMod extends js.Object {
           js.UndefOr[ParsedRow | Null]
         ]
     ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+    
     def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
     def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    
+    def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+    def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    
+    def tsvFormatRow(row: js.Array[String]): String = js.native
+    
     def tsvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
+    
+    def tsvFormatValue(value: String): String = js.native
+    
     def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = js.native
     def tsvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
       tsvString: String,
@@ -3135,14 +4241,19 @@ object coreMod extends js.Object {
           js.UndefOr[ParsedRow | Null]
         ]
     ): DSVParsedArray[ParsedRow] = js.native
+    
     def tsvParseRows(tsvString: String): js.Array[js.Array[String]] = js.native
     def tsvParseRows[ParsedRow /* <: js.Object */](
       tsvString: String,
       row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
     ): js.Array[ParsedRow] = js.native
+    
+    def union[T](iterables: Iterable[T]*): Set[T] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3159,13 +4270,20 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcDay(): Date = js.native
     def utcDay(date: Date): Date = js.native
+    @JSName("utcDay")
+    val utcDay_Original: CountableTimeInterval = js.native
+    
     def utcDays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3182,12 +4300,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcFriday(): Date = js.native
     def utcFriday(date: Date): Date = js.native
+    @JSName("utcFriday")
+    val utcFriday_Original: CountableTimeInterval = js.native
+    
     def utcFridays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3204,12 +4328,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcHour(): Date = js.native
     def utcHour(date: Date): Date = js.native
+    @JSName("utcHour")
+    val utcHour_Original: CountableTimeInterval = js.native
+    
     def utcHours(start: Date, stop: Date): js.Array[Date] = js.native
     def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3226,12 +4356,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcMillisecond(): Date = js.native
     def utcMillisecond(date: Date): Date = js.native
+    @JSName("utcMillisecond")
+    val utcMillisecond_Original: CountableTimeInterval = js.native
+    
     def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
     def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3248,12 +4384,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcMinute(): Date = js.native
     def utcMinute(date: Date): Date = js.native
+    @JSName("utcMinute")
+    val utcMinute_Original: CountableTimeInterval = js.native
+    
     def utcMinutes(start: Date, stop: Date): js.Array[Date] = js.native
     def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3270,12 +4412,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcMonday(): Date = js.native
     def utcMonday(date: Date): Date = js.native
+    @JSName("utcMonday")
+    val utcMonday_Original: CountableTimeInterval = js.native
+    
     def utcMondays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3292,13 +4440,20 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcMonth(): Date = js.native
     def utcMonth(date: Date): Date = js.native
+    @JSName("utcMonth")
+    val utcMonth_Original: CountableTimeInterval = js.native
+    
     def utcMonths(start: Date, stop: Date): js.Array[Date] = js.native
     def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3315,12 +4470,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcSaturday(): Date = js.native
     def utcSaturday(date: Date): Date = js.native
+    @JSName("utcSaturday")
+    val utcSaturday_Original: CountableTimeInterval = js.native
+    
     def utcSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3337,12 +4498,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcSecond(): Date = js.native
     def utcSecond(date: Date): Date = js.native
+    @JSName("utcSecond")
+    val utcSecond_Original: CountableTimeInterval = js.native
+    
     def utcSeconds(start: Date, stop: Date): js.Array[Date] = js.native
     def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3359,12 +4526,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcSunday(): Date = js.native
     def utcSunday(date: Date): Date = js.native
+    @JSName("utcSunday")
+    val utcSunday_Original: CountableTimeInterval = js.native
+    
     def utcSundays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3381,12 +4554,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcThursday(): Date = js.native
     def utcThursday(date: Date): Date = js.native
+    @JSName("utcThursday")
+    val utcThursday_Original: CountableTimeInterval = js.native
+    
     def utcThursdays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3403,12 +4582,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcTuesday(): Date = js.native
     def utcTuesday(date: Date): Date = js.native
+    @JSName("utcTuesday")
+    val utcTuesday_Original: CountableTimeInterval = js.native
+    
     def utcTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3425,12 +4610,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcWednesday(): Date = js.native
     def utcWednesday(date: Date): Date = js.native
+    @JSName("utcWednesday")
+    val utcWednesday_Original: CountableTimeInterval = js.native
+    
     def utcWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
     def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3447,12 +4638,18 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcWeek(): Date = js.native
     def utcWeek(date: Date): Date = js.native
+    @JSName("utcWeek")
+    val utcWeek_Original: CountableTimeInterval = js.native
+    
     def utcWeeks(start: Date, stop: Date): js.Array[Date] = js.native
     def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -3469,27 +4666,67 @@ object coreMod extends js.Object {
       *
       * @param date A date object.
       */
+    def utcYear(): Date = js.native
     def utcYear(date: Date): Date = js.native
+    @JSName("utcYear")
+    val utcYear_Original: CountableTimeInterval = js.native
+    
     def utcYears(start: Date, stop: Date): js.Array[Date] = js.native
     def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-    def values(obj: js.Object): js.Array[_] = js.native
-    def values[T](obj: StringDictionary[T]): js.Array[T] = js.native
-    def values[T](obj: ArrayLike[T]): js.Array[T] = js.native
-    def variance[T /* <: Numeric */](array: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
+    
+    def variance[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
     def variance[T](
-      array: Iterable[T],
+      iterable: Iterable[T],
       accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = js.native
-    def voronoi[T](): VoronoiLayout[T] = js.native
+    
+    val version: String = js.native
+    
     def window(DOMNode: Document): Window = js.native
     def window(DOMNode: Element): Window = js.native
     def window(DOMNode: Window): Window = js.native
+    
     def xml(url: String): js.Promise[XMLDocument] = js.native
     def xml(url: String, init: RequestInit): js.Promise[XMLDocument] = js.native
+    
     def zip[T](arrays: ArrayLike[T]*): js.Array[js.Array[T]] = js.native
+    
     def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = js.native
+    
+    val zoomIdentity: ZoomTransform_ = js.native
+    
     def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = js.native
+    
+    @js.native
+    /**
+      * Creates a full precision adder for IEEE 754 floating point numbers, setting its initial value to 0.
+      */
+    class Adder ()
+      extends typings.d3.mod.Adder
+    @js.native
+    object Adder
+      extends TopLevel[Instantiable0[typings.d3.mod.Adder]]
+    
+    @js.native
+    class FormatSpecifier protected ()
+      extends typings.d3.mod.FormatSpecifier_ {
+      /**
+        * Given the specified specifier object, returning an object with exposed fields that correspond to the format specification mini-language and a toString method that reconstructs the specifier.
+        * @param specifier A specifier object.
+        */
+      def this(specifier: FormatSpecifierObject) = this()
+    }
+    @js.native
+    object FormatSpecifier
+      extends TopLevel[
+              Instantiable1[/* specifier */ FormatSpecifierObject, typings.d3.mod.FormatSpecifier_]
+            ]
+    
+    @js.native
+    class Voronoi[P] ()
+      extends typings.d3.mod.Voronoi[P]
+    @js.native
+    object Voronoi
+      extends TopLevel[Instantiable0[typings.d3.mod.Voronoi[js.Object]]]
   }
-  
 }
-

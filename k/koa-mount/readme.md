@@ -10,9 +10,9 @@ Mounting middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-mount |
 | Keywords           | koa, middleware, mount, mounting |
-| # releases         | 3 |
-| # dependents       | 408 |
-| # downloads        | 4066458 |
+| # releases         | 1 |
+| # dependents       | 443 |
+| # downloads        | 4798012 |
 | # stars            | 8 |
 
 ## Links

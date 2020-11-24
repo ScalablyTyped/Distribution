@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.ComponentAdded event.
@@ -18,4 +18,3 @@ class ASPxClientReportDesignerComponentAddedEventArgs protected ()
     */
   def this(model: js.Any, parent: js.Any) = this()
 }
-

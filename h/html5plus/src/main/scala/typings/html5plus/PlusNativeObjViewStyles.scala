@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * View控件样式
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusNativeObjViewStyles extends js.Object {
+  
   /**
     * 区域背景颜色
     * 可取值：
@@ -21,6 +22,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var backgroundColor: js.UndefOr[String] = js.native
+  
   /**
     * View控件垂直向上的偏移量
     * 现对于父容器底部的距离，可取值：
@@ -32,6 +34,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var bottom: js.UndefOr[String] = js.native
+  
   /**
     * View控件的停靠方式
     * 仅当View控件添加到Webview窗口对象中并且position属性值设置为"dock"时才生效，此时View控件挤压Webview窗口的大小。
@@ -45,6 +48,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var dock: js.UndefOr[String] = js.native
+  
   /**
     * 区域的高度
     * 可取值：
@@ -56,6 +60,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var height: js.UndefOr[String] = js.native
+  
   /**
     * 区域左上角的水平偏移量
     * 可取值：
@@ -67,6 +72,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var left: js.UndefOr[String] = js.native
+  
   /**
     * View控件的不透明度
     * 取值范围为0-1，0为全透明，1为不透明，默认值为1，即不透明。
@@ -74,6 +80,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var opacity: js.UndefOr[Double] = js.native
+  
   /**
     * View控件的排版方式
     * 仅当View控件添加到Webview窗口对象中时才生效。
@@ -86,6 +93,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var position: js.UndefOr[String] = js.native
+  
   /**
     * View控件的状态栏样式
     * 仅在应用设置为沉浸式状态栏样式下有效，设置此属性后将自动保留系统状态栏区域不被View控件占用（即View控件非沉浸式样式显示）。
@@ -93,6 +101,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var statusbar: js.UndefOr[PlusNativeObjViewStatusbarStyles] = js.native
+  
   /**
     * View控件左上角的垂直偏移量
     * 可取值：像素值，如"100px"；百分比，如"10%"，相对于父控件的高度；自动计算，如"auto",根据height值自动计算，相对于父控件垂直居中。
@@ -100,6 +109,7 @@ trait PlusNativeObjViewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var top: js.UndefOr[String] = js.native
+  
   /**
     * 区域的宽度
     * 可取值：像素值，如"100px";百分比，如"10%"，相对于父控件的宽度。
@@ -108,65 +118,87 @@ trait PlusNativeObjViewStyles extends js.Object {
     */
   var width: js.UndefOr[String] = js.native
 }
-
 object PlusNativeObjViewStyles {
+  
   @scala.inline
   def apply(): PlusNativeObjViewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjViewStyles]
   }
+  
   @scala.inline
   implicit class PlusNativeObjViewStylesOps[Self <: PlusNativeObjViewStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    
     @scala.inline
     def setBottom(value: String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBottom: Self = this.set("bottom", js.undefined)
+    
     @scala.inline
     def setDock(value: String): Self = this.set("dock", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDock: Self = this.set("dock", js.undefined)
+    
     @scala.inline
     def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeft: Self = this.set("left", js.undefined)
+    
     @scala.inline
     def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOpacity: Self = this.set("opacity", js.undefined)
+    
     @scala.inline
     def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePosition: Self = this.set("position", js.undefined)
+    
     @scala.inline
     def setStatusbar(value: PlusNativeObjViewStatusbarStyles): Self = this.set("statusbar", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatusbar: Self = this.set("statusbar", js.undefined)
+    
     @scala.inline
     def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTop: Self = this.set("top", js.undefined)
+    
     @scala.inline
     def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }
-  
 }
-

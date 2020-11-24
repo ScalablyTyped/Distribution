@@ -2,10 +2,11 @@ package typings.bpmnModdle.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BPMNModdle extends Moddle {
+  
   /**
     * Instantiates a BPMN model tree from a given xml string.
     *
@@ -46,4 +47,3 @@ trait BPMNModdle extends Moddle {
     */
   def fromXML(xmlStr: String, typeName: String, options: Option, done: ImportFn): Unit = js.native
 }
-

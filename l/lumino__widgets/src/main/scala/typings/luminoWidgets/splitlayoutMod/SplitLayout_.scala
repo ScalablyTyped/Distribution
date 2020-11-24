@@ -8,7 +8,7 @@ import typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/splitlayout", "SplitLayout")
 @js.native
@@ -19,26 +19,39 @@ class SplitLayout_ protected () extends PanelLayout {
     * @param options - The options for initializing the layout.
     */
   def this(options: IOptions) = this()
+  
   var _alignment: js.Any = js.native
+  
   var _box: js.Any = js.native
+  
   var _dirty: js.Any = js.native
+  
   /**
     * Fit the layout to the total size required by the widgets.
     */
   var _fit: js.Any = js.native
+  
   var _fixed: js.Any = js.native
+  
   var _handles: js.Any = js.native
+  
   var _hasNormedSizes: js.Any = js.native
+  
   var _items: js.Any = js.native
+  
   var _orientation: js.Any = js.native
+  
   var _sizers: js.Any = js.native
+  
   var _spacing: js.Any = js.native
+  
   /**
     * Update the layout position and size of the widgets.
     *
     * The parent offset dimensions should be `-1` if unknown.
     */
   var _update: js.Any = js.native
+  
   /**
     * Get the content alignment for the split layout.
     *
@@ -58,28 +71,12 @@ class SplitLayout_ protected () extends PanelLayout {
     * entire split layout.
     */
   var alignment: Alignment = js.native
+  
   /**
     * A read-only array of the split handles in the layout.
     */
   val handles: js.Array[HTMLDivElement] = js.native
-  /**
-    * Get the layout orientation for the split layout.
-    */
-  /**
-    * Set the layout orientation for the split layout.
-    */
-  var orientation: Orientation = js.native
-  /**
-    * The renderer used by the split layout.
-    */
-  val renderer: IRenderer = js.native
-  /**
-    * Get the inter-element spacing for the split layout.
-    */
-  /**
-    * Set the inter-element spacing for the split layout.
-    */
-  var spacing: Double = js.native
+  
   /**
     * Move the offset position of a split handle.
     *
@@ -94,6 +91,15 @@ class SplitLayout_ protected () extends PanelLayout {
     * position. The sibling widgets will be adjusted as necessary.
     */
   def moveHandle(index: Double, position: Double): Unit = js.native
+  
+  /**
+    * Get the layout orientation for the split layout.
+    */
+  /**
+    * Set the layout orientation for the split layout.
+    */
+  var orientation: Orientation = js.native
+  
   /**
     * Get the relative sizes of the widgets in the layout.
     *
@@ -106,6 +112,12 @@ class SplitLayout_ protected () extends PanelLayout {
     * This method **does not** measure the DOM nodes.
     */
   def relativeSizes(): js.Array[Double] = js.native
+  
+  /**
+    * The renderer used by the split layout.
+    */
+  val renderer: IRenderer = js.native
+  
   /**
     * Set the relative sizes for the widgets in the layout.
     *
@@ -117,5 +129,12 @@ class SplitLayout_ protected () extends PanelLayout {
     * The actual geometry of the DOM nodes is updated asynchronously.
     */
   def setRelativeSizes(sizes: js.Array[Double]): Unit = js.native
+  
+  /**
+    * Get the inter-element spacing for the split layout.
+    */
+  /**
+    * Set the inter-element spacing for the split layout.
+    */
+  var spacing: Double = js.native
 }
-

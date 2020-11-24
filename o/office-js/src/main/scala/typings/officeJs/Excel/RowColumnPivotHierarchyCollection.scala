@@ -8,7 +8,7 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,11 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RowColumnPivotHierarchyCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_RowColumnPivotHierarchyCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[RowColumnPivotHierarchy] = js.native
+  
   /**
     * Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,
     or filter axis, it will be removed from that location.
@@ -30,12 +26,18 @@ trait RowColumnPivotHierarchyCollection extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   def add(pivotHierarchy: PivotHierarchy): RowColumnPivotHierarchy = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_RowColumnPivotHierarchyCollection: RequestContext = js.native
+  
   /**
     * Gets the number of pivot hierarchies in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Gets a RowColumnPivotHierarchy by its name or id.
     *
@@ -44,6 +46,7 @@ trait RowColumnPivotHierarchyCollection extends ClientObject {
     * @param name Name of the RowColumnPivotHierarchy to be retrieved.
     */
   def getItem(name: String): RowColumnPivotHierarchy = js.native
+  
   /**
     * Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.
     *
@@ -52,6 +55,10 @@ trait RowColumnPivotHierarchyCollection extends ClientObject {
     * @param name Name of the RowColumnPivotHierarchy to be retrieved.
     */
   def getItemOrNullObject(name: String): RowColumnPivotHierarchy = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[RowColumnPivotHierarchy] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -62,16 +69,17 @@ trait RowColumnPivotHierarchyCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): RowColumnPivotHierarchyCollection = js.native
   def load(propertyNames: String): RowColumnPivotHierarchyCollection = js.native
   def load(propertyNames: js.Array[String]): RowColumnPivotHierarchyCollection = js.native
+  
   /**
     * Removes the PivotHierarchy from the current axis.
     *
     * [Api set: ExcelApi 1.8]
     */
   def remove(rowColumnPivotHierarchy: RowColumnPivotHierarchy): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.RowColumnPivotHierarchyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): RowColumnPivotHierarchyCollectionData = js.native
 }
-

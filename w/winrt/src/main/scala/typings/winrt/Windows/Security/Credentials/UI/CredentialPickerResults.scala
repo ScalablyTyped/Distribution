@@ -3,12 +3,12 @@ package typings.winrt.Windows.Security.Credentials.UI
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CredentialPickerResults extends ICredentialPickerResults
-
 object CredentialPickerResults {
+  
   @scala.inline
   def apply(
     credential: IBuffer,
@@ -23,4 +23,3 @@ object CredentialPickerResults {
     __obj.asInstanceOf[CredentialPickerResults]
   }
 }
-

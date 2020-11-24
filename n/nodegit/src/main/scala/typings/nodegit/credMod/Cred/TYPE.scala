@@ -9,7 +9,7 @@ import typings.nodegit.nodegitNumbers.`64`
 import typings.nodegit.nodegitNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.nodegit.nodegitNumbers.`1`
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.nodegit.nodegitNumbers.`64`
 */
 trait TYPE extends js.Object
-
 object TYPE {
+  
   @scala.inline
   def DEFAULT: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def SSH_CUSTOM: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def SSH_INTERACTIVE: `16` = 16.asInstanceOf[`16`]
+  
   @scala.inline
   def SSH_KEY: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def SSH_MEMORY: `64` = 64.asInstanceOf[`64`]
+  
   @scala.inline
   def USERNAME: `32` = 32.asInstanceOf[`32`]
+  
   @scala.inline
   def USERPASS_PLAINTEXT: `1` = 1.asInstanceOf[`1`]
 }
-

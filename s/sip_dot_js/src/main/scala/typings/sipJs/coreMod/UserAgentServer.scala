@@ -4,7 +4,7 @@ import typings.sipJs.incomingRequestMod.IncomingRequestDelegate
 import typings.sipJs.userAgentServerMod.ServerTransactionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core", "UserAgentServer")
 @js.native
@@ -22,4 +22,3 @@ class UserAgentServer protected ()
     delegate: IncomingRequestDelegate
   ) = this()
 }
-

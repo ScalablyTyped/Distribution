@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/discovery/v1", "discovery_v1.Resource$Apis")
 @js.native
 class ResourceApis protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * discovery.apis.getRest
     * @desc Retrieve the description of a particular version of an api.
@@ -42,6 +44,7 @@ class ResourceApis protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRestDescription]
   ): Unit = js.native
+  
   /**
     * discovery.apis.list
     * @desc Retrieve the list of APIs supported at this endpoint.
@@ -72,4 +75,3 @@ class ResourceApis protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDirectoryList]
   ): Unit = js.native
 }
-

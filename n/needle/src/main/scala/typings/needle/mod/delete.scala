@@ -2,11 +2,12 @@ package typings.needle.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("needle", "delete")
 @js.native
 object delete extends js.Object {
+  
   /**
     * Issues an HTTP DELETE request.
     */
@@ -16,4 +17,3 @@ object delete extends js.Object {
   def apply(url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
   def apply(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
 }
-

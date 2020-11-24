@@ -5,7 +5,7 @@ import typings.regexpp.regexppStrings.start
 import typings.regexpp.regexppStrings.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.EdgeAssertion
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait BoundaryAssertion
   extends Assertion
      with LeafNode
-
 object BoundaryAssertion {
+  
   @scala.inline
   def EdgeAssertion(
     end: Double,
@@ -29,6 +29,7 @@ object BoundaryAssertion {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundaryAssertion]
   }
+  
   @scala.inline
   def WordBoundaryAssertion(
     end: Double,
@@ -44,4 +45,3 @@ object BoundaryAssertion {
     __obj.asInstanceOf[BoundaryAssertion]
   }
 }
-

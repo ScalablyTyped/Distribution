@@ -3,7 +3,7 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.LINE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LineNode
@@ -16,6 +16,6 @@ trait LineNode
      with LayoutMixin
      with ExportMixin
      with ConstraintMixin {
+  
   val `type`: LINE = js.native
 }
-

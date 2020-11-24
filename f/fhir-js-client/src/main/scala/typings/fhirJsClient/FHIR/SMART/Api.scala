@@ -2,7 +2,7 @@ package typings.fhirJsClient.FHIR.SMART
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FHIR API instance which can be used to make API calls to the FHIR server.
@@ -11,28 +11,33 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Api extends js.Object {
+  
   /**
     * GET BASEURL/metadata
     *
     * @param input : An override to the base config object or just an empty object {}
     */
   def conformance(input: js.Any): js.Promise[Response] = js.native
+  
   /**
     * POST BASEURL/{resourceType} BODY: {entry without id}
     * @param entry : A valid FHIR entry containing the resource.
     */
   def create(entry: Entry): js.Promise[Response] = js.native
+  
   /**
     * DELETE BASEURL/{resourceType} BODY {entry with id}
     * @param entry : A valid FHIR entry object containing the resource object
     * or an object containing the id property(id of the resource to be deleted)
     */
   def delete(entry: Entry): js.Promise[Response] = js.native
+  
   /**
     * POST BASEURL/Document
     * @param document
     */
   def document(document: Entry): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/{resourceType}?searchParams
     * Fetch all the resources based on the search parameter (keeps on calling next method to gett all the pages)
@@ -48,6 +53,7 @@ trait Api extends js.Object {
     done: js.Function0[_],
     fail: js.Function1[/* error */ js.Any, _]
   ): Unit = js.native
+  
   /**
     * GET BASEURL/{resourceType}?searchParams
     * Fetch all the resources of a particular resource type and that meets the search filter.
@@ -57,6 +63,7 @@ trait Api extends js.Object {
     * Reject: (error:any) => { console.log(error); }
     */
   def fetchAll(params: SearchParams): js.Promise[js.Array[Entry]] = js.native
+  
   /**
     * GET BASEURL/{resourceType}?searchParams
     * GET BASEURL/{referencedType} referencedType based on the resolveParams
@@ -68,34 +75,40 @@ trait Api extends js.Object {
     * Reject: (error:any) => { console.log(error); }
     */
   def fetchAllWithReferences(params: SearchParams, resolveParams: js.Array[String]): js.Any = js.native
+  
   /**
     * GET BASEURL/_history?historyParams
     * Calls the _history API with the parameters specified
     * @param params
     */
   def history(params: HistoryParams): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/_getpages=XXXX : Next link in the bundle
     * Fetches the next page based on the input bundle resource's next link.
     * @param bundle Input bundle resource containing the next link.
     */
   def nextPage(bundle: Bundle): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/_getpages=XXXX : Prev link in the bundle
     * Fetches the previous page based on the input bundle resource's previous link.
     * @param bundle Input bundle resource containing the previous link
     */
   def prevPage(bundle: Bundle): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/Profile/{resourceType}
     * @param resourceType
     */
   def profile(resourceType: ResourceType): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/{resourceType}/{id}
     * @param params An object with id and resourceType property
     */
   def read(params: ReadParams): js.Promise[Response] = js.native
+  
   /**
     * Pass the node containing the property reference, which needs to be resolved. eg. myObservation.resource.subject
     * The resource node should be present if the reference is contained within the resource.
@@ -103,37 +116,44 @@ trait Api extends js.Object {
     * @param params The reference node to be resolved along with the resource and the bundle to be searched if the reference is a contained one.
     */
   def resolve(params: ResolveParams): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/{resourceType}/{id}/_history?otherHistoryParams
     * @param params Should provide, resourceType and id either through id and type properties or the resource property
     */
   def resourceHistory(params: HistoryParams): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/{resourceType}?searchParams
     * @param searchParams Filters to be applied to the API call
     */
   def search(params: SearchParams): js.Promise[Response] = js.native
+  
   /**
     * POST BASEURL Body: Bundle with entries containing a node 'request': { 'method': 'POST' }. The value of 'method' can be DELETE,POST,PUT or GET.
     * @param bundle
     */
   def transaction(bundle: Bundle): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/{resourceType}/_history?historyParams
     * @param params
     */
   def typeHistory(params: HistoryParams): js.Promise[Response] = js.native
+  
   /**
     * PUT BASEURL/{resourceType}/{id}
     * @param entry : Entry containing the Resource to be updated
     */
   def update(entry: Entry): js.Promise[Response] = js.native
+  
   /**
     * POST BASEURL/{resourceType}/_validate BODY: Resource to be validated
     * PS: Cannot find the _validate endpoint on the SMART on FHIR open server. But $validate exists.
     * @param entry
     */
   def validate(entry: Entry): js.Promise[Response] = js.native
+  
   /**
     * GET BASEURL/{resourceType}/{id}/_history/{versionId}
     * Fetches the specific historic version of the resource.
@@ -141,8 +161,8 @@ trait Api extends js.Object {
     */
   def vread(params: VersionReadParams): js.Promise[Response] = js.native
 }
-
 object Api {
+  
   @scala.inline
   def apply(
     conformance: js.Any => js.Promise[Response],
@@ -169,60 +189,82 @@ object Api {
     val __obj = js.Dynamic.literal(conformance = js.Any.fromFunction1(conformance), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), document = js.Any.fromFunction1(document), drain = js.Any.fromFunction4(drain), fetchAll = js.Any.fromFunction1(fetchAll), fetchAllWithReferences = js.Any.fromFunction2(fetchAllWithReferences), history = js.Any.fromFunction1(history), nextPage = js.Any.fromFunction1(nextPage), prevPage = js.Any.fromFunction1(prevPage), profile = js.Any.fromFunction1(profile), read = js.Any.fromFunction1(read), resolve = js.Any.fromFunction1(resolve), resourceHistory = js.Any.fromFunction1(resourceHistory), search = js.Any.fromFunction1(search), transaction = js.Any.fromFunction1(transaction), typeHistory = js.Any.fromFunction1(typeHistory), update = js.Any.fromFunction1(update), validate = js.Any.fromFunction1(validate), vread = js.Any.fromFunction1(vread))
     __obj.asInstanceOf[Api]
   }
+  
   @scala.inline
   implicit class ApiOps[Self <: Api] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConformance(value: js.Any => js.Promise[Response]): Self = this.set("conformance", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreate(value: Entry => js.Promise[Response]): Self = this.set("create", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDelete(value: Entry => js.Promise[Response]): Self = this.set("delete", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDocument(value: Entry => js.Promise[Response]): Self = this.set("document", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDrain(
       value: (SearchParams, js.Function1[/* entries */ js.Array[Entry], _], js.Function0[_], js.Function1[/* error */ js.Any, _]) => Unit
     ): Self = this.set("drain", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setFetchAll(value: SearchParams => js.Promise[js.Array[Entry]]): Self = this.set("fetchAll", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFetchAllWithReferences(value: (SearchParams, js.Array[String]) => js.Any): Self = this.set("fetchAllWithReferences", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setHistory(value: HistoryParams => js.Promise[Response]): Self = this.set("history", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setNextPage(value: Bundle => js.Promise[Response]): Self = this.set("nextPage", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setPrevPage(value: Bundle => js.Promise[Response]): Self = this.set("prevPage", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setProfile(value: ResourceType => js.Promise[Response]): Self = this.set("profile", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRead(value: ReadParams => js.Promise[Response]): Self = this.set("read", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setResolve(value: ResolveParams => js.Promise[Response]): Self = this.set("resolve", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setResourceHistory(value: HistoryParams => js.Promise[Response]): Self = this.set("resourceHistory", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSearch(value: SearchParams => js.Promise[Response]): Self = this.set("search", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setTransaction(value: Bundle => js.Promise[Response]): Self = this.set("transaction", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setTypeHistory(value: HistoryParams => js.Promise[Response]): Self = this.set("typeHistory", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setUpdate(value: Entry => js.Promise[Response]): Self = this.set("update", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setValidate(value: Entry => js.Promise[Response]): Self = this.set("validate", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setVread(value: VersionReadParams => js.Promise[Response]): Self = this.set("vread", js.Any.fromFunction1(value))
   }
-  
 }
-

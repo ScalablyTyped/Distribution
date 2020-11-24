@@ -2,9 +2,10 @@ package typings.wordpressBlockEditor.blockVerticalAlignmentToolbarMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object BlockVerticalAlignmentToolbar {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressBlockEditor.wordpressBlockEditorStrings.bottom
     - typings.wordpressBlockEditor.wordpressBlockEditorStrings.center

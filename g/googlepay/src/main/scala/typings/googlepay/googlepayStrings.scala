@@ -2,6 +2,7 @@ package typings.googlepay
 
 import typings.googlepay.google.payments.api.BillingAddressFormat
 import typings.googlepay.google.payments.api.ButtonColor
+import typings.googlepay.google.payments.api.ButtonSizeMode
 import typings.googlepay.google.payments.api.ButtonType
 import typings.googlepay.google.payments.api.CallbackIntent
 import typings.googlepay.google.payments.api.CallbackTrigger
@@ -19,9 +20,181 @@ import typings.googlepay.google.payments.api.TotalPriceStatus
 import typings.googlepay.google.payments.api.TransactionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googlepayStrings {
+  
+  @scala.inline
+  def AMEX: AMEX = "AMEX".asInstanceOf[AMEX]
+  
+  @scala.inline
+  def BUYER_ACCOUNT_ERROR: BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[BUYER_ACCOUNT_ERROR]
+  
+  @scala.inline
+  def CARD: CARD = "CARD".asInstanceOf[CARD]
+  
+  @scala.inline
+  def COMPLETE_IMMEDIATE_PURCHASE: COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[COMPLETE_IMMEDIATE_PURCHASE]
+  
+  @scala.inline
+  def CRYPTOGRAM_3DS: CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[CRYPTOGRAM_3DS]
+  
+  @scala.inline
+  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  
+  @scala.inline
+  def DEVELOPER_ERROR: DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[DEVELOPER_ERROR]
+  
+  @scala.inline
+  def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
+  
+  @scala.inline
+  def DISCOUNT: DISCOUNT = "DISCOUNT".asInstanceOf[DISCOUNT]
+  
+  @scala.inline
+  def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
+  
+  @scala.inline
+  def ELECTRON: ELECTRON = "ELECTRON".asInstanceOf[ELECTRON]
+  
+  @scala.inline
+  def ELO: ELO = "ELO".asInstanceOf[ELO]
+  
+  @scala.inline
+  def ELO_DEBIT: ELO_DEBIT = "ELO_DEBIT".asInstanceOf[ELO_DEBIT]
+  
+  @scala.inline
+  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  
+  @scala.inline
+  def ESTIMATED: ESTIMATED = "ESTIMATED".asInstanceOf[ESTIMATED]
+  
+  @scala.inline
+  def FINAL: FINAL = "FINAL".asInstanceOf[FINAL]
+  
+  @scala.inline
+  def FULL: FULL = "FULL".asInstanceOf[FULL]
+  
+  @scala.inline
+  def INITIALIZE: INITIALIZE = "INITIALIZE".asInstanceOf[INITIALIZE]
+  
+  @scala.inline
+  def INTERAC: INTERAC = "INTERAC".asInstanceOf[INTERAC]
+  
+  @scala.inline
+  def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
+  
+  @scala.inline
+  def JCB: JCB = "JCB".asInstanceOf[JCB]
+  
+  @scala.inline
+  def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
+  
+  @scala.inline
+  def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
+  
+  @scala.inline
+  def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
+  
+  @scala.inline
+  def MERCHANT_ACCOUNT_ERROR: MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[MERCHANT_ACCOUNT_ERROR]
+  
+  @scala.inline
+  def MIN: MIN = "MIN".asInstanceOf[MIN]
+  
+  @scala.inline
+  def NOT_CURRENTLY_KNOWN: NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[NOT_CURRENTLY_KNOWN]
+  
+  @scala.inline
+  def OFFER_INFO: OFFER_INFO = "OFFER_INFO".asInstanceOf[OFFER_INFO]
+  
+  @scala.inline
+  def OTHER_ERROR: OTHER_ERROR = "OTHER_ERROR".asInstanceOf[OTHER_ERROR]
+  
+  @scala.inline
+  def PAN_ONLY: PAN_ONLY = "PAN_ONLY".asInstanceOf[PAN_ONLY]
+  
+  @scala.inline
+  def PAYMENT_AUTHORIZATION: PAYMENT_AUTHORIZATION = "PAYMENT_AUTHORIZATION".asInstanceOf[PAYMENT_AUTHORIZATION]
+  
+  @scala.inline
+  def PAYMENT_DATA_INVALID: PAYMENT_DATA_INVALID = "PAYMENT_DATA_INVALID".asInstanceOf[PAYMENT_DATA_INVALID]
+  
+  @scala.inline
+  def PAYMENT_GATEWAY: PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[PAYMENT_GATEWAY]
+  
+  @scala.inline
+  def PAYMENT_METHOD: PAYMENT_METHOD = "PAYMENT_METHOD".asInstanceOf[PAYMENT_METHOD]
+  
+  @scala.inline
+  def PAYPAL: PAYPAL = "PAYPAL".asInstanceOf[PAYPAL]
+  
+  @scala.inline
+  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  
+  @scala.inline
+  def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
+  
+  @scala.inline
+  def SHIPPING_ADDRESS: SHIPPING_ADDRESS = "SHIPPING_ADDRESS".asInstanceOf[SHIPPING_ADDRESS]
+  
+  @scala.inline
+  def SHIPPING_ADDRESS_INVALID: SHIPPING_ADDRESS_INVALID = "SHIPPING_ADDRESS_INVALID".asInstanceOf[SHIPPING_ADDRESS_INVALID]
+  
+  @scala.inline
+  def SHIPPING_ADDRESS_UNSERVICEABLE: SHIPPING_ADDRESS_UNSERVICEABLE = "SHIPPING_ADDRESS_UNSERVICEABLE".asInstanceOf[SHIPPING_ADDRESS_UNSERVICEABLE]
+  
+  @scala.inline
+  def SHIPPING_OPTION: SHIPPING_OPTION = "SHIPPING_OPTION".asInstanceOf[SHIPPING_OPTION]
+  
+  @scala.inline
+  def SHIPPING_OPTION_INVALID: SHIPPING_OPTION_INVALID = "SHIPPING_OPTION_INVALID".asInstanceOf[SHIPPING_OPTION_INVALID]
+  
+  @scala.inline
+  def SUBTOTAL: SUBTOTAL = "SUBTOTAL".asInstanceOf[SUBTOTAL]
+  
+  @scala.inline
+  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  
+  @scala.inline
+  def TAX: TAX = "TAX".asInstanceOf[TAX]
+  
+  @scala.inline
+  def TEST: TEST = "TEST".asInstanceOf[TEST]
+  
+  @scala.inline
+  def VISA: VISA = "VISA".asInstanceOf[VISA]
+  
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  
+  @scala.inline
+  def buy: buy = "buy".asInstanceOf[buy]
+  
+  @scala.inline
+  def default_ : default_ = "default".asInstanceOf[default_]
+  
+  @scala.inline
+  def donate: donate = "donate".asInstanceOf[donate]
+  
+  @scala.inline
+  def fill: fill = "fill".asInstanceOf[fill]
+  
+  @scala.inline
+  def long: long = "long".asInstanceOf[long]
+  
+  @scala.inline
+  def plain: plain = "plain".asInstanceOf[plain]
+  
+  @scala.inline
+  def short: short = "short".asInstanceOf[short]
+  
+  @scala.inline
+  def static: static = "static".asInstanceOf[static]
+  
+  @scala.inline
+  def white: white = "white".asInstanceOf[white]
+  
   @js.native
   sealed trait AMEX extends CardNetwork
   
@@ -174,120 +347,29 @@ object googlepayStrings {
   sealed trait black extends ButtonColor
   
   @js.native
+  sealed trait buy extends ButtonType
+  
+  @js.native
   sealed trait default_ extends ButtonColor
+  
+  @js.native
+  sealed trait donate extends ButtonType
+  
+  @js.native
+  sealed trait fill extends ButtonSizeMode
   
   @js.native
   sealed trait long extends ButtonType
   
   @js.native
+  sealed trait plain extends ButtonType
+  
+  @js.native
   sealed trait short extends ButtonType
   
   @js.native
-  sealed trait white extends ButtonColor
+  sealed trait static extends ButtonSizeMode
   
-  @scala.inline
-  def AMEX: AMEX = "AMEX".asInstanceOf[AMEX]
-  @scala.inline
-  def BUYER_ACCOUNT_ERROR: BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[BUYER_ACCOUNT_ERROR]
-  @scala.inline
-  def CARD: CARD = "CARD".asInstanceOf[CARD]
-  @scala.inline
-  def COMPLETE_IMMEDIATE_PURCHASE: COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[COMPLETE_IMMEDIATE_PURCHASE]
-  @scala.inline
-  def CRYPTOGRAM_3DS: CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[CRYPTOGRAM_3DS]
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  @scala.inline
-  def DEVELOPER_ERROR: DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[DEVELOPER_ERROR]
-  @scala.inline
-  def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
-  @scala.inline
-  def DISCOUNT: DISCOUNT = "DISCOUNT".asInstanceOf[DISCOUNT]
-  @scala.inline
-  def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
-  @scala.inline
-  def ELECTRON: ELECTRON = "ELECTRON".asInstanceOf[ELECTRON]
-  @scala.inline
-  def ELO: ELO = "ELO".asInstanceOf[ELO]
-  @scala.inline
-  def ELO_DEBIT: ELO_DEBIT = "ELO_DEBIT".asInstanceOf[ELO_DEBIT]
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  @scala.inline
-  def ESTIMATED: ESTIMATED = "ESTIMATED".asInstanceOf[ESTIMATED]
-  @scala.inline
-  def FINAL: FINAL = "FINAL".asInstanceOf[FINAL]
-  @scala.inline
-  def FULL: FULL = "FULL".asInstanceOf[FULL]
-  @scala.inline
-  def INITIALIZE: INITIALIZE = "INITIALIZE".asInstanceOf[INITIALIZE]
-  @scala.inline
-  def INTERAC: INTERAC = "INTERAC".asInstanceOf[INTERAC]
-  @scala.inline
-  def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
-  @scala.inline
-  def JCB: JCB = "JCB".asInstanceOf[JCB]
-  @scala.inline
-  def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
-  @scala.inline
-  def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
-  @scala.inline
-  def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
-  @scala.inline
-  def MERCHANT_ACCOUNT_ERROR: MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[MERCHANT_ACCOUNT_ERROR]
-  @scala.inline
-  def MIN: MIN = "MIN".asInstanceOf[MIN]
-  @scala.inline
-  def NOT_CURRENTLY_KNOWN: NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[NOT_CURRENTLY_KNOWN]
-  @scala.inline
-  def OFFER_INFO: OFFER_INFO = "OFFER_INFO".asInstanceOf[OFFER_INFO]
-  @scala.inline
-  def OTHER_ERROR: OTHER_ERROR = "OTHER_ERROR".asInstanceOf[OTHER_ERROR]
-  @scala.inline
-  def PAN_ONLY: PAN_ONLY = "PAN_ONLY".asInstanceOf[PAN_ONLY]
-  @scala.inline
-  def PAYMENT_AUTHORIZATION: PAYMENT_AUTHORIZATION = "PAYMENT_AUTHORIZATION".asInstanceOf[PAYMENT_AUTHORIZATION]
-  @scala.inline
-  def PAYMENT_DATA_INVALID: PAYMENT_DATA_INVALID = "PAYMENT_DATA_INVALID".asInstanceOf[PAYMENT_DATA_INVALID]
-  @scala.inline
-  def PAYMENT_GATEWAY: PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[PAYMENT_GATEWAY]
-  @scala.inline
-  def PAYMENT_METHOD: PAYMENT_METHOD = "PAYMENT_METHOD".asInstanceOf[PAYMENT_METHOD]
-  @scala.inline
-  def PAYPAL: PAYPAL = "PAYPAL".asInstanceOf[PAYPAL]
-  @scala.inline
-  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
-  @scala.inline
-  def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
-  @scala.inline
-  def SHIPPING_ADDRESS: SHIPPING_ADDRESS = "SHIPPING_ADDRESS".asInstanceOf[SHIPPING_ADDRESS]
-  @scala.inline
-  def SHIPPING_ADDRESS_INVALID: SHIPPING_ADDRESS_INVALID = "SHIPPING_ADDRESS_INVALID".asInstanceOf[SHIPPING_ADDRESS_INVALID]
-  @scala.inline
-  def SHIPPING_ADDRESS_UNSERVICEABLE: SHIPPING_ADDRESS_UNSERVICEABLE = "SHIPPING_ADDRESS_UNSERVICEABLE".asInstanceOf[SHIPPING_ADDRESS_UNSERVICEABLE]
-  @scala.inline
-  def SHIPPING_OPTION: SHIPPING_OPTION = "SHIPPING_OPTION".asInstanceOf[SHIPPING_OPTION]
-  @scala.inline
-  def SHIPPING_OPTION_INVALID: SHIPPING_OPTION_INVALID = "SHIPPING_OPTION_INVALID".asInstanceOf[SHIPPING_OPTION_INVALID]
-  @scala.inline
-  def SUBTOTAL: SUBTOTAL = "SUBTOTAL".asInstanceOf[SUBTOTAL]
-  @scala.inline
-  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
-  @scala.inline
-  def TAX: TAX = "TAX".asInstanceOf[TAX]
-  @scala.inline
-  def TEST: TEST = "TEST".asInstanceOf[TEST]
-  @scala.inline
-  def VISA: VISA = "VISA".asInstanceOf[VISA]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def default_ : default_ = "default".asInstanceOf[default_]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  @js.native
+  sealed trait white extends ButtonColor
 }
-

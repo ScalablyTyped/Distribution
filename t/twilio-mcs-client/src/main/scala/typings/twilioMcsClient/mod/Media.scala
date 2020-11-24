@@ -4,7 +4,7 @@ import typings.twilioMcsClient.configurationMod.Configuration
 import typings.twilioMcsClient.networkMod.Network
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc A Media represents a metadata information for the media upload
@@ -22,4 +22,3 @@ class Media protected ()
   extends typings.twilioMcsClient.mediaMod.Media {
   def this(config: Configuration, network: Network, data: js.Any) = this()
 }
-

@@ -2,10 +2,11 @@ package typings.awsSdk.configMod
 
 import typings.awsSdk.anon.ConfigurationOptionsConfi
 import typings.awsSdk.awsSdkBooleans.`true`
+import typings.awsSdk.configBaseMod.ConfigurationOptions
 import typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/config", "Config")
 @js.native
@@ -13,8 +14,10 @@ import scala.scalajs.js.annotation._
   * Creates a new configuration object.
   * This is the object that passes option data along to service requests, including credentials, security, region information, and some service specific settings.
   */
-class Config () extends ConfigBase {
+class Config ()
+  extends typings.awsSdk.configBaseMod.ConfigBase {
   def this(options: ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
+  
   /**
     * Updates the current configuration object with new options.
     *
@@ -24,4 +27,3 @@ class Config () extends ConfigBase {
   @JSName("update")
   def update_true(options: ConfigurationOptionsConfi, allowUnknownKeys: `true`): Unit = js.native
 }
-

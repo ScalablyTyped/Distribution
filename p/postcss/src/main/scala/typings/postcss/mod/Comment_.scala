@@ -2,7 +2,7 @@ package typings.postcss.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a comment between declarations or statements (rule and at-rules).
@@ -13,14 +13,16 @@ import scala.scalajs.js.annotation._
 trait Comment_
   extends ChildNode
      with NodeBase {
+  
   /**
     * Returns the comment's parent node.
     */
   var parent: Container = js.native
+  
   /**
     * The comment's text.
     */
   var text: String = js.native
+  
   var `type`: typings.postcss.postcssStrings.comment = js.native
 }
-

@@ -9,11 +9,12 @@ import typings.stripe.mod.issuing.transactions.ITransactionListOptions
 import typings.stripe.mod.issuing.transactions.ITransactionUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Transactions")
 @js.native
 class Transactions () extends StripeResource {
+  
   def list(): js.Promise[IList[ITransaction]] = js.native
   def list(data: ITransactionListOptions): js.Promise[IList[ITransaction]] = js.native
   /**
@@ -25,6 +26,7 @@ class Transactions () extends StripeResource {
   def list(options: HeaderOptions): js.Promise[IList[ITransaction]] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ITransaction]]): js.Promise[IList[ITransaction]] = js.native
   def list(response: IResponseFn[IList[ITransaction]]): js.Promise[IList[ITransaction]] = js.native
+  
   def retrieve(id: String): js.Promise[ITransaction] = js.native
   /**
     * Retrieves an Issuing Transaction object.
@@ -32,6 +34,7 @@ class Transactions () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[ITransaction] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ITransaction]): js.Promise[ITransaction] = js.native
   def retrieve(id: String, response: IResponseFn[ITransaction]): js.Promise[ITransaction] = js.native
+  
   def update(id: String, data: ITransactionUpdateOptions): js.Promise[ITransaction] = js.native
   /**
     * Updates the specified Issuing Transaction object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -45,4 +48,3 @@ class Transactions () extends StripeResource {
   ): js.Promise[ITransaction] = js.native
   def update(id: String, data: ITransactionUpdateOptions, response: IResponseFn[ITransaction]): js.Promise[ITransaction] = js.native
 }
-

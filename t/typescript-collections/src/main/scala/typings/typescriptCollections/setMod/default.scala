@@ -2,7 +2,7 @@ package typings.typescriptCollections.setMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/Set", JSImport.Default)
 @js.native
@@ -27,4 +27,3 @@ import scala.scalajs.js.annotation._
 class default[T] () extends Set[T] {
   def this(toStringFunction: js.Function1[/* item */ T, String]) = this()
 }
-

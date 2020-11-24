@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EasPasswordExpirationResult extends js.Object
-
 /** Results of querying on the password expiration information. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult")
 @js.native
 object EasPasswordExpirationResult extends js.Object {
+  
   /** One or more admins are not allowed to change their passwords. */
   @js.native
   sealed trait adminsCannotChangePassword extends EasPasswordExpirationResult
@@ -46,6 +46,4 @@ object EasPasswordExpirationResult extends js.Object {
   /** The user is not allowed to change the password. */
   @js.native
   sealed trait userCannotChangePassword extends EasPasswordExpirationResult
-  
 }
-

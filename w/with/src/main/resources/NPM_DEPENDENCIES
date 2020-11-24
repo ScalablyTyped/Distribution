@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "with" : "7.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "with" : "7.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

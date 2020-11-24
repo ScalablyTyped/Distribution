@@ -10,9 +10,9 @@ A simple wrapper around the native iOS and Android UUID classes for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-uuid-generator |
 | Keywords           | react-native, uuid |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 68685 |
+| # downloads        | 157275 |
 | # stars            | 2 |
 
 ## Links

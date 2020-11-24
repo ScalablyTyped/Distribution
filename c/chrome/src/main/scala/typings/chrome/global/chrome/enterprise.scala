@@ -5,11 +5,12 @@ import typings.chrome.chrome.enterprise.platformKeys.Token
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.enterprise")
 @js.native
 object enterprise extends js.Object {
+  
   ////////////////////
   // Enterprise Device Attributes
   ////////////////////
@@ -22,9 +23,13 @@ object enterprise extends js.Object {
     */
   @js.native
   object deviceAttributes extends js.Object {
+    
     def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = js.native
+    
     def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = js.native
+    
     def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = js.native
+    
     def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = js.native
   }
   
@@ -38,6 +43,7 @@ object enterprise extends js.Object {
     */
   @js.native
   object networkingAttributes extends js.Object {
+    
     def getNetworkDetails(callback: js.Function1[/* networkDetails */ NetworkDetails, Unit]): Unit = js.native
   }
   
@@ -53,24 +59,28 @@ object enterprise extends js.Object {
     */
   @js.native
   object platformKeys extends js.Object {
+    
     def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = js.native
     def challengeMachineKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
     ): Unit = js.native
+    
     def challengeUserKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
     ): Unit = js.native
+    
     def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = js.native
+    
     def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = js.native
+    
     def importCertificate(tokenId: String, certificate: ArrayBuffer): Unit = js.native
     def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+    
     def removeCertificate(tokenId: String, certificate: ArrayBuffer): Unit = js.native
     def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
   }
-  
 }
-

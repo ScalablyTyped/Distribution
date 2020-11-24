@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.Instantiable5
 import typings.firebaseDatabase.webSocketConnectionMod.WebSocketConnection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWebSocketConnection
@@ -37,6 +37,7 @@ trait TypeofWebSocketConnection
       /* lastSessionId */ String, 
       WebSocketConnection
     ] {
+  
   /**
     * @param {RepoInfo} repoInfo The info for the websocket endpoint.
     * @param {string=} transportSessionId Optional transportSessionId if this is connecting to an existing transport
@@ -46,23 +47,28 @@ trait TypeofWebSocketConnection
     * @private
     */
   var connectionURL_ : js.Any = js.native
+  
+  def forceDisallow(): Unit = js.native
+  
   var forceDisallow_ : Boolean = js.native
+  
   /**
     * Time to wait for the connection te become healthy before giving up.
     * @type {number}
     */
   var healthyTimeout: Double = js.native
-  /**
-    * Number of response before we consider the connection "healthy."
-    * @type {number}
-    */
-  var responsesRequiredToBeHealthy: Double = js.native
-  def forceDisallow(): Unit = js.native
+  
   def isAvailable(): Boolean = js.native
+  
   /**
     * Returns true if we previously failed to connect with this transport.
     * @return {boolean}
     */
   def previouslyFailed(): Boolean = js.native
+  
+  /**
+    * Number of response before we consider the connection "healthy."
+    * @type {number}
+    */
+  var responsesRequiredToBeHealthy: Double = js.native
 }
-

@@ -2,10 +2,12 @@ package typings.dc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Accessor[T, V] = js.Function2[/* datum */ T, /* index */ js.UndefOr[scala.Double], V]
+  
   type UnitFunction = js.Function3[
     /* start */ scala.Double | typings.std.Date, 
     /* end */ scala.Double | typings.std.Date, 

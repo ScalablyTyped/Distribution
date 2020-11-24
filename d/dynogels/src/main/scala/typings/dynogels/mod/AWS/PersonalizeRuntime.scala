@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.personalizeruntimeMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.PersonalizeRuntime")
 @js.native
@@ -14,4 +14,3 @@ class PersonalizeRuntime ()
   extends typings.awsSdk.mod.PersonalizeRuntime {
   def this(options: ClientConfiguration) = this()
 }
-

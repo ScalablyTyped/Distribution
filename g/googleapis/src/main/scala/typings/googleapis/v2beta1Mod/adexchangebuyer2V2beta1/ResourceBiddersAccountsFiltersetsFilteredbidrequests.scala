@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts$Filtersets$Filteredbidrequests")
 @js.native
 class ResourceBiddersAccountsFiltersetsFilteredbidrequests protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.filteredBidRequests.list
     * @desc List all reasons that caused a bid request not to be sent for an
@@ -49,4 +51,3 @@ class ResourceBiddersAccountsFiltersetsFilteredbidrequests protected () extends 
     callback: BodyResponseCallback[SchemaListFilteredBidRequestsResponse]
   ): Unit = js.native
 }
-

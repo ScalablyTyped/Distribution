@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "grasp"
-version := "0.6-dt-20200515Z-5aab5d"
+version := "0.6-dt-20200515Z-d9d5b8"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cli-color" % "2.0-dt-20200515Z-afd49c",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200623Z-f9f95c",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "cli-color" % "2.0-dt-20200923Z-148f7e",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20201002Z-d06bd0",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

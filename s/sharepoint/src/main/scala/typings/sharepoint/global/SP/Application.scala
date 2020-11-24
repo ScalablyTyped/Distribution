@@ -5,13 +5,15 @@ import typings.sharepoint.SP.Application.UI.ViewInformationRequestor
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.Application")
 @js.native
 object Application extends js.Object {
+  
   @js.native
   object UI extends js.Object {
+    
     @js.native
     class DefaultFormsInformation ()
       extends typings.sharepoint.SP.Application.UI.DefaultFormsInformation
@@ -19,6 +21,12 @@ object Application extends js.Object {
     @js.native
     class DefaultFormsMenuBuilder ()
       extends typings.sharepoint.SP.Application.UI.DefaultFormsMenuBuilder
+    /* static members */
+    @js.native
+    object DefaultFormsMenuBuilder extends js.Object {
+      
+      def getDefaultFormsInformation(requestor: DefaultFormsInformationRequestor, listId: typings.sharepoint.SP.Guid): Unit = js.native
+    }
     
     @js.native
     class FormsInfo ()
@@ -49,6 +57,21 @@ object Application extends js.Object {
     @js.native
     class ViewSelectorMenuBuilder ()
       extends typings.sharepoint.SP.Application.UI.ViewSelectorMenuBuilder
+    /* static members */
+    @js.native
+    object ViewSelectorMenuBuilder extends js.Object {
+      
+      def getViewInformation(
+        requestor: ViewInformationRequestor,
+        options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions
+      ): Unit = js.native
+      
+      def get_filterMenuItemsCallback(): js.Function1[/* menuItems */ js.Any, _] = js.native
+      
+      def set_filterMenuItemsCallback(value: js.Function1[/* menuItems */ js.Any, _]): Unit = js.native
+      
+      def showMenu(elem: HTMLElement, options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions): Unit = js.native
+    }
     
     @js.native
     class ViewSelectorMenuItem ()
@@ -67,26 +90,5 @@ object Application extends js.Object {
       extends typings.sharepoint.SP.Application.UI.WikiPageNameInPlaceEditor {
       def this(ownerDoc: js.Any, displayElemId: String, editElemId: String, editTextBoxId: String) = this()
     }
-    
-    /* static members */
-    @js.native
-    object DefaultFormsMenuBuilder extends js.Object {
-      def getDefaultFormsInformation(requestor: DefaultFormsInformationRequestor, listId: typings.sharepoint.SP.Guid): Unit = js.native
-    }
-    
-    /* static members */
-    @js.native
-    object ViewSelectorMenuBuilder extends js.Object {
-      def getViewInformation(
-        requestor: ViewInformationRequestor,
-        options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions
-      ): Unit = js.native
-      def get_filterMenuItemsCallback(): js.Function1[/* menuItems */ js.Any, _] = js.native
-      def set_filterMenuItemsCallback(value: js.Function1[/* menuItems */ js.Any, _]): Unit = js.native
-      def showMenu(elem: HTMLElement, options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions): Unit = js.native
-    }
-    
   }
-  
 }
-

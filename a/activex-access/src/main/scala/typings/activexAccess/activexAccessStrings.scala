@@ -6,9 +6,559 @@ import typings.activexAccess.Access.DatabaseType
 import typings.activexAccess.Access.OldConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexAccessStrings {
+  
+  @scala.inline
+  def Activate: Activate = "Activate".asInstanceOf[Activate]
+  
+  @scala.inline
+  def AfterDelConfirm: AfterDelConfirm = "AfterDelConfirm".asInstanceOf[AfterDelConfirm]
+  
+  @scala.inline
+  def AfterFinalRender: AfterFinalRender = "AfterFinalRender".asInstanceOf[AfterFinalRender]
+  
+  @scala.inline
+  def AfterInsert: AfterInsert = "AfterInsert".asInstanceOf[AfterInsert]
+  
+  @scala.inline
+  def AfterLayout: AfterLayout = "AfterLayout".asInstanceOf[AfterLayout]
+  
+  @scala.inline
+  def AfterRender: AfterRender = "AfterRender".asInstanceOf[AfterRender]
+  
+  @scala.inline
+  def AfterStartup: AfterStartup = "AfterStartup".asInstanceOf[AfterStartup]
+  
+  @scala.inline
+  def AfterUpdate: AfterUpdate = "AfterUpdate".asInstanceOf[AfterUpdate]
+  
+  @scala.inline
+  def ApplyFilter: ApplyFilter = "ApplyFilter".asInstanceOf[ApplyFilter]
+  
+  @scala.inline
+  def ApplyType: ApplyType = "ApplyType".asInstanceOf[ApplyType]
+  
+  @scala.inline
+  def AttachmentCurrent: AttachmentCurrent = "AttachmentCurrent".asInstanceOf[AttachmentCurrent]
+  
+  @scala.inline
+  def BeforeDelConfirm: BeforeDelConfirm = "BeforeDelConfirm".asInstanceOf[BeforeDelConfirm]
+  
+  @scala.inline
+  def BeforeInsert: BeforeInsert = "BeforeInsert".asInstanceOf[BeforeInsert]
+  
+  @scala.inline
+  def BeforeNavigate2: BeforeNavigate2 = "BeforeNavigate2".asInstanceOf[BeforeNavigate2]
+  
+  @scala.inline
+  def BeforeQuery: BeforeQuery = "BeforeQuery".asInstanceOf[BeforeQuery]
+  
+  @scala.inline
+  def BeforeRender: BeforeRender = "BeforeRender".asInstanceOf[BeforeRender]
+  
+  @scala.inline
+  def BeforeScreenTip: BeforeScreenTip = "BeforeScreenTip".asInstanceOf[BeforeScreenTip]
+  
+  @scala.inline
+  def BeforeUpdate: BeforeUpdate = "BeforeUpdate".asInstanceOf[BeforeUpdate]
+  
+  @scala.inline
+  def BeginBatchEdit: BeginBatchEdit = "BeginBatchEdit".asInstanceOf[BeginBatchEdit]
+  
+  @scala.inline
+  def Button: Button = "Button".asInstanceOf[Button]
+  
+  @scala.inline
+  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
+  
+  @scala.inline
+  def Change: Change = "Change".asInstanceOf[Change]
+  
+  @scala.inline
+  def Checked: Checked = "Checked".asInstanceOf[Checked]
+  
+  @scala.inline
+  def Click: Click = "Click".asInstanceOf[Click]
+  
+  @scala.inline
+  def Close: Close = "Close".asInstanceOf[Close]
+  
+  @scala.inline
+  def Code: Code = "Code".asInstanceOf[Code]
+  
+  @scala.inline
+  def Column: Column = "Column".asInstanceOf[Column]
+  
+  @scala.inline
+  def ColumnCreated: ColumnCreated = "ColumnCreated".asInstanceOf[ColumnCreated]
+  
+  @scala.inline
+  def ColumnDeleted: ColumnDeleted = "ColumnDeleted".asInstanceOf[ColumnDeleted]
+  
+  @scala.inline
+  def ColumnSelected: ColumnSelected = "ColumnSelected".asInstanceOf[ColumnSelected]
+  
+  @scala.inline
+  def ColumnSized: ColumnSized = "ColumnSized".asInstanceOf[ColumnSized]
+  
+  @scala.inline
+  def Columns: Columns = "Columns".asInstanceOf[Columns]
+  
+  @scala.inline
+  def Command: Command = "Command".asInstanceOf[Command]
+  
+  @scala.inline
+  def CommandBeforeExecute: CommandBeforeExecute = "CommandBeforeExecute".asInstanceOf[CommandBeforeExecute]
+  
+  @scala.inline
+  def CommandChecked: CommandChecked = "CommandChecked".asInstanceOf[CommandChecked]
+  
+  @scala.inline
+  def CommandEnabled: CommandEnabled = "CommandEnabled".asInstanceOf[CommandEnabled]
+  
+  @scala.inline
+  def CommandExecute: CommandExecute = "CommandExecute".asInstanceOf[CommandExecute]
+  
+  @scala.inline
+  def Count: Count = "Count".asInstanceOf[Count]
+  
+  @scala.inline
+  def Current: Current = "Current".asInstanceOf[Current]
+  
+  @scala.inline
+  def DataChange: DataChange = "DataChange".asInstanceOf[DataChange]
+  
+  @scala.inline
+  def DataErr: DataErr = "DataErr".asInstanceOf[DataErr]
+  
+  @scala.inline
+  def DataSetChange: DataSetChange = "DataSetChange".asInstanceOf[DataSetChange]
+  
+  @scala.inline
+  def DblClick: DblClick = "DblClick".asInstanceOf[DblClick]
+  
+  @scala.inline
+  def Deactivate: Deactivate = "Deactivate".asInstanceOf[Deactivate]
+  
+  @scala.inline
+  def Delete: Delete = "Delete".asInstanceOf[Delete]
+  
+  @scala.inline
+  def Dirty: Dirty = "Dirty".asInstanceOf[Dirty]
+  
+  @scala.inline
+  def DocumentComplete: DocumentComplete = "DocumentComplete".asInstanceOf[DocumentComplete]
+  
+  @scala.inline
+  def DragDrop: DragDrop = "DragDrop".asInstanceOf[DragDrop]
+  
+  @scala.inline
+  def DragOver: DragOver = "DragOver".asInstanceOf[DragOver]
+  
+  @scala.inline
+  def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
+  
+  @scala.inline
+  def Enter: Enter = "Enter".asInstanceOf[Enter]
+  
+  @scala.inline
+  def Error: Error = "Error".asInstanceOf[Error]
+  
+  @scala.inline
+  def Exit: Exit = "Exit".asInstanceOf[Exit]
+  
+  @scala.inline
+  def FieldList: FieldList = "FieldList".asInstanceOf[FieldList]
+  
+  @scala.inline
+  def FieldListIndex: FieldListIndex = "FieldListIndex".asInstanceOf[FieldListIndex]
+  
+  @scala.inline
+  def Filter: Filter = "Filter".asInstanceOf[Filter]
+  
+  @scala.inline
+  def FilterType: FilterType = "FilterType".asInstanceOf[FilterType]
+  
+  @scala.inline
+  def FldListCheckItem: FldListCheckItem = "FldListCheckItem".asInstanceOf[FldListCheckItem]
+  
+  @scala.inline
+  def FldListClick: FldListClick = "FldListClick".asInstanceOf[FldListClick]
+  
+  @scala.inline
+  def FldListDblClick: FldListDblClick = "FldListDblClick".asInstanceOf[FldListDblClick]
+  
+  @scala.inline
+  def FldListDragDrop: FldListDragDrop = "FldListDragDrop".asInstanceOf[FldListDragDrop]
+  
+  @scala.inline
+  def FldListDragOver: FldListDragOver = "FldListDragOver".asInstanceOf[FldListDragOver]
+  
+  @scala.inline
+  def FldListGotFocus: FldListGotFocus = "FldListGotFocus".asInstanceOf[FldListGotFocus]
+  
+  @scala.inline
+  def FldListHdrDblClick: FldListHdrDblClick = "FldListHdrDblClick".asInstanceOf[FldListHdrDblClick]
+  
+  @scala.inline
+  def FldListKeyDown: FldListKeyDown = "FldListKeyDown".asInstanceOf[FldListKeyDown]
+  
+  @scala.inline
+  def FldListKeyPress: FldListKeyPress = "FldListKeyPress".asInstanceOf[FldListKeyPress]
+  
+  @scala.inline
+  def FldListKeyUp: FldListKeyUp = "FldListKeyUp".asInstanceOf[FldListKeyUp]
+  
+  @scala.inline
+  def FldListLostFocus: FldListLostFocus = "FldListLostFocus".asInstanceOf[FldListLostFocus]
+  
+  @scala.inline
+  def FldListMouseDown: FldListMouseDown = "FldListMouseDown".asInstanceOf[FldListMouseDown]
+  
+  @scala.inline
+  def FldListMouseMove: FldListMouseMove = "FldListMouseMove".asInstanceOf[FldListMouseMove]
+  
+  @scala.inline
+  def FldListMouseUp: FldListMouseUp = "FldListMouseUp".asInstanceOf[FldListMouseUp]
+  
+  @scala.inline
+  def Format: Format = "Format".asInstanceOf[Format]
+  
+  @scala.inline
+  def FormatCount: FormatCount = "FormatCount".asInstanceOf[FormatCount]
+  
+  @scala.inline
+  def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
+  
+  @scala.inline
+  def `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = ("HTML (*.html)").asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
+  
+  @scala.inline
+  def Headers: Headers = "Headers".asInstanceOf[Headers]
+  
+  @scala.inline
+  def Initialize: Initialize = "Initialize".asInstanceOf[Initialize]
+  
+  @scala.inline
+  def ItemAdded: ItemAdded = "ItemAdded".asInstanceOf[ItemAdded]
+  
+  @scala.inline
+  def ItemRemoved: ItemRemoved = "ItemRemoved".asInstanceOf[ItemRemoved]
+  
+  @scala.inline
+  def `Jet 2Dotx`: `Jet 2Dotx` = ("Jet 2.x").asInstanceOf[`Jet 2Dotx`]
+  
+  @scala.inline
+  def `Jet 3Dotx`: `Jet 3Dotx` = ("Jet 3.x").asInstanceOf[`Jet 3Dotx`]
+  
+  @scala.inline
+  def KeyAscii: KeyAscii = "KeyAscii".asInstanceOf[KeyAscii]
+  
+  @scala.inline
+  def KeyCode: KeyCode = "KeyCode".asInstanceOf[KeyCode]
+  
+  @scala.inline
+  def KeyDown: KeyDown = "KeyDown".asInstanceOf[KeyDown]
+  
+  @scala.inline
+  def KeyPress: KeyPress = "KeyPress".asInstanceOf[KeyPress]
+  
+  @scala.inline
+  def KeyUp: KeyUp = "KeyUp".asInstanceOf[KeyUp]
+  
+  @scala.inline
+  def Load: Load = "Load".asInstanceOf[Load]
+  
+  @scala.inline
+  def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
+  
+  @scala.inline
+  def `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = ("Microsoft Access Data Access Page (*.htm; *.html)").asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: `Microsoft Access LeftparenthesisdefaultRightparenthesis` = ("Microsoft Access (default)").asInstanceOf[`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = ("Microsoft Active Server Pages (*.asp)").asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = ("Microsoft Excel Binary Workbook (*.xlsb)").asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = ("Microsoft Excel Workbook (*.xlsx)").asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
+  
+  @scala.inline
+  def `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = ("Microsoft IIS (*.htx; *.idc)").asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
+  
+  @scala.inline
+  def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
+  
+  @scala.inline
+  def MouseMove: MouseMove = "MouseMove".asInstanceOf[MouseMove]
+  
+  @scala.inline
+  def MouseUp: MouseUp = "MouseUp".asInstanceOf[MouseUp]
+  
+  @scala.inline
+  def MouseWheel: MouseWheel = "MouseWheel".asInstanceOf[MouseWheel]
+  
+  @scala.inline
+  def NavigateError: NavigateError = "NavigateError".asInstanceOf[NavigateError]
+  
+  @scala.inline
+  def NewData: NewData = "NewData".asInstanceOf[NewData]
+  
+  @scala.inline
+  def NoData: NoData = "NoData".asInstanceOf[NoData]
+  
+  @scala.inline
+  def NotInList: NotInList = "NotInList".asInstanceOf[NotInList]
+  
+  @scala.inline
+  def `ODBC Database`: `ODBC Database` = ("ODBC Database").asInstanceOf[`ODBC Database`]
+  
+  @scala.inline
+  def OnConnect: OnConnect = "OnConnect".asInstanceOf[OnConnect]
+  
+  @scala.inline
+  def OnDisconnect: OnDisconnect = "OnDisconnect".asInstanceOf[OnDisconnect]
+  
+  @scala.inline
+  def Open: Open = "Open".asInstanceOf[Open]
+  
+  @scala.inline
+  def `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = ("PDF Format (*.pdf)").asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
+  
+  @scala.inline
+  def Page: Page = "Page".asInstanceOf[Page]
+  
+  @scala.inline
+  def Paint: Paint = "Paint".asInstanceOf[Paint]
+  
+  @scala.inline
+  def `Paradox 3Dotx`: `Paradox 3Dotx` = ("Paradox 3.x").asInstanceOf[`Paradox 3Dotx`]
+  
+  @scala.inline
+  def `Paradox 4Dotx`: `Paradox 4Dotx` = ("Paradox 4.x").asInstanceOf[`Paradox 4Dotx`]
+  
+  @scala.inline
+  def `Paradox 5Dotx`: `Paradox 5Dotx` = ("Paradox 5.x").asInstanceOf[`Paradox 5Dotx`]
+  
+  @scala.inline
+  def `Paradox 7Dotx`: `Paradox 7Dotx` = ("Paradox 7.x").asInstanceOf[`Paradox 7Dotx`]
+  
+  @scala.inline
+  def PivotTableChange: PivotTableChange = "PivotTableChange".asInstanceOf[PivotTableChange]
+  
+  @scala.inline
+  def PostData: PostData = "PostData".asInstanceOf[PostData]
+  
+  @scala.inline
+  def Print: Print = "Print".asInstanceOf[Print]
+  
+  @scala.inline
+  def PrintCount: PrintCount = "PrintCount".asInstanceOf[PrintCount]
+  
+  @scala.inline
+  def Progress: Progress = "Progress".asInstanceOf[Progress]
+  
+  @scala.inline
+  def ProgressChange: ProgressChange = "ProgressChange".asInstanceOf[ProgressChange]
+  
+  @scala.inline
+  def ProgressMax: ProgressMax = "ProgressMax".asInstanceOf[ProgressMax]
+  
+  @scala.inline
+  def Query: Query = "Query".asInstanceOf[Query]
+  
+  @scala.inline
+  def Reason: Reason = "Reason".asInstanceOf[Reason]
+  
+  @scala.inline
+  def RecordExit: RecordExit = "RecordExit".asInstanceOf[RecordExit]
+  
+  @scala.inline
+  def Reference: Reference = "Reference".asInstanceOf[Reference]
+  
+  @scala.inline
+  def Resize: Resize = "Resize".asInstanceOf[Resize]
+  
+  @scala.inline
+  def Response: Response = "Response".asInstanceOf[Response]
+  
+  @scala.inline
+  def Retreat: Retreat = "Retreat".asInstanceOf[Retreat]
+  
+  @scala.inline
+  def `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
+  
+  @scala.inline
+  def RowText: RowText = "RowText".asInstanceOf[RowText]
+  
+  @scala.inline
+  def ScreenTipText: ScreenTipText = "ScreenTipText".asInstanceOf[ScreenTipText]
+  
+  @scala.inline
+  def Selected: Selected = "Selected".asInstanceOf[Selected]
+  
+  @scala.inline
+  def SelectionChange: SelectionChange = "SelectionChange".asInstanceOf[SelectionChange]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040B;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0414;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0]
+  
+  @scala.inline
+  def Shift: Shift = "Shift".asInstanceOf[Shift]
+  
+  @scala.inline
+  def `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = ("Snapshot Format (*.snp)").asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
+  
+  @scala.inline
+  def SourceCtlName: SourceCtlName = "SourceCtlName".asInstanceOf[SourceCtlName]
+  
+  @scala.inline
+  def SourceFieldList: SourceFieldList = "SourceFieldList".asInstanceOf[SourceFieldList]
+  
+  @scala.inline
+  def SourceObject: SourceObject = "SourceObject".asInstanceOf[SourceObject]
+  
+  @scala.inline
+  def SourceRow: SourceRow = "SourceRow".asInstanceOf[SourceRow]
+  
+  @scala.inline
+  def State: State = "State".asInstanceOf[State]
+  
+  @scala.inline
+  def Status: Status = "Status".asInstanceOf[Status]
+  
+  @scala.inline
+  def StatusCode: StatusCode = "StatusCode".asInstanceOf[StatusCode]
+  
+  @scala.inline
+  def TargetCtlName: TargetCtlName = "TargetCtlName".asInstanceOf[TargetCtlName]
+  
+  @scala.inline
+  def TargetFieldList: TargetFieldList = "TargetFieldList".asInstanceOf[TargetFieldList]
+  
+  @scala.inline
+  def TargetFrameName: TargetFrameName = "TargetFrameName".asInstanceOf[TargetFrameName]
+  
+  @scala.inline
+  def TargetRow: TargetRow = "TargetRow".asInstanceOf[TargetRow]
+  
+  @scala.inline
+  def Terminate: Terminate = "Terminate".asInstanceOf[Terminate]
+  
+  @scala.inline
+  def Timer: Timer = "Timer".asInstanceOf[Timer]
+  
+  @scala.inline
+  def URL: URL = "URL".asInstanceOf[URL]
+  
+  @scala.inline
+  def Undo: Undo = "Undo".asInstanceOf[Undo]
+  
+  @scala.inline
+  def UndoBatchEdit: UndoBatchEdit = "UndoBatchEdit".asInstanceOf[UndoBatchEdit]
+  
+  @scala.inline
+  def Unload: Unload = "Unload".asInstanceOf[Unload]
+  
+  @scala.inline
+  def Updated: Updated = "Updated".asInstanceOf[Updated]
+  
+  @scala.inline
+  def ViewChange: ViewChange = "ViewChange".asInstanceOf[ViewChange]
+  
+  @scala.inline
+  def WSS: WSS = "WSS".asInstanceOf[WSS]
+  
+  @scala.inline
+  def X: X = "X".asInstanceOf[X]
+  
+  @scala.inline
+  def `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = ("XPS Format (*.xps)").asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
+  
+  @scala.inline
+  def Y: Y = "Y".asInstanceOf[Y]
+  
+  @scala.inline
+  def accName: accName = "accName".asInstanceOf[accName]
+  
+  @scala.inline
+  def accValue: accValue = "accValue".asInstanceOf[accValue]
+  
+  @scala.inline
+  def chartObject: chartObject = "chartObject".asInstanceOf[chartObject]
+  
+  @scala.inline
+  def `dBase 5Dot0`: `dBase 5Dot0` = ("dBase 5.0").asInstanceOf[`dBase 5Dot0`]
+  
+  @scala.inline
+  def `dBase III`: `dBase III` = ("dBase III").asInstanceOf[`dBase III`]
+  
+  @scala.inline
+  def `dBase IV`: `dBase IV` = ("dBase IV").asInstanceOf[`dBase IV`]
+  
+  @scala.inline
+  def drawObject: drawObject = "drawObject".asInstanceOf[drawObject]
+  
+  @scala.inline
+  def flags: flags = "flags".asInstanceOf[flags]
+  
+  @scala.inline
+  def pDisp: pDisp = "pDisp".asInstanceOf[pDisp]
+  
   @js.native
   sealed trait Activate extends js.Object
   
@@ -584,372 +1134,4 @@ object activexAccessStrings {
   
   @js.native
   sealed trait pDisp extends js.Object
-  
-  @scala.inline
-  def Activate: Activate = "Activate".asInstanceOf[Activate]
-  @scala.inline
-  def AfterDelConfirm: AfterDelConfirm = "AfterDelConfirm".asInstanceOf[AfterDelConfirm]
-  @scala.inline
-  def AfterFinalRender: AfterFinalRender = "AfterFinalRender".asInstanceOf[AfterFinalRender]
-  @scala.inline
-  def AfterInsert: AfterInsert = "AfterInsert".asInstanceOf[AfterInsert]
-  @scala.inline
-  def AfterLayout: AfterLayout = "AfterLayout".asInstanceOf[AfterLayout]
-  @scala.inline
-  def AfterRender: AfterRender = "AfterRender".asInstanceOf[AfterRender]
-  @scala.inline
-  def AfterStartup: AfterStartup = "AfterStartup".asInstanceOf[AfterStartup]
-  @scala.inline
-  def AfterUpdate: AfterUpdate = "AfterUpdate".asInstanceOf[AfterUpdate]
-  @scala.inline
-  def ApplyFilter: ApplyFilter = "ApplyFilter".asInstanceOf[ApplyFilter]
-  @scala.inline
-  def ApplyType: ApplyType = "ApplyType".asInstanceOf[ApplyType]
-  @scala.inline
-  def AttachmentCurrent: AttachmentCurrent = "AttachmentCurrent".asInstanceOf[AttachmentCurrent]
-  @scala.inline
-  def BeforeDelConfirm: BeforeDelConfirm = "BeforeDelConfirm".asInstanceOf[BeforeDelConfirm]
-  @scala.inline
-  def BeforeInsert: BeforeInsert = "BeforeInsert".asInstanceOf[BeforeInsert]
-  @scala.inline
-  def BeforeNavigate2: BeforeNavigate2 = "BeforeNavigate2".asInstanceOf[BeforeNavigate2]
-  @scala.inline
-  def BeforeQuery: BeforeQuery = "BeforeQuery".asInstanceOf[BeforeQuery]
-  @scala.inline
-  def BeforeRender: BeforeRender = "BeforeRender".asInstanceOf[BeforeRender]
-  @scala.inline
-  def BeforeScreenTip: BeforeScreenTip = "BeforeScreenTip".asInstanceOf[BeforeScreenTip]
-  @scala.inline
-  def BeforeUpdate: BeforeUpdate = "BeforeUpdate".asInstanceOf[BeforeUpdate]
-  @scala.inline
-  def BeginBatchEdit: BeginBatchEdit = "BeginBatchEdit".asInstanceOf[BeginBatchEdit]
-  @scala.inline
-  def Button: Button = "Button".asInstanceOf[Button]
-  @scala.inline
-  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
-  @scala.inline
-  def Change: Change = "Change".asInstanceOf[Change]
-  @scala.inline
-  def Checked: Checked = "Checked".asInstanceOf[Checked]
-  @scala.inline
-  def Click: Click = "Click".asInstanceOf[Click]
-  @scala.inline
-  def Close: Close = "Close".asInstanceOf[Close]
-  @scala.inline
-  def Code: Code = "Code".asInstanceOf[Code]
-  @scala.inline
-  def Column: Column = "Column".asInstanceOf[Column]
-  @scala.inline
-  def ColumnCreated: ColumnCreated = "ColumnCreated".asInstanceOf[ColumnCreated]
-  @scala.inline
-  def ColumnDeleted: ColumnDeleted = "ColumnDeleted".asInstanceOf[ColumnDeleted]
-  @scala.inline
-  def ColumnSelected: ColumnSelected = "ColumnSelected".asInstanceOf[ColumnSelected]
-  @scala.inline
-  def ColumnSized: ColumnSized = "ColumnSized".asInstanceOf[ColumnSized]
-  @scala.inline
-  def Columns: Columns = "Columns".asInstanceOf[Columns]
-  @scala.inline
-  def Command: Command = "Command".asInstanceOf[Command]
-  @scala.inline
-  def CommandBeforeExecute: CommandBeforeExecute = "CommandBeforeExecute".asInstanceOf[CommandBeforeExecute]
-  @scala.inline
-  def CommandChecked: CommandChecked = "CommandChecked".asInstanceOf[CommandChecked]
-  @scala.inline
-  def CommandEnabled: CommandEnabled = "CommandEnabled".asInstanceOf[CommandEnabled]
-  @scala.inline
-  def CommandExecute: CommandExecute = "CommandExecute".asInstanceOf[CommandExecute]
-  @scala.inline
-  def Count: Count = "Count".asInstanceOf[Count]
-  @scala.inline
-  def Current: Current = "Current".asInstanceOf[Current]
-  @scala.inline
-  def DataChange: DataChange = "DataChange".asInstanceOf[DataChange]
-  @scala.inline
-  def DataErr: DataErr = "DataErr".asInstanceOf[DataErr]
-  @scala.inline
-  def DataSetChange: DataSetChange = "DataSetChange".asInstanceOf[DataSetChange]
-  @scala.inline
-  def DblClick: DblClick = "DblClick".asInstanceOf[DblClick]
-  @scala.inline
-  def Deactivate: Deactivate = "Deactivate".asInstanceOf[Deactivate]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def Dirty: Dirty = "Dirty".asInstanceOf[Dirty]
-  @scala.inline
-  def DocumentComplete: DocumentComplete = "DocumentComplete".asInstanceOf[DocumentComplete]
-  @scala.inline
-  def DragDrop: DragDrop = "DragDrop".asInstanceOf[DragDrop]
-  @scala.inline
-  def DragOver: DragOver = "DragOver".asInstanceOf[DragOver]
-  @scala.inline
-  def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
-  @scala.inline
-  def Enter: Enter = "Enter".asInstanceOf[Enter]
-  @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
-  @scala.inline
-  def Exit: Exit = "Exit".asInstanceOf[Exit]
-  @scala.inline
-  def FieldList: FieldList = "FieldList".asInstanceOf[FieldList]
-  @scala.inline
-  def FieldListIndex: FieldListIndex = "FieldListIndex".asInstanceOf[FieldListIndex]
-  @scala.inline
-  def Filter: Filter = "Filter".asInstanceOf[Filter]
-  @scala.inline
-  def FilterType: FilterType = "FilterType".asInstanceOf[FilterType]
-  @scala.inline
-  def FldListCheckItem: FldListCheckItem = "FldListCheckItem".asInstanceOf[FldListCheckItem]
-  @scala.inline
-  def FldListClick: FldListClick = "FldListClick".asInstanceOf[FldListClick]
-  @scala.inline
-  def FldListDblClick: FldListDblClick = "FldListDblClick".asInstanceOf[FldListDblClick]
-  @scala.inline
-  def FldListDragDrop: FldListDragDrop = "FldListDragDrop".asInstanceOf[FldListDragDrop]
-  @scala.inline
-  def FldListDragOver: FldListDragOver = "FldListDragOver".asInstanceOf[FldListDragOver]
-  @scala.inline
-  def FldListGotFocus: FldListGotFocus = "FldListGotFocus".asInstanceOf[FldListGotFocus]
-  @scala.inline
-  def FldListHdrDblClick: FldListHdrDblClick = "FldListHdrDblClick".asInstanceOf[FldListHdrDblClick]
-  @scala.inline
-  def FldListKeyDown: FldListKeyDown = "FldListKeyDown".asInstanceOf[FldListKeyDown]
-  @scala.inline
-  def FldListKeyPress: FldListKeyPress = "FldListKeyPress".asInstanceOf[FldListKeyPress]
-  @scala.inline
-  def FldListKeyUp: FldListKeyUp = "FldListKeyUp".asInstanceOf[FldListKeyUp]
-  @scala.inline
-  def FldListLostFocus: FldListLostFocus = "FldListLostFocus".asInstanceOf[FldListLostFocus]
-  @scala.inline
-  def FldListMouseDown: FldListMouseDown = "FldListMouseDown".asInstanceOf[FldListMouseDown]
-  @scala.inline
-  def FldListMouseMove: FldListMouseMove = "FldListMouseMove".asInstanceOf[FldListMouseMove]
-  @scala.inline
-  def FldListMouseUp: FldListMouseUp = "FldListMouseUp".asInstanceOf[FldListMouseUp]
-  @scala.inline
-  def Format: Format = "Format".asInstanceOf[Format]
-  @scala.inline
-  def FormatCount: FormatCount = "FormatCount".asInstanceOf[FormatCount]
-  @scala.inline
-  def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
-  @scala.inline
-  def `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = ("HTML (*.html)").asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
-  @scala.inline
-  def Headers: Headers = "Headers".asInstanceOf[Headers]
-  @scala.inline
-  def Initialize: Initialize = "Initialize".asInstanceOf[Initialize]
-  @scala.inline
-  def ItemAdded: ItemAdded = "ItemAdded".asInstanceOf[ItemAdded]
-  @scala.inline
-  def ItemRemoved: ItemRemoved = "ItemRemoved".asInstanceOf[ItemRemoved]
-  @scala.inline
-  def `Jet 2Dotx`: `Jet 2Dotx` = ("Jet 2.x").asInstanceOf[`Jet 2Dotx`]
-  @scala.inline
-  def `Jet 3Dotx`: `Jet 3Dotx` = ("Jet 3.x").asInstanceOf[`Jet 3Dotx`]
-  @scala.inline
-  def KeyAscii: KeyAscii = "KeyAscii".asInstanceOf[KeyAscii]
-  @scala.inline
-  def KeyCode: KeyCode = "KeyCode".asInstanceOf[KeyCode]
-  @scala.inline
-  def KeyDown: KeyDown = "KeyDown".asInstanceOf[KeyDown]
-  @scala.inline
-  def KeyPress: KeyPress = "KeyPress".asInstanceOf[KeyPress]
-  @scala.inline
-  def KeyUp: KeyUp = "KeyUp".asInstanceOf[KeyUp]
-  @scala.inline
-  def Load: Load = "Load".asInstanceOf[Load]
-  @scala.inline
-  def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
-  @scala.inline
-  def `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
-  @scala.inline
-  def `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = ("Microsoft Access Data Access Page (*.htm; *.html)").asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
-  @scala.inline
-  def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: `Microsoft Access LeftparenthesisdefaultRightparenthesis` = ("Microsoft Access (default)").asInstanceOf[`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
-  @scala.inline
-  def `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = ("Microsoft Active Server Pages (*.asp)").asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
-  @scala.inline
-  def `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = ("Microsoft Excel Binary Workbook (*.xlsb)").asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
-  @scala.inline
-  def `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
-  @scala.inline
-  def `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = ("Microsoft Excel Workbook (*.xlsx)").asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
-  @scala.inline
-  def `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = ("Microsoft IIS (*.htx; *.idc)").asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
-  @scala.inline
-  def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
-  @scala.inline
-  def MouseMove: MouseMove = "MouseMove".asInstanceOf[MouseMove]
-  @scala.inline
-  def MouseUp: MouseUp = "MouseUp".asInstanceOf[MouseUp]
-  @scala.inline
-  def MouseWheel: MouseWheel = "MouseWheel".asInstanceOf[MouseWheel]
-  @scala.inline
-  def NavigateError: NavigateError = "NavigateError".asInstanceOf[NavigateError]
-  @scala.inline
-  def NewData: NewData = "NewData".asInstanceOf[NewData]
-  @scala.inline
-  def NoData: NoData = "NoData".asInstanceOf[NoData]
-  @scala.inline
-  def NotInList: NotInList = "NotInList".asInstanceOf[NotInList]
-  @scala.inline
-  def `ODBC Database`: `ODBC Database` = ("ODBC Database").asInstanceOf[`ODBC Database`]
-  @scala.inline
-  def OnConnect: OnConnect = "OnConnect".asInstanceOf[OnConnect]
-  @scala.inline
-  def OnDisconnect: OnDisconnect = "OnDisconnect".asInstanceOf[OnDisconnect]
-  @scala.inline
-  def Open: Open = "Open".asInstanceOf[Open]
-  @scala.inline
-  def `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = ("PDF Format (*.pdf)").asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
-  @scala.inline
-  def Page: Page = "Page".asInstanceOf[Page]
-  @scala.inline
-  def Paint: Paint = "Paint".asInstanceOf[Paint]
-  @scala.inline
-  def `Paradox 3Dotx`: `Paradox 3Dotx` = ("Paradox 3.x").asInstanceOf[`Paradox 3Dotx`]
-  @scala.inline
-  def `Paradox 4Dotx`: `Paradox 4Dotx` = ("Paradox 4.x").asInstanceOf[`Paradox 4Dotx`]
-  @scala.inline
-  def `Paradox 5Dotx`: `Paradox 5Dotx` = ("Paradox 5.x").asInstanceOf[`Paradox 5Dotx`]
-  @scala.inline
-  def `Paradox 7Dotx`: `Paradox 7Dotx` = ("Paradox 7.x").asInstanceOf[`Paradox 7Dotx`]
-  @scala.inline
-  def PivotTableChange: PivotTableChange = "PivotTableChange".asInstanceOf[PivotTableChange]
-  @scala.inline
-  def PostData: PostData = "PostData".asInstanceOf[PostData]
-  @scala.inline
-  def Print: Print = "Print".asInstanceOf[Print]
-  @scala.inline
-  def PrintCount: PrintCount = "PrintCount".asInstanceOf[PrintCount]
-  @scala.inline
-  def Progress: Progress = "Progress".asInstanceOf[Progress]
-  @scala.inline
-  def ProgressChange: ProgressChange = "ProgressChange".asInstanceOf[ProgressChange]
-  @scala.inline
-  def ProgressMax: ProgressMax = "ProgressMax".asInstanceOf[ProgressMax]
-  @scala.inline
-  def Query: Query = "Query".asInstanceOf[Query]
-  @scala.inline
-  def Reason: Reason = "Reason".asInstanceOf[Reason]
-  @scala.inline
-  def RecordExit: RecordExit = "RecordExit".asInstanceOf[RecordExit]
-  @scala.inline
-  def Reference: Reference = "Reference".asInstanceOf[Reference]
-  @scala.inline
-  def Resize: Resize = "Resize".asInstanceOf[Resize]
-  @scala.inline
-  def Response: Response = "Response".asInstanceOf[Response]
-  @scala.inline
-  def Retreat: Retreat = "Retreat".asInstanceOf[Retreat]
-  @scala.inline
-  def `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
-  @scala.inline
-  def RowText: RowText = "RowText".asInstanceOf[RowText]
-  @scala.inline
-  def ScreenTipText: ScreenTipText = "ScreenTipText".asInstanceOf[ScreenTipText]
-  @scala.inline
-  def Selected: Selected = "Selected".asInstanceOf[Selected]
-  @scala.inline
-  def SelectionChange: SelectionChange = "SelectionChange".asInstanceOf[SelectionChange]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040B;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0414;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0]
-  @scala.inline
-  def Shift: Shift = "Shift".asInstanceOf[Shift]
-  @scala.inline
-  def `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = ("Snapshot Format (*.snp)").asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
-  @scala.inline
-  def SourceCtlName: SourceCtlName = "SourceCtlName".asInstanceOf[SourceCtlName]
-  @scala.inline
-  def SourceFieldList: SourceFieldList = "SourceFieldList".asInstanceOf[SourceFieldList]
-  @scala.inline
-  def SourceObject: SourceObject = "SourceObject".asInstanceOf[SourceObject]
-  @scala.inline
-  def SourceRow: SourceRow = "SourceRow".asInstanceOf[SourceRow]
-  @scala.inline
-  def State: State = "State".asInstanceOf[State]
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
-  @scala.inline
-  def StatusCode: StatusCode = "StatusCode".asInstanceOf[StatusCode]
-  @scala.inline
-  def TargetCtlName: TargetCtlName = "TargetCtlName".asInstanceOf[TargetCtlName]
-  @scala.inline
-  def TargetFieldList: TargetFieldList = "TargetFieldList".asInstanceOf[TargetFieldList]
-  @scala.inline
-  def TargetFrameName: TargetFrameName = "TargetFrameName".asInstanceOf[TargetFrameName]
-  @scala.inline
-  def TargetRow: TargetRow = "TargetRow".asInstanceOf[TargetRow]
-  @scala.inline
-  def Terminate: Terminate = "Terminate".asInstanceOf[Terminate]
-  @scala.inline
-  def Timer: Timer = "Timer".asInstanceOf[Timer]
-  @scala.inline
-  def URL: URL = "URL".asInstanceOf[URL]
-  @scala.inline
-  def Undo: Undo = "Undo".asInstanceOf[Undo]
-  @scala.inline
-  def UndoBatchEdit: UndoBatchEdit = "UndoBatchEdit".asInstanceOf[UndoBatchEdit]
-  @scala.inline
-  def Unload: Unload = "Unload".asInstanceOf[Unload]
-  @scala.inline
-  def Updated: Updated = "Updated".asInstanceOf[Updated]
-  @scala.inline
-  def ViewChange: ViewChange = "ViewChange".asInstanceOf[ViewChange]
-  @scala.inline
-  def WSS: WSS = "WSS".asInstanceOf[WSS]
-  @scala.inline
-  def X: X = "X".asInstanceOf[X]
-  @scala.inline
-  def `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = ("XPS Format (*.xps)").asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
-  @scala.inline
-  def Y: Y = "Y".asInstanceOf[Y]
-  @scala.inline
-  def accName: accName = "accName".asInstanceOf[accName]
-  @scala.inline
-  def accValue: accValue = "accValue".asInstanceOf[accValue]
-  @scala.inline
-  def chartObject: chartObject = "chartObject".asInstanceOf[chartObject]
-  @scala.inline
-  def `dBase 5Dot0`: `dBase 5Dot0` = ("dBase 5.0").asInstanceOf[`dBase 5Dot0`]
-  @scala.inline
-  def `dBase III`: `dBase III` = ("dBase III").asInstanceOf[`dBase III`]
-  @scala.inline
-  def `dBase IV`: `dBase IV` = ("dBase IV").asInstanceOf[`dBase IV`]
-  @scala.inline
-  def drawObject: drawObject = "drawObject".asInstanceOf[drawObject]
-  @scala.inline
-  def flags: flags = "flags".asInstanceOf[flags]
-  @scala.inline
-  def pDisp: pDisp = "pDisp".asInstanceOf[pDisp]
 }
-

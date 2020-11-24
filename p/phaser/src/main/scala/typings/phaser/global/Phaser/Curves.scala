@@ -7,11 +7,12 @@ import typings.phaser.Phaser.Types.Curves.JSONEllipseCurve
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Curves")
 @js.native
 object Curves extends js.Object {
+  
   /**
     * A higher-order Bézier curve constructed of four points.
     */
@@ -27,6 +28,16 @@ object Curves extends js.Object {
       * @param p3 End Point.
       */
     def this(p0: Vector2, p1: Vector2, p2: Vector2, p3: Vector2) = this()
+  }
+  /* static members */
+  @js.native
+  object CubicBezier extends js.Object {
+    
+    /**
+      * Generates a curve from a JSON object.
+      * @param data The JSON object containing this curve data.
+      */
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = js.native
   }
   
   /**
@@ -74,6 +85,16 @@ object Curves extends js.Object {
       rotation: js.UndefOr[integer]
     ) = this()
   }
+  /* static members */
+  @js.native
+  object Ellipse extends js.Object {
+    
+    /**
+      * Creates a curve from the provided Ellipse Curve Configuration object.
+      * @param data The JSON object containing this curve data.
+      */
+    def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = js.native
+  }
   
   /**
     * A LineCurve is a "curve" comprising exactly two points (a line segment).
@@ -90,6 +111,16 @@ object Curves extends js.Object {
     def this(p0: Vector2) = this()
     def this(p0: js.Array[Double], p1: Vector2) = this()
     def this(p0: Vector2, p1: Vector2) = this()
+  }
+  /* static members */
+  @js.native
+  object Line extends js.Object {
+    
+    /**
+      * Configures this line from a JSON representation.
+      * @param data The JSON object containing this curve data.
+      */
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = js.native
   }
   
   /**
@@ -143,6 +174,16 @@ object Curves extends js.Object {
       */
     def this(p0: Vector2, p1: Vector2, p2: Vector2) = this()
   }
+  /* static members */
+  @js.native
+  object QuadraticBezier extends js.Object {
+    
+    /**
+      * Creates a curve from a JSON object, e. g. created by `toJSON`.
+      * @param data The JSON object containing this curve data.
+      */
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = js.native
+  }
   
   /**
     * Create a smooth 2d spline curve from a series of points.
@@ -156,56 +197,14 @@ object Curves extends js.Object {
     extends typings.phaser.Phaser.Curves.Spline {
     def this(points: js.Array[js.Array[Double] | Double | Vector2]) = this()
   }
-  
-  /* static members */
-  @js.native
-  object CubicBezier extends js.Object {
-    /**
-      * Generates a curve from a JSON object.
-      * @param data The JSON object containing this curve data.
-      */
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Ellipse extends js.Object {
-    /**
-      * Creates a curve from the provided Ellipse Curve Configuration object.
-      * @param data The JSON object containing this curve data.
-      */
-    def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Line extends js.Object {
-    /**
-      * Configures this line from a JSON representation.
-      * @param data The JSON object containing this curve data.
-      */
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object QuadraticBezier extends js.Object {
-    /**
-      * Creates a curve from a JSON object, e. g. created by `toJSON`.
-      * @param data The JSON object containing this curve data.
-      */
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = js.native
-  }
-  
   /* static members */
   @js.native
   object Spline extends js.Object {
+    
     /**
       * Imports a JSON object containing this curve data.
       * @param data The JSON object containing this curve data.
       */
     def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = js.native
   }
-  
 }
-

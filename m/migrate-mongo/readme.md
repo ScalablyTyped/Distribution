@@ -11,8 +11,8 @@ A database migration tool for MongoDB in Node
 | Full name          | migrate-mongo |
 | Keywords           | migrate mongo mongodb migrations database |
 | # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 460803 |
+| # dependents       | 3 |
+| # downloads        | 936972 |
 | # stars            | 4 |
 
 ## Links

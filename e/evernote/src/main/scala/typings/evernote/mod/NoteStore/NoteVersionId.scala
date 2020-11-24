@@ -5,16 +5,20 @@ import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.NoteVersionId")
 @js.native
 class NoteVersionId () extends js.Object {
   def this(args: LastEditorId) = this()
+  
   var lastEditorId: js.UndefOr[UserID] = js.native
+  
   var saved: js.UndefOr[Timestamp] = js.native
+  
   var title: js.UndefOr[String] = js.native
+  
   var updateSequenceNum: js.UndefOr[Double] = js.native
+  
   var updated: js.UndefOr[Timestamp] = js.native
 }
-

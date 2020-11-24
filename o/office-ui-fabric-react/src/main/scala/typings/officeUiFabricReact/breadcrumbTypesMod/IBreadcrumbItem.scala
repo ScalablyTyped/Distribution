@@ -12,10 +12,11 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IBreadcrumbItem extends js.Object {
+  
   /**
     * Optional prop to render the item as a heading of your choice.
     *
@@ -24,19 +25,23 @@ trait IBreadcrumbItem extends js.Object {
     * This is not generally recommended because it may prevent activating the link using the keyboard.
     */
   var as: js.UndefOr[h1 | h2 | h3 | h4 | h5 | h6 | a] = js.native
+  
   /**
     * Url to navigate to when this breadcrumb item is clicked.
     */
   var href: js.UndefOr[String] = js.native
+  
   /**
     * Whether this is the breadcrumb item the user is currently navigated to.
     * If true, `aria-current="page"` will be applied to this breadcrumb item.
     */
   var isCurrentItem: js.UndefOr[Boolean] = js.native
+  
   /**
     * Arbitrary unique string associated with the breadcrumb item.
     */
   var key: String = js.native
+  
   /**
     * Callback issued when the breadcrumb item is selected.
     */
@@ -47,52 +52,76 @@ trait IBreadcrumbItem extends js.Object {
       Unit
     ]
   ] = js.native
+  
+  /**
+    * Optional role for the breadcrumb item (which renders as a button by default)
+    */
+  var role: js.UndefOr[String] = js.native
+  
   /**
     * Text to display to the user for the breadcrumb item.
     */
   var text: String = js.native
 }
-
 object IBreadcrumbItem {
+  
   @scala.inline
   def apply(key: String, text: String): IBreadcrumbItem = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBreadcrumbItem]
   }
+  
   @scala.inline
   implicit class IBreadcrumbItemOps[Self <: IBreadcrumbItem] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAs(value: h1 | h2 | h3 | h4 | h5 | h6 | a): Self = this.set("as", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAs: Self = this.set("as", js.undefined)
+    
     @scala.inline
     def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHref: Self = this.set("href", js.undefined)
+    
     @scala.inline
     def setIsCurrentItem(value: Boolean): Self = this.set("isCurrentItem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsCurrentItem: Self = this.set("isCurrentItem", js.undefined)
+    
     @scala.inline
     def setOnClick(
       value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[IBreadcrumbItem]) => Unit
     ): Self = this.set("onClick", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnClick: Self = this.set("onClick", js.undefined)
+    
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
   }
-  
 }
-

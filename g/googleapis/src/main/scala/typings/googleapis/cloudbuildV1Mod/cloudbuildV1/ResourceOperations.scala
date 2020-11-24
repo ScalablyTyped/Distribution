@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbuild/v1", "cloudbuild_v1.Resource$Operations")
 @js.native
 class ResourceOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudbuild.operations.cancel
     * @desc Starts asynchronous cancellation on a long-running operation.  The
@@ -50,6 +50,9 @@ class ResourceOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudbuild.operations.get
     * @desc Gets the latest state of a long-running operation.  Clients can use
@@ -80,6 +83,7 @@ class ResourceOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudbuild.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -120,4 +124,3 @@ class ResourceOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
 }
-

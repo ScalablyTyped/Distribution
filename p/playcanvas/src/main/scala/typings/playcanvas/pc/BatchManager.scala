@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Glues many mesh instances into a single one for better performance.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BatchManager extends js.Object {
+  
   /**
     * Adds new global batch group.
     * @param name - Custom name.
@@ -33,6 +34,7 @@ trait BatchManager extends js.Object {
   ): BatchGroup = js.native
   def addGroup(name: String, dynamic: Boolean, maxAabbSize: Double, id: Double): BatchGroup = js.native
   def addGroup(name: String, dynamic: Boolean, maxAabbSize: Double, id: Double, layers: js.Array[Double]): BatchGroup = js.native
+  
   /**
     * Clones a batch. This method doesn't rebuild batch geometry, but only creates a new model and batch objects, linked to different source mesh instances.
     * @param batch - A batch object.
@@ -40,6 +42,7 @@ trait BatchManager extends js.Object {
     * @returns New batch object.
     */
   def clone(batch: Batch, clonedMeshInstances: js.Array[MeshInstance]): Batch = js.native
+  
   /**
     * Takes a mesh instance list that has been prepared by {@link pc.BatchManager#prepare}, and returns a {@link pc.Batch} object. This method assumes that all mesh instances provided can be rendered in a single draw call.
     * @param meshInstances - Input list of mesh instances.
@@ -49,24 +52,28 @@ trait BatchManager extends js.Object {
     */
   def create(meshInstances: js.Array[MeshInstance], dynamic: Boolean): Batch = js.native
   def create(meshInstances: js.Array[MeshInstance], dynamic: Boolean, batchGroupId: Double): Batch = js.native
+  
   /**
     * Destroys all batches and creates new based on scene models. Hides original models. Called by engine automatically on app start, and if batchGroupIds on models are changed.
     * @param [groupIds] - Optional array of batch group IDs to update. Otherwise all groups are updated.
     */
   def generate(): Unit = js.native
   def generate(groupIds: js.Array[Double]): Unit = js.native
+  
   /**
     * Retrieves a {@link pc.BatchGroup} object with a corresponding name, if it exists, or null otherwise.
     * @param name - Name.
     * @returns Group object.
     */
   def getGroupByName(name: String): BatchGroup = js.native
+  
   /**
     * Mark a specific batch group as dirty. Dirty groups are re-batched before the next frame is rendered.
     * Note, re-batching a group is a potentially expensive operation.
     * @param id - Batch Group ID to mark as dirty.
     */
   def markGroupDirty(id: Double): Unit = js.native
+  
   /**
     * Takes a list of mesh instances to be batched and sorts them into lists one for each draw call.
     * The input list will be split, if:
@@ -85,6 +92,7 @@ trait BatchManager extends js.Object {
     * @returns An array of arrays of mesh instances, each valid to pass to {@link pc.BatchManager#create}.
     */
   def prepare(meshInstances: js.Array[MeshInstance], dynamic: Boolean, maxAabbSize: Double, translucent: Boolean): js.Array[js.Array[MeshInstance]] = js.native
+  
   /**
     * Remove global batch group by id.
     * Note, this traverses the entire scene graph and clears the batch group id from all components.
@@ -92,4 +100,3 @@ trait BatchManager extends js.Object {
     */
   def removeGroup(id: Double): Unit = js.native
 }
-

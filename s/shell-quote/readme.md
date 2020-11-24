@@ -11,8 +11,8 @@ quote and parse shell commands
 | Full name          | shell-quote |
 | Keywords           | command, parse, quote, shell |
 | # releases         | 6 |
-| # dependents       | 488 |
-| # downloads        | 186639450 |
+| # dependents       | 554 |
+| # downloads        | 301827974 |
 | # stars            | 6 |
 
 ## Links

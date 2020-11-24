@@ -4,15 +4,15 @@
 Typings are for version 3.2.0
 
 ## Library description:
-Fastest deep equal comparison for React. Perfect for shouldComponentUpdate. Also really fast general-purpose deep comparison
+Fastest deep equal comparison for React. Great for React.memo & shouldComponentUpdate. Also really fast general-purpose deep comparison.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-fast-compare |
 | Keywords           | fast, equal, react, compare, shouldComponentUpdate, deep-equal |
-| # releases         | 8 |
-| # dependents       | 161 |
-| # downloads        | 53887547 |
+| # releases         | 9 |
+| # dependents       | 235 |
+| # downloads        | 126153062 |
 | # stars            | 0 |
 
 ## Links

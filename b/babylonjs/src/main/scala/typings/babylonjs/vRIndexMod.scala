@@ -6,11 +6,12 @@ import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import typings.babylonjs.webVRCameraMod.WebVROptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Cameras/VR/index", JSImport.Namespace)
 @js.native
 object vRIndexMod extends js.Object {
+  
   @js.native
   class OnAfterEnteringVRObservableEvent ()
     extends typings.babylonjs.vrExperienceHelperMod.OnAfterEnteringVRObservableEvent
@@ -18,6 +19,16 @@ object vRIndexMod extends js.Object {
   @js.native
   class VRCameraMetrics ()
     extends typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+  /* static members */
+  @js.native
+  object VRCameraMetrics extends js.Object {
+    
+    /**
+      * Get the default VRMetrics based on the most generic setup.
+      * @returns the default vr metrics
+      */
+    def GetDefault(): typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics = js.native
+  }
   
   @js.native
   class VRDeviceOrientationArcRotateCamera protected ()
@@ -50,6 +61,16 @@ object vRIndexMod extends js.Object {
       radius: Double,
       target: Vector3,
       scene: Scene,
+      compensateDistortion: js.UndefOr[scala.Nothing],
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
+      scene: Scene,
       compensateDistortion: Boolean,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
@@ -68,6 +89,13 @@ object vRIndexMod extends js.Object {
       */
     def this(name: String, position: Vector3, scene: Scene) = this()
     def this(name: String, position: Vector3, scene: Scene, compensateDistortion: Boolean) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Scene,
+      compensateDistortion: js.UndefOr[scala.Nothing],
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
     def this(
       name: String,
       position: Vector3,
@@ -94,6 +122,13 @@ object vRIndexMod extends js.Object {
       name: String,
       position: Vector3,
       scene: Scene,
+      compensateDistortion: js.UndefOr[scala.Nothing],
+      vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Scene,
       compensateDistortion: Boolean,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
@@ -115,6 +150,20 @@ object vRIndexMod extends js.Object {
     webVROptions: VRExperienceHelperOptions
     ) = this()
   }
+  /* static members */
+  @js.native
+  object VRExperienceHelper extends js.Object {
+    
+    /**
+      * Speed Constant Teleportation Mode
+      */
+    val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
+    
+    /**
+      * Time Constant Teleportation Mode
+      */
+    val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
+  }
   
   @js.native
   class WebVRFreeCamera protected ()
@@ -129,29 +178,4 @@ object vRIndexMod extends js.Object {
     def this(name: String, position: Vector3, scene: Scene) = this()
     def this(name: String, position: Vector3, scene: Scene, webVROptions: WebVROptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object VRCameraMetrics extends js.Object {
-    /**
-      * Get the default VRMetrics based on the most generic setup.
-      * @returns the default vr metrics
-      */
-    def GetDefault(): typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object VRExperienceHelper extends js.Object {
-    /**
-      * Speed Constant Teleportation Mode
-      */
-    val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
-    /**
-      * Time Constant Teleportation Mode
-      */
-    val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
-  }
-  
 }
-

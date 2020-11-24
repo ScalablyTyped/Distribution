@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/alertcenter/v1beta1", "alertcenter_v1beta1.Resource$Alerts$Feedback")
 @js.native
 class ResourceAlertsFeedback protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * alertcenter.alerts.feedback.create
     * @desc Creates new feedback for an alert. Attempting to create a feedback
@@ -44,6 +46,7 @@ class ResourceAlertsFeedback protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAlertFeedback]
   ): Unit = js.native
+  
   /**
     * alertcenter.alerts.feedback.list
     * @desc Lists all the feedback for an alert. Attempting to list feedbacks
@@ -79,4 +82,3 @@ class ResourceAlertsFeedback protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListAlertFeedbackResponse]
   ): Unit = js.native
 }
-

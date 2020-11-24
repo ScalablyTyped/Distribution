@@ -3,11 +3,12 @@ package typings.snapsvg.mod
 import typings.mina.mina.MinaAnimation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("snapsvg", "animate")
 @js.native
 object animate extends js.Object {
+  
   def apply(
     from: js.Array[Double],
     to: js.Array[Double],
@@ -110,4 +111,3 @@ object animate extends js.Object {
     callback: js.Function0[Unit]
   ): MinaAnimation = js.native
 }
-

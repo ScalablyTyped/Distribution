@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to set marks in an outputstream and to later jump back to these marks.
@@ -18,8 +18,8 @@ trait MarkableOutputStream
      with XMarkableStream
      with XActiveDataSource
      with XConnectable
-
 object MarkableOutputStream {
+  
   @scala.inline
   def apply(
     OutputStream: XOutputStream,
@@ -47,4 +47,3 @@ object MarkableOutputStream {
     __obj.asInstanceOf[MarkableOutputStream]
   }
 }
-

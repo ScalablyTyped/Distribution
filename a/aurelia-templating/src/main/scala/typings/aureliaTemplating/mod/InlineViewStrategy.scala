@@ -2,7 +2,7 @@ package typings.aureliaTemplating.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "InlineViewStrategy")
 @js.native
@@ -21,6 +21,7 @@ class InlineViewStrategy protected () extends js.Object {
     dependencies: js.Array[String | js.Function | js.Object],
     dependencyBaseUrl: String
   ) = this()
+  
   /**
     * Loads a view factory.
     * @param viewEngine The view engine to use during the load process.
@@ -48,4 +49,3 @@ class InlineViewStrategy protected () extends js.Object {
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
 }
-

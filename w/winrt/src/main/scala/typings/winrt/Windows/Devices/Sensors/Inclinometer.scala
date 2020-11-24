@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Inclinometer extends IInclinometer
-
 object Inclinometer {
+  
   @scala.inline
   def apply(
     getCurrentReading: () => InclinometerReading,
@@ -19,4 +19,3 @@ object Inclinometer {
     __obj.asInstanceOf[Inclinometer]
   }
 }
-

@@ -2,18 +2,20 @@ package typings.arcgisJsApi.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RelatedRecordsInfo
   extends Accessor
      with JSONSupport {
+  
   /**
     * An array of [RelatedRecordsInfoFieldOrder](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html) objects indicating the field display order for the related records and whether they should be sorted in ascending `asc` or descending `desc` order.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-RelatedRecordsInfo.html#orderByFields)
     */
   var orderByFields: js.Array[RelatedRecordsInfoFieldOrder] = js.native
+  
   /**
     * Indicates whether to display related records in the popup.
     *
@@ -21,4 +23,3 @@ trait RelatedRecordsInfo
     */
   var showRelatedRecords: Boolean = js.native
 }
-

@@ -16,12 +16,11 @@ import typings.semanticUiSite.semanticUiSiteStrings.siteNamespace
 import typings.semanticUiSite.semanticUiSiteStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("site")
-  var site_Original: Site = js.native
+  
   def site(): JQuery = js.native
   def site(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def site(behavior: setting, name: debug, value: Boolean): JQuery = js.native
@@ -44,8 +43,9 @@ trait JQuery extends js.Object {
   @JSName("site")
   def site_NamespaceStubSettings(behavior: setting, name: namespaceStub, value: js.UndefOr[scala.Nothing]): NamespaceStubSettings = js.native
   @JSName("site")
+  var site_Original: Site = js.native
+  @JSName("site")
   def site_destroy(behavior: destroy): JQuery = js.native
   @JSName("site")
   def site_setting(behavior: setting, value: SiteSettings): JQuery = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/binaryauthorization/v1beta1", "binaryauthorization_v1beta1.Resource$Projects$Attestors")
 @js.native
 class ResourceProjectsAttestors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * binaryauthorization.projects.attestors.create
     * @desc Creates an attestor, and returns a copy of the new attestor.
@@ -45,6 +47,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAttestor]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.delete
     * @desc Deletes an attestor. Returns NOT_FOUND if the attestor does not
@@ -74,6 +77,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.get
     * @desc Gets an attestor. Returns NOT_FOUND if the attestor does not exist.
@@ -102,6 +106,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAttestor]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -134,6 +139,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIamPolicy]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.list
     * @desc Lists attestors. Returns INVALID_ARGUMENT if the project does not
@@ -168,6 +174,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAttestorsResponse]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -201,6 +208,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIamPolicy]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -237,6 +245,7 @@ class ResourceProjectsAttestors protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.attestors.update
     * @desc Updates an attestor. Returns NOT_FOUND if the attestor does not
@@ -268,4 +277,3 @@ class ResourceProjectsAttestors protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAttestor]
   ): Unit = js.native
 }
-

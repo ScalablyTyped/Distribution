@@ -3,28 +3,11 @@ package typings.jstree
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSTreeStatic extends js.Object {
-  /**
-    * holds all the default options used when creating new instances
-    * @name $.jstree.defaults
-    */
-  var defaults: JSTreeStaticDefaults = js.native
-  var idregex: js.Any = js.native
-  var path: String = js.native
-  /**
-    * stores all loaded jstree plugins (used internally)
-    * @name $.jstree.plugins
-    */
-  var plugins: js.Array[_] = js.native
-  var root: String = js.native
-  /**
-    * specifies the jstree version in use
-    * @name $.jstree.version
-    */
-  var version: String = js.native
+  
   /**
     * the jstree class constructor, used only internally
     * @private
@@ -32,6 +15,7 @@ trait JSTreeStatic extends js.Object {
     * @param {Number} id this instance's index
     */
   def core(id: Double): Unit = js.native
+  
   def create(el: String): JSTree = js.native
   def create(el: String, options: JSTreeStaticDefaults): JSTree = js.native
   def create(el: JQuery): JSTree = js.native
@@ -45,11 +29,29 @@ trait JSTreeStatic extends js.Object {
     */
   def create(el: HTMLElement): JSTree = js.native
   def create(el: HTMLElement, options: JSTreeStaticDefaults): JSTree = js.native
+  
+  /**
+    * holds all the default options used when creating new instances
+    * @name $.jstree.defaults
+    */
+  var defaults: JSTreeStaticDefaults = js.native
+  
   /**
     * remove all traces of jstree from the DOM and destroy all instances
     * @name $.jstree.destroy()
     */
   def destroy(): Unit = js.native
+  
+  var idregex: js.Any = js.native
+  
+  var path: String = js.native
+  
+  /**
+    * stores all loaded jstree plugins (used internally)
+    * @name $.jstree.plugins
+    */
+  var plugins: js.Array[_] = js.native
+  
   def reference(needle: String): JSTree = js.native
   def reference(needle: JQuery): JSTree = js.native
   /**
@@ -73,5 +75,12 @@ trait JSTreeStatic extends js.Object {
     * @return {jsTree|null} the instance or `null` if not found
     */
   def reference(needle: HTMLElement): JSTree = js.native
+  
+  var root: String = js.native
+  
+  /**
+    * specifies the jstree version in use
+    * @name $.jstree.version
+    */
+  var version: String = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.jupyterlabNbformat.mod.ICell
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.createCellDragImage")
 @js.native
 object createCellDragImage extends js.Object {
+  
   /**
     * Create an image for the cell(s) to be dragged
     *
@@ -18,4 +19,3 @@ object createCellDragImage extends js.Object {
     */
   def apply(activeCell: Cell, selectedCells: js.Array[ICell]): HTMLElement = js.native
 }
-

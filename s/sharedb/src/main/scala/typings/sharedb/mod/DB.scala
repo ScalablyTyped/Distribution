@@ -2,18 +2,17 @@ package typings.sharedb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb", "DB")
 @js.native
 abstract class DB () extends js.Object {
-  var disableSubscribe: Boolean = js.native
-  var projectsSnapshots: Boolean = js.native
-  @JSName("query")
-  var query_Original: DBQueryMethod = js.native
+  
   def canPollDoc(): Boolean = js.native
+  
   def close(): Unit = js.native
   def close(callback: BasicCallback): Unit = js.native
+  
   def commit(
     collection: String,
     id: String,
@@ -22,6 +21,9 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
+  var disableSubscribe: Boolean = js.native
+  
   def getCommittedOpVersion(
     collection: String,
     id: String,
@@ -30,6 +32,7 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   def getOps(
     collection: String,
     id: String,
@@ -62,6 +65,7 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   def getOpsBulk(
     collection: String,
     fromMap: js.Any,
@@ -69,6 +73,7 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   def getOpsToSnapshot(
     collection: String,
     id: String,
@@ -85,6 +90,7 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   def getSnapshot(
     collection: String,
     id: String,
@@ -92,6 +98,7 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   def getSnapshotBulk(
     collection: String,
     ids: js.Array[String],
@@ -99,6 +106,9 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
+  var projectsSnapshots: Boolean = js.native
+  
   def query(
     collection: String,
     query: js.Any,
@@ -113,12 +123,14 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: DBQueryCallback
   ): Unit = js.native
+  
   def queryPoll(
     collection: String,
     query: js.Any,
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   def queryPollDoc(
     collection: String,
     id: String,
@@ -126,6 +138,9 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
+  @JSName("query")
+  var query_Original: DBQueryMethod = js.native
+  
   def skipPoll(): Boolean = js.native
 }
-

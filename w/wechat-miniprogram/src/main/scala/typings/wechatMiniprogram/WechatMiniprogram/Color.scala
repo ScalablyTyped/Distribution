@@ -2,7 +2,7 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 颜色。可以用以下几种方式来表示 canvas 中使用的颜色：
   *
@@ -166,4 +166,3 @@ import scala.scalajs.js.annotation._
   * | YellowGreen          | #9ACD32 | */
 @js.native
 trait Color extends js.Object
-

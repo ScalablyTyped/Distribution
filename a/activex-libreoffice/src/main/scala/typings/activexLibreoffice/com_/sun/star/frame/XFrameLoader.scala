@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * load components into a frame
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFrameLoader extends XInterface {
+  
   /**
     * cancels the loading process.
     *
@@ -25,6 +26,7 @@ trait XFrameLoader extends XInterface {
     * hand - nobody then this owner themselves can be registered as an {@link XLoadEventListener} here.
     */
   def cancel(): Unit = js.native
+  
   /**
     * starts the loading of the specified resource into the specified {@link Frame} .
     * @param Frame specifies the loading target
@@ -35,8 +37,8 @@ trait XFrameLoader extends XInterface {
     */
   def load(Frame: XFrame, URL: String, Arguments: SeqEquiv[PropertyValue], Listener: XLoadEventListener): Unit = js.native
 }
-
 object XFrameLoader {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -48,22 +50,26 @@ object XFrameLoader {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), load = js.Any.fromFunction4(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XFrameLoader]
   }
+  
   @scala.inline
   implicit class XFrameLoaderOps[Self <: XFrameLoader] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setLoad(value: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit): Self = this.set("load", js.Any.fromFunction4(value))
   }
-  
 }
-

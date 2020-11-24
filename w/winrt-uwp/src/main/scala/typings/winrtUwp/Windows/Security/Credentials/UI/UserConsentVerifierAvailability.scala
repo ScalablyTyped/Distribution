@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Credentials.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UserConsentVerifierAvailability extends js.Object
-
 /** Describes the result of a check for a biometric (fingerprint) verifier device. */
 @JSGlobal("Windows.Security.Credentials.UI.UserConsentVerifierAvailability")
 @js.native
 object UserConsentVerifierAvailability extends js.Object {
+  
   /** A biometric verifier device is available. */
   @js.native
   sealed trait available extends UserConsentVerifierAvailability
@@ -30,6 +30,4 @@ object UserConsentVerifierAvailability extends js.Object {
   /** A biometric verifier device is not configured for this user. */
   @js.native
   sealed trait notConfiguredForUser extends UserConsentVerifierAvailability
-  
 }
-

@@ -6,12 +6,12 @@ import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import typings.rsocketTypes.reactiveSocketTypesMod.Frame
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RSocketResumableTransport extends DuplexConnection
-
 object RSocketResumableTransport {
+  
   @scala.inline
   def apply(
     close: () => Unit,
@@ -25,4 +25,3 @@ object RSocketResumableTransport {
     __obj.asInstanceOf[RSocketResumableTransport]
   }
 }
-

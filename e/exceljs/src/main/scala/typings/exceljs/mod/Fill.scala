@@ -8,7 +8,7 @@ import typings.exceljs.exceljsStrings.path
 import typings.exceljs.exceljsStrings.pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.exceljs.mod.FillPattern
@@ -16,20 +16,22 @@ import scala.scalajs.js.annotation._
   - typings.exceljs.mod.FillGradientPath
 */
 trait Fill extends js.Object
-
 object Fill {
+  
   @scala.inline
   def FillPattern(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern): Fill = {
     val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
+  
   @scala.inline
   def FillGradientAngle(degree: Double, gradient: angle, stops: js.Array[GradientStop], `type`: gradient): Fill = {
     val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
+  
   @scala.inline
   def FillGradientPath(center: Left, gradient: path, stops: js.Array[GradientStop], `type`: gradient): Fill = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
@@ -37,4 +39,3 @@ object Fill {
     __obj.asInstanceOf[Fill]
   }
 }
-

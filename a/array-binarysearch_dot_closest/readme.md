@@ -10,9 +10,9 @@ Get index of closest value in sorted array.
 | ------------------ | :-------------: |
 | Full name          | array-binarysearch.closest |
 | Keywords           | array, binary, search, closest |
-| # releases         | 18 |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 59758 |
+| # downloads        | 42798 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a variable or an argument possibly of a compound object type.
@@ -57,14 +57,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaVariable extends js.Object {
+  
   /**
     * Members contained or pointed to by the variable.
     */
   var members: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  
   /**
     * Name of the variable, if any.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Status associated with the variable. This field will usually stay unset.
     * A status of a single variable only applies to that variable or
@@ -80,6 +83,7 @@ trait SchemaVariable extends js.Object {
     * dereference`
     */
   var status: js.UndefOr[SchemaStatusMessage] = js.native
+  
   /**
     * Variable type (e.g. `MyClass`). If the variable is split with
     * `var_table_index`, `type` goes next to `value`. The interpretation of a
@@ -87,10 +91,12 @@ trait SchemaVariable extends js.Object {
     * rather than a static type of an object.
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * Simple value of the variable.
     */
   var value: js.UndefOr[String] = js.native
+  
   /**
     * Reference to a variable in the shared variable table. More than one
     * variable can reference the same variable in the table. The
@@ -98,51 +104,66 @@ trait SchemaVariable extends js.Object {
     */
   var varTableIndex: js.UndefOr[Double] = js.native
 }
-
 object SchemaVariable {
+  
   @scala.inline
   def apply(): SchemaVariable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVariable]
   }
+  
   @scala.inline
   implicit class SchemaVariableOps[Self <: SchemaVariable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMembersVarargs(value: SchemaVariable*): Self = this.set("members", js.Array(value :_*))
+    
     @scala.inline
     def setMembers(value: js.Array[SchemaVariable]): Self = this.set("members", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMembers: Self = this.set("members", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setStatus(value: SchemaStatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatus: Self = this.set("status", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValue: Self = this.set("value", js.undefined)
+    
     @scala.inline
     def setVarTableIndex(value: Double): Self = this.set("varTableIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVarTableIndex: Self = this.set("varTableIndex", js.undefined)
   }
-  
 }
-

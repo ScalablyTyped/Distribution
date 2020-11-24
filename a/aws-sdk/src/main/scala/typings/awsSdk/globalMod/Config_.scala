@@ -1,12 +1,11 @@
 package typings.awsSdk.globalMod
 
 import typings.awsSdk.configMod.APIVersions
-import typings.awsSdk.configMod.ConfigurationOptions
 import typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
 import typings.awsSdk.coreMod.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/global", "Config")
 @js.native
@@ -15,6 +14,5 @@ import scala.scalajs.js.annotation._
   * This is the object that passes option data along to service requests, including credentials, security, region information, and some service specific settings.
   */
 class Config_ () extends Config {
-  def this(options: ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
+  def this(options: typings.awsSdk.configBaseMod.ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
 }
-

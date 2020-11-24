@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactQuerySearchFields extends js.Object
-
 /** Defines which contact fields to search for a text match. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactQuerySearchFields")
 @js.native
 object ContactQuerySearchFields extends js.Object {
+  
   /** All */
   @js.native
   sealed trait all extends ContactQuerySearchFields
@@ -30,6 +30,4 @@ object ContactQuerySearchFields extends js.Object {
   /** Phone number */
   @js.native
   sealed trait phone extends ContactQuerySearchFields
-  
 }
-

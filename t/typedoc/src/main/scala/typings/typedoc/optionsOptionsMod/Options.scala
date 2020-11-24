@@ -96,18 +96,23 @@ import typings.typedoc.typedocStrings.version
 import typings.typescript.mod.CompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/utils/options/options", "Options")
 @js.native
 class Options protected () extends js.Object {
   def this(logger: Logger) = this()
+  
   var _compilerOptions: js.Any = js.native
+  
   var _declarations: js.Any = js.native
+  
   var _logger: js.Any = js.native
+  
   var _readers: js.Any = js.native
+  
   var _values: js.Any = js.native
-  var setOptionValueToDefault: js.Any = js.native
+  
   def addDeclaration(declaration: NeverIfInternal[DeclarationOption]): Unit = js.native
   @JSName("addDeclaration")
   def addDeclaration_categorizeByGroup(declaration: `33` with KeyToDeclaration[categorizeByGroup]): Unit = js.native
@@ -187,15 +192,25 @@ class Options protected () extends js.Object {
   def addDeclaration_tsconfig(declaration: `19` with KeyToDeclaration[tsconfig]): Unit = js.native
   @JSName("addDeclaration")
   def addDeclaration_version(declaration: Name with KeyToDeclaration[version]): Unit = js.native
+  
   def addDeclarations(declarations: js.Array[DeclarationOption]): Unit = js.native
+  
   def addDefaultDeclarations(): Unit = js.native
+  
   def addReader(reader: OptionsReader): Unit = js.native
+  
   def getCompilerOptions(): CompilerOptions = js.native
+  
   def getDeclaration(name: String): js.UndefOr[DeclarationOption] = js.native
+  
   def getDeclarationsByScope(scope: ParameterScope): js.Array[
     ReadonlyStringDeclaration | ReadonlyNumberDeclaration | ReadonlyBooleanDeclaratio | ReadonlyMixedDeclarationO | ReadonlyMapDeclarationOpt | ReadonlyArrayDeclarationO
   ] = js.native
+  
+  var getDefaultOptionValue: js.Any = js.native
+  
   def getRawValues(): PartialTypeDocOptions = js.native
+  
   def getValue(name: NeverIfInternal[String]): js.Any = js.native
   @JSName("getValue")
   def getValue_categorizeByGroup(name: categorizeByGroup): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
@@ -275,6 +290,7 @@ class Options protected () extends js.Object {
   def getValue_tsconfig(name: tsconfig): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
   @JSName("getValue")
   def getValue_version(name: version): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+  
   def isDefault(name: NeverIfInternal[String]): Boolean = js.native
   @JSName("isDefault")
   def isDefault_categorizeByGroup(name: categorizeByGroup): Boolean = js.native
@@ -354,11 +370,19 @@ class Options protected () extends js.Object {
   def isDefault_tsconfig(name: tsconfig): Boolean = js.native
   @JSName("isDefault")
   def isDefault_version(name: version): Boolean = js.native
+  
   def read(logger: Logger): Unit = js.native
+  
   def removeDeclarationByName(name: String): Unit = js.native
+  
   def removeReaderByName(name: String): Unit = js.native
+  
   def reset(): Unit = js.native
+  
   def setLogger(logger: Logger): Unit = js.native
+  
+  var setOptionValueToDefault: js.Any = js.native
+  
   def setValue(name: NeverIfInternal[String], value: NeverIfInternal[_]): Unit = js.native
   @JSName("setValue")
   def setValue_categorizeByGroup(name: categorizeByGroup, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
@@ -438,6 +462,6 @@ class Options protected () extends js.Object {
   def setValue_tsconfig(name: tsconfig, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
   @JSName("setValue")
   def setValue_version(name: version, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+  
   def setValues(obj: NeverIfInternal[Partial[TypeDocAndTSOptions]]): Unit = js.native
 }
-

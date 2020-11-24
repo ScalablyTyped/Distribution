@@ -7,11 +7,11 @@ import typings.redux.mod.MiddlewareAPI
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-api-middleware", "apiMiddleware")
 @js.native
 object apiMiddleware extends js.Object {
+  
   def apply(api: MiddlewareAPI[Dispatch[AnyAction], _]): ReturnType[Middleware[js.Object, _, Dispatch[AnyAction]]] = js.native
 }
-

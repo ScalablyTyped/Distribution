@@ -2,22 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Vector extends js.Object {
-  /**
-    *   The x component of the vector
-    */
-  var x: Double = js.native
-  /**
-    *   The y component of the vector
-    */
-  var y: Double = js.native
-  /**
-    *   The z component of the vector
-    */
-  var z: Double = js.native
+  
   def add(value: js.Array[Double]): Vector = js.native
   /**
     *   Adds x, y, and z components to a vector, adds one
@@ -48,6 +37,7 @@ trait Vector extends js.Object {
   def add(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def add(x: Double, y: Double): Vector = js.native
   def add(x: Double, y: Double, z: Double): Vector = js.native
+  
   /**
     *   Calculates and returns the angle (in radians)
     *   between two vectors.
@@ -56,6 +46,7 @@ trait Vector extends js.Object {
     *   @return the angle between (in radians)
     */
   def angleBetween(value: Vector): Double = js.native
+  
   /**
     *   Return a representation of this vector as a float
     *   array. This is only for temporary use. If used in
@@ -65,12 +56,14 @@ trait Vector extends js.Object {
     *   @return an Array with the 3 values
     */
   def array(): js.Array[Double] = js.native
+  
   /**
     *   Gets a copy of the vector, returns a p5.Vector
     *   object.
     *   @return the copy of the p5.Vector object
     */
   def copy(): Vector = js.native
+  
   /**
     *   Calculates and returns a vector composed of the
     *   cross product between two vectors. Both the static
@@ -80,6 +73,7 @@ trait Vector extends js.Object {
     *   @return p5.Vector composed of cross product
     */
   def cross(v: Vector): Vector = js.native
+  
   /**
     *   Calculates the Euclidean distance between two
     *   points (considering a point as a vector object).
@@ -88,6 +82,7 @@ trait Vector extends js.Object {
     *   @return the distance
     */
   def dist(v: Vector): Double = js.native
+  
   /**
     *   Divide the vector by a scalar. The static version
     *   of this method creates a new p5.Vector while the
@@ -97,6 +92,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def div(n: Double): Vector = js.native
+  
   /**
     *   Calculates the dot product of two vectors. The
     *   version of the method that computes the dot
@@ -120,6 +116,7 @@ trait Vector extends js.Object {
   def dot(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
   def dot(x: Double, y: Double): Double = js.native
   def dot(x: Double, y: Double, z: Double): Double = js.native
+  
   /**
     *   Equality check against a p5.Vector
     *   @param [x] the x component of the vector
@@ -141,12 +138,14 @@ trait Vector extends js.Object {
   def equals(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Boolean = js.native
   def equals(x: Double, y: Double): Boolean = js.native
   def equals(x: Double, y: Double, z: Double): Boolean = js.native
+  
   /**
     *   Calculate the angle of rotation for this vector
     *   (only 2D vectors)
     *   @return the angle of rotation
     */
   def heading(): Double = js.native
+  
   /**
     *   Linear interpolate the vector to another vector
     *   @param v the p5.Vector to lerp to
@@ -169,6 +168,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def lerp(x: Double, y: Double, z: Double, amt: Double): Vector = js.native
+  
   /**
     *   Limit the magnitude of this vector to the value
     *   used for the max parameter.
@@ -176,6 +176,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def limit(max: Double): Vector = js.native
+  
   /**
     *   Calculates the magnitude (length) of the vector
     *   and returns the result as a float (this is simply
@@ -183,6 +184,7 @@ trait Vector extends js.Object {
     *   @return magnitude of the vector
     */
   def mag(): Double = js.native
+  
   /**
     *   Calculates the squared magnitude of the vector and
     *   returns the result as a float (this is simply the
@@ -192,6 +194,7 @@ trait Vector extends js.Object {
     *   @return squared magnitude of the vector
     */
   def magSq(): Double = js.native
+  
   /**
     *   Multiply the vector by a scalar. The static
     *   version of this method creates a new p5.Vector
@@ -201,12 +204,14 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def mult(n: Double): Vector = js.native
+  
   /**
     *   Normalize the vector to length 1 (make it a unit
     *   vector).
     *   @return normalized p5.Vector
     */
   def normalize(): Vector = js.native
+  
   /**
     *   Rotate the vector by an angle (only 2D vectors),
     *   magnitude remains the same
@@ -214,6 +219,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def rotate(angle: Double): Vector = js.native
+  
   /**
     *   Sets the x, y, and z component of the vector using
     *   two or three separate variables, the data from a
@@ -240,6 +246,7 @@ trait Vector extends js.Object {
   def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def set(x: Double, y: Double): Vector = js.native
   def set(x: Double, y: Double, z: Double): Vector = js.native
+  
   /**
     *   Set the magnitude of this vector to the value used
     *   for the len parameter.
@@ -247,6 +254,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def setMag(len: Double): Vector = js.native
+  
   def sub(value: js.Array[Double]): Vector = js.native
   /**
     *   Subtracts x, y, and z components from a vector,
@@ -277,5 +285,19 @@ trait Vector extends js.Object {
   def sub(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def sub(x: Double, y: Double): Vector = js.native
   def sub(x: Double, y: Double, z: Double): Vector = js.native
+  
+  /**
+    *   The x component of the vector
+    */
+  var x: Double = js.native
+  
+  /**
+    *   The y component of the vector
+    */
+  var y: Double = js.native
+  
+  /**
+    *   The z component of the vector
+    */
+  var z: Double = js.native
 }
-

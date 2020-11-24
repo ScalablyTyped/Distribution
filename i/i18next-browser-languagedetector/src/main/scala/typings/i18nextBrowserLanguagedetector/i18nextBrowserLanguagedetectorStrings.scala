@@ -2,9 +2,31 @@ package typings.i18nextBrowserLanguagedetector
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nextBrowserLanguagedetectorStrings {
+  
+  @scala.inline
+  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  
+  @scala.inline
+  def htmlTag: htmlTag = "htmlTag".asInstanceOf[htmlTag]
+  
+  @scala.inline
+  def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
+  
+  @scala.inline
+  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  
+  @scala.inline
+  def navigator: navigator = "navigator".asInstanceOf[navigator]
+  
+  @scala.inline
+  def querystring: querystring = "querystring".asInstanceOf[querystring]
+  
+  @scala.inline
+  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
+  
   @js.native
   sealed trait cookie extends js.Object
   
@@ -25,20 +47,4 @@ object i18nextBrowserLanguagedetectorStrings {
   
   @js.native
   sealed trait sessionStorage extends js.Object
-  
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
-  @scala.inline
-  def htmlTag: htmlTag = "htmlTag".asInstanceOf[htmlTag]
-  @scala.inline
-  def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
-  @scala.inline
-  def navigator: navigator = "navigator".asInstanceOf[navigator]
-  @scala.inline
-  def querystring: querystring = "querystring".asInstanceOf[querystring]
-  @scala.inline
-  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
 }
-

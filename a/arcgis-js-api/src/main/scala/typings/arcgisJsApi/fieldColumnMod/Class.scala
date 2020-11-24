@@ -1,9 +1,10 @@
 package typings.arcgisJsApi.fieldColumnMod
 
 import typings.arcgisJsApi.esri.FieldColumn
+import typings.arcgisJsApi.esri.FieldColumnProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/FeatureTable/FieldColumn", JSImport.Namespace)
 @js.native
@@ -13,6 +14,5 @@ import scala.scalajs.js.annotation._
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html)
   */
 class Class () extends FieldColumn {
-  def this(properties: js.Any) = this()
+  def this(properties: FieldColumnProperties) = this()
 }
-

@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassService extends ClassEventEmitter {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassService extends ClassEventEmitter {
     * @type String
     */
   var name: String = js.native
+  
   /**
     * class prop 
     *
@@ -26,6 +28,7 @@ trait ClassService extends ClassEventEmitter {
     * @type Function
     */
   var oncontinue: js.Function = js.native
+  
   /**
     * class prop 
     *
@@ -36,6 +39,7 @@ trait ClassService extends ClassEventEmitter {
     * @type Function
     */
   var onpause: js.Function = js.native
+  
   /**
     * class prop 
     *
@@ -46,6 +50,7 @@ trait ClassService extends ClassEventEmitter {
     * @type Function
     */
   var onstop: js.Function = js.native
+  
   /**
     * 
     * @brief 开始运行服务实体
@@ -54,4 +59,3 @@ trait ClassService extends ClassEventEmitter {
     */
   def run(): Unit = js.native
 }
-

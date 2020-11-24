@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mipmap filtering modes that are supported by pixi.
@@ -25,10 +25,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.MIPMAP_MODES")
 @js.native
 object MIPMAP_MODES extends js.Object {
-  /* 0 */ val OFF: typings.pixiJs.PIXI.MIPMAP_MODES.OFF with Double = js.native
-  /* 2 */ val ON: typings.pixiJs.PIXI.MIPMAP_MODES.ON with Double = js.native
-  /* 1 */ val POW2: typings.pixiJs.PIXI.MIPMAP_MODES.POW2 with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.MIPMAP_MODES with Double] = js.native
+  
+  /* 0 */ val OFF: typings.pixiJs.PIXI.MIPMAP_MODES.OFF with Double = js.native
+  
+  /* 2 */ val ON: typings.pixiJs.PIXI.MIPMAP_MODES.ON with Double = js.native
+  
+  /* 1 */ val POW2: typings.pixiJs.PIXI.MIPMAP_MODES.POW2 with Double = js.native
 }
-

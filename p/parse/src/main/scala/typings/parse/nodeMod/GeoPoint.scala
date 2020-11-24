@@ -3,7 +3,7 @@ package typings.parse.nodeMod
 import typings.parse.anon.Latitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new GeoPoint with any of the following forms:<br>
@@ -35,4 +35,3 @@ class GeoPoint ()
   def this(coords: Latitude) = this()
   def this(latitude: Double, longitude: Double) = this()
 }
-

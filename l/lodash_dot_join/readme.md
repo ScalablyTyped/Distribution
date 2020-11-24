@@ -11,8 +11,8 @@ The lodash method `_.join` exported as a module.
 | Full name          | lodash.join |
 | Keywords           | lodash-modularized, join |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 70016 |
+| # dependents       | 5 |
+| # downloads        | 117315 |
 | # stars            | 0 |
 
 ## Links

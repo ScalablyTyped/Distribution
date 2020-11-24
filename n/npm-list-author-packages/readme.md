@@ -11,8 +11,8 @@ List an author's packages.
 | Full name          | npm-list-author-packages |
 | Keywords           | npm, list, ls, packages, pkgs, author, modules, public, cli |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 602 |
+| # dependents       | 4 |
+| # downloads        | 642 |
 | # stars            | 1 |
 
 ## Links

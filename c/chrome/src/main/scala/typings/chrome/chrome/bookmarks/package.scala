@@ -2,9 +2,10 @@ package typings.chrome.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object bookmarks {
+  
   type BookmarkChangedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* id */ java.lang.String, 
@@ -12,6 +13,7 @@ package object bookmarks {
       scala.Unit
     ]
   ]
+  
   type BookmarkChildrenReordered = typings.chrome.chrome.events.Event[
     js.Function2[
       /* id */ java.lang.String, 
@@ -19,6 +21,7 @@ package object bookmarks {
       scala.Unit
     ]
   ]
+  
   type BookmarkCreatedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* id */ java.lang.String, 
@@ -26,8 +29,11 @@ package object bookmarks {
       scala.Unit
     ]
   ]
+  
   type BookmarkImportBeganEvent = typings.chrome.chrome.events.Event[js.Function0[scala.Unit]]
+  
   type BookmarkImportEndedEvent = typings.chrome.chrome.events.Event[js.Function0[scala.Unit]]
+  
   type BookmarkMovedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* id */ java.lang.String, 
@@ -35,6 +41,7 @@ package object bookmarks {
       scala.Unit
     ]
   ]
+  
   type BookmarkRemovedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* id */ java.lang.String, 

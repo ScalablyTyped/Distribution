@@ -2,15 +2,15 @@ package typings.sharepoint.SP.UserProfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChangeTypes extends js.Object
-
 /** Specifies types of changes made in the user profile store. */
 @JSGlobal("SP.UserProfiles.ChangeTypes")
 @js.native
 object ChangeTypes extends js.Object {
+  
   /** An object was added */
   @js.native
   sealed trait add extends ChangeTypes
@@ -34,6 +34,4 @@ object ChangeTypes extends js.Object {
   /** An object was removed */
   @js.native
   sealed trait remove extends ChangeTypes
-  
 }
-

@@ -1,7 +1,7 @@
 package typings.pulumiAws.ruleGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.outputMod.wafregional.RuleGroupActivatedRule
+import typings.pulumiAws.outputMod.networkfirewall.RuleGroupRuleGroup
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -9,9 +9,9 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup")
+@JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup")
 @js.native
 class RuleGroup protected () extends CustomResource {
   /**
@@ -23,32 +23,57 @@ class RuleGroup protected () extends CustomResource {
     */
   def this(name: String, args: RuleGroupArgs) = this()
   def this(name: String, args: RuleGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
-    * A list of activated rules, see below
-    */
-  val activatedRules: Output_[js.UndefOr[js.Array[RuleGroupActivatedRule]]] = js.native
-  /**
-    * The ARN of the WAF Regional Rule Group.
+    * The Amazon Resource Name (ARN) that identifies the rule group.
     */
   val arn: Output_[String] = js.native
+  
   /**
-    * A friendly name for the metrics from the rule group
+    * The maximum number of operating resources that this rule group can use. For a stateless rule group, the capacity required is the sum of the capacity requirements of the individual rules. For a stateful rule group, the minimum capacity required is the number of individual rules.
     */
-  val metricName: Output_[String] = js.native
+  val capacity: Output_[Double] = js.native
+  
   /**
-    * A friendly name of the rule group
+    * A friendly description of the rule group.
+    */
+  val description: Output_[js.UndefOr[String]] = js.native
+  
+  /**
+    * A friendly name of the rule group.
     */
   val name: Output_[String] = js.native
+  
   /**
-    * Key-value map of resource tags
+    * A configuration block that defines the rule group rules. Required unless `rules` is specified. See Rule Group below for details.
+    */
+  val ruleGroup: Output_[RuleGroupRuleGroup] = js.native
+  
+  /**
+    * The stateful rule group rules specifications in Suricata file format, with one rule per line. Use this to import your existing Suricata compatible rule groups. Required unless `ruleGroup` is specified.
+    */
+  val rules: Output_[js.UndefOr[String]] = js.native
+  
+  /**
+    * A map of key:value pairs to associate with the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
+  /**
+    * Whether the rule group is stateless (containing stateless rules) or stateful (containing stateful rules). Valid values include: `STATEFUL` or `STATELESS`.
+    */
+  val `type`: Output_[String] = js.native
+  
+  /**
+    * A string token used when updating the rule group.
+    */
+  val updateToken: Output_[String] = js.native
 }
-
 /* static members */
-@JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup")
+@JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup")
 @js.native
 object RuleGroup extends js.Object {
+  
   /**
     * Get an existing RuleGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -62,10 +87,10 @@ object RuleGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RuleGroup = js.native
   def get(name: String, id: Input[ID], state: RuleGroupState): RuleGroup = js.native
   def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): RuleGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/ruleGroup.RuleGroup */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean = js.native
 }
-

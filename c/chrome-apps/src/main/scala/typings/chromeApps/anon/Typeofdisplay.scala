@@ -12,22 +12,22 @@ import typings.chromeApps.chrome.system.display.MirrorModeInfoMixed
 import typings.chromeApps.chrome.system.display.TouchCalibrationPairs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofdisplay extends js.Object {
+  
   val DisplayPosition: BOTTOM = js.native
+  
   val MirrorMode: MIXED = js.native
-  /**
-    * Fired when anything changes to the display configuration.
-    */
-  val onDisplayChanged: Event[js.Function0[Unit]] = js.native
+  
   /**
     * Resets the touch calibration for the display and brings it back to its default state by clearing any touch calibration data associated with the display.
     * @since Chrome 57
     * @param id The display's unique identifier.
     */
   def clearTouchCalibration(id: String): Unit = js.native
+  
   /**
     * Sets the touch calibration pairs for a display.
     * These **pairs** would be used to calibrate the touch screen for display with **id** called in startCustomTouchCalibration().
@@ -39,6 +39,7 @@ trait Typeofdisplay extends js.Object {
     * @throws Error
     */
   def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = js.native
+  
   /**
     * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
     * @description
@@ -49,6 +50,7 @@ trait Typeofdisplay extends js.Object {
     * @param {boolean} enabled True if unified desktop should be enabled.
     */
   def enableUnifiedDesktop(enabled: Boolean): Unit = js.native
+  
   /**
     * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
     * @description Requests the layout info for all displays.
@@ -57,6 +59,7 @@ trait Typeofdisplay extends js.Object {
     * @param callback The callback to invoke with the results.
     */
   def getDisplayLayout(callback: js.Function1[/* layouts */ js.Array[DisplayLayout], Unit]): Unit = js.native
+  
   /**
     * Requests the information for all attached display devices.
     * @param callback The callback to invoke with the results.
@@ -69,6 +72,12 @@ trait Typeofdisplay extends js.Object {
     * @param callback The callback to invoke with the results.
     */
   def getInfo(flags: DisplayInfoFlags, callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = js.native
+  
+  /**
+    * Fired when anything changes to the display configuration.
+    */
+  val onDisplayChanged: Event[js.Function0[Unit]] = js.native
+  
   /**
     * Adjusts the current overscan insets for a display.
     * Typically this should etiher move the display along an axis (e.g. left+right have the same value)
@@ -79,18 +88,21 @@ trait Typeofdisplay extends js.Object {
     * @param delta The amount to change the overscan insets.
     */
   def overscanCalibrationAdjust(id: String, delta: Insets): Unit = js.native
+  
   /**
     * Complete overscan adjustments for a display by saving the current values and hiding the overlay.
     * @since Chrome 53
     * @param id The display's unique identifier.
     */
   def overscanCalibrationComplete(id: String): Unit = js.native
+  
   /**
     * Resets the overscan insets for a display to the last saved value (i.e before Start was called).
     * @since Chrome 53
     * @param id The display's unique identifier.
     */
   def overscanCalibrationReset(id: String): Unit = js.native
+  
   /**
     * Starts overscan calibration for a display.
     * This will show an overlay on the screen indicating the current overscan insets.
@@ -99,6 +111,7 @@ trait Typeofdisplay extends js.Object {
     * @param id The display's unique identifier.
     */
   def overscanCalibrationStart(id: String): Unit = js.native
+  
   /**
     * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
     * @description
@@ -112,6 +125,7 @@ trait Typeofdisplay extends js.Object {
     */
   def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = js.native
   def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
     * @description
@@ -124,6 +138,7 @@ trait Typeofdisplay extends js.Object {
     */
   def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = js.native
   def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = js.native
+  
   def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = js.native
   /**
     * @requires(CrOS Kiosk app) Chrome OS Kiosk apps only
@@ -135,6 +150,7 @@ trait Typeofdisplay extends js.Object {
     * mirroring destination displays.
     */
   def setMirrorMode(info: MirrorModeInfo, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Displays the native touch calibration UX for the display with **id** as display id.
     * This will show an overlay on the screen with required instructions on how to proceed.
@@ -145,6 +161,7 @@ trait Typeofdisplay extends js.Object {
     * @param callback Optional callback to inform the caller that the touch calibration has ended. The argument of the callback informs if the calibration was a success or not.
     */
   def showNativeTouchCalibration(id: String, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Starts custom touch calibration for a display.
     * This should be called when using a custom UX for collecting calibration data.
@@ -154,4 +171,3 @@ trait Typeofdisplay extends js.Object {
     */
   def startCustomTouchCalibration(id: String): Unit = js.native
 }
-

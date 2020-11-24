@@ -2,7 +2,7 @@ package typings.knockout.mod.components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.knockout.mod.components.ViewModelConstructor
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   - typings.knockout.mod.components.ViewModelFactory
 */
 trait ViewModelConfig extends js.Object
-

@@ -10,8 +10,8 @@ Detect if web fonts are available
 | Full name          | fontfaceobserver |
 | Keywords           | fontloader, fonts, font, font-face, web font, font load, font events |
 | # releases         | 2 |
-| # dependents       | 142 |
-| # downloads        | 5292095 |
+| # dependents       | 168 |
+| # downloads        | 9971174 |
 | # stars            | 8 |
 
 ## Links

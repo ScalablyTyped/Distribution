@@ -9,8 +9,6 @@ import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
 import typings.oracleOraclejet.ojtreemapMod.ojTreemap.DataContext
 import typings.oracleOraclejet.ojtreemapMod.ojTreemap.NodeContext
-import typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojBeforeDrill
-import typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojDrill
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.animationDuration
 import typings.oracleOraclejet.oracleOraclejetStrings.animationDurationChanged
@@ -60,6 +58,8 @@ import typings.oracleOraclejet.oracleOraclejetStrings.nodeSeparators
 import typings.oracleOraclejet.oracleOraclejetStrings.nodeSeparatorsChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.off
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDrill
+import typings.oracleOraclejet.oracleOraclejetStrings.ojDrill
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.outer
 import typings.oracleOraclejet.oracleOraclejetStrings.rootNode
@@ -86,81 +86,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D]] {
-  var animationDuration: Double = js.native
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | none = js.native
-  var animationUpdateColor: String = js.native
-  var as: String = js.native
-  var colorLabel: String = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var displayLevels: Double = js.native
-  var drilling: on | off = js.native
-  var groupGaps: all | none | outer = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var hoverBehaviorDelay: Double = js.native
-  var isolatedNode: js.Any = js.native
-  var layout: sliceAndDiceHorizontal | sliceAndDiceVertical | squarified = js.native
-  var nodeContent: `28`[K, D] = js.native
-  var nodeDefaults: GroupLabelDisplay = js.native
-  var nodeSeparators: bevels | gaps = js.native
-  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationUpdateColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColorLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDisplayLevelsChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onGroupGapsChanged: (js.Function1[/* event */ JetElementCustomEvent[all | none | outer], _]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onIsolatedNodeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onLayoutChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[sliceAndDiceHorizontal | sliceAndDiceVertical | squarified], 
-    _
-  ]) | Null = js.native
-  var onNodeContentChanged: (js.Function1[/* event */ JetElementCustomEvent[`28`[K, D]], _]) | Null = js.native
-  var onNodeDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[GroupLabelDisplay], _]) | Null = js.native
-  var onNodeSeparatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[bevels | gaps], _]) | Null = js.native
-  var onOjBeforeDrill: (js.Function1[/* event */ ojBeforeDrill, _]) | Null = js.native
-  var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
-  var onRootNodeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
-  var onSizeLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`29`[K, D]], _]) | Null = js.native
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
-  var rootNode: js.Any = js.native
-  var selection: js.Array[_] = js.native
-  var selectionMode: none | single | multiple = js.native
-  var sizeLabel: String = js.native
-  var sorting: on | off = js.native
-  var tooltip: `29`[K, D] = js.native
-  var touchResponse: touchStart | auto = js.native
-  @JSName("translations")
-  var translations_ojTreemap_ : LabelDataVisualization = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -441,24 +371,40 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeDrill, _]
+    `type`: ojBeforeDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojBeforeDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeDrill, _],
+    `type`: ojBeforeDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojBeforeDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _]
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _],
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -494,8 +440,29 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`29`[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationDuration: Double = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var animationUpdateColor: String = js.native
+  
+  var as: String = js.native
+  
+  var colorLabel: String = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var displayLevels: Double = js.native
+  
+  var drilling: on | off = js.native
+  
   def getContextByNode(node: Element): NodeContext | Null = js.native
+  
   def getNode(subIdPath: js.Array[_]): DataContext | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_animationDuration(property: animationDuration): Double = js.native
   @JSName("getProperty")
@@ -550,7 +517,108 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   def getProperty_tooltip(property: tooltip): `29`[K, D] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
+  
+  var groupGaps: all | none | outer = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var hoverBehaviorDelay: Double = js.native
+  
+  var isolatedNode: js.Any = js.native
+  
+  var layout: sliceAndDiceHorizontal | sliceAndDiceVertical | squarified = js.native
+  
+  var nodeContent: `28`[K, D] = js.native
+  
+  var nodeDefaults: GroupLabelDisplay = js.native
+  
+  var nodeSeparators: bevels | gaps = js.native
+  
+  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationUpdateColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onColorLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDisplayLevelsChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onGroupGapsChanged: (js.Function1[/* event */ JetElementCustomEvent[all | none | outer], _]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onIsolatedNodeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onLayoutChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[sliceAndDiceHorizontal | sliceAndDiceVertical | squarified], 
+    _
+  ]) | Null = js.native
+  
+  var onNodeContentChanged: (js.Function1[/* event */ JetElementCustomEvent[`28`[K, D]], _]) | Null = js.native
+  
+  var onNodeDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[GroupLabelDisplay], _]) | Null = js.native
+  
+  var onNodeSeparatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[bevels | gaps], _]) | Null = js.native
+  
+  var onOjBeforeDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojBeforeDrill, _]) | Null = js.native
+  
+  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojtreemapMod.ojTreemap.ojDrill, _]) | Null = js.native
+  
+  var onRootNodeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
+  
+  var onSizeLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`29`[K, D]], _]) | Null = js.native
+  
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  
+  var rootNode: js.Any = js.native
+  
+  var selection: js.Array[_] = js.native
+  
+  var selectionMode: none | single | multiple = js.native
+  
   def setProperties(properties: ojTreemapSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
@@ -612,5 +680,15 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   def setProperty_tooltip(property: tooltip, value: `29`[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelDataVisualization): Unit = js.native
+  
+  var sizeLabel: String = js.native
+  
+  var sorting: on | off = js.native
+  
+  var tooltip: `29`[K, D] = js.native
+  
+  var touchResponse: touchStart | auto = js.native
+  
+  @JSName("translations")
+  var translations_ojTreemap_ : LabelDataVisualization = js.native
 }
-

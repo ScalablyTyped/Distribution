@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.ButtonMenu
 import typings.arcgisJsApi.esri.ButtonMenuProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/FeatureTable/Grid/support/ButtonMenu", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends ButtonMenu {
   def this(properties: ButtonMenuProperties) = this()
 }
-

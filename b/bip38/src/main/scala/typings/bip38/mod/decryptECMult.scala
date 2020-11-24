@@ -4,11 +4,12 @@ import typings.bip38.anon.Compressed
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bip38", "decryptECMult")
 @js.native
 object decryptECMult extends js.Object {
+  
   def apply(buffer: Buffer, passphrase: String): Compressed = js.native
   def apply(
     buffer: Buffer,
@@ -28,4 +29,3 @@ object decryptECMult extends js.Object {
     scryptParams: ScryptParams
   ): Compressed = js.native
 }
-

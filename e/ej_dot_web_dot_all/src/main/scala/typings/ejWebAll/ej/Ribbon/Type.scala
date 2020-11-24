@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Ribbon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Type extends js.Object
-
 @JSGlobal("ej.Ribbon.Type")
 @js.native
 object Type extends js.Object {
+  
   ///Specifies the button control
   @js.native
   sealed trait Button extends Type
@@ -33,6 +33,4 @@ object Type extends js.Object {
   ///Specifies the toggle button
   @js.native
   sealed trait ToggleButton extends Type
-  
 }
-

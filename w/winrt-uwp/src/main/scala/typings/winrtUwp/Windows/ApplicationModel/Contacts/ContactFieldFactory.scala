@@ -3,11 +3,12 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates fields that contain information about a contact. You can then add these fields to a Contact object to create the contact. This class is available only to apps that support the Contact contract. */
 @js.native
 trait ContactFieldFactory extends js.Object {
+  
   /**
     * Creates a field to contain information about a contact.
     * @param name The name of the field.
@@ -32,6 +33,7 @@ trait ContactFieldFactory extends js.Object {
     * @return Contains a field that you can add to a Contact object.
     */
   def createField(value: String, `type`: ContactFieldType, category: ContactFieldCategory): ContactField = js.native
+  
   /**
     * Creates a field to contain information about a contact's instant messaging account.
     * @param userName The user name for the instant messaging account.
@@ -55,6 +57,7 @@ trait ContactFieldFactory extends js.Object {
     * @return Contains an instant messaging field that you can add to a Contact object.
     */
   def createInstantMessage(userName: String, category: ContactFieldCategory, service: String, displayText: String, verb: Uri): ContactInstantMessageField = js.native
+  
   /**
     * Creates a field to contain information about a contact's location.
     * @param unstructuredAddress The address of the contact in an unstructured format.
@@ -89,4 +92,3 @@ trait ContactFieldFactory extends js.Object {
     postalCode: String
   ): ContactLocationField = js.native
 }
-

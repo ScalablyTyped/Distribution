@@ -3,11 +3,12 @@ package typings.angularCore.mod
 import typings.angularCore.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275makeDecorator")
 @js.native
 object ɵmakeDecorator extends js.Object {
+  
   def apply[T](name: String): Call = js.native
   def apply[T](
     name: String,
@@ -93,4 +94,3 @@ object ɵmakeDecorator extends js.Object {
     typeFn: js.Function2[/* type */ Type[T], /* repeated */ js.Any, Unit]
   ): Call = js.native
 }
-

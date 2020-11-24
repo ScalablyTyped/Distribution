@@ -10,12 +10,15 @@ Fast Color Parsing and Manipulation
 | ------------------ | :-------------: |
 | Full name          | tinycolor2 |
 | Keywords           | color, parser, tinycolor |
-| # releases         | 1 |
-| # dependents       | 897 |
-| # downloads        | 68549729 |
+| # releases         | 0 |
+| # dependents       | 1080 |
+| # downloads        | 112826696 |
 | # stars            | 13 |
 
 ## Links
+- [Homepage](https://github.com/bgrins/TinyColor#readme)
+- [Bugs](https://github.com/bgrins/TinyColor/issues)
+- [Repository](https://github.com/bgrins/TinyColor)
 - [Npm](https://www.npmjs.com/package/tinycolor2)
     
 

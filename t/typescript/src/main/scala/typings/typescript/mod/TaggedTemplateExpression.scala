@@ -2,17 +2,20 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TaggedTemplateExpression
   extends MemberExpression
      with CallLikeExpression
      with HasTypeArguments {
+  
   @JSName("kind")
-  var kind_TaggedTemplateExpression: typings.typescript.mod.SyntaxKind.TaggedTemplateExpression = js.native
-  var tag: LeftHandSideExpression = js.native
-  var template: TemplateLiteral = js.native
-  var typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
+  val kind_TaggedTemplateExpression: typings.typescript.mod.SyntaxKind.TaggedTemplateExpression = js.native
+  
+  val tag: LeftHandSideExpression = js.native
+  
+  val template: TemplateLiteral = js.native
+  
+  val typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
 }
-

@@ -11,8 +11,8 @@ typeahead component
 | Full name          | typeahead |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 93902 |
+| # dependents       | 4 |
+| # downloads        | 134693 |
 | # stars            | 3 |
 
 ## Links

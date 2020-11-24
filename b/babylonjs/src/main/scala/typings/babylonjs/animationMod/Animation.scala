@@ -20,7 +20,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/animation", "Animation")
 @js.native
@@ -66,63 +66,71 @@ class Animation protected () extends js.Object {
     /**The data type of the animation */
   dataType: Double,
     /**The loop mode of the animation */
+  loopMode: js.UndefOr[scala.Nothing],
+    /**Specifies if blending should be enabled */
+  enableBlending: Boolean
+  ) = this()
+  def this(
+    /**Name of the animation */
+  name: String,
+    /**Property to animate */
+  targetProperty: String,
+    /**The frames per second of the animation */
+  framePerSecond: Double,
+    /**The data type of the animation */
+  dataType: Double,
+    /**The loop mode of the animation */
   loopMode: Double,
     /**Specifies if blending should be enabled */
   enableBlending: Boolean
   ) = this()
+  
   /**
     * Stores the easing function of the animation
     */
   var _easingFunction: js.Any = js.native
+  
   /**
     * The set of event that will be linked to this animation
     */
   var _events: js.Any = js.native
-  /**
-    * Stores the key frames of the animation
-    */
-  var _keys: js.Any = js.native
-  /**
-    * Stores the animation ranges for the animation
-    */
-  var _ranges: js.Any = js.native
-  /**
-    * @hidden Internal use only
-    */
-  var _runtimeAnimations: js.Array[RuntimeAnimation] = js.native
-  /**
-    * Stores the blending speed of the animation
-    */
-  var blendingSpeed: Double = js.native
-  /**The data type of the animation */
-  var dataType: Double = js.native
-  /**Specifies if blending should be enabled */
-  var enableBlending: js.UndefOr[Boolean] = js.native
-  /**The frames per second of the animation */
-  var framePerSecond: Double = js.native
-  /**The loop mode of the animation */
-  var loopMode: js.UndefOr[Double] = js.native
-  /**Name of the animation */
-  var name: String = js.native
-  /**Property to animate */
-  var targetProperty: String = js.native
-  /**
-    * Stores an array of target property paths
-    */
-  var targetPropertyPath: js.Array[String] = js.native
+  
   /**
     * @hidden Internal use only
     */
   def _getKeyValue(value: js.Any): js.Any = js.native
+  
   /**
     * @hidden Internal use only
     */
   def _interpolate(currentFrame: Double, state: IAnimationState): js.Any = js.native
+  
+  /**
+    * Stores the key frames of the animation
+    */
+  var _keys: js.Any = js.native
+  
+  /**
+    * Stores the animation ranges for the animation
+    */
+  var _ranges: js.Any = js.native
+  
+  /**
+    * @hidden Internal use only
+    */
+  var _runtimeAnimations: js.Array[RuntimeAnimation] = js.native
+  
   /**
     * Add an event to this animation
     * @param event Event to add
     */
   def addEvent(event: AnimationEvent): Unit = js.native
+  
+  /**
+    * Stores the blending speed of the animation
+    */
+  var blendingSpeed: Double = js.native
+  
   /**
     * Interpolates a Color3 linearly
     * @param startValue Start value of the animation curve
@@ -131,6 +139,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated Color3 value
     */
   def color3InterpolateFunction(startValue: Color3, endValue: Color3, gradient: Double): Color3 = js.native
+  
   /**
     * Interpolates a Color4 linearly
     * @param startValue Start value of the animation curve
@@ -139,6 +148,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated Color3 value
     */
   def color4InterpolateFunction(startValue: Color4, endValue: Color4, gradient: Double): Color4 = js.native
+  
   /**
     * Creates an animation range
     * @param name Name of the animation range
@@ -146,6 +156,10 @@ class Animation protected () extends js.Object {
     * @param to Ending frame of the animation
     */
   def createRange(name: String, from: Double, to: Double): Unit = js.native
+  
+  /**The data type of the animation */
+  var dataType: Double = js.native
+  
   /**
     * Deletes an animation range by name
     * @param name Name of the animation range to delete
@@ -153,6 +167,10 @@ class Animation protected () extends js.Object {
     */
   def deleteRange(name: String): Unit = js.native
   def deleteRange(name: String, deleteFrames: Boolean): Unit = js.native
+  
+  /**Specifies if blending should be enabled */
+  var enableBlending: js.UndefOr[Boolean] = js.native
+  
   /**
     * Interpolates a scalar linearly
     * @param startValue Start value of the animation curve
@@ -161,6 +179,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated scalar value
     */
   def floatInterpolateFunction(startValue: Double, endValue: Double, gradient: Double): Double = js.native
+  
   /**
     * Interpolates a scalar cubically
     * @param startValue Start value of the animation curve
@@ -171,36 +190,49 @@ class Animation protected () extends js.Object {
     * @returns Interpolated scalar value
     */
   def floatInterpolateFunctionWithTangents(startValue: Double, outTangent: Double, endValue: Double, inTangent: Double, gradient: Double): Double = js.native
+  
+  /**The frames per second of the animation */
+  var framePerSecond: Double = js.native
+  
   /**
     * Gets the easing function of the animation
     * @returns Easing function of the animation
     */
   def getEasingFunction(): IEasingFunction = js.native
+  
   /**
     * Retrieves all the events from the animation
     * @returns Events from the animation
     */
   def getEvents(): js.Array[AnimationEvent] = js.native
+  
   /**
     * Gets the highest frame rate of the animation
     * @returns Highest frame rate of the animation
     */
   def getHighestFrame(): Double = js.native
+  
   /**
     * Gets the key frames from the animation
     * @returns The key frames of the animation
     */
   def getKeys(): js.Array[IAnimationKey] = js.native
+  
   /**
     * Gets the animation range by name, or null if not defined
     * @param name Name of the animation range
     * @returns Nullable animation range
     */
   def getRange(name: String): Nullable[AnimationRange] = js.native
+  
   /**
     * Specifies if any of the runtime animations are currently running
     */
   def hasRunningRuntimeAnimations: Boolean = js.native
+  
+  /**The loop mode of the animation */
+  var loopMode: js.UndefOr[Double] = js.native
+  
   /**
     * Defines the function to use to interpolate matrices
     * @param startValue defines the start matrix
@@ -211,6 +243,10 @@ class Animation protected () extends js.Object {
     */
   def matrixInterpolateFunction(startValue: Matrix, endValue: Matrix, gradient: Double): Matrix = js.native
   def matrixInterpolateFunction(startValue: Matrix, endValue: Matrix, gradient: Double, result: Matrix): Matrix = js.native
+  
+  /**Name of the animation */
+  var name: String = js.native
+  
   /**
     * Interpolates a quaternion using a spherical linear interpolation
     * @param startValue Start value of the animation curve
@@ -219,6 +255,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated quaternion value
     */
   def quaternionInterpolateFunction(startValue: Quaternion, endValue: Quaternion, gradient: Double): Quaternion = js.native
+  
   /**
     * Interpolates a quaternion cubically
     * @param startValue Start value of the animation curve
@@ -235,30 +272,36 @@ class Animation protected () extends js.Object {
     inTangent: Quaternion,
     gradient: Double
   ): Quaternion = js.native
+  
   /**
     * Remove all events found at the given frame
     * @param frame The frame to remove events from
     */
   def removeEvents(frame: Double): Unit = js.native
+  
   /**
     * Return the array of runtime animations currently using this animation
     */
   def runtimeAnimations: js.Array[RuntimeAnimation] = js.native
+  
   /**
     * Serializes the animation to an object
     * @returns Serialized object
     */
   def serialize(): js.Any = js.native
+  
   /**
     * Sets the easing function of the animation
     * @param easingFunction A custom mathematical formula for animation
     */
   def setEasingFunction(easingFunction: EasingFunction): Unit = js.native
+  
   /**
     * Sets the key frames of the animation
     * @param values The animation key frames to set
     */
   def setKeys(values: js.Array[IAnimationKey]): Unit = js.native
+  
   /**
     * Interpolates a size linearly
     * @param startValue Start value of the animation curve
@@ -267,7 +310,20 @@ class Animation protected () extends js.Object {
     * @returns Interpolated Size value
     */
   def sizeInterpolateFunction(startValue: Size, endValue: Size, gradient: Double): Size = js.native
+  
+  /** Snippet ID if the animation was created from the snippet server */
+  var snippetId: String = js.native
+  
+  /**Property to animate */
+  var targetProperty: String = js.native
+  
+  /**
+    * Stores an array of target property paths
+    */
+  var targetPropertyPath: js.Array[String] = js.native
+  
   def toString(fullDetails: Boolean): String = js.native
+  
   /**
     * Interpolates a Vector2 linearly
     * @param startValue Start value of the animation curve
@@ -276,6 +332,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated Vector2 value
     */
   def vector2InterpolateFunction(startValue: Vector2, endValue: Vector2, gradient: Double): Vector2 = js.native
+  
   /**
     * Interpolates a Vector2 cubically
     * @param startValue Start value of the animation curve
@@ -286,6 +343,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated Vector2 value
     */
   def vector2InterpolateFunctionWithTangents(startValue: Vector2, outTangent: Vector2, endValue: Vector2, inTangent: Vector2, gradient: Double): Vector2 = js.native
+  
   /**
     * Interpolates a Vector3 linearl
     * @param startValue Start value of the animation curve
@@ -294,6 +352,7 @@ class Animation protected () extends js.Object {
     * @returns Interpolated scalar value
     */
   def vector3InterpolateFunction(startValue: Vector3, endValue: Vector3, gradient: Double): Vector3 = js.native
+  
   /**
     * Interpolates a Vector3 cubically
     * @param startValue Start value of the animation curve
@@ -305,69 +364,83 @@ class Animation protected () extends js.Object {
     */
   def vector3InterpolateFunctionWithTangents(startValue: Vector3, outTangent: Vector3, endValue: Vector3, inTangent: Vector3, gradient: Double): Vector3 = js.native
 }
-
 /* static members */
 @JSImport("babylonjs/Animations/animation", "Animation")
 @js.native
 object Animation extends js.Object {
+  
   /**
     * Constant Loop Mode
     */
   val ANIMATIONLOOPMODE_CONSTANT: Double = js.native
+  
   /**
     * Cycle Loop Mode
     */
   val ANIMATIONLOOPMODE_CYCLE: Double = js.native
+  
   /**
     * Relative Loop Mode
     */
   val ANIMATIONLOOPMODE_RELATIVE: Double = js.native
+  
   /**
     * Color3 animation type
     */
   val ANIMATIONTYPE_COLOR3: Double = js.native
+  
   /**
     * Color3 animation type
     */
   val ANIMATIONTYPE_COLOR4: Double = js.native
+  
   /**
     * Float animation type
     */
   val ANIMATIONTYPE_FLOAT: Double = js.native
+  
   /**
     * Matrix animation type
     */
   val ANIMATIONTYPE_MATRIX: Double = js.native
+  
   /**
     * Quaternion animation type
     */
   val ANIMATIONTYPE_QUATERNION: Double = js.native
+  
   /**
     * Size animation type
     */
   val ANIMATIONTYPE_SIZE: Double = js.native
+  
   /**
     * Vector2 animation type
     */
   val ANIMATIONTYPE_VECTOR2: Double = js.native
+  
   /**
     * Vector3 animation type
     */
   val ANIMATIONTYPE_VECTOR3: Double = js.native
+  
   /**
     * Use matrix interpolation instead of using direct key value when animating matrices
     */
   var AllowMatricesInterpolation: Boolean = js.native
+  
   /**
     * When matrix interpolation is enabled, this boolean forces the system to use Matrix.DecomposeLerp instead of Matrix.Lerp. Interpolation is more precise but slower
     */
   var AllowMatrixDecomposeForInterpolation: Boolean = js.native
+  
   /**
     * Appends the serialized animations from the source animations
     * @param source Source containing the animations
     * @param destination Target to store the animations
     */
   def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = js.native
+  
   /**
     * Create and start an animation on a node
     * @param name defines the name of the global animation that will be run on all nodes
@@ -399,7 +472,54 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction
+  ): Nullable[Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction,
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
     loopMode: Double
+  ): Nullable[Animatable] = js.native
+  def CreateAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: Double,
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
   ): Nullable[Animatable] = js.native
   def CreateAndStartAnimation(
     name: String,
@@ -424,6 +544,7 @@ object Animation extends js.Object {
     easingFunction: EasingFunction,
     onAnimationEnd: js.Function0[Unit]
   ): Nullable[Animatable] = js.native
+  
   /**
     * Create and start an animation on a node and its descendants
     * @param name defines the name of the global animation that will be run on all nodes
@@ -459,7 +580,58 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[js.Array[Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction
+  ): Nullable[js.Array[Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction,
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[js.Array[Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
     loopMode: Double
+  ): Nullable[js.Array[Animatable]] = js.native
+  def CreateAndStartHierarchyAnimation(
+    name: String,
+    node: Node,
+    directDescendantsOnly: Boolean,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: Double,
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
   ): Nullable[js.Array[Animatable]] = js.native
   def CreateAndStartHierarchyAnimation(
     name: String,
@@ -486,6 +658,7 @@ object Animation extends js.Object {
     easingFunction: EasingFunction,
     onAnimationEnd: js.Function0[Unit]
   ): Nullable[js.Array[Animatable]] = js.native
+  
   /**
     * Sets up an animation
     * @param property The property to animate
@@ -495,6 +668,14 @@ object Animation extends js.Object {
     * @returns The created animation
     */
   def CreateAnimation(property: String, animationType: Double, framePerSecond: Double, easingFunction: EasingFunction): Animation = js.native
+  
+  /**
+    * Creates an animation or an array of animations from a snippet saved by the Inspector
+    * @param snippetId defines the snippet to load
+    * @returns a promise that will resolve to the new animation or a new array of animations
+    */
+  def CreateFromSnippetAsync(snippetId: String): js.Promise[Animation | js.Array[Animation]] = js.native
+  
   /**
     * Creates a new animation, merges it with the existing animations and starts it
     * @param name Name of the animation
@@ -526,7 +707,54 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction
+  ): Nullable[Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction,
+    onAnimationEnd: js.Function0[Unit]
+  ): Nullable[Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
     loopMode: Double
+  ): Nullable[Animatable] = js.native
+  def CreateMergeAndStartAnimation(
+    name: String,
+    node: Node,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: Double,
+    easingFunction: js.UndefOr[scala.Nothing],
+    onAnimationEnd: js.Function0[Unit]
   ): Nullable[Animatable] = js.native
   def CreateMergeAndStartAnimation(
     name: String,
@@ -551,12 +779,114 @@ object Animation extends js.Object {
     easingFunction: EasingFunction,
     onAnimationEnd: js.Function0[Unit]
   ): Nullable[Animatable] = js.native
+  
+  /**
+    * Convert the keyframes for all animations belonging to the group to be relative to a given reference frame.
+    * @param sourceAnimation defines the Animation containing keyframes to convert
+    * @param referenceFrame defines the frame that keyframes in the range will be relative to
+    * @param range defines the name of the AnimationRange belonging to the Animation to convert
+    * @param cloneOriginal defines whether or not to clone the animation and convert the clone or convert the original animation (default is false)
+    * @param clonedName defines the name of the resulting cloned Animation if cloneOriginal is true
+    * @returns a new Animation if cloneOriginal is true or the original Animation if cloneOriginal is false
+    */
+  def MakeAnimationAdditive(sourceAnimation: Animation): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean
+  ): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: js.UndefOr[scala.Nothing], range: String): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String,
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String,
+    cloneOriginal: Boolean
+  ): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: js.UndefOr[scala.Nothing],
+    range: String,
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: Double,
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: Double,
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean
+  ): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: Double,
+    range: js.UndefOr[scala.Nothing],
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: String): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: Double,
+    range: String,
+    cloneOriginal: js.UndefOr[scala.Nothing],
+    clonedName: String
+  ): Animation = js.native
+  def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: String, cloneOriginal: Boolean): Animation = js.native
+  def MakeAnimationAdditive(
+    sourceAnimation: Animation,
+    referenceFrame: Double,
+    range: String,
+    cloneOriginal: Boolean,
+    clonedName: String
+  ): Animation = js.native
+  
   /**
     * Parses an animation object and creates an animation
     * @param parsedAnimation Parsed animation object
     * @returns Animation object
     */
   def Parse(parsedAnimation: js.Any): Animation = js.native
+  
+  /**
+    * Creates a new animation or an array of animations from a snippet saved in a remote file
+    * @param name defines the name of the animation to create (can be null or empty to use the one from the json data)
+    * @param url defines the url to load from
+    * @returns a promise that will resolve to the new animation or an array of animations
+    */
+  def ParseFromFileAsync(name: Nullable[String], url: String): js.Promise[Animation | js.Array[Animation]] = js.native
+  
+  /** Define the Url to load snippets */
+  var SnippetUrl: String = js.native
+  
   /**
     * Transition property of an host to the target Value
     * @param property The property to transition
@@ -588,6 +918,7 @@ object Animation extends js.Object {
     duration: Double,
     onAnimationEnd: Nullable[js.Function0[Unit]]
   ): Nullable[Animatable] = js.native
+  
   /**
     * @hidden Internal use
     */
@@ -598,6 +929,16 @@ object Animation extends js.Object {
     totalFrame: Double,
     from: js.Any,
     to: js.Any
+  ): Nullable[Animation] = js.native
+  def _PrepareAnimation(
+    name: String,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: js.Any,
+    to: js.Any,
+    loopMode: js.UndefOr[scala.Nothing],
+    easingFunction: EasingFunction
   ): Nullable[Animation] = js.native
   def _PrepareAnimation(
     name: String,
@@ -618,7 +959,7 @@ object Animation extends js.Object {
     loopMode: Double,
     easingFunction: EasingFunction
   ): Nullable[Animation] = js.native
+  
   /** @hidden */
   def _UniversalLerp(left: js.Any, right: js.Any, amount: Double): js.Any = js.native
 }
-

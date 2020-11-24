@@ -10,7 +10,7 @@ import typings.parse.parseStrings.open
 import typings.parse.parseStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a LiveQuery Subscription.
@@ -89,6 +89,7 @@ class LiveQuerySubscription protected () extends EventEmitter {
     */
   def this(id: String, query: String) = this()
   def this(id: String, query: String, sessionToken: String) = this()
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
   @JSName("on")
@@ -103,10 +104,10 @@ class LiveQuerySubscription protected () extends EventEmitter {
   def on_open(event: open, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
   @JSName("on")
   def on_update(event: update, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
+  
   /**
     * Closes the subscription.
     *
     */
   def unsubscribe(): Unit = js.native
 }
-

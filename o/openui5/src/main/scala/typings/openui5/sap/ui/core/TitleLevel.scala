@@ -2,17 +2,17 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TitleLevel extends js.Object
-
 /**
   * Level of a title.
   */
 @JSGlobal("sap.ui.core.TitleLevel")
 @js.native
 object TitleLevel extends js.Object {
+  
   @js.native
   sealed trait Auto extends TitleLevel
   
@@ -33,6 +33,4 @@ object TitleLevel extends js.Object {
   
   @js.native
   sealed trait H6 extends TitleLevel
-  
 }
-

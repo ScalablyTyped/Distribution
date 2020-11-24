@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.reduxOrm.modelMod.AnyModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm/db/Table", "Table")
 @js.native
@@ -22,6 +22,6 @@ import scala.scalajs.js.annotation._
   */
 class Table[MClass /* <: Instantiable0[AnyModel] */] () extends js.Object {
   def this(userOpts: ModelTableOpts[MClass]) = this()
+  
   def getEmptyState(): TableState[MClass] = js.native
 }
-

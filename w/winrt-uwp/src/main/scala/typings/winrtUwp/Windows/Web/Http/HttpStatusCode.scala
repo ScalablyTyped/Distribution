@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Web.Http
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HttpStatusCode extends js.Object
-
 /** Contains the values of status codes defined for HTTP in the response to an HTTP request. */
 @JSGlobal("Windows.Web.Http.HttpStatusCode")
 @js.native
 object HttpStatusCode extends js.Object {
+  
   /** The request has been accepted for further processing. */
   @js.native
   sealed trait accepted extends HttpStatusCode
@@ -242,6 +242,4 @@ object HttpStatusCode extends js.Object {
   /** The server has an internal configuration error. The chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process. */
   @js.native
   sealed trait variantAlsoNegotiates extends HttpStatusCode
-  
 }
-

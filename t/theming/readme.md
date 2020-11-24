@@ -1,7 +1,7 @@
 
 # Scala.js typings for theming
 
-Typings are for version 3.2.1
+Typings are for version 3.3.0
 
 ## Library description:
 Unified CSSinJS theming solution for React
@@ -10,9 +10,9 @@ Unified CSSinJS theming solution for React
 | ------------------ | :-------------: |
 | Full name          | theming |
 | Keywords           | react, theme, theming, styled-components, jss, cssinjs, css-in-js |
-| # releases         | 12 |
-| # dependents       | 17 |
-| # downloads        | 8456979 |
+| # releases         | 14 |
+| # dependents       | 18 |
+| # downloads        | 8280384 |
 | # stars            | 1 |
 
 ## Links

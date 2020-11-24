@@ -5,33 +5,29 @@ import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesCreateTableInputMod.CreateTableInput
 import typings.awsSdkClientDynamodbNode.typesCreateTableOutputMod.CreateTableOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/commands/CreateTableCommand", JSImport.Namespace)
 @js.native
 object createTableCommandMod extends js.Object {
+  
   @js.native
   class CreateTableCommand protected () extends Command[
           InputTypesUnion, 
           CreateTableInput, 
           OutputTypesUnion, 
           CreateTableOutput, 
-          DynamoDBResolvedConfiguration, 
-          Readable
+          DynamoDBResolvedConfiguration
         ] {
     def this(input: CreateTableInput) = this()
-    val middlewareStack: MiddlewareStack[CreateTableInput, CreateTableOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[CreateTableInput, CreateTableOutput] = js.native
   }
-  
 }
-

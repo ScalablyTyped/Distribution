@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega
 
-Typings are for version 5.13.0
+Typings are for version 5.17.0
 
 ## Library description:
 The Vega visualization grammar.
@@ -11,8 +11,8 @@ The Vega visualization grammar.
 | Full name          | vega |
 | Keywords           | vega, visualization, interaction, dataflow, library, data, d3 |
 | # releases         | 42 |
-| # dependents       | 57 |
-| # downloads        | 1133770 |
+| # dependents       | 83 |
+| # downloads        | 2394418 |
 | # stars            | 3 |
 
 ## Links

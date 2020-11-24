@@ -5,11 +5,12 @@ import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.chain")
 @js.native
 object chain extends js.Object {
+  
   /**
     * Shift the links of an endless chain.
     *
@@ -19,6 +20,7 @@ object chain extends js.Object {
     */
   def cycle(chainContext: IChain): IChain = js.native
   def cycle(chainContext: IChain, amount: Double): IChain = js.native
+  
   /**
     * Adds a fillet between each link in a chain. Each path will be cropped to fit a fillet, and all fillets will be returned as paths in a returned model object.
     *
@@ -27,6 +29,7 @@ object chain extends js.Object {
     * @returns Model object containing paths which fillet the joints in the chain.
     */
   def fillet(chainToFillet: IChain, filletRadius: Double): IModel = js.native
+  
   /**
     * Reverse the links of a chain.
     *
@@ -34,6 +37,7 @@ object chain extends js.Object {
     * @returns The chainContext for cascading.
     */
   def reverse(chainContext: IChain): IChain = js.native
+  
   /**
     * Set the beginning of an endless chain to a known routeKey of a path.
     *
@@ -42,6 +46,7 @@ object chain extends js.Object {
     * @returns The chainContext for cascading.
     */
   def startAt(chainContext: IChain, routeKey: String): IChain = js.native
+  
   /**
     * Get key points (a minimal a number of points) along a chain of paths.
     *
@@ -51,6 +56,7 @@ object chain extends js.Object {
     */
   def toKeyPoints(chainContext: IChain): js.Array[IPoint] = js.native
   def toKeyPoints(chainContext: IChain, maxArcFacet: Double): js.Array[IPoint] = js.native
+  
   /**
     * Get points along a chain of paths.
     *
@@ -62,4 +68,3 @@ object chain extends js.Object {
   def toPoints(chainContext: IChain, distance: Double): js.Array[IPoint] = js.native
   def toPoints(chainContext: IChain, distance: Double, maxPoints: Double): js.Array[IPoint] = js.native
 }
-

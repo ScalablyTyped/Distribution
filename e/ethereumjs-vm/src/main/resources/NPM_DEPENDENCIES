@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ethereumjs-vm" : "4.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ethereumjs-vm" : "4.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

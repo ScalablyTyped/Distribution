@@ -11,8 +11,8 @@ The lodash method `_.findLast` exported as a module.
 | Full name          | lodash.findlast |
 | Keywords           | lodash-modularized, findlast |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 232199 |
+| # dependents       | 16 |
+| # downloads        | 777659 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Triggers")
 @js.native
 class ResourceAccountsContainersTriggers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.triggers.create
     * @desc Creates a GTM Trigger.
@@ -46,6 +48,7 @@ class ResourceAccountsContainersTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrigger]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.triggers.delete
     * @desc Deletes a GTM Trigger.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.triggers.get
     * @desc Gets a GTM Trigger.
@@ -106,6 +110,7 @@ class ResourceAccountsContainersTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrigger]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.triggers.list
     * @desc Lists all GTM Triggers of a Container.
@@ -138,6 +143,7 @@ class ResourceAccountsContainersTriggers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTriggersResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.triggers.update
     * @desc Updates a GTM Trigger.
@@ -174,4 +180,3 @@ class ResourceAccountsContainersTriggers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTrigger]
   ): Unit = js.native
 }
-

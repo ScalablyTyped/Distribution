@@ -2,11 +2,12 @@ package typings.luminoDatagrid.cellrendererMod.CellRenderer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/cellrenderer", "CellRenderer.resolveOption")
 @js.native
 object resolveOption extends js.Object {
+  
   /**
     * Resolve a config option for a cell renderer.
     *
@@ -18,4 +19,3 @@ object resolveOption extends js.Object {
     */
   def apply[T](option: ConfigOption[T], config: CellConfig): T = js.native
 }
-

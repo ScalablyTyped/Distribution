@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta2", "firestore_v1beta2.Resource$Projects$Databases$Collectiongroups$Indexes")
 @js.native
 class ResourceProjectsDatabasesCollectiongroupsIndexes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.indexes.create
     * @desc Creates a composite index. This returns a
@@ -48,6 +50,7 @@ class ResourceProjectsDatabasesCollectiongroupsIndexes protected () extends js.O
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.indexes.delete
     * @desc Deletes a composite index.
@@ -79,6 +82,7 @@ class ResourceProjectsDatabasesCollectiongroupsIndexes protected () extends js.O
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.indexes.get
     * @desc Gets a composite index.
@@ -110,6 +114,7 @@ class ResourceProjectsDatabasesCollectiongroupsIndexes protected () extends js.O
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta2Index]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.indexes.list
     * @desc Lists composite indexes.
@@ -145,4 +150,3 @@ class ResourceProjectsDatabasesCollectiongroupsIndexes protected () extends js.O
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse]
   ): Unit = js.native
 }
-

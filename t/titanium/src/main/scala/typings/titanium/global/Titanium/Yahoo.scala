@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The top level Yahoo module.  The Yahoo module is used for accessing Yahoo related API services.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object Yahoo
   extends TopLevel[scala.Nothing]
-

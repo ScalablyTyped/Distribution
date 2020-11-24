@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.ITpRegisterRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.TpRegisterRequest")
 @js.native
@@ -20,11 +20,11 @@ class TpRegisterRequest ()
   extends typings.sawtoothSdk.protobufMod.TpRegisterRequest {
   def this(properties: ITpRegisterRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.TpRegisterRequest")
 @js.native
 object TpRegisterRequest extends js.Object {
+  
   /**
     * Creates a new TpRegisterRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object TpRegisterRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
   def create(properties: ITpRegisterRequest): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
+  
   /**
     * Decodes a TpRegisterRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object TpRegisterRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
+  
   /**
     * Decodes a TpRegisterRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object TpRegisterRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
+  
   /**
     * Encodes the specified TpRegisterRequest message. Does not implicitly {@link TpRegisterRequest.verify|verify} messages.
     * @param message TpRegisterRequest message or plain object to encode
@@ -61,6 +64,7 @@ object TpRegisterRequest extends js.Object {
     */
   def encode(message: ITpRegisterRequest): Writer = js.native
   def encode(message: ITpRegisterRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpRegisterRequest message, length delimited. Does not implicitly {@link TpRegisterRequest.verify|verify} messages.
     * @param message TpRegisterRequest message or plain object to encode
@@ -69,12 +73,14 @@ object TpRegisterRequest extends js.Object {
     */
   def encodeDelimited(message: ITpRegisterRequest): Writer = js.native
   def encodeDelimited(message: ITpRegisterRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpRegisterRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpRegisterRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.TpRegisterRequest = js.native
+  
   /**
     * Creates a plain object from a TpRegisterRequest message. Also converts values to other types if specified.
     * @param message TpRegisterRequest
@@ -83,6 +89,7 @@ object TpRegisterRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.TpRegisterRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.TpRegisterRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpRegisterRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object TpRegisterRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

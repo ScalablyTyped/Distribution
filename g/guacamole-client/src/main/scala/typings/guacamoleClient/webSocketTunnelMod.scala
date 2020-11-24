@@ -3,11 +3,12 @@ package typings.guacamoleClient
 import typings.guacamoleClient.tunnelMod.Tunnel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/WebSocketTunnel", JSImport.Namespace)
 @js.native
 object webSocketTunnelMod extends js.Object {
+  
   @js.native
   class WebSocketTunnel protected () extends Tunnel {
     /**
@@ -15,6 +16,4 @@ object webSocketTunnelMod extends js.Object {
       */
     def this(tunnelURL: String) = this()
   }
-  
 }
-

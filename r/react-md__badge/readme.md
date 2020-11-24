@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__badge
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 Create a badge that is fixed to another element. This is generally used for notification counts.
@@ -10,9 +10,9 @@ Create a badge that is fixed to another element. This is generally used for noti
 | ------------------ | :-------------: |
 | Full name          | @react-md/badge |
 | Keywords           | accessibility, a11y, react-md, material design, react, badge, component, components |
-| # releases         | 18 |
+| # releases         | 27 |
 | # dependents       | 1 |
-| # downloads        | 2922 |
+| # downloads        | 5060 |
 | # stars            | 0 |
 
 ## Links

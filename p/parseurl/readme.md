@@ -11,8 +11,8 @@ parse a url with memoization
 | Full name          | parseurl |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 577 |
-| # downloads        | 466113273 |
+| # dependents       | 642 |
+| # downloads        | 625920399 |
 | # stars            | 22 |
 
 ## Links

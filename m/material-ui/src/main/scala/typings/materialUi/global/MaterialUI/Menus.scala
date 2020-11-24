@@ -7,11 +7,12 @@ import typings.materialUi.MaterialUI.Menus.MenuProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__MaterialUI.Menus")
 @js.native
 object Menus extends js.Object {
+  
   @js.native
   class DropDownMenu ()
     extends Component[DropDownMenuProps, js.Object, js.Any]
@@ -27,6 +28,4 @@ object Menus extends js.Object {
   @js.native
   class MenuItem ()
     extends Component[MenuItemProps, js.Object, js.Any]
-  
 }
-

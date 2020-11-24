@@ -3,19 +3,12 @@ package typings.pTry
 import typings.pTry.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-try", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function pTry<ValueType, ArgumentsType extends unknown[]>(
-  //	fn: (...arguments: ArgumentsType) => PromiseLike<ValueType> | ValueType,
-  //	...arguments: ArgumentsType
-  // ): Promise<ValueType>;
-  // export = pTry;
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	Start a promise chain.
   	@param fn - The function to run to start the promise chain.
@@ -40,6 +33,7 @@ object mod extends js.Object {
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
   ): js.Promise[ValueType] = js.native
+  
   /**
   	Start a promise chain.
   	@param fn - The function to run to start the promise chain.
@@ -70,5 +64,12 @@ object mod extends js.Object {
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
   ): js.Promise[ValueType] = js.native
+  // TODO: remove this in the next major version, refactor the whole definition to:
+  // declare function pTry<ValueType, ArgumentsType extends unknown[]>(
+  //	fn: (...arguments: ArgumentsType) => PromiseLike<ValueType> | ValueType,
+  //	...arguments: ArgumentsType
+  // ): Promise<ValueType>;
+  // export = pTry;
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

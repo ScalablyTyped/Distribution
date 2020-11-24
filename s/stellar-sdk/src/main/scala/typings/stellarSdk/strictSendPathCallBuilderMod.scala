@@ -6,11 +6,12 @@ import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
 import typings.stellarSdk.serverApiMod.ServerApi.PaymentPathRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-sdk/lib/strict_send_path_call_builder", JSImport.Namespace)
 @js.native
 object strictSendPathCallBuilderMod extends js.Object {
+  
   @js.native
   class StrictSendPathCallBuilder protected () extends CallBuilder[CollectionPage[PaymentPathRecord]] {
     def this(
@@ -26,6 +27,4 @@ object strictSendPathCallBuilderMod extends js.Object {
       destination: js.Array[Asset]
     ) = this()
   }
-  
 }
-

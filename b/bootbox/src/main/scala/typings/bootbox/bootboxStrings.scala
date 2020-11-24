@@ -2,9 +2,61 @@ package typings.bootbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootboxStrings {
+  
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  
+  @scala.inline
+  def `extra-large`: `extra-large` = "extra-large".asInstanceOf[`extra-large`]
+  
+  @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  
+  @scala.inline
+  def lg: lg = "lg".asInstanceOf[lg]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def password: password = "password".asInstanceOf[password]
+  
+  @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
+  
+  @scala.inline
+  def range: range = "range".asInstanceOf[range]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def sm: sm = "sm".asInstanceOf[sm]
+  
+  @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def xl: xl = "xl".asInstanceOf[xl]
+  
   @js.native
   sealed trait checkbox extends js.Object
   
@@ -55,40 +107,4 @@ object bootboxStrings {
   
   @js.native
   sealed trait xl extends js.Object
-  
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def `extra-large`: `extra-large` = "extra-large".asInstanceOf[`extra-large`]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def lg: lg = "lg".asInstanceOf[lg]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def sm: sm = "sm".asInstanceOf[sm]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def xl: xl = "xl".asInstanceOf[xl]
 }
-

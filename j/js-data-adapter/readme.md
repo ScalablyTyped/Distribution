@@ -12,7 +12,7 @@ Base adapter class that all other js-data adapters extend.
 | Keywords           | js-data, jsdata, adapter |
 | # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 132122 |
+| # downloads        | 109068 |
 | # stars            | 0 |
 
 ## Links

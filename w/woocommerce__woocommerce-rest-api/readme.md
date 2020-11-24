@@ -10,9 +10,9 @@ WooCommerce REST API - JavaScript Library
 | ------------------ | :-------------: |
 | Full name          | @woocommerce/woocommerce-rest-api |
 | Keywords           | wordpress, woocommerce, rest, promise, node |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 141558 |
+| # downloads        | 154104 |
 | # stars            | 0 |
 
 ## Links

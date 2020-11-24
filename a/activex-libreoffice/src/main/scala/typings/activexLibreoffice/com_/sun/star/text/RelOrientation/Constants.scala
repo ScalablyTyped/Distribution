@@ -12,7 +12,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
@@ -27,27 +27,35 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def CHAR: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def FRAME: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def FRAME_LEFT: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def FRAME_RIGHT: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def PAGE_FRAME: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def PAGE_LEFT: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def PAGE_PRINT_AREA: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def PAGE_RIGHT: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def PRINT_AREA: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def TEXT_LINE: `9` = 9.asInstanceOf[`9`]
 }
-

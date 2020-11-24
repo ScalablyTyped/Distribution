@@ -3,37 +3,13 @@ package typings.chaiSpies.ChaiSpies
 import typings.chaiSpies.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Called extends js.Object {
-  var always: Always = js.native
-  var at: At = js.native
-  /**
-    * ####.once
-    * Assert that a spy has been called exactly once.
-    * ```ts
-    * expect(spy).to.have.been.called.once;
-    * expect(spy).to.not.have.been.called.once;
-    * spy.should.have.been.called.once;
-    * spy.should.not.have.been.called.once;
-    * ```
-    */
-  var once: Assertion = js.native
-  /**
-    * ####.twice
-    * Assert that a spy has been called exactly twice.
-    * ```ts
-    * expect(spy).to.have.been.called.twice;
-    * expect(spy).to.not.have.been.called.twice;
-    * spy.should.have.been.called.twice;
-    * spy.should.not.have.been.called.twice;
-    * ```
-    */
-  var twice: Assertion = js.native
-  @JSName("with")
-  var with_Original: With = js.native
+  
   def apply(): Assertion = js.native
+  
   /**
     * ####.above(n) / .gt(n)
     * Assert that a spy has been called more than ```n``` times.
@@ -43,6 +19,11 @@ trait Called extends js.Object {
     * ```
     */
   def above(n: Double): Assertion = js.native
+  
+  var always: Always = js.native
+  
+  var at: At = js.native
+  
   /**
     * ####.below(n) / .lt(n)
     * Assert that a spy has been called fewer than ```n``` times.
@@ -52,6 +33,7 @@ trait Called extends js.Object {
     * ```
     */
   def below(n: Double): Assertion = js.native
+  
   /**
     * ####.exactly(n)
     * Assert that a spy has been called exactly ```n``` times.
@@ -63,6 +45,7 @@ trait Called extends js.Object {
     * ```
     */
   def exactly(n: Double): Assertion = js.native
+  
   /**
     * ####.above(n) / .gt(n)
     * Assert that a spy has been called more than ```n``` times.
@@ -72,6 +55,7 @@ trait Called extends js.Object {
     * ```
     */
   def gt(n: Double): Assertion = js.native
+  
   /**
     * ####.below(n) / .lt(n)
     * Assert that a spy has been called fewer than ```n``` times.
@@ -81,6 +65,7 @@ trait Called extends js.Object {
     * ```
     */
   def lt(n: Double): Assertion = js.native
+  
   /**
     * ####.max(n) / .at.most(n)
     * Assert that a spy has been called maximum of ```n``` times.
@@ -92,6 +77,7 @@ trait Called extends js.Object {
     * ```
     */
   def max(n: Double): Assertion = js.native
+  
   /**
     * ####.min(n) / .at.least(n)
     * Assert that a spy has been called minimum of ```n``` times.
@@ -103,6 +89,31 @@ trait Called extends js.Object {
     * ```
     */
   def min(n: Double): Assertion = js.native
+  
+  /**
+    * ####.once
+    * Assert that a spy has been called exactly once.
+    * ```ts
+    * expect(spy).to.have.been.called.once;
+    * expect(spy).to.not.have.been.called.once;
+    * spy.should.have.been.called.once;
+    * spy.should.not.have.been.called.once;
+    * ```
+    */
+  var once: Assertion = js.native
+  
+  /**
+    * ####.twice
+    * Assert that a spy has been called exactly twice.
+    * ```ts
+    * expect(spy).to.have.been.called.twice;
+    * expect(spy).to.not.have.been.called.twice;
+    * spy.should.have.been.called.twice;
+    * spy.should.not.have.been.called.twice;
+    * ```
+    */
+  var twice: Assertion = js.native
+  
   /**
     * ####.with
     * Assert that a spy has been called with a given argument at least once, even if more arguments were provided.
@@ -131,5 +142,6 @@ trait Called extends js.Object {
     i: js.UndefOr[js.Any],
     j: js.UndefOr[js.Any]
   ): Assertion = js.native
+  @JSName("with")
+  var with_Original: With = js.native
 }
-

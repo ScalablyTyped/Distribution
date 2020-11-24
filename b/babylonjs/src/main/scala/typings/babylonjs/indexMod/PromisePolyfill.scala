@@ -2,17 +2,17 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PromisePolyfill")
 @js.native
 class PromisePolyfill ()
   extends typings.babylonjs.miscIndexMod.PromisePolyfill
-
 /* static members */
 @JSImport("babylonjs/index", "PromisePolyfill")
 @js.native
 object PromisePolyfill extends js.Object {
+  
   /**
     * Static function used to check if the polyfill is required
     * If this is the case then the function will inject the polyfill to window.Promise
@@ -21,4 +21,3 @@ object PromisePolyfill extends js.Object {
   def Apply(): Unit = js.native
   def Apply(force: Boolean): Unit = js.native
 }
-

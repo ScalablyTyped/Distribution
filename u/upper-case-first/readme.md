@@ -11,8 +11,8 @@ Transforms the string with the first character in upper cased
 | Full name          | upper-case-first |
 | Keywords           | upper, case, first, capitalize, convert, transform |
 | # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 45491791 |
+| # dependents       | 32 |
+| # downloads        | 68104537 |
 | # stars            | 0 |
 
 ## Links

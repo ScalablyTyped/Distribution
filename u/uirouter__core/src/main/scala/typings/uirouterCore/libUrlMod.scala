@@ -9,11 +9,12 @@ import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
 import typings.uirouterCore.urlInterfaceMod.UrlRuleMatchFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/url", JSImport.Namespace)
 @js.native
 object libUrlMod extends js.Object {
+  
   @js.native
   class BaseUrlRule protected ()
     extends typings.uirouterCore.urlRuleMod.BaseUrlRule {
@@ -54,6 +55,33 @@ object libUrlMod extends js.Object {
       config: UrlMatcherCompileConfig
     ) = this()
   }
+  /* static members */
+  @js.native
+  object UrlMatcher extends js.Object {
+    
+    /**
+      * Compare two UrlMatchers
+      *
+      * This comparison function converts a UrlMatcher into static and dynamic path segments.
+      * Each static path segment is a static string between a path separator (slash character).
+      * Each dynamic segment is a path parameter.
+      *
+      * The comparison function sorts static segments before dynamic ones.
+      */
+    def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = js.native
+    
+    /** @internal */
+    def encodeDashes(str: String): String = js.native
+    
+    /** @internal */
+    var nameValidator: RegExp = js.native
+    
+    /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
+    def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
+    
+    /** @internal Given a matcher, return an array with the matcher's query params */
+    def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[Param] = js.native
+  }
   
   @js.native
   class UrlMatcherFactory protected ()
@@ -73,6 +101,12 @@ object libUrlMod extends js.Object {
     extends typings.uirouterCore.urlRuleMod.UrlRuleFactory {
     def this(router: UIRouter) = this()
   }
+  /* static members */
+  @js.native
+  object UrlRuleFactory extends js.Object {
+    
+    def isUrlRule(obj: js.Any): Boolean = js.native
+  }
   
   @js.native
   class UrlRules protected ()
@@ -87,35 +121,4 @@ object libUrlMod extends js.Object {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
   }
-  
-  /* static members */
-  @js.native
-  object UrlMatcher extends js.Object {
-    /** @internal */
-    var nameValidator: RegExp = js.native
-    /**
-      * Compare two UrlMatchers
-      *
-      * This comparison function converts a UrlMatcher into static and dynamic path segments.
-      * Each static path segment is a static string between a path separator (slash character).
-      * Each dynamic segment is a path parameter.
-      *
-      * The comparison function sorts static segments before dynamic ones.
-      */
-    def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = js.native
-    /** @internal */
-    def encodeDashes(str: String): String = js.native
-    /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-    def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
-    /** @internal Given a matcher, return an array with the matcher's query params */
-    def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[Param] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UrlRuleFactory extends js.Object {
-    def isUrlRule(obj: js.Any): Boolean = js.native
-  }
-  
 }
-

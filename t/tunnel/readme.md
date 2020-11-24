@@ -10,9 +10,9 @@ Node HTTP/HTTPS Agents for tunneling proxies
 | ------------------ | :-------------: |
 | Full name          | tunnel |
 | Keywords           | http, https, agent, proxy, tunnel |
-| # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 16855627 |
+| # releases         | 1 |
+| # dependents       | 148 |
+| # downloads        | 45732484 |
 | # stars            | 14 |
 
 ## Links

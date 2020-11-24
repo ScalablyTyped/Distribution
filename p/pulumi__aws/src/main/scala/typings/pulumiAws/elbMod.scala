@@ -28,11 +28,25 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/elb", JSImport.Namespace)
 @js.native
 object elbMod extends js.Object {
+  
+  def getHostedZoneId(): js.Promise[GetHostedZoneIdResult] = js.native
+  def getHostedZoneId(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
+  def getHostedZoneId(args: GetHostedZoneIdArgs): js.Promise[GetHostedZoneIdResult] = js.native
+  def getHostedZoneId(args: GetHostedZoneIdArgs, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
+  
+  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = js.native
+  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
+  
+  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  
   @js.native
   class AppCookieStickinessPolicy protected ()
     extends typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy {
@@ -45,6 +59,30 @@ object elbMod extends js.Object {
       */
     def this(name: String, args: AppCookieStickinessPolicyArgs) = this()
     def this(name: String, args: AppCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object AppCookieStickinessPolicy extends js.Object {
+    
+    /**
+      * Get an existing AppCookieStickinessPolicy resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
+    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
+    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
+    
+    /**
+      * Returns true if the given object is an instance of AppCookieStickinessPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean = js.native
   }
   
   @js.native
@@ -60,6 +98,30 @@ object elbMod extends js.Object {
     def this(name: String, args: AttachmentArgs) = this()
     def this(name: String, args: AttachmentArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object Attachment extends js.Object {
+    
+    /**
+      * Get an existing Attachment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
+    def get(name: String, id: Input[ID], state: AttachmentState): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
+    def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Attachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean = js.native
+  }
   
   @js.native
   class ListenerPolicy protected ()
@@ -73,6 +135,30 @@ object elbMod extends js.Object {
       */
     def this(name: String, args: ListenerPolicyArgs) = this()
     def this(name: String, args: ListenerPolicyArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object ListenerPolicy extends js.Object {
+    
+    /**
+      * Get an existing ListenerPolicy resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
+    def get(name: String, id: Input[ID], state: ListenerPolicyState): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
+    def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ListenerPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/listenerPolicy.ListenerPolicy */ Boolean = js.native
   }
   
   @js.native
@@ -88,6 +174,30 @@ object elbMod extends js.Object {
     def this(name: String, args: LoadBalancerArgs) = this()
     def this(name: String, args: LoadBalancerArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object LoadBalancer extends js.Object {
+    
+    /**
+      * Get an existing LoadBalancer resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
+    def get(name: String, id: Input[ID], state: LoadBalancerState): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
+    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
+    
+    /**
+      * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancer.LoadBalancer */ Boolean = js.native
+  }
   
   @js.native
   class LoadBalancerBackendServerPolicy protected ()
@@ -102,154 +212,10 @@ object elbMod extends js.Object {
     def this(name: String, args: LoadBalancerBackendServerPolicyArgs) = this()
     def this(name: String, args: LoadBalancerBackendServerPolicyArgs, opts: CustomResourceOptions) = this()
   }
-  
-  @js.native
-  class LoadBalancerCookieStickinessPolicy protected ()
-    extends typings.pulumiAws.elbLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy {
-    /**
-      * Create a LoadBalancerCookieStickinessPolicy resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs) = this()
-    def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
-  }
-  
-  @js.native
-  class LoadBalancerPolicy protected ()
-    extends typings.pulumiAws.elbLoadBalancerPolicyMod.LoadBalancerPolicy {
-    /**
-      * Create a LoadBalancerPolicy resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String, args: LoadBalancerPolicyArgs) = this()
-    def this(name: String, args: LoadBalancerPolicyArgs, opts: CustomResourceOptions) = this()
-  }
-  
-  @js.native
-  class SslNegotiationPolicy protected ()
-    extends typings.pulumiAws.elbSslNegotiationPolicyMod.SslNegotiationPolicy {
-    /**
-      * Create a SslNegotiationPolicy resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String, args: SslNegotiationPolicyArgs) = this()
-    def this(name: String, args: SslNegotiationPolicyArgs, opts: CustomResourceOptions) = this()
-  }
-  
-  def getHostedZoneId(): js.Promise[GetHostedZoneIdResult] = js.native
-  def getHostedZoneId(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
-  def getHostedZoneId(args: GetHostedZoneIdArgs): js.Promise[GetHostedZoneIdResult] = js.native
-  def getHostedZoneId(args: GetHostedZoneIdArgs, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
-  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
-  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
-  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
-  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
-  /* static members */
-  @js.native
-  object AppCookieStickinessPolicy extends js.Object {
-    /**
-      * Get an existing AppCookieStickinessPolicy resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
-    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
-    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): typings.pulumiAws.elbAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
-    /**
-      * Returns true if the given object is an instance of AppCookieStickinessPolicy.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Attachment extends js.Object {
-    /**
-      * Get an existing Attachment resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
-    def get(name: String, id: Input[ID], state: AttachmentState): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
-    def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): typings.pulumiAws.elbAttachmentMod.Attachment = js.native
-    /**
-      * Returns true if the given object is an instance of Attachment.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ListenerPolicy extends js.Object {
-    /**
-      * Get an existing ListenerPolicy resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
-    def get(name: String, id: Input[ID], state: ListenerPolicyState): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
-    def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.elbListenerPolicyMod.ListenerPolicy = js.native
-    /**
-      * Returns true if the given object is an instance of ListenerPolicy.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/listenerPolicy.ListenerPolicy */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object LoadBalancer extends js.Object {
-    /**
-      * Get an existing LoadBalancer resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerState): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): typings.pulumiAws.elbLoadBalancerMod.LoadBalancer = js.native
-    /**
-      * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancer.LoadBalancer */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object LoadBalancerBackendServerPolicy extends js.Object {
+    
     /**
       * Get an existing LoadBalancerBackendServerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -268,6 +234,7 @@ object elbMod extends js.Object {
       state: LoadBalancerBackendServerPolicyState,
       opts: CustomResourceOptions
     ): typings.pulumiAws.elbLoadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicy = js.native
+    
     /**
       * Returns true if the given object is an instance of LoadBalancerBackendServerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
@@ -275,9 +242,23 @@ object elbMod extends js.Object {
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy */ Boolean = js.native
   }
   
+  @js.native
+  class LoadBalancerCookieStickinessPolicy protected ()
+    extends typings.pulumiAws.elbLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy {
+    /**
+      * Create a LoadBalancerCookieStickinessPolicy resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs) = this()
+    def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
+  }
   /* static members */
   @js.native
   object LoadBalancerCookieStickinessPolicy extends js.Object {
+    
     /**
       * Get an existing LoadBalancerCookieStickinessPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -296,6 +277,7 @@ object elbMod extends js.Object {
       state: LoadBalancerCookieStickinessPolicyState,
       opts: CustomResourceOptions
     ): typings.pulumiAws.elbLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy = js.native
+    
     /**
       * Returns true if the given object is an instance of LoadBalancerCookieStickinessPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
@@ -303,9 +285,23 @@ object elbMod extends js.Object {
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerCookieStickinessPolicy.LoadBalancerCookieStickinessPolicy */ Boolean = js.native
   }
   
+  @js.native
+  class LoadBalancerPolicy protected ()
+    extends typings.pulumiAws.elbLoadBalancerPolicyMod.LoadBalancerPolicy {
+    /**
+      * Create a LoadBalancerPolicy resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: LoadBalancerPolicyArgs) = this()
+    def this(name: String, args: LoadBalancerPolicyArgs, opts: CustomResourceOptions) = this()
+  }
   /* static members */
   @js.native
   object LoadBalancerPolicy extends js.Object {
+    
     /**
       * Get an existing LoadBalancerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -319,6 +315,7 @@ object elbMod extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbLoadBalancerPolicyMod.LoadBalancerPolicy = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerPolicyState): typings.pulumiAws.elbLoadBalancerPolicyMod.LoadBalancerPolicy = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.elbLoadBalancerPolicyMod.LoadBalancerPolicy = js.native
+    
     /**
       * Returns true if the given object is an instance of LoadBalancerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
@@ -326,9 +323,23 @@ object elbMod extends js.Object {
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean = js.native
   }
   
+  @js.native
+  class SslNegotiationPolicy protected ()
+    extends typings.pulumiAws.elbSslNegotiationPolicyMod.SslNegotiationPolicy {
+    /**
+      * Create a SslNegotiationPolicy resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: SslNegotiationPolicyArgs) = this()
+    def this(name: String, args: SslNegotiationPolicyArgs, opts: CustomResourceOptions) = this()
+  }
   /* static members */
   @js.native
   object SslNegotiationPolicy extends js.Object {
+    
     /**
       * Get an existing SslNegotiationPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -342,12 +353,11 @@ object elbMod extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elbSslNegotiationPolicyMod.SslNegotiationPolicy = js.native
     def get(name: String, id: Input[ID], state: SslNegotiationPolicyState): typings.pulumiAws.elbSslNegotiationPolicyMod.SslNegotiationPolicy = js.native
     def get(name: String, id: Input[ID], state: SslNegotiationPolicyState, opts: CustomResourceOptions): typings.pulumiAws.elbSslNegotiationPolicyMod.SslNegotiationPolicy = js.native
+    
     /**
       * Returns true if the given object is an instance of SslNegotiationPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/sslNegotiationPolicy.SslNegotiationPolicy */ Boolean = js.native
   }
-  
 }
-

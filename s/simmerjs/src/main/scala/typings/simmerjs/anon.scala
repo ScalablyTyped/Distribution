@@ -5,18 +5,21 @@ import typings.simmerjs.mod.Simmer
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   /* Inlined simmerjs.simmerjs.Simmer & {noConflict (): any} */
   @js.native
   trait SimmernoConflictany extends js.Object {
+    
     /**
       * Analyze an element and produce a unique CSS selector for it.
       */
     def apply(element: Element): String = js.native
+    
     /**
       * If you have an existing instance of Simmer, you can use its configure
       * method to instanciate a new Simmer which has the same scope and
@@ -24,6 +27,7 @@ object anon extends js.Object {
       * apply.
       */
     def configure(options: Options): Simmer = js.native
+    
     /**
       * Just in case you also had the brilliant idea of using a variable
       * called "Simmer", or you wish to move it off of the global object then
@@ -34,6 +38,4 @@ object anon extends js.Object {
       */
     def noConflict(): js.Any = js.native
   }
-  
 }
-

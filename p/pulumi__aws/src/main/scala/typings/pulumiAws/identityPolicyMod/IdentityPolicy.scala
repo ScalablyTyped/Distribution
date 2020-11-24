@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy")
 @js.native
@@ -21,24 +21,27 @@ class IdentityPolicy protected () extends CustomResource {
     */
   def this(name: String, args: IdentityPolicyArgs) = this()
   def this(name: String, args: IdentityPolicyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Name or Amazon Resource Name (ARN) of the SES Identity.
     */
   val identity: Output_[String] = js.native
+  
   /**
     * Name of the policy.
     */
   val name: Output_[String] = js.native
+  
   /**
     * JSON string of the policy.
     */
   val policy: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy")
 @js.native
 object IdentityPolicy extends js.Object {
+  
   /**
     * Get an existing IdentityPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +55,10 @@ object IdentityPolicy extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityPolicy = js.native
   def get(name: String, id: Input[ID], state: IdentityPolicyState): IdentityPolicy = js.native
   def get(name: String, id: Input[ID], state: IdentityPolicyState, opts: CustomResourceOptions): IdentityPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of IdentityPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityPolicy.IdentityPolicy */ Boolean = js.native
 }
-

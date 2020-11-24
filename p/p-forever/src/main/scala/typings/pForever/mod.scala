@@ -3,18 +3,12 @@ package typings.pForever
 import typings.pForever.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-forever", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Call = js.native
-  /**
-  	Symbol used to end the loop.
-  	*/
-  val end: js.Symbol = js.native
+  
   /**
   	Run promise-returning & async functions until you end it.
   	@param fn - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
@@ -56,6 +50,7 @@ object mod extends js.Object {
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = js.native
+  
   /**
   	Run promise-returning & async functions until you end it.
   	@param fn - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
@@ -105,5 +100,12 @@ object mod extends js.Object {
     ],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = js.native
+  // TODO: Remove this for the next major release
+  @JSName("default")
+  var default_Original: Call = js.native
+  
+  /**
+  	Symbol used to end the loop.
+  	*/
+  val end: js.Symbol = js.native
 }
-

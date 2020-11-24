@@ -5,12 +5,13 @@ import typings.winrtUwp.Windows.Storage.FileProperties.ThumbnailOptions
 import typings.winrtUwp.Windows.Storage.Search.IStorageQueryResultBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for searching, accessing, managing, and retrieving information about files and folders in the storage system. */
 @JSGlobal("Windows.Storage.BulkAccess")
 @js.native
 object BulkAccess extends js.Object {
+  
   /** Provides synchronous access to the properties exposed off StorageFile and lets an app perform asynchronous file operations such as copy, delete, move, and rename. */
   @js.native
   abstract class FileInformation ()
@@ -67,6 +68,4 @@ object BulkAccess extends js.Object {
   @js.native
   abstract class FolderInformation ()
     extends typings.winrtUwp.Windows.Storage.BulkAccess.FolderInformation
-  
 }
-

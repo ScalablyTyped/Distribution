@@ -5,7 +5,7 @@ import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.UserProfiles.HashTagCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for operations related to people.
   Note: The SocialFollowingManager object is the recommended object for performing Following People and Following Content tasks.
@@ -16,12 +16,13 @@ class PeopleManager protected ()
   extends typings.sharepoint.SP.UserProfiles.PeopleManager {
   def this(context: ClientRuntimeContext) = this()
 }
-
 /* static members */
 @JSGlobal("SP.UserProfiles.PeopleManager")
 @js.native
 object PeopleManager extends js.Object {
+  
   def getTrendingTags(context: ClientRuntimeContext): HashTagCollection = js.native
+  
   /** Checks whether the first user is following the second user. */
   def isFollowing(
     context: ClientRuntimeContext,
@@ -29,4 +30,3 @@ object PeopleManager extends js.Object {
     possibleFolloweeAccountName: String
   ): BooleanResult = js.native
 }
-

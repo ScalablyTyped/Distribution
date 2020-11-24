@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/sagemaker/endpoint", "Endpoint")
 @js.native
@@ -22,28 +22,32 @@ class Endpoint protected () extends CustomResource {
     */
   def this(name: String, args: EndpointArgs) = this()
   def this(name: String, args: EndpointArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The Amazon Resource Name (ARN) assigned by AWS to this endpoint.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The name of the endpoint configuration to use.
     */
   val endpointConfigName: Output_[String] = js.native
+  
   /**
     * The name of the endpoint. If omitted, this provider will assign a random, unique name.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A mapping of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/sagemaker/endpoint", "Endpoint")
 @js.native
 object Endpoint extends js.Object {
+  
   /**
     * Get an existing Endpoint resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -57,10 +61,10 @@ object Endpoint extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
+  
   /**
     * Returns true if the given object is an instance of Endpoint.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpoint.Endpoint */ Boolean = js.native
 }
-

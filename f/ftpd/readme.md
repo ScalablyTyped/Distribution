@@ -10,15 +10,15 @@ Node FTP Server
 | ------------------ | :-------------: |
 | Full name          | ftpd |
 | Keywords           | ftp, ftp-server, ftpd |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 19 |
-| # downloads        | 15402 |
+| # downloads        | 11267 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](https://github.com/sstur/nodeftpd#readme)
-- [Bugs](https://github.com/sstur/nodeftpd/issues)
-- [Repository](https://github.com/sstur/nodeftpd)
+- [Homepage](https://github.com/nodeftpd/nodeftpd#readme)
+- [Bugs](https://github.com/nodeftpd/nodeftpd/issues)
+- [Repository](https://github.com/nodeftpd/nodeftpd)
 - [Npm](https://www.npmjs.com/package/ftpd)
     
 

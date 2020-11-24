@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.ApiResolverType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides efficient API resolving using globs, allowing you to quickly
@@ -28,4 +28,3 @@ class ApiResolver protected ()
     */
   def this(`type`: ApiResolverType) = this()
 }
-

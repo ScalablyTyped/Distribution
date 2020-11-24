@@ -3,7 +3,7 @@ package typings.googleapis.mod.firebasedynamiclinksV1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis", "firebasedynamiclinks_v1.Resource$Shortlinks")
 @js.native
@@ -11,4 +11,3 @@ class ResourceShortlinks protected ()
   extends typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1.ResourceShortlinks {
   def this(context: APIRequestContext) = this()
 }
-

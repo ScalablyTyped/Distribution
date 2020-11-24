@@ -2,10 +2,9 @@ package typings.activexPowerpoint.global.PowerPoint
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PowerPoint.Legend")
 @js.native
 class Legend protected ()
   extends typings.activexPowerpoint.PowerPoint.Legend
-

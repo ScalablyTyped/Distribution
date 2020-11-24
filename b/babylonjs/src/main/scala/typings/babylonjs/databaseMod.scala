@@ -3,11 +3,12 @@ package typings.babylonjs
 import typings.babylonjs.iofflineproviderMod.IOfflineProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Offline/database", JSImport.Namespace)
 @js.native
 object databaseMod extends js.Object {
+  
   @js.native
   class Database protected () extends IOfflineProvider {
     /**
@@ -22,47 +23,71 @@ object databaseMod extends js.Object {
       callbackManifestChecked: js.Function1[/* checked */ Boolean, _],
       disableManifestCheck: Boolean
     ) = this()
+    
     var _callbackManifestChecked: js.Any = js.native
+    
     var _checkManifestFile: js.Any = js.native
+    
     var _checkVersionFromDB: js.Any = js.native
+    
     var _currentSceneUrl: js.Any = js.native
+    
     var _db: js.Any = js.native
+    
     var _enableSceneOffline: js.Any = js.native
+    
     var _enableTexturesOffline: js.Any = js.native
+    
     var _hasReachedQuota: js.Any = js.native
+    
     var _idbFactory: js.Any = js.native
+    
     var _isSupported: js.Any = js.native
+    
     var _loadFileAsync: js.Any = js.native
+    
     var _loadImageFromDBAsync: js.Any = js.native
+    
     var _loadVersionFromDBAsync: js.Any = js.native
+    
     var _manifestVersionFound: js.Any = js.native
+    
     var _mustUpdateRessources: js.Any = js.native
+    
     var _saveFileAsync: js.Any = js.native
+    
     var _saveImageIntoDBAsync: js.Any = js.native
+    
     var _saveVersionIntoDBAsync: js.Any = js.native
+    
     /**
       * Gets a boolean indicating if scene must be saved in the database
       */
     @JSName("enableSceneOffline")
     def enableSceneOffline_MDatabase: Boolean = js.native
+    
     /**
       * Gets a boolean indicating if textures must be saved in the database
       */
     @JSName("enableTexturesOffline")
     def enableTexturesOffline_MDatabase: Boolean = js.native
   }
-  
   /* static members */
   @js.native
   object Database extends js.Object {
+    
     /**
       * Gets a boolean indicating if Database storate is enabled (off by default)
       */
     var IDBStorageEnabled: Boolean = js.native
+    
     /** Gets a boolean indicating if the user agent supports blob storage (this value will be updated after creating the first Database object) */
     var IsUASupportingBlobStorage: js.Any = js.native
+    
     var _ParseURL: js.Any = js.native
+    
     var _ReturnFullUrlLocation: js.Any = js.native
+    
     /**
       * Validates if xhr data is correct
       * @param xhr defines the request to validate
@@ -71,6 +96,4 @@ object databaseMod extends js.Object {
       */
     var _ValidateXHRData: js.Any = js.native
   }
-  
 }
-

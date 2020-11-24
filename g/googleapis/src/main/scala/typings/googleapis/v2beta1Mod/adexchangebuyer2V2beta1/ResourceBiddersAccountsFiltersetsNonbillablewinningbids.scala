@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts$Filtersets$Nonbillablewinningbids")
 @js.native
 class ResourceBiddersAccountsFiltersetsNonbillablewinningbids protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.nonBillableWinningBids.list
     * @desc List all reasons for which winning bids were not billable, with the
@@ -49,4 +51,3 @@ class ResourceBiddersAccountsFiltersetsNonbillablewinningbids protected () exten
     callback: BodyResponseCallback[SchemaListNonBillableWinningBidsResponse]
   ): Unit = js.native
 }
-

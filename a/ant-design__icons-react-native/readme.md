@@ -10,9 +10,9 @@ Typings are for version 2.2.1
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons-react-native |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 84269 |
+| # releases         | 8 |
+| # dependents       | 5 |
+| # downloads        | 135577 |
 | # stars            | 0 |
 
 ## Links

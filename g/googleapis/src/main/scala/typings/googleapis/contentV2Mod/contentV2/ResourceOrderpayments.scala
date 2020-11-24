@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Orderpayments")
 @js.native
 class ResourceOrderpayments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.orderpayments.notifyauthapproved
     * @desc Notify about successfully authorizing user's payment method for a
@@ -47,6 +49,7 @@ class ResourceOrderpayments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrderpaymentsNotifyAuthApprovedResponse]
   ): Unit = js.native
+  
   /**
     * content.orderpayments.notifyauthdeclined
     * @desc Notify about failure to authorize user's payment method.
@@ -80,6 +83,7 @@ class ResourceOrderpayments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrderpaymentsNotifyAuthDeclinedResponse]
   ): Unit = js.native
+  
   /**
     * content.orderpayments.notifycharge
     * @desc Notify about charge on user's selected payments method.
@@ -113,6 +117,7 @@ class ResourceOrderpayments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrderpaymentsNotifyChargeResponse]
   ): Unit = js.native
+  
   /**
     * content.orderpayments.notifyrefund
     * @desc Notify about refund on user's selected payments method.
@@ -147,4 +152,3 @@ class ResourceOrderpayments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrderpaymentsNotifyRefundResponse]
   ): Unit = js.native
 }
-

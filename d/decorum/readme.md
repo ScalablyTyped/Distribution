@@ -10,9 +10,9 @@ Vanilla, lightweight, simple JavaScript decorators to use in your classes.
 | ------------------ | :-------------: |
 | Full name          | decorum |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 139 |
+| # downloads        | 73 |
 | # stars            | 0 |
 
 ## Links

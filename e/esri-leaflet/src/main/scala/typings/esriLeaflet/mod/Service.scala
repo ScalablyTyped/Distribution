@@ -2,7 +2,7 @@ package typings.esriLeaflet.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A generic class representing a hosted resource on ArcGIS Online or ArcGIS Server. This class can be extended
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Service ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service
-

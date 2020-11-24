@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nodejs-license-file"
-version := "4.0-dt-20200522Z-ed4d65"
+version := "4.0-dt-20200522Z-7f307a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

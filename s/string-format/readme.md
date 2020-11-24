@@ -10,9 +10,9 @@ String formatting inspired by Python's str.format()
 | ------------------ | :-------------: |
 | Full name          | string-format |
 | Keywords           | string, formatting, language, util |
-| # releases         | 3 |
-| # dependents       | 216 |
-| # downloads        | 4729091 |
+| # releases         | 0 |
+| # dependents       | 283 |
+| # downloads        | 5876747 |
 | # stars            | 10 |
 
 ## Links

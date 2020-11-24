@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Location")
 @js.native
@@ -15,13 +15,14 @@ class Location protected () extends js.Object {
     * @param rangeOrPosition The range or position. Positions will be converted to an empty range.
     */
   def this(uri: Uri, rangeOrPosition: Range) = this()
+  
   /**
     * The document range of this location.
     */
   var range: Range = js.native
+  
   /**
     * The resource identifier of this location.
     */
   var uri: Uri = js.native
 }
-

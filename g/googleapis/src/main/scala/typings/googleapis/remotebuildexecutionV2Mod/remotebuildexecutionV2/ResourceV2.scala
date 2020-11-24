@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$V2")
 @js.native
 class ResourceV2 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.getCapabilities
     * @desc GetCapabilities returns the server capabilities configuration.
@@ -45,4 +47,3 @@ class ResourceV2 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ServerCapabilities]
   ): Unit = js.native
 }
-

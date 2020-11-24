@@ -3,19 +3,22 @@ package typings.braintreeWeb.paypalCheckoutMod
 import typings.braintreeWeb.anon.MerchantAccountId
 import typings.braintreeWeb.anon.OptOutOfModalBackdrop
 import typings.braintreeWeb.coreMod.callback
-import typings.paypalCheckoutComponents.callbackDataMod.TokenizePayload
+import typings.paypalCheckoutComponents.callbackDataMod.AuthorizationResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PayPalCheckout extends js.Object {
+  
   /**
     * @description The current version of the SDK, i.e. `3.0.2`.
     */
   var VERSION: String = js.native
+  
   def create(options: MerchantAccountId): Unit = js.native
-  def create(options: MerchantAccountId, callback: callback): Unit = js.native
+  def create(options: MerchantAccountId, callback: callback[_]): Unit = js.native
+  
   /**
     * Creates a PayPal payment ID or billing token using the given options. This is meant to be passed to PayPal's checkout.js library.
     * When a {@link callback} is defined, the function returns undefined and invokes the callback with the id to be used with the checkout.js
@@ -132,7 +135,8 @@ trait PayPalCheckout extends js.Object {
     *
     */
   def createPayment(options: PayPalCheckoutCreatePaymentOptions): js.Promise[String] = js.native
-  def createPayment(options: PayPalCheckoutCreatePaymentOptions, callback: callback): js.Promise[String] = js.native
+  def createPayment(options: PayPalCheckoutCreatePaymentOptions, callback: callback[_]): js.Promise[String] = js.native
+  
   /**
     * @description There are two ways to integrate the PayPal Checkout component.
     * See the [PayPal Checkout constructor documentation](PayPalCheckout.html#PayPalCheckout) for more information and examples.
@@ -151,6 +155,7 @@ trait PayPalCheckout extends js.Object {
     */
   @JSName("create")
   def create_Promise(options: MerchantAccountId): js.Promise[PayPalCheckout] = js.native
+  
   /**
     * Resolves with the PayPal client id to be used when loading the PayPal SDK.     * @example
     * paypalCheckoutInstance.getClientId().then(function (id) {
@@ -166,6 +171,7 @@ trait PayPalCheckout extends js.Object {
     */
   def getClientId(): js.Promise[String] = js.native
   def getClientId(callback: js.Function1[/* id */ String, Unit]): Unit = js.native
+  
   /**
     * Initializes the PayPal checkout flow with a payment method nonce that represents a vaulted PayPal account.
     * When a {@link callback} is defined, the function returns undefined and invokes the callback with the id to be used with the checkout.js library.
@@ -191,7 +197,8 @@ trait PayPalCheckout extends js.Object {
     *
     */
   def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop): js.Promise[Unit] = js.native
-  def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop, callback: callback): Unit = js.native
+  def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop, callback: callback[_]): Unit = js.native
+  
   def teardown(): js.Promise[Unit] = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/paypal-checkout.create|create}.
@@ -203,8 +210,9 @@ trait PayPalCheckout extends js.Object {
     * });
     */
   def teardown(callback: js.Function0[Unit]): Unit = js.native
+  
   def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions): Unit = js.native
-  def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions, callback: callback): Unit = js.native
+  def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions, callback: callback[_]): Unit = js.native
   /**
     * Tokenizes the authorize data from PayPal's checkout.js library when completing a buyer approval flow.
     * When a {@link callback} is defined, invokes the callback with {@link PayPalCheckout~tokenizePayload|tokenizePayload} and returns undefined.
@@ -228,6 +236,5 @@ trait PayPalCheckout extends js.Object {
     *
     */
   @JSName("tokenizePayment")
-  def tokenizePayment_Promise(tokenizeOptions: PayPalCheckoutTokenizationOptions): js.Promise[TokenizePayload] = js.native
+  def tokenizePayment_Promise(tokenizeOptions: PayPalCheckoutTokenizationOptions): js.Promise[AuthorizationResponse] = js.native
 }
-

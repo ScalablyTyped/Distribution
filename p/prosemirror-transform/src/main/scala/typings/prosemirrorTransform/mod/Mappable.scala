@@ -2,10 +2,11 @@ package typings.prosemirrorTransform.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mappable extends js.Object {
+  
   /**
     * Map a position through this object. When given, `assoc` (should
     * be -1 or 1, defaults to 1) determines with which side the
@@ -14,6 +15,7 @@ trait Mappable extends js.Object {
     */
   def map(pos: Double): Double = js.native
   def map(pos: Double, assoc: Double): Double = js.native
+  
   /**
     * Map a position, and return an object containing additional
     * information about the mapping. The result's `deleted` field tells
@@ -25,4 +27,3 @@ trait Mappable extends js.Object {
   def mapResult(pos: Double): MapResult = js.native
   def mapResult(pos: Double, assoc: Double): MapResult = js.native
 }
-

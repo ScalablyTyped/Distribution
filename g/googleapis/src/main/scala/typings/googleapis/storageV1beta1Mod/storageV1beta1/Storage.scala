@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Storage JSON API
@@ -27,10 +27,14 @@ import scala.scalajs.js.annotation._
 class Storage protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var bucketAccessControls: ResourceBucketaccesscontrols = js.native
+  
   var buckets: ResourceBuckets = js.native
+  
   var context: APIRequestContext = js.native
+  
   var objectAccessControls: ResourceObjectaccesscontrols = js.native
+  
   var objects: ResourceObjects = js.native
 }
-

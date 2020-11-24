@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * View dependent part of the Draw and Impress controller.
@@ -20,8 +20,8 @@ trait XDrawSubController
   extends XDrawView
      with XSelectionSupplier
      with XFastPropertySet
-
 object XDrawSubController {
+  
   @scala.inline
   def apply(
     CurrentPage: XDrawPage,
@@ -42,4 +42,3 @@ object XDrawSubController {
     __obj.asInstanceOf[XDrawSubController]
   }
 }
-

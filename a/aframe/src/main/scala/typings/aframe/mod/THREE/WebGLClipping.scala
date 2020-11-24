@@ -2,10 +2,11 @@ package typings.aframe.mod.THREE
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.WebGLClipping")
 @js.native
-class WebGLClipping ()
-  extends typings.three.mod.WebGLClipping
-
+class WebGLClipping protected ()
+  extends typings.three.mod.WebGLClipping {
+  def this(properties: typings.three.webGLPropertiesMod.WebGLProperties) = this()
+}

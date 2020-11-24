@@ -2,11 +2,12 @@ package typings.phaser.phaserMod.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Math.RotateVec3")
 @js.native
 object RotateVec3 extends js.Object {
+  
   /**
     * Rotates a vector in place by axis angle.
     * 
@@ -18,4 +19,3 @@ object RotateVec3 extends js.Object {
     */
   def apply(vec: typings.phaser.Phaser.Math.Vector3, axis: typings.phaser.Phaser.Math.Vector3, radians: Double): typings.phaser.Phaser.Math.Vector3 = js.native
 }
-

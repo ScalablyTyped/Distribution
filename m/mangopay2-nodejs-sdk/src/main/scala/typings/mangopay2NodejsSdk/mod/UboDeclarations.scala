@@ -4,7 +4,7 @@ import typings.mangopay2NodejsSdk.mod.uboDeclaration.UboDeclarationData
 import typings.mangopay2NodejsSdk.mod.uboDeclaration.UpdateUboDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An UBO Declaration is an electronic version of the previous KYC document "Shareholder Declaration", in order to declare all the Ultimate Beneficial Owners of a BUSINESS-typed legal User
@@ -21,20 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mangopay2-nodejs-sdk", "UboDeclarations")
 @js.native
 class UboDeclarations () extends js.Object {
-  /**
-    * Retrieves a UBO declaration object from the API.
-    * @param id
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, UboDeclarationData] = js.native
-  /**
-    * Updates a UBO declaration entity.
-    * @param uboDeclaration Updated UBO declaration entity - must have ID
-    * @param options
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateUboDeclaration, UboDeclarationData] = js.native
+  
   /**
     * Retrieves a UBO declaration object from the API.
     * @param id
@@ -70,6 +57,14 @@ class UboDeclarations () extends js.Object {
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[UboDeclarationData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[UboDeclarationData] = js.native
   /**
+    * Retrieves a UBO declaration object from the API.
+    * @param id
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, UboDeclarationData] = js.native
+  
+  /**
     * Updates a UBO declaration entity.
     * @param uboDeclaration Updated UBO declaration entity - must have ID
     * @param options
@@ -103,5 +98,11 @@ class UboDeclarations () extends js.Object {
     */
   def update(data: UpdateUboDeclaration, options: MethodOptionWithResponse): js.Promise[WithResponse[UboDeclarationData]] = js.native
   def update(data: UpdateUboDeclaration, options: MethodOptionWithoutResponse): js.Promise[UboDeclarationData] = js.native
+  /**
+    * Updates a UBO declaration entity.
+    * @param uboDeclaration Updated UBO declaration entity - must have ID
+    * @param options
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateUboDeclaration, UboDeclarationData] = js.native
 }
-

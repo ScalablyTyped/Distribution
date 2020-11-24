@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Button extends js.Object
-
 /**
   * An enum representing predetermined, localized dialog buttons returned by an alert or PromptResponse.getSelectedButton() to indicate
   * which button in a dialog the user clicked. These values cannot be set; to add buttons to an
@@ -26,6 +25,7 @@ sealed trait Button extends js.Object
 @JSGlobal("GoogleAppsScript.Base.Button")
 @js.native
 object Button extends js.Object {
+  
   @js.native
   sealed trait CANCEL extends Button
   
@@ -40,6 +40,4 @@ object Button extends js.Object {
   
   @js.native
   sealed trait YES extends Button
-  
 }
-

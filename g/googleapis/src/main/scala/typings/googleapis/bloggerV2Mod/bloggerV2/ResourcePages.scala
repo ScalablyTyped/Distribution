@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v2", "blogger_v2.Resource$Pages")
 @js.native
 class ResourcePages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.pages.get
     * @desc Gets one blog page by id.
@@ -38,6 +40,7 @@ class ResourcePages protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourcePagesGet, options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def get(params: ParamsResourcePagesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  
   /**
     * blogger.pages.list
     * @desc Retrieves pages for a blog, possibly filtered.
@@ -68,4 +71,3 @@ class ResourcePages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPageList]
   ): Unit = js.native
 }
-

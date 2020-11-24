@@ -15,12 +15,13 @@ import typings.bingmaps.Microsoft.Maps.IPrimitive
 import typings.bingmaps.Microsoft.Maps.IPrimitiveChangedEventArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A static class that manages events within the map SDK. */
 @JSGlobal("Microsoft.Maps.Events")
 @js.native
 object Events extends js.Object {
+  
   def addHandler(target: js.Any, eventName: String, handler: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): IHandlerId = js.native
   def addHandler(
     target: DirectionsManager,
@@ -77,6 +78,7 @@ object Events extends js.Object {
     eventName: String,
     handler: js.Function1[/* eventArg */ js.UndefOr[IMouseEventArgs | IPrimitiveChangedEventArgs], Unit]
   ): IHandlerId = js.native
+  
   def addOne(target: js.Any, eventName: String, handler: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def addOne(
     target: DirectionsManager,
@@ -133,6 +135,7 @@ object Events extends js.Object {
     eventName: String,
     handler: js.Function1[/* eventArg */ js.UndefOr[IMouseEventArgs | IPrimitiveChangedEventArgs], Unit]
   ): Unit = js.native
+  
   def addThrottledHandler(
     target: js.Any,
     eventName: String,
@@ -202,8 +205,10 @@ object Events extends js.Object {
     handler: js.Function1[/* eventArg */ js.UndefOr[IMouseEventArgs | IPrimitiveChangedEventArgs], Unit],
     throttleInterval: Double
   ): IHandlerId = js.native
+  
   def hasHandler(target: js.Any, eventName: String): Boolean = js.native
+  
   def invoke(target: js.Any, evenName: String, args: js.Any): Unit = js.native
+  
   def removeHandler(handlerId: IHandlerId): Unit = js.native
 }
-

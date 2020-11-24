@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter")
 @js.native
@@ -22,30 +22,33 @@ class LogMetricFilter protected () extends CustomResource {
     */
   def this(name: String, args: LogMetricFilterArgs) = this()
   def this(name: String, args: LogMetricFilterArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The name of the log group to associate the metric filter with.
     */
   val logGroupName: Output_[String] = js.native
+  
   /**
-    * A block defining collection of information
-    * needed to define how metric data gets emitted. See below.
+    * A block defining collection of information needed to define how metric data gets emitted. See below.
     */
   val metricTransformation: Output_[LogMetricFilterMetricTransformation] = js.native
+  
   /**
     * A name for the metric filter.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
     * for extracting metric data out of ingested log events.
     */
   val pattern: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter")
 @js.native
 object LogMetricFilter extends js.Object {
+  
   /**
     * Get an existing LogMetricFilter resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -59,10 +62,10 @@ object LogMetricFilter extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogMetricFilter = js.native
   def get(name: String, id: Input[ID], state: LogMetricFilterState): LogMetricFilter = js.native
   def get(name: String, id: Input[ID], state: LogMetricFilterState, opts: CustomResourceOptions): LogMetricFilter = js.native
+  
   /**
     * Returns true if the given object is an instance of LogMetricFilter.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logMetricFilter.LogMetricFilter */ Boolean = js.native
 }
-

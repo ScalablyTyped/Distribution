@@ -10,9 +10,9 @@ A simple SHA-3 / Keccak / Shake hash function for JavaScript supports UTF-8 enco
 | ------------------ | :-------------: |
 | Full name          | js-sha3 |
 | Keywords           | sha3, keccak, shake, cshake, kmac, hash, encryption, cryptography, HMAC |
-| # releases         | 2 |
-| # dependents       | 405 |
-| # downloads        | 11384606 |
+| # releases         | 0 |
+| # dependents       | 481 |
+| # downloads        | 14968253 |
 | # stars            | 1 |
 
 ## Links

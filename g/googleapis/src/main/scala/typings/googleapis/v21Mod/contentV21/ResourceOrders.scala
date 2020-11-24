@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Orders")
 @js.native
 class ResourceOrders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * content.orders.acknowledge
     * @desc Marks an order as acknowledged.
@@ -46,6 +46,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersAcknowledgeResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.advancetestorder
     * @desc Sandbox only. Moves a test order from state "inProgress" to state
@@ -79,6 +80,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersAdvanceTestOrderResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.cancel
     * @desc Cancels all line items in an order, making a full refund.
@@ -109,6 +111,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersCancelResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.cancellineitem
     * @desc Cancels a line item, making a full refund.
@@ -142,6 +145,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersCancelLineItemResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.canceltestorderbycustomer
     * @desc Sandbox only. Cancels a test order for customer-initiated
@@ -176,6 +180,9 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersCancelTestOrderByCustomerResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * content.orders.createtestorder
     * @desc Sandbox only. Creates a test order.
@@ -208,6 +215,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersCreateTestOrderResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.createtestreturn
     * @desc Sandbox only. Creates a test return.
@@ -241,6 +249,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersCreateTestReturnResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.get
     * @desc Retrieves an order from your Merchant Center account.
@@ -270,6 +279,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrder]
   ): Unit = js.native
+  
   /**
     * content.orders.getbymerchantorderid
     * @desc Retrieves an order using merchant order ID.
@@ -302,6 +312,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersGetByMerchantOrderIdResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.gettestordertemplate
     * @desc Sandbox only. Retrieves an order template that can be used to
@@ -336,6 +347,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersGetTestOrderTemplateResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.instorerefundlineitem
     * @desc Notifies that item return and refund was handled directly by
@@ -377,6 +389,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersInStoreRefundLineItemResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.list
     * @desc Lists the orders in your Merchant Center account.
@@ -412,6 +425,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersListResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.rejectreturnlineitem
     * @desc Rejects return on an line item.
@@ -445,6 +459,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersRejectReturnLineItemResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.returnrefundlineitem
     * @desc Returns and refunds a line item. Note that this method can only be
@@ -479,6 +494,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersReturnRefundLineItemResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.setlineitemmetadata
     * @desc Sets (or overrides if it already exists) merchant provided
@@ -516,6 +532,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersSetLineItemMetadataResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.shiplineitems
     * @desc Marks line item(s) as shipped.
@@ -549,6 +566,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersShipLineItemsResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.updatelineitemshippingdetails
     * @desc Updates ship by and delivery by dates for a line item.
@@ -582,6 +600,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersUpdateLineItemShippingDetailsResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.updatemerchantorderid
     * @desc Updates the merchant order ID for a given order.
@@ -615,6 +634,7 @@ class ResourceOrders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrdersUpdateMerchantOrderIdResponse]
   ): Unit = js.native
+  
   /**
     * content.orders.updateshipment
     * @desc Updates a shipment's status, carrier, and/or tracking ID.
@@ -649,4 +669,3 @@ class ResourceOrders protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOrdersUpdateShipmentResponse]
   ): Unit = js.native
 }
-

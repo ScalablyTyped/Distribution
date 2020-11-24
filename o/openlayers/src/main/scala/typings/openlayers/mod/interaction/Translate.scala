@@ -6,7 +6,7 @@ import typings.openlayers.mod.Feature
 import typings.openlayers.mod.olx.interaction.TranslateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -29,10 +29,10 @@ class Translate protected () extends Pointer {
     */
   def this(options: TranslateOptions) = this()
 }
-
 @JSImport("openlayers", "interaction.Translate")
 @js.native
 object Translate extends js.Object {
+  
   /**
     * @classdesc
     * Events emitted by {@link ol.interaction.Translate} instances are instances of
@@ -55,18 +55,18 @@ object Translate extends js.Object {
       * @param coordinate The event coordinate.
       */
     def this(`type`: TranslateEventType, features: Collection[Feature], coordinate: Coordinate_) = this()
+    
     /**
       * The coordinate of the drag event.
       * @const
       * @api
       */
     var coordinate: Coordinate_ = js.native
+    
     /**
       * The features being translated.
       * @api
       */
     var features: Collection[Feature] = js.native
   }
-  
 }
-

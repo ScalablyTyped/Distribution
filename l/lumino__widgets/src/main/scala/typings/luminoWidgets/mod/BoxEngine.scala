@@ -3,11 +3,12 @@ package typings.luminoWidgets.mod
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "BoxEngine")
 @js.native
 object BoxEngine extends js.Object {
+  
   /**
     * Adjust a sizer by a delta and update its neighbors accordingly.
     *
@@ -26,6 +27,7 @@ object BoxEngine extends js.Object {
     * between the sizers are interactively adjustable by the user.
     */
   def adjust(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], index: Double, delta: Double): Unit = js.native
+  
   /**
     * Calculate the optimal layout sizes for a sequence of box sizers.
     *
@@ -90,4 +92,3 @@ object BoxEngine extends js.Object {
     */
   def calc(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], space: Double): Double = js.native
 }
-

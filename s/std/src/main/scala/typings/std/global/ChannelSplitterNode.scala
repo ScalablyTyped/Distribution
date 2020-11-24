@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.ChannelSplitterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ChannelSplitterNode")
 @js.native
@@ -14,7 +14,6 @@ class ChannelSplitterNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: ChannelSplitterOptions) = this()
 }
-
 @JSGlobal("ChannelSplitterNode")
 @js.native
 object ChannelSplitterNode
@@ -24,4 +23,3 @@ object ChannelSplitterNode
       /* options */ ChannelSplitterOptions, 
       typings.std.ChannelSplitterNode
     ]
-

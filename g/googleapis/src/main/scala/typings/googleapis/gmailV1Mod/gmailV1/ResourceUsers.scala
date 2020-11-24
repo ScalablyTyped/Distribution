@@ -6,19 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users")
 @js.native
 class ResourceUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var drafts: ResourceUsersDrafts = js.native
-  var history: ResourceUsersHistory = js.native
-  var labels: ResourceUsersLabels = js.native
-  var messages: ResourceUsersMessages = js.native
-  var settings: ResourceUsersSettings = js.native
-  var threads: ResourceUsersThreads = js.native
+  
   /**
     * gmail.users.getProfile
     * @desc Gets the current user's Gmail profile.
@@ -47,6 +45,15 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfile]
   ): Unit = js.native
+  
+  var history: ResourceUsersHistory = js.native
+  
+  var labels: ResourceUsersLabels = js.native
+  
+  var messages: ResourceUsersMessages = js.native
+  
+  var settings: ResourceUsersSettings = js.native
+  
   /**
     * gmail.users.stop
     * @desc Stop receiving push notifications for the given user mailbox.
@@ -71,6 +78,9 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def stop(params: ParamsResourceUsersStop, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceUsersStop, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
+  var threads: ResourceUsersThreads = js.native
+  
   /**
     * gmail.users.watch
     * @desc Set up or update a push notification watch on the given user
@@ -102,4 +112,3 @@ class ResourceUsers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWatchResponse]
   ): Unit = js.native
 }
-

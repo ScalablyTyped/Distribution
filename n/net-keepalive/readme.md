@@ -1,7 +1,7 @@
 
 # Scala.js typings for net-keepalive
 
-Typings are for version 1.3.6
+Typings are for version 1.4.0
 
 ## Library description:
 Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, TCP_KEEPCNT
@@ -10,9 +10,9 @@ Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, T
 | ------------------ | :-------------: |
 | Full name          | net-keepalive |
 | Keywords           | ffi, setsockopt, getsockopt, ref, net, keep-alive, keepalive, keep alive, keep, alive, tcp |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 31612 |
+| # releases         | 9 |
+| # dependents       | 9 |
+| # downloads        | 64365 |
 | # stars            | 2 |
 
 ## Links

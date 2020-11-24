@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateConstructor")
 @js.native
 object updateConstructor extends js.Object {
+  
   def apply(
     node: ConstructorDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -46,6 +47,7 @@ object updateConstructor extends js.Object {
     parameters: js.Array[ParameterDeclaration],
     body: Block
   ): ConstructorDeclaration = js.native
+  /** @deprecated Use `factory.updateConstructorDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: ConstructorDeclaration,
     decorators: js.Array[Decorator],
@@ -60,4 +62,3 @@ object updateConstructor extends js.Object {
     body: Block
   ): ConstructorDeclaration = js.native
 }
-

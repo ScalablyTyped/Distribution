@@ -2,14 +2,14 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCodes extends js.Object
-
 @JSGlobal("Excel.ErrorCodes")
 @js.native
 object ErrorCodes extends js.Object {
+  
   @js.native
   sealed trait accessDenied extends ErrorCodes
   
@@ -20,7 +20,13 @@ object ErrorCodes extends js.Object {
   sealed trait conflict extends ErrorCodes
   
   @js.native
+  sealed trait filteredRangeConflict extends ErrorCodes
+  
+  @js.native
   sealed trait generalException extends ErrorCodes
+  
+  @js.native
+  sealed trait inactiveWorkbook extends ErrorCodes
   
   @js.native
   sealed trait insertDeleteConflict extends ErrorCodes
@@ -56,6 +62,9 @@ object ErrorCodes extends js.Object {
   sealed trait notImplemented extends ErrorCodes
   
   @js.native
+  sealed trait pivotTableRangeConflict extends ErrorCodes
+  
+  @js.native
   sealed trait rangeExceedsLimit extends ErrorCodes
   
   @js.native
@@ -66,6 +75,4 @@ object ErrorCodes extends js.Object {
   
   @js.native
   sealed trait unsupportedSheet extends ErrorCodes
-  
 }
-

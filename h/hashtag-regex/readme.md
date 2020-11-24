@@ -10,9 +10,9 @@ A regular expression to match hashtag identifiers as per the Unicode Standard.
 | ------------------ | :-------------: |
 | Full name          | hashtag-regex |
 | Keywords           | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji, hashtag, hashtags |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 79645 |
+| # releases         | 3 |
+| # dependents       | 9 |
+| # downloads        | 143468 |
 | # stars            | 0 |
 
 ## Links

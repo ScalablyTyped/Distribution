@@ -2,7 +2,7 @@ package typings.elasticJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SignificantTermsAggregation")
 @js.native
@@ -12,10 +12,12 @@ class SignificantTermsAggregation protected () extends Aggregation {
     a set.
     */
   def this(name: String) = this()
+  
   /*
     The type of ejs object.  For internal use only.
     */
   def _type(): String = js.native
+  
   /*
     Add a nested aggregation.  This method can be called multiple times
     in order to set multiple nested aggregations what will be executed
@@ -23,12 +25,14 @@ class SignificantTermsAggregation protected () extends Aggregation {
     aggregation method.
     */
   def agg(agg: Aggregation): SignificantTermsAggregation = js.native
+  
   /*
     Add a nested aggregation.  This method can be called multiple times
     in order to set multiple nested aggregations what will be executed
     at the same time as the parent aggregation.
     */
   def aggregation(agg: Aggregation): SignificantTermsAggregation = js.native
+  
   /*
     Allows you to filter out unwanted facet entries using a regular
     expression.  You can also optionally pass in a set of flags to apply
@@ -38,20 +42,24 @@ class SignificantTermsAggregation protected () extends Aggregation {
     character.
     */
   def exclude(exclude: String, flags: String): SignificantTermsAggregation = js.native
+  
   /*
     Sets the execution hint determines how the aggregation is computed.
     Supported values are: map and ordinals.
     */
   def executionHint(h: String): SignificantTermsAggregation = js.native
+  
   /*
     Sets the field to gather terms from.
     */
   def field(field: String): SignificantTermsAggregation = js.native
+  
   /*
     Sets the format expression for the terms.  Use for number or date
     formatting.
     */
   def format(f: String): SignificantTermsAggregation = js.native
+  
   /*
     Allows you to allow only specific entries using a regular
     expression.  You can also optionally pass in a set of flags to apply
@@ -61,23 +69,26 @@ class SignificantTermsAggregation protected () extends Aggregation {
     character.
     */
   def include(include: String, flags: String): SignificantTermsAggregation = js.native
+  
   /*
     Only return terms that match more than a configured number of hits.
     */
   def minDocCount(num: Double): SignificantTermsAggregation = js.native
+  
   /*
     Determines how many terms the coordinating node will request from
     each shard.
     */
   def shardSize(shardSize: Double): SignificantTermsAggregation = js.native
+  
   /*
     Sets the number of aggregation entries that will be returned.
     */
   def size(size: Double): SignificantTermsAggregation = js.native
+  
   /*
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
   def toJSON(): js.Any = js.native
 }
-

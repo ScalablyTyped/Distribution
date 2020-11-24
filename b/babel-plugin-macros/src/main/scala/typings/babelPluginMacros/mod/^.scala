@@ -5,11 +5,11 @@ import typings.babelCore.mod.PluginPass
 import typings.babelPluginMacros.anon.TypeofBabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-macros", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(babel: TypeofBabel, options: js.Any): PluginObj[PluginPass] = js.native
 }
-

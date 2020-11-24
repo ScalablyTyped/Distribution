@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@date-fns/upgrade" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@date-fns/upgrade" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

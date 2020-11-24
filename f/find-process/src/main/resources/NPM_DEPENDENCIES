@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "find-process" : "1.4.3"
+      "find-process" : "1.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "find-process" : "1.4.3"
+      "find-process" : "1.4.4"
     }
   ],
   "compile-devDependencies" : [

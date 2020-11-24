@@ -3,11 +3,12 @@ package typings.when.global.When
 import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("When.unfold")
 @js.native
 object unfold extends js.Object {
+  
   /**
     * Similar to when/iterate, when.unfold generates a potentially infinite stream of promises by repeatedly calling
     * unspool until predicate becomes true. when.unfold allows you to thread additional state information through the iteration.
@@ -39,4 +40,3 @@ object unfold extends js.Object {
     seed: Promise[U]
   ): Promise[Unit] = js.native
 }
-

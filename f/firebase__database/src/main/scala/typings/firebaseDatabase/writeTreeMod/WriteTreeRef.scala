@@ -8,7 +8,7 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTreeRef")
 @js.native
@@ -18,27 +18,7 @@ class WriteTreeRef protected () extends js.Object {
     * @param {!WriteTree} writeTree
     */
   def this(path: Path, writeTree: WriteTree) = this()
-  /**
-    * The path to this particular write tree ref. Used for calling methods on writeTree_ while exposing a simpler
-    * interface to callers.
-    *
-    * @type {!Path}
-    * @private
-    * @const
-    */
-  val treePath_ : js.Any = js.native
-  /**
-    * * A reference to the actual tree of write data. All methods are pass-through to the tree, but with the appropriate
-    * path prefixed.
-    *
-    * This lets us make cheap references to points in the tree for sync points without having to copy and maintain all of
-    * the data.
-    *
-    * @type {!WriteTree}
-    * @private
-    * @const
-    */
-  val writeTree_ : js.Any = js.native
+  
   /**
     * Returns a complete child for a given server snap after applying all user writes or null if there is no
     * complete child for this ChildKey.
@@ -48,6 +28,7 @@ class WriteTreeRef protected () extends js.Object {
     * @return {?Node}
     */
   def calcCompleteChild(childKey: String, existingServerCache: CacheNode): Node | Null = js.native
+  
   /**
     * If possible, returns a complete event cache, using the underlying server data if possible. In addition, can be used
     * to get a cache that includes hidden writes, and excludes arbitrary writes. Note that customizing the returned node
@@ -74,6 +55,7 @@ class WriteTreeRef protected () extends js.Object {
   ): Node | Null = js.native
   def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
   def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: js.Array[Double], includeHiddenWrites: Boolean): Node | Null = js.native
+  
   /**
     * If possible, returns a children node containing all of the complete children we have data for. The returned data is a
     * mix of the given server data and write data.
@@ -83,6 +65,7 @@ class WriteTreeRef protected () extends js.Object {
     */
   def calcCompleteEventChildren(): ChildrenNode = js.native
   def calcCompleteEventChildren(completeServerChildren: ChildrenNode): ChildrenNode = js.native
+  
   /**
     * Given that either the underlying server data has updated or the outstanding writes have updated, determine what,
     * if anything, needs to be applied to the event cache.
@@ -106,6 +89,7 @@ class WriteTreeRef protected () extends js.Object {
   def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Null, existingServerSnap: Node): Node | Null = js.native
   def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Node): Node | Null = js.native
   def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Node, existingServerSnap: Node): Node | Null = js.native
+  
   def calcIndexedSlice(completeServerData: Null, startPost: NamedNode, count: Double, reverse: Boolean, index: Index): js.Array[NamedNode] = js.native
   /**
     * This method is used when processing child remove events on a query. If we can, we pull in children that were outside
@@ -119,6 +103,7 @@ class WriteTreeRef protected () extends js.Object {
     * @return {!Array.<!NamedNode>}
     */
   def calcIndexedSlice(completeServerData: Node, startPost: NamedNode, count: Double, reverse: Boolean, index: Index): js.Array[NamedNode] = js.native
+  
   /**
     * Return a WriteTreeRef for a child.
     *
@@ -126,6 +111,7 @@ class WriteTreeRef protected () extends js.Object {
     * @return {!WriteTreeRef}
     */
   def child(childName: String): WriteTreeRef = js.native
+  
   /**
     * Returns a node if there is a complete overwrite for this path. More specifically, if there is a write at
     * a higher path, this will return the child of that write relative to the write and this path.
@@ -135,5 +121,27 @@ class WriteTreeRef protected () extends js.Object {
     * @return {?Node}
     */
   def shadowingWrite(path: Path): Node | Null = js.native
+  
+  /**
+    * The path to this particular write tree ref. Used for calling methods on writeTree_ while exposing a simpler
+    * interface to callers.
+    *
+    * @type {!Path}
+    * @private
+    * @const
+    */
+  val treePath_ : js.Any = js.native
+  
+  /**
+    * * A reference to the actual tree of write data. All methods are pass-through to the tree, but with the appropriate
+    * path prefixed.
+    *
+    * This lets us make cheap references to points in the tree for sync points without having to copy and maintain all of
+    * the data.
+    *
+    * @type {!WriteTree}
+    * @private
+    * @const
+    */
+  val writeTree_ : js.Any = js.native
 }
-

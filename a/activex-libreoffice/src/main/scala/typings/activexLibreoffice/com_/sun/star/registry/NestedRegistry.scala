@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * supports a shared view on two different registries. The registry files will be opened in two different modes, registry1 will be opened with read/write
@@ -53,8 +53,8 @@ import scala.scalajs.js.annotation._
 trait NestedRegistry
   extends XSimpleRegistry
      with XInitialization
-
 object NestedRegistry {
+  
   @scala.inline
   def apply(
     RootKey: XRegistryKey,
@@ -76,4 +76,3 @@ object NestedRegistry {
     __obj.asInstanceOf[NestedRegistry]
   }
 }
-

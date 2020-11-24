@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DOM Element Game Objects are a way to control and manipulate HTML Elements over the top of your game.
@@ -84,4 +84,3 @@ class DOMElement protected ()
     innerText: js.UndefOr[String]
   ) = this()
 }
-

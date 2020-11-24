@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/texttospeech/v1beta1", "texttospeech_v1beta1.Resource$Voices")
 @js.native
 class ResourceVoices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * texttospeech.voices.list
     * @desc Returns a list of Voice supported for synthesis.
@@ -42,4 +44,3 @@ class ResourceVoices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListVoicesResponse]
   ): Unit = js.native
 }
-

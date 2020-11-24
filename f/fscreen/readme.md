@@ -11,14 +11,14 @@ fullscreen spec api in a vendor agnostic wrapper
 | Full name          | fscreen |
 | Keywords           | fullscreen, browser |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 784496 |
+| # dependents       | 26 |
+| # downloads        | 2031972 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/rafrex/fscreen#readme)
-- [Bugs](https://github.com/rafrex/fscreen/issues)
-- [Repository](https://github.com/rafrex/fscreen)
+- [Homepage](https://github.com/rafgraph/fscreen#readme)
+- [Bugs](https://github.com/rafgraph/fscreen/issues)
+- [Repository](https://github.com/rafgraph/fscreen)
 - [Npm](https://www.npmjs.com/package/fscreen)
     
 

@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.SpatialMath
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DistanceUnits extends js.Object
-
 @JSGlobal("Microsoft.Maps.SpatialMath.DistanceUnits")
 @js.native
 object DistanceUnits extends js.Object {
+  
   /** A distance in Feet */
   @js.native
   sealed trait Feet extends DistanceUnits
@@ -33,6 +33,4 @@ object DistanceUnits extends js.Object {
   /** A distance in Yards */
   @js.native
   sealed trait Yards extends DistanceUnits
-  
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper class to create a shader program.
@@ -22,11 +22,11 @@ class Program ()
   def this(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], name: String) = this()
   def this(vertexSrc: String, fragmentSrc: String, name: String) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Program")
 @js.native
 object Program extends js.Object {
+  
   /**
     * The default fragment shader source
     *
@@ -35,6 +35,7 @@ object Program extends js.Object {
     * @member {string}
     */
   var defaultFragmentSrc: String = js.native
+  
   /**
     * The default vertex shader source
     *
@@ -43,6 +44,7 @@ object Program extends js.Object {
     * @member {string}
     */
   var defaultVertexSrc: String = js.native
+  
   /**
     * A short hand function to create a program based of a vertex and fragment shader
     * this method will also check to see if there is a cached program.
@@ -62,4 +64,3 @@ object Program extends js.Object {
   def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Program = js.native
   def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = js.native
 }
-

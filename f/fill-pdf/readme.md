@@ -12,7 +12,7 @@ Fill out pdf forms
 | Keywords           | pdf, fdf, utf8, pdftk |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 146988 |
+| # downloads        | 936643 |
 | # stars            | 2 |
 
 ## Links

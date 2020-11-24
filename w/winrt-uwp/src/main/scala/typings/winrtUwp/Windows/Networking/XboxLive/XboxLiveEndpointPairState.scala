@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.XboxLive
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait XboxLiveEndpointPairState extends js.Object
-
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairState")
 @js.native
 object XboxLiveEndpointPairState extends js.Object {
+  
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
   sealed trait creatingInbound extends XboxLiveEndpointPairState
@@ -38,6 +38,4 @@ object XboxLiveEndpointPairState extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
   sealed trait remoteEndpointTerminating extends XboxLiveEndpointPairState
-  
 }
-

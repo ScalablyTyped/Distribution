@@ -4,11 +4,12 @@ import typings.rxjs.typesMod.SubscriptionLike
 import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Subscription", JSImport.Namespace)
 @js.native
 object subscriptionMod extends js.Object {
+  
   @js.native
   /**
     * @param {function(): void} [unsubscribe] A function describing how to
@@ -16,10 +17,13 @@ object subscriptionMod extends js.Object {
     */
   class Subscription () extends SubscriptionLike {
     def this(unsubscribe: js.Function0[Unit]) = this()
+    
     /** @internal */
     var _parentOrParents: Subscription | js.Array[Subscription] = js.native
+    
     /** @internal */
     var _subscriptions: js.Any = js.native
+    
     /**
       * Adds a tear down to be called during the unsubscribe() of this
       * Subscription. Can also be used to add a child subscription.
@@ -41,6 +45,7 @@ object subscriptionMod extends js.Object {
       * list.
       */
     def add(teardown: TeardownLogic): Subscription = js.native
+    
     /**
       * Removes a Subscription from the internal list of subscriptions that will
       * unsubscribe during the unsubscribe process of this Subscription.
@@ -49,13 +54,11 @@ object subscriptionMod extends js.Object {
       */
     def remove(subscription: Subscription): Unit = js.native
   }
-  
   /* static members */
   @js.native
   object Subscription extends js.Object {
+    
     /** @nocollapse */
     var EMPTY: Subscription = js.native
   }
-  
 }
-

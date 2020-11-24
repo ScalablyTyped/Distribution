@@ -2,7 +2,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Guid")
 @js.native
@@ -14,10 +14,10 @@ class Guid protected () extends AttributeBase {
     */
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, value: java.lang.String) = this()
+  
   /**
     * Sets the value of a Guid attribute.
     * @param value The value to set.
     */
   def setValue(value: java.lang.String): Unit = js.native
 }
-

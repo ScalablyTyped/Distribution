@@ -14,12 +14,12 @@ import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojInputPasswordSettableProperties extends inputBaseSettableProperties[String | Null, String | Null, String | Null]
-
 object ojInputPasswordSettableProperties {
+  
   @scala.inline
   def apply(
     asyncValidators: js.Array[AsyncValidator[String | Null]],
@@ -41,4 +41,3 @@ object ojInputPasswordSettableProperties {
     __obj.asInstanceOf[ojInputPasswordSettableProperties]
   }
 }
-

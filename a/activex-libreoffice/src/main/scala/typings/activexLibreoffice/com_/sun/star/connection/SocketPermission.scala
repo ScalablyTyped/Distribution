@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.connection
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This permission represents access to a network via sockets. A {@link SocketPermission} consists of a host specification and a set of actions
@@ -22,34 +22,40 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SocketPermission extends js.Object {
+  
   /** comma separated actions list */
   var Actions: String = js.native
+  
   /** target host with optional portrange */
   var Host: String = js.native
 }
-
 object SocketPermission {
+  
   @scala.inline
   def apply(Actions: String, Host: String): SocketPermission = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketPermission]
   }
+  
   @scala.inline
   implicit class SocketPermissionOps[Self <: SocketPermission] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActions(value: String): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHost(value: String): Self = this.set("Host", value.asInstanceOf[js.Any])
   }
-  
 }
-

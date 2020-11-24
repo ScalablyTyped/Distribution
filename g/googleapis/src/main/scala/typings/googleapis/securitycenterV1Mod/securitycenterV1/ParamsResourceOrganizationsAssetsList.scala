@@ -6,14 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * When compare_duration is set, the ListAssetsResult's "state_change"
     * attribute is updated to indicate whether the asset was added, removed, or
@@ -35,11 +37,13 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * read_time.
     */
   var compareDuration: js.UndefOr[String] = js.native
+  
   /**
     * Optional.  A field mask to specify the ListAssetsResult fields to be
     * listed in the response. An empty field mask will list all fields.
     */
   var fieldMask: js.UndefOr[String] = js.native
+  
   /**
     * Expression that defines the filter to apply across assets. The expression
     * is a list of zero or more restrictions combined via logical operators
@@ -64,6 +68,7 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * `resource_properties.size = 100` is a valid filter string.
     */
   var filter: js.UndefOr[String] = js.native
+  
   /**
     * Expression that defines what fields and order to use for sorting. The
     * string value should follow SQL syntax: comma separated list of fields.
@@ -80,22 +85,26 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     * security_center_properties.resource_type
     */
   var orderBy: js.UndefOr[String] = js.native
+  
   /**
     * The maximum number of results to return in a single response. Default is
     * 10, minimum is 1, maximum is 1000.
     */
   var pageSize: js.UndefOr[Double] = js.native
+  
   /**
     * The value returned by the last `ListAssetsResponse`; indicates that this
     * is a continuation of a prior `ListAssets` call, and that the system
     * should return the next page of data.
     */
   var pageToken: js.UndefOr[String] = js.native
+  
   /**
     * Name of the organization assets should belong to. Its format is
     * "organizations/[organization_id]".
     */
   var parent: js.UndefOr[String] = js.native
+  
   /**
     * Time used as a reference point when filtering assets. The filter is
     * limited to assets existing at the supplied time and their values are
@@ -104,61 +113,81 @@ trait ParamsResourceOrganizationsAssetsList extends StandardParameters {
     */
   var readTime: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceOrganizationsAssetsList {
+  
   @scala.inline
   def apply(): ParamsResourceOrganizationsAssetsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrganizationsAssetsList]
   }
+  
   @scala.inline
   implicit class ParamsResourceOrganizationsAssetsListOps[Self <: ParamsResourceOrganizationsAssetsList] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setCompareDuration(value: String): Self = this.set("compareDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompareDuration: Self = this.set("compareDuration", js.undefined)
+    
     @scala.inline
     def setFieldMask(value: String): Self = this.set("fieldMask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFieldMask: Self = this.set("fieldMask", js.undefined)
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    
     @scala.inline
     def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageSize: Self = this.set("pageSize", js.undefined)
+    
     @scala.inline
     def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageToken: Self = this.set("pageToken", js.undefined)
+    
     @scala.inline
     def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParent: Self = this.set("parent", js.undefined)
+    
     @scala.inline
     def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReadTime: Self = this.set("readTime", js.undefined)
   }
-  
 }
-

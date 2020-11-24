@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocketErrorStatus extends js.Object
-
 /** Specifies status values for a socket operation. */
 @JSGlobal("Windows.Networking.Sockets.SocketErrorStatus")
 @js.native
 object SocketErrorStatus extends js.Object {
+  
   /** The address is already in use. */
   @js.native
   sealed trait addressAlreadyInUse extends SocketErrorStatus
@@ -134,6 +134,4 @@ object SocketErrorStatus extends js.Object {
   /** The host is unreachable. */
   @js.native
   sealed trait unreachableHost extends SocketErrorStatus
-  
 }
-

@@ -6,28 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceBeaconsList extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * The maximum number of records to return for this request, up to a
     * server-defined upper limit.
     */
   var pageSize: js.UndefOr[Double] = js.native
+  
   /**
     * A pagination token obtained from a previous request to list beacons.
     */
   var pageToken: js.UndefOr[String] = js.native
+  
   /**
     * The project id to list beacons under. If not present then the project
     * credential that made the request is used as the project. Optional.
     */
   var projectId: js.UndefOr[String] = js.native
+  
   /**
     * Filter query string that supports the following field filters:  *
     * **description:`"<string>"`**   For example: **description:"Room 3"**
@@ -82,45 +87,57 @@ trait ParamsResourceBeaconsList extends StandardParameters {
     */
   var q: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceBeaconsList {
+  
   @scala.inline
   def apply(): ParamsResourceBeaconsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBeaconsList]
   }
+  
   @scala.inline
   implicit class ParamsResourceBeaconsListOps[Self <: ParamsResourceBeaconsList] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageSize: Self = this.set("pageSize", js.undefined)
+    
     @scala.inline
     def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageToken: Self = this.set("pageToken", js.undefined)
+    
     @scala.inline
     def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProjectId: Self = this.set("projectId", js.undefined)
+    
     @scala.inline
     def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQ: Self = this.set("q", js.undefined)
   }
-  
 }
-

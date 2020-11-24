@@ -15,11 +15,12 @@ import typings.topojsonSpecification.mod.Properties
 import typings.topojsonSpecification.mod.Topology
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("topojson", "feature")
 @js.native
 object feature extends js.Object {
+  
   def apply[P](topology: Topology[Objects[Properties]], `object`: GeometryCollection[P]): FeatureCollection[GeometryObject, P] = js.native
   def apply[P](
     topology: Topology[Objects[Properties]],
@@ -32,4 +33,3 @@ object feature extends js.Object {
   def apply[P](topology: Topology[Objects[Properties]], `object`: Point[P]): Feature[typings.geojson.mod.Point, P] = js.native
   def apply[P](topology: Topology[Objects[Properties]], `object`: Polygon[P]): Feature[typings.geojson.mod.Polygon, P] = js.native
 }
-

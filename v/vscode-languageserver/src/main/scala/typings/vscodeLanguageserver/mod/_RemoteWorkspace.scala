@@ -4,14 +4,11 @@ import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait _RemoteWorkspace extends js.Object {
-  /**
-    * The connection this remote is attached to.
-    */
-  var connection: IConnection = js.native
+  
   /**
     * Applies a `WorkspaceEdit` to the workspace
     * @param param the workspace edit params.
@@ -19,5 +16,9 @@ trait _RemoteWorkspace extends js.Object {
     */
   def applyEdit(paramOrEdit: ApplyWorkspaceEditParams): js.Promise[ApplyWorkspaceEditResponse] = js.native
   def applyEdit(paramOrEdit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit): js.Promise[ApplyWorkspaceEditResponse] = js.native
+  
+  /**
+    * The connection this remote is attached to.
+    */
+  var connection: IConnection = js.native
 }
-

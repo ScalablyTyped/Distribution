@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Sitemaps")
 @js.native
 class ResourceSitemaps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * webmasters.sitemaps.delete
     * @desc Deletes a sitemap from this site.
@@ -38,6 +40,7 @@ class ResourceSitemaps protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceSitemapsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSitemapsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * webmasters.sitemaps.get
     * @desc Retrieves information about a specific sitemap.
@@ -67,6 +70,7 @@ class ResourceSitemaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWmxSitemap]
   ): Unit = js.native
+  
   /**
     * webmasters.sitemaps.list
     * @desc Lists the sitemaps-entries submitted for this site, or included in
@@ -97,6 +101,7 @@ class ResourceSitemaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSitemapsListResponse]
   ): Unit = js.native
+  
   /**
     * webmasters.sitemaps.submit
     * @desc Submits a sitemap for a site.
@@ -123,4 +128,3 @@ class ResourceSitemaps protected () extends js.Object {
   def submit(params: ParamsResourceSitemapsSubmit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def submit(params: ParamsResourceSitemapsSubmit, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
 }
-

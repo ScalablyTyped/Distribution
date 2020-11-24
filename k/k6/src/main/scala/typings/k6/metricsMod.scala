@@ -3,11 +3,12 @@ package typings.k6
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/metrics", JSImport.Namespace)
 @js.native
 object metricsMod extends js.Object {
+  
   @js.native
   class Counter () extends Metric
   
@@ -22,6 +23,7 @@ object metricsMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, isTime: Boolean) = this()
+    
     def add(value: Boolean): Unit = js.native
     def add(value: Boolean, tags: StringDictionary[String]): Unit = js.native
     /**
@@ -38,6 +40,4 @@ object metricsMod extends js.Object {
   
   @js.native
   class Trend () extends Metric
-  
 }
-

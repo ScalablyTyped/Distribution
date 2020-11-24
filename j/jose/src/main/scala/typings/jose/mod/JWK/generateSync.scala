@@ -5,11 +5,12 @@ import typings.jose.mod.Curves
 import typings.jose.mod.keyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jose", "JWK.generateSync")
 @js.native
 object generateSync extends js.Object {
+  
   def apply(kty: keyType): Key = js.native
   def apply(
     kty: keyType,
@@ -33,4 +34,3 @@ object generateSync extends js.Object {
   def apply(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): Key = js.native
   def apply(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): Key = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.cordovaPluginWebsql
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SqlTransaction extends js.Object {
+  
   /**
     * Executes SQL statement via current transaction.
     * @param sql SQL statement to execute.
@@ -50,4 +51,3 @@ trait SqlTransaction extends js.Object {
     errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, _]
   ): Unit = js.native
 }
-

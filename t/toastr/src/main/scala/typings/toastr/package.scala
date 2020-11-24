@@ -2,9 +2,10 @@ package typings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object toastr {
+  
   type ToastrDisplayMethod = js.Function3[
     /* message */ java.lang.String, 
     /* title */ js.UndefOr[java.lang.String], 

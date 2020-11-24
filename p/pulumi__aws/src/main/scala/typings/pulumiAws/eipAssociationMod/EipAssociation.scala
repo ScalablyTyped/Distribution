@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation")
 @js.native
@@ -23,15 +23,18 @@ class EipAssociation protected () extends CustomResource {
   def this(name: String, args: EipAssociationArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: EipAssociationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The allocation ID. This is required for EC2-VPC.
     */
   val allocationId: Output_[String] = js.native
+  
   /**
     * Whether to allow an Elastic IP to
     * be re-associated. Defaults to `true` in VPC.
     */
   val allowReassociation: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * The ID of the instance. This is required for
     * EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
@@ -39,12 +42,14 @@ class EipAssociation protected () extends CustomResource {
     * instance ID unless exactly one network interface is attached.
     */
   val instanceId: Output_[String] = js.native
+  
   /**
     * The ID of the network interface. If the
     * instance has more than one network interface, you must specify a network
     * interface ID.
     */
   val networkInterfaceId: Output_[String] = js.native
+  
   /**
     * The primary or secondary private IP address
     * to associate with the Elastic IP address. If no private IP address is
@@ -52,16 +57,17 @@ class EipAssociation protected () extends CustomResource {
     * address.
     */
   val privateIpAddress: Output_[String] = js.native
+  
   /**
     * The Elastic IP address. This is required for EC2-Classic.
     */
   val publicIp: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation")
 @js.native
 object EipAssociation extends js.Object {
+  
   /**
     * Get an existing EipAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -75,10 +81,10 @@ object EipAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EipAssociation = js.native
   def get(name: String, id: Input[ID], state: EipAssociationState): EipAssociation = js.native
   def get(name: String, id: Input[ID], state: EipAssociationState, opts: CustomResourceOptions): EipAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of EipAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean = js.native
 }
-

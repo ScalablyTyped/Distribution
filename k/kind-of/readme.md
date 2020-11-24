@@ -10,9 +10,9 @@ Get the native type of a value.
 | ------------------ | :-------------: |
 | Full name          | kind-of |
 | Keywords           | arguments, array, boolean, check, date, function, is, is-type, is-type-of, kind, kind-of, number, object, of, regexp, string, test, type, type-of, typeof, types |
-| # releases         | 0 |
-| # dependents       | 280 |
-| # downloads        | 1945189959 |
+| # releases         | 2 |
+| # dependents       | 386 |
+| # downloads        | 2644263236 |
 | # stars            | 26 |
 
 ## Links

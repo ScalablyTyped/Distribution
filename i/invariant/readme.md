@@ -1,7 +1,7 @@
 
 # Scala.js typings for invariant
 
-Typings are for version 2.2.4
+Typings are for version 2.2
 
 ## Library description:
 invariant
@@ -10,9 +10,9 @@ invariant
 | ------------------ | :-------------: |
 | Full name          | invariant |
 | Keywords           | test, invariant |
-| # releases         | 3 |
-| # dependents       | 2641 |
-| # downloads        | 387227842 |
+| # releases         | 1 |
+| # dependents       | 2901 |
+| # downloads        | 482941712 |
 | # stars            | 24 |
 
 ## Links

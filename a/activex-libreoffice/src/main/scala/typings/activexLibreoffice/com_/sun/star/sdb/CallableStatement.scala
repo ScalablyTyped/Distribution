@@ -24,7 +24,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a procedure call. The service differs only in the access of the columns and parameters to the service {@link
@@ -36,8 +36,8 @@ trait CallableStatement
      with XRow
      with XOutParameters
      with XColumnsSupplier
-
 object CallableStatement {
+  
   @scala.inline
   def apply(
     Columns: XNameAccess,
@@ -135,4 +135,3 @@ object CallableStatement {
     __obj.asInstanceOf[CallableStatement]
   }
 }
-

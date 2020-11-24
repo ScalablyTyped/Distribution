@@ -2,7 +2,7 @@ package typings.emberData.mod.DS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ### State
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.RootState")
 @js.native
 class RootState () extends js.Object
-

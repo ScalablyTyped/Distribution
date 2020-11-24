@@ -7,7 +7,7 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file. Provides information about the file and its contents, and ways to manipulate them. */
 @js.native
@@ -15,16 +15,17 @@ trait IStorageFile
   extends IStorageItem
      with IRandomAccessStreamReference
      with IInputStreamReference {
+  
   /** Gets the MIME type of the contents of the file. */
   var contentType: String = js.native
-  /** Gets the type (file name extension) of the file. */
-  var fileType: String = js.native
+  
   /**
     * Replaces the specified file with a copy of the current file.
     * @param fileToReplace The file to replace.
     * @return No object or value is returned when this method completes.
     */
   def copyAndReplaceAsync(fileToReplace: IStorageFile): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Creates a copy of the file in the specified folder.
     * @param destinationFolder The destination folder where the copy is created.
@@ -46,12 +47,17 @@ trait IStorageFile
     * @return When this method completes, it returns a StorageFile that represents the copy.
     */
   def copyAsync(destinationFolder: IStorageFolder, desiredNewName: String, option: NameCollisionOption): IPromiseWithIAsyncOperation[StorageFile] = js.native
+  
+  /** Gets the type (file name extension) of the file. */
+  var fileType: String = js.native
+  
   /**
     * Moves the current file to the location of the specified file and replaces the specified file in that location.
     * @param fileToReplace The file to replace.
     * @return No object or value is returned by this method.
     */
   def moveAndReplaceAsync(fileToReplace: IStorageFile): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Moves the current file to the specified folder.
     * @param destinationFolder The destination folder where the file is moved.
@@ -73,6 +79,7 @@ trait IStorageFile
     * @return No object or value is returned by this method.
     */
   def moveAsync(destinationFolder: IStorageFolder, desiredNewName: String, option: NameCollisionOption): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Opens a random-access stream over the file.
     * @param accessMode The type of access to allow.
@@ -86,6 +93,7 @@ trait IStorageFile
     * @return When this method completes, it returns an IRandomAccessStream that contains the requested random-access stream.
     */
   def openAsync(accessMode: FileAccessMode, options: StorageOpenOptions): IPromiseWithIAsyncOperation[IRandomAccessStream] = js.native
+  
   /**
     * Opens a transacted, random-access stream for writing to the file.
     * @return When this method completes, it returns a StorageStreamTransaction that contains the random-access stream and methods that can be used to complete transactions.
@@ -98,4 +106,3 @@ trait IStorageFile
     */
   def openTransactedWriteAsync(options: StorageOpenOptions): IPromiseWithIAsyncOperation[StorageStreamTransaction] = js.native
 }
-

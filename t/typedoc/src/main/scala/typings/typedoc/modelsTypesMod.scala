@@ -2,13 +2,17 @@ package typings.typedoc
 
 import typings.typedoc.abstractMod.Reflection
 import typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
+import typings.typedoc.typedocStrings.keyof
+import typings.typedoc.typedocStrings.readonly
+import typings.typedoc.typedocStrings.unique
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/models/types", JSImport.Namespace)
 @js.native
 object modelsTypesMod extends js.Object {
+  
   @js.native
   class ArrayType protected ()
     extends typings.typedoc.typesArrayMod.ArrayType {
@@ -51,6 +55,12 @@ object modelsTypesMod extends js.Object {
   }
   
   @js.native
+  class NamedTupleMember protected ()
+    extends typings.typedoc.typesTupleMod.NamedTupleMember {
+    def this(name: String, isOptional: Boolean, element: typings.typedoc.typesAbstractMod.Type) = this()
+  }
+  
+  @js.native
   class PredicateType protected ()
     extends typings.typedoc.typesPredicateMod.PredicateType {
     def this(name: String, asserts: Boolean) = this()
@@ -68,6 +78,14 @@ object modelsTypesMod extends js.Object {
     extends typings.typedoc.modelsTypesReferenceMod.ReferenceType {
     def this(name: String, symbolFQN: String) = this()
     def this(name: String, symbolFQN: String, reflection: Reflection) = this()
+  }
+  /* static members */
+  @js.native
+  object ReferenceType extends js.Object {
+    
+    var SYMBOL_FQN_RESOLVED: String = js.native
+    
+    var SYMBOL_FQN_RESOLVE_BY_NAME: String = js.native
   }
   
   @js.native
@@ -91,11 +109,27 @@ object modelsTypesMod extends js.Object {
   @js.native
   abstract class Type ()
     extends typings.typedoc.typesAbstractMod.Type
+  /* static members */
+  @js.native
+  object Type extends js.Object {
+    
+    def isTypeListEqual(
+      a: js.Array[typings.typedoc.typesAbstractMod.Type],
+      b: js.Array[typings.typedoc.typesAbstractMod.Type]
+    ): Boolean = js.native
+    
+    def isTypeListSimilar(
+      a: js.Array[typings.typedoc.typesAbstractMod.Type],
+      b: js.Array[typings.typedoc.typesAbstractMod.Type]
+    ): Boolean = js.native
+  }
   
   @js.native
   class TypeOperatorType protected ()
     extends typings.typedoc.typesTypeOperatorMod.TypeOperatorType {
-    def this(target: typings.typedoc.typesAbstractMod.Type) = this()
+    def this(target: typings.typedoc.typesAbstractMod.Type, operator: keyof) = this()
+    def this(target: typings.typedoc.typesAbstractMod.Type, operator: readonly) = this()
+    def this(target: typings.typedoc.typesAbstractMod.Type, operator: unique) = this()
   }
   
   @js.native
@@ -115,26 +149,4 @@ object modelsTypesMod extends js.Object {
     extends typings.typedoc.typesUnknownMod.UnknownType {
     def this(name: String) = this()
   }
-  
-  /* static members */
-  @js.native
-  object ReferenceType extends js.Object {
-    var SYMBOL_FQN_RESOLVED: String = js.native
-    var SYMBOL_FQN_RESOLVE_BY_NAME: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Type extends js.Object {
-    def isTypeListEqual(
-      a: js.Array[typings.typedoc.typesAbstractMod.Type],
-      b: js.Array[typings.typedoc.typesAbstractMod.Type]
-    ): Boolean = js.native
-    def isTypeListSimilar(
-      a: js.Array[typings.typedoc.typesAbstractMod.Type],
-      b: js.Array[typings.typedoc.typesAbstractMod.Type]
-    ): Boolean = js.native
-  }
-  
 }
-

@@ -2,40 +2,93 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ReelsTrayFeedResponseUser extends js.Object {
-  var friendship_status: js.UndefOr[ReelsTrayFeedResponseFriendshipStatus] = js.undefined
-  var full_name: js.UndefOr[String] = js.undefined
-  var is_private: js.UndefOr[Boolean] = js.undefined
-  var is_verified: js.UndefOr[Boolean] = js.undefined
-  var pk: Double
-  var profile_pic_id: js.UndefOr[String] = js.undefined
-  var profile_pic_url: js.UndefOr[String] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  
+  var friendship_status: js.UndefOr[ReelsTrayFeedResponseFriendshipStatus] = js.native
+  
+  var full_name: js.UndefOr[String] = js.native
+  
+  var is_private: js.UndefOr[Boolean] = js.native
+  
+  var is_verified: js.UndefOr[Boolean] = js.native
+  
+  var pk: Double = js.native
+  
+  var profile_pic_id: js.UndefOr[String] = js.native
+  
+  var profile_pic_url: js.UndefOr[String] = js.native
+  
+  var username: js.UndefOr[String] = js.native
 }
-
 object ReelsTrayFeedResponseUser {
+  
   @scala.inline
-  def apply(
-    pk: Double,
-    friendship_status: ReelsTrayFeedResponseFriendshipStatus = null,
-    full_name: String = null,
-    is_private: js.UndefOr[Boolean] = js.undefined,
-    is_verified: js.UndefOr[Boolean] = js.undefined,
-    profile_pic_id: String = null,
-    profile_pic_url: String = null,
-    username: String = null
-  ): ReelsTrayFeedResponseUser = {
+  def apply(pk: Double): ReelsTrayFeedResponseUser = {
     val __obj = js.Dynamic.literal(pk = pk.asInstanceOf[js.Any])
-    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status.asInstanceOf[js.Any])
-    if (full_name != null) __obj.updateDynamic("full_name")(full_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_verified)) __obj.updateDynamic("is_verified")(is_verified.get.asInstanceOf[js.Any])
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
-    if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsTrayFeedResponseUser]
   }
+  
+  @scala.inline
+  implicit class ReelsTrayFeedResponseUserOps[Self <: ReelsTrayFeedResponseUser] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFriendship_status(value: ReelsTrayFeedResponseFriendshipStatus): Self = this.set("friendship_status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFriendship_status: Self = this.set("friendship_status", js.undefined)
+    
+    @scala.inline
+    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFull_name: Self = this.set("full_name", js.undefined)
+    
+    @scala.inline
+    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIs_private: Self = this.set("is_private", js.undefined)
+    
+    @scala.inline
+    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIs_verified: Self = this.set("is_verified", js.undefined)
+    
+    @scala.inline
+    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_pic_id: Self = this.set("profile_pic_id", js.undefined)
+    
+    @scala.inline
+    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_pic_url: Self = this.set("profile_pic_url", js.undefined)
+    
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
 }
-

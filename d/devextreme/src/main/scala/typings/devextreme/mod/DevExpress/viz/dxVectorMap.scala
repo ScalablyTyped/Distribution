@@ -2,36 +2,71 @@ package typings.devextreme.mod.DevExpress.viz
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxVectorMap extends BaseWidget {
-  /** @name dxVectorMap.center() */
+  
+  /**
+    * [descr:dxVectorMap.center()]
+    */
   def center(): js.Array[Double] = js.native
-  /** @name dxVectorMap.center(centerCoordinates) */
+  /**
+    * [descr:dxVectorMap.center(centerCoordinates)]
+    */
   def center(centerCoordinates: js.Array[Double]): Unit = js.native
-  /** @name dxVectorMap.clearSelection() */
+  
+  /**
+    * [descr:dxVectorMap.clearSelection()]
+    */
   def clearSelection(): Unit = js.native
-  /** @deprecated */
-  /** @name dxVectorMap.convertCoordinates(x, y) */
+  
+  /**
+    * [descr:dxVectorMap.convertCoordinates(x, y)]
+    * @deprecated [depNote:dxVectorMap.convertCoordinates(x, y)]
+    */
   def convertCoordinates(x: Double, y: Double): js.Array[Double] = js.native
-  /** @name dxVectorMap.convertToGeo(x, y) */
+  
+  /**
+    * [descr:dxVectorMap.convertToGeo(x, y)]
+    */
   def convertToGeo(x: Double, y: Double): js.Array[Double] = js.native
-  /** @name dxVectorMap.convertToXY(longitude, latitude) */
+  
+  /**
+    * [descr:dxVectorMap.convertToXY(longitude, latitude)]
+    */
   def convertToXY(longitude: Double, latitude: Double): js.Array[Double] = js.native
-  /** @name dxVectorMap.getLayerByIndex(index) */
+  
+  /**
+    * [descr:dxVectorMap.getLayerByIndex(index)]
+    */
   def getLayerByIndex(index: Double): MapLayer = js.native
-  /** @name dxVectorMap.getLayerByName(name) */
+  
+  /**
+    * [descr:dxVectorMap.getLayerByName(name)]
+    */
   def getLayerByName(name: String): MapLayer = js.native
-  /** @name dxVectorMap.getLayers() */
+  
+  /**
+    * [descr:dxVectorMap.getLayers()]
+    */
   def getLayers(): js.Array[MapLayer] = js.native
-  /** @name dxVectorMap.viewport() */
+  
+  /**
+    * [descr:dxVectorMap.viewport()]
+    */
   def viewport(): js.Array[Double] = js.native
-  /** @name dxVectorMap.viewport(viewportCoordinates) */
+  /**
+    * [descr:dxVectorMap.viewport(viewportCoordinates)]
+    */
   def viewport(viewportCoordinates: js.Array[Double]): Unit = js.native
-  /** @name dxVectorMap.zoomFactor() */
+  
+  /**
+    * [descr:dxVectorMap.zoomFactor()]
+    */
   def zoomFactor(): Double = js.native
-  /** @name dxVectorMap.zoomFactor(zoomFactor) */
+  /**
+    * [descr:dxVectorMap.zoomFactor(zoomFactor)]
+    */
   def zoomFactor(zoomFactor: Double): Unit = js.native
 }
-

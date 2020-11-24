@@ -3,7 +3,7 @@ package typings.i18nJs.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line prefer-declare-function
 @JSImport("i18n-js", "nullPlaceholder")
@@ -17,4 +17,3 @@ object nullPlaceholder
         js.UndefOr[String | Null]
       ]
     ]
-

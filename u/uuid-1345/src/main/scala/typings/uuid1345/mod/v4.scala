@@ -6,11 +6,12 @@ import typings.uuid1345.anon.`2`
 import typings.uuid1345.anon.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("uuid-1345", "v4")
 @js.native
 object v4 extends js.Object {
+  
   def apply(): String = js.native
   def apply(callback: ASCIICallback): Unit = js.native
   def apply(options: `1`): String = js.native
@@ -20,4 +21,3 @@ object v4 extends js.Object {
   def apply(options: `3`): UUID = js.native
   def apply(options: `3`, callback: ObjectCallback): Unit = js.native
 }
-

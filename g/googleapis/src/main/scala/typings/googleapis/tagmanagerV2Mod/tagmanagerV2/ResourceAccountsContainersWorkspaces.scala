@@ -6,19 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces")
 @js.native
 class ResourceAccountsContainersWorkspaces protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var built_in_variables: ResourceAccountsContainersWorkspacesBuiltInVariables = js.native
+  
   var context: APIRequestContext = js.native
-  var folders: ResourceAccountsContainersWorkspacesFolders = js.native
-  var tags: ResourceAccountsContainersWorkspacesTags = js.native
-  var triggers: ResourceAccountsContainersWorkspacesTriggers = js.native
-  var variables: ResourceAccountsContainersWorkspacesVariables = js.native
-  var zones: ResourceAccountsContainersWorkspacesZones = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.create
     * @desc Creates a Workspace.
@@ -51,6 +49,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkspace]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.create_version
     * @desc Creates a Container Version from the entities present in the
@@ -85,6 +84,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreateContainerVersionResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.delete
     * @desc Deletes a Workspace.
@@ -113,6 +113,9 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var folders: ResourceAccountsContainersWorkspacesFolders = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.get
     * @desc Gets a Workspace.
@@ -144,6 +147,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkspace]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.getStatus
     * @desc Finds conflicting and modified entities in the workspace.
@@ -175,6 +179,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetWorkspaceStatusResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.list
     * @desc Lists all Workspaces that belong to a GTM Container.
@@ -207,6 +212,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWorkspacesResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.quick_preview
     * @desc Quick previews a workspace by creating a fake container version
@@ -239,6 +245,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQuickPreviewResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.resolve_conflict
     * @desc Resolves a merge conflict for a workspace entity by updating it to
@@ -273,6 +280,7 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.sync
     * @desc Syncs a workspace to the latest container version by updating all
@@ -306,6 +314,11 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSyncWorkspaceResponse]
   ): Unit = js.native
+  
+  var tags: ResourceAccountsContainersWorkspacesTags = js.native
+  
+  var triggers: ResourceAccountsContainersWorkspacesTriggers = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.update
     * @desc Updates a Workspace.
@@ -339,5 +352,8 @@ class ResourceAccountsContainersWorkspaces protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkspace]
   ): Unit = js.native
+  
+  var variables: ResourceAccountsContainersWorkspacesVariables = js.native
+  
+  var zones: ResourceAccountsContainersWorkspacesZones = js.native
 }
-

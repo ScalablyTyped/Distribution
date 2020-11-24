@@ -1,14 +1,14 @@
 package typings.ecmarkup
 
-import typings.ecmarkup.algorithmErrorReporterTypeMod.LintingError
 import typings.ecmarkup.anon.Contents
+import typings.ecmarkup.specMod.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecmarkup/lib/lint/collect-header-diagnostics", JSImport.Namespace)
 @js.native
 object collectHeaderDiagnosticsMod extends js.Object {
-  def collectHeaderDiagnostics(dom: js.Any, headers: js.Array[Contents]): js.Array[LintingError] = js.native
+  
+  def collectHeaderDiagnostics(report: js.Function1[/* e */ Warning, Unit], headers: js.Array[Contents]): Unit = js.native
 }
-

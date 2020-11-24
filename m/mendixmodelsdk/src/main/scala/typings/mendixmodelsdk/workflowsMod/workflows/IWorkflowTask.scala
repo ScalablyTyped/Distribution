@@ -1,24 +1,24 @@
 package typings.mendixmodelsdk.workflowsMod.workflows
 
-import typings.mendixmodelsdk.elementsMod.IByNameReferrable
 import typings.mendixmodelsdk.instancesMod.IList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
-  * In version 8.10.0: introduced
+  * @ignore
+  *
+  * In version 8.15.0: introduced
   */
 @js.native
-trait IWorkflowTask
-  extends IWorkflowActivity
-     with IByNameReferrable {
-  val name: String = js.native
+trait IWorkflowTask extends IWorkflowActivity {
+  
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
     */
-  val possibleOutcomes: IList[IWorkflowTaskOutcome] = js.native
+  val outcomes: IList[IWorkflowTaskOutcome] = js.native
 }
-

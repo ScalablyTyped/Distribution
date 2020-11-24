@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-haste-map |
 | Keywords           | - |
-| # releases         | 66 |
-| # dependents       | 77 |
-| # downloads        | 257097873 |
+| # releases         | 53 |
+| # dependents       | 114 |
+| # downloads        | 441419723 |
 | # stars            | 0 |
 
 ## Links

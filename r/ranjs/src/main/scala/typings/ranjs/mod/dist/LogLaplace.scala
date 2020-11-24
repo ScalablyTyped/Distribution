@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.LogLaplace")
 @js.native
@@ -12,4 +12,3 @@ class LogLaplace ()
   def this(mu: js.UndefOr[scala.Nothing], b: Double) = this()
   def this(mu: Double, b: Double) = this()
 }
-

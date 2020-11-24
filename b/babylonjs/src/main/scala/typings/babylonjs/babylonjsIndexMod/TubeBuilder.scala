@@ -5,17 +5,17 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "TubeBuilder")
 @js.native
 class TubeBuilder ()
   extends typings.babylonjs.buildersIndexMod.TubeBuilder
-
 /* static members */
 @JSImport("babylonjs/Meshes/index", "TubeBuilder")
 @js.native
 object TubeBuilder extends js.Object {
+  
   /**
     * Creates a tube mesh.
     * The tube is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters
@@ -41,4 +41,3 @@ object TubeBuilder extends js.Object {
   def CreateTube(name: String, options: RadiusFunction): typings.babylonjs.meshMod.Mesh = js.native
   def CreateTube(name: String, options: RadiusFunction, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
-

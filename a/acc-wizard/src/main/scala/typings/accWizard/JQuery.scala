@@ -2,7 +2,7 @@ package typings.accWizard
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @summary Interface for "acc-wizard" JQuery plugin.
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait JQuery extends js.Object {
+  
   def accwizard(): Unit = js.native
   def accwizard(options: AccWizardOptions): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Slack API mocker
 | ------------------ | :-------------: |
 | Full name          | slack-mock |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 13449 |
+| # downloads        | 19433 |
 | # stars            | 0 |
 
 ## Links

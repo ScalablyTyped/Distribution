@@ -7,7 +7,7 @@ import typings.angularCore.mod.OnDestroy
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterPreloader")
 @js.native
@@ -19,14 +19,22 @@ class RouterPreloader protected () extends OnDestroy {
     injector: Injector,
     preloadingStrategy: PreloadingStrategy
   ) = this()
+  
   var injector: js.Any = js.native
+  
   var loader: js.Any = js.native
-  var preloadConfig: js.Any = js.native
-  var preloadingStrategy: js.Any = js.native
-  var processRoutes: js.Any = js.native
-  var router: js.Any = js.native
-  var subscription: js.Any = js.native
+  
   def preload(): Observable_[_] = js.native
+  
+  var preloadConfig: js.Any = js.native
+  
+  var preloadingStrategy: js.Any = js.native
+  
+  var processRoutes: js.Any = js.native
+  
+  var router: js.Any = js.native
+  
   def setUpPreloading(): Unit = js.native
+  
+  var subscription: js.Any = js.native
 }
-

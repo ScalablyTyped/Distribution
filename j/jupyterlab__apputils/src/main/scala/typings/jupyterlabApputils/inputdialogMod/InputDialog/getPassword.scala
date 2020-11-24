@@ -3,11 +3,12 @@ package typings.jupyterlabApputils.inputdialogMod.InputDialog
 import typings.jupyterlabApputils.dialogMod.Dialog.IResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/inputdialog", "InputDialog.getPassword")
 @js.native
 object getPassword extends js.Object {
+  
   /**
     * Create and show a input dialog for a password.
     *
@@ -17,4 +18,3 @@ object getPassword extends js.Object {
     */
   def apply(options: ITextOptions): js.Promise[IResult[String]] = js.native
 }
-

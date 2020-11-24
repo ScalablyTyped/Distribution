@@ -2,11 +2,12 @@ package typings.jweixin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jweixin", "uploadVoice")
 @js.native
 object uploadVoice extends js.Object {
+  
   /**
     * 上传语音接口
     * 备注：上传语音有效期3天，可用微信多媒体接口下载语音到自己的服务器
@@ -19,4 +20,3 @@ object uploadVoice extends js.Object {
     */
   def apply(params: IupdownloadVoice): Unit = js.native
 }
-

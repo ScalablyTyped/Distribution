@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spdx-correct"
-version := "2.0-dt-20200515Z-d283ba"
+version := "2.0-dt-20200515Z-39bbab"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

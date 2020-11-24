@@ -2,7 +2,7 @@ package typings.semanticRelease.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * semantic-release options, after normalization and defaults have been
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GlobalConfig extends Options {
+  
   /**
     * The branches on which releases should happen. By default
     * **semantic-release** will release:
@@ -44,6 +45,7 @@ trait GlobalConfig extends Options {
     */
   @JSName("branches")
   var branches_GlobalConfig: js.Array[BranchSpec] | BranchSpec = js.native
+  
   /**
     * Define the list of plugins to use. Plugins will run in series, in
     * the order defined, for each [step](https://semantic-release.gitbook.io/semantic-release/#release-steps)
@@ -64,6 +66,7 @@ trait GlobalConfig extends Options {
     */
   @JSName("plugins")
   var plugins_GlobalConfig: js.Array[PluginSpec] = js.native
+  
   /**
     * The git repository URL.
     *
@@ -74,6 +77,7 @@ trait GlobalConfig extends Options {
     */
   @JSName("repositoryUrl")
   var repositoryUrl_GlobalConfig: String = js.native
+  
   /**
     * The git tag format used by **semantic-release** to identify
     * releases. The tag name is generated with [Lodash template](https://lodash.com/docs#template)
@@ -86,8 +90,8 @@ trait GlobalConfig extends Options {
   @JSName("tagFormat")
   var tagFormat_GlobalConfig: String = js.native
 }
-
 object GlobalConfig {
+  
   @scala.inline
   def apply(
     branches: js.Array[BranchSpec] | BranchSpec,
@@ -98,30 +102,38 @@ object GlobalConfig {
     val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], repositoryUrl = repositoryUrl.asInstanceOf[js.Any], tagFormat = tagFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfig]
   }
+  
   @scala.inline
   implicit class GlobalConfigOps[Self <: GlobalConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBranchesVarargs(value: BranchSpec*): Self = this.set("branches", js.Array(value :_*))
+    
     @scala.inline
     def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = this.set("branches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPluginsVarargs(value: PluginSpec*): Self = this.set("plugins", js.Array(value :_*))
+    
     @scala.inline
     def setPlugins(value: js.Array[PluginSpec]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRepositoryUrl(value: String): Self = this.set("repositoryUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTagFormat(value: String): Self = this.set("tagFormat", value.asInstanceOf[js.Any])
   }
-  
 }
-

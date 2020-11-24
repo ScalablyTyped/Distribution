@@ -1,7 +1,7 @@
 
 # Scala.js typings for monk
 
-Typings are for version 7.3.1
+Typings are for version 7.3.2
 
 ## Library description:
 The wise MongoDB API
@@ -10,9 +10,9 @@ The wise MongoDB API
 | ------------------ | :-------------: |
 | Full name          | monk |
 | Keywords           | monk, mongodb, mongo, driver |
-| # releases         | 4 |
-| # dependents       | 134 |
-| # downloads        | 414694 |
+| # releases         | 7 |
+| # dependents       | 138 |
+| # downloads        | 503756 |
 | # stars            | 52 |
 
 ## Links

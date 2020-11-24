@@ -3,16 +3,17 @@ package typings.postcssSelectorParser.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Universal_
-  extends Base[String, js.UndefOr[Container[String]]] {
+  extends Base[String, js.UndefOr[Container[String, Node]]] {
+  
   @JSName("type")
   var type_Universal_ : typings.postcssSelectorParser.postcssSelectorParserStrings.universal = js.native
 }
-
 object Universal_ {
+  
   @scala.inline
   def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
@@ -35,20 +36,23 @@ object Universal_ {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Universal_]
   }
+  
   @scala.inline
   implicit class Universal_Ops[Self <: Universal_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.universal): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

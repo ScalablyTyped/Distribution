@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.ReceiverDisplayStatus")
 @js.native
@@ -16,4 +16,3 @@ class ReceiverDisplayStatus protected ()
     */
   def this(statusText: String, appImages: js.Array[typings.chrome.chrome.cast.Image]) = this()
 }
-

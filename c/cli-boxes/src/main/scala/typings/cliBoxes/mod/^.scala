@@ -2,11 +2,12 @@ package typings.cliBoxes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cli-boxes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   		@example
   		```
@@ -16,6 +17,7 @@ object ^ extends js.Object {
   		```
   		*/
   val bold: BoxStyle = js.native
+  
   /**
   		@example
   		```
@@ -25,8 +27,10 @@ object ^ extends js.Object {
   		```
   		*/
   val classic: BoxStyle = js.native
+  
   // TODO: Remove this for the next major release
   var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ js.Any = js.native
+  
   /**
   		@example
   		```
@@ -36,6 +40,7 @@ object ^ extends js.Object {
   		```
   		*/
   val double: BoxStyle = js.native
+  
   /**
   		@example
   		```
@@ -45,6 +50,7 @@ object ^ extends js.Object {
   		```
   		*/
   val doubleSingle: BoxStyle = js.native
+  
   /**
   		@example
   		```
@@ -54,6 +60,7 @@ object ^ extends js.Object {
   		```
   		*/
   val round: BoxStyle = js.native
+  
   /**
   		@example
   		```
@@ -63,6 +70,7 @@ object ^ extends js.Object {
   		```
   		*/
   val single: BoxStyle = js.native
+  
   /**
   		@example
   		```
@@ -73,4 +81,3 @@ object ^ extends js.Object {
   		*/
   val singleDouble: BoxStyle = js.native
 }
-

@@ -10,8 +10,8 @@ Connect middleware for Istanbul to handle server-side as well as browser coverag
 | Full name          | istanbul-middleware |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 339211 |
+| # dependents       | 12 |
+| # downloads        | 355401 |
 | # stars            | 0 |
 
 ## Links

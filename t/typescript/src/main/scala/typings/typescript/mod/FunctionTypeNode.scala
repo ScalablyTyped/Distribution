@@ -3,7 +3,7 @@ package typings.typescript.mod
 import typings.typescript.mod.SyntaxKind.FunctionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FunctionTypeNode
@@ -11,7 +11,7 @@ trait FunctionTypeNode
      with FunctionOrConstructorTypeNode
      with SignatureDeclaration
      with _HasJSDoc {
+  
   @JSName("kind")
-  var kind_FunctionTypeNode: FunctionType = js.native
+  val kind_FunctionTypeNode: FunctionType = js.native
 }
-

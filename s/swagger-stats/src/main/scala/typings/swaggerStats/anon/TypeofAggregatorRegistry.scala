@@ -5,10 +5,11 @@ import typings.promClient.mod.AggregatorRegistry
 import typings.promClient.mod.Registry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofAggregatorRegistry extends Instantiable0[AggregatorRegistry] {
+  
   /**
   	 * Creates a new Registry instance from an array of metrics that were
   	 * created by `registry.getMetricsAsJSON()`. Metrics are aggregated using
@@ -19,6 +20,7 @@ trait TypeofAggregatorRegistry extends Instantiable0[AggregatorRegistry] {
   	 * @return {Registry} aggregated registry.
   	 */
   def aggregate(metricsArr: js.Array[js.Object]): Registry = js.native
+  
   /**
   	 * Sets the registry or registries to be aggregated. Call from workers to
   	 * use a registry/registries other than the default global registry.
@@ -29,4 +31,3 @@ trait TypeofAggregatorRegistry extends Instantiable0[AggregatorRegistry] {
   def setRegistries(regs: js.Array[Registry]): Unit = js.native
   def setRegistries(regs: Registry): Unit = js.native
 }
-

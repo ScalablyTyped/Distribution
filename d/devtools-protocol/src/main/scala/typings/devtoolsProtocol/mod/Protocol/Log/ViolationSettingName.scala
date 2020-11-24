@@ -9,7 +9,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.longTask
 import typings.devtoolsProtocol.devtoolsProtocolStrings.recurringHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.longTask
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.recurringHandler
 */
 trait ViolationSettingName extends js.Object
-
 object ViolationSettingName {
+  
   @scala.inline
   def BlockedEvent: blockedEvent = "blockedEvent".asInstanceOf[blockedEvent]
+  
   @scala.inline
   def BlockedParser: blockedParser = "blockedParser".asInstanceOf[blockedParser]
+  
   @scala.inline
   def DiscouragedAPIUse: discouragedAPIUse = "discouragedAPIUse".asInstanceOf[discouragedAPIUse]
+  
   @scala.inline
   def Handler: handler = "handler".asInstanceOf[handler]
+  
   @scala.inline
   def LongLayout: longLayout = "longLayout".asInstanceOf[longLayout]
+  
   @scala.inline
   def LongTask: longTask = "longTask".asInstanceOf[longTask]
+  
   @scala.inline
   def RecurringHandler: recurringHandler = "recurringHandler".asInstanceOf[recurringHandler]
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.ClosedCaptioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ClosedCaptionEdgeEffect extends js.Object
-
 /** Specifies the edge effect of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect")
 @js.native
 object ClosedCaptionEdgeEffect extends js.Object {
+  
   /** The default edge effect. */
   @js.native
   sealed trait default extends ClosedCaptionEdgeEffect
@@ -34,6 +34,4 @@ object ClosedCaptionEdgeEffect extends js.Object {
   /** Uniform edge */
   @js.native
   sealed trait uniform extends ClosedCaptionEdgeEffect
-  
 }
-

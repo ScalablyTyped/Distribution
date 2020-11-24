@@ -3,7 +3,7 @@ package typings.twilioChat.mod
 import typings.twilioChat.pushnotificationMod.PushNotification.Descriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc Push notification representation within Chat Client
@@ -36,4 +36,3 @@ class PushNotification protected ()
     */
   def this(data: Descriptor) = this()
 }
-

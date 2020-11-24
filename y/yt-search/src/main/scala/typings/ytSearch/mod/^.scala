@@ -4,13 +4,12 @@ import typings.std.Error
 import typings.ytSearch.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yt-search", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  @JSName("search")
-  var search_Original: FnCall = js.native
+  
   def apply(query: String): js.Promise[SearchResult] = js.native
   def apply(
     query: String,
@@ -31,6 +30,7 @@ object ^ extends js.Object {
     query: VideoMetadataOptions,
     callback: js.Function2[/* err */ js.UndefOr[Error | String | Null], /* data */ VideoMetadataResult, Unit]
   ): Unit = js.native
+  
   def search(query: String): js.Promise[SearchResult] = js.native
   def search(
     query: String,
@@ -51,5 +51,6 @@ object ^ extends js.Object {
     query: VideoMetadataOptions,
     callback: js.Function2[/* err */ js.UndefOr[Error | String | Null], /* data */ VideoMetadataResult, Unit]
   ): Unit = js.native
+  @JSName("search")
+  var search_Original: FnCall = js.native
 }
-

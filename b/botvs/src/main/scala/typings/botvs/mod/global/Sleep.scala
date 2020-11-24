@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sleep")
 @js.native
 object Sleep extends js.Object {
+  
   /**
     * 休眠函数
     *
@@ -16,4 +17,3 @@ object Sleep extends js.Object {
     */
   def apply(Millisecond: Double): Unit = js.native
 }
-

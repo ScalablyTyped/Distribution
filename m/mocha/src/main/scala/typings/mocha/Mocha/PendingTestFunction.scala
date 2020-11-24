@@ -2,10 +2,11 @@ package typings.mocha.Mocha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PendingTestFunction extends js.Object {
+  
   /**
     * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
     * acting as a thunk. The name of the function is used as the name of the test. Indicates
@@ -32,4 +33,3 @@ trait PendingTestFunction extends js.Object {
   def apply(title: String, fn: AsyncFunc): Test = js.native
   def apply(title: String, fn: Func): Test = js.native
 }
-

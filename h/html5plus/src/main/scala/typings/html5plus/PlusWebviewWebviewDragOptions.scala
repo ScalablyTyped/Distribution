@@ -9,7 +9,7 @@ import typings.html5plus.html5plusStrings.rtl
 import typings.html5plus.html5plusStrings.silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 窗口手势操作参数
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusWebviewWebviewDragOptions extends js.Object {
+  
   /**
     * 滑屏操作回调事件触发步长
     * 用于设置滑屏回调事件触发频率，取值范围为1-100，值越小触发频率越高，值越大触发频率越小，默认值为20。
@@ -27,6 +28,7 @@ trait PlusWebviewWebviewDragOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var callbackStep: js.UndefOr[Double] = js.native
+  
   /**
     * 设置的手势类型
     * 可取值：
@@ -43,6 +45,7 @@ trait PlusWebviewWebviewDragOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var direction: js.UndefOr[rtl | left | ltr | right] = js.native
+  
   /**
     * 滑动手势模式
     * 可取值：
@@ -57,37 +60,45 @@ trait PlusWebviewWebviewDragOptions extends js.Object {
     */
   var moveMode: js.UndefOr[followFinger | silent | bounce] = js.native
 }
-
 object PlusWebviewWebviewDragOptions {
+  
   @scala.inline
   def apply(): PlusWebviewWebviewDragOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewDragOptions]
   }
+  
   @scala.inline
   implicit class PlusWebviewWebviewDragOptionsOps[Self <: PlusWebviewWebviewDragOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCallbackStep(value: Double): Self = this.set("callbackStep", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCallbackStep: Self = this.set("callbackStep", js.undefined)
+    
     @scala.inline
     def setDirection(value: rtl | left | ltr | right): Self = this.set("direction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDirection: Self = this.set("direction", js.undefined)
+    
     @scala.inline
     def setMoveMode(value: followFinger | silent | bounce): Self = this.set("moveMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMoveMode: Self = this.set("moveMode", js.undefined)
   }
-  
 }
-

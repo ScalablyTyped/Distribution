@@ -19,12 +19,11 @@ import typings.intlTelInput.mod.intlTelInputUtils.placeholderNumberType
 import typings.intlTelInput.mod.intlTelInputUtils.validationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("intlTelInput")
-  var intlTelInput_Original: JQueryPlugin = js.native
+  
   /**
     * initialise the plugin with optional options.
     * @param options options that can be provided during initialization.
@@ -32,6 +31,8 @@ trait JQuery extends js.Object {
   def intlTelInput(): js.Any = js.native
   def intlTelInput(method: String, numberFormat: numberFormat): String = js.native
   def intlTelInput(options: Options): js.Any = js.native
+  @JSName("intlTelInput")
+  var intlTelInput_Original: JQueryPlugin = js.native
   /**
     * Remove the plugin from the input, and unbind any event listeners.
     */
@@ -112,4 +113,3 @@ trait JQuery extends js.Object {
   @JSName("intlTelInput")
   def intlTelInput_setPlaceholderNumberType(method: setPlaceholderNumberType, `type`: placeholderNumberType): Unit = js.native
 }
-

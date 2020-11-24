@@ -6,7 +6,7 @@ import typings.officeJsPreview.Visio.Interfaces.HyperlinkLoadOptions
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Hyperlink extends ClientObject {
+  
   /**
     *
     * Gets the address of the Hyperlink object. Read-only.
@@ -23,9 +24,11 @@ trait Hyperlink extends ClientObject {
     * [Api set:  1.1]
     */
   val address: String = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Hyperlink: RequestContext = js.native
+  
   /**
     *
     * Gets the description of a hyperlink. Read-only.
@@ -33,6 +36,7 @@ trait Hyperlink extends ClientObject {
     * [Api set:  1.1]
     */
   val description: String = js.native
+  
   /**
     *
     * Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
@@ -40,13 +44,7 @@ trait Hyperlink extends ClientObject {
     * [Api set:  1.1]
     */
   val extraInfo: String = js.native
-  /**
-    *
-    * Gets the sub-address of the Hyperlink object. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val subAddress: String = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -67,10 +65,18 @@ trait Hyperlink extends ClientObject {
   def load(option: js.Array[String]): Hyperlink = js.native
   def load(option: HyperlinkLoadOptions): Hyperlink = js.native
   def load(option: Expand): Hyperlink = js.native
+  
+  /**
+    *
+    * Gets the sub-address of the Hyperlink object. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val subAddress: String = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.Hyperlink object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): HyperlinkData = js.native
 }
-

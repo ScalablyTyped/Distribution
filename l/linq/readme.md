@@ -1,7 +1,7 @@
 
 # Scala.js typings for linq
 
-Typings are for version 3.2.2
+Typings are for version 3.2.3
 
 ## Library description:
 linq.js - LINQ for JavaScript library packaged for node.js
@@ -10,9 +10,9 @@ linq.js - LINQ for JavaScript library packaged for node.js
 | ------------------ | :-------------: |
 | Full name          | linq |
 | Keywords           | linq |
-| # releases         | 5 |
-| # dependents       | 87 |
-| # downloads        | 553867 |
+| # releases         | 4 |
+| # dependents       | 105 |
+| # downloads        | 866719 |
 | # stars            | 7 |
 
 ## Links

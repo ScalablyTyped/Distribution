@@ -3,7 +3,7 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Slice")
 @js.native
@@ -21,45 +21,53 @@ class Slice[S /* <: Schema[_, _] */] protected () extends js.Object {
     * open.
     */
   def this(content: Fragment[S], openStart: Double, openEnd: Double) = this()
+  
   /**
     * The slice's content.
     */
   var content: Fragment[S] = js.native
-  /**
-    * The open depth at the end.
-    */
-  var openEnd: Double = js.native
-  /**
-    * The open depth at the start.
-    */
-  var openStart: Double = js.native
-  /**
-    * The size this slice would add when inserted into a document.
-    */
-  var size: Double = js.native
+  
   /**
     * Tests whether this slice is equal to another slice.
     */
   def eq(other: Slice[S]): Boolean = js.native
+  
+  /**
+    * The open depth at the end.
+    */
+  var openEnd: Double = js.native
+  
+  /**
+    * The open depth at the start.
+    */
+  var openStart: Double = js.native
+  
+  /**
+    * The size this slice would add when inserted into a document.
+    */
+  var size: Double = js.native
+  
   /**
     * Convert a slice to a JSON-serializable representation.
     */
   def toJSON(): js.UndefOr[StringDictionary[js.Any] | Null] = js.native
 }
-
 /* static members */
 @JSImport("prosemirror-model", "Slice")
 @js.native
 object Slice extends js.Object {
+  
   /**
     * The empty slice.
     */
   var empty: Slice[_] = js.native
+  
   /**
     * Deserialize a slice from its JSON representation.
     */
   def fromJSON[S /* <: Schema[_, _] */](schema: S): Slice[S] = js.native
   def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): Slice[S] = js.native
+  
   /**
     * Create a slice from a fragment by taking the maximum possible
     * open value on both side of the fragment.
@@ -67,4 +75,3 @@ object Slice extends js.Object {
   def maxOpen[S /* <: Schema[_, _] */](fragment: Fragment[S]): Slice[S] = js.native
   def maxOpen[S /* <: Schema[_, _] */](fragment: Fragment[S], openIsolating: Boolean): Slice[S] = js.native
 }
-

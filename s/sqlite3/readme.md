@@ -10,9 +10,9 @@ Asynchronous, non-blocking SQLite3 bindings
 | ------------------ | :-------------: |
 | Full name          | sqlite3 |
 | Keywords           | sql, sqlite, sqlite3, database |
-| # releases         | 13 |
-| # dependents       | 1416 |
-| # downloads        | 8739718 |
+| # releases         | 12 |
+| # dependents       | 1700 |
+| # downloads        | 12262633 |
 | # stars            | 133 |
 
 ## Links

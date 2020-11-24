@@ -2,9 +2,37 @@ package typings.reactNativeSnapCarousel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeSnapCarouselStrings {
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def decay: decay = "decay".asInstanceOf[decay]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def spring: spring = "spring".asInstanceOf[spring]
+  
+  @scala.inline
+  def stack: stack = "stack".asInstanceOf[stack]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def timing: timing = "timing".asInstanceOf[timing]
+  
+  @scala.inline
+  def tinder: tinder = "tinder".asInstanceOf[tinder]
+  
   @js.native
   sealed trait center extends js.Object
   
@@ -31,24 +59,4 @@ object reactNativeSnapCarouselStrings {
   
   @js.native
   sealed trait tinder extends js.Object
-  
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def decay: decay = "decay".asInstanceOf[decay]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def spring: spring = "spring".asInstanceOf[spring]
-  @scala.inline
-  def stack: stack = "stack".asInstanceOf[stack]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def timing: timing = "timing".asInstanceOf[timing]
-  @scala.inline
-  def tinder: tinder = "tinder".asInstanceOf[tinder]
 }
-

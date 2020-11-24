@@ -1,0 +1,22 @@
+package typings.formatjsIntl
+
+import typings.formatjsIntl.anon.LocaleOnError
+import typings.formatjsIntl.anon.TypeofIntlListFormat
+import typings.formatjsIntlListformat.mod.default
+import typings.std.ConstructorParameters
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@formatjs/intl/lib/src/list", JSImport.Namespace)
+@js.native
+object listMod extends js.Object {
+  
+  @JSName("formatList")
+  def formatList_1(
+    hasLocaleOnError: LocaleOnError,
+    getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
+    values: js.Array[String],
+    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@formatjs/intl.anon.FnCallValuesOpts>[1] */ js.Any
+  ): String = js.native
+}

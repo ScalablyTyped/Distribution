@@ -85,7 +85,7 @@ import typings.activexPowerpoint.PowerPoint.TextStyles
 import typings.std.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumeratorConstructor extends Instantiable1[
@@ -94,4 +94,3 @@ trait EnumeratorConstructor extends Instantiable1[
         ActionSetting | AddIn | AnimationBehavior | AnimationPoint | Cell | ColorScheme | Column | Comment | CustomLayout | CustomXMLPart | Design | DiagramNode | DocumentWindow | Effect | FileConverter | Font | Hyperlink | LineFormat | MediaBookmark | MsoRGBType | NamedSlideShow | Pane | Presentation | PrintRange | ProtectedViewWindow | PublishObject | ResampleMediaTask | Row | RulerLevel | Sequence | Shape | ShapeNode | Slide | SlideShowWindow | String | TabStop | TextStyle | TextStyleLevel
       ]
     ]
-

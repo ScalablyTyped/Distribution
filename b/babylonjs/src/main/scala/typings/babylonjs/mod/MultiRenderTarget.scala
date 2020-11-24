@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "MultiRenderTarget")
 @js.native
@@ -30,4 +30,3 @@ class MultiRenderTarget protected ()
     options: IMultiRenderTargetOptions
   ) = this()
 }
-

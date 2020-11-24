@@ -1,17 +1,16 @@
 package typings.awsSdk.lakeformationMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LakeFormation extends Service {
-  @JSName("config")
-  var config_LakeFormation: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Batch operation to grant permissions to the principal.
     */
@@ -25,6 +24,7 @@ trait LakeFormation extends Service {
     params: BatchGrantPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGrantPermissionsResponse, Unit]
   ): Request[BatchGrantPermissionsResponse, AWSError] = js.native
+  
   /**
     * Batch operation to revoke permissions from the principal.
     */
@@ -38,6 +38,10 @@ trait LakeFormation extends Service {
     params: BatchRevokePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchRevokePermissionsResponse, Unit]
   ): Request[BatchRevokePermissionsResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_LakeFormation: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deregisters the resource as managed by the Data Catalog. When you deregister a path, Lake Formation removes the path from the inline policy attached to your service-linked role.
     */
@@ -51,6 +55,7 @@ trait LakeFormation extends Service {
     params: DeregisterResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterResourceResponse, Unit]
   ): Request[DeregisterResourceResponse, AWSError] = js.native
+  
   /**
     * Retrieves the current data access role for the given resource registered in AWS Lake Formation.
     */
@@ -64,6 +69,7 @@ trait LakeFormation extends Service {
     params: DescribeResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeResourceResponse, Unit]
   ): Request[DescribeResourceResponse, AWSError] = js.native
+  
   /**
     * Retrieves the list of the data lake administrators of a Lake Formation-managed data lake. 
     */
@@ -77,6 +83,7 @@ trait LakeFormation extends Service {
     params: GetDataLakeSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataLakeSettingsResponse, Unit]
   ): Request[GetDataLakeSettingsResponse, AWSError] = js.native
+  
   /**
     * Returns the Lake Formation permissions for a specified table or database resource located at a path in Amazon S3. GetEffectivePermissionsForPath will not return databases and tables if the catalog is encrypted.
     */
@@ -92,6 +99,7 @@ trait LakeFormation extends Service {
     params: GetEffectivePermissionsForPathRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEffectivePermissionsForPathResponse, Unit]
   ): Request[GetEffectivePermissionsForPathResponse, AWSError] = js.native
+  
   /**
     * Grants permissions to the principal to access metadata in the Data Catalog and data organized in underlying data storage such as Amazon S3. For information about permissions, see Security and Access Control to Metadata and Data.
     */
@@ -105,6 +113,7 @@ trait LakeFormation extends Service {
     params: GrantPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GrantPermissionsResponse, Unit]
   ): Request[GrantPermissionsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of the principal permissions on the resource, filtered by the permissions of the caller. For example, if you are granted an ALTER permission, you are able to see only the principal permissions for ALTER. This operation returns only those permissions that have been explicitly granted. For information about permissions, see Security and Access Control to Metadata and Data.
     */
@@ -118,6 +127,7 @@ trait LakeFormation extends Service {
     params: ListPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPermissionsResponse, Unit]
   ): Request[ListPermissionsResponse, AWSError] = js.native
+  
   /**
     * Lists the resources registered to be managed by the Data Catalog.
     */
@@ -131,6 +141,7 @@ trait LakeFormation extends Service {
     params: ListResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResponse, Unit]
   ): Request[ListResourcesResponse, AWSError] = js.native
+  
   /**
     * Sets the list of data lake administrators who have admin privileges on all resources managed by Lake Formation. For more information on admin privileges, see Granting Lake Formation Permissions. This API replaces the current list of data lake admins with the new list being passed. To add an admin, fetch the current list and add the new admin to that list and pass that list in this API.
     */
@@ -144,6 +155,7 @@ trait LakeFormation extends Service {
     params: PutDataLakeSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutDataLakeSettingsResponse, Unit]
   ): Request[PutDataLakeSettingsResponse, AWSError] = js.native
+  
   /**
     * Registers the resource as managed by the Data Catalog. To add or update data, Lake Formation needs read/write access to the chosen Amazon S3 path. Choose a role that you know has permission to do this, or choose the AWSServiceRoleForLakeFormationDataAccess service-linked role. When you register the first Amazon S3 path, the service-linked role and a new inline policy are created on your behalf. Lake Formation adds the first path to the inline policy and attaches it to the service-linked role. When you register subsequent paths, Lake Formation adds the path to the existing policy. The following request registers a new location and gives AWS Lake Formation permission to use the service-linked role to access that location.  ResourceArn = arn:aws:s3:::my-bucket UseServiceLinkedRole = true  If UseServiceLinkedRole is not set to true, you must provide or set the RoleArn:  arn:aws:iam::12345:role/my-data-access-role 
     */
@@ -157,6 +169,7 @@ trait LakeFormation extends Service {
     params: RegisterResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterResourceResponse, Unit]
   ): Request[RegisterResourceResponse, AWSError] = js.native
+  
   /**
     * Revokes permissions to the principal to access metadata in the Data Catalog and data organized in underlying data storage such as Amazon S3.
     */
@@ -170,6 +183,7 @@ trait LakeFormation extends Service {
     params: RevokePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RevokePermissionsResponse, Unit]
   ): Request[RevokePermissionsResponse, AWSError] = js.native
+  
   /**
     * Updates the data access role used for vending access to the given (registered) resource in AWS Lake Formation. 
     */
@@ -184,4 +198,3 @@ trait LakeFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceResponse, Unit]
   ): Request[UpdateResourceResponse, AWSError] = js.native
 }
-

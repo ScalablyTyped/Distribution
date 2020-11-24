@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicecontrol/v1", "servicecontrol_v1.Resource$Services")
 @js.native
 class ResourceServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * servicecontrol.services.allocateQuota
     * @desc Attempts to allocate quota for the specified consumer. It should be
@@ -52,6 +52,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAllocateQuotaResponse]
   ): Unit = js.native
+  
   /**
     * servicecontrol.services.check
     * @desc Checks whether an operation on a service should be allowed to
@@ -91,6 +92,9 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCheckResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * servicecontrol.services.report
     * @desc Reports operation results to Google Service Control, such as logs
@@ -131,4 +135,3 @@ class ResourceServices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReportResponse]
   ): Unit = js.native
 }
-

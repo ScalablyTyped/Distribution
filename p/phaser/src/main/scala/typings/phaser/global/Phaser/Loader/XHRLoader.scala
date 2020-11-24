@@ -4,11 +4,12 @@ import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Loader.XHRLoader")
 @js.native
 object XHRLoader extends js.Object {
+  
   /**
     * Creates a new XMLHttpRequest (xhr) object based on the given File and XHRSettings
     * and starts the download of it. It uses the Files own XHRSettings and merges them
@@ -18,4 +19,3 @@ object XHRLoader extends js.Object {
     */
   def apply(file: typings.phaser.Phaser.Loader.File, globalXHRSettings: XHRSettingsObject): XMLHttpRequest = js.native
 }
-

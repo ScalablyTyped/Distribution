@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PRECISION extends js.Object
-
 /**
   * Constants that specify float precision in shaders.
   *
@@ -22,6 +21,7 @@ sealed trait PRECISION extends js.Object
 @JSGlobal("PIXI.PRECISION")
 @js.native
 object PRECISION extends js.Object {
+  
   @js.native
   sealed trait HIGH extends PRECISION
   
@@ -30,6 +30,4 @@ object PRECISION extends js.Object {
   
   @js.native
   sealed trait MEDIUM extends PRECISION
-  
 }
-

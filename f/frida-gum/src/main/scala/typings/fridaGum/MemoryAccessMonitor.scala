@@ -2,7 +2,7 @@ package typings.fridaGum
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Monitors one or more memory ranges for access, and notifies on the first
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MemoryAccessMonitor")
 @js.native
 object MemoryAccessMonitor extends js.Object
-

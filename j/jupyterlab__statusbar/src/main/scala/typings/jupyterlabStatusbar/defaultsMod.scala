@@ -3,11 +3,12 @@ package typings.jupyterlabStatusbar
 import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/statusbar/lib/defaults", JSImport.Namespace)
 @js.native
 object defaultsMod extends js.Object {
+  
   @js.native
   class KernelStatus protected ()
     extends typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus {
@@ -16,6 +17,16 @@ object defaultsMod extends js.Object {
       */
     def this(opts: IOptions) = this()
   }
+  @js.native
+  object KernelStatus extends js.Object {
+    
+    /**
+      * A VDomModel for the kernel status indicator.
+      */
+    @js.native
+    class Model ()
+      extends typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.Model
+  }
   
   @js.native
   /**
@@ -23,43 +34,15 @@ object defaultsMod extends js.Object {
     */
   class LineCol ()
     extends typings.jupyterlabStatusbar.lineColMod.LineCol
-  
-  @js.native
-  /**
-    * Construct a new memory usage status item.
-    */
-  class MemoryUsage ()
-    extends typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage
-  
-  @js.native
-  class RunningSessions protected ()
-    extends typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions {
-    /**
-      * Create a new RunningSessions widget.
-      */
-    def this(opts: typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.IOptions) = this()
-  }
-  
-  @js.native
-  object KernelStatus extends js.Object {
-    /**
-      * A VDomModel for the kernel status indicator.
-      */
-    @js.native
-    class Model ()
-      extends typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.Model
-    
-  }
-  
   @js.native
   object LineCol extends js.Object {
+    
     /**
       * A VDom model for a status item tracking the line/column of an editor.
       */
     @js.native
     class Model ()
       extends typings.jupyterlabStatusbar.lineColMod.LineCol.Model
-    
   }
   
   /**
@@ -69,7 +52,14 @@ object defaultsMod extends js.Object {
   object LineColComponent extends js.Object
   
   @js.native
+  /**
+    * Construct a new memory usage status item.
+    */
+  class MemoryUsage ()
+    extends typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage
+  @js.native
   object MemoryUsage extends js.Object {
+    
     /**
       * A VDomModel for the memory usage status item.
       */
@@ -83,25 +73,29 @@ object defaultsMod extends js.Object {
         */
       def this(options: typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model.IOptions) = this()
     }
-    
     /**
       * A namespace for Model statics.
       */
     @js.native
     object Model extends js.Object
-    
   }
   
   @js.native
+  class RunningSessions protected ()
+    extends typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions {
+    /**
+      * Create a new RunningSessions widget.
+      */
+    def this(opts: typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.IOptions) = this()
+  }
+  @js.native
   object RunningSessions extends js.Object {
+    
     /**
       * A VDomModel for the RunninSessions status item.
       */
     @js.native
     class Model ()
       extends typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.Model
-    
   }
-  
 }
-

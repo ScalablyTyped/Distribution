@@ -1,22 +1,19 @@
 package typings.npmRun.mod
 
 import typings.node.Buffer
-import typings.node.anon.Stderr
-import typings.node.anon.StderrStdout
-import typings.node.anon.Stdout
 import typings.node.anon.encodingBufferEncodingExe
 import typings.node.anon.encodingbuffernullExecOpt
 import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.ExecException
 import typings.node.childProcessMod.ExecOptions
-import typings.node.childProcessMod.PromiseWithChild
 import typings.node.fsMod.BaseEncodingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExecFunction extends js.Object {
+  
   // no `options` definitely means stdout/stderr are `string`.
   def apply(command: String): ChildProcess = js.native
   def apply(
@@ -80,10 +77,4 @@ trait ExecFunction extends js.Object {
     options: ExecOptions,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
-  def __promisify__(command: String): PromiseWithChild[Stderr] = js.native
-  def __promisify__(command: String, options: BaseEncodingOptions with ExecOptions): PromiseWithChild[StderrStdout] = js.native
-  def __promisify__(command: String, options: encodingBufferEncodingExe): PromiseWithChild[Stderr] = js.native
-  def __promisify__(command: String, options: encodingbuffernullExecOpt): PromiseWithChild[Stdout] = js.native
-  def __promisify__(command: String, options: ExecOptions): PromiseWithChild[Stderr] = js.native
 }
-

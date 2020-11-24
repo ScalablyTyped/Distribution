@@ -2,9 +2,49 @@ package typings.expressServeStaticCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressServeStaticCoreStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def head: head = "head".asInstanceOf[head]
+  
+  @scala.inline
+  def lax: lax = "lax".asInstanceOf[lax]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def options: options = "options".asInstanceOf[options]
+  
+  @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
+  
+  @scala.inline
+  def post: post = "post".asInstanceOf[post]
+  
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
+  
+  @scala.inline
+  def router: router = "router".asInstanceOf[router]
+  
+  @scala.inline
+  def `set-cookie`: `set-cookie` = "set-cookie".asInstanceOf[`set-cookie`]
+  
+  @scala.inline
+  def strict: strict = "strict".asInstanceOf[strict]
+  
   @js.native
   sealed trait all extends js.Object
   
@@ -43,32 +83,4 @@ object expressServeStaticCoreStrings {
   
   @js.native
   sealed trait strict extends js.Object
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def lax: lax = "lax".asInstanceOf[lax]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
-  @scala.inline
-  def router: router = "router".asInstanceOf[router]
-  @scala.inline
-  def `set-cookie`: `set-cookie` = "set-cookie".asInstanceOf[`set-cookie`]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
 }
-

@@ -6,7 +6,7 @@ import typings.rxjs.asyncSchedulerMod.AsyncScheduler
 import typings.rxjs.queueSchedulerMod.QueueScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @typedef {Object} Rx.Scheduler
@@ -23,9 +23,12 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/Rx", "Scheduler")
 @js.native
 object Scheduler extends js.Object {
+  
   var animationFrame: AnimationFrameScheduler = js.native
+  
   var asap: AsapScheduler = js.native
+  
   var async: AsyncScheduler = js.native
+  
   var queue: QueueScheduler = js.native
 }
-

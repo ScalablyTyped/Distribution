@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Applications")
 @js.native
 class ResourceApplications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.applications.listHidden
     * @desc Get the list of players hidden from the given application. This
@@ -48,4 +50,3 @@ class ResourceApplications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaHiddenPlayerList]
   ): Unit = js.native
 }
-

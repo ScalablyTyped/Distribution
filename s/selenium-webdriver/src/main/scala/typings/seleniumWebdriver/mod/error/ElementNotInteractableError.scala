@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates a command could not be completed because the target element is
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 class ElementNotInteractableError () extends WebDriverError {
   def this(message: String) = this()
 }
-

@@ -3,13 +3,13 @@ package typings.awsSdk.serviceMod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.anon.Dictkey
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.endpointMod.Endpoint
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/service", "Service")
 @js.native
@@ -18,15 +18,14 @@ import scala.scalajs.js.annotation._
   */
 class Service () extends js.Object {
   def this(config: ServiceConfigurationOptions) = this()
+  
   /**
     * The list of API versions supported by this service.
     */
   var apiVersions: js.Array[String] = js.native
+  
   var config: ConfigBase with ServiceConfigurationOptions = js.native
-  /**
-    * An Endpoint object representing the endpoint URL for service requests.
-    */
-  var endpoint: Endpoint = js.native
+  
   /**
     * Defines a new Service class using a service identifier and list of versions including an optional set of features (functions) to apply to the class prototype.
     * 
@@ -36,6 +35,12 @@ class Service () extends js.Object {
     */
   def defineService(serviceIdentifier: String, versions: js.Array[String]): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
   def defineService(serviceIdentifier: String, versions: js.Array[String], features: js.Any): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
+  
+  /**
+    * An Endpoint object representing the endpoint URL for service requests.
+    */
+  var endpoint: Endpoint = js.native
+  
   /**
     * Calls an operation on a service with the given input parameters.
     * 
@@ -54,6 +59,7 @@ class Service () extends js.Object {
     params: StringDictionary[js.Any],
     callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
   ): Request[_, AWSError] = js.native
+  
   /**
     * Calls an operation on a service with the given input parameters, without any authentication data.
     * 
@@ -72,10 +78,12 @@ class Service () extends js.Object {
     params: StringDictionary[js.Any],
     callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
   ): Request[_, AWSError] = js.native
+  
   /**
     * Override this method to setup any custom request listeners for each new request to the service.
     */
   def setupRequestListeners(request: Request[_, AWSError]): Unit = js.native
+  
   /**
     * Waits for a given state.
     */
@@ -93,4 +101,3 @@ class Service () extends js.Object {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
   ): Request[_, AWSError] = js.native
 }
-

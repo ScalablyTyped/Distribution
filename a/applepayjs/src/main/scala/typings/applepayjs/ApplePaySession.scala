@@ -15,23 +15,27 @@ import typings.applepayjs.ApplePayJS.Event
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplePaySession extends EventTarget {
+  
   /**
     * Aborts the current Apple Pay session.
     */
   def abort(): Unit = js.native
+  
   /**
     * Begins the merchant validation process.
     */
   def begin(): Unit = js.native
+  
   /**
     * Completes the validation for a merchant session.
     * @param merchantSession - An opaque message session object.
     */
   def completeMerchantValidation(merchantSession: js.Any): Unit = js.native
+  
   /**
     * Completes the payment authorization with a result.
     * @param result - The status of the payment, whether it succeeded or failed for Apple Pay JS versions 1 and 2,
@@ -39,6 +43,7 @@ trait ApplePaySession extends EventTarget {
     */
   def completePayment(result: Double): Unit = js.native
   def completePayment(result: ApplePayPaymentAuthorizationResult): Unit = js.native
+  
   /**
     * Call after a payment method has been selected for Apple Pay JS versions 1 and 2.
     * @param newTotal - An ApplePayLineItem dictionary representing the total price for the purchase.
@@ -50,6 +55,7 @@ trait ApplePaySession extends EventTarget {
     * @param update - The updated payment method.
     */
   def completePaymentMethodSelection(update: ApplePayPaymentMethodUpdate): Unit = js.native
+  
   /**
     * Completes the selection of a shipping contact with an update for Apple Pay JS versions 1 and 2.
     * @param status - The status of the shipping contact update.
@@ -68,6 +74,7 @@ trait ApplePaySession extends EventTarget {
     * @param update - The updated shipping contact.
     */
   def completeShippingContactSelection(update: ApplePayShippingContactUpdate): Unit = js.native
+  
   /**
     * Call after the shipping method has been selected for Apple Pay JS versions 1 and 2.
     * @param status - The status of the shipping method update.
@@ -80,29 +87,34 @@ trait ApplePaySession extends EventTarget {
     * @param update - The updated shipping method.
     */
   def completeShippingMethodSelection(update: ApplePayShippingMethodUpdate): Unit = js.native
+  
   /**
     * A callback function that is automatically called when the payment UI is dismissed.
     */
   def oncancel(event: Event): Unit = js.native
+  
   /**
     * A callback function that is automatically called when the user has authorized the Apple Pay payment with Touch ID, Face ID, or passcode.
     */
   def onpaymentauthorized(event: ApplePayPaymentAuthorizedEvent): Unit = js.native
+  
   /**
     * A callback function that is automatically called when a new payment method is selected.
     */
   def onpaymentmethodselected(event: ApplePayPaymentMethodSelectedEvent): Unit = js.native
+  
   /**
     * A callback function that is called when a shipping contact is selected in the payment sheet.
     */
   def onshippingcontactselected(event: ApplePayShippingContactSelectedEvent): Unit = js.native
+  
   /**
     * A callback function that is automatically called when a shipping method is selected.
     */
   def onshippingmethodselected(event: ApplePayShippingMethodSelectedEvent): Unit = js.native
+  
   /**
     * A callback function that is automatically called when the payment sheet is displayed.
     */
   def onvalidatemerchant(event: ApplePayValidateMerchantEvent): Unit = js.native
 }
-

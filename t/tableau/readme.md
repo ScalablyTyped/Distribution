@@ -12,7 +12,7 @@ Construct rows and columns from an alphabet with which one can encrypt/decrypt i
 | Keywords           | tableau, cipher, encrypt, decrypt |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 481 |
+| # downloads        | 995 |
 | # stars            | 0 |
 
 ## Links

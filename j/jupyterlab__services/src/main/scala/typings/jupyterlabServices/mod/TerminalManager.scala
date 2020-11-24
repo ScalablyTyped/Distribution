@@ -3,7 +3,7 @@ package typings.jupyterlabServices.mod
 import typings.jupyterlabServices.terminalManagerMod.TerminalManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services", "TerminalManager")
 @js.native
@@ -14,4 +14,3 @@ class TerminalManager ()
   extends typings.jupyterlabServices.terminalMod.TerminalManager {
   def this(options: IOptions) = this()
 }
-

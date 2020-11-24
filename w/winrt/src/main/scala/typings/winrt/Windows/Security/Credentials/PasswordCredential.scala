@@ -3,12 +3,12 @@ package typings.winrt.Windows.Security.Credentials
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PasswordCredential extends IPasswordCredential
-
 object PasswordCredential {
+  
   @scala.inline
   def apply(
     password: String,
@@ -21,4 +21,3 @@ object PasswordCredential {
     __obj.asInstanceOf[PasswordCredential]
   }
 }
-

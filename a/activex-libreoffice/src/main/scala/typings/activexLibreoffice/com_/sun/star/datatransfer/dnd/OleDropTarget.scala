@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service connects the Java-like UNO Drag & Drop protocol to the protocol used on window platforms. It realizes the drop target.
@@ -18,8 +18,8 @@ trait OleDropTarget
   extends XDropTarget
      with XInitialization
      with XComponent
-
 object OleDropTarget {
+  
   @scala.inline
   def apply(
     DefaultActions: Double,
@@ -41,4 +41,3 @@ object OleDropTarget {
     __obj.asInstanceOf[OleDropTarget]
   }
 }
-

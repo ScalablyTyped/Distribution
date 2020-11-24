@@ -3,7 +3,7 @@ package typings.protobufjs.lightMod
 import typings.protobufjs.mod.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/light", "BufferReader")
 @js.native
@@ -15,4 +15,3 @@ class BufferReader protected ()
     */
   def this(buffer: Buffer) = this()
 }
-

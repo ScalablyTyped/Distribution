@@ -8,15 +8,19 @@ import typings.nodePgMigrate.viewsTypesMod.DropView
 import typings.nodePgMigrate.viewsTypesMod.RenameView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-pg-migrate/dist/operations/views", JSImport.Namespace)
 @js.native
 object viewsMod extends js.Object {
+  
   def alterView(mOptions: MigrationOptions): AlterView = js.native
+  
   def alterViewColumn(mOptions: MigrationOptions): AlterViewColumn = js.native
+  
   def createView(mOptions: MigrationOptions): CreateView = js.native
+  
   def dropView(mOptions: MigrationOptions): DropView = js.native
+  
   def renameView(mOptions: MigrationOptions): RenameView = js.native
 }
-

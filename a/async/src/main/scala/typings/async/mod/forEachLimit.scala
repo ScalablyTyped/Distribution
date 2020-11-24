@@ -2,11 +2,12 @@ package typings.async.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async", "forEachLimit")
 @js.native
 object forEachLimit extends js.Object {
+  
   def apply[T, E](arr: IterableCollection[T], limit: Double, iterator: AsyncIterator[T, E]): js.Promise[Unit] = js.native
   def apply[T, E](
     arr: IterableCollection[T],
@@ -15,4 +16,3 @@ object forEachLimit extends js.Object {
     callback: ErrorCallback[E]
   ): Unit = js.native
 }
-

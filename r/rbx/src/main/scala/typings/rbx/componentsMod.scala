@@ -106,20 +106,15 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/components", JSImport.Namespace)
 @js.native
 object componentsMod extends js.Object {
+  
   @js.native
   object Breadcrumb extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Item: ForwardRefAsExoticComponent[BreadcrumbItemProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with BreadcrumbModifierProps with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with BreadcrumbModifierProps with (Pick[
           ComponentProps[TAsComponent], 
@@ -129,20 +124,22 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Item: ForwardRefAsExoticComponent[BreadcrumbItemProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with BreadcrumbModifierProps with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Card extends js.Object {
-    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Footer: NoneTAsComponentextendsEl = js.native
-    var Header: NoneTAsComponentextendsElCall = js.native
-    var Image: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
@@ -152,21 +149,28 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Footer: NoneTAsComponentextendsEl = js.native
+    
+    var Header: NoneTAsComponentextendsElCall = js.native
+    
+    var Image: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Dropdown extends js.Object {
-    var Container: TypeofDropdownContainer = js.native
-    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Context: typings.react.mod.Context[DropdownContextValue] = js.native
-    var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Item: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[_]] = js.native
-    var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Trigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with PickDropdownContainerProp with (Pick[
           ComponentProps[TAsComponent], 
@@ -176,17 +180,32 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    var Container: TypeofDropdownContainer = js.native
+    
+    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Context: typings.react.mod.Context[DropdownContextValue] = js.native
+    
+    var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Item: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[_]] = js.native
+    
+    var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Trigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Level extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Item: ForwardRefAsExoticComponent[LevelItemProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with LevelModifierProps with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with LevelModifierProps with (Pick[
           ComponentProps[TAsComponent], 
@@ -196,17 +215,22 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Item: ForwardRefAsExoticComponent[LevelItemProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with LevelModifierProps with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object List extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Item: ForwardRefAsExoticComponent[ListItemProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
@@ -216,17 +240,22 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Item: ForwardRefAsExoticComponent[ListItemProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Media extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Item: ForwardRefAsExoticComponent[MediaItemProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
@@ -236,18 +265,22 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Item: ForwardRefAsExoticComponent[MediaItemProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Menu extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Label: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var List: NoneTAsComponentextendsElDefaultProps = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
@@ -257,18 +290,24 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Label: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var List: NoneTAsComponentextendsElDefaultProps = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Message extends js.Object {
-    var Body: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Header: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with MessageModifierProps with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with MessageModifierProps with (Pick[
           ComponentProps[TAsComponent], 
@@ -278,22 +317,24 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    var Body: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Header: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with MessageModifierProps with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Modal extends js.Object {
-    var Background: ForwardRefAsExoticComponent[ModalBackgroundProps, ElementType[_]] = js.native
-    var Card: NoneTAsComponentextendsElBody = js.native
-    var Close: ForwardRefAsExoticComponent[ModalCloseProps, ElementType[_]] = js.native
-    var Container: TypeofModalContainer = js.native
-    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Context: typings.react.mod.Context[ModalContextValue] = js.native
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Portal: TypeofModalPortal = js.native
-    var defaultProps: AsElementType with (Partial[PickModalContainerPropsac with (Pick[_, String | Double | js.Symbol])]) = js.native
-    var displayName: js.UndefOr[String] = js.native
-    var propTypes: Active = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with PickModalContainerPropsac with (Pick[
           ComponentProps[TAsComponent], 
@@ -303,24 +344,34 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    var Background: ForwardRefAsExoticComponent[ModalBackgroundProps, ElementType[_]] = js.native
+    
+    var Card: NoneTAsComponentextendsElBody = js.native
+    
+    var Close: ForwardRefAsExoticComponent[ModalCloseProps, ElementType[_]] = js.native
+    
+    var Container: TypeofModalContainer = js.native
+    
+    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Context: typings.react.mod.Context[ModalContextValue] = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Portal: TypeofModalPortal = js.native
+    
+    var defaultProps: AsElementType with (Partial[PickModalContainerPropsac with (Pick[_, String | Double | js.Symbol])]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
+    
+    var propTypes: Active = js.native
   }
   
   @js.native
   object Navbar extends js.Object {
-    var Brand: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Burger: ForwardRefAsExoticComponent[NavbarBurgerProps, ElementType[_]] = js.native
-    var Container: TypeofNavbarContainer = js.native
-    var Context: typings.react.mod.Context[NavbarContextValue] = js.native
-    var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Dropdown: ForwardRefAsExoticComponent[NavbarDropdownProps, ElementType[_]] = js.native
-    var Item: NoneTAsComponentextendsElContainer = js.native
-    var Link: ForwardRefAsExoticComponent[NavbarLinkProps, ElementType[_]] = js.native
-    var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Segment: ForwardRefAsExoticComponent[NavbarSegmentProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[PickNavbarContainerPropsf with (Pick[_, String | Double | js.Symbol])]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with PickNavbarContainerPropsf with (Pick[
           ComponentProps[TAsComponent], 
@@ -330,20 +381,38 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    var Brand: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Burger: ForwardRefAsExoticComponent[NavbarBurgerProps, ElementType[_]] = js.native
+    
+    var Container: TypeofNavbarContainer = js.native
+    
+    var Context: typings.react.mod.Context[NavbarContextValue] = js.native
+    
+    var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Dropdown: ForwardRefAsExoticComponent[NavbarDropdownProps, ElementType[_]] = js.native
+    
+    var Item: NoneTAsComponentextendsElContainer = js.native
+    
+    var Link: ForwardRefAsExoticComponent[NavbarLinkProps, ElementType[_]] = js.native
+    
+    var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Segment: ForwardRefAsExoticComponent[NavbarSegmentProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[PickNavbarContainerPropsf with (Pick[_, String | Double | js.Symbol])]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Pagination extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Ellipsis: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Link: ForwardRefAsExoticComponent[PaginationLinkProps, ElementType[_]] = js.native
-    var List: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Step: ForwardRefAsExoticComponent[PaginationStepProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PaginationModifiers with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PaginationModifiers with (Pick[
           ComponentProps[TAsComponent], 
@@ -353,20 +422,28 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Ellipsis: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Link: ForwardRefAsExoticComponent[PaginationLinkProps, ElementType[_]] = js.native
+    
+    var List: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Step: ForwardRefAsExoticComponent[PaginationStepProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PaginationModifiers with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Panel extends js.Object {
-    var Block: ForwardRefAsExoticComponent[PanelBlockProps, ElementType[_]] = js.native
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Heading: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Icon: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-    var Tab: NoneTAsComponentextendsElDisplayName = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
@@ -376,17 +453,28 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    var Block: ForwardRefAsExoticComponent[PanelBlockProps, ElementType[_]] = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Heading: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Icon: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    
+    var Tab: NoneTAsComponentextendsElDisplayName = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
   
   @js.native
   object Tab extends js.Object {
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
-    var Group: ForwardRefAsExoticComponent[TabGroupProps, ElementType[_]] = js.native
-    var defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TabModifierProps with (Pick[_, String | Double | js.Symbol])
-      ]) = js.native
-    var displayName: js.UndefOr[String] = js.native
+    
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TabModifierProps with (Pick[
           ComponentProps[TAsComponent], 
@@ -396,7 +484,16 @@ object componentsMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    
+    @JSName("$$typeof")
+    var DollarDollartypeof: js.Symbol = js.native
+    
+    var Group: ForwardRefAsExoticComponent[TabGroupProps, ElementType[_]] = js.native
+    
+    var defaultProps: AsElementType with (Partial[
+        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TabModifierProps with (Pick[_, String | Double | js.Symbol])
+      ]) = js.native
+    
+    var displayName: js.UndefOr[String] = js.native
   }
-  
 }
-

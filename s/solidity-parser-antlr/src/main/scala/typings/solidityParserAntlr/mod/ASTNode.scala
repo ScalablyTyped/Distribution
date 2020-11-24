@@ -7,7 +7,7 @@ import typings.solidityParserAntlr.solidityParserAntlrStrings.internal
 import typings.solidityParserAntlr.solidityParserAntlrStrings.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.solidityParserAntlr.mod.SourceUnit
@@ -66,14 +66,15 @@ import scala.scalajs.js.annotation._
   - typings.solidityParserAntlr.mod.Expression
 */
 trait ASTNode extends js.Object
-
 object ASTNode {
+  
   @scala.inline
   def NumberLiteral(number: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): ASTNode = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def IfStatement(
     condition: Expression,
@@ -84,6 +85,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def TupleExpression(
     components: js.Array[Expression],
@@ -94,12 +96,14 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def StringLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral, value: String): ASTNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyCall(
     arguments: js.Array[AssemblyExpression],
@@ -110,6 +114,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ImportDirective(
     path: String,
@@ -121,6 +126,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def FunctionCall(
     arguments: js.Array[Expression],
@@ -132,6 +138,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def PragmaDirective(
     name: String,
@@ -142,12 +149,14 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ForStatement(body: Statement, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement): ASTNode = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def MemberAccess(
     expression: Expression,
@@ -158,24 +167,28 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyIf(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyFunctionDefinition(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyLocalDefinition(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def SourceUnit(
     children: js.Array[ASTNode],
@@ -185,6 +198,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def Conditional(
     falseExpression: ASTNode,
@@ -195,6 +209,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def VariableDeclarationStatement(
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement,
@@ -204,24 +219,28 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyFor(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyStackAssignment(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ThrowStatement(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def Mapping(
     keyType: ElementaryTypeName,
@@ -232,6 +251,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def InheritanceSpecifier(
     arguments: js.Array[Expression],
@@ -242,18 +262,21 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def EnumValue(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumValue): ASTNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ContinueStatement(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def VariableDeclaration(
     isIndexed: Boolean,
@@ -266,6 +289,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def EmitStatement(
     eventCall: FunctionCall,
@@ -275,6 +299,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def FunctionTypeName(
     parameterTypes: js.Array[TypeName],
@@ -287,12 +312,14 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyCase(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ExpressionStatement(
     expression: Expression,
@@ -302,18 +329,21 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def BreakStatement(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def DecimalNumber(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber, value: String): ASTNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def IndexAccess(
     base: Expression,
@@ -324,6 +354,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyAssignment(
     expression: AssemblyExpression,
@@ -334,6 +365,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ContractDefinition(
     baseContracts: js.Array[InheritanceSpecifier],
@@ -346,6 +378,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ElementaryTypeNameExpression(
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression,
@@ -355,6 +388,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def InlineAssemblyStatement(
     body: AssemblyBlock,
@@ -365,6 +399,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def UsingForDeclaration(
     libraryName: String,
@@ -375,6 +410,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def DoWhileStatement(
     body: Statement,
@@ -385,24 +421,28 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def BooleanLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral, value: Boolean): ASTNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def Continue(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Continue): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def FunctionDefinition(
     isConstructor: Boolean,
@@ -415,6 +455,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def EventDefinition(
     name: String,
@@ -425,72 +466,84 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def Break(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Break): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def HexLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral, value: String): ASTNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ReturnStatement(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ReturnStatement): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ElementaryTypeName(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName): ASTNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def WhileStatement(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def Identifier(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier): ASTNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyFunctionReturns(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def HexNumber(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber, value: String): ASTNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblySwitch(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ModifierInvocation(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation): ASTNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def LabelDefinition(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def AssemblyBlock(
     operations: js.Array[AssemblyItem],
@@ -500,6 +553,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def EnumDefinition(
     members: js.Array[EnumValue],
@@ -510,6 +564,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def Block(
     statements: js.Array[Statement],
@@ -519,6 +574,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def StructDefinition(
     members: js.Array[VariableDeclaration],
@@ -529,6 +585,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def UserDefinedTypeName(
     namePath: String,
@@ -538,18 +595,21 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ModifierDefinition(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition): ASTNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def SubAssembly(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly): ASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def StateVariableDeclaration(
     `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration,
@@ -559,6 +619,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def BinaryOperation(
     left: Expression,
@@ -570,6 +631,7 @@ object ASTNode {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  
   @scala.inline
   def ArrayTypeName(
     baseTypeName: TypeName,
@@ -580,4 +642,3 @@ object ASTNode {
     __obj.asInstanceOf[ASTNode]
   }
 }
-

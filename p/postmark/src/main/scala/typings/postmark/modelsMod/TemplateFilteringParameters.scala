@@ -2,7 +2,7 @@ package typings.postmark.modelsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models", "TemplateFilteringParameters")
 @js.native
@@ -71,4 +71,3 @@ class TemplateFilteringParameters ()
     layoutTemplate: String
   ) = this()
 }
-

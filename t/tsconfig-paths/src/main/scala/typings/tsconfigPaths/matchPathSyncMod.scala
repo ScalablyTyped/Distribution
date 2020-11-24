@@ -6,11 +6,12 @@ import typings.tsconfigPaths.filesystemMod.ReadJsonSync
 import typings.tsconfigPaths.mappingEntryMod.MappingEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tsconfig-paths/lib/match-path-sync", JSImport.Namespace)
 @js.native
 object matchPathSyncMod extends js.Object {
+  
   def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPath = js.native
   def createMatchPath(
     absoluteBaseUrl: String,
@@ -25,6 +26,7 @@ object matchPathSyncMod extends js.Object {
     mainFields: js.Array[String],
     addMatchAll: Boolean
   ): MatchPath = js.native
+  
   def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
@@ -131,6 +133,7 @@ object matchPathSyncMod extends js.Object {
     extensions: js.Array[String],
     mainFields: js.Array[String]
   ): js.UndefOr[String] = js.native
+  
   type MatchPath = js.Function4[
     /* requestedModule */ String, 
     /* readJson */ js.UndefOr[ReadJsonSync], 
@@ -139,4 +142,3 @@ object matchPathSyncMod extends js.Object {
     js.UndefOr[String]
   ]
 }
-

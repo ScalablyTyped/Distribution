@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * {@link Bridge} internal interface, that allows to change protocol settings of the remote counter part.
@@ -17,12 +17,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XProtocolProperties extends XInterface {
+  
   /**
     * called to get a list of bridge internal properties. Which properties can be retrieved, is protocol dependent.
     *
     * The properties MUST NOT change between a requestChange and a commit change call.
     */
   val Properties: SafeArray[ProtocolProperty] = js.native
+  
   /**
     * called to commit a protocol change.
     *
@@ -34,12 +36,14 @@ trait XProtocolProperties extends XInterface {
     * @throws InvalidProtocolChangeException when the remote counterpart could not change at least one of the properties. No property has been changed. request
     */
   def commitChange(newValues: SeqEquiv[ProtocolProperty]): Unit = js.native
+  
   /**
     * called to get a list of bridge internal properties. Which properties can be retrieved, is protocol dependent.
     *
     * The properties MUST NOT change between a requestChange and a commit change call.
     */
   def getProperties(): SafeArray[ProtocolProperty] = js.native
+  
   /**
     * called to initiate a protocol change.
     *
@@ -50,8 +54,8 @@ trait XProtocolProperties extends XInterface {
     */
   def requestChange(nRandomNumber: Double): Double = js.native
 }
-
 object XProtocolProperties {
+  
   @scala.inline
   def apply(
     Properties: SafeArray[ProtocolProperty],
@@ -65,26 +69,32 @@ object XProtocolProperties {
     val __obj = js.Dynamic.literal(Properties = Properties.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), commitChange = js.Any.fromFunction1(commitChange), getProperties = js.Any.fromFunction0(getProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), requestChange = js.Any.fromFunction1(requestChange))
     __obj.asInstanceOf[XProtocolProperties]
   }
+  
   @scala.inline
   implicit class XProtocolPropertiesOps[Self <: XProtocolProperties] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProperties(value: SafeArray[ProtocolProperty]): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommitChange(value: SeqEquiv[ProtocolProperty] => Unit): Self = this.set("commitChange", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetProperties(value: () => SafeArray[ProtocolProperty]): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRequestChange(value: Double => Double): Self = this.set("requestChange", js.Any.fromFunction1(value))
   }
-  
 }
-

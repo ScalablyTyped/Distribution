@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.Fragment
 import typings.openui5.sap.ui.core.mvc.Controller
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.jsfragment")
 @js.native
 object jsfragment extends js.Object {
+  
   //  Defines OR instantiates an HTML-based Fragment.
   def apply(sFragmentName: String): Fragment = js.native
   /**
@@ -41,4 +42,3 @@ object jsfragment extends js.Object {
   def apply(sId: String, sFragmentName: js.Any): Control | js.Array[Control] = js.native
   def apply(sId: String, sFragmentName: js.Any, oController: Controller): Control | js.Array[Control] = js.native
 }
-

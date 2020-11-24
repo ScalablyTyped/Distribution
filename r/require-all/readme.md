@@ -11,8 +11,8 @@ An easy way to require all files within a directory.
 | Full name          | require-all |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 452 |
-| # downloads        | 5247909 |
+| # dependents       | 456 |
+| # downloads        | 5489987 |
 | # stars            | 23 |
 
 ## Links

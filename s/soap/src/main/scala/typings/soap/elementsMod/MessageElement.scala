@@ -5,11 +5,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.soap.typesMod.IWsdlBaseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("soap/lib/wsdl/elements", "MessageElement")
 @js.native
 class MessageElement () extends Element {
+  
   /**
     * Takes a given namespaced String(for example: 'alias:property') and creates a lookupType
     * object for further use in as first (lookup) `parameterTypeObj` within the `objectToXML`
@@ -22,6 +23,7 @@ class MessageElement () extends Element {
     * @private
     */
   var _createLookupTypeObject: js.Any = js.native
+  
   /**
     * Iterates through the element and every nested child to find any defined `$type`
     * property and returns it in a underscore ('_') separated String (using '^' as default
@@ -33,18 +35,21 @@ class MessageElement () extends Element {
     * @private
     */
   var _getNestedLookupTypeString: js.Any = js.native
+  
   @JSName("allowedChildren")
   val allowedChildren_MessageElement: StringDictionary[
     Instantiable4[
       /* nsName */ String, 
       /* attrs */ js.Any, 
-      js.UndefOr[/* options */ IWsdlBaseOptions], 
-      js.UndefOr[/* schemaAttrs */ js.Any], 
+      /* options */ js.UndefOr[IWsdlBaseOptions], 
+      /* schemaAttrs */ js.UndefOr[js.Any], 
       Element
     ]
   ] = js.native
+  
   var element: ElementElement = js.native
+  
   var parts: js.Any = js.native
+  
   def postProcess(definitions: DefinitionsElement): Unit = js.native
 }
-

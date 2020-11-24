@@ -10,9 +10,9 @@ A scheduler based on requestAnimationFrame
 | ------------------ | :-------------: |
 | Full name          | raf-schd |
 | Keywords           | performance, raf, requestAnimationFrame, cancelAnimationFrame |
-| # releases         | 8 |
-| # dependents       | 68 |
-| # downloads        | 22174719 |
+| # releases         | 3 |
+| # dependents       | 114 |
+| # downloads        | 35072839 |
 | # stars            | 1 |
 
 ## Links

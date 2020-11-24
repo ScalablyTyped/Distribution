@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListDataValidationType extends js.Object
-
 @JSGlobal("SP.ListDataValidationType")
 @js.native
 object ListDataValidationType extends js.Object {
+  
   @js.native
   sealed trait choiceField extends ListDataValidationType
   
@@ -27,6 +27,4 @@ object ListDataValidationType extends js.Object {
   
   @js.native
   sealed trait userFormulaItem extends ListDataValidationType
-  
 }
-

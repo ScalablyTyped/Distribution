@@ -10,9 +10,9 @@ Create a set of commands that can be send to any receipt printer that supports E
 | ------------------ | :-------------: |
 | Full name          | esc-pos-encoder |
 | Keywords           | pos, escpos, receipt, printer |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 4920 |
+| # downloads        | 11281 |
 | # stars            | 0 |
 
 ## Links

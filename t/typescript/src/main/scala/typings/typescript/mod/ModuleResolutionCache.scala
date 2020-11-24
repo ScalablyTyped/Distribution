@@ -2,7 +2,7 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cached module resolutions per containing directory.
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ModuleResolutionCache extends NonRelativeModuleNameResolutionCache {
+  
   def getOrCreateCacheForDirectory(directoryName: java.lang.String): Map[ResolvedModuleWithFailedLookupLocations] = js.native
   def getOrCreateCacheForDirectory(directoryName: java.lang.String, redirectedReference: ResolvedProjectReference): Map[ResolvedModuleWithFailedLookupLocations] = js.native
 }
-

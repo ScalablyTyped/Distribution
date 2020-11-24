@@ -5,10 +5,10 @@ import typings.babylonjs.XRInputSourceEvent
 import typings.babylonjs.XRRay
 import typings.babylonjs.XRReferenceSpace
 import typings.babylonjs.XRSession
-import typings.babylonjs.webXRHitTestLegacyMod.IWebXRHitTestOptions
+import typings.babylonjs.webXRHitTestLegacyMod.IWebXRLegacyHitTestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRHitTestLegacy")
 @js.native
@@ -25,24 +25,26 @@ class WebXRHitTestLegacy protected ()
     /**
     * options to use when constructing this feature
     */
-  options: IWebXRHitTestOptions
+  options: IWebXRLegacyHitTestOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/XR/index", "WebXRHitTestLegacy")
 @js.native
 object WebXRHitTestLegacy extends js.Object {
+  
   /**
     * The module's name
     */
   val Name: String = js.native
+  
   /**
     * The (Babylon) version of this module.
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
   val Version: Double = js.native
+  
   /**
     * execute a hit test with an XR Ray
     *
@@ -59,6 +61,7 @@ object WebXRHitTestLegacy extends js.Object {
     referenceSpace: XRReferenceSpace,
     filter: js.Function1[/* result */ XRHitResult, Boolean]
   ): js.Promise[js.Array[XRHitResult]] = js.native
+  
   /**
     * Execute a hit test on the current running session using a select event returned from a transient input (such as touch)
     * @param event the (select) event to use to select with
@@ -67,4 +70,3 @@ object WebXRHitTestLegacy extends js.Object {
     */
   def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
 }
-

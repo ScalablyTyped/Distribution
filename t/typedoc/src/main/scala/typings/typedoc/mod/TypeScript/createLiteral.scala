@@ -8,14 +8,17 @@ import typings.typescript.mod.PseudoBigInt
 import typings.typescript.mod.StringLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createLiteral")
 @js.native
 object createLiteral extends js.Object {
-  /** If a node is passed, creates a string literal whose source text is read from a source node during emit. */
+  
+  /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
   def apply(value: String): StringLiteral = js.native
+  /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
   def apply(value: Boolean): BooleanLiteral = js.native
+  /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
   def apply(value: Double): NumericLiteral = js.native
   def apply(value: Identifier): StringLiteral = js.native
   def apply(value: NoSubstitutionTemplateLiteral): StringLiteral = js.native
@@ -23,4 +26,3 @@ object createLiteral extends js.Object {
   def apply(value: PseudoBigInt): NumericLiteral = js.native
   def apply(value: StringLiteral): StringLiteral = js.native
 }
-

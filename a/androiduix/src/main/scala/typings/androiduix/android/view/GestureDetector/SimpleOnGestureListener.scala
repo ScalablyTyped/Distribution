@@ -3,14 +3,14 @@ package typings.androiduix.android.view.GestureDetector
 import typings.androiduix.android.view.MotionEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleOnGestureListener
   extends OnGestureListener
      with OnDoubleTapListener
-
 object SimpleOnGestureListener {
+  
   @scala.inline
   def apply(
     onDoubleTap: MotionEvent => Boolean,
@@ -27,4 +27,3 @@ object SimpleOnGestureListener {
     __obj.asInstanceOf[SimpleOnGestureListener]
   }
 }
-

@@ -25,81 +25,74 @@ import typings.oracleOraclejet.oracleOraclejetStrings.years
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojTimeAxis_ extends dvtBaseComponent[ojTimeAxisSettableProperties] {
+  
+  def addEventListener(
+    `type`: scaleChanged,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
+      _
+    ]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: scaleChanged,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
+      _
+    ],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_converterChanged(
+    `type`: converterChanged,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[Converters | Converter[String]], 
+      _
+    ]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_converterChanged(
+    `type`: converterChanged,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[Converters | Converter[String]], 
+      _
+    ],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_endChanged(
+    `type`: endChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_endChanged(
+    `type`: endChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_startChanged(
+    `type`: startChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_startChanged(
+    `type`: startChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+    useCapture: Boolean
+  ): Unit = js.native
+  
   var converter: Converters | Converter[String] = js.native
+  
   var end: String = js.native
-  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converters | Converter[String]], _]) | Null = js.native
-  var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onScaleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
-    _
-  ]) | Null = js.native
-  var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var scale: seconds | minutes | hours | days | weeks | months | quarters | years = js.native
-  var start: String = js.native
-  @JSName("translations")
-  var translations_ojTimeAxis_ : LabelAndValue = js.native
-  def addEventListener(
-    `type`: scaleChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
-      _
-    ]
-  ): Unit = js.native
-  def addEventListener(
-    `type`: scaleChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
-      _
-    ],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_converterChanged(
-    `type`: converterChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Converters | Converter[String]], 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_converterChanged(
-    `type`: converterChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Converters | Converter[String]], 
-      _
-    ],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_endChanged(
-    `type`: endChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_endChanged(
-    `type`: endChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_startChanged(
-    `type`: startChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_startChanged(
-    `type`: startChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
-    useCapture: Boolean
-  ): Unit = js.native
+  
   @JSName("getProperty")
   def getProperty_converter(property: converter): Converters | Converter[String] = js.native
   @JSName("getProperty")
@@ -108,7 +101,22 @@ trait ojTimeAxis_ extends dvtBaseComponent[ojTimeAxisSettableProperties] {
   def getProperty_scale(property: scale): seconds | minutes | hours | days | weeks | months | quarters | years = js.native
   @JSName("getProperty")
   def getProperty_start(property: start): String = js.native
+  
+  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converters | Converter[String]], _]) | Null = js.native
+  
+  var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onScaleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
+    _
+  ]) | Null = js.native
+  
+  var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var scale: seconds | minutes | hours | days | weeks | months | quarters | years = js.native
+  
   def setProperties(properties: ojTimeAxisSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: scale, value: days): Unit = js.native
   def setProperty(property: scale, value: hours): Unit = js.native
   def setProperty(property: scale, value: minutes): Unit = js.native
@@ -127,5 +135,9 @@ trait ojTimeAxis_ extends dvtBaseComponent[ojTimeAxisSettableProperties] {
   def setProperty_start(property: start, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
+  
+  var start: String = js.native
+  
+  @JSName("translations")
+  var translations_ojTimeAxis_ : LabelAndValue = js.native
 }
-

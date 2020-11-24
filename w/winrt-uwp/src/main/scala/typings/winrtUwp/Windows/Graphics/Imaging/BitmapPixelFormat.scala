@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BitmapPixelFormat extends js.Object
-
 /** Specifies the pixel format of pixel data. Each enumeration value defines a channel ordering, bit depth, and data type. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapPixelFormat")
 @js.native
 object BitmapPixelFormat extends js.Object {
+  
   /** The pixel format is B8G8R8A8 unsigned integer. */
   @js.native
   sealed trait bgra8 extends BitmapPixelFormat
@@ -42,6 +42,4 @@ object BitmapPixelFormat extends js.Object {
   /** The pixel format is YUY2. */
   @js.native
   sealed trait yuy2 extends BitmapPixelFormat
-  
 }
-

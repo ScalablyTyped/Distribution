@@ -10,13 +10,13 @@ Pipe log data to a stream, fuggetabout rotation
 | ------------------ | :-------------: |
 | Full name          | logrotate-stream |
 | Keywords           | log, rotate, pipe, stream |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 22 |
-| # downloads        | 625913 |
+| # downloads        | 518632 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/dstokes/logrotate-stream)
+- [Homepage](https://github.com/dstokes/logrotate-stream#readme)
 - [Bugs](https://github.com/dstokes/logrotate-stream/issues)
 - [Repository](https://github.com/dstokes/logrotate-stream)
 - [Npm](https://www.npmjs.com/package/logrotate-stream)

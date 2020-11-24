@@ -10,9 +10,9 @@ Single component release of sidebar
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-sidebar |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 20410 |
+| # downloads        | 17157 |
 | # stars            | 0 |
 
 ## Links

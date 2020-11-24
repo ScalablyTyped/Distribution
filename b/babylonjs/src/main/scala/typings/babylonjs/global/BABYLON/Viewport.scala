@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Viewport")
 @js.native
@@ -25,34 +25,4 @@ class Viewport protected ()
     /** viewport height */
   height: Double
   ) = this()
-  /** viewport height */
-  /* CompleteClass */
-  override var height: Double = js.native
-  /**viewport width */
-  /* CompleteClass */
-  override var width: Double = js.native
-  /** viewport left coordinate */
-  /* CompleteClass */
-  override var x: Double = js.native
-  /** viewport top coordinate */
-  /* CompleteClass */
-  override var y: Double = js.native
-  /**
-    * Creates a new viewport using absolute sizing (from 0-> width, 0-> height instead of 0->1)
-    * @param renderWidth defines the rendering width
-    * @param renderHeight defines the rendering height
-    * @returns a new Viewport
-    */
-  /* CompleteClass */
-  override def toGlobal(renderWidth: Double, renderHeight: Double): typings.babylonjs.BABYLON.Viewport = js.native
-  /**
-    * Stores absolute viewport value into a target viewport (from 0-> width, 0-> height instead of 0->1)
-    * @param renderWidth defines the rendering width
-    * @param renderHeight defines the rendering height
-    * @param ref defines the target viewport
-    * @returns the current viewport
-    */
-  /* CompleteClass */
-  override def toGlobalToRef(renderWidth: Double, renderHeight: Double, ref: typings.babylonjs.BABYLON.Viewport): typings.babylonjs.BABYLON.Viewport = js.native
 }
-

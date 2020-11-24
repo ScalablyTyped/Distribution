@@ -3,7 +3,7 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.user
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Object (Private)
@@ -11,13 +11,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UserObjectPrivate extends UserObjectPublic {
+  
   var birthdate: String = js.native
+  
   var country: String = js.native
+  
   var email: String = js.native
+  
   var product: String = js.native
 }
-
 object UserObjectPrivate {
+  
   @scala.inline
   def apply(
     birthdate: String,
@@ -34,26 +38,32 @@ object UserObjectPrivate {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserObjectPrivate]
   }
+  
   @scala.inline
   implicit class UserObjectPrivateOps[Self <: UserObjectPrivate] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBirthdate(value: String): Self = this.set("birthdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -5,11 +5,11 @@ import typings.grpcProtoLoader.grpcProtoLoaderStrings.`Protocol Buffer 3 EnumDes
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _AnyDefinition extends js.Object
-
 object _AnyDefinition {
+  
   @scala.inline
   def MessageTypeDefinition(
     fileDescriptorProtos: js.Array[Buffer],
@@ -20,6 +20,7 @@ object _AnyDefinition {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AnyDefinition]
   }
+  
   @scala.inline
   def EnumTypeDefinition(
     fileDescriptorProtos: js.Array[Buffer],
@@ -31,4 +32,3 @@ object _AnyDefinition {
     __obj.asInstanceOf[_AnyDefinition]
   }
 }
-

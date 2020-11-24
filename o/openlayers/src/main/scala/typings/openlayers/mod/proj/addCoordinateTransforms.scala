@@ -4,11 +4,12 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.ProjectionLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "proj.addCoordinateTransforms")
 @js.native
 object addCoordinateTransforms extends js.Object {
+  
   /**
     * Registers coordinate transform functions to convert coordinates between the
     * source projection and the destination projection.
@@ -35,4 +36,3 @@ object addCoordinateTransforms extends js.Object {
     inverse: js.Function1[/* coords */ Coordinate_, Coordinate_]
   ): Unit = js.native
 }
-

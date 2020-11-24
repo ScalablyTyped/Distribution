@@ -3,11 +3,38 @@ package typings.phaser.global.Phaser
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Structs")
 @js.native
 object Structs extends js.Object {
+  
+  @js.native
+  object Events extends js.Object {
+    
+    /**
+      * The Process Queue Add Event.
+      * 
+      * This event is dispatched by a Process Queue when a new item is successfully moved to its active list.
+      * 
+      * You will most commonly see this used by a Scene's Update List when a new Game Object has been added.
+      * 
+      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('add', listener)`.
+      */
+    val PROCESS_QUEUE_ADD: js.Any = js.native
+    
+    /**
+      * The Process Queue Remove Event.
+      * 
+      * This event is dispatched by a Process Queue when a new item is successfully removed from its active list.
+      * 
+      * You will most commonly see this used by a Scene's Update List when a Game Object has been removed.
+      * 
+      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('remove', listener)`.
+      */
+    val PROCESS_QUEUE_REMOVE: js.Any = js.native
+  }
+  
   /**
     * List is a generic implementation of an ordered list which contains utility methods for retrieving, manipulating, and iterating items.
     */
@@ -140,55 +167,33 @@ object Structs extends js.Object {
     def this(width: Double, height: Double, aspectMode: js.UndefOr[scala.Nothing], parent: js.Any) = this()
     def this(width: Double, height: Double, aspectMode: integer, parent: js.Any) = this()
   }
-  
-  @js.native
-  object Events extends js.Object {
-    /**
-      * The Process Queue Add Event.
-      * 
-      * This event is dispatched by a Process Queue when a new item is successfully moved to its active list.
-      * 
-      * You will most commonly see this used by a Scene's Update List when a new Game Object has been added.
-      * 
-      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('add', listener)`.
-      */
-    val PROCESS_QUEUE_ADD: js.Any = js.native
-    /**
-      * The Process Queue Remove Event.
-      * 
-      * This event is dispatched by a Process Queue when a new item is successfully removed from its active list.
-      * 
-      * You will most commonly see this used by a Scene's Update List when a Game Object has been removed.
-      * 
-      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('remove', listener)`.
-      */
-    val PROCESS_QUEUE_REMOVE: js.Any = js.native
-  }
-  
   /* static members */
   @js.native
   object Size extends js.Object {
+    
     /**
       * The width and height are automatically adjusted to make the size cover the entire target area while keeping the aspect ratio. This may extend further out than the target size.
       */
     val ENVELOP: integer = js.native
+    
     /**
       * The width and height are automatically adjusted to fit inside the given target area, while keeping the aspect ratio. Depending on the aspect ratio there may be some space inside the area which is not covered.
       */
     val FIT: integer = js.native
+    
     /**
       * The width is automatically adjusted based on the height.
       */
     val HEIGHT_CONTROLS_WIDTH: integer = js.native
+    
     /**
       * Do not make the size fit the aspect ratio. Change the ratio when the size changes.
       */
     val NONE: integer = js.native
+    
     /**
       * The height is automatically adjusted based on the width.
       */
     val WIDTH_CONTROLS_HEIGHT: integer = js.native
   }
-  
 }
-

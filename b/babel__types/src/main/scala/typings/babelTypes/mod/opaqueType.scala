@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "opaqueType")
 @js.native
 object opaqueType extends js.Object {
+  
   def apply(
     id: Identifier_,
     typeParameters: js.UndefOr[scala.Nothing],
@@ -37,4 +38,3 @@ object opaqueType extends js.Object {
     impltype: FlowType
   ): OpaqueType_ = js.native
 }
-

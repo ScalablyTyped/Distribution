@@ -2,7 +2,7 @@ package typings.openlayers.mod.format
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -21,4 +21,3 @@ import scala.scalajs.js.annotation._
   *
   */
 class XMLFeature () extends Feature
-

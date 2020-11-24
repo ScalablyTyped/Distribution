@@ -3,11 +3,12 @@ package typings.ipRegex.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ip-regex", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Regular expression for matching IP addresses.
   	@returns A regex for matching both IPv4 and IPv6.
@@ -32,11 +33,13 @@ object ^ extends js.Object {
   	*/
   def apply(): RegExp = js.native
   def apply(options: Options): RegExp = js.native
+  
   /**
   	@returns A regex for matching IPv4.
   	*/
   def v4(): RegExp = js.native
   def v4(options: Options): RegExp = js.native
+  
   /**
   	@returns A regex for matching IPv6.
   	@example
@@ -49,4 +52,3 @@ object ^ extends js.Object {
   def v6(): RegExp = js.native
   def v6(options: Options): RegExp = js.native
 }
-

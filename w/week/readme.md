@@ -12,7 +12,7 @@ Get the current week number.
 | Keywords           | calendar, date, dates, format, get, js, month, months, util, utility, week, weekday, weeks, year |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3935 |
+| # downloads        | 3587 |
 | # stars            | 1 |
 
 ## Links

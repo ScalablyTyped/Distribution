@@ -12,7 +12,7 @@ Webpack block for UglifyJS
 | Keywords           | webpack, webpack-blocks, uglify, uglifyjs |
 | # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 132958 |
+| # downloads        | 106429 |
 | # stars            | 0 |
 
 ## Links

@@ -4,30 +4,21 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Queue extends EventEmitter {
+  
   /**
     * Ensures the queue is always running if jobs are available.
     */
   var autostart: Boolean = js.native
+  
   /**
     * Max number of jobs the queue should process concurrently.
     */
   var concurrency: Double = js.native
-  /**
-    * Jobs pending + jobs to process.
-    */
-  val length: Double = js.native
-  /**
-    * An array to set job callback arguments on.
-    */
-  var results: js.Array[_] | Null = js.native
-  /**
-    * Milliseconds to wait for a job to execute its callback.
-    */
-  var timeout: Double = js.native
+  
   /**
     * Stop and empty the queue immediately.
     *
@@ -35,6 +26,7 @@ trait Queue extends EventEmitter {
     */
   def end(): Unit = js.native
   def end(error: Error): Unit = js.native
+  
   /**
     * Returns the first (least) index of an element within the Queue equal to the specified value, or -1 if none is found.
     *
@@ -43,6 +35,7 @@ trait Queue extends EventEmitter {
     */
   def indexOf(searchElement: QueueWorker): Double = js.native
   def indexOf(searchElement: QueueWorker, fromIndex: Double): Double = js.native
+  
   /**
     * Returns the last (greatest) index of an element within the Queue equal to the specified value, or -1 if none is found.
     *
@@ -51,24 +44,39 @@ trait Queue extends EventEmitter {
     */
   def lastIndexOf(searchElement: QueueWorker): Double = js.native
   def lastIndexOf(searchElement: QueueWorker, fromIndex: Double): Double = js.native
+  
+  /**
+    * Jobs pending + jobs to process.
+    */
+  val length: Double = js.native
+  
   /**
     * Removes the last element from the Queue and returns that element.
     */
   def pop(): js.UndefOr[QueueWorker] = js.native
+  
   /**
     * Adds one or more elements to the end of the Queue and returns the new length of the Queue.
     *
     * @param workers New workers of the Queue.
     */
   def push(workers: QueueWorker*): Double = js.native
+  
+  /**
+    * An array to set job callback arguments on.
+    */
+  var results: js.Array[_] | Null = js.native
+  
   /**
     * Reverses the order of the elements of the Queue in place.
     */
   def reverse(): Queue = js.native
+  
   /**
     * Removes the first element from the Queue and returns that element.
     */
   def shift(): js.UndefOr[QueueWorker] = js.native
+  
   /**
     * Extracts a section of the Queue and returns Queue.
     *
@@ -79,6 +87,7 @@ trait Queue extends EventEmitter {
   def slice(start: js.UndefOr[scala.Nothing], end: Double): Queue = js.native
   def slice(start: Double): Queue = js.native
   def slice(start: Double, end: Double): Queue = js.native
+  
   /**
     * Adds and/or removes elements from the queue.
     *
@@ -95,6 +104,7 @@ trait Queue extends EventEmitter {
     * @param workers Workers to insert into the Queue in place of the deleted elements.
     */
   def splice(start: Double, deleteCount: Double, workers: QueueWorker*): Queue = js.native
+  
   /**
     * Starts the queue.
     *
@@ -102,10 +112,17 @@ trait Queue extends EventEmitter {
     */
   def start(): Unit = js.native
   def start(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  
   /**
     * Stops the queue.
     */
   def stop(): Unit = js.native
+  
+  /**
+    * Milliseconds to wait for a job to execute its callback.
+    */
+  var timeout: Double = js.native
+  
   /**
     * Adds one or more elements to the front of the Queue and returns the new length of the Queue.
     *
@@ -113,4 +130,3 @@ trait Queue extends EventEmitter {
     */
   def unshift(workers: QueueWorker*): Double = js.native
 }
-

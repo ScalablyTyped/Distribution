@@ -3,13 +3,12 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a symmetric key or an asymmetric key pair. */
 @js.native
 trait CryptographicKey extends js.Object {
-  /** Gets the size, in bits, of the key. */
-  var keySize: Double = js.native
+  
   /**
     * Exports the key pair to a buffer.
     * @return Buffer that contains the key pair.
@@ -21,6 +20,7 @@ trait CryptographicKey extends js.Object {
     * @return Buffer that contains the key pair.
     */
   def export(BlobType: CryptographicPrivateKeyBlobType): IBuffer = js.native
+  
   /**
     * Exports a public key to a buffer.
     * @return Buffer that contains the public key.
@@ -32,5 +32,7 @@ trait CryptographicKey extends js.Object {
     * @return Buffer that contains the public key.
     */
   def exportPublicKey(BlobType: CryptographicPublicKeyBlobType): IBuffer = js.native
+  
+  /** Gets the size, in bits, of the key. */
+  var keySize: Double = js.native
 }
-

@@ -9,11 +9,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/style", JSImport.Namespace)
 @js.native
 object styleMod extends js.Object {
+  
   @js.native
   class Circle () extends default {
     def this(opt_options: Options) = this()
@@ -97,6 +98,4 @@ object styleMod extends js.Object {
     extends typings.ol.textMod.default {
     def this(opt_options: typings.ol.textMod.Options) = this()
   }
-  
 }
-

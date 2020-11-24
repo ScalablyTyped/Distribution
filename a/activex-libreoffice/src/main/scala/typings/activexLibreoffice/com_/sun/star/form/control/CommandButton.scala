@@ -27,7 +27,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a button control.
@@ -48,8 +48,8 @@ trait CommandButton
      with XButton
      with XLayoutConstrains
      with XApproveActionBroadcaster
-
 object CommandButton {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -115,4 +115,3 @@ object CommandButton {
     __obj.asInstanceOf[CommandButton]
   }
 }
-

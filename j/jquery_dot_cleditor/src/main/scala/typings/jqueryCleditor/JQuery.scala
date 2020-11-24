@@ -2,10 +2,11 @@ package typings.jqueryCleditor
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * If the cleditor object does not exist for a matched textarea element,
     * it will be created using the default options combined with the supplied options.
@@ -14,4 +15,3 @@ trait JQuery extends js.Object {
   def cleditor(): CLEditor = js.native
   def cleditor(options: JQueryCLEditorOptions): CLEditor = js.native
 }
-

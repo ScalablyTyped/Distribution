@@ -2,10 +2,11 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CollectionTraversing extends js.Object {
+  
   /**
     * Get the closed neighbourhood of the elements.
     *
@@ -17,11 +18,13 @@ trait CollectionTraversing extends js.Object {
     */
   def closedNeighborhood(): CollectionReturnValue = js.native
   def closedNeighborhood(selector: Selector): CollectionReturnValue = js.native
+  
   /**
     * Get the connected components, considering only the elements in the calling collection.
     * An array of collections is returned, with each collection representing a component.
     */
   def components(): js.Array[CollectionReturnValue] = js.native
+  
   // http://js.cytoscape.org/#collection/traversing
   /**
     * Get the open neighbourhood of the elements.
@@ -34,6 +37,7 @@ trait CollectionTraversing extends js.Object {
     */
   def neighborhood(): CollectionReturnValue = js.native
   def neighborhood(selector: Selector): CollectionReturnValue = js.native
+  
   /**
     * Get the open neighbourhood of the elements.
     *
@@ -46,4 +50,3 @@ trait CollectionTraversing extends js.Object {
   def openNeighborhood(): CollectionReturnValue = js.native
   def openNeighborhood(selector: Selector): CollectionReturnValue = js.native
 }
-

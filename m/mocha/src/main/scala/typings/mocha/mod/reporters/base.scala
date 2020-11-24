@@ -8,7 +8,7 @@ import typings.mocha.Mocha.reporters.Base
 import typings.mocha.anon.TypeofBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // value-only aliases
 @JSImport("mocha", "reporters.base")
@@ -17,4 +17,3 @@ object base
   extends TopLevel[
       TypeofBase with (Instantiable2[/* runner */ Runner, /* options */ js.UndefOr[MochaOptions], Base])
     ]
-

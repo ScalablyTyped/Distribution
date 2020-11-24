@@ -2,11 +2,12 @@ package typings.node.querystringMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("querystring", "stringify")
 @js.native
 object stringify extends js.Object {
+  
   def apply(): String = js.native
   def apply(
     obj: js.UndefOr[scala.Nothing],
@@ -44,4 +45,3 @@ object stringify extends js.Object {
   def apply(obj: ParsedUrlQueryInput, sep: String, eq: String): String = js.native
   def apply(obj: ParsedUrlQueryInput, sep: String, eq: String, options: StringifyOptions): String = js.native
 }
-

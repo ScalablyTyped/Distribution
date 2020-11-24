@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_LruCache")
 @js.native
@@ -20,4 +20,3 @@ class ClassLruCache protected ()
   def this(size: Double) = this()
   def this(size: Double, timeout: Double) = this()
 }
-

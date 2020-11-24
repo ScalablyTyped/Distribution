@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Data Table to be used in charts. A DataTable can come from sources such as Google
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line: no-empty-interface
 @js.native
 trait DataTable extends js.Object
-

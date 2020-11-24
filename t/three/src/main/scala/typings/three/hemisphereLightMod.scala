@@ -5,12 +5,18 @@ import typings.three.lightMod.Light
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/HemisphereLight", JSImport.Namespace)
 @js.native
 object hemisphereLightMod extends js.Object {
+  
   @js.native
+  /**
+  	 * @param skyColor
+  	 * @param groundColor
+  	 * @param [intensity=1]
+  	 */
   class HemisphereLight () extends Light {
     def this(skyColor: String) = this()
     def this(skyColor: Double) = this()
@@ -43,10 +49,9 @@ object hemisphereLightMod extends js.Object {
     def this(skyColor: Color, groundColor: String, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Double, intensity: Double) = this()
     def this(skyColor: Color, groundColor: Color, intensity: Double) = this()
+    
     var groundColor: Color = js.native
+    
     val isHemisphereLight: `true` = js.native
-    var skyColor: Color = js.native
   }
-  
 }
-

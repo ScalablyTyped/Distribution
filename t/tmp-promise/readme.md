@@ -10,9 +10,9 @@ The tmp package with promises support and disposers.
 | ------------------ | :-------------: |
 | Full name          | tmp-promise |
 | Keywords           | tmp, promise, tempfile, mkdtemp, mktemp |
-| # releases         | 6 |
-| # dependents       | 200 |
-| # downloads        | 4701153 |
+| # releases         | 10 |
+| # dependents       | 255 |
+| # downloads        | 11752714 |
 | # stars            | 3 |
 
 ## Links

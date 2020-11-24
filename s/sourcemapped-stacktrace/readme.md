@@ -11,8 +11,8 @@ A simple module for applying source maps to JS stack traces in the browser.
 | Full name          | sourcemapped-stacktrace |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 12254710 |
+| # dependents       | 16 |
+| # downloads        | 10131588 |
 | # stars            | 1 |
 
 ## Links

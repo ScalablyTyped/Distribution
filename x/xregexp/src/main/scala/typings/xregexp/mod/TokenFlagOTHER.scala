@@ -2,7 +2,7 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Valid non-letter and non-number characters that can be used as a flag for when adding a new token to XRegExp.
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   - typings.xregexp.xregexpStrings.$
 */
 trait TokenFlagOTHER extends js.Object
-
 object TokenFlagOTHER {
+  
   @scala.inline
   def $: typings.xregexp.xregexpStrings.$ = "$".asInstanceOf[typings.xregexp.xregexpStrings.$]
+  
   @scala.inline
   def _underscore: typings.xregexp.xregexpStrings._underscore = "_".asInstanceOf[typings.xregexp.xregexpStrings._underscore]
 }
-

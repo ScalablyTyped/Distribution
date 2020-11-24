@@ -1,11 +1,491 @@
 package typings.uifabricStyling
 
-import typings.uifabricStyling.ithemeMod.ISchemeNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uifabricStylingStrings {
+  
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @scala.inline
+  def accent: accent = "accent".asInstanceOf[accent]
+  
+  @scala.inline
+  def accentButtonBackground: accentButtonBackground = "accentButtonBackground".asInstanceOf[accentButtonBackground]
+  
+  @scala.inline
+  def accentButtonText: accentButtonText = "accentButtonText".asInstanceOf[accentButtonText]
+  
+  @scala.inline
+  def actionLink: actionLink = "actionLink".asInstanceOf[actionLink]
+  
+  @scala.inline
+  def actionLinkHovered: actionLinkHovered = "actionLinkHovered".asInstanceOf[actionLinkHovered]
+  
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  
+  @scala.inline
+  def blackTranslucent40: blackTranslucent40 = "blackTranslucent40".asInstanceOf[blackTranslucent40]
+  
+  @scala.inline
+  def blockingBackground: blockingBackground = "blockingBackground".asInstanceOf[blockingBackground]
+  
+  @scala.inline
+  def blockingIcon: blockingIcon = "blockingIcon".asInstanceOf[blockingIcon]
+  
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
+  
+  @scala.inline
+  def blueDark: blueDark = "blueDark".asInstanceOf[blueDark]
+  
+  @scala.inline
+  def blueLight: blueLight = "blueLight".asInstanceOf[blueLight]
+  
+  @scala.inline
+  def blueMid: blueMid = "blueMid".asInstanceOf[blueMid]
+  
+  @scala.inline
+  def bodyBackground: bodyBackground = "bodyBackground".asInstanceOf[bodyBackground]
+  
+  @scala.inline
+  def bodyBackgroundChecked: bodyBackgroundChecked = "bodyBackgroundChecked".asInstanceOf[bodyBackgroundChecked]
+  
+  @scala.inline
+  def bodyBackgroundHovered: bodyBackgroundHovered = "bodyBackgroundHovered".asInstanceOf[bodyBackgroundHovered]
+  
+  @scala.inline
+  def bodyDivider: bodyDivider = "bodyDivider".asInstanceOf[bodyDivider]
+  
+  @scala.inline
+  def bodyFrameBackground: bodyFrameBackground = "bodyFrameBackground".asInstanceOf[bodyFrameBackground]
+  
+  @scala.inline
+  def bodyFrameDivider: bodyFrameDivider = "bodyFrameDivider".asInstanceOf[bodyFrameDivider]
+  
+  @scala.inline
+  def bodyStandoutBackground: bodyStandoutBackground = "bodyStandoutBackground".asInstanceOf[bodyStandoutBackground]
+  
+  @scala.inline
+  def bodySubtext: bodySubtext = "bodySubtext".asInstanceOf[bodySubtext]
+  
+  @scala.inline
+  def bodyText: bodyText = "bodyText".asInstanceOf[bodyText]
+  
+  @scala.inline
+  def bodyTextChecked: bodyTextChecked = "bodyTextChecked".asInstanceOf[bodyTextChecked]
+  
+  @scala.inline
+  def border: border = "border".asInstanceOf[border]
+  
+  @scala.inline
+  def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
+  
+  @scala.inline
+  def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
+  
+  @scala.inline
+  def buttonBackground: buttonBackground = "buttonBackground".asInstanceOf[buttonBackground]
+  
+  @scala.inline
+  def buttonBackgroundChecked: buttonBackgroundChecked = "buttonBackgroundChecked".asInstanceOf[buttonBackgroundChecked]
+  
+  @scala.inline
+  def buttonBackgroundCheckedHovered: buttonBackgroundCheckedHovered = "buttonBackgroundCheckedHovered".asInstanceOf[buttonBackgroundCheckedHovered]
+  
+  @scala.inline
+  def buttonBackgroundDisabled: buttonBackgroundDisabled = "buttonBackgroundDisabled".asInstanceOf[buttonBackgroundDisabled]
+  
+  @scala.inline
+  def buttonBackgroundHovered: buttonBackgroundHovered = "buttonBackgroundHovered".asInstanceOf[buttonBackgroundHovered]
+  
+  @scala.inline
+  def buttonBackgroundPressed: buttonBackgroundPressed = "buttonBackgroundPressed".asInstanceOf[buttonBackgroundPressed]
+  
+  @scala.inline
+  def buttonBorder: buttonBorder = "buttonBorder".asInstanceOf[buttonBorder]
+  
+  @scala.inline
+  def buttonBorderDisabled: buttonBorderDisabled = "buttonBorderDisabled".asInstanceOf[buttonBorderDisabled]
+  
+  @scala.inline
+  def buttonText: buttonText = "buttonText".asInstanceOf[buttonText]
+  
+  @scala.inline
+  def buttonTextChecked: buttonTextChecked = "buttonTextChecked".asInstanceOf[buttonTextChecked]
+  
+  @scala.inline
+  def buttonTextCheckedHovered: buttonTextCheckedHovered = "buttonTextCheckedHovered".asInstanceOf[buttonTextCheckedHovered]
+  
+  @scala.inline
+  def buttonTextDisabled: buttonTextDisabled = "buttonTextDisabled".asInstanceOf[buttonTextDisabled]
+  
+  @scala.inline
+  def buttonTextHovered: buttonTextHovered = "buttonTextHovered".asInstanceOf[buttonTextHovered]
+  
+  @scala.inline
+  def buttonTextPressed: buttonTextPressed = "buttonTextPressed".asInstanceOf[buttonTextPressed]
+  
+  @scala.inline
+  def cardShadow: cardShadow = "cardShadow".asInstanceOf[cardShadow]
+  
+  @scala.inline
+  def cardShadowHovered: cardShadowHovered = "cardShadowHovered".asInstanceOf[cardShadowHovered]
+  
+  @scala.inline
+  def cardStandoutBackground: cardStandoutBackground = "cardStandoutBackground".asInstanceOf[cardStandoutBackground]
+  
+  @scala.inline
+  def defaultStateBackground: defaultStateBackground = "defaultStateBackground".asInstanceOf[defaultStateBackground]
+  
+  @scala.inline
+  def disabledBackground: disabledBackground = "disabledBackground".asInstanceOf[disabledBackground]
+  
+  @scala.inline
+  def disabledBodySubtext: disabledBodySubtext = "disabledBodySubtext".asInstanceOf[disabledBodySubtext]
+  
+  @scala.inline
+  def disabledBodyText: disabledBodyText = "disabledBodyText".asInstanceOf[disabledBodyText]
+  
+  @scala.inline
+  def disabledBorder: disabledBorder = "disabledBorder".asInstanceOf[disabledBorder]
+  
+  @scala.inline
+  def disabledSubtext: disabledSubtext = "disabledSubtext".asInstanceOf[disabledSubtext]
+  
+  @scala.inline
+  def disabledText: disabledText = "disabledText".asInstanceOf[disabledText]
+  
+  @scala.inline
+  def errorBackground: errorBackground = "errorBackground".asInstanceOf[errorBackground]
+  
+  @scala.inline
+  def errorIcon: errorIcon = "errorIcon".asInstanceOf[errorIcon]
+  
+  @scala.inline
+  def errorText: errorText = "errorText".asInstanceOf[errorText]
+  
+  @scala.inline
+  def focusBorder: focusBorder = "focusBorder".asInstanceOf[focusBorder]
+  
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
+  
+  @scala.inline
+  def greenDark: greenDark = "greenDark".asInstanceOf[greenDark]
+  
+  @scala.inline
+  def greenLight: greenLight = "greenLight".asInstanceOf[greenLight]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def infoBackground: infoBackground = "infoBackground".asInstanceOf[infoBackground]
+  
+  @scala.inline
+  def infoIcon: infoIcon = "infoIcon".asInstanceOf[infoIcon]
+  
+  @scala.inline
+  def inputBackground: inputBackground = "inputBackground".asInstanceOf[inputBackground]
+  
+  @scala.inline
+  def inputBackgroundChecked: inputBackgroundChecked = "inputBackgroundChecked".asInstanceOf[inputBackgroundChecked]
+  
+  @scala.inline
+  def inputBackgroundCheckedHovered: inputBackgroundCheckedHovered = "inputBackgroundCheckedHovered".asInstanceOf[inputBackgroundCheckedHovered]
+  
+  @scala.inline
+  def inputBorder: inputBorder = "inputBorder".asInstanceOf[inputBorder]
+  
+  @scala.inline
+  def inputBorderHovered: inputBorderHovered = "inputBorderHovered".asInstanceOf[inputBorderHovered]
+  
+  @scala.inline
+  def inputFocusBorderAlt: inputFocusBorderAlt = "inputFocusBorderAlt".asInstanceOf[inputFocusBorderAlt]
+  
+  @scala.inline
+  def inputForegroundChecked: inputForegroundChecked = "inputForegroundChecked".asInstanceOf[inputForegroundChecked]
+  
+  @scala.inline
+  def inputIcon: inputIcon = "inputIcon".asInstanceOf[inputIcon]
+  
+  @scala.inline
+  def inputIconDisabled: inputIconDisabled = "inputIconDisabled".asInstanceOf[inputIconDisabled]
+  
+  @scala.inline
+  def inputIconHovered: inputIconHovered = "inputIconHovered".asInstanceOf[inputIconHovered]
+  
+  @scala.inline
+  def inputPlaceholderBackgroundChecked: inputPlaceholderBackgroundChecked = "inputPlaceholderBackgroundChecked".asInstanceOf[inputPlaceholderBackgroundChecked]
+  
+  @scala.inline
+  def inputPlaceholderText: inputPlaceholderText = "inputPlaceholderText".asInstanceOf[inputPlaceholderText]
+  
+  @scala.inline
+  def inputText: inputText = "inputText".asInstanceOf[inputText]
+  
+  @scala.inline
+  def inputTextHovered: inputTextHovered = "inputTextHovered".asInstanceOf[inputTextHovered]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def linkHovered: linkHovered = "linkHovered".asInstanceOf[linkHovered]
+  
+  @scala.inline
+  def listBackground: listBackground = "listBackground".asInstanceOf[listBackground]
+  
+  @scala.inline
+  def listHeaderBackgroundHovered: listHeaderBackgroundHovered = "listHeaderBackgroundHovered".asInstanceOf[listHeaderBackgroundHovered]
+  
+  @scala.inline
+  def listHeaderBackgroundPressed: listHeaderBackgroundPressed = "listHeaderBackgroundPressed".asInstanceOf[listHeaderBackgroundPressed]
+  
+  @scala.inline
+  def listItemBackgroundChecked: listItemBackgroundChecked = "listItemBackgroundChecked".asInstanceOf[listItemBackgroundChecked]
+  
+  @scala.inline
+  def listItemBackgroundCheckedHovered: listItemBackgroundCheckedHovered = "listItemBackgroundCheckedHovered".asInstanceOf[listItemBackgroundCheckedHovered]
+  
+  @scala.inline
+  def listItemBackgroundHovered: listItemBackgroundHovered = "listItemBackgroundHovered".asInstanceOf[listItemBackgroundHovered]
+  
+  @scala.inline
+  def listText: listText = "listText".asInstanceOf[listText]
+  
+  @scala.inline
+  def listTextColor: listTextColor = "listTextColor".asInstanceOf[listTextColor]
+  
+  @scala.inline
+  def magenta: magenta = "magenta".asInstanceOf[magenta]
+  
+  @scala.inline
+  def magentaDark: magentaDark = "magentaDark".asInstanceOf[magentaDark]
+  
+  @scala.inline
+  def magentaLight: magentaLight = "magentaLight".asInstanceOf[magentaLight]
+  
+  @scala.inline
+  def menuBackground: menuBackground = "menuBackground".asInstanceOf[menuBackground]
+  
+  @scala.inline
+  def menuDivider: menuDivider = "menuDivider".asInstanceOf[menuDivider]
+  
+  @scala.inline
+  def menuHeader: menuHeader = "menuHeader".asInstanceOf[menuHeader]
+  
+  @scala.inline
+  def menuIcon: menuIcon = "menuIcon".asInstanceOf[menuIcon]
+  
+  @scala.inline
+  def menuItemBackgroundChecked: menuItemBackgroundChecked = "menuItemBackgroundChecked".asInstanceOf[menuItemBackgroundChecked]
+  
+  @scala.inline
+  def menuItemBackgroundHovered: menuItemBackgroundHovered = "menuItemBackgroundHovered".asInstanceOf[menuItemBackgroundHovered]
+  
+  @scala.inline
+  def menuItemBackgroundPressed: menuItemBackgroundPressed = "menuItemBackgroundPressed".asInstanceOf[menuItemBackgroundPressed]
+  
+  @scala.inline
+  def menuItemText: menuItemText = "menuItemText".asInstanceOf[menuItemText]
+  
+  @scala.inline
+  def menuItemTextHovered: menuItemTextHovered = "menuItemTextHovered".asInstanceOf[menuItemTextHovered]
+  
+  @scala.inline
+  def messageLink: messageLink = "messageLink".asInstanceOf[messageLink]
+  
+  @scala.inline
+  def messageLinkHovered: messageLinkHovered = "messageLinkHovered".asInstanceOf[messageLinkHovered]
+  
+  @scala.inline
+  def messageText: messageText = "messageText".asInstanceOf[messageText]
+  
+  @scala.inline
+  def neutralDark: neutralDark = "neutralDark".asInstanceOf[neutralDark]
+  
+  @scala.inline
+  def neutralLight: neutralLight = "neutralLight".asInstanceOf[neutralLight]
+  
+  @scala.inline
+  def neutralLighter: neutralLighter = "neutralLighter".asInstanceOf[neutralLighter]
+  
+  @scala.inline
+  def neutralLighterAlt: neutralLighterAlt = "neutralLighterAlt".asInstanceOf[neutralLighterAlt]
+  
+  @scala.inline
+  def neutralPrimary: neutralPrimary = "neutralPrimary".asInstanceOf[neutralPrimary]
+  
+  @scala.inline
+  def neutralPrimaryAlt: neutralPrimaryAlt = "neutralPrimaryAlt".asInstanceOf[neutralPrimaryAlt]
+  
+  @scala.inline
+  def neutralQuaternary: neutralQuaternary = "neutralQuaternary".asInstanceOf[neutralQuaternary]
+  
+  @scala.inline
+  def neutralQuaternaryAlt: neutralQuaternaryAlt = "neutralQuaternaryAlt".asInstanceOf[neutralQuaternaryAlt]
+  
+  @scala.inline
+  def neutralSecondary: neutralSecondary = "neutralSecondary".asInstanceOf[neutralSecondary]
+  
+  @scala.inline
+  def neutralSecondaryAlt: neutralSecondaryAlt = "neutralSecondaryAlt".asInstanceOf[neutralSecondaryAlt]
+  
+  @scala.inline
+  def neutralTertiary: neutralTertiary = "neutralTertiary".asInstanceOf[neutralTertiary]
+  
+  @scala.inline
+  def neutralTertiaryAlt: neutralTertiaryAlt = "neutralTertiaryAlt".asInstanceOf[neutralTertiaryAlt]
+  
+  @scala.inline
+  def orange: orange = "orange".asInstanceOf[orange]
+  
+  @scala.inline
+  def orangeLight: orangeLight = "orangeLight".asInstanceOf[orangeLight]
+  
+  @scala.inline
+  def orangeLighter: orangeLighter = "orangeLighter".asInstanceOf[orangeLighter]
+  
+  @scala.inline
+  def primaryButtonBackground: primaryButtonBackground = "primaryButtonBackground".asInstanceOf[primaryButtonBackground]
+  
+  @scala.inline
+  def primaryButtonBackgroundDisabled: primaryButtonBackgroundDisabled = "primaryButtonBackgroundDisabled".asInstanceOf[primaryButtonBackgroundDisabled]
+  
+  @scala.inline
+  def primaryButtonBackgroundHovered: primaryButtonBackgroundHovered = "primaryButtonBackgroundHovered".asInstanceOf[primaryButtonBackgroundHovered]
+  
+  @scala.inline
+  def primaryButtonBackgroundPressed: primaryButtonBackgroundPressed = "primaryButtonBackgroundPressed".asInstanceOf[primaryButtonBackgroundPressed]
+  
+  @scala.inline
+  def primaryButtonBorder: primaryButtonBorder = "primaryButtonBorder".asInstanceOf[primaryButtonBorder]
+  
+  @scala.inline
+  def primaryButtonText: primaryButtonText = "primaryButtonText".asInstanceOf[primaryButtonText]
+  
+  @scala.inline
+  def primaryButtonTextDisabled: primaryButtonTextDisabled = "primaryButtonTextDisabled".asInstanceOf[primaryButtonTextDisabled]
+  
+  @scala.inline
+  def primaryButtonTextHovered: primaryButtonTextHovered = "primaryButtonTextHovered".asInstanceOf[primaryButtonTextHovered]
+  
+  @scala.inline
+  def primaryButtonTextPressed: primaryButtonTextPressed = "primaryButtonTextPressed".asInstanceOf[primaryButtonTextPressed]
+  
+  @scala.inline
+  def purple: purple = "purple".asInstanceOf[purple]
+  
+  @scala.inline
+  def purpleDark: purpleDark = "purpleDark".asInstanceOf[purpleDark]
+  
+  @scala.inline
+  def purpleLight: purpleLight = "purpleLight".asInstanceOf[purpleLight]
+  
+  @scala.inline
+  def red: red = "red".asInstanceOf[red]
+  
+  @scala.inline
+  def redDark: redDark = "redDark".asInstanceOf[redDark]
+  
+  @scala.inline
+  def relative: relative = "relative".asInstanceOf[relative]
+  
+  @scala.inline
+  def severeWarningBackground: severeWarningBackground = "severeWarningBackground".asInstanceOf[severeWarningBackground]
+  
+  @scala.inline
+  def severeWarningIcon: severeWarningIcon = "severeWarningIcon".asInstanceOf[severeWarningIcon]
+  
+  @scala.inline
+  def smallInputBorder: smallInputBorder = "smallInputBorder".asInstanceOf[smallInputBorder]
+  
+  @scala.inline
+  def successBackground: successBackground = "successBackground".asInstanceOf[successBackground]
+  
+  @scala.inline
+  def successIcon: successIcon = "successIcon".asInstanceOf[successIcon]
+  
+  @scala.inline
+  def successText: successText = "successText".asInstanceOf[successText]
+  
+  @scala.inline
+  def teal: teal = "teal".asInstanceOf[teal]
+  
+  @scala.inline
+  def tealDark: tealDark = "tealDark".asInstanceOf[tealDark]
+  
+  @scala.inline
+  def tealLight: tealLight = "tealLight".asInstanceOf[tealLight]
+  
+  @scala.inline
+  def themeDark: themeDark = "themeDark".asInstanceOf[themeDark]
+  
+  @scala.inline
+  def themeDarkAlt: themeDarkAlt = "themeDarkAlt".asInstanceOf[themeDarkAlt]
+  
+  @scala.inline
+  def themeDarker: themeDarker = "themeDarker".asInstanceOf[themeDarker]
+  
+  @scala.inline
+  def themeLight: themeLight = "themeLight".asInstanceOf[themeLight]
+  
+  @scala.inline
+  def themeLighter: themeLighter = "themeLighter".asInstanceOf[themeLighter]
+  
+  @scala.inline
+  def themeLighterAlt: themeLighterAlt = "themeLighterAlt".asInstanceOf[themeLighterAlt]
+  
+  @scala.inline
+  def themePrimary: themePrimary = "themePrimary".asInstanceOf[themePrimary]
+  
+  @scala.inline
+  def themeSecondary: themeSecondary = "themeSecondary".asInstanceOf[themeSecondary]
+  
+  @scala.inline
+  def themeTertiary: themeTertiary = "themeTertiary".asInstanceOf[themeTertiary]
+  
+  @scala.inline
+  def variantBorder: variantBorder = "variantBorder".asInstanceOf[variantBorder]
+  
+  @scala.inline
+  def variantBorderHovered: variantBorderHovered = "variantBorderHovered".asInstanceOf[variantBorderHovered]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def warningBackground: warningBackground = "warningBackground".asInstanceOf[warningBackground]
+  
+  @scala.inline
+  def warningHighlight: warningHighlight = "warningHighlight".asInstanceOf[warningHighlight]
+  
+  @scala.inline
+  def warningIcon: warningIcon = "warningIcon".asInstanceOf[warningIcon]
+  
+  @scala.inline
+  def warningText: warningText = "warningText".asInstanceOf[warningText]
+  
+  @scala.inline
+  def white: white = "white".asInstanceOf[white]
+  
+  @scala.inline
+  def whiteTranslucent40: whiteTranslucent40 = "whiteTranslucent40".asInstanceOf[whiteTranslucent40]
+  
+  @scala.inline
+  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  
+  @scala.inline
+  def yellowDark: yellowDark = "yellowDark".asInstanceOf[yellowDark]
+  
+  @scala.inline
+  def yellowLight: yellowLight = "yellowLight".asInstanceOf[yellowLight]
+  
   @js.native
   sealed trait absolute extends js.Object
   
@@ -137,9 +617,6 @@ object uifabricStylingStrings {
   
   @js.native
   sealed trait cardStandoutBackground extends js.Object
-  
-  @js.native
-  sealed trait default extends ISchemeNames
   
   @js.native
   sealed trait defaultStateBackground extends js.Object
@@ -310,9 +787,6 @@ object uifabricStylingStrings {
   sealed trait messageText extends js.Object
   
   @js.native
-  sealed trait neutral extends ISchemeNames
-  
-  @js.native
   sealed trait neutralDark extends js.Object
   
   @js.native
@@ -412,12 +886,6 @@ object uifabricStylingStrings {
   sealed trait smallInputBorder extends js.Object
   
   @js.native
-  sealed trait soft extends ISchemeNames
-  
-  @js.native
-  sealed trait strong extends ISchemeNames
-  
-  @js.native
   sealed trait successBackground extends js.Object
   
   @js.native
@@ -497,334 +965,4 @@ object uifabricStylingStrings {
   
   @js.native
   sealed trait yellowLight extends js.Object
-  
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def accent: accent = "accent".asInstanceOf[accent]
-  @scala.inline
-  def accentButtonBackground: accentButtonBackground = "accentButtonBackground".asInstanceOf[accentButtonBackground]
-  @scala.inline
-  def accentButtonText: accentButtonText = "accentButtonText".asInstanceOf[accentButtonText]
-  @scala.inline
-  def actionLink: actionLink = "actionLink".asInstanceOf[actionLink]
-  @scala.inline
-  def actionLinkHovered: actionLinkHovered = "actionLinkHovered".asInstanceOf[actionLinkHovered]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blackTranslucent40: blackTranslucent40 = "blackTranslucent40".asInstanceOf[blackTranslucent40]
-  @scala.inline
-  def blockingBackground: blockingBackground = "blockingBackground".asInstanceOf[blockingBackground]
-  @scala.inline
-  def blockingIcon: blockingIcon = "blockingIcon".asInstanceOf[blockingIcon]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def blueDark: blueDark = "blueDark".asInstanceOf[blueDark]
-  @scala.inline
-  def blueLight: blueLight = "blueLight".asInstanceOf[blueLight]
-  @scala.inline
-  def blueMid: blueMid = "blueMid".asInstanceOf[blueMid]
-  @scala.inline
-  def bodyBackground: bodyBackground = "bodyBackground".asInstanceOf[bodyBackground]
-  @scala.inline
-  def bodyBackgroundChecked: bodyBackgroundChecked = "bodyBackgroundChecked".asInstanceOf[bodyBackgroundChecked]
-  @scala.inline
-  def bodyBackgroundHovered: bodyBackgroundHovered = "bodyBackgroundHovered".asInstanceOf[bodyBackgroundHovered]
-  @scala.inline
-  def bodyDivider: bodyDivider = "bodyDivider".asInstanceOf[bodyDivider]
-  @scala.inline
-  def bodyFrameBackground: bodyFrameBackground = "bodyFrameBackground".asInstanceOf[bodyFrameBackground]
-  @scala.inline
-  def bodyFrameDivider: bodyFrameDivider = "bodyFrameDivider".asInstanceOf[bodyFrameDivider]
-  @scala.inline
-  def bodyStandoutBackground: bodyStandoutBackground = "bodyStandoutBackground".asInstanceOf[bodyStandoutBackground]
-  @scala.inline
-  def bodySubtext: bodySubtext = "bodySubtext".asInstanceOf[bodySubtext]
-  @scala.inline
-  def bodyText: bodyText = "bodyText".asInstanceOf[bodyText]
-  @scala.inline
-  def bodyTextChecked: bodyTextChecked = "bodyTextChecked".asInstanceOf[bodyTextChecked]
-  @scala.inline
-  def border: border = "border".asInstanceOf[border]
-  @scala.inline
-  def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
-  @scala.inline
-  def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
-  @scala.inline
-  def buttonBackground: buttonBackground = "buttonBackground".asInstanceOf[buttonBackground]
-  @scala.inline
-  def buttonBackgroundChecked: buttonBackgroundChecked = "buttonBackgroundChecked".asInstanceOf[buttonBackgroundChecked]
-  @scala.inline
-  def buttonBackgroundCheckedHovered: buttonBackgroundCheckedHovered = "buttonBackgroundCheckedHovered".asInstanceOf[buttonBackgroundCheckedHovered]
-  @scala.inline
-  def buttonBackgroundDisabled: buttonBackgroundDisabled = "buttonBackgroundDisabled".asInstanceOf[buttonBackgroundDisabled]
-  @scala.inline
-  def buttonBackgroundHovered: buttonBackgroundHovered = "buttonBackgroundHovered".asInstanceOf[buttonBackgroundHovered]
-  @scala.inline
-  def buttonBackgroundPressed: buttonBackgroundPressed = "buttonBackgroundPressed".asInstanceOf[buttonBackgroundPressed]
-  @scala.inline
-  def buttonBorder: buttonBorder = "buttonBorder".asInstanceOf[buttonBorder]
-  @scala.inline
-  def buttonBorderDisabled: buttonBorderDisabled = "buttonBorderDisabled".asInstanceOf[buttonBorderDisabled]
-  @scala.inline
-  def buttonText: buttonText = "buttonText".asInstanceOf[buttonText]
-  @scala.inline
-  def buttonTextChecked: buttonTextChecked = "buttonTextChecked".asInstanceOf[buttonTextChecked]
-  @scala.inline
-  def buttonTextCheckedHovered: buttonTextCheckedHovered = "buttonTextCheckedHovered".asInstanceOf[buttonTextCheckedHovered]
-  @scala.inline
-  def buttonTextDisabled: buttonTextDisabled = "buttonTextDisabled".asInstanceOf[buttonTextDisabled]
-  @scala.inline
-  def buttonTextHovered: buttonTextHovered = "buttonTextHovered".asInstanceOf[buttonTextHovered]
-  @scala.inline
-  def buttonTextPressed: buttonTextPressed = "buttonTextPressed".asInstanceOf[buttonTextPressed]
-  @scala.inline
-  def cardShadow: cardShadow = "cardShadow".asInstanceOf[cardShadow]
-  @scala.inline
-  def cardShadowHovered: cardShadowHovered = "cardShadowHovered".asInstanceOf[cardShadowHovered]
-  @scala.inline
-  def cardStandoutBackground: cardStandoutBackground = "cardStandoutBackground".asInstanceOf[cardStandoutBackground]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def defaultStateBackground: defaultStateBackground = "defaultStateBackground".asInstanceOf[defaultStateBackground]
-  @scala.inline
-  def disabledBackground: disabledBackground = "disabledBackground".asInstanceOf[disabledBackground]
-  @scala.inline
-  def disabledBodySubtext: disabledBodySubtext = "disabledBodySubtext".asInstanceOf[disabledBodySubtext]
-  @scala.inline
-  def disabledBodyText: disabledBodyText = "disabledBodyText".asInstanceOf[disabledBodyText]
-  @scala.inline
-  def disabledBorder: disabledBorder = "disabledBorder".asInstanceOf[disabledBorder]
-  @scala.inline
-  def disabledSubtext: disabledSubtext = "disabledSubtext".asInstanceOf[disabledSubtext]
-  @scala.inline
-  def disabledText: disabledText = "disabledText".asInstanceOf[disabledText]
-  @scala.inline
-  def errorBackground: errorBackground = "errorBackground".asInstanceOf[errorBackground]
-  @scala.inline
-  def errorIcon: errorIcon = "errorIcon".asInstanceOf[errorIcon]
-  @scala.inline
-  def errorText: errorText = "errorText".asInstanceOf[errorText]
-  @scala.inline
-  def focusBorder: focusBorder = "focusBorder".asInstanceOf[focusBorder]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def greenDark: greenDark = "greenDark".asInstanceOf[greenDark]
-  @scala.inline
-  def greenLight: greenLight = "greenLight".asInstanceOf[greenLight]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def infoBackground: infoBackground = "infoBackground".asInstanceOf[infoBackground]
-  @scala.inline
-  def infoIcon: infoIcon = "infoIcon".asInstanceOf[infoIcon]
-  @scala.inline
-  def inputBackground: inputBackground = "inputBackground".asInstanceOf[inputBackground]
-  @scala.inline
-  def inputBackgroundChecked: inputBackgroundChecked = "inputBackgroundChecked".asInstanceOf[inputBackgroundChecked]
-  @scala.inline
-  def inputBackgroundCheckedHovered: inputBackgroundCheckedHovered = "inputBackgroundCheckedHovered".asInstanceOf[inputBackgroundCheckedHovered]
-  @scala.inline
-  def inputBorder: inputBorder = "inputBorder".asInstanceOf[inputBorder]
-  @scala.inline
-  def inputBorderHovered: inputBorderHovered = "inputBorderHovered".asInstanceOf[inputBorderHovered]
-  @scala.inline
-  def inputFocusBorderAlt: inputFocusBorderAlt = "inputFocusBorderAlt".asInstanceOf[inputFocusBorderAlt]
-  @scala.inline
-  def inputForegroundChecked: inputForegroundChecked = "inputForegroundChecked".asInstanceOf[inputForegroundChecked]
-  @scala.inline
-  def inputIcon: inputIcon = "inputIcon".asInstanceOf[inputIcon]
-  @scala.inline
-  def inputIconDisabled: inputIconDisabled = "inputIconDisabled".asInstanceOf[inputIconDisabled]
-  @scala.inline
-  def inputIconHovered: inputIconHovered = "inputIconHovered".asInstanceOf[inputIconHovered]
-  @scala.inline
-  def inputPlaceholderBackgroundChecked: inputPlaceholderBackgroundChecked = "inputPlaceholderBackgroundChecked".asInstanceOf[inputPlaceholderBackgroundChecked]
-  @scala.inline
-  def inputPlaceholderText: inputPlaceholderText = "inputPlaceholderText".asInstanceOf[inputPlaceholderText]
-  @scala.inline
-  def inputText: inputText = "inputText".asInstanceOf[inputText]
-  @scala.inline
-  def inputTextHovered: inputTextHovered = "inputTextHovered".asInstanceOf[inputTextHovered]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def linkHovered: linkHovered = "linkHovered".asInstanceOf[linkHovered]
-  @scala.inline
-  def listBackground: listBackground = "listBackground".asInstanceOf[listBackground]
-  @scala.inline
-  def listHeaderBackgroundHovered: listHeaderBackgroundHovered = "listHeaderBackgroundHovered".asInstanceOf[listHeaderBackgroundHovered]
-  @scala.inline
-  def listHeaderBackgroundPressed: listHeaderBackgroundPressed = "listHeaderBackgroundPressed".asInstanceOf[listHeaderBackgroundPressed]
-  @scala.inline
-  def listItemBackgroundChecked: listItemBackgroundChecked = "listItemBackgroundChecked".asInstanceOf[listItemBackgroundChecked]
-  @scala.inline
-  def listItemBackgroundCheckedHovered: listItemBackgroundCheckedHovered = "listItemBackgroundCheckedHovered".asInstanceOf[listItemBackgroundCheckedHovered]
-  @scala.inline
-  def listItemBackgroundHovered: listItemBackgroundHovered = "listItemBackgroundHovered".asInstanceOf[listItemBackgroundHovered]
-  @scala.inline
-  def listText: listText = "listText".asInstanceOf[listText]
-  @scala.inline
-  def listTextColor: listTextColor = "listTextColor".asInstanceOf[listTextColor]
-  @scala.inline
-  def magenta: magenta = "magenta".asInstanceOf[magenta]
-  @scala.inline
-  def magentaDark: magentaDark = "magentaDark".asInstanceOf[magentaDark]
-  @scala.inline
-  def magentaLight: magentaLight = "magentaLight".asInstanceOf[magentaLight]
-  @scala.inline
-  def menuBackground: menuBackground = "menuBackground".asInstanceOf[menuBackground]
-  @scala.inline
-  def menuDivider: menuDivider = "menuDivider".asInstanceOf[menuDivider]
-  @scala.inline
-  def menuHeader: menuHeader = "menuHeader".asInstanceOf[menuHeader]
-  @scala.inline
-  def menuIcon: menuIcon = "menuIcon".asInstanceOf[menuIcon]
-  @scala.inline
-  def menuItemBackgroundChecked: menuItemBackgroundChecked = "menuItemBackgroundChecked".asInstanceOf[menuItemBackgroundChecked]
-  @scala.inline
-  def menuItemBackgroundHovered: menuItemBackgroundHovered = "menuItemBackgroundHovered".asInstanceOf[menuItemBackgroundHovered]
-  @scala.inline
-  def menuItemBackgroundPressed: menuItemBackgroundPressed = "menuItemBackgroundPressed".asInstanceOf[menuItemBackgroundPressed]
-  @scala.inline
-  def menuItemText: menuItemText = "menuItemText".asInstanceOf[menuItemText]
-  @scala.inline
-  def menuItemTextHovered: menuItemTextHovered = "menuItemTextHovered".asInstanceOf[menuItemTextHovered]
-  @scala.inline
-  def messageLink: messageLink = "messageLink".asInstanceOf[messageLink]
-  @scala.inline
-  def messageLinkHovered: messageLinkHovered = "messageLinkHovered".asInstanceOf[messageLinkHovered]
-  @scala.inline
-  def messageText: messageText = "messageText".asInstanceOf[messageText]
-  @scala.inline
-  def neutral: neutral = "neutral".asInstanceOf[neutral]
-  @scala.inline
-  def neutralDark: neutralDark = "neutralDark".asInstanceOf[neutralDark]
-  @scala.inline
-  def neutralLight: neutralLight = "neutralLight".asInstanceOf[neutralLight]
-  @scala.inline
-  def neutralLighter: neutralLighter = "neutralLighter".asInstanceOf[neutralLighter]
-  @scala.inline
-  def neutralLighterAlt: neutralLighterAlt = "neutralLighterAlt".asInstanceOf[neutralLighterAlt]
-  @scala.inline
-  def neutralPrimary: neutralPrimary = "neutralPrimary".asInstanceOf[neutralPrimary]
-  @scala.inline
-  def neutralPrimaryAlt: neutralPrimaryAlt = "neutralPrimaryAlt".asInstanceOf[neutralPrimaryAlt]
-  @scala.inline
-  def neutralQuaternary: neutralQuaternary = "neutralQuaternary".asInstanceOf[neutralQuaternary]
-  @scala.inline
-  def neutralQuaternaryAlt: neutralQuaternaryAlt = "neutralQuaternaryAlt".asInstanceOf[neutralQuaternaryAlt]
-  @scala.inline
-  def neutralSecondary: neutralSecondary = "neutralSecondary".asInstanceOf[neutralSecondary]
-  @scala.inline
-  def neutralSecondaryAlt: neutralSecondaryAlt = "neutralSecondaryAlt".asInstanceOf[neutralSecondaryAlt]
-  @scala.inline
-  def neutralTertiary: neutralTertiary = "neutralTertiary".asInstanceOf[neutralTertiary]
-  @scala.inline
-  def neutralTertiaryAlt: neutralTertiaryAlt = "neutralTertiaryAlt".asInstanceOf[neutralTertiaryAlt]
-  @scala.inline
-  def orange: orange = "orange".asInstanceOf[orange]
-  @scala.inline
-  def orangeLight: orangeLight = "orangeLight".asInstanceOf[orangeLight]
-  @scala.inline
-  def orangeLighter: orangeLighter = "orangeLighter".asInstanceOf[orangeLighter]
-  @scala.inline
-  def primaryButtonBackground: primaryButtonBackground = "primaryButtonBackground".asInstanceOf[primaryButtonBackground]
-  @scala.inline
-  def primaryButtonBackgroundDisabled: primaryButtonBackgroundDisabled = "primaryButtonBackgroundDisabled".asInstanceOf[primaryButtonBackgroundDisabled]
-  @scala.inline
-  def primaryButtonBackgroundHovered: primaryButtonBackgroundHovered = "primaryButtonBackgroundHovered".asInstanceOf[primaryButtonBackgroundHovered]
-  @scala.inline
-  def primaryButtonBackgroundPressed: primaryButtonBackgroundPressed = "primaryButtonBackgroundPressed".asInstanceOf[primaryButtonBackgroundPressed]
-  @scala.inline
-  def primaryButtonBorder: primaryButtonBorder = "primaryButtonBorder".asInstanceOf[primaryButtonBorder]
-  @scala.inline
-  def primaryButtonText: primaryButtonText = "primaryButtonText".asInstanceOf[primaryButtonText]
-  @scala.inline
-  def primaryButtonTextDisabled: primaryButtonTextDisabled = "primaryButtonTextDisabled".asInstanceOf[primaryButtonTextDisabled]
-  @scala.inline
-  def primaryButtonTextHovered: primaryButtonTextHovered = "primaryButtonTextHovered".asInstanceOf[primaryButtonTextHovered]
-  @scala.inline
-  def primaryButtonTextPressed: primaryButtonTextPressed = "primaryButtonTextPressed".asInstanceOf[primaryButtonTextPressed]
-  @scala.inline
-  def purple: purple = "purple".asInstanceOf[purple]
-  @scala.inline
-  def purpleDark: purpleDark = "purpleDark".asInstanceOf[purpleDark]
-  @scala.inline
-  def purpleLight: purpleLight = "purpleLight".asInstanceOf[purpleLight]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def redDark: redDark = "redDark".asInstanceOf[redDark]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def severeWarningBackground: severeWarningBackground = "severeWarningBackground".asInstanceOf[severeWarningBackground]
-  @scala.inline
-  def severeWarningIcon: severeWarningIcon = "severeWarningIcon".asInstanceOf[severeWarningIcon]
-  @scala.inline
-  def smallInputBorder: smallInputBorder = "smallInputBorder".asInstanceOf[smallInputBorder]
-  @scala.inline
-  def soft: soft = "soft".asInstanceOf[soft]
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
-  @scala.inline
-  def successBackground: successBackground = "successBackground".asInstanceOf[successBackground]
-  @scala.inline
-  def successIcon: successIcon = "successIcon".asInstanceOf[successIcon]
-  @scala.inline
-  def successText: successText = "successText".asInstanceOf[successText]
-  @scala.inline
-  def teal: teal = "teal".asInstanceOf[teal]
-  @scala.inline
-  def tealDark: tealDark = "tealDark".asInstanceOf[tealDark]
-  @scala.inline
-  def tealLight: tealLight = "tealLight".asInstanceOf[tealLight]
-  @scala.inline
-  def themeDark: themeDark = "themeDark".asInstanceOf[themeDark]
-  @scala.inline
-  def themeDarkAlt: themeDarkAlt = "themeDarkAlt".asInstanceOf[themeDarkAlt]
-  @scala.inline
-  def themeDarker: themeDarker = "themeDarker".asInstanceOf[themeDarker]
-  @scala.inline
-  def themeLight: themeLight = "themeLight".asInstanceOf[themeLight]
-  @scala.inline
-  def themeLighter: themeLighter = "themeLighter".asInstanceOf[themeLighter]
-  @scala.inline
-  def themeLighterAlt: themeLighterAlt = "themeLighterAlt".asInstanceOf[themeLighterAlt]
-  @scala.inline
-  def themePrimary: themePrimary = "themePrimary".asInstanceOf[themePrimary]
-  @scala.inline
-  def themeSecondary: themeSecondary = "themeSecondary".asInstanceOf[themeSecondary]
-  @scala.inline
-  def themeTertiary: themeTertiary = "themeTertiary".asInstanceOf[themeTertiary]
-  @scala.inline
-  def variantBorder: variantBorder = "variantBorder".asInstanceOf[variantBorder]
-  @scala.inline
-  def variantBorderHovered: variantBorderHovered = "variantBorderHovered".asInstanceOf[variantBorderHovered]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def warningBackground: warningBackground = "warningBackground".asInstanceOf[warningBackground]
-  @scala.inline
-  def warningHighlight: warningHighlight = "warningHighlight".asInstanceOf[warningHighlight]
-  @scala.inline
-  def warningIcon: warningIcon = "warningIcon".asInstanceOf[warningIcon]
-  @scala.inline
-  def warningText: warningText = "warningText".asInstanceOf[warningText]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
-  @scala.inline
-  def whiteTranslucent40: whiteTranslucent40 = "whiteTranslucent40".asInstanceOf[whiteTranslucent40]
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
-  @scala.inline
-  def yellowDark: yellowDark = "yellowDark".asInstanceOf[yellowDark]
-  @scala.inline
-  def yellowLight: yellowLight = "yellowLight".asInstanceOf[yellowLight]
 }
-

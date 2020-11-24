@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.cardTextMod.CardTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "CardText")
+@JSImport("reactstrap/lib", "CardText")
 @js.native
-class CardText[T] ()
+class CardText ()
   extends Component[CardTextProps, js.Object, js.Any]
-

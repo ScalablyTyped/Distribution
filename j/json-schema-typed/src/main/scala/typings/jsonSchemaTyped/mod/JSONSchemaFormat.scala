@@ -3,14 +3,17 @@ package typings.jsonSchemaTyped.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait JSONSchemaFormat extends js.Object
-
 @JSImport("json-schema-typed", "JSONSchemaFormat")
 @js.native
 object JSONSchemaFormat extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[JSONSchemaFormat with String] = js.native
+  
   /**
     * A string instance is valid against this attribute if it is a valid
     * representation according to the "full-date" production in
@@ -20,6 +23,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Date extends JSONSchemaFormat
+  /* "date" */ @js.native
+  object Date extends TopLevel[Date with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid
@@ -30,6 +35,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait DateTime extends JSONSchemaFormat
+  /* "date-time" */ @js.native
+  object DateTime extends TopLevel[DateTime with String]
   
   /**
     * A string instance is valid against these attributes if it is a valid
@@ -39,6 +46,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Email extends JSONSchemaFormat
+  /* "email" */ @js.native
+  object Email extends TopLevel[Email with String]
   
   /**
     * As defined by [RFC 1034, section 3.1][RFC1034], including host names
@@ -50,6 +59,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Hostname extends JSONSchemaFormat
+  /* "hostname" */ @js.native
+  object Hostname extends TopLevel[Hostname with String]
   
   /**
     * A string instance is valid against these attributes if it is a valid
@@ -59,6 +70,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IDNEmail extends JSONSchemaFormat
+  /* "idn-email" */ @js.native
+  object IDNEmail extends TopLevel[IDNEmail with String]
   
   /**
     * As defined by either [RFC 1034, section 3.1][RFC1034] as for hostname, or
@@ -70,6 +83,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IDNHostname extends JSONSchemaFormat
+  /* "idn-hostname" */ @js.native
+  object IDNHostname extends TopLevel[IDNHostname with String]
   
   /**
     * An IPv4 address according to the "dotted-quad" ABNF syntax as defined in
@@ -79,6 +94,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IPv4 extends JSONSchemaFormat
+  /* "ipv4" */ @js.native
+  object IPv4 extends TopLevel[IPv4 with String]
   
   /**
     * An IPv6 address as defined in [RFC 4291, section 2.2][RFC4291].
@@ -87,6 +104,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IPv6 extends JSONSchemaFormat
+  /* "ipv6" */ @js.native
+  object IPv6 extends TopLevel[IPv6 with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid IRI,
@@ -96,6 +115,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IRI extends JSONSchemaFormat
+  /* "iri" */ @js.native
+  object IRI extends TopLevel[IRI with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid IRI
@@ -106,6 +127,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IRIReference extends JSONSchemaFormat
+  /* "iri-reference" */ @js.native
+  object IRIReference extends TopLevel[IRIReference with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid JSON
@@ -116,6 +139,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait JSONPointer extends JSONSchemaFormat
+  /* "json-pointer" */ @js.native
+  object JSONPointer extends TopLevel[JSONPointer with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid JSON
@@ -126,6 +151,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait JSONPointerURIFragment extends JSONSchemaFormat
+  /* "json-pointer-uri-fragment" */ @js.native
+  object JSONPointerURIFragment extends TopLevel[JSONPointerURIFragment with String]
   
   /**
     * This attribute applies to string instances.
@@ -143,6 +170,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait RegEx extends JSONSchemaFormat
+  /* "regex" */ @js.native
+  object RegEx extends TopLevel[RegEx with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid
@@ -152,6 +181,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait RelativeJSONPointer extends JSONSchemaFormat
+  /* "relative-json-pointer" */ @js.native
+  object RelativeJSONPointer extends TopLevel[RelativeJSONPointer with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid
@@ -161,6 +192,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Time extends JSONSchemaFormat
+  /* "time" */ @js.native
+  object Time extends TopLevel[Time with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid URI,
@@ -170,6 +203,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait URI extends JSONSchemaFormat
+  /* "uri" */ @js.native
+  object URI extends TopLevel[URI with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid URI
@@ -180,6 +215,8 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait URIReference extends JSONSchemaFormat
+  /* "uri-reference" */ @js.native
+  object URIReference extends TopLevel[URIReference with String]
   
   /**
     * A string instance is valid against this attribute if it is a valid URI
@@ -192,71 +229,14 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait URITemplate extends JSONSchemaFormat
+  /* "uri-template" */ @js.native
+  object URITemplate extends TopLevel[URITemplate with String]
   
   /**
     * UUID
     */
   @js.native
   sealed trait UUID extends JSONSchemaFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[JSONSchemaFormat with String] = js.native
-  /* "date" */ @js.native
-  object Date extends TopLevel[Date with String]
-  
-  /* "date-time" */ @js.native
-  object DateTime extends TopLevel[DateTime with String]
-  
-  /* "email" */ @js.native
-  object Email extends TopLevel[Email with String]
-  
-  /* "hostname" */ @js.native
-  object Hostname extends TopLevel[Hostname with String]
-  
-  /* "idn-email" */ @js.native
-  object IDNEmail extends TopLevel[IDNEmail with String]
-  
-  /* "idn-hostname" */ @js.native
-  object IDNHostname extends TopLevel[IDNHostname with String]
-  
-  /* "ipv4" */ @js.native
-  object IPv4 extends TopLevel[IPv4 with String]
-  
-  /* "ipv6" */ @js.native
-  object IPv6 extends TopLevel[IPv6 with String]
-  
-  /* "iri" */ @js.native
-  object IRI extends TopLevel[IRI with String]
-  
-  /* "iri-reference" */ @js.native
-  object IRIReference extends TopLevel[IRIReference with String]
-  
-  /* "json-pointer" */ @js.native
-  object JSONPointer extends TopLevel[JSONPointer with String]
-  
-  /* "json-pointer-uri-fragment" */ @js.native
-  object JSONPointerURIFragment extends TopLevel[JSONPointerURIFragment with String]
-  
-  /* "regex" */ @js.native
-  object RegEx extends TopLevel[RegEx with String]
-  
-  /* "relative-json-pointer" */ @js.native
-  object RelativeJSONPointer extends TopLevel[RelativeJSONPointer with String]
-  
-  /* "time" */ @js.native
-  object Time extends TopLevel[Time with String]
-  
-  /* "uri" */ @js.native
-  object URI extends TopLevel[URI with String]
-  
-  /* "uri-reference" */ @js.native
-  object URIReference extends TopLevel[URIReference with String]
-  
-  /* "uri-template" */ @js.native
-  object URITemplate extends TopLevel[URITemplate with String]
-  
   /* "uuid" */ @js.native
   object UUID extends TopLevel[UUID with String]
-  
 }
-

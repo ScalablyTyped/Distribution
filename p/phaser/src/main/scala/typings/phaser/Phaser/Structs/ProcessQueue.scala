@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Process Queue maintains three internal lists.
@@ -20,10 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ProcessQueue[T] extends EventEmitter {
-  /**
-    * The number of entries in the active list.
-    */
-  val length: integer = js.native
+  
   /**
     * Adds a new item to the Process Queue.
     * 
@@ -31,6 +28,7 @@ trait ProcessQueue[T] extends EventEmitter {
     * @param item The item to add to the queue.
     */
   def add(item: T): ProcessQueue[T] = js.native
+  
   /**
     * Returns the current list of active items.
     * 
@@ -38,6 +36,12 @@ trait ProcessQueue[T] extends EventEmitter {
     * Therefore, be careful to not modify this array outside of the ProcessQueue.
     */
   def getActive(): js.Array[T] = js.native
+  
+  /**
+    * The number of entries in the active list.
+    */
+  val length: integer = js.native
+  
   /**
     * Removes an item from the Process Queue.
     * 
@@ -45,12 +49,14 @@ trait ProcessQueue[T] extends EventEmitter {
     * @param item The item to be removed from the queue.
     */
   def remove(item: T): ProcessQueue[T] = js.native
+  
   /**
     * Removes all active items from this Process Queue.
     * 
     * All the items are marked as 'pending destroy' and fully removed in the next update.
     */
   def removeAll(): this.type = js.native
+  
   /**
     * Update this queue. First it will process any items awaiting destruction, and remove them.
     * 
@@ -59,4 +65,3 @@ trait ProcessQueue[T] extends EventEmitter {
     */
   def update(): js.Array[T] = js.native
 }
-

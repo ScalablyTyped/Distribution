@@ -2,13 +2,14 @@ package typings.phaser.Phaser.GameObjects.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for getting and setting the Scroll Factor of a Game Object.
   */
 @js.native
 trait ScrollFactor extends js.Object {
+  
   /**
     * The horizontal scroll factor of this Game Object.
     * 
@@ -27,6 +28,7 @@ trait ScrollFactor extends js.Object {
     * them from physics bodies if not accounted for in your code.
     */
   var scrollFactorX: Double = js.native
+  
   /**
     * The vertical scroll factor of this Game Object.
     * 
@@ -45,6 +47,7 @@ trait ScrollFactor extends js.Object {
     * them from physics bodies if not accounted for in your code.
     */
   var scrollFactorY: Double = js.native
+  
   /**
     * Sets the scroll factor of this Game Object.
     * 
@@ -67,4 +70,3 @@ trait ScrollFactor extends js.Object {
   def setScrollFactor(x: Double): this.type = js.native
   def setScrollFactor(x: Double, y: Double): this.type = js.native
 }
-

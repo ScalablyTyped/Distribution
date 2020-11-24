@@ -121,14 +121,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojLabelValue extends JetElement[ojLabelValueSettableProperties] {
-  var labelEdge: start | top | inherit = js.native
-  var labelWidth: String = js.native
-  var onLabelEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[start | top | inherit], _]) | Null = js.native
-  var onLabelWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
   def addEventListener(
     `type`: labelEdgeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[start | top | inherit], _]
@@ -924,13 +921,25 @@ trait ojLabelValue extends JetElement[ojLabelValueSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_labelEdge(property: labelEdge): start | top | inherit = js.native
   @JSName("getProperty")
   def getProperty_labelWidth(property: labelWidth): String = js.native
+  
+  var labelEdge: start | top | inherit = js.native
+  
+  var labelWidth: String = js.native
+  
+  var onLabelEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[start | top | inherit], _]) | Null = js.native
+  
+  var onLabelWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
   def refresh(): Unit = js.native
+  
   def setProperties(properties: ojLabelValueSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: labelEdge, value: inherit): Unit = js.native
   def setProperty(property: labelEdge, value: start): Unit = js.native
   def setProperty(property: labelEdge, value: top): Unit = js.native
@@ -938,4 +947,3 @@ trait ojLabelValue extends JetElement[ojLabelValueSettableProperties] {
   @JSName("setProperty")
   def setProperty_labelWidth(property: labelWidth, value: String): Unit = js.native
 }
-

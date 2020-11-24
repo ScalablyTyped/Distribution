@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GlyphType extends js.Object
-
 /**
   * An enumeration of the supported glyph types.
   *
@@ -25,6 +24,7 @@ sealed trait GlyphType extends js.Object
 @JSGlobal("GoogleAppsScript.Document.GlyphType")
 @js.native
 object GlyphType extends js.Object {
+  
   @js.native
   sealed trait BULLET extends GlyphType
   
@@ -48,6 +48,4 @@ object GlyphType extends js.Object {
   
   @js.native
   sealed trait SQUARE_BULLET extends GlyphType
-  
 }
-

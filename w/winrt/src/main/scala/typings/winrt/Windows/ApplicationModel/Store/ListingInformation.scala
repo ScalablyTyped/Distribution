@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Store
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListingInformation extends IListingInformation
-
 object ListingInformation {
+  
   @scala.inline
   def apply(
     ageRating: Double,
@@ -22,4 +22,3 @@ object ListingInformation {
     __obj.asInstanceOf[ListingInformation]
   }
 }
-

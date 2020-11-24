@@ -6,7 +6,7 @@ import typings.html5plus.html5plusStrings.gcj02
 import typings.html5plus.html5plusStrings.wgs84
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地理编码转换的参数
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusMapsGeocodeOptions extends js.Object {
+  
   /**
     * 源地址所属的城市
     * 仅在地理编码转换时生效，如果不指定则在全国范围内区配转换。
@@ -22,6 +23,7 @@ trait PlusMapsGeocodeOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var city: js.UndefOr[String] = js.native
+  
   /**
     * 源数据的坐标系类型
     * 仅在反向地理编码转换时生效。
@@ -36,33 +38,39 @@ trait PlusMapsGeocodeOptions extends js.Object {
     */
   var coordType: js.UndefOr[wgs84 | gcj02 | bd09 | bd09ll] = js.native
 }
-
 object PlusMapsGeocodeOptions {
+  
   @scala.inline
   def apply(): PlusMapsGeocodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsGeocodeOptions]
   }
+  
   @scala.inline
   implicit class PlusMapsGeocodeOptionsOps[Self <: PlusMapsGeocodeOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCity: Self = this.set("city", js.undefined)
+    
     @scala.inline
     def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = this.set("coordType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCoordType: Self = this.set("coordType", js.undefined)
   }
-  
 }
-

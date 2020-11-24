@@ -4,11 +4,12 @@ import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("builder-util", "executeAppBuilder")
 @js.native
 object executeAppBuilder extends js.Object {
+  
   def apply(args: js.Array[String]): js.Promise[String] = js.native
   def apply(
     args: js.Array[String],
@@ -46,4 +47,3 @@ object executeAppBuilder extends js.Object {
     maxRetries: Double
   ): js.Promise[String] = js.native
 }
-

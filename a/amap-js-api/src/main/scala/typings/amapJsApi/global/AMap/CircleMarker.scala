@@ -2,9 +2,8 @@ package typings.amapJsApi.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line;
 /**
   * 圆点标记
   */
@@ -12,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class CircleMarker[ExtraData] ()
   extends typings.amapJsApi.AMap.Circle[ExtraData]
-

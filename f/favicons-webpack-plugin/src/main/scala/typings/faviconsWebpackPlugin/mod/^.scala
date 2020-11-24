@@ -1,14 +1,16 @@
 package typings.faviconsWebpackPlugin.mod
 
-import typings.std.Plugin
+import typings.faviconsWebpackPlugin.optionsMod.FaviconWebpackPlugionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("favicons-webpack-plugin", JSImport.Namespace)
+@JSImport("favicons-webpack-plugin/src", JSImport.Namespace)
 @js.native
-class ^ () extends Plugin {
-  def this(options: String) = this()
-  def this(options: Options) = this()
+class ^ protected () extends FaviconsWebpackPlugin {
+  /**
+    * @param {import('./options').FaviconWebpackPlugionOptions | string} args
+    */
+  def this(args: String) = this()
+  def this(args: FaviconWebpackPlugionOptions) = this()
 }
-

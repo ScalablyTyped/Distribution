@@ -4,12 +4,13 @@ import typings.winrtUwp.Windows.Foundation.Numerics.Vector2
 import typings.winrtUwp.Windows.Foundation.Numerics.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Accesses and controls the device for variable photo sequences. */
 @JSGlobal("Windows.Media.Devices.Core")
 @js.native
 object Core extends js.Object {
+  
   /** Represents the intrinsics that describe the camera distortion model. */
   @js.native
   class CameraIntrinsics protected ()
@@ -74,6 +75,20 @@ object Core extends js.Object {
   abstract class FrameFlashControl ()
     extends typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashControl
   
+  /** Specifies the flash mode for a frame in a variable photo sequence. */
+  @js.native
+  object FrameFlashMode extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode with Double] = js.native
+    
+    /* 0 */ val disable: typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode.disable with Double = js.native
+    
+    /* 1 */ val enable: typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode.enable with Double = js.native
+    
+    /* 2 */ val global: typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode.global with Double = js.native
+  }
+  
   /** Provides information about the focus capabilities of the capture device for frames in a variable photo sequences. */
   @js.native
   abstract class FrameFocusCapabilities ()
@@ -98,16 +113,4 @@ object Core extends js.Object {
   @js.native
   abstract class VariablePhotoSequenceController ()
     extends typings.winrtUwp.Windows.Media.Devices.Core.VariablePhotoSequenceController
-  
-  /** Specifies the flash mode for a frame in a variable photo sequence. */
-  @js.native
-  object FrameFlashMode extends js.Object {
-    /* 0 */ val disable: typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode.disable with Double = js.native
-    /* 1 */ val enable: typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode.enable with Double = js.native
-    /* 2 */ val global: typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode.global with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashMode with Double] = js.native
-  }
-  
 }
-

@@ -5,9 +5,73 @@ import typings.eonasdanBootstrapDatetimepicker.mod.UseCurrent
 import typings.eonasdanBootstrapDatetimepicker.mod.ViewMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eonasdanBootstrapDatetimepickerStrings {
+  
+  @scala.inline
+  def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def day: day = "day".asInstanceOf[day]
+  
+  @scala.inline
+  def days: days = "days".asInstanceOf[days]
+  
+  @scala.inline
+  def decades: decades = "decades".asInstanceOf[decades]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
+  
+  @scala.inline
+  def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
+  
+  @scala.inline
+  def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
+  
+  @scala.inline
+  def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
+  
+  @scala.inline
+  def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
+  
+  @scala.inline
+  def hour: hour = "hour".asInstanceOf[hour]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def minute: minute = "minute".asInstanceOf[minute]
+  
+  @scala.inline
+  def month: month = "month".asInstanceOf[month]
+  
+  @scala.inline
+  def months: months = "months".asInstanceOf[months]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def year: year = "year".asInstanceOf[year]
+  
+  @scala.inline
+  def years: years = "years".asInstanceOf[years]
+  
   @js.native
   sealed trait DateTimePicker extends js.Object
   
@@ -70,48 +134,4 @@ object eonasdanBootstrapDatetimepickerStrings {
   
   @js.native
   sealed trait years extends ViewMode
-  
-  @scala.inline
-  def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def decades: decades = "decades".asInstanceOf[decades]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
-  @scala.inline
-  def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
-  @scala.inline
-  def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
-  @scala.inline
-  def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
-  @scala.inline
-  def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
 }
-

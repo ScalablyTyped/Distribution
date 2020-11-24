@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ActivationKind extends js.Object
-
 /** Specifies the type of activation. */
 @JSGlobal("Windows.ApplicationModel.Activation.ActivationKind")
 @js.native
 object ActivationKind extends js.Object {
+  
   /** The user wants to manage appointments that are provided by the app. */
   @js.native
   sealed trait appointmentsProvider extends ActivationKind
@@ -134,6 +134,4 @@ object ActivationKind extends js.Object {
   /** Windows Phone only. The app was activated after the app was suspended for a web authentication broker operation. */
   @js.native
   sealed trait webAuthenticationBrokerContinuation extends ActivationKind
-  
 }
-

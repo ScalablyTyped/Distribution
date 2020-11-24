@@ -6,7 +6,7 @@ import typings.openlayers.mod.olx.control.MousePositionOptions
 import typings.openlayers.mod.proj.Projection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 class MousePosition () extends Control {
   def this(opt_options: MousePositionOptions) = this()
+  
   /**
     * Return the coordinate format type used to render the current position or
     * undefined.
@@ -43,6 +44,7 @@ class MousePosition () extends Control {
     * @api stable
     */
   def getCoordinateFormat(): CoordinateFormatType = js.native
+  
   /**
     * Return the projection that is used to report the mouse position.
     * @return The projection to report mouse
@@ -51,6 +53,7 @@ class MousePosition () extends Control {
     * @api stable
     */
   def getProjection(): Projection = js.native
+  
   /**
     * Set the coordinate format type used to render the current position.
     * @param format The format to render the current
@@ -59,6 +62,7 @@ class MousePosition () extends Control {
     * @api stable
     */
   def setCoordinateFormat(format: CoordinateFormatType): Unit = js.native
+  
   /**
     * Set the projection that is used to report the mouse position.
     * @param projection The projection to report mouse
@@ -68,11 +72,11 @@ class MousePosition () extends Control {
     */
   def setProjection(projection: Projection): Unit = js.native
 }
-
 /* static members */
 @JSImport("openlayers", "control.MousePosition")
 @js.native
 object MousePosition extends js.Object {
+  
   /**
     * Update the mouseposition element.
     * @param mapEvent Map event.
@@ -80,4 +84,3 @@ object MousePosition extends js.Object {
     */
   def render(mapEvent: MapEvent): Unit = js.native
 }
-

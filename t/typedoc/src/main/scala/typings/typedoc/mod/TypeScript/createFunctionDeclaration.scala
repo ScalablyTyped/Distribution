@@ -11,11 +11,13 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createFunctionDeclaration")
 @js.native
 object createFunctionDeclaration extends js.Object {
+  
+  /** @deprecated Use `factory.createFunctionDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
@@ -27,4 +29,3 @@ object createFunctionDeclaration extends js.Object {
     body: js.UndefOr[Block]
   ): FunctionDeclaration = js.native
 }
-

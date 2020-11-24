@@ -4,7 +4,7 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FilterPostProcess")
 @js.native
@@ -22,38 +22,41 @@ class FilterPostProcess protected ()
     */
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
@@ -61,8 +64,15 @@ class FilterPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
@@ -70,8 +80,34 @@ class FilterPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
@@ -80,8 +116,34 @@ class FilterPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    /** The matrix to be applied to the image */
-  kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: typings.babylonjs.BABYLON.Matrix,
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
@@ -89,4 +151,16 @@ class FilterPostProcess protected ()
     reusable: Boolean
   ) = this()
 }
-
+/* static members */
+@JSGlobal("BABYLON.FilterPostProcess")
+@js.native
+object FilterPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.BABYLON.Camera,
+    scene: typings.babylonjs.BABYLON.Scene,
+    rootUrl: String
+  ): Nullable[typings.babylonjs.BABYLON.FilterPostProcess] = js.native
+}

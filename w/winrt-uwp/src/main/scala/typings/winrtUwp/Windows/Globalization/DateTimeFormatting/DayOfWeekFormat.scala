@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Globalization.DateTimeFormatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DayOfWeekFormat extends js.Object
-
 /** Specifies the intended format for the day of the week in a DateTimeFormatter object. */
 @JSGlobal("Windows.Globalization.DateTimeFormatting.DayOfWeekFormat")
 @js.native
 object DayOfWeekFormat extends js.Object {
+  
   /** Display an abbreviated version of the day of the week (for example, "Thur" for Thursday). */
   @js.native
   sealed trait abbreviated extends DayOfWeekFormat
@@ -26,6 +26,4 @@ object DayOfWeekFormat extends js.Object {
   /** Do not display the day of the week. */
   @js.native
   sealed trait none extends DayOfWeekFormat
-  
 }
-

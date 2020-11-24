@@ -4,7 +4,7 @@ import typings.titanium.Titanium.Proxy
 import typings.titanium.titaniumStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The UserDefaults module is used for storing application-related data in property/value pairs
@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UserDefaults extends Proxy {
-  /**
-    * Sets the name of the suite to be used to access UserDefaults.
-    */
-  var suiteName: String = js.native
+  
   /**
     * Adds the specified callback as an event listener for the named event.
     */
@@ -25,6 +22,7 @@ trait UserDefaults extends Proxy {
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ UserDefaultsChangeEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Fires a synthesized event to any registered listeners.
     */
@@ -32,11 +30,13 @@ trait UserDefaults extends Proxy {
   def fireEvent_change(name: change): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_change(name: change, event: UserDefaultsChangeEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.App.iOS.UserDefaults.suiteName> property.
     * @deprecated Access <Titanium.App.iOS.UserDefaults.suiteName> instead.
     */
   def getSuiteName(): String = js.native
+  
   /**
     * Removes the specified callback as an event listener for the named event.
     */
@@ -45,10 +45,15 @@ trait UserDefaults extends Proxy {
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ UserDefaultsChangeEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.App.iOS.UserDefaults.suiteName> property.
     * @deprecated Set the value using <Titanium.App.iOS.UserDefaults.suiteName> instead.
     */
   def setSuiteName(suiteName: String): Unit = js.native
+  
+  /**
+    * Sets the name of the suite to be used to access UserDefaults.
+    */
+  var suiteName: String = js.native
 }
-

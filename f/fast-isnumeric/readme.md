@@ -10,9 +10,9 @@ The fast way to check if a JS object is numeric
 | ------------------ | :-------------: |
 | Full name          | fast-isnumeric |
 | Keywords           | number, numeric, isnumeric, fast |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 2278020 |
+| # releases         | 3 |
+| # dependents       | 21 |
+| # downloads        | 2887346 |
 | # stars            | 0 |
 
 ## Links

@@ -72,10 +72,11 @@ import typings.activexInfopath.anon.PfCancel
 import typings.activexInfopath.anon.PpvObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: ApplicationEvents,
     event: NewXDocument,
@@ -344,4 +345,3 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }
-

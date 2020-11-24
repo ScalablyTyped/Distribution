@@ -2,7 +2,7 @@ package typings.aframe.mod.THREE
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.QuadraticBezierCurve")
 @js.native
@@ -14,4 +14,3 @@ class QuadraticBezierCurve protected ()
     v2: typings.three.vector2Mod.Vector2
   ) = this()
 }
-

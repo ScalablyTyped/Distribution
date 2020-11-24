@@ -3,17 +3,17 @@ package typings.guacamoleClient.mod
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "AudioPlayer")
 @js.native
 class AudioPlayer ()
   extends typings.guacamoleClient.audioPlayerMod.AudioPlayer
-
 /* static members */
 @JSImport("guacamole-client", "AudioPlayer")
 @js.native
 object AudioPlayer extends js.Object {
+  
   /**
     * Returns an instance of Guacamole.AudioPlayer providing support for the given
     * audio format. If support for the given audio format is not available, null
@@ -25,6 +25,7 @@ object AudioPlayer extends js.Object {
     * reading from the given stream, or null if support for the given mimetype is absent.
     */
   def getInstance(stream: typings.guacamoleClient.inputStreamMod.InputStream, mimetype: Mimetype): typings.guacamoleClient.audioPlayerMod.AudioPlayer | Null = js.native
+  
   /**
     * Returns a list of all mimetypes supported by any built-in
     * Guacamole.AudioPlayer, in rough order of priority. Beware that only the core
@@ -37,4 +38,3 @@ object AudioPlayer extends js.Object {
     */
   def getSupportedTypes(): js.Array[Mimetype] = js.native
 }
-

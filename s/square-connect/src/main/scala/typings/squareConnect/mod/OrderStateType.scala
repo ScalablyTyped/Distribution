@@ -2,7 +2,7 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.squareConnect.squareConnectStrings.OPEN
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.squareConnect.squareConnectStrings.CANCELED
 */
 trait OrderStateType extends js.Object
-
 object OrderStateType {
+  
   @scala.inline
   def CANCELED: typings.squareConnect.squareConnectStrings.CANCELED = "CANCELED".asInstanceOf[typings.squareConnect.squareConnectStrings.CANCELED]
+  
   @scala.inline
   def COMPLETED: typings.squareConnect.squareConnectStrings.COMPLETED = "COMPLETED".asInstanceOf[typings.squareConnect.squareConnectStrings.COMPLETED]
+  
   @scala.inline
   def OPEN: typings.squareConnect.squareConnectStrings.OPEN = "OPEN".asInstanceOf[typings.squareConnect.squareConnectStrings.OPEN]
 }
-

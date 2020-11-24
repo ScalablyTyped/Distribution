@@ -2,7 +2,7 @@ package typings.googleapisCommon.schemaMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.googleapisCommon.googleapisCommonStrings.GET
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.googleapisCommon.googleapisCommonStrings.PUT
 */
 trait HttpMethod extends js.Object
-
 object HttpMethod {
+  
   @scala.inline
   def GET: typings.googleapisCommon.googleapisCommonStrings.GET = "GET".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.GET]
+  
   @scala.inline
   def PATCH: typings.googleapisCommon.googleapisCommonStrings.PATCH = "PATCH".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.PATCH]
+  
   @scala.inline
   def PUT: typings.googleapisCommon.googleapisCommonStrings.PUT = "PUT".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.PUT]
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.matches` exported as a module.
 | Full name          | lodash.matches |
 | Keywords           | lodash-modularized, matches |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 300826 |
+| # dependents       | 20 |
+| # downloads        | 527968 |
 | # stars            | 0 |
 
 ## Links

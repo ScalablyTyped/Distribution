@@ -24,7 +24,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
@@ -51,51 +51,71 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`16`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def CHECKBOX: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def COMBOBOX: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def COMMANDBUTTON: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def CONTROL: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def CURRENCYFIELD: `18` = 18.asInstanceOf[`18`]
+  
   @scala.inline
   def DATEFIELD: `15` = 15.asInstanceOf[`15`]
+  
   @scala.inline
   def FILECONTROL: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def FIXEDTEXT: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def GRIDCONTROL: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def GROUPBOX: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def HIDDENCONTROL: `13` = 13.asInstanceOf[`13`]
+  
   @scala.inline
   def IMAGEBUTTON: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def IMAGECONTROL: `14` = 14.asInstanceOf[`14`]
+  
   @scala.inline
   def LISTBOX: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def NAVIGATIONBAR: `22` = 22.asInstanceOf[`22`]
+  
   @scala.inline
   def NUMERICFIELD: `17` = 17.asInstanceOf[`17`]
+  
   @scala.inline
   def PATTERNFIELD: `19` = 19.asInstanceOf[`19`]
+  
   @scala.inline
   def RADIOBUTTON: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def SCROLLBAR: `20` = 20.asInstanceOf[`20`]
+  
   @scala.inline
   def SPINBUTTON: `21` = 21.asInstanceOf[`21`]
+  
   @scala.inline
   def TEXTFIELD: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def TIMEFIELD: `16` = 16.asInstanceOf[`16`]
 }
-

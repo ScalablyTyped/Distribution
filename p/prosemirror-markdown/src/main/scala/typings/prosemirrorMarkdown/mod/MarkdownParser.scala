@@ -6,7 +6,7 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-markdown", "MarkdownParser")
 @js.native
@@ -50,17 +50,18 @@ class MarkdownParser[S /* <: Schema[_, _] */] protected () extends js.Object {
     * : When true, ignore content for the matched token.
     */
   def this(schema: S, tokenizer: MarkdownIt, tokens: StringDictionary[TokenConfig]) = this()
-  /**
-    * The value of the `tokens` object used to construct
-    * this parser. Can be useful to copy and modify to base other
-    * parsers on.
-    */
-  var tokens: StringDictionary[typings.markdownIt.tokenMod.^] = js.native
+  
   /**
     * Parse a string as [CommonMark](http://commonmark.org/) markup,
     * and create a ProseMirror document as prescribed by this parser's
     * rules.
     */
   def parse(text: String): Node[S] = js.native
+  
+  /**
+    * The value of the `tokens` object used to construct
+    * this parser. Can be useful to copy and modify to base other
+    * parsers on.
+    */
+  var tokens: StringDictionary[typings.markdownIt.tokenMod.^] = js.native
 }
-

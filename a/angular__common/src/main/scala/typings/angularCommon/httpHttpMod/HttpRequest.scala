@@ -20,7 +20,7 @@ import typings.std.Blob
 import typings.std.FormData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpRequest")
 @js.native
@@ -51,6 +51,7 @@ class HttpRequest[T] protected () extends js.Object {
   def this(method: POST, url: String, body: Null, init: Params) = this()
   def this(method: PUT, url: String, body: T, init: Params) = this()
   def this(method: PUT, url: String, body: Null, init: Params) = this()
+  
   /**
     * The request body, or `null` if one isn't set.
     *
@@ -59,43 +60,10 @@ class HttpRequest[T] protected () extends js.Object {
     * idempotence by treating them as such.
     */
   val body: T | Null = js.native
-  /**
-    * Outgoing headers for this request.
-    */
-  val headers: HttpHeaders = js.native
-  /**
-    * The outgoing HTTP request method.
-    */
-  val method: String = js.native
-  /**
-    * Outgoing URL parameters.
-    */
-  val params: HttpParams = js.native
-  /**
-    * Whether this request should be made in a way that exposes progress events.
-    *
-    * Progress events are expensive (change detection runs on each event) and so
-    * they should only be requested if the consumer intends to monitor them.
-    */
-  val reportProgress: Boolean = js.native
-  /**
-    * The expected response type of the server.
-    *
-    * This is used to parse the response appropriately before returning it to
-    * the requestee.
-    */
-  val responseType: arraybuffer | blob | json | text = js.native
-  val url: String = js.native
-  /**
-    * The outgoing URL with all URL parameters set.
-    */
-  val urlWithParams: String = js.native
-  /**
-    * Whether this request should be sent with outgoing credentials (cookies).
-    */
-  val withCredentials: Boolean = js.native
+  
   def clone(update: Method[T]): HttpRequest[T] = js.native
   def clone[V](update: SetHeaders[V]): HttpRequest[V] = js.native
+  
   /**
     * Examine the body and attempt to infer an appropriate MIME type
     * for it.
@@ -103,10 +71,53 @@ class HttpRequest[T] protected () extends js.Object {
     * If no such type can be inferred, this method will return `null`.
     */
   def detectContentTypeHeader(): String | Null = js.native
+  
+  /**
+    * Outgoing headers for this request.
+    */
+  val headers: HttpHeaders = js.native
+  
+  /**
+    * The outgoing HTTP request method.
+    */
+  val method: String = js.native
+  
+  /**
+    * Outgoing URL parameters.
+    */
+  val params: HttpParams = js.native
+  
+  /**
+    * Whether this request should be made in a way that exposes progress events.
+    *
+    * Progress events are expensive (change detection runs on each event) and so
+    * they should only be requested if the consumer intends to monitor them.
+    */
+  val reportProgress: Boolean = js.native
+  
+  /**
+    * The expected response type of the server.
+    *
+    * This is used to parse the response appropriately before returning it to
+    * the requestee.
+    */
+  val responseType: arraybuffer | blob | json | text = js.native
+  
   /**
     * Transform the free-form body into a serialized format suitable for
     * transmission to the server.
     */
   def serializeBody(): ArrayBuffer | Blob | FormData | String | Null = js.native
+  
+  val url: String = js.native
+  
+  /**
+    * The outgoing URL with all URL parameters set.
+    */
+  val urlWithParams: String = js.native
+  
+  /**
+    * Whether this request should be sent with outgoing credentials (cookies).
+    */
+  val withCredentials: Boolean = js.native
 }
-

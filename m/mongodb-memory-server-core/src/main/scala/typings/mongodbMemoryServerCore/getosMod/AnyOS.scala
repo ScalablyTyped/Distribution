@@ -11,24 +11,24 @@ import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.sunos
 import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.win32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.mongodbMemoryServerCore.getosMod.OtherOS
   - typings.mongodbMemoryServerCore.getosMod.LinuxOS
 */
 trait AnyOS extends js.Object
-
 object AnyOS {
+  
   @scala.inline
   def OtherOS(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin | String): AnyOS = {
     val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyOS]
   }
+  
   @scala.inline
   def LinuxOS(dist: String, os: linux, release: String): AnyOS = {
     val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyOS]
   }
 }
-

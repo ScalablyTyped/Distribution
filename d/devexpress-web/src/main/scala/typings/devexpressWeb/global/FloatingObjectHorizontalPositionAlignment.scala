@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists values specifying how a floating object is horizontally aligned relative to the specified element.
@@ -10,13 +10,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FloatingObjectHorizontalPositionAlignment")
 @js.native
 object FloatingObjectHorizontalPositionAlignment extends js.Object {
-  /* 2 */ val Center: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Center with Double = js.native
-  /* 4 */ val Inside: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Inside with Double = js.native
-  /* 1 */ val Left: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Left with Double = js.native
-  /* 0 */ val None: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.None with Double = js.native
-  /* 5 */ val Outside: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Outside with Double = js.native
-  /* 3 */ val Right: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Right with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment with Double] = js.native
+  
+  /* 2 */ val Center: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Center with Double = js.native
+  
+  /* 4 */ val Inside: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Inside with Double = js.native
+  
+  /* 1 */ val Left: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Left with Double = js.native
+  
+  /* 0 */ val None: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.None with Double = js.native
+  
+  /* 5 */ val Outside: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Outside with Double = js.native
+  
+  /* 3 */ val Right: typings.devexpressWeb.FloatingObjectHorizontalPositionAlignment.Right with Double = js.native
 }
-

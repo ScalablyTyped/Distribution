@@ -2,12 +2,13 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DoStatement extends IterationStatement {
-  var expression: Expression = js.native
+  
+  val expression: Expression = js.native
+  
   @JSName("kind")
-  var kind_DoStatement: typings.typescript.mod.SyntaxKind.DoStatement = js.native
+  val kind_DoStatement: typings.typescript.mod.SyntaxKind.DoStatement = js.native
 }
-

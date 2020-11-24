@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/alb/targetGroupAttachment", "TargetGroupAttachment")
 @js.native
@@ -21,28 +21,32 @@ class TargetGroupAttachment protected () extends CustomResource {
     */
   def this(name: String, args: TargetGroupAttachmentArgs) = this()
   def this(name: String, args: TargetGroupAttachmentArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The Availability Zone where the IP address of the target is to be registered. If the private ip address is outside of the VPC scope, this value must be set to 'all'.
     */
   val availabilityZone: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The port on which targets receive traffic.
     */
   val port: Output_[js.UndefOr[Double]] = js.native
+  
   /**
     * The ARN of the target group with which to register targets
     */
   val targetGroupArn: Output_[String] = js.native
+  
   /**
     * The ID of the target. This is the Instance ID for an instance, or the container ID for an ECS container. If the target type is ip, specify an IP address. If the target type is lambda, specify the arn of lambda.
     */
   val targetId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/alb/targetGroupAttachment", "TargetGroupAttachment")
 @js.native
 object TargetGroupAttachment extends js.Object {
+  
   /**
     * Get an existing TargetGroupAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object TargetGroupAttachment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TargetGroupAttachment = js.native
   def get(name: String, id: Input[ID], state: TargetGroupAttachmentState): TargetGroupAttachment = js.native
   def get(name: String, id: Input[ID], state: TargetGroupAttachmentState, opts: CustomResourceOptions): TargetGroupAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of TargetGroupAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/targetGroupAttachment.TargetGroupAttachment */ Boolean = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.dropdownDividerMod.DropdownDividerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "DropdownDivider")
 @js.native
@@ -16,8 +16,6 @@ class DropdownDivider protected ()
   def this(props: DropdownDividerProps) = this()
   def this(props: DropdownDividerProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "DropdownDivider")
 @js.native
 object DropdownDivider extends TopLevel[ComponentClass[DropdownDividerProps, ComponentState]]
-

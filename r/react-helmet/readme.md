@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-helmet
 
-Typings are for version 6.0
+Typings are for version 6.1
 
 ## Library description:
 A document head manager for React
@@ -10,9 +10,9 @@ A document head manager for React
 | ------------------ | :-------------: |
 | Full name          | react-helmet |
 | Keywords           | react-helmet, nfl, react, document, head, title, meta, link, script, base, noscript, style |
-| # releases         | 3 |
-| # dependents       | 1246 |
-| # downloads        | 32592242 |
+| # releases         | 6 |
+| # dependents       | 1741 |
+| # downloads        | 49181335 |
 | # stars            | 63 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.ansiFragments.colorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ansiFragments.ansiFragmentsStrings.black
@@ -41,75 +41,107 @@ import scala.scalajs.js.annotation._
   - typings.ansiFragments.ansiFragmentsStrings.none
 */
 trait AnsiColor extends js.Object
-
 object AnsiColor {
+  
   @scala.inline
   def bgBlack: typings.ansiFragments.ansiFragmentsStrings.bgBlack = "bgBlack".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBlack]
+  
   @scala.inline
   def bgBlue: typings.ansiFragments.ansiFragmentsStrings.bgBlue = "bgBlue".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBlue]
+  
   @scala.inline
   def bgBrightBlack: typings.ansiFragments.ansiFragmentsStrings.bgBrightBlack = "bgBrightBlack".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightBlack]
+  
   @scala.inline
   def bgBrightBlue: typings.ansiFragments.ansiFragmentsStrings.bgBrightBlue = "bgBrightBlue".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightBlue]
+  
   @scala.inline
   def bgBrightCyan: typings.ansiFragments.ansiFragmentsStrings.bgBrightCyan = "bgBrightCyan".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightCyan]
+  
   @scala.inline
   def bgBrightGreen: typings.ansiFragments.ansiFragmentsStrings.bgBrightGreen = "bgBrightGreen".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightGreen]
+  
   @scala.inline
   def bgBrightMagenta: typings.ansiFragments.ansiFragmentsStrings.bgBrightMagenta = "bgBrightMagenta".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightMagenta]
+  
   @scala.inline
   def bgBrightRed: typings.ansiFragments.ansiFragmentsStrings.bgBrightRed = "bgBrightRed".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightRed]
+  
   @scala.inline
   def bgBrightWhite: typings.ansiFragments.ansiFragmentsStrings.bgBrightWhite = "bgBrightWhite".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightWhite]
+  
   @scala.inline
   def bgBrightYellow: typings.ansiFragments.ansiFragmentsStrings.bgBrightYellow = "bgBrightYellow".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgBrightYellow]
+  
   @scala.inline
   def bgCyan: typings.ansiFragments.ansiFragmentsStrings.bgCyan = "bgCyan".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgCyan]
+  
   @scala.inline
   def bgGreen: typings.ansiFragments.ansiFragmentsStrings.bgGreen = "bgGreen".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgGreen]
+  
   @scala.inline
   def bgMagenta: typings.ansiFragments.ansiFragmentsStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgMagenta]
+  
   @scala.inline
   def bgRed: typings.ansiFragments.ansiFragmentsStrings.bgRed = "bgRed".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgRed]
+  
   @scala.inline
   def bgWhite: typings.ansiFragments.ansiFragmentsStrings.bgWhite = "bgWhite".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgWhite]
+  
   @scala.inline
   def bgYellow: typings.ansiFragments.ansiFragmentsStrings.bgYellow = "bgYellow".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bgYellow]
+  
   @scala.inline
   def black: typings.ansiFragments.ansiFragmentsStrings.black = "black".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.black]
+  
   @scala.inline
   def blue: typings.ansiFragments.ansiFragmentsStrings.blue = "blue".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.blue]
+  
   @scala.inline
   def brightBlack: typings.ansiFragments.ansiFragmentsStrings.brightBlack = "brightBlack".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightBlack]
+  
   @scala.inline
   def brightBlue: typings.ansiFragments.ansiFragmentsStrings.brightBlue = "brightBlue".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightBlue]
+  
   @scala.inline
   def brightCyan: typings.ansiFragments.ansiFragmentsStrings.brightCyan = "brightCyan".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightCyan]
+  
   @scala.inline
   def brightGreen: typings.ansiFragments.ansiFragmentsStrings.brightGreen = "brightGreen".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightGreen]
+  
   @scala.inline
   def brightMagenta: typings.ansiFragments.ansiFragmentsStrings.brightMagenta = "brightMagenta".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightMagenta]
+  
   @scala.inline
   def brightRed: typings.ansiFragments.ansiFragmentsStrings.brightRed = "brightRed".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightRed]
+  
   @scala.inline
   def brightWhite: typings.ansiFragments.ansiFragmentsStrings.brightWhite = "brightWhite".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightWhite]
+  
   @scala.inline
   def brightYellow: typings.ansiFragments.ansiFragmentsStrings.brightYellow = "brightYellow".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.brightYellow]
+  
   @scala.inline
   def cyan: typings.ansiFragments.ansiFragmentsStrings.cyan = "cyan".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.cyan]
+  
   @scala.inline
   def gray: typings.ansiFragments.ansiFragmentsStrings.gray = "gray".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.gray]
+  
   @scala.inline
   def green: typings.ansiFragments.ansiFragmentsStrings.green = "green".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.green]
+  
   @scala.inline
   def magenta: typings.ansiFragments.ansiFragmentsStrings.magenta = "magenta".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.magenta]
+  
   @scala.inline
   def none: typings.ansiFragments.ansiFragmentsStrings.none = "none".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.none]
+  
   @scala.inline
   def red: typings.ansiFragments.ansiFragmentsStrings.red = "red".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.red]
+  
   @scala.inline
   def white: typings.ansiFragments.ansiFragmentsStrings.white = "white".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.white]
+  
   @scala.inline
   def yellow: typings.ansiFragments.ansiFragmentsStrings.yellow = "yellow".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.yellow]
 }
-

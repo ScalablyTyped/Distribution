@@ -2,17 +2,17 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HostType extends js.Object
-
 /**
   * Specifies the host Office application in which the add-in is running.
   */
 @JSGlobal("Office.HostType")
 @js.native
 object HostType extends js.Object {
+  
   /**
     * The Office host is Microsoft Access.
     * 
@@ -58,6 +58,4 @@ object HostType extends js.Object {
     */
   @js.native
   sealed trait Word extends HostType
-  
 }
-

@@ -1,17 +1,19 @@
 package typings.awsSdk.pinpointsmsvoiceMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PinpointSMSVoice extends Service {
+  
   @JSName("config")
   var config_PinpointSMSVoice: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Create a new configuration set. After you create the configuration set, you can add one or more event destinations to it.
     */
@@ -25,6 +27,7 @@ trait PinpointSMSVoice extends Service {
     params: CreateConfigurationSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConfigurationSetResponse, Unit]
   ): Request[CreateConfigurationSetResponse, AWSError] = js.native
+  
   /**
     * Create a new event destination in a configuration set.
     */
@@ -40,6 +43,7 @@ trait PinpointSMSVoice extends Service {
     params: CreateConfigurationSetEventDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConfigurationSetEventDestinationResponse, Unit]
   ): Request[CreateConfigurationSetEventDestinationResponse, AWSError] = js.native
+  
   /**
     * Deletes an existing configuration set.
     */
@@ -53,6 +57,7 @@ trait PinpointSMSVoice extends Service {
     params: DeleteConfigurationSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConfigurationSetResponse, Unit]
   ): Request[DeleteConfigurationSetResponse, AWSError] = js.native
+  
   /**
     * Deletes an event destination in a configuration set.
     */
@@ -68,6 +73,7 @@ trait PinpointSMSVoice extends Service {
     params: DeleteConfigurationSetEventDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConfigurationSetEventDestinationResponse, Unit]
   ): Request[DeleteConfigurationSetEventDestinationResponse, AWSError] = js.native
+  
   /**
     * Obtain information about an event destination, including the types of events it reports, the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
     */
@@ -83,6 +89,7 @@ trait PinpointSMSVoice extends Service {
     params: GetConfigurationSetEventDestinationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConfigurationSetEventDestinationsResponse, Unit]
   ): Request[GetConfigurationSetEventDestinationsResponse, AWSError] = js.native
+  
   /**
     * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
     */
@@ -96,6 +103,7 @@ trait PinpointSMSVoice extends Service {
     params: ListConfigurationSetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationSetsResponse, Unit]
   ): Request[ListConfigurationSetsResponse, AWSError] = js.native
+  
   /**
     * Create a new voice message and send it to a recipient's phone number.
     */
@@ -109,6 +117,7 @@ trait PinpointSMSVoice extends Service {
     params: SendVoiceMessageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendVoiceMessageResponse, Unit]
   ): Request[SendVoiceMessageResponse, AWSError] = js.native
+  
   /**
     * Update an event destination in a configuration set. An event destination is a location that you publish information about your voice calls to. For example, you can log an event to an Amazon CloudWatch destination when a call fails.
     */
@@ -125,4 +134,3 @@ trait PinpointSMSVoice extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConfigurationSetEventDestinationResponse, Unit]
   ): Request[UpdateConfigurationSetEventDestinationResponse, AWSError] = js.native
 }
-

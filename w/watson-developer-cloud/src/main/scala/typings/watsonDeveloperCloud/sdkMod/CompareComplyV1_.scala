@@ -4,7 +4,7 @@ import typings.watsonDeveloperCloud.compareComplyV1Mod.Options
 import typings.watsonDeveloperCloud.compareComplyV1Mod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Compare and Comply analyzes governing documents to provide details about critical aspects of the documents.
@@ -30,4 +30,3 @@ class CompareComplyV1_ protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-

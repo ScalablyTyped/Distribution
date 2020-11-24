@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides additional information about server-generated posts.
   This type can only be specified in a server-to-server call. */
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class SocialPostDefinitionData ()
   extends typings.sharepoint.SP.Social.SocialPostDefinitionData
-

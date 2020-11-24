@@ -2,11 +2,12 @@ package typings.passportLocalMongoose.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema * / any */ @js.native
 trait PassportLocalSchema extends js.Object {
+  
   // overload for the default mongoose plugin function
   def plugin(
     plugin: js.Function2[
@@ -28,4 +29,3 @@ trait PassportLocalSchema extends js.Object {
     opts: js.Object
   ): this.type = js.native
 }
-

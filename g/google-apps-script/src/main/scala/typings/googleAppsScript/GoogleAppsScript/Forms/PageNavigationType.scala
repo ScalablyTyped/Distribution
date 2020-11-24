@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PageNavigationType extends js.Object
-
 /**
   * An enum representing the supported types of page navigation. Page navigation types can be
   * accessed from FormApp.PageNavigationType.
@@ -37,6 +36,7 @@ sealed trait PageNavigationType extends js.Object
 @JSGlobal("GoogleAppsScript.Forms.PageNavigationType")
 @js.native
 object PageNavigationType extends js.Object {
+  
   @js.native
   sealed trait CONTINUE extends PageNavigationType
   
@@ -48,6 +48,4 @@ object PageNavigationType extends js.Object {
   
   @js.native
   sealed trait SUBMIT extends PageNavigationType
-  
 }
-

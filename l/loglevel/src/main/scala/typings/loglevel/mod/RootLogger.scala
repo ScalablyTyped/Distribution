@@ -3,10 +3,16 @@ package typings.loglevel.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RootLogger extends Logger {
+  
+  /**
+    * A .default property for ES6 default import compatibility
+    */
+  var default: RootLogger = js.native
+  
   /**
     * This gets you a new logger object that works exactly like the root log object, but can have its level and
     * logging methods set independently. All loggers must have a name (which is a non-empty string). Calling
@@ -20,10 +26,12 @@ trait RootLogger extends Logger {
     * @param name The name of the produced logger
     */
   def getLogger(name: String): Logger = js.native
+  
   /**
     * This will return you the dictionary of all loggers created with getLogger, keyed off of their names.
     */
   def getLoggers(): StringDictionary[Logger] = js.native
+  
   /**
     * If you're using another JavaScript library that exposes a 'log' global, you can run into conflicts with loglevel.
     * Similarly to jQuery, you can solve this by putting loglevel into no-conflict mode immediately after it is loaded
@@ -32,4 +40,3 @@ trait RootLogger extends Logger {
     */
   def noConflict(): js.Any = js.native
 }
-

@@ -10,9 +10,9 @@ An arbitrary length integer library for Javascript
 | ------------------ | :-------------: |
 | Full name          | big-integer |
 | Keywords           | math, big, bignum, bigint, biginteger, integer, arbitrary, precision, arithmetic |
-| # releases         | 22 |
-| # dependents       | 360 |
-| # downloads        | 40568951 |
+| # releases         | 15 |
+| # dependents       | 476 |
+| # downloads        | 59977621 |
 | # stars            | 18 |
 
 ## Links

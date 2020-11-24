@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Annotationstores$Annotations")
 @js.native
 class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.annotations.create
     * @desc Creates a new Annotation record. It is valid to create Annotation
@@ -51,6 +53,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.annotations.delete
     * @desc Deletes an Annotation or returns NOT_FOUND if it does not exist.
@@ -86,6 +89,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.annotations.get
     * @desc Gets an Annotation.
@@ -121,6 +125,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.annotations.list
     * @desc Lists the Annotations in the given Annotation store for a source
@@ -160,6 +165,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAnnotationsResponse]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.annotations.patch
     * @desc Updates the Annotation.
@@ -198,4 +204,3 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     callback: BodyResponseCallback[SchemaAnnotation]
   ): Unit = js.native
 }
-

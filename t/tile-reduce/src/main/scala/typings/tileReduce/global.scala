@@ -2,13 +2,15 @@ package typings.tileReduce
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object TileReduce extends js.Object {
+    
     /**
       * Tile Reduce
       *
@@ -34,6 +36,4 @@ object global extends js.Object {
       */
     def apply(options: Options): Events = js.native
   }
-  
 }
-

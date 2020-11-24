@@ -3,7 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.titleMod.Title.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "Title")
 @js.native
@@ -16,4 +16,3 @@ class Title[T] protected ()
     */
   def this(options: IOptions[T]) = this()
 }
-

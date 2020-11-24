@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The MouseEvent object is received by the {@link Item}'s mouse event
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class MouseEvent ()
   extends typings.paper.paper.MouseEvent
-

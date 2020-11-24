@@ -3,11 +3,12 @@ package typings.sharepoint.global.SP.Ribbon
 import typings.sharepoint.CUI.Page.PageComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.Ribbon.PageState")
 @js.native
 object PageState extends js.Object {
+  
   @js.native
   class Handlers ()
     extends typings.sharepoint.SP.Ribbon.PageState.Handlers
@@ -26,6 +27,4 @@ object PageState extends js.Object {
   @js.native
   class StateChangeDialogHandler ()
     extends typings.sharepoint.SP.Ribbon.PageState.StateChangeDialogHandler
-  
 }
-

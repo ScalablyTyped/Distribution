@@ -5,10 +5,9 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.rmcNukaCarousel.decoratorsMod.IDecoratorProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableForceUpdate
   extends Instantiable1[/* props */ IDecoratorProps, ForceUpdate]
      with Instantiable2[/* props */ IDecoratorProps, /* context */ js.Any, ForceUpdate]
-

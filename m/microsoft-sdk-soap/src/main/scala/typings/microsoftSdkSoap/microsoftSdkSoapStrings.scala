@@ -7,9 +7,214 @@ import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.RelationshipType
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.SecurityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object microsoftSdkSoapStrings {
+  
+  @scala.inline
+  def Active: Active = "Active".asInstanceOf[Active]
+  
+  @scala.inline
+  def Append: Append = "Append".asInstanceOf[Append]
+  
+  @scala.inline
+  def AppendTo: AppendTo = "AppendTo".asInstanceOf[AppendTo]
+  
+  @scala.inline
+  def Assign: Assign = "Assign".asInstanceOf[Assign]
+  
+  @scala.inline
+  def BigIntType: BigIntType = "BigIntType".asInstanceOf[BigIntType]
+  
+  @scala.inline
+  def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
+  
+  @scala.inline
+  def BusinessOwned: BusinessOwned = "BusinessOwned".asInstanceOf[BusinessOwned]
+  
+  @scala.inline
+  def BusinessParented: BusinessParented = "BusinessParented".asInstanceOf[BusinessParented]
+  
+  @scala.inline
+  def CalendarRulesType: CalendarRulesType = "CalendarRulesType".asInstanceOf[CalendarRulesType]
+  
+  @scala.inline
+  def Cascade: Cascade = "Cascade".asInstanceOf[Cascade]
+  
+  @scala.inline
+  def Create: Create = "Create".asInstanceOf[Create]
+  
+  @scala.inline
+  def Customer: Customer = "Customer".asInstanceOf[Customer]
+  
+  @scala.inline
+  def CustomerType: CustomerType = "CustomerType".asInstanceOf[CustomerType]
+  
+  @scala.inline
+  def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
+  
+  @scala.inline
+  def DateTimeType: DateTimeType = "DateTimeType".asInstanceOf[DateTimeType]
+  
+  @scala.inline
+  def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
+  
+  @scala.inline
+  def DecimalType: DecimalType = "DecimalType".asInstanceOf[DecimalType]
+  
+  @scala.inline
+  def Default: Default = "Default".asInstanceOf[Default]
+  
+  @scala.inline
+  def Delete: Delete = "Delete".asInstanceOf[Delete]
+  
+  @scala.inline
+  def Details: Details = "Details".asInstanceOf[Details]
+  
+  @scala.inline
+  def DoNotDisplay: DoNotDisplay = "DoNotDisplay".asInstanceOf[DoNotDisplay]
+  
+  @scala.inline
+  def Double: Double = "Double".asInstanceOf[Double]
+  
+  @scala.inline
+  def DoubleType: DoubleType = "DoubleType".asInstanceOf[DoubleType]
+  
+  @scala.inline
+  def EntityName: EntityName = "EntityName".asInstanceOf[EntityName]
+  
+  @scala.inline
+  def EntityNameType: EntityNameType = "EntityNameType".asInstanceOf[EntityNameType]
+  
+  @scala.inline
+  def ImageType: ImageType = "ImageType".asInstanceOf[ImageType]
+  
+  @scala.inline
+  def Inheritance: Inheritance = "Inheritance".asInstanceOf[Inheritance]
+  
+  @scala.inline
+  def Integer: Integer = "Integer".asInstanceOf[Integer]
+  
+  @scala.inline
+  def IntegerType: IntegerType = "IntegerType".asInstanceOf[IntegerType]
+  
+  @scala.inline
+  def Lookup: Lookup = "Lookup".asInstanceOf[Lookup]
+  
+  @scala.inline
+  def LookupType: LookupType = "LookupType".asInstanceOf[LookupType]
+  
+  @scala.inline
+  def ManagedProperty: ManagedProperty = "ManagedProperty".asInstanceOf[ManagedProperty]
+  
+  @scala.inline
+  def ManagedPropertyType: ManagedPropertyType = "ManagedPropertyType".asInstanceOf[ManagedPropertyType]
+  
+  @scala.inline
+  def ManyToManyRelationship: ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[ManyToManyRelationship]
+  
+  @scala.inline
+  def Marketing: Marketing = "Marketing".asInstanceOf[Marketing]
+  
+  @scala.inline
+  def Memo: Memo = "Memo".asInstanceOf[Memo]
+  
+  @scala.inline
+  def MemoType: MemoType = "MemoType".asInstanceOf[MemoType]
+  
+  @scala.inline
+  def Money: Money = "Money".asInstanceOf[Money]
+  
+  @scala.inline
+  def MoneyType: MoneyType = "MoneyType".asInstanceOf[MoneyType]
+  
+  @scala.inline
+  def NoCascade: NoCascade = "NoCascade".asInstanceOf[NoCascade]
+  
+  @scala.inline
+  def None: None = "None".asInstanceOf[None]
+  
+  @scala.inline
+  def `None    OrganizationOwned`: `None    OrganizationOwned` = ("None    OrganizationOwned").asInstanceOf[`None    OrganizationOwned`]
+  
+  @scala.inline
+  def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
+  
+  @scala.inline
+  def Owner: Owner = "Owner".asInstanceOf[Owner]
+  
+  @scala.inline
+  def OwnerType: OwnerType = "OwnerType".asInstanceOf[OwnerType]
+  
+  @scala.inline
+  def ParentChild: ParentChild = "ParentChild".asInstanceOf[ParentChild]
+  
+  @scala.inline
+  def PartyList: PartyList = "PartyList".asInstanceOf[PartyList]
+  
+  @scala.inline
+  def PartyListType: PartyListType = "PartyListType".asInstanceOf[PartyListType]
+  
+  @scala.inline
+  def Picklist: Picklist = "Picklist".asInstanceOf[Picklist]
+  
+  @scala.inline
+  def PicklistType: PicklistType = "PicklistType".asInstanceOf[PicklistType]
+  
+  @scala.inline
+  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
+  
+  @scala.inline
+  def Read: Read = "Read".asInstanceOf[Read]
+  
+  @scala.inline
+  def Sales: Sales = "Sales".asInstanceOf[Sales]
+  
+  @scala.inline
+  def Service: Service = "Service".asInstanceOf[Service]
+  
+  @scala.inline
+  def Share: Share = "Share".asInstanceOf[Share]
+  
+  @scala.inline
+  def State: State = "State".asInstanceOf[State]
+  
+  @scala.inline
+  def `StateType    StatusType`: `StateType    StatusType` = ("StateType    StatusType").asInstanceOf[`StateType    StatusType`]
+  
+  @scala.inline
+  def Status: Status = "Status".asInstanceOf[Status]
+  
+  @scala.inline
+  def StringType: StringType = "StringType".asInstanceOf[StringType]
+  
+  @scala.inline
+  def `TeamOwned    UserOwned`: `TeamOwned    UserOwned` = ("TeamOwned    UserOwned").asInstanceOf[`TeamOwned    UserOwned`]
+  
+  @scala.inline
+  def Uniqueidentifier: Uniqueidentifier = "Uniqueidentifier".asInstanceOf[Uniqueidentifier]
+  
+  @scala.inline
+  def UniqueidentifierType: UniqueidentifierType = "UniqueidentifierType".asInstanceOf[UniqueidentifierType]
+  
+  @scala.inline
+  def UseCollectionName: UseCollectionName = "UseCollectionName".asInstanceOf[UseCollectionName]
+  
+  @scala.inline
+  def UseLabel: UseLabel = "UseLabel".asInstanceOf[UseLabel]
+  
+  @scala.inline
+  def UserOwned: UserOwned = "UserOwned".asInstanceOf[UserOwned]
+  
+  @scala.inline
+  def Virtual: Virtual = "Virtual".asInstanceOf[Virtual]
+  
+  @scala.inline
+  def VirtualType: VirtualType = "VirtualType".asInstanceOf[VirtualType]
+  
+  @scala.inline
+  def Write: Write = "Write".asInstanceOf[Write]
+  
   @js.native
   sealed trait Active extends CascadeType
   
@@ -213,142 +418,4 @@ object microsoftSdkSoapStrings {
   
   @js.native
   sealed trait Write extends js.Object
-  
-  @scala.inline
-  def Active: Active = "Active".asInstanceOf[Active]
-  @scala.inline
-  def Append: Append = "Append".asInstanceOf[Append]
-  @scala.inline
-  def AppendTo: AppendTo = "AppendTo".asInstanceOf[AppendTo]
-  @scala.inline
-  def Assign: Assign = "Assign".asInstanceOf[Assign]
-  @scala.inline
-  def BigIntType: BigIntType = "BigIntType".asInstanceOf[BigIntType]
-  @scala.inline
-  def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
-  @scala.inline
-  def BusinessOwned: BusinessOwned = "BusinessOwned".asInstanceOf[BusinessOwned]
-  @scala.inline
-  def BusinessParented: BusinessParented = "BusinessParented".asInstanceOf[BusinessParented]
-  @scala.inline
-  def CalendarRulesType: CalendarRulesType = "CalendarRulesType".asInstanceOf[CalendarRulesType]
-  @scala.inline
-  def Cascade: Cascade = "Cascade".asInstanceOf[Cascade]
-  @scala.inline
-  def Create: Create = "Create".asInstanceOf[Create]
-  @scala.inline
-  def Customer: Customer = "Customer".asInstanceOf[Customer]
-  @scala.inline
-  def CustomerType: CustomerType = "CustomerType".asInstanceOf[CustomerType]
-  @scala.inline
-  def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
-  @scala.inline
-  def DateTimeType: DateTimeType = "DateTimeType".asInstanceOf[DateTimeType]
-  @scala.inline
-  def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
-  @scala.inline
-  def DecimalType: DecimalType = "DecimalType".asInstanceOf[DecimalType]
-  @scala.inline
-  def Default: Default = "Default".asInstanceOf[Default]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def Details: Details = "Details".asInstanceOf[Details]
-  @scala.inline
-  def DoNotDisplay: DoNotDisplay = "DoNotDisplay".asInstanceOf[DoNotDisplay]
-  @scala.inline
-  def Double: Double = "Double".asInstanceOf[Double]
-  @scala.inline
-  def DoubleType: DoubleType = "DoubleType".asInstanceOf[DoubleType]
-  @scala.inline
-  def EntityName: EntityName = "EntityName".asInstanceOf[EntityName]
-  @scala.inline
-  def EntityNameType: EntityNameType = "EntityNameType".asInstanceOf[EntityNameType]
-  @scala.inline
-  def ImageType: ImageType = "ImageType".asInstanceOf[ImageType]
-  @scala.inline
-  def Inheritance: Inheritance = "Inheritance".asInstanceOf[Inheritance]
-  @scala.inline
-  def Integer: Integer = "Integer".asInstanceOf[Integer]
-  @scala.inline
-  def IntegerType: IntegerType = "IntegerType".asInstanceOf[IntegerType]
-  @scala.inline
-  def Lookup: Lookup = "Lookup".asInstanceOf[Lookup]
-  @scala.inline
-  def LookupType: LookupType = "LookupType".asInstanceOf[LookupType]
-  @scala.inline
-  def ManagedProperty: ManagedProperty = "ManagedProperty".asInstanceOf[ManagedProperty]
-  @scala.inline
-  def ManagedPropertyType: ManagedPropertyType = "ManagedPropertyType".asInstanceOf[ManagedPropertyType]
-  @scala.inline
-  def ManyToManyRelationship: ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[ManyToManyRelationship]
-  @scala.inline
-  def Marketing: Marketing = "Marketing".asInstanceOf[Marketing]
-  @scala.inline
-  def Memo: Memo = "Memo".asInstanceOf[Memo]
-  @scala.inline
-  def MemoType: MemoType = "MemoType".asInstanceOf[MemoType]
-  @scala.inline
-  def Money: Money = "Money".asInstanceOf[Money]
-  @scala.inline
-  def MoneyType: MoneyType = "MoneyType".asInstanceOf[MoneyType]
-  @scala.inline
-  def NoCascade: NoCascade = "NoCascade".asInstanceOf[NoCascade]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def `None    OrganizationOwned`: `None    OrganizationOwned` = ("None    OrganizationOwned").asInstanceOf[`None    OrganizationOwned`]
-  @scala.inline
-  def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
-  @scala.inline
-  def Owner: Owner = "Owner".asInstanceOf[Owner]
-  @scala.inline
-  def OwnerType: OwnerType = "OwnerType".asInstanceOf[OwnerType]
-  @scala.inline
-  def ParentChild: ParentChild = "ParentChild".asInstanceOf[ParentChild]
-  @scala.inline
-  def PartyList: PartyList = "PartyList".asInstanceOf[PartyList]
-  @scala.inline
-  def PartyListType: PartyListType = "PartyListType".asInstanceOf[PartyListType]
-  @scala.inline
-  def Picklist: Picklist = "Picklist".asInstanceOf[Picklist]
-  @scala.inline
-  def PicklistType: PicklistType = "PicklistType".asInstanceOf[PicklistType]
-  @scala.inline
-  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
-  @scala.inline
-  def Read: Read = "Read".asInstanceOf[Read]
-  @scala.inline
-  def Sales: Sales = "Sales".asInstanceOf[Sales]
-  @scala.inline
-  def Service: Service = "Service".asInstanceOf[Service]
-  @scala.inline
-  def Share: Share = "Share".asInstanceOf[Share]
-  @scala.inline
-  def State: State = "State".asInstanceOf[State]
-  @scala.inline
-  def `StateType    StatusType`: `StateType    StatusType` = ("StateType    StatusType").asInstanceOf[`StateType    StatusType`]
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
-  @scala.inline
-  def StringType: StringType = "StringType".asInstanceOf[StringType]
-  @scala.inline
-  def `TeamOwned    UserOwned`: `TeamOwned    UserOwned` = ("TeamOwned    UserOwned").asInstanceOf[`TeamOwned    UserOwned`]
-  @scala.inline
-  def Uniqueidentifier: Uniqueidentifier = "Uniqueidentifier".asInstanceOf[Uniqueidentifier]
-  @scala.inline
-  def UniqueidentifierType: UniqueidentifierType = "UniqueidentifierType".asInstanceOf[UniqueidentifierType]
-  @scala.inline
-  def UseCollectionName: UseCollectionName = "UseCollectionName".asInstanceOf[UseCollectionName]
-  @scala.inline
-  def UseLabel: UseLabel = "UseLabel".asInstanceOf[UseLabel]
-  @scala.inline
-  def UserOwned: UserOwned = "UserOwned".asInstanceOf[UserOwned]
-  @scala.inline
-  def Virtual: Virtual = "Virtual".asInstanceOf[Virtual]
-  @scala.inline
-  def VirtualType: VirtualType = "VirtualType".asInstanceOf[VirtualType]
-  @scala.inline
-  def Write: Write = "Write".asInstanceOf[Write]
 }
-

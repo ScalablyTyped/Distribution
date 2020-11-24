@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Captions")
 @js.native
 class ResourceCaptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.captions.delete
     * @desc Deletes a specified caption track.
@@ -39,6 +41,7 @@ class ResourceCaptions protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceCaptionsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCaptionsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * youtube.captions.download
     * @desc Downloads a caption track. The caption track is returned in its
@@ -74,6 +77,7 @@ class ResourceCaptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.captions.insert
     * @desc Uploads a caption track.
@@ -109,6 +113,7 @@ class ResourceCaptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCaption]
   ): Unit = js.native
+  
   /**
     * youtube.captions.list
     * @desc Returns a list of caption tracks that are associated with a
@@ -144,6 +149,7 @@ class ResourceCaptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCaptionListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.captions.update
     * @desc Updates a caption track. When updating a caption track, you can
@@ -182,4 +188,3 @@ class ResourceCaptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCaption]
   ): Unit = js.native
 }
-

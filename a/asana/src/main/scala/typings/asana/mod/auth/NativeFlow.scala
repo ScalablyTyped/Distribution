@@ -3,9 +3,11 @@ package typings.asana.mod.auth
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait NativeFlow extends Flow {
+  
   /**
     * @param {String} code An authorization code obtained via `asanaAuthorizeUrl`.
     * @return {Promise<Object>} The token, which will include the `access_token`
@@ -13,7 +15,8 @@ trait NativeFlow extends Flow {
     *     to get a new access token without going through the flow again.
     * @param code
     */
-  def accessToken(code: String): Unit
+  def accessToken(code: String): Unit = js.native
+  
   /**
     * @return {Promise} The access token, which will include a refresh token
     *     that can be stored in the future to create a client without going
@@ -21,10 +24,8 @@ trait NativeFlow extends Flow {
     * @param url
     * @return
     */
-  def promptForCode(url: String): js.Any
+  def promptForCode(url: String): js.Any = js.native
 }
-
 @JSImport("asana", "auth.NativeFlow")
 @js.native
 object NativeFlow extends TopLevel[NativeFlowStatic]
-

@@ -2,16 +2,9 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.OnAfterEnteringVRObservableEvent")
 @js.native
 class OnAfterEnteringVRObservableEvent ()
-  extends typings.babylonjs.BABYLON.OnAfterEnteringVRObservableEvent {
-  /**
-    * If entering vr was successful
-    */
-  /* CompleteClass */
-  override var success: Boolean = js.native
-}
-
+  extends typings.babylonjs.BABYLON.OnAfterEnteringVRObservableEvent

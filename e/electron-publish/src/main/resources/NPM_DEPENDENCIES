@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-publish" : "22.8.0"
+      "electron-publish" : "22.9.1"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-publish" : "22.8.0"
+      "electron-publish" : "22.9.1"
     }
   ],
   "compile-devDependencies" : [

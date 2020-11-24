@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngstorage"
-version := "0.3-dt-20200515Z-df6b8e"
+version := "0.3-dt-20200515Z-e690c4"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

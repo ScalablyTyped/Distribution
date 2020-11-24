@@ -5,11 +5,12 @@ import typings.firebaseDatabase.miscMod.Indexable
 import typings.firebaseDatabase.nodeMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/snap/LeafNode", JSImport.Namespace)
 @js.native
 object leafNodeMod extends js.Object {
+  
   @js.native
   class LeafNode protected () extends Node {
     /**
@@ -26,6 +27,7 @@ object leafNodeMod extends js.Object {
     def this(value_ : Boolean, priorityNode_ : Node) = this()
     def this(value_ : Double, priorityNode_ : Node) = this()
     def this(value_ : Indexable, priorityNode_ : Node) = this()
+    
     /**
       * Comparison specifically for two leaf nodes
       * @param {!LeafNode} otherLeaf
@@ -33,33 +35,41 @@ object leafNodeMod extends js.Object {
       * @private
       */
     var compareToLeafNode_ : js.Any = js.native
-    var lazyHash_ : js.Any = js.native
-    var priorityNode_ : js.Any = js.native
-    val value_ : js.Any = js.native
+    
     /** @inheritDoc */
     def getPredecessorChildName(childName: String, childNode: Node): Null = js.native
+    
     /**
       * Returns the value of the leaf node.
       * @return {Object|string|number|boolean} The value of the node.
       */
     def getValue(): Indexable | String | Double | Boolean = js.native
+    
     /**
       * @inheritDoc
       */
     def hasChild(): Boolean = js.native
+    
     /**
       * @inheritDoc
       */
     def isIndexed(): Boolean = js.native
+    
+    var lazyHash_ : js.Any = js.native
+    
+    var priorityNode_ : js.Any = js.native
+    
+    val value_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
     def withIndex(): Node = js.native
   }
-  
   /* static members */
   @js.native
   object LeafNode extends js.Object {
+    
     /**
       * The sort order for comparing leaf nodes of different types. If two leaf nodes have
       * the same type, the comparison falls back to their value
@@ -67,9 +77,8 @@ object leafNodeMod extends js.Object {
       * @const
       */
     var VALUE_TYPE_ORDER: js.Array[String] = js.native
+    
     def __childrenNodeConstructor: ChildrenNodeConstructor = js.native
     def __childrenNodeConstructor_=(`val`: ChildrenNodeConstructor): Unit = js.native
   }
-  
 }
-

@@ -2,14 +2,14 @@ package typings.androiduix.android.graphics.Paint
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Style extends js.Object
-
 @JSGlobal("android.graphics.Paint.Style")
 @js.native
 object Style extends js.Object {
+  
   @js.native
   sealed trait FILL extends Style
   
@@ -18,6 +18,4 @@ object Style extends js.Object {
   
   @js.native
   sealed trait STROKE extends Style
-  
 }
-

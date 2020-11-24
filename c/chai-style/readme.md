@@ -12,7 +12,7 @@ CSS Style assertions for elements, using Chai.js
 | Keywords           | chai, chaijs, style, css, computedStyle, assertion, assert |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 34576 |
+| # downloads        | 65358 |
 | # stars            | 0 |
 
 ## Links

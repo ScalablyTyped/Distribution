@@ -10,9 +10,9 @@ Stream utils for NodeJS
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-stream |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 23 |
 | # dependents       | 3 |
-| # downloads        | 2032034 |
+| # downloads        | 3164512 |
 | # stars            | 0 |
 
 ## Links

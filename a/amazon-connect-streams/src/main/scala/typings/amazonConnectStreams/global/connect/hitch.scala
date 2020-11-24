@@ -2,11 +2,12 @@ package typings.amazonConnectStreams.global.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("connect.hitch")
 @js.native
 object hitch extends js.Object {
+  
   /**
     * A useful utility function for creating callback closures that bind a function to an object instance.
     *
@@ -15,4 +16,3 @@ object hitch extends js.Object {
     */
   def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](scope: js.Object, method: T): T = js.native
 }
-

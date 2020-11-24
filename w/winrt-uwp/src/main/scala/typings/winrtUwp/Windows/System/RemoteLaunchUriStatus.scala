@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RemoteLaunchUriStatus extends js.Object
-
 /** Specifies the result of activating an application for a URI on a remote device. */
 @JSGlobal("Windows.System.RemoteLaunchUriStatus")
 @js.native
 object RemoteLaunchUriStatus extends js.Object {
+  
   /** The app is not installed on the remote system */
   @js.native
   sealed trait appUnavailable extends RemoteLaunchUriStatus
@@ -42,6 +42,4 @@ object RemoteLaunchUriStatus extends js.Object {
   /** The amount of data you tried to send to the remote system exceeded the limit. */
   @js.native
   sealed trait valueSetTooLarge extends RemoteLaunchUriStatus
-  
 }
-

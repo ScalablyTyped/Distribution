@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides a fast way of accessing and changing property values.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFastPropertySet extends XInterface {
+  
   /**
     * @param nHandle contains the implementation handle of the implementation for the property.
     * @returns the value of the property with the name PropertyName.
@@ -21,6 +22,7 @@ trait XFastPropertySet extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
   def getFastPropertyValue(nHandle: Double): js.Any = js.native
+  
   /**
     * sets the value to the property with the specified name.
     * @param nHandle contains the implementation handle of the implementation for the property.
@@ -32,8 +34,8 @@ trait XFastPropertySet extends XInterface {
     */
   def setFastPropertyValue(nHandle: Double, aValue: js.Any): Unit = js.native
 }
-
 object XFastPropertySet {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -45,22 +47,26 @@ object XFastPropertySet {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
     __obj.asInstanceOf[XFastPropertySet]
   }
+  
   @scala.inline
   implicit class XFastPropertySetOps[Self <: XFastPropertySet] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetFastPropertyValue(value: Double => js.Any): Self = this.set("getFastPropertyValue", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetFastPropertyValue(value: (Double, js.Any) => Unit): Self = this.set("setFastPropertyValue", js.Any.fromFunction2(value))
   }
-  
 }
-

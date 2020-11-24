@@ -5,131 +5,320 @@ import typings.jsforce.salesforceObjectOptionsMod.SObjectOptions
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait SObjectCreateOptions extends SObjectOptions {
-  var AccountSource: js.UndefOr[String] = js.undefined
-  var BillingCity: js.UndefOr[String] = js.undefined
-  var BillingCountry: js.UndefOr[String] = js.undefined
-  var BillingLatitude: js.UndefOr[Double] = js.undefined
-  var BillingLongitude: js.UndefOr[Double] = js.undefined
-  var BillingPostalCode: js.UndefOr[String] = js.undefined
-  var BillingState: js.UndefOr[String] = js.undefined
-  var BillingStreet: js.UndefOr[String] = js.undefined
-  var CreatedById: js.UndefOr[SalesforceId] = js.undefined
-  var CreatedDate: js.UndefOr[Date] = js.undefined
-  var Description: js.UndefOr[String] = js.undefined
-  var Industry: js.UndefOr[String] = js.undefined
-  var IsDeleted: js.UndefOr[Boolean] = js.undefined
-  var Jigsaw: js.UndefOr[String] = js.undefined
-  var JigsawCompanyId: js.UndefOr[String] = js.undefined
-  var LastActivityDate: js.UndefOr[Date] = js.undefined
-  var LastModifiedById: js.UndefOr[SalesforceId] = js.undefined
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
-  var LastReferencedDate: js.UndefOr[Date] = js.undefined
-  var LastViewedDate: js.UndefOr[Date] = js.undefined
-  var MasterRecordId: js.UndefOr[SalesforceId] = js.undefined
-  var NumberOfEmployees: js.UndefOr[Double] = js.undefined
-  var OwnerId: js.UndefOr[SalesforceId] = js.undefined
-  var ParentId: js.UndefOr[SalesforceId] = js.undefined
-  var Phone: js.UndefOr[String] = js.undefined
-  var ShippingCity: js.UndefOr[String] = js.undefined
-  var ShippingCountry: js.UndefOr[String] = js.undefined
-  var ShippingLatitude: js.UndefOr[Double] = js.undefined
-  var ShippingLongitude: js.UndefOr[Double] = js.undefined
-  var ShippingPostalCode: js.UndefOr[String] = js.undefined
-  var ShippingState: js.UndefOr[String] = js.undefined
-  var ShippingStreet: js.UndefOr[String] = js.undefined
-  var SicDesc: js.UndefOr[String] = js.undefined
-  var SystemModstamp: js.UndefOr[Date] = js.undefined
-  var Type: js.UndefOr[String] = js.undefined
-  var Website: js.UndefOr[String] = js.undefined
+  
+  var AccountSource: js.UndefOr[String] = js.native
+  
+  var BillingCity: js.UndefOr[String] = js.native
+  
+  var BillingCountry: js.UndefOr[String] = js.native
+  
+  var BillingLatitude: js.UndefOr[Double] = js.native
+  
+  var BillingLongitude: js.UndefOr[Double] = js.native
+  
+  var BillingPostalCode: js.UndefOr[String] = js.native
+  
+  var BillingState: js.UndefOr[String] = js.native
+  
+  var BillingStreet: js.UndefOr[String] = js.native
+  
+  var CreatedById: js.UndefOr[SalesforceId] = js.native
+  
+  var CreatedDate: js.UndefOr[Date] = js.native
+  
+  var Description: js.UndefOr[String] = js.native
+  
+  var Industry: js.UndefOr[String] = js.native
+  
+  var IsDeleted: js.UndefOr[Boolean] = js.native
+  
+  var Jigsaw: js.UndefOr[String] = js.native
+  
+  var JigsawCompanyId: js.UndefOr[String] = js.native
+  
+  var LastActivityDate: js.UndefOr[Date] = js.native
+  
+  var LastModifiedById: js.UndefOr[SalesforceId] = js.native
+  
+  var LastModifiedDate: js.UndefOr[Date] = js.native
+  
+  var LastReferencedDate: js.UndefOr[Date] = js.native
+  
+  var LastViewedDate: js.UndefOr[Date] = js.native
+  
+  var MasterRecordId: js.UndefOr[SalesforceId] = js.native
+  
+  var NumberOfEmployees: js.UndefOr[Double] = js.native
+  
+  var OwnerId: js.UndefOr[SalesforceId] = js.native
+  
+  var ParentId: js.UndefOr[SalesforceId] = js.native
+  
+  var Phone: js.UndefOr[String] = js.native
+  
+  var ShippingCity: js.UndefOr[String] = js.native
+  
+  var ShippingCountry: js.UndefOr[String] = js.native
+  
+  var ShippingLatitude: js.UndefOr[Double] = js.native
+  
+  var ShippingLongitude: js.UndefOr[Double] = js.native
+  
+  var ShippingPostalCode: js.UndefOr[String] = js.native
+  
+  var ShippingState: js.UndefOr[String] = js.native
+  
+  var ShippingStreet: js.UndefOr[String] = js.native
+  
+  var SicDesc: js.UndefOr[String] = js.native
+  
+  var SystemModstamp: js.UndefOr[Date] = js.native
+  
+  var Type: js.UndefOr[String] = js.native
+  
+  var Website: js.UndefOr[String] = js.native
 }
-
 object SObjectCreateOptions {
+  
   @scala.inline
-  def apply(
-    AccountSource: String = null,
-    BillingCity: String = null,
-    BillingCountry: String = null,
-    BillingLatitude: js.UndefOr[Double] = js.undefined,
-    BillingLongitude: js.UndefOr[Double] = js.undefined,
-    BillingPostalCode: String = null,
-    BillingState: String = null,
-    BillingStreet: String = null,
-    CreatedById: SalesforceId = null,
-    CreatedDate: Date = null,
-    Description: String = null,
-    ExtId__c: String = null,
-    Id: SalesforceId = null,
-    Industry: String = null,
-    IsDeleted: js.UndefOr[Boolean] = js.undefined,
-    Jigsaw: String = null,
-    JigsawCompanyId: String = null,
-    LastActivityDate: Date = null,
-    LastModifiedById: SalesforceId = null,
-    LastModifiedDate: Date = null,
-    LastReferencedDate: Date = null,
-    LastViewedDate: Date = null,
-    MasterRecordId: SalesforceId = null,
-    Name: String = null,
-    NumberOfEmployees: js.UndefOr[Double] = js.undefined,
-    OwnerId: SalesforceId = null,
-    ParentId: SalesforceId = null,
-    Phone: String = null,
-    ShippingCity: String = null,
-    ShippingCountry: String = null,
-    ShippingLatitude: js.UndefOr[Double] = js.undefined,
-    ShippingLongitude: js.UndefOr[Double] = js.undefined,
-    ShippingPostalCode: String = null,
-    ShippingState: String = null,
-    ShippingStreet: String = null,
-    SicDesc: String = null,
-    SystemModstamp: Date = null,
-    Type: String = null,
-    Website: String = null
-  ): SObjectCreateOptions = {
+  def apply(): SObjectCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (AccountSource != null) __obj.updateDynamic("AccountSource")(AccountSource.asInstanceOf[js.Any])
-    if (BillingCity != null) __obj.updateDynamic("BillingCity")(BillingCity.asInstanceOf[js.Any])
-    if (BillingCountry != null) __obj.updateDynamic("BillingCountry")(BillingCountry.asInstanceOf[js.Any])
-    if (!js.isUndefined(BillingLatitude)) __obj.updateDynamic("BillingLatitude")(BillingLatitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BillingLongitude)) __obj.updateDynamic("BillingLongitude")(BillingLongitude.get.asInstanceOf[js.Any])
-    if (BillingPostalCode != null) __obj.updateDynamic("BillingPostalCode")(BillingPostalCode.asInstanceOf[js.Any])
-    if (BillingState != null) __obj.updateDynamic("BillingState")(BillingState.asInstanceOf[js.Any])
-    if (BillingStreet != null) __obj.updateDynamic("BillingStreet")(BillingStreet.asInstanceOf[js.Any])
-    if (CreatedById != null) __obj.updateDynamic("CreatedById")(CreatedById.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExtId__c != null) __obj.updateDynamic("ExtId__c")(ExtId__c.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Industry != null) __obj.updateDynamic("Industry")(Industry.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDeleted)) __obj.updateDynamic("IsDeleted")(IsDeleted.get.asInstanceOf[js.Any])
-    if (Jigsaw != null) __obj.updateDynamic("Jigsaw")(Jigsaw.asInstanceOf[js.Any])
-    if (JigsawCompanyId != null) __obj.updateDynamic("JigsawCompanyId")(JigsawCompanyId.asInstanceOf[js.Any])
-    if (LastActivityDate != null) __obj.updateDynamic("LastActivityDate")(LastActivityDate.asInstanceOf[js.Any])
-    if (LastModifiedById != null) __obj.updateDynamic("LastModifiedById")(LastModifiedById.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (LastReferencedDate != null) __obj.updateDynamic("LastReferencedDate")(LastReferencedDate.asInstanceOf[js.Any])
-    if (LastViewedDate != null) __obj.updateDynamic("LastViewedDate")(LastViewedDate.asInstanceOf[js.Any])
-    if (MasterRecordId != null) __obj.updateDynamic("MasterRecordId")(MasterRecordId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfEmployees)) __obj.updateDynamic("NumberOfEmployees")(NumberOfEmployees.get.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (ParentId != null) __obj.updateDynamic("ParentId")(ParentId.asInstanceOf[js.Any])
-    if (Phone != null) __obj.updateDynamic("Phone")(Phone.asInstanceOf[js.Any])
-    if (ShippingCity != null) __obj.updateDynamic("ShippingCity")(ShippingCity.asInstanceOf[js.Any])
-    if (ShippingCountry != null) __obj.updateDynamic("ShippingCountry")(ShippingCountry.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShippingLatitude)) __obj.updateDynamic("ShippingLatitude")(ShippingLatitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShippingLongitude)) __obj.updateDynamic("ShippingLongitude")(ShippingLongitude.get.asInstanceOf[js.Any])
-    if (ShippingPostalCode != null) __obj.updateDynamic("ShippingPostalCode")(ShippingPostalCode.asInstanceOf[js.Any])
-    if (ShippingState != null) __obj.updateDynamic("ShippingState")(ShippingState.asInstanceOf[js.Any])
-    if (ShippingStreet != null) __obj.updateDynamic("ShippingStreet")(ShippingStreet.asInstanceOf[js.Any])
-    if (SicDesc != null) __obj.updateDynamic("SicDesc")(SicDesc.asInstanceOf[js.Any])
-    if (SystemModstamp != null) __obj.updateDynamic("SystemModstamp")(SystemModstamp.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Website != null) __obj.updateDynamic("Website")(Website.asInstanceOf[js.Any])
     __obj.asInstanceOf[SObjectCreateOptions]
   }
+  
+  @scala.inline
+  implicit class SObjectCreateOptionsOps[Self <: SObjectCreateOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAccountSource(value: String): Self = this.set("AccountSource", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAccountSource: Self = this.set("AccountSource", js.undefined)
+    
+    @scala.inline
+    def setBillingCity(value: String): Self = this.set("BillingCity", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingCity: Self = this.set("BillingCity", js.undefined)
+    
+    @scala.inline
+    def setBillingCountry(value: String): Self = this.set("BillingCountry", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingCountry: Self = this.set("BillingCountry", js.undefined)
+    
+    @scala.inline
+    def setBillingLatitude(value: Double): Self = this.set("BillingLatitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingLatitude: Self = this.set("BillingLatitude", js.undefined)
+    
+    @scala.inline
+    def setBillingLongitude(value: Double): Self = this.set("BillingLongitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingLongitude: Self = this.set("BillingLongitude", js.undefined)
+    
+    @scala.inline
+    def setBillingPostalCode(value: String): Self = this.set("BillingPostalCode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingPostalCode: Self = this.set("BillingPostalCode", js.undefined)
+    
+    @scala.inline
+    def setBillingState(value: String): Self = this.set("BillingState", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingState: Self = this.set("BillingState", js.undefined)
+    
+    @scala.inline
+    def setBillingStreet(value: String): Self = this.set("BillingStreet", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBillingStreet: Self = this.set("BillingStreet", js.undefined)
+    
+    @scala.inline
+    def setCreatedById(value: SalesforceId): Self = this.set("CreatedById", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCreatedById: Self = this.set("CreatedById", js.undefined)
+    
+    @scala.inline
+    def setCreatedDate(value: Date): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    
+    @scala.inline
+    def setIndustry(value: String): Self = this.set("Industry", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIndustry: Self = this.set("Industry", js.undefined)
+    
+    @scala.inline
+    def setIsDeleted(value: Boolean): Self = this.set("IsDeleted", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsDeleted: Self = this.set("IsDeleted", js.undefined)
+    
+    @scala.inline
+    def setJigsaw(value: String): Self = this.set("Jigsaw", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteJigsaw: Self = this.set("Jigsaw", js.undefined)
+    
+    @scala.inline
+    def setJigsawCompanyId(value: String): Self = this.set("JigsawCompanyId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteJigsawCompanyId: Self = this.set("JigsawCompanyId", js.undefined)
+    
+    @scala.inline
+    def setLastActivityDate(value: Date): Self = this.set("LastActivityDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLastActivityDate: Self = this.set("LastActivityDate", js.undefined)
+    
+    @scala.inline
+    def setLastModifiedById(value: SalesforceId): Self = this.set("LastModifiedById", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLastModifiedById: Self = this.set("LastModifiedById", js.undefined)
+    
+    @scala.inline
+    def setLastModifiedDate(value: Date): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    
+    @scala.inline
+    def setLastReferencedDate(value: Date): Self = this.set("LastReferencedDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLastReferencedDate: Self = this.set("LastReferencedDate", js.undefined)
+    
+    @scala.inline
+    def setLastViewedDate(value: Date): Self = this.set("LastViewedDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLastViewedDate: Self = this.set("LastViewedDate", js.undefined)
+    
+    @scala.inline
+    def setMasterRecordId(value: SalesforceId): Self = this.set("MasterRecordId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMasterRecordId: Self = this.set("MasterRecordId", js.undefined)
+    
+    @scala.inline
+    def setNumberOfEmployees(value: Double): Self = this.set("NumberOfEmployees", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNumberOfEmployees: Self = this.set("NumberOfEmployees", js.undefined)
+    
+    @scala.inline
+    def setOwnerId(value: SalesforceId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    
+    @scala.inline
+    def setParentId(value: SalesforceId): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    
+    @scala.inline
+    def setPhone(value: String): Self = this.set("Phone", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePhone: Self = this.set("Phone", js.undefined)
+    
+    @scala.inline
+    def setShippingCity(value: String): Self = this.set("ShippingCity", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingCity: Self = this.set("ShippingCity", js.undefined)
+    
+    @scala.inline
+    def setShippingCountry(value: String): Self = this.set("ShippingCountry", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingCountry: Self = this.set("ShippingCountry", js.undefined)
+    
+    @scala.inline
+    def setShippingLatitude(value: Double): Self = this.set("ShippingLatitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingLatitude: Self = this.set("ShippingLatitude", js.undefined)
+    
+    @scala.inline
+    def setShippingLongitude(value: Double): Self = this.set("ShippingLongitude", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingLongitude: Self = this.set("ShippingLongitude", js.undefined)
+    
+    @scala.inline
+    def setShippingPostalCode(value: String): Self = this.set("ShippingPostalCode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingPostalCode: Self = this.set("ShippingPostalCode", js.undefined)
+    
+    @scala.inline
+    def setShippingState(value: String): Self = this.set("ShippingState", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingState: Self = this.set("ShippingState", js.undefined)
+    
+    @scala.inline
+    def setShippingStreet(value: String): Self = this.set("ShippingStreet", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteShippingStreet: Self = this.set("ShippingStreet", js.undefined)
+    
+    @scala.inline
+    def setSicDesc(value: String): Self = this.set("SicDesc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSicDesc: Self = this.set("SicDesc", js.undefined)
+    
+    @scala.inline
+    def setSystemModstamp(value: Date): Self = this.set("SystemModstamp", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSystemModstamp: Self = this.set("SystemModstamp", js.undefined)
+    
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    
+    @scala.inline
+    def setWebsite(value: String): Self = this.set("Website", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteWebsite: Self = this.set("Website", js.undefined)
+  }
 }
-

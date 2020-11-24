@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Accountuserlinks")
 @js.native
 class ResourceManagementAccountuserlinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.accountUserLinks.delete
     * @desc Removes a user from the given account.
@@ -42,6 +44,7 @@ class ResourceManagementAccountuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.accountUserLinks.insert
     * @desc Adds a new user to the given account.
@@ -74,6 +77,7 @@ class ResourceManagementAccountuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityUserLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.accountUserLinks.list
     * @desc Lists account-user links for a given account.
@@ -107,6 +111,7 @@ class ResourceManagementAccountuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityUserLinks]
   ): Unit = js.native
+  
   /**
     * analytics.management.accountUserLinks.update
     * @desc Updates permissions for an existing user on the given account.
@@ -141,4 +146,3 @@ class ResourceManagementAccountuserlinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEntityUserLink]
   ): Unit = js.native
 }
-

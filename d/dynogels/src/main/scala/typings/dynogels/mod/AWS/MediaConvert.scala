@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.mediaconvertMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.MediaConvert")
 @js.native
@@ -14,4 +14,3 @@ class MediaConvert ()
   extends typings.awsSdk.mod.MediaConvert {
   def this(options: ClientConfiguration) = this()
 }
-

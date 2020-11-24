@@ -3,11 +3,12 @@ package typings.jestCli
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest-cli/build/init/errors", JSImport.Namespace)
 @js.native
 object errorsMod extends js.Object {
+  
   @js.native
   class MalformedPackageJsonError protected () extends Error {
     def this(packageJsonPath: String) = this()
@@ -17,6 +18,4 @@ object errorsMod extends js.Object {
   class NotFoundPackageJsonError protected () extends Error {
     def this(rootDir: String) = this()
   }
-  
 }
-

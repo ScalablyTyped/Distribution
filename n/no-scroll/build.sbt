@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "no-scroll"
-version := "2.1-dt-20190214Z-41bf0b"
+version := "2.1-dt-20190214Z-50634c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

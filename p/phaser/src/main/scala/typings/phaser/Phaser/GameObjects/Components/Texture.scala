@@ -5,21 +5,19 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for getting and setting the texture of a Game Object.
   */
 @js.native
 trait Texture extends js.Object {
+  
   /**
     * The Texture Frame this Game Object is using to render with.
     */
   var frame: Frame = js.native
-  /**
-    * The Texture this Game Object is using to render with.
-    */
-  var texture: typings.phaser.Phaser.Textures.Texture | CanvasTexture = js.native
+  
   /**
     * Sets the frame this Game Object will use to render with.
     * 
@@ -41,6 +39,7 @@ trait Texture extends js.Object {
   def setFrame(frame: integer, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+  
   /**
     * Sets the texture and frame this Game Object will use to render with.
     * 
@@ -54,5 +53,9 @@ trait Texture extends js.Object {
   def setTexture(key: typings.phaser.Phaser.Textures.Texture): this.type = js.native
   def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: String): this.type = js.native
   def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: integer): this.type = js.native
+  
+  /**
+    * The Texture this Game Object is using to render with.
+    */
+  var texture: typings.phaser.Phaser.Textures.Texture | CanvasTexture = js.native
 }
-

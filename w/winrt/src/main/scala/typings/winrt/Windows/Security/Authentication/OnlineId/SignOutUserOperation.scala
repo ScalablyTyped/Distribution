@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.anon.CompletedGetResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SignOutUserOperation extends IAsyncAction {
-  var operation: CompletedGetResults = js.native
+  
   @JSName("done")
   def done_MSignOutUserOperation[U](): Unit = js.native
   @JSName("done")
@@ -41,5 +41,6 @@ trait SignOutUserOperation extends IAsyncAction {
     error: js.Function1[/* error */ js.Any, _],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): Unit = js.native
+  
+  var operation: CompletedGetResults = js.native
 }
-

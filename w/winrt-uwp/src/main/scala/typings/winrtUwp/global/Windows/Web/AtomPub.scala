@@ -3,12 +3,13 @@ package typings.winrtUwp.global.Windows.Web
 import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables HTTP CRUD access to Web resources using the AtomPub protocol. The AtomPub sample demonstrates this implementation. */
 @JSGlobal("Windows.Web.AtomPub")
 @js.native
 object AtomPub extends js.Object {
+  
   /** Encapsulates the methods needed to implement the AtomPub protocol which enables HTTP CRUD access to Web resources using the Atom 1.0 wire format. */
   @js.native
   /** Creates a new AtomPubClient object. */
@@ -35,6 +36,4 @@ object AtomPub extends js.Object {
   @js.native
   abstract class Workspace ()
     extends typings.winrtUwp.Windows.Web.AtomPub.Workspace
-  
 }
-

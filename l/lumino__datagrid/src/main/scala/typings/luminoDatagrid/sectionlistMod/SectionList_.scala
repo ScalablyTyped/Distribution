@@ -3,7 +3,7 @@ package typings.luminoDatagrid.sectionlistMod
 import typings.luminoDatagrid.sectionlistMod.SectionList.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/sectionlist", "SectionList")
 @js.native
@@ -14,10 +14,23 @@ class SectionList_ protected () extends js.Object {
     * @param options - The options for initializing the list.
     */
   def this(options: IOptions) = this()
+  
   var _count: js.Any = js.native
+  
   var _defaultSize: js.Any = js.native
+  
   var _length: js.Any = js.native
+  
   var _sections: js.Any = js.native
+  
+  /**
+    * Remove all sections from the list.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  def clear(): Unit = js.native
+  
   /**
     * The total number of sections in the list.
     *
@@ -25,6 +38,7 @@ class SectionList_ protected () extends js.Object {
     * Constant.
     */
   val count: Double = js.native
+  
   /**
     * Get the default size of sections in the list.
     *
@@ -38,20 +52,7 @@ class SectionList_ protected () extends js.Object {
     * Linear on the number of resized sections.
     */
   var defaultSize: Double = js.native
-  /**
-    * The total size of all sections in the list.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  val length: Double = js.native
-  /**
-    * Remove all sections from the list.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  def clear(): Unit = js.native
+  
   /**
     * Find the extent of the section at the given index.
     *
@@ -67,6 +68,7 @@ class SectionList_ protected () extends js.Object {
     * Logarithmic on the number of resized sections.
     */
   def extentOf(index: Double): Double = js.native
+  
   /**
     * Find the index of the section which covers the given offset.
     *
@@ -79,6 +81,7 @@ class SectionList_ protected () extends js.Object {
     * Logarithmic on the number of resized sections.
     */
   def indexOf(offset: Double): Double = js.native
+  
   /**
     * Insert sections into the list.
     *
@@ -95,6 +98,15 @@ class SectionList_ protected () extends js.Object {
     * Linear on the number of resized sections.
     */
   def insert(index: Double, count: Double): Unit = js.native
+  
+  /**
+    * The total size of all sections in the list.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  val length: Double = js.native
+  
   /**
     * Move sections within the list.
     *
@@ -114,6 +126,7 @@ class SectionList_ protected () extends js.Object {
     * Linear on the number of moved resized sections.
     */
   def move(index: Double, count: Double, destination: Double): Unit = js.native
+  
   /**
     * Find the offset of the section at the given index.
     *
@@ -129,6 +142,7 @@ class SectionList_ protected () extends js.Object {
     * Logarithmic on the number of resized sections.
     */
   def offsetOf(index: Double): Double = js.native
+  
   /**
     * Remove sections from the list.
     *
@@ -145,6 +159,7 @@ class SectionList_ protected () extends js.Object {
     * Linear on the number of resized sections.
     */
   def remove(index: Double, count: Double): Unit = js.native
+  
   /**
     * Reset all modified sections to the default size.
     *
@@ -152,6 +167,7 @@ class SectionList_ protected () extends js.Object {
     * Constant.
     */
   def reset(): Unit = js.native
+  
   /**
     * Resize a section in the list.
     *
@@ -168,6 +184,7 @@ class SectionList_ protected () extends js.Object {
     * Linear on the number of resized sections.
     */
   def resize(index: Double, size: Double): Unit = js.native
+  
   /**
     * Find the size of the section at the given index.
     *
@@ -184,4 +201,3 @@ class SectionList_ protected () extends js.Object {
     */
   def sizeOf(index: Double): Double = js.native
 }
-

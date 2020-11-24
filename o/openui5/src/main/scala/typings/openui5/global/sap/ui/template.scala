@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.template")
 @js.native
 object template extends js.Object {
+  
   //  Creates a Template for the given id, dom reference or a configuration object.
   def apply(): js.Any = js.native
   /**
@@ -39,4 +40,3 @@ object template extends js.Object {
   def apply(oTemplate: String): js.Any | js.Array[_] = js.native
   def apply(oTemplate: js.Any): js.Any = js.native
 }
-

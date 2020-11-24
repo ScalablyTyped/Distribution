@@ -3,12 +3,13 @@ package typings.nodal.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Controller")
 @js.native
 class Controller ()
   extends typings.fxn.mod.Controller {
+  
   /**
     * Using API formatting, send an http.ServerResponse indicating there was a Bad Request (400)
     * @param {string} msg Error message to send
@@ -16,6 +17,7 @@ class Controller ()
     * @return {boolean}
     */
   def badRequest(msg: String, details: js.Any): Boolean = js.native
+  
   /**
     * Using API formatting, send an http.ServerResponse indicating there was an Internal Server Error (500)
     * @param {string} msg Error message to send
@@ -23,6 +25,7 @@ class Controller ()
     * @return {boolean}
     */
   def error(msg: String, details: js.Any): Boolean = js.native
+  
   /**
     * Using API formatting, send an http.ServerResponse indicating the requested resource was Not Found (404)
     * @param {string} msg Error message to send
@@ -30,6 +33,7 @@ class Controller ()
     * @return {boolean}
     */
   def notFound(msg: String, details: js.Any): Boolean = js.native
+  
   /**
     * Endpoint not implemented
     * @param {string} msg Error message to send
@@ -37,6 +41,7 @@ class Controller ()
     * @return {boolean}
     */
   def notImplemented(msg: String, details: js.Any): Boolean = js.native
+  
   def respond(data: js.Array[_]): Boolean = js.native
   def respond(data: js.Array[_], arrInterface: js.Array[String]): Boolean = js.native
   def respond(data: js.Object): Boolean = js.native
@@ -53,6 +58,7 @@ class Controller ()
     */
   def respond(data: Error): Boolean = js.native
   def respond(data: Error, arrInterface: js.Array[String]): Boolean = js.native
+  
   /**
     * Using API formatting, send an http.ServerResponse indicating there were Too Many Requests (429) (i.e. the client is being rate limited)
     * @param {string} msg Error message to send
@@ -60,6 +66,7 @@ class Controller ()
     * @return {boolean}
     */
   def tooManyRequests(msg: String, details: js.Any): Boolean = js.native
+  
   /**
     * Using API formatting, send an http.ServerResponse indicating there was an Unauthorized request (401)
     * @param {string} msg Error message to send
@@ -68,4 +75,3 @@ class Controller ()
     */
   def unauthorized(msg: String, details: js.Any): Boolean = js.native
 }
-

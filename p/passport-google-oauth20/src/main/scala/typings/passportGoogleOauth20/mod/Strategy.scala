@@ -6,7 +6,7 @@ import typings.expressServeStaticCore.mod.Query
 import typings.passportOauth2.mod.OAuth2Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-google-oauth20", "Strategy")
 @js.native
@@ -23,6 +23,18 @@ class Strategy protected () extends OAuth2Strategy {
       ]
   ) = this()
   def this(
+    options: StrategyOptionsWithRequest,
+    verify: js.Function6[
+        /* req */ Request_[ParamsDictionary, _, _, Query], 
+        /* accessToken */ String, 
+        /* refreshToken */ String, 
+        /* params */ js.Any, 
+        /* profile */ Profile, 
+        /* done */ VerifyCallback, 
+        Unit
+      ]
+  ) = this()
+  def this(
     options: StrategyOptions,
     verify: js.Function4[
         /* accessToken */ String, 
@@ -32,5 +44,15 @@ class Strategy protected () extends OAuth2Strategy {
         Unit
       ]
   ) = this()
+  def this(
+    options: StrategyOptions,
+    verify: js.Function5[
+        /* accessToken */ String, 
+        /* refreshToken */ String, 
+        /* params */ js.Any, 
+        /* profile */ Profile, 
+        /* done */ VerifyCallback, 
+        Unit
+      ]
+  ) = this()
 }
-

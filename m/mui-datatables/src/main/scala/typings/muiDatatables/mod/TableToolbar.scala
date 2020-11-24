@@ -1,13 +1,11 @@
 package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.Component
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mui-datatables", "TableToolbar")
 @js.native
-object TableToolbar
-  extends TopLevel[Component[MUIDataTableToolbar, js.Object, js.Any]]
-
+object TableToolbar extends TopLevel[ComponentType[MUIDataTableToolbar]]

@@ -5,7 +5,7 @@ import typings.std.ArrayBufferView
 import typings.std.SharedArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A wrapper for data so that it can be used and uploaded by WebGL
@@ -30,11 +30,11 @@ class Buffer protected ()
   def this(data: SharedArrayBuffer, _static: js.UndefOr[scala.Nothing], index: Boolean) = this()
   def this(data: SharedArrayBuffer, _static: Boolean, index: Boolean) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Buffer")
 @js.native
 object Buffer extends js.Object {
+  
   def from(data: js.Array[Double]): typings.pixiJs.PIXI.Buffer = js.native
   /**
     * Helper function that creates a buffer based on an array or TypedArray
@@ -45,4 +45,3 @@ object Buffer extends js.Object {
     */
   def from(data: ArrayBufferView): typings.pixiJs.PIXI.Buffer = js.native
 }
-

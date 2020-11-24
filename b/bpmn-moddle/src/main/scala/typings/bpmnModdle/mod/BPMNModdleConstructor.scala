@@ -5,11 +5,10 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BPMNModdleConstructor
   extends Instantiable0[BPMNModdle]
      with Instantiable1[/* packages */ js.Any, BPMNModdle]
      with Instantiable2[js.UndefOr[/* packages */ js.Any], /* options */ Option, BPMNModdle]
-

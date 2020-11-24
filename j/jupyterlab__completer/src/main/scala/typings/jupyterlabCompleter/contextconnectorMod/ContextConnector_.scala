@@ -6,7 +6,7 @@ import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
 import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/completer/lib/contextconnector", "ContextConnector")
 @js.native
@@ -17,6 +17,6 @@ class ContextConnector_ protected () extends DataConnector[IReply, Unit, IReques
     * @param options - The instatiation options for the context connector.
     */
   def this(options: IOptions) = this()
+  
   var _editor: js.Any = js.native
 }
-

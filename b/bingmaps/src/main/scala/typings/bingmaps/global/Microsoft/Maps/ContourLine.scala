@@ -2,7 +2,7 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.ContourLine")
 @js.native
@@ -17,4 +17,3 @@ class ContourLine protected ()
   def this(boundary: js.Array[typings.bingmaps.Microsoft.Maps.Location], contourValue: String) = this()
   def this(boundary: js.Array[typings.bingmaps.Microsoft.Maps.Location], contourValue: Double) = this()
 }
-

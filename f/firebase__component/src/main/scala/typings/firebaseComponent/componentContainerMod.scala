@@ -10,16 +10,16 @@ import typings.firebaseComponent.providerMod.Provider
 import typings.firebaseComponent.typesMod.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/component/dist/src/component_container", JSImport.Namespace)
 @js.native
 object componentContainerMod extends js.Object {
+  
   @js.native
   class ComponentContainer protected () extends js.Object {
     def this(name: String) = this()
-    val name: js.Any = js.native
-    val providers: js.Any = js.native
+    
     @JSName("addComponent")
     def addComponent_badtest(component: Component[badtest]): Unit = js.native
     @JSName("addComponent")
@@ -39,6 +39,7 @@ object componentContainerMod extends js.Object {
     def addComponent_ship(component: Component[ship]): Unit = js.native
     @JSName("addComponent")
     def addComponent_test(component: Component[test]): Unit = js.native
+    
     @JSName("addOrOverwriteComponent")
     def addOrOverwriteComponent_badtest(component: Component[badtest]): Unit = js.native
     @JSName("addOrOverwriteComponent")
@@ -49,6 +50,7 @@ object componentContainerMod extends js.Object {
     def addOrOverwriteComponent_ship(component: Component[ship]): Unit = js.native
     @JSName("addOrOverwriteComponent")
     def addOrOverwriteComponent_test(component: Component[test]): Unit = js.native
+    
     @JSName("getProvider")
     def getProvider_badtest(name: badtest): Provider[badtest] = js.native
     @JSName("getProvider")
@@ -66,8 +68,11 @@ object componentContainerMod extends js.Object {
     def getProvider_ship(name: ship): Provider[ship] = js.native
     @JSName("getProvider")
     def getProvider_test(name: test): Provider[test] = js.native
+    
     def getProviders(): js.Array[Provider[Name]] = js.native
+    
+    val name: js.Any = js.native
+    
+    val providers: js.Any = js.native
   }
-  
 }
-

@@ -10,15 +10,12 @@ Make a directory and its parents if needed - Think `mkdir -p`
 | ------------------ | :-------------: |
 | Full name          | make-dir |
 | Keywords           | mkdir, mkdirp, make, directories, dir, dirs, folders, directory, folder, path, parent, parents, intermediate, recursively, recursive, create, fs, filesystem, file-system |
-| # releases         | 6 |
-| # dependents       | 588 |
-| # downloads        | 605627200 |
+| # releases         | 7 |
+| # dependents       | 785 |
+| # downloads        | 1174553802 |
 | # stars            | 8 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/make-dir#readme)
-- [Bugs](https://github.com/sindresorhus/make-dir/issues)
-- [Repository](https://github.com/sindresorhus/make-dir)
 - [Npm](https://www.npmjs.com/package/make-dir)
     
 

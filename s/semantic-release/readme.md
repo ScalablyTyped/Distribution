@@ -1,7 +1,7 @@
 
 # Scala.js typings for semantic-release
 
-Typings are for version 17.1
+Typings are for version 17.2
 
 ## Library description:
 Automated semver compliant package publishing
@@ -10,10 +10,10 @@ Automated semver compliant package publishing
 | ------------------ | :-------------: |
 | Full name          | semantic-release |
 | Keywords           | author, automation, changelog, module, package, publish, release, semver, version |
-| # releases         | 186 |
-| # dependents       | 206 |
-| # downloads        | 6193762 |
-| # stars            | 82 |
+| # releases         | 109 |
+| # dependents       | 299 |
+| # downloads        | 12416253 |
+| # stars            | 83 |
 
 ## Links
 - [Homepage](https://github.com/semantic-release/semantic-release#readme)

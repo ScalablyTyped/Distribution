@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.pc.ResourceHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource handler used for loading {@link pc.Sound} resources.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class AudioHandler protected () extends ResourceHandler {
   def this(manager: typings.playcanvas.pc.SoundManager) = this()
 }
-

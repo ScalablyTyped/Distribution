@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Datasources$Datasets")
 @js.native
 class ResourceUsersDatasourcesDatasets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fitness.users.dataSources.datasets.delete
     * @desc Performs an inclusive delete of all data points whose start and end
@@ -51,6 +53,7 @@ class ResourceUsersDatasourcesDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * fitness.users.dataSources.datasets.get
     * @desc Returns a dataset containing all data points whose start and end
@@ -87,6 +90,7 @@ class ResourceUsersDatasourcesDatasets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
+  
   /**
     * fitness.users.dataSources.datasets.patch
     * @desc Adds data points to a dataset. The dataset need not be previously
@@ -123,4 +127,3 @@ class ResourceUsersDatasourcesDatasets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDataset]
   ): Unit = js.native
 }
-

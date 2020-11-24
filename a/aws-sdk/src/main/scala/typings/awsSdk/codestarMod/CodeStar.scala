@@ -1,17 +1,16 @@
 package typings.awsSdk.codestarMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeStar extends Service {
-  @JSName("config")
-  var config_CodeStar: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds an IAM user to the team for an AWS CodeStar project.
     */
@@ -25,6 +24,10 @@ trait CodeStar extends Service {
     params: AssociateTeamMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateTeamMemberResult, Unit]
   ): Request[AssociateTeamMemberResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CodeStar: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.
     */
@@ -38,6 +41,7 @@ trait CodeStar extends Service {
     params: CreateProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResult, Unit]
   ): Request[CreateProjectResult, AWSError] = js.native
+  
   /**
     * Creates a profile for a user that includes user preferences, such as the display name and email address assocciated with the user, in AWS CodeStar. The user profile is not project-specific. Information in the user profile is displayed wherever the user's information appears to other users in AWS CodeStar.
     */
@@ -51,6 +55,7 @@ trait CodeStar extends Service {
     params: CreateUserProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserProfileResult, Unit]
   ): Request[CreateUserProfileResult, AWSError] = js.native
+  
   /**
     * Deletes a project, including project resources. Does not delete users associated with the project, but does delete the IAM roles that allowed access to the project.
     */
@@ -64,6 +69,7 @@ trait CodeStar extends Service {
     params: DeleteProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResult, Unit]
   ): Request[DeleteProjectResult, AWSError] = js.native
+  
   /**
     * Deletes a user profile in AWS CodeStar, including all personal preference data associated with that profile, such as display name and email address. It does not delete the history of that user, for example the history of commits made by that user.
     */
@@ -77,6 +83,7 @@ trait CodeStar extends Service {
     params: DeleteUserProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserProfileResult, Unit]
   ): Request[DeleteUserProfileResult, AWSError] = js.native
+  
   /**
     * Describes a project and its resources.
     */
@@ -90,6 +97,7 @@ trait CodeStar extends Service {
     params: DescribeProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProjectResult, Unit]
   ): Request[DescribeProjectResult, AWSError] = js.native
+  
   /**
     * Describes a user in AWS CodeStar and the user attributes across all projects.
     */
@@ -103,6 +111,7 @@ trait CodeStar extends Service {
     params: DescribeUserProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserProfileResult, Unit]
   ): Request[DescribeUserProfileResult, AWSError] = js.native
+  
   /**
     * Removes a user from a project. Removing a user from a project also removes the IAM policies from that user that allowed access to the project and its resources. Disassociating a team member does not remove that user's profile from AWS CodeStar. It does not remove the user from IAM.
     */
@@ -116,6 +125,7 @@ trait CodeStar extends Service {
     params: DisassociateTeamMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTeamMemberResult, Unit]
   ): Request[DisassociateTeamMemberResult, AWSError] = js.native
+  
   /**
     * Lists all projects in AWS CodeStar associated with your AWS account.
     */
@@ -129,6 +139,7 @@ trait CodeStar extends Service {
     params: ListProjectsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsResult, Unit]
   ): Request[ListProjectsResult, AWSError] = js.native
+  
   /**
     * Lists resources associated with a project in AWS CodeStar.
     */
@@ -142,6 +153,7 @@ trait CodeStar extends Service {
     params: ListResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResult, Unit]
   ): Request[ListResourcesResult, AWSError] = js.native
+  
   /**
     * Gets the tags for a project.
     */
@@ -155,6 +167,7 @@ trait CodeStar extends Service {
     params: ListTagsForProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForProjectResult, Unit]
   ): Request[ListTagsForProjectResult, AWSError] = js.native
+  
   /**
     * Lists all team members associated with a project.
     */
@@ -168,6 +181,7 @@ trait CodeStar extends Service {
     params: ListTeamMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTeamMembersResult, Unit]
   ): Request[ListTeamMembersResult, AWSError] = js.native
+  
   /**
     * Lists all the user profiles configured for your AWS account in AWS CodeStar.
     */
@@ -181,6 +195,7 @@ trait CodeStar extends Service {
     params: ListUserProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUserProfilesResult, Unit]
   ): Request[ListUserProfilesResult, AWSError] = js.native
+  
   /**
     * Adds tags to a project.
     */
@@ -194,6 +209,7 @@ trait CodeStar extends Service {
     params: TagProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagProjectResult, Unit]
   ): Request[TagProjectResult, AWSError] = js.native
+  
   /**
     * Removes tags from a project.
     */
@@ -207,6 +223,7 @@ trait CodeStar extends Service {
     params: UntagProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagProjectResult, Unit]
   ): Request[UntagProjectResult, AWSError] = js.native
+  
   /**
     * Updates a project in AWS CodeStar.
     */
@@ -220,6 +237,7 @@ trait CodeStar extends Service {
     params: UpdateProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectResult, Unit]
   ): Request[UpdateProjectResult, AWSError] = js.native
+  
   /**
     * Updates a team member's attributes in an AWS CodeStar project. For example, you can change a team member's role in the project, or change whether they have remote access to project resources.
     */
@@ -233,6 +251,7 @@ trait CodeStar extends Service {
     params: UpdateTeamMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTeamMemberResult, Unit]
   ): Request[UpdateTeamMemberResult, AWSError] = js.native
+  
   /**
     * Updates a user's profile in AWS CodeStar. The user profile is not project-specific. Information in the user profile is displayed wherever the user's information appears to other users in AWS CodeStar. 
     */
@@ -247,4 +266,3 @@ trait CodeStar extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserProfileResult, Unit]
   ): Request[UpdateUserProfileResult, AWSError] = js.native
 }
-

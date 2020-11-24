@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "base64-js" : "1.5.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "base64-js" : "1.5.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

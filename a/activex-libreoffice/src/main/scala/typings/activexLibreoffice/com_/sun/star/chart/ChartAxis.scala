@@ -23,7 +23,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the axes in a diagram.
@@ -37,71 +37,93 @@ trait ChartAxis
      with CharacterProperties
      with UserDefinedAttributesSupplier
      with XPropertySet {
+  
   /** The axis description may be arranged in a special order for a better placement. */
   var ArrangeOrder: ChartAxisArrangeOrderType = js.native
+  
   /** The maximum value of the axis scale is calculated by the chart if this property is `TRUE` . */
   var AutoMax: Boolean = js.native
+  
   /** The minimum value of the axis scale is calculated by the chart if this property is `TRUE` . */
   var AutoMin: Boolean = js.native
+  
   /** The origin is calculated by the chart if this property is `TRUE` . */
   var AutoOrigin: Boolean = js.native
+  
   /** The number of help intervals within a main interval is calculated by the chart if this property is `TRUE` . */
   var AutoStepHelp: Boolean = js.native
+  
   /** The distance between the main tick marks is calculated by the chart if this property is `TRUE` . */
   var AutoStepMain: Boolean = js.native
+  
   /**
     * determines which type of axis this is, e.g. a date-axis or a category-axis
     * @see ChartAxisType
     * @since OOo 3.4
     */
   var AxisType: Double = js.native
+  
   /** Determines where the axis crosses the other axis. */
   var CrossoverPosition: ChartAxisPosition = js.native
+  
   /** Determines the scale value on the other axis when CrossoverPosition is set to VALUE. */
   var CrossoverValue: Double = js.native
+  
   /** Properties for axes labels:Determines whether to display text at the axis or not. */
   var DisplayLabels: Boolean = js.native
+  
   /**
     * Specifies the width of the gaps between each set of data points in a bar chart.
     *
     * The value is given in percent of the width of a bar; the valid range is 0 to 600%.
     */
   var GapWidth: Double = js.native
+  
   /**
     * Determines the type of the help marks.
     * @see ChartAxisMarks
     */
   var HelpMarks: Double = js.native
+  
   /** Determines where the axis labels are placed. */
   var LabelPosition: ChartAxisLabelPosition = js.native
+  
   /**
     * determines whether to use the number format given by the container application, e.g. a spreadsheet document, or from the own property {@link
     * NumberFormat} .
     */
   var LinkNumberFormatToSource: Boolean = js.native
+  
   /** Determines if the axis is scaled logarithmically or not (linear). */
   var Logarithmic: Boolean = js.native
+  
   /** Determines where the interval marks are placed. */
   var MarkPosition: ChartAxisMarkPosition = js.native
+  
   /**
     * Properties for interval marks:Determines the type of the marks.
     * @see ChartAxisMarks
     */
   var Marks: Double = js.native
+  
   /** Properties for scaling:Contains the maximum value for the axis scale. */
   var Max: Double = js.native
+  
   /** Contains the minimum value for the axis scale. */
   var Min: Double = js.native
+  
   /**
     * Contains the type id for the number formatter of the axis.
     * @see com.sun.star.util.XNumberFormatter
     */
   var NumberFormat: Double = js.native
+  
   /**
     * Indicates the reference value where bars or areas have their grounding. This property has only an effect when the used ODF file format does not allow
     * for further axis positioning or the axis is a secondary y-axis.
     */
   var Origin: Double = js.native
+  
   /**
     * Properties related to bar charts:Determines the overlap of the bars in a bar-type chart.
     *
@@ -109,31 +131,39 @@ trait ChartAxis
     * bar between 2 neighboring bars.
     */
   var Overlap: Double = js.native
+  
   /** Determines if the axis orientation is mathematical or reversed. */
   var ReverseDirection: Boolean = js.native
+  
   /** @deprecated DeprecatedUser property StepHelpCount instead Contains the distance between the help tick marks. */
   var StepHelp: Double = js.native
+  
   /**
     * Contains the number of help intervals within a main interval. E.g. a StepHelpCount of 5 divides the main interval into 5 pieces and thus produces 4
     * help tick marks.
     */
   var StepHelpCount: Double = js.native
+  
   /** Contains the distance between the main tick marks. */
   var StepMain: Double = js.native
+  
   /** Determines if long text is broken into multiple lines. */
   var TextBreak: Boolean = js.native
+  
   /** Determines if certain labels are hidden, if they would otherwise overlap. In this case, the value of this property must be set to `FALSE` . */
   var TextCanOverlap: Boolean = js.native
+  
   /** Determines the rotation of the text elements (axis description) in 100th degrees. */
   var TextRotation: Double = js.native
+  
   /**
     * if the current axis is a date-axis the intervals are chosen as given with {@link TimeIncrement}
     * @since OOo 3.4
     */
   var TimeIncrement: typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement = js.native
 }
-
 object ChartAxis {
+  
   @scala.inline
   def apply(
     ArrangeOrder: ChartAxisArrangeOrderType,
@@ -268,78 +298,110 @@ object ChartAxis {
     val __obj = js.Dynamic.literal(ArrangeOrder = ArrangeOrder.asInstanceOf[js.Any], AutoMax = AutoMax.asInstanceOf[js.Any], AutoMin = AutoMin.asInstanceOf[js.Any], AutoOrigin = AutoOrigin.asInstanceOf[js.Any], AutoStepHelp = AutoStepHelp.asInstanceOf[js.Any], AutoStepMain = AutoStepMain.asInstanceOf[js.Any], AxisTitle = AxisTitle.asInstanceOf[js.Any], AxisType = AxisType.asInstanceOf[js.Any], CharAutoKerning = CharAutoKerning.asInstanceOf[js.Any], CharBackColor = CharBackColor.asInstanceOf[js.Any], CharBackTransparent = CharBackTransparent.asInstanceOf[js.Any], CharBorderDistance = CharBorderDistance.asInstanceOf[js.Any], CharBottomBorder = CharBottomBorder.asInstanceOf[js.Any], CharBottomBorderDistance = CharBottomBorderDistance.asInstanceOf[js.Any], CharCaseMap = CharCaseMap.asInstanceOf[js.Any], CharColor = CharColor.asInstanceOf[js.Any], CharCombineIsOn = CharCombineIsOn.asInstanceOf[js.Any], CharCombinePrefix = CharCombinePrefix.asInstanceOf[js.Any], CharCombineSuffix = CharCombineSuffix.asInstanceOf[js.Any], CharContoured = CharContoured.asInstanceOf[js.Any], CharCrossedOut = CharCrossedOut.asInstanceOf[js.Any], CharEmphasis = CharEmphasis.asInstanceOf[js.Any], CharEscapement = CharEscapement.asInstanceOf[js.Any], CharEscapementHeight = CharEscapementHeight.asInstanceOf[js.Any], CharFlash = CharFlash.asInstanceOf[js.Any], CharFontCharSet = CharFontCharSet.asInstanceOf[js.Any], CharFontFamily = CharFontFamily.asInstanceOf[js.Any], CharFontName = CharFontName.asInstanceOf[js.Any], CharFontPitch = CharFontPitch.asInstanceOf[js.Any], CharFontStyleName = CharFontStyleName.asInstanceOf[js.Any], CharFontType = CharFontType.asInstanceOf[js.Any], CharHeight = CharHeight.asInstanceOf[js.Any], CharHidden = CharHidden.asInstanceOf[js.Any], CharHighlight = CharHighlight.asInstanceOf[js.Any], CharInteropGrabBag = CharInteropGrabBag.asInstanceOf[js.Any], CharKeepTogether = CharKeepTogether.asInstanceOf[js.Any], CharKerning = CharKerning.asInstanceOf[js.Any], CharLeftBorder = CharLeftBorder.asInstanceOf[js.Any], CharLeftBorderDistance = CharLeftBorderDistance.asInstanceOf[js.Any], CharLocale = CharLocale.asInstanceOf[js.Any], CharNoHyphenation = CharNoHyphenation.asInstanceOf[js.Any], CharNoLineBreak = CharNoLineBreak.asInstanceOf[js.Any], CharPosture = CharPosture.asInstanceOf[js.Any], CharRelief = CharRelief.asInstanceOf[js.Any], CharRightBorder = CharRightBorder.asInstanceOf[js.Any], CharRightBorderDistance = CharRightBorderDistance.asInstanceOf[js.Any], CharRotation = CharRotation.asInstanceOf[js.Any], CharRotationIsFitToLine = CharRotationIsFitToLine.asInstanceOf[js.Any], CharScaleWidth = CharScaleWidth.asInstanceOf[js.Any], CharShadingValue = CharShadingValue.asInstanceOf[js.Any], CharShadowFormat = CharShadowFormat.asInstanceOf[js.Any], CharShadowed = CharShadowed.asInstanceOf[js.Any], CharStrikeout = CharStrikeout.asInstanceOf[js.Any], CharStyleName = CharStyleName.asInstanceOf[js.Any], CharStyleNames = CharStyleNames.asInstanceOf[js.Any], CharTopBorder = CharTopBorder.asInstanceOf[js.Any], CharTopBorderDistance = CharTopBorderDistance.asInstanceOf[js.Any], CharUnderline = CharUnderline.asInstanceOf[js.Any], CharUnderlineColor = CharUnderlineColor.asInstanceOf[js.Any], CharUnderlineHasColor = CharUnderlineHasColor.asInstanceOf[js.Any], CharWeight = CharWeight.asInstanceOf[js.Any], CharWordMode = CharWordMode.asInstanceOf[js.Any], CrossoverPosition = CrossoverPosition.asInstanceOf[js.Any], CrossoverValue = CrossoverValue.asInstanceOf[js.Any], DisplayLabels = DisplayLabels.asInstanceOf[js.Any], GapWidth = GapWidth.asInstanceOf[js.Any], HelpMarks = HelpMarks.asInstanceOf[js.Any], HyperLinkName = HyperLinkName.asInstanceOf[js.Any], HyperLinkTarget = HyperLinkTarget.asInstanceOf[js.Any], HyperLinkURL = HyperLinkURL.asInstanceOf[js.Any], LabelPosition = LabelPosition.asInstanceOf[js.Any], LineCap = LineCap.asInstanceOf[js.Any], LineColor = LineColor.asInstanceOf[js.Any], LineDash = LineDash.asInstanceOf[js.Any], LineDashName = LineDashName.asInstanceOf[js.Any], LineEnd = LineEnd.asInstanceOf[js.Any], LineEndCenter = LineEndCenter.asInstanceOf[js.Any], LineEndName = LineEndName.asInstanceOf[js.Any], LineEndWidth = LineEndWidth.asInstanceOf[js.Any], LineJoint = LineJoint.asInstanceOf[js.Any], LineStart = LineStart.asInstanceOf[js.Any], LineStartCenter = LineStartCenter.asInstanceOf[js.Any], LineStartName = LineStartName.asInstanceOf[js.Any], LineStartWidth = LineStartWidth.asInstanceOf[js.Any], LineStyle = LineStyle.asInstanceOf[js.Any], LineTransparence = LineTransparence.asInstanceOf[js.Any], LineWidth = LineWidth.asInstanceOf[js.Any], LinkNumberFormatToSource = LinkNumberFormatToSource.asInstanceOf[js.Any], Logarithmic = Logarithmic.asInstanceOf[js.Any], MajorGrid = MajorGrid.asInstanceOf[js.Any], MarkPosition = MarkPosition.asInstanceOf[js.Any], Marks = Marks.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], Min = Min.asInstanceOf[js.Any], MinorGrid = MinorGrid.asInstanceOf[js.Any], NumberFormat = NumberFormat.asInstanceOf[js.Any], Origin = Origin.asInstanceOf[js.Any], Overlap = Overlap.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ReverseDirection = ReverseDirection.asInstanceOf[js.Any], RubyAdjust = RubyAdjust.asInstanceOf[js.Any], RubyCharStyleName = RubyCharStyleName.asInstanceOf[js.Any], RubyIsAbove = RubyIsAbove.asInstanceOf[js.Any], RubyText = RubyText.asInstanceOf[js.Any], StepHelp = StepHelp.asInstanceOf[js.Any], StepHelpCount = StepHelpCount.asInstanceOf[js.Any], StepMain = StepMain.asInstanceOf[js.Any], TextBreak = TextBreak.asInstanceOf[js.Any], TextCanOverlap = TextCanOverlap.asInstanceOf[js.Any], TextRotation = TextRotation.asInstanceOf[js.Any], TextUserDefinedAttributes = TextUserDefinedAttributes.asInstanceOf[js.Any], TimeIncrement = TimeIncrement.asInstanceOf[js.Any], UnvisitedCharStyleName = UnvisitedCharStyleName.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], VisitedCharStyleName = VisitedCharStyleName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getAxisTitle = js.Any.fromFunction0(getAxisTitle), getMajorGrid = js.Any.fromFunction0(getMajorGrid), getMinorGrid = js.Any.fromFunction0(getMinorGrid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[ChartAxis]
   }
+  
   @scala.inline
   implicit class ChartAxisOps[Self <: ChartAxis] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArrangeOrder(value: ChartAxisArrangeOrderType): Self = this.set("ArrangeOrder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoMax(value: Boolean): Self = this.set("AutoMax", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoMin(value: Boolean): Self = this.set("AutoMin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoOrigin(value: Boolean): Self = this.set("AutoOrigin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoStepHelp(value: Boolean): Self = this.set("AutoStepHelp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoStepMain(value: Boolean): Self = this.set("AutoStepMain", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAxisType(value: Double): Self = this.set("AxisType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCrossoverPosition(value: ChartAxisPosition): Self = this.set("CrossoverPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCrossoverValue(value: Double): Self = this.set("CrossoverValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDisplayLabels(value: Boolean): Self = this.set("DisplayLabels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGapWidth(value: Double): Self = this.set("GapWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHelpMarks(value: Double): Self = this.set("HelpMarks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabelPosition(value: ChartAxisLabelPosition): Self = this.set("LabelPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLinkNumberFormatToSource(value: Boolean): Self = this.set("LinkNumberFormatToSource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLogarithmic(value: Boolean): Self = this.set("Logarithmic", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarkPosition(value: ChartAxisMarkPosition): Self = this.set("MarkPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarks(value: Double): Self = this.set("Marks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMax(value: Double): Self = this.set("Max", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMin(value: Double): Self = this.set("Min", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOrigin(value: Double): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOverlap(value: Double): Self = this.set("Overlap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReverseDirection(value: Boolean): Self = this.set("ReverseDirection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStepHelp(value: Double): Self = this.set("StepHelp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStepHelpCount(value: Double): Self = this.set("StepHelpCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStepMain(value: Double): Self = this.set("StepMain", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextBreak(value: Boolean): Self = this.set("TextBreak", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextCanOverlap(value: Boolean): Self = this.set("TextCanOverlap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextRotation(value: Double): Self = this.set("TextRotation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTimeIncrement(value: TimeIncrement): Self = this.set("TimeIncrement", value.asInstanceOf[js.Any])
   }
-  
 }
-

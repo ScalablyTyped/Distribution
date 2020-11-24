@@ -3,7 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "TrailMesh")
 @js.native
@@ -29,8 +29,39 @@ class TrailMesh protected ()
     name: String,
     generator: typings.babylonjs.transformNodeMod.TransformNode,
     scene: Scene,
+    diameter: js.UndefOr[scala.Nothing],
+    length: Double
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    scene: Scene,
     diameter: Double,
     length: Double
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    scene: Scene,
+    diameter: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    scene: Scene,
+    diameter: js.UndefOr[scala.Nothing],
+    length: Double,
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    scene: Scene,
+    diameter: Double,
+    length: js.UndefOr[scala.Nothing],
+    autoStart: Boolean
   ) = this()
   def this(
     name: String,
@@ -41,11 +72,11 @@ class TrailMesh protected ()
     autoStart: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Meshes/index", "TrailMesh")
 @js.native
 object TrailMesh extends js.Object {
+  
   /**
     * Parses a serialized trail mesh
     * @param parsedMesh the serialized mesh
@@ -54,4 +85,3 @@ object TrailMesh extends js.Object {
     */
   def Parse(parsedMesh: js.Any, scene: Scene): typings.babylonjs.trailMeshMod.TrailMesh = js.native
 }
-

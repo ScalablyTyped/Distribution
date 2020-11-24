@@ -3,11 +3,12 @@ package typings.utility.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "sha256")
 @js.native
 object sha256 extends js.Object {
+  
   /**
     * sha256 hash
     *
@@ -19,4 +20,3 @@ object sha256 extends js.Object {
   def apply(s: String): String = js.native
   def apply(s: Buffer): String = js.native
 }
-

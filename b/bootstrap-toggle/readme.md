@@ -12,7 +12,7 @@ Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes 
 | Keywords           | bootstrap, toggle, bootstrap-toggle, switch, bootstrap-switch |
 | # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 512735 |
+| # downloads        | 958754 |
 | # stars            | 3 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NodeCollectionTraversing extends js.Object {
+  
   /**
     * Get the edges connected to the nodes in the collection.
     *
@@ -13,6 +14,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def connectedEdges(): EdgeCollection = js.native
   def connectedEdges(selector: Selector): EdgeCollection = js.native
+  
   /**
     * Get the edges coming from the collection (i.e. the source) going to another collection (i.e. the target).
     *
@@ -21,6 +23,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def edgesTo(eles: CollectionArgument): EdgeCollection = js.native
   def edgesTo(eles: Selector): EdgeCollection = js.native
+  
   // http://js.cytoscape.org/#collection/traversing
   /**
     * Get the edges connecting the collection to another collection. Direction of the edges does not matter.
@@ -30,6 +33,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def edgesWith(eles: CollectionArgument): EdgeCollection = js.native
   def edgesWith(eles: Selector): EdgeCollection = js.native
+  
   /**
     * Get edges (and their sources) coming into the nodes in the collection.
     *
@@ -37,6 +41,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def incomers(): CollectionReturnValue = js.native
   def incomers(selector: Selector): CollectionReturnValue = js.native
+  
   /**
     * From the set of calling nodes, get the nodes which are leaves (i.e. no outgoing edges, as in a directed acyclic graph).
     *
@@ -44,6 +49,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def leaves(): NodeCollection = js.native
   def leaves(selector: Selector): NodeCollection = js.native
+  
   /**
     * Get edges (and their targets) coming out of the nodes in the collection.
     *
@@ -51,6 +57,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def outgoers(): CollectionReturnValue = js.native
   def outgoers(selector: Selector): CollectionReturnValue = js.native
+  
   /**
     * Recursively get edges (and their sources) coming into the nodes in the collection (i.e. the incomers, the incomers' incomers, ...).
     *
@@ -58,6 +65,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def predecessors(): CollectionReturnValue = js.native
   def predecessors(selector: Selector): CollectionReturnValue = js.native
+  
   /**
     * From the set of calling nodes, get the nodes which are roots (i.e. no incoming edges, as in a directed acyclic graph).
     *
@@ -65,6 +73,7 @@ trait NodeCollectionTraversing extends js.Object {
     */
   def roots(): NodeCollection = js.native
   def roots(selector: Selector): NodeCollection = js.native
+  
   /**
     * Recursively get edges (and their targets) coming out of the nodes in the collection (i.e. the outgoers, the outgoers' outgoers, ...).
     *
@@ -73,4 +82,3 @@ trait NodeCollectionTraversing extends js.Object {
   def successors(): CollectionReturnValue = js.native
   def successors(selector: Selector): CollectionReturnValue = js.native
 }
-

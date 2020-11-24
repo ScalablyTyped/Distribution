@@ -11,8 +11,8 @@ Get the diff type of two semver versions: 0.0.1 0.0.2 → patch
 | Full name          | semver-diff |
 | Keywords           | semver, version, semantic, diff, difference |
 | # releases         | 4 |
-| # dependents       | 61 |
-| # downloads        | 169591522 |
+| # dependents       | 75 |
+| # downloads        | 249586774 |
 | # stars            | 1 |
 
 ## Links

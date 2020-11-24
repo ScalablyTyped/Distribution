@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2beta", "deploymentmanager_v2beta.Resource$Types")
 @js.native
 class ResourceTypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.types.list
     * @desc Lists all resource types for Deployment Manager.
@@ -46,4 +48,3 @@ class ResourceTypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTypesListResponse]
   ): Unit = js.native
 }
-

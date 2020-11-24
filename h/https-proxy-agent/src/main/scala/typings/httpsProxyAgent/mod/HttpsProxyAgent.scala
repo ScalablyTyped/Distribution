@@ -5,9 +5,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.httpsProxyAgent.agentMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("https-proxy-agent", "HttpsProxyAgent")
 @js.native
 object HttpsProxyAgent extends TopLevel[Instantiable1[/* _opts */ String | HttpsProxyAgentOptions, default]]
-

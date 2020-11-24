@@ -28,11 +28,11 @@ import typings.semanticUiRating.semanticUiRatingStrings.silent
 import typings.semanticUiRating.semanticUiRatingStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Rating_ extends js.Object {
-  var settings: RatingSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Clears current rating
@@ -89,5 +89,6 @@ trait Rating_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: RatingSettings): JQuery = js.native
   def apply(settings: RatingSettings): JQuery = js.native
+  
+  var settings: RatingSettings = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.pixiJs.PIXI.utils.EventEmitter
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The AbstractRenderer is the base for a PixiJS Renderer. It is extended by the {@link PIXI.CanvasRenderer}
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AbstractRenderer extends EventEmitter {
+  
   /**
     * The background color as a number.
     *
@@ -24,6 +25,7 @@ trait AbstractRenderer extends EventEmitter {
     * @protected
     */
   var _backgroundColor: Double = js.native
+  
   /**
     * The background color as an [R, G, B] array.
     *
@@ -31,6 +33,7 @@ trait AbstractRenderer extends EventEmitter {
     * @protected
     */
   var _backgroundColorRgba: js.Array[Double] = js.native
+  
   /**
     * The background color as a string.
     *
@@ -38,6 +41,7 @@ trait AbstractRenderer extends EventEmitter {
     * @protected
     */
   var _backgroundColorString: String = js.native
+  
   /**
     * The last root object that the renderer tried to render.
     *
@@ -45,18 +49,21 @@ trait AbstractRenderer extends EventEmitter {
     * @protected
     */
   var _lastObjectRendered: DisplayObject = js.native
+  
   /**
     * Whether CSS dimensions of canvas view should be resized to screen dimensions automatically.
     *
     * @member {boolean} PIXI.AbstractRenderer#autoDensity
     */
   var autoDensity: Boolean = js.native
+  
   /**
     * The background color to fill if not transparent
     *
     * @member {number}
     */
   var backgroundColor: Double = js.native
+  
   /**
     * This sets if the CanvasRenderer will clear the canvas or not before the new render pass.
     * If the scene is NOT transparent PixiJS will use a canvas sized fillRect operation every
@@ -68,77 +75,7 @@ trait AbstractRenderer extends EventEmitter {
     * @default
     */
   var clearBeforeRender: Boolean = js.native
-  /**
-    * Same as view.height, actual number of pixels in the canvas by vertical.
-    *
-    * @member {number}
-    * @readonly
-    * @default 600
-    */
-  val height: Double = js.native
-  /**
-    * The supplied constructor options.
-    *
-    * @member {Object} PIXI.AbstractRenderer#options
-    * @readOnly
-    */
-  val options: js.Any = js.native
-  /**
-    * Collection of plugins.
-    * @readonly
-    * @member {object} PIXI.AbstractRenderer#plugins
-    */
-  val plugins: js.Any = js.native
-  /**
-    * The value of the preserveDrawingBuffer flag affects whether or not the contents of
-    * the stencil buffer is retained after rendering.
-    *
-    * @member {boolean} PIXI.AbstractRenderer#preserveDrawingBuffer
-    */
-  var preserveDrawingBuffer: Boolean = js.native
-  /**
-    * The resolution / device pixel ratio of the renderer.
-    *
-    * @member {number} PIXI.AbstractRenderer#resolution
-    * @default 1
-    */
-  var resolution: Double = js.native
-  /**
-    * Measurements of the screen. (0, 0, screenWidth, screenHeight).
-    *
-    * Its safe to use as filterArea or hitArea for the whole stage.
-    *
-    * @member {PIXI.Rectangle} PIXI.AbstractRenderer#screen
-    */
-  var screen: Rectangle = js.native
-  /**
-    * Whether the render view is transparent.
-    *
-    * @member {boolean} PIXI.AbstractRenderer#transparent
-    */
-  var transparent: Boolean = js.native
-  /**
-    * The type of the renderer.
-    *
-    * @member {number} PIXI.AbstractRenderer#type
-    * @default PIXI.RENDERER_TYPE.UNKNOWN
-    * @see PIXI.RENDERER_TYPE
-    */
-  var `type`: Double = js.native
-  /**
-    * The canvas element that everything is drawn to.
-    *
-    * @member {HTMLCanvasElement} PIXI.AbstractRenderer#view
-    */
-  var view: HTMLCanvasElement = js.native
-  /**
-    * Same as view.width, actual number of pixels in the canvas by horizontal.
-    *
-    * @member {number}
-    * @readonly
-    * @default 800
-    */
-  val width: Double = js.native
+  
   /**
     * Removes everything from the renderer and optionally removes the Canvas DOM element.
     *
@@ -146,6 +83,7 @@ trait AbstractRenderer extends EventEmitter {
     */
   def destroy(): Unit = js.native
   def destroy(removeView: Boolean): Unit = js.native
+  
   /**
     * Useful function that returns a texture of the display object that can then be used to create sprites
     * This can be quite useful if your displayObject is complicated and needs to be reused multiple times.
@@ -159,6 +97,16 @@ trait AbstractRenderer extends EventEmitter {
     */
   def generateTexture(displayObject: DisplayObject, scaleMode: SCALE_MODES, resolution: Double): RenderTexture = js.native
   def generateTexture(displayObject: DisplayObject, scaleMode: SCALE_MODES, resolution: Double, region: Rectangle): RenderTexture = js.native
+  
+  /**
+    * Same as view.height, actual number of pixels in the canvas by vertical.
+    *
+    * @member {number}
+    * @readonly
+    * @default 600
+    */
+  val height: Double = js.native
+  
   /**
     * Initialize the plugins.
     *
@@ -166,6 +114,30 @@ trait AbstractRenderer extends EventEmitter {
     * @param {object} staticMap - The dictionary of statically saved plugins.
     */
   /* protected */ def initPlugins(staticMap: js.Any): Unit = js.native
+  
+  /**
+    * The supplied constructor options.
+    *
+    * @member {Object} PIXI.AbstractRenderer#options
+    * @readOnly
+    */
+  val options: js.Any = js.native
+  
+  /**
+    * Collection of plugins.
+    * @readonly
+    * @member {object} PIXI.AbstractRenderer#plugins
+    */
+  val plugins: js.Any = js.native
+  
+  /**
+    * The value of the preserveDrawingBuffer flag affects whether or not the contents of
+    * the stencil buffer is retained after rendering.
+    *
+    * @member {boolean} PIXI.AbstractRenderer#preserveDrawingBuffer
+    */
+  var preserveDrawingBuffer: Boolean = js.native
+  
   /**
     * Resizes the screen and canvas to the specified width and height.
     * Canvas dimensions are multiplied by resolution.
@@ -174,5 +146,53 @@ trait AbstractRenderer extends EventEmitter {
     * @param {number} screenHeight - The new height of the screen.
     */
   def resize(screenWidth: Double, screenHeight: Double): Unit = js.native
+  
+  /**
+    * The resolution / device pixel ratio of the renderer.
+    *
+    * @member {number} PIXI.AbstractRenderer#resolution
+    * @default 1
+    */
+  var resolution: Double = js.native
+  
+  /**
+    * Measurements of the screen. (0, 0, screenWidth, screenHeight).
+    *
+    * Its safe to use as filterArea or hitArea for the whole stage.
+    *
+    * @member {PIXI.Rectangle} PIXI.AbstractRenderer#screen
+    */
+  var screen: Rectangle = js.native
+  
+  /**
+    * Whether the render view is transparent.
+    *
+    * @member {boolean} PIXI.AbstractRenderer#transparent
+    */
+  var transparent: Boolean = js.native
+  
+  /**
+    * The type of the renderer.
+    *
+    * @member {number} PIXI.AbstractRenderer#type
+    * @default PIXI.RENDERER_TYPE.UNKNOWN
+    * @see PIXI.RENDERER_TYPE
+    */
+  var `type`: Double = js.native
+  
+  /**
+    * The canvas element that everything is drawn to.
+    *
+    * @member {HTMLCanvasElement} PIXI.AbstractRenderer#view
+    */
+  var view: HTMLCanvasElement = js.native
+  
+  /**
+    * Same as view.width, actual number of pixels in the canvas by horizontal.
+    *
+    * @member {number}
+    * @readonly
+    * @default 800
+    */
+  val width: Double = js.native
 }
-

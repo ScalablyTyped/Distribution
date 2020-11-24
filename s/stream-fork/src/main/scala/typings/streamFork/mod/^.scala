@@ -3,7 +3,7 @@ package typings.streamFork.mod
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stream-fork", JSImport.Namespace)
 @js.native
@@ -17,14 +17,13 @@ class ^ protected () extends Fork {
   def this(outputs: js.Array[Writable]) = this()
   def this(outputs: js.Array[Writable], options: ForkOptions) = this()
 }
-
 @JSImport("stream-fork", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * It is a factory function, which accepts the same arguments as the constructor, and returns a fully constructed Fork object.
     */
   def fork(outputs: js.Array[Writable]): Fork = js.native
   def fork(outputs: js.Array[Writable], options: ForkOptions): Fork = js.native
 }
-

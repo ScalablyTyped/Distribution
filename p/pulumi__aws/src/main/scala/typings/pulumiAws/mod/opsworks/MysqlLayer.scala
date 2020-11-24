@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "opsworks.MysqlLayer")
 @js.native
@@ -23,11 +23,11 @@ class MysqlLayer protected ()
   def this(name: String, args: MysqlLayerArgs) = this()
   def this(name: String, args: MysqlLayerArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "opsworks.MysqlLayer")
 @js.native
 object MysqlLayer extends js.Object {
+  
   /**
     * Get an existing MysqlLayer resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object MysqlLayer extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mysqlLayerMod.MysqlLayer = js.native
   def get(name: String, id: Input[ID], state: MysqlLayerState): typings.pulumiAws.mysqlLayerMod.MysqlLayer = js.native
   def get(name: String, id: Input[ID], state: MysqlLayerState, opts: CustomResourceOptions): typings.pulumiAws.mysqlLayerMod.MysqlLayer = js.native
+  
   /**
     * Returns true if the given object is an instance of MysqlLayer.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/mysqlLayer.MysqlLayer */ Boolean = js.native
 }
-

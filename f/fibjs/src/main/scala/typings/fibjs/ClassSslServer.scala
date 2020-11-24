@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassSslServer extends ClassTcpServer {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassSslServer extends ClassTcpServer {
     * @type X509Cert
     */
   var ca: ClassX509Cert = js.native
+  
   /**
     * class prop 
     *
@@ -27,4 +29,3 @@ trait ClassSslServer extends ClassTcpServer {
     */
   var verification: Double = js.native
 }
-

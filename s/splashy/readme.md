@@ -10,9 +10,9 @@ Given an image, extract predominant & palette colors
 | ------------------ | :-------------: |
 | Full name          | splashy |
 | Keywords           | canvas, color, colour, dominant, extract, extraction, file, image, main, palette, photo, picture, url |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 9167 |
+| # downloads        | 8476 |
 | # stars            | 1 |
 
 ## Links

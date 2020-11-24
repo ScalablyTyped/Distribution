@@ -11,8 +11,8 @@ A simple JavaScript implementation of `du -sb`
 | Full name          | du |
 | Keywords           | du, size |
 | # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 374933 |
+| # dependents       | 37 |
+| # downloads        | 265778 |
 | # stars            | 5 |
 
 ## Links

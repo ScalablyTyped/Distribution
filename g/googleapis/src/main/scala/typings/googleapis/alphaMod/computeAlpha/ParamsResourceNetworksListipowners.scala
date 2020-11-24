@@ -5,14 +5,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceNetworksListipowners extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * A filter expression that filters resources listed in the response. The
     * expression must specify the field name, a comparison operator, and the
@@ -32,10 +34,12 @@ trait ParamsResourceNetworksListipowners extends StandardParameters {
     * Broadwell") AND (scheduling.automaticRestart = true).
     */
   var filter: js.UndefOr[String] = js.native
+  
   /**
     * (Optional) IP CIDR range filter, example: "10.128.10.0/30".
     */
   var ipCidrRange: js.UndefOr[String] = js.native
+  
   /**
     * The maximum number of results per page that should be returned. If the
     * number of available results is larger than maxResults, Compute Engine
@@ -44,10 +48,12 @@ trait ParamsResourceNetworksListipowners extends StandardParameters {
     * (Default: 500)
     */
   var maxResults: js.UndefOr[Double] = js.native
+  
   /**
     * Name of the network to return.
     */
   var network: js.UndefOr[String] = js.native
+  
   /**
     * Sorts list results by a certain order. By default, results are returned
     * in alphanumerical order based on the resource name.  You can also sort
@@ -59,99 +65,131 @@ trait ParamsResourceNetworksListipowners extends StandardParameters {
     * creationTimestamp desc is supported.
     */
   var orderBy: js.UndefOr[String] = js.native
+  
   /**
     * (Optional) Project IDs filter, example: "project-1,project-2".
     */
   var ownerProjects: js.UndefOr[String] = js.native
+  
   /**
     * (Optional) Owner types filter, example: "instance,forwardingRule".
     */
   var ownerTypes: js.UndefOr[String] = js.native
+  
   /**
     * Specifies a page token to use. Set pageToken to the nextPageToken
     * returned by a previous list request to get the next page of results.
     */
   var pageToken: js.UndefOr[String] = js.native
+  
   /**
     * Project ID for this request.
     */
   var project: js.UndefOr[String] = js.native
+  
   /**
     * (Optional) Subnetwork name filter.
     */
   var subnetName: js.UndefOr[String] = js.native
+  
   /**
     * (Optional) Subnetwork region filter.
     */
   var subnetRegion: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceNetworksListipowners {
+  
   @scala.inline
   def apply(): ParamsResourceNetworksListipowners = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceNetworksListipowners]
   }
+  
   @scala.inline
   implicit class ParamsResourceNetworksListipownersOps[Self <: ParamsResourceNetworksListipowners] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    
     @scala.inline
     def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    
     @scala.inline
     def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetwork: Self = this.set("network", js.undefined)
+    
     @scala.inline
     def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    
     @scala.inline
     def setOwnerProjects(value: String): Self = this.set("ownerProjects", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOwnerProjects: Self = this.set("ownerProjects", js.undefined)
+    
     @scala.inline
     def setOwnerTypes(value: String): Self = this.set("ownerTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOwnerTypes: Self = this.set("ownerTypes", js.undefined)
+    
     @scala.inline
     def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePageToken: Self = this.set("pageToken", js.undefined)
+    
     @scala.inline
     def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProject: Self = this.set("project", js.undefined)
+    
     @scala.inline
     def setSubnetName(value: String): Self = this.set("subnetName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubnetName: Self = this.set("subnetName", js.undefined)
+    
     @scala.inline
     def setSubnetRegion(value: String): Self = this.set("subnetRegion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubnetRegion: Self = this.set("subnetRegion", js.undefined)
   }
-  
 }
-

@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.SaveWidgetOptions
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @JSGlobal("google.maps.SaveWidget")
@@ -14,4 +14,3 @@ class SaveWidget protected ()
   def this(container: Node) = this()
   def this(container: Node, opts: SaveWidgetOptions) = this()
 }
-

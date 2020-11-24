@@ -6,7 +6,7 @@ import typings.nwJs.mod.global.NWJSHelpers.WindowOpenOption
 import typings.nwJs.mod.global.NWJSHelpers.win
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Window: http://docs.nwjs.io/en/latest/References/Window/ */
 /**
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Window extends EventEmitter {
+  
   /**
     * Get the native Window Object.
     *
@@ -21,6 +22,14 @@ trait Window extends EventEmitter {
     */
   def get(): win = js.native
   def get(window_object: js.Object): win = js.native
+  
+  /**
+    * Get all windows.
+    *
+    * @param callback {(windows: NWJS_Helpers.win[]) => void} A callback function whose parameter is an array of nw.Window objects
+    */
+  def getAll(callback: js.Function1[/* windows */ js.Array[win], Unit]): Unit = js.native
+  
   /**
     * Open a new window and load url in it.
     *
@@ -38,8 +47,6 @@ trait Window extends EventEmitter {
   def open(url: String, option: WindowOpenOption): Unit = js.native
   def open(url: String, option: WindowOpenOption, callback: js.Function1[/* new_win */ js.UndefOr[win], Unit]): Unit = js.native
 }
-
 @JSGlobal("nw.Window")
 @js.native
 object Window extends TopLevel[Window]
-

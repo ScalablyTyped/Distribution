@@ -37,24 +37,11 @@ import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexdb/out/methods/live", JSImport.Namespace)
 @js.native
 object liveMod extends js.Object {
-  @js.native
-  trait LiveEventEmitter[Q, R] extends EventEmitter {
-    def close(): Unit = js.native
-    def current(): js.Array[R] = js.native
-    def fetch(): js.Promise[Boolean] = js.native
-    @JSName("on")
-    def on_fetch(event: fetch, callback: js.Function1[/* newItems */ js.Array[R], Unit]): this.type = js.native
-    @JSName("on")
-    def on_item(event: item, callback: js.Function1[/* item */ R, Unit]): this.type = js.native
-    @JSName("on")
-    def on_prefetch(event: prefetch, callback: js.Function1[/* results */ js.Array[R], Unit]): this.type = js.native
-    def params(updateParameters: Q): Q = js.native
-  }
   
   def default(endpoint: String, params: LiveRequestObject[RequestObject]): LiveEventEmitter[RequestObject, ResponseObject] = js.native
   @JSName("default")
@@ -71,6 +58,25 @@ object liveMod extends js.Object {
   def default_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
   @JSName("default")
   def default_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
+  
+  @js.native
+  trait LiveEventEmitter[Q, R] extends EventEmitter {
+    
+    def close(): Unit = js.native
+    
+    def current(): js.Array[R] = js.native
+    
+    def fetch(): js.Promise[Boolean] = js.native
+    
+    @JSName("on")
+    def on_fetch(event: fetch, callback: js.Function1[/* newItems */ js.Array[R], Unit]): this.type = js.native
+    @JSName("on")
+    def on_item(event: item, callback: js.Function1[/* item */ R, Unit]): this.type = js.native
+    @JSName("on")
+    def on_prefetch(event: prefetch, callback: js.Function1[/* results */ js.Array[R], Unit]): this.type = js.native
+    
+    def params(updateParameters: Q): Q = js.native
+  }
+  
   type LiveRequestObject[T] = T with Prefetch
 }
-

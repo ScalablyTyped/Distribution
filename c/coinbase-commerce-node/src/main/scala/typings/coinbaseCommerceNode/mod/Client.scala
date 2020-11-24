@@ -2,11 +2,12 @@ package typings.coinbaseCommerceNode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase-commerce-node", "Client")
 @js.native
 object Client extends js.Object {
+  
   /**
     * Setup client.
     */
@@ -24,4 +25,3 @@ object Client extends js.Object {
   def init(apiKey: String, baseApiUrl: String, apiVersion: String): Options = js.native
   def init(apiKey: String, baseApiUrl: String, apiVersion: String, timeout: Double): Options = js.native
 }
-

@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageContent extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
     * <code>sap.m.ImageContent</code>.When called, the context of the event handler (its
@@ -22,6 +23,7 @@ trait ImageContent extends Control {
     */
   def attachPress(oData: js.Any, fnFunction: js.Any): ImageContent = js.native
   def attachPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ImageContent = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>press</code> event of this
     * <code>sap.m.ImageContent</code>.The passed function and listener object must match the ones used for
@@ -31,24 +33,28 @@ trait ImageContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPress(fnFunction: js.Any, oListener: js.Any): ImageContent = js.native
+  
   /**
     * Fires event <code>press</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePress(mArguments: js.Any): ImageContent = js.native
+  
   /**
     * Gets current value of property <code>description</code>.Description of image. This text is used to
     * provide ScreenReader information.
     * @returns Value of property <code>description</code>
     */
   def getDescription(): String = js.native
+  
   /**
     * Gets current value of property <code>src</code>.The image to be displayed as a graphical element
     * within the imageContent. This can be an image or an icon from the icon font.
     * @returns Value of property <code>src</code>
     */
   def getSrc(): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>description</code>.Description of image. This text is used to
     * provide ScreenReader information.When called with a value of <code>null</code> or
@@ -57,6 +63,7 @@ trait ImageContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDescription(sDescription: String): ImageContent = js.native
+  
   /**
     * Sets a new value for property <code>src</code>.The image to be displayed as a graphical element
     * within the imageContent. This can be an image or an icon from the icon font.When called with a value
@@ -66,4 +73,3 @@ trait ImageContent extends Control {
     */
   def setSrc(sSrc: js.Any): ImageContent = js.native
 }
-

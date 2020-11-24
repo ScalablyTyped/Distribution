@@ -2,26 +2,11 @@ package typings.jsts.jsts.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Envelope extends js.Object {
-  /**
-    * the maximum x-coordinate.
-    */
-  var maxx: Double = js.native
-  /**
-    * the maximum y-coordinate.
-    */
-  var maxy: Double = js.native
-  /**
-    * the minimum x-coordinate.
-    */
-  var minx: Double = js.native
-  /**
-    * the minimum y-coordinate.
-    */
-  var miny: Double = js.native
+  
   /**
     * Computes the coordinate of the centre of this envelope (as long as it is
     * non-null
@@ -30,6 +15,7 @@ trait Envelope extends js.Object {
     *         if the envelope is null.
     */
   def centre(): Coordinate = js.native
+  
   /**
     * Tests if the <code>Envelope other</code> lies wholely inside this
     * <code>Envelope</code> (inclusive of the boundary).
@@ -78,6 +64,7 @@ trait Envelope extends js.Object {
     * @see covers(double, double)
     */
   def contains(x: Double, y: Double): Boolean = js.native
+  
   /**
     * Tests if the <code>Envelope other</code> lies wholely inside this
     * <code>Envelope</code> (inclusive of the boundary).
@@ -111,6 +98,7 @@ trait Envelope extends js.Object {
     *         interior or on the boundary of this <code>Envelope</code>.
     */
   def covers(x: Double, y: Double): Boolean = js.native
+  
   /**
     * Computes the distance between this and another <code>Envelope</code>.
     *
@@ -121,12 +109,14 @@ trait Envelope extends js.Object {
     *         the distance is the Euclidean distance between the closest points.
     */
   def distance(env: Envelope): Double = js.native
+  
   /**
     * @param {jsts.geom.Envelope}
     *          other the <code>Envelope</code> to check against.
     * @return {boolean} true if envelopes are equal.
     */
   def equals(other: Envelope): Boolean = js.native
+  
   /**
     * Expands this envelope by a given distance in all directions. Both positive
     * and negative distances are supported.
@@ -144,6 +134,7 @@ trait Envelope extends js.Object {
     * @param {number} distance the distance to expand the envelope.
     */
   def expandBy(distance: Double): Unit = js.native
+  
   /**
     * Enlarges this <code>Envelope</code> so that it contains the
     * <code>other</code> Envelope. Has no effect if <code>other</code> is
@@ -168,18 +159,21 @@ trait Envelope extends js.Object {
     * @param {number} y the value to lower the minimum y to or to raise the maximum y to.
     */
   def expandToInclude(x: Double, y: Double): Unit = js.native
+  
   /**
     * Gets the area of this envelope.
     *
     * @return {number} the area of the envelope, 0.0 if the envelope is null.
     */
   def getArea(): Double = js.native
+  
   /**
     * Returns the difference between the maximum and minimum y values.
     *
     * @return {number} max y - min y, or 0 if this is a null <code>Envelope.</code>
     */
   def getHeight(): Double = js.native
+  
   /**
     * Returns the <code>Envelope</code>s maximum x-value. min x > max x
     * indicates that this is a null <code>Envelope</code>.
@@ -187,6 +181,7 @@ trait Envelope extends js.Object {
     * @return {number} the maximum x-coordinate.
     */
   def getMaxX(): Double = js.native
+  
   /**
     * Returns the <code>Envelope</code>s maximum y-value. min y > max y
     * indicates that this is a null <code>Envelope</code>.
@@ -194,6 +189,7 @@ trait Envelope extends js.Object {
     * @return {number} the maximum y-coordinate.
     */
   def getMaxY(): Double = js.native
+  
   /**
     * Returns the <code>Envelope</code>s minimum x-value. min x > max x
     * indicates that this is a null <code>Envelope</code>.
@@ -201,6 +197,7 @@ trait Envelope extends js.Object {
     * @return {number} the minimum x-coordinate.
     */
   def getMinX(): Double = js.native
+  
   /**
     * Returns the <code>Envelope</code>s minimum y-value. min y > max y
     * indicates that this is a null <code>Envelope</code>.
@@ -208,12 +205,14 @@ trait Envelope extends js.Object {
     * @return {number} the minimum y-coordinate.
     */
   def getMinY(): Double = js.native
+  
   /**
     * Returns the difference between the maximum and minimum x values.
     *
     * @return {number} max x - min x, or 0 if this is a null <code>Envelope.</code>
     */
   def getWidth(): Double = js.native
+  
   /**
     * Computes the intersection of two {@link Envelopes}
     *
@@ -224,6 +223,7 @@ trait Envelope extends js.Object {
     *         null, or they do not intersect.
     */
   def intersection(env: Envelope): Envelope = js.native
+  
   /**
     * Check if the region defined by <code>other</code> overlaps (intersects) the
     * region of this <code>Envelope</code>.
@@ -257,6 +257,7 @@ trait Envelope extends js.Object {
     *         <code>Envelope.</code>
     */
   def intersects(x: Double, y: Double): Boolean = js.native
+  
   /**
     * Returns <code>true</code> if this <code>Envelope</code> is a "null"
     * envelope.
@@ -265,11 +266,33 @@ trait Envelope extends js.Object {
     *         uninitialized or is the envelope of the empty geometry.
     */
   def isNull(): Boolean = js.native
+  
+  /**
+    * the maximum x-coordinate.
+    */
+  var maxx: Double = js.native
+  
+  /**
+    * the maximum y-coordinate.
+    */
+  var maxy: Double = js.native
+  
+  /**
+    * the minimum x-coordinate.
+    */
+  var minx: Double = js.native
+  
+  /**
+    * the minimum y-coordinate.
+    */
+  var miny: Double = js.native
+  
   /**
     * Makes this <code>Envelope</code> a "null" envelope, that is, the envelope
     * of the empty geometry.
     */
   def setToNull(): Unit = js.native
+  
   /**
     * Translates this envelope by given amounts in the X and Y direction.
     *
@@ -280,4 +303,3 @@ trait Envelope extends js.Object {
     */
   def translate(transX: Double, transY: Double): Unit = js.native
 }
-

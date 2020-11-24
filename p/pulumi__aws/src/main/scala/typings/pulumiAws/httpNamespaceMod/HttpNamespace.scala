@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/servicediscovery/httpNamespace", "HttpNamespace")
 @js.native
@@ -24,28 +24,32 @@ class HttpNamespace protected () extends CustomResource {
   def this(name: String, args: HttpNamespaceArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: HttpNamespaceArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN that Amazon Route 53 assigns to the namespace when you create it.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The description that you specify for the namespace when you create it.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the http namespace.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the namespace.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/servicediscovery/httpNamespace", "HttpNamespace")
 @js.native
 object HttpNamespace extends js.Object {
+  
   /**
     * Get an existing HttpNamespace resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -59,10 +63,10 @@ object HttpNamespace extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): HttpNamespace = js.native
   def get(name: String, id: Input[ID], state: HttpNamespaceState): HttpNamespace = js.native
   def get(name: String, id: Input[ID], state: HttpNamespaceState, opts: CustomResourceOptions): HttpNamespace = js.native
+  
   /**
     * Returns true if the given object is an instance of HttpNamespace.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/httpNamespace.HttpNamespace */ Boolean = js.native
 }
-

@@ -11,8 +11,8 @@ A nodejs library for 3D transformations similar to Unity3D containing necessary 
 | Full name          | math3d |
 | Keywords           | 3D, matrix, vector, transform, quaternion, 3D transformations, transformation, math, nodejs, javascript, unity3d |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 58209 |
+| # dependents       | 1 |
+| # downloads        | 76523 |
 | # stars            | 3 |
 
 ## Links

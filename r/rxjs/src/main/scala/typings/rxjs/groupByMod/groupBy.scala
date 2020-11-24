@@ -5,11 +5,12 @@ import typings.rxjs.subjectMod.Subject
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/groupBy", "groupBy")
 @js.native
 object groupBy extends js.Object {
+  
   def apply[T, K](keySelector: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, T]] = js.native
   def apply[T, K](
     keySelector: js.Function1[/* value */ T, K],
@@ -52,4 +53,3 @@ object groupBy extends js.Object {
     subjectSelector: js.Function0[Subject[R]]
   ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
 }
-

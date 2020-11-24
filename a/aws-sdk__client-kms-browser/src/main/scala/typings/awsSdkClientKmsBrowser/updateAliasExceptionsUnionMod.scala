@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/types/UpdateAliasExceptionsUnion", JSImport.Namespace)
 @js.native
 object updateAliasExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException
     - typings.awsSdkClientKmsBrowser.typesNotFoundExceptionMod.NotFoundException
@@ -14,6 +15,4 @@ object updateAliasExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsBrowser.typesKmsinvalidstateexceptionMod.KMSInvalidStateException
   */
   trait UpdateAliasExceptionsUnion extends js.Object
-  
 }
-

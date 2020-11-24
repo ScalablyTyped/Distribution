@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-picker
 
-Typings are for version 1.15.1
+Typings are for version 2.4.1
 
 ## Library description:
 React date & time picker
@@ -10,9 +10,9 @@ React date & time picker
 | ------------------ | :-------------: |
 | Full name          | rc-picker |
 | Keywords           | react, react-component, react-picker |
-| # releases         | 77 |
-| # dependents       | 3 |
-| # downloads        | 66892 |
+| # releases         | 151 |
+| # dependents       | 40 |
+| # downloads        | 7295448 |
 | # stars            | 0 |
 
 ## Links

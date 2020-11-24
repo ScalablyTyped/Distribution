@@ -2,11 +2,12 @@ package typings.glVec3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gl-vec3/forEach", JSImport.Namespace)
 @js.native
 object forEachMod extends js.Object {
+  
   def default(
     a: js.Array[Double],
     stride: Double,
@@ -21,4 +22,3 @@ object forEachMod extends js.Object {
     arg: js.Object
   ): js.Array[Double] = js.native
 }
-

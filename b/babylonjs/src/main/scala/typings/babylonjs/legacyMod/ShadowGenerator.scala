@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.shadowLightMod.IShadowLight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator")
 @js.native
@@ -21,85 +21,67 @@ class ShadowGenerator protected ()
   def this(mapSize: Double, light: IShadowLight) = this()
   def this(mapSize: Double, light: IShadowLight, usefulFloatFirst: Boolean) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator")
 @js.native
 object ShadowGenerator extends js.Object {
+  
   /**
     * Name of the shadow generator class
     */
   var CLASSNAME: String = js.native
+  
   /**
     * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
     * edge artifacts on steep falloff.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
   val FILTER_BLURCLOSEEXPONENTIALSHADOWMAP: Double = js.native
+  
   /**
     * Shadow generator mode ESM: Blurred Exponential Shadow Mapping.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
   val FILTER_BLUREXPONENTIALSHADOWMAP: Double = js.native
+  
   /**
     * Shadow generator mode ESM: Exponential Shadow Mapping using the inverse of the exponential preventing
     * edge artifacts on steep falloff.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
   val FILTER_CLOSEEXPONENTIALSHADOWMAP: Double = js.native
+  
   /**
     * Shadow generator mode ESM: Exponential Shadow Mapping.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
   val FILTER_EXPONENTIALSHADOWMAP: Double = js.native
+  
   /**
     * Shadow generator mode None: no filtering applied.
     */
   val FILTER_NONE: Double = js.native
+  
   /**
     * Shadow generator mode PCF: Percentage Closer Filtering
     * benefits from Webgl 2 shadow samplers. Fallback to Poisson Sampling in Webgl 1
     * (https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch11.html)
     */
   val FILTER_PCF: Double = js.native
+  
   /**
     * Shadow generator mode PCSS: Percentage Closering Soft Shadow.
     * benefits from Webgl 2 shadow samplers. Fallback to Poisson Sampling in Webgl 1
     * Contact Hardening
     */
   val FILTER_PCSS: Double = js.native
+  
   /**
     * Shadow generator mode Poisson Sampling: Percentage Closer Filtering.
     * (Multiple Tap around evenly distributed around the pixel are used to evaluate the shadow strength)
     */
   val FILTER_POISSONSAMPLING: Double = js.native
-  /**
-    * Reserved for PCF and PCSS
-    * Highest Quality.
-    *
-    * Execute PCF on a 5*5 kernel improving a lot the shadow aliasing artifacts.
-    *
-    * Execute PCSS with 32 taps blocker search and 64 taps PCF.
-    */
-  val QUALITY_HIGH: Double = js.native
-  /**
-    * Reserved for PCF and PCSS
-    * The lowest quality but the fastest.
-    *
-    * Execute PCF on a 1*1 kernel.
-    *
-    * Execute PCSS with 16 taps blocker search and 16 taps PCF.
-    */
-  val QUALITY_LOW: Double = js.native
-  /**
-    * Reserved for PCF and PCSS
-    * Good tradeoff for quality/perf cross devices
-    *
-    * Execute PCF on a 3*3 kernel.
-    *
-    * Execute PCSS with 16 taps blocker search and 32 taps PCF.
-    */
-  val QUALITY_MEDIUM: Double = js.native
+  
   /**
     * Parses a serialized ShadowGenerator and returns a new ShadowGenerator.
     * @param parsedShadowGenerator The JSON object to parse
@@ -113,7 +95,37 @@ object ShadowGenerator extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
   ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = js.native
+  
+  /**
+    * Reserved for PCF and PCSS
+    * Highest Quality.
+    *
+    * Execute PCF on a 5*5 kernel improving a lot the shadow aliasing artifacts.
+    *
+    * Execute PCSS with 32 taps blocker search and 64 taps PCF.
+    */
+  val QUALITY_HIGH: Double = js.native
+  
+  /**
+    * Reserved for PCF and PCSS
+    * The lowest quality but the fastest.
+    *
+    * Execute PCF on a 1*1 kernel.
+    *
+    * Execute PCSS with 16 taps blocker search and 16 taps PCF.
+    */
+  val QUALITY_LOW: Double = js.native
+  
+  /**
+    * Reserved for PCF and PCSS
+    * Good tradeoff for quality/perf cross devices
+    *
+    * Execute PCF on a 3*3 kernel.
+    *
+    * Execute PCSS with 16 taps blocker search and 32 taps PCF.
+    */
+  val QUALITY_MEDIUM: Double = js.native
+  
   /** @hidden */
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
 }
-

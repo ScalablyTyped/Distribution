@@ -5,28 +5,38 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Giraffe.Contrib")
 @js.native
 object Contrib extends js.Object {
+  
   @js.native
   trait CollectionView[TModel /* <: Model */] extends View[TModel] {
+    
+    def addOne(model: Model): View[TModel] = js.native
+    
     @JSName("collection")
     var collection_CollectionView: Collection[TModel] = js.native
-    var modelView: View[TModel] = js.native
-    var modelViewArgs: js.Array[_] = js.native
-    var modelViewEl: js.Any = js.native
-    var renderOnChange: Boolean = js.native
-    def addOne(model: Model): View[TModel] = js.native
+    
     def findByModel(model: Model): View[TModel] = js.native
+    
+    var modelView: View[TModel] = js.native
+    
+    var modelViewArgs: js.Array[_] = js.native
+    
+    var modelViewEl: js.Any = js.native
+    
     def removeOne(model: Model): View[TModel] = js.native
+    
+    var renderOnChange: Boolean = js.native
   }
   
   @js.native
   trait Controller
     extends EventsMixin
        with GiraffeObject {
+    
     /**
       * Faulty overgeneralization of Backbone.Events.on, for historical
       * reasons.
@@ -39,21 +49,32 @@ object Contrib extends js.Object {
   
   @js.native
   trait FastCollectionView[TModel /* <: Model */] extends View[TModel] {
+    
+    def addAll(): View[TModel] = js.native
+    
+    def addOne(model: Model): View[TModel] = js.native
+    
     @JSName("collection")
     var collection_FastCollectionView: Collection[TModel] = js.native
-    var modelEl: js.Any = js.native
-    var modelTemplate: js.Any = js.native
-    var modelTemplateStrategy: String = js.native
-    var renderOnChange: Boolean = js.native
-    def addAll(): View[TModel] = js.native
-    def addOne(model: Model): View[TModel] = js.native
+    
     def findElByIndex(index: Double): JQuery[HTMLElement] = js.native
+    
     def findElByModel(model: Model): JQuery[HTMLElement] = js.native
+    
     def findModelByEl(el: js.Any): Model = js.native
+    
+    var modelEl: js.Any = js.native
+    
     def modelSerialize(): js.Any = js.native
+    
+    var modelTemplate: js.Any = js.native
+    
+    var modelTemplateStrategy: String = js.native
+    
     def removeByIndex(index: Double): View[TModel] = js.native
+    
     def removeOne(model: Model): View[TModel] = js.native
+    
+    var renderOnChange: Boolean = js.native
   }
-  
 }
-

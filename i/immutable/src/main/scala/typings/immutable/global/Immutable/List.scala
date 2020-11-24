@@ -3,13 +3,15 @@ package typings.immutable.global.Immutable
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Immutable.List")
 @js.native
 object List extends js.Object {
+  
   def apply(): typings.immutable.Immutable.List[_] = js.native
   def apply[T](collection: Iterable[T]): typings.immutable.Immutable.List[T] = js.native
+  
   /**
     * True if the provided value is a List
     *
@@ -21,6 +23,7 @@ object List extends js.Object {
     * ```
     */
   def isList(maybeList: js.Any): /* is immutable.Immutable.List<any> */ Boolean = js.native
+  
   /**
     * Creates a new List containing `values`.
     *
@@ -42,4 +45,3 @@ object List extends js.Object {
     */
   def of[T](values: T*): typings.immutable.Immutable.List[T] = js.native
 }
-

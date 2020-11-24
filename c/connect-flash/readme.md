@@ -9,9 +9,9 @@ Flash message middleware for Connect.
 | ------------------ | :-------------: |
 | Full name          | connect-flash |
 | Keywords           | connect, express, flash, messages |
-| # releases         | 1 |
-| # dependents       | 424 |
-| # downloads        | 5728341 |
+| # releases         | 0 |
+| # dependents       | 441 |
+| # downloads        | 6321533 |
 | # stars            | 93 |
 
 ## Links

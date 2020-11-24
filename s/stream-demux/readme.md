@@ -10,9 +10,9 @@ A consumable stream demultiplexer.
 | ------------------ | :-------------: |
 | Full name          | stream-demux |
 | Keywords           | iterable, async, stream, demux, demultiplexer, for-await-of |
-| # releases         | 26 |
-| # dependents       | 8 |
-| # downloads        | 58318 |
+| # releases         | 28 |
+| # dependents       | 10 |
+| # downloads        | 80311 |
 | # stars            | 0 |
 
 ## Links

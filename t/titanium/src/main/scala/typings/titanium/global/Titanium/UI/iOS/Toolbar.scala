@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An iOS toolbar, which can contain buttons and certain other controls.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Toolbar ()
   extends typings.titanium.Titanium.UI.iOS.Toolbar
-

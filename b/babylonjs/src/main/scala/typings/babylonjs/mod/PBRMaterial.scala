@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "PBRMaterial")
 @js.native
@@ -16,33 +16,38 @@ class PBRMaterial protected ()
     */
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "PBRMaterial")
 @js.native
 object PBRMaterial extends js.Object {
+  
   /**
     * Defines the default value of how much AO map is occluding the analytical lights
     * (point spot...).
     */
   var DEFAULT_AO_ON_ANALYTICAL_LIGHTS: Double = js.native
+  
   /**
     * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
     */
   val PBRMATERIAL_ALPHABLEND: Double = js.native
+  
   /**
     * PBRMaterialTransparencyMode: Alpha Test mode, pixel are discarded below a certain threshold defined by the alpha cutoff value.
     */
   val PBRMATERIAL_ALPHATEST: Double = js.native
+  
   /**
     * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
     * They are also discarded below the alpha cutoff threshold to improve performances.
     */
   val PBRMATERIAL_ALPHATESTANDBLEND: Double = js.native
+  
   /**
     * PBRMaterialTransparencyMode: No transparency mode, Alpha channel is not use.
     */
   val PBRMATERIAL_OPAQUE: Double = js.native
+  
   /**
     * Parses a PBR Material from a serialized object.
     * @param source - Serialized object.
@@ -52,4 +57,3 @@ object PBRMaterial extends js.Object {
     */
   def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.pbrMaterialMod.PBRMaterial = js.native
 }
-

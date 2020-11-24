@@ -17,7 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a list item.
@@ -32,8 +32,8 @@ trait AccessibleListItem
      with XAccessibleEventBroadcaster
      with XAccessibleComponent
      with XAccessibleText
-
 object AccessibleListItem {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -103,4 +103,3 @@ object AccessibleListItem {
     __obj.asInstanceOf[AccessibleListItem]
   }
 }
-

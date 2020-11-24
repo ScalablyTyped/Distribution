@@ -2,7 +2,7 @@ package typings.rx.rxBackpressureMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.backpressure", "Disposable")
 @js.native
@@ -14,4 +14,3 @@ class DisposableCls protected ()
     */
   def this(action: js.Function0[Unit]) = this()
 }
-

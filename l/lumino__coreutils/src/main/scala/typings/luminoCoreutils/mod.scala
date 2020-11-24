@@ -10,43 +10,15 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/coreutils", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class MimeData ()
-    extends typings.luminoCoreutils.mimeMod.MimeData
-  
-  @js.native
-  /**
-    * Construct a new promise delegate.
-    */
-  class PromiseDelegate[T] ()
-    extends typings.luminoCoreutils.promiseMod.PromiseDelegate[T]
-  
-  @js.native
-  class Token[T] protected ()
-    extends typings.luminoCoreutils.tokenMod.Token[T] {
-    /**
-      * Construct a new token.
-      *
-      * @param name - A human readable name for the token.
-      */
-    def this(name: String) = this()
-  }
   
   @js.native
   object JSONExt extends js.Object {
-    /**
-      * A shared frozen empty JSONArray
-      */
-    val emptyArray: ReadonlyJSONArray = js.native
-    /**
-      * A shared frozen empty JSONObject
-      */
-    val emptyObject: ReadonlyJSONObject = js.native
+    
     def deepCopy(value: String): String = js.native
     def deepCopy(value: js.Array[ReadonlyPartialJSONValue]): js.Array[ReadonlyPartialJSONValue] = js.native
     /**
@@ -60,6 +32,7 @@ object mod extends js.Object {
     def deepCopy(value: Double): Double = js.native
     def deepCopy(value: Null): Null = js.native
     def deepCopy(value: ReadonlyPartialJSONObject): ReadonlyPartialJSONObject = js.native
+    
     /**
       * Compare two JSON values for deep equality.
       *
@@ -70,6 +43,17 @@ object mod extends js.Object {
       * @returns `true` if the values are equivalent, `false` otherwise.
       */
     def deepEqual(first: ReadonlyPartialJSONValue, second: ReadonlyPartialJSONValue): Boolean = js.native
+    
+    /**
+      * A shared frozen empty JSONArray
+      */
+    val emptyArray: ReadonlyJSONArray = js.native
+    
+    /**
+      * A shared frozen empty JSONObject
+      */
+    val emptyObject: ReadonlyJSONObject = js.native
+    
     /**
       * Test whether a JSON value is an array.
       *
@@ -78,6 +62,7 @@ object mod extends js.Object {
       * @returns `true` if the value is a an array, `false` otherwise.
       */
     def isArray(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean = js.native
+    
     /**
       * Test whether a JSON value is an object.
       *
@@ -86,6 +71,7 @@ object mod extends js.Object {
       * @returns `true` if the value is a an object, `false` otherwise.
       */
     def isObject(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean = js.native
+    
     /**
       * Test whether a JSON value is a primitive.
       *
@@ -97,7 +83,19 @@ object mod extends js.Object {
   }
   
   @js.native
+  class MimeData ()
+    extends typings.luminoCoreutils.mimeMod.MimeData
+  
+  @js.native
+  /**
+    * Construct a new promise delegate.
+    */
+  class PromiseDelegate[T] ()
+    extends typings.luminoCoreutils.promiseMod.PromiseDelegate[T]
+  
+  @js.native
   object Random extends js.Object {
+    
     /**
       * A function which generates random bytes.
       *
@@ -119,7 +117,19 @@ object mod extends js.Object {
   }
   
   @js.native
+  class Token[T] protected ()
+    extends typings.luminoCoreutils.tokenMod.Token[T] {
+    /**
+      * Construct a new token.
+      *
+      * @param name - A human readable name for the token.
+      */
+    def this(name: String) = this()
+  }
+  
+  @js.native
   object UUID extends js.Object {
+    
     /**
       * A function which generates UUID v4 identifiers.
       *
@@ -134,6 +144,4 @@ object mod extends js.Object {
       */
     def uuid4(): String = js.native
   }
-  
 }
-

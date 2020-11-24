@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XUsersSupplier
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XViewsSupplier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the {@link com.sun.star.sdbc.Connection} of SDBC by providing the data definitions of a connected database. */
 @js.native
@@ -28,4 +28,3 @@ trait Connection
      with XQueriesSupplier
      with XSQLQueryComposerFactory
      with XMultiServiceFactory
-

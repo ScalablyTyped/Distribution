@@ -10,9 +10,9 @@ Sanely validate email addresses, based on HTML5's definition of email addresses
 | ------------------ | :-------------: |
 | Full name          | sane-email-validation |
 | Keywords           | email, validation, validate |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 64600 |
+| # downloads        | 94665 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.luminoDisposable.mod.IDisposable because Already inherited
@@ -25,26 +25,34 @@ class SessionManager_ protected () extends BaseManager {
     * @param options - The default options for each session.
     */
   def this(options: IOptions) = this()
+  
   val _connectToKernel: js.Any = js.native
+  
   var _connectionFailure: js.Any = js.native
+  
   var _isReady: js.Any = js.native
+  
   var _kernelManager: js.Any = js.native
+  
   var _models: js.Any = js.native
+  
   var _onChanged: js.Any = js.native
+  
   var _onDisposed: js.Any = js.native
+  
   /**
     * Handle a session starting.
     */
   var _onStarted: js.Any = js.native
+  
   var _pollModels: js.Any = js.native
+  
   var _ready: js.Any = js.native
+  
   var _runningChanged: js.Any = js.native
+  
   var _sessionConnections: js.Any = js.native
-  /**
-    * A signal emitted when the running sessions change.
-    */
-  @JSName("runningChanged")
-  var runningChanged_FSessionManager_ : ISignal[this.type, js.Array[IModel]] = js.native
+  
   /**
     * Connect to a running session.
     *
@@ -55,11 +63,13 @@ class SessionManager_ protected () extends BaseManager {
     * @returns The new session instance.
     */
   def connectTo(options: OmitIOptionsconnectToKern): ISessionConnection = js.native
+  
   /**
     * A signal emitted when there is a connection failure.
     */
   @JSName("connectionFailure")
   def connectionFailure_MSessionManager_ : ISignal[this.type, Error] = js.native
+  
   /**
     * Find a session by id.
     */
@@ -71,6 +81,7 @@ class SessionManager_ protected () extends BaseManager {
     * @returns A promise that resolves with the session's model.
     */
   def findById(id: String): js.Promise[js.UndefOr[IModel]] = js.native
+  
   /**
     * Find a session by path.
     */
@@ -82,16 +93,19 @@ class SessionManager_ protected () extends BaseManager {
     * @returns A promise that resolves with the session's model.
     */
   def findByPath(path: String): js.Promise[js.UndefOr[IModel]] = js.native
+  
   /**
     * Test whether the manager is ready.
     */
   @JSName("isReady")
   def isReady_MSessionManager_ : Boolean = js.native
+  
   /**
     * A promise that fulfills when the manager is ready.
     */
   @JSName("ready")
   def ready_MSessionManager_ : js.Promise[Unit] = js.native
+  
   /**
     * Force a refresh of the running sessions.
     *
@@ -111,10 +125,12 @@ class SessionManager_ protected () extends BaseManager {
     * since the manager maintains its internal state.
     */
   def refreshRunning(): js.Promise[Unit] = js.native
+  
   /**
     * Execute a request to the server to poll running kernels and update state.
     */
   /* protected */ def requestRunning(): js.Promise[Unit] = js.native
+  
   /**
     * Create an iterator over the most recent running sessions.
     *
@@ -126,10 +142,17 @@ class SessionManager_ protected () extends BaseManager {
     * @returns A new iterator over the running sessions.
     */
   def running(): IIterator[IModel] = js.native
+  
   /**
     * A signal emitted when the running sessions change.
     */
   def runningChanged: ISignal[this.type, js.Array[IModel]] = js.native
+  /**
+    * A signal emitted when the running sessions change.
+    */
+  @JSName("runningChanged")
+  var runningChanged_FSessionManager_ : ISignal[this.type, js.Array[IModel]] = js.native
+  
   /**
     * Shut down a session by id.
     */
@@ -141,6 +164,7 @@ class SessionManager_ protected () extends BaseManager {
     * @returns A promise that resolves when the operation is complete.
     */
   def shutdown(id: String): js.Promise[Unit] = js.native
+  
   /**
     * Shut down all sessions.
     *
@@ -152,6 +176,7 @@ class SessionManager_ protected () extends BaseManager {
     * @returns A promise that resolves when all of the sessions are shut down.
     */
   def shutdownAll(): js.Promise[Unit] = js.native
+  
   /**
     * Start a new session.  See also [[startNewSession]].
     *
@@ -173,6 +198,7 @@ class SessionManager_ protected () extends BaseManager {
     */
   def startNew(createOptions: ISessionOptions): js.Promise[ISessionConnection] = js.native
   def startNew(createOptions: ISessionOptions, connectOptions: OmitIOptionsmodelconnectT): js.Promise[ISessionConnection] = js.native
+  
   /**
     * Find a session associated with a path and stop it if it is the only session
     * using that kernel.
@@ -191,4 +217,3 @@ class SessionManager_ protected () extends BaseManager {
     */
   def stopIfNeeded(path: String): js.Promise[Unit] = js.native
 }
-

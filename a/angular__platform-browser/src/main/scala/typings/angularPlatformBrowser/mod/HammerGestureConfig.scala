@@ -5,17 +5,27 @@ import typings.angularPlatformBrowser.anon.CssProps
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "HammerGestureConfig")
 @js.native
 class HammerGestureConfig () extends js.Object {
+  
+  /**
+    * Creates a [HammerJS Manager](http://hammerjs.github.io/api/#hammer.manager)
+    * and attaches it to a given HTML element.
+    * @param element The element that will recognize gestures.
+    * @returns A HammerJS event-manager object.
+    */
+  def buildHammer(element: HTMLElement): HammerInstance = js.native
+  
   /**
     * A set of supported event names for gestures to be used in Angular.
     * Angular supports all built-in recognizers, as listed in
     * [HammerJS documentation](http://hammerjs.github.io/).
     */
   var events: js.Array[String] = js.native
+  
   /**
     * Properties whose default values can be overridden for a given event.
     * Different sets of properties apply to different events.
@@ -24,6 +34,7 @@ class HammerGestureConfig () extends js.Object {
     * [HammerJS documentation](http://hammerjs.github.io/).
     */
   var options: js.UndefOr[CssProps] = js.native
+  
   /**
     * Maps gesture event names to a set of configuration options
     * that specify overrides to the default values for specific properties.
@@ -41,12 +52,4 @@ class HammerGestureConfig () extends js.Object {
     *
     */
   var overrides: StringDictionary[js.Object] = js.native
-  /**
-    * Creates a [HammerJS Manager](http://hammerjs.github.io/api/#hammer.manager)
-    * and attaches it to a given HTML element.
-    * @param element The element that will recognize gestures.
-    * @returns A HammerJS event-manager object.
-    */
-  def buildHammer(element: HTMLElement): HammerInstance = js.native
 }
-

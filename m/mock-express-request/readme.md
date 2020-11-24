@@ -11,8 +11,8 @@ Nodejs library to mock express http request
 | Full name          | mock-express-request |
 | Keywords           | express, connect, mock, stab, unit, test, spec, specification, bdd, tdd, request, http, htttps |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 1149819 |
+| # dependents       | 9 |
+| # downloads        | 1602219 |
 | # stars            | 0 |
 
 ## Links

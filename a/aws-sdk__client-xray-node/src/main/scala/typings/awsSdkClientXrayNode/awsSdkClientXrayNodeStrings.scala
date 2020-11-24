@@ -2,9 +2,31 @@ package typings.awsSdkClientXrayNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkClientXrayNodeStrings {
+  
+  @scala.inline
+  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
+  
+  @scala.inline
+  def InvalidRequestException: InvalidRequestException = "InvalidRequestException".asInstanceOf[InvalidRequestException]
+  
+  @scala.inline
+  def KMS: KMS = "KMS".asInstanceOf[KMS]
+  
+  @scala.inline
+  def NONE: NONE = "NONE".asInstanceOf[NONE]
+  
+  @scala.inline
+  def RuleLimitExceededException: RuleLimitExceededException = "RuleLimitExceededException".asInstanceOf[RuleLimitExceededException]
+  
+  @scala.inline
+  def ThrottledException: ThrottledException = "ThrottledException".asInstanceOf[ThrottledException]
+  
+  @scala.inline
+  def UPDATING: UPDATING = "UPDATING".asInstanceOf[UPDATING]
+  
   @js.native
   sealed trait ACTIVE extends js.Object
   
@@ -25,20 +47,4 @@ object awsSdkClientXrayNodeStrings {
   
   @js.native
   sealed trait UPDATING extends js.Object
-  
-  @scala.inline
-  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
-  @scala.inline
-  def InvalidRequestException: InvalidRequestException = "InvalidRequestException".asInstanceOf[InvalidRequestException]
-  @scala.inline
-  def KMS: KMS = "KMS".asInstanceOf[KMS]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
-  def RuleLimitExceededException: RuleLimitExceededException = "RuleLimitExceededException".asInstanceOf[RuleLimitExceededException]
-  @scala.inline
-  def ThrottledException: ThrottledException = "ThrottledException".asInstanceOf[ThrottledException]
-  @scala.inline
-  def UPDATING: UPDATING = "UPDATING".asInstanceOf[UPDATING]
 }
-

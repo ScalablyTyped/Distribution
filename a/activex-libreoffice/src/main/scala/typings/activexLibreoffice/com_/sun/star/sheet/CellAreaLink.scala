@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a linked cell range.
@@ -24,25 +24,30 @@ trait CellAreaLink
   extends XAreaLink
      with XRefreshable
      with XPropertySet {
+  
   /** specifies the name of the filter used to load the source document. */
   var Filter: String = js.native
+  
   /** specifies the filter options needed to load the source document. */
   var FilterOptions: String = js.native
+  
   /**
     * specifies the delay time between two refresh actions in seconds.
     * @deprecated Deprecated
     */
   var RefreshDelay: Double = js.native
+  
   /**
     * specifies the time between two refresh actions in seconds.
     * @since OOo 2.0
     */
   var RefreshPeriod: Double = js.native
+  
   /** specifies the URL of the source document. */
   var Url: String = js.native
 }
-
 object CellAreaLink {
+  
   @scala.inline
   def apply(
     DestArea: CellRangeAddress,
@@ -74,28 +79,35 @@ object CellAreaLink {
     val __obj = js.Dynamic.literal(DestArea = DestArea.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], FilterOptions = FilterOptions.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RefreshDelay = RefreshDelay.asInstanceOf[js.Any], RefreshPeriod = RefreshPeriod.asInstanceOf[js.Any], SourceArea = SourceArea.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addRefreshListener = js.Any.fromFunction1(addRefreshListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getDestArea = js.Any.fromFunction0(getDestArea), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSourceArea = js.Any.fromFunction0(getSourceArea), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setDestArea = js.Any.fromFunction1(setDestArea), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setSourceArea = js.Any.fromFunction1(setSourceArea))
     __obj.asInstanceOf[CellAreaLink]
   }
+  
   @scala.inline
   implicit class CellAreaLinkOps[Self <: CellAreaLink] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFilterOptions(value: String): Self = this.set("FilterOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRefreshDelay(value: Double): Self = this.set("RefreshDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRefreshPeriod(value: Double): Self = this.set("RefreshPeriod", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
   }
-  
 }
-

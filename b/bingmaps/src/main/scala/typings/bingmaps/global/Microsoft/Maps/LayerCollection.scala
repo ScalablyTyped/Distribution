@@ -2,10 +2,9 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.LayerCollection")
 @js.native
 class LayerCollection ()
   extends typings.bingmaps.Microsoft.Maps.LayerCollection
-

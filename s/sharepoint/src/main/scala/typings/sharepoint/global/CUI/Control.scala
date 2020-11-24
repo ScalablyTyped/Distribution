@@ -2,7 +2,7 @@ package typings.sharepoint.global.CUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.Control")
 @js.native
@@ -14,4 +14,3 @@ class Control protected ()
     properties: typings.sharepoint.CUI.ControlProperties
   ) = this()
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Campaigns")
 @js.native
 class ResourceCampaigns protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.campaigns.get
     * @desc Gets one campaign by ID.
@@ -42,6 +44,7 @@ class ResourceCampaigns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCampaign]
   ): Unit = js.native
+  
   /**
     * dfareporting.campaigns.insert
     * @desc Inserts a new campaign.
@@ -71,6 +74,7 @@ class ResourceCampaigns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCampaign]
   ): Unit = js.native
+  
   /**
     * dfareporting.campaigns.list
     * @desc Retrieves a list of campaigns, possibly filtered. This method
@@ -113,6 +117,7 @@ class ResourceCampaigns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCampaignsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.campaigns.patch
     * @desc Updates an existing campaign. This method supports patch semantics.
@@ -143,6 +148,7 @@ class ResourceCampaigns protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCampaign]
   ): Unit = js.native
+  
   /**
     * dfareporting.campaigns.update
     * @desc Updates an existing campaign.
@@ -173,4 +179,3 @@ class ResourceCampaigns protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCampaign]
   ): Unit = js.native
 }
-

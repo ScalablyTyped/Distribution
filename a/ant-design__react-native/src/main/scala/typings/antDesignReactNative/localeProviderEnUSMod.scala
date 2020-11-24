@@ -10,23 +10,31 @@ import typings.antDesignReactNative.anon.Extra
 import typings.antDesignReactNative.anon.NextText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native/lib/locale-provider/en_US", JSImport.Namespace)
 @js.native
 object localeProviderEnUSMod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     var DatePicker: DismissText = js.native
+    
     var DatePickerView: Day = js.native
+    
     var InputItem: BackspaceLabel = js.native
+    
     var ListView: Done = js.native
+    
     var Modal: ButtonText = js.native
+    
     var Pagination: NextText = js.native
+    
     var Picker: Extra = js.native
+    
     var SearchBar: CancelText = js.native
+    
     var locale: String = js.native
   }
-  
 }
-

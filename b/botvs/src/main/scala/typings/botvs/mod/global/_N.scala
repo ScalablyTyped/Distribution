@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("_N")
 @js.native
 object _N extends js.Object {
+  
   /**
     * 格式化一个浮点函数
     *
@@ -17,4 +18,3 @@ object _N extends js.Object {
   def apply(num: Double): String = js.native
   def apply(num: Double, precision: Double): String = js.native
 }
-

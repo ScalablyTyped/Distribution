@@ -3,11 +3,12 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri-leaflet", "featureLayer")
 @js.native
 object featureLayer extends js.Object {
+  
   /**
     * `L.esri.FeatureLayer` is used to visualize, style, query and edit vector geographic data hosted in both
     * ArcGIS Online and published using ArcGIS Server. Copyright text from the service is added to map attribution
@@ -32,4 +33,3 @@ object featureLayer extends js.Object {
     */
   def apply(options: FeatureLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ = js.native
 }
-

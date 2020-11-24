@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1alpha1", "servicebroker_v1alpha1.Resource$V1alpha1")
 @js.native
 class ResourceV1alpha1 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicebroker.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -45,6 +47,7 @@ class ResourceV1alpha1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * servicebroker.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -78,6 +81,7 @@ class ResourceV1alpha1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * servicebroker.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -115,4 +119,3 @@ class ResourceV1alpha1 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleIamV1TestIamPermissionsResponse]
   ): Unit = js.native
 }
-

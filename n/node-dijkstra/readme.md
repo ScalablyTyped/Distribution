@@ -12,7 +12,7 @@ A NodeJS implementation of Dijkstra's algorithm
 | Keywords           | dijkstra, shortest path |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 141106 |
+| # downloads        | 464141 |
 | # stars            | 4 |
 
 ## Links

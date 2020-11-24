@@ -4,23 +4,13 @@ import typings.node.Buffer
 import typings.node.childProcessMod.ExecException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-windows", "EventLogger")
 @js.native
 class EventLogger () extends js.Object {
   def this(config: EventLogConfig) = this()
-  /**
-    * @cfg {String} [eventLog=APPLICATION]
-    * The event log where messages should be written. This is either `APPLICATION` or `SYSTEM`.
-    */
-  var eventLog: String = js.native
-  /**
-    * @cfg {String} [name=Node.js]
-    * The source of the log information. This is commonly the title of an application
-    * or the Node.js script name (i.e. MyApp).
-    */
-  var source: String = js.native
+  
   /**
     * auditFailure
     * Log an audit failure message.
@@ -43,6 +33,7 @@ class EventLogger () extends js.Object {
     code: Double,
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * auditSuccess
     * Log an audit success message.
@@ -65,6 +56,7 @@ class EventLogger () extends js.Object {
     code: Double,
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * error
     * Log an error message.
@@ -87,6 +79,13 @@ class EventLogger () extends js.Object {
     code: Double,
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
+  
+  /**
+    * @cfg {String} [eventLog=APPLICATION]
+    * The event log where messages should be written. This is either `APPLICATION` or `SYSTEM`.
+    */
+  var eventLog: String = js.native
+  
   /**
     * info
     * Log an informational message.
@@ -109,6 +108,7 @@ class EventLogger () extends js.Object {
     code: Double,
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * info
     * Log an informational message.
@@ -131,6 +131,14 @@ class EventLogger () extends js.Object {
     code: Double,
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
+  
+  /**
+    * @cfg {String} [name=Node.js]
+    * The source of the log information. This is commonly the title of an application
+    * or the Node.js script name (i.e. MyApp).
+    */
+  var source: String = js.native
+  
   /**
     * warn
     * Log a warning message.
@@ -153,6 +161,7 @@ class EventLogger () extends js.Object {
     code: Double,
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
+  
   /**
     * warn
     * Log a warning message.
@@ -176,4 +185,3 @@ class EventLogger () extends js.Object {
     callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): Unit = js.native
 }
-

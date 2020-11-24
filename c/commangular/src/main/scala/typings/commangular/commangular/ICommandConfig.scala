@@ -2,7 +2,7 @@ package typings.commangular.commangular
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Command creation configuration
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ICommandConfig extends js.Object {
+  
   /**
     * This property instruct commangular to keep the value returned by the command in the value
     * key passed in 'resultKey'. It has to be a string. It means that after the execution of this
@@ -17,27 +18,30 @@ trait ICommandConfig extends js.Object {
     */
   var resultKey: String = js.native
 }
-
 object ICommandConfig {
+  
   @scala.inline
   def apply(resultKey: String): ICommandConfig = {
     val __obj = js.Dynamic.literal(resultKey = resultKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICommandConfig]
   }
+  
   @scala.inline
   implicit class ICommandConfigOps[Self <: ICommandConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setResultKey(value: String): Self = this.set("resultKey", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a DDE link.
@@ -21,8 +21,8 @@ trait DDELink
      with XDDELink
      with XRefreshable
      with XDDELinkResults
-
 object DDELink {
+  
   @scala.inline
   def apply(
     Application: String,
@@ -48,4 +48,3 @@ object DDELink {
     __obj.asInstanceOf[DDELink]
   }
 }
-

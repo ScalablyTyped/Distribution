@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275\u0275styleProp")
 @js.native
 object ɵɵstyleProp extends js.Object {
+  
   def apply(prop: String): js.Function3[
     /* prop */ String, 
     /* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
@@ -62,4 +63,3 @@ object ɵɵstyleProp extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any
   ] = js.native
 }
-

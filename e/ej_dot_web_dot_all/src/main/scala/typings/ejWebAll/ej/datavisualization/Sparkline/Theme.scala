@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Sparkline
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Theme extends js.Object
-
 @JSGlobal("ej.datavisualization.Sparkline.Theme")
 @js.native
 object Theme extends js.Object {
+  
   //string
   @js.native
   sealed trait Azure extends Theme
@@ -49,6 +49,4 @@ object Theme extends js.Object {
   //string
   @js.native
   sealed trait SaffronDark extends Theme
-  
 }
-

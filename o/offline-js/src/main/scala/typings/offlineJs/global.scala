@@ -15,16 +15,17 @@ import typings.offlineJs.offlineJsStrings.up
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Offline extends js.Object {
-    var options: OfflineOptions = js.native
-    var state: String = js.native
+    
     def check(): Unit = js.native
+    
     def off(event: String): Unit = js.native
     def off(event: String, handler: js.Function1[/* e */ Event, _]): Unit = js.native
     @JSName("off")
@@ -75,6 +76,7 @@ object global extends js.Object {
     def off_up(event: up): Unit = js.native
     @JSName("off")
     def off_up(event: up, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+    
     def on(event: String, handler: js.Function1[/* e */ Event, _]): Unit = js.native
     def on(event: String, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
     @JSName("on")
@@ -125,7 +127,9 @@ object global extends js.Object {
     def on_up(event: up, handler: js.Function1[/* e */ Event, _]): Unit = js.native
     @JSName("on")
     def on_up(event: up, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+    
+    var options: OfflineOptions = js.native
+    
+    var state: String = js.native
   }
-  
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.PlayTo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PlayToConnectionError extends js.Object
-
 /** Describes an error on a Play To connection. */
 @JSGlobal("Windows.Media.PlayTo.PlayToConnectionError")
 @js.native
 object PlayToConnectionError extends js.Object {
+  
   /** The Play To target device has encountered an error. */
   @js.native
   sealed trait deviceError extends PlayToConnectionError
@@ -30,6 +30,4 @@ object PlayToConnectionError extends js.Object {
   /** The Play To target device failed to play the protected content. */
   @js.native
   sealed trait protectedPlaybackFailed extends PlayToConnectionError
-  
 }
-

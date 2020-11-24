@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends interface {@link XModel} .
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XModel2 extends XModel {
+  
   /**
     * provides the available names of the factory to be used to create views.
     *
@@ -34,6 +35,7 @@ trait XModel2 extends XModel {
     * @see createView
     */
   val AvailableViewControllerNames: SafeArray[String] = js.native
+  
   /**
     * provides list of all currently connected controller objects.
     *
@@ -42,6 +44,7 @@ trait XModel2 extends XModel {
     * @returns list of controller objects. Enumeration can be empty but not NULL.
     */
   val Controllers: XEnumeration = js.native
+  
   /**
     * creates the default view instance for this model.
     *
@@ -52,6 +55,7 @@ trait XModel2 extends XModel {
     * @throws com::sun::star::uno::Exception if creation of a new view failed by other reasons
     */
   def createDefaultViewController(Frame: XFrame): XController2 = js.native
+  
   /**
     * creates a new view instance classified by the specified name and arguments.
     *
@@ -66,6 +70,7 @@ trait XModel2 extends XModel {
     * @throws com::sun::star::uno::Exception if creation of a new view failed by other reasons
     */
   def createViewController(ViewName: String, Arguments: SeqEquiv[PropertyValue], Frame: XFrame): XController2 = js.native
+  
   /**
     * provides the available names of the factory to be used to create views.
     *
@@ -79,6 +84,7 @@ trait XModel2 extends XModel {
     * @see createView
     */
   def getAvailableViewControllerNames(): SafeArray[String] = js.native
+  
   /**
     * provides list of all currently connected controller objects.
     *
@@ -88,8 +94,8 @@ trait XModel2 extends XModel {
     */
   def getControllers(): XEnumeration = js.native
 }
-
 object XModel2 {
+  
   @scala.inline
   def apply(
     Args: SafeArray[PropertyValue],
@@ -123,30 +129,38 @@ object XModel2 {
     val __obj = js.Dynamic.literal(Args = Args.asInstanceOf[js.Any], AvailableViewControllerNames = AvailableViewControllerNames.asInstanceOf[js.Any], Controllers = Controllers.asInstanceOf[js.Any], CurrentController = CurrentController.asInstanceOf[js.Any], CurrentSelection = CurrentSelection.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachResource = js.Any.fromFunction2(attachResource), connectController = js.Any.fromFunction1(connectController), createDefaultViewController = js.Any.fromFunction1(createDefaultViewController), createViewController = js.Any.fromFunction3(createViewController), disconnectController = js.Any.fromFunction1(disconnectController), dispose = js.Any.fromFunction0(dispose), getArgs = js.Any.fromFunction0(getArgs), getAvailableViewControllerNames = js.Any.fromFunction0(getAvailableViewControllerNames), getControllers = js.Any.fromFunction0(getControllers), getCurrentController = js.Any.fromFunction0(getCurrentController), getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getURL = js.Any.fromFunction0(getURL), hasControllersLocked = js.Any.fromFunction0(hasControllersLocked), lockControllers = js.Any.fromFunction0(lockControllers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setCurrentController = js.Any.fromFunction1(setCurrentController), unlockControllers = js.Any.fromFunction0(unlockControllers))
     __obj.asInstanceOf[XModel2]
   }
+  
   @scala.inline
   implicit class XModel2Ops[Self <: XModel2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAvailableViewControllerNames(value: SafeArray[String]): Self = this.set("AvailableViewControllerNames", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setControllers(value: XEnumeration): Self = this.set("Controllers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateDefaultViewController(value: XFrame => XController2): Self = this.set("createDefaultViewController", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateViewController(value: (String, SeqEquiv[PropertyValue], XFrame) => XController2): Self = this.set("createViewController", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetAvailableViewControllerNames(value: () => SafeArray[String]): Self = this.set("getAvailableViewControllerNames", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetControllers(value: () => XEnumeration): Self = this.set("getControllers", js.Any.fromFunction0(value))
   }
-  
 }
-

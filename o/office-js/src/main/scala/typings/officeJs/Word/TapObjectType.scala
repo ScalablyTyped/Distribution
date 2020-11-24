@@ -2,17 +2,17 @@ package typings.officeJs.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TapObjectType extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.TapObjectType")
 @js.native
 object TapObjectType extends js.Object {
+  
   @js.native
   sealed trait chart extends TapObjectType
   
@@ -33,6 +33,4 @@ object TapObjectType extends js.Object {
   
   @js.native
   sealed trait text extends TapObjectType
-  
 }
-

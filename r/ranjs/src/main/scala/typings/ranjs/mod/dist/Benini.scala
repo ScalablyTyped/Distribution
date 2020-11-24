@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.Benini")
 @js.native
@@ -16,4 +16,3 @@ class Benini ()
   def this(alpha: Double, beta: js.UndefOr[scala.Nothing], sigma: Double) = this()
   def this(alpha: Double, beta: Double, sigma: Double) = this()
 }
-

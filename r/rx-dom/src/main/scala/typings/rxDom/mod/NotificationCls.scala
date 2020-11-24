@@ -2,7 +2,7 @@ package typings.rxDom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx-dom", "NotificationCls")
 @js.native
@@ -17,4 +17,3 @@ class NotificationCls[T] protected ()
     toString: js.Any
   ) = this()
 }
-

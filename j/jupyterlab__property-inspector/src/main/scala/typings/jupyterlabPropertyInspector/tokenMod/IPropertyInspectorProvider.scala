@@ -5,9 +5,11 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IPropertyInspectorProvider extends js.Object {
+  
   /**
     * Register a widget in the property inspector provider.
     *
@@ -19,10 +21,8 @@ trait IPropertyInspectorProvider extends js.Object {
     * A widget can be unregistered by disposing of its property
     * inspector.
     */
-  def register(widget: Widget): IPropertyInspector
+  def register(widget: Widget): IPropertyInspector = js.native
 }
-
 @JSImport("@jupyterlab/property-inspector/lib/token", "IPropertyInspectorProvider")
 @js.native
 object IPropertyInspectorProvider extends TopLevel[Token[IPropertyInspectorProvider]]
-

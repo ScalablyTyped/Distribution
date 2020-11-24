@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.AudioNodeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaStreamAudioDestinationNode")
 @js.native
@@ -14,7 +14,6 @@ class MediaStreamAudioDestinationNode protected ()
   def this(context: typings.std.AudioContext) = this()
   def this(context: typings.std.AudioContext, options: AudioNodeOptions) = this()
 }
-
 @JSGlobal("MediaStreamAudioDestinationNode")
 @js.native
 object MediaStreamAudioDestinationNode
@@ -27,4 +26,3 @@ object MediaStreamAudioDestinationNode
       /* options */ AudioNodeOptions, 
       typings.std.MediaStreamAudioDestinationNode
     ]
-

@@ -13,18 +13,18 @@ import typings.activexOffice.Office.SmartArtLayout
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shapes extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: String): Shape = js.native
   def apply(Index: Double): Shape = js.native
+  
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddChart(
     XlChartType: js.UndefOr[XlChartType],
     Left: js.UndefOr[Double],
@@ -33,12 +33,19 @@ trait Shapes extends js.Object {
     Height: js.UndefOr[Double],
     NewLayout: js.UndefOr[Boolean]
   ): Shape = js.native
+  
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
+  
   def AddCurve(SafeArrayOfPoints: SafeArray[Double]): Shape = js.native
+  
   def AddDiagram(Type: MsoDiagramType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddFormControl(Type: XlFormControl, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
+  
   def AddOLEObject(
     ClassType: js.UndefOr[scala.Nothing],
     Filename: String,
@@ -66,6 +73,7 @@ trait Shapes extends js.Object {
     Width: js.UndefOr[Double],
     Height: js.UndefOr[Double]
   ): Shape = js.native
+  
   def AddPicture(
     Filename: String,
     LinkToFile: MsoTriState,
@@ -75,8 +83,11 @@ trait Shapes extends js.Object {
     Width: Double,
     Height: Double
   ): Shape = js.native
+  
   def AddPolyline(SafeArrayOfPoints: SafeArray[Double]): Shape = js.native
+  
   def AddShape(Type: MsoAutoShapeType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddSmartArt(Layout: SmartArtLayout): Shape = js.native
   def AddSmartArt(
     Layout: SmartArtLayout,
@@ -140,6 +151,7 @@ trait Shapes extends js.Object {
   ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddTextEffect(
     PresetTextEffect: MsoPresetTextEffect,
     Text: String,
@@ -150,14 +162,27 @@ trait Shapes extends js.Object {
     Left: Double,
     Top: Double
   ): Shape = js.native
+  
   def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
   def BuildFreeform(EditingType: MsoEditingType, X1: Double, Y1: Double): FreeformBuilder = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: String): Shape = js.native
   def Item(Index: Double): Shape = js.native
+  
+  val Parent: js.Any = js.native
+  
   def Range(Index: String): ShapeRange = js.native
   def Range(Index: Double): ShapeRange = js.native
   def Range(Index: SafeArray[Double | String]): ShapeRange = js.native
+  
   def SelectAll(): Unit = js.native
+  
   def _Default(Index: js.Any): Shape = js.native
 }
-

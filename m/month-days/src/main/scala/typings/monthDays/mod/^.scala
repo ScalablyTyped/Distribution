@@ -2,11 +2,12 @@ package typings.monthDays.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("month-days", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Get the number of days in a month.
   @example
@@ -19,4 +20,3 @@ object ^ extends js.Object {
   def apply(): Double = js.native
   def apply(options: Options): Double = js.native
 }
-

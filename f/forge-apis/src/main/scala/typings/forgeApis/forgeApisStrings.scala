@@ -3,9 +3,55 @@ package typings.forgeApis
 import typings.forgeApis.mod.Scope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forgeApisStrings {
+  
+  @scala.inline
+  def accountColonread: accountColonread = "account:read".asInstanceOf[accountColonread]
+  
+  @scala.inline
+  def accountColonwrite: accountColonwrite = "account:write".asInstanceOf[accountColonwrite]
+  
+  @scala.inline
+  def bucketColoncreate: bucketColoncreate = "bucket:create".asInstanceOf[bucketColoncreate]
+  
+  @scala.inline
+  def bucketColondelete: bucketColondelete = "bucket:delete".asInstanceOf[bucketColondelete]
+  
+  @scala.inline
+  def bucketColonread: bucketColonread = "bucket:read".asInstanceOf[bucketColonread]
+  
+  @scala.inline
+  def bucketColonupdate: bucketColonupdate = "bucket:update".asInstanceOf[bucketColonupdate]
+  
+  @scala.inline
+  def codeColonall: codeColonall = "code:all".asInstanceOf[codeColonall]
+  
+  @scala.inline
+  def dataColoncreate: dataColoncreate = "data:create".asInstanceOf[dataColoncreate]
+  
+  @scala.inline
+  def dataColonread: dataColonread = "data:read".asInstanceOf[dataColonread]
+  
+  @scala.inline
+  def dataColonsearch: dataColonsearch = "data:search".asInstanceOf[dataColonsearch]
+  
+  @scala.inline
+  def dataColonwrite: dataColonwrite = "data:write".asInstanceOf[dataColonwrite]
+  
+  @scala.inline
+  def `user-profileColonread`: `user-profileColonread` = "user-profile:read".asInstanceOf[`user-profileColonread`]
+  
+  @scala.inline
+  def userColonread: userColonread = "user:read".asInstanceOf[userColonread]
+  
+  @scala.inline
+  def userColonwrite: userColonwrite = "user:write".asInstanceOf[userColonwrite]
+  
+  @scala.inline
+  def viewablesColonread: viewablesColonread = "viewables:read".asInstanceOf[viewablesColonread]
+  
   @js.native
   sealed trait accountColonread extends Scope
   
@@ -50,36 +96,4 @@ object forgeApisStrings {
   
   @js.native
   sealed trait viewablesColonread extends Scope
-  
-  @scala.inline
-  def accountColonread: accountColonread = "account:read".asInstanceOf[accountColonread]
-  @scala.inline
-  def accountColonwrite: accountColonwrite = "account:write".asInstanceOf[accountColonwrite]
-  @scala.inline
-  def bucketColoncreate: bucketColoncreate = "bucket:create".asInstanceOf[bucketColoncreate]
-  @scala.inline
-  def bucketColondelete: bucketColondelete = "bucket:delete".asInstanceOf[bucketColondelete]
-  @scala.inline
-  def bucketColonread: bucketColonread = "bucket:read".asInstanceOf[bucketColonread]
-  @scala.inline
-  def bucketColonupdate: bucketColonupdate = "bucket:update".asInstanceOf[bucketColonupdate]
-  @scala.inline
-  def codeColonall: codeColonall = "code:all".asInstanceOf[codeColonall]
-  @scala.inline
-  def dataColoncreate: dataColoncreate = "data:create".asInstanceOf[dataColoncreate]
-  @scala.inline
-  def dataColonread: dataColonread = "data:read".asInstanceOf[dataColonread]
-  @scala.inline
-  def dataColonsearch: dataColonsearch = "data:search".asInstanceOf[dataColonsearch]
-  @scala.inline
-  def dataColonwrite: dataColonwrite = "data:write".asInstanceOf[dataColonwrite]
-  @scala.inline
-  def `user-profileColonread`: `user-profileColonread` = "user-profile:read".asInstanceOf[`user-profileColonread`]
-  @scala.inline
-  def userColonread: userColonread = "user:read".asInstanceOf[userColonread]
-  @scala.inline
-  def userColonwrite: userColonwrite = "user:write".asInstanceOf[userColonwrite]
-  @scala.inline
-  def viewablesColonread: viewablesColonread = "viewables:read".asInstanceOf[viewablesColonread]
 }
-

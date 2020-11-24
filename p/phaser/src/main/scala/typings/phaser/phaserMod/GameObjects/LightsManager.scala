@@ -2,7 +2,7 @@ package typings.phaser.phaserMod.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Manages Lights for a Scene.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class LightsManager ()
   extends typings.phaser.Phaser.GameObjects.LightsManager
-

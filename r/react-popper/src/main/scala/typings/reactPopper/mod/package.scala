@@ -2,19 +2,23 @@ package typings.reactPopper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
-  type Modifier[Name, Options /* <: js.Object */] = (typings.std.Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Modifier<Name, Options> */ js.Any
-  ]) | typings.reactPopper.mod.StrictModifier[Name]
-  type StrictModifier[Name /* <: typings.reactPopper.mod.StrictModifierNames */] = typings.reactPopper.mod.UnionWhere[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.StrictModifiers */ js.Any, 
-    typings.reactPopper.anon.`0`[Name]
-  ]
+  
+  type Modifier[Name, Options /* <: js.Object */] = (typings.std.Partial[typings.popperjsCore.typesMod.Modifier[Name, Options]]) | typings.reactPopper.mod.StrictModifier[Name]
+  
+  type RefHandler = js.Function1[/* ref */ typings.std.HTMLElement | scala.Null, scala.Unit]
+  
+  /* Inlined react-popper.react-popper.UnionWhere<@popperjs/core.@popperjs/core.StrictModifiers, {  name :Name | undefined}> */
+  type StrictModifier[Name /* <: typings.reactPopper.mod.StrictModifierNames */] = typings.reactPopper.reactPopperStrings.name
+  
   type StrictModifierNames = typings.std.NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.StrictModifiers * / any['name'] */ js.Any
+    js.UndefOr[
+      typings.reactPopper.reactPopperStrings.offset | typings.reactPopper.reactPopperStrings.applyStyles | typings.reactPopper.reactPopperStrings.arrow | typings.reactPopper.reactPopperStrings.hide | typings.reactPopper.reactPopperStrings.computeStyles | typings.reactPopper.reactPopperStrings.eventListeners | typings.reactPopper.reactPopperStrings.flip | typings.reactPopper.reactPopperStrings.preventOverflow | typings.reactPopper.reactPopperStrings.popperOffsets
+    ]
   ]
+  
   // Utility type
   type UnionWhere[U, M] = U
 }

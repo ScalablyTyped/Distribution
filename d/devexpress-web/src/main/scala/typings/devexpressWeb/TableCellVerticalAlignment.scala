@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TableCellVerticalAlignment extends js.Object
-
 /**
   * Lists possible vertical alignments for cell content.
   */
 @JSGlobal("TableCellVerticalAlignment")
 @js.native
 object TableCellVerticalAlignment extends js.Object {
+  
   /**
     * The cell content is vertically justified.
     */
@@ -36,6 +36,4 @@ object TableCellVerticalAlignment extends js.Object {
     */
   @js.native
   sealed trait Top extends TableCellVerticalAlignment
-  
 }
-

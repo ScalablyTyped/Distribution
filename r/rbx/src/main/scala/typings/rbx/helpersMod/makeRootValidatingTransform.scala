@@ -40,11 +40,12 @@ import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/base/helpers", "makeRootValidatingTransform")
 @js.native
 object makeRootValidatingTransform extends js.Object {
+  
   def apply(variables: PartialVariablesDefinitio): js.Function3[
     /* props */ classNamestringundefinedB, 
     /* componentName */ String, 
@@ -58,4 +59,3 @@ object makeRootValidatingTransform extends js.Object {
     ])
   ] = js.native
 }
-

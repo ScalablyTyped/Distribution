@@ -9,9 +9,9 @@ This plugin is used to fix elements on the page (top, bottom, anywhere); however
 | ------------------ | :-------------: |
 | Full name          | scrolltofixed |
 | Keywords           | scroll, fixed, jquery |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 43127 |
+| # downloads        | 48023 |
 | # stars            | 4 |
 
 ## Links

@@ -4,17 +4,18 @@ import typings.babylonjs.anon.Q
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/torusKnotBuilder", JSImport.Namespace)
 @js.native
 object torusKnotBuilderMod extends js.Object {
+  
   @js.native
   class TorusKnotBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object TorusKnotBuilder extends js.Object {
+    
     /**
       * Creates a torus knot mesh
       * * The parameter `radius` sets the global radius size (float) of the torus knot (default 2)
@@ -32,6 +33,4 @@ object torusKnotBuilderMod extends js.Object {
       */
     def CreateTorusKnot(name: String, options: Q, scene: js.Any): Mesh = js.native
   }
-  
 }
-

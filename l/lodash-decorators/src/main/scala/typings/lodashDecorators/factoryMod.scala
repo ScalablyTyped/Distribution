@@ -6,11 +6,16 @@ import typings.lodashDecorators.decoratorConfigMod.DecoratorConfigOptions
 import typings.lodashDecorators.utilsMod.CompositeKeyWeakMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lodash-decorators/factory", JSImport.Namespace)
 @js.native
 object factoryMod extends js.Object {
+  
+  val DecoratorFactory: typings.lodashDecorators.decoratorFactoryMod.InternalDecoratorFactory = js.native
+  
+  val InstanceChainMap: CompositeKeyWeakMap[InstanceChainData] = js.native
+  
   @js.native
   class DecoratorConfig protected ()
     extends typings.lodashDecorators.decoratorConfigMod.DecoratorConfig {
@@ -21,8 +26,4 @@ object factoryMod extends js.Object {
   @js.native
   class InternalDecoratorFactory ()
     extends typings.lodashDecorators.decoratorFactoryMod.InternalDecoratorFactory
-  
-  val DecoratorFactory: typings.lodashDecorators.decoratorFactoryMod.InternalDecoratorFactory = js.native
-  val InstanceChainMap: CompositeKeyWeakMap[InstanceChainData] = js.native
 }
-

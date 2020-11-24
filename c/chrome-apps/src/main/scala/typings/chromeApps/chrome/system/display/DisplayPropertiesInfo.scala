@@ -8,13 +8,14 @@ import typings.chromeApps.chromeAppsNumbers.`270`
 import typings.chromeApps.chromeAppsNumbers.`90`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of info data to be used in chrome.system.display.setDisplayProperties()
   */
 @js.native
 trait DisplayPropertiesInfo extends js.Object {
+  
   /**
     * If set, updates the display's logical bounds origin along x-axis.
     * Applied together with boundsOriginY, if boundsOriginY is set.
@@ -26,16 +27,19 @@ trait DisplayPropertiesInfo extends js.Object {
     * (as isPrimary parameter is applied first).
     */
   var boundsOriginX: js.UndefOr[integer] = js.native
+  
   /**
     * If set, updates the display's logical bounds origin along y-axis.
     * @see[See documentation for boundsOriginX parameter.]
     */
   var boundsOriginY: js.UndefOr[integer] = js.native
+  
   /**
     * If set, updates the display mode to the mode matching this value.
     * @since Chrome 52
     */
   var displayMode: js.UndefOr[DisplayMode] = js.native
+  
   /**
     * @since Chrome 65.
     * @description
@@ -45,11 +49,13 @@ trait DisplayPropertiesInfo extends js.Object {
     * a pixel by pixel stretch enlargement.
     */
   var displayZoomFactor: js.UndefOr[double] = js.native
+  
   /**
     * If set to true, makes the display primary.
     * No-op if set to false.
     */
   var isPrimary: js.UndefOr[Boolean] = js.native
+  
   /**
     * @requires(CrOS) Chrome OS only.
     * @description
@@ -62,6 +68,7 @@ trait DisplayPropertiesInfo extends js.Object {
     * @since Chrome 59
     * */
   var isUnified: js.UndefOr[Boolean] = js.native
+  
   /**
     * @requires(CrOS) Chrome OS only.
     * @deprecated Deprecated since Chrome 68. Use ´setMirrorMode´
@@ -74,12 +81,14 @@ trait DisplayPropertiesInfo extends js.Object {
     * If set, no other property may be set.
     */
   var mirroringSourceId: js.UndefOr[String] = js.native
+  
   /**
     * If set, sets the display's overscan insets to the provided values.
     * Note that overscan values may not be negative or larger than a half of the screen's size.
     * Overscan cannot be changed on the internal monitor. It's applied after isPrimary parameter.
     */
   var overscan: js.UndefOr[Insets] = js.native
+  
   /**
     * If set, updates the display's rotation.
     * Legal values are [0, 90, 180, 270].
@@ -88,61 +97,81 @@ trait DisplayPropertiesInfo extends js.Object {
     */
   var rotation: js.UndefOr[`0` | `90` | `180` | `270`] = js.native
 }
-
 object DisplayPropertiesInfo {
+  
   @scala.inline
   def apply(): DisplayPropertiesInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayPropertiesInfo]
   }
+  
   @scala.inline
   implicit class DisplayPropertiesInfoOps[Self <: DisplayPropertiesInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBoundsOriginX(value: integer): Self = this.set("boundsOriginX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBoundsOriginX: Self = this.set("boundsOriginX", js.undefined)
+    
     @scala.inline
     def setBoundsOriginY(value: integer): Self = this.set("boundsOriginY", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBoundsOriginY: Self = this.set("boundsOriginY", js.undefined)
+    
     @scala.inline
     def setDisplayMode(value: DisplayMode): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    
     @scala.inline
     def setDisplayZoomFactor(value: double): Self = this.set("displayZoomFactor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisplayZoomFactor: Self = this.set("displayZoomFactor", js.undefined)
+    
     @scala.inline
     def setIsPrimary(value: Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsPrimary: Self = this.set("isPrimary", js.undefined)
+    
     @scala.inline
     def setIsUnified(value: Boolean): Self = this.set("isUnified", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsUnified: Self = this.set("isUnified", js.undefined)
+    
     @scala.inline
     def setMirroringSourceId(value: String): Self = this.set("mirroringSourceId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMirroringSourceId: Self = this.set("mirroringSourceId", js.undefined)
+    
     @scala.inline
     def setOverscan(value: Insets): Self = this.set("overscan", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOverscan: Self = this.set("overscan", js.undefined)
+    
     @scala.inline
     def setRotation(value: `0` | `90` | `180` | `270`): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRotation: Self = this.set("rotation", js.undefined)
   }
-  
 }
-

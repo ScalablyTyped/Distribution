@@ -4,11 +4,12 @@ import typings.materialUiCore.anon.PartialWithWidth
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/withMobileDialog/withMobileDialog", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[P](): js.Function1[
     /* component */ ComponentType[P with InjectedProps with PartialWithWidth], 
     ComponentType[P with PartialWithWidth]
@@ -18,4 +19,3 @@ object default extends js.Object {
     ComponentType[P with PartialWithWidth]
   ] = js.native
 }
-

@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.antd.antdStrings.SELECT_INVERT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_INVERT")
 @js.native
 object SELECTION_INVERT extends TopLevel[SELECT_INVERT]
-

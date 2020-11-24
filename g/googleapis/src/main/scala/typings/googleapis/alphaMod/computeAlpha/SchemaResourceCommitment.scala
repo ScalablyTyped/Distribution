@@ -2,7 +2,7 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Commitment for a particular resource (a Commitment is composed of one or
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaResourceCommitment extends js.Object {
+  
   /**
     * Name of the accelerator type resource. Applicable only when the type is
     * ACCELERATOR.
     */
   var acceleratorType: js.UndefOr[String] = js.native
+  
   /**
     * The amount of the resource purchased (in a type-dependent unit, such as
     * bytes). For vCPUs, this can just be an integer. For memory, this must be
@@ -22,43 +24,52 @@ trait SchemaResourceCommitment extends js.Object {
     * memory per every vCPU.
     */
   var amount: js.UndefOr[String] = js.native
+  
   /**
     * Type of resource for which this commitment applies. Possible values are
     * VCPU and MEMORY
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaResourceCommitment {
+  
   @scala.inline
   def apply(): SchemaResourceCommitment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceCommitment]
   }
+  
   @scala.inline
   implicit class SchemaResourceCommitmentOps[Self <: SchemaResourceCommitment] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAcceleratorType(value: String): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    
     @scala.inline
     def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAmount: Self = this.set("amount", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

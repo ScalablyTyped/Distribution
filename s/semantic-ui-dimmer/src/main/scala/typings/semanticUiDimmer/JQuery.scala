@@ -58,12 +58,11 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.variation
 import typings.semanticUiDimmer.semanticUiDimmerStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("dimmer")
-  var dimmer_Original: Dimmer = js.native
+  
   def dimmer(): JQuery = js.native
   def dimmer(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
   def dimmer(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
@@ -114,6 +113,8 @@ trait JQuery extends js.Object {
   def dimmer(settings: DimmerSettings): JQuery = js.native
   @JSName("dimmer")
   def dimmer_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  @JSName("dimmer")
+  var dimmer_Original: Dimmer = js.native
   @JSName("dimmer")
   def dimmer_SelectorSettings(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
   @JSName("dimmer")
@@ -235,4 +236,3 @@ trait JQuery extends js.Object {
   @JSName("dimmer")
   def dimmer_toggle(behavior: toggle): JQuery = js.native
 }
-

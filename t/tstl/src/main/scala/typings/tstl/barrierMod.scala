@@ -3,11 +3,12 @@ package typings.tstl
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/thread/Barrier", JSImport.Namespace)
 @js.native
 object barrierMod extends js.Object {
+  
   @js.native
   class Barrier protected () extends js.Object {
     /**
@@ -16,9 +17,7 @@ object barrierMod extends js.Object {
       * @param size Size of the downward counter.
       */
     def this(size: Double) = this()
-    var count_ : js.Any = js.native
-    var cv_ : js.Any = js.native
-    var size_ : js.Any = js.native
+    
     /**
       * Derecements the counter.
       *
@@ -32,6 +31,7 @@ object barrierMod extends js.Object {
       */
     def arrive(): js.Promise[Unit] = js.native
     def arrive(n: Double): js.Promise[Unit] = js.native
+    
     /**
       * Decrements the counter and initial size at the same time.
       *
@@ -40,6 +40,7 @@ object barrierMod extends js.Object {
       * {@link wait waiting} for the {@link Barrier} would continue their executions.
       */
     def arrive_and_drop(): js.Promise[Unit] = js.native
+    
     /**
       * Decrements the counter and waits until the counter to be zero.
       *
@@ -48,10 +49,15 @@ object barrierMod extends js.Object {
       * If the the remained counter be zero by this decrement, everyone who are
       * {@link wait waiting} for the {@link Barrier} would continue their executions including
       * this one.
-      *
-      * @param n Value of the decrement. Default is 1.
       */
     def arrive_and_wait(): js.Promise[Unit] = js.native
+    
+    var count_ : js.Any = js.native
+    
+    var cv_ : js.Any = js.native
+    
+    var size_ : js.Any = js.native
+    
     /**
       * Tries to wait until the counter to be zero in timeout.
       *
@@ -64,6 +70,7 @@ object barrierMod extends js.Object {
       * @return Whether succeeded to waiting in the given time.
       */
     def wait_for(ms: Double): js.Promise[Boolean] = js.native
+    
     /**
       * Tries to wait until the counter to be zero in time expiration.
       *
@@ -77,6 +84,4 @@ object barrierMod extends js.Object {
       */
     def wait_until(at: Date): js.Promise[Boolean] = js.native
   }
-  
 }
-

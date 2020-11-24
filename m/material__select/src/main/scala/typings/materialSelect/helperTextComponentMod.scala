@@ -5,19 +5,21 @@ import typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundat
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select/helper-text/component", JSImport.Namespace)
 @js.native
 object helperTextComponentMod extends js.Object {
+  
   @js.native
   class MDCSelectHelperText () extends MDCComponent[MDCSelectHelperTextFoundation] {
+    
     def foundationForSelect: MDCSelectHelperTextFoundation = js.native
   }
-  
   /* static members */
   @js.native
   object MDCSelectHelperText extends js.Object {
+    
     def attachTo(root: Element): MDCSelectHelperText = js.native
   }
   
@@ -27,4 +29,3 @@ object helperTextComponentMod extends js.Object {
     MDCSelectHelperText
   ]
 }
-

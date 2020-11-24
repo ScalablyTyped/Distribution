@@ -6,10 +6,11 @@ import typings.seleniumWebdriver.mod.Session
 import typings.seleniumWebdriver.mod.WebDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWebDriver extends Instantiable2[/* session */ Session, /* executor */ Executor, WebDriver] {
+  
   // endregion
   // region StaticMethods
   /**
@@ -73,4 +74,3 @@ trait TypeofWebDriver extends Instantiable2[/* session */ Session, /* executor *
   // incompatible signatures.
   def createSession(var_args: js.Any*): WebDriver = js.native
 }
-

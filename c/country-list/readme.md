@@ -11,8 +11,8 @@ Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
 | Full name          | country-list |
 | Keywords           | country, countries, ISO 3166-1-alpha-2, ISO 3166-1 |
 | # releases         | 6 |
-| # dependents       | 83 |
-| # downloads        | 1752007 |
+| # dependents       | 120 |
+| # downloads        | 2692686 |
 | # stars            | 6 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.cldrjs.mod.CldrFactory
 import typings.cldrjs.mod.CldrStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cldr/supplemental", JSImport.Namespace)
 @js.native
@@ -25,8 +25,6 @@ class ^ protected () extends CldrStatic {
     */
   def this(locale: String) = this()
 }
-
 @JSImport("cldr/supplemental", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[CldrFactory]
-

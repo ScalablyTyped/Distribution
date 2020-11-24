@@ -3,18 +3,25 @@ package typings.appletvjs
 import typings.appletvjs.AppleTVJS.NavigationDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   var App: typings.appletvjs.AppleTVJS.App = js.native
+  
   var Device: typings.appletvjs.AppleTVJS.Device = js.native
+  
   var Settings: typings.appletvjs.AppleTVJS.Settings = js.native
-  var navigationDocument: NavigationDocument = js.native
+  
   def evaluateScripts(scripts: js.Array[String], complete: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
+  var navigationDocument: NavigationDocument = js.native
+  
   @js.native
   object AppleTVJS extends js.Object {
+    
     @js.native
     class Highlight ()
       extends typings.appletvjs.AppleTVJS.Highlight
@@ -50,8 +57,5 @@ object global extends js.Object {
     @js.native
     class TVError ()
       extends typings.appletvjs.AppleTVJS.TVError
-    
   }
-  
 }
-

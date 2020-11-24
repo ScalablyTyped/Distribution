@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.BackgroundTokenizer")
 @js.native
@@ -18,4 +18,3 @@ Instantiable2[
       /* editor */ typings.ace.AceAjax.Editor, 
       typings.ace.AceAjax.BackgroundTokenizer
     ]
-

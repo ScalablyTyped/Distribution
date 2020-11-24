@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createAbstractBuilder")
 @js.native
 object createAbstractBuilder extends js.Object {
+  
   /**
     * Creates a builder thats just abstraction over program and can be used with watch
     */
@@ -33,4 +34,3 @@ object createAbstractBuilder extends js.Object {
     projectReferences: js.UndefOr[js.Array[ProjectReference]]
   ): BuilderProgram = js.native
 }
-

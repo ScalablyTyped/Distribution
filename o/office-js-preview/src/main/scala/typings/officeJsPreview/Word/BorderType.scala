@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BorderType extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.BorderType")
 @js.native
 object BorderType extends js.Object {
+  
   @js.native
   sealed trait dashDotStroked extends BorderType
   
@@ -84,6 +84,4 @@ object BorderType extends js.Object {
   
   @js.native
   sealed trait wave extends BorderType
-  
 }
-

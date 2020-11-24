@@ -2,11 +2,12 @@ package typings.node.v8Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("v8", "writeHeapSnapshot")
 @js.native
 object writeHeapSnapshot extends js.Object {
+  
   /**
     *
     * @param fileName The file path where the V8 heap snapshot is to be
@@ -19,4 +20,3 @@ object writeHeapSnapshot extends js.Object {
   def apply(): String = js.native
   def apply(fileName: String): String = js.native
 }
-

@@ -4,16 +4,16 @@ import typings.fridaGum.Java.ClassFactory
 import typings.fridaGum.anon.Wrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.ClassFactory")
 @js.native
 class ClassFactory_ () extends ClassFactory
-
 /* static members */
 @JSGlobal("Java.ClassFactory")
 @js.native
 object ClassFactory_ extends js.Object {
+  
   /**
     * Gets the class factory instance for a given class loader, or the
     * default factory when passing `null`.
@@ -27,4 +27,3 @@ object ClassFactory_ extends js.Object {
   def get(): ClassFactory = js.native
   def get(classLoader: Wrapper): ClassFactory = js.native
 }
-

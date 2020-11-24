@@ -2,11 +2,10 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Serves as a base object implementing the client column functionality.
+  * Serves as a base class for classes that implement the client column functionality.
   */
 @js.native
 trait ASPxClientGridColumnBase extends js.Object
-

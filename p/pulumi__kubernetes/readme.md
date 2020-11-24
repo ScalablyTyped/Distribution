@@ -1,22 +1,22 @@
 
 # Scala.js typings for pulumi__kubernetes
 
-Typings are for version 2.4.1
+Typings are for version 2.7.2
 
 ## Library description:
-A Pulumi package for creating and managing Kubernetes resources.
+[![Build Status](https://travis-ci.com/pulumi/pulumi-kubernetes.svg?token=eHg7Zp5zdDDJfTjY8ejq&branch=master)](https://travis-ci.com/pulumi/pulumi-kubernetes) [![Slack](http://www.pulumi.com/images/docs/badges/slack.svg)](https://slack.pulumi.com) [![NPM
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @pulumi/kubernetes |
 | Keywords           | pulumi, kubernetes |
-| # releases         | 431 |
-| # dependents       | 13 |
-| # downloads        | 139126 |
+| # releases         | 506 |
+| # dependents       | 29 |
+| # downloads        | 627189 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://pulumi.io)
+- [Homepage](https://pulumi.com)
 - [Bugs](https://github.com/pulumi/pulumi-kubernetes/issues)
 - [Repository](https://github.com/pulumi/pulumi-kubernetes)
 - [Npm](https://www.npmjs.com/package/%40pulumi%2Fkubernetes)

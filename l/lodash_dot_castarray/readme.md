@@ -11,8 +11,8 @@ The lodash method `_.castArray` exported as a module.
 | Full name          | lodash.castarray |
 | Keywords           | lodash-modularized, castarray |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 5046224 |
+| # dependents       | 26 |
+| # downloads        | 6027256 |
 | # stars            | 0 |
 
 ## Links

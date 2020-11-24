@@ -2,14 +2,14 @@ package typings.sharepoint.Srch
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UserActionType extends js.Object
-
 @JSGlobal("Srch.UserActionType")
 @js.native
 object UserActionType extends js.Object {
+  
   @js.native
   sealed trait filterLanguage extends UserActionType
   
@@ -27,6 +27,4 @@ object UserActionType extends js.Object {
   
   @js.native
   sealed trait sort extends UserActionType
-  
 }
-

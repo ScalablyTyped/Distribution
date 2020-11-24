@@ -3,7 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.IASTToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "GetAccessor")
 @js.native
@@ -17,4 +17,3 @@ class GetAccessor protected ()
     block: typings.typescriptServices.TypeScript.Block
   ) = this()
 }
-

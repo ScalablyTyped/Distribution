@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/civicinfo/v2", "civicinfo_v2.Resource$Elections")
 @js.native
 class ResourceElections protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * civicinfo.elections.electionQuery
     * @desc List of available elections to query.
@@ -44,6 +46,7 @@ class ResourceElections protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaElectionsQueryResponse]
   ): Unit = js.native
+  
   /**
     * civicinfo.elections.voterInfoQuery
     * @desc Looks up information relevant to a voter based on the voter's
@@ -81,4 +84,3 @@ class ResourceElections protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVoterInfoResponse]
   ): Unit = js.native
 }
-

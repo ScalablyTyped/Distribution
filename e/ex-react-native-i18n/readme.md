@@ -10,9 +10,9 @@ Exponentisation of => React Native and I18n.js integration
 | ------------------ | :-------------: |
 | Full name          | ex-react-native-i18n |
 | Keywords           | react-native, react-component, ios, i18n, expo, exponent, exponentjs |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 17452 |
+| # releases         | 3 |
+| # dependents       | 4 |
+| # downloads        | 18897 |
 | # stars            | 0 |
 
 ## Links

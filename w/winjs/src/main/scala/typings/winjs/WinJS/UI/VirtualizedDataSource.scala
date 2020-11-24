@@ -2,13 +2,14 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base class for a custom IListDataSource.
   **/
 @js.native
 trait VirtualizedDataSource[T] extends js.Object {
+  
   //#endregion Constructors
   //#region Events
   //#endregion Events
@@ -21,6 +22,7 @@ trait VirtualizedDataSource[T] extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -28,6 +30,7 @@ trait VirtualizedDataSource[T] extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for. See the VirtualizedDataSource object page for a list of events.
@@ -37,4 +40,3 @@ trait VirtualizedDataSource[T] extends js.Object {
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "transpile")
 @js.native
 object transpile extends js.Object {
+  
   def apply(input: java.lang.String): java.lang.String = js.native
   def apply(
     input: java.lang.String,
@@ -92,4 +93,3 @@ object transpile extends js.Object {
     moduleName: java.lang.String
   ): java.lang.String = js.native
 }
-

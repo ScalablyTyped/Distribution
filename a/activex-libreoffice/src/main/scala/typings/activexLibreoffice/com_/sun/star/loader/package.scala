@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object loader {
+  
   /**
     * indicates an error during component activation
     *
@@ -15,6 +16,7 @@ package object loader {
     * classpath, or a missing java installation. The Message should contain some more detailed explanations.
     */
   type CannotActivateFactoryException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * Makes it possible to access services accessible via a `UnoUrlResolver` E.g., instantiation of services in another process. This service is still in an
     * experimental state and should not be used in a production environment.
@@ -26,6 +28,7 @@ package object loader {
     * `SingleServiceFactory` resolver = a `UnoUrlResolver` service, which is used to resolve the link
     */
   type Dynamic = typings.activexLibreoffice.com_.sun.star.loader.XImplementationLoader
+  
   /**
     * Allows to access a java component stored with a .jar file.
     *
@@ -33,6 +36,7 @@ package object loader {
     * be absolute file urls.
     */
   type Java = typings.activexLibreoffice.com_.sun.star.loader.XImplementationLoader
+  
   /**
     * the same as {@link com.sun.star.loader.Java} .
     *
@@ -41,6 +45,7 @@ package object loader {
     * @deprecated Deprecated
     */
   type Java2 = typings.activexLibreoffice.com_.sun.star.loader.XImplementationLoader
+  
   /**
     * Allows to access a native component stored in a shared library.
     *

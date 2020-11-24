@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Testers")
 @js.native
 class ResourceEditsTesters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.testers.get
     * @alias androidpublisher.edits.testers.get
@@ -42,6 +44,7 @@ class ResourceEditsTesters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTesters]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.testers.patch
     * @alias androidpublisher.edits.testers.patch
@@ -72,6 +75,7 @@ class ResourceEditsTesters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTesters]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.testers.update
     * @alias androidpublisher.edits.testers.update
@@ -103,4 +107,3 @@ class ResourceEditsTesters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTesters]
   ): Unit = js.native
 }
-

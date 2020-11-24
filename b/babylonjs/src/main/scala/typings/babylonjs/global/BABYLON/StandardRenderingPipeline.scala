@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StandardRenderingPipeline")
 @js.native
@@ -29,29 +29,20 @@ class StandardRenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
     ratio: Double,
-    originalPostProcess: Nullable[typings.babylonjs.BABYLON.PostProcess],
+    originalPostProcess: js.UndefOr[Nullable[typings.babylonjs.BABYLON.PostProcess]],
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]
   ) = this()
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.StandardRenderingPipeline")
 @js.native
 object StandardRenderingPipeline extends js.Object {
+  
   /**
     * Luminance steps
     */
   var LuminanceSteps: Double = js.native
+  
   /**
     * Parse the serialized pipeline
     * @param source Source pipeline.
@@ -61,4 +52,3 @@ object StandardRenderingPipeline extends js.Object {
     */
   def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.StandardRenderingPipeline = js.native
 }
-

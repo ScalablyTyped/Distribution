@@ -9,20 +9,26 @@ import typings.jestWatcher.typesMod.UpdateConfigCallback
 import typings.jestWatcher.typesMod.UsageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jest/core/build/plugins/test_name_pattern", JSImport.Namespace)
+@JSImport("@jest/core/build/plugins/TestNamePattern", JSImport.Namespace)
 @js.native
 object testNamePatternMod extends js.Object {
+  
   @js.native
   trait TestNamePatternPlugin extends BaseWatchPlugin {
+    
     var _prompt: Prompt = js.native
-    @JSName("isInternal")
-    var isInternal_TestNamePatternPlugin: `true` = js.native
+    
     @JSName("getUsageInfo")
     def getUsageInfo_MTestNamePatternPlugin(): UsageData = js.native
+    
+    @JSName("isInternal")
+    var isInternal_TestNamePatternPlugin: `true` = js.native
+    
     @JSName("onKey")
     def onKey_MTestNamePatternPlugin(key: String): Unit = js.native
+    
     @JSName("run")
     def run_MTestNamePatternPlugin(globalConfig: GlobalConfig, updateConfigAndRun: UpdateConfigCallback): js.Promise[Unit] = js.native
   }
@@ -31,6 +37,4 @@ object testNamePatternMod extends js.Object {
   class default protected () extends TestNamePatternPlugin {
     def this(options: Stdin) = this()
   }
-  
 }
-

@@ -10,9 +10,9 @@ Fast, flexible, simple data tables in React
 | ------------------ | :-------------: |
 | Full name          | reactable |
 | Keywords           | react-component, react, table, data-tables |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 385841 |
+| # downloads        | 412974 |
 | # stars            | 5 |
 
 ## Links

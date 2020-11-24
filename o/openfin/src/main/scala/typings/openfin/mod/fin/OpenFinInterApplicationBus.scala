@@ -2,7 +2,7 @@ package typings.openfin.mod.fin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * InterApplicationBus
@@ -10,14 +10,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OpenFinInterApplicationBus extends js.Object {
+  
   /**
     * Adds a listener that gets called when applications subscribe to the current application's messages.
     */
   def addSubscribeListener(listener: js.Function3[/* uuid */ String, /* topic */ String, /* name */ String, Unit]): Unit = js.native
+  
   /**
     * Adds a listener that gets called when applications unsubscribe to the current application's messages.
     */
   def addUnsubscribeListener(listener: js.Function3[/* uuid */ String, /* topic */ String, /* name */ String, Unit]): Unit = js.native
+  
   /**
     * Publishes a message to all applications running on OpenFin Runtime that are subscribed to the specified topic.
     */
@@ -35,14 +38,17 @@ trait OpenFinInterApplicationBus extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Removes a previously registered subscribe listener.
     */
   def removeSubscribeListener(listener: js.Function3[/* uuid */ String, /* topic */ String, /* name */ String, Unit]): Unit = js.native
+  
   /**
     * Removes a previously registered unsubscribe listener.
     */
   def removeUnsubscribeListener(listener: js.Function3[/* uuid */ String, /* topic */ String, /* name */ String, Unit]): Unit = js.native
+  
   /**
     * Sends a message to a specific application on a specific topic.
     */
@@ -86,6 +92,7 @@ trait OpenFinInterApplicationBus extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Subscribes to messages from the specified application on the specified topic. If the subscription is for a uuid, [name],
     * topic combination that has already been published to upon subscription you will receive the last 20 missed messages in the order they were published.
@@ -144,6 +151,7 @@ trait OpenFinInterApplicationBus extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Unsubscribes to messages from the specified application on the specified topic.
     */
@@ -202,4 +210,3 @@ trait OpenFinInterApplicationBus extends js.Object {
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
 }
-

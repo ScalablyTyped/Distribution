@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.beforeunload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_beforeunload extends js.Object {
+  
   def apply(
     `type`: beforeunload,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, _]
@@ -25,4 +26,3 @@ object removeEventListener_beforeunload extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

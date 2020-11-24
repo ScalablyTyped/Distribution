@@ -2,7 +2,7 @@ package typings.memcached.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memcached", JSImport.Namespace)
 @js.native
@@ -15,10 +15,9 @@ class ^ protected () extends Memcached {
   def this(location: Location) = this()
   def this(location: Location, options: typings.memcached.mod.options) = this()
 }
-
 @JSImport("memcached", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var config: options = js.native
 }
-

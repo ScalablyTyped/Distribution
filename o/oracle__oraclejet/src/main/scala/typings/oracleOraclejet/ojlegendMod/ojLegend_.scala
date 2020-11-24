@@ -9,7 +9,6 @@ import typings.oracleOraclejet.ojlegendMod.ojLegend.ItemContext
 import typings.oracleOraclejet.ojlegendMod.ojLegend.NodeContext
 import typings.oracleOraclejet.ojlegendMod.ojLegend.PreferredSize
 import typings.oracleOraclejet.ojlegendMod.ojLegend.SectionContext
-import typings.oracleOraclejet.ojlegendMod.ojLegend.ojDrill
 import typings.oracleOraclejet.oracleOraclejetStrings.as
 import typings.oracleOraclejet.oracleOraclejetStrings.asChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.asNeeded
@@ -39,6 +38,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.hoverBehaviorDelayChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.middle
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.off
+import typings.oracleOraclejet.oracleOraclejetStrings.ojDrill
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.orientation
 import typings.oracleOraclejet.oracleOraclejetStrings.orientationChanged
@@ -60,45 +60,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]] {
-  var as: String = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var drilling: on | off = js.native
-  var expanded: KeySet[K] | Null = js.native
-  var halign: center | end | start = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var hideAndShowBehavior: on | off = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var hoverBehaviorDelay: Double = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K] | Null], _]) | Null = js.native
-  var onHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[center | end | start], _]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHideAndShowBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
-  var onScrollingChanged: (js.Function1[/* event */ JetElementCustomEvent[off | asNeeded], _]) | Null = js.native
-  var onSymbolHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onSymbolWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onTextStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onValignChanged: (js.Function1[/* event */ JetElementCustomEvent[middle | bottom | top], _]) | Null = js.native
-  var orientation: horizontal | vertical = js.native
-  var scrolling: off | asNeeded = js.native
-  var symbolHeight: Double = js.native
-  var symbolWidth: Double = js.native
-  var textStyle: js.UndefOr[js.Object] = js.native
-  @JSName("translations")
-  var translations_ojLegend_ : LabelAndValue = js.native
-  var valign: middle | bottom | top = js.native
+  
   def addEventListener(
     `type`: drillingChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], _]
@@ -238,13 +204,21 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _]
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojlegendMod.ojLegend.ojDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _],
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojlegendMod.ojLegend.ojDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -280,9 +254,21 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[js.Object]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var as: String = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var drilling: on | off = js.native
+  
+  var expanded: KeySet[K] | Null = js.native
+  
   def getContextByNode(node: Element): NodeContext | Null = js.native
+  
   def getItem(subIdPath: js.Array[_]): ItemContext | Null = js.native
+  
   def getPreferredSize(): PreferredSize | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
@@ -315,8 +301,61 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
   def getProperty_textStyle(property: textStyle): js.UndefOr[js.Object] = js.native
   @JSName("getProperty")
   def getProperty_valign(property: valign): middle | bottom | top = js.native
+  
   def getSection(subIdPath: js.Array[_]): SectionContext | Null = js.native
+  
+  var halign: center | end | start = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var hideAndShowBehavior: on | off = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var hoverBehaviorDelay: Double = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K] | Null], _]) | Null = js.native
+  
+  var onHalignChanged: (js.Function1[/* event */ JetElementCustomEvent[center | end | start], _]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHideAndShowBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojlegendMod.ojLegend.ojDrill, _]) | Null = js.native
+  
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+  
+  var onScrollingChanged: (js.Function1[/* event */ JetElementCustomEvent[off | asNeeded], _]) | Null = js.native
+  
+  var onSymbolHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onSymbolWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onTextStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onValignChanged: (js.Function1[/* event */ JetElementCustomEvent[middle | bottom | top], _]) | Null = js.native
+  
+  var orientation: horizontal | vertical = js.native
+  
+  var scrolling: off | asNeeded = js.native
+  
   def setProperties(properties: ojLegendSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: drilling, value: off): Unit = js.native
   def setProperty(property: drilling, value: on): Unit = js.native
   def setProperty(property: halign, value: center): Unit = js.native
@@ -359,5 +398,15 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
   def setProperty_textStyle(property: textStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
+  
+  var symbolHeight: Double = js.native
+  
+  var symbolWidth: Double = js.native
+  
+  var textStyle: js.UndefOr[js.Object] = js.native
+  
+  @JSName("translations")
+  var translations_ojLegend_ : LabelAndValue = js.native
+  
+  var valign: middle | bottom | top = js.native
 }
-

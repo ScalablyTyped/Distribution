@@ -3,7 +3,7 @@ package typings.generateJsonWebpackPlugin.mod
 import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("generate-json-webpack-plugin", JSImport.Namespace)
 @js.native
@@ -29,4 +29,3 @@ class ^ protected () extends Plugin {
     space: Double
   ) = this()
 }
-

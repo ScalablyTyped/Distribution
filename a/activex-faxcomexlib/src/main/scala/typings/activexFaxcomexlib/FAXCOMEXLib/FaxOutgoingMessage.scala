@@ -3,28 +3,35 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutgoingMessage Class */
 @js.native
 trait FaxOutgoingMessage extends IFaxOutgoingMessage {
+  
   @JSName("FAXCOMEXLib.FaxOutgoingMessage_typekey")
   var FAXCOMEXLibDotFaxOutgoingMessage_typekey: FaxOutgoingMessage = js.native
+  
   /** Has Cover page */
   val HasCoverPage: Boolean = js.native
+  
   /** Read flag on the message */
   var Read: Boolean = js.native
+  
   /** Address of the receipt */
   val ReceiptAddress: String = js.native
+  
   /** Type of the receipt */
   val ReceiptType: FAX_RECEIPT_TYPE_ENUM = js.native
+  
   /** Refresh the object */
   def Refresh(): Unit = js.native
+  
   /** Save the object */
   def Save(): Unit = js.native
 }
-
 object FaxOutgoingMessage {
+  
   @scala.inline
   def apply(
     CSID: String,
@@ -58,32 +65,41 @@ object FaxOutgoingMessage {
     __obj.updateDynamic("FAXCOMEXLib.FaxOutgoingMessage_typekey")(FAXCOMEXLibDotFaxOutgoingMessage_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaxOutgoingMessage]
   }
+  
   @scala.inline
   implicit class FaxOutgoingMessageOps[Self <: FaxOutgoingMessage] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFAXCOMEXLibDotFaxOutgoingMessage_typekey(value: FaxOutgoingMessage): Self = this.set("FAXCOMEXLib.FaxOutgoingMessage_typekey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHasCoverPage(value: Boolean): Self = this.set("HasCoverPage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRead(value: Boolean): Self = this.set("Read", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReceiptAddress(value: String): Self = this.set("ReceiptAddress", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReceiptType(value: FAX_RECEIPT_TYPE_ENUM): Self = this.set("ReceiptType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
   }
-  
 }
-

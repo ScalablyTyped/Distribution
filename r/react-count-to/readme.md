@@ -12,7 +12,7 @@ Animated counter component for React.js
 | Keywords           | React.js, react-component |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 56315 |
+| # downloads        | 76910 |
 | # stars            | 1 |
 
 ## Links

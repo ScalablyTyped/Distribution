@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,86 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassImage extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief查询和设定绘图时是否计算 alpha 层，缺省为 true
-    * 
-    * 
-    * @type Boolean
-    */
-  var alphaBlending: Boolean = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询图像颜色表内的颜色总数
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var colorsTotal: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询图像来源格式，结果为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var format: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询图像高度
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var height: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设定图像是否渐进式，仅支持 jpeg 格式时
-    * 
-    * 
-    * @type Boolean
-    */
-  var progressive: Boolean = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设定指定的颜色为透明色
-    * 
-    * 
-    * @type Integer
-    */
-  var transparent: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询图像类型，结果为 gd.TRUECOLOR, gd.PALETTE
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var `type`: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询图像宽度
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var width: Double = js.native
+  
   /**
     * 
     * @brief 根据给定的矩阵，对当前图像进行仿射
@@ -151,6 +72,18 @@ trait ClassImage extends ClassObject {
   def affine(affine: js.Array[_], x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): ClassImage = js.native
   def affine(affine: js.Array[_], x: Double, y: Double, width: Double): ClassImage = js.native
   def affine(affine: js.Array[_], x: Double, y: Double, width: Double, height: Double): ClassImage = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief查询和设定绘图时是否计算 alpha 层，缺省为 true
+    * 
+    * 
+    * @type Boolean
+    */
+  var alphaBlending: Boolean = js.native
+  
   /**
     * 
     * @brief 画一个扇形
@@ -166,6 +99,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def arc(x: Double, y: Double, width: Double, height: Double, start: Double, end: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 设定绘图的剪切窗口，设定后，所有的绘制将被剪切在窗口内部
@@ -178,6 +112,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def clip(x1: Double, y1: Double, x2: Double, y2: Double): Unit = js.native
+  
   /**
     * 
     * @brief 为指定的颜色申请一个颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgb 编码数值
@@ -200,6 +135,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorAllocate(red: Double, green: Double, blue: Double): Double = js.native
+  
   /**
     * 
     * @brief 为指定的颜色及透明申请一个颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgba 编码数值
@@ -223,6 +159,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorAllocateAlpha(red: Double, green: Double, blue: Double, alpha: Double): Double = js.native
+  
   /**
     * 
     * @brief 为指定的颜色查找一个最接近的颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgb 编码数值
@@ -245,6 +182,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorClosest(red: Double, green: Double, blue: Double): Double = js.native
+  
   /**
     * 
     * @brief 为指定的颜色及透明查找一个最接近的颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgba 编码数值
@@ -268,6 +206,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorClosestAlpha(red: Double, green: Double, blue: Double, alpha: Double): Double = js.native
+  
   /**
     * 
     * @brief 为指定的颜色查找一个最接近的颜色号，此方法使用 Hue/White/Black 计算查找最接近颜色，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgb 编码数值
@@ -290,6 +229,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorClosestHWB(red: Double, green: Double, blue: Double): Double = js.native
+  
   /**
     * 
     * @brief 释放指定的颜色号，释放的颜色号将会被再次申请后替换
@@ -299,6 +239,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorDeallocate(color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 查找指定的颜色对应的颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgb 编码数值
@@ -321,6 +262,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorExact(red: Double, green: Double, blue: Double): Double = js.native
+  
   /**
     * 
     * @brief 查找指定的颜色及透明对应的颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgba 编码数值
@@ -344,6 +286,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorExactAlpha(red: Double, green: Double, blue: Double, alpha: Double): Double = js.native
+  
   /**
     * 
     * @brief 替换图像中指定的颜色为新颜色
@@ -354,6 +297,7 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def colorReplace(src: Double, dst: Double): Unit = js.native
+  
   /**
     * 
     * @brief 查找指定的颜色对应的颜色号，如果颜色不存在，则为其申请一个新颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgb 编码数值
@@ -376,6 +320,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorResolve(red: Double, green: Double, blue: Double): Double = js.native
+  
   /**
     * 
     * @brief 查找指定的颜色及透明对应的颜色号，如果颜色不存在，则为其申请一个新颜色号，对于 gd.PALETTE 图像，颜色号为调色板索引，对于 gd.TRUECOLOR 图像，颜色号为 rgba 编码数值
@@ -399,6 +344,18 @@ trait ClassImage extends ClassObject {
     * 
     */
   def colorResolveAlpha(red: Double, green: Double, blue: Double, alpha: Double): Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询图像颜色表内的颜色总数
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var colorsTotal: Double = js.native
+  
   /**
     * 
     * @brief 转换当前图像类型
@@ -409,6 +366,7 @@ trait ClassImage extends ClassObject {
     */
   def convert(): Unit = js.native
   def convert(color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 从一个图像中复制一个区域到指定的位置
@@ -432,6 +390,7 @@ trait ClassImage extends ClassObject {
     width: Double,
     height: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 从一个图像中复制一个区域覆盖到指定的位置
@@ -457,6 +416,7 @@ trait ClassImage extends ClassObject {
     height: Double,
     percent: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 从一个图像中复制一个区域的灰度覆盖到指定的位置
@@ -482,6 +442,7 @@ trait ClassImage extends ClassObject {
     height: Double,
     percent: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 将一个图像中的一个区域拉伸后复制到指定的位置，不同与 copyResized，此方法拉伸时会对图像进行抖动
@@ -509,6 +470,7 @@ trait ClassImage extends ClassObject {
     srcW: Double,
     srcH: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 将一个图像中的一个区域拉伸后复制到指定的位置
@@ -536,6 +498,7 @@ trait ClassImage extends ClassObject {
     srcW: Double,
     srcH: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 将一个图像中的一个区域旋转后复制到指定的位置
@@ -561,6 +524,7 @@ trait ClassImage extends ClassObject {
     height: Double,
     angle: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 剪切图像的一部分为一个新的图像
@@ -574,6 +538,7 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def crop(x: Double, y: Double, width: Double, height: Double): ClassImage = js.native
+  
   /**
     * 
     * @brief 画一个椭圆
@@ -587,6 +552,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def ellipse(x: Double, y: Double, width: Double, height: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 从指定的点开始填充封闭区域
@@ -598,6 +564,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def fill(x: Double, y: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 从指定的点开始在指定颜色的边框内填充封闭区域
@@ -610,6 +577,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def fillToBorder(x: Double, y: Double, borderColor: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 画一个填充扇形
@@ -636,6 +604,7 @@ trait ClassImage extends ClassObject {
     color: Double,
     style: Double
   ): Unit = js.native
+  
   /**
     * 
     * @brief 画一个填充的椭圆
@@ -649,6 +618,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def filledEllipse(x: Double, y: Double, width: Double, height: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 根据给定的点绘制一个填充多边形
@@ -659,6 +629,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def filledPolygon(points: js.Array[_], color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 在指定的位置画一个填充的矩形
@@ -672,6 +643,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def filledRectangle(x1: Double, y1: Double, x2: Double, y2: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 把过滤器 filterType应用到图像上，根据过滤器类型传入所需参数
@@ -737,6 +709,7 @@ trait ClassImage extends ClassObject {
   def filter(filterType: Double, arg1: Double, arg2: Double, arg3: js.UndefOr[scala.Nothing], arg4: Double): Unit = js.native
   def filter(filterType: Double, arg1: Double, arg2: Double, arg3: Double): Unit = js.native
   def filter(filterType: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double): Unit = js.native
+  
   /**
     * 
     * @brief 镜像当前图像
@@ -747,6 +720,18 @@ trait ClassImage extends ClassObject {
     */
   def flip(): Unit = js.native
   def flip(dir: Double): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询图像来源格式，结果为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var format: Double = js.native
+  
   /**
     * 
     * @brief 对当前图像进行高斯模糊处理
@@ -756,6 +741,7 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def gaussianBlur(radius: Double): Unit = js.native
+  
   /**
     * 
     * @brief 按照指定的格式返回图像数据
@@ -770,6 +756,7 @@ trait ClassImage extends ClassObject {
   def getData(format: js.UndefOr[scala.Nothing], quality: Double): ClassBuffer = js.native
   def getData(format: Double): ClassBuffer = js.native
   def getData(format: Double, quality: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 查询指定位置点的颜色
@@ -781,6 +768,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def getPixel(x: Double, y: Double): Double = js.native
+  
   /**
     * 
     * @brief 查询指定位置点的真彩色颜色
@@ -792,6 +780,18 @@ trait ClassImage extends ClassObject {
     * 
     */
   def getTrueColorPixel(x: Double, y: Double): Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询图像高度
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var height: Double = js.native
+  
   /**
     * 
     * @brief 在指定的位置画一条线
@@ -805,6 +805,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def line(x1: Double, y1: Double, x2: Double, y2: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 根据给定的点绘制一个开放多边形
@@ -815,6 +816,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def openPolygon(points: js.Array[_], color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 根据给定的点绘制一个多边形
@@ -825,6 +827,18 @@ trait ClassImage extends ClassObject {
     * 
     */
   def polygon(points: js.Array[_], color: Double): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设定图像是否渐进式，仅支持 jpeg 格式时
+    * 
+    * 
+    * @type Boolean
+    */
+  var progressive: Boolean = js.native
+  
   /**
     * 
     * @brief 在指定的位置画一个矩形
@@ -838,6 +852,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def rectangle(x1: Double, y1: Double, x2: Double, y2: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 根据图像拉伸生成一个新尺寸的图像
@@ -849,6 +864,7 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def resample(width: Double, height: Double): ClassImage = js.native
+  
   /**
     * 
     * @brief 旋转当前图像
@@ -858,6 +874,7 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def rotate(dir: Double): Unit = js.native
+  
   /**
     * 
     * @brief 按照指定的格式将图像数据存入指定文件，文件将被强制覆盖
@@ -886,6 +903,7 @@ trait ClassImage extends ClassObject {
   def save(stm: ClassStream, format: js.UndefOr[scala.Nothing], quality: Double): Unit = js.native
   def save(stm: ClassStream, format: Double): Unit = js.native
   def save(stm: ClassStream, format: Double, quality: Double): Unit = js.native
+  
   /**
     * 
     * @brief 在指定位置画一个点
@@ -897,6 +915,7 @@ trait ClassImage extends ClassObject {
     * 
     */
   def setPixel(x: Double, y: Double, color: Double): Unit = js.native
+  
   /**
     * 
     * @brief 设定画线的宽度，line, rectangle, arc 等方法画线时缺省宽度为一个像素，可使用此方法改变线的宽度
@@ -906,5 +925,37 @@ trait ClassImage extends ClassObject {
     * 
     */
   def setThickness(thickness: Double): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设定指定的颜色为透明色
+    * 
+    * 
+    * @type Integer
+    */
+  var transparent: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询图像类型，结果为 gd.TRUECOLOR, gd.PALETTE
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var `type`: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询图像宽度
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var width: Double = js.native
 }
-

@@ -10,9 +10,9 @@ Middleware for handling `multipart/form-data`.
 | ------------------ | :-------------: |
 | Full name          | multer |
 | Keywords           | form, post, multipart, form-data, formdata, express, middleware |
-| # releases         | 7 |
-| # dependents       | 1543 |
-| # downloads        | 28703588 |
+| # releases         | 8 |
+| # dependents       | 1732 |
+| # downloads        | 42416776 |
 | # stars            | 278 |
 
 ## Links

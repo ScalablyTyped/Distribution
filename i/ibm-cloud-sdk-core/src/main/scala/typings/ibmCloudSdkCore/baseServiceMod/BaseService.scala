@@ -2,7 +2,7 @@ package typings.ibmCloudSdkCore.baseServiceMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ibm-cloud-sdk-core/lib/base_service", "BaseService")
 @js.native
@@ -23,7 +23,20 @@ class BaseService protected () extends js.Object {
     * @returns {BaseService}
     */
   def this(userOptions: UserOptions) = this()
+  
   var _options: BaseServiceOptions = js.native
+  
+  /**
+    * Wrapper around `sendRequest` that determines whether or not IAM tokens
+    * are being used to authenticate the request. If so, the token is
+    * retrieved by the token manager.
+    *
+    * @param {Object} parameters - service request options passed in by user
+    * @param {Function} callback - callback function to pass the response back to
+    * @returns {ReadableStream|undefined}
+    */
+  /* protected */ def createRequest(parameters: js.Any, callback: js.Any): js.Any = js.native
+  
   /**
     * Pulls credentials from VCAP_SERVICES env property that bluemix sets
     * @param {string} vcap_services_name
@@ -31,6 +44,7 @@ class BaseService protected () extends js.Object {
     * @returns {Credentials}
     */
   var getCredentialsFromBluemix: js.Any = js.native
+  
   /**
     * Pulls credentials from env properties
     *
@@ -44,26 +58,7 @@ class BaseService protected () extends js.Object {
     * @returns {Credentials}
     */
   var getCredentialsFromEnvironment: js.Any = js.native
-  /**
-    * @private
-    * @param {UserOptions} options
-    * @returns {BaseServiceOptions}
-    */
-  var initCredentials: js.Any = js.native
-  var name: String = js.native
-  var serviceDefaults: js.Object = js.native
-  var serviceVersion: String = js.native
-  var tokenManager: js.Any = js.native
-  /**
-    * Wrapper around `sendRequest` that determines whether or not IAM tokens
-    * are being used to authenticate the request. If so, the token is
-    * retrieved by the token manager.
-    *
-    * @param {Object} parameters - service request options passed in by user
-    * @param {Function} callback - callback function to pass the response back to
-    * @returns {ReadableStream|undefined}
-    */
-  /* protected */ def createRequest(parameters: js.Any, callback: js.Any): js.Any = js.native
+  
   /**
     * Retrieve this service's credentials - useful for passing to the authorization service
     *
@@ -72,6 +67,16 @@ class BaseService protected () extends js.Object {
     * @returns {Credentials}
     */
   def getServiceCredentials(): Credentials = js.native
+  
+  /**
+    * @private
+    * @param {UserOptions} options
+    * @returns {BaseServiceOptions}
+    */
+  var initCredentials: js.Any = js.native
+  
+  var name: String = js.native
+  
   /**
     * Guarantee that the next request you make will be IAM authenticated. This
     * performs any requests necessary to get a valid IAM token so that if your
@@ -82,6 +87,11 @@ class BaseService protected () extends js.Object {
     * @returns {void}
     */
   /* protected */ def preAuthenticate(callback: js.Any): Unit = js.native
+  
+  var serviceDefaults: js.Object = js.native
+  
+  var serviceVersion: String = js.native
+  
   /**
     * Set an IAM access token to use when authenticating with the service.
     * The access token should be valid and not yet expired.
@@ -95,12 +105,13 @@ class BaseService protected () extends js.Object {
     * @returns {void}
     */
   def setAccessToken(iam_access_token: String): Unit = js.native
+  
+  var tokenManager: js.Any = js.native
 }
-
 /* static members */
 @JSImport("ibm-cloud-sdk-core/lib/base_service", "BaseService")
 @js.native
 object BaseService extends js.Object {
+  
   var URL: String = js.native
 }
-

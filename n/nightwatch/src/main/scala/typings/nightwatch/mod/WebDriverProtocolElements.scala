@@ -3,10 +3,11 @@ package typings.nightwatch.mod
 import typings.nightwatch.anon.ELEMENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolElements extends js.Object {
+  
   /**
     * Search for an element on the page, starting from the document root. The located element will be returned as a web element JSON object.
     * First argument to be passed is the locator strategy, which is detailed on the [WebDriver docs](https://www.w3.org/TR/webdriver/#locator-strategies).
@@ -37,6 +38,7 @@ trait WebDriverProtocolElements extends js.Object {
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
+  
   /**
     * Get the element on the page that currently has focus. The element will be returned as a [Web Element](https://www.w3.org/TR/webdriver1/#dfn-web-elements) JSON object.
     *
@@ -53,6 +55,7 @@ trait WebDriverProtocolElements extends js.Object {
   def elementActive(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
+  
   /**
     * Search for an element on the page, starting from the identified element. The located element will be returned as a Web Element JSON object.
     *
@@ -80,6 +83,7 @@ trait WebDriverProtocolElements extends js.Object {
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
+  
   /**
     * Search for multiple elements on the page, starting from the identified element. The located element will be returned as a web element JSON objects.
     *
@@ -108,6 +112,7 @@ trait WebDriverProtocolElements extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Test if two web element IDs refer to the same DOM element.
     *
@@ -128,6 +133,7 @@ trait WebDriverProtocolElements extends js.Object {
     otherId: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
   ): this.type = js.native
+  
   /**
     * Search for multiple elements on the page, starting from the document root. The located elements will be returned as web element JSON objects.
     * First argument to be passed is the locator strategy, which is detailed on the [WebDriver docs](https://www.w3.org/TR/webdriver/#locator-strategies).
@@ -176,4 +182,3 @@ trait WebDriverProtocolElements extends js.Object {
     ]
   ): this.type = js.native
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.flow` exported as a module.
 | Full name          | lodash.flow |
 | Keywords           | lodash-modularized, flow |
 | # releases         | 0 |
-| # dependents       | 97 |
-| # downloads        | 11983415 |
+| # dependents       | 111 |
+| # downloads        | 19832980 |
 | # stars            | 1 |
 
 ## Links

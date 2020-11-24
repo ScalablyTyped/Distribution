@@ -12,7 +12,7 @@ The lodash method `_.isNative` exported as a module.
 | Keywords           | lodash-modularized, isnative |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 82049 |
+| # downloads        | 86188 |
 | # stars            | 0 |
 
 ## Links

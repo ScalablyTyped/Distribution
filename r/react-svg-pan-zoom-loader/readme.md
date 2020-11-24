@@ -12,7 +12,7 @@ This package allows us to load a SVG file remotely into react-svg-pan-zoom compo
 | Keywords           | react-svg-pan-zoom, svg-file, reactjs svg file |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 3174 |
+| # downloads        | 5087 |
 | # stars            | 0 |
 
 ## Links

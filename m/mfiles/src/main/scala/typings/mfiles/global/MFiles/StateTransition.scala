@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.IStateTransition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MFiles.StateTransition")
 @js.native
 class StateTransition () extends IStateTransition
-
 @JSGlobal("MFiles.StateTransition")
 @js.native
 object StateTransition extends Instantiable0[IStateTransition]
-

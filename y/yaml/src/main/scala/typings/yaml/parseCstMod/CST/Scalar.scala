@@ -10,7 +10,7 @@ import typings.yaml.yamlStrings.KEEP
 import typings.yaml.yamlStrings.STRIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.yaml.parseCstMod.CST.BlockValue
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.yaml.parseCstMod.CST.QuoteValue
 */
 trait Scalar extends ContentNode
-
 object Scalar {
+  
   @scala.inline
   def BlockValue(
     chomping: CLIP | KEEP | STRIP,
@@ -35,6 +35,7 @@ object Scalar {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scalar]
   }
+  
   @scala.inline
   def PlainValue(
     hasComment: Boolean,
@@ -48,6 +49,7 @@ object Scalar {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scalar]
   }
+  
   @scala.inline
   def QuoteValue(
     hasComment: Boolean,
@@ -62,4 +64,3 @@ object Scalar {
     __obj.asInstanceOf[Scalar]
   }
 }
-

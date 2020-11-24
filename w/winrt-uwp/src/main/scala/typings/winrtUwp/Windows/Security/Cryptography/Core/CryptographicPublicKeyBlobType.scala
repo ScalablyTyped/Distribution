@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CryptographicPublicKeyBlobType extends js.Object
-
 /** Specifies the type of the public key contained in a buffer. */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType")
 @js.native
 object CryptographicPublicKeyBlobType extends js.Object {
+  
   @js.native
   sealed trait bcryptEccFullPublicKey extends CryptographicPublicKeyBlobType
   
@@ -29,6 +29,4 @@ object CryptographicPublicKeyBlobType extends js.Object {
   /** This is the default value. The public key is encoded as an ASN.1 SubjectPublicKeyInfo type defined in RFC 5280 and RFC 3280. */
   @js.native
   sealed trait x509SubjectPublicKeyInfo extends CryptographicPublicKeyBlobType
-  
 }
-

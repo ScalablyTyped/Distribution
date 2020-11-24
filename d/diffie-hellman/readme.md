@@ -10,9 +10,9 @@ pure js diffie-hellman
 | ------------------ | :-------------: |
 | Full name          | diffie-hellman |
 | Keywords           | diffie, hellman, diffiehellman, dh |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 284267863 |
+| # releases         | 1 |
+| # dependents       | 53 |
+| # downloads        | 396681311 |
 | # stars            | 1 |
 
 ## Links

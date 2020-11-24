@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xadesjs" : "2.0.18"
+      "xadesjs" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "xadesjs" : "2.0.18"
+      "xadesjs" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ A javascript framework to create user interfaces
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 2615 |
+| # downloads        | 1744 |
 | # stars            | 0 |
 
 ## Links

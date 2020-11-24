@@ -11,8 +11,8 @@ Returns an object with a `negated` boolean and the `!` stripped from negation pa
 | Full name          | is-negated-glob |
 | Keywords           | extglob, glob, inverse, inverted, is, is-glob, match, micromatch, negate, negated, negation, negative, pattern, test |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 43581867 |
+| # dependents       | 10 |
+| # downloads        | 61469752 |
 | # stars            | 0 |
 
 ## Links

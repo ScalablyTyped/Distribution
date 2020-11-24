@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livebroadcasts")
 @js.native
 class ResourceLivebroadcasts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * youtube.liveBroadcasts.bind
     * @desc Binds a YouTube broadcast to a stream or removes an existing
@@ -48,6 +48,9 @@ class ResourceLivebroadcasts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveBroadcast]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * youtube.liveBroadcasts.control
     * @desc Controls the settings for a slate that can be displayed in the
@@ -83,6 +86,7 @@ class ResourceLivebroadcasts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveBroadcast]
   ): Unit = js.native
+  
   /**
     * youtube.liveBroadcasts.delete
     * @desc Deletes a broadcast.
@@ -113,6 +117,7 @@ class ResourceLivebroadcasts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.liveBroadcasts.insert
     * @desc Creates a broadcast.
@@ -144,6 +149,7 @@ class ResourceLivebroadcasts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveBroadcast]
   ): Unit = js.native
+  
   /**
     * youtube.liveBroadcasts.list
     * @desc Returns a list of YouTube broadcasts that match the API request
@@ -184,6 +190,7 @@ class ResourceLivebroadcasts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveBroadcastListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.liveBroadcasts.transition
     * @desc Changes the status of a YouTube live broadcast and initiates any
@@ -224,6 +231,7 @@ class ResourceLivebroadcasts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveBroadcast]
   ): Unit = js.native
+  
   /**
     * youtube.liveBroadcasts.update
     * @desc Updates a broadcast. For example, you could modify the broadcast
@@ -257,4 +265,3 @@ class ResourceLivebroadcasts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLiveBroadcast]
   ): Unit = js.native
 }
-

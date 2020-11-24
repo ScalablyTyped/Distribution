@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GestureSettings extends js.Object
-
 /** Specifies the interactions that are supported by an application. */
 @JSGlobal("Windows.UI.Input.GestureSettings")
 @js.native
 object GestureSettings extends js.Object {
+  
   /** Enable support for the CrossSliding interaction when using the slide or swipe gesture through a single touch contact. */
   @js.native
   sealed trait crossSlide extends GestureSettings
@@ -82,6 +82,4 @@ object GestureSettings extends js.Object {
   /** Enable support for the tap gesture. */
   @js.native
   sealed trait tap extends GestureSettings
-  
 }
-

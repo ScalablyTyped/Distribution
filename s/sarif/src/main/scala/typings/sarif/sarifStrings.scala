@@ -5,14 +5,165 @@ import typings.sarif.mod.ReportingConfiguration.level
 import typings.sarif.mod.Result.baselineState
 import typings.sarif.mod.Run.columnKind
 import typings.sarif.mod.Suppression.kind
-import typings.sarif.mod.Suppression.state
+import typings.sarif.mod.Suppression.status
 import typings.sarif.mod.ThreadFlowLocation.importance
 import typings.sarif.mod.ToolComponent.contents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sarifStrings {
+  
+  @scala.inline
+  def `2Dot1Dot0`: `2Dot1Dot0` = "2.1.0".asInstanceOf[`2Dot1Dot0`]
+  
+  @scala.inline
+  def absent: absent = "absent".asInstanceOf[absent]
+  
+  @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @scala.inline
+  def added: added = "added".asInstanceOf[added]
+  
+  @scala.inline
+  def analysisTarget: analysisTarget = "analysisTarget".asInstanceOf[analysisTarget]
+  
+  @scala.inline
+  def attachment: attachment = "attachment".asInstanceOf[attachment]
+  
+  @scala.inline
+  def debugOutputFile: debugOutputFile = "debugOutputFile".asInstanceOf[debugOutputFile]
+  
+  @scala.inline
+  def deleted: deleted = "deleted".asInstanceOf[deleted]
+  
+  @scala.inline
+  def directory: directory = "directory".asInstanceOf[directory]
+  
+  @scala.inline
+  def driver: driver = "driver".asInstanceOf[driver]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def essential: essential = "essential".asInstanceOf[essential]
+  
+  @scala.inline
+  def extension: extension = "extension".asInstanceOf[extension]
+  
+  @scala.inline
+  def external: external = "external".asInstanceOf[external]
+  
+  @scala.inline
+  def fail: fail = "fail".asInstanceOf[fail]
+  
+  @scala.inline
+  def important: important = "important".asInstanceOf[important]
+  
+  @scala.inline
+  def inSource: inSource = "inSource".asInstanceOf[inSource]
+  
+  @scala.inline
+  def informational: informational = "informational".asInstanceOf[informational]
+  
+  @scala.inline
+  def localizedData: localizedData = "localizedData".asInstanceOf[localizedData]
+  
+  @scala.inline
+  def memoryContents: memoryContents = "memoryContents".asInstanceOf[memoryContents]
+  
+  @scala.inline
+  def modified: modified = "modified".asInstanceOf[modified]
+  
+  @scala.inline
+  def `new`: `new` = "new".asInstanceOf[`new`]
+  
+  @scala.inline
+  def nonLocalizedData: nonLocalizedData = "nonLocalizedData".asInstanceOf[nonLocalizedData]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def notApplicable: notApplicable = "notApplicable".asInstanceOf[notApplicable]
+  
+  @scala.inline
+  def note: note = "note".asInstanceOf[note]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def pass: pass = "pass".asInstanceOf[pass]
+  
+  @scala.inline
+  def policy: policy = "policy".asInstanceOf[policy]
+  
+  @scala.inline
+  def referencedOnCommandLine: referencedOnCommandLine = "referencedOnCommandLine".asInstanceOf[referencedOnCommandLine]
+  
+  @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  
+  @scala.inline
+  def renamed: renamed = "renamed".asInstanceOf[renamed]
+  
+  @scala.inline
+  def responseFile: responseFile = "responseFile".asInstanceOf[responseFile]
+  
+  @scala.inline
+  def resultFile: resultFile = "resultFile".asInstanceOf[resultFile]
+  
+  @scala.inline
+  def review: review = "review".asInstanceOf[review]
+  
+  @scala.inline
+  def standardStream: standardStream = "standardStream".asInstanceOf[standardStream]
+  
+  @scala.inline
+  def taxonomy: taxonomy = "taxonomy".asInstanceOf[taxonomy]
+  
+  @scala.inline
+  def toolSpecifiedConfiguration: toolSpecifiedConfiguration = "toolSpecifiedConfiguration".asInstanceOf[toolSpecifiedConfiguration]
+  
+  @scala.inline
+  def tracedFile: tracedFile = "tracedFile".asInstanceOf[tracedFile]
+  
+  @scala.inline
+  def translation: translation = "translation".asInstanceOf[translation]
+  
+  @scala.inline
+  def unchanged: unchanged = "unchanged".asInstanceOf[unchanged]
+  
+  @scala.inline
+  def uncontrolled: uncontrolled = "uncontrolled".asInstanceOf[uncontrolled]
+  
+  @scala.inline
+  def underReview: underReview = "underReview".asInstanceOf[underReview]
+  
+  @scala.inline
+  def unicodeCodePoints: unicodeCodePoints = "unicodeCodePoints".asInstanceOf[unicodeCodePoints]
+  
+  @scala.inline
+  def unimportant: unimportant = "unimportant".asInstanceOf[unimportant]
+  
+  @scala.inline
+  def unmodified: unmodified = "unmodified".asInstanceOf[unmodified]
+  
+  @scala.inline
+  def updated: updated = "updated".asInstanceOf[updated]
+  
+  @scala.inline
+  def userSpecifiedConfiguration: userSpecifiedConfiguration = "userSpecifiedConfiguration".asInstanceOf[userSpecifiedConfiguration]
+  
+  @scala.inline
+  def utf16CodeUnits: utf16CodeUnits = "utf16CodeUnits".asInstanceOf[utf16CodeUnits]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait `2Dot1Dot0` extends js.Object
   
@@ -20,7 +171,7 @@ object sarifStrings {
   sealed trait absent extends baselineState
   
   @js.native
-  sealed trait accepted extends state
+  sealed trait accepted extends status
   
   @js.native
   sealed trait added extends roles
@@ -118,7 +269,7 @@ object sarifStrings {
   sealed trait referencedOnCommandLine extends roles
   
   @js.native
-  sealed trait rejected extends state
+  sealed trait rejected extends status
   
   @js.native
   sealed trait renamed extends roles
@@ -155,7 +306,7 @@ object sarifStrings {
   sealed trait uncontrolled extends roles
   
   @js.native
-  sealed trait underReview extends state
+  sealed trait underReview extends status
   
   @js.native
   sealed trait unicodeCodePoints extends columnKind
@@ -180,106 +331,4 @@ object sarifStrings {
     extends level
        with typings.sarif.mod.Notification.level
        with typings.sarif.mod.Result.level
-  
-  @scala.inline
-  def `2Dot1Dot0`: `2Dot1Dot0` = "2.1.0".asInstanceOf[`2Dot1Dot0`]
-  @scala.inline
-  def absent: absent = "absent".asInstanceOf[absent]
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def analysisTarget: analysisTarget = "analysisTarget".asInstanceOf[analysisTarget]
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
-  @scala.inline
-  def debugOutputFile: debugOutputFile = "debugOutputFile".asInstanceOf[debugOutputFile]
-  @scala.inline
-  def deleted: deleted = "deleted".asInstanceOf[deleted]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def driver: driver = "driver".asInstanceOf[driver]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def essential: essential = "essential".asInstanceOf[essential]
-  @scala.inline
-  def extension: extension = "extension".asInstanceOf[extension]
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
-  @scala.inline
-  def important: important = "important".asInstanceOf[important]
-  @scala.inline
-  def inSource: inSource = "inSource".asInstanceOf[inSource]
-  @scala.inline
-  def informational: informational = "informational".asInstanceOf[informational]
-  @scala.inline
-  def localizedData: localizedData = "localizedData".asInstanceOf[localizedData]
-  @scala.inline
-  def memoryContents: memoryContents = "memoryContents".asInstanceOf[memoryContents]
-  @scala.inline
-  def modified: modified = "modified".asInstanceOf[modified]
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
-  @scala.inline
-  def nonLocalizedData: nonLocalizedData = "nonLocalizedData".asInstanceOf[nonLocalizedData]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def notApplicable: notApplicable = "notApplicable".asInstanceOf[notApplicable]
-  @scala.inline
-  def note: note = "note".asInstanceOf[note]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def pass: pass = "pass".asInstanceOf[pass]
-  @scala.inline
-  def policy: policy = "policy".asInstanceOf[policy]
-  @scala.inline
-  def referencedOnCommandLine: referencedOnCommandLine = "referencedOnCommandLine".asInstanceOf[referencedOnCommandLine]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
-  @scala.inline
-  def renamed: renamed = "renamed".asInstanceOf[renamed]
-  @scala.inline
-  def responseFile: responseFile = "responseFile".asInstanceOf[responseFile]
-  @scala.inline
-  def resultFile: resultFile = "resultFile".asInstanceOf[resultFile]
-  @scala.inline
-  def review: review = "review".asInstanceOf[review]
-  @scala.inline
-  def standardStream: standardStream = "standardStream".asInstanceOf[standardStream]
-  @scala.inline
-  def taxonomy: taxonomy = "taxonomy".asInstanceOf[taxonomy]
-  @scala.inline
-  def toolSpecifiedConfiguration: toolSpecifiedConfiguration = "toolSpecifiedConfiguration".asInstanceOf[toolSpecifiedConfiguration]
-  @scala.inline
-  def tracedFile: tracedFile = "tracedFile".asInstanceOf[tracedFile]
-  @scala.inline
-  def translation: translation = "translation".asInstanceOf[translation]
-  @scala.inline
-  def unchanged: unchanged = "unchanged".asInstanceOf[unchanged]
-  @scala.inline
-  def uncontrolled: uncontrolled = "uncontrolled".asInstanceOf[uncontrolled]
-  @scala.inline
-  def underReview: underReview = "underReview".asInstanceOf[underReview]
-  @scala.inline
-  def unicodeCodePoints: unicodeCodePoints = "unicodeCodePoints".asInstanceOf[unicodeCodePoints]
-  @scala.inline
-  def unimportant: unimportant = "unimportant".asInstanceOf[unimportant]
-  @scala.inline
-  def unmodified: unmodified = "unmodified".asInstanceOf[unmodified]
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
-  @scala.inline
-  def userSpecifiedConfiguration: userSpecifiedConfiguration = "userSpecifiedConfiguration".asInstanceOf[userSpecifiedConfiguration]
-  @scala.inline
-  def utf16CodeUnits: utf16CodeUnits = "utf16CodeUnits".asInstanceOf[utf16CodeUnits]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

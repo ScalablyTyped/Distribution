@@ -2,7 +2,7 @@ package typings.stormReactDiagrams.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "MoveItemsAction")
 @js.native
@@ -14,4 +14,3 @@ class MoveItemsAction protected ()
     diagramEngine: typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
   ) = this()
 }
-

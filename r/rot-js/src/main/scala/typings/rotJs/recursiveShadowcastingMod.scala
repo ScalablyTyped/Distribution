@@ -3,14 +3,16 @@ package typings.rotJs
 import typings.rotJs.fovFovMod.VisibilityCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rot-js/lib/fov/recursive-shadowcasting", JSImport.Namespace)
 @js.native
 object recursiveShadowcastingMod extends js.Object {
+  
   @js.native
   trait RecursiveShadowcasting
     extends typings.rotJs.fovFovMod.default {
+    
     /**
       * Actually calculates the visibility
       * @param {int} startX The starting X coordinate
@@ -38,6 +40,7 @@ object recursiveShadowcastingMod extends js.Object {
       yy: Double,
       callback: VisibilityCallback
     ): Unit = js.native
+    
     /**
       * Render one octant (45-degree arc) of the viewshed
       * @param {int} x
@@ -47,6 +50,7 @@ object recursiveShadowcastingMod extends js.Object {
       * @param {function} callback
       */
     def _renderOctant(x: Double, y: Double, octant: js.Array[Double], R: Double, callback: VisibilityCallback): Unit = js.native
+    
     /**
       * Compute visibility for a 180-degree arc
       * @param {int} x
@@ -56,6 +60,7 @@ object recursiveShadowcastingMod extends js.Object {
       * @param {function} callback
       */
     def compute180(x: Double, y: Double, R: Double, dir: Double, callback: VisibilityCallback): Unit = js.native
+    
     /**
       * Compute visibility for a 90-degree arc
       * @param {int} x
@@ -69,6 +74,4 @@ object recursiveShadowcastingMod extends js.Object {
   
   @js.native
   class default () extends RecursiveShadowcasting
-  
 }
-

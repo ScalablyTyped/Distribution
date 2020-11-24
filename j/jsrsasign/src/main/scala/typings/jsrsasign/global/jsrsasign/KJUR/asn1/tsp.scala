@@ -16,7 +16,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for RFC 3161 Time Stamp Protocol
@@ -33,6 +33,40 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.tsp")
 @js.native
 object tsp extends js.Object {
+  
+  /**
+    * parse hexadecimal string of MessageImprint
+    * @param hexadecimal string of MessageImprint
+    * @return JSON object of parsed parameters
+    * @description
+    * This method parses a hexadecimal string of MessageImprint
+    * and returns parsed their fields:
+    * @example
+    * var json = KJUR.asn1.tsp.TSPUtil.parseMessageImprint("302602...");
+    * // resulted DUMP of above 'json':
+    * {hashAlg: 'sha256',          // MessageImprint hashAlg
+    *  hashValue: 'a1a2a3a4...'}   // MessageImprint hashValue
+    */
+  def parseMessageImprint(miHex: String): typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint = js.native
+  
+  /**
+    * parse hexadecimal string of TimeStampReq
+    * @param hexadecimal string of TimeStampReq
+    * @return JSON object of parsed parameters
+    * @description
+    * This method parses a hexadecimal string of TimeStampReq
+    * and returns parsed their fields:
+    * @example
+    * var json = KJUR.asn1.tsp.TSPUtil.parseTimeStampReq("302602...");
+    * // resulted DUMP of above 'json':
+    * {mi: {hashAlg: 'sha256',          // MessageImprint hashAlg
+    *       hashValue: 'a1a2a3a4...'},  // MessageImprint hashValue
+    *  policy: '1.2.3.4.5',             // tsaPolicy (OPTION)
+    *  nonce: '9abcf318...',            // nonce (OPTION)
+    *  certreq: true}                   // certReq (OPTION)
+    */
+  def parseTimeStampReq(reqHex: String): Certreq = js.native
+  
   /**
     * abstract class for TimeStampToken generator
     * @param params associative array of parameters
@@ -125,6 +159,12 @@ object tsp extends js.Object {
     def this(params: IntegerParam) = this()
     def this(params: NameParam) = this()
   }
+  /* static members */
+  @js.native
+  object PKIFailureInfo extends js.Object {
+    
+    val valueList: AddInfoNotAvailable = js.native
+  }
   
   /**
     * class for TSP PKIFreeText ASN.1 object
@@ -160,6 +200,12 @@ object tsp extends js.Object {
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: NameParam) = this()
   }
+  /* static members */
+  @js.native
+  object PKIStatus extends js.Object {
+    
+    val valueList: Granted = js.native
+  }
   
   /**
     * class for TSP PKIStatusInfo ASN.1 object
@@ -187,6 +233,20 @@ object tsp extends js.Object {
   class SimpleTSAAdapter ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.SimpleTSAAdapter {
     def this(initParams: SigAlg) = this()
+  }
+  
+  @js.native
+  object TSPUtil extends js.Object {
+    
+    /**
+      * generate TimeStampToken ASN.1 object specified by JSON parameters
+      * @param param JSON parameter to generate TimeStampToken
+      * @return object just generated
+      * @description
+      * @example
+      */
+    def newTimeStampToken(): SignedData = js.native
+    def newTimeStampToken(param: SignerCert): SignedData = js.native
   }
   
   /**
@@ -258,62 +318,4 @@ object tsp extends js.Object {
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: Status) = this()
   }
-  
-  /**
-    * parse hexadecimal string of MessageImprint
-    * @param hexadecimal string of MessageImprint
-    * @return JSON object of parsed parameters
-    * @description
-    * This method parses a hexadecimal string of MessageImprint
-    * and returns parsed their fields:
-    * @example
-    * var json = KJUR.asn1.tsp.TSPUtil.parseMessageImprint("302602...");
-    * // resulted DUMP of above 'json':
-    * {hashAlg: 'sha256',          // MessageImprint hashAlg
-    *  hashValue: 'a1a2a3a4...'}   // MessageImprint hashValue
-    */
-  def parseMessageImprint(miHex: String): typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint = js.native
-  /**
-    * parse hexadecimal string of TimeStampReq
-    * @param hexadecimal string of TimeStampReq
-    * @return JSON object of parsed parameters
-    * @description
-    * This method parses a hexadecimal string of TimeStampReq
-    * and returns parsed their fields:
-    * @example
-    * var json = KJUR.asn1.tsp.TSPUtil.parseTimeStampReq("302602...");
-    * // resulted DUMP of above 'json':
-    * {mi: {hashAlg: 'sha256',          // MessageImprint hashAlg
-    *       hashValue: 'a1a2a3a4...'},  // MessageImprint hashValue
-    *  policy: '1.2.3.4.5',             // tsaPolicy (OPTION)
-    *  nonce: '9abcf318...',            // nonce (OPTION)
-    *  certreq: true}                   // certReq (OPTION)
-    */
-  def parseTimeStampReq(reqHex: String): Certreq = js.native
-  /* static members */
-  @js.native
-  object PKIFailureInfo extends js.Object {
-    val valueList: AddInfoNotAvailable = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PKIStatus extends js.Object {
-    val valueList: Granted = js.native
-  }
-  
-  @js.native
-  object TSPUtil extends js.Object {
-    /**
-      * generate TimeStampToken ASN.1 object specified by JSON parameters
-      * @param param JSON parameter to generate TimeStampToken
-      * @return object just generated
-      * @description
-      * @example
-      */
-    def newTimeStampToken(): SignedData = js.native
-    def newTimeStampToken(param: SignerCert): SignedData = js.native
-  }
-  
 }
-

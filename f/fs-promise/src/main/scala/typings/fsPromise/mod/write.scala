@@ -1,7 +1,5 @@
 package typings.fsPromise.mod
 
-import typings.fsExtra.mod.WriteResult
-import typings.node.Buffer
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
 import typings.std.DataView
@@ -16,48 +14,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-promise", "write")
 @js.native
 object write extends js.Object {
-  def apply(fd: Double, buffer: Buffer): js.Promise[WriteResult] = js.native
-  def apply(
-    fd: Double,
-    buffer: Buffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[WriteResult] = js.native
-  def apply(fd: Double, buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[WriteResult] = js.native
-  def apply(fd: Double, buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[WriteResult] = js.native
-  def apply(fd: Double, buffer: Buffer, offset: Double): js.Promise[WriteResult] = js.native
-  def apply(fd: Double, buffer: Buffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[WriteResult] = js.native
-  def apply(fd: Double, buffer: Buffer, offset: Double, length: Double): js.Promise[WriteResult] = js.native
-  def apply(
-    fd: Double,
-    buffer: Buffer,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
-  def apply(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): js.Promise[WriteResult] = js.native
-  def apply(
-    fd: Double,
-    buffer: Buffer,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Buffer,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
+  
   def apply(fd: Double, buffer: DataView): js.Promise[js.Tuple2[Double, DataView]] = js.native
   def apply(
     fd: Double,
@@ -217,7 +179,7 @@ object write extends js.Object {
     buffer: DataView,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -234,7 +196,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -242,7 +204,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -545,7 +507,12 @@ object write extends js.Object {
     buffer: Float32Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Float32Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -562,7 +529,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Float32Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -570,7 +542,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Float32Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -873,7 +850,12 @@ object write extends js.Object {
     buffer: Float64Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Float64Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -890,7 +872,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Float64Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -898,7 +885,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Float64Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1201,7 +1193,7 @@ object write extends js.Object {
     buffer: Int16Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1218,7 +1210,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1226,7 +1218,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1529,7 +1521,7 @@ object write extends js.Object {
     buffer: Int32Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1546,7 +1538,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1554,7 +1546,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1845,7 +1837,7 @@ object write extends js.Object {
     buffer: Int8Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1862,7 +1854,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -1870,7 +1862,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2173,7 +2165,12 @@ object write extends js.Object {
     buffer: Uint16Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Uint16Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2190,7 +2187,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Uint16Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2198,7 +2200,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Uint16Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2501,7 +2508,12 @@ object write extends js.Object {
     buffer: Uint32Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Uint32Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2518,7 +2530,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Uint32Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2526,7 +2543,12 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
+    callback: js.Function3[
+      (/* err */ ErrnoException) | Null, 
+      /* written */ Double, 
+      /* buffer */ Uint32Array, 
+      Unit
+    ]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2829,7 +2851,7 @@ object write extends js.Object {
     buffer: Uint8Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2846,7 +2868,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -2854,7 +2876,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
+    callback: js.Function3[(/* err */ ErrnoException) | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -3253,7 +3275,7 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      /* err */ ErrnoException | Null, 
+      (/* err */ ErrnoException) | Null, 
       /* written */ Double, 
       /* buffer */ Uint8ClampedArray, 
       Unit
@@ -3280,7 +3302,7 @@ object write extends js.Object {
     length: Double,
     position: Double,
     callback: js.Function3[
-      /* err */ ErrnoException | Null, 
+      (/* err */ ErrnoException) | Null, 
       /* written */ Double, 
       /* buffer */ Uint8ClampedArray, 
       Unit
@@ -3293,7 +3315,7 @@ object write extends js.Object {
     length: Double,
     position: Null,
     callback: js.Function3[
-      /* err */ ErrnoException | Null, 
+      (/* err */ ErrnoException) | Null, 
       /* written */ Double, 
       /* buffer */ Uint8ClampedArray, 
       Unit
@@ -3632,4 +3654,3 @@ object write extends js.Object {
   def apply[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double): js.Promise[js.Tuple2[Double, TBuffer]] = js.native
   def apply[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double, position: Double): js.Promise[js.Tuple2[Double, TBuffer]] = js.native
 }
-

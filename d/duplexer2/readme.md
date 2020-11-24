@@ -11,8 +11,8 @@ Like duplexer but using streams3
 | Full name          | duplexer2 |
 | Keywords           | duplex, duplexer, stream, stream3, join, combine |
 | # releases         | 0 |
-| # dependents       | 164 |
-| # downloads        | 158116031 |
+| # dependents       | 178 |
+| # downloads        | 183092720 |
 | # stars            | 16 |
 
 ## Links

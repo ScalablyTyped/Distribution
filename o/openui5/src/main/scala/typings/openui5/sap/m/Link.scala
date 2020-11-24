@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.core.TextAlign
 import typings.openui5.sap.ui.core.TextDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Link extends Control {
+  
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -16,6 +17,7 @@ trait Link extends Control {
     */
   def addAriaDescribedBy(vAriaDescribedBy: js.Any): Link = js.native
   def addAriaDescribedBy(vAriaDescribedBy: Control): Link = js.native
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -23,6 +25,7 @@ trait Link extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): Link = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): Link = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
     * <code>sap.m.Link</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -37,6 +40,7 @@ trait Link extends Control {
     */
   def attachPress(oData: js.Any, fnFunction: js.Any): Link = js.native
   def attachPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Link = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>press</code> event of this
     * <code>sap.m.Link</code>.The passed function and listener object must match the ones used for event
@@ -46,6 +50,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPress(fnFunction: js.Any, oListener: js.Any): Link = js.native
+  
   /**
     * Fires event <code>press</code> to attached listeners.Listeners may prevent the default action of
     * this event by using the <code>preventDefault</code>-method on the event object.
@@ -53,16 +58,19 @@ trait Link extends Control {
     * @returns Whether or not to prevent the default action
     */
   def firePress(mArguments: js.Any): Boolean = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
   def getAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>emphasized</code>.Emphasized links look visually more important
     * than regular links.Default value is <code>false</code>.
@@ -70,12 +78,14 @@ trait Link extends Control {
     * @returns Value of property <code>emphasized</code>
     */
   def getEmphasized(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Determines whether the link can be triggered by
     * the user.Default value is <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>href</code>.The link target URI. Supports standard hyperlink
     * behavior. If a JavaScript action should be triggered, this should not be set, but instead an event
@@ -83,6 +93,7 @@ trait Link extends Control {
     * @returns Value of property <code>href</code>
     */
   def getHref(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>subtle</code>.Subtle links look more like standard text than
     * like links. They should only be used to help with visual hierarchy between large data lists of
@@ -92,6 +103,7 @@ trait Link extends Control {
     * @returns Value of property <code>subtle</code>
     */
   def getSubtle(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>target</code>.Options are the standard values for window.open()
     * supported by browsers: _self, _top, _blank, _parent, _search. Alternatively, a frame name can be
@@ -99,12 +111,14 @@ trait Link extends Control {
     * @returns Value of property <code>target</code>
     */
   def getTarget(): String = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Link text to be displayed.Default value is
     * <code></code>.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>textAlign</code>.Sets the horizontal alignment of the
     * text.Default value is <code>Initial</code>.
@@ -112,6 +126,7 @@ trait Link extends Control {
     * @returns Value of property <code>textAlign</code>
     */
   def getTextAlign(): TextAlign = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.This property specifies the element's text
     * directionality with enumerated options. By default, the control inherits text direction from the
@@ -120,28 +135,33 @@ trait Link extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Width of the link (CSS-size such as % or px). When
     * it is set, this is the exact size. When left blank, the text defines the size.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>wrapping</code>.Determines whether the link text is allowed to
     * wrap when there is not sufficient space.Default value is <code>false</code>.
     * @returns Value of property <code>wrapping</code>
     */
   def getWrapping(): Boolean = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaDescribedBy from the association named <code>ariaDescribedBy</code>.
@@ -150,6 +170,7 @@ trait Link extends Control {
     */
   def removeAriaDescribedBy(vAriaDescribedBy: Double): js.Any = js.native
   def removeAriaDescribedBy(vAriaDescribedBy: Control): js.Any = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -158,6 +179,7 @@ trait Link extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>emphasized</code>.Emphasized links look visually more important
     * than regular links.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -167,6 +189,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEmphasized(bEmphasized: Boolean): Link = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Determines whether the link can be triggered by
     * the user.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -175,6 +198,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): Link = js.native
+  
   /**
     * Sets a new value for property <code>href</code>.The link target URI. Supports standard hyperlink
     * behavior. If a JavaScript action should be triggered, this should not be set, but instead an event
@@ -184,6 +208,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHref(sHref: js.Any): Link = js.native
+  
   /**
     * Sets a new value for property <code>subtle</code>.Subtle links look more like standard text than
     * like links. They should only be used to help with visual hierarchy between large data lists of
@@ -195,6 +220,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSubtle(bSubtle: Boolean): Link = js.native
+  
   /**
     * Sets a new value for property <code>target</code>.Options are the standard values for window.open()
     * supported by browsers: _self, _top, _blank, _parent, _search. Alternatively, a frame name can be
@@ -204,6 +230,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTarget(sTarget: String): Link = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Link text to be displayed.When called with a value
     * of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -212,6 +239,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): Link = js.native
+  
   /**
     * Sets a new value for property <code>textAlign</code>.Sets the horizontal alignment of the text.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -221,6 +249,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextAlign(sTextAlign: TextAlign): Link = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.This property specifies the element's text
     * directionality with enumerated options. By default, the control inherits text direction from the
@@ -231,6 +260,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextDirection(sTextDirection: TextDirection): Link = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Width of the link (CSS-size such as % or px). When
     * it is set, this is the exact size. When left blank, the text defines the size.When called with a
@@ -240,6 +270,7 @@ trait Link extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): Link = js.native
+  
   /**
     * Sets a new value for property <code>wrapping</code>.Determines whether the link text is allowed to
     * wrap when there is not sufficient space.When called with a value of <code>null</code> or
@@ -250,4 +281,3 @@ trait Link extends Control {
     */
   def setWrapping(bWrapping: Boolean): Link = js.native
 }
-

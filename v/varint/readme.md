@@ -11,8 +11,8 @@ protobuf-style varint bytes - use msb to create integer values of varying sizes
 | Full name          | varint |
 | Keywords           | varint, protobuf, encode, decode |
 | # releases         | 0 |
-| # dependents       | 143 |
-| # downloads        | 2178816 |
+| # dependents       | 192 |
+| # downloads        | 3874105 |
 | # stars            | 0 |
 
 ## Links

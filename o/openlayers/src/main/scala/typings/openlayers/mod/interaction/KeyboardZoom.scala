@@ -4,7 +4,7 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.olx.interaction.KeyboardZoomOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -41,11 +41,11 @@ import scala.scalajs.js.annotation._
 class KeyboardZoom () extends Interaction {
   def this(opt_options: KeyboardZoomOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "interaction.KeyboardZoom")
 @js.native
 object KeyboardZoom extends js.Object {
+  
   /**
     * Handles the {@link ol.MapBrowserEvent map browser event} if it was a
     * `KeyEvent`, and decides whether to zoom in or out (depending on whether the
@@ -56,4 +56,3 @@ object KeyboardZoom extends js.Object {
     */
   def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
 }
-

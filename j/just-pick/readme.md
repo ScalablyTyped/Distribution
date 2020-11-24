@@ -10,9 +10,9 @@ copy an object but with only the specified keys
 | ------------------ | :-------------: |
 | Full name          | just-pick |
 | Keywords           | object, pick, keys, no-dependencies, just |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 257372 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 71320 |
 | # stars            | 0 |
 
 ## Links

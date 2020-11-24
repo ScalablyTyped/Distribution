@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v1", "androidpublisher_v1.Resource$Purchases")
 @js.native
 class ResourcePurchases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.purchases.cancel
     * @desc Cancels a user's subscription purchase. The subscription remains
@@ -44,6 +44,9 @@ class ResourcePurchases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.purchases.get
     * @desc Checks whether a user's subscription purchase is valid and returns
@@ -76,4 +79,3 @@ class ResourcePurchases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSubscriptionPurchase]
   ): Unit = js.native
 }
-

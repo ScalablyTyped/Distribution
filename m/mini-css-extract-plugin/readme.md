@@ -1,7 +1,7 @@
 
 # Scala.js typings for mini-css-extract-plugin
 
-Typings are for version 0.9
+Typings are for version 1.2
 
 ## Library description:
 extracts CSS into separate files
@@ -10,9 +10,9 @@ extracts CSS into separate files
 | ------------------ | :-------------: |
 | Full name          | mini-css-extract-plugin |
 | Keywords           | webpack, css, extract, hmr |
-| # releases         | 18 |
-| # dependents       | 3085 |
-| # downloads        | 198378242 |
+| # releases         | 14 |
+| # dependents       | 4123 |
+| # downloads        | 342642006 |
 | # stars            | 2 |
 
 ## Links

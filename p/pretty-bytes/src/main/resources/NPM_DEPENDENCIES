@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pretty-bytes" : "5.3.0"
+      "pretty-bytes" : "5.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "pretty-bytes" : "5.3.0"
+      "pretty-bytes" : "5.4.1"
     }
   ],
   "compile-devDependencies" : [

@@ -11,8 +11,8 @@ The lodash method `_.isSafeInteger` exported as a module.
 | Full name          | lodash.issafeinteger |
 | Keywords           | lodash-modularized, issafeinteger |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 311028 |
+| # dependents       | 7 |
+| # downloads        | 532399 |
 | # stars            | 0 |
 
 ## Links

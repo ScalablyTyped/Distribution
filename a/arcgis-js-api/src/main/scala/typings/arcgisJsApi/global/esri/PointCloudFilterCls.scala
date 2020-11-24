@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.PointCloudFilterProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.PointCloudFilter")
 @js.native
@@ -16,4 +16,3 @@ class PointCloudFilterCls ()
   extends typings.arcgisJsApi.esri.PointCloudFilter {
   def this(properties: PointCloudFilterProperties) = this()
 }
-

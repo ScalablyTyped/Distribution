@@ -10,9 +10,9 @@ Concats a list of videos together using ffmpeg with sexy OpenGL transitions.
 | ------------------ | :-------------: |
 | Full name          | ffmpeg-concat |
 | Keywords           | ffmpeg, fluent-ffmpeg, opengl, gl, gl-transition, transition, concat, concatenate, video |
-| # releases         | 18 |
-| # dependents       | 1 |
-| # downloads        | 6448 |
+| # releases         | 10 |
+| # dependents       | 4 |
+| # downloads        | 11001 |
 | # stars            | 0 |
 
 ## Links

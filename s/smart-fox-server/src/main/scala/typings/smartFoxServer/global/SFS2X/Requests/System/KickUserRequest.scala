@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.KickUserRequest")
 @js.native
@@ -19,4 +19,3 @@ class KickUserRequest protected ()
   def this(userId: Double, message: js.UndefOr[scala.Nothing], delaySeconds: Double) = this()
   def this(userId: Double, message: String, delaySeconds: Double) = this()
 }
-

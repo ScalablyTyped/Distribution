@@ -2,9 +2,28 @@ package typings.reactFlatpickr
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFlatpickrStrings {
+  
+  @scala.inline
+  def a: a = "a".asInstanceOf[a]
+  
+  @scala.inline
+  def backward: backward = "backward".asInstanceOf[backward]
+  
+  @scala.inline
+  def forward: forward = "forward".asInstanceOf[forward]
+  
+  @scala.inline
+  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
+  
+  @scala.inline
+  def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
   @js.native
   sealed trait a extends js.Object
   
@@ -22,18 +41,4 @@ object reactFlatpickrStrings {
   
   @js.native
   sealed trait none extends js.Object
-  
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def backward: backward = "backward".asInstanceOf[backward]
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
-  @scala.inline
-  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
-  @scala.inline
-  def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
 }
-

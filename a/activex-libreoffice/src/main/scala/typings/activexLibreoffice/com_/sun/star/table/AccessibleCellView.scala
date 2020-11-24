@@ -17,7 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of a cell in a text document or in the page preview of a spreadsheet document. See {@link com.sun.star.sheet.AccessibleCell} for
@@ -31,8 +31,8 @@ trait AccessibleCellView
      with XAccessibleValue
      with XAccessibleSelection
      with XAccessibleEventBroadcaster
-
 object AccessibleCellView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -94,4 +94,3 @@ object AccessibleCellView {
     __obj.asInstanceOf[AccessibleCellView]
   }
 }
-

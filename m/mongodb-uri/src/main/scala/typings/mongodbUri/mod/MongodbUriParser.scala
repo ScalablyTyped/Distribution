@@ -2,12 +2,13 @@ package typings.mongodbUri.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb-uri", "MongodbUriParser")
 @js.native
 class MongodbUriParser () extends js.Object {
   def this(options: parserOptions) = this()
+  
   /**
     * Takes a URI object and returns a URI string of the form:
     *
@@ -16,6 +17,7 @@ class MongodbUriParser () extends js.Object {
     */
   def format(): String = js.native
   def format(uriObject: UriObject): String = js.native
+  
   def formatMongoose(uri: String): String = js.native
   /**
     * Takes either a URI object or string and returns a Mongoose connection string. Specifically, instead of listing all
@@ -28,6 +30,7 @@ class MongodbUriParser () extends js.Object {
     *
     */
   def formatMongoose(uri: UriObject): String = js.native
+  
   /**
     * Takes a URI of the form:
     *
@@ -38,4 +41,3 @@ class MongodbUriParser () extends js.Object {
     */
   def parse(uri: String): UriObject = js.native
 }
-

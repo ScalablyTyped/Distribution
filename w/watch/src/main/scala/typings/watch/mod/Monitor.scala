@@ -8,11 +8,13 @@ import typings.watch.watchStrings.created
 import typings.watch.watchStrings.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Monitor extends EventEmitter {
+  
   var files: StringDictionary[Stats] = js.native
+  
   @JSName("on")
   def on_changed(
     event: changed,
@@ -22,6 +24,6 @@ trait Monitor extends EventEmitter {
   def on_created(event: created, listener: js.Function2[/* f */ FileOrFiles, /* stat */ Stats, Unit]): this.type = js.native
   @JSName("on")
   def on_removed(event: removed, listener: js.Function2[/* f */ FileOrFiles, /* stat */ Stats, Unit]): this.type = js.native
+  
   def stop(): Unit = js.native
 }
-

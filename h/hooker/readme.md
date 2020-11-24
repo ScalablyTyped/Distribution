@@ -10,9 +10,9 @@ Monkey-patch (hook) functions for debugging and stuff.
 | ------------------ | :-------------: |
 | Full name          | hooker |
 | Keywords           | patch, hook, function, debug, aop |
-| # releases         | 1 |
-| # dependents       | 62 |
-| # downloads        | 25940158 |
+| # releases         | 0 |
+| # dependents       | 63 |
+| # downloads        | 28073218 |
 | # stars            | 9 |
 
 ## Links

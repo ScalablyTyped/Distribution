@@ -2,9 +2,40 @@ package typings.workerpool
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workerpoolStrings {
+  
+  @scala.inline
+  def CancellationError: CancellationError = "CancellationError".asInstanceOf[CancellationError]
+  
+  @scala.inline
+  def Proxy: Proxy = "Proxy".asInstanceOf[Proxy]
+  
+  @scala.inline
+  def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def node: node = "node".asInstanceOf[node]
+  
+  @scala.inline
+  def process: process = "process".asInstanceOf[process]
+  
+  @scala.inline
+  def thread: thread = "thread".asInstanceOf[thread]
+  
+  @scala.inline
+  def web: web = "web".asInstanceOf[web]
+  
   @js.native
   sealed trait CancellationError extends js.Object
   
@@ -34,26 +65,4 @@ object workerpoolStrings {
   
   @js.native
   sealed trait web extends js.Object
-  
-  @scala.inline
-  def CancellationError: CancellationError = "CancellationError".asInstanceOf[CancellationError]
-  @scala.inline
-  def Proxy: Proxy = "Proxy".asInstanceOf[Proxy]
-  @scala.inline
-  def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def process: process = "process".asInstanceOf[process]
-  @scala.inline
-  def thread: thread = "thread".asInstanceOf[thread]
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
 }
-

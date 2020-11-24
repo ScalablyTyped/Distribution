@@ -12,7 +12,7 @@ Receives a Coordinate, a Radius and a Number of edges and aproximates a circle b
 | Keywords           | GeoJSON, circle, polygon |
 | # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 76229 |
+| # downloads        | 108874 |
 | # stars            | 1 |
 
 ## Links

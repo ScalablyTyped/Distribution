@@ -8,7 +8,7 @@ import typings.stellarSdk.stellarSdkStrings.auth_required_flag
 import typings.stellarSdk.stellarSdkStrings.auth_revocable_flag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SetOptionsOperationResponse
@@ -16,20 +16,31 @@ trait SetOptionsOperationResponse
       setOptions, 
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.setOptions
     ] {
+  
   var clear_flags: js.Array[`1` | `2`] = js.native
+  
   var clear_flags_s: js.Array[auth_required_flag | auth_revocable_flag] = js.native
+  
   var high_threshold: js.UndefOr[Double] = js.native
+  
   var home_domain: js.UndefOr[String] = js.native
+  
   var low_threshold: js.UndefOr[Double] = js.native
+  
   var master_key_weight: js.UndefOr[Double] = js.native
+  
   var med_threshold: js.UndefOr[Double] = js.native
+  
   var set_flags: js.Array[`1` | `2`] = js.native
+  
   var set_flags_s: js.Array[auth_required_flag | auth_revocable_flag] = js.native
+  
   var signer_key: js.UndefOr[String] = js.native
+  
   var signer_weight: js.UndefOr[Double] = js.native
 }
-
 object SetOptionsOperationResponse {
+  
   @scala.inline
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -51,62 +62,86 @@ object SetOptionsOperationResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptionsOperationResponse]
   }
+  
   @scala.inline
   implicit class SetOptionsOperationResponseOps[Self <: SetOptionsOperationResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClear_flagsVarargs(value: (`1` | `2`)*): Self = this.set("clear_flags", js.Array(value :_*))
+    
     @scala.inline
     def setClear_flags(value: js.Array[`1` | `2`]): Self = this.set("clear_flags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClear_flags_sVarargs(value: (auth_required_flag | auth_revocable_flag)*): Self = this.set("clear_flags_s", js.Array(value :_*))
+    
     @scala.inline
     def setClear_flags_s(value: js.Array[auth_required_flag | auth_revocable_flag]): Self = this.set("clear_flags_s", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSet_flagsVarargs(value: (`1` | `2`)*): Self = this.set("set_flags", js.Array(value :_*))
+    
     @scala.inline
     def setSet_flags(value: js.Array[`1` | `2`]): Self = this.set("set_flags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSet_flags_sVarargs(value: (auth_required_flag | auth_revocable_flag)*): Self = this.set("set_flags_s", js.Array(value :_*))
+    
     @scala.inline
     def setSet_flags_s(value: js.Array[auth_required_flag | auth_revocable_flag]): Self = this.set("set_flags_s", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHigh_threshold(value: Double): Self = this.set("high_threshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHigh_threshold: Self = this.set("high_threshold", js.undefined)
+    
     @scala.inline
     def setHome_domain(value: String): Self = this.set("home_domain", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHome_domain: Self = this.set("home_domain", js.undefined)
+    
     @scala.inline
     def setLow_threshold(value: Double): Self = this.set("low_threshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLow_threshold: Self = this.set("low_threshold", js.undefined)
+    
     @scala.inline
     def setMaster_key_weight(value: Double): Self = this.set("master_key_weight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaster_key_weight: Self = this.set("master_key_weight", js.undefined)
+    
     @scala.inline
     def setMed_threshold(value: Double): Self = this.set("med_threshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMed_threshold: Self = this.set("med_threshold", js.undefined)
+    
     @scala.inline
     def setSigner_key(value: String): Self = this.set("signer_key", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSigner_key: Self = this.set("signer_key", js.undefined)
+    
     @scala.inline
     def setSigner_weight(value: Double): Self = this.set("signer_weight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSigner_weight: Self = this.set("signer_weight", js.undefined)
   }
-  
 }
-

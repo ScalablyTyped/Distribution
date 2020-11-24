@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Collectdtimeseries")
 @js.native
 class ResourceProjectsCollectdtimeseries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.collectdTimeSeries.create
     * @desc Stackdriver Monitoring Agent only: Creates a new time series.<aside
@@ -92,4 +94,3 @@ class ResourceProjectsCollectdtimeseries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse]
   ): Unit = js.native
 }
-

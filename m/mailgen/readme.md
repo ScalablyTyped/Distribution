@@ -11,8 +11,8 @@ Generates clean, responsive HTML e-mails for sending transactional mail.
 | Full name          | mailgen |
 | Keywords           | - |
 | # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 93777 |
+| # dependents       | 9 |
+| # downloads        | 140129 |
 | # stars            | 15 |
 
 ## Links

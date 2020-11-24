@@ -2,11 +2,10 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InputType extends js.Object
-
 /**
   * A subset of input types that fits to a simple API returning one string.Not available on purpose:
   * button, checkbox, hidden, image, password, radio, range, reset, search, submit.
@@ -14,6 +13,7 @@ sealed trait InputType extends js.Object
 @JSGlobal("sap.m.InputType")
 @js.native
 object InputType extends js.Object {
+  
   @js.native
   sealed trait Date extends InputType
   
@@ -49,6 +49,4 @@ object InputType extends js.Object {
   
   @js.native
   sealed trait Week extends InputType
-  
 }
-

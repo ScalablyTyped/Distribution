@@ -2,7 +2,7 @@ package typings.chrome.chrome.enterprise
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Enterprise Device Attributes
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.enterprise.deviceAttributes")
 @js.native
 object deviceAttributes extends js.Object
-

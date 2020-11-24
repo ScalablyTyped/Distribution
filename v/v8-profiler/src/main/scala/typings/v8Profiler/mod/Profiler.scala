@@ -2,12 +2,15 @@ package typings.v8Profiler.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Profiler extends js.Object {
+  
   def deleteAllProfiles(): Unit = js.native
+  
   def deleteAllSnapshots(): Unit = js.native
+  
   /**
     * Changes default CPU profiler sampling interval to the specified number of microseconds.
     * Default interval is 1000us.
@@ -16,6 +19,7 @@ trait Profiler extends js.Object {
     */
   def setSamplingInterval(): Unit = js.native
   def setSamplingInterval(ms: Double): Unit = js.native
+  
   /**
     * start CPU profiling.
     * name is optional argument, by default profile name will be constructed from its uid.
@@ -25,12 +29,14 @@ trait Profiler extends js.Object {
   def startProfiling(name: js.UndefOr[scala.Nothing], recsamples: Boolean): Unit = js.native
   def startProfiling(name: String): Unit = js.native
   def startProfiling(name: String, recsamples: Boolean): Unit = js.native
+  
   /**
     * returns new CPU Profile instance.
     * There is no strictly described behavior for usage without name argument.
     */
   def stopProfiling(): Profile = js.native
   def stopProfiling(name: String): Profile = js.native
+  
   /**
     * returns new HEAP Snapshot instance.
     * name is optional argument, by default snapshot name will be constructed from its uid.
@@ -38,4 +44,3 @@ trait Profiler extends js.Object {
   def takeSnapshot(): Snapshot = js.native
   def takeSnapshot(name: String): Snapshot = js.native
 }
-

@@ -6,10 +6,6 @@ import typings.oracleOraclejet.anon.ViewModel
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
-import typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionEnd
-import typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionStart
-import typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewConnected
-import typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewDisconnected
 import typings.oracleOraclejet.oracleOraclejetStrings.abort
 import typings.oracleOraclejet.oracleOraclejetStrings.animation
 import typings.oracleOraclejet.oracleOraclejetStrings.animationChanged
@@ -67,6 +63,10 @@ import typings.oracleOraclejet.oracleOraclejetStrings.mousemove
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseout
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseover
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseup
+import typings.oracleOraclejet.oracleOraclejetStrings.ojTransitionEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojTransitionStart
+import typings.oracleOraclejet.oracleOraclejetStrings.ojViewConnected
+import typings.oracleOraclejet.oracleOraclejetStrings.ojViewDisconnected
 import typings.oracleOraclejet.oracleOraclejetStrings.paste
 import typings.oracleOraclejet.oracleOraclejetStrings.pause
 import typings.oracleOraclejet.oracleOraclejetStrings.play
@@ -126,23 +126,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojModule extends JetElement[ojModuleSettableProperties] {
-  var animation: js.Object = js.native
-  var config: CleanupMode = js.native
-  var onAnimationChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onConfigChanged: (js.Function1[/* event */ JetElementCustomEvent[CleanupMode], _]) | Null = js.native
-  var onOjTransitionEnd: (js.Function1[/* event */ ojTransitionEnd, _]) | Null = js.native
-  var onOjTransitionStart: (js.Function1[/* event */ ojTransitionStart, _]) | Null = js.native
-  var onOjViewConnected: (js.Function1[/* event */ ojViewConnected, _]) | Null = js.native
-  var onOjViewDisconnected: (js.Function1[/* event */ ojViewDisconnected, _]) | Null = js.native
+  
   def addEventListener(
     `type`: animationChanged,
     listener: js.ThisFunction1[
@@ -619,46 +607,78 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojTransitionEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojTransitionEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojTransitionEnd, _]
+    `type`: ojTransitionEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionEnd, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojTransitionEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojTransitionEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojTransitionEnd, _],
+    `type`: ojTransitionEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionEnd, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojTransitionStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojTransitionStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojTransitionStart, _]
+    `type`: ojTransitionStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionStart, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojTransitionStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojTransitionStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojTransitionStart, _],
+    `type`: ojTransitionStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionStart, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewConnected(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewConnected,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewConnected, _]
+    `type`: ojViewConnected,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewConnected, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewConnected(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewConnected,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewConnected, _],
+    `type`: ojViewConnected,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewConnected, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewDisconnected(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewDisconnected,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewDisconnected, _]
+    `type`: ojViewDisconnected,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewDisconnected, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewDisconnected(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewDisconnected,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewDisconnected, _],
+    `type`: ojViewDisconnected,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewDisconnected, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -994,25 +1014,57 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animation: js.Object = js.native
+  
+  var config: CleanupMode = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_animation(property: animation): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_config(property: config): CleanupMode = js.native
+  
+  var onAnimationChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onConfigChanged: (js.Function1[/* event */ JetElementCustomEvent[CleanupMode], _]) | Null = js.native
+  
+  var onOjTransitionEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionEnd, _]) | Null = js.native
+  
+  var onOjTransitionStart: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojTransitionStart, 
+    _
+  ]) | Null = js.native
+  
+  var onOjViewConnected: (js.Function1[/* event */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewConnected, _]) | Null = js.native
+  
+  var onOjViewDisconnected: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojmoduleElementMod.ojModule.ojViewDisconnected, 
+    _
+  ]) | Null = js.native
+  
   def setProperties(properties: ojModuleSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojModuleSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_animation(property: animation, value: js.Object): Unit = js.native
   @JSName("setProperty")
   def setProperty_config(property: config, value: CleanupMode): Unit = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojmodule-element", "ojModule")
 @js.native
 object ojModule extends js.Object {
+  
   type ojTransitionEnd = CustomEvent[ViewModel]
+  
   type ojTransitionStart = CustomEvent[ViewModel]
+  
   type ojViewConnected = CustomEvent[ViewModel]
+  
   type ojViewDisconnected = CustomEvent[View]
 }
-

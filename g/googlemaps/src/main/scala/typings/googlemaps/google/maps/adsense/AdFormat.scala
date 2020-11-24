@@ -2,14 +2,14 @@ package typings.googlemaps.google.maps.adsense
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AdFormat extends js.Object
-
 @JSGlobal("google.maps.adsense.AdFormat")
 @js.native
 object AdFormat extends js.Object {
+  
   @js.native
   sealed trait BANNER extends AdFormat
   
@@ -63,6 +63,4 @@ object AdFormat extends js.Object {
   
   @js.native
   sealed trait X_LARGE_VERTICAL_LINK_UNIT extends AdFormat
-  
 }
-

@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * marks an object representing an ODF element that may have RDF meta data attached.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XMetadatable extends XURI {
+  
   /**
     * a metadata reference, comprising the stream name and the XML ID.
     *
@@ -27,6 +28,7 @@ trait XMetadatable extends XURI {
     * @throws com::sun::star::lang::IllegalArgumentException if the given metadata reference is invalid, or not unique
     */
   var MetadataReference: StringPair = js.native
+  
   /**
     * creates a metadata reference for this object, if necessary.
     *
@@ -35,8 +37,8 @@ trait XMetadatable extends XURI {
     */
   def ensureMetadataReference(): Unit = js.native
 }
-
 object XMetadatable {
+  
   @scala.inline
   def apply(
     LocalName: String,
@@ -48,22 +50,26 @@ object XMetadatable {
     val __obj = js.Dynamic.literal(LocalName = LocalName.asInstanceOf[js.Any], MetadataReference = MetadataReference.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any], ensureMetadataReference = js.Any.fromFunction0(ensureMetadataReference))
     __obj.asInstanceOf[XMetadatable]
   }
+  
   @scala.inline
   implicit class XMetadatableOps[Self <: XMetadatable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMetadataReference(value: StringPair): Self = this.set("MetadataReference", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnsureMetadataReference(value: () => Unit): Self = this.set("ensureMetadataReference", js.Any.fromFunction0(value))
   }
-  
 }
-

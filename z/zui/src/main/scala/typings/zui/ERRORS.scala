@@ -2,14 +2,14 @@ package typings.zui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ERRORS extends js.Object
-
 @JSGlobal("ERRORS")
 @js.native
 object ERRORS extends js.Object {
+  
   @js.native
   sealed trait FILE_DUPLICATE_ERROR extends ERRORS
   
@@ -42,6 +42,4 @@ object ERRORS extends js.Object {
   
   @js.native
   sealed trait SECURITY_ERROR extends ERRORS
-  
 }
-

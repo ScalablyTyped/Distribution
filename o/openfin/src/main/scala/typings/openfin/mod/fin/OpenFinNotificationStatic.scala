@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OpenFinNotificationStatic
@@ -24,9 +24,9 @@ Instantiable1[/* options */ NotificationOptions, OpenFinNotification]
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinNotification
     ] {
+  
   /**
     * Gets an instance of the current notification. For use within a notification window to close the window or send a message back to its parent application.
     */
   def getCurrent(): OpenFinNotification = js.native
 }
-

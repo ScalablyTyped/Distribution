@@ -3,7 +3,7 @@ package typings.k6.cryptoMod
 import typings.k6.mod.bytes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This module provides common hashing functionality available in the GoLang crypto package.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/crypto", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Create an HMAC hashing object.
     * https://k6.io/docs/javascript-api/k6-crypto/createhmac-algorithm-secret
@@ -25,6 +26,7 @@ object default extends js.Object {
     * console.log(hasher.digest('hex'));
     */
   def createHMAC(algorithm: Algorithm, secret: String): Hasher = js.native
+  
   /**
     * Create a hashing object.
     * https://k6.io/docs/javascript-api/k6-crypto/createhash-algorithm
@@ -37,6 +39,7 @@ object default extends js.Object {
     * console.log(hasher.digest('hex'));
     */
   def createHash(algorithm: Algorithm): Hasher = js.native
+  
   /**
     * Produce HMAC.
     * https://k6.io/docs/javascript-api/k6-crypto/hmac-algorithm-secret-data-outputencoding
@@ -49,6 +52,7 @@ object default extends js.Object {
     * crypto.hmac('sha256', 'mysecret', 'hello world!', 'hex')
     */
   def hmac[OE /* <: OutputEncoding */](algorithm: Algorithm, secret: String, data: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with MD4.
     * https://k6.io/docs/javascript-api/k6-crypto/md4-input-outputencoding
@@ -59,6 +63,7 @@ object default extends js.Object {
     * crypto.md4('hello world!', 'hex')
     */
   def md4[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with MD5.
     * https://k6.io/docs/javascript-api/k6-crypto/md5-input-outputencoding
@@ -69,6 +74,7 @@ object default extends js.Object {
     * crypto.md5("hello world!", "hex")
     */
   def md5[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Generate random bytes.
     * @param size - Number of bytes to generate.
@@ -77,6 +83,7 @@ object default extends js.Object {
     * crypto.randomBytes(42)
     */
   def randomBytes(size: Double): bytes = js.native
+  
   /**
     * Hash with RIPEMD-160.
     * https://k6.io/docs/javascript-api/k6-crypto/ripemd160-input-outputencoding
@@ -87,6 +94,7 @@ object default extends js.Object {
     * crypto.ripemd160('hello world!', 'hex')
     */
   def ripemd160[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with SHA-1.
     * https://k6.io/docs/javascript-api/k6-crypto/sha1-input-outputencoding
@@ -97,6 +105,7 @@ object default extends js.Object {
     * crypto.sha1('hello world!', 'hex')
     */
   def sha1[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with SHA-256.
     * https://k6.io/docs/javascript-api/k6-crypto/sha256-input-outputencoding
@@ -107,6 +116,7 @@ object default extends js.Object {
     * crypto.sha256('hello world!', 'hex')
     */
   def sha256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with SHA-384.
     * https://k6.io/docs/javascript-api/k6-crypto/sha384-input-outputencoding
@@ -117,6 +127,7 @@ object default extends js.Object {
     * crypto.sha384('hello world!', 'hex')
     */
   def sha384[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with SHA-512.
     * https://k6.io/docs/javascript-api/k6-crypto/sha512-input-outputencoding
@@ -127,6 +138,7 @@ object default extends js.Object {
     * crypto.sha512('hello world!', 'hex')
     */
   def sha512[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with SHA-512/224.
     * https://k6.io/docs/javascript-api/k6-crypto/sha512_224-input-outputencoding
@@ -138,6 +150,7 @@ object default extends js.Object {
     */
   @JSName("sha512_224")
   def sha512224[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
+  
   /**
     * Hash with SHA-512/256.
     * https://k6.io/docs/javascript-api/k6-crypto/sha512_256-input-outputencoding
@@ -150,4 +163,3 @@ object default extends js.Object {
   @JSName("sha512_256")
   def sha512256[OE /* <: OutputEncoding */](input: String, outputEncoding: OE): Output[OE] = js.native
 }
-

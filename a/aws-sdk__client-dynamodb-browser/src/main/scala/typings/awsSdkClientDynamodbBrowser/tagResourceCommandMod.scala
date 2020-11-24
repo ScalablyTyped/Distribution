@@ -5,33 +5,29 @@ import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesTagResourceInputMod.TagResourceInput
 import typings.awsSdkClientDynamodbBrowser.typesTagResourceOutputMod.TagResourceOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-browser/commands/TagResourceCommand", JSImport.Namespace)
 @js.native
 object tagResourceCommandMod extends js.Object {
+  
   @js.native
   class TagResourceCommand protected () extends Command[
           InputTypesUnion, 
           TagResourceInput, 
           OutputTypesUnion, 
           TagResourceOutput, 
-          DynamoDBResolvedConfiguration, 
-          Blob
+          DynamoDBResolvedConfiguration
         ] {
     def this(input: TagResourceInput) = this()
-    val middlewareStack: MiddlewareStack[TagResourceInput, TagResourceOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[TagResourceInput, TagResourceOutput] = js.native
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the runtime environment of the add-in and provides access to key objects of the API. 
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */     
 @js.native
 trait Context extends js.Object {
+  
   /**
     * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
     * 
@@ -28,6 +29,7 @@ trait Context extends js.Object {
     * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
     */
   var commerceAllowed: Boolean = js.native
+  
   /**
     * Gets the locale (language) specified by the user for editing the document or item.
     * 
@@ -55,10 +57,12 @@ trait Context extends js.Object {
     *  </table>
     */
   var contentLanguage: String = js.native
+  
   /**
     * Gets information about the environment in which the add-in is running.
     */
   var diagnostics: ContextInformation = js.native
+  
   /**
     * Gets the locale (language) specified by the user for the UI of the Office host application.
     * 
@@ -90,18 +94,22 @@ trait Context extends js.Object {
     *  </table>
     */
   var displayLanguage: String = js.native
+  
   /**
     * Gets an object that represents the document the content or task pane add-in is interacting with.
     */
   var document: Document = js.native
+  
   /**
     * Contains the Office application host in which the add-in is running.
     */
   var host: HostType = js.native
+  
   /**
     * Gets the license information for the user's Office installation.
     */
   var license: String = js.native
+  
   /**
     * Provides access to the Microsoft Outlook Add-in object model.
     *
@@ -120,18 +128,22 @@ trait Context extends js.Object {
     * - `userProfile`: Provides information about the user in an Outlook add-in.
     */
   var mailbox: Mailbox = js.native
+  
   /**
     * Provides access to the properties for Office theme colors.
     */
   var officeTheme: OfficeTheme = js.native
+  
   /**
     * Provides the platform on which the add-in is running.
     */
   var platform: PlatformType = js.native
+  
   /**
     * Provides a method for determining what requirement sets are supported on the current host and platform.
     */
   var requirements: RequirementSetSupport = js.native
+  
   /**
     * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
     *
@@ -145,6 +157,7 @@ trait Context extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var roamingSettings: RoamingSettings = js.native
+  
   /**
     * Specifies whether the platform and device allows touch interaction. 
     * True if the add-in is running on a touch device, such as an iPad; false otherwise.
@@ -159,13 +172,14 @@ trait Context extends js.Object {
     * size and spacing of elements in your add-in's UI to accommodate touch interactions.
     */
   var touchEnabled: Boolean = js.native
+  
   /**
     * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
     */
   var ui: UI = js.native
 }
-
 object Context {
+  
   @scala.inline
   def apply(
     commerceAllowed: Boolean,
@@ -186,46 +200,62 @@ object Context {
     val __obj = js.Dynamic.literal(commerceAllowed = commerceAllowed.asInstanceOf[js.Any], contentLanguage = contentLanguage.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displayLanguage = displayLanguage.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], mailbox = mailbox.asInstanceOf[js.Any], officeTheme = officeTheme.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], roamingSettings = roamingSettings.asInstanceOf[js.Any], touchEnabled = touchEnabled.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
+  
   @scala.inline
   implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCommerceAllowed(value: Boolean): Self = this.set("commerceAllowed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDiagnostics(value: ContextInformation): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDisplayLanguage(value: String): Self = this.set("displayLanguage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHost(value: HostType): Self = this.set("host", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMailbox(value: Mailbox): Self = this.set("mailbox", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOfficeTheme(value: OfficeTheme): Self = this.set("officeTheme", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPlatform(value: PlatformType): Self = this.set("platform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRequirements(value: RequirementSetSupport): Self = this.set("requirements", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRoamingSettings(value: RoamingSettings): Self = this.set("roamingSettings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTouchEnabled(value: Boolean): Self = this.set("touchEnabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUi(value: UI): Self = this.set("ui", value.asInstanceOf[js.Any])
   }
-  
 }
-

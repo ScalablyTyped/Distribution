@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-scale"
-version := "7.0.0-168f91"
+version := "7.1.1-e6d5ea"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

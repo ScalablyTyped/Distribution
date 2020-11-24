@@ -8,14 +8,14 @@ import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
 import typings.winrt.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VideoDeviceController
   extends IVideoDeviceController
      with IAdvancedVideoCaptureDeviceController
-
 object VideoDeviceController {
+  
   @scala.inline
   def apply(
     backlightCompensation: MediaDeviceControl,
@@ -41,4 +41,3 @@ object VideoDeviceController {
     __obj.asInstanceOf[VideoDeviceController]
   }
 }
-

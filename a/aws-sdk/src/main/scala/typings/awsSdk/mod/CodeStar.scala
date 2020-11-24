@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.codestarMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CodeStar")
 @js.native
@@ -14,4 +14,3 @@ class CodeStar ()
   extends typings.awsSdk.allMod.CodeStar {
   def this(options: ClientConfiguration) = this()
 }
-

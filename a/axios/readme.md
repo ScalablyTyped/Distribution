@@ -1,7 +1,7 @@
 
 # Scala.js typings for axios
 
-Typings are for version 0.19.2
+Typings are for version 0.21.0
 
 ## Library description:
 Promise based HTTP client for the browser and node.js
@@ -10,10 +10,10 @@ Promise based HTTP client for the browser and node.js
 | ------------------ | :-------------: |
 | Full name          | axios |
 | Keywords           | xhr, http, ajax, promise, node |
-| # releases         | 5 |
-| # dependents       | 19474 |
-| # downloads        | 247185102 |
-| # stars            | 555 |
+| # releases         | 6 |
+| # dependents       | 29811 |
+| # downloads        | 435024115 |
+| # stars            | 562 |
 
 ## Links
 - [Homepage](https://github.com/axios/axios)

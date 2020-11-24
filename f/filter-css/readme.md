@@ -11,8 +11,8 @@ Filter CSS rules
 | Full name          | filter-css |
 | Keywords           | css, filter, parse |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 652528 |
+| # dependents       | 4 |
+| # downloads        | 671066 |
 | # stars            | 0 |
 
 ## Links

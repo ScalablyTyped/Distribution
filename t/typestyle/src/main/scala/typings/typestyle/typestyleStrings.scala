@@ -2,9 +2,31 @@ package typings.typestyle
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typestyleStrings {
+  
+  @scala.inline
+  def TypeStyle: TypeStyle = "TypeStyle".asInstanceOf[TypeStyle]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def print: print = "print".asInstanceOf[print]
+  
+  @scala.inline
+  def screen: screen = "screen".asInstanceOf[screen]
+  
+  @scala.inline
+  def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
+  
   @js.native
   sealed trait TypeStyle extends js.Object
   
@@ -25,20 +47,4 @@ object typestyleStrings {
   
   @js.native
   sealed trait stylesheet extends js.Object
-  
-  @scala.inline
-  def TypeStyle: TypeStyle = "TypeStyle".asInstanceOf[TypeStyle]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
-  @scala.inline
-  def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
 }
-

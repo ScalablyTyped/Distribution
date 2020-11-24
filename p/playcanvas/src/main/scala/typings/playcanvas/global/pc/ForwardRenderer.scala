@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new forward renderer object.
@@ -14,4 +14,3 @@ class ForwardRenderer protected ()
   extends typings.playcanvas.pc.ForwardRenderer {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
 }
-

@@ -3,16 +3,17 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.CapSegments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("pc.createCylinder")
 @js.native
 object createCylinder extends js.Object {
+  
   /**
     * Creates a procedural cylinder-shaped mesh.
     *
     * The size, shape and tesselation properties of the cylinder can be controlled via function parameters.
-    * By default, the function will create a cylinder standing vertically centred on the XZ-plane with a radius
+    * By default, the function will create a cylinder standing vertically centered on the XZ-plane with a radius
     * of 0.5, a height of 1.0, 1 height segment and 20 cap segments.
     *
     * Note that the cylinder is created with UVs in the range of 0 to 1. Additionally, tangent information
@@ -28,4 +29,3 @@ object createCylinder extends js.Object {
   def apply(device: typings.playcanvas.pc.GraphicsDevice): typings.playcanvas.pc.Mesh = js.native
   def apply(device: typings.playcanvas.pc.GraphicsDevice, opts: CapSegments): typings.playcanvas.pc.Mesh = js.native
 }
-

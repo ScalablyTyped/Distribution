@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Promise")
 @js.native
@@ -18,12 +18,11 @@ class Promise[T] protected ()
     * and a reject callback used to reject the promise with a provided reason or error.
     */
   def this(executor: js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
+        /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
         Unit
       ]) = this()
 }
-
 @JSImport("nodegit", "Promise")
 @js.native
 object Promise
@@ -31,9 +30,7 @@ object Promise
       PromiseConstructor with (Instantiable1[
         /* executor */ js.Function2[
           /* resolve */ js.Function1[
-            /* value */ js.UndefOr[
-              (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any])
-            ], 
+            /* value */ (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]), 
             Unit
           ], 
           /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
@@ -42,4 +39,3 @@ object Promise
         typings.std.global.Promise[js.Object]
       ])
     ]
-

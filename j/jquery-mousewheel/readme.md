@@ -11,8 +11,8 @@ A jQuery plugin that adds cross-browser mouse wheel support.
 | Full name          | jquery-mousewheel |
 | Keywords           | jquery, mouse, wheel, event, mousewheel, jquery-plugin, browser |
 | # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 6931872 |
+| # dependents       | 87 |
+| # downloads        | 7153602 |
 | # stars            | 6 |
 
 ## Links

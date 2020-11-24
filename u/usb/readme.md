@@ -10,9 +10,9 @@ Library to access USB devices
 | ------------------ | :-------------: |
 | Full name          | usb |
 | Keywords           | usb, hardware |
-| # releases         | 7 |
-| # dependents       | 136 |
-| # downloads        | 605634 |
+| # releases         | 6 |
+| # dependents       | 154 |
+| # downloads        | 935466 |
 | # stars            | 14 |
 
 ## Links

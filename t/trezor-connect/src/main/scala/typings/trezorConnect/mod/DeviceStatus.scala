@@ -2,7 +2,7 @@ package typings.trezorConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.trezorConnect.trezorConnectStrings.available
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.trezorConnect.trezorConnectStrings.used
 */
 trait DeviceStatus extends js.Object
-
 object DeviceStatus {
+  
   @scala.inline
   def available: typings.trezorConnect.trezorConnectStrings.available = "available".asInstanceOf[typings.trezorConnect.trezorConnectStrings.available]
+  
   @scala.inline
   def occupied: typings.trezorConnect.trezorConnectStrings.occupied = "occupied".asInstanceOf[typings.trezorConnect.trezorConnectStrings.occupied]
+  
   @scala.inline
   def used: typings.trezorConnect.trezorConnectStrings.used = "used".asInstanceOf[typings.trezorConnect.trezorConnectStrings.used]
 }
-

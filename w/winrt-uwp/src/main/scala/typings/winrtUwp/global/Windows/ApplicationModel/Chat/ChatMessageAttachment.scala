@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an attachment to a chat message. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageAttachment")
@@ -17,4 +17,3 @@ class ChatMessageAttachment protected ()
     */
   def this(mimeType: String, dataStreamReference: IRandomAccessStreamReference) = this()
 }
-

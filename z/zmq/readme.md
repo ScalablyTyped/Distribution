@@ -9,9 +9,9 @@ Bindings for node.js and io.js to ZeroMQ
 | ------------------ | :-------------: |
 | Full name          | zmq |
 | Keywords           | zeromq, zmq, 0mq, ømq, libzmq, native, binding, addon |
-| # releases         | 1 |
-| # dependents       | 275 |
-| # downloads        | 383060 |
+| # releases         | 0 |
+| # dependents       | 282 |
+| # downloads        | 303088 |
 | # stars            | 54 |
 
 ## Links

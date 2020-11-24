@@ -10,9 +10,9 @@ PouchDB, the Node-only edition.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-node |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 16 |
-| # downloads        | 73014 |
+| # downloads        | 72916 |
 | # stars            | 3 |
 
 ## Links

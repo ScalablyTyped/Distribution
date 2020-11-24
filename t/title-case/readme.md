@@ -11,8 +11,8 @@ Transform a string into title case following English rules
 | Full name          | title-case |
 | Keywords           | title, case, english, capital, sentence, convert, transform |
 | # releases         | 4 |
-| # dependents       | 88 |
-| # downloads        | 49811504 |
+| # dependents       | 117 |
+| # downloads        | 68252105 |
 | # stars            | 4 |
 
 ## Links

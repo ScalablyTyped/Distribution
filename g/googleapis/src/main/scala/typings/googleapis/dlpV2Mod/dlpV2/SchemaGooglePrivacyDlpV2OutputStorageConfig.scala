@@ -2,13 +2,14 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud repository for storing output.
   */
 @js.native
 trait SchemaGooglePrivacyDlpV2OutputStorageConfig extends js.Object {
+  
   /**
     * Schema used for writing the findings for Inspect jobs. This field is only
     * used for Inspect and must be unspecified for Risk jobs. Columns are
@@ -20,6 +21,7 @@ trait SchemaGooglePrivacyDlpV2OutputStorageConfig extends js.Object {
     * a schema.
     */
   var outputSchema: js.UndefOr[String] = js.native
+  
   /**
     * Store findings in an existing table or a new table in an existing
     * dataset. If table_id is not set a new one will be generated for you with
@@ -35,33 +37,39 @@ trait SchemaGooglePrivacyDlpV2OutputStorageConfig extends js.Object {
     */
   var table: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.native
 }
-
 object SchemaGooglePrivacyDlpV2OutputStorageConfig {
+  
   @scala.inline
   def apply(): SchemaGooglePrivacyDlpV2OutputStorageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2OutputStorageConfig]
   }
+  
   @scala.inline
   implicit class SchemaGooglePrivacyDlpV2OutputStorageConfigOps[Self <: SchemaGooglePrivacyDlpV2OutputStorageConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOutputSchema(value: String): Self = this.set("outputSchema", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutputSchema: Self = this.set("outputSchema", js.undefined)
+    
     @scala.inline
     def setTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = this.set("table", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTable: Self = this.set("table", js.undefined)
   }
-  
 }
-

@@ -11,8 +11,8 @@ resilience module for NodeJS applications
 | Full name          | hystrixjs |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 223856 |
+| # dependents       | 14 |
+| # downloads        | 312824 |
 | # stars            | 14 |
 
 ## Links

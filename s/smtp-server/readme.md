@@ -10,9 +10,9 @@ Create custom SMTP servers on the fly
 | ------------------ | :-------------: |
 | Full name          | smtp-server |
 | Keywords           | SMTP |
-| # releases         | 7 |
-| # dependents       | 50 |
-| # downloads        | 1467570 |
+| # releases         | 4 |
+| # dependents       | 64 |
+| # downloads        | 2119851 |
 | # stars            | 10 |
 
 ## Links

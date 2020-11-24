@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.saveFile")
 @js.native
 object saveFile extends js.Object {
+  
   /**
     * save raw string to file
     * @param binFile file name to save contents.
@@ -16,4 +17,3 @@ object saveFile extends js.Object {
     */
   def apply(binFile: String, rawString: String): Unit = js.native
 }
-

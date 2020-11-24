@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Accounts")
 @js.native
 class ResourceAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.accounts.insert
     * @desc Inserts a new account for a user
@@ -45,4 +47,3 @@ class ResourceAccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
 }
-

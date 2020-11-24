@@ -6,7 +6,7 @@ import typings.videoJs.mod.videojs.CaptionSettingsMenuItem
 import typings.videoJs.mod.videojs.CaptionSettingsMenuItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "CaptionsSettingsMenuItem")
 @js.native
@@ -23,7 +23,6 @@ class CaptionsSettingsMenuItem protected () extends CaptionSettingsMenuItem {
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: CaptionSettingsMenuItemOptions) = this()
 }
-
 @JSImport("video.js/dist/alt/video.core.novtt", "CaptionsSettingsMenuItem")
 @js.native
 object CaptionsSettingsMenuItem
@@ -42,4 +41,3 @@ Instantiable1[/* player */ typings.videoJs.mod.videojs.Player, CaptionSettingsMe
       /* options */ CaptionSettingsMenuItemOptions, 
       CaptionSettingsMenuItem
     ]
-

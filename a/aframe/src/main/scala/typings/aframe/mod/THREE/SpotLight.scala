@@ -3,7 +3,7 @@ package typings.aframe.mod.THREE
 import typings.three.colorMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.SpotLight")
 @js.native
@@ -18,4 +18,3 @@ class SpotLight protected ()
     decay: js.UndefOr[Double]
   ) = this()
 }
-

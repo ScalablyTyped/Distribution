@@ -5,11 +5,12 @@ import typings.unist.mod.Node
 import typings.unist.mod.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("unist-util-is", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]]): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](
     node: js.Any,
@@ -65,12 +66,14 @@ object mod extends js.Object {
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: js.UndefOr[scala.Nothing], context: js.Any): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
+  
   /**
     * Union of all the types of tests
     *
     * @typeParam T type of node that passes test
     */
   type Test[T /* <: Node */] = TestType[T] | TestObject[T] | TestFunction[T]
+  
   /**
     * Check if a node passes a test
     *
@@ -86,12 +89,14 @@ object mod extends js.Object {
     /* parent */ js.UndefOr[Parent], 
     /* is T */ Boolean
   ]
+  
   /**
     * Check that some attributes on a node are matched
     *
     * @typeParam T type of node that passes test
     */
   type TestObject[T /* <: Node */] = Partial[T]
+  
   /**
     * Check that type property matches expectation for a node
     *
@@ -99,4 +104,3 @@ object mod extends js.Object {
     */
   type TestType[T /* <: Node */] = /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any
 }
-

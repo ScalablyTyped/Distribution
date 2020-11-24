@@ -10,12 +10,15 @@ Reads files from a real location
 | ------------------ | :-------------: |
 | Full name          | fs-merger |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 108199 |
+| # releases         | 22 |
+| # dependents       | 4 |
+| # downloads        | 3609026 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/SparshithNR/fs-merger#readme)
+- [Bugs](https://github.com/SparshithNR/fs-merger/issues)
+- [Repository](https://github.com/SparshithNR/fs-merger)
 - [Npm](https://www.npmjs.com/package/fs-merger)
     
 

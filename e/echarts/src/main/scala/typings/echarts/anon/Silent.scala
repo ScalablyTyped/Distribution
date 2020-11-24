@@ -2,387 +2,413 @@ package typings.echarts.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Silent extends js.Object {
+  
   /**
-    * id is used to specifying element when willing to update
-    * it. id can be ignored if you do not need it.
+    * Whether to enable animation.
     *
     *
     * @default
-    * "undefined"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.id
+    * "true"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animation
     */
-  var id: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[Boolean] = js.native
+  
   /**
-    * Whether the element is totally ignored (neither render
-    * nor listen events).
+    * Delay before updating the first animation, which supports
+    * callback function for different data to have different animation
+    * effect.
     *
+    * For example:
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.ignore
-    */
-  var ignore: js.UndefOr[Boolean] = js.native
-  /**
-    * User defined data, can be visited in event listeners.
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.return_line)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.info
-    */
-  var info: js.UndefOr[js.Any] = js.native
-  /**
-    * Whether the element is visible.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.invisible
-    */
-  var invisible: js.UndefOr[Boolean] = js.native
-  /**
     * See
-    * [diffChildrenByName](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.diffChildrenByName)
-    * 。
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
+    * for more information.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDelay
+    */
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
+  
+  /**
+    * Delay before updating animation, which supports callback
+    * function for different data to have different animation effect.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    * See
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
+    * for more information.
+    *
+    * prefix
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDelayUpdate
+    */
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
+  
+  /**
+    * Duration of the first animation, which supports callback
+    * function for different data to have different animation effect:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
     *
     * @default
-    * "undefined"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.name
+    * 1000
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDuration
     */
-  var name: js.UndefOr[String] = js.native
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
+    * Time for animation to complete, which supports callback function
+    * for different data to have different animation effect:
     *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
     *
     * @default
-    * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.origin
+    * 300
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDurationUpdate
     */
-  var origin: js.UndefOr[Double] = js.native
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
-    *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * Easing method used for the first animation.
+    * Varied easing effects can be found at
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
+    * .
     *
     *
     * @default
-    * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.position
+    * "cubicOut"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationEasing
     */
-  var position: js.UndefOr[js.Array[_]] = js.native
+  var animationEasing: js.UndefOr[String] = js.native
+  
   /**
-    * `2D transform` can be applied to graphic elements, including:
-    *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.rotation
-    */
-  var rotation: js.UndefOr[Double] = js.native
-  /**
-    * `2D transform` can be applied to graphic elements, including:
-    *
-    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
-    * : `[horizontal translate offset, vertical translate offset]`,
-    * `[0, 0]` by default.
-    * Positive value means translate towards right or bottom.
-    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
-    * : Rotation in radian, `0` by default.
-    * Positive when anticlockwise.
-    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
-    * : `[horizontal scale factor, vertical scale factor]`,
-    * `[1, 1]` by default.
-    *
-    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
-    * specifies the origin point of rotation and scaling, `[0,
-    * 0]` by default.
-    *
-    * Notice:
-    *
-    * + The coordinates specified in the transform attribute
-    * above are relative to the `[0, 0]` of the parent element
-    * (that is,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * or the root canvas). Thus we are able to
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * multiple elements, and
-    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * can be nested.
-    * + The order that the transform attributes are applied
-    * to a single graphic element is: Firstly, `rotation`,
-    * then, `scale`, finally, `position`.
+    * Easing method used for animation.
     *
     *
     * @default
-    * [1, 1]
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.scale
+    * "cubicOut"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationEasingUpdate
     */
-  var scale: js.UndefOr[js.Array[_]] = js.native
+  var animationEasingUpdate: js.UndefOr[String] = js.native
+  
   /**
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape
-    */
-  var shape: js.UndefOr[Percent] = js.native
-  /**
-    * Whether response to mouse events / touch events.
+    * Whether to set graphic number threshold to animation.
+    * Animation will be disabled when graphic number is larger
+    * than threshold.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.silent
+    * @default
+    * 2000
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationThreshold
+    */
+  var animationThreshold: js.UndefOr[Double] = js.native
+  
+  /**
+    * Data array for mark points, each of which is an object.
+    * Here are some ways to assign mark point position.
+    *
+    * 1. Assign coordinate according to container with
+    * [x](https://echarts.apache.org/en/option.html#series-map.markPoint.data.x)
+    * ,
+    * [y](https://echarts.apache.org/en/option.html#series-map.markPoint.data.y)
+    * attribute, in which pixel values and percentage are supported.
+    *
+    * 2. Assign coordinate position with
+    * [coord](https://echarts.apache.org/en/option.html#series-map.markPoint.data.coord)
+    * attribute, in which `'min'`, `'max'`, `'average'` are supported
+    * for each dimension.
+    *
+    * When multiple attributes exist, priority is as the above
+    * order.
+    *
+    * **For example:**
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data
+    */
+  var data: js.UndefOr[SymbolRotate] = js.native
+  
+  /**
+    * Mark point style.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.itemStyle
+    */
+  var itemStyle: js.UndefOr[Emphasis] = js.native
+  
+  /**
+    * Label of mark point.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.label
+    */
+  var label: js.UndefOr[BorderWidth] = js.native
+  
+  /**
+    * Whether to ignore mouse events.
+    * Default value is false, for triggering and responding to
+    * mouse events.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.silent
     */
   var silent: js.UndefOr[Boolean] = js.native
+  
   /**
-    * More attributes in `style` (for example,
-    * [rich text](https://echarts.apache.org/en/tutorial.html#Rich%20Text)
-    * ), see the `style` related attributes in
-    * [zrender/graphic/Displayable](https://ecomfe.github.io/zrender-doc/public/api.html#zrenderdisplayable)
-    * .
+    * Symbol of .
     *
-    * Notice, the attribute names of the `style` of graphic
-    * elements is derived from `zrender`, which may be different
-    * from the attribute names in `echarts label`, `echarts
-    * itemStyle`, etc.,
-    * although they have the same meaning. For example:
+    * Icon types provided by ECharts includes `'circle'`, `'rect'`,
+    * `'roundRect'`, `'triangle'`, `'diamond'`, `'pin'`, `'arrow'`,
+    * `'none'`
     *
-    * + [itemStyle.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
-    * => `style.fill`
-    * + [itemStyle.borderColor](https://echarts.apache.org/en/option.html#series-scatter.label.color)
-    * => `style.stroke`
-    * + [label.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
-    * => `style.textFill`
-    * + [label.textBorderColor](https://echarts.apache.org/en/option.html#series-scatter.label.textBorderColor)
-    * => `style.textStroke`
-    * + ...
+    * It can be set to an image with `'image://url'` , in which
+    * URL is the link to an image, or `dataURI` of an image.
     *
+    * An image URL example:
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.style
-    */
-  var style: js.UndefOr[Fill] = js.native
-  /**
-    * Empahsis style of the graphic element, whose structure
-    * is the same as
-    * [style](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.style)
-    * .
+    * ```
+    * 'image://http://xxx.xxx.xxx/a/b.png'
     *
+    * ```
     *
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.styleEmphasis
-    */
-  var styleEmphasis: js.UndefOr[js.Object] = js.native
-  /**
-    * Must be specified when define a graphic element at the
-    * first time.
+    * A `dataURI` example:
     *
-    * Optional values:
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
-    * [image](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image)
-    * ,
-    * [text](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text)
-    * ,
-    * [circle](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle)
-    * ,
-    * [sector](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector)
-    * ,
-    * [ring](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring)
-    * ,
-    * [polygon](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon)
-    * ,
-    * [polyline](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline)
-    * ,
-    * [rect](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect)
-    * ,
-    * [line](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line)
-    * ,
-    * [bezierCurve](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve)
-    * ,
-    * [arc](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc)
-    * ,
-    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
-    * ,
+    * Icons can be set to arbitrary vector path via `'path://'`
+    * in ECharts.
+    * As compared with raster image, vector paths prevent from
+    * jagging and blurring when scaled, and have a better control
+    * over changing colors.
+    * Size of vectoer icon will be adapted automatically.
+    * Refer to
+    * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
+    * for more information about format of path.
+    * You may export vector paths from tools like Adobe Illustrator.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
     *
     * @default
-    * "line"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.type
+    * "pin"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbol
     */
-  var `type`: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.native
+  
   /**
-    * Define the overlap relationship between graphic elements.
+    * Whether to keep aspect for symbols in the form of `path://`.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolKeepAspect
+    */
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * Offset of symbol relative to original position.
+    * By default, symbol will be put in the center position of
+    * data.
+    * But if symbol is from user-defined vector path or image,
+    * you may not expect symbol to be in center.
+    * In this case, you may use this attribute to set offset to
+    * default position.
+    * It can be in absolute pixel value, or in relative percentage
+    * value.
+    *
+    * For example, `[0, '50%']` means to move upside side position
+    * of symbol height.
+    * It can be used to make the arrow in the bottom to be at data
+    * position when symbol is pin.
     *
     *
     * @default
-    * "undefined"
-    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.z2
+    * [0, 0]
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolOffset
     */
-  var z2: js.UndefOr[Double] = js.native
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
+  
+  /**
+    * Rotate degree of symbol.
+    * Note that when `symbol` is set to be `'arrow'` in `markLine`,
+    * `symbolRotate` value will be ignored, and compulsively use
+    * tangent angle.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolRotate
+    */
+  var symbolRotate: js.UndefOr[Double] = js.native
+  
+  /**
+    * symbol size.
+    * It can be set to single numbers like `10`, or use an array
+    * to represent width and height.
+    * For example, `[20, 10]` means symbol width is `20`, and height
+    * is`10`.
+    *
+    * If size of symbols needs to be different, you can set with
+    * callback function in the following format:
+    *
+    * ```
+    * (value: Array|number, params: Object) => number|Array
+    *
+    * ```
+    *
+    * The first parameter `value` is the value in
+    * [data](https://echarts.apache.org/en/option.html#series-.data)
+    * , and the second parameter `params` is the rest parameters
+    * of data item.
+    *
+    *
+    * @default
+    * 50
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolSize
+    */
+  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.native
 }
-
 object Silent {
+  
   @scala.inline
   def apply(): Silent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Silent]
   }
+  
   @scala.inline
   implicit class SilentOps[Self <: Silent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    
     @scala.inline
-    def setIgnore(value: Boolean): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    
     @scala.inline
-    def setInfo(value: js.Any): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    
     @scala.inline
-    def setInvisible(value: Boolean): Self = this.set("invisible", value.asInstanceOf[js.Any])
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteInvisible: Self = this.set("invisible", js.undefined)
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    
     @scala.inline
-    def setOrigin(value: Double): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    
     @scala.inline
-    def setPositionVarargs(value: js.Any*): Self = this.set("position", js.Array(value :_*))
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setPosition(value: js.Array[_]): Self = this.set("position", value.asInstanceOf[js.Any])
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setData(value: SymbolRotate): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setScaleVarargs(value: js.Any*): Self = this.set("scale", js.Array(value :_*))
+    def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
-    def setScale(value: js.Array[_]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setItemStyle(value: Emphasis): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
-    def setShape(value: Percent): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setLabel(value: BorderWidth): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def deleteLabel: Self = this.set("label", js.undefined)
+    
     @scala.inline
     def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSilent: Self = this.set("silent", js.undefined)
+    
     @scala.inline
-    def setStyle(value: Fill): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    
     @scala.inline
-    def setStyleEmphasis(value: js.Object): Self = this.set("styleEmphasis", value.asInstanceOf[js.Any])
+    def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteStyleEmphasis: Self = this.set("styleEmphasis", js.undefined)
+    def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setZ2(value: Double): Self = this.set("z2", value.asInstanceOf[js.Any])
+    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    
     @scala.inline
-    def deleteZ2: Self = this.set("z2", js.undefined)
+    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | js.Function | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Zone Game Object.
@@ -34,4 +34,3 @@ class Zone protected ()
   def this(scene: Scene, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(scene: Scene, x: Double, y: Double, width: Double, height: Double) = this()
 }
-

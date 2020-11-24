@@ -6,29 +6,56 @@ import typings.std.Date
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxScheduler extends Widget {
-  /** @name dxScheduler.addAppointment(appointment) */
+  
+  /**
+    * [descr:dxScheduler.addAppointment(appointment)]
+    */
   def addAppointment(appointment: js.Any): Unit = js.native
-  /** @name dxScheduler.deleteAppointment(appointment) */
+  
+  /**
+    * [descr:dxScheduler.deleteAppointment(appointment)]
+    */
   def deleteAppointment(appointment: js.Any): Unit = js.native
-  /** @name DataHelperMixin.getDataSource() */
+  
+  /**
+    * [descr:DataHelperMixin.getDataSource()]
+    */
   def getDataSource(): DataSource = js.native
-  /** @name dxScheduler.getEndViewDate() */
+  
+  /**
+    * [descr:dxScheduler.getEndViewDate()]
+    */
   def getEndViewDate(): Date = js.native
-  /** @name dxScheduler.getStartViewDate() */
+  
+  /**
+    * [descr:dxScheduler.getStartViewDate()]
+    */
   def getStartViewDate(): Date = js.native
-  /** @name dxScheduler.hideAppointmentPopup(saveChanges) */
+  
+  /**
+    * [descr:dxScheduler.hideAppointmentPopup(saveChanges)]
+    */
   def hideAppointmentPopup(): Unit = js.native
   def hideAppointmentPopup(saveChanges: Boolean): Unit = js.native
-  /** @name dxScheduler.hideAppointmentTooltip() */
+  
+  /**
+    * [descr:dxScheduler.hideAppointmentTooltip()]
+    */
   def hideAppointmentTooltip(): Unit = js.native
-  /** @name dxScheduler.scrollToTime(hours, minutes, date) */
+  
+  /**
+    * [descr:dxScheduler.scrollToTime(hours, minutes, date)]
+    */
   def scrollToTime(hours: Double, minutes: Double): Unit = js.native
   def scrollToTime(hours: Double, minutes: Double, date: Date): Unit = js.native
-  /** @name dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, currentAppointmentData) */
+  
+  /**
+    * [descr:dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, currentAppointmentData)]
+    */
   def showAppointmentPopup(): Unit = js.native
   def showAppointmentPopup(
     appointmentData: js.UndefOr[scala.Nothing],
@@ -49,14 +76,19 @@ trait dxScheduler extends Widget {
   ): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean, currentAppointmentData: js.Any): Unit = js.native
-  /** @name dxScheduler.showAppointmentTooltip(appointmentData, target, currentAppointmentData) */
+  
+  /**
+    * [descr:dxScheduler.showAppointmentTooltip(appointmentData, target, currentAppointmentData)]
+    */
   def showAppointmentTooltip(appointmentData: js.Any, target: String): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: String, currentAppointmentData: js.Any): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: JQuery): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: JQuery, currentAppointmentData: js.Any): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: Element): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: Element, currentAppointmentData: js.Any): Unit = js.native
-  /** @name dxScheduler.updateAppointment(target, appointment) */
+  
+  /**
+    * [descr:dxScheduler.updateAppointment(target, appointment)]
+    */
   def updateAppointment(target: js.Any, appointment: js.Any): Unit = js.native
 }
-

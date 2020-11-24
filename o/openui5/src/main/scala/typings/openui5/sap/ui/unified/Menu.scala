@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Menu extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.26.3
@@ -16,12 +17,14 @@ trait Menu extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): Menu = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): Menu = js.native
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: MenuItemBase): Menu = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>itemSelect</code> event of this
     * <code>sap.ui.unified.Menu</code>.When called, the context of the event handler (its
@@ -39,15 +42,18 @@ trait Menu extends Control {
     */
   def attachItemSelect(oData: js.Any, fnFunction: js.Any): Menu = js.native
   def attachItemSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Menu = js.native
+  
   /**
     * Closes the menu.
     */
   def close(): Unit = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): Menu = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>itemSelect</code> event of this
     * <code>sap.ui.unified.Menu</code>.The passed function and listener object must match the ones used
@@ -57,6 +63,7 @@ trait Menu extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachItemSelect(fnFunction: js.Any, oListener: js.Any): Menu = js.native
+  
   /**
     * Fires event <code>itemSelect</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>item</code> of type <code>sap.ui.unified.MenuItemBase</code>The action
@@ -65,18 +72,21 @@ trait Menu extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireItemSelect(mArguments: js.Any): Menu = js.native
+  
   /**
     * Gets current value of property <code>ariaDescription</code>.Accessible label / description of the
     * menu for assistive technologies like screenreaders.
     * @returns Value of property <code>ariaDescription</code>
     */
   def getAriaDescription(): String = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     * @since 1.26.3
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.When a menu is disabled none of its items can be
     * selected by the user.The enabled property of an item (@link sap.ui.unified.MenuItemBase#getEnabled)
@@ -84,11 +94,13 @@ trait Menu extends Control {
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.The available actions to be displayed as items of the
     * menu.
     */
   def getItems(): js.Array[MenuItemBase] = js.native
+  
   /**
     * Gets current value of property <code>maxVisibleItems</code>.The maximum number of items which are
     * displayed before an overflow mechanism takes effect.A value smaller than 1 means an infinite number
@@ -98,6 +110,7 @@ trait Menu extends Control {
     * @returns Value of property <code>maxVisibleItems</code>
     */
   def getMaxVisibleItems(): Double = js.native
+  
   /**
     * Gets current value of property <code>pageSize</code>.The keyboard can be used to navigate through
     * the items of a menu. Beside the arrow keys for single steps and the <i>Home</i> / <i>End</i> keys
@@ -110,6 +123,7 @@ trait Menu extends Control {
     * @returns Value of property <code>pageSize</code>
     */
   def getPageSize(): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.MenuItemBase</code> in the aggregation
     * <code>items</code>.and returns its index if found or -1 otherwise.
@@ -117,6 +131,7 @@ trait Menu extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: MenuItemBase): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -127,6 +142,7 @@ trait Menu extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: MenuItemBase, iIndex: Double): Menu = js.native
+  
   def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: js.Any): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
@@ -243,18 +259,21 @@ trait Menu extends Control {
     sOffset: String,
     sCollision: js.Any
   ): Unit = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.26.3
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[MenuItemBase] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -264,6 +283,7 @@ trait Menu extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeItem(vItem: String): MenuItemBase = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -272,6 +292,7 @@ trait Menu extends Control {
     */
   def removeItem(vItem: Double): MenuItemBase = js.native
   def removeItem(vItem: MenuItemBase): MenuItemBase = js.native
+  
   /**
     * Sets a new value for property <code>ariaDescription</code>.Accessible label / description of the
     * menu for assistive technologies like screenreaders.When called with a value of <code>null</code> or
@@ -280,6 +301,7 @@ trait Menu extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAriaDescription(sAriaDescription: String): Menu = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.When a menu is disabled none of its items can be
     * selected by the user.The enabled property of an item (@link sap.ui.unified.MenuItemBase#getEnabled)
@@ -290,6 +312,7 @@ trait Menu extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): Menu = js.native
+  
   /**
     * Sets a new value for property <code>maxVisibleItems</code>.The maximum number of items which are
     * displayed before an overflow mechanism takes effect.A value smaller than 1 means an infinite number
@@ -301,6 +324,7 @@ trait Menu extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxVisibleItems(iMaxVisibleItems: Double): Menu = js.native
+  
   /**
     * Sets a new value for property <code>pageSize</code>.The keyboard can be used to navigate through the
     * items of a menu. Beside the arrow keys for single steps and the <i>Home</i> / <i>End</i> keys for
@@ -316,4 +340,3 @@ trait Menu extends Control {
     */
   def setPageSize(iPageSize: Double): Menu = js.native
 }
-

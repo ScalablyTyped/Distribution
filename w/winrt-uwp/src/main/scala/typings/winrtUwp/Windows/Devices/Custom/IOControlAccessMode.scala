@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Custom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait IOControlAccessMode extends js.Object
-
 /** Identifies the access mode. */
 @JSGlobal("Windows.Devices.Custom.IOControlAccessMode")
 @js.native
 object IOControlAccessMode extends js.Object {
+  
   /** Any mode. */
   @js.native
   sealed trait any extends IOControlAccessMode
@@ -26,6 +26,4 @@ object IOControlAccessMode extends js.Object {
   /** Write mode. */
   @js.native
   sealed trait write extends IOControlAccessMode
-  
 }
-

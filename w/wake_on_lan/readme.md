@@ -9,9 +9,9 @@ generate and send Wake-on-LAN magic packets
 | ------------------ | :-------------: |
 | Full name          | wake_on_lan |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 152290 |
+| # releases         | 0 |
+| # dependents       | 59 |
+| # downloads        | 291994 |
 | # stars            | 2 |
 
 ## Links

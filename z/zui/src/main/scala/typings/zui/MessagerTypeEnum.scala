@@ -2,17 +2,17 @@ package typings.zui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MessagerTypeEnum extends js.Object
-
 /**
   * messager
   */
 @JSGlobal("MessagerTypeEnum")
 @js.native
 object MessagerTypeEnum extends js.Object {
+  
   @js.native
   sealed trait danger extends MessagerTypeEnum
   
@@ -36,6 +36,4 @@ object MessagerTypeEnum extends js.Object {
   
   @js.native
   sealed trait warning extends MessagerTypeEnum
-  
 }
-

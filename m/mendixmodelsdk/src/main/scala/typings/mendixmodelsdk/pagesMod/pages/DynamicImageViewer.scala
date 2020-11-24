@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.imagesMod.images.IImage
@@ -10,12 +11,13 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/image-viewer relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/image-viewer relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer")
 @js.native
@@ -25,60 +27,72 @@ class DynamicImageViewer protected () extends EntityWidget {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FDynamicImageViewer: IModel = js.native
+  
   /**
     * In version 8.6.0: introduced
     */
   def alternativeText: ClientTemplate = js.native
   def alternativeText_=(newValue: ClientTemplate): Unit = js.native
+  
   /**
     * In version 7.18.0: introduced
     */
   def clickAction: ClientAction = js.native
   def clickAction_=(newValue: ClientAction): Unit = js.native
+  
   def defaultImage: IImage | Null = js.native
+  
   def defaultImageQualifiedName: String | Null = js.native
+  
   def defaultImage_=(newValue: IImage | Null): Unit = js.native
+  
   def height: Double = js.native
+  
   def heightUnit: ImageSizeUnit = js.native
   def heightUnit_=(newValue: ImageSizeUnit): Unit = js.native
+  
   def height_=(newValue: Double): Unit = js.native
+  
   /**
     * In version 7.18.0: deleted
     */
   def onClickBehavior: OnClickBehavior = js.native
   def onClickBehavior_=(newValue: OnClickBehavior): Unit = js.native
+  
   /**
     * In version 7.18.0: introduced
     */
   def onClickEnlarge: Boolean = js.native
   def onClickEnlarge_=(newValue: Boolean): Unit = js.native
+  
   def responsive: Boolean = js.native
   def responsive_=(newValue: Boolean): Unit = js.native
+  
   def showAsThumbnail: Boolean = js.native
   def showAsThumbnail_=(newValue: Boolean): Unit = js.native
+  
   def width: Double = js.native
+  
   def widthUnit: ImageSizeUnit = js.native
   def widthUnit_=(newValue: ImageSizeUnit): Unit = js.native
+  
   def width_=(newValue: Double): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer")
 @js.native
 object DynamicImageViewer extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -88,6 +102,7 @@ object DynamicImageViewer extends js.Object {
     *  7.7.0 to 7.14.0
     */
   def createInBuildingBlockUnderWidget(container: BuildingBlock): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -97,6 +112,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'footerWidget' property
@@ -106,6 +122,7 @@ object DynamicImageViewer extends js.Object {
     *  6.7.0 to 7.14.0
     */
   def createInDataViewUnderFooterWidget(container: DataView): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'footerWidgets' property
@@ -115,6 +132,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderFooterWidgets(container: DataView): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -124,6 +142,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDataViewUnderWidget(container: DataView): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -133,6 +152,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderWidgets(container: DataView): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -142,6 +162,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDivContainerUnderWidget(container: DivContainer): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -151,6 +172,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInDivContainerUnderWidgets(container: DivContainer): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -160,6 +182,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInGroupBoxUnderWidget(container: GroupBox): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -169,6 +192,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInGroupBoxUnderWidgets(container: GroupBox): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'leftWidget' property
@@ -178,6 +202,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderLeftWidget(container: Header): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'leftWidgets' property
@@ -187,6 +212,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderLeftWidgets(container: Header): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'rightWidget' property
@@ -196,6 +222,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderRightWidget(container: Header): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'rightWidgets' property
@@ -205,6 +232,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderRightWidgets(container: Header): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -214,6 +242,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -223,6 +252,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -232,6 +262,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -241,6 +272,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -250,6 +282,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutUnderWidget(container: Layout): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -259,6 +292,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutUnderWidgets(container: Layout): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -268,6 +302,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -277,6 +312,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -286,6 +322,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewUnderWidget(container: ListView): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -295,6 +332,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewUnderWidgets(container: ListView): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -304,6 +342,7 @@ object DynamicImageViewer extends js.Object {
     *  7.1.0 to 7.14.0
     */
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -313,6 +352,7 @@ object DynamicImageViewer extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'sidebarWidgets' property
@@ -322,6 +362,7 @@ object DynamicImageViewer extends js.Object {
     *  8.5.0 and higher
     */
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -331,6 +372,7 @@ object DynamicImageViewer extends js.Object {
     *  8.0.0 and higher
     */
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'headerWidget' property
@@ -340,6 +382,7 @@ object DynamicImageViewer extends js.Object {
     *  7.22.0 to 7.23.0
     */
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -349,6 +392,7 @@ object DynamicImageViewer extends js.Object {
     *  7.21.0 to 7.23.0
     */
   def createInNativeLayoutUnderWidgets(container: NativeLayout): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -358,6 +402,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInNavigationListItemUnderWidget(container: NavigationListItem): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -367,6 +412,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'parameterWidget' property
@@ -376,6 +422,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderParameterWidget(container: ReportPane): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'reportWidget' property
@@ -385,6 +432,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderReportWidget(container: ReportPane): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -394,6 +442,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -403,6 +452,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -412,6 +462,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSnippetUnderWidget(container: Snippet): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -421,6 +472,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInSnippetUnderWidgets(container: Snippet): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'firstWidget' property
@@ -430,6 +482,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderFirstWidget(container: SplitPane): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'firstWidgets' property
@@ -439,6 +492,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'secondWidget' property
@@ -448,6 +502,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderSecondWidget(container: SplitPane): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'secondWidgets' property
@@ -457,6 +512,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -466,6 +522,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTabPageUnderWidget(container: TabPage): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -475,6 +532,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInTabPageUnderWidgets(container: TabPage): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -484,6 +542,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTableCellUnderWidget(container: TableCell): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -493,6 +552,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInTableCellUnderWidgets(container: TableCell): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widget' property
@@ -502,6 +562,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -511,6 +572,7 @@ object DynamicImageViewer extends js.Object {
     *  7.15.0 and higher
     */
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -520,6 +582,7 @@ object DynamicImageViewer extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -529,6 +592,7 @@ object DynamicImageViewer extends js.Object {
     *  8.0.0 and higher
     */
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DynamicImageViewer = js.native
+  
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * The new DynamicImageViewer will be automatically stored in the 'widgets' property
@@ -538,5 +602,8 @@ object DynamicImageViewer extends js.Object {
     *  8.2.0 and higher
     */
   def createInWidgetValueUnderWidgets(container: WidgetValue): DynamicImageViewer = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

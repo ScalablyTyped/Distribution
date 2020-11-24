@@ -3,7 +3,7 @@ package typings.awsSdk.ec2MetadataCredentialsMod
 import typings.awsSdk.credentialsMod.Credentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/credentials/ec2_metadata_credentials", "EC2MetadataCredentials")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class EC2MetadataCredentials () extends Credentials {
   def this(options: EC2MetadataCredentialsOptions) = this()
 }
-

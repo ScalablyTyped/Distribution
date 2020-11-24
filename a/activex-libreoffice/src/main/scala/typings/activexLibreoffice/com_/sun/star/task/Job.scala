@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloseListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represent a synchronous job, which can be executed by the global {@link theJobExecutor} instance.
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 trait Job
   extends XCloseable
      with XJob
-
 object Job {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -34,4 +34,3 @@ object Job {
     __obj.asInstanceOf[Job]
   }
 }
-

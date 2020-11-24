@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.RandomXYZ")
 @js.native
 object RandomXYZ extends js.Object {
+  
   /**
     * Compute a random position vector in a spherical area, optionally defined by the given radius.
     * @param vec3 The Vector to compute random values for.
@@ -15,4 +16,3 @@ object RandomXYZ extends js.Object {
   def apply(vec3: typings.phaser.Phaser.Math.Vector3): typings.phaser.Phaser.Math.Vector3 = js.native
   def apply(vec3: typings.phaser.Phaser.Math.Vector3, radius: Double): typings.phaser.Phaser.Math.Vector3 = js.native
 }
-

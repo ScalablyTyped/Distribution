@@ -11,14 +11,18 @@ import typings.rascal.rascalStrings.redeliveries_exceeded
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rascal", "SubscriptionSession")
 @js.native
 class SubscriptionSession () extends EventEmitter {
-  var name: String = js.native
-  def cancel(): js.Promise[Unit] = js.native
+  
+  def cancel(next: ErrorCb): Unit = js.native
+  
   def isCancelled(): Boolean = js.native
+  
+  var name: String = js.native
+  
   @JSName("on")
   def on_cancelled(event: cancelled, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
@@ -44,4 +48,3 @@ class SubscriptionSession () extends EventEmitter {
     listener: js.Function3[/* err */ Error, /* message */ Message, /* ackOrNackFn */ AckOrNack, Unit]
   ): this.type = js.native
 }
-

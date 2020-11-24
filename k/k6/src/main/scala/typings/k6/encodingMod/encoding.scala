@@ -2,7 +2,7 @@ package typings.k6.encodingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The encoding module provides base64 encoding/decoding.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/encoding", "encoding")
 @js.native
 object encoding extends js.Object
-

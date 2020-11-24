@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ProtectionType extends js.Object
-
 /**
   * An enumeration representing the parts of a spreadsheet that can be protected from edits.
   *
@@ -30,11 +29,10 @@ sealed trait ProtectionType extends js.Object
 @JSGlobal("GoogleAppsScript.Spreadsheet.ProtectionType")
 @js.native
 object ProtectionType extends js.Object {
+  
   @js.native
   sealed trait RANGE extends ProtectionType
   
   @js.native
   sealed trait SHEET extends ProtectionType
-  
 }
-

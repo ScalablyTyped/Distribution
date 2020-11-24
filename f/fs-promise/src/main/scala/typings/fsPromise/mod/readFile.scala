@@ -8,31 +8,12 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-promise", "readFile")
 @js.native
 object readFile extends js.Object {
-  def apply(file: String): js.Promise[Buffer] = js.native
-  def apply(file: String, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
-  def apply(file: String, encoding: String): js.Promise[String] = js.native
-  def apply(
-    file: String,
-    encoding: String,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = js.native
-  def apply(file: String, options: EncodingFlag): js.Promise[String] = js.native
-  def apply(
-    file: String,
-    options: EncodingFlag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
-  def apply(file: String, options: Flag): js.Promise[String] = js.native
-  def apply(
-    file: String,
-    options: Flag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
+  
   def apply(file: Double, options: EncodingFlag): js.Promise[String] = js.native
   def apply(
     file: Double,
@@ -45,23 +26,15 @@ object readFile extends js.Object {
     options: Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
-  def apply(file: Buffer): js.Promise[Buffer] = js.native
-  def apply(file: Buffer, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
-  def apply(file: Buffer, encoding: String): js.Promise[String] = js.native
+  def apply(file: PathLike, options: EncodingFlag): js.Promise[String] = js.native
   def apply(
-    file: Buffer,
-    encoding: String,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = js.native
-  def apply(file: Buffer, options: EncodingFlag): js.Promise[String] = js.native
-  def apply(
-    file: Buffer,
+    file: PathLike,
     options: EncodingFlag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
-  def apply(file: Buffer, options: Flag): js.Promise[String] = js.native
+  def apply(file: PathLike, options: Flag): js.Promise[String] = js.native
   def apply(
-    file: Buffer,
+    file: PathLike,
     options: Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
@@ -102,7 +75,7 @@ object readFile extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
   ): Unit = js.native
   def apply(path: PathLike): js.Promise[Buffer] = js.native
-  def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = js.native
+  def apply(path: PathLike, callback: js.Function2[(/* err */ ErrnoException) | Null, /* data */ Buffer, Unit]): Unit = js.native
   def apply(
     path: PathLike,
     options: js.UndefOr[scala.Nothing],
@@ -112,7 +85,7 @@ object readFile extends js.Object {
   def apply(
     path: PathLike,
     options: String,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
+    callback: js.Function2[(/* err */ ErrnoException) | Null, Buffer | (/* data */ String), Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -138,4 +111,3 @@ object readFile extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
   ): Unit = js.native
 }
-

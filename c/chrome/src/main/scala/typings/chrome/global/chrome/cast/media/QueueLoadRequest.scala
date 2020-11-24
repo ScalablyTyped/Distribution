@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast.media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.media.QueueLoadRequest")
 @js.native
@@ -15,4 +15,3 @@ class QueueLoadRequest protected ()
     */
   def this(items: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form.validation
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a convenience interface for accessing several aspects of a form component which supports validation.
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XValidatableFormComponent extends XValidatable {
+  
   /**
     * retrieves the current value of the component.
     *
@@ -32,6 +33,7 @@ trait XValidatableFormComponent extends XValidatable {
     * If no validator has been set ( {@link XValidatable.setValidator()} ), the value returned here is defined by the service implementing this interface.
     */
   val CurrentValue: js.Any = js.native
+  
   /**
     * registers the given listener.
     *
@@ -40,6 +42,7 @@ trait XValidatableFormComponent extends XValidatable {
     * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
     */
   def addFormComponentValidityListener(Listener: XFormComponentValidityListener): Unit = js.native
+  
   /**
     * retrieves the current value of the component.
     *
@@ -51,6 +54,7 @@ trait XValidatableFormComponent extends XValidatable {
     * If no validator has been set ( {@link XValidatable.setValidator()} ), the value returned here is defined by the service implementing this interface.
     */
   def getCurrentValue(): js.Any = js.native
+  
   /**
     * determines whether the current value of the component passed the validity test at the validator.
     *
@@ -60,14 +64,15 @@ trait XValidatableFormComponent extends XValidatable {
     * If no validator has been set ( {@link XValidatable.setValidator()} ), this method returns true.
     */
   def isValid(): Boolean = js.native
+  
   /**
     * registers the given listener.
     * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
     */
   def removeFormComponentValidityListener(Listener: XFormComponentValidityListener): Unit = js.native
 }
-
 object XValidatableFormComponent {
+  
   @scala.inline
   def apply(
     CurrentValue: js.Any,
@@ -85,28 +90,35 @@ object XValidatableFormComponent {
     val __obj = js.Dynamic.literal(CurrentValue = CurrentValue.asInstanceOf[js.Any], Validator = Validator.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addFormComponentValidityListener = js.Any.fromFunction1(addFormComponentValidityListener), getCurrentValue = js.Any.fromFunction0(getCurrentValue), getValidator = js.Any.fromFunction0(getValidator), isValid = js.Any.fromFunction0(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeFormComponentValidityListener = js.Any.fromFunction1(removeFormComponentValidityListener), setValidator = js.Any.fromFunction1(setValidator))
     __obj.asInstanceOf[XValidatableFormComponent]
   }
+  
   @scala.inline
   implicit class XValidatableFormComponentOps[Self <: XValidatableFormComponent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCurrentValue(value: js.Any): Self = this.set("CurrentValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = this.set("addFormComponentValidityListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetCurrentValue(value: () => js.Any): Self = this.set("getCurrentValue", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRemoveFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = this.set("removeFormComponentValidityListener", js.Any.fromFunction1(value))
   }
-  
 }
-

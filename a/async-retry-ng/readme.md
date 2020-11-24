@@ -11,8 +11,8 @@ Retrying made simple, easy and async
 | Full name          | async-retry-ng |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 237426 |
+| # dependents       | 1 |
+| # downloads        | 1770340 |
 | # stars            | 0 |
 
 ## Links

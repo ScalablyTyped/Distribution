@@ -10,9 +10,9 @@ A JavaScript parser
 | ------------------ | :-------------: |
 | Full name          | babylon |
 | Keywords           | babel, javascript, parser, babylon |
-| # releases         | 12 |
-| # dependents       | 915 |
-| # downloads        | 394307985 |
+| # releases         | 1 |
+| # dependents       | 960 |
+| # downloads        | 376315803 |
 | # stars            | 21 |
 
 ## Links

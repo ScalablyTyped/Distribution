@@ -6,31 +6,33 @@ import typings.materialLineRipple.anon.PartialMDCLineRippleAdapt
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/line-ripple", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCLineRipple ()
     extends typings.materialLineRipple.componentMod.MDCLineRipple
+  /* static members */
+  @js.native
+  object MDCLineRipple extends js.Object {
+    
+    def attachTo(root: Element): typings.materialLineRipple.componentMod.MDCLineRipple = js.native
+  }
   
   @js.native
   class MDCLineRippleFoundation ()
     extends typings.materialLineRipple.foundationMod.MDCLineRippleFoundation {
     def this(adapter: PartialMDCLineRippleAdapt) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCLineRipple extends js.Object {
-    def attachTo(root: Element): typings.materialLineRipple.componentMod.MDCLineRipple = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCLineRippleFoundation extends js.Object {
+    
     def cssClasses: LINERIPPLEACTIVE = js.native
+    
     /**
       * See {@link MDCLineRippleAdapter} for typing information on parameters and return types.
       */
@@ -61,9 +63,9 @@ object mod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var LINE_RIPPLE_ACTIVE: String = js.native
+    
     var LINE_RIPPLE_DEACTIVATING: String = js.native
   }
-  
 }
-

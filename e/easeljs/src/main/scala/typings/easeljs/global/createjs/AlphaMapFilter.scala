@@ -4,7 +4,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.AlphaMapFilter")
 @js.native
@@ -13,4 +13,3 @@ class AlphaMapFilter protected ()
   def this(alphaMap: HTMLCanvasElement) = this()
   def this(alphaMap: HTMLImageElement) = this()
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-plain-object" : "4.1.1"
+      "is-plain-object" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-plain-object" : "4.1.1"
+      "is-plain-object" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

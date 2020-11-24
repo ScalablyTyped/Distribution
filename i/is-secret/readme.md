@@ -12,7 +12,7 @@ A distributed maintained collection of patterns that indicate that something pro
 | Keywords           | secret, validate, redact, protect, filter |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 3541017 |
+| # downloads        | 3893419 |
 | # stars            | 1 |
 
 ## Links

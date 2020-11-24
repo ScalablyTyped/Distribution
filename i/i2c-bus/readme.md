@@ -10,9 +10,9 @@ I2C serial bus access with Node.js
 | ------------------ | :-------------: |
 | Full name          | i2c-bus |
 | Keywords           | i2c, iot, raspberry, raspi, rpi, pi, beaglebone, smbus, linux |
-| # releases         | 19 |
-| # dependents       | 135 |
-| # downloads        | 62830 |
+| # releases         | 11 |
+| # dependents       | 169 |
+| # downloads        | 81587 |
 | # stars            | 6 |
 
 ## Links

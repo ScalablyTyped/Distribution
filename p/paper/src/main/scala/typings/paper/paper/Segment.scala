@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Segment object represents the points of a path through which its
@@ -16,59 +16,31 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Segment extends js.Object {
-  /** 
-    * The curve that the segment belongs to. For the last segment of an open
-    * path, the previous segment is returned.
-    */
-  val curve: Curve = js.native
-  /** 
-    * The handle point relative to the anchor point of the segment that
-    * describes the in tangent of the segment.
-    */
-  var handleIn: Point = js.native
-  /** 
-    * The handle point relative to the anchor point of the segment that
-    * describes the out tangent of the segment.
-    */
-  var handleOut: Point = js.native
-  /** 
-    * The index of the segment in the {@link Path#segments} array that the
-    * segment belongs to.
-    */
-  val index: Double = js.native
-  /** 
-    * The curve location that describes this segment's position on the path.
-    */
-  val location: CurveLocation = js.native
-  /** 
-    * The next segment in the {@link Path#segments} array that the segment
-    * belongs to. If the segments belongs to a closed path, the first segment
-    * is returned for the last segment of the path.
-    */
-  val next: Segment = js.native
-  /** 
-    * The path that the segment belongs to.
-    */
-  val path: Path = js.native
-  /** 
-    * The anchor point of the segment.
-    */
-  var point: Point = js.native
-  /** 
-    * The previous segment in the {@link Path#segments} array that the
-    * segment belongs to. If the segments belongs to a closed path, the last
-    * segment is returned for the first segment of the path.
-    */
-  val previous: Segment = js.native
-  /** 
-    * Specifies whether the segment is selected.
-    */
-  var selected: Boolean = js.native
+  
   /** 
     * Clears the segment's handles by setting their coordinates to zero,
     * turning the segment into a corner.
     */
   def clearHandles(): Unit = js.native
+  
+  /** 
+    * The curve that the segment belongs to. For the last segment of an open
+    * path, the previous segment is returned.
+    */
+  val curve: Curve = js.native
+  
+  /** 
+    * The handle point relative to the anchor point of the segment that
+    * describes the in tangent of the segment.
+    */
+  var handleIn: Point = js.native
+  
+  /** 
+    * The handle point relative to the anchor point of the segment that
+    * describes the out tangent of the segment.
+    */
+  var handleOut: Point = js.native
+  
   /** 
     * Checks if the segment has any curve handles set.
     * 
@@ -80,6 +52,13 @@ trait Segment extends js.Object {
     * @return true if the segment has handles set
     */
   def hasHandles(): Boolean = js.native
+  
+  /** 
+    * The index of the segment in the {@link Path#segments} array that the
+    * segment belongs to.
+    */
+  val index: Double = js.native
+  
   /** 
     * Interpolates between the two specified segments and sets the point and
     * handles of this segment accordingly.
@@ -92,6 +71,7 @@ trait Segment extends js.Object {
     *     `0` and `1`, but extrapolation is possible too
     */
   def interpolate(from: Segment, to: Segment, factor: Double): Unit = js.native
+  
   /** 
     * Checks if the this is the first segment in the {@link Path#segments}
     * array.
@@ -99,6 +79,7 @@ trait Segment extends js.Object {
     * @return true if this is the first segment
     */
   def isFirst(): Boolean = js.native
+  
   /** 
     * Checks if the this is the last segment in the {@link Path#segments}
     * array.
@@ -106,6 +87,7 @@ trait Segment extends js.Object {
     * @return true if this is the last segment
     */
   def isLast(): Boolean = js.native
+  
   /** 
     * Checks if the segment connects two curves smoothly, meaning that its two
     * handles are collinear and segment does not form a corner.
@@ -115,12 +97,43 @@ trait Segment extends js.Object {
     * @return true if the segment is smooth
     */
   def isSmooth(): Boolean = js.native
+  
+  /** 
+    * The curve location that describes this segment's position on the path.
+    */
+  val location: CurveLocation = js.native
+  
+  /** 
+    * The next segment in the {@link Path#segments} array that the segment
+    * belongs to. If the segments belongs to a closed path, the first segment
+    * is returned for the last segment of the path.
+    */
+  val next: Segment = js.native
+  
+  /** 
+    * The path that the segment belongs to.
+    */
+  val path: Path = js.native
+  
+  /** 
+    * The anchor point of the segment.
+    */
+  var point: Point = js.native
+  
+  /** 
+    * The previous segment in the {@link Path#segments} array that the
+    * segment belongs to. If the segments belongs to a closed path, the last
+    * segment is returned for the first segment of the path.
+    */
+  val previous: Segment = js.native
+  
   /** 
     * Removes the segment from the path that it belongs to.
     * 
     * @return true if the segment was removed
     */
   def remove(): Boolean = js.native
+  
   /** 
     * Reverses the {@link #handleIn} and {@link #handleOut} vectors of this
     * segment, modifying the actual segment without creating a copy.
@@ -128,12 +141,19 @@ trait Segment extends js.Object {
     * @return the reversed segment
     */
   def reverse(): Segment = js.native
+  
   /** 
     * Returns the reversed the segment, without modifying the segment itself.
     * 
     * @return the reversed segment
     */
   def reversed(): Segment = js.native
+  
+  /** 
+    * Specifies whether the segment is selected.
+    */
+  var selected: Boolean = js.native
+  
   /** 
     * Smooths the bezier curves that pass through this segment by taking into
     * account the segment's position and distance to the neighboring segments
@@ -172,6 +192,7 @@ trait Segment extends js.Object {
     */
   def smooth(): Unit = js.native
   def smooth(options: js.Object): Unit = js.native
+  
   /** 
     * Transform the segment by the specified matrix.
     * 
@@ -179,4 +200,3 @@ trait Segment extends js.Object {
     */
   def transform(matrix: Matrix): Unit = js.native
 }
-

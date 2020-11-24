@@ -11,8 +11,8 @@ Get the version of a binary in semver format
 | Full name          | bin-version |
 | Keywords           | bin, binary, executable, version, semver, semantic, cli |
 | # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 38746723 |
+| # dependents       | 7 |
+| # downloads        | 47036747 |
 | # stars            | 0 |
 
 ## Links

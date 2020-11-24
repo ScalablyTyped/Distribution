@@ -10,9 +10,9 @@ Node.js compression middleware with brotli and zopfli support
 | ------------------ | :-------------: |
 | Full name          | shrink-ray |
 | Keywords           | compression, gzip, deflate, brotli, zopfli, middleware, express, connect, compress, content-encoding |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 134111 |
+| # downloads        | 59053 |
 | # stars            | 10 |
 
 ## Links

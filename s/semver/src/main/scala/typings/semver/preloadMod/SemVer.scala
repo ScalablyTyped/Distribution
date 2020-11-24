@@ -3,7 +3,7 @@ package typings.semver.preloadMod
 import typings.semver.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/preload", "SemVer")
 @js.native
@@ -16,4 +16,3 @@ class SemVer protected ()
   def this(version: typings.semver.semverMod.SemVer, optionsOrLoose: Boolean) = this()
   def this(version: typings.semver.semverMod.SemVer, optionsOrLoose: Options) = this()
 }
-

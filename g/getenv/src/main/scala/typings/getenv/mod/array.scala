@@ -3,11 +3,12 @@ package typings.getenv.mod
 import typings.node.urlMod.UrlWithStringQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("getenv", "array")
 @js.native
 object array extends js.Object {
+  
   /**
     * Split value of the environment variable at each comma and return the resulting array
     * where each value has been typecast according to the `type` parameter. An array can be
@@ -20,4 +21,3 @@ object array extends js.Object {
     fallback: js.Array[Boolean | Double | String | UrlWithStringQuery]
   ): js.Array[String] = js.native
 }
-

@@ -10,9 +10,9 @@ The default blueprint for ember-cli addons.
 | ------------------ | :-------------: |
 | Full name          | @ember-data/model |
 | Keywords           | ember-addon |
-| # releases         | 50 |
-| # dependents       | 2 |
-| # downloads        | 833090 |
+| # releases         | 85 |
+| # dependents       | 1 |
+| # downloads        | 2339061 |
 | # stars            | 0 |
 
 ## Links

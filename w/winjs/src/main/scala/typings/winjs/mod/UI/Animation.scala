@@ -6,7 +6,7 @@ import typings.winjs.WinJS.UI.Animation.IAnimationMethodResponse
 import typings.winjs.anon.Entrance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to the Windows animations. These functions provide developers with the ability to use animations in their custom controls that are consistent with animations used by Windows controls.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "UI.Animation")
 @js.native
 object Animation extends js.Object {
+  
   /**
     * Execute a continuum animation, scaling down the incoming page while scaling, rotating, and translating the incoming item.
     * @param page Single element to be scaled down that is the page root and contains the incoming item.
@@ -21,12 +22,14 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def continuumBackwardIn(page: js.Any, item: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a continuum animation, scaling down the outgoing page while.
     * @param page Single element to be scaled down that is the page root.
     * @returns A Promise that completes when the animation is finished.
     **/
   def continuumBackwardOut(page: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a continuum animation, scaling up the incoming page while scaling, rotating, and translating the incoming item.
     * @param page Single element to be scaled up that is the page root and does not contain the incoming item.
@@ -35,6 +38,7 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def continuumForwardIn(page: js.Any, itemRoot: js.Any, itemContent: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a continuum animation, scaling down the outgoing page while scaling, rotating, and translating the outgoing item.
     * @param page Single element to be scaled down that is the page root and contains the outgoing item.
@@ -42,6 +46,7 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def continuumForwardOut(page: js.Any, item: js.Any): Promise[_] = js.native
+  
   //#region Functions
   /**
     * Creates an object that performs an animation that adds an item or items to a list.
@@ -50,6 +55,7 @@ object Animation extends js.Object {
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createAddToListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an object that performs an animation that adds an item or items to a list of search results.
     * @param added Element or elements to add to the list.
@@ -57,6 +63,7 @@ object Animation extends js.Object {
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createAddToSearchListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an object that performs an animation that collapses a list.
     * @param hidden Element or elements hidden as a result of the collapse.
@@ -64,6 +71,7 @@ object Animation extends js.Object {
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createCollapseAnimation(hidden: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an object that performs an animation that removes an item or items from a list.
     * @param deleted Element or elements to delete from the list.
@@ -71,6 +79,7 @@ object Animation extends js.Object {
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createDeleteFromListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an object that performs an animation that removes an item or items from a list of search results.
     * @param deleted Element or elements to delete from the list.
@@ -78,6 +87,7 @@ object Animation extends js.Object {
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createDeleteFromSearchListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an object that performs an animation that expands a list.
     * @param revealed Element or elements revealed by the expansion.
@@ -85,6 +95,7 @@ object Animation extends js.Object {
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createExpandAnimation(revealed: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an exit and entrance animation to play for a page navigation given the current and incoming pages'
     * animation preferences and whether the pages are navigating forwards or backwards.
@@ -94,18 +105,21 @@ object Animation extends js.Object {
     * @returns an object containing the exit and entrance animations to play based on the parameters given.
     **/
   def createPageNavigationAnimations(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): Entrance = js.native
+  
   /**
     * Creates an object that performs a peek animation.
     * @param element Element or elements involved in the peek.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
   def createPeekAnimation(element: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Creates an object that performs an animation that moves an item or items.
     * @param element Element or elements involved in the reposition.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise object that completes when the animation is finished.
     **/
   def createRepositionAnimation(element: js.Any): IAnimationMethodResponse = js.native
+  
   /**
     * Performs an animation that fades an item or items in, fading out existing items that occupy the same space.
     * @param incoming Element or elements being faded in.
@@ -113,6 +127,7 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation has finished.
     **/
   def crossFade(incoming: js.Any, outgoing: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation when a dragged object is moved such that dropping it in that position would move other items. The potentially affected items are animated out of the way to show where the object would be dropped.
     * @param target Element or elements that the dragged object would cause to be moved if it were dropped.
@@ -121,12 +136,14 @@ object Animation extends js.Object {
     **/
   def dragBetweenEnter(target: js.Any): Promise[_] = js.native
   def dragBetweenEnter(target: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation when a dragged object is moved away from items that it had previously involved in a dragBetweenEnter animation. The affected objects are animated back to their original positions.
     * @param target Element or elements that the dragged object would no longer cause to be displaced, due to its moving away. This should be the same element or element collection passed as the target parameter in the dragBetweenEnter animation.
     * @returns An object that completes when the animation is finished.
     **/
   def dragBetweenLeave(target: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation when the user finishes dragging an object.
     * @param dragSource Element or elements that were dragged.
@@ -138,6 +155,7 @@ object Animation extends js.Object {
   def dragSourceEnd(dragSource: js.Any, offset: js.UndefOr[scala.Nothing], affected: js.Any): Promise[_] = js.native
   def dragSourceEnd(dragSource: js.Any, offset: js.Any): Promise[_] = js.native
   def dragSourceEnd(dragSource: js.Any, offset: js.Any, affected: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation when the user begins to drag an object.
     * @param dragSource Element or elements being dragged.
@@ -146,30 +164,35 @@ object Animation extends js.Object {
     **/
   def dragSourceStart(dragSource: js.Any): Promise[_] = js.native
   def dragSourceStart(dragSource: js.Any, affected: js.Any): Promise[_] = js.native
+  
   /**
     * Execute the incoming phase of the drill in animation, scaling up the incoming page while fading it in.
     * @param incomingPage Element to be scaled up and faded in.
     * @returns Promise object that completes when the animation is complete.
     **/
   def drillInIncoming(incomingPage: HTMLElement): Promise[_] = js.native
+  
   /**
     * Execute the outgoing phase of the drill in animation, scaling up the outgoing page while fading it out.
     * @param incomingPage Element to be scaled up and faded out.
     * @returns Promise object that completes when the animation is complete.
     **/
   def drillInOutgoing(outgoingPage: HTMLElement): Promise[_] = js.native
+  
   /**
     * Execute the incoming phase of the drill out animation, scaling down the incoming page while fading it in.
     * @param incomingPage Element to be scaled up and faded in.
     * @returns Promise object that completes when the animation is complete.
     **/
   def drillOutIncoming(incomingPage: HTMLElement): Promise[_] = js.native
+  
   /**
     * Execute the outgoing phase of the drill out animation, scaling down the outgoing page while fading it out.
     * @param outgoingPage Element to be scaled down and faded out.
     * @returns Promise object that completes when the animation is complete.
     **/
   def drillOutOutgoing(outgoingPage: HTMLElement): Promise[_] = js.native
+  
   /**
     * Performs an animation that displays one or more elements on a page.
     * @param incoming Element or elements that compose the incoming content.
@@ -181,6 +204,7 @@ object Animation extends js.Object {
   def enterContent(incoming: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
   def enterContent(incoming: js.Any, offset: js.Any): Promise[_] = js.native
   def enterContent(incoming: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that shows a new page of content, either when transitioning between pages in a running app or when displaying the first content in a newly launched app.
     * @param element Element or an array of elements that represent the content. If element refers to an array of elements, the elements enter in array order.
@@ -189,6 +213,7 @@ object Animation extends js.Object {
     **/
   def enterPage(element: js.Any): Promise[_] = js.native
   def enterPage(element: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that hides one or more elements on a page.
     * @param outgoing Element or elements that compose the outgoing content.
@@ -197,6 +222,7 @@ object Animation extends js.Object {
     **/
   def exitContent(outgoing: js.Any): Promise[_] = js.native
   def exitContent(outgoing: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that dismisses the current page when transitioning between pages in an app.
     * @param outgoing Element or elements that compose the outgoing page.
@@ -205,18 +231,21 @@ object Animation extends js.Object {
     **/
   def exitPage(outgoing: js.Any): Promise[_] = js.native
   def exitPage(outgoing: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that fades an item or set of items into view.
     * @param shown Element or elements being faded in.
     * @returns An object that completes when the animation has finished. Use this object when subsequent actions need this animation to finish before they take place.
     **/
   def fadeIn(shown: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that fades an item or set of items out of view.
     * @param hidden Element or elements being faded out.
     * @returns An object that completes when the animation is finished.
     **/
   def fadeOut(hidden: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that hides edge-based user interface (UI).
     * @param element Element or elements that are being hidden.
@@ -228,6 +257,7 @@ object Animation extends js.Object {
   def hideEdgeUI(element: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
   def hideEdgeUI(element: js.Any, offset: js.Any): Promise[_] = js.native
   def hideEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that hides a panel.
     * @param element Element or elements that are being hidden.
@@ -236,24 +266,28 @@ object Animation extends js.Object {
     **/
   def hidePanel(element: js.Any): Promise[_] = js.native
   def hidePanel(element: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that removes pop-up user interface (UI).
     * @param element Element or elements that are being hidden.
     * @returns An object that completes when the animation is finished.
     **/
   def hidePopup(element: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation when a pointer is pressed on an object.
     * @param element Element or elements on which the pointer is pressed.
     * @returns An object that completes when the animation is finished.
     **/
   def pointerDown(element: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation when a pointer is released.
     * @param element Element or elements that the pointer was pressed on.
     * @returns An object that completes when the animation is finished.
     **/
   def pointerUp(element: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that slides a narrow, edge-based user interface (UI) into view.
     * @param element Element or elements that are being shown.
@@ -265,6 +299,7 @@ object Animation extends js.Object {
   def showEdgeUI(element: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
   def showEdgeUI(element: js.Any, offset: js.Any): Promise[_] = js.native
   def showEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that slides a large panel user interface (UI) into view.
     * @param element Element or elements that are being shown.
@@ -273,6 +308,7 @@ object Animation extends js.Object {
     **/
   def showPanel(element: js.Any): Promise[_] = js.native
   def showPanel(element: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that displays a pop-up user interface (UI).
     * @param element Element or elements that are being shown.
@@ -281,12 +317,14 @@ object Animation extends js.Object {
     **/
   def showPopup(element: js.Any): Promise[_] = js.native
   def showPopup(element: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a slide down animation.
     * @param incoming Single element or collection of elements to animate sliding down.
     * @returns A Promise that completes when the animation is finished.
     **/
   def slideDown(incoming: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a slide in from right to left animation.
     * @param page The page containing all elements to slide.
@@ -296,6 +334,7 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def slideLeftIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a slide out from right to left animation.
     * @param page The page containing all elements to slide.
@@ -305,6 +344,7 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def slideLeftOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a slide in from left to right animation.
     * @param page The page containing all elements to slide.
@@ -314,6 +354,7 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def slideRightIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a slide out from left to right animation.
     * @param page The page containing all elements to slide.
@@ -323,12 +364,14 @@ object Animation extends js.Object {
     * @returns A Promise that completes when the animation is finished.
     **/
   def slideRightOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a slide up animation.
     * @param incoming Single element or collection of elements to animate sliding up.
     * @returns A Promise that completes when the animation is finished.
     **/
   def slideUp(incoming: js.Any): Promise[_] = js.native
+  
   /**
     * Performs a deselection animation in response to a swipe interaction.
     * @param deselected Element or elements that become unselected.
@@ -336,6 +379,7 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation is finished.
     **/
   def swipeDeselect(deselected: js.Any, selection: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that reveals an item or items in response to a swipe interaction.
     * @param target Element or elements being revealed.
@@ -344,6 +388,7 @@ object Animation extends js.Object {
     **/
   def swipeReveal(target: js.Any): Promise[_] = js.native
   def swipeReveal(target: js.Any, offset: js.Any): Promise[_] = js.native
+  
   /**
     * Performs a selection animation in response to a swipe interaction.
     * @param selected Element or elements being selected.
@@ -351,30 +396,35 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation is finished.
     **/
   def swipeSelect(selected: js.Any, selection: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a turnstile backward in animation.
     * @param incoming Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
   def turnstileBackwardIn(incoming: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a turnstile backward out animation.
     * @param outgoing Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
   def turnstileBackwardOut(outgoing: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a turnstile forward in animation.
     * @param incoming Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
   def turnstileForwardIn(incoming: js.Any): Promise[_] = js.native
+  
   /**
     * Execute a turnstile forward out animation.
     * @param outgoing Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
   def turnstileForwardOut(outgoing: js.Any): Promise[_] = js.native
+  
   /**
     * Performs an animation that updates a badge.
     * @param incoming Element or elements that comprise the new badge.
@@ -384,4 +434,3 @@ object Animation extends js.Object {
   def updateBadge(incoming: js.Any): Promise[_] = js.native
   def updateBadge(incoming: js.Any, offset: js.Any): Promise[_] = js.native
 }
-

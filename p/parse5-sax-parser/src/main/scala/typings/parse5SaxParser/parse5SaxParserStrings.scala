@@ -2,9 +2,25 @@ package typings.parse5SaxParser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parse5SaxParserStrings {
+  
+  @scala.inline
+  def comment: comment = "comment".asInstanceOf[comment]
+  
+  @scala.inline
+  def doctype: doctype = "doctype".asInstanceOf[doctype]
+  
+  @scala.inline
+  def endTag: endTag = "endTag".asInstanceOf[endTag]
+  
+  @scala.inline
+  def startTag: startTag = "startTag".asInstanceOf[startTag]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
   @js.native
   sealed trait comment extends js.Object
   
@@ -19,16 +35,4 @@ object parse5SaxParserStrings {
   
   @js.native
   sealed trait text extends js.Object
-  
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def doctype: doctype = "doctype".asInstanceOf[doctype]
-  @scala.inline
-  def endTag: endTag = "endTag".asInstanceOf[endTag]
-  @scala.inline
-  def startTag: startTag = "startTag".asInstanceOf[startTag]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
 }
-

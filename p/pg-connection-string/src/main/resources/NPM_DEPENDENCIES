@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pg-connection-string" : "2.3.0"
+      "pg-connection-string" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pg-connection-string" : "2.3.0"
+      "pg-connection-string" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

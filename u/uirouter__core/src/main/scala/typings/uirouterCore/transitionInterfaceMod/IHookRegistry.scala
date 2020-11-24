@@ -4,12 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.hookRegistryMod.RegisteredHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IHookRegistry extends js.Object {
+  
   /** @internal place to store the hooks */
   var _registeredHooks: StringDictionary[js.Array[RegisteredHook]] = js.native
+  
   /**
     * Returns all the registered hooks of a given `hookName` type
     *
@@ -19,6 +21,7 @@ trait IHookRegistry extends js.Object {
     * ```
     */
   def getHooks(hookName: String): js.Array[RegisteredHook] = js.native
+  
   /**
     * Registers a [[TransitionHookFn]], called *before a transition starts*.
     *
@@ -117,6 +120,7 @@ trait IHookRegistry extends js.Object {
     */
   def onBefore(matchCriteria: HookMatchCriteria, callback: TransitionHookFn): js.Function = js.native
   def onBefore(matchCriteria: HookMatchCriteria, callback: TransitionHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionStateHookFn]], called when a specific state is entered.
     *
@@ -189,6 +193,7 @@ trait IHookRegistry extends js.Object {
     */
   def onEnter(matchCriteria: HookMatchCriteria, callback: TransitionStateHookFn): js.Function = js.native
   def onEnter(matchCriteria: HookMatchCriteria, callback: TransitionStateHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionHookFn]], called after a transition has errored.
     *
@@ -232,6 +237,7 @@ trait IHookRegistry extends js.Object {
     */
   def onError(matchCriteria: HookMatchCriteria, callback: TransitionHookFn): js.Function = js.native
   def onError(matchCriteria: HookMatchCriteria, callback: TransitionHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionStateHookFn]], called when a specific state is exited.
     *
@@ -272,6 +278,7 @@ trait IHookRegistry extends js.Object {
     */
   def onExit(matchCriteria: HookMatchCriteria, callback: TransitionStateHookFn): js.Function = js.native
   def onExit(matchCriteria: HookMatchCriteria, callback: TransitionStateHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionHookFn]], called *just before a transition finishes*.
     *
@@ -300,6 +307,7 @@ trait IHookRegistry extends js.Object {
     */
   def onFinish(matchCriteria: HookMatchCriteria, callback: TransitionHookFn): js.Function = js.native
   def onFinish(matchCriteria: HookMatchCriteria, callback: TransitionHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionStateHookFn]], called when a specific state is retained/kept.
     *
@@ -338,6 +346,7 @@ trait IHookRegistry extends js.Object {
     */
   def onRetain(matchCriteria: HookMatchCriteria, callback: TransitionStateHookFn): js.Function = js.native
   def onRetain(matchCriteria: HookMatchCriteria, callback: TransitionStateHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionHookFn]], called when a transition starts.
     *
@@ -407,6 +416,7 @@ trait IHookRegistry extends js.Object {
     */
   def onStart(matchCriteria: HookMatchCriteria, callback: TransitionHookFn): js.Function = js.native
   def onStart(matchCriteria: HookMatchCriteria, callback: TransitionHookFn, options: HookRegOptions): js.Function = js.native
+  
   /**
     * Registers a [[TransitionHookFn]], called after a successful transition completed.
     *
@@ -435,4 +445,3 @@ trait IHookRegistry extends js.Object {
   def onSuccess(matchCriteria: HookMatchCriteria, callback: TransitionHookFn): js.Function = js.native
   def onSuccess(matchCriteria: HookMatchCriteria, callback: TransitionHookFn, options: HookRegOptions): js.Function = js.native
 }
-

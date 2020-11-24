@@ -2,11 +2,12 @@ package typings.jupyterlabCoreutils.urlMod.URLExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.parse")
 @js.native
 object parse extends js.Object {
+  
   /**
     * Parse a url into a URL object.
     *
@@ -16,4 +17,3 @@ object parse extends js.Object {
     */
   def apply(url: String): IUrl = js.native
 }
-

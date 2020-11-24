@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlideDBFunctionBuilder extends js.Object {
+  
   /**
     * Adds the values of two or more integer fields.
     *
@@ -18,6 +19,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     * myAddingFunction = functionBuilder.build();
     */
   def add(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Builds the database function defined by the GlideDBFunctionBuilder object.
     *
@@ -31,6 +33,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     * gs.print(myAddingFunction);
     */
   def build(): String = js.native
+  
   /**
     * Concatenates the values of two or more fields.
     * Use the `field(String field)` method to define fields on which the operation is performed.
@@ -44,6 +47,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     * myConcatFunction = functionBuilder.build();
     */
   def concat(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Defines a constant value to use in the function. If used with the `dayofweek()` method, the
     * string defines whether to use Sunday or Monday as the first day of the week.
@@ -61,11 +65,13 @@ trait GlideDBFunctionBuilder extends js.Object {
     * the first day of the week.
     */
   def constant(constant: String): GlideDBFunctionBuilder = js.native
+  
   /**
     * Determines the duration using a given start date/time and end date/time.
     * Use the `field(String field)` method to define start and end date/time fields.
     */
   def datediff(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Returns an integer representing the day of the week for a given date.
     *
@@ -109,6 +115,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     *
     */
   def dayofweek(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Divides the value of one integer field by another.
     * Use the `field(String field)` method to define fields on which the operation is performed.
@@ -122,6 +129,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     * myDivideFunction = functionBuilder.build();
     */
   def divide(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Defines a field on which a SQL operation is performed.
     *
@@ -135,6 +143,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     * myAddingFunction = functionBuilder.build();
     */
   def field(field: String): GlideDBFunctionBuilder = js.native
+  
   /**
     * Determines the number of code units in a field.
     * Use the `field(String field)` method to define fields on which the operation is performed.
@@ -148,6 +157,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     *
     */
   def length(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Multiplies the values of two integer fields.
     * Use the `field(String field)` method to define fields on which the operation is performed.
@@ -161,6 +171,7 @@ trait GlideDBFunctionBuilder extends js.Object {
     * myMultiplyFunction = functionBuilder.build();
     */
   def multiply(): GlideDBFunctionBuilder = js.native
+  
   /**
     * Subtracts the value of one integer field from another.
     * Use the `field(String field)` method to define fields on which the operation is performed.
@@ -175,8 +186,8 @@ trait GlideDBFunctionBuilder extends js.Object {
     */
   def subtract(): GlideDBFunctionBuilder = js.native
 }
-
 object GlideDBFunctionBuilder {
+  
   @scala.inline
   def apply(
     add: () => GlideDBFunctionBuilder,
@@ -194,40 +205,53 @@ object GlideDBFunctionBuilder {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction0(add), build = js.Any.fromFunction0(build), concat = js.Any.fromFunction0(concat), constant = js.Any.fromFunction1(constant), datediff = js.Any.fromFunction0(datediff), dayofweek = js.Any.fromFunction0(dayofweek), divide = js.Any.fromFunction0(divide), field = js.Any.fromFunction1(field), length = js.Any.fromFunction0(length), multiply = js.Any.fromFunction0(multiply), subtract = js.Any.fromFunction0(subtract))
     __obj.asInstanceOf[GlideDBFunctionBuilder]
   }
+  
   @scala.inline
   implicit class GlideDBFunctionBuilderOps[Self <: GlideDBFunctionBuilder] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAdd(value: () => GlideDBFunctionBuilder): Self = this.set("add", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setBuild(value: () => String): Self = this.set("build", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setConcat(value: () => GlideDBFunctionBuilder): Self = this.set("concat", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setConstant(value: String => GlideDBFunctionBuilder): Self = this.set("constant", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDatediff(value: () => GlideDBFunctionBuilder): Self = this.set("datediff", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setDayofweek(value: () => GlideDBFunctionBuilder): Self = this.set("dayofweek", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setDivide(value: () => GlideDBFunctionBuilder): Self = this.set("divide", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setField(value: String => GlideDBFunctionBuilder): Self = this.set("field", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setLength(value: () => GlideDBFunctionBuilder): Self = this.set("length", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setMultiply(value: () => GlideDBFunctionBuilder): Self = this.set("multiply", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSubtract(value: () => GlideDBFunctionBuilder): Self = this.set("subtract", js.Any.fromFunction0(value))
   }
-  
 }
-

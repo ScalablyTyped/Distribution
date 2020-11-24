@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.form.XBoundControl
 import typings.activexLibreoffice.com_.sun.star.form.XChangeBroadcaster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a control for entering arbitrary text which can (but not necessarily has to) be bound to a database field.
@@ -22,4 +22,3 @@ trait TextField
   extends UnoControlEdit
      with XBoundControl
      with XChangeBroadcaster
-

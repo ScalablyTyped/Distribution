@@ -2,10 +2,9 @@ package typings.activexExcel.global.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Excel.DisplayUnitLabel")
 @js.native
 class DisplayUnitLabel protected ()
   extends typings.activexExcel.Excel.DisplayUnitLabel
-

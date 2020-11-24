@@ -3,7 +3,7 @@ package typings.fabric.mod.fabric
 import typings.fabric.fabricImplMod.ITextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.IText")
 @js.native
@@ -17,11 +17,11 @@ class IText protected ()
   def this(text: String) = this()
   def this(text: String, options: ITextOptions) = this()
 }
-
 /* static members */
 @JSImport("fabric", "fabric.IText")
 @js.native
 object IText extends js.Object {
+  
   /**
     * Returns fabric.IText instance from an object representation
     * @static
@@ -32,4 +32,3 @@ object IText extends js.Object {
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.IText = js.native
   def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.IText = js.native
 }
-

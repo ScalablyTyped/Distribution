@@ -3,11 +3,12 @@ package typings.promiseRetry
 import typings.retry.mod.OperationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promise-retry", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply[ResolutionType](options: OperationOptions, retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
   /**
     * Wrap all functions of the object with retry. The params can be entered in either order, just like in the original library.
@@ -18,6 +19,7 @@ object mod extends js.Object {
     */
   def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
   def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType], options: OperationOptions): js.Promise[ResolutionType] = js.native
+  
   /**
     * A function that is retryable, by having implicitly-bound params for both an error handler and an attempt number.
     *
@@ -33,4 +35,3 @@ object mod extends js.Object {
     js.Promise[ResolutionType]
   ]
 }
-

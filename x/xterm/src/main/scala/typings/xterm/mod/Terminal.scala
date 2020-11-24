@@ -55,7 +55,7 @@ import typings.xterm.xtermStrings.windowsMode
 import typings.xterm.xtermStrings.wordSeparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xterm", "Terminal")
 @js.native
@@ -66,126 +66,12 @@ import scala.scalajs.js.annotation._
   */
 class Terminal () extends IDisposable {
   def this(options: ITerminalOptions) = this()
-  /**
-    * (EXPERIMENTAL) The terminal's current buffer, this might be either the
-    * normal buffer or the alt buffer depending on what's running in the
-    * terminal.
-    */
-  val buffer: IBufferNamespace = js.native
-  /**
-    * The number of columns in the terminal's viewport. Use
-    * `ITerminalOptions.cols` to set this in the constructor and
-    * `Terminal.resize` for when the terminal exists.
-    */
-  val cols: Double = js.native
-  /**
-    * The element containing the terminal.
-    */
-  val element: js.UndefOr[HTMLElement] = js.native
-  /**
-    * (EXPERIMENTAL) Get all markers registered against the buffer. If the alt
-    * buffer is active this will always return [].
-    */
-  val markers: js.Array[IMarker] = js.native
-  /**
-    * Adds an event listener for when a binary event fires. This is used to
-    * enable non UTF-8 conformant binary messages to be sent to the backend.
-    * Currently this is only used for a certain type of mouse reports that
-    * happen to be not UTF-8 compatible.
-    * The event value is a JS string, pass it to the underlying pty as
-    * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onBinary")
-  var onBinary_Original: IEvent[String, Unit] = js.native
-  /**
-    * Adds an event listener for the cursor moves.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onCursorMove")
-  var onCursorMove_Original: IEvent[Unit, Unit] = js.native
-  /**
-    * Adds an event listener for when a data event fires. This happens for
-    * example when the user types or pastes into the terminal. The event value
-    * is whatever `string` results, in a typical setup, this should be passed
-    * on to the backing pty.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onData")
-  var onData_Original: IEvent[String, Unit] = js.native
-  /**
-    * Adds an event listener for when a key is pressed. The event value contains the
-    * string that will be sent in the data event as well as the DOM event that
-    * triggered it.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onKey")
-  var onKey_Original: IEvent[DomEvent, Unit] = js.native
-  /**
-    * Adds an event listener for when a line feed is added.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onLineFeed")
-  var onLineFeed_Original: IEvent[Unit, Unit] = js.native
-  /**
-    * Adds an event listener for when rows are rendered. The event value
-    * contains the start row and end rows of the rendered area (ranges from `0`
-    * to `Terminal.rows - 1`).
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onRender")
-  var onRender_Original: IEvent[End, Unit] = js.native
-  /**
-    * Adds an event listener for when the terminal is resized. The event value
-    * contains the new size.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onResize")
-  var onResize_Original: IEvent[Cols, Unit] = js.native
-  /**
-    * Adds an event listener for when a scroll occurs. The event value is the
-    * new position of the viewport.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onScroll")
-  var onScroll_Original: IEvent[Double, Unit] = js.native
-  /**
-    * Adds an event listener for when a selection change occurs.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onSelectionChange")
-  var onSelectionChange_Original: IEvent[Unit, Unit] = js.native
-  /**
-    * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
-    * The event value is the new title.
-    * @returns an `IDisposable` to stop listening.
-    */
-  @JSName("onTitleChange")
-  var onTitleChange_Original: IEvent[String, Unit] = js.native
-  /**
-    * (EXPERIMENTAL) Get the parser interface to register
-    * custom escape sequence handlers.
-    */
-  val parser: IParser = js.native
-  /**
-    * The number of rows in the terminal's viewport. Use
-    * `ITerminalOptions.rows` to set this in the constructor and
-    * `Terminal.resize` for when the terminal exists.
-    */
-  val rows: Double = js.native
-  /**
-    * The textarea that accepts input for the terminal.
-    */
-  val textarea: js.UndefOr[HTMLTextAreaElement] = js.native
-  /**
-    * (EXPERIMENTAL) Get the Unicode handling interface
-    * to register and switch Unicode version.
-    */
-  val unicode: IUnicodeHandling = js.native
+  
   /**
     * @deprecated use `registerMarker` instead.
     */
   def addMarker(cursorYOffset: Double): js.UndefOr[IMarker] = js.native
+  
   /**
     * Attaches a custom key event handler which is run before keys are
     * processed, giving consumers of xterm.js ultimate control as to what keys
@@ -196,24 +82,43 @@ class Terminal () extends IDisposable {
     * whether the event should be processed by xterm.js.
     */
   def attachCustomKeyEventHandler(customKeyEventHandler: js.Function1[/* event */ KeyboardEvent, Boolean]): Unit = js.native
+  
   /**
     * Unfocus the terminal.
     */
   def blur(): Unit = js.native
+  
+  /**
+    * (EXPERIMENTAL) The terminal's current buffer, this might be either the
+    * normal buffer or the alt buffer depending on what's running in the
+    * terminal.
+    */
+  val buffer: IBufferNamespace = js.native
+  
   /**
     * Clear the entire buffer, making the prompt line the new first line.
     */
   def clear(): Unit = js.native
+  
   /**
     * Clears the current terminal selection.
     */
   def clearSelection(): Unit = js.native
+  
+  /**
+    * The number of columns in the terminal's viewport. Use
+    * `ITerminalOptions.cols` to set this in the constructor and
+    * `Terminal.resize` for when the terminal exists.
+    */
+  val cols: Double = js.native
+  
   /**
     * (EXPERIMENTAL) Deregisters the character joiner if one was registered.
     * NOTE: character joiners are only used by the canvas renderer.
     * @param joinerId The character joiner's ID (returned after register)
     */
   def deregisterCharacterJoiner(joinerId: Double): Unit = js.native
+  
   /**
     * (EXPERIMENTAL) Deregisters a link matcher if it has been registered.
     * @deprecated The link matcher API is now deprecated in favor of the link
@@ -221,10 +126,17 @@ class Terminal () extends IDisposable {
     * @param matcherId The link matcher's ID (returned after register)
     */
   def deregisterLinkMatcher(matcherId: Double): Unit = js.native
+  
+  /**
+    * The element containing the terminal.
+    */
+  val element: js.UndefOr[HTMLElement] = js.native
+  
   /**
     * Focus the terminal.
     */
   def focus(): Unit = js.native
+  
   /**
     * Retrieves an option's value from the terminal.
     * @param key The option key.
@@ -264,10 +176,14 @@ class Terminal () extends IDisposable {
   def getOption_fontFamily(key: fontFamily): String = js.native
   @JSName("getOption")
   def getOption_fontSize(key: fontSize): Double = js.native
+  /**
+    * Retrieves an option's value from the terminal.
+    * @param key The option key.
+    */
   @JSName("getOption")
-  def getOption_fontWeight(key: fontWeight): String = js.native
+  def getOption_fontWeight(key: fontWeight): FontWeight = js.native
   @JSName("getOption")
-  def getOption_fontWeightBold(key: fontWeightBold): String = js.native
+  def getOption_fontWeightBold(key: fontWeightBold): FontWeight = js.native
   @JSName("getOption")
   def getOption_letterSpacing(key: letterSpacing): Double = js.native
   @JSName("getOption")
@@ -296,24 +212,35 @@ class Terminal () extends IDisposable {
   def getOption_windowsMode(key: windowsMode): Boolean = js.native
   @JSName("getOption")
   def getOption_wordSeparator(key: wordSeparator): String = js.native
+  
   /**
     * Gets the terminal's current selection, this is useful for implementing
     * copy behavior outside of xterm.js.
     */
   def getSelection(): String = js.native
+  
   /**
     * Gets the selection position or undefined if there is no selection.
     */
   def getSelectionPosition(): js.UndefOr[ISelectionPosition] = js.native
+  
   /**
     * Gets whether the terminal has an active selection.
     */
   def hasSelection(): Boolean = js.native
+  
   /**
     * Loads an addon into this instance of xterm.js.
     * @param addon The addon to load.
     */
   def loadAddon(addon: ITerminalAddon): Unit = js.native
+  
+  /**
+    * (EXPERIMENTAL) Get all markers registered against the buffer. If the alt
+    * buffer is active this will always return [].
+    */
+  val markers: js.Array[IMarker] = js.native
+  
   /**
     * Adds an event listener for when a binary event fires. This is used to
     * enable non UTF-8 conformant binary messages to be sent to the backend.
@@ -325,10 +252,29 @@ class Terminal () extends IDisposable {
     */
   def onBinary(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
+    * Adds an event listener for when a binary event fires. This is used to
+    * enable non UTF-8 conformant binary messages to be sent to the backend.
+    * Currently this is only used for a certain type of mouse reports that
+    * happen to be not UTF-8 compatible.
+    * The event value is a JS string, pass it to the underlying pty as
+    * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onBinary")
+  var onBinary_Original: IEvent[String, Unit] = js.native
+  
+  /**
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
     */
   def onCursorMove(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for the cursor moves.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onCursorMove")
+  var onCursorMove_Original: IEvent[Unit, Unit] = js.native
+  
   /**
     * Adds an event listener for when a data event fires. This happens for
     * example when the user types or pastes into the terminal. The event value
@@ -338,6 +284,16 @@ class Terminal () extends IDisposable {
     */
   def onData(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
+    * Adds an event listener for when a data event fires. This happens for
+    * example when the user types or pastes into the terminal. The event value
+    * is whatever `string` results, in a typical setup, this should be passed
+    * on to the backing pty.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onData")
+  var onData_Original: IEvent[String, Unit] = js.native
+  
+  /**
     * Adds an event listener for when a key is pressed. The event value contains the
     * string that will be sent in the data event as well as the DOM event that
     * triggered it.
@@ -345,10 +301,26 @@ class Terminal () extends IDisposable {
     */
   def onKey(listener: js.Function2[/* arg1 */ DomEvent, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
+    * Adds an event listener for when a key is pressed. The event value contains the
+    * string that will be sent in the data event as well as the DOM event that
+    * triggered it.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onKey")
+  var onKey_Original: IEvent[DomEvent, Unit] = js.native
+  
+  /**
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
     */
   def onLineFeed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when a line feed is added.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onLineFeed")
+  var onLineFeed_Original: IEvent[Unit, Unit] = js.native
+  
   /**
     * Adds an event listener for when rows are rendered. The event value
     * contains the start row and end rows of the rendered area (ranges from `0`
@@ -357,11 +329,28 @@ class Terminal () extends IDisposable {
     */
   def onRender(listener: js.Function2[/* arg1 */ End, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
+    * Adds an event listener for when rows are rendered. The event value
+    * contains the start row and end rows of the rendered area (ranges from `0`
+    * to `Terminal.rows - 1`).
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onRender")
+  var onRender_Original: IEvent[End, Unit] = js.native
+  
+  /**
     * Adds an event listener for when the terminal is resized. The event value
     * contains the new size.
     * @returns an `IDisposable` to stop listening.
     */
   def onResize(listener: js.Function2[/* arg1 */ Cols, /* arg2 */ Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when the terminal is resized. The event value
+    * contains the new size.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onResize")
+  var onResize_Original: IEvent[Cols, Unit] = js.native
+  
   /**
     * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
@@ -369,10 +358,25 @@ class Terminal () extends IDisposable {
     */
   def onScroll(listener: js.Function2[/* arg1 */ Double, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
+    * Adds an event listener for when a scroll occurs. The event value is the
+    * new position of the viewport.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onScroll")
+  var onScroll_Original: IEvent[Double, Unit] = js.native
+  
+  /**
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
     */
   def onSelectionChange(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when a selection change occurs.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onSelectionChange")
+  var onSelectionChange_Original: IEvent[Unit, Unit] = js.native
+  
   /**
     * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
     * The event value is the new title.
@@ -380,17 +384,33 @@ class Terminal () extends IDisposable {
     */
   def onTitleChange(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
+    * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
+    * The event value is the new title.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onTitleChange")
+  var onTitleChange_Original: IEvent[String, Unit] = js.native
+  
+  /**
     * Opens the terminal within an element.
     * @param parent The element to create the terminal within. This element
     * must be visible (have dimensions) when `open` is called as several DOM-
     * based measurements need to be performed when this function is called.
     */
   def open(parent: HTMLElement): Unit = js.native
+  
+  /**
+    * (EXPERIMENTAL) Get the parser interface to register
+    * custom escape sequence handlers.
+    */
+  val parser: IParser = js.native
+  
   /**
     * Writes text to the terminal, performing the necessary transformations for pasted text.
     * @param data The text to write to the terminal.
     */
   def paste(data: String): Unit = js.native
+  
   /**
     * Tells the renderer to refresh terminal content between two rows
     * (inclusive) at the next opportunity.
@@ -398,6 +418,7 @@ class Terminal () extends IDisposable {
     * @param end The row to end at (between start and this.rows - 1).
     */
   def refresh(start: Double, end: Double): Unit = js.native
+  
   /**
     * (EXPERIMENTAL) Registers a character joiner, allowing custom sequences of
     * characters to be rendered as a single unit. This is useful in particular
@@ -428,6 +449,7 @@ class Terminal () extends IDisposable {
     * @return The ID of the new joiner, this can be used to deregister
     */
   def registerCharacterJoiner(handler: js.Function1[/* text */ String, js.Array[js.Tuple2[Double, Double]]]): Double = js.native
+  
   /**
     * (EXPERIMENTAL) Registers a link matcher, allowing custom link patterns to
     * be matched and handled.
@@ -446,6 +468,7 @@ class Terminal () extends IDisposable {
     handler: js.Function2[/* event */ MouseEvent, /* uri */ String, Unit],
     options: ILinkMatcherOptions
   ): Double = js.native
+  
   /**
     * (EXPERIMENTAL) Registers a link provider, allowing a custom parser to
     * be used to match and handle links. Multiple link providers can be used,
@@ -453,6 +476,7 @@ class Terminal () extends IDisposable {
     * @param linkProvider The link provider to use to detect links.
     */
   def registerLinkProvider(linkProvider: ILinkProvider): IDisposable = js.native
+  
   /**
     * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
     * alt buffer is active, undefined is returned.
@@ -460,10 +484,12 @@ class Terminal () extends IDisposable {
     * @returns The new marker or undefined.
     */
   def registerMarker(cursorYOffset: Double): js.UndefOr[IMarker] = js.native
+  
   /**
     * Perform a full reset (RIS, aka '\x1bc').
     */
   def reset(): Unit = js.native
+  
   /**
     * Resizes the terminal. It's best practice to debounce calls to resize,
     * this will help ensure that the pty can respond to the resize event
@@ -472,29 +498,42 @@ class Terminal () extends IDisposable {
     * @param y The number of rows to resize to.
     */
   def resize(columns: Double, rows: Double): Unit = js.native
+  
+  /**
+    * The number of rows in the terminal's viewport. Use
+    * `ITerminalOptions.rows` to set this in the constructor and
+    * `Terminal.resize` for when the terminal exists.
+    */
+  val rows: Double = js.native
+  
   /**
     * Scroll the display of the terminal
     * @param amount The number of lines to scroll down (negative scroll up).
     */
   def scrollLines(amount: Double): Unit = js.native
+  
   /**
     * Scroll the display of the terminal by a number of pages.
     * @param pageCount The number of pages to scroll (negative scrolls up).
     */
   def scrollPages(pageCount: Double): Unit = js.native
+  
   /**
     * Scrolls the display of the terminal to the bottom.
     */
   def scrollToBottom(): Unit = js.native
+  
   /**
     * Scrolls to a line within the buffer.
     * @param line The 0-based line index to scroll to.
     */
   def scrollToLine(line: Double): Unit = js.native
+  
   /**
     * Scrolls the display of the terminal to the top.
     */
   def scrollToTop(): Unit = js.native
+  
   /**
     * Selects text within the terminal.
     * @param column The column the selection starts at.
@@ -502,16 +541,19 @@ class Terminal () extends IDisposable {
     * @param length The length of the selection.
     */
   def select(column: Double, row: Double, length: Double): Unit = js.native
+  
   /**
     * Selects all text within the terminal.
     */
   def selectAll(): Unit = js.native
+  
   /**
     * Selects text in the buffer between 2 lines.
     * @param start The 0-based line index to select from (inclusive).
     * @param end The 0-based line index to select to (inclusive).
     */
   def selectLines(start: Double, end: Double): Unit = js.native
+  
   /**
     * Sets an option on the terminal.
     * @param key The option key.
@@ -607,7 +649,11 @@ class Terminal () extends IDisposable {
   @JSName("setOption")
   def setOption_fontWeight(key: fontWeight): Unit = js.native
   @JSName("setOption")
+  def setOption_fontWeight(key: fontWeight, value: Double): Unit = js.native
+  @JSName("setOption")
   def setOption_fontWeightBold(key: fontWeightBold): Unit = js.native
+  @JSName("setOption")
+  def setOption_fontWeightBold(key: fontWeightBold, value: Double): Unit = js.native
   @JSName("setOption")
   def setOption_letterSpacing(key: letterSpacing, value: Double): Unit = js.native
   @JSName("setOption")
@@ -646,6 +692,18 @@ class Terminal () extends IDisposable {
   def setOption_windowsMode(key: windowsMode, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_wordSeparator(key: wordSeparator, value: String): Unit = js.native
+  
+  /**
+    * The textarea that accepts input for the terminal.
+    */
+  val textarea: js.UndefOr[HTMLTextAreaElement] = js.native
+  
+  /**
+    * (EXPERIMENTAL) Get the Unicode handling interface
+    * to register and switch Unicode version.
+    */
+  val unicode: IUnicodeHandling = js.native
+  
   /**
     * Write data to the terminal.
     * @param data The data to write to the terminal. This can either be raw
@@ -658,6 +716,7 @@ class Terminal () extends IDisposable {
   def write(data: String, callback: js.Function0[Unit]): Unit = js.native
   def write(data: Uint8Array): Unit = js.native
   def write(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Write UTF8 data to the terminal.
     * @param data The data to write to the terminal.
@@ -666,6 +725,7 @@ class Terminal () extends IDisposable {
     */
   def writeUtf8(data: Uint8Array): Unit = js.native
   def writeUtf8(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Writes data to the terminal, followed by a break line character (\n).
     * @param data The data to write to the terminal. This can either be raw
@@ -679,14 +739,13 @@ class Terminal () extends IDisposable {
   def writeln(data: Uint8Array): Unit = js.native
   def writeln(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
 }
-
 /* static members */
 @JSImport("xterm", "Terminal")
 @js.native
 object Terminal extends js.Object {
+  
   /**
     * Natural language strings that can be localized.
     */
   var strings: ILocalizableStrings = js.native
 }
-

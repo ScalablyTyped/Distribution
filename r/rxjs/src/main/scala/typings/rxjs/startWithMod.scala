@@ -5,11 +5,12 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/startWith", JSImport.Namespace)
 @js.native
 object startWithMod extends js.Object {
+  
   def startWith[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def startWith[T, D](array: (D | SchedulerLike)*): OperatorFunction[T, T | D] = js.native
   def startWith[T, D](v1: D): OperatorFunction[T, T | D] = js.native
@@ -25,4 +26,3 @@ object startWithMod extends js.Object {
   def startWith[T, D, E, F, G, H, I](v1: D, v2: E, v3: F, v4: G, v5: H, v6: I): OperatorFunction[T, T | D | E | F | G | H | I] = js.native
   def startWith[T, D, E, F, G, H, I](v1: D, v2: E, v3: F, v4: G, v5: H, v6: I, scheduler: SchedulerLike): OperatorFunction[T, T | D | E | F | G | H | I] = js.native
 }
-

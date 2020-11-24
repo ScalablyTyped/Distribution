@@ -12,7 +12,7 @@ The officially supported AngularJS binding for Firebase
 | Keywords           | angular, angularjs, firebase, realtime |
 | # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 68763 |
+| # downloads        | 63686 |
 | # stars            | 6 |
 
 ## Links

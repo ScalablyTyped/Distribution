@@ -5,9 +5,8 @@ import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aria-query", "roleElements")
 @js.native
 object roleElements extends TopLevel[Map[ARIARoleDefintionKey, Set[ARIARoleRelationConcept]]]
-

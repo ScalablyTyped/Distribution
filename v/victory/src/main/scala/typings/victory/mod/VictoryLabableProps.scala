@@ -3,11 +3,12 @@ package typings.victory.mod
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Common labable interface
 @js.native
 trait VictoryLabableProps extends js.Object {
+  
   /**
     * The labelComponent prop takes in an entire label component which will be used
     * to create a label for the area. The new element created from the passed labelComponent
@@ -22,29 +23,33 @@ trait VictoryLabableProps extends js.Object {
     */
   var labelComponent: js.UndefOr[ReactElement] = js.native
 }
-
 object VictoryLabableProps {
+  
   @scala.inline
   def apply(): VictoryLabableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryLabableProps]
   }
+  
   @scala.inline
   implicit class VictoryLabablePropsOps[Self <: VictoryLabableProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLabelComponent(value: ReactElement): Self = this.set("labelComponent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelComponent: Self = this.set("labelComponent", js.undefined)
   }
-  
 }
-

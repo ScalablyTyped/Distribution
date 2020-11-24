@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regiontargethttpproxies")
 @js.native
 class ResourceRegiontargethttpproxies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionTargetHttpProxies.delete
     * @desc Deletes the specified TargetHttpProxy resource.
@@ -47,6 +49,7 @@ class ResourceRegiontargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionTargetHttpProxies.get
     * @desc Returns the specified TargetHttpProxy resource in the specified
@@ -82,6 +85,7 @@ class ResourceRegiontargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpProxy]
   ): Unit = js.native
+  
   /**
     * compute.regionTargetHttpProxies.insert
     * @desc Creates a TargetHttpProxy resource in the specified project and
@@ -117,6 +121,7 @@ class ResourceRegiontargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionTargetHttpProxies.list
     * @desc Retrieves the list of TargetHttpProxy resources available to the
@@ -154,6 +159,7 @@ class ResourceRegiontargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpProxyList]
   ): Unit = js.native
+  
   /**
     * compute.regionTargetHttpProxies.setUrlMap
     * @desc Changes the URL map for TargetHttpProxy.
@@ -189,6 +195,7 @@ class ResourceRegiontargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionTargetHttpProxies.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -224,4 +231,3 @@ class ResourceRegiontargethttpproxies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

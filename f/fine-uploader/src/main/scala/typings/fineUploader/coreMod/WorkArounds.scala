@@ -2,10 +2,11 @@ package typings.fineUploader.coreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkArounds extends js.Object {
+  
   /**
     * Ensures all `<input type='file'>` elements tracked by Fine Uploader always have a `multiple` attribute present.
     *
@@ -14,6 +15,7 @@ trait WorkArounds extends js.Object {
     * @default `false`
     */
   var ios8BrowserCrash: js.UndefOr[Boolean] = js.native
+  
   /**
     * Disables Fine Uploader and displays a message to the user in iOS 8.0.0 Safari.
     *
@@ -23,6 +25,7 @@ trait WorkArounds extends js.Object {
     * @default `true`
     */
   var ios8SafariUploads: js.UndefOr[Boolean] = js.native
+  
   /**
     * Ensures all `<input type='file'>` elements tracked by Fine Uploader do NOT contain a `multiple` attribute to work around an issue present in iOS7 & 8 that otherwise results in 0-sized uploaded videos
     *
@@ -30,37 +33,45 @@ trait WorkArounds extends js.Object {
     */
   var iosEmptyVideos: js.UndefOr[Boolean] = js.native
 }
-
 object WorkArounds {
+  
   @scala.inline
   def apply(): WorkArounds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkArounds]
   }
+  
   @scala.inline
   implicit class WorkAroundsOps[Self <: WorkArounds] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIos8BrowserCrash(value: Boolean): Self = this.set("ios8BrowserCrash", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIos8BrowserCrash: Self = this.set("ios8BrowserCrash", js.undefined)
+    
     @scala.inline
     def setIos8SafariUploads(value: Boolean): Self = this.set("ios8SafariUploads", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIos8SafariUploads: Self = this.set("ios8SafariUploads", js.undefined)
+    
     @scala.inline
     def setIosEmptyVideos(value: Boolean): Self = this.set("iosEmptyVideos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIosEmptyVideos: Self = this.set("iosEmptyVideos", js.undefined)
   }
-  
 }
-

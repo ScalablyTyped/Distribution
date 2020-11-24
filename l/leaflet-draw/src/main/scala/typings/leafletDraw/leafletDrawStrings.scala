@@ -2,9 +2,58 @@ package typings.leafletDraw
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafletDrawStrings {
+  
+  @scala.inline
+  def drawColoncreated: drawColoncreated = "draw:created".asInstanceOf[drawColoncreated]
+  
+  @scala.inline
+  def drawColondeleted: drawColondeleted = "draw:deleted".asInstanceOf[drawColondeleted]
+  
+  @scala.inline
+  def drawColondeletestart: drawColondeletestart = "draw:deletestart".asInstanceOf[drawColondeletestart]
+  
+  @scala.inline
+  def drawColondeletestop: drawColondeletestop = "draw:deletestop".asInstanceOf[drawColondeletestop]
+  
+  @scala.inline
+  def drawColondrawstart: drawColondrawstart = "draw:drawstart".asInstanceOf[drawColondrawstart]
+  
+  @scala.inline
+  def drawColondrawstop: drawColondrawstop = "draw:drawstop".asInstanceOf[drawColondrawstop]
+  
+  @scala.inline
+  def drawColondrawvertex: drawColondrawvertex = "draw:drawvertex".asInstanceOf[drawColondrawvertex]
+  
+  @scala.inline
+  def drawColonedited: drawColonedited = "draw:edited".asInstanceOf[drawColonedited]
+  
+  @scala.inline
+  def drawColoneditmove: drawColoneditmove = "draw:editmove".asInstanceOf[drawColoneditmove]
+  
+  @scala.inline
+  def drawColoneditresize: drawColoneditresize = "draw:editresize".asInstanceOf[drawColoneditresize]
+  
+  @scala.inline
+  def drawColoneditstart: drawColoneditstart = "draw:editstart".asInstanceOf[drawColoneditstart]
+  
+  @scala.inline
+  def drawColoneditstop: drawColoneditstop = "draw:editstop".asInstanceOf[drawColoneditstop]
+  
+  @scala.inline
+  def drawColoneditvertex: drawColoneditvertex = "draw:editvertex".asInstanceOf[drawColoneditvertex]
+  
+  @scala.inline
+  def drawColonmarkercontext: drawColonmarkercontext = "draw:markercontext".asInstanceOf[drawColonmarkercontext]
+  
+  @scala.inline
+  def drawColontoolbarclosed: drawColontoolbarclosed = "draw:toolbarclosed".asInstanceOf[drawColontoolbarclosed]
+  
+  @scala.inline
+  def drawColontoolbaropened: drawColontoolbaropened = "draw:toolbaropened".asInstanceOf[drawColontoolbaropened]
+  
   @js.native
   sealed trait drawColoncreated extends js.Object
   
@@ -52,38 +101,4 @@ object leafletDrawStrings {
   
   @js.native
   sealed trait drawColontoolbaropened extends js.Object
-  
-  @scala.inline
-  def drawColoncreated: drawColoncreated = "draw:created".asInstanceOf[drawColoncreated]
-  @scala.inline
-  def drawColondeleted: drawColondeleted = "draw:deleted".asInstanceOf[drawColondeleted]
-  @scala.inline
-  def drawColondeletestart: drawColondeletestart = "draw:deletestart".asInstanceOf[drawColondeletestart]
-  @scala.inline
-  def drawColondeletestop: drawColondeletestop = "draw:deletestop".asInstanceOf[drawColondeletestop]
-  @scala.inline
-  def drawColondrawstart: drawColondrawstart = "draw:drawstart".asInstanceOf[drawColondrawstart]
-  @scala.inline
-  def drawColondrawstop: drawColondrawstop = "draw:drawstop".asInstanceOf[drawColondrawstop]
-  @scala.inline
-  def drawColondrawvertex: drawColondrawvertex = "draw:drawvertex".asInstanceOf[drawColondrawvertex]
-  @scala.inline
-  def drawColonedited: drawColonedited = "draw:edited".asInstanceOf[drawColonedited]
-  @scala.inline
-  def drawColoneditmove: drawColoneditmove = "draw:editmove".asInstanceOf[drawColoneditmove]
-  @scala.inline
-  def drawColoneditresize: drawColoneditresize = "draw:editresize".asInstanceOf[drawColoneditresize]
-  @scala.inline
-  def drawColoneditstart: drawColoneditstart = "draw:editstart".asInstanceOf[drawColoneditstart]
-  @scala.inline
-  def drawColoneditstop: drawColoneditstop = "draw:editstop".asInstanceOf[drawColoneditstop]
-  @scala.inline
-  def drawColoneditvertex: drawColoneditvertex = "draw:editvertex".asInstanceOf[drawColoneditvertex]
-  @scala.inline
-  def drawColonmarkercontext: drawColonmarkercontext = "draw:markercontext".asInstanceOf[drawColonmarkercontext]
-  @scala.inline
-  def drawColontoolbarclosed: drawColontoolbarclosed = "draw:toolbarclosed".asInstanceOf[drawColontoolbarclosed]
-  @scala.inline
-  def drawColontoolbaropened: drawColontoolbaropened = "draw:toolbaropened".asInstanceOf[drawColontoolbaropened]
 }
-

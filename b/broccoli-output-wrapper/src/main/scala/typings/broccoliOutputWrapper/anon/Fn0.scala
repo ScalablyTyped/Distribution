@@ -1,20 +1,18 @@
 package typings.broccoliOutputWrapper.anon
 
-import typings.node.anon.MakeDirectoryOptionsrecur
-import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.fsMod.MakeDirectoryOptions
-import typings.node.fsMod.Mode
+import typings.node.fsMod.BigIntOptions
+import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.PathLike
+import typings.node.fsMod.StatOptions
+import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn0 extends js.Object {
-  def apply(path: PathLike): js.UndefOr[String] = js.native
-  def apply(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
-  def apply(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
-  def apply(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
-  def apply(path: PathLike, options: Mode): js.UndefOr[String] = js.native
+  
+  def apply(path: PathLike): Stats = js.native
+  def apply(path: PathLike, options: BigIntOptions): BigIntStats = js.native
+  def apply(path: PathLike, options: StatOptions): Stats | BigIntStats = js.native
 }
-

@@ -10,9 +10,9 @@ Module for generating a modular scale.
 | ------------------ | :-------------: |
 | Full name          | modular-scale |
 | Keywords           | modular, scale, typography, design, css |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 28511 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 24308 |
 | # stars            | 0 |
 
 ## Links

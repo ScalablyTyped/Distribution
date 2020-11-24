@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a configurable user interface element that supports persistence.
@@ -26,6 +26,7 @@ trait ConfigurableUIElement
      with XUpdatable
      with XComponent
      with XUIElementSettings {
+  
   /**
     * specifies the configuration source of this user interface element.
     *
@@ -34,11 +35,12 @@ trait ConfigurableUIElement
     * settings from the new user interface configuration manager.
     */
   var ConfigurationSource: XUIConfigurationManager = js.native
+  
   /** specifies if the user interface element stores changes of its structure to its creator source defined by the property {@link ConfigurationSource} . */
   var Persistent: Boolean = js.native
 }
-
 object ConfigurableUIElement {
+  
   @scala.inline
   def apply(
     ConfigurationSource: XUIConfigurationManager,
@@ -63,22 +65,26 @@ object ConfigurableUIElement {
     val __obj = js.Dynamic.literal(ConfigurationSource = ConfigurationSource.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], Persistent = Persistent.asInstanceOf[js.Any], RealInterface = RealInterface.asInstanceOf[js.Any], ResourceURL = ResourceURL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), getRealInterface = js.Any.fromFunction0(getRealInterface), getSettings = js.Any.fromFunction1(getSettings), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setSettings = js.Any.fromFunction1(setSettings), update = js.Any.fromFunction0(update), updateSettings = js.Any.fromFunction0(updateSettings))
     __obj.asInstanceOf[ConfigurableUIElement]
   }
+  
   @scala.inline
   implicit class ConfigurableUIElementOps[Self <: ConfigurableUIElement] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConfigurationSource(value: XUIConfigurationManager): Self = this.set("ConfigurationSource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPersistent(value: Boolean): Self = this.set("Persistent", value.asInstanceOf[js.Any])
   }
-  
 }
-

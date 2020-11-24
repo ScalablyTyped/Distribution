@@ -3,9 +3,9 @@ package typings.babylonjs.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "ToGammaSpace")
 @js.native
-object ToGammaSpace extends TopLevel[Double]
-
+object ToGammaSpace
+  extends TopLevel[/* 2.2 */ Double]

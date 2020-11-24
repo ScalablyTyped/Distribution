@@ -2,11 +2,12 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "normalizeTickInterval")
 @js.native
 object normalizeTickInterval extends js.Object {
+  
   def apply(interval: Double): Double = js.native
   def apply(
     interval: Double,
@@ -82,4 +83,3 @@ object normalizeTickInterval extends js.Object {
     hasTickAmount: Boolean
   ): Double = js.native
 }
-

@@ -2,38 +2,65 @@ package typings.webpack.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Basename extends js.Object {
-  var basename: js.UndefOr[String] = js.undefined
-  var chunk: js.UndefOr[js.Any] = js.undefined
-  var contentHash: js.UndefOr[String] = js.undefined
-  var contentHashType: js.UndefOr[String] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var hash: js.UndefOr[js.Any] = js.undefined
-  var query: js.UndefOr[js.Any] = js.undefined
+  
+  var basename: String = js.native
+  
+  var chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any = js.native
+  
+  var filename: String = js.native
+  
+  var hash: String = js.native
+  
+  var query: String = js.native
 }
-
 object Basename {
+  
   @scala.inline
   def apply(
-    basename: String = null,
-    chunk: js.Any = null,
-    contentHash: String = null,
-    contentHashType: String = null,
-    filename: String = null,
-    hash: js.Any = null,
-    query: js.Any = null
+    basename: String,
+    chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any,
+    filename: String,
+    hash: String,
+    query: String
   ): Basename = {
-    val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
-    if (chunk != null) __obj.updateDynamic("chunk")(chunk.asInstanceOf[js.Any])
-    if (contentHash != null) __obj.updateDynamic("contentHash")(contentHash.asInstanceOf[js.Any])
-    if (contentHashType != null) __obj.updateDynamic("contentHashType")(contentHashType.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(basename = basename.asInstanceOf[js.Any], chunk = chunk.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Basename]
   }
+  
+  @scala.inline
+  implicit class BasenameOps[Self <: Basename] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setBasename(value: String): Self = this.set("basename", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChunk(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any
+    ): Self = this.set("chunk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+  }
 }
-

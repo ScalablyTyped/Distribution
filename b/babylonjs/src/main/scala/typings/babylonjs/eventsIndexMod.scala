@@ -8,14 +8,34 @@ import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Events/index", JSImport.Namespace)
 @js.native
 object eventsIndexMod extends js.Object {
+  
   @js.native
   class ClipboardEventTypes ()
     extends typings.babylonjs.clipboardEventsMod.ClipboardEventTypes
+  /* static members */
+  @js.native
+  object ClipboardEventTypes extends js.Object {
+    
+    /**
+      * The clipboard event is fired when a copy command is active (pressed).
+      */
+    val COPY: Double = js.native
+    
+    /**
+      *  The clipboard event is fired when a cut command is active (pressed).
+      */
+    val CUT: Double = js.native
+    
+    /**
+      * The clipboard event is fired when a paste command is active (pressed).
+      */
+    val PASTE: Double = js.native
+  }
   
   @js.native
   class ClipboardInfo protected ()
@@ -36,10 +56,35 @@ object eventsIndexMod extends js.Object {
     event: ClipboardEvent
     ) = this()
   }
+  /* static members */
+  @js.native
+  object ClipboardInfo extends js.Object {
+    
+    /**
+      *  Get the clipboard event's type from the keycode.
+      * @param keyCode Defines the keyCode for the current keyboard event.
+      * @return {number}
+      */
+    def GetTypeFromCharacter(keyCode: Double): Double = js.native
+  }
   
   @js.native
   class KeyboardEventTypes ()
     extends typings.babylonjs.keyboardEventsMod.KeyboardEventTypes
+  /* static members */
+  @js.native
+  object KeyboardEventTypes extends js.Object {
+    
+    /**
+      * The keydown event is fired when a key becomes active (pressed).
+      */
+    val KEYDOWN: Double = js.native
+    
+    /**
+      * The keyup event is fired when a key has been released.
+      */
+    val KEYUP: Double = js.native
+  }
   
   @js.native
   class KeyboardInfo protected ()
@@ -86,6 +131,45 @@ object eventsIndexMod extends js.Object {
   @js.native
   class PointerEventTypes ()
     extends typings.babylonjs.pointerEventsMod.PointerEventTypes
+  /* static members */
+  @js.native
+  object PointerEventTypes extends js.Object {
+    
+    /**
+      * The pointerdoubletap event is fired when a the object has been touched and released twice without drag.
+      */
+    val POINTERDOUBLETAP: Double = js.native
+    
+    /**
+      * The pointerdown event is fired when a pointer becomes active. For mouse, it is fired when the device transitions from no buttons depressed to at least one button depressed. For touch, it is fired when physical contact is made with the digitizer. For pen, it is fired when the stylus makes physical contact with the digitizer.
+      */
+    val POINTERDOWN: Double = js.native
+    
+    /**
+      * The pointermove event is fired when a pointer changes coordinates.
+      */
+    val POINTERMOVE: Double = js.native
+    
+    /**
+      * The pointerpick event is fired when a mesh or sprite has been picked by the pointer.
+      */
+    val POINTERPICK: Double = js.native
+    
+    /**
+      * The pointertap event is fired when a the object has been touched and released without drag.
+      */
+    val POINTERTAP: Double = js.native
+    
+    /**
+      * The pointerup event is fired when a pointer is no longer active.
+      */
+    val POINTERUP: Double = js.native
+    
+    /**
+      * The pointerwheel event is fired when a mouse wheel has been rotated.
+      */
+    val POINTERWHEEL: Double = js.native
+  }
   
   @js.native
   class PointerInfo protected ()
@@ -157,80 +241,4 @@ object eventsIndexMod extends js.Object {
       */
     def this(`type`: Double, event: PointerEvent, localX: Double, localY: Double) = this()
   }
-  
-  /* static members */
-  @js.native
-  object ClipboardEventTypes extends js.Object {
-    /**
-      * The clipboard event is fired when a copy command is active (pressed).
-      */
-    val COPY: Double = js.native
-    /**
-      *  The clipboard event is fired when a cut command is active (pressed).
-      */
-    val CUT: Double = js.native
-    /**
-      * The clipboard event is fired when a paste command is active (pressed).
-      */
-    val PASTE: Double = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ClipboardInfo extends js.Object {
-    /**
-      *  Get the clipboard event's type from the keycode.
-      * @param keyCode Defines the keyCode for the current keyboard event.
-      * @return {number}
-      */
-    def GetTypeFromCharacter(keyCode: Double): Double = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object KeyboardEventTypes extends js.Object {
-    /**
-      * The keydown event is fired when a key becomes active (pressed).
-      */
-    val KEYDOWN: Double = js.native
-    /**
-      * The keyup event is fired when a key has been released.
-      */
-    val KEYUP: Double = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PointerEventTypes extends js.Object {
-    /**
-      * The pointerdoubletap event is fired when a the object has been touched and released twice without drag.
-      */
-    val POINTERDOUBLETAP: Double = js.native
-    /**
-      * The pointerdown event is fired when a pointer becomes active. For mouse, it is fired when the device transitions from no buttons depressed to at least one button depressed. For touch, it is fired when physical contact is made with the digitizer. For pen, it is fired when the stylus makes physical contact with the digitizer.
-      */
-    val POINTERDOWN: Double = js.native
-    /**
-      * The pointermove event is fired when a pointer changes coordinates.
-      */
-    val POINTERMOVE: Double = js.native
-    /**
-      * The pointerpick event is fired when a mesh or sprite has been picked by the pointer.
-      */
-    val POINTERPICK: Double = js.native
-    /**
-      * The pointertap event is fired when a the object has been touched and released without drag.
-      */
-    val POINTERTAP: Double = js.native
-    /**
-      * The pointerup event is fired when a pointer is no longer active.
-      */
-    val POINTERUP: Double = js.native
-    /**
-      * The pointerwheel event is fired when a mouse wheel has been rotated.
-      */
-    val POINTERWHEEL: Double = js.native
-  }
-  
 }
-

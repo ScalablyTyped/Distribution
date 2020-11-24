@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/menu" : "7.0.0"
+      "@material/menu" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/menu" : "7.0.0"
+      "@material/menu" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

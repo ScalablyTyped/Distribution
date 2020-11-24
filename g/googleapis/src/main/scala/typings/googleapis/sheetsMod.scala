@@ -11,32 +11,34 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets", JSImport.Namespace)
 @js.native
 object sheetsMod extends js.Object {
+  
   def sheets(options: Options): Sheets = js.native
   @JSName("sheets")
   def sheets_v4(version: v4): Sheets = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v4 protected () extends Sheets {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v4
       extends TopLevel[
               Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sheets]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -64,8 +66,5 @@ object sheetsMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.graphicsUtils.BatchPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Graphics class contains methods used to draw primitive shapes such as lines, circles and
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GraphicsGeometry extends BatchGeometry {
+  
   /**
     * Cached bounds.
     *
@@ -25,127 +26,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @protected
     */
   var _bounds: Bounds = js.native
-  /**
-    * Batches need to regenerated if the geometry is updated.
-    *
-    * @member {number} PIXI.GraphicsGeometry#batchDirty
-    * @protected
-    */
-  var batchDirty: Double = js.native
-  /**
-    * Intermediate abstract format sent to batch system.
-    * Can be converted to drawCalls or to batchable objects.
-    *
-    * @member {PIXI.graphicsUtils.BatchPart[]} PIXI.GraphicsGeometry#batches
-    * @protected
-    */
-  var batches: js.Array[BatchPart] = js.native
-  /**
-    * Get the current bounds of the graphic geometry.
-    *
-    * @member {PIXI.Bounds}
-    * @readonly
-    */
-  val bounds: Bounds = js.native
-  /**
-    * The bounds dirty flag.
-    *
-    * @member {number} PIXI.GraphicsGeometry#boundsDirty
-    * @protected
-    */
-  var boundsDirty: Double = js.native
-  /**
-    * Padding to add to the bounds.
-    *
-    * @member {number} PIXI.GraphicsGeometry#boundsPadding
-    * @default 0
-    */
-  var boundsPadding: Double = js.native
-  /**
-    * Used to check if the cache is dirty.
-    *
-    * @member {number} PIXI.GraphicsGeometry#cacheDirty
-    * @protected
-    */
-  var cacheDirty: Double = js.native
-  /**
-    * Used to detect if we cleared the graphicsData.
-    *
-    * @member {number} PIXI.GraphicsGeometry#clearDirty
-    * @default 0
-    * @protected
-    */
-  var clearDirty: Double = js.native
-  /**
-    * Minimal distance between points that are considered different.
-    * Affects line tesselation.
-    *
-    * @member {number} PIXI.GraphicsGeometry#closePointEps
-    */
-  var closePointEps: Double = js.native
-  /**
-    * The collection of colors
-    *
-    * @member {number[]} PIXI.GraphicsGeometry#colors
-    * @protected
-    */
-  var colors: js.Array[Double] = js.native
-  /**
-    * Used to detect if the graphics object has changed.
-    *
-    * @member {number} PIXI.GraphicsGeometry#dirty
-    * @protected
-    */
-  var dirty: Double = js.native
-  /**
-    * List of current draw calls drived from the batches.
-    *
-    * @member {object[]} PIXI.GraphicsGeometry#drawCalls
-    * @protected
-    */
-  var drawCalls: js.Array[_] = js.native
-  /**
-    * The collection of drawn shapes.
-    *
-    * @member {PIXI.GraphicsData[]} PIXI.GraphicsGeometry#graphicsData
-    * @protected
-    */
-  var graphicsData: js.Array[GraphicsData] = js.native
-  /**
-    * The indices of the vertices
-    *
-    * @member {number[]} PIXI.GraphicsGeometry#indices
-    * @protected
-    */
-  var indices: js.Array[Double] = js.native
-  /**
-    * An array of points to draw, 2 numbers per point
-    *
-    * @member {number[]} PIXI.GraphicsGeometry#points
-    * @protected
-    */
-  var points: js.Array[Double] = js.native
-  /**
-    * Index of the last batched shape in the stack of calls.
-    *
-    * @member {number} PIXI.GraphicsGeometry#shapeIndex
-    * @protected
-    */
-  var shapeIndex: Double = js.native
-  /**
-    * Reference to the texture IDs.
-    *
-    * @member {number[]} PIXI.GraphicsGeometry#textureIds
-    * @protected
-    */
-  var textureIds: js.Array[Double] = js.native
-  /**
-    * The UVs collection
-    *
-    * @member {number[]} PIXI.GraphicsGeometry#uvs
-    * @protected
-    */
-  var uvs: js.Array[Double] = js.native
+  
   /**
     * Affinity check
     *
@@ -156,6 +37,7 @@ trait GraphicsGeometry extends BatchGeometry {
   def _compareStyles(styleA: FillStyle, styleB: LineStyle): Unit = js.native
   def _compareStyles(styleA: LineStyle, styleB: FillStyle): Unit = js.native
   def _compareStyles(styleA: LineStyle, styleB: LineStyle): Unit = js.native
+  
   /**
     * Add colors.
     *
@@ -166,6 +48,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @param {number} size - Number of colors to add
     */
   /* protected */ def addColors(colors: js.Array[Double], color: Double, alpha: Double, size: Double): Unit = js.native
+  
   /**
     * Add texture id that the shader/fragment wants to use.
     *
@@ -175,6 +58,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @param {number} size
     */
   /* protected */ def addTextureIds(textureIds: js.Array[Double], id: Double, size: Double): Unit = js.native
+  
   /**
     * Generates the UVs for a shape.
     *
@@ -195,6 +79,7 @@ trait GraphicsGeometry extends BatchGeometry {
     size: Double,
     matrix: Matrix
   ): Unit = js.native
+  
   /**
     * Modify uvs array according to position of texture region
     * Does not work with rotated or trimmed textures
@@ -205,24 +90,102 @@ trait GraphicsGeometry extends BatchGeometry {
     * @param {number} size - how many points to adjust
     */
   def adjustUvs(uvs: js.Array[Double], texture: Texture, start: Double, size: Double): Unit = js.native
+  
+  /**
+    * Batches need to regenerated if the geometry is updated.
+    *
+    * @member {number} PIXI.GraphicsGeometry#batchDirty
+    * @protected
+    */
+  var batchDirty: Double = js.native
+  
+  /**
+    * Intermediate abstract format sent to batch system.
+    * Can be converted to drawCalls or to batchable objects.
+    *
+    * @member {PIXI.graphicsUtils.BatchPart[]} PIXI.GraphicsGeometry#batches
+    * @protected
+    */
+  var batches: js.Array[BatchPart] = js.native
+  
+  /**
+    * Get the current bounds of the graphic geometry.
+    *
+    * @member {PIXI.Bounds}
+    * @readonly
+    */
+  val bounds: Bounds = js.native
+  
+  /**
+    * The bounds dirty flag.
+    *
+    * @member {number} PIXI.GraphicsGeometry#boundsDirty
+    * @protected
+    */
+  var boundsDirty: Double = js.native
+  
+  /**
+    * Padding to add to the bounds.
+    *
+    * @member {number} PIXI.GraphicsGeometry#boundsPadding
+    * @default 0
+    */
+  var boundsPadding: Double = js.native
+  
   /**
     * Converts intermediate batches data to drawCalls.
     *
     * @protected
     */
   /* protected */ def buildDrawCalls(): Unit = js.native
+  
+  /**
+    * Used to check if the cache is dirty.
+    *
+    * @member {number} PIXI.GraphicsGeometry#cacheDirty
+    * @protected
+    */
+  var cacheDirty: Double = js.native
+  
   /**
     * Update the local bounds of the object. Expensive to use performance-wise.
     *
     * @protected
     */
   /* protected */ def calculateBounds(): Unit = js.native
+  
   /**
     * Clears the graphics that were drawn to this Graphics object, and resets fill and line style settings.
     *
     * @return {PIXI.GraphicsGeometry} This GraphicsGeometry object. Good for chaining method calls
     */
   def clear(): GraphicsGeometry = js.native
+  
+  /**
+    * Used to detect if we cleared the graphicsData.
+    *
+    * @member {number} PIXI.GraphicsGeometry#clearDirty
+    * @default 0
+    * @protected
+    */
+  var clearDirty: Double = js.native
+  
+  /**
+    * Minimal distance between points that are considered different.
+    * Affects line tesselation.
+    *
+    * @member {number} PIXI.GraphicsGeometry#closePointEps
+    */
+  var closePointEps: Double = js.native
+  
+  /**
+    * The collection of colors
+    *
+    * @member {number[]} PIXI.GraphicsGeometry#colors
+    * @protected
+    */
+  var colors: js.Array[Double] = js.native
+  
   /**
     * Check to see if a point is contained within this geometry.
     *
@@ -230,11 +193,29 @@ trait GraphicsGeometry extends BatchGeometry {
     * @return {Boolean} `true` if the point is contained within geometry.
     */
   def containsPoint(point: IPointData): Boolean = js.native
+  
   /**
     * Destroys the GraphicsGeometry object.
     *
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * Used to detect if the graphics object has changed.
+    *
+    * @member {number} PIXI.GraphicsGeometry#dirty
+    * @protected
+    */
+  var dirty: Double = js.native
+  
+  /**
+    * List of current draw calls drived from the batches.
+    *
+    * @member {object[]} PIXI.GraphicsGeometry#drawCalls
+    * @protected
+    */
+  var drawCalls: js.Array[_] = js.native
+  
   /**
     * Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.
     *
@@ -247,6 +228,7 @@ trait GraphicsGeometry extends BatchGeometry {
   def drawHole(shape: Polygon, matrix: Matrix): GraphicsGeometry = js.native
   def drawHole(shape: Rectangle, matrix: Matrix): GraphicsGeometry = js.native
   def drawHole(shape: RoundedRectangle, matrix: Matrix): GraphicsGeometry = js.native
+  
   /**
     * Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.
     *
@@ -261,11 +243,29 @@ trait GraphicsGeometry extends BatchGeometry {
   def drawShape(shape: Polygon, fillStyle: FillStyle, lineStyle: LineStyle, matrix: Matrix): GraphicsGeometry = js.native
   def drawShape(shape: Rectangle, fillStyle: FillStyle, lineStyle: LineStyle, matrix: Matrix): GraphicsGeometry = js.native
   def drawShape(shape: RoundedRectangle, fillStyle: FillStyle, lineStyle: LineStyle, matrix: Matrix): GraphicsGeometry = js.native
+  
+  /**
+    * The collection of drawn shapes.
+    *
+    * @member {PIXI.GraphicsData[]} PIXI.GraphicsGeometry#graphicsData
+    * @protected
+    */
+  var graphicsData: js.Array[GraphicsData] = js.native
+  
+  /**
+    * The indices of the vertices
+    *
+    * @member {number[]} PIXI.GraphicsGeometry#indices
+    * @protected
+    */
+  var indices: js.Array[Double] = js.native
+  
   /**
     * Call if you changed graphicsData manually.
     * Empties all batch buffers.
     */
   def invalidate(): Unit = js.native
+  
   /**
     * Checks to see if this graphics geometry can be batched.
     * Currently it needs to be small enough and not contain any native lines.
@@ -273,18 +273,29 @@ trait GraphicsGeometry extends BatchGeometry {
     * @protected
     */
   /* protected */ def isBatchable(): Unit = js.native
+  
   /**
     * Packs attributes to single buffer.
     *
     * @protected
     */
   /* protected */ def packAttributes(): Unit = js.native
+  
   /**
     * Offset the indices so that it works with the batcher.
     *
     * @protected
     */
   /* protected */ def packBatches(): Unit = js.native
+  
+  /**
+    * An array of points to draw, 2 numbers per point
+    *
+    * @member {number[]} PIXI.GraphicsGeometry#points
+    * @protected
+    */
+  var points: js.Array[Double] = js.native
+  
   /**
     * Process fill part of Graphics.
     *
@@ -292,6 +303,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @protected
     */
   /* protected */ def processFill(data: GraphicsData): Unit = js.native
+  
   /**
     * Process the holes data.
     *
@@ -299,6 +311,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @protected
     */
   /* protected */ def processHoles(holes: js.Array[GraphicsData]): Unit = js.native
+  
   /**
     * Process line part of Graphics.
     *
@@ -306,6 +319,23 @@ trait GraphicsGeometry extends BatchGeometry {
     * @protected
     */
   /* protected */ def processLine(data: GraphicsData): Unit = js.native
+  
+  /**
+    * Index of the last batched shape in the stack of calls.
+    *
+    * @member {number} PIXI.GraphicsGeometry#shapeIndex
+    * @protected
+    */
+  var shapeIndex: Double = js.native
+  
+  /**
+    * Reference to the texture IDs.
+    *
+    * @member {number[]} PIXI.GraphicsGeometry#textureIds
+    * @protected
+    */
+  var textureIds: js.Array[Double] = js.native
+  
   /**
     * Transform points using matrix.
     *
@@ -314,6 +344,7 @@ trait GraphicsGeometry extends BatchGeometry {
     * @param {PIXI.Matrix} matrix - Transform matrix
     */
   /* protected */ def transformPoints(points: js.Array[Double], matrix: Matrix): Unit = js.native
+  
   /**
     * Generates intermediate batch data. Either gets converted to drawCalls
     * or used to convert to batch objects directly by the Graphics object.
@@ -322,6 +353,15 @@ trait GraphicsGeometry extends BatchGeometry {
     */
   def updateBatches(): Unit = js.native
   def updateBatches(aloow32Indices: Boolean): Unit = js.native
+  
+  /**
+    * The UVs collection
+    *
+    * @member {number[]} PIXI.GraphicsGeometry#uvs
+    * @protected
+    */
+  var uvs: js.Array[Double] = js.native
+  
   /**
     * Test geometry for batching process.
     *
@@ -329,4 +369,3 @@ trait GraphicsGeometry extends BatchGeometry {
     */
   /* protected */ def validateBatching(): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "isSafeNumberString")
 @js.native
 object isSafeNumberString extends js.Object {
+  
   /**
     * Detect a number string can safe convert to Javascript Number.
     *
@@ -15,4 +16,3 @@ object isSafeNumberString extends js.Object {
     */
   def apply(s: String): Boolean = js.native
 }
-

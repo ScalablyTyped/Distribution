@@ -4,15 +4,17 @@ import typings.electron.electronStrings.`prevent-app-suspension`
 import typings.electron.electronStrings.`prevent-display-sleep`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PowerSaveBlocker extends js.Object {
-  // Docs: http://electronjs.org/docs/api/power-save-blocker
+  
+  // Docs: https://electronjs.org/docs/api/power-save-blocker
   /**
     * Whether the corresponding `powerSaveBlocker` has started.
     */
   def isStarted(id: Double): Boolean = js.native
+  
   /**
     * The blocker ID that is assigned to this power blocker.
     *
@@ -32,9 +34,9 @@ trait PowerSaveBlocker extends js.Object {
   def start_preventappsuspension(`type`: `prevent-app-suspension`): Double = js.native
   @JSName("start")
   def start_preventdisplaysleep(`type`: `prevent-display-sleep`): Double = js.native
+  
   /**
     * Stops the specified power save blocker.
     */
   def stop(id: Double): Unit = js.native
 }
-

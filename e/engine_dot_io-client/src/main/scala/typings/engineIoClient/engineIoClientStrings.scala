@@ -3,9 +3,52 @@ package typings.engineIoClient
 import typings.engineIoClient.mod.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineIoClientStrings {
+  
+  @scala.inline
+  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  
+  @scala.inline
+  def blob: blob = "blob".asInstanceOf[blob]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def flush: flush = "flush".asInstanceOf[flush]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def ping: ping = "ping".asInstanceOf[ping]
+  
+  @scala.inline
+  def polling: polling = "polling".asInstanceOf[polling]
+  
+  @scala.inline
+  def pong: pong = "pong".asInstanceOf[pong]
+  
+  @scala.inline
+  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
+  
+  @scala.inline
+  def upgradeError: upgradeError = "upgradeError".asInstanceOf[upgradeError]
+  
+  @scala.inline
+  def websocket: websocket = "websocket".asInstanceOf[websocket]
+  
   @js.native
   sealed trait arraybuffer extends js.Object
   
@@ -47,34 +90,4 @@ object engineIoClientStrings {
   
   @js.native
   sealed trait websocket extends Transport
-  
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def flush: flush = "flush".asInstanceOf[flush]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def polling: polling = "polling".asInstanceOf[polling]
-  @scala.inline
-  def pong: pong = "pong".asInstanceOf[pong]
-  @scala.inline
-  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
-  @scala.inline
-  def upgradeError: upgradeError = "upgradeError".asInstanceOf[upgradeError]
-  @scala.inline
-  def websocket: websocket = "websocket".asInstanceOf[websocket]
 }
-

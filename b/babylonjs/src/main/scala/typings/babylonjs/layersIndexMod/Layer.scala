@@ -5,7 +5,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Layers/index", "Layer")
 @js.native
@@ -46,8 +46,17 @@ class Layer protected ()
   name: String,
     imgUrl: Nullable[String],
     scene: Nullable[Scene],
+    isBackground: js.UndefOr[scala.Nothing],
+    color: Color4
+  ) = this()
+  def this(
+    /**
+    * Define the name of the layer.
+    */
+  name: String,
+    imgUrl: Nullable[String],
+    scene: Nullable[Scene],
     isBackground: Boolean,
     color: Color4
   ) = this()
 }
-

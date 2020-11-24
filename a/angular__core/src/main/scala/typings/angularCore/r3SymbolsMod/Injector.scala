@@ -2,7 +2,7 @@ package typings.angularCore.r3SymbolsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Concrete injectors implement this interface. Injectors are configured
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Injector extends js.Object {
+  
   /**
     * @deprecated from v4.0.0 use Type<T> or InjectionToken<T>
     * @suppress {duplicate}
@@ -54,4 +55,3 @@ trait Injector extends js.Object {
   def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
   def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Language Translator translates text from one language to another. The service offers multiple IBM provided translation models that you can customize based on your unique terminology and language. Use Language Translator to take news from across the globe and present it in your language, communicate with your customers in their own language, and more.
@@ -30,10 +30,9 @@ class ^ protected () extends LanguageTranslatorV3 {
     */
   def this(options: Options) = this()
 }
-
 @JSImport("watson-developer-cloud/language-translator/v3", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var URL: String = js.native
 }
-

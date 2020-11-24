@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object providing access to an ASPxClientYearlyRecurrenceControl's editor values.
   */
 @js.native
 trait YearlyRecurrenceValuesAccessor extends DefaultRecurrenceRuleValuesAccessor
-
 object YearlyRecurrenceValuesAccessor {
+  
   @scala.inline
   def apply(
     GetDayNumber: () => Double,
@@ -23,4 +23,3 @@ object YearlyRecurrenceValuesAccessor {
     __obj.asInstanceOf[YearlyRecurrenceValuesAccessor]
   }
 }
-

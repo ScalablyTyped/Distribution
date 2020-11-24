@@ -10,9 +10,9 @@ Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whi
 | ------------------ | :-------------: |
 | Full name          | xss |
 | Keywords           | sanitization, xss, sanitize, sanitisation, input, security, escape, encode, filter, validator, html, injection, whitelist |
-| # releases         | 9 |
-| # dependents       | 204 |
-| # downloads        | 3836205 |
+| # releases         | 6 |
+| # dependents       | 272 |
+| # downloads        | 14165514 |
 | # stars            | 28 |
 
 ## Links

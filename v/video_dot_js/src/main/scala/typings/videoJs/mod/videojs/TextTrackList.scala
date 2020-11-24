@@ -2,7 +2,7 @@ package typings.videoJs.mod.videojs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current list of {@link TextTrack} for a media file.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextTrackList extends TrackList {
+  
   /**
     * Add a {@link TextTrack} to the `TextTrackList`
     *
@@ -21,4 +22,3 @@ trait TextTrackList extends TrackList {
     */
   def addTrack(track: TextTrack): Unit = js.native
 }
-

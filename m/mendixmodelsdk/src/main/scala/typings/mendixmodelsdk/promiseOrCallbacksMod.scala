@@ -4,11 +4,12 @@ import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", JSImport.Namespace)
 @js.native
 object promiseOrCallbacksMod extends js.Object {
+  
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
@@ -43,4 +44,3 @@ object promiseOrCallbacksMod extends js.Object {
     errorCallback: IErrorCallback
   ): js.Promise[T] | Unit = js.native
 }
-

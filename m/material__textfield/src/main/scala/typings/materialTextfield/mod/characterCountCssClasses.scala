@@ -2,7 +2,7 @@ package typings.materialTextfield.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @license
@@ -29,6 +29,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/textfield", "characterCountCssClasses")
 @js.native
 object characterCountCssClasses extends js.Object {
+  
   var ROOT: String = js.native
 }
-

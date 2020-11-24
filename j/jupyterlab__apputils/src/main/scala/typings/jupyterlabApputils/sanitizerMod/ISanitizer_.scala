@@ -3,10 +3,11 @@ package typings.jupyterlabApputils.sanitizerMod
 import typings.jupyterlabApputils.sanitizerMod.ISanitizer.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISanitizer_ extends js.Object {
+  
   /**
     * Sanitize an HTML string.
     *
@@ -19,4 +20,3 @@ trait ISanitizer_ extends js.Object {
   def sanitize(dirty: String): String = js.native
   def sanitize(dirty: String, options: IOptions): String = js.native
 }
-

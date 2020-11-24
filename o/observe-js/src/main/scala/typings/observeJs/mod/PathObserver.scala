@@ -5,7 +5,7 @@ import typings.observeJs.mod.observejs.PathObserverInstance
 import typings.observeJs.mod.observejs.PathObserverStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("observe-js", "PathObserver")
 @js.native
@@ -19,8 +19,6 @@ class PathObserver protected () extends PathObserverInstance {
   def this(receiver: js.Any, path: String) = this()
   def this(receiver: js.Any, path: String, defaultValue: js.Any) = this()
 }
-
 @JSImport("observe-js", "PathObserver")
 @js.native
 object PathObserver extends TopLevel[PathObserverStatic]
-

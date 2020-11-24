@@ -2,7 +2,7 @@ package typings.googleProtobuf.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryIterator")
 @js.native
@@ -30,17 +30,22 @@ class BinaryIterator () extends js.Object {
     next: js.Function0[Double | Boolean | String | Null],
     elements: js.Array[Double | Boolean | String]
   ) = this()
+  
   def atEnd(): Boolean = js.native
+  
   def clear(): Unit = js.native
+  
   def free(): Unit = js.native
+  
   def get(): ScalarFieldType | Null = js.native
+  
   def next(): ScalarFieldType | Null = js.native
 }
-
 /* static members */
 @JSImport("google-protobuf", "BinaryIterator")
 @js.native
 object BinaryIterator extends js.Object {
+  
   def alloc(): BinaryIterator = js.native
   def alloc(
     decoder: js.UndefOr[scala.Nothing],
@@ -66,4 +71,3 @@ object BinaryIterator extends js.Object {
     elements: js.Array[Double | Boolean | String]
   ): BinaryIterator = js.native
 }
-

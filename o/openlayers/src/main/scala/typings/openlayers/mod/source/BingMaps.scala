@@ -4,7 +4,7 @@ import typings.openlayers.mod.Attribution
 import typings.openlayers.mod.olx.source.BingMapsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -25,11 +25,11 @@ class BingMaps protected () extends TileImage {
     */
   def this(options: BingMapsOptions) = this()
 }
-
 /* static members */
 @JSImport("openlayers", "source.BingMaps")
 @js.native
 object BingMaps extends js.Object {
+  
   /**
     * The attribution containing a link to the Microsoft® Bing™ Maps Platform APIs’
     * Terms Of Use.
@@ -38,4 +38,3 @@ object BingMaps extends js.Object {
     */
   var TOS_ATTRIBUTION: Attribution = js.native
 }
-

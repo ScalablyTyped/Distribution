@@ -2,7 +2,7 @@ package typings.jupyterlabSettingregistry.settingregistryMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "DefaultSchemaValidator")
 @js.native
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * Instantiate a schema validator.
   */
 class DefaultSchemaValidator () extends ISchemaValidator {
+  
   /**
     * Add a schema to the validator.
     *
@@ -24,7 +25,8 @@ class DefaultSchemaValidator () extends ISchemaValidator {
     * It is safe to call this function multiple times with the same plugin name.
     */
   var _addSchema: js.Any = js.native
+  
   var _composer: js.Any = js.native
+  
   var _validator: js.Any = js.native
 }
-

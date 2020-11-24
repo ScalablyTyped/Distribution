@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operator/zip", JSImport.Namespace)
 @js.native
 object operatorZipMod extends js.Object {
+  
   def zipProto[T](
     observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any)*
   ): js.Any = js.native
@@ -82,4 +83,3 @@ object operatorZipMod extends js.Object {
     observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any) | (js.Function1[/* repeated */ T, R]))*
   ): js.Any = js.native
 }
-

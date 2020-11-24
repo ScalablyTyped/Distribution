@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait OnClose extends js.Object
-
 /**
   * An enum that specifies what to do when a URL opened through an OpenLink is closed.
   *
@@ -17,11 +16,10 @@ sealed trait OnClose extends js.Object
 @JSGlobal("GoogleAppsScript.Card_Service.OnClose")
 @js.native
 object OnClose extends js.Object {
+  
   @js.native
   sealed trait NOTHING extends OnClose
   
   @js.native
   sealed trait RELOAD_ADD_ON extends OnClose
-  
 }
-

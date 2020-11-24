@@ -2,10 +2,11 @@ package typings.d3Chord.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChordLayout extends js.Object {
+  
   /**
     * Computes the chord layout for the specified square matrix of size n×n, where the matrix represents the directed flow amongst a network (a complete digraph) of n nodes.
     *
@@ -14,6 +15,7 @@ trait ChordLayout extends js.Object {
     * Each number matrix[i][j] must be nonnegative, though it can be zero if there is no flow from node i to node j.
     */
   def apply(matrix: js.Array[js.Array[Double]]): Chords = js.native
+  
   /**
     * Returns the current pad angle in radians, which defaults to zero.
     */
@@ -26,6 +28,7 @@ trait ChordLayout extends js.Object {
     * @param angle Pad angle between adjacent groups in radians.
     */
   def padAngle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current chord comparator, which defaults to null.
     */
@@ -45,6 +48,7 @@ trait ChordLayout extends js.Object {
     * @param compare Use null to remove the current comparator function, if any.
     */
   def sortChords(compare: Null): this.type = js.native
+  
   /**
     * Returns the current group comparator, which defaults to null.
     */
@@ -63,6 +67,7 @@ trait ChordLayout extends js.Object {
     * @param compare Use null to remove the current comparator function, if any.
     */
   def sortGroups(compare: Null): this.type = js.native
+  
   /**
     * Returns the current subgroup comparator, which defaults to null.
     */
@@ -83,4 +88,3 @@ trait ChordLayout extends js.Object {
     */
   def sortSubgroups(compare: Null): this.type = js.native
 }
-

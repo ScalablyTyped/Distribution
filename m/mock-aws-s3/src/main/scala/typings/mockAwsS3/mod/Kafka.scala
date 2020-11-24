@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.kafkaMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "Kafka")
 @js.native
@@ -14,4 +14,3 @@ class Kafka ()
   extends typings.awsSdk.mod.Kafka {
   def this(options: ClientConfiguration) = this()
 }
-

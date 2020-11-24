@@ -3,7 +3,7 @@ package typings.wordpressDependencyExtractionWebpackPlugin.mod
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Map module request to an external.
@@ -44,19 +44,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DependencyExtractionWebpackPlugin extends js.Object {
-  /**
-    * Track requests that are externalized.
-    *
-    * Because we don't have a closed set of dependencies, we need to track what has
-    * been externalized so we can recognize them in a later phase when the dependency
-    * lists are generated.
-    *
-    * @type {Set<string>}
-    */
-  var externalizedDeps: Set[String] = js.native
-  var externalsPlugin: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any = js.native
-  /** @type {Options} */
-  var options: Options = js.native
+  
   /**
     * @param {WebpackCompiler} compiler
     * @return {void}
@@ -65,6 +53,7 @@ trait DependencyExtractionWebpackPlugin extends js.Object {
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
   ): Unit = js.native
+  
   /**
     * @param {Parameters<WebpackExternalsFunction>[0]} _context
     * @param {Parameters<WebpackExternalsFunction>[1]} request
@@ -75,19 +64,37 @@ trait DependencyExtractionWebpackPlugin extends js.Object {
     request: js.Any,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ js.Any
   ): Unit = js.native
+  
+  /**
+    * Track requests that are externalized.
+    *
+    * Because we don't have a closed set of dependencies, we need to track what has
+    * been externalized so we can recognize them in a later phase when the dependency
+    * lists are generated.
+    *
+    * @type {Set<string>}
+    */
+  var externalizedDeps: Set[String] = js.native
+  
+  var externalsPlugin: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any = js.native
+  
   /**
     * @param {string} request
     * @return {string} Transformed request
     */
   def mapRequestToDependency(request: String): String = js.native
+  
+  /** @type {Options} */
+  var options: Options = js.native
+  
   /**
     * @param {Object} asset
     * @return {string} Stringified asset
     */
   def stringify(asset: js.Object): String = js.native
 }
-
 object DependencyExtractionWebpackPlugin {
+  
   @scala.inline
   def apply(
     apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any => Unit,
@@ -101,38 +108,47 @@ object DependencyExtractionWebpackPlugin {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), externalizeWpDeps = js.Any.fromFunction3(externalizeWpDeps), externalizedDeps = externalizedDeps.asInstanceOf[js.Any], externalsPlugin = externalsPlugin.asInstanceOf[js.Any], mapRequestToDependency = js.Any.fromFunction1(mapRequestToDependency), options = options.asInstanceOf[js.Any], stringify = js.Any.fromFunction1(stringify))
     __obj.asInstanceOf[DependencyExtractionWebpackPlugin]
   }
+  
   @scala.inline
   implicit class DependencyExtractionWebpackPluginOps[Self <: DependencyExtractionWebpackPlugin] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApply(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any => Unit
     ): Self = this.set("apply", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setExternalizeWpDeps(
       value: (js.Any, js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ js.Any) => Unit
     ): Self = this.set("externalizeWpDeps", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setExternalizedDeps(value: Set[String]): Self = this.set("externalizedDeps", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExternalsPlugin(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any
     ): Self = this.set("externalsPlugin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMapRequestToDependency(value: String => String): Self = this.set("mapRequestToDependency", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setOptions(value: Options): Self = this.set("options", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStringify(value: js.Object => String): Self = this.set("stringify", js.Any.fromFunction1(value))
   }
-  
 }
-

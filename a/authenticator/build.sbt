@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "authenticator"
-version := "1.1-dt-20190821Z-d041ca"
+version := "1.1-dt-20200822Z-889415"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

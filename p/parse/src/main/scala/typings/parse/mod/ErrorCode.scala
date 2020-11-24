@@ -2,14 +2,14 @@ package typings.parse.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCode extends js.Object
-
 @JSImport("parse", "ErrorCode")
 @js.native
 object ErrorCode extends js.Object {
+  
   @js.native
   sealed trait ACCOUNT_ALREADY_LINKED extends ErrorCode
   
@@ -174,6 +174,4 @@ object ErrorCode extends js.Object {
   
   @js.native
   sealed trait X_DOMAIN_REQUEST extends ErrorCode
-  
 }
-

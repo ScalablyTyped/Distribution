@@ -12,11 +12,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "randomFillSync")
 @js.native
 object randomFillSync extends js.Object {
+  
   def apply(buffer: DataView): DataView = js.native
   def apply(buffer: DataView, offset: js.UndefOr[scala.Nothing], size: Double): DataView = js.native
   def apply(buffer: DataView, offset: Double): DataView = js.native
@@ -58,4 +59,3 @@ object randomFillSync extends js.Object {
   def apply(buffer: Uint8ClampedArray, offset: Double): Uint8ClampedArray = js.native
   def apply(buffer: Uint8ClampedArray, offset: Double, size: Double): Uint8ClampedArray = js.native
 }
-

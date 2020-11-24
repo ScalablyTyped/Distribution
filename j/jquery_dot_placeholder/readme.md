@@ -12,7 +12,7 @@ A jQuery plugin that enables HTML5 placeholder behavior for browsers that arenâ€
 | Keywords           | jquery, placeholder, html5, placeholder, ie |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 21371 |
+| # downloads        | 13347 |
 | # stars            | 0 |
 
 ## Links

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "card-validator" : "8.0.0"
+      "card-validator" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "card-validator" : "8.0.0"
+      "card-validator" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

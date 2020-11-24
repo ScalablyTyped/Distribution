@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BitmapBufferAccessMode extends js.Object
-
 /** Specifies the access mode of a BitmapBuffer . */
 @JSGlobal("Windows.Graphics.Imaging.BitmapBufferAccessMode")
 @js.native
 object BitmapBufferAccessMode extends js.Object {
+  
   /** The buffer is read-only. */
   @js.native
   sealed trait read extends BitmapBufferAccessMode
@@ -22,6 +22,4 @@ object BitmapBufferAccessMode extends js.Object {
   /** The buffer is write-only. */
   @js.native
   sealed trait write extends BitmapBufferAccessMode
-  
 }
-

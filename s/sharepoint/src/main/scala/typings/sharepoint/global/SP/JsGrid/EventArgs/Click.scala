@@ -4,7 +4,7 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.sharepoint.SP.JsGrid.ClickContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.EventArgs.Click")
 @js.native
@@ -12,4 +12,3 @@ class Click protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.Click {
   def this(eventInfo: DomEvent, context: ClickContext, recordKey: Double, fieldKey: String) = this()
 }
-

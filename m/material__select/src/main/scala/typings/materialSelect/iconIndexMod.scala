@@ -6,34 +6,36 @@ import typings.materialSelect.iconAdapterMod.MDCSelectIconAdapter
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select/icon/index", JSImport.Namespace)
 @js.native
 object iconIndexMod extends js.Object {
+  
   @js.native
   class MDCSelectIcon ()
     extends typings.materialSelect.iconComponentMod.MDCSelectIcon
+  /* static members */
+  @js.native
+  object MDCSelectIcon extends js.Object {
+    
+    def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
+  }
   
   @js.native
   class MDCSelectIconFoundation ()
     extends typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCSelectIcon extends js.Object {
-    def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCSelectIconFoundation extends js.Object {
+    
     /**
       * See {@link MDCSelectIconAdapter} for typing information on parameters and return types.
       */
     def defaultAdapter: MDCSelectIconAdapter = js.native
+    
     def strings: ICONEVENT = js.native
   }
   
@@ -61,9 +63,9 @@ object iconIndexMod extends js.Object {
     */
   @js.native
   object iconStrings extends js.Object {
+    
     var ICON_EVENT: String = js.native
+    
     var ICON_ROLE: String = js.native
   }
-  
 }
-

@@ -7,11 +7,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "imageOverlay")
 @js.native
 object imageOverlay extends js.Object {
+  
   def rotated(
     imgSrc: String,
     topleft: LatLngExpression,
@@ -52,4 +53,3 @@ object imageOverlay extends js.Object {
     options: ImageOverlayOptions
   ): Rotated = js.native
 }
-

@@ -2,13 +2,14 @@ package typings.blocks
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////////////
 // blocks MVC App
 /////////////////////////////////////////
 @js.native
 trait App extends Extendable[App] {
+  
   def Collection(model: Model, prototype: CollectionPrototype): typings.blocks.Collection = js.native
   /**
     * Creates a new Collection
@@ -16,12 +17,14 @@ trait App extends Extendable[App] {
     * @param prototype The Collection object properties that will be created.
     */
   def Collection(prototype: CollectionPrototype): typings.blocks.Collection = js.native
+  
   /**
     * Creates a new Model
     * 
     * @param prototype The Model object properties that will be created
     */
   def Model(prototype: ModelPrototype): typings.blocks.Model = js.native
+  
   /**
     * Creates an application property for a Model.
     */
@@ -30,6 +33,7 @@ trait App extends Extendable[App] {
     * @param options Configuration options for property
     */
   def Property(options: PropertyPrototype): js.Any = js.native
+  
   /**
     * Defines a view that will be part of the Application.
     * 
@@ -46,4 +50,3 @@ trait App extends Extendable[App] {
     */
   def View(parentViewName: String, name: String, prototype: ViewPrototype): js.Any = js.native
 }
-

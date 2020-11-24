@@ -6,7 +6,7 @@ import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import typings.smartFoxServer.SFS2X.IINVITATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Game
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SFS2X.Requests.Game")
 @js.native
 object Game extends js.Object {
+  
   @js.native
   class CreateSFSGameRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.Game.CreateSFSGameRequest {
@@ -79,6 +80,4 @@ object Game extends js.Object {
       */
     def this(name: String) = this()
   }
-  
 }
-

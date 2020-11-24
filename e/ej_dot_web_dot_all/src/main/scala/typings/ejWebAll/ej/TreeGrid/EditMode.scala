@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.TreeGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EditMode extends js.Object
-
 @JSGlobal("ej.TreeGrid.EditMode")
 @js.native
 object EditMode extends js.Object {
+  
   ///you can edit and save bulk of records
   @js.native
   sealed trait BatchEditing extends EditMode
@@ -25,6 +25,4 @@ object EditMode extends js.Object {
   ///you can edit a row.
   @js.native
   sealed trait RowEditing extends EditMode
-  
 }
-

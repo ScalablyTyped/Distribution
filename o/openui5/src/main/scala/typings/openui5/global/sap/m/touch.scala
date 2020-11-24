@@ -9,11 +9,12 @@ import typings.std.TouchList
 import typings.std.global.Touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.touch")
 @js.native
 object touch extends js.Object {
+  
   def countContained(oTouchList: TouchList, vElement: String): Double = js.native
   /**
     * Given a list of touches, count the number of touches related with the given element.
@@ -23,6 +24,7 @@ object touch extends js.Object {
     */
   def countContained(oTouchList: TouchList, vElement: JQueryStatic): Double = js.native
   def countContained(oTouchList: TouchList, vElement: Element): Double = js.native
+  
   /**
     * Given a list of touch objects, find the touch that matches the given one.
     * @param oTouchList The list of touch objects to search.
@@ -36,4 +38,3 @@ object touch extends js.Object {
   ): js.Any = js.native
   def find(oTouchList: TouchList, oTouch: Double): js.Any = js.native
 }
-

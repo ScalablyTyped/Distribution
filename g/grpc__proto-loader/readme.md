@@ -10,9 +10,9 @@ gRPC utility library for loading .proto files
 | ------------------ | :-------------: |
 | Full name          | @grpc/proto-loader |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 228 |
-| # downloads        | 35971797 |
+| # releases         | 25 |
+| # dependents       | 352 |
+| # downloads        | 90922290 |
 | # stars            | 0 |
 
 ## Links

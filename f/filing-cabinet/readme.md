@@ -10,9 +10,9 @@ Find files based on partial paths
 | ------------------ | :-------------: |
 | Full name          | filing-cabinet |
 | Keywords           | lookup, es6, amd, commonjs, sass, less, stylus, partial, resolution, paths |
-| # releases         | 21 |
-| # dependents       | 9 |
-| # downloads        | 2590888 |
+| # releases         | 17 |
+| # dependents       | 10 |
+| # downloads        | 8825759 |
 | # stars            | 0 |
 
 ## Links

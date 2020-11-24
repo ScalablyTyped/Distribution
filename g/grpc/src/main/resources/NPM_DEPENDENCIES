@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "grpc" : "1.24.3"
+      "grpc" : "1.24.4"
     }
   ],
   "test-dependencies" : [
     {
-      "grpc" : "1.24.3"
+      "grpc" : "1.24.4"
     }
   ],
   "compile-devDependencies" : [

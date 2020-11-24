@@ -50,10 +50,11 @@ import typings.chromeApps.chromeAppsStrings.url_handler_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LaunchData extends js.Object {
+  
   /**
     * Contains data that specifies the ActionType this app was launched with. This is null if the app was not launched with a specific action intent.
     *  ______________________________________________________________________________
@@ -63,28 +64,34 @@ trait LaunchData extends js.Object {
     * @since Chrome 54.
     */
   var actionData: js.UndefOr[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = js.native
+  
   /**
     * The ID of the file or URL handler that the app is being invoked with.
     * Handler IDs are the top-level keys in the file_handlers and/or url_handlers dictionaries in the manifest.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Whether the app is being launched in a Chrome OS kiosk session.
     */
   var isKioskSession: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether the app is being launched in a Chrome OS public session.
     * @since Chrome 47.
     */
   var isPublicSession: js.UndefOr[Boolean] = js.native
+  
   /**
     * The file entries for the onLaunched event triggered by a matching file handler in the file_handlers manifest key.
     */
   var items: js.UndefOr[js.Array[LaunchDataItem]] = js.native
+  
   /**
     * The referrer URL for the onLaunched event triggered by a matching URL handler in the url_handlers manifest key.
     */
   var referrerUrl: js.UndefOr[String] = js.native
+  
   /**
     * Where the app is launched from.
     * @see enum LaunchSource
@@ -99,55 +106,74 @@ trait LaunchData extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * The URL for the onLaunched event triggered by a matching URL handler in the url_handlers manifest key.
     */
   var url: js.UndefOr[String] = js.native
 }
-
 object LaunchData {
+  
   @scala.inline
   def apply(): LaunchData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchData]
   }
+  
   @scala.inline
   implicit class LaunchDataOps[Self <: LaunchData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActionData(value: ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]): Self = this.set("actionData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteActionData: Self = this.set("actionData", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setIsKioskSession(value: Boolean): Self = this.set("isKioskSession", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsKioskSession: Self = this.set("isKioskSession", js.undefined)
+    
     @scala.inline
     def setIsPublicSession(value: Boolean): Self = this.set("isPublicSession", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsPublicSession: Self = this.set("isPublicSession", js.undefined)
+    
     @scala.inline
     def setItemsVarargs(value: LaunchDataItem*): Self = this.set("items", js.Array(value :_*))
+    
     @scala.inline
     def setItems(value: js.Array[LaunchDataItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItems: Self = this.set("items", js.undefined)
+    
     @scala.inline
     def setReferrerUrl(value: String): Self = this.set("referrerUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReferrerUrl: Self = this.set("referrerUrl", js.undefined)
+    
     @scala.inline
     def setSource(
       value: ToStringLiteral[
@@ -159,13 +185,14 @@ object LaunchData {
           ]
         ]
     ): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUrl: Self = this.set("url", js.undefined)
   }
-  
 }
-

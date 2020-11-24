@@ -11,8 +11,8 @@ Render React DOM into a new context
 | Full name          | react-gateway |
 | Keywords           | react, gateway, portal, modal, dialog |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 333643 |
+| # dependents       | 11 |
+| # downloads        | 414219 |
 | # stars            | 1 |
 
 ## Links

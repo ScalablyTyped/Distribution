@@ -4,7 +4,7 @@ import typings.jupyterlabApputils.sessioncontextMod.SessionContext.IKernelSearch
 import typings.jupyterlabApputils.sessioncontextMod.SessionContext.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "SessionContext")
 @js.native
@@ -15,13 +15,12 @@ class SessionContext protected ()
     */
   def this(options: IOptions) = this()
 }
-
 @JSImport("@jupyterlab/apputils", "SessionContext")
 @js.native
 object SessionContext extends js.Object {
+  
   /**
     * Get the default kernel name given select options.
     */
   def getDefaultKernel(options: IKernelSearch): String | Null = js.native
 }
-

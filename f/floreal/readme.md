@@ -12,10 +12,13 @@ Date formatting for the French Revolutionary calendar
 | Keywords           | conversion, dates, calendar, history, historical, france, french, republic |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 470 |
+| # downloads        | 466 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/seeschloss/floreal)
+- [Bugs](https://github.com/seeschloss/floreal/issues)
+- [Repository](https://github.com/seeschloss/floreal)
 - [Npm](https://www.npmjs.com/package/floreal)
     
 

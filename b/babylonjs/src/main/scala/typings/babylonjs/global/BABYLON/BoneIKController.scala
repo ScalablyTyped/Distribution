@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.MaxAngle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoneIKController")
 @js.native
@@ -22,13 +22,14 @@ class BoneIKController protected ()
     options: MaxAngle
   ) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.BoneIKController")
 @js.native
 object BoneIKController extends js.Object {
+  
   var _tmpMats: js.Any = js.native
+  
   var _tmpQuat: js.Any = js.native
+  
   var _tmpVecs: js.Any = js.native
 }
-

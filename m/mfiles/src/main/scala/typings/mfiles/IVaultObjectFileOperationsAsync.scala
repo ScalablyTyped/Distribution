@@ -6,10 +6,11 @@ import typings.mfiles.MFiles.MFLatestSpecificBehavior
 import typings.mfiles.MFiles.MFOCRZoneRecognitionMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultObjectFileOperationsAsync extends js.Object {
+  
   def AddEmptyFile(ObjVer: IObjVer, Title: String, Extension: String): Unit = js.native
   def AddEmptyFile(
     ObjVer: IObjVer,
@@ -63,6 +64,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def AddFile(ObjVer: IObjVer, Title: String, Extension: String, SourcePath: String): Unit = js.native
   def AddFile(
     ObjVer: IObjVer,
@@ -123,6 +125,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def CloseUploadSession(UploadID: Double): Unit = js.native
   def CloseUploadSession(
     UploadID: Double,
@@ -159,6 +162,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ConvertToPDF(
     ObjVer: IObjVer,
     FileID: Double,
@@ -240,6 +244,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFile(File: Double, FileVersion: Double, FilePath: String): Unit = js.native
   def DownloadFile(
     File: Double,
@@ -288,6 +293,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileAsDataURI(ObjVer: IObjVer, File: Double, FileVersion: Double): Unit = js.native
   def DownloadFileAsDataURI(
     ObjVer: IObjVer,
@@ -341,6 +347,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileEx(File: Double, FileVersion: Double, FilePath: String, FileFormat: MFFileFormat): Unit = js.native
   def DownloadFileEx(
     File: Double,
@@ -401,6 +408,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileInBlocks_Begin(File: Double, FileVersion: Double): Unit = js.native
   def DownloadFileInBlocks_Begin(
     File: Double,
@@ -447,6 +455,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileInBlocks_BeginEx(File: Double, FileVersion: Double, FileFormat: MFFileFormat): Unit = js.native
   def DownloadFileInBlocks_BeginEx(
     File: Double,
@@ -500,6 +509,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileInBlocks_BeginEx_32bit(File: Double, FileVersion: Double, FileFormat: MFFileFormat): Unit = js.native
   def DownloadFileInBlocks_BeginEx_32bit(
     File: Double,
@@ -553,6 +563,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileInBlocks_Begin_32bit(File: Double, FileVersion: Double): Unit = js.native
   def DownloadFileInBlocks_Begin_32bit(
     File: Double,
@@ -599,6 +610,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileInBlocks_ReadBlock(DownloadID: Double, BlockSize: Double, Offset: Double): Unit = js.native
   def DownloadFileInBlocks_ReadBlock(
     DownloadID: Double,
@@ -652,6 +664,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadFileInBlocks_ReadBlock_32bit(DownloadID: Double, BlockSize: Double, Offset: Double): Unit = js.native
   def DownloadFileInBlocks_ReadBlock_32bit(
     DownloadID: Double,
@@ -705,6 +718,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFileSize(FileVer: IFileVer): Unit = js.native
   def GetFileSize(
     FileVer: IFileVer,
@@ -741,6 +755,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFileSize_32bit(FileVer: IFileVer): Unit = js.native
   def GetFileSize_32bit(
     FileVer: IFileVer,
@@ -777,6 +792,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFiles(ObjVer: IObjVer): Unit = js.native
   def GetFiles(
     ObjVer: IObjVer,
@@ -813,6 +829,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetFilesForModificationInEventHandler(ObjVer: IObjVer): Unit = js.native
   def GetFilesForModificationInEventHandler(
     ObjVer: IObjVer,
@@ -849,6 +866,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetLatestFileVersion(FileID: Double, AllowCheckedOut: Boolean): Unit = js.native
   def GetLatestFileVersion(
     FileID: Double,
@@ -895,6 +913,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetObjIDOfFile(FileID: Double): Unit = js.native
   def GetObjIDOfFile(
     FileID: Double,
@@ -931,6 +950,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPathInDefaultView(
     ObjID: IObjID,
     ObjectVersion: Double,
@@ -1012,6 +1032,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPathInDefaultViewEx(
     ObjID: IObjID,
     ObjectVersion: Double,
@@ -1101,6 +1122,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def OpenFileInDefaultApplication(ParentWindow: Double, ObjVer: IObjVer, FileVer: IFileVer, FileOpenMethod: MFFileOpenMethod): Unit = js.native
   def OpenFileInDefaultApplication(
     ParentWindow: Double,
@@ -1161,6 +1183,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def PerformOCROperation(
     ObjVer: IObjVer,
     FileVer: IFileVer,
@@ -1242,6 +1265,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveFile(ObjVer: IObjVer, FileVer: IFileVer): Unit = js.native
   def RemoveFile(
     ObjVer: IObjVer,
@@ -1288,6 +1312,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RenameFile(
     ObjVer: IObjVer,
     FileVer: IFileVer,
@@ -1361,6 +1386,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateMetadataInFile(ObjVer: IObjVer, File: Double, FailOnUnsupportedFiles: Boolean): Unit = js.native
   def UpdateMetadataInFile(
     ObjVer: IObjVer,
@@ -1414,6 +1440,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFile(File: Double, FileVersion: Double, FilePath: String): Unit = js.native
   def UploadFile(
     File: Double,
@@ -1462,6 +1489,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFileBlock(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
   def UploadFileBlock(
     UploadID: Double,
@@ -1522,6 +1550,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFileBlockBegin(): Unit = js.native
   def UploadFileBlockBegin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -1552,6 +1581,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFileBlockBegin_32bit(): Unit = js.native
   def UploadFileBlockBegin_32bit(
     successCallback: js.UndefOr[scala.Nothing],
@@ -1582,6 +1612,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFileBlock_32bit(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
   def UploadFileBlock_32bit(
     UploadID: Double,
@@ -1642,6 +1673,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFileCommit(UploadID: Double, File: Double, FileVersion: Double, LogicalSize: Double): Unit = js.native
   def UploadFileCommit(
     UploadID: Double,
@@ -1702,6 +1734,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFileCommit_32bit(UploadID: Double, File: Double, FileVersion: Double, LogicalSize: Double): Unit = js.native
   def UploadFileCommit_32bit(
     UploadID: Double,
@@ -1762,6 +1795,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadFromDataURI(ObjVer: IObjVer, File: Double, FileVersion: Double, DataURI: String): Unit = js.native
   def UploadFromDataURI(
     ObjVer: IObjVer,
@@ -1822,6 +1856,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFile(FilePath: String): Unit = js.native
   def UploadTemporaryFile(
     FilePath: String,
@@ -1858,6 +1893,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFileBlock(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
   def UploadTemporaryFileBlock(
     UploadID: Double,
@@ -1918,6 +1954,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFileBlockBegin(FileExtension: String): Unit = js.native
   def UploadTemporaryFileBlockBegin(
     FileExtension: String,
@@ -1954,6 +1991,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFileBlockBegin_32bit(FileExtension: String): Unit = js.native
   def UploadTemporaryFileBlockBegin_32bit(
     FileExtension: String,
@@ -1990,6 +2028,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFileBlock_32bit(UploadID: Double, TotalSizeInBytes: Double, Offset: Double, Block: js.Array[Double]): Unit = js.native
   def UploadTemporaryFileBlock_32bit(
     UploadID: Double,
@@ -2050,6 +2089,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFileCommit(UploadID: Double, LogicalSize: Double): Unit = js.native
   def UploadTemporaryFileCommit(
     UploadID: Double,
@@ -2092,6 +2132,7 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UploadTemporaryFileCommit_32bit(UploadID: Double, LogicalSize: Double): Unit = js.native
   def UploadTemporaryFileCommit_32bit(
     UploadID: Double,
@@ -2135,4 +2176,3 @@ trait IVaultObjectFileOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

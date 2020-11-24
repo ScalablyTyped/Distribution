@@ -4,12 +4,12 @@ import typings.sharepoint.CUI.Control
 import typings.sharepoint.CUI.Root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorPicker extends Control
-
 object ColorPicker {
+  
   @scala.inline
   def apply(
     createComponentForDisplayMode: String => js.Any,
@@ -23,4 +23,3 @@ object ColorPicker {
     __obj.asInstanceOf[ColorPicker]
   }
 }
-

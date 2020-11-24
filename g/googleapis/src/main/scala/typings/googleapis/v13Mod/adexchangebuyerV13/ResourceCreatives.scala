@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Creatives")
 @js.native
 class ResourceCreatives protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.creatives.get
     * @desc Gets the status for a single creative. A creative will be available
@@ -43,6 +45,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.creatives.insert
     * @desc Submit a new creative.
@@ -71,6 +74,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.creatives.list
     * @desc Retrieves a list of the authenticated user's active creatives. A
@@ -105,4 +109,3 @@ class ResourceCreatives protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreativesList]
   ): Unit = js.native
 }
-

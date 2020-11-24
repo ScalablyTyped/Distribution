@@ -7,15 +7,17 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ipushbackMod.IPushBack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/linear/ILinearContainerBase", JSImport.Namespace)
 @js.native
 object ilinearcontainerbaseMod extends js.Object {
+  
   @js.native
   trait ILinearContainerBase[T /* <: ElemT */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */, ElemT]
     extends IContainer[T, SourceT, IteratorT, ReverseT, ElemT]
        with IPushBack[T] {
+    
     /**
       * Fill Assigner.
       *
@@ -31,11 +33,13 @@ object ilinearcontainerbaseMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[ElemT, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -53,6 +57,7 @@ object ilinearcontainerbaseMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: IteratorT): IteratorT = js.native
+    
     /**
       * Insert repeated elements.
       *
@@ -79,16 +84,19 @@ object ilinearcontainerbaseMod extends js.Object {
       * @return An iterator to the first of the newly inserted elements.
       */
     def insert[InputIterator /* <: IForwardIterator[T, InputIterator] */](pos: IteratorT, first: InputIterator, last: InputIterator): IteratorT = js.native
+    
     /**
       * Erase the last element.
       */
     def pop_back(): Unit = js.native
+    
     /**
       * Resize this {@link Vector} forcibly.
       *
       * @param n New container size.
       */
     def resize(n: Double): Unit = js.native
+    
     /**
       * Swap elements.
       *
@@ -96,6 +104,7 @@ object ilinearcontainerbaseMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: SourceT): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -104,6 +113,4 @@ object ilinearcontainerbaseMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
 }
-

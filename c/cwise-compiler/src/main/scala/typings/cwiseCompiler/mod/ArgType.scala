@@ -2,7 +2,7 @@ package typings.cwiseCompiler.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.cwiseCompiler.cwiseCompilerStrings.array
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   - typings.cwiseCompiler.mod.OffsetArg
 */
 trait ArgType extends js.Object
-

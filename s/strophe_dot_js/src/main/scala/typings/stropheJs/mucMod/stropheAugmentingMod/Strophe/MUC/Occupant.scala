@@ -3,10 +3,11 @@ package typings.stropheJs.mucMod.stropheAugmentingMod.Strophe.MUC
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Occupant extends OccupantInfo {
+  
   def admin(): String = js.native
   def admin(
     reason: js.UndefOr[scala.Nothing],
@@ -31,6 +32,7 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def ban(): String = js.native
   def ban(
     reason: js.UndefOr[scala.Nothing],
@@ -55,6 +57,7 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def deop(): String = js.native
   def deop(
     reason: js.UndefOr[scala.Nothing],
@@ -79,6 +82,7 @@ trait Occupant extends OccupantInfo {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def kick(): String = js.native
   def kick(
     reason: js.UndefOr[scala.Nothing],
@@ -103,6 +107,7 @@ trait Occupant extends OccupantInfo {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def member(): String = js.native
   def member(
     reason: js.UndefOr[scala.Nothing],
@@ -127,6 +132,7 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def modifyAffiliation(affiliation: String): String = js.native
   def modifyAffiliation(
     affiliation: String,
@@ -159,6 +165,7 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def modifyRole(role: String): String = js.native
   def modifyRole(
     role: String,
@@ -187,6 +194,7 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def mute(): String = js.native
   def mute(
     reason: js.UndefOr[scala.Nothing],
@@ -211,6 +219,7 @@ trait Occupant extends OccupantInfo {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def op(): String = js.native
   def op(
     reason: js.UndefOr[scala.Nothing],
@@ -235,6 +244,7 @@ trait Occupant extends OccupantInfo {
     handler_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def owner(): String = js.native
   def owner(
     reason: js.UndefOr[scala.Nothing],
@@ -259,6 +269,7 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def revoke(): String = js.native
   def revoke(
     reason: js.UndefOr[scala.Nothing],
@@ -283,7 +294,9 @@ trait Occupant extends OccupantInfo {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
+  
   def update(data: OccupantInfo): Unit = js.native
+  
   def voice(): String = js.native
   def voice(
     reason: js.UndefOr[scala.Nothing],
@@ -309,4 +322,3 @@ trait Occupant extends OccupantInfo {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
 }
-

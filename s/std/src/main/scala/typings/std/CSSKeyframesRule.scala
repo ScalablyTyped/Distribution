@@ -2,19 +2,24 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object representing a complete set of keyframes for a CSS animation. It corresponds to the contains of a whole @keyframes at-rule. It implements the CSSRule interface with a type value of 7 (CSSRule.KEYFRAMES_RULE). */
 @js.native
 trait CSSKeyframesRule extends CSSRule {
-  val cssRules: CSSRuleList = js.native
-  var name: java.lang.String = js.native
+  
   def appendRule(rule: java.lang.String): Unit = js.native
+  
+  val cssRules: CSSRuleList = js.native
+  
   def deleteRule(select: java.lang.String): Unit = js.native
+  
   def findRule(select: java.lang.String): CSSKeyframeRule | Null = js.native
+  
+  var name: java.lang.String = js.native
 }
-
 object CSSKeyframesRule {
+  
   @scala.inline
   def apply(
     CHARSET_RULE: Double,
@@ -39,28 +44,35 @@ object CSSKeyframesRule {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSKeyframesRule]
   }
+  
   @scala.inline
   implicit class CSSKeyframesRuleOps[Self <: CSSKeyframesRule] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppendRule(value: java.lang.String => Unit): Self = this.set("appendRule", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCssRules(value: CSSRuleList): Self = this.set("cssRules", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDeleteRule(value: java.lang.String => Unit): Self = this.set("deleteRule", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFindRule(value: java.lang.String => CSSKeyframeRule | Null): Self = this.set("findRule", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
   }
-  
 }
-

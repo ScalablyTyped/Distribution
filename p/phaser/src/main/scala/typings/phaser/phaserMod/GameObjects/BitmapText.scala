@@ -7,7 +7,7 @@ import typings.phaser.integer
 import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BitmapText objects work by taking a texture file and an XML or JSON file that describes the font structure.
@@ -97,23 +97,26 @@ class BitmapText protected ()
     align: integer
   ) = this()
 }
-
 /* static members */
 @JSImport("phaser", "GameObjects.BitmapText")
 @js.native
 object BitmapText extends js.Object {
+  
   /**
     * Center align the text characters in a multi-line BitmapText object.
     */
   var ALIGN_CENTER: integer = js.native
+  
   /**
     * Left align the text characters in a multi-line BitmapText object.
     */
   var ALIGN_LEFT: integer = js.native
+  
   /**
     * Right align the text characters in a multi-line BitmapText object.
     */
   var ALIGN_RIGHT: integer = js.native
+  
   /**
     * Parse an XML Bitmap Font from an Atlas.
     * 
@@ -153,6 +156,7 @@ object BitmapText extends js.Object {
     xSpacing: integer,
     ySpacing: integer
   ): Boolean = js.native
+  
   /**
     * Parse an XML font to Bitmap Font data for the Bitmap Font cache.
     * @param xml The XML Document to parse the font from.
@@ -174,4 +178,3 @@ object BitmapText extends js.Object {
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = js.native
 }
-

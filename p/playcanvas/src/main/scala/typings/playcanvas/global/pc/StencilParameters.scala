@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new StencilParameters instance.
@@ -21,4 +21,3 @@ class StencilParameters protected ()
   extends typings.playcanvas.pc.StencilParameters {
   def this(options: js.Any) = this()
 }
-

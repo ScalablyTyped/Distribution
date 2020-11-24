@@ -3,11 +3,12 @@ package typings.fsCapacitor
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-capacitor", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class ReadAfterDestroyedError () extends Error
   
@@ -18,9 +19,8 @@ object mod extends js.Object {
   @js.native
   class WriteStream ()
     extends typings.node.fsMod.WriteStream {
+    
     def createReadStream(): ReadStream = js.native
     def createReadStream(name: String): ReadStream = js.native
   }
-  
 }
-

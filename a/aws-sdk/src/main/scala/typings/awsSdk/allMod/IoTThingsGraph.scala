@@ -4,7 +4,7 @@ import typings.awsSdk.iotthingsgraphMod.ClientConfiguration
 import typings.awsSdk.iotthingsgraphMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "IoTThingsGraph")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class IoTThingsGraph () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

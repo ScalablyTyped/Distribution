@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.InfoWindow.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.InfoWindow")
 @js.native
@@ -15,4 +15,3 @@ class InfoWindow[ExtraData] ()
   extends typings.amapJsApi.AMap.InfoWindow[ExtraData] {
   def this(options: Options[_]) = this()
 }
-

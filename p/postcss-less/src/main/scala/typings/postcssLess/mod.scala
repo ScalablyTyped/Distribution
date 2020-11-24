@@ -13,11 +13,31 @@ import typings.postcss.mod.Stringifier
 import typings.postcssLess.postcssLessBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss-less", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def nodeToString(node: Node): String = js.native
+  
+  /**
+    * Function to generate AST by string.
+    */
+  var parse: js.UndefOr[Parser] = js.native
+  def parse(css: ParserInput): Root_ = js.native
+  def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = js.native
+  @JSName("parse")
+  var parse_Original: Parser = js.native
+  
+  /**
+    * Class to generate string by AST.
+    */
+  var stringify: js.UndefOr[Stringifier] = js.native
+  def stringify(node: Node, builder: Builder): Unit = js.native
+  @JSName("stringify")
+  var stringify_Original: Stringifier = js.native
+  
   /* Rewritten from type alias, can be one of: 
     - typings.postcssLess.mod.ImportAtRule
     - typings.postcssLess.mod.VariableAtRule
@@ -28,7 +48,16 @@ object mod extends js.Object {
   
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L187
   @js.native
+  trait ExtendDeclaration
+    extends typings.postcss.mod.Declaration {
+    
+    var extend: `true` = js.native
+  }
+  
+  // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L187
+  @js.native
   trait ExtendRule extends Rule_ {
+    
     var extend: `true` = js.native
   }
   
@@ -37,6 +66,7 @@ object mod extends js.Object {
   trait FunctionAtRule
     extends AtRule_
        with AtRule {
+    
     var function: `true` = js.native
   }
   
@@ -45,14 +75,18 @@ object mod extends js.Object {
   trait ImportAtRule
     extends AtRule_
        with AtRule {
+    
     var filename: String = js.native
+    
     var `import`: `true` = js.native
+    
     var options: js.UndefOr[String] = js.native
   }
   
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L73
   @js.native
   trait InlineComment extends Comment_ {
+    
     var `inline`: `true` = js.native
   }
   
@@ -61,7 +95,9 @@ object mod extends js.Object {
   trait MixinAtRule
     extends AtRule_
        with AtRule {
+    
     var important: js.UndefOr[`true`] = js.native
+    
     var mixin: `true` = js.native
   }
   
@@ -70,26 +106,15 @@ object mod extends js.Object {
   trait VariableAtRule
     extends AtRule_
        with AtRule {
+    
+    var value: String = js.native
+    
     var variable: `true` = js.native
   }
   
-  /**
-    * Function to generate AST by string.
-    */
-  var parse: js.UndefOr[Parser] = js.native
-  @JSName("parse")
-  var parse_Original: Parser = js.native
-  /**
-    * Class to generate string by AST.
-    */
-  var stringify: js.UndefOr[Stringifier] = js.native
-  @JSName("stringify")
-  var stringify_Original: Stringifier = js.native
-  def nodeToString(node: Node): String = js.native
-  def parse(css: ParserInput): Root_ = js.native
-  def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = js.native
-  def stringify(node: Node, builder: Builder): Unit = js.native
   type Comment = InlineComment
+  
+  type Declaration = ExtendDeclaration
+  
   type Rule = ExtendRule
 }
-

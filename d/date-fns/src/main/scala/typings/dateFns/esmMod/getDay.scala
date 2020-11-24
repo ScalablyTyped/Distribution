@@ -10,12 +10,12 @@ import typings.dateFns.dateFnsNumbers.`6`
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm", "getDay")
 @js.native
 object getDay extends js.Object {
+  
   def apply(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
   def apply(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
 }
-

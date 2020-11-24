@@ -9,11 +9,12 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jest/core/build/watch", JSImport.Namespace)
 @js.native
 object watchMod extends js.Object {
+  
   def default(
     initialGlobalConfig: GlobalConfig,
     contexts: js.Array[Context],
@@ -80,4 +81,3 @@ object watchMod extends js.Object {
     filter: Filter
   ): js.Promise[Unit] = js.native
 }
-

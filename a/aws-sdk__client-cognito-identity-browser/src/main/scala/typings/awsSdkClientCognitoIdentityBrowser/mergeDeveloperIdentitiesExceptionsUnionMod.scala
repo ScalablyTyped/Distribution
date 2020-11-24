@@ -2,11 +2,12 @@ package typings.awsSdkClientCognitoIdentityBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-cognito-identity-browser/types/MergeDeveloperIdentitiesExceptionsUnion", JSImport.Namespace)
 @js.native
 object mergeDeveloperIdentitiesExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientCognitoIdentityBrowser.typesInvalidParameterExceptionMod.InvalidParameterException
     - typings.awsSdkClientCognitoIdentityBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException
@@ -16,6 +17,4 @@ object mergeDeveloperIdentitiesExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientCognitoIdentityBrowser.typesInternalErrorExceptionMod.InternalErrorException
   */
   trait MergeDeveloperIdentitiesExceptionsUnion extends js.Object
-  
 }
-

@@ -10,9 +10,9 @@ Provides a fallback for non-existing directories so that the HTML 5 history API 
 | ------------------ | :-------------: |
 | Full name          | connect-history-api-fallback-exclusions |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 74221 |
+| # downloads        | 98151 |
 | # stars            | 0 |
 
 ## Links

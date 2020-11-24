@@ -2,14 +2,16 @@ package typings.passportRememberMeExtended
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type IssueFunction = js.Function2[
     /* user */ js.Any, 
     /* done */ js.Function2[/* err */ js.Any, /* token */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
   ]
+  
   type IssueFunctionWithRequest = js.Function3[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
@@ -21,6 +23,7 @@ package object mod {
     /* done */ js.Function2[/* err */ js.Any, /* token */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
   ]
+  
   type VerifyFunction = js.Function2[
     /* token */ js.Any, 
     /* done */ js.Function3[
@@ -31,6 +34,7 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
   type VerifyFunctionWithRequest = js.Function3[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 

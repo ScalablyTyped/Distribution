@@ -3,11 +3,12 @@ package typings.coreJs
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("core-js/library/fn/array/filter", JSImport.Namespace)
 @js.native
 object arrayFilterMod extends js.Object {
+  
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean]
@@ -18,4 +19,3 @@ object arrayFilterMod extends js.Object {
     thisArg: js.Any
   ): Array[T] = js.native
 }
-

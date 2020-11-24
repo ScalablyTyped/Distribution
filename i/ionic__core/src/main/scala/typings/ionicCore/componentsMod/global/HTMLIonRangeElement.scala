@@ -8,18 +8,20 @@ import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTMLIonRangeElement
   extends HTMLStencilElement
      with IonRange {
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -27,8 +29,6 @@ trait HTMLIonRangeElement
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
 }
-
 @JSGlobal("HTMLIonRangeElement")
 @js.native
 object HTMLIonRangeElement extends Instantiable0[HTMLIonRangeElement]
-

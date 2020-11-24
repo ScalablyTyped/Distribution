@@ -1,11 +1,11 @@
 package typings.babylonjs.audioIndexMod
 
+import typings.babylonjs.isoundoptionsMod.ISoundOptions
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.soundMod.ISoundOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Audio/index", "Sound")
 @js.native
@@ -30,15 +30,15 @@ class Sound protected ()
     name: String,
     urlOrArrayBuffer: js.Any,
     scene: Scene,
-    readyToPlayCallback: Nullable[js.Function0[Unit]],
+    readyToPlayCallback: js.UndefOr[Nullable[js.Function0[Unit]]],
     options: ISoundOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Audio/index", "Sound")
 @js.native
 object Sound extends js.Object {
+  
   /**
     * Parse a JSON representation of a sound to innstantiate in a given scene
     * @param parsedSound Define the JSON representation of the sound (usually coming from the serialize method)
@@ -49,7 +49,7 @@ object Sound extends js.Object {
     */
   def Parse(parsedSound: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.soundMod.Sound = js.native
   def Parse(parsedSound: js.Any, scene: Scene, rootUrl: String, sourceSound: typings.babylonjs.soundMod.Sound): typings.babylonjs.soundMod.Sound = js.native
+  
   /** @hidden */
   def _SceneComponentInitialization(scene: Scene): Unit = js.native
 }
-

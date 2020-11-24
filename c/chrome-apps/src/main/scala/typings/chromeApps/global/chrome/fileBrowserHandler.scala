@@ -6,7 +6,7 @@ import typings.chromeApps.chrome.fileBrowserHandler.SelectFileParameters
 import typings.chromeApps.chrome.fileBrowserHandler.SelectionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.fileBrowserHandle
@@ -25,10 +25,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.fileBrowserHandler")
 @js.native
 object fileBrowserHandler extends js.Object {
+  
   /**
     * Fired when file system action is executed from ChromeOS file browser.
     */
   val onExecute: typings.chromeApps.chrome.events.Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]] = js.native
+  
   /**
     * Prompts user to select file path under which file should be saved.
     * When the file is selected, file access permission required to use
@@ -41,4 +43,3 @@ object fileBrowserHandler extends js.Object {
     */
   def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
 }
-

@@ -6,32 +6,50 @@ import typings.activexOffice.Office.MsoCalloutType
 import typings.activexOffice.Office.MsoTriState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CalloutFormat extends js.Object {
+  
   var Accent: MsoTriState = js.native
+  
   var Angle: MsoCalloutAngleType = js.native
+  
   val Application: typings.activexWord.Word.Application = js.native
+  
   var AutoAttach: MsoTriState = js.native
+  
   val AutoLength: MsoTriState = js.native
+  
+  def AutomaticLength(): Unit = js.native
+  
   var Border: MsoTriState = js.native
+  
   val Creator: Double = js.native
+  
+  def CustomDrop(Drop: Double): Unit = js.native
+  
+  def CustomLength(Length: Double): Unit = js.native
+  
   val Drop: Double = js.native
+  
   val DropType: MsoCalloutDropType = js.native
+  
   var Gap: Double = js.native
+  
   val Length: Double = js.native
+  
   val Parent: js.Any = js.native
+  
+  def PresetDrop(DropType: MsoCalloutDropType): Unit = js.native
+  
   var Type: MsoCalloutType = js.native
+  
   @JSName("Word.CalloutFormat_typekey")
   var WordDotCalloutFormat_typekey: CalloutFormat = js.native
-  def AutomaticLength(): Unit = js.native
-  def CustomDrop(Drop: Double): Unit = js.native
-  def CustomLength(Length: Double): Unit = js.native
-  def PresetDrop(DropType: MsoCalloutDropType): Unit = js.native
 }
-
 object CalloutFormat {
+  
   @scala.inline
   def apply(
     Accent: MsoTriState,
@@ -57,54 +75,74 @@ object CalloutFormat {
     __obj.updateDynamic("Word.CalloutFormat_typekey")(WordDotCalloutFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalloutFormat]
   }
+  
   @scala.inline
   implicit class CalloutFormatOps[Self <: CalloutFormat] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAccent(value: MsoTriState): Self = this.set("Accent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAngle(value: MsoCalloutAngleType): Self = this.set("Angle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoAttach(value: MsoTriState): Self = this.set("AutoAttach", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutoLength(value: MsoTriState): Self = this.set("AutoLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAutomaticLength(value: () => Unit): Self = this.set("AutomaticLength", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setBorder(value: MsoTriState): Self = this.set("Border", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCustomDrop(value: Double => Unit): Self = this.set("CustomDrop", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCustomLength(value: Double => Unit): Self = this.set("CustomLength", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDrop(value: Double): Self = this.set("Drop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDropType(value: MsoCalloutDropType): Self = this.set("DropType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGap(value: Double): Self = this.set("Gap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPresetDrop(value: MsoCalloutDropType => Unit): Self = this.set("PresetDrop", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setType(value: MsoCalloutType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWordDotCalloutFormat_typekey(value: CalloutFormat): Self = this.set("Word.CalloutFormat_typekey", value.asInstanceOf[js.Any])
   }
-  
 }
-

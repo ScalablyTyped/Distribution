@@ -7,11 +7,12 @@ import typings.jointjs.mod.dia.Element.GenericAttributes
 import typings.jointjs.mod.dia.ElementView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "shapes.pn")
 @js.native
 object pn extends js.Object {
+  
   @js.native
   class Link ()
     extends typings.jointjs.mod.dia.Link
@@ -25,6 +26,7 @@ object pn extends js.Object {
   
   @js.native
   class PlaceView () extends ElementView {
+    
     def renderTokens(): Unit = js.native
   }
   
@@ -34,6 +36,4 @@ object pn extends js.Object {
     def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[SVGRectSelector], opt: StringDictionary[js.Any]) = this()
   }
-  
 }
-

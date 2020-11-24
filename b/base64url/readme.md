@@ -10,9 +10,9 @@ For encoding to/from base64urls
 | ------------------ | :-------------: |
 | Full name          | base64url |
 | Keywords           | base64, base64url |
-| # releases         | 3 |
-| # dependents       | 354 |
-| # downloads        | 30279604 |
+| # releases         | 2 |
+| # dependents       | 469 |
+| # downloads        | 37906620 |
 | # stars            | 16 |
 
 ## Links

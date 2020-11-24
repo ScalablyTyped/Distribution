@@ -12,7 +12,7 @@ Node JS Google Play Music API.  Supports All Access
 | Keywords           | gmusic, gmusicapi, google play, play music, all access |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 17130 |
+| # downloads        | 17204 |
 | # stars            | 14 |
 
 ## Links

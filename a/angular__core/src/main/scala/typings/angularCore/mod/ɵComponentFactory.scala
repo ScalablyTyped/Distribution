@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for a factory that can create a component dynamically.
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "\u0275ComponentFactory")
 @js.native
 abstract class ɵComponentFactory[C] () extends ComponentFactory[C]
-

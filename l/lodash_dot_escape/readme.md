@@ -11,8 +11,8 @@ The lodash method `_.escape` exported as a module.
 | Full name          | lodash.escape |
 | Keywords           | lodash-modularized, escape |
 | # releases         | 0 |
-| # dependents       | 85 |
-| # downloads        | 143417685 |
+| # dependents       | 88 |
+| # downloads        | 160145498 |
 | # stars            | 1 |
 
 ## Links

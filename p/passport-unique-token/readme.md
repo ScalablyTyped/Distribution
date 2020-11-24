@@ -12,7 +12,7 @@ Unique Token authentication strategy for Passport.
 | Keywords           | passport, token, auth, authentication |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 107163 |
+| # downloads        | 118033 |
 | # stars            | 1 |
 
 ## Links

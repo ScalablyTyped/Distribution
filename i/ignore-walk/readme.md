@@ -11,8 +11,8 @@ Nested/recursive `.gitignore`/`.npmignore` parsing and filtering.
 | Full name          | ignore-walk |
 | Keywords           | ignorefile, ignore, file, .gitignore, .npmignore, glob |
 | # releases         | 3 |
-| # dependents       | 49 |
-| # downloads        | 249748861 |
+| # dependents       | 71 |
+| # downloads        | 333709258 |
 | # stars            | 1 |
 
 ## Links

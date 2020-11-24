@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-popper-tooltip
 
-Typings are for version 2.11.1
+Typings are for version 3.1.1
 
 ## Library description:
 React tooltip library built around react-popper
@@ -10,13 +10,13 @@ React tooltip library built around react-popper
 | ------------------ | :-------------: |
 | Full name          | react-popper-tooltip |
 | Keywords           | react, tooltip, popover, overlay, react-tooltip, react-popper |
-| # releases         | 61 |
-| # dependents       | 13 |
-| # downloads        | 23849276 |
+| # releases         | 53 |
+| # dependents       | 33 |
+| # downloads        | 61728571 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://react-popper-tooltip.netlify.com/)
+- [Homepage](https://react-popper-tooltip.netlify.app)
 - [Bugs](https://github.com/mohsinulhaq/react-popper-tooltip/issues)
 - [Repository](https://github.com/mohsinulhaq/react-popper-tooltip)
 - [Npm](https://www.npmjs.com/package/react-popper-tooltip)

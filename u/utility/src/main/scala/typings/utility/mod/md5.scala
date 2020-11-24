@@ -3,11 +3,12 @@ package typings.utility.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "md5")
 @js.native
 object md5 extends js.Object {
+  
   /**
     * md5 hash
     *
@@ -19,4 +20,3 @@ object md5 extends js.Object {
   def apply(s: String): String = js.native
   def apply(s: Buffer): String = js.native
 }
-

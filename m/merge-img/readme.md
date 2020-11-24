@@ -11,8 +11,8 @@ Merge multiple images into a single image
 | Full name          | merge-img |
 | Keywords           | concat, convert, compose, image, manipulation, merge |
 | # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 405908 |
+| # dependents       | 19 |
+| # downloads        | 1032241 |
 | # stars            | 1 |
 
 ## Links

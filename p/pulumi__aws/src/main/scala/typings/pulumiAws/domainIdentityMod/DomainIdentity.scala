@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity")
 @js.native
@@ -21,14 +21,17 @@ class DomainIdentity protected () extends CustomResource {
     */
   def this(name: String, args: DomainIdentityArgs) = this()
   def this(name: String, args: DomainIdentityArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the domain identity.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The domain name to assign to SES
     */
   val domain: Output_[String] = js.native
+  
   /**
     * A code which when added to the domain as a TXT record
     * will signal to SES that the owner of the domain has authorised SES to act on
@@ -40,11 +43,11 @@ class DomainIdentity protected () extends CustomResource {
     */
   val verificationToken: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity")
 @js.native
 object DomainIdentity extends js.Object {
+  
   /**
     * Get an existing DomainIdentity resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +61,10 @@ object DomainIdentity extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainIdentity = js.native
   def get(name: String, id: Input[ID], state: DomainIdentityState): DomainIdentity = js.native
   def get(name: String, id: Input[ID], state: DomainIdentityState, opts: CustomResourceOptions): DomainIdentity = js.native
+  
   /**
     * Returns true if the given object is an instance of DomainIdentity.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentity.DomainIdentity */ Boolean = js.native
 }
-

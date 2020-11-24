@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to fill out a cell range automatically with values based on a start value, step count and fill mode.
@@ -12,12 +12,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XCellSeries extends XInterface {
+  
   /**
     * fills all cells in the range in a way that is specified by the first cell(s) in the range.
     * @param nFillDirection specifies the direction to fill the rows/columns of the range.
     * @param nSourceCount contains the number of cells in each row/column used to constitute the fill algorithm.
     */
   def fillAuto(nFillDirection: FillDirection, nSourceCount: Double): Unit = js.native
+  
   /**
     * fills all cells in the range based on the specified settings.
     * @param nFillDirection specifies the direction to fill the rows/columns of the range.
@@ -34,8 +36,8 @@ trait XCellSeries extends XInterface {
     fEndValue: Double
   ): Unit = js.native
 }
-
 object XCellSeries {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -47,22 +49,26 @@ object XCellSeries {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fillAuto = js.Any.fromFunction2(fillAuto), fillSeries = js.Any.fromFunction5(fillSeries), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCellSeries]
   }
+  
   @scala.inline
   implicit class XCellSeriesOps[Self <: XCellSeries] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFillAuto(value: (FillDirection, Double) => Unit): Self = this.set("fillAuto", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setFillSeries(value: (FillDirection, FillMode, FillDateMode, Double, Double) => Unit): Self = this.set("fillSeries", js.Any.fromFunction5(value))
   }
-  
 }
-

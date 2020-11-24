@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BitmapAlphaMode extends js.Object
-
 /** Specifies the alpha mode of pixel data. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapAlphaMode")
 @js.native
 object BitmapAlphaMode extends js.Object {
+  
   /** The alpha value is ignored. */
   @js.native
   sealed trait ignore extends BitmapAlphaMode
@@ -22,6 +22,4 @@ object BitmapAlphaMode extends js.Object {
   /** The alpha value has not been premultiplied. The alpha channel indicates the transparency of the color. */
   @js.native
   sealed trait straight extends BitmapAlphaMode
-  
 }
-

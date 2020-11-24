@@ -14,11 +14,13 @@ import typings.wordpressBlocks.wordpressBlocksStrings.multiple
 import typings.wordpressBlocks.wordpressBlocksStrings.reusable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofimportedSelectors extends js.Object {
+  
   def getBlockStyles(blockName: String): js.UndefOr[js.Array[BlockStyle]] = js.native
+  
   @JSName("getBlockSupport")
   def getBlockSupport_align(nameOrType: String, feature: align): js.UndefOr[js.Any] = js.native
   @JSName("getBlockSupport")
@@ -91,15 +93,24 @@ trait TypeofimportedSelectors extends js.Object {
   def getBlockSupport_reusable[T](nameOrType: String, feature: reusable, defaultSupports: T): T | Boolean | Double | String = js.native
   @JSName("getBlockSupport")
   def getBlockSupport_reusable[T](nameOrType: Block[_], feature: reusable, defaultSupports: T): T | Boolean | Double | String = js.native
+  
   def getBlockType[T](): js.UndefOr[Block[T]] = js.native
   def getBlockType[T](name: String): js.UndefOr[Block[T]] = js.native
+  
   def getBlockTypes(): js.Array[Block[_]] = js.native
+  
   def getCategories(): js.Array[Category] = js.native
+  
   def getChildBlockNames(blockName: String): js.Array[String] = js.native
+  
   def getDefaultBlockName(): js.UndefOr[String] = js.native
+  
   def getFreeformFallbackBlockName(): js.UndefOr[String] = js.native
+  
   def getGroupingBlockName(): js.UndefOr[String] = js.native
+  
   def getUnregisteredFallbackBlockName(): js.UndefOr[String] = js.native
+  
   @JSName("hasBlockSupport")
   def hasBlockSupport_align(nameOrType: String, feature: align): Boolean = js.native
   @JSName("hasBlockSupport")
@@ -172,9 +183,11 @@ trait TypeofimportedSelectors extends js.Object {
   def hasBlockSupport_reusable(nameOrType: Block[_], feature: reusable): Boolean = js.native
   @JSName("hasBlockSupport")
   def hasBlockSupport_reusable(nameOrType: Block[_], feature: reusable, defaultSupports: Boolean): Boolean = js.native
+  
   def hasChildBlocks(blockName: String): Boolean = js.native
+  
   def hasChildBlocksWithInserterSupport(blockName: String): Boolean = js.native
+  
   def isMatchingSearchTerm(nameOrType: String, searchTerm: String): Boolean = js.native
   def isMatchingSearchTerm(nameOrType: Block[_], searchTerm: String): Boolean = js.native
 }
-

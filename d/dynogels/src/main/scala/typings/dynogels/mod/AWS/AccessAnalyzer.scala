@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.accessanalyzerMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.AccessAnalyzer")
 @js.native
@@ -14,4 +14,3 @@ class AccessAnalyzer ()
   extends typings.awsSdk.mod.AccessAnalyzer {
   def this(options: ClientConfiguration) = this()
 }
-

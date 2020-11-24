@@ -19,7 +19,7 @@ import typings.rsocketTypes.rsocketTypesNumbers.`0x0e`
 import typings.rsocketTypes.rsocketTypesNumbers.`0x3f`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.rsocketTypes.reactiveSocketTypesMod.CancelFrame
@@ -38,14 +38,15 @@ import scala.scalajs.js.annotation._
   - typings.rsocketTypes.reactiveSocketTypesMod.UnsupportedFrame
 */
 trait Frame extends js.Object
-
 object Frame {
+  
   @scala.inline
   def KeepAliveFrame(flags: Double, lastReceivedPosition: Double, streamId: `0`, `type`: `0x03`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], lastReceivedPosition = lastReceivedPosition.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def SetupFrame(
     dataMimeType: String,
@@ -62,6 +63,7 @@ object Frame {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def RequestStreamFrame(
     data: Encodable,
@@ -75,30 +77,35 @@ object Frame {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def UnsupportedFrame(flags: Double, streamId: `0`, `type`: `0x3f` | `0x0c` | `0x00`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def LeaseFrame(flags: Double, requestCount: Double, streamId: `0`, ttl: Double, `type`: `0x02`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def CancelFrame(flags: Double, streamId: Double, `type`: `0x09`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def RequestChannelFrame(flags: Double, requestN: Double, streamId: Double, `type`: `0x07`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def ResumeFrame(
     clientPosition: Double,
@@ -114,36 +121,42 @@ object Frame {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def RequestResponseFrame(flags: Double, streamId: Double, `type`: `0x04`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def RequestFnfFrame(flags: Double, streamId: Double, `type`: `0x05`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def RequestNFrame(flags: Double, requestN: Double, streamId: Double, `type`: `0x08`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def ResumeOkFrame(clientPosition: Double, flags: Double, streamId: `0`, `type`: `0x0e`): Frame = {
     val __obj = js.Dynamic.literal(clientPosition = clientPosition.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def PayloadFrame(flags: Double, streamId: Double, `type`: `0x0a`): Frame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  
   @scala.inline
   def ErrorFrame(code: Double, flags: Double, message: String, streamId: Double, `type`: `0x0b`): Frame = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
@@ -151,4 +164,3 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
 }
-

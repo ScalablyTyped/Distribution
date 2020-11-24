@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@date-io/core" : "2.8.0"
+      "@date-io/core" : "2.10.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@date-io/core" : "2.8.0"
+      "@date-io/core" : "2.10.6"
     }
   ],
   "compile-devDependencies" : [

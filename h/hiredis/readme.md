@@ -11,8 +11,8 @@ Wrapper for reply processing code in hiredis
 | Full name          | hiredis |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 434 |
-| # downloads        | 2616196 |
+| # dependents       | 422 |
+| # downloads        | 2448151 |
 | # stars            | 28 |
 
 ## Links

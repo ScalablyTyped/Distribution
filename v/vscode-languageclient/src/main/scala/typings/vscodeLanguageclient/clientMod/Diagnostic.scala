@@ -2,11 +2,12 @@ package typings.vscodeLanguageclient.clientMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "Diagnostic")
 @js.native
 object Diagnostic extends js.Object {
+  
   /**
     * Creates a new Diagnostic literal.
     */
@@ -178,9 +179,9 @@ object Diagnostic extends js.Object {
     source: String,
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  
   /**
     * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
     */
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = js.native
 }
-

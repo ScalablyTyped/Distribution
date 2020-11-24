@@ -2,7 +2,7 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An HttpData resource specifies a list of objects on the web to be
@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaHttpData extends js.Object {
+  
   /**
     * The URL that points to the file that stores the object list entries. This
     * file must allow public access.  Currently, only URLs with HTTP and HTTPS
@@ -42,29 +43,33 @@ trait SchemaHttpData extends js.Object {
     */
   var listUrl: js.UndefOr[String] = js.native
 }
-
 object SchemaHttpData {
+  
   @scala.inline
   def apply(): SchemaHttpData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpData]
   }
+  
   @scala.inline
   implicit class SchemaHttpDataOps[Self <: SchemaHttpData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setListUrl(value: String): Self = this.set("listUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteListUrl: Self = this.set("listUrl", js.undefined)
   }
-  
 }
-

@@ -2,9 +2,28 @@ package typings.areWeThereYet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object areWeThereYetStrings {
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  
   @js.native
   sealed trait change extends js.Object
   
@@ -22,18 +41,4 @@ object areWeThereYetStrings {
   
   @js.native
   sealed trait readable extends js.Object
-  
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.renderPipelineIndexMod
 import typings.babylonjs.engineMod.Engine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/RenderPipeline/index", "PostProcessRenderPipeline")
 @js.native
@@ -16,4 +16,3 @@ class PostProcessRenderPipeline protected ()
     */
   def this(engine: Engine, name: String) = this()
 }
-

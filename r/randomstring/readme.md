@@ -10,9 +10,9 @@ A module for generating random strings
 | ------------------ | :-------------: |
 | Full name          | randomstring |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 662 |
-| # downloads        | 9311247 |
+| # releases         | 0 |
+| # dependents       | 739 |
+| # downloads        | 12041700 |
 | # stars            | 24 |
 
 ## Links

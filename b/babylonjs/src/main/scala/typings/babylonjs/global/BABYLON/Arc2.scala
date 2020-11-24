@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Arc2")
 @js.native
@@ -22,39 +22,4 @@ class Arc2 protected ()
     /** Defines the end point of the arc */
   endPoint: typings.babylonjs.BABYLON.Vector2
   ) = this()
-  /**
-    * Defines the angle of the arc (from mid point to end point).
-    */
-  /* CompleteClass */
-  override var angle: typings.babylonjs.BABYLON.Angle = js.native
-  /**
-    * Defines the center point of the arc.
-    */
-  /* CompleteClass */
-  override var centerPoint: typings.babylonjs.BABYLON.Vector2 = js.native
-  /** Defines the end point of the arc */
-  /* CompleteClass */
-  override var endPoint: typings.babylonjs.BABYLON.Vector2 = js.native
-  /** Defines the mid point of the arc */
-  /* CompleteClass */
-  override var midPoint: typings.babylonjs.BABYLON.Vector2 = js.native
-  /**
-    * Defines the orientation of the arc (clock wise/counter clock wise).
-    */
-  /* CompleteClass */
-  override var orientation: typings.babylonjs.BABYLON.Orientation = js.native
-  /**
-    * Defines the radius of the arc.
-    */
-  /* CompleteClass */
-  override var radius: Double = js.native
-  /**
-    * Defines the start angle of the arc (from start point to middle point).
-    */
-  /* CompleteClass */
-  override var startAngle: typings.babylonjs.BABYLON.Angle = js.native
-  /** Defines the start point of the arc */
-  /* CompleteClass */
-  override var startPoint: typings.babylonjs.BABYLON.Vector2 = js.native
 }
-

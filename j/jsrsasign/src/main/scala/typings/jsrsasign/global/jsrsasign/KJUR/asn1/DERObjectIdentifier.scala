@@ -5,7 +5,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER ObjectIdentifier
@@ -27,4 +27,3 @@ class DERObjectIdentifier ()
   def this(params: NameParam) = this()
   def this(params: ObjectIdentifierParam) = this()
 }
-

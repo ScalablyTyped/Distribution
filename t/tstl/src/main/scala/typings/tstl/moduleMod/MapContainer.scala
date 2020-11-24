@@ -6,7 +6,7 @@ import typings.tstl.mapContainerMod.MapContainer.Iterator
 import typings.tstl.mapContainerMod.MapContainer.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/base/module", "MapContainer")
 @js.native
@@ -20,4 +20,3 @@ abstract class MapContainer[Key, T, Unique /* <: Boolean */, Source /* <: typing
         ILinearContainerBase[Entry[Key, T], Source, IteratorT, ReverseT, Entry[Key, T]]
       ]) = this()
 }
-

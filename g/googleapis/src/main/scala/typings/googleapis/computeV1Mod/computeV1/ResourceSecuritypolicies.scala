@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Securitypolicies")
 @js.native
 class ResourceSecuritypolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.securityPolicies.addRule
     * @desc Inserts a rule into a security policy.
@@ -43,6 +43,9 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.securityPolicies.delete
     * @desc Deletes the specified policy.
@@ -73,6 +76,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.get
     * @desc List all of the ordered rules present in a single specified policy.
@@ -102,6 +106,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicy]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.getRule
     * @desc Gets a rule at the specified priority.
@@ -135,6 +140,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicyRule]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.insert
     * @desc Creates a new policy in the specified project using the data
@@ -166,6 +172,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.list
     * @desc List all the policies that have been configured for the specified
@@ -202,6 +209,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSecurityPolicyList]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.patch
     * @desc Patches the specified policy with the data included in the request.
@@ -233,6 +241,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.patchRule
     * @desc Patches a rule at the specified priority.
@@ -264,6 +273,7 @@ class ResourceSecuritypolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.securityPolicies.removeRule
     * @desc Deletes a rule at the specified priority.
@@ -295,4 +305,3 @@ class ResourceSecuritypolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

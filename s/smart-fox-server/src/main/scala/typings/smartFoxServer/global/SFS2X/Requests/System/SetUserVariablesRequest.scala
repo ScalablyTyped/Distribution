@@ -3,7 +3,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSUserVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.SetUserVariablesRequest")
 @js.native
@@ -15,4 +15,3 @@ class SetUserVariablesRequest protected ()
     */
   def this(userVariables: SFSUserVariable) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.vscode.mod
 import typings.vscode.anon.Dispose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Disposable")
 @js.native
@@ -14,16 +14,17 @@ class Disposable protected () extends js.Object {
     * @param callOnDispose Function that disposes something.
     */
   def this(callOnDispose: js.Function) = this()
+  
   /**
     * Dispose this object.
     */
   def dispose(): js.Any = js.native
 }
-
 /* static members */
 @JSImport("vscode", "Disposable")
 @js.native
 object Disposable extends js.Object {
+  
   /**
     * Combine many disposable-likes into one. Use this method
     * when having objects with a dispose function which are not
@@ -35,4 +36,3 @@ object Disposable extends js.Object {
     */
   def from(disposableLikes: Dispose*): Disposable = js.native
 }
-

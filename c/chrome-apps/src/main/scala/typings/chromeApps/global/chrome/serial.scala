@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.chrome.deprecated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.serial
@@ -21,4 +21,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.serial")
 @js.native
 object serial extends TopLevel[deprecated]
-

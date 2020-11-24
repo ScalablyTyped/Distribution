@@ -2,14 +2,18 @@ package typings.googlemaps.global.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This class extends MVCObject. */
+/**
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/event#MVCArray Maps JavaScript API}
+  */
 @JSGlobal("google.maps.MVCArray")
 @js.native
-/** A mutable MVC Array. */
+/**
+  * A mutable MVC Array.
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/event#MVCArray.constructor Maps JavaScript API}
+  */
 class MVCArray[T] ()
   extends typings.googlemaps.google.maps.MVCArray[T] {
   def this(array: js.Array[T]) = this()
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a specialization of the {@link com.sun.star.form.DataAwareControlModel} which additionally supports binding to external value suppliers.
@@ -63,6 +63,7 @@ import scala.scalajs.js.annotation._
 trait BindableDataAwareControlModel
   extends DataAwareControlModel
      with XBindableValue {
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -70,4 +71,3 @@ trait BindableDataAwareControlModel
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

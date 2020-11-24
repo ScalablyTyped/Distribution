@@ -3,11 +3,12 @@ package typings.fileSaver.mod
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("file-saver", "saveAs")
 @js.native
 object saveAs extends js.Object {
+  
   def apply(data: String): Unit = js.native
   def apply(data: String, filename: js.UndefOr[scala.Nothing], disableAutoBOM: Boolean): Unit = js.native
   def apply(data: String, filename: js.UndefOr[scala.Nothing], options: FileSaverOptions): Unit = js.native
@@ -27,4 +28,3 @@ object saveAs extends js.Object {
   def apply(data: Blob, filename: String, disableAutoBOM: Boolean): Unit = js.native
   def apply(data: Blob, filename: String, options: FileSaverOptions): Unit = js.native
 }
-

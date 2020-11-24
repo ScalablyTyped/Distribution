@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/runtimeconfig/v1beta1", "runtimeconfig_v1beta1.Resource$Projects$Configs$Variables")
 @js.native
 class ResourceProjectsConfigsVariables protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.create
     * @desc Creates a variable within the given configuration. You cannot
@@ -51,6 +53,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.delete
     * @desc Deletes a variable or multiple variables.  If you specify a
@@ -83,6 +86,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.get
     * @desc Gets information about a single variable.
@@ -111,6 +115,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.list
     * @desc Lists variables within given a configuration, matching any provided
@@ -149,6 +154,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListVariablesResponse]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -185,6 +191,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.update
     * @desc Updates an existing variable with a new value.
@@ -217,6 +224,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.variables.watch
     * @desc Watches a specific variable and waits for a change in the
@@ -259,4 +267,3 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
 }
-

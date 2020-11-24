@@ -5,11 +5,14 @@ import typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/markdownviewer", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val IMarkdownViewerTracker: Token[typings.jupyterlabMarkdownviewer.tokensMod.IMarkdownViewerTracker] = js.native
+  
   @js.native
   class MarkdownDocument ()
     extends typings.jupyterlabMarkdownviewer.widgetMod.MarkdownDocument
@@ -22,6 +25,14 @@ object mod extends js.Object {
       */
     def this(options: IOptions) = this()
   }
+  @js.native
+  object MarkdownViewer extends js.Object {
+    
+    /**
+      * The default configuration options for an editor.
+      */
+    val defaultConfig: IConfig = js.native
+  }
   
   @js.native
   class MarkdownViewerFactory protected ()
@@ -31,15 +42,4 @@ object mod extends js.Object {
       */
     def this(options: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions) = this()
   }
-  
-  val IMarkdownViewerTracker: Token[typings.jupyterlabMarkdownviewer.tokensMod.IMarkdownViewerTracker] = js.native
-  @js.native
-  object MarkdownViewer extends js.Object {
-    /**
-      * The default configuration options for an editor.
-      */
-    val defaultConfig: IConfig = js.native
-  }
-  
 }
-

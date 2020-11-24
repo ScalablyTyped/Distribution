@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Proposals")
 @js.native
 class ResourceProposals protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.proposals.get
     * @desc Get a proposal given its id
@@ -41,6 +43,7 @@ class ResourceProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.proposals.insert
     * @desc Create the given list of proposals
@@ -69,6 +72,7 @@ class ResourceProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreateOrdersResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.proposals.patch
     * @desc Update the given proposal. This method supports patch semantics.
@@ -100,6 +104,7 @@ class ResourceProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.proposals.search
     * @desc Search for proposals using pql query
@@ -128,6 +133,7 @@ class ResourceProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetOrdersResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.proposals.setupcomplete
     * @desc Update the given proposal to indicate that setup has been
@@ -157,6 +163,7 @@ class ResourceProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.proposals.update
     * @desc Update the given proposal
@@ -189,4 +196,3 @@ class ResourceProposals protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
 }
-

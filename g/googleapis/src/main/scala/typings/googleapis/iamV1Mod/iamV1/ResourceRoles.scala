@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Roles")
 @js.native
 class ResourceRoles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * iam.roles.get
     * @desc Gets a Role definition.
@@ -37,6 +39,7 @@ class ResourceRoles protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceRolesGet, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  
   /**
     * iam.roles.list
     * @desc Lists the Roles defined on a resource.
@@ -69,6 +72,7 @@ class ResourceRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListRolesResponse]
   ): Unit = js.native
+  
   /**
     * iam.roles.queryGrantableRoles
     * @desc Queries roles that can be granted on a particular resource. A role
@@ -103,4 +107,3 @@ class ResourceRoles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaQueryGrantableRolesResponse]
   ): Unit = js.native
 }
-

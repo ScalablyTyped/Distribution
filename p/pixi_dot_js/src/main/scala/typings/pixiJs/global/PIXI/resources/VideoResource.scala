@@ -4,7 +4,7 @@ import typings.pixiJs.anon.AutoPlay
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for HTMLVideoElement.
@@ -32,11 +32,11 @@ class VideoResource protected ()
   def this(source: js.Array[String | _], options: AutoPlay) = this()
   def this(source: HTMLVideoElement, options: AutoPlay) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.resources.VideoResource")
 @js.native
 object VideoResource extends js.Object {
+  
   /**
     * Map of video MIME types that can't be directly derived from file extensions.
     * @constant
@@ -45,6 +45,7 @@ object VideoResource extends js.Object {
     * @readonly
     */
   val MIME_TYPES: js.Any = js.native
+  
   /**
     * List of common video file extensions supported by VideoResource.
     * @constant
@@ -53,6 +54,7 @@ object VideoResource extends js.Object {
     * @readonly
     */
   val TYPES: js.Array[String] = js.native
+  
   /**
     * Used to auto-detect the type of resource.
     *
@@ -63,4 +65,3 @@ object VideoResource extends js.Object {
     */
   def test(source: js.Any, extension: String): Boolean = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.rx.Rx.SchedulerStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScopeSchedulerStatic
@@ -13,4 +13,3 @@ trait ScopeSchedulerStatic
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ js.Any, 
       ScopeScheduler
     ]
-

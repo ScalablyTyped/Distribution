@@ -11,8 +11,8 @@ A calendar heatmap component built on SVG, inspired by Github's commit calendar 
 | Full name          | react-calendar-heatmap |
 | Keywords           | calendar, react, react-component, svg |
 | # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 132608 |
+| # dependents       | 3 |
+| # downloads        | 180228 |
 | # stars            | 2 |
 
 ## Links

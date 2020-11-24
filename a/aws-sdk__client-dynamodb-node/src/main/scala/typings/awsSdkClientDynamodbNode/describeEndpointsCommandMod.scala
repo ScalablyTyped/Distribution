@@ -5,33 +5,29 @@ import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesDescribeEndpointsInputMod.DescribeEndpointsInput
 import typings.awsSdkClientDynamodbNode.typesDescribeEndpointsOutputMod.DescribeEndpointsOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/commands/DescribeEndpointsCommand", JSImport.Namespace)
 @js.native
 object describeEndpointsCommandMod extends js.Object {
+  
   @js.native
   class DescribeEndpointsCommand protected () extends Command[
           InputTypesUnion, 
           DescribeEndpointsInput, 
           OutputTypesUnion, 
           DescribeEndpointsOutput, 
-          DynamoDBResolvedConfiguration, 
-          Readable
+          DynamoDBResolvedConfiguration
         ] {
     def this(input: DescribeEndpointsInput) = this()
-    val middlewareStack: MiddlewareStack[DescribeEndpointsInput, DescribeEndpointsOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeEndpointsInput, DescribeEndpointsOutput] = js.native
   }
-  
 }
-

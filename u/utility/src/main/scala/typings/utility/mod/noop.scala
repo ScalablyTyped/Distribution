@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "noop")
 @js.native
 object noop extends js.Object {
+  
   /**
     * ---------------0_0-------------------
     * @description Defines For Function Method
@@ -21,4 +22,3 @@ object noop extends js.Object {
     */
   def apply(): js.Function0[_] = js.native
 }
-

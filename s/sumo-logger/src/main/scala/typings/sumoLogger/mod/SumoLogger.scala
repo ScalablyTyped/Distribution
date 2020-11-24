@@ -3,7 +3,7 @@ package typings.sumoLogger.mod
 import typings.sumoLogger.anon.PartialPerMessageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * You must have an HTTP source created in your Sumo Logic account to use this SDK.
@@ -12,22 +12,26 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SumoLogger extends js.Object {
+  
   /**
     * **(Vanilla JS lib only)**
     * Set the configuration for sending logs. Options are listed in the next section.
     * In the Node.js module, configuration options are sent when instantiating the object.
     */
   var config: js.UndefOr[js.Function1[/* options */ SumoLoggerOptions, Unit]] = js.native
+  
   /**
     * Empty the current queue of logs
     */
   def emptyLogQueue(): Unit = js.native
+  
   /**
     * Force any pending logs to be sent immediately. This is mainly for use in a
     * logOut/`window.onBeforeUnload` flow to ensure that any remaining queued
     * messages are sent to Sumo Logic.
     */
   def flushLogs(): Unit = js.native
+  
   /**
     * Set a log message to be sent.
     * All logs are sent as JSON objects.
@@ -45,13 +49,14 @@ trait SumoLogger extends js.Object {
     * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
     */
   def log[T /* <: js.Object */](event: PartialPerMessageOptions with T): Boolean | js.Promise[_] = js.native
+  
   /**
     * Start sending batched logs at the preconfigured interval
     */
   def startLogSending(): Unit = js.native
+  
   /**
     * Stop sending batched logs
     */
   def stopLogSending(): Unit = js.native
 }
-

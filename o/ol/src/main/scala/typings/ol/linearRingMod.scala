@@ -4,14 +4,19 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/geom/LinearRing", JSImport.Namespace)
 @js.native
 object linearRingMod extends js.Object {
+  
   @js.native
   trait LinearRing
     extends typings.ol.simpleGeometryMod.default {
+    
+    /**
+      * Return the area of the linear ring on projected plane.
+      */
     def getArea(): Double = js.native
   }
   
@@ -20,6 +25,4 @@ object linearRingMod extends js.Object {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
-  
 }
-

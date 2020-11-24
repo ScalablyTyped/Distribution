@@ -12,7 +12,7 @@ Collect chunks / objects from a readable stream, write obejcts / chunks to a wri
 | Keywords           | buffer, stream |
 | # releases         | 2 |
 | # dependents       | 22 |
-| # downloads        | 128370 |
+| # downloads        | 286489 |
 | # stars            | 0 |
 
 ## Links

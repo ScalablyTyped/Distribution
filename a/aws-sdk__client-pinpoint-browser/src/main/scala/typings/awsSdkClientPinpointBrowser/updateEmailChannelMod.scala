@@ -1,13 +1,12 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.awsSdkTypes.protocolMod.OperationModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateEmailChannel", JSImport.Namespace)
 @js.native
 object updateEmailChannelMod extends js.Object {
-  val UpdateEmailChannel: OperationModel = js.native
+  
+  val UpdateEmailChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }
-

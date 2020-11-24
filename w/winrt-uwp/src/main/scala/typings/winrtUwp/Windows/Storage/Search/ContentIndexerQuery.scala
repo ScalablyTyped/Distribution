@@ -5,13 +5,12 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a query for content properties in the ContentIndexer . */
 @js.native
 trait ContentIndexerQuery extends js.Object {
-  /** Gets the StorageFolder representation of the app-provided items in the ContentIndexer query. */
-  var queryFolder: StorageFolder = js.native
+  
   /**
     * Runs the query on the app's indexed content properties.
     * @return When this method completes, it returns the query results, represented as a collection of IIndexableContent instances.
@@ -24,11 +23,13 @@ trait ContentIndexerQuery extends js.Object {
     * @return When this method completes, it returns the query results, represented as a collection of IndexableContent instances.
     */
   def getAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  
   /**
     * Gets the number of items in the search results.
     * @return When this method completes, it returns the number of items in the search results.
     */
   def getCountAsync(): IPromiseWithIAsyncOperation[Double] = js.native
+  
   /**
     * Retrieves a collection of property sets for an app, where the property sets are key-value pairs.
     * @return When this method completes, it returns the query results as a collection of PropertyValue instances.
@@ -41,5 +42,7 @@ trait ContentIndexerQuery extends js.Object {
     * @return When this method completes, it returns the query results as a collection of PropertyValue instances.
     */
   def getPropertiesAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  
+  /** Gets the StorageFolder representation of the app-provided items in the ContentIndexer query. */
+  var queryFolder: StorageFolder = js.native
 }
-

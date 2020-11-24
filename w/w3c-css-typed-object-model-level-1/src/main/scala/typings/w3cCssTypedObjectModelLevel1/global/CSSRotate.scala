@@ -3,7 +3,7 @@ package typings.w3cCssTypedObjectModelLevel1.global
 import typings.w3cCssTypedObjectModelLevel1.CSSNumberish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CSSRotate")
 @js.native
@@ -17,4 +17,3 @@ class CSSRotate protected ()
     angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
   ) = this()
 }
-

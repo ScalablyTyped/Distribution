@@ -6,21 +6,22 @@ import typings.stampit.mod.stampit.Initializer
 import typings.std.PropertyDescriptorMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stampit", JSImport.Default)
 @js.native
 object default extends js.Object {
-  /** A function which creates a new `Stamp`s from a list of `Composable`s. */
-  val compose: ComposeMethod = js.native
-  /** the version of the NPM `stampit` package. */
-  val version: String = js.native
+  
   /**
     * A function which creates a new `Stamp`s from a list of `Composable`s.
     * @template Obj The type of the object instance being created by the `Stamp` or the type of the `Stamp` being created (when extending a `Stamp`.)
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def apply[Obj](composables: Composable*): StampType[Obj] = js.native
+  
+  /** A function which creates a new `Stamp`s from a list of `Composable`s. */
+  val compose: ComposeMethod = js.native
+  
   /**
     * A shortcut method for stampit().composers()
     *
@@ -30,6 +31,7 @@ object default extends js.Object {
     */
   def composers[Obj](functions: Composer[StampType[Obj]]*): StampType[Obj] = js.native
   def composers[Obj](functions: js.Array[Composer[StampType[Obj]]]): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().conf()
     *
@@ -39,6 +41,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def conf[Obj](confs: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().configuration()
     *
@@ -48,6 +51,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def configuration[Obj](confs: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().deepConf()
     *
@@ -57,6 +61,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().deepConfiguration()
     *
@@ -66,6 +71,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().deepProperties()
     *
@@ -75,6 +81,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().deepProps()
     *
@@ -84,6 +91,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().deepStatics()
     *
@@ -93,6 +101,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().init()
     *
@@ -108,6 +117,7 @@ object default extends js.Object {
     // tslint:disable-next-line: no-unnecessary-generics
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
   ): S̤t̤a̤m̤p̤ = js.native
+  
   /**
     * A shortcut method for stampit().initializers()
     *
@@ -123,6 +133,7 @@ object default extends js.Object {
     // tslint:disable-next-line: no-unnecessary-generics
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
   ): S̤t̤a̤m̤p̤ = js.native
+  
   /**
     * A shortcut method for stampit().methods()
     *
@@ -132,6 +143,7 @@ object default extends js.Object {
     * @param methods Object(s) containing map of method names and bodies for delegation.
     */
   def methods[Obj](methods: MethodMap[Obj]*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().properties()
     *
@@ -141,6 +153,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def properties[Obj](objects: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().propertyDescriptors()
     *
@@ -150,6 +163,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().props()
     *
@@ -159,6 +173,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def props[Obj](objects: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().staticDeepProperties()
     *
@@ -168,6 +183,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().statics()
     *
@@ -177,6 +193,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().staticPropertyDescriptors()
     *
@@ -186,6 +203,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = js.native
+  
   /**
     * A shortcut method for stampit().staticProperties()
     *
@@ -195,5 +213,7 @@ object default extends js.Object {
     */
   // tslint:disable-next-line: no-unnecessary-generics
   def statics[Obj](statics: PropertyMap*): StampType[Obj] = js.native
+  
+  /** the version of the NPM `stampit` package. */
+  val version: String = js.native
 }
-

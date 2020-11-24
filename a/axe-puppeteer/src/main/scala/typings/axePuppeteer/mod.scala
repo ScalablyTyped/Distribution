@@ -7,11 +7,15 @@ import typings.puppeteer.mod.Frame
 import typings.puppeteer.mod.Page
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("axe-puppeteer", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def loadPage(browser: Browser, url: String): js.Promise[OwningAxePuppeteer] = js.native
+  def loadPage(browser: Browser, url: String, pageOpts: IPageOptions): js.Promise[OwningAxePuppeteer] = js.native
+  
   @js.native
   class AxePuppeteer protected ()
     extends typings.axePuppeteer.axePuppeteerMod.AxePuppeteer {
@@ -29,8 +33,4 @@ object mod extends js.Object {
     def this(pageFrame: Frame, source: String) = this()
     def this(pageFrame: Page, source: String) = this()
   }
-  
-  def loadPage(browser: Browser, url: String): js.Promise[OwningAxePuppeteer] = js.native
-  def loadPage(browser: Browser, url: String, pageOpts: IPageOptions): js.Promise[OwningAxePuppeteer] = js.native
 }
-

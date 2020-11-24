@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/datastore/v1", "datastore_v1.Resource$Projects$Indexes")
 @js.native
 class ResourceProjectsIndexes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * datastore.projects.indexes.get
     * @desc Gets an index.
@@ -45,6 +47,7 @@ class ResourceProjectsIndexes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleDatastoreAdminV1Index]
   ): Unit = js.native
+  
   /**
     * datastore.projects.indexes.list
     * @desc Lists the indexes that match the specified filters.  Datastore uses
@@ -82,4 +85,3 @@ class ResourceProjectsIndexes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleDatastoreAdminV1ListIndexesResponse]
   ): Unit = js.native
 }
-

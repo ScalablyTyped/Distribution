@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.minappEnv.FunctionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Function")
 @js.native
@@ -16,8 +16,6 @@ class Function protected ()
     */
   def this(args: java.lang.String*) = this()
 }
-
 @JSGlobal("Function")
 @js.native
 object Function extends TopLevel[FunctionConstructor]
-

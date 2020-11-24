@@ -5,11 +5,12 @@ import typings.googlemaps.google.maps.Marker
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class Cluster protected ()
     extends typings.googleMarkerclustererplus.Cluster {
@@ -49,20 +50,32 @@ object global extends js.Object {
     def this(map: Map[Element], markers: js.UndefOr[scala.Nothing], options: MarkerClustererOptions) = this()
     def this(map: Map[Element], markers: js.Array[Marker], options: MarkerClustererOptions) = this()
   }
-  
   /* static members */
   @js.native
   object MarkerClusterer extends js.Object {
+    
     /**
       * The number of markers to process in one batch.
       *
       */
     var BATCH_SIZE: Double = js.native
+    
     /**
       * The number of markers to process in one batch (IE only).
       *
       */
     var BATCH_SIZE_IE: Double = js.native
+    
+    /**
+      * The default function for determining the label text and style
+      * for a cluster icon.
+      *
+      * @param markers The array of markers represented by the cluster.
+      * @param numStyles The number of marker styles available.
+      * @return The information resource for the cluster.
+      * @ignore
+      */
+    def CALCULATOR(markers: js.Array[Marker], clusterIconStylesCount: Double): ClusterIconInfo = js.native
     /**
       * The default function for determining the label text and style
       * for a cluster icon.
@@ -74,32 +87,23 @@ object global extends js.Object {
       */
     @JSName("CALCULATOR")
     var CALCULATOR_Original: Calculator = js.native
+    
     /**
       * The default extension name for the marker cluster images.
       *
       */
     var IMAGE_EXTENSION: java.lang.String = js.native
+    
     /**
       * The default root name for the marker cluster images.
       *
       */
     var IMAGE_PATH: java.lang.String = js.native
+    
     /**
       * The default array of sizes for the marker cluster images.
       *
       */
     var IMAGE_SIZES: js.Array[Double] = js.native
-    /**
-      * The default function for determining the label text and style
-      * for a cluster icon.
-      *
-      * @param markers The array of markers represented by the cluster.
-      * @param numStyles The number of marker styles available.
-      * @return The information resource for the cluster.
-      * @ignore
-      */
-    def CALCULATOR(markers: js.Array[Marker], clusterIconStylesCount: Double): ClusterIconInfo = js.native
   }
-  
 }
-

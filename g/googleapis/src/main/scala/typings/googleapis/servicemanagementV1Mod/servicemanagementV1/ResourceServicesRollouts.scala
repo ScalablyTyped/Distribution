@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services$Rollouts")
 @js.native
 class ResourceServicesRollouts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicemanagement.services.rollouts.create
     * @desc Creates a new service configuration rollout. Based on rollout, the
@@ -51,6 +53,7 @@ class ResourceServicesRollouts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.rollouts.get
     * @desc Gets a service configuration rollout.
@@ -80,6 +83,7 @@ class ResourceServicesRollouts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRollout]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.rollouts.list
     * @desc Lists the history of the service configuration rollouts for a
@@ -116,4 +120,3 @@ class ResourceServicesRollouts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListServiceRolloutsResponse]
   ): Unit = js.native
 }
-

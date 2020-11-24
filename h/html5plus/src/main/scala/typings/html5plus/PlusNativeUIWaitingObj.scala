@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 系统等待对话框对象
@@ -13,13 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusNativeUIWaitingObj extends js.Object {
-  /**
-    * 等待对话框关闭事件
-    * 等待框关闭时触发，当调用close方法或用户点击返回按钮导致等待框关闭时触发。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
-    */
-  var onclose: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * 关闭显示的系统等待对话框
     * 调用plus.nativeUI.showWaiting方法创建并显示系统等待界后，可通过其close方法将原生等待控件关闭。
@@ -28,6 +22,15 @@ trait PlusNativeUIWaitingObj extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def close(): Unit = js.native
+  
+  /**
+    * 等待对话框关闭事件
+    * 等待框关闭时触发，当调用close方法或用户点击返回按钮导致等待框关闭时触发。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
+    */
+  var onclose: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * 设置等待对话框上显示的文字内容
     * 
@@ -36,4 +39,3 @@ trait PlusNativeUIWaitingObj extends js.Object {
   def setTitle(): Unit = js.native
   def setTitle(title: String): Unit = js.native
 }
-

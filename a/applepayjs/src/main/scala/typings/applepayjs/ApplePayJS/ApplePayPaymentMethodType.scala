@@ -2,7 +2,7 @@ package typings.applepayjs.ApplePayJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A payment card's type of payment.
@@ -14,15 +14,17 @@ import scala.scalajs.js.annotation._
   - typings.applepayjs.applepayjsStrings.store
 */
 trait ApplePayPaymentMethodType extends js.Object
-
 object ApplePayPaymentMethodType {
+  
   @scala.inline
   def credit: typings.applepayjs.applepayjsStrings.credit = "credit".asInstanceOf[typings.applepayjs.applepayjsStrings.credit]
+  
   @scala.inline
   def debit: typings.applepayjs.applepayjsStrings.debit = "debit".asInstanceOf[typings.applepayjs.applepayjsStrings.debit]
+  
   @scala.inline
   def prepaid: typings.applepayjs.applepayjsStrings.prepaid = "prepaid".asInstanceOf[typings.applepayjs.applepayjsStrings.prepaid]
+  
   @scala.inline
   def store: typings.applepayjs.applepayjsStrings.store = "store".asInstanceOf[typings.applepayjs.applepayjsStrings.store]
 }
-

@@ -8,7 +8,7 @@ import typings.ref.mod.Type
 import typings.refArray.anon.Dicti
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArrayType[T]
@@ -19,16 +19,21 @@ trait ArrayType[T]
       Dicti[T]
     ]
      with Instantiable2[(/* data */ js.Array[Double]) | (/* data */ Buffer), /* length */ Double, Dicti[T]] {
-  var BYTES_PER_ELEMENT: Double = js.native
-  var fixedLength: Double = js.native
-  /** The reference to the base type. */
-  var `type`: Type = js.native
+  
   def apply(): Dicti[T] = js.native
   def apply(data: js.Array[Double]): Dicti[T] = js.native
   def apply(data: js.Array[Double], length: Double): Dicti[T] = js.native
   def apply(data: Buffer): Dicti[T] = js.native
   def apply(data: Buffer, length: Double): Dicti[T] = js.native
   def apply(length: Double): Dicti[T] = js.native
+  
+  var BYTES_PER_ELEMENT: Double = js.native
+  
+  var fixedLength: Double = js.native
+  
+  /** The reference to the base type. */
+  var `type`: Type = js.native
+  
   /**
     * Accepts a Buffer instance that should be an already-populated with data
     * for the ArrayType. The "length" of the Array is determined by searching
@@ -36,4 +41,3 @@ trait ArrayType[T]
     */
   def untilZeros(buffer: Buffer): Dicti[T] = js.native
 }
-

@@ -3,11 +3,11 @@ package typings.antDesignIconsSvg
 import typings.antDesignIconsSvg.typesMod.IconDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-svg/es/asn/RightCircleTwoTone", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/lib/asn/RightCircleTwoTone", JSImport.Namespace)
 @js.native
 object rightCircleTwoToneMod extends js.Object {
+  
   val default: IconDefinition = js.native
 }
-

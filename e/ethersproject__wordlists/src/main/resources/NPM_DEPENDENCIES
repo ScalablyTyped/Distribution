@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/wordlists" : "5.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/wordlists" : "5.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

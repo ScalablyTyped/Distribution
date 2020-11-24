@@ -3,14 +3,17 @@ package typings.officeUiFabricReact.panelTypesMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PanelType extends js.Object
-
 @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.types", "PanelType")
 @js.native
 object PanelType extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[PanelType with Double] = js.native
+  
   /**
     * Renders the Panel in `custom` size using `customWidth`, anchored to the far side (right in LTR mode).
     * - Has a fixed width provided by the `customWidth` prop
@@ -19,6 +22,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait custom extends PanelType
+  /* 7 */ @js.native
+  object custom extends TopLevel[custom with Double]
   
   /**
     * Renders the Panel in `custom` size using `customWidth`, anchored to the near side (left in LTR mode).
@@ -28,6 +33,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait customNear extends PanelType
+  /* 8 */ @js.native
+  object customNear extends TopLevel[customNear with Double]
   
   /**
     * Renders the Panel in `extra large` size, anchored to the far side (right in LTR mode).
@@ -40,6 +47,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait extraLarge extends PanelType
+  /* 6 */ @js.native
+  object extraLarge extends TopLevel[extraLarge with Double]
   
   /**
     * Renders the Panel in `large` size, anchored to the far side (right in LTR mode).
@@ -51,6 +60,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait large extends PanelType
+  /* 4 */ @js.native
+  object large extends TopLevel[large with Double]
   
   /**
     * Renders the Panel in `large` size, anchored to the far side (right in LTR mode), with a fixed width at
@@ -63,6 +74,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait largeFixed extends PanelType
+  /* 5 */ @js.native
+  object largeFixed extends TopLevel[largeFixed with Double]
   
   /**
     * Renders the Panel in `medium` size, anchored to the far side (right in LTR mode).
@@ -74,6 +87,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait medium extends PanelType
+  /* 3 */ @js.native
+  object medium extends TopLevel[medium with Double]
   
   /**
     * Renders the Panel in fixed-width `small` size, anchored to the far side (right in LTR mode).
@@ -85,6 +100,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait smallFixedFar extends PanelType
+  /* 1 */ @js.native
+  object smallFixedFar extends TopLevel[smallFixedFar with Double]
   
   /**
     * Renders the Panel in fixed-width `small` size, anchored to the near side (left in LTR mode).
@@ -96,6 +113,8 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait smallFixedNear extends PanelType
+  /* 2 */ @js.native
+  object smallFixedNear extends TopLevel[smallFixedNear with Double]
   
   /**
     * Renders the Panel with a `fluid` (full screen) width.
@@ -108,35 +127,6 @@ object PanelType extends js.Object {
     */
   @js.native
   sealed trait smallFluid extends PanelType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PanelType with Double] = js.native
-  /* 7 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 8 */ @js.native
-  object customNear extends TopLevel[customNear with Double]
-  
-  /* 6 */ @js.native
-  object extraLarge extends TopLevel[extraLarge with Double]
-  
-  /* 4 */ @js.native
-  object large extends TopLevel[large with Double]
-  
-  /* 5 */ @js.native
-  object largeFixed extends TopLevel[largeFixed with Double]
-  
-  /* 3 */ @js.native
-  object medium extends TopLevel[medium with Double]
-  
-  /* 1 */ @js.native
-  object smallFixedFar extends TopLevel[smallFixedFar with Double]
-  
-  /* 2 */ @js.native
-  object smallFixedNear extends TopLevel[smallFixedNear with Double]
-  
   /* 0 */ @js.native
   object smallFluid extends TopLevel[smallFluid with Double]
-  
 }
-

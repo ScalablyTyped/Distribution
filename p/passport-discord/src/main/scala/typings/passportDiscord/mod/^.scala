@@ -6,7 +6,7 @@ import typings.expressServeStaticCore.mod.Query
 import typings.passportOauth2.mod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-discord", JSImport.Namespace)
 @js.native
@@ -49,4 +49,3 @@ class ^ protected () extends Strategy {
       ]
   ) = this()
 }
-

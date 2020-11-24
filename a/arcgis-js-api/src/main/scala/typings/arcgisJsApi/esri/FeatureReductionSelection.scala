@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.selection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeatureReductionSelection
   extends Accessor
      with JSONSupport {
+  
   /**
     * The feature reduction type.
     *
@@ -16,4 +17,3 @@ trait FeatureReductionSelection
     */
   var `type`: selection = js.native
 }
-

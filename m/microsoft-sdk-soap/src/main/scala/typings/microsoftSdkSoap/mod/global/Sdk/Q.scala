@@ -6,16 +6,16 @@ import typings.microsoftSdkSoap.mod.global.Sdk.Query.QueryExpression
 import typings.q.mod.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Q")
 @js.native
 class Q () extends js.Object
-
 /* static members */
 @JSGlobal("Sdk.Q")
 @js.native
 object Q extends js.Object {
+  
   /**
     * Creates a link between records.
     * @param entityName The logical name of the entity that is specified in the entityId parameter.
@@ -29,17 +29,20 @@ object Q extends js.Object {
     relationship: java.lang.String,
     relatedEntities: Collection[EntityReference]
   ): Promise[Unit] = js.native
+  
   /**
     * Creates an entity record and returns a string representation of the GUID value that is the Id of the created entity.
     * @param entity An entity instance.
     */
   def create(entity: Entity): Promise[java.lang.String] = js.native
+  
   /**
     * Deletes an entity record
     * @param entityName The LogicalName of the entity to delete.
     * @param id An ID of the record to delete.
     */
   def del(entityName: java.lang.String, id: java.lang.String): Promise[Unit] = js.native
+  
   /**
     * Removes a link between records.
     * @param entityName The logical name of the entity that is specified in the entityId parameter.
@@ -53,11 +56,13 @@ object Q extends js.Object {
     relationship: java.lang.String,
     relatedEntities: Collection[EntityReference]
   ): Promise[Unit] = js.native
+  
   /**
     * Executes a SOAP Request using the SOAPAction Execute.
     * @param request A request object.
     */
   def execute(request: OrganizationRequest): Promise[OrganizationResponse] = js.native
+  
   /**
     * Retrieves an entity instance.
     * @param entityName The logical name of the entity to retrieve.
@@ -65,6 +70,7 @@ object Q extends js.Object {
     * @param columnSet The columns of the entities to retrieve.
     */
   def retrieve(entityName: java.lang.String, id: java.lang.String, columnSet: ColumnSet): Promise[Entity] = js.native
+  
   /**
     * Retrieves the results of a query
     * @param query An Sdk.Query.FetchExpression query.
@@ -80,10 +86,10 @@ object Q extends js.Object {
     * @param query An Sdk.Query.QueryExpression query.
     */
   def retrieveMultiple(query: QueryExpression): Promise[EntityCollection] = js.native
+  
   /**
     * Updates an entity instance.
     * @param entity An entity instance to update.
     */
   def update(entity: Entity): Promise[scala.Boolean] = js.native
 }
-

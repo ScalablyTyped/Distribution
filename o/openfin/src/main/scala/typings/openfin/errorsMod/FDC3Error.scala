@@ -3,12 +3,13 @@ package typings.openfin.errorsMod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/fdc3/errors", "FDC3Error")
 @js.native
 class FDC3Error protected () extends Error {
   def this(code: String, message: String) = this()
+  
   /**
     * A string from one of [[ApplicationError]], [[ChannelError]], [[ConnectionError]], [[ResolveError]] or [[SendContextError]].
     *
@@ -17,4 +18,3 @@ class FDC3Error protected () extends Error {
     */
   var code: String = js.native
 }
-

@@ -11,12 +11,12 @@ An à la carte set of polished, extensible, and accessible inputs built for Reac
 | Full name          | react-widgets |
 | Keywords           | react, widgets, dropdown, combobox, calendar, datepicker, date picker, numberpicker, number picker, radio group, checkbox list, multiselect, form, input, react-ui, react-component |
 | # releases         | 35 |
-| # dependents       | 41 |
-| # downloads        | 1755733 |
+| # dependents       | 45 |
+| # downloads        | 1909368 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](https://github.com/jquense/react-widgets#readme)
+- [Homepage](https://jquense.github.io/react-widgets/)
 - [Bugs](https://github.com/jquense/react-widgets/issues)
 - [Repository](https://github.com/jquense/react-widgets)
 - [Npm](https://www.npmjs.com/package/react-widgets)

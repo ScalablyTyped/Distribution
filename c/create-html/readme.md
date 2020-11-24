@@ -12,7 +12,7 @@ create the content of an html file with one function call
 | Keywords           | html, static, sites, index.html |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 71929 |
+| # downloads        | 71002 |
 | # stars            | 1 |
 
 ## Links

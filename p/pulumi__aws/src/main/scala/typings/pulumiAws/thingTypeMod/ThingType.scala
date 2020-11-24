@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iot/thingType", "ThingType")
 @js.native
@@ -24,28 +24,32 @@ class ThingType protected () extends CustomResource {
   def this(name: String, args: ThingTypeArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ThingTypeArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the created AWS IoT Thing Type.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Whether the thing type is deprecated. If true, no new things could be associated with this type.
     */
   val deprecated: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * The name of the thing type.
     */
   val name: Output_[String] = js.native
+  
   /**
     * , Configuration block that can contain the following properties of the thing type:
     */
   val properties: Output_[js.UndefOr[ThingTypeProperties]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iot/thingType", "ThingType")
 @js.native
 object ThingType extends js.Object {
+  
   /**
     * Get an existing ThingType resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -59,10 +63,10 @@ object ThingType extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ThingType = js.native
   def get(name: String, id: Input[ID], state: ThingTypeState): ThingType = js.native
   def get(name: String, id: Input[ID], state: ThingTypeState, opts: CustomResourceOptions): ThingType = js.native
+  
   /**
     * Returns true if the given object is an instance of ThingType.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingType.ThingType */ Boolean = js.native
 }
-

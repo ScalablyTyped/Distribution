@@ -37,11 +37,12 @@ import typings.stripe.mod.subscriptions.ISubscriptionCustCreationOptions
 import typings.stripe.mod.subscriptions.ISubscriptionUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Customers")
 @js.native
 class Customers () extends StripeResource {
+  
   def cancelSubscription(customerId: String, subscriptionId: String): js.Promise[ISubscription] = js.native
   def cancelSubscription(customerId: String, subscriptionId: String, data: ISubscriptionCancellationOptions): js.Promise[ISubscription] = js.native
   /**
@@ -83,6 +84,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ISubscription]
   ): js.Promise[ISubscription] = js.native
   def cancelSubscription(customerId: String, subscriptionId: String, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+  
   def create(data: ICustomerCreationOptions): js.Promise[ICustomer] = js.native
   /**
     * Creates a new customer object.
@@ -98,6 +100,7 @@ class Customers () extends StripeResource {
   def create(data: ICustomerCreationOptions, options: HeaderOptions): js.Promise[ICustomer] = js.native
   def create(data: ICustomerCreationOptions, options: HeaderOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
   def create(data: ICustomerCreationOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
+  
   def createBalanceTransaction(customerId: String, data: ICustomerBalanceTransactionCreationOptions): js.Promise[ICustomerBalanceTransaction] = js.native
   /**
     * Creates an immutable transaction that updates the customer’s balance.
@@ -114,6 +117,7 @@ class Customers () extends StripeResource {
     data: ICustomerBalanceTransactionCreationOptions,
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
+  
   def createCard(customerId: String, data: Card): js.Promise[ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
@@ -129,6 +133,7 @@ class Customers () extends StripeResource {
   def createCard(customerId: String, data: Card, options: HeaderOptions): js.Promise[ICard] = js.native
   def createCard(customerId: String, data: Card, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def createCard(customerId: String, data: Card, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  
   def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions): js.Promise[IBankAccount] = js.native
   /**
     * When adding a bank account to a customer, the parameter name is source. When
@@ -192,6 +197,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IStripeSource]
   ): js.Promise[IStripeSource] = js.native
   def createSource(customerId: String, data: ICustomerSourceCreationOptions, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
+  
   def createSubscription(customerId: String, data: ISubscriptionCustCreationOptions): js.Promise[ISubscription] = js.native
   /**
     * Creates a new subscription on an existing customer.
@@ -211,6 +217,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ISubscription]
   ): js.Promise[ISubscription] = js.native
   def createSubscription(customerId: String, data: ISubscriptionCustCreationOptions, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+  
   def createTaxId(customerId: String, data: ITaxIdCreationOptions): js.Promise[ITaxId] = js.native
   def createTaxId(customerId: String, data: ITaxIdCreationOptions, options: HeaderOptions): js.Promise[ITaxId] = js.native
   def createTaxId(
@@ -220,6 +227,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ISubscription]
   ): js.Promise[ITaxId] = js.native
   def createTaxId(customerId: String, data: ITaxIdCreationOptions, response: IResponseFn[ISubscription]): js.Promise[ITaxId] = js.native
+  
   def del(id: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * Permanently deletes a customer. It cannot be undone. Also immediately cancels any active subscriptions on the customer.
@@ -233,6 +241,7 @@ class Customers () extends StripeResource {
   def del(id: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def del(id: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def del(id: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def deleteCard(customerId: String, cardId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete cards from a customer or recipient. If you delete a card that is currently the
@@ -257,6 +266,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IDeleteConfirmation]
   ): js.Promise[IDeleteConfirmation] = js.native
   def deleteCard(customerId: String, cardId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def deleteDiscount(customerId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * Removes the currently applied discount on a customer.
@@ -269,6 +279,7 @@ class Customers () extends StripeResource {
   def deleteDiscount(customerId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def deleteDiscount(customerId: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def deleteDiscount(customerId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def deleteSource(customerId: String, sourceId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete cards or bank accounts from a customer or recipient. If you delete a card or bank account that is currently the
@@ -293,6 +304,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IDeleteConfirmation]
   ): js.Promise[IDeleteConfirmation] = js.native
   def deleteSource(customerId: String, sourceId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def deleteSubscriptionDiscount(customerId: String, subscriptionId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * Removes the currently applied discount on a subscription.
@@ -311,6 +323,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IDeleteConfirmation]
   ): js.Promise[IDeleteConfirmation] = js.native
   def deleteSubscriptionDiscount(customerId: String, subscriptionId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def deleteTaxId(customerId: String, taxId: String): js.Promise[IDeleteConfirmation] = js.native
   def deleteTaxId(customerId: String, taxId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def deleteTaxId(
@@ -320,6 +333,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IDeleteConfirmation]
   ): js.Promise[IDeleteConfirmation] = js.native
   def deleteTaxId(customerId: String, taxId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[ICustomer] = js.native
   def list(data: ICustomerListOptions): IListPromise[ICustomer] = js.native
   /**
@@ -339,6 +353,7 @@ class Customers () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ICustomer] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICustomer]]): IListPromise[ICustomer] = js.native
   def list(response: IResponseFn[IList[ICustomer]]): IListPromise[ICustomer] = js.native
+  
   def listBalanceTransactions(customerId: String): IListPromise[ICustomerBalanceTransaction] = js.native
   def listBalanceTransactions(customerId: String, data: IListOptions): IListPromise[ICustomerBalanceTransaction] = js.native
   /**
@@ -359,6 +374,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IList[ICustomerBalanceTransaction]]
   ): IListPromise[ICustomerBalanceTransaction] = js.native
   def listBalanceTransactions(customerId: String, response: IResponseFn[IList[ICustomerBalanceTransaction]]): IListPromise[ICustomerBalanceTransaction] = js.native
+  
   def listCards(customerId: String): IListPromise[ICard] = js.native
   def listCards(customerId: String, data: IListOptions): IListPromise[ICard] = js.native
   /**
@@ -385,6 +401,7 @@ class Customers () extends StripeResource {
   def listCards(customerId: String, options: HeaderOptions): IListPromise[ICard] = js.native
   def listCards(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
   def listCards(customerId: String, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  
   def listSources(customerId: String, data: IBankAccountSourceListOptions): IListPromise[IBankAccount] = js.native
   /**
     * You can see a list of the bank accounts belonging to a customer or recipient. Note that the 10 most recent
@@ -442,6 +459,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[IList[ISource]]
   ): IListPromise[ISource] = js.native
   def listSources(customerId: String, data: ISourceListOptions, response: IResponseFn[IList[ISource]]): IListPromise[ISource] = js.native
+  
   def listSubscriptions(customerId: String): IListPromise[ISubscription] = js.native
   def listSubscriptions(customerId: String, data: IListOptions): IListPromise[ISubscription] = js.native
   /**
@@ -466,6 +484,7 @@ class Customers () extends StripeResource {
   def listSubscriptions(customerId: String, options: HeaderOptions): IListPromise[ISubscription] = js.native
   def listSubscriptions(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
   def listSubscriptions(customerId: String, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
+  
   def listTaxIds(customerId: String): IListPromise[ISubscription] = js.native
   def listTaxIds(customerId: String, data: IListOptions): IListPromise[ISource] = js.native
   def listTaxIds(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[ISource] = js.native
@@ -479,6 +498,7 @@ class Customers () extends StripeResource {
   def listTaxIds(customerId: String, options: HeaderOptions): IListPromise[ISubscription] = js.native
   def listTaxIds(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
   def listTaxIds(customerId: String, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
+  
   def retrieve(id: String): js.Promise[ICustomer] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[ICustomer] = js.native
   /**
@@ -496,6 +516,7 @@ class Customers () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[ICustomer] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
   def retrieve(id: String, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
+  
   def retrieveBalanceTransaction(customerId: String, transactionId: String): js.Promise[ICustomerBalanceTransaction] = js.native
   /**
     * Retrieves a specific transaction that updated the customer’s balance.
@@ -508,6 +529,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
   def retrieveBalanceTransaction(customerId: String, transactionId: String, response: IResponseFn[ICustomerBalanceTransaction]): js.Promise[ICustomerBalanceTransaction] = js.native
+  
   def retrieveCard(customerId: String, cardId: String): js.Promise[ICard] = js.native
   /**
     * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
@@ -521,6 +543,7 @@ class Customers () extends StripeResource {
   def retrieveCard(customerId: String, cardId: String, options: HeaderOptions): js.Promise[ICard] = js.native
   def retrieveCard(customerId: String, cardId: String, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def retrieveCard(customerId: String, cardId: String, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  
   def retrieveSource(customerId: String, sourceId: String): js.Promise[IStripeSource] = js.native
   /**
     * By default, you can see the 10 most recent cards/bank accounts stored on a customer or recipient directly on the customer or recipient object, but
@@ -534,6 +557,7 @@ class Customers () extends StripeResource {
   def retrieveSource(customerId: String, sourceId: String, options: HeaderOptions): js.Promise[IStripeSource] = js.native
   def retrieveSource(customerId: String, sourceId: String, options: HeaderOptions, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
   def retrieveSource(customerId: String, sourceId: String, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
+  
   def retrieveSubscription(customerId: String, subscriptionId: String): js.Promise[ISubscription] = js.native
   /**
     * By default, you can see the 10 most recent active subscriptions stored on a customer directly on the customer
@@ -552,10 +576,12 @@ class Customers () extends StripeResource {
     response: IResponseFn[ISubscription]
   ): js.Promise[ISubscription] = js.native
   def retrieveSubscription(customerId: String, subscriptionId: String, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+  
   def retrieveTaxId(customerId: String, taxId: String): js.Promise[IStripeSource] = js.native
   def retrieveTaxId(customerId: String, taxId: String, options: HeaderOptions): js.Promise[IStripeSource] = js.native
   def retrieveTaxId(customerId: String, taxId: String, options: HeaderOptions, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
   def retrieveTaxId(customerId: String, taxId: String, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
+  
   def update(id: String, data: ICustomerUpdateOptions): js.Promise[ICustomer] = js.native
   /**
     * Updates the specified customer by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -574,6 +600,7 @@ class Customers () extends StripeResource {
   def update(id: String, data: ICustomerUpdateOptions, options: HeaderOptions): js.Promise[ICustomer] = js.native
   def update(id: String, data: ICustomerUpdateOptions, options: HeaderOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
   def update(id: String, data: ICustomerUpdateOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
+  
   def updateBalanceTransaction(customerId: String, transactionId: String, data: ICustomerBalanceTransactionUpdateOptions): js.Promise[ICustomerBalanceTransaction] = js.native
   /**
     * Most customer balance transaction fields are immutable, but you may update its description and metadata.
@@ -597,6 +624,7 @@ class Customers () extends StripeResource {
     data: ICustomerBalanceTransactionUpdateOptions,
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
+  
   def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions): js.Promise[ICard] = js.native
   /**
     * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
@@ -617,6 +645,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ICard]
   ): js.Promise[ICard] = js.native
   def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  
   def updateSource(customerId: String, sourceId: String, data: IBankAccountUpdateOptions): js.Promise[IBankAccount] = js.native
   /**
     * Updates the metadata, account_holder_name, and account_holder_type of a bank account belonging to a Customer. Other bank account details
@@ -661,6 +690,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ICard]
   ): js.Promise[ICard] = js.native
   def updateSource(customerId: String, sourceId: String, data: ICardUpdateOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  
   def updateSubscription(customerId: String, subscriptionId: String, data: ISubscriptionUpdateOptions): js.Promise[ISubscription] = js.native
   /**
     * Updates an existing subscription on a customer to match the specified parameters. When changing plans or quantities,
@@ -706,6 +736,7 @@ class Customers () extends StripeResource {
     data: ISubscriptionUpdateOptions,
     response: IResponseFn[ISubscription]
   ): js.Promise[ISubscription] = js.native
+  
   def verifySource(customerId: String, sourceId: String, data: IBankAccountVerifyOptions): js.Promise[IBankAccount] = js.native
   /**
     * A customer's bank account must first be verified before it can be charged. Stripe supports instant verification using Plaid for many of
@@ -719,4 +750,3 @@ class Customers () extends StripeResource {
     */
   def verifySource(customerId: String, sourceId: String, data: IBankAccountVerifyOptions, options: HeaderOptions): js.Promise[IBankAccount] = js.native
 }
-

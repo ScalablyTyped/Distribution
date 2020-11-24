@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cfg/rule", "Rule")
 @js.native
@@ -24,50 +24,57 @@ class Rule protected () extends CustomResource {
     */
   def this(name: String, args: RuleArgs) = this()
   def this(name: String, args: RuleArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the config rule
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Description of the rule
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * A string in JSON format that is passed to the AWS Config rule Lambda function.
     */
   val inputParameters: Output_[js.UndefOr[String]] = js.native
+  
   /**
-    * The frequency that you want AWS Config to run evaluations for a rule that
-    * is triggered periodically. If specified, requires `messageType` to be `ScheduledNotification`.
+    * The frequency that you want AWS Config to run evaluations for a rule that is triggered periodically. If specified, requires `messageType` to be `ScheduledNotification`.
     */
   val maximumExecutionFrequency: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the rule
     */
   val name: Output_[String] = js.native
+  
   /**
     * The ID of the config rule
     */
   val ruleId: Output_[String] = js.native
+  
   /**
     * Scope defines which resources can trigger an evaluation for the rule as documented below.
     */
   val scope: Output_[js.UndefOr[RuleScope]] = js.native
+  
   /**
-    * Source specifies the rule owner, the rule identifier, and the notifications that cause
-    * the function to evaluate your AWS resources as documented below.
+    * Source specifies the rule owner, the rule identifier, and the notifications that cause the function to evaluate your AWS resources as documented below.
     */
   val source: Output_[RuleSource] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cfg/rule", "Rule")
 @js.native
 object Rule extends js.Object {
+  
   /**
     * Get an existing Rule resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -81,10 +88,10 @@ object Rule extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Rule = js.native
   def get(name: String, id: Input[ID], state: RuleState): Rule = js.native
   def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = js.native
+  
   /**
     * Returns true if the given object is an instance of Rule.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/rule.Rule */ Boolean = js.native
 }
-

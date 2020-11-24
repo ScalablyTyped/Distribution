@@ -11,11 +11,12 @@ import typings.wordpressEditor.wordpressEditorStrings.disableCustomColors
 import typings.wordpressEditor.wordpressEditorStrings.hasColorsToChoose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor/components", "withColorContext")
 @js.native
 object withColorContext extends js.Object {
+  
   // prettier-ignore
   def apply[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps with OwnProps, ComponentState]): ComponentType[
     (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
@@ -24,4 +25,3 @@ object withColorContext extends js.Object {
     (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
   ] = js.native
 }
-

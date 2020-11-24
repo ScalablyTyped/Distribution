@@ -2,7 +2,7 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An user owned drydock note references a Drydock ATTESTATION_AUTHORITY Note
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaUserOwnedDrydockNote extends js.Object {
+  
   /**
     * Output only. This field will contain the service account email address
     * that this Attestor will use as the principal when querying Container
@@ -21,6 +22,7 @@ trait SchemaUserOwnedDrydockNote extends js.Object {
     * versions may use an email based on a different naming pattern.
     */
   var delegationServiceAccountEmail: js.UndefOr[String] = js.native
+  
   /**
     * Required. The Drydock resource name of a ATTESTATION_AUTHORITY Note,
     * created by the user, in the format: `projects/x/notes/x (or the legacy
@@ -30,6 +32,7 @@ trait SchemaUserOwnedDrydockNote extends js.Object {
     * external dependency.
     */
   var noteReference: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Public keys that verify attestations signed by this attestor.
     * This field may be updated.  If this field is non-empty, one of the
@@ -39,39 +42,48 @@ trait SchemaUserOwnedDrydockNote extends js.Object {
     */
   var publicKeys: js.UndefOr[js.Array[SchemaAttestorPublicKey]] = js.native
 }
-
 object SchemaUserOwnedDrydockNote {
+  
   @scala.inline
   def apply(): SchemaUserOwnedDrydockNote = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserOwnedDrydockNote]
   }
+  
   @scala.inline
   implicit class SchemaUserOwnedDrydockNoteOps[Self <: SchemaUserOwnedDrydockNote] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDelegationServiceAccountEmail(value: String): Self = this.set("delegationServiceAccountEmail", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDelegationServiceAccountEmail: Self = this.set("delegationServiceAccountEmail", js.undefined)
+    
     @scala.inline
     def setNoteReference(value: String): Self = this.set("noteReference", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNoteReference: Self = this.set("noteReference", js.undefined)
+    
     @scala.inline
     def setPublicKeysVarargs(value: SchemaAttestorPublicKey*): Self = this.set("publicKeys", js.Array(value :_*))
+    
     @scala.inline
     def setPublicKeys(value: js.Array[SchemaAttestorPublicKey]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePublicKeys: Self = this.set("publicKeys", js.undefined)
   }
-  
 }
-

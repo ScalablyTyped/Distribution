@@ -21,7 +21,7 @@ import typings.phaser.integer
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Video Game Object.
@@ -90,58 +90,7 @@ trait Video
      with Tint
      with Transform
      with Visible {
-  /**
-    * An object containing in and out markers for sequence playback.
-    */
-  var markers: js.Any = js.native
-  /**
-    * Should the video auto play when document interaction is required and happens?
-    */
-  var playWhenUnlocked: Boolean = js.native
-  /**
-    * Should the Video element that this Video is using, be removed from the DOM
-    * when this Video is destroyed?
-    */
-  var removeVideoElementOnDestroy: Boolean = js.native
-  /**
-    * The current retry attempt.
-    */
-  var retry: integer = js.native
-  /**
-    * The number of ms between each retry while monitoring the ready state of a downloading video.
-    */
-  var retryInterval: integer = js.native
-  /**
-    * When starting playback of a video Phaser will monitor its `readyState` using a `setTimeout` call.
-    * The `setTimeout` happens once every `Video.retryInterval` ms. It will carry on monitoring the video
-    * state in this manner until the `retryLimit` is reached and then abort.
-    */
-  var retryLimit: integer = js.native
-  /**
-    * A Phaser CanvasTexture instance that holds the most recent snapshot taken from the video.
-    * This will only be set if `snapshot` or `snapshotArea` have been called, and will be `null` until that point.
-    */
-  var snapshotTexture: CanvasTexture = js.native
-  /**
-    * An internal flag holding the current state of the video lock, should document interaction be required
-    * before playback can begin.
-    */
-  var touchLocked: Boolean = js.native
-  /**
-    * A reference to the HTML Video Element this Video Game Object is playing.
-    * Will be `null` until a video is loaded for playback.
-    */
-  var video: HTMLVideoElement = js.native
-  /**
-    * The Phaser Texture this Game Object is using to render the video to.
-    * Will be `null` until a video is loaded for playback.
-    */
-  var videoTexture: Texture = js.native
-  /**
-    * A reference to the TextureSource belong to the `videoTexture` Texture object.
-    * Will be `null` until a video is loaded for playback.
-    */
-  var videoTextureSource: TextureSource = js.native
+  
   /**
     * Adds a sequence marker to this video.
     * 
@@ -158,6 +107,7 @@ trait Video
     * @param markerOut The time, in seconds, representing the end of this marker.
     */
   def addMarker(key: String, markerIn: integer, markerOut: integer): this.type = js.native
+  
   /**
     * This method allows you to change the source of the current video element. It works by first stopping the
     * current video, if playing. Then deleting the video texture, if one has been created. Finally, it makes a
@@ -235,17 +185,20 @@ trait Video
   ): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
+  
   /**
     * Called when the video completes playback, i.e. reaches an `ended` state.
     * 
     * This will never happen if the video is coming from a live stream, where the duration is `Infinity`.
     */
   def completeHandler(): Unit = js.native
+  
   /**
     * A double-precision floating-point value indicating the current playback time in seconds.
     * If the media has not started to play and has not been seeked, this value is the media's initial playback time.
     */
   def getCurrentTime(): Double = js.native
+  
   /**
     * A double-precision floating-point value which indicates the duration (total length) of the media in seconds,
     * on the media's timeline. If no media is present on the element, or the media is not valid, the returned value is NaN.
@@ -254,14 +207,17 @@ trait Video
     * and so forth), this value is +Infinity.
     */
   def getDuration(): Double = js.native
+  
   /**
     * Returns a boolean which indicates whether the media element should start over when it reaches the end.
     */
   def getLoop(): Boolean = js.native
+  
   /**
     * Returns a double that indicates the rate at which the media is being played back.
     */
   def getPlaybackRate(): Double = js.native
+  
   /**
     * Returns the current progress of the video. Progress is defined as a value between 0 (the start)
     * and 1 (the end).
@@ -269,31 +225,38 @@ trait Video
     * Progress can only be returned if the video has a duration, otherwise it will always return zero.
     */
   def getProgress(): Double = js.native
+  
   /**
     * Returns the key of the currently played video, as stored in the Video Cache.
     * If the video did not come from the cache this will return an empty string.
     */
   def getVideoKey(): String = js.native
+  
   /**
     * Returns a double indicating the audio volume, from 0.0 (silent) to 1.0 (loudest).
     */
   def getVolume(): Double = js.native
+  
   /**
     * Returns a boolean indicating if this Video is currently muted.
     */
   def isMuted(): Boolean = js.native
+  
   /**
     * Returns a boolean which indicates whether the video is currently paused.
     */
   def isPaused(): Boolean = js.native
+  
   /**
     * Returns a boolean which indicates whether the video is currently playing.
     */
   def isPlaying(): Boolean = js.native
+  
   /**
     * Returns a boolean indicating if this Video is currently seeking, or not.
     */
   def isSeeking(): Boolean = js.native
+  
   /**
     * Loads a Video from the given URL, ready for playback with the `Video.play` method.
     * 
@@ -308,6 +271,12 @@ trait Video
   def loadURL(url: String, loadEvent: js.UndefOr[scala.Nothing], noAudio: Boolean): this.type = js.native
   def loadURL(url: String, loadEvent: String): this.type = js.native
   def loadURL(url: String, loadEvent: String, noAudio: Boolean): this.type = js.native
+  
+  /**
+    * An object containing in and out markers for sequence playback.
+    */
+  var markers: js.Any = js.native
+  
   /**
     * Starts this video playing.
     * 
@@ -344,12 +313,14 @@ trait Video
   def play(loop: Boolean, markerIn: js.UndefOr[scala.Nothing], markerOut: integer): this.type = js.native
   def play(loop: Boolean, markerIn: integer): this.type = js.native
   def play(loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
+  
   /**
     * Called when the video emits a `playing` event during load.
     * 
     * This is only listened for if the browser doesn't support Promises.
     */
   def playHandler(): Unit = js.native
+  
   /**
     * Plays a pre-defined sequence in this video.
     * 
@@ -365,6 +336,12 @@ trait Video
     */
   def playMarker(key: String): this.type = js.native
   def playMarker(key: String, loop: Boolean): this.type = js.native
+  
+  /**
+    * Should the video auto play when document interaction is required and happens?
+    */
+  var playWhenUnlocked: Boolean = js.native
+  
   /**
     * Removes a previously set marker from this video.
     * 
@@ -372,6 +349,7 @@ trait Video
     * @param key The name of the marker to remove.
     */
   def removeMarker(key: String): this.type = js.native
+  
   /**
     * Removes the Video element from the DOM by calling parentNode.removeChild on itself.
     * 
@@ -385,6 +363,30 @@ trait Video
     * to clear up once you are done with the instance.
     */
   def removeVideoElement(): Unit = js.native
+  
+  /**
+    * Should the Video element that this Video is using, be removed from the DOM
+    * when this Video is destroyed?
+    */
+  var removeVideoElementOnDestroy: Boolean = js.native
+  
+  /**
+    * The current retry attempt.
+    */
+  var retry: integer = js.native
+  
+  /**
+    * The number of ms between each retry while monitoring the ready state of a downloading video.
+    */
+  var retryInterval: integer = js.native
+  
+  /**
+    * When starting playback of a video Phaser will monitor its `readyState` using a `setTimeout` call.
+    * The `setTimeout` happens once every `Video.retryInterval` ms. It will carry on monitoring the video
+    * state in this manner until the `retryLimit` is reached and then abort.
+    */
+  var retryLimit: integer = js.native
+  
   /**
     * Stores a copy of this Videos `snapshotTexture` in the Texture Manager using the given key.
     * 
@@ -414,6 +416,7 @@ trait Video
     * @param key The unique key to store the texture as within the global Texture Manager.
     */
   def saveSnapshotTexture(key: String): CanvasTexture = js.native
+  
   /**
     * Stores this Video in the Texture Manager using the given key as a dynamic texture,
     * which any texture-based Game Object, such as a Sprite, can use as its texture:
@@ -444,6 +447,7 @@ trait Video
     */
   def saveTexture(key: String): Texture = js.native
   def saveTexture(key: String, flipY: Boolean): Texture = js.native
+  
   /**
     * Seeks to a given point in the video. The value is given as a float between 0 and 1,
     * where 0 represents the start of the video and 1 represents the end.
@@ -457,6 +461,7 @@ trait Video
     * @param value The point in the video to seek to. A value between 0 and 1.
     */
   def seekTo(value: Double): this.type = js.native
+  
   /**
     * Seeks to a given playback time in the video. The value is given in _seconds_ or as a string.
     * 
@@ -473,6 +478,7 @@ trait Video
     */
   def setCurrentTime(value: String): this.type = js.native
   def setCurrentTime(value: Double): this.type = js.native
+  
   /**
     * Sets the loop state of the current video.
     * 
@@ -485,12 +491,14 @@ trait Video
     */
   def setLoop(): this.type = js.native
   def setLoop(value: Boolean): this.type = js.native
+  
   /**
     * Sets the muted state of the currently playing video, if one is loaded.
     * @param value The mute value. `true` if the video should be muted, otherwise `false`. Default true.
     */
   def setMute(): this.type = js.native
   def setMute(value: Boolean): this.type = js.native
+  
   /**
     * Sets the paused state of the currently loaded video.
     * 
@@ -502,6 +510,7 @@ trait Video
     */
   def setPaused(): this.type = js.native
   def setPaused(value: Boolean): this.type = js.native
+  
   /**
     * Sets the playback rate of the current video.
     * 
@@ -510,6 +519,7 @@ trait Video
     */
   def setPlaybackRate(): this.type = js.native
   def setPlaybackRate(rate: Double): this.type = js.native
+  
   /**
     * Sets the volume of the currently playing video.
     * 
@@ -518,6 +528,7 @@ trait Video
     */
   def setVolume(): this.type = js.native
   def setVolume(value: Double): this.type = js.native
+  
   /**
     * Takes a snapshot of the current frame of the video and renders it to a CanvasTexture object,
     * which is then returned. You can optionally resize the grab by passing a width and height.
@@ -531,6 +542,7 @@ trait Video
   def snapshot(width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
   def snapshot(width: integer): CanvasTexture = js.native
   def snapshot(width: integer, height: integer): CanvasTexture = js.native
+  
   /**
     * Takes a snapshot of the specified area of the current frame of the video and renders it to a CanvasTexture object,
     * which is then returned. You can optionally resize the grab by passing a different `destWidth` and `destHeight`.
@@ -552,6 +564,13 @@ trait Video
     destWidth: js.UndefOr[integer],
     destHeight: js.UndefOr[integer]
   ): CanvasTexture = js.native
+  
+  /**
+    * A Phaser CanvasTexture instance that holds the most recent snapshot taken from the video.
+    * This will only be set if `snapshot` or `snapshotArea` have been called, and will be `null` until that point.
+    */
+  var snapshotTexture: CanvasTexture = js.native
+  
   /**
     * Stops the video playing and clears all internal event listeners.
     * 
@@ -561,6 +580,7 @@ trait Video
     * call `destroy` instead.
     */
   def stop(): this.type = js.native
+  
   /**
     * Called when the video emits a `timeUpdate` event during playback.
     * 
@@ -568,11 +588,35 @@ trait Video
     * but we can use it to determine if a video has looped.
     */
   def timeUpdateHandler(): Unit = js.native
+  
+  /**
+    * An internal flag holding the current state of the video lock, should document interaction be required
+    * before playback can begin.
+    */
+  var touchLocked: Boolean = js.native
+  
   /**
     * Internal method that is called when enough video data has been received in order to create a texture
     * from it. The texture is assigned to the `Video.videoTexture` property and given a base frame that
     * encompases the whole video size.
     */
   def updateTexture(): Unit = js.native
+  
+  /**
+    * A reference to the HTML Video Element this Video Game Object is playing.
+    * Will be `null` until a video is loaded for playback.
+    */
+  var video: HTMLVideoElement = js.native
+  
+  /**
+    * The Phaser Texture this Game Object is using to render the video to.
+    * Will be `null` until a video is loaded for playback.
+    */
+  var videoTexture: Texture = js.native
+  
+  /**
+    * A reference to the TextureSource belong to the `videoTexture` Texture object.
+    * Will be `null` until a video is loaded for playback.
+    */
+  var videoTextureSource: TextureSource = js.native
 }
-

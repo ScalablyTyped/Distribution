@@ -6,7 +6,7 @@ import typings.styledSystem.mod.FlexProps
 import typings.styledSystem.mod.RequiredTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("spectacle", "FlexBox")
 @js.native
@@ -15,8 +15,7 @@ object FlexBox
       FC[
         BoxProps with (FlexProps[
           RequiredTheme, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FlexProperty<TLengthStyledSystem> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ _
         ])
       ]
     ]
-

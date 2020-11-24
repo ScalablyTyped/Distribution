@@ -10,9 +10,9 @@ jpegtran (part of libjpeg-turbo) bin-wrapper that makes it seamlessly available 
 | ------------------ | :-------------: |
 | Full name          | jpegtran-bin |
 | Keywords           | imagemin, compress, image, img, jpeg, jpg, minify, optimize, jpegtran |
-| # releases         | 2 |
-| # dependents       | 39 |
-| # downloads        | 11794341 |
+| # releases         | 5 |
+| # dependents       | 40 |
+| # downloads        | 13053359 |
 | # stars            | 5 |
 
 ## Links

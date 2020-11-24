@@ -2,7 +2,7 @@ package typings.rx.rxVirtualtimeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.virtualtime", "BehaviorSubject")
 @js.native
@@ -14,4 +14,3 @@ class BehaviorSubjectCls[T] protected ()
     */
   def this(initialValue: T) = this()
 }
-

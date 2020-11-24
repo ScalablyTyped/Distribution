@@ -1,7 +1,7 @@
 
 # Scala.js typings for ora
 
-Typings are for version 4.0.5
+Typings are for version 5.1.0
 
 ## Library description:
 Elegant terminal spinner
@@ -11,9 +11,9 @@ Elegant terminal spinner
 | Full name          | ora |
 | Keywords           | cli, spinner, spinners, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
 | # releases         | 14 |
-| # dependents       | 7519 |
-| # downloads        | 125435255 |
-| # stars            | 143 |
+| # dependents       | 10107 |
+| # downloads        | 217526101 |
+| # stars            | 144 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ora#readme)

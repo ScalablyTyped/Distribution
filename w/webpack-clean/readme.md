@@ -12,7 +12,7 @@ A webpack plugin to clean specified files after build
 | Keywords           | webpack, clean, build |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 133366 |
+| # downloads        | 135730 |
 | # stars            | 1 |
 
 ## Links

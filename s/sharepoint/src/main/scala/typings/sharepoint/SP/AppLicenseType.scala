@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppLicenseType extends js.Object
-
 @JSGlobal("SP.AppLicenseType")
 @js.native
 object AppLicenseType extends js.Object {
+  
   @js.native
   sealed trait perpetualAllUsers extends AppLicenseType
   
@@ -21,6 +21,4 @@ object AppLicenseType extends js.Object {
   
   @js.native
   sealed trait trialMultiUser extends AppLicenseType
-  
 }
-

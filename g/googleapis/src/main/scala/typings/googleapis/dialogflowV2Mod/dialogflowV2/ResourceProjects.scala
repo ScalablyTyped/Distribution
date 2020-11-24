@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var agent: ResourceProjectsAgent = js.native
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceProjectsOperations = js.native
+  
   /**
     * dialogflow.projects.getAgent
     * @desc Retrieves the specified agent.
@@ -46,5 +48,6 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Agent]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsOperations = js.native
 }
-

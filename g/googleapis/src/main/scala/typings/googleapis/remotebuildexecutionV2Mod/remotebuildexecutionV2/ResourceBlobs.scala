@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$Blobs")
 @js.native
 class ResourceBlobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.blobs.batchRead
     * @desc Download many blobs at once.  The server may enforce a limit of the
@@ -54,6 +54,7 @@ class ResourceBlobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.blobs.batchUpdate
     * @desc Upload many blobs at once.  The server may enforce a limit of the
@@ -97,6 +98,9 @@ class ResourceBlobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.blobs.findMissing
     * @desc Determine if blobs are present in the CAS.  Clients can use this
@@ -132,6 +136,7 @@ class ResourceBlobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.blobs.getTree
     * @desc Fetch the entire directory tree rooted at a node.  This request
@@ -180,4 +185,3 @@ class ResourceBlobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2GetTreeResponse]
   ): Unit = js.native
 }
-

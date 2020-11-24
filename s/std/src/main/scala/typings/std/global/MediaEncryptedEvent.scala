@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.MediaEncryptedEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaEncryptedEvent")
 @js.native
@@ -14,7 +14,6 @@ class MediaEncryptedEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: MediaEncryptedEventInit) = this()
 }
-
 @JSGlobal("MediaEncryptedEvent")
 @js.native
 object MediaEncryptedEvent
@@ -24,4 +23,3 @@ object MediaEncryptedEvent
       /* eventInitDict */ MediaEncryptedEventInit, 
       typings.std.MediaEncryptedEvent
     ]
-

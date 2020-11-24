@@ -2,7 +2,7 @@ package typings.oauth2orize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2orize", "TokenError")
 @js.native
@@ -52,4 +52,3 @@ class TokenError () extends OAuth2Error {
   def this(message: String, code: TokenErrorCode, uri: js.UndefOr[scala.Nothing], status: Double) = this()
   def this(message: String, code: TokenErrorCode, uri: String, status: Double) = this()
 }
-

@@ -10,11 +10,11 @@ import typings.angular.mod.IScope
 import typings.ngTable.coreMod.NgTableEventsChannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/browser/ngTablePagination.directive", JSImport.Namespace)
 @js.native
 object ngTablePaginationDirectiveMod extends js.Object {
+  
   def ngTablePagination[T]($compile: ICompileService, $document: IDocumentService, ngTableEventsChannel: NgTableEventsChannel): IDirective[IScope, JQLite, IAttributes, IController] = js.native
 }
-

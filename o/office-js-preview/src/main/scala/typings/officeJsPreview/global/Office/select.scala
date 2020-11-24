@@ -4,11 +4,12 @@ import typings.officeJsPreview.Office.AsyncResult
 import typings.officeJsPreview.Office.Binding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Office.select")
 @js.native
 object select extends js.Object {
+  
   /**
     * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
     *
@@ -35,4 +36,3 @@ object select extends js.Object {
   def apply(expression: String): Binding = js.native
   def apply(expression: String, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Binding = js.native
 }
-

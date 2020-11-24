@@ -5,33 +5,29 @@ import typings.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSResolvedConfigurati
 import typings.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesEnableKeyInputMod.EnableKeyInput
 import typings.awsSdkClientKmsBrowser.typesEnableKeyOutputMod.EnableKeyOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/commands/EnableKeyCommand", JSImport.Namespace)
 @js.native
 object enableKeyCommandMod extends js.Object {
+  
   @js.native
   class EnableKeyCommand protected () extends Command[
           InputTypesUnion, 
           EnableKeyInput, 
           OutputTypesUnion, 
           EnableKeyOutput, 
-          KMSResolvedConfiguration, 
-          Blob
+          KMSResolvedConfiguration
         ] {
     def this(input: EnableKeyInput) = this()
-    val middlewareStack: MiddlewareStack[EnableKeyInput, EnableKeyOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[EnableKeyInput, EnableKeyOutput] = js.native
   }
-  
 }
-

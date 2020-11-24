@@ -15,11 +15,12 @@ import typings.kendoUi.kendo.dataviz.diagram.ShapeOptions
 import typings.kendoUi.kendo.dataviz.diagram.TextBlockOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.dataviz.diagram")
 @js.native
 object diagram extends js.Object {
+  
   @js.native
   class Circle ()
     extends typings.kendoUi.kendo.dataviz.diagram.Circle {
@@ -104,6 +105,4 @@ object diagram extends js.Object {
     extends typings.kendoUi.kendo.dataviz.diagram.TextBlock {
     def this(options: TextBlockOptions) = this()
   }
-  
 }
-

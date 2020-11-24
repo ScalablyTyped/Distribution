@@ -4,7 +4,7 @@ import typings.playcanvas.pc.callbacks.FindNode
 import typings.playcanvas.pc.callbacks.ForEach
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A hierarchical scene node.
@@ -14,53 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GraphNode extends EventHandler {
-  /**
-    * A read-only property to get the children of this graph node.
-    */
-  val children: js.Array[GraphNode] = js.native
-  /**
-    * Enable or disable a GraphNode. If one of the GraphNode's parents is disabled
-    * there will be no other side effects. If all the parents are enabled then
-    * the new value will activate / deactivate all the enabled children of the GraphNode.
-    */
-  var enabled: Boolean = js.native
-  /**
-    * The normalized local space negative Z-axis vector of the graph node in world space.
-    */
-  val forward: Vec3 = js.native
-  /**
-    * A read-only property to get the depth of this child within the graph. Note that for performance reasons this is only recalculated when a node is added to a new parent, i.e. It is not recalculated when a node is simply removed from the graph.
-    */
-  val graphDepth: Double = js.native
-  /**
-    * The non-unique name of a graph node.
-    */
-  var name: String = js.native
-  /**
-    * A read-only property to get a parent graph node.
-    */
-  val parent: GraphNode = js.native
-  /**
-    * A read-only property to get the path of the graph node relative to
-    * the root of the hierarchy.
-    */
-  val path: String = js.native
-  /**
-    * The normalized local space X-axis vector of the graph node in world space.
-    */
-  val right: Vec3 = js.native
-  /**
-    * A read-only property to get highest graph node from current node.
-    */
-  val root: GraphNode = js.native
-  /**
-    * Interface for tagging graph nodes. Tag based searches can be performed using the {@link pc.GraphNode#findByTag} function.
-    */
-  var tags: Tags = js.native
-  /**
-    * The normalized local space Y-axis vector of the graph node in world space.
-    */
-  val up: Vec3 = js.native
+  
   /**
     * Add a new child to the child list and update the parent value of the child node.
     * @example
@@ -69,6 +23,19 @@ trait GraphNode extends EventHandler {
     * @param node - The new child to add.
     */
   def addChild(node: GraphNode): Unit = js.native
+  
+  /**
+    * A read-only property to get the children of this graph node.
+    */
+  val children: js.Array[GraphNode] = js.native
+  
+  /**
+    * Enable or disable a GraphNode. If one of the GraphNode's parents is disabled
+    * there will be no other side effects. If all the parents are enabled then
+    * the new value will activate / deactivate all the enabled children of the GraphNode.
+    */
+  var enabled: Boolean = js.native
+  
   def find(attr: String): js.Array[GraphNode] = js.native
   def find(attr: String, value: js.Any): js.Array[GraphNode] = js.native
   /**
@@ -93,6 +60,7 @@ trait GraphNode extends EventHandler {
     */
   def find(attr: FindNode): js.Array[GraphNode] = js.native
   def find(attr: FindNode, value: js.Any): js.Array[GraphNode] = js.native
+  
   /**
     * Get the first node found in the graph with the name. The search
     * is depth first.
@@ -100,6 +68,7 @@ trait GraphNode extends EventHandler {
     * @returns The first node to be found matching the supplied name.
     */
   def findByName(name: String): GraphNode = js.native
+  
   /**
     * Get the first node found in the graph by its full path in the graph.
     * The full path has this form 'parent/child/sub-child'. The search is depth first.
@@ -109,6 +78,7 @@ trait GraphNode extends EventHandler {
     * @returns The first node to be found matching the supplied path.
     */
   def findByPath(path: String): GraphNode = js.native
+  
   /**
     * Return all graph nodes that satisfy the search query.
     * Query can be simply a string, or comma separated strings,
@@ -131,6 +101,7 @@ trait GraphNode extends EventHandler {
     */
   def findByTag(query: String): js.Array[GraphNode] = js.native
   def findByTag(query: js.Array[String]): js.Array[GraphNode] = js.native
+  
   def findOne(attr: String): GraphNode = js.native
   def findOne(attr: String, value: js.Any): GraphNode = js.native
   /**
@@ -155,6 +126,7 @@ trait GraphNode extends EventHandler {
     */
   def findOne(attr: FindNode): GraphNode = js.native
   def findOne(attr: FindNode, value: js.Any): GraphNode = js.native
+  
   /**
     * Executes a provided function once on this graph node and all of its descendants.
     * @example
@@ -167,6 +139,12 @@ trait GraphNode extends EventHandler {
     */
   def forEach(callback: ForEach): Unit = js.native
   def forEach(callback: ForEach, thisArg: js.Any): Unit = js.native
+  
+  /**
+    * The normalized local space negative Z-axis vector of the graph node in world space.
+    */
+  val forward: Vec3 = js.native
+  
   /**
     * Get the world space rotation for the specified GraphNode in Euler angle
     * form. The order of the returned Euler angles is XYZ. The value returned by this function
@@ -179,6 +157,7 @@ trait GraphNode extends EventHandler {
     * @returns The world space rotation of the graph node in Euler angle form.
     */
   def getEulerAngles(): Vec3 = js.native
+  
   /**
     * Get the rotation in local space for the specified GraphNode. The rotation
     * is returned as euler angles in a 3-dimensional vector where the order is XYZ. The
@@ -191,6 +170,7 @@ trait GraphNode extends EventHandler {
     * @returns The local space rotation of the graph node as euler angles in XYZ order.
     */
   def getLocalEulerAngles(): Vec3 = js.native
+  
   /**
     * Get the position in local space for the specified GraphNode. The position
     * is returned as a 3-dimensional vector. The returned vector should be considered read-only.
@@ -202,6 +182,7 @@ trait GraphNode extends EventHandler {
     * @returns The local space position of the graph node.
     */
   def getLocalPosition(): Vec3 = js.native
+  
   /**
     * Get the rotation in local space for the specified GraphNode. The rotation
     * is returned as a quaternion. The returned quaternion should be considered read-only.
@@ -211,6 +192,7 @@ trait GraphNode extends EventHandler {
     * @returns The local space rotation of the graph node as a quaternion.
     */
   def getLocalRotation(): Quat = js.native
+  
   /**
     * Get the scale in local space for the specified GraphNode. The scale
     * is returned as a 3-dimensional vector. The returned vector should be considered read-only.
@@ -222,6 +204,7 @@ trait GraphNode extends EventHandler {
     * @returns The local space scale of the graph node.
     */
   def getLocalScale(): Vec3 = js.native
+  
   /**
     * Get the local transform matrix for this graph node. This matrix
     * is the transform relative to the node's parent's world transformation matrix.
@@ -230,6 +213,7 @@ trait GraphNode extends EventHandler {
     * @returns The node's local transformation matrix.
     */
   def getLocalTransform(): Mat4 = js.native
+  
   /**
     * Get the world space position for the specified GraphNode. The
     * value returned by this function should be considered read-only. In order to set
@@ -241,6 +225,7 @@ trait GraphNode extends EventHandler {
     * @returns The world space position of the graph node.
     */
   def getPosition(): Vec3 = js.native
+  
   /**
     * Get the world space rotation for the specified GraphNode in quaternion
     * form. The value returned by this function should be considered read-only. In order
@@ -250,6 +235,7 @@ trait GraphNode extends EventHandler {
     * @returns The world space rotation of the graph node as a quaternion.
     */
   def getRotation(): Quat = js.native
+  
   /**
     * Get the world transformation matrix for this graph node.
     * @example
@@ -257,6 +243,12 @@ trait GraphNode extends EventHandler {
     * @returns The node's world transformation matrix.
     */
   def getWorldTransform(): Mat4 = js.native
+  
+  /**
+    * A read-only property to get the depth of this child within the graph. Note that for performance reasons this is only recalculated when a node is added to a new parent, i.e. It is not recalculated when a node is simply removed from the graph.
+    */
+  val graphDepth: Double = js.native
+  
   /**
     * Insert a new child to the child list at the specified index and update the parent value of the child node.
     * @example
@@ -266,6 +258,7 @@ trait GraphNode extends EventHandler {
     * @param index - The index in the child list of the parent where the new node will be inserted.
     */
   def insertChild(node: GraphNode, index: Double): Unit = js.native
+  
   /**
     * Check if node is ancestor for another node.
     * @example
@@ -276,6 +269,7 @@ trait GraphNode extends EventHandler {
     * @returns If node is ancestor for another node.
     */
   def isAncestorOf(node: GraphNode): Boolean = js.native
+  
   /**
     * Check if node is descendant of another node.
     * @example
@@ -286,6 +280,7 @@ trait GraphNode extends EventHandler {
     * @returns If node is descendant of another node.
     */
   def isDescendantOf(node: GraphNode): Boolean = js.native
+  
   /**
     * Reorients the graph node so that the negative z-axis points towards the target.
     * This function has two valid signatures. Either pass 3D vectors for the look at coordinate and up
@@ -321,6 +316,23 @@ trait GraphNode extends EventHandler {
     uy: js.UndefOr[Double],
     uz: js.UndefOr[Double]
   ): Unit = js.native
+  
+  /**
+    * The non-unique name of a graph node.
+    */
+  var name: String = js.native
+  
+  /**
+    * A read-only property to get a parent graph node.
+    */
+  val parent: GraphNode = js.native
+  
+  /**
+    * A read-only property to get the path of the graph node relative to
+    * the root of the hierarchy.
+    */
+  val path: String = js.native
+  
   /**
     * Remove the node from the child list and update the parent value of the child.
     * @example
@@ -329,6 +341,7 @@ trait GraphNode extends EventHandler {
     * @param child - The node to remove.
     */
   def removeChild(child: GraphNode): Unit = js.native
+  
   /**
     * Remove graph node from current parent and add as child to new parent.
     * @param parent - New parent to attach graph node to.
@@ -336,6 +349,17 @@ trait GraphNode extends EventHandler {
     */
   def reparent(parent: GraphNode): Unit = js.native
   def reparent(parent: GraphNode, index: Double): Unit = js.native
+  
+  /**
+    * The normalized local space X-axis vector of the graph node in world space.
+    */
+  val right: Vec3 = js.native
+  
+  /**
+    * A read-only property to get highest graph node from current node.
+    */
+  val root: GraphNode = js.native
+  
   def rotate(x: Double): Unit = js.native
   def rotate(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotate(x: Double, y: Double): Unit = js.native
@@ -360,6 +384,7 @@ trait GraphNode extends EventHandler {
   def rotate(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotate(x: Vec3, y: Double): Unit = js.native
   def rotate(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def rotateLocal(x: Double): Unit = js.native
   def rotateLocal(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotateLocal(x: Double, y: Double): Unit = js.native
@@ -384,6 +409,7 @@ trait GraphNode extends EventHandler {
   def rotateLocal(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotateLocal(x: Vec3, y: Double): Unit = js.native
   def rotateLocal(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def setEulerAngles(x: Double): Unit = js.native
   def setEulerAngles(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setEulerAngles(x: Double, y: Double): Unit = js.native
@@ -409,6 +435,7 @@ trait GraphNode extends EventHandler {
   def setEulerAngles(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setEulerAngles(x: Vec3, y: Double): Unit = js.native
   def setEulerAngles(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def setLocalEulerAngles(x: Double): Unit = js.native
   def setLocalEulerAngles(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalEulerAngles(x: Double, y: Double): Unit = js.native
@@ -434,6 +461,7 @@ trait GraphNode extends EventHandler {
   def setLocalEulerAngles(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalEulerAngles(x: Vec3, y: Double): Unit = js.native
   def setLocalEulerAngles(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def setLocalPosition(x: Double): Unit = js.native
   def setLocalPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalPosition(x: Double, y: Double): Unit = js.native
@@ -458,6 +486,7 @@ trait GraphNode extends EventHandler {
   def setLocalPosition(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalPosition(x: Vec3, y: Double): Unit = js.native
   def setLocalPosition(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def setLocalRotation(x: Double): Unit = js.native
   def setLocalRotation(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setLocalRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
@@ -491,6 +520,7 @@ trait GraphNode extends EventHandler {
   def setLocalRotation(x: Quat, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setLocalRotation(x: Quat, y: Double, z: Double): Unit = js.native
   def setLocalRotation(x: Quat, y: Double, z: Double, w: Double): Unit = js.native
+  
   def setLocalScale(x: Double): Unit = js.native
   def setLocalScale(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalScale(x: Double, y: Double): Unit = js.native
@@ -515,6 +545,7 @@ trait GraphNode extends EventHandler {
   def setLocalScale(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalScale(x: Vec3, y: Double): Unit = js.native
   def setLocalScale(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def setPosition(x: Double): Unit = js.native
   def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setPosition(x: Double, y: Double): Unit = js.native
@@ -539,6 +570,7 @@ trait GraphNode extends EventHandler {
   def setPosition(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setPosition(x: Vec3, y: Double): Unit = js.native
   def setPosition(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def setRotation(x: Double): Unit = js.native
   def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
@@ -572,6 +604,12 @@ trait GraphNode extends EventHandler {
   def setRotation(x: Quat, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setRotation(x: Quat, y: Double, z: Double): Unit = js.native
   def setRotation(x: Quat, y: Double, z: Double, w: Double): Unit = js.native
+  
+  /**
+    * Interface for tagging graph nodes. Tag based searches can be performed using the {@link pc.GraphNode#findByTag} function.
+    */
+  var tags: Tags = js.native
+  
   def translate(x: Double): Unit = js.native
   def translate(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translate(x: Double, y: Double): Unit = js.native
@@ -596,6 +634,7 @@ trait GraphNode extends EventHandler {
   def translate(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translate(x: Vec3, y: Double): Unit = js.native
   def translate(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def translateLocal(x: Double): Unit = js.native
   def translateLocal(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translateLocal(x: Double, y: Double): Unit = js.native
@@ -620,5 +659,9 @@ trait GraphNode extends EventHandler {
   def translateLocal(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translateLocal(x: Vec3, y: Double): Unit = js.native
   def translateLocal(x: Vec3, y: Double, z: Double): Unit = js.native
+  
+  /**
+    * The normalized local space Y-axis vector of the graph node in world space.
+    */
+  val up: Vec3 = js.native
 }
-

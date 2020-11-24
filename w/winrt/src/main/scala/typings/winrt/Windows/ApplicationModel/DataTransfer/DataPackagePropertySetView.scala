@@ -8,12 +8,12 @@ import typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference
 import typings.winrt.anon.First
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataPackagePropertySetView extends IDataPackagePropertySetView
-
 object DataPackagePropertySetView {
+  
   @scala.inline
   def apply(
     applicationListingUri: Uri,
@@ -32,4 +32,3 @@ object DataPackagePropertySetView {
     __obj.asInstanceOf[DataPackagePropertySetView]
   }
 }
-

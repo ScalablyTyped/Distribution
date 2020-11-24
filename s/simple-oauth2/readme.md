@@ -10,9 +10,9 @@ Node.js client for OAuth2
 | ------------------ | :-------------: |
 | Full name          | simple-oauth2 |
 | Keywords           | oauth2, authorization, password, client, credentials |
-| # releases         | 16 |
-| # dependents       | 150 |
-| # downloads        | 1716027 |
+| # releases         | 13 |
+| # dependents       | 170 |
+| # downloads        | 2707577 |
 | # stars            | 27 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.wiringPi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wiring-pi", "lcdInit")
 @js.native
 object lcdInit extends js.Object {
+  
   def apply(
     rows: Double,
     cols: Double,
@@ -23,4 +24,3 @@ object lcdInit extends js.Object {
     d7: Double
   ): Double = js.native
 }
-

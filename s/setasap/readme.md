@@ -10,9 +10,9 @@ setImmediate polyfill for the browser and node
 | ------------------ | :-------------: |
 | Full name          | setasap |
 | Keywords           | setImmediate, task, setAsap, setTimeout, process.nextTick |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 66074 |
+| # releases         | 0 |
+| # dependents       | 14 |
+| # downloads        | 63709 |
 | # stars            | 0 |
 
 ## Links

@@ -12,11 +12,11 @@ Time support added to pikaday
 | Keywords           | datepicker, calendar, date, time, datetime |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 131445 |
+| # downloads        | 130530 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](http://dbushell.github.io/Pikaday/)
+- [Homepage](https://github.com/owenmead/Pikaday#readme)
 - [Bugs](https://github.com/owenmead/Pikaday/issues)
 - [Repository](https://github.com/owenmead/Pikaday)
 - [Npm](https://www.npmjs.com/package/pikaday-time)

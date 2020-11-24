@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Printing3DBufferFormat extends js.Object
-
 /** Specifies the format used by the buffer. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DBufferFormat")
 @js.native
 object Printing3DBufferFormat extends js.Object {
+  
   /** A buffer of type double. */
   @js.native
   sealed trait printing3DDouble extends Printing3DBufferFormat
@@ -38,6 +38,4 @@ object Printing3DBufferFormat extends js.Object {
   /** The format is not known. */
   @js.native
   sealed trait unknown extends Printing3DBufferFormat
-  
 }
-

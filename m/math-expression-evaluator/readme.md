@@ -10,15 +10,15 @@ A flexible math expression evaluator
 | ------------------ | :-------------: |
 | Full name          | math-expression-evaluator |
 | Keywords           | math, expression, evaluator, parser |
-| # releases         | 6 |
-| # dependents       | 22 |
-| # downloads        | 89626913 |
+| # releases         | 7 |
+| # dependents       | 29 |
+| # downloads        | 82255910 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/bugwheels94/math-expression-evaluator#readme)
-- [Bugs](https://github.com/bugwheels94/math-expression-evaluator/issues)
-- [Repository](https://github.com/bugwheels94/math-expression-evaluator)
+- [Homepage](https://github.com/redhivesoftware/math-expression-evaluator#readme)
+- [Bugs](https://github.com/redhivesoftware/math-expression-evaluator/issues)
+- [Repository](https://github.com/redhivesoftware/math-expression-evaluator)
 - [Npm](https://www.npmjs.com/package/math-expression-evaluator)
     
 

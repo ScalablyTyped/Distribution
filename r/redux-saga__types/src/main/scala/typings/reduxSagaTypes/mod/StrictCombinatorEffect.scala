@@ -3,12 +3,12 @@ package typings.reduxSagaTypes.mod
 import typings.reduxSagaTypes.reduxSagaTypesBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictCombinatorEffect[T] extends CombinatorEffect[T, StrictEffect[T]]
-
 object StrictCombinatorEffect {
+  
   @scala.inline
   def apply[T](
     `@@redux-sagaSlashIO`: `true`,
@@ -22,4 +22,3 @@ object StrictCombinatorEffect {
     __obj.asInstanceOf[StrictCombinatorEffect[T]]
   }
 }
-

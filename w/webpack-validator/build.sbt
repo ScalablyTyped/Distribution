@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-validator"
-version := "v2.2.6-dt-20200515Z-7fe4f8"
+version := "v2.2.6-dt-20201002Z-bf9bb1"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

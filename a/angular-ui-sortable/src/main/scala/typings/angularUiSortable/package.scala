@@ -2,9 +2,10 @@ package typings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object angularUiSortable {
+  
   // Diff / Omit taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-311923766
   type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[
     T, 

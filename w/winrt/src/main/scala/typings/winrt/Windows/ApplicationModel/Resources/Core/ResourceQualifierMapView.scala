@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.anon.First
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceQualifierMapView extends IMapView[String, String]
-
 object ResourceQualifierMapView {
+  
   @scala.inline
   def apply(
     first: () => IIterator[IKeyValuePair[String, String]],
@@ -24,4 +24,3 @@ object ResourceQualifierMapView {
     __obj.asInstanceOf[ResourceQualifierMapView]
   }
 }
-

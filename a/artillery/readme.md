@@ -10,9 +10,9 @@ Flexible and powerful toolkit for load and functional testing
 | ------------------ | :-------------: |
 | Full name          | artillery |
 | Keywords           | load testing, stress testing, benchmark, performance, blackbox testing |
-| # releases         | 18 |
-| # dependents       | 7 |
-| # downloads        | 841151 |
+| # releases         | 8 |
+| # dependents       | 9 |
+| # downloads        | 1599575 |
 | # stars            | 23 |
 
 ## Links

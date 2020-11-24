@@ -3,11 +3,12 @@ package typings.samchon.mod
 import typings.tstl.mod.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon", "library")
 @js.native
 object library extends js.Object {
+  
   @js.native
   class CartesianProduct protected ()
     extends typings.samchon.libraryMod.CartesianProduct {
@@ -57,49 +58,25 @@ object library extends js.Object {
   @js.native
   class StringUtil ()
     extends typings.samchon.libraryMod.StringUtil
-  
-  @js.native
-  /**
-    * Default Constructor.
-    */
-  class URLVariables ()
-    extends typings.samchon.libraryMod.URLVariables {
-    /**
-      * Construct from a URL-encoded string.
-      *
-      * The {@link decode decode()} method is automatically called to convert the string to properties of the {@link URLVariables} object.
-      *
-      * @param str A URL-encoded string containing name/value pairs.
-      */
-    def this(str: String) = this()
-  }
-  
-  @js.native
-  class XML ()
-    extends typings.samchon.libraryMod.XML {
-    def this(str: String) = this()
-    def this(xml: typings.sxml.xmlMod.XML) = this()
-  }
-  
-  @js.native
-  class XMLList ()
-    extends typings.sxml.xmllistMod.XMLList
-  
   /* static members */
   @js.native
   object StringUtil extends js.Object {
+    
     /**
       * An array containing whitespaces.
       */
     var SPACE_ARRAY: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Fetch_substitute_index: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Substitute_sql_string: js.Any = js.native
+    
     /**
       * Generate a substring.
       *
@@ -122,8 +99,10 @@ object library extends js.Object {
       * @return substring by specified terms.
       */
     def between(str: String): String = js.native
+    def between(str: String, start: js.UndefOr[scala.Nothing], end: String): String = js.native
     def between(str: String, start: String): String = js.native
     def between(str: String, start: String, end: String): String = js.native
+    
     /**
       * Fetch substrings.
       *
@@ -144,8 +123,10 @@ object library extends js.Object {
       * @return An array of substrings.
       */
     def betweens(str: String): js.Array[String] = js.native
+    def betweens(str: String, start: js.UndefOr[scala.Nothing], end: String): js.Array[String] = js.native
     def betweens(str: String, start: String): js.Array[String] = js.native
     def betweens(str: String, start: String, end: String): js.Array[String] = js.native
+    
     /**
       * Remove all designated characters from the beginning of the specified string.
       *
@@ -155,6 +136,7 @@ object library extends js.Object {
       * @return Updated string where designated characters was removed from the beginning
       */
     def ltrim(str: String, args: String*): String = js.native
+    
     /**
       * Number to formatted string with &quot;,&quot; sign.
       *
@@ -167,14 +149,17 @@ object library extends js.Object {
       */
     def numberFormat(`val`: Double): String = js.native
     def numberFormat(`val`: Double, precision: Double): String = js.native
+    
     def percentFormat(`val`: Double): String = js.native
     def percentFormat(`val`: Double, precision: Double): String = js.native
+    
     /**
       * Replace all HTML spaces to a literal space.
       *
       * @param str Target string to replace.
       */
     def removeHTMLSpaces(str: String): String = js.native
+    
     /**
       * Repeat a string.
       *
@@ -186,6 +171,7 @@ object library extends js.Object {
       * @return The repeated string.
       */
     def repeat(str: String, n: Double): String = js.native
+    
     /**
       * Returns a string specified word is replaced.
       *
@@ -205,6 +191,7 @@ object library extends js.Object {
       * @return A string specified words are replaced
       */
     def replaceAll(str: String, pairs: (Pair[String, String])*): String = js.native
+    
     /**
       * Remove all designated characters from the end of the specified string.
       *
@@ -214,6 +201,7 @@ object library extends js.Object {
       * @return Updated string where designated characters was removed from the end.
       */
     def rtrim(str: String, args: String*): String = js.native
+    
     /**
       * Substitute `{n}` tokens within the specified string.
       *
@@ -227,6 +215,7 @@ object library extends js.Object {
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
     def substitute(format: String, args: js.Any*): String = js.native
+    
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
       *
@@ -240,6 +229,7 @@ object library extends js.Object {
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
     def substituteSQL(format: String, args: js.Any*): String = js.native
+    
     /**
       * Remove all designated characters from the beginning and end of the specified string.
       *
@@ -252,34 +242,66 @@ object library extends js.Object {
   }
   
   @js.native
+  /**
+    * Default Constructor.
+    */
+  class URLVariables ()
+    extends typings.samchon.libraryMod.URLVariables {
+    /**
+      * Construct from a URL-encoded string.
+      *
+      * The {@link decode decode()} method is automatically called to convert the string to properties of the {@link URLVariables} object.
+      *
+      * @param str A URL-encoded string containing name/value pairs.
+      */
+    def this(str: String) = this()
+  }
+  @js.native
   object URLVariables extends js.Object {
+    
     def parse[T](str: String): T = js.native
     def parse[T](str: String, autoCase: Boolean): T = js.native
+    
     def stringify[T](obj: T): String = js.native
   }
   
+  @js.native
+  class XML ()
+    extends typings.samchon.libraryMod.XML {
+    def this(str: String) = this()
+    def this(xml: typings.sxml.xmlMod.XML) = this()
+  }
   /* static members */
   @js.native
   object XML extends js.Object {
+    
     /**
       * @hidden
       */
     var _Compute_min_index: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Repeat: js.Any = js.native
+    
     @JSName("decode_property")
     def decodeProperty(str: String): String = js.native
+    
     @JSName("decode_value")
     def decodeValue(str: String): String = js.native
+    
     @JSName("encode_property")
     def encodeProperty(str: String): String = js.native
+    
     @JSName("encode_value")
     def encodeValue(str: String): String = js.native
+    
     def head(): String = js.native
     def head(encoding: String): String = js.native
   }
   
+  @js.native
+  class XMLList ()
+    extends typings.sxml.xmllistMod.XMLList
 }
-

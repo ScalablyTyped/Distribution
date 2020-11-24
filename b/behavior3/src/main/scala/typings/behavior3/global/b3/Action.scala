@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Action is the base class for all action nodes. Thus, if you want to create
@@ -29,4 +29,3 @@ class Action ()
   extends typings.behavior3.b3.BaseNode {
   def this(hasNameTitleProperties: Name) = this()
 }
-

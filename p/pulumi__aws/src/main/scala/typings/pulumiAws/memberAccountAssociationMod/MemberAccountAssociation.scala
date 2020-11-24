@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/macie/memberAccountAssociation", "MemberAccountAssociation")
 @js.native
@@ -21,16 +21,17 @@ class MemberAccountAssociation protected () extends CustomResource {
     */
   def this(name: String, args: MemberAccountAssociationArgs) = this()
   def this(name: String, args: MemberAccountAssociationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ID of the AWS account that you want to associate with Amazon Macie as a member account.
     */
   val memberAccountId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/macie/memberAccountAssociation", "MemberAccountAssociation")
 @js.native
 object MemberAccountAssociation extends js.Object {
+  
   /**
     * Get an existing MemberAccountAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -44,10 +45,10 @@ object MemberAccountAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MemberAccountAssociation = js.native
   def get(name: String, id: Input[ID], state: MemberAccountAssociationState): MemberAccountAssociation = js.native
   def get(name: String, id: Input[ID], state: MemberAccountAssociationState, opts: CustomResourceOptions): MemberAccountAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of MemberAccountAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/memberAccountAssociation.MemberAccountAssociation */ Boolean = js.native
 }
-

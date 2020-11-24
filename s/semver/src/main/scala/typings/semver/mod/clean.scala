@@ -2,11 +2,12 @@ package typings.semver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "clean")
 @js.native
 object clean extends js.Object {
+  
   /**
     * Returns cleaned (removed leading/trailing whitespace, remove '=v' prefix) and parsed version, or null if version is invalid.
     */
@@ -14,4 +15,3 @@ object clean extends js.Object {
   def apply(version: String, optionsOrLoose: Boolean): String | Null = js.native
   def apply(version: String, optionsOrLoose: Options): String | Null = js.native
 }
-

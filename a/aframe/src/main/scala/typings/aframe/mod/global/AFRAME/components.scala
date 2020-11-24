@@ -7,10 +7,9 @@ import typings.aframe.mod.ObjectMap
 import typings.aframe.mod.System
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.components")
 @js.native
 object components
   extends TopLevel[ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]]]
-

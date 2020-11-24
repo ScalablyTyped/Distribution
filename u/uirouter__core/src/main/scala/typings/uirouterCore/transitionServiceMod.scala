@@ -23,63 +23,34 @@ import typings.uirouterCore.transitionTransitionMod.Transition
 import typings.uirouterCore.viewViewMod.ViewService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/transition/transitionService", JSImport.Namespace)
 @js.native
 object transitionServiceMod extends js.Object {
+  
+  var defaultTransOpts: TransitionOptions = js.native
+  
   @js.native
   class TransitionService protected ()
     extends IHookRegistry
        with Disposable {
     /** @internal */
     def this(_router: UIRouter) = this()
+    
     /** @internal */
     @JSName("$view")
     var $view: ViewService = js.native
+    
     /** The  paths on a criteria object */
     var _criteriaPaths: js.Any = js.native
+    
     /** @internal */
     var _defineCoreEvents: js.Any = js.native
+    
     /** @internal */
     var _defineCorePaths: js.Any = js.native
-    /**
-      * Adds a Path to be used as a criterion against a TreeChanges path
-      *
-      * For example: the `exiting` path in [[HookMatchCriteria]] is a STATE scoped path.
-      * It was defined by calling `defineTreeChangesCriterion('exiting', TransitionHookScope.STATE)`
-      * Each state in the exiting path is checked against the criteria and returned as part of the match.
-      *
-      * Another example: the `to` path in [[HookMatchCriteria]] is a TRANSITION scoped path.
-      * It was defined by calling `defineTreeChangesCriterion('to', TransitionHookScope.TRANSITION)`
-      * Only the tail of the `to` path is checked against the criteria and returned as part of the match.
-      *
-      * @internal
-      */
-    var _definePathType: js.Any = js.native
-    /**
-      * This object has hook de-registration functions for the built-in hooks.
-      * This can be used by third parties libraries that wish to customize the behaviors
-      *
-      * @internal
-      */
-    var _deregisterHookFns: ActivateViews = js.native
-    /** The transition hook types, such as `onEnter`, `onStart`, etc */
-    var _eventTypes: js.Any = js.native
-    /** @internal */
-    var _getEvents: js.Any = js.native
-    /** @internal */
-    var _getPathTypes: js.Any = js.native
-    /** @internal */
-    var _pluginapi: TransitionServicePluginAPI = js.native
-    /** @internal */
-    var _registerCoreTransitionHooks: js.Any = js.native
-    /** @internal The registered transition hooks */
-    @JSName("_registeredHooks")
-    var _registeredHooks_TransitionService: RegisteredHooks = js.native
-    var _router: js.Any = js.native
-    /** @internal */
-    var _transitionCount: Double = js.native
+    
     /** @internal */
     def _defineEvent(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType): Unit = js.native
     def _defineEvent(
@@ -221,6 +192,54 @@ object transitionServiceMod extends js.Object {
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean
     ): Unit = js.native
+    
+    /**
+      * Adds a Path to be used as a criterion against a TreeChanges path
+      *
+      * For example: the `exiting` path in [[HookMatchCriteria]] is a STATE scoped path.
+      * It was defined by calling `defineTreeChangesCriterion('exiting', TransitionHookScope.STATE)`
+      * Each state in the exiting path is checked against the criteria and returned as part of the match.
+      *
+      * Another example: the `to` path in [[HookMatchCriteria]] is a TRANSITION scoped path.
+      * It was defined by calling `defineTreeChangesCriterion('to', TransitionHookScope.TRANSITION)`
+      * Only the tail of the `to` path is checked against the criteria and returned as part of the match.
+      *
+      * @internal
+      */
+    var _definePathType: js.Any = js.native
+    
+    /**
+      * This object has hook de-registration functions for the built-in hooks.
+      * This can be used by third parties libraries that wish to customize the behaviors
+      *
+      * @internal
+      */
+    var _deregisterHookFns: ActivateViews = js.native
+    
+    /** The transition hook types, such as `onEnter`, `onStart`, etc */
+    var _eventTypes: js.Any = js.native
+    
+    /** @internal */
+    var _getEvents: js.Any = js.native
+    
+    /** @internal */
+    var _getPathTypes: js.Any = js.native
+    
+    /** @internal */
+    var _pluginapi: TransitionServicePluginAPI = js.native
+    
+    /** @internal */
+    var _registerCoreTransitionHooks: js.Any = js.native
+    
+    /** @internal The registered transition hooks */
+    @JSName("_registeredHooks")
+    var _registeredHooks_TransitionService: RegisteredHooks = js.native
+    
+    var _router: js.Any = js.native
+    
+    /** @internal */
+    var _transitionCount: Double = js.native
+    
     /**
       * Creates a new [[Transition]] object
       *
@@ -233,6 +252,7 @@ object transitionServiceMod extends js.Object {
       * @returns a Transition
       */
     def create(fromPath: js.Array[PathNode], targetState: TargetState): Transition = js.native
+    
     /**
       * Registers a [[TransitionHookFn]], called *while a transition is being constructed*.
       *
@@ -262,6 +282,7 @@ object transitionServiceMod extends js.Object {
   
   @js.native
   trait TransitionServicePluginAPI extends js.Object {
+    
     /**
       * Defines a transition hook type and returns a transition hook registration
       * function (which can then be used to register hooks of this type).
@@ -406,6 +427,7 @@ object transitionServiceMod extends js.Object {
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean
     ): js.Any = js.native
+    
     /**
       * Adds a Path to be used as a criterion against a TreeChanges path
       *
@@ -418,20 +440,20 @@ object transitionServiceMod extends js.Object {
       * Only the tail of the `to` path is checked against the criteria and returned as part of the match.
       */
     def _definePathType(name: String, hookScope: TransitionHookScope): js.Any = js.native
+    
     /**
       * Returns the known event types, such as `onBefore`
       * If a phase argument is provided, returns only events for the given phase.
       */
     def _getEvents(): js.Array[TransitionEventType] = js.native
     def _getEvents(phase: TransitionHookPhase): js.Array[TransitionEventType] = js.native
+    
     /**
       * Gets a Path definition used as a criterion against a TreeChanges path
       */
     def _getPathTypes(): PathTypes = js.native
+    
     /** Returns the hooks registered for the given hook name */
     def getHooks(hookName: String): js.Array[RegisteredHook] = js.native
   }
-  
-  var defaultTransOpts: TransitionOptions = js.native
 }
-

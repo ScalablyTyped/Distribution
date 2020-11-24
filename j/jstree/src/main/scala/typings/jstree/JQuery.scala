@@ -2,10 +2,11 @@ package typings.jstree
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Create an instance, get an instance or invoke a command on a instance.
     *
@@ -38,4 +39,3 @@ trait JQuery extends js.Object {
   def jstree(arg: Boolean): JSTree = js.native
   def jstree(options: JSTreeStaticDefaults): JSTree = js.native
 }
-

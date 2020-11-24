@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Condition")
 @js.native
@@ -15,9 +15,10 @@ class Condition[T] protected () extends js.Object {
     * @constructor
     */
   def this(message: String, fn: js.Function1[/* webdriver */ WebDriver, T]) = this()
+  
   /** @return {string} A description of this condition. */
   def description(): String = js.native
+  
   /** @type {function(!WebDriver): OUT} */
   def fn(webdriver: WebDriver): T = js.native
 }
-

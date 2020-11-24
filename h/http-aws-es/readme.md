@@ -10,9 +10,9 @@ Use the elasticsearch-js client with Amazon ES
 | ------------------ | :-------------: |
 | Full name          | http-aws-es |
 | Keywords           | elasticsearch, elasticsearch-js, aws-es, aws, amazon, es, http, connector, extension, sign |
-| # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 2035646 |
+| # releases         | 0 |
+| # dependents       | 71 |
+| # downloads        | 2387473 |
 | # stars            | 5 |
 
 ## Links

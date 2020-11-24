@@ -10,9 +10,9 @@ SAML2 metadata loader
 | ------------------ | :-------------: |
 | Full name          | passport-saml-metadata |
 | Keywords           | node, passport, SAML, SAML2, passport-saml, passport-wsfed-saml2, metadata |
-| # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 97535 |
+| # releases         | 7 |
+| # dependents       | 7 |
+| # downloads        | 150281 |
 | # stars            | 0 |
 
 ## Links

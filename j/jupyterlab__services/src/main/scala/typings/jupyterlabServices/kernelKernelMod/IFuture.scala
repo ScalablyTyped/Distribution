@@ -10,9 +10,11 @@ import typings.jupyterlabServices.messagesMod.StdinMessageType
 import typings.luminoDisposable.mod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */] extends IDisposable {
+  
   /**
     * A promise that resolves when the future is done.
     *
@@ -22,11 +24,13 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     *
     * The `done` promise resolves to the reply message.
     */
-  val done: js.Promise[REPLY]
+  val done: js.Promise[REPLY] = js.native
+  
   /**
     * The original outgoing message.
     */
-  val msg: REQUEST
+  val msg: REQUEST = js.native
+  
   /**
     * The iopub handler for the kernel future.
     *
@@ -34,7 +38,8 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     * If the handler returns a promise, all kernel message processing pauses
     * until the promise is resolved.
     */
-  def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit]
+  def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit] = js.native
+  
   /**
     * The reply handler for the kernel future.
     *
@@ -44,7 +49,8 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     * `done` promise also resolves to the reply message after this handler has
     * been called.
     */
-  def onReply(msg: REPLY): Unit | js.Thenable[Unit]
+  def onReply(msg: REPLY): Unit | js.Thenable[Unit] = js.native
+  
   /**
     * The stdin handler for the kernel future.
     *
@@ -52,7 +58,8 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     * If the handler returns a promise, all kernel message processing pauses
     * until the promise is resolved.
     */
-  def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | js.Thenable[Unit]
+  def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | js.Thenable[Unit] = js.native
+  
   /**
     * Register hook for IOPub messages.
     *
@@ -72,7 +79,8 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     * message. If a hook is removed during the hook processing, it will be
     * deactivated immediately.
     */
-  def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit
+  def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
+  
   /**
     * Remove a hook for IOPub messages.
     *
@@ -81,16 +89,17 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     * #### Notes
     * If a hook is removed during the hook processing, it will be deactivated immediately.
     */
-  def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit
+  def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
+  
   /**
     * Send an `input_reply` message.
     */
-  def sendInputReply(content: ReplyContent[IInputReply]): Unit
+  def sendInputReply(content: ReplyContent[IInputReply]): Unit = js.native
 }
-
 object IFuture {
+  
   @scala.inline
-  def apply[/* <: typings.jupyterlabServices.messagesMod.IShellControlMessage */ REQUEST, /* <: typings.jupyterlabServices.messagesMod.IShellControlMessage */ REPLY](
+  def apply[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */](
     dispose: () => Unit,
     done: js.Promise[REPLY],
     isDisposed: Boolean,
@@ -105,5 +114,48 @@ object IFuture {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), done = done.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], onIOPub = js.Any.fromFunction1(onIOPub), onReply = js.Any.fromFunction1(onReply), onStdin = js.Any.fromFunction1(onStdin), registerMessageHook = js.Any.fromFunction1(registerMessageHook), removeMessageHook = js.Any.fromFunction1(removeMessageHook), sendInputReply = js.Any.fromFunction1(sendInputReply))
     __obj.asInstanceOf[IFuture[REQUEST, REPLY]]
   }
+  
+  @scala.inline
+  implicit class IFutureOps[Self <: IFuture[_, _], REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */] (val x: Self with (IFuture[REQUEST, REPLY])) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setDone(value: js.Promise[REPLY]): Self = this.set("done", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMsg(value: REQUEST): Self = this.set("msg", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnIOPub(value: IIOPubMessage[IOPubMessageType] => Unit | js.Thenable[Unit]): Self = this.set("onIOPub", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnReply(value: REPLY => Unit | js.Thenable[Unit]): Self = this.set("onReply", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnStdin(value: IStdinMessage[StdinMessageType] => Unit | js.Thenable[Unit]): Self = this.set("onStdin", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRegisterMessageHook(
+      value: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]] => Unit
+    ): Self = this.set("registerMessageHook", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRemoveMessageHook(
+      value: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]] => Unit
+    ): Self = this.set("removeMessageHook", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSendInputReply(value: ReplyContent[IInputReply] => Unit): Self = this.set("sendInputReply", js.Any.fromFunction1(value))
+  }
 }
-

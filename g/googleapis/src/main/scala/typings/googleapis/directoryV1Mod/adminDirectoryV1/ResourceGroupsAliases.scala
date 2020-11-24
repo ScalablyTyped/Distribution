@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Groups$Aliases")
 @js.native
 class ResourceGroupsAliases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.groups.aliases.delete
     * @desc Remove a alias for the group
@@ -42,6 +44,7 @@ class ResourceGroupsAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.groups.aliases.insert
     * @desc Add a alias for the group
@@ -71,6 +74,7 @@ class ResourceGroupsAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAlias]
   ): Unit = js.native
+  
   /**
     * directory.groups.aliases.list
     * @desc List all aliases for a group
@@ -100,4 +104,3 @@ class ResourceGroupsAliases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAliases]
   ): Unit = js.native
 }
-

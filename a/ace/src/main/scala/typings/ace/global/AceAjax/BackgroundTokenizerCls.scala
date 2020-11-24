@@ -2,7 +2,7 @@ package typings.ace.global.AceAjax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.BackgroundTokenizer")
 @js.native
@@ -15,4 +15,3 @@ class BackgroundTokenizerCls protected ()
     **/
   def this(tokenizer: typings.ace.AceAjax.Tokenizer, editor: typings.ace.AceAjax.Editor) = this()
 }
-

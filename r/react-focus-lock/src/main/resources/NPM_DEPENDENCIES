@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-focus-lock" : "2.4.1"
+      "react-focus-lock" : "2.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-focus-lock" : "2.4.1"
+      "react-focus-lock" : "2.5.0"
     }
   ],
   "compile-devDependencies" : [

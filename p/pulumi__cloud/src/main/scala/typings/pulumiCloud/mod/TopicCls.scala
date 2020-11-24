@@ -3,7 +3,7 @@ package typings.pulumiCloud.mod
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud", "Topic")
 @js.native
@@ -18,4 +18,3 @@ class TopicCls[T] protected ()
   def this(name: String) = this()
   def this(name: String, opts: ResourceOptions) = this()
 }
-

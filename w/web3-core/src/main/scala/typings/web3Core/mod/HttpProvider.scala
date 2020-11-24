@@ -4,7 +4,7 @@ import typings.web3CoreHelpers.mod.HttpProviderBase
 import typings.web3CoreHelpers.mod.HttpProviderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core", "HttpProvider")
 @js.native
@@ -14,4 +14,3 @@ class HttpProvider protected ()
   def this(host: String) = this()
   def this(host: String, options: HttpProviderOptions) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,14 +12,15 @@ import scala.scalajs.js.annotation._
 @JSImport("io", JSImport.Namespace)
 @js.native
 object ioMod extends js.Object {
+  
+  def bridge(stm1: ClassStream, stm2: ClassStream): Unit = js.native
+  
+  def copyStream(from: ClassStream, to: ClassStream): Double = js.native
+  def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = js.native
+  
   @js.native
   class BufferedStream () extends ClassBufferedStream
   
   @js.native
   class MemoryStream () extends ClassMemoryStream
-  
-  def bridge(stm1: ClassStream, stm2: ClassStream): Unit = js.native
-  def copyStream(from: ClassStream, to: ClassStream): Double = js.native
-  def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = js.native
 }
-

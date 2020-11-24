@@ -4,17 +4,19 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IAbstractPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.IObservable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined listeners, hasListeners, isObservable, addEvents, addListener, addManagedListener, clearListeners, clearManagedListeners, enableBubble, fireEvent, fireEventArgs, hasListener, mon, mun, on, relayEvents, removeListener, removeManagedListener, resumeEvent, resumeEvents, suspendEvent, suspendEvents, un */ @js.native
 trait IEditing extends IAbstractPlugin {
+  
   /** [Method] Adds the specified events to the list of events which this Observable may fire
     * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
     */
   var addEvents: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  
   /** [Method] Appends an event handler to this object
     * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
     * @param fn Function The method the event invokes, or if scope is specified, the name* of the method within the specified scope. Will be called with arguments given to Ext.util.Observable.fireEvent plus the options parameter described below.
@@ -25,6 +27,7 @@ trait IEditing extends IAbstractPlugin {
   var addListener: js.UndefOr[
     js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], _]
   ] = js.native
+  
   /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
     * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
     * @param ename Object/String The event name, or an object containing event name properties.
@@ -43,45 +46,59 @@ trait IEditing extends IAbstractPlugin {
       _
     ]
   ] = js.native
+  
   /** [Method] Cancels any active edit that is in progress  */
   var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Method] Removes all listeners for this object including the managed listeners */
   var clearListeners: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Method] Removes all managed listeners for this object  */
   var clearManagedListeners: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Config Option] (Number) */
   var clicksToEdit: js.UndefOr[Double] = js.native
+  
   /** [Method] Completes the edit if there is an active edit in progress  */
   var completeEdit: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Property] (Boolean) */
   var editing: js.UndefOr[Boolean] = js.native
+  
   /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
     * @param eventNames String/String[] The event name to bubble, or an Array of event names.
     */
   var enableBubble: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
     * @param eventName String The name of the event to fire.
     * @param args Object... Variable number of parameters are passed to handlers.
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
   var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.native
+  
   /** [Method] Fires the specified event with the passed parameter list
     * @param eventName String The name of the event to fire.
     * @param args Object[] An array of parameters which are passed to handlers.
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
   var fireEventArgs: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[Array], Boolean]] = js.native
+  
   /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
     * @param eventName String The name of the event to check for
     * @returns Boolean true if the event is being listened for or bubbles, else false
     */
   var hasListener: js.UndefOr[js.Function1[js.UndefOr[String], Boolean]] = js.native
+  
   /** [Property] (Object) */
   var hasListeners: js.UndefOr[js.Any] = js.native
+  
   /** [Property] (Boolean) */
   var isObservable: js.UndefOr[Boolean] = js.native
+  
   /** [Config Option] (Object) */
   var listeners: js.UndefOr[js.Any] = js.native
+  
   /** [Method] Shorthand for addManagedListener
     * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
     * @param ename Object/String The event name, or an object containing event name properties.
@@ -100,6 +117,7 @@ trait IEditing extends IAbstractPlugin {
       _
     ]
   ] = js.native
+  
   /** [Method] Shorthand for removeManagedListener
     * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
     * @param ename Object/String The event name, or an object containing event name properties.
@@ -109,6 +127,7 @@ trait IEditing extends IAbstractPlugin {
   var mun: js.UndefOr[
     js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
   ] = js.native
+  
   /** [Method] Shorthand for addListener
     * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
     * @param fn Function The method the event invokes, or if scope is specified, the name* of the method within the specified scope. Will be called with arguments given to Ext.util.Observable.fireEvent plus the options parameter described below.
@@ -119,6 +138,7 @@ trait IEditing extends IAbstractPlugin {
   var on: js.UndefOr[
     js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], _]
   ] = js.native
+  
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param origin Object The Observable whose events this object is to relay.
     * @param events String[] Array of event names to relay.
@@ -126,12 +146,14 @@ trait IEditing extends IAbstractPlugin {
     * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
     */
   var relayEvents: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String], _]] = js.native
+  
   /** [Method] Removes an event handler
     * @param eventName String The type of event the handler was associated with.
     * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   var removeListener: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.native
+  
   /** [Method] Removes listeners that were added by the mon method
     * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
     * @param ename Object/String The event name, or an object containing event name properties.
@@ -141,12 +163,15 @@ trait IEditing extends IAbstractPlugin {
   var removeManagedListener: js.UndefOr[
     js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
   ] = js.native
+  
   /** [Method] Resumes firing of the named event s
     * @param eventName String... Multiple event names to resume.
     */
   var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  
   /** [Method] Resumes firing events see suspendEvents */
   var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
     * @param record Ext.data.Model/Number The Store data record which backs the row to be edited, or index of the record in Store.
     * @param columnHeader Ext.grid.column.Column/Number The Column object defining the column to be edited, or index of the column.
@@ -154,16 +179,20 @@ trait IEditing extends IAbstractPlugin {
   var startEdit: js.UndefOr[
     js.Function2[/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any], Unit]
   ] = js.native
+  
   /** [Method] Suspends firing of the named event s
     * @param eventName String... Multiple event names to suspend.
     */
   var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  
   /** [Method] Suspends the firing of all events
     * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
     */
   var suspendEvents: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.native
+  
   /** [Config Option] (String) */
   var triggerEvent: js.UndefOr[String] = js.native
+  
   /** [Method] Shorthand for removeListener
     * @param eventName String The type of event the handler was associated with.
     * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
@@ -171,145 +200,205 @@ trait IEditing extends IAbstractPlugin {
     */
   var un: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.native
 }
-
 object IEditing {
+  
   @scala.inline
   def apply(): IEditing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditing]
   }
+  
   @scala.inline
   implicit class IEditingOps[Self <: IEditing] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddEvents(value: js.UndefOr[js.Any] => Unit): Self = this.set("addEvents", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteAddEvents: Self = this.set("addEvents", js.undefined)
+    
     @scala.inline
     def setAddListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _): Self = this.set("addListener", js.Any.fromFunction4(value))
+    
     @scala.inline
     def deleteAddListener: Self = this.set("addListener", js.undefined)
+    
     @scala.inline
     def setAddManagedListener(
       value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _
     ): Self = this.set("addManagedListener", js.Any.fromFunction5(value))
+    
     @scala.inline
     def deleteAddManagedListener: Self = this.set("addManagedListener", js.undefined)
+    
     @scala.inline
     def setCancelEdit(value: () => Unit): Self = this.set("cancelEdit", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteCancelEdit: Self = this.set("cancelEdit", js.undefined)
+    
     @scala.inline
     def setClearListeners(value: () => Unit): Self = this.set("clearListeners", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteClearListeners: Self = this.set("clearListeners", js.undefined)
+    
     @scala.inline
     def setClearManagedListeners(value: () => Unit): Self = this.set("clearManagedListeners", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteClearManagedListeners: Self = this.set("clearManagedListeners", js.undefined)
+    
     @scala.inline
     def setClicksToEdit(value: Double): Self = this.set("clicksToEdit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClicksToEdit: Self = this.set("clicksToEdit", js.undefined)
+    
     @scala.inline
     def setCompleteEdit(value: () => Unit): Self = this.set("completeEdit", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteCompleteEdit: Self = this.set("completeEdit", js.undefined)
+    
     @scala.inline
     def setEditing(value: Boolean): Self = this.set("editing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEditing: Self = this.set("editing", js.undefined)
+    
     @scala.inline
     def setEnableBubble(value: js.UndefOr[js.Any] => Unit): Self = this.set("enableBubble", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteEnableBubble: Self = this.set("enableBubble", js.undefined)
+    
     @scala.inline
     def setFireEvent(value: (/* eventName */ String, /* repeated */ js.Any) => Boolean): Self = this.set("fireEvent", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteFireEvent: Self = this.set("fireEvent", js.undefined)
+    
     @scala.inline
     def setFireEventArgs(value: (js.UndefOr[String], js.UndefOr[Array]) => Boolean): Self = this.set("fireEventArgs", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteFireEventArgs: Self = this.set("fireEventArgs", js.undefined)
+    
     @scala.inline
     def setHasListener(value: js.UndefOr[String] => Boolean): Self = this.set("hasListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteHasListener: Self = this.set("hasListener", js.undefined)
+    
     @scala.inline
     def setHasListeners(value: js.Any): Self = this.set("hasListeners", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHasListeners: Self = this.set("hasListeners", js.undefined)
+    
     @scala.inline
     def setIsObservable(value: Boolean): Self = this.set("isObservable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsObservable: Self = this.set("isObservable", js.undefined)
+    
     @scala.inline
     def setListeners(value: js.Any): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteListeners: Self = this.set("listeners", js.undefined)
+    
     @scala.inline
     def setMon(
       value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _
     ): Self = this.set("mon", js.Any.fromFunction5(value))
+    
     @scala.inline
     def deleteMon: Self = this.set("mon", js.undefined)
+    
     @scala.inline
     def setMun(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = this.set("mun", js.Any.fromFunction4(value))
+    
     @scala.inline
     def deleteMun: Self = this.set("mun", js.undefined)
+    
     @scala.inline
     def setOn(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _): Self = this.set("on", js.Any.fromFunction4(value))
+    
     @scala.inline
     def deleteOn: Self = this.set("on", js.undefined)
+    
     @scala.inline
     def setRelayEvents(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String]) => _): Self = this.set("relayEvents", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    
     @scala.inline
     def setRemoveListener(value: (js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = this.set("removeListener", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteRemoveListener: Self = this.set("removeListener", js.undefined)
+    
     @scala.inline
     def setRemoveManagedListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = this.set("removeManagedListener", js.Any.fromFunction4(value))
+    
     @scala.inline
     def deleteRemoveManagedListener: Self = this.set("removeManagedListener", js.undefined)
+    
     @scala.inline
     def setResumeEvent(value: /* repeated */ js.Any => Unit): Self = this.set("resumeEvent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteResumeEvent: Self = this.set("resumeEvent", js.undefined)
+    
     @scala.inline
     def setResumeEvents(value: () => Unit): Self = this.set("resumeEvents", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteResumeEvents: Self = this.set("resumeEvents", js.undefined)
+    
     @scala.inline
     def setStartEdit(value: (/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any]) => Unit): Self = this.set("startEdit", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteStartEdit: Self = this.set("startEdit", js.undefined)
+    
     @scala.inline
     def setSuspendEvent(value: /* repeated */ js.Any => Unit): Self = this.set("suspendEvent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSuspendEvent: Self = this.set("suspendEvent", js.undefined)
+    
     @scala.inline
     def setSuspendEvents(value: js.UndefOr[Boolean] => Unit): Self = this.set("suspendEvents", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSuspendEvents: Self = this.set("suspendEvents", js.undefined)
+    
     @scala.inline
     def setTriggerEvent(value: String): Self = this.set("triggerEvent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTriggerEvent: Self = this.set("triggerEvent", js.undefined)
+    
     @scala.inline
     def setUn(value: (js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = this.set("un", js.Any.fromFunction3(value))
+    
     @scala.inline
     def deleteUn: Self = this.set("un", js.undefined)
   }
-  
 }
-

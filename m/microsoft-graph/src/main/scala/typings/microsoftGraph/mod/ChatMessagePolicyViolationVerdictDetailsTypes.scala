@@ -3,7 +3,7 @@ package typings.microsoftGraph.mod
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.none_
@@ -12,15 +12,17 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification
 */
 trait ChatMessagePolicyViolationVerdictDetailsTypes extends js.Object
-
 object ChatMessagePolicyViolationVerdictDetailsTypes {
+  
   @scala.inline
   def allowFalsePositiveOverride: typings.microsoftGraph.microsoftGraphStrings.allowFalsePositiveOverride = "allowFalsePositiveOverride".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowFalsePositiveOverride]
+  
   @scala.inline
   def allowOverrideWithJustification: typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification = "allowOverrideWithJustification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification]
+  
   @scala.inline
   def allowOverrideWithoutJustification: typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithoutJustification = "allowOverrideWithoutJustification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithoutJustification]
+  
   @scala.inline
   def none: none_ = "none".asInstanceOf[none_]
 }
-

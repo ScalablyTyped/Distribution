@@ -7,23 +7,11 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/race", JSImport.Namespace)
 @js.native
 object raceMod extends js.Object {
-  @js.native
-  class RaceOperator[T] () extends Operator[T, T]
-  
-  @js.native
-  class RaceSubscriber[T] protected () extends OuterSubscriber[T, T] {
-    def this(destination: Subscriber[T]) = this()
-    var hasFirst: js.Any = js.native
-    var observables: js.Any = js.native
-    var subscriptions: js.Any = js.native
-    /* protected */ def _next(observable: js.Any): Unit = js.native
-    def notifyNext(_outerValue: T, innerValue: T, outerIndex: Double): Unit = js.native
-  }
   
   def race(arg: js.Array[ObservableInput[_]]): Observable[js.Object] = js.native
   def race(observables: ObservableInput[_]*): Observable[js.Object] = js.native
@@ -56,5 +44,22 @@ object raceMod extends js.Object {
   def race_T[T](arg: js.Array[ObservableInput[T]]): Observable[T] = js.native
   @JSName("race")
   def race_T[T](observables: ObservableInput[T]*): Observable[T] = js.native
+  
+  @js.native
+  class RaceOperator[T] () extends Operator[T, T]
+  
+  @js.native
+  class RaceSubscriber[T] protected () extends OuterSubscriber[T, T] {
+    def this(destination: Subscriber[T]) = this()
+    
+    /* protected */ def _next(observable: js.Any): Unit = js.native
+    
+    var hasFirst: js.Any = js.native
+    
+    def notifyNext(_outerValue: T, innerValue: T, outerIndex: Double): Unit = js.native
+    
+    var observables: js.Any = js.native
+    
+    var subscriptions: js.Any = js.native
+  }
 }
-

@@ -10,15 +10,15 @@ The same useRef, but with callback
 | ------------------ | :-------------: |
 | Full name          | use-callback-ref |
 | Keywords           | react, hoot, useRef, createRef |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 602872 |
+| # downloads        | 41232991 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/theKashey/kashe#readme)
-- [Bugs](https://github.com/theKashey/kashe/issues)
-- [Repository](https://github.com/theKashey/kashe)
+- [Homepage](https://github.com/theKashey/use-callback-ref#readme)
+- [Bugs](https://github.com/theKashey/use-callback-ref/issues)
+- [Repository](https://github.com/theKashey/use-callback-ref)
 - [Npm](https://www.npmjs.com/package/use-callback-ref)
     
 

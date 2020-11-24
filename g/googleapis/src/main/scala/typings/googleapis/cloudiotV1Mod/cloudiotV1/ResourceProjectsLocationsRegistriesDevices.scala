@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries$Devices")
 @js.native
 class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var configVersions: ResourceProjectsLocationsRegistriesDevicesConfigversions = js.native
+  
   var context: APIRequestContext = js.native
-  var states: ResourceProjectsLocationsRegistriesDevicesStates = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.create
     * @desc Creates a device in a device registry.
@@ -47,6 +49,7 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.delete
     * @desc Deletes a device.
@@ -78,6 +81,7 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.get
     * @desc Gets details about a device.
@@ -110,6 +114,7 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.list
     * @desc List devices in a device registry.
@@ -149,6 +154,7 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDevicesResponse]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.modifyCloudToDeviceConfig
     * @desc Modifies the configuration for the device, which is eventually sent
@@ -187,6 +193,7 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceConfig]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.patch
     * @desc Updates a device.
@@ -220,6 +227,7 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.sendCommandToDevice
     * @desc Sends a command to the specified device. In order for a device to
@@ -267,5 +275,6 @@ class ResourceProjectsLocationsRegistriesDevices protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSendCommandToDeviceResponse]
   ): Unit = js.native
+  
+  var states: ResourceProjectsLocationsRegistriesDevicesStates = js.native
 }
-

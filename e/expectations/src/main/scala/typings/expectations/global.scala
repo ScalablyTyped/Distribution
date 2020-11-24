@@ -4,14 +4,17 @@ import typings.expectations.Expectations.IAssertions
 import typings.expectations.Expectations.IExpectations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   var expect: IExpectations = js.native
+  
   @js.native
   object Expectations extends js.Object {
+    
     @js.native
     class Expect protected ()
       extends typings.expectations.Expectations.Expect {
@@ -44,8 +47,5 @@ object global extends js.Object {
         parent: typings.expectations.Expectations.Expect
       ) = this()
     }
-    
   }
-  
 }
-

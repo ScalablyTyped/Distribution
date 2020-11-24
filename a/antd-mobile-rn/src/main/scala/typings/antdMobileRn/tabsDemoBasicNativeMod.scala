@@ -3,19 +3,20 @@ package typings.antdMobileRn
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn/lib/tabs/demo/basic.native", JSImport.Namespace)
 @js.native
 object tabsDemoBasicNativeMod extends js.Object {
+  
+  val description: /* "Tabs example" */ String = js.native
+  
+  val title: /* "Tabs" */ String = js.native
+  
   @js.native
   trait BasicTabsExample
     extends Component[js.Any, js.Any, js.Any]
   
   @js.native
   class default () extends BasicTabsExample
-  
-  val description: /* "Tabs example" */ String = js.native
-  val title: /* "Tabs" */ String = js.native
 }
-

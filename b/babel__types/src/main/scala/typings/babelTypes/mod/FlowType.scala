@@ -26,7 +26,7 @@ import typings.babelTypes.babelTypesStrings.UnionTypeAnnotation
 import typings.babelTypes.babelTypesStrings.VoidTypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.AnyTypeAnnotation_
@@ -55,134 +55,155 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.VoidTypeAnnotation_
 */
 trait FlowType extends _Node
-
 object FlowType {
+  
   @scala.inline
   def MixedTypeAnnotation_(`type`: MixedTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def GenericTypeAnnotation_(id: Identifier_ | QualifiedTypeIdentifier_, `type`: GenericTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def TypeofTypeAnnotation_(argument: FlowType, `type`: TypeofTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def FunctionTypeAnnotation_(params: js.Array[FunctionTypeParam_], returnType: FlowType, `type`: FunctionTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def NullLiteralTypeAnnotation_(`type`: NullLiteralTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def EmptyTypeAnnotation_(`type`: EmptyTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def NumberTypeAnnotation_(`type`: NumberTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def SymbolTypeAnnotation_(`type`: SymbolTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def InterfaceTypeAnnotation_(body: ObjectTypeAnnotation_, `type`: InterfaceTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def IntersectionTypeAnnotation_(`type`: IntersectionTypeAnnotation, types: js.Array[FlowType]): FlowType = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def NumberLiteralTypeAnnotation_(`type`: NumberLiteralTypeAnnotation, value: Double): FlowType = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def BooleanLiteralTypeAnnotation_(`type`: BooleanLiteralTypeAnnotation, value: Boolean): FlowType = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def StringTypeAnnotation_(`type`: StringTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def AnyTypeAnnotation_(`type`: AnyTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def UnionTypeAnnotation_(`type`: UnionTypeAnnotation, types: js.Array[FlowType]): FlowType = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def ExistsTypeAnnotation_(`type`: ExistsTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def TupleTypeAnnotation_(`type`: TupleTypeAnnotation, types: js.Array[FlowType]): FlowType = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def StringLiteralTypeAnnotation_(`type`: StringLiteralTypeAnnotation, value: String): FlowType = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def ThisTypeAnnotation_(`type`: ThisTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def NullableTypeAnnotation_(`type`: NullableTypeAnnotation, typeAnnotation: FlowType): FlowType = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def VoidTypeAnnotation_(`type`: VoidTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def ObjectTypeAnnotation_(
     exact: Boolean,
@@ -193,12 +214,14 @@ object FlowType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def BooleanTypeAnnotation_(`type`: BooleanTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowType]
   }
+  
   @scala.inline
   def ArrayTypeAnnotation_(elementType: FlowType, `type`: ArrayTypeAnnotation): FlowType = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any])
@@ -206,4 +229,3 @@ object FlowType {
     __obj.asInstanceOf[FlowType]
   }
 }
-

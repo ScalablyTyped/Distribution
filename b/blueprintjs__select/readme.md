@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__select
 
-Typings are for version 3.13.6
+Typings are for version 3.15.0
 
 ## Library description:
 Components related to selecting items from a list
@@ -11,8 +11,8 @@ Components related to selecting items from a list
 | Full name          | @blueprintjs/select |
 | Keywords           | palantir, blueprint, components, select, select2, query, multiselect, suggest, typeahead, ui |
 | # releases         | 30 |
-| # dependents       | 50 |
-| # downloads        | 1839555 |
+| # dependents       | 69 |
+| # downloads        | 3972721 |
 | # stars            | 0 |
 
 ## Links

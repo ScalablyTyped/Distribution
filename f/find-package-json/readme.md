@@ -10,9 +10,9 @@ Find package.json files in parent directories, keep finding until you find the r
 | ------------------ | :-------------: |
 | Full name          | find-package-json |
 | Keywords           | package, package.json, json, find-package-json, directory, parent, package-json, read-package-json |
-| # releases         | 3 |
-| # dependents       | 86 |
-| # downloads        | 2667025 |
+| # releases         | 2 |
+| # dependents       | 114 |
+| # downloads        | 6761729 |
 | # stars            | 0 |
 
 ## Links

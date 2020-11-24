@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.ReportDesigner
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToolbarItems extends js.Object
-
 @JSGlobal("ej.ReportDesigner.ToolbarItems")
 @js.native
 object ToolbarItems extends js.Object {
+  
   ///Snaps the selected report items to the closest gridline.
   @js.native
   sealed trait AlignGrid extends ToolbarItems
@@ -89,6 +89,4 @@ object ToolbarItems extends js.Object {
   ///Used to "zoom in" to get a close-up view of a report or "zoom out" to see more of the page at a reduced size.
   @js.native
   sealed trait Zoom extends ToolbarItems
-  
 }
-

@@ -2,7 +2,7 @@ package typings.swiper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.swiper.swiperEsmMod.Navigation
@@ -25,4 +25,3 @@ import scala.scalajs.js.annotation._
   - typings.swiper.swiperEsmMod.A11y
 */
 trait SwiperModule extends js.Object
-

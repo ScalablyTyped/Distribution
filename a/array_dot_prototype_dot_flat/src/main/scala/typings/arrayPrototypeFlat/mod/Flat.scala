@@ -12,13 +12,13 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Flat extends FlatImpl {
-  @JSName("implementation")
-  var implementation_Original: FlatImpl = js.native
+  
   def getPolyfill(): FlatImpl = js.native
+  
   def implementation(receiver: ReadonlyArray[_]): Array[_] = js.native
   def implementation(receiver: ReadonlyArray[_], depth: Double): Array[_] = js.native
   @JSName("implementation")
@@ -61,7 +61,9 @@ trait Flat extends FlatImpl {
   @JSName("implementation")
   def implementation_7[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = js.native
   @JSName("implementation")
+  var implementation_Original: FlatImpl = js.native
+  @JSName("implementation")
   def implementation_U[U](receiver: ReadonlyArray[Array[U] | ReadonlyArray[U]]): Array[U] = js.native
+  
   def shim(): FlatImpl = js.native
 }
-

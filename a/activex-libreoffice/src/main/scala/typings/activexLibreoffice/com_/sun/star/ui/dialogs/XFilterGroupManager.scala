@@ -6,11 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies an interface which allows manipulation of groups of filters for the {@link FilePicker} service. */
 @js.native
 trait XFilterGroupManager extends XInterface {
+  
   /**
     * Appends a group of filters to the current filter list.
     *
@@ -24,8 +25,8 @@ trait XFilterGroupManager extends XInterface {
     */
   def appendFilterGroup(sGroupTitle: String, aFilters: SeqEquiv[StringPair]): Unit = js.native
 }
-
 object XFilterGroupManager {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -36,20 +37,23 @@ object XFilterGroupManager {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendFilterGroup = js.Any.fromFunction2(appendFilterGroup), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XFilterGroupManager]
   }
+  
   @scala.inline
   implicit class XFilterGroupManagerOps[Self <: XFilterGroupManager] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppendFilterGroup(value: (String, SeqEquiv[StringPair]) => Unit): Self = this.set("appendFilterGroup", js.Any.fromFunction2(value))
   }
-  
 }
-

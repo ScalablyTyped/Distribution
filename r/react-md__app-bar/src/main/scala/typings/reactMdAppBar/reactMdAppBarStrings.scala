@@ -5,9 +5,43 @@ import typings.reactMdAppBar.appBarMod.AppBarPosition
 import typings.reactMdAppBar.appBarMod.AppBarTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdAppBarStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def dense: dense = "dense".asInstanceOf[dense]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def primary: primary = "primary".asInstanceOf[primary]
+  
+  @scala.inline
+  def prominent: prominent = "prominent".asInstanceOf[prominent]
+  
+  @scala.inline
+  def `prominent-dense`: `prominent-dense` = "prominent-dense".asInstanceOf[`prominent-dense`]
+  
+  @scala.inline
+  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
   @js.native
   sealed trait bottom extends AppBarPosition
   
@@ -40,28 +74,4 @@ object reactMdAppBarStrings {
   
   @js.native
   sealed trait top extends AppBarPosition
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def dense: dense = "dense".asInstanceOf[dense]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
-  @scala.inline
-  def prominent: prominent = "prominent".asInstanceOf[prominent]
-  @scala.inline
-  def `prominent-dense`: `prominent-dense` = "prominent-dense".asInstanceOf[`prominent-dense`]
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
 }
-

@@ -5,20 +5,24 @@ import typings.angular.mod.global.Function
 import typings.angularHttpAuth.anon.Reject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("angular", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object httpAuth extends js.Object {
+    
     @js.native
     trait IAuthService extends js.Object {
+      
       def loginCancelled(): Unit = js.native
       def loginCancelled(data: js.UndefOr[scala.Nothing], reason: js.Any): Unit = js.native
       def loginCancelled(data: js.Any): Unit = js.native
       def loginCancelled(data: js.Any, reason: js.Any): Unit = js.native
+      
       def loginConfirmed(): Unit = js.native
       def loginConfirmed(data: js.UndefOr[scala.Nothing], configUpdater: Function): Unit = js.native
       def loginConfirmed(data: js.Any): Unit = js.native
@@ -27,14 +31,14 @@ object mod extends js.Object {
     
     @js.native
     trait IHttpBuffer extends js.Object {
+      
       def append(config: IRequestConfig, deferred: Reject): Unit = js.native
+      
       def rejectAll(): Unit = js.native
       def rejectAll(reason: js.Any): Unit = js.native
+      
       def retryAll(): Unit = js.native
       def retryAll(updater: Function): Unit = js.native
     }
-    
   }
-  
 }
-

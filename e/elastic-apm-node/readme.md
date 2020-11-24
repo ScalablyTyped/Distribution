@@ -1,7 +1,7 @@
 
 # Scala.js typings for elastic-apm-node
 
-Typings are for version 3.6.1
+Typings are for version 3.8.0
 
 ## Library description:
 The official Elastic APM agent for Node.js
@@ -10,9 +10,9 @@ The official Elastic APM agent for Node.js
 | ------------------ | :-------------: |
 | Full name          | elastic-apm-node |
 | Keywords           | opbeat, elastic, elasticapm, elasticsearch, log, logging, bug, bugs, error, errors, exception, exceptions, catch, monitor, monitoring, alert, alerts, performance, apm, ops, devops, stacktrace, trace, tracing, distributedtracing, distributed-tracing |
-| # releases         | 80 |
-| # dependents       | 27 |
-| # downloads        | 1704403 |
+| # releases         | 56 |
+| # dependents       | 44 |
+| # downloads        | 3637874 |
 | # stars            | 0 |
 
 ## Links

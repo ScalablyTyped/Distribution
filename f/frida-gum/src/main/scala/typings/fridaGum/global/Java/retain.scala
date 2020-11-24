@@ -4,11 +4,12 @@ import typings.fridaGum.Java.Members
 import typings.fridaGum.Java.Wrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.retain")
 @js.native
 object retain extends js.Object {
+  
   /**
     * Duplicates a JavaScript wrapper for later use outside replacement method.
     *
@@ -16,4 +17,3 @@ object retain extends js.Object {
     */
   def apply[T /* <: Members[T] */](obj: Wrapper[T]): Wrapper[T] = js.native
 }
-

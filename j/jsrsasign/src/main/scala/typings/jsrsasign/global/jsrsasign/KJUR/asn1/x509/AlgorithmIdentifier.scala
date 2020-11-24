@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.anon.Asn1params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AlgorithmIdentifier ASN.1 structure class
@@ -35,4 +35,3 @@ class AlgorithmIdentifier ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AlgorithmIdentifier {
   def this(params: Asn1params) = this()
 }
-

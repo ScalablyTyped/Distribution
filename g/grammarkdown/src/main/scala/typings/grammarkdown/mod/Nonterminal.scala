@@ -3,7 +3,7 @@ package typings.grammarkdown.mod
 import typings.grammarkdown.tokensMod.SyntaxKind.QuestionToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Nonterminal")
 @js.native
@@ -25,4 +25,3 @@ class Nonterminal protected ()
     questionToken: typings.grammarkdown.nodesMod.Token[QuestionToken]
   ) = this()
 }
-

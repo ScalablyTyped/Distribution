@@ -12,7 +12,7 @@ Famous sorting algorithms based on vote popularity and time
 | Keywords           | hotsort, hackerhot, wilsonscore, popularity, sorting, voting |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 14014 |
+| # downloads        | 6198 |
 | # stars            | 3 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v1", "cloudresourcemanager_v1.Resource$Liens")
 @js.native
 class ResourceLiens protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudresourcemanager.liens.create
     * @desc Create a Lien which applies to the resource denoted by the `parent`
@@ -99,6 +101,7 @@ class ResourceLiens protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLien]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.liens.delete
     * @desc Delete a Lien by `name`.  Callers of this method will require
@@ -180,6 +183,7 @@ class ResourceLiens protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.liens.get
     * @desc Retrieve a Lien by `name`.  Callers of this method will require
@@ -207,6 +211,7 @@ class ResourceLiens protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceLiensGet, options: MethodOptions): GaxiosPromise[SchemaLien] = js.native
   def get(params: ParamsResourceLiensGet, options: MethodOptions, callback: BodyResponseCallback[SchemaLien]): Unit = js.native
+  
   /**
     * cloudresourcemanager.liens.list
     * @desc List all Liens applied to the `parent` resource.  Callers of this
@@ -304,4 +309,3 @@ class ResourceLiens protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListLiensResponse]
   ): Unit = js.native
 }
-

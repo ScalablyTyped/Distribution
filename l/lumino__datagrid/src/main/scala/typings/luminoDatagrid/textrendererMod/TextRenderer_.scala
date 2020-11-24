@@ -9,7 +9,7 @@ import typings.luminoDatagrid.textrendererMod.TextRenderer.IOptions
 import typings.luminoDatagrid.textrendererMod.TextRenderer.VerticalAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer")
 @js.native
@@ -20,26 +20,12 @@ import scala.scalajs.js.annotation._
   */
 class TextRenderer_ () extends CellRenderer {
   def this(options: IOptions) = this()
+  
   /**
     * The CSS color for the cell background.
     */
   val backgroundColor: ConfigOption[String] = js.native
-  /**
-    * The CSS shorthand font for drawing the text.
-    */
-  val font: ConfigOption[String] = js.native
-  /**
-    * The horizontal alignment for the cell text.
-    */
-  val horizontalAlignment: ConfigOption[HorizontalAlignment] = js.native
-  /**
-    * The CSS color for drawing the text.
-    */
-  val textColor: ConfigOption[String] = js.native
-  /**
-    * The vertical alignment for the cell text.
-    */
-  val verticalAlignment: ConfigOption[VerticalAlignment] = js.native
+  
   /**
     * Draw the background for the cell.
     *
@@ -48,6 +34,7 @@ class TextRenderer_ () extends CellRenderer {
     * @param config - The configuration data for the cell.
     */
   def drawBackground(gc: GraphicsContext, config: CellConfig): Unit = js.native
+  
   /**
     * Draw the text for the cell.
     *
@@ -56,9 +43,29 @@ class TextRenderer_ () extends CellRenderer {
     * @param config - The configuration data for the cell.
     */
   def drawText(gc: GraphicsContext, config: CellConfig): Unit = js.native
+  
+  /**
+    * The CSS shorthand font for drawing the text.
+    */
+  val font: ConfigOption[String] = js.native
+  
   /**
     * The format function for the cell value.
     */
   def format(config: CellConfig): String = js.native
+  
+  /**
+    * The horizontal alignment for the cell text.
+    */
+  val horizontalAlignment: ConfigOption[HorizontalAlignment] = js.native
+  
+  /**
+    * The CSS color for drawing the text.
+    */
+  val textColor: ConfigOption[String] = js.native
+  
+  /**
+    * The vertical alignment for the cell text.
+    */
+  val verticalAlignment: ConfigOption[VerticalAlignment] = js.native
 }
-

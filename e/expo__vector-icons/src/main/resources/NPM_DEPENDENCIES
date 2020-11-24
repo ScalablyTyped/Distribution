@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/vector-icons" : "10.2.0"
+      "@expo/vector-icons" : "10.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/vector-icons" : "10.2.0"
+      "@expo/vector-icons" : "10.2.1"
     }
   ],
   "compile-devDependencies" : [

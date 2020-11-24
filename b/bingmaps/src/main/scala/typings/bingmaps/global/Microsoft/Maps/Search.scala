@@ -2,7 +2,7 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an easy method for geocoding address and searching for points of interest from JavaScript.
@@ -11,6 +11,39 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.Search")
 @js.native
 object Search extends js.Object {
+  
+  @js.native
+  object MatchCode extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Search.MatchCode with Double] = js.native
+    
+    /* 2 */ val ambiguous: typings.bingmaps.Microsoft.Maps.Search.MatchCode.ambiguous with Double = js.native
+    
+    /* 1 */ val good: typings.bingmaps.Microsoft.Maps.Search.MatchCode.good with Double = js.native
+    
+    /* 4 */ val modified: typings.bingmaps.Microsoft.Maps.Search.MatchCode.modified with Double = js.native
+    
+    /* 0 */ val none: typings.bingmaps.Microsoft.Maps.Search.MatchCode.none with Double = js.native
+    
+    /* 3 */ val upHierarchy: typings.bingmaps.Microsoft.Maps.Search.MatchCode.upHierarchy with Double = js.native
+  }
+  
+  @js.native
+  object MatchConfidence extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Search.MatchConfidence with Double] = js.native
+    
+    /* 0 */ val high: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.high with Double = js.native
+    
+    /* 2 */ val low: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.low with Double = js.native
+    
+    /* 1 */ val medium: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.medium with Double = js.native
+    
+    /* 3 */ val unknown: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.unknown with Double = js.native
+  }
+  
   @js.native
   class SearchManager protected ()
     extends typings.bingmaps.Microsoft.Maps.Search.SearchManager {
@@ -21,27 +54,4 @@ object Search extends js.Object {
       */
     def this(map: typings.bingmaps.Microsoft.Maps.Map) = this()
   }
-  
-  @js.native
-  object MatchCode extends js.Object {
-    /* 2 */ val ambiguous: typings.bingmaps.Microsoft.Maps.Search.MatchCode.ambiguous with Double = js.native
-    /* 1 */ val good: typings.bingmaps.Microsoft.Maps.Search.MatchCode.good with Double = js.native
-    /* 4 */ val modified: typings.bingmaps.Microsoft.Maps.Search.MatchCode.modified with Double = js.native
-    /* 0 */ val none: typings.bingmaps.Microsoft.Maps.Search.MatchCode.none with Double = js.native
-    /* 3 */ val upHierarchy: typings.bingmaps.Microsoft.Maps.Search.MatchCode.upHierarchy with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Search.MatchCode with Double] = js.native
-  }
-  
-  @js.native
-  object MatchConfidence extends js.Object {
-    /* 0 */ val high: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.high with Double = js.native
-    /* 2 */ val low: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.low with Double = js.native
-    /* 1 */ val medium: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.medium with Double = js.native
-    /* 3 */ val unknown: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.unknown with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Search.MatchConfidence with Double] = js.native
-  }
-  
 }
-

@@ -12,11 +12,49 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Physics.Matter")
 @js.native
 object Matter extends js.Object {
+  
+  /**
+    * A Matter Game Object is a generic object that allows you to combine any Phaser Game Object,
+    * including those you have extended or created yourself, with all of the Matter Components.
+    * 
+    * This enables you to use component methods such as `setVelocity` or `isSensor` directly from
+    * this Game Object.
+    * @param world The Matter world to add the body to.
+    * @param gameObject The Game Object that will have the Matter body applied to it.
+    * @param options A Matter Body configuration object, or an instance of a Matter Body.
+    * @param addToWorld Should the newly created body be immediately added to the World? Default true.
+    */
+  def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject): GameObject = js.native
+  def MatterGameObject(
+    world: typings.phaser.Phaser.Physics.Matter.World,
+    gameObject: GameObject,
+    options: js.UndefOr[scala.Nothing],
+    addToWorld: Boolean
+  ): GameObject = js.native
+  def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject, options: Body): GameObject = js.native
+  def MatterGameObject(
+    world: typings.phaser.Phaser.Physics.Matter.World,
+    gameObject: GameObject,
+    options: Body,
+    addToWorld: Boolean
+  ): GameObject = js.native
+  def MatterGameObject(
+    world: typings.phaser.Phaser.Physics.Matter.World,
+    gameObject: GameObject,
+    options: MatterBodyConfig
+  ): GameObject = js.native
+  def MatterGameObject(
+    world: typings.phaser.Phaser.Physics.Matter.World,
+    gameObject: GameObject,
+    options: MatterBodyConfig,
+    addToWorld: Boolean
+  ): GameObject = js.native
+  
   /**
     * The Body Bounds class contains methods to help you extract the world coordinates from various points around
     * the bounds of a Matter Body. Because Matter bodies are positioned based on their center of mass, and not a
@@ -33,6 +71,164 @@ object Matter extends js.Object {
   @js.native
   class BodyBounds ()
     extends typings.phaser.Phaser.Physics.Matter.BodyBounds
+  
+  @js.native
+  object Events extends js.Object {
+    
+    /**
+      * The Matter Physics After Add Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance at the end of the process when a new Body
+      * or Constraint has just been added to the world.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('afteradd', listener)`.
+      */
+    val AFTER_ADD: js.Any = js.native
+    
+    /**
+      * The Matter Physics After Remove Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance at the end of the process when a 
+      * Body or Constraint was removed from the world.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('afterremove', listener)`.
+      */
+    val AFTER_REMOVE: js.Any = js.native
+    
+    /**
+      * The Matter Physics After Update Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance after the engine has updated and all collision events have resolved.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('afterupdate', listener)`.
+      */
+    val AFTER_UPDATE: js.Any = js.native
+    
+    /**
+      * The Matter Physics Before Add Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance at the start of the process when a new Body
+      * or Constraint is being added to the world.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('beforeadd', listener)`.
+      */
+    val BEFORE_ADD: js.Any = js.native
+    
+    /**
+      * The Matter Physics Before Remove Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance at the start of the process when a 
+      * Body or Constraint is being removed from the world.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('beforeremove', listener)`.
+      */
+    val BEFORE_REMOVE: js.Any = js.native
+    
+    /**
+      * The Matter Physics Before Update Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance right before all the collision processing takes place.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('beforeupdate', listener)`.
+      */
+    val BEFORE_UPDATE: js.Any = js.native
+    
+    /**
+      * The Matter Physics Collision Active Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance after the engine has updated.
+      * It provides a list of all pairs that are colliding in the current tick (if any).
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('collisionactive', listener)`.
+      */
+    val COLLISION_ACTIVE: js.Any = js.native
+    
+    /**
+      * The Matter Physics Collision End Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance after the engine has updated.
+      * It provides a list of all pairs that have finished colliding in the current tick (if any).
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('collisionend', listener)`.
+      */
+    val COLLISION_END: js.Any = js.native
+    
+    /**
+      * The Matter Physics Collision Start Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance after the engine has updated.
+      * It provides a list of all pairs that have started to collide in the current tick (if any).
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('collisionstart', listener)`.
+      */
+    val COLLISION_START: js.Any = js.native
+    
+    /**
+      * The Matter Physics Drag Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance when a Pointer Constraint
+      * is actively dragging a body. It is emitted each time the pointer moves.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('drag', listener)`.
+      */
+    val DRAG: js.Any = js.native
+    
+    /**
+      * The Matter Physics Drag End Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance when a Pointer Constraint
+      * stops dragging a body.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('dragend', listener)`.
+      */
+    val DRAG_END: js.Any = js.native
+    
+    /**
+      * The Matter Physics Drag Start Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance when a Pointer Constraint
+      * starts dragging a body.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('dragstart', listener)`.
+      */
+    val DRAG_START: js.Any = js.native
+    
+    /**
+      * The Matter Physics World Pause Event.
+      * 
+      * This event is dispatched by an Matter Physics World instance when it is paused.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('pause', listener)`.
+      */
+    val PAUSE: js.Any = js.native
+    
+    /**
+      * The Matter Physics World Resume Event.
+      * 
+      * This event is dispatched by an Matter Physics World instance when it resumes from a paused state.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('resume', listener)`.
+      */
+    val RESUME: js.Any = js.native
+    
+    /**
+      * The Matter Physics Sleep End Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance when a Body stop sleeping.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('sleepend', listener)`.
+      */
+    val SLEEP_END: js.Any = js.native
+    
+    /**
+      * The Matter Physics Sleep Start Event.
+      * 
+      * This event is dispatched by a Matter Physics World instance when a Body goes to sleep.
+      * 
+      * Listen to it from a Scene using: `this.matter.world.on('sleepstart', listener)`.
+      */
+    val SLEEP_START: js.Any = js.native
+  }
   
   /**
     * The Matter Factory is responsible for quickly creating a variety of different types of
@@ -218,6 +414,90 @@ object Matter extends js.Object {
   }
   
   /**
+    * Use PhysicsEditorParser.parseBody() to build a Matter body object, based on a physics data file
+    * created and exported with PhysicsEditor (https://www.codeandweb.com/physicseditor).
+    */
+  @js.native
+  object PhysicsEditorParser extends js.Object {
+    
+    /**
+      * Parses a body element exported by PhysicsEditor.
+      * @param x The horizontal world location of the body.
+      * @param y The vertical world location of the body.
+      * @param config The body configuration and fixture (child body) definitions, as exported by PhysicsEditor.
+      * @param options An optional Body configuration object that is used to set initial Body properties on creation.
+      */
+    def parseBody(x: Double, y: Double, config: js.Object): BodyType = js.native
+    def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = js.native
+    
+    /**
+      * Parses an element of the "fixtures" list exported by PhysicsEditor
+      * @param fixtureConfig The fixture object to parse.
+      */
+    def parseFixture(fixtureConfig: js.Object): js.Array[BodyType] = js.native
+    
+    /**
+      * Parses the "vertices" lists exported by PhysicsEditor.
+      * @param vertexSets The vertex lists to parse.
+      * @param options An optional Body configuration object that is used to set initial Body properties on creation.
+      */
+    def parseVertices(vertexSets: js.Array[_]): js.Array[BodyType] = js.native
+    def parseVertices(vertexSets: js.Array[_], options: MatterBodyConfig): js.Array[BodyType] = js.native
+  }
+  
+  /**
+    * Creates a body using the supplied physics data, as provided by a JSON file.
+    * 
+    * The data file should be loaded as JSON:
+    * 
+    * ```javascript
+    * preload ()
+    * {
+    *   this.load.json('ninjas', 'assets/ninjas.json);
+    * }
+    * 
+    * create ()
+    * {
+    *   const ninjaShapes = this.cache.json.get('ninjas');
+    * 
+    *   this.matter.add.fromJSON(400, 300, ninjaShapes.shinobi);
+    * }
+    * ```
+    * 
+    * Do not pass the entire JSON file to this method, but instead pass one of the shapes contained within it.
+    * 
+    * If you pas in an `options` object, any settings in there will override those in the config object.
+    * 
+    * The structure of the JSON file is as follows:
+    * 
+    * ```text
+    * {
+    *   'generator_info': // The name of the application that created the JSON data
+    *   'shapeName': {
+    *     'type': // The type of body
+    *     'label': // Optional body label
+    *     'vertices': // An array, or an array of arrays, containing the vertex data in x/y object pairs
+    *   }
+    * }
+    * ```
+    * 
+    * At the time of writing, only the Phaser Physics Tracer App exports in this format.
+    */
+  @js.native
+  object PhysicsJSONParser extends js.Object {
+    
+    /**
+      * Parses a body element from the given JSON data.
+      * @param x The horizontal world location of the body.
+      * @param y The vertical world location of the body.
+      * @param config The body configuration data.
+      * @param options An optional Body configuration object that is used to set initial Body properties on creation.
+      */
+    def parseBody(x: Double, y: Double, config: js.Object): BodyType = js.native
+    def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = js.native
+  }
+  
+  /**
     * A Pointer Constraint is a special type of constraint that allows you to click
     * and drag bodies in a Matter World. It monitors the active Pointers in a Scene,
     * and when one is pressed down it checks to see if that hit any part of any active
@@ -391,264 +671,4 @@ object Matter extends js.Object {
       */
     def this(scene: Scene, config: MatterWorldConfig) = this()
   }
-  
-  /**
-    * A Matter Game Object is a generic object that allows you to combine any Phaser Game Object,
-    * including those you have extended or created yourself, with all of the Matter Components.
-    * 
-    * This enables you to use component methods such as `setVelocity` or `isSensor` directly from
-    * this Game Object.
-    * @param world The Matter world to add the body to.
-    * @param gameObject The Game Object that will have the Matter body applied to it.
-    * @param options A Matter Body configuration object, or an instance of a Matter Body.
-    * @param addToWorld Should the newly created body be immediately added to the World? Default true.
-    */
-  def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject): GameObject = js.native
-  def MatterGameObject(
-    world: typings.phaser.Phaser.Physics.Matter.World,
-    gameObject: GameObject,
-    options: js.UndefOr[scala.Nothing],
-    addToWorld: Boolean
-  ): GameObject = js.native
-  def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject, options: Body): GameObject = js.native
-  def MatterGameObject(
-    world: typings.phaser.Phaser.Physics.Matter.World,
-    gameObject: GameObject,
-    options: Body,
-    addToWorld: Boolean
-  ): GameObject = js.native
-  def MatterGameObject(
-    world: typings.phaser.Phaser.Physics.Matter.World,
-    gameObject: GameObject,
-    options: MatterBodyConfig
-  ): GameObject = js.native
-  def MatterGameObject(
-    world: typings.phaser.Phaser.Physics.Matter.World,
-    gameObject: GameObject,
-    options: MatterBodyConfig,
-    addToWorld: Boolean
-  ): GameObject = js.native
-  @js.native
-  object Events extends js.Object {
-    /**
-      * The Matter Physics After Add Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance at the end of the process when a new Body
-      * or Constraint has just been added to the world.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('afteradd', listener)`.
-      */
-    val AFTER_ADD: js.Any = js.native
-    /**
-      * The Matter Physics After Remove Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance at the end of the process when a 
-      * Body or Constraint was removed from the world.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('afterremove', listener)`.
-      */
-    val AFTER_REMOVE: js.Any = js.native
-    /**
-      * The Matter Physics After Update Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance after the engine has updated and all collision events have resolved.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('afterupdate', listener)`.
-      */
-    val AFTER_UPDATE: js.Any = js.native
-    /**
-      * The Matter Physics Before Add Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance at the start of the process when a new Body
-      * or Constraint is being added to the world.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('beforeadd', listener)`.
-      */
-    val BEFORE_ADD: js.Any = js.native
-    /**
-      * The Matter Physics Before Remove Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance at the start of the process when a 
-      * Body or Constraint is being removed from the world.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('beforeremove', listener)`.
-      */
-    val BEFORE_REMOVE: js.Any = js.native
-    /**
-      * The Matter Physics Before Update Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance right before all the collision processing takes place.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('beforeupdate', listener)`.
-      */
-    val BEFORE_UPDATE: js.Any = js.native
-    /**
-      * The Matter Physics Collision Active Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance after the engine has updated.
-      * It provides a list of all pairs that are colliding in the current tick (if any).
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('collisionactive', listener)`.
-      */
-    val COLLISION_ACTIVE: js.Any = js.native
-    /**
-      * The Matter Physics Collision End Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance after the engine has updated.
-      * It provides a list of all pairs that have finished colliding in the current tick (if any).
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('collisionend', listener)`.
-      */
-    val COLLISION_END: js.Any = js.native
-    /**
-      * The Matter Physics Collision Start Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance after the engine has updated.
-      * It provides a list of all pairs that have started to collide in the current tick (if any).
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('collisionstart', listener)`.
-      */
-    val COLLISION_START: js.Any = js.native
-    /**
-      * The Matter Physics Drag Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance when a Pointer Constraint
-      * is actively dragging a body. It is emitted each time the pointer moves.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('drag', listener)`.
-      */
-    val DRAG: js.Any = js.native
-    /**
-      * The Matter Physics Drag End Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance when a Pointer Constraint
-      * stops dragging a body.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('dragend', listener)`.
-      */
-    val DRAG_END: js.Any = js.native
-    /**
-      * The Matter Physics Drag Start Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance when a Pointer Constraint
-      * starts dragging a body.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('dragstart', listener)`.
-      */
-    val DRAG_START: js.Any = js.native
-    /**
-      * The Matter Physics World Pause Event.
-      * 
-      * This event is dispatched by an Matter Physics World instance when it is paused.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('pause', listener)`.
-      */
-    val PAUSE: js.Any = js.native
-    /**
-      * The Matter Physics World Resume Event.
-      * 
-      * This event is dispatched by an Matter Physics World instance when it resumes from a paused state.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('resume', listener)`.
-      */
-    val RESUME: js.Any = js.native
-    /**
-      * The Matter Physics Sleep End Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance when a Body stop sleeping.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('sleepend', listener)`.
-      */
-    val SLEEP_END: js.Any = js.native
-    /**
-      * The Matter Physics Sleep Start Event.
-      * 
-      * This event is dispatched by a Matter Physics World instance when a Body goes to sleep.
-      * 
-      * Listen to it from a Scene using: `this.matter.world.on('sleepstart', listener)`.
-      */
-    val SLEEP_START: js.Any = js.native
-  }
-  
-  /**
-    * Use PhysicsEditorParser.parseBody() to build a Matter body object, based on a physics data file
-    * created and exported with PhysicsEditor (https://www.codeandweb.com/physicseditor).
-    */
-  @js.native
-  object PhysicsEditorParser extends js.Object {
-    /**
-      * Parses a body element exported by PhysicsEditor.
-      * @param x The horizontal world location of the body.
-      * @param y The vertical world location of the body.
-      * @param config The body configuration and fixture (child body) definitions, as exported by PhysicsEditor.
-      * @param options An optional Body configuration object that is used to set initial Body properties on creation.
-      */
-    def parseBody(x: Double, y: Double, config: js.Object): BodyType = js.native
-    def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = js.native
-    /**
-      * Parses an element of the "fixtures" list exported by PhysicsEditor
-      * @param fixtureConfig The fixture object to parse.
-      */
-    def parseFixture(fixtureConfig: js.Object): js.Array[BodyType] = js.native
-    /**
-      * Parses the "vertices" lists exported by PhysicsEditor.
-      * @param vertexSets The vertex lists to parse.
-      * @param options An optional Body configuration object that is used to set initial Body properties on creation.
-      */
-    def parseVertices(vertexSets: js.Array[_]): js.Array[BodyType] = js.native
-    def parseVertices(vertexSets: js.Array[_], options: MatterBodyConfig): js.Array[BodyType] = js.native
-  }
-  
-  /**
-    * Creates a body using the supplied physics data, as provided by a JSON file.
-    * 
-    * The data file should be loaded as JSON:
-    * 
-    * ```javascript
-    * preload ()
-    * {
-    *   this.load.json('ninjas', 'assets/ninjas.json);
-    * }
-    * 
-    * create ()
-    * {
-    *   const ninjaShapes = this.cache.json.get('ninjas');
-    * 
-    *   this.matter.add.fromJSON(400, 300, ninjaShapes.shinobi);
-    * }
-    * ```
-    * 
-    * Do not pass the entire JSON file to this method, but instead pass one of the shapes contained within it.
-    * 
-    * If you pas in an `options` object, any settings in there will override those in the config object.
-    * 
-    * The structure of the JSON file is as follows:
-    * 
-    * ```text
-    * {
-    *   'generator_info': // The name of the application that created the JSON data
-    *   'shapeName': {
-    *     'type': // The type of body
-    *     'label': // Optional body label
-    *     'vertices': // An array, or an array of arrays, containing the vertex data in x/y object pairs
-    *   }
-    * }
-    * ```
-    * 
-    * At the time of writing, only the Phaser Physics Tracer App exports in this format.
-    */
-  @js.native
-  object PhysicsJSONParser extends js.Object {
-    /**
-      * Parses a body element from the given JSON data.
-      * @param x The horizontal world location of the body.
-      * @param y The vertical world location of the body.
-      * @param config The body configuration data.
-      * @param options An optional Body configuration object that is used to set initial Body properties on creation.
-      */
-    def parseBody(x: Double, y: Double, config: js.Object): BodyType = js.native
-    def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = js.native
-  }
-  
 }
-

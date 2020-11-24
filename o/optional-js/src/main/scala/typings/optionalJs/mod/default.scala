@@ -2,24 +2,25 @@ package typings.optionalJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("optional-js", JSImport.Default)
 @js.native
 class default[T] protected () extends Optional[T] {
   protected def this(value: T) = this()
 }
-
 /* static members */
 @JSImport("optional-js", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Returns an empty Optional instance. No value is present for this Optional.
     *
     * @return an empty Optional
     */
   def empty[T](): Optional[T] = js.native
+  
   /**
     * Returns an Optional describing the given non-null value.
     *
@@ -29,6 +30,7 @@ object default extends js.Object {
     * @throws Error if value is null
     */
   def of[T](value: T): Optional[T] = js.native
+  
   /**
     * Returns an Optional describing the given value, if non-null, otherwise returns an empty Optional.
     *
@@ -39,4 +41,3 @@ object default extends js.Object {
   def ofNullable[T](): Optional[T] = js.native
   def ofNullable[T](value: T): Optional[T] = js.native
 }
-

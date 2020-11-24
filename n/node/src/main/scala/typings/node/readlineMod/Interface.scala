@@ -12,7 +12,7 @@ import typings.node.nodeStrings.pause
 import typings.node.nodeStrings.resume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("readline", "Interface")
 @js.native
@@ -61,13 +61,7 @@ class Interface protected () extends EventEmitter {
   ) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
-  /** The current cursor position in the input line */
-  val cursor: Double = js.native
-  // Need direct access to line/cursor data, for use in external processes
-  // see: https://github.com/nodejs/node/issues/30347
-  /** The current input data */
-  val line: String = js.native
-  val terminal: Boolean = js.native
+  
   @JSName("addListener")
   def addListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -82,7 +76,12 @@ class Interface protected () extends EventEmitter {
   def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def close(): Unit = js.native
+  
+  /** The current cursor position in the input line */
+  val cursor: Double = js.native
+  
   @JSName("emit")
   def emit_SIGCONT(event: SIGCONT): Boolean = js.native
   @JSName("emit")
@@ -97,12 +96,19 @@ class Interface protected () extends EventEmitter {
   def emit_pause(event: pause): Boolean = js.native
   @JSName("emit")
   def emit_resume(event: resume): Boolean = js.native
+  
   /**
     * Returns the real position of the cursor in relation to the input
     * prompt + string.  Long input (wrapping) strings, as well as multiple
     * line prompts are included in the calculations.
     */
   def getCursorPos(): CursorPos = js.native
+  
+  // Need direct access to line/cursor data, for use in external processes
+  // see: https://github.com/nodejs/node/issues/30347
+  /** The current input data */
+  val line: String = js.native
+  
   @JSName("on")
   def on_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -117,6 +123,7 @@ class Interface protected () extends EventEmitter {
   def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("once")
   def once_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -131,7 +138,9 @@ class Interface protected () extends EventEmitter {
   def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def pause(): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -146,6 +155,7 @@ class Interface protected () extends EventEmitter {
   def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -160,14 +170,20 @@ class Interface protected () extends EventEmitter {
   def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def prompt(): Unit = js.native
   def prompt(preserveCursor: Boolean): Unit = js.native
+  
   def question(query: String, callback: js.Function1[/* answer */ String, Unit]): Unit = js.native
+  
   def resume(): this.type = js.native
+  
   def setPrompt(prompt: String): Unit = js.native
+  
+  val terminal: Boolean = js.native
+  
   def write(data: String): Unit = js.native
   def write(data: String, key: Key): Unit = js.native
   def write(data: Buffer): Unit = js.native
   def write(data: Buffer, key: Key): Unit = js.native
 }
-

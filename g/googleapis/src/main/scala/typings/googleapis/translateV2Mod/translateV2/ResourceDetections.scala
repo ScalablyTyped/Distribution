@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/translate/v2", "translate_v2.Resource$Detections")
 @js.native
 class ResourceDetections protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * language.detections.detect
     * @desc Detects the language of text within a request.
@@ -44,6 +46,7 @@ class ResourceDetections protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDetectionsListResponse]
   ): Unit = js.native
+  
   /**
     * language.detections.list
     * @desc Detects the language of text within a request.
@@ -73,4 +76,3 @@ class ResourceDetections protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDetectionsListResponse]
   ): Unit = js.native
 }
-

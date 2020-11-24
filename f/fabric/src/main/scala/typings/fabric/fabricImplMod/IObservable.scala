@@ -3,10 +3,11 @@ package typings.fabric.fabricImplMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IObservable[T] extends js.Object {
+  
   /**
     * Stops event observing for a particular event handler. Calling this method
     * without arguments removes all handlers for all events
@@ -19,6 +20,7 @@ trait IObservable[T] extends js.Object {
   def off(eventName: String, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
   def off(eventName: js.Any): T = js.native
   def off(eventName: js.Any, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
+  
   /**
     * Observes specified event
     * @param eventName Event name (eg. 'after:render')
@@ -30,6 +32,7 @@ trait IObservable[T] extends js.Object {
     * @param eventName Object with key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
     */
   def on(events: StringDictionary[js.Function1[/* e */ IEvent, Unit]]): T = js.native
+  
   /**
     * Fires event with an optional options object
     * @param eventName Event name to fire
@@ -38,4 +41,3 @@ trait IObservable[T] extends js.Object {
   def trigger(eventName: String): T = js.native
   def trigger(eventName: String, options: js.Any): T = js.native
 }
-

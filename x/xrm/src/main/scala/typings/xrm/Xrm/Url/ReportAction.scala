@@ -2,7 +2,7 @@ package typings.xrm.Xrm.Url
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Report Open Action options for Xrm.Url.ReportOpenParameters.actions.
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.run
 */
 trait ReportAction extends js.Object
-
 object ReportAction {
+  
   @scala.inline
   def filter: typings.xrm.xrmStrings.filter = "filter".asInstanceOf[typings.xrm.xrmStrings.filter]
+  
   @scala.inline
   def run: typings.xrm.xrmStrings.run = "run".asInstanceOf[typings.xrm.xrmStrings.run]
 }
-

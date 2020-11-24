@@ -5,11 +5,12 @@ import typings.node.Buffer
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("html-docx-js", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def asBlob(
     /**
     * An HTML formatted string. It should be a complete, valid HTML
@@ -31,4 +32,3 @@ object mod extends js.Object {
   options: Margins
   ): Blob | Buffer = js.native
 }
-

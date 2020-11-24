@@ -5,10 +5,11 @@ import typings.uirouterCore.commonCommonMod.IInjectable
 import typings.uirouterCore.stateInterfaceMod.ViewDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Ng1ViewDeclaration extends ViewDeclaration {
+  
   /**
     * An object which maps `resolve`s to [[component]] `bindings`.
     *
@@ -50,6 +51,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     *
     */
   var bindings: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * The name of the component to use for this view.
     *
@@ -103,6 +105,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * See also: Todd Motto's angular 1.3 and 1.4 [backport of .component()](https://github.com/toddmotto/angular-component)
     */
   var component: js.UndefOr[String] = js.native
+  
   /**
     * Dynamic component provider function.
     *
@@ -124,6 +127,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * ```
     */
   var componentProvider: js.UndefOr[IInjectable] = js.native
+  
   /**
     * The view's controller function or name
     *
@@ -138,6 +142,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * See: [[Ng1Controller]] for information about component-level router hooks.
     */
   var controller: js.UndefOr[IInjectable | String] = js.native
+  
   /**
     * A controller alias name.
     *
@@ -147,6 +152,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * See: https://docs.angularjs.org/api/ng/directive/ngController
     */
   var controllerAs: js.UndefOr[String] = js.native
+  
   /**
     * Dynamic controller provider function.
     *
@@ -172,6 +178,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * ```
     */
   var controllerProvider: js.UndefOr[IInjectable] = js.native
+  
   /**
     * The scope variable name to use for resolve data.
     *
@@ -183,6 +190,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * Defaults to `$resolve`.
     */
   var resolveAs: js.UndefOr[String] = js.native
+  
   /**
     * The HTML template for the view.
     *
@@ -208,6 +216,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * ```
     */
   var template: js.UndefOr[js.Function | String] = js.native
+  
   /**
     * Injected function which returns the HTML template.
     *
@@ -224,6 +233,7 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     * ```
     */
   var templateProvider: js.UndefOr[IInjectable] = js.native
+  
   /**
     * The URL for the HTML template for the view.
     *
@@ -248,73 +258,99 @@ trait Ng1ViewDeclaration extends ViewDeclaration {
     */
   var templateUrl: js.UndefOr[String | js.Function] = js.native
 }
-
 object Ng1ViewDeclaration {
+  
   @scala.inline
   def apply(): Ng1ViewDeclaration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ng1ViewDeclaration]
   }
+  
   @scala.inline
   implicit class Ng1ViewDeclarationOps[Self <: Ng1ViewDeclaration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBindings(value: StringDictionary[String]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBindings: Self = this.set("bindings", js.undefined)
+    
     @scala.inline
     def setComponent(value: String): Self = this.set("component", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteComponent: Self = this.set("component", js.undefined)
+    
     @scala.inline
     def setComponentProviderVarargs(value: js.Any*): Self = this.set("componentProvider", js.Array(value :_*))
+    
     @scala.inline
     def setComponentProvider(value: IInjectable): Self = this.set("componentProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteComponentProvider: Self = this.set("componentProvider", js.undefined)
+    
     @scala.inline
     def setControllerVarargs(value: js.Any*): Self = this.set("controller", js.Array(value :_*))
+    
     @scala.inline
     def setController(value: IInjectable | String): Self = this.set("controller", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteController: Self = this.set("controller", js.undefined)
+    
     @scala.inline
     def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    
     @scala.inline
     def setControllerProviderVarargs(value: js.Any*): Self = this.set("controllerProvider", js.Array(value :_*))
+    
     @scala.inline
     def setControllerProvider(value: IInjectable): Self = this.set("controllerProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteControllerProvider: Self = this.set("controllerProvider", js.undefined)
+    
     @scala.inline
     def setResolveAs(value: String): Self = this.set("resolveAs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResolveAs: Self = this.set("resolveAs", js.undefined)
+    
     @scala.inline
     def setTemplate(value: js.Function | String): Self = this.set("template", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTemplate: Self = this.set("template", js.undefined)
+    
     @scala.inline
     def setTemplateProviderVarargs(value: js.Any*): Self = this.set("templateProvider", js.Array(value :_*))
+    
     @scala.inline
     def setTemplateProvider(value: IInjectable): Self = this.set("templateProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTemplateProvider: Self = this.set("templateProvider", js.undefined)
+    
     @scala.inline
     def setTemplateUrl(value: String | js.Function): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
   }
-  
 }
-

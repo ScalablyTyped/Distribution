@@ -10,9 +10,9 @@ Simple wrapper around the "child_process" module that makes use of promises
 | ------------------ | :-------------: |
 | Full name          | child-process-promise |
 | Keywords           | child, process, promises |
-| # releases         | 1 |
-| # dependents       | 539 |
-| # downloads        | 21916719 |
+| # releases         | 0 |
+| # dependents       | 580 |
+| # downloads        | 17714736 |
 | # stars            | 16 |
 
 ## Links

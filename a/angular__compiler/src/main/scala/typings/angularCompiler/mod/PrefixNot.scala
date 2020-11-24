@@ -2,7 +2,7 @@ package typings.angularCompiler.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "PrefixNot")
 @js.native
@@ -14,4 +14,3 @@ class PrefixNot protected ()
     expression: typings.angularCompiler.astMod.AST
   ) = this()
 }
-

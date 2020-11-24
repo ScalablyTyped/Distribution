@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ## Using Embedded Records
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class EmbeddedRecordsMixin ()
   extends typings.emberData.mod.DS.EmbeddedRecordsMixin
-

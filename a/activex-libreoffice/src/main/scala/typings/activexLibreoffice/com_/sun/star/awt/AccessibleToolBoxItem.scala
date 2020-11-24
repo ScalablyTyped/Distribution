@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a tool box item.
@@ -40,8 +40,8 @@ trait AccessibleToolBoxItem
      with XAccessibleAction
      with XAccessibleText
      with XAccessibleValue
-
 object AccessibleToolBoxItem {
+  
   @scala.inline
   def apply(
     AccessibleActionCount: Double,
@@ -129,4 +129,3 @@ object AccessibleToolBoxItem {
     __obj.asInstanceOf[AccessibleToolBoxItem]
   }
 }
-

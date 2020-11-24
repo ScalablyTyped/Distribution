@@ -2,11 +2,12 @@ package typings.openui5.global.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.PopupHelper")
 @js.native
 object PopupHelper extends js.Object {
+  
   /**
     * This methods converts the percentage value to an absolute number based on the given base number.
     * @param sPercentage A percentage value in string format, for example "25%"
@@ -14,4 +15,3 @@ object PopupHelper extends js.Object {
     */
   def calcPercentageSize(sPercentage: String, fBaseSize: Double): Unit = js.native
 }
-

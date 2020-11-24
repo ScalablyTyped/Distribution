@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Pos")
 @js.native
 class ResourcePos protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.pos.custombatch
     * @desc Batches multiple POS-related calls in a single request.
@@ -41,6 +43,7 @@ class ResourcePos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPosCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.pos.delete
     * @desc Deletes a store for the given merchant.
@@ -67,6 +70,7 @@ class ResourcePos protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourcePosDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePosDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * content.pos.get
     * @desc Retrieves information about the given store.
@@ -97,6 +101,7 @@ class ResourcePos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPosStore]
   ): Unit = js.native
+  
   /**
     * content.pos.insert
     * @desc Creates a store for the given merchant.
@@ -127,6 +132,7 @@ class ResourcePos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPosStore]
   ): Unit = js.native
+  
   /**
     * content.pos.inventory
     * @desc Submit inventory for the given merchant.
@@ -157,6 +163,7 @@ class ResourcePos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPosInventoryResponse]
   ): Unit = js.native
+  
   /**
     * content.pos.list
     * @desc Lists the stores of the target merchant.
@@ -186,6 +193,7 @@ class ResourcePos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPosListResponse]
   ): Unit = js.native
+  
   /**
     * content.pos.sale
     * @desc Submit a sale event for the given merchant.
@@ -217,4 +225,3 @@ class ResourcePos protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPosSaleResponse]
   ): Unit = js.native
 }
-

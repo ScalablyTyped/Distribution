@@ -11,8 +11,8 @@ JQuery multiselect plugin based on Twitter Bootstrap.
 | Full name          | bootstrap-multiselect |
 | Keywords           | js, css, less, bootstrap, jquery, multiselect |
 | # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 526093 |
+| # dependents       | 14 |
+| # downloads        | 689433 |
 | # stars            | 2 |
 
 ## Links

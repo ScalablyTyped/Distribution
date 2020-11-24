@@ -8,11 +8,12 @@ import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-alert", "withAlert")
 @js.native
 object withAlert extends js.Object {
+  
   def apply[P /* <: Alert */](): js.Function1[
     /* c */ ComponentType[P], 
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
@@ -22,4 +23,3 @@ object withAlert extends js.Object {
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
   ] = js.native
 }
-

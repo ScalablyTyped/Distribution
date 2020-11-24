@@ -10,9 +10,9 @@ A sidebar component for React.
 | ------------------ | :-------------: |
 | Full name          | react-sidebar |
 | Keywords           | react, react-component, sidebar, drawer, navigation |
-| # releases         | 4 |
-| # dependents       | 44 |
-| # downloads        | 863305 |
+| # releases         | 0 |
+| # dependents       | 50 |
+| # downloads        | 1208774 |
 | # stars            | 4 |
 
 ## Links

@@ -4,15 +4,17 @@ import typings.officeJsPreview.Office.Context
 import typings.officeJsPreview.Office.IPromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Office")
 @js.native
 object ^ extends js.Object {
+  
   /** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch".
     * When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead.
     */
   var Promise: IPromiseConstructor = js.native
+  
   /**
     * Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.
     *
@@ -38,4 +40,3 @@ object ^ extends js.Object {
     */
   var context: Context = js.native
 }
-

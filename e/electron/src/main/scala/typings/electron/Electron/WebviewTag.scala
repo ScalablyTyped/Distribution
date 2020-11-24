@@ -141,114 +141,11 @@ import typings.std.Uint8Array
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebviewTag extends HTMLElement {
-  /**
-    * A `Boolean`. When this attribute is present the guest page will be allowed to
-    * open new windows. Popups are disabled by default.
-    */
-  var allowpopups: Boolean = js.native
-  /**
-    * A `String` which is a list of strings which specifies the blink features to be
-    * disabled separated by `,`. The full list of supported feature strings can be
-    * found in the RuntimeEnabledFeatures.json5 file.
-    */
-  var disableblinkfeatures: String = js.native
-  /**
-    * A `Boolean`. When this attribute is present the guest page will have web
-    * security disabled. Web security is enabled by default.
-    */
-  var disablewebsecurity: Boolean = js.native
-  /**
-    * A `String` which is a list of strings which specifies the blink features to be
-    * enabled separated by `,`. The full list of supported feature strings can be
-    * found in the RuntimeEnabledFeatures.json5 file.
-    */
-  var enableblinkfeatures: String = js.native
-  /**
-    * A `Boolean`. When this attribute is `false` the guest page in `webview` will not
-    * have access to the `remote` module. The remote module is available by default.
-    */
-  var enableremotemodule: Boolean = js.native
-  /**
-    * A `String` that sets the referrer URL for the guest page.
-    */
-  var httpreferrer: String = js.native
-  /**
-    * A `Boolean`. When this attribute is present the guest page in `webview` will
-    * have node integration and can use node APIs like `require` and `process` to
-    * access low level system resources. Node integration is disabled by default in
-    * the guest page.
-    */
-  var nodeintegration: Boolean = js.native
-  /**
-    * A `Boolean` for the experimental option for enabling NodeJS support in
-    * sub-frames such as iframes inside the `webview`. All your preloads will load for
-    * every iframe, you can use `process.isMainFrame` to determine if you are in the
-    * main frame or not. This option is disabled by default in the guest page.
-    */
-  var nodeintegrationinsubframes: Boolean = js.native
-  /**
-    * A `String` that sets the session used by the page. If `partition` starts with
-    * `persist:`, the page will use a persistent session available to all pages in the
-    * app with the same `partition`. if there is no `persist:` prefix, the page will
-    * use an in-memory session. By assigning the same `partition`, multiple pages can
-    * share the same session. If the `partition` is unset then default session of the
-    * app will be used.
-    *
-    * This value can only be modified before the first navigation, since the session
-    * of an active renderer process cannot change. Subsequent attempts to modify the
-    * value will fail with a DOM exception.
-    */
-  var partition: String = js.native
-  /**
-    * A `Boolean`. When this attribute is present the guest page in `webview` will be
-    * able to use browser plugins. Plugins are disabled by default.
-    */
-  var plugins: Boolean = js.native
-  /**
-    * A `String` that specifies a script that will be loaded before other scripts run
-    * in the guest page. The protocol of script's URL must be either `file:` or
-    * `asar:`, because it will be loaded by `require` in guest page under the hood.
-    *
-    * When the guest page doesn't have node integration this script will still have
-    * access to all Node APIs, but global objects injected by Node will be deleted
-    * after this script has finished executing.
-    *
-    * **Note:** This option will appear as `preloadURL` (not `preload`) in the
-    * `webPreferences` specified to the `will-attach-webview` event.
-    */
-  var preload: String = js.native
-  /**
-    * A `String` representing the visible URL. Writing to this attribute initiates
-    * top-level navigation.
-    *
-    * Assigning `src` its own value will reload the current page.
-    *
-    * The `src` attribute can also accept data URLs, such as `data:text/plain,Hello,
-    * world!`.
-    */
-  var src: String = js.native
-  /**
-    * A `String` that sets the user agent for the guest page before the page is
-    * navigated to. Once the page is loaded, use the `setUserAgent` method to change
-    * the user agent.
-    */
-  var useragent: String = js.native
-  /**
-    * A `String` which is a comma separated list of strings which specifies the web
-    * preferences to be set on the webview. The full list of supported preference
-    * strings can be found in BrowserWindow.
-    *
-    * The string follows the same format as the features string in `window.open`. A
-    * name by itself is given a `true` boolean value. A preference can be set to
-    * another value by including an `=`, followed by the value. Special values `yes`
-    * and `1` are interpreted as `true`, while `no` and `0` are interpreted as
-    * `false`.
-    */
-  var webpreferences: String = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -830,7 +727,7 @@ trait WebviewTag extends HTMLElement {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, _],
     useCapture: Boolean
   ): Unit = js.native
-  // Docs: http://electronjs.org/docs/api/webview-tag
+  // Docs: https://electronjs.org/docs/api/webview-tag
   /**
     * Fired when a load has committed. This includes navigation within the current
     * document as well as subframe document-level loads, but does not include
@@ -1384,18 +1281,28 @@ trait WebviewTag extends HTMLElement {
     listener: js.Function1[/* event */ WillNavigateEvent, Unit],
     useCapture: Boolean
   ): this.type = js.native
+  
+  /**
+    * A `Boolean`. When this attribute is present the guest page will be allowed to
+    * open new windows. Popups are disabled by default.
+    */
+  var allowpopups: Boolean = js.native
+  
   /**
     * Whether the guest page can go back.
     */
   def canGoBack(): Boolean = js.native
+  
   /**
     * Whether the guest page can go forward.
     */
   def canGoForward(): Boolean = js.native
+  
   /**
     * Whether the guest page can go to `offset`.
     */
   def canGoToOffset(offset: Double): Boolean = js.native
+  
   /**
     * Resolves with a NativeImage
     *
@@ -1404,30 +1311,63 @@ trait WebviewTag extends HTMLElement {
     */
   def capturePage(): js.Promise[NativeImage_] = js.native
   def capturePage(rect: Rectangle): js.Promise[NativeImage_] = js.native
+  
   /**
     * Clears the navigation history.
     */
   def clearHistory(): Unit = js.native
+  
   /**
     * Closes the DevTools window of guest page.
     */
   def closeDevTools(): Unit = js.native
+  
   /**
     * Executes editing command `copy` in page.
     */
   def copy(): Unit = js.native
+  
   /**
     * Executes editing command `cut` in page.
     */
   def cut(): Unit = js.native
+  
   /**
     * Executes editing command `delete` in page.
     */
   def delete(): Unit = js.native
+  
+  /**
+    * A `String` which is a list of strings which specifies the blink features to be
+    * disabled separated by `,`. The full list of supported feature strings can be
+    * found in the RuntimeEnabledFeatures.json5 file.
+    */
+  var disableblinkfeatures: String = js.native
+  
+  /**
+    * A `Boolean`. When this attribute is present the guest page will have web
+    * security disabled. Web security is enabled by default.
+    */
+  var disablewebsecurity: Boolean = js.native
+  
   /**
     * Initiates a download of the resource at `url` without navigating.
     */
   def downloadURL(url: String): Unit = js.native
+  
+  /**
+    * A `String` which is a list of strings which specifies the blink features to be
+    * enabled separated by `,`. The full list of supported feature strings can be
+    * found in the RuntimeEnabledFeatures.json5 file.
+    */
+  var enableblinkfeatures: String = js.native
+  
+  /**
+    * A `Boolean`. When this attribute is `false` the guest page in `webview` will not
+    * have access to the `remote` module. The remote module is available by default.
+    */
+  var enableremotemodule: Boolean = js.native
+  
   /**
     * A promise that resolves with the result of the executed code or is rejected if
     * the result of the code is a rejected promise.
@@ -1438,6 +1378,7 @@ trait WebviewTag extends HTMLElement {
     */
   def executeJavaScript(code: String): js.Promise[_] = js.native
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
+  
   /**
     * The request id used for the request.
     *
@@ -1446,46 +1387,62 @@ trait WebviewTag extends HTMLElement {
     */
   def findInPage(text: String): Double = js.native
   def findInPage(text: String, options: FindInPageOptions): Double = js.native
+  
   /**
     * The title of guest page.
     */
   def getTitle(): String = js.native
+  
   /**
     * The URL of guest page.
     */
   def getURL(): String = js.native
+  
   /**
     * The user agent for guest page.
     */
   def getUserAgent(): String = js.native
+  
   /**
     * The WebContents ID of this `webview`.
     */
   def getWebContentsId(): Double = js.native
+  
   /**
     * the current zoom factor.
     */
   def getZoomFactor(): Double = js.native
+  
   /**
     * the current zoom level.
     */
   def getZoomLevel(): Double = js.native
+  
   /**
     * Makes the guest page go back.
     */
   def goBack(): Unit = js.native
+  
   /**
     * Makes the guest page go forward.
     */
   def goForward(): Unit = js.native
+  
   /**
     * Navigates to the specified absolute index.
     */
   def goToIndex(index: Double): Unit = js.native
+  
   /**
     * Navigates to the specified offset from the "current entry".
     */
   def goToOffset(offset: Double): Unit = js.native
+  
+  /**
+    * A `String` that sets the referrer URL for the guest page.
+    */
+  var httpreferrer: String = js.native
+  
   /**
     * A promise that resolves with a key for the inserted CSS that can later be used
     * to remove the CSS via `<webview>.removeInsertedCSS(key)`.
@@ -1494,56 +1451,69 @@ trait WebviewTag extends HTMLElement {
     * stylesheet.
     */
   def insertCSS(css: String): js.Promise[String] = js.native
+  
   /**
     * Inserts `text` to the focused element.
     */
   def insertText(text: String): js.Promise[Unit] = js.native
+  
   /**
     * Starts inspecting element at position (`x`, `y`) of guest page.
     */
   def inspectElement(x: Double, y: Double): Unit = js.native
+  
   /**
     * Opens the DevTools for the service worker context present in the guest page.
     */
   def inspectServiceWorker(): Unit = js.native
+  
   /**
     * Opens the DevTools for the shared worker context present in the guest page.
     */
   def inspectSharedWorker(): Unit = js.native
+  
   /**
     * Whether guest page has been muted.
     */
   def isAudioMuted(): Boolean = js.native
+  
   /**
     * Whether the renderer process has crashed.
     */
   def isCrashed(): Boolean = js.native
+  
   /**
     * Whether audio is currently playing.
     */
   def isCurrentlyAudible(): Boolean = js.native
+  
   /**
     * Whether DevTools window of guest page is focused.
     */
   def isDevToolsFocused(): Boolean = js.native
+  
   /**
     * Whether guest page has a DevTools window attached.
     */
   def isDevToolsOpened(): Boolean = js.native
+  
   /**
     * Whether guest page is still loading resources.
     */
   def isLoading(): Boolean = js.native
+  
   /**
     * Whether the main frame (and not just iframes or frames within it) is still
     * loading.
     */
   def isLoadingMainFrame(): Boolean = js.native
+  
   /**
     * Whether the guest page is waiting for a first-response for the main resource of
     * the page.
     */
   def isWaitingForResponse(): Boolean = js.native
+  
   /**
     * The promise will resolve when the page has finished loading (see
     * `did-finish-load`), and rejects if the page fails to load (see `did-fail-load`).
@@ -1553,41 +1523,100 @@ trait WebviewTag extends HTMLElement {
     */
   def loadURL(url: String): js.Promise[Unit] = js.native
   def loadURL(url: String, options: LoadURLOptions): js.Promise[Unit] = js.native
+  
+  /**
+    * A `Boolean`. When this attribute is present the guest page in `webview` will
+    * have node integration and can use node APIs like `require` and `process` to
+    * access low level system resources. Node integration is disabled by default in
+    * the guest page.
+    */
+  var nodeintegration: Boolean = js.native
+  
+  /**
+    * A `Boolean` for the experimental option for enabling NodeJS support in
+    * sub-frames such as iframes inside the `webview`. All your preloads will load for
+    * every iframe, you can use `process.isMainFrame` to determine if you are in the
+    * main frame or not. This option is disabled by default in the guest page.
+    */
+  var nodeintegrationinsubframes: Boolean = js.native
+  
   /**
     * Opens a DevTools window for guest page.
     */
   def openDevTools(): Unit = js.native
+  
+  /**
+    * A `String` that sets the session used by the page. If `partition` starts with
+    * `persist:`, the page will use a persistent session available to all pages in the
+    * app with the same `partition`. if there is no `persist:` prefix, the page will
+    * use an in-memory session. By assigning the same `partition`, multiple pages can
+    * share the same session. If the `partition` is unset then default session of the
+    * app will be used.
+    *
+    * This value can only be modified before the first navigation, since the session
+    * of an active renderer process cannot change. Subsequent attempts to modify the
+    * value will fail with a DOM exception.
+    */
+  var partition: String = js.native
+  
   /**
     * Executes editing command `paste` in page.
     */
   def paste(): Unit = js.native
+  
   /**
     * Executes editing command `pasteAndMatchStyle` in page.
     */
   def pasteAndMatchStyle(): Unit = js.native
+  
+  /**
+    * A `Boolean`. When this attribute is present the guest page in `webview` will be
+    * able to use browser plugins. Plugins are disabled by default.
+    */
+  var plugins: Boolean = js.native
+  
+  /**
+    * A `String` that specifies a script that will be loaded before other scripts run
+    * in the guest page. The protocol of script's URL must be either `file:` or
+    * `asar:`, because it will be loaded by `require` in guest page under the hood.
+    *
+    * When the guest page doesn't have node integration this script will still have
+    * access to all Node APIs, but global objects injected by Node will be deleted
+    * after this script has finished executing.
+    *
+    * **Note:** This option will appear as `preloadURL` (not `preload`) in the
+    * `webPreferences` specified to the `will-attach-webview` event.
+    */
+  var preload: String = js.native
+  
   /**
     * Prints `webview`'s web page. Same as `webContents.print([options])`.
     */
   def print(): js.Promise[Unit] = js.native
   def print(options: WebviewTagPrintOptions): js.Promise[Unit] = js.native
+  
   /**
     * Resolves with the generated PDF data.
     * 
   Prints `webview`'s web page as PDF, Same as `webContents.printToPDF(options)`.
     */
   def printToPDF(options: PrintToPDFOptions): js.Promise[Uint8Array] = js.native
+  
   /**
     * Executes editing command `redo` in page.
     */
   def redo(): Unit = js.native
+  
   /**
     * Reloads the guest page.
     */
   def reload(): Unit = js.native
+  
   /**
     * Reloads the guest page and ignores cache.
     */
   def reloadIgnoringCache(): Unit = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -2475,6 +2504,7 @@ trait WebviewTag extends HTMLElement {
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_willnavigate(event: `will-navigate`, listener: js.Function1[/* event */ WillNavigateEvent, Unit]): this.type = js.native
+  
   /**
     * Resolves if the removal was successful.
     *
@@ -2482,18 +2512,22 @@ trait WebviewTag extends HTMLElement {
     * by its key, which is returned from `<webview>.insertCSS(css)`.
     */
   def removeInsertedCSS(key: String): js.Promise[Unit] = js.native
+  
   /**
     * Executes editing command `replace` in page.
     */
   def replace(text: String): Unit = js.native
+  
   /**
     * Executes editing command `replaceMisspelling` in page.
     */
   def replaceMisspelling(text: String): Unit = js.native
+  
   /**
     * Executes editing command `selectAll` in page.
     */
   def selectAll(): Unit = js.native
+  
   /**
     * Send an asynchronous message to renderer process via `channel`, you can also
     * send arbitrary arguments. The renderer process can handle the message by
@@ -2502,6 +2536,7 @@ trait WebviewTag extends HTMLElement {
   See webContents.send for examples.
     */
   def send(channel: String, args: js.Any*): js.Promise[Unit] = js.native
+  
   def sendInputEvent(event: KeyboardInputEvent): js.Promise[Unit] = js.native
   /**
     * Sends an input `event` to the page.
@@ -2510,23 +2545,28 @@ trait WebviewTag extends HTMLElement {
     */
   def sendInputEvent(event: MouseInputEvent): js.Promise[Unit] = js.native
   def sendInputEvent(event: MouseWheelInputEvent): js.Promise[Unit] = js.native
+  
   /**
     * Set guest page muted.
     */
   def setAudioMuted(muted: Boolean): Unit = js.native
+  
   /**
     * Overrides the user agent for the guest page.
     */
   def setUserAgent(userAgent: String): Unit = js.native
+  
   /**
     * Sets the maximum and minimum pinch-to-zoom level.
     */
   def setVisualZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): js.Promise[Unit] = js.native
+  
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.
     */
   def setZoomFactor(factor: Double): Unit = js.native
+  
   /**
     * Changes the zoom level to the specified level. The original size is 0 and each
     * increment above or below represents zooming 20% larger or smaller to default
@@ -2534,16 +2574,30 @@ trait WebviewTag extends HTMLElement {
     * `scale := 1.2 ^ level`.
     */
   def setZoomLevel(level: Double): Unit = js.native
+  
   /**
     * Shows pop-up dictionary that searches the selected word on the page.
     *
     * @platform darwin
     */
   def showDefinitionForSelection(): Unit = js.native
+  
+  /**
+    * A `String` representing the visible URL. Writing to this attribute initiates
+    * top-level navigation.
+    *
+    * Assigning `src` its own value will reload the current page.
+    *
+    * The `src` attribute can also accept data URLs, such as `data:text/plain,Hello,
+    * world!`.
+    */
+  var src: String = js.native
+  
   /**
     * Stops any pending navigation.
     */
   def stop(): Unit = js.native
+  
   @JSName("stopFindInPage")
   def stopFindInPage_activateSelection(action: activateSelection): Unit = js.native
   /**
@@ -2553,13 +2607,34 @@ trait WebviewTag extends HTMLElement {
   def stopFindInPage_clearSelection(action: clearSelection): Unit = js.native
   @JSName("stopFindInPage")
   def stopFindInPage_keepSelection(action: keepSelection): Unit = js.native
+  
   /**
     * Executes editing command `undo` in page.
     */
   def undo(): Unit = js.native
+  
   /**
     * Executes editing command `unselect` in page.
     */
   def unselect(): Unit = js.native
+  
+  /**
+    * A `String` that sets the user agent for the guest page before the page is
+    * navigated to. Once the page is loaded, use the `setUserAgent` method to change
+    * the user agent.
+    */
+  var useragent: String = js.native
+  
+  /**
+    * A `String` which is a comma separated list of strings which specifies the web
+    * preferences to be set on the webview. The full list of supported preference
+    * strings can be found in BrowserWindow.
+    *
+    * The string follows the same format as the features string in `window.open`. A
+    * name by itself is given a `true` boolean value. A preference can be set to
+    * another value by including an `=`, followed by the value. Special values `yes`
+    * and `1` are interpreted as `true`, while `no` and `0` are interpreted as
+    * `false`.
+    */
+  var webpreferences: String = js.native
 }
-

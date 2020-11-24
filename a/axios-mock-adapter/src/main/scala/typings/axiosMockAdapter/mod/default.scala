@@ -3,7 +3,7 @@ package typings.axiosMockAdapter.mod
 import typings.axios.mod.AxiosInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("axios-mock-adapter", JSImport.Default)
 @js.native
@@ -11,4 +11,3 @@ class default protected () extends MockAdapter {
   def this(axiosInstance: AxiosInstance) = this()
   def this(axiosInstance: AxiosInstance, options: MockAdapterOptions) = this()
 }
-

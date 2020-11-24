@@ -1,20 +1,18 @@
 package typings.node.childProcessMod
 
 import typings.node.Buffer
-import typings.node.anon.Stderr
-import typings.node.anon.StderrStdout
-import typings.node.anon.Stdout
 import typings.node.anon.encodingBufferEncodingExe
 import typings.node.anon.encodingbuffernullExecOpt
 import typings.node.fsMod.BaseEncodingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
 @JSImport("child_process", "exec")
 @js.native
 object exec extends js.Object {
+  
   // no `options` definitely means stdout/stderr are `string`.
   // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def apply(command: String): ChildProcess = js.native
@@ -81,15 +79,4 @@ object exec extends js.Object {
     options: ExecOptions,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
-  @JSName("__promisify__")
-  def promisify(command: String): PromiseWithChild[Stderr] = js.native
-  @JSName("__promisify__")
-  def promisify(command: String, options: BaseEncodingOptions with ExecOptions): PromiseWithChild[StderrStdout] = js.native
-  @JSName("__promisify__")
-  def promisify(command: String, options: encodingBufferEncodingExe): PromiseWithChild[Stderr] = js.native
-  @JSName("__promisify__")
-  def promisify(command: String, options: encodingbuffernullExecOpt): PromiseWithChild[Stdout] = js.native
-  @JSName("__promisify__")
-  def promisify(command: String, options: ExecOptions): PromiseWithChild[Stderr] = js.native
 }
-

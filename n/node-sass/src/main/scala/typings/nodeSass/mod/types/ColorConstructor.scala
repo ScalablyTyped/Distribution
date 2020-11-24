@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorConstructor
@@ -41,6 +41,7 @@ Instantiable1[/* hexN */ Double, Color]
   */
 Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
      with Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, Color] {
+  
   /**
     * Constructs a new Sass color given a 4 byte number. Do not invoke with the `new` keyword.
     *
@@ -74,4 +75,3 @@ Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
   def apply(r: Double, g: Double, b: Double): Color = js.native
   def apply(r: Double, g: Double, b: Double, a: Double): Color = js.native
 }
-

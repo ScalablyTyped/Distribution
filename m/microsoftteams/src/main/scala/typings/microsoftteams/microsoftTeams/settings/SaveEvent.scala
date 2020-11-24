@@ -2,19 +2,20 @@ package typings.microsoftteams.microsoftTeams.settings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SaveEvent extends js.Object {
+  
   /**
     * Indicates that creation of the underlying resource failed and that the settings cannot be saved.
     * @param reason Specifies a reason for the failure. If provided, this string is displayed to the user; otherwise a generic error is displayed.
     */
   def notifyFailure(): Unit = js.native
   def notifyFailure(reason: String): Unit = js.native
+  
   /**
     * Indicates that the underlying resource has been created and the settings can be saved.
     */
   def notifySuccess(): Unit = js.native
 }
-

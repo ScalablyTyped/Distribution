@@ -3,7 +3,7 @@ package typings.babylonjs.miscIndexMod
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "MeshExploder")
 @js.native
@@ -17,4 +17,3 @@ class MeshExploder protected ()
   def this(meshes: js.Array[Mesh]) = this()
   def this(meshes: js.Array[Mesh], centerMesh: Mesh) = this()
 }
-

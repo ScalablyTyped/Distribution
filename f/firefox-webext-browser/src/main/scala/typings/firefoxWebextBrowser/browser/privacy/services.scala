@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.browser.privacy
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use the `browser.privacy` API to control usage of the features in the browser that can affect a user's privacy.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.privacy.services")
 @js.native
 object services extends js.Object
-

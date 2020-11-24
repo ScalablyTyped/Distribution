@@ -3,11 +3,12 @@ package typings.rsvp.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsvp", "hash")
 @js.native
 object hash extends js.Object {
+  
   def apply[T](
     `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
@@ -20,4 +21,3 @@ object hash extends js.Object {
     label: String
   ): typings.rsvp.mod.RSVP.Promise[T] = js.native
 }
-

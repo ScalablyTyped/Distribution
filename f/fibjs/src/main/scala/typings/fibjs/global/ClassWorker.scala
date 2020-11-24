@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Worker")
 @js.native
@@ -20,4 +20,3 @@ class ClassWorker protected ()
   def this(path: String) = this()
   def this(path: String, opts: js.Object) = this()
 }
-

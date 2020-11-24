@@ -2,9 +2,61 @@ package typings.pendoIoBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pendoIoBrowserStrings {
+  
+  @scala.inline
+  def No: No = "No".asInstanceOf[No]
+  
+  @scala.inline
+  def Yes: Yes = "Yes".asInstanceOf[Yes]
+  
+  @scala.inline
+  def api: api = "api".asInstanceOf[api]
+  
+  @scala.inline
+  def automatic: automatic = "automatic".asInstanceOf[automatic]
+  
+  @scala.inline
+  def badge: badge = "badge".asInstanceOf[badge]
+  
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  
+  @scala.inline
+  def desktop: desktop = "desktop".asInstanceOf[desktop]
+  
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @scala.inline
+  def dom: dom = "dom".asInstanceOf[dom]
+  
+  @scala.inline
+  def draft: draft = "draft".asInstanceOf[draft]
+  
+  @scala.inline
+  def element: element = "element".asInstanceOf[element]
+  
+  @scala.inline
+  def launcher: launcher = "launcher".asInstanceOf[launcher]
+  
+  @scala.inline
+  def mobile: mobile = "mobile".asInstanceOf[mobile]
+  
+  @scala.inline
+  def programatic: programatic = "programatic".asInstanceOf[programatic]
+  
+  @scala.inline
+  def published: published = "published".asInstanceOf[published]
+  
+  @scala.inline
+  def reload: reload = "reload".asInstanceOf[reload]
+  
+  @scala.inline
+  def staged: staged = "staged".asInstanceOf[staged]
+  
   @js.native
   sealed trait No extends js.Object
   
@@ -55,40 +107,4 @@ object pendoIoBrowserStrings {
   
   @js.native
   sealed trait staged extends js.Object
-  
-  @scala.inline
-  def No: No = "No".asInstanceOf[No]
-  @scala.inline
-  def Yes: Yes = "Yes".asInstanceOf[Yes]
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def automatic: automatic = "automatic".asInstanceOf[automatic]
-  @scala.inline
-  def badge: badge = "badge".asInstanceOf[badge]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def desktop: desktop = "desktop".asInstanceOf[desktop]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def dom: dom = "dom".asInstanceOf[dom]
-  @scala.inline
-  def draft: draft = "draft".asInstanceOf[draft]
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def launcher: launcher = "launcher".asInstanceOf[launcher]
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
-  @scala.inline
-  def programatic: programatic = "programatic".asInstanceOf[programatic]
-  @scala.inline
-  def published: published = "published".asInstanceOf[published]
-  @scala.inline
-  def reload: reload = "reload".asInstanceOf[reload]
-  @scala.inline
-  def staged: staged = "staged".asInstanceOf[staged]
 }
-

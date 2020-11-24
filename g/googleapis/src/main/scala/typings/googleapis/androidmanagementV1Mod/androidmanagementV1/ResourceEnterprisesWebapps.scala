@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Webapps")
 @js.native
 class ResourceEnterprisesWebapps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.enterprises.webApps.create
     * @desc Creates a web app.
@@ -42,6 +44,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.webApps.delete
     * @desc Deletes a web app.
@@ -70,6 +73,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.webApps.get
     * @desc Gets a web app.
@@ -98,6 +102,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.webApps.list
     * @desc Lists web apps for a given enterprise.
@@ -131,6 +136,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWebAppsResponse]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.webApps.patch
     * @desc Updates a web app.
@@ -162,4 +168,3 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
 }
-

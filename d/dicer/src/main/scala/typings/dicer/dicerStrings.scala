@@ -2,9 +2,49 @@ package typings.dicer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dicerStrings {
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def finish: finish = "finish".asInstanceOf[finish]
+  
+  @scala.inline
+  def header: header = "header".asInstanceOf[header]
+  
+  @scala.inline
+  def part: part = "part".asInstanceOf[part]
+  
+  @scala.inline
+  def pipe: pipe = "pipe".asInstanceOf[pipe]
+  
+  @scala.inline
+  def preamble: preamble = "preamble".asInstanceOf[preamble]
+  
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  
+  @scala.inline
+  def trailer: trailer = "trailer".asInstanceOf[trailer]
+  
+  @scala.inline
+  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  
   @js.native
   sealed trait close extends js.Object
   
@@ -43,32 +83,4 @@ object dicerStrings {
   
   @js.native
   sealed trait unpipe extends js.Object
-  
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def part: part = "part".asInstanceOf[part]
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
-  @scala.inline
-  def preamble: preamble = "preamble".asInstanceOf[preamble]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def trailer: trailer = "trailer".asInstanceOf[trailer]
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }
-

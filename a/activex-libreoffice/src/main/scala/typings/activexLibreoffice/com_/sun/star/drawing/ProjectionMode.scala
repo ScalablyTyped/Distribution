@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** defines whether the 3D objects are to be drawn in perspective or parallel projection. */
 /* Rewritten from type alias, can be one of: 
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait ProjectionMode extends js.Object
-
 object ProjectionMode {
+  
   /**
     * the 3D objects are drawn in the parallel projection.
     *
@@ -21,8 +21,8 @@ object ProjectionMode {
     */
   @scala.inline
   def PARALLEL: `0` = 0.asInstanceOf[`0`]
+  
   /** the 3D objects are drawn in the perspective projection. */
   @scala.inline
   def PERSPECTIVE: `1` = 1.asInstanceOf[`1`]
 }
-

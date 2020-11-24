@@ -7,15 +7,17 @@ import typings.reactNative.reactNativeStrings.register
 import typings.reactNative.reactNativeStrings.registrationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PushNotificationIOSStatic extends js.Object {
+  
   /**
     * iOS fetch results that best describe the result of a finished remote notification handler.
     * For a list of possible values, see `PushNotificationIOS.FetchResult`.
     */
   var FetchResult: typings.reactNative.mod.FetchResult = js.native
+  
   /**
     * Unregister for all remote notifications received via Apple Push
     * Notification service.
@@ -27,6 +29,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * re-register.
     */
   def abandonPermissions(): Unit = js.native
+  
   @JSName("addEventListener")
   def addEventListener_localNotification(`type`: localNotification, handler: js.Function1[/* notification */ PushNotification, Unit]): Unit = js.native
   /**
@@ -58,15 +61,18 @@ trait PushNotificationIOSStatic extends js.Object {
     */
   @JSName("addEventListener")
   def addEventListener_registrationError(`type`: registrationError, handler: js.Function1[/* error */ Code, Unit]): Unit = js.native
+  
   /**
     * Cancels all scheduled localNotifications
     */
   def cancelAllLocalNotifications(): Unit = js.native
+  
   /**
     * Cancel local notifications.
     * Optionally restricts the set of canceled notifications to those notifications whose userInfo fields match the corresponding fields in the userInfo argument.
     */
   def cancelLocalNotifications(userInfo: js.Object): Unit = js.native
+  
   /**
     * See what push permissions are currently enabled. `callback` will be
     * invoked with a `permissions` object:
@@ -76,19 +82,23 @@ trait PushNotificationIOSStatic extends js.Object {
     *  - `sound` :boolean
     */
   def checkPermissions(callback: js.Function1[/* permissions */ PushNotificationPermissions, Unit]): Unit = js.native
+  
   /**
     * Gets the current badge number for the app icon on the home screen
     */
   def getApplicationIconBadgeNumber(callback: js.Function1[/* badge */ Double, Unit]): Unit = js.native
+  
   /**
     * This method returns a promise that resolves to either the notification
     * object if the app was launched by a push notification, or `null` otherwise.
     */
   def getInitialNotification(): js.Promise[PushNotification | Null] = js.native
+  
   /**
     * Gets the local notifications that are currently scheduled.
     */
   def getScheduledLocalNotifications(callback: js.Function1[/* notifications */ js.Array[ScheduleLocalNotificationDetails], Unit]): Unit = js.native
+  
   /**
     * Schedules the localNotification for immediate presentation.
     * details is an object containing:
@@ -100,6 +110,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * applicationIconBadgeNumber (optional) : The number to display as the app's icon badge. The default value of this property is 0, which means that no badge is displayed.
     */
   def presentLocalNotification(details: PresentLocalNotificationDetails): Unit = js.native
+  
   /**
     * Removes the event listener. Do this in `componentWillUnmount` to prevent
     * memory leaks
@@ -111,6 +122,7 @@ trait PushNotificationIOSStatic extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Requests all notification permissions from iOS, prompting the user's
     * dialog box.
@@ -124,6 +136,7 @@ trait PushNotificationIOSStatic extends js.Object {
     */
   @JSName("requestPermissions")
   def requestPermissions_Promise(): js.Promise[PushNotificationPermissions] = js.native
+  
   /**
     * Schedules the localNotification for future presentation.
     * details is an object containing:
@@ -136,9 +149,9 @@ trait PushNotificationIOSStatic extends js.Object {
     * applicationIconBadgeNumber (optional) : The number to display as the app's icon badge. Setting the number to 0 removes the icon badge.
     */
   def scheduleLocalNotification(details: ScheduleLocalNotificationDetails): Unit = js.native
+  
   /**
     * Sets the badge number for the app icon on the home screen
     */
   def setApplicationIconBadgeNumber(number: Double): Unit = js.native
 }
-

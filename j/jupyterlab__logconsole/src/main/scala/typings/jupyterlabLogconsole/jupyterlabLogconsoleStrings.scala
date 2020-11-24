@@ -5,9 +5,52 @@ import typings.jupyterlabLogconsole.tokensMod.IContentChange
 import typings.jupyterlabLogconsole.tokensMod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabLogconsoleStrings {
+  
+  @scala.inline
+  def append: append = "append".asInstanceOf[append]
+  
+  @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  
+  @scala.inline
+  def critical: critical = "critical".asInstanceOf[critical]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def level: level = "level".asInstanceOf[level]
+  
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @scala.inline
+  def output: output = "output".asInstanceOf[output]
+  
+  @scala.inline
+  def rendermime: rendermime = "rendermime".asInstanceOf[rendermime]
+  
+  @scala.inline
+  def source: source = "source".asInstanceOf[source]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait append extends IContentChange
   
@@ -59,34 +102,4 @@ object jupyterlabLogconsoleStrings {
   sealed trait warning
     extends FullLogLevel
        with LogLevel
-  
-  @scala.inline
-  def append: append = "append".asInstanceOf[append]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def critical: critical = "critical".asInstanceOf[critical]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def level: level = "level".asInstanceOf[level]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def output: output = "output".asInstanceOf[output]
-  @scala.inline
-  def rendermime: rendermime = "rendermime".asInstanceOf[rendermime]
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

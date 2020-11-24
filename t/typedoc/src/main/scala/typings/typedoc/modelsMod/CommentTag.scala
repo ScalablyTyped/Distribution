@@ -2,7 +2,7 @@ package typings.typedoc.modelsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/models", "CommentTag")
 @js.native
@@ -13,4 +13,3 @@ class CommentTag protected ()
   def this(tagName: String, paramName: js.UndefOr[scala.Nothing], text: String) = this()
   def this(tagName: String, paramName: String, text: String) = this()
 }
-

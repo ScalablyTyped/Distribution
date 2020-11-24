@@ -10,9 +10,9 @@ Run multiple promise-returning & async functions with limited concurrency
 | ------------------ | :-------------: |
 | Full name          | p-limit |
 | Keywords           | promise, limit, limited, concurrency, throttle, throat, rate, batch, ratelimit, task, queue, async, await, promises, bluebird |
-| # releases         | 8 |
-| # dependents       | 253 |
-| # downloads        | 746309442 |
+| # releases         | 9 |
+| # dependents       | 399 |
+| # downloads        | 1197484331 |
 | # stars            | 5 |
 
 ## Links

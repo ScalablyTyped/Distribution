@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartDataLabelPosition extends js.Object
-
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartDataLabelPosition")
 @js.native
 object ChartDataLabelPosition extends js.Object {
+  
   @js.native
   sealed trait bestFit extends ChartDataLabelPosition
   
@@ -48,6 +48,4 @@ object ChartDataLabelPosition extends js.Object {
   
   @js.native
   sealed trait top extends ChartDataLabelPosition
-  
 }
-

@@ -5,9 +5,34 @@ import typings.typesettable.writerMod.IXAlign
 import typings.typesettable.writerMod.IYAlign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesettableStrings {
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
   @js.native
   sealed trait bottom extends IYAlign
   
@@ -33,22 +58,4 @@ object typesettableStrings {
   
   @js.native
   sealed trait top extends IYAlign
-  
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
 }
-

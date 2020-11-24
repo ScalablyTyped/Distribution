@@ -11,8 +11,8 @@ Twilio Common JavaScript library
 | Full name          | twilio-common |
 | Keywords           | twilio, library, javascript |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 94347 |
+| # dependents       | 3 |
+| # downloads        | 94996 |
 | # stars            | 0 |
 
 ## Links

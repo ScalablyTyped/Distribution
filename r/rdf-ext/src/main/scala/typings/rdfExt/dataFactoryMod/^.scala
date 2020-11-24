@@ -20,37 +20,47 @@ import typings.rdfJs.mod.QuadPredicate
 import typings.rdfJs.mod.QuadSubject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-unnecessary-class
 @JSImport("rdf-ext/lib/DataFactory", JSImport.Namespace)
 @js.native
 class ^ () extends DataFactory[QuadExt, Quad]
-
 @JSImport("rdf-ext/lib/DataFactory", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var defaults: BlankNode = js.native
-  var factory: TypeofDataFactoryExt = js.native
+  
   def blankNode(): BlankNodeExt = js.native
   def blankNode(value: String): BlankNodeExt = js.native
+  
   def dataset(): DatasetExt = js.native
   def dataset(quads: js.Array[Quad]): DatasetExt = js.native
   @JSName("dataset")
   def dataset_graph(quads: js.UndefOr[scala.Nothing], graph: PropType[QuadExt, graph]): DatasetExt = js.native
   @JSName("dataset")
   def dataset_graph(quads: js.Array[Quad], graph: PropType[QuadExt, graph]): DatasetExt = js.native
+  
   def defaultGraph(): DefaultGraphExt = js.native
+  
+  var defaults: BlankNode = js.native
+  
+  var factory: TypeofDataFactoryExt = js.native
+  
   def graph(): DatasetExt = js.native
   def graph(quads: js.Any): DatasetExt = js.native
+  
   def literal(value: String): LiteralExt = js.native
   def literal(value: String, languageOrDatatype: String): LiteralExt = js.native
   def literal(value: String, languageOrDatatype: NamedNode[String]): LiteralExt = js.native
-  def namedNode(value: String): NamedNodeExt = js.native
+  
+  def namedNode[Iri /* <: String */](value: Iri): NamedNodeExt[Iri] = js.native
+  
   def prefixMap(prefixes: Prefixes): typings.rdfExt.prefixMapMod.^ = js.native
+  
   def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = js.native
   def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): QuadExt = js.native
+  
   def triple(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = js.native
+  
   def variable(value: String): VariableExt = js.native
 }
-

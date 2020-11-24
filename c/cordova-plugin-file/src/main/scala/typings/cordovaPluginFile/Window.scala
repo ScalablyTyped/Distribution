@@ -2,12 +2,15 @@ package typings.cordovaPluginFile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Window extends js.Object {
+  
   var PERSISTENT: Double = js.native
+  
   var TEMPORARY: Double = js.native
+  
   /**
     * Requests a filesystem in which to store application data.
     * @param type              Whether the filesystem requested should be persistent, as defined above. Use one of TEMPORARY or PERSISTENT.
@@ -26,6 +29,7 @@ trait Window extends js.Object {
     successCallback: js.Function1[/* fileSystem */ FileSystem, Unit],
     errorCallback: js.Function1[/* fileError */ FileError, Unit]
   ): Unit = js.native
+  
   /**
     * Look up file system Entry referred to by local URI.
     * @param string uri       URI referring to a local file or directory
@@ -38,6 +42,7 @@ trait Window extends js.Object {
     successCallback: js.Function1[/* entry */ Entry, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
   /**
     * Look up file system Entry referred to by local URL.
     * @param string url       URL referring to a local file or directory
@@ -51,4 +56,3 @@ trait Window extends js.Object {
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
 }
-

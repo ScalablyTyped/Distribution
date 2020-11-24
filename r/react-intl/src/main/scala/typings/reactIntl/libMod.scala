@@ -1,132 +1,191 @@
 package typings.reactIntl
 
+import typings.formatjsIntl.mod.IntlError
+import typings.formatjsIntl.srcCreateIntlMod.CreateIntlFn
+import typings.formatjsIntl.srcErrorMod.IntlErrorCode
+import typings.formatjsIntl.srcTypesMod.FormatDateOptions
+import typings.formatjsIntl.srcTypesMod.FormatNumberOptions
+import typings.formatjsIntl.srcTypesMod.IntlCache
+import typings.formatjsIntl.srcTypesMod.MessageDescriptor
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.PropsWithChildren
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.Provider
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
+import typings.react.mod.ValidationMap
+import typings.react.mod.WeakValidationMap
 import typings.reactIntl.anon.Children
 import typings.reactIntl.anon.DateTimeFormatOptionsCust
-import typings.reactIntl.anon.DateTimeFormatOptionsCustChildren
 import typings.reactIntl.anon.DisplayNamesOptionsvalues
 import typings.reactIntl.anon.IntlListFormatOptionsvalu
-import typings.reactIntl.anon.PartialPickPropschildreno
-import typings.reactIntl.anon.PartialState
+import typings.reactIntl.anon.NumberFormatOptionsCustom
+import typings.reactIntl.anon.PartialStateCache
 import typings.reactIntl.anon.PartialStateCurrentValueInSeconds
-import typings.reactIntl.anon.PickIntlConfigformatsmess
-import typings.reactIntl.anon.PickPropschildrenotherzer
+import typings.reactIntl.anon.PickIntlConfigtimeZonefor
 import typings.reactIntl.anon.PickPropsunitvalue
-import typings.reactIntl.anon.TagName
-import typings.reactIntl.anon.UnifiedNumberFormatOption
-import typings.reactIntl.anon.Values
-import typings.reactIntl.anon.WeakValidationMapPickProp
-import typings.reactIntl.anon.WrappedComponent
+import typings.reactIntl.anon.Value
 import typings.reactIntl.anon.WrappedComponentComponentType
-import typings.reactIntl.htmlMessageMod.default
+import typings.reactIntl.dateTimeRangeMod.Props
 import typings.reactIntl.injectIntlMod.Opts
 import typings.reactIntl.injectIntlMod.WithIntlProps
 import typings.reactIntl.injectIntlMod.WrappedComponentProps
+import typings.reactIntl.messageMod.default
 import typings.reactIntl.providerMod.OptionalIntlConfig
 import typings.reactIntl.reactIntlBooleans.`false`
 import typings.reactIntl.reactIntlBooleans.`true`
-import typings.reactIntl.relativeMod.Props
 import typings.reactIntl.relativeMod.State
-import typings.reactIntl.typesMod.FormatNumberOptions
-import typings.reactIntl.typesMod.IntlCache
 import typings.reactIntl.typesMod.IntlShape
+import typings.std.Error
+import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-intl/lib", JSImport.Namespace)
 @js.native
 object libMod extends js.Object {
-  @js.native
-  class FormattedHTMLMessage () extends default
-  
-  @js.native
-  class FormattedMessage[V /* <: Record[String, _] */] ()
-    extends typings.reactIntl.messageMod.default[V]
-  
-  @js.native
-  class FormattedRelativeTime protected ()
-    extends typings.reactIntl.relativeMod.default {
-    def this(props: Props) = this()
-  }
-  
-  @js.native
-  class IntlProvider ()
-    extends typings.reactIntl.providerMod.default
   
   val FormattedDate: FC[DateTimeFormatOptionsCust] = js.native
-  val FormattedDateParts: FC[DateTimeFormatOptionsCustChildren] = js.native
-  val FormattedDisplayName: FC[DisplayNamesOptionsvalues] = js.native
-  val FormattedList: FC[IntlListFormatOptionsvalu] = js.native
-  val FormattedNumber: FC[UnifiedNumberFormatOption] = js.native
-  val FormattedNumberParts: FC[FormatNumberOptions with Children] = js.native
-  val FormattedTime: FC[DateTimeFormatOptionsCust] = js.native
-  val FormattedTimeParts: FC[DateTimeFormatOptionsCustChildren] = js.native
-  val IntlContext: Context[IntlShape] = js.native
-  val RawIntlProvider: Provider[IntlShape] = js.native
-  def createIntl(config: OptionalIntlConfig): IntlShape = js.native
-  def createIntl(config: OptionalIntlConfig, cache: IntlCache): IntlShape = js.native
-  def createIntlCache(): IntlCache = js.native
-  def defineMessages[T, U /* <: Record[String, T] */](msgs: U): U = js.native
-  def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSName("injectIntl")
-  def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with (WrappedComponentComponentType[P, IntlPropName]) = js.native
-  @JSName("injectIntl")
-  def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSName("injectIntl")
-  def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with (WrappedComponentComponentType[P, IntlPropName]) = js.native
-  def useIntl(): IntlShape = js.native
-  /* static members */
-  @js.native
-  object FormattedHTMLMessage extends js.Object {
-    var defaultProps: TagName = js.native
-    var displayName: String = js.native
-  }
   
+  val FormattedDateParts: FC[FormatDateOptions with Children] = js.native
+  
+  val FormattedDateTimeRange: FC[Props] = js.native
+  
+  val FormattedDisplayName: FC[DisplayNamesOptionsvalues] = js.native
+  
+  val FormattedList: FC[IntlListFormatOptionsvalu] = js.native
+  
+  val FormattedNumber: FC[NumberFormatOptionsCustom] = js.native
+  
+  val FormattedNumberParts: FC[FormatNumberOptions with Value] = js.native
+  
+  val FormattedTime: FC[DateTimeFormatOptionsCust] = js.native
+  
+  val FormattedTimeParts: FC[FormatDateOptions with Children] = js.native
+  
+  val IntlContext: Context[IntlShape] = js.native
+  
+  val RawIntlProvider: Provider[IntlShape] = js.native
+  
+  val createIntl: CreateIntlFn[ReactNode, OptionalIntlConfig, IntlShape] = js.native
+  
+  def createIntlCache(): IntlCache = js.native
+  
+  def defineMessage[T](msg: T): T = js.native
+  
+  def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = js.native
+  
+  def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with (WrappedComponentComponentType[P, IntlPropName]) = js.native
+  @JSName("injectIntl")
+  def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] with RefAttributes[T]]) with (WrappedComponentComponentType[P, IntlPropName]) = js.native
+  @JSName("injectIntl")
+  def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with (WrappedComponentComponentType[P, IntlPropName]) = js.native
+  @JSName("injectIntl")
+  def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] with RefAttributes[T]]) with (WrappedComponentComponentType[P, IntlPropName]) = js.native
+  
+  def useIntl(): IntlShape = js.native
+  
+  @js.native
+  class FormattedMessage[V /* <: Record[String, _] */] () extends default[V]
   /* static members */
   @js.native
   object FormattedMessage extends js.Object {
-    var defaultProps: Values = js.native
+    
     var displayName: String = js.native
   }
   
   @js.native
   object FormattedPlural extends js.Object {
-    @JSName("$$typeof")
-    val DollarDollartypeof: js.Symbol = js.native
+    
+    def apply(props: PropsWithChildren[WithIntlProps[typings.reactIntl.pluralMod.Props]]): ReactElement | Null = js.native
+    def apply(props: PropsWithChildren[WithIntlProps[typings.reactIntl.pluralMod.Props]], context: js.Any): ReactElement | Null = js.native
+    
     var WrappedComponent: ComponentType[typings.reactIntl.pluralMod.Props] = js.native
-    var defaultProps: js.UndefOr[PartialPickPropschildreno] = js.native
+    
+    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+    
+    var defaultProps: js.UndefOr[Partial[WithIntlProps[typings.reactIntl.pluralMod.Props]]] = js.native
+    
     var displayName: js.UndefOr[String] = js.native
-    var propTypes: js.UndefOr[WeakValidationMapPickProp] = js.native
-    /**
-      * **NOTE**: Exotic components are not callable.
-      */
-    def apply(props: PickPropschildrenotherzer): ReactElement | Null = js.native
+    
+    var propTypes: js.UndefOr[WeakValidationMap[WithIntlProps[typings.reactIntl.pluralMod.Props]]] = js.native
   }
   
+  @js.native
+  class FormattedRelativeTime protected ()
+    extends typings.reactIntl.relativeMod.default {
+    def this(props: typings.reactIntl.relativeMod.Props) = this()
+  }
   /* static members */
   @js.native
   object FormattedRelativeTime extends js.Object {
+    
     var defaultProps: PickPropsunitvalue = js.native
+    
     var displayName: String = js.native
-    def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
+    
+    def getDerivedStateFromProps(props: typings.reactIntl.relativeMod.Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
   }
   
+  @js.native
+  class IntlProvider ()
+    extends typings.reactIntl.providerMod.default
   /* static members */
   @js.native
   object IntlProvider extends js.Object {
-    var defaultProps: PickIntlConfigformatsmess = js.native
+    
+    var defaultProps: PickIntlConfigtimeZonefor = js.native
+    
     var displayName: String = js.native
-    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: typings.reactIntl.providerMod.State): PartialState | Null = js.native
+    
+    def getDerivedStateFromProps(props: OptionalIntlConfig, hasPrevConfigCache: typings.reactIntl.providerMod.State): PartialStateCache | Null = js.native
   }
   
+  @js.native
+  class InvalidConfigError protected ()
+    extends typings.formatjsIntl.mod.InvalidConfigError {
+    def this(message: String) = this()
+    def this(message: String, exception: Error) = this()
+  }
+  
+  @js.native
+  class MessageFormatError protected ()
+    extends typings.formatjsIntl.mod.MessageFormatError {
+    def this(message: String, locale: String) = this()
+    def this(message: String, locale: String, descriptor: MessageDescriptor) = this()
+    def this(message: String, locale: String, descriptor: js.UndefOr[scala.Nothing], exception: Error) = this()
+    def this(message: String, locale: String, descriptor: MessageDescriptor, exception: Error) = this()
+  }
+  
+  @js.native
+  class MissingDataError protected ()
+    extends typings.formatjsIntl.mod.MissingDataError {
+    def this(message: String) = this()
+    def this(message: String, exception: Error) = this()
+  }
+  
+  @js.native
+  class MissingTranslationError protected ()
+    extends typings.formatjsIntl.mod.MissingTranslationError {
+    def this(descriptor: MessageDescriptor, locale: String) = this()
+  }
+  
+  @js.native
+  class ReactIntlError[T /* <: IntlErrorCode */] protected () extends IntlError[T] {
+    def this(code: T, message: String) = this()
+    def this(code: T, message: String, exception: Error) = this()
+  }
+  
+  @js.native
+  class UnsupportedFormatterError protected ()
+    extends typings.formatjsIntl.mod.UnsupportedFormatterError {
+    def this(message: String) = this()
+    def this(message: String, exception: Error) = this()
+  }
 }
-

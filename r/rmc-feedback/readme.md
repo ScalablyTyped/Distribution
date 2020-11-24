@@ -10,9 +10,9 @@ Typings are for version 2.0.0
 | ------------------ | :-------------: |
 | Full name          | rmc-feedback |
 | Keywords           | react, react-component, touch feeedback, rc-swipeout, active pseudo |
-| # releases         | 3 |
-| # dependents       | 64 |
-| # downloads        | 8474417 |
+| # releases         | 0 |
+| # dependents       | 90 |
+| # downloads        | 13939968 |
 | # stars            | 0 |
 
 ## Links

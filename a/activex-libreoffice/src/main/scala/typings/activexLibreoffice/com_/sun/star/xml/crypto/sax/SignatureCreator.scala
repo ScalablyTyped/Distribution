@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.xml.crypto.XUriBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SignatureCreator
@@ -19,8 +19,8 @@ trait SignatureCreator
      with XMissionTaker
      with XUriBinding
      with XInitialization
-
 object SignatureCreator {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -42,4 +42,3 @@ object SignatureCreator {
     __obj.asInstanceOf[SignatureCreator]
   }
 }
-

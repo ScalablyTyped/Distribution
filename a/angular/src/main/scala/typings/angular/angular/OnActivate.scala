@@ -2,7 +2,7 @@ package typings.angular.angular
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines route lifecycle method `routerOnActivate`, which is called by the router at the end of a
@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OnActivate extends js.Object {
+  
   @JSName("$routerOnActivate")
   def $routerOnActivate(): js.Any = js.native
   @JSName("$routerOnActivate")
@@ -33,4 +34,3 @@ trait OnActivate extends js.Object {
   @JSName("$routerOnActivate")
   def $routerOnActivate(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native
 }
-

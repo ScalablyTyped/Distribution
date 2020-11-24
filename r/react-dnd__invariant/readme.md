@@ -12,7 +12,7 @@ invariantx
 | Keywords           | test, invariant |
 | # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 2455303 |
+| # downloads        | 4867716 |
 | # stars            | 0 |
 
 ## Links

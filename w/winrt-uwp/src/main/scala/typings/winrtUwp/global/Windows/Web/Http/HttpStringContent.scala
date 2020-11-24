@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Web.Http
 import typings.winrtUwp.Windows.Storage.Streams.UnicodeEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses a string. */
 @JSGlobal("Windows.Web.Http.HttpStringContent")
@@ -29,4 +29,3 @@ class HttpStringContent protected ()
     */
   def this(content: String, encoding: UnicodeEncoding, mediaType: String) = this()
 }
-

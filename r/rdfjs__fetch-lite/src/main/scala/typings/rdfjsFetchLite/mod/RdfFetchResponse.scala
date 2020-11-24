@@ -10,16 +10,17 @@ import typings.std.Response
 import typings.std.ResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RdfFetchResponse[Q /* <: BaseQuad */] extends Response {
+  
   def quadStream(): js.Promise[Stream[Q]] = js.native
 }
-
 object RdfFetchResponse {
+  
   @scala.inline
-  def apply[/* <: typings.rdfJs.mod.BaseQuad */ Q](
+  def apply[Q /* <: BaseQuad */](
     arrayBuffer: () => js.Promise[ArrayBuffer],
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,
@@ -40,20 +41,23 @@ object RdfFetchResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RdfFetchResponse[Q]]
   }
+  
   @scala.inline
-  implicit class RdfFetchResponseOps[Self <: RdfFetchResponse[_], /* <: typings.rdfJs.mod.BaseQuad */ Q] (val x: Self with RdfFetchResponse[Q]) extends AnyVal {
+  implicit class RdfFetchResponseOps[Self <: RdfFetchResponse[_], Q /* <: BaseQuad */] (val x: Self with RdfFetchResponse[Q]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setQuadStream(value: () => js.Promise[Stream[Q]]): Self = this.set("quadStream", js.Any.fromFunction0(value))
   }
-  
 }
-

@@ -10,9 +10,9 @@ The core tracer for Zipkin JS
 | ------------------ | :-------------: |
 | Full name          | zipkin |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 106 |
-| # downloads        | 1322557 |
+| # releases         | 27 |
+| # dependents       | 118 |
+| # downloads        | 2336546 |
 | # stars            | 0 |
 
 ## Links

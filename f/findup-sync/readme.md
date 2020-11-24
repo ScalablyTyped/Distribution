@@ -11,8 +11,8 @@ Find the first file matching a given pattern in the current directory or the nea
 | Full name          | findup-sync |
 | Keywords           | file, find, find-up, findup, glob, match, pattern, resolve, search |
 | # releases         | 3 |
-| # dependents       | 420 |
-| # downloads        | 235857945 |
+| # dependents       | 453 |
+| # downloads        | 323851523 |
 | # stars            | 11 |
 
 ## Links

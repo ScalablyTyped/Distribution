@@ -4,7 +4,7 @@ import typings.mongodb.mod.Collection
 import typings.mongodb.mod.DefaultSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @summary MongoDB store adapter.
@@ -18,4 +18,3 @@ class ^ protected () extends MongoStore {
     options: js.Object
   ) = this()
 }
-

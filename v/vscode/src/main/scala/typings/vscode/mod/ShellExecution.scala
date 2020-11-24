@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "ShellExecution")
 @js.native
@@ -33,22 +33,25 @@ class ShellExecution protected () extends js.Object {
     args: js.Array[String | ShellQuotedString],
     options: ShellExecutionOptions
   ) = this()
+  
   /**
     * The shell args. Is `undefined` if created with a full command line.
     */
   var args: js.Array[String | ShellQuotedString] = js.native
+  
   /**
     * The shell command. Is `undefined` if created with a full command line.
     */
   var command: String | ShellQuotedString = js.native
+  
   /**
     * The shell command line. Is `undefined` if created with a command and arguments.
     */
   var commandLine: js.UndefOr[String] = js.native
+  
   /**
     * The shell options used when the command line is executed in a shell.
     * Defaults to undefined.
     */
   var options: js.UndefOr[ShellExecutionOptions] = js.native
 }
-

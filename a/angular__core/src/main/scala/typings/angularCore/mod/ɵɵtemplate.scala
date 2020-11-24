@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275\u0275template")
 @js.native
 object ɵɵtemplate extends js.Object {
+  
   def apply(
     index: Double,
     templateFn: ComponentTemplate[_] | Null,
@@ -18,4 +19,3 @@ object ɵɵtemplate extends js.Object {
     localRefExtractor: js.UndefOr[LocalRefExtractor]
   ): Unit = js.native
 }
-

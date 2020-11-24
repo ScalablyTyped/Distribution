@@ -10,9 +10,9 @@ Help in opening URLs (mostly HTTP) in a complex world — basic and digest authe
 | ------------------ | :-------------: |
 | Full name          | urllib |
 | Keywords           | urllib, http, urlopen, curl, wget, request, https |
-| # releases         | 20 |
-| # dependents       | 476 |
-| # downloads        | 2524075 |
+| # releases         | 17 |
+| # dependents       | 542 |
+| # downloads        | 2876142 |
 | # stars            | 26 |
 
 ## Links

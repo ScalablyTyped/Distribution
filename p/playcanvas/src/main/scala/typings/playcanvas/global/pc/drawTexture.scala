@@ -2,11 +2,12 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("pc.drawTexture")
 @js.native
 object drawTexture extends js.Object {
+  
   /**
     * Draws a texture in screen-space. Mostly used by post-effects.
     * @param device - The graphics device used to draw the texture.
@@ -272,4 +273,3 @@ object drawTexture extends js.Object {
     useBlend: Boolean
   ): Unit = js.native
 }
-

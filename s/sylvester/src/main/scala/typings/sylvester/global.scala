@@ -6,15 +6,12 @@ import typings.sylvester.Sylvester.PlaneStatic
 import typings.sylvester.Sylvester.VectorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
-  var Line: LineStatic = js.native
-  var Matrix: MatrixStatic = js.native
-  var Plane: PlaneStatic = js.native
-  var Vector: VectorStatic = js.native
+  
   /**
   * Constructor function.
   *
@@ -29,6 +26,9 @@ object global extends js.Object {
   def L(anchor: Vector, direction: js.Array[Double]): Line = js.native
   @JSName("$L")
   def L(anchor: Vector, direction: Vector): Line = js.native
+  
+  var Line: LineStatic = js.native
+  
   /**
   * Constructor function.
   *
@@ -40,6 +40,9 @@ object global extends js.Object {
   def M(elements: Matrix): Matrix = js.native
   @JSName("$M")
   def M(elements: Vector): Matrix = js.native
+  
+  var Matrix: MatrixStatic = js.native
+  
   /**
   * Constructor function.
   *
@@ -77,6 +80,9 @@ object global extends js.Object {
   def P(anchor: Vector, v1: Vector, v2: js.Array[Double]): Plane = js.native
   @JSName("$P")
   def P(anchor: Vector, v1: Vector, v2: Vector): Plane = js.native
+  
+  var Plane: PlaneStatic = js.native
+  
   @JSName("$V")
   def V(elements: js.Array[Double]): Vector = js.native
   /**
@@ -86,11 +92,14 @@ object global extends js.Object {
   */
   @JSName("$V")
   def V(elements: Vector): Vector = js.native
+  
+  var Vector: VectorStatic = js.native
+  
   @js.native
   object Sylvester extends js.Object {
+    
     var precision: Double = js.native
+    
     var version: String = js.native
   }
-  
 }
-

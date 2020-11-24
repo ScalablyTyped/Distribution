@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MessagePopover extends Control {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: MessagePopoverItem): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterClose</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -28,6 +30,7 @@ trait MessagePopover extends Control {
     */
   def attachAfterClose(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachAfterClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterOpen</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -43,6 +46,7 @@ trait MessagePopover extends Control {
     */
   def attachAfterOpen(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachAfterOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeClose</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -58,6 +62,7 @@ trait MessagePopover extends Control {
     */
   def attachBeforeClose(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachBeforeClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeOpen</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -73,6 +78,7 @@ trait MessagePopover extends Control {
     */
   def attachBeforeOpen(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachBeforeOpen(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>itemSelect</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -87,6 +93,7 @@ trait MessagePopover extends Control {
     */
   def attachItemSelect(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachItemSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>listSelect</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -102,6 +109,7 @@ trait MessagePopover extends Control {
     */
   def attachListSelect(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachListSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>longtextLoaded</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -117,6 +125,7 @@ trait MessagePopover extends Control {
     */
   def attachLongtextLoaded(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachLongtextLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>urlValidated</code> event of this
     * <code>sap.m.MessagePopover</code>.When called, the context of the event handler (its
@@ -132,21 +141,25 @@ trait MessagePopover extends Control {
     */
   def attachUrlValidated(oData: js.Any, fnFunction: js.Any): MessagePopover = js.native
   def attachUrlValidated(oData: js.Any, fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Closes the MessagePopover
     * @returns Reference to the 'this' for chaining purposes
     */
   def close(): MessagePopover = js.native
+  
   /**
     * Destroys the headerButton in the aggregation <code>headerButton</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyHeaderButton(): MessagePopover = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterClose</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -156,6 +169,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterClose(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterOpen</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -165,6 +179,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterOpen(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeClose</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -174,6 +189,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeClose(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeOpen</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -183,6 +199,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeOpen(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>itemSelect</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -192,6 +209,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachItemSelect(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>listSelect</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -201,6 +219,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachListSelect(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>longtextLoaded</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -210,6 +229,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachLongtextLoaded(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>urlValidated</code> event of this
     * <code>sap.m.MessagePopover</code>.The passed function and listener object must match the ones used
@@ -219,6 +239,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUrlValidated(fnFunction: js.Any, oListener: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>afterClose</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>Refers to the control
@@ -227,6 +248,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterClose(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>afterOpen</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>This refers to the
@@ -235,6 +257,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterOpen(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>beforeClose</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>Refers to the control
@@ -243,6 +266,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeClose(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>beforeOpen</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>openBy</code> of type <code>sap.ui.core.Control</code>Refers to the control
@@ -251,6 +275,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeOpen(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>itemSelect</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>item</code> of type <code>sap.m.MessagePopoverItem</code>Refers to the
@@ -261,6 +286,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireItemSelect(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>listSelect</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>messageTypeFilter</code> of type <code>sap.ui.core.MessageType</code>This
@@ -269,44 +295,52 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireListSelect(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>longtextLoaded</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireLongtextLoaded(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Fires event <code>urlValidated</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUrlValidated(mArguments: js.Any): MessagePopover = js.native
+  
   /**
     * Gets current value of property <code>asyncDescriptionHandler</code>.Callback function for resolving
     * a promise after description has been asynchronously loaded inside this function
     * @returns Value of property <code>asyncDescriptionHandler</code>
     */
   def getAsyncDescriptionHandler(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>asyncURLHandler</code>.Callback function for resolving a
     * promise after a link has been asynchronously validated inside this function
     * @returns Value of property <code>asyncURLHandler</code>
     */
   def getAsyncURLHandler(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>headerButton</code>.A custom header button
     */
   def getHeaderButton(): Button = js.native
+  
   /**
     * Gets current value of property <code>initiallyExpanded</code>.Sets the initial state of the control
     * - expanded or collapsed. By default the control opens as expandedDefault value is <code>true</code>.
     * @returns Value of property <code>initiallyExpanded</code>
     */
   def getInitiallyExpanded(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.A list with message items
     */
   def getItems(): js.Array[MessagePopoverItem] = js.native
+  
   /**
     * Gets current value of property <code>placement</code>.Determines the position, where the control
     * will appear on the screen. Possible values are: sap.m.VerticalPlacementType.Top,
@@ -317,6 +351,7 @@ trait MessagePopover extends Control {
     * @returns Value of property <code>placement</code>
     */
   def getPlacement(): VerticalPlacementType = js.native
+  
   /**
     * Checks for the provided <code>sap.m.MessagePopoverItem</code> in the aggregation
     * <code>items</code>.and returns its index if found or -1 otherwise.
@@ -324,6 +359,7 @@ trait MessagePopover extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: MessagePopoverItem): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -334,24 +370,28 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: MessagePopoverItem, iIndex: Double): MessagePopover = js.native
+  
   /**
     * The method checks if the MessagePopover is open. It returns true when the MessagePopover is
     * currently open(this includes opening and closing animations), otherwise it returns false
     * @returns Whether the MessagePopover is open
     */
   def isOpen(): Boolean = js.native
+  
   /**
     * Opens the MessagePopover
     * @param oControl Control which opens the MessagePopover
     * @returns Reference to the 'this' for chaining purposes
     */
   def openBy(oControl: Control): MessagePopover = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[MessagePopoverItem] = js.native
+  
   def removeItem(vItem: String): MessagePopoverItem = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -360,6 +400,7 @@ trait MessagePopover extends Control {
     */
   def removeItem(vItem: Double): MessagePopoverItem = js.native
   def removeItem(vItem: MessagePopoverItem): MessagePopoverItem = js.native
+  
   /**
     * Sets a new value for property <code>asyncDescriptionHandler</code>.Callback function for resolving a
     * promise after description has been asynchronously loaded inside this functionWhen called with a
@@ -369,6 +410,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAsyncDescriptionHandler(oAsyncDescriptionHandler: js.Any): MessagePopover = js.native
+  
   /**
     * Sets a new value for property <code>asyncURLHandler</code>.Callback function for resolving a promise
     * after a link has been asynchronously validated inside this functionWhen called with a value of
@@ -377,17 +419,20 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAsyncURLHandler(oAsyncURLHandler: js.Any): MessagePopover = js.native
+  
   /**
     * Setter for default description and URL validation callbacks across all instances of MessagePopover
     * @param mDefaultHandlers An object setting default callbacks
     */
   def setDefaultHandlers(mDefaultHandlers: js.Any): Unit = js.native
+  
   /**
     * Sets the aggregated <code>headerButton</code>.
     * @param oHeaderButton The headerButton to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderButton(oHeaderButton: Button): MessagePopover = js.native
+  
   /**
     * Sets a new value for property <code>initiallyExpanded</code>.Sets the initial state of the control -
     * expanded or collapsed. By default the control opens as expandedWhen called with a value of
@@ -397,6 +442,7 @@ trait MessagePopover extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInitiallyExpanded(bInitiallyExpanded: Boolean): MessagePopover = js.native
+  
   /**
     * This method toggles between open and closed state of the MessagePopover instance.oControl parameter
     * is mandatory in the same way as in 'openBy' method
@@ -405,4 +451,3 @@ trait MessagePopover extends Control {
     */
   def toggle(oControl: Control): MessagePopover = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model.analytics.odata4analytics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.analytics.odata4analytics.RecursiveHierarchy")
 @js.native
@@ -29,4 +29,3 @@ class RecursiveHierarchy protected ()
     oNodeValueProperty: js.Any
   ) = this()
 }
-

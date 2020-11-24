@@ -2,9 +2,28 @@ package typings.scanf
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scanfStrings {
+  
+  @scala.inline
+  def PercentsignS: PercentsignS = "%S".asInstanceOf[PercentsignS]
+  
+  @scala.inline
+  def Percentsignd: Percentsignd = "%d".asInstanceOf[Percentsignd]
+  
+  @scala.inline
+  def Percentsignf: Percentsignf = "%f".asInstanceOf[Percentsignf]
+  
+  @scala.inline
+  def Percentsigno: Percentsigno = "%o".asInstanceOf[Percentsigno]
+  
+  @scala.inline
+  def Percentsigns: Percentsigns = "%s".asInstanceOf[Percentsigns]
+  
+  @scala.inline
+  def Percentsignx: Percentsignx = "%x".asInstanceOf[Percentsignx]
+  
   @js.native
   sealed trait PercentsignS extends js.Object
   
@@ -22,18 +41,4 @@ object scanfStrings {
   
   @js.native
   sealed trait Percentsignx extends js.Object
-  
-  @scala.inline
-  def PercentsignS: PercentsignS = "%S".asInstanceOf[PercentsignS]
-  @scala.inline
-  def Percentsignd: Percentsignd = "%d".asInstanceOf[Percentsignd]
-  @scala.inline
-  def Percentsignf: Percentsignf = "%f".asInstanceOf[Percentsignf]
-  @scala.inline
-  def Percentsigno: Percentsigno = "%o".asInstanceOf[Percentsigno]
-  @scala.inline
-  def Percentsigns: Percentsigns = "%s".asInstanceOf[Percentsigns]
-  @scala.inline
-  def Percentsignx: Percentsignx = "%x".asInstanceOf[Percentsignx]
 }
-

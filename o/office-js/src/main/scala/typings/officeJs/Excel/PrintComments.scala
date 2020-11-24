@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintComments extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintComments")
 @js.native
 object PrintComments extends js.Object {
+  
   /**
     * Comments will be printed as end notes at the end of the worksheet.
     *
@@ -33,6 +33,4 @@ object PrintComments extends js.Object {
     */
   @js.native
   sealed trait noComments extends PrintComments
-  
 }
-

@@ -10,9 +10,9 @@ React Native Material Design Components
 | ------------------ | :-------------: |
 | Full name          | react-native-material-ui |
 | Keywords           | react-native, material, design, ui, components, react-component, android |
-| # releases         | 15 |
-| # dependents       | 7 |
-| # downloads        | 156917 |
+| # releases         | 2 |
+| # dependents       | 9 |
+| # downloads        | 182277 |
 | # stars            | 7 |
 
 ## Links

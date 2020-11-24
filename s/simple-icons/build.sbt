@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-icons"
-version := "2.5-dt-20200226Z-85f64a"
+version := "2.5-dt-20200226Z-ffa03d"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

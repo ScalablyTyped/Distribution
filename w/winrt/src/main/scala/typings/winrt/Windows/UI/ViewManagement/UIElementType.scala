@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UIElementType extends js.Object
-
 @JSGlobal("Windows.UI.ViewManagement.UIElementType")
 @js.native
 object UIElementType extends js.Object {
+  
   @js.native
   sealed trait activeCaption extends UIElementType
   
@@ -48,6 +48,4 @@ object UIElementType extends js.Object {
   
   @js.native
   sealed trait windowText extends UIElementType
-  
 }
-

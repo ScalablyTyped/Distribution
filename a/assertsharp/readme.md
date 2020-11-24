@@ -11,7 +11,7 @@ Assert methods based on .NET Assert class.
 | Keywords           | assert |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 742 |
+| # downloads        | 419 |
 | # stars            | 1 |
 
 ## Links

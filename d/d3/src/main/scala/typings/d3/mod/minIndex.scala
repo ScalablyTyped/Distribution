@@ -1,0 +1,22 @@
+package typings.d3.mod
+
+import typings.std.Iterable
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("d3", "minIndex")
+@js.native
+object minIndex extends js.Object {
+  
+  def apply[T](iterable: Iterable[T]): Double = js.native
+  def apply[TDatum, U](
+    iterable: Iterable[TDatum],
+    accessor: js.Function3[
+      /* datum */ TDatum, 
+      /* index */ Double, 
+      /* array */ Iterable[TDatum], 
+      js.UndefOr[U | Null]
+    ]
+  ): Double = js.native
+}

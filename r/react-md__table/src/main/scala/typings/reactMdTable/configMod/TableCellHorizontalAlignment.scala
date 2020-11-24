@@ -2,7 +2,7 @@ package typings.reactMdTable.configMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactMdTable.reactMdTableStrings.left
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.reactMdTable.reactMdTableStrings.right
 */
 trait TableCellHorizontalAlignment extends js.Object
-
 object TableCellHorizontalAlignment {
+  
   @scala.inline
   def center: typings.reactMdTable.reactMdTableStrings.center = "center".asInstanceOf[typings.reactMdTable.reactMdTableStrings.center]
+  
   @scala.inline
   def left: typings.reactMdTable.reactMdTableStrings.left = "left".asInstanceOf[typings.reactMdTable.reactMdTableStrings.left]
+  
   @scala.inline
   def right: typings.reactMdTable.reactMdTableStrings.right = "right".asInstanceOf[typings.reactMdTable.reactMdTableStrings.right]
 }
-

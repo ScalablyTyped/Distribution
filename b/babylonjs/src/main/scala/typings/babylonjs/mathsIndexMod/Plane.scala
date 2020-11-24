@@ -4,7 +4,7 @@ import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "Plane")
 @js.native
@@ -19,18 +19,18 @@ class Plane protected ()
     */
   def this(a: Double, b: Double, c: Double, d: Double) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Maths/index", "Plane")
 @js.native
 object Plane extends js.Object {
-  var _TmpMatrix: js.Any = js.native
+  
   /**
     * Creates a plane from an  array
     * @param array the array to create a plane from
     * @returns a new Plane from the given array.
     */
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathPlaneMod.Plane = js.native
+  
   /**
     * Creates a plane from three points
     * @param point1 point used to create the plane
@@ -43,6 +43,7 @@ object Plane extends js.Object {
     point2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     point3: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
   ): typings.babylonjs.mathPlaneMod.Plane = js.native
+  
   /**
     * Creates a plane from an origin point and a normal
     * @param origin origin of the plane to be constructed
@@ -52,8 +53,9 @@ object Plane extends js.Object {
     */
   def FromPositionAndNormal(
     origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    normal: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+    normal: typings.babylonjs.mathVectorMod.Vector3
   ): typings.babylonjs.mathPlaneMod.Plane = js.native
+  
   /**
     * Calculates the distance from a plane and a point
     * @param origin origin of the plane to be constructed
@@ -66,5 +68,6 @@ object Plane extends js.Object {
     normal: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     point: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
   ): Double = js.native
+  
+  var _TmpMatrix: js.Any = js.native
 }
-

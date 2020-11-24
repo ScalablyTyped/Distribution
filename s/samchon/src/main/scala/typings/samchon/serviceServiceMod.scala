@@ -1,15 +1,15 @@
 package typings.samchon
 
 import typings.samchon.clientMod.Client
-import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/service/Service", JSImport.Namespace)
 @js.native
 object serviceServiceMod extends js.Object {
+  
   @js.native
   abstract class Service protected () extends IProtocol {
     /**
@@ -19,14 +19,12 @@ object serviceServiceMod extends js.Object {
       * @param path Requested path that identifies this {@link Service}.
       */
     def this(client: Client, path: String) = this()
+    
     /**
       * @hidden
       */
     var client_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var path_ : js.Any = js.native
+    
     /**
       * Default Destructor.
       *
@@ -40,33 +38,20 @@ object serviceServiceMod extends js.Object {
       * *destruction*, then overrides this {@link destructor destructor()} method and defines the something to do.
       */
     /* protected */ def destructor(): Unit = js.native
+    
     /**
       * Get client.
       */
     def getClient(): Client = js.native
+    
     /**
       * Get requested path.
       */
     def getPath(): String = js.native
+    
     /**
-      * Sending message.
-      *
-      * Sends message to related system or shifts the responsibility to chain.
-      *
-      * @param invoke Invoke message to send
+      * @hidden
       */
-    /* CompleteClass */
-    override def replyData(invoke: Invoke): Unit = js.native
-    /**
-      * Handling replied message.
-      *
-      * Handles replied message or shifts the responsibility to chain.
-      *
-      * @param invoke An {@link Invoke} message has received.
-      */
-    /* CompleteClass */
-    override def sendData(invoke: Invoke): Unit = js.native
+    var path_ : js.Any = js.native
   }
-  
 }
-

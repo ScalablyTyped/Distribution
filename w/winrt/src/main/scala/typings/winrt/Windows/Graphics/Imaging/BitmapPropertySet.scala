@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.Collections.IMap
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BitmapPropertySet extends IMap[String, BitmapTypedValue]
-
 object BitmapPropertySet {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -27,4 +27,3 @@ object BitmapPropertySet {
     __obj.asInstanceOf[BitmapPropertySet]
   }
 }
-

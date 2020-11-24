@@ -1,18 +1,18 @@
 
 # Scala.js typings for ngx-infinite-scroll
 
-Typings are for version 9.0.0
+Typings are for version 10.0.0
 
 ## Library description:
-An infinite scroll directive for Angular compatible with AoT compilation and Tree shaking
+An infinite scroll directive for Angular
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ngx-infinite-scroll |
 | Keywords           | angular, javascript, typescript |
-| # releases         | 18 |
-| # dependents       | 39 |
-| # downloads        | 3671099 |
+| # releases         | 10 |
+| # dependents       | 48 |
+| # downloads        | 5354653 |
 | # stars            | 6 |
 
 ## Links

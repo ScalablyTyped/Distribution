@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.CircularGauge
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LegendShape extends js.Object
-
 @JSGlobal("ej.datavisualization.CircularGauge.LegendShape")
 @js.native
 object LegendShape extends js.Object {
+  
   //string
   @js.native
   sealed trait Circle extends LegendShape
@@ -45,6 +45,4 @@ object LegendShape extends js.Object {
   //string
   @js.native
   sealed trait Triangle extends LegendShape
-  
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the representation (mapping) of an SQL **BLOB** .
@@ -22,18 +22,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XBlob extends XInterface {
+  
   /**
     * retrieves the ** BLOB ** designated by this `Blob` instance as a stream.
     * @returns the stream
     * @throws SQLException if a database access error occurs.
     */
   val BinaryStream: XInputStream = js.native
+  
   /**
     * retrieves the ** BLOB ** designated by this `Blob` instance as a stream.
     * @returns the stream
     * @throws SQLException if a database access error occurs.
     */
   def getBinaryStream(): XInputStream = js.native
+  
   /**
     * returns as an array of bytes part or all of the ** BLOB ** value that this `Blob` object designates. The byte array contains up to `length`
     * consecutive bytes starting at position `pos` .
@@ -43,12 +46,14 @@ trait XBlob extends XInterface {
     * @throws SQLException if there is an error accessing the **BLOB** .
     */
   def getBytes(pos: Double, length: Double): SafeArray[Double] = js.native
+  
   /**
     * returns the number of bytes in the ** BLOB ** value designated by this `Blob` object.
     * @returns the length
     * @throws SQLException if a database access error occurs.
     */
   def length(): Double = js.native
+  
   /**
     * determines the byte position at which the specified byte `pattern` begins within the ** BLOB ** value that this `Blob` object represents. The search
     * for `pattern` begins at position `start` .
@@ -58,6 +63,7 @@ trait XBlob extends XInterface {
     * @throws SQLException if a database access error occurs.
     */
   def position(pattern: SeqEquiv[Double], start: Double): Double = js.native
+  
   /**
     * determines the byte position in the ** BLOB ** value designated by this `Blob` object at which `pattern` begins. The search begins at position `start`
     * .
@@ -68,8 +74,8 @@ trait XBlob extends XInterface {
     */
   def positionOfBlob(pattern: XBlob, start: Double): Double = js.native
 }
-
 object XBlob {
+  
   @scala.inline
   def apply(
     BinaryStream: XInputStream,
@@ -85,30 +91,38 @@ object XBlob {
     val __obj = js.Dynamic.literal(BinaryStream = BinaryStream.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getBinaryStream = js.Any.fromFunction0(getBinaryStream), getBytes = js.Any.fromFunction2(getBytes), length = js.Any.fromFunction0(length), position = js.Any.fromFunction2(position), positionOfBlob = js.Any.fromFunction2(positionOfBlob), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XBlob]
   }
+  
   @scala.inline
   implicit class XBlobOps[Self <: XBlob] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBinaryStream(value: XInputStream): Self = this.set("BinaryStream", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetBinaryStream(value: () => XInputStream): Self = this.set("getBinaryStream", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetBytes(value: (Double, Double) => SafeArray[Double]): Self = this.set("getBytes", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setLength(value: () => Double): Self = this.set("length", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setPosition(value: (SeqEquiv[Double], Double) => Double): Self = this.set("position", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setPositionOfBlob(value: (XBlob, Double) => Double): Self = this.set("positionOfBlob", js.Any.fromFunction2(value))
   }
-  
 }
-

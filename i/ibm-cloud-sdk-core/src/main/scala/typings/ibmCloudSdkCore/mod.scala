@@ -12,11 +12,34 @@ import typings.std.Error
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ibm-cloud-sdk-core", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = js.native
+  
+  def getContentType(inputData: String): String = js.native
+  def getContentType(inputData: Buffer): String = js.native
+  def getContentType(inputData: ReadableStream): String = js.native
+  
+  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = js.native
+  
+  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = js.native
+  
+  def isEmptyObject(obj: js.Any): Boolean = js.native
+  
+  def isFileParam(obj: js.Any): Boolean = js.native
+  
+  def isHTML(text: String): Boolean = js.native
+  
+  def streamToPromise(stream: Stream): js.Promise[_] = js.native
+  
+  def stripTrailingSlash(url: String): String = js.native
+  
+  def toLowerKeys(obj: js.Object): js.Object = js.native
+  
   @js.native
   class BaseService protected ()
     extends typings.ibmCloudSdkCore.baseServiceMod.BaseService {
@@ -37,6 +60,12 @@ object mod extends js.Object {
       */
     def this(userOptions: UserOptions) = this()
   }
+  /* static members */
+  @js.native
+  object BaseService extends js.Object {
+    
+    var URL: String = js.native
+  }
   
   @js.native
   class IamTokenManagerV1 protected ()
@@ -55,38 +84,21 @@ object mod extends js.Object {
     def this(options: Options) = this()
   }
   
-  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = js.native
-  def getContentType(inputData: String): String = js.native
-  def getContentType(inputData: Buffer): String = js.native
-  def getContentType(inputData: ReadableStream): String = js.native
-  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = js.native
-  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = js.native
-  def isEmptyObject(obj: js.Any): Boolean = js.native
-  def isFileParam(obj: js.Any): Boolean = js.native
-  def isHTML(text: String): Boolean = js.native
-  def streamToPromise(stream: Stream): js.Promise[_] = js.native
-  def stripTrailingSlash(url: String): String = js.native
-  def toLowerKeys(obj: js.Object): js.Object = js.native
-  /* static members */
-  @js.native
-  object BaseService extends js.Object {
-    var URL: String = js.native
-  }
-  
   @js.native
   object contentType extends js.Object {
+    
     def fromFilename(file: String): String = js.native
     def fromFilename(file: FileObject): String = js.native
     def fromFilename(file: Buffer): String = js.native
     def fromFilename(file: File): String = js.native
     def fromFilename(file: typings.std.ReadableStream[_]): String = js.native
+    
     def fromHeader(buffer: Buffer): String = js.native
   }
   
   @js.native
   object qs extends js.Object {
+    
     def stringify(queryParams: js.Object): String = js.native
   }
-  
 }
-

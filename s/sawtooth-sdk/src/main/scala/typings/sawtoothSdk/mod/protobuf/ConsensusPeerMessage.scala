@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IConsensusPeerMessage
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerMessage")
 @js.native
@@ -20,11 +20,11 @@ class ConsensusPeerMessage ()
   extends typings.sawtoothSdk.protobufMod.ConsensusPeerMessage {
   def this(properties: IConsensusPeerMessage) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerMessage")
 @js.native
 object ConsensusPeerMessage extends js.Object {
+  
   /**
     * Creates a new ConsensusPeerMessage instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ConsensusPeerMessage extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
   def create(properties: IConsensusPeerMessage): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
+  
   /**
     * Decodes a ConsensusPeerMessage message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ConsensusPeerMessage extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
+  
   /**
     * Decodes a ConsensusPeerMessage message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ConsensusPeerMessage extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
+  
   /**
     * Encodes the specified ConsensusPeerMessage message. Does not implicitly {@link ConsensusPeerMessage.verify|verify} messages.
     * @param message ConsensusPeerMessage message or plain object to encode
@@ -61,6 +64,7 @@ object ConsensusPeerMessage extends js.Object {
     */
   def encode(message: IConsensusPeerMessage): Writer = js.native
   def encode(message: IConsensusPeerMessage, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusPeerMessage message, length delimited. Does not implicitly {@link ConsensusPeerMessage.verify|verify} messages.
     * @param message ConsensusPeerMessage message or plain object to encode
@@ -69,12 +73,14 @@ object ConsensusPeerMessage extends js.Object {
     */
   def encodeDelimited(message: IConsensusPeerMessage): Writer = js.native
   def encodeDelimited(message: IConsensusPeerMessage, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusPeerMessage message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusPeerMessage
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusPeerMessage = js.native
+  
   /**
     * Creates a plain object from a ConsensusPeerMessage message. Also converts values to other types if specified.
     * @param message ConsensusPeerMessage
@@ -83,6 +89,7 @@ object ConsensusPeerMessage extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusPeerMessage): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusPeerMessage, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusPeerMessage message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ConsensusPeerMessage extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

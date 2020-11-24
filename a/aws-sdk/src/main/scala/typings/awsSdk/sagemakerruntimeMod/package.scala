@@ -2,16 +2,24 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sagemakerruntimeMod {
+  
   type BodyBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.sagemakerruntimeMod.Blob | java.lang.String
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.sagemakerruntimeMod.ClientApiVersions
+  
   type CustomAttributesHeader = java.lang.String
+  
   type EndpointName = java.lang.String
+  
   type Header = java.lang.String
+  
   type TargetModelHeader = java.lang.String
+  
   type TargetVariantHeader = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-05-13`
     - typings.awsSdk.awsSdkStrings.latest_

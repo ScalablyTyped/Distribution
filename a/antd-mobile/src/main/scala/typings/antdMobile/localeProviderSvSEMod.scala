@@ -10,23 +10,31 @@ import typings.antdMobile.anon.NextText
 import typings.antdMobile.anon.OkText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile/lib/locale-provider/sv_SE", JSImport.Namespace)
 @js.native
 object localeProviderSvSEMod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     var DatePicker: DismissText = js.native
+    
     var DatePickerView: Day = js.native
+    
     var InputItem: BackspaceLabel = js.native
+    
     var Menu: CancelTextOkText = js.native
+    
     var Pagination: NextText = js.native
+    
     var Picker: OkText = js.native
+    
     var PullToRefresh: ActivateText = js.native
+    
     var SearchBar: CancelText = js.native
+    
     var locale: String = js.native
   }
-  
 }
-

@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AccessibleShape} service is implemented by UNO shapes to provide accessibility information that describe the shape's features. A UNO shape
@@ -39,8 +39,8 @@ trait AccessibleShape
   extends XAccessibleExtendedComponent
      with XAccessible
      with XAccessibleContext
-
 object AccessibleShape {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -93,4 +93,3 @@ object AccessibleShape {
     __obj.asInstanceOf[AccessibleShape]
   }
 }
-

@@ -1,29 +1,15 @@
 package typings.terminalImage
 
 import typings.terminalImage.anon.ReadonlyBuffer
-import typings.terminalImage.anon.Readonlywidthnumberundefi
 import typings.terminalImage.anon.Readonlywidthstringnumber
+import typings.terminalImage.anon.ReadonlywidthstringnumberHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("terminal-image", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  trait RenderFrame extends js.Object {
-    /**
-    		Custom handler which is run when the animation playback is stopped.
-    		This can be set to perform a cleanup when playback has finished.
-    		*/
-    var done: js.UndefOr[js.Function0[Unit]] = js.native
-    /**
-    		Custom handler which is run for each frame of the GIF.
-    		This can be set to change how each frame is shown.
-    		@param text - The frame which should be rendered.
-    		*/
-    def apply(text: String): Unit = js.native
-  }
   
   /**
   	Display images in the terminal.
@@ -55,6 +41,7 @@ object mod extends js.Object {
   	*/
   def buffer(imageBuffer: ReadonlyBuffer): js.Promise[String] = js.native
   def buffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthstringnumber): js.Promise[String] = js.native
+  
   /**
   	Display images in the terminal. Please note that the image will always be scaled to fit the size of the terminal.
   	Optionally, you can specify the height and/or width to scale the image.
@@ -83,6 +70,7 @@ object mod extends js.Object {
   	*/
   def file(filePath: String): js.Promise[String] = js.native
   def file(filePath: String, options: Readonlywidthstringnumber): js.Promise[String] = js.native
+  
   /**
   	Display GIFs in the terminal.
   	Optionally, you can specify the height and/or width to scale the image.
@@ -115,7 +103,8 @@ object mod extends js.Object {
   	```
   	*/
   def gifBuffer(imageBuffer: ReadonlyBuffer): js.Function0[Unit] = js.native
-  def gifBuffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthnumberundefi): js.Function0[Unit] = js.native
+  def gifBuffer(imageBuffer: ReadonlyBuffer, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = js.native
+  
   /**
   	Display gifs in the terminal.
   	Optionally, you can specify the height and/or width to scale the image.
@@ -146,6 +135,22 @@ object mod extends js.Object {
   	```
   	*/
   def gifFile(filePath: String): js.Function0[Unit] = js.native
-  def gifFile(filePath: String, options: Readonlywidthnumberundefi): js.Function0[Unit] = js.native
+  def gifFile(filePath: String, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = js.native
+  
+  @js.native
+  trait RenderFrame extends js.Object {
+    
+    /**
+    		Custom handler which is run for each frame of the GIF.
+    		This can be set to change how each frame is shown.
+    		@param text - The frame which should be rendered.
+    		*/
+    def apply(text: String): Unit = js.native
+    
+    /**
+    		Custom handler which is run when the animation playback is stopped.
+    		This can be set to perform a cleanup when playback has finished.
+    		*/
+    var done: js.UndefOr[js.Function0[Unit]] = js.native
+  }
 }
-

@@ -10,9 +10,9 @@ Module for calculating Cyclic Redundancy Check (CRC) for Node.js and the Browser
 | ------------------ | :-------------: |
 | Full name          | crc |
 | Keywords           | crc |
-| # releases         | 4 |
-| # dependents       | 462 |
-| # downloads        | 82990945 |
+| # releases         | 0 |
+| # dependents       | 519 |
+| # downloads        | 106182321 |
 | # stars            | 10 |
 
 ## Links

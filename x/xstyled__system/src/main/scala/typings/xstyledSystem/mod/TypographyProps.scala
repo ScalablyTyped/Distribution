@@ -2,7 +2,7 @@ package typings.xstyledSystem.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypographyProps
@@ -15,12 +15,11 @@ trait TypographyProps
      with LetterSpacingProps[StyledSystemLength]
      with ColorProps
      with TextTransformProps
-
 object TypographyProps {
+  
   @scala.inline
   def apply(): TypographyProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypographyProps]
   }
 }
-

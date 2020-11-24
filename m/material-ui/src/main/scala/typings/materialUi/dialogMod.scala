@@ -4,11 +4,12 @@ import typings.materialUi.MaterialUI.DialogProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui/Dialog", JSImport.Namespace)
 @js.native
 object dialogMod extends js.Object {
+  
   @js.native
   class Dialog ()
     extends Component[DialogProps, js.Object, js.Any]
@@ -16,6 +17,4 @@ object dialogMod extends js.Object {
   @js.native
   class default ()
     extends Component[DialogProps, js.Object, js.Any]
-  
 }
-

@@ -10,9 +10,9 @@ A collection of essential TypeScript types
 | ------------------ | :-------------: |
 | Full name          | type-fest |
 | Keywords           | typescript, ts, types, utility, util, utilities, omit, merge, json |
-| # releases         | 16 |
-| # dependents       | 77 |
-| # downloads        | 170025269 |
+| # releases         | 28 |
+| # dependents       | 286 |
+| # downloads        | 1179458558 |
 | # stars            | 0 |
 
 ## Links

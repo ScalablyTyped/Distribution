@@ -6,7 +6,7 @@ import typings.phaser.Phaser.Structs.List
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Display List plugin.
@@ -17,36 +17,42 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DisplayList extends List[GameObject] {
-  /**
-    * The Scene that this Display List belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * The flag the determines whether Game Objects should be sorted when `depthSort()` is called.
-    */
-  var sortChildrenFlag: Boolean = js.native
-  /**
-    * The Scene's Systems.
-    */
-  var systems: Systems = js.native
+  
   /**
     * Immediately sorts the display list if the flag is set.
     */
   def depthSort(): Unit = js.native
+  
   /**
     * Returns an array which contains all objects currently on the Display List.
     * This is a reference to the main list array, not a copy of it, so be careful not to modify it.
     */
   def getChildren(): js.Array[GameObject] = js.native
+  
   /**
     * Force a sort of the display list on the next call to depthSort.
     */
   def queueDepthSort(): Unit = js.native
+  
+  /**
+    * The Scene that this Display List belongs to.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Compare the depth of two Game Objects.
     * @param childA The first Game Object.
     * @param childB The second Game Object.
     */
   def sortByDepth(childA: GameObject, childB: GameObject): integer = js.native
+  
+  /**
+    * The flag the determines whether Game Objects should be sorted when `depthSort()` is called.
+    */
+  var sortChildrenFlag: Boolean = js.native
+  
+  /**
+    * The Scene's Systems.
+    */
+  var systems: Systems = js.native
 }
-

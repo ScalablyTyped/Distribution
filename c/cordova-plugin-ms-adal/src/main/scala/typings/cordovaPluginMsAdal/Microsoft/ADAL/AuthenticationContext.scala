@@ -2,13 +2,11 @@ package typings.cordovaPluginMsAdal.Microsoft.ADAL
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AuthenticationContext extends js.Object {
-  var authority: String = js.native
-  var tokenCache: TokenCache = js.native
-  var validateAuthority: Boolean = js.native
+  
   /**
     * Acquires token using interactive flow if needed. It checks the cache to return existing result
     * if not expired. It tries to use refresh token if available. If it fails to get token with
@@ -40,6 +38,7 @@ trait AuthenticationContext extends js.Object {
     userId: String,
     extraQueryParameters: String
   ): PromiseAuthenticationResult = js.native
+  
   /**
     * Acquires token WITHOUT using interactive flow. It checks the cache to return existing result
     * if not expired. It tries to use refresh token if available. If it fails to get token without
@@ -52,5 +51,10 @@ trait AuthenticationContext extends js.Object {
     * @returns {Promise} Promise either fulfilled with AuthenticationResult object or rejected with error
     */
   def acquireTokenSilentAsync(resourceUrl: String, clientId: String, userId: String): PromiseAuthenticationResult = js.native
+  
+  var authority: String = js.native
+  
+  var tokenCache: TokenCache = js.native
+  
+  var validateAuthority: Boolean = js.native
 }
-

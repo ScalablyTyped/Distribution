@@ -2,14 +2,16 @@ package typings.forgeDi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-di/dist/resolvers/InstanceResolver", JSImport.Namespace)
 @js.native
 object instanceResolverMod extends js.Object {
+  
   @js.native
   trait InstanceResolver
     extends typings.forgeDi.resolverMod.default {
+    
     var instance: js.Any = js.native
   }
   
@@ -21,6 +23,4 @@ object instanceResolverMod extends js.Object {
       instance: js.Any
     ) = this()
   }
-  
 }
-

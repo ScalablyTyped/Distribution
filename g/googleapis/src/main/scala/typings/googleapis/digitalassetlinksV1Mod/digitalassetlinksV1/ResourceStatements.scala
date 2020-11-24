@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/digitalassetlinks/v1", "digitalassetlinks_v1.Resource$Statements")
 @js.native
 class ResourceStatements protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * digitalassetlinks.statements.list
     * @desc Retrieves a list of all statements from a given source that match
@@ -58,4 +60,3 @@ class ResourceStatements protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListResponse]
   ): Unit = js.native
 }
-

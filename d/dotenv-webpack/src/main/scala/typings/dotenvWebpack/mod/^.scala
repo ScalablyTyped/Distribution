@@ -2,12 +2,14 @@ package typings.dotenvWebpack.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("dotenv-webpack", JSImport.Namespace)
+/**
+  * A secure webpack plugin that supports dotenv and other environment variables
+  * and only exposes what you choose and use.
+  */
+@JSImport("dotenv-webpack", JSImport.Namespace)
 @js.native
-class ^ () extends js.Object {
+class ^ () extends DotenvWebpackPlugin {
   def this(options: Options) = this()
 }
-

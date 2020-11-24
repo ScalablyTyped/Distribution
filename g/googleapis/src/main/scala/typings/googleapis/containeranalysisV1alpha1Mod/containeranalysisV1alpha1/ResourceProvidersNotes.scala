@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1alpha1", "containeranalysis_v1alpha1.Resource$Providers$Notes")
 @js.native
 class ResourceProvidersNotes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var occurrences: ResourceProvidersNotesOccurrences = js.native
+  
   /**
     * containeranalysis.providers.notes.create
     * @desc Creates a new `Note`.
@@ -45,6 +46,7 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.providers.notes.delete
     * @desc Deletes the given `Note` from the system.
@@ -73,6 +75,7 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * containeranalysis.providers.notes.get
     * @desc Returns the requested `Note`.
@@ -101,6 +104,7 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.providers.notes.getIamPolicy
     * @desc Gets the access control policy for a note or an `Occurrence`
@@ -140,6 +144,7 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.providers.notes.list
     * @desc Lists all `Notes` for a given project.
@@ -172,6 +177,9 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListNotesResponse]
   ): Unit = js.native
+  
+  var occurrences: ResourceProvidersNotesOccurrences = js.native
+  
   /**
     * containeranalysis.providers.notes.patch
     * @desc Updates an existing `Note`.
@@ -202,6 +210,7 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.providers.notes.setIamPolicy
     * @desc Sets the access control policy on the specified `Note` or
@@ -242,6 +251,7 @@ class ResourceProvidersNotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.providers.notes.testIamPermissions
     * @desc Returns the permissions that a caller has on the specified note or
@@ -283,4 +293,3 @@ class ResourceProvidersNotes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

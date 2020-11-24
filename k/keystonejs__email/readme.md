@@ -10,12 +10,15 @@ Easily send emails from a KeystoneJS application
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/email |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 616 |
+| # downloads        | 5481 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/keystonejs/keystone#readme)
+- [Bugs](https://github.com/keystonejs/keystone/issues)
+- [Repository](https://github.com/keystonejs/keystone)
 - [Npm](https://www.npmjs.com/package/%40keystonejs%2Femail)
     
 

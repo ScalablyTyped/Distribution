@@ -11,9 +11,9 @@ import typings.std.HTMLDivElement
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Clock", "Clock")
+@JSImport("grommet/components/Clock", "Clock")
 @js.native
 class Clock protected ()
   extends Component[
@@ -27,8 +27,7 @@ class Clock protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6/components/Clock", "Clock")
+@JSImport("grommet/components/Clock", "Clock")
 @js.native
 object Clock extends TopLevel[
       ComponentClass[
@@ -36,4 +35,3 @@ object Clock extends TopLevel[
         ComponentState
       ]
     ]
-

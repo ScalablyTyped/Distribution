@@ -4,7 +4,7 @@ import typings.express.mod.NextFunction
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for **all models**
@@ -80,8 +80,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Model protected () extends js.Object {
   def this(data: js.Any) = this()
-  /** Contains additional model settings. */
-  var settings: Settings = js.native
+  
   def afterRemote(
     method: String,
     callback: js.Function3[
@@ -91,7 +90,9 @@ class Model protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterRemoteError(method: String, callback: NextFunction): Unit = js.native
+  
   /**
     * loopback 3.x Remote hooks
     * http://loopback.io/doc/en/lb3/Remote-hooks.html
@@ -107,18 +108,15 @@ class Model protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
+  /** Contains additional model settings. */
+  var settings: Settings = js.native
 }
-
 /* static members */
 @JSImport("loopback", "Model")
 @js.native
 object Model extends js.Object {
-  /** Data source to which the model is connected, if any. */
-  var dataSource: js.Any = js.native
-  /** The name of the model. */
-  var modelName: String = js.native
-  /** The `strong-remoting` */
-  var sharedMethod: js.Any = js.native
+  
   /**
     * Check if the given access token can invoke the specified method
     * @param {AccessToken} token The access token.
@@ -136,6 +134,10 @@ object Model extends js.Object {
     ctx: js.Any,
     callback: js.Function2[/* err */ String | Error, /* allowed */ Boolean, Unit]
   ): Unit = js.native
+  
+  /** Data source to which the model is connected, if any. */
+  var dataSource: js.Any = js.native
+  
   /**
     * Disable remote invocation for the method with the given name
     * @param {string} name The name of the method.
@@ -144,12 +146,14 @@ object Model extends js.Object {
     * `MyModel.prototype.myMethod`)
     */
   def disableRemoteMethod(name: String, isStatic: Boolean): Unit = js.native
+  
   /**
     * Disable remote invocation for the method with the given name.
     * @param {string} name The name of the method.
     * The name of the method (include "prototype." if the method is defined on the prototype).
     */
   def disableRemoteMethodByName(name: String): Unit = js.native
+  
   /**
     * Get the `Application` object to which the Model is attached
     * @callback {() => void} callback Callback function called with `(err, app)` arguments.
@@ -158,6 +162,10 @@ object Model extends js.Object {
     * @end
     */
   def getApp(callback: js.Function2[/* err */ Error, /* app */ Application, Unit]): Unit = js.native
+  
+  /** The name of the model. */
+  var modelName: String = js.native
+  
   /**
     * Enabled deeply-nested queries of related models via REST API
     * @param {string} relationName Name of the nested relation.
@@ -208,6 +216,7 @@ object Model extends js.Object {
     options: js.Object,
     filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * Enable remote invocation for the specified method.
     * See [Remote methods](docs.strongloop.com/display/LB/Remote+methods) for more information
@@ -221,11 +230,14 @@ object Model extends js.Object {
     * See [Remote methods - Options](docs.strongloop.com/display/LB/Remote+methods#Remotemethods-Options)
     */
   def remoteMethod(name: String, options: RemoteMethodOptions): Unit = js.native
+  
   /**
     * The `loopback.Model.extend()` method calls this when you create a model that extends another model.
     * Add any setup or configuration code you want executed when the model is created.
     * See  [Setting up a custom model](docs.strongloop.com/display/LB/Extending+built-in+models#Extendingbuilt-inmodels-Settingupacustommodel)
     */
   def setup(): Unit = js.native
+  
+  /** The `strong-remoting` */
+  var sharedMethod: js.Any = js.native
 }
-

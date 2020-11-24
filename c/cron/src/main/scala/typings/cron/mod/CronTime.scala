@@ -4,7 +4,7 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cron", "CronTime")
 @js.native
@@ -33,10 +33,12 @@ class CronTime protected () extends js.Object {
   def this(source: Date, zone: js.UndefOr[scala.Nothing], utcOffset: Double) = this()
   def this(source: Date, zone: String, utcOffset: String) = this()
   def this(source: Date, zone: String, utcOffset: Double) = this()
+  
   /**
     * Get the number of milliseconds in the future at which to fire our callbacks.
     */
   def getTimeout(): Double = js.native
+  
   /**
     * Tells you when ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
@@ -50,4 +52,3 @@ class CronTime protected () extends js.Object {
   @JSName("sendAt")
   def sendAt_Moment(): Moment = js.native
 }
-

@@ -1,23 +1,29 @@
 package typings.schemaUtils
 
-import typings.schemaUtils.validateMod.Schema
-import typings.schemaUtils.validateMod.ValidationErrorConfiguration
+import org.scalablytyped.runtime.Instantiable3
+import typings.schemaUtils.validationErrorMod.Schema
+import typings.schemaUtils.validationErrorMod.SchemaUtilErrorObject
+import typings.schemaUtils.validationErrorMod.ValidationErrorConfiguration
+import typings.schemaUtils.validationErrorMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("schema-utils", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /**
-    * @param {Schema} schema
-    * @param {Array<object> | object} options
-    * @param {ValidationErrorConfiguration=} configuration
-    * @returns {void}
-    */
-  def apply(schema: Schema, options: js.Array[js.Object]): Unit = js.native
-  def apply(schema: Schema, options: js.Array[js.Object], configuration: ValidationErrorConfiguration): Unit = js.native
-  def apply(schema: Schema, options: js.Object): Unit = js.native
-  def apply(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = js.native
+  
+  val ValidationError: Instantiable3[
+    /* errors */ js.Array[SchemaUtilErrorObject], 
+    /* schema */ Schema, 
+    /* configuration */ js.UndefOr[ValidationErrorConfiguration], 
+    default
+  ] = js.native
+  
+  val validate: js.Function3[
+    /* schema */ typings.schemaUtils.validateMod.Schema, 
+    /* options */ js.Array[js.Object] | js.Object, 
+    /* configuration */ js.UndefOr[typings.schemaUtils.validateMod.ValidationErrorConfiguration], 
+    Unit
+  ] = js.native
 }
-

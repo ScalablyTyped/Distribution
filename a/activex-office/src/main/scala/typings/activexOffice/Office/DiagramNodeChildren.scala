@@ -2,17 +2,13 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DiagramNodeChildren extends js.Object {
-  val Application: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val FirstChild: DiagramNode = js.native
-  val LastChild: DiagramNode = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: js.Any): DiagramNode = js.native
+  
   /**
     * @param Index [Index=-1]
     * @param NodeType [NodeType=1]
@@ -21,7 +17,20 @@ trait DiagramNodeChildren extends js.Object {
   def AddNode(Index: js.UndefOr[scala.Nothing], NodeType: MsoDiagramNodeType): DiagramNode = js.native
   def AddNode(Index: js.Any): DiagramNode = js.native
   def AddNode(Index: js.Any, NodeType: MsoDiagramNodeType): DiagramNode = js.native
+  
+  val Application: js.Any = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  val FirstChild: DiagramNode = js.native
+  
   def Item(Index: js.Any): DiagramNode = js.native
+  
+  val LastChild: DiagramNode = js.native
+  
+  val Parent: js.Any = js.native
+  
   def SelectAll(): Unit = js.native
 }
-

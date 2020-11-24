@@ -2,11 +2,12 @@ package typings.materialTab
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/tab/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2018 Google Inc.
@@ -31,18 +32,23 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ACTIVE: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ARIA_SELECTED: String = js.native
+    
     var CONTENT_SELECTOR: String = js.native
+    
     var INTERACTED_EVENT: String = js.native
+    
     var RIPPLE_SELECTOR: String = js.native
+    
     var TABINDEX: String = js.native
+    
     var TAB_INDICATOR_SELECTOR: String = js.native
   }
-  
 }
-

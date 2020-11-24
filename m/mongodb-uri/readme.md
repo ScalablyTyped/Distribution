@@ -11,8 +11,8 @@ A parser and formatter for MongoDB URIs.
 | Full name          | mongodb-uri |
 | Keywords           | mongodb, uri, url, parser, formatter, mongoose |
 | # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 2979132 |
+| # dependents       | 82 |
+| # downloads        | 4182181 |
 | # stars            | 6 |
 
 ## Links

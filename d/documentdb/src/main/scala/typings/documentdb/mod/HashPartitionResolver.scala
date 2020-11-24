@@ -2,7 +2,7 @@ package typings.documentdb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "HashPartitionResolver")
 @js.native
@@ -31,10 +31,10 @@ class HashPartitionResolver protected () extends PartitionResolver {
     collectionLinks: js.Array[String],
     options: ConsistentHashRingOptions
   ) = this()
+  
   /**
     * Given a partition key, returns a list of collection links to read from.
     * @param partitionKey - The partition key used to determine the target collection for query
     */
   def resolveForRead(partitionKey: String): js.Array[String] = js.native
 }
-

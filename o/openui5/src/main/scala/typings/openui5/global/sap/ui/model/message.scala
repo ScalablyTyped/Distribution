@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui.model
 import typings.openui5.sap.ui.core.message.MessageManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.message")
 @js.native
 object message extends js.Object {
+  
   @js.native
   class MessageModel protected ()
     extends typings.openui5.sap.ui.model.message.MessageModel {
@@ -17,6 +18,4 @@ object message extends js.Object {
       */
     def this(oMessageManager: MessageManager) = this()
   }
-  
 }
-

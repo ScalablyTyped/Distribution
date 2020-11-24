@@ -3,17 +3,19 @@ package typings.babylonjs
 import typings.babylonjs.anon.BlurSteps
 import typings.babylonjs.anon.Blurred
 import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", JSImport.Namespace)
 @js.native
 object depthOfFieldMergePostProcessMod extends js.Object {
+  
   @js.native
   class DepthOfFieldMergePostProcess protected () extends PostProcess {
     /**
@@ -35,145 +37,52 @@ object depthOfFieldMergePostProcessMod extends js.Object {
       originalFromInput: PostProcess,
       circleOfConfusion: PostProcess,
       blurSteps: js.Array[PostProcess],
-      options: Double,
-      camera: Nullable[Camera]
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: PostProcessOptions,
-      camera: Nullable[Camera]
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: Double,
+      options: Double | PostProcessOptions,
       camera: Nullable[Camera],
-      samplingMode: Double
+      samplingMode: js.UndefOr[Double],
+      engine: js.UndefOr[Engine],
+      reusable: js.UndefOr[Boolean],
+      textureType: js.UndefOr[Double],
+      blockCompilation: js.UndefOr[Boolean]
     ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
+    
     var blurSteps: js.Any = js.native
+    
+    /**
+      * Updates the effect with the current post process compile time values and recompiles the shader.
+      * @param defines Define statements that should be added at the beginning of the shader. (default: null)
+      * @param uniforms Set of uniform variables that will be passed to the shader. (default: null)
+      * @param samplers Set of Texture2D variables that will be passed to the shader. (default: null)
+      * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
+      * @param onCompiled Called when the shader has been compiled.
+      * @param onError Called if there is an error when compiling a shader.
+      */
+    def updateEffect(
+      defines: js.UndefOr[Nullable[String]],
+      uniforms: js.UndefOr[Nullable[js.Array[String]]],
+      samplers: js.UndefOr[Nullable[js.Array[String]]],
+      indexParameters: js.UndefOr[js.Any],
+      onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
+      onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
+    ): Unit = js.native
   }
   
   @js.native
   class DepthOfFieldMergePostProcessOptions () extends js.Object {
+    
     /**
       * Parameters to perform the merge of bloom effect
       */
     var bloom: js.UndefOr[Blurred] = js.native
+    
     /**
       * Parameters to perform the merge of the depth of field effect
       */
     var depthOfField: js.UndefOr[BlurSteps] = js.native
+    
     /**
       * The original image to merge on top of
       */
     var originalFromInput: PostProcess = js.native
   }
-  
 }
-

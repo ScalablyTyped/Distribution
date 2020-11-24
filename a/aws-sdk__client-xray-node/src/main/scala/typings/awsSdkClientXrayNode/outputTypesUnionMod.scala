@@ -2,11 +2,12 @@ package typings.awsSdkClientXrayNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-xray-node/types/OutputTypesUnion", JSImport.Namespace)
 @js.native
 object outputTypesUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientXrayNode.typesBatchGetTracesOutputMod.BatchGetTracesOutput
     - typings.awsSdkClientXrayNode.typesCreateSamplingRuleOutputMod.CreateSamplingRuleOutput
@@ -24,6 +25,4 @@ object outputTypesUnionMod extends js.Object {
     - typings.awsSdkClientXrayNode.typesUpdateSamplingRuleOutputMod.UpdateSamplingRuleOutput
   */
   trait OutputTypesUnion extends js.Object
-  
 }
-

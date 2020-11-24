@@ -6,7 +6,7 @@ import typings.pulumiAws.tableMod.Table
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/dynamodb/dynamodbMixins", "TableEventSubscription")
 @js.native
@@ -19,7 +19,8 @@ class TableEventSubscription protected () extends EventSubscription {
     args: TableEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ) = this()
+  
   val eventSourceMapping: EventSourceMapping = js.native
+  
   val table: Table = js.native
 }
-

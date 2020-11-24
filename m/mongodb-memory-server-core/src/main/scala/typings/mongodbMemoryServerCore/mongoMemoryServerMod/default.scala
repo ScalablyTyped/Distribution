@@ -2,7 +2,7 @@ package typings.mongodbMemoryServerCore.mongoMemoryServerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", JSImport.Default)
 @js.native
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
 class default () extends MongoMemoryServer {
   def this(opts: MongoMemoryServerOptsT) = this()
 }
-
 /* static members */
 @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Create an Mongo-Memory-Sever Instance that can be awaited
     * @param opts Mongo-Memory-Sever Options
@@ -27,4 +27,3 @@ object default extends js.Object {
   def create(): js.Promise[MongoMemoryServer] = js.native
   def create(opts: MongoMemoryServerOptsT): js.Promise[MongoMemoryServer] = js.native
 }
-

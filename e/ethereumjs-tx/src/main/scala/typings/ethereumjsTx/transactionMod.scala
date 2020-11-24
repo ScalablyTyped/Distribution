@@ -11,79 +11,107 @@ import typings.ethereumjsUtil.mod.BN
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethereumjs-tx/dist/transaction", JSImport.Namespace)
 @js.native
 object transactionMod extends js.Object {
+  
   @js.native
   trait Transaction extends js.Object {
+    
     var _common: js.Any = js.native
+    
     var _from: js.UndefOr[Buffer] = js.native
+    
     var _implementsEIP155: js.Any = js.native
+    
     var _isSigned: js.Any = js.native
+    
     var _overrideVSetterWithValidation: js.Any = js.native
+    
     var _senderPubKey: js.Any = js.native
+    
     var _validateV: js.Any = js.native
+    
     var data: Buffer = js.native
+    
     var gasLimit: Buffer = js.native
+    
     var gasPrice: Buffer = js.native
-    var nonce: Buffer = js.native
-    var r: Buffer = js.native
-    var raw: js.Array[Buffer] = js.native
-    var s: Buffer = js.native
-    var to: Buffer = js.native
-    var v: Buffer = js.native
-    var value: Buffer = js.native
+    
     /**
       * the minimum amount of gas the tx must have (DataFee + TxFee + Creation Fee)
       */
     def getBaseFee(): BN = js.native
+    
     /**
       * returns chain ID
       */
     def getChainId(): Double = js.native
+    
     /**
       * The amount of gas paid for the data in this tx
       */
     def getDataFee(): BN = js.native
+    
     /**
       * returns the sender's address
       */
     def getSenderAddress(): Buffer = js.native
+    
     /**
       * returns the public key of the sender
       */
     def getSenderPublicKey(): Buffer = js.native
+    
     /**
       * the up front amount that an account must have for this transaction to be valid
       */
     def getUpfrontCost(): BN = js.native
+    
     /**
       * Computes a sha3-256 hash of the serialized tx
       * @param includeSignature - Whether or not to include the signature
       */
     def hash(): Buffer = js.native
     def hash(includeSignature: Boolean): Buffer = js.native
+    
+    var nonce: Buffer = js.native
+    
+    var r: Buffer = js.native
+    
+    var raw: js.Array[Buffer] = js.native
+    
+    var s: Buffer = js.native
+    
     /**
       * Returns the rlp encoding of the transaction
       */
     def serialize(): Buffer = js.native
+    
     /**
       * sign a transaction with a given private key
       * @param privateKey - Must be 32 bytes in length
       */
     def sign(privateKey: Buffer): Unit = js.native
+    
+    var to: Buffer = js.native
+    
     /**
       * If the tx's `to` is to the creation address
       */
     def toCreationAddress(): Boolean = js.native
+    
     /**
       * Returns the transaction in JSON format
       * @see {@link https://github.com/ethereumjs/ethereumjs-util/blob/master/docs/index.md#defineproperties|ethereumjs-util}
       */
     def toJSON(): StringDictionary[String] | js.Array[String] = js.native
     def toJSON(labels: Boolean): StringDictionary[String] | js.Array[String] = js.native
+    
+    var v: Buffer = js.native
+    
     /**
       * Validates the signature and checks to see if it has enough gas.
       */
@@ -92,6 +120,9 @@ object transactionMod extends js.Object {
     def validate_false(stringError: `false`): Boolean = js.native
     @JSName("validate")
     def validate_true(stringError: `true`): String = js.native
+    
+    var value: Buffer = js.native
+    
     /**
       * Determines if the signature is valid
       */
@@ -139,6 +170,4 @@ object transactionMod extends js.Object {
     def this(data: TxData, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()
   }
-  
 }
-

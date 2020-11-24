@@ -4,11 +4,12 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface extends {@link XHierarchicalStorageAccess} interface. */
 @js.native
 trait XHierarchicalStorageAccess2 extends XHierarchicalStorageAccess {
+  
   /**
     * allows to get access to a child encrypted stream with encryption data using hierarchical path.
     *
@@ -27,8 +28,8 @@ trait XHierarchicalStorageAccess2 extends XHierarchicalStorageAccess {
     */
   def openEncryptedStreamByHierarchicalName(sStreamName: String, nOpenMode: Double, aEncryptionData: SeqEquiv[NamedValue]): XExtendedStorageStream = js.native
 }
-
 object XHierarchicalStorageAccess2 {
+  
   @scala.inline
   def apply(
     openEncryptedStreamByHierarchicalName: (String, Double, SeqEquiv[NamedValue]) => XExtendedStorageStream,
@@ -39,20 +40,23 @@ object XHierarchicalStorageAccess2 {
     val __obj = js.Dynamic.literal(openEncryptedStreamByHierarchicalName = js.Any.fromFunction3(openEncryptedStreamByHierarchicalName), openEncryptedStreamElementByHierarchicalName = js.Any.fromFunction3(openEncryptedStreamElementByHierarchicalName), openStreamElementByHierarchicalName = js.Any.fromFunction2(openStreamElementByHierarchicalName), removeStreamElementByHierarchicalName = js.Any.fromFunction1(removeStreamElementByHierarchicalName))
     __obj.asInstanceOf[XHierarchicalStorageAccess2]
   }
+  
   @scala.inline
   implicit class XHierarchicalStorageAccess2Ops[Self <: XHierarchicalStorageAccess2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setOpenEncryptedStreamByHierarchicalName(value: (String, Double, SeqEquiv[NamedValue]) => XExtendedStorageStream): Self = this.set("openEncryptedStreamByHierarchicalName", js.Any.fromFunction3(value))
   }
-  
 }
-

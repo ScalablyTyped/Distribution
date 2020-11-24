@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Files")
 @js.native
 class ResourceFiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.files.get
     * @desc Retrieves a report file by its report ID and file ID. This method
@@ -39,6 +41,7 @@ class ResourceFiles protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceFilesGet, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceFilesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
+  
   /**
     * dfareporting.files.list
     * @desc Lists files for a user profile.
@@ -73,4 +76,3 @@ class ResourceFiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFileList]
   ): Unit = js.native
 }
-

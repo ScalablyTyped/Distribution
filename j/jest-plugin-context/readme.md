@@ -10,9 +10,9 @@ Adds context as an alternative to describe to jest.
 | ------------------ | :-------------: |
 | Full name          | jest-plugin-context |
 | Keywords           | context, jest, jest-plugin, plugin, test |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 499348 |
+| # downloads        | 590903 |
 | # stars            | 0 |
 
 ## Links

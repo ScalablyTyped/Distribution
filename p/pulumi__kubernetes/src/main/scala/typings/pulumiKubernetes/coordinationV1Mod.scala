@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/coordination/v1", JSImport.Namespace)
 @js.native
 object coordinationV1Mod extends js.Object {
+  
   @js.native
   class Lease protected ()
     extends typings.pulumiKubernetes.v1LeaseMod.Lease {
@@ -26,6 +27,27 @@ object coordinationV1Mod extends js.Object {
     def this(name: String, args: LeaseArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: LeaseArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object Lease extends js.Object {
+    
+    /**
+      * Get an existing Lease resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LeaseMod.Lease = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LeaseMod.Lease = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Lease.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/lease.Lease */ Boolean = js.native
   }
   
   @js.native
@@ -43,30 +65,10 @@ object coordinationV1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: LeaseListArgs, opts: CustomResourceOptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Lease extends js.Object {
-    /**
-      * Get an existing Lease resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LeaseMod.Lease = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LeaseMod.Lease = js.native
-    /**
-      * Returns true if the given object is an instance of Lease.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/lease.Lease */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object LeaseList extends js.Object {
+    
     /**
       * Get an existing LeaseList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,12 +79,11 @@ object coordinationV1Mod extends js.Object {
       */
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LeaseListMod.LeaseList = js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LeaseListMod.LeaseList = js.native
+    
     /**
       * Returns true if the given object is an instance of LeaseList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/leaseList.LeaseList */ Boolean = js.native
   }
-  
 }
-

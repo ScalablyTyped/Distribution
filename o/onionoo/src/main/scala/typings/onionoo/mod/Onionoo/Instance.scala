@@ -9,10 +9,11 @@ import typings.onionoo.onionooStrings.uptime
 import typings.onionoo.onionooStrings.weights
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instance extends js.Object {
+  
   @JSName("get")
   def get_bandwidth(endpoint: bandwidth): GotPromise[Bandwidth] = js.native
   @JSName("get")
@@ -38,4 +39,3 @@ trait Instance extends js.Object {
   @JSName("get")
   def get_weights(endpoint: weights, query: QueryParameters): GotPromise[Weights] = js.native
 }
-

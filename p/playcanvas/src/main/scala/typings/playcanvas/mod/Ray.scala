@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new infinite ray starting at a given origin and pointing in a given direction.
@@ -25,4 +25,3 @@ class Ray ()
   def this(origin: js.UndefOr[scala.Nothing], direction: typings.playcanvas.pc.Vec3) = this()
   def this(origin: typings.playcanvas.pc.Vec3, direction: typings.playcanvas.pc.Vec3) = this()
 }
-

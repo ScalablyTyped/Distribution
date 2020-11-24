@@ -2,7 +2,7 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region IDefinition
 /* Rewritten from type alias, can be one of: 
@@ -11,13 +11,14 @@ import scala.scalajs.js.annotation._
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty
 */
 trait ExpressionType extends js.Object
-
 object ExpressionType {
+  
   @scala.inline
   def _empty: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty = "".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty]
+  
   @scala.inline
   def always: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always = "always".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always]
+  
   @scala.inline
   def optional: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional = "optional".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional]
 }
-

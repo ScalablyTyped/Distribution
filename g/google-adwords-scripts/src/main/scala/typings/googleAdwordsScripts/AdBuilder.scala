@@ -2,15 +2,15 @@ package typings.googleAdwordsScripts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdBuilder[T]
   extends AdWordsBuilder[T]
      with hasFinalUrlBuilder[T]
      with hasTrackingTemplateBuilder[T]
-
 object AdBuilder {
+  
   @scala.inline
   def apply[T](
     build: () => AdWordsOperation[T],
@@ -23,4 +23,3 @@ object AdBuilder {
     __obj.asInstanceOf[AdBuilder[T]]
   }
 }
-

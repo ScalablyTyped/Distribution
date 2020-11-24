@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OrientationSensor extends IOrientationSensor
-
 object OrientationSensor {
+  
   @scala.inline
   def apply(
     getCurrentReading: () => OrientationSensorReading,
@@ -19,4 +19,3 @@ object OrientationSensor {
     __obj.asInstanceOf[OrientationSensor]
   }
 }
-

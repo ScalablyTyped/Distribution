@@ -6,7 +6,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/extensions/v1beta1", "NetworkPolicy")
 @js.native
@@ -24,11 +24,11 @@ class NetworkPolicy protected ()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: NetworkPolicyArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/extensions/v1beta1", "NetworkPolicy")
 @js.native
 object NetworkPolicy extends js.Object {
+  
   /**
     * Get an existing NetworkPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -39,10 +39,10 @@ object NetworkPolicy extends js.Object {
     */
   def get(name: String, id: Input[ID]): typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean = js.native
 }
-

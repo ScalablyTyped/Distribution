@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Activities")
 @js.native
 class ResourceActivities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.activities.insert
     * @desc Posts a bulletin for a specific channel. (The user submitting the
@@ -48,6 +50,7 @@ class ResourceActivities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaActivity]
   ): Unit = js.native
+  
   /**
     * youtube.activities.list
     * @desc Returns a list of channel activity events that match the request
@@ -89,4 +92,3 @@ class ResourceActivities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaActivityListResponse]
   ): Unit = js.native
 }
-

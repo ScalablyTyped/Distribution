@@ -2,11 +2,12 @@ package typings.steamid.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("steamid", "fromIndividualAccountID")
 @js.native
 object fromIndividualAccountID extends js.Object {
+  
   def apply(accountid: String): SteamID = js.native
   /**
     * Create an individual SteamID in the public universe given an accountid
@@ -14,4 +15,3 @@ object fromIndividualAccountID extends js.Object {
     */
   def apply(accountid: Double): SteamID = js.native
 }
-

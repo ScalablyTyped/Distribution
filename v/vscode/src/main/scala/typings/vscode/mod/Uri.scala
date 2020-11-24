@@ -3,7 +3,7 @@ package typings.vscode.mod
 import typings.vscode.anon.Authority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Uri")
 @js.native
@@ -12,15 +12,18 @@ class Uri protected () extends ConfigurationScope {
     * Use the `file` and `parse` factory functions to create new `Uri` objects.
     */
   protected def this(scheme: String, authority: String, path: String, query: String, fragment: String) = this()
+  
   /**
     * Authority is the `www.msft.com` part of `http://www.msft.com/some/path?query#fragment`.
     * The part between the first double slashes and the next slash.
     */
   val authority: String = js.native
+  
   /**
     * Fragment is the `fragment` part of `http://www.msft.com/some/path?query#fragment`.
     */
   val fragment: String = js.native
+  
   /**
     * The string representing the corresponding file system path of this Uri.
     *
@@ -42,26 +45,32 @@ class Uri protected () extends ConfigurationScope {
     ```
     */
   val fsPath: String = js.native
+  
   /**
     * Path is the `/some/path` part of `http://www.msft.com/some/path?query#fragment`.
     */
   val path: String = js.native
+  
   /**
     * Query is the `query` part of `http://www.msft.com/some/path?query#fragment`.
     */
   val query: String = js.native
+  
   /**
     * Scheme is the `http` part of `http://www.msft.com/some/path?query#fragment`.
     * The part before the first colon.
     */
   val scheme: String = js.native
+  
   /**
     * Returns a JSON representation of this Uri.
     *
     * @return An object.
     */
   def toJSON(): js.Any = js.native
+  
   def toString(skipEncoding: Boolean): String = js.native
+  
   /**
     * Derive a new Uri from this Uri.
     *
@@ -78,11 +87,11 @@ class Uri protected () extends ConfigurationScope {
     */
   def `with`(change: Authority): Uri = js.native
 }
-
 /* static members */
 @JSImport("vscode", "Uri")
 @js.native
 object Uri extends js.Object {
+  
   /**
     * Create an URI from a file system path. The [scheme](#Uri.scheme)
     * will be `file`.
@@ -106,6 +115,7 @@ object Uri extends js.Object {
     * @return A new Uri instance.
     */
   def file(path: String): Uri = js.native
+  
   /**
     * Create a new uri which path is the result of joining
     * the path of the base uri with the provided path segments.
@@ -127,6 +137,7 @@ object Uri extends js.Object {
     * @returns A new uri which path is joined with the given fragments
     */
   def joinPath(base: Uri, pathSegments: String*): Uri = js.native
+  
   /**
     * Create an URI from a string, e.g. `http://www.msft.com/some/path`,
     * `file:///usr/home`, or `scheme:with/path`.
@@ -143,4 +154,3 @@ object Uri extends js.Object {
   def parse(value: String): Uri = js.native
   def parse(value: String, strict: Boolean): Uri = js.native
 }
-

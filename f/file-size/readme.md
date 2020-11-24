@@ -12,7 +12,7 @@ Lightweight filesize to human-readable / proportions w/o dependencies.
 | Keywords           | filesize, file, size, bytes, human, readable, iec, si, jedec, filesystem, humanize, numbers |
 | # releases         | 0 |
 | # dependents       | 37 |
-| # downloads        | 1265002 |
+| # downloads        | 2572983 |
 | # stars            | 5 |
 
 ## Links

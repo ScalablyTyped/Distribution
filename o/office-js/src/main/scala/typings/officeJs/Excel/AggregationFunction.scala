@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AggregationFunction extends js.Object
-
 /**
   *
   * Aggregation Function for the Data Pivot Field.
@@ -16,6 +15,7 @@ sealed trait AggregationFunction extends js.Object
 @JSGlobal("Excel.AggregationFunction")
 @js.native
 object AggregationFunction extends js.Object {
+  
   /**
     * Excel will automatically select the aggregation based on the data items.
     *
@@ -106,6 +106,4 @@ object AggregationFunction extends js.Object {
     */
   @js.native
   sealed trait varianceP extends AggregationFunction
-  
 }
-

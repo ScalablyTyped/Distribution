@@ -2,12 +2,12 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchPaneSuggestionsRequest extends ISearchPaneSuggestionsRequest
-
 object SearchPaneSuggestionsRequest {
+  
   @scala.inline
   def apply(
     getDeferral: () => SearchPaneSuggestionsRequestDeferral,
@@ -18,4 +18,3 @@ object SearchPaneSuggestionsRequest {
     __obj.asInstanceOf[SearchPaneSuggestionsRequest]
   }
 }
-

@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createSolutionBuilderHost")
 @js.native
 object createSolutionBuilderHost extends js.Object {
+  
   def apply[T /* <: BuilderProgram */](): SolutionBuilderHost[T] = js.native
   def apply[T /* <: BuilderProgram */](
     system: js.UndefOr[scala.Nothing],
@@ -184,4 +185,3 @@ object createSolutionBuilderHost extends js.Object {
     reportErrorSummary: ReportEmitErrorSummary
   ): SolutionBuilderHost[T] = js.native
 }
-

@@ -11,8 +11,8 @@ The lodash method `_.maxBy` exported as a module.
 | Full name          | lodash.maxby |
 | Keywords           | lodash-modularized, maxby |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 10721273 |
+| # dependents       | 29 |
+| # downloads        | 16756735 |
 | # stars            | 0 |
 
 ## Links

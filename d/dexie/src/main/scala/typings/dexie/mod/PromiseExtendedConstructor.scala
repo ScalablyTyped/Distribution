@@ -3,10 +3,11 @@ package typings.dexie.mod
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PromiseExtendedConstructor extends PromiseConstructor {
+  
   def race[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): PromiseExtended[T1 | T2] = js.native
   def race[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): PromiseExtended[T1 | T2 | T3] = js.native
   def race[T1, T2, T3, T4](
@@ -81,7 +82,7 @@ trait PromiseExtendedConstructor extends PromiseConstructor {
       T10 | js.Thenable[T10]
     ]
   ): PromiseExtended[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
+  
   @JSName("reject")
   def reject_T[T](reason: js.Any): PromiseExtended[T] = js.native
 }
-

@@ -4,10 +4,11 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ODataMetadata extends EventProvider {
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'failed' event of this
     * <code>sap.ui.model.odata.ODataMetadata</code>.
@@ -20,6 +21,7 @@ trait ODataMetadata extends EventProvider {
     */
   def attachFailed(oData: js.Any, fnFunction: js.Any): ODataMetadata = js.native
   def attachFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataMetadata = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'loaded' event of this
     * <code>sap.ui.model.odata.ODataMetadata</code>.
@@ -32,6 +34,7 @@ trait ODataMetadata extends EventProvider {
     */
   def attachLoaded(oData: js.Any, fnFunction: js.Any): ODataMetadata = js.native
   def attachLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataMetadata = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'failed' event of this
     * <code>sap.ui.model.odata.ODataMetadata</code>.The passed function and listener object must match the
@@ -41,6 +44,7 @@ trait ODataMetadata extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachFailed(fnFunction: js.Any, oListener: js.Any): ODataMetadata = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'loaded' event of this
     * <code>sap.ui.model.odata.ODataMetadata</code>.The passed function and listener object must match the
@@ -50,42 +54,50 @@ trait ODataMetadata extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachLoaded(fnFunction: js.Any, oListener: js.Any): ODataMetadata = js.native
+  
   /**
     * Fire event failed to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireFailed(mArguments: js.Any): ODataMetadata = js.native
+  
   /**
     * Fire event loaded to attached listeners.
     * @returns <code>this</code> to allow method chaining
     */
   def fireLoaded(): ODataMetadata = js.native
+  
   /**
     * Return the metadata object
     * @returns metdata object
     */
   def getServiceMetadata(): js.Any = js.native
+  
   /**
     * Get the the use-batch extension value if any
     * @returns true/false
     */
   def getUseBatch(): Boolean = js.native
+  
   /**
     * Checks whether metadata loading has already failed
     * @returns returns whether metadata request has failed
     */
   def isFailed(): Boolean = js.native
+  
   /**
     * Checks whether metadata is available
     * @returns returns whether metadata is already loaded
     */
   def isLoaded(): Boolean = js.native
+  
   /**
     * Returns a promise for the loaded state of the metadata
     * @returns returns a promise on metadata loaded state
     */
   def loaded(): JQueryPromise[_] = js.native
+  
   /**
     * Refreshes the metadata creating a new request to the server.Returns a new promise which can be
     * resolved or rejected depending on the metadata loading state.
@@ -93,4 +105,3 @@ trait ODataMetadata extends EventProvider {
     */
   def refresh(): JQueryPromise[_] = js.native
 }
-

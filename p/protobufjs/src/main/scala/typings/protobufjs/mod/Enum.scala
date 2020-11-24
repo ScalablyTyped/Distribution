@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Enum")
 @js.native
@@ -96,14 +96,7 @@ class Enum protected () extends ReflectionObject {
     comment: String,
     comments: StringDictionary[String]
   ) = this()
-  /** Value comment texts, if any. */
-  var comments: StringDictionary[String] = js.native
-  /** Reserved ranges, if any. */
-  var reserved: js.Array[js.Array[Double] | String] = js.native
-  /** Enum values by name. */
-  var values: StringDictionary[Double] = js.native
-  /** Enum values by id. */
-  var valuesById: NumberDictionary[String] = js.native
+  
   /**
     * Adds a value to this enum.
     * @param name Value name
@@ -115,18 +108,24 @@ class Enum protected () extends ReflectionObject {
     */
   def add(name: String, id: Double): Enum = js.native
   def add(name: String, id: Double, comment: String): Enum = js.native
+  
+  /** Value comment texts, if any. */
+  var comments: StringDictionary[String] = js.native
+  
   /**
     * Tests if the specified id is reserved.
     * @param id Id to test
     * @returns `true` if reserved, otherwise `false`
     */
   def isReservedId(id: Double): Boolean = js.native
+  
   /**
     * Tests if the specified name is reserved.
     * @param name Name to test
     * @returns `true` if reserved, otherwise `false`
     */
   def isReservedName(name: String): Boolean = js.native
+  
   /**
     * Removes a value from this enum
     * @param name Value name
@@ -135,13 +134,23 @@ class Enum protected () extends ReflectionObject {
     * @throws {Error} If `name` is not a name of this enum
     */
   def remove(name: String): Enum = js.native
+  
+  /** Reserved ranges, if any. */
+  var reserved: js.Array[js.Array[Double] | String] = js.native
+  
   def toJSON(toJSONOptions: IToJSONOptions): IEnum = js.native
+  
+  /** Enum values by name. */
+  var values: StringDictionary[Double] = js.native
+  
+  /** Enum values by id. */
+  var valuesById: NumberDictionary[String] = js.native
 }
-
 /* static members */
 @JSImport("protobufjs", "Enum")
 @js.native
 object Enum extends js.Object {
+  
   /**
     * Constructs an enum from an enum descriptor.
     * @param name Enum name
@@ -151,4 +160,3 @@ object Enum extends js.Object {
     */
   def fromJSON(name: String, json: IEnum): Enum = js.native
 }
-

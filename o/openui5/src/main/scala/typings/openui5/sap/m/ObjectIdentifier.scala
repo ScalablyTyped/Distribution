@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TextDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectIdentifier extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -15,6 +16,7 @@ trait ObjectIdentifier extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): ObjectIdentifier = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): ObjectIdentifier = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>titlePress</code> event of this
     * <code>sap.m.ObjectIdentifier</code>.When called, the context of the event handler (its
@@ -31,6 +33,7 @@ trait ObjectIdentifier extends Control {
     */
   def attachTitlePress(oData: js.Any, fnFunction: js.Any): ObjectIdentifier = js.native
   def attachTitlePress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ObjectIdentifier = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>titlePress</code> event of this
     * <code>sap.m.ObjectIdentifier</code>.The passed function and listener object must match the ones used
@@ -41,6 +44,7 @@ trait ObjectIdentifier extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachTitlePress(fnFunction: js.Any, oListener: js.Any): ObjectIdentifier = js.native
+  
   /**
     * Fires event <code>titlePress</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>domRef</code> of type <code>object</code>DOM reference of the object
@@ -50,34 +54,40 @@ trait ObjectIdentifier extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireTitlePress(mArguments: js.Any): ObjectIdentifier = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>badgeAttachments</code>.Indicates whether or not the
     * attachments icon is displayed.
     * @returns Value of property <code>badgeAttachments</code>
     */
   def getBadgeAttachments(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>badgeNotes</code>.Indicates whether or not the notes icon is
     * displayed.
     * @returns Value of property <code>badgeNotes</code>
     */
   def getBadgeNotes(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>badgePeople</code>.Indicates whether or not the address book
     * icon is displayed.
     * @returns Value of property <code>badgePeople</code>
     */
   def getBadgePeople(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Defines the object text.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.Specifies the element's text
     * directionality with enumerated options. By default, the control inherits text direction from the
@@ -86,11 +96,13 @@ trait ObjectIdentifier extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the object title.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Gets current value of property <code>titleActive</code>.Indicates if the ObjectIdentifier's title is
     * clickable.Default value is <code>false</code>.
@@ -98,11 +110,13 @@ trait ObjectIdentifier extends Control {
     * @returns Value of property <code>titleActive</code>
     */
   def getTitleActive(): Boolean = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -111,6 +125,7 @@ trait ObjectIdentifier extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>badgeAttachments</code>.Indicates whether or not the attachments
     * icon is displayed.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -119,6 +134,7 @@ trait ObjectIdentifier extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBadgeAttachments(bBadgeAttachments: Boolean): ObjectIdentifier = js.native
+  
   /**
     * Sets a new value for property <code>badgeNotes</code>.Indicates whether or not the notes icon is
     * displayed.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -127,6 +143,7 @@ trait ObjectIdentifier extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBadgeNotes(bBadgeNotes: Boolean): ObjectIdentifier = js.native
+  
   /**
     * Sets a new value for property <code>badgePeople</code>.Indicates whether or not the address book
     * icon is displayed.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -135,12 +152,14 @@ trait ObjectIdentifier extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBadgePeople(bBadgePeople: Boolean): ObjectIdentifier = js.native
+  
   /**
     * Sets text.Default value is empty/undefined.
     * @param sText New value for property text
     * @returns this to allow method chaining
     */
   def setText(sText: String): ObjectIdentifier = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.Specifies the element's text directionality
     * with enumerated options. By default, the control inherits text direction from the DOM.When called
@@ -151,12 +170,14 @@ trait ObjectIdentifier extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextDirection(sTextDirection: TextDirection): ObjectIdentifier = js.native
+  
   /**
     * Sets the title.Default value is empty/undefined.
     * @param sTitle New value for property title
     * @returns this to allow method chaining
     */
   def setTitle(sTitle: String): ObjectIdentifier = js.native
+  
   /**
     * Sets property titleActive.Default value is false.
     * @param bValue new value for property titleActive
@@ -164,4 +185,3 @@ trait ObjectIdentifier extends Control {
     */
   def setTitleActive(bValue: Boolean): ObjectIdentifier = js.native
 }
-

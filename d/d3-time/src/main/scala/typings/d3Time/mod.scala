@@ -3,13 +3,181 @@ package typings.d3Time
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-time", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val timeDay: CountableTimeInterval = js.native
+  
+  def timeDays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeFriday: CountableTimeInterval = js.native
+  
+  def timeFridays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeHour: CountableTimeInterval = js.native
+  
+  def timeHours(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  def timeInterval(
+    floor: js.Function1[/* date */ Date, Unit],
+    offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
+  ): TimeInterval_ = js.native
+  def timeInterval(
+    floor: js.Function1[/* date */ Date, Unit],
+    offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
+    count: js.Function2[/* start */ Date, /* end */ Date, Double]
+  ): CountableTimeInterval = js.native
+  def timeInterval(
+    floor: js.Function1[/* date */ Date, Unit],
+    offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
+    count: js.Function2[/* start */ Date, /* end */ Date, Double],
+    field: js.Function1[/* date */ Date, Double]
+  ): CountableTimeInterval = js.native
+  
+  val timeMillisecond: CountableTimeInterval = js.native
+  
+  def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeMinute: CountableTimeInterval = js.native
+  
+  def timeMinutes(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeMonday: CountableTimeInterval = js.native
+  
+  def timeMondays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeMonth: CountableTimeInterval = js.native
+  
+  def timeMonths(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeSaturday: CountableTimeInterval = js.native
+  
+  def timeSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeSecond: CountableTimeInterval = js.native
+  
+  def timeSeconds(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeSunday: CountableTimeInterval = js.native
+  
+  def timeSundays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeThursday: CountableTimeInterval = js.native
+  
+  def timeThursdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeTuesday: CountableTimeInterval = js.native
+  
+  def timeTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeWednesday: CountableTimeInterval = js.native
+  
+  def timeWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeWeek: CountableTimeInterval = js.native
+  
+  def timeWeeks(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val timeYear: CountableTimeInterval = js.native
+  
+  def timeYears(start: Date, stop: Date): js.Array[Date] = js.native
+  def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcDay: CountableTimeInterval = js.native
+  
+  def utcDays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcFriday: CountableTimeInterval = js.native
+  
+  def utcFridays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcHour: CountableTimeInterval = js.native
+  
+  def utcHours(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcMillisecond: CountableTimeInterval = js.native
+  
+  def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcMinute: CountableTimeInterval = js.native
+  
+  def utcMinutes(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcMonday: CountableTimeInterval = js.native
+  
+  def utcMondays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcMonth: CountableTimeInterval = js.native
+  
+  def utcMonths(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcSaturday: CountableTimeInterval = js.native
+  
+  def utcSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcSecond: CountableTimeInterval = js.native
+  
+  def utcSeconds(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcSunday: CountableTimeInterval = js.native
+  
+  def utcSundays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcThursday: CountableTimeInterval = js.native
+  
+  def utcThursdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcTuesday: CountableTimeInterval = js.native
+  
+  def utcTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcWednesday: CountableTimeInterval = js.native
+  
+  def utcWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcWeek: CountableTimeInterval = js.native
+  
+  def utcWeeks(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
+  val utcYear: CountableTimeInterval = js.native
+  
+  def utcYears(start: Date, stop: Date): js.Array[Date] = js.native
+  def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  
   @js.native
   trait CountableTimeInterval extends TimeInterval_ {
+    
     /**
       * Returns the number of interval boundaries after start (exclusive) and before or equal to end (inclusive).
       *
@@ -20,6 +188,7 @@ object mod extends js.Object {
       * @param end An end date object.
       */
     def count(start: Date, end: Date): Double = js.native
+    
     /**
       * Returns a filtered view of this interval representing every stepth date.
       *
@@ -43,9 +212,11 @@ object mod extends js.Object {
   
   @js.native
   trait TimeInterval_ extends js.Object {
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
-      * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+      * Equivalent to interval.floor, except it date is not specified, it defaults to the current time.
+      * For example, d3.timeYear(date) and d3.timeYear.floor(date) are equivalent.
       *
       * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
       *
@@ -62,7 +233,9 @@ object mod extends js.Object {
       *
       * @param date A date object.
       */
+    def apply(): Date = js.native
     def apply(date: Date): Date = js.native
+    
     /**
       * Returns a new date representing the earliest interval boundary date after or equal to date.
       *
@@ -76,6 +249,7 @@ object mod extends js.Object {
       * @param date A date object.
       */
     def ceil(date: Date): Date = js.native
+    
     /**
       * Returns a new interval that is a filtered subset of this interval using the specified test function.
       *
@@ -83,6 +257,7 @@ object mod extends js.Object {
       * the specified date should be considered part of the interval.
       */
     def filter(test: js.Function1[/* date */ Date, Boolean]): TimeInterval_ = js.native
+    
     /**
       * Returns a new date representing the latest interval boundary date before or equal to date.
       *
@@ -102,6 +277,7 @@ object mod extends js.Object {
       * @param date A date object.
       */
     def floor(date: Date): Date = js.native
+    
     /**
       * Returns a new date equal to date plus step intervals.
       *
@@ -117,6 +293,7 @@ object mod extends js.Object {
       */
     def offset(date: Date): Date = js.native
     def offset(date: Date, step: Double): Date = js.native
+    
     /**
       * Returns an array of dates representing every interval boundary after or equal to start (inclusive) and before stop (exclusive).
       *
@@ -136,6 +313,7 @@ object mod extends js.Object {
       */
     def range(start: Date, stop: Date): js.Array[Date] = js.native
     def range(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    
     /**
       * Returns a new date representing the closest interval boundary date to date.
       *
@@ -148,111 +326,4 @@ object mod extends js.Object {
       */
     def round(date: Date): Date = js.native
   }
-  
-  val timeDay: CountableTimeInterval = js.native
-  val timeFriday: CountableTimeInterval = js.native
-  val timeHour: CountableTimeInterval = js.native
-  val timeMillisecond: CountableTimeInterval = js.native
-  val timeMinute: CountableTimeInterval = js.native
-  val timeMonday: CountableTimeInterval = js.native
-  val timeMonth: CountableTimeInterval = js.native
-  val timeSaturday: CountableTimeInterval = js.native
-  val timeSecond: CountableTimeInterval = js.native
-  val timeSunday: CountableTimeInterval = js.native
-  val timeThursday: CountableTimeInterval = js.native
-  val timeTuesday: CountableTimeInterval = js.native
-  val timeWednesday: CountableTimeInterval = js.native
-  val timeWeek: CountableTimeInterval = js.native
-  val timeYear: CountableTimeInterval = js.native
-  val utcDay: CountableTimeInterval = js.native
-  val utcFriday: CountableTimeInterval = js.native
-  val utcHour: CountableTimeInterval = js.native
-  val utcMillisecond: CountableTimeInterval = js.native
-  val utcMinute: CountableTimeInterval = js.native
-  val utcMonday: CountableTimeInterval = js.native
-  val utcMonth: CountableTimeInterval = js.native
-  val utcSaturday: CountableTimeInterval = js.native
-  val utcSecond: CountableTimeInterval = js.native
-  val utcSunday: CountableTimeInterval = js.native
-  val utcThursday: CountableTimeInterval = js.native
-  val utcTuesday: CountableTimeInterval = js.native
-  val utcWednesday: CountableTimeInterval = js.native
-  val utcWeek: CountableTimeInterval = js.native
-  val utcYear: CountableTimeInterval = js.native
-  def timeDays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeFridays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeHours(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeInterval(
-    floor: js.Function1[/* date */ Date, Unit],
-    offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
-  ): TimeInterval_ = js.native
-  def timeInterval(
-    floor: js.Function1[/* date */ Date, Unit],
-    offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
-    count: js.Function2[/* start */ Date, /* end */ Date, Double]
-  ): CountableTimeInterval = js.native
-  def timeInterval(
-    floor: js.Function1[/* date */ Date, Unit],
-    offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
-    count: js.Function2[/* start */ Date, /* end */ Date, Double],
-    field: js.Function1[/* date */ Date, Double]
-  ): CountableTimeInterval = js.native
-  def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeMinutes(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeMondays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeMonths(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeSeconds(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeSundays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeThursdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeWeeks(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def timeYears(start: Date, stop: Date): js.Array[Date] = js.native
-  def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcDays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcFridays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcHours(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcMinutes(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcMondays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcMonths(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcSeconds(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcSundays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcThursdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcWeeks(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
-  def utcYears(start: Date, stop: Date): js.Array[Date] = js.native
-  def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
 }
-

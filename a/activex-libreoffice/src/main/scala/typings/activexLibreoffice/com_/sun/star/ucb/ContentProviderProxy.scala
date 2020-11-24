@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a proxy for a content provider.
@@ -18,8 +18,8 @@ trait ContentProviderProxy
   extends XContentProviderSupplier
      with XContentProvider
      with XParameterizedContentProvider
-
 object ContentProviderProxy {
+  
   @scala.inline
   def apply(
     ContentProvider: XContentProvider,
@@ -36,4 +36,3 @@ object ContentProviderProxy {
     __obj.asInstanceOf[ContentProviderProxy]
   }
 }
-

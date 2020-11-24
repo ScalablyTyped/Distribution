@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads
 
-Typings are for version 6.2.6
+Typings are for version 6.3.1
 
 ## Library description:
 An isomophic http framework
@@ -10,9 +10,9 @@ An isomophic http framework
 | ------------------ | :-------------: |
 | Full name          | roads |
 | Keywords           | http, framework, isomorphic |
-| # releases         | 21 |
+| # releases         | 28 |
 | # dependents       | 4 |
-| # downloads        | 7507 |
+| # downloads        | 5763 |
 | # stars            | 1 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.murmurhash
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("murmurhash", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * JS Implementation of MurmurHash3 (r136) (as of May 20, 2011)
     *
@@ -16,6 +17,7 @@ object mod extends js.Object {
     */
   def apply(key: String): Double = js.native
   def apply(key: String, seed: Double): Double = js.native
+  
   /**
     * JS Implementation of MurmurHash2
     *
@@ -25,6 +27,7 @@ object mod extends js.Object {
     */
   def v2(str: String): Double = js.native
   def v2(str: String, seed: Double): Double = js.native
+  
   /**
     * JS Implementation of MurmurHash3 (r136) (as of May 20, 2011)
     *
@@ -35,4 +38,3 @@ object mod extends js.Object {
   def v3(key: String): Double = js.native
   def v3(key: String, seed: Double): Double = js.native
 }
-

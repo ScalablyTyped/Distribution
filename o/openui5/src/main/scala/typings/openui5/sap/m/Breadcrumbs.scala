@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Breadcrumbs extends Control {
+  
   /**
     * Adds some link to the aggregation <code>links</code>.
     * @since 1.34
@@ -14,12 +15,14 @@ trait Breadcrumbs extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addLink(oLink: Link): Breadcrumbs = js.native
+  
   /**
     * Destroys all the links in the aggregation <code>links</code>.
     * @since 1.34
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyLinks(): Breadcrumbs = js.native
+  
   /**
     * Gets current value of property <code>currentLocationText</code>.Determines the text of current/last
     * element in the Breadcrumbs path.
@@ -27,6 +30,7 @@ trait Breadcrumbs extends Control {
     * @returns Value of property <code>currentLocationText</code>
     */
   def getCurrentLocationText(): String = js.native
+  
   /**
     * Gets content of aggregation <code>links</code>.A list of all the active link elements in the
     * Breadcrumbs control.<b>Note:</b> Enabling the property <code>wrapping</code> of the link will not
@@ -35,6 +39,7 @@ trait Breadcrumbs extends Control {
     * @since 1.34
     */
   def getLinks(): js.Array[Link] = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Link</code> in the aggregation <code>links</code>.and returns
     * its index if found or -1 otherwise.
@@ -43,6 +48,7 @@ trait Breadcrumbs extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfLink(oLink: Link): Double = js.native
+  
   /**
     * Inserts a link into the aggregation <code>links</code>.
     * @since 1.34
@@ -54,6 +60,7 @@ trait Breadcrumbs extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertLink(oLink: Link, iIndex: Double): Breadcrumbs = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>links</code>.Additionally, it unregisters them
     * from the hosting UIArea.
@@ -61,6 +68,7 @@ trait Breadcrumbs extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllLinks(): js.Array[Link] = js.native
+  
   def removeLink(vLink: String): Link = js.native
   /**
     * Removes a link from the aggregation <code>links</code>.
@@ -70,6 +78,7 @@ trait Breadcrumbs extends Control {
     */
   def removeLink(vLink: Double): Link = js.native
   def removeLink(vLink: Link): Link = js.native
+  
   /**
     * Sets a new value for property <code>currentLocationText</code>.Determines the text of current/last
     * element in the Breadcrumbs path.When called with a value of <code>null</code> or
@@ -80,4 +89,3 @@ trait Breadcrumbs extends Control {
     */
   def setCurrentLocationText(sCurrentLocationText: String): Breadcrumbs = js.native
 }
-

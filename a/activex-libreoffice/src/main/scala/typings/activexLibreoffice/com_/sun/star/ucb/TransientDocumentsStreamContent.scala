@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TDCP Stream is a content which represents a data stream of an Office document.
@@ -35,8 +35,8 @@ trait TransientDocumentsStreamContent
      with XPropertySetInfoChangeNotifier
      with XCommandInfoChangeNotifier
      with XChild
-
 object TransientDocumentsStreamContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -71,4 +71,3 @@ object TransientDocumentsStreamContent {
     __obj.asInstanceOf[TransientDocumentsStreamContent]
   }
 }
-

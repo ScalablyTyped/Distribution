@@ -2,16 +2,18 @@ package typings.arcgisJsApi.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Edits extends Accessor {
+  
   /**
     * The feature to be edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html#feature)
     */
   val feature: Graphic = js.native
+  
   /**
     * When true, the edited feature has been modified from its original state.
     *
@@ -19,4 +21,3 @@ trait Edits extends Accessor {
     */
   val modified: Boolean = js.native
 }
-

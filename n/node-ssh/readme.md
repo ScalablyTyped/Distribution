@@ -10,12 +10,15 @@ SS2 with Promises
 | ------------------ | :-------------: |
 | Full name          | node-ssh |
 | Keywords           | ssh, ssh2, sftp |
-| # releases         | 6 |
-| # dependents       | 156 |
-| # downloads        | 611628 |
+| # releases         | 9 |
+| # dependents       | 211 |
+| # downloads        | 766227 |
 | # stars            | 20 |
 
 ## Links
+- [Homepage](https://github.com/steelbrain/node-ssh#readme)
+- [Bugs](https://github.com/steelbrain/node-ssh/issues)
+- [Repository](https://github.com/steelbrain/node-ssh)
 - [Npm](https://www.npmjs.com/package/node-ssh)
     
 

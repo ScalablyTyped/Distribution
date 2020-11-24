@@ -3,13 +3,15 @@ package typings.hdrHistogramJs
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/HistogramLogWriter", JSImport.Namespace)
 @js.native
 object histogramLogWriterMod extends js.Object {
+  
   @js.native
   trait HistogramLogWriter extends js.Object {
+    
     /**
       * Base time to subtract from supplied histogram start/end timestamps when
       * logging based on histogram timestamps.
@@ -17,13 +19,16 @@ object histogramLogWriterMod extends js.Object {
       * are typically stamped with absolute times in msec since the epoch.
       */
     var baseTime: Double = js.native
+    
     var log: js.Any = js.native
+    
     /**
       * Log a comment to the log.
       * Comments will be preceded with with the '#' character.
       * @param comment the comment string.
       */
     def outputComment(comment: String): Unit = js.native
+    
     /**
       * Output an interval histogram, with the given timestamp information and the [optional] tag
       * associated with the histogram, using a configurable maxValueUnitRatio. (note that the
@@ -67,14 +72,17 @@ object histogramLogWriterMod extends js.Object {
       endTimeStampSec: Double,
       maxValueUnitRatio: Double
     ): Unit = js.native
+    
     /**
       * Output a legend line to the log.
       */
     def outputLegend(): Unit = js.native
+    
     /**
       * Output a log format version to the log.
       */
     def outputLogFormatVersion(): Unit = js.native
+    
     /**
       * Log a start time in the log.
       * @param startTimeMsec time (in milliseconds) since the absolute start time (the epoch)
@@ -89,4 +97,3 @@ object histogramLogWriterMod extends js.Object {
   
   type Writable = js.Function1[/* c */ String, Unit]
 }
-

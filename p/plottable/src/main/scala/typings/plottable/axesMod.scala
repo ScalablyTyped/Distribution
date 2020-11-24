@@ -5,11 +5,12 @@ import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import typings.plottable.timeAxisMod.TimeAxisOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/axes", JSImport.Namespace)
 @js.native
 object axesMod extends js.Object {
+  
   @js.native
   class Category protected ()
     extends typings.plottable.categoryAxisMod.Category {
@@ -25,6 +26,15 @@ object axesMod extends js.Object {
     def this(scale: typings.plottable.scalesMod.Category) = this()
     def this(scale: typings.plottable.scalesMod.Category, orientation: AxisOrientation) = this()
   }
+  /* static members */
+  @js.native
+  object Category extends js.Object {
+    
+    /**
+      * How many pixels to give labels at minimum before downsampling takes effect.
+      */
+    var _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
+  }
   
   @js.native
   class Numeric protected ()
@@ -39,6 +49,14 @@ object axesMod extends js.Object {
       * @param {AxisOrientation} orientation Orientation of this Numeric Axis.
       */
     def this(scale: QuantitativeScale[Double], orientation: AxisOrientation) = this()
+  }
+  
+  @js.native
+  object TierLabelPosition extends js.Object {
+    
+    var between: typings.plottable.plottableStrings.between = js.native
+    
+    var center: typings.plottable.plottableStrings.center = js.native
   }
   
   @js.native
@@ -58,50 +76,45 @@ object axesMod extends js.Object {
     def this(scale: typings.plottable.scalesMod.Time, orientation: TimeAxisOrientation) = this()
     def this(scale: typings.plottable.scalesMod.Time, orientation: TimeAxisOrientation, useUTC: Boolean) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Category extends js.Object {
-    /**
-      * How many pixels to give labels at minimum before downsampling takes effect.
-      */
-    var _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
-  }
-  
-  @js.native
-  object TierLabelPosition extends js.Object {
-    var between: typings.plottable.plottableStrings.between = js.native
-    var center: typings.plottable.plottableStrings.center = js.native
-  }
-  
   /* static members */
   @js.native
   object Time extends js.Object {
+    
     /**
       * The CSS class applied to each Time Axis tier
       */
     var TIME_AXIS_TIER_CLASS: String = js.native
+    
     var _DEFAULT_TIME_AXIS_CONFIGURATIONS: js.Any = js.native
+    
     var _LONG_DATE: js.Any = js.native
+    
     var _SORTED_TIME_INTERVAL_INDEX: js.Any = js.native
   }
   
   @js.native
   object TimeAxisOrientation extends js.Object {
+    
     var bottom: typings.plottable.plottableStrings.bottom = js.native
+    
     var top: typings.plottable.plottableStrings.top = js.native
   }
   
   @js.native
   object TimeInterval extends js.Object {
+    
     var day: typings.plottable.plottableStrings.day = js.native
+    
     var hour: typings.plottable.plottableStrings.hour = js.native
+    
     var minute: typings.plottable.plottableStrings.minute = js.native
+    
     var month: typings.plottable.plottableStrings.month = js.native
+    
     var second: typings.plottable.plottableStrings.second = js.native
+    
     var week: typings.plottable.plottableStrings.week = js.native
+    
     var year: typings.plottable.plottableStrings.year = js.native
   }
-  
 }
-

@@ -10,9 +10,9 @@ A data layer for your Ember applications.
 | ------------------ | :-------------: |
 | Full name          | ember-data |
 | Keywords           | ember-addon |
-| # releases         | 98 |
-| # dependents       | 31 |
-| # downloads        | 4365134 |
+| # releases         | 100 |
+| # dependents       | 35 |
+| # downloads        | 5040734 |
 | # stars            | 7 |
 
 ## Links

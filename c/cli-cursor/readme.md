@@ -11,8 +11,8 @@ Toggle the CLI cursor
 | Full name          | cli-cursor |
 | Keywords           | cli, cursor, ansi, toggle, display, show, hide, term, terminal, console, tty, shell, command-line |
 | # releases         | 3 |
-| # dependents       | 169 |
-| # downloads        | 495555992 |
+| # dependents       | 234 |
+| # downloads        | 825368471 |
 | # stars            | 3 |
 
 ## Links

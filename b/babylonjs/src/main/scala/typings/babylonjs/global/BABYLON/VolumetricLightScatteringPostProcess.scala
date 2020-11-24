@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.VolumetricLightScatteringPostProcess")
 @js.native
@@ -32,11 +32,11 @@ class VolumetricLightScatteringPostProcess protected ()
     scene: js.UndefOr[typings.babylonjs.BABYLON.Scene]
   ) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.VolumetricLightScatteringPostProcess")
 @js.native
 object VolumetricLightScatteringPostProcess extends js.Object {
+  
   /**
     * Creates a default mesh for the Volumeric Light Scattering post-process
     * @param name The mesh name
@@ -45,4 +45,3 @@ object VolumetricLightScatteringPostProcess extends js.Object {
     */
   def CreateDefaultMesh(name: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Mesh = js.native
 }
-

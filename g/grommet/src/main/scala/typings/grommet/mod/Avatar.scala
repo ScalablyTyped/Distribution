@@ -9,13 +9,12 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Avatar")
+@JSImport("grommet", "Avatar")
 @js.native
 object Avatar extends TopLevel[
       FC[
         BoxProps with AvatarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
       ]
     ]
-

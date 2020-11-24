@@ -8,11 +8,12 @@ import typings.redux.mod.Store
 import typings.reduxBootstrap.interfacesMod.interfaces.RouterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-bootstrap/dts/containers/root", JSImport.Namespace)
 @js.native
 object rootMod extends js.Object {
+  
   def default(store: Store[_, AnyAction], history: History[LocationState], routes: Element): Element = js.native
   def default(
     store: Store[_, AnyAction],
@@ -21,4 +22,3 @@ object rootMod extends js.Object {
     routerProps: RouterProps
   ): Element = js.native
 }
-

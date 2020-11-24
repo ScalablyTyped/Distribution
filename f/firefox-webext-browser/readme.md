@@ -1,7 +1,7 @@
 
 # Scala.js typings for firefox-webext-browser
 
-Typings are for version 78.0
+Typings are for version 82.0
 
 
 

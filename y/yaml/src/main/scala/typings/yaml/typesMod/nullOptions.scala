@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.yaml.mod.scalarOptions.Null
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "nullOptions")
 @js.native
 object nullOptions extends TopLevel[Null]
-

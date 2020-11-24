@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_editables"
-version := "0.9-dt-20200515Z-7e1447"
+version := "0.9-dt-20201002Z-bd19ac"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

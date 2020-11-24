@@ -6,11 +6,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/authentication/v1beta1", JSImport.Namespace)
 @js.native
 object authenticationV1beta1Mod extends js.Object {
+  
   @js.native
   class TokenReview protected ()
     extends typings.pulumiKubernetes.tokenReviewMod.TokenReview {
@@ -26,10 +27,10 @@ object authenticationV1beta1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: TokenReviewArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object TokenReview extends js.Object {
+    
     /**
       * Get an existing TokenReview resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -40,12 +41,11 @@ object authenticationV1beta1Mod extends js.Object {
       */
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.tokenReviewMod.TokenReview = js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.tokenReviewMod.TokenReview = js.native
+    
     /**
       * Returns true if the given object is an instance of TokenReview.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authentication/v1beta1/tokenReview.TokenReview */ Boolean = js.native
   }
-  
 }
-

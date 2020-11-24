@@ -5,7 +5,7 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LazyTransformerConstructor
@@ -14,4 +14,3 @@ trait LazyTransformerConstructor
       /* coll */ Iterable[js.Object], 
       IterableIterator[js.Object]
     ]
-

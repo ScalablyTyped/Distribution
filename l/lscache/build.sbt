@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lscache"
-version := "1.3-dt-20200515Z-a8e072"
+version := "1.3-dt-20201002Z-5484af"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Indexing$Datasources$Items")
 @js.native
 class ResourceIndexingDatasourcesItems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.delete
     * @desc Deletes Item resource for the specified resource name.
@@ -48,6 +50,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.deleteQueueItems
     * @desc Deletes all items in a queue. This method is useful for deleting
@@ -81,6 +84,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.get
     * @desc Gets Item resource by item name.
@@ -111,6 +115,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaItem]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.index
     * @desc Updates Item ACL, metadata, and content. It will insert the Item if
@@ -145,6 +150,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.list
     * @desc Lists all or a subset of Item resources.
@@ -181,6 +187,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListItemsResponse]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.poll
     * @desc Polls for unreserved items from the indexing queue and marks a set
@@ -221,6 +228,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPollItemsResponse]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.push
     * @desc Pushes an item onto a queue for later polling and updating.
@@ -250,6 +258,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaItem]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.unreserve
     * @desc Unreserves all items from a queue, making them all eligible to be
@@ -284,6 +293,7 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudsearch.indexing.datasources.items.upload
     * @desc Creates an upload session for uploading item content. For items
@@ -319,4 +329,3 @@ class ResourceIndexingDatasourcesItems protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUploadItemRef]
   ): Unit = js.native
 }
-

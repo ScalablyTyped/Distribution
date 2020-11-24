@@ -2,15 +2,17 @@ package typings.openui5.sap.m.semantic
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MainAction extends SemanticButton {
+  
   /**
     * Gets current value of property <code>text</code>.Button text
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Button textWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -19,4 +21,3 @@ trait MainAction extends SemanticButton {
     */
   def setText(sText: String): MainAction = js.native
 }
-

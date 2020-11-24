@@ -12,7 +12,7 @@ Lightweight cross-browser library that enables you to create a watcher for a giv
 | Keywords           | javascript, viewability, helper, intersection, observer, intersectionobserver |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1398 |
+| # downloads        | 1043 |
 | # stars            | 0 |
 
 ## Links

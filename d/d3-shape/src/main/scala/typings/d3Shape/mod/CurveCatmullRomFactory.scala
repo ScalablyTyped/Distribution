@@ -2,10 +2,11 @@ package typings.d3Shape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CurveCatmullRomFactory extends CurveFactory {
+  
   /**
     * Returns a cubic Catmull–Rom curve factory with the specified alpha in the range [0, 1].
     * If alpha is zero, produces a uniform spline, equivalent to curveCardinal with a tension of zero;
@@ -16,4 +17,3 @@ trait CurveCatmullRomFactory extends CurveFactory {
     */
   def alpha(alpha: Double): this.type = js.native
 }
-

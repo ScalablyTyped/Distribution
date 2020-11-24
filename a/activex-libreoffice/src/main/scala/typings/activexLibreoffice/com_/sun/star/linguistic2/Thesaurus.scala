@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceDisplayName
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers thesaurus functionality. */
 @js.native
@@ -20,8 +20,8 @@ trait Thesaurus
      with XInitialization
      with XComponent
      with XServiceDisplayName
-
 object Thesaurus {
+  
   @scala.inline
   def apply(
     Locales: SafeArray[Locale],
@@ -41,4 +41,3 @@ object Thesaurus {
     __obj.asInstanceOf[Thesaurus]
   }
 }
-

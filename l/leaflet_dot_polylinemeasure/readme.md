@@ -10,9 +10,9 @@ Leaflet Plugin to measure distances of simple lines as well as of complex polyli
 | ------------------ | :-------------: |
 | Full name          | leaflet.polylinemeasure |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3124 |
+| # downloads        | 6302 |
 | # stars            | 0 |
 
 ## Links

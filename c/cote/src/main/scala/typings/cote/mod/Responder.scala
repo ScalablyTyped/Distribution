@@ -4,7 +4,7 @@ import typings.cote.coteStrings.coteColonadded
 import typings.cote.coteStrings.coteColonremoved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Responder")
 @js.native
@@ -23,6 +23,7 @@ class Responder protected () extends Component {
     */
   discoveryOptions: DiscoveryOptions
   ) = this()
+  
   def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, js.Promise[_]]): this.type = js.native
   /**
     * Responds to certain requests from a Requester.
@@ -57,4 +58,3 @@ class Responder protected () extends Component {
   @JSName("on")
   def on_coteremoved(`type`: coteColonremoved, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
 }
-

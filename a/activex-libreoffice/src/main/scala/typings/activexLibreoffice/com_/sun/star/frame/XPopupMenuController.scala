@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XPopupMenu
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides data to a pop-up menu controller implementation to fill and update a pop-up menu dynamically.
@@ -16,12 +16,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPopupMenuController extends XInterface {
+  
   /**
     * provides a {@link com.sun.star.awt.XPopupMenu} to a pop-up menu controller implementation. The controller must fill this pop-up menu with its
     * functions.
     * @param PopupMenu An empty pop-up menu that must be filled by the pop-up menu controller.
     */
   def setPopupMenu(PopupMenu: XPopupMenu): Unit = js.native
+  
   /**
     * briefs the pop-up menu controller to update the contents of the provided pop-up menu to reflect the current state.
     *
@@ -31,8 +33,8 @@ trait XPopupMenuController extends XInterface {
     */
   def updatePopupMenu(): Unit = js.native
 }
-
 object XPopupMenuController {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -44,22 +46,26 @@ object XPopupMenuController {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPopupMenu = js.Any.fromFunction1(setPopupMenu), updatePopupMenu = js.Any.fromFunction0(updatePopupMenu))
     __obj.asInstanceOf[XPopupMenuController]
   }
+  
   @scala.inline
   implicit class XPopupMenuControllerOps[Self <: XPopupMenuController] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSetPopupMenu(value: XPopupMenu => Unit): Self = this.set("setPopupMenu", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setUpdatePopupMenu(value: () => Unit): Self = this.set("updatePopupMenu", js.Any.fromFunction0(value))
   }
-  
 }
-

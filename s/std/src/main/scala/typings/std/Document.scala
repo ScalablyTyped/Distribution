@@ -189,7 +189,7 @@ import typings.std.stdStrings.wbr
 import typings.std.stdStrings.xmp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
 @js.native
@@ -201,191 +201,12 @@ trait Document
      with NonElementParentNode
      with ParentNode
      with XPathEvaluatorBase {
+  
   /**
     * Sets or gets the URL for the current document.
     */
   val URL: java.lang.String = js.native
-  /**
-    * Sets or gets the color of all active links in the document.
-    */
-  /** @deprecated */
-  var alinkColor: java.lang.String = js.native
-  /**
-    * Returns a reference to the collection of elements contained by the object.
-    */
-  /** @deprecated */
-  val all: HTMLAllCollection = js.native
-  /**
-    * Retrieves a collection of all a objects that have a name and/or id property. Objects in this collection are in HTML source order.
-    */
-  /** @deprecated */
-  val anchors: HTMLCollectionOf[HTMLAnchorElement] = js.native
-  /**
-    * Retrieves a collection of all applet objects in the document.
-    */
-  /** @deprecated */
-  val applets: HTMLCollectionOf[HTMLAppletElement] = js.native
-  /**
-    * Deprecated. Sets or retrieves a value that indicates the background color behind the object.
-    */
-  /** @deprecated */
-  var bgColor: java.lang.String = js.native
-  /**
-    * Specifies the beginning and end of the document body.
-    */
-  var body: HTMLElement = js.native
-  /**
-    * Returns document's encoding.
-    */
-  val characterSet: java.lang.String = js.native
-  /**
-    * Gets or sets the character set used to encode the object.
-    */
-  val charset: java.lang.String = js.native
-  /**
-    * Gets a value that indicates whether standards-compliant mode is switched on for the object.
-    */
-  val compatMode: java.lang.String = js.native
-  /**
-    * Returns document's content type.
-    */
-  val contentType: java.lang.String = js.native
-  /**
-    * Returns the HTTP cookies that apply to the Document. If there are no cookies or cookies can't be applied to this resource, the empty string will be returned.
-    * 
-    * Can be set, to add a new cookie to the element's set of HTTP cookies.
-    * 
-    * If the contents are sandboxed into a unique origin (e.g. in an iframe with the sandbox attribute), a "SecurityError" DOMException will be thrown on getting and setting.
-    */
-  var cookie: java.lang.String = js.native
-  /**
-    * Returns the script element, or the SVG script element, that is currently executing, as long as the element represents a classic script. In the case of reentrant script execution, returns the one that most recently started executing amongst those that have not yet finished executing.
-    * 
-    * Returns null if the Document is not currently executing a script or SVG script element (e.g., because the running script is an event handler, or a timeout), or if the currently executing script or SVG script element represents a module script.
-    */
-  val currentScript: HTMLOrSVGScriptElement | Null = js.native
-  val defaultView: (WindowProxy with (/* globalThis */ js.Any)) | Null = js.native
-  /**
-    * Sets or gets a value that indicates whether the document can be edited.
-    */
-  var designMode: java.lang.String = js.native
-  /**
-    * Sets or retrieves a value that indicates the reading order of the object.
-    */
-  var dir: java.lang.String = js.native
-  /**
-    * Gets an object representing the document type declaration associated with the current document.
-    */
-  val doctype: DocumentType | Null = js.native
-  /**
-    * Gets a reference to the root node of the document.
-    */
-  val documentElement: HTMLElement = js.native
-  /**
-    * Returns document's URL.
-    */
-  val documentURI: java.lang.String = js.native
-  /**
-    * Sets or gets the security domain of the document.
-    */
-  var domain: java.lang.String = js.native
-  /**
-    * Retrieves a collection of all embed objects in the document.
-    */
-  val embeds: HTMLCollectionOf[HTMLEmbedElement] = js.native
-  /**
-    * Sets or gets the foreground (text) color of the document.
-    */
-  /** @deprecated */
-  var fgColor: java.lang.String = js.native
-  /**
-    * Retrieves a collection, in source order, of all form objects in the document.
-    */
-  val forms: HTMLCollectionOf[HTMLFormElement] = js.native
-  /** @deprecated */
-  val fullscreen: scala.Boolean = js.native
-  /**
-    * Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise.
-    */
-  val fullscreenEnabled: scala.Boolean = js.native
-  /**
-    * Returns the head element.
-    */
-  val head: HTMLHeadElement = js.native
-  val hidden: scala.Boolean = js.native
-  /**
-    * Retrieves a collection, in source order, of img objects in the document.
-    */
-  val images: HTMLCollectionOf[HTMLImageElement] = js.native
-  /**
-    * Gets the implementation object of the current document.
-    */
-  val implementation: DOMImplementation = js.native
-  /**
-    * Returns the character encoding used to create the webpage that is loaded into the document object.
-    */
-  val inputEncoding: java.lang.String = js.native
-  /**
-    * Gets the date that the page was last modified, if the page supplies one.
-    */
-  val lastModified: java.lang.String = js.native
-  /**
-    * Sets or gets the color of the document links.
-    */
-  /** @deprecated */
-  var linkColor: java.lang.String = js.native
-  /**
-    * Retrieves a collection of all a objects that specify the href property and all area objects in the document.
-    */
-  val links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
-  /**
-    * Contains information about the current URL.
-    */
-  var location: Location = js.native
-  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  /**
-    * Fires when the state of the object has changed.
-    * @param ev The event
-    */
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  /**
-    * Returns document's origin.
-    */
-  val origin: java.lang.String = js.native
-  @JSName("ownerDocument")
-  val ownerDocument_Document: Null = js.native
-  /**
-    * Return an HTMLCollection of the embed elements in the Document.
-    */
-  val plugins: HTMLCollectionOf[HTMLEmbedElement] = js.native
-  /**
-    * Retrieves a value that indicates the current state of the object.
-    */
-  val readyState: DocumentReadyState = js.native
-  /**
-    * Gets the URL of the location that referred the user to the current page.
-    */
-  val referrer: java.lang.String = js.native
-  /**
-    * Retrieves a collection of all script objects in the document.
-    */
-  val scripts: HTMLCollectionOf[HTMLScriptElement] = js.native
-  val scrollingElement: Element | Null = js.native
-  val timeline: DocumentTimeline = js.native
-  /**
-    * Contains the title of the document.
-    */
-  var title: java.lang.String = js.native
-  val visibilityState: VisibilityState = js.native
-  /**
-    * Sets or gets the color of the links that the user has visited.
-    */
-  /** @deprecated */
-  var vlinkColor: java.lang.String = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -480,42 +301,117 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   /**
     * Moves node from another document and returns it.
     * 
     * If node is a document, throws a "NotSupportedError" DOMException or, if node is a shadow root, throws a "HierarchyRequestError" DOMException.
     */
   def adoptNode[T /* <: Node */](source: T): T = js.native
+  
+  /**
+    * Sets or gets the color of all active links in the document.
+    */
+  /** @deprecated */
+  var alinkColor: java.lang.String = js.native
+  
+  /**
+    * Returns a reference to the collection of elements contained by the object.
+    */
+  /** @deprecated */
+  val all: HTMLAllCollection = js.native
+  
+  /**
+    * Retrieves a collection of all a objects that have a name and/or id property. Objects in this collection are in HTML source order.
+    */
+  /** @deprecated */
+  val anchors: HTMLCollectionOf[HTMLAnchorElement] = js.native
+  
+  /**
+    * Retrieves a collection of all applet objects in the document.
+    */
+  /** @deprecated */
+  val applets: HTMLCollectionOf[HTMLAppletElement] = js.native
+  
+  /**
+    * Deprecated. Sets or retrieves a value that indicates the background color behind the object.
+    */
+  /** @deprecated */
+  var bgColor: java.lang.String = js.native
+  
+  /**
+    * Specifies the beginning and end of the document body.
+    */
+  var body: HTMLElement = js.native
+  
   /** @deprecated */
   def captureEvents(): Unit = js.native
+  
+  /**
+    * Returns document's encoding.
+    */
+  val characterSet: java.lang.String = js.native
+  
+  /**
+    * Gets or sets the character set used to encode the object.
+    */
+  val charset: java.lang.String = js.native
+  
   /** @deprecated */
   def clear(): Unit = js.native
+  
   /**
     * Closes an output stream and forces the sent data to display.
     */
   def close(): Unit = js.native
+  
+  /**
+    * Gets a value that indicates whether standards-compliant mode is switched on for the object.
+    */
+  val compatMode: java.lang.String = js.native
+  
+  /**
+    * Returns document's content type.
+    */
+  val contentType: java.lang.String = js.native
+  
+  /**
+    * Returns the HTTP cookies that apply to the Document. If there are no cookies or cookies can't be applied to this resource, the empty string will be returned.
+    * 
+    * Can be set, to add a new cookie to the element's set of HTTP cookies.
+    * 
+    * If the contents are sandboxed into a unique origin (e.g. in an iframe with the sandbox attribute), a "SecurityError" DOMException will be thrown on getting and setting.
+    */
+  var cookie: java.lang.String = js.native
+  
   /**
     * Creates an attribute object with a specified name.
     * @param name String that sets the attribute object's name.
     */
   def createAttribute(localName: java.lang.String): Attr = js.native
+  
   def createAttributeNS(namespace: java.lang.String, qualifiedName: java.lang.String): Attr = js.native
   def createAttributeNS(namespace: Null, qualifiedName: java.lang.String): Attr = js.native
+  
   /**
     * Returns a CDATASection node whose data is data.
     */
   def createCDATASection(data: java.lang.String): CDATASection = js.native
+  
   /**
     * Creates a comment object with the specified data.
     * @param data Sets the comment object's data.
     */
   def createComment(data: java.lang.String): Comment = js.native
+  
   /**
     * Creates a new document.
     */
   def createDocumentFragment(): DocumentFragment = js.native
+  
   def createElement(tagName: java.lang.String): HTMLElement = js.native
   def createElement(tagName: java.lang.String, options: ElementCreationOptions): HTMLElement = js.native
+  
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String): Element = js.native
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String): Element = js.native
@@ -607,6 +503,7 @@ trait Document
   ): HTMLElement = js.native
   @JSName("createElementNS")
   def createElementNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: java.lang.String): SVGElement = js.native
+  
   /**
     * Creates an instance of the element for the specified tag.
     * @param tagName The name of an element.
@@ -1096,6 +993,7 @@ trait Document
   def createElement_xmp(tagName: xmp): HTMLPreElement = js.native
   @JSName("createElement")
   def createElement_xmp(tagName: xmp, options: ElementCreationOptions): HTMLPreElement = js.native
+  
   def createEvent(eventInterface: java.lang.String): Event = js.native
   @JSName("createEvent")
   def createEvent_AnimationEvent(eventInterface: typings.std.stdStrings.AnimationEvent): AnimationEvent = js.native
@@ -1164,7 +1062,7 @@ trait Document
   @JSName("createEvent")
   def createEvent_MediaStreamTrackEvent(eventInterface: typings.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
   @JSName("createEvent")
-  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent = js.native
+  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[_] = js.native
   @JSName("createEvent")
   def createEvent_MouseEvent(eventInterface: typings.std.stdStrings.MouseEvent): MouseEvent = js.native
   @JSName("createEvent")
@@ -1251,6 +1149,7 @@ trait Document
   def createEvent_WebGLContextEvent(eventInterface: typings.std.stdStrings.WebGLContextEvent): WebGLContextEvent = js.native
   @JSName("createEvent")
   def createEvent_WheelEvent(eventInterface: typings.std.stdStrings.WheelEvent): WheelEvent = js.native
+  
   /**
     * Creates a NodeIterator object that you can use to traverse filtered lists of nodes or elements in a document.
     * @param root The root element or node to start traversing on.
@@ -1262,19 +1161,23 @@ trait Document
   def createNodeIterator(root: Node, whatToShow: js.UndefOr[scala.Nothing], filter: NodeFilter): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter): NodeIterator = js.native
+  
   /**
     * Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown.
     */
   def createProcessingInstruction(target: java.lang.String, data: java.lang.String): ProcessingInstruction = js.native
+  
   /**
     *  Returns an empty range object that has both of its boundary points positioned at the beginning of the document.
     */
   def createRange(): Range = js.native
+  
   /**
     * Creates a text string from the specified value.
     * @param data String that specifies the nodeValue property of the text node.
     */
   def createTextNode(data: java.lang.String): Text = js.native
+  
   /**
     * Creates a TreeWalker object that you can use to traverse filtered lists of nodes or elements in a document.
     * @param root The root element or node to start traversing on.
@@ -1288,6 +1191,51 @@ trait Document
   def createTreeWalker(root: Node, whatToShow: Double, filter: Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
+  
+  /**
+    * Returns the script element, or the SVG script element, that is currently executing, as long as the element represents a classic script. In the case of reentrant script execution, returns the one that most recently started executing amongst those that have not yet finished executing.
+    * 
+    * Returns null if the Document is not currently executing a script or SVG script element (e.g., because the running script is an event handler, or a timeout), or if the currently executing script or SVG script element represents a module script.
+    */
+  val currentScript: HTMLOrSVGScriptElement | Null = js.native
+  
+  val defaultView: (WindowProxy with (/* globalThis */ js.Any)) | Null = js.native
+  
+  /**
+    * Sets or gets a value that indicates whether the document can be edited.
+    */
+  var designMode: java.lang.String = js.native
+  
+  /**
+    * Sets or retrieves a value that indicates the reading order of the object.
+    */
+  var dir: java.lang.String = js.native
+  
+  /**
+    * Gets an object representing the document type declaration associated with the current document.
+    */
+  val doctype: DocumentType | Null = js.native
+  
+  /**
+    * Gets a reference to the root node of the document.
+    */
+  val documentElement: HTMLElement = js.native
+  
+  /**
+    * Returns document's URL.
+    */
+  val documentURI: java.lang.String = js.native
+  
+  /**
+    * Sets or gets the security domain of the document.
+    */
+  var domain: java.lang.String = js.native
+  
+  /**
+    * Retrieves a collection of all embed objects in the document.
+    */
+  val embeds: HTMLCollectionOf[HTMLEmbedElement] = js.native
+  
   /**
     * Executes a command on the current document, current selection, or the given range.
     * @param commandId String that specifies the command to execute. This command can be any of the command identifiers that can be executed in script.
@@ -1298,22 +1246,48 @@ trait Document
   def execCommand(commandId: java.lang.String, showUI: js.UndefOr[scala.Nothing], value: java.lang.String): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
+  
   /**
     * Stops document's fullscreen element from being displayed fullscreen and resolves promise when done.
     */
   def exitFullscreen(): js.Promise[Unit] = js.native
+  
   def exitPointerLock(): Unit = js.native
+  
+  /**
+    * Sets or gets the foreground (text) color of the document.
+    */
+  /** @deprecated */
+  var fgColor: java.lang.String = js.native
+  
+  /**
+    * Retrieves a collection, in source order, of all form objects in the document.
+    */
+  val forms: HTMLCollectionOf[HTMLFormElement] = js.native
+  
+  /** @deprecated */
+  val fullscreen: scala.Boolean = js.native
+  
+  /**
+    * Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise.
+    */
+  val fullscreenEnabled: scala.Boolean = js.native
+  
   def getAnimations(): js.Array[Animation] = js.native
+  
   /**
     * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
     */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
+  
   /**
     * Gets a collection of objects based on the value of the NAME or ID attribute.
     * @param elementName Gets a collection of objects based on the value of the NAME or ID attribute.
     */
   def getElementsByName(elementName: java.lang.String): NodeListOf[HTMLElement] = js.native
+  
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  
   def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   /**
     * If namespace and localName are "*" returns a HTMLCollection of all descendant elements.
@@ -1328,6 +1302,7 @@ trait Document
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
+  
   /**
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.
@@ -1676,16 +1651,78 @@ trait Document
   def getElementsByTagName_view(qualifiedName: view): HTMLCollectionOf[SVGViewElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
+  
   /**
     * Gets a value indicating whether the object currently has focus.
     */
   def hasFocus(): scala.Boolean = js.native
+  
+  /**
+    * Returns the head element.
+    */
+  val head: HTMLHeadElement = js.native
+  
+  val hidden: scala.Boolean = js.native
+  
+  /**
+    * Retrieves a collection, in source order, of img objects in the document.
+    */
+  val images: HTMLCollectionOf[HTMLImageElement] = js.native
+  
+  /**
+    * Gets the implementation object of the current document.
+    */
+  val implementation: DOMImplementation = js.native
+  
   /**
     * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
     * 
     * If node is a document or a shadow root, throws a "NotSupportedError" DOMException.
     */
   def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
+  
+  /**
+    * Returns the character encoding used to create the webpage that is loaded into the document object.
+    */
+  val inputEncoding: java.lang.String = js.native
+  
+  /**
+    * Gets the date that the page was last modified, if the page supplies one.
+    */
+  val lastModified: java.lang.String = js.native
+  
+  /**
+    * Sets or gets the color of the document links.
+    */
+  /** @deprecated */
+  var linkColor: java.lang.String = js.native
+  
+  /**
+    * Retrieves a collection of all a objects that specify the href property and all area objects in the document.
+    */
+  val links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
+  
+  /**
+    * Contains information about the current URL.
+    */
+  var location: Location = js.native
+  
+  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  /**
+    * Fires when the state of the object has changed.
+    * @param ev The event
+    */
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
+  var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  
   /**
     * Opens a new window and loads a document specified by a given URL. Also, opens a new window that uses the url parameter and the name parameter to collect the output of the write method and the writeln method.
     * @param url Specifies a MIME type for the document.
@@ -1744,33 +1781,58 @@ trait Document
   ): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
+  
+  @JSName("ownerDocument")
+  val ownerDocument_Document: Null = js.native
+  
+  /**
+    * Return an HTMLCollection of the embed elements in the Document.
+    */
+  val plugins: HTMLCollectionOf[HTMLEmbedElement] = js.native
+  
   /**
     * Returns a Boolean value that indicates whether a specified command can be successfully executed using execCommand, given the current state of the document.
     * @param commandId Specifies a command identifier.
     */
   def queryCommandEnabled(commandId: java.lang.String): scala.Boolean = js.native
+  
   /**
     * Returns a Boolean value that indicates whether the specified command is in the indeterminate state.
     * @param commandId String that specifies a command identifier.
     */
   def queryCommandIndeterm(commandId: java.lang.String): scala.Boolean = js.native
+  
   /**
     * Returns a Boolean value that indicates the current state of the command.
     * @param commandId String that specifies a command identifier.
     */
   def queryCommandState(commandId: java.lang.String): scala.Boolean = js.native
+  
   /**
     * Returns a Boolean value that indicates whether the current command is supported on the current range.
     * @param commandId Specifies a command identifier.
     */
   def queryCommandSupported(commandId: java.lang.String): scala.Boolean = js.native
+  
   /**
     * Returns the current value of the document, range, or current selection for the given command.
     * @param commandId String that specifies a command identifier.
     */
   def queryCommandValue(commandId: java.lang.String): java.lang.String = js.native
+  
+  /**
+    * Retrieves a value that indicates the current state of the object.
+    */
+  val readyState: DocumentReadyState = js.native
+  
+  /**
+    * Gets the URL of the location that referred the user to the current page.
+    */
+  val referrer: java.lang.String = js.native
+  
   /** @deprecated */
   def releaseEvents(): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -1865,15 +1927,38 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
+  
+  /**
+    * Retrieves a collection of all script objects in the document.
+    */
+  val scripts: HTMLCollectionOf[HTMLScriptElement] = js.native
+  
+  val scrollingElement: Element | Null = js.native
+  
+  val timeline: DocumentTimeline = js.native
+  
+  /**
+    * Contains the title of the document.
+    */
+  var title: java.lang.String = js.native
+  
+  val visibilityState: VisibilityState = js.native
+  
+  /**
+    * Sets or gets the color of the links that the user has visited.
+    */
+  /** @deprecated */
+  var vlinkColor: java.lang.String = js.native
+  
   /**
     * Writes one or more HTML expressions to a document in the specified window.
     * @param content Specifies the text and HTML tags to write.
     */
   def write(text: java.lang.String*): Unit = js.native
+  
   /**
     * Writes one or more HTML expressions, followed by a carriage return, to a document in the specified window.
     * @param content The text and HTML tags to write.
     */
   def writeln(text: java.lang.String*): Unit = js.native
 }
-

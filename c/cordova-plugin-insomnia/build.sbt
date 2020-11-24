@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-insomnia"
-version := "v4.0.1-dt-20200515Z-4b0159"
+version := "v4.0.1-dt-20201002Z-a59ca9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

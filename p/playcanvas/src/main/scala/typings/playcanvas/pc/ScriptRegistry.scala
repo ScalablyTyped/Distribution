@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.TypeofScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create an instance of a pc.ScriptRegistry.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ScriptRegistry extends EventHandler {
+  
   /**
     * Add {@link pc.ScriptType} to registry.
     * Note: when {@link pc.createScript} is called, it will add the {@link pc.ScriptType} to the registry automatically.
@@ -25,6 +26,7 @@ trait ScriptRegistry extends EventHandler {
     * @returns True if added for the first time or false if script already exists.
     */
   def add(script: TypeofScriptType): Boolean = js.native
+  
   /**
     * Get {@link pc.ScriptType} by name.
     * @example
@@ -33,6 +35,7 @@ trait ScriptRegistry extends EventHandler {
     * @returns The Script Type if it exists in the registry or null otherwise.
     */
   def get(name: String): TypeofScriptType = js.native
+  
   /**
     * Check if a {@link pc.ScriptType} with the specified name is in the registry.
     * @example
@@ -44,6 +47,7 @@ trait ScriptRegistry extends EventHandler {
     */
   def has(nameOrType: String): Boolean = js.native
   def has(nameOrType: TypeofScriptType): Boolean = js.native
+  
   /**
     * Get list of all {@link pc.ScriptType}s from registry.
     * @example
@@ -54,6 +58,7 @@ trait ScriptRegistry extends EventHandler {
     * @returns list of all {@link pc.ScriptType}s in registry.
     */
   def list(): js.Array[TypeofScriptType] = js.native
+  
   /**
     * Remove {@link pc.ScriptType}.
     * @example
@@ -64,4 +69,3 @@ trait ScriptRegistry extends EventHandler {
   def remove(nameOrType: String): Boolean = js.native
   def remove(nameOrType: TypeofScriptType): Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.nuclearJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nuclear-js", "Store")
 @js.native
@@ -15,4 +15,3 @@ class StoreCls[T] protected () extends Store[T] {
     */
   def this(config: StoreLike[T]) = this()
 }
-

@@ -11,11 +11,12 @@ import typings.tstl.vectorBooleanMod.VectorBoolean.Iterator
 import typings.tstl.vectorBooleanMod.VectorBoolean.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/VectorBoolean", JSImport.Namespace)
 @js.native
 object vectorBooleanMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -60,20 +61,13 @@ object vectorBooleanMod extends js.Object {
       * @param val Value to fill.
       */
     def this(n: Double, `val`: Boolean) = this()
+    
     var _Find_node: js.Any = js.native
+    
     var _Insert_to_end: js.Any = js.native
+    
     var _Insert_to_middle: js.Any = js.native
-    /**
-      * Store not full elements, but their sequence.
-      *
-      *   - first: index
-      *   - second: value
-      */
-    var data_ : js.Any = js.native
-    /**
-      * Number of elements
-      */
-    var size_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
@@ -86,11 +80,21 @@ object vectorBooleanMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[Boolean, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
+    /**
+      * Store not full elements, but their sequence.
+      *
+      *   - first: index
+      *   - second: value
+      */
+    var data_ : js.Any = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -108,10 +112,12 @@ object vectorBooleanMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: Iterator): Iterator = js.native
+    
     /**
       * Flip all values.
       */
     def flip(): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -122,6 +128,12 @@ object vectorBooleanMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def front(`val`: Boolean): Unit = js.native
+    
+    /**
+      * Number of elements
+      */
+    var size_ : js.Any = js.native
+    
     /**
       * Swap elements.
       *
@@ -129,6 +141,7 @@ object vectorBooleanMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: VectorBoolean): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -137,9 +150,9 @@ object vectorBooleanMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[Boolean] = js.native
   }
-  
   @js.native
   object VectorBoolean extends js.Object {
+    
     val Iterator: Instantiable0[
         ArrayIterator[
           js.Object, 
@@ -159,6 +172,7 @@ object vectorBooleanMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         ArrayReverseIterator[
           js.Object, 
@@ -178,15 +192,15 @@ object vectorBooleanMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     /**
       * Iterator of {@link VectorBoolean}
       */
     type Iterator = ArrayIterator[Boolean, VectorBoolean]
+    
     /**
       * Reverse iterator of {@link VectorBoolean}
       */
     type ReverseIterator = ArrayReverseIterator[Boolean, VectorBoolean]
   }
-  
 }
-

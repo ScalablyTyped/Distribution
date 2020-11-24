@@ -10,9 +10,9 @@ Get the protocols of an input url.
 | ------------------ | :-------------: |
 | Full name          | protocols |
 | Keywords           | protocols, protocol, url, parse |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 31443327 |
+| # releases         | 3 |
+| # dependents       | 11 |
+| # downloads        | 67179396 |
 | # stars            | 0 |
 
 ## Links

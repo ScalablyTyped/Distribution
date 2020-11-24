@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "RuntimeAnimation")
 @js.native
@@ -22,4 +22,3 @@ class RuntimeAnimation protected ()
     host: typings.babylonjs.animatableMod.Animatable
   ) = this()
 }
-

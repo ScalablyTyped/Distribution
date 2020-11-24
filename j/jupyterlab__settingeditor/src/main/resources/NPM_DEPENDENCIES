@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/settingeditor" : "2.1.1"
+      "@jupyterlab/settingeditor" : "2.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/settingeditor" : "2.1.1"
+      "@jupyterlab/settingeditor" : "2.2.6"
     }
   ],
   "compile-devDependencies" : [

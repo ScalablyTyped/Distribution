@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface defines an animation sequence.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XAnimation extends XInterface {
+  
   /**
     * Request the attribute information for this animation.
     *
@@ -21,6 +22,7 @@ trait XAnimation extends XInterface {
     * @returns the requested {@link AnimationAttributes} structure.
     */
   val AnimationAttributes: typings.activexLibreoffice.com_.sun.star.rendering.AnimationAttributes = js.native
+  
   /**
     * Request the attribute information for this animation.
     *
@@ -28,6 +30,7 @@ trait XAnimation extends XInterface {
     * @returns the requested {@link AnimationAttributes} structure.
     */
   def getAnimationAttributes(): typings.activexLibreoffice.com_.sun.star.rendering.AnimationAttributes = js.native
+  
   /**
     * Render the animation content at time t into the specified canvas.
     *
@@ -47,8 +50,8 @@ trait XAnimation extends XInterface {
     */
   def render(canvas: XCanvas, viewState: ViewState, t: Double): Unit = js.native
 }
-
 object XAnimation {
+  
   @scala.inline
   def apply(
     AnimationAttributes: AnimationAttributes,
@@ -61,24 +64,29 @@ object XAnimation {
     val __obj = js.Dynamic.literal(AnimationAttributes = AnimationAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAnimationAttributes = js.Any.fromFunction0(getAnimationAttributes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), render = js.Any.fromFunction3(render))
     __obj.asInstanceOf[XAnimation]
   }
+  
   @scala.inline
   implicit class XAnimationOps[Self <: XAnimation] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimationAttributes(value: AnimationAttributes): Self = this.set("AnimationAttributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetAnimationAttributes(value: () => AnimationAttributes): Self = this.set("getAnimationAttributes", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRender(value: (XCanvas, ViewState, Double) => Unit): Self = this.set("render", js.Any.fromFunction3(value))
   }
-  
 }
-

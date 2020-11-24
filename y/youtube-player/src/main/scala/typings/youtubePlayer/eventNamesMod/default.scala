@@ -10,7 +10,7 @@ import typings.youtubePlayer.youtubePlayerStrings.stateChange
 import typings.youtubePlayer.youtubePlayerStrings.volumeChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("youtube-player/dist/eventNames", JSImport.Default)
 @js.native
@@ -26,4 +26,3 @@ object default
         volumeChange
       ]
     ]
-

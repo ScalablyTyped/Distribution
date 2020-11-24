@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.ClosestFacilitySolveResult
 import typings.arcgisJsApi.esri.ClosestFacilitySolveResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/tasks/support/ClosestFacilitySolveResult", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends ClosestFacilitySolveResult {
   def this(properties: ClosestFacilitySolveResultProperties) = this()
 }
-

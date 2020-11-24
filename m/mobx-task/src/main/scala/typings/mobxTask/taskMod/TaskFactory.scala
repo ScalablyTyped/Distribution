@@ -11,13 +11,21 @@ import typings.std.Pick
 import typings.std.PropertyDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TaskFactory
   extends TaskCreator[
       /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow
     ] {
+  
+  /**
+    * Calls the actual task function.
+    */
+  /**
+    * Creates a task in the `rejected` state.
+    */
+  def rejected[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
   /**
     * Creates a task in the `rejected` state.
     */
@@ -28,23 +36,6 @@ trait TaskFactory
       state
     ]
   ] = js.native
-  /**
-    * Creates a task in the `resolved` state.
-    */
-  @JSName("resolved")
-  var resolved_Original: TaskCreator[
-    Exclude[
-      /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
-      state
-    ]
-  ] = js.native
-  /**
-    * Calls the actual task function.
-    */
-  /**
-    * Creates a task in the `rejected` state.
-    */
-  def rejected[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
   /**
     * Creates a task in the `rejected` state.
     */
@@ -82,6 +73,7 @@ trait TaskFactory
       ]
     ]
   ): MethodDecorator = js.native
+  
   /**
     * Calls the actual task function.
     */
@@ -89,6 +81,16 @@ trait TaskFactory
     * Creates a task in the `resolved` state.
     */
   def resolved[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R]): Task_[A, R] = js.native
+  /**
+    * Creates a task in the `resolved` state.
+    */
+  @JSName("resolved")
+  var resolved_Original: TaskCreator[
+    Exclude[
+      /* keyof mobx-task.mobx-task/lib/task.TaskOptions<any, any> */ state | error | result | args | swallow, 
+      state
+    ]
+  ] = js.native
   /**
     * Creates a task in the `resolved` state.
     */
@@ -127,4 +129,3 @@ trait TaskFactory
     ]
   ): MethodDecorator = js.native
 }
-

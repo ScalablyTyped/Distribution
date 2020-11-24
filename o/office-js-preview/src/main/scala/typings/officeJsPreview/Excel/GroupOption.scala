@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GroupOption extends js.Object
-
 /**
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.GroupOption")
 @js.native
 object GroupOption extends js.Object {
+  
   /**
     * Group by columns.
     *
@@ -26,6 +26,4 @@ object GroupOption extends js.Object {
     */
   @js.native
   sealed trait byRows extends GroupOption
-  
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Handles access to the elements of a component schema, i.e its templates and its component definition.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSchema extends XInterface {
+  
   /**
     * Describes only the component definition to a {@link XSchemaHandler} .
     * @param aHandler schema handler that will receive calls describing the contents of the component definition
@@ -20,6 +21,7 @@ trait XSchema extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XSchemaHandler} .
     */
   def readComponent(aHandler: XSchemaHandler): Unit = js.native
+  
   /**
     * Describes the full schema (templates + component) to a {@link XSchemaHandler} .
     * @param aHandler schema handler that will receive calls describing the contents of the templates and the component definition
@@ -28,6 +30,7 @@ trait XSchema extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XSchemaHandler} .
     */
   def readSchema(aHandler: XSchemaHandler): Unit = js.native
+  
   /**
     * Describes the component templates to a {@link XSchemaHandler} .
     * @param aHandler schema handler that will receive calls describing the contents of the templates
@@ -37,8 +40,8 @@ trait XSchema extends XInterface {
     */
   def readTemplates(aHandler: XSchemaHandler): Unit = js.native
 }
-
 object XSchema {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -51,24 +54,29 @@ object XSchema {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), readComponent = js.Any.fromFunction1(readComponent), readSchema = js.Any.fromFunction1(readSchema), readTemplates = js.Any.fromFunction1(readTemplates), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSchema]
   }
+  
   @scala.inline
   implicit class XSchemaOps[Self <: XSchema] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setReadComponent(value: XSchemaHandler => Unit): Self = this.set("readComponent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setReadSchema(value: XSchemaHandler => Unit): Self = this.set("readSchema", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setReadTemplates(value: XSchemaHandler => Unit): Self = this.set("readTemplates", js.Any.fromFunction1(value))
   }
-  
 }
-

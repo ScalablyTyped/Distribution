@@ -3,7 +3,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.ExtensionRequest")
 @js.native
@@ -20,4 +20,3 @@ class ExtensionRequest protected ()
   def this(extCmd: String, params: js.UndefOr[scala.Nothing], room: SFSRoom) = this()
   def this(extCmd: String, params: js.Object, room: SFSRoom) = this()
 }
-

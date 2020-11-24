@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.Sorter")
 @js.native
@@ -39,4 +39,3 @@ class Sorter protected ()
   def this(sPath: String, bDescending: Boolean, vGroup: js.Any, fnComparator: js.Any) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: Boolean, fnComparator: js.Any) = this()
 }
-

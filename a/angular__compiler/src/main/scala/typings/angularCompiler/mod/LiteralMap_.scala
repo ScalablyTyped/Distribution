@@ -3,7 +3,7 @@ package typings.angularCompiler.mod
 import typings.angularCompiler.astMod.LiteralMapKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "LiteralMap")
 @js.native
@@ -16,4 +16,3 @@ class LiteralMap_ protected ()
     values: js.Array[_]
   ) = this()
 }
-

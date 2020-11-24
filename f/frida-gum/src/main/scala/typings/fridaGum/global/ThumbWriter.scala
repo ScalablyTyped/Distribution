@@ -4,7 +4,7 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.ThumbWriterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generates machine code for arm.
@@ -23,4 +23,3 @@ class ThumbWriter protected ()
   def this(codeAddress: NativePointerValue) = this()
   def this(codeAddress: NativePointerValue, options: ThumbWriterOptions) = this()
 }
-

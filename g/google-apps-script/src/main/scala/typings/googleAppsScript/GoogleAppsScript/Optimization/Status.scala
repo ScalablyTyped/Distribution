@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Optimization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Status extends js.Object
-
 /**
   * Status of the solution. Before solving a problem the status will be NOT_SOLVED;
   * afterwards it will take any of the other values depending if it successfully found a solution and
@@ -15,6 +14,7 @@ sealed trait Status extends js.Object
 @JSGlobal("GoogleAppsScript.Optimization.Status")
 @js.native
 object Status extends js.Object {
+  
   @js.native
   sealed trait ABNORMAL extends Status
   
@@ -35,6 +35,4 @@ object Status extends js.Object {
   
   @js.native
   sealed trait UNBOUNDED extends Status
-  
 }
-

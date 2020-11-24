@@ -2,9 +2,58 @@ package typings.mobx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobxStrings {
+  
+  @scala.inline
+  def IObservableFactories: IObservableFactories = "IObservableFactories".asInstanceOf[IObservableFactories]
+  
+  @scala.inline
+  def IObservableFactory: IObservableFactory = "IObservableFactory".asInstanceOf[IObservableFactory]
+  
+  @scala.inline
+  def Map: Map = "Map".asInstanceOf[Map]
+  
+  @scala.inline
+  def Set: Set = "Set".asInstanceOf[Set]
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def decorate: decorate = "decorate".asInstanceOf[decorate]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def extendObservable: extendObservable = "extendObservable".asInstanceOf[extendObservable]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def observable: observable = "observable".asInstanceOf[observable]
+  
+  @scala.inline
+  def observed: observed = "observed".asInstanceOf[observed]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def splice: splice = "splice".asInstanceOf[splice]
+  
+  @scala.inline
+  def strict: strict = "strict".asInstanceOf[strict]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
   @js.native
   sealed trait IObservableFactories extends js.Object
   
@@ -52,38 +101,4 @@ object mobxStrings {
   
   @js.native
   sealed trait update extends js.Object
-  
-  @scala.inline
-  def IObservableFactories: IObservableFactories = "IObservableFactories".asInstanceOf[IObservableFactories]
-  @scala.inline
-  def IObservableFactory: IObservableFactory = "IObservableFactory".asInstanceOf[IObservableFactory]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def Set: Set = "Set".asInstanceOf[Set]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def decorate: decorate = "decorate".asInstanceOf[decorate]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def extendObservable: extendObservable = "extendObservable".asInstanceOf[extendObservable]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def observable: observable = "observable".asInstanceOf[observable]
-  @scala.inline
-  def observed: observed = "observed".asInstanceOf[observed]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def splice: splice = "splice".asInstanceOf[splice]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
 }
-

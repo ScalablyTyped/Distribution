@@ -2,11 +2,12 @@ package typings.pathExists
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("path-exists", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Check if a path exists.
   	@returns Whether the path exists.
@@ -21,10 +22,10 @@ object mod extends js.Object {
   	```
   	*/
   def apply(path: String): js.Promise[Boolean] = js.native
+  
   /**
   	Synchronously check if a path exists.
   	@returns Whether the path exists.
   	*/
   def sync(path: String): Boolean = js.native
 }
-

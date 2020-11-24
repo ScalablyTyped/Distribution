@@ -10,9 +10,9 @@ Select2 is a jQuery based replacement for select boxes. It supports searching, r
 | ------------------ | :-------------: |
 | Full name          | select2 |
 | Keywords           | select, autocomplete, typeahead, dropdown, multiselect, tag, tagging |
-| # releases         | 10 |
-| # dependents       | 316 |
-| # downloads        | 10138474 |
+| # releases         | 13 |
+| # dependents       | 405 |
+| # downloads        | 13842469 |
 | # stars            | 23 |
 
 ## Links

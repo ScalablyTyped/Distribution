@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used for executing a static SQL statement and obtaining the results produced by it.
@@ -15,12 +15,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XStatement extends XInterface {
+  
   /**
     * returns the {@link com.sun.star.sdbc.Connection} object that produced this `Statement` object.
     * @returns the connection that produced this statement
     * @throws SQLException if a database access error occurs.
     */
   val Connection: XConnection = js.native
+  
   /**
     * executes a SQL statement that may return multiple results.
     *
@@ -36,6 +38,7 @@ trait XStatement extends XInterface {
     * @throws SQLException if a database access error occurs.
     */
   def execute(sql: String): Boolean = js.native
+  
   /**
     * executes a SQL statement that returns a single {@link ResultSet} .
     * @param sql the SQL statement which should be executed
@@ -43,6 +46,7 @@ trait XStatement extends XInterface {
     * @throws SQLException if a database access error occurs.
     */
   def executeQuery(sql: String): XResultSet = js.native
+  
   /**
     * executes an SQL INSERT, UPDATE, or DELETE statement. In addition, SQL statements that return nothing, such as SQL DDL statements, can be executed.
     * @param sql a SQL INSERT, UPDATE or DELETE statement or a SQL statement that returns nothing
@@ -50,6 +54,7 @@ trait XStatement extends XInterface {
     * @throws SQLException if a database access error occurs.
     */
   def executeUpdate(sql: String): Double = js.native
+  
   /**
     * returns the {@link com.sun.star.sdbc.Connection} object that produced this `Statement` object.
     * @returns the connection that produced this statement
@@ -57,8 +62,8 @@ trait XStatement extends XInterface {
     */
   def getConnection(): XConnection = js.native
 }
-
 object XStatement {
+  
   @scala.inline
   def apply(
     Connection: XConnection,
@@ -73,28 +78,35 @@ object XStatement {
     val __obj = js.Dynamic.literal(Connection = Connection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction1(execute), executeQuery = js.Any.fromFunction1(executeQuery), executeUpdate = js.Any.fromFunction1(executeUpdate), getConnection = js.Any.fromFunction0(getConnection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XStatement]
   }
+  
   @scala.inline
   implicit class XStatementOps[Self <: XStatement] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConnection(value: XConnection): Self = this.set("Connection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExecute(value: String => Boolean): Self = this.set("execute", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setExecuteQuery(value: String => XResultSet): Self = this.set("executeQuery", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setExecuteUpdate(value: String => Double): Self = this.set("executeUpdate", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetConnection(value: () => XConnection): Self = this.set("getConnection", js.Any.fromFunction0(value))
   }
-  
 }
-

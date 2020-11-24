@@ -10,9 +10,9 @@ A tool for listing the licenses of all dependencies of a node module
 | ------------------ | :-------------: |
 | Full name          | legal-eagle |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 91403 |
+| # downloads        | 76250 |
 | # stars            | 1 |
 
 ## Links

@@ -10,11 +10,12 @@ import typings.forgeApis.anon.With
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ObjectsApi")
 @js.native
 class ObjectsApi () extends js.Object {
+  
   /**
     * Copies an object to another object name in the same bucket.
     */
@@ -25,6 +26,7 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * This endpoint creates a signed URL that can be used to download an object within the specified expiration time. Be aware that
     * if the object the signed URL points to is deleted or expires before the signed URL expires, then the signed URL will no longer
@@ -38,14 +40,17 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * Deletes an object from the bucket.
     */
   def deleteObject(bucketKey: String, objectName: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Delete a signed URL. A successful call to this endpoint requires bucket owner access.
     */
   def deleteSignedResource(id: String, region: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Download an object.
     */
@@ -56,6 +61,7 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns object details in JSON format.
     */
@@ -66,14 +72,17 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * List objects in a bucket. It is only available to the bucket creator.
     */
   def getObjects(bucketKey: String, opts: BeginsWith, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Download an object using a signed URL.
     */
   def getSignedResource(id: String, opts: IfNoneMatch, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * This endpoint returns status information about a resumable upload.
     */
@@ -84,6 +93,7 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * This endpoint allows resumable uploads for large files in chunks.
     */
@@ -109,6 +119,7 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * Upload an object. If the specified object name already exists in the bucket, the uploaded content will
     * overwrite the existing content for the bucket name/object name combination.
@@ -131,6 +142,7 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * Overwrite a existing object using a signed URL. Conditions to call this operation: Object is available Expiration
     * period is valid Signed URL should be created with `write` or `readwrite`.
@@ -151,6 +163,7 @@ class ObjectsApi () extends js.Object {
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * Resumable upload for signed URLs.
     */
@@ -173,4 +186,3 @@ class ObjectsApi () extends js.Object {
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
 }
-

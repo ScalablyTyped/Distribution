@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Pageviews")
 @js.native
 class ResourcePageviews protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.pageViews.get
     * @desc Retrieve pageview stats for a Blog.
@@ -43,4 +45,3 @@ class ResourcePageviews protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPageviews]
   ): Unit = js.native
 }
-

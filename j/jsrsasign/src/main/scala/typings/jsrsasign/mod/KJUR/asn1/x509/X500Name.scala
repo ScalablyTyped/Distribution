@@ -5,7 +5,7 @@ import typings.jsrsasign.anon.StringParamcertissuerstri
 import typings.jsrsasign.anon.X500NameParamcertissuerst
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * X500Name ASN.1 structure class
@@ -48,11 +48,11 @@ class X500Name protected ()
   def this(params: StringParamcertissuerstri) = this()
   def this(params: X500NameParamcertissuerst) = this()
 }
-
 /* static members */
 @JSImport("jsrsasign", "KJUR.asn1.x509.X500Name")
 @js.native
 object X500Name extends js.Object {
+  
   /**
     * convert LDAP(RFC 2253) distinguished name format string to OpenSSL oneline format
     * @param s distinguished name string in LDAP(RFC 2253) format (ex. O=test,C=US)
@@ -68,6 +68,7 @@ object X500Name extends js.Object {
     * KJUR.asn1.x509.X500Name.ldapToOneline('O=a/a,C=US')  → '/C=US/O=a\/a'
     */
   def ldapToOneline(s: String): String = js.native
+  
   /**
     * convert OpenSSL oneline distinguished name format string to LDAP(RFC 2253) format
     * @param s distinguished name string in OpenSSL oneline format (ex. /C=US/O=test)
@@ -84,4 +85,3 @@ object X500Name extends js.Object {
     */
   def onelineToLDAP(s: String): String = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Finalizedproposals")
 @js.native
 class ResourceAccountsFinalizedproposals protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.finalizedProposals.list
     * @desc List finalized proposals, regardless if a proposal is being
@@ -51,4 +53,3 @@ class ResourceAccountsFinalizedproposals protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListProposalsResponse]
   ): Unit = js.native
 }
-

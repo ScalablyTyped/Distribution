@@ -2,7 +2,7 @@ package typings.chalk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	Levels:
@@ -18,15 +18,17 @@ import scala.scalajs.js.annotation._
   - typings.chalk.chalkNumbers.`3`
 */
 trait Level extends js.Object
-
 object Level {
+  
   @scala.inline
   def `0`: typings.chalk.chalkNumbers.`0` = 0.asInstanceOf[typings.chalk.chalkNumbers.`0`]
+  
   @scala.inline
   def `1`: typings.chalk.chalkNumbers.`1` = 1.asInstanceOf[typings.chalk.chalkNumbers.`1`]
+  
   @scala.inline
   def `2`: typings.chalk.chalkNumbers.`2` = 2.asInstanceOf[typings.chalk.chalkNumbers.`2`]
+  
   @scala.inline
   def `3`: typings.chalk.chalkNumbers.`3` = 3.asInstanceOf[typings.chalk.chalkNumbers.`3`]
 }
-

@@ -12,7 +12,7 @@ node.js package for rolling dice and adding modifiers. ex: 2d6+1
 | Keywords           | roll, random, dice, games, rpg, role playing |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 14337 |
+| # downloads        | 17776 |
 | # stars            | 3 |
 
 ## Links

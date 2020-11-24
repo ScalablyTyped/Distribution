@@ -6,10 +6,9 @@ import typings.uirouterCore.coreservicesMod.LocationServices
 import typings.uirouterCore.routerMod.UIRouter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
   extends Instantiable0[LocationServices]
      with Instantiable1[/* uiRouter */ UIRouter, LocationServices]
-

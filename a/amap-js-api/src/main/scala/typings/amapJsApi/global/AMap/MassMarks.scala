@@ -4,7 +4,7 @@ import typings.amapJsApi.AMap.MassMarks.Data
 import typings.amapJsApi.AMap.MassMarks.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.MassMarks")
 @js.native
@@ -18,4 +18,3 @@ class MassMarks[D /* <: Data */] protected ()
     */
   def this(data: js.Array[D], opts: Options) = this()
 }
-

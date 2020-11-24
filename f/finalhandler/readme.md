@@ -10,9 +10,9 @@ Node.js final http responder
 | ------------------ | :-------------: |
 | Full name          | finalhandler |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 477 |
-| # downloads        | 529838919 |
+| # releases         | 2 |
+| # dependents       | 536 |
+| # downloads        | 670955991 |
 | # stars            | 19 |
 
 ## Links

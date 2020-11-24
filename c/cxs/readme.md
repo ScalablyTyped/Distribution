@@ -11,8 +11,8 @@ Fast af css-in-js in under 1kb
 | Full name          | cxs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 662670 |
+| # dependents       | 39 |
+| # downloads        | 624259 |
 | # stars            | 5 |
 
 ## Links

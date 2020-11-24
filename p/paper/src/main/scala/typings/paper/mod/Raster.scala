@@ -5,7 +5,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper", "Raster")
 @js.native
@@ -30,4 +30,3 @@ class Raster ()
   def this(source: HTMLCanvasElement, position: Point) = this()
   def this(source: HTMLImageElement, position: Point) = this()
 }
-

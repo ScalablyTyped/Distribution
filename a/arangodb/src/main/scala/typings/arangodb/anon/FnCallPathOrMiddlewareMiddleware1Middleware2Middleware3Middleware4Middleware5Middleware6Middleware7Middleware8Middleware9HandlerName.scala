@@ -5,10 +5,11 @@ import typings.arangodb.Foxx.Handler
 import typings.arangodb.Foxx.SimpleMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName extends js.Object {
+  
   def apply(handler: Handler): Endpoint = js.native
   def apply(handler: Handler, name: String): Endpoint = js.native
   def apply(pathOrMiddleware: String, handler: Handler): Endpoint = js.native
@@ -340,4 +341,3 @@ trait FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middlewa
   def apply(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
   def apply(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = js.native
 }
-

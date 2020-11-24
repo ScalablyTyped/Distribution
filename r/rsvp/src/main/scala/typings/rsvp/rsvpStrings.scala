@@ -2,9 +2,37 @@ package typings.rsvp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsvpStrings {
+  
+  @scala.inline
+  def Promise: Promise = "Promise".asInstanceOf[Promise]
+  
+  @scala.inline
+  def chained: chained = "chained".asInstanceOf[chained]
+  
+  @scala.inline
+  def created: created = "created".asInstanceOf[created]
+  
+  @scala.inline
+  def denodeify: denodeify = "denodeify".asInstanceOf[denodeify]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  
+  @scala.inline
+  def hash: hash = "hash".asInstanceOf[hash]
+  
+  @scala.inline
+  def hashSettled: hashSettled = "hashSettled".asInstanceOf[hashSettled]
+  
+  @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  
   @js.native
   sealed trait Promise extends js.Object
   
@@ -31,24 +59,4 @@ object rsvpStrings {
   
   @js.native
   sealed trait rejected extends js.Object
-  
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def chained: chained = "chained".asInstanceOf[chained]
-  @scala.inline
-  def created: created = "created".asInstanceOf[created]
-  @scala.inline
-  def denodeify: denodeify = "denodeify".asInstanceOf[denodeify]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
-  @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
-  @scala.inline
-  def hashSettled: hashSettled = "hashSettled".asInstanceOf[hashSettled]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
 }
-

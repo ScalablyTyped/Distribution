@@ -11,8 +11,8 @@ Local authentication strategy for @feathers/authentication
 | Full name          | @feathersjs/authentication-local |
 | Keywords           | feathers, feathers-plugin |
 | # releases         | 39 |
-| # dependents       | 40 |
-| # downloads        | 522629 |
+| # dependents       | 51 |
+| # downloads        | 745160 |
 | # stars            | 0 |
 
 ## Links

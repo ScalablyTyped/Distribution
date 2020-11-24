@@ -6,11 +6,12 @@ import typings.openpgp.mod.packet.Signature
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "key.createSignaturePacket")
 @js.native
 object createSignaturePacket extends js.Object {
+  
   /**
     * Create signature packet
     * @param dataToSign Contains packets to be signed
@@ -35,4 +36,3 @@ object createSignaturePacket extends js.Object {
     userId: js.Object
   ): Signature = js.native
 }
-

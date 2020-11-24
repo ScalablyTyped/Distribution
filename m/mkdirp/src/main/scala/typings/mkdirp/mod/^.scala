@@ -2,11 +2,12 @@ package typings.mkdirp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mkdirp", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Create a new directory and any necessary subdirectories at dir with octal
     * permission string `opts.mode`. If opts is a string or number, it will be
@@ -31,4 +32,3 @@ object ^ extends js.Object {
   def apply(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = js.native
   def apply(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = js.native
 }
-

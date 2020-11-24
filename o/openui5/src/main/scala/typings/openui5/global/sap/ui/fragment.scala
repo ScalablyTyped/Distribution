@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.mvc.Controller
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.fragment")
 @js.native
 object fragment extends js.Object {
+  
   /**
     * Instantiate a Fragment - this method loads the Fragment content, instantiates it, and returns this
     * content.The Fragment object itself is not an entity which has further significance beyond this
@@ -42,4 +43,3 @@ object fragment extends js.Object {
   def apply(sName: String, sType: String, oController: js.Any): Unit = js.native
   def apply(sName: String, sType: String, oController: Controller): Control | js.Array[Control] = js.native
 }
-

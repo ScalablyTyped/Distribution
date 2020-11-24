@@ -6,14 +6,14 @@ import typings.electron.electronStrings.done
 import typings.electron.electronStrings.interrupted
 import typings.electron.electronStrings.progressing
 import typings.electron.electronStrings.updated
-import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DownloadItem extends EventEmitter {
-  var savePath: String = js.native
+  
   def addListener(
     event: done,
     listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
@@ -22,22 +22,27 @@ trait DownloadItem extends EventEmitter {
     event: updated,
     listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
+  
   /**
     * Whether the download can resume.
     */
   def canResume(): Boolean = js.native
+  
   /**
     * Cancels the download operation.
     */
   def cancel(): Unit = js.native
+  
   /**
     * The Content-Disposition field from the response header.
     */
   def getContentDisposition(): String = js.native
+  
   /**
     * ETag header value.
     */
   def getETag(): String = js.native
+  
   /**
     * The file name of the download item.
     *
@@ -46,33 +51,40 @@ trait DownloadItem extends EventEmitter {
     * actual name of saved file will be different.
     */
   def getFilename(): String = js.native
+  
   /**
     * Last-Modified header value.
     */
   def getLastModifiedTime(): String = js.native
+  
   /**
     * The files mime type.
     */
   def getMimeType(): String = js.native
+  
   /**
     * The received bytes of the download item.
     */
   def getReceivedBytes(): Double = js.native
+  
   /**
     * Returns the object previously set by
     * `downloadItem.setSaveDialogOptions(options)`.
     */
   def getSaveDialogOptions(): SaveDialogOptions = js.native
+  
   /**
     * The save path of the download item. This will be either the path set via
     * `downloadItem.setSavePath(path)` or the path selected from the shown save
     * dialog.
     */
   def getSavePath(): String = js.native
+  
   /**
     * Number of seconds since the UNIX epoch when the download was started.
     */
   def getStartTime(): Double = js.native
+  
   /**
     * The current state. Can be `progressing`, `completed`, `cancelled` or
     * `interrupted`.
@@ -81,29 +93,35 @@ trait DownloadItem extends EventEmitter {
     * item when session is restarted.
     */
   def getState(): progressing | completed | cancelled | interrupted = js.native
+  
   /**
     * The total size in bytes of the download item.
     * 
   If the size is unknown, it returns 0.
     */
   def getTotalBytes(): Double = js.native
+  
   /**
     * The origin URL where the item is downloaded from.
     */
   def getURL(): String = js.native
+  
   /**
     * The complete URL chain of the item including any redirects.
     */
   def getURLChain(): js.Array[String] = js.native
+  
   /**
     * Whether the download has user gesture.
     */
   def hasUserGesture(): Boolean = js.native
+  
   /**
     * Whether the download is paused.
     */
   def isPaused(): Boolean = js.native
-  // Docs: http://electronjs.org/docs/api/download-item
+  
+  // Docs: https://electronjs.org/docs/api/download-item
   /**
     * Emitted when the download is in a terminal state. This includes a completed
     * download, a cancelled download (via `downloadItem.cancel()`), and interrupted
@@ -131,6 +149,7 @@ trait DownloadItem extends EventEmitter {
     event: updated,
     listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
+  
   def once(
     event: done,
     listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
@@ -139,10 +158,12 @@ trait DownloadItem extends EventEmitter {
     event: updated,
     listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
+  
   /**
     * Pauses the download.
     */
   def pause(): Unit = js.native
+  
   def removeListener(
     event: done,
     listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
@@ -151,6 +172,7 @@ trait DownloadItem extends EventEmitter {
     event: updated,
     listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
+  
   /**
     * Resumes the download that has been paused.
     *
@@ -160,12 +182,16 @@ trait DownloadItem extends EventEmitter {
     * the download from the beginning.
     */
   def resume(): Unit = js.native
+  
+  var savePath: String = js.native
+  
   /**
     * This API allows the user to set custom options for the save dialog that opens
     * for the download item by default. The API is only available in session's
     * `will-download` callback function.
     */
   def setSaveDialogOptions(options: SaveDialogOptions): Unit = js.native
+  
   /**
     * The API is only available in session's `will-download` callback function. If
     * user doesn't set the save path via the API, Electron will use the original
@@ -173,4 +199,3 @@ trait DownloadItem extends EventEmitter {
     */
   def setSavePath(path: String): Unit = js.native
 }
-

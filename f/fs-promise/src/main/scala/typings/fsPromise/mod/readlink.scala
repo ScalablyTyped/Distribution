@@ -9,19 +9,16 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-promise", "readlink")
 @js.native
 object readlink extends js.Object {
-  def apply(path: String): js.Promise[String] = js.native
-  def apply(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, _]): Unit = js.native
-  def apply(path: Buffer): js.Promise[String] = js.native
-  def apply(path: Buffer, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, _]): Unit = js.native
+  
   def apply(path: PathLike): js.Promise[String] = js.native
   def apply(
     path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
+    callback: js.Function2[(/* err */ ErrnoException) | Null, /* linkString */ String, _ | Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -64,4 +61,3 @@ object readlink extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
   ): Unit = js.native
 }
-
